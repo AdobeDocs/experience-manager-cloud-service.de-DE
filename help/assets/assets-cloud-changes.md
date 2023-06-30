@@ -5,9 +5,9 @@ feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
 source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1034'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Asset-Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung 
 
 Asset-Microservices sind ein Cloud-nativer Service, der in Kundenprogrammen und -umgebungen, die in Cloud Manager verwaltet werden, automatisch bereitgestellt und mit [!DNL Experience Manager] vernetzt wird. Um [!DNL Experience Manager] zu erweitern oder anzupassen, können Entwickler den vorhandenen Inhalt (oder Assets mit in einer Cloud-Umgebung generierten Ausgabedarstellungen) verwenden, um ihren Code zu testen und zu validieren, indem sie Assets verwenden, anzeigen und herunterladen.
 
-Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses, einschließlich der Erfassung und Verarbeitung von Assets, die Code-Änderungen in einer Cloud-Entwicklungsumgebung unter Verwendung der [Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) und testen Sie mit vollständiger Ausführung der Asset-Microservice-Verarbeitung.
+Stellen Sie für eine umfassende Validierung des Codes und des Prozesses, einschließlich der Erfassung und Verarbeitung von Assets, die Code-Änderungen in einer Cloud-Entwicklungsumgebung unter Verwendung der [Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) bereit und testen Sie mit vollständiger Ausführung der Asset-Microservice-Verarbeitung.
 
 ## Parität der Funktionen mit [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
 
@@ -73,7 +73,7 @@ Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses,
 * [Assets-HTTP-API](mac-api-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
 * [Suchen von Assets](search-assets.md)
-* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
 * [Asset-Berichte](asset-reports.md)
 * [Metadatenschemata](metadata-schemas.md)
 * [Herunterladen von Assets](download-assets-from-aem.md)
