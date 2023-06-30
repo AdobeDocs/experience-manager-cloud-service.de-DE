@@ -2,10 +2,10 @@
 title: Wie profitiert die Assets-Ansicht von Ihnen?
 description: Erfahren Sie mehr über die wichtigsten Vorteile der Asset-Ansicht.
 mini-toc-levels: 3
-source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
+source-git-commit: 97b6f66f2d19b85ec0a71eda756aaa334ea5da57
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 11%
+source-wordcount: '1064'
+ht-degree: 12%
 
 ---
 
@@ -121,14 +121,15 @@ Zusätzlich zu diesen Funktionen können Sie mit der Asset-Ansicht auch die folg
 
 * Umbenennen von Assets und Ordnern, die im Repository verfügbar sind.
 
+Die neue Adobe Experience Manager Assets-Ansicht ist darauf zugeschnitten, Workflows zu optimieren, die Zusammenarbeit zu fördern und die Asset-Bereitstellung zu beschleunigen. Durch die schnelle Bereitstellung von Inhalten können Marketingexperten das gesamte Potenzial ihrer digitalen Assets ausschöpfen und Kreativität wie nie zuvor freisetzen.
+
+
 Verwenden Sie diese Links, um schnell mit der Asset-Ansicht zu beginnen:
 
 * [Mein Arbeitsbereich](/help/assets/my-workspace-assets-view.md)
 * [Erste Schritte mit der Asset-Ansicht](/help/assets/get-started-assets-view.md)
 
-## Zusammenfassung {#conclusion}
 
-Die Ära des digitalen Erlebnisses ist eingetreten, und es ist an der Zeit, unsere Marketing-Tools zu verändern, um die sich entwickelnde Geschäftswelt zu unterstützen. Die neue Adobe Experience Manager Assets-Ansicht ist darauf zugeschnitten, Workflows zu optimieren, die Zusammenarbeit zu fördern und die Asset-Bereitstellung zu beschleunigen. Durch die schnelle Bereitstellung von Inhalten können Marketingexperten das gesamte Potenzial ihrer digitalen Assets ausschöpfen und Kreativität wie nie zuvor freisetzen. Machen Sie sich bereit, die Leistungsfähigkeit der neuen Assets-Ansicht der Adobe zu nutzen und außergewöhnliche Ergebnisse in Ihren Marketingkampagnen zu erzielen. Es ist an der Zeit, die Zukunft von DAM in Angriff zu nehmen und Ihr Geschäft voranzutreiben.
 
 
 
