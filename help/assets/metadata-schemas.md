@@ -1,14 +1,14 @@
 ---
 title: Metadatenschemata definieren das Layout der Seite mit den Metadaten-Eigenschaften
-description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadateneigenschaften. Erfahren Sie, wie Sie ein benutzerdefiniertes Metadatenschema erstellen, Metadatenschema bearbeiten und Metadatenschema auf Assets anwenden.
+description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadateneigenschaften. Erfahren Sie, wie Sie ein benutzerdefiniertes Metadatenschema erstellen, ein Metadatenschema bearbeiten und ein Metadatenschema auf Assets anwenden können.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2642'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -125,7 +125,7 @@ Im Folgenden finden Sie Beispiele für gültige Werte für eine Eigenschaft:
 Um sicherzustellen, dass die Komponente ordnungsgemäß im Metadatenschema-Formular angezeigt wird, sollte der Eigenschaftspfad keine Leerzeichen enthalten.
 
 * **Platzhalter**: Verwenden Sie diese Eigenschaft, um relevanten Platzhaltertext für die Metadateneigenschaft anzugeben.
-* **Erforderlich**: Verwenden Sie diese Eigenschaft, um eine Metadateneigenschaft auf der Eigenschaftsseite als obligatorisch zu markieren.
+* **Erforderlich**: Mit dieser Eigenschaft können Sie eine Metadateneigenschaft auf der Eigenschaftsseite als obligatorisch markieren.
 * **Bearbeitung deaktivieren**: Verwenden Sie diese Eigenschaft, um die Bearbeitung einer Eigenschaft auf der Eigenschaftsseite zu verbieten.
 * **Leeres Feld schreibgeschützt anzeigen**: Markieren Sie diese Eigenschaft, um eine Metadateneigenschaft auch dann auf der Eigenschaftenseite anzuzeigen, wenn sie keinen Wert aufweist. Standardmäßig werden Metadateneigenschaften ohne Werte nicht auf der Eigenschaftenseite aufgeführt.
 * **Liste geordnet anzeigen**: Mit dieser Eigenschaft zeigen Sie eine geordnete Liste von Optionen an..
@@ -136,7 +136,7 @@ Um sicherzustellen, dass die Komponente ordnungsgemäß im Metadatenschema-Formu
 
 >[!NOTE]
 >
->Die Komponente [!UICONTROL Ausgeblendetes Feld] enthält diese Attribute nicht. Stattdessen enthält es Eigenschaften wie Attributname, Wert, Feldbezeichnung und Beschreibung. Die Werte für die Komponente &quot;Ausgeblendetes Feld&quot;werden beim Speichern des Assets als POST-Parameter gesendet. Sie wird nicht als Metadaten für das Asset gespeichert.
+>Die Komponente [!UICONTROL Ausgeblendetes Feld] enthält diese Attribute nicht. Sie enthält stattdessen Eigenschaften wie die Attribute „Name“, „Wert“, „Feldbezeichnung“ und „Beschreibung“. Die Werte für die Komponente „Ausgeblendetes Feld“ werden beim Speichern des Assets als POST-Parameter gesendet. Sie werden nicht als Metadaten für das Asset gespeichert.
 
 Wenn Sie die Option **[!UICONTROL Erforderlich]** auswählen, können Sie nach Assets suchen, denen obligatorische Metadaten fehlen. Erweitern Sie im Bedienfeld **[!UICONTROL Filter]** die Eigenschaft **[!UICONTROL Metadatenvalidierung]** und wählen Sie die Option **[!UICONTROL Ungültig]**. Die Suchergebnisse zeigen Assets an, denen erforderliche Metadaten fehlen, die Sie über das Schemaformular konfiguriert haben.
 
@@ -237,7 +237,7 @@ Die Metadatenübernahme durch Assets richtet sich nach dem Schema, das auf den O
 
 ## Definieren erforderlicher Metadaten {#defining-mandatory-metadata}
 
-Sie können Pflichtfelder auf Ordnerebene definieren, die für in den Ordner hochgeladene Assets erzwungen werden. Wenn Sie Assets mit fehlenden Metadaten für die zuvor definierten Pflichtfelder hochladen, wird in der Kartenansicht für die Assets eine visuelle Anzeige für fehlende Metadaten angezeigt.
+Sie können Pflichtfelder auf Ordnerebene definieren, die für in den Ordner hochgeladene Assets erzwungen werden. Wenn Sie Assets mit fehlenden Metadaten für die zuvor definierten Pflichtfelder hochladen, wird in der Kartenansicht ein entsprechender visueller Hinweis für die Assets angezeigt.
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ Sie können Pflichtfelder auf Ordnerebene definieren, die für in den Ordner hoc
 1. Klicken Sie auf das Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenschemas]**. Die Seite **[!UICONTROL Metadatenschema-Formulare]** wird angezeigt.
 1. Speichern Sie die Standard-Metadatenformulare als benutzerdefiniertes Formular. Speichern Sie sie beispielsweise unter dem Namen `my_default`.
 1. Bearbeiten Sie das benutzerdefinierte Formular. Fügen Sie ein erforderliches Feld hinzu. Fügen Sie beispielsweise ein Feld mit der Bezeichnung **[!UICONTROL Kategorie]** hinzu und definieren Sie es als Pflichtfeld.
-1. Klicken Sie auf **[!UICONTROL Speichern]**. Das geänderte Formular wird auf der Seite **[!UICONTROL Metadatenschema-Formulare]** aufgeführt. Wählen Sie das Formular aus und klicken oder tippen Sie dann auf **[!UICONTROL Auf Ordner anwenden]** aus der Symbolleiste, um die benutzerdefinierten Metadaten auf einen Ordner anzuwenden.
+1. Klicken Sie auf **[!UICONTROL Speichern]**. Das geänderte Formular wird auf der Seite **[!UICONTROL Metadatenschema-Formulare]** aufgeführt. Wählen Sie das Formular aus und klicken oder tippen Sie dann in der Symbolleiste auf **[!UICONTROL Auf Ordner anwenden]**, um die benutzerdefinierten Metadaten auf einen Ordner anzuwenden.
 1. Navigieren Sie zum Ordner und laden Sie einige Assets mit fehlenden Metadaten für das Pflichtfeld, das Sie dem benutzerdefinierten Formular hinzugefügt haben. Eine Meldung über die fehlenden Metadaten für das Pflichtfeld wird auf der Kartenansicht des Assets angezeigt.
 1. (Optional) Rufen Sie `https://[server]:[port]/system/console/components/` auf. Konfigurieren und aktivieren Sie die Komponente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob`, die standardmäßig deaktiviert ist. Legen Sie fest, mit welcher Häufigkeit Experience Manager die Gültigkeit der Metadaten in den Assets überprüfen soll.
 
@@ -258,7 +258,7 @@ Sie können Pflichtfelder auf Ordnerebene definieren, die für in den Ordner hoc
 
    >[!CAUTION]
    >
-   >Die Überprüfung der Metadaten ist ressourcenintensiv und kann sich auf die Leistung Ihres Systems auswirken. Planen Sie die Prüfungen entsprechend. Wenn der Server die Last nicht bewältigen kann, versuchen Sie, diesen Auftrag zu deaktivieren
+   >Die Metadaten-Überprüfungen sind ressourcenintensiv und können die Leistung Ihres Systems beeinträchtigen. Planen Sie die Überprüfungen entsprechend. Wenn der Server die Last nicht bewältigen kann, versuchen Sie, diesen Auftrag zu deaktivieren
 
 **Siehe auch**
 
@@ -266,7 +266,7 @@ Sie können Pflichtfelder auf Ordnerebene definieren, die für in den Ordner hoc
 * [Assets-HTTP-API](mac-api-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
 * [Suchen von Assets](search-assets.md)
-* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
 * [Asset-Berichte](asset-reports.md)
 * [Herunterladen von Assets](download-assets-from-aem.md)
 * [Verwalten von Metadaten](manage-metadata.md)
