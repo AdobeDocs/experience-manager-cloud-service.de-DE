@@ -6,9 +6,9 @@ feature: Collections,Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '845'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 78%
 
 Mit Adobe Experience Manager Assets können Sie Ad-hoc-Prüfungs-Workflows für Assets festlegen, die sich in einem Ordner oder in einer Sammlung befinden. Sie können sie für Prüfer oder kreative Partner freigeben, um deren Feedback einzuholen. Sie können einen Prüfungs-Workflow entweder mit einem Projekt verbinden oder eine eigenständige Prüfungsaufgabe erstellen.
 
-Nachdem Sie die Assets freigegeben haben, können die Validierer sie genehmigen oder ablehnen. Benachrichtigungen werden in verschiedenen Phasen des Workflows gesendet, um die vorgesehenen Empfänger über den Abschluss verschiedener Aufgaben zu informieren. Wenn Sie beispielsweise einen Ordner oder eine Sammlung freigeben, erhält der Validierer eine Benachrichtigung, dass ein Ordner/eine Sammlung zur Überprüfung freigegeben wurde.
+Nachdem Sie die Assets freigegeben haben, können Überprüfende sie genehmigen oder ablehnen. Benachrichtigungen werden in verschiedenen Phasen des Workflows gesendet, um die vorgesehenen Empfangenden über den Abschluss verschiedener Aufgaben zu informieren. Wenn Sie beispielsweise einen Ordner oder eine Sammlung freigeben, erhalten Prüfende eine Benachrichtigung, dass ein Ordner/eine Sammlung zur Überprüfung freigegeben wurde.
 
-Nachdem der Überprüfer die Überprüfung abgeschlossen hat (Assets genehmigt oder ablehnt), erhalten Sie eine Benachrichtigung zum Abschluss der Überprüfung.
+Nachdem Überprüfende die Überprüfung abgeschlossen haben (Assets genehmigt oder ablehnt), erhalten Sie eine Benachrichtigung zum Abschluss der Überprüfung.
 
 ## Erstellen einer Prüfungsaufgabe für Ordner {#creating-a-review-task-for-folders}
 
@@ -36,7 +36,7 @@ Nachdem der Überprüfer die Überprüfung abgeschlossen hat (Assets genehmigt o
 
    >[!NOTE]
    >
-   >Nur die Projekte, für die Sie über Berechtigungen auf Editor-Ebene (oder höher) verfügen, sind in der **[!UICONTROL Projekte]** Liste.
+   >Nur die Projekte, für die Sie über Berechtigungen auf Editor-Ebene (oder höher) verfügen, sind in der Liste **[!UICONTROL Projekte]** sichtbar.
 
 1. Geben Sie einen Namen für die Prüfungsaufgabe ein und wählen Sie einen Genehmigenden aus der Liste **[!UICONTROL Zuweisen zu]** aus.
 
@@ -84,7 +84,7 @@ Nachdem der Überprüfer die Überprüfung abgeschlossen hat (Assets genehmigt o
 
    >[!NOTE]
    >
-   >Nur die Projekte, für die Sie über Berechtigungen auf Editor-Ebene (oder höher) verfügen, sind in der **[!UICONTROL Projekte]** Liste.
+   >Nur die Projekte, für die Sie über Berechtigungen auf Editor-Ebene (oder höher) verfügen, sind in der Liste **[!UICONTROL Projekte]** sichtbar.
 
 1. Geben Sie einen Namen für die Prüfungsaufgabe ein und wählen Sie einen Genehmigenden aus der Liste **[!UICONTROL Zuweisen zu]** aus.
 
@@ -120,7 +120,7 @@ Nachdem der Überprüfer die Überprüfung abgeschlossen hat (Assets genehmigt o
 * [Assets-HTTP-API](mac-api-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
 * [Suchen von Assets](search-assets.md)
-* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
 * [Asset-Berichte](asset-reports.md)
 * [Metadatenschemata](metadata-schemas.md)
 * [Herunterladen von Assets](download-assets-from-aem.md)
