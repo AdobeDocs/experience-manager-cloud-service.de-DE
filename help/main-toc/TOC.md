@@ -8,10 +8,10 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: afb57c70a87a2b039b16946b22f4adb7e70e2227
+source-git-commit: e60a734d7e0887a23978efac8d896ac3745dbb5d
 workflow-type: tm+mt
-source-wordcount: '4147'
-ht-degree: 97%
+source-wordcount: '4150'
+ht-degree: 98%
 
 ---
 
@@ -81,6 +81,7 @@ ht-degree: 97%
    + Versionshinweise für Cloud Manager {#cloud-manager}
       + [Aktuelle Versionshinweise](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
+         + [Versionshinweise für 2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [Versionshinweise für 2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [Versionshinweise für 2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
          + [Versionshinweise für 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
@@ -155,7 +156,7 @@ ht-degree: 97%
    + [IMS-Unterstützung für AEM as a Cloud Service](/help/security/ims-support.md)
    + [Same-Site-Cookie-Unterstützung für AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [OAuth2-Unterstützung für den E-Mail-Service](/help/security/oauth2-support-for-mail-service.md)
-   + [Überlegungen zur as a Cloud Service Sicherheit AEM](/help/security/security-considerations.md)
+   + [AEM as a Cloud Service Sicherheitsüberlegungen](/help/security/security-considerations.md)
 + Einstieg {#onboarding}
    + [Hier beginnen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=de)
    + Tour zum Einstieg {#journey}
@@ -383,7 +384,7 @@ ht-degree: 97%
    + [Überblick über Asset-Microservices](/help/assets/asset-microservices-overview.md)
    + [Barrierefreiheit in  [!DNL Assets]](/help/assets/accessibility.md)
    + Verwalten digitaler Assets {#manage}
-      + [Micro-Frontend-Asset-Auswahl](/help/assets/asset-selector.md)
+      + [Micro-Front-End-Asset-Selektor](/help/assets/asset-selector.md)
       + [Zielauswahl für MikroFrontend](/help/assets/destination-selector.md)
       + [Freigeben von Assets](/help/assets/share-assets.md)
       + [Überwachen von Aktivitäten und DAM-Aufgaben](/help/assets/assets-activity-history.md)
@@ -420,7 +421,7 @@ ht-degree: 97%
       + [Ordner-Metadatenschema](/help/assets/folder-metadata-schema.md)
       + [Arbeiten mit Bild- und Videoprofilen](/help/assets/dynamic-media/about-image-video-profiles.md)
       + [Konfigurieren der Transkription für Audio- und Video-Assets](/help/assets/configure-transcription.md)
-      + [Übersetzen von Assets](/help/assets/translate-assets.md)
+      + [Assets übersetzen](/help/assets/translate-assets.md)
       + [Suchfacetten](/help/assets/search-facets.md)
       + [Assets-HTTP-API](/help/assets/mac-api-assets.md)
       + [Unterstützung von Inhaltsfragmenten in der Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md)
@@ -565,7 +566,7 @@ ht-degree: 97%
             + [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)
             + [Erstellen von Designs für ein adaptives Formular – Kernkomponenten](/help/forms/using-themes-in-core-components.md)
             + [Generieren eines Datensatzdokuments für adaptive Formulare](/help/forms/generate-document-of-record-core-components.md)
-            + [Erstellen einer adaptiven Forms - Kernkomponenten auf einer AEM Sites-Seite](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+            + [Erstellen eines adaptiven Formulars – Kernkomponenten auf einer AEM Sites-Seite](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Verwenden Sie maschinelle Übersetzung oder menschliche Übersetzung, um ein adaptives Formular zu übersetzen.](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Konfigurieren der Umleitungsseite oder Dankesnachricht](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Erstellen von Formularen mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
@@ -812,8 +813,8 @@ ht-degree: 97%
          + [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Benutzerspezifische Regeln für Code-Qualität](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + Funktionstests {#functional-testing}
-            + [Übersicht über Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
-            + [Java-Funktionstests](/help/implementing/cloud-manager/java-functional-testing.md)
+            + [Überblick über Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
+            + [Java Funktionsprüfung](/help/implementing/cloud-manager/java-functional-testing.md)
             + [Testen der Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md)
          + [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [Anzeigen und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md)

@@ -1,19 +1,19 @@
 ---
-title: Versionshinweise für Cloud Manager 2023.6.0 in Adobe Experience Manager as a Cloud Service
-description: Dies sind die Versionshinweise für Cloud Manager 2023.6.0 in AEM as a Cloud Service.
+title: Versionshinweise für Cloud Manager 2023.7.0 in Adobe Experience Manager as a Cloud Service
+description: Dies sind die Versionshinweise für Cloud Manager 2023.7.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1b46f763903a1b103837ed7e8cc498ad08ce64f1
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 35%
+ht-degree: 29%
 
 ---
 
 
-# Versionshinweise für Cloud Manager 2023.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Versionshinweise für Cloud Manager 2023.7.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2023.6.0 in AEM as a Cloud Service.
+Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2023.7.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,17 +21,18 @@ Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2023.6.0 in AE
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager -Version 2023.6.0 in AEM as a Cloud Service Version wurde am 8. Juni 2023 veröffentlicht. Die nächste Version ist für den 6. Juli 2023 geplant.
+Die Cloud Manager -Version 2023.7.0 in AEM as a Cloud Service Version wurde am 29. Juni 2023 veröffentlicht. Die nächste Version ist für den 10. August 2023 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
-* Kunden können zusätzlich zur primären Region weitere sekundäre Veröffentlichungsregionen erwerben, was Vorteile mit reduzierter Latenz und höherer Verfügbarkeit bringt. Hinweis: Es können bestimmte Einschränkungen gelten.
-* Beim Erstellen eines neuen [Programm oder Umwelt,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) Der Name ist nun auf die Verwendung von alphanumerischen Zeichen und einer begrenzten Anzahl von Sonderzeichen beschränkt.
-* Beim Fortsetzen einer [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) wird jetzt beim Genehmigungsschritt ein Bestätigungsdialogfeld angezeigt.
-* Für **[Kundenfunktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)** und **[Testen der benutzerdefinierten Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md)** Pipeline-Schritte, eine neue `INCOMPLETE` -Status nun möglich, was bedeutet, dass solche Tests nicht vorhanden und daher nicht durchgeführt wurden.
-   * In solchen Fällen schlägt die Pipeline nicht fehl und fährt mit dem nächsten Schritt fort.
+* Auf den Karten auf der Landingpage von Cloud Manager wird jetzt angegeben, ob [erweiterte Sicherheit](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) für ihre Programme aktiviert ist.
+* Wenn eine Entwicklung [Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) keine Testschritte enthält, können Benutzer jetzt Testschritte einbeziehen, wenn sie [Starten Sie die Pipeline.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
+   * Diese wird schrittweise eingeführt.
+* Wann [die Ausführung abbrechen,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) Im Schritt zur Pipelineausführungsgenehmigung wird der Benutzer jetzt aufgefordert, einen Grund für den Abbruch anzugeben.
+   * Diese wird schrittweise eingeführt.
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* Die [Web-Tier-Konfigurationspipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) sind nicht mehr fälschlicherweise für Nur-Assets-Programme aktiviert.
-* Es wurde eine stabilere Validierung hinzugefügt, um bestimmte Arten von Fehlern bei der Umgebungsbereitstellung zu verhindern.
+* Die Navigation von Cloud Manager zur Authoring-Benutzeroberfläche schlägt nach der Anmeldung nicht mehr fehl, um zur Unified Shell weiterzuleiten.
+* Beim Bearbeiten des Live-Datums über das Widget &quot;Go-Live&quot;wird jetzt zum **Live-Schaltung** anstatt der **Verbesserte Sicherheit** Registerkarte.
+* Beim Starten eines Kopiervorgangs kann ein Benutzer keine Umgebung mehr auswählen, in der bereits ein Kopiervorgang aufgerufen wurde.
