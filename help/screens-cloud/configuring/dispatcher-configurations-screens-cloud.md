@@ -3,7 +3,7 @@ title: Dispatcher-Konfigurationen in Screens as a Cloud Service
 description: Auf dieser Seite werden Dispatcher-Konfigurationen in Screens as a Cloud Service beschrieben.
 exl-id: cc04b480-9310-4975-a7c2-20682c567fa4
 source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '140'
 ht-degree: 100%
 
