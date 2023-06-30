@@ -3,9 +3,9 @@ title: Asset-Metadatenzuordnung zwischen Workfront und Experience Manager Assets
 description: Asset-Metadatenfelder zwischen Adobe Workfront und Experience Manager as a Cloud Service-Programmen zuordnen. Durch die Zuordnung von Metadatenfeldern können Sie beim Senden eines Assets von Workfront an Experience Manager Assets die zugeordneten Asset-Metadaten in Experience Manager Assets anzeigen.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1025'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -135,7 +135,7 @@ Sie können zum Bild in Experience Manager Assets navigieren und die mit dem Bil
 * [Assets-HTTP-API](mac-api-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
 * [Suchen von Assets](search-assets.md)
-* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
 * [Asset-Berichte](asset-reports.md)
 * [Metadatenschemata](metadata-schemas.md)
 * [Herunterladen von Assets](download-assets-from-aem.md)
