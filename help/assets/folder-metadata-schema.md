@@ -6,9 +6,9 @@ feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
 source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1090'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Verwenden Sie den Editor für Metadatenschema-Formulare, um Metadatenschemata f�
 Sie können ein neu hinzugefügtes oder vorhandenes Metadatenschema-Formular bearbeiten, das Folgendes enthält:
 
 * Registerkarten
-* Formularelemente in Registerkarten.
+* Formularelemente innerhalb von Registerkarten.
 
 Sie können diese Formularelemente einem Feld innerhalb eines Metdatenknotens im CRX-Repository zuordnen bzw. dafür konfigurieren. Sie können dem Metadatenschema-Formular neue Registerkarten oder Formularelemente hinzufügen.
 
@@ -105,7 +105,7 @@ Um die Eigenschaften von Formularelementen zu bearbeiten, tippen/klicken Sie auf
 
 **[!UICONTROL Feldbezeichnung]**: Der Name der Metadateneigenschaft, der auf der Eigenschaftenseite des Assets angezeigt wird.
 
-**[!UICONTROL Zu Eigenschaft zuordnen]**: Diese Eigenschaft gibt den relativen Pfad des Ordnerknotens im CRX-Repository an, wo das Element gespeichert ist. Er beginnt mit &quot;**./**&quot;, was angibt, dass sich der Pfad unter dem Knoten des Ordners befindet.
+**[!UICONTROL Zu Eigenschaft zuordnen]**: Diese Eigenschaft gibt den relativen Pfad des Ordnerknotens im CRX-Repository an, wo das Element gespeichert ist. Sie beginnt mit „**./**“, was angibt, dass sich der Pfad unter dem Knoten des Ordners befindet.
 
 Im Folgenden finden Sie Beispiele für gültige Werte für eine Eigenschaft:
 
@@ -154,11 +154,11 @@ Wenn Sie ein Metadatenschema für einen Ordner konfigurieren, wird der Pfad in d
 
 ### Zuweisen eines Schemas bei der Ordnererstellung {#assign-a-schema-when-creating-a-folder}
 
-Sie können beim Erstellen eines Ordners ein Ordner-Metadatenschema zuweisen. Wenn mindestens ein Ordner-Metadatenschema im System vorhanden ist, wird eine zusätzliche Liste im **[!UICONTROL Ordner erstellen]** angezeigt. Sie können das gewünschte Schema auswählen. Standardmäßig ist kein Schema ausgewählt.
+Sie können beim Erstellen eines Ordners ein Ordner-Metadatenschema zuweisen. Wenn mindestens ein Ordner-Metadatenschema im System vorhanden ist, wird eine zusätzliche Liste im Dialogfeld **[!UICONTROL Ordner erstellen]** angezeigt. Sie können das gewünschte Schema auswählen. Standardmäßig ist kein Schema ausgewählt.
 
 1. Tippen/klicken Sie in der Symbolleiste der [!DNL Experience Manager Assets]-Benutzeroberfläche auf **[!UICONTROL Erstellen]**.
-1. Geben Sie einen Titel und einen Namen für den Ordner an.
-1. Wählen Sie in der Liste Ordner-Metadatenschema das gewünschte Schema aus. Tippen/klicken Sie dann auf **[!UICONTROL Erstellen]**.
+1. Geben Sie einen Titel und eine Beschreibung für den Ordner an.
+1. Wählen Sie in der Liste „Ordner-Metadatenschema“ das gewünschte Schema aus. Tippen/klicken Sie anschließend auf **[!UICONTROL Erstellen]**.
 
    ![select_schema](assets/select_schema.png)
 
@@ -179,7 +179,7 @@ Geben Sie Metadatenwerte in die verschiedenen Felder ein und tippen/klicken Sie 
 * [Assets-HTTP-API](mac-api-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
 * [Suchen von Assets](search-assets.md)
-* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
 * [Asset-Berichte](asset-reports.md)
 * [Metadatenschemata](metadata-schemas.md)
 * [Herunterladen von Assets](download-assets-from-aem.md)
