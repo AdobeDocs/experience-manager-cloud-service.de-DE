@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit Cloud Manager Ihr erstes Programm erstell
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '686'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -53,11 +53,11 @@ Gehen Sie wie folgt vor, um ein Sandbox-Programm zu erstellen.
 
    ![Cloud Manager-Landingpage](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. Wählen Sie im Assistenten Programm erstellen die Option **Sandbox einrichten** und geben Sie einen Programmnamen ein und tippen oder klicken Sie auf **Weiter**.
+1. Wählen Sie im Assistenten zum Erstellen von Programmen die Option **Sandbox einrichten**, geben Sie einen Programmnamen ein und tippen oder klicken Sie auf **Fortfahren**.
 
    ![Erstellen von Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 
-1. Im **Sandbox einrichten** auswählen, können Sie festlegen, welche Lösungen Sie in Ihrem Sandbox-Programm aktivieren möchten. Die **Sites** und **Assets** -Lösungen sind immer in Sandbox-Programmen enthalten und werden automatisch ausgewählt. Dies reicht für unser Onboarding-Beispiel aus. Klicken Sie auf **Erstellen**.
+1. Im Dialogfeld **Sandbox einrichten** können Sie auswählen, welche Lösungen Sie in Ihrem Sandbox-Programm aktivieren möchten. Die Lösungen **Sites** und **Assets** sind immer in Sandbox-Programmen enthalten und werden automatisch ausgewählt. Dies reicht für unser Onboarding-Beispiel aus. Klicken Sie auf **Erstellen**.
 
    ![Lösungsauswahl](assets/set-up-sandbox-onboarding.png)
 
@@ -73,7 +73,7 @@ Nachdem Ihr erstes Programm erstellt wurde, können Sie Umgebungen dafür erstel
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt des Onboarding-Journey hinausgehen möchten.
+Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt der Onboarding-Tour hinausgehen möchten.
 
 * [Programme und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) – Erfahren Sie mehr über die Hierarchie von Cloud Manager und darüber, wie die verschiedenen Arten von Programmen in die Struktur passen und wie sie sich unterscheiden
 * [Erstellen von Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) – Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Sandbox-Programm für Schulungs-, Demo-, POC- oder andere produktionsfremde Zwecke erstellen
