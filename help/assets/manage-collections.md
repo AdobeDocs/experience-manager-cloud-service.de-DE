@@ -7,9 +7,9 @@ feature: Collections,Asset Management
 role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2447'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -17,16 +17,16 @@ ht-degree: 82%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-collections.html?lang=en) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-collections.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 Eine Sammlung ist ein Satz von Assets innerhalb von Adobe Experience Manager Assets. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden. Der Satz kann eine statische Sammlung oder eine dynamische Sammlung sein, die auf Suchergebnissen basiert.
 
-Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten. Sie können Sammlungen für verschiedene Benutzer freigeben, denen unterschiedliche Berechtigungsstufen zugewiesen sind, z. B. Anzeigen, Bearbeiten usw.
+Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten. Sie können Sammlungen für verschiedene Benutzende freigeben, denen unterschiedliche Berechtigungsstufen zugewiesen sind, z. B. „Anzeigen“, „Bearbeiten“ usw.
 
 Sie können mehrere Sammlungen für eine Benutzerin bzw. einen Benutzer freigeben. Jede Sammlung enthält Verweise auf Assets. Die referenzielle Integrität von Assets wird sammlungsübergreifend aufrechterhalten.
 
-Sammlungen weisen die folgenden Typen auf, basierend auf der Art und Weise, wie sie Assets sammeln:
+Sammlungen weisen die folgenden Typen auf, basierend auf der Art und Weise, wie sie Assets zusammenstellen:
 
 * Eine Sammlung mit einer statischen Referenzliste von Assets, Ordnern und anderen Sammlungen.
 
@@ -44,11 +44,11 @@ Sie können eine Sammlung mit [statischen Referenzen](#create-a-collection-with
 
 ### Erstellen von Sammlungen mit statischen Referenzen {#create-a-collection-with-static-references}
 
-Sie können eine Sammlung mit statischen Referenzen erstellen, z. B. eine Sammlung mit Verweisen auf Assets, Ordner, Sammlungen, Rotationssets und Bildsets.
+Sie können eine Sammlung mit statischen Referenzen erstellen, z. B. eine Sammlung mit Referenzen zu Assets, Ordnern, Sammlungen, Rotationssets und Bildsets.
 
-1. Navigieren Sie zum **[!UICONTROL Sammlungen]** Konsole.
+1. Navigieren Sie zur Konsole **[!UICONTROL Sammlungen]**.
 1. Tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**.
-1. Im **[!UICONTROL Sammlung erstellen]** -Seite, geben Sie einen Titel und eine optionale Beschreibung für die Sammlung ein.
+1. Geben Sie auf der Seite **[!UICONTROL Sammlung erstellen]** einen Titel und eine optionale Beschreibung für die Sammlung ein.
 1. Fügen Sie Mitglieder zur Sammlung hinzu und weisen Sie entsprechende Berechtigungen zu. Wählen Sie alternativ **[!UICONTROL Öffentliche Sammlung]**, um allen Benutzern Zugriff auf die Sammlung zu ermöglichen.
 
    >[!NOTE]
@@ -79,9 +79,9 @@ Sie können Assets aus der Assets-Benutzeroberfläche in eine Sammlung ziehen. S
 Eine Smart-Sammlung verwendet Suchkriterien, um Assets dynamisch zu füllen. Sie können eine Smart-Sammlung nur mit Dateien und nicht mit Ordnern oder Dateien und Ordnern erstellen.
 
 1. Navigieren Sie zur Assets-Benutzeroberfläche und tippen oder klicken Sie auf das Symbol **[!UICONTROL Suchen]**.
-1. Geben Sie im OmniSearch-Feld das Keyword ein und drücken Sie die `Enter`-Taste. Tippen oder klicken Sie auf das GlobalNav-Symbol, um den Bereich Filter anzuzeigen und einen Suchfilter aus dem Suchbereich anzuwenden.
+1. Geben Sie im OmniSearch-Feld das Keyword ein und drücken Sie die `Enter`-Taste. Tippen oder klicken Sie auf das GlobalNav-Symbol, um das Bedienfeld „Filter“ anzuzeigen, und wenden Sie einen Suchfilter aus dem Suchbereich an.
 1. Wählen Sie aus der Liste **[!UICONTROL Dateien und Ordner]** die Option **[!UICONTROL Dateien]** aus.
-1. Tippen/klicken **[!UICONTROL Speichern intelligenter Sammlungen]**.
+1. Tippen oder klicken Sie auf **[!UICONTROL Smart-Sammlung speichern]**.
 1. Geben Sie einen Namen für die Sammlung an. Aktivieren Sie **[!UICONTROL Öffentlich]**, um die DAM-Benutzergruppe mit der Rolle „Betrachter“ zur Smart-Sammlung hinzuzufügen.
 
    >[!NOTE]
@@ -97,12 +97,12 @@ Sie können einer Sammlung mit einer Liste referenzierter Assets oder Ordner Ass
 
 >[!NOTE]
 >
->Smart-Sammlungen verwenden eine Suchabfrage zum Ausfüllen von Assets. Daher können statische Referenzen auf Assets und Ordner nicht auf sie angewendet werden.
+>Smart-Sammlungen verwenden eine Suchabfrage zum Ausfüllen von Assets. Daher sind statische Referenzen zu Assets und Ordnern für sie nicht anwendbar.
 
 1. Navigieren Sie in der Assets-Benutzeroberfläche zum Speicherort des Assets, das Sie einer Sammlung hinzufügen möchten.
 1. Wählen Sie das Asset aus und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Zu Sammlung]**. Alternativ können Sie das Asset in den Bereich **[!UICONTROL In Sammlung ablegen]** ziehen. Lassen Sie die Maustaste los, wenn die Dropzone aktiv wird und sich ihre Bezeichnung in **[!UICONTROL Zum Hinzufügen ablegen]** ändert.
 1. Wählen Sie auf der Seite **[!UICONTROL Zu Sammlung hinzufügen]** die Sammlung aus, der Sie das Asset hinzufügen möchten.
-1. Tippen/klicken **[!UICONTROL Hinzufügen]** und schließen Sie dann die Bestätigungsmeldung. Das Asset wird zur Sammlung hinzugefügt.
+1. Tippen oder klicken Sie auf **[!UICONTROL Hinzufügen]** und schließen Sie die Bestätigungsnachricht. Das Asset wird zur Sammlung hinzugefügt.
 
 ## Bearbeiten von Smart-Sammlungen {#edit-a-smart-collection}
 
@@ -114,9 +114,9 @@ Smart-Sammlungen werden durch Speichern von Suchvorgängen erstellt. Das heißt,
 1. Wählen Sie in der Liste **[!UICONTROL Gespeicherte Suchen]** die Smart-Sammlung aus, die Sie ändern möchten. Im Suchbereich werden die für die gespeicherte Suche konfigurierten Filter angezeigt.
 1. Wählen Sie aus der Liste **[!UICONTROL Dateien und Ordner]** die Option **[!UICONTROL Dateien]** aus.
 1. Ändern Sie den bzw. die Filter nach Bedarf. Tippen oder klicken Sie auf **[!UICONTROL Smart-Sammlung bearbeiten]**. Sie können auch den Namen der Smart-Sammlung ändern.
-1. Tippen oder klicken Sie auf **[!UICONTROL Speichern]**. Die **[!UICONTROL Intelligente Sammlung bearbeiten]** angezeigt.
-1. Tippen/klicken **[!UICONTROL Überschreiben]** , um die ursprüngliche Smart-Sammlung durch die bearbeitete Sammlung zu ersetzen. Wählen Sie alternativ **[!UICONTROL Speichern unter]** aus, um die bearbeitete Sammlung separat zu speichern.
-1. Tippen/klicken Sie im Bestätigungsdialogfeld auf **[!UICONTROL Speichern]** , um den Prozess abzuschließen.
+1. Tippen oder klicken Sie auf **[!UICONTROL Speichern]**. Das Dialogfeld **[!UICONTROL Smart-Sammlung bearbeiten]** wird angezeigt.
+1. Tippen oder klicken Sie auf **[!UICONTROL Überschreiben]**, um die ursprüngliche Smart-Sammlung durch die bearbeitete Sammlung zu ersetzen. Wählen Sie alternativ **[!UICONTROL Speichern unter]** aus, um die bearbeitete Sammlung separat zu speichern.
+1. Tippen oder klicken Sie im Bestätigungsdialogfeld auf **[!UICONTROL Speichern]**, um den Vorgang abzuschließen.
 
 ## Anzeigen und Bearbeiten von Sammlungsmetadaten {#view-and-edit-collection-metadata}
 
@@ -130,7 +130,7 @@ Sammlungsmetadaten umfassen die Daten zur Sammlung, einschließlich aller hinzug
 
 Sie können die Metadaten mehrerer Sammlungen gleichzeitig bearbeiten. Mit dieser Funktion können Sie gängige Metadaten in mehreren Sammlungen schnell replizieren.
 
-1. Wählen Sie in der Konsole &quot;Sammlungen&quot;zwei oder mehr Sammlungen aus, für die Sie Metadaten bearbeiten möchten.
+1. Wählen Sie in der Konsole „Sammlungen“ zwei oder mehr Sammlungen aus, für die Sie Metadaten bearbeiten möchten.
 1. Klicken oder tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Eigenschaften]**.
 1. Bearbeiten Sie auf der Seite **[!UICONTROL Sammlungs-Metadaten]** die Metadaten auf den Registerkarten **[!UICONTROL Allgemein]** und **[!UICONTROL Erweitert]** nach Bedarf.
 1. Tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Speichern und schließen]** und schließen Sie danach das Bestätigungsdialogfeld, um den Vorgang abzuschließen.
@@ -148,7 +148,7 @@ Die Suchfunktion für Sammlungen unterstützt sowohl das [Suchen nach Sammlunge
 
 Sie können mit der Konsole „Sammlungen“ nach Sammlungen suchen. Wenn Sie die Suche mit Keywords im Suchfeld durchführen, sucht [!DNL Experience Manager Assets] nach Sammlungsnamen, Sammlungsmetadaten und den Tags, die zu den Sammlungen hinzugefügt wurden.
 
-Wenn Sie auf der obersten Ebene nach Sammlungen suchen, werden nur die einzelnen Sammlungen in den Suchergebnissen zurückgegeben. Assets oder Ordner in den Sammlungen sind ausgeschlossen. In allen anderen Fällen (z. B. innerhalb einer individuellen Sammlung oder in einer Ordnerhierarchie) werden alle relevanten Assets, Ordner und Sammlungen zurückgegeben.
+Wenn Sie auf der obersten Ebene nach Sammlungen suchen, werden nur die einzelnen Sammlungen in den Suchergebnissen zurückgegeben. Assets oder Ordner innerhalb der Sammlungen sind ausgeschlossen. In allen anderen Fällen (z. B. innerhalb einer individuellen Sammlung oder in einer Ordnerhierarchie) werden alle relevanten Assets, Ordner und Sammlungen zurückgegeben.
 
 ### Suchen in Sammlungen {#search-within-collections}
 
@@ -222,7 +222,7 @@ Sie können eine Sammlung zu einer anderen Sammlung hinzufügen und so eine vers
    >
    >Die zuletzt aktualisierte Sammlung wird standardmäßig auf der Seite **[!UICONTROL Zu Sammlung hinzufügen]** ausgewählt.
 
-1. Tippen/klicken **[!UICONTROL Hinzufügen]**. Eine Meldung bestätigt, dass die Sammlung zur Zielsammlung im **[!UICONTROL Ziel auswählen]** Seite. Schließen Sie die Nachricht, um den Prozess abzuschließen.
+1. Tippen oder klicken Sie auf **[!UICONTROL Hinzufügen]**. Eine Meldung bestätigt, dass die Sammlung zur Zielsammlung auf der Seite **[!UICONTROL Ziel auswählen]** hinzugefügt wird. Schließen Sie die Meldung, um den Vorgang abzuschließen.
 
 >[!NOTE]
 >
@@ -253,12 +253,12 @@ Gehen Sie wie folgt vor, um gespeicherte Suchen zu löschen:
 
 Sie können einen Workflow für die Assets in einer Sammlung ausführen. Wenn die Sammlung verschachtelte Sammlungen enthält, wird der Workflow auch für die Assets innerhalb der verschachtelten Sammlungen ausgeführt. Wenn die Sammlung und die verschachtelte Sammlung jedoch doppelte Assets enthalten, wird der Workflow für diese Assets nur einmal ausgeführt.
 
-1. Wählen Sie in der Konsole &quot;Sammlungen&quot;eine Sammlung aus, für die Sie einen Workflow ausführen möchten.
+1. Wählen Sie in der Konsole „Sammlungen“ eine Sammlung aus, für die Sie einen Workflow ausführen möchten.
 1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Zeitleiste]** aus der Liste aus.
 1. Tippen oder klicken Sie in der Zeitleiste auf das Caret-Symbol am unteren Rand und dann auf **[!UICONTROL Workflow starten]**.
 1. Wählen Sie im Abschnitt **[!UICONTROL Workflow starten]** ein Workflow-Modell aus der Liste aus. Wählen Sie beispielsweise das **[!UICONTROL DAM Update Asset]**-Modell aus.
-1. Geben Sie einen Titel für den Workflow ein und tippen/klicken Sie auf **[!UICONTROL Starten]**.
-1. Tippen/klicken Sie im Dialogfeld auf **[!UICONTROL Fortfahren]**. Der Workflow wird für alle Assets in der Sammlung ausgeführt.
+1. Geben Sie einen Titel für den Workflow ein und tippen oder klicken Sie auf **[!UICONTROL Start]**.
+1. Tippen oder klicken Sie im Dialogfeld auf **[!UICONTROL Fortfahren]**. Der Workflow wird für alle Assets in der Sammlung ausgeführt.
 
 **Siehe auch**
 
@@ -266,7 +266,7 @@ Sie können einen Workflow für die Assets in einer Sammlung ausführen. Wenn di
 * [Assets-HTTP-API](mac-api-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
 * [Suchen von Assets](search-assets.md)
-* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
 * [Asset-Berichte](asset-reports.md)
 * [Metadatenschemata](metadata-schemas.md)
 * [Herunterladen von Assets](download-assets-from-aem.md)
