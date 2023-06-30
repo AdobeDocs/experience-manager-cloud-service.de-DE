@@ -7,7 +7,7 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1116'
-ht-degree: 65%
+ht-degree: 92%
 
 ---
 
@@ -70,7 +70,7 @@ Sie haben soeben eine Listenabfrage für eine vollständige Liste aller Inhaltsf
 
 >[!NOTE]
 >
->Wenn Sie die **AEM Demo Assets** -Endpunkt aus der Dropdown-Liste, wenden Sie sich an die Kundenunterstützung der Adobe oder kontaktieren Sie die [AEM Testen des Slack-Kanals.](https://adobe-dx-support.slack.com/)
+>Wenn Sie die **AEM Demo Assets** -Endpunkt aus der Dropdown-Liste, wenden Sie sich an die Kundenunterstützung der Adobe oder kontaktieren Sie die [AEM Testen des Slack-Kanals.](https://adobe-dx-support.slack.com/de)
 
 ## Abfrage eines bestimmten Elements des Beispielinhalts {#bypath-query}
 
@@ -117,7 +117,7 @@ Nachdem Sie nun die beiden primären Abfragetypen ausgeführt haben, können Sie
 
 1. Um Abfragen nach eigenen Inhaltsfragmenten auszuführen, ändern Sie den Endpunkt vom Ordner **AEM Demo Assets** in den Ordner **Ihr Projekt**.
 
-1. Löschen Sie alle im Abfrage-Editor vorhandenen Inhalte. Geben Sie dann eine linke geschweifte Klammer `{` ein und drücken Sie Strg+Leertaste oder Option+Leertaste, um eine AutoVervollständigen-Liste der in Ihrem Endpunkt definierten Modelle zu erstellen. Wählen Sie aus den Optionen das von Ihnen erstellte Modell aus, das in `List` endet. Wenn Sie die Beispiele aus den vorherigen Modulen befolgt haben, sollten Sie `adventureList` in der Liste für die automatische Vervollständigung.
+1. Löschen Sie alle im Abfrage-Editor vorhandenen Inhalte. Geben Sie dann eine linke geschweifte Klammer `{` ein und drücken Sie Strg+Leertaste oder Option+Leertaste, um eine AutoVervollständigen-Liste der in Ihrem Endpunkt definierten Modelle zu erstellen. Wählen Sie aus den Optionen das von Ihnen erstellte Modell aus, das in `List` endet. Wenn Sie die Beispiele aus den vorherigen Modulen befolgt haben, sollten Sie `adventureList` in der Liste für die automatische Vervollständigung finden.
 
    ![Benutzerdefinierte Abfrage starten](assets/do-not-localize/custom-query-1.png)
 
@@ -125,7 +125,7 @@ Nachdem Sie nun die beiden primären Abfragetypen ausgeführt haben, können Sie
 
 1. Tippen oder klicken Sie auf die Schaltfläche **Pretify**, um den Code automatisch zu formatieren, sodass er leichter zu lesen ist.
 
-1. Tippen oder klicken Sie nach Abschluss des Vorgangs oben links im Editor auf die Schaltfläche **Wiedergeben**, um die Abfrage auszuführen. Der Editor schließt die `items`, die kurz gelb hervorgehoben sind und die Abfrage ausgeführt wird.
+1. Tippen oder klicken Sie nach Abschluss des Vorgangs oben links im Editor auf die Schaltfläche **Wiedergeben**, um die Abfrage auszuführen. Der Editor vervollständigt automatisch die `items`, die kurz gelb hervorgehoben werden, und die Abfrage wird ausgeführt.
 
 1. Die Ergebnisse werden im rechten Bereich neben dem Abfrage-Editor angezeigt.
 
@@ -135,13 +135,13 @@ So können Ihre Inhalte für digitale Omnichannel-Erlebnisse bereitgestellt werd
 
 ## Persistierte Abfragen {#persisted-queries}
 
-Beständige Abfragen sind der bevorzugte Mechanismus, um die GraphQL-API Client-Anwendungen zugänglich zu machen. Nachdem eine Abfrage persistiert wurde, kann sie mithilfe einer GET-Anfrage angefordert und zwischengespeichert werden, um einen schnellen Abruf zu ermöglichen.
+Persistierte Abfragen sind der bevorzugte Mechanismus, um die GraphQL-API für Client-Applikationen zugänglich zu machen. Nachdem eine Abfrage persistiert wurde, kann sie mithilfe einer GET-Anfrage angefordert und zwischengespeichert werden, um einen schnellen Abruf zu ermöglichen.
 
-Sie erstellen eine persistente Abfrage mit Daten, die Sie in Ihrer Clientanwendung verwenden möchten.
+Sie erstellen eine persistente Abfrage mit Daten, die Sie in Ihrer Client-Applikation verwenden möchten.
 
-1. Sie verwenden die Daten, die Sie zuvor als Inhaltsfragment erstellt haben. Stellen Sie daher sicher, dass die Variable **Ihr Projekt** Endpunkt wird im **Endpunkt** Dropdown-Menü oben rechts im Editor.
+1. Sie werden die Daten verwenden, die Sie zuvor als Inhaltsfragment erstellt haben. Vergewissern Sie sich also, dass der Endpunkt **Ihr Projekt** im Dropdown-Menü **Endpunkt** oben rechts im Editor ausgewählt ist.
 
-1. Kopieren Sie das folgende Codefragment.
+1. Kopieren Sie den folgenden Code-Snippet.
 
    ```text
       {
@@ -169,7 +169,7 @@ Sie erstellen eine persistente Abfrage mit Daten, die Sie in Ihrer Clientanwendu
    >
    >Wenn Sie nicht dieselben Feldbeschreibungen wie in den vorherigen Modulen verwendet haben, müssen Sie die Feldnamen in dieser Abfrage aktualisieren.
    >
-   >Verwenden Sie die Funktion GraphQL autocomplete (Strg+Leertaste oder Option+Leertaste) wie zuvor beschrieben, um die verfügbaren Eigenschaften zu identifizieren.
+   >Verwenden Sie die GraphQL-Funktion „autocomplete“ (Strg + Leertaste oder Option + Leertaste) wie zuvor beschrieben, um die verfügbaren Eigenschaften zu identifizieren.
 
 1. Klicken Sie nach dem Einfügen oben links im Abfrage-Editor auf die Schaltfläche **Wiedergeben**, um die Abfrage auszuführen.
 
@@ -177,18 +177,18 @@ Sie erstellen eine persistente Abfrage mit Daten, die Sie in Ihrer Clientanwendu
 
    ![Erstellen einer eigenen Abfrage](assets/do-not-localize/own-query.png)
 
-1. Wenn Ihre Abfrage Ihren Erwartungen entspricht, klicken Sie auf die Schaltfläche **Speichern unter** -Schaltfläche am oberen Rand des Abfrageeditors klicken, um die Abfrage beizubehalten.
+1. Wenn Sie mit Ihrer Abfrage zufrieden sind, klicken Sie auf die Schaltfläche **Speichern unter** oben im Abfrage-Editor, um die Abfrage zu speichern.
 
-1. Im **Abfragename** Popup, geben Sie Ihrer Abfrage den Namen `adventure-list`.
+1. Im Popup **Abfragename**, geben Sie Ihrer Abfrage den Namen `adventure-list`.
 
 1. Tippen oder klicken Sie auf **Speichern unter**.
 
-   ![Persistente Abfrage](assets/do-not-localize/persist-query.png)
+   ![Abfrage beibehalten](assets/do-not-localize/persist-query.png)
 
-1. Die Abfrage wird beibehalten, wie durch eine Bannermeldung am unteren Bildschirmrand bestätigt. Die Abfrage wird jetzt auch im linken Bereich der persistenten Abfragen im Fenster angezeigt.
+1. Die Abfrage wird beibehalten, wie durch eine Bannermeldung am unteren Bildschirmrand bestätigt. Die Abfrage wird jetzt auch im linken Bereich der persistierten Abfragen im Fenster angezeigt.
 
-1. Damit die persistente Abfrage öffentlich verfügbar ist, muss sie ähnlich wie die Veröffentlichung Ihrer Inhaltsfragmente veröffentlicht werden. Klicken Sie auf **Veröffentlichen** Schaltfläche oben rechts im Abfrageeditor, um die Abfrage zu veröffentlichen.
+1. Damit die persistierte Abfrage öffentlich verfügbar ist, muss sie ähnlich wie die Veröffentlichung Ihrer Inhaltsfragmente veröffentlicht werden. Klicken Sie auf die Schaltfläche **Veröffentlichen** oben rechts im Abfrage-Editor, um die Abfrage zu veröffentlichen.
 
 1. Die Veröffentlichung wird durch eine Bannerbenachrichtigung bestätigt.
 
-Sie haben jetzt eine neue persistente Abfrage, die nur die von Ihnen definierten Eigenschaften und Formate enthält.
+Sie haben nun eine neue persistierte Abfrage, die nur die spezifischen Eigenschaften und Formate enthält, die Sie definiert haben.

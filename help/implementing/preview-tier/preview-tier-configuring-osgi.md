@@ -1,17 +1,17 @@
 ---
 title: Konfigurieren der OSGi-Einstellungen für die Vorschauebene
-description: Erfahren Sie, wie Sie den AEM-Vorschaudienst konfigurieren, um vor der Live-Schaltung eine Vorschau des Inhalts anzuzeigen.
+description: Erfahren Sie, wie Sie mit dem AEM Vorschau-Service vor der Live-Schaltung eine Vorschau von Inhalten anzeigen können.
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 53%
+ht-degree: 89%
 
 ---
 
 # Konfigurieren der OSGi-Einstellungen für die Vorschauebene {#configure-osgi-preview-tier}
 
-AEM bietet einen Sites-Vorschaudienst, mit dem Entwickler und Inhaltsautoren eine Vorschau des endgültigen Erlebnisses einer Website anzeigen können, bevor diese in die Veröffentlichungsumgebung gelangt und öffentlich verfügbar ist.
+AEM bietet den Sites-Vorschau-Service, der Entwickelnden und Inhaltsautoren oder -autorinnen die Vorschau des endgültigen Erlebnisses einer Website ermöglicht, bevor diese in die Publishing-Umgebung gelangt und öffentlich verfügbar ist.
 
 Dies erleichtert die Vorschau einer Reihe von Erlebnissen, die sonst nicht in der Autorenumgebung sichtbar wären. Beispielsweise Seitenübergänge, Experience Fragments und andere Inhalte, die ausschließlich auf der Veröffentlichungsseite enthalten sind.
 

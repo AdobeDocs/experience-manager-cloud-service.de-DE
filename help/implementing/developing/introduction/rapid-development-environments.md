@@ -5,7 +5,7 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3313'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -118,7 +118,7 @@ Nachdem Sie mit Cloud Manager einen RDE für Ihr Programm hinzugefügt haben, k�
    3. Workspace: <no workspace selected>
    ```
 
-   Beachten Sie, dass Sie für diesen Schritt Mitglied von Cloud Manager sein müssen. **Entwickler - Cloud Service** Produktprofil. Weitere Informationen finden Sie auf [dieser Seite](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer).
+   Beachten Sie, dass Sie für diesen Schritt Mitglied des Cloud Manager-Produktprofils **Entwickelnde – Cloud Service** sein müssen. Weitere Informationen finden Sie auf [dieser Seite](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer).
 
    Andernfalls können Sie auch dadurch bestätigen, dass Sie über diese Entwicklerrolle verfügen, indem Sie sich bei der Entwicklerkonsole anmelden, indem Sie diesen Befehl ausführen:
 
@@ -451,7 +451,7 @@ Wenn eine RDE zurückgesetzt wird, werden alle Inhalte entfernt, sodass, falls g
 
 1. Platzieren und übertragen Sie den Beispielinhalt in Git in einem install.rde-Ordner unter /apps und synchronisieren Sie dann das übergeordnete Inhaltspaket mit der RDE mithilfe der Befehlszeilen-Tools.
 
-1. Verwenden Sie die [Content Copy-Tool](/help/implementing/developing/tools/content-copy.md) , um einen definierten Inhalt aus einer Produktions-, Staging- oder Entwicklungsumgebung oder aus einer anderen RDE zu kopieren.
+1. Verwenden Sie das [Tool zum Kopieren von Inhalten](/help/implementing/developing/tools/content-copy.md), um ein definiertes Inhaltsset aus einer Produktions-, Staging- oder Entwicklungsumgebung oder aus einer anderen RDE zu kopieren.
 
 1. Verwenden Sie den Package Manager
 

@@ -8,7 +8,7 @@ exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 source-git-commit: c15486fb3de73773fa7e255809ffaa36715cea05
 workflow-type: tm+mt
 source-wordcount: '3529'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -104,15 +104,15 @@ Die maximal unterstützte Auflösung der Eingabedatei beträgt 16K.
 | Bildformat | Dateierweiterung ohne Berücksichtigung der Groß-/Kleinschreibung | MIME-Typ | Unterstützter Eingabefarbraum | Maximale unterstützte Größe der Eingabedatei | Unterstütztes Bildformat? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | Ja |
-| CMYK |  |  |  |  | Ja |
-| EPS |  |  |  |  | Nein |
+| CMYK | | | | | Ja |
+| EPS | | | | | Nein |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | Ja. Der erste Frame des animierten GIF wird für die Ausgabedarstellung verwendet. Sie können den ersten Frame weder konfigurieren noch ändern. |
 | JPEG | `.jpg` und `.jpeg` | image/jpeg | sRGB | 15 GB | Ja |
 | PNG | `.png` | image/png | sRGB | 15 GB | Ja |
 | PSD | `.psd` | image/vnd.adobe.photoshop | sRGB<br>CMYK | 2 GB | Ja |
-| SVG |  |  |  |  | Nein |
+| SVG | | | | | Nein |
 | TIFF | `.tif` und `.tiff` | image/tiff | sRGB<br>CMYK | 4 GB | Ja |
-| WebP/Animated WebP |  |  |  |  | Nein |
+| WebP/Animated WebP | | | | | Nein |
 
 ## Erstellen von Dynamic Media-Bildprofilen {#creating-image-profiles}
 
@@ -202,13 +202,13 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
    * Navigieren Sie zu `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` und wenden Sie das entsprechende Profil an und wählen Sie **[!UICONTROL Speichern]** aus.
 
-      ![chlimage_1-257](assets/chlimage_1-257.png)
+     ![chlimage_1-257](assets/chlimage_1-257.png)
 
    * Navigieren Sie in CRXDE Lite zum folgenden Knoten: `/content/dam/jcr:content`.
 
-      Fügen Sie die Eigenschaft `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` hinzu und wählen Sie **[!UICONTROL Alle speichern]**.
+     Fügen Sie die Eigenschaft `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` hinzu und wählen Sie **[!UICONTROL Alle speichern]**.
 
-      ![configure_image_profiles](assets/configure_image_profiles.png)
+     ![configure_image_profiles](assets/configure_image_profiles.png)
 
 ## Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern eines einzelnen Bildes {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
@@ -272,37 +272,35 @@ Sie können einen smarten Zuschnitt erneut ausführen, um die zusätzlichen Zusc
 
    * Passen Sie die Anzeigegröße von Bildern auf der Seite an.
 
-      Ziehen Sie den Schieberegler rechts neben der Dropdown-Liste mit Breakpoint-Namen nach links oder rechts, um den sichtbaren Bildbereich anzupassen.
+     Ziehen Sie den Schieberegler rechts neben der Dropdown-Liste mit Breakpoint-Namen nach links oder rechts, um den sichtbaren Bildbereich anzupassen.
 
-      ![edit_smart_products-sliderbar](assets/edit_smart_crops-sliderbar.png)
+     ![edit_smart_products-sliderbar](assets/edit_smart_crops-sliderbar.png)
 
    * Filtern Sie die Liste der sichtbaren Bilder anhand von Breakpoint-Namen. Im folgenden Beispiel werden die Bilder nach dem Breakpoint-Namen „Medium“ gefiltert.
 
-      Wählen Sie aus der Dropdown-Liste in der oberen rechten Ecke der Seite einen Breakpoint-Namen aus, um zu filtern, welche Bilder Ihnen angezeigt werden. (Siehe Abbildung oben.)
+     Wählen Sie aus der Dropdown-Liste in der oberen rechten Ecke der Seite einen Breakpoint-Namen aus, um zu filtern, welche Bilder Ihnen angezeigt werden. (Siehe Abbildung oben.)
 
-      ![edit_smart_products-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
+     ![edit_smart_products-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
 
    * Ändern Sie die Rahmengröße für den smarten Zuschnitt. Führen Sie einen der folgenden Schritte aus:
 
       * Wenn das Bild nur über einen smarten Zuschnitt oder ein smartes Farb-/Bildmuster verfügt, ziehen Sie im Bild die Ecke des Zuschnittsfeldes, um die Größe des sichtbaren Bereichs des Zuschnitts anzupassen.
       * Wenn das Bild sowohl über einen smarten Zuschnitt als auch über ein smartes Farb-/Bildmuster verfügt, ziehen Sie im Bild die Ecke des Zuschnittsfeldes, um die Größe des sichtbaren Bereichs des Zuschnitts anzupassen. Oder wählen Sie das Farb-/Bildmuster unter dem Bild (Farbmuster sind statisch) aus und ziehen Sie die Ecke des Zuschnittsfelds. Passen Sie die Größe des sichtbaren Bereichs des Farb-/Bildmusters an.
 
-      ![Größenänderung des smarten Zuschnitts eines Bildes](assets/edit_smart_crops-resize.png).
+     ![Größenänderung des smarten Zuschnitts eines Bildes](assets/edit_smart_crops-resize.png).
 
    * Verschieben Sie das Feld für den smarten Zuschnitt. Führen Sie einen der folgenden Schritte aus:
 
       * Wenn das Bild nur über entweder einen smarten Zuschnitt oder einen smarten Musterabschnitt verfügt, ziehen Sie das Zuschnittsfeld auf dem Bild an eine neue Position.
       * Wenn das Bild sowohl über einen smarten Zuschnitt als auch über einen smarten Musterabschnitt verfügt, ziehen Sie das Feld für den smarten Zuschnitt auf dem Bild an eine neue Position. Oder wählen Sie unter dem Bild das smarte Bildmuster (Farbmuster sind statisch) aus und ziehen Sie das smarte Zuschnittsfeld an eine neue Position.
 
-      ![edit_smart_cards-move](assets/edit_smart_crops-move.png)
+     ![edit_smart_cards-move](assets/edit_smart_crops-move.png)
 
    * Machen Sie all Ihre Änderungen rückgängig und stellen Sie den ursprünglichen smarten Zuschnitt bzw. das smarte Farb-/Bildmuster wieder her (gilt nur für die aktuelle Bearbeitungssitzung).
 
-      Wählen Sie über dem Bild **[!UICONTROL Wiederherstellen]** aus.
+     Wählen Sie über dem Bild **[!UICONTROL Wiederherstellen]** aus.
 
-      ![edit_smart_cards-revert](assets/edit_smart_crops-revert.png)
-
-
+     ![edit_smart_cards-revert](assets/edit_smart_crops-revert.png)
 
 1. Wählen Sie in der oberen rechten Ecke der Seite **[!UICONTROL Speichern]** und anschließend **[!UICONTROL Schließen]** aus, um zum Asset-Ordner zurückzukehren.
 

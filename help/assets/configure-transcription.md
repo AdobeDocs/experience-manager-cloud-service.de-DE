@@ -14,7 +14,7 @@ exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1694'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 94%
 Transkription ist der Prozess der Übersetzung des Audioinhalts aus einer Audio- oder Videodatei in Text (Sprache in Text) mithilfe der Spracherkennungstechnologie.
 [!DNL Adobe Experience Manager Assets] wurde mit [!DNL Azure Media Services] konfiguriert, wodurch automatisch ein Texttranskript der gesprochenen Sprache in einer unterstützten Audio- oder Videodatei im WebVTT-Format (.vtt) generiert wird. Wenn ein Audio- oder Video-Asset in [!DNL Experience Manager Assets] verarbeitet wird, generiert der Transkriptions-Service automatisch die Texttranskript-Ausgabedarstellung des Audio- oder Video-Assets und speichert sie an demselben Speicherort in Ihrem Assets-Repository, in dem sich das Original-Asset befindet. Die [!DNL Experience Manager Assets] Mit dem Transkriptionsdienst können Marketingexperten ihren Audio- und Videoinhalt effektiv verwalten, indem sie die zusätzliche Entdeckung des Textinhalts ermöglichen und den ROI dieser Assets erhöhen, indem sie Barrierefreiheit und Lokalisierung unterstützen.
 
-Transkripte sind Textversionen gesprochener Inhalte. Ein Beispiel ist ein Film, den Sie auf einer OTT-Plattform ansehen, der häufig Untertitel enthält, um die Barrierefreiheit zu verbessern oder den Inhalt in anderen Sprachen zu zeigen. Oder eine Audio- oder Videodatei, die für Marketing-, Lern- oder Unterhaltungszwecke verwendet wird. Diese Erlebnisse beginnen mit einer Transkription, die dann entsprechend formatiert oder übersetzt wird. Das Transskribieren von Audio oder Video ist bei manueller Ausführung zeitintensiv und fehleranfällig. Angesichts des immer größeren Bedarfs an Audio-Video-Inhalten ist es auch eine Herausforderung, den manuellen Prozess zu skalieren. [!DNL Experience Manager Assets] verwendet die AI-basierte Transkription von Azure, die eine groß angelegte Verarbeitung der Audio- und Video-Assets ermöglicht und die Text-Transkripte (.vtt-Dateien) zusammen mit den Zeitstempeldetails generiert. Neben Assets wird die Transkriptionsfunktion auch in Dynamic Media unterstützt.
+Transkripte sind Textversionen gesprochener Inhalte. Ein Beispiel ist ein Film, den Sie auf einer OTT-Plattform ansehen, der häufig Untertitel enthält, um die Barrierefreiheit zu verbessern oder den Inhalt in anderen Sprachen zu zeigen. Oder eine Audio- oder Videodatei, die für Marketing-, Lern- oder Unterhaltungszwecke verwendet wird. Diese Erlebnisse beginnen mit einer Transkription, die dann entsprechend formatiert oder übersetzt wird. Das Transskribieren von Audio oder Video ist bei manueller Ausführung zeitintensiv und fehleranfällig. Angesichts des immer größeren Bedarfs an Audio-Video-Inhalten ist es auch eine Herausforderung, den manuellen Prozess zu skalieren. [!DNL Experience Manager Assets] verwendet die KI-basierte Transkription von Azure, die eine groß angelegte Verarbeitung der Audio- und Video-Assets ermöglicht und die Text-Transkripte (.vtt-Dateien) zusammen mit den Zeitstempeldetails erzeugt. Neben Assets wird die Transkriptionsfunktion auch in Dynamic Media unterstützt.
 
-Die Transkriptionsfunktion ist in [!DNL Experience Manager Assets] kostenlos verfügbar. Die Administratoren benötigen jedoch die Azure-Anmeldeinformationen des Benutzers, um den Transkriptionsdienst in [!DNL Experience Manager Assets]. Sie können die [Testanmeldedaten auch direkt von Microsoft® erhalten](https://azure.microsoft.com/de-de/pricing/details/media-services/), um die Audio- oder Videotranskriptionsfunktion in Assets auszuprobieren.
+Die Transkriptionsfunktion ist in [!DNL Experience Manager Assets] kostenlos verfügbar. Die Admins benötigen jedoch die Azure-Anmeldeinformationen der Benutzenden, um den Transkriptions-Service in [!DNL Experience Manager Assets] zu konfigurieren. Sie können die [Testanmeldedaten auch direkt von Microsoft® erhalten](https://azure.microsoft.com/de-de/pricing/details/media-services/), um die Audio- oder Videotranskriptionsfunktion in Assets auszuprobieren.
 
 ## Voraussetzungen für die Transkription {#prerequisites}
 
@@ -101,7 +101,7 @@ Nachdem das Verarbeitungsprofil für die Transkription von Audio- und Videodatei
 >
 >Ein Verarbeitungsprofil, das auf einen Ordner angewendet wird, funktioniert für die gesamte Struktur, kann aber mit einem anderen Profil überschrieben werden, das auf einen Unterordner angewendet wird.
 >
->Wenn Assets in einen Ordner hochgeladen werden, kommuniziert der Experience Manager mit den Eigenschaften des übergeordneten Ordners, um das Verarbeitungsprofil zu identifizieren. Wenn nichts angewendet wird, wird in einem übergeordneten Ordner in der Hierarchie geprüft, ob ein Verarbeitungsprofil angewendet werden soll.
+>Wenn Assets in einen Ordner hochgeladen werden, kommuniziert Experience Manager mit den enthaltenen Eigenschaften des Ordners, um das Verarbeitungsprofil zu ermitteln. Wenn nichts angewendet wird, wird in einem übergeordneten Ordner in der Hierarchie geprüft, ob ein Verarbeitungsprofil angewendet werden soll.
 
 
 ## Generieren der Transkription Ihrer Audio- oder Video-Assets {#generate-transcription}
@@ -173,7 +173,7 @@ Melden Sie sich bei Ihrem [!DNL Azure Media Services]-Konto mit denselben Anmeld
 * [Assets-HTTP-API](mac-api-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
 * [Suchen von Assets](search-assets.md)
-* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
 * [Asset-Berichte](asset-reports.md)
 * [Metadatenschemata](metadata-schemas.md)
 * [Herunterladen von Assets](download-assets-from-aem.md)

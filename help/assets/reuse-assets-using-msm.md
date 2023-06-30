@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: ca58b4df232dc658d7843ede2386710c4da43fcb
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '3404'
-ht-degree: 93%
+source-wordcount: '3403'
+ht-degree: 94%
 
 ---
 
@@ -261,7 +261,7 @@ So brechen Sie die Vererbung ab:
 
    ![Aktion „Synchronisieren“ – Abrufen von Quelländerungen](assets/cancel-inheritance-icon.png)
 
-1. Bestätigen Sie im Dialogfeld Vererbung abbrechen die Aktion mit Ja.
+1. Bestätigen Sie die Aktion im Dialogfeld Vererbung abbrechen mit Ja.
 
 ### Vererbung erneut aktivieren {#reenable-inheritance}
 
@@ -363,7 +363,7 @@ In weiteren Szenarien entspricht das Verhalten von MSM für [!DNL Assets] dem vo
 
 >[!NOTE]
 >
->Beachten Sie, dass MSM für Inhaltsfragmente (auf die über das **[!UICONTROL Assets]** -Konsole) verwendet die Assets-Funktion; Dies liegt daran, dass sie als Assets gespeichert werden (obwohl sie als Sites-Funktion betrachtet werden).
+>Denken Sie daran, dass MSM für Inhaltsfragmente (auf die über das **[!UICONTROL Assets]** -Konsole) verwendet die Assets-Funktion; Dies liegt daran, dass sie als Assets gespeichert werden (obwohl sie als Sites-Funktion betrachtet werden).
 
 ## Beschränkungen und bekannte Probleme bei MSM für [!DNL Assets] {#limitations}
 
@@ -377,7 +377,7 @@ Im Folgenden finden Sie Einschränkungen von MSM für [!DNL Assets].
 * [Assets-HTTP-API](mac-api-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
 * [Suchen von Assets](search-assets.md)
-* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
 * [Asset-Berichte](asset-reports.md)
 * [Metadatenschemata](metadata-schemas.md)
 * [Herunterladen von Assets](download-assets-from-aem.md)

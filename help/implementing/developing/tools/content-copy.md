@@ -5,7 +5,7 @@ exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
 source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
 workflow-type: tm+mt
 source-wordcount: '1203'
-ht-degree: 40%
+ht-degree: 54%
 
 ---
 
@@ -17,7 +17,7 @@ Das Werkzeug zum Kopieren von Inhalten ermöglicht es Benutzern, veränderliche 
 
 Aktuelle, echte Daten sind für Tests, Validierung und Benutzerakzeptanz nützlich. Mit dem Werkzeug zum Kopieren von Inhalten können Sie Inhalte aus einer Produktions- AEM as a Cloud Service Umgebung in eine Staging-, Entwicklungs- oder [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) -Umgebung für solche Tests.
 
-Der zu kopierende Inhalt wird durch ein Content-Set definiert. Ein Inhaltssatz besteht aus einer Liste von JCR-Pfaden, die den veränderlichen Inhalt enthalten, der aus einer Quellbearbeitungsdienstumgebung in eine Zielbearbeitungsdienstumgebung innerhalb desselben Cloud Manager-Programms kopiert werden soll. Die folgenden Pfade sind in einem Content-Set zulässig.
+Der zu kopierende Inhalt wird durch ein Content-Set definiert. Ein Content-Set besteht aus einer Liste von JCR-Pfaden, die den veränderlichen Inhalt enthalten, der aus einer Quell-Authoring-Service-Umgebung in eine Ziel-Authoring-Service-Umgebung innerhalb desselben Cloud Manager-Programms kopiert werden soll. Die folgenden Pfade sind in einem Content-Set zulässig.
 
 ```text
 /content
@@ -36,7 +36,7 @@ Beim Kopieren von Inhalten ist die Quellumgebung die Datenquelle.
 
 Um das Werkzeug zum Kopieren von Inhalten zu verwenden, sind bestimmte Berechtigungen sowohl in der Quell- als auch in der Zielumgebung erforderlich.
 
-| Funktion „Inhaltskopie“ | AEM Administratorgruppe | Rolle &quot;Bereitstellungs-Manager&quot; |
+| Funktion „Inhaltskopie“ | AEM-Admingruppe | Bereitstellungs-Manager-Rolle |
 |---|---|---|
 | Erstellen und Ändern von [Content-Sets](#create-content-set) | Erforderlich | Nicht erforderlich |
 | Starten oder Abbrechen des [Inhaltskopie-Prozesses](#copy-content) | Erforderlich | Erforderlich |
@@ -121,16 +121,16 @@ Nachdem ein Inhaltssatz erstellt wurde, können Sie ihn zum Kopieren von Inhalte
    >
    >* die Benutzenden nicht über die entsprechenden Berechtigungen verfügen.
    >* in der Umgebung eine laufende Pipeline oder ein Vorgang zum Kopieren von Inhalten in Bearbeitung ist.
-   >* Die Umgebung ruht in den Ruhezustand oder fängt an.
+   >* Die Umgebung befindet sich im Ruhezustand oder fährt hoch.
 
 1. Geben Se im Dialog **Inhalt kopieren** die Quelle und das Ziel für die Inhaltskopie-Aktion an.
 
    ![Kopieren von Inhalten](assets/copying-content.png)
 
-   * Inhalte können nur aus einer höheren Umgebung in eine niedrigere Umgebung oder zwischen Entwicklungs-/RDE-Umgebungen kopiert werden, in denen die Hierarchie der Umgebungen wie folgt lautet (von der höchsten zur niedrigsten):
+   * Inhalte können nur aus einer höheren Umgebung in eine niedrigere Umgebung oder zwischen Entwicklungs- / RDE-Umgebungen kopiert werden, in denen die Hierarchie der Umgebungen wie folgt lautet (von der höchsten zur niedrigsten):
       * Produktion
       * Staging  
-      * Entwicklung/RDE
+      * Entwicklung / RDE
 
 1. Bei Bedarf können Sie auch **Zugriffssteuerungslisten einschließen** in Ihrem Kopierprozess.
 
@@ -159,13 +159,13 @@ Sobald das Kopieren von Inhalten beginnt, kann der Prozess einen der folgenden S
 | In Bearbeitung | Die Inhaltskopie wird gerade durchgeführt |
 | Fehlgeschlagen | Die Inhaltskopie ist fehlgeschlagen |
 | Abgeschlossen | Die Inhaltskopie wurde erfolgreich abgeschlossen |
-| Abgebrochen | Benutzer bricht einen Vorgang zum Kopieren von Inhalten ab, nachdem er ihn gestartet hat |
+| Abgebrochen | Benutzende, die einen Vorgang zum Kopieren von Inhalten abbrechen, nachdem sie ihn gestartet haben |
 
 ### Abbrechen eines Kopierprozesses {#canceling}
 
 Wenn Sie einen Vorgang zum Kopieren von Inhalten nach dem Starten abbrechen müssen, können Sie ihn optional abbrechen.
 
-Gehen Sie dazu im **Aktivität &quot;Inhalt kopieren&quot;** Seite, wählen Sie die **Abbrechen** -Aktion aus dem Auslassungsmenü des Kopiervorgangs, den Sie zuvor gestartet haben.
+Wählen Sie dazu auf der Seite **Inhaltsaktivität kopieren** die Aktion **Abbrechen** aus dem Ellipsenmenü des zuvor gestarteten Kopiervorgangs.
 
 ![Inhaltskopie abbrechen](assets/content-copy-cancel.png)
 
@@ -180,7 +180,7 @@ Gehen Sie dazu im **Aktivität &quot;Inhalt kopieren&quot;** Seite, wählen Sie 
 Für das Werkzeug zum Kopieren von Inhalten gelten die folgenden Einschränkungen.
 
 * Inhalte können nicht aus einer niedrigeren Umgebung in eine höhere Umgebung kopiert werden.
-* Inhalte können nur aus und in Authoring-Dienste kopiert werden.
+* Inhalte können nur aus und in Authoring-Services kopiert werden.
 * Eine programmübergreifende Inhaltskopie ist nicht möglich.
 * Die Ausführung gleichzeitiger Inhaltskopievorgänge in derselben Umgebung ist nicht möglich.
 * Pro Inhaltsset können bis zu 50 Pfade angegeben werden. Für ausgeschlossene Pfade gibt es keine Beschränkung.

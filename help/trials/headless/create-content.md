@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '657'
-ht-degree: 54%
+ht-degree: 83%
 
 ---
 
@@ -39,9 +39,9 @@ In diesem Modul erstellen Sie mithilfe der Inhaltsfragmentkonsole ein neues Inha
 
 1. Die **Neues Inhaltsfragment** wird ein Dialogfeld geöffnet, in dem Sie mit der Erstellung eines neuen Inhaltsfragments beginnen können. **Standort** automatisch mit dem Speicherort des neuen Inhalts gefüllt.
 
-1. Im **Inhaltsfragmentmodell** in der Dropdown-Liste auswählen **Abenteuer** Inhaltsfragmentmodell, das Sie zuvor erstellt haben.
+1. Wählen Sie in der Dropdown-Liste **Inhaltsfragmentmodell** das zuvor erstellte **Abenteuer**-Inhaltsfragmentmodell.
 
-1. Hinzufügen `Tuscany` als Beschreibung **Titel** für das Inhaltsfragment. Dadurch wird Ihr Fragment in der Konsole identifiziert.
+1. Fügen Sie `Tuscany` als beschreibenden **Titel** für das Inhaltsfragment hinzu. Dadurch wird Ihr Fragment in der Konsole identifiziert.
 
 1. Tippen oder klicken Sie auf **Erstellen und öffnen**.
 
@@ -51,31 +51,31 @@ In diesem Modul erstellen Sie mithilfe der Inhaltsfragmentkonsole ein neues Inha
 >
 >Abhängig von Ihren Browsereinstellungen wird die neue Browser-Registerkarte möglicherweise durch einen Popup-Blocker unterdrückt. Wenn das neue Fragment nach dem Klicken nicht geöffnet wird **Erstellen und öffnen**, überprüfen Sie Ihre Browsereinstellungen.
 
-## Inhalt zu Ihrem Inhaltsfragment hinzufügen {#add-content}
+## Hinzufügen von Inhalt zu Ihrem Inhaltsfragment {#add-content}
 
 Nachdem Sie das neue Inhaltsfragment gespeichert und geöffnet haben, wird der Inhaltsfragment-Editor auf einer neuen Registerkarte geöffnet. Hier können Sie den Inhalt des neuen Fragments hinzufügen.
 
 1. Der Inhaltsfragment-Editor enthält die Felder, die Sie im ausgewählten Modell definiert haben. Hier können Sie jedem Feld Inhalt hinzufügen, um Ihr Inhaltsfragment zu vervollständigen. Ihr Fortschritt wird automatisch gespeichert.
 
-1. Bereitstellung einer **Titel** für Ihr Fragment durch Eingabe von `Tuscan Adventure`.
+1. Geben Sie einen **Titel** für Ihr Fragment an, indem Sie `Tuscan Adventure` eingeben.
 
-1. Bereitstellung einer **Beschreibung** für Ihr Fragment durch Einfügen in den folgenden Text.
+1. Geben Sie eine **Beschreibung** für Ihr Fragment an, indem Sie den folgenden Text einfügen.
 
    ```text
    Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour are rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality. Tuscany's natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
    ```
 
-1. Bereitstellung einer **Preis** für Ihr Fragment durch Eingabe in `$700`.
+1. Geben Sie einen **Preis** für Ihr Fragment an, indem Sie `$700` eingeben.
 
-1. Stellen Sie eine **Bild** die für die Reise repräsentativ ist, indem Sie auf **Asset hinzufügen** im **Bild** -Feld.
+1. Geben Sie ein **Bild** an, das für die Reise repräsentativ ist, indem Sie auf **Asset hinzufügen** im Feld **Bild** tippen oder klicken.
 
-1. Tippen oder klicken Sie im Popup-Fenster des Assets auf **Durchsuchen von Assets** , um aus einem vorhandenen Asset in der Asset-Bibliothek auszuwählen.
+1. Tippen oder klicken Sie im Popup-Fenster des Assets auf **Assets durchsuchen**, um ein vorhandenes Asset aus der Asset-Bibliothek auszuwählen.
 
    ![Asset hinzufügen](assets/do-not-localize/add-asset.png)
 
-1. Die **Asset auswählen** wird geöffnet. Navigieren Sie mit dem Navigationsbaum im linken Bereich zu **Alle Assets** > **aem-demo-assets** > **en** > **Abenteuer** > **Radfahrer-Toskana**.
+1. Das Dialogfeld **Asset auswählen** wird geöffnet. Navigieren Sie mit dem Navigationsbaum im linken Bereich zu **Alle Assets** > **aem-demo-assets** > **de** > **Abenteuer** > **Radfahren-Toskana**.
 
-1. Der Inhalt der **Radfahrer-Toskana** -Ordner auf der rechten Seite angezeigt. Bild auswählen `ADOBESTOCK_141786166.JPEG`.
+1. Der Inhalt des Ordners **Radfahren-Toskana** wird auf der rechten Seite angezeigt. Wählen Sie das Bild `ADOBESTOCK_141786166.JPEG` aus.
 
 1. Tippen oder klicken Sie auf **Auswählen**.
 
@@ -83,7 +83,7 @@ Nachdem Sie das neue Inhaltsfragment gespeichert und geöffnet haben, wird der I
 
 1. Das ausgewählte Bild wird im Inhaltsfragment angezeigt. Der Editor speichert die Änderungen automatisch.
 
-1. Nachdem Sie den gesamten Inhalt hinzugefügt haben, tippen oder klicken Sie auf die Schaltfläche **Veröffentlichen** oben rechts im Editor. Dadurch kann Ihr Inhaltsfragment von externen Apps verwendet werden. Wählen Sie anschließend **Jetzt** aus der Dropdown-Liste aus. Sie können die Veröffentlichung auch zu einem späteren Zeitpunkt planen.
+1. Nachdem Sie den gesamten Inhalt hinzugefügt haben, tippen oder klicken Sie auf die Schaltfläche **Veröffentlichen** oben rechts im Editor. Dadurch kann Ihr Inhaltsfragment von externen Apps verwendet werden. Wählen Sie dann **Jetzt** aus der Dropdown-Liste aus. Sie können die Veröffentlichung auch zu einem späteren Zeitpunkt planen.
 
    ![Inhalt veröffentlichen](assets/do-not-localize/publish.png)
 

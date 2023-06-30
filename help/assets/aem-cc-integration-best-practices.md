@@ -9,7 +9,7 @@ exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3491'
-ht-degree: 83%
+ht-degree: 94%
 
 ---
 
@@ -41,7 +41,7 @@ Lesen Sie weiter, um mehr darüber zu erfahren, welche Integration Sie zwischen 
 
 ## Adobe-Angebote zur Unterstützung von Kooperationsbedarf {#adobe-offerings-to-support-the-collaboration-need}
 
-| Wertvorschlag für die beteiligten Personen | Adobe | Betroffene Oberflächen |
+| Wertvorschlag für die beteiligten Rollen | Adobe-Angebot | Betroffene Oberflächen |
 |---|---|---|
 | Kreative Benutzer können Assets aus [!DNL Experience Manager], öffnen und verwenden Sie sie, bearbeiten und laden Sie Änderungen in hoch. [!DNL Experience Manager], und laden Sie neue Dateien in hoch. [!DNL Experience Manager], ohne ihre [!DNL Creative Cloud] App. | [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator und InDesign. |
 | Business-Anwender vereinfachen das Öffnen und Verwenden von Assets, das Bearbeiten und Hochladen von Änderungen in [!DNL Experience Manager] sowie das Hochladen neuer Dateien aus der Desktop-Umgebung in [!DNL Experience Manager]. Sie nutzen eine generische Integration, um jeden Asset-Typ in nativen Desktop-Programmen zu öffnen, auch von anderen Anbietern als Adobe. | [[!DNL Experience Manager] -Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de) | Experience Manager-Desktop-Programm auf Windows- und Mac-Desktop |
@@ -62,14 +62,14 @@ Festlegen der zu verwendenden Funktion
 | Entdecken – Durchsuchen von Ordnern | Ja | Experience Manager-Web-Benutzeroberfläche + Desktop-Aktionen | Deaktivieren Sie beim Durchsuchen der Netzwerkfreigabe die Miniaturen, um das Herunterladen binärer Asset-Dateien zu vermeiden. |
 | Entdecken – Zugreifen auf Sammlungen | Ja | Experience Manager-Web-Benutzeroberfläche + Desktop-Aktionen |  |
 | Entdecken – Suchen von Assets | Ja | Experience Manager-Web-Benutzeroberfläche + Desktop-Aktionen |  |
-| Verwenden - Asset öffnen | Ja | Ja - für jede App | [Öffnen über die Web-Benutzeroberfläche](/help/assets/manage-digital-assets.md#previewing-assets) oder den Finder |
-| Verwenden – Platzieren von Assets aus Experience Manager in ein Dokument | Ja - Einbetten | Ja - Verknüpfen oder Einbetten | Das Experience Manager-Desktop-Programm ermöglicht den Zugriff auf Assets als Dateien im lokalen Dateisystem. Diese Links in den nativen Programmen werden durch lokale Pfade dargestellt. |
-| Bearbeiten - Öffnen zur Bearbeitung | Ja - Checkout-Aktion | Ja - Aktion &quot;Öffnen&quot;(in der Netzwerkfreigabe) | Beim [Checkout in AAL](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) wird standardmäßig das Asset für das Creative Cloud-Speicherkonto des Benutzers (synchronisiert durch das Creative Cloud-Programm) gespeichert. |
+| Verwenden – Asset öffnen | Ja | Ja – für jede App | [Öffnen über die Web-Benutzeroberfläche](/help/assets/manage-digital-assets.md#previewing-assets) oder den Finder |
+| Verwenden – Platzieren von Assets aus Experience Manager in ein Dokument | Ja – Einbetten | Ja – Verknüpfen oder Einbetten | Das Experience Manager-Desktop-Programm ermöglicht den Zugriff auf Assets als Dateien im lokalen Dateisystem. Diese Links in den nativen Programmen werden durch lokale Pfade dargestellt. |
+| Bearbeiten – zur Bearbeitung öffnen | Ja – Aktion zum Auschecken | Ja – Aktion zum Öffnen (über die Netzwerkfreigabe) | Beim [Checkout in AAL](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) wird standardmäßig das Asset für das Creative Cloud-Speicherkonto des Benutzers (synchronisiert durch das Creative Cloud-Programm) gespeichert. |
 | Bearbeiten – Laufende Arbeiten außerhalb von Experience Manager | Ja – Asset im mit dem Desktop synchronisierten Creative Cloud-Speicherkonto des Benutzers verfügbar. | Ja |  |
-| Bearbeiten - Änderungen hochladen | Ja - [Aktion zum Einchecken](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) mit optionalem Kommentar | Ja |  |
-| Hochladen - einzelne Datei | Ja - Hochladen des aktuellen aktiven Dokuments | Ja | [Hochladen über die Web-Oberfläche](/help/assets/manage-digital-assets.md#uploading-assets) |
-| Hochladen - mehrere Dateien/hierarchische Ordnerstrukturen | Nein | Ja | [Hochladen über die Web-Oberfläche](/help/assets/manage-digital-assets.md#uploading-assets); benutzerdefiniertes Skript oder Tool |
-| Sonstiges - Benutzer und Login | Erkennung des Creative Cloud-Benutzers, der beim Creative Cloud-Desktop-Programm angemeldet ist (SSO) | Experience Manager-Benutzer/-Anmeldung | Benutzer beider Lösungen werden mit dem Experience Manager-Benutzerkontingent verrechnet. |
+| Bearbeiten – Änderungen hochladen | Ja – [Aktion zum Einchecken](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) mit optionalem Kommentar | Ja |  |
+| Hochladen – einzelne Datei | Ja – lädt das aktuelle aktive Dokument hoch | Ja | [Hochladen über die Web-Oberfläche](/help/assets/manage-digital-assets.md#uploading-assets) |
+| Hochladen – mehrere Dateien / hierarchische Ordnerstrukturen | Nein | Ja | [Hochladen über die Web-Oberfläche](/help/assets/manage-digital-assets.md#uploading-assets); benutzerdefiniertes Skript oder Tool |
+| Sonstiges – Benutzende und Anmeldung | Erkennung des Creative Cloud-Benutzers, der beim Creative Cloud-Desktop-Programm angemeldet ist (SSO) | Experience Manager-Benutzer/-Anmeldung | Benutzer beider Lösungen werden mit dem Experience Manager-Benutzerkontingent verrechnet. |
 | Sonstiges – Netzwerk und Zugriff | Zugriff vom Desktop des Benutzers auf die Experience Manager-Bereitstellung über das Netzwerk erforderlich | Zugriff vom Desktop des Benutzers auf die Experience Manager-Bereitstellung über das Netzwerk erforderlich | Adobe Asset Link gibt keine Netzwerk-Proxy-Umgebung frei. |
 
 
@@ -140,9 +140,9 @@ Für das Entwickeln eines effizienten Workflows zwischen Kreativ-Teams und Marke
 
 ### Warum Assets in DAM gespeichert werden {#why-assets-are-stored-in-dam}
 
-Durch das Speichern von Assets in DAM können Sie einfach darauf zugreifen und sie finden. Dadurch wird sichergestellt, dass die Assets von zahlreichen Benutzern in der gesamten Organisation oder im gesamten Ökosystem verwendet werden können, zu denen Partner, Kunden usw. gehören.
+Das Speichern von Assets in DAM macht sie leicht zugänglich und auffindbar. Dadurch wird sichergestellt, dass die Assets von zahlreichen Benutzern in der gesamten Organisation oder im gesamten Ökosystem verwendet werden können, zu denen Partner, Kunden usw. gehören.
 
-Die meisten Unternehmen entscheiden sich dafür, nur Assets zu speichern, die für nachgelagerte Marketing-/Branchenprozesse (Veröffentlichen in Kanälen wie dem Internet über Experience Manager Sites oder anderen Kanälen wie Marketing Cloud oder Advertising Cloud, die von Adobe Experience Cloud bereitgestellt und von Analytics Cloud bewertet werden, Bereitstellung für Benutzer/Partner usw.) relevant sind. Darüber hinaus speichern Organisationen Assets, die in DAM überprüft/genehmigt werden können. Auf diese Weise speichert DAM hauptsächlich Assets, die mit hoher Wahrscheinlichkeit verwendet werden, und vermeidet das Speichern inaktiver Assets.
+Die meisten Unternehmen entscheiden sich dafür, nur Assets zu speichern, die für nachgelagerte Marketing-/Branchenprozesse (Veröffentlichen in Kanälen wie dem Internet über Experience Manager Sites oder anderen Kanälen wie Marketing Cloud oder Advertising Cloud, die von Adobe Experience Cloud bereitgestellt und von Analytics Cloud bewertet werden, Bereitstellung für Benutzer/Partner usw.) relevant sind. Darüber hinaus speichern Unternehmen in DAM Assets, die einem Überprüfungs-/Genehmigungsprozess unterzogen werden können. Auf diese Weise speichert DAM hauptsächlich Assets, die mit hoher Wahrscheinlichkeit verwendet werden, und vermeidet das Speichern inaktiver Assets.
 
 Das Speichern von Assets unterliegt auch technischen Überlegungen und Überlegungen zur Ressourcenauslastung. DAM bietet zusätzliche Services rund um gespeicherte Assets, darunter Extrahieren von Metadaten, Versionierung, Erstellen von Vorschauen/Transcodierung, Verwalten von Referenzen und Hinzufügen von Informationen zur Zugriffssteuerung. Diese Services erfordern zusätzlich Zeit und Infrastrukturressourcen.
 
@@ -158,15 +158,15 @@ Kreativ-Teams (und Organisationen) sind in der Regel nicht daran interessiert, A
 
 Normalerweise werden die folgenden Klassen-Assets in DAM gespeichert:
 
-* Vermögenswerte, die eine bestimmte Laufzeit erreicht haben und als zur Freigabe bereit gelten
+* Assets, die eine bestimmte Laufzeit erreicht haben und als zur Freigabe bereit gelten
 * Assets, die vorab vom Kreativ-Team ausgewählt wurden
 * Bestimmte Asset-Formate, die vom Marketing-Team verwendet werden können oder abhängig von einem bestimmten Vertrag bzw. einer Vereinbarung angefordert wurden (z. B. aus RAW-Dateien konvertierte JPG-Dateien, TIFF-Dateien/-Bilder aus PSD-Originaldateien)
 
 #### Wann Aktualisierungen von Assets in DAM gespeichert werden {#when-updates-to-assets-are-stored-in-dam}
 
-In der Regel sollten nur Aktualisierungen an Assets in DAM gespeichert werden, die für den breiteren Satz von DAM-Benutzern relevant sind. Dadurch wird sichergestellt, dass Benutzer (Marketing- und ähnliche Funktionen) nur relevante Versionen in der DAM-Asset-Zeitleiste sehen.
+In der Regel sollten nur Aktualisierungen von Assets in DAM gespeichert werden, die für den Großteil der DAM-Benutzenden relevant sind. Dadurch wird sichergestellt, dass Benutzende (Marketing- und ähnliche Funktionen) nur relevante Versionen in der DAM-Asset-Timeline sehen.
 
-Normalerweise Änderungen im Zusammenhang mit wichtigen Meilensteinen im Asset-Lebenszyklus. Beispielsweise sollte das ursprüngliche fertige Marketing-Asset oder eine offizielle Aktualisierung basierend auf Anfragen/Überprüfungen durch das Kreativ-Team in DAM gespeichert und versioniert werden.
+Normalerweise handelt es sich um Änderungen im Zusammenhang mit wichtigen Meilensteinen im Asset-Lebenszyklus. Beispielsweise sollte das ursprüngliche fertige Marketing-Asset oder eine offizielle Aktualisierung basierend auf Anfragen/Überprüfungen durch das Kreativ-Team in DAM gespeichert und versioniert werden.
 
 Die Aktualisierung des Kreativ-Teams zur Überprüfung durch das Marketing-Team nach einer Änderungsanfrage für ein vorhandenes Asset in DAM ist ein Beispiel für eine relevante Aktualisierung. Sie sollte in DAM gespeichert und versioniert werden, um weitere Informationen zu erhalten oder zur vorherigen Version zurückzukehren.
 
@@ -177,7 +177,7 @@ Im Folgenden finden Sie Beispiele für Aktualisierungen, die normalerweise nicht
 
 ### Benutzerzugriff auf DAM {#user-access-to-dam}
 
-Experience Manager Assets unterstützt zwei Arten von Benutzern, die sich in ihrem Zugriff auf die Experience Manager Assets-Bereitstellung unterscheiden. Normalerweise haben Benutzer im Unternehmensnetzwerk (Firewall) direkten Zugriff auf DAM. Andere Benutzer außerhalb des Unternehmensnetzwerks hätten keinen direkten Zugriff. Der Benutzertyp bestimmt aus technischer Sicht, welche Integrationen verwendet werden können.
+Experience Manager Assets unterstützt zwei Arten von Benutzern, die sich in ihrem Zugriff auf die Experience Manager Assets-Bereitstellung unterscheiden. Normalerweise haben Benutzende im Unternehmensnetzwerk (Firewall) direkten Zugriff auf DAM. Andere Benutzende außerhalb des Unternehmensnetzwerks hätten keinen direkten Zugriff. Der Benutzertyp bestimmt aus technischer Sicht, welche Integrationen verwendet werden können.
 
 #### Kreative Benutzer mit direktem Zugriff auf DAM {#creative-users-with-direct-access-to-dam}
 
@@ -202,9 +202,9 @@ Wie in diesem Dokument erläutert, wird empfohlen, umfangreiche Aktualisierungen
 
 Adobe Asset Link bietet eine gute Unterstützung für diesen Anwendungsfall:
 
-* Wenn Benutzer in Photoshop, InDesign oder Illustrator beabsichtigen, eine Datei zu bearbeiten, führen sie einen Checkout-Vorgang für das angegebene Asset aus
+* Wenn Benutzende in Photoshop, InDesign oder Illustrator eine Datei bearbeiten möchten, checken sie das jeweilige Asset aus.
 * Das Asset wird im Hintergrund heruntergeladen und in die vom Creative Cloud-Desktop-Programm mit der Festplatte synchronisierten Creative Cloud-Konten der Benutzer platziert. In Experience Manager wird die Checkout-Markierung auf dem Asset umgeschaltet, um Bearbeitungskonflikte zu minimieren.
-* Von dort aus arbeitet der Benutzer in einer Datei, die lokal am synchronisierten Speicherort gespeichert ist, und kann die erforderlichen Änderungen in allen erforderlichen Intervallen weiter bearbeiten und speichern
+* Von dort aus arbeiten die Benutzenden in einer Datei, die lokal am synchronisierten Speicherort gespeichert ist, und können in beliebiger Häufigkeit weiterarbeiten und notwendige Änderungen speichern
 * Da sich das Asset im Creative Cloud-Konto befindet, ist es auch auf etwaigen anderen Benutzergeräten verfügbar (z. B. zum Öffnen oder Bearbeiten in einer dedizierten Creative Cloud-Mobile-App). Außerdem kann es für andere Creative Cloud-Benutzer zwecks Zusammenarbeit freigegeben werden.
 * Wenn kreative Benutzer keine weiteren Änderungen vornehmen möchten, können sie diese Datei in ihrem Creative Cloud-Programm mit einem optionalen Kommentar einchecken. Das entsprechende Asset in Experience Manager wird versioniert und mit der neuen Binärdatei aktualisiert. Experience Manager-Benutzer wie Marketer oder Branchenbenutzer haben über die Asset-Zeitleiste von Experience Manager Zugriff auf wichtige Asset-Änderungen oder Meilensteine.
 
@@ -240,7 +240,7 @@ Verwenden Sie das Experience Manager-Desktop-Programm nicht für die direkte Ver
 * [Assets-HTTP-API](mac-api-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
 * [Suchen von Assets](search-assets.md)
-* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
 * [Asset-Berichte](asset-reports.md)
 * [Metadatenschemata](metadata-schemas.md)
 * [Herunterladen von Assets](download-assets-from-aem.md)

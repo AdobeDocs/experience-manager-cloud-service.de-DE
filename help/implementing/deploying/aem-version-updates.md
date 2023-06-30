@@ -6,7 +6,7 @@ exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 54%
+ht-degree: 71%
 
 ---
 
@@ -17,11 +17,11 @@ Erfahren Sie, wie AEM as a Cloud Service fortlaufende Integration und Bereitstel
 
 ## CI/CD {#ci-cd}
 
-AEM as a Cloud Service nutzt kontinuierliche Integration und kontinuierliche Bereitstellung (CI/CD), um sicherzustellen, dass Ihre Projekte auf der aktuellsten AEM Version basieren. Dies bedeutet, dass Produktions- und Staging-Instanzen ohne Unterbrechung des Services für Benutzende auf die aktuelle AEM-Version aktualisiert werden.
+AEM as a Cloud Service verwendet die kontinuierliche Integration und Bereitstellung (Continuous Integration und Continuous Delivery, CI/CD), um sicherzustellen, dass Ihre Projekte auf der aktuellen AEM-Version basieren. Dies bedeutet, dass Produktions- und Staging-Instanzen ohne Unterbrechung des Services für Benutzende auf die aktuelle AEM-Version aktualisiert werden.
 
 Versionsaktualisierungen werden nur automatisch auf Produktions- und Staging-Instanzen angewendet. [AEM Aktualisierungen müssen manuell auf alle anderen Instanzen angewendet werden](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).
 
-## Aktualisierungstyp {#update-types}
+## Aktualisierungstypen {#update-types}
 
 Es gibt zwei Arten von AEM-Versionsaktualisierungen:
 
@@ -33,7 +33,7 @@ Es gibt zwei Arten von AEM-Versionsaktualisierungen:
 
 * **Neue Funktionsaktualisierungen**
 
-   * werden auf einer [vorhersehbaren, monatlichen Zeitplan.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de)
+   * Werden über einen [vorhersehbaren, monatlichen Zeitplan veröffentlicht.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de)
 
 ## Aktualisierungsfehler {#update-failure}
 
@@ -49,7 +49,7 @@ Wenn die Aktualisierung der Produktionsumgebung fehlschlägt, setzt Cloud Manage
 
 ## Zusammengesetzter Knotenspeicher {#composite-node-store}
 
-In den meisten Fällen verursachen Aktualisierungen keine Ausfallzeiten, auch nicht für die Autoreninstanz, bei der es sich um einen Cluster von Knoten handelt. Rollierende Aktualisierungen sind möglich aufgrund von [die Composite Node Store-Funktion in Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+In den meisten Fällen verursachen Aktualisierungen keine Ausfallzeiten, auch nicht für die Autoreninstanz, bei der es sich um einen Cluster von Knoten handelt. Rollierende Aktualisierungen sind aufgrund [der Composite Node Store-Funktion in Oak möglich. ](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
 Mithilfe dieser Funktion kann AEM auf mehrere Repositorys gleichzeitig verweisen. In [rollierende Bereitstellung,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) Die neue AEM enthält eine eigene `/libs` (das auf TarMK basierende, unveränderliche Repository), unterscheidet sich von der älteren AEM, obwohl beide auf ein freigegebenes, auf DocumentMK basierendes veränderliches Repository verweisen, das Bereiche wie `/content` , `/conf` , `/etc` und andere.
 

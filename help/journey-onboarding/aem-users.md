@@ -7,7 +7,7 @@ exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -81,7 +81,7 @@ Wenn Sie daran interessiert sind, wie Entwickler und Bereitstellungs-Manager ben
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt des Onboarding-Journey hinausgehen möchten.
+Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt der Onboarding-Tour hinausgehen möchten.
 
-[Schnellstartanleitung zum Verfassen von Seiten (Authoring)](/help/sites-cloud/authoring/getting-started/quick-start.md) - Starten Sie hier für einen schnellen Überblick über die Grundlagen der Bearbeitung in AEM.
-[Headless-Authoring-Tour](/help/journey-headless/author/overview.md) – Wenn Sie Headless-Inhalte erstellen möchten, folgen Sie dieser Anleitung.
+[Schnellstartanleitung zum Verfassen von Seiten (Authoring)](/help/sites-cloud/authoring/getting-started/quick-start.md): Starten Sie hier, um einen schnellen Überblick über die Grundlagen der Erstellung von Seiten in AEM zu erhalten.
+[Headless-Authoring-Tour](/help/journey-headless/author/overview.md): Wenn Sie Headless-Inhalte erstellen möchten, folgen Sie dieser Anleitung.

@@ -5,7 +5,7 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2375'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -497,7 +497,7 @@ Define DISP_LOG_LEVEL debug
 
 >[!NOTE]
 >
->Bei AEM as a Cloud Service Umgebungen ist debug die maximale Ausführlichkeitsstufe. Die Trace-Protokollebene wird nicht unterstützt. Daher sollten Sie beim Arbeiten in Cloud-Umgebungen vermeiden, sie festzulegen.
+>Bei AEM as a Cloud Service-Umgebungen ist „debug“ die maximale Ausführlichkeitsstufe. Die Trace-Protokollebene wird nicht unterstützt. Daher sollten Sie beim Arbeiten in Cloud-Umgebungen vermeiden, sie festzulegen.
 
 ## Zugriff auf Protokolle {#how-to-access-logs}
 

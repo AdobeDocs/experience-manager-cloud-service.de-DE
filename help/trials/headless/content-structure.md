@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 21%
+ht-degree: 34%
 
 ---
 
@@ -59,7 +59,7 @@ Im Editor für Inhaltsfragmentmodelle konfigurieren Sie die Datentypen und Eigen
 >
 >Es ist wichtig, die Namensschemas in den folgenden Anweisungen zu befolgen, da diese spezifischen Namen in späteren Modulen referenziert werden.
 
-1. Ziehen Sie eine **Einzelzeilentext** aus dem **Datentypen** rechts neben dem Editor und legen Sie es auf Ihrem Inhaltsfragmentmodell ab.
+1. Ziehen Sie ein **Einzeiliges Textfeld** aus dem Bedienfeld **Datentypen** auf der rechten Seite des Editors und legen Sie es auf Ihrem Inhaltsfragmentmodell ab.
 
 1. Sobald ein Datentyp platziert wurde, wird die **Datentypen** -Spalte automatisch in **Eigenschaften** -Tab, in dem Sie die Details des platzierten Datentyps definieren können. Für dieses erste Feld möchten Sie den Titel der Reise oder des Abenteuers speichern. Tragen Sie die folgenden Eigenschaften ein.
 
@@ -68,7 +68,7 @@ Im Editor für Inhaltsfragmentmodelle konfigurieren Sie die Datentypen und Eigen
 
 1. Nachdem Sie die Eigenschaften des Felds definiert haben, können Sie zum **Datentypen** im rechten Bereich ein und fügen Sie durch Ziehen und Ablegen zusätzliche Felder hinzu.
 
-Auf diese Weise können Sie Ihrem Modell so viele Felder wie nötig hinzufügen, um die benötigte Datenstruktur zu unterstützen. Die Typen von Datenfeldern variieren, aber der Prozess, sie zu Ihrem Modell hinzuzufügen, bleibt gleich.
+Auf diese Weise können Sie Ihrem Modell so viele Felder wie nötig hinzufügen, um die benötigte Datenstruktur zu unterstützen. Die Datenfeld-Typen variieren, aber der Prozess, sie zu Ihrem Modell hinzuzufügen, bleibt gleich.
 
 Fahren Sie mit dem nächsten Abschnitt fort, damit Sie die zum Ausfüllen erforderlichen Felder hinzufügen und die **Abenteuer** model
 
@@ -80,7 +80,7 @@ Sie haben bereits ein Feld für den Titel des Abenteuers. Jetzt müssen Sie Feld
 
 >[!TIP]
 >
->Die **Abenteuer** basiert auf der WKND-Beispiel-Site für AEM. Sie können [Besuchen Sie die Website hier](https://wknd.site/us/en/adventures/yosemite-backpacking.html) zum Anzeigen von Inhalten, die die **Abenteuer** -Modell.
+>Das **Abenteuer**-Modell basiert auf der WKND-Beispiel-Site für AEM. Sie können [die Website hier](https://wknd.site/us/en/adventures/yosemite-backpacking.html) besuchen, um Inhalte zu sehen, die das **Abenteuer**-Modell verwenden.
 
 Gehen Sie wie oben beschrieben vor, um diese zusätzlichen Felder hinzuzufügen. Der einzige Unterschied besteht in den Eigenschaften, die Sie festlegen müssen.
 
@@ -94,7 +94,7 @@ Gehen Sie wie oben beschrieben vor, um diese zusätzlichen Felder hinzuzufügen.
    * **Render As:** **Textfeld** - Wenn Sie ein Abenteuer erstellen, speichert dieses Feld den Preis der Reise.
    * **Feldbezeichnung:** `Price` - Der Titel, der bei der Erstellung eines Abenteuers für dieses Feld angezeigt wird.
 
-1. Fügen Sie ein Feld hinzu, damit Sie ein Bild speichern können, das die Reise darstellt. Bilder in AEM werden als anderer Inhaltstyp gespeichert, der **Assets**. Um ein Feld für sie zu erstellen, ziehen Sie eine **Inhaltsreferenz** -Feld, das auf das Asset des Bildes verweist.
+1. Fügen Sie ein Feld hinzu, damit Sie ein Bild speichern können, das die Reise darstellt. Bilder in AEM werden als ein weiterer Inhaltstyp namens **Assets** gespeichert. Um ein Feld für sie zu erstellen, ziehen Sie eine **Inhaltsreferenz** -Feld, das auf das Asset des Bildes verweist.
 
    * **Render As:** **Inhaltsreferenz** - Wenn Sie ein Abenteuer erstellen, verweist dieses Feld auf das Bild-Asset, das diese Reise darstellt.
    * **Feldbezeichnung:** `Image` - Der Titel, der bei der Erstellung eines Abenteuers für dieses Feld angezeigt wird.

@@ -1,6 +1,6 @@
 ---
 title: Barrierefreiheit in  [!DNL Experience Manager Assets]
-description: Erfahren Sie, wie Funktionen für Barrierefreiheit in [!DNL Adobe Experience Manager] as a Benutzern mit Behinderungen helfen. [!DNL Cloud Service]
+description: Erfahren Sie, wie Funktionen für Barrierefreiheit in [!DNL Adobe Experience Manager] as a  [!DNL Cloud Service]  Benutzenden mit Behinderungen helfen.
 contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
@@ -8,7 +8,7 @@ exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1943'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -223,7 +223,7 @@ Beim Freigeben von Assets verbessern folgende Funktionen die Barrierefreiheit:
 * [Assets-HTTP-API](mac-api-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
 * [Suchen von Assets](search-assets.md)
-* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
 * [Asset-Berichte](asset-reports.md)
 * [Metadatenschemata](metadata-schemas.md)
 * [Herunterladen von Assets](download-assets-from-aem.md)

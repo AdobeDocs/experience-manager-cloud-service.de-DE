@@ -5,7 +5,7 @@ exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1116'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -212,12 +212,12 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
   </tr>
   <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
     <td>Diese API wird von AEM as a Cloud Service nicht unterstützt.</td>
-    <td>5/15/2023</td>
-    <td>6/15/2023</td>
+    <td>15.5.2023</td>
+    <td>15.6.2023</td>
   </tr><td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
     <td>Die Google Guava-Kernbibliotheken werden nicht mehr unterstützt.</td>
-    <td>5/15/2023</td>
-    <td>6/15/2023</td>
+    <td>15.5.2023</td>
+    <td>15.6.2023</td>
   </tr>
 </tbody>
 </table>

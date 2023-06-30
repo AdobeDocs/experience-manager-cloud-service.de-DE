@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '539'
-ht-degree: 56%
+ht-degree: 69%
 
 ---
 
@@ -21,11 +21,12 @@ Erfahren Sie mehr über die drei verschiedenen Arten von Funktionstests, die in 
 
 ## Anwendungsbereich
 
-Die funktionalen Testschritte in der Cloud Manager-Pipeline sollen sicherstellen, dass die wesentlichen Funktionen Ihrer Anwendung erwartungsgemäß funktionieren.
+Die funktionalen Testschritte in der Cloud Manager-Pipeline sollen sicherstellen, dass die wesentlichen Funktionen Ihrer Applikation erwartungsgemäß funktionieren.
 
 Diese Testphase ist die letzte Stufe automatisierter Tests vor der Bereitstellung Ihres Codes in der Produktion.
 
-Funktionstests sollten andere Teststrategien wie Komponententests, Integrationstests oder Funktionstests, die außerhalb der Pipeline-Ausführung in Cloud Manager durchgeführt werden, nicht ersetzen, sondern ergänzen und erweitern.
+Funktionstests sollten andere Teststrategien wie Komponententests, Integrationstests oder Funktionstests, 
+die außerhalb der Pipeline-Ausführung in Cloud Manager durchgeführt werden, nicht ersetzen, sondern ergänzen und erweitern.
 
 ## Übersicht {#overview}
 

@@ -7,7 +7,7 @@ exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 3645918f6ce592b6c70cb4339ab6f0e5e9d71519
 workflow-type: tm+mt
 source-wordcount: '1036'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -63,7 +63,7 @@ Der Inhaltsfragment-Editor zeigt das grundlegende Layout der App als Seiteninhal
 
 So einfach ist es, Inhalte in einer React-App zu aktualisieren, wenn diese in AEM Headless-CMS integriert ist.
 
-## Bild in der App tauschen {#change-image}
+## Austauschen eines Bilds in der App {#change-image}
 
 Nachdem Sie jetzt wissen, wie eine Überschrift in der App geändert wird, versuchen Sie, ein Bild zu ändern.
 

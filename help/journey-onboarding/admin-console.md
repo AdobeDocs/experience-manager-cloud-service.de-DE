@@ -5,7 +5,7 @@ exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1107'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -105,7 +105,7 @@ Jetzt können Sie Ihre Onboarding-Tour fortsetzen, indem Sie lernen, wie Sie [Te
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt des Onboarding-Journey hinausgehen möchten.
+Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt der Onboarding-Tour hinausgehen möchten.
 
 * [Übersicht über die Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) – ein umfassender Überblick
 * [Erstellen oder Aktualisieren der Adobe ID](https://helpx.adobe.com/de/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) – Erfahren Sie, wie Sie eine Adobe ID erstellen, ändern und mehrere Adobe-IDs verwalten.

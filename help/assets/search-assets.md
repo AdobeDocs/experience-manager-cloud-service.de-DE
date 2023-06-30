@@ -1,6 +1,6 @@
 ---
 title: Wie kann ich Assets in AEM suchen?
-description: Erfahren Sie, wie Sie in AEM mithilfe des Bedienfelds "Filter"nach Assets suchen und wie Sie die Ergebnisse verwenden, die bei der Asset-Suche angezeigt werden.
+description: Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des Bedienfelds „Filter“ suchen und wie Sie das Ergebnis verwenden, das bei der Suche zurückgegeben wurde.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
@@ -9,7 +9,7 @@ exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '5096'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 94%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-[!DNL Adobe Experience Manager Assets] bietet zuverlässige Asset-Suchmethoden, mit denen Sie eine höhere Content-Geschwindigkeit erzielen können. Ihre Teams können die Time-to-Market mit einer nahtlosen, intelligenten Asset-Sucherfahrung durch vordefinierte Funktionen und benutzerdefinierte Methoden verkürzen. Die Funktion zum Suchen von Assets ist von zentraler Bedeutung für die Verwendung eines Digital Asset Management-Systems - ob für die weitere Verwendung durch Kreative, für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren. Einfache, erweiterte und benutzerdefinierte Suchen, die Sie über die Benutzeroberfläche von [!DNL Assets] oder andere Programme und Oberflächen durchführen können, helfen beim Bewältigen dieser Anwendungsfälle.
+[!DNL Adobe Experience Manager Assets] bietet stabile Suchmethoden für Assets, mit denen Sie eine höhere Inhaltsgeschwindigkeit erzielen können. Ihre Teams können die Markteinführungszeit mit einer nahtlosen, intelligenten Asset-Suche verkürzen, indem sie sofort einsetzbare Funktionen und benutzerdefinierte Methoden verwenden. Die Möglichkeit, Assets zu suchen, ist für die Nutzung eines Digital Asset Management-Systems von zentraler Bedeutung. Sei es für die weitere Verwendung durch Kreative, für die robuste Verwaltung von Assets durch Geschäftsanwenderinnen und -anwender und Marketingfachleute oder für die Verwaltung durch DAM-administrierende Personen. Einfache, erweiterte und benutzerdefinierte Suchen, die Sie über die Benutzeroberfläche von [!DNL Assets] oder andere Programme und Oberflächen durchführen können, helfen beim Bewältigen dieser Anwendungsfälle.
 
-Die Asset-Suche in AEM unterstützt die folgenden Anwendungsfälle und in diesem Artikel werden Verwendung, Konzepte, Konfigurationen, Einschränkungen und Fehlerbehebung für diese Anwendungsfälle beschrieben.
+Die Asset-Suche in AEM unterstützt die folgenden Anwendungsfälle. Dieser Artikel beschreibt die Verwendung, Konzepte, Konfigurationen, Einschränkungen und Fehlerbehebung für diese Anwendungsfälle.
 
 | Suchen von Assets | Konfigurieren und Verwalten der Suchfunktion | Arbeiten mit Asset-Suchergebnissen |
 |---|---|---|
@@ -43,9 +43,9 @@ Verwenden Sie das Bedienfeld **[!UICONTROL Filter]**, um nach Assets, Ordnern, T
 
 Die [!DNL Experience Manager]-Suchfunktionen erlauben die Suche nach Sammlungen sowie die Suche nach Assets in einer Sammlung. Siehe [Suchen nach Sammlungen](/help/assets/manage-collections.md).
 
-## Benutzeroberfläche für die Asset-Suche {#searchui}
+## Verstehen der Asset-Suchoberfläche {#searchui}
 
-Machen Sie sich mit der Asset-Suchschnittstelle und den verfügbaren Aktionen vertraut.
+Machen Sie sich mit der Asset-Suchoberfläche und den verfügbaren Aktionen vertraut.
 
 ![Wissenswertes zur Benutzeroberfläche für Suchergebnisse von Experience Manager Assets](assets/aem_search_results.png)
 
@@ -490,7 +490,7 @@ Ordnen Sie Assets zu, die in den Suchergebnissen angezeigt werden, und heben Sie
 * [Assets übersetzen](translate-assets.md)
 * [Assets-HTTP-API](mac-api-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
-* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
 * [Asset-Berichte](asset-reports.md)
 * [Metadatenschemata](metadata-schemas.md)
 * [Herunterladen von Assets](download-assets-from-aem.md)

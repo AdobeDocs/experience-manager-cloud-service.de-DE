@@ -1,28 +1,28 @@
 ---
-title: Überlegungen zur as a Cloud Service Sicherheit AEM
-description: Wichtige Sicherheitsüberlegungen bei der Verwendung von AEM as a Cloud Service
+title: AEM as a Cloud Service Sicherheitsüberlegungen
+description: Erfahren Sie mehr über wichtige Sicherheitsüberlegungen bei der Verwendung von AEM as a Cloud Service
 hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 0%
+ht-degree: 93%
 
 ---
 
-# Überlegungen zur as a Cloud Service Sicherheit AEM {#security-considerations}
+# AEM as a Cloud Service Sicherheitsüberlegungen {#security-considerations}
 
 ## AEM Trust Store {#aem-trust-store}
 
-Um asymmetrische kryptografische Vorgänge zu unterstützen, speichert AEM Zertifikate im Inhalts-Repository in einem globalen Trust Store. Die Inhalte sind öffentlich und stehen standardmäßig allen Publisherinstanzen anonym zur Verfügung.
+Um asymmetrische kryptografische Vorgänge zu unterstützen, speichert AEM Zertifikate im Inhalts-Repository in einem globalen Trust Store. Die Inhalte sind öffentlich und stehen standardmäßig allen Publisher-Instanzen anonym zur Verfügung.
 
 ### Eigenschaften des Trust Store {#truststore-characteristics}
 
-* Der Trust Store befindet sich unten. `/etc/truststore` und besteht aus einer Java-Keystore-Datei, dem Keystore-Kennwort und den Repository-Metadaten. Beachten Sie, dass sowohl das Kennwort als auch der Keystore selbst aus technischen Gründen verschlüsselt sind, auch wenn die enthaltenen Zertifikate standardmäßig über die API für alle zugänglich sind.
+* Der Trust Store befindet sich unter `/etc/truststore` und besteht aus einer Java-Keystore-Datei, dem Keystore-Passwort und den Repository-Metadaten. Beachten Sie, dass sowohl das Passwort als auch der Keystore selbst aus technischen Gründen verschlüsselt sind, auch wenn die enthaltenen Zertifikate standardmäßig über die API für alle zugänglich sind.
 * Standardmäßig werden die Zertifikate nur für HTTPS- und SAML-Unterstützung verwendet und der Speicher muss zuerst manuell erstellt werden
-* Kunden können sie in ihrem eigenen Code über [Keystore-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
-* Der TrustStore kann über die Benutzeroberfläche unter **Instrumente** - **Sicherheit** - **Trust Store** oder durch Zugriff auf *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*, wie unten dargestellt:
+* Kunden oder Kundinnen können sie in ihrem eigenen Code über die [Keystore-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-) verwenden
+* Der Trust-Store kann über die Benutzeroberfläche unter **Tools** – **Sicherheit** – **Trust Store** oder durch Zugriff auf *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`* verwaltet werden, wie unten dargestellt:
 
   ![Trust Store-Verwaltung](/help/security/assets/global-trust-store-modified.png)
 
@@ -30,7 +30,7 @@ Um asymmetrische kryptografische Vorgänge zu unterstützen, speichert AEM Zerti
 
 >[!NOTE]
 >
->Adobe empfiehlt, die standardmäßigen Zugriffssteuerungen für den Trust Store zu verwenden, was bedeutet, dass er öffentlich zugänglich bleibt. Für die sicherste Konfiguration können Sie die Richtlinie &quot;jcr:all verweigern&quot;für alle verwenden.
+>Adobe empfiehlt, die standardmäßigen Zugriffssteuerungen für den Trust Store zu verwenden, was bedeutet, dass er öffentlich zugänglich bleibt. Die sicherste Konfiguration ist die Verwendung einer Richtlinie, die „jcr:all“ für alle verweigert.
 
 <!--
 Commenting out section for now as requested by Lars

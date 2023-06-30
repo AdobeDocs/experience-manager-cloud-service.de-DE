@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
 source-wordcount: '1752'
-ht-degree: 76%
+ht-degree: 78%
 
 ---
 
@@ -1345,11 +1345,11 @@ Diese Abfrage untersucht:
 Diese Abfrage untersucht:
 
 * Mehrere Inhaltsfragmente vom Typ `bookmark`
-   * mit Fragmentverweisen auf andere Fragmente des spezifischen Modelltyps `Article`
+   * Mit Fragmentverweisen auf andere Fragmente des spezifischen Modelltyps `Article`
 
 >[!NOTE]
 >
->Das Feld `fragments` hat den Datentyp `fragment-reference`mit dem Modell `Article` ausgewählt ist. Abfrage liefert `fragments` als Array von `[Article]`.
+>Das Feld `fragments` hat den Datentyp `fragment-reference`, wobei das Modell `Article` ausgewählt wurde. Die Abfrage liefert `fragments` als ein Array von `[Article]`.
 
 ```graphql
 {
@@ -1373,7 +1373,7 @@ Diese Abfrage untersucht:
 
 >[!NOTE]
 >
->Das Feld `fragments` hat den Datentyp `fragment-reference`, wobei die Modelle `Article`, `Adventure` ausgewählt sind. Abfrage liefert `fragments` als Array von `[AllFragmentModels]`, der vom Vereinigungstyp ausgeschlossen wird.
+>Das Feld `fragments` hat den Datentyp `fragment-reference`, wobei die Modelle `Article`, `Adventure` ausgewählt sind. Die Abfrage liefert `fragments` als ein Array von `[AllFragmentModels]`, das mit Vereinigungstyp dereferenziert wird.
 
 ```graphql
 {
@@ -1721,7 +1721,7 @@ Diese Abfrage fragt Folgendes ab:
 
 Diese Abfrage fragt Folgendes ab:
 
-* für Inhaltsfragmente vom Typ `vehicle` mit dem Tag `big-block`
+* für Inhaltsfragmente vom Typ `vehicle` mit dem -Tag `big-block`
 * Ausschließen von Varianten
 
 **Beispielabfrage**
@@ -1756,7 +1756,7 @@ query {
 
 Diese Abfrage fragt Folgendes ab:
 
-* für Inhaltsfragmente vom Typ `vehicle` mit dem -Tag `big-block`
+* für Inhaltsfragmente vom Typ `vehicle` mit dem Tag `big-block`
 * einschließlich Varianten
 
 **Beispielabfrage**

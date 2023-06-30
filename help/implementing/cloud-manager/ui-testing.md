@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2389'
-ht-degree: 71%
+ht-degree: 75%
 
 ---
 
@@ -216,10 +216,10 @@ Die folgenden Umgebungsvariablen werden je nach Framework zur Laufzeit an Ihr Do
 | `SELENIUM_BROWSER` | `chrome` | Die vom Selenium-Server verwendete Browser-Implementierung | Nur Selenium |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | Die URL der AEM-Autoreninstanz | Alle |
 | `AEM_AUTHOR_USERNAME` | `admin` | Der Benutzername für die Anmeldung bei der AEM-Autoreninstanz | Alle |
-| `AEM_AUTHOR_PASSWORD` | `admin` | Das Kennwort für die Anmeldung bei der AEM-Autoreninstanz | Alle |
+| `AEM_AUTHOR_PASSWORD` | `admin` | Das Passwort für die Anmeldung bei der AEM-Autoreninstanz | Alle |
 | `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | Die URL der AEM-Veröffentlichungsinstanz | Alle |
 | `AEM_PUBLISH_USERNAME` | `admin` | Der Benutzername für die Anmeldung bei der AEM-Veröffentlichungsinstanz | Alle |
-| `AEM_PUBLISH_PASSWORD` | `admin` | Das Kennwort für die Anmeldung bei der AEM-Veröffentlichungsinstanz | Alle |
+| `AEM_PUBLISH_PASSWORD` | `admin` | Das Passwort für die Anmeldung bei der AEM-Veröffentlichungsinstanz | Alle |
 | `REPORTS_PATH` | `/usr/src/app/reports` | Der Pfad, in dem der XML-Bericht der Testergebnisse gespeichert werden muss | Alle |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | Die URL, an die die Datei hochgeladen werden muss, damit sie für das Test-Framework verfügbar ist | Alle |
 
@@ -253,7 +253,7 @@ Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implemen
 
 | Typ | Wert | Beschreibung |
 |----------------------|-------|-----------------------------------------------------------------------|
-| CPU | 2.0 | CPU-Zeit pro Testausführung reserviert |
+| CPU | 2.0 | Menge an CPU-Zeit, die pro Testausführung reserviert wird |
 | Arbeitsspeicher | 1Gi | Dem Test zugewiesener Arbeitsspeicher, Wert in Byte |
 | Zeitüberschreitung | 30m | Die Dauer, nach der der Test beendet wird. |
 | Empfohlene Dauer | 15m | Adobe empfiehlt, die Tests nicht länger als diese Zeit zu schreiben. |
@@ -310,7 +310,9 @@ Tests müssen manchmal Dateien in das zu testende Programm hochladen. Um die Ber
 
 ## Ausführen von lokalen Benutzeroberflächentests {#run-ui-tests-locally}
 
-Vor der Aktivierung von UI-Tests in einer Cloud Manager-Pipeline wird empfohlen, die UI-Tests lokal für die [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) oder gegen eine tatsächliche AEM as a Cloud Service Instanz.
+Vor dem Aktivieren von UI-Tests in einer Cloud Manager-Pipeline wird empfohlen, die UI-Tests lokal mit 
+der [AEM as a Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+oder mit einer tatsächlichen AEM as a Cloud Service-Instanz auszuführen.
 
 ### Beispiel für einen Cypress-Test {#cypress-sample}
 

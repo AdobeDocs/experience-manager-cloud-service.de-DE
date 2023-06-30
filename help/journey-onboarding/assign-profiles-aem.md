@@ -7,7 +7,7 @@ exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 88%
+ht-degree: 92%
 
 ---
 
@@ -111,9 +111,9 @@ Wenn Sie jedoch besser verstehen möchten, wie Autoren und Entwickler das System
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt des Onboarding-Journey hinausgehen möchten.
+Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt der Onboarding-Tour hinausgehen möchten.
 
 * [Team- und Produktprofile in AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) – Erfahren Sie, wie Sie mit Team- und Produktprofilen in AEM as a Cloud Service den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren und einschränken können. 
-* [Verwalten von Produkten und Benutzerzugriff in Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Erfahren Sie, wie Sie mit der Admin Console den Benutzerzugriff verwalten.
-* [Zugriff auf AEM konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html) - In dieser kurzen Anleitung erfahren Sie mehr über die Konfiguration von Adobe IMS-Benutzern, Benutzergruppen und Produktprofilen in Admin Console.
+* [Verwalten von Produkten und Benutzerzugriffen in der Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console): Erfahren Sie, wie Sie die Admin Console zur Verwaltung des Benutzerzugriffs verwenden können.
+* [Zugriff auf AEM konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html): In dieser kurzen Anleitung erfahren Sie mehr über die Konfiguration von Adobe IMS-Benutzern, Benutzergruppen und Produktprofilen in Admin Console.
 

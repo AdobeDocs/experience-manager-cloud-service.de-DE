@@ -5,7 +5,7 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '445'
-ht-degree: 32%
+ht-degree: 48%
 
 ---
 
@@ -17,7 +17,7 @@ Weitere Informationen zu Programmtypen finden Sie im Dokument [Programm- und Pro
 
 ## Erstellen eines Sandbox-Programms {#create}
 
-1. Melden Sie sich bei Cloud Manager an unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) und wählen Sie die entsprechende Organisation aus.
+1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an und wählen Sie die entsprechende Organisation aus.
 
 1. Klicken Sie auf der Landingpage von Cloud Manager oben rechts im Bildschirm auf **Programm hinzufügen**.
 
@@ -27,7 +27,7 @@ Weitere Informationen zu Programmtypen finden Sie im Dokument [Programm- und Pro
 
    ![Erstellen von Programmtypen](assets/create-sandbox.png)
 
-1. Optional können Sie ein Bild zum Programm hinzufügen, indem Sie eine Bilddatei per Drag-and-Drop in die **Programmbild hinzufügen** Zielgruppe auswählen oder darauf klicken, um ein Bild aus einem Dateibrowser auszuwählen. Tippen oder klicken Sie auf **Weiter**.
+1. Optional können Sie ein Bild zum Programm hinzufügen, indem Sie eine Bilddatei per Drag-and-Drop auf das Ziel **Programmbild hinzufügen** ziehen oder darauf klicken, um ein Bild aus einem Dateibrowser auszuwählen. Tippen oder klicken Sie auf **Weiter**.
 
    * Das Bild dient nur als Kachel im Programmübersichtsfenster und hilft bei der Identifizierung des Programms.
 

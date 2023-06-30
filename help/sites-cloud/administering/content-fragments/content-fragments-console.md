@@ -8,7 +8,7 @@ exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1103'
-ht-degree: 84%
+ht-degree: 89%
 
 ---
 
@@ -73,8 +73,8 @@ Dadurch wird die gesamte Tabelle nach dieser Spalte sortiert. Die Sortierung ist
 
 In der Konsole gibt es eine Reihe von Aktionen, die Sie entweder direkt oder nach Auswahl eines bestimmten Fragments verwenden können:
 
-* Verschiedene Aktionen sind direkt [in der Konsole verfügbar](#available-actions)
-* Sie können [Wählen Sie mindestens ein Inhaltsfragment aus, um geeignete Aktionen anzuzeigen](#actions-selected-content-fragment)
+* Verschiedene Aktionen sind direkt [von der Konsole aus verfügbar](#available-actions)
+* Sie können [ein oder mehrere Inhaltsfragmente auswählen, um entsprechende Aktionen anzuzeigen](#actions-selected-content-fragment)
 
 ### Aktionen (nicht ausgewählt) {#actions-unselected}
 

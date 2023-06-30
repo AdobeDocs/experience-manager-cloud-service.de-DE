@@ -2,10 +2,10 @@
 title: Exportieren von Experience Fragments nach Adobe Target
 description: Exportieren von Experience Fragments nach Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2250'
-ht-degree: 84%
+source-wordcount: '2245'
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ Experience Fragments können in den Standardarbeitsbereich in Adobe Target oder 
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie auch unter:
+>Weitere Informationen finden Sie in den folgenden Themen:
 >
 >* [Adobe Target-Entwicklung](https://developers.adobetarget.com/)
 >* [Kernkomponenten – Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
@@ -65,7 +65,7 @@ Verschiedene Aktionen sind erforderlich:
 
    >[!NOTE]
    >
-   >Für das Neuschreiben von Links, die nicht vom Standard abgedeckt sind, muss die [Experience Fragment Link Rewriter Provider](/help/implementing/developing/extending/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html) ist verfügbar. Dadurch können für Ihre Instanz benutzerdefinierte Regeln entwickelt werden.
+   >Für das Umschreiben von Links, die nicht von der Standardeinstellung abgedeckt werden, ist der [Experience Fragment Link Rewriter Provider](/help/implementing/developing/extending/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html) verfügbar. Dadurch können für Ihre Instanz benutzerdefinierte Regeln entwickelt werden.
 
 ## Hinzufügen der Cloud-Konfiguration {#add-the-cloud-configuration}
 
@@ -83,9 +83,9 @@ Die erforderlichen Optionen können in **Seiteneigenschaften** des erforderliche
 
    >[!NOTE]
    >
-   >Wenn Sie die Cloud-Konfiguration zum übergeordneten Ordner &quot;Experience Fragment&quot;hinzufügen, wird die Konfiguration von allen untergeordneten Elementen übernommen.
+   >Wenn Sie die Cloud-Konfiguration zum übergeordneten Ordner des Experience Fragments hinzufügen, wird die Konfiguration von allen untergeordneten Elementen geerbt.
    >
-   >Wenn Sie die Cloud-Konfiguration zum Experience Fragment selbst hinzufügen, wird die Konfiguration von allen Varianten übernommen.
+   >Wenn Sie die Cloud-Konfiguration zum Experience Fragment selbst hinzufügen, wird die Konfiguration an alle Variationen vererbt.
 
 1. Wählen Sie die Registerkarte **Cloud-Services** aus.
 
@@ -177,7 +177,7 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
 
    * **Mandanten-ID**: die Mandanten-ID
 
-   * **IMS-Konfiguration**: Wählen Sie die gewünschte Konfiguration aus der Dropdown-Liste aus
+   * **IMS-Konfiguration**: Wählen Sie die gewünschte Konfiguration aus der Dropdown-Liste aus.
 
    * **API-Typ**: standardmäßig auf REST gesetzt (XML ist veraltet)
 
@@ -195,7 +195,7 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
 
      >[!NOTE]
      >
-     >Die Target-Bibliotheksdatei [AT.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html) ist die neue Implementierungsbibliothek für Adobe Target. Sie ist sowohl auf typische Web-Implementierungen als auch auf Einzelseitenanwendungen ausgelegt.
+     >Die Target-Bibliotheksdatei [AT.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lange=de) ist die neue Implementierungsbibliothek für Adobe Target. Sie ist sowohl auf typische Web-Implementierungen als auch auf Einzelseitenanwendungen ausgelegt.
      >
      >mbox.js ist veraltet und wird zu einem späteren Zeitpunkt entfernt.
      >
@@ -315,22 +315,22 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >Für Medien-Assets wie Bilder wird nur ein Verweis nach Target exportiert. Das Asset selbst bleibt in AEM Assets gespeichert und wird von der AEM-Veröffentlichungsinstanz bereitgestellt.
 >
->Daher muss das Experience Fragment mit allen zugehörigen Assets vor dem Export in Target veröffentlicht werden.
+>Deshalb muss das Experience Fragment mit allen zugehörigen Assets veröffentlicht werden, bevor es nach Target exportiert wird.
 
-So exportieren Sie ein Experience Fragment von AEM nach Target (nach Angabe der Cloud-Konfiguration):
+So exportieren Sie ein Experience Fragment aus AEM nach Target (nach Angabe der Cloud-Konfiguration):
 
-1. Navigieren Sie zur Konsole Experience Fragment .
-1. Wählen Sie das Experience Fragment aus, das Sie in die Zielgruppe exportieren möchten.
-
-   >[!NOTE]
-   >
-   >Es muss sich um eine Experience Fragment-Webvariante handeln.
-
-1. Tippen/klicken **Exportieren in Adobe Target**.
+1. Navigieren Sie zur Experience Fragment-Konsole.
+1. Wählen Sie das Experience Fragment aus, das Sie in nach Target exportieren möchten.
 
    >[!NOTE]
    >
-   >Wenn das Experience Fragment bereits exportiert wurde, wählen Sie **Aktualisierung in Adobe Target**.
+   >Es muss sich um eine Experience Fragment Web-Variante handeln.
+
+1. Tippen oder klicken Sie auf **Nach Adobe Target exportieren**.
+
+   >[!NOTE]
+   >
+   >Wenn das Experience Fragment bereits exportiert wurde, wählen Sie **In Adobe Target aktualisieren**.
 
 1. Tippen/klicken Sie auf **Exportieren ohne Veröffentlichung** bzw. auf **Veröffentlichen**.
 
@@ -348,7 +348,7 @@ So exportieren Sie ein Experience Fragment von AEM nach Target (nach Angabe der 
 
    >[!NOTE]
    >
-   >Wenn Sie ein Experience Fragment in Adobe Target anzeigen, wird die *letzte Änderung* Das Datum, das angezeigt wird, ist das Datum, an dem das Fragment zuletzt in AEM geändert wurde, und nicht das Datum, an dem das Fragment zuletzt nach Adobe Target exportiert wurde.
+   >Beim Anzeigen eines Experience Fragments in Adobe Target gibt *Zuletzt geändert* an, wann das Fragment zuletzt in AEM geändert wurde. Es ist nicht das Datum, an dem das Fragment zuletzt in Adobe Target exportiert wurde.
 
 >[!NOTE]
 >
@@ -356,22 +356,22 @@ So exportieren Sie ein Experience Fragment von AEM nach Target (nach Angabe der 
 
 ## Ihre Experience Fragments in Adobe Target verwenden {#using-your-experience-fragments-in-adobe-target}
 
-Nach dem Ausführen der zuvor genannten Aufgaben wird das Experience Fragment auf der Seite „Angebote“ in Target angezeigt. Bitte schauen Sie sich die [spezifische Target-Dokumentation](https://experiencecloud.adobe.com/resources/help/de_DE/target/target/aem-experience-fragments.html) an, um zu erfahren, was Sie dort erreichen können.
+Nach dem Ausführen der zuvor genannten Aufgaben wird das Experience Fragment auf der Seite „Angebote“ in Target angezeigt. Siehe [spezifische Target-Dokumentation](https://experiencecloud.adobe.com/resources/help/de_DE/target/target/aem-experience-fragments.html) um zu erfahren, was man dort erreichen kann.
 
 >[!NOTE]
 >
->Wenn Sie ein Experience Fragment in Adobe Target anzeigen, wird die *letzte Änderung* Das Datum, das angezeigt wird, ist das Datum, an dem das Fragment zuletzt in AEM geändert wurde, und nicht das Datum, an dem das Fragment zuletzt nach Adobe Target exportiert wurde.
+>Beim Anzeigen eines Experience Fragments in Adobe Target gibt *Zuletzt geändert* an, wann das Fragment zuletzt in AEM geändert wurde. Es ist nicht das Datum, an dem das Fragment zuletzt in Adobe Target exportiert wurde.
 
 ## Löschen eines bereits nach Adobe Target exportierten Experience Fragments {#deleting-an-experience-fragment-already-exported-to-adobe-target}
 
-Das Löschen eines Experience Fragment, das bereits in Target exportiert wurde, kann Probleme verursachen, wenn das Fragment bereits in einem Angebot in Target verwendet wird. Durch das Löschen des Fragments wird das Angebot unbrauchbar, da der Fragmentinhalt von AEM bereitgestellt wird.
+Das Löschen eines Experience Fragments, das bereits in Target exportiert wurde, kann Probleme verursachen, wenn das Fragment bereits in einem Angebot in Target verwendet wird. Durch das Löschen des Fragments wird das Angebot unbrauchbar, da der Fragmentinhalt von AEM bereitgestellt wird.
 
 So vermeiden Sie solche Situationen:
 
-* Wenn das Experience Fragment derzeit nicht in einer Aktivität verwendet wird, ermöglicht AEM dem Benutzer das Löschen des Fragments ohne Warnmeldung.
-* Wenn das Experience Fragment derzeit von einer Aktivität in Target verwendet wird, wird der AEM Benutzer durch eine Fehlermeldung über mögliche Konsequenzen des Löschens des Fragments für die Aktivität gewarnt.
+* Wenn das Experience Fragment derzeit nicht in einer Aktivität verwendet wird, ermöglicht AEM es den Benutzenden, das Fragment ohne Warnmeldung zu löschen.
+* Wenn das Experience Fragment derzeit von einer Aktivität in Target verwendet wird, werden AEM-Benutzende durch eine Fehlermeldung über die möglichen Auswirkungen des Löschens des Fragments auf die Aktivität gewarnt.
 
-  Die Fehlermeldung in AEM verhindert nicht, dass der Benutzer das Experience Fragment (erzwungen) löscht. Wenn das Experience Fragment gelöscht wurde, gilt Folgendes:
+  Die Fehlermeldung in AEM untersagt den Benutzenden nicht das (erzwungene) Löschen des Experience Fragments. Wenn das Experience Fragment gelöscht wurde, gilt Folgendes:
 
    * Das Target-Angebot mit dem AEM Experience Fragment kann unerwünschtes Verhalten zeigen
 

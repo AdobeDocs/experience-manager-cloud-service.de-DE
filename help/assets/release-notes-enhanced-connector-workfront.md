@@ -5,7 +5,7 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
 workflow-type: tm+mt
 source-wordcount: '1158'
-ht-degree: 82%
+ht-degree: 86%
 
 ---
 
@@ -42,7 +42,7 @@ Die neueste Version vom [!DNL Workfront for Experience Manager enhanced connecto
 
 ### Version Mai 2023 {#may-2023-release}
 
-* Workfront gibt eine 409-HTTP-Antwort für doppelte Ereignisabonnements zurück, die auf einem REST-Aufruf von Experience Manager an Workfront basiert. Dies führt zu einer Nullzeigerausnahme.
+* Workfront gibt eine 409-HTTP-Antwort für doppelte Ereignis-Abonnements zurück, die auf einem REST-Aufruf von Experience Manager an Workfront basiert. Dies führt zu einer Null Pointer-Ausnahme.
 
 ### Version April 2023 {#april-2023-release}
 

@@ -8,11 +8,11 @@ exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 source-git-commit: 6822011a46a1c12c0057e828d976c735ec878eea
 workflow-type: tm+mt
 source-wordcount: '1631'
-ht-degree: 71%
+ht-degree: 72%
 
 ---
 
-# Freigeben und Verteilen von in verwalteten Assets in [!DNL Experience Manager] {#share-assets-from-aem}
+# Freigeben und Verteilen von in [!DNL Experience Manager] verwalteten Assets {#share-assets-from-aem}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -133,7 +133,7 @@ You can also copy the auto-generated link and share it with the users. The defau
 
 >[!NOTE]
 >
->Wenn ein freigegebenes Asset an einen anderen Speicherort verschoben wird, funktioniert der Link zum Asset nicht mehr. Erstellen Sie den Link erneut und geben Sie ihn für die Benutzer frei.
+>Wenn ein freigegebenes Asset an einen anderen Speicherort verschoben wird, funktioniert der Link zum Asset nicht mehr. Erstellen Sie den Link erneut und geben Sie ihn für die Benutzenden frei.
 
 
 <!--
@@ -291,7 +291,7 @@ Siehe [Konfigurieren von [!DNL Assets] für die Verwendung mit [!DNL Adobe Asset
 * [Assets-HTTP-API](mac-api-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
 * [Suchen von Assets](search-assets.md)
-* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
 * [Asset-Berichte](asset-reports.md)
 * [Metadatenschemata](metadata-schemas.md)
 * [Herunterladen von Assets](download-assets-from-aem.md)

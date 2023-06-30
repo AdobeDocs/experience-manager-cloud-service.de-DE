@@ -5,7 +5,7 @@ exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 46%
+ht-degree: 49%
 
 ---
 
@@ -35,7 +35,7 @@ Mit der benutzerdefinierten Überwachung können Kunden optional bis zu fünf ve
 
 >[!NOTE]
 >
-> Diese Funktion steht nur Kunden mit [Erweiterte Cloud-Unterstützung.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) Wenden Sie sich bei Fragen an das Kundenbetreuungsteam Ihrer Adobe.
+> Diese Funktion steht nur Kunden mit [erweitertem Cloud Support zur Verfügung.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html?lang=de#support-add-ons) Wenden Sie sich bei Fragen an das Kundenbetreuungsteam Ihrer Adobe.
 
 ## Interne Modulüberwachung {#module-monitoring}
 

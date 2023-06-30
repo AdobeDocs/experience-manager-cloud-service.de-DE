@@ -7,7 +7,7 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '1417'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -144,7 +144,7 @@ Wenn Sie wissen möchten, wie Inhaltsautoren und -autorinnen auf AEM as a Cloud 
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt des Onboarding-Journey hinausgehen möchten.
+Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt der Onboarding-Tour hinausgehen möchten.
 
 * [Zugreifen auf Repositorys](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - Erfahren Sie, wie Sie mithilfe der Self-Service-Git-Kontoverwaltung über Cloud Manager auf Ihr Git-Repository zugreifen und es verwalten können.
 * [Verwenden von Git mit Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Erfahren Sie, wie Sie die Git-Repositorys von Cloud Manager verwenden und Ihr eigenes On-Premise verwaltetes Git-Repository mit Cloud Manager integrieren.

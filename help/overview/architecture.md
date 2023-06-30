@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1826'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -60,7 +60,7 @@ Die Skalierung von Instanzen pro Mandant des Dienstes gilt für die beiden Achse
 
 * Horizontal: Die Anzahl der Knoten für einen bestimmten Dienst wird automatisch erhöht oder verringert, wobei die einzelnen Standardkonfigurationen weiterhin berücksichtigt werden.
 
-* Vertikal: zugewiesener Arbeitsspeicher und CPU-Kapazität kann über die Konfiguration für eine feste Anzahl von Knoten skaliert oder heruntergefahren werden, um die individuellen Anforderungen zu erfüllen.
+* Vertikal: Die zugewiesene Arbeitsspeicher- und CPU-Kapazität kann über die Konfiguration für eine feste Anzahl von Knoten skaliert oder heruntergefahren werden, um die individuellen Anforderungen zu erfüllen.
 
 ## Umgebungen {#environments}
 

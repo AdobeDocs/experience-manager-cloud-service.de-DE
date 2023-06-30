@@ -6,7 +6,7 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2847'
-ht-degree: 53%
+ht-degree: 56%
 
 ---
 
@@ -86,7 +86,7 @@ Sie können über eine oder mehrere dieser Dateien verfügen. Sie enthalten `<Vi
 >
 >Im flexiblen Modus sollten Sie relative Pfade anstelle absoluter Pfade verwenden.
 
-Stellen Sie sicher, dass mindestens ein virtueller Host immer verfügbar ist, der mit ServerAlias übereinstimmt. `\*.local`, `localhost`und `127.0.0.1` , die für die Dispatcher-Invalidierung erforderlich sind. Serveralidierungen `*.adobeaemcloud.net` und `*.adobeaemcloud.com` sind auch in mindestens einer Vhost-Konfiguration erforderlich und werden für interne Adobe-Prozesse benötigt.
+Stellen Sie sicher, dass mindestens ein virtueller Host immer verfügbar ist, der mit ServerAlias übereinstimmt. `\*.local`, `localhost`und `127.0.0.1` , die für die Dispatcher-Invalidierung erforderlich sind. Die Server-Aliase `*.adobeaemcloud.net` und `*.adobeaemcloud.com` sind ebenfalls in mindestens einer vhost-Konfiguration erforderlich und werden für interne Adobe-Prozesse benötigt.
 
 Wenn Sie dem exakten Host entsprechen möchten, da Sie mehrere vhost-Dateien haben, können Sie das folgende Beispiel verwenden:
 
@@ -156,7 +156,7 @@ Es wird empfohlen, dass die oben genannten Dateien auf die unten aufgeführten u
 Enthält einen virtuellen Beispiel-Host. Erstellen Sie für Ihren eigenen virtuellen Host eine Kopie dieser Datei, passen Sie sie an, gehen Sie zu `conf.d/enabled_vhosts` und erstellen Sie eine symbolische Verknüpfung zu Ihrer angepassten Kopie.
 Kopieren Sie die Datei „default.vhost“ nicht direkt in `conf.d/enabled_vhosts`.
 
-Stellen Sie sicher, dass immer ein virtueller Host verfügbar ist, der mit ServerAlias übereinstimmt. `\*.local`, `localhost`und `127.0.0.1` , die für die Dispatcher-Invalidierung erforderlich sind. Serveralidierungen `*.adobeaemcloud.net` und `*.adobeaemcloud.com` werden für interne Adoben benötigt.
+Stellen Sie sicher, dass immer ein virtueller Host verfügbar ist, der mit ServerAlias übereinstimmt. `\*.local`, `localhost`und `127.0.0.1` , die für die Dispatcher-Invalidierung erforderlich sind. Die Server-Aliase `*.adobeaemcloud.net` und `*.adobeaemcloud.com` werden für interne Adobe-Prozesse benötigt.
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -250,7 +250,7 @@ Das Skript umfasst die folgenden drei Phasen:
 
 1. Es führt den Validator aus. Wenn die Konfiguration ungültig ist, schlägt das Skript fehl.
 2. Er führt die `httpd -t` -Befehl, um zu testen, ob die Syntax korrekt ist, sodass Apache httpd starten kann. Bei Erfolg sollte die Konfiguration für die Bereitstellung bereit sein.
-3. Überprüft, ob die Untergruppe der Dispatcher SDK-Konfigurationsdateien, die wie im Abschnitt [Dateistrukturabschnitt](##flexible-mode-file-structure), wurde nicht geändert und entspricht der aktuellen SDK-Version.
+3. Überprüft, ob die Untergruppe der Dispatcher-SDK-Konfigurationsdateien, die unveränderlich sein sollen, wie im [Dateistruktur-Abschnitt](##flexible-mode-file-structure) beschrieben, nicht geändert wurde und der aktuellen SDK-Version entspricht.
 
 Bei einer Cloud Manager-Bereitstellung muss die Variable `httpd -t` auch die Syntaxprüfung ausgeführt wird und alle Fehler in Cloud Manager enthalten sind `Build Images step failure` log.
 

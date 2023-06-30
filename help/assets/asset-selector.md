@@ -1,52 +1,52 @@
 ---
-title: Asset-Auswahl für [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
-description: Verwenden Sie die Asset-Auswahl, um die Metadaten und Ausgabeformate von Assets in Ihrer Anwendung zu suchen, zu suchen und abzurufen.
+title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud Service]
+description: Verwenden Sie den Asset-Selektor, um die Metadaten und Ausgabeformate von Assets in Ihrer Applikation zu suchen, zu finden und abzurufen.
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2379'
-ht-degree: 4%
+ht-degree: 94%
 
 ---
 
-# Micro-Frontend-Asset-Auswahl {#Overview}
+# Micro-Front-End-Asset-Selektor {#Overview}
 
-Die Micro-Frontend-Asset-Auswahl bietet eine Benutzeroberfläche, die einfach in die [!DNL Experience Manager Assets as a Cloud Service] Repository, damit Sie digitale Assets durchsuchen oder durchsuchen können, die im Repository verfügbar sind, und sie in Ihrer Anwendungsbearbeitung verwenden können.
+Der Micro-Front-End-Asset-Selektor bietet eine Benutzeroberfläche, die sich problemlos in das [!DNL Experience Manager Assets as a Cloud Service]-Repository integrieren lässt, sodass Sie die im Repository verfügbaren digitalen Assets durchsuchen und für die Erstellung von Applikationen verwenden können.
 
-Die Micro-Frontend-Benutzeroberfläche wird in Ihrem Anwendungserlebnis mithilfe des Asset Selector-Pakets zur Verfügung gestellt. Alle Aktualisierungen des Pakets werden automatisch importiert und die zuletzt bereitgestellte Asset-Auswahl wird automatisch in Ihre Anwendung geladen.
+Die Micro-Front-End-Benutzeroberfläche wird über das Asset-Selektor-Paket in Ihrer Applikation verfügbar gemacht. Alle Aktualisierungen des Pakets werden automatisch importiert, und der zuletzt bereitgestellte Asset-Selektor wird automatisch in Ihrer Applikation geladen.
 
 ![Übersicht](assets/overview.png)
 
-Die Asset-Auswahl bietet viele Vorteile, z. B.:
+Der Asset-Selektor bietet viele Vorteile, z. B.:
 
-* Einfache Integration in Adobe- oder Nicht-Adobe-Apps mit der Vanilla JavaScript-Bibliothek.
-* Einfach zu verwalten, da Aktualisierungen des Assets-Selektor-Pakets automatisch in der Asset-Auswahl bereitgestellt werden, die für Ihre Anwendung verfügbar ist. Es sind keine Aktualisierungen innerhalb Ihrer Anwendung erforderlich, um die neuesten Änderungen zu laden.
-* Einfachere Anpassung, da Eigenschaften verfügbar sind, die die Anzeige der Asset-Auswahl in Ihrer Anwendung steuern.
+* Einfache Integration in Adobe- oder Nicht-Adobe-Applikationen unter Verwendung der Vanilla JavaScript-Bibliothek.
+* Einfach zu verwalten, da Aktualisierungen des Assets-Wähler-Pakets automatisch für den Asset-Selektor bereitgestellt werden, der für Ihre Applikation verfügbar ist. Es sind keine Aktualisierungen innerhalb Ihrer Applikation erforderlich, um die neuesten Änderungen zu laden.
+* Einfachere Anpassung, da Eigenschaften verfügbar sind, die die Anzeige des Asset-Selektors in Ihrer Applikation steuern.
 
 * Volltextsuche, vordefinierte und benutzerdefinierte Filter, um schnell zu Assets zu navigieren, die für das Authoring-Erlebnis verwendet werden können.
 
-* Möglichkeit, Repositorys innerhalb einer IMS-Organisation zur Asset-Auswahl zu wechseln.
+* Möglichkeit, innerhalb einer IMS-Organisation zur Asset-Auswahl zwischen Repositorys zu wechseln.
 
-* Möglichkeit, Assets nach Namen, Dimensionen und Größe zu sortieren und in der Listen-, Raster-, Galerie- oder Wasserfallansicht anzuzeigen.
+* Möglichkeit, Assets nach Namen, Abmessungen und Größe zu sortieren und in der Listen-, Raster-, Galerie- oder Wasserfallansicht anzuzeigen.
 
-In diesem Artikel wird gezeigt, wie der Asset-Selektor mit einer [!DNL Adobe] unter Unified Shell oder wenn Sie bereits ein imsToken zur Authentifizierung generiert haben. Diese Workflows werden in diesem Artikel als Nicht-SUSI-Fluss bezeichnet.
+In diesem Artikel soll gezeigt werden, wie der Asset-Selektor mit einer [!DNL Adobe]-Applikation unter Unified Shell verwendet werden kann oder wenn Sie bereits ein imsToken für die Authentifizierung generiert haben. Diese Workflows werden in diesem Artikel als Nicht-SUSI-Fluss bezeichnet.
 
-Führen Sie die folgenden Aufgaben aus, um die Asset-Auswahl in Ihre [!DNL Experience Manager Assets as a Cloud Service] repository:
+Führen Sie die folgenden Aufgaben aus, um den Asset-Selektor in Ihr [!DNL Experience Manager Assets as a Cloud Service]-Repository zu integrieren und zu verwenden:
 
-* [Integrieren der Asset-Auswahl mit Vanilla JS](#integration-with-vanilla-js)
-* [Anzeigeeigenschaften der Asset-Auswahl definieren](#asset-selector-properties)
-* [Verwenden der Asset-Auswahl](#using-asset-selector)
+* [Asset-Selektor mit Vanilla JS integrieren](#integration-with-vanilla-js)
+* [Anzeigeeigenschaften des Asset-Selektors definieren](#asset-selector-properties)
+* [Verwenden des Asset-Selektors](#using-asset-selector)
 
-## Integrieren der Asset-Auswahl mit Vanilla JS {#integration-with-vanilla-js}
+## Asset-Selektor mit Vanilla JS integrieren {#integration-with-vanilla-js}
 
-Sie können jede [!DNL Adobe] oder Nicht-Adobe-Anwendung mit [!DNL Experience Manager Assets] as a [!DNL Cloud Service] Repository erstellen und Assets aus der Anwendung auswählen.
+Sie können jede [!DNL Adobe] oder Nicht-Adobe-Applikation mit [!DNL Experience Manager Assets] als [!DNL Cloud Service]-Repository integrieren und Assets aus der Applikation heraus auswählen.
 
-Die Integration erfolgt durch Importieren des Asset-Selektor-Pakets und Verbinden mit den as a Cloud Service Assets mithilfe der Vanilla JavaScript-Bibliothek. Sie müssen eine `index.html` oder einer entsprechenden Datei in Ihrer Anwendung auf -
-* Authentifizierungsdetails definieren
-* Zugriff auf das as a Cloud Service Asset-Repository
-* Anzeigeeigenschaften der Asset-Auswahl konfigurieren
+Die Integration erfolgt durch den Import des Asset-Selektor-Pakets und die Verbindung zu Assets as a Cloud Service unter Verwendung der Vanilla JavaScript-Bibliothek. Sie müssen eine `index.html` oder eine andere geeignete Datei innerhalb Ihrer Applikation bearbeiten, um:
+* Authentifizierungsdetails zu definieren
+* Zugriff auf das Assets as a Cloud Service-Repository zu erhalten
+* Anzeigeeigenschaften des Asset-Selektors zu konfigurieren
 
 <!--
 Asset Selector supports authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID`. Authentication using these IMS properties is referred to as SUSI (Sign Up Sign In) flow in this article.
@@ -61,7 +61,7 @@ Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository 
 
 Sie können eine Authentifizierung durchführen, ohne einige der IMS-Eigenschaften zu definieren, wenn:
 
-* Sie integrieren eine [!DNL Adobe] Anwendung auf [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
+* Sie eine [!DNL Adobe]-Applikation auf [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=de) integrieren.
 * Für die Authentifizierung wurde bereits ein IMS-Token generiert.
 
 ## Voraussetzungen {#prerequisites}
@@ -72,7 +72,7 @@ If your application requires user based authentication, out-of-the-box Asset Sel
 You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken` automatically. You can use SUSI (Sign Up Sign In) flow and IMS properties. Also, you can obtain your own imsToken and pass it to Asset Selector by integrating within [!DNL Adobe] application on Unified Shell or if you already have an imsToken obtained via other methods (for example, using technical account). Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining IMS properties (For example, `imsScope` and `imsClientID`) is referred to as a non-SUSI flow.
 -->
 
-Definieren Sie die Voraussetzungen in der `index.html` Datei oder einer ähnlichen Datei in Ihrer Anwendungsimplementierung, um die Authentifizierungsdetails für den Zugriff auf die [!DNL Experience Manager Assets] as a [!DNL Cloud Service] Repository. Zu den Voraussetzungen gehören:
+Definieren Sie die Voraussetzungen in der `index.html`-Datei oder einer ähnlichen Datei innerhalb Ihrer Anwendungsimplementierung, um die Authentifizierungsdetails für den Zugriff auf das [!DNL Experience Manager Assets] als [!DNL Cloud Service]-Repository festzulegen. Zu den Voraussetzungen gehören:
 * imsOrg
 * imsToken
 * apikey
@@ -100,7 +100,7 @@ For more information on these properties, see [Example for the SUSI flow](#susi-
 
 ## Installation {#installation}
 
-Asset-Selektoren sind über beide ESM-CDN verfügbar (z. B. [esm.sh](https://esm.sh/)/[Skypack](https://www.skypack.dev/)) und [UMD](https://github.com/umdjs/umd) -Version.
+Assets-Wähler sind sowohl über die ESM CDN-Version (z. B. [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) als auch über die [UMD](https://github.com/umdjs/umd)-Version verfügbar.
 
 In Browsern mit **UMD-Version** (empfohlen):
 
@@ -112,7 +112,7 @@ In Browsern mit **UMD-Version** (empfohlen):
 </script>
 ```
 
-In Browsern mit `import maps` Support verwenden **ESM CDN-Version**:
+In Browsern mit `import maps`-Unterstützung mit **ESM CDN-Version**:
 
 ```
 <script type="module">
@@ -128,7 +128,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 ### Ausgewählter Asset-Typ {#selected-asset-type}
 
-Der ausgewählte Asset-Typ ist ein Array von Objekten, die bei Verwendung der `handleSelection`, `handleAssetSelection`und `onDrop` Funktionen.
+Der ausgewählte Asset-Typ ist ein Array von Objekten, das die Asset-Informationen bei Verwendung der Funktionen `handleSelection`, `handleAssetSelection` und `onDrop` enthält.
 
 **Schemasyntax**
 
@@ -160,35 +160,35 @@ interface SelectedAsset {
 }
 ```
 
-In der folgenden Tabelle werden einige der wichtigen Eigenschaften des Objekts &quot;Ausgewähltes Asset&quot;beschrieben.
+Die folgende Tabelle beschreibt einige der wichtigen Eigenschaften des ausgewählten Asset-Objekts.
 
 | Eigenschaft | Typ | Erklärung |
 |---|---|---|
 | *repo:repositoryId* | Zeichenfolge | Eindeutige Kennung für das Repository, in dem das Asset gespeichert ist. |
 | *repo:id* | Zeichenfolge | Eindeutige Kennung für das Asset. |
-| *repo:assetClass* | Zeichenfolge | Die Classification des Assets (z. B. Bild oder Video, Dokument). |
+| *repo:assetClass* | Zeichenfolge | Die Klassifizierung des Assets (z. B. Bild oder Video, Dokument). |
 | *repo:name* | Zeichenfolge | Der Name des Assets, einschließlich der Dateierweiterung. |
 | *repo:size* | Number (Zahl) | Die Größe des Assets in Bytes. |
 | *repo:path* | Zeichenfolge | Der Speicherort des Assets im Repository. |
 | *repo:ancestors* | `Array<string>` | Ein Array von Vorgängerelementen für das Asset im Repository. |
 | *repo:state* | Zeichenfolge | Aktueller Status des Assets im Repository (z. B. aktiv, gelöscht usw.). |
-| *repo:createdBy* | Zeichenfolge | Der Benutzer oder das System, der bzw. das das Asset erstellt hat. |
+| *repo:createdBy* | Zeichenfolge | Die Person oder das System, welches das Asset erstellt hat. |
 | *repo:createDate* | Zeichenfolge | Datum und Uhrzeit der Erstellung des Assets. |
-| *repo:modifiedBy* | Zeichenfolge | Der Benutzer oder das System, der bzw. das das Asset zuletzt geändert hat. |
+| *repo:modifiedBy* | Zeichenfolge | Die Person oder das System, welches das Asset zuletzt geändert hat. |
 | *repo:modifyDate* | Zeichenfolge | Datum und Uhrzeit der letzten Änderung des Assets. |
 | *dc:format* | Zeichenfolge | Das Format des Assets, z. B. der Dateityp (z. B. JPEG, PNG usw.). |
 | *tiff:imageWidth* | Number (Zahl) | Die Breite eines Assets. |
 | *tiff:imageLength* | Number (Zahl) | Die Höhe eines Assets. |
-| *computedMetadata* | `Record<string, any>` | Ein Objekt, das einen Behälter für alle Metadaten des Assets aller Art (Repository, Anwendung oder eingebettete Metadaten) darstellt. |
+| *computedMetadata* | `Record<string, any>` | Ein Objekt, das einen Behälter für alle Metadaten des Assets aller Art (Repository, Applikation oder eingebettete Metadaten) darstellt. |
 | *_links* | `Record<string, any>` | Hypermedia-Links für das verknüpfte Asset. Enthält Links für Ressourcen wie Metadaten und Ausgabedarstellungen. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition* | `Array<Object>` | Array von Objekten, die Informationen zu Ausgabeformaten des Assets enthalten. |
+| *_links.http://ns.adobe.com/adobecloud/rel/rendition* | `Array<Object>` | Array von Objekten, das Informationen zu Ausgabedarstellungen des Assets enthält. |
 | *_links.http://ns.adobe.com/adobecloud/rel/rendition[].href* | Zeichenfolge | Der URI zur Ausgabedarstellung. |
 | *_links.http://ns.adobe.com/adobecloud/rel/rendition[].type* | Zeichenfolge | Der MIME-Typ der Ausgabedarstellung. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].&#39;repo:size&#39;* | Number (Zahl) | Die Größe der Ausgabedarstellung in Byte. |
+| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].‚repo:size&#39;* | Number (Zahl) | Die Größe der Ausgabedarstellung in Byte. |
 | *_links.http://ns.adobe.com/adobecloud/rel/rendition[].width* | Number (Zahl) | Die Breite der Ausgabedarstellung. |
 | *_links.http://ns.adobe.com/adobecloud/rel/rendition[].height* | Number (Zahl) | Die Höhe der Ausgabedarstellung. |
 
-Eine vollständige Liste der Eigenschaften und ein detailliertes Beispiel finden Sie unter [Beispiel für Asset-Selektor-Code](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+Eine vollständige Liste der Eigenschaften und ein ausführliches Beispiel finden Sie unter [Asset-Wähler-Code-Beispiel](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
 <!--
 ### ImsAuthProps {#ims-auth-props}
@@ -221,11 +221,11 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 ### Beispiel für Nicht-SUSI-Fluss {#non-susi-vanilla}
 
-In diesem Beispiel wird gezeigt, wie der Asset-Selektor bei Ausführung eines [!DNL Adobe] Anwendung unter Unified Shell oder wenn Sie bereits `imsToken` zur Authentifizierung generiert wurde.
+Dieses Beispiel zeigt, wie der Asset-Wähler mit einem Nicht-SUSI-Fluss verwendet wird, wenn eine [!DNL Adobe]-Applikation unter Unified Shell läuft oder wenn Sie bereits `imsToken` für die Authentifizierung generiert haben.
 
-Fügen Sie das Asset-Selektor-Paket mit dem `script` Tag, wie in _Zeilen 6-15_ des unten stehenden Beispiels. Sobald das Skript geladen wurde, wird die `PureJSSelectors` Die globale Variable ist verfügbar. Definieren der Asset-Auswahl [properties](#asset-selector-properties) wie in _Zeilen 16-23_. Die `imsOrg` und `imsToken` -Eigenschaften sind beide für die Authentifizierung im Nicht-SUSI-Fluss erforderlich. Die `handleSelection` -Eigenschaft wird verwendet, um die ausgewählten Assets zu verarbeiten. Rufen Sie zum Rendern der Asset-Auswahl die `renderAssetSelector` -Funktion gemäß _Zeile 17_. Die Asset-Auswahl wird im `<div>` Container-Element, wie in _Zeilen 21 und 22_.
+Fügen Sie das Asset-Selektor-Paket mit dem `script` Tag, wie in _Zeilen 6-15_ des unten stehenden Beispiels. Sobald das Skript geladen ist, kann die globale Variable `PureJSSelectors` verwendet werden. Definieren der Asset-Auswahl [properties](#asset-selector-properties) wie in _Zeilen 16-23_. Die Eigenschaften `imsOrg` und `imsToken` sind beide für die Authentifizierung im Nicht-SUSI-Fluss erforderlich. Die `handleSelection`-Eigenschaft wird verwendet, um die ausgewählten Assets zu behandeln. Um den Asset-Wähler zu rendern, rufen Sie die `renderAssetSelector`-Funktion wie in _Zeile 17_ erwähnt auf. Der Asset-Wähler wird im Container-Element `<div>` angezeigt, wie in _Zeilen 21 und 22_ zu sehen.
 
-Wenn Sie diese Schritte ausführen, können Sie die Asset-Auswahl mit einem Nicht-SUSI-Fluss in Ihrem [!DNL Adobe] Anwendung.
+Wenn Sie diese Schritte befolgen, können Sie den Asset-Wähler mit einem Nicht-SUSI-Fluss in Ihrer [!DNL Adobe]-Applikation verwenden.
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -256,7 +256,7 @@ Wenn Sie diese Schritte ausführen, können Sie die Asset-Auswahl mit einem Nich
 </html>
 ```
 
-Ein detailliertes Beispiel finden Sie unter [Beispiel für Asset-Selektor-Code](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+Ein ausführliches Beispiel finden Sie unter [Asset-Wähler-Code-Beispiel](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
 <!--
 ### Example for the SUSI flow {#susi-vanilla}
@@ -354,45 +354,45 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 ```
 -->
 
-## Verwenden der Asset-Selektor-Eigenschaften {#asset-selector-properties}
+## Verwenden von Asset-Wähler-Eigenschaften {#asset-selector-properties}
 
-Sie können die Asset-Selektor-Eigenschaften verwenden, um die Darstellung der Asset-Auswahl anzupassen. In der folgenden Tabelle sind die Eigenschaften aufgeführt, die Sie zum Anpassen und Verwenden der Asset-Auswahl verwenden können.
+Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des Asset-Wählers anzupassen. In der folgenden Tabelle sind die Eigenschaften aufgeführt, mit denen Sie den Asset-Wähler anpassen und verwenden können.
 
 | Eigenschaft | Typ | Erforderlich | Standard | Beschreibung |
 |---|---|---|---|---|
-| *Leiste* | Boolean (Boolesch) | Nein | Nein | Wenn markiert `true`, wird der Asset-Selektor in einer Ansicht auf der linken Leiste gerendert. Wenn es markiert ist `false`, wird die Asset-Auswahl in der modalen Ansicht gerendert. |
-| *imsOrg* | Zeichenfolge | Ja | | Adobe Identity Management System (IMS)-ID, die bei der Bereitstellung zugewiesen wird [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] für Ihre Organisation. Die `imsOrg` -Schlüssel ist erforderlich, um zu authentifizieren, ob sich die Organisation, auf die Sie zugreifen, unter Adobe IMS befindet oder nicht. |
-| *imsToken* | Zeichenfolge | Nein | | Für die Authentifizierung verwendetes IMS-Trägertoken. `imsToken` ist erforderlich, wenn Sie den Nicht-SUSI-Fluss verwenden. |
+| *Leiste* | Boolesch | Nein | Falsch | Wenn markiert `true`, wird der Asset-Selektor in einer Ansicht auf der linken Leiste gerendert. Wenn es markiert ist `false`, wird die Asset-Auswahl in der modalen Ansicht gerendert. |
+| *imsOrg* | Zeichenfolge | Ja | | Die Adobe Identity Management System (IMS)-ID, die bei der Bereitstellung von [!DNL Adobe Experience Manager] als [!DNL Cloud Service] für Ihre Organisation zugewiesen wird. Die `imsOrg` -Schlüssel ist erforderlich, um zu authentifizieren, ob sich die Organisation, auf die Sie zugreifen, unter Adobe IMS befindet oder nicht. |
+| *imsToken* | Zeichenfolge | Nein | | Für die Authentifizierung verwendeter IMS-Bearer-Token. `imsToken` ist erforderlich, wenn Sie den Nicht-SUSI-Fluss verwenden. |
 | *apiKey* | Zeichenfolge | Nein | | API-Schlüssel, der für den Zugriff auf den AEM Discovery-Dienst verwendet wird. `apiKey` ist erforderlich, wenn Sie den Nicht-SUSI-Fluss verwenden. |
-| *rootPath* | Zeichenfolge | Nein | /content/dam/ | Ordnerpfad, aus dem der Asset-Selektor Ihre Assets anzeigt. `rootPath` kann auch in Form von Kapselung verwendet werden. Beispielsweise kann unter dem folgenden Pfad `/content/dam/marketing/subfolder/`: Die Asset-Auswahl ermöglicht es Ihnen nicht, durch einen übergeordneten Ordner zu navigieren, sondern zeigt nur die untergeordneten Ordner an. |
-| *path* | Zeichenfolge | Nein | | Pfad, der zum Navigieren zu einem bestimmten Asset-Verzeichnis verwendet wird, wenn der Asset-Selektor gerendert wird. |
-| *filterSchema* | array | Nein | | Modell, das zum Konfigurieren von Filtereigenschaften verwendet wird. Dies ist nützlich, wenn Sie bestimmte Filteroptionen in der Asset-Auswahl einschränken möchten. |
-| *filterFormProps* | Objekt | Nein | | Geben Sie die Filtereigenschaften an, die Sie zur Verfeinerung Ihrer Suche verwenden müssen. Beispielsweise MIME-Typ JPG, PNG, GIF. |
-| *selectedAssets* | Array `<Object>` | Nein |                 | Geben Sie ausgewählte Assets an, wenn die Asset-Auswahl gerendert wird. Es ist ein Array von Objekten erforderlich, das eine ID-Eigenschaft der Assets enthält. Beispiel: `[{id: 'urn:234}, {id: 'urn:555'}]` Ein Asset muss im aktuellen Verzeichnis verfügbar sein. Wenn Sie einen anderen Ordner verwenden müssen, geben Sie einen Wert für `path` -Eigenschaft. |
+| *rootPath* | Zeichenfolge | Nein | /content/dam/ | Ordnerpfad, aus dem der Asset-Wähler Ihre Assets anzeigt. `rootPath` kann auch in Form einer Verkapselung verwendet werden. Beispielsweise kann unter dem folgenden Pfad `/content/dam/marketing/subfolder/`: Die Asset-Auswahl ermöglicht es Ihnen nicht, durch einen übergeordneten Ordner zu navigieren, sondern zeigt nur die untergeordneten Ordner an. |
+| *path* | Zeichenfolge | Nein | | Pfad, der zum Navigieren zu einem bestimmten Asset-Verzeichnis verwendet wird, wenn der Asset-Wähler gerendert wird. |
+| *filterSchema* | Array | Nein | | Modell, das zum Konfigurieren von Filtereigenschaften verwendet wird. Dies ist nützlich, wenn Sie bestimmte Filteroptionen des Asset-Wählers einschränken möchten. |
+| *filterFormProps* | Objekt | Nein | | Geben Sie die Filtereigenschaften an, die Sie zur Verfeinerung Ihrer Suche verwenden müssen. Beispielsweise MIME-Typ, JPG, PNG, GIF. |
+| *selectedAssets* | Array `<Object>` | Nein |                 | Geben Sie ausgewählte Assets an, wenn der Asset-Wähler gerendert wird. Es ist ein Array von Objekten erforderlich, das eine ID-Eigenschaft der Assets enthält. Zum Beispiel: `[{id: 'urn:234}, {id: 'urn:555'}]` Ein Asset muss im aktuellen Verzeichnis verfügbar sein. Wenn Sie ein anderes Verzeichnis verwenden müssen, geben Sie auch einen Wert für die Eigenschaft `path` an. |
 | *acvConfig* | Objekt | Nein | | Asset Collection View-Eigenschaft, die ein Objekt enthält, das eine benutzerdefinierte Konfiguration enthält, um Standardwerte zu überschreiben. |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nein |                 | Wenn die OOTB-Übersetzungen nicht ausreichen, um die Anforderungen Ihrer Anwendung zu erfüllen, können Sie eine Benutzeroberfläche bereitstellen, über die Sie Ihre eigenen lokalisierten Werte über die `i18nSymbols` prop. Wenn Sie über diese Schnittstelle einen Wert übergeben, werden die bereitgestellten Standardübersetzungen überschrieben und stattdessen Ihre eigenen verwendet.  Um die Überschreibung durchzuführen, müssen Sie eine gültige [Nachrichtendeskriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor) -Objekt auf den Schlüssel von `i18nSymbols` die Sie überschreiben möchten. |
-| *intl* | Objekt | Nein | | Asset Selector bietet standardmäßige OOTB-Übersetzungen. Sie können die Übersetzungssprache auswählen, indem Sie eine gültige Gebietsschemazeichenfolge über die `intl.locale` prop. Beispiel: `intl={{ locale: "es-es" }}` </br></br> Die unterstützten Gebietsschema-Zeichenfolgen folgen dem [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) für die Darstellung der Namen von Sprachstandards. </br></br> Liste der unterstützten Gebietsschemata: Englisch - &#39;en-us&#39; (Standard) Spanisch - &#39;es-es&#39; Deutsch - &#39;de-de&#39; Französisch - &#39;fr-fr&#39; Italienisch - &#39;it-it&#39; Japanisch - &#39;ja-jp&#39; Koreanisch - &#39;ko-kr&#39; Portugiesisch - &#39;pt-br&#39; Chinesisch (traditionell) - &#39;zh-cn&#39; Chinesisch (Taiwan) - &#39;zh-tw&#39; |
-| *repositoryId* | Zeichenfolge | Nein | &#39;&#39; | Repository, aus dem der Asset-Selektor den Inhalt lädt. |
-| *additionalAemSolutions* | `Array<string>` | Nein | [ ] | Damit können Sie eine Liste mit zusätzlichen AEM Repositorys hinzufügen. Wenn in dieser Eigenschaft keine Informationen bereitgestellt werden, werden nur die Medienbibliothek oder AEM Assets-Repositorys berücksichtigt. |
-| *hideTreeNav* | Boolean (Boolesch) | Nein |  | Gibt an, ob die Navigationsseitenleiste der Asset-Baumstruktur ein- oder ausgeblendet werden soll. Sie wird nur in der modalen Ansicht verwendet und daher gibt es keine Auswirkung dieser Eigenschaft in der Schienenansicht. |
-| *onDrop* | Funktion | Nein | | Die -Eigenschaft ermöglicht die Ablagefunktion eines Assets. |
-| *dropOptions* | `{allowList?: Object}` | Nein | | Konfiguriert Dropoptionen mit &quot;Zulassungsliste&quot;. |
-| *colorScheme* | Zeichenfolge | Nein | | Design konfigurieren (`light` oder `dark`) für die Asset-Auswahl. |
-| *handleSelection* | Funktion | Nein | | Wird mit einem Array von Asset-Elementen aufgerufen, wenn Assets ausgewählt sind, und die `Select` auf das Modal klicken. Diese Funktion wird nur in der modalen Ansicht aufgerufen. Verwenden Sie für die Schienenansicht den `handleAssetSelection` oder `onDrop` Funktionen. Beispiel: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Siehe [Ausgewählter Asset-Typ](#selected-asset-type) für Details. |
-| *handleAssetSelection* | Funktion | Nein | | Wird mit einem Array von Elementen aufgerufen, während die Assets ausgewählt oder deren Auswahl aufgehoben wird. Dies ist nützlich, wenn Sie auf Assets warten möchten, während der Benutzer sie auswählt. Beispiel: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Siehe [Ausgewählter Asset-Typ](#selected-asset-type) für Details. |
-| *onClose* | Funktion | Nein | | Wird aufgerufen, wenn `Close` -Schaltfläche in der modalen Ansicht gedrückt wird. Dies wird nur in aufgerufen `modal` nicht berücksichtigt `rail` anzeigen. |
-| *onFilterSubmit* | Funktion | Nein | | Wird mit Filterelementen aufgerufen, wenn der Benutzer andere Filterkriterien ändert. |
-| *selectionType* | Zeichenfolge | Nein | Einzelperson | Konfiguration für `single` oder `multiple` Auswahl von Assets nach dem anderen. |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nein |                 | Wenn die OOTB-Übersetzungen für die Bedürfnisse Ihrer Applikation unzureichend sind, können Sie eine Schnittstelle bereitstellen, über die Sie Ihre eigenen lokalisierten Werte durch die `i18nSymbols`-Eigenschaft übergeben können. Wenn Sie über diese Schnittstelle einen Wert übergeben, werden die bereitgestellten Standardübersetzungen überschrieben und stattdessen Ihre eigenen verwendet. Um die Überschreibung vorzunehmen, müssen Sie ein gültiges [Message Descriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor)-Objekt an den Schlüssel von `i18nSymbols` übergeben, den Sie überschreiben möchten. |
+| *intl* | Objekt | Nein | | Der Asset-Wähler bietet standardmäßige OOTB-Übersetzungen. Sie können die Übersetzungssprache auswählen, indem Sie eine gültige Gebietsschema-Zeichenfolge durch die `intl.locale`-Eigenschaft bereitstellen. Zum Beispiel: `intl={{ locale: "es-es" }}` </br></br> Die unterstützten Gebietsschema-Zeichenfolgen folgen den [ISO 639 – Codes](https://www.iso.org/iso-639-language-codes.html) für die Darstellung von Namen von Sprachen. </br></br> Liste der unterstützten Gebietsschemata: Englisch: „en-us“ (Standard), Spanisch: „es-es“, Deutsch: „de-de“, Französisch: „fr-fr“, Italienisch: „it-it“, Japanisch: „ja-jp“, Koreanisch: „ko-kr“, Portugiesisch: „pt-br“, Chinesisch (Vereinfacht): „zh-cn“, Chinesisch (Taiwan): „zh-tw“ |
+| *repositoryId* | Zeichenfolge | Nein | &#39;&#39; | Repository, aus dem der Asset-Wähler den Inhalt lädt. |
+| *additionalAemSolutions* | `Array<string>` | Nein | [ ] | Damit können Sie eine Liste mit zusätzlichen AEM-Repositorys hinzufügen. Wenn in dieser Eigenschaft keine Informationen bereitgestellt werden, werden nur die Medienbibliothek oder AEM Assets-Repositorys berücksichtigt. |
+| *hideTreeNav* | Boolesch | Nein |  | Gibt an, ob die Navigationsseitenleiste der Asset-Baumstruktur ein- oder ausgeblendet werden soll. Sie wird nur in der modalen Ansicht verwendet und daher gibt es keine Auswirkung dieser Eigenschaft in der Leistenansicht. |
+| *onDrop* | Funktion | Nein | | Die Eigenschaft ermöglicht die Ablagefunktion eines Assets. |
+| *dropOptions* | `{allowList?: Object}` | Nein | | Konfiguriert Ablagefunktionen mithilfe der „Zulassungsliste“. |
+| *colorScheme* | Zeichenfolge | Nein | | Design konfigurieren (`light` oder `dark`) für den Asset-Wähler. |
+| *handleSelection* | Funktion | Nein | | Wird mit einem Array von Asset-Elementen aufgerufen, wenn Assets ausgewählt sind und die Schaltfläche `Select` im Modal angeklickt wird. Diese Funktion wird nur in der modalen Ansicht aufgerufen. Verwenden Sie für die Leistenansicht die Funktionen `handleAssetSelection` oder `onDrop`. Beispiel: <pre>handleSelection=(assets: Asset[])==> {...}</pre> Siehe [Ausgewählter Asset-Typ](#selected-asset-type) für Details. |
+| *handleAssetSelection* | Funktion | Nein | | Wird mit einem Array von Elementen aufgerufen, während die Assets ausgewählt oder deren Auswahl aufgehoben wird. Dies ist nützlich, wenn Sie auf Assets warten möchten, während die Benutzenden sie auswählen. Beispiel: <pre>handleSelection=(assets: Asset[])==> {...}</pre> Siehe [Ausgewählter Asset-Typ](#selected-asset-type) für Details. |
+| *onClose* | Funktion | Nein | | Wird aufgerufen, wenn die `Close`-Schaltfläche in der modalen Ansicht gedrückt wird. Dies wird nur in der `modal`-Ansicht aufgerufen und in der `rail`-Ansicht nicht beachtet. |
+| *onFilterSubmit* | Funktion | Nein | | Wird mit Filterelementen aufgerufen, wenn Benutzende andere Filterkriterien ändern. |
+| *selectionType* | Zeichenfolge | Nein | Einzelperson | Konfiguration für `single`- oder `multiple`-Auswahl von Assets auf einmal. |
 
 ## Beispiele zur Verwendung der Asset-Selektor-Eigenschaften {#usage-examples}
 
-Sie können die Asset-Auswahl definieren [properties](#asset-selector-properties) im `index.html` -Datei, um die Asset-Auswahl-Anzeige in Ihrer Anwendung anzupassen.
+Sie können die Asset-Selektor-[Eigenschaften](#asset-selector-properties) in der Datei `index.html` definieren, um die Anzeige des Asset-Selektors in Ihrer Applikation anzupassen.
 
-### Beispiel 1: Asset-Auswahl in der Schienenansicht
+### Beispiel 1: Asset-Selektor in der Leistenansicht
 
 ![rail-view-example](assets/rail-view-example-vanilla.png)
 
-Wenn der Wert des AssetSelector `rail` auf `false` oder in den Eigenschaften nicht erwähnt wird, wird die Asset-Auswahl standardmäßig in der Modal-Ansicht angezeigt.
+Wenn der Wert des Asset-Selector `rail` auf `false` oder in den Eigenschaften nicht erwähnt wird, wird der Asset-Selector standardmäßig in der Modal-Ansicht angezeigt.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -402,16 +402,16 @@ Use the `path` property to define the folder name that displays automatically wh
    ![selected-assets-example](assets/selected-assets-example-vanilla.png)
 -->
 
-### Beispiel 2: Metadaten-Popup
+### Beispiel 2: Metadaten-Popover
 
-Verwenden Sie verschiedene Eigenschaften, um Metadaten eines Assets zu definieren, das Sie mit einem Informationssymbol anzeigen möchten. Das Info-Popup bietet die Sammlung von Informationen über das Asset oder den Ordner, einschließlich Titel, Dimensionen, Änderungsdatum, Speicherort und Beschreibung eines Assets. Im folgenden Beispiel werden verschiedene Eigenschaften verwendet, um Metadaten eines Assets anzuzeigen, z. B. `repo:path` -Eigenschaft gibt den Speicherort eines Assets an. <!--`repo` represents the repository from where the asset is showing, whereas, `path` represents the route from where the asset or folder is rendered.-->
+Verwenden Sie verschiedene Eigenschaften, um Metadaten eines Assets zu definieren, das Sie mit einem Informationssymbol anzeigen möchten. Das Info-Popover bietet die Sammlung von Informationen über das Asset oder den Ordner, einschließlich Titel, Abmessungen, Änderungsdatum, Speicherort und Beschreibung eines Assets. Im folgenden Beispiel werden verschiedene Eigenschaften verwendet, um Metadaten eines Assets anzuzeigen, z. B. gibt die Eigenschaft `repo:path` den Speicherort eines Assets an. <!--`repo` represents the repository from where the asset is showing, whereas, `path` represents the route from where the asset or folder is rendered.-->
 
 ![metadata-popover-example](assets/metadata-popover.png)
 
 
-### Beispiel 3: Benutzerdefinierte Filtereigenschaft in der Schienenansicht
+### Beispiel 3: Benutzerdefinierte Filtereigenschaft in der Leistenansicht
 
-Zusätzlich zur Facettensuche können Sie mit der Asset-Auswahl verschiedene Attribute anpassen, um Ihre Suche von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Anwendung. Sie müssen den folgenden Code hinzufügen, um benutzerdefinierte Suchfilter zu Ihrer Anwendung hinzuzufügen. Im folgenden Beispiel wird die Variable `Type Filter` Suchen Sie nach dem Asset-Typ unter &quot;Bilder&quot;, &quot;Dokumente&quot;oder &quot;Videos&quot;oder nach dem Filtertyp, den Sie für die Suche hinzugefügt haben.
+Zusätzlich zur Facettensuche können Sie mit dem Asset-Selektor verschiedene Attribute anpassen, um Ihre Suche von [!DNL Adobe Experience Manager] als eine [!DNL Cloud Service]-Applikation zu verfeinern. Sie müssen den folgenden Code hinzufügen, um benutzerdefinierte Suchfilter zu Ihrer Applikation hinzuzufügen. Im folgenden Beispiel ist die `Type Filter`-Suche, die den Asset-Typ nach Bildern, Dokumenten oder Videos filtert, oder der Filtertyp, den Sie für die Suche hinzugefügt haben.
 
 ![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
@@ -484,32 +484,32 @@ For the detailed example of Object Schema, click
 
 ## Umgang mit der Auswahl von Assets mithilfe des Objektschemas {#handling-selection}
 
-Die `handleSelection` -Eigenschaft wird verwendet, um einzelne oder mehrere Auswahlen von Assets in der Asset-Auswahl zu verarbeiten. Im folgenden Beispiel wird die Syntax der Verwendung von `handleSelection`.
+Die `handleSelection`-Eigenschaft wird verwendet, um einzelne oder mehrere Auswahlen von Assets in dem Asset-Selektor zu verarbeiten. Das folgende Beispiel zeigt die Syntax der Verwendung von `handleSelection`.
 
 ![handle-selection](assets/handling-selection.png)
 
-## Verwenden der Asset-Auswahl {#using-asset-selector}
+## Verwenden des Asset-Selektors {#using-asset-selector}
 
-Nachdem der Asset-Selektor eingerichtet wurde und Sie authentifiziert sind, um den Asset-Selektor mit Ihrem [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] -Anwendung können Sie Assets auswählen oder verschiedene andere Vorgänge ausführen, um im Repository nach Assets zu suchen.
+Sobald der Asset-Selektor eingerichtet ist und Sie für die Verwendung mit Ihrem [!DNL Adobe Experience Manager] als [!DNL Cloud Service]-Applikation authentifiziert sind, können Sie Assets auswählen oder verschiedene andere Vorgänge durchführen, um Ihre Assets im Repository zu suchen.
 
 ![using-asset-selector](assets/using-asset-selector.png)
 
-* **A**: [Bedienfeld ausblenden/einblenden](#hide-show-panel)
+* **A**: [Bedienfeld aus-/einblenden](#hide-show-panel)
 * **B**: [Repository-Umschalter](#repository-switcher)
 * **C**: [Assets](#repository)
 * **D**: [Filter](#filters)
 * **E**: [Suchleiste](#search-bar)
 * **F**: [Sortierung](#sorting)
-* **G**: [Sortieren in auf- oder absteigender Reihenfolge](#sorting)
+* **G**: [Sortierung nach auf- oder absteigender Reihenfolge](#sorting)
 * **H**: [Ansicht](#types-of-view)
 
-### Bedienfeld ausblenden/einblenden {#hide-show-panel}
+### Bedienfeld aus-/einblenden {#hide-show-panel}
 
-Um Ordner im linken Navigationsbereich auszublenden, klicken Sie auf **[!UICONTROL Ordner ausblenden]** Symbol. Um die Änderungen rückgängig zu machen, klicken Sie auf **[!UICONTROL Ordner ausblenden]** erneut.
+Um Ordner im linken Navigationsbereich auszublenden, klicken Sie auf das Symbol **[!UICONTROL Ordner ausblenden]**. Um die Änderungen rückgängig zu machen, klicken Sie erneut auf das Symbol **[!UICONTROL Ordner ausblenden]**.
 
 ### Repository-Umschalter {#repository-switcher}
 
-Mit der Asset-Auswahl können Sie auch Repositorys für die Asset-Auswahl wechseln. Sie können das gewünschte Repository aus der Dropdown-Liste im linken Bereich auswählen. Die in der Dropdown-Liste verfügbaren Repository-Optionen basieren auf dem `repositoryId` -Eigenschaft, die in der `index.html` -Datei. Sie basiert auf den Umgebungen der ausgewählten IMS-Organisation, auf die der angemeldete Benutzer zugreifen kann. Verbraucher können eine bevorzugte `repositoryID` und in diesem Fall stoppt der Asset-Selektor das Rendern des Repo Switchers und rendert Assets nur aus dem angegebenen Repository.
+Mit dem Asset-Selektor können Sie auch Repositorys für die Asset-Auswahl wechseln. Sie können das gewünschte Repository aus der Dropdown-Liste im linken Bedienfeld auswählen. Die in der Dropdown-Liste verfügbaren Repository-Optionen basieren auf der `repositoryId`-Eigenschaft, die in der `index.html`-Datei definiert ist. Sie basiert auf den Umgebungen der ausgewählten IMS-Organisation, auf die die angemeldeten Benutzenden zugreifen können. Nutzerinnen und Nutzer können eine bevorzugte `repositoryID` übergeben. In diesem Fall stoppt der Asset-Selektor das Rendern des Repository-Umschalters und rendert Assets nur aus dem angegebenen Repository.
 <!--
 It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
 -->
@@ -518,40 +518,40 @@ It is based on the `imsOrg` that is provided in the application. If you want to 
 
 Es handelt sich um eine Sammlung von Asset-Ordnern, mit denen Sie Vorgänge durchführen können.
 
-### Native Filter {#filters}
+### Vorkonfigurierte Filter {#filters}
 
-Die Asset-Auswahl bietet außerdem vordefinierte Filteroptionen, mit denen Sie Ihre Suchergebnisse verfeinern können. Die folgenden Filter sind verfügbar:
+Der Asset-Selektor bietet außerdem vordefinierte Filteroptionen, mit denen Sie Ihre Suchergebnisse verfeinern können. Die folgenden Filter sind verfügbar:
 
-* `File type`: enthält Ordner, Datei, Bilder, Dokumente oder Video
+* `File type`: umfasst Ordner, Dateien, Bilder, Dokumente oder Videos
 * `MIME type`: umfasst JPG, GIF, PPTX, PNG, MP4, DOCX, TIFF, PDF, XLSX
-* `Image Size`: enthält minimale/maximale Breite, minimale/maximale Höhe des Bildes
+* `Image Size`: umfasst minimale/maximale Breite, minimale/maximale Höhe des Bildes
 
 ![rail-view-example](assets/filters-asset-selector.png)
 
 ### Benutzerdefinierte Suche
 
-Mit der Asset-Auswahl können Sie neben der Volltextsuche Assets in Dateien mithilfe der benutzerdefinierten Suche suchen. Sie können benutzerdefinierte Suchfilter sowohl im Modal- als auch im Schienenansichtsmodus verwenden.
+Neben der Volltextsuche ermöglicht der Asset-Selektor die Suche nach Assets innerhalb von Dateien mithilfe einer benutzerdefinierten Suche. Sie können benutzerdefinierte Suchfilter sowohl im Modal- als auch im Leistenansichtsmodus verwenden.
 
 ![custom-search](assets/custom-search.png)
 
-Sie können auch einen Standardsuchfilter erstellen, um die häufig gesuchten Felder zu speichern und sie später zu verwenden. Um eine benutzerdefinierte Suche für Ihre Assets zu erstellen, können Sie `filterSchema` -Eigenschaft.
+Sie können auch einen Standardsuchfilter erstellen, um die häufig gesuchten Felder zu speichern und sie später zu verwenden. Um eine benutzerdefinierte Suche für Ihre Assets zu erstellen, können Sie die `filterSchema`-Eigenschaft verwenden.
 
 ### Suchleiste {#search-bar}
 
-Mit der Asset-Auswahl können Sie eine Volltextsuche nach Assets im ausgewählten Repository durchführen. Wenn Sie beispielsweise den Suchbegriff `wave` in der Suchleiste alle Assets mit der `wave` -Keyword, das in einer der Metadateneigenschaften erwähnt wird, wird angezeigt.
+Mit dem Asset-Selektor können Sie eine Volltextsuche nach Assets im ausgewählten Repository durchführen. Wenn Sie zum Beispiel den Suchbegriff `wave` in die Suchleiste eingeben, werden alle Assets angezeigt, die den Suchbegriff `wave` in einer der Metadateneigenschaften enthalten.
 
 ### Sortierung {#sorting}
 
-Sie können Assets in der Asset-Auswahl nach Namen, Dimensionen oder Größe eines Assets sortieren. Sie können die Assets auch in auf- oder absteigender Reihenfolge sortieren.
+Sie können Assets im Asset-Selektor nach Namen, Abmessungen oder Größe eines Assets sortieren. Sie können die Assets auch in auf- oder absteigender Reihenfolge sortieren.
 
 ### Ansichtstypen {#types-of-view}
 
-Mit der Asset-Auswahl können Sie das Asset in vier verschiedenen Ansichten anzeigen:
+Mit dem Asset-Selektor können Sie das Asset in vier verschiedenen Ansichten anzeigen:
 
-* **![Listenansicht](assets/do-not-localize/list-view.png) [!UICONTROL Listenansicht]**: Die Listenansicht zeigt bildlauffähige Dateien und Ordner in einer Spalte an.
-* **![Rasteransicht](assets/do-not-localize/grid-view.png) [!UICONTROL Rasteransicht]**: Die Rasteransicht zeigt bildlauffähige Dateien und Ordner in einem Raster aus Zeilen und Spalten an.
-* **![Galerie-Ansicht](assets/do-not-localize/gallery-view.png) [!UICONTROL Galerie-Ansicht]**: Die Galerie-Ansicht zeigt Dateien oder Ordner in einer zentrierten horizontalen Liste an.
-* **![Wasserfallansicht](assets/do-not-localize/waterfall-view.png) [!UICONTROL Wasserfallansicht]**: Die Wasserfallansicht zeigt Dateien oder Ordner in Form von Bridge an.
+* **![Listenansicht](assets/do-not-localize/list-view.png) [!UICONTROL Listenansicht]**: Die Listenansicht zeigt scrollbare Dateien und Ordner in einer Spalte an.
+* **![Rasteransicht](assets/do-not-localize/grid-view.png) [!UICONTROL Rasteransicht]**: Die Rasteransicht zeigt scrollbare Dateien und Ordner in einem Raster aus Zeilen und Spalten an.
+* **![Galerieansicht](assets/do-not-localize/gallery-view.png) [!UICONTROL Galerieansicht]**: Die Galerie-Ansicht zeigt Dateien oder Ordner in einer zentrierten horizontalen Liste an.
+* **![Wasserfallansicht](assets/do-not-localize/waterfall-view.png) [!UICONTROL Wasserfallansicht]**: Die Wasserfallansicht zeigt Dateien oder Ordner in Form einer Brücke an.
 
 <!--
 ### Modes to view Asset Selector

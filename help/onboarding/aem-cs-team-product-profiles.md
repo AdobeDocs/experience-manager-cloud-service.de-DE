@@ -5,7 +5,7 @@ exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '759'
-ht-degree: 79%
+ht-degree: 83%
 
 ---
 
@@ -37,7 +37,7 @@ Ihre AEM as a Cloud Service Teammitglieder werden über die Admin Console beim O
 
 >[!WARNING]
 >
->Die **AEM Administratoren** Der Produktprofilname darf nicht geändert werden. Ändern des Namens der **AEM Administratoren** Produktprofil entfernt Administratorrechte von allen Benutzern, die diesem Profil zugewiesen sind.
+>Der **AEM-Admin**-Produktprofilname darf nicht geändert werden. Das Ändern des **AEM-Admin**-Produktprofilnamens entfernt Adminrechte von allen Benutzenden, die diesem Profil zugewiesen sind.
 
 >[!TIP]
 >

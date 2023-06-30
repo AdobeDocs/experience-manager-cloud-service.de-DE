@@ -5,7 +5,7 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '685'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -114,9 +114,9 @@ In im Ruhezustand befindlichen Umgebungen können weiterhin Bereitstellungen und
 
 * Umgebungen in einem Sandbox-Programm werden nach acht Stunden Inaktivität automatisch in den Ruhezustand versetzt.
    * Inaktivität liegt vor, wenn weder der Autoren-Service noch die Vorschau- oder Veröffentlichungs-Service Anfragen erhalten.
-   * Nach dem Ruhezustand können sie [manuell den Ruhezustand zu deaktivieren.](#de-hibernation-introduction)
+   * Sobald sie sich im Ruhezustand befinden, kann der Ruhezustand [manuell aufgehoben werden.](#de-hibernation-introduction)
 * Sandbox-Programme werden nach sechs Monaten, nachdem sie sich im kontinuierlichen Ruhezustand befinden, gelöscht. Danach können sie neu erstellt werden.
 
 >[!NOTE]
 >
->Nur Sandbox-Umgebungen werden nach sechsmonatiger kontinuierlicher Ruhezeit automatisch gelöscht. Das Sandbox-Programm mit seinem Repository und Code wird beibehalten.
+>Nur Sandbox-Umgebungen werden nach sechsmonatigem kontinuierlichen Ruhezustand automatisch gelöscht. Das Sandbox-Programm mit seinem Repository und Code bleibt erhalten.

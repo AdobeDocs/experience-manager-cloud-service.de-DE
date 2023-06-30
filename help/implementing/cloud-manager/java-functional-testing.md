@@ -5,7 +5,7 @@ exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
 source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
 source-wordcount: '844'
-ht-degree: 59%
+ht-degree: 67%
 
 ---
 
@@ -102,10 +102,10 @@ Siehe [`aem-testing-clients` GitHub-Repository](https://github.com/adobe/aem-tes
 
 | Typ | Wert | Beschreibung |
 |----------------------|-------|--------------------------------------------------------------------|
-| CPU | 0.5 | CPU-Zeit pro Testausführung reserviert |
-| Arbeitsspeicher | 0,5 Gi | Menge des dem Test zugewiesenen Speichers, Wert in Byte |
-| Zeitüberschreitung | 30 M | Die Dauer, nach der der Test beendet wird. |
-| Empfohlene Dauer | 15 M | Adobe empfiehlt, die Tests nicht länger als diese Zeit zu schreiben. |
+| CPU | 0.5 | Menge an CPU-Zeit, die pro Testausführung reserviert wird |
+| Arbeitsspeicher | 0.5Gi | Menge des dem Test zugewiesenen Speichers, Wert in Byte |
+| Zeitüberschreitung | 30m | Die Dauer, nach der der Test beendet wird. |
+| Empfohlene Dauer | 15m | Adobe empfiehlt, die Tests nicht länger als diese Zeit zu schreiben. |
 
 >[!NOTE]
 >
@@ -127,14 +127,14 @@ Die Systemeigenschaften lauten wie folgt.
 | Eigenschaft | Beschreibung | Beispiel |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
 | `sling.it.instances` | Anzahl der Instanzen, die mit dem Cloud-Service übereinstimmen, sollte auf `2` | `2` |
-| `sling.it.instance.url.1` | sollte auf die Autoren-URL eingestellt sein | `http://localhost:4502` |
+| `sling.it.instance.url.1` | sollte auf die Autoren-URL gesetzt werden | `http://localhost:4502` |
 | `sling.it.instance.runmode.1` | Ausführungsmodus der ersten Instanz, sollte auf `author` | `author` |
-| `sling.it.instance.adminUser.1` | sollte auf den Autoren-Admin-Benutzer festgelegt werden. | `admin` |
-| `sling.it.instance.adminPassword.1` | sollte auf das Administratorkennwort des Autors festgelegt werden. |                         |
-| `sling.it.instance.url.2` | auf die Veröffentlichungs-URL eingestellt werden | `http://localhost:4503` |
+| `sling.it.instance.adminUser.1` | sollte auf die Autoren-Admin-Benutzenden gesetzt werden. | `admin` |
+| `sling.it.instance.adminPassword.1` | sollte auf das Adminpasswort des Autors oder der Autorin gesetzt werden. |                         |
+| `sling.it.instance.url.2` | sollte auf die Veröffentlichungs-URL gesetzt werden | `http://localhost:4503` |
 | `sling.it.instance.runmode.2` | Ausführungsmodus der zweiten Instanz, sollte auf `publish` | `publish` |
-| `sling.it.instance.adminUser.2` | sollte auf den Veröffentlichungs-Admin-Benutzer festgelegt werden. | `admin` |
-| `sling.it.instance.adminPassword.2` | sollte auf das Veröffentlichungs-Admin-Kennwort festgelegt werden. |                         |
+| `sling.it.instance.adminUser.2` | sollte auf die Veröffentlichungs-Admin-Benutzenden gesetzt werden. | `admin` |
+| `sling.it.instance.adminPassword.2` | sollte auf das Veröffentlichungs-Admin-Passwort gesetzt werden. |                         |
 
 
 

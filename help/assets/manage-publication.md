@@ -8,7 +8,7 @@ exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
 source-git-commit: 8466595f988d3a10806d4654885c14a622d14057
 workflow-type: tm+mt
 source-wordcount: '1630'
-ht-degree: 84%
+ht-degree: 85%
 
 ---
 
@@ -80,7 +80,7 @@ Um den zu veröffentlichenden Ordnerinhalt zu filtern, klicken Sie auf **[!UICON
 
 * `Include folder contents` und `Include only immediate folder contents`
 
-   Wenn beide Optionen ausgewählt sind, werden alle Assets des ausgewählten Ordners, der Unterordner (leer) und die Verweise veröffentlicht. Die Assets der Unterordner werden nicht veröffentlicht.
+  Wenn beide Optionen ausgewählt sind, werden alle Assets des ausgewählten Ordners, der Unterordner (leer) und die Verweise veröffentlicht. Die Assets der Unterordner werden nicht veröffentlicht.
 
 <!--
 * [!UICONTROL Include only immediate folder contents]: Only the subfolders content and references are published. 
@@ -194,6 +194,7 @@ Die Option Veröffentlichung anfordern steht folgenden Benutzern zur Verfügung:
 >[!NOTE]
 >
 >Wenn [!DNL Dynamic Media] als Ziel ausgewählt ist, wird der Workflow-Schritt für **Workflow-Benutzer** und **admin** Benutzer.
+>
 
 ## Einschränkungen und Tipps {#limitations-and-tips}
 

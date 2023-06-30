@@ -5,7 +5,7 @@ exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -116,7 +116,7 @@ Verbindungen, die in der App verwendet werden, werden als `<meta>`-Tags im `<hea
 * `<protocol>` – Dies gibt an, welches Persistenz-Plug-in des Universal Editor Persistence Service verwendet werden soll. Z. B. `aem`
 * `<url>` – Dies ist die URL zum System, in dem die Änderungen persistiert werden sollen. Z. B. `http://localhost:4502`
 
-Die Kennung `adobe:aem:editor` stellt die Verbindung für den Adobe Universal Editor dar.
+Die Kennung `adobe:aem:editor` stellt die Verbindung des universellen Editors von Adobe dar.
 
 `itemid`s verwenden das Präfix `urn`, um die Kennung zu verkürzen.
 

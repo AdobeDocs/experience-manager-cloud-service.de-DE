@@ -2,10 +2,10 @@
 title: Datenschutzbestimmungen – Adobe Experience Manager as a Cloud Service Sites – Bereitschaft
 description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service Sites für die verschiedenen Datenschutzbestimmungen, darunter die EU-Datenschutz-Grundverordnung (DSGVO), das kalifornische Verbraucherdatenschutzgesetz (Consumer Privacy Act) und die Einhaltung der Vorschriften bei der Implementierung eines neuen Projekts in AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 62%
+source-wordcount: '1025'
+ht-degree: 86%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 62%
 
 Adobe Experience Manager as a Cloud Service Sites ist bereit, Kunden bei der Erfüllung ihrer Datenschutzverpflichtungen und der Einhaltung von Datenschutzbestimmungen zu unterstützen. Auf dieser Seite werden die Verfahren zur Handhabung DSGVO-bezogener Anfragen in AEM Sites beschrieben. Sie beschreibt den Speicherort der privaten Daten und wie diese manuell oder per Code entfernt werden können.
 
-Weitere Informationen finden Sie im [Datenschutzzentrum von Adobe](https://www.adobe.com/de/privacy.html).
+Weitere Informationen finden Sie unter [Datenschutzzentrum für Adoben](https://www.adobe.com/de/privacy.html).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Auf dem Autoren-Server gespeicherte Benutzerkonten und benutzergenerierte Inhalt
 
 Die für die Authentifizierung von Besuchern verwendeten Benutzerkonten und die UGC-Inhalte, die auf dem Publishing-Server gespeichert werden, werden in der [Dokumentation zu AEM Foundation](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md) erläutert.
 
-Standardmäßig speichern die Komponenten von AEM Sites keine von Besuchern auf dem Publishing-Server eingegebenen Daten. Es wird empfohlen, diese Daten zur weiteren Verarbeitung an ein Drittanbietersystem oder an Adobe Campaign zu übermitteln.
+Standardmäßig speichern die Komponenten von AEM Sites keine von Besuchern auf dem Publishing-Server eingegebenen Daten. Es wird empfohlen, die Daten zur weiteren Verarbeitung an ein Drittanbietersystem oder Adobe Campaign weiterzuleiten.
 
 ## Opt-in/Opt-out {#opt-in-opt-out}
 
@@ -76,13 +76,13 @@ Opt-out:
 
 AEM Sites bietet eine optionale Integration mit Analytics Foundation, das Funktionen innerhalb des On-Demand-Service von Adobe Analytics verwendet.
 
-Weitere Informationen zur Verwaltung von DSGVO-Anfragen von betroffenen Personen in Adobe Analytics finden Sie unter [Adobe Analytics und Datenschutz](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=de).
+Weitere Informationen zur Verwaltung von Anfragen von Datensubjekten im Zusammenhang mit Adobe Analytics finden Sie unter [Adobe Analytics und Datenschutz](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=de).
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites bietet eine optionale Integration mit Personalization Foundation by Target, das Funktionen innerhalb des On-Demand-Service von Adobe Analytics verwendet.
 
-Weitere Informationen zur Verwaltung von DSGVO-Anfragen von betroffenen Personen in Adobe Target finden Sie unter [Adobe Target – Datenschutz und die DSGVO](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Informationen zum Verwalten von Anfragen von Datensubjekten im Zusammenhang mit Adobe Target finden Sie unter [Adobe Target - Privatsphäre und Datenschutz-Grundverordnung](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=de).
 
 ## ContextHub {#contexthub}
 
@@ -96,9 +96,9 @@ Standardmäßig werden diese Besucherdaten nicht in AEM gespeichert. AEM sendet 
 
 ### Implementieren von Opt-in-/Opt-out-Komponenten {#implementing-opt-in-opt-out}
 
-Der Site-Eigentümer muss eine Opt-out-Komponente gemäß den folgenden Richtlinien implementieren.
+Der Site-Eigentümer oder die Site-Eigentümerin muss eine Opt-out-Komponente gemäß den folgenden Richtlinien implementieren.
 
-Diese Richtlinien implementieren Opt-in als Standard. Deshalb müssen Website-Besucher klar zustimmen, bevor personenbezogene Daten im Persistenzspeicher des Browsers (auf Client-Seite) abgelegt werden.
+Diese Richtlinien sehen eine standardmäßige Opt-in-Implementierung vor. Deshalb müssen Website-Besucher klar zustimmen, bevor personenbezogene Daten im Persistenzspeicher des Browsers (auf Client-Seite) abgelegt werden.
 
 * Die Opt-out-Komponente sollte immer dann integriert werden, wenn die ContextHub-Komponente vorhanden ist.
 * Die Datenschutz-bezogenen Bedingungen für die Website müssen Website-Besuchern angezeigt werden, um ihnen Folgendes zu ermöglichen:
@@ -107,13 +107,13 @@ Diese Richtlinien implementieren Opt-in als Standard. Deshalb müssen Website-Be
    * Ablehnen der Bedingungen
    * Ändern der vorherigen Auswahl
 
-* Wenn ein Site-Besucher die Nutzungsbedingungen der Site akzeptiert, sollte das ContextHub-Opt-out-Cookie entfernt werden:
+* Wenn Site-Besuchende die Nutzungsbedingungen der Site akzeptieren, sollte das ContextHub-Opt-out-Cookie entfernt werden:
 
   ```
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
   ```
 
-* Wenn ein Besucher der Site die Nutzungsbedingungen der Site nicht akzeptiert, sollte das ContextHub-Ausschluss-Cookie gesetzt werden:
+* Wenn Besuchende der Site die Nutzungsbedingungen der Site nicht akzeptieren, sollte das ContextHub-Ausschluss-Cookie gesetzt werden:
 
   ```
   ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
@@ -128,34 +128,34 @@ Diese Richtlinien implementieren Opt-in als Standard. Deshalb müssen Website-Be
 
 ### Vorschau der ContextHub-Persistenz {#previewing-persistence-of-contexthub}
 
-Zur Vorschau der verwendeten Persistenz kann ein Benutzer:
+Um eine Vorschau der von ContextHub verwendeten Persistenz zu sehen, können Benutzende:
 
-* Verwenden Sie die Browser-Konsole. Beispiel:
+* Die Browser-Konsole verwenden, zum Beispiel:
 
    * Chrome:
 
-      * Öffnen Sie Entwicklertools > Anwendung > Speicher:
+      * Öffnen Sie: Entwicklertools > Applikation > Speicher:
 
-         * Lokaler Speicher > (Website) > ContextHubPersistence
-         * Sitzungsspeicher > (Website) > ContextHubPersistence
-         * Cookies > (Website) > SessionPersistence
+         * Lokaler Speicher => (Website) => ContextHubPersistence
+         * Sitzungsspeicher => (Website) => ContextHubPersistence
+         * Cookies => (Website) => SessionPersistence
 
    * Firefox:
 
-      * Öffnen Sie Entwicklertools > Speicher:
+      * Öffnen Sie: Entwicklertools > Konsole:
 
-         * Lokaler Speicher > (Website) > ContextHubPersistence
-         * Sitzungsspeicher > (Website) > ContextHubPersistence
-         * Cookies > (Website) > SessionPersistence
+         * Lokaler Speicher => (Website) => ContextHubPersistence
+         * Sitzungsspeicher => (Website) => ContextHubPersistence
+         * Cookies => (Website) => SessionPersistence
 
    * Safari:
 
-      * Öffnen Sie Voreinstellungen > Erweitert > Menü &quot;Entwicklung anzeigen&quot;in der Menüleiste
-      * Öffnen Sie &quot;Entwickeln&quot;> &quot;JavaScript-Konsole anzeigen&quot;
+      * Öffnen Sie: Einstellungen > Erweitert > Entwicklungsmenü in der Menüleiste anzeigen
+      * Öffnen Sie: Entwickeln > JavaScript-Konsole anzeigen
 
-         * Konsole > Speicher > Lokaler Speicher > (Website) > ContextHubPersistence
-         * Konsole > Speicher > Sitzungsspeicher > (Website) > ContextHubPersistence
-         * Konsole > Speicher > Cookies > (Website) > ContextHubPersistence
+         * Konsole => Speicher => Lokaler Speicher => (Website) => ContextHubPersistence
+         * Konsole => Speicher => Sitzungsspeicher => (Website) => ContextHubPersistence
+         * Konsole => Speicher => Cookies => (Website) => ContextHubPersistence
 
    * Internet Explorer:
 
@@ -165,7 +165,7 @@ Zur Vorschau der verwendeten Persistenz kann ein Benutzer:
          * `sessionStorage.getItem('ContextHubPersistence')`
          * `document.cookie`
 
-* Verwenden Sie die ContextHub-API in der Browserkonsole:
+* Verwenden Sie die ContextHub-API in der Browser-Konsole:
 
    * ContextHub bietet die folgenden Datenpersistenzschichten:
 
@@ -178,23 +178,23 @@ Zur Vorschau der verwendeten Persistenz kann ein Benutzer:
 
 So zeigen Sie beispielsweise in localStorage gespeicherte Daten an:
 
-Zur Vorschau der verwendeten Persistenz kann ein Benutzer:
+Um eine Vorschau der von ContextHub verwendeten Persistenz zu sehen, können Benutzende:
 
 * Verwenden Sie die Browser-Konsole:
 
-   * Chrome - Öffnen Sie &quot;Developer Tools&quot;> &quot;Application&quot;> &quot;Storage&quot;:
+   * In Chrome öffnen Sie: Developer Tools > Applikation > Speicher:
 
-      * Lokaler Speicher > (Website) > ContextHubPersistence
-      * Sitzungsspeicher > (Website) > ContextHubPersistence
-      * Cookies > (Website) > SessionPersistence
+      * Lokaler Speicher => (Website) => ContextHubPersistence
+      * Sitzungsspeicher => (Website) => ContextHubPersistence
+      * Cookies => (Website) => SessionPersistence
 
-   * Firefox - Öffnen Sie Entwicklertools > Speicher:
+   * In Firefox öffnen Sie: Entwicklertools > Speicher:
 
-      * Lokaler Speicher > (Website) > ContextHubPersistence
-      * Sitzungsspeicher > (Website) > ContextHubPersistence
-      * Cookies > (Website) > SessionPersistence
+      * Lokaler Speicher => (Website) => ContextHubPersistence
+      * Sitzungsspeicher => (Website) => ContextHubPersistence
+      * Cookies => (Website) => SessionPersistence
 
-* Verwenden Sie die ContextHub-API in der Browserkonsole:
+* Verwenden Sie die ContextHub-API in der Browser-Konsole:
 
    * ContextHub bietet die folgenden Datenpersistenzschichten:
 
@@ -216,7 +216,7 @@ console.log(storage.getTree());
 
 So löschen Sie die ContextHub-Persistenz:
 
-* So löschen Sie die Persistenz der aktuell geladenen Stores:
+* So löschen Sie die Persistenz von aktuell geladenen Speichern:
 
   ```
   // to be able to fully access persistence layer, Opt-Out must be turned off
@@ -229,7 +229,7 @@ So löschen Sie die ContextHub-Persistenz:
   ContextHub.resetAllStores();
   ```
 
-* So löschen Sie eine bestimmte Persistenzschicht: Beispiel: sessionStorage:
+* So löschen Sie eine bestimmte Persistenzschicht, z. B. sessionStorage:
 
   ```
   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
