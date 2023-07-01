@@ -2,9 +2,9 @@
 title: Assistent zur Projekterstellung
 description: Erfahren Sie mehr über den Assistenten zur Projekterstellung, mit dem Sie Ihr Projekt nach der Erstellung Ihres Produktionsprogramms schnell einrichten können.
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
-source-git-commit: 93cb0ffa87f2338518c2a23de4e0a692031e1a71
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '312'
 ht-degree: 6%
 
 ---
@@ -42,7 +42,7 @@ Sobald die Erstellung des Programms abgeschlossen ist, wird ein **Umgebung hinzu
 
 Sie haben jetzt ein AEM Projekt, das auf dem AEM Archetyp basiert, der Ihrem Git-Repository hinzugefügt wurde, um als Grundlage für die Entwicklung Ihres eigenen Projekts zu dienen. Als Nächstes können Sie Ihre Umgebungen erstellen, in denen Sie den Projektcode bereitstellen können.
 
-Weitere Informationen finden Sie im Dokument . [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md) , um zu erfahren, wie Sie Umgebungen hinzufügen oder verwalten.
+Siehe [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md) , um zu erfahren, wie Sie Umgebungen hinzufügen oder verwalten.
 
 >[!NOTE]
 >

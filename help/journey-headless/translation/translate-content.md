@@ -2,10 +2,10 @@
 title: Übersetzen von Headless-Inhalten
 description: Verwenden Sie den Übersetzungs-Connector, um Ihre Headless-Inhalte zu übersetzen.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2177'
-ht-degree: 100%
+source-wordcount: '2175'
+ht-degree: 98%
 
 ---
 
@@ -212,7 +212,7 @@ Tippen oder klicken Sie auf dieses Symbol, um das übersetzte Inhaltsfragment in
 
 ![Ein übersetztes Inhaltsfragment](assets/translated-content-fragment.png)
 
-Sie können das Inhaltsfragment nach Bedarf weiter ändern, vorausgesetzt Sie verfügen über die entsprechenden Berechtigungen, aber die Bearbeitung von Inhaltsfragmenten sprengt den Rahmen dieser Tour. Weitere Informationen zu diesem Thema finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Dokuments.
+Sie können das Inhaltsfragment nach Bedarf weiter ändern, vorausgesetzt Sie verfügen über die entsprechenden Berechtigungen, aber die Bearbeitung von Inhaltsfragmenten sprengt den Rahmen dieser Tour. Siehe [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Dokuments weitere Informationen zu diesem Thema.
 
 Ziel des Projekts ist es, alle Ressourcen, die mit einer Übersetzung verbunden sind, an einem Ort zu sammeln, um einen einfachen Zugriff und einen klaren Überblick zu erhalten. Wie Sie jedoch sehen können, indem Sie die Details eines übersetzten Elements anzeigen, fließen die Übersetzungen selbst in den Asset-Ordner der Übersetzungssprache zurück. In diesem Beispiel lautet der Ordner
 
@@ -232,7 +232,7 @@ Es ist wichtig zu verstehen, dass diese Inhalte nicht veröffentlicht werden und
 
 Wenn Ihr Übersetzungsdienstleister menschliche Übersetzung bereitstellt, bietet der Überprüfungsprozess mehr Optionen. Übersetzungen gelangen beispielsweise mit dem Status **Entwurf** zurück in das Projekt und müssen manuell überprüft und genehmigt oder abgelehnt werden.
 
-Die menschliche Übersetzung sprengt den Rahmen dieser Tour zur Lokalisierung. Weitere Informationen zu diesem Thema finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Dokuments. Abgesehen von den zusätzlichen Genehmigungsoptionen ist der Workflow für menschliche Übersetzungen mit dem für maschinelle Übersetzungen identisch, wie in dieser Tour beschrieben.
+Die menschliche Übersetzung sprengt den Rahmen dieser Tour zur Lokalisierung. Siehe [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Dokuments weitere Informationen zu diesem Thema. Abgesehen von den zusätzlichen Genehmigungsoptionen ist der Workflow für menschliche Übersetzungen mit dem für maschinelle Übersetzungen identisch, wie in dieser Tour beschrieben.
 
 ## Wie geht es weiter {#what-is-next}
 

@@ -2,10 +2,10 @@
 title: Autorenumgebung und Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2153'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -85,7 +85,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
   In der oberen Symbolleiste des **Komponenten-Browsers** haben Sie folgende Möglichkeiten:
 
    * Komponenten nach Namen filtern
-   * mittels Dropdown-Auswahl die Anzeige auf eine bestimmte Gruppe begrenzen
+   * Begrenzen Sie die Anzeige mithilfe der Dropdown-Auswahl auf eine bestimmte Gruppe.
 
   Für eine detailliertere Beschreibung der Komponente können Sie im Browser **Komponenten** auf das Informationssymbol neben der Komponente tippen/klicken (falls verfügbar). Zum Beispiel für das **Inhaltsfragment**:
 
@@ -152,7 +152,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
 >[!NOTE]
 >
->Ein Mobilgerät wird erkannt, wenn die Breite geringer als 1.024 Pixel ist, d. h. auch bei einem kleinen Desktop-Fenster.
+>Ein Mobilgerät wird erkannt, wenn die Breite kleiner als 1024 px ist. das heißt, auch auf einem kleinen Desktop-Fenster.
 
 Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den [Asset-Editor](/help/assets/manage-digital-assets.md) auch direkt über den Browser starten. Klicken Sie dazu einfach auf das Bearbeitungssymbol neben dem Asset-Namen.
 

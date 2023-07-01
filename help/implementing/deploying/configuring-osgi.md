@@ -3,10 +3,10 @@ title: Konfigurieren von OSGi für Adobe Experience Manager as a Cloud Service
 description: OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen Werten
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '3318'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -293,7 +293,7 @@ Es wird empfohlen, ein einfaches Bash-Skript zu schreiben, das die in den Konfig
 
 Die Werte für Geheimnisse werden aus Dateien gelesen. Daher muss für jeden Platzhalter, der einen geheimen Schlüssel verwendet, eine Textdatei mit dem geheimen Wert erstellt werden.
 
-Wenn beispielsweise `$[secret:server_password]` verwendet wird, muss eine Textdatei mit dem Namen **server_password** erstellt werden. Alle diese geheimen Dateien müssen im selben Ordner gespeichert werden und die Framework-Eigenschaft `org.apache.felix.configadmin.plugin.interpolation.secretsdir` muss mit diesem lokalen Ordner konfiguriert werden.
+Wenn beispielsweise `$[secret:server_password]` verwendet wird, eine Textdatei mit dem Namen **server_password** erstellt werden. Alle diese geheimen Dateien müssen im selben Ordner gespeichert werden und die Framework-Eigenschaft `org.apache.felix.configadmin.plugin.interpolation.secretsdir` muss mit diesem lokalen Ordner konfiguriert werden.
 
 >[!CAUTION]
 >

@@ -2,9 +2,9 @@
 title: Bearbeiten von Launches
 description: Nachdem Sie einen Launch für Ihre Seite (oder mehrere Seiten) erstellt haben, können Sie den Inhalt in der Launch Copy der Seiten bearbeiten.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '553'
 ht-degree: 71%
 
 ---
@@ -72,7 +72,7 @@ Sie können jederzeit Seiten zum Bereich der Quellseiten für einen Launch hinzu
 
 >[!NOTE]
 >
->Um Seiten zu einem Launch hinzuzufügen, müssen sie sich unter einem gemeinsamen Sprachstamm befinden. d. h. innerhalb einer einzelnen Site.
+>Um Seiten zu einem Launch hinzuzufügen, müssen sie sich unter einem gemeinsamen Sprachstamm befinden. das heißt, innerhalb einer einzelnen Site.
 
 ## Bearbeiten einer Launch-Konfiguration {#editing-a-launch-configuration}
 

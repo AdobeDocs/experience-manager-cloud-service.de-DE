@@ -2,16 +2,16 @@
 title: SPA-Referenzmaterial
 description: Übersicht über die Single-Page-Application-API-Referenzen und Quell-Code-Repositorys
 exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
-source-git-commit: cde8552925a6b0ceb2c30694f127233b05dcc73c
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '138'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 # SPA-Referenzmaterial {#spa-reference-materials}
 
-## SPA-JavaScript-API-Referenzen für NPM-Module {#api-references}
+## SPA JavaScript-API-Referenzen für NMP-Module {#api-references}
 
 Im Folgenden finden Sie die verfügbaren JavaScript-API-Referenzen der NPM-Module für das AEM SPA Editor SDK-Framework.
 

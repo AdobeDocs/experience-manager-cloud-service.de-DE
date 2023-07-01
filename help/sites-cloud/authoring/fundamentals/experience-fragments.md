@@ -2,10 +2,10 @@
 title: Experience Fragments
 description: Verwenden Sie Experience Fragments von Adobe Experience Manager as a Cloud Service, um Ihre Erlebnisse wiederverwendbar und flexibel zu gestalten.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 80%
+source-wordcount: '2046'
+ht-degree: 76%
 
 ---
 
@@ -37,7 +37,7 @@ Experience Fragments können in folgenden Fällen verwendet werden:
 Ohne Experience Fragments müsste der Autor dieses Fragment kopieren und einfügen. Das Erstellen und Verwalten dieser zum Kopieren/Einfügen vorgesehenen Erlebnisse sind zeitaufwendige und fehleranfällige Verfahren.
 Mit Experience Fragments ersparen Sie sich das Kopieren/Einfügen.
 * Zur Unterstützung des Nutzungsszenarios mit Headless-Content-Management-Systemen.
-Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kunden. In diesem Fall würde das Erlebnis über ein System/einen Touchpoint eines Drittanbieters für den Endnutzer bzw. die Endnutzerin bereitgestellt.
+Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kunden. Ein Drittanbietersystem/Touchpoint würde dieses Erlebnis nutzen und dann an den Endbenutzer übermitteln.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für der
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 >
->Weitere Details finden Sie in den [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
+>Weitere Informationen finden Sie unter [Grundlegendes zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für der
 >
 >* `experience-fragments-editors`
 >
->Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
+>Wenden Sie sich an Ihren Systemadministrator, wenn Probleme auftreten.
 
 ## Wann ist die Verwendung von Experience Fragments sinnvoll? {#when-should-you-use-experience-fragments}
 
@@ -65,7 +65,7 @@ Experience Fragments sollten verwendet werden:
    * Erlebnisse, die mit demselben oder ähnlichen Inhalten wiederverwendet werden.
 * Wenn Sie AEM als Plattform zur Inhaltsbereitstellung für Dritte verwenden.
    * Jede Lösung, die AEM als Content-Bereitstellungsplattform verwenden möchte.
-   * Einbetten von Inhalten in Touchpoints von Dritten.
+   * Einbetten von Inhalten in Touchpoints von Drittanbietern.
 * Wenn Sie über ein Erlebnis mit unterschiedlichen Varianten oder Ausgabedarstellungen verfügen.
    * Kanal- oder kontextspezifische Varianten.
    * Erlebnisse, die als Gruppe sinnvoll eingesetzt werden können (z. B. eine Kampagne, die abhängig vom jeweiligen Kanal unterschiedliche Erlebnisse liefert).
@@ -145,7 +145,7 @@ Um einen Ordner für Ihre Experience Fragments zu erstellen und zu konfigurieren
 >
 >Es wird nicht empfohlen, die **zulässigen Vorlagen** mit dieser Methode zu ändern, da die angegebenen Vorlagen bei der Aktualisierung überschrieben werden können.
 >
->Verwenden Sie diesen Dialog nur zu Informationszwecken.
+>Verwenden Sie dieses Dialogfeld nur zu Informationszwecken.
 
 1. Navigieren Sie zur gewünschten Konsole **Experience Fragments**.
 
@@ -422,7 +422,7 @@ Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe 
 
 >[!NOTE]
 >
-Diese ist zwar direkt über den Browser verfügbar, [aber ihr Hauptzweck ist es, anderen Programmen (beispielsweise Web-Programmen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+Auch wenn dies direkt über den Browser verfügbar ist, [Der Hauptzweck besteht darin, anderen Anwendungen (z. B. Web-Apps von Drittanbietern, benutzerdefinierte mobile Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, wobei nur die URL verwendet wird.](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Veröffentlichen von Experience Fragments {#publishing-experience-fragments}
 

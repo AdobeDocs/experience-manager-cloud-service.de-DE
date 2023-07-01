@@ -2,10 +2,10 @@
 title: Anpassen und Erweitern von Inhaltsfragmenten
 description: Ein Inhaltsfragment erweitert ein Standard-Asset.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 96%
+source-wordcount: '1811'
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ Die Inhaltsfragmentverwaltung (Content Fragment Management, CFM) ist Teil von AE
 
 * Inhaltsfragmente sind Assets.
 * Sie verwenden vorhandene Assets-Funktionen.
-* Sie sind vollständig mit Assets integriert (Admin-Konsole usw.).
+* Sie sind vollständig in Assets integriert (Admin-Konsolen usw.).
 
 Inhaltsfragmente werden als Sites-Funktion betrachtet, da:
 
@@ -107,7 +107,7 @@ AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen andere
 
 * Die Komponente lässt auch Zwischeninhalte zu:
 
-   * Die Komponente ermöglicht es Ihnen, andere Assets (Bilder usw.) zwischen den Absätzen des Fragments zu platzieren, auf das verwiesen wird.
+   * Hier können Sie mit der Komponente andere Assets (Bilder usw.) zwischen den Absätzen des referenzierten Fragments platzieren.
 
    * Bei Zwischeninhalten müssen Sie:
 

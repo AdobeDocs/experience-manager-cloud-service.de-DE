@@ -2,10 +2,10 @@
 title: Personalisierung und Content-Targeting
 description: Informationen zum Erstellen von personalisierten, zielgerichteten Inhalten mit AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 566cd449c536de4179e32c94df90b46d61e0103a
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 98%
+source-wordcount: '1055'
+ht-degree: 97%
 
 ---
 
@@ -88,7 +88,7 @@ Beim Authoring ist dies der Bearbeitungsmodus, in dem Sie die Komponenten für d
 
 Ein gruppierter Satz von Komponenten, aus denen ein Erlebnis besteht.
 
-[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) bestehen aus Inhalten und Informationen (Stilen usw.) zum Erstellen eines Erlebnisses. Sie können beim Erstellen von Seiten direkt verwendet werden. Sie können als Teilmenge einer AEM-Seite betrachtet werden. Sie ermöglichen Inhaltsautoren die Wiederverwendung von Inhalten über verschiedene Kanäle hinweg, einschließlich der Seiten von Sites und Drittanbietersystemen.
+[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) bestehen aus Inhalten und Informationen (Stilen usw.) zum Erstellen eines Erlebnisses. Sie können beim Erstellen von Seiten direkt verwendet werden. Sie können als Teilmenge einer AEM-Seite betrachtet werden. Sie ermöglichen es Autoren von Inhalten, Inhalte kanalübergreifend wiederzuverwenden, einschließlich Sites-Seiten und Drittanbietersystemen.
 
 Um ein Personalisierungsbeispiel zu geben, können die Schaltflächen „Titel“, „Bild“, „Beschreibung“ und „Aktionsaufruf“ kombiniert werden, um ein Teaser-Erlebnis zu bilden. Die Verwendung von Experience Fragments ist ein wichtiger Bestandteil der Adobe Target-Personalisierung.
 

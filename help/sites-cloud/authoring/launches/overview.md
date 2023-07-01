@@ -2,10 +2,10 @@
 title: Launches
 description: Mit Launches können Sie effizient Inhalte für eine zukünftige Version entwickeln. So sind Sie in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '903'
-ht-degree: 57%
+ht-degree: 53%
 
 ---
 
@@ -67,7 +67,7 @@ Mit Launches können Sie:
       * Wenn die Variable **Produktionsbereit** -Markierung gesetzt ist, wird der Launch automatisch auf die Produktionsseiten der angegebenen **Launch**(**Live**) **date**. Nach der Promotion werden die Produktionsseiten automatisch veröffentlicht.\
         Wenn kein Datum ausgewählt wurde, hat die Markierung keine Auswirkungen.
 * Paralleles Aktualisieren der Quell- und Launch-Seiten:
-   * Änderungen an den Quellseiten werden automatisch in der Launch-Kopie implementiert (wenn sie mit Vererbung eingerichtet wurden, z. B. in Form einer Live Copy).
+   * Änderungen an den Quellseiten werden automatisch in der Launch Copy implementiert (sofern mit Vererbung eingerichtet). das heißt, als Live Copy).
    * Änderungen an der Launch-Kopie können ohne Störung dieser automatischen Aktualisierungen oder der Quellseiten vorgenommen werden.
 
   ![Parallele Aktionen](/help/sites-cloud/authoring/assets/launches-parallel.png)
@@ -86,7 +86,7 @@ Mit Launches können Sie:
 >
 >Für das Erstellen und Bearbeiten von Launches sind Zugriffsrechte auf `/content/launches` erforderlich (wie bei der Standardgruppe `content-authors`).
 >
->Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
+>Wenden Sie sich an Ihren Systemadministrator, wenn Probleme auftreten.
 
 ## Launches in „Verweise“ (Sites-Konsole) {#launches-in-references-sites-console}
 

@@ -2,10 +2,10 @@
 title: Einführung in Sandbox-Programme
 description: Erfahren Sie, was Sandbox-Programme sind und wie sie sich von Produktionsprogrammen unterscheiden.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 82%
+source-wordcount: '475'
+ht-degree: 71%
 
 ---
 
@@ -18,7 +18,7 @@ Erfahren Sie, was Sandbox-Programme sind und wie sie sich von Produktionsprogram
 
 Sandboxes werden normalerweise für Schulungen, Ausführung von Demos, Aktivierungen oder Proof of Concepts (POCs) erstellt. Sie sind nicht dazu gedacht, Live-Traffic zu übertragen.
 
-Ein Sandbox-Programm ist einer von zwei Programmtypen, die in AEM as a Cloud Service verfügbar sind; der andere ist ein [Produktionsprogramm.](introduction-production-programs.md) Weitere Informationen zu den Programmtypen finden Sie unter [Programme und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+Ein Sandbox-Programm ist einer von zwei Programmtypen, die in AEM as a Cloud Service verfügbar sind; der andere ist ein [Produktionsprogramm.](introduction-production-programs.md) Siehe [Grundlegendes zu Programmen und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) , um mehr über Programmtypen zu erfahren.
 
 ## Automatische Erstellung {#auto-creation}
 
@@ -49,7 +49,7 @@ Benutzerdefinierte Domains und IP-Zulassungslisten sind in Sandbox-Programmen ni
 
 ### Keine erweiterten Netzwerkfunktionen {#advanced-networking}
 
-[Erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-networking.md) (z. B. Self-Service-Bereitstellung von VPNs, nicht standardmäßige Ports, dedizierte Ausgangs-IP-Adressen) sind in Sandbox-Programmen nicht verfügbar.
+[Erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-networking.md) (z. B. Self-Service-Bereitstellung von VPN, nicht standardmäßigen Ports, dedizierten Ausgangs-IP-Adressen usw.) sind in Sandbox-Programmen nicht verfügbar.
 
 ### Manuelle AEM-Updates {#updates}
 
@@ -58,9 +58,9 @@ AEM-Updates werden nicht automatisch an Sandbox-Programme gesendet, können aber
 * Ein manuelles Update ist nur möglich, wenn die Zielumgebung über eine ordnungsgemäß konfigurierte Pipeline verfügt.
 * Bei einem manuellen Update der Produktions- oder Staging-Umgebung wird jeweils automatisch auch die andere Umgebung aktualisiert. Der Satz aus Produktions- und Staging-Umgebung muss sich in derselben AEM-Version befinden.
 
-Weitere Informationen finden Sie im Dokument [AEM-Versions-Updates](/help/implementing/deploying/aem-version-updates.md).
+Siehe [AEM](/help/implementing/deploying/aem-version-updates.md) für weitere Details.
 
-Informationen zum Aktualisieren einer Umgebung finden Sie im Dokument [Aktualisieren von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).
+Siehe [Umgebung aktualisieren](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) , um zu erfahren, wie Sie eine Umgebung aktualisieren.
 
 ### Ruhezustand und Löschung {#hibernation}
 

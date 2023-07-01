@@ -2,10 +2,10 @@
 title: Bereitstellen des Codes
 description: Erfahren Sie, wie Sie Ihren Code mithilfe von Cloud Manager-Pipelines in AEM as a Cloud Service bereitstellen.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 94%
+source-wordcount: '1189'
+ht-degree: 91%
 
 ---
 
@@ -57,9 +57,9 @@ Die Phase der **Staging-Bereitstellung** umfasst diese Schritte.
 
 * **Validierung**: Dieser Schritt stellt sicher, dass die Pipeline für die Verwendung der derzeit verfügbaren Ressourcen konfiguriert ist. Beispielsweise wird getestet, ob die konfigurierte Verzweigung vorhanden ist und ob die Umgebungen verfügbar sind.
 * **Build- und Komponententests**: Dieser Schritt führt einen containerisierten Build-Prozess aus.
-   * Lesen sie das Dokument [Details zur Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md), um weitere Informationen zur Build-Umgebung zu erhalten.
+   * Siehe [Details zur Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md), um weitere Informationen zur Build-Umgebung zu erhalten.
 * **Codescan**: Dieser Schritt bewertet die Qualität Ihres Programm-Codes.
-   * Lesen sie das Dokument [code-Qualitäts-Tests](/help/implementing/cloud-manager/code-quality-testing.md), um weitere Informationen zum Testprozess zu erhalten.
+   * Weitere Informationen zum Testprozess finden Sie unter [Tests der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md).
 * **Build-Images**: Dieser Prozess ist für die Umwandlung der vom Build-Schritt erstellten Inhalts- und Dispatcher-Pakete in Docker-Images und die Kubernetes-Konfiguration verantwortlich.
 * **In der Staging-Umgebung bereitstellen**: Das Image wird in der Staging-Umgebung bereitgestellt, um die [Staging-Testphase](#stage-testing) vorzubereiten.
 
@@ -70,20 +70,20 @@ Die Phase der **Staging-Bereitstellung** umfasst diese Schritte.
 Die **Staging-Test**-Phase umfasst diese Schritte.
 
 * **Produktfunktionstests**: Die Cloud Manager-Pipeline führt Tests aus, die für die Staging-Umgebung ausgeführt werden.
-   * Weitere Einzelheiten finden Sie in dem Dokument [Produktfunktionstests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing).
+   * Siehe [Funktionstests für das Produkt](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) für weitere Details.
 
 * **Benutzerdefinierte Funktionstests**: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig erfolgreich durchgeführt.
-   * Weitere Einzelheiten finden Sie in dem Dokument [Benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing).
+   * Siehe [Benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) für weitere Details.
 
 * **Testen von benutzerdefinierten Benutzeroberflächen**: Dieser Schritt ist eine optionale Funktion, mit der automatisch für benutzerdefinierte Programme erstellte Benutzeroberflächentests ausgeführt werden.
    * Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen).
-   * Weitere Einzelheiten finden Sie in dem Dokument [Tests von benutzerdefinierten Benutzeroberflächen](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
+   * Siehe [Testen der benutzerdefinierten Benutzeroberfläche](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) für weitere Details.
 
 * **Erlebnis-Audit**: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Bei Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests, die die Prüfungen ausführen, ein Schritt zur Erlebnisprüfung eingefügt.
    * Die konfigurierten Seiten werden an den Service übermittelt und ausgewertet.
    * Die Ergebnisse sind informativer Natur und zeigen die Bewertungen sowie die Änderung zwischen den aktuellen und vorherigen Bewertungen.
    * Diese Einblicke sind nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Implementierung eingeführt wird.
-   * Weitere Einzelheiten entnehmen Sie bitte dem Dokument [Verständnis der Ergebnisse des Erlebnis-Audits](/help/implementing/cloud-manager/experience-audit-testing.md).
+   * Siehe [Verstehen der Ergebnisse von Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md) für weitere Details.
 
 ![Staging-Tests](assets/stage-testing.png)
 
@@ -121,7 +121,7 @@ Die folgenden Schritte führen zu einer Zeitüberschreitung, wenn auf Benutzer-F
 
 ## Bereitstellungsprozess {#deployment-process}
 
-Alle Cloud-Dienste werden in einem fortlaufenden Prozess bereitgestellt, um zu gewährleisten, dass keine Ausfallzeiten entstehen. Weitere Informationen finden Sie in dem Dokument [So funktionieren rollierende Bereitstellungen](/help/implementing/deploying/overview.md#how-rolling-deployments-work).
+Alle Cloud-Dienste werden in einem fortlaufenden Prozess bereitgestellt, um zu gewährleisten, dass keine Ausfallzeiten entstehen. Siehe [Funktionsweise von rollierenden Implementierungen](/help/implementing/deploying/overview.md#how-rolling-deployments-work) , um mehr zu erfahren.
 
 >[!NOTE]
 >
@@ -156,7 +156,7 @@ Um festzustellen, ob es sich bei einer Ausführung um eine erneute Ausführung h
 
 Um eine erneute Ausführung auszulösen, muss eine PUT-Anfrage an den HAL-Link &lt;(<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> im Status des Schritts der Produktionsbereitstellung gestellt werden. Wenn dieser Link vorhanden ist, kann die Ausführung von diesem Schritt an neu gestartet werden. Wenn dies nicht der Fall ist, kann die Ausführung von diesem Schritt an nicht erneut gestartet werden. In der ersten Version ist dieser Link nur im Schritt der Produktionsbereitstellung vorhanden, aber künftige Versionen werden den Start der Pipeline von anderen Schritten aus unterstützen können. Beispiel:
 
-```Javascript
+```JavaScript
  {
   "_links": {
     "https://ns.adobe.com/adobecloud/rel/pipeline/logs": {

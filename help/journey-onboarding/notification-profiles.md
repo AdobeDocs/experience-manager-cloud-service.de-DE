@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie in der Admin Console Benutzerprofile erstelle
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: f7b3dec6380266a35f1bf7d90e0195277dd37335
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 71%
+source-wordcount: '933'
+ht-degree: 98%
 
 ---
 
@@ -23,28 +23,28 @@ Von Zeit zu Zeit muss Adobe Benutzer bezüglich ihrer AEM as a Cloud Service-Umg
 * **Benachrichtigung bei Vorfällen**: Diese Benachrichtigungen werden während eines Vorfalls gesendet oder wenn Adobe ein potenzielles Verfügbarkeitsproblem bei Ihrer AEM as a Cloud Service-Umgebung erkannt hat.
 * **Proaktive Benachrichtigung**: Diese Benachrichtigungen werden gesendet, wenn ein Mitglied des Adobe-Support-Teams Anleitungen zu einer potenziellen Optimierung oder Empfehlung bereitstellen möchte, die für Ihre AEM as a Cloud Service-Umgebung von Vorteil sein kann.
 
-Damit die richtigen Benutzer diese Benachrichtigungen erhalten, müssen Sie Benutzerprofile wie in diesem Dokument beschrieben konfigurieren und zuweisen.
+Damit die richtigen Personen diese Benachrichtigungen erhalten, müssen Sie Benutzerprofile konfigurieren und zuweisen, wie in diesem Dokument beschrieben.
 
 ## Voraussetzungen {#prerequisites}
 
-Da Benutzerprofile in der Admin Console erstellt und gepflegt werden, müssen Sie vor dem Erstellen von Profilen für Benachrichtigungen Folgendes tun:
+Da Benutzergruppen in der Admin Console erstellt und gepflegt werden, müssen vor dem Erstellen von Profilen für Benachrichtigungen folgende Bedingungen erfüllt sein:
 
-* Erhalten Sie Berechtigungen zum Hinzufügen und Profilmitgliedschaften.
+* Sie verfügen über Berechtigungen zum Hinzufügen und Bearbeiten von Profilmitgliedschaften.
 * Sie verfügen über ein gültiges Adobe Admin Console-Profil.
 
 ## Erstellen neuer Cloud Manager-Produktprofile {#create-profiles}
 
-Um den Erhalt von Benachrichtigungen ordnungsgemäß einzurichten, müssen Sie zwei Benutzerprofile erstellen. Diese Schritte dürfen nur einmal ausgeführt werden.
+Um den Empfang von Benachrichtigungen ordnungsgemäß einzurichten, müssen Sie zwei Benutzerprofile erstellen. Diese Schritte dürfen nur einmal ausgeführt werden.
 
 1. Melden Sie sich bei Admin Console unter [`https://adminconsole.adobe.com` an.](https://adminconsole.adobe.com)
 
 1. Stellen Sie sicher, dass Sie sich in der richtigen Organisation befinden.
 
-1. Wählen Sie auf der Seite **Übersicht** die Option **Adobe Experience Manager as a Cloud Service** auf der Karte **Produkte und Services** aus.
+1. Wählen Sie auf der Seite **Übersicht** und auf der Karte **Produkte und Services** die Option **Adobe Experience Manager as a Cloud Service** aus.
 
-   ![Liste der Produkte und Dienstleistungen in der Admin Console](assets/products_services.png)
+   ![Liste der Produkte und Dienste in der Admin Console](assets/products_services.png)
 
-1. Gehen Sie in der Liste aller Instanzen zur Instanz **Cloud Manager**.
+1. Gehen Sie in der Liste aller Instanzen zur **Cloud Manager**-Instanz.
 
    ![Liste der Instanzen in der Admin Console](assets/cloud_manager_instance.png)
 
@@ -76,11 +76,11 @@ Ihre beiden neuen Benachrichtigungsprofile werden erstellt.
 >
 >Wenn Fehler auftreten oder die Profile nicht definiert wurden, benachrichtigt Adobe standardmäßig vorhandene Benutzer, die den Profilen **Cloud Manager-Entwickler** oder **Bereitstellungs-Manager** zugewiesen wurden.
 
-## Benutzer den Benachrichtigungsprofilen zuweisen {#add-users}
+## Zuweisen von Benutzenden zu den Benachrichtigungsprofilen {#add-users}
 
-Nachdem die Profile erstellt wurden, müssen Sie die entsprechenden Benutzer zuweisen. Dies ist beim Erstellen neuer Benutzer oder durch Aktualisieren vorhandener Benutzer möglich.
+Nachdem die Profile erstellt wurden, müssen Sie die entsprechenden Benutzenden zuweisen. Dies ist beim Erstellen neuer oder durch Aktualisierung vorhandener Benutzerinnen und Benutzer möglich.
 
-### Hinzufügen neuer Benutzer zu Profilen {#new-user}
+### Hinzufügen von neuen Benutzenden zu Profilen {#new-user}
 
 Führen Sie diese Schritte aus, um Benutzer hinzuzufügen, für die noch keine Federated IDs eingerichtet wurden.
 
@@ -94,7 +94,7 @@ Führen Sie diese Schritte aus, um Benutzer hinzuzufügen, für die noch keine F
 
    ![Benutzer](assets/product_services.png)
 
-1. Wenn die Federated ID für Ihre Team-Mitglieder noch nicht eingerichtet wurde, klicken Sie in der oberen Navigationsleiste auf die Registerkarte **Benutzer** und wählen dann **Benutzer hinzufügen** aus. Andernfalls zum Abschnitt springen [Vorhandene Benutzer zu Profilen hinzufügen.](#existing-users)
+1. Wenn die Federated ID für Ihre Team-Mitglieder noch nicht eingerichtet wurde, klicken Sie in der oberen Navigationsleiste auf die Registerkarte **Benutzer** und wählen dann **Benutzer hinzufügen** aus. Andernfalls gehen Sie zum Abschnitt [Hinzufügen von vorhandenen Benutzenden zu Profilen](#existing-users).
 
    ![Benutzer](assets/cloud_manager_add_user.png)
 
@@ -102,7 +102,7 @@ Führen Sie diese Schritte aus, um Benutzer hinzuzufügen, für die noch keine F
 
 1. Klicken Sie auf das Pluszeichen unter der Überschrift **Produkte auswählen**, um mit der Produktauswahl zu beginnen.
 
-1. Auswählen **Adobe Experience Manager as a Cloud Service** und weisen dem Benutzer eines oder beide der neuen Profile zu.
+1. Wählen Sie **Adobe Experience Manager as a Cloud Service** aus und weisen Sie der bzw. dem Benutzenden eines oder beide der neuen Profile zu.
 
    * **Benachrichtigung bei Vorfällen − Cloud Service**
    * **Proaktive Benachrichtigung − Cloud Service**
@@ -111,7 +111,7 @@ Führen Sie diese Schritte aus, um Benutzer hinzuzufügen, für die noch keine F
 
 Der eingeladene Benutzer erhält jetzt die Benachrichtigungen. Wiederholen Sie diese Schritte für die Benutzer in Ihrem Team, die Benachrichtigungen erhalten sollen.
 
-### Vorhandene Benutzer zu Profilen hinzufügen {#existing-user}
+### Hinzufügen von vorhandenen Benutzenden zu Profilen {#existing-user}
 
 Führen Sie diese Schritte aus, um Benutzer hinzuzufügen, für die bereits Federated IDs vorhanden sind.
 
@@ -125,13 +125,13 @@ Führen Sie diese Schritte aus, um Benutzer hinzuzufügen, für die bereits Fede
 
 1. Wählen Sie in der oberen Navigationsleiste die Registerkarte **Benutzer** aus.
 
-1. Wenn die Federated ID bereits für das Team-Mitglied vorhanden ist, das Sie einem Benachrichtigungsprofil hinzufügen möchten, suchen Sie diesen Benutzer in der Liste und klicken Sie darauf. Andernfalls zum Abschnitt springen [Fügen Sie neue Benutzer zu Profilen hinzu.](#add-user)
+1. Wenn die Federated ID bereits für das Team-Mitglied vorhanden ist, das Sie zu einem Benachrichtigungsprofil hinzufügen möchten, suchen Sie diese Person in der Liste und klicken Sie auf sie. Andernfalls fahren Sie mit dem Abschnitt [Hinzufügen von neuen Benutzenden zu Profilen](#add-user) fort.
 
 1. Klicken Sie im Abschnitt **Produkte** auf die Schaltfläche mit den Auslassungspunkten und wählen Sie **Bearbeiten** aus.
 
 1. Klicken Sie im Fenster **Produkte bearbeiten** auf die Schaltfläche mit dem Stift unter der Überschrift **Produkte auswählen**, um die Produktauswahl zu starten.
 
-1. Auswählen **Adobe Experience Manager as a Cloud Service** und weisen dem Benutzer eines oder beide der neuen Profile zu.
+1. Wählen Sie **Adobe Experience Manager as a Cloud Service** aus und weisen Sie der bzw. dem Benutzenden eines oder beide der neuen Profile zu.
 
    * **Benachrichtigung bei Vorfällen − Cloud Service**
    * **Proaktive Benachrichtigung − Cloud Service**

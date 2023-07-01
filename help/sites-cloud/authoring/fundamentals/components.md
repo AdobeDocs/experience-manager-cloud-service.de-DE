@@ -2,10 +2,10 @@
 title: Komponenten
 description: Komponenten sind der grundlegende Baustein für die Erstellung von Inhaltsseiten in AEM.
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 68%
+source-wordcount: '347'
+ht-degree: 64%
 
 ---
 
@@ -31,7 +31,7 @@ Sie können eine Komponente auswählen und an die gewünschte Stelle auf Ihrer S
 * [Inhalt bearbeiten](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 * [Inhalt bearbeiten – Vollbildmodus](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
 
-Weitere Informationen zum Hinzufügen von Komponenten zu einer Seite finden Sie im Artikel [Bearbeiten von Seiteninhalten](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+Weitere Informationen zum Hinzufügen von Komponenten zu einer Seite finden Sie unter [Bearbeiten des Seiteninhalts](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 ## Übersicht über alle Komponenten {#overview-of-all-components}
 

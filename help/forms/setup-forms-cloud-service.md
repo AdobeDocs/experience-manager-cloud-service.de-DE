@@ -2,10 +2,10 @@
 title: Wie richte ich eine [!DNL AEM Forms] as a Cloud Service-Umgebung ein?
 description: Erfahren Sie, wie Sie eine [!DNL AEM Forms] as a Cloud Service-Umgebung einrichten und konfigurieren
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 4d91808aa46cf34772a88a2864c1e3acf27102f7
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 95%
+source-wordcount: '613'
+ht-degree: 91%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 95%
 
 * **Formularentwickler**: Ein Formularentwickler erstellt eine benutzerdefinierte Formularlösung.  Ein Formularentwickler entwickelt in der Regel Backend-Anwendungen wie benutzerdefinierte Komponenten, AEM-Workflows, Vorbefüllungs-Services und mehr.
 
-* **AEM-Administrator**: Der AEM-Administrator unterstützt bei der Konfiguration insgesamt, z. B. beim Einrichten von Benutzern, beim Härten der Umgebung, beim Konfigurieren von Datenquellen, beim Konfigurieren von E-Mail-Nachrichten und bei Software von Drittanbietern. Der AEM-Administrator unterstützt auch die Integration von Lösungen wie Adobe Analytics, Adobe Target und Adobe Sign.
+* **AEM**: Ein AEM-Administrator unterstützt Sie bei der Gesamtkonfiguration, z. B. beim Einrichten von Benutzern, beim Härten der Umgebung, beim Konfigurieren von Datenquellen, beim Konfigurieren von E-Mails und der Software von Drittanbietern. Der AEM-Administrator unterstützt auch die Integration von Lösungen wie Adobe Analytics, Adobe Target und Adobe Sign.
 
 * **Endbenutzer**: Ein Endbenutzer interagiert mit dem veröffentlichten Formular und sendet es, unterzeichnet gesendete Formulare, verfolgt gesendete Anträge über das Web-Portal und empfängt personalisierte Mitteilungen.
 

@@ -3,10 +3,10 @@ title: Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfra
 description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einem wichtigen Teil der Headless-Bereitstellungs-Funktion in AEM.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: ht
-source-wordcount: '1783'
-ht-degree: 100%
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+workflow-type: tm+mt
+source-wordcount: '1785'
+ht-degree: 96%
 
 ---
 
@@ -74,7 +74,6 @@ Um beispielsweise auf `/content/dam/wknd/en/adventures/cycling-tuscany`zuzugreif
 >
 >* `/api/assets` **erfordert keine** Verwendung des `.model`-Selektors.
 >* `/content/path/to/page` **erfordert** die Verwendung des `.model`-Selektors.
-
 
 Die HTTP-Methode ermittelt den auszuführenden Vorgang:
 
@@ -154,14 +153,13 @@ Wenn die Assets-REST-API in einer Umgebung ohne spezifische Authentifizierungsan
 >* [Video: Entwicklung für CORS mit AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 >
 
-
 In Umgebungen mit bestimmten Authentifizierungsanforderungen wird OAuth empfohlen.
 
 ## Verfügbare Funktionen {#available-features}
 
 Inhaltsfragmente sind eine bestimmte Art von Assets. Informationen finden Sie unter [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md).
 
-Weitere Informationen zu den über die APIs verfügbaren Funktionen:
+Weitere Informationen zu den über die API verfügbaren Funktionen finden Sie unter:
 
 * Die [Assets-REST-API](/help/assets/mac-api-assets.md)
 * [Entitätstypen](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types), bei denen die für jeden unterstützten Typ spezifischen Funktionen (soweit für Inhaltsfragmente relevant) erläutert werden.
@@ -177,7 +175,7 @@ Die Antwort enthält Paging-Informationen im Bereich `properties` der SIREN-Ausg
 
 >[!NOTE]
 >
->Paging wird normalerweise auf Container-Entitäten (d. h. Ordner oder Assets mit Ausgabedarstellungen) angewendet, da sie auf die untergeordneten Objekte des angeforderten Elements verweisen.
+>Paging wird normalerweise auf Container-Entitäten angewendet (d. h. Ordner oder Assets mit Ausgabedarstellungen), da es sich auf die untergeordneten Elemente der angeforderten Entität bezieht.
 
 #### Beispiel: Paging {#example-paging}
 
@@ -230,7 +228,7 @@ Inhaltsfragmente:
 * stellen keine Binärdaten bereit.
 * sind vollständig in der JSON-Ausgabe enthalten (innerhalb der Eigenschaft `properties`).
 
-* Gelten auch als atomisch, d. h. die Elemente und Varianten werden als Teil der Eigenschaften des Fragments anstatt als Links oder untergeordnete Entitäten bereitgestellt. Dies ermöglicht einen effiziente Zugriff auf die Payload eines Fragments.
+* Sie werden auch als atomisch betrachtet, d. h. die Elemente und Varianten werden als Teil der Eigenschaften des Fragments im Vergleich zu Links oder untergeordneten Entitäten bereitgestellt. Dies ermöglicht einen effiziente Zugriff auf die Payload eines Fragments.
 
 #### Inhaltsmodelle und Inhaltsfragmente {#content-models-and-content-fragments}
 
@@ -275,68 +273,71 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
 
 * **200** (OK)
 
-   Wird zurückgegeben, wenn:
+  Wird zurückgegeben, wenn:
 
    * ein Inhaltsfragment per `GET` angefordert wurde
    * ein Inhaltsfragment per `PUT` aktualisiert wurde
 
 * **201** (Erstellt)
 
-   Wird zurückgegeben, wenn:
+  Wird zurückgegeben, wenn:
 
    * ein Inhaltsfragment per `POST` erstellt wurde
 
 * **404** (Nicht gefunden)
 
-   Wird zurückgegeben, wenn:
+  Wird zurückgegeben, wenn:
 
    * das angeforderte Inhaltsfragment nicht vorhanden ist
 
 * **500** (Interner Server-Fehler)
 
-   >[!NOTE]
-   >
-   >Dieser Fehler wird zurückgegeben:
-   >
-   >* wenn ein Fehler, der mit keinem bestimmten Code identifiziert werden kann, aufgetreten ist
-   >* wenn als Payload „null“ angegeben ist
+  >[!NOTE]
+  >
+  >Dieser Fehler wird zurückgegeben:
+  >
+  >* wenn ein Fehler, der mit keinem bestimmten Code identifiziert werden kann, aufgetreten ist
+  >* wenn als Payload „null“ angegeben ist
 
-
-   Nachfolgend finden Sie allgemeine Szenarien, in denen dieser Fehlerstatus in Kombination mit der Fehlermeldung (monospace) zurückgegeben wird:
+  Nachfolgend finden Sie allgemeine Szenarien, in denen dieser Fehlerstatus in Kombination mit der Fehlermeldung (monospace) zurückgegeben wird:
 
    * Übergeordneter Ordner ist nicht vorhanden (wenn ein Inhaltsfragment per `POST` erstellt wurde)
    * Es wird kein Inhaltsfragmentmodell bereitgestellt (cq:model fehlt), es kann nicht gelesen werden (aufgrund eines ungültigen Pfads oder eines Berechtigungsproblems) oder es gibt kein gültiges Fragmentmodell:
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
+
    * Das Inhaltsfragment konnte nicht erstellt werden (möglicherweise ein Berechtigungsproblem):
 
       * `Could not create content fragment`
+
    * Titel oder Beschreibung konnte nicht aktualisiert werden:
 
       * `Could not set value on content fragment`
+
    * Metadaten konnten nicht festgelegt werden:
 
       * `Could not set metadata on content fragment`
+
    * Inhaltselement wurde nicht gefunden oder konnte nicht aktualisiert werden
 
       * `Could not update content element`
       * `Could not update fragment data of element`
 
-   Die detaillierten Fehlermeldungen werden im Allgemeinen im folgenden Typ zurückgegeben:
+  Die detaillierten Fehlermeldungen werden im Allgemeinen im folgenden Typ zurückgegeben:
 
-   ```xml
-   {
-     "class": "core/response",
-     "properties": {
-       "path": "/api/assets/foo/bar/qux",
-       "location": "/api/assets/foo/bar/qux.json",
-       "parentLocation": "/api/assets/foo/bar.json",
-       "status.code": 500,
-       "status.message": "...{error message}.."
-     }
-   }
-   ```
+  ```xml
+  {
+    "class": "core/response",
+    "properties": {
+      "path": "/api/assets/foo/bar/qux",
+      "location": "/api/assets/foo/bar/qux.json",
+      "parentLocation": "/api/assets/foo/bar.json",
+      "status.code": 500,
+      "status.message": "...{error message}.."
+    }
+  }
+  ```
 
 ## API-Referenz {#api-reference}
 

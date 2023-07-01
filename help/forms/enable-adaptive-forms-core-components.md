@@ -6,17 +6,17 @@ seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 6%
+source-wordcount: '1016'
+ht-degree: 11%
 
 ---
 
 
 # Aktivieren der adaptiven Forms-Kernkomponenten in der as a Cloud Service und lokalen Entwicklungsumgebung von AEM Forms {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
-Durch die Aktivierung der adaptiven Forms-Kernkomponenten in AEM Forms as a Cloud Service können Sie mit der Erstellung, Veröffentlichung und Bereitstellung von Kernkomponenten-basierten adaptiven Forms- und Headless-Forms mit Ihren AEM Forms-Cloud Service-Instanzen für mehrere Kanäle beginnen. Sie benötigen eine Umgebung mit aktivierten adaptiven Forms-Kernkomponenten, um Headless Adaptive Forms zu verwenden.
+Durch die Aktivierung der Kernkomponenten für adaptive Formulare in AEM Forms as a Cloud Service können Sie mit der Erstellung, Veröffentlichung und Bereitstellung von auf Kernkomponenten basierenden adaptiven Formularen und Headless-Formularen beginnen, und zwar für mehrere Kanäle mithilfe der Instanzen von AEM Forms as a Cloud Service. Sie benötigen eine Umgebung mit aktivierten adaptiven Forms-Kernkomponenten, um Headless Adaptive Forms zu verwenden.
 
 ## Überlegungen
 
@@ -193,8 +193,7 @@ Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um die ad
    >
    >  Suchen Sie nach `${appId}`in der `[AEM Repository Folder]/all/pom.xml` -Datei, suchen Sie die `-packages/application/install` Begriff. Der Text vor dem `-packages/application/install` ist `${appId}`. Der folgende Code beispielsweise `myheadlessform` is `${appId}`.
    >
-   >   
-   ```
+   >   ```
    >             <embedded>
    >                     <groupId>com.myheadlessform</groupId>
    >                     <artifactId>myheadlessform.ui.apps<artifactId>
@@ -331,7 +330,7 @@ Wenn die adaptiven Forms-Kernkomponenten für Ihre Umgebung aktiviert sind, werd
 * [Erstellen von Kernkomponenten-basierten adaptiven Forms](/help/forms/creating-adaptive-form-core-components.md).
 * [Erstellen von Kernkomponenten-basierten Vorlagen für adaptive Formulare](/help/forms/template-editor.md).
 * [Benutzerdefinierte Designs für auf Kernkomponenten basierende adaptive Formularvorlagen erstellen](/help/forms/using-themes-in-core-components.md).
-* [Bereitstellung von JSON-Darstellungen der Kernkomponente für adaptive Formulare in Kanälen wie Mobilgeräten, Web, nativen Apps und Diensten, für die die Headless-Darstellung eines Formulars erforderlich ist](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html).
+* [Bereitstellung von JSON-Darstellungen der Kernkomponente für adaptive Formulare in Kanälen wie Mobilgeräten, Web, nativen Apps und Diensten, für die die Headless-Darstellung eines Formulars erforderlich ist](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de).
 
 ### Sind adaptive Forms-Kernkomponenten für meine Umgebung aktiviert? {#enable-components}
 

@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die leistungsstarken Live Copy-Synchronisie
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2335'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -196,7 +196,7 @@ Beachten Sie, dass die untergeordneten Seiten der Blueprint-Seite die Konfigurat
 1. Wählen Sie über die **Sites-Konsole** die Stammseite der Blueprint aus.
 1. Wählen Sie in der Symbolleiste **Eigenschaften** aus.
 1. Öffnen Sie die Registerkarte **Blueprint**.
-1. Wählen Sie mit dem Dropdown-Selektor mindestens eine **Rollout-Konfigurationen** aus.
+1. Wählen Sie eine oder mehrere **Rollout-Konfigurationen** über die Dropdown-Auswahl.
 1. Übernehmen Sie die Aktualisierungen mit **Speichern**.
 
 ### Festlegen der standardmäßigen Rollout-Konfiguration {#setting-the-system-default-rollout-configuration}

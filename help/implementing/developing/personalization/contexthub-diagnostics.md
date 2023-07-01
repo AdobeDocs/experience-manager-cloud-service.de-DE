@@ -2,10 +2,10 @@
 title: ContextHub-Diagnosen
 description: ContextHub bietet eine Diagnoseseite, auf der Sie einen Überblick über das ContextHub-Framework erhalten.
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 61%
+source-wordcount: '438'
+ht-degree: 53%
 
 ---
 
@@ -52,8 +52,8 @@ Der Abschnitt „Clientlibs“ listet alle [Ordner der Client-Bibliothek](/help/
 Der Abschnitt „URLs“ enthält Links zu ContextHub-Features:
 
 * **Konfigurationseditor:** Öffnet die [ContextHub-Konfigurationsseite](configuring-contexthub.md), wo Sie Stores, Benutzeroberflächenmodi und Benutzeroberflächenmodule konfigurieren können.
-* **Konfigurieren von ContextHub-Modulen:** Öffnet die `/etc/cloudsettings/default/contexthub.config.kernel.js`-Datei, die die JavaScript-Objektdarstellung der ContextHub-Store-Konfigurationen enthält.
-* **Konfigurieren von ContextHub-Benutzeroberfläche:** Öffnet die `/etc/cloudsettings/default/contexthub.config.ui.js`-Datei, die die JavaScript-Objektdarstellung der ContextHub-Benutzeroberflächenmoduskonfigurationen enthält.
+* **Konfiguration von ContextHub-Modulen:** Öffnet die `/etc/cloudsettings/default/contexthub.config.kernel.js` -Datei, die die JavaScript-Objektdarstellung der ContextHub-Store-Konfigurationen enthält.
+* **Konfiguration der ContextHub-Benutzeroberfläche:** Öffnet die `/etc/cloudsettings/default/contexthub.config.ui.js` -Datei, die die JavaScript-Objektdarstellung der ContextHub-Benutzeroberflächenmoduskonfigurationen enthält.
 * **kernel.js:** Öffnet die `/etc/cloudsettings/default/contexthub.kernel.js`-Datei, die den Quell-Code der Client-Bibliotheken enthält, die das ContextHub-Framework, die Segment-Engine und die Store-Typen implementieren.
 * **ui.js:** Öffnet die `/etc/cloudsettings/default/contexthub.ui.js`-Datei, die den Quell-Code der Client-Bibliotheken enthält, die die ContextHub-Benutzeroberfläche und Benutzeroberflächenmodultypen implementieren.
 * **style.css:** Öffnet die `/etc/cloudsettings/default/contexthub.styles.css`-Datei, die die CSS-Stile für die ContextHub-Benutzeroberfläche und Benutzeroberflächenmodule enthält.

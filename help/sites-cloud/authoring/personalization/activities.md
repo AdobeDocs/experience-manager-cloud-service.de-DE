@@ -2,10 +2,10 @@
 title: Verwalten von Aktivitäten
 description: Mithilfe der Aktivitätskonsole können Sie die Marketing-Aktivitäten Ihrer Marken erstellen, organisieren und verwalten
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 56a7f214a4a1a3a58c56f1e06e3a98532054ffee
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2019'
-ht-degree: 100%
+source-wordcount: '2020'
+ht-degree: 99%
 
 ---
 
@@ -29,7 +29,7 @@ Aktivitäten werden mit einem Titel angezeigt, der beschreibt, welche Art von Ak
 
 * XT – Experience Targeting mit Adobe Target
 * A/B – A/B-Tests mit Adobe Target
-* AEM – Adobe Experience Manager-Targeting (d. h. ContextHub-gesteuert)
+* AEM - Adobe Experience Manager-Targeting (d. h. von ContextHub gesteuert)
 
 ![Aktivitätstypen](/help/sites-cloud/authoring/assets/activities-types.png)
 

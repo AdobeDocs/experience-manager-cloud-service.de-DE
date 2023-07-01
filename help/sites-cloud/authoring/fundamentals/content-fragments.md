@@ -2,10 +2,10 @@
 title: Inhaltsfragmente
 description: Inhaltsfragmente in Adobe Experience Manager as a Cloud Service ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 92%
+source-wordcount: '1223'
+ht-degree: 86%
 
 ---
 
@@ -25,7 +25,7 @@ In Verbindung mit dem aktualisierten JSON Exporter können strukturierte Inhalts
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 >
->Weitere Details finden Sie in den [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
+>Weitere Informationen finden Sie unter [Grundlegendes zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
 
 >[!CAUTION]
 >
@@ -115,7 +115,7 @@ Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols 
 
 Wenn ein Inhaltsfragment zur Seite hinzugefügt wird, wird der Platzhalter **Komponenten hierher ziehen** zwischen allen HTML-Absätzen des Fragments (und oberhalb/unterhalb) eingefügt.
 
-Auf diese Weise können Sie zusätzliche Inhalte [zwischen (d. h. als Zwischeninhalt)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) den Fragmentinhalt (an einem der verfügbaren Punkte) hinzufügen, ohne das Stammfragment ändern zu müssen.
+Auf diese Weise können Sie zusätzliche Inhalte hinzufügen [dazwischen (d. h. Zwischeninhalt)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) den Fragmentinhalt (an einem der verfügbaren Punkte), ohne das Stammfragment ändern zu müssen.
 
 Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 
@@ -137,7 +137,7 @@ Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 
 >[!CAUTION]
 >
->Wenn Sie Zwischeninhalte zu einem Inhaltsfragment auf Ihrer Seite hinzugefügt haben, kann das Ändern der Struktur des zugrunde liegenden Inhaltsfragments (im Fragment-Editor) zu fehlerhaften/unerwarteten Ergebnissen führen.
+>Nachdem Sie Übergangsinhalte zu einem Inhaltsfragment auf Ihrer Seite hinzugefügt haben, kann das Ändern der Struktur des zugrunde liegenden Inhaltsfragments (d. h. im Inhaltsfragmente-Editor) zu fehlerhaften/unerwarteten Ergebnissen führen.
 >
 >Wenn dies eintritt, wird der Zwischeninhalt unverändert beibehalten:
 >

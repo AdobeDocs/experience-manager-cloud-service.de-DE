@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Rollout-Konflikte in Multi Site Manager verwa
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 88%
+source-wordcount: '923'
+ht-degree: 85%
 
 ---
 
@@ -77,7 +77,7 @@ AEM bietet:
 Der standardmäßige Konflikt-Handler ist `ResourceNameRolloutConflictHandler`.
 
 * Mit diesem Handler hat die Blueprint-Seite Vorrang.
-* Das Service-Ranking für diesen Handler wurde als niedrig festgelegt (d. h. unterhalb des Standardwerts für die Eigenschaft `service.ranking`), da davon ausgegangen wird, dass benutzerdefinierte Handler ein höheres Ranking benötigen. Das Ranking ist jedoch nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
+* Die Service-Rangfolge für diesen Handler ist niedrig eingestellt, d. h. unter dem Standardwert für die `service.ranking` -Eigenschaft, da die Annahme ist, dass benutzerdefinierte Handler einen höheren Rang benötigen. Das Ranking ist jedoch nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
 
 Dieser Konflikt-Handler hat Vorrang vor dem Blueprint. Die Live Copy-Seite `/b` wird beispielsweise innerhalb des Live Copy-Zweiges nach `/b_msm_moved` verschoben.
 

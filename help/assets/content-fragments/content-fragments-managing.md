@@ -2,10 +2,10 @@
 title: Verwalten von Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM-Inhaltsfragmente verwalten können, die die Grundlage für Ihren Headless-Content bilden.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 94%
+source-wordcount: '1755'
+ht-degree: 88%
 
 ---
 
@@ -129,7 +129,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
 >[!CAUTION]
 >
->Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator bzw. Ihre Systemadministratorin, falls Probleme auftreten.
+>Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, wenn Probleme auftreten.
 
 1. Navigieren Sie in der **Assets**-Konsole zum Speicherort des gewünschten Inhaltsfragments.
 1. Öffnen Sie das Fragment zur Bearbeitung. Befolgen Sie dazu einen der folgenden Schritte:
@@ -217,7 +217,7 @@ Der Editor bietet mehrere Optionen:
 
   >[!CAUTION]
   >
-  >Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator bzw. Ihre Systemadministratorin, falls Probleme auftreten.
+  >Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, wenn Probleme auftreten.
 
   >[!NOTE]
   >
@@ -225,13 +225,13 @@ Der Editor bietet mehrere Optionen:
 
   >[!CAUTION]
   >
-  >Mit der Aktion werden nicht nur einfach Ihre Änderungen gespeichert, sondern auch alle Verweise aktualisiert und sichergestellt, dass der Dispatcher nach Bedarf geleert wird. Es kann einige Zeit dauern, bis diese Änderungen verarbeitet werden. Aus diesem Grund kann die Leistung eines umfassenden/komplexen/stark belasteten Systems beeinträchtigt werden.
+  >Mit der Aktion werden nicht nur einfach Ihre Änderungen gespeichert, sondern auch alle Verweise aktualisiert und sichergestellt, dass der Dispatcher nach Bedarf geleert wird. Es kann einige Zeit dauern, bis diese Änderungen verarbeitet werden. Aufgrund dieser Zeit kann sich die Leistung auf ein großes/komplexes/stark belastetes System auswirken.
   >
-  >Beachten Sie dies, wenn Sie die Option **Speichern und schließen** auswählen und den Fragment-Editor danach schnell erneut aufrufen, um weitere Änderungen vorzunehmen und zu speichern.
+  >Beachten Sie diesen Vorgang bei Verwendung von **Speichern und schließen** und dann schnell wieder in den Fragmenteditor wechseln, um weitere Änderungen vorzunehmen und zu speichern.
 
 * **Schließen**
 
-  Damit wird der Editor beendet, ohne die neuesten Änderungen zu speichern (also die Änderungen seit dem letzten **Speichern**).
+  Beendet den Editor, ohne die neuesten Änderungen zu speichern (d. h. die seit der letzten Änderung vorgenommen wurden) **Speichern**).
 
 Beim Bearbeiten Ihres Inhaltsfragments erstellt AEM automatisch Versionen, damit ältere Inhalte werden können, falls Sie Ihre Änderungen verwerfen möchten (verwenden Sie dazu die Option **Schließen** ohne zu Speichern):
 
@@ -262,7 +262,7 @@ Sobald Sie den primären Inhalt erstellt haben, können Sie [Varianten](/help/as
 
 ## Verknüpfen von Inhalt mit Ihrem Fragment {#associating-content-with-your-fragment}
 
-Sie können auch Inhalte mit einem Fragment [verknüpfen](/help/assets/content-fragments/content-fragments-assoc-content.md). So entsteht eine Verbindung, mit der Assets (d. h. Bilder) für ein Fragment verwendet werden können (falls gewünscht), wenn sie zu einer Inhaltsseite hinzugefügt werden.
+Sie können auch Inhalte mit einem Fragment [verknüpfen](/help/assets/content-fragments/content-fragments-assoc-content.md). Dadurch wird eine Verbindung bereitgestellt, sodass Assets (d. h. Bilder) (optional) mit dem Fragment verwendet werden können, wenn es zu einer Inhaltsseite hinzugefügt wird.
 
 ## Anzeigen und Bearbeiten von Metadaten (Eigenschaften) des Fragments {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 

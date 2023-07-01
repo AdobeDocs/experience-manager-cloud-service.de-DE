@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '4176'
 ht-degree: 94%
@@ -221,6 +221,7 @@ Beim Hinzufügen von Hotspots können Sie sie als Popup-Schnellansichtsanzeige, 
 Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
+>
 Im interaktiven Bild werden die Tools zur Freigabe in Social Media nicht unterstützt, wenn Sie den Viewer in ein Experience Fragment einbetten. Verwenden oder erstellen Sie stattdessen Viewer-Vorgaben, die keine Tools zur Freigabe in Social Media haben. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
 
 Die Optionen „Rückgängig“ und „Wiederholen“ in der Nähe der oberen rechten Ecke der Seite werden während der aktuellen Erstellungs-/Bearbeitungssitzung unterstützt.
@@ -230,11 +231,15 @@ Wenn Sie die Erstellung des interaktiven Bildes abgeschlossen haben, können Sie
 Siehe [(Optional) Anzeigen einer Vorschau für interaktive Bilder](#optional-previewing-interactive-images).
 
 >[!NOTE]
+>
 Wenn Sie einem Bild in einem interaktiven Bild oder einem Karussell-Banner Hotspots hinzufügen, werden die Hotspot-Informationen am selben Metadaten-Speicherort gespeichert. Dieser Speicherort ist relativ zur Position des Bildes, unabhängig davon, ob es sich um ein interaktives Bild oder ein Karussell-Banner handelt. Das bedeutet, dass Sie dasselbe Bild zusammen mit den definierten Hotspot-Daten in beiden Viewern einfach wiederverwenden können.
+>
 Beachten Sie jedoch, dass Karussellbanner Imagemaps auf Bildern unterstützen, die auch Hotspots enthalten können. Bei interaktiven Bildern wird dies dagegen nicht unterstützt. Dies sollten Sie beachten, wenn Sie ein interaktives Bild oder ein Karussell-Banner mit demselben Bild erstellen möchten. Stattdessen können Sie separate Kopien desselben Bildes verwenden, um interaktive Bilder und Karussellbilder zu erstellen.
+>
 Siehe auch [Karussellbanner](/help/assets/dynamic-media/carousel-banners.md).
 
 >[!NOTE]
+>
 Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden, werden die Hotspots entfernt.
 
 **So fügen Sie einem Bildbanner Hotspots hinzu:**
@@ -267,6 +272,7 @@ Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden,
          * Siehe [Identifizieren von Hotspot-Variablen](#optional-identifying-hotspot-variables); Sie müssen diese Variablen definieren.
          * Geben Sie anschließend manuell den SKU-Wert ein. Geben Sie im Textfeld „SKU-Wert“ die SKU des Produkts ein. Der Variablenteil der Schnellansichtsvorlage wird automatisch mit dem eingegebenen SKU-Wert ausgefüllt. Dadurch wird sichergestellt, dass das System den getippten Hotspot mit der Schnellansicht einer bestimmten SKU verknüpfen kann.
          * (Optional) Wenn andere Variablen in der Schnellansicht vorhanden sind, die verwendet werden, um ein Produkt weitergehend zu identifizieren, tippen Sie auf **[!UICONTROL Generische Variable hinzufügen]**. Geben Sie im Textfeld eine zusätzliche Variable an. Beispielsweise ist `category=Mens` eine hinzugefügte Variable.
+
    * Wählen Sie **[!UICONTROL Hyperlink]** aus.
 
       * Wenn Sie Experience Manager Sites-Kunde sind, tippen Sie auf das Site-Auswahlsymbol (Ordner). Navigieren Sie zu einer URL. Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
@@ -283,10 +289,9 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-cloud/
 
       * Legen Sie die Breite und Höhe des Experience Fragment fest, so wie es im Banner angezeigt werden soll.
 
-         >[!NOTE]
-         Im interaktiven Bild werden die Tools zur Freigabe in Social Media nicht unterstützt, wenn Sie den Viewer in ein Experience Fragment einbetten. Verwenden oder erstellen Sie stattdessen Viewer-Vorgaben, die keine Tools zur Freigabe in Social Media haben. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
-
-
+        >[!NOTE]
+        >
+        Im interaktiven Bild werden die Tools zur Freigabe in Social Media nicht unterstützt, wenn Sie den Viewer in ein Experience Fragment einbetten. Verwenden oder erstellen Sie stattdessen Viewer-Vorgaben, die keine Tools zur Freigabe in Social Media haben. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihre Änderungen zu speichern, und kehren Sie zur Seite „Durchsuchen“ zurück.
 1. Veröffentlichen Sie das interaktive Bild. Beim Veröffentlichen wird das Banner über die Cloud bereitgestellt. Zusätzlich wird Einbettungs-Code generiert, der die Integration in eine Website eines Drittanbieters ermöglicht.
@@ -298,6 +303,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-cloud/
    Siehe [Integrieren eines interaktiven Bildes auf Ihrer Website](#integrating-an-interactive-image-with-your-website).
 
    >[!NOTE]
+   >
    Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zuzuschneiden, werden die Hotspots entfernt.
 
 ### (Optional) Anzeigen einer Vorschau für interaktive Bilder {#optional-previewing-interactive-images}
@@ -345,6 +351,7 @@ Wenn Sie die [Demo-Website als Beispiel](https://experienceleague.adobe.com/tool
 Die Integration ist sehr einfach. Sie entfernen das `IMG`-Tag und ersetzen es durch den kopierten Einbettungs-Code aus Experience Manager Assets. Sie können sehen, dass das Ergebnis [das interaktive Bild mit Shopping-Funktion auf der Seite mit drei Kreis-Hotspots anzeigt](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=de).
 
 >[!NOTE]
+>
 Zurzeit dienen die Hotspots auf dem interaktiven Bild mit Shopping-Funktion auf der Demo-Website nur zu Anzeigezwecken. Sie sind zurzeit noch nicht in den vorhandenen Schnellansichten integriert.
 
 Um einen „Zuschnitt“ auf ein interaktives Bild mit Shopping-Funktion für eine responsive Umgebung anzuwenden, fügen Sie im Pfad das Konfigurationsattribut `ZoomView.iscommand` für das interaktive Bild ein. In diesem Fall wird die Komponente `ZoomView` aufgerufen und `iscommand` ist der von Ihnen verwendete Image-Serving-Befehl „Zuschnitt“.
@@ -358,6 +365,7 @@ Jetzt können Sie das interaktive Bild in eine Schnellansicht auf Ihrer Website 
 ## Integrieren eines interaktiven Bildes in einer Schnellansicht {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
+>
 Diese Aufgabe ist nur relevant, wenn Sie ausschließlich Experience Manager Assets verwenden.
 
 Der letzte Schritt in diesem Prozess ist die Integration des interaktiven Bildes in eine vorhandene Schnellansichtsimplementierung auf Ihrer Website. Es gibt keine Lösung für die Integration, die für alle Fälle funktioniert. Jede Schnellansichtsimplementierung ist einzigartig und erfordert eine individuelle Vorgehensweise. Daher ist es hilfreich, die Unterstützung durch eine IT-Person am Frontend einzubeziehen.
@@ -399,7 +407,7 @@ Der von Experience Manager Assets zurückgegebene Einbettungs-Code verfügt übe
                     var sku=inData.sku; //SKU for product ID
                     //To pass other parameter from the hotspot, you will need to add custom parameter during the hotspot setup as parameterName=value
                     loadQuickView(sku); //Replace this call with your Quickview plugin
-                    //Please refer to your Quickviewer plugin for the Quickview call
+                    //See your Quickviewer plugin for the Quickview call
                  },
              });
         */

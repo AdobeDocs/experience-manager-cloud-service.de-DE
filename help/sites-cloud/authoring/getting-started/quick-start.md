@@ -2,10 +2,10 @@
 title: Schnellstartanleitung zum Verfassen von Seiten (Authoring)
 description: Ein kurzer, allgemeiner Leitfaden mit den ersten Schritten zur Seitenbearbeitung
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 66%
+source-wordcount: '1569'
+ht-degree: 63%
 
 ---
 
@@ -57,7 +57,7 @@ Bevor Sie mit der Schnellstartanleitung beginnen, hier eine kleine Sammlung von 
 
 Es gibt verschiedene Möglichkeiten, eine Seite zu finden: Sie können navigieren und/oder suchen:
 
-1. Öffnen Sie die **Sites-Konsole** mithilfe der Option **Sites** im Feld [Globale Navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation). Diese wird als Dropdown-Liste angezeigt, wenn Sie links oben auf den Link „Adobe Experience Manager“ klicken.
+1. Öffnen Sie die **Sites** -Konsole (mithilfe der **Sites** in der [Globale Navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - wird (Dropdown) ausgelöst, wenn Sie den Adobe Experience Manager-Link (oben links) auswählen.
 
 1. Navigieren Sie durch Tippen/Klicken auf die entsprechende Seite in der Baumstruktur nach unten. Die Darstellung der Seitenressourcen ist von der verwendeten Ansicht abhängig: [Karte, Liste oder Spalte](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
 
@@ -270,7 +270,7 @@ Diese Aktionen können alle durch Folgendes ausgelöst werden:
 [Sperren einer Seite](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page): Verhindert, dass andere Autoren daran arbeiten, während Sie dies tun. Das Symbol bzw. die Schaltfläche „Sperren“ (und „Entsperren“) ist verfügbar:
 
 * Symbolleiste, wenn die [Seite ausgewählt wurde](#selecting-your-page-for-further-action)
-* Dropdown-Menü [Seiteninformationen](#editing-the-page-properties) beim Bearbeiten einer Seite
+* Die [Dropdown-Menü &quot;Seiteninformationen&quot;](#editing-the-page-properties) beim Bearbeiten einer Seite.
 * Seitensymbolleiste beim Bearbeiten einer Seite (wenn die Seite gesperrt ist)
 
 Beispielsweise sieht das Schloss-Symbol folgendermaßen aus:

@@ -2,10 +2,10 @@
 title: Mustertypen von ContextHub-UI-Modulen
 description: ContextHub bietet mehrere Muster-UI-Module, die Sie in Ihren Lösungen verwenden können
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1126'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -35,7 +35,7 @@ Der Quell-Code befindet sich unter `/libs/granite/contexthub/code/ui/container/j
 
 ### Konfiguration {#configuration}
 
-Konfigurieren Sie das UI-Modul contexthub.base mithilfe eines JavaScript-Objekts im JSON-Format. Fügen Sie eine der folgenden Eigenschaften zum Konfigurieren der UI-Modulfunktionen hinzu:
+Konfigurieren Sie das Benutzeroberflächenmodul contexthub.base mithilfe eines JavaScript-Objekts im JSON-Format. Fügen Sie eine der folgenden Eigenschaften zum Konfigurieren der UI-Modulfunktionen hinzu:
 
 * **image:** eine URL zu einem Bild, das als Symbol angezeigt werden soll.
 * **icon:** der Name einer [Coral-Benutzeroberflächensymbolklasse](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html). Wenn Sie einen Wert für das Symbol und die Bildeigenschaften angeben, wird das Bild verwendet.

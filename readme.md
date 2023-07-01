@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3409c713ea1ca033a2835d0070d0da4fec58fd18
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 73%
+source-wordcount: '96'
+ht-degree: 72%
 
 ---
 # Dokumentation zu Adobe Experience Manager as a Cloud Service

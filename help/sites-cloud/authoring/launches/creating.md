@@ -2,9 +2,9 @@
 title: Erstellen von Launches
 description: Sie können einen Launch erstellen, um die Aktualisierung einer neuen Version bestehender Webseiten für die zukünftige Aktivierung zu aktivieren.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1043'
 ht-degree: 72%
 
 ---
@@ -62,7 +62,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 
    >[!NOTE]
    >
-   >Um Seiten und/oder Verzweigungen zu einem Launch hinzuzufügen, müssen sie sich auf einer Site befinden. d. h. unterhalb eines gemeinsamen Stammverzeichnisses der obersten Ebene.
+   >Um Seiten und/oder Verzweigungen zu einem Launch hinzuzufügen, müssen sie sich auf einer Site befinden. das heißt, unterhalb eines gemeinsamen Stammverzeichnisses der obersten Ebene.
    >
    >Wenn eine Site Sprachstämme unterhalb der obersten Ebene enthält, müssen die Seiten und Verzweigungen für einen Launch unter einem gemeinsamen Sprachstamm liegen.
 

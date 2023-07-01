@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: ec3939e34028d1dbadbd2b855796ca63e049b814
-workflow-type: ht
-source-wordcount: '3218'
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+workflow-type: tm+mt
+source-wordcount: '3217'
 ht-degree: 100%
 
 ---
@@ -85,13 +85,13 @@ Zum Lokalisieren von Dynamic Media-Komponenten stehen Ihnen zwei Möglichkeiten 
 
 * Öffnen Sie auf einer Web-Seite unter „Sites“ die Option **[!UICONTROL Eigenschaften]** und wählen Sie die Registerkarte **[!UICONTROL Erweitert]** aus. Wählen Sie die gewünschte Sprache für die Lokalisierung aus.
 
-   ![chlimage_1-172](assets/chlimage_1-538.png)
+  ![chlimage_1-172](assets/chlimage_1-538.png)
 
 * Wählen Sie über den Site-Selector die gewünschte Seite oder Seitengruppe aus. Klicken Sie auf **[!UICONTROL Eigenschaften]** und wählen Sie die Registerkarte **[!UICONTROL Erweitert]** aus. Wählen Sie die gewünschte Sprache für die Lokalisierung aus.
 
-   >[!NOTE]
-   >
-   >Nicht allen Sprachen, die im Menü **[!UICONTROL Sprache]** verfügbar sind, sind Token zugewiesen.
+  >[!NOTE]
+  >
+  >Nicht allen Sprachen, die im Menü **[!UICONTROL Sprache]** verfügbar sind, sind Token zugewiesen.
 
 ## Verfügbare Dynamic Media-Komponenten {#dynamic-media-components}
 
@@ -145,44 +145,44 @@ Sie können die folgenden Einstellungen für Dynamic Media bearbeiten, indem Sie
 
 * **[!UICONTROL Viewer-Vorgabe]**: Wählen Sie in der Dropdown-Liste eine vorhandene Viewer-Vorgabe aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Viewer-Vorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
-   Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien die einzig verfügbare Option. Die angezeigten Viewer-Vorgaben sind ebenfalls intelligent – es werden nur relevante Viewer-Vorgaben angezeigt.
+  Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien die einzig verfügbare Option. Die angezeigten Viewer-Vorgaben sind ebenfalls intelligent – es werden nur relevante Viewer-Vorgaben angezeigt.
 
 * **[!UICONTROL Viewer-Modifikatoren]**: Viewer-Modifikatoren haben die Form „name=value pair with a &amp; delimiter“ (Name=Wertepaar mit einem &amp;-Trennzeichen ) und ermöglichen eine Viewer-Bearbeitung, wie im Viewers-Referenzhandbuch beschrieben. Ein Beispiel für einen Viewer-Modifikator ist `posterimage=img.jpg&caption=text.vtt,1`. Damit wird ein anderes Bild für die Videominiatur festgelegt und eine Untertiteldatei mit dem Video verknüpft.
 
 * **[!UICONTROL Bildvorgabe]**: Wählen Sie in der Dropdown-Liste eine vorhandene Bildvorgabe aus. Wenn die gewünschte Bildvorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Bildvorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
-   Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+  Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
 * **[!UICONTROL Bildmodifikatoren]**: Sie können Bildeffekte anwenden, indem Sie weitere Bildbefehle bereitstellen. Diese Befehle werden unter „Bildvorgaben“ und in der Referenz zum Image-Serving-Befehl beschrieben.
 
-   Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+  Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
 * **[!UICONTROL Breakpoints]**: Wenn Sie dieses Asset auf einer responsiven Website verwenden, müssen Sie die Bild-Breakpoints hinzufügen. Bild-Breakpoints müssen durch Kommas (,) voneinander getrennt werden. Diese Option kann verwendet werden, wenn in einer Bildvorgabe keine Höhe oder Breite festgelegt ist.
 
-   Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+  Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
-   Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
+  Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
 * **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]** – Aktivieren Sie das Kontrollkästchen (Standard), um die Optimierung des DPR (Device Pixel Ratio, Gerätepixelverhältnis) zu ermöglichen.
 
-   Die Option **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]** wird nur angezeigt, wenn Folgendes zutrifft:
+  Die Option **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]** wird nur angezeigt, wenn Folgendes zutrifft:
    * Unter „Vorgabetyp“ ist **[!UICONTROL Bildvorgabe]** ausgewählt und **[!UICONTROL RESS_IP]** wird aus der Dropdownliste **[!UICONTROL Bildvorgabe]** ausgewählt.
 
-   ![DPR-Einstellung für Bildvorgabe](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+  ![DPR-Einstellung für Bildvorgabe](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
 
-   Siehe auch [Informationen zur Optimierung des DPR](/help/assets/dynamic-media/imaging-faq.md#dpr).
+  Siehe auch [Informationen zur Optimierung des DPR](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Alle [!DNL Experience Manager] Dynamic Media-DPR-Werte für die intelligente Bildbearbeitung werden ignoriert.
+  Alle [!DNL Experience Manager] Dynamic Media-DPR-Werte für die intelligente Bildbearbeitung werden ignoriert.
 
 * **[!UICONTROL Titel]**: Ändern Sie den Bildtitel.
 
 * **[!UICONTROL Alternativer Text]**: Geben Sie dem Bild einen Titel, für die Benutzer, deren Grafiken deaktiviert sind.
 
-   Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+  Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
 * **[!UICONTROL URL, Öffnen in]**: Sie können ein Asset so einrichten, dass ein Link geöffnet wird. Legen Sie die URL fest. Geben Sie in „Öffnen in“ an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
 
-   Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+  Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
 * **[!UICONTROL Breite]**: Geben Sie einen Wert in Pixeln an, wenn das Bild eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, ist das Asset adaptiv.
 
@@ -204,12 +204,12 @@ Sie können die folgenden Dynamic Media-Einstellungen bearbeiten, indem Sie in 
 
 * **[!UICONTROL Viewer-Modifikatoren]**: Viewer-Modifikatoren haben die Form eines `name=value`-Paars mit einem `&`-Trennzeichen. Sie können die Viewer ändern, wie im Viewers-Referenzhandbuch von Adobe beschrieben. Ein Beispiel für einen Viewer-Modifikator ist `posterimage=img.jpg&caption=text.vtt,1`.
 
-   Viewer-Modifikatoren ermöglichen z. B. Folgendes:
+  Viewer-Modifikatoren ermöglichen z. B. Folgendes:
 
    * Verknüpfen einer Untertiteldatei mit einem Video: [Untertitel](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=de)
    * Verknüpfen einer Navigationsdatei mit einem Video: [Navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=de)
 
-      Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
+     Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
 * **[!UICONTROL Titel]**: Ändern Sie den Videotitel.
 
@@ -235,33 +235,33 @@ Sie können die folgende Dynamic Media-Einstellung bearbeiten, indem Sie in der
 
 * **[!UICONTROL Bildmodifikatoren]**: Sie können Bildeffekte anwenden, indem Sie weitere Bildbefehle bereitstellen. Diese Befehle werden unter „Bildvorgaben“ und in der Referenz zum Image-Serving-Befehl beschrieben.
 
-   Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+  Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
-   Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
+  Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
 * **[!UICONTROL Seitenverhältnisübereinstimmung aktivieren]**: Wählen Sie diese Option aus, damit Dynamic Media eine intelligente zugeschnittene (Smart-Crop) Ausgabedarstellung mit einem Seitenverhältnis auswählt, das dem Seitenverhältnis des Originalbilds am besten entspricht.
 
 * **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]** – Aktivieren Sie das Kontrollkästchen (Standard), um die Optimierung des DPR (Device Pixel Ratio, Gerätepixelverhältnis) zu ermöglichen.
 
-   Die Option **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]** wird nur angezeigt, wenn Folgendes zutrifft:
+  Die Option **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]** wird nur angezeigt, wenn Folgendes zutrifft:
 
    * Unter „Vorgabetyp“ ist die Option **[!UICONTROL Smartes Zuschneiden]** ausgewählt.
 
-   ![DPR-Einstellung für smartes Zuschneiden](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
+  ![DPR-Einstellung für smartes Zuschneiden](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
-   Siehe auch [Informationen zur Optimierung des DPR](/help/assets/dynamic-media/imaging-faq.md#dpr).
+  Siehe auch [Informationen zur Optimierung des DPR](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Alle [!DNL Experience Manager] Dynamic Media-DPR-Werte für die intelligente Bildbearbeitung werden ignoriert.
+  Alle [!DNL Experience Manager] Dynamic Media-DPR-Werte für die intelligente Bildbearbeitung werden ignoriert.
 
 * **[!UICONTROL Titel]**: Ändern Sie den Titel des Smart-Crop-Bildes.
 
 * **[!UICONTROL Alternativer Text]**: Geben Sie dem Smart-Crop-Bild einen Titel, für die Benutzer, deren Grafiken deaktiviert sind.
 
-   Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+  Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
 * **[!UICONTROL URL, Öffnen in]**: Sie können ein Asset so einrichten, dass ein Link geöffnet wird. Legen Sie die URL fest. Geben Sie in „Öffnen in“ an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
 
-   Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+  Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
 * **[!UICONTROL Breite]**: Geben Sie einen Wert in Pixeln an, wenn das Bild eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, ist das Asset adaptiv.
 
@@ -296,7 +296,7 @@ Sie können die folgenden **[!UICONTROL allgemeinen]** Einstellungen bearbeiten,
 
 * **[!UICONTROL Höhe]**: Geben Sie einen Wert in Pixeln an, wenn das Bild eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, ist das Asset adaptiv.
 
-   Sie können die folgenden Einstellungen von **[!UICONTROL Zu Warenkorb hinzufügen]** bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
+  Sie können die folgenden Einstellungen von **[!UICONTROL Zu Warenkorb hinzufügen]** bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
 * **[!UICONTROL Produkt-Asset anzeigen]**: Dieser Wert ist standardmäßig ausgewählt. Das Produkt-Asset zeigt ein Bild des Produkts an, wie im Commerce-Modul definiert. Deaktivieren Sie das Kontrollkästchen, um das Produkt-Asset nicht anzuzeigen.
 
@@ -362,4 +362,3 @@ Siehe [Bereitstellung von Inhalt über HTTP/2](/help/assets/dynamic-media/http2f
 >* [Verwenden benutzerdefinierter Videominiaturen mit Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html?lang=de)
 >* [Grundlegendes zum Farb-Management mit Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html?lang=de#dynamic-media)
 >* [Verwenden des Scharfzeichnens von Bildern mit Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use.html?lang=de)
-

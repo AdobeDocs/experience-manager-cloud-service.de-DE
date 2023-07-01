@@ -2,10 +2,10 @@
 title: Arbeiten mit Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenbearbeitung und die Headless-Bereitstellung eignen.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2132'
-ht-degree: 96%
+source-wordcount: '2134'
+ht-degree: 94%
 
 ---
 
@@ -84,7 +84,7 @@ Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 >
->Weitere Details finden Sie in den [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
+>Weitere Informationen finden Sie unter [Grundlegendes zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
 
 ## Inhaltsfragmente und Content Services {#content-fragments-and-content-services}
 
@@ -142,7 +142,7 @@ Inhaltsfragmente sind eine Inhaltsstruktur mit folgenden Eigenschaften:
 * Kann Bilder [enthalten oder mit Bildern verbunden sein](#fragments-with-visual-assets).
 * Bei Referenzierung auf einer Seite können [Übergangsinhalte](#in-between-content-when-page-authoring-with-content-fragments) verwendet werden.
 
-* Sie sind unabhängig vom Bereitstellungsmechanismus (d. h. Seite, Kanal).
+* Sie sind unabhängig vom Bereitstellungsmechanismus (d. h. Seite, Kanal).
 
 ### Fragmente mit visuellen Assets {#fragments-with-visual-assets}
 
@@ -289,7 +289,7 @@ Um Ihre Inhaltsfragmente zum Erstellen von Seiten zu verwenden, benötigen Sie a
 
    * Hilft bei der Bereitstellung des Fragments im HTML- und/oder JSON-Format.
    * Erforderlich zum [Referenzieren des Fragments auf einer Seite](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-   * Zuständig für das Layout und die Bereitstellung eines Fragments, d. h. Kanäle.
+   * Zuständig für das Layout und die Bereitstellung eines Fragments; also Kanäle.
    * Fragmente benötigen eine oder mehrere dedizierte Komponenten zur Definition des Layouts sowie zur Bereitstellung einiger oder aller Elemente/Varianten und zugehörigen Inhalte.
    * Durch Ziehen eines Fragments auf eine Seite während der Bearbeitung wird die erforderliche Komponente automatisch zugewiesen.
 

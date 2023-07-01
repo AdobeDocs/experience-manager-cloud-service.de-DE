@@ -3,10 +3,10 @@ title: Persistente GraphQL-Abfragen
 description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Client-Programme verbessert wird.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1681'
-ht-degree: 88%
+ht-degree: 83%
 
 ---
 
@@ -196,7 +196,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 Dabei ist `PERSISTENT_PATH` ein gekürzter Pfad zum Speicherort der persistenten Abfrage.
 
-1. Zum Beispiel ist `wknd` der Konfigurationsname und `plain-article-query` der Name der persistenten Abfrage. So führen Sie die Abfrage aus:
+1. Beispiel: `wknd` ist der Konfigurationsname und `plain-article-query` ist der Name der persistenten Abfrage. So führen Sie die Abfrage aus:
 
    ```shell
    $ curl -X GET \
@@ -228,7 +228,7 @@ Die Struktur sieht wie folgt aus:
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-Die folgende Abfrage enthält beispielsweise die Variable `activity`, um eine Liste nach einem Aktivitätswert zu filtern:
+Die folgende Abfrage enthält beispielsweise eine Variable `activity` , um eine Liste nach einem Aktivitätswert zu filtern:
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -398,7 +398,7 @@ Das Feld `Respond with application/graphql-response+json` (`responseContentTypeG
 
 ## Codieren der Abfrage-URL zur Verwendung in einer Mobile App {#encoding-query-url}
 
-Damit die Abfrage-URL von einer Anwendung verwendet werden kann, müssen alle Sonderzeichen, die beim Erstellen von Abfragevariablen verwendet werden – d. h. Semikolons (`;`), Gleichheitszeichen (`=`), Schrägstriche (`/`) – konvertiert werden, sodass die entsprechende UTF-8-Codierung verwendet wird.
+Für die Verwendung durch eine Anwendung werden alle Sonderzeichen verwendet, die beim Erstellen von Abfragevariablen verwendet werden (d. h. Semikolons (`;`), Gleichheitszeichen (`=`), Schrägstriche `/`) muss konvertiert werden, um die entsprechende UTF-8-Kodierung zu verwenden.
 
 Beispiel:
 

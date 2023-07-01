@@ -1,17 +1,17 @@
 ---
 title: Referenz zur ContextHub-JavaScript-API
-description: Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die ContextHub-Komponente zur Seite hinzugefügt wurde.
+description: Die ContextHub-JavaScript-API steht Ihren Skripten zur Verfügung, wenn die ContextHub-Komponente zur Seite hinzugefügt wurde
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '4620'
-ht-degree: 83%
+ht-degree: 81%
 
 ---
 
-# Referenz zur ContextHub-JavaScript-API  {#contexthub-javascript-api-reference}
+# Referenz zur ContextHub-JavaScript-API {#contexthub-javascript-api-reference}
 
-Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die [ContextHub-Komponente zur Seite hinzugefügt wurde](adding-contexthub.md).
+Die ContextHub-JavaScript-API steht Ihren Skripten zur Verfügung, wenn die [Die ContextHub-Komponente wurde der Seite hinzugefügt](adding-contexthub.md).
 
 ## ContextHub-Konstanten {#contexthub-constants}
 
@@ -89,7 +89,7 @@ var geoloc = allStores.geolocation
 
 #### getStore(name) {#getstore-name}
 
-Ruft einen Store als ein JavaScript-Objekt ab.
+Ruft einen Store als JavaScript-Objekt ab.
 
 ##### Parameter {#parameters-}
 
@@ -441,7 +441,7 @@ initialisiert das `ContextHub.Store.JSONPStore`-Objekt.
 * **`config`:** (Object) Ein Objekt, das die Service-Eigenschaft enthält. Das JSONPStore-Objekt verwendet die Eigenschaften des `service`objekts, um die URL des JSONP-Service zu erstellen:
    * `eventDeferring`: 32.
    * `eventing`: Das ContextHub.Utils.Eventing-Objekt für diesen Store. Der Standardwert ist das `ContextHub.eventing`-Objekt.
-   * `persistence`: Das ContextHub.Utils.Persistence-Objekt für diesen Store. Standardmäßig wird die Store-Persistenz verwendet (JavaScript-Objekt).
+   * `persistence`: Das ContextHub.Utils.Persistence-Objekt für diesen Store. Standardmäßig wird die Speicherpersistenz verwendet (JavaScript-Objekt).
    * `service`: (Object)
       * `host`: (String) Server-Name oder IP-Adresse.
       * `jsonp`: (Boolesch) Ein Wert „true“ zeigt an, dass der Service ein JSONP-Service ist, andernfalls ist er „false“. Wenn „true“, wird das `{callback: "ContextHub.Callbacks.*Object.name*}`-Objekt `service.params` hinzugefügt.
@@ -489,7 +489,7 @@ Löst den angegebenen Parameter auf.
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-`ContextHub.Store.SessionStore` erweitert [ContextHub.Store.Core](#contexthub-store-core) so, dass es alle Funktionen dieser Klasse übernimmt. Die Daten in diesem Store werden mithilfe der speicherinternen Persistenz beibehalten (JavaScript-Objekt).
+`ContextHub.Store.SessionStore` erweitert [ContextHub.Store.Core](#contexthub-store-core) so, dass es alle Funktionen dieser Klasse übernimmt. Die Daten in diesem Store werden mithilfe der speicherinternen Persistenz (JavaScript-Objekt) beibehalten.
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -795,7 +795,7 @@ Object {
 
 #### stringify(data) {#stringify-data}
 
-Serialisiert JavaScript-Werte und -Objekte in String-Werte des JSON-Formats.
+Serialisiert JavaScript-Werte und -Objekte in Zeichenfolgenwerte des JSON-Formats.
 
 ##### Parameter {#parameters-stringify}
 

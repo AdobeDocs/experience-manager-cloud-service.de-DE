@@ -2,10 +2,10 @@
 title: Verwenden von Sling-Adaptern
 description: Mit Sling wird ein Adaptermuster zum bequemen Übersetzen von Objekten bereitgestellt, die zum Implementieren der Adaptable-Schnittstelle verwendet werden
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2214'
-ht-degree: 29%
+ht-degree: 28%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 29%
 
 Mit [Sling](https://sling.apache.org) wird ein [Adaptermuster](https://sling.apache.org/documentation/the-sling-engine/adapters.html) zum bequemen Übersetzen von Objekten bereitgestellt, die zum Implementieren der [Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29)-Schnittstelle verwendet werden. Diese Schnittstelle bietet eine generische [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) -Methode, die das Objekt in den Klassentyp übersetzt, der als Argument übergeben wird.
 
-Sie können beispielsweise einfach wie folgt vorgehen, um ein Ressourcenobjekt in das entsprechende Knotenobjekt zu übersetzen:
+Um beispielsweise ein Ressourcenobjekt in das entsprechende Knotenobjekt zu übersetzen, können Sie einfach Folgendes tun:
 
 ```java
 Node node = resource.adaptTo(Node.class);

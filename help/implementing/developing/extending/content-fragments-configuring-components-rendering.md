@@ -2,10 +2,10 @@
 title: Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren
 description: Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 100%
+source-wordcount: '524'
+ht-degree: 88%
 
 ---
 
@@ -36,7 +36,7 @@ Es wird empfohlen, die Kernkomponenten zu verwenden.
 
 Die Services, die die Registrierung einer Komponente erfordern:
 
-* bestimmen Abhängigkeiten während der Veröffentlichung korrekt (d. h. stellen sicher, dass Fragmente und Modelle automatisch mit einer Seite veröffentlicht werden können, wenn sie sich seit der letzten Veröffentlichung geändert haben),
+* Bestimmen von Abhängigkeiten während der Veröffentlichung korrekt (d. h. stellen Sie sicher, dass Fragmente und Modelle automatisch mit einer Seite veröffentlicht werden können, wenn sie sich seit der letzten Veröffentlichung geändert haben).
 * unterstützen Inhaltsfragmente in der Volltextsuche,
 * verwalten/bearbeiten *Zwischeninhalte*,
 * verwalten/bearbeiten *gemischte Medien-Assets*,
@@ -93,7 +93,7 @@ Die OSGi-Konfiguration lautet:
  </tbody>
 </table>
 
-Für einige Funktionen muss Ihre Komponente vordefinierte Konventionen einhalten. In der folgenden Tabelle sind die Eigenschaften aufgeführt, die für jeden Absatz (d. h. `jcr:paragraph` für jede Komponenteninstanz) durch Ihre Komponente definiert werden müssen, damit die Services sie korrekt erkennen und verarbeiten können.
+Für einige Funktionen muss Ihre Komponente vordefinierte Konventionen einhalten. In der folgenden Tabelle sind die Eigenschaften aufgeführt, die von Ihrer Komponente für jeden Absatz definiert werden müssen (d. h. `jcr:paragraph` für jede Komponenteninstanz), damit die Dienste sie korrekt erkennen und verarbeiten können.
 
 <table>
  <thead>

@@ -2,10 +2,10 @@
 title: Erstellen und Verwenden von Designs zur Gestaltung eines adaptiven Formulars
 description: Mithilfe von Designs können Sie ein adaptives Formular formatieren und ihm eine visuelle Identität verleihen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
-workflow-type: ht
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+workflow-type: tm+mt
 source-wordcount: '5499'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -50,7 +50,7 @@ In einer Cloud Service-Instanz erstellte Designs:
 
 * Stellen Sie vor dem Hochladen eines mit [!DNL Experience Manager Forms] 6.5 oder einer früheren Version erstellten Designs auf eine Cloud Service-Instanz sicher, dass der Speicherort der Client-Bibliothek auf `etc/clientlibs/fd/themes` festgelegt ist. Wenn sich die Client-Bibliothek nicht im Ordner `etc` befindet, ändern Sie den Speicherort manuell zu `etc/clientlibs/fd/themes`.  Sie können die Änderung an Ihrer Instanz von [!DNL Experience Manager Forms] 6.5 oder einer früheren Version vornehmen. Nachdem der Speicherort der Client-Bibliothek festgelegt wurde, kann ein Administrator Designs in die Cloud Service-Instanz hochladen oder mit dem Content Transfer Tool die Designs von Instanzen der Version 6.5 oder einer Vorgängerversion zur Cloud Service-Instanz migrieren.
 
-   Ändern Sie außerdem den Namen der Kategorie. Wenn der Name nicht geändert wird, kann ein Fehler `theme with same category name exists` auftreten. Die Änderung des Kategorienamens hat keine Auswirkungen auf die adaptiven Formulare, in denen das Design verwendet wird.
+  Ändern Sie außerdem den Namen der Kategorie. Wenn der Name nicht geändert wird, kann ein Fehler `theme with same category name exists` auftreten. Die Änderung des Kategorienamens hat keine Auswirkungen auf die adaptiven Formulare, in denen das Design verwendet wird.
 
 ### Download eines Designs {#downloading-a-theme}
 
@@ -205,25 +205,26 @@ Der Design-Editor ist in zwei Bereiche unterteilt:
 
    * **Selektor:** Zeigt die für die Formatierung ausgewählte Komponente und die Eigenschaften, die Sie gestalten können, an. Der Selektor stellt alle Komponenten eines bestimmten Typs dar. Wenn Sie eine Textfeld-Komponente in einem Design für die Formatierung auswählen, erben alle Textfelder im Formular <!-- or interactive communication --> diesen Stil. Mit Selektoren können Sie eine generische Komponente oder eine bestimmte Komponente für die Gestaltung auswählen. Beispielsweise ist eine Feldkomponente eine allgemeine Komponente, und ein Textfeld ist eine spezielle Komponente.
 
-      **Formatierung allgemeiner Komponenten:**
+     **Formatierung allgemeiner Komponenten:**
 Ein Feld kann ein numerisches Feld wie Alter oder ein Textfeld wie Adresse sein.
 Wenn Sie einen Stil für ein Feld definieren, werden alle Felder wie Alter, Name, Adresse entsprechend formatiert.
 
-      **Formatierung einer spezifischen Komponente**: Eine spezifische Komponente wirkt sich auf die Objekte der betreffenden Kategorie aus. Wenn Sie im Design für die Komponente „Numerisches Feld“ einen Stil definieren, wird der Stil nur auf das numerische Feldobjekt angewendet.
+     **Formatierung einer spezifischen Komponente**: Eine spezifische Komponente wirkt sich auf die Objekte der betreffenden Kategorie aus. Wenn Sie im Design für die Komponente „Numerisches Feld“ einen Stil definieren, wird der Stil nur auf das numerische Feldobjekt angewendet.
 
-      Beispiel: Ein Textfeld wie Adresse ist länger, und ein numerisches Feld wie Alter ist kürzer. Sie können ein numerisches Feld auswählen, seine Länge verkürzen und es auf Ihr Formular anwenden. Die Breite aller numerischen Felder wird in Ihrem Formular verringert.
+     Beispiel: Ein Textfeld wie Adresse ist länger, und ein numerisches Feld wie Alter ist kürzer. Sie können ein numerisches Feld auswählen, seine Länge verkürzen und es auf Ihr Formular anwenden. Die Breite aller numerischen Felder wird in Ihrem Formular verringert.
 
-      Wenn Sie alle Feldkomponenten mit einer bestimmten Hintergrundfarbe anpassen, übernehmen alle Felder in Ihrem Formular, wie Alter, Name und Adresse, die Hintergrundfarbe. Wenn Sie ein numerisches Feld wie Alter auswählen und seine Breite verringern, wird die Breite aller numerischer Felder, wie Alter, Anzahl der Personen in einer Familie, verringert. Die Breite von Textfeldern wird nicht geändert.
+     Wenn Sie alle Feldkomponenten mit einer bestimmten Hintergrundfarbe anpassen, übernehmen alle Felder in Ihrem Formular, wie Alter, Name und Adresse, die Hintergrundfarbe. Wenn Sie ein numerisches Feld wie Alter auswählen und seine Breite verringern, wird die Breite aller numerischer Felder, wie Alter, Anzahl der Personen in einer Familie, verringert. Die Breite von Textfeldern wird nicht geändert.
 
    * **Status:** Hier können Sie die Stile eines Objekts mit einem bestimmten Status anpassen. Beispielsweise können Sie das Aussehen eines Objekts mit dem Status „Standard“, „Fokus“, „Deaktiviert“, „Mausberührung“ oder „Fehler“ festlegen.
-   * **Eigenschaftenkategorien:** Formatierungseigenschaften sind in verschiedene Kategorien unterteilt. Beispiel: Abmessung und Position, Text, Hintergrund, Rahmen und Effekte. Unter jeder Kategorie geben Sie Informationen zur Formatierung an. Unter „Hintergrund“ können Sie z. B. „Hintergrundfarbe“ sowie „Bild und Verlauf“ angeben.
+   * **Eigenschaftenkategorien:** Formatierungseigenschaften sind in verschiedene Kategorien unterteilt. Dimension und Position, Text, Hintergrund, Rahmen und Effekte. Unter jeder Kategorie geben Sie Informationen zur Formatierung an. Unter „Hintergrund“ können Sie z. B. „Hintergrundfarbe“ sowie „Bild und Verlauf“ angeben.
 
    * **Erweitert:** Hier können Sie einem Objekt benutzerdefiniertes CSS hinzufügen, womit im Falle einer Überschneidung die durch visuelle Steuerelemente definierten Eigenschaften überschrieben werden.
 
    * **CSS anzeigen**: Ermöglicht das Anzeigen von CSS für die ausgewählte Komponente.
-   Zusätzlich befindet sich unten in der Seitenleiste ein Pfeil. Wenn Sie auf den Pfeil klicken, erhalten Sie zwei zusätzliche Optionen: **Erfolg simulieren** und **Fehler simulieren.** Diese Optionen werden zusammen mit den oben beschriebenen Optionen [nachfolgend](themes.md#using-rail) detailliert erläutert.
 
-[ ![Design-Editor](assets/themes.png)](assets/themes-1.png) **A.** Seitenleiste **B.** Arbeitsfläche
+  Zusätzlich befindet sich unten in der Seitenleiste ein Pfeil. Wenn Sie auf den Pfeil klicken, erhalten Sie zwei zusätzliche Optionen: **Erfolg simulieren** und **Fehler simulieren.** Diese Optionen werden zusammen mit den oben beschriebenen Optionen [nachfolgend](themes.md#using-rail) detailliert erläutert.
+
+[![Design-Editor](assets/themes.png)](assets/themes-1.png) **A.** Seitenleiste **B.** Arbeitsfläche
 
 ### Formatieren von Komponenten {#styling-components}
 
@@ -622,7 +623,7 @@ Zum Anzeigen der generierten CSS-Datei stehen die folgenden Optionen zur Verfüg
 
 * **Vermeiden von Assets aus einem anderen Design**
 
-   Bei der Bearbeitung von Designs können Sie Assets (etwa Bilder) aus anderen Designs durchsuchen und hinzufügen. Angenommen, Sie bearbeiten den Hintergrund einer Seite. Wenn Sie beispielsweise **[!UICONTROL Seite]** ![Bearbeiten-Schaltfläche](assets/edit-button.png) > **[!UICONTROL Hintergrund]** > **[!UICONTROL Hinzufügen]** > **[!UICONTROL Bild]** auswählen, wird ein Dialogfeld angezeigt, in dem Sie Bilder aus anderen Designs suchen und hinzufügen können.
+  Bei der Bearbeitung von Designs können Sie Assets (etwa Bilder) aus anderen Designs durchsuchen und hinzufügen. Angenommen, Sie bearbeiten den Hintergrund einer Seite. Wenn Sie beispielsweise **[!UICONTROL Seite]** ![Bearbeiten-Schaltfläche](assets/edit-button.png) > **[!UICONTROL Hintergrund]** > **[!UICONTROL Hinzufügen]** > **[!UICONTROL Bild]** auswählen, wird ein Dialogfeld angezeigt, in dem Sie Bilder aus anderen Designs suchen und hinzufügen können.
 
 * Es können Probleme im aktuellen Design auftreten, wenn ein Asset aus einem anderen Design hinzugefügt und dieses andere Design später verschoben oder gelöscht wird. Wir empfehlen daher, keine Assets aus anderen Designs zu suchen und hinzuzufügen.
 
@@ -656,9 +657,9 @@ Zum Anzeigen der generierten CSS-Datei stehen die folgenden Optionen zur Verfüg
 
 * **Ändern der Layout-Breite des Container-Bereichs**
 
-   Es wird nicht empfohlen, die Layout-Breite des Container-Bereichs zu ändern. Wenn Sie die Breite eines Container-Bereichs angeben, wird er statisch und passt sich nicht mehr an unterschiedliche Displays an.
+  Es wird nicht empfohlen, die Layout-Breite des Container-Bereichs zu ändern. Wenn Sie die Breite eines Container-Bereichs angeben, wird er statisch und passt sich nicht mehr an unterschiedliche Displays an.
 
 * **Verwendung des Formular- oder Design-Editors für die Arbeit mit Kopf- und Fußzeile**
 
-   Verwenden Sie den Design-Editor, wenn Sie Kopf- und Fußzeilen mit Formatierungsoptionen wie Schriftschnitt, Hintergrund und Transparenz formatieren möchten.
+  Verwenden Sie den Design-Editor, wenn Sie Kopf- und Fußzeilen mit Formatierungsoptionen wie Schriftschnitt, Hintergrund und Transparenz formatieren möchten.
 Wenn Sie Informationen wie ein Logo, einen Firmennamen in der Kopfzeile und Copyright-Informationen in der Fußzeile angeben möchten, verwenden Sie dazu die im Formular-Editor verfügbaren Optionen.

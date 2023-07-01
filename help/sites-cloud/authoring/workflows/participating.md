@@ -2,10 +2,10 @@
 title: Teilnehmen an Workflows
 description: Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1542'
-ht-degree: 58%
+source-wordcount: '1537'
+ht-degree: 54%
 
 ---
 
@@ -75,7 +75,7 @@ Führen Sie die folgenden Schritte aus, um das Arbeitselement abzuschließen:
 1. Öffnen Sie den **[AEM-Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Wählen Sie das Workflow-Element aus, für das Sie eine Aktion ausführen möchten (tippen/klicken Sie auf die Miniatur).
 1. Wählen Sie in der Symbolleiste die Option **Fertig stellen** aus.
-1. Das Dialogfeld **Arbeits-Element fertig stellen** wird geöffnet. Wählen Sie im Dropdown-Selektor die Option **Nächster Schritt** aus und fügen Sie bei Bedarf einen **Kommentar** hinzu.
+1. Das Dialogfeld **Arbeits-Element fertig stellen** wird geöffnet. Wählen Sie die **Nächster Schritt** aus der Dropdown-Auswahl aus und fügen Sie eine **Kommentar** falls erforderlich.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
 #### Durchführen eines Teilnehmerschritts: Seiten-Editor {#completing-a-participant-step-page-editor}
@@ -84,7 +84,7 @@ Führen Sie die folgenden Schritte aus, um das Arbeitselement abzuschließen:
 
 1. Öffnen Sie die [Seite zur Bearbeitung](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Wählen Sie in der Statusleiste oben im Bild **Fertig stellen** aus.
-1. Das Dialogfeld **Arbeits-Element fertig stellen** wird geöffnet. Wählen Sie im Dropdown-Selektor die Option **Nächster Schritt** aus und fügen Sie bei Bedarf einen **Kommentar** hinzu.
+1. Das Dialogfeld **Arbeits-Element fertig stellen** wird geöffnet. Wählen Sie die **Nächster Schritt** aus der Dropdown-Auswahl aus und fügen Sie eine **Kommentar** falls erforderlich.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
 #### Durchführen eines Teilnehmerschritts: Zeitleiste {#completing-a-participant-step-timeline}
@@ -134,7 +134,7 @@ Gehen Sie wie folgt vor, um ein Arbeitselement zu delegieren:
 1. Öffnen Sie den **[AEM-Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Wählen Sie das Workflow-Element aus, für das Sie eine Aktion ausführen möchten (tippen/klicken Sie auf die Miniatur).
 1. Wählen Sie in der Symbolleiste die Option **Delegieren** aus.
-1. Das Dialogfeld wird geöffnet. Wählen Sie im Dropdown-Selektor den **Benutzer** aus (dabei kann es sich auch um eine Gruppe handeln) und fügen Sie bei Bedarf einen **Kommentar** hinzu.
+1. Das Dialogfeld wird geöffnet. Geben Sie die **Benutzer** aus der Dropdown-Auswahl (dies kann auch eine Gruppe sein) und fügen Sie eine **Kommentar** falls erforderlich.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
 #### Delegieren eines Teilnehmerschritts: Seiten-Editor {#delegating-a-participant-step-page-editor}
@@ -143,7 +143,7 @@ Gehen Sie wie folgt vor, um ein Arbeitselement zu delegieren:
 
 1. Öffnen Sie die [Seite zur Bearbeitung](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Wählen Sie in der Statusleiste oben im Bild **Delegieren** aus.
-1. Das Dialogfeld wird geöffnet. Wählen Sie im Dropdown-Selektor den **Benutzer** aus (dabei kann es sich auch um eine Gruppe handeln) und fügen Sie bei Bedarf einen **Kommentar** hinzu.
+1. Das Dialogfeld wird geöffnet. Geben Sie die **Benutzer** aus der Dropdown-Auswahl (dies kann auch eine Gruppe sein) und fügen Sie eine **Kommentar** falls erforderlich.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
 #### Delegieren eines Teilnehmerschritts: Zeitleiste {#delegating-a-participant-step-timeline}

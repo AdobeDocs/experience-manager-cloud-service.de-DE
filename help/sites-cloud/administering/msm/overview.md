@@ -4,10 +4,10 @@ description: Im Folgenden erhalten Sie eine Einführung in das Wiederverwenden v
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2705'
-ht-degree: 88%
+source-wordcount: '2706'
+ht-degree: 87%
 
 ---
 
@@ -155,7 +155,7 @@ Als Einführung bietet die folgende Tabelle einen Überblick über die wichtigst
 | Quelle | Die als Grundlage für Live Copies verwendeten Originalseiten | Synonym für Blueprints und/oder Blueprint-Seiten |
 | Live Copy | Die Kopie (der Quelle), die wie durch die Rollout-Konfigurationen definiert von Synchronisierungsaktionen aufrechterhalten wird |  |
 | Live Copy-Konfiguration | Festlegen der Konfigurationsdetails für eine Live Copy |  |
-| Live-Beziehung | Effektive Definition der Vererbung für eine bestimmte Ressource, d. h. die Verbindung(en) zwischen der Quelle und den Live Copies | Stellt sicher, dass Änderungen an der Quelle mit der Live Copy synchronisiert werden |
+| Live-Beziehung | Effektive Definition der Vererbung für eine bestimmte Ressource, d. h. die Verbindung(en) zwischen der Quelle und Live Copies | Stellt sicher, dass Änderungen an der Quelle mit der Live Copy synchronisiert werden |
 | Blueprint | Synonym für Quelle | Kann durch eine Blueprint-Konfiguration definiert werden |
 | Blueprint-Konfiguration | Vordefinierte Konfiguration zur Angabe eines Quellpfads | Der Rollout-Befehl wird beim Verweis auf eine Blueprint-Seite in einer Blueprint-Konfiguration zur Verfügung gestellt. |
 | Kapitel | Die Abschnitte des Blueprints, die die Live Copy enthalten soll | Dies sind im Allgemeinen Unterseiten des Stamms |

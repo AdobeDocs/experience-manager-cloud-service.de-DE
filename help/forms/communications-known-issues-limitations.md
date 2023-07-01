@@ -2,9 +2,9 @@
 title: Überlegungen zu bekannten Problemen und Best Practices
 description: Best Practices, bekannte Probleme und Einschränkungen bei der Kommunikationsfunktion
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1709'
 ht-degree: 100%
 
 ---
@@ -165,7 +165,7 @@ Die folgende Tabelle gibt die XCI-Optionen an.
 
 * Bei asynchronen APIs (Batch-Verarbeitung) wird die standardmäßige Aufzeichnungsebene auf 2 gesetzt. Sie können eine benutzerdefinierte XCI-Datei verwenden, um die Aufzeichnungsebene in 1 zu ändern.
 
-* Wenn die standardmäßige XCI-Datei konfiguriert ist, enthält sie den Pfad bis zur ursprünglichen Ausgabedarstellung. Beispiel `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
+* Wenn die standardmäßige XCI-Datei konfiguriert ist, enthält sie den Pfad bis zur ursprünglichen Ausgabedarstellung. Beispiel: `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
 
 
 
