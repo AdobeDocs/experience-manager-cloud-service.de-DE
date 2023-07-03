@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: da5634dfa812268b81b2db783da772b6ecc1d7ce
+source-git-commit: 45004db44af48301f0a9cbd9f574ac34c360275e
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 16%
@@ -56,9 +56,9 @@ Die [neue Asset-Ansicht](/help/assets/assets-view-introduction.md) ist jetzt in 
 
 Mit Experience Manager Assets können Sie jetzt über die Benutzeroberfläche für Suchergebnisse mehr tun: Sie können jetzt:
 
-* Führen Sie standardmäßig eine Suche innerhalb des aktuellen Repository-Speicherorts durch, anstatt nach dem Keyword im gesamten Repository zu suchen.
+* [Suchen Sie im aktuellen Repository-Speicherort.](/help/assets/search-assets.md) , anstatt nach dem Keyword im gesamten Repository zu suchen.
 
-* Navigieren Sie zum Ordnerspeicherort für Assets, die in den Suchergebnissen angezeigt werden.
+* [Navigieren Sie zum Ordnerspeicherort](/help/assets/search-assets.md#aftersearch) für Assets, die in den Suchergebnissen angezeigt werden.
 
 **Miniaturansichten für 3D-Assets**
 

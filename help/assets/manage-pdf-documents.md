@@ -4,10 +4,10 @@ description: Verwalten von PDF-Dokumenten in  [!DNL Adobe Experience Manager]  a
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: ht
-source-wordcount: '824'
-ht-degree: 100%
+source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
+workflow-type: tm+mt
+source-wordcount: '853'
+ht-degree: 96%
 
 ---
 
@@ -22,6 +22,7 @@ Document Cloud PDF Viewer bietet AEM Assets folgende Vorteile:
 
 > Tipp
 > Wenn Sie die Vorschau eines zuvor hochgeladenen PDF-Dokuments nicht für mehrere Seiten anzeigen können, wählen Sie die PDF-Datei aus und klicken Sie auf **![Neuverarbeitung](/help/assets/assets/Reprocess.svg) Assets erneut verarbeiten**.
+>
 
 ## Unterstützung von PDF Document Cloud Viewer-Komponenten {#pdf-doc-cloud}
 
@@ -55,6 +56,7 @@ Sie können auch [Anmerkungen](#pdf-annotations) zum PDF-Dokument in einer mehrs
 
 > HINWEIS
 > Die maximale Größe eines Assets, das Sie in der Vorschau anzeigen können, beträgt 100 MB.
+>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -110,6 +112,10 @@ Im Folgenden finden Sie die Anmerkungen, die auf ein PDF-Dokument angewendet wer
         </tr>
     </table>
 
+>[!NOTE]
+>
+>Die Anmerkungen, die Sie zum PDF-Dokument hinzufügen, sind im Vorschaumodus verfügbar. Die Anmerkungen werden jedoch nicht angezeigt, wenn Sie das PDF-Dokument herunterladen oder drucken.
+
 ## Unterstützung der Vorschau mehrerer Seiten von Dokumenten in anderen Formaten {#multi-format}
 
 Zusätzlich zu den PDF-Dokumenten können Sie auch eine Vorschau mehrerer Seiten von Dokumenten in anderen Formattypen anzeigen. Die unterstützten Dokumentformattypen sind TXT, RTF, DOC, DOCX, PPT, PPTX, XLS und XLSX. Experience Manager Assets konvertiert diese Dokumentenformate automatisch in ein PDF-Format und stellt sie für die Vorschau bereit.
@@ -126,7 +132,6 @@ Für die mehrseitige Vorschau anderer unterstützter Dokumentenformate führen S
 > * Die maximale Größe eines Assets, das Sie in der Vorschau anzeigen können, beträgt 100 MB.
 > * Die maximale Größe von XLS- oder XLSX-Dateien für die Vorschau beträgt 20 MB.
 >
-
 
 **Siehe auch**
 

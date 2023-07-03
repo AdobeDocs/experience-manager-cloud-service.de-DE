@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
 workflow-type: tm+mt
-source-wordcount: '5096'
-ht-degree: 97%
+source-wordcount: '5162'
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,7 @@ Die Asset-Suche in AEM unterstützt die folgenden Anwendungsfälle. Dieser Artik
 | [Einschränkungen](#limitations) und [Tipps](#tips) | | |
 | [Illustrierte Beispiele](#samples) | | |
 
-Suchen Sie mithilfe des OmniSearch-Felds oben in der [!DNL Experience Manager]-Web-Oberfläche nach Assets. Gehen Sie in [!DNL Experience Manager] zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**, klicken Sie in der oberen Leiste auf ![Suchsymbol](assets/do-not-localize/search_icon.png), geben Sie den Suchbegriff ein und wählen Sie `Return` aus. Alternativ können Sie die Keyword-Tastenkombination `/` (Schrägstrich) verwenden, um das OmniSearch-Feld zu öffnen. `Location:Assets` ist vorausgewählt, um die Suche auf DAM-Assets zu begrenzen. [!DNL Experience Manager] liefert Vorschläge, sobald Sie mit der Eingabe eines Suchbegriffs beginnen.
+Suchen Sie mithilfe des OmniSearch-Felds oben in der [!DNL Experience Manager]-Web-Oberfläche nach Assets. Gehen Sie in [!DNL Experience Manager] zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**, klicken Sie in der oberen Leiste auf ![Suchsymbol](assets/do-not-localize/search_icon.png), geben Sie den Suchbegriff ein und wählen Sie `Return` aus. Alternativ können Sie die Keyword-Tastenkombination `/` (Schrägstrich) verwenden, um das OmniSearch-Feld zu öffnen. `Location:Assets` ist vorausgewählt, um die Suche auf DAM-Assets zu begrenzen. `Path:/content/dam` wird auch angezeigt, wenn Sie die Suche auf der Stammebene innerhalb der **[!UICONTROL Dateien]** Ordner. Wenn Sie zu einem anderen Ordner navigieren, `Path:/content/dam/<folder name>` wird im OmniSearch-Feld angezeigt, um den Suchbereich auf den aktuellen Ordner zu beschränken. [!DNL Experience Manager] bietet Vorschläge beim Eingeben eines Suchbegriffs.
 
 Verwenden Sie das Bedienfeld **[!UICONTROL Filter]**, um nach Assets, Ordnern, Tags und Metadaten zu suchen. Sie können Suchergebnisse anhand der verschiedenen Optionen (Prädikate) filtern, z. B. Dateityp, Dateigröße, Datum der letzten Änderung, Status des Assets, Einblicke und Adobe Stock-Lizenzierung. Sie können das Bedienfeld „Filter“ anpassen und Suchprädikate über [Suchfacetten](/help/assets/search-facets.md) hinzufügen oder entfernen. Der Filter [!UICONTROL Dateityp] im Bedienfeld [!UICONTROL Filter] verfügt über Kontrollkästchen für gemischte Status. Wenn Sie also nicht alle verschachtelten Prädikate (oder Formate) auswählen, werden die Kontrollkästchen der ersten Ebene teilweise markiert.
 
@@ -415,6 +415,7 @@ Sie können Folgendes mit den Assets durchführen, in denen Sie gesucht haben [!
 * einen Workflow starten
 * Zuordnen oder Aufheben der Zuordnung von Assets
 * Wenden Sie mithilfe des Bedienfelds Filter an, das nach der Durchführung der Suche automatisch angezeigt wird, um die Suchergebnisse einzugrenzen.
+* Navigieren zum Asset-Speicherort
 
 ### Sortieren von Suchergebnissen {#sort}
 
@@ -466,6 +467,10 @@ Erstellen Sie eine Version für die Assets, die in den Suchergebnissen angezeigt
 ### Zuordnen und Aufheben der Zuordnung von Assets {#relate-unrelate-assets}
 
 Ordnen Sie Assets zu, die in den Suchergebnissen angezeigt werden, und heben Sie deren Zuordnung auf. Wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Relation]** oder **[!UICONTROL Nicht zuordnen]**.
+
+### Navigieren Sie zum Speicherort des Asset-Ordners . {#navigate-asset-folder-location}
+
+Navigieren Sie zum Ordnerspeicherort für Assets, die in den Suchergebnissen angezeigt werden. Wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Speicherort der Datei anzeigen]**.
 
 ## Unerwartete Suchergebnisse und Probleme {#unexpected-results}
 
