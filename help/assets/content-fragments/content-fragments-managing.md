@@ -2,10 +2,10 @@
 title: Verwalten von Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM-Inhaltsfragmente verwalten können, die die Grundlage für Ihren Headless-Content bilden.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 88%
+source-wordcount: '1770'
+ht-degree: 87%
 
 ---
 
@@ -56,7 +56,7 @@ Die Methode zum Erstellen eines Inhaltsfragments ist folgende:
 
    Wählen Sie **Weiter** aus, wenn Sie Ihre Auswahl getroffen haben.
 
-   ![Fragmentbasis](assets/cfm-managing-01.png)
+   ![Auswählen des Inhaltsfragmentmodells](assets/cfm-managing-01.png)
 
 1. Geben Sie im Schritt **Eigenschaften** Folgendes an:
 
@@ -92,7 +92,7 @@ In der **Assets**-Konsole ist eine Reihe von Aktionen für Ihre Inhaltsfragmente
 * In der Symbolleiste: Wenn Sie Ihr Fragment ausgewählt haben, sind alle passenden Aktionen verfügbar.
 * Als [Schnellzugriffe](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions): Eine Untergruppe von Aktionen, die für die einzelnen Fragmentkarten verfügbar sind.
 
-![Aktionen](assets/cfm-managing-02.png)
+![Aktionen in der Symbolleiste](assets/cfm-managing-02.png)
 
 Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen anzuzeigen:
 
@@ -139,7 +139,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
 1. Der Fragment-Editor wird geöffnet. Nehmen Sie die gewünschten Änderungen vor:
 
-   ![Fragment-Editor](assets/cfm-managing-03.png)
+   ![Fragmenteditor](assets/cfm-managing-03.png)
 
 1. Nachdem Sie Änderungen vorgenommen haben, verwenden Sie nach Bedarf die Optionen **Speichern**, **Speichern und schließen** oder **Schließen**.
 
@@ -167,13 +167,13 @@ Navigieren Sie mit den Symbolen im seitlichen Bedienfeld durch die vier Modi:
 * [Strukturbaum](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [Vorschau](/help/assets/content-fragments/content-fragments-json-preview.md)
 
-![Modi](assets/cfm-managing-04.png)
+![Modi im Inhaltsfragment-Editor](assets/cfm-managing-04.png)
 
 ### Symbolleisten-Aktionen im Inhaltsfragment-Editor {#toolbar-actions-in-the-content-fragment-editor}
 
 Einige Funktionen in der oberen Symbolleiste stehen in mehreren Modi zur Verfügung:
 
-![Modi](assets/cfm-managing-top-toolbar.png)
+![In verschiedenen Modi verfügbare Symbolleistenaktionen](assets/cfm-managing-top-toolbar.png)
 
 * Eine Meldung wird angezeigt, wenn das Fragment bereits auf einer Inhaltsseite referenziert wurde. Sie können die Nachricht **schließen**
 
@@ -331,7 +331,7 @@ Sie werden nebeneinander angezeigt, wobei:
 >
 Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleichen.
 
-![Vergleich](assets/cfm-managing-06.png)
+![Varianten vergleichen](assets/cfm-managing-06.png)
 
 ## Wiederherstellen einer früheren Version  {#reverting-to-a-version}
 
