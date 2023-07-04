@@ -1,17 +1,17 @@
 ---
 title: Migrieren von einer AEM 6.5 Forms zu [!DNL AEM Forms] as a Cloud Service Umwelt?
 description: Migrieren von  [!DNL AEM Forms]  (On-Premise- und AMS-Umgebungen) in eine  [!DNL AEM Forms]  as a Cloud Service-Umgebung.
-keywords: 6.5 Formulare zu Cloud Service, 6.5 Formulare zu cs, 6.5 Formulare zu CS migrieren, 6.5 Formulare zu Cloud Service migrieren, 6.5 Formulare zu CS aktualisieren, 6.5 Formulare zu CS verschieben, AEM 6.5 auf CS aktualisieren
+keywords: 6.5 Forms zu Cloud Service, 6.5 Forms zu cs, 6.5 Forms zu CS migrieren, 6.5 Forms zu Cloud Service migrieren, 6.5 Forms zu CS aktualisieren, 6.5 Forms zu CS verschieben, AEM 6.5 auf CS aktualisieren, AEM Forms 6.5 auf Cloud Service aktualisieren, AEM von der Migration zu Cloud Service
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: f6b8ef52ad551be70e665a14ce00c197d1470e84
+source-git-commit: 850b1cccb03ca05ea53b646c55fcb0d0c100494c
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 73%
+source-wordcount: '1590'
+ht-degree: 70%
 
 ---
 
@@ -120,7 +120,7 @@ Führen Sie die folgenden Schritte aus, um Ihre [!DNL AEM Forms]-Assets mit Clou
 
    Der Cloud Service unterstützt keine Regeleditorskripte. Das Tool für die **[!UICONTROL Migration von Code-Editor-Skripten]** konvertiert alle Regelskripte in Ihrer Umgebung in wiederverwendbare Funktionen und wendet die wiederverwendbaren Funktionen auf den entsprechenden Speicherort im Visual Editor an. Diese wiederverwendbaren Funktionen werden in Form von Client-Bibliotheken gespeichert und helfen Ihnen dabei, die vorhandenen Funktionen zu erhalten. Das Tool wendet die generierten wiederverwendbaren Funktionen automatisch auf entsprechende adaptive Formulare an.
 
-   Verwenden Sie den [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de#contentmanagement), um die wiederverwendbaren Funktionen (Client-Bibliotheken) in ein Paket zu exportieren.
+   AEM Formularmigration zu Cloud Service verwenden Sie die [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de#contentmanagement) , um die wiederverwendbaren Funktionen (Client-Bibliotheken) in ein Paket zu exportieren.
 
 1. [Stellen Sie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=de#deploying-content-packages-via-cloud-manager-and-package-manager) das Paket mit den wiederverwendbare Funktionen (Client-Bibliotheken), [benutzerspezifischen Code, Komponenten, Konfigurationen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=de#cloud-manager) und benutzerdefinierte gebietsschemaspezifische Bibliotheken in Ihrer [!DNL AEM] as a Cloud Service-Umgebung bereit.
 
@@ -152,7 +152,7 @@ Sie können die unten aufgeführten Ordnerpfade der obersten Ebene oder bestimmt
 * `/content/forms/af`
 * `/etc/clientlibs/fd/theme`
 
-Um AEM Workflow-Modelle zu migrieren, geben Sie die folgenden Pfade an:
+Wenn Sie AEM Workflow-Modelle von AEM Forms 6.5 auf Cloud Service migrieren, geben Sie die folgenden Pfade an:
 
 * `/conf/global/settings/workflow/models/`
 * `/conf/global/settings/workflow/launcher`

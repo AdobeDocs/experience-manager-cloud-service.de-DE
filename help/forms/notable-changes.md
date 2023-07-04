@@ -3,10 +3,10 @@ title: Unterschiede zwischen AEM 6.5 Forms und AEM Cloud Services
 description: Verwenden Sie Experience Manager Forms und möchten auf Adobe Experience Manager Forms as a Cloud Service aktualisieren? Vergleichen Sie AEM 6.5 Forms und AEM Cloud Services und lernen Sie die wichtigsten Änderungen kennen, bevor Sie ein Upgrade durchführen oder zu Cloud Service migrieren.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 54a1ae1cc030030e44612b502b70c9b567144538
+source-git-commit: 1d16797f741fc9032356564061f2b6743d4c7936
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 100%
+source-wordcount: '1405'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Manager Forms as a Cloud Service enthält einige wichtige Ände
 
 * Entwicklerinnen und Entwickler verwalten Code für die Cloud Service- und lokale Entwicklungsumgebung in einem gemeinsamen [Git-Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html?lang=de). Ein auf dem AEM-Archetyp basierendes Git-Repository wird bei der Erstellung eines AEM as a Cloud Service-Programms automatisch erstellt.
 
-   ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
+  ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
 * Der Entwicklungsablauf für Forms as a Cloud Service wird am AEM-Archetyp für AEM Cloud Service ausgerichtet. Es sind jedoch einige Änderungen erforderlich, damit Adobe Experience Manager-Maven-Projekte mit AEM Cloud Service kompatibel sind. Im Allgemeinen erfordert AEM eine Trennung von Inhalt und Code in separate Unterpakete, um die Aufteilung zwischen veränderlichem und unveränderlichem Inhalt zu berücksichtigen. Verwenden Sie das Tool [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=de), um bestehende Projektpakete neu zu strukturieren, indem Inhalt und Code in separate Pakete aufgeteilt werden. So gewährleisten Sie die Kompatibilität der Pakete mit der Projektstruktur, die für Adobe Experience Manager as a Cloud Service definiert wurde.
 
@@ -50,7 +50,7 @@ Adobe Experience Manager Forms as a Cloud Service enthält einige wichtige Ände
 
 * **Regeleditor**: AEM Forms as a Cloud Service bietet einen strengeren [Regeleditor](rule-editor.md#visual-rule-editor). Der Code-Editor ist in Forms as a Cloud Service nicht verfügbar.
 
-   Das [Migrationsdienstprogramm](/help/forms/migrate-to-forms-as-a-cloud-service.md) hilft Ihnen bei der Migration Ihrer Formulare mit benutzerdefinierten Regeln (die im Code-Editor erstellt wurden). Das Dienstprogramm konvertiert solche Regeln in benutzerdefinierte Funktionen, die von Forms as a Cloud Service unterstützt werden. Sie können die wiederverwendbaren Funktionen mit dem Regeleditor verwenden, um weiterhin Ergebnisse zu erhalten, die mit Regelskripten erzielt wurden. Die Funktionen `onSubmitError` oder `onSubmitSuccess` sind jetzt als Aktionen im Regeleditor verfügbar.
+  Das [Migrationsdienstprogramm](/help/forms/migrate-to-forms-as-a-cloud-service.md) hilft Ihnen bei der Migration Ihrer Formulare mit benutzerdefinierten Regeln (die im Code-Editor erstellt wurden). Das Dienstprogramm konvertiert solche Regeln in benutzerdefinierte Funktionen, die von Forms as a Cloud Service unterstützt werden. Sie können die wiederverwendbaren Funktionen mit dem Regeleditor verwenden, um weiterhin Ergebnisse zu erhalten, die mit Regelskripten erzielt wurden. Die Funktionen `onSubmitError` oder `onSubmitSuccess` sind jetzt als Aktionen im Regeleditor verfügbar.
 
 * **Vorbefüllungs-Service:** Standardmäßig führt der Vorbefüllungs-Service Daten mit einem adaptiven Formular auf dem Client zusammen anstatt auf dem Server in AEM 6.5 Forms. Der Zeitaufwand für das Vorbefüllen eines adaptiven Formulars wird dadurch verringert. Sie können jederzeit konfigurieren, dass die Zusammenführung auf dem Adobe Experience Manager Forms-Server ausgeführt wird.
 
@@ -113,4 +113,13 @@ Forms as a Cloud Service stellt RESTful-APIs für die Dokumenterstellung und Dok
 
 * Sie können Kommunikations-APIs verwenden, um personalisierte Dokumente nach Bedarf oder stapelweise auf Forms as a Cloud Service zu erstellen. Sie können eine AEM 6.5 Forms-Umgebung für Anwendungsfälle der interaktiven Kommunikation und der Agenten-Benutzeroberfläche verwenden.
 
+## Siehe Weiter
 
+* [Migration von einer AEM Forms (On-Premise- und AMS-Umgebung) zu AEM Forms as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+* [Hinzufügen oder Erstellen von Adaptive Forms zur AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Erstellen eines adaptiven Formulars (Kernkomponenten)](/help/forms/creating-adaptive-form-core-components.md)
+
+## Zusätzliche Informationen
+
+* [Einführung in AEM Forms as a Cloud Service](/help/forms/home.md)
+* [Einrichten einer lokalen Entwicklungsumgebung und eines ersten Entwicklungsprojekts](/help/forms/setup-local-development-environment.md)
