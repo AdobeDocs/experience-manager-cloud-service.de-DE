@@ -2,9 +2,9 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: e8ea040ba3f8c73d7ed64c9669ac1d0a22d3a3c8
+source-git-commit: c7143ce939ca8c06fc678fc30f90c71981e4f8d7
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '607'
 ht-degree: 20%
 
 ---
@@ -13,18 +13,18 @@ ht-degree: 20%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 12441 {#release-12441}
+## Version 12549 {#release-12549}
 
-Nachfolgend sind die kontinuierlichen Verbesserungen für die Wartungsversion 12441 zusammengefasst, die am 27. Juni 2023 veröffentlicht wurde. Diese Wartungsversion ist eine Aktualisierung der vorherigen Wartungsversion 12255.
+Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Release 12549 zusammengefasst, das am 4. Juli 2023 veröffentlicht wurde. Diese Wartungsversion ist eine Aktualisierung der vorherigen Wartungsversion 12255. Das Maintenance Release 12549 ersetzt 12441, um zwei Probleme zu beheben.
 
 2023.7.0 Die Funktionsaktivierung stellt den vollständigen Funktionsumfang für dieses Maintenance Release bereit. Siehe [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de) für weitere Informationen.
 
-### Verbesserungen {#enhancements-12441}
+### Verbesserungen {#enhancements-12549}
 
 - SITES-8769: Verbessern von StyleImpl-Aufrufen in ResponsiveGrid
 - Forms-5054: Hinzugefügte Unterstützung für alle [statues](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) unterstützt von Adobe Sign.
 
-### Behobene Probleme {#fixed-issues-12441}
+### Behobene Probleme {#fixed-issues-12549}
 
 - Verschiedene Aktualisierungen zur Barrierefreiheit
 - SITES-12688: Seiten-Editor: Logischer Operator ODER in der Asset Finder-Suche nicht ordnungsgemäß funktioniert
@@ -53,11 +53,11 @@ Nachfolgend sind die kontinuierlichen Verbesserungen für die Wartungsversion 12
 - Forms-9072: Wenn Sie beim Erstellen eines Formularfragments nach einem Schema suchen, gibt das Suchergebnis kein Schema zur Auswahl zurück.
 - Forms: Es wurden mehrere Fehler im Zusammenhang mit der Barrierefreiheit behoben, um die Barrierefreiheit von AEM Forms-Funktionen zu verbessern.
 
-### Bekannte Probleme {#known-issues-12441}
+### Bekannte Probleme {#known-issues-12549}
 
 Keine
 
-### Eingebettete Technologien {#embedded-tech-12441}
+### Eingebettete Technologien {#embedded-tech-12549}
 
 | Technologie | Version | Link |
 |---|---|---|
