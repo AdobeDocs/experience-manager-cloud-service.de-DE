@@ -1,5 +1,5 @@
 ---
-title: Persistente GraphQL-Abfragen
+title: Persistierte GraphQL-Abfragen
 description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Client-Programme verbessert wird.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
@@ -10,7 +10,7 @@ ht-degree: 83%
 
 ---
 
-# Persistente GraphQL-Abfragen {#persisted-queries-caching}
+# Persistierte GraphQL-Abfragen {#persisted-queries-caching}
 
 Persistente Abfragen sind GraphQL-Abfragen, die auf dem Server mit Adobe Experience Manager (AEM) as a Cloud Service erstellt und gespeichert werden. Sie können von Client-Programmen mit einer GET-Anfrage angefragt werden. Die Antwort einer GET-Anfrage kann auf den Dispatcher- und CDN-Ebenen zwischengespeichert werden, was letztendlich die Leistung des anfragenden Client-Programms verbessert. Dies unterscheidet sich von standardmäßigen GraphQL-Abfragen, die mit POST-Anfragen ausgeführt werden, bei denen die Antwort nicht einfach zwischengespeichert werden kann.
 
@@ -18,7 +18,7 @@ Persistente Abfragen sind GraphQL-Abfragen, die auf dem Server mit Adobe Experie
 >
 >Es werden persistente Abfragen empfohlen. Siehe [Best Practices für GraphQL-Abfragen (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) für Details und die zugehörige Dispatcher-Konfiguration.
 
-Die [GraphiQL-IDE](/help/headless/graphql-api/graphiql-ide.md) ist in AEM verfügbar, damit Sie (persistente) GraphQL-Abfragen entwickeln und testen können, bevor Sie sie [in Ihre Produktionsumgebung übertragen](#transfer-persisted-query-production). Für Fälle, in denen eine Anpassung erforderlich ist (z. B. beim [Anpassen des Caches](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)), können Sie die API verwenden. Sehen Sie sich dazu das cURL-Beispiel in [Persistieren einer GraphQL-Abfrage](#how-to-persist-query) an.
+Die [GraphiQL-IDE](/help/headless/graphql-api/graphiql-ide.md) ist in AEM verfügbar, damit Sie GraphQL-Abfragen entwickeln, testen und persistieren können, bevor Sie sie [in Ihre Produktionsumgebung übertragen](#transfer-persisted-query-production). Für Fälle, in denen eine Anpassung erforderlich ist (z. B. beim [Anpassen des Caches](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)), können Sie die API verwenden. Sehen Sie sich dazu das cURL-Beispiel in [Persistieren einer GraphQL-Abfrage](#how-to-persist-query) an.
 
 ## Persistente Abfragen und Endpunkte {#persisted-queries-and-endpoints}
 
@@ -59,7 +59,7 @@ Es gibt verschiedene Methoden zum Beibehalten von Abfragen:
 * cURL: siehe folgendes Beispiel
 * Andere Tools, einschließlich [Postman](https://www.postman.com/)
 
-Die GraphiQL-IDE ist die **bevorzugte** Methode zum Erstellen persistenter Abfragen. So persistieren Sie mithilfe des Befehlszeilen-Tools **cURL** eine Abfrage:
+Die GraphiQL-IDE ist die **bevorzugte** Methode zum Erstellen persistenter Abfragen. So persistieren Sie eine Abfrage mithilfe des Befehlszeilen-Tools **cURL**:
 
 1. Bereiten Sie die Abfrage mittels einer PUT-Anfrage an die neue Endpunkt-URL `/graphql/persist.json/<config>/<persisted-label>` vor.
 
@@ -261,9 +261,9 @@ Beachten Sie Folgendes: `%3B` ist die UTF-8-Codierung für `;`, und `%3D` ist di
 
 ## Caching persistenter Abfragen {#caching-persisted-queries}
 
-Persistierte Abfragen werden empfohlen, da sie auf der [Dispatcher](/help/headless/deployment/dispatcher.md)- und Content Delivery Network (CDN)-Schicht zwischengespeichert werden können, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert.
+Persistierte Abfragen werden empfohlen, da sie auf der [Dispatcher](/help/headless/deployment/dispatcher.md)- und CDN-Ebene zwischengespeichert werden können, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert.
 
-Standardmäßig wird der Cache von AEM auf der Grundlage einer TTL-Definition (Time To Live) ungültig gemacht. Diese TTLs können durch die folgenden Parameter definiert werden. Auf diese Parameter kann auf verschiedene Weise zugegriffen werden, wobei die Namen je nach verwendetem Mechanismus variieren:
+Standardmäßig macht AEM zwischengespeicherte Inhalte, die auf einer TTL (Time To Live)-Definition basieren, ungültig. Diese TTLs können durch die folgenden Parameter definiert werden. Auf diese Parameter kann auf verschiedene Weise zugegriffen werden, wobei die Namen je nach verwendetem Mechanismus variieren:
 
 | Cache-Typ | [HTTP-Kopfzeile](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi-Konfiguration  | Cloud Manager |
 |--- |--- |--- |--- |--- |
@@ -274,9 +274,9 @@ Standardmäßig wird der Cache von AEM auf der Grundlage einer TTL-Definition (T
 
 {style="table-layout:auto"}
 
-### Autoreninstanzen {#author-instances}
+### Authoring-Instanzen {#author-instances}
 
-Für Autoreninstanzen sind die Standardwerte:
+Für Authoring-Instanzen sind die Standardwerte:
 
 * `max-age` : 60
 * `s-maxage` : 60
@@ -293,7 +293,7 @@ Diese:
 
 ### Veröffentlichungsinstanzen {#publish-instances}
 
-Für Veröffentlichungsinstanzen sind die Standardwerte:
+Für Publishing-Instanzen sind die Standardwerte:
 
 * `max-age` : 60
 * `s-maxage` : 7200
@@ -316,9 +316,9 @@ Die GraphiQL-IDE – Siehe [Speichern persistierter Abfragen](/help/headless/gra
 
 ### Verwalten des Caches auf der Ebene der persistierten Abfrage {#cache-persisted-query-level}
 
-Dazu müssen Sie die Abfrage mit cURL in Ihrer Befehlszeilenschnittstelle an AEM senden.
+Dazu müssen Sie die Abfrage mithilfe von cURL in Ihrer Befehlszeilenschnittstelle an AEM senden.
 
-Beispiel für die PUT-Methode (create):
+Ein Beispiel für die PUT-Methode (erstellen):
 
 ```bash
 curl -u admin:admin -X PUT \
@@ -327,7 +327,7 @@ curl -u admin:admin -X PUT \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-Beispiel für die POST-Methode (update):
+Ein Beispiel für die POST-Methode (aktualisieren):
 
 ```bash
 curl -u admin:admin -X POST \
@@ -355,7 +355,7 @@ Um den Cache global zu verwalten, können Sie [die OSGi-Einstellungen](/help/imp
 
 >[!NOTE]
 >
->Für die Cache-Steuerung ist die OSGi-Konfiguration nur für Veröffentlichungsinstanzen geeignet. Die Konfiguration ist in Autoreninstanzen zwar vorhanden, wird jedoch ignoriert.
+>Für die Cache-Steuerung ist die OSGi-Konfiguration nur für Veröffentlichungsinstanzen geeignet. Die Konfiguration ist in Authoring-Instanzen zwar vorhanden, wird jedoch ignoriert.
 
 >[!NOTE]
 >

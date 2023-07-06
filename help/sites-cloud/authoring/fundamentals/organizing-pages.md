@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2539'
-ht-degree: 70%
+ht-degree: 87%
 
 ---
 
@@ -29,7 +29,7 @@ In diesem Dokument wird beschrieben, wie Sie mit Adobe Experience Manager Cloud 
 
 ## Website-Organisation {#organizing-your-website}
 
-Als Autor müssen Sie Ihre Website in AEM organisieren. Dazu gehört die Erstellung und Benennung von Inhaltsseiten, sodass:
+Als Autor müssen Sie Ihre Website in AEM organisieren. Dazu gehört die Erstellung und Benennung von Inhaltsseiten, sodass Folgendes zutrifft:
 
 * Sie müssen leicht in der Authoring-Umgebung auffindbar sein.
 * Besucher der Website müssen sie einfach in der Veröffentlichungsumgebung durchsuchen können.
@@ -129,7 +129,7 @@ Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben
 >
 >Sie sollten es vermeiden, einen Zwei-Buchstaben-Code gemäß ISO-639-1 als Seitennamen zu verwenden, sofern es sich nicht um einen Sprachstamm handelt.
 >
->Siehe [Vorbereiten von Inhalten für die Übersetzung](/help/sites-cloud/administering/translation/preparation.md) für weitere Informationen.
+>Weitere Informationen finden Sie unter [Vorbereiten von Inhalten für die Übersetzung](/help/sites-cloud/administering/translation/preparation.md).
 
 ### Vorlagen {#templates}
 
@@ -137,7 +137,7 @@ In AEM gibt eine Vorlage einen speziellen Seitentyp an. Eine Vorlage wird als Gr
 
 Die Vorlage definiert die Seitenstruktur, u. a. eine Miniatur und andere Eigenschaften. Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden. Vorlagen bestehen aus [Komponenten](#components).
 
-Im Lieferumfang von AEM sind diverse Vorlagen enthalten. Die verfügbaren Vorlagen hängen von der jeweiligen Website ab. Die wichtigsten Felder sind:
+Im Lieferumfang von AEM sind diverse Vorlagen enthalten. Welche Vorlagen verfügbar sind, hängt von der jeweiligen Website ab. Die wichtigsten Felder sind:
 
 * **Titel**
 Der Titel, der auf der resultierenden Web-Seite angezeigt wird.
@@ -160,9 +160,9 @@ Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie best
 * Bild
 * Titel
 * Karussell
-* Und viele weitere
+* Und vieles mehr
 
-Nachdem Sie eine Seite erstellt und geöffnet haben, können Sie [Inhalt mithilfe der Komponenten hinzufügen](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component), die im Abschnitt [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
+Sobald Sie eine Seite erstellt und geöffnet haben, können Sie [Inhalte mithilfe der Komponenten hinzufügen](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component), die im [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) verfügbar sind.
 
 >[!TIP]
 >
@@ -192,25 +192,25 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
 
    * Geben Sie auf den drei Registerkarten die [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) ein, die Sie der neuen Seite zuweisen möchten, und klicken bzw. tippen Sie dann auf **Erstellen**, um die Seite zu erstellen.
 
-   * Verwendung **Zurück** , um zur Vorlagenauswahl zurückzukehren.
+   * Verwenden Sie die **Rücktaste**, um zur Vorlagenauswahl zurückzukehren.
 
    Die Schlüsselfelder sind:
 
    * **Titel**:
 
-      * Dies wird dem Benutzer angezeigt und ist obligatorisch.
+      * Dieser wird den Benutzenden angezeigt und ist obligatorisch.
 
    * **Name**:
 
       * Mit diesem Wert wird der URI generiert. Wenn kein Name angegeben ist, wird der Name vom Titel abgeleitet.
       * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den Konventionen von AEM und JCR](/help/implementing/developing/introduction/naming-conventions.md).
-      * You **kann keine ungültigen Zeichen senden** im **Name** -Feld. Wenn AEM ungültige Zeichen erkennt, wird das Feld hervorgehoben und eine erläuternde Meldung angezeigt, die die Zeichen angibt, die entfernt/ersetzt werden müssen.
+      * Die **Eingabe von ungültigen Zeichen** im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld hervorgehoben und eine erläuternde Meldung angezeigt, die die Zeichen angibt, die entfernt/ersetzt werden müssen.
 
    >[!TIP]
    >
    >Siehe [Seitenbenennungskonventionen](#page-naming-conventions).
 
-   Die zum Erstellen einer neuen Seite mindestens erforderlichen Informationen sind die **Titel**.
+   Zum Erstellen einer neuen Seite muss zumindest der **Titel** angegeben werden.
 
    ![Angeben des Seitentitels](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
@@ -234,7 +234,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
 
 Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhandenen Seite navigiert sind, können Sie diese zur Bearbeitung öffnen:
 
-1. Öffnen Sie die **Sites** Konsole.
+1. Öffnen Sie die **Sites-Konsole**.
 1. Navigieren Sie zu der Seite, die Sie bearbeiten möchten.
 1. Wählen Sie Ihre Seite mit einer der folgenden Methoden aus:
 
@@ -255,13 +255,13 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 
 Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicherort kopieren:
 
-1. Im **Sites** -Konsole, navigieren Sie zu der Seite, die Sie kopieren möchten.
+1. Navigieren Sie in der **Sites**-Konsole zu der Seite, die Sie kopieren möchten.
 1. Wählen Sie Ihre Seite mit einer der folgenden Optionen aus:
 
    * [Schnellaktionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) und Symbolleiste
 
-   Und dann **Kopieren** Seitensymbol:
+   Wählen Sie anschließend das Symbol **Seite kopieren** aus:
 
    ![Kopieren](/help/sites-cloud/authoring/assets/copy.png)
 
@@ -294,7 +294,7 @@ Die Vorgehensweise beim Verschieben oder Umbenennen einer Seite ist im Großen u
 * Verschieben der Seite, ohne sie umzubenennen
 * Verschieben und gleichzeitiges Umbenennen der Seite
 
-AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite verweisen, die umbenannt/verschoben wird. Dies kann seitenweise erfolgen, um volle Flexibilität zu bieten.
+AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite führen, die umbenannt oder verschoben wird. Dies kann seitenweise erfolgen, um volle Flexibilität zu bieten.
 
 1. Navigieren Sie zu der Seite, die Sie verschieben möchten.
 1. Wählen Sie Ihre Seite mit einer der folgenden Optionen aus:
@@ -302,33 +302,33 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
    * [Schnellaktionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) und Symbolleiste
 
-   Wählen Sie anschließend die **Verschieben** Seitensymbol:
+   Wählen Sie anschließend das Symbol **Verschieben** für die Seite aus:
 
    ![Schaltfläche „Verschieben“](/help/sites-cloud/authoring/assets/move.png)
 
    Dadurch wird der Assistent zum Verschieben von Seiten geöffnet.
 
-1. Aus dem **Umbenennen** Schritt des Assistenten können Sie entweder:
+1. Im **Umbenennungs**-Schritt des Assistenten haben Sie folgende Möglichkeiten:
 
    * Geben Sie den Namen an, den die Seite nach dem Verschieben aufweisen soll, und tippen/klicken Sie dann auf **Weiter**, um den Vorgang fortzusetzen.
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
 
    ![Verschieben und Umbenennen einer Seite](/help/sites-cloud/authoring/assets/move-page-rename.png)
 
-   Der Seitenname kann unverändert bleiben, wenn Sie nur die Seite verschieben.
+   Der Seitenname kann unverändert bleiben, wenn Sie die Seite nur verschieben.
 
    >[!NOTE]
    >
    >Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `beach` bereits vorhanden ist, eine neue Seite mit dem Namen `beach` wird `beach1`.
 
-1. Aus dem **Ziel auswählen** Schritt des Assistenten können Sie entweder:
+1. Im Schritt **Ziel auswählen** des Assistenten können Sie entweder:
 
-   * Verwenden Sie die [Spaltenansicht](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) , um zum neuen Speicherort für die Seite zu navigieren:
+   * Die [Spaltenansicht](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) verwenden, um zum neuen Speicherort für die Seite zu navigieren:
 
       * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniatur des Ziels klicken.
       * Klicken Sie auf **Weiter**, um fortzufahren.
 
-   * Verwendung **Zurück** , um zur Seitennamenspezifikation zurückzukehren.
+   * Auf **Zurück** klicken, um zur Angabe des Seitennamens zurückzukehren.
 
    >[!NOTE]
    >
@@ -350,7 +350,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
    ![Erneutes Veröffentlichen einer Seite nach Verschiebung](/help/sites-cloud/authoring/assets/move-page-republish.png)
 
-1. Auswählen **Verschieben** schließt den Prozess ab und verschiebt/umbenennt Ihre Seite nach Bedarf.
+1. Wenn Sie **Verschieben** auswählen, wird der Vorgang abgeschlossen und Ihre Seite verschoben bzw. umbenannt.
 
 >[!NOTE]
 >
@@ -362,11 +362,11 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
 >[!NOTE]
 >
->Das Umbenennen einer Seite unterliegt auch dem [Seitenbenennungskonventionen](#page-naming-conventions) beim Angeben des neuen Seitennamens.
+>Das Umbenennen einer Seite unterliegt auch den [Seitenbenennungskonventionen](#page-naming-conventions) beim Angeben des neuen Seitennamens.
 
 >[!NOTE]
 >
->Eine Seite kann nur an einen Ort verschoben werden, an dem die Vorlage, auf der die Seite basiert, zulässig ist. Weitere Informationen finden Sie unter [Formularverfügbarkeit](/help/implementing/developing/components/templates.md#template-availability).
+>Eine Seite kann nur an einen Speicherort verschoben werden, an dem die Vorlage, auf der die Seite basiert, zulässig ist. Weitere Informationen finden Sie unter [Formularverfügbarkeit](/help/implementing/developing/components/templates.md#template-availability).
 
 #### Asynchrone Aktionen {#asynchronous-actions}
 
@@ -407,7 +407,7 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
    * **Möchten Sie Seiten vor dem Löschen archivieren?** - Wenn diese Option aktiviert ist, werden beim Löschen Versionen der zu löschenden Seiten erstellt.
       * [Versionen können zu einem späteren Zeitpunkt wiederhergestellt werden](/help/sites-cloud/authoring/features/page-versions.md).
       * Seiten, die ohne vorherige Versionen gelöscht wurden, können nicht wiederhergestellt werden.
-   * **Abbrechen** , um die Aktion abzubrechen
+   * Mit **Abbrechen** können Sie den Vorgang abbrechen
    * Mit **Löschen** bestätigen Sie die Aktion.
 
       * Wenn die Seite keine Verweise enthält, wird die Seite gelöscht.
@@ -419,7 +419,7 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
 
 ### Sperren einer Seite {#locking-a-page}
 
-Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Seite sperren/entsperren](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page). Informationen darüber, ob eine Seite gesperrt ist, werden auch an beiden Stellen angezeigt.
+Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Seite sperren/entsperren](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page). Informationen darüber, ob eine Seite gesperrt ist, werden ebenfalls an beiden Stellen angezeigt.
 
 ![Schaltfläche „Sperren“](/help/sites-cloud/authoring/assets/lock.png) ![Schaltfläche „Entsperren“](/help/sites-cloud/authoring/assets/unlock.png)
 
@@ -427,9 +427,9 @@ Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Sei
 
 Sie können Ordner erstellen, um Ihre Dateien und Seiten zu organisieren.
 
-1. Öffnen Sie die **Sites** und navigieren Sie zum gewünschten Speicherort.
-1. Um die Optionsliste zu öffnen, wählen Sie **Erstellen** über die Symbolleiste
-1. Auswählen **Ordner** , um das Dialogfeld zu öffnen. Hier können Sie den **Namen** und den **Titel** eingeben:
+1. Öffnen Sie die **Sites**-Konsole und navigieren Sie zum gewünschten Speicherort.
+1. Um die Optionsliste zu öffnen, wählen Sie **Erstellen** in der Symbolleiste aus.
+1. Wählen Sie **Ordner** aus, um das Dialogfeld zu öffnen. Hier können Sie den **Namen** und den **Titel** eingeben:
 
    ![Ordner erstellen](/help/sites-cloud/authoring/assets/organizing-create-folder.png)
 
@@ -437,10 +437,10 @@ Sie können Ordner erstellen, um Ihre Dateien und Seiten zu organisieren.
 
 >[!NOTE]
 >
->Ordner unterliegen auch dem [Seitenbenennungskonventionen](#page-naming-conventions) beim Angeben des neuen Ordnernamen.
+>Ordner unterliegen ebenfalls den [Seitenbenennungskonventionen](#page-naming-conventions), wenn ein neuer Ordnername angegeben wird.
 
 >[!CAUTION]
 >
->* Ordner können nur direkt unter **Sites** oder unter anderen Ordnern. Sie können nicht unter einer Seite erstellt werden.
+>* Ordner können nur direkt unter **Sites** oder unter anderen Ordnern erstellt werden. Sie können nicht unter einer Seite erstellt werden.
 >* Für einen Ordner können folgende Standardaktionen ausgeführt werden: Verschieben, Kopieren, Einfügen, Löschen, Veröffentlichen, Rückgängigmachen der Veröffentlichung und Anzeigen/Bearbeiten von Eigenschaften.
 >* Ordner sind in einer Live Copy nicht als Auswahl verfügbar.

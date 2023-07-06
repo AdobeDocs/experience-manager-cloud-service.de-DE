@@ -24,12 +24,12 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    * **Titel** - Der Titel der Seite wird an verschiedenen Stellen angezeigt. Zum Beispiel in der Liste auf der Registerkarte **Websites** und in den Karten-/Listenansichten **Sites**.
       * Dies ist ein Pflichtfeld.
    * **Tags** – Hier können Sie der Seite Tags hinzufügen oder Tags aus der Seite entfernen, indem Sie die Liste im Auswahlfeld aktualisieren.
-      * Nachdem Sie ein Tag ausgewählt haben, wird es unter dem Auswahlfeld aufgeführt. Sie können mit dem „x“ ein Tag aus dieser Liste entfernen.
+      * Nachdem Sie ein Tag ausgewählt haben, wird es unter dem Auswahlfeld aufgeführt. Sie können ein Tag mit dem „x“ aus dieser Liste entfernen.
       * Sie können ein völlig neues Tag eingeben, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
          * Das neue Tag wird erstellt, wenn Sie die Eingabetaste drücken.
-         * Das neue Tag wird dann mit einem kleinen Stern auf der rechten Seite angezeigt, der es als neues Tag markiert.
-      * Mit der Dropdown-Funktion können Sie aus vorhandenen Tags auswählen.
-      * Wenn Sie mit dem Mauszeiger über einen Tag-Eintrag im Auswahlfeld fahren, wird ein „x“ angezeigt, das zum Entfernen des entsprechenden Tags für diese Seite verwendet werden kann.
+         * Das neue Tag wird dann mit einem kleinen Stern auf der rechten Seite angezeigt, der es als neues Tag kennzeichnet.
+      * In der Dropdown-Liste können Sie aus vorhandenen Tags auswählen.
+      * Wenn Sie den Mauszeiger über ein Tag im Auswahlfeld halten, wird ein „x“ angezeigt, mit dem Sie das Tag löschen können.
       * Weitere Informationen zu Tags finden Sie unter [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md).
    * **In der Navigation ausblenden** – Gibt an, ob die Seite in der Seitennavigation der resultierenden Site ein- oder ausgeblendet werden soll.
 
@@ -83,8 +83,8 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
   >
   >Vanity-URLs:
   >
-  >* Muss eindeutig sein. Daher sollten Sie darauf achten, dass der Wert nicht bereits von einer anderen Seite verwendet wird.
-  >* Unterstützen keine Regex-Muster.
+  >* müssen eindeutig sein, Sie müssen also darauf achten, dass der Wert nicht bereits von einer anderen Seite verwendet wird.
+  >* unterstützen keine Regex-Muster.
   >* sollten nicht auf eine vorhandene Seite eingestellt sein.
 
    * **Hinzufügen** - Tippen oder klicken Sie, um ein Feld anzuzeigen, in dem eine Vanity-URL für die Seite definiert wird.
@@ -310,7 +310,7 @@ In der **Sites** Console können Sie mehrere Seiten auswählen und dann die Seit
 Sie können mit verschiedenen Methoden mehrere Seiten für die Massenbearbeitung auswählen, darunter:
 
 * Beim Durchsuchen der **Sites**-Konsole
-* Nach Verwendung von **Suchen**, um einen Seitensatz zu finden
+* Nach Verwendung von **Suche**, um einen Seitensatz zu finden
 
 Nach Auswahl der Seiten und anschließendes Klicken oder Tippen auf die **Eigenschaften-Option**, werden die Masseneigenschaften angezeigt:
 
@@ -318,8 +318,8 @@ Nach Auswahl der Seiten und anschließendes Klicken oder Tippen auf die **Eigens
 
 Sie können nur Massenbearbeitungen von Seiten durchführen, die:
 
-* den gleichen Ressourcentyp aufweisen und
-* nicht Teil einer Live Copy sind.
+* den gleichen Ressourcentyp haben
+* nicht Teil einer Live Copy sind
    * Wenn sich eine der Seiten in einer Live Copy befindet, wird beim Öffnen der Eigenschaften eine Meldung angezeigt.
 
 Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
@@ -327,7 +327,7 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 * **Anzeigen**
 
    * Eine Liste der betroffenen Seiten
-      * Bei Bedarf können Sie Seiten wählen oder ihre Auswahl aufheben
+      * Bei Bedarf können Sie die Auswahl auswählen/deselektieren
       * Registerkarten
          * Wie beim Anzeigen von Eigenschaften für eine einzelne Seite werden die Eigenschaften unter Registerkarten angeordnet.
    * Eine Untergruppe von Eigenschaften
@@ -342,5 +342,5 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 
    * Sie können die Werte in den verfügbaren Feldern aktualisieren.
       * Die neuen Werte werden bei Auswahl auf alle ausgewählten Seiten angewendet **Fertig**.
-      * Wenn es sich um ein mehrwertiges Feld handelt (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
+      * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
    * Gemeinsame Felder, die unterschiedliche Werte auf den verschiedenen Seiten aufweisen, werden durch einen speziellen Wert wie den Text gekennzeichnet `<Mixed Entries>`.

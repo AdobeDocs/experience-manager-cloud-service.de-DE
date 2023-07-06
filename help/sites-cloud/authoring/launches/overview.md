@@ -1,21 +1,21 @@
 ---
 title: Launches
-description: Mit Launches können Sie effizient Inhalte für eine zukünftige Version entwickeln. So sind Sie in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
+description: Launches helfen Ihnen, Inhalte für eine künftige Version effizient zu entwickeln. So sind Sie in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '903'
-ht-degree: 53%
+ht-degree: 90%
 
 ---
 
 # Launches {#launches}
 
-Mit Launches können Sie effizient Inhalte für eine zukünftige Version entwickeln.
+Launches helfen Ihnen, Inhalte für eine künftige Version effizient zu entwickeln.
 
 Ein Launch wird erstellt, damit Sie (unter Beibehaltung der aktuellen Seiten) Änderungen für eine spätere Veröffentlichung vornehmen können. Wenn Sie die Launch-Seiten bearbeitet und aktualisiert haben, leiten Sie diese wieder zurück in die Quelle und aktivieren dann die Quellseiten (auf der obersten Ebene). Durch die Weiterleitung wird der Launch-Inhalt wieder auf die Quellseiten kopiert und kann entweder manuell oder automatisch ausgeführt werden (abhängig von den Feldern, die beim Erstellen und Bearbeiten des Launches festgelegt wurden).
 
-Beispiel: Die saisonalen Produktseiten in Ihrem Online-Shop werden einmal pro Quartal aktualisiert, damit die präsentierten Produkte der aktuellen Saison entsprechen. Zur Vorbereitung auf die nächste Quartals-Aktualisierung können Sie einen Launch der relevanten Web-Seiten erstellen. Im Laufe des Quartals werden die folgenden Änderungen in der Launch Copy zusammengefasst:
+Beispiel: Die saisonalen Produktseiten in Ihrem Online-Shop werden einmal pro Quartal aktualisiert, damit die präsentierten Produkte der aktuellen Saison entsprechen. Zur Vorbereitung auf die nächste Quartals-Aktualisierung können Sie einen Launch der relevanten Web-Seiten erstellen. Während des Quartals werden die folgenden Änderungen in der Launch-Kopie gesammelt:
 
 * Änderungen an den Quellseiten, die die Folge normaler Wartungsarbeiten sind. Diese Änderungen werden automatisch in den Launch-Seiten dupliziert.
 * Änderungen, die direkt auf den Launch-Seiten in Vorbereitung auf das nächste Quartal vorgenommen werden.
@@ -29,8 +29,8 @@ Wenn ein neues Quartal beginnt, leiten Sie die Launch-Seiten weiter, damit Sie d
 
 Launches können auch:
 
-* Erstellt für mehrere Stammverzweigungen. Sie können zwar den Launch für die gesamte Site erstellen (und die Änderungen dort vornehmen), dies kann jedoch nicht praktikabel sein, da die gesamte Site kopiert werden muss. Wenn Hunderte oder sogar Tausende von Seiten beteiligt sind, wirken sich die Kopieraktion und später die für die Promotion-Aufgaben erforderlichen Vergleiche auf die Systemanforderungen und die Leistung aus.
-* Verschachtelt (ein Launch innerhalb eines Launches), damit Sie einen Launch aus einem vorhandenen Launch erstellen können, damit Autoren bereits vorgenommene Änderungen nutzen können, anstatt dieselben Änderungen für jeden Launch mehrmals vornehmen zu müssen.
+* Für mehrere Stammverzweigungen erstellt werden. Sie können zwar den Launch für die gesamte Site erstellen (und die Änderungen dort vornehmen), dies kann jedoch sehr umständlich sein, da die gesamte Site kopiert werden muss. Wenn Hunderte oder sogar Tausende von Seiten beteiligt sind, wirken sich die Kopieraktion und später die für die Promotions-Aufgaben erforderlichen Vergleiche auf die Systemanforderungen und die Leistung aus.
+* Verschachtelt (ein Launch innerhalb eines Launches), um Ihnen die Möglichkeit zu geben, einen Launch aus einem bestehenden Launch zu erstellen, sodass Autoren und Autorinnen die bereits vorgenommenen Änderungen nutzen können, anstatt dieselben Änderungen mehrfach für jeden Launch vornehmen zu müssen.
 
 In diesem Abschnitt wird beschrieben, wie Sie Launch-Seiten innerhalb der Sites-Konsole oder der [Konsole „Launches“](#the-launches-console) erstellen, bearbeiten und weiterleiten (und bei Bedarf [löschen](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)):
 
@@ -44,26 +44,26 @@ In diesem Abschnitt wird beschrieben, wie Sie Launch-Seiten innerhalb der Sites-
 
 Mit Launches können Sie effizient den Inhalt für eine zukünftige Veröffentlichung einer oder mehrerer aktivierter Web-Seiten entwickeln.
 
-Mit Launches können Sie:
+Launches ermöglichen Folgendes:
 
 * Erstellen Sie eine Kopie Ihrer Quellseiten:
    * Die Kopie ist Ihr Launch.
    * Die Quellseiten der höchsten Stufe werden als **Produktion** bezeichnet.
-      * Die Quellseiten können aus mehreren (separaten) Zweigen stammen.
+      * Die Quellseiten können aus mehreren (verschiedenen) Verzweigungen stammen.
 
   ![Reihenfolge der Launches](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * Bearbeiten Sie die Launch-Konfiguration:
-   * Hinzufügen oder Entfernen von Seiten und/oder Verzweigungen zum/vom Launch.
+   * Sie können Seiten bzw. Verzweigungen zum Launch hinzufügen oder entfernen.
    * Sie können Launch-Eigenschaften bearbeiten, z. B. **Titel**, **Launch-Datum** und die Markierung **Produktionsbereit**.
 * Sie können Inhalte entweder manuell oder automatisch weiterleiten und veröffentlichen:
    * Manuell:
-      * Werben Sie Ihren Launch-Inhalt zurück in die **Target** (Quellseiten), wenn sie zur Veröffentlichung bereit ist.
-      * Veröffentlichen Sie den Inhalt von den Quellseiten (nach der Promotion).
-      * Fördern Sie entweder alle Seiten oder nur geänderte Seiten.
+      * Leiten Sie Ihren Launch-Inhalt, wenn er zur Veröffentlichung bereit ist, wieder an das **Ziel** (Quellseiten) zurück.
+      * Veröffentlichen Sie den Inhalt von den Quellseiten (nachdem die Seiten weitergeleitet wurden).
+      * Leiten Sie entweder alle Seiten oder nur die überarbeiteten Seiten weiter.
    * Automatisch (dies beinhaltet Folgendes):
       * Das Feld **Launch-Datum** (**Live**-**Datum)**: Dieses Feld kann beim Erstellen oder Bearbeiten eines Launches festgelegt werden.
-      * Die **Produktionsbereit** Markierung: kann nur beim Bearbeiten eines Launches festgelegt werden.
+      * Die Markierung **Produktionsbereit**: Dies kann nur beim Bearbeiten eines Launches festgelegt werden.
       * Wenn die Variable **Produktionsbereit** -Markierung gesetzt ist, wird der Launch automatisch auf die Produktionsseiten der angegebenen **Launch**(**Live**) **date**. Nach der Promotion werden die Produktionsseiten automatisch veröffentlicht.\
         Wenn kein Datum ausgewählt wurde, hat die Markierung keine Auswirkungen.
 * Paralleles Aktualisieren der Quell- und Launch-Seiten:
@@ -72,9 +72,9 @@ Mit Launches können Sie:
 
   ![Parallele Aktionen](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
-* [Erstellen eines verschachtelten Launches](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - einen Launch innerhalb eines Launches:
+* [Erstellen eines verschachtelten Launches](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) – ein Launch innerhalb eines Launches:
    * Die Quelle ist ein vorhandener Launch.
-   * Sie können [einen verschachtelten Launch bewerben](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) für alle Zielgruppen; Hierbei kann es sich um einen übergeordneten Launch oder die Quellseiten der obersten Ebene (Produktion) handeln.
+   * Sie können [einen verschachtelten Launch](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) zu einem beliebigen Ziel weiterleiten; dies kann ein übergeordneter Launch oder die Quellseiten der obersten Ebene (Produktion) sein.
 
   ![Ein verschachtelter Launch](/help/sites-cloud/authoring/assets/launches-nested.png)
 
@@ -90,8 +90,8 @@ Mit Launches können Sie:
 
 ## Launches in „Verweise“ (Sites-Konsole) {#launches-in-references-sites-console}
 
-1. Im **Sites** zur Quelle der Launches navigieren.
-1. Öffnen Sie die **Verweise** und wählen Sie die Quellseite aus.
+1. Navigieren Sie in der Konsole **Sites** zur Quelle der Launches.
+1. Öffnen Sie die Leiste **Referenzen** und wählen Sie die Quellseite aus.
 1. Auswählen **Starts**, werden die vorhandenen Launches aufgelistet, zusammen mit dem Zugriff auf die **Konsole &quot;Launches&quot;**:
 
    ![Verweise auf Launches in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-references.png)

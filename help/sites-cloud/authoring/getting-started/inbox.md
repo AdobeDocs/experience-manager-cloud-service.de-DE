@@ -1,11 +1,11 @@
 ---
 title: Ihr Posteingang
-description: Verwalten Ihrer Aufgaben im Posteingang
+description: Verwalten Sie Ihre Aufgaben im Posteingang
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 75%
+ht-degree: 90%
 
 ---
 
@@ -21,7 +21,7 @@ Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten (dar
       * Diese sind das Ergebnis von **Teilnehmer**-Workflow-Schritten.
    * Fehlgeschlagene Elemente, die Administratoren darauf hinweisen, einen fehlgeschlagenen Schritt erneut auszuführen.
 
-Sie erhalten diese Benachrichtigungen in Ihrem eigenen Posteingang, in dem Sie sie anzeigen und Maßnahmen ergreifen können.
+Sie erhalten diese Benachrichtigungen in Ihrem eigenen Posteingang, wo Sie sie anzeigen und dann Maßnahmen ergreifen können.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Sie erhalten diese Benachrichtigungen in Ihrem eigenen Posteingang, in dem Sie s
 
 ## Posteingang in der Kopfzeile {#inbox-in-the-header}
 
-In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Posteingang vorhandenen Elemente angezeigt. Die Anzeige kann auch geöffnet werden, um einen schnellen Zugriff auf die Seiten zu ermöglichen, für die Aktionen erforderlich sind, oder um auf den Posteingang zuzugreifen:
+In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Posteingang vorhandenen Elemente angezeigt. Sie können diese Anzeige auch öffnen, um schnell auf die Seiten zuzugreifen, auf denen Aktionen nötig sind, oder um den Posteingang aufzurufen.
 
 ![Übersicht über Posteingang in der Kopfzeile](/help/sites-cloud/authoring/assets/inbox-header.png)
 
@@ -81,11 +81,11 @@ Sie haben folgende Möglichkeiten:
 
 ### Posteingang – Anzeigeeinstellungen {#inbox-view-settings}
 
-Für beide Ansichten (Liste und Kalender) können Sie Einstellungen definieren:
+Für beide Ansichten (Liste und Kalender) können Sie Einstellungen festlegen:
 
 * **Kalenderansicht**
 
-  Für **Kalenderansicht** Sie können Folgendes konfigurieren:
+  Für die **Kalenderansicht** können Sie Folgendes konfigurieren:
 
    * **Gruppieren nach**
    * **Zeitplan** oder **Ohne**
@@ -95,7 +95,7 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen definieren:
 
 * **Listenansicht**
 
-  Für **Listenansicht** Sie können den Sortiermechanismus konfigurieren:
+  Für die **Listenansicht** können Sie den Sortiermechanismus konfigurieren:
 
    * **Sortieren nach**
    * **Sortierreihenfolge**
@@ -134,7 +134,7 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen definieren:
    >
    >Weitere Informationen finden Sie in den folgenden Themen:
    >
-   >* Workflow-Elemente - [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md)
+   >* Workflow-Elemente – [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md)
 
 2. Je nach ausgewähltem Element wird eine Aktion gestartet, z. B.:
 
@@ -156,7 +156,7 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen definieren:
 
 Im Posteingang können Sie Aufgaben erstellen:
 
-1. Auswählen **Erstellen**, dann **Aufgabe**.
+1. Klicken Sie auf **Erstellen** und dann auf **Aufgabe**.
 1. Füllen Sie die Felder in den Registerkarten **Allgemein** und **Erweitert** aus. Obligatorisch ist hierbei nur der **Titel**, alle anderen sind optional:
 
    * **Allgemein**:
@@ -182,9 +182,9 @@ Im Posteingang können Sie Aufgaben erstellen:
 
 ## Erstellen eines Projekts {#creating-a-project}
 
-Für bestimmte Aufgaben können Sie eine [Projekt](/help/sites-cloud/authoring/projects/overview.md) basierend auf dieser Aufgabe:
+Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/help/sites-cloud/authoring/projects/overview.md) zu erstellen.
 
-1. Wählen Sie die gewünschte Aufgabe aus, indem Sie auf die Miniaturansicht tippen/klicken.
+1. Wählen Sie die entsprechende Aufgabe aus, indem Sie auf die Miniaturansicht tippen/klicken.
 
    >[!NOTE]
    >
@@ -193,7 +193,7 @@ Für bestimmte Aufgaben können Sie eine [Projekt](/help/sites-cloud/authoring/p
    >Arbeitselemente (aus einem Workflow) können nicht für die Erstellung eines Projekts verwendet werden.
 
 1. Wählen Sie **Projekt erstellen** aus der Symbolleiste aus, um den Assistenten zu öffnen.
-1. Wählen Sie die entsprechende Vorlage aus und **Nächste**.
+1. Wählen Sie die entsprechende Vorlage aus und klicken Sie auf **Weiter**.
 1. Geben Sie die erforderlichen Eigenschaften an:
 
    * **Allgemein**
@@ -210,9 +210,9 @@ Für bestimmte Aufgaben können Sie eine [Projekt](/help/sites-cloud/authoring/p
 
    >[!NOTE]
    >
-   >Siehe [Erstellen eines Projekts](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) für vollständige Informationen.
+   >Ausführliche Informationen finden Sie unter [Erstellen eines Projekts](/help/sites-cloud/authoring/projects/managing.md#creating-a-project).
 
-1. Auswählen **Erstellen** , um die Aktion zu bestätigen.
+1. Klicken Sie auf **Erstellen**, um die Aktion zu bestätigen.
 
 ## Filtern von Elementen im AEM-Posteingang {#filtering-items-in-the-aem-inbox}
 

@@ -5,7 +5,7 @@ exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '660'
-ht-degree: 73%
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
 
 * Der anzuwendende Workflow.
    * Sie können jeden beliebigen Workflow anwenden (auf den Sie Zugriff haben, wie von Ihrem AEM-Administrator zugewiesen).
-* Optional einen Titel, der dazu beiträgt, die Workflow-Instanz im Posteingang eines Benutzers zu identifizieren.
+* Optional ein Titel, der zur Identifizierung der Workflow-Instanz im Posteingang einer Benutzerin oder eines Benutzers dient.
 * Die Workflow-Payload. Hierbei kann es sich um eine oder mehrere Seiten handeln.
 
 Workflows können wie folgt gestartet werden:
@@ -52,9 +52,9 @@ Sie können einen Workflow wie folgt starten:
 * [die Option Erstellen der Sites-Symbolleiste.](#starting-a-workflow-from-the-sites-toolbar)
 * [die Zeitleiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
 
-In beiden Fällen müssen Sie:
+In beiden Fällen ist Folgendes nötig:
 
-* [Geben Sie die Workflow-Details im Assistenten &quot;Workflow erstellen&quot;an](#specifying-workflow-details-in-the-create-workflow-wizard).
+* [Angeben von Workflow-Details im Assistenten „Workflow erstellen“](#specifying-workflow-details-in-the-create-workflow-wizard)
 
 ### Starten eines Workflows von der Sites-Symbolleiste aus {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -81,16 +81,16 @@ Aus der **Zeitleiste** können Sie einen Workflow starten, der auf Ihre ausgewä
 
 ### Angeben von Workflow-Details im Assistenten „Workflow erstellen“ {#specifying-workflow-details-in-the-create-workflow-wizard}
 
-Die **Workflow erstellen** -Assistent hilft Ihnen bei der Auswahl des Workflows und der Angabe der erforderlichen Details.
+Der Assistent **Workflow erstellen** hilft Ihnen, den Workflow auszuwählen und die erforderlichen Details anzugeben.
 
-Nach dem Öffnen **Workflow erstellen** Assistenten aus:
+Sie können der Assistenten **Workflow erstellen** auf zwei Arten öffnen, nämlich über:
 
 * [die Option Erstellen der Sites-Symbolleiste.](#starting-a-workflow-from-the-sites-toolbar)
 * [die Zeitleiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
 
-Sie können Details angeben:
+Details können Sie angeben wie folgt:
 
-1. Im **Eigenschaften** Schritt, werden die grundlegenden Optionen des Workflows definiert:
+1. Im Schritt **Eigenschaften** werden die grundlegenden Optionen des Workflows definiert:
 
    * **Workflow-Modell**
    * **Workflow-Titel**
@@ -131,7 +131,7 @@ Ein Dialogfeld wird geöffnet, in dem Sie die Auswahl verfeinern können:
 
         Alle angegebenen untergeordneten Elemente werden der Liste der Ressourcen hinzugefügt, auf die der Workflow angewendet werden soll.
 
-      * **Auswahl entfernen** , um diese Ressource aus dem Workflow zu entfernen.
+      * **Auswahl entfernen**, um die betreffende Ressource aus dem Workflow zu entfernen.
 
    ![Definieren des Workflow-Umfangs](/help/sites-cloud/authoring/assets/workflows-scope.png)
 

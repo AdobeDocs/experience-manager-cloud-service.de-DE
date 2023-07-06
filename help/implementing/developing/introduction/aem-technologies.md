@@ -5,7 +5,7 @@ exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2144'
-ht-degree: 56%
+ht-degree: 63%
 
 ---
 
@@ -32,9 +32,9 @@ Die zugrunde liegenden Inhalts-Repository- und Business-Logikebenen basieren auf
 * Sling
 * OSGi
 
-## Java™ Content Repository {#java-content-repository}
+## Java™ Content-Repository {#java-content-repository}
 
-Der Java™ Content Repository (JCR)-Standard, [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)gibt eine herstellerunabhängige und Implementierungsunabhängige Methode an, um auf Inhalte auf einer granularen Ebene innerhalb eines Content-Repositorys bidirektional zuzugreifen. Maßgeblich für Spezifikationen ist Adobe Research (Switzerland) AG.
+Der Java™ Content-Repository-Standard (JCR) [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html) legt eine hersteller- und implementierungsunabhängige Methode für den bidirektionalen Zugriff auf Inhalte auf einer granularen Ebene in einem Content-Repository fest. Maßgeblich für Spezifikationen ist Adobe Research (Switzerland) AG.
 
 Das [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)-Paket `javax.jcr.*` wird für den direkten Zugriff und die Bearbeitung von Repository-Inhalten verwendet.
 
@@ -121,7 +121,7 @@ Mit Sling geben Sie an, welches Skript eine bestimmte Entität rendert (indem Si
 
 #### Zuordnen von Anfragen zu Ressourcen {#mapping-requests-to-resources}
 
-Die Anfrage wird zerlegt und die notwendigen Informationen werden extrahiert. Das Repository wird nach der angeforderten Ressource (Inhaltsknoten) gesucht:
+Die Anfrage wird zerlegt und die notwendigen Informationen werden extrahiert. Das Repository wird nach der angeforderten Ressource (Inhaltsknoten) durchsucht:
 
 * Zunächst prüft Sling, ob ein Knoten an der in der Anfrage angegebenen Position existiert; z. B. `../content/corporate/jobs/developer.html`
 * Wird kein Knoten gefunden, dann wird die Erweiterung entfernt und die Suche wiederholt; z. B, `../content/corporate/jobs/developer`
@@ -155,7 +155,7 @@ Wenn der `sling:resourceType` bei Verwendung des obigen Beispiels `hr/jobs` laut
 
 * GET/HEAD-Anfragen und URLs, die auf `.html` enden (Standardanfragetypen, Standardformat)
    * Das Skript ist `/apps/hr/jobs/jobs.esp`; den letzten Abschnitt der `sling:resourceType` bildet den Dateinamen.
-* POST-Anfragen (alle Anforderungstypen außer GET/HEAD, der Methodenname muss in Großbuchstaben angegeben werden)
+* POST-Anfragen (alle Anfragetypen außer GET/HEAD, der Methodenname muss in Großbuchstaben angegeben werden)
    * POST wird im Skriptnamen verwendet.
    * Das Skript ist `/apps/hr/jobs/jobs.POST.esp`.
 * URLs in anderen Formaten, die nicht mit `.html` enden.
@@ -175,7 +175,7 @@ Wenn der `sling:resourceType` bei Verwendung des obigen Beispiels `hr/jobs` laut
    * Im Speicherort `/apps/sling/servlet/errorhandler` für benutzerdefinierte Skripte
    * oder im Speicherort des Standardskripts `/libs/sling/servlet/errorhandler/404.jsp`
 
-Wenn mehrere Skripte für eine bestimmte Anfrage gelten, wird das Skript mit der besten Übereinstimmung ausgewählt. Je genauer eine Übereinstimmung ist, desto besser ist sie. Mit anderen Worten: Je mehr Selektor dem Besseren entspricht, unabhängig von einer beliebigen Anfrageerweiterung oder einer Übereinstimmung mit dem Methodennamen.
+Wenn mehrere Skripte für eine bestimmte Anfrage gelten, wird das Skript mit der besten Übereinstimmung ausgewählt. Je genauer eine Übereinstimmung ist, desto besser ist sie. Mit anderen Worten: Je mehr Selektor-Treffer, desto besser, unabhängig von einer Übereinstimmung bei Anfrageerweiterung oder Methodenname.
 
 Beispiel: Eine Anfrage zum Zugriff auf die Ressource
 
@@ -234,7 +234,7 @@ Der Grund dafür ist, dass `/y` hat die `sling:resourceSuperType` Eigenschaft, w
 
 In Sling können Skripte nicht direkt aufgerufen werden, da dies das strikte Konzept eines REST-Servers beeinträchtigen würde. würden Sie Ressourcen und Darstellungen mischen.
 
-Wenn Sie die Repräsentation (das Skript) direkt aufrufen, blenden Sie die Ressource in Ihrem Skript aus, sodass das Framework (Sling) nicht mehr davon weiß. So verlieren Sie bestimmte Funktionen:
+Wenn Sie die Repräsentation (das Skript) direkt aufrufen, blenden Sie die Ressource in Ihrem Skript aus, sodass das Framework (Sling) nicht mehr davon weiß. Sie verlieren so bestimmte Funktionen:
 
 * automatische Handhabung von HTTP-Methoden außer GET, einschließlich:
    * POST, PUT, DELETE, das mit einer standardmäßigen Sling-Implementierung verarbeitet wird
@@ -270,7 +270,7 @@ Ein OSGi-Framework bietet Ihnen dann dynamisches Laden/Entladen, Konfiguration u
 >
 >Speziell die Seite mit grundlegenden Informationen beinhaltet eine Sammlung von Präsentationen und Tutorials.
 
-Mit dieser Architektur können Sie Sling mit anwendungsspezifischen Modulen erweitern. Sling und damit AEM verwendet die [Apache Felix](https://felix.apache.org/documentation/index.html)-Implementierung von OSGi. Beide sind Sammlungen von OSGi-Bundles, die in einem OSGi-Framework ausgeführt werden.
+Mit dieser Architektur können Sie Sling mit anwendungsspezifischen Modulen erweitern. Sling und damit AEM verwendet die [Apache Felix](https://felix.apache.org/documentation/index.html)-Implementierung von OSGi. Beides sind Sammlungen von OSGi-Bundles, die in einem OSGi-Framework ausgeführt werden.
 
 Mit dieser Funktion können Sie die folgenden Aktionen für beliebige Pakete innerhalb Ihrer Installation durchführen:
 
@@ -300,4 +300,4 @@ Die folgende Liste gibt einen Überblick über die Struktur, die Sie im Reposito
 >
 >Änderungen an dieser Struktur oder an den darin enthaltenen Dateien sollten sorgfältig vorgenommen werden. Machen Sie sich unbedingt mit den Auswirkungen der Änderungen vertraut, die Sie vornehmen möchten.
 >
->Ändern Sie nichts im `/libs` Pfad. Für Konfiguration und andere Änderungen kopieren Sie das Element aus `/libs` nach `/apps` und nehmen Änderungen in `/apps`.
+>Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen. Für Konfiguration und andere Änderungen kopieren Sie das Element aus `/libs` nach `/apps` und nehmen Änderungen in `/apps`.
