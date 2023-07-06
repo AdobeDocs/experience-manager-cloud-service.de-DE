@@ -7,7 +7,7 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1116'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 92%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
->title="Gute Arbeit! Sie haben sich mit den beiden grundlegenden Arten von Abfragen und der Abfrage Ihres eigenen Inhalts vertraut gemacht. Jetzt wissen Sie, wie Sie mit der AEM GraphQL API effiziente Abfragen erstellen können, mit denen Inhalte in einem von Ihrer App erwarteten Format bereitgestellt werden."
+>title="Gute Arbeit! Sie haben die beiden grundlegenden Arten von Abfragen kennengelernt und erfahren, wie Sie Ihre eigenen Inhalte abfragen können. Jetzt wissen Sie, wie Sie mit der AEM GraphQL API effiziente Abfragen erstellen können, mit denen Inhalte in einem von Ihrer App erwarteten Format bereitgestellt werden."
 >abstract=""
 
 ## Abfrage einer Liste von Beispielinhalten {#list-query}

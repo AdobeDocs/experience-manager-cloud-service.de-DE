@@ -5,7 +5,7 @@ exl-id: 33c889f5-c989-4772-9591-db62f50e5c80
 source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 86%
 >[!CONTEXTUALHELP]
 >id="assets_collections"
 >title="Verwalten von Sammlungen"
->abstract="Eine Sammlung ist ein Satz von Assets, Ordnern oder anderen Sammlungen in der Asset-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzenden gemeinsam verwendet werden. Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten. Sie können mehrere Sammlungen für eine Benutzerin bzw. einen Benutzer freigeben. Jede Sammlung enthält Verweise auf Assets. Die referenzielle Integrität von Assets wird sammlungsübergreifend aufrechterhalten."
+>abstract="Eine Sammlung ist eine Reihe von Assets, Ordnern oder sonstigen Sammlungen in der Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzenden gemeinsam verwendet werden. Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten. Sie können mehrere Sammlungen für eine Benutzerin bzw. einen Benutzer freigeben. Jede Sammlung enthält Verweise auf Assets. Die referenzielle Integrität von Assets wird sammlungsübergreifend aufrechterhalten."
 
 Eine Sammlung ist ein Satz von Assets, Ordnern oder anderen Sammlungen in der Adobe Experience Manager Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden.
 

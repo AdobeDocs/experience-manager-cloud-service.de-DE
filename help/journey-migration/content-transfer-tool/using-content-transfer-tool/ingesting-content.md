@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1707'
-ht-degree: 47%
+ht-degree: 48%
 
 ---
 
@@ -92,7 +92,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Auffüllaufnahme"
->abstract="Verwenden Sie die Auffüllfunktion, um geänderte Inhalte seit der vorherigen Aktivität zur Inhaltstransfer zu verschieben. Überprüfen Sie nach Abschluss der Aufnahme die Protokolle auf Fehler/Warnungen. Alle Fehler sollten sofort behoben werden, indem Sie sich entweder mit den gemeldeten Problemen befassen oder die Adobe-Kundenunterstützung kontaktieren."
+>abstract="Verwenden Sie die Auffüllfunktion, um Inhalte zu verschieben, die seit der vorherigen Inhaltstransferaktivität geändert wurden. Überprüfen Sie nach Abschluss der Aufnahme die Protokolle auf Fehler/Warnungen. Alle Fehler sollten sofort behoben werden, indem Sie sich entweder mit den gemeldeten Problemen befassen oder die Adobe-Kundenunterstützung kontaktieren."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=de" text="Anzeigen von Protokollen"
 
 Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle *Auffüllung* von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden.

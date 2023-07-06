@@ -16,7 +16,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="assets_user_entitlements"
 >title="Zuweisen von AEM-Produktprofilen"
->abstract="Sie sind nicht berechtigt, Experience Manager Assets zu verwenden. Wenden Sie sich an Ihren Administrator."
+>abstract="Sie sind nicht berechtigt, Experience Manager Assets zu verwenden. Kontaktieren Sie diesbezüglich Ihre oder Ihren Admin."
 
 In diesem Teil der [Onboarding-Journey](overview.md) erfahren Sie, wie Sie Ihrem Team mithilfe von AEM-Produktprofilen Zugriff auf AEM gewähren.
 

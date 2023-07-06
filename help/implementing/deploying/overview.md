@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3462'
-ht-degree: 40%
+ht-degree: 42%
 
 ---
 
@@ -174,8 +174,8 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Package Manager – Migrieren von Packages mit veränderlichen Inhalten"
->abstract="Erkunden Sie die Verwendung von Package Manager für Anwendungsfälle, in denen ein Inhaltspaket als &quot;einmalig&quot;installiert werden soll. Die Installation umfasst den Import spezifischer Inhalte aus der Produktion in die Staging-Umgebung, um ein Produktionsproblem zu beheben, die Übertragung kleiner Inhaltspakete von der On-Premise-Umgebung auf AEM Cloud-Umgebungen und mehr."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en" text="Content Transfer Tool"
+>abstract="Erkunden Sie die Verwendung von Package Manager für Anwendungsfälle, in denen ein Inhaltspaket als „einmalig“ installiert werden soll. Die Installation umfasst den Import spezifischer Inhalte aus der Produktionsumgebung in die Staging-Umgebung, um ein Produktionsproblem zu debuggen, die Übertragung eines kleinen Inhaltspakets aus einer On-Premise-Umgebung in eine AEM Cloud-Umgebung und mehr."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de" text="Content Transfer Tool"
 
 Es gibt Anwendungsfälle, in denen ein Inhaltspaket als „one off“ (einmalig) installiert werden sollte. Wenn Sie beispielsweise bestimmte Inhalte aus der Produktion in die Staging-Umgebung importieren, um ein Produktionsproblem zu beheben. Für diese Szenarien gilt Folgendes: [Package Manager](/help/implementing/developing/tools/package-manager.md) kann in Umgebungen auf AEM as a Cloud Service verwendet werden.
 

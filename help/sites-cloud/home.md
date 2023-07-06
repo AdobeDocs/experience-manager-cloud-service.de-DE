@@ -1,12 +1,12 @@
 ---
 title: Support-Ressourcen für Experience Manager as a Cloud Service-Sites
-description: Rufen Sie eine vollständige Liste aller Adobe-Support-Ressourcen für AEM Cloud Services ab. Hier finden Sie Antworten auf Ihre Fragen zu AEM Sites as a Cloud Service.
+description: Erhalten Sie eine vollständige Liste aller Support-Ressourcen für Adobe AEM Cloud Services. Hier finden Sie Antworten auf Ihre Fragen zu AEM Sites as a Cloud Service.
 landing-page-description: Lernen Sie, wie Sie mit AEM Sites as a Cloud Service als Autor arbeiten und wie die Verwaltung abläuft.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 73%
+ht-degree: 78%
 
 ---
 
@@ -45,7 +45,7 @@ Auf dieser Seite finden Sie eine vollständige Liste aller Adobe-Support-Ressour
 
 ## Weitere Experience Manager-Ressourcen {#other-resources}
 
-* [Aktuelle Aktualisierungen der Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=en)
+* [Aktuelle Aktualisierungen der Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=de)
 * [Dispatcher-Dokumentation](/help/implementing/dispatcher/overview.md)
 * [HTL-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de)
 * [Dokumentation zu Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
@@ -53,4 +53,4 @@ Auf dieser Seite finden Sie eine vollständige Liste aller Adobe-Support-Ressour
 * [Einhaltung der DSGVO](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorials zu Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=de)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other?lang=de)
-* [AEM-Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de)
+* [AEM-Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?lang=de)

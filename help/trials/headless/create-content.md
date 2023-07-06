@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '657'
-ht-degree: 83%
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 83%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="Erstellen neuer Inhalte"
->abstract="Mithilfe des Modells, das Sie im vorherigen Modul erstellt haben, erfahren Sie, wie Sie Inhalte erstellen, die für die Seitenbearbeitung oder als Grundlage für Ihren Headless Content verwendet werden können."
+>abstract="Sie erfahren, wie Sie unter Verwendung des im vorherigen Modul erstellten Modells Inhalte erstellen können, die für die Seitenbearbeitung oder als Grundlage für Headless-Inhalte verwendet werden können."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
