@@ -2,12 +2,13 @@
 title: Einführung in den universellen visuellen Editor
 description: Erfahren Sie, wie der universelle visuelle Editor (auch universeller Editor genannt) die WYSIWYG-Bearbeitung (What you see is what you get) von beliebigen Headless- und Headful-Erlebnissen ermöglicht. Erfahren Sie, wie er Autorinnen und Autoren dabei helfen kann, außergewöhnliche Inhalte zu erstellen sowie die Geschwindigkeit ihrer Inhalte zu erhöhen, und wie er Entwicklerinnen und Entwicklern ein modernes Erlebnis bietet.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 88%
 
 ---
+
 
 # Einführung in den universellen visuellen Editor {#introduction}
 
@@ -29,7 +30,7 @@ Der universelle Editor kann für jede Implementierung, für jeden Inhalt und fü
 
 Da Erlebnisse auf viele verschiedene Arten erstellt werden können, kann jede Implementierung den universellen Editor verwenden, damit Autoren kontextbezogene Bearbeitungen durchführen können.
 
-Benutzer glauben häufig, dass eine Headless-Implementierung die Autoren daran hindert, alle Inhalte in einer formularbasierten Benutzeroberfläche zu bearbeiten. Dies trifft jedoch im universellen Editor nicht zu
+Benutzer glauben oft, dass eine Headless-Implementierung die Autoren daran hindert, alle Inhalte in einer formularbasierten Benutzeroberfläche zu bearbeiten. Dies ist jedoch beim universellen Editor nicht der Fall.
 
 Die Anforderungen für eine Implementierung zur Verwendung des universellen Editors sind unkompliziert und unterstützen Folgendes:
 

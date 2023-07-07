@@ -2,12 +2,13 @@
 title: Architektur des universellen Editors
 description: Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 79%
+source-wordcount: '652'
+ht-degree: 78%
 
 ---
+
 
 # Architektur des universellen Editors {#architecture}
 
@@ -28,7 +29,7 @@ In diesem Dokument werden die einzelnen Bausteine und ihr Austausch von Daten be
 
 >[!TIP]
 >
->Informationen zum Anzeigen des universellen Editors und seiner Architektur finden Sie unter [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) , um zu erfahren, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM App beginnen, diese zu verwenden.
+>Informationen zum universellen Editor und seiner Architektur finden Sie im Dokument . [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) , um zu erfahren, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM App beginnen, diese zu verwenden.
 
 ### Editoren {#editors}
 

@@ -2,9 +2,9 @@
 title: Attribute und Typen
 description: Erfahren Sie mehr über die Datenattribute und -typen, die der universelle Editor erfordert.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '663'
 ht-degree: 82%
 
 ---
@@ -41,7 +41,7 @@ Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss si
 | `richtext` | Der Text kann mit allen Rich-Text-Funktionen bearbeitet werden. Der RTE wird im rechten Bereich angezeigt | Optional | Erforderlich | Nicht zutreffend | Optional | Nicht zutreffend | Optional |
 | `media` | Das bearbeitbare Element ist ein Asset, z. B. Bild oder Video | Optional | Erforderlich | Optional<br>Liste der Kriterien für Bild- oder Videofilter, die an den Asset-Selektor übergeben werden | Optional | Nicht zutreffend | Optional |
 | `container` | Das bearbeitbare Element verhält sich als Container für Komponenten, auch bekannt als Absatzsystem. | Abhängig von <br>siehe unten | Abhängig von <br>siehe unten | Optional<br>eine Liste der zulässigen Komponenten | Optional | Nicht zutreffend | Nicht zutreffend |
-| `component` | Das bearbeitbare Element ist eine Komponente. fügt keine zusätzliche Funktion hinzu, ist erforderlich, um bewegliche/löschbare Teile des DOM anzuzeigen und die Eigenschaftenleiste und ihre Felder zu öffnen | Erforderlich | Nicht zutreffend | Nicht zutreffend | Optional | Optional | Nicht zutreffend |
+| `component` | Das bearbeitbare Element ist eine Komponente. Es werden keine zusätzlichen Funktionen hinzugefügt. Es ist erforderlich, bewegliche/löschbare Teile des DOM anzugeben und die Eigenschaftenleiste und ihre Felder zu öffnen | Erforderlich | Nicht zutreffend | Nicht zutreffend | Optional | Optional | Nicht zutreffend |
 | `reference` | Das bearbeitbare Element ist eine Referenz, z. B. Inhaltsfragment, Experience Fragment oder Produkt | Abhängig von <br>siehe unten | Abhängig von <br>siehe unten | Optional<br>Liste der Filterkriterien für Inhaltsfragmente, Produkte oder Experience Fragments, die an den Referenz-Selektor übergeben werden | Optional | Optional | Nicht zutreffend |
 
 Je nach Anwendungsfall kann `itemprop` oder `itemid` erforderlich sein oder nicht. Beispiel:

@@ -2,10 +2,10 @@
 title: Inhaltserstellung mit dem universellen Editor
 description: Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: c6ab2d9b01a3f1abedb06d1d413e7eceb8b1c031
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 80%
+source-wordcount: '1557'
+ht-degree: 49%
 
 ---
 
@@ -17,7 +17,7 @@ Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren is
 
 Der universelle Editor ermöglicht die Bearbeitung beliebiger Inhalte in jeder Implementierung, sodass Sie außergewöhnliche Erlebnisse bereitstellen, die Inhaltsgeschwindigkeit erhöhen und ein modernes Entwicklererlebnis bieten können.
 
-Zu diesem Zweck bietet es Inhaltsautorinnen und -autoren eine intuitive Benutzeroberfläche, die eine minimale Schulung erfordert, damit sie einfach loslegen und mit der Bearbeitung von Inhalten beginnen können.
+Dazu bietet der universelle Editor Autoren von Inhalten eine intuitive Benutzeroberfläche, für die eine minimale Schulung erforderlich ist, um einfach in die Lage zu wechseln und mit der Bearbeitung von Inhalten zu beginnen.
 
 >[!TIP]
 >
@@ -39,16 +39,17 @@ Um Inhalte für eine App mit dem universellen Editor zu erstellen, muss die App 
 
 Sobald die App für die Verwendung mit dem universellen Editor konfiguriert wurde, müssen Sie sich beim universellen Editor anmelden. Sie benötigen eine Adobe ID, um sich anzumelden und [Zugang zum universellen Editor zu erhalten](getting-started.md#request-access).
 
-Geben Sie nach der Anmeldung die URL der Seite ein, die Sie bearbeiten möchten, im [Adressleiste.](#address-bar) damit Sie beginnen können [den Inhalt bearbeiten.](#edit-content)
+Geben Sie nach der Anmeldung die URL der Seite ein, die Sie bearbeiten möchten, im [Standortleiste.](#location-bar) damit Sie mit der Bearbeitung von Inhalten beginnen können, z. B. [Textinhalt](#text-mode) oder [Medieninhalte.](#media-mode)
 
 ## Grundlegendes zur Benutzeroberfläche {#ui}
 
-Die Benutzeroberfläche ist in vier Hauptbereiche unterteilt.
+Die Benutzeroberfläche ist in fünf Hauptbereiche unterteilt.
 
 * [Die Kopfzeile von Experience Cloud](#experience-cloud-header)
 * [Die Kopfzeile des universellen Editors](#universal-editor-header)
-* [Die Leiste](#rail)
+* [Die Modusleiste](#mode-rail)
 * [Der Editor](#editor)
+* [Die Komponentenleiste](#component-rail)
 
 ![Die Benutzeroberfläche des universellen Editors](assets/ui.png)
 
@@ -84,7 +85,7 @@ Das Hilfesymbol bietet schnellen Zugriff auf Lern- und Support-Ressourcen.
 
 #### Benachrichtigungen {#notifications}
 
-Dieses Symbol ist mit der Anzahl der aktuell zugewiesenen unvollständigen Zeichen gekennzeichnet [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md).
+Dieses Symbol ist mit der Anzahl der aktuell zugewiesenen unvollständigen Zeichen gekennzeichnet [Benachrichtigungen.](/help/implementing/cloud-manager/notifications.md)
 
 ![Benachrichtigungen](assets/notifications.png)
 
@@ -104,13 +105,13 @@ Die Kopfzeile des universellen Editors befindet sich immer oben im Bildschirm di
 
 Das Hamburger-Menü ist noch nicht implementiert.
 
-![Hamburger-Menü](assets/hamburger-menu.png)
+![Hamburger Menü](assets/hamburger-menu.png)
 
-#### Speicherortleiste {#Location-bar}
+#### Speicherortleiste {#location-bar}
 
 Die Speicherortleiste zeigt die Adresse der Seite an, die Sie bearbeiten. Tippen oder klicken Sie, um die Adresse einer anderen Seite einzugeben, die bearbeitet werden soll.
 
-![Speicherortleiste](assets/address-bar.png)
+![Speicherortleiste](assets/location-bar.png)
 
 >[!TIP]
 >
@@ -120,6 +121,24 @@ Die Speicherortleiste zeigt die Adresse der Seite an, die Sie bearbeiten. Tippen
 >
 >Jede Seite, die Sie mit dem universellen Editor bearbeiten möchten, muss [für die Unterstützung des universellen Editors instrumentiert sein](getting-started.md).
 
+#### Emulator-Einstellungen {#emulator}
+
+Tippen oder klicken Sie auf das Emulationssymbol, um festzulegen, wie der Universal Editor die Seite rendert.
+
+![Emulator-Symbol](assets/emulator.png)
+
+Durch Tippen oder Klicken auf das Emulationssymbol werden die Optionen angezeigt.
+
+![Emulierungsoptionen](assets/emulation-options.png)
+
+Standardmäßig wird der Editor im Desktop-Layout geöffnet, wobei Höhe und Breite automatisch vom Browser definiert werden.
+
+Sie können auch ein Mobilgerät und im universellen Editor emulieren:
+
+* Ausrichtung definieren
+* Breite und Höhe definieren
+* Ausrichtung ändern
+
 #### App-Vorschau öffnen {#open-app-preview}
 
 Tippen oder klicken Sie auf das Symbol „App-Vorschau öffnen“, um die Seite, die Sie gerade bearbeiten, in einem eigenen Browser zu öffnen, ohne dass der Editor eine Vorschau der Änderungen anzeigen kann.
@@ -128,7 +147,7 @@ Tippen oder klicken Sie auf das Symbol „App-Vorschau öffnen“, um die Seite,
 
 >[!TIP]
 >
->Verwenden Sie den Hotkey `O`, um die App-Vorschau zu öffnen.
+>Verwenden des Hotkeys `O` (Buchstabe O), um die App-Vorschau zu öffnen.
 
 #### Veröffentlichen  {#publish}
 
@@ -140,11 +159,11 @@ Tippen oder klicken Sie auf die Schaltfläche &quot;Veröffentlichen&quot;, dami
 >
 >Weitere Informationen zur Veröffentlichung mit dem universellen Editor finden Sie im Dokument [Veröffentlichen von Inhalten mit dem universellen visuellen Editor](publishing.md).
 
-### Die Leiste {#rail}
+### Die Modusleiste {#rail}
 
-Die Leiste befindet sich immer auf der linken Seite des Editors. Dadurch können Sie den Editor einfach zwischen Vorschaumodus und Bearbeitungsmodus wechseln.
+Die Modusleiste befindet sich immer auf der linken Seite des Editors. Dies ermöglicht das einfache Wechseln des Editors zwischen verschiedenen Bearbeitungsmodi.
 
-![Die Leiste](assets/rail.png)
+![Die Modusleiste](assets/mode-rail.png)
 
 #### Vorschaumodus {#preview-mode}
 
@@ -156,23 +175,87 @@ Im Vorschaumodus wird die Seite im Editor so gerendert, wie sie in Ihrem veröff
 >
 >Verwenden Sie den Hotkey `P`, um in den Vorschaumodus zu wechseln.
 
-#### Bearbeitungsmodus {#edit-mode}
+#### Textmodus {#text-mode}
 
-Im Bearbeitungsmodus wird die Seite im Editor gerendert, aber Inhaltsautorinnen und -autoren können klicken, um Inhalte auszuwählen und zu bearbeiten. Dies ist der Standardmodus des Editors beim Laden einer Seite.
+Im Textmodus wird die Seite im Editor gerendert, aber der Inhaltsautor kann klicken, um Textinhalt auszuwählen und zu bearbeiten. Dies ist der Standardmodus des Editors beim Laden einer Seite.
 
-![Bearbeitungsmodus](assets/edit-mode.png)
+![Textmodus](assets/text-mode.png)
+
+>[!TIP]
+>
+>Verwenden des Hotkeys `T` , um in den Textmodus zu wechseln.
+
+#### Medienmodus {#media-mode}
+
+Im Medienmodus wird die Seite im Editor gerendert, aber der Inhaltsautor kann klicken, um Medieninhalte auszuwählen und zu bearbeiten.
+
+![Medienmodus](assets/media-mode.png)
+
+>[!TIP]
+>
+>Verwenden des Hotkeys `M` , um in den Medienmodus zu wechseln.
+
+#### Komponentenmodus {#component-mode}
+
+Im Komponentenmodus wird die Seite im Editor gerendert, aber der Inhaltsautor kann klicken, um Seitenkomponenten auszuwählen.
+
+![Komponentenmodus](assets/component-mode.png)
+
+>[!TIP]
+>
+>Verwenden des Hotkeys `C` , um in den Komponentenmodus zu wechseln.
+
+>[!NOTE]
+>
+>Der Komponentenmodus befindet sich noch in der Entwicklung und ist derzeit auf die Auswahl von Komponenten beschränkt.
 
 ### Der Editor {#editor}
 
-Der Editor nimmt den größten Teil des Fensters ein und ist der Ort, an dem die in der [Adressleiste](#address-bar) angegebene Seite gerendert wird.
+Der Editor belegt den Großteil des Fensters und ist dort, wo die Seite angegeben ist in [die Standortleiste](#location-bar) wird gerendert.
 
-Je nachdem, ob sich der Editor im [Bearbeitungsmodus](#edit-mode) oder [Vorschaumodus](#edit-mode) befindet, ist der Inhalt entweder editierbar oder navigierbar.
+* Wenn sich der Editor in einem Bearbeitungsmodus befindet, z. B. [Textmodus](#text-mode) oder [Medienmodus,](#media-mode) Der Inhalt kann bearbeitet werden und Sie können den Links nicht folgen.
+* Wenn sich der Editor in [Vorschaumodus,](#preview-mode) Der Inhalt kann navigiert werden und Sie können Links folgen, den Inhalt kann jedoch nicht bearbeitet werden.
 
 ![Bearbeiter](assets/editor.png)
 
+### Komponentenleiste {#component-rail}
+
+Die Komponentenleiste befindet sich immer auf der linken Seite des Editors. Je nach Modus können Details zu einer im Inhalt ausgewählten Komponente oder die Hierarchie der Seiteninhalte angezeigt werden.
+
+![Die Komponentenleiste](assets/component-rail.png)
+
+#### Eigenschaftenmodus {#properties-mode}
+
+Im Eigenschaftenmodus zeigt die Leiste die Eigenschaften der Komponente an, die derzeit im Editor ausgewählt sind. Dies ist der Standardmodus der Komponentenleiste beim Laden einer Seite.
+
+![Eigenschaftenmodus](assets/properties-mode.png)
+
+Details zur ausgewählten Komponente werden in der Leiste angezeigt. Beachten Sie, dass nicht alle Komponenten Details anzeigen müssen.
+
+![Komponentendetails](assets/component-details.png)
+
+>[!TIP]
+>
+>Verwenden des Hotkeys `D` , um in den Eigenschaftenmodus zu wechseln.
+
+#### Inhaltsbaum-Modus {#Content-tree-mode}
+
+Im Inhaltsstrukturmodus zeigt die Leiste die Hierarchie des Seiteninhalts an.
+
+![Inhaltsbaum-Modus](assets/content-tree-mode.png)
+
+Bei der Auswahl eines Elements in der Inhaltsstruktur scrollt der Editor zu diesem Inhalt und wählt ihn aus.
+
+![Inhaltsstruktur](assets/content-tree.png)
+
+>[!TIP]
+>
+>Verwenden des Hotkeys `F` , um in den Inhaltsbaummodus zu wechseln.
+
+
 ## Bearbeiten von Inhalten {#editing-content}
 
-Die Bearbeitung von Inhalten ist einfach und intuitiv. In [Bearbeitungsmodus,](#edit-mode) Wenn Sie den Mauszeiger über den Inhalt im Editor bewegen, wird der bearbeitbare Inhalt durch ein blaues Feld markiert.
+Die Bearbeitung von Inhalten ist einfach und intuitiv. In den Bearbeitungsmodi ([Textmodus](#text-mode), [Medienmodus](#media-mode)und [Komponentenmodus](#component-mode)), während Sie den Mauszeiger über den Inhalt im Editor bewegen, wird der bearbeitbare Inhalt durch ein blaues Feld markiert.
 
 ![Bearbeitbare Inhalte werden durch ein blaues Feld hervorgehoben](assets/editable-content.png)
 
@@ -182,11 +265,13 @@ Tippen oder klicken Sie einfach auf den Inhalt im blauen Feld, um einen Editor f
 
 Beachten Sie, dass im Bearbeitungsmodus durch Tippen oder Klicken auf den Inhalt versucht wird, diesen zur Bearbeitung auszuwählen. Wenn Sie durch das Folgen von Links in Ihren Inhalten navigieren möchten, wechseln Sie zum [Vorschaumodus](#preview-mode).
 
+Je nach dem Modus, in dem Sie sich befinden, und dem ausgewählten Inhalt können Sie unterschiedliche Bearbeitungsoptionen für Orte verwenden. Darüber hinaus können Sie zusätzliche Eigenschaften für den Inhalt mithilfe der [Komponentenleiste.](#component-rail)
+
 ## Vorschau von Inhalten {#previewing-content}
 
 Wenn Sie mit der Bearbeitung von Inhalten fertig sind, möchten Sie häufig durch diese navigieren, um zu sehen, wie sie im Inhalt anderer Seiten aussehen. Im [Vorschaumodus](#preview-mode) können Sie auf Links klicken, um genau wie eine Person, die Ihre Inhalte liest, durch diese zu navigieren. Der Inhalt wird im Editor so wiedergegeben, wie er veröffentlicht werden würde.
 
-Beachten Sie, dass im Vorschaumodus beim Tippen oder Klicken auf den Inhalt die gleiche Reaktion erfolgt, wie es bei einer Person, die den Inhalt liest, der Fall wäre. Wenn Sie den Inhalt zum Bearbeiten auswählen möchten, wechseln Sie in den [Bearbeitungsmodus](#edit-mode).
+Beachten Sie, dass im Vorschaumodus beim Tippen oder Klicken auf den Inhalt die gleiche Reaktion erfolgt, wie es bei einer Person, die den Inhalt liest, der Fall wäre. Wenn Sie den zu bearbeitenden Inhalt auswählen möchten, wechseln Sie in den Bearbeitungsmodus, z. B. [Textmodus](#text-mode) oder [Medienmodus.](#media-mode)
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
