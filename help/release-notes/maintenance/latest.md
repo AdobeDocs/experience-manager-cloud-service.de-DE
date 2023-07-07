@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: c7143ce939ca8c06fc678fc30f90c71981e4f8d7
+source-git-commit: 1251f36ece4449d8be6a40f34421351161bf3b23
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 20%
+source-wordcount: '640'
+ht-degree: 18%
 
 ---
 
@@ -21,7 +21,6 @@ Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Releas
 
 ### Verbesserungen {#enhancements-12549}
 
-- SITES-8769: Verbessern von StyleImpl-Aufrufen in ResponsiveGrid
 - Forms-5054: Hinzugefügte Unterstützung für alle [statues](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) unterstützt von Adobe Sign.
 
 ### Behobene Probleme {#fixed-issues-12549}
@@ -55,7 +54,7 @@ Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Releas
 
 ### Bekannte Probleme {#known-issues-12549}
 
-Keine
+- SKYOPS-61385: Beim neuesten Dispatcher-Update wurden bestimmte ungültige reguläre Ausdrücke, die zuvor still von ignoriert wurden, von `libpcre1` von der aktualisierten `libpcre2` während der Bereitstellung. Die Dispatcher-Konfigurationsprüfung wird in Kürze aktualisiert, um diese auch noch früher zu identifizieren.
 
 ### Eingebettete Technologien {#embedded-tech-12549}
 
