@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 124b363fe341199fdc9b25d25bbf2a9bc8f87d87
+source-git-commit: e0bee5134bea71010cacf4bf16eac0baa3dee725
 workflow-type: tm+mt
-source-wordcount: '5868'
-ht-degree: 100%
+source-wordcount: '6251'
+ht-degree: 96%
 
 ---
 
@@ -687,51 +687,49 @@ Siehe [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
      </tbody>
    </table>
 
-<!--
 
-## About video thumbnails {#about-video-thumbnails}
 
-A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail should serve to encourage a customer to select the video.
+## Über Videominiaturen {#about-video-thumbnails}
 
-All videos in Experience Manager must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can either play the video and pause on the frame you want to use, or you can select an image asset that you have already uploaded and *published* in your digital asset manager.
+Eine Videominiatur ist eine verkleinerte Version eines Videoframes oder eines Bild-Assets, in dem das Video dem Kunden vorgestellt wird. Die Miniaturansicht sollte dazu dienen, einen Kunden zur Auswahl des Videos zu ermutigen.
 
-Note that a custom video thumbnail image that you select from a video is not extracted and saved in the DAM as a separate and distinct asset. However, a custom video thumbnail that you select from an existing image asset is saved to the JCR. The path of the selected asset gets stored under the video asset's node as in the following example path:
+Alle Videos in Experience Manager müssen ein zugehöriges Miniaturbild enthalten. Sie können ein Miniaturbild nicht löschen, ohne es zu ersetzen. Wenn Sie ein Video in Experience Manager hochladen, wird standardmäßig der erste Frame als Miniaturansicht verwendet. Sie können jedoch die Miniaturansicht anpassen, z. B. für Branding oder visuelle Suche. Wenn Sie eine Videominiatur anpassen, können Sie entweder das Video abspielen und den Frame anhalten, den Sie verwenden möchten, oder Sie können ein Bild-Asset auswählen, das Sie bereits hochgeladen haben, und *veröffentlicht* in Ihrem Digital Asset Manager.
 
-`/content/dam/*<folder_name*>/<*video_name*>/jcr:content/manualThumbnail`
+Beachten Sie, dass nach Änderung der Miniaturansicht für ein Video die Erstellung von Miniaturansichten über den Asset compute-Service bei der erneuten Verarbeitung des Videos übersprungen wird.
 
-The ability to customize a video thumbnail is only available after you have applied a video profile to the folder where the video is located.
+Die Möglichkeit, eine Videominiaturansicht anzupassen, ist erst verfügbar, nachdem Sie ein Videoprofil auf den Ordner angewendet haben, in dem sich das Video befindet.
 
-### Adding a custom video thumbnail {#adding-a-custom-video-thumbnail}
+### Hinzufügen einer benutzerdefinierten Videominiatur {#adding-a-custom-video-thumbnail}
 
-1. Be sure you have already done the following:
+1. Vergewissern Sie sich, dass Sie bereits Folgendes getan haben:
 
-    * Created a folder for your video assets.
-    * [Applied a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+   * Ein Ordner für Ihre Video-Assets wurde erstellt.
+   * [Anwenden eines Videoprofils auf den Ordner](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-    * [Uploaded your videos to the folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
+   * [Ihre Videos wurden in den Ordner hochgeladen](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
-1. Navigate to an uploaded video asset whose thumbnail image you want to change.
-1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, select the video asset.
-1. On the toolbar, select the **[!UICONTROL Properties** icon (a circle with an "i" in it).
-1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
-1. On the Change Thumbnail page, do one of the following:
+1. Navigieren Sie zu einem hochgeladenen Video-Asset, dessen Miniaturbild Sie ändern möchten.
+1. Im Asset-Auswahlmodus können Sie **[!UICONTROL Listenansicht]** oder **[!UICONTROL Kartenansicht]**, wählen Sie das Video-Asset aus.
+1. Wählen Sie in der Symbolleiste die **[!UICONTROL Eigenschaften]** -Symbol (ein Kreis mit einem &quot;i&quot; darin).
+1. Wählen Sie auf der Seite &quot;Eigenschaften&quot;des Videos die Option **[!UICONTROL Miniatur ändern]**.
+1. Befolgen Sie folgende Schritte auf der Seite „Ändern der Miniaturansicht“: 
 
-    * To use a frame from the video as the new thumbnail:
+   * So verwenden Sie einen Frame aus dem Video als neue Miniaturansicht:
 
-        * On the toolbar, select **[!UICONTROL Select Frame from video]**.
-        * Select the Play button, then select the Pause button on the frame you want to capture as the video's new thumbnail.
+      * Wählen Sie in der Symbolleiste **[!UICONTROL Frame aus Video auswählen]**.
+      * Wählen Sie die Schaltfläche Abspielen und dann die Schaltfläche Pause auf dem Frame, den Sie als neue Miniaturansicht des Videos erfassen möchten.
 
-    * To use an image asset as the new thumbnail:
+   * So verwenden Sie ein Bild-Asset als neue Miniaturansicht:
 
-        * On the toolbar, select **[!UICONTROL Select Thumbnail from Assets]**.
-        * Select **[!UICONTROL Select Thumbnail]**.
-        * Navigate to a previously uploaded and published image asset you want to use. Note that the asset will automatically be resized to serve as a thumbnail image for the video.
-        * Select the image asset, then select **[!UICONTROL Select]**.
+      * Wählen Sie in der Symbolleiste **[!UICONTROL Auswählen einer Miniatur aus Assets]**.
+      * Auswählen **[!UICONTROL Miniaturansicht auswählen]**.
+      * Navigieren Sie zu einem zuvor hochgeladenen und veröffentlichten Bild-Asset, das Sie verwenden möchten. Beachten Sie, dass die Größe des Assets automatisch geändert wird, um als Miniaturbild für das Video zu dienen.
+      * Wählen Sie das Bild-Asset aus und wählen Sie dann **[!UICONTROL Auswählen]**.
 
-1. On the Change Thumbnail page, select **[!UICONTROL Save Change]**.
-1. On the video's Properties page, in the upper-right corner, select **[!UICONTROL Save & Close]**.
+1. Wählen Sie auf der Seite &quot;Miniatur ändern&quot;die Option **[!UICONTROL Änderung speichern]**.
+1. Wählen Sie auf der Seite &quot;Eigenschaften&quot;des Videos in der oberen rechten Ecke die Option **[!UICONTROL Speichern und schließen]**.
 
--->
+
 
 <!--
 
