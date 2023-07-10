@@ -2,10 +2,10 @@
 title: Erstellen von Video-Ausgabedarstellungen in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Video-Ausgabedarstellungen in Screens as a Cloud Service erstellen.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 47%
+source-wordcount: '367'
+ht-degree: 44%
 
 ---
 
@@ -33,19 +33,19 @@ Gehen Sie wie folgt vor, um von Screens Content Provider aus Video-Ausgabedarste
 
 1. Klicken **Erstellen** , um ein Verarbeitungsprofil zu erstellen.
 
-   ![Klicken Sie auf Erstellen](/help/screens-cloud/assets/configure/screens-video-2.png)
+   ![Klicken Sie auf Erstellen](/help/screens-cloud/assets/configure/screens-video-2.png).
 
 1. Geben Sie den **Namen** ein, z. B. **ScreensVerarbeitungsprofil**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+   ![Dialogfeld &quot;Verarbeitungsprofil&quot;mit hervorgehobenem Feld &quot;Name&quot;.](/help/screens-cloud/assets/configure/screens-video-3.png)
 
 1. Navigieren Sie zu **Video** Registerkarte, damit Sie eine Videokodierung hinzufügen können, und klicken Sie dann auf **Neu hinzufügen**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
+   ![Dialogfeld &quot;Verarbeitungsprofil&quot;mit hervorgehobener Schaltfläche &quot;Neu hinzufügen&quot;.](/help/screens-cloud/assets/configure/screens-video-4a.png)
 
 1. Geben Sie den **Kodierungsnamen**, wie z. B. **screens-fullhd** und die **Bitrate** als **2500** ein.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4.png)
+   ![Dialogfeld &quot;Verarbeitungsprofil&quot;mit hervorgehobener Schaltfläche Speichern.](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
    >Verwenden Sie den Kodierungsnamen, der mit &quot;screens-&quot;beginnt. Nur bei diesen Videoausgabeformaten wird davon ausgegangen, dass sie das Videoerlebnis in Screens as a Cloud Service wiedergeben. Geben Sie die Bitrate ein, mit der Ihre Videos funktionieren (2500 kBit/s für 720 px und 5000 kBit/s für 1080 px).

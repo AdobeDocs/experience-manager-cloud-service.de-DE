@@ -3,10 +3,10 @@ title: Bearbeiten von Bildern
 description: Bearbeiten Sie Bilder mit von  [!DNL Adobe Photoshop Express]  unterstützten Optionen und speichern Sie aktualisierte Bilder als Versionen.
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: e2efffe0192f7914fd97178884b7938b84fd9a27
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 97%
+source-wordcount: '549'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ Mit vielen Standardoptionen können Sie Ihr Bild auf die besten Proportionen zus
 
 ## Ändern der Bildgröße {#resize-image}
 
-Ein beliebtes Anwendungsbeispiel ist die Größenanpassung eines Bildes auf eine bestimmte Größe. [!DNL Assets view] ermöglicht es Ihnen, die Größe des Bildes schnell an die gängigen Bildgrößen anzupassen, indem es vorab berechnete neue Auflösungen für bestimmte Bildgrößen bereitstellt. Sie können die gebräuchlichen Bildgrößen in Zentimetern oder Zoll anzeigen, um die Abmessungen zu erfahren. Standardmäßig behält die Methode zur Größenanpassung das Seitenverhältnis bei. Um das Seitenverhältnis manuell zu überschreiben, klicken Sie auf ![](assets/do-not-localize/lock-closed-icon.png).
+Ein beliebtes Anwendungsbeispiel ist die Größenanpassung eines Bildes auf eine bestimmte Größe. [!DNL Assets view] ermöglicht es Ihnen, die Größe des Bildes schnell an die gängigen Bildgrößen anzupassen, indem es vorab berechnete neue Auflösungen für bestimmte Bildgrößen bereitstellt. Sie können die gebräuchlichen Bildgrößen in Zentimetern oder Zoll anzeigen, um die Abmessungen zu erfahren. Standardmäßig behält die Methode zur Größenanpassung das Seitenverhältnis bei. Um das Seitenverhältnis manuell zu überschreiben, klicken Sie auf ![Optionen zum Ändern der Bildgröße.](assets/do-not-localize/lock-closed-icon.png).
 
 Geben Sie die Dimensionen ein und klicken Sie auf **[!UICONTROL Bildgröße ändern]**, um die Bildgröße zu ändern. Bevor Sie die Änderungen als Version speichern, können Sie entweder alle vor dem Speichern vorgenommenen Änderungen rückgängig machen, indem Sie auf [!UICONTROL Rückgängig] klicken, oder Sie können den spezifischen Schritt im Bearbeitungsvorgang ändern, indem Sie auf [!UICONTROL Wiederherstellen] klicken.
 
