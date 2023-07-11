@@ -2,10 +2,10 @@
 title: Wartungsaufgaben in AEM as a Cloud Service
 description: Wartungsaufgaben in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 19a3ebd981a7a62fe78a9ec909547b6a70c55121
 workflow-type: tm+mt
 source-wordcount: '1107'
-ht-degree: 89%
+ht-degree: 80%
 
 ---
 
@@ -44,7 +44,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
   <tr>
     <td>Versionsbereinigung</td>
     <td>Adobe</td>
-    <td>Für bestehende Umgebungen (die vor dem 1. Juni 2023 erstellt wurden) ist die Bereinigung deaktiviert und wird in Zukunft nur aktiviert, wenn die Kundin oder der Kunde dies explizit vornimmt. Zu dem Zeitpunkt kann die Bereinigung auch mit benutzerdefinierten Werten konfiguriert werden.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Für neue Umgebungen (die ab dem 1. Juni 2023 erstellt wurden) ist die Bereinigung standardmäßig mit den unten stehenden Werten aktiviert, wobei Kundinnen und Kunden benutzerdefinierte Werte konfigurieren können.
+    <td>Für bestehende Umgebungen (die vor dem 1. September 2023 erstellt wurden) ist die Bereinigung deaktiviert und wird in Zukunft nur aktiviert, wenn der Kunde dies explizit aktiviert hat. Zu diesem Zeitpunkt kann die Bereinigung auch mit benutzerdefinierten Werten konfiguriert werden.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Für neue Umgebungen (die ab dem 1. September 2023 erstellt wurden) ist die Bereinigung standardmäßig mit den unten stehenden Werten aktiviert, wobei Kunden benutzerdefinierte Werte konfigurieren können.
      <ol>
        <li>Versionen, die älter als 30 Tage sind, werden entfernt</li>
        <li>Die letzten 5 Versionen der letzten 30 Tage werden beibehalten</li>
@@ -56,7 +56,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
   <tr>
     <td>Bereinigung von Prüfprotokollen</td>
     <td>Adobe</td>
-    <td>Für bestehende Umgebungen (die vor dem 1. Juni 2023 erstellt wurden) ist die Bereinigung deaktiviert und wird in Zukunft nur aktiviert, wenn die Kundin oder der Kunde dies explizit vornimmt. Zu dem Zeitpunkt kann die Bereinigung auch mit benutzerdefinierten Werten konfiguriert werden.<br><br> <!-- See above for the two line breaks -->Für neue Umgebungen (die ab dem 1. Juni 2023 erstellt wurden) ist die Bereinigung standardmäßig unter dem Knoten <code>/content</code> des Repositorys gemäß folgendem Verhalten aktiviert:
+    <td>Für bestehende Umgebungen (die vor dem 1. September 2023 erstellt wurden) ist die Bereinigung deaktiviert und wird in Zukunft nur aktiviert, wenn der Kunde dies explizit aktiviert hat. Zu diesem Zeitpunkt kann die Bereinigung auch mit benutzerdefinierten Werten konfiguriert werden.<br><br> <!-- See above for the two line breaks -->Für neue Umgebungen (die ab dem 1. September 2023 erstellt wurden) ist die Bereinigung standardmäßig unter der Variablen <code>/content</code> Knoten des Repositorys gemäß folgendem Verhalten:
      <ol>
        <li>Für die Replikationsprüfung werden Prüfprotokolle entfernt, die älter als 3 Tage sind</li>
        <li>Bei der DAM (Assets)-Prüfung werden Prüfprotokolle entfernt, die älter als 30 Tage sind</li>
