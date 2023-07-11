@@ -3,10 +3,10 @@ title: Unterschiede zwischen AEM 6.5 Forms und AEM Cloud Services
 description: Verwenden Sie Experience Manager Forms und möchten auf Adobe Experience Manager Forms as a Cloud Service aktualisieren? Vergleichen Sie AEM 6.5 Forms und AEM Cloud Services und lernen Sie die wichtigsten Änderungen kennen, bevor Sie ein Upgrade durchführen oder zu Cloud Service migrieren.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 1d16797f741fc9032356564061f2b6743d4c7936
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 98%
+source-wordcount: '1417'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Manager Forms as a Cloud Service enthält einige wichtige Ände
 
 * Entwicklerinnen und Entwickler verwalten Code für die Cloud Service- und lokale Entwicklungsumgebung in einem gemeinsamen [Git-Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html?lang=de). Ein auf dem AEM-Archetyp basierendes Git-Repository wird bei der Erstellung eines AEM as a Cloud Service-Programms automatisch erstellt.
 
-  ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
+  ![automatische Erstellung des Git-Repositorys in AEM as a Cloud Service-Programm](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
 * Der Entwicklungsablauf für Forms as a Cloud Service wird am AEM-Archetyp für AEM Cloud Service ausgerichtet. Es sind jedoch einige Änderungen erforderlich, damit Adobe Experience Manager-Maven-Projekte mit AEM Cloud Service kompatibel sind. Im Allgemeinen erfordert AEM eine Trennung von Inhalt und Code in separate Unterpakete, um die Aufteilung zwischen veränderlichem und unveränderlichem Inhalt zu berücksichtigen. Verwenden Sie das Tool [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=de), um bestehende Projektpakete neu zu strukturieren, indem Inhalt und Code in separate Pakete aufgeteilt werden. So gewährleisten Sie die Kompatibilität der Pakete mit der Projektstruktur, die für Adobe Experience Manager as a Cloud Service definiert wurde.
 

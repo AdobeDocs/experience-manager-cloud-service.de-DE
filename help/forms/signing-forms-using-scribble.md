@@ -10,10 +10,10 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 97%
+source-wordcount: '641'
+ht-degree: 94%
 
 ---
 
@@ -32,8 +32,8 @@ Sie können die Komponente **Freihandsignatur** und **Signaturschritt** verwende
 
 Sobald Sie auf das Symbol „Fertig“ ![aem_forms_save](assets/aem_forms_save.png) im Freihandsignaturfenster tippen, können Sie die Signatur nicht mehr bearbeiten. Wenn Sie die Signatur bearbeiten möchten, müssen Sie die aktuelle Signatur ignorieren und mit der obigen Option „Pinsel“/„Tastatur“ erneut signieren.
 
-Sie können auf das Symbol **Konfigurieren** ![](assets/configure.png) tippen, um das Seitenverhältnis der Arbeitsfläche für Freihand-Signaturen festzulegen.
-* Wenn das Seitenverhältnis der Arbeitsfläche für Freihand-Signaturen kleiner als 1 ist, werden die Geolocation-Informationen am unteren Rand der Arbeitsfläche für die Freihand-Signatur hinzugefügt.
+Sie können auf die **Konfigurieren** ![Symbol zum Konfigurieren](assets/configure.png) -Symbol, um das Seitenverhältnis der Arbeitsfläche für Scribble-Signaturen festzulegen.
+* Wenn das Seitenverhältnis der Arbeitsfläche für Freihandsignaturen kleiner als 1 ist, werden die Geolocation-Informationen am unteren Rand der Arbeitsfläche für die Freihandsignatur hinzugefügt.
 
 
 * Wenn das Seitenverhältnis der Arbeitsfläche für Freihandsignaturen größer als 1 ist, werden die Geolocation-Informationen auf der rechten Seite der Arbeitsfläche für Freihandsignaturen hinzugefügt.
@@ -46,6 +46,7 @@ Sie können auf das Symbol **Konfigurieren** ![](assets/configure.png) tippen, u
 >[!NOTE]
 >
 >Signaturen werden immer im PNG-Format gespeichert.
+>
 
 ## Konfigurieren eines adaptiven Formulars zur Verwendung der Freihandsignatur {#configure-an-adaptive-form-to-use-scribble-signature}
 
