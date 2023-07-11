@@ -10,10 +10,10 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
+source-git-commit: 50f5b34fa9453fd6d8e85290f69194622afeb42c
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 94%
+source-wordcount: '643'
+ht-degree: 92%
 
 ---
 
@@ -59,7 +59,7 @@ Sie können auf die **Konfigurieren** ![Symbol zum Konfigurieren](assets/configu
    >
    >Die Komponente „Signaturschritt“ nimmt die gesamte für das Formular verfügbare Breite ein. Wir empfehlen, keine anderen Komponenten in dem Abschnitt zu platzieren, der die Komponente „Signaturschritt“ enthält.
 
-1. Tippen Sie im Inhaltsbrowser auf **Formularcontainer** und dann auf das Symbol **Konfigurieren** (![](assets/configure.png)). Dadurch wird der Eigenschaftenbrowser geöffnet, der die Eigenschaften des Containers für adaptive Formulare anzeigt. Navigieren Sie zu **Container für adaptive Formulare** > **Elektronische Signatur** und heben Sie die Auswahl der Option **Adobe Sign aktivieren** auf. Tippen Sie auf das Symbol „Fertig“ ![aem_forms_save](assets/aem_forms_save.png), um die Änderungen zu speichern.
+1. Tippen Sie im Inhaltsbrowser auf **Formular-Container** und tippen Sie auf **Konfigurieren** ![Symbol zum Konfigurieren](assets/configure.png) Symbol. Dadurch wird der Eigenschaftenbrowser geöffnet, der die Eigenschaften des Containers für adaptive Formulare anzeigt. Navigieren Sie zu **Container für adaptive Formulare** > **Elektronische Signatur** und heben Sie die Auswahl der Option **Adobe Sign aktivieren** auf. Tippen Sie auf das Symbol „Fertig“ ![aem_forms_save](assets/aem_forms_save.png), um die Änderungen zu speichern.
 
    >[!NOTE]
    >
