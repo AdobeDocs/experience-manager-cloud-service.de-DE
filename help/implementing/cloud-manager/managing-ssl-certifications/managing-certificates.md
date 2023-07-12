@@ -2,12 +2,13 @@
 title: Verwalten von SSL-Zertifikaten
 description: Erfahren Sie, wie Sie mit Cloud Manager den Status Ihrer SSL-Zertifikate überprüfen und diese bearbeiten, ersetzen, aktualisieren und löschen können.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: aeb407f8971dabb4e86203b3cee82318330638b0
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 79%
+source-wordcount: '646'
+ht-degree: 76%
 
 ---
+
 
 # Verwalten von SSL-Zertifikaten {#managing-ssl-certificates}
 
@@ -34,6 +35,7 @@ Wenn ein Zertifikat abläuft, funktionieren die Domains, die mit dem abgelaufene
 1. Gehen Sie auf der Seite **Umgebungen** zum Bildschirm **SSL-Zertifikate**.
 1. Es wird eine Tabelle mit einer Zeile für jedes SSL-Zertifikat angezeigt, das erfolgreich in Ihrem Programm installiert wurde. Klicken Sie auf die Schaltfläche mit den Auslassungspunkten ganz rechts in der Zeile des Zertifikats, das Sie aktualisieren möchten, und wählen Sie **Anzeigen und aktualisieren**.
 1. Die Zertifikatdetails werden angezeigt und können geändert werden.
+1. Führen Sie die Pipeline aus, um das aktualisierte Zertifikat bereitzustellen.
 
 >[!NOTE]
 >
@@ -56,6 +58,7 @@ Gehen Sie wie folgt vor, um ein SSL-Zertifikat zu löschen.
 1. Gehen Sie auf der Seite **Umgebungen** zum Bildschirm **SSL-Zertifikate**.
 1. Es wird eine Tabelle mit einer Zeile für jedes SSL-Zertifikat angezeigt, das erfolgreich in Ihrem Programm installiert wurde. Klicken Sie auf die Schaltfläche mit den Auslassungspunkten ganz rechts in der Zeile des Zertifikats, das Sie löschen möchten, und klicken Sie auf **Löschen**.
 1. Bestätigen Sie den Löschvorgang im Dialogfeld **SSL-Zertifikat löschen**.
+1. Führen Sie die Pipeline aus, um die Bereitstellung des gelöschten Zertifikats aufzuheben.
 
 >[!NOTE]
 >
