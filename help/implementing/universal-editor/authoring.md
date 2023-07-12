@@ -2,10 +2,10 @@
 title: Inhaltserstellung mit dem universellen Editor
 description: Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: c6ab2d9b01a3f1abedb06d1d413e7eceb8b1c031
+source-git-commit: 05554f397a843ede5a723b206b6e0748e2d6ba96
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 49%
+source-wordcount: '1682'
+ht-degree: 44%
 
 ---
 
@@ -17,7 +17,7 @@ Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren is
 
 Der universelle Editor ermöglicht die Bearbeitung beliebiger Inhalte in jeder Implementierung, sodass Sie außergewöhnliche Erlebnisse bereitstellen, die Inhaltsgeschwindigkeit erhöhen und ein modernes Entwicklererlebnis bieten können.
 
-Dazu bietet der universelle Editor Autoren von Inhalten eine intuitive Benutzeroberfläche, für die eine minimale Schulung erforderlich ist, um einfach in die Lage zu wechseln und mit der Bearbeitung von Inhalten zu beginnen.
+Dazu bietet der universelle Editor Autoren von Inhalten eine intuitive Benutzeroberfläche, für die eine minimale Schulung erforderlich ist, um einfach in die Lage zu wechseln und mit der Bearbeitung von Inhalten zu beginnen. In diesem Dokument wird das Authoring-Erlebnis des universellen Editors beschrieben.
 
 >[!TIP]
 >
@@ -25,7 +25,7 @@ Dazu bietet der universelle Editor Autoren von Inhalten eine intuitive Benutzero
 
 >[!NOTE]
 >
->Der universelle Editor befindet sich noch in der Entwicklung und kann derzeit nicht alle Inhaltstypen bearbeiten.
+>Der universelle Editor befindet sich noch in der Entwicklung. Es kann derzeit nicht alle Inhaltstypen bearbeitet werden.
 
 ## Vorbereiten der App {#prepare-app}
 
@@ -201,13 +201,23 @@ Im Komponentenmodus wird die Seite im Editor gerendert, aber der Inhaltsautor ka
 
 ![Komponentenmodus](assets/component-mode.png)
 
+Wenn Sie ein Inhaltsfragment auswählen, werden die Details in der [Komponentenleiste.](#component-rail)
+
 >[!TIP]
 >
 >Verwenden des Hotkeys `C` , um in den Komponentenmodus zu wechseln.
 
->[!NOTE]
+#### Bearbeiten {#edit}
+
+Wann [Komponentenmodus,](#component-mode) Wenn Sie ein Inhaltsfragment auswählen, wird die Bearbeitungsoption in der Modusleiste angezeigt.
+
+![Symbol Bearbeiten](assets/edit.png)
+
+Durch Tippen oder Klicken auf die Schaltfläche &quot;Bearbeiten&quot;wird der Inhaltsfragment-Editor in einer neuen Registerkarte geöffnet, mit der Sie referenzierte Inhalte sowie Text- und Medieninhalte im universellen Editor bearbeiten können.
+
+>[!TIP]
 >
->Der Komponentenmodus befindet sich noch in der Entwicklung und ist derzeit auf die Auswahl von Komponenten beschränkt.
+>Verwenden des Hotkeys `E` , um eine ausgewählte Komponente zu bearbeiten.
 
 ### Der Editor {#editor}
 
@@ -230,9 +240,11 @@ Im Eigenschaftenmodus zeigt die Leiste die Eigenschaften der Komponente an, die 
 
 ![Eigenschaftenmodus](assets/properties-mode.png)
 
-Details zur ausgewählten Komponente werden in der Leiste angezeigt. Beachten Sie, dass nicht alle Komponenten Details anzeigen müssen.
+Details zur ausgewählten Komponente werden in der Leiste angezeigt. Wenn Sie ein Inhaltsfragment mithilfe von [Komponentenmodus,](#component-mode) Sie können die Einstellungen in der Komponentenleiste ändern. Änderungen werden automatisch vom universellen Editor gespeichert.
 
 ![Komponentendetails](assets/component-details.png)
+
+Beachten Sie, dass nicht alle Komponenten Details aufweisen, die angezeigt werden können.
 
 >[!TIP]
 >
@@ -259,13 +271,17 @@ Die Bearbeitung von Inhalten ist einfach und intuitiv. In den Bearbeitungsmodi (
 
 ![Bearbeitbare Inhalte werden durch ein blaues Feld hervorgehoben](assets/editable-content.png)
 
-Tippen oder klicken Sie einfach auf den Inhalt im blauen Feld, um einen Editor für die Bearbeitung im Kontext zu starten und Ihre Änderungen vorzunehmen. Drücken Sie die Eingabetaste oder kehren Sie zurück, um die Änderungen zu speichern.
+Tippen oder klicken Sie einfach auf den Inhalt im blauen Feld, um einen Editor für die Bearbeitung im Kontext zu starten und Ihre Änderungen vorzunehmen. Ihre Änderungen werden automatisch gespeichert.
 
 ![Bearbeiten von Inhalten](assets/editing-content.png)
 
 Beachten Sie, dass im Bearbeitungsmodus durch Tippen oder Klicken auf den Inhalt versucht wird, diesen zur Bearbeitung auszuwählen. Wenn Sie durch das Folgen von Links in Ihren Inhalten navigieren möchten, wechseln Sie zum [Vorschaumodus](#preview-mode).
 
-Je nach dem Modus, in dem Sie sich befinden, und dem ausgewählten Inhalt können Sie unterschiedliche Bearbeitungsoptionen für Orte verwenden. Darüber hinaus können Sie zusätzliche Eigenschaften für den Inhalt mithilfe der [Komponentenleiste.](#component-rail)
+Je nach [mode](#mode-rail) Wenn Sie sich in befinden und den Inhalt, den Sie auswählen, haben Sie möglicherweise unterschiedliche Bearbeitungsoptionen für die Position.
+
+Darüber hinaus können Sie zusätzliche Eigenschaften für den Inhalt mithilfe der [Komponentenleiste.](#component-rail) Wenn Sie beispielsweise eine Rich-Text-Komponente auswählen, können Sie Formatierungsoptionen in der Komponentenleiste bearbeiten.
+
+![Bearbeiten einer Rich-Text-Komponente](assets/rich-text-editing.png)
 
 ## Vorschau von Inhalten {#previewing-content}
 
