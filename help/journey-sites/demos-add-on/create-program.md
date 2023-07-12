@@ -2,12 +2,13 @@
 title: Erstellen eines Programms
 description: Erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um das Add-on bereitzustellen.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 7c33a618f474914ca80dff525552017c55a32517
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 97%
+source-wordcount: '709'
+ht-degree: 68%
 
 ---
+
 
 # Erstellen eines Programms {#creating-a-program}
 
@@ -47,48 +48,36 @@ Nach der Anmeldung bei Cloud Manager können Sie ein neues Sandbox-Programm für
 
 1. Tippen oder klicken oben rechts im Fenster Sie auf **Programm hinzufügen**.
 
-1. Stellen Sie im Dialogfeld **Erstellen Sie Ihr Programm** sicher, dass **Adobe Experience Manager** unter **Produkte** ausgewählt ist, und tippen oder klicken Sie dann auf **Weiter**.
+1. Im **Erstellen wir Ihr Programm** dialog:
+
+   1. Geben Sie einen **Programmnamen** zur Beschreibung Ihres Programms an.
+   1. Tippen oder klicken Sie auf **Sandbox einrichten** für Ihr **Programmziel**.
+   1. Tippen oder klicken Sie auf **Weiter**.
 
    ![Dialogfeld „Programm erstellen“](assets/create-program.png)
 
-1. Führen Sie im Dialogfeld Folgendes durch:
+1. Im **Sandbox einrichten** im Dialogfeld **Lösungen und Add-ons** Tabelle, erweitern Sie die **Sites** durch Tippen oder Klicken auf einen Eintrag in der Liste und dann **Referenz-Demos**.
 
-   * Geben Sie einen **Programmnamen** zur Beschreibung Ihres Programms an.
-   * Tippen oder klicken Sie auf **Sandbox einrichten** für Ihr **Programmziel**.
+   * Wenn Sie auch Demos für AEM Screens erstellen möchten, setzen Sie auch ein Häkchen bei der Option **Screens** in der Liste. Tippen oder klicken Sie auf **Aktualisieren**.
 
-   Tippen oder klicken Sie dann auf **Erstellen**.
+   ![Auswählen des Add-ons für eine Referenzdemo bei der Programmeinrichtung](assets/select-reference-demo-add-on.png)
 
-   ![Programmname](assets/program-name.png)
 
-1. Sie gelangen in den Bildschirm mit der Programmübersicht, wo Sie den Prozess der Programmerstellung beobachten können. Cloud Manager zeigt Ihnen dort die geschätzte verbleibende Zeit an. Sie können von diesem Bildschirm weg navigieren, während das Programm erstellt wird, und bei Bedarf später zurückkehren.
+1. Tippen oder klicken Sie auf **Erstellen** und Cloud Manager beginnt mit der Einrichtung Ihres Sandbox-Programms. Sie gelangen zum Bildschirm mit der Programmübersicht. Eine kurze Bannerbenachrichtigung zeigt an, dass der Prozess gestartet wurde. Auf der Übersichtsseite für Ihr neues Programm wurde eine Karte hinzugefügt. Der Einrichtungsprozess dauert einige Minuten.
 
-   ![Programmerstellung](assets/program-creation.png)
+1. Sobald die Einrichtung abgeschlossen ist, zeigt die Karte für die Umgebung auf der Übersichtsseite ihren Status als **Bereit**. Tippen oder klicken Sie auf die Karte, um die Umgebung zu öffnen.
 
-1. Nach Abschluss des Vorgangs bietet Cloud Manager eine Übersicht, in der auch die automatisch erstellten Umgebungen und Pipelines zu sehen sind.
+   ![Erstellung des Programms abgeschlossen](assets/ready.png)
 
-   ![Erstellung des Programms abgeschlossen](assets/creation-complete.png)
+1. Ihre Umgebung ist bereit und das Add-on ist jetzt als Option aktiviert, aber die Inhalte der Demo müssen in bereitgestellt AEM werden, damit sie verfügbar sind. Tippen oder klicken Sie dazu auf die Suchschaltfläche neben der Pipeline In der **Pipelines** Karte und wählen Sie **Ausführen**.
 
-1. Bearbeiten Sie die Programmdetails, indem Sie auf den Programmnamen oben links auf der Seite klicken und im Dropdown-Menü die Option **Programm bearbeiten** auswählen.
-
-   ![Programm bearbeiten](assets/edit-program.png)
-
-1. Wechseln Sie im Dialogfeld **Programm bearbeiten** zur Registerkarte **Lösungen und Add-ons**.
-
-   ![Dialog „Programm bearbeiten“](assets/edit-program-dialog.png)
-
-1. Erweitern Sie auf der Registerkarte **Lösungen und Add-ons** den Eintrag **Sites** auf der Liste und setzen Sie dann ein Häkchen bei **Referenzdemos**. Wenn Sie auch Demos für AEM Screens erstellen möchten, setzen Sie auch ein Häkchen bei der Option **Screens** in der Liste. Tippen oder klicken Sie auf **Aktualisieren**.
-
-   ![Auswählen der Option „Referenzdemos“](assets/edit-program-add-on.png)
-
-1. Das Add-on ist jetzt als Option aktiviert, seine Inhalte müssen jedoch in Adobe Experience Manager bereitgestellt werden, damit sie verfügbar sind. Tippen oder klicken Sie auf der Programmübersichtsseite auf **Starten**, um die Pipeline zu starten und den Add-on-Inhalt für Adobe Experience Manager bereitzustellen.
-
-   ![Starten](assets/deploy.png)
+   ![Starten](assets/run.png)
 
 1. Die Pipeline wird gestartet und Sie gelangen zu einer Seite, auf der der Fortschritt der Bereitstellung detailliert beschrieben wird. Sie können von diesem Bildschirm weg navigieren, während das Programm erstellt wird, und bei Bedarf später zurückkehren.
 
    ![Bereitstellung](assets/deployment.png)
 
-Sobald die Pipeline abgeschlossen ist, sind das Add-on und der zugehörige Demoinhalt für die Verwendung in der Authoring-Umgebung von Adobe Experience Manager verfügbar.
+Die Fertigstellung der Pipeline kann mehrere Minuten dauern. Nach dem Abschluss sind das Add-on und der zugehörige Demoinhalt für die Verwendung in der AEM Authoring-Umgebung verfügbar.
 
 ## Wie geht es weiter {#what-is-next}
 
