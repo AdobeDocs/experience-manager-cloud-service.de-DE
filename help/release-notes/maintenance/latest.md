@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: e1183791f543d17f98cb6c9ca0c513c8936ef477
+source-git-commit: 241dcc75e9f2c840be85c34800d8145457baa58d
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 47%
+source-wordcount: '272'
+ht-degree: 43%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 47%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 12585 {#release-12585}
+## Version 12697 {#release-12697}
 
-Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Release 12585 zusammengefasst, das am 11. Juli 2023 veröffentlicht wurde. Diese Wartungsversion ist eine Aktualisierung der vorherigen Wartungsversion 12549.
+Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Release 12697 zusammengefasst, das am 14. Juli 2023 veröffentlicht wurde. Diese Wartungsversion ist eine Aktualisierung der vorherigen Wartungsversion 12549. Das Maintenance Release 12697 ersetzt 12585, um ein Problem zu beheben.
 
 2023.7.0 Die Funktionsaktivierung stellt den vollständigen Funktionsumfang für dieses Maintenance Release bereit. Siehe [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de) für weitere Informationen.
 
-### Verbesserungen {#enhancements-12585}
+### Verbesserungen {#enhancements-12697}
 
 - Allgemeine Verbesserungen der RDE-Stabilität (SKYOPS-61133, SKYOPS-55281, SKYOPS-61216 und SKYOPS-61401)
 - DXML-12327: AEM: Unterstützung für Sprachvariablen in nativen PDF-Veröffentlichungen
@@ -27,18 +27,19 @@ Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Releas
 - DXML-10093: AEM: Unterstützung für das Herstellen einer Verbindung zu externen Datenquellen und das Einfügen von Daten in Datenthemen
 - DXML-10699: AEM: Unterstützung des XLIFF-Formats bei der Übersetzung
 - DXML-10141: AEM: Option zur Verwendung der mikrodienstbasierten Veröffentlichung für PDF (Native und DITA-OT), HTML und benutzerdefinierte Vorgabetypen
+- SKYOPS-61385 - Dispatcher so aktualisieren, dass bei der Auswertung von regulären Ausdrücken in Apache HTTPD libpcre2 verwendet wird
 
-### Behobene Probleme {#fixed-issues-12585}
+### Behobene Probleme {#fixed-issues-12697}
 
 - AEM: Verschiedene Verbesserungen und Stabilisierungskorrekturen für native PDF
 - SKYOPS-53130: Verbessern der Unterstützung des AC-Tools in RDE
 - SKYOPS-57146: Sling-Deadlock beim Start AEM
 
-### Bekannte Probleme {#known-issues-12585}
+### Bekannte Probleme {#known-issues-12697}
 
 Keine
 
-### Eingebettete Technologien {#embedded-tech-12585}
+### Eingebettete Technologien {#embedded-tech-12697}
 
 | Technologie | Version | Link |
 |---|---|---|
