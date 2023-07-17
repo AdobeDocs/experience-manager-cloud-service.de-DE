@@ -2,10 +2,10 @@
 title: Aufnahme von Inhalten in Target
 description: Aufnahme von Inhalten in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 3f526b8096125fbcf13b73fe82b2da0f611fa6ca
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 48%
+source-wordcount: '1925'
+ht-degree: 44%
 
 ---
 
@@ -155,7 +155,7 @@ Wenn der Release-Server beim Start einer Aufnahme noch ausgeführt wird, wird di
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
-### Fehler bei Auffüllaufnahme
+### Fehler bei Auffüllaufnahme Aufgrund der Eindeutigkeitsbeschränkung
 
 Eine häufige Ursache für einen [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)-Fehler ist ein Konflikt bei Knoten-IDs. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
 
@@ -166,6 +166,18 @@ Diese Situation kann auftreten, wenn ein Knoten zwischen einer Extraktion und ei
 Es kann auch vorkommen, wenn ein Knoten am Ziel zwischen einer Aufnahme und einer nachfolgenden Auffüllaufnahme verschoben wird.
 
 Dieser Konflikt muss manuell behoben werden. Dabei muss eine Person, die mit dem Inhalt vertraut ist, entscheiden, welche der beiden Knoten gelöscht werden muss, wobei andere Inhalte, die darauf verweisen, zu berücksichtigen sind. Zur Lösung des Problems kann es erforderlich sein, dass die Auffüllextraktion ohne den fehlerhaften Knoten wiederholt wird.
+
+### Fehler bei der Auffüllaufnahme aufgrund der nicht zu löschenden referenzierten Knotens
+
+Eine weitere häufige Ursache für eine [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) Fehler ist ein Versionskonflikt für einen bestimmten Knoten in der Zielinstanz. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Der referenzierte Knoten kann nicht gelöscht werden: 8a2289f4-b904-4bd0-8410-15e41e0976a8
+
+Dies kann vorkommen, wenn ein Knoten auf dem Ziel zwischen einer Aufnahme und einer nachfolgenden Auffüllaufnahme so geändert wird, dass eine neue Version erstellt wurde. Wenn für die Aufnahme &quot;Include-Versionen&quot;aktiviert sind, kann es zu einem Konflikt kommen, da das Ziel jetzt über eine neuere Version verfügt, auf die der Versionsverlauf und andere Inhalte verweisen. Der Aufnahmevorgang kann den fehlerhaften Versionsknoten nicht löschen, da darauf verwiesen wird.
+
+Zur Lösung des Problems kann es erforderlich sein, dass die Auffüllextraktion ohne den fehlerhaften Knoten wiederholt wird. Oder erstellen Sie einen kleinen Migrationssatz des fehlerhaften Knotens, wobei &quot;Include versions&quot;deaktiviert ist.
+
+Best Practices weisen darauf hin, dass bei einer Aufnahme mit wp=false und &quot;include versions&quot;=true so wenig wie möglich Änderungen am Zielinhalt vorgenommen werden müssen, bis die Journey abgeschlossen ist. Andernfalls können diese Konflikte auftreten.
+
 
 ## Wie geht es weiter {#whats-next}
 
