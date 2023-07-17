@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 241dcc75e9f2c840be85c34800d8145457baa58d
+source-git-commit: eca0903050bb178f13d37073f8d65354f4bf36d3
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 43%
+source-wordcount: '283'
+ht-degree: 41%
 
 ---
 
@@ -34,6 +34,7 @@ Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Releas
 - AEM: Verschiedene Verbesserungen und Stabilisierungskorrekturen für native PDF
 - SKYOPS-53130: Verbessern der Unterstützung des AC-Tools in RDE
 - SKYOPS-57146: Sling-Deadlock beim Start AEM
+- SKYOPS-61646: Das letzte Replikationsdatum wird nach der Aktualisierung auf Version 12585 nicht aktualisiert
 
 ### Bekannte Probleme {#known-issues-12697}
 
