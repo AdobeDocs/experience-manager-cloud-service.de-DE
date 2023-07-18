@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 88227693b7dfc3cbd30751718dc85e55ee67bb96
+source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '4177'
+source-wordcount: '4184'
 ht-degree: 97%
 
 ---
@@ -573,6 +573,7 @@ ht-degree: 97%
             + [Verwenden Sie maschinelle Übersetzung oder menschliche Übersetzung, um ein adaptives Formular zu übersetzen.](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Konfigurieren der Umleitungsseite oder Dankesnachricht](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Erstellen von Formularen mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
+            + [Konfigurieren der Sendeaktion für ein adaptives Formular](/help/forms/configure-submit-actions-core-components.md)
       + Authoring adaptiver Formulare – Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
          + Konvertieren von PDF-Formularen in adaptive Formulare {#afcs}
             + [Einführung in den Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de)

@@ -3,10 +3,10 @@ title: Wie wird ein adaptives Formular zur AEM Sites-Seite hinzugefügt?
 description: Erfahren Sie, wie Sie ein adaptives Formular erstellen oder zu Ihrer AEM Sites-Seite hinzufügen. Lernen Sie auch die Vorteile und verschiedene Möglichkeiten kennen, Formulare in Ihre Website zu integrieren.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 05401630484fa881da1304b6d0301670248b9889
+source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '3224'
-ht-degree: 3%
+source-wordcount: '3214'
+ht-degree: 2%
 
 ---
 
@@ -265,5 +265,4 @@ Beim Senden eines Formulars können Sie den Benutzer zu einer anderen Webseite o
 
 ## Verwandter Artikel {#related-article}
 
-* [Erstellen eines eigenständigen, auf Kernkomponenten basierenden adaptiven Formulars](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=de)
-
+* [Erstellen eines eigenständigen, auf Kernkomponenten basierenden adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)

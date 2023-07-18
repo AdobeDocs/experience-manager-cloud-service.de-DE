@@ -5,14 +5,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 8d40f259e70ef73285aafcb736e1f9d720380f7d
+source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '2250'
+source-wordcount: '2246'
 ht-degree: 63%
 
 ---
 
-# Erstellen eines adaptiven Formulars (Kernkomponenten) {#creating-an-adaptive-form-core-components}
+# Erstellen eines adaptiven Formulars {#creating-an-adaptive-form-core-components}
 
 Mit Adaptive Forms können Sie Formulare erstellen, die ansprechend, reaktionsfähig, dynamisch und anpassungsfähig sind. AEM Forms bietet einen benutzerfreundlichen Assistenten für Unternehmen, mit dem Sie schnell Adaptive Forms erstellen können. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
 
@@ -44,7 +44,7 @@ Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 * **Berechtigungen**: Fügen Sie Ihre Benutzerinnen und Benutzer zur Gruppe [!DNL forms-users] hinzu. Die Mitglieder der [!DNL forms-users]-Gruppe sind berechtigt, ein adaptives Formular zu erstellen. Eine detaillierte Liste formularspezifischer Benutzergruppen finden Sie unter [Gruppen und Berechtigungen](forms-groups-privileges-tasks.md).
 
 
-## Erstellen eines adaptiven Formulars (Kernkomponenten) {#create-an-adaptive-form-core-components}
+## Erstellen eines adaptiven Formulars  {#create-an-adaptive-form-core-components}
 
 1. Melden Sie sich bei Ihrer [!DNL Experience Manager Forms] Autoreninstanz. Dabei kann es sich um eine Cloud-Instanz oder eine lokale Entwicklungsinstanz handeln.
 
