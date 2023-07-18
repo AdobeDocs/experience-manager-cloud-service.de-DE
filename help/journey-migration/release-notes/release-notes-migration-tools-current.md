@@ -1,29 +1,37 @@
 ---
-title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.06.0
-description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2022.06.0
+title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.07.0
+description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2022.07.0
 feature: Release Information
 exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: a1597e4102589dfc9b5bdb8c2a54e8e9ec3392b7
+source-git-commit: 88227693b7dfc3cbd30751718dc85e55ee67bb96
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 33%
+source-wordcount: '156'
+ht-degree: 46%
 
 ---
 
-# Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.06.0 {#release-notes}
+# Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.07.0 {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2022.06.0.
+Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2022.07.0.
 
-## Content Transfer Tool {#ctt-release}
+## Best Practices Analyzer {#bpa-release}
 
-### Veröffentlichungsdatum {#release-date-ctt}
+### Veröffentlichungsdatum {#release-date-bpa}
 
-Das Content Transfer Tool 2.0.20 wurde am 08. Juni 2023 veröffentlicht.
+Best Practices Analyzer v2.1.42 wurde am 06. Juli 2023 veröffentlicht.
 
-### Neue Funktionen {#what-is-new-ctt}
+### Neue Funktionen {#what-is-new-bpa}
 
-* Mit dieser Version wurde ein neues Migrationswerkzeug - Content Transformer (CT) - in das Content Transfer Tool (CTT) integriert. Der Content Transformer kann Inhaltsbezogene Probleme, die von der [Best Practices Analyzer (BPA)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=de) vor der Migration von Inhalten von Ihrer aktuellen AEM-Implementierung (On-Premise oder Managed Services) zu AEM as a Cloud Service.
-Der Content Transformer bietet folgende Vorteile:
-   * Fail-Safe: Ein Paket wird vom Content Transformer jedes Mal erstellt, wenn er Änderungen am Repository vornimmt, um Probleme zu beheben. Bei Bedarf können Sie den vorherigen Status wiederherstellen, indem Sie das Paket installieren.
-   * Benutzerfreundlich: Der Content Transformer wurde in das Content Transfer Tool integriert und verfügt über eine intuitive, einfache Benutzeroberfläche.
-   * Speichert Zeit: Wenn Sie eine große Anzahl von Inhaltsproblemen haben, die unter eine Musterkategorie fallen, können Sie alle mit nur wenigen Klicks mit dem Content Transformer beheben, wodurch Zeit und Migrationsprobleme erheblich reduziert werden.
+* In dieser Version von Best Practices Analyzer wurden mehrere Best Practices-Muster hinzugefügt. Dazu gehören:
+   * Ermitteln der Mindestkonfiguration für Wartungsaufgaben
+   * Erkennung langwieriger/schwerer Abfragen
+   * Erkennen einer hohen Anzahl von Autoren-Workflows im ausgeführten oder veralteten Zustand
+   * Erkennen der OSGI-Apache Sling-Auftragskonfiguration
+   * Erkennung benutzerdefinierter Guava-Caches
+
+### Fehlerbehebungen {#bug-fixes-bpa}
+
+* BPA wurde verbessert, um Fehler bei der Generierung von Berichten mit hoher Anzahl von Ergebnissen zu vermeiden.
+* BPA wurde verbessert, um Escape-Zeichen in Pfaden zu erkennen, um Inhaltsaufnahmefehler bei der Migration von Inhalten auf AEM as a Cloud Service zu verhindern.
+
+
