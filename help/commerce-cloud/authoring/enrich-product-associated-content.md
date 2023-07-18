@@ -1,6 +1,6 @@
 ---
 title: Anreichern von Produktdaten mit zugehörigen AEM-Inhalten
-description: Erfahren Sie, wie Marketer Produktdaten mit zugehörigen Inhalten aus Adobe Experience Manager anreichern können. Inhalte wie Assets und Experience Fragments in AEM können mit Commerce-Produkten verknüpft werden. Nach der Verknüpfung können diese Inhaltstypen dynamisch in einen Platzhalter innerhalb einer Produktseite oder Kategorieseite eingefügt werden. Dadurch eröffnen sich für Marketer zahlreiche Möglichkeiten, auf bestimmten Produktseiten zusätzliche Inhalte wie Bilder und Videos bereitzustellen.
+description: Erfahren Sie, wie Marketingexperten Produktdaten mit zugehörigen Inhalten aus Adobe Experience Manager anreichern können, indem sie Marketinginhalte dynamisch zu Produktseiten hinzufügen. Dadurch eröffnen sich für Marketing-Experten zahlreiche Möglichkeiten, bestimmte Produktseiten mit zusätzlichen Inhalten wie Bildern und Videos anzusprechen.
 sub-product: Commerce
 version: Cloud Service
 doc-type: feature-video
@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
-source-git-commit: f452e248f414c3304bd9d885e592ba19a53a1a65
+source-git-commit: d1fa9824375ef739e2fdb90e8fd625b43fbca77b
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 100%
+source-wordcount: '396'
+ht-degree: 88%
 
 ---
 
