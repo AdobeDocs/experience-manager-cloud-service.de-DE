@@ -4,14 +4,19 @@ seo-title: Configure Out of Office settings
 description: Konfigurieren von Abwesenheitseinstellungen
 seo-description: Configure Out of Office settings
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 100%
+source-wordcount: '819'
+ht-degree: 99%
 
 ---
 
 # Konfigurieren von Abwesenheitseinstellungen {#configure-out-of-office-settings}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 Für geplante Abwesenheitszeiten können Sie festlegen, was während dieser Zeit mit den Ihnen zugeordneten Elementen passieren soll.
 
@@ -28,7 +33,6 @@ Sie können die Elementzuweisung auf der Basis der Workflow-Modelle differenzier
 >* Wenn Sie die Abwesenheitseinstellung deaktivieren, werden die delegierten Elemente nicht automatisch an Sie zurückverwiesen. Mithilfe der Anforderungsfunktion können Sie Elemente an sich selbst übertragen.
 >* Wenn Benutzer A Elemente an Benutzer B delegiert und Benutzer B an Benutzer C weiterdelegiert, werden die Elemente nur Benutzer C und nicht Benutzer B zugewiesen.
 >* Wenn eine Schleife in der Aufgabenzuweisung entsteht, bleiben die Aufgaben beim ursprünglichen Benutzer. Eine solche Schleife besteht beispielsweise, wenn ein Element von Benutzer A an Benutzer B, von Benutzer B an Benutzer C, von Benutzer C an Benutzer D und schließlich von Benutzer D an Benutzer B delegiert wird. In einem solchen Fall verbleibt das Element beim ursprünglichen Benutzer. Beim Beispiel oben ist Benutzer A der ursprüngliche Benutzer.
-
 
 ## Aktivieren der Abwesenheitseinstellung für Ihr Konto {#enable-out-of-office}
 

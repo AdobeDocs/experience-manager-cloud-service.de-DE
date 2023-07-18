@@ -2,14 +2,17 @@
 title: Wie konfiguriert man Azure-Speicher?
 description: Erfahren Sie, wie Sie Formulare mit dem Azure-Speicher-Server integrieren.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '582'
 ht-degree: 100%
 
 ---
 
 # Konfigurieren des [!DNL Azure]-Speichers {#configure-azure-storage}
+
+
+![data-integeration](assets/data-integeration.png)
 
 [[!DNL Experience Manager Forms] Data Integration](data-integration.md) bietet eine [!DNL Azure]-Speicherkonfiguration, um Formulare mit [!DNL Azure]-Speicher-Services zu integrieren. Das Formulardatenmodell kann verwendet werden, um adaptive Formulare zu erstellen, die mit [!DNL Azure]-Server interagieren, um Unternehmens-Workflows zu ermöglichen. Zum Beispiel:
 

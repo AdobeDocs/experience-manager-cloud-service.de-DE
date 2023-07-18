@@ -2,14 +2,19 @@
 title: Konfigurieren von vorkonfigurierten Microsoft Dynamics 365- und Salesforce-Formulardatenmodellen für adaptive Formulare
 description: Erfahren Sie, wie Sie Microsoft Dynamics 365 und Salesforce mit adaptiven Formularen integrieren.
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 100%
+source-wordcount: '957'
+ht-degree: 99%
 
 ---
 
 # Konfigurieren von [!DNL Microsoft Dynamics 365] und [!DNL Salesforce]-Cloud-Services {#configure-azure-storage}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 [[!DNL Experience Manager Forms] Data Integration](data-integration.md) bietet [!DNL Microsoft Dynamics 365] und [!DNL Salesforce]-Cloud-Services zur Integration adaptiver Formulare in vordefinierte Formulardatenmodelle. Die adaptiven Formulare können dann mit [!DNL Microsoft Dynamics 365]- und [!DNL Salesforce]-Servern interagieren, um Geschäfts-Workflows zu ermöglichen. Zum Beispiel:
 
@@ -30,11 +35,11 @@ Stellen Sie vor dem Konfigurieren von [!DNL Salesforce]-Cloud-Services sicher, d
 
 * [Erstellen Sie eine verbundene OAuth-fähige  [!DNL Salesforce] Anwendung](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5). Wenn Sie die verbundene [!DNL Salesforce]-Anwendung erstellen, geben Sie die Callback-URL im folgenden Format an:
 
-   ```
-   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
-   ```
+  ```
+  https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+  ```
 
-   Server und Port beziehen sich auf den Host-Namen und die Port-Nummer des [!DNL AEM Forms]-Servers.
+  Server und Port beziehen sich auf den Host-Namen und die Port-Nummer des [!DNL AEM Forms]-Servers.
 
 * Geben Sie beim Erstellen der verbundenen [!DNL Salesforce]-Anwendung `full` und `offline_access` als Werte für den OAuth-Umfang an.
 
@@ -66,11 +71,11 @@ Stellen Sie vor dem Konfigurieren des [!DNL Microsoft Dynamics 365]-Cloud-Servic
 
 * [Registrieren Sie eine Anwendung für [!DNL Microsoft Dynamics 365] mit Azure Active Directory](https://docs.microsoft.com/de-de/powerapps/developer/data-platform/walkthrough-register-app-azure-active-directory). Wenn Sie die verbundene [!DNL Microsoft Dynamics 365]-Anwendung erstellen, geben Sie die Antwort-URLs im folgenden Format an:
 
-   ```
-   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
-   ```
+  ```
+  https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+  ```
 
-   Server und Port beziehen sich auf den Host-Namen und die Port-Nummer des [!DNL AEM Forms]-Servers.
+  Server und Port beziehen sich auf den Host-Namen und die Port-Nummer des [!DNL AEM Forms]-Servers.
 
 * Notieren Sie sich die Werte für die Client-ID (die auch als Anwendungs-ID bezeichnet wird) und das Client-Geheimnis für die verbundene Anwendung.
 

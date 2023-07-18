@@ -5,15 +5,21 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '3097'
+source-wordcount: '3117'
 ht-degree: 97%
 
 ---
 
 
 # Verwenden von [!DNL Adobe Sign] in einem adaptiven Formular {#using-adobe-sign-in-an-adaptive-form}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
+| AEM as a Cloud Service | Dieser Artikel |
+
 
 [!DNL Adobe Sign] Aktiviert E-Signatur-Workflows für adaptive Formulare. E-Signaturen verbessern die Workflows bei der Verarbeitung von Dokumenten in den Bereichen Recht, Vertrieb, Gehaltsabrechnung, Personalverwaltung u. a.
 
@@ -73,6 +79,7 @@ Erstellen eines signaturfähigen adaptiven Formulars:
    1. Geben Sie **[!UICONTROL Name]** und **[!UICONTROL Titel]** für das adaptive Formular an.
 
    1. Wählen Sie den [Konfigurations-Container](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) aus, der bei der [Integration von [!DNL Adobe Sign] in [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) erstellt wurde.
+
    Der Konfigurations-Container enthält die für Ihre Umgebung konfigurierten [!DNL Adobe Sign]-Cloud Services. Diese Services stehen im Editor für adaptive Formulare zur Auswahl.
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Formularmodell]** eine der folgenden Optionen:
@@ -114,7 +121,6 @@ Gehen Sie wie folgt vor, um einem adaptiven Formular Felder hinzuzufügen und ei
    >
    >  * Die Verwendung des [!DNL Adobe Sign]-Blocks ist nicht zwingend erforderlich, um [!DNL Adobe Sign] in einem adaptiven Formular zu verwenden. Wenn Sie den [!DNL Adobe Sign]-Block nicht verwenden und Felder für die Empfänger hinzufügen, wird das Standardsignaturfeld unten in den Signaturdokumenten angezeigt.
    >  * Verwenden Sie den [!DNL Adobe Sign]-Block nur für adaptive Formulare, die automatisch ein Datensatzdokument generieren. Wenn Sie das Datensatzdokument mithilfe einer benutzerdefinierten XDP-Datei generieren oder ein formularvorlagenbasiertes adaptives Formular verwenden, wird der [!DNL Adobe Sign]-Block nicht unterstützt.
-
 
 
 1. Wählen Sie die Komponente **[!UICONTROL Adobe Sign-Block]** aus und tippen Sie auf das Symbol **[!UICONTROL Bearbeiten]** (![Edit](assets/Smock_Edit_18_N.svg)). Es werden Optionen zum Hinzufügen von Feldern und zum Formatieren der Darstellung von Feldern angezeigt.
@@ -190,15 +196,16 @@ Es kann einen oder mehrere Empfänger für eine Adobe Sign-Vereinbarung geben. W
 
    * **[!UICONTROL E-Mail-Adresse des Empfängers]:** Geben Sie die E-Mail-Adresse des Empfängers an. Der Empfänger erhält die Adobe Sign-Vereinbarung über die angegebene E-Mail-Adresse. Sie können eine E-Mail-Adresse verwenden, die in einem Formularfeld im Experience Manager-Benutzerprofil des angemeldeten Benutzers angegeben ist, oder eine E-Mail-Adresse manuell eingeben. Dieser Schritt ist obligatorisch.
 
-      >[!NOTE]
-      >
-      >Vergewissern Sie sich, dass die E-Mail-Adresse des ersten bzw. einzigen Empfängers (sofern es einen einzelnen Empfänger gibt) nicht mit dem [!DNL Adobe Sign]-Konto identisch ist, das zum Konfigurieren von AEM Cloud Services verwendet wird.
+     >[!NOTE]
+     >
+     >Vergewissern Sie sich, dass die E-Mail-Adresse des ersten bzw. einzigen Empfängers (sofern es einen einzelnen Empfänger gibt) nicht mit dem [!DNL Adobe Sign]-Konto identisch ist, das zum Konfigurieren von AEM Cloud Services verwendet wird.
 
    * **[!UICONTROL Authentifizierungsmethode für Empfänger]:** Geben Sie die Authentifizierungsmethode für einen Empfänger an, bevor Sie die Adobe Sign-Vereinbarung öffnen. Sie können wählen zwischen Telefon, Wissensdatenbank, Social Identity-basierter Authentifizierung und [Regierungskennung](https://helpx.adobe.com/de/sign/using/adobesign-authentication-government-id.html) für [!DNL Adobe Acrobat Sign]. Für [!DNL Adobe Acrobat Sign for Government] Sie können zwischen Telefon- und wissensbasierter Authentifizierung wählen.
+
    >[!NOTE]
    >
    >    * Bei der Authentifizierung über Social Media steht standardmäßig eine Option zum Authentifizieren über Facebook, Google und LinkedIn zur Verfügung. Wenden Sie sich an den [!DNL Adobe Sign]-Support, wenn Sie weitere Anbieter von Authentifizierung über Social Media aktivieren möchten.
-
+   >
 
    * Auszufüllende oder zu unterzeichnende **[!DNL Adobe Sign]Felder**: Wählen Sie die [!DNL Adobe Sign]-Felder für den Empfänger. Ein adaptives Formular kann mehrere [!DNL Adobe Sign]-Felder enthalten. Sie können bestimmte Felder für einen bestimmten Empfänger aktivieren. Das Feld zeigt alle verfügbaren [!DNL Adobe Sign]-Blöcke an. Wenn Sie einen Block auswählen, werden alle Felder des Blocks ausgewählt. Über das X-Symbol können Sie die Auswahl eines Feldes aufheben.
 
@@ -310,16 +317,16 @@ Nachdem Sie die [Eigenschaften des adaptiven Formulars für Adobe Sign bearbeite
    * Cloud-Signaturen: Signieren Sie mit einer [digitalen ID](https://helpx.adobe.com/de/sign/kb/digital-certificate-providers.html), die von einem Trust-Dienstleister gehostet wird.
    * Adobe Acrobat oder Reader: Laden Sie das Dokument herunter und öffnen Sie es mit Adobe Acrobat oder Reader, um es mit einer Smart Card, einem USB-Token oder einer dateibasierten digitalen ID zu signieren.
 
-      >[!NOTE]
-      >
-      > Digitale Signatur gilt auch für [!DNL Adobe Acrobat Sign for Government] Sie können sie jedoch nicht mit Cloud Signatures anwenden.
+     >[!NOTE]
+     >
+     > Digitale Signatur gilt auch für [!DNL Adobe Acrobat Sign for Government] Sie können sie jedoch nicht mit Cloud Signatures anwenden.
+
    Nachdem Sie das Feld „Cloudsignatur“ zum adaptiven Formular hinzugefügt haben, führen Sie folgende Schritte aus, um den Konfigurationsprozess abzuschließen:
 
    * [Aktivieren von Adobe Sign für ein adaptives Formular](#enableadobsignforanadaptiveform)
    * [Auswählen des Adobe Sign Cloud Service für ein adaptives Formular](#selectadobesigncloudserviceforanadaptiveform)
    * [Hinzufügen von Empfängern zu einem adaptiven Formular](#addsignerstoanadaptiveform)
    * [Übermittlungsaktion für ein adaptives Formular auswählen](#selectsubmitactionforanadaptiveform)
-
 
 ### Konfigurieren der Komponente für Danksagungsseite oder Zusammenfassungsschritt {#configure-the-thank-you-page-or-summary-step-component}
 

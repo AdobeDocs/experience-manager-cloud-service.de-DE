@@ -3,15 +3,21 @@ title: Einführung in  [!DNL AEM Forms]  as a Cloud Service
 description: Entdecken Sie AEM Forms und erfahren Sie, wie Sie damit geschäftsbereite Dokumente und Formularinhalte erstellen können. Erfahren Sie mehr über Platform-as-a-Service (PaaS) und darüber, wie Sie digitale Formulare und Geschäftsprozesse als Unternehmenslösungen verwalten und Forms mit Adobe Sign und aktuellen Datenquellen verbinden können.
 landing-page-description: Erfahren Sie, wie Sie Formulare in AEM as a Cloud Service verwenden.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 6f07493714c68cb7c6e96a252c4ef1ff9d6ba9ac
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1157'
 ht-degree: 92%
 
 ---
 
 
 # Einführung in AEM Forms as a Cloud Service {#introduction}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html) |
+| AEM as a Cloud Service | Dieser Artikel |
+
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] bietet eine Cloud-native Platform as a Service (PaaS)-Lösung für Unternehmen zum Erstellen, Verwalten, Veröffentlichen und Aktualisieren komplexer digitaler Formulare, wobei gleichzeitig die gesendeten Daten in Back-End-Prozesse und Geschäftsregeln integriert sowie Daten in einem externen Datenspeicher gespeichert werden.
 

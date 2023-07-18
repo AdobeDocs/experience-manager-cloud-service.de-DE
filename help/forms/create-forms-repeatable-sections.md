@@ -2,7 +2,7 @@
 title: Wiederholbarkeit im adaptiven Formular (Kernkomponenten)
 description: Verwenden Sie die Wiederholbarkeitsfunktion der Bedienfeldkomponenten, um ähnliche Abschnitte in einem adaptiven Formular zu wiederholen.
 role: Architect, Developer, Admin, User
-source-git-commit: bf45e7b935c3e57c2ecf77d9391abda80ee4a761
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
 source-wordcount: '1410'
 ht-degree: 27%
@@ -97,6 +97,7 @@ Das übergeordnete Element des Bedienfelds sollte eine Schaltfläche zum Lösche
    * Um eine Schaltfläche zum Löschen eines Bereichs zu erstellen, geben Sie `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)` an.
 
    Klicken Sie auf **Fertig**.
+>[!VIDEO](https://video.tv.adobe.com/v/3421620/adaptive-forms-repeatable-sections)
 
 >[!NOTE]
 >

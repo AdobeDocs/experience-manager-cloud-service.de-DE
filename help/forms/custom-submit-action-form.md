@@ -5,14 +5,19 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 93%
+source-wordcount: '1767'
+ht-degree: 97%
 
 ---
 
 # Erstellen einer benutzerdefinierten Sende-Aktion für adaptive Formulare {#writing-custom-submit-action-for-adaptive-forms}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 Ein adaptives Formular stellt mehrere vordefinierte Sende-Aktionen zur Verfügung. Eine Sende-Aktion gibt Details zu den Aktionen an, die mit den über das adaptive Formular erfassten Daten durchgeführt werden sollen. Beispielsweise das Senden von Daten in einer E-Mail.
 
@@ -78,7 +83,7 @@ Wenn Sie Dateien an das adaptive Formular anhängen, validiert der Server die Da
 
 Nach dem Ausführen der gewünschten Aktion leitet das Sende-Servlet die Abfrage an den Weiterleitungspfad weiter. Eine Aktion verwendet die setForwardPath-API, um den Weiterleitungspfad im Guide Submit-Servlet festzulegen.
 
-Wenn die Aktion keinen Weiterleitungspfad bereitstellt, leitet das Senden-Servlet den Browser mithilfe der Umleitungs-URL um. Der Autor konfiguriert die Umleitungs-URL über die Konfiguration der Danksagungsseite im Dialogfeld für die Bearbeitung adaptiver Formulare. Sie können die Umleitungs-URL auch über die Sende-Aktion oder die setRedirectUrl-API im Guide Submit-Servlet konfigurieren. Sie können die an die Umleitungs-URL gesendeten Anforderungsparameter auch mithilfe der setRedirectParameters -API im Guide Submit-Servlet konfigurieren.
+Wenn die Aktion keinen Weiterleitungspfad bereitstellt, leitet das Senden-Servlet den Browser mithilfe der Umleitungs-URL um. Der Autor konfiguriert die Umleitungs-URL über die Konfiguration der Danksagungsseite im Dialogfeld für die Bearbeitung adaptiver Formulare. Sie können die Umleitungs-URL auch über die Sende-Aktion oder die setRedirectUrl-API im Guide Submit-Servlet konfigurieren. Sie können die Anfrageparameter, die an die Umleitungs-URL gesendet werden, auch mithilfe der setRedirectParameters-API im Guide Submit-Servlet konfigurieren.
 
 >[!NOTE]
 >
@@ -90,7 +95,7 @@ Wenn die Aktion keinen Weiterleitungspfad bereitstellt, leitet das Senden-Servle
 
 Bei einer Sende-Aktion handelt es sich um ein sling:Folder-Objekt, das Folgendes enthält:
 
-* **addfields.jsp**: Dieses Skript stellt die Aktionsfelder bereit, die der HTML-Datei während der Ausgabe hinzugefügt werden. Verwenden Sie dieses Skript, um ausgeblendete Eingabeparameter hinzuzufügen, die während der Übermittlung im Skript post.POST.jsp erforderlich sind.
+* **addfields.jsp**: Dieses Skript stellt die Aktionsfelder bereit, die der HTML-Datei während der Ausgabe hinzugefügt werden. Verwenden Sie dieses Skript, um verborgene Eingabeparameter im Skript „post.POST.jsp“ hinzuzufügen, die während der Übermittlung benötigt werden.
 * **dialog.xml**: Dieses Skript ähnelt dem Dialogfeld für die CQ-Komponente. Es enthält Konfigurationsinformationen, die der Autor anpasst. Die Felder werden im Dialogfeld für die Bearbeitung des adaptiven Formulars auf der Registerkarte „Aktionen übermitteln“ angezeigt, wenn Sie die Sende-Aktion auswählen.
 * **post.POST.jsp**: Das Submit-Servlet ruft dieses Skript mit den Daten, die Sie übermitteln, und den zusätzlichen Daten aus den vorherigen Bereichen auf. Jede Erwähnung einer Aktionsausführung auf dieser Seite impliziert die Ausführung des Skripts „post.POST.jsp“. Um die Übermittlungsaktion mit dem adaptiven Formular zu registrieren, sodass sie im Dialogfeld für die Bearbeitung des adaptiven Formulars angezeigt wird, fügen Sie diese Eigenschaften zum sling:Folder: hinzu.
 
@@ -121,9 +126,9 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Sende-Aktion 
 
    ![Anpassen der E-Mail-Aktion](assets/step3.png)
 
-1. **Stellen Sie die Aktion im Dialogfeld &quot;Bearbeiten des adaptiven Formulars&quot;zur Verfügung.**
+1. **Machen Sie die Aktion im Dialogfeld für die Bearbeitung adaptiver Formulare verfügbar.**
 
-   Fügen Sie die folgenden Eigenschaften im Knoten store_and_email hinzu:
+   Fügen Sie im Knoten „store_and_email“ die folgenden Eigenschaften ein:
 
    * **guideComponentType** vom Typ **String** mit dem Wert **fd/af/components/guidesubmittype**
 
@@ -145,7 +150,7 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Sende-Aktion 
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
-   Zum Senden der E-Mail wird im Code die E-Mail-Adresse des Empfängers aus der Konfiguration gelesen. Um den Konfigurationswert aus dem Skript der Aktion abzurufen, lesen Sie die Eigenschaften der aktuellen Ressource mit dem folgenden Code. Ebenso können Sie die anderen Konfigurationsdateien lesen.
+   Zum Senden der E-Mail wird im Code die E-Mail-Adresse des Empfängers aus der Konfiguration gelesen. Um den Konfigurationswert aus dem Skript der Aktion abzurufen, lesen Sie die Eigenschaften der aktuellen Ressource mit dem folgenden Code. Entsprechend können Sie die anderen Konfigurationsdateien lesen.
 
    `ValueMap properties = ResourceUtil.getValueMap(resource);`
 

@@ -5,14 +5,20 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1017'
 ht-degree: 75%
 
 ---
 
 # Verbessern der Performance umfangreicher Formulare durch verzögertes Laden {#improve-performance-of-large-forms-with-lazy-loading}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/lazy-loading-adaptive-forms.html) |
+| AEM as a Cloud Service | Dieser Artikel |
+
 
 ## Einführung in das verzögerte Laden {#introduction-to-lazy-loading}
 
@@ -27,17 +33,17 @@ Bevor Sie das verzögerte Laden von Fragmenten in Ihrem adaptiven Formular konfi
 * **Identifizieren und Erstellen von Fragmenten**
 Sie können nur adaptive Formularfragmente für das verzögerte Laden konfigurieren. Ein Fragment ist ein unabhängiges Segment, das sich außerhalb eines adaptiven Formulars befindet und in mehreren Formularen wiederverwendet werden kann. Somit besteht der erste Schritt beim Implementieren des verzögerten Ladens in der Bestimmung der logischen Abschnitte in einem Formular und deren Konvertierung in Fragmente. Sie können ein Fragment von Grund auf neu erstellen oder einen vorhandenen Formularbereich als Fragment speichern.
 
-   <!--For more information about creating fragments, see [Adaptive Form Fragments](adaptive-form-fragments.md).-->
+  <!--For more information about creating fragments, see [Adaptive Form Fragments](adaptive-form-fragments.md).-->
 
 * **Identifizieren und Markieren globaler Werte**
 Zu formularbasierten Transaktionen gehören dynamische Elemente, die relevante Daten von Benutzern erfassen und verarbeiten und dadurch das Ausfüllen des Formulars vereinfachen. Beispiel: Ihr Formular enthält Feld A in Fragment X, dessen Wert die Gültigkeit von Feld B in einem anderen Fragment bestimmt. Wenn in diesem Fall Fragment X für verzögertes Laden markiert ist, muss der Wert von Feld A verfügbar sein, um Feld B zu validieren, selbst wenn Fragment X nicht geladen wird. Um dies zu erreichen, können Sie Feld A als global markieren, wodurch sichergestellt wird, dass der zugehörige Wert für die Validierung von Feld B verfügbar ist, wenn Fragment X nicht geladen wird.
 
-   Weitere Informationen dazu, wie Sie einen Feldwert als „global“ kennzeichnen, finden Sie unter [Konfigurieren von verzögertem Laden](lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
+  Weitere Informationen dazu, wie Sie einen Feldwert als „global“ kennzeichnen, finden Sie unter [Konfigurieren von verzögertem Laden](lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
 * **Erstellen von Regeln zur Steuerung der Sichtbarkeit von Feldern**
 Formulare enthalten Felder und Abschnitte, die nicht für alle Benutzer und Bedingungen gelten. Autoren und Entwickler von Forms verwenden Sichtbarkeits- oder Einblenden-Ausblendungsregeln, um ihre Sichtbarkeit anhand von Benutzereingaben zu steuern. Beispielsweise wird das Feld &quot;Office Address&quot;nicht den Benutzern angezeigt, die im Feld Beschäftigungsstatus in einem Formular die Option Arbeitslos auswählen. Weitere Informationen zum Erstellen von Regeln finden Sie unter [Verwenden des Regeleditors](rule-editor.md).
 
-   Sie können Sichtbarkeitsregeln in verzögert geladenen Fragmenten so nutzen, dass bedingte Felder nur angezeigt werden, wenn sie benötigt werden. Markieren Sie außerdem das bedingte Feld als „global“, um im Ausdruck für die Sichtbarkeit des verzögert geladenen Fragments darauf zu verweisen.
+  Sie können Sichtbarkeitsregeln in verzögert geladenen Fragmenten so nutzen, dass bedingte Felder nur angezeigt werden, wenn sie benötigt werden. Markieren Sie außerdem das bedingte Feld als „global“, um im Ausdruck für die Sichtbarkeit des verzögert geladenen Fragments darauf zu verweisen.
 
 ## Konfigurieren von verzögertem Laden {#configuring-lazy-loading}
 
@@ -81,4 +87,4 @@ Weiterhin sollten Sie Folgendes beim Entwickeln von Skripten für das verzögert
 * Verwenden Sie die global verfügbare Eigenschaft von Feldern, um den Wert von Feldern in einem Bereich für verzögertes Laden für alle anderen Bereiche eines Formulars verfügbar zu machen.
 * Weiterleiten Sie den Referenzwert eines Felds in einem verzögerten Bereich nicht weiter, unabhängig davon, ob das Feld global über Fragmente hinweg markiert ist oder nicht.
 * Verwenden Sie die Funktion zum Zurücksetzen des Bedienfelds, um alle im Bedienfeld sichtbaren Elemente mithilfe des folgenden Klickausdrucks zurückzusetzen.\
-   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()
+  guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()

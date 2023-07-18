@@ -2,14 +2,19 @@
 title: Generieren eines Datensatzdokuments für adaptive Formulare
 description: Hier erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument (Document of Record, DoR) für adaptive Formulare generieren können.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
-workflow-type: ht
-source-wordcount: '4066'
-ht-degree: 100%
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+workflow-type: tm+mt
+source-wordcount: '4086'
+ht-degree: 99%
 
 ---
 
 # Generieren eines Datensatzdokuments für adaptive Formulare
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 ## Übersicht {#overview}
 
@@ -359,6 +364,7 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
       * **Text des Haftungsausschlusses**: Text des Haftungsausschlusses.
 
       ![Eigenschaften der Musterseite](/help/forms/assets/masterpagepropertiesdor.png)
+
    >[!NOTE]
    >
    >Wenn Sie eine Vorlage für ein adaptives Formular mit einer Designer-Version vor 6.3 verwenden, müssen Sie sicherstellen, dass im Stamm-Unterformular der Vorlage für das adaptive Formular Folgendes vorhanden ist, damit Akzentfarbe und Schriftfamilie funktionieren:

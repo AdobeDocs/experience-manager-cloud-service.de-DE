@@ -5,14 +5,20 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '4120'
-ht-degree: 79%
+source-wordcount: '4140'
+ht-degree: 82%
 
 ---
 
 # Arbeiten mit Formulardatenmodellen {#work-with-form-data-model}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html?lang=de) |
+| AEM as a Cloud Service | Dieser Artikel |
+
 
 ![data-integration](do-not-localize/data-integeration.png)
 
@@ -222,7 +228,7 @@ Wenn Sie beispielsweise das Attribut `petid=100` in der Anforderung angeben, wer
 
 ## Hinzufügen von Verknüpfungen {#add-associations}
 
-In der Regel gibt es Verbindungen, die zwischen Datenmodellobjekten in einer Datenquelle erstellt werden. Die Zuordnung kann 1:1 oder 1:n sein. Beispielsweise kann einem Mitarbeiter mehrere abhängige Elemente zugeordnet sein. Dies wird als Eins-zu-Viele-Verknüpfung bezeichnet und in der Form `1:n` auf der Linie dargestellt, die die zugeordneten Datenmodellobjekte verbindet. Wenn jedoch eine Verknüpfung einen eindeutigen Mitarbeiternamen für eine gegebene Mitarbeiter-ID zurückgibt, wird dies als Eins-zu-Eins-Verknüpfung bezeichnet.
+In der Regel gibt es Verbindungen, die zwischen Datenmodellobjekten in einer Datenquelle erstellt werden. Die Zuordnung kann 1:1 oder 1:n sein. Beispielsweise können einem Mitarbeitenden mehrere abhängige Elemente zugeordnet sein. Dies wird als Eins-zu-Viele-Verknüpfung bezeichnet und in der Form `1:n` auf der Linie dargestellt, die die zugeordneten Datenmodellobjekte verbindet. Wenn jedoch eine Verknüpfung einen eindeutigen Mitarbeiternamen für eine gegebene Mitarbeiter-ID zurückgibt, wird dies als Eins-zu-Eins-Verknüpfung bezeichnet.
 
 Wenn Sie verknüpfte Datenmodellobjekte in einer Datenquelle einem Formulardatenmodell hinzufügen, werden ihre Verknüpfungen beibehalten und mit Pfeillinien verbunden angezeigt. In einem Formulardatenmodell können Sie Verknüpfungen zwischen Datenmodellobjekten über unterschiedliche Datenquellen hinweg hinzufügen.
 
@@ -246,9 +252,9 @@ So fügen Sie eine Verknüpfung hinzu:
 
    Dialogfeld &quot;Verknüpfung hinzufügen&quot;
 
-1. Im Bereich Zuordnung hinzufügen :
+1. Im Bereich Verknüpfung hinzufügen:
 
-   * Geben Sie einen Titel für die Verknüpfung an.
+   * Geben Sie einen Titel für die Verknüpfung ein.
    * Wählen Sie den Verknüpfungstyp: **[!UICONTROL Eins-zu-Eins]** oder **[!UICONTROL Eins-zu-Viele]**.
    * Wählen Sie das Datenmodellobjekt aus, mit dem verknüpft werden soll.
    * Wählen Sie den Lese-Service, der die Daten aus dem ausgewählten Modellobjekt lesen soll. Das Argument des Lese-Service wird angezeigt. Bearbeiten Sie, um das Argument bei Bedarf zu ändern und es an die Eigenschaft des zu verknüpfenden Datenmodellobjekts zu binden.
@@ -299,7 +305,7 @@ So bearbeiten Sie Eigenschaften:
 
 ### Erstellen berechneter Eigenschaften {#computed}
 
-Eine berechnete Eigenschaft ist diejenige, deren Wert anhand einer Regel oder eines Ausdrucks berechnet wird. Mithilfe einer Regel können Sie den Wert einer berechneten Eigenschaft auf eine Zeichenfolge in Textform, eine Zahl, ein Ergebnis eines mathematischen Ausdrucks oder den Wert einer anderen Eigenschaft im Formulardatenmodell festlegen.
+Eine berechnete Eigenschaft ist diejenige, deren Wert anhand einer Regel oder eines Ausdrucks berechnet wird. Mithilfe einer Regel können Sie den Wert einer berechneten Eigenschaft auf ein Literal, eine Zahl, das Ergebnis eines mathematischen Ausdrucks oder den Wert einer anderen Eigenschaft im Formulardatenmodell festlegen.
 
 Beispielsweise können Sie eine berechnete Eigenschaft **FullName** erstellen, deren Wert ein Ergebnis der Verkettung der vorhandenen Eigenschaften **FirstName** und **LastName** ist. Gehen Sie dazu wie folgt vor:
 

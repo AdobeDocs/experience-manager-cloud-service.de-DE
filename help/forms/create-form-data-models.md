@@ -5,14 +5,20 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 1f3104d4a986018675f751afa04fe0ed3b7f5c26
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 94%
+source-wordcount: '1551'
+ht-degree: 95%
 
 ---
 
 # Erstellen von Formulardatenmodellen {#create-form-data-model}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=de) |
+| AEM as a Cloud Service | Dieser Artikel |
+
 
 ![Datenintegration](do-not-localize/data-integeration.png)
 
@@ -77,7 +83,7 @@ Führen Sie folgende Schritte aus, um Datenquellen zu einem vorhandenen Formular
    * Um eine vorhandene Datenquelle durch eine andere Datenquelle desselben Typs zu ersetzen, tippen Sie auf das Symbol **[!UICONTROL Bearbeiten]** für die Datenquelle und wählen Sie diese aus der Liste der verfügbaren Datenquellen aus.
    * Um eine vorhandene Datenquelle zu löschen, tippen Sie auf das Symbol **[!UICONTROL Löschen]** für die Datenquelle. Das Symbol „Löschen“ ist deaktiviert, wenn ein Datenmodellobjekt in der Datenquelle im Formulardatenmodell hinzugefügt wird.
 
-      ![fdm-properties](assets/fdm-properties.png)
+     ![fdm-properties](assets/fdm-properties.png)
 
 1. Tippen Sie auf **[!UICONTROL Speichern und schließen]**, um die Aktualisierungen zu speichern.
 
@@ -93,7 +99,7 @@ Wenn das [!UICONTROL Formulardatenmodell] Cloud-Konfigurationen zum Speichern vo
 
 Dazu müssen Sie eine OSGi-Konfiguration erstellen, die Datenquellenparameter-Wert-Paare enthält. Dadurch wird dasselbe Paar aus der [!UICONTROL Formulardatenmodell]-Cloud-Konfiguration zur Laufzeit überschrieben. Da die OSGi-Konfigurationen diese Ausführungsmodi standardmäßig unterstützen, können Sie einen Datenquellenparameter basierend auf dem Ausführungsmodus in andere Werte überschreiben.
 
-So aktivieren Sie implementierungsspezifische Cloud-Konfigurationen im [!UICONTROL Formulardatenmodell]:
+So aktivieren Sie bereitstellungsspezifische Cloud-Konfigurationen im [!UICONTROL Formulardatenmodell]:
 
 1. Erstellen Sie die Cloud-Konfiguration auf der lokalen Entwicklungsinstanz. Ausführliche Anweisungen finden Sie unter [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md).
 
@@ -108,8 +114,7 @@ So aktivieren Sie implementierungsspezifische Cloud-Konfigurationen im [!UICONTR
 
 1. Erstellen Sie eine kontextabhängige Apache Sling-Konfiguration. So erstellen Sie die OSGi-Konfiguration:
    1. **Richten Sie die OSGi-Konfigurationsdateien im [!DNL Experience Manager]-Projektarchetypen ein.**
-Erstellen von OSGi-Werkskonfigurationsdateien mit PID 
-`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Erstellen Sie eine Datei mit demselben Namen unter jedem Ausführungsmodusordner, in dem die Werte pro Ausführungsmodus geändert werden müssen. Weitere Informationen finden Sie unter [Konfigurieren von OSGi für [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+Erstellen von OSGi-Werkskonfigurationsdateien mit PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Erstellen Sie eine Datei mit demselben Namen unter jedem Ausführungsmodusordner, in dem die Werte pro Ausführungsmodus geändert werden müssen. Weitere Informationen finden Sie unter [Konfigurieren von OSGi für [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
    1. **Legen Sie das OSGi-Konfigurations-JSON fest.** So verwenden Sie den Apache Sling Context-Aware Configuration Override Provider (kontextabhängiger Apache Sling-Konfigurationsüberschreibungs-Anbieter):
       1. Wählen Sie in `/system/console/configMgr` der lokalen Entwicklungsinstanz die werkseitige OSGi-Konfiguration mit dem Namen **[!UICONTROL Apache Sling Context-Aware Configuration Override Provider: OSGi-Konfiguration]** aus.
@@ -123,7 +128,6 @@ Mehrere Überschreibungen können durch die Auswahl von **[!UICONTROL +]** hinzu
       1. Ändern Sie den Wert von `newURL` basierend auf der Umgebung (oder dem Ausführungsmodus).
       1. Um den geheimen Wert basierend auf dem Ausführungsmodus zu ändern, kann die geheime Variable mithilfe der [Cloud Manager-API](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) erstellt und später in der [OSGi-Konfiguration](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values) referenziert werden.
 Wenn dieser Projektarchetyp über die CM-Pipeline bereitgestellt wird, liefert das Überschreiben unterschiedliche Werte für verschiedene Umgebungen (oder den Ausführungsmodus).
-
       >[!NOTE]
       >
       >[!DNL Adobe Managed Service]-Benutzerinnen und -Benutzer können die geheimen Werte mithilfe der Kryptounterstützung verschlüsseln (weitere Informationen finden Sie unter [Verschlüsselungsunterstützung für Konfigurationseigenschaften](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=de#enabling-encryption-support)) und verschlüsselten Text in den Wert einfügen, nachdem [kontextabhängige Konfigurationen in Service Pack 6.5.13.0 verfügbar sind](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=de#runmode-specific-context-aware-config).
