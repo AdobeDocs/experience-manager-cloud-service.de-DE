@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen
 description: Erfahren Sie mehr über die Typen von Umgebungen, die Sie erstellen können, und wie Sie sie für Ihr Cloud Manager-Projekt erstellen.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
 workflow-type: tm+mt
-source-wordcount: '2274'
-ht-degree: 37%
+source-wordcount: '2558'
+ht-degree: 33%
 
 ---
 
@@ -172,6 +172,38 @@ Nach der Aktivierung können Sie Inhalte im Vorschau-Service veröffentlichen, i
 >[!NOTE]
 >
 >Ihre Umgebung muss auf AEM Version `2021.05.5368.20210529T101701Z` oder höher ausgeführt werden, um den Vorschau-Service nutzen zu können. Vergewissern Sie sich, dass in Ihrer Umgebung eine Aktualisierungs-Pipeline erfolgreich ausgeführt wurde, damit Sie den Vorschaudienst verwenden können.
+
+### Status weiterer Veröffentlichungsregionen {#additional-region-status}
+
+Wenn Sie zusätzliche Veröffentlichungsregionen aktiviert haben, können Sie den Status dieser Regionen über die **Umgebungen** Karte.
+
+1. Im **Übersicht** Seite, suchen Sie die **Umgebungen** Karte.
+
+1. Im **Umgebungen** -Karte, **Status** gibt an, ob es Probleme mit den konfigurierten zusätzlichen Veröffentlichungsregionen gibt. Klicken Sie auf **Info** für Details zu den Regionen.
+
+   ![Zusätzliche Statusinformationen zu Veröffentlichungsregionen auf der Karte Umgebungen](assets/additional-publish-region-status-environments-card.png)
+
+Alternativ können Sie über die **Umgebungen** Registerkarte.
+
+1. Im **Übersicht** Seite, wählen Sie die **Umgebungen** Registerkarte.
+
+1. Im **Umgebungen** im linken Navigationsbereich die Umgebung auswählen, die Sie abfragen möchten.
+
+1. Sobald eine Umgebung ausgewählt ist:
+
+   * Die **Umgebungsinformationen** zeigt an, welche Regionen für die ausgewählte Umgebung konfiguriert sind.
+   * Die **Status** Spalte **Umgebungssegmente** gibt an, ob es Probleme mit den konfigurierten zusätzlichen Veröffentlichungsregionen gibt. Bewegen Sie den Mauszeiger über den Status, um Details zu Problemen zu erhalten.
+
+   ![Zusätzliche Statusinformationen zu Veröffentlichungsregionen auf der Registerkarte Umgebungen](assets/additional-publish-region-status-environments-tab.png)
+
+Wenn Probleme mit zusätzlichen Veröffentlichungsregionen gemeldet werden:
+
+1. Seien Sie bitte geduldig! Cloud Manager versucht fortlaufend, die Region wiederherzustellen, und kann jederzeit verfügbar sein.
+1. Wenn das Problem nach einigen Stunden besteht, können Sie den zusätzlichen Veröffentlichungsbereich entfernen und ihn (entweder dieselbe Region oder eine andere Region) erneut hinzufügen, um eine vollständige Bereitstellung Trigger.
+
+Wie lange Sie darauf warten, dass sich das System von selbst erholt, bevor Sie zusätzliche Maßnahmen ergreifen, hängt von den Auswirkungen ab, die der Ausfall dieser Region auf Ihre Systeme hat.
+
+Beachten Sie, dass in jedem Fall [Der Traffic wird immer in die nächstgelegene Region weitergeleitet, die online ist.](/help/operations/additional-publish-regions.md) Wenn weiterhin Probleme auftreten, wenden Sie sich an die Kundenunterstützung von Adobe.
 
 ## Aktualisieren von Umgebungen {#updating-dev-environment}
 
