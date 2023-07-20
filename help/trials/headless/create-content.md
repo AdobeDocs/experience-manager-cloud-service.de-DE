@@ -4,10 +4,10 @@ description: Nutzen Sie ihr zuvor erstelltes Inhaltsfragmentmodell, um Inhalte z
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 87%
+source-wordcount: '702'
+ht-degree: 76%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 87%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="Erstellen neuer Inhalte"
+>title="Headless-Inhalt erstellen"
 >abstract="Sie erfahren, wie Sie unter Verwendung des im vorherigen Modul erstellten Modells Inhalte erstellen können, die für die Seitenbearbeitung oder als Grundlage für Headless-Inhalte verwendet werden können."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="Starten der Inhaltsfragmentkonsole"
->abstract="Die Erstellung konsistenter, qualitativ hochwertiger Inhalte, die nahtlos auf all Ihren Apps und Websites funktionieren, liefert hervorragende Customer Experiences. Dieses Modul führt Sie durch die Erstellung eines ersten Inhaltsfragments.<br><br>Klicken Sie unten auf die Schaltfläche, um dieses Modul in einer neuen Registerkarte zu starten. Folgen Sie danach diesem Handbuch."
+>abstract="Die Erstellung konsistenter, qualitativ hochwertiger Inhalte, die nahtlos auf all Ihren Apps und Websites funktionieren, liefert hervorragende Customer Experiences. Dieses Modul führt Sie durch die Erstellung Ihres ersten Headless-Inhalts mithilfe der Inhaltsfragmentkonsole.<br><br>Klicken Sie unten auf die Schaltfläche, um dieses Modul in einer neuen Registerkarte zu starten. Folgen Sie danach diesem Handbuch."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="Gute gemacht! In diesem Modul haben Sie gelernt, auf der Basis Ihres zuvor erstellten Modells ein Inhaltsfragment zu erstellen. Sie wissen jetzt, wie Content Teams Inhalte für Apps und Websites unabhängig von Entwicklungszyklen erstellen und verwalten können."
+>title="Gute gemacht! In diesem Modul haben Sie erfahren, wie Sie Headless-Inhalte als Inhaltsfragment basierend auf dem zuvor erstellten Modell erstellen können. Sie wissen jetzt, wie Content Teams Inhalte für Apps und Websites unabhängig von Entwicklungszyklen erstellen und verwalten können."
 >abstract=""
 
 ## Erstellen eines Inhaltsfragments {#create-fragment}
@@ -34,6 +34,8 @@ ht-degree: 87%
 Inhaltsfragmente stellen Ihren Headless-Inhalt dar und basieren auf vordefinierten Strukturen, den sogenannten Inhaltsfragmentmodellen. Sie haben ein Modell bereits in einem vorherigen Modul erstellt.
 
 In diesem Modul erstellen Sie mithilfe der Inhaltsfragmentkonsole ein neues Inhaltsfragment, das auf diesem Modell basiert. Stellen Sie sich die Inhaltsfragmentkonsole als Ihre Bibliothek vor, in der Headless-Content verfügbar ist. Verwenden Sie die Inhaltsfragmentkonsole, um neue Inhaltsfragmente zu erstellen und vorhandene Fragmente zu verwalten.
+
+Die Inhaltsfragmentkonsole wird verwendet, um Headless-Inhalte über Versandkanäle hinweg und unabhängig vom Kontext zu erstellen und zu bearbeiten. Dies kann in vielen Authoring-Fällen die effektivste Methode sein. In einem späteren Modul werden wir die Bearbeitung von Headless Content im Kontext und an Ort und Stelle untersuchen.
 
 1. Tippen oder klicken Sie oben rechts in der Konsole auf die Schaltfläche **Erstellen**.
 

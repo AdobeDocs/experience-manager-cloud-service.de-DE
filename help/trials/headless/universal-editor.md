@@ -1,22 +1,22 @@
 ---
-title: Universeller Editor
-description: Erfahren Sie, wie Sie mit dem universellen Editor beliebige Aspekte Ihres Inhalts in beliebigen Implementierungen bearbeiten können.
+title: Bearbeiten im Kontext
+description: Erfahren Sie, wie Sie mit dem universellen Editor beliebige Aspekte Ihres Inhalts an Ort und Stelle und im Kontext in jeder Implementierung bearbeiten können.
 hidefromtoc: true
 index: false
-source-git-commit: 372e9c6a10f7769c0db52d5909f400ce5af84b85
+source-git-commit: 4dd0998862baf3e1d0c8ed2d42006acfcf5d0873
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 12%
+source-wordcount: '797'
+ht-degree: 6%
 
 ---
 
 
-# Universeller Editor {#universal-editor}
+# Bearbeiten im Kontext {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="Universeller Editor"
->abstract="Erfahren Sie, wie Ihre Headless-Apps den universellen Editor instrumentieren können, um Ihren Autorinnen und Autoren reibungsarme, kontextbezogene Bearbeitung zur Verfügung zu stellen."
+>title="Bearbeiten im Kontext"
+>abstract="Erfahren Sie, wie Ihre Headless-Apps den universellen Editor nutzen können, um Ihre Autoren durch kontextbezogene Bearbeitung mit wenig Reibung zu versorgen."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -25,18 +25,38 @@ ht-degree: 12%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="In diesem Modul haben Sie erfahren, wie Sie Inhalte mit dem universellen Editor anpassen."
+>title="In diesem Modul haben Sie erfahren, wie Sie Inhalte im Kontext und im Kontext mit dem universellen Editor anpassen können."
 >abstract=""
 
-## Verwenden Sie den Emulator, um Ihren Inhalt so anzuzeigen, wie es Ihre Reader tun {#emulators}
+## Text im Kontext bearbeiten {#edit-text}
 
-Mit dem universellen Editor können Sie in seinem Kontext mit Ihren Inhalten interagieren, den Inhalt so anzeigen, wie er Ihren Endbenutzern bereitgestellt wird, und ihn direkt bearbeiten.
+Die Bearbeitung von Kontext und Kontext kann häufig von Vorteil gegenüber der strukturierten Headless-Content-Bearbeitung sein, wie sie im Inhaltsfragment-Editor, wie in früheren Modulen zu sehen war, stattfand.
 
-1. Der universelle Editor stellt Ihre Inhalte so dar, wie sie für Ihre Leser unabhängig vom Gerät angezeigt werden. Standardmäßig rendert der Editor die Desktop-Version Ihres Inhalts. Tippen oder klicken Sie oben rechts im Editor auf die Schaltfläche Emulator , um das Zielgerät zu ändern.
+Mit dem universellen Editor können Sie Ihren Text im Kontext und an Ort und Stelle bearbeiten und so einfache und intuitive Inhaltserstellung ermöglichen.
+
+1. Der Editor sollte standardmäßig in **Text** -Modus. Wenn nicht, tippen oder klicken Sie auf die **Text** in der Modusleiste auf der linken Seite des Editors.
+
+1. Tippen oder klicken Sie auf den Titel des neuesten Artikels, um ihn zu bearbeiten.
+
+   ![Der universelle Editor](assets/do-not-localize/ue-text-mode.png)
+
+1. Die Komponente wird wie durch einen blauen Rand ausgewählt, wobei eine Registerkarte angibt, dass es sich um eine Textkomponente handelt. Ein Cursor befindet sich im Rahmen, der auf die Texteingabe wartet. Ändern Sie den Text in `Aloha Spirit in Lofoten`.
+
+   ![Bearbeiten von Text im universellen Editor](assets/do-not-localize/ue-edit-text-2.png)
+
+1. Drücken Sie die Eingabetaste oder tippen oder klicken Sie außerhalb der Textkomponente auf die Eingabetaste, damit Ihre Änderungen automatisch gespeichert werden.
+
+Der Universal Editor speichert Ihre Änderungen automatisch in der Authoring-Umgebung. Sie müssen sie noch veröffentlichen, damit Ihre Leser sie sehen können, was wir in einem späteren Schritt tun werden.
+
+## Erleben Sie Ihren Inhalt so wie Ihre Reader {#emulators}
+
+Mit dem universellen Editor können Sie mit Ihren Inhalten in ihrem Kontext interagieren und sehen, wie die Inhalte auf den Geräten Ihrer Benutzer bereitgestellt werden.
+
+1. Standardmäßig rendert der Editor die Desktop-Version Ihres Inhalts. Tippen oder klicken Sie oben rechts im Editor auf die Schaltfläche Emulator , um das Zielgerät zu ändern.
 
    ![Menüelement &quot;Emulator&quot;](assets/do-not-localize/ue-emulator-1.png)
 
-1. Reader können sich auf verschiedenen Geräten mit unterschiedlichen Seitenverhältnissen befinden, sodass der Editor über Emulationsmodi verfügt. Um zu sehen, wie die Seite Benutzern auf einem Mobilgerät angezeigt wird, wählen Sie die Option Mobilgerät im Hochformat aus.
+1. Reader können sich auf verschiedenen Geräten mit unterschiedlichen Seitenverhältnissen befinden, sodass der Editor Emulationsmodi anbietet, um zu sehen, wie die Seite Benutzern angezeigt wird. Wählen Sie beispielsweise die Mobilgeräteoption im Hochformat aus.
 
    ![Menüelement &quot;Emulator&quot;](assets/do-not-localize/ue-emulator-3.png)
 
@@ -46,49 +66,42 @@ Mit dem universellen Editor können Sie in seinem Kontext mit Ihren Inhalten int
 
 Sie können auch genaue Abmessungen für den Emulator angeben und das emulierte Gerät drehen, um Ihren Inhalt auf einem beliebigen Zielgerät anzuzeigen.
 
-## Text im Kontext bearbeiten {#edit-text}
-
-Sie können Ihren Text kontextbezogen und direkt bearbeiten und so einfache und intuitive Inhaltserstellung ermöglichen.
-
-1. Tippen oder klicken Sie auf den Titel des neuesten Artikels, um ihn zu bearbeiten.
-
-1. Die Komponente wird wie durch einen blauen Rand ausgewählt, wobei eine Registerkarte angibt, dass es sich um eine Textkomponente handelt. Ein Cursor befindet sich im Rahmen, der auf die Texteingabe wartet. Ändern Sie den Text in `Aloha Spirit in Lofoten`.
-
-   ![Bearbeiten von Text im universellen Editor](assets/do-not-localize/ue-edit-text-2.png)
-
-1. Drücken Sie die Eingabetaste oder tippen oder klicken Sie außerhalb der Textkomponente auf die Eingabetaste, damit Ihre Änderungen automatisch gespeichert werden.
-
-Der Universal Editor speichert Ihre Änderungen automatisch, sie bleiben jedoch nur in der Authoring-Umgebung erhalten. Sie müssen sie noch veröffentlichen, damit Ihre Leser sie sehen können.
-
 ## Vorschau und Veröffentlichung {#preview}
 
-Der Editor rendert den Kontext so, wie es Ihre Leser sehen werden. Da Sie zum Auswählen auf den Inhalt tippen oder klicken müssen, können Sie im Editor nicht auf Links folgen oder mit dem Inhalt interagieren, indem Sie auf tippen oder klicken. Im Vorschaumodus können Sie den Inhalt so erleben, wie er vor der Veröffentlichung veröffentlicht wird.
+Da Sie auf Ihren Inhalt tippen oder klicken müssen, um ihn im Editor auszuwählen, können Sie im Editor weder Links folgen noch mit Ihrem Inhalt interagieren, indem Sie auf tippen oder klicken, während sich der Editor im Bearbeitungsmodus befindet. Im Vorschaumodus können Sie den Links in Ihrem Inhalt folgen und ihn so erleben, wie es Ihre Benutzer vor der Veröffentlichung tun würden.
 
 1. Tippen oder klicken Sie in der Modusleiste auf der linken Seite des Editors auf **Vorschau**.
 
-1. Die Seite wird im Vorschaumodus in einer neuen Browser-Registerkarte geöffnet.
+1. Tippen oder klicken Sie jetzt auf **Mehr dazu** -Link für den Hauptartikel.
 
-1. Überprüfen Sie die Änderungen. Wenn alles gut aussieht, kehren Sie zur Registerkarte Universal Editor Ihres Browsers zurück und tippen oder klicken Sie auf . **Veröffentlichen**.
+   ![Vorschaumodus](assets/do-not-localize/ue-preview-publish-1.png)
 
-   ![Menüelemente für Vorschau und Veröffentlichung](assets/do-not-localize/ue-preview-publish.png)
+1. Durchsuchen Sie den Artikel und verwenden Sie dann das **Zurück** -Link, um zur Hauptseite zurückzukehren.
+
+   ![Zurück zur Hauptseite über den Zurück-Link](assets/do-not-localize/ue-preview-publish-3.png)
+
+1. Tippen oder klicken Sie jetzt auf **Veröffentlichen** rechts oben im Editor, um den Inhalt zu veröffentlichen.
+
+   ![Menüelemente für Vorschau und Veröffentlichung](assets/do-not-localize/ue-preview-publish-4.png)
 
 Ihr Inhalt wird veröffentlicht.
 
 ## Bearbeiten von Inhaltsfragmenten {#editing-fragments}
 
-Mit dem universellen Editor erhalten Sie auch schnellen Zugriff auf den Inhaltsfragment-Editor, um Ihre Inhaltserstellung zu beschleunigen.
+Um das Authoring-Erlebnis für Inhalte zu beschleunigen, wenn die strukturierte Bearbeitung von Headless-Inhalten günstiger ist als die Bearbeitung im Kontext, bietet Ihnen der universelle Editor auch schnellen Zugriff auf den Inhaltsfragment-Editor.
 
 1. Scrollen Sie weiter unten auf der Seite zum **Abenteuer** Abschnitt.
 
 1. Wählen Sie in der Modusleiste auf der linken Seite des Editors die Option **Komponenten**. Auf diese Weise können Sie Seitenkomponenten im Editor auswählen.
 
-1. Tippen oder klicken Sie auf eines der Abenteuer, um es auszuwählen. Eine neue **Bearbeiten** in der Modusleiste angezeigt.
+1. Tippen oder klicken Sie auf eines der Abenteuer, um es auszuwählen.
 
-   * Beachten Sie die blaue Umrisslinie. Die Registerkarte sollte lesen **reference** wenn ein Inhaltsfragment ausgewählt ist.
-   * Da der universelle Editor die Auswahl eines beliebigen Objekts auf der Seite ermöglicht, können Komponenten, die Teile eines Inhaltsfragments sind, auch einzeln ausgewählt werden.
+   * Beachten Sie den blauen Umriss der ausgewählten Komponente. Die Registerkarte sollte lesen **reference** wenn ein Inhaltsfragment ausgewählt ist.
+   * Da der universelle Editor die Auswahl eines beliebigen Objekts auf der Seite ermöglicht, können Komponenten, die Teil eines Inhaltsfragments sind, auch einzeln ausgewählt werden. Tippen oder klicken Sie an die Stelle in der Abbildung, um die gesamte Inhaltsfragment-Komponente auszuwählen.
 
-   ![Auswählen von Inhaltsfragmenten im universellen Editor](assets/do-not-localize/ue-content-fragments.png)
+1. Eine neue **Bearbeiten** in der Modusleiste angezeigt. Tippen oder klicken Sie auf **Bearbeiten** -Symbol, um den Inhaltsfragment-Editor auf einer neuen Registerkarte zu öffnen.
 
-1. Tippen oder klicken Sie auf **Bearbeiten** in der Modusleiste, um den Inhaltsfragment-Editor auf einer neuen Registerkarte zu öffnen.
+![Auswählen von Inhaltsfragmenten im universellen Editor](assets/do-not-localize/ue-content-fragments.png)
+
 
 Auf der neuen Registerkarte können Sie jetzt das Inhaltsfragment bearbeiten, das Sie im universellen Editor ausgewählt haben.
