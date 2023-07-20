@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente und die GraphQL-API als Head
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b9b9cf79173a0ae486bd5d8fcbc1fec48c0b2bc8
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 94%
+source-wordcount: '1086'
+ht-degree: 96%
 
 ---
 
@@ -67,10 +67,6 @@ Sie beginnen mit dem GraphQL Explorer auf einer neuen Registerkarte. Hier könne
    ![Listenabfrage](assets/do-not-localize/list-query-1-3-4-5.png)
 
 Sie haben soeben eine Listenabfrage für eine vollständige Liste aller Inhaltsfragmente validiert. Mit diesem Prozess wird sichergestellt, dass die Antwort dem entspricht, was Ihre App erwartet, und Ergebnisse liefert, die veranschaulichen, wie Ihre Apps und Websites die in AEM erstellten Inhalte abrufen.
-
->[!NOTE]
->
->Wenn Sie die **AEM Demo Assets** -Endpunkt aus der Dropdown-Liste, wenden Sie sich an die Kundenunterstützung der Adobe oder kontaktieren Sie die [AEM Testen des Slack-Kanals.](https://adobe-dx-support.slack.com/de)
 
 ## Abfrage eines bestimmten Elements des Beispielinhalts {#bypath-query}
 
