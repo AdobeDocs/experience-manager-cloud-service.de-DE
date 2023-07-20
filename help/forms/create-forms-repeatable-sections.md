@@ -2,10 +2,10 @@
 title: Wiederholbarkeit im adaptiven Formular (Kernkomponenten)
 description: Verwenden Sie die Wiederholbarkeitsfunktion der Bedienfeldkomponenten, um ähnliche Abschnitte in einem adaptiven Formular zu wiederholen.
 role: Architect, Developer, Admin, User
-source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
+source-git-commit: fcdb96a6bbe8ff8761293eedc0d38efaecb56037
 workflow-type: tm+mt
-source-wordcount: '1410'
-ht-degree: 27%
+source-wordcount: '1391'
+ht-degree: 26%
 
 ---
 
@@ -131,7 +131,11 @@ Das übergeordnete Element des Bedienfelds sollte eine Schaltfläche zum Lösche
 >`Panel1.instanceManager.instances[1].textbox.value`
 >
 >
->Weitere Informationen finden Sie unter: Klasse: InstanceManager#instances in der [AEM Forms Java API-Referenz](https://adobe.com/go/learn_aemforms_documentation_63_de).
+>
+
+<!-- 
+>For more information, see: Class: InstanceManager#instances in [AEM Forms Java API reference](https://adobe.com/go/learn_aemforms_documentation_63).      
+-->
 
 >[!NOTE]
 >
@@ -221,7 +225,7 @@ Im folgenden Code verwendet der `SampleType`Bereich die Eigenschaften „minOccu
 ```
 
 
-## verwandte Artikel
+## Verwandte Artikel
 
 * [Erstellen eines adaptiven Formulars](creating-adaptive-form-core-components.md)
 * [Erstellen von Stilen oder Designs für Ihre Formulare](using-themes-in-core-components.md)
