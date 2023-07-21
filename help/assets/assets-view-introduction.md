@@ -1,16 +1,16 @@
 ---
-title: Wie profitiert die Assets-Ansicht von Ihnen?
-description: Erfahren Sie mehr über die wichtigsten Vorteile der Asset-Ansicht.
+title: Wovon profitieren Sie von der neuen AEM Assets-Benutzeroberfläche oder der Assets-Ansicht in AEM?
+description: Erfahren Sie mehr über die wichtigsten Vorteile der neuen AEM Assets-Benutzeroberfläche oder der neuen Asset-Ansicht in AEM
 mini-toc-levels: 3
-source-git-commit: 97b6f66f2d19b85ec0a71eda756aaa334ea5da57
+source-git-commit: 9980064be3ba7e8a15b95ac8ef6e23ba0f258cb0
 workflow-type: tm+mt
-source-wordcount: '1064'
-ht-degree: 12%
+source-wordcount: '1117'
+ht-degree: 11%
 
 ---
 
 
-# Neu: Asset-Ansicht {#assets-view}
+# Einführung in die neue AEM Assets-Benutzeroberfläche {#assets-view}
 
 ![Bereitstellen von Assets Essentials](assets/banner-image.jpg)
 
@@ -18,9 +18,9 @@ In der modernen, schnelllebigen Digital-First-Umgebung, in der die Erstellung un
 
 Weitere Informationen zu den verfügbaren personabasierten Erlebnissen für Assets as a Cloud Service finden Sie unter [Einführung in Assets as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
 
-## Wie greifen Sie auf die Asset-Ansicht zu? {#access-assets-view}
+## Wie greifen Sie auf die neue AEM Assets-Benutzeroberfläche zu? {#access-assets-view}
 
-Sie können wie folgt auf die Asset-Ansicht zugreifen:
+Sie können wie folgt auf die neue AEM Assets-Benutzeroberfläche oder die neue AEM Assets-Ansicht zugreifen:
 ![Übersicht über My Workspace](assets/assets-view.png)
 
 <!--
@@ -45,9 +45,9 @@ Sie können wie folgt auf die Asset-Ansicht zugreifen:
 
     -->
 
-## Warum Assets anzeigen?
+## Warum die neue AEM Assets-Ansicht?
 
-Die Asset-Ansicht bietet die folgenden Hauptvorteile, die in der Admin-Ansicht nicht verfügbar sind:
+Die neue AEM Assets-Benutzeroberfläche bietet die folgenden Hauptvorteile, die in der Admin-Ansicht nicht verfügbar sind:
 
 * [Mein Workspace-Dashboard bietet optimierte Erlebnisse](#my-workspace-for-streamlined-experience)
 * [Suchansatz zur Steigerung der Effizienz](#search-first)
@@ -59,7 +59,7 @@ Die Asset-Ansicht bietet die folgenden Hauptvorteile, die in der Admin-Ansicht n
 
 ### Mein Workspace-Dashboard bietet optimierte Erlebnisse {#my-workspace-for-streamlined-experience}
 
-Grüßen Sie eine Digital Asset Management-Lösung, die die unterschiedlichen Anforderungen verschiedener Organisationsrollen versteht. Die schlanke neue Asset-Ansicht priorisiert Benutzerfreundlichkeit und Schnelligkeit und berücksichtigt dabei die Vorlieben der Marketing-Experten hinsichtlich visueller Attraktivität und übersichtlicher Arbeitsbereiche. Mit einem benutzerspezifischen Dashboard für den Arbeitsbereich können Marketer Assets schnell finden, in der Vorschau anzeigen, bearbeiten, verwalten und bereitstellen - mit bemerkenswerter Effizienz. Bieten Sie Abschied zu unzähligen Stunden bei der Suche nach bestimmten Assets und freuen Sie sich auf ein optimiertes Erlebnis, mit dem Sie alles, was Sie benötigen, sofort finden.
+Grüßen Sie eine Digital Asset Management-Lösung, die die unterschiedlichen Anforderungen verschiedener Organisationsrollen versteht. Die schlanke neue Benutzeroberfläche von AEM Assets priorisiert Benutzerfreundlichkeit und Geschwindigkeit und berücksichtigt dabei die Vorlieben von Marketingexperten hinsichtlich visueller Optik und übersichtlicher Arbeitsbereiche. Mit einem benutzerspezifischen Dashboard für den Arbeitsbereich können Marketer Assets schnell finden, in der Vorschau anzeigen, bearbeiten, verwalten und bereitstellen - mit bemerkenswerter Effizienz. Bieten Sie Abschied zu unzähligen Stunden bei der Suche nach bestimmten Assets und freuen Sie sich auf ein optimiertes Erlebnis, mit dem Sie alles, was Sie benötigen, sofort finden.
 
 ![Übersicht über My Workspace](assets/my-workspace-demo.gif)
 
@@ -67,7 +67,7 @@ Grüßen Sie eine Digital Asset Management-Lösung, die die unterschiedlichen An
 
 ### Einblicke in datengesteuerte Entscheidungen {#insights-data}
 
-Um mit der Inhaltsgeschwindigkeit Schritt zu halten, sind umsetzbare Einblicke unerlässlich. Das neue Asset-Ansichtserlebnis bietet erweiterte Einblicke in My Workspace und liefert wertvolle Daten zur Asset-Leistung, zur Zielgruppennutzung und zu Interaktionen. Marketingexperten können datenbasierte Entscheidungen treffen, Inhaltsstrategien optimieren und ihre nachgelagerte Bereitstellung verfeinern, um optimale Ergebnisse zu erzielen. Durch den Zugriff auf aussagekräftige Einblicke können Unternehmen dem Wettbewerb voraus bleiben und außergewöhnliche Ergebnisse erzielen.
+Um mit der Inhaltsgeschwindigkeit Schritt zu halten, sind umsetzbare Einblicke unerlässlich. Das neue Benutzeroberflächen-Erlebnis von AEM Assets bietet erweiterte Einblicke in den Arbeitsbereich von My Workspace und bietet wertvolle Daten zur Asset-Leistung, Zielgruppennutzung und Interaktionen. Marketingexperten können datenbasierte Entscheidungen treffen, Inhaltsstrategien optimieren und ihre nachgelagerte Bereitstellung verfeinern, um optimale Ergebnisse zu erzielen. Durch den Zugriff auf aussagekräftige Einblicke können Unternehmen dem Wettbewerb voraus bleiben und außergewöhnliche Ergebnisse erzielen.
 
 ![Insights - Übersicht](assets/insights-overview.gif)
 
@@ -77,7 +77,7 @@ Um mit der Inhaltsgeschwindigkeit Schritt zu halten, sind umsetzbare Einblicke u
 
 Das neue Erlebnis bietet eine Reihe robuster Funktionen für die Zusammenarbeit, einschließlich Echtzeit-Bearbeitung mit integrierten Adobe Photoshop-Funktionen, Versionskontrollen und Anmerkungs-Tools. Dies ermöglicht eine nahtlose Zusammenarbeit zwischen Design-, Kreativ-, Branding- und Marketing-Teams, sodass diese Engpässe überwinden und den Marketing-Prozess beschleunigen können. Marketingexperten verfügen nun über leistungsstarke Tools, mit denen sie die Projektbereitstellung beschleunigen und ihre Gesamtproduktivität steigern können.
 
-Sehen Sie sich dieses Video an, um die Leistungsfähigkeit der Asset-Ansichtsintegration mit Adobe Photoshop Express zu verstehen:
+Sehen Sie sich dieses Video an, um die Leistungsfähigkeit der neuen Integration der AEM Assets-Benutzeroberfläche mit Adobe Photoshop Express kennenzulernen:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420922)
 
@@ -87,7 +87,7 @@ Bevorstehende Versionen für Assets as a Cloud Service wären auch [Adobe Firefl
 
 ### Ordner-Uploads zum Einrichten einer hierarchischen Struktur für Ihr Unternehmen {#folder-uploads}
 
-Richten Sie mithilfe der Asset-Ansicht schnell eine Ordnerstruktur für Ihr Unternehmen ein, indem Sie Ordner hochladen, die in Ihrem lokalen Dateisystem vorhanden sind. Sie müssen keine Ordner im Stammordner erstellen und dann Assets manuell in diese Ordner hochladen, um die logische hierarchische Struktur beizubehalten. Alle Ordner und Assets im Stammordner werden automatisch in Experience Manager Assets hochgeladen.
+Richten Sie mithilfe der neuen AEM Assets-Benutzeroberfläche schnell eine Ordnerstruktur für Ihr Unternehmen ein, indem Sie Ordner hochladen, die in Ihrem lokalen Dateisystem vorhanden sind. Sie müssen keine Ordner im Stammordner erstellen und dann Assets manuell in diese Ordner hochladen, um die logische hierarchische Struktur beizubehalten. Alle Ordner und Assets im Stammordner werden automatisch in Experience Manager Assets hochgeladen.
 
 ![Ordner hochladen](assets/folder-uploads.gif)
 
@@ -101,7 +101,7 @@ Ermöglichen Sie das Potenzial der digitalen Asset-Bibliothek Ihres Unternehmens
 
 ### Abonnieren von Repository-Inhalten für eine effiziente Asset-Verwaltung {#subscribe-content}
 
-Die Asset-Ansicht bietet die Möglichkeit, die Vorgänge zu überwachen, die für die im Repository verfügbaren Assets, Ordner oder Sammlungen ausgeführt werden. Sie müssen den Inhalt auswählen und abonnieren, für den die Benachrichtigungen an Sie gesendet werden sollen. Sie können auch die Ereignistypen konfigurieren, z. B. das Löschen von abonnierten Inhalten, Änderungen an abonnierten Inhalten usw. Die Benachrichtigungen werden dann nur für diese Ereignistypen an Sie gesendet.
+Die neue AEM Assets-Benutzeroberfläche bietet die Möglichkeit, die Vorgänge zu überwachen, die für die im Repository verfügbaren Assets, Ordner oder Sammlungen ausgeführt werden. Sie müssen den Inhalt auswählen und abonnieren, für den die Benachrichtigungen an Sie gesendet werden sollen. Sie können auch die Ereignistypen konfigurieren, z. B. das Löschen von abonnierten Inhalten, Änderungen an abonnierten Inhalten usw. Die Benachrichtigungen werden dann nur für diese Ereignistypen an Sie gesendet.
 
 ![Benachrichtigungen empfangen](assets/notifications.gif)
 
@@ -109,22 +109,22 @@ Die Asset-Ansicht bietet die Möglichkeit, die Vorgänge zu überwachen, die fü
 
 ### Sofortiges Löschen von Assets zur besseren Kontrolle von Administratoren {#soft-delete-assets}
 
-Im Ordner Papierkorb , der in der Ansicht &quot;Assets&quot;verfügbar ist, werden die aus dem Stammordner Assets gelöschten Assets aufgelistet. Sie können ein Asset aus dem Ordner &quot;Papierkorb&quot;auswählen, um es entweder am ursprünglichen Speicherort wiederherzustellen oder dauerhaft zu löschen. Sie können auch ein Keyword angeben oder standardmäßige oder benutzerdefinierte Filter anwenden, um geeignete Assets im Ordner &quot;Papierkorb&quot;zu suchen.
+Der Ordner Papierkorb , der in der neuen AEM Assets-Benutzeroberfläche verfügbar ist, listet die aus dem Stammordner Assets gelöschten Assets auf. Sie können ein Asset aus dem Ordner &quot;Papierkorb&quot;auswählen, um es entweder am ursprünglichen Speicherort wiederherzustellen oder dauerhaft zu löschen. Sie können auch ein Keyword angeben oder standardmäßige oder benutzerdefinierte Filter anwenden, um geeignete Assets im Ordner &quot;Papierkorb&quot;zu suchen.
 
 ![Soft Delete](assets/soft-delete.gif)
 
 [![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](navigate-assets-view.md)
 
-Zusätzlich zu diesen Funktionen können Sie mit der Asset-Ansicht auch die folgenden Funktionen ausführen, die in der Admin-Ansicht nicht verfügbar sind:
+Zusätzlich zu diesen Funktionen können Sie mit der neuen AEM Assets-Benutzeroberfläche auch die folgenden Funktionen ausführen, die in der Admin-Ansicht nicht verfügbar sind:
 
 * Laden Sie eine neue Version eines Assets mit einem anderen Namen aus Ihrem lokalen Dateisystem in das Asset-Repository hoch. Das hochgeladene Asset ist als neue Version mit demselben Namen wie das ursprüngliche Asset verfügbar.
 
 * Umbenennen von Assets und Ordnern, die im Repository verfügbar sind.
 
-Die neue Adobe Experience Manager Assets-Ansicht ist darauf zugeschnitten, Workflows zu optimieren, die Zusammenarbeit zu fördern und die Asset-Bereitstellung zu beschleunigen. Durch die schnelle Bereitstellung von Inhalten können Marketingexperten das gesamte Potenzial ihrer digitalen Assets ausschöpfen und Kreativität wie nie zuvor freisetzen.
+Die neue AEM Assets-Benutzeroberfläche ist auf die Optimierung von Workflows, die Förderung der Zusammenarbeit und die Beschleunigung der Asset-Bereitstellung zugeschnitten. Durch die schnelle Bereitstellung von Inhalten können Marketingexperten das gesamte Potenzial ihrer digitalen Assets ausschöpfen und Kreativität wie nie zuvor freisetzen.
 
 
-Verwenden Sie diese Links, um schnell mit der Asset-Ansicht zu beginnen:
+Verwenden Sie diese Links, um schnell mit der neuen AEM Assets-Benutzeroberfläche zu beginnen:
 
 * [Mein Arbeitsbereich](/help/assets/my-workspace-assets-view.md)
 * [Erste Schritte mit der Asset-Ansicht](/help/assets/get-started-assets-view.md)
