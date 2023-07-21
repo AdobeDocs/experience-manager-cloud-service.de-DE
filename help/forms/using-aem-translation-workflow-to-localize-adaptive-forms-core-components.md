@@ -2,9 +2,9 @@
 title: Kernkomponenten-basiertes adaptives Formular übersetzen
 description: Verwenden Sie maschinelle Übersetzung oder menschliche Übersetzung, um ein auf Kernkomponenten basierendes adaptives Formular zu übersetzen.
 feature: Adaptive Forms
-source-git-commit: a33b380570210a32f4a4a1f26c9a2fe37c885bb1
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '882'
 ht-degree: 21%
 
 ---
@@ -71,7 +71,7 @@ Führen Sie die folgenden Schritte aus, um ein Formular und sein Datensatzdokume
 1. Am unteren Rand des **Zusammenfassung** klicken Sie auf die **Ellipsen**. Der Bildschirm Eigenschaften des Übersetzungsprojekts wird geöffnet.
 1. Öffnen Sie die **[!UICONTROL Erweitert]** Registerkarte oben im **Eigenschaften des Übersetzungsprojekts** angezeigt. Für **[!UICONTROL Übersetzungsfeld]** auswählen **[!UICONTROL Menschliche Übersetzung]**. Klicken **Speichern und schließen** oben auf dem Bildschirm.
 1. Im **Übersetzungsauftrag** klicken Sie auf die ![aem62forms_downarrow](assets/aem62forms_downarrow.png) und klicken Sie auf **Export**. Klicken Sie im Dialogfeld Exportieren auf die Option Exportierte Datei herunterladen . Es lädt eine ZIP-Datei herunter.
-   ![](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
+   ![Übersetzungsdatei exportieren](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. Extrahieren Sie die heruntergeladene ZIP-Datei. Der extrahierte Ordner hat zwei Dateien:
    * translation_export_summary.xml
    * [form-fields-file].xml.
@@ -79,6 +79,6 @@ Führen Sie die folgenden Schritte aus, um ein Formular und sein Datensatzdokume
 1. Komprimieren Sie die Dateien &quot;translation_export_summary.xml&quot;und [form-fields-file].xml.
 1. Im **Übersetzungsauftrag** klicken Sie auf die ![aem62forms_downarrow](assets/aem62forms_downarrow.png) und klicken Sie auf **Import**. Wählen Sie das Archiv aus, das [form-fields-file].xml. mit lokalisierten Zeichenfolgen und Meldungen für Formularfelder.
 
-   ![](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
+   ![Importieren einer Übersetzungsdatei](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. Um das lokalisierte Formular in der AEM Forms-Benutzeroberfläche als Vorschau anzuzeigen, wählen Sie das lokalisierte Formular aus. Klicken **[!UICONTROL Vorschau]** >**[!UICONTROL Vorschau als HTML]**. Öffnen Sie das Formular erneut, nachdem Sie die `afAcceptLang=<locale code>` zur URL des Formulars. Fügen Sie beispielsweise `afAcceptLang=de`, um die deutsche Version des Formulars zu öffnen.

@@ -6,9 +6,9 @@ seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1023'
 ht-degree: 11%
 
 ---
@@ -32,7 +32,7 @@ Durch die Aktivierung der Kernkomponenten für adaptive Formulare in AEM Forms a
 Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um die adaptiven Forms-Kernkomponenten und die Headless-Adaptive Forms für eine as a Cloud Service AEM Forms-Umgebung zu aktivieren
 
 
-![](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
+![Kernkomponenten und Headless-adaptive Formulare aktivieren](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
 ## 1. Klonen Sie Ihr as a Cloud Service AEM Forms-Git-Repository. {#clone-git-repository}
