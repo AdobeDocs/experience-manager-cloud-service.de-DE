@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 39b2afda66e3bcb7db8ae63a2d0dcd27014ce377
+source-git-commit: 704f4e250975d8c0cbcfdc5e49b9c03d3a3e2939
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 66%
+source-wordcount: '190'
+ht-degree: 62%
 
 ---
 
@@ -29,7 +29,7 @@ Keine
 
 ### Bekannte Probleme {#known-issues-12790}
 
-Keine
+- GRANITE-46601 - Schnellstart-SDK startet nicht ohne JDK 11.0.20 `-Djdk.util.zip.disableZip64ExtraFieldValidation=true` Java-Option
 
 ### Eingebettete Technologien {#embedded-tech-12790}
 
