@@ -2,12 +2,13 @@
 title: Inhaltserstellung mit dem universellen Editor
 description: Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 05554f397a843ede5a723b206b6e0748e2d6ba96
+source-git-commit: 481202760e0d22cde9c32e0b781dc99f67d463e4
 workflow-type: tm+mt
-source-wordcount: '1682'
-ht-degree: 44%
+source-wordcount: '1939'
+ht-degree: 35%
 
 ---
+
 
 # Inhaltserstellung mit dem universellen Editor {#authoring}
 
@@ -141,7 +142,7 @@ Sie können auch ein Mobilgerät und im universellen Editor emulieren:
 
 #### App-Vorschau öffnen {#open-app-preview}
 
-Tippen oder klicken Sie auf das Symbol „App-Vorschau öffnen“, um die Seite, die Sie gerade bearbeiten, in einem eigenen Browser zu öffnen, ohne dass der Editor eine Vorschau der Änderungen anzeigen kann.
+Tippen oder klicken Sie auf das Symbol &quot;App-Vorschau öffnen&quot;, um die Seite zu öffnen, die Sie gerade bearbeiten, auf der eigenen Registerkarte des Browsers, frei vom Editor, um Ihre Inhalte in der Vorschau anzuzeigen.
 
 ![App-Vorschau öffnen](assets/open-app-preview.png)
 
@@ -177,9 +178,12 @@ Im Vorschaumodus wird die Seite im Editor so gerendert, wie sie in Ihrem veröff
 
 #### Textmodus {#text-mode}
 
-Im Textmodus wird die Seite im Editor gerendert, aber der Inhaltsautor kann klicken, um Textinhalt auszuwählen und zu bearbeiten. Dies ist der Standardmodus des Editors beim Laden einer Seite.
+Im Textmodus kann der Inhaltsautor klicken, um Textinhalte auszuwählen.
 
 ![Textmodus](assets/text-mode.png)
+
+* Sie können [Bearbeiten von Normaltext](#editing-content) vorhanden sind.
+* Sie können auch [Rich-Text bearbeiten](#editing-rich-text) mit zusätzlichen Formatierungsoptionen, die in der Komponentenleiste angezeigt werden.
 
 >[!TIP]
 >
@@ -187,9 +191,11 @@ Im Textmodus wird die Seite im Editor gerendert, aber der Inhaltsautor kann klic
 
 #### Medienmodus {#media-mode}
 
-Im Medienmodus wird die Seite im Editor gerendert, aber der Inhaltsautor kann klicken, um Medieninhalte auszuwählen und zu bearbeiten.
+Im Medienmodus kann der Inhaltsautor klicken, um Medieninhalte auszuwählen.
 
 ![Medienmodus](assets/media-mode.png)
+
+Details des Inhalts werden in der Komponentenleiste angezeigt. Der Autor kann auch [den Medieninhalt bearbeiten.](#editing-media)
 
 >[!TIP]
 >
@@ -197,11 +203,11 @@ Im Medienmodus wird die Seite im Editor gerendert, aber der Inhaltsautor kann kl
 
 #### Komponentenmodus {#component-mode}
 
-Im Komponentenmodus wird die Seite im Editor gerendert, aber der Inhaltsautor kann klicken, um Seitenkomponenten auszuwählen.
+Im Komponentenmodus kann der Inhaltsautor auf klicken, um [Inhaltsfragmente.](/help/assets/content-fragments/content-fragments.md)
 
 ![Komponentenmodus](assets/component-mode.png)
 
-Wenn Sie ein Inhaltsfragment auswählen, werden die Details in der [Komponentenleiste.](#component-rail)
+Wenn Sie ein Inhaltsfragment auswählen, werden die Details in der Komponentenleiste angezeigt, in der Sie [Bearbeiten Sie das Inhaltsfragment.](#edit-content-fragment)
 
 >[!TIP]
 >
@@ -209,11 +215,13 @@ Wenn Sie ein Inhaltsfragment auswählen, werden die Details in der [Komponentenl
 
 #### Bearbeiten {#edit}
 
-Wann [Komponentenmodus,](#component-mode) Wenn Sie ein Inhaltsfragment auswählen, wird die Bearbeitungsoption in der Modusleiste angezeigt.
+Wann [Komponentenmodus,](#component-mode) Wenn Sie eine [Inhaltsfragment,](/help/assets/content-fragments/content-fragments.md) Die Bearbeitungsoption wird in der Modusleiste angezeigt.
 
 ![Symbol Bearbeiten](assets/edit.png)
 
-Durch Tippen oder Klicken auf die Schaltfläche &quot;Bearbeiten&quot;wird der Inhaltsfragment-Editor in einer neuen Registerkarte geöffnet, mit der Sie referenzierte Inhalte sowie Text- und Medieninhalte im universellen Editor bearbeiten können.
+Durch Tippen oder Klicken auf die Schaltfläche &quot;Bearbeiten&quot;wird das [Inhaltsfragmente-Editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in einer neuen Registerkarte, über die Sie auf die gesamte Funktionalität des Inhaltsfragment-Editors zugreifen können.
+
+Sie können auch Details des Inhaltsfragments im [Komponentenleiste](#edit-content-fragment) abhängig von den Anforderungen Ihres Workflows.
 
 >[!TIP]
 >
@@ -223,7 +231,7 @@ Durch Tippen oder Klicken auf die Schaltfläche &quot;Bearbeiten&quot;wird der I
 
 Der Editor belegt den Großteil des Fensters und ist dort, wo die Seite angegeben ist in [die Standortleiste](#location-bar) wird gerendert.
 
-* Wenn sich der Editor in einem Bearbeitungsmodus befindet, z. B. [Textmodus](#text-mode) oder [Medienmodus,](#media-mode) Der Inhalt kann bearbeitet werden und Sie können den Links nicht folgen.
+* Wenn sich der Editor in einem Bearbeitungsmodus befindet, z. B. [Textmodus](#text-mode) oder [Medienmodus,](#media-mode) Der Inhalt kann bearbeitet werden, Sie können jedoch keine Links folgen.
 * Wenn sich der Editor in [Vorschaumodus,](#preview-mode) Der Inhalt kann navigiert werden und Sie können Links folgen, den Inhalt kann jedoch nicht bearbeitet werden.
 
 ![Bearbeiter](assets/editor.png)
@@ -240,11 +248,11 @@ Im Eigenschaftenmodus zeigt die Leiste die Eigenschaften der Komponente an, die 
 
 ![Eigenschaftenmodus](assets/properties-mode.png)
 
-Details zur ausgewählten Komponente werden in der Leiste angezeigt. Wenn Sie ein Inhaltsfragment mithilfe von [Komponentenmodus,](#component-mode) Sie können die Einstellungen in der Komponentenleiste ändern. Änderungen werden automatisch vom universellen Editor gespeichert.
+Je nach ausgewähltem Komponententyp können Details in der Eigenschaftenleiste angezeigt und geändert werden.
 
 ![Komponentendetails](assets/component-details.png)
 
-Beachten Sie, dass nicht alle Komponenten Details aufweisen, die angezeigt werden können.
+Beachten Sie, dass nicht alle Komponenten Details aufweisen, die angezeigt und/oder bearbeitet werden können.
 
 >[!TIP]
 >
@@ -271,17 +279,59 @@ Die Bearbeitung von Inhalten ist einfach und intuitiv. In den Bearbeitungsmodi (
 
 ![Bearbeitbare Inhalte werden durch ein blaues Feld hervorgehoben](assets/editable-content.png)
 
-Tippen oder klicken Sie einfach auf den Inhalt im blauen Feld, um einen Editor für die Bearbeitung im Kontext zu starten und Ihre Änderungen vorzunehmen. Ihre Änderungen werden automatisch gespeichert.
+Beachten Sie, dass im Bearbeitungsmodus durch Tippen oder Klicken auf den Inhalt versucht wird, diesen zur Bearbeitung auszuwählen. Wenn Sie durch das Folgen von Links in Ihren Inhalten navigieren möchten, wechseln Sie zum [Vorschaumodus](#preview-mode).
+
+Je nach [mode](#mode-rail) Wenn Sie sich in befinden und den von Ihnen ausgewählten Inhalt auswählen, haben Sie möglicherweise verschiedene Bearbeitungsoptionen für den Ort, und Sie können zusätzliche Eigenschaften für den Inhalt überprüfen, indem Sie die [Komponentenleiste.](#component-rail)
+
+### Nur Text bearbeiten {#edit-plain-text}
+
+Wenn Sie [Textmodus](#text-mode) und eine Textkomponente auswählen, können Sie den Text an Ort und Stelle bearbeiten.
 
 ![Bearbeiten von Inhalten](assets/editing-content.png)
 
-Beachten Sie, dass im Bearbeitungsmodus durch Tippen oder Klicken auf den Inhalt versucht wird, diesen zur Bearbeitung auszuwählen. Wenn Sie durch das Folgen von Links in Ihren Inhalten navigieren möchten, wechseln Sie zum [Vorschaumodus](#preview-mode).
+Geben Sie einfach ein, um den Inhalt zu aktualisieren. Drücken Sie die Eingabetaste bzw. tippen oder klicken Sie außerhalb des Textfelds auf , um Ihre Änderungen zu speichern.
 
-Je nach [mode](#mode-rail) Wenn Sie sich in befinden und den Inhalt, den Sie auswählen, haben Sie möglicherweise unterschiedliche Bearbeitungsoptionen für die Position.
+### Bearbeiten von Rich-Text {#edit-rich-text}
 
-Darüber hinaus können Sie zusätzliche Eigenschaften für den Inhalt mithilfe der [Komponentenleiste.](#component-rail) Wenn Sie beispielsweise eine Rich-Text-Komponente auswählen, können Sie Formatierungsoptionen in der Komponentenleiste bearbeiten.
+Wenn Sie [Textmodus](#text-mode) und eine Rich-Text-Komponente auswählen, können Sie den Text an Ort und Stelle bearbeiten.
+
+Geben Sie einfach ein, um den Inhalt zu aktualisieren. Drücken Sie die Eingabetaste bzw. tippen oder klicken Sie außerhalb des Textfelds auf , um Ihre Änderungen zu speichern.
+
+Darüber hinaus sind Formatierungsoptionen und Details zu Ihrem Text in der Komponentenleiste verfügbar.
 
 ![Bearbeiten einer Rich-Text-Komponente](assets/rich-text-editing.png)
+
+Formatierungsänderungen werden automatisch in Ihren Inhalt gespeichert.
+
+### Bearbeiten von Medien {#edit-media}
+
+Wenn Sie [Medienmodus](#media-mode) und Sie ein Bild auswählen, können Sie dessen Details in der Komponentenleiste anzeigen.
+
+![Medien bearbeiten](assets/ue-edit-media.png)
+
+Tippen oder klicken Sie auf **Ersetzen** Schaltfläche unter der Vorschau des ausgewählten Bildes in der Komponentenleiste, um das Bild durch ein anderes aus Ihrer Asset-Bibliothek zu ersetzen.
+
+1. Die [Asset-Wähler](/help/assets/asset-selector.md#using-asset-selector) -Fenster geöffnet, in dem Sie ein Asset auswählen können.
+1. Tippen oder klicken Sie, um ein neues Asset auszuwählen.
+1. Tippen oder klicken Sie auf **Auswählen** , um zur Komponentenleiste zurückzukehren, in der das Asset ersetzt wurde.
+
+Änderungen werden automatisch in Ihrem Inhalt gespeichert.
+
+>[!TIP]
+>
+>Verwenden des Hotkeys `R` , um die Asset-Auswahl zu öffnen und das ausgewählte Bild zu ersetzen.
+
+### Bearbeiten von Inhaltsfragmenten {#edit-content-fragment}
+
+Wenn Sie [Komponentenmodus](#component-mode) und wählen Sie eine [Inhaltsfragment,](/help/assets/content-fragments/content-fragments.md) Sie können die Details in der Komponentenleiste bearbeiten.
+
+![Bearbeiten von Inhaltsfragmenten](assets/ue-edit-cf.png)
+
+Die im Inhaltsmodell des ausgewählten Inhaltsfragments definierten Felder werden in der Komponentenleiste angezeigt und können bearbeitet werden.
+
+Änderungen werden automatisch in Ihrem Inhalt gespeichert.
+
+Wenn Sie Ihr Inhaltsfragment im [Inhaltsfragmente-Editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) Klicken Sie stattdessen auf die [Schaltfläche &quot;Bearbeiten&quot;](#edit) in der Modusleiste.
 
 ## Vorschau von Inhalten {#previewing-content}
 
