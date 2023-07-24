@@ -3,10 +3,10 @@ title: Versionshinweise für Cloud Manager 2023.7.0 in Adobe Experience Manager 
 description: Dies sind die Versionshinweise für Cloud Manager 2023.7.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 1b46f763903a1b103837ed7e8cc498ad08ce64f1
+source-git-commit: 2721cb20083eeda7546513817f1ddfe12e9cb43a
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 29%
+source-wordcount: '265'
+ht-degree: 32%
 
 ---
 
@@ -25,11 +25,13 @@ Die Cloud Manager -Version 2023.7.0 in AEM as a Cloud Service Version wurde am 2
 
 ## Neue Funktionen {#what-is-new}
 
-* Auf den Karten auf der Landingpage von Cloud Manager wird jetzt angegeben, ob [erweiterte Sicherheit](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) für ihre Programme aktiviert ist.
+* Auf den Karten der Landingpage von Cloud Manager wird jetzt angegeben, ob [erweiterte Sicherheit](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) für die Programme aktiviert ist.
 * Wenn eine Entwicklung [Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) keine Testschritte enthält, können Benutzer jetzt Testschritte einbeziehen, wenn sie [Starten Sie die Pipeline.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
    * Diese wird schrittweise eingeführt.
 * Wann [die Ausführung abbrechen,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) Im Schritt zur Pipelineausführungsgenehmigung wird der Benutzer jetzt aufgefordert, einen Grund für den Abbruch anzugeben.
    * Diese wird schrittweise eingeführt.
+* Benutzer können jetzt auf [Protokolle aus dem Prozess zum Kopieren des Inhalts.](/help/implementing/developing/tools/content-copy.md#accessing-logs)
+   * Diese Option ist nur verfügbar, wenn sowohl die Quell- als auch die Zielumgebung AEM Version sind `2023.7.12549` oder höher.
 
 ## Fehlerbehebungen {#bug-fixes}
 

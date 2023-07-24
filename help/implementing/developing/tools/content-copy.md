@@ -2,12 +2,13 @@
 title: Das Inhaltskopie-Werkzeug
 description: Das Werkzeug zum Kopieren von Inhalten ermöglicht es Benutzern, veränderliche Inhalte bei Bedarf aus ihren Produktionsumgebungen in AEM as a Cloud Service zu niedrigeren Umgebungen zu Testzwecken zu kopieren.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
+source-git-commit: f579539d582e2059fca20f9f7e5e82f4ae24c833
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 54%
+source-wordcount: '1308'
+ht-degree: 50%
 
 ---
+
 
 # Das Inhaltskopie-Werkzeug {#content-copy}
 
@@ -40,6 +41,8 @@ Um das Werkzeug zum Kopieren von Inhalten zu verwenden, sind bestimmte Berechtig
 |---|---|---|
 | Erstellen und Ändern von [Content-Sets](#create-content-set) | Erforderlich | Nicht erforderlich |
 | Starten oder Abbrechen des [Inhaltskopie-Prozesses](#copy-content) | Erforderlich | Erforderlich |
+
+Weitere Informationen zu Berechtigungen und zum Festlegen dieser Berechtigungen finden Sie im Dokument [AEM as a Cloud Service Team und Produktprofile.](/help/onboarding/aem-cs-team-product-profiles.md)
 
 ## Erstellen eines Content-Sets {#create-content-set}
 
@@ -174,6 +177,16 @@ Wählen Sie dazu auf der Seite **Inhaltsaktivität kopieren** die Aktion **Abbre
 >Wenn Sie einen Vorgang zum Abbrechen einer Inhaltskopie abbrechen, kann dies zu einer Teilkopie des Inhalts in der Zielumgebung führen. Diese Situation kann die Zielumgebung in einem unbrauchbaren Zustand belassen.
 >
 >Wenn sich Ihre Umgebung aufgrund einer Stornierung in einem solchen Zustand befindet, wenden Sie sich an die Kundenunterstützung von Adobe, um Hilfe zu erhalten.
+
+### Abrufen von Protokollen {#accessing-logs}
+
+Sie können die Protokolle sowohl auf die Quell- als auch auf die Zielumgebung für jeden abgeschlossenen Inhaltskopierprozess überprüfen.
+
+Gehen Sie dazu im **Aktivität &quot;Inhalt kopieren&quot;** Seite, wählen Sie die **Protokolle** Aktion aus dem Auslassungsmenü des Kopierprozesses, für den Sie die Protokolle überprüfen und dann auswählen möchten, für welche Umgebung.
+
+![Zugreifen auf Protokolle für den Prozess zum Kopieren von Inhalten](assets/copy-content-logs.png)
+
+Die Protokolle werden auf Ihren lokalen Computer heruntergeladen. Wenn der Download nicht gestartet wird, überprüfen Sie Ihre Popup-Blocker-Einstellungen.
 
 ## Einschränkungen {#limitations}
 
