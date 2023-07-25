@@ -4,14 +4,17 @@ seo-title: Reuse metadata properties of an Adaptive Form
 description: Sie können ein vorhandenes adaptives Formular verwenden, um neue adaptive Formulare zu erstellen.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 94%
+source-wordcount: '611'
+ht-degree: 86%
 
 ---
 
 # Wiederverwenden von Metadateneigenschaften eines adaptiven Formulars {#reusing-adaptive-forms}
+
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
+
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |

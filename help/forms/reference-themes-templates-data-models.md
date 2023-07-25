@@ -4,14 +4,16 @@ seo-title: Reference Themes, Templates, and Form Data models
 description: AEM Forms bietet Designs, Vorlagen und Formulardatenmodelle für adaptive Formulare, die Sie von der Software-Verteilung erhalten können
 seo-description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: ht
-source-wordcount: '779'
-ht-degree: 100%
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+workflow-type: tm+mt
+source-wordcount: '836'
+ht-degree: 94%
 
 ---
 
 # Referenzthemen, Vorlagen und Formulardatenmodelle {#reference-themes-templates-and-data-models}
+
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
 
 AEM Forms as a Cloud Service bietet mehrere Referenz-Designs, Vorlagen und Formulardatenmodelle, damit Sie schnell mit der Erstellung adaptiver Formulare beginnen können. Sie können das [Referenzinhaltspaket vom Software-Verteilungs-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) herunterladen und den [Package Manager](/help/implementing/developing/tools/package-manager.md) verwenden, um das [Referenzinhaltspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) in Ihrer Produktions-, Entwicklungs- oder lokalen Entwicklungsumgebung zu installieren, um diese Referenz-Assets in Ihre Umgebung zu bringen.
 
@@ -22,11 +24,11 @@ Die im Referenzinhaltspaket enthaltenen Designs, Vorlagen und Formulardatenmodel
 ---------|----------|---------
 | Canvas 3.0 | Allgemein | Microsoft Dynamics 365 |
 | Tranquil | Leer | Salesforce |
-| Urbane |  |  |
+| Urbane |   |  |
 | Ultramarine |  |  |
 | Beryl |  |  |
-| Gesundheitswesen |  |  |
-| FSI |  |  |
+| Gesundheitswesen |  |   |
+| FSI |   |   |
 
 ## Referenzthemen {#reference-themes}
 

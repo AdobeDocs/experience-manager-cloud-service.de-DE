@@ -2,14 +2,16 @@
 title: Unterstützung von Fußnoten
 description: RTE-Unterstützung für Fußnoten.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: ht
-source-wordcount: '369'
-ht-degree: 100%
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+workflow-type: tm+mt
+source-wordcount: '426'
+ht-degree: 88%
 
 ---
 
 # Fußzeilenkomponente {#footnotecomponent}
+
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
 
 Eine **[!UICONTROL Fußnote]** ist eine zusätzliche Information oder Anmerkung, die am Ende der Seite erscheint. Eine [!UICONTROL Fußnote] umfasst die Anmerkungen, auf die in Ihrem Text durch hochgestellte Zahlen verwiesen wird.
 
@@ -44,13 +46,11 @@ Gehen Sie wie folgt vor, um Fußnoten in adaptiven Formularen hinzuzufügen:
    >* Fußnoten werden automatisch nummeriert und erscheinen so, wie sie im adaptiven Formular erstellt werden.
    >* Wenn doppelte Fußnoten vorhanden sind, ist die Zählung für alle doppelten Fußnoten identisch.
 
-
 1. Ziehen Sie im Komponenten-Browser mittels Drag &amp; Drop die Komponente **[!UICONTROL Fußnoten-Platzhalter]** auf das adaptive Formular.
    >[!NOTE]
    >
    >* In der Veröffentlichungsinstanz werden Fußnoten an der Position angezeigt, an der die Komponente **[!UICONTROL Fußnoten-Platzhalter]** auf dem adaptiven Formular platziert ist.
    >* Wenn Sie zwischen verschiedenen Bedienfeldern navigieren, erscheinen nur sichtbare Fußnoten im **[!UICONTROL Fußnoten-Platzhalter]**, die im navigierten Bedienfeld vorhanden sind.
-
 
 1. Speichern Sie die Eigenschaften.
 
