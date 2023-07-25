@@ -3,10 +3,10 @@ title: Bearbeiten im Kontext
 description: Erfahren Sie, wie Sie mit dem universellen Editor beliebige Aspekte Ihres Inhalts an Ort und Stelle und im Kontext in jeder Implementierung bearbeiten können.
 hidefromtoc: true
 index: false
-source-git-commit: 4dd0998862baf3e1d0c8ed2d42006acfcf5d0873
+source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 6%
+source-wordcount: '961'
+ht-degree: 4%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 6%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="Bearbeiten im Kontext"
->abstract="Erfahren Sie, wie Ihre Headless-Apps den universellen Editor nutzen können, um Ihre Autoren durch kontextbezogene Bearbeitung mit wenig Reibung zu versorgen."
+>title="Im Kontext bearbeiten"
+>abstract="Erfahren Sie, wie Ihre Headless-Apps den universellen Editor nutzen können, um bei der Kontextbearbeitung die Fingerspitzen Ihrer Autoren zu optimieren."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -30,9 +30,13 @@ ht-degree: 6%
 
 ## Text im Kontext bearbeiten {#edit-text}
 
-Die Bearbeitung von Kontext und Kontext kann häufig von Vorteil gegenüber der strukturierten Headless-Content-Bearbeitung sein, wie sie im Inhaltsfragment-Editor, wie in früheren Modulen zu sehen war, stattfand.
+Die Bearbeitung an Ort und Stelle und im Kontext kann häufig von Vorteil gegenüber der strukturierten Headless-Content-Bearbeitung sein, wie sie im Inhaltsfragment-Editor in früheren Modulen aufgetreten ist.
 
-Mit dem universellen Editor können Sie Ihren Text im Kontext und an Ort und Stelle bearbeiten und so einfache und intuitive Inhaltserstellung ermöglichen.
+>[!NOTE]
+>
+>Um den universellen Editor in dieser Testversion verwenden zu können, müssen Sie Chrome als Browser und nicht im Inkognito-Modus verwenden. Dies ist eine Einschränkung der Testerfahrung, nicht des universellen Editors.
+
+Mit dem universellen Editor können Sie Ihren Text im Kontext und an Ort und Stelle flexibel bearbeiten und so einfache und intuitive Inhaltserstellung ermöglichen.
 
 1. Der Editor sollte standardmäßig in **Text** -Modus. Wenn nicht, tippen oder klicken Sie auf die **Text** in der Modusleiste auf der linken Seite des Editors.
 
@@ -47,6 +51,26 @@ Mit dem universellen Editor können Sie Ihren Text im Kontext und an Ort und Ste
 1. Drücken Sie die Eingabetaste oder tippen oder klicken Sie außerhalb der Textkomponente auf die Eingabetaste, damit Ihre Änderungen automatisch gespeichert werden.
 
 Der Universal Editor speichert Ihre Änderungen automatisch in der Authoring-Umgebung. Sie müssen sie noch veröffentlichen, damit Ihre Leser sie sehen können, was wir in einem späteren Schritt tun werden.
+
+## Medien im Kontext bearbeiten {#edit-media}
+
+Sie können auch Bilder austauschen, während sie im Kontext Ihres Inhalts verbleiben, indem Sie den universellen Editor verwenden.
+
+1. Ändern Sie den Editor in **Medien** Modus durch Tippen oder Klicken auf **Medien** in der Modusleiste.
+
+1. Tippen oder klicken Sie auf das Bild des Surfers, um es auszuwählen.
+
+1. In der Komponentenleiste können Sie die Details des Assets sehen. Tippen oder klicken Sie auf **Ersetzen**.
+
+   ![Auswählen eines zu bearbeitenden Bildes](assets/do-not-localize/ue-edit-media.png)
+
+1. Im **Auswählen von Assets** , scrollen Sie nach unten und tippen oder klicken Sie auf `surfer-wave-02.JPG` -Bild, um es auszuwählen.
+
+1. Tippen oder klicken Sie auf **Auswählen** im **Auswählen von Assets** Fenster.
+
+   ![Auswählen eines Bildes im Fenster &quot;Select Asset&quot;](assets/do-not-localize/ue-select-asset.png)
+
+Das Bild wird durch das von Ihnen ausgewählte ersetzt.
 
 ## Erleben Sie Ihren Inhalt so wie Ihre Reader {#emulators}
 
@@ -102,6 +126,5 @@ Um das Authoring-Erlebnis für Inhalte zu beschleunigen, wenn die strukturierte 
 1. Eine neue **Bearbeiten** in der Modusleiste angezeigt. Tippen oder klicken Sie auf **Bearbeiten** -Symbol, um den Inhaltsfragment-Editor auf einer neuen Registerkarte zu öffnen.
 
 ![Auswählen von Inhaltsfragmenten im universellen Editor](assets/do-not-localize/ue-content-fragments.png)
-
 
 Auf der neuen Registerkarte können Sie jetzt das Inhaltsfragment bearbeiten, das Sie im universellen Editor ausgewählt haben.
