@@ -4,10 +4,10 @@ description: Nutzung des Aktionszentrums, um bequem Maßnahmen bei Vorfällen un
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 083aa4b893b58102b3a0bf68c4dd3b4c003b48f6
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 15%
+source-wordcount: '708'
+ht-degree: 27%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 15%
 >[!NOTE]
 >Diese Funktion wurde noch nicht veröffentlicht.
 
-AEM als Cloud Service sendet E-Mail-Benachrichtigungen an das Aktionszentrum, wenn kritische Zwischenfälle auftreten, die sofortiges Handeln erfordern, und proaktive Empfehlungen für Optimierungen. Beispiele sind eine blockierte Warteschlange oder ein ablaufender Berechtigungssatz; Der vollständige Satz der Benachrichtigungstypen im Aktionscenter kann im Abschnitt [Tabelle unten](#supported-notification-types), die sich mit der Zeit ausweiten wird.
+AEM als Cloud Service sendet E-Mail-Benachrichtigungen an das Aktionszentrum, wenn kritische Zwischenfälle auftreten, die sofortiges Handeln erfordern, und proaktive Empfehlungen für Optimierungen. Beispiele dafür sind eine blockierte Warteschlange oder ein ablaufender Satz von Anmeldeinformationen. Der vollständige Satz der Benachrichtigungstypen von Actions Center kann im Abschnitt [unten stehende Tabelle](#supported-notification-types), die sich im Laufe der Zeit ausweiten wird.
 
 Wenn eine E-Mail-Benachrichtigung des Aktionszentrums empfangen wird, kann darauf geklickt werden, um AEM Aktionszentrum von as a Cloud Service mit einem Popup zu öffnen, in dem ein zusätzlicher Kontext angezeigt wird, der die Aktion für einen Kunden erklärt.
 
@@ -24,10 +24,10 @@ Zusätzlich zur Anzeige von Informationen über die gerade angeklickte E-Mail-Be
 
 Im Aktionszentrum werden zwei allgemeine Benachrichtigungskategorien angezeigt:
 
-1. Operative Vorfälle - Ein Ereignis ist aufgetreten, das in der Regel eine schnelle Lösung erfordert. Beispiel: Beheben einer blockierten Warteschlange.
-1. Proaktive Empfehlungen - Adobe empfiehlt, in naher Zukunft Maßnahmen zu ergreifen. Es kann sich beispielsweise darum handeln, nicht mehr auf eine veraltete Benutzeroberfläche zu verweisen.
+1. Operative Vorfälle: Ein Ereignis ist aufgetreten, für das normalerweise eine sofortige Lösung erforderlich ist. Beispiel: Beheben einer blockierten Warteschlange.
+1. Proaktiv Empfehlungen: Adobe hat eine Empfehlung für eine Aktion, die eine Kundin oder ein Kunde in naher Zukunft durchführen sollte. Es kann sich beispielsweise darum handeln, nicht mehr auf eine veraltete Benutzeroberfläche zu verweisen.
 
-Siehe [Tabelle unten](#supported-notification-types) für die Benachrichtigungen, die derzeit im Aktionszentrum unterstützt werden.
+Siehe [unten stehende Tabelle](#supported-notification-types) für die Benachrichtigungen, die derzeit im Aktionszentrum unterstützt werden.
 
 Im Aktionszentrum können Sie ein bestimmtes Programm und eine bestimmte Umgebung auswählen, die sich durch Filtern nach diesem Bereich auswirkt.
 
@@ -64,15 +64,15 @@ Wie alle Support-Tickets wird es [auf der Registerkarte „Support-Fälle“ in 
 
 AEM as a Cloud Service verfügt über mehrere Arten von Benachrichtigungen, aber im Aktionszentrum wird nur eine Teilmenge angezeigt, wie in der unten stehenden Tabelle dargestellt.
 
-| Benachrichtigungstyp | Beschreibung | Konfiguration | Wird im Aktionszentrum angezeigt |
+| Benachrichtigungstyp | Beschreibung | Vorgehensweise bei der Konfiguration | Wird im Aktionszentrum angezeigt |
 |---|---|---|---|
 | Operative Vorfälle | Kritische Vorfälle, die sofortiges Handeln erfordern | Benutzer, der dem Produktprofil &quot;Incident Notification - Cloud Service&quot;zugewiesen ist | X |
 | Proaktive Empfehlungen | Zu planende Optimierungen | Dem Produktprofil &quot;Proaktive Benachrichtigung - Cloud Service&quot;zugewiesener Benutzer | X |
-| Cloud Manager-Pipeline-Status | Informationen zum Zustand Ihrer Pipelines | Benutzer mit den Rollen Business Owner, Programm-Manager oder Deployment Manager, Kontrollkästchen &quot;Sonstige&quot;in [Experience Cloud-Voreinstellungen](https://experience.adobe.com/preferences), als [hier beschrieben](/help/implementing/cloud-manager/notifications.md). |   |
+| Cloud Manager-Pipeline-Status | Informationen zum Zustand Ihrer Pipelines | Benutzende mit den Rollen „Geschäftsinhaber“, „Programm-Manager“ oder „Bereitstellungs-Manager“ und aktiviertem Kontrollkästchen „Sonstige“ in den [Experience Cloud-Voreinstellungen](https://experience.adobe.com/preferences), als [hier beschrieben](/help/implementing/cloud-manager/notifications.md). |   |
 
 ## Unterstützte Benachrichtigungstypen {#supported-notification-types}
 
-In der folgenden Tabelle sind die Benachrichtigungstypen aufgeführt, die derzeit im Aktionszentrum unterstützt werden.
+In der folgenden Tabelle sind die Benachrichtigungstypen aufgeführt, die derzeit im Aktionszentrum unterstützt werden. Benachrichtigungen sind derzeit auf Produktionsumgebungen beschränkt.
 
 | Benachrichtigungstyp | Verwandtes Produktprofil | Korrekturmaßnahmen |
 |---|---|---|
