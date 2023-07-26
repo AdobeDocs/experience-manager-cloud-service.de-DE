@@ -4,10 +4,10 @@ description: Hier erfahren Sie anhand einer React-Beispiel-App, wie Sie Inhalte 
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 3645918f6ce592b6c70cb4339ab6f0e5e9d71519
+source-git-commit: 3177832b32c98bf463c763dafe2d9e284dc2ac28
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 97%
+source-wordcount: '1044'
+ht-degree: 96%
 
 ---
 
@@ -79,7 +79,7 @@ Nachdem Sie jetzt wissen, wie eine Überschrift in der App geändert wird, versu
 
    ![Entfernen eines Bilds aus einem Fragment](assets/do-not-localize/swap-image-4.png)
 
-1. Tippen oder klicken Sie auf **Asset hinzufügen**.
+1. Tippen oder klicken **Asset hinzufügen** und dann **Durchsuchen von Assets** im Popup-Menü.
 
 1. Das Dialogfeld **Asset auswählen** wird geöffnet und der Pfad **sample-wknd-app** > **en** > **image-files** wird automatisch ausgewählt.
 
