@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 579f2842a72c7da1c9d24772bdae354a943de40c
+source-git-commit: 651fd49950c9b168a097e4b7d2812b22bd8de03f
 workflow-type: tm+mt
-source-wordcount: '4192'
+source-wordcount: '4194'
 ht-degree: 97%
 
 ---
@@ -158,7 +158,7 @@ ht-degree: 97%
    + [IMS-Unterstützung für AEM as a Cloud Service](/help/security/ims-support.md)
    + [Same-Site-Cookie-Unterstützung für AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [OAuth2-Unterstützung für den E-Mail-Service](/help/security/oauth2-support-for-mail-service.md)
-   + [Konfigurieren von CDN und WAF-Regeln zum Filtern des Traffics](/help/security/cdn-and-waf-rules.md)
+   + [Konfigurieren von CDN- und WAF-Regeln zum Filtern des Traffics](/help/security/cdn-and-waf-rules.md)
    + [AEM as a Cloud Service Sicherheitsüberlegungen](/help/security/security-considerations.md)
 + Einstieg {#onboarding}
    + [Hier beginnen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=de)
@@ -340,7 +340,6 @@ ht-degree: 97%
             + [Abrufen von Zugriffsinformationen zum Git-Repository](/help/journey-sites/quick-site/retrieve-access.md)
             + [Anpassen des Site-Designs](/help/journey-sites/quick-site/customize-theme.md)
             + [Bereitstellen eines benutzerdefinierten Designs](/help/journey-sites/quick-site/deploy-theme.md)
-      + [Verwalten von Workflows](/help/sites-cloud/administering/workflows-administering.md)
       + Wiederverwenden von Inhalt {#reusing-content}
          + [MSM und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md)
          + Multi Site Manager {#msm}
@@ -369,6 +368,8 @@ ht-degree: 97%
             + [Konfigurieren des Frameworks für die Übersetzungsintegration](/help/sites-cloud/administering/translation/integration-framework.md)
             + [Herstellen einer Verbindung mit Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
             + [Best Practices für die Übersetzung](/help/sites-cloud/administering/translation/best-practices.md)
+      + [Verwalten von Tags](/help/sites-cloud/administering/tags.md)
+      + [Verwalten von Workflows](/help/sites-cloud/administering/workflows-administering.md)
    + Integration mit AEM as a Cloud Service {#integrations}
       + [Integration mit Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integration mit Adobe Analytics    Automatisierte Einrichtung](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
