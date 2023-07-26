@@ -6,10 +6,10 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 62649d9aaa7c4307351cc83eefbab14806f91378
 workflow-type: tm+mt
-source-wordcount: '3830'
-ht-degree: 97%
+source-wordcount: '3871'
+ht-degree: 96%
 
 ---
 
@@ -317,6 +317,8 @@ Sie können der [!DNL Sites]-Bereitstellung Assets hinzufügen, diese Assets kö
 
 * Um Erkenntnisse zur Asset-Nutzung zu erhalten, konfigurieren Sie die Funktion [Assets Insights](/help/assets/assets-insights.md) in der [!DNL Sites]-Instanz.
 * Die Verwendung des Pfadbrowsers in Authoring-Komponenten wird in verbundenen Assets nicht unterstützt.
+
+* Sie können das Remote-Asset nicht auf die [Dialogfeld &quot;Konfiguration der Bildkomponente&quot;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). Sie können das Remote-Asset jedoch direkt auf die Bildkomponente auf der Sites-Seite ziehen, ohne auf **[!UICONTROL Konfigurieren]**.
 
 ### Berechtigungen und Asset-Verwaltung {#permissions-and-managing-assets}
 
