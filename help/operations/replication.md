@@ -2,10 +2,10 @@
 title: Replikation
 description: Verteilung und Fehlerbehebung bei der Replikation.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e545ff2bc3dc0c56cd6d3e1160b453551816f07f
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 48%
+source-wordcount: '1334'
+ht-degree: 46%
 
 ---
 
@@ -53,9 +53,9 @@ Ausführlichere Informationen zur Funktion „Veröffentlichung verwalten“ fin
 
 Sie können eine Baumstruktur replizieren, indem Sie **Tools > Workflow > Modelle** auswählen und das vorkonfigurierte Workflow-Modell **Inhaltsstruktur veröffentlichen** kopieren, wie unten dargestellt:
 
-![Die Workflow-Karte &quot;Inhaltsstruktur veröffentlichen&quot;](/help/operations/assets/publishcontenttreeworkflow.png)
+![Die Workflow-Karte Inhaltsstruktur veröffentlichen](/help/operations/assets/publishcontenttreeworkflow.png)
 
-Ändern Sie das Originalmodell nicht und rufen Sie es nicht auf. Kopieren Sie stattdessen unbedingt zuerst das Modell und ändern oder rufen Sie dann diese Kopie auf.
+Rufen Sie das Originalmodell nicht auf. Stellen Sie stattdessen sicher, dass Sie das Modell zuerst kopieren und diese Kopie aufrufen.
 
 Wie alle Workflows kann es auch über eine API aufgerufen werden. Weitere Informationen finden Sie unter [Programmgesteuerte Interaktion mit Workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=de#extending-aem).
 
@@ -151,7 +151,7 @@ Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchRepl
 
 **Replikation mit bestimmten Agenten**
 
-Beim Replizieren von Ressourcen werden wie im Beispiel oben nur die standardmäßig aktiven Agenten verwendet. as a Cloud Service bedeutet AEM nur den Agenten &quot;publish&quot;, der den Autor mit der Veröffentlichungsstufe verbindet.
+Beim Replizieren von Ressourcen werden wie im Beispiel oben nur die standardmäßig aktiven Agenten verwendet. As a Cloud Service bedeutet AEM nur den Agenten &quot;publish&quot;, der den Autor mit der Veröffentlichungsstufe verbindet.
 
 Um die Vorschaufunktion zu unterstützen, wurde ein neuer Preview-Agent hinzugefügt, der standardmäßig nicht aktiv ist. Dieser Agent wird verwendet, um die Autoren- mit der Vorschauebene zu verbinden. Wenn Sie nur über den Vorschauagenten replizieren möchten, müssen Sie diesen Vorschauagenten explizit über einen `AgentFilter`.
 
@@ -186,7 +186,7 @@ Sie können Inhalte direkt ungültig machen, indem Sie entweder die Sling Conten
 
 **Kapazitätsbeschränkungen der Replikations-API**
 
-Replizieren Sie weniger als 100 Pfade gleichzeitig, wobei 500 die Grenze ist. Oberhalb der Grenze wird ein `ReplicationException` geworfen wird.
+Replizieren Sie weniger als 100 Pfade gleichzeitig, wobei 500 die Grenze ist. Oberhalb des Grenzwerts wird ein `ReplicationException` geworfen wird.
 Wenn Ihre Anwendungslogik keine atomare Replikation erfordert, kann diese Grenze durch Festlegen der `ReplicationOptions.setUseAtomicCalls` auf &quot;false&quot;, was eine beliebige Anzahl von Pfaden akzeptiert, aber intern Behälter erstellt, die unterhalb dieses Limits bleiben.
 
 Die Größe des pro Replikationsaufruf gesendeten Inhalts darf nicht größer sein als `10 MB`. Diese Regel enthält die Knoten und Eigenschaften, jedoch keine Binärdateien (Workflow-Pakete und Inhaltspakete werden als Binärdateien betrachtet).
