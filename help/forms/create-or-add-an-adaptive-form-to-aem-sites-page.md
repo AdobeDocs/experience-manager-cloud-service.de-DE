@@ -2,8 +2,8 @@
 title: Wie wird ein adaptives Formular zur AEM Sites-Seite hinzugefügt?
 description: Erfahren Sie, wie Sie ein adaptives Formular erstellen oder zu Ihrer AEM Sites-Seite hinzufügen. Lernen Sie auch die Vorteile und verschiedene Möglichkeiten kennen, Formulare in Ihre Website zu integrieren.
 feature: Adaptive Forms, Page Editor, Authoring
-Keywords: af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
+source-git-commit: 991de20303380af76d3e2e97aca8e0a4373e2232
 workflow-type: tm+mt
 source-wordcount: '3214'
 ht-degree: 2%
@@ -35,13 +35,13 @@ Wenn Sie in der Vergangenheit adaptive Forms Foundation-Komponenten oder einfach
 * **Übersetzung:** AEM Sites [nahtlose Integration mit Übersetzungsdiensten](/help/sites-cloud/administering/translation/overview.md), sodass Sie Formulare einfach in mehrere Sprachen übersetzen können. Diese Funktion vereinfacht den Lokalisierungsprozess und stellt sicher, dass Ihre Formulare für eine globale Zielgruppe zugänglich sind. Sie können Übersetzungen effizient in AEM Übersetzungsprojekten verwalten und so Zeit und Aufwand für die Unterstützung mehrsprachiger Formulare reduzieren. Weitere Informationen zur Übersetzung finden Sie im Abschnitt Überlegungen .
 * **Multi-Site-Management und Live Copy:** AEM Sites bietet eine robuste [Funktionen für die Verwaltung mehrerer Sites und die Live Copy](/help/sites-cloud/administering/msm/overview.md), mit dem Sie mehrere Websites in einer Umgebung erstellen und verwalten können. Mit dieser Funktion können Sie jetzt Formulare über verschiedene Sites hinweg wiederverwenden, um Konsistenz zu gewährleisten und doppelte Arbeit zu vermeiden. Mit zentralisierter Kontrolle und Verwaltung können Sie Formulare effizient über mehrere Websites hinweg verwalten und aktualisieren.
 * **Themen:** AEM Sites-Seiten bieten ein Framework für das Entwerfen und Verwalten konsistenter visueller Stile auf mehreren Webseiten. Diese definieren Farben, Schriftarten, Stylesheets und andere visuelle Elemente, die zum allgemeinen Erscheinungsbild der Website beitragen. [Sie können die Designs verwenden, die für eine AEM Sites-Seite für ein adaptives Formular entwickelt wurden, wodurch Zeit und Mühe gespart werden.](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes).
-* **Tagging:** Mit AEM Sites-Seiten können Sie [Zuweisen von Tags oder Beschriftungen zu einer Seite, einem Asset oder anderen Inhalten](/help/implementing/developing/introduction/tagging-framework.md). Tags sind Keywords oder Metadatenbeschriftungen, die eine Möglichkeit bieten, Inhalte basierend auf bestimmten Kriterien zu kategorisieren und zu organisieren. Sie können Seiten, Assets oder anderen Inhaltselementen in AEM ein oder mehrere Tags zuweisen, um die Suche zu verbessern und die Assets zu kategorisieren.
+* **Tagging:** Mit AEM Sites-Seiten können Sie [Zuweisen von Tags oder Beschriftungen zu einer Seite, einem Asset oder anderen Inhalten](/help/implementing/developing/introduction/tagging-framework.md). Tags sind Suchbegriffe oder Metadatenbeschriftungen, mit denen Inhalte basierend auf bestimmten Kriterien kategorisiert und organisiert werden können. Sie können Seiten, Assets oder anderen Inhaltselementen in AEM ein oder mehrere Tags zuweisen, um die Suche zu verbessern und die Assets zu kategorisieren.
 * **Sperren und Entsperren von Inhalten:** Mit AEM Sites können Benutzer [Zugriff und Änderungen auf Seiten steuern](/help/sites-cloud/authoring/fundamentals/editing-content.md) in der AEM Sites-Umgebung. Wenn eine Seite gesperrt ist, bedeutet dies, dass sie von anderen Benutzern vor unbefugten Änderungen oder Bearbeitungen geschützt ist. Nur der Benutzer, der den Inhalt gesperrt hat, oder ein Administrator kann ihn entsperren, um Änderungen zuzulassen.
 
 Darüber hinaus verwendet Adaptive Forms im AEM Seiteneditor [Adaptive Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de#features). Diese Kernkomponenten bieten eine standardmäßige und einfachere Methode zum Formatieren und Anpassen der Komponenten, die mit dem Szenario [AEM Sites WCM-Komponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de).
 
 
-## Wie erstelle oder füge ich ein adaptives Formular auf der AEM Sites-Seite oder AEM Experience Fragment hinzu? {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
+## Erstellen oder Hinzufügen eines adaptiven Formulars auf der AEM Sites-Seite oder AEM Experience Fragment? {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
 
 Sie können diese Funktion voll nutzen, indem Sie die folgenden Optionen verwenden:
 
@@ -79,7 +79,7 @@ Stellen Sie sicher, dass [Adaptive Forms-Kernkomponenten sind für Ihre as a Clo
 Um die vollständige Funktionalität der Komponente Adaptiver Forms-Container zu aktivieren, fügen Sie die Client-Bibliotheken &quot;customHeaderlibs&quot;und &quot;customfooterlibs&quot;mithilfe der Bereitstellungs-Pipeline zu Ihrer AEM Sites-Seite hinzu. Hinzufügen der Bibliotheken:
 
 1. Zugriff und Klonen Sie Ihre [AEM Cloud Service Git Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
-1. Öffnen Sie den Ordner AEM Cloud Service Git Repository in einem Texteditor für Pläne. Beispielsweise Microsoft Visual Code.
+1. Öffnen Sie den Ordner &quot;AEM Cloud Service Git Repository&quot;in einem Texteditor für Pläne. Zum Beispiel Microsoft Visual Code.
 1. Öffnen Sie die `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` und fügen Sie der Datei den folgenden Code hinzu:
 
        &quot;
@@ -162,7 +162,7 @@ Als Nächstes [Festlegen der Sendeaktion](#configure-submit-action-for-form) und
 
 ### Erstellen eines Formulars in einem Experience Fragment {#create-an-adaptive-form-in-experience-fragment}
 
-Sie können die Reichweite Ihrer Formulare erweitern, indem Sie sie zu AEM Experience Fragments hinzufügen, wodurch eine nahtlose Wiederverwendung über mehrere Seiten oder Sites hinweg ermöglicht wird. Sie können beispielsweise ein Newsletter-Anmeldeformular in ein Experience Fragment einfügen. Dadurch können Sie das Fragment bequem über mehrere Seiten Ihrer Website hinweg wiederverwenden, sodass das Formular nicht wiederholt neu erstellt werden muss. Alle Aktualisierungen oder Änderungen, die im Experience Fragment am Newsletter-Anmeldeformular vorgenommen werden, werden automatisch auf alle Seiten übertragen, auf denen es verwendet wird. Dadurch wird der Prozess optimiert und ein nahtloses Benutzererlebnis bei gleichzeitiger Vereinfachung der Verwaltung von Formularen auf Ihrer Website sichergestellt.
+Sie können die Reichweite Ihrer Formulare erweitern, indem Sie sie zu AEM Experience Fragments hinzufügen, wodurch eine nahtlose Wiederverwendung über mehrere Seiten oder Sites hinweg ermöglicht wird. Sie können beispielsweise ein Newsletter-Anmeldeformular in ein Experience Fragment einfügen. Auf diese Weise können Sie das Fragment bequem über mehrere Seiten Ihrer Website hinweg wiederverwenden, sodass das Formular nicht wiederholt neu erstellt werden muss. Alle Aktualisierungen oder Änderungen, die im Experience Fragment am Newsletter-Anmeldeformular vorgenommen werden, werden automatisch auf alle Seiten übertragen, auf denen es verwendet wird. Dadurch wird der Prozess optimiert und ein nahtloses Benutzererlebnis bei gleichzeitiger Vereinfachung der Verwaltung von Formularen auf Ihrer Website sichergestellt.
 
 So erstellen Sie ein adaptives Formular in einem Experience Fragment:
 
@@ -175,12 +175,12 @@ Als Nächstes [Festlegen der Sendeaktion](#configure-submit-action-for-form) und
 
 ### Konvertieren eines Formulars auf der Seite &quot;AEM Sites&quot;in ein Experience Fragment {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
-Sie können ein vorhandenes adaptives Formular in einem Sites-Seiten-Editor in ein Experience Fragment konvertieren, um es auf mehreren Seiten oder Sites wiederzuverwenden.
+Sie können ein vorhandenes adaptives Formular in einem Sites-Seiten-Editor in ein Experience Fragment konvertieren, um das Formular auf mehreren Seiten oder Sites wiederzuverwenden.
 
 So konvertieren Sie ein adaptives Formular auf der Seite &quot;AEM Sites&quot;in ein Experience Fragment:
 
 1. Öffnen Sie die AEM Sites-Seite mit dem adaptiven Formular (in der Komponente Adaptiver Forms-Container ) im Bearbeitungsmodus.
-1. Öffnen Sie die Inhaltsstruktur und wählen Sie die **[!UICONTROL Adaptiver Forms-Container]** , das Ihr adaptives Formular hostet. Eine AEM Sites-Seite kann mehrere adaptive Forms-Seiten hosten. Wählen Sie daher sorgfältig den richtigen Adaptiven Forms-Container aus.
+1. Öffnen Sie die Inhaltsstruktur und wählen Sie die **[!UICONTROL Adaptiver Forms-Container]** , das Ihr adaptives Formular hostet. Auf einer AEM Sites-Seite können mehrere adaptive Forms-Seiten gehostet werden. Wählen Sie daher sorgfältig den richtigen Adaptiven Forms-Container aus.
 1. Wählen Sie in der Menüleiste die ![Symbol &quot;In Experience Fragment konvertieren&quot;](/help/forms/assets/Smock_FilingCabinet_18_N.svg) In Experience Fragment-Variantensymbol konvertieren.
    ![Klicken Sie auf das Dateiverwaltungs-Logo, um ein adaptives Formular in AEM Sites in ein Experience Fragment zu konvertieren.](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
@@ -198,7 +198,7 @@ So konvertieren Sie ein adaptives Formular auf der Seite &quot;AEM Sites&quot;in
 Mit einer Übermittlungsaktion können Sie das Ziel der Daten auswählen, die über ein adaptives Formular erfasst werden. Sie wird ausgelöst, wenn ein Benutzer in einem adaptiven Formular auf die Schaltfläche Senden klickt. Adaptive Formulare enthalten einige vordefinierte Übermittlungsaktionen. Sie können auch eine standardmäßige Übermittlungsaktion erweitern, um eine eigene benutzerdefinierte Übermittlungsaktion zu erstellen. So konfigurieren Sie eine Sendeaktion für Ihr Formular:
 
 1. Öffnen Sie den AEM Seiten-Editor oder das Experience Fragment, das das adaptive Formular enthält.
-1. Öffnen Sie die Inhaltsstruktur und wählen Sie die **[!UICONTROL Adaptiver Forms-Container]** , das Ihr adaptives Formular hostet. Eine AEM Sites-Seite kann mehrere adaptive Forms-Seiten hosten. Wählen Sie daher sorgfältig den richtigen Adaptiven Forms-Container aus.
+1. Öffnen Sie die Inhaltsstruktur und wählen Sie die **[!UICONTROL Adaptiver Forms-Container]** , das Ihr adaptives Formular hostet. Auf einer AEM Sites-Seite können mehrere adaptive Forms-Seiten gehostet werden. Wählen Sie daher sorgfältig den richtigen Adaptiven Forms-Container aus.
 1. Klicken Sie auf die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg) Symbol. Das Dialogfeld Container für adaptive Formulare zum Konfigurieren von Sendeaktionen wird geöffnet.
    ![Klicken Sie auf das Schraubenschlüsselsymbol, um das Dialogfeld Container für adaptive Formulare zu öffnen, um die Übermittlungsaktion für ein adaptives Formular zu konfigurieren.](/help/forms/assets/adaptive-forms-container.png)
 1. Wählen Sie je nach Ihren Anforderungen eine Übermittlungsaktion aus und konfigurieren Sie sie. Detaillierte Informationen zu Übermittlungsaktionen finden Sie unter [Übermittlungsaktion für adaptive Formulare](/help/forms/configuring-submit-actions.md)
@@ -214,7 +214,7 @@ Sie können das Formulardatenmodell verwenden, um ein Formular mit einer Datenqu
 So konfigurieren Sie ein JSON-Schema oder ein Formulardatenmodell für Ihr Formular:
 
 1. Öffnen Sie den AEM Seiten-Editor oder das Experience Fragment, das das adaptive Formular enthält.
-1. Öffnen Sie die Inhaltsstruktur und wählen Sie die **[!UICONTROL Adaptiver Forms-Container]** , das Ihr adaptives Formular hostet. Eine AEM Sites-Seite kann mehrere adaptive Forms-Seiten hosten. Wählen Sie daher sorgfältig den richtigen Adaptiven Forms-Container aus.
+1. Öffnen Sie die Inhaltsstruktur und wählen Sie die **[!UICONTROL Adaptiver Forms-Container]** , das Ihr adaptives Formular hostet. Auf einer AEM Sites-Seite können mehrere adaptive Forms-Seiten gehostet werden. Wählen Sie daher sorgfältig den richtigen Adaptiven Forms-Container aus.
 1. Klicken Sie auf die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg) Symbol. Das Dialogfeld Container für adaptive Formulare zum Konfigurieren von Datenmodellen wird geöffnet.
    ![Klicken Sie auf das Schraubenschlüsselsymbol, um Datenmodelle für das adaptive Formular zu konfigurieren.](/help/forms/assets/form-data-model-adaptive-forms-container.png)
 1. Wählen Sie ein JSON-Schema oder ein Formulardatenmodell aus und konfigurieren Sie es entsprechend Ihren Anforderungen. Detaillierte Informationen zu Übermittlungsaktionen finden Sie unter [Übermittlungsaktion für adaptive Formulare](/help/forms/configuring-submit-actions.md).
@@ -233,10 +233,10 @@ Sie können den Vorbefüllungs-Dienst verwenden, um Felder eines adaptiven Formu
 
 ### Verwenden Sie den Vorbefüllungs-Dienst für Formulardatenmodelle, um Felder eines Formulars auf der AEM Sites-Seite oder im Experience Fragment vorab auszufüllen. {#fdm-prefill-service}
 
-Sie können den Vorbefüllungs-Dienst für Formulardatenmodelle verwenden, um Felder eines adaptiven Formulars auf der AEM Sites-Seite oder im Experience Fragment mit einem Formulardatenmodell oder einem benutzerdefinierten Vorbefüllungs-Dienst im Voraus auszufüllen. Der Vorbefüllungs-Dienst für Formulardatenmodelle verwendet die [Dienst für konfiguriertes Formulardatenmodell abrufen](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) um Daten abzurufen. So verwenden Sie den Vorbefüllungs-Dienst für Formulardatenmodelle für ein adaptives Formular:
+Sie können den Vorbefüllungs-Dienst für Formulardatenmodelle verwenden, um Felder eines adaptiven Formulars auf der AEM Sites-Seite oder im Experience Fragment mit einem Formulardatenmodell oder einem benutzerdefinierten Vorbefüllungs-Dienst im Voraus auszufüllen. Der Vorbefüllungs-Dienst für Formulardatenmodelle verwendet die [Dienst für konfiguriertes Formulardatenmodell abrufen](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) , um Daten abzurufen. So verwenden Sie den Vorbefüllungs-Dienst für Formulardatenmodelle für ein adaptives Formular:
 
 1. Öffnen Sie den AEM Seiten-Editor oder das Experience Fragment, das das adaptive Formular enthält.
-1. Öffnen Sie die Inhaltsstruktur und wählen Sie die **[!UICONTROL Adaptiver Forms-Container]** , das Ihr adaptives Formular hostet. Eine AEM Sites-Seite kann mehrere adaptive Forms-Seiten hosten. Wählen Sie daher sorgfältig den richtigen Adaptiven Forms-Container aus.
+1. Öffnen Sie die Inhaltsstruktur und wählen Sie die **[!UICONTROL Adaptiver Forms-Container]** , das Ihr adaptives Formular hostet. Auf einer AEM Sites-Seite können mehrere adaptive Forms-Seiten gehostet werden. Wählen Sie daher sorgfältig den richtigen Adaptiven Forms-Container aus.
 1. Klicken Sie auf die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg) Symbol. Das Dialogfeld Container für adaptive Formulare zum Konfigurieren von Datenmodellen wird geöffnet.
    ![Klicken Sie auf das Schraubenschlüsselsymbol, um das Dialogfeld Container für adaptive Formulare zu öffnen, um den Vorbefüllungs-Dienst für das adaptive Formular zu konfigurieren.](/help/forms/assets/adaptive-forms-container.png)
 1. Formulardatenmodell auswählen. Öffnen Sie die **[!UICONTROL Allgemein]** Registerkarte. Wählen Sie im Vorbefüllungs-Dienst die Option **[!UICONTROL Vorfüllservice für Formulardatenmodell]**.
@@ -248,19 +248,19 @@ Sie können den Vorbefüllungs-Dienst für Formulardatenmodelle verwenden, um Fe
 Beim Senden eines Formulars können Sie den Benutzer zu einer anderen Webseite oder Nachricht umleiten. So leiten Sie den Benutzer um oder konfigurieren die Dankesnachricht:
 
 1. Öffnen Sie den AEM Seiten-Editor oder das Experience Fragment, das das adaptive Formular enthält.
-1. Öffnen Sie die Inhaltsstruktur und wählen Sie die **[!UICONTROL Adaptiver Forms-Container]** , das Ihr adaptives Formular hostet. Eine AEM Sites-Seite kann mehrere adaptive Forms-Seiten hosten. Wählen Sie daher sorgfältig den richtigen Adaptiven Forms-Container aus.
+1. Öffnen Sie die Inhaltsstruktur und wählen Sie die **[!UICONTROL Adaptiver Forms-Container]** , das Ihr adaptives Formular hostet. Auf einer AEM Sites-Seite können mehrere adaptive Forms-Seiten gehostet werden. Wählen Sie daher sorgfältig den richtigen Adaptiven Forms-Container aus.
 
 1. Öffnen Sie die **[!UICONTROL Einsendung]** Registerkarte.
 
    * Um eine Umleitungs-URL zu konfigurieren, wählen Sie für die Option &quot;Beim Senden&quot;die Option **[!UICONTROL Zu URL umleiten]** und eine AEM Sites-Seite durchsuchen und auswählen oder die URL einer externen Seite angeben.
 
-   * Um eine benutzerdefinierte Nachricht oder Dankesnachricht zu konfigurieren, wählen Sie für die Option &quot;Senden&quot;die Option **[!UICONTROL Nachricht anzeigen]** und geben Sie eine Nachricht im **[!UICONTROL Nachrichteninhalt]** ankreuzen. Es handelt sich um ein Rich-Text-Feld. Sie können die Vollbildoption verwenden, um alle verfügbaren Rich-Text-Elemente anzuzeigen.
+   * Um eine benutzerdefinierte Nachricht oder Dankesnachricht zu konfigurieren, wählen Sie für die Option &quot;Senden&quot;die Option **[!UICONTROL Nachricht anzeigen]** und geben Sie eine Nachricht im **[!UICONTROL Nachrichteninhalt]** ankreuzen. Dies ist ein Rich-Text-Feld. Sie können die Vollbildoption verwenden, um alle verfügbaren Rich-Text-Elemente anzuzeigen.
 
 ## Siehe Nächste
 
 * [Erstellen von Stilen oder Designs für Ihre Formulare](using-themes-in-core-components.md)
 * [Dynamisches Verhalten zu Formularen mithilfe des Regeleditors hinzufügen](rule-editor.md)
-* [Layout von Formularen für verschiedene Bildschirmgrößen und Gerätetypen festlegen](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Festlegen des Layouts von Formularen für verschiedene Bildschirmgrößen und Gerätetypen](/help/sites-cloud/authoring/features/responsive-layout.md)
 
 
 ## Verwandter Artikel {#related-article}
