@@ -3,7 +3,7 @@ title: Wie wird ein adaptives Formular zur AEM Sites-Seite hinzugefügt?
 description: Erfahren Sie, wie Sie ein adaptives Formular erstellen oder zu Ihrer AEM Sites-Seite hinzufügen. Lernen Sie auch die Vorteile und verschiedene Möglichkeiten kennen, Formulare in Ihre Website zu integrieren.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 991de20303380af76d3e2e97aca8e0a4373e2232
+source-git-commit: ecc881ac1a9f8dd98cd57bbeb44cc35deddcbb8e
 workflow-type: tm+mt
 source-wordcount: '3214'
 ht-degree: 2%
@@ -38,7 +38,7 @@ Wenn Sie in der Vergangenheit adaptive Forms Foundation-Komponenten oder einfach
 * **Tagging:** Mit AEM Sites-Seiten können Sie [Zuweisen von Tags oder Beschriftungen zu einer Seite, einem Asset oder anderen Inhalten](/help/implementing/developing/introduction/tagging-framework.md). Tags sind Suchbegriffe oder Metadatenbeschriftungen, mit denen Inhalte basierend auf bestimmten Kriterien kategorisiert und organisiert werden können. Sie können Seiten, Assets oder anderen Inhaltselementen in AEM ein oder mehrere Tags zuweisen, um die Suche zu verbessern und die Assets zu kategorisieren.
 * **Sperren und Entsperren von Inhalten:** Mit AEM Sites können Benutzer [Zugriff und Änderungen auf Seiten steuern](/help/sites-cloud/authoring/fundamentals/editing-content.md) in der AEM Sites-Umgebung. Wenn eine Seite gesperrt ist, bedeutet dies, dass sie von anderen Benutzern vor unbefugten Änderungen oder Bearbeitungen geschützt ist. Nur der Benutzer, der den Inhalt gesperrt hat, oder ein Administrator kann ihn entsperren, um Änderungen zuzulassen.
 
-Darüber hinaus verwendet Adaptive Forms im AEM Seiteneditor [Adaptive Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de#features). Diese Kernkomponenten bieten eine standardmäßige und einfachere Methode zum Formatieren und Anpassen der Komponenten, die mit dem Szenario [AEM Sites WCM-Komponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de).
+Darüber hinaus wird Adaptive Forms in AEM Seiteneditor verwendet [Adaptive Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de#features). Diese Kernkomponenten bieten eine standardmäßige und einfachere Methode zum Formatieren und Anpassen der Komponenten, die mit dem Szenario [AEM Sites WCM-Komponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de).
 
 
 ## Erstellen oder Hinzufügen eines adaptiven Formulars auf der AEM Sites-Seite oder AEM Experience Fragment? {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
