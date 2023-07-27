@@ -5,10 +5,10 @@ landing-page-description: Erfahren Sie, wie Sie Inhaltsfragmente über die Inhal
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: afe676b0972462ef2c9b52150d96560c71f7a0f6
 workflow-type: tm+mt
-source-wordcount: '1103'
-ht-degree: 89%
+source-wordcount: '1178'
+ht-degree: 80%
 
 ---
 
@@ -64,7 +64,8 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
             * Das entsprechende Fragment im Editor öffnen,
             * Informationen zu Verweisen anzeigen,
             * Informationen zu Sprachversionen des Fragments anzeigen.
-      * Wenn Sie den Mauszeiger auf die Spaltenüberschriften bewegen, werden eine Dropdown-Aktionsauswahl und Breitenregler angezeigt. Mit diesen können Sie Folgendes tun:
+            * Schnelles Filtern nach einem ausgewählten Tag
+      * Wenn Sie den Mauszeiger auf die Spaltenüberschriften bewegen, werden eine Dropdown-Aktionsauswahl und Breitenregler angezeigt. Mit diesen Schritten können Sie Folgendes tun:
          * Sortieren – Wählen Sie die entsprechende Aktion für aufsteigende bzw. absteigende Darstellung aus. 
 Dadurch wird die gesamte Tabelle nach dieser Spalte sortiert. Die Sortierung ist nur für die entsprechenden Spalten verfügbar.
          * Ändern Sie die Größe der Spalte – entweder mithilfe der Aktion oder der Breitenregler
@@ -117,27 +118,34 @@ Der Haupt-/rechte Bereich (Tabellenansicht) der Konsole enthält eine Reihe von 
 * **Name**
    * Stellt einen Link zum Öffnen des Fragments im Editor bereit.
 * **Modell**
-   * Stellt einen Link zum Öffnen des Fragments im Editor bereit.
+   * Nur Informationen.
+   * Kann für [Schnelles Filtern](#fast-filtering#fast-filtering)
 * **Ordner**
    * Stellt einen Link zum Öffnen des Ordners in der Konsole bereit.
 Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angezeigt.
 * **Status**
-   * Nur Informationen
+   * Nur Informationen.
+   * Kann für [Schnelles Filtern](#fast-filtering#fast-filtering)
 * **Vorschau**
    * Nur Informationen:
-      * **Synchronisiert**: Inhaltsfragment ist im **Autor** und **Vorschau** Dienste.
-      * **Nicht synchronisiert**: Inhaltsfragment ist im **Autor** und **Vorschau** Dienste. Sie müssen **Veröffentlichen** nach **Vorschau** , um sicherzustellen, dass die beiden Instanzen wieder synchronisiert werden.
-      * leer: Das Inhaltsfragment ist im **Vorschau** Dienst.
+      * **Synchronisiert**: Inhaltsfragment wird im **Autor** und **Vorschau** Dienste.
+      * **Nicht synchronisiert**: Inhaltsfragment ist nicht synchronisiert auf der **Autor** und **Vorschau** Dienste. Sie müssen **Veröffentlichen** nach **Vorschau** , um sicherzustellen, dass die beiden Instanzen wieder synchronisiert werden.
+      * leer: Das Inhaltsfragment ist nicht im **Vorschau** -Dienst.
 * **Geändert**
-   * Nur Informationen
+   * Nur Informationen.
 * **Geändert von**
-   * Nur Informationen
+   * Nur Informationen.
+   * Kann für [Schnelles Filtern](#fast-filtering#fast-filtering).
+* **Tags**
+   * Nur Informationen.
+   * Zeigt alle Tags an, die sich auf das Inhaltsfragment beziehen, sowohl Hauptinhalt als auch alle Varianten.
+   * Kann für [Schnelles Filtern](#fast-filtering#fast-filtering).
 * **Veröffentlicht um**
-   * Nur Informationen
+   * Nur Informationen.
 * **Herausgeber**
-   * Nur Informationen
+   * Nur Informationen.
+   * Kann für [Schnelles Filtern](#fast-filtering#fast-filtering).
 * **Referenziert von**
-
    * Stellt einen Link bereit, der ein Dialogfeld öffnet, in dem alle übergeordneten Verweise dieses Fragments aufgelistet werden, einschließlich der Referenzierung von Inhaltsfragmenten, Experience Fragments und Seiten. Um eine bestimmte Referenz zu öffnen, klicken Sie im Dialogfeld auf **Titel**.
 
      ![Inhaltsfragmentkonsole – Dialogfeld „Verweise“](assets/cfc-console-references-dialog.png)
@@ -166,11 +174,15 @@ Daraufhin wird eine Liste von Spalten angezeigt, die Sie ausblenden oder anzeige
 
 Der Filterbereich bietet folgende Optionen:
 
-* eine Auswahl von Prädikaten; es kann ein Prädikat ausgewählt oder auch mehrere kombiniert werden, um den Filter zu erstellen
+* eine Auswahl von Prädikaten;
+   * einschließlich Inhaltsfragmentmodellen, Lokalisierung, Tags, Statusfelder usw.
+   * Es können mindestens ein Prädikat ausgewählt und kombiniert werden, um den Filter zu erstellen
 * die Möglichkeit, Ihre Konfiguration zu **speichern**
 * die Option zum Abrufen eines gespeicherten Suchfilters für die Wiederverwendung
 
-![Konsole „Inhaltsfragmente“ – Filtern](assets/cfc-console-filter.png)
+Nach der Auswahl wird die **Filtern nach** -Optionen angezeigt werden (unter dem Suchfeld). Sie können von dort aus abgewählt werden. Beispiel:
+
+![Inhaltsfragmentkonsole – Filtern](assets/cfc-console-filter.png)
 
 ### Schnelles Filtern {#fast-filtering}
 
@@ -180,7 +192,7 @@ Wählen Sie zum Beispiel **Veröffentlicht** in der Spalte **Status**:
 
 >[!NOTE]
 >
->Die Schnellfilterung wird nur für die Spalten **Modell**, **Status**, **Geändert von** und **Veröffentlicht von** unterstützt.
+>Die schnelle Filterung wird nur für die **Modell**, **Status**, **Geändert von**, **Tags**, und **Veröffentlicht von** Spalten.
 
 ![Inhaltsfragmentkonsole – Filtern](assets/cfc-console-fast-filter-01.png)
 

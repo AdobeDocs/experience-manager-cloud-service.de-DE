@@ -1,20 +1,15 @@
 ---
 title: Aktionszentrum
 description: Nutzung des Aktionszentrums, um bequem Maßnahmen bei Vorfällen und anderen wichtigen Informationen zu ergreifen
-hidefromtoc: true
-hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 083aa4b893b58102b3a0bf68c4dd3b4c003b48f6
+source-git-commit: 4adae6ffe45dcd2b80d7d199fc29a806ce5e78c4
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 27%
+source-wordcount: '727'
+ht-degree: 25%
 
 ---
 
 # Aktionszentrum {#actions-center}
-
->[!NOTE]
->Diese Funktion wurde noch nicht veröffentlicht.
 
 AEM als Cloud Service sendet E-Mail-Benachrichtigungen an das Aktionszentrum, wenn kritische Zwischenfälle auftreten, die sofortiges Handeln erfordern, und proaktive Empfehlungen für Optimierungen. Beispiele dafür sind eine blockierte Warteschlange oder ein ablaufender Satz von Anmeldeinformationen. Der vollständige Satz der Benachrichtigungstypen von Actions Center kann im Abschnitt [unten stehende Tabelle](#supported-notification-types), die sich im Laufe der Zeit ausweiten wird.
 
@@ -40,7 +35,7 @@ Erstellen Sie zum Konfigurieren des Empfangs von E-Mail-Benachrichtigungen des A
 
 ## Detaillierter Benutzerfluss {#detailed-user-flow}
 
-Durch Klicken auf die E-Mail gelangen Sie zum Aktionszentrum mit einem Popup-Fenster, in dem der Kontext der angeklickten Benachrichtigung sowie in einigen Fällen Links zu weiteren Informationen angezeigt werden, die beschreiben, wie Korrekturmaßnahmen ergriffen werden können.
+Durch Klicken auf die E-Mail gelangen Sie zum Aktionszentrum mit einem Popup-Fenster, in dem der Kontext der angeklickten Benachrichtigung sowie in einigen Fällen Links zu weiteren Informationen angezeigt werden, die beschreiben, wie Korrekturmaßnahmen ergriffen werden können. Sie können auch direkt auf das Aktionszentrum zugreifen unter [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), wo Sie das entsprechende Programm und die entsprechende Umgebung auswählen können.
 
 ![Details zu Vorfällen](/help/operations/assets/incident-details.png)
 
