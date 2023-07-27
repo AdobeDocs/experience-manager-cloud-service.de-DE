@@ -3,9 +3,9 @@ title: Wie wird ein adaptives Formular zur AEM Sites-Seite hinzugefügt?
 description: Erfahren Sie, wie Sie ein adaptives Formular erstellen oder zu Ihrer AEM Sites-Seite hinzufügen. Lernen Sie auch die Vorteile und verschiedene Möglichkeiten kennen, Formulare in Ihre Website zu integrieren.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: c5a3b5a22283e0e14b8d0a8464b9bba460a80c71
+source-git-commit: 6a462b7a437f74e659a43f7f5d4a95663b92c2cf
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3308'
 ht-degree: 2%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 2%
 | -------- | ---------------------------- |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service | Dieser Artikel |
+
+## Übersicht {#overview}
 
 Mit AEM Forms können Sie Ihrer AEM Sites-Seite nahtlos ein Formular hinzufügen. Dadurch können Ihre Besucher bequem Formulare ausfüllen und senden, ohne jemals die Seite verlassen zu müssen, auf der sie sich befinden. Dadurch können sie mühelos mit anderen Elementen der Website interagieren und gleichzeitig aktiv mit dem Formular interagieren.
 
@@ -51,11 +53,12 @@ Sie können diese Funktion voll nutzen, indem Sie die folgenden Optionen verwend
 
 * **[Konvertieren eines adaptiven Formulars in Experience Fragment](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** Konvertieren Sie ein adaptives Formular, das zu einer AEM Sites-Seite hinzugefügt wurde, in ein Experience Fragment, um das Formular auf mehreren AEM Sites-Seiten wiederzuverwenden.
 
-* **Fügen Sie einer AEM Sites-Seite oder einem Experience Fragment mehrere Formulare hinzu:**  Sie können mehrere adaptive Forms erstellen oder zu einer AEM Sites-Seite hinzufügen, um Benutzern basierend auf ihren Voreinstellungen und Anforderungen mehrere Optionen zur Verfügung zu stellen. Diese können eine Kombination aus neuen und vorhandenen Formularen darstellen.
+* **[Erstellen Sie Formulare basierend auf genehmigten Vorlagen und fügen Sie sie einer AEM Sites-Seite hinzu:](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** Sie können vorab genehmigte Vorlagen nutzen, um schnell Adaptive Forms zu erstellen, die den Branding-Richtlinien und Designstandards Ihres Unternehmens entsprechen. Die Option ist nur für adaptive Forms verfügbar, die mit dem Adaptiven Forms-Editor oder der Adaptiven Forms - Einbettungskomponente erstellt wurde.
 
-* **Erstellen Sie Formulare basierend auf genehmigten Vorlagen und fügen Sie sie einer AEM Sites-Seite hinzu:** Sie können vorab genehmigte Vorlagen nutzen, um schnell Adaptive Forms zu erstellen, die den Branding-Richtlinien und Designstandards Ihres Unternehmens entsprechen. Die Option ist nur für adaptive Forms verfügbar, die mit dem Adaptiven Forms-Editor oder der Adaptiven Forms - Einbettungskomponente erstellt wurde.
+* **[Fügen Sie vorhandene Formulare zu einer AEM Sites-Seite hinzu:](/help/forms/embed-adaptive-form-aem-sites.md#embed-an-adaptive-form-in-sites-editor)** Sie können bereits erstellte Formulare einfach in Ihre Websites integrieren, sodass Besucher direkt mit ihnen interagieren können. Die Option ist nur für adaptive Forms verfügbar, die mit dem Adaptiven Forms-Editor oder der Adaptiven Forms - Einbettungskomponente erstellt wurde.
 
-* **Fügen Sie vorhandene Formulare zu einer AEM Sites-Seite hinzu:** Sie können bereits erstellte Formulare einfach in Ihre Websites integrieren, sodass Besucher direkt mit ihnen interagieren können. Die Option ist nur für adaptive Forms verfügbar, die mit dem Adaptiven Forms-Editor oder der Adaptiven Forms - Einbettungskomponente erstellt wurde.
+
+* **Fügen Sie einer AEM Sites-Seite oder einem Experience Fragment mehrere Formulare hinzu:**  Sie können mehrere adaptive Forms erstellen oder zu einer AEM Sites-Seite hinzufügen, um Benutzern basierend auf ihren Voreinstellungen und Anforderungen mehrere Optionen zur Verfügung zu stellen. Diese können eine Kombination aus neuen und vorhandenen Formularen darstellen. Sie können die **[!UICONTROL Container für adaptive Formulare]** mehrere Male, um Adaptive Forms auf einer AEM Sites-Seite hinzuzufügen. Sie können die **[!UICONTROL Adaptives Forms - Einbetten]** Komponente mehrmals in einer AEM Sites-Seite verwenden, nur wenn **[!UICONTROL Das Formular deckt die gesamte Breite des Rahmens ab]** ausgewählt ist. In diesem Fall **[!UICONTROL Das Formular deckt die gesamte Breite des Rahmens ab]** nicht aktiviert ist, unterstützt die AEM Sites-Seite nur, dass nur ein adaptives Formular ohne iFrame vorhanden ist. So fügen Sie mit dem **[!UICONTROL Adaptives Forms - Einbetten]** Komponente, auswählen **[!UICONTROL Das Formular deckt die gesamte Breite des Rahmens ab]** -Option.
 
 ## Überlegungen zum Erstellen eines adaptiven Formulars auf der AEM Sites-Seite oder AEM Experience Fragment {#consideration}
 
