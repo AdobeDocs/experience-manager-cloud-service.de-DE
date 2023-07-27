@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 758960006bd1e58530fdf7b20cdd761853170366
+source-git-commit: 71af59cae28332793471568069204e9c88acd6a5
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 25%
@@ -77,7 +77,7 @@ Assets Essentials sortiert die Suchergebnisse nun standardmäßig nach Relevanz.
 
 * [**Vorkonfigurierte Designs**](/help/forms/using-themes-in-core-components.md) **und Vorlagen**: Starten Sie Ihren Formularerstellungsprozess mit unseren einsatzbereiten OOTB-Designs und -Vorlagen, die auf erfahrene Profis und neue Formularautoren zugeschnitten sind. Nahtlos mit den Kernkomponenten von Adaptive Forms erstellt, ermöglichen Ihnen diese sorgfältig kuratierten Designs und Vorlagen die rasche Erstellung von Formularen für gängige Anwendungsfälle.
 
-!![Vordefinierte Vorlagen](/help/forms/assets/form-templates-ootb.png)
+  ![Vordefinierte Vorlagen](/help/forms/assets/form-templates-ootb.png)
 
 * **React-Komponenten für Headless Forms**: Sie können jetzt Headless-Adaptive Formularwiedergaben mit den vordefinierten React-Komponenten in der Vorschau anzeigen und anpassen. Diese Komponenten nutzen BEM-Klassen aus den adaptiven Forms-Kernkomponenten für die Formatierung, sodass Sie das Erscheinungsbild mühelos an Ihre spezifischen Anforderungen anpassen können.
 
