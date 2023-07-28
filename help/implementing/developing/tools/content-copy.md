@@ -2,7 +2,7 @@
 title: Das Inhaltskopie-Werkzeug
 description: Das Werkzeug zum Kopieren von Inhalten ermöglicht es Benutzern, veränderliche Inhalte bei Bedarf aus ihren Produktionsumgebungen in AEM as a Cloud Service zu niedrigeren Umgebungen zu Testzwecken zu kopieren.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f579539d582e2059fca20f9f7e5e82f4ae24c833
+source-git-commit: 639c49c69c87e7c408929f0d35a673a96a5cc5db
 workflow-type: tm+mt
 source-wordcount: '1308'
 ht-degree: 50%
@@ -39,7 +39,7 @@ Um das Werkzeug zum Kopieren von Inhalten zu verwenden, sind bestimmte Berechtig
 
 | Funktion „Inhaltskopie“ | AEM-Admingruppe | Bereitstellungs-Manager-Rolle |
 |---|---|---|
-| Erstellen und Ändern von [Content-Sets](#create-content-set) | Erforderlich | Nicht erforderlich |
+| Erstellen und Ändern von [Content-Sets](#create-content-set) | Nicht erforderlich | Erforderlich |
 | Starten oder Abbrechen des [Inhaltskopie-Prozesses](#copy-content) | Erforderlich | Erforderlich |
 
 Weitere Informationen zu Berechtigungen und zum Festlegen dieser Berechtigungen finden Sie im Dokument [AEM as a Cloud Service Team und Produktprofile.](/help/onboarding/aem-cs-team-product-profiles.md)
@@ -65,8 +65,8 @@ Bevor Inhalt kopiert werden kann, muss ein Content-Set definiert werden. Nach de
 1. Auf der Registerkarte **Inhaltspfade** des Assistenten geben Sie die Pfade der veränderbaren Inhalte an, die in das Content-Set aufgenommen werden sollen.
 
    1. Geben Sie den Pfad in das Feld **Einschlusspfad hinzufügen** ein.
-   1. Klicken **Pfad hinzufügen** , um den Pfad zum Inhaltsset hinzuzufügen.
-   1. Klicken **Pfad hinzufügen** nach Bedarf erneut.
+   1. Klicks **Pfad hinzufügen** , um den Pfad zum Inhaltsset hinzuzufügen.
+   1. Klicks **Pfad hinzufügen** nach Bedarf erneut.
       * Es sind bis zu 50 Pfade zulässig.
 
    ![Hinzufügen von Pfaden zu Content-Sets](assets/add-content-set-paths.png)
@@ -184,7 +184,7 @@ Sie können die Protokolle sowohl auf die Quell- als auch auf die Zielumgebung f
 
 Gehen Sie dazu im **Aktivität &quot;Inhalt kopieren&quot;** Seite, wählen Sie die **Protokolle** Aktion aus dem Auslassungsmenü des Kopierprozesses, für den Sie die Protokolle überprüfen und dann auswählen möchten, für welche Umgebung.
 
-![Zugreifen auf Protokolle für den Prozess zum Kopieren von Inhalten](assets/copy-content-logs.png)
+![Zugriff auf Protokolle zum Kopieren von Inhalten](assets/copy-content-logs.png)
 
 Die Protokolle werden auf Ihren lokalen Computer heruntergeladen. Wenn der Download nicht gestartet wird, überprüfen Sie Ihre Popup-Blocker-Einstellungen.
 
