@@ -5,8 +5,8 @@ hidefromtoc: true
 index: false
 source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '961'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="In diesem Modul haben Sie erfahren, wie Sie Inhalte im Kontext und im Kontext mit dem universellen Editor anpassen können."
+>title="In diesem Modul haben Sie erfahren, wie Sie Inhalte im Kontext und im Kontext mit dem Universal Editor anpassen können."
 >abstract=""
 
 ## Text im Kontext bearbeiten {#edit-text}
@@ -42,7 +42,7 @@ Mit dem universellen Editor können Sie Ihren Text im Kontext und an Ort und Ste
 
 1. Tippen oder klicken Sie auf den Titel des neuesten Artikels, um ihn zu bearbeiten.
 
-   ![Der universelle Editor](assets/do-not-localize/ue-text-mode.png)
+   ![Der Universal Editor](assets/do-not-localize/ue-text-mode.png)
 
 1. Die Komponente wird wie durch einen blauen Rand ausgewählt, wobei eine Registerkarte angibt, dass es sich um eine Textkomponente handelt. Ein Cursor befindet sich im Rahmen, der auf die Texteingabe wartet. Ändern Sie den Text in `Aloha Spirit in Lofoten`.
 
@@ -60,13 +60,13 @@ Sie können auch Bilder austauschen, während sie im Kontext Ihres Inhalts verbl
 
 1. Tippen oder klicken Sie auf das Bild des Surfers, um es auszuwählen.
 
-1. In der Komponentenleiste können Sie die Details des Assets sehen. Tippen oder klicken Sie auf **Ersetzen**.
+1. In der Komponentenleiste können Sie die Details des Assets sehen. Tippen oder klicken **Ersetzen**.
 
    ![Auswählen eines zu bearbeitenden Bildes](assets/do-not-localize/ue-edit-media.png)
 
 1. Im **Auswählen von Assets** , scrollen Sie nach unten und tippen oder klicken Sie auf `surfer-wave-02.JPG` -Bild, um es auszuwählen.
 
-1. Tippen oder klicken Sie auf **Auswählen** im **Auswählen von Assets** Fenster.
+1. Tippen oder klicken **Auswählen** im **Auswählen von Assets** Fenster.
 
    ![Auswählen eines Bildes im Fenster &quot;Select Asset&quot;](assets/do-not-localize/ue-select-asset.png)
 
@@ -116,7 +116,7 @@ Um das Authoring-Erlebnis für Inhalte zu beschleunigen, wenn die strukturierte 
 
 1. Scrollen Sie weiter unten auf der Seite zum **Abenteuer** Abschnitt.
 
-1. Wählen Sie in der Modusleiste auf der linken Seite des Editors die Option **Komponenten**. Auf diese Weise können Sie Seitenkomponenten im Editor auswählen.
+1. Wählen Sie in der Modusleiste links im Editor die Option **Komponenten**. Auf diese Weise können Sie Seitenkomponenten im Editor auswählen.
 
 1. Tippen oder klicken Sie auf eines der Abenteuer, um es auszuwählen.
 
