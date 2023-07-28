@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 558662fb646abcf298a46fd0c1b1c709d53bce45
+source-git-commit: c00080859cc10da2da887cf1a711e1aef9dc5fb8
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 59%
@@ -734,7 +734,7 @@ Sie können folgende Einschränkungen zu JSON-Schemaelementen hinzufügen, um de
 
 ## Schemakompatible Daten aktivieren {#enablig-schema-compliant-data}
 
-So aktivieren Sie, dass das adaptive Formular die schemakompatiblen Daten bei der Formularübermittlung generiert, führen die folgenden Schritte aus:
+Gehen Sie wie folgt vor, um allen JSON-Schema-basierten adaptiven Forms zu ermöglichen, bei der Formularübermittlung schemakonforme Daten zu generieren:
 
 1. Navigieren Sie zur Experience Manager-Webkonsole unter `https://server:host/system/console/configMgr`.
 1. Suchen **[!UICONTROL Webkanalkonfiguration für adaptive Formulare und Interaktionskommunikation]**.
