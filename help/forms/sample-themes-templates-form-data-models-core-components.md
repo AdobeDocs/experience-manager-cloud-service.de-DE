@@ -3,21 +3,21 @@ title: Muster-Designs, Vorlagen und Formulardatenmodelle in Kernkomponenten
 description: AEM Forms-Kernkomponenten bieten Beispiel-Designs, Vorlagen und Formulardatenmodelle für adaptive Formulare
 solution: Experience Manager Forms
 topic: Administration
-role: Author
+role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 12c99aa55871f9b24ec7b007b14898f0100bfe2f
+source-git-commit: 6abd681fbf0258029dd594d214a2480d73b21f57
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 11%
+source-wordcount: '1207'
+ht-degree: 9%
 
 ---
 
+
 # Muster-Designs, Vorlagen und Formulardatenmodelle in Kernkomponenten {#sample-themes-templates-and-data-models}
 
-AEM Forms as a Cloud Service bietet verschiedene Beispiel-Referenzthemen, Vorlagen und Formulardatenmodelle, damit Sie schnell mit der Erstellung von Adaptive Forms mit Kernkomponenten beginnen können. Sie können [Aktivieren der adaptiven Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=de) zur as a Cloud Service und lokalen Entwicklungsumgebung von AEM Forms , um OOTB-Referenzvorlagen zu erhalten und [Designs verwenden und anpassen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
+AEM Forms as a Cloud Service bietet Beispiel-Referenzthemen, Vorlagen und Formulardatenmodelle, die Ihnen helfen, schnell mit der Erstellung von Adaptive Forms mit Kernkomponenten zu beginnen. Sie können [Aktivieren der adaptiven Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=de) zur as a Cloud Service und lokalen Entwicklungsumgebung von AEM Forms , um OOTB-Referenzvorlagen zu erhalten und [Designs verwenden und anpassen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
 
 Die im Referenzinhaltspaket enthaltenen Musterdesigns, Vorlagen und Formulardatenmodelle sind:
 
@@ -40,29 +40,28 @@ Die im Referenzinhaltspaket enthaltenen Musterdesigns, Vorlagen und Formulardate
 
 ## Beispieldesigns {#Sample-Themes}
 
-Mithilfe von Referenzdesigns können Sie die Formatierung für Ihre Formulare definieren, ohne dass Sie über Kenntnisse in CSS verfügen müssen. Sie können auch Ihr Design entsprechend Ihren Anforderungen anpassen. Sie können [Aktivieren der adaptiven Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=de) in der as a Cloud Service und lokalen Entwicklungsumgebung von AEM Forms, um diese Themen wie folgt zu behandeln:
+Anhand von Beispieldesigns können Autoren die Formatierung für Formulare definieren und anpassen. Autoren mit Grundkenntnissen von CSS können Designs nach Bedarf anpassen. Formularverfasser [Aktivieren der adaptiven Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=de) in der as a Cloud Service und lokalen Entwicklungsumgebung von AEM Forms, um diese Themen wie folgt zu behandeln:
 
 ![OOTB-Themen](assets/OOTB-themes.png)
 
 ### Canvas {#Canvas}
 
-Canvas ist das Standard-Design für adaptive Formulare und betont die Verwendung von Grundfarben, Transparenz und flachen Symbolen. Im Screenshot unten sehen Sie, wie das Canvas -Design aussieht.
+Das Arbeitsflächendesign ist das Standarddesign für Formulare und hebt die Verwendung von Grundfarben, Transparenz und flachen Symbolen hervor. Im Screenshot unten sehen Sie, wie das Canvas -Design aussieht.
+
 ![Arbeitsflächendesign](assets/canvas-theme.png)
 
 ### WKND {#WKND}
 
-Das WKND-Design verkörpert ein lebendiges, fantasievolles und ansprechendes Design, um eine stilvolle Darstellung in Ihren Formularen zu präsentieren. Das Design basiert auf dem Erscheinungsbild und Stil von [WKND-Site](https://wknd.site/us/en.html) , auf der eine Reise- und Abenteuerwebsite aufbaut [Adobe Experience Manager-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
+Das WKND-Design verkörpert ein lebendiges, fantasievolles und ansprechendes Design, um Ihren Formularen ein stilvolles Erscheinungsbild zu verleihen. Das Design basiert auf dem Erscheinungsbild und Stil von [WKND-Site](https://wknd.site/us/en.html) , auf der eine Reise- und Abenteuerwebsite aufbaut [Adobe Experience Manager-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
 
 ![WKND-Design](assets/WKND-theme.png)
 
 
 ### Easel {#Easel}
 
-Das Easel-Design bezieht sich auf einen speziellen Typ von Vorlagendesign, der einfach einzurichten ist und auf Einfachheit und Benutzerfreundlichkeit angepasst ist. Das Easel-Design basiert auf dem Konzept, wo ein tragbarer Stand von Künstlern verwendet, um eine Leinwand während der Arbeit an ihren Gemälden zu unterstützen.
+Einfaches Design hilft dabei, ein ansprechendes und einfach einzurichtendes Formular zu erstellen. Es ist auf Einfachheit und Benutzerfreundlichkeit abgestimmt. Das Easel-Design basiert auf dem Konzept, wo ein tragbarer Stand von Künstlern verwendet, um eine Leinwand während der Arbeit an ihren Gemälden zu unterstützen.
 
 ![Easel-Design](assets/Easel-theme.png)
-
-
 
 ## Beispielvorlagen {#Sample-templates}
 
@@ -72,7 +71,7 @@ Vorlagen definieren die anfängliche Formularstruktur, den Inhalt und die Aktion
 
 ### Einfach {#Basic}
 
-Eine einfache Vorlage hilft Ihnen beim schnellen Erstellen eines Registrierungserlebnisformulars. Sie können sie auch verwenden, um die Funktionalität der Kernkomponenten in adaptiven Forms in der Vorschau anzuzeigen. Es bietet ein Assistenten-Layout für eine abschnittsweise Darstellung der Daten.
+Eine einfache Vorlage hilft Ihnen beim schnellen Erstellen eines Registrierungserlebnisformulars. Sie können sie auch verwenden, um eine Vorschau der Funktionen von [Adaptive Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction). Es bietet ein Assistenten-Layout für eine abschnittsweise Darstellung der Daten.
 
 >[!BEGINTABS]
 
@@ -93,65 +92,66 @@ Eine einfache Vorlage hilft Ihnen beim schnellen Erstellen eines Registrierungse
 
 ### Leer {#Blank}
 
-Eine leere Arbeitsflächenvorlage wird verwendet, um eine Struktur, einen Inhalt und Regeln für adaptive Formulare von Grund auf neu zu erstellen. Es sind keine Formularkomponenten integriert.
+Eine leere Arbeitsflächenvorlage wird verwendet, um eine Struktur, einen Inhalt und Regeln für adaptive Formulare von Grund auf neu zu erstellen. In die leere Vorlage sind keine Formularkomponenten eingefügt.
 
 ![Leere Vorlage](assets/Blank-template.png)
 
 ### Kontoauszug anfordern {#Request-for-Account-Statement}
 
-Eine Anfrage nach einem Kontoauszugsformular, um eine Transaktionsabrechnung anzufordern. Diese Erklärung enthält einen detaillierten Überblick über Finanztransaktionen, -aktivitäten oder andere relevante Informationen über eine Person. Durch Ausfüllen dieses Formulars können Sie den Vorgang starten, um eine genaue und aktuelle Aussage für Ihre Datensätze zu erhalten.
+Die Vorlage für Kontoauszugsanfragen hilft bei der Erstellung eines Formulars, das den Prozess des Abrufs einer präzisen und aktuellen Kundenanweisung auslöst. Die Erklärung enthält eine detaillierte Aufzeichnung von Finanztransaktionen, -aktivitäten oder anderen relevanten Informationen über Kunden, die dieses Formular verwenden.
 
 ![Request-for-account-statement](assets/Request-for-account-statment.png)
 
 ### Aktualisierung der Kontaktdetails {#Contact-Details-Update}
 
-Das Aktualisierungsformular für Kontaktdetails für Adresse und Kontaktdaten soll Ihnen dabei helfen, Ihre personenbezogenen Daten zu Ihrem Abonnement oder Ihren Vorteilen zu aktualisieren, um eine nahtlose Kommunikation und einen unterbrechungsfreien Zugriff auf die Services oder Vorteile zu gewährleisten, die Sie erhalten.
+Die Vorlage für die Aktualisierung von Kontaktdetails hilft Autoren bei der Erstellung eines Formulars für die Aktualisierung von Adresse und Kontaktdaten von Kunden. Das Formular unterstützt Kunden auch bei der Aktualisierung personenbezogener Daten in Bezug auf Abonnements oder Vorteile, um eine nahtlose Kommunikation und einen unterbrechungsfreien Zugriff auf die Dienste oder Vorteile zu gewährleisten.
 
 ![Contact-details-update](assets/Contact-details-update.png)
 
 ### Sicherheitskontrolle {#Safety-Inspection}
 
-Das Formular für die Sicherheitskontrolle dient der Erhaltung eines sicheren Arbeitsumfelds. Durch regelmäßige Inspektionen mit diesem Formular können potenzielle Risiken ermittelt werden. Er umfasst verschiedene Aspekte wie Notausstiege, Brandsicherheit, elektrische Sicherheit, Gefahrstoffe, persönliche Schutzausrüstung, Ergonomie der Workstation usw. für die Sicherheit und das Wohlbefinden von Mitarbeitern, Besuchern und Kunden und schafft ein sicheres Umfeld für alle.
+Die Vorlage für Sicherheitsüberprüfungsformulare hilft bei der Erstellung eines Formulars zur Eingabe von Details für eine sichere Arbeitsumgebung. Durch regelmäßige Inspektionen mit diesem Formular können potenzielle Risiken ermittelt werden. Der Vordruck umfasst verschiedene Aspekte wie Notausstiege, Brandsicherheit, elektrische Sicherheit, Gefahrstoffe, persönliche Schutzausrüstung, Ergonomie der Workstation für die Sicherheit und das Wohlbefinden von Mitarbeitern, Besuchern und Kunden.
 
 ### Kaufanfrage {#Purchase-Request}
 
-Ein Bestellformular, mit dem die Auftragsvergabe initiiert werden kann und dem Arbeitnehmer die Möglichkeit gegeben wird, den Kauf von Waren oder Dienstleistungen zu beantragen, die für ihre Arbeit erforderlich sind. Das Formular erfasst wichtige Details wie Artikelbeschreibung, Menge, bevorzugter Lieferant (falls zutreffend), Budgetzuweisung, Begründung des Kaufs, Lieferinformationen und erforderliche Genehmigungen. Mit dem Formular soll der Einkaufsprozess gestrafft und dokumentiert werden, um eine ordnungsgemäße Autorisierung und Nachverfolgung der angeforderten Käufe zu gewährleisten.
+Mit der Vorlage für Bestellformulare können Sie ein Formular erstellen, um den Vergabeverfahren einzuleiten und es Mitarbeitern zu ermöglichen, den Kauf von für ihre Arbeit erforderlichen Waren oder Dienstleistungen förmlich anzufordern. Das Formular erfasst wichtige Details wie Artikelbeschreibung, Menge, bevorzugter Lieferant (falls zutreffend), Budgetzuweisung, Begründung des Kaufs, Lieferinformationen und erforderliche Genehmigungen.
 
 ![purchase-request](assets/purchase-request.gif)
 
 ### Zusammenfassung der Arbeitnehmervorteile {#Employee-Benefits-Summary}
 
-Das Formular &quot;Zusammenfassung der Leistungen für Arbeitnehmer&quot;dient dazu, wichtige Informationen über die Leistungen einer Person zu sammeln. Es hilft bei der schnellen und präzisen Bewertung der Abdeckung, indem ein umfassender Überblick über effiziente Hilfe und Unterstützung bereitgestellt wird.
+Die Vorlage für die Zusammenfassung der Leistungen für Arbeitnehmer wird verwendet, um ein Formular zu erstellen, in dem wichtige Details zu den Vorteilen einer Person erfasst werden. Es hilft bei der schnellen und präzisen Bewertung der Abdeckung, indem ein umfassender Überblick über effiziente Hilfe und Unterstützung bereitgestellt wird.
 
 ### Leistungseinstufung {#Benefits-Enrollment}
 
-Eine Vorlage für das Formular zur Anmeldung von Leistungen , mit der Mitarbeiter wichtige Informationen zu ihren bevorzugten Vorteilen und Deckungsoptionen sammeln können. Sie begleitet in der Regel den jährlichen Zeitraum der Leistungseinstufung.
+Mit der Vorlage für das Anmeldeformular für Vorteile können Sie ein Formular erstellen, in dem Sie wichtige Informationen von Ihren Mitarbeitern zu ihren bevorzugten Vorteilen und Deckungsoptionen erfassen. Sie begleitet in der Regel den jährlichen Zeitraum der Leistungseinstufung.
 
 
 ### Qualitätskontrolle {#Quality-Control-Inspection}
 
-Ein Überprüfungsformular für die Qualitätskontrolle zur Bewertung und Dokumentierung des Erscheinungsbilds, der Abmessungen, der Funktionalität, der Dokumentation, der Testergebnisse und der Gesamtqualität eines Produkts oder Artikels. Sie hilft bei der Identifizierung von Mängeln, Nichtkonformitäten und Korrekturmaßnahmen, die zur Gewährleistung der Einhaltung von Qualitätsstandards erforderlich sind.
+Anhand der Vorlage für die Qualitätskontrolle wird ein Formular erstellt, in dem das Erscheinungsbild, die Abmessungen, die Funktionalität, die Dokumentation, die Testergebnisse und die Gesamtqualität eines Produkts oder Artikels bewertet und dokumentiert werden. Sie hilft bei der Identifizierung von Mängeln, Nichtkonformitäten und Korrekturmaßnahmen, die zur Gewährleistung der Einhaltung von Qualitätsstandards erforderlich sind.
 
 
 ### Einverständnisformular {#Consent-Form}
 
-Ein Einverständnisformular ist ein Rechtsdokument, das die freiwillige und informierte Zustimmung einer Person oder eines Teilnehmers einholen soll, bevor diese an einer bestimmten Tätigkeit, einem Forschungsstudium, einem medizinischen Verfahren oder einer Situation teilnimmt, in der ihre personenbezogenen Daten oder Rechte involviert sein können. Mit einem Einverständnisformular soll Transparenz gewährleistet, die Rechte des Teilnehmers geschützt und ein klares Verständnis dessen geschaffen werden, was der Einzelne zustimmt.
+Die Vorlage für das Einverständnisformular wird verwendet, um ein Formular für die Beschaffung eines Rechtsdokuments von Teilnehmern zu erstellen, die an einer bestimmten Aktivität, einem Forschungsstudium, einem medizinischen Verfahren oder einer Situation teilnehmen, in der ihre personenbezogenen Daten oder Rechte involviert sein können. Das Formular gewährleistet Transparenz, schützt die Rechte des Teilnehmers und schafft ein klares Verständnis dessen, was der Einzelne zustimmt.
+
 
 ### Kontakt {#Contact-Us}
 
-Das Aktualisierungsformular für Kontaktdetails für Adresse und Kontaktdaten soll Ihnen dabei helfen, Ihre personenbezogenen Daten zu Ihrem Abonnement oder Ihren Vorteilen zu aktualisieren, um eine nahtlose Kommunikation und einen unterbrechungsfreien Zugriff auf die Services oder Vorteile zu gewährleisten, die Sie erhalten.
+Die Formularvorlage Kontakt wird verwendet, um ein Formular zu erstellen, das die Kommunikation zwischen Website-Besuchern und Administratoren erleichtert. Benutzer können über das Formular Abfragen, Feedback oder Supportanfragen senden.
 
 ### Protokolldienstanfrage {#Log-Service-Request}
 
-Ein Protokolldienst-Anfrageformular zum Anfordern bestimmter Protokollierungsdienste von einem Dienstanbieter. Das Formular dient als formelle Anfrage zum Erstellen eines Tickets, bei dem bestimmte Ereignisse, Aktivitäten oder Daten zur Überwachung oder zum Tracking-Status protokolliert werden.
+Die Protokolldienst-Anforderungsvorlage hilft beim Erstellen eines Formulars, das anfragespezifische Protokollierungsdienste von einem Dienstleister anfordert. Das Formular dient als formelle Anfrage zum Erstellen eines Tickets, bei dem bestimmte Ereignisse, Aktivitäten oder Daten zur Überwachung oder zum Tracking-Status protokolliert werden.
 
 ### Feedback geben {#Give-Feedback}
 
-Eine &quot;Feedback-Vorlage&quot;, um einer anderen Person oder einem Team konstruktives Feedback zu geben. Die Vorlage trägt dazu bei sicherzustellen, dass das Feedback klar, spezifisch und umsetzbar ist, und fördert offene Kommunikation und Verbesserungen.
+Mit der Rückmeldevorlage können Sie ein Formular erstellen, das eine konstruktive Rückmeldung an eine andere Person oder ein Team liefert. Das Formular hilft sicherzustellen, dass das Feedback klar, spezifisch und umsetzbar ist, und fördert offene Kommunikation und Verbesserung.
 
 ## Referenzformular-Datenmodelle {#reference-models}
 
-Adaptive Forms kann dann mit Microsoft® Dynamics 365- und Salesforce-Servern interagieren, um geschäftliche Workflows zu ermöglichen. Beispiel:
+Nachdem Sie die [Adaptives Formular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) basierend auf [Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), können Sie das Backend Ihres Formulars mit der Datenbank Microsoft® Dynamics 365- und Salesforce-Servern verbinden, um geschäftliche Workflows zu ermöglichen. Beispiel:
 
 * Schreiben Sie Daten in Microsoft® Dynamics 365 und Salesforce bei der Übermittlung des adaptiven Formulars.
 * Schreiben Sie Daten in Microsoft® Dynamics 365 und Salesforce über benutzerdefinierte Entitäten, die im Formulardatenmodell definiert sind, und umgekehrt.

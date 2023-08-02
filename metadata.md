@@ -5,13 +5,12 @@ git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.de-DE
 index: y
 type: Documentation
 solution: Experience Manager
-version: Cloud Service
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 cloud: Experience Cloud
-source-git-commit: 5bc43af20dc8893303b1d1f4dc70939631933eb7
+source-git-commit: a7a8b14c6d95f704c6ea4ee0d1424e77df045a4c
 workflow-type: tm+mt
 source-wordcount: '90'
-ht-degree: 68%
+ht-degree: 77%
 
 ---
 
@@ -26,7 +25,7 @@ Die Metadaten im GitHub-Authoring-System sind hierarchisch aufgebaut und werden 
 
 Die in der Datei „metadata.md“ definierten Metadaten gelten für den gesamten Bericht, können jedoch auf der IHV- (ToC) und der Artikelebene überschrieben werden. Das Überschreiben der Metadaten sollte auf der niedrigstmöglichen Ebene erfolgen.
 
-Die Metadaten im Repository &quot;experience-manager-cloud-service.en&quot;sind das erforderliche Minimum.
+Die Metadaten im Repository experience-manager-cloud-service.en sind das erforderliche Minimum.
 
 metadata.md
 
