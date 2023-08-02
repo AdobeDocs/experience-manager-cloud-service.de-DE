@@ -2,9 +2,9 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: c19783ed4899772835a05856fc3a5601ef6a6df8
+source-git-commit: a16e627fc758c6aa8516b01aedd622da5b77318b
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2317'
 ht-degree: 39%
 
 ---
@@ -24,7 +24,7 @@ Nachstehend finden Sie eine Liste der wichtigsten Änderungen im Vergleich zu AE
 1. Kunden können entsprechend ihren Anforderungen Warnungen einrichten.
 1. SREs überwachen den Systemzustand rund um die Uhr, und Maßnahmen werden so früh wie möglich ergriffen.
 1. Die Indexkonfiguration wird über Bereitstellungen geändert. Änderungen an der Indexdefinition werden wie andere Inhaltsänderungen konfiguriert.
-1. Auf hoher Ebene auf AEM as a Cloud Service mit der Einführung der [Rollierendes Bereitstellungsmodell](#index-management-using-rolling-deployments), gibt es zwei Indexsätze: eine für die alte Version und eine für die neue Version.
+1. Auf hoher Ebene auf AEM as a Cloud Service mit der Einführung der [Rollierendes Bereitstellungsmodell](#index-management-using-rolling-deployments), gibt es zwei Indexsätze: einen für die alte Version und einen für die neue Version.
 1. Kunden können sehen, ob der Indizierungsauftrag auf der Build-Seite von Cloud Manager abgeschlossen ist, und erhalten eine Benachrichtigung, wenn die neue Version für den Traffic bereit ist.
 
 Beschränkungen:
@@ -32,6 +32,7 @@ Beschränkungen:
 * Derzeit wird die Indexverwaltung in AEM as a Cloud Service nur für Indizes des Typs `lucene` unterstützt.
 * Es werden nur Standard-Analyzer unterstützt (d. h. die Analyzer, die im Lieferumfang des Produkts enthalten sind). Benutzerdefinierte Analyzer werden nicht unterstützt.
 * Intern können andere Indizes konfiguriert und für Abfragen verwendet werden. Zum Beispiel Abfragen, die gegen für den `damAssetLucene`-Index geschrieben wurden, können auf Skyline tatsächlich für eine Elasticsearch-Version dieses Index ausgeführt werden. Dieser Unterschied ist normalerweise für die Anwendung und den Benutzer nicht sichtbar. Allerdings sind bestimmte Tools wie die `explain` -Funktion einen anderen Index anzeigen. Unterschiede zwischen Lucene-Indizes und Elastic-Indizes finden Sie unter [die Elastic-Dokumentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Kunden müssen und können keine Elasticsearch-Indizes direkt konfigurieren.
+* Suche nach ähnlichen Funktionsvektoren (`useInSimilarity = true`) wird nicht unterstützt.
 
 ## Verwendung {#how-to-use}
 
@@ -51,7 +52,7 @@ Eine Indexdefinition kann in eine der folgenden Kategorien unterteilt werden:
 
 2. Anpassung eines OOTB-Index. Diese werden durch Anfügen von `-custom-` gefolgt von einer numerischen Kennung zum ursprünglichen Indexnamen. Beispiel: `/oak:index/damAssetLucene-8-custom-1`.
 
-3. Vollständiger benutzerdefinierter Index: Es ist möglich, einen völlig neuen Index von Grund auf neu zu erstellen. Ihr Name muss über ein Präfix verfügen, um Namenskonflikte zu vermeiden. Beispiel: `/oak:index/acme.product-1-custom-2`, wobei das Präfix `acme.`
+3. Vollständig benutzerdefinierter Index: Es ist möglich, einen völlig neuen Index von Grund auf neu zu erstellen. Ihr Name muss über ein Präfix verfügen, um Namenskonflikte zu vermeiden. Beispiel: `/oak:index/acme.product-1-custom-2`, wobei das Präfix `acme.`
 
 ## Vorbereiten der neuen Indexdefinition {#preparing-the-new-index-definition}
 
@@ -86,7 +87,7 @@ So veranschaulichen Sie die Bereitstellung einer angepassten Version des vordefi
 1. Erstellen Sie einen neuen Ordner mit dem aktualisierten Indexnamen im `ui.apps` directory:
    * Beispiel: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-2. Konfigurationsdatei hinzufügen `.content.xml` mit den benutzerdefinierten Konfigurationen innerhalb des neu erstellten Ordners. Nachfolgend finden Sie ein Beispiel für eine Anpassung: Dateiname: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
+2. Konfigurationsdatei hinzufügen `.content.xml` mit den benutzerdefinierten Konfigurationen im neu erstellten Ordner. Nachfolgend finden Sie ein Beispiel für eine Anpassung: Dateiname: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -148,7 +149,7 @@ So veranschaulichen Sie die Bereitstellung einer angepassten Version des vordefi
    </properties>
    ```
 
-5. Stellen Sie sicher, dass Ihre Konfiguration den Richtlinien im Abschnitt [Projektkonfiguration](#project-configuration) Abschnitt. Nehmen Sie die erforderlichen Anpassungen vor.
+5. Stellen Sie sicher, dass Ihre Konfiguration den Richtlinien entspricht, die im Abschnitt [Projektkonfiguration](#project-configuration) Abschnitt. Nehmen Sie die erforderlichen Anpassungen vor.
 
 ## Projektkonfiguration
 
@@ -199,7 +200,7 @@ Es wird dringend empfohlen, Version >= zu verwenden. `1.3.2` des Jackrabbit `fil
    </plugin>
    ```
 
-3. In `ui.apps/pom.xml` und `ui.apps.structure/pom.xml` die `allowIndexDefinitions` und `noIntermediateSaves` Optionen in `filevault-package-maven-plugin`. Aktivieren `allowIndexDefinitions` ermöglicht benutzerdefinierte Indexdefinitionen, während `noIntermediateSaves` stellt sicher, dass die Konfigurationen automatisch hinzugefügt werden.
+3. In `ui.apps/pom.xml` und `ui.apps.structure/pom.xml` es erforderlich ist, die `allowIndexDefinitions` und `noIntermediateSaves` Optionen in `filevault-package-maven-plugin`. Aktivieren `allowIndexDefinitions` ermöglicht benutzerdefinierte Indexdefinitionen, während `noIntermediateSaves` stellt sicher, dass die Konfigurationen automatisch hinzugefügt werden.
 
    Dateinamen: `ui.apps/pom.xml` und `ui.apps.structure/pom.xml`
 
@@ -236,15 +237,15 @@ Stellen Sie nach dem Hinzufügen der neuen Indexdefinition die neue Anwendung mi
 
 ### Was ist Indexverwaltung? {#what-is-index-management}
 
-Bei der Indexverwaltung geht es darum, Indizes hinzuzufügen, zu entfernen und zu ändern. Eine Änderung der *Definition* eines Index geht schnell, doch die Anwendung der Änderung (häufig als „Erstellen eines Index“ oder bei vorhandenen Indizes als „Neuindizierung“ bezeichnet) erfordert Zeit. Es ist nicht sofort: das Repository auf indizierte Daten überprüft werden muss.
+Bei der Indexverwaltung geht es darum, Indizes hinzuzufügen, zu entfernen und zu ändern. Eine Änderung der *Definition* eines Index geht schnell, doch die Anwendung der Änderung (häufig als „Erstellen eines Index“ oder bei vorhandenen Indizes als „Neuindizierung“ bezeichnet) erfordert Zeit. Es ist nicht sofort: Das Repository muss auf indizierte Daten überprüft werden.
 
-### Was sind rollierende Implementierungen? {#what-are-rolling-deployments}
+### Rollierende Implementierungen {#what-are-rolling-deployments}
 
 Eine rollierende Implementierung kann Ausfallzeiten reduzieren. Sie ermöglicht Upgrades ohne Ausfallzeiten sowie schnelle Rollbacks. Die alte Version der Anwendung wird gleichzeitig mit der neuen Version der Anwendung ausgeführt.
 
 ### Schreibgeschützte Bereiche und Bereiche mit Lese-Schreib-Zugriff {#read-only-and-read-write-areas}
 
-Bestimmte Bereiche des Repositorys (schreibgeschützte Teile des Repositorys) können sich in der alten und in der neuen Version der Anwendung unterscheiden. Die schreibgeschützten Bereiche des Repositorys sind normalerweise `/app` und `/libs`. Im folgenden Beispiel wird Kursivschrift verwendet, um schreibgeschützte Bereiche zu markieren, während Fettschrift für Bereiche mit Lese-Schreib-Zugriff steht.
+Bestimmte Bereiche des Repositorys (schreibgeschützte Teile des Repositorys) können in der alten und in der neuen Version der Anwendung unterschiedlich sein. Die schreibgeschützten Bereiche des Repositorys sind normalerweise `/app` und `/libs`. Im folgenden Beispiel wird Kursivschrift verwendet, um schreibgeschützte Bereiche zu markieren, während Fettschrift für Bereiche mit Lese-Schreib-Zugriff steht.
 
 * **/**
 * */apps (schreibgeschützt)*
@@ -264,7 +265,7 @@ Während der Entwicklung oder bei Verwendung von On-Premise-Installationen könn
 
 ### Indexverwaltung mit rollierenden Implementierungen {#index-management-with-rolling-deployments}
 
-Bei rollierenden Implementierungen gibt es keine Ausfallzeiten. Während einer Aktualisierung werden sowohl die alte Version (z. B. Version 1) der Anwendung als auch die neue Version (Version 2) gleichzeitig für dasselbe Repository ausgeführt. Wenn für Version 1 ein bestimmter Index verfügbar sein muss, darf dieser Index nicht in Version 2 entfernt werden. Der Index sollte später entfernt werden, z. B. in Version 3. Ab diesem Zeitpunkt wird garantiert, dass Version 1 der Anwendung nicht mehr ausgeführt wird. Außerdem sollten Programme so geschrieben werden, dass Version 1 gut funktioniert, auch wenn Version 2 ausgeführt wird und Indizes von Version 2 verfügbar sind.
+Bei rollierenden Implementierungen gibt es keine Ausfallzeiten. Während einer Aktualisierung werden sowohl die alte Version (z. B. Version 1) der Anwendung als auch die neue Version (Version 2) gleichzeitig für dasselbe Repository ausgeführt. Wenn für Version 1 ein bestimmter Index verfügbar sein muss, darf dieser Index in Version 2 nicht entfernt werden. Der Index sollte später entfernt werden, z. B. in Version 3. Ab diesem Zeitpunkt ist garantiert, dass Version 1 der Anwendung nicht mehr ausgeführt wird. Außerdem sollten Programme so geschrieben werden, dass Version 1 gut funktioniert, auch wenn Version 2 ausgeführt wird und Indizes von Version 2 verfügbar sind.
 
 Nach Abschluss der Aktualisierung auf die neue Version können alte Indizes vom System entfernt werden. Die alten Indizes bleiben möglicherweise noch einige Zeit, um Rollbacks zu beschleunigen (falls ein Rollback erforderlich sein sollte).
 
@@ -272,7 +273,7 @@ Die folgende Tabelle zeigt fünf Indexdefinitionen: der Index `cqPageLucene` wir
 
 >[!NOTE]
 >
->Die `<indexName>-custom-<customerVersionNumber>` ist erforderlich, damit AEM as a Cloud Service ihn als Ersatz für einen vorhandenen Index kennzeichnen kann.
+>Die `<indexName>-custom-<customerVersionNumber>` ist erforderlich, damit AEM as a Cloud Service als Ersatz für einen vorhandenen Index markiert werden kann.
 
 | Index | Vordefinierter Index | Verwendung in Version 1 | Verwendung in Version 2 |
 |---|---|---|---|
@@ -286,7 +287,7 @@ Die Versionsnummer wird bei jeder Indexänderung inkrementiert. Um zu vermeiden,
 
 ### Änderungen an vordefinierten Indizes {#changes-to-out-of-the-box-indexes}
 
-Nachdem die Adobe einen vordefinierten Index wie &quot;damAssetLucene&quot;oder &quot;cqPageLucene&quot;ändert, wird ein neuer Index mit dem Namen `damAssetLucene-2` oder `cqPageLucene-2` erstellt. Oder wenn der Index bereits angepasst wurde, wird die angepasste Indexdefinition mit den Änderungen im vordefinierten Index zusammengeführt, wie unten dargestellt. Die Zusammenführung von Änderungen erfolgt automatisch. Das bedeutet, dass Sie nichts tun müssen, wenn sich ein vordefinierter Index ändert. Der Index lässt sich jedoch später erneut anpassen.
+Nachdem die Adobe einen vordefinierten Index wie &quot;damAssetLucene&quot;oder &quot;cqPageLucene&quot;ändert, wird ein neuer Index mit dem Namen `damAssetLucene-2` oder `cqPageLucene-2` erstellt wird. Oder wenn der Index bereits angepasst wurde, wird die angepasste Indexdefinition mit den Änderungen im vordefinierten Index zusammengeführt, wie unten dargestellt. Die Zusammenführung von Änderungen erfolgt automatisch. Das bedeutet, dass Sie nichts tun müssen, wenn sich ein vordefinierter Index ändert. Der Index lässt sich jedoch später erneut anpassen.
 
 | Index | Vordefinierter Index | Verwendung in Version 2 | Verwendung in Version 3 |
 |---|---|---|---|
