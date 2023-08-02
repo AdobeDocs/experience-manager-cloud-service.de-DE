@@ -6,7 +6,7 @@ index: false
 source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
 workflow-type: tm+mt
 source-wordcount: '961'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 4%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="Im Kontext bearbeiten"
->abstract="Erfahren Sie, wie Ihre Headless-Apps den universellen Editor nutzen können, um bei der Kontextbearbeitung die Fingerspitzen Ihrer Autoren zu optimieren."
+>title="Bearbeiten im Kontext"
+>abstract="Erfahren Sie, wie Ihre Headless-Apps den universellen Editor nutzen können, um Ihren Autorinnen und Autoren reibungslose, kontextbezogene Bearbeitung zu ermöglichen."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="In diesem Modul haben Sie erfahren, wie Sie Inhalte im Kontext und im Kontext mit dem Universal Editor anpassen können."
+>title="In diesem Modul haben Sie erfahren, wie Sie mithilfe des universellen Editors Inhalte im Kontext und an Ort und Stelle anpassen können."
 >abstract=""
 
 ## Text im Kontext bearbeiten {#edit-text}
