@@ -7,17 +7,17 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 6abd681fbf0258029dd594d214a2480d73b21f57
+source-git-commit: 6cc7153c9754b6786a08c5fd378d72a8ab7c478d
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 9%
+source-wordcount: '1200'
+ht-degree: 10%
 
 ---
 
 
 # Muster-Designs, Vorlagen und Formulardatenmodelle in Kernkomponenten {#sample-themes-templates-and-data-models}
 
-AEM Forms as a Cloud Service bietet Beispiel-Referenzthemen, Vorlagen und Formulardatenmodelle, die Ihnen helfen, schnell mit der Erstellung von Adaptive Forms mit Kernkomponenten zu beginnen. Sie können [Aktivieren der adaptiven Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=de) zur as a Cloud Service und lokalen Entwicklungsumgebung von AEM Forms , um OOTB-Referenzvorlagen zu erhalten und [Designs verwenden und anpassen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
+AEM Forms as a Cloud Service bietet Beispiel-Referenzthemen, Vorlagen und Formulardatenmodelle, die Ihnen helfen, schnell mit der Erstellung von Adaptive Forms mit Kernkomponenten zu beginnen. Sie können [Aktivieren der adaptiven Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=de) zur as a Cloud Service und lokalen Entwicklungsumgebung von AEM Forms, um OOTB-Beispielvorlagen zu erhalten und [Verwenden und Anpassen von Beispieldesigns](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
 
 Die im Referenzinhaltspaket enthaltenen Musterdesigns, Vorlagen und Formulardatenmodelle sind:
 
@@ -26,14 +26,13 @@ Die im Referenzinhaltspaket enthaltenen Musterdesigns, Vorlagen und Formulardate
 | Einfach | Canvas | Microsoft® Dynamics 365 |
 | Leer | WKND | Salesforce |
 | Kontakt | Easel |  |
+| Aktualisierung der Kontaktdetails |   |   |
 | Einverständnisformular | |  |
-| Beschwerde einreichen | | |
 | Anfrage zum Protokolldienst |  |  |
 | Feedback geben |  |  |
 | Vorteile der Registrierung |  |   |
 | Zusammenfassung der Leistungen für Arbeitnehmer |   |   |
 | Kontoauszug anfordern |   |   |
-| Aktualisierung der Kontaktdetails |   |   |
 | Sicherheitsüberprüfungsformular |   |   |
 | Qualitätskontrolle |   |   |
 | Kaufanfrage |  |  |
@@ -77,15 +76,15 @@ Eine einfache Vorlage hilft Ihnen beim schnellen Erstellen eines Registrierungse
 
 >[!TAB Desktop]
 
-    ![Grundlegender Vorlagen-Desktop](assets/Basic-template-desktop-view.png)
+![Grundlegender Vorlagen-Desktop](assets/Basic-template-desktop-view.png)
 
 >[!TAB Telefon]
 
-    ![Telefon mit einfacher Vorlage](assets/Basic-template-phone-view.png)
+![Grundlegendes Vorlagentelefon](assets/Basic-temp-phone-view.png)
 
 >[!TAB Tablet]
 
-    ![Registerkarte &quot;Einfache Vorlage&quot;](assets/Basic-template-tablet-view.png)
+![Registerkarte &quot;Grundlegende Vorlage&quot;](assets/Basic-temp-tablet-view.png)
 
 >[!ENDTABS]
 
@@ -96,11 +95,9 @@ Eine leere Arbeitsflächenvorlage wird verwendet, um eine Struktur, einen Inhalt
 
 ![Leere Vorlage](assets/Blank-template.png)
 
-### Kontoauszug anfordern {#Request-for-Account-Statement}
+### Kontakt {#Contact-Us}
 
-Die Vorlage für Kontoauszugsanfragen hilft bei der Erstellung eines Formulars, das den Prozess des Abrufs einer präzisen und aktuellen Kundenanweisung auslöst. Die Erklärung enthält eine detaillierte Aufzeichnung von Finanztransaktionen, -aktivitäten oder anderen relevanten Informationen über Kunden, die dieses Formular verwenden.
-
-![Request-for-account-statement](assets/Request-for-account-statment.png)
+Die Formularvorlage Kontakt wird verwendet, um ein Formular zu erstellen, das die Kommunikation zwischen Website-Besuchern und Administratoren erleichtert. Benutzer können über das Formular Abfragen, Feedback oder Supportanfragen senden.
 
 ### Aktualisierung der Kontaktdetails {#Contact-Details-Update}
 
@@ -108,38 +105,9 @@ Die Vorlage für die Aktualisierung von Kontaktdetails hilft Autoren bei der Ers
 
 ![Contact-details-update](assets/Contact-details-update.png)
 
-### Sicherheitskontrolle {#Safety-Inspection}
-
-Die Vorlage für Sicherheitsüberprüfungsformulare hilft bei der Erstellung eines Formulars zur Eingabe von Details für eine sichere Arbeitsumgebung. Durch regelmäßige Inspektionen mit diesem Formular können potenzielle Risiken ermittelt werden. Der Vordruck umfasst verschiedene Aspekte wie Notausstiege, Brandsicherheit, elektrische Sicherheit, Gefahrstoffe, persönliche Schutzausrüstung, Ergonomie der Workstation für die Sicherheit und das Wohlbefinden von Mitarbeitern, Besuchern und Kunden.
-
-### Kaufanfrage {#Purchase-Request}
-
-Mit der Vorlage für Bestellformulare können Sie ein Formular erstellen, um den Vergabeverfahren einzuleiten und es Mitarbeitern zu ermöglichen, den Kauf von für ihre Arbeit erforderlichen Waren oder Dienstleistungen förmlich anzufordern. Das Formular erfasst wichtige Details wie Artikelbeschreibung, Menge, bevorzugter Lieferant (falls zutreffend), Budgetzuweisung, Begründung des Kaufs, Lieferinformationen und erforderliche Genehmigungen.
-
-![purchase-request](assets/purchase-request.gif)
-
-### Zusammenfassung der Arbeitnehmervorteile {#Employee-Benefits-Summary}
-
-Die Vorlage für die Zusammenfassung der Leistungen für Arbeitnehmer wird verwendet, um ein Formular zu erstellen, in dem wichtige Details zu den Vorteilen einer Person erfasst werden. Es hilft bei der schnellen und präzisen Bewertung der Abdeckung, indem ein umfassender Überblick über effiziente Hilfe und Unterstützung bereitgestellt wird.
-
-### Leistungseinstufung {#Benefits-Enrollment}
-
-Mit der Vorlage für das Anmeldeformular für Vorteile können Sie ein Formular erstellen, in dem Sie wichtige Informationen von Ihren Mitarbeitern zu ihren bevorzugten Vorteilen und Deckungsoptionen erfassen. Sie begleitet in der Regel den jährlichen Zeitraum der Leistungseinstufung.
-
-
-### Qualitätskontrolle {#Quality-Control-Inspection}
-
-Anhand der Vorlage für die Qualitätskontrolle wird ein Formular erstellt, in dem das Erscheinungsbild, die Abmessungen, die Funktionalität, die Dokumentation, die Testergebnisse und die Gesamtqualität eines Produkts oder Artikels bewertet und dokumentiert werden. Sie hilft bei der Identifizierung von Mängeln, Nichtkonformitäten und Korrekturmaßnahmen, die zur Gewährleistung der Einhaltung von Qualitätsstandards erforderlich sind.
-
-
 ### Einverständnisformular {#Consent-Form}
 
 Die Vorlage für das Einverständnisformular wird verwendet, um ein Formular für die Beschaffung eines Rechtsdokuments von Teilnehmern zu erstellen, die an einer bestimmten Aktivität, einem Forschungsstudium, einem medizinischen Verfahren oder einer Situation teilnehmen, in der ihre personenbezogenen Daten oder Rechte involviert sein können. Das Formular gewährleistet Transparenz, schützt die Rechte des Teilnehmers und schafft ein klares Verständnis dessen, was der Einzelne zustimmt.
-
-
-### Kontakt {#Contact-Us}
-
-Die Formularvorlage Kontakt wird verwendet, um ein Formular zu erstellen, das die Kommunikation zwischen Website-Besuchern und Administratoren erleichtert. Benutzer können über das Formular Abfragen, Feedback oder Supportanfragen senden.
 
 ### Protokolldienstanfrage {#Log-Service-Request}
 
@@ -148,6 +116,34 @@ Die Protokolldienst-Anforderungsvorlage hilft beim Erstellen eines Formulars, da
 ### Feedback geben {#Give-Feedback}
 
 Mit der Rückmeldevorlage können Sie ein Formular erstellen, das eine konstruktive Rückmeldung an eine andere Person oder ein Team liefert. Das Formular hilft sicherzustellen, dass das Feedback klar, spezifisch und umsetzbar ist, und fördert offene Kommunikation und Verbesserung.
+
+### Leistungseinstufung {#Benefits-Enrollment}
+
+Mit der Vorlage für das Anmeldeformular für Vorteile können Sie ein Formular erstellen, in dem Sie wichtige Informationen von Ihren Mitarbeitern zu ihren bevorzugten Vorteilen und Deckungsoptionen erfassen. Sie begleitet in der Regel den jährlichen Zeitraum der Leistungseinstufung.
+
+### Zusammenfassung der Arbeitnehmervorteile {#Employee-Benefits-Summary}
+
+Die Vorlage für die Zusammenfassung der Leistungen für Arbeitnehmer wird verwendet, um ein Formular zu erstellen, in dem wichtige Details zu den Vorteilen einer Person erfasst werden. Es hilft bei der schnellen und präzisen Bewertung der Abdeckung, indem ein umfassender Überblick über effiziente Hilfe und Unterstützung bereitgestellt wird.
+
+### Kontoauszug anfordern {#Request-for-Account-Statement}
+
+Die Vorlage für Kontoauszugsanfragen hilft bei der Erstellung eines Formulars, das den Prozess des Abrufs einer präzisen und aktuellen Kundenanweisung auslöst. Die Erklärung enthält eine detaillierte Aufzeichnung von Finanztransaktionen, -aktivitäten oder anderen relevanten Informationen über Kunden, die dieses Formular verwenden.
+
+![Request-for-account-statement](assets/Request-for-account-statment.png)
+
+### Sicherheitskontrolle {#Safety-Inspection}
+
+Die Vorlage für Sicherheitsüberprüfungsformulare hilft bei der Erstellung eines Formulars zur Eingabe von Details für eine sichere Arbeitsumgebung. Durch regelmäßige Inspektionen mit diesem Formular können potenzielle Risiken ermittelt werden. Der Vordruck umfasst verschiedene Aspekte wie Notausstiege, Brandsicherheit, elektrische Sicherheit, Gefahrstoffe, persönliche Schutzausrüstung, Ergonomie der Workstation für die Sicherheit und das Wohlbefinden von Mitarbeitern, Besuchern und Kunden.
+
+### Qualitätskontrolle {#Quality-Control-Inspection}
+
+Anhand der Vorlage für die Qualitätskontrolle wird ein Formular erstellt, in dem das Erscheinungsbild, die Abmessungen, die Funktionalität, die Dokumentation, die Testergebnisse und die Gesamtqualität eines Produkts oder Artikels bewertet und dokumentiert werden. Sie hilft bei der Identifizierung von Mängeln, Nichtkonformitäten und Korrekturmaßnahmen, die zur Gewährleistung der Einhaltung von Qualitätsstandards erforderlich sind.
+
+### Kaufanfrage {#Purchase-Request}
+
+Mit der Vorlage für Bestellformulare können Sie ein Formular erstellen, um den Vergabeverfahren einzuleiten und es Mitarbeitern zu ermöglichen, den Kauf von für ihre Arbeit erforderlichen Waren oder Dienstleistungen förmlich anzufordern. Das Formular erfasst wichtige Details wie Artikelbeschreibung, Menge, bevorzugter Lieferant (falls zutreffend), Budgetzuweisung, Begründung des Kaufs, Lieferinformationen und erforderliche Genehmigungen.
+
+![purchase-request](assets/purchase-request.gif)
 
 ## Referenzformular-Datenmodelle {#reference-models}
 
