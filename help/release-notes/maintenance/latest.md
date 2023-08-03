@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 704f4e250975d8c0cbcfdc5e49b9c03d3a3e2939
+source-git-commit: acaed9eed20e8134574fd326e23ac68130ac019b
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 62%
+source-wordcount: '981'
+ht-degree: 11%
 
 ---
 
@@ -13,25 +13,74 @@ ht-degree: 62%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 12790 {#release-12790}
+## Version 12874 {#release-12874}
 
-Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Release 12790 zusammengefasst, das am 21. Juli 2023 veröffentlicht wurde. Diese Wartungsversion ist eine Aktualisierung der vorherigen Wartungsversion 12697.
+Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Release 12874 zusammengefasst, das am 2. August 2023 veröffentlicht wurde. Diese Wartungsversion ist eine Aktualisierung der vorherigen Wartungsversion 12790.
 
-2023.7.0 Die Funktionsaktivierung stellt den vollständigen Funktionsumfang für dieses Maintenance Release bereit. Siehe [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de) für weitere Informationen.
+2023.8.0 Die Funktionsaktivierung stellt das vollständige Funktionssatz für dieses Maintenance Release bereit. Siehe [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de) für weitere Informationen.
 
-### Verbesserungen {#enhancements-12790}
+### Verbesserungen {#enhancements-12874}
 
-Keine
+- Neue Version der Indexdefinition: `/oak:index/damAssetLucene-9`
+- ASSETS-18351: Wechselt zu unsicheren Facetten - zur Verbesserung der Suchleistung
+- ASSETS-17896: Entfernt Feature Vectors aus dem Index - Ähnlichkeitssuche basierend auf Smart-Tags
+- ASSETS-8715: Fügt die Null-Prüfung hinzu/nicht die Null-Prüfung für die Eigenschaft &quot;jcr:content/metadata/dam:status&quot;
+- GRANITE-45138: Entfernt den Eigenschaftsindex aus den prognostizierten Tags der dynamischen Verstärkungseigenschaft
+- ASSETS-17614: Fügt die Scene7 ID als indizierte Eigenschaft hinzu (Null-Prüfung und nicht Null-Prüfung aktiviert)
+- ASSETS-14516: Fügt Eigenschaften für &quot;neue Benutzeroberfläche&quot;Papierkorbsfunktion zum Index hinzu
+- ASSETS-16270: Fügt dem Index die kodierte Titeleigenschaft hinzu (zur Verwendung bei der Sortierung)
+- ASSETS-24478: Entfernen Sie 5 potenziell große Eigenschaften aus dem Index (basierend auf der Analyse der Kundenindex-Daten)
+- ASSETS-3383: Fügt das zusätzliche Tag &quot;assetsOmnisearch&quot;hinzu
 
-### Behobene Probleme {#fixed-issues-112790}
+AEM Versionen 12874 und höher enthalten eine neue Version des damAssetLucene-Index (damAssetLucene-9). Um das responsive Sucherlebnis zu bieten, ändert damAssetLucene-9 das Verhalten der Oak-Abfrage-Ergebnisfacette, sodass die Zugriffskontrolle für die vom zugrunde liegenden Suchindex zurückgegebenen Facettenzahlen (als &quot;unsicherer&quot;Modus bezeichnet) nicht mehr ausgewertet wird.
 
-- SLING-11974 - Regression in SlingHttpServletRequest#getUserPrincipal für nicht authentifizierte Anforderungen korrigiert. Die Korrektur stellt sicher, dass ein Prinzipal auch für nicht authentifizierte Anforderungen zurückgegeben wird.
+Daher ist es möglich, dass Benutzern Facettenzählungswerte angezeigt werden, die Assets enthalten, auf die der aktuelle Benutzer keinen Zugriff hat. Auf diese Weise kann der Benutzer weder auf diese Assets zugreifen, sie herunterladen oder sie lesen, noch kann er weitere Informationen über die Existenz der Assets erhalten.
 
-### Bekannte Probleme {#known-issues-12790}
+Wenn das vorherige Verhalten gewünscht wird, sollten Kunden die unter [Inhaltssuche und -indizierung](/help/operations/indexing.md) , um eine benutzerdefinierte Version des damAssetLucene-9-Index mit dem vorherigen &quot;statistischen&quot;Facettenmodus zu erstellen.
 
-- GRANITE-46601 - Schnellstart-SDK startet nicht ohne JDK 11.0.20 `-Djdk.util.zip.disableZip64ExtraFieldValidation=true` Java-Option
+### Behobene Probleme {#fixed-issues-12874}
 
-### Eingebettete Technologien {#embedded-tech-12790}
+- ASSETS-24379: Es wurden Verbesserungen am ReplicateOnModifyListener vorgenommen.
+- ASSETS-25794: Es wurde ein Problem mit S7ConfigResolverImpl behoben, das dazu führte, dass beim Start eine teure Abfrage ausgeführt wurde.
+- ASSETS-25473: Es wurde ein Fehler behoben, durch den die Option &quot;Quick Publish&quot;für Benutzer ohne Replikationsberechtigung sichtbar war.
+- ASSETS-24803: Behebung einer XSS-Schwachstelle in der Viewer-Funktion.
+- ASSETS-25489: Es wurde ein Problem behoben, bei dem Smart-Zuschnitte mit dem falschen Suffix heruntergeladen wurden.
+- ASSETS-25435: Es wurde ein Fehler behoben, bei dem die WidthxHeight -Felder im Download für dynamische Ausgabedarstellungen fehlten.
+- ASSETS-25741: Fehlende visuelle Sternchen (`*`) für das obligatorische Bearbeitungsfeld &quot;Breite&quot;im Tab &quot;Allgemein&quot;.
+- ASSETS-25759: Verbesserte Sichtbarkeit des Fokus auf Dropdown-Elemente in kontrastreichen schwarzen/weißen Modi.
+- ASSETS-25749: Es wurde ein Problem behoben, bei dem der Fokus beim Navigieren über die Registerkarte &quot;Tastatur&quot;nicht auf mehrere Steuerelemente unter dem Video verschoben wurde, was dazu führte, dass sie nicht zugänglich waren.
+- ASSETS-26074: Die Beschränkung von 127 Zeichen für Namen von Nicht-Video-Assets wurde wiederhergestellt.
+- ASSETS-21428: Es wurde ein Problem behoben, bei dem ein mehrzeiliges Feld im Metadatenschema-Editor das folgende Feld überlappen würde
+- ASSETS-21989: Es wurde ein Problem behoben, durch das CORS-Kopfzeilen bei 302- und 401-Antworten überschrieben werden konnten, was die Remote-DAM-Anmeldung verhinderte
+- ASSETS-22603: Es wurden Probleme behoben, die sich auf Spaltennamen und -werte bei der Anzeige von Asset-Download-Berichten auswirkten
+- ASSETS-23120: Es wurde ein Problem in AssetSetLastModifiedProcess im Zusammenhang mit leaking resource resolvers behoben
+- ASSETS-24938: Es wurde ein Problem behoben, das dazu führte, dass sich die Schaltfläche &quot;Speichern&quot;im Dialogfeld &quot;Asset-Ordnereigenschaften&quot;wie &quot;Speichern und schließen&quot;verhielt
+- ASSETS-25456: Es wurde ein Problem behoben, bei dem ein Asset mit einem langen Namen das Klicken auf Aktionen im Asset-Eigenschaften-Editor verhindert.
+- ASSETS-25832: Es wurde ein Problem mit verwandten Assets aus einem Ordner mit vollem Zugriff behoben, um nur Lesezugriffsordner zu lesen.
+- ASSETS-25397: Es wurde ein Problem behoben, bei dem der neue Name eines in der neuen Benutzeroberfläche umbenannten Assets nicht in den Suchergebnissen angezeigt wurde.
+- ASSETS-26102: Problem behoben, das Uploads vom CI Hub-Connector verhindern konnte
+- ASSETS-26172: Reduzierte Größe des Massenimport-Fortschrittsprotokollinhalts, der in beständigen Sling-Auftragsknoten gespeichert ist
+- ASSETS-26292: Veraltete AssetManager-Methoden createOrUpdateAsset() und createOrReplaceAsset() in der Java-API
+- ASSETS-26399: Problem behoben, aufgrund dessen Sammlungen nicht in Brand Portal veröffentlicht werden konnten
+- ASSETS-26533: Es wurde ein Problem bei der InDesign Server-Integration behoben, das zu einer Zeitüberschreitung bei langen Verarbeitungsanfragen führen konnte
+- ASSETS-26549: Es wurde ein Problem in der Asset-Listenansicht behoben, bei dem &quot;Externer Benutzer&quot;für alle hochgeladenen Assets als zuletzt geänderter Benutzer angezeigt wurde
+- ASSETS-26551: Problem behoben, aufgrund dessen die Veröffentlichung von auf der Autoreninstanz gelöschten Assets nicht aufgehoben wurde
+- ASSETS-26571: Es wurde ein Problem mit der Seite &quot;Asset-Berichte&quot;behoben, bei dem die Seite nicht geladen werden konnte, wenn in der Liste mehrere fehlgeschlagene Berichtsaufträge vorhanden waren
+- ASSETS-26147: Es wurde ein Problem behoben, bei dem Unified Shell versucht hat, einen iframe in /ui umzuleiten, wenn window.top.opener festgelegt, aber nicht window.opener ist
+- ASSETS-26576: Es wurde ein Problem beim Importieren von Dropboxen behoben, bei dem die falsche Ordnerhierarchie erstellt wurde
+- ASSETS-26671: Problem behoben, aufgrund dessen der Massenimport keine Dateien in einen DCIM-Ordner einschließen konnte
+- ASSETS-26700: Es wurde ein Problem behoben, durch das beim Speichern der Eigenschaftenseite eines öffentlichen Ordners ohne Änderungen 3 unnötige Gruppen erstellt wurden
+- CQ-4353449: Es wurde ein Problem behoben, das Benutzern mit schreibgeschützten Tagging-Berechtigungen das Erstellen von Tags mithilfe der Tagging-Benutzeroberfläche ermöglichte
+- GRANITE-46601: Es wurde ein Problem behoben, das den Start des Schnellstart-SDK auf JDK 11.0.20 verhinderte.
+- SKYOPS-33168: Es wurde ein Problem in der CM Developer Console behoben, das das Laden von /content/dam für Asset-Namen ohne Erweiterung verhinderte.
+- SKYOPS-61484: Es wurde ein Problem im RDEProvider-Dienst behoben, das die Beibehaltung von nicht zulässigen ${sling.home}-Token in zusammengeführten OSGi-Konfigurationen ermöglichte.
+- Verschiedene Korrekturen an Sicherheit, Barrierefreiheit und Lokalisierung
+
+### Bekannte Probleme {#known-issues-12874}
+
+- GRANITE-46851: Testverbindung in der Inhaltsverteilung funktioniert nicht
+
+### Eingebettete Technologien {#embedded-tech-12874}
 
 | Technologie | Version | Link |
 |---|---|---|
