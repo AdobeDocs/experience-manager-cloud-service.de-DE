@@ -1,11 +1,11 @@
 ---
 title: Authoring – Konzepte
-description: Konzepte der Bearbeitung (Authoring) in AEM
+description: Erfahren Sie mehr über die Konzepte des Authoring in AEM mithilfe der Autoren-, Vorschau- und Veröffentlichungsumgebungen.
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 42%
+source-wordcount: '394'
+ht-degree: 40%
 
 ---
 
@@ -27,7 +27,7 @@ Die Autorenumgebung bietet die Mechanismen zum Erstellen, Aktualisieren und Übe
 
 In der Autorenumgebung wird die Funktionalität von AEM über AEM Authoring-Benutzeroberfläche bereitgestellt. In der Veröffentlichungsumgebung entwerfen Sie das gesamte Erscheinungsbild der Benutzeroberfläche, die Ihren Benutzern zur Verfügung gestellt wird.
 
-## Autorenumgebung {#author-environment}
+## Authoring-Umgebung {#author-environment}
 
 Der Autor arbeitet in dem so genannten **Autorenumgebung**. Diese Umgebung bietet eine benutzerfreundliche Benutzeroberfläche (grafische Benutzeroberfläche (GUI oder UI)) zum Erstellen des Inhalts. Der Autor muss sich mit einem Konto anmelden, dem die entsprechenden Zugriffsrechte zugewiesen sind.
 
@@ -41,7 +41,7 @@ Je nachdem, wie Ihre Instanz und Ihre persönlichen Zugriffsrechte konfiguriert 
 * Verwenden vordefinierter Vorlagen zum Erstellen von Inhaltsseiten
 * Erstellen, Bearbeiten und Verwalten Ihrer Assets und Sammlungen
 * Verschieben, Kopieren und Löschen von Inhaltsseiten und Assets.
-* Veröffentlichen (oder Rückgängigmachen der Veröffentlichung) von Seiten und Assets.
+* Veröffentlichen (oder Rückgängigmachen der Veröffentlichung) von Seiten und Assets
 
 Außerdem gibt es administrative Aufgaben, die Ihnen bei der Verwaltung Ihrer Inhalte helfen:
 

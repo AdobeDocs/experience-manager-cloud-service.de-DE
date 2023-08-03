@@ -1,11 +1,11 @@
 ---
 title: Ihr Posteingang
-description: Verwalten Sie Ihre Aufgaben im Posteingang
+description: Erfahren Sie, wie Sie mit den Benachrichtigungen, die in Ihren Posteingang eintreffen, Ihre Aufgaben verwalten können.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 90%
+source-wordcount: '914'
+ht-degree: 88%
 
 ---
 
@@ -136,9 +136,9 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen festlegen:
    >
    >* Workflow-Elemente – [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md)
 
-2. Je nach ausgewähltem Element wird eine Aktion gestartet, z. B.:
+2. Je nach ausgewähltem Element wird eine Aktion gestartet, beispielsweise:
 
-   * Ein Dialogfeld, das der Aktion entspricht, wird geöffnet
+   * Ein Dialogfeld für die Aktion wird geöffnet
    * Ein Aktionsassistent wird gestartet
    * Eine Dokumentationsseite wird geöffnet
 

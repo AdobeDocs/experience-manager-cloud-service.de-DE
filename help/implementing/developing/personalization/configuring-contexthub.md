@@ -1,11 +1,11 @@
 ---
 title: Konfigurieren von ContextHub
-description: Erfahren Sie, wie man ContextHub konfiguriert.
+description: Erfahren Sie, wie Sie ContextHub konfigurieren, ein Framework zum Speichern, Bearbeiten und Präsentieren von Kontextdaten.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '1680'
-ht-degree: 95%
+source-wordcount: '1689'
+ht-degree: 94%
 
 ---
 
@@ -246,7 +246,7 @@ ContextHub kann deaktiviert werden, um zu verhindern, dass js/css geladen und in
    1. Klicken oder tippen Sie in der Leiste auf **„Tools“ > „Sites“ > „ContextHub“**
    1. Klicken oder tippen Sie auf den standardmäßigen **Konfigurations-Container**.
    1. Wählen Sie die **ContextHub-Konfiguration** aus und klicken oder tippen Sie auf **Ausgewähltes Element bearbeiten**.
-   1. Klicken oder tippen Sie auf **ContextHub deaktivieren** und klicken oder tippen Sie **Speichern**
+   1. Klicken oder tippen Sie **ContextHub deaktivieren** und klicken oder tippen Sie **Speichern**
 
 oder
 

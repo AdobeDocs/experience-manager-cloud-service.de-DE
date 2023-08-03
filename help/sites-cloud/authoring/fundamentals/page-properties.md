@@ -1,11 +1,11 @@
 ---
 title: Bearbeiten der Seiteneigenschaften
-description: Definition der erforderlichen Eigenschaften für eine Seite
+description: Erfahren Sie, wie Sie die Eigenschaften definieren, die für die Verwaltung einer Seite in AEM erforderlich sind.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '2341'
-ht-degree: 81%
+source-wordcount: '2347'
+ht-degree: 80%
 
 ---
 
@@ -70,7 +70,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
       * Wenn die Seite nicht veröffentlicht und für die automatische Replikation konfiguriert ist, wird sie automatisch veröffentlicht und dann zum angegebenen Zeitpunkt gerendert.
       * Wenn die Seite nicht veröffentlicht und nicht für die automatische Replikation konfiguriert ist, wird sie nicht automatisch veröffentlicht. Daher wird ein 404-Fehler angezeigt, wenn versucht wird, auf die Seite zuzugreifen.
 
-   * **Ausschaltzeit** - ähnlich wie und häufig in Kombination mit **Einschaltzeit** definiert, wird dadurch der Zeitpunkt definiert, zu dem die veröffentlichte Seite in der Veröffentlichungsumgebung ausgeblendet wird.
+   * **Ausschaltzeit** - ähnlich wie und häufig in Kombination mit **Einschaltzeit** festgelegt ist, wird dadurch der Zeitpunkt definiert, zu dem die veröffentlichte Seite in der Veröffentlichungsumgebung ausgeblendet wird.
 
    * Lassen Sie diese Felder (**Einschaltzeit** und **Ausschaltzeit**) für Seiten, die Sie sofort veröffentlichen möchten und die in der Veröffentlichungsumgebung verfügbar sein sollen, leer, bis sie deaktiviert werden (der Normalfall).
 
@@ -133,7 +133,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **SEO**
 
-   * **Kanonische URL** - kann verwendet werden, um die kanonische URL der Seite zu überschreiben; Wenn Sie das Feld leer lassen, ist die URL der Seite ihre kanonische URL
+   * **Kanonische URL** - kann verwendet werden, um die kanonische URL der Seite zu überschreiben. Wenn Sie das Feld leer lassen, ist die URL der Seite die kanonische URL
 
    * **Robots-Tags** – Wählen Sie die Robots-Tags aus, um das Verhalten der Suchmaschinen-Crawler zu steuern.
 
@@ -312,7 +312,7 @@ Sie können mit verschiedenen Methoden mehrere Seiten für die Massenbearbeitung
 * Beim Durchsuchen der **Sites**-Konsole
 * Nach Verwendung von **Suche**, um einen Seitensatz zu finden
 
-Nach Auswahl der Seiten und anschließendes Klicken oder Tippen auf die **Eigenschaften-Option**, werden die Masseneigenschaften angezeigt:
+Nach Auswahl der Seiten und anschließendes Klicken oder Tippen auf **Eigenschaften-Option**, werden die Masseneigenschaften angezeigt:
 
 ![Massenbearbeitung von Seiteneigenschaften](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 

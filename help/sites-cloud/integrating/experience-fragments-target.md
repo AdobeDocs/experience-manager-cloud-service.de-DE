@@ -1,10 +1,10 @@
 ---
 title: Exportieren von Experience Fragments nach Adobe Target
-description: Exportieren von Experience Fragments nach Adobe Target
+description: Erfahren Sie, wie Sie Ihre Experience Fragments in Adobe Target exportieren, um Erlebnisse zu testen und zu personalisieren.
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 7905f21e70f373150775fe90d5faf02db4a59c32
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '2245'
+source-wordcount: '2254'
 ht-degree: 97%
 
 ---
@@ -177,7 +177,7 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
 
    * **Mandanten-ID**: die Mandanten-ID
 
-   * **IMS-Konfiguration**: Wählen Sie die gewünschte Konfiguration aus der Dropdown-Liste aus.
+   * **IMS-Konfiguration**: Wählen Sie die gewünschte Konfiguration aus der Dropdownliste aus.
 
    * **API-Typ**: standardmäßig auf REST gesetzt (XML ist veraltet)
 

@@ -1,11 +1,11 @@
 ---
 title: Die richtigen Mitarbeiter, die richtigen Rollen
-description: Die richtigen Mitarbeiter, die richtigen Rollen
+description: Erfahren Sie, wie Sie die richtigen Personen für Ihr Projekt auswählen und sie den richtigen Rollen zuweisen können.
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 78%
+source-wordcount: '860'
+ht-degree: 76%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 78%
 
 Wahrscheinlich sind in Ihrer Organisation mehrere Abteilungen für verschiedene Aspekte des digitalen Erlebnisses zuständig. Ohne Steuerung sind die Voraussetzungen für endlose Debatten, Kämpfe und Verwirrung geschaffen.
 
-Digital Governance beginnt damit, herauszufinden, wer für was verantwortlich ist und wer welche digital ausgerichteten Aufgaben erledigt. Möglicherweise müssen Sie einige strategische Einstellungen vornehmen, um die benötigten Fähigkeiten hinzuzufügen. Eine noch größere Herausforderung ist es, einen Kulturwandel zu fördern - breite Unterstützung für die neue Technologie zu schaffen und Menschen zu helfen, sich an neue Wege zu gewöhnen, Dinge zu tun. Ein wichtiger Teil dieser Bemühungen ist die Schaffung einer digitalen Gemeinschaft, die es den Mitarbeitern ermöglicht, voneinander zu lernen und sich gegenseitig zu unterstützen.
+Digital Governance beginnt damit, herauszufinden, wer für was verantwortlich ist und wer welche digital ausgerichteten Aufgaben erledigt. Möglicherweise müssen Sie einige strategische Einstellungen vornehmen, um die benötigten Fähigkeiten hinzuzufügen. Eine noch größere Herausforderung besteht darin, einen Kulturwandel zu fördern - breite Unterstützung für die neue Technologie zu schaffen und Menschen zu helfen, sich an neue Wege zu gewöhnen, Dinge zu tun. Ein wichtiger Teil dieser Bemühungen ist die Schaffung einer digitalen Gemeinschaft, die es den Mitarbeitern ermöglicht, voneinander zu lernen und sich gegenseitig zu unterstützen.
 
 Vorerst geht es darum, die richtigen Personen in die richtigen Jobs zu versetzen, um Ihre Adobe Experience Manager-Implementierung zu fördern. Für jedes Kernprodukt - Experience Manager Sites und Experience Manager Assets - hat die Adobe eine Liste der Rollen bereitgestellt, die Sie erfüllen müssen, zusammen mit den Kompetenzen, dem Kenntnisstand und den Attributen, die Menschen in den verschiedenen Rollen effektiv machen.
 
@@ -54,7 +54,7 @@ Nachdem Sie nun wissen, welche Rollen erforderlich sind, sehen Sie in der folgen
 
 Vom Architekten bis zum Scrum Master ist jede Rolle in diesem Team unverzichtbar – einschließlich des DAM-Bibliothekars.
 
-Möglicherweise verfügen Sie bereits über die meisten Mitarbeiter, die Sie zum Ausführen einer erfolgreichen Implementierung von Adobe Experience Manager Assets benötigen. Diese Liste ähnelt der für Adobe Experience Manager Sites mit einer wichtigen Ergänzung: benötigen Sie eine Bibliothek, um sicherzustellen, dass Ihre digitalen Assets so organisiert und beschriftet sind, dass sie leicht zu finden sind.
+Möglicherweise verfügen Sie bereits über die meisten Mitarbeiter, die Sie zum Ausführen einer erfolgreichen Implementierung von Adobe Experience Manager Assets benötigen. Diese Liste ähnelt der für Adobe Experience Manager Sites mit einer wichtigen Ergänzung: Sie benötigen eine Bibliothek, um sicherzustellen, dass Ihre digitalen Assets so organisiert und beschriftet sind, dass sie leicht zu finden sind.
 
 | Rolle | Kompetenzen | Kompetenzstufe | Qualitäten |
 |--- |--- |--- |--- |
