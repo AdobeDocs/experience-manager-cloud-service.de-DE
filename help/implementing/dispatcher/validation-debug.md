@@ -1,12 +1,12 @@
 ---
 title: Validieren und Debuggen mit den Dispatcher Tools
-description: Validieren und Debuggen mit den Dispatcher Tools
+description: Erfahren Sie mehr über die lokale Validierung, das Debugging, die Dateistruktur mit flexiblem Modus und die Migration vom alten Modus zum flexiblen Modus.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
-source-wordcount: '2847'
-ht-degree: 56%
+source-wordcount: '2861'
+ht-degree: 55%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 56%
 ## Einführung {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->Weitere Informationen zum Dispatcher in der Cloud und zum Herunterladen der Dispatcher-Tools finden Sie auf der Seite [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md). Wenn sich Ihre Dispatcher-Konfiguration im alten Modus befindet, lesen Sie [Dokumentation zum alten Modus](/help/implementing/dispatcher/validation-debug-legacy.md).
+>Weitere Informationen zum Dispatcher in der Cloud und zum Herunterladen der Dispatcher-Tools finden Sie auf der Seite [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md). Wenn sich Ihre Dispatcher-Konfiguration im alten Modus befindet, lesen Sie [Dokumentation zum Legacy-Modus](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 In den folgenden Abschnitten werden die Dateistruktur für den flexiblen Modus, die lokale Validierung, das Debugging und die Migration vom alten Modus zum flexiblen Modus beschrieben.
 
@@ -86,7 +86,7 @@ Sie können über eine oder mehrere dieser Dateien verfügen. Sie enthalten `<Vi
 >
 >Im flexiblen Modus sollten Sie relative Pfade anstelle absoluter Pfade verwenden.
 
-Stellen Sie sicher, dass mindestens ein virtueller Host immer verfügbar ist, der mit ServerAlias übereinstimmt. `\*.local`, `localhost`und `127.0.0.1` , die für die Dispatcher-Invalidierung erforderlich sind. Die Server-Aliase `*.adobeaemcloud.net` und `*.adobeaemcloud.com` sind ebenfalls in mindestens einer vhost-Konfiguration erforderlich und werden für interne Adobe-Prozesse benötigt.
+Stellen Sie sicher, dass mindestens ein virtueller Host immer verfügbar ist, der mit ServerAlias übereinstimmt. `\*.local`, `localhost`, und `127.0.0.1` , die für die Dispatcher-Invalidierung erforderlich sind. Die Server-Aliase `*.adobeaemcloud.net` und `*.adobeaemcloud.com` sind ebenfalls in mindestens einer vhost-Konfiguration erforderlich und werden für interne Adobe-Prozesse benötigt.
 
 Wenn Sie dem exakten Host entsprechen möchten, da Sie mehrere vhost-Dateien haben, können Sie das folgende Beispiel verwenden:
 
@@ -109,11 +109,11 @@ Wenn Sie dem exakten Host entsprechen möchten, da Sie mehrere vhost-Dateien hab
 
 * `conf.d/rewrites/rewrite.rules`
 
-Die Datei wird aus der `.vhost` Dateien. Sie enthält eine Reihe von Neuschreibungsregeln für `mod_rewrite`.
+Die Datei wird aus dem `.vhost` -Dateien. Sie enthält eine Reihe von Neuschreibungsregeln für `mod_rewrite`.
 
 * `conf.d/variables/custom.vars`
 
-Die Datei wird aus der `.vhost` Dateien. Sie können an dieser Stelle Definitionen für Apache-Variablen einfügen.
+Die Datei wird aus dem `.vhost` -Dateien. Sie können an dieser Stelle Definitionen für Apache-Variablen einfügen.
 
 * `conf.d/variables/global.vars`
 
@@ -125,19 +125,19 @@ Sie können eine oder mehrere dieser Dateien haben. Sie enthalten Farmen, um Hos
 
 * `conf.dispatcher.d/cache/rules.any`
 
-Die Datei wird aus der `.farm` Dateien. Sie gibt Voreinstellungen für das Caching an.
+Die Datei wird aus dem `.farm` -Dateien. Sie gibt Voreinstellungen für das Caching an.
 
 * `conf.dispatcher.d/clientheaders/clientheaders.any`
 
-Die Datei wird aus der `.farm` Dateien. Sie gibt an, welche Anfragekopfzeilen an das Backend weitergeleitet werden sollen.
+Die Datei wird aus dem `.farm` -Dateien. Sie gibt an, welche Anfragekopfzeilen an das Backend weitergeleitet werden sollen.
 
 * `conf.dispatcher.d/filters/filters.any`
 
-Die Datei wird aus der `.farm` Dateien. Sie enthält eine Reihe von Regeln, die ändern, welcher Traffic herausgefiltert werden und nicht bis zum Backend gelangen soll.
+Die Datei wird aus dem `.farm` -Dateien. Sie enthält eine Reihe von Regeln, die ändern, welcher Traffic herausgefiltert werden und nicht bis zum Backend gelangen soll.
 
 * `conf.dispatcher.d/virtualhosts/virtualhosts.any`
 
-Die Datei wird aus der `.farm` Dateien. Sie verfügt über eine Liste von Host-Namen oder URI-Pfaden, die per glob-Abgleich abgeglichen werden sollen. Diese Übereinstimmung bestimmt, welches Backend für die Bereitstellung einer Anfrage verwendet werden soll.
+Die Datei wird aus dem `.farm` -Dateien. Sie verfügt über eine Liste von Host-Namen oder URI-Pfaden, die per glob-Abgleich abgeglichen werden sollen. Diese Übereinstimmung bestimmt, welches Backend für die Bereitstellung einer Anfrage verwendet werden soll.
 
 * `opt-in/USE_SOURCES_DIRECTLY`
 
@@ -156,7 +156,7 @@ Es wird empfohlen, dass die oben genannten Dateien auf die unten aufgeführten u
 Enthält einen virtuellen Beispiel-Host. Erstellen Sie für Ihren eigenen virtuellen Host eine Kopie dieser Datei, passen Sie sie an, gehen Sie zu `conf.d/enabled_vhosts` und erstellen Sie eine symbolische Verknüpfung zu Ihrer angepassten Kopie.
 Kopieren Sie die Datei „default.vhost“ nicht direkt in `conf.d/enabled_vhosts`.
 
-Stellen Sie sicher, dass immer ein virtueller Host verfügbar ist, der mit ServerAlias übereinstimmt. `\*.local`, `localhost`und `127.0.0.1` , die für die Dispatcher-Invalidierung erforderlich sind. Die Server-Aliase `*.adobeaemcloud.net` und `*.adobeaemcloud.com` werden für interne Adobe-Prozesse benötigt.
+Stellen Sie sicher, dass immer ein virtueller Host verfügbar ist, der mit ServerAlias übereinstimmt. `\*.local`, `localhost`, und `127.0.0.1` , die für die Dispatcher-Invalidierung erforderlich sind. Die Server-Aliase `*.adobeaemcloud.net` und `*.adobeaemcloud.com` werden für interne Adobe-Prozesse benötigt.
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -252,7 +252,7 @@ Das Skript umfasst die folgenden drei Phasen:
 2. Er führt die `httpd -t` -Befehl, um zu testen, ob die Syntax korrekt ist, sodass Apache httpd starten kann. Bei Erfolg sollte die Konfiguration für die Bereitstellung bereit sein.
 3. Überprüft, ob die Untergruppe der Dispatcher-SDK-Konfigurationsdateien, die unveränderlich sein sollen, wie im [Dateistruktur-Abschnitt](##flexible-mode-file-structure) beschrieben, nicht geändert wurde und der aktuellen SDK-Version entspricht.
 
-Bei einer Cloud Manager-Bereitstellung muss die Variable `httpd -t` auch die Syntaxprüfung ausgeführt wird und alle Fehler in Cloud Manager enthalten sind `Build Images step failure` log.
+Bei einer Cloud Manager-Bereitstellung muss die Variable `httpd -t` auch die Syntaxprüfung ausgeführt wird und alle Fehler in Cloud Manager enthalten sind `Build Images step failure` protokollieren.
 
 >[!NOTE]
 >
@@ -273,7 +273,7 @@ Nachfolgend finden Sie Fehlerbehebungsverfahren für das Debugging häufiger Val
 
 Ihr Archiv sollte Ordner `conf.d` und `conf.dispatcher.d` enthalten. Beachten Sie, dass Sie **nicht** das Präfix `etc/httpd` in Ihrem Archiv verwenden sollten.
 
-**Farm kann in nicht gefunden werden`conf.dispatcher.d/enabled_farms`**
+**Farm kann in nicht gefunden werden.`conf.dispatcher.d/enabled_farms`**
 
 Ihre aktivierten Farmen sollten sich im genannten Unterordner befinden.
 
@@ -308,7 +308,7 @@ Es gibt vier Abschnitte in Ihrer Farm-Konfiguration, in denen Sie Ihre eigenen D
 
 Alternativ können Sie die **Standardversion** dieser Dateien einschließen, deren Namen das Wort `default_` vorangestellt wird, z. B. `../filters/default_filters.any`.
 
-**Fügen Sie Anweisung an (...) außerhalb eines bekannten Speicherorts ein: ...**
+**Include statement at (...), outside any known location: ...**
 
 Abgesehen von den sechs oben erwähnten Abschnitten ist die Verwendung der 
 Anweisung `$include` nicht zulässig. So würde z. B. der folgende Text diesen Fehler erzeugen:
@@ -367,7 +367,7 @@ Diese Meldung weist darauf hin, dass Ihre Konfiguration das veraltete Layout von
 
 Die erste Phase kann auch **separat ausführen** anstatt des Wrappers `validate.sh` Skript.
 
-Wenn Sie mit Ihrem Maven-Artefakt oder Ihrer `dispatcher/src` -Unterverzeichnis, werden Validierungsfehler gemeldet:
+Wenn Sie mit Ihrem Maven-Artefakt oder Ihrer `dispatcher/src` -Unterverzeichnis hinzugefügt, werden Validierungsfehler gemeldet:
 
 ```
 $ validator full -relaxed dispatcher/src
@@ -391,7 +391,7 @@ Vermeiden Sie diesen Fehler, indem Sie den Pfad aus Windows Explorer kopieren un
 
 ### Phase 2 {#second-phase}
 
-In dieser Phase wird die Apache-Syntax überprüft, indem Apache HTTPD in einem Docker-Container gestartet wird. Docker muss lokal installiert sein, aber beachten Sie, dass es nicht erforderlich ist, AEM auszuführen.
+Diese Phase überprüft die Apache-Syntax, indem Apache HTTPD in einem Docker-Container gestartet wird. Docker muss lokal installiert sein, aber beachten Sie, dass es nicht erforderlich ist, AEM auszuführen.
 
 >[!NOTE]
 >
@@ -404,7 +404,7 @@ Bei einer Cloud Manager-Bereitstellung muss die Variable `httpd -t` -Syntaxprüf
 
 ### Phase 3 {#third-phase}
 
-Wenn in dieser Phase ein Fehler auftritt, bedeutet dies, dass die Adobe eine oder mehrere unveränderliche Dateien geändert hat. In diesem Fall müssen Sie die entsprechenden unveränderlichen Dateien durch die neue Version ersetzen, die im Abschnitt `src` -Verzeichnis des SDK. Das folgende Protokollbeispiel veranschaulicht dieses Problem:
+Wenn in dieser Phase ein Fehler auftritt, bedeutet dies, dass die Adobe eine oder mehrere unveränderliche Dateien geändert hat. In diesem Fall müssen Sie die entsprechenden unveränderlichen Dateien durch die im Abschnitt `src` -Verzeichnis des SDK. Das folgende Protokollbeispiel veranschaulicht dieses Problem:
 
 ```
 Phase 3: Immutability check
@@ -505,7 +505,7 @@ INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apach
 
 ## Verschiedene Dispatcher-Konfigurationen pro Umgebung {#different-dispatcher-configurations-per-environment}
 
-Derzeit wird dieselbe Dispatcher-Konfiguration auf alle Umgebungen auf AEM as a Cloud Service angewendet. Die Laufzeitumgebung verfügt über eine Umgebungsvariable `ENVIRONMENT_TYPE` , der den aktuellen Ausführungsmodus (Entwicklung, Staging oder Produktion) und eine &quot;Definition&quot;enthält. &quot;define&quot;kann `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE`oder `ENVIRONMENT_PROD`. In der Apache-Konfiguration kann die Variable direkt in einem Ausdruck verwendet werden. Alternativ kann die &quot;Definition&quot;zum Erstellen der Logik verwendet werden:
+Derzeit wird dieselbe Dispatcher-Konfiguration auf alle Umgebungen auf AEM as a Cloud Service angewendet. Die Laufzeit verfügt über eine Umgebungsvariable `ENVIRONMENT_TYPE` , der den aktuellen Ausführungsmodus (Entwicklung, Staging oder Produktion) und eine &quot;Definition&quot;enthält. &quot;define&quot;kann `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE`oder `ENVIRONMENT_PROD`. In der Apache-Konfiguration kann die Variable direkt in einem Ausdruck verwendet werden. Alternativ kann die &quot;Definition&quot;zum Erstellen der Logik verwendet werden:
 
 ```
 # Simple usage of the environment variable
