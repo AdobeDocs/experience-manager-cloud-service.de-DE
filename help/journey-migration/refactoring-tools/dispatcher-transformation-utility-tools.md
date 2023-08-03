@@ -1,11 +1,11 @@
 ---
 title: AEM Dispatcher Converter-Tool
-description: AEM Dispatcher Converter-Tool
+description: Erfahren Sie, wie Sie bestehende Konfigurationen in AEM Dispatcher in Konfigurationen in AEM as a Cloud Service Dispatcher konvertieren.
 exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 46%
+source-wordcount: '352'
+ht-degree: 43%
 
 ---
 
@@ -29,7 +29,7 @@ Siehe [Dispatcher-Übersicht](https://experienceleague.adobe.com/docs/experience
 
 ### Konfiguration und Testen von Apache und Dispatcher {#dispatcher-configurations-cloud}
 
-Erfahren Sie, wie Sie die AEM as a Cloud Service Apache- und Dispatcher-Konfigurationen strukturieren und vor der Bereitstellung in Cloud-Umgebungen lokal validieren und ausführen können.
+Erfahren Sie, wie Sie die AEM as a Cloud Service Apache- und Dispatcher-Konfigurationen strukturieren und vor der Bereitstellung in Cloud-Umgebungen validieren und lokal ausführen können.
 
 Siehe [Dispatcher in der Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=de) für weitere Informationen.
 
@@ -39,7 +39,7 @@ AEM Dispatcher Converter bietet die Möglichkeit, bestehende lokale oder Adobe M
 
 ## Verwenden von AEM Dispatcher Converter {#using-dispatcher-converter}
 
-* Über Adobe Developer CLI : Adobe empfiehlt die Verwendung des AEM Dispatcher Converter über `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service Code-Refaktorierungs-Plug-in für die Adobe Developer-CLI).
+* Über die Adobe Developer-CLI : Adobe empfiehlt die Verwendung des AEM Dispatcher Converter als `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service Code-Refaktorierungs-Plug-in für die Adobe Developer-CLI).
 
   Siehe **[Git-Ressource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** damit Sie lernen können, wie Sie das Plug-in installieren und verwenden.
 

@@ -1,10 +1,10 @@
 ---
 title: Aufnahme von Inhalten in Target
-description: Aufnahme von Inhalten in Target
+description: Erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte aus Ihrem Migrationssatz in eine Cloud Service-Instanz aufnehmen können.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 3f526b8096125fbcf13b73fe82b2da0f611fa6ca
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1941'
 ht-degree: 44%
 
 ---
@@ -24,11 +24,11 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 >[!NOTE]
 >Haben Sie ein Support-Ticket für diesen Aufnahmevorgang erstellt? Weitere Informationen zu diesen und anderen Überlegungen zur erfolgreichen Aufnahme finden Sie unter [Wichtige Überlegungen vor Verwendung des Content Transfer Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=de#important-considerations).
 
-1. Gehen Sie zum Cloud Acceleration Manager. Klicken Sie auf Ihre Projektkarte und dann auf die Karte Inhaltstransfer . Navigieren Sie zu **Aufnahmevorgänge** und klicken Sie auf **Neue Erfassung**
+1. Gehen Sie zum Cloud Acceleration Manager. Klicken Sie auf Ihre Projektkarte und dann auf die Karte Inhaltstransfer . Navigieren Sie zu **Aufnahmevorgänge** und klicken **Neue Erfassung**
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
-1. Überprüfen Sie die Checkliste für die Aufnahme und stellen Sie sicher, dass alle Schritte abgeschlossen sind. Diese Schritte sind erforderlich, um eine erfolgreiche Erfassung sicherzustellen. Fahren Sie mit dem **Nächste** Schritt nur, wenn die Checkliste abgeschlossen ist.
+1. Überprüfen Sie die Checkliste für die Aufnahme und stellen Sie sicher, dass alle Schritte abgeschlossen sind. Diese Schritte sind erforderlich, um eine erfolgreiche Erfassung sicherzustellen. Fahren Sie mit dem **Nächste** Schritt nur dann, wenn die Checkliste abgeschlossen ist.
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
@@ -51,7 +51,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
    > Sie können eine Aufnahme nur dann in die Zielumgebung starten, wenn Sie zum lokalen **AEM Administratoren** auf dem Ziel-Cloud Service-Autorendienst. Wenn Sie eine Aufnahme nicht starten können, lesen Sie [Aufnahme kann nicht gestartet werden](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) für weitere Details.
    > Wenn die Einstellung **Wischen** vor der Erfassung aktiviert ist, löscht er das gesamte vorhandene Repository und erstellt ein Repository, in das Sie Inhalte aufnehmen können. Dieser Workflow bedeutet, dass alle Einstellungen einschließlich der Berechtigungen auf der Zielinstanz von Cloud Service zurückgesetzt werden. Diese Zurücksetzung gilt auch für einen Administrator, der zum **Administratoren** hinzugefügt. Sie müssen zur Administratorgruppe hinzugefügt werden, um eine Aufnahme starten zu können.
 
-1. Klicken **Aufnehmen**.
+1. Klicks **Aufnehmen**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
@@ -98,9 +98,9 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle *Auffüllung* von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden.
 
 >[!NOTE]
->Nach dem ersten Transfer von Inhalten wird empfohlen, häufige differenzielle Auffüllungen des Inhalts durchzuführen, um den Zeitraum für das Einfrieren des Inhalts für den endgültigen differenziellen Inhaltstransfer zu verkürzen, bevor er in Cloud Service live geschaltet wird. Wenn Sie den Schritt &quot;Vorab-Kopie&quot;für die erste vollständige Erfassung verwendet haben, können Sie die Vorkopie für nachfolgende Auffüllaufnahme überspringen (wenn die Größe des AuffüllMigrationssatzes kleiner als 200 GB ist). Der Grund dafür ist, dass dies dem gesamten Prozess Zeit hinzufügen kann.
+>Nach dem ersten Transfer von Inhalten wird empfohlen, häufige differenzielle Auffüllungen des Inhalts durchzuführen, um den Zeitraum für das Einfrieren des Inhalts für den endgültigen differenziellen Inhaltstransfer zu verkürzen, bevor er in Cloud Service live geschaltet wird. Wenn Sie den Schritt &quot;Vorab-Kopie&quot;für die erste vollständige Erfassung verwendet haben, können Sie die Vorkopie für nachfolgende Auffüllaufnahme überspringen (wenn die Größe des AuffüllMigrationssatzes kleiner als 200 GB ist). Der Grund dafür ist, dass dadurch dem gesamten Prozess Zeit hinzugefügt werden kann.
 
-Nach Abschluss des Aufnahmevorgangs müssen Sie zum Erfassen des Delta-Inhalts eine [Auffüllextraktion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)und verwenden Sie dann die Auffüllaufnahme-Methode.
+Nachdem der Aufnahmevorgang abgeschlossen ist, müssen Sie zum Erfassen des Delta-Inhalts eine [Auffüllextraktion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)und verwenden Sie dann die Auffüllaufnahme-Methode.
 
 Erstellen Sie zunächst einen Aufnahmeauftrag und stellen Sie sicher, dass **Wischen** ist während der Aufnahmephase deaktiviert, wie unten dargestellt:
 
@@ -110,7 +110,7 @@ Erstellen Sie zunächst einen Aufnahmeauftrag und stellen Sie sicher, dass **Wis
 
 ### CAM kann das Migrations-Token nicht abrufen {#cam-unable-to-retrieve-the-migration-token}
 
-Der automatische Abruf des Migrations-Tokens kann aus verschiedenen Gründen fehlschlagen, wie z. B. wenn Sie in der Cloud Service-Zielumgebung [eine IP-Zulassungsliste über Cloud Manager einrichten](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md). In solchen Fällen wird das folgende Dialogfeld angezeigt, wenn Sie versuchen, eine Aufnahme zu starten:
+Der automatische Abruf des Migrations-Tokens kann aus verschiedenen Gründen fehlschlagen, wie z. B. wenn Sie in der Cloud Service-Zielumgebung [eine IP-Zulassungsliste über Cloud Manager einrichten](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md). In solchen Fällen sehen Sie das folgende Dialogfeld, wenn Sie versuchen, eine Aufnahme zu starten:
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
@@ -128,7 +128,7 @@ Sie können eine Aufnahme nur dann in die Zielumgebung starten, wenn Sie zum lok
 
 ### Migrationsdienst kann nicht erreicht werden {#unable-to-reach-migration-service}
 
-Nachdem eine Aufnahme angefordert wurde, kann dem Benutzer eine Nachricht wie die folgende angezeigt werden: &quot;Der Migrationsdienst in der Zielumgebung ist nicht erreichbar. Wenn ja, versuchen Sie es später erneut oder kontaktieren Sie den Support von Adobe.&quot;
+Nachdem eine Aufnahme angefordert wurde, kann dem Benutzer eine Meldung wie die folgende angezeigt werden: &quot;Der Migrationsdienst in der Zielumgebung ist nicht erreichbar. Wenn ja, versuchen Sie es später erneut oder kontaktieren Sie den Support von Adobe.&quot;
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 
@@ -170,7 +170,7 @@ Dieser Konflikt muss manuell behoben werden. Dabei muss eine Person, die mit dem
 ### Fehler bei der Auffüllaufnahme aufgrund der nicht zu löschenden referenzierten Knotens
 
 Eine weitere häufige Ursache für eine [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) Fehler ist ein Versionskonflikt für einen bestimmten Knoten in der Zielinstanz. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
->java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Der referenzierte Knoten kann nicht gelöscht werden: 8a2289f4-b904-4bd0-8410-15e41e0976a8
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e09 76a8
 
 Dies kann vorkommen, wenn ein Knoten auf dem Ziel zwischen einer Aufnahme und einer nachfolgenden Auffüllaufnahme so geändert wird, dass eine neue Version erstellt wurde. Wenn für die Aufnahme &quot;Include-Versionen&quot;aktiviert sind, kann es zu einem Konflikt kommen, da das Ziel jetzt über eine neuere Version verfügt, auf die der Versionsverlauf und andere Inhalte verweisen. Der Aufnahmevorgang kann den fehlerhaften Versionsknoten nicht löschen, da darauf verwiesen wird.
 

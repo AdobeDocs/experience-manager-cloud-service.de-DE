@@ -1,12 +1,12 @@
 ---
 title: Integrieren mit Adobe Target
-description: Integrieren mit Adobe Target
+description: Erfahren Sie, wie Sie Adobe Target mit AEM as a Cloud Service integrieren.
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1026'
 ht-degree: 67%
 
 ---
@@ -38,7 +38,7 @@ Für den Export von Experience Fragments und/oder Inhaltsfragmenten nach Target 
 
 ### IMS-Konfiguration {#ims-configuration}
 
-Um Target ordnungsgemäß in AEM und Experience Platform Launch zu integrieren, ist eine IMS-Konfiguration für Launch und Target erforderlich. Während die IMS-Konfiguration für Experience Platform Launch in AEM as a Cloud Service vorkonfiguriert ist, muss die Target-IMS-Konfiguration erstellt werden (nachdem Target bereitgestellt wurde). Siehe [IMS-Konfiguration für die Integration mit Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md) und das Video [Integrieren von Experience Platform Launch und AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) , um zu erfahren, wie Sie die Target-IMS-Konfiguration erstellen.
+Um Target ordnungsgemäß in AEM und Experience Platform Launch zu integrieren, ist eine IMS-Konfiguration für Launch und Target erforderlich. Während die IMS-Konfiguration für Experience Platform Launch in AEM as a Cloud Service vorkonfiguriert ist, muss die Target-IMS-Konfiguration erstellt werden (nachdem Target bereitgestellt wurde). Siehe [IMS-Konfiguration für die Integration mit Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md) und das Video [Integrieren von Experience Platform Launch und AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=de) , um zu erfahren, wie Sie die Target-IMS-Konfiguration erstellen.
 
 ### Adobe Target-Mandanten-ID und Adobe Target-Clientcode {#tenant-client}
 
@@ -74,7 +74,7 @@ Um die Target-Konfiguration zu deaktivieren, führen Sie die folgenden Schritte 
 
 ### Hinzufügen einer Konfiguration zu einer Site {#add-configuration}
 
-Um eine Konfiguration der Touch-Benutzeroberfläche auf eine Site anzuwenden, gehen Sie zu: **Sites** > **Eine beliebige Site-Seite auswählen** > **Eigenschaften** > **Erweitert** > **Konfiguration** > Wählen Sie den Konfigurations-Mandanten aus.
+Um eine Konfiguration der Touch-Benutzeroberfläche auf eine Site anzuwenden, gehen Sie zu: **Sites** > **Eine beliebige Site-Seite auswählen** > **Eigenschaften** > **Erweitert** > **Konfiguration** > Wählen Sie den Konfigurationsmandanten aus.
 
 ## Integrieren von Adobe Target mit AEM Sites mithilfe von Adobe Experience Platform Launch {#integrate-target-launch}
 
