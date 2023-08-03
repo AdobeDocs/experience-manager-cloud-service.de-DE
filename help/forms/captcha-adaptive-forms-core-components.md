@@ -5,7 +5,7 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
+source-git-commit: b81acc99b1d90b05b7c341253e7cbb46c6ea12ae
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 13%
@@ -27,7 +27,7 @@ So verbinden Sie Ihre AEM Forms-Umgebung mit dem reCAPTCHA-Dienst von Google
 
 1. Erhalten [reCAPTCHA API-Schlüsselpaar](https://www.google.com/recaptcha/admin) aus Google. Er enthält eine **Site-Schlüssel** und **geheimer Schlüssel**.
 
-   ![Erstellen Sie die Google reCAPTCHA-Konfiguration der Website von Google, um reCAPTCHA-Schlüssel zu erhalten.](/help/forms/assets/google-captcha.gif){width="50%"}
+   ![Erstellen Sie die Google reCAPTCHA-Konfiguration der Website von Google, um reCAPTCHA-Schlüssel zu erhalten.](/help/forms/assets/google-captcha.gif)
 1. Erstellen Sie einen Konfigurations-Container in Ihrer as a Cloud Service AEM Forms-Umgebung. Ein Konfigurations-Container enthält Cloud-Konfigurationen, mit denen AEM mit externen Diensten verbunden werden. So erstellen und konfigurieren Sie einen Konfigurations-Container, um Ihre AEM Forms-Umgebung mit dem reCAPTCHA-Dienst von Google zu verbinden:
    1. Öffnen Sie Ihre as a Cloud Service AEM Forms-Instanz.
    1. Wählen Sie **[!UICONTROL Tools > Allgemein > Konfigurationsbrowser]**. Im Konfigurationsbrowser haben Sie folgende Möglichkeiten:
