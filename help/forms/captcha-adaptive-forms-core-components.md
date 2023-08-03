@@ -5,9 +5,9 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b56c90edacbe891afe3fe0add670f75ba46b0064
+source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '878'
 ht-degree: 13%
 
 ---
@@ -47,7 +47,9 @@ So verbinden Sie Ihre AEM Forms-Umgebung mit dem reCAPTCHA-Dienst von Google
    1. Wählen Sie einen Konfigurations-Container aus, der im vorherigen Abschnitt erstellt oder aktualisiert wurde. Tippen Sie auf **[!UICONTROL Erstellen]**.
    1. Angeben **[!UICONTROL Titel]**, **[!UICONTROL Name]**, **[!UICONTROL Site-Schlüssel]**, und **[!UICONTROL Geheimer Schlüssel]** für den reCAPTCHA-Dienst (abgerufen in Schritt 1). Tippen Sie auf **[!UICONTROL Erstellen]**.
 
-   ![Konfigurieren des Cloud Service für die Verbindung Ihrer AEM Forms-Umgebung mit dem reCAPTCHA-Dienst von Google](/help/forms/assets/captcha-configuration.gif){width="50%"}
+
+   ![Konfigurieren des Cloud Service für die Verbindung Ihrer AEM Forms-Umgebung mit dem reCAPTCHA-Dienst von Google](/help/forms/assets/captcha-configuration.gif)
+
 
 
    Sobald der reCAPTCHA-Dienst konfiguriert ist, steht er zur Verwendung in einem adaptiven Formular zur Verfügung. Weitere Informationen finden Sie unter [Verwenden von Google reCAPTCHA in einem adaptiven Formular](#using-reCAPTCHA).
@@ -62,12 +64,13 @@ So verwenden Sie reCAPTCHA in Adaptive Forms:
 1. Wählen Sie eine adaptive Forms aus und tippen Sie auf **[!UICONTROL Eigenschaften]**. Für **[!UICONTROL Konfigurations-Container]** Wählen Sie den Konfigurationscontainer aus, der die Cloud-Konfiguration enthält, die AEM Forms mit dem reCAPTCHA-Dienst von Google verbindet, und tippen Sie auf **[!UICONTROL Speichern und schließen]**.
 
    Wenn Sie keinen solchen Konfigurations-Container haben, finden Sie weitere Informationen im Abschnitt . [Verbinden Ihrer AEM Forms-Umgebung mit dem reCAPTCHA-Dienst von Google](#connect-your-forms-environment-with-recaptcha-service-by-google) , um zu erfahren, wie Sie einen solchen Konfigurations-Container erstellen.
-   ![Konfigurationscontainer auswählen](/help/forms/assets/captcha-properties.png){width="50%"}
+
+   ![Konfigurationscontainer auswählen](/help/forms/assets/captcha-properties.png)
 
 1. Wählen Sie eine adaptive Forms aus und tippen Sie auf **[!UICONTROL Bearbeiten]**. Das adaptive Formular wird im adaptiven Forms-Editor geöffnet.
 1. Ziehen Sie aus dem Komponenten-Browser die **[!UICONTROL Adaptives Formular reCAPTCHA]** auf das adaptive Formular.
 
-   Die reCAPTCHA-Validierung von Google ist zeitabhängig und läuft in etwa einer Minute ab. Daher empfiehlt Adobe, die **[!UICONTROL Adaptives Formular reCAPTCHA]** -Komponente direkt vor dem **[!UICONTROL Einsenden]** Schaltfläche.
+   Die reCAPTCHA-Validierung von Google ist zeitabhängig und läuft in etwa einigen Minuten ab. Daher empfiehlt Adobe, die **[!UICONTROL Adaptives Formular reCAPTCHA]** -Komponente direkt vor dem **[!UICONTROL Einsenden]** Schaltfläche.
 
 1. Wählen Sie die **[!UICONTROL Adaptives Formular reCAPTCHA]** Komponente und tippen Sie auf die Eigenschaften ![Eigenschaften-Symbol](assets/configure-icon.svg) Symbol. Dadurch wird das Dialogfeld &quot;Eigenschaften&quot;geöffnet. Geben Sie die folgenden obligatorischen Eigenschaften an:
    * **[!UICONTROL Name]:** Sie können eine Formularkomponente sowohl im Formular als auch im Regeleditor leicht mit ihrem eindeutigen Namen identifizieren, der Name darf jedoch keine Leerzeichen oder Sonderzeichen enthalten.
