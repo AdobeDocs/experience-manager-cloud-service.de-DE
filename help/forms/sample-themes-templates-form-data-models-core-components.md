@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 6cc7153c9754b6786a08c5fd378d72a8ab7c478d
+source-git-commit: b527e7499bfd995362b792ca1c57a2c92901739c
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1210'
 ht-degree: 10%
 
 ---
@@ -80,7 +80,7 @@ Eine einfache Vorlage hilft Ihnen beim schnellen Erstellen eines Registrierungse
 
 >[!TAB Telefon]
 
-![Grundlegendes Vorlagentelefon](assets/Basic-temp-phone-view.png)
+![Grundlegendes Vorlagentelefon](assets/Basic-temp-phone-view.png){width:&quot;25%&quot;}
 
 >[!TAB Tablet]
 
@@ -93,7 +93,21 @@ Eine einfache Vorlage hilft Ihnen beim schnellen Erstellen eines Registrierungse
 
 Eine leere Arbeitsflächenvorlage wird verwendet, um eine Struktur, einen Inhalt und Regeln für adaptive Formulare von Grund auf neu zu erstellen. In die leere Vorlage sind keine Formularkomponenten eingefügt.
 
-![Leere Vorlage](assets/Blank-template.png)
+>[!BEGINTABS]
+
+>[!TAB Desktop]
+
+![Leeres Vorlagen-Desktop](assets/Blank-temp-desktop-view.png)
+
+>[!TAB Telefon]
+
+![Grundlegendes Vorlagentelefon](assets/Blank-temp-phone-view.png){width:&quot;25%&quot;}
+
+>[!TAB Tablet]
+
+![Registerkarte &quot;Grundlegende Vorlage&quot;](assets/Blank-temp-tablet-view.png)
+
+>[!ENDTABS]
 
 ### Kontakt {#Contact-Us}
 
@@ -147,7 +161,7 @@ Mit der Vorlage für Bestellformulare können Sie ein Formular erstellen, um den
 
 ## Referenzformular-Datenmodelle {#reference-models}
 
-Nachdem Sie die [Adaptives Formular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) basierend auf [Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), können Sie das Backend Ihres Formulars mit der Datenbank Microsoft® Dynamics 365- und Salesforce-Servern verbinden, um geschäftliche Workflows zu ermöglichen. Beispiel:
+Nachdem Sie die [Adaptives Formular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) basierend auf [Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), können Sie Ihr Formular mit den Datenbankservern Microsoft® Dynamics 365 und Salesforce verbinden, um Geschäftsabläufe zu ermöglichen. Beispiel:
 
 * Schreiben Sie Daten in Microsoft® Dynamics 365 und Salesforce bei der Übermittlung des adaptiven Formulars.
 * Schreiben Sie Daten in Microsoft® Dynamics 365 und Salesforce über benutzerdefinierte Entitäten, die im Formulardatenmodell definiert sind, und umgekehrt.
