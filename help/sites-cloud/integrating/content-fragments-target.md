@@ -1,11 +1,11 @@
 ---
 title: Exportieren von Inhaltsfragmenten nach Adobe Target
-description: Exportieren von Inhaltsfragmenten nach Adobe Target
+description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente in Adobe Target exportieren, um Erlebnisse zu testen und zu personalisieren.
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 7905f21e70f373150775fe90d5faf02db4a59c32
+source-git-commit: 964599b919a7299da33a5f0ac72ad5ea644097d8
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 96%
+source-wordcount: '2231'
+ht-degree: 95%
 
 ---
 
@@ -175,7 +175,7 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
 
    * **Mandanten-ID**: die Mandanten-ID
 
-   * **IMS-Konfiguration**: Wählen Sie die gewünschte Konfiguration aus der Dropdown-Liste aus.
+   * **IMS-Konfiguration**: Wählen Sie die gewünschte Konfiguration aus der Dropdownliste aus.
 
    * **API-Typ**: standardmäßig auf REST gesetzt (XML ist veraltet)
 
