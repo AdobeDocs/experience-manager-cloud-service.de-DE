@@ -4,12 +4,13 @@ description: Erfahren Sie mehr über die leistungsstarken Live Copy-Synchronisie
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 1d5460c87aef10ae1adee7401cd462242e106f8c
 workflow-type: tm+mt
-source-wordcount: '2335'
-ht-degree: 89%
+source-wordcount: '2426'
+ht-degree: 87%
 
 ---
+
 
 # Konfigurieren der Synchronisierung von Live Copies {#configuring-live-copy-synchronization}
 
@@ -44,9 +45,7 @@ Jede Rollout-Konfiguration verwendet einen Rollout-Trigger, der den Rollout veru
 
 In der folgenden Tabelle sind die Rollout-Konfigurationen aufgeführt, die standardmäßig mit AEM bereitgestellt werden. Auslöser und Synchronisierungsaktionen jeder Rollout-Konfigurationen werden ebenfalls angegeben.
 
-<!--
-If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
--->
+Wenn die installierten Rollout-Konfigurationsaktionen Ihre Anforderungen nicht erfüllen, können Sie [eine neue Rollout-Konfiguration erstellen.](#creating-a-rollout-configuration)
 
 | Name | Beschreibung | Auslöser | [Synchronisierungsaktionen](#synchronization-actions) |
 |---|---|---|---|
@@ -61,7 +60,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 
 In der folgenden Tabelle sind Synchronisierungsaktionen aufgeführt, die standardmäßig mit AEM bereitgestellt werden.
 
-<!--If the installed actions do not meet your requirements, you can [Create a New Synchronization Action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).-->
+Wenn die installierten Aktionen Ihre Anforderungen nicht erfüllen, können Sie [eine neue Synchronisierungsaktion erstellen.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
 
 | Aktionsname | Beschreibung | Eigenschaften |
 |---|---|---|
@@ -83,16 +82,14 @@ In der folgenden Tabelle sind Synchronisierungsaktionen aufgeführt, die standar
 | `PageMoveAction` | Die `PageMoveAction` gilt, wenn eine Seite in den Blueprint verschoben wurde.<br>Die Aktion kopiert (nicht: verschiebt) die zugehörige Live Copy-Seite vom Ort vor dem Verschieben zum Ort nach dem Verschieben.<br>Die `PageMoveAction`-Aktion ändert dabei die Live Copy-Seite am Ort vor dem Verschieben nicht. Bei aufeinanderfolgenden Rollout-Konfigurationen hat sie daher den Status einer Live-Beziehung ohne Blueprint.<br>[Konfigurieren Sie den Service **CQ MSM Page Move Action**](#excluding-properties-and-node-types-from-synchronization), um die Knotentypen, Absatzelemente und Seiteneigenschaften festzulegen, die ausgeschlossen werden sollen.<br>Diese Aktion muss die einzige Synchronisierungsaktion in einer Rollout-Konfiguration sein. | Setzen Sie `prop_referenceUpdate: (Boolean)` auf true (Standard), um Verweise zu aktualisieren. |
 | `markLiveRelationship` | Diese Aktion gibt an, dass eine Live-Beziehung für Inhalt vorhanden ist, der für den Launch erstellt wurde. |  |
 
-<!--
-### Creating a Rollout Configuration {#creating-a-rollout-configuration}
+### Erstellen einer Rollout-Konfiguration {#creating-a-rollout-configuration}
 
-You can [create a rollout configuration](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration) when the installed rollout configurations do not meet your application requirements by performing the following steps.
+Sie können [Erstellen einer Rollout-Konfiguration](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) wenn die installierten Rollout-Konfigurationen Ihre Anwendungsanforderungen nicht erfüllen, indem Sie die folgenden Schritte ausführen.
 
-1. [Create the rollout configuration](/help/sites-developing/extending-msm.md#create-the-rollout-configuration).
-1. [Add synchronization actions to the rollout configuration](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration).
+1. [Erstellen Sie die Rollout-Konfiguration-](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
+1. [Fügen Sie Synchronisierungsaktionen zur Rollout-Konfiguration hinzu.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
 
-The new rollout configuration is then available to you when configuring rollout configurations on a blueprint or Live Copy page.
--->
+Die neue Rollout-Konfiguration steht Ihnen dann zur Verfügung, wenn Sie Rollout-Konfigurationen auf einer Blueprint- oder Live Copy-Seite konfigurieren.
 
 ### Ausschließen von Eigenschaften und Knotentypen von der Synchronisierung {#excluding-properties-and-node-types-from-synchronization}
 

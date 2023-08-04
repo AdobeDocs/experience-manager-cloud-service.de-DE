@@ -2,9 +2,9 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Erfahren Sie, wie Sie die Eigenschaften definieren, die für die Verwaltung einer Seite in AEM erforderlich sind.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
 workflow-type: tm+mt
-source-wordcount: '2347'
+source-wordcount: '2281'
 ht-degree: 80%
 
 ---
@@ -295,19 +295,7 @@ Beim Bearbeiten einer Seite können Sie mithilfe von **Seiteninformationen** die
 
 In der **Sites** Console können Sie mehrere Seiten auswählen und dann die Seiteneigenschaften mithilfe der **Ansichtseigenschaften** anzeigen und/oder bearbeiten. Dies wird als Massenbearbeitung von Seiteneigenschaften bezeichnet.
 
->[!NOTE]
->
->Die Massenbearbeitung von Eigenschaften ist auch für Assets verfügbar. Sie ist sehr ähnlich, unterscheidet sich aber in einigen Punkten. Weitere Informationen dazu finden Sie unter „Bearbeiten von Eigenschaften für mehrere Assets“.
->
->Darüber hinaus steht Ihnen die Massenbearbeitung zur Verfügung. Damit können Sie mithilfe von GQL (Google Query Language) auf mehreren Seiten nach Inhalten suchen und die Inhalte anschließend direkt im Bulk Editor bearbeiten, bevor Sie die Änderungen an den Ursprungsseiten speichern.
-
-<!--
->Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
->
->There is also the [Bulk Editor](/help/sites-administering/bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
--->
-
-Sie können mit verschiedenen Methoden mehrere Seiten für die Massenbearbeitung auswählen, darunter:
+Sie können mehrere Seiten für die Massenbearbeitung mit verschiedenen Methoden auswählen, darunter:
 
 * Beim Durchsuchen der **Sites**-Konsole
 * Nach Verwendung von **Suche**, um einen Seitensatz zu finden

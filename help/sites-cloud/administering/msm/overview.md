@@ -4,9 +4,9 @@ description: Im Folgenden erhalten Sie eine Einführung in das Wiederverwenden v
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 4049d226ecedb917c2a72cb76bc2fcaa946163f2
 workflow-type: tm+mt
-source-wordcount: '2706'
+source-wordcount: '2719'
 ht-degree: 87%
 
 ---
@@ -72,7 +72,7 @@ MSM und Live Copies haben zahlreiche Anwendungsfälle. Szenarien können beispie
 
   Alternativ dazu möchte ein Unternehmen mit einem Händlernetzwerk vielleicht separate Websites für seine einzelnen Verkaufsvertretungen, von denen jede eine Variante der von der Zentrale bereitgestellten Haupt-Website darstellt. Dies könnte für ein einzelnes Unternehmen mit mehreren regionalen Niederlassungen oder ein nationales Franchisesystem mit einem zentralen Franchisegeber und mehreren lokalen Franchisenehmern gelten.
 
-  Die Hauptverwaltung kann die zentralen Informationen bereitstellen, während die regionalen Stellen lokale Informationen wie Kontaktdaten, Öffnungszeiten und Veranstaltungen hinzufügen können.
+  Die Hauptverwaltung kann die zentralen Informationen bereitstellen, während die regionalen Stellen lokale Informationen hinzufügen können, wie z. B. Kontaktdaten, Öffnungszeiten und Veranstaltungen.
 
   ```xml
   /content
@@ -170,11 +170,9 @@ Als Einführung bietet die folgende Tabelle einen Überblick über die wichtigst
 | Flach | Eine Live Copy einer einzelnen Seite |  |
 | Tief | Eine Live Copy einer Seite zusammen mit ihren untergeordneten Seiten |  |
 
-<!--
 >[!TIP]
 >
->See [Overview of the Java API](/help/sites-developing/extending-msm.md#overview-of-the-java-api) for the object names.
--->
+>Lesen Sie das Dokument . [Erweitern des Multi-Site-Managers](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) für die Objektnamen.
 
 ## Live Copies {#live-copies}
 
