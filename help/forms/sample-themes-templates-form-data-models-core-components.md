@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 2739b89da945cb96b35bfd33e683b5b5e98490d0
+source-git-commit: 2b290be134be05bc15891082e8b54efef62076d0
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1277'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 # Muster-Designs, Vorlagen und Formulardatenmodelle in Kernkomponenten {#sample-themes-templates-and-data-models}
 
-AEM Forms-Kernkomponenten bieten Beispiel-Referenzthemen, Vorlagen und Formulardatenmodelle, die Ihnen dabei helfen, schnell mit der Erstellung von Adaptive Forms mit Kernkomponenten zu beginnen. Sie können [Aktivieren der adaptiven Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=de) zur as a Cloud Service und lokalen Entwicklungsumgebung von AEM Forms, um OOTB-Beispielvorlagen zu erhalten und [Verwenden und Anpassen von Beispieldesigns](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
+[!DNL AEM Forms] Kernkomponenten bieten gebrauchsfertige Beispielthemen, Vorlagen und Formulardatenmodelle, um schnell und einfach flexible adaptive Formulare zu erstellen. Diese helfen Formularautoren auch dabei, die Erweiterbarkeit, Anpassungsfähigkeit und Reaktionsfähigkeit von [AEM Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) um einfache Formulare in kürzester Zeit und komplexe Formulare einfach zu erstellen, während eine nahtlose Verbindung mit der Datenbank hergestellt wird.
 
 Die im Referenzinhaltspaket enthaltenen Musterdesigns, Vorlagen und Formulardatenmodelle sind:
 
@@ -39,7 +39,13 @@ Die im Referenzinhaltspaket enthaltenen Musterdesigns, Vorlagen und Formulardate
 
 ## Beispieldesigns {#Sample-Themes}
 
-Anhand von Beispieldesigns können Autoren die Formatierung für Formulare definieren und anpassen. Autoren mit Grundkenntnissen von CSS können Designs nach Bedarf anpassen. Formularverfasser [Aktivieren der adaptiven Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=de) in der as a Cloud Service und lokalen Entwicklungsumgebung von AEM Forms, um diese Themen wie folgt zu behandeln:
+Anhand von Beispieldesigns können Autoren die Formatierung für Formulare definieren und anpassen. Autoren mit Grundkenntnissen von CSS können Designs nach Bedarf anpassen.
+
+**Wie bekomme ich diese Themen?**
+* So erhalten Sie diese Themen **Forms as a Cloud Service** Umgebung, [Aktivieren der adaptiven Forms-Kernkomponenten](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) und verwenden Sie [Front-End-Pipeline](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) um diese Designs bereitzustellen.
+* So bringen Sie diese Themen zu einem **AEM 6.5 Forms** Umgebung, [Aktivieren der adaptiven Forms-Kernkomponenten](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) und verwenden Sie [Package Manager](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components) um diese Designs bereitzustellen.
+
+Die **vorkonfiguriert** [Kernkomponenten des adaptiven Formulars](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) Themen werden wie folgt beschrieben:
 
 ![OOTB-Themen](assets/OOTB-themes.png)
 
@@ -51,7 +57,7 @@ Das Arbeitsflächendesign ist das Standarddesign für Formulare und hebt die Ver
 
 ### WKND {#WKND}
 
-Das WKND-Design verkörpert ein lebendiges, fantasievolles und ansprechendes Design, um Ihren Formularen ein stilvolles Erscheinungsbild zu verleihen. Das Design basiert auf dem Erscheinungsbild und Stil von [WKND-Site](https://wknd.site/us/en.html) , auf der eine Reise- und Abenteuerwebsite aufbaut [Adobe Experience Manager-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
+Das WKND-Design verkörpert ein lebendiges, fantasievolles und ansprechendes Design, um Ihren Formularen ein stilvolles Erscheinungsbild zu verleihen. Das Design basiert auf dem Erscheinungsbild und Stil von [WKND-Site](https://wknd.site/us/en.html) , auf der eine Reise- und Abenteuerwebsite aufbaut [Adobe Experience Manager-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de).
 
 ![WKND-Design](assets/Safety-Inspection-Form-Theme.png)
 
@@ -64,7 +70,12 @@ Einfaches Design hilft dabei, ein ansprechendes und einfach einzurichtendes Form
 
 ## Beispielvorlagen {#Sample-templates}
 
-Vorlagen definieren die anfängliche Formularstruktur, den Inhalt und die Aktionen, die in Ihrem Formular repliziert werden sollen, oder verwenden eine ähnliche Vorlagenstruktur wie das Formular, z. B. Einverständnisformular, Registrierungsformular für Vorteile und vieles mehr. Sie erhalten die folgenden Vorlagen von [Aktivieren der adaptiven Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=de) in der as a Cloud Service oder lokalen Entwicklungsumgebung von AEM Forms. Die Beispielvorlagen in den Kernkomponenten des adaptiven Forms sind:
+Vorlagen definieren die anfängliche Formularstruktur, den Inhalt und die Aktionen, die in Ihrem Formular repliziert werden sollen, oder verwenden eine ähnliche Vorlagenstruktur wie das Formular, z. B. Einverständnisformular, Registrierungsformular für Vorteile und vieles mehr.
+
+**Wie erhalten Sie diese Vorlagen?**
+Sie können die Vorlagen abrufen, indem Sie eine [AEM auf Archetyp 43 oder höher basierendes Projekt](https://github.com/adobe/aem-project-archetype) auf **AEM Forms as a Cloud Service** oder **AEM 6.5** Forms-Umgebung.
+
+Die **vorkonfiguriert** [Kernkomponenten des adaptiven Formulars](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) Vorlagen werden wie folgt beschrieben:
 
 ![Referenzvorlagen](assets/reference-templates-core-components.png)
 
@@ -82,7 +93,7 @@ Eine leere Arbeitsflächenvorlage wird verwendet, um eine Struktur, einen Inhalt
 
 ### Kontakt {#Contact-Us}
 
-Die Formularvorlage Kontakt wird verwendet, um ein Formular zu erstellen, das die Kommunikation zwischen Website-Besuchern und Administratoren erleichtert. Benutzer können über das Formular Abfragen, Feedback oder Supportanfragen senden.
+Die Formularvorlage Kontaktformular wird verwendet, um ein Formular zu erstellen, das die Kommunikation zwischen Website-Besuchern und Formular-Administratoren erleichtert. Benutzer können über das Formular Abfragen, Feedback oder Supportanfragen senden.
 
 ![Kontaktvorlage](assets/Contact-us-desktop-view.png)
 
@@ -100,7 +111,7 @@ Die Vorlage für das Einverständnisformular wird verwendet, um ein Formular fü
 
 ### Protokolldienstanfrage {#Log-Service-Request}
 
-Die Protokolldienst-Anforderungsvorlage hilft beim Erstellen eines Formulars, das anfragespezifische Protokollierungsdienste von einem Dienstleister anfordert. Das Formular dient als formelle Anfrage zum Erstellen eines Tickets, bei dem bestimmte Ereignisse, Aktivitäten oder Daten zur Überwachung oder zum Tracking-Status protokolliert werden.
+Die Protokolldienst-Anforderungsvorlage hilft beim Erstellen eines Formulars, das protokollspezifische Protokollierungsdienste von einem Dienstleister anfordert. Das Formular dient als formelle Anfrage zum Erstellen eines Tickets für Ereignisse, Aktivitäten oder Daten, die zur Überwachung oder zum Tracking-Status protokolliert werden.
 
 ![Anforderungsvorlage für Protokolldienst](assets/Log-service-request-desktop-view.png)
 
@@ -152,7 +163,7 @@ Mit der Vorlage für Bestellformulare können Sie ein Formular erstellen, um den
 
 ## Referenzformular-Datenmodelle {#reference-models}
 
-Nachdem Sie die [Adaptives Formular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) basierend auf [Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), können Sie Ihr Formular mit den Datenbankservern Microsoft® Dynamics 365 und Salesforce verbinden, um Geschäftsabläufe zu ermöglichen. Beispiel:
+Nachdem Sie die [Adaptives Formular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#adaptive-forms-core-components) basierend auf [Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction#adaptive-forms-core-components), können Sie Ihr Formular mit den Datenbankservern Microsoft® Dynamics 365 und Salesforce verbinden, um Geschäftsabläufe zu ermöglichen. Beispiel:
 
 * Schreiben Sie Daten in Microsoft® Dynamics 365 und Salesforce bei der Übermittlung des adaptiven Formulars.
 * Schreiben Sie Daten in Microsoft® Dynamics 365 und Salesforce über benutzerdefinierte Entitäten, die im Formulardatenmodell definiert sind, und umgekehrt.
@@ -164,4 +175,4 @@ Sie können die folgenden Formulardatenmodelle erhalten, indem Sie das [Referenz
 * Microsoft® Dynamics 365
 * Salesforce
 
-Informationen zur Verwendung dieser Modelle finden Sie unter [Konfigurieren von Microsoft® Dynamics 365- und Salesforce-Cloud-Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=de#configure-dynamics-cloud-service)
+Informationen zur Verwendung dieser Modelle finden Sie unter [Konfigurieren von Microsoft® Dynamics 365- und Salesforce-Cloud-Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html#configure-dynamics-cloud-service)
