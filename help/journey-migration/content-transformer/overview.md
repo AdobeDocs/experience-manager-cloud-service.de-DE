@@ -1,9 +1,9 @@
 ---
 title: Übersicht über Content Transformer
-description: Übersicht über Content Transformer
-source-git-commit: 55eedd342f048e19bad5c6fbfdd16a468ff1f4f9
+description: Erfahren Sie, wie Sie mit Content Transformer von BPA gemeldete inhaltsbezogene Probleme erkennen und beheben können.
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '393'
 ht-degree: 4%
 
 ---
@@ -31,6 +31,6 @@ Der Content Transformer kann Ihnen bei der Lösung von Problemen helfen, die unt
 
 Der Content Transformer bietet die folgenden Vorteile:
 
-* Fail-Safe: Ein Paket wird vom Content Transformer jedes Mal erstellt, wenn er Änderungen am Repository vornimmt, um Probleme zu beheben. Bei Bedarf können Sie den vorherigen Status wiederherstellen, indem Sie das Paket installieren.
+* Fail-safe: Ein Paket wird vom Content Transformer jedes Mal erstellt, wenn er Änderungen am Repository vornimmt, um Probleme zu beheben. Bei Bedarf können Sie den vorherigen Status wiederherstellen, indem Sie das Paket installieren.
 * Benutzerfreundlich: Der Content Transformer wurde in das Content Transfer Tool integriert und verfügt über eine intuitive, einfache Benutzeroberfläche.
-* Speichert Zeit: Wenn Sie eine große Anzahl von Inhaltsproblemen haben, die unter eine Musterkategorie fallen, können Sie sie mit dem Content Transformer mit nur wenigen Klicks beheben.
+* Zeit sparen: Wenn Sie eine große Anzahl von Inhaltsproblemen haben, die unter eine Musterkategorie fallen, können Sie alle mit nur wenigen Klicks mit dem Content Transformer beheben.

@@ -1,11 +1,11 @@
 ---
 title: Unified Experience für Code-Refaktorierungs-Tools
-description: Unified Experience für Code-Refaktorierungs-Tools
+description: Erfahren Sie mehr über Unified Experience für Code-Refaktorierungs-Tools.
 exl-id: daee0e2d-1e2b-41a3-acab-fc59142d0e05
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 90%
+source-wordcount: '265'
+ht-degree: 87%
 
 ---
 
@@ -42,7 +42,7 @@ Das `aio-cli-plugin-aem-cloud-service-migration`-Plug-in besteht aus zwei Hauptt
 
 ## Verfügbarkeit {#availability}
 
-Siehe [Git-Ressource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) , um mehr über die Verwendung zu erfahren und zu erfahren, wie Sie zu diesem Plug-in-Code beitragen können, der in GitHub offen zugänglich ist.
+Siehe [Git-Ressource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) , um mehr über die Verwendung zu erfahren und wie Sie zu diesem Plug-in-Code beitragen können, der in GitHub offen zugänglich ist.
 
 >[!NOTE]
 >Derzeit ist das Plug-in in AEM Dispatcher Converter und Repository Modernizer integriert.

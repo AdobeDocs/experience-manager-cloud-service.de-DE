@@ -1,12 +1,12 @@
 ---
 title: Bereitstellen für AEM as a Cloud Service
-description: Bereitstellen für AEM as a Cloud Service
+description: Erfahren Sie mehr über die Grundlagen und Best Practices für die Bereitstellung auf AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '3462'
-ht-degree: 42%
+source-wordcount: '3470'
+ht-degree: 41%
 
 ---
 
@@ -36,7 +36,7 @@ Wie bei bestehenden Nicht-Cloud-AEM-Versionen wird eine lokale, Offline-Entwickl
 >[!NOTE]
 >Beim Verhalten des Programms gibt es geringfügige Unterschiede zwischen einem lokalen Computer und der Adobe Cloud. Diese architektonischen Unterschiede müssen bei der lokalen Entwicklung berücksichtigt werden und können bei Bereitstellung in der Cloud-Infrastruktur ggf. zu einem anderen Verhalten führen. Aufgrund dieser Unterschiede ist es wichtig, umfassende Tests für Entwicklungs- und Staging-Umgebungen durchzuführen, bevor neuer benutzerdefinierter Code in der Produktion eingeführt wird.
 
-Um benutzerdefinierten Code für eine interne Version zu entwickeln, muss die entsprechende Version der [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) heruntergeladen und installiert werden. Weitere Informationen zur Verwendung der AEM as a Cloud Service-Dispatcher-Tools finden Sie auf [dieser Seite](/help/implementing/dispatcher/disp-overview.md).
+Um benutzerdefinierten Code für eine interne Version zu entwickeln, muss die entsprechende Version der [AEM AS A CLOUD SERVICE SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) heruntergeladen und installiert werden. Weitere Informationen zur Verwendung der AEM as a Cloud Service-Dispatcher-Tools finden Sie auf [dieser Seite](/help/implementing/dispatcher/disp-overview.md).
 
 Das folgende Video bietet einen allgemeinen Überblick darüber, wie Sie Code für AEM as a Cloud Service bereitstellen:
 
@@ -55,13 +55,13 @@ Das folgende Video bietet einen allgemeinen Überblick darüber, wie Sie Code f�
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-Kunden können benutzerspezifischen Code in Cloud-Umgebungen über Cloud Manager bereitstellen. Cloud Manager wandelt lokal assemblierte Inhaltspakete in ein Artefakt um, das dem Sling-Funktionsmodell entspricht. So wird eine Anwendung auf AEM as a Cloud Service Seite beschrieben, wenn sie in einer Cloud-Umgebung ausgeführt wird. Daher sollten Sie die Pakete in [Package Manager](/help/implementing/developing/tools/package-manager.md) In Cloud-Umgebungen enthält der Name &quot;cp2fm&quot;und die transformierten Pakete haben alle Metadaten entfernt. Mit ihnen kann nicht interagiert werden; d. h. sie lassen nicht herunterladen, replizieren oder öffnen. Eine ausführliche Dokumentation zum Konvertierer finden Sie [hier](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+Kunden können benutzerspezifischen Code in Cloud-Umgebungen über Cloud Manager bereitstellen. Cloud Manager wandelt lokal assemblierte Inhaltspakete in ein Artefakt um, das dem Sling-Funktionsmodell entspricht. So wird eine Anwendung auf AEM as a Cloud Service Seite beschrieben, wenn sie in einer Cloud-Umgebung ausgeführt wird. Daher sollten Sie sich die Pakete in [Package Manager](/help/implementing/developing/tools/package-manager.md) In Cloud-Umgebungen enthält der Name &quot;cp2fm&quot;und die transformierten Pakete haben alle Metadaten entfernt. Mit ihnen kann nicht interagiert werden; d. h. sie lassen nicht herunterladen, replizieren oder öffnen. Eine ausführliche Dokumentation zum Konvertierer finden Sie [hier](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Inhaltspakete, die für Anwendungen in AEM as a Cloud Service Anwendungen geschrieben wurden, müssen eine saubere Trennung zwischen unveränderlichem und veränderlichem Inhalt aufweisen. Cloud Manager installiert nur den veränderlichen Inhalt und gibt außerdem eine Meldung wie die folgende aus:
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
-Der Rest dieses Abschnitts beschreibt die Zusammensetzung und Implikationen unveränderlicher und veränderlicher Pakete.
+Der Rest dieses Abschnitts beschreibt die Komposition und Implikationen unveränderlicher und veränderlicher Pakete.
 
 ### Unveränderliche Inhaltspakete {#immutabe-content-packages}
 
@@ -115,7 +115,7 @@ Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinst
 >[!NOTE]
 >Inhaltspakete werden für alle Umgebungstypen (dev, stage, prod) bereitgestellt. Die Bereitstellung kann nicht auf eine bestimmte Umgebung beschränkt werden. Diese Einschränkung dient dazu, einen Testlauf der automatischen Ausführung zu ermöglichen. Umgebungsspezifische Inhalte müssen manuell installiert werden. [Package Manager](/help/implementing/developing/tools/package-manager.md).
 
-Außerdem gibt es keinen Mechanismus, um die Änderungen an veränderlichen Inhaltspaketen nach deren Anwendung rückgängig zu machen. Wenn Kunden ein Problem entdecken, können sie es in ihrer nächsten Code-Version beheben oder – als letzte Möglichkeit – das ganze System auf einen Zeitpunkt vor der Bereitstellung zurücksetzen.
+Außerdem gibt es keinen Mechanismus, um die Änderungen an veränderlichen Inhaltspaketen nach deren Anwendung zurückzufahren. Wenn Kunden ein Problem entdecken, können sie es in ihrer nächsten Code-Version beheben oder – als letzte Möglichkeit – das ganze System auf einen Zeitpunkt vor der Bereitstellung zurücksetzen.
 
 Alle enthaltenen Pakete von Drittanbietern müssen als AEM as a Cloud Service kompatibel validiert werden. Andernfalls führt ihre Einbeziehung zu einem Implementierungsfehler.
 
@@ -140,14 +140,14 @@ In folgenden Fällen ist es vorzuziehen, in den OSGi-Werkseinstellungen manuell 
 Aufgrund der folgenden Vorteile ist bei diesen Anwendungsfällen für die Inhaltsänderung bevorzugt „repoinit“ zu verwenden:
 
 * `Repoinit` erstellt Ressourcen beim Start, sodass Logik die Existenz dieser Ressourcen als selbstverständlich betrachten kann. Beim Ansatz mit veränderlichen Inhaltspaketen werden Ressourcen nach dem Start erstellt, sodass Anwendungs-Code, der auf sie angewiesen ist, fehlschlagen kann.
-* `Repoinit` ist ein relativ sicherer Anweisungssatz, da Sie explizit steuern, welche Aktion vorgenommen werden soll. Außerdem werden nur additive Vorgänge unterstützt, mit Ausnahme einiger sicherheitsrelevanter Fälle, in denen Benutzer, Dienstbenutzer und Gruppen entfernt werden können. Im Gegensatz dazu ist die Entfernung von etwas im Ansatz für veränderliche Inhaltspakete explizit. Wenn Sie einen Filter definieren, werden alle von einem Filter erfassten Elemente gelöscht. Dennoch ist Vorsicht geboten, da es bei jedem Inhalt Szenarien geben kann, in denen die Existenz neuer Inhalte das Verhalten des Programms verändert.
+* `Repoinit` ist ein relativ sicherer Anweisungssatz, da Sie explizit steuern, welche Aktion vorgenommen werden soll. Außerdem werden nur additive Vorgänge unterstützt, mit Ausnahme einiger sicherheitsrelevanter Fälle, in denen Benutzer, Dienstbenutzer und Gruppen entfernt werden können. Im Gegensatz dazu ist die Entfernung von Elementen im Ansatz für veränderliche Inhaltspakete explizit. Wenn Sie einen Filter definieren, werden alle von einem Filter erfassten Elemente gelöscht. Dennoch ist Vorsicht geboten, da es bei jedem Inhalt Szenarien geben kann, in denen die Existenz neuer Inhalte das Verhalten des Programms verändert.
 * `Repoinit` sorgt für schnelle und atomische Operationen. Veränderliche Inhaltspakete hingegen können stark von der Leistung der Strukturen abhängen, die von einem Filter abgedeckt werden. Auch wenn Sie nur einen Knoten aktualisieren, wird ggf. ein Schnappschuss einer großen Baumstruktur erstellt.
-* Es ist möglich, `repoinit` -Anweisungen zur Laufzeit in einer lokalen Entwicklungsumgebung ausführen, da sie bei der Registrierung der OSGi-Konfiguration ausgeführt werden.
+* Sie können `repoinit` -Anweisungen zur Laufzeit in einer lokalen Entwicklungsumgebung ausführen, da sie bei der Registrierung der OSGi-Konfiguration ausgeführt werden.
 * `Repoinit` -Anweisungen sind atomisch und explizit und werden übersprungen, wenn der Status bereits übereinstimmt.
 
 Wenn Cloud Manager das Programm bereitstellt, werden diese Anweisungen unabhängig von der Installation jeglicher Inhaltspakete ausgeführt.
 
-Erstellen `repoinit` Anweisungen, folgen Sie dem folgenden Verfahren:
+Erstellen von `repoinit` Anweisungen, folgen Sie dem folgenden Verfahren:
 
 1. Fügen Sie die OSGi-Konfiguration für werksmäßige PID `org.apache.sling.jcr.repoinit.RepositoryInitializer` in einem Konfigurationsordner des Projekts hinzu. Verwenden Sie einen beschreibenden Namen für die Konfiguration wie **org.apache.sling.jcr.repoinit.RepositoryInitializer~initstructure**.
 1. Hinzufügen `repoinit` -Anweisungen zur Skripteigenschaft der config. Syntax und Optionen werden in der [Sling-Dokumentation](https://sling.apache.org/documentation/bundles/repository-initialization.html) beschrieben. Vor den untergeordneten Ordnern sollte explizit ein übergeordneter Ordner erstellt werden. Beispielsweise ist eine explizite Erstellung von `/content` vor `/content/myfolder` und vor `/content/myfolder/mysubfolder` erforderlich. Für ACLs, die auf untergeordnete Strukturen festgelegt werden, wird empfohlen, sie auf einer höheren Ebene festzulegen und mit einer `rep:glob` Beschränkung. Beispiel: `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
@@ -177,7 +177,7 @@ above appears to be internal, to confirm with Brian -->
 >abstract="Erkunden Sie die Verwendung von Package Manager für Anwendungsfälle, in denen ein Inhaltspaket als „einmalig“ installiert werden soll. Die Installation umfasst den Import spezifischer Inhalte aus der Produktionsumgebung in die Staging-Umgebung, um ein Produktionsproblem zu debuggen, die Übertragung eines kleinen Inhaltspakets aus einer On-Premise-Umgebung in eine AEM Cloud-Umgebung und mehr."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de" text="Content Transfer Tool"
 
-Es gibt Anwendungsfälle, in denen ein Inhaltspaket als „one off“ (einmalig) installiert werden sollte. Wenn Sie beispielsweise bestimmte Inhalte aus der Produktion in die Staging-Umgebung importieren, um ein Produktionsproblem zu beheben. Für diese Szenarien gilt Folgendes: [Package Manager](/help/implementing/developing/tools/package-manager.md) kann in Umgebungen auf AEM as a Cloud Service verwendet werden.
+Es gibt Anwendungsfälle, in denen ein Inhaltspaket als „one off“ (einmalig) installiert werden sollte. Wenn Sie beispielsweise bestimmte Inhalte aus der Produktion in die Staging-Umgebung importieren, um ein Produktionsproblem zu beheben. Für diese Szenarien gilt: [Package Manager](/help/implementing/developing/tools/package-manager.md) kann in Umgebungen as a Cloud Service AEM verwendet werden.
 
 Da Package Manager auf einem Laufzeitkonzept basiert, ist es unmöglich, Inhalte oder Code im unveränderlichen Repository zu installieren. Daher dürfen diese Inhaltspakete nur aus veränderlichen Inhalten bestehen (hauptsächlich `/content` oder `/conf`). Wenn das Inhaltspaket gemischte Inhalte enthält (sowohl veränderliche als auch unveränderliche Inhalte), wird nur der veränderliche Inhalt installiert.
 

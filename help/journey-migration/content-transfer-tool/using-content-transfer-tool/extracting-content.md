@@ -1,11 +1,11 @@
 ---
 title: Extrahieren von Inhalten aus der Quelle
-description: Extrahieren von Inhalten aus der Quelle
+description: Erfahren Sie, wie Sie Inhalte aus einer Quell-AEM-Instanz extrahieren, um sie später in eine Cloud Service-AEM-Instanz zu übertragen.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 86%
+source-wordcount: '718'
+ht-degree: 83%
 
 ---
 
@@ -49,7 +49,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   Sie können auch den Fortschritt der Extraktionsphase von Cloud Acceleration Manager überwachen, indem Sie die Seite Inhaltstransfer aufrufen und sie durch Klicken auf **...** und dann **Details anzeigen**.
+   Sie können auch den Fortschritt der Extraktionsphase von Cloud Acceleration Manager überwachen, indem Sie die Seite Inhaltstransfer aufrufen und auf klicken **...** und dann **Details anzeigen**.
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 

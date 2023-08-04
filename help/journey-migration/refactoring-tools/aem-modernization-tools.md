@@ -1,11 +1,11 @@
 ---
 title: AEM-Modernisierungs-Tools
-description: AEM-Modernisierungs-Tools
+description: Erfahren Sie mehr über die Suite der Dienstprogramme, die verwendet werden können, um ältere AEM-Funktionen in die modernen und unterstützten Funktionen AEM as a Cloud Service zu konvertieren.
 exl-id: d541fae0-6386-403f-99c9-373dc978ad13
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 75%
+source-wordcount: '153'
+ht-degree: 61%
 
 ---
 
@@ -30,4 +30,4 @@ Siehe **[Einführung AEM Modernisierungs-Tools](https://opensource.adobe.com/aem
 
 ## Installation und Implementierung der AEM-Modernisierungs-Tools {#installing-implementing}
 
-Siehe **[Git-Ressource: AEM Modernisierung der Tools Suite](https://github.com/adobe/aem-modernize-tools)** , um mehr über Installation und Implementierung zu erfahren.
+Siehe **[Git-Ressource: AEM Modernize Tools Suite](https://github.com/adobe/aem-modernize-tools)** , um mehr über Installation und Implementierung zu erfahren.

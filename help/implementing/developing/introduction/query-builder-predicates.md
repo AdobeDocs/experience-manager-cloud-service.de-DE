@@ -1,11 +1,11 @@
 ---
 title: Query Builder-Prädikatsreferenz
-description: Prädikatsreferenz für die Query Builder-API.
+description: Prädikatreferenz für die Query Builder-API in AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '2246'
-ht-degree: 59%
+source-wordcount: '2252'
+ht-degree: 58%
 
 ---
 
@@ -17,17 +17,17 @@ ht-degree: 59%
 
 Die Stammprädikatgruppe. Sie unterstützt alle Eigenschaften einer Gruppe und ermöglicht das Festlegen globaler Abfrageparameter.
 
-Der Name &quot;root&quot;wird in einer Abfrage nie verwendet. es ist implizit.
+Der Name &quot;root&quot;wird in einer Abfrage nie verwendet; er ist implizit.
 
 #### Eigenschaften {#properties-18}
 
 * **`p.offset`** - Zahl, die den Anfang der Ergebnisseite angibt, d. h. wie viele Elemente übersprungen werden sollen.
 * **`p.limit`** - Zahl, die die Seitengröße angibt.
-* **`p.guessTotal`** - empfohlen: vermeiden Sie die Berechnung der vollständigen Ergebnissumme, was kostspielig sein kann. Entweder eine Zahl, die die maximal zu zählende Summe angibt (z. B. 1000, eine Zahl, die Benutzern genügend Feedback zur groben Größe und exakten Zahlen für kleinere Ergebnisse gibt). Oder `true` nur bis zum erforderlichen Minimum zählen `p.offset` + `p.limit`.
+* **`p.guessTotal`** - empfohlen: Vermeidung der Berechnung der vollständigen Ergebnissumme, was kostspielig sein kann. Entweder eine Zahl, die die maximal zu zählende Summe angibt (z. B. 1000, eine Zahl, die Benutzern genügend Feedback zur groben Größe und exakten Zahlen für kleinere Ergebnisse gibt). Oder `true` nur bis zum erforderlichen Minimum zählen `p.offset` + `p.limit`.
 * **`p.excerpt`** - wenn auf `true`, fügen Sie einen Volltextextextrakt in das Ergebnis ein.
 * **`p.hits`** - (nur für das JSON-Servlet) Wählen Sie die Art und Weise aus, wie die Treffer als JSON geschrieben werden, mit diesen Standardtreffern (erweiterbar über den ResultHitWriter-Dienst).
    * **`simple`** - Minimale Elemente wie `path`, `title`, `lastmodified`, `excerpt` (falls festgelegt).
-   * **`full`** - Sling JSON-Rendering des Knotens mit `jcr:path` gibt den Pfad des Treffers an. Standardmäßig werden nur die direkten Eigenschaften des Knotens aufgelistet, eine tiefere Struktur mit `p.nodedepth=N`, wobei 0 die gesamte, unendliche Unterstruktur bedeutet. Hinzufügen `p.acls=true` , um die JCR-Berechtigungen der aktuellen Sitzung für das angegebene Ergebniselement (Zuordnungen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+   * **`full`** - Sling JSON-Rendering des Knotens mit `jcr:path` gibt den Pfad des Treffers an. Standardmäßig werden nur die direkten Eigenschaften des Knotens aufgelistet und eine tiefere Struktur mit `p.nodedepth=N`, wobei 0 die gesamte, unendliche Unterstruktur bedeutet. Hinzufügen `p.acls=true` , um die JCR-Berechtigungen der aktuellen Sitzung für das angegebene Ergebniselement (Zuordnungen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
    * **`selective`** - nur Eigenschaften, die in `p.properties`, das durch ein Leerzeichen getrennt ist (verwenden Sie `+` in URLs) Liste der relativen Pfade. Wenn der relative Pfad eine Tiefe hat `>1`, werden diese Eigenschaften als untergeordnete Objekte dargestellt. Die Sonderaktion `jcr:path` -Eigenschaft enthält den Pfad des Treffers.
 
 ### group {#group}
@@ -76,7 +76,7 @@ Dieses Prädikat ermöglicht die Sortierung der Ergebnisse. Wenn die Sortierung 
 
 * **`orderby`** – Entweder der JCR-Eigenschaftsname, angezeigt durch ein vorangestelltes „@“, z. B. `@jcr:lastModified` bzw. `@jcr:content/jcr:title`, oder ein anderes Prädikat in der Abfrage, z. B. `2_property`, nach dem sortiert werden soll.
 * **`sort`** – Sortierrichtung, entweder `desc` für absteigend oder `asc` für aufsteigend (Standard).
-* **`case`** - wenn auf `ignore`wird bei der Sortierung nicht zwischen Groß- und Kleinschreibung unterschieden, d. h. `a` vor `B`; Bei leeren oder ausgeschlossenen Elementen wird bei der Sortierung zwischen Groß- und Kleinschreibung unterschieden, d. h. `B` vor `a`
+* **`case`** - wenn auf `ignore`wird bei der Sortierung nicht zwischen Groß- und Kleinschreibung unterschieden, d. h. `a` vor `B`; wenn leer oder ausgelassen, wird bei der Sortierung die Groß-/Kleinschreibung beachtet, d. h. `B` vor `a`
 
 ## Prädikate {#predicates}
 
@@ -245,10 +245,10 @@ Facettenextraktion wird nicht unterstützt.
    * Je nach `exact` -Eigenschaft, entweder entspricht die gesamte Unterstruktur (wie angehängt) `//*` in xpath, beachten Sie jedoch, dass es nicht den Basispfad enthält) oder nur ein exakter Pfad übereinstimmt, der Platzhalterzeichen (`*`).
       * Standardwert ist `true`.
 &lt;!— * Wenn die `self`-Eigenschaft festgelegt ist, wird die gesamte Unterstruktur einschließlich des Basisknotens durchsucht.—>
-* **`exact`** - wenn `exact` is `true`muss der genaue Pfad übereinstimmen, kann jedoch einfache Platzhalter enthalten (`*`), die mit Namen übereinstimmen, jedoch nicht `/`; , wenn `false` (Standard) Alle untergeordneten Elemente sind eingeschlossen (optional).
+* **`exact`** - wenn `exact` is `true`muss der genaue Pfad übereinstimmen, kann jedoch einfache Platzhalter enthalten (`*`), die mit Namen übereinstimmen, jedoch nicht `/`, wenn dies `false` (Standard) alle untergeordneten Elemente sind eingeschlossen (optional).
 * **`flat`** - durchsucht nur die direkten untergeordneten Elemente (wie &quot;anhängen&quot;) `/*` in xpath (nur verwendet, wenn `exact` ist nicht wahr, optional).
 * **`self`** – Durchsucht den Teilbaum, aber bezieht den als Pfad angegebenen Basisknoten mit ein (keine Platzhalter).
-   * *Wichtiger Hinweis*: Es wurde ein Problem mit `self` -Eigenschaft in der aktuellen Implementierung von Query Builder verwendet und in Abfragen verwendet, führt dies möglicherweise nicht zu korrekten Suchergebnissen. Ändern der aktuellen Implementierung von `self` -Eigenschaft ist auch nicht möglich, da sie die bestehenden Anwendungen beschädigen kann, die darauf angewiesen sind. Aufgrund dieser Funktion `self` -Eigenschaft ist jetzt veraltet; Es wird empfohlen, die Anwendung zu vermeiden.
+   * *Wichtiger Hinweis*: Ein Problem wurde mit `self` -Eigenschaft in der aktuellen Implementierung von Query Builder verwendet und in Abfragen verwendet, führt dies möglicherweise nicht zu korrekten Suchergebnissen. Ändern der aktuellen Implementierung von `self` -Eigenschaft ist auch nicht möglich, da sie die bestehenden Anwendungen beschädigen kann, die darauf angewiesen sind. Aufgrund dieser Funktion `self` -Eigenschaft ist nun veraltet. Es wird empfohlen, die Verwendung zu vermeiden.
 
 ### property {#property}
 
@@ -259,22 +259,22 @@ Es unterstützt die Facettenextraktion und stellt für jeden eindeutigen Eigensc
 #### Eigenschaften {#properties-15}
 
 * **`property`** – Relativer Pfad der Eigenschaft, z. B. `jcr:title`..
-* **`value`** - Wert, für den die Eigenschaft überprüft werden soll; folgt dem JCR-Eigenschaftstyp Zeichenfolgenkonvertierungen.
+* **`value`** - Wert, für den die Eigenschaft überprüft werden soll; folgt dem JCR-Eigenschaftstyp auf Zeichenfolgenkonvertierungen.
 * **`N_value`** - Anwendung `1_value`, `2_value`, um zu überprüfen, ob mehrere Werte vorliegen (kombiniert mit `OR` standardmäßig mit `AND` if `and=true`).
 * **`and`** – Legen Sie hierfür `true` fest, um mehrere Werte (`N_value`) mit `AND` zu kombinieren.
 * **`operation`**
    * `equals` für exakte Übereinstimmung (Standard).
    * `unequals` für unterschiedliche Werte.
-   * `like` zur Verwendung der `jcr:like` xpath-Funktion (optional).
+   * `like` für die Verwendung der `jcr:like` xpath-Funktion (optional).
    * `not` für keine Übereinstimmung (z. B. `not(@prop)` in xpath wird der Wertparameter ignoriert).
    * `exists` zur Überprüfung des Vorhandenseins.
       * `true` Eigenschaft muss vorhanden sein.
       * `false` ist dasselbe wie `not` und ist der Standard.
-* **`depth`** - Anzahl der Platzhalterebenen, unter denen die Eigenschaft/der relative Pfad vorhanden sein kann (z. B. `property=size depth=2` checks `node/size`, `node/*/size`und `node/*/*/size`).
+* **`depth`** - Anzahl der Platzhalterebenen, unter denen die Eigenschaft/der relative Pfad vorhanden sein kann (z. B. `property=size depth=2` checks `node/size`, `node/*/size`, und `node/*/*/size`).
 
 ### rangeproperty {#rangeproperty}
 
-Dieses Prädikat ordnet eine JCR-Eigenschaft einem Intervall zu. Dies gilt für Eigenschaften mit linearen Typen wie `LONG`, `DOUBLE`und `DECIMAL`. Für `DATE`, siehe [`daterange`](#daterange) -Prädikat mit optimierter Datumsformateingabe.
+Dieses Prädikat ordnet eine JCR-Eigenschaft einem Intervall zu. Dies gilt für Eigenschaften mit linearen Typen wie `LONG`, `DOUBLE`, und `DECIMAL`. Für `DATE`, siehe [`daterange`](#daterange) -Prädikat mit optimierter Datumsformateingabe.
 
 Sie können eine untere Grenze, eine obere Grenze oder beide definieren. Der Vorgang (z. B. kleiner oder kleiner als oder gleich) kann auch einzeln für die untere und obere Grenze angegeben werden.
 
@@ -382,4 +382,4 @@ Es unterstützt die Facettenextraktion und stellt für jeden eindeutigen Typ in 
 
 #### Eigenschaften {#Properties-2}
 
-* **`type`** - Knotentyp oder `mixin` Name, nach dem gesucht werden soll, z. B. `cq:Page`
+* **`type`** - Knotentyp oder `mixin` Name, nach dem gesucht werden soll, beispielsweise `cq:Page`

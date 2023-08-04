@@ -1,15 +1,15 @@
 ---
 title: Löschen eines Migrationssatzes im Content Transfer Tool
-description: Löschen eines Migrationssatzes im Content Transfer Tool
+description: Erfahren Sie, wie Sie einen Migrationssatz im Content Transfer Tool löschen.
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
-source-git-commit: c61407d70fb65a7fdc72174881b23db4deca556a
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 100%
+source-wordcount: '235'
+ht-degree: 95%
 
 ---
 
-# Löschen eines Migrationssatzes  {#delete-migration-set}
+# Löschen eines Migrationssatzes {#delete-migration-set}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_delete_migrationset"

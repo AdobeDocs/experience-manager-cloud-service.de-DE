@@ -1,11 +1,11 @@
 ---
 title: Voraussetzungen für die Verwendung des Content Transfer Tools
-description: Voraussetzungen für die Verwendung des Content Transfer Tools
+description: Machen Sie sich mit den Voraussetzungen für das Content Transfer Tool vertraut.
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 51%
+source-wordcount: '553'
+ht-degree: 49%
 
 ---
 
@@ -30,7 +30,7 @@ In der folgenden Tabelle sind die Voraussetzungen für die Verwendung des Conten
 | Gesamtgröße des Lucene-Index | Gesamtgröße des Lucene-Index von 25 GB, ausgenommen `/oak:index/lucene` und `/oak:index/damAssetLucene` wird unterstützt. Erstellen Sie ein Support-Ticket mit der Adobe-Kundenunterstützung, damit Sie Optionen für die Indexgröße über diesem Limit besprechen können. |
 | Knotennamenlänge | Die Länge eines Knotennamens muss 150 Byte oder weniger betragen, wenn der übergeordnete Pfad des Knotens >= (gleich oder größer) 350 Byte ist. Diese Knotennamen müssen auf &lt;= 150 Byte gekürzt werden, damit sie vom Knotenspeicher &quot;Dokument&quot;in AEM as a Cloud Service unterstützt werden. Übernahmen schlagen fehl, wenn diese langen Knotennamen nicht behoben sind. |
 | Inhalt in unveränderlichen Pfaden | Das Content Transfer Tool kann nicht verwendet werden, um Inhalte unter unveränderlichen Pfaden zu migrieren. So übertragen Sie Inhalte von `/etc`können Sie bestimmte `/etc` Pfade, aber nur zur Unterstützung [AEM Forms in AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html#paths-of-various-aem-forms-specific-assets). Alle anderen Anwendungsfälle finden Sie unter [Allgemeine Repository-Neustrukturierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/all-repository-restructuring-in-aem-6-5.html?lang=de) , um mehr über die Repository-Umstrukturierung zu erfahren. |
-| Knoteneigenschaftswert in MongoDB | Die in MongoDB gespeicherten Knoteneigenschaftswerte dürfen 16 MB nicht überschreiten. Diese Regel wird von MongoDB durchgesetzt. Die Erfassung schlägt fehl, wenn die Eigenschaftswerte größer als diese Grenze sind. Bevor Sie eine Extraktion durchführen, führen Sie dieses [oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar)-Skript aus. Überprüfen Sie alle großen Eigenschaftswerte und überprüfen Sie, ob sie benötigt werden. Die Werte, die 16 MB überschreiten, müssen in Binärwerte umgewandelt werden. |
+| Knoteneigenschaftswert in MongoDB | Die in MongoDB gespeicherten Knoteneigenschaftswerte dürfen 16 MB nicht überschreiten. Diese Regel wird von MongoDB erzwungen. Die Erfassung schlägt fehl, wenn die Eigenschaftswerte größer als diese Grenze sind. Bevor Sie eine Extraktion durchführen, führen Sie dieses [oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar)-Skript aus. Überprüfen Sie alle großen Eigenschaftswerte und überprüfen Sie, ob sie benötigt werden. Die Werte, die 16 MB überschreiten, müssen in Binärwerte umgewandelt werden. |
 
 ## Wie geht es weiter {#whats-next}
 

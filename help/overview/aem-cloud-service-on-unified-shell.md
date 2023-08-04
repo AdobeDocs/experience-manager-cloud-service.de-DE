@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service in Unified Shell
-description: AEM as a Cloud Service in Unified Shell
+description: Erfahren Sie mehr über die Vorteile von AEM as a Cloud Service auf Unified Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 79%
+source-wordcount: '399'
+ht-degree: 76%
 
 ---
 
@@ -32,13 +32,13 @@ Standardmäßig ist Unified Shell in AEM as a Cloud Service aktiviert. Wenn die 
 >[!NOTE]
 >Unified Shell kann nur durch ein Konto mit Administratorrechten deaktiviert werden.
 
-1. Klicken **Tools > Cloud Services**.
+1. Klicks **Tools > Cloud Services**.
 
    Ein Admin-Benutzer sieht die Unified Shell Configuration-Karte wie folgt:
 
    ![Bild](/help/overview/assets/unifiedshell2.png)
 
-1. Klicken **Unified Shell-Konfiguration**. Deaktivieren Sie dann das unten dargestellte Kontrollkästchen, um Unified Shell zu deaktivieren:
+1. Klicks **Unified Shell-Konfiguration**. Deaktivieren Sie dann das unten dargestellte Kontrollkästchen, um Unified Shell zu deaktivieren:
 
    ![Grafik](/help/overview/assets/unifiedshell3.png)
 

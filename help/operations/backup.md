@@ -1,11 +1,11 @@
 ---
 title: Backup und Wiederherstellung in AEM as a Cloud Service
-description: Backup und Wiederherstellung in AEM as a Cloud Service
+description: Erfahren Sie mehr über Sicherung und Wiederherstellung in AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 54%
+source-wordcount: '514'
+ht-degree: 52%
 
 ---
 

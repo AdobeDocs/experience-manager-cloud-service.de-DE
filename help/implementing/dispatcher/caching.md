@@ -1,12 +1,12 @@
 ---
 title: Caching in AEM as a Cloud Service
-description: Caching in AEM as a Cloud Service
+description: Erfahren Sie mehr über die Grundlagen der Zwischenspeicherung in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '2795'
-ht-degree: 51%
+source-wordcount: '2800'
+ht-degree: 50%
 
 ---
 
@@ -44,7 +44,7 @@ Diese Methode ist beispielsweise nützlich, wenn Ihre Geschäftslogik eine Feina
   >[!NOTE]
   >Die Surrogate-Control-Kopfzeile gilt für das von Adobe verwaltete CDN. Wenn Sie eine [kundenverwaltetes CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=de#point-to-point-CDN)festgelegt ist, kann je nach CDN-Provider eine andere Kopfzeile erforderlich sein.
 
-  Gehen Sie beim Festlegen von globalen Cache-Steuerelement-Headern oder ähnlichen Cache-Headern, die mit einem breiten Regex übereinstimmen, vorsichtig vor, damit sie nicht auf Inhalte angewendet werden, die privat bleiben müssen. Erwägen Sie, mehrere Anweisungen zu verwenden, um sicherzustellen, dass die Regeln detailliert angewendet werden. Daher entfernt AEM as a Cloud Service den Cache-Header, wenn festgestellt wird, dass er auf das angewendet wurde, was vom Dispatcher als nicht erreichbar erkannt wird, wie in der Dispatcher-Dokumentation beschrieben. Um AEM zu erzwingen, die Zwischenspeicherkopfzeilen immer anzuwenden, können Sie die **`always`** wie folgt:
+  Gehen Sie beim Festlegen von globalen Cache-Steuerelement-Headern oder ähnlichen Cache-Headern, die mit einem breiten Regex übereinstimmen, vorsichtig vor, damit sie nicht auf Inhalte angewendet werden, die privat bleiben müssen. Erwägen Sie, mehrere Anweisungen zu verwenden, um sicherzustellen, dass die Regeln detailliert angewendet werden. Daher entfernt AEM as a Cloud Service den Cache-Header, wenn festgestellt wird, dass er auf das angewendet wurde, was vom Dispatcher als nicht erreichbar erkannt wird, wie in der Dispatcher-Dokumentation beschrieben. Um AEM zu erzwingen, die Zwischenspeicherkopfzeilen immer anzuwenden, können Sie die **`always`** -Option wie folgt:
 
   ```
   <LocationMatch "^/content/.*\.(html)$">
@@ -478,7 +478,7 @@ Wenn die strikte clientlib-Versionierung aktiviert ist, wird der Client-Biblioth
 
 Die strikte Clientlib-Versionierung ist in AEM as a Cloud Service Umgebung standardmäßig aktiviert.
 
-Gehen Sie wie folgt vor, um die strikte Clientlib-Versionierung im lokalen SDK-Schnellstart zu aktivieren:
+Gehen Sie wie folgt vor, um die strikte clientlib-Versionierung im lokalen SDK-Schnellstart zu aktivieren:
 
 1. Navigieren Sie zum OSGi Configuration Manager `<host>/system/console/configMgr`
 1. Suchen Sie die OSGi-Konfiguration für Adobe Granite HTML Library Manager:
