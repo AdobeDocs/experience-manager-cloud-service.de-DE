@@ -1,10 +1,10 @@
 ---
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.6.0
-description: Versionshinweise für Experience Manager 2020.6.0
+description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.6.0“
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1933'
 ht-degree: 91%
 
 ---
@@ -62,7 +62,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
   Siehe [Löschen eines Sandbox-Programms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=de) für weitere Details.
 
-* Ein Sandbox-Programmbenutzer mit der Rolle *Business Owner* oder *Bereitstellungs-Manager* in Cloud Manager kann jetzt seinen Satz von Produktions- und Staging-Umgebungen löschen, der über die Cloud Manager-Benutzeroberfläche festgelegt wurde. Die Löschoption ist jetzt auf der Umgebungskarte auf der **Programmübersicht** und **Umgebungen** Seite. Durch Auswahl der Löschoption für die Produktions- oder Staging-Umgebung wird die jeweils andere Umgebung im Satz auch gelöscht.
+* Ein Sandbox-Programmbenutzer mit der Rolle *Business Owner* oder *Bereitstellungs-Manager* in Cloud Manager kann jetzt seinen Satz von Produktions- und Staging-Umgebungen löschen, der über die Cloud Manager-Benutzeroberfläche festgelegt wurde. Die Löschoption ist jetzt auf der Umgebungskarte auf der **Programmübersicht** und die **Umgebungen** Seite. Durch Auswahl der Löschoption für die Produktions- oder Staging-Umgebung wird die jeweils andere Umgebung im Satz auch gelöscht.
 
   Siehe [Löschen eines Sandbox-Programms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=de) für weitere Details.
 
@@ -72,7 +72,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 * In Cloud Manager ist jetzt eine Seite mit **LERNMATERIALIEN** verfügbar, auf die Sie über die obere Navigationsleiste zugreifen können. Die Seite enthält Ressourcen, die Benutzer über die häufigsten Workflows für ihre entsprechende Rolle in Cloud Manager informieren.
 
-* Sandbox-Programme werden jetzt mithilfe eines **Sandbox** auf der Landingpage auf der Programmkarte und neben dem Programmnamen im **Programmübersicht** Seite.
+* Sandbox-Programme werden jetzt mithilfe eines **Sandbox** auf der Landingpage und neben dem Programmnamen in der **Programmübersicht** Seite.
 
 * Ein Benutzer mit der SysAdmin-Rolle hat jetzt 1-Klick-Zugriff auf den Speicherort in Admin Console, von der aus Benutzerrollen oder Berechtigungen für Cloud Manager verwaltet werden können. Eine Schaltfläche **Zugriff verwalten** ist jetzt auf der Landingpage neben der Schaltfläche **Programm hinzufügen** verfügbar.
 

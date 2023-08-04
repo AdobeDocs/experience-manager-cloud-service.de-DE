@@ -1,10 +1,10 @@
 ---
 title: Versionshinweise für Version 2020.3.0
-description: Versionshinweise für Version 2020.3.0
+description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.3.0“
 exl-id: 0393c789-3999-4e51-be83-269d6eabd3f3
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '248'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 ### Fehlerbehebungen  {#bug-fixes}
 
 * Protokolldateien für die benutzerdefinierten und produktspezifischen Testschritte konnten nicht über die Benutzeroberfläche heruntergeladen werden.
-* Wenn das git-Repository für ein Cloud Service-Programm nicht erstellt werden konnte, war bei Benutzern mit der Rolle „Implementierungs-Manager“ manchmal keine Wiederherstellung möglich.
+* Wenn das git-Repository für ein Cloud Service-Programm nicht erstellt werden konnte, war bei Benutzern mit der Rolle „Bereitstellungs-Manager“ manchmal keine Wiederherstellung möglich.
 * Bestimmte Benutzeraktivitäten während der Erstellung eines Sandbox-Programms konnten dazu führen, dass die Programmerstellung fehlschlug, bevor die produktionsfremde Pipeline erstellt wurde.
 * Die im Build-Schritt verwendete temporäre SonarQube-Instanz konnte gelegentlich nicht innerhalb des konfigurierten Timeouts gestartet werden.
 * Bei der gleichzeitigen Erstellung von Entwicklungsumgebungen im selben Cloud Service-Programm konnte es zu einer Bedingung kommen, bei der nur eine erfolgreich erstellt werden konnte.

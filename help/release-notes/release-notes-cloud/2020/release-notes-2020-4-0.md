@@ -1,10 +1,10 @@
 ---
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.4.0
-description: Versionshinweise für Experience Manager 2020.4.0
+description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.4.0“
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '648'
 ht-degree: 100%
 
 ---
@@ -27,16 +27,16 @@ Erfahren Sie mehr über neue Funktionen, Verbesserungen und Fehlerkorrekturen f�
 
 * [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html)-Version 2.0 funktioniert mit [!DNL Experience Manager]as a Cloud Service. [!DNL Adobe Asset Link] optimiert die Zusammenarbeit zwischen Kreativen und Marketern bei der Inhaltserstellung durch die Verbindung von [!DNL Experience Manager Assets] mit den [!DNL Creative Cloud]-Desktop-Programmen [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] und [!DNL Adobe InDesign] über das interne [!DNL Asset Link]-Bedienfeld.
    * [!DNL Experience Manager] ist vorkonfiguriert für [!DNL Adobe Asset Link], was zu einer [einfachen Konfiguration](https://helpx.adobe.com/de/enterprise/using/configure-aem-assets-for-asset-link.html) und einer schnelleren Einführung für Kreativschaffende führt.
-   * [!DNL Asset Link] unterstützt jetzt einen [Schalter für Experience Manager-Umgebungen](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink), mit dem sich Kreativschaffende problemlos mit einer anderen [!DNL Experience Manager]-Umgebung verbinden können. Ein Beispiel, bei dem diese Funktion nützlich ist, sind Agentur-Designer, die mit mehreren Kunden arbeiten und verschiedene [!DNL Experience Manager Assets]-Implementierungen verwenden.
+   * [!DNL Asset Link] unterstützt jetzt einen [Schalter für Experience Manager-Umgebungen](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink), mit dem sich Kreativschaffende problemlos mit einer anderen [!DNL Experience Manager]-Umgebung verbinden können. Ein Beispiel, bei dem diese Funktion nützlich ist, sind Agentur-Designer, die mit mehreren Kunden arbeiten und verschiedene [!DNL Experience Manager Assets]-Bereitstellungen verwenden.
 
 * Die Benutzer können [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) konfigurieren, um automatisch in der Benutzeroberfläche des Ordners [!UICONTROL Eigenschaften] der jeweiligen Ordnerhierarchien zu starten.
    * Die Benutzeroberfläche des Ordners [!UICONTROL Eigenschaften] wurde vereinfacht. Die neue Registerkarte [!UICONTROL Asset-Verarbeitung] enthält das Metadaten-Profil, das Verarbeitungsprofil und die neue Workflow-Konfiguration für den automatischen Start.
 
-      ![Die Verarbeitungsprofile können problemlos auf Ordner angewendet werden. Damit werden alle in die Ordner hochgeladenen Assets mit diesen Profilen verarbeitet.](/help/assets/assets/asset-processing-folder-properties.png)
+     ![Die Verarbeitungsprofile können problemlos auf Ordner angewendet werden. Damit werden alle in die Ordner hochgeladenen Assets mit diesen Profilen verarbeitet.](/help/assets/assets/asset-processing-folder-properties.png)
 
    * Mit der Option zur erneuten Verarbeitung von Assets können Sie ein bestimmtes Verarbeitungsprofil auswählen, um vom Benutzer ausgewählte Assets in den Unterordnern erneut zu verarbeiten.
 
-      ![Ausgewählte Assets mit einem bestimmten Verarbeitungsprofil erneut verarbeiten](/help/assets/assets/fpo-existing-asset-reprocess.gif)
+     ![Ausgewählte Assets mit einem bestimmten Verarbeitungsprofil erneut verarbeiten](/help/assets/assets/fpo-existing-asset-reprocess.gif)
 
    * [!DNL Dynamic Media]: Es wurde eine selektive Veröffentlichungskonfiguration hinzugefügt, sodass Assets automatisch nur zur sicheren Vorschau veröffentlicht werden. Außerdem können die Assets explizit in Experience Manager veröffentlicht werden, ohne dass sie in DMS7 zur öffentlich zugänglichen Bereitstellung veröffentlicht werden müssen.
 
@@ -51,7 +51,6 @@ Erfahren Sie mehr über neue Funktionen, Verbesserungen und Fehlerkorrekturen f�
 >* [Konfigurieren von Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html?lang=de)
 >* [Konfigurieren von Experience Manager für die Verwendung mit Asset Link](https://helpx.adobe.com/de/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [Erstellen von Workflows in Experience Manager unter Verwendung von Asset-Microservices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=de#post-processing-workflows)
-
 
 ## Neue Funktionen in Cloud Manager {#whats-new-cloud-manager}
 
