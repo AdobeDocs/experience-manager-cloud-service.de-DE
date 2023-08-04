@@ -1,11 +1,11 @@
 ---
 title: Erstellen von Produkterlebnissen
-description: Erfahren Sie, wie Sie Produkterlebnisse erstellen.
+description: Erfahren Sie, wie Sie Produktinhalte erstellen, die dann in verschiedenen Kanälen verwendet werden können, um ein interaktives Einkaufserlebnis zu schaffen.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 412e206a66de470e2798aafc58bcac93dc7e3cad
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 98%
+source-wordcount: '1168'
+ht-degree: 96%
 
 ---
 

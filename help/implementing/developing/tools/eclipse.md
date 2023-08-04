@@ -1,10 +1,10 @@
 ---
 title: AEM Developer Tools for Eclipse
-description: AEM Developer Tools for Eclipse
+description: Erfahren Sie, wie Sie die AEM Developer Tools für Eclipse verwenden, ein Eclipse-Plug-in, das auf dem Eclipse-Plug-in für Apache Sling basiert.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1199'
 ht-degree: 94%
 
 ---
@@ -56,7 +56,7 @@ Sobald die oben genannten [Voraussetzungen](#requirements) erfüllt sind, könne
 1. Klicken Sie auf **Weiter**.
 1. Klicken Sie im Fenster **Installationsdetails** erneut auf **Weiter**.
 1. Akzeptieren Sie die Lizenzvereinbarungen und klicken Sie auf **Beenden**.
-1. Klicken **Neu startenNow** um Eclipse neu zu starten.
+1. Klicks **Neu startenNow** um Eclipse neu zu starten.
 
 ## Die AEM-Perspektive {#the-aem-perspective}
 
@@ -116,7 +116,7 @@ Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
    >[!NOTE]
    >
-   >Bei einer Neuinstallation (genauer gesagt: wenn die Abhängigkeiten von Maven noch nie heruntergeladen wurden) wird das Projekt möglicherweise mit Fehlern erstellt. Gehen Sie in diesem Fall wie folgt vor: [Beheben einer ungültigen Projektdefinition](#resolving-invalid-project-definition).
+   >Bei einer Neuinstallation (genauer gesagt: wenn die Abhängigkeiten von Maven noch nie heruntergeladen wurden) wird das Projekt möglicherweise mit Fehlern erstellt. Folgen Sie in diesem Fall den Anweisungen unter [Beheben einer ungültigen Projektdefinition](#resolving-invalid-project-definition).
 
 ## Importieren vorhandener Projekte {#how-to-import-existing-projects}
 
@@ -216,7 +216,7 @@ Eclipse lädt die erforderlichen Abhängigkeiten herunter. Das kann einen Moment
 
 Die offizielle Website „Apache Sling IDE tooling for Eclipse“ bietet Ihnen nützliche Informationen:
 
-* Das Benutzerhandbuch](https://sling.apache.org/documentation/development/ide-tooling.html) zu [**Apache Sling IDE-Tooling für Eclipse**, diese Dokumentation führt Sie durch die allgemeinen Konzepte, die Server-Integration und die von den AEM-Entwicklungs-Tools unterstützten Implementierungsfunktionen.
+* Das Benutzerhandbuch](https://sling.apache.org/documentation/development/ide-tooling.html) zu [**Apache Sling IDE-Tooling für Eclipse** führt Sie durch die allgemeinen Konzepte, Server-Integrationen und Bereitstellungsfunktionen, die von AEM Developer Tools unterstützt werden.
 * Der [Abschnitt zur Fehlerbehebung](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * Die [Liste der bekannten Probleme](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 

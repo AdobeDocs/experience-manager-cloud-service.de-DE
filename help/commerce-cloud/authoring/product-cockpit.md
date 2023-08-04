@@ -1,11 +1,11 @@
 ---
 title: Produkt-Cockpit
-description: Arbeiten mit dem Produkt-Cockpit
+description: Erfahren Sie, wie Sie mit dem Produkt-Cockpit arbeiten, das eine einheitliche Übersicht über verknüpfte Produktkataloge und zugehörige Inhalte bietet.
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 73%
+source-wordcount: '448'
+ht-degree: 70%
 
 ---
 
@@ -63,7 +63,7 @@ Eine Volltextsuche über den gesamten Produktkatalog wird auf der linken Filter-
 
 ## Durchsuchen des gestaffelten Produktkatalogs {#staged-product-catalogs}
 
-Standardmäßig zeigt das Produkt-Cockpit Live-Produktkatalogdaten an. Mithilfe des &quot;STAGED CATALOG&quot;-Tabs auf der linken Filter-Registerkarte wird der Produktkatalog für jedes ausgewählte Datum geladen.
+Standardmäßig zeigt das Produkt-Cockpit Live-Produktkatalogdaten an. Mithilfe des &quot;STAGED CATALOG&quot;auf der Registerkarte mit dem linken Filter wird der Produktkatalog für ein beliebiges Datum geladen.
 
 ![gestaffelter Katalog](../assets/staged-cockpit.png)
 

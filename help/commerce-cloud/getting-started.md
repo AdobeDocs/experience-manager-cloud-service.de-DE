@@ -1,6 +1,6 @@
 ---
 title: Erste Schritte mit AEM Commerce as a Cloud Service
-description: Erfahren Sie, wie Sie ein für Commerce aktiviertes AEM-Projekt in einer laufenden AEM as a Cloud Service -Umgebung bereitstellen. Verwenden Sie Funktionen von Adobe Cloud Manager und eine CI/CD-Pipeline, damit Sie die Venia-Referenz-Storefront in einer laufenden Umgebung erstellen können.
+description: Erfahren Sie, wie Sie mithilfe von Adobe Cloud Manager, einer CI/CD-Pipeline und der Venia-Referenz-Storefront ein AEM Commerce-Projekt bereitstellen.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
 version: Cloud Service
@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 45%
+source-wordcount: '1098'
+ht-degree: 44%
 
 ---
 
@@ -69,7 +69,7 @@ Gehen Sie wie folgt vor, um über die Adobe I/O-CLI AEM mit einer Commerce-Lösu
 
 1. Adobe I/O CLI mit dem Cloud Manager-Plug-in abrufen
 
-   Überprüfen Sie die [Dokumentation zu Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=de) Informationen zum Herunterladen, Einrichten und Verwenden des [Adobe I/O CLI](https://github.com/adobe/aio-cli) mit dem [Cloud Manager-CLI-Plug-in](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   Überprüfen Sie die [Dokumentation zu Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=de) Informationen zum Herunterladen, Einrichten und Verwenden des [ADOBE I/O CLI](https://github.com/adobe/aio-cli) mit dem [Cloud Manager-CLI-Plug-in](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
 2. Adobe I/O CLI mit dem AEM as a Cloud Service-Programm authentifizieren
 
@@ -117,7 +117,7 @@ Diese Konfiguration kann mithilfe der CIF-Cloud Service-Konfiguration wie folgt 
 
 Die folgenden Eigenschaften können konfiguriert werden:
 
-- GraphQL-Client – Wählen Sie den konfigurierten GraphQL-Client für die Commerce-Backend-Kommunikation aus. Dieser Client sollte in der Regel standardmäßig beibehalten werden.
+- GraphQL-Client – Wählen Sie den konfigurierten GraphQL-Client für die Commerce-Backend-Kommunikation aus. Dieser Client sollte normalerweise standardmäßig beibehalten werden.
 - Shop-Ansicht – die Kennung der Shop-Ansicht. Wenn leer, wird die standardmäßige Store-Ansicht verwendet.
 - GraphQL-Proxy-Pfad – der URL-Pfad des GraphQL-Proxy in AEM, der als Proxy für Anfragen an den Commerce-Backend-GraphQL-Endpunkt verwendet wird.
   >[!NOTE]
@@ -126,7 +126,7 @@ Die folgenden Eigenschaften können konfiguriert werden:
 - Unterstützung der Catalog-UID aktivieren – aktiviert die Unterstützung für UID anstelle von ID in den Commerce-Backend-GraphQL-Aufrufen.
   >[!NOTE]
   >
-  > Unterstützung für UIDs wurde in Adobe Commerce 2.4.2 eingeführt. Aktivieren Sie UIDs nur dann, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
+  > Unterstützung für UIDs wurde in Adobe Commerce 2.4.2 eingeführt. Aktivieren Sie UIDs nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
 - Kennung der Stammkategorie des Katalogs – die Kennung (UID oder ID) des Stammverzeichnisses des Shops
   >[!CAUTION]
   >
@@ -141,5 +141,5 @@ Für komplexere Setups finden Sie unter Verwendung mehrerer AEM Site-Strukturen 
 - [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
 - [Multi-Store-Einrichtung in Commerce](configuring/multi-store-setup.md)
-- [Mehrere Commerce-Systemkonfigurationen](configuring/multiple-commerce-systems-setup.md)
+- [Mehrere Commerce-Systeme](configuring/multiple-commerce-systems-setup.md)
 
