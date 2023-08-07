@@ -3,10 +3,10 @@ title: AEM-Versionsaktualisierungen
 description: Erfahren Sie, wie AEM as a Cloud Service fortlaufende Integration und Bereitstellung (CI/CD) verwendet, um Ihre Projekte auf dem neuesten Stand zu halten.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: dd567c484d71e25de1808f784c455cfb9b124fbf
+source-git-commit: 635b4adeab8d93b7c7335453b04d8b78ef3a0496
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 35%
+source-wordcount: '800'
+ht-degree: 29%
 
 ---
 
@@ -58,6 +58,37 @@ Wenn eine automatische Aktualisierung einer Entwicklungsumgebung fehlschlägt, w
 >[!NOTE]
 >
 >Wenn benutzerdefinierter Code in die Staging-Umgebung gepusht und nicht in die Produktionsumgebung übernommen wurde, werden die Änderungen bei der nächsten AEM-Aktualisierung entfernt, um das git-Tag der letzten erfolgreichen Kundenfreigabe in die Produktion widerzuspiegeln. Daher muss der benutzerdefinierte Code, der nur in der Staging-Umgebung verfügbar war, erneut bereitgestellt werden.
+
+## Best Practices {#best-practices}
+
+* 
+   * **Nutzung der Staging-Umgebung**
+   * Verwenden Sie für lange QA-/UAT-Zyklen eine andere Umgebung (nicht Staging).
+   * Nachdem die Integritätstests auf der Bühne abgeschlossen sind, fahren Sie zur Überprüfung in der Produktion fort.
+
+* 
+   * **Produktions-Pipeline**
+   * Vor Implementierung in Produktion pausieren.
+   * Wenn die Pipeline nach einer Staging-Bereitstellung abgebrochen wird, bedeutet dies, dass der Code ein &quot;Durchlauf&quot;und kein gültiger Kandidat für die Produktion ist, siehe [Konfigurieren einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+
+* 
+   * **Produktionsfremde Pipeline**
+* Konfigurieren [Produktionsfremde Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+* 
+   * Beschleunigen Sie die Geschwindigkeit und Häufigkeit der Bereitstellung bei Fehlern in der Produktions-Pipeline.  Ermitteln Sie Probleme in Pipelines ohne Produktanzeigen, indem Sie Funktionstests für das Produkt, benutzerdefinierte Funktionstests und benutzerdefinierte UI-Tests aktivieren.
+
+* 
+   * **Inhaltskopie**
+   * Verwendung [Inhaltskopie](/help/implementing/developing/tools/content-copy.md) , um ähnliche Inhaltssätze in eine Umgebung ohne Produktionsumgebung zu verschieben.
+
+* 
+   * **Automatisierte Funktionstests**
+* Schließen Sie automatisierte Tests in Ihre Pipeline ein, um wichtige Funktionen zu testen.
+* [Kundenfunktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) und [Testen der benutzerdefinierten Benutzeroberfläche](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) blockieren, wenn sie fehlschlagen, wird AEM Veröffentlichung nicht durchgeführt.
+
+## Regression {#regression}
+
+Wenn Sie auf ein Regressionsproblem stoßen, wenden Sie sich bitte über die Admin Console an einen Support-Fall.  Wenn das Problem ein Blocker ist und sich auf die Produktion auswirkt, sollte ein P1-Fehler angezeigt werden.  Geben Sie alle Details an, die zum Reproduzieren des Regressionsproblems erforderlich sind.
 
 ## Zusammengesetzter Knotenspeicher {#composite-node-store}
 
