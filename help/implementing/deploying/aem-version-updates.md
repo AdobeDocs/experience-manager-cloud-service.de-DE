@@ -3,10 +3,10 @@ title: AEM-Versionsaktualisierungen
 description: Erfahren Sie, wie AEM as a Cloud Service fortlaufende Integration und Bereitstellung (CI/CD) verwendet, um Ihre Projekte auf dem neuesten Stand zu halten.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: dd567c484d71e25de1808f784c455cfb9b124fbf
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 71%
+source-wordcount: '622'
+ht-degree: 35%
 
 ---
 
@@ -17,9 +17,16 @@ Erfahren Sie, wie AEM as a Cloud Service fortlaufende Integration und Bereitstel
 
 ## CI/CD {#ci-cd}
 
-AEM as a Cloud Service verwendet die kontinuierliche Integration und Bereitstellung (Continuous Integration und Continuous Delivery, CI/CD), um sicherzustellen, dass Ihre Projekte auf der aktuellen AEM-Version basieren. Dies bedeutet, dass Produktions- und Staging-Instanzen ohne Unterbrechung des Services für Benutzende auf die aktuelle AEM-Version aktualisiert werden.
+AEM as a Cloud Service verwendet die kontinuierliche Integration und Bereitstellung (Continuous Integration und Continuous Delivery, CI/CD), um sicherzustellen, dass Ihre Projekte auf der aktuellen AEM-Version basieren. Dieser Prozess aktualisiert Ihre Produktions-, Staging- und Entwicklungsinstanzen nahtlos, ohne dass Ihre Benutzer beeinträchtigt werden.
 
-Versionsaktualisierungen werden nur automatisch auf Produktions- und Staging-Instanzen angewendet. [AEM Aktualisierungen müssen manuell auf alle anderen Instanzen angewendet werden](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).
+Bevor Ihre Instanzen automatisch aktualisiert werden, werden 3-5 Tage im Voraus neue AEM veröffentlicht. Während dieses Zeitraums haben Sie die Möglichkeit,
+[Manuelle Aktualisierungen von Trigger für Ihre Entwicklungsinstanzen](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).
+Nach diesem Zeitpunkt werden Versionsaktualisierungen automatisch zuerst auf Ihre Entwicklungsumgebungen angewendet. Wenn die Aktualisierung erfolgreich ist, wird der Aktualisierungsprozess zu Ihren Staging- und Produktionsinstanzen fortgesetzt. Die Entwicklungs- und Staging-Instanzen fungieren als automatisiertes Qualitäts-Gate, bei dem Ihre benutzerdefinierten Tests ausgeführt werden, bevor die Aktualisierung auf Ihre Produktionsumgebung angewendet wird.
+
+>[!NOTE]
+>
+> Hinweis: Die automatischen Aktualisierungen für Entwicklungsumgebungen werden 2023 schrittweise für alle Kunden aktiviert. Wenn Ihre Entwicklungsumgebungen nicht automatisch aktualisiert werden, können Sie manuelle Aktualisierungen verwenden, um sie mit Ihren Staging- und Produktionsumgebungen synchron zu halten.
+
 
 ## Aktualisierungstypen {#update-types}
 
@@ -37,11 +44,16 @@ Es gibt zwei Arten von AEM-Versionsaktualisierungen:
 
 ## Aktualisierungsfehler {#update-failure}
 
-AEM-Aktualisierungen durchlaufen eine intensive und vollautomatisierte Produktvalidierungs-Pipeline, die mehrere Schritte umfasst, um sicherzustellen, dass keine Unterbrechung des Services für in Produktion befindliche Systeme auftritt. Konsistenzprüfungen erlauben eine Überwachung des Zustands der Anwendung. Wenn diese Prüfungen bei einer AEM as a Cloud Service-Aktualisierung fehlschlagen, wird die Freigabe nicht fortgesetzt. Adobe untersucht dann, warum die Aktualisierung dieses unerwartete Verhalten verursacht hat.
+AEM-Aktualisierungen durchlaufen eine intensive und vollautomatisierte Produktvalidierungs-Pipeline, die mehrere Schritte umfasst, um sicherzustellen, dass keine Unterbrechung des Services für in Produktion befindliche Systeme auftritt.
+Konsistenzprüfungen erlauben eine Überwachung des Zustands der Anwendung.
+Wenn diese Prüfungen bei einer AEM as a Cloud Service Aktualisierung fehlschlagen, wird die Veröffentlichung nicht fortgesetzt und die Adobe untersucht, warum die Aktualisierung dieses unerwartete Verhalten verursacht hat.
 
-[Produkttests und Kundenfunktionstests](/help/implementing/cloud-manager/overview-test-results.md#functional-testing), die verhindern, dass Produktaktualisierungen und Kunden-Codepushes die Produktion unterbrechen, werden ebenfalls während einer AEM-Versionsaktualisierung validiert.
+Wenn Sie eine neue Version eines benutzerdefinierten Codes von in Ihren Umgebungen bereitstellen,
+[Produkt- und benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/overview-test-results.md#functional-testing)
+eine entscheidende Rolle dabei zu spielen, dass die Produktionssysteme auch nach einer Änderung stabil und funktionsfähig bleiben. Diese Tests werden auch beim Aktualisierungsprozess der AEM-Version genutzt.
 
-Wenn die Aktualisierung der Produktionsumgebung fehlschlägt, setzt Cloud Manager sie automatisch auf die Staging-Umgebung zurück. Dies erfolgt automatisch, um sicherzustellen, dass nach Abschluss einer Aktualisierung die Staging- und Produktionsumgebung beide auf derselben AEM-Version basieren.
+Wenn die Aktualisierung der Produktionsumgebung fehlschlägt, setzt Cloud Manager sie automatisch auf die Staging-Umgebung zurück. Dies geschieht automatisch, um sicherzustellen, dass nach Abschluss der Aktualisierung die Staging- und Produktionsumgebungen dieselbe AEM Version aufweisen.
+Wenn eine automatische Aktualisierung einer Entwicklungsumgebung fehlschlägt, werden Staging- und Produktionsumgebungen ebenfalls nicht aktualisiert.
 
 >[!NOTE]
 >
@@ -51,6 +63,6 @@ Wenn die Aktualisierung der Produktionsumgebung fehlschlägt, setzt Cloud Manage
 
 In den meisten Fällen verursachen Aktualisierungen keine Ausfallzeiten, auch nicht für die Autoreninstanz, bei der es sich um einen Cluster von Knoten handelt. Rollierende Aktualisierungen sind aufgrund [der Composite Node Store-Funktion in Oak möglich. ](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-Mithilfe dieser Funktion kann AEM auf mehrere Repositorys gleichzeitig verweisen. In [rollierende Bereitstellung,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) Die neue AEM enthält eine eigene `/libs` (das auf TarMK basierende, unveränderliche Repository), unterscheidet sich von der älteren AEM, obwohl beide auf ein freigegebenes, auf DocumentMK basierendes veränderliches Repository verweisen, das Bereiche wie `/content` , `/conf` , `/etc` und andere.
+Mithilfe dieser Funktion kann AEM auf mehrere Repositorys gleichzeitig verweisen. In [kontinuierliche Bereitstellung,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) Die neue AEM enthält eine eigene `/libs` (das auf TarMK basierende, unveränderliche Repository), unterscheidet sich von der älteren AEM, obwohl beide auf ein gemeinsames, auf DocumentMK basierendes veränderliches Repository verweisen, das Bereiche wie `/content` , `/conf` , `/etc` und andere.
 
 Da sowohl die alte als auch die neue Version über eigene Versionen von verfügen, `/libs`können sie beide während der rollierenden Aktualisierung aktiv sein und beide können Traffic aufnehmen, bis das alte vollständig durch das neue ersetzt wurde.
