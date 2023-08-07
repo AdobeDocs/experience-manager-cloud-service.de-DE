@@ -4,9 +4,9 @@ description: Mithilfe von Designs können Sie ein adaptives Formular formatieren
 seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
 keywords: Neues Design erstellen, Design anpassen, neues Design hochladen, Design in Formularen verwenden, Design mithilfe der Frontend-Pipeline anpassen
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 1cec6e01e72cb286949f64749e2386a2b652920e
+source-git-commit: fc0ff8cff8c616bc5576d834883aa0fe38ef593e
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2711'
 ht-degree: 16%
 
 ---
@@ -160,7 +160,7 @@ Sie können einzelne Komponenten anpassen oder Änderungen auf Designebene mithi
 Die `variable.scss` -Datei enthält die globalen Variablen des Designs. Durch Aktualisierung dieser Variablen können Sie stilistisch relevante Änderungen auf der Designebene vornehmen. Gehen Sie wie folgt vor, um Stile auf Designebene anzuwenden:
 
 1. Öffnen Sie die Datei `<your-theme-sources>/src/site/_variables.scss`, um sie zu bearbeiten.
-1. Ändern Sie den Wert einer beliebigen Eigenschaft. Die standardmäßige Fehlerfarbe lautet beispielsweise `red`. So ändern Sie die Fehlerfarbe von `red` nach `blue`ändern Sie den Farb-Hex-Code des `$errorvariable`. Beispiel: `$error: #196ee5`.
+1. Ändern Sie den Wert einer beliebigen Eigenschaft. Die standardmäßige Fehlerfarbe lautet beispielsweise `red`. So ändern Sie die Fehlerfarbe von `red` nach `blue`ändern Sie den Farb-Hex-Code des `$errorvariable`. Zum Beispiel: `$error: #196ee5`.
 1. Speichern und schließen Sie die Datei.
 
    ![Bearbeiten eines Designs](/help/forms/assets/edit_theme.png)
@@ -417,6 +417,7 @@ Wenn Sie Informationen wie ein Logo, einen Firmennamen in der Kopfzeile und Copy
 * [Festlegen des Layouts von Formularen für verschiedene Bildschirmgrößen und Gerätetypen](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [Generieren des Datensatzdokuments für adaptive Forms (Kernkomponenten)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Erstellen einer adaptiven Forms mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
+* [Vorlagen für Musterdesigns und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
 ## Verwandter Artikel {#related-article}
