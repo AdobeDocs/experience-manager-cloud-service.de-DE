@@ -2,14 +2,19 @@
 title: Integrierte [!DNL AEM Forms] as a Cloud Service-Gruppen
 description: Liste der vorkonfigurierten Benutzergruppen und der jeder Gruppe zugewiesenen Berechtigungen
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 78%
+source-wordcount: '175'
+ht-degree: 83%
 
 ---
 
 # Gruppen und Berechtigungen {#aem-forms-on-osgi-groups-and-privileges}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=de) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 Sie können [Gruppen erstellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=de#accessing) und ihnen dann Richtlinien und [Benutzer](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=de#accessing) zuweisen. Diese Richtlinien steuern die Berechtigungen der Benutzer, die zu der jeweiligen Gruppe gehören.
 
@@ -103,7 +108,7 @@ Nachdem Sie [!DNL AEM Forms] as a Cloud Service eingerichtet haben, stehen die i
 
 ## Siehe auch
 
-* [In einer Cloud Service-Umgebung einbinden](/help/forms/setup-forms-cloud-service.md)
+* [In einer Cloud Service-Umgebung integriert](/help/forms/setup-forms-cloud-service.md)
 * [Einrichten einer lokalen Entwicklungsumgebung](/help/forms/setup-local-development-environment.md)
 * [Migration von AEM 6.5 Forms zu Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [Erstellen eines eigenständigen adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)

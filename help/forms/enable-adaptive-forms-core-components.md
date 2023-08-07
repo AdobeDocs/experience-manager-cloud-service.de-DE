@@ -6,15 +6,20 @@ seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
+source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 11%
+source-wordcount: '1043'
+ht-degree: 12%
 
 ---
 
 
 # Aktivieren der adaptiven Forms-Kernkomponenten in der as a Cloud Service und lokalen Entwicklungsumgebung von AEM Forms {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 Durch die Aktivierung der Kernkomponenten für adaptive Formulare in AEM Forms as a Cloud Service können Sie mit der Erstellung, Veröffentlichung und Bereitstellung von auf Kernkomponenten basierenden adaptiven Formularen und Headless-Formularen beginnen, und zwar für mehrere Kanäle mithilfe der Instanzen von AEM Forms as a Cloud Service. Sie benötigen eine Umgebung mit aktivierten adaptiven Forms-Kernkomponenten, um Headless Adaptive Forms zu verwenden.
 
@@ -22,7 +27,7 @@ Durch die Aktivierung der Kernkomponenten für adaptive Formulare in AEM Forms a
 
 * Wenn Sie ein neues as a Cloud Service AEM Forms-Programm erstellen, [Adaptive Forms-Kernkomponenten und Headless-Adaptive Forms sind bereits für Ihre Umgebung aktiviert](#are-adaptive-forms-core-components-enabled-for-my-environment).
 
-* Wenn Sie über ein älteres as a Cloud Service Forms-Programm verfügen, in dem Kernkomponenten [nicht aktiviert](#enable-components)können Sie [Adaptive Forms-Kernkomponenten-Abhängigkeiten hinzufügen](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) in Ihr AEM as a Cloud Service Repository kopieren und das Repository in Ihren Cloud Service-Umgebungen bereitstellen, um Headless Adaptive Forms zu aktivieren.
+* Wenn Sie über ein älteres as a Cloud Service Forms-Programm verfügen, in dem Kernkomponenten [nicht aktiviert](#enable-components), können Sie [Adaptive Forms-Kernkomponenten-Abhängigkeiten hinzufügen](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) in Ihr AEM as a Cloud Service Repository kopieren und das Repository in Ihren Cloud Service-Umgebungen bereitstellen, um Headless Adaptive Forms zu aktivieren.
 
 * Wenn Ihre bestehende Cloud Service-Umgebung eine Option bietet, [Erstellen von auf Kernkomponenten basierenden adaptiven Forms](creating-adaptive-form-core-components.md), Adaptive Forms-Kernkomponenten und Headless-Adaptive Forms sind bereits für Ihre Umgebung aktiviert. Sie können auf Kernkomponenten basierende adaptive Forms als Headless-Formulare für Kanäle wie mobile, Web, native Apps und Dienste bereitstellen, für die eine Headless-Darstellung des adaptiven Forms erforderlich ist.
 
@@ -44,7 +49,7 @@ Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um die ad
    * URL zum Cloud Manager-Git-Repository.
    * Anmeldeinformationen des Git-Repositorys (Benutzername und Kennwort) Git-Benutzernamen.
 
-   Klicken **Kennwort generieren** , um das Kennwort anzuzeigen oder zu generieren.
+   Klicks **Kennwort generieren** , um das Kennwort anzuzeigen oder zu generieren.
 
 1. Öffnen Sie das Terminal oder die Eingabeaufforderung auf Ihrem lokalen Computer und führen Sie den folgenden Befehl aus:
 
@@ -336,7 +341,7 @@ Wenn die adaptiven Forms-Kernkomponenten für Ihre Umgebung aktiviert sind, werd
 
 So prüfen Sie, ob die Kernkomponenten der adaptiven Forms für Ihre Umgebung aktiviert sind:
 
-1. [as a Cloud Service AEM Forms-Repository klonen](#1-clone-your-aem-forms-as-a-cloud-service-git-repository).
+1. [As a Cloud Service AEM Forms-Repository klonen](#1-clone-your-aem-forms-as-a-cloud-service-git-repository).
 
 1. Öffnen Sie die `[AEM Repository Folder]/all/pom.xml` -Datei Ihres AEM Forms Cloud Service-Git-Repositorys.
 
