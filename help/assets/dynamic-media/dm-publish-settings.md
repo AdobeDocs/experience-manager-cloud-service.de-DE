@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Imageserver
-description: Erfahren Sie, wie Sie Publishing in Dynamic Media einrichten.
+description: Erfahren Sie, wie Sie die Dynamic Media-Veröffentlichungseinstellungen für Image-Server konfigurieren und dabei unter anderem Farbmanagement, Sicherheit und Miniaturansichten behandeln.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -9,10 +9,10 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '3481'
-ht-degree: 99%
+source-wordcount: '3493'
+ht-degree: 98%
 
 ---
 
@@ -139,7 +139,7 @@ Siehe auch [IccRenderIntent-Parameter](https://experienceleague.adobe.com/docs/d
 | **[!UICONTROL CMYK-Standardfarbraum]** | Gibt den Namen des ICC-Farbprofils an, das als Arbeitsprofil für CMYK-Daten verwendet werden soll. Wenn **[!UICONTROL Keine Angabe]** ausgewählt ist, wird das Farbmanagement für diesen Bildkatalog deaktiviert, wenn CMYK-Quellbilder verwendet werden. Alle CMYK-Arbeitsbereiche sind geräteabhängig, sie basieren also auf tatsächlichen Tinten- und Papierkombinationen. Die von Adobe bereitgestellten CMYK-Arbeitsbereiche basieren auf den üblichen kommerziellen Druckbedingungen.<br> Siehe auch [IccProfileCMYK-Parameter](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=de) im Dynamic Media Viewer-Referenzhandbuch. |
 | **[!UICONTROL Graustufen-Standardfarbraum]** | Gibt den Namen des ICC-Farbprofils an, das als Arbeitsprofil für Graustufendaten verwendet werden soll. Wenn **[!UICONTROL Keine Angabe]** ausgewählt ist, wird das Farbmanagement für diesen Bildkatalog deaktiviert, wenn Quellbilder mit Graustufen verwendet werden.<br>Siehe auch [IccProfileGray-Parameter](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=de) im Dynamic Media Viewer-Referenzhandbuch. |
 | **[!UICONTROL RGB-Standardfarbraum]** | Gibt den Namen des ICC-Farbprofils an, das als Arbeitsprofil für RGB-Daten verwendet werden soll. Wenn **[!UICONTROL Keine Angabe]** ausgewählt ist, wird das Farbmanagement für diesen Bildkatalog deaktiviert, wenn RGB-Quellbilder verwendet werden. Im Allgemeinen ist es am besten, **[!UICONTROL Adobe RGB]** oder **[!UICONTROL sRGB]** statt des Profils für ein bestimmtes Gerät (z. B. ein Monitorprofil) auszuwählen. **[!UICONTROL sRGB]** wird empfohlen, wenn Sie Bilder für das Internet oder mobile Geräte vorbereiten, da dadurch der Farbraum des Standardmonitors definiert wird, der zum Anzeigen von Bildern im Internet verwendet wird. **[!UICONTROL sRGB]** ist auch eine gute Wahl, wenn Sie mit Bildern von handelsüblichen Digitalkameras arbeiten, da die meisten dieser Kameras sRGB als Standardfarbraum verwenden.<br>Siehe auch [IccProfileRGB-Parameter](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=de) im Dynamic Media Viewer-Referenzhandbuch. |
-| **[!UICONTROL Rendering-Intent für Farbkonvertierung]** | **[!UICONTROL Perzeptiv]** – Ziel ist es, die visuelle Beziehung zwischen Farben so zu erhalten, dass sie für das menschliche Auge als natürlich wahrgenommen werden, auch wenn sich die Farbwerte selbst ändern können. Dieser Intent eignet sich für fotografische Bilder mit vielen Farben, die außerhalb der Farbskala liegen. Diese Einstellung ist der standardmäßige Rendering-Intent für die japanische Druckindustrie. |
+| **[!UICONTROL Rendering-Intent für Farbkonvertierung]** | **[!UICONTROL Wahrnehmungsoptimiert]**: Ziel ist es, die visuelle Beziehung zwischen Farben so zu erhalten, dass sie für das menschliche Auge als natürlich wahrgenommen werden, auch wenn sich die Farbwerte selbst ändern können. Dieser Intent eignet sich für fotografische Bilder mit vielen Farben, die außerhalb der Farbskala liegen. Diese Einstellung ist der standardmäßige Rendering-Intent für die japanische Druckindustrie. |
 |  | **[!UICONTROL Relativ farbmetrisch]** – Vergleicht die extreme Hervorhebung des Quellfarbraums mit der des Zielfarbraums und verschiebt alle Farben entsprechend. Die Farben außerhalb der Farbskala werden zur nächstmöglichen reproduzierbaren Farbe im Zielfarbraum verschoben. Mit „Relativ farbmetrisch“ erhalten Sie mehr Originalfarben in einem Bild als mit „Wahrnehmungsoptimiert“. Diese Einstellung ist der standardmäßige Rendering-Intent beim Drucken in Nordamerika und Europa. |
 |  | **[!UICONTROL Sättigung]** – Versucht, auf Kosten der Farbgenauigkeit lebendige Farben in einem Bild zu produzieren. Dieser Rendering-Intent eignet sich für Geschäftsgrafiken wie Diagrammen, bei denen helle gesättigte Farben wichtiger sind als die exakte Beziehung zwischen Farben. |
 |  | **[!UICONTROL Absolut farbmetrisch]**: Lässt Farben, die sich im Zielfarbraum befinden, unverändert. Farben außerhalb des Farbraums werden abgeschnitten. Es wird keine Skalierung der Farben auf den Ziel-Weißpunkt durchgeführt. Diese Absicht dient der Einhaltung der Farbgenauigkeit auf Kosten der Beibehaltung von Beziehungen zwischen Farben und ist für Korrekturabzüge geeignet, die die Ausgabe eines bestimmten Geräts simulieren. Dieser Zweck ist nützlich für die Vorschau, wie die Papierfarbe sich auf die gedruckten Farben auswirkt. |
@@ -166,7 +166,7 @@ Die meisten Unternehmen betreiben ihr Internet hinter einer Firewall. Der Zugang
 
 Über Ihr Unternehmensnetzwerk können Sie mithilfe von Websites wie [https://www.whatismyip.com](https://www.whatismyip.com/de/) Ihre IP-Adresse in Erfahrung bringen oder Sie fordern diese Information einfach von Ihrem IT-Unternehmen an.
 
-Mit Secure Testing richtet Adobe Dynamic Media einen dedizierten Image-Server für Staging-Umgebungen oder interne Programme ein. Mit einer beliebigen Anfrage an diesen Server wird die Ursprung-IP-Adresse geprüft. Wenn die eingehende Anfrage nicht in der Liste genehmigter IP-Adressen enthalten ist, erfolgt die Antwort mit einer Fehlermeldung. Der für die Administration von Adobe Dynamic Media verantwortliche Unternehmensperson konfiguriert die Liste genehmigter IP-Adressen für die Secure Testing-Umgebung ihres Unternehmens.
+Mit Secure Testing richtet Adobe Dynamic Media einen dedizierten Image-Server für Staging-Umgebungen oder interne Programme ein. Mit einer beliebigen Anfrage an diesen Server wird die Ursprung-IP-Adresse geprüft. Wenn die eingehende Anfrage nicht in der Liste genehmigter IP-Adressen enthalten ist, erfolgt die Antwort mit einer Fehlermeldung. Firmenadmins, die für Adobe Dynamic Media zuständig sind, konfigurieren die Liste der genehmigten IP-Adressen für die Secure Testing-Umgebung der Firma.
 
 Da der Ort der ursprünglichen Anfrage bestätigt werden muss, wird der Traffic des Secure Testing-Services nicht über ein Inhaltsverteilungsnetzwerk geleitet, wie der öffentliche Traffic des Dynamic Media Image Servers. Anfragen an den Secure Testing-Service weisen im Vergleich zu den öffentlichen Dynamic Media-Bild-Servern eine etwas höhere Latenz auf.
 

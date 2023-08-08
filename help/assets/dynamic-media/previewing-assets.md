@@ -1,14 +1,14 @@
 ---
-title: Anzeigen einer Vorschau für Assets
-description: Erfahren Sie, wie Sie Assets in Dynamic Media in einer Vorschau anzeigen.
+title: Vorschau von Medienelementen
+description: Erfahren Sie, wie Sie eine Vorschau von Assets in Dynamic Media anzeigen können, damit Sie sehen können, wie sie von einem Kunden in seinem eigenen Webbrowser angezeigt werden.
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 90%
+source-wordcount: '1228'
+ht-degree: 88%
 
 ---
 

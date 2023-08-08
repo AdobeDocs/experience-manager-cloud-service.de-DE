@@ -1,13 +1,13 @@
 ---
 title: Fehlerbehebung bei Dynamic Media
-description: Tipps zur Fehlerbehebung bei der Verwendung von Dynamic Media.
+description: Erfahren Sie mehr über Tipps zur Fehlerbehebung, die Sie beim Arbeiten mit Bildern, Sets und Viewern in Dynamic Media ausprobieren können.
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 78%
+source-wordcount: '1146'
+ht-degree: 77%
 
 ---
 
@@ -117,7 +117,7 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
    <td>
     <ul>
      <li>Vergewissern Sie sich, dass dem Ordner ein Videoprofil zugewiesen ist (sofern dieses Dateiformat nicht unterstützt wird). Wenn dies nicht unterstützt wird, wird nur ein Bild angezeigt.</li>
-     <li>Das Videoprofil muss mehr als eine Kodierungsvorgabe enthalten, um ein AVS-Set zu generieren (einzelne Kodierungen werden als Videoinhalt für MP4-Dateien behandelt). für nicht unterstützte Dateien, die wie nicht verarbeitet behandelt werden).</li>
+     <li>Das Videoprofil muss mehr als eine Kodierungsvorgabe enthalten, um einen AVS-Satz zu generieren (einzelne Kodierungen werden als Videoinhalt für MP4-Dateien behandelt; nicht unterstützte Dateien werden wie nicht verarbeitete Dateien behandelt).</li>
      <li>Überprüfen Sie anhand von <code>dam:scene7FileAvs</code> von <code>dam:scene7File</code> in den Metadaten, ob die Verarbeitung des Videos abgeschlossen wurde.</li>
     </ul> </td>
    <td>
@@ -204,8 +204,7 @@ Gehen Sie in CRXDE Lite wie folgt vor:
    * `"is/content"`
    * `dam:scene7Folder`
    * `<asset-name>`
-Beispiel: 
-`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+Beispiel: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **Lösung**
 
