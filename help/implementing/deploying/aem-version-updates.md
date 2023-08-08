@@ -3,9 +3,9 @@ title: AEM-Versionsaktualisierungen
 description: Erfahren Sie, wie AEM as a Cloud Service fortlaufende Integration und Bereitstellung (CI/CD) verwendet, um Ihre Projekte auf dem neuesten Stand zu halten.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 635b4adeab8d93b7c7335453b04d8b78ef3a0496
+source-git-commit: ca91e969014415e872ecf8e42fe86ffc9ca41e10
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '801'
 ht-degree: 29%
 
 ---
@@ -19,9 +19,7 @@ Erfahren Sie, wie AEM as a Cloud Service fortlaufende Integration und Bereitstel
 
 AEM as a Cloud Service verwendet die kontinuierliche Integration und Bereitstellung (Continuous Integration und Continuous Delivery, CI/CD), um sicherzustellen, dass Ihre Projekte auf der aktuellen AEM-Version basieren. Dieser Prozess aktualisiert Ihre Produktions-, Staging- und Entwicklungsinstanzen nahtlos, ohne dass Ihre Benutzer beeinträchtigt werden.
 
-Bevor Ihre Instanzen automatisch aktualisiert werden, werden 3-5 Tage im Voraus neue AEM veröffentlicht. Während dieses Zeitraums haben Sie die Möglichkeit,
-[Manuelle Aktualisierungen von Trigger für Ihre Entwicklungsinstanzen](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).
-Nach diesem Zeitpunkt werden Versionsaktualisierungen automatisch zuerst auf Ihre Entwicklungsumgebungen angewendet. Wenn die Aktualisierung erfolgreich ist, wird der Aktualisierungsprozess zu Ihren Staging- und Produktionsinstanzen fortgesetzt. Die Entwicklungs- und Staging-Instanzen fungieren als automatisiertes Qualitäts-Gate, bei dem Ihre benutzerdefinierten Tests ausgeführt werden, bevor die Aktualisierung auf Ihre Produktionsumgebung angewendet wird.
+Bevor Ihre Instanzen automatisch aktualisiert werden, werden 3-5 Tage im Voraus neue AEM veröffentlicht. Während dieses Zeitraums haben Sie die Möglichkeit, [Manuelle Aktualisierungen von Trigger für Ihre Entwicklungsinstanzen](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).Nach diesem Zeitpunkt werden Versionsaktualisierungen zuerst automatisch auf Ihre Entwicklungsumgebungen angewendet. Wenn die Aktualisierung erfolgreich ist, wird der Aktualisierungsprozess zu Ihren Staging- und Produktionsinstanzen fortgesetzt. Die Entwicklungs- und Staging-Instanzen fungieren als automatisiertes Qualitäts-Gate, bei dem Ihre benutzerdefinierten Tests ausgeführt werden, bevor die Aktualisierung auf Ihre Produktionsumgebung angewendet wird.
 
 >[!NOTE]
 >
@@ -44,13 +42,9 @@ Es gibt zwei Arten von AEM-Versionsaktualisierungen:
 
 ## Aktualisierungsfehler {#update-failure}
 
-AEM-Aktualisierungen durchlaufen eine intensive und vollautomatisierte Produktvalidierungs-Pipeline, die mehrere Schritte umfasst, um sicherzustellen, dass keine Unterbrechung des Services für in Produktion befindliche Systeme auftritt.
-Konsistenzprüfungen erlauben eine Überwachung des Zustands der Anwendung.
-Wenn diese Prüfungen bei einer AEM as a Cloud Service Aktualisierung fehlschlagen, wird die Veröffentlichung nicht fortgesetzt und die Adobe untersucht, warum die Aktualisierung dieses unerwartete Verhalten verursacht hat.
+AEM-Aktualisierungen durchlaufen eine intensive und vollautomatisierte Produktvalidierungs-Pipeline, die mehrere Schritte umfasst, um sicherzustellen, dass keine Unterbrechung des Services für in Produktion befindliche Systeme auftritt. Konsistenzprüfungen erlauben eine Überwachung des Zustands der Anwendung. Wenn diese Prüfungen bei einer AEM as a Cloud Service Aktualisierung fehlschlagen, wird die Veröffentlichung nicht fortgesetzt und die Adobe untersucht, warum die Aktualisierung dieses unerwartete Verhalten verursacht hat.
 
-Wenn Sie eine neue Version eines benutzerdefinierten Codes von in Ihren Umgebungen bereitstellen,
-[Produkt- und benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/overview-test-results.md#functional-testing)
-eine entscheidende Rolle dabei zu spielen, dass die Produktionssysteme auch nach einer Änderung stabil und funktionsfähig bleiben. Diese Tests werden auch beim Aktualisierungsprozess der AEM-Version genutzt.
+Wenn Sie eine neue Version eines benutzerdefinierten Codes von in Ihren Umgebungen bereitstellen, [Produkt- und benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) eine entscheidende Rolle dabei zu spielen, dass die Produktionssysteme auch nach einer Änderung stabil und funktionsfähig bleiben. Diese Tests werden auch beim Aktualisierungsprozess der AEM-Version genutzt.
 
 Wenn die Aktualisierung der Produktionsumgebung fehlschlägt, setzt Cloud Manager sie automatisch auf die Staging-Umgebung zurück. Dies geschieht automatisch, um sicherzustellen, dass nach Abschluss der Aktualisierung die Staging- und Produktionsumgebungen dieselbe AEM Version aufweisen.
 Wenn eine automatische Aktualisierung einer Entwicklungsumgebung fehlschlägt, werden Staging- und Produktionsumgebungen ebenfalls nicht aktualisiert.
