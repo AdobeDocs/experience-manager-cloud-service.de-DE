@@ -2,7 +2,7 @@
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erfahren Sie mehr über die ersten Schritte mit dem Content Transfer Tool
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 7de874f607c98501052ddb715c4af98f6c5d5324
 workflow-type: tm+mt
 source-wordcount: '1439'
 ht-degree: 83%

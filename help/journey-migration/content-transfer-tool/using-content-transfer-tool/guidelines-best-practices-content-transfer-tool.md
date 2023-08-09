@@ -2,10 +2,10 @@
 title: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
 description: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 91%
+source-wordcount: '1562'
+ht-degree: 90%
 
 ---
 
@@ -65,7 +65,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Um eine Aufnahme zu starten, müssen Sie der lokalen AEM-**Administratoren**-Gruppe in der Cloud Service-Instanz angehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können die Aufnahme nicht starten, ohne das Migrations-Token manuell angeben zu müssen.
 
-* Wenn die Einstellung **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in dem Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **Administratoren** hinzugefügt werden. Der Benutzer muss der **Administratoren** -Gruppe, um das Zugriffstoken für das Content Transfer Tool abzurufen.
+* Wenn die Einstellung **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in dem Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **Administratoren** hinzugefügt werden. Der Benutzer muss erneut zum **Administratoren** -Gruppe, um das Zugriffstoken für das Content Transfer Tool abzurufen.
 
 * Aufnahmen unterstützen nicht das Zusammenführen von Inhalten aus mehreren Quellen in der Zielinstanz von Cloud Service, wenn die Inhalte aus den beiden Quellen in dieselben Pfade auf dem Ziel verschoben werden. Wenn Sie Inhalte aus mehreren Quellen in eine einzige Zielinstanz von Cloud Service verschieben möchten, müssen Sie sicherstellen, dass sich die Inhaltspfade der Quellen nicht überschneiden.
 
@@ -73,11 +73,11 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Das Content Transfer Tool führt keine Inhaltsanalyse durch, bevor Inhalte von der Quellinstanz zur Zielinstanz übertragen werden. Beispielsweise unterscheidet CTT nicht zwischen veröffentlichten und unveröffentlichten Inhalten, wenn Inhalte in eine Veröffentlichungsumgebung aufgenommen werden. Alle Inhalte, die im Migrationssatz angegeben sind, werden in die gewählte Zielinstanz aufgenommen. Der Benutzer kann einen Migrationssatz in eine Autoreninstanz oder eine Veröffentlichungsinstanz oder in beide aufnehmen. Es wird empfohlen, beim Verschieben von Inhalten in eine Produktionsinstanz CTT in der Quellautoreninstanz zu installieren, um Inhalte in die Zielautoreninstanz zu verschieben, und CTT in ähnlicher Weise in der Quell-Veröffentlichungsinstanz zu installieren, um Inhalte in die Ziel-Veröffentlichungsinstanz zu verschieben. Weitere Einzelheiten finden Sie unter [Ausführen des Content Transfer Tools auf einer Veröffentlichungsinstanz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de#running-tool).
 
-* Die vom Content Transfer Tool übertragenen Benutzenden und Gruppen sind nur diejenigen, die vom Inhalt zur Erfüllung der Berechtigungen benötigt werden. Im _Extraktionsprozess_ wird alles unter `/home` in den Migrationssatz kopiert und eine Benutzerzuordnung erstellt, indem ein aus der E-Mail-Adresse jedes Benutzers bzw. jeder Benutzerin generiertes Feld hinzugefügt wird. Weitere Informationen finden Sie unter [Benutzerzuordnung und Prinzipalmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Im _Aufnahmeprozess_ werden alle Benutzenden und Gruppen, auf die in den migrierten Inhalts-ACLs verwiesen wird, kopiert.
+* Die vom Content Transfer Tool übertragenen Benutzenden und Gruppen sind nur diejenigen, die vom Inhalt zur Erfüllung der Berechtigungen benötigt werden. Im _Extraktionsprozess_ wird alles unter `/home` in den Migrationssatz kopiert und eine Benutzerzuordnung erstellt, indem ein aus der E-Mail-Adresse jedes Benutzers bzw. jeder Benutzerin generiertes Feld hinzugefügt wird. Weitere Informationen finden Sie unter [Benutzerzuordnung und Prinzipalmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Im _Aufnahmeprozess_ werden alle Benutzenden und Gruppen, auf die in den migrierten Inhalts-ACLs verwiesen wird, kopiert. Siehe [Migrieren geschlossener Benutzergruppen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) für zusätzliche Überlegungen zu Gruppen, die in einer CUG-Richtlinie (Closed User Group, geschlossene Benutzergruppe) verwendet werden.
 
 * Während der Extraktionsphase wird das Content Transfer Tool in einer aktiven AEM-Quellinstanz ausgeführt.
 
-* Nachdem die *Extraktionsphase* des Inhaltstransfers abgeschlossen und die *Aufnahmephase* zur Aufnahme von Inhalt in Ihre *Staging*- oder *Produktionsinstanzen* von AEM as a Cloud Service begonnen wird, müssen Sie ein Support-Ticket erstellen, um Adobe über Ihre Absicht zu informieren, eine *Aufnahme* auszuführen, damit Adobe sicherstellen kann, dass der *Aufnahmevorgang* nicht unterbrochen wird. Erstellen Sie das Support-Ticket 1 Woche vor dem geplanten *Aufnahmedatum*. Nachdem Sie das Support-Ticket gesendet haben, bietet das Supportteam Anleitungen zu den nächsten Schritten. Erstellen Sie ein Support-Ticket mit den folgenden Details:
+* Nachdem die *Extraktionsphase* des Inhaltstransfers abgeschlossen und die *Aufnahmephase* zur Aufnahme von Inhalt in Ihre *Staging*- oder *Produktionsinstanzen* von AEM as a Cloud Service begonnen wird, müssen Sie ein Support-Ticket erstellen, um Adobe über Ihre Absicht zu informieren, eine *Aufnahme* auszuführen, damit Adobe sicherstellen kann, dass der *Aufnahmevorgang* nicht unterbrochen wird. Erstellen Sie das Support-Ticket 1 Woche vor dem geplanten *Aufnahmedatum*. Nachdem Sie das Support-Ticket gesendet haben, bietet das Supportteam Anleitungen zu den nächsten Schritten an. Erstellen Sie ein Support-Ticket mit den folgenden Details:
 
    * Genaues Datum und geschätzte Uhrzeit (mit Ihrer Zeitzone), zu der Sie die *Aufnahmephase* starten möchten.
    * Umgebungstyp (Phase oder Produktion), in den Sie Daten aufnehmen möchten.

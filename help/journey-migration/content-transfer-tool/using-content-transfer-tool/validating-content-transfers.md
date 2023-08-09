@@ -2,10 +2,10 @@
 title: Validieren von Inhaltsübertragungen
 description: Validieren von Inhaltsübertragungen mithilfe des Content Transfer Tool
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 69%
+source-wordcount: '1077'
+ht-degree: 68%
 
 ---
 
@@ -163,3 +163,7 @@ Wählen Sie zur Überprüfung einen Pfad aus dem Validierungsbericht aus und üb
 Einige Pfade von den Extraktions- und Aufnahmeauszügen werden vorsätzlich ausgeschlossen, damit die Größe dieser Dateien überschaubar bleibt, sodass das Ergebnis der Migrationsvalidierung innerhalb von zwei Stunden nach Abschluss der Aufnahme berechnet werden kann.
 
 Zu den Pfaden, die wir derzeit aus den Auszügen ausschließen, gehören: `cqdam.text.txt`-Ausgabedarstellungen, Knoten in `/home` und Knoten in `/jcr:system`.
+
+### Geschlossene Benutzergruppen funktionieren nicht {#validating-cugs}
+
+Siehe [Migrieren geschlossener Benutzergruppen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) für zusätzliche Überlegungen bei der Verwendung einer CUG-Richtlinie (Closed User Group, geschlossene Benutzergruppe).

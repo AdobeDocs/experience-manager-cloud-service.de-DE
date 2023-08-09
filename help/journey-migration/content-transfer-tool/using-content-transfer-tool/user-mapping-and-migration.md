@@ -2,10 +2,10 @@
 title: Benutzerzuordnung und Prinzipalmigration
 description: Überblick über Benutzerzuordnung und Hauptmigration in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 22%
+source-wordcount: '855'
+ht-degree: 21%
 
 ---
 
@@ -57,6 +57,7 @@ Die folgenden spezifischen Fälle sind protokolliert:
 * Wenn die Einstellung **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** festgelegt ist, werden bereits übertragene Benutzer in der Cloud Service-Instanz zusammen mit dem gesamten vorhandenen Repository gelöscht. Außerdem wird ein neues Repository erstellt, in das Inhalte aufgenommen werden. Dieser Vorgang setzt auch alle Einstellungen zurück, einschließlich Berechtigungen für die Ziel-Cloud Service-Instanz, und gilt für einen Administrator, der der **Administratoren** hinzugefügt. Der Admin-Benutzer muss in die **Administratoren** -Gruppe, um das Zugriffstoken für CTT abzurufen.
 * Wenn bei der Auffüllung von Inhalten keine Inhalte übertragen werden, weil sie seit der vorherigen Übertragung nicht geändert wurden, werden auch Benutzer und Gruppen, die mit diesen Inhalten verknüpft sind, nicht übertragen. Diese Regel gilt auch dann, wenn sich die Benutzer und Gruppen zwischenzeitlich geändert haben. Der Grund dafür ist, dass Benutzer und Gruppen zusammen mit den Inhalten migriert werden, mit denen sie verknüpft sind.
 * Wenn die AEM Cloud Service-Zielinstanz über einen Benutzer mit einem anderen Benutzernamen, aber derselben E-Mail-Adresse wie einer der Benutzer in der Quell-AEM-Instanz verfügt und die Benutzerzuordnung aktiviert ist, wird in den Protokollen eine Fehlermeldung aufgezeichnet. Außerdem wird der Quell-AEM-Benutzer nicht übertragen, da nur ein Benutzer mit einer bestimmten E-Mail-Adresse auf dem Zielsystem zulässig ist.
+* Siehe [Migrieren geschlossener Benutzergruppen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) für zusätzliche Überlegungen zu Gruppen, die in einer CUG-Richtlinie (Closed User Group, geschlossene Benutzergruppe) verwendet werden.
 
 ## Endgültige Zusammenfassung und Bericht {#final-report}
 
