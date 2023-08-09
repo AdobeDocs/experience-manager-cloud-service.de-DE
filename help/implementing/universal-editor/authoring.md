@@ -2,10 +2,10 @@
 title: Inhaltserstellung mit dem universellen Editor
 description: Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 481202760e0d22cde9c32e0b781dc99f67d463e4
+source-git-commit: e03bf6437b72a4fe7e959a23f12f0baa892fa567
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 35%
+source-wordcount: '2271'
+ht-degree: 30%
 
 ---
 
@@ -26,7 +26,7 @@ Dazu bietet der universelle Editor Autoren von Inhalten eine intuitive Benutzero
 
 >[!NOTE]
 >
->Der universelle Editor befindet sich noch in der Entwicklung. Es kann derzeit nicht alle Inhaltstypen bearbeitet werden.
+>Der Universal Editor befindet sich noch in der Entwicklung. Derzeit können nicht alle Inhaltstypen bearbeitet werden.
 
 ## Vorbereiten der App {#prepare-app}
 
@@ -34,7 +34,7 @@ Um Inhalte für eine App mit dem universellen Editor zu erstellen, muss die App 
 
 >[!TIP]
 >
->Siehe [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) ein Beispiel für die Konfiguration einer AEM App für die Verwendung mit dem universellen Editor.
+>Siehe [Erste Schritte mit dem Universal Editor in AEM](getting-started.md) ein Beispiel für die Konfiguration einer AEM App für die Verwendung mit dem universellen Editor.
 
 ## Anmelden {#sign-in}
 
@@ -98,7 +98,7 @@ Tippen oder klicken Sie auf das Symbol für Ihre Benutzerin bzw. Ihren Benutzer,
 
 ### Die Kopfzeile des universellen Editors {#universal-editor-header}
 
-Die Kopfzeile des universellen Editors befindet sich immer oben im Bildschirm direkt unter [der Kopfzeile von Experience Cloud.](#experience-cloud-header) So erhalten Sie schnellen Zugriff auf die Navigation zu einer anderen Seite, um die aktuelle Seite zu bearbeiten und zu veröffentlichen.
+Die Kopfzeile des universellen Editors befindet sich immer oben im Bildschirm direkt unter [der Kopfzeile von Experience Cloud.](#experience-cloud-header) So erhalten Sie schnellen Zugriff auf die Navigation zu einer anderen Seite, um sie zu bearbeiten und die aktuelle Seite zu veröffentlichen.
 
 ![Die Kopfzeile des universellen Editors](assets/universal-editor-header.png)
 
@@ -162,7 +162,7 @@ Tippen oder klicken Sie auf die Schaltfläche &quot;Veröffentlichen&quot;, dami
 
 ### Die Modusleiste {#rail}
 
-Die Modusleiste befindet sich immer auf der linken Seite des Editors. Dies ermöglicht das einfache Wechseln des Editors zwischen verschiedenen Bearbeitungsmodi.
+Die Modusleiste befindet sich immer auf der linken Seite des Editors. Dadurch können Sie den Editor einfach zwischen verschiedenen Bearbeitungsmodi wechseln.
 
 ![Die Modusleiste](assets/mode-rail.png)
 
@@ -191,7 +191,7 @@ Im Textmodus kann der Inhaltsautor klicken, um Textinhalte auszuwählen.
 
 #### Medienmodus {#media-mode}
 
-Im Medienmodus kann der Inhaltsautor klicken, um Medieninhalte auszuwählen.
+Im Medienmodus kann der Inhaltsautor auf klicken, um Medieninhalte auszuwählen.
 
 ![Medienmodus](assets/media-mode.png)
 
@@ -213,32 +213,18 @@ Wenn Sie ein Inhaltsfragment auswählen, werden die Details in der Komponentenle
 >
 >Verwenden des Hotkeys `C` , um in den Komponentenmodus zu wechseln.
 
-#### Bearbeiten {#edit}
-
-Wann [Komponentenmodus,](#component-mode) Wenn Sie eine [Inhaltsfragment,](/help/assets/content-fragments/content-fragments.md) Die Bearbeitungsoption wird in der Modusleiste angezeigt.
-
-![Symbol Bearbeiten](assets/edit.png)
-
-Durch Tippen oder Klicken auf die Schaltfläche &quot;Bearbeiten&quot;wird das [Inhaltsfragmente-Editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in einer neuen Registerkarte, über die Sie auf die gesamte Funktionalität des Inhaltsfragment-Editors zugreifen können.
-
-Sie können auch Details des Inhaltsfragments im [Komponentenleiste](#edit-content-fragment) abhängig von den Anforderungen Ihres Workflows.
-
->[!TIP]
->
->Verwenden des Hotkeys `E` , um eine ausgewählte Komponente zu bearbeiten.
-
 ### Der Editor {#editor}
 
 Der Editor belegt den Großteil des Fensters und ist dort, wo die Seite angegeben ist in [die Standortleiste](#location-bar) wird gerendert.
 
 * Wenn sich der Editor in einem Bearbeitungsmodus befindet, z. B. [Textmodus](#text-mode) oder [Medienmodus,](#media-mode) Der Inhalt kann bearbeitet werden, Sie können jedoch keine Links folgen.
-* Wenn sich der Editor in [Vorschaumodus,](#preview-mode) Der Inhalt kann navigiert werden und Sie können Links folgen, den Inhalt kann jedoch nicht bearbeitet werden.
+* Wenn sich der Editor in [Vorschaumodus](#preview-mode) Der Inhalt kann navigiert werden und Sie können Links folgen, den Inhalt kann jedoch nicht bearbeitet werden.
 
 ![Bearbeiter](assets/editor.png)
 
 ### Komponentenleiste {#component-rail}
 
-Die Komponentenleiste befindet sich immer auf der linken Seite des Editors. Je nach Modus können Details zu einer im Inhalt ausgewählten Komponente oder die Hierarchie der Seiteninhalte angezeigt werden.
+Die Komponentenleiste befindet sich immer links im Editor. Je nach Modus können Details zu einer im Inhalt ausgewählten Komponente oder die Hierarchie der Seiteninhalte angezeigt werden.
 
 ![Die Komponentenleiste](assets/component-rail.png)
 
@@ -258,7 +244,7 @@ Beachten Sie, dass nicht alle Komponenten Details aufweisen, die angezeigt und/o
 >
 >Verwenden des Hotkeys `D` , um in den Eigenschaftenmodus zu wechseln.
 
-#### Inhaltsbaum-Modus {#Content-tree-mode}
+#### Inhaltsbaum-Modus {#content-tree-mode}
 
 Im Inhaltsstrukturmodus zeigt die Leiste die Hierarchie des Seiteninhalts an.
 
@@ -272,10 +258,47 @@ Bei der Auswahl eines Elements in der Inhaltsstruktur scrollt der Editor zu dies
 >
 >Verwenden des Hotkeys `F` , um in den Inhaltsbaummodus zu wechseln.
 
+#### Bearbeiten {#edit}
+
+Wann [Komponentenmodus,](#component-mode) Wenn Sie eine [Inhaltsfragment,](/help/assets/content-fragments/content-fragments.md) Die Bearbeitungsoption wird in der Komponentenleiste angezeigt.
+
+![Symbol Bearbeiten](assets/edit.png)
+
+Durch Tippen oder Klicken auf die Schaltfläche &quot;Bearbeiten&quot;wird das [Inhaltsfragmente-Editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in einer neuen Registerkarte, über die Sie auf die gesamte Funktionalität des Inhaltsfragment-Editors zugreifen können.
+
+Sie können auch die Details des Inhaltsfragments in der Komponentenleiste entsprechend den Anforderungen Ihres Workflows bearbeiten.
+
+>[!TIP]
+>
+>Verwenden des Hotkeys `E` , um eine ausgewählte Komponente zu bearbeiten.
+
+#### Hinzufügen {#add}
+
+Wenn Sie eine Container-Komponente entweder in der Inhaltsstruktur oder im Editor auswählen, wird die Option zum Hinzufügen in der Komponentenleiste angezeigt.
+
+![Symbol &quot;Hinzufügen&quot;](assets/ue-add-component-icon.png)
+
+Durch Tippen oder Klicken auf die Schaltfläche zum Hinzufügen wird ein Dropdown-Menü mit Komponenten geöffnet, die für [zum ausgewählten Container hinzufügen.](#adding-components)
+
+>[!TIP]
+>
+>Verwenden des Hotkeys `A` , um eine Komponente zu einer ausgewählten Container-Komponente hinzuzufügen.
+
+#### Löschen {#delete}
+
+Wenn Sie eine Komponente innerhalb einer Container-Komponente entweder in der Inhaltsstruktur oder im Editor auswählen, wird die Löschoption in der Komponentenleiste angezeigt.
+
+![Löschsymbol](assets/ue-delete-component-icon.png)
+
+Tippen oder Klicken auf die Schaltfläche zum Löschen [löscht die Komponente.](#deleting-components)
+
+>[!TIP]
+>
+>Verwenden des Hotkeys `Shift+Backspace` , um eine ausgewählte Komponente aus einem Container zu löschen.
 
 ## Bearbeiten von Inhalten {#editing-content}
 
-Die Bearbeitung von Inhalten ist einfach und intuitiv. In den Bearbeitungsmodi ([Textmodus](#text-mode), [Medienmodus](#media-mode)und [Komponentenmodus](#component-mode)), während Sie den Mauszeiger über den Inhalt im Editor bewegen, wird der bearbeitbare Inhalt durch ein blaues Feld markiert.
+Die Bearbeitung von Inhalten ist einfach und intuitiv. In den Bearbeitungsmodi ([Textmodus](#text-mode), [Medienmodus](#media-mode), und [Komponentenmodus](#component-mode)), während Sie den Mauszeiger über den Inhalt im Editor bewegen, wird der bearbeitbare Inhalt durch ein blaues Feld markiert.
 
 ![Bearbeitbare Inhalte werden durch ein blaues Feld hervorgehoben](assets/editable-content.png)
 
@@ -285,7 +308,7 @@ Je nach [mode](#mode-rail) Wenn Sie sich in befinden und den von Ihnen ausgewäh
 
 ### Nur Text bearbeiten {#edit-plain-text}
 
-Wenn Sie [Textmodus](#text-mode) und eine Textkomponente auswählen, können Sie den Text an Ort und Stelle bearbeiten.
+Wenn Sie [Textmodus](#text-mode) und wählen Sie eine Textkomponente aus, können Sie den Text an Ort und Stelle bearbeiten.
 
 ![Bearbeiten von Inhalten](assets/editing-content.png)
 
@@ -313,7 +336,7 @@ Tippen oder klicken Sie auf **Ersetzen** Schaltfläche unter der Vorschau des au
 
 1. Die [Asset-Wähler](/help/assets/asset-selector.md#using-asset-selector) -Fenster geöffnet, in dem Sie ein Asset auswählen können.
 1. Tippen oder klicken Sie, um ein neues Asset auszuwählen.
-1. Tippen oder klicken Sie auf **Auswählen** , um zur Komponentenleiste zurückzukehren, in der das Asset ersetzt wurde.
+1. Tippen oder klicken **Auswählen** , um zur Komponentenleiste zurückzukehren, in der das Asset ersetzt wurde.
 
 Änderungen werden automatisch in Ihrem Inhalt gespeichert.
 
@@ -332,6 +355,38 @@ Die im Inhaltsmodell des ausgewählten Inhaltsfragments definierten Felder werde
 Änderungen werden automatisch in Ihrem Inhalt gespeichert.
 
 Wenn Sie Ihr Inhaltsfragment im [Inhaltsfragmente-Editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) Klicken Sie stattdessen auf die [Schaltfläche &quot;Bearbeiten&quot;](#edit) in der Modusleiste.
+
+### Hinzufügen von Komponenten zu Containern {#adding-components}
+
+1. Wählen Sie eine Container-Komponente in der Inhaltsstruktur oder im Editor aus.
+1. Tippen oder klicken Sie dann in der Komponentenleiste auf das Symbol zum Hinzufügen .
+
+   ![Auswählen einer Komponente zum Hinzufügen zu einem Container](assets/ue-add-component.png)
+
+Die Komponente wird in den Container eingefügt und kann im Editor bearbeitet werden.
+
+### Löschen von Komponenten aus Containern {#deleting-components}
+
+1. Wählen Sie eine Container-Komponente in der Inhaltsstruktur oder im Editor aus.
+1. Tippen oder klicken Sie auf das Pfeilsymbol des Containers, um seinen Inhalt in der Inhaltsstruktur zu erweitern.
+1. Wählen Sie dann in der Inhaltsstruktur eine Komponente im Container aus.
+1. Tippen oder klicken Sie in der Komponentenleiste auf das Löschsymbol.
+
+   ![Löschen einer Komponente](assets/ue-delete-component.png)
+
+Die ausgewählte Komponente wurde gelöscht.
+
+### Neuanordnen von Komponenten in Containern {#reordering-components}
+
+1. Wählen Sie eine Container-Komponente in der Inhaltsstruktur oder im Editor aus.
+1. Wenn nicht bereits in [Inhaltsbaum-Modus,](#content-tree-mode) darauf umschalten.
+1. Tippen oder klicken Sie auf das Pfeilsymbol des Containers, um seinen Inhalt in der Inhaltsstruktur zu erweitern.
+1. Ziehpunkte neben den Komponenten im Container zeigen, dass Sie sie neu anordnen können. Ziehen Sie die Komponenten, um sie innerhalb des Containers neu anzuordnen.
+
+   ![Neuanordnen von Komponenten](assets/ue-reordering-components.png)
+1. Die gezogene Komponente wird in der Komponentenstruktur grau dargestellt, während der Einfügepunkt durch eine blaue Linie dargestellt wird. Lassen Sie die Komponente frei, um sie an ihrer neuen Position zu platzieren.
+
+Die Komponenten werden sowohl in der Inhaltsstruktur als auch im Editor neu angeordnet
 
 ## Vorschau von Inhalten {#previewing-content}
 
