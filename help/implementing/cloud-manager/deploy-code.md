@@ -2,10 +2,10 @@
 title: Bereitstellen des Codes
 description: Erfahren Sie, wie Sie Ihren Code mithilfe von Cloud Manager-Pipelines in AEM as a Cloud Service bereitstellen.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 2d1d3ac98f8fe40ba5f9ab1ccec946c8448ddc43
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 91%
+source-wordcount: '1193'
+ht-degree: 68%
 
 ---
 
@@ -70,7 +70,7 @@ Die Phase der **Staging-Bereitstellung** umfasst diese Schritte.
 Die **Staging-Test**-Phase umfasst diese Schritte.
 
 * **Produktfunktionstests**: Die Cloud Manager-Pipeline führt Tests aus, die für die Staging-Umgebung ausgeführt werden.
-   * Siehe [Funktionstests für das Produkt](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) für weitere Details.
+   * Siehe [Produktfunktionstests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) für weitere Details.
 
 * **Benutzerdefinierte Funktionstests**: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig erfolgreich durchgeführt.
    * Siehe [Benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) für weitere Details.
@@ -127,34 +127,41 @@ Alle Cloud-Dienste werden in einem fortlaufenden Prozess bereitgestellt, um zu g
 >
 >Der Dispatcher-Cache wird bei jeder Bereitstellung gelöscht. Er wird anschließend aufgewärmt, damit die neuen Veröffentlichungsknoten Traffic akzeptieren.
 
-## Erneutes Ausführen einer Produktionsbereitstellung {#Reexecute-Deployment}
+## Neuausführung einer Produktionsbereitstellung {#reexecute-deployment}
 
-Die erneute Ausführung des Schritts der Produktionsbereitstellung wird bei Ausführungen unterstützt, bei denen der Schritt zur Produktionsbereitstellung abgeschlossen ist. Die Art des Abschlusses ist nicht wichtig – die Bereitstellung könnte abgebrochen worden sein oder fehlgeschlagen sein. Es wird jedoch erwartet, dass der Hauptanwendungsfall Fälle sind, in denen die Produktionsbereitstellung aus vorübergehenden Gründen fehlgeschlagen ist. Bei der erneuten Ausführung wird eine neue Ausführung mit derselben Pipeline erstellt. Diese neue Ausführung besteht aus drei Schritten:
+In seltenen Fällen können Produktionsbereitstellungsschritte aus Verlaufsgründen fehlschlagen. In solchen Fällen wird die Neuausführung des Produktionsbereitstellungsschritts unterstützt, solange der Produktionsbereitstellungsschritt abgeschlossen ist, unabhängig vom Fertigstellungstyp (z. B. abgebrochen oder nicht erfolgreich). Bei der erneuten Ausführung wird eine neue Ausführung mit derselben Pipeline erstellt, die aus drei Schritten besteht.
 
-1. Der Validierungsschritt: dies ist im Wesentlichen dieselbe Validierung, die während einer normalen Pipeline-Ausführung erfolgt.
-1. Der Build-Schritt: Im Kontext einer erneuten Ausführung kopiert der Build-Schritt Artefakte und führt keinen neuen Build-Prozess aus.
-1. Der Schritt der Produktionsbereitstellung: Hier werden dieselbe Konfiguration und dieselben Optionen verwendet wie beim Schritt der Produktionsbereitstellung bei einer normalen Pipeline-Ausführung.
+1. Der Validierungsschritt - Dies ist im Wesentlichen dieselbe Validierung, die während einer normalen Pipeline-Ausführung erfolgt.
+1. Der Build-Schritt - Im Kontext einer erneuten Ausführung kopiert der Build-Schritt Artefakte und führt keinen neuen Build-Prozess aus.
+1. Der Schritt zur Produktionsbereitstellung : Hierbei werden dieselben Konfigurationen und Optionen wie beim Schritt zur Produktionsbereitstellung bei einer normalen Pipeline-Ausführung verwendet.
 
-Der Build-Schritt kann in der Benutzeroberfläche etwas anders beschriftet sein, um zu verdeutlichen, dass es sich um das Kopieren von Artefakten und nicht um einen Neuaufbau handelt.
+Wenn eine Neuausführung möglich ist, stellt die Produktions-Pipeline-Statusseite die **Neu ausführen** neben der üblichen **Build-Protokoll herunterladen** -Option.
 
-![Erneutes Bereitstellen](assets/Re-deploy.png)
+![Die Option &quot;Neu ausführen&quot;im Fenster der Pipeline-Übersicht](assets/re-execute.png)
 
-Beschränkungen:
+>[!NOTE]
+>
+>Bei einer erneuten Ausführung wird der Build-Schritt in der Benutzeroberfläche beschriftet, um anzuzeigen, dass er Artefakte kopiert und nicht neu erstellt.
 
-* Die erneute Ausführung des Schritts der Produktionsbereitstellung ist nur bei der letzten Ausführung verfügbar.
-* Eine erneute Ausführung ist für Push-Update-Ausführungen nicht verfügbar. Wenn die letzte Ausführung eine Push-Update-Ausführung war, ist eine erneute Ausführung nicht möglich.
-* Wenn die letzte Ausführung eine Push-Update-Ausführung war, ist eine erneute Ausführung nicht möglich.
+### Einschränkungen {#limitations}
+
+* Die erneute Ausführung des Produktionsbereitstellungsschritts ist nur für die letzte Ausführung verfügbar.
+* Eine erneute Ausführung ist für Push-Update-Ausführungen nicht verfügbar.
+   * Wenn die letzte Ausführung eine Push-Update-Ausführung war, ist eine erneute Ausführung nicht möglich.
 * Wenn die letzte Ausführung zu irgendeinem Zeitpunkt vor dem Schritt der Produktionsbereitstellung fehlgeschlagen ist, ist eine erneute Ausführung nicht möglich.
 
-### Erneutes Ausführen der API {#Reexecute-API}
+### Erneutes Ausführen der API {#reexecute-API}
 
-### Erkennen einer erneuten Ausführung
+Zusätzlich zur Verfügbarkeit in der Benutzeroberfläche können Sie [Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) um Trigger-Wiederausführungen sowie die Identifizierung von Ausführungen, die als Wiederausführungen ausgelöst wurden.
 
-Um festzustellen, ob es sich bei einer Ausführung um eine erneute Ausführung handelt, kann das Feld „Trigger“ untersucht werden. Der Wert lautet *RE_EXECUTE*.
+#### Auslösen einer erneuten Ausführung {#reexecute-deployment-api}
 
-### Auslösen einer neuen Ausführung
+Um eine Neuausführung Trigger, stellen Sie eine PUT-Anfrage an den HAL-Link `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` im Status der Produktionsbereitstellungs-Schritte.
 
-Um eine erneute Ausführung auszulösen, muss eine PUT-Anfrage an den HAL-Link &lt;(<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> im Status des Schritts der Produktionsbereitstellung gestellt werden. Wenn dieser Link vorhanden ist, kann die Ausführung von diesem Schritt an neu gestartet werden. Wenn dies nicht der Fall ist, kann die Ausführung von diesem Schritt an nicht erneut gestartet werden. In der ersten Version ist dieser Link nur im Schritt der Produktionsbereitstellung vorhanden, aber künftige Versionen werden den Start der Pipeline von anderen Schritten aus unterstützen können. Beispiel:
+* Wenn dieser Link vorhanden ist, kann die Ausführung von diesem Schritt an neu gestartet werden.
+* Wenn dies nicht der Fall ist, kann die Ausführung von diesem Schritt an nicht erneut gestartet werden.
+
+Dieser Link ist nur für den Schritt zur Produktionsbereitstellung verfügbar.
 
 ```JavaScript
  {
@@ -191,7 +198,10 @@ Um eine erneute Ausführung auszulösen, muss eine PUT-Anfrage an den HAL-Link &
   "status": "FINISHED"
 ```
 
+Die Syntax des href-Werts des HAL-Links ist nur ein Beispiel. Der tatsächliche Wert sollte immer aus dem HAL-Link gelesen und nicht generiert werden.
 
-Die Syntax des Wert des HAL-Links _href_ oben ist nicht zur Verwendung als Bezugspunkt vorgesehen. Der tatsächliche Wert sollte immer aus dem HAL-Link gelesen und nicht generiert werden.
+Die Übermittlung einer PUT-Anfrage an diesen Endpunkt führt bei Erfolg zu einer 201-Antwort und der Antworttext stellt die Darstellung der neuen Ausführung dar. Dies ähnelt dem Starten einer regulären Ausführung über die API.
 
-Senden einer *PUT* -Anfrage an diesen Endpunkt führt zu einer *201* Antwort bei Erfolg und der Antworttext ist die Darstellung der neuen Ausführung. Dies ähnelt dem Starten einer regulären Ausführung über die API.
+#### Identifizieren einer erneut ausgeführten Ausführung {#identify-reexecution}
+
+Wiederausgeführte Ausführungen können durch den Wert identifiziert werden `RE_EXECUTE` im `trigger` -Feld.

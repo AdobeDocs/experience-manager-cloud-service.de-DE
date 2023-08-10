@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ca3c4bae2e652d75190d68c76b1dd4e09239f16c
+source-git-commit: ec4445a63eee834c45ff95b7978497a615a1ed46
 workflow-type: tm+mt
-source-wordcount: '4230'
+source-wordcount: '4235'
 ht-degree: 96%
 
 ---
@@ -83,6 +83,7 @@ ht-degree: 96%
    + Versionshinweise für Cloud Manager {#cloud-manager}
       + [Aktuelle Versionshinweise](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
+         + [Versionshinweise für 2023.7.0](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
          + [Versionshinweise für 2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [Versionshinweise für 2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [Versionshinweise für 2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
@@ -1001,6 +1002,7 @@ ht-degree: 96%
    + [Infrastruktur- und Service-Überwachung in AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Wartungsaufgaben](/help/operations/maintenance.md)
    + [Sichern und Wiederherstellen](/help/operations/backup.md)
+   + [Wiederherstellung von Self-Service](/help/operations/restore.md)
    + [Asynchrone Aufträge](/help/operations/asynchronous-jobs.md)
    + [Entfernen des generischen Lucene-Index](/help/operations/removal-generic-lucene-index.md)
    + [Best Practices für Abfragen und Indizierung](/help/operations/query-and-indexing-best-practices.md)
