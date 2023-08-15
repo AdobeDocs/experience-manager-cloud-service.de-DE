@@ -2,10 +2,10 @@
 title: Überprüfen des Domain-Namenstatus
 description: Erfahren Sie, wie Sie feststellen können, ob Ihr benutzerdefinierter Domain-Name von Cloud Manager erfolgreich verifiziert wurde.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 84%
+source-wordcount: '649'
+ht-degree: 82%
 
 ---
 
@@ -37,7 +37,7 @@ Die Überprüfung ist in Bearbeitung.
 
 * **Verifiziert, Bereitstellung fehlgeschlagen** – Die TXT-Überprüfung war erfolgreich, aber die CDN-Bereitstellung schlug fehl.
 
-   * Wenden Sie sich in solchen Fällen an Ihren Kundenbetreuer bei der Adobe.
+   * Wenden Sie sich in solchen Fällen an Ihren Adobe-Support-Mitarbeiter.
 
 * **Domain überprüft und bereitgestellt** –
 Dieser Status gibt an, dass Ihr benutzerdefinierter Domain-Name verwendet werden kann.
@@ -63,7 +63,7 @@ Dieser Fehler kann während der Domänenvalidierung des TXT-Eintrags auftreten, 
 
 #### Fehlerursache {#cause}
 
-Fastly beschränkt eine Domain auf das ursprünglich registrierte Konto, und kein anderes Konto kann eine Subdomain registrieren, ohne die Erlaubnis dafür einzuholen. Darüber hinaus ermöglicht Fastly es Ihnen nur, eine Apex-Domain und zugehörige Subdomains einem Fastly-Service und -Konto zuzuweisen. Wenn Sie über ein vorhandenes Fastly-Konto verfügen, das denselben Namen und dieselbe Subdomain verknüpft, die für Ihre AEM as a Cloud Service-Domains verwendet werden, wird dieser Fehler angezeigt.
+Fastly beschränkt eine Domain auf das ursprünglich registrierte Konto, und kein anderes Konto kann eine Subdomain registrieren, ohne die Erlaubnis dafür einzuholen. Darüber hinaus können Sie mit Fastly nur einem Fastly-Dienst und -Konto eine Apex-Domäne und zugehörige Subdomains zuweisen. Wenn Sie über ein vorhandenes Fastly-Konto verfügen, das denselben Namen und dieselbe Subdomain verknüpft, die für Ihre AEM as a Cloud Service-Domains verwendet werden, wird dieser Fehler angezeigt.
 
 #### Fehlerbehebung {#resolution}
 

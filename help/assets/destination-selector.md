@@ -3,10 +3,10 @@ title: Zielauswahl für AEM as a Cloud Service
 description: Verwenden Sie die AEM Ziel-Auswahl, um Assets anzuzeigen und auszuwählen, die Sie als Kopie des ursprünglichen Assets verwenden können.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1911'
-ht-degree: 35%
+source-wordcount: '1902'
+ht-degree: 36%
 
 ---
 
@@ -130,13 +130,13 @@ In der folgenden Tabelle werden einige der wichtigen Eigenschaften des ausgewäh
 | *repo:size* | Number (Zahl) | Die Größe des Assets in Bytes. |
 | *repo:path* | Zeichenfolge | Der Speicherort des Assets im Repository. |
 | *repo:ancestors* | `Array<string>` | Ein Array von Vorgängerelementen für das Asset im Repository. |
-| *repo:state* | Zeichenfolge | Aktueller Status des Assets im Repository (z. B. aktiv, gelöscht usw.). |
+| *repo:state* | Zeichenfolge | Aktueller Status des Assets im Repository (z. B. aktiv, gelöscht usw.) |
 | *repo:createdBy* | Zeichenfolge | Die Person oder das System, welches das Asset erstellt hat. |
 | *repo:createDate* | Zeichenfolge | Datum und Uhrzeit der Erstellung des Assets. |
 | *repo:modifiedBy* | Zeichenfolge | Die Person oder das System, welches das Asset zuletzt geändert hat. |
 | *repo:modifyDate* | Zeichenfolge | Datum und Uhrzeit der letzten Änderung des Assets. |
 | *dc:format* | Zeichenfolge | Das Format des Assets. |
-| *_Seite* | orderBy: Zeichenfolge; count: Nummer; | Umfasst die Seitenzahl des Dokuments. |
+| *_Seite* | orderBy: string; count: number; | Umfasst die Seitenzahl des Dokuments. |
 
 Eine vollständige Liste der Eigenschaften und ein detailliertes Beispiel finden Sie unter [Codebeispiel für Zielauswahl](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
@@ -144,7 +144,7 @@ Eine vollständige Liste der Eigenschaften und ein detailliertes Beispiel finden
 
 In diesem Beispiel wird gezeigt, wie beim Ausführen eines [!DNL Adobe] Anwendung unter Unified Shell oder wenn Sie bereits `imsToken` zur Authentifizierung generiert wurde.
 
-Schließen Sie das Ziel-Selektor-Paket in Ihren Code ein, indem Sie die `script` Tag, wie in _Zeilen 6-15_ des unten stehenden Beispiels. Nach dem Laden des Skripts wird die `PureJSSelectors` Die globale Variable ist verfügbar. Definieren der Zielauswahl [properties](#destination-selector-properties) wie in _Zeilen 16-23_. Die Eigenschaften `imsOrg` und `imsToken` sind beide für die Authentifizierung im Nicht-SUSI-Fluss erforderlich. Die `handleSelection`-Eigenschaft wird verwendet, um die ausgewählten Assets zu behandeln. Rufen Sie zum Rendern der Zielauswahl die `renderDestinationSelector` -Funktion gemäß _Zeile 17_. Die Zielauswahl wird im `<div>` Container-Element, wie in _Zeilen 21 und 22_.
+Schließen Sie das Ziel-Selektor-Paket mit dem `script` Tag, wie in _Zeilen 6-15_ des unten stehenden Beispiels. Nachdem das Skript geladen wurde, wird die `PureJSSelectors` Die globale Variable ist verfügbar. Definieren der Zielauswahl [properties](#destination-selector-properties) wie in _Zeilen 16-23_. Die Eigenschaften `imsOrg` und `imsToken` sind beide für die Authentifizierung im Nicht-SUSI-Fluss erforderlich. Die `handleSelection`-Eigenschaft wird verwendet, um die ausgewählten Assets zu behandeln. Rufen Sie die `renderDestinationSelector` -Funktion wie in _Zeile 17_. Die Zielauswahl wird im `<div>` Container-Element, wie in _Zeilen 21 und 22_.
 
 Wenn Sie diese Schritte ausführen, können Sie die Zielauswahl mit einem Nicht-SUSI-Fluss in Ihrer [!DNL Adobe] Anwendung.
 
@@ -193,7 +193,7 @@ Sie können die Eigenschaften der Zielauswahl verwenden, um die Darstellung der 
 | *orgName* | Boolesch | Nein | | Es ist der Name der Organisation (wahrscheinlich orgID), die mit AEM verknüpft ist. |
 | *initRepoID* | Zeichenfolge | Nein | | Dies ist der Pfad des Assets-Repositorys, den Sie in einer standardmäßigen ersten Ansicht verwenden möchten |
 | *onCreateFolder* | Zeichenfolge | Nein | | Die `onCreateFolder` -Eigenschaft können Sie ein Symbol hinzufügen, mit dem ein neuer Ordner in der Anwendung hinzugefügt wird. |
-| *onConfirm* | Zeichenfolge | Nein | | Dies ist ein Rückruf, wenn Sie auf die Schaltfläche Bestätigen klicken. |
+| *onConfirm* | Zeichenfolge | Nein | | Es handelt sich um einen Rückruf, wenn Sie auf die Schaltfläche Bestätigen klicken. |
 | *confirmDisabled* | Zeichenfolge | Nein | | Diese Eigenschaft steuert den Umschalter der Schaltfläche &quot;Bestätigen&quot;. |
 | *viewType* | Zeichenfolge | Nein | | Die `viewType` -Eigenschaft wird verwendet, um die Ansichten anzugeben, die Sie zum Anzeigen von Assets verwenden. |
 | *viewTypeOptions* | Zeichenfolge | Nein | | Diese Eigenschaft ist mit `viewType` -Eigenschaft. Sie können eine oder mehrere Ansichten angeben, um Assets anzuzeigen. Verfügbare viewTypeOptions sind: Listenansicht, Rasteransicht, Galerie-Ansicht, Wasserfallansicht und Baumansicht. |
@@ -208,7 +208,7 @@ Sie können die Zielauswahl definieren [properties](#destination-selector-proper
 
 ### Beispiel 1: Erstellen eines Ordners in der Zielauswahl
 
-Mit der Zielauswahl können Sie einen neuen Ordner erstellen, in den Sie Assets an einem bestimmten Speicherort hochladen, verschieben oder kopieren können.
+Mit der Zielauswahl können Sie einen neuen Ordner erstellen, in den Assets am gewünschten Speicherort hochgeladen, verschoben oder kopiert werden können.
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -274,4 +274,4 @@ Mit der Zielauswahl können Sie das Asset in vier verschiedenen Ansichten anzeig
 
 ### Ordner auswählen {#select-folder}
 
-Mit der Schaltfläche Ordner auswählen können Sie Assets für verschiedene Vorgänge auswählen, die mit [properties](#destination-selector-properties) in der Zielauswahl.
+Über die Schaltfläche Ordner auswählen können Sie Assets für verschiedene Vorgänge auswählen, die mit [properties](#destination-selector-properties) in der Zielauswahl.

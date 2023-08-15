@@ -2,10 +2,10 @@
 title: Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente
 description: Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 1486a330e7931ab679f37464c3e22a27ea0d5876
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 100%
+source-wordcount: '261'
+ht-degree: 85%
 
 ---
 
@@ -30,15 +30,15 @@ Es gibt drei Methoden, mit denen Sie Metadaten und Tags hinzufügen können:
 
 * Beim erstmaligen Erstellen eines Fragments (über die Konsole **Assets**):
 
-   ![Inhaltsfragment erstellen – Name angeben](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+  ![Inhaltsfragment erstellen – Name angeben](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* Mit der Registerkarte **Varianten** des Inhaltsfragment-Editors können Sie vordefinierte **Tags** aus Ihrem Projekt hinzufügen:
+* Die **Varianten** im Tab Inhaltsfragment-Editor können Sie vordefinierte **Tags** aus Ihrem Projekt:
 
-   ![Inhaltsfragmente-Editor – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+  ![Inhaltsfragmente-Editor – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
-* Auf der Registerkarte **Metadaten** des Inhaltsfragment-Editors können Sie sowohl verschiedene Felder mit Metadaten als auch vordefinierte **Tags** aus Ihrem Projekt hinzufügen:
+* Die **Metadaten** auf der Registerkarte &quot;Inhaltsfragment-Editor&quot;können Sie beide Metadatenfelder und vordefinierte **Tags** aus Ihrem Projekt:
 
-   ![Inhaltsfragmente-Editor – Metadaten](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+  ![Inhaltsfragmente-Editor – Metadaten](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
    * Sie können auch direkt über die Option **Eigenschaften** in der Symbolleiste der Asset-Konsole darauf zugreifen.
 

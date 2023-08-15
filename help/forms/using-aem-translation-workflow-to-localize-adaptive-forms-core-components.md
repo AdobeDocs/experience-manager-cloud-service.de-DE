@@ -2,9 +2,9 @@
 title: Kernkomponenten-basiertes adaptives Formular übersetzen
 description: Verwenden Sie maschinelle Übersetzung oder menschliche Übersetzung, um ein auf Kernkomponenten basierendes adaptives Formular zu übersetzen.
 feature: Adaptive Forms
-source-git-commit: 4f2a51502202fba3792cde370180d127f8e17418
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '880'
 ht-degree: 21%
 
 ---
@@ -20,7 +20,7 @@ Der Dienst für maschinelle Übersetzung übersetzt Ihre Inhalte sofort in das a
 1. Wählen Sie auf der Benutzeroberfläche von AEM Forms ein Formular aus und tippen Sie auf die Option **[!UICONTROL Wörterbuch hinzufügen]**.
 1. Im Bildschirm &quot;Wörterbuch zum Übersetzungsprojekt hinzufügen&quot;für **[!UICONTROL Projekt]** option
 
-   * Um ein Übersetzungsprojekt zu erstellen, wählen Sie die **[!UICONTROL Neues Übersetzungsprojekt erstellen]** und in der **Projekttitel** -Feld geben Sie den Titel an. Beispiel: `Government Reference Site - German locale.`
+   * Um ein Übersetzungsprojekt zu erstellen, wählen Sie die **[!UICONTROL Neues Übersetzungsprojekt erstellen]** und in der **Projekttitel** -Feld geben Sie den Titel an. Zum Beispiel: `Government Reference Site - German locale.`
    * Um einem vorhandenen Übersetzungsprojekt ein neues Wörterbuch hinzuzufügen, wählen Sie die **[!UICONTROL Hinzufügen zu einem vorhandenen Übersetzungsprojekt]** und wählen Sie eine **[!UICONTROL Vorhandenes Übersetzungsprojekt]**.
 1. Im **Zielsprachen** ein Gebietsschema (z. B. `German(de)`). Sie können mehrere Gebietsschemas angeben. Das Formular wird in alle im Feld **Zielsprachen** angegebenen Gebietsschemas übersetzt. Klicken Sie auf **Fertig**.
 1. Klicken Sie im Dialogfeld Wörterbuch hinzugefügt auf **Projekte öffnen**.
@@ -63,7 +63,7 @@ Führen Sie die folgenden Schritte aus, um ein Formular und sein Datensatzdokume
 1. Wählen Sie auf der Benutzeroberfläche von AEM Forms ein Formular aus und tippen Sie auf die Option **[!UICONTROL Wörterbuch hinzufügen]**.
 1. Im Bildschirm &quot;Wörterbuch zum Übersetzungsprojekt hinzufügen&quot;für **[!UICONTROL Projekt]** option
 
-   * Um ein Übersetzungsprojekt zu erstellen, wählen Sie die **[!UICONTROL Neues Übersetzungsprojekt erstellen]** und in der **Projekttitel** -Feld geben Sie den Titel an. Beispiel: `Government Reference Site - German locale.`
+   * Um ein Übersetzungsprojekt zu erstellen, wählen Sie die **[!UICONTROL Neues Übersetzungsprojekt erstellen]** und in der **Projekttitel** -Feld geben Sie den Titel an. Zum Beispiel: `Government Reference Site - German locale.`
    * Um einem vorhandenen Übersetzungsprojekt ein neues Wörterbuch hinzuzufügen, wählen Sie die **[!UICONTROL Hinzufügen zu einem vorhandenen Übersetzungsprojekt]** und wählen Sie eine **[!UICONTROL Vorhandenes Übersetzungsprojekt]**.
 1. Im **Zielsprachen** ein Gebietsschema (z. B. `German(de)`). Sie können mehrere Gebietsschemas angeben. Das Formular wird in alle im Feld **Zielsprachen** angegebenen Gebietsschemas übersetzt. Klicken Sie auf **Fertig**.
 1. Klicken Sie im Dialogfeld Wörterbuch hinzugefügt auf **Projekte öffnen**.

@@ -3,10 +3,10 @@ title: Importieren und Exportieren von Assets
 seo-title: Import and export assets to [!DNL AEM Forms]
 description: Sie können adaptive Formulare und zugehörige Assets in eine AEM-Instanz importieren und exportieren. Dies erleichtert das Integrieren von Formularen oder das Verschieben von Formularen zwischen Systemen.
 seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1325'
-ht-degree: 79%
+source-wordcount: '1323'
+ht-degree: 78%
 
 ---
 
@@ -19,7 +19,7 @@ Für die Assets, für die das Hochladen und Importieren über die [!DNL AEM Form
 
 ## Download und Upload von Assets für Formulare und Dokumente {#download-or-upload-forms-amp-documents-assets}
 
-Mithilfe der [!DNL AEM Forms]-Benutzeroberfläche können Sie Assets aus einer AEM-Instanz exportieren, indem Sie sie als CRX-Paket oder Binärdateien herunterladen. Sie können dann das heruntergeladene AEM CRX-Paket oder die Binärdatei in eine andere AEM-Instanz importieren.
+[!DNL AEM Forms] Mit der -Benutzeroberfläche können Sie Assets aus einer AEM exportieren, indem Sie sie als AEM CRX-Paket oder Binärdateien herunterladen. Sie können dann das heruntergeladene AEM CRX-Paket oder die Binärdatei in eine andere AEM-Instanz importieren.
 
 Der Export und Import über die Benutzeroberfläche von [!DNL AEM Forms] wird für alle Assets mit Ausnahme von adaptiven Formularvorlagen und adaptiven Formularinhaltsrichtlinien unterstützt. Deshalb werden beim Exportieren eines adaptiven Formulars von der [!DNL AEM Forms]-Benutzeroberfläche die verknüpfte adaptive Formularvorlage und die Inhaltsrichtlinien nicht wie andere verknüpfte Assets automatisch exportiert.
 
@@ -166,8 +166,8 @@ Sie können den AEM-Paket-Manager verwenden, um Workflow-Programme zu exportiere
 
 1. Öffnen Sie den [!DNL AEM Forms]-Paket-Manager.
 1. Klicken Sie auf **[!UICONTROL Paket erstellen]**. Das Dialogfeld **[!UICONTROL Neues Paket]** wird angezeigt.
-1. Geben Sie Namen, Version und Gruppe für das Paket an. Klicken Sie auf **[!UICONTROL OK]**.
-1. Klicken Sie auf **[!UICONTROL Bearbeiten]** und öffnen Sie die Registerkarte **[!UICONTROL Filter]**. Klicken **[!UICONTROL Filter hinzufügen]**. Geben Sie den Pfad der Workflow-Anwendung an. Beispiel: /etc/fd/dashboard/startpoints/homemortgage. Klicken Sie auf **[!UICONTROL Regel hinzufügen]**.
+1. Geben Sie den Namen, die Version und die Gruppe für das Paket an. Klicken Sie auf **[!UICONTROL OK]**.
+1. Klicken Sie auf **[!UICONTROL Bearbeiten]** und öffnen Sie die Registerkarte **[!UICONTROL Filter]**. Klicks **[!UICONTROL Filter hinzufügen]**. Geben Sie den Pfad der Workflow-Anwendung an. Beispiel: /etc/fd/dashboard/startpoints/homemortgage. Klicken Sie auf **[!UICONTROL Regel hinzufügen]**.
 
 1. Öffnen Sie die Registerkarte **[!UICONTROL Erweitert]**. Wählen Sie **[!UICONTROL Zusammenführen]** oder **[!UICONTROL Überschreiben]** im Feld „ACL-Bearbeitung“. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**, um das Paket zu erstellen.
@@ -221,9 +221,9 @@ Complete the following steps to create copies of assets and letters:
 
 ## Search {#search-forms}
 
-[!DNL AEM Forms] UI allows you to search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
+[!DNL AEM Forms] UI lets you search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
 
-When you search for assets, [!DNL AEM Forms] displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
+When you search for assets, [!DNL AEM Forms] displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 
@@ -239,7 +239,7 @@ On the side panel, you can use the following to narrow down your search results:
 * Tags
 * Search Criteria; for example, Modified Dates, Publish Status, LiveCopy Status.
 
-The side panel also allows you to save your search settings with names of your choice.
+The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](/help/sites-authoring/search.md).
 

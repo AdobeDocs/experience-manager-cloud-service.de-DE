@@ -2,9 +2,9 @@
 title: Konfigurieren der Segmentierung mit ContextHub
 description: Erfahren Sie, wie Sie die Segmentierung mit ContextHub konfigurieren.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1687'
 ht-degree: 66%
 
 ---
@@ -17,7 +17,7 @@ Je nach den von Ihnen bereits zu den Besuchern Ihrer Site erfassten Informatione
 
 Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalte anzuzeigen. Hier festgelegte [Aktivitäten](activities.md) können auf jeder Seite einbezogen werden – und sie können bestimmen, auf welches Besuchersegment die spezialisierten Inhalte angewendet werden sollen.
 
-AEM ermöglicht Ihnen die einfache Personalisierung Ihrer Benutzererlebnisse. Außerdem können Sie damit die Ergebnisse Ihrer Segmentdefinitionen überprüfen.
+AEM ermöglicht Ihnen die einfache Personalisierung der Benutzererlebnisse. Außerdem können Sie damit die Ergebnisse Ihrer Segmentdefinitionen überprüfen.
 
 ## Zugriff auf Segmente {#accessing-segments}
 
@@ -29,8 +29,8 @@ Zum Zugriff auf Ihre Segmente wählen Sie in der globalen Navigation die Optione
 
 ## Segmenteditor {#segment-editor}
 
-<!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-Der **Segmenteditor** ermöglicht Ihnen die einfache Veränderung eines Segments. Wählen Sie zur Bearbeitung eines Segments ein Segment aus der Liste von Segmenten aus und klicken Sie auf die Schaltfläche **Bearbeiten**.
+<!--The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
+Die **Segment-Editor** ermöglicht Ihnen die einfache Änderung eines Segments. Wählen Sie zur Bearbeitung eines Segments ein Segment aus der Liste von Segmenten aus und klicken Sie auf die Schaltfläche **Bearbeiten**.
 
 ![Segmenteditor](../assets/contexthub-segment-editor.png)
 
@@ -101,7 +101,7 @@ Festlegen eines neuen Segments
    * Mindestwert: `0`
    * Höchstwert: `1000000`
 
-1. Bearbeiten Sie in der Segmentkonsole das neu erstellte Segment, um es im Segmenteditor zu öffnen.
+1. Bearbeiten Sie in der Segment-Konsole Ihr neu erstelltes Segment, um es im Segmenteditor zu öffnen.
 1. Ziehen Sie einen Vergleich oder Verweis in den Segmenteditor. Der Vergleich oder Verweis wird dann im standardmäßigen UND-Container angezeigt.
 1. Doppelklicken oder tippen Sie auf die Konfigurationsoption des neuen Verweises oder Segments, um die spezifischen Parameter zu bearbeiten. In diesem Beispiel prüfen wir auf Personen in Basel.
 
@@ -185,7 +185,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 1. Erstellen Sie ein ContextHub-Segment.
 1. Hinzufügen **Skript-Referenz** -Komponente an der gewünschten Stelle des Segments.
-1. Öffnen Sie das Dialogfeld &quot;Bearbeiten&quot;der **Skript-Referenz** -Komponente. Wenn [ordnungsgemäß konfiguriert](#defining-a-script-to-reference), sollte das Skript im **Skriptname** Dropdown-Liste.
+1. Öffnen Sie das Dialogfeld &quot;Bearbeiten&quot;der **Skript-Referenz** -Komponente. Wenn [ordnungsgemäß konfiguriert](#defining-a-script-to-reference), sollte das Skript im **Skriptname** angezeigt.
 
 ## Organisieren von Segmenten {#organizing-segments}
 

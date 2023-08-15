@@ -2,9 +2,9 @@
 title: Erstellen und Organisieren von Seiten
 description: Erfahren Sie, wie Sie Ihre Website organisieren können, indem Sie Seiten mit AEM erstellen und verwalten.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2544'
+source-wordcount: '2543'
 ht-degree: 86%
 
 ---

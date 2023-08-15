@@ -3,10 +3,10 @@ title: Verwalten von Pipelines
 description: Erfahren Sie, wie Sie Ihre vorhandenen Pipelines verwalten, einschließlich Bearbeiten, Ausführen und Löschen.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 100%
+source-wordcount: '516'
+ht-degree: 97%
 
 ---
 
@@ -62,7 +62,7 @@ Je nach Pipeline-Typ können Sie die Ausführung möglicherweise abbrechen, inde
 
 >[!NOTE]
 >
->Pipelines, die gerade ausgeführt werden, können nicht bearbeitet werden.
+>Eine laufende Pipeline kann nicht bearbeitet werden.
 
 ## Löschen von Pipelines {#deleting-pipelines}
 
@@ -72,7 +72,7 @@ Je nach Pipeline-Typ können Sie die Ausführung möglicherweise abbrechen, inde
 
 >[!NOTE]
 >
->Pipelines, die gerade ausgeführt werden, können nicht gelöscht werden.
+>Eine laufende Pipeline kann nicht gelöscht werden.
 
 ## Details anzeigen {#view-details}
 

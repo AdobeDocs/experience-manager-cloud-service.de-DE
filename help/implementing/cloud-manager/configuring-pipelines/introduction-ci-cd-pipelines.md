@@ -3,10 +3,10 @@ title: CI/CD-Pipelines
 description: Erfahren Sie mehr über die CI/CD-Pipelines in Cloud Manager und wie sie zur effizienten Bereitstellung Ihres Codes verwendet werden können.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 77%
+source-wordcount: '1337'
+ht-degree: 76%
 
 ---
 
@@ -164,7 +164,7 @@ Folgende Einschränkungen gelten.
 * Sie müssen [Aktivieren des flexiblen Modus der Dispatcher-Tools](/help/implementing/dispatcher/disp-overview.md#validation-debug) , um Web-Tier-Konfigurationspipelines zu verwenden.
 * Ein Benutzer muss mit der **Bereitstellungsmanager** Rolle zum Konfigurieren oder Ausführen von Pipelines.
 * Es kann immer nur eine Web-Stufen-Konfigurations-Pipeline pro Umgebung geben.
-* Der Benutzer kann eine Web-Stufen-Konfigurations-Pipeline nicht konfigurieren, wenn die entsprechende Full-Stack-Pipeline ausgeführt wird.
+* Der Benutzer kann eine Web-Tier-Konfigurationspipeline nicht konfigurieren, wenn die entsprechende Full-Stack-Pipeline ausgeführt wird.
 * Die Webstufenstruktur muss der im Dokument definierten flexiblen Modusstruktur entsprechen. [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
 Beachten Sie außerdem, wie das [Vollständige Stack-Pipeline](#full-stack-pipeline) verhält sich beim Einführen einer WebTier-Pipeline.

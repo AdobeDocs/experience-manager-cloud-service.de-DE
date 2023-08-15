@@ -2,7 +2,7 @@
 title: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 description: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 4b63c00847fa21967560a59c3bcd931433a3a73f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1190'
 ht-degree: 84%
@@ -33,7 +33,7 @@ Die neueste Version vom [!DNL Workfront for Experience Manager enhanced connecto
 
 >[!IMPORTANT]
 >
->Adobe empfiehlt Folgendes: [Aktualisierung auf die neueste Version 1.9.12](/help/assets/workfront-connector-install.md) des [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe empfiehlt, [Aktualisierung auf die neueste Version 1.9.12](/help/assets/workfront-connector-install.md) des [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekannte Probleme {#known-issues}
 
@@ -89,7 +89,7 @@ Die neueste Version vom [!DNL Workfront for Experience Manager enhanced connecto
 
 <!--
 
-* Workfront enhanced connector now allows you to use new search parameters to be more specific while defining folder names on large repositories.
+* Workfront enhanced connector now lets you use new search parameters to be more specific while defining folder names on large repositories.
 
 -->
 

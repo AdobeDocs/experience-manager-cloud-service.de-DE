@@ -1,11 +1,11 @@
 ---
 title: Seitenvergleich
-description: Die Seitenvergleich-Funktion ermöglicht einen bequemen parallelen Vergleich zweier Seiten mit hervorgehobenen Unterschieden.
+description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, indem sie nebeneinander angezeigt werden und die Unterschiede hervorgehoben sind.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 47%
+source-wordcount: '610'
+ht-degree: 79%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 47%
 
 ## Einführung {#introduction}
 
-Die Inhaltserstellung ist ein iterativer Prozess. Damit ein Autor effizient arbeiten kann, muss er sehen können, was sich von Iteration zu Iteration verändert hat. Es ist ineffizient und bringt Fehler mit sich, wenn eine Seitenversion und danach die andere geprüft wird. Ein Autor möchte die aktuelle Seite einfach nebeneinander mit einer anderen Version vergleichen können.
+Die Inhaltserstellung ist ein iterativer Prozess. Damit ein Autor effizient arbeiten kann, muss er sehen können, was sich von Iteration zu Iteration verändert hat. Es ist ineffizient und bringt Fehler mit sich, wenn eine Seitenversion und danach die andere geprüft wird. Eine Autorin bzw. ein Autor möchte die aktuelle Seite einfach nebeneinander mit einer anderen Version vergleichen können.
 
-Die Seitenvergleich-Funktion ermöglicht einen bequemen parallelen Vergleich zweier Seiten mit hervorgehobenen Unterschieden.
+Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, indem sie nebeneinander angezeigt werden und die Unterschiede hervorgehoben sind.
 
 >[!NOTE]
 >
@@ -36,12 +36,12 @@ Informieren Sie sich unter den entsprechenden Themen, wie der Seitenvergleich im
 
 ### Darstellung von Unterschieden {#presentation-of-differences}
 
-Unabhängig vom verglichenen Inhalt bleibt die Darstellung des Vergleichs gleich.
+Unabhängig vom verglichenen Inhalt bleibt die Darstellung der Unterschiede dieselbe.
 
-* Der Inhalt, der beim Start des Vergleichs ausgewählt wurde, wird auf der linken Seite angezeigt (der diff-Einstiegspunkt).
-* Der Vergleich mit dem Inhalt wird rechts angezeigt (mit dem der ausgewählte Inhalt verglichen wird).
+* Nachdem Sie den Seitenvergleich gestartet haben, wird der ausgewählte Inhalt auf der linken Seite angezeigt (der Differenzeinstiegspunkt).
+* Rechts wird der zu vergleichende Inhalt angezeigt (der mit dem ausgewählten Inhalt verglichen wird).
 
-Wenn Sie beispielsweise Versionen vergleichen, wird die aktuelle Version auf der linken Seite und die vorherige Version auf der rechten Seite angezeigt.
+Wenn Sie beispielsweise Versionen vergleichen, wird die aktuelle Version links und die vorherige Version rechts angezeigt.
 
 Die Quelle beider Seiten wird deutlich in der Kopfzeile am oberen Rand des Browser-Fensters angezeigt.
 
@@ -51,12 +51,12 @@ Der Vergleich erkennt Änderungen auf Komponenten- und HTML-Ebene. Geänderte El
 
 **Komponentenänderungen**
 
-* Hellgrün - Komponente hinzugefügt
-* Rosa - Komponente entfernt
+* Hellgrün – Komponente hinzugefügt
+* Rosa – Komponente entfernt
 
 **HTML-Änderungen**
 
-* Dunkelgrün - HTML hinzugefügt
+* Dunkelgrün – HTML hinzugefügt
 * Rot – HTML entfernt
 
 >[!NOTE]
@@ -85,11 +85,11 @@ Sie können den Seitenvergleich jederzeit beenden, indem Sie in der Kopfzeile au
 
 ## Beschränkungen {#limitations}
 
-Es gibt Situationen, in denen der Seitenvergleich möglicherweise keine Unterschiede wie erwartet erkennt.
+Es gibt Situationen, in denen der Seitenvergleich möglicherweise Unterschiede nicht wie erwartet erkennt.
 
-* Bei der Variation von Versionen und Launches berücksichtigt der Vergleich keine dynamischen Komponenten wie Breadcrumbs, Menüs, Produktlisten oder Logos (Komponenten, die für die Wiedergabe ihres Inhalts auf die Site-Struktur angewiesen sind).
+* Beim Vergleich von Versionen und Launches berücksichtigt der Seitenvergleich keine dynamischen Komponenten wie Breadcrumbs, Menüs, Produktlisten oder Logos (Komponenten, die die Site-Struktur zur Darstellung ihres Inhalts nutzen).
 * Bei Versionen erstellt der Vergleich die Richtlinien zur Zugriffssteuerung und die Live Copy-Beziehungen nicht neu.
-* Wenn eine Seite verschoben wird, können Sie mit Versionen, die vor dem Verschieben vorgenommen wurden, keinen Vergleich mehr durchführen.
+* Wenn eine Seite verschoben wird, können Sie keinen Vergleich mehr mit Versionen durchführen, die vor dem Verschieben erstellt wurden. 
    * Wenn Probleme beim Vergleich auftreten, überprüfen Sie in der [Zeitleiste](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
 
 >[!NOTE]

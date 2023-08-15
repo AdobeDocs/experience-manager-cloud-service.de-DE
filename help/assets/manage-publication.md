@@ -5,10 +5,10 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 8466595f988d3a10806d4654885c14a622d14057
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1630'
-ht-degree: 85%
+source-wordcount: '1627'
+ht-degree: 81%
 
 ---
 
@@ -28,13 +28,13 @@ Sie können Assets auf der Asset- oder Ordnerebene veröffentlichen oder die Ver
 
 ## Veröffentlichen von Assets mit „Quick Publish“ {#quick-publish}
 
-Mit der Funktion „Quick Publish“ können Sie Inhalte sofort an dem ausgewählten Ziel veröffentlichen. Gehen Sie in der [!DNL Experience Manager Assets]-Konsole zum übergeordneten Ordner und wählen Sie alle Assets oder Ordner aus, die Sie veröffentlichen möchten. Klicken Sie in der Symbolleiste auf die Option **[!UICONTROL Quick Publish]**, und wählen Sie in der Dropdown-Liste das Ziel aus, an dem Sie die Assets veröffentlichen möchten.
+Mit der Funktion &quot;Quick Publish&quot;können Sie Inhalte sofort an dem ausgewählten Ziel veröffentlichen. Gehen Sie in der [!DNL Experience Manager Assets]-Konsole zum übergeordneten Ordner und wählen Sie alle Assets oder Ordner aus, die Sie veröffentlichen möchten. Klicken Sie in der Symbolleiste auf die Option **[!UICONTROL Quick Publish]**, und wählen Sie in der Dropdown-Liste das Ziel aus, an dem Sie die Assets veröffentlichen möchten.
 
 ![Quick Publish](assets/quick-publish-to-aem.png)
 
 ## Veröffentlichen von Assets mit „Veröffentlichung verwalten“ {#manage-publication}
 
-Mit der Option „Veröffentlichung verwalten“ können Sie Inhalte am ausgewählten Ziel veröffentlichen oder die Veröffentlichung rückgängig machen, [Inhalte aus dem gesamten DAM-Repository zur Veröffentlichungsliste hinzufügen](#add-content), [Ordnereinstellungen für die Veröffentlichung von Inhalten in den ausgewählten Ordnern einbeziehen](#include-folder-settings) und Filter anwenden sowie die [Veröffentlichung für ein späteres Datum oder eine spätere Uhrzeit planen](#publish-assets-later).
+Mithilfe der Funktion Veröffentlichung verwalten können Sie Inhalte in und von dem ausgewählten Ziel aus veröffentlichen oder deren Veröffentlichung rückgängig machen. [Inhalt hinzufügen](#add-content) zur Veröffentlichungsliste aus dem gesamten DAM-Repository [Ordnereinstellungen einschließen](#include-folder-settings) zum Veröffentlichen des Inhalts der ausgewählten Ordner und zum Anwenden von Filtern und [Veröffentlichung planen](#publish-assets-later) zu einem späteren Zeitpunkt an.
 
 Gehen Sie in der [!DNL Experience Manager Assets]-Konsole zum übergeordneten Ordner und wählen Sie alle Assets oder Ordner aus, die Sie veröffentlichen möchten. Klicken Sie in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**. Wenn Sie [!DNL Dynamic Media] und [!DNL Brand Portal] nicht in der [!DNL Experience Manager Assets] Instanz haben, können Sie Assets und Ordner nur in [!DNL Experience Manager Assets] veröffentlichen.
 
@@ -61,7 +61,7 @@ Um fortzufahren, klicken Sie auf **[!UICONTROL Weiter]**. Je nach Auswahl werden
 
 ### Inhalt hinzufügen {#add-content}
 
-Mit dem Veröffentlichen in [!DNL Experience Manager Assets] können Sie der Veröffentlichungsliste weitere Inhalte (Assets und Ordner) hinzufügen. Sie können der Liste weitere Assets oder Ordner aus den gesamten DAM-Repositorys hinzufügen. Klicken **[!UICONTROL Inhalt hinzufügen]** um weitere Inhalte hinzuzufügen.
+Veröffentlichen in [!DNL Experience Manager Assets] können Sie der Veröffentlichungsliste weitere Inhalte (Assets und Ordner) hinzufügen. Sie können der Liste weitere Assets oder Ordner aus den gesamten DAM-Repositorys hinzufügen. Klicks **[!UICONTROL Inhalt hinzufügen]** um weitere Inhalte hinzuzufügen.
 
 Sie können mehrere Assets aus einem Ordner hinzufügen oder mehrere Ordner gleichzeitig hinzufügen. Es ist jedoch nicht möglich, Assets aus mehreren Ordnern gleichzeitig hinzuzufügen.
 
@@ -179,13 +179,13 @@ Sie können Assets, Ordner und Sammlungen in der [!DNL Experience Manager Assets
 
 ## Veröffentlichung anfordern {#request-publication}
 
-Die `Request Publication` -Option hilft beim Authentifizieren des Workflows von Assets, bevor sie veröffentlicht werden [!DNL AEM] Assets-Umgebung. [!DNL AEM] bietet verschiedenen Benutzern unterschiedliche Berechtigungen. Sie können *contributor* , der Assets hochlädt, diese jedoch erst veröffentlichen kann, nachdem die Uploads überprüft wurden. Darüber hinaus wird als *Admin* Sie können es verwalten, Workflows der Assets zu lesen und zu schreiben.
+Die `Request Publication` -Option hilft beim Authentifizieren des Workflows von Assets, bevor sie veröffentlicht werden [!DNL AEM] Assets-Umgebung. [!DNL AEM] bietet verschiedenen Benutzern unterschiedliche Berechtigungen. Sie können *contributor* , der Assets hochlädt, diese jedoch erst veröffentlichen kann, nachdem die Uploads überprüft wurden. Darüber hinaus ist es ein *Admin* Sie können es verwalten, Workflows der Assets zu lesen und zu schreiben.
 
 Die Option Veröffentlichung anfordern steht folgenden Benutzern zur Verfügung:
 * **Mitarbeiter:** Wenn Sie Benutzer sind, die dazu beitragen können, [!DNL AEM] Assets und Sie haben dann eingeschränkten Zugriff auf die [!DNL AEM] Assets-Workflow. `Manage publication` Schaltfläche ist für Sie ausgeblendet. Als Mitwirkender können Sie nur Beiträge hinzufügen, indem Sie Assets hinzufügen, diese jedoch nicht veröffentlichen oder Lesezugriff auf den Workflow haben.
 
 * **Workflow-Benutzer:** Dieser Benutzer kann keine Assets veröffentlichen, hat jedoch Lesezugriff auf den Workflow. Als Workflow-Benutzer haben Sie folgende Möglichkeiten:
-   * Veröffentlichung anfordern
+   * Anfragenveröffentlichung
    * Ansicht `Manage publication` button
    * Workflow planen und Optionen anzeigen `schedule now` und `schedule later`
 

@@ -2,7 +2,7 @@
 title: Repository-Strukturpaket von AEM-Projekten
 description: Maven-Projekte in Adobe Experience Manager as a Cloud Service erfordern eine Unterpaketdefinition für die Repository-Struktur, deren einziger Zweck darin besteht, die JCR-Repository-Stämme zu definieren, in denen die Code-Unterpakete des Projekts bereitgestellt werden.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 40%
@@ -86,7 +86,7 @@ Stellen Sie sicher, dass Sie dieses neue Maven-Unterprojekt zu den übergeordnet
                         Examples of complex roots
 
 
-                        Overlays of /libs typically require defining the overlayed structure, at each level here.
+                        Overlays of /libs typically require defining the overlay structure, at each level here.
 
                         For example, adding a new section to the main AEM Tools navigation, necessitates the following rules:
 
@@ -178,7 +178,7 @@ Wenn die Repository-Strukturpakete nicht korrekt eingerichtet sind, wird beim Ma
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-Dieser Fehler zeigt an, dass das brechende Code-Paket keine `<repositoryStructurePackage>` Listen `/apps/some/path` in der Filterliste.
+Dieser Fehler zeigt an, dass das brechende Code-Paket keine `<repositoryStructurePackage>` , die `/apps/some/path` in der Filterliste.
 
 ## Zusätzliche Ressourcen
 

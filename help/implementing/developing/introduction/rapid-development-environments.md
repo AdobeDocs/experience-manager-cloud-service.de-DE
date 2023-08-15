@@ -2,9 +2,9 @@
 title: Schnelle Entwicklungsumgebungen
 description: Erfahren Sie, wie Sie Rapid Development Environments für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung verwenden.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3313'
+source-wordcount: '3312'
 ht-degree: 88%
 
 ---
@@ -70,7 +70,7 @@ Der Bildschirm **Überblick** zeigt nun in der Karte **Umgebungen** Ihre neue Um
 
 Nach der Erstellung werden RDEs auf die neueste AEM Version eingestellt. Das Zurücksetzen der RDE, das auch mit Cloud Manager durchgeführt werden kann, führt einen Zyklus der RDE durch und setzt sie auf die neueste AEM Version.
 
-Weitere Informationen zur Verwendung von Cloud Manager zum Erstellen von Umgebungen, zum Verwalten, wer Zugriff darauf hat, und zum Zuweisen benutzerdefinierter Domänen finden Sie unter [Cloud Manager-Dokumentation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+Weitere Informationen zur Verwendung von Cloud Manager zum Erstellen von Umgebungen, zum Verwalten, wer Zugriff darauf hat, und zum Zuweisen benutzerdefinierter Domänen finden Sie unter [die Cloud Manager-Dokumentation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ## Installieren der RDE-Befehlszeilen-Tools {#installing-the-rde-command-line-tools}
 
@@ -104,7 +104,7 @@ Nachdem Sie mit Cloud Manager einen RDE für Ihr Programm hinzugefügt haben, k�
 
    `aio config:set cloudmanager_environmentid 123456`
 
-1. Nachdem Sie die Konfiguration des Plug-ins abgeschlossen haben, melden Sie sich an, indem Sie
+1. Nachdem Sie die Konfiguration des Plug-ins abgeschlossen haben, melden Sie sich durch
 
    `aio login`
 
@@ -425,7 +425,7 @@ Sie können die RDE auch direkt auf der Seite **Übersicht** auf der Karte **Umg
 
 ![RDE über die Karte „Umgebungen“ zurücksetzen](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
-Weitere Informationen zur Verwendung von Cloud Manager zur Verwaltung Ihrer Umgebungen finden Sie unter [Cloud Manager-Dokumentation](/help/implementing/cloud-manager/manage-environments.md).
+Weitere Informationen zur Verwendung von Cloud Manager zur Verwaltung Ihrer Umgebungen finden Sie unter [die Cloud Manager-Dokumentation](/help/implementing/cloud-manager/manage-environments.md).
 
 ## Ausführungsmodi {#runmodes}
 
@@ -441,7 +441,7 @@ Allgemeine Informationen zu den Ausführungsmodi finden Sie in der [Dokumentatio
 >
 >Die RDE-OSGi-Konfiguration ist insofern eindeutig, als sie die Werte aller OSGi-Eigenschaften erbt, die durch den `dev`-Ausführungsmodus des Bundles deklariert wurden.
 
-RDEs unterscheiden sich von anderen Umgebungen darin, dass Inhalte in einem install.rde-Ordner (bzw. install.author.rde oder install.publish.rde) unter /apps installiert werden können. Auf diese Weise können Sie Inhalte mithilfe des Befehlszeilen-Tools an Git übertragen und an die RDE übermitteln.
+RDEs unterscheiden sich von anderen Umgebungen darin, dass Inhalte in einem install.rde-Ordner (bzw. install.author.rde oder install.publish.rde) unter /apps installiert werden können. Auf diese Weise können Sie Inhalte mithilfe des Befehlszeilen-Tools an Git übergeben und an das RDE übermitteln.
 
 ## Mit Inhalt füllen {#populating-content}
 

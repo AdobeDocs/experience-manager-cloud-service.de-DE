@@ -2,9 +2,9 @@
 title: Best Practices für SEO und URL-Verwaltung für Adobe Experience Manager as a Cloud Service
 description: Best Practices für SEO und URL-Verwaltung für Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3706'
+source-wordcount: '3705'
 ht-degree: 93%
 
 ---
@@ -192,7 +192,7 @@ Vielleicht möchten Sie den Benutzern von übersetzten Inhalten lokalisierte Sei
 
 Die Herausforderung bei der Lokalisierung des Seitennamens besteht darin, dass viele der für die AEM-Plattform erhältlichen Lokalisierungs-Tools für die Synchronisierung von Inhalten identische Seitennamen für verschiedene Sprachen benötigen.
 
-Die Eigenschaft `sling:alias` ermöglicht beides. `sling:alias` kann jeder Ressource als Eigenschaft hinzugefügt werden, um einen Alias für die Ressource zu erlauben. Im vorangegangenen Beispiel hätten Sie Folgendes:
+Die `sling:alias` -Eigenschaft ermöglicht Ihnen, unseren Kuchen zu essen und zu essen. `sling:alias` kann jeder Ressource als Eigenschaft hinzugefügt werden, um einen Alias für die Ressource zu erlauben. Im vorangegangenen Beispiel hätten Sie Folgendes:
 
 * Eine Seite im JCR unter:
   `…/es/home`
@@ -243,7 +243,7 @@ Ein Beispiel dafür, wie dieses Problem auftritt:
 
 Es gibt Möglichkeiten, benutzerdefinierte Dispatch-Flush-Regeln zu konfigurieren, welche die kürzere URL zur Invalidierung des Caches der längeren URL zuordnen.
 
-Es gibt jedoch auch eine einfachere Möglichkeit, dies zu verwalten:
+Es gibt jedoch auch eine einfachere Möglichkeit, dies zu handhaben:
 
 1. **SlingResourceResolver-Regeln**
 

@@ -4,10 +4,10 @@ description: Lernen Sie die Grundlagen der AEM-Paketverwaltung mit Package Manag
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3775'
-ht-degree: 83%
+source-wordcount: '3770'
+ht-degree: 82%
 
 ---
 
@@ -47,7 +47,7 @@ Weitere Informationen zum Verwalten von Paketen für AEMaaCS finden Sie unter [B
 
 ## Packungsgröße {#package-size}
 
-Adobe empfiehlt, keine großen Packages zu erstellen. Dadurch werden beim Hochladen und Herunterladen von Paketen Zeitüberschreitungsprobleme vermieden.
+Adobe empfiehlt, keine großen Pakete zu erstellen. Dadurch werden beim Hochladen und Herunterladen von Paketen Zeitüberschreitungsprobleme vermieden.
 
 In der Regel sollte ein Paket innerhalb von 60 Sekunden vollständig übertragen werden. Hier finden Sie die folgende Formel als Anleitung.
 
@@ -55,7 +55,7 @@ In der Regel sollte ein Paket innerhalb von 60 Sekunden vollständig übertragen
 MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 ```
 
-Da der Netzwerk-Traffic variabel ist und immer kleiner als der angegebene maximale theoretische Wert ist, versuchen Sie, ein Tool für den Online-Geschwindigkeitstest zu verwenden.
+Da der Netzwerk-Traffic variabel ist und immer kleiner ist als der angegebene maximale theoretische Wert, versuchen Sie, ein Online-Internet-Geschwindigkeitstest-Tool zu verwenden.
 
 Die Internetgeschwindigkeiten unterscheiden sich fast immer von denen von Uploads und Downloads. Wenn Sie Pakete hochladen und herunterladen müssen, sollten Sie den niedrigeren Wert (in der Regel die Upload-Geschwindigkeit) in Ihrer Berechnung verwenden.
 
@@ -105,7 +105,7 @@ Sie haben drei Möglichkeiten, auf Package Manager zuzugreifen:
 
 Package Manager ist in vier Hauptfunktionsbereiche unterteilt:
 
-* **Linker Navigationsbereich**: In diesem Bereich können Sie die Liste der Packages filtern und sortieren.
+* **Linke Navigationsleiste** - In diesem Bereich können Sie die Liste der Packages filtern und sortieren.
 * **Paketliste**: Dies ist die Liste der Pakete in Ihrer Instanz, die entsprechend der Auswahl im linken Navigationsbereich gefiltert und sortiert wurden.
 * **Aktivitätsprotokoll**: Dieses Bedienfeld ist zunächst minimiert und wird erweitert, um die Aktivität von Package Manager detailliert zu beschreiben, z. B. wenn ein Paket aufgebaut oder installiert wird. Unter der Registerkarte „Aktivitätsprotokoll“ sind weitere Schaltflächen für Folgendes verfügbar:
    * **Protokoll löschen**
@@ -270,7 +270,7 @@ Es ist nicht zwingend erforderlich, das Paket sofort nach seiner Erstellung aufz
 
 >[!TIP]
 >
->Um Timeouts zu vermeiden, empfiehlt Adobe [keine großen Packages zu erstellen.](#package-size)
+>Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe [keine großen Packages zu erstellen.](#package-size)
 
 ### Aufbauen eines Pakets {#building-a-package}
 
@@ -286,7 +286,7 @@ Ein Paket wird oft gleich beim [Erstellen des Pakets](#creating-a-new-package) a
 
 >[!TIP]
 >
->Um Timeouts zu vermeiden, empfiehlt Adobe [keine großen Packages zu erstellen.](#package-size)
+>Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe [keine großen Packages zu erstellen.](#package-size)
 
 ### Bearbeiten eines Pakets {#edit-package}
 
@@ -354,7 +354,7 @@ Nach dem Aufbau eines Pakets können Sie dessen Inhalt anzeigen.
 
 >[!TIP]
 >
->Um Timeouts zu vermeiden, empfiehlt Adobe [keine großen Packages zu erstellen.](#package-size)
+>Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe [keine großen Packages zu erstellen.](#package-size)
 
 ### Hochladen von Paketen vom Dateisystem {#uploading-packages-from-your-file-system}
 
@@ -377,7 +377,7 @@ Der Paketinhalt ist jetzt in AEM vorhanden. Um den Inhalt jedoch verfügbar zu m
 
 >[!TIP]
 >
->Um Timeouts zu vermeiden, empfiehlt Adobe [keine großen Packages zu erstellen.](#package-size)
+>Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe [keine großen Packages zu erstellen.](#package-size)
 
 ### Validieren von Paketen {#validating-packages}
 
@@ -395,7 +395,7 @@ Package Manager kann die folgenden Validierungen durchführen:
 
 >[!NOTE]
 >
->Da Pakete nicht zum Bereitstellen von Code in AEMaaCS verwendet werden können, ist die Validierung von **OSGi-Paketimporten** nicht erforderlich.
+>Da Pakete nicht zum Bereitstellen von Code in AEMaaCS verwendet werden können, **OSGi-Paketimporte** -Validierung nicht erforderlich.
 
 **Prüfumfang**
 
@@ -417,7 +417,7 @@ Um Fehler aufgrund nicht erfüllter OSGi-Bundles zu beheben, muss die Abhängigk
 
 >[!NOTE]
 >
->Da Pakete nicht zum Bereitstellen von Code in AEMaaCS verwendet werden können, ist die Validierung von **Überlagerungen** nicht erforderlich.
+>Da Pakete nicht zum Bereitstellen von Code in AEMaaCS verwendet werden können, **Überlagerungen** -Validierung nicht erforderlich.
 
 **Prüfumfang**
 
@@ -528,7 +528,7 @@ Beim Hochladen eines Pakets wird nur der Paketinhalt zum Repository hinzugefügt
 >
 >Durch die Installation eines Pakets können vorhandene Inhalte überschrieben oder gelöscht werden. Laden Sie ein Paket nur hoch, wenn Sie sicher sind, dass es keine benötigten Inhalte löscht oder überschreibt.
 
-Vor der Installation Ihres Pakets erstellt Package Manager automatisch ein Snapshot-Paket, das den überschriebenen Inhalt enthält. Dieser Snapshot wird bei der Deinstallation des Pakets neu installiert.
+Vor der Installation Ihres Pakets erstellt Package Manager automatisch ein Snapshot-Paket, das den überschriebenen Inhalt enthält. Dieser Schnappschuss wird bei der Deinstallation des Pakets neu installiert.
 
 1. [Greifen Sie auf Package Manager zu.](#accessing)
 

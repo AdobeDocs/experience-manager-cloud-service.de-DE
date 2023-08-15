@@ -3,10 +3,10 @@ title: Einführung in  [!DNL AEM Forms]  as a Cloud Service
 description: Entdecken Sie AEM Forms und erfahren Sie, wie Sie damit geschäftsbereite Dokumente und Formularinhalte erstellen können. Erfahren Sie mehr über Platform-as-a-Service (PaaS) und darüber, wie Sie digitale Formulare und Geschäftsprozesse als Unternehmenslösungen verwalten und Forms mit Adobe Sign und aktuellen Datenquellen verbinden können.
 landing-page-description: Erfahren Sie, wie Sie Formulare in AEM as a Cloud Service verwenden.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 92%
+source-wordcount: '1155'
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ Verwenden Sie formularzentrierte Workflows, um die Verarbeitung und Weiterleitun
 
 ## Optimieren der Formularleistung
 
-Der Dienst ermöglicht die Integration in Adobe Analytics, sodass Sie Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente erfassen und verfolgen können. Ziel dieser Analyse ist es, informierte, auf Daten basierende Entscheidungen zu erforderlichen Formularänderungen treffen zu können, durch die Formulare oder Dokumente benutzerfreundlicher werden. Sie können Adobe Analytics verwenden, um Interaktionsmuster und Probleme zu ermitteln, auf die Benutzerinnen und Benutzer bei der Verwendung von adaptiven Formularen stoßen.
+Der Dienst ist mit Adobe Analytics integriert, mit dem Sie Leistungsmetriken für Ihre veröffentlichten Formulare erfassen und verfolgen können. Ziel dieser Analyse ist es, informierte, auf Daten basierende Entscheidungen zu erforderlichen Formularänderungen treffen zu können, durch die Formulare oder Dokumente benutzerfreundlicher werden. Sie können Adobe Analytics verwenden, um Interaktionsmuster und Probleme zu ermitteln, auf die Benutzerinnen und Benutzer bei der Verwendung von adaptiven Formularen stoßen.
 
 
 ## Erste Schritte {#key-features}

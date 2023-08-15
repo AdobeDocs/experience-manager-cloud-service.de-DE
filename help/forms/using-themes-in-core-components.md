@@ -4,9 +4,9 @@ description: Mithilfe von Designs können Sie ein adaptives Formular formatieren
 seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
 keywords: Neues Design erstellen, Design anpassen, neues Design hochladen, Design in Formularen verwenden, Design mithilfe der Frontend-Pipeline anpassen
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: fc0ff8cff8c616bc5576d834883aa0fe38ef593e
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2711'
+source-wordcount: '2709'
 ht-degree: 16%
 
 ---
@@ -61,7 +61,7 @@ Das Anpassen eines Designs bezieht sich auf den Prozess der Änderung und Person
 ### Voraussetzungen {#prerequisites-to-customize}
 
 * Machen Sie sich mit [Einrichten einer Pipeline in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#setup-pipeline) und über grundlegende Kenntnisse zum Einrichten einer Pipeline verfügen, können Sie Ihre Designanpassungen effizient verwalten und bereitstellen.
-* Erfahren Sie, wie [Konfigurieren eines Benutzers mit der Rolle &quot;Mitarbeiter&quot;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=de). Wenn Sie wissen, wie Sie einen Benutzer mit der Rolle &quot;contributor&quot;konfigurieren, können Sie die erforderlichen Berechtigungen für die Designanpassung erteilen.
+* Erfahren Sie, wie [Konfigurieren eines Benutzers mit der Rolle &quot;Mitarbeiter&quot;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=de). Wenn Sie verstehen, wie Sie einen Benutzer mit der Rolle &quot;contributor&quot;konfigurieren, können Sie die erforderlichen Berechtigungen für die Designanpassung erteilen.
 * Installieren Sie die neueste Version von [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven ist ein Werkzeug zur Automatisierung von Builds, das häufig für Java™-Projekte verwendet wird. Durch die Installation der neuesten Version stellen Sie sicher, dass Sie über die erforderlichen Abhängigkeiten für die Designanpassung verfügen.
 * Installieren Sie einen Nur-Text-Editor. Beispielsweise Microsoft® Visual Studio-Code. Die Verwendung eines Texteditors wie Microsoft® Visual Studio Code bietet eine benutzerfreundliche Umgebung zum Bearbeiten und Ändern von Designdateien.
 

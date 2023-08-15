@@ -2,10 +2,10 @@
 title: Verwalten von Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM-Inhaltsfragmente verwalten können, die die Grundlage für Ihren Headless-Content bilden.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1770'
-ht-degree: 87%
+source-wordcount: '1768'
+ht-degree: 85%
 
 ---
 
@@ -76,7 +76,7 @@ Die Methode zum Erstellen eines Inhaltsfragments ist folgende:
 
       * **Name**
 
-        Name; wird verwendet, um die URL zu bilden.
+        Der Name; wird verwendet, um die URL zu bilden.
 
         Obligatorisch; wird automatisch aus dem Titel abgeleitet, kann jedoch aktualisiert werden.
 
@@ -105,11 +105,11 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 * **Checkout**
 * **Eigenschaften**
 
-   * Hier können Sie die Metadaten eines Fragments anzeigen und/oder bearbeiten.
+   * Hiermit können Sie die Metadaten des Fragments anzeigen, bearbeiten oder beides.
 
 * **Bearbeiten**
 
-   * Hier können Sie [das Fragment zum Bearbeiten des Inhalts](/help/assets/content-fragments/content-fragments-variations.md) zusammen mit seinen Elementen, Varianten, verknüpften Inhalten und Metadaten öffnen.
+   * Ermöglicht Ihnen Folgendes [Öffnen Sie das Fragment zur Bearbeitung des Inhalts.](/help/assets/content-fragments/content-fragments-variations.md) zusammen mit den zugehörigen Elementen, Varianten, verknüpften Inhalten und Metadaten.
 
 * **Quick Publish**
 * **Veröffentlichung verwalten**
@@ -323,7 +323,7 @@ Sie werden nebeneinander angezeigt, wobei:
    * Eingefügter Text: Grün
    * Ersetzter Text: Blau
 
-* Sie über das Vollbildsymbol jede Version separat öffnen können. Wechseln Sie dann wieder zur parallelen Ansicht.
+* Über das Symbol für den Vollbildmodus können Sie jede Version einzeln öffnen und dann wieder zur parallelen Ansicht wechseln
 * Sie die jeweilige Version **wiederherstellen** können.
 * Sie über **Fertig** zur Konsole zurückkehren.
 
@@ -361,7 +361,7 @@ Der Zugriff kann auf folgende Weisen erfolgen:
 * Nach der Erstellung; Verwenden von [Aktionen, die in der Assets-Konsole verfügbar sind](#actions-for-a-content-fragment-assets-console).
 * Im [Inhaltsfragment-Editor](#toolbar-actions-in-the-content-fragment-editor)
 
-Wenn Sie [eine Seite veröffentlichen, die das Fragment verwendet](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); Das Fragment wird in den Seitenverweisen aufgeführt.
+Wenn Sie [eine Seite veröffentlichen, die das Fragment verwendet](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); das Fragment wird in den Seitenverweisen aufgeführt.
 
 >[!CAUTION]
 >

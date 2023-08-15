@@ -3,9 +3,9 @@ title: Validieren und Debuggen mit den Dispatcher Tools
 description: Erfahren Sie mehr über die lokale Validierung, das Debugging, die Dateistruktur mit flexiblem Modus und die Migration vom alten Modus zum flexiblen Modus.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2861'
+source-wordcount: '2860'
 ht-degree: 55%
 
 ---
@@ -404,7 +404,7 @@ Bei einer Cloud Manager-Bereitstellung muss die Variable `httpd -t` -Syntaxprüf
 
 ### Phase 3 {#third-phase}
 
-Wenn in dieser Phase ein Fehler auftritt, bedeutet dies, dass die Adobe eine oder mehrere unveränderliche Dateien geändert hat. In diesem Fall müssen Sie die entsprechenden unveränderlichen Dateien durch die im Abschnitt `src` -Verzeichnis des SDK. Das folgende Protokollbeispiel veranschaulicht dieses Problem:
+Wenn in dieser Phase ein Fehler auftritt, bedeutet dies, dass Adobe eine oder mehrere unveränderliche Dateien geändert hat. In diesem Fall müssen Sie die entsprechenden unveränderlichen Dateien durch die im Abschnitt `src` -Verzeichnis des SDK. Das folgende Protokollbeispiel veranschaulicht dieses Problem:
 
 ```
 Phase 3: Immutability check

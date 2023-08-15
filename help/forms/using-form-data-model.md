@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 79%
+source-wordcount: '1028'
+ht-degree: 75%
 
 ---
 
@@ -52,7 +52,7 @@ Sie können [adaptive Formulare](creating-adaptive-form.md) und adaptive Formula
 
    ![Create-af-2-1](assets/create-af-2-1.png)
 
-1. (**Nur adaptive Formularfragmente**) Sie können ein adaptives Formularfragment auf Grundlage eines einzelnen Datenmodellobjekts in einem Formulardatenmodell erstellen. Erweitern **[!UICONTROL Definitionen des Formulardatenmodells]** Dropdown-Liste. Es listet alle Datenmodellobjekte im angegebenen Formulardatenmodell auf. Wählen Sie ein Datenmodellobjekt aus der Liste aus.
+1. (**Nur adaptive Formularfragmente**) Sie können ein adaptives Formularfragment auf Grundlage eines einzelnen Datenmodellobjekts in einem Formulardatenmodell erstellen. Erweitern **[!UICONTROL Definitionen des Formulardatenmodells]** angezeigt. Es listet alle Datenmodellobjekte im angegebenen Formulardatenmodell auf. Wählen Sie ein Datenmodellobjekt aus der Liste aus.
 
    ![create-af-3](assets/create-af-3.png)
 
@@ -88,7 +88,7 @@ For more information, see:
 
 ## Vorschau mit Beispieldaten {#preview-ic}
 
-Mit dem Formulardatenmodelleditor können Sie Beispieldaten für Datenmodellobjekte im Formulardatenmodell generieren und bearbeiten. Sie können diese Daten zur Vorschau und zum Testen adaptiver <!--interactive communications and-->-Formulare verwenden. Sie müssen die Beispieldaten vor der Vorschau generieren, wie beschrieben unter [Arbeiten mit einem Formulardatenmodell](work-with-form-data-model.md#sample).
+Mit dem Formulardatenmodell-Editor können Sie Beispieldaten für Datenmodellobjekte im Formulardatenmodell generieren und bearbeiten. Sie können diese Daten zur Vorschau und zum Testen adaptiver <!--interactive communications and-->-Formulare verwenden. Sie müssen die Beispieldaten vor der Vorschau generieren, wie beschrieben unter [Arbeiten mit einem Formulardatenmodell](work-with-form-data-model.md#sample).
 
 <!--To preview an interactive communication with sample Form Data Model data:
 
@@ -120,7 +120,7 @@ Edit Properties dialog for an interactive communication-->
 
 Sie können ein auf einem Formulardatenmodell basierendes Formular so konfigurieren, dass die vom Benutzer im Formular übermittelten Daten für ein Datenmodellobjekt bei der Übermittlung in dessen Datenquellen geschrieben werden. Zu diesem Zweck stellen [!DNL Experience Manager Forms] die [Übermittlungsaktion für Formulardatenmodelle](configuring-submit-actions.md) zur Verfügung. Standardmäßig ist diese nur für adaptive Formulare verfügbar, die auf einem Formulardatenmodell basieren. Durch diese Aktion werden übermittelte Daten für ein Datenmodellobjekt in dessen Datenquelle geschrieben.
 
-Um die Übermittlungsaktion für Formulardatenmodelle zu konfigurieren, öffnen Sie die Eigenschaften des Container für das adaptive Formular und wählen Sie **[!UICONTROL Mit Formulardatenmodell übermitteln]** aus der Dropdownliste „Übermittlungsaktion“ im Akkordeon „Übermittlung“ aus. Suchen Sie dann ein Datenmodellobjekt und wählen Sie es aus dem **[!UICONTROL Name des zu sendenden Datenmodellobjekts]** Dropdown-Liste. Speichern Sie die Eigenschaften.
+Um die Übermittlungsaktion für Formulardatenmodelle zu konfigurieren, öffnen Sie die Eigenschaften des Container für das adaptive Formular und wählen Sie **[!UICONTROL Mit Formulardatenmodell übermitteln]** aus der Dropdownliste „Übermittlungsaktion“ im Akkordeon „Übermittlung“ aus. Suchen Sie dann ein Datenmodellobjekt aus dem **[!UICONTROL Name des zu sendenden Datenmodellobjekts]** angezeigt. Speichern Sie die Eigenschaften.
 
 Beim Senden des Formulars werden die Daten für das konfigurierte Datenmodellobjekt in die entsprechende Datenquelle geschrieben.
 
@@ -139,7 +139,7 @@ Sie können auch Formularanhänge mit der Objekteigenschaft des binären Datenmo
 
 ## Aufrufen von Services in adaptiven Formularen mithilfe von Regeln {#invoke-services}
 
-In einem auf einem Formulardatenmodell basierenden adaptiven Formular können Sie [Regeln erstellen](rule-editor.md), um die im Formulardatenmodell konfigurierten Services aufzurufen. Für den Vorgang **[!UICONTROL Services aufrufen]** werden alle verfügbaren Services im Formulardatenmodell aufgelistet und Sie können die Ein- und Ausgabefelder für den Service auswählen. Sie können mit dem Regeltyp **[!UICONTROL Wert festlegen]** außerdem einen Formulardatenmodell-Service aufrufen und die vom Service zurückgegebene Ausgabe als Wert eines Feldes einstellen.
+In einem auf einem Formulardatenmodell basierenden adaptiven Formular können Sie [Regeln erstellen](rule-editor.md), um die im Formulardatenmodell konfigurierten Services aufzurufen. Die **[!UICONTROL Dienste aufrufen]** -Vorgang in einer Regel listet alle verfügbaren Dienste im Formulardatenmodell auf und ermöglicht die Auswahl von Eingabe- und Ausgabefeldern für den Dienst. Sie können mit dem Regeltyp **[!UICONTROL Wert festlegen]** außerdem einen Formulardatenmodell-Service aufrufen und die vom Service zurückgegebene Ausgabe als Wert eines Feldes einstellen.
 
 Beispielsweise ruft folgende Regel einen Get-Service auf, für den die Mitarbeiter-ID als Eingabe angegeben werden muss und der die entsprechenden Werte in den Feldern für die Angehörigen-ID, den Nachnamen, den Vornamen und das Geschlecht zurückgibt.
 

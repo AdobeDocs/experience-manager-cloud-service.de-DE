@@ -6,10 +6,10 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2135'
-ht-degree: 100%
+source-wordcount: '2131'
+ht-degree: 96%
 
 ---
 
@@ -19,9 +19,9 @@ Sie können adaptive Formulare nahtlos in eine AEM Sites-Seite verfassen oder ei
 
 Sie können eine der folgenden Methoden wählen, um ein adaptives Formular auf einer AEM Sites-Seite zu erstellen oder hinzuzufügen:
 
-* **Erstellen eines adaptiven Formulars mit der Komponente des Containers für adaptive Formulare**: Mit der Komponente [Container für adaptive Formulare](#af-container-component) können Sie digitale Registrierungserlebnisse erstellen, indem Sie adaptive Formularkomponenten direkt im AEM Sites-Editor verwenden. Diese Integration bietet ein nahtloses Erlebnis für AEM Sites-Autoren, die Formulare auf ihren AEM Sites-Seiten erstellen und verwalten möchten.
+* **Erstellen eines adaptiven Formulars mit der Komponente Adaptiver Forms-Container**: Die [Container für adaptive Formulare](#af-container-component) Mit dieser Komponente können Sie digitale Registrierungserlebnisse erstellen, indem Sie Adaptive Forms-Komponenten direkt im AEM Sites-Editor verwenden. Diese Integration bietet ein nahtloses Erlebnis für AEM Sites-Autoren, die Formulare auf ihren AEM Sites-Seiten erstellen und verwalten möchten.
 
-* **Hinzufügen eines vorhandenen adaptiven Formulars**: Mit der [Adaptive Formulare – Einbettungskomponente (v2)](#embed-existing-af) können Sie ganz einfach ein bereits vorhandenes adaptives Formular zu einer AEM Sites-Seite hinzufügen. Diese Funktion verbessert die Anpassungsfähigkeit und Wiederverwendbarkeit von adaptiven Formularen. Diese Integration bietet eine praktische Möglichkeit für Kunden oder Kundinnen, die bereits erstellte adaptiven Formulare wiederzuverwenden.
+* **Hinzufügen eines vorhandenen adaptiven Formulars**: Die [Adaptive Forms - Embed(v2)](#embed-existing-af) -Komponente können Sie in AEM Sites einfach ein bereits vorhandenes adaptives Formular zu einer Seite hinzufügen. Diese Funktion verbessert die Anpassungsfähigkeit und Wiederverwendbarkeit von adaptiven Formularen. Diese Integration bietet eine praktische Möglichkeit für Kunden oder Kundinnen, die bereits erstellte adaptiven Formulare wiederzuverwenden.
 
 * **Verwenden des Assistenten für adaptive Formulare zum Erstellen eines Formulars**: Verwenden Sie die [Adaptive Formulare – Einbettungskomponente (v2)](#embed-new-af), um mithilfe des Assistenten zur Formularerstellung im AEM Sites-Editor ein adaptives Formular zu erstellen. Das Formular wird als externe Entität gespeichert. Sie können dieses Formular auch in anderen Sites-Seiten und eigenständigen Formularen wiederverwenden.
 
@@ -117,7 +117,7 @@ Im Dialogfeld [!UICONTROL Container für adaptive Formulare bearbeiten] können 
 
      >[!NOTE]
      >
-     > Nach dem Konfigurieren des Formulardatenmodells können Sie das verknüpfte Formularmodell nicht ändern. Es ist jedoch möglich, das mit dem Formulardatenmodell verknüpfte Schema zu ändern.
+     > Nach dem Konfigurieren des Formulardatenmodells können Sie das zugeordnete Formularmodell nicht ändern. Es ist jedoch möglich, das mit dem Formulardatenmodell verknüpfte Schema zu ändern.
 
 * **Registerkarte „Übermittlung“**
 
@@ -140,7 +140,7 @@ Im Dialogfeld [!UICONTROL Container für adaptive Formulare bearbeiten] können 
 
 ## Einbetten eines adaptiven Formulars  {#aem-container-component}
 
-Mit **[!UICONTROL Adaptive Formulare – Einbettungskomponente (V2)]** können Sie entweder ein neues adaptives Formular einbetten oder ein bestehendes adaptives Formular in die Seite der Website einbetten. Die [!UICONTROL Adaptive Formulare – Einbettungskomponente (v2)] ermöglicht es Ihnen:
+Mit **[!UICONTROL Adaptive Formulare – Einbettungskomponente (V2)]** können Sie entweder ein neues adaptives Formular einbetten oder ein bestehendes adaptives Formular in die Seite der Website einbetten. Die [!UICONTROL Adaptive Forms - Embed(v2)] -Komponente können Sie:
 
 * [Ein bestehendes adaptives Formular hinzuzufügen](#embed-new-af)
 

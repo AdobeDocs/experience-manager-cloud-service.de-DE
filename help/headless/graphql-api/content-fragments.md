@@ -3,10 +3,10 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4918'
-ht-degree: 91%
+source-wordcount: '4913'
+ht-degree: 92%
 
 ---
 
@@ -139,7 +139,7 @@ Die Anwendungsfälle können vom Typ der AEM as a Cloud Service-Umgebung abhäng
 * Veröffentlichungsumgebung; wird verwendet, um:
    * Daten für das JS-Programm (Standardanwendungsfall) abzufragen
 
-* Vorschau der Umgebung; verwendet, um
+* Vorschau der Umgebung; verwendet für:
    * Vorschau der Abfragen vor der Bereitstellung in der Veröffentlichungsumgebung anzeigen
       * Daten für das JS-Programm (Standardanwendungsfall) abzufragen
 
@@ -158,7 +158,7 @@ Außerdem benötigen die Benutzenden Zugriff auf einen GraphQL-Endpunkt, um Grap
 
 ## Schema-Generierung {#schema-generation}
 
-GraphQL ist eine stark typisierte API, was bedeutet, dass die Daten klar strukturiert und nach Typ geordnet sein müssen.
+GraphQL ist eine stark typisierte API, d. h. die Daten müssen klar strukturiert und nach Typ geordnet sein.
 
 Die GraphQL-Spezifikation enthält eine Reihe von Richtlinien zum Erstellen einer robusten API zum Abfragen von Daten in einer bestimmten Instanz. Dazu muss ein Client das [Schema](#schema-generation) abrufen, das alle für eine Abfrage erforderlichen Typen enthält.
 
@@ -199,9 +199,9 @@ Wenn Sie zum Beispiel:
 
 1. ein Paket installieren, das `Content-Fragment-Model-1` und `Content-Fragment-Model-2` enthält:
 
-   1. GraphQL-Typen für `Model-1` und `Model-2` generiert werden.
+   1. Es werden GraphQL-Typen für `Model-1` und `Model-2` generiert.
 
-1. anschließend `Content-Fragment-Model-2` ändern:
+1. Ändern Sie anschließend `Content-Fragment-Model-2`:
 
    1. Nur der GraphQL-Typ `Model-2` wird aktualisiert.
 
@@ -369,7 +369,7 @@ Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit ein
 
 >[!NOTE]
 >
->Wenn die angegebene Variante für ein Inhaltsfragment nicht vorhanden ist, werden die Originaldaten (auch als Übergeordnete Variante bezeichnet) als (Fallback-)Standard zurückgegeben.
+>Wenn die angegebene Variante für ein Inhaltsfragment nicht existiert, werden die Originaldaten (auch bekannt als Master-Variante) als (Ersatz-)Standard zurückgegeben.
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -377,7 +377,7 @@ Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit ein
 
 ## GraphQL-Variablen {#graphql-variables}
 
-Mit GraphQL können Variablen in die Abfrage eingefügt werden. Weitere Informationen finden Sie unter [GraphQL-Dokumentation für Variablen](https://graphql.org/learn/queries/#variables).
+Mit GraphQL können Variablen in die Abfrage eingefügt werden. Weitere Informationen finden Sie in der [GraphQL-Dokumentation für Variablen](https://graphql.org/learn/queries/#variables).
 
 Um beispielsweise alle Inhaltsfragmente des Typs `Author` in einer bestimmten Variante abzurufen (falls verfügbar), können Sie in GraphiQL das Argument `variation` angeben.
 
@@ -564,13 +564,13 @@ Weitere Beispiele finden Sie unter:
 >
 >Für optimale Leistung sollten Sie [Ihre Inhaltsfragmente für Paging und Sortierung in der GraphQL-Filterung](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md) aktualisieren.
 
-Mit dieser Funktion können Sie die Abfrageergebnisse entsprechend einem bestimmten Feld sortieren.
+Mit dieser Funktion können Sie die Abfrageergebnisse nach einem bestimmten Feld sortieren.
 
 Die Sortierkriterien:
 
 * ist eine durch Kommas getrennte Liste von Werten, die den Feldpfad darstellen
    * Das erste Feld in der Liste definiert die primäre Sortierreihenfolge, das zweite Feld wird verwendet, wenn zwei Werte der primären Sortierkriterien gleich sind, das dritte, wenn die ersten beiden Kriterien gleich sind usw.
-   * gepunktete Notation, d. h. field1.subfield.subfield usw.
+   * gepunktete Notation, also field1.subfield.subfield usw.
 * mit optionaler Sortierrichtung
    * ASC (aufsteigend) oder DESC (absteigend); standardmäßig wird ASC angewendet
    * die Richtung kann pro Feld angegeben werden. Dies bedeutet, dass Sie ein Feld in aufsteigender Reihenfolge sortieren können, ein anderes in absteigender Reihenfolge (name, firstName DESC)
@@ -631,7 +631,7 @@ query {
 >
 >Für optimale Leistung sollten Sie [Ihre Inhaltsfragmente für Paging und Sortierung in der GraphQL-Filterung](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md) aktualisieren.
 
-Mit dieser Funktion können Sie Paging für Abfragetypen durchführen, was eine Liste zurückgibt. Es werden zwei Methoden bereitgestellt:
+Mit dieser Funktion können Sie Paging für Abfragetypen durchführen, die eine Liste zurückgeben. Es werden zwei Methoden bereitgestellt:
 
 * `offset` und `limit` in einer `List`-Abfrage
 * `first` und `after` in einer `Paginated`-Abfrage
@@ -751,8 +751,8 @@ Die Struktur und Syntax sind:
    * `height`: die Höhe der Dimension
 * `rotation`: eine Auflistung aller unterstützten Rotationen: R90, R180, R270
 * `flip`: eine Auflistung von HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
-* `quality`: eine Ganzzahl von 1-100, die den Prozentsatz der Bildqualität angibt
-* `width`: eine Ganzzahl, die die Breite des Ausgabebilds definiert, aber vom Bildgenerator ignoriert wird
+* `quality`: eine Ganzzahl von 1 bis 100, die den Prozentsatz der Bildqualität angibt
+* `width`: eine Ganzzahl, die die Breite des Ausgabebilds definiert, von Image Generator jedoch ignoriert wird.
 * `preferWebp`: ein boolescher Wert, der anzeigt, ob WebP bevorzugt wird (Standardwert ist „false“)
 
 Die URL-Umwandlung ist für alle Abfragetypen verfügbar: nach Pfad, Liste oder mit Paginierung.
@@ -971,7 +971,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
         >[!NOTE]
         >
-        >Wenn die angegebene Variante für ein Inhaltsfragment nicht vorhanden ist, wird die Übergeordnete Variante als (Fallback-)Standard zurückgegeben.
+        >Wenn die angegebene Variante für ein Inhaltsfragment nicht existiert, wird standardmäßig die primäre Variante (als Fallback) zurückgegeben.
 
         >[!CAUTION]
         >
@@ -1046,4 +1046,4 @@ Für die Zukunft plant AEM, in die AEM GraphQL-API zu investieren.*“
 
 ## Tutorial – Erste Schritte mit AEM Headless und GraphQL {#tutorial}
 
-Suchen Sie nach einem praktischen Tutorial? Checkout [Erste Schritte mit AEM Headless und GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) End-to-End-Tutorial, in dem erläutert wird, wie Inhalte mithilfe AEM GraphQL-APIs erstellt und bereitgestellt werden, die von einer externen App in einem Headless-CMS-Szenario genutzt werden.
+Suchen Sie nach einem praktischen Tutorial? Lesen Sie das umfassende Tutorial [Erste Schritte mit AEM Headless und GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de), in dem veranschaulicht wird, wie Inhalte mithilfe der GraphQL-APIs von AEM erstellt und verfügbar gemacht und von einer externen App in einem Headless CMS-Szenario verwendet werden.

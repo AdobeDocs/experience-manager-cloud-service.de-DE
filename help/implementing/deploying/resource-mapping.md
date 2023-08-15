@@ -6,10 +6,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 57%
+source-wordcount: '545'
+ht-degree: 55%
 
 ---
 
@@ -49,8 +49,7 @@ Diese Listen können (zusammen mit Konfigurationsinformationen) unter der Option
 * Configuration
 Zeigt die aktuelle Konfiguration (wie für den [Apache Sling-Ressourcen-Resolver](/help/overview/seo-and-url-management.md#etc-map) definiert) an.
 
-* Configuration Test
-Hiermit können Sie eine URL oder einen Ressourcenpfad eingeben. Klicken **Auflösen** oder **Zuordnung** , um zu bestätigen, wie das System den Eintrag transformiert.
+* Konfigurationstest Hier können Sie eine URL oder einen Ressourcenpfad eingeben. Klicks **Auflösen** oder **Zuordnung** , um zu bestätigen, wie das System den Eintrag transformiert.
 
 * **Resolver Map Entries**
 Die Liste der Einträge, die von den ResourceResolver.resolve-Methoden für die Zuordnung von URLs zu Ressourcen verwendet wird.
@@ -60,7 +59,7 @@ Die Liste der Einträge, die von den ResourceResolver.map-Methoden für die Zuor
 
 Die beiden Listen zeigen verschiedene Einträge an, einschließlich der Einträge, die von den Anwendungen als Standard definiert wurden. Diese Einträge zielen häufig darauf ab, URLs für den Benutzer zu vereinfachen.
 
-Das Listen-Paar enthält eine **Muster**, einen regulären Ausdruck, der mit der Anfrage übereinstimmt, mit einer **Ersatz** die die Umleitung definiert, die durchgesetzt werden soll.
+Die Listen paaren eine **Muster**, einen regulären Ausdruck, der mit der Anfrage übereinstimmt, mit einer **Ersatz** die die Umleitung definiert, die durchgesetzt werden soll.
 
 Beispiel:
 
@@ -131,7 +130,7 @@ angefordert wurde.
 >[!NOTE]
 >
 >Weitere Informationen zu den verfügbaren Sling-Eigenschaften und wie diese konfiguriert werden können, finden Sie in der Sling-Dokumentation unter [Ressourcen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
->Beispiel: [Zeichenfolgeninterpolation](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) ist nützlich, da Sie damit eine Zuordnung konfigurieren können, die pro Umgebungsvariablen Werte erhält.
+>Beispiel: [Zeichenfolgeninterpolation](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) ist nützlich, da Sie damit eine Zuordnung konfigurieren können, die pro Umgebungsvariablen Werte abruft.
 
 >[!NOTE]
 >

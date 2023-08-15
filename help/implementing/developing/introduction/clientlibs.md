@@ -2,10 +2,10 @@
 title: Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service
 description: AEM stellt Client-seitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren Client-seitigen Code (clientlibs) im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie die einzelnen Code-Kategorien für den Client bereitgestellt werden sollen.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2556'
-ht-degree: 84%
+source-wordcount: '2552'
+ht-degree: 83%
 
 ---
 
@@ -35,7 +35,7 @@ AEM erfasst das CSS und JavaScript der Site in einer einzigen Datei an einem zen
 
 ## Frontend-Entwicklung für AEM as a Cloud Service {#fed-for-aemaacs}
 
-Sämtliche JavaScript-, CSS- und anderen Frontend-Elemente sollten im [ui.frontend-Modul des AEM-Projektarchetyps vorgehalten werden.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de) Die Flexibilität des Archetyps ermöglicht es Ihnen, ihre bevorzugten modernen Webtools zu nutzen, um diese Ressourcen zu erstellen und zu verwalten.
+Sämtliche JavaScript-, CSS- und anderen Frontend-Elemente sollten im [ui.frontend-Modul des AEM-Projektarchetyps vorgehalten werden.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de) Die Flexibilität des Archetyps ermöglicht es Ihnen, Ihre bevorzugten modernen Webtools zu verwenden, um diese Ressourcen zu erstellen und zu verwalten.
 
 Der Archetyp kann die Ressourcen dann in einzelne CSS- und JS-Dateien kompilieren und sie automatisch in einen `cq:clientLibraryFolder` im Repository einbetten.
 
@@ -81,14 +81,14 @@ Damit die Client-Bibliotheken unter `/apps` zugänglich sind, wird ein Proxy-Ser
 1. Um die Kategorien festzulegen, zu denen die Bibliothek gehört, wählen Sie den `cq:ClientLibraryFolder`-Knoten aus, fügen Sie die folgende Eigenschaft hinzu und klicken Sie auf **Alle speichern**:
    * Name: `categories`
    * Typ: String
-   * Wert: Der Name der Kategorie
+   * Wert: Der Kategoriename
    * Multi: Ausgewählt
 1. Um auf die Client-Bibliotheken über einen Proxy unter `/etc.clientlibs` zugreifen zu können, wählen Sie den `cq:ClientLibraryFolder`-Knoten aus, fügen Sie die folgende Eigenschaft hinzu und klicken Sie dann auf **Alle speichern**:
    * Name: `allowProxy`
    * Typ: Boolean
    * Wert: `true`
 1. Wenn Sie statische Ressourcen verwalten müssen, erstellen Sie einen Unterordner mit dem Namen `resources` unter dem Client-Bibliotheksordner.
-   * Wenn Sie statische Ressourcen an einem anderen Ort als im Ordner `resources` speichern, können diese nicht in einer Veröffentlichungsinstanz referenziert werden.
+   * Wenn Sie statische Ressourcen an einer anderen Stelle als im Ordner speichern `resources`, können sie nicht in einer Veröffentlichungsinstanz referenziert werden.
 1. Fügen Sie die Quelldateien zum Bibliotheksordner hinzu.
    * Dies erfolgt normalerweise durch den Frontend-Build-Mechanismus des [AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de).
    * Sie können Quelldateien bei Bedarf in Unterordnern organisieren.
@@ -112,7 +112,7 @@ Sobald Ihr Client-Bibliotheksordner [wie erforderlich konfiguriert ist](#creatin
 * Sie verfügen über eine Client-seitige Bibliothek unter `/apps/myproject/clientlibs/foo`.
 * Sie verfügen über ein statisches Bild unter `/apps/myprojects/clientlibs/foo/resources/icon.png`.
 
-Mit der `allowProxy`-Eigenschaft können Sie Folgendes anfordern:
+Die `allowProxy` -Eigenschaft können Sie Folgendes anfordern:
 
 * Die Client-seitige Bibliothek über `/etc.clientlibs/myprojects/clientlibs/foo.js`
 * Das statische Bild über `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`

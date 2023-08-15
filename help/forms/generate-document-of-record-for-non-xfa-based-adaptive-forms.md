@@ -2,10 +2,10 @@
 title: Generieren eines Datensatzdokuments für adaptive Formulare
 description: Hier erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument (Document of Record, DoR) für adaptive Formulare generieren können.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4143'
-ht-degree: 98%
+source-wordcount: '4139'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ Wenn ein Formular ausgefüllt oder übermittelt wird, können Sie das Formular d
 ![Datensatzdokument (Document of Record, DoR)](assets/document-of-record.png)
 
 Um ein Datensatzdokument zu erstellen, wird eine XFA- oder AcroForm-basierte Vorlage mit Daten zusammengeführt, die über ein adaptives Formular erfasst wurden. Sie können ein Datensatzdokument entweder automatisch oder auf Anfrage generieren.
-Mit der On-Demand-Option können Sie eine benutzerdefinierte XFA- oder AcroForm-basierte Vorlage angeben, um Ihrem Datensatzdokument ein benutzerdefiniertes Erscheinungsbild zu verleihen.
+Mit der On-Demand-Option können Sie eine benutzerdefinierte XFA- oder Acroform-basierte Vorlage angeben, um Ihrem Datensatzdokument ein benutzerdefiniertes Erscheinungsbild zu verleihen.
 
 Sie haben folgende Möglichkeiten:
 
@@ -75,7 +75,7 @@ Wenn ein adaptives Formular so konfiguriert ist, dass automatisch ein Datensatzd
 * Bindungen von Daten müssen von Formularentwicklern nicht mehr manuell verwaltet werden. Das automatisch generierte Datensatzdokument übernimmt bereits alle Aktualisierungen im Zusammenhang mit der Datenbindung.
 * Felder, die als vom Datensatzdokument ausgeschlossen markiert sind, müssen von Formularentwicklern nicht manuell ausgeblendet werden. Das automatisch generierte Datensatzdokument ist bereits so vorkonfiguriert, dass solche Felder ausgeschlossen werden.
 * Mit der Option zur automatischen Generierung des Datensatzdokuments fällt kein Zeitaufwand mehr für die Erstellung einer entsprechenden Formularvorlage an.
-* Mit der Option zur automatischen Generierung des Datensatzdokuments lässt sich dessen Stil und Erscheinungsbild anhand verschiedener Basisvorlagen anpassen. So können Sie den Stil und das Erscheinungsbild des Datensatzdokuments danach auswählen, was für Ihr Unternehmen am besten geeignet ist. Wenn Sie keinen Stil angeben, werden standardmäßig die systemeigenen Stile verwendet.
+* Die Option &quot;Dokument aus Datensatz automatisch generiert&quot;ermöglicht die Verwendung verschiedener Stile und Erscheinungsbilder mithilfe verschiedener Basisvorlagen. So können Sie den Stil und das Erscheinungsbild des Datensatzdokuments danach auswählen, was für Ihr Unternehmen am besten geeignet ist. Wenn Sie keinen Stil angeben, werden standardmäßig die systemeigenen Stile verwendet.
 * Durch die automatische Generierung des Datensatzdokuments wird sichergestellt, dass sämtliche Änderungen im Formular direkt im Datensatzdokument aufgenommen werden.
 
 Führen Sie die folgenden Schritte aus, um ein adaptives Formular so zu konfigurieren, dass automatisch ein Datensatzdokument erzeugt wird:
@@ -103,7 +103,7 @@ Binden Sie Felder adaptiver Formulare mit Vorlagenfeldern, um die erfassten Form
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 <!-- 
-In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
+In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
 Sie können die Sende-Aktion „E-Mail senden, Experience Manager-Workflow“ in Verbindung mit dem Schritt [Datensatzdokument und andere Sende-Aktionen](configuring-submit-actions.md) verwenden, um ein Datensatzdokument zu erhalten.
@@ -112,7 +112,7 @@ Sie können die Sende-Aktion „E-Mail senden, Experience Manager-Workflow“ in
 
 Adaptive Formulare und entsprechende Vorlagen für Datensatzdokumente können sich im Laufe der Zeit weiterentwickeln. So können Sie etwa Felder zu einem adaptiven Formular oder einer Datensatzdokument-Vorlage hinzufügen, entfernen oder ändern.
 
-Wenn Sie Änderungen an einer Datensatzdokument-Vorlage vornehmen und die geänderte Vorlage in AEM Forms hochladen, erkennt der Editor für adaptive Formulare automatisch die geänderten Bindungen und informiert Sie über die Komponenten des adaptiven Formulars, für die neue Bindungen erforderlich sind. Dies ermöglicht es Ihnen, eine Datensatzdokument-Vorlage sukzessive zu aktualisieren.
+Wenn Sie Änderungen an einer Datensatzdokument-Vorlage vornehmen und die geänderte Vorlage in AEM Forms hochladen, erkennt der Editor für adaptive Formulare automatisch die geänderten Bindungen und informiert Sie über die Komponenten des adaptiven Formulars, für die neue Bindungen erforderlich sind. Damit können Sie eine Datensatzdokumentvorlage inkrementell aktualisieren.
 
 Zum Beispiel: Beim Unternehmen *We.Retail* wird eine AcroForm-basierte Datensatzdokumentvorlage namens *we-retail-bill.pdf* verwendet. Die Vorlage sieht wie folgt aus:
 
@@ -284,7 +284,7 @@ Die Tabellenkomponenten adaptiver Formulare (wie Kopf- und Fußzeile sowie Zeile
 
 ## Basisvorlage eines Datensatzdokuments {#base-template-of-a-document-of-record}
 
-Die Basisvorlage liefert Informationen zu Stil und Erscheinungsbild des Datensatzdokuments. Das bietet Ihnen die Möglichkeit, das Standarderscheinungsbild des automatisch generierten Datensatzdokuments anzupassen. So können Sie über die Basisvorlage etwa festlegen, dass das Datensatzdokument in der Kopfzeile das Logo Ihres Unternehmens und in der Fußzeile Ihre Copyright-Informationen trägt.
+Die Basisvorlage liefert Informationen zu Stil und Erscheinungsbild des Datensatzdokuments. Damit können Sie das standardmäßige Erscheinungsbild des automatisch generierten Datensatzdokuments anpassen. So können Sie über die Basisvorlage etwa festlegen, dass das Datensatzdokument in der Kopfzeile das Logo Ihres Unternehmens und in der Fußzeile Ihre Copyright-Informationen trägt.
 
 Die Musterseite aus der Basisvorlage wird als Musterseite für die Datensatzdokument-Vorlage verwendet. Die Musterseite kann Informationen wie Kopfzeile, Fußzeile und Seitenzahl enthalten, die Sie auf das Datensatzdokument anwenden können. Sie können diese Informationen mithilfe der Basisvorlage auf das Datensatzdokument anwenden, damit das Datensatzdokument automatisch generiert wird. Die Verwendung der Basisvorlage ermöglicht es Ihnen, die Standardeinstellungen von Feldern zu ändern.
 

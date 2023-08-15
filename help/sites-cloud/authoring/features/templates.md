@@ -2,10 +2,10 @@
 title: Erstellen von Seitenvorlagen
 description: Eine Vorlage definiert die Struktur einer erstellten Seite und mit dem Vorlageneditor ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4577'
-ht-degree: 68%
+source-wordcount: '4570'
+ht-degree: 67%
 
 ---
 
@@ -32,7 +32,7 @@ Ausführliche Informationen zur Funktionsweise von bearbeitbaren Vorlagen auf te
 
 >[!NOTE]
 >
->Der **Vorlageneditor** unterstützt kein Targeting direkt auf Vorlagenstufe. Seiten, die auf Grundlage einer bearbeitbaren Vorlage erstellt wurden, können zielgerichtet sein, die Vorlagen selbst müssen das jedoch nicht sein.
+>Der **Vorlageneditor** unterstützt kein Targeting direkt auf Vorlagenstufe. Seiten, die auf der Basis einer bearbeitbaren Vorlage erstellt wurden, können als Zielgruppe ausgewählt werden, die Vorlagen selbst können jedoch nicht erstellt werden.
 
 ## Bevor Sie beginnen {#before-you-start}
 
@@ -164,7 +164,7 @@ So definieren Sie die Vorlagenminiatur:
    * Wenn Sie eine Miniaturansicht hochladen möchten, klicken oder tippen Sie auf **Bild hochladen**
    * Wenn Sie eine Miniatur erzeugen möchten, klicken oder tippen Sie auf **Vorschau generieren**
 1. Für beide Methoden wird eine Vorschau der Miniaturansicht angezeigt.
-   * Wenn sie nicht zufriedenstellend ist, klicken oder tippen Sie auf **Löschen** , um ein anderes Bild hochzuladen oder die Miniaturansicht neu zu generieren.
+   * Wenn sie nicht zufriedenstellend ist, klicken oder tippen Sie auf . **Löschen** , um ein anderes Bild hochzuladen oder die Miniaturansicht neu zu generieren.
 1. Wenn Sie mit der Miniaturansicht zufrieden sind, klicken oder tippen Sie auf **Speichern und schließen**.
 
 ### Aktivieren und Zulassen einer Vorlage – Vorlagenautor {#enabling-and-allowing-a-template-template-author}
@@ -230,7 +230,7 @@ Da auf die Vorlage verwiesen wird, wenn eine Seite dargestellt wird, muss die vo
 
 Beim Erstellen oder Bearbeiten einer Vorlage können verschiedene Aspekte definiert werden. Das Bearbeiten von Vorlagen ähnelt dem Bearbeiten von Seiten.
 
-Mit der **Modus**-Auswahl in der Symbolleiste können Sie die jeweiligen Aspekte der Vorlage auswählen und bearbeiten:
+Die **Modus** Mit der Auswahl in der Symbolleiste können Sie den entsprechenden Aspekt der Vorlage auswählen und bearbeiten:
 
 * [Struktur](#editing-a-template-structure-template-author)
 * [Anfänglicher Inhalt](#editing-a-template-initial-content-author)
@@ -238,7 +238,7 @@ Mit der **Modus**-Auswahl in der Symbolleiste können Sie die jeweiligen Aspekte
 
 ![Modusauswahl im Vorlageneditor](/help/sites-cloud/authoring/assets/templates-mode.png)
 
-Mit der Option **Seitenrichtlinie** im Menü **Seiteninformationen** können Sie [die erforderlichen Seitenrichtlinien auswählen](#page-policies):
+Während **Seitenrichtlinie** -Option auf **Seiteninformationen** Menü [die erforderlichen Seitenrichtlinien auswählen](#page-policies):
 
 ![Seiteninformationen des Vorlageneditors](/help/sites-cloud/authoring/assets/templates-page-information.png)
 
@@ -339,13 +339,13 @@ Bei der Arbeit in **Struktur** -Modus zeigt ein orangefarbener Rahmen die aktuel
 
 #### Richtlinien und Eigenschaften (Allgemein) {#policy-and-properties-general}
 
-Die Inhalts- (oder Design-)Richtlinien definieren die Designeigenschaften einer Komponente. Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen. Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden).
+Die Richtlinien für Inhalt (oder Design) definieren die Designeigenschaften einer Komponente. Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen. Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden).
 
 Erstellen Sie für eine Komponente eine Inhaltsrichtlinie oder wählen Sie eine vorhandene.
 
 ![Schaltfläche „Inhaltsrichtlinie“](/help/sites-cloud/authoring/assets/templates-content-policy-button.png)
 
-Damit können Sie die Design-Details definieren.
+Auf diese Weise können Sie die Designdetails definieren.
 
 ![Inhaltsrichtlinie](/help/sites-cloud/authoring/assets/template-content-policy.png)
 
@@ -358,7 +358,7 @@ Die verfügbaren Eigenschaften hängen von der ausgewählten Komponente ab. Beis
 
 ##### Richtlinie {#policy}
 
-Die Inhalts- (oder Design-)Richtlinien definieren die Designeigenschaften einer Komponente. Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen. Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden).
+Die Richtlinien für Inhalt (oder Design) definieren die Designeigenschaften einer Komponente. Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen. Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden).
 
 Unter **Richtlinie** können Sie eine vorhandene Richtlinie auswählen, die über das Dropdown-Menü auf die Komponente angewendet wird.
 
@@ -407,7 +407,7 @@ Um eine Konfiguration zu entfernen, klicken oder tippen Sie auf die Schaltfläch
 
 ###### Funktionen {#features}
 
-Auf der Registerkarte **Funktionen** können Sie zusätzliche Funktionen der Komponente aktivieren oder deaktivieren.
+Die **Funktionen** -Tab können Sie zusätzliche Funktionen der Komponente aktivieren oder deaktivieren.
 
 Beispielsweise können Sie für eine Bildkomponente die Zuschneideproportionen, die zulässigen Bildausrichtungen und die Möglichkeit von Uploads definieren.
 
@@ -433,7 +433,7 @@ Das Konfigurationsfenster ist in zwei Bereiche unterteilt, genau wie in der allg
 
 ##### Richtlinie {#policy-layout}
 
-Die Inhalts- (oder Design-)Richtlinien definieren die Designeigenschaften einer Komponente. Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen. Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden).
+Die Richtlinien für Inhalt (oder Design) definieren die Designeigenschaften einer Komponente. Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen. Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden).
 
 Unter **Richtlinie** können Sie eine vorhandene Richtlinie auswählen, die über das Dropdown-Menü auf die Komponente angewendet wird. Dies funktioniert ebenso wie bei der allgemeinen Verwendung des Fensters.
 
@@ -461,7 +461,7 @@ Im **Zugelassene Komponenten** definieren, legen Sie fest, welche Komponenten f�
 
 Im **Standardkomponenten** -Registerkarte definieren, definieren Sie, welche Komponenten automatisch bestimmten Medientypen zugeordnet werden. Wenn ein Autor ein Asset aus dem Asset-Browser zieht, weiß AEM, mit welcher Komponente es verknüpft werden soll. Beachten Sie, dass für diese Konfiguration nur Komponenten mit Ablageflächen verfügbar sind.
 
-Klicken oder tippen Sie auf **Zuordnung hinzufügen** , um eine völlig neue Komponente und MIME-Typzuordnung hinzuzufügen.
+Klicken oder tippen Sie **Zuordnung hinzufügen** , um eine völlig neue Komponente und MIME-Typzuordnung hinzuzufügen.
 
 Wählen Sie eine Komponente in der Liste aus und tippen/klicken Sie auf **Typ hinzufügen**, um einer bereits zugeordneten Komponente einen zusätzlichen MIME-Typ hinzuzufügen. Klicken Sie auf das Symbol **Löschen**, um einen MIME-Typ zu entfernen.
 
@@ -629,7 +629,7 @@ Beachten Sie beim Erstellen von Vorlagen Folgendes:
 
    Im Folgenden finden Sie eine Liste der verschiedenen Vorgänge, die für Vorlagen möglich sind, sowie deren Auswirkungen auf die daraus erstellten Seiten:
 
-   * Änderungen an der Struktur:
+   * Strukturänderungen:
 
       * Diese werden sofort auf die resultierenden Seiten angewendet.
       * Die geänderte Vorlage muss veröffentlicht werden, damit Besucher die Änderungen sehen können.
@@ -658,7 +658,7 @@ Beachten Sie beim Erstellen von Vorlagen Folgendes:
 
    >[!NOTE]
    >
-   >AEM gibt explizite Warnungen aus, wenn der Sperrstatus von Komponenten in Vorlagen geändert wird, bei denen es sich nicht mehr um Entwürfe handelt.
+   >AEM gibt explizite Warnungen aus, wenn der Sperrstatus von Komponenten in Vorlagen geändert wird, die keine Entwürfe mehr sind.
 
 1. [Erstellen eigener Ordner](#creating-a-template-folder-admin) für Ihre Site-spezifischen Vorlagen.
-1. [Vorlagen veröffentlichen](#publishing-a-template-template-author) von **Vorlagen** Konsole.
+1. [Vorlagen veröffentlichen](#publishing-a-template-template-author) aus dem **Vorlagen** Konsole.

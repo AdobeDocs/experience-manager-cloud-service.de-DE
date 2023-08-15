@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 6822011a46a1c12c0057e828d976c735ec878eea
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1630'
 ht-degree: 72%
 
 ---
@@ -33,7 +33,7 @@ Sie benötigen Administratorberechtigungen für [Einstellungen zum Freigeben von
 
 ## Einstellungen zur Linkfreigabe konfigurieren {#config-link-share-settings}
 
-[!DNL Experience Manager Assets] ermöglicht Ihnen die Konfiguration der standardmäßigen Einstellungen für die Linkfreigabe.
+[!DNL Experience Manager Assets] können Sie die standardmäßigen Einstellungen für die Linkfreigabe konfigurieren.
 
 1. Klicken Sie auf [!DNL Experience Manager] -Logo und navigieren Sie dann zu **[!UICONTROL Instrumente]** > **[!UICONTROL Assets]** > **[!UICONTROL Asset-Konfiguration]** > **[!UICONTROL Linkfreigabe]**.
 1. Anfangseinstellungen:
@@ -125,7 +125,7 @@ Jeder Benutzer, der Zugriff auf den freigegebenen Asset-Link hat, kann die in ei
 
   ![Download-Posteingang](assets/link-sharing-download-inbox.png)
 
-* Nachdem die Verarbeitung abgeschlossen ist, klicken Sie auf die **[!UICONTROL Download]** Schaltfläche zum Herunterladen der ZIP-Datei.
+* Nachdem die Verarbeitung abgeschlossen ist, klicken Sie auf die **[!UICONTROL Herunterladen]** Schaltfläche zum Herunterladen der ZIP-Datei.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.

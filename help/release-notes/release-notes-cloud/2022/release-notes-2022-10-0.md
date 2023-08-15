@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2022.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2022.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 84%
+source-wordcount: '836'
+ht-degree: 79%
 
 ---
 
@@ -48,7 +48,7 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2022“ an, das eine Zusa
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-* Mit Experience Manager Assets können Sie jetzt Dokumente in anderen unterstützten Formattypen hochladen und [eine Vorschau mit dem integrierten Document Cloud-Viewer anzeigen](/help/assets/manage-pdf-documents.md). Zu den unterstützten Formattypen gehören TXT, RTF, DOC, DOCX, PPT, PPTX, XLS und XLSX.
+* Experience Manager Assets ermöglicht jetzt das Hochladen von Dokumenten in anderen unterstützten Formattypen und[Vorschau mit dem mitgelieferten Document Cloud-Viewer](/help/assets/manage-pdf-documents.md). Zu den unterstützten Formattypen gehören TXT, RTF, DOC, DOCX, PPT, PPTX, XLS und XLSX.
 
   ![PDF-Ausgabe für andere Formate](/help/release-notes/assets/multi-page-other-formats.png)
 
@@ -65,7 +65,7 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2022“ an, das eine Zusa
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Forms] verfügbar {#prerelease-features-forms}
 
-* **Vorlagen-Editor für adaptive Formulare**: Mit dem Vorlagen-Editor können Sie die Grundstruktur und das Erscheinungsbild von adaptiven Formularen in einer Organisation vordefinieren. Diese Version enthält die folgenden Verbesserungen am Vorlagen-Editor:
+* **Adaptiver Forms-Vorlageneditor**: Mit dem Vorlageneditor können Sie die Grundstruktur und das Erscheinungsbild des adaptiven Formss eines Unternehmens vordefinieren. Diese Version enthält die folgenden Verbesserungen am Vorlagen-Editor:
    * **[Formulardatenmodell im Vorlagen-Editor](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: Sie können das Schema für ein Formulardatenmodell mit einer Vorlage für adaptive Formulare im Vorlagen-Editor verknüpfen. Dadurch wird die Zeit für die Erstellung eines adaptiven Formulars reduziert. Die Option wird auch zum Editor für adaptive Formulare hinzugefügt, damit Benutzende ein Formulardatenmodell für vorhandene Formulare auswählen oder ändern können.
    * **[Datensatzdokument im Vorlagen-Editor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: Sie können jetzt die Generierung des Datensatzdokuments für alle Formulare standardisieren, die mithilfe einer Vorlage erstellt wurden. Dies trägt dazu bei, die Einhaltung und Standardisierung von Organisationsanforderungen zu verbessern.
 

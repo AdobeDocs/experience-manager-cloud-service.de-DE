@@ -4,10 +4,10 @@ description: Hier finden Sie Best Practices für die Einrichtung und Verwendung 
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1425'
-ht-degree: 79%
+source-wordcount: '1420'
+ht-degree: 75%
 
 ---
 
@@ -48,7 +48,7 @@ Im Allgemeinen lautet die Rollout-Regel in MSM bezüglich der Synchronisierung v
 * Beim Rollout der Komponenten werden alle in der Blueprint enthaltenen Ressourcen synchronisiert.
 * Container synchronisieren nur die aktuelle Ressource.
 
-Dies bedeutet, dass Komponenten als Aggregat behandelt werden und die Komponente selbst und alle untergeordneten Elemente in einem Rollout durch die Komponenten in den Blueprints ersetzt werden. Das bedeutet, dass eine Ressource, die einer solchen Komponente lokal hinzugefügt wird, beim Rollout im Blueprint-Inhalt verloren geht.
+Dies bedeutet, dass Komponenten als Aggregat behandelt werden und die Komponente selbst und alle untergeordneten Elemente in einem Rollout durch die Komponenten in den Blueprints ersetzt werden. Das bedeutet, dass eine Ressource, die einer solchen Komponente lokal hinzugefügt wird, beim Rollout für den Blueprint-Inhalt verloren geht.
 
 Um die Schachtelung von Komponenten zu unterstützen, sodass lokal hinzugefügte Komponenten bei einem Rollout erhalten bleiben, muss die Komponente als Container deklariert werden.
 
@@ -82,7 +82,7 @@ MSM kann Sie auf zwei Arten beim Erstellen mehrsprachiger Websites unterstützen
 Beachten Sie beim Erstellen von Sprachstämmen Folgendes:
 
 * Während MSM selbst **bietet keine Inhaltsübersetzung**, kann sie mit Übersetzungs-Connectoren von Drittanbietern integriert werden, die dies tun. Beachten Sie Folgendes:
-   * Mit MSM unterbinden Sie die Vererbung auf Seiten- und/oder Komponentenebene. So verhindern Sie, dass übersetzter Inhalt aus einer Live Copy beim nächsten Rollout durch noch nicht übersetzten Inhalt aus einem Blueprint überschrieben wird.
+   * Mit MSM können Sie die Vererbung auf Seiten- und/oder Komponentenebene abbrechen. So verhindern Sie, dass übersetzter Inhalt aus einer Live Copy beim nächsten Rollout durch noch nicht übersetzten Inhalt aus einem Blueprint überschrieben wird.
       * Einige Übersetzungs-Connectoren von Dritten bieten eine automatisierte Verwaltung der MSM-Vererbung.
       * Weitere Informationen erhalten Sie von Ihrem Übersetzungsdienstleister.
       * Eine Alternative für die Erstellung und Übersetzung von Sprachstämmen ist die Verwendung von Sprachkopien in Verbindung mit dem vorgefertigten AEM-Framework für die Übersetzungsintegration.
@@ -140,7 +140,7 @@ Auslöser vom Typ `onModify` sollten daher nur verwendet werden, wenn die Vortei
 
 ### Knotentypen/-eigenschaften {#node-types-properties}
 
-Neben der Anpassung von Rollout-Aktionen ermöglicht MSM auch die Anpassung von Knoteneigenschaften, für die ein Rollout durchgeführt wird. Die [MSM-OSGi-Konfiguration ermöglicht das Ausschließen von Knotentypen](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization), sodass diese nicht aus der Quelle in die Live Copy kopiert werden.
+Neben der Anpassung von Rollout-Aktionen können Sie mit MSM auch die Knoteneigenschaften anpassen, für die ein Rollout durchgeführt wird. Die [Mit der MSM-OSGi-Konfiguration können Sie Knotentypen ausschließen](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) aus der Quelle in die Live Copy kopiert werden.
 
 ## Weiterführende Informationen {#further-information}
 

@@ -2,10 +2,10 @@
 title: Grundlegende Handhabung
 description: Machen Sie sich mit der Navigation in AEM und seiner grundlegenden Verwendung vertraut
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2978'
-ht-degree: 91%
+source-wordcount: '2975'
+ht-degree: 90%
 
 ---
 
@@ -20,7 +20,7 @@ Dieses Dokument soll einen Überblick über die grundlegende Handhabung der AEM-
 
 ## Touch-optimierte Benutzeroberfläche {#a-touch-enabled-ui}
 
-Die Benutzeroberfläche für AEM wurde für Touchscreens optimiert. Eine Touch-optimierte Benutzeroberfläche ermöglicht es Ihnen, mithilfe von Berührungen – Tippen, Berühren und Halten sowie Wischen – mit der Software zu interagieren. Da die AEM-Benutzeroberfläche Touch-optimiert ist, können Sie Berührungsgesten auf Ihren Touch-Geräten wie auf Ihrem Handy oder Tablet verwenden. Es sind jedoch auch Mausaktionen auf einem herkömmlichen Desktop-Gerät möglich, sodass Sie flexibel entscheiden können, wie Sie Ihre Inhalte erstellen möchten.
+Die Benutzeroberfläche für AEM wurde für Touchscreens optimiert. Eine Touch-optimierte Benutzeroberfläche ermöglicht es Ihnen, mithilfe von Gesten wie Tippen, Berühren und Halten und Wischen mit der Software zu interagieren. Da die AEM-Benutzeroberfläche Touch-optimiert ist, können Sie Berührungsgesten auf Ihren Touch-Geräten wie auf Ihrem Handy oder Tablet verwenden. Es sind jedoch auch Mausaktionen auf einem herkömmlichen Desktop-Gerät möglich, sodass Sie flexibel entscheiden können, wie Sie Ihre Inhalte erstellen möchten.
 
 ## Erste Schritte {#first-steps}
 
@@ -227,7 +227,7 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 
 ## Schnellaktionen {#quick-actions}
 
-In [Kartenansicht](#card-view) bestimmte Aktionen sind als Schnellaktionssymbole verfügbar und befinden sich in der Symbolleiste. Schnellaktionssymbole sind jeweils nur für ein Element verfügbar, sodass Sie keine Vorauswahl treffen müssen.
+In [Kartenansicht](#card-view) bestimmte Aktionen sind als Schnellaktion-Symbole verfügbar und befinden sich in der Symbolleiste. Schnellaktionssymbole sind jeweils nur für ein Element verfügbar, sodass Sie keine Vorauswahl treffen müssen.
 
 Die Schnellaktionen sind sichtbar, wenn Sie den Mauszeiger über eine Ressourcenkarte (Desktop-Gerät) bewegen. Die verfügbaren Schnellaktionen können von der Konsole und dem Kontext abhängen. Hier finden Sie beispielsweise die Schnellaktionen für eine Seite in der **Sites**-Konsole:
 
@@ -419,7 +419,7 @@ Die Zeitleiste kann zur Anzeige und/oder Einleitung von Ereignissen in Verbindun
 
 ![Zeitleisten-Struktur](/help/sites-cloud/authoring/assets/timeline.png)
 
-Die Zeitleisten-Spalte bietet folgende Möglichkeiten:
+In der Timeline-Spalte können Sie:
 
 * Anzeigen verschiedener Ereignisse im Zusammenhang mit einem ausgewählten Element
 

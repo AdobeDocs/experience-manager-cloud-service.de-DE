@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 66%
+source-wordcount: '232'
+ht-degree: 60%
 
 ---
 
@@ -22,7 +22,7 @@ Der Inhalt auf Seite Null wird standardmäßig angezeigt, wenn ein PDF-Viewer, d
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
-Mit der Version [!DNL AEM Forms] von Designer können Sie die auf Seite Null angezeigte Meldung ändern. Zum Ändern der auf Seite Null angezeigten Meldung müssen Sie folgende Schritte ausführen:
+[!DNL AEM Forms] In der Designer-Version können Sie die Meldung ändern, die auf Seite 0 angezeigt wird. Zum Ändern der auf Seite Null angezeigten Meldung müssen Sie folgende Schritte ausführen:
 
 1. Stellen Sie sicher, dass die Version [!DNL AEM Forms] von Designer auf Ihrem Computer installiert ist. Sie können die Version im Bildschirm „Info“ des Designers überprüfen.
 

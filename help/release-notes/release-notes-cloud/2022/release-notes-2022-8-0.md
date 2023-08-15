@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2022.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2022.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 62%
+source-wordcount: '624'
+ht-degree: 59%
 
 ---
 
@@ -23,7 +23,7 @@ Im folgenden Abschnitt werden die Versionshinweise für Funktionen der Version 2
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aktuelle Version (2022.8.0) ist der 1. September 2022.
+Das Veröffentlichungsdatum [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aktuelle Version (2022.8.0) ist der 1. September 2022.
 Die nächste Version (2022.10.0) ist für den 10. November 2022 geplant.
 
 ## Video zur Version {#release-video}
@@ -36,11 +36,11 @@ Sehen Sie sich das Video Versionsübersicht vom August 2022 an, um eine Zusammen
 
 ### Neue Funktionen in [!DNL Sites] {#sites-features}
 
-* Die E-Mail-Komponente ermöglicht die Erstellung von Inhalten in AEM, die dann per Campaign Classic als E-Mails gesendet werden. Die Kernkomponente &quot;E-Mail&quot;:
+* Die E-Mail-Komponente ermöglicht die Erstellung von Inhalten in AEM, die dann per Campaign Classic als E-Mail zugestellt werden. Die Kernkomponente &quot;E-Mail&quot;:
    * basiert auf der [WCM-Kernkomponente](https://github.com/adobe/aem-core-wcm-components) unterstützt bearbeitbare Vorlagen und das Stilsystem.
    * bietet 10 für E-Mails optimierte produktionsbereite Komponenten (Seite, Container, Titel, Text, Bild, Schaltfläche, Teaser, Experience Fragment, Inhaltsfragment, Segmentierung).
    * bietet erweiterte Personalisierung und Segmentierung dank der [Einfügen von Campaign-Variablen](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) in den meisten Dialogfeldern und zur flexiblen [Segmentierungskomponente](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
-   * bietet dank der [CSS-Stile in Liner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), die [HTML-Attribut inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)und die [HTML sanitizer](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
+   * bietet eine optimale E-Mail-freundliche HTML-Ausgabe dank der [CSS-Stile in Liner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), die [HTML-Attribut inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)und die [HTML sanitizer](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
    * ermöglicht die Erstellung von E-Mails überall.
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Sites] verfügbar {#prerelease-features-sites}
@@ -53,7 +53,7 @@ Sehen Sie sich das Video Versionsübersicht vom August 2022 an, um eine Zusammen
 
 ### Neue Funktionen in [!DNL Assets] {#features-assets}
 
-* Sie können Adobe Experience Manager Assets jetzt so konfigurieren, dass [den Typ der Assets einschränken, die Benutzer basierend auf dem MIME-Typ hochladen können](/help/assets/configure-asset-upload-restrictions.md).
+* Sie können Adobe Experience Manager Assets jetzt konfigurieren für [den Typ der Assets einschränken, die Benutzer basierend auf dem MIME-Typ hochladen können](/help/assets/configure-asset-upload-restrictions.md).
 
   ![Einschränkungen beim Hochladen von Assets](/help/assets/assets/asset-upload-restrictions.png)
 
@@ -63,7 +63,7 @@ Sehen Sie sich das Video Versionsübersicht vom August 2022 an, um eine Zusammen
 
 * [Assistent für adaptive Formulare](/help/forms/creating-adaptive-form.md): AEM Forms bietet einen benutzerfreundlichen Assistenten für Unternehmen, mit dem sich adaptive Formulare schnell erstellen lassen. Der Assistent bietet eine schnelle Navigation zwischen den Registerkarten, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen. Diese Version bietet die folgenden Verbesserungen für den Assistenten:
 
-   * Auswählen oder Aufheben der Auswahl von Feldern: Mit dem Assistenten können Sie ein adaptives Formular erstellen, das auf JSON und Modellschemata von Formulardaten basiert. Sie können jetzt eine Teilmenge von Feldern innerhalb eines Schemas auswählen, um sie in ein adaptives Formular einzuschließen. Die ausgewählten Felder werden in die entsprechenden Datenerfassungskomponenten für adaptive Formulare konvertiert, um die gewünschten adaptiven Formulare schnell zu erstellen.
+   * Felder auswählen oder deaktivieren: Mit dem Assistenten können Sie ein adaptives Formular erstellen, das auf JSON- und Formulardatenmodellschemata basiert. Sie können jetzt eine Teilmenge von Feldern innerhalb eines Schemas auswählen, um sie in ein adaptives Formular einzuschließen. Die ausgewählten Felder werden in die entsprechenden Datenerfassungskomponenten für adaptive Formulare konvertiert, um die gewünschten adaptiven Formulare schnell zu erstellen.
 
    * Verwenden von statischen Vorlagen: Benutzende, die bereits ältere statische Vorlagen erstellt haben, können ihre Umstellung auf die Cloud fortsetzen, indem sie statische Vorlagen im Assistenten zur Erstellung adaptiver Formulare verwenden. Dadurch erhalten die Benutzenden zusätzliche Zeit, um alte statische Vorlagen in moderne bearbeitbare Vorlagen zu migrieren.
 

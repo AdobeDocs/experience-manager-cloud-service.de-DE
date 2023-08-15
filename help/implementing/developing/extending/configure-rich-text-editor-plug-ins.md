@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie den Rich-Text-Editor [!DNL Adobe Experience M
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4301'
-ht-degree: 81%
+source-wordcount: '4299'
+ht-degree: 80%
 
 ---
 
@@ -39,13 +39,13 @@ Standardmäßig sind die Plug-ins `format`, `link`, `list`, `justify` und `contr
       * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
       * ein alternativer Konfigurationsknoten: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
+
    * Sie weisen den folgenden Typ auf: **jcr:primaryType** `cq:Widget`
    * Beide verfügen über die folgende Eigenschaft:
 
       * **Name** `name`
       * **Typ** `String`
       * **Wert** `./text`
-
 
 1. Je nach Benutzeroberfläche, für die Sie Konfigurationen vornehmen, müssen Sie einen Knoten `<rtePlugins-node>` erstellen, falls noch nicht vorhanden:
 
@@ -59,7 +59,7 @@ Standardmäßig sind die Plug-ins `format`, `link`, `list`, `justify` und `contr
 
 Halten Sie sich nach der Aktivierung eines Plug-ins an diese Richtlinien, um die Eigenschaft `features` zu konfigurieren.
 
-|  | Alle Funktionen aktivieren | Bestimmte Funktionen aktivieren. | Alle Funktionen deaktivieren. |
+| | Alle Funktionen aktivieren | Bestimmte Funktionen aktivieren. | Alle Funktionen deaktivieren. |
 |---|---|---|---|
 | Name | Funktionen | Funktionen | Funktionen |
 | Typ | Zeichenfolge | `String` (mehrere Zeichenfolgen; legen Sie den Typ auf `String` fest und klicken Sie in CRXDE Lite auf `Multi`) | Zeichenfolge |
@@ -280,7 +280,7 @@ Der Rich-Text-Editor verwendet ein Container-DOM-Element mit einer ID von `CQrte
 
    * **Name** `text`
    * **Typ** `String`
-   * **Wert** Beschreibung des Stils; im Dropdown-Auswahlfeld Stil angezeigt.
+   * **Wert** Beschreibung des Stils; wird im Dropdown-Auswahlfeld Stil angezeigt.
 
 1. Speichern Sie die Änderungen.
 
@@ -303,8 +303,7 @@ Führen Sie folgende Schritte aus, um den Stil zu erstellen, den Autoren auf jap
 
 1. Fügen Sie den Eigenschaftstext demselben Knoten hinzu. Der Wert ist der Name des Stils, den die Autoren bei der Auswahl des Stils sehen.
    * Name: `text`
-*Typ: 
-`String`
+*Typ: `String`
    * Wert: `Japanese word-wrap`
 
 1. Erstellen Sie ein Stylesheet und geben Sie seinen Pfad an. Siehe [Speicherort des Stylesheets angeben](#locationofstylesheet). Fügen Sie dem Stylesheet den folgenden Inhalt hinzu. Ändern Sie die Hintergrundfarbe wie gewünscht.
@@ -356,7 +355,7 @@ Gehen Sie wie folgt vor, um das Plug-in `paraformat` zu aktivieren:
 
 >[!CAUTION]
 >
->Entfernen Sie beim Konfigurieren der Absatzformate des RTE nicht das Absatz-Tag „&lt;p>“ als Formatierungsoption. Wenn das Tag `<p>` entfernt wird, kann der Inhaltsautor die Option [!UICONTROL Absatzformate] selbst dann nicht auswählen, wenn zusätzliche Formate konfiguriert sind.
+>Entfernen Sie beim Konfigurieren der Absatzformate des RTE nicht das Absatz-Tag „&lt;p>“ als Formatierungsoption. Wenn die Variable `<p>` -Tag entfernt wird, kann der Inhaltsautor die [!UICONTROL Absatzformate] auch dann, wenn zusätzliche Formate konfiguriert sind.
 
 ### Angeben der verfügbaren Absatzformate {#paraformatsindropdown}
 
@@ -379,19 +378,20 @@ Absatzformate werden wie folgt zur Auswahl bereitgestellt:
    * **Typ** `String`
    * **Wert:** Das Block-Tag für das Format (z. B. p, h1, h2 usw.)
 
-      Es ist nicht notwendig, die abgrenzenden spitzen Klammern einzugeben.
+     Es ist nicht notwendig, die abgrenzenden spitzen Klammern einzugeben.
 
 1. Fügen Sie demselben Knoten eine weitere Eigenschaft hinzu, damit ein beschreibender Text in der Dropdown-Liste angezeigt wird:
 
    * **Name** `description`
    * **Typ** `String`
-   * **Wert** Der beschreibende Text für dieses Format; z. B. Absatz, Überschrift 1, Überschrift 2 usw. Dieser Text wird in der Liste Formatauswahl angezeigt.
+   * **Wert** Der beschreibende Text für dieses Format, z. B. Absatz, Überschrift 1, Überschrift 2 usw. Dieser Text wird in der Liste Formatauswahl angezeigt.
 
 1. Speichern Sie die Änderungen.
 
    Wiederholen Sie die Schritte für jedes erforderliche Format.
 
 >[!CAUTION]
+>
 Die Standardformate (`<p>`, `<h1>`, `<h2>` und `<h3>`) werden entfernt, wenn Sie benutzerdefinierte Formate definieren. Da `<p>` das Standardformat ist, müssen Sie dieses Format neu erstellen.
 
 ## Konfigurieren von Sonderzeichen {#spchar}
@@ -401,6 +401,7 @@ Wenn in einer [!DNL Experience Manager]-Standardinstallation das Plug-in `miscto
 Sie können den RTE aber auch so konfigurieren, dass Ihre eigene Auswahl an Zeichen zur Verfügung steht, entweder indem Sie einzelne Zeichen oder eine ganze Sequenz definieren.
 
 >[!CAUTION]
+>
 Durch das Hinzufügen eigener Sonderzeichen wird die Standardauswahl überschrieben. Definieren Sie bei Bedarf diese Zeichen in Ihrer Auswahl neu.
 
 ### Definieren einzelner Zeichen {#definesinglechar}
@@ -412,7 +413,7 @@ Durch das Hinzufügen eigener Sonderzeichen wird die Standardauswahl überschrie
    * **Typ** `String[]`
    * **Wert** `specialchars`
 
-          (oder `String / *`, wenn alle Funktionen für dieses Plug-in verwendet werden sollen)
+         (oder `String / *`, wenn alle Funktionen für dieses Plug-in verwendet werden sollen)
 
 1. Erstellen Sie unter `misctools` einen Knoten, um die Sonderzeichenkonfigurationen zu speichern:
 
@@ -452,14 +453,12 @@ Sobald die Eigenschaft gespeichert wurde, wird das entsprechende Zeichen in CRXD
 1. Fügen Sie unter diesem Knoten (der entsprechend dem Sonderzeichenbereich benannt wurde) die folgenden beiden Eigenschaften hinzu:
 
    * **Name** `rangeStart`
-
-      **Typ** `Long`
-      **Wert:** Die [Unicode](https://unicode.org/)-Darstellung (Dezimalzahl) der ersten Zeichen des Bereichs
+     **Typ** `Long`
+     **Wert:** Die [Unicode](https://unicode.org/)-Darstellung (Dezimalzahl) der ersten Zeichen des Bereichs
 
    * **Name** `rangeEnd`
-
-      **Typ** `Long`
-      **Wert:** Die [Unicode](https://unicode.org/)-Darstellung (Dezimalzahl) des letzten Zeichens des Bereichs
+     **Typ** `Long`
+     **Wert:** Die [Unicode](https://unicode.org/)-Darstellung (Dezimalzahl) des letzten Zeichens des Bereichs
 
 1. Speichern Sie die Änderungen.
 
@@ -476,9 +475,11 @@ Sobald die Eigenschaft gespeichert wurde, wird das entsprechende Zeichen in CRXD
 Stile werden in der Regel auf Text angewendet, es kann jedoch auch ein separater Satz von Stilen auf eine Tabelle oder einige Tabellenzellen angewendet werden. Solche Stile sind für Autoren entweder im Dialogfeld Zellen-Eigenschaften oder Tabelleneigenschaften über das Auswahlfeld Stil verfügbar. Diese Stile sind nur verfügbar, wenn eine Tabelle in einer Textkomponente (oder einer abgeleiteten Komponente davon) und nicht in der standardmäßigen Tabellenkomponente bearbeitet wird.
 
 >[!NOTE]
+>
 Sie können Stile für Tabellen und Zellen nur für die klassische Benutzeroberfläche definieren.
 
 >[!NOTE]
+>
 Das Kopieren und Einfügen von Tabellen in oder aus der RTE-Komponente ist Browser-abhängig. Es wird nicht standardmäßig für alle Browser unterstützt. Je nach Tabellenstruktur und Browser können unterschiedliche Ergebnisse erzielt werden. Wenn Sie beispielsweise eine Tabelle in eine RTE-Komponente in Mozilla Firefox in der klassischen und in der Touch-optimierten Benutzeroberfläche kopieren und einfügen, bleibt das Layout der Tabelle nicht erhalten.
 
 1. Navigieren Sie innerhalb Ihrer Komponente zum Knoten `<rtePlugins-node>/table`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
@@ -489,12 +490,14 @@ Das Kopieren und Einfügen von Tabellen in oder aus der RTE-Komponente ist Brows
    * **Wert** `*`
 
    >[!NOTE]
+   >
    Wenn Sie nicht alle Tabellen-Features aktivieren möchten, erstellen Sie die `features`-Eigenschaft wie folgt:
+   >
    * **Typ** `String[]`
+   >
    * **Wert(e):** Nach Bedarf einen oder beide der folgenden Werte:
-      * `table` – um die Bearbeitung von Tabelleneigenschaften zuzulassen, einschließlich der Stile.
-      * `cellprops` – um die Bearbeitung von Zelleneigenschaften zuzulassen, einschließlich der Stile.
-
+   * `table` – um die Bearbeitung von Tabelleneigenschaften zuzulassen, einschließlich der Stile.
+   * `cellprops` – um die Bearbeitung von Zelleneigenschaften zuzulassen, einschließlich der Stile.
 
 1. Definieren Sie den Speicherort von CSS-Stylesheets, um diese zu referenzieren. Siehe [Festlegen der Position des Stylesheets](#locationofstylesheet) da dies mit der Definition von [Textstile](#textstyles). Der Speicherort kann definiert werden, wenn Sie andere Stile definiert haben.
 1. Erstellen Sie unter dem Knoten `table` die folgenden neuen Knoten (nach Bedarf):
@@ -503,11 +506,11 @@ Das Kopieren und Einfügen von Tabellen in oder aus der RTE-Komponente ist Brows
 
       * **Name** `tableStyles`
       * **Typ** `cq:WidgetCollection`
+
    * Definieren der Stile für einzelne Tabellenzellen (verfügbar unter **[!UICONTROL Zellen-Eigenschaften]**),
 
       * **Name** `cellStyles`
       * **Typ** `cq:WidgetCollection`
-
 
 1. Erstellen Sie einen neuen Knoten (unter dem Knoten `tableStyles` oder `cellStyles`, sofern erforderlich), der einen individuellen Stil repräsentiert,
 
@@ -521,12 +524,12 @@ Das Kopieren und Einfügen von Tabellen in oder aus der RTE-Komponente ist Brows
       * **Name** `cssName`
       * **Typ** `String`
       * **Wert:** Der Name der CSS-Klasse (ohne `.` voranzustellen, beispielsweise `cssClass` anstatt `.cssClass`)
+
    * Um einen beschreibenden Text zu definieren, der in der Popup-Auswahl angezeigt werden soll,
 
       * **Name** `text`
       * **Typ** `String`
       * **Wert:** Der Text, der in der Auswahlliste angezeigt werden soll
-
 
 1. Speichern Sie alle Änderungen.
 
@@ -555,6 +558,7 @@ Wenn Sie sowohl die CSS- als auch die Stilzeichenfolge im Code angeben, hat die 
 Wenn das spellcheck-Plug-in aktiviert ist, verwendet der RTE Wörterbücher für jede entsprechende Sprache. Diese werden dann entsprechend der Sprache der Website ausgewählt, indem entweder die language-Eigenschaft der Unterstruktur verwendet oder die Sprache aus der URL extrahiert wird. So wird beispielsweise für den `/en/`-Zweig das englische und für den `/de/`-Zweig das deutsche Wörterbuch für die Überprüfung verwendet.
 
 >[!NOTE]
+>
 Die Meldung „Rechtschreibprüfung fehlgeschlagen.“ wird angezeigt, wenn versucht wird, eine Überprüfung für eine Sprache durchzuführen, die nicht installiert ist.
 
 Eine AEM-Standardinstallation umfasst die Wörterbücher für:
@@ -563,6 +567,7 @@ Eine AEM-Standardinstallation umfasst die Wörterbücher für:
 * Britisches Englisch (en_gb)
 
 >[!NOTE]
+>
 Diese Standardwörterbücher finden Sie zusammen mit den entsprechenden ReadMe-Dateien unter `/libs/cq/spellchecker/dictionaries`. Diese Dateien sollten nicht geändert werden.
 
 Gehen Sie wie folgt vor, um bei Bedarf weitere Wörterbücher hinzuzufügen.
@@ -571,14 +576,18 @@ Gehen Sie wie folgt vor, um bei Bedarf weitere Wörterbücher hinzuzufügen.
 1. Wählen Sie die gewünschte Sprache aus und laden Sie die ZIP-Datei mit den Rechtschreibdefinitionen herunter. Entpacken Sie den Inhalt des Archivs in Ihrem Dateisystem.
 
    >[!CAUTION]
+   >
    Nur Wörterbücher im `MySpell`-Format für OpenOffice.org v2.0.1 bzw. frühere Versionen werden unterstützt. Da es sich bei den Wörterbüchern jetzt um Archivdateien handelt, wird empfohlen, das Archiv nach dem Herunterladen zu überprüfen.
 
 1. Suchen Sie die *.aff- und die *.dic-Dateien. Dateinamen in Kleinbuchstaben beibehalten. Zum Beispiel `de_de.aff` und `de_de.dic`.
 1. Laden Sie die *.aff- und die *.dic-Dateien in das Repository unter `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
+>
 Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben.
-Um die Rechtschreibprüfung auszuführen, tippen/klicken Sie in der Symbolleiste auf die Schaltfläche &quot;Rechtschreibprüfung&quot;. Der RTE überprüft die Rechtschreibung von Wörtern und markiert falsch geschriebene Wörter.
+>
+Um die Rechtschreibprüfung auszuführen, tippen/klicken Sie in der Symbolleiste auf die Schaltfläche Rechtschreibprüfung . Der RTE überprüft die Rechtschreibung von Wörtern und markiert falsch geschriebene Wörter.
+>
 Wenn Sie Änderungen einbeziehen, die die Rechtschreibprüfung vorschlägt, werden der Status des Textes und falsch geschriebene Wörter nicht mehr hervorgehoben. Tippen/klicken Sie erneut auf die Schaltfläche „Rechtschreibprüfung“, um die Rechtschreibprüfung auszuführen.
 
 ## Konfigurieren der Verlaufsgröße für die Aktionen „Rückgängig“ und „Wiederholen“ {#undohistory}
@@ -596,7 +605,7 @@ Mit dem RTE können Autoren einige letzte Bearbeitungen rückgängig machen oder
 
 ## Konfigurieren der Tabulator-Schrittweite {#tabsize}
 
-Wenn das Tabulatorzeichen innerhalb eines Textes gedrückt wird, wird eine vordefinierte Anzahl von Leerzeichen eingefügt. Standardmäßig handelt es sich hierbei um drei geschützten Leerzeichen und ein Leerzeichen.
+Wenn das Tabulatorzeichen innerhalb eines Textes gedrückt wird, wird eine vordefinierte Anzahl von Leerzeichen eingefügt. Standardmäßig handelt es sich hierbei um drei geschützte Leerzeichen und ein Leerzeichen.
 
 So definieren Sie die Tab-Größe:
 
@@ -614,6 +623,7 @@ So definieren Sie die Tab-Größe:
 Wenn die Einzugsfunktion aktiviert ist (Standardeinstellung), können Sie die Einzugsgröße definieren:
 
 >[!NOTE]
+>
 Diese Einzugsgröße wird nur auf Absätze (Blöcke) des Texts angewendet. Sie wirkt sich nicht auf den Einzug von tatsächlichen Listen aus.
 
 1. Navigieren Sie innerhalb Ihrer Komponente zum Knoten `<rtePlugins-node>/lists`. Erstellen Sie diese Knoten, falls sie nicht bereits vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
@@ -646,11 +656,13 @@ Beim Hinzufügen von Links in [!DNL Experience Manager] können Sie die zu verwe
    * **Typ** `nt:unstructured`
 
    >[!NOTE]
+   >
    Der Knoten `../items/text` hat die Eigenschaft:
+   >
    * **Name** `xtype`
    * **Typ** `String`
    * **Wert** `richtext`
-
+   >
    Der Speicherort des Knotens `../items/text` kann je nach Struktur des Dialogfelds variieren. Zwei Beispiele sind `/apps/myProject>/components/text/dialog/items/text` und `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. Erstellen Sie unter `htmlRules` einen neuen Knoten.
@@ -665,27 +677,31 @@ Beim Hinzufügen von Links in [!DNL Experience Manager] können Sie die zu verwe
       * **Name** `cssInternal`
       * **Typ** `String`
       * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; beispielsweise `cssClass` anstatt `.cssClass`)
+
    * CSS-Stil für externe Links
 
       * **Name** `cssExternal`
       * **Typ** `String`
       * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; beispielsweise `cssClass` anstatt `.cssClass`)
+
    * Array gültiger **[!UICONTROL Protokolle]**, einschließlich `https://`, `https://`, `file://`, `mailto:` und andere,
 
       * **Name** `protocols`
       * **Typ** `String[]`
       * **Wert(e):** Ein oder mehrere Protokolle
+
    * **defaultProtocol** (Eigenschaft vom Typ **Zeichenfolge**): Protokoll, das verwendet wird, wenn der Benutzer keines explizit festlegt
 
       * **Name** `defaultProtocol`
       * **Typ** `String`
       * **Wert(e):** Ein oder mehrere Standardprotokolle
+
    * Definition der Art, wie das Zielattribut eines Links verarbeitet werden soll Erstellen Sie einen Knoten:
 
       * **Name** `targetConfig`
       * **Typ** `nt:unstructured`
 
-      Definieren Sie im Knoten `targetConfig` die erforderlichen Eigenschaften:
+     Definieren Sie im Knoten `targetConfig` die erforderlichen Eigenschaften:
 
       * Legen Sie den Zielmodus fest:
 
@@ -695,26 +711,21 @@ Beim Hinzufügen von Links in [!DNL Experience Manager] können Sie die zu verwe
 
             * `auto`: bedeutet, dass ein automatisches Ziel ausgewählt wird
 
-               (festgelegt über die `targetExternal`-Eigenschaft für externe Links oder die `targetInternal`-Eigenschaft für interne Links).
+              (festgelegt über die `targetExternal`-Eigenschaft für externe Links oder die `targetInternal`-Eigenschaft für interne Links).
 
             * `manual`: In diesem Kontext unzulässig
             * `blank`: In diesem Kontext unzulässig
+
       * Das Ziel für interne Links:
 
          * **Name** `targetInternal`
          * **Typ** `String`
          * **Wert:** Das Ziel für interne Links (nur verwenden, wenn der Modus `auto` aktiv ist)
+
       * Das Ziel für externe Links:
 
          * **Name** `targetExternal`
          * **Typ** `String`
          * **Wert:** Das Ziel für externe Links (nur verwenden, wenn der Modus `auto` aktiv ist)
-
-
-
-
-
-
-
 
 1. Speichern Sie alle Änderungen.

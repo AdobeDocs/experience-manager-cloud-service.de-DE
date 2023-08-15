@@ -4,10 +4,10 @@ description: Im Folgenden erhalten Sie eine Einführung in das Wiederverwenden v
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 4049d226ecedb917c2a72cb76bc2fcaa946163f2
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2719'
-ht-degree: 87%
+source-wordcount: '2714'
+ht-degree: 84%
 
 ---
 
@@ -114,14 +114,14 @@ Auf MSM kann mithilfe verschiedener Optionen der jeweiligen Konsole direkt über
 
 * **Website erstellen** (**Sites**)
 
-   * MSM unterstützt Sie bei der Verwaltung mehrerer Websites, die gemeinsame Inhalte enthalten. Beispielsweise werden Websites oft so für internationale Zielgruppen bereitgestellt, dass der Großteil der Inhalte für alle Länder ist, ein Teil des Inhalts aber spezifisch für das jeweilige Land ist. MSM ermöglicht Ihnen die [Erstellung von Live Copies, die automatisch eine oder mehrere Websites basierend auf Ihrer Quellseite aktualisieren](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Dies hilft Ihnen auch dabei, eine gemeinsame Basisstruktur zu erzwingen, die gemeinsamen Inhalte auf mehreren Sites zu nutzen, ein gemeinsames Erscheinungsbild zu erreichen und die Maßnahmen auf die Verwaltung der Inhalte zu konzentrieren, die sich auf den verschiedenen Sites tatsächlich unterscheiden. Erstellen einer Site auf diese Weise:
+   * MSM unterstützt Sie bei der Verwaltung mehrerer Websites, die gemeinsame Inhalte enthalten. Beispielsweise werden Websites oft so für internationale Zielgruppen bereitgestellt, dass der Großteil der Inhalte für alle Länder ist, ein Teil des Inhalts aber spezifisch für das jeweilige Land ist. Mit MSM können Sie [Erstellen von Live Copies, die automatisch eine oder mehrere Sites basierend auf Ihrer Quell-Site aktualisieren](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Dies hilft Ihnen auch dabei, eine gemeinsame Basisstruktur zu erzwingen, die gemeinsamen Inhalte auf mehreren Sites zu nutzen, ein gemeinsames Erscheinungsbild zu erreichen und die Maßnahmen auf die Verwaltung der Inhalte zu konzentrieren, die sich auf den verschiedenen Sites tatsächlich unterscheiden. Erstellen einer Site auf diese Weise:
       * Für die Angabe der Quelle ist eine vordefinierte Blueprint-Konfiguration erforderlich.
       * Es wird eine Live Copy der (vordefinierten) Quelle erstellt.
       * Stellt dem Benutzer die **Rollout** Schaltfläche.
 
 * **Erstellen einer Live Copy** (**Sites**)
 
-   * MSM ermöglicht Ihnen die [Erstellung einer (einmaligen) Ad-hoc-Live Copy der einzelnen Seite oder der Unterverzweigung einer Website](creating-live-copies.md#creating-a-live-copy-of-a-page), wie zum Beispiel das Duplizieren einer Unterverzweigung zur Bereitstellung von Informationen über eine neue/aktualisierte Version eines Produkts. Erstellen einer Live Copy auf diese Weise:
+   * Mit MSM können Sie [eine Ad-hoc-Live Copy (einmalig) einer einzelnen Seite oder Unterverzweigung einer Website erstellen.](creating-live-copies.md#creating-a-live-copy-of-a-page) Beispielsweise das Duplizieren einer Unterverzweigung, um Informationen über eine neue/aktualisierte Version eines Produkts bereitzustellen. Erstellen einer Live Copy auf diese Weise:
       * Erstellt eine Ad-hoc-Live Copy (keine Blueprint-Konfiguration erforderlich).
       * Kann verwendet werden, um (sofort) eine Live Copy einer beliebigen Seite/Verzweigung zu erstellen.
       * Erfordert die Option **Synchronisieren** (die **Rollout**-Schaltfläche wird nicht bereitgestellt).
@@ -136,11 +136,11 @@ Auf MSM kann mithilfe verschiedener Optionen der jeweiligen Konsole direkt über
 
 * **Live Copy-Übersicht** (**Sites**)
 
-   * Diese Konsole ermöglicht Ihnen die [Ansicht und Verwaltung Ihres Blueprints und dessen Live Copies.](live-copy-overview.md)
+   * Mithilfe dieser Konsole können Sie [Ihr Blueprint und seine Live Copies anzeigen und verwalten.](live-copy-overview.md)
 
 * **Blueprints** (**Tools** – **Sites**)
 
-   * Diese Konsole ermöglicht Ihnen die [Erstellung und Verwaltung Ihrer Blueprint-Konfigurationen.](creating-live-copies.md#creating-a-blueprint-configuration)
+   * Mithilfe dieser Konsole können Sie [Erstellen und verwalten Sie Ihre Blueprint-Konfigurationen.](creating-live-copies.md#creating-a-blueprint-configuration)
 
 >[!NOTE]
 >
@@ -245,7 +245,7 @@ Eine Live Copy wird als gestapelte Live Copy bezeichnet, wenn sie als untergeo
 
 ### Quelle, Blueprints und Blueprint-Konfigurationen {#source-blueprints-and-blueprint-configurations}
 
-Jede Seite einer Verzweigung von Seiten kann als Quelle einer Live Copy verwendet werden. MSM ermöglicht Ihnen allerdings die Definition einer Blueprint-Konfiguration, die einen Quellpfad angibt. Eine Blueprint-Konfiguration hat die folgenden Vorteile:
+Jede Seite einer Verzweigung von Seiten kann als Quelle einer Live Copy verwendet werden. Mit MSM können Sie jedoch auch eine Blueprint-Konfiguration definieren, die einen Quellpfad angibt. Eine Blueprint-Konfiguration hat die folgenden Vorteile:
 
 * Der Autor kann die Option **Rollout** für einen Blueprint verwenden. Das heißt, dass Änderungen explizit an Live Copies gepusht werden, die von diesem Blueprint Konfigurationsoptionen übernehmen.
 * Der Autor kann **Website erstellen** nutzen, wodurch der Benutzer einfach Sprachen auswählen und die Struktur der Live Copy konfigurieren kann.

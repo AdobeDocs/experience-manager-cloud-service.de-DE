@@ -4,10 +4,10 @@ description: Nachdem Sie Ihre Cloud-Ressourcen konfiguriert haben, müssen Sie I
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 94%
+ht-degree: 91%
 
 ---
 
@@ -42,7 +42,7 @@ Um AEM verwenden zu können, müssen Ihre Team-Mitglieder mindestens einem AEM-P
 >Jeder Benutzer, der einem AEM as a Cloud Service-Produktprofil zugewiesen ist, hat über die Rolle **Cloud Manager-Benutzer** schreibgeschützten Zugriff auf Cloud Manager.
 >
 >Benutzer mit **Cloud Manager** Die Benutzerrolle kann sich nur bei Cloud Manager anmelden und in den (falls vorhanden) AEM Autorenumgebungen navigieren, indem Sie die Menüoptionen Programme verwenden. Die Rolle **Cloud Manager-Benutzer** reicht nicht aus, um auf Programmdetails zuzugreifen. Wenn ein solcher Zugriff erforderlich ist, müssen Benutzende von ihrem Systemadministrator zusätzliche Rollen erhalten.
->Siehe [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) Weitere Informationen zu Cloud Manager-Benutzerrollen.
+>Siehe [Abschnitt &quot;Zusätzliche Ressourcen&quot; unten](#additional-resources) Weitere Informationen zu Cloud Manager-Benutzerrollen.
 
 >[!CAUTION]
 >
@@ -58,7 +58,7 @@ Wenn Sie diesen Abschnitt lesen, sollten Sie über die folgenden Informationen z
 
 >[!TIP]
 >
->Für das Onboarding empfehlen wir, zunächst Benutzer hinzuzufügen, die an den unmittelbaren Aufgaben teilnehmen, z. B. Administratoren, Entwickler und Inhaltsautoren. Sie können den Rest des Onboarding fortsetzen, ohne alle Benutzer hinzuzufügen. Nachdem Sie das Onboarding abgeschlossen haben, können Sie später die Anzahl von Benutzern ausweiten.
+>Für das Onboarding empfiehlt Adobe, zunächst Benutzer hinzuzufügen, die an den unmittelbaren Aufgaben teilnehmen, z. B. Administratoren, Entwickler und Inhaltsautoren. Sie können den Rest des Onboarding fortsetzen, ohne alle Benutzer hinzuzufügen. Nachdem Sie das Onboarding abgeschlossen haben, können Sie später die Anzahl von Benutzern ausweiten.
 
 ## AEM-Produktprofile anzeigen {#view-profiles}
 

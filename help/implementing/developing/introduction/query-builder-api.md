@@ -1,11 +1,11 @@
 ---
 title: Query Builder-API
-description: Die Funktionalität von Asset Share Query Builder wird über einen Java&trade verfügbar gemacht. API und eine REST-API.
+description: Die Funktionalität des Asset Share Query Builder wird über eine Java&trade-, API- und REST-API bereitgestellt.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2008'
-ht-degree: 50%
+source-wordcount: '2006'
+ht-degree: 48%
 
 ---
 
@@ -109,7 +109,7 @@ Sie können auch einen numerischen Wert verwenden, um bis zu einer benutzerdefin
 
 `http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=wknd/components/structure/page&1_property.operation=like&p.guessTotal=50&orderby=path`
 
-Es wird eine Zahl mit dem gleichen Standardwert von 10 Ergebnissen mit einem 0-Versatz zurückgegeben, es werden jedoch nur maximal 50 Ergebnisse angezeigt:
+Es wird eine Zahl mit dem gleichen Standardlimit von 10 Ergebnissen mit einem 0-Versatz zurückgegeben, es werden jedoch nur maximal 50 Ergebnisse angezeigt:
 
 ```xml
 "success": true,
@@ -121,7 +121,7 @@ Es wird eine Zahl mit dem gleichen Standardwert von 10 Ergebnissen mit einem 0-V
 
 ### Implementieren von Seitenumbrüchen {#implementing-pagination}
 
-Standardmäßig stellt der Query Builder auch die Anzahl der Treffer bereit. Abhängig von der Ergebnisgröße kann diese Zahl lange dauern, da bei der Ermittlung der genauen Anzahl jedes Ergebnis auf Zugriffskontrolle überprüft werden muss. Meistens wird die Gesamtsumme verwendet, um die Paginierung für die Benutzeroberfläche des Endbenutzers zu implementieren. Da die Ermittlung der genauen Anzahl langsam sein kann, wird empfohlen, die Paginierung mit der Funktion guessTotal zu implementieren.
+Standardmäßig stellt der Query Builder auch die Anzahl der Treffer bereit. Abhängig von der Ergebnisgröße kann diese Zahl lange dauern, da bei der Ermittlung der genauen Anzahl jedes Ergebnis auf Zugriffskontrolle überprüft werden muss. Meistens wird die Gesamtsumme verwendet, um die Paginierung für die Endbenutzeroberfläche zu implementieren. Da die Ermittlung der genauen Anzahl langsam sein kann, wird empfohlen, die Paginierung mit der Funktion guessTotal zu implementieren.
 
 Die Benutzeroberfläche kann beispielsweise den folgenden Ansatz anpassen:
 
@@ -189,7 +189,7 @@ Verwenden Sie die Eigenschaft `tagid` wie im Beispiel, wenn Sie die explizite T
 
 Verwenden Sie die Eigenschaft `tag` für den Tag-Titelpfad (ohne Leerstellen).
 
-Im vorherigen Beispiel, weil Sie nach Seiten suchen (`cq:Page` -Knoten) verwenden Sie den relativen Pfad von diesem Knoten für die `tagid.property` predicate, was `jcr:content/cq:tags`. Standardmäßig wird die `tagid.property` würde `cq:tags`.
+Im vorherigen Beispiel, weil Sie nach Seiten suchen (`cq:Page` -Knoten) den relativen Pfad von diesem Knoten für `tagid.property` predicate, was `jcr:content/cq:tags`. Standardmäßig wird die Variable `tagid.property` würde `cq:tags`.
 
 ### Suchen unter mehreren Pfaden (mit Gruppen) {#search-under-multiple-paths-using-groups}
 
@@ -326,7 +326,7 @@ Eine andere Möglichkeit besteht darin, untergeordnete Knoten in die Query Build
 p.nodedepth=n
 ```
 
-Wo `n` ist die Anzahl der Ebenen, die die Abfrage zurückgeben soll. Damit ein untergeordneter Knoten zurückgegeben wird, muss er durch den Eigenschaften-Selektor angegeben werden
+Wo `n` ist die Anzahl der Ebenen, die die Abfrage zurückgeben soll. Damit ein untergeordneter Knoten zurückgegeben wird, muss er durch den Eigenschaftenselektor angegeben werden
 
 ```xml
 p.hits=full
@@ -351,7 +351,7 @@ Sie können auch das [Javadoc für die `PredicateEvaluator`-Klassen](https://dev
 
 Das Präfix des Klassennamens (z. B. `similar` in [`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) ist die *Haupteigenschaft* der Klasse. Diese Eigenschaft ist auch der Name der Eigenschaft, die in der Abfrage verwendet wird (in Kleinbuchstaben).
 
-Für Haupteigenschaften dieser Art können Sie die Abfrage verkürzen und anstelle der vollqualifizierten Variante `similar=/content/en` die Kurzversion `similar.similar=/content/en` verwenden. Die vollqualifizierte Form muss für alle Eigenschaften einer Klasse genutzt werden, bei denen es sich nicht um die Haupteigenschaften handelt.
+Für diese Haupteigenschaften können Sie die Abfrage verkürzen und `similar=/content/en` anstelle der vollständig qualifizierten Variante `similar.similar=/content/en`. Das vollständig qualifizierte Formular muss für alle nicht-prinzipalen Eigenschaften einer Klasse verwendet werden.
 
 ## Beispiel für die Nutzung der Query Builder-API {#example-query-builder-api-usage}
 

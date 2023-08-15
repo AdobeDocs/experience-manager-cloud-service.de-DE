@@ -1,19 +1,19 @@
 ---
 title: Responsives Layout
-description: AEM ermöglicht Ihnen die Erstellung eines responsiven Layouts für Ihre Seiten
+description: AEM ermöglicht die Erstellung eines responsiven Layouts für Ihre Seiten
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 78%
+source-wordcount: '1739'
+ht-degree: 70%
 
 ---
 
 # Responsives Layout {#responsive-layout}
 
-AEM ermöglicht Ihnen ein responsives Layout für Ihre Seiten mithilfe der **Layout-Container**-Komponente zu erstellen.
+Mit AEM können Sie ein responsives Layout für Ihre Seiten mit **Layout-Container** -Komponente.
 
-Dies bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout entsprechend der Geräte-/Fenstergröße und dem Format neu anordnen. Die Komponente wird zusammen mit dem [**Layout**-Modus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) verwendet, in dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
+Dies bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout entsprechend der Geräte-/Fenstergröße und dem Format neu anordnen. Die Komponente wird zusammen mit der [**Layout** mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), mit dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
 
 Der Layout-Container:
 
@@ -35,7 +35,7 @@ Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination v
   Sobald der Layout-Container auf der Seite positioniert ist, können Sie im **Layout**-Modus Inhalte im responsiven Raster positionieren.
 
 * [**Emulator**](#selecting-a-device-to-emulate)
-Auf diese Weise können Sie responsive Websites erstellen und bearbeiten, die ihr Layout durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße anpassen. Der Benutzer kann dann sehen, wie der Inhalt mithilfe des Emulators wiedergegeben wird.
+Auf diese Weise können Sie responsive Websites erstellen und bearbeiten, die das Layout durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße anpassen. Der Benutzer kann dann sehen, wie der Inhalt mithilfe des Emulators wiedergegeben wird.
 
 Mit diesen responsiven Rastermechanismen können Sie:
 
@@ -76,7 +76,7 @@ Das Gerät **Desktop**, die keine bestimmte Breite hat, bezieht sich auf den Sta
 
 Wenn Sie den Emulator verwenden, wählen Sie ein bestimmtes Gerät für die Emulation und Layoutdefinition aus und der zugehörige Breakpoint wird ebenfalls hervorgehoben. Alle von Ihnen vorgenommenen Layoutänderungen gelten für andere Geräte, für die der Breakpoint gilt. d. h. alle Geräte, die links neben der aktiven Breakpoint-Markierung, aber vor der nächsten Breakpoint-Markierung positioniert sind.
 
-Wenn Sie beispielsweise das Gerät auswählen **iPhone 6 Plus** (definiert mit einer Breite von 540 Pixel) für Emulation und Layout, der Breakpoint **Telefon** (definiert als 768 Pixel) wird ebenfalls aktiviert. Alle Layoutänderungen, die Sie für die **iPhone 6** auf andere Geräte im Rahmen der **Telefon** Breakpoint, z. B. **iPhone 5** (definiert als 320 Pixel).
+Wenn Sie beispielsweise das Gerät auswählen **iPhone 6 Plus** (definiert mit einer Breite von 540 Pixel) für Emulation und Layout, der Breakpoint **Telefon** (definiert als 768 Pixel) wird ebenfalls aktiviert. Alle Layoutänderungen, die Sie für die **IPHONE 6** auf andere Geräte im Rahmen der **Telefon** Breakpoint, z. B. **IPHONE 5** (definiert als 320 Pixel).
 
 ![Emulatoren](/help/sites-cloud/authoring/assets/responsive-layout-emulators.png)
 
@@ -96,7 +96,7 @@ Wenn Sie beispielsweise das Gerät auswählen **iPhone 6 Plus** (definiert mit e
 
    In der Emulator-Symbolleiste werden zusätzliche Layout-Optionen angezeigt:
 
-   * **Gerät drehen** – Ermöglicht es Ihnen, die vertikale Ausrichtung (Hochformat) eines Geräts in eine horizontale Ausrichtung (Querformat) zu ändern und umgekehrt.
+   * **Gerät drehen** - Ermöglicht das Drehen eines Geräts von der vertikalen (Hochformat-)Ausrichtung in die horizontale (Querformat-)Ausrichtung und umgekehrt.
 
    ![Schaltfläche zum Drehen des Geräts in das Querformat](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![Schaltfläche zum Drehen des Geräts in das Hochformat](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
@@ -195,8 +195,8 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster ausführen:
   >
   >Proportionen und Verhältnisse werden beibehalten, wenn Komponenten wie **Bilder** die Größe ändern.
 
-* Wenn Sie auf eine Inhaltskomponente klicken/tippen, bietet Ihnen die Symbolleiste folgende Möglichkeiten:
-   * **Übergeordnetes Element**: Ermöglicht die Auswahl der gesamten Layout-Container-Komponente, um diese insgesamt zu bearbeiten.
+* Klicken/tippen Sie auf eine Inhaltskomponente. Über die Symbolleiste können Sie:
+   * **Übergeordnet** - Ermöglicht die Auswahl der gesamten Layout-Container-Komponente, damit Aktionen für alle ausgeführt werden können.
    * **In neue Zeile verschieben** - Die Komponente wird in eine neue Zeile verschoben, abhängig vom im Raster verfügbaren Platz.
    * **Komponente ausblenden** - Die Komponente wird unsichtbar (sie kann über die Symbolleiste des Layout-Containers wiederhergestellt werden).
 

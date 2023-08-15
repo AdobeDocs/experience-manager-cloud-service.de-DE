@@ -2,10 +2,10 @@
 title: Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs
 description: In diesem Teil der AEM Headless-Entwickler-Tour lernen Sie, wie Sie GraphQL-Abfragen verwenden, um auf den Inhalt Ihrer Inhaltsfragmente zuzugreifen.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 97%
+source-wordcount: '1358'
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ Dieser Artikel baut auf diesen Grundlagen auf, damit Sie verstehen, wie Sie in A
 
 ## Sie möchten also auf Ihre Inhalte zugreifen? {#so-youd-like-to-access-your-content}
 
-Also...Sie haben all diesen Inhalt, sauber strukturiert (in Inhaltsfragmenten) und warten nur darauf, Ihre neue App mit Feeds zu versehen. Doch wie bekommen Sie sie dorthin?
+Sie haben also all diesen Inhalt, sauber strukturiert (in Inhaltsfragmenten) und warten nur darauf, Ihre neue App zu füttern. Doch wie bekommen Sie sie dorthin?
 
 Sie benötigen eine Möglichkeit, bestimmte Inhalte gezielt anzusprechen, auszuwählen, was Sie benötigen, und sie zur weiteren Verarbeitung an Ihr Programm zurückzugeben.
 
@@ -49,7 +49,7 @@ GraphQL ist eine Open-Source-Spezifikation, mit der Ihnen Folgendes zur Verfügu
 * eine Abfragesprache, mit der Sie bestimmte Inhalte aus strukturierten Objekten auswählen können,
 * eine Laufzeit, um diese Abfragen mit Ihren strukturierten Inhalten auszuführen.
 
-GraphQL ist eine *stark* typisierte API. Das bedeutet, dass *alle* Inhalte klar strukturiert und nach Typ organisiert sein müssen, damit GraphQL *versteht*, auf was zugegriffen wird und wie. Die Datenfelder werden in GraphQL-Schemata definiert, die die Struktur Ihrer Inhaltsobjekte definieren.
+GraphQL ist eine stark typisierte API. Das bedeutet, dass *alle* Inhalte klar strukturiert und nach Typ organisiert sein müssen, damit GraphQL *versteht*, auf was zugegriffen wird und wie. Die Datenfelder werden in GraphQL-Schemata definiert, die die Struktur Ihrer Inhaltsobjekte definieren.
 
 GraphQL-Endpunkte geben dann die Pfade an, die GraphQL-Abfragen ausführen.
 
@@ -133,7 +133,7 @@ Die **Fragmentreferenz**:
 
 * ist ein bestimmter Datentyp, der beim Definieren eines Inhaltsfragmentmodells verfügbar ist,
 * verweist auf ein anderes Fragment, abhängig von einem bestimmten Inhaltsfragmentmodell,
-* ermöglicht das Erstellen und anschließende Abrufen strukturierter Daten.
+* Ermöglicht das Erstellen und anschließende Abrufen strukturierter Daten.
 
    * Wenn als **multifeed** definiert, können mehrere Unterfragmente vom primären Fragment referenziert (abgerufen) werden.
 
@@ -146,7 +146,7 @@ Um Sie beim Entwerfen und Entwickeln Ihrer Inhaltsfragmentmodelle zu unterstütz
 <!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
 
-GraphQL is a strongly typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
+GraphQL is a strongly-typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
 
 For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** Content Fragment Models and their data types.
 

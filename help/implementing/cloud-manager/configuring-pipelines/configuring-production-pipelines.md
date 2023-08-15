@@ -3,10 +3,10 @@ title: Konfigurieren von Produktions-Pipelines
 description: Erfahren Sie, wie Sie Produktions-Pipelines konfigurieren, um Ihren Code zu erstellen und in Produktionsumgebungen bereitzustellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 90%
+source-wordcount: '1507'
+ht-degree: 88%
 
 ---
 
@@ -19,7 +19,7 @@ Ein Benutzer muss über die Rolle **[Bereitstellungs-Manager](/help/onboarding/c
 
 >[!NOTE]
 >
->Eine Produktions-Pipeline kann erst eingerichtet werden, wenn die Erstellung eines Programms abgeschlossen wurde, das Git-Repository über mindestens eine Verzweigung verfügt und ein Satz aus Produktions- und Staging-Umgebung erstellt wurde.
+>Eine Produktions-Pipeline kann erst eingerichtet werden, wenn die Programmerstellung abgeschlossen ist, ein Git-Repository über mindestens eine Verzweigung verfügt und ein Satz aus Produktions- und Staging-Umgebung erstellt wird.
 
 Bevor Sie Code bereitstellen, müssen Sie Ihre Pipeline-Einstellungen über den [!UICONTROL Cloud Manager] konfigurieren.
 
@@ -126,7 +126,7 @@ Gehen Sie wie folgt vor, um die Konfiguration der Pipeline mit Full-Stack-Code a
 
    ![Definieren eines Pfads für das Experience Audit](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-1. Klicken **Seite hinzufügen** und der Pfad wird automatisch mit der Adresse Ihrer Umgebung ausgefüllt und der Pfadtabelle hinzugefügt.
+1. Klicks **Seite hinzufügen** und der Pfad wird automatisch mit der Adresse Ihrer Umgebung ausgefüllt und der Pfadtabelle hinzugefügt.
 
    ![Speichern des Pfads zur Tabelle](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 

@@ -2,10 +2,10 @@
 title: Autorenumgebung und Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2153'
-ht-degree: 95%
+source-wordcount: '2150'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisiere
 
 ## Verwalten Ihrer Site {#managing-your-site}
 
-Die **Sites-Konsole** bietet Ihnen die Möglichkeit, auf Ihrer Website zu navigieren und diese zu verwalten. Hierfür stehen neben der Kopfzeilen- und Symbolleiste auch Aktionssymbole (für die jeweils ausgewählte Ressource) sowie Breadcrumbs und ggf. sekundäre Leisten (z. B. für Zeitleiste und Verweise) zur Verfügung.
+Die **Sites** Mit der Konsole können Sie auf Ihrer Website navigieren und diese verwalten. Verwenden Sie dazu die Kopfzeilenleiste, Symbolleiste, Aktionssymbole (für die ausgewählte Ressource zutreffend), Breadcrumbs und ggf. sekundäre Leisten (z. B. Timeline und Verweise).
 
 Zum Beispiel in der Spaltenansicht:
 
@@ -152,7 +152,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
 >[!NOTE]
 >
->Ein Mobilgerät wird erkannt, wenn die Breite kleiner als 1024 px ist. das heißt, auch auf einem kleinen Desktop-Fenster.
+>Ein Mobilgerät wird erkannt, wenn die Breite weniger als 1024 Pixel beträgt, d. h. auch bei einem kleinen Desktop-Fenster.
 
 Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den [Asset-Editor](/help/assets/manage-digital-assets.md) auch direkt über den Browser starten. Klicken Sie dazu einfach auf das Bearbeitungssymbol neben dem Asset-Namen.
 
@@ -265,12 +265,12 @@ Darüber hinaus können über die **Seiteninformationen** ggf. auch Analysen und
 Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über die jeweils unterschiedliche Aktionen durchgeführt werden können:
 
 * [Bearbeiten:](/help/sites-cloud/authoring/fundamentals/editing-content.md) Der Modus zum Bearbeiten des Seiteninhalts.
-* [Layout](/help/sites-cloud/authoring/features/responsive-layout.md): Ermöglicht es Ihnen, Ihr responsives Layout gerätespezifisch zu erstellen und zu bearbeiten (wenn die Seite auf einem Layout-Container basiert).
+* [Layout](/help/sites-cloud/authoring/features/responsive-layout.md) - ermöglicht das Erstellen und Bearbeiten eines responsiven Layouts abhängig vom Gerät (wenn die Seite auf einem Layout-Container basiert)
 * [Zielsetzung:](/help/sites-cloud/authoring/personalization/targeted-content.md) Steigerung der Inhaltsrelevanz durch Zielsetzung und Messung über alle Kanäle hinweg.
-* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp): Ermöglicht es, eine Seite in dem Zustand anzuzeigen, den sie zu einem früheren Zeitpunkt aufgewiesen hat.
+* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - ermöglicht die Anzeige des Seitenstatus zu einem bestimmten Zeitpunkt.
 * [Live Copy-Status:](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) Für einen schnellen Überblick über den Live Copy-Status und darüber, welche Komponenten übernommen oder nicht übernommen wurden.
 * [Entwicklermodus](/help/implementing/developing/tools/developer-mode.md)
-* [Vorschau](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - wird verwendet, um die Seite so anzuzeigen, wie sie in der Veröffentlichungsumgebung angezeigt wird; oder mithilfe von Links im Inhalt navigieren.
+* [Vorschau](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - wird verwendet, um die Seite so anzuzeigen, wie sie in der Veröffentlichungsumgebung angezeigt wird, oder um mithilfe von Links im Inhalt zu navigieren.
 * [Anmerken](/help/sites-cloud/authoring/fundamentals/annotations.md): In diesem Modus können Sie Anmerkungen auf der Seite hinzufügen oder anzeigen.
 
 Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Symbol ändert sich je nach verwendetem Modus:

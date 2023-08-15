@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Entwicklende und Implementierungs-Manager auf Git
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1417'
-ht-degree: 98%
+source-wordcount: '1415'
+ht-degree: 93%
 
 ---
 
@@ -51,7 +51,7 @@ Je nach den betrieblichen Anforderungen können Benutzende beide Rollen haben.
 Bevor Sie mit den in diesem Dokument beschriebenen Aufgaben als Entwickelnde oder Bereitstellungs-Manager beginnen, stellen Sie sicher, dass Ihr Systemadministrator bzw. Ihre Systemadministratorin alle in dieser Tour beschriebenen Schritte ausgeführt hat. Das heißt:
 
 * Ihr Systemadministrator bzw. Ihre Systemadministratorin hat die Entwickelnden und Bereitstellungs-Manager ihren jeweiligen Produktprofilen zugewiesen.
-* Entwickler müssen zusätzlich zu **AEM** oder **AEM Administratoren** Produktprofile auch AEM verwenden.
+* Entwickler müssen zusätzlich zugewiesen werden **AEM** oder **AEM Administratoren** Produktprofile auch AEM verwenden.
 * Cloud-Ressourcen wurden eingerichtet.
 
 ## Zugriff auf Git {#accessing-git}
@@ -150,6 +150,6 @@ Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den In
 * [Verwenden von Git mit Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Erfahren Sie, wie Sie die Git-Repositorys von Cloud Manager verwenden und Ihr eigenes On-Premise verwaltetes Git-Repository mit Cloud Manager integrieren.
 * [Einrichten einer lokalen Entwicklungsumgebung](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=de) - Dieses Tutorial zeigt Ihnen, wie Sie mit dem AEM as a Cloud Service SDK eine lokale Entwicklungsumgebung für Adobe Experience Manager (AEM) einrichten.
 * [Erste Schritte mit AEM Sites - WKND-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de) - Dieses mehrteilige Tutorial wurde für Entwickler und Entwicklerinnen konzipiert, die neu in Adobe Experience Manager (AEM) sind. Dieses mehrteilige Tutorial führt durch die Implementierung einer AEM-Site für eine fiktive Lifestyle-Marke namens WKND. Das Tutorial geht auf grundlegende Themen wie Projekteinrichtung, Kernkomponenten, bearbeitbare Vorlagen, Client-Bibliotheken und Komponentenentwicklung mit Adobe Experience Manager Sites ein.
-* [Erste Schritt mit SPAs in AEM mit React](/help/implementing/developing/hybrid/getting-started-react.md) - Dieser Artikel beschreibt eine Beispiel-SPA, erläutert, wie sie eingerichtet wird, und ermöglicht es Ihnen, mithilfe des React-Frameworks rasch Ihre eigene SPA zu verwenden.
-* [Erste Schritt mit SPAs in AEM mit Angular](/help/implementing/developing/hybrid/getting-started-angular.md) - Dieser Artikel beschreibt eine Beispiel-SPA, erläutert, wie sie erstellt wird, und ermöglicht es Ihnen, unter Verwendung des Angular-Frameworks rasch Ihre eigene SPA zu verwenden.
+* [Erste Schritte mit SPA in AEM Verwenden von React](/help/implementing/developing/hybrid/getting-started-react.md) - In diesem Artikel wird eine SPA-Beispielanwendung vorgestellt, erläutert, wie sie zusammengestellt wird, und ermöglicht Ihnen, mithilfe des React-Frameworks schnell mit Ihren eigenen SPA zu arbeiten.
+* [Erste Schritte mit SPA in AEM Verwenden von Angular](/help/implementing/developing/hybrid/getting-started-angular.md) - In diesem Artikel wird eine SPA-Beispielanwendung vorgestellt, erläutert, wie sie zusammengestellt wird, und ermöglicht Ihnen, mithilfe des Angular-Frameworks schnell mit Ihren eigenen SPA zu arbeiten.
 * [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) - Beginnen Sie hier mit einem Kurs für die Entwicklung von Headless-Anwendungen mit AEM.

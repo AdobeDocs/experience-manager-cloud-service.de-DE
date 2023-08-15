@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2560'
+source-wordcount: '2559'
 ht-degree: 59%
 
 ---
@@ -91,7 +91,7 @@ Die Produkt-Teaser-Komponente wird in diesem Tutorial erweitert. Als ersten Schr
 
 ## Hinzufügen eines benutzerdefinierten Attributs in Adobe Commerce {#add-custom-attribute}
 
-Die in AEM angezeigten Produkte und Produktdaten werden in Adobe Commerce gespeichert. Fügen Sie als Nächstes ein Attribut hinzu für **Umweltfreundlich** als Teil des Produktattributs, das mithilfe der Adobe Commerce-Benutzeroberfläche festgelegt wurde.
+Die in AEM angezeigten Produkte und Produktdaten werden in Adobe Commerce gespeichert. Fügen Sie als Nächstes ein Attribut für **Umweltfreundlich** als Teil des Produktattributs, das mithilfe der Adobe Commerce-Benutzeroberfläche festgelegt wurde.
 
 >[!TIP]
 >
@@ -417,7 +417,7 @@ In diesem Fall möchten Sie ein Banner über dem Teaser rendern, um basierend au
 
    Wenn das `eco_friendly`-Attribut für das Produkt auf **Ja** gesetzt ist, sollte auf der Seite der Text „Umweltfreundlich“ angezeigt werden. Versuchen Sie, andere Produkte aufzurufen, um die Verhaltensänderung zu sehen.
 
-1. Als Nächstes öffnen Sie die AEM `error.log` um die hinzugefügten Protokollanweisungen anzuzeigen. Die `error.log` ist `<AEM SDK Install Location>/crx-quickstart/logs/error.log`.
+1. Als Nächstes öffnen Sie die AEM `error.log` um die hinzugefügten Protokollanweisungen anzuzeigen. Die `error.log` ist auf `<AEM SDK Install Location>/crx-quickstart/logs/error.log`.
 
    Durchsuchen Sie die AEM Protokolle, um die hinzugefügten Protokollanweisungen im Sling-Modell anzuzeigen:
 

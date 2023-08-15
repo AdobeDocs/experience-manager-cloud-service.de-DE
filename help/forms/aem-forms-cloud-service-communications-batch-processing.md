@@ -2,16 +2,16 @@
 title: Batch-Verarbeitung in der Kommunikationsfunktion von Experience Manager [!DNL Forms] as a Cloud Service
 description: Wie erstelle ich markenorientierte und personalisierte Kommunikation?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 100%
+source-wordcount: '1692'
+ht-degree: 98%
 
 ---
 
 # Verwenden der Batch-Verarbeitung
 
-Mithilfe der Kommunikationsfunktion können Sie markenorientierte und personalisierte Kommunikation kreieren, zusammenstellen und bereitstellen, wie z. B. Geschäftskorrespondenz, Dokumente, Mitteilungen, Schadensbearbeitungsschreiben, Leistungsbenachrichtigungen, Monatsabrechnungen und Begrüßungs-Kits. Sie können Kommunikations-APIs verwenden, um eine Vorlage (XFA oder PDF) mit Kundendaten zu kombinieren und Dokumente im PDF-, PS-, PCL-, DPL-, IPL- und ZPL-Format zu generieren.
+Mithilfe von Kommunikation können Sie markenorientierte und personalisierte Kommunikation erstellen, zusammenstellen und bereitstellen, wie z. B. Geschäftskorrespondenzen, Dokumente, Aussagen, Anforderungsdatenverarbeitungs-Briefe, Leistungsbenachrichtigungen, Antragsverarbeitungsbriefe, monatliche Rechnungen und Willkommenskits. Sie können Kommunikations-APIs verwenden, um eine Vorlage (XFA oder PDF) mit Kundendaten zu kombinieren und Dokumente im PDF-, PS-, PCL-, DPL-, IPL- und ZPL-Format zu generieren.
 
 Die Kommunikationsfunktion bietet APIs für die On-Demand- und geplante Dokumenterstellung. Sie können synchrone APIs für die On-Demand-Dokumenterstellung und Batch-APIs (asynchrone APIs) für die geplante Dokumenterstellung verwenden:
 
@@ -157,7 +157,6 @@ Die Antwort der Statusanfrage enthält den Statusabschnitt. Sie enthält Details
 >
 >* Wenn Sie mehrere PRINT-Formate anfordern, enthält der Status mehrere Einträge. Beispiel: PRINT/ZPL, PRINT/IPL.
 >* Ein Batch-Auftrag liest nicht alle Datensätze gleichzeitig, sondern liest und erhöht die Anzahl der Datensätze nach und nach. Der Status gibt also -1 zurück, bis alle Datensätze gelesen wurden.
-
 
 ### Anzeigen generierter Dokumente {#view-generated-documents}
 

@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Über
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4078'
+source-wordcount: '4077'
 ht-degree: 82%
 
 ---
@@ -52,7 +52,7 @@ Erstellen Sie Übersetzungsprojekte so, dass Sie den Workflow zur Übersetzung d
 
 * Die Cloud-Konfiguration des Übersetzungsintegrations-Frameworks, das mit der ausgewählten Seite verknüpft ist, bestimmt viele Eigenschaften der Übersetzungsprojekte, z. B. den zu verwendenden Übersetzungs-Workflow.
 * Für jede ausgewählte Sprachkopie wird ein Projekt erstellt.
-* Eine Kopie der ausgewählten Seite und der zugehörigen Assets werden erstellt und jedem Projekt hinzugefügt. Diese Kopien werden später zur Übersetzung an den Übersetzungsanbieter gesendet.
+* Eine Kopie der ausgewählten Seite und der zugehörigen Assets werden erstellt und zu jedem Projekt hinzugefügt. Diese Kopien werden später zur Übersetzung an den Übersetzungsanbieter gesendet.
 
 Sie können festlegen, dass auch die untergeordneten Seiten der ausgewählten Seite ausgewählt werden. In diesem Fall werden jedem Projekt auch die Kopien der untergeordneten Seiten hinzugefügt, sodass sie übersetzt werden. Wenn alle untergeordneten Seiten mit unterschiedlichen Übersetzungsintegrations-Framework-Konfigurationen verknüpft sind, erstellt AEM weitere Projekte.
 
@@ -378,7 +378,7 @@ Sie können auch alle Übersetzungsaufträge für ein Projekt starten.
 
 ### Abbrechen von Übersetzungsaufträgen {#canceling-a-translation-job}
 
-Sie können einen Übersetzungsauftrag abbrechen, um den Übersetzungsprozess zu stoppen und den Übersetzungsanbieter daran zu hindern, weitere Übersetzungen durchzuführen. Sie können einen Auftrag abbrechen, wenn der Auftrag die **Übersetzungsaufgabe** oder **Übersetzung läuft** Status.
+Sie können einen Übersetzungsauftrag abbrechen, um den Übersetzungsprozess zu stoppen und den Übersetzungsanbieter daran zu hindern, weitere Übersetzungen durchzuführen. Sie können einen Auftrag abbrechen, wenn der Auftrag die **Übersetzungsaufgabe** oder **Übersetzung läuft** -Status.
 
 1. Öffnen Sie in der Projektkonsole das Übersetzungsprojekt.
 1. Klicken oder tippen Sie in der Kachel „Übersetzungsauftrag“ auf das Befehlsmenü und dann auf **Abbrechen**.
@@ -443,8 +443,8 @@ So vergleichen Sie Sprachkopien mit dem Sprachstamm:
 
    ![Vergleichen von Sprachkopien](../assets/language-copy-compare.png)
 
-1. Die beiden Seiten (Start und Quelle) werden nebeneinander geöffnet.
-   * Umfassende Informationen zur Verwendung dieser Funktion finden Sie unter [Seitenvergleich](/help/sites-cloud/authoring/features/page-diff.md).
+1. Die beiden Seiten (Launch und Quelle) werden nebeneinander geöffnet.
+   * Vollständige Informationen zur Verwendung der Vergleichsfunktion finden Sie unter [Seitenvergleich](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Verschieben oder Umbenennen einer Quellseite {#move-source}
 

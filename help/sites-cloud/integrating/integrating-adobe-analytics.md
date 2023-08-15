@@ -4,16 +4,16 @@ description: Erfahren Sie, wie Sie Adobe Analytics mit AEM as a Cloud Service in
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 957758a8d3c16328e7638356e7ee6df3e561386d
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 85%
+source-wordcount: '573'
+ht-degree: 82%
 
 ---
 
-# Integration mit Adobe Analytics{#integrating-with-adobe-analytics}
+# Integration mit Adobe Analytics{#integrating-with-adobe-analytics}
 
-Die Integration von Adobe Analytics und AEM as a Cloud Service ermöglicht es Ihnen, Web-Seitenaktivität zu erfassen. Die Integration setzt Folgendes voraus:
+Durch die Integration von Adobe Analytics und AEM as a Cloud Service können Sie die Aktivität Ihrer Webseite verfolgen. Die Integration setzt Folgendes voraus:
 
 * Verwenden der Touch-Benutzeroberfläche, um eine Analytics-Konfiguration in AEM as a Cloud Service zu erstellen. Die IMS-Authentifizierung ist erforderlich, um Adobe Analytics mit AEM as a Cloud Service zu integrieren.
 * Hinzufügen und Konfigurieren von Adobe Analytics als Erweiterung in [Adobe Experience Platform Launch](#analytics-launch). Weitere Informationen zu Adobe Experience Platform Launch finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=de).

@@ -5,10 +5,10 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3174'
-ht-degree: 95%
+source-wordcount: '3173'
+ht-degree: 97%
 
 ---
 
@@ -28,9 +28,9 @@ ht-degree: 95%
 
 In einem typischen Szenario mit [!DNL Adobe Sign] und adaptiven Formularen füllt ein Benutzer ein adaptives Formular aus, um einen Service zu beantragen, für den Signaturen von mindestens einer Partei erforderlich sind. Beispielsweise sind für einen Hypotheken- und Kreditkartenantrag rechtskräftige Signaturen von allen Kreditnehmern und Mitantragstellern erforderlich. Um elektronische Signatur-Workflows für ähnliche Szenarien zu aktivieren, können Sie [!DNL Adobe Sign] in ein adaptives Formular integrieren. Einige weitere Anwendungsbeispiele für [!DNL Adobe Sign] sind:
 
-* Schließt Geschäfte von jedem Gerät mit vollautomatisierten Angebots-, Anführungszeichen- und Vertragsprozessen.
-* Schnelle Fertigstellung von Personalprozessen und Bereitstellung digitaler Erlebnisse für Ihre Mitarbeiter.
-* Verkürzen Sie die Vertragszykluszeiten und integrieren Sie Ihre Anbieter schneller.
+* Geschäftsabschlüsse von jedem Gerät aus mit vollautomatischen Prozessen für Vorschlag, Angebot und Vertrag.
+* Schnelle Fertigstellung von Personalprozessen und Bereitstellung digitaler Erlebnisse für Ihre Angestellten.
+* Kürzere Vertragszyklen und schnelleres Onboarding Ihrer Lieferanten.
 * Erstellen digitaler Workflows zur Automatisierung häufig verwendeter Prozesse.
 
 Die Integration von [!DNL Adobe Sign] mit [!DNL AEM Forms] unterstützt folgende Funktionen:
@@ -289,7 +289,7 @@ Optional können Sie auch eine „bindref“ mit einer Vereinbarungs-ID (agreeme
 >Data of the Adaptive Form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
-Ihr Formular-Signiererlebnis ist bereit. Sie können das Formular in der Vorschau anzeigen, um das Signiererlebnis zu überprüfen. Im veröffentlichten Formular werden [!DNL Adobe Sign]-Blockfelder angezeigt, wenn ein Empfänger das Formular per E-Mail zum Signieren erhält. Wenn die Option **[!UICONTROL Ist der Empfänger mit der Person identisch, die das Formular ausfüllt?]** mit „Ja“ gekennzeichnet und die Bedingung erfüllt ist, wird der Benutzer nach den Übermittlungen zur Adobe Sign-Vereinbarung weitergeleitet, und der Benutzer kann das Dokument sofort signieren, anstatt darauf zu warten, dass die Vereinbarung per E-Mail eintrifft.
+Damit ist der Ablauf zur Formularunterzeichnung vollständig. Sie können das Formular in der Vorschau anzeigen, um das Signiererlebnis zu überprüfen. Im veröffentlichten Formular werden [!DNL Adobe Sign]-Blockfelder angezeigt, wenn ein Empfänger das Formular per E-Mail zum Signieren erhält. Wenn die Option **[!UICONTROL Ist der Empfänger mit der Person identisch, die das Formular ausfüllt?]** mit „Ja“ gekennzeichnet und die Bedingung erfüllt ist, wird der Benutzer nach den Übermittlungen zur Adobe Sign-Vereinbarung weitergeleitet, und der Benutzer kann das Dokument sofort signieren, anstatt darauf zu warten, dass die Vereinbarung per E-Mail eintrifft.
 
 ## Konfigurieren von Cloud-Signaturen für ein adaptives Formular {#configure-cloud-signatures-for-an-adaptive-form}
 

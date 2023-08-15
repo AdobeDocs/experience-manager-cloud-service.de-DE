@@ -2,9 +2,9 @@
 title: Entwickeln einer benutzerdefinierten Komponente für Screens as a Cloud Service
 description: Das folgende Tutorial führt Sie durch die Schritte zum Erstellen einer benutzerdefinierten Komponente für AEM Screens. AEM Screens verwendet viele vorhandene Design-Muster und Technologien anderer AEM-Produkte. Das Tutorial hebt Unterschiede und besondere Überlegungen bei der Entwicklung für AEM Screens hervor.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2108'
+source-wordcount: '2107'
 ht-degree: 72%
 
 ---
@@ -69,7 +69,7 @@ Der Quell-Code eines Screens-Projekts wird normalerweise als Maven-Projekt mit m
 
    Darstellung des ui.apps-Codes in CRXDE Lite
 
-   Die **`helloworld`** -Komponente ist nur ein Platzhalter. Im Laufe des Tutorials werden Funktionen hinzugefügt, mit denen ein Autor die von der Komponente angezeigte Nachricht aktualisieren kann.
+   Die **`helloworld`** -Komponente ist nur ein Platzhalter. Im Laufe des Tutorials wird eine Funktion hinzugefügt, die es einem Autor ermöglicht, die von der Komponente angezeigte Nachricht zu aktualisieren.
 
 1. Das Paket **screens-weretail-run.ui.content** installiert den folgenden Code:
 
@@ -91,7 +91,7 @@ Die Komponente „Hello World“ ist eine einfache Komponente, mit der ein Benut
 
 AEM Screens weist einige interessante Einschränkungen auf, die nicht unbedingt für herkömmliche Komponenten von WCM-Sites gelten.
 
-* Die meisten Screens-Komponenten müssen im Vollbildmodus auf den Zielgeräten für digitale Beschilderung ausgeführt werden
+* Die meisten Screens-Komponenten müssen im Vollbildmodus auf den digitalen Zielgeräten ausgeführt werden
 * Die meisten Screens-Komponenten müssen in die Sequenzkanäle eingebettet werden, um Diashows zu erstellen
 * Bei der Inhaltserstellung sollte es möglich sein, einzelne Komponenten in einem Sequenzkanal zu bearbeiten, sodass das Rendern im Vollbildmodus nicht infrage kommt
 
@@ -265,7 +265,7 @@ AEM Screens weist einige interessante Einschränkungen auf, die nicht unbedingt 
 
 Client-seitige Bibliotheken bieten einen Mechanismus zum Organisieren und Verwalten von CSS- und JavaScript-Dateien, die für eine AEM-Implementierung erforderlich sind.
 
-AEM Screens-Komponenten werden im Bearbeitungsmodus anders als im Vorschau-/Produktionsmodus dargestellt. Es werden zwei Client-Bibliotheken erstellt: einen für den Bearbeitungsmodus und einen für Vorschau/Produktion.
+AEM Screens-Komponenten werden im Bearbeitungsmodus anders als im Vorschau-/Produktionsmodus dargestellt. Es werden zwei Client-Bibliotheken erstellt: eine für den Bearbeitungsmodus und eine für Vorschau/Produktion.
 
 1. Erstellen Sie einen Ordner für Client-seitige Bibliotheken für die Komponente „Hello World“.
 
@@ -417,7 +417,7 @@ Die Komponente &quot;Hello World&quot;ist für die Verwendung in einem Sequenzka
 
    ![idle-channel](/help/screens-cloud/developing/assets/idle-channel.gif)
 
-1. Öffnen Sie die Seiteneigenschaften für den inaktiven Kanal (Idle Channel). Aktualisieren Sie das Feld &quot;Design&quot;, sodass es auf `/apps/settings/wcm/designs/we-retail-run,`die im vorherigen Abschnitt erstellte Designseite.
+1. Öffnen Sie die Seiteneigenschaften für den inaktiven Kanal (Idle Channel). Aktualisieren Sie das Feld Design , sodass es auf `/apps/settings/wcm/designs/we-retail-run,`die im vorherigen Abschnitt erstellte Designseite.
 
    ![Design config /apps/settings/wcm/designs/we-retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1240pm.png)
 
@@ -445,7 +445,7 @@ Die Komponente &quot;Hello World&quot;ist für die Verwendung in einem Sequenzka
 
 ## Vorlage für benutzerdefinierte Handler {#custom-handlers}
 
-Wenn Ihre benutzerdefinierte Komponente externe Ressourcen wie Assets (Bilder, Videos, Schriftarten und Symbole), bestimmte Asset-Ausgabedarstellungen oder clientseitige Bibliotheken (CSS und JS) verwendet, werden diese Ressourcen nicht automatisch zur Offline-Konfiguration hinzugefügt. Der Grund dafür ist, dass Adobe standardmäßig nur das HTML-Markup gebündelt.
+Wenn Ihre benutzerdefinierte Komponente externe Ressourcen wie Assets (Bilder, Videos, Schriftarten und Symbole), bestimmte Asset-Ausgabedarstellungen oder clientseitige Bibliotheken (CSS und JS) verwendet, werden diese Ressourcen nicht automatisch zur Offline-Konfiguration hinzugefügt. Der Grund dafür ist, dass Adobe das HTML-Markup standardmäßig nur gebündelt.
 
 Damit Sie die exakten Assets, die auf den Player heruntergeladen werden, anpassen und optimieren können, bietet Adobe einen Erweiterungsmechanismus für benutzerdefinierte Komponenten, um deren Abhängigkeiten von der Offline-Caching-Logik in Screens verfügbar zu machen.
 

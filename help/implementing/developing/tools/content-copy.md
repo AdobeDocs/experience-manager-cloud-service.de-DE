@@ -2,9 +2,9 @@
 title: Das Inhaltskopie-Werkzeug
 description: Das Werkzeug zum Kopieren von Inhalten ermöglicht es Benutzern, veränderliche Inhalte bei Bedarf aus ihren Produktionsumgebungen in AEM as a Cloud Service zu niedrigeren Umgebungen zu Testzwecken zu kopieren.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: 639c49c69c87e7c408929f0d35a673a96a5cc5db
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1306'
 ht-degree: 50%
 
 ---
@@ -16,7 +16,7 @@ Das Werkzeug zum Kopieren von Inhalten ermöglicht es Benutzern, veränderliche 
 
 ## Einführung {#introduction}
 
-Aktuelle, echte Daten sind für Tests, Validierung und Benutzerakzeptanz nützlich. Mit dem Werkzeug zum Kopieren von Inhalten können Sie Inhalte aus einer Produktions- AEM as a Cloud Service Umgebung in eine Staging-, Entwicklungs- oder [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) -Umgebung für solche Tests.
+Aktuelle, echte Daten sind für Tests, Validierung und Benutzerakzeptanz nützlich. Mit dem Content Copy-Tool können Sie Inhalte aus einer Produktionsumgebung AEM as a Cloud Service Umgebung in eine Staging-, Entwicklungs- oder [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) -Umgebung für solche Tests.
 
 Der zu kopierende Inhalt wird durch ein Content-Set definiert. Ein Content-Set besteht aus einer Liste von JCR-Pfaden, die den veränderlichen Inhalt enthalten, der aus einer Quell-Authoring-Service-Umgebung in eine Ziel-Authoring-Service-Umgebung innerhalb desselben Cloud Manager-Programms kopiert werden soll. Die folgenden Pfade sind in einem Content-Set zulässig.
 
@@ -176,7 +176,7 @@ Wählen Sie dazu auf der Seite **Inhaltsaktivität kopieren** die Aktion **Abbre
 >
 >Wenn Sie einen Vorgang zum Abbrechen einer Inhaltskopie abbrechen, kann dies zu einer Teilkopie des Inhalts in der Zielumgebung führen. Diese Situation kann die Zielumgebung in einem unbrauchbaren Zustand belassen.
 >
->Wenn sich Ihre Umgebung aufgrund einer Stornierung in einem solchen Zustand befindet, wenden Sie sich an die Kundenunterstützung von Adobe, um Hilfe zu erhalten.
+>Wenn sich Ihre Umgebung aufgrund einer Stornierung in einem solchen Zustand befindet, wenden Sie sich an die Adobe-Kundenunterstützung, um Hilfe zu erhalten.
 
 ### Abrufen von Protokollen {#accessing-logs}
 
@@ -198,6 +198,6 @@ Für das Werkzeug zum Kopieren von Inhalten gelten die folgenden Einschränkunge
 * Die Ausführung gleichzeitiger Inhaltskopievorgänge in derselben Umgebung ist nicht möglich.
 * Pro Inhaltsset können bis zu 50 Pfade angegeben werden. Für ausgeschlossene Pfade gibt es keine Beschränkung.
 * Das Werkzeug zum Kopieren von Inhalten sollte nicht als Klonen- oder Spiegelwerkzeug verwendet werden, da es keine verschobenen oder gelöschten Inhalte auf der Quelle verfolgen kann.
-* Das Werkzeug zum Kopieren von Inhalten verfügt über keine Versionierungsfunktion und kann geänderten Inhalt oder neu erstellten Inhalt in der Quellumgebung in einem Inhaltsset seit dem letzten Vorgang zum Kopieren von Inhalten nicht automatisch erkennen.
+* Das Werkzeug zum Kopieren von Inhalten verfügt über keine Versionierungsfunktion und kann geänderten oder neu erstellten Inhalt in der Quellumgebung in einem Inhaltsset seit dem letzten Vorgang der Inhaltskopie nicht automatisch erkennen.
    * Wenn Sie Ihre Zielumgebung nur mit Inhaltsänderungen aktualisieren möchten, müssen Sie seit dem letzten Vorgang der Inhaltskopie einen Inhaltssatz erstellen. Geben Sie dann die Pfade in der Quellinstanz an, an denen Änderungen seit dem letzten Vorgang der Inhaltskopie vorgenommen wurden.
 * Versionsinformationen sind in einer Inhaltskopie nicht enthalten.

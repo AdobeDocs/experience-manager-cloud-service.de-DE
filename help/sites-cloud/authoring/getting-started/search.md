@@ -2,10 +2,10 @@
 title: Suchen
 description: Schnellere Suche von Inhalten mit umfassender Suche
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 57%
+source-wordcount: '490'
+ht-degree: 86%
 
 ---
 
@@ -33,7 +33,7 @@ Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
 So durchsuchen und filtern Sie Ressourcen:
 
-1. Öffnen **Suche** (mit der Lupe in der Symbolleiste) und geben Sie Ihren Suchbegriff ein. Vorschläge werden gemacht und können ausgewählt werden:
+1. Öffnen Sie die Option **Suchen** (mit der Lupe in der Symbolleiste) und geben Sie den Suchbegriff ein. Vorschläge werden gemacht und können ausgewählt werden:
 
    ![Suchbegriff](/help/sites-cloud/authoring/assets/search-term.png)
 
@@ -41,7 +41,7 @@ So durchsuchen und filtern Sie Ressourcen:
 
    ![Suchposition](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. Bei Bedarf können Sie den Standortfilter entfernen (wählen Sie **X** auf dem Filter, den Sie entfernen möchten), um über alle Konsolen/Ressourcentypen zu suchen.
+1. Bei Bedarf können Sie den Positionsfilter entfernen (wählen Sie für den zu entfernenden Filter **X** aus), um alle Konsolen-/Ressourcentypen zu durchsuchen.
 1. Die Ergebnisse werden angezeigt und nach Konsole und Ressourcentyp gruppiert.
 
    Sie können entweder eine spezifische Ressource (für eine spätere Aktion) oder eine Drilldown-Suche auswählen, indem Sie den erforderlichen Ressourcentyp auswählen, z. B. **Alle Sites anzeigen**:
@@ -57,7 +57,7 @@ So durchsuchen und filtern Sie Ressourcen:
    Im seitlichen Bedienfeld können Sie Folgendes auswählen:
 
    * Gespeicherte Suchvorgänge
-   * Suchverzeichnis
+   * Verzeichnis durchsuchen
    * Tags
    * Suchkriterien, z. B. Änderungsdatum, Veröffentlichungsstatus, Live Copy-Status.
 
@@ -65,7 +65,7 @@ So durchsuchen und filtern Sie Ressourcen:
    >
    >Die Suchkriterien können variieren:
    >
-   >* Je nach ausgewähltem Ressourcentyp; Beispielsweise sind die Kriterien Assets und Communities verständlicherweise spezialisiert.
+   >* in Abhängigkeit von dem von Ihnen ausgewählten Ressourcentyp, wobei z. B. die Kriterien „Assets“ und „Communitys“ verständlicherweise spezialisiert sind.
    >* Je nach Instanz, da die Suchformulare (entsprechend der Stelle in AEM) angepasst werden können.
 
 <!--
@@ -86,9 +86,9 @@ So durchsuchen und filtern Sie Ressourcen:
 
 ## Gespeicherte Suchvorgänge {#saved-searches}
 
-Neben der Suche nach einer Vielzahl von Facetten können Sie auch eine bestimmte Suchkonfiguration speichern, um sie später abzurufen und zu verwenden:
+Sie können nicht nur nach zahlreichen Facetten suchen, sondern auch eine bestimmte Suchkonfiguration speichern, um diese später abzurufen und zu verwenden:
 
-1. Definieren Sie Ihre Suchkriterien und wählen Sie **Speichern**.
+1. Definieren Sie die Suchkriterien und wählen Sie **Speichern**.
 
    ![Speichern einer Suche](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
@@ -102,8 +102,8 @@ Neben der Suche nach einer Vielzahl von Facetten können Sie auch eine bestimmte
 
 1. Nach dem Speichern können Sie:
 
-   * Verwendung **x** (neben dem Namen der gespeicherten Suche), um eine neue Abfrage zu starten (die gespeicherte Suche selbst wird nicht gelöscht).
-   * **Gespeicherte Suche bearbeiten**, ändern Sie die Suchbedingungen und **Speichern** erneut.
+   * **x** (für den Namen der gespeicherten Suche) verwenden, um eine neue Abfrage zu starten. Die gespeicherte Suche selbst wird nicht gelöscht.
+   * die Option **Gespeicherte Suche bearbeiten** verwenden, die Suchbedingungen ändern und dann erneut auf **Speichern** klicken.
 
 Gespeicherte Suchen können geändert werden, indem Sie die gespeicherte Suche auswählen und unten im Suchfeld auf **Gespeicherte Suche bearbeiten** klicken.
 

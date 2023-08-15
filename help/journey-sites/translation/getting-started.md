@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 88%
+source-wordcount: '1399'
+ht-degree: 86%
 
 ---
 
@@ -93,7 +93,7 @@ Mithilfe dieser einfachen Tools können Sie intuitiv durch Ihre Inhaltsstruktur 
 
 ### Seiteneditor {#page-editor}
 
-Die Sites-Konsole ermöglicht Ihnen die Navigation in Ihren Inhalten und bietet einen Überblick über deren Struktur. Um die Details einer Einzelseite anzuzeigen, müssen Sie den Website-Editor verwenden.
+In der Sites-Konsole können Sie durch Ihren Inhalt navigieren und einen Überblick über dessen Struktur erhalten. Um die Details einer Einzelseite anzuzeigen, müssen Sie den Website-Editor verwenden.
 
 So bearbeiten Sie eine Seite:
 

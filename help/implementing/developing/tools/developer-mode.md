@@ -4,10 +4,10 @@ seo-title: Developer Mode
 description: Der Entwicklermodus öffnet einen Seitenbereich mit mehreren Registerkarten mit Informationen für Entwickler zur aktuellen Seite.
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 92%
+source-wordcount: '527'
+ht-degree: 90%
 
 ---
 
@@ -52,7 +52,7 @@ Diese Registerkarte enthält eine Komponentenstruktur mit folgenden Attributen:
 
 * Zeigt die Kette der Komponenten und Vorlagen, die auf dieser Seite gerendert wurden. Die Struktur kann erweitert werden, sodass sie Kontext innerhalb der Hierarchie anzeigt.
 * Zeigt die Server-seitige Verarbeitungszeit, die zum Rendern der Komponente benötigt wird.
-* Sie können die Struktur erweitern und spezifische Komponenten innerhalb der Struktur auswählen. Die Auswahl bietet Zugriff auf Komponentendetails, z. B.:
+* Ermöglicht das Erweitern der Baumstruktur und Auswählen bestimmter Komponenten innerhalb der Baumstruktur. Die Auswahl bietet Zugriff auf Komponentendetails, z. B.:
    * Repository-Pfad
    * Links zu den Skripten (Zugriff über CRXDE Lite)
    * Komponentendetails, wie sie in der [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console.md) zu sehen sind

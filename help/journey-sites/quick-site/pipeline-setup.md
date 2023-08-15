@@ -2,10 +2,10 @@
 title: Einrichten der Pipeline
 description: Erstellen Sie eine Frontend-Pipeline, um die Anpassung des Designs Ihrer Site zu verwalten.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 89%
+source-wordcount: '966'
+ht-degree: 87%
 
 ---
 
@@ -102,7 +102,7 @@ Die neue Pipeline wird erstellt und im Abschnitt **Pipelines** im Cloud Manager-
 
 >[!TIP]
 >
->Wenn Sie bereits mit Pipelines in AEMaaCS vertraut sind und mehr über die Unterschiede zwischen den verschiedenen Pipelines erfahren möchten, einschließlich weiterer Details zur Frontend-Pipeline, finden Sie weitere Informationen unter Konfigurieren der CI/CD-Pipeline - Cloud Services, die in der [Zusätzliche Ressourcen](#additional-resources) unten.
+>Wenn Sie bereits mit Pipelines in AEMaaCS vertraut sind und mehr über die Unterschiede zwischen den verschiedenen Pipelines erfahren möchten, einschließlich weiterer Details zur Frontend-Pipeline, finden Sie weitere Informationen unter Konfigurieren der CI/CD-Pipeline - Cloud Service, die in der [Zusätzliche Ressourcen](#additional-resources) unten.
 
 ## Wie geht es weiter {#what-is-next}
 

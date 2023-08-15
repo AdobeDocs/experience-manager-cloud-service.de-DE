@@ -2,9 +2,9 @@
 title: Inhaltsfragmente
 description: Inhaltsfragmente in Adobe Experience Manager as a Cloud Service ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1222'
 ht-degree: 86%
 
 ---
@@ -25,7 +25,7 @@ In Verbindung mit dem aktualisierten JSON Exporter können strukturierte Inhalts
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 >
->Weitere Informationen finden Sie unter [Grundlegendes zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
+>Weitere Informationen finden Sie unter [Grundlagen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
 
 >[!CAUTION]
 >
@@ -62,7 +62,7 @@ Die Inhaltsfragmente ermöglichen Folgendes:
    >
    >Eine alternative Methode besteht darin, ein bestimmtes Inhaltsfragment direkt auf die Seite zu ziehen. Dabei wird automatisch die zugehörige Komponente (Inhaltsfragment) erstellt.
 
-4. Zunächst wird der Inhalt aus dem **Main** Element und **Übergeordnet** (Variante) angezeigt. Sie können nach Bedarf aber [auch andere Elemente und/oder Varianten auswählen](#selecting-the-element-or-variation).
+4. Zunächst wird der Inhalt aus dem **Main** Element und **Master** (Variante) angezeigt. Sie können nach Bedarf aber [auch andere Elemente und/oder Varianten auswählen](#selecting-the-element-or-variation).
 
    ![Inhaltsfragmente im Assets-Browser](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -96,7 +96,7 @@ Im entsprechenden Konfigurationsdialogfeld können Sie die verfügbaren Paramete
   >Die verfügbaren Elemente hängen von dem verwendeten Modell ab.
 
 * **Variante**
-   * Die Standardeinstellung **Übergeordnet** ist immer verfügbar.
+   * Die Standardeinstellung **Master** ist immer verfügbar.
    * Eine Auswahl ist verfügbar, wenn Varianten für das Fragment erstellt wurden.
 
 * **ID**
@@ -115,7 +115,7 @@ Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols 
 
 Wenn ein bestimmtes Inhaltsfragment zur Seite hinzugefügt wird, gibt es einen Platzhalter **Komponenten hierher ziehen** zwischen jedem HTML-Absatz (und am oberen/unteren Rand) des Fragments.
 
-Auf diese Weise können Sie zusätzliche Inhalte hinzufügen [dazwischen (d. h. Zwischeninhalt)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) den Fragmentinhalt (an einem der verfügbaren Punkte), ohne das Stammfragment ändern zu müssen.
+Damit können Sie zusätzlichen Inhalt hinzufügen [dazwischen (d. h. Zwischeninhalt)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) den Fragmentinhalt (an einem der verfügbaren Punkte), ohne das Stammfragment ändern zu müssen.
 
 Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 

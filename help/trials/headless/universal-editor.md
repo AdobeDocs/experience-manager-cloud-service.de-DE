@@ -3,9 +3,9 @@ title: Bearbeiten im Kontext
 description: Erfahren Sie, wie Sie mit dem universellen Editor beliebige Aspekte Ihres Inhalts an Ort und Stelle und im Kontext in jeder Implementierung bearbeiten können.
 hidefromtoc: true
 index: false
-source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '959'
 ht-degree: 9%
 
 ---

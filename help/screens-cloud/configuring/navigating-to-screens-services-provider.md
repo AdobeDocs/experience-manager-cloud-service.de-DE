@@ -2,10 +2,10 @@
 title: Navigieren zu Screens Services Provider
 description: Auf dieser Seite wird beschrieben, wie Sie zu Screens Services Provider navigieren.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 46%
+source-wordcount: '262'
+ht-degree: 41%
 
 ---
 
@@ -41,13 +41,13 @@ Gehen Sie wie folgt vor, um Screens Services Provider einzurichten:
 
    ![Bild](/help/screens-cloud/assets/configure/configure-screens4.png)
 
-4. Klicken **Speichern** Verbindung zum Screens Content Provider herstellen
+4. Klicks **Speichern** Verbindung zum Screens Content Provider herstellen
 
 5. Auswählen **Kanäle** Klicken Sie in der linken Navigationsleiste auf **Öffnen in Content Provider**.
 
-   ![image](/help/screens-cloud/assets/configure/configure-screens1.png)
+   ![Bild](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-6. Screens Content Provider wird in einer anderen Registerkarte geöffnet, auf der Sie Inhalte erstellen können.
+6. Der Screens Content Provider wird in einer anderen Registerkarte geöffnet, auf der Sie Inhalte erstellen können.
 
    ![image](/help/screens-cloud/assets/configure/configure-screens2.png)
 

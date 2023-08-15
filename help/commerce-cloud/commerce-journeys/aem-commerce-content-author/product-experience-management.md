@@ -2,10 +2,10 @@
 title: Erstellen von Produkterlebnissen
 description: Erfahren Sie, wie Sie Produktinhalte erstellen, die dann in verschiedenen Kanälen verwendet werden können, um ein interaktives Einkaufserlebnis zu schaffen.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 412e206a66de470e2798aafc58bcac93dc7e3cad
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 96%
+source-wordcount: '1165'
+ht-degree: 93%
 
 ---
 
@@ -33,13 +33,13 @@ Auf höherer Ebene gibt es zwei Arten von Assets, die sich auf Produkte beziehen
 
 Marketing-Assets beziehen sich auf die Promotion und Verwendung des Produkts, für das das Marketing normalerweise verantwortlich ist. Beispiele sind die Anzeige mehrerer Produkte („Shop the Look“), in einem bestimmten Kontext („Outdoor-Herbstkollektion“) oder Howto-PDFs. CIF bietet eine einfache Möglichkeit, jedes AEM-Asset mit einem Produktkatalogobjekt zu verknüpfen.
 
-Öffnen Sie die Asset-Eigenschaften und wechseln Sie zur Registerkarte **Commerce**. Auf dieser Registerkarte können Sie die Verknüpfung mit Produkten verwalten. Die Tabelle unter der Auswahl enthält zusätzliche Informationen zu den verknüpften Objekten (nur bei einer Auswahl sichtbar). Klicken Sie auf das Detailsymbol, um eine vollständige Ansicht im Produkt-Cockpit zu erhalten. Um ein neues Objekt zu verknüpfen, klicken Sie auf das Produktauswahlsymbol (Ordnersymbol), wählen Sie ein Objekt aus und schließen Sie die Auswahl.
+Öffnen Sie die Asset-Eigenschaften und wechseln Sie zur Registerkarte **Commerce**. In diesem Tab können Sie die Verknüpfung mit Produkten verwalten. Die Tabelle unter der Auswahl enthält zusätzliche Informationen zu den verknüpften Objekten (nur bei einer Auswahl sichtbar). Klicken Sie auf das Detailsymbol, um eine vollständige Ansicht im Produkt-Cockpit zu erhalten. Um ein neues Objekt zu verknüpfen, klicken Sie auf das Produktauswahlsymbol (Ordnersymbol), wählen Sie ein Objekt aus und schließen Sie die Auswahl.
 
 ![pem assets](assets/pem-assets.png)
 
 ### Experience Fragments {#experience-fragments}
 
-Experience Fragments eignen sich hervorragend, um wiederverwendbare oder individuelle Produktinhalte im benötigten Umfang zu erstellen. Die Zuordnung funktioniert ähnlich wie bei einem Asset. Öffnen Sie die Eigenschaften und wechseln Sie zur Registerkarte **Commerce**. Auf dieser Registerkarte können Sie die Verknüpfung mit Produkten und Kategorien verwalten. Die Tabellen unter den Auswahlelementen enthalten zusätzliche Informationen zu den verknüpften Objekten (nur sichtbar bei Auswahl). Klicken Sie auf das Detailsymbol, um eine vollständige Ansicht im Produkt-Cockpit zu erhalten. Um ein neues Objekt zu verknüpfen, klicken Sie auf das Produktauswahlsymbol (Ordnersymbol), wählen Sie ein Objekt aus und schließen Sie die Auswahl.
+Experience Fragments eignen sich hervorragend, um wiederverwendbare oder individuelle Produktinhalte im benötigten Umfang zu erstellen. Die Zuordnung funktioniert ähnlich wie bei einem Asset. Öffnen Sie die Eigenschaften und wechseln Sie zur Registerkarte **Commerce**. In diesem Tab können Sie die Verknüpfung mit Produkten und Kategorien verwalten. Die Tabellen unter den Auswahlelementen enthalten zusätzliche Informationen zu den verknüpften Objekten (nur sichtbar bei Auswahl). Klicken Sie auf das Detailsymbol, um eine vollständige Ansicht im Produkt-Cockpit zu erhalten. Um ein neues Objekt zu verknüpfen, klicken Sie auf das Produktauswahlsymbol (Ordnersymbol), wählen Sie ein Objekt aus und schließen Sie die Auswahl.
 
 ![pem xf](assets/pem-xf.png)
 

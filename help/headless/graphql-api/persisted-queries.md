@@ -3,9 +3,9 @@ title: Persistierte GraphQL-Abfragen
 description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Client-Programme verbessert wird.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1681'
+source-wordcount: '1680'
 ht-degree: 83%
 
 ---
@@ -380,7 +380,7 @@ Die standardmäßige OSGi-Konfiguration für Veröffentlichungsinstanzen:
 
 Standardmäßig wird die `PersistedQueryServlet` sendet eine `200` Antwort, wenn sie eine Abfrage ausführt, unabhängig vom tatsächlichen Ergebnis.
 
-Sie können [Konfigurieren der OSGi-Einstellungen](/help/implementing/deploying/configuring-osgi.md) für **Konfigurationen für beständige Abfragen** , um zu steuern, welcher Status-Code von der `/execute.json/persisted-query` -Endpunkt, wenn in der persistenten Abfrage ein Fehler auftritt.
+Sie können [Konfigurieren der OSGi-Einstellungen](/help/implementing/deploying/configuring-osgi.md) für die **Konfigurationen für beständige Abfragen** , um zu steuern, welcher Status-Code von der `/execute.json/persisted-query` -Endpunkt, wenn in der persistenten Abfrage ein Fehler auftritt.
 
 >[!NOTE]
 >
@@ -390,7 +390,7 @@ Das Feld `Respond with application/graphql-response+json` (`responseContentTypeG
 
 * `false` (Standardwert): Es spielt keine Rolle, ob die persistente Abfrage erfolgreich ist oder nicht. Die `/execute.json/persisted-query` gibt den Statuscode aus `200` und `Content-Type` zurückgegebene Kopfzeile ist `application/json`.
 
-* `true`: Der Endpunkt gibt `400` oder `500` zuweisen, wenn bei der Ausführung der persistenten Abfrage irgendeine Form von Fehler vorliegt. Außerdem wird die zurückgegebene `Content-Type` is `application/graphql-response+json`.
+* `true`: Der Endpunkt gibt zurück. `400` oder `500` zuweisen, wenn bei der Ausführung der persistenten Abfrage irgendeine Form von Fehler vorliegt. Außerdem wird die zurückgegebene `Content-Type` is `application/graphql-response+json`.
 
   >[!NOTE]
   >
@@ -442,7 +442,7 @@ So erstellen Sie ein Paket:
 1. Geben Sie eine Versionsnummer wie „1.0“ ein.
 1. Fügen Sie unter **Filter** einen neuen **Filter** hinzu. Wählen Sie über die Pfadsuche den Ordner `persistentQueries` unterhalb der Konfiguration aus. Beispiel: für die `wknd` Konfiguration, lautet der vollständige Pfad `/conf/wknd/settings/graphql/persistentQueries`.
 1. Tippen Sie auf **Speichern**, um die neue Paketdefinition zu speichern und das Dialogfeld zu schließen.
-1. Tippen Sie in der neu erstellten Paketdefinition auf **Erstellen**.
+1. Tippen Sie auf **Build** in der neu erstellten Package-Definition.
 
 Nachdem das Paket erstellt wurde, können Sie Folgendes tun:
 

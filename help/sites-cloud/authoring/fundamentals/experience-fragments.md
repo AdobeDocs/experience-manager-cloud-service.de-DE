@@ -2,10 +2,10 @@
 title: Experience Fragments
 description: Verwenden Sie Experience Fragments von Adobe Experience Manager as a Cloud Service, um Ihre Erlebnisse wiederverwendbar und flexibel zu gestalten.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2046'
-ht-degree: 87%
+source-wordcount: '2044'
+ht-degree: 86%
 
 ---
 
@@ -47,7 +47,7 @@ Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für der
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 >
->Weitere Informationen finden Sie unter [Grundlegendes zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
+>Weitere Informationen finden Sie unter [Grundlagen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Folgendes wird empfohlen:
 
 * [Konfigurieren der zulässigen Vorlagen für diese Ordner](#configure-allowed-templates-folder).
 
-Mit dem Erstellen von Ordnern können Sie:
+Wenn Sie Ordner erstellen, können Sie:
 
 * eine aussagekräftige Struktur für Ihre Experience Fragments erstellen; zum Beispiel nach Klassifizierung
 
@@ -232,7 +232,7 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragments ers
 
    ![Erstellen einer Experience Fragment-Variante](/help/sites-cloud/authoring/assets/xf-06.png)
 
-1. **Erstellen** ermöglicht es Ihnen, Folgendes zu erstellen:
+1. **Erstellen** ermöglicht die Erstellung:
 
    * **Variante**
    * **Variante als Live Copy**
@@ -422,7 +422,7 @@ Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe 
 
 >[!NOTE]
 >
-Auch wenn dies direkt über den Browser verfügbar ist, [Der Hauptzweck besteht darin, anderen Anwendungen (z. B. Web-Apps von Drittanbietern, benutzerdefinierte mobile Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, wobei nur die URL verwendet wird.](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+Auch wenn dies direkt über den Browser verfügbar ist, [Der primäre Zweck besteht darin, anderen Anwendungen (z. B. Web-Apps von Drittanbietern, benutzerdefinierte mobile Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, wobei nur die URL verwendet wird.](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Veröffentlichen von Experience Fragments {#publishing-experience-fragments}
 

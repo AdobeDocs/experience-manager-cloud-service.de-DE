@@ -3,9 +3,9 @@ title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen.
 hide: true
 hidefromtoc: true
-source-git-commit: ac9689a911be119ae53d5e1134595c567370b7c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3365'
 ht-degree: 80%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 80%
 | -------- | ---------------------------- |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Dieser Artikel |
-| Gilt für | ✅ Kernkomponenten des adaptiven Formulars, ❎ [Foundation-Komponenten für adaptive Formulare](/help/forms/configuring-submit-actions.md) |
+| Gilt für | ✅ Kernkomponenten des adaptiven Formulars, ❎ [Adaptive Form Foundation-Komponenten](/help/forms/configuring-submit-actions.md) |
 
 
 Mit einer Übermittlungsaktion können Sie das Ziel der Daten auswählen, die über ein adaptives Formular erfasst werden. Wird ausgelöst, wenn ein Benutzer auf die **[!UICONTROL Einsenden]** auf einem adaptiven Formular. Forms as a Cloud Service bietet für &quot;Adaptive Forms&quot;, das auf Kernkomponenten basiert, eine Reihe vordefinierter Sendeaktionen. Diese vordefinierten Übermittlungsaktionen ermöglichen Ihnen Folgendes:
@@ -37,7 +37,7 @@ Sie können auch [Standardmäßige Übermittlungsaktionen erweitern](custom-subm
 So wählen Sie eine Übermittlungsaktion für Ihr Formular aus und konfigurieren sie:
 
 1. Öffnen Sie den Inhaltsbrowser und wählen Sie die **[!UICONTROL Guide Container]** -Komponente Ihres adaptiven Formulars.
-1. Klicken Sie auf die Eigenschaften des Guide-Containers ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg) Symbol. Das Dialogfeld Container für adaptive Formulare wird geöffnet.
+1. Klicken Sie auf die Guide Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg) Symbol. Das Dialogfeld Container für adaptive Formulare wird geöffnet.
 
 1. Klicken Sie auf  **[!UICONTROL Einsendung]** Registerkarte.
 
@@ -55,7 +55,7 @@ So wählen Sie eine Übermittlungsaktion für Ihr Formular aus und konfigurieren
 
 ## E-Mail senden {#send-email}
 
-Wenn Sie nach erfolgreicher Übermittlung des Formulars eine E-Mail an einen oder mehrere Empfänger senden möchten, können Sie die Variable **[!UICONTROL E-Mail senden]** Übermittlungsaktion. Mit dieser Aktion können Sie eine E-Mail erstellen, die Formulardaten in einem vordefinierten Format enthält. Betrachten Sie beispielsweise die folgende Vorlage, bei der Kundenname, Versandadresse, Statusname und Postleitzahl aus den gesendeten Formulardaten abgerufen werden:
+Wenn Sie nach erfolgreicher Übermittlung des Formulars eine E-Mail an einen oder mehrere Empfänger senden möchten, können Sie die Variable **[!UICONTROL E-Mail senden]** Übermittlungsaktion Mit dieser Aktion können Sie eine E-Mail erstellen, die Formulardaten in einem vordefinierten Format enthält. Betrachten Sie beispielsweise die folgende Vorlage, bei der Kundenname, Versandadresse, Statusname und Postleitzahl aus den gesendeten Formulardaten abgerufen werden:
 
     „
     
@@ -77,7 +77,7 @@ Wenn Sie nach erfolgreicher Übermittlung des Formulars eine E-Mail an einen ode
 > * Es ist wichtig, dass alle Formularfelder eindeutige Elementnamen haben, auch wenn sie in verschiedenen Bereichen in einem adaptiven Formular platziert werden.
 > * Bei der Verwendung AEM as a Cloud Service E-Mail ist eine Verschlüsselung der ausgehenden E-Mail erforderlich. Standardmäßig ist die Funktion für ausgehende E-Mails deaktiviert. Senden Sie zum Aktivieren ein Support-Ticket an [Zugriff anfordern](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=de#sending-email).
 
-Außerdem **[!UICONTROL E-Mail senden]** Die Übermittlungsaktion bietet die Möglichkeit, Anlagen und ein Datensatzdokument (DoR) in die E-Mail einzuschließen.
+Darüber hinaus **[!UICONTROL E-Mail senden]** Die Übermittlungsaktion bietet die Möglichkeit, Anlagen und ein Datensatzdokument (DoR) in die E-Mail einzuschließen.
 
 So aktivieren Sie die [!UICONTROL Datensatzdokument anhängen] , siehe die Dokumentation unter [Konfigurieren des adaptiven Formulars zum Generieren eines Datensatzdokuments (DoR)](generate-document-of-record-core-components.md). Sie können diese Option in den Eigenschaften des adaptiven Formulars aktivieren.
 
@@ -114,7 +114,7 @@ Die Sendeaktion **[!UICONTROL An SharePoint senden]** verbindet ein adaptives Fo
 
 So verbinden Sie AEM Forms mit Ihrem Microsoft® SharePoint-Speicher:
 
-1. Gehen Sie zu **AEM Forms** instance > **[!UICONTROL Instrumente]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Gehen Sie zu **AEM Forms** instance > **[!UICONTROL Instrumente]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. Wählen Sie einen **Konfigurations-Container**. Aktivieren Sie nicht das Kontrollkästchen des Konfigurations-Containers. Klicken Sie auf den Namen des Konfigurations-Containers, um ihn auszuwählen. Die Konfiguration wird im ausgewählten Konfigurations-Container gespeichert.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. Der SharePoint-Konfigurationsassistent wird angezeigt.
    ![SharePoint-Konfiguration](/help/forms/assets/sharepoint_configuration.png)
@@ -134,7 +134,7 @@ So verbinden Sie AEM Forms mit Ihrem Microsoft® SharePoint-Speicher:
 
    >[!NOTE]
    >
-   >* Standardmäßig wird die `forms-ootb-storage-adaptive-forms-submission` -Ordner auf der ausgewählten SharePoint-Site verfügbar. Wenn der Ordner nicht verfügbar ist, verwenden Sie die **Ordner erstellen** -Option, um sie zu erstellen.
+   >* Standardmäßig wird die Variable `forms-ootb-storage-adaptive-forms-submission` -Ordner auf der ausgewählten SharePoint-Site verfügbar. Wenn der Ordner nicht verfügbar ist, verwenden Sie die **Ordner erstellen** -Option, um sie zu erstellen.
 
 Jetzt können Sie diese SharePoint Sites-Konfiguration für die **An SharePoint übermitteln** Übermittlungsaktion in einem adaptiven Formular.
 

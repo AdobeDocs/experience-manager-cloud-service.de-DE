@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die leistungsstarken Funktionen der Site-Le
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: 3e4c6fce54fe336c145d533c05e68e3a1f64c144
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 100%
+source-wordcount: '596'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ Erfahren Sie mehr über die leistungsstarken Funktionen der Site-Leiste, mit den
 
 ## Übersicht {#overview}
 
-Mit der Site-Leiste können Sie die Design- und Vorlagenressourcen Ihrer Site verwalten. [Wie andere Leisten](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector), z. B. die Inhaltsstruktur-, Verweis- oder Timeline-Leisten wird die Site-Leiste in der Sites-Konsole als Bereich ganz links angezeigt, der Informationen zum ausgewählten Element anzeigt. Im Gegensatz zu anderen Leisten gilt die Site-Leiste nur für Site-Stammverzeichnisse.
+Über die Seitenleiste können Sie das Design und die Vorlagenressourcen Ihrer Site verwalten. [Wie andere Leisten](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector), z. B. die Inhaltsstruktur-, Verweis- oder Timeline-Leisten wird die Site-Leiste in der Sites-Konsole als Bereich ganz links angezeigt, der Informationen zum ausgewählten Element anzeigt. Im Gegensatz zu anderen Leisten gilt die Site-Leiste nur für Site-Stammverzeichnisse.
 
 Die Site-Leiste wird verwendet, um Informationen zu Designs und Vorlagen für Ihre Site zu verwalten, darunter:
 

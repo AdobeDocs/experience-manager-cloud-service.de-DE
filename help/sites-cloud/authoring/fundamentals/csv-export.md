@@ -2,10 +2,10 @@
 title: Exportieren in CSV
 description: Exportieren von Informationen zu Ihren Seiten in eine CSV-Datei auf Ihrem lokalen System
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 85%
+source-wordcount: '197'
+ht-degree: 81%
 
 ---
 
@@ -21,7 +21,7 @@ Mit **CSV-Bericht erstellen** können Sie Informationen über Ihre Seiten in ein
 >
 >Die Download-Funktion (und der Standard-Zielordner) Ihres Browsers werden verwendet.
 
-Der Assistent zum **Erstellen von CSV**-Exporten bietet Ihnen folgende Auswahlmöglichkeiten:
+Die **CSV-Export erstellen** -Assistent ermöglicht die Auswahl von:
 
 * Zu exportierende Eigenschaften
    * Metadaten
@@ -56,6 +56,6 @@ So erstellen Sie einen CSV-Export:
 
    ![CSV-Exportoptionen](/help/sites-cloud/authoring/assets/csv-options.png)
 
-1. Wählen Sie die zu exportierenden Eigenschaften aus.
+1. Wählen Sie die erforderlichen Eigenschaften aus, die exportiert werden sollen.
 1. Wählen Sie **Erstellen**.
    ![Resultierender CSV-Export in Excel](/help/sites-cloud/authoring/assets/csv-example.png)

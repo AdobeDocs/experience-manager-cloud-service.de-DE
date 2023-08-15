@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Verwendung des Assistenten „Sprachkop
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 82%
+source-wordcount: '280'
+ht-degree: 72%
 
 ---
 
@@ -29,11 +29,11 @@ Sie können wie folgt auf diesen Assistenten zugreifen:
 
    ![Sprachkopie im Assistenten erstellen](../assets/language-copy-wizard.png)
 
-1. Der Assistent öffnet sich mit dem Schritt **Quelle auswählen**, mit dem Sie Seiten hinzufügen/entfernen können. Sie haben außerdem die Option, die Unterseiten ein- oder auszuschließen. Wählen Sie die gewünschten Seiten aus und tippen oder klicken Sie auf **Weiter**.
+1. Der Assistent wird geöffnet. **Quelle auswählen** Schritt zum Hinzufügen/Entfernen von Seiten. Sie haben außerdem die Option, die Unterseiten ein- oder auszuschließen. Wählen Sie die gewünschten Seiten aus und tippen oder klicken Sie auf **Weiter**.
 
    ![Hinzufügen von Seiten mit dem Assistenten](../assets/language-copy-wizard-add-pages.png)
 
-1. Im Schritt **Konfigurieren** können Sie im Assistenten Sprachen hinzufügen/entfernen und die Übersetzungsmethode auswählen. Tippen oder klicken Sie auf **Weiter**.
+1. Die **Konfigurieren** Im Schritt des Assistenten können Sie Sprachen hinzufügen/entfernen und die Übersetzungsmethode auswählen. Tippen oder klicken Sie auf **Weiter**.
 
    ![Konfigurationsschritt des Assistenten](../assets/language-copy-wizard-configure.png)
 

@@ -3,10 +3,10 @@ title: Zuweisen eines Workflows zu einem anderen Benutzer, Senden einer E-Mail, 
 description: Mit Forms-zentrierten Workflows können Sie schnell auf adaptiven Formularen basierende Workflows erstellen. Mit Adobe Sign können Sie Dokumente elektronisch signieren, formularbasierte Geschäftsprozesse erstellen, Daten abrufen und an mehrere Datenquellen senden sowie E-Mail-Benachrichtigungen senden.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '7209'
-ht-degree: 99%
+source-wordcount: '7204'
+ht-degree: 98%
 
 ---
 
@@ -120,11 +120,11 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 * **[!UICONTROL Verantwortlicher]** > **[!UICONTROL Optionen zuweisen]**: Geben Sie die Methode an, mit der die Aufgabe einem Benutzer zugewiesen werden soll. Sie können die Aufgabe dynamisch einem Benutzer oder einer Gruppe zuweisen, indem Sie das Skript „Teilnehmerauswahl“ verwenden oder die Aufgabe einem bestimmten AEM-Benutzer oder einer bestimmten Gruppe zuweisen.
 * **[!UICONTROL Teilnehmerauswahl]**: Die Option ist verfügbar, wenn die Option **[!UICONTROL Dynamisch zu einem Benutzer oder einer Gruppe]** im Feld „Optionen zuweisen“ ausgewählt ist. Sie können ein ECMAScript oder einen Service verwenden, um einen Benutzer oder eine Gruppe dynamisch auszuwählen. Weitere Informationen finden Sie unter [Dynamisches Zuweisen eines Workflows zu Benutzenden](https://helpx.adobe.com/de/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) und [Erstellen eines benutzerdefinierten Schritts „Dynamischer Teilnehmer in Adobe Experience Manager“.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk)
 
-* **[!UICONTROL Teilnehmer]**: Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** im Feld **[!UICONTROL Teilnehmerauswahl]** ausgewählt ist. In diesem Feld können Sie Benutzer oder Gruppen für die Option „RandomParticipantChooser“ auswählen.
+* **[!UICONTROL Teilnehmer]**: Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** im Feld **[!UICONTROL Teilnehmerauswahl]** ausgewählt ist. Im Feld können Sie Benutzer oder Gruppen für die Option RandomParticipantChooser auswählen.
 
-* **[!UICONTROL Verantwortlicher]**: Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** im Feld **[!UICONTROL Teilnehmerauswahl]** ausgewählt ist. Mit dem Feld können Sie eine Variable des Datentyps „Zeichenfolge“ auswählen, um den Verantwortlichen zu definieren.
+* **[!UICONTROL Verantwortlicher]**: Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** im Feld **[!UICONTROL Teilnehmerauswahl]** ausgewählt ist. Im Feld können Sie eine Variable des Datentyps String auswählen, um den Verantwortlichen zu definieren.
 
-* **[!UICONTROL Argumente]**: Das Feld ist verfügbar, wenn ein anderes als das Skript „RandomParticipantChoose“ im Feld „Teilnehmerauswahl“ ausgewählt wurde. In diesem Feld können Sie eine Liste mit durch Kommas getrennten Argumenten für das im Feld „Teilnehmerauswahl“ ausgewählte Skript angeben.
+* **[!UICONTROL Argumente]**: Das Feld ist verfügbar, wenn ein anderes als das Skript „RandomParticipantChoose“ im Feld „Teilnehmerauswahl“ ausgewählt wurde. Im Feld können Sie eine Liste mit einem kommagetrennten Argument für das im Feld Teilnehmerauswahl ausgewählte Skript angeben.
 
 * **[!UICONTROL Benutzer oder Gruppe]**: Die Aufgabe wurde einem ausgewählten Benutzer oder einer ausgewählten Gruppe zugewiesen. Die Option ist verfügbar, wenn die Option **[!UICONTROL Zu einem bestimmten Benutzer bzw. einer bestimmten Gruppe]** im Feld **[!UICONTROL Optionen zuweisen]** ausgewählt ist. Das Feld listet alle Benutzer und Gruppen der Gruppe [!DNL workflow-users] auf.\
   Das Dropdown-Menü **[!UICONTROL Benutzer oder Gruppe]** führt die Benutzer und Gruppen auf, auf die der angemeldete Benutzer Zugriff hat. Die Anzeige des Benutzernamens hängt davon ab, ob Sie über Zugriffsberechtigungen für den Knoten **[!UICONTROL users]** im CRX-Repository für diesen bestimmten Benutzer verfügen.
@@ -272,7 +272,7 @@ Dokumentbeschreibungs-XML (DDX) ist eine deklarative Auszeichnungssprache, deren
 
 ## Schritt „Formulardatenmodell-Service aufrufen“ {#invoke-form-data-model-service-step}
 
-Sie können [[!DNL AEM Forms] -Datenintegration](data-integration.md) verwenden, um unterschiedliche Datenquellen zu konfigurieren und Verbindungen zu ihnen herzustellen. Diese Datenquellen können ein Webservice, ein REST-Service, ein OData-Service und eine CRM-Lösung sein. Mit [!DNL AEM Forms]-Datenintegration können Sie ein Formulardatenmodell erstellen, das verschiedene Services umfasst, um Vorgänge zum Abrufen von Daten, Hinzufügen und Aktualisieren in der konfigurierten Datenbank durchzuführen. Sie können den **[!UICONTROL Schritt „Formulardatenmodell-Service aufrufen“]** verwenden, um ein Formulardatenmodell (FDM) zu wählen und die Services des FDM verwenden, um Daten aus unterschiedlichen Datenquellen abzurufen, sie zu aktualisieren oder hinzuzufügen.
+Sie können [[!DNL AEM Forms] -Datenintegration](data-integration.md) verwenden, um unterschiedliche Datenquellen zu konfigurieren und Verbindungen zu ihnen herzustellen. Diese Datenquellen können ein Webservice, ein REST-Service, ein OData-Service und eine CRM-Lösung sein. [!DNL AEM Forms] Mit der Datenintegration können Sie ein Formulardatenmodell erstellen, das verschiedene Dienste umfasst, um Datenabruf-, Additions- und Aktualisierungsvorgänge für die konfigurierte Datenbank durchzuführen. Sie können den **[!UICONTROL Schritt „Formulardatenmodell-Service aufrufen“]** verwenden, um ein Formulardatenmodell (FDM) zu wählen und die Services des FDM verwenden, um Daten aus unterschiedlichen Datenquellen abzurufen, sie zu aktualisieren oder hinzuzufügen.
 
 Um die Eingaben für die Felder des Schritts zu erläutern, werden die folgende Datenbanktabelle und JSON-Datei als Beispiel verwendet:
 
@@ -334,7 +334,7 @@ Der Schritt „Formulardatenmodell-Service aufrufen“ enthält folgende Felder 
 
 * **[!UICONTROL Pfad für Formulardatenmodell]**: Wählen Sie ein Formulardatenmodell auf dem Server aus.
 
-* **[!UICONTROL Fehler und Validierungen]**: Mit dieser Option können Sie Fehlermeldungen erfassen und Validierungsoptionen für abgerufene und an Datenquellen gesendete Daten festlegen. Mit diesen Änderungen können Sie sicherstellen, dass die an den Schritt „Formulardatenmodell-Service aufrufen“ übergebenen Daten den von der Datenquelle definierten Datenbegrenzungen entsprechen. Weitere Informationen finden Sie unter [Automatisierte Validierung von Eingabedaten](work-with-form-data-model.md#automated-validation-of-input-data)
+* **[!UICONTROL Fehler und Überprüfungen]**: Mit dieser Option können Sie Fehlermeldungen erfassen und Validierungsoptionen für abgerufene und an Datenquellen gesendete Daten festlegen. Mit diesen Änderungen können Sie sicherstellen, dass die an den Schritt „Formulardatenmodell-Service aufrufen“ übergebenen Daten den von der Datenquelle definierten Datenbegrenzungen entsprechen. Weitere Informationen finden Sie unter [Automatisierte Validierung von Eingabedaten](work-with-form-data-model.md#automated-validation-of-input-data)
 
 * **[!UICONTROL Validierungsstufe]**: Es gibt drei Kategorien von Validierungen: Einfach, Vollständig und AUS:
 

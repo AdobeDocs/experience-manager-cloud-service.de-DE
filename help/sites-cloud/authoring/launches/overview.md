@@ -2,10 +2,10 @@
 title: Launches
 description: Launches helfen Ihnen, Inhalte für eine künftige Version effizient zu entwickeln. So sind Sie in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 90%
+source-wordcount: '902'
+ht-degree: 89%
 
 ---
 
@@ -67,7 +67,7 @@ Launches ermöglichen Folgendes:
       * Wenn die Variable **Produktionsbereit** -Markierung gesetzt ist, wird der Launch automatisch auf die Produktionsseiten der angegebenen **Launch**(**Live**) **date**. Nach der Promotion werden die Produktionsseiten automatisch veröffentlicht.\
         Wenn kein Datum ausgewählt wurde, hat die Markierung keine Auswirkungen.
 * Paralleles Aktualisieren der Quell- und Launch-Seiten:
-   * Änderungen an den Quellseiten werden automatisch in der Launch Copy implementiert (sofern mit Vererbung eingerichtet). das heißt, als Live Copy).
+   * Änderungen an den Quellseiten werden automatisch in der Launch-Kopie implementiert (sofern mit Vererbung eingerichtet, d. h. als Live Copy).
    * Änderungen an der Launch-Kopie können ohne Störung dieser automatischen Aktualisierungen oder der Quellseiten vorgenommen werden.
 
   ![Parallele Aktionen](/help/sites-cloud/authoring/assets/launches-parallel.png)
@@ -92,7 +92,7 @@ Launches ermöglichen Folgendes:
 
 1. Navigieren Sie in der Konsole **Sites** zur Quelle der Launches.
 1. Öffnen Sie die Leiste **Referenzen** und wählen Sie die Quellseite aus.
-1. Auswählen **Starts**, werden die vorhandenen Launches aufgelistet, zusammen mit dem Zugriff auf die **Konsole &quot;Launches&quot;**:
+1. Auswählen **Launches**, werden die vorhandenen Launches aufgelistet, zusammen mit dem Zugriff auf **Konsole &quot;Launches&quot;**:
 
    ![Verweise auf Launches in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-references.png)
 
@@ -102,7 +102,7 @@ Launches ermöglichen Folgendes:
 
 ## Die Konsole „Launches“  {#the-launches-console}
 
-Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermöglicht es Ihnen, die aufgeführten Aktionen auszuführen. Auf die Konsole kann wie folgt zugegriffen werden:
+Die Konsole &quot;Launches&quot;bietet einen Überblick über Ihre Launches und ermöglicht es Ihnen, Aktionen für die aufgelisteten Launches durchzuführen. Auf die Konsole kann wie folgt zugegriffen werden:
 
 * über die Konsole **Tools**: **Tools** > **Sites** > **Launches**.
 

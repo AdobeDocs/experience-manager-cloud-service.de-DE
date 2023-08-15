@@ -3,10 +3,10 @@ title: Verwenden der GraphiQL-IDE in AEM
 description: Erfahren Sie, wie Sie die GraphiQL IDE in Adobe Experience Manager verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 83%
+source-wordcount: '1141'
+ht-degree: 79%
 
 ---
 
@@ -23,14 +23,14 @@ Eine Implementierung der standardmäßigen [GraphQL](https://graphql.org/learn/s
 >[!NOTE]
 >Sie müssen [Ihre Endpunkte](/help/headless/graphql-api/graphql-endpoint.md) im [Konfigurationsbrowser konfiguriert](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) haben, bevor Sie die GraphiQL-IDE verwenden.
 
-Das **GraphiQL**-Tool erlaubt es Ihnen, Ihre GraphQL-Abfragen zu testen und zu debuggen, indem es Ihnen folgendes ermöglicht:
+Die **GraphiQL** Mit diesem Tool können Sie Ihre GraphQL-Abfragen testen und debuggen, indem Sie:
 * Auswahl des **Endpunkts**, der der Sites-Konfiguration entspricht, die Sie für Ihre Abfragen verwenden möchten
 * Direkte Eingabe neuer Abfragen
 * Erstellen und Zugreifen auf **[Persistente Abfragen](/help/headless/graphql-api/persisted-queries.md)**
 * Ausführen von Abfragen mit sofortiger Anzeige der Ergebnisse
 * Verwalten von **Abfragevariablen**
 * Speichern und Verwalten von **Persistenten Abfragen**
-* Veröffentlichung oder Rückgängigmachen der Veröffentlichung, **Beständige Abfragen**, um entweder **Veröffentlichen** oder **Vorschau** Dienst; z. B. nach/von `dev-publish`
+* Veröffentlichung oder Rückgängigmachen der Veröffentlichung, **Beständige Abfragen**, um entweder **Veröffentlichen** oder **Vorschau** Dienst, z. B. von/zu `dev-publish`
 * Anzeige des **Verlaufs** der vorherigen Abfragen
 * Verwenden des **Dokumentations-Explorers**, um auf die Dokumentation zuzugreifen; hilft Ihnen zu lernen und zu verstehen, welche Methoden verfügbar sind.
 
@@ -87,7 +87,7 @@ In beiden Fällen ist die im Editor angezeigte Abfrage die Abfrage, die ausgefü
 
 ## Abfragevariablen {#query-variables}
 
-Mit der GraphiQL-IDE können Sie auch Ihre [Abfragevariablen](/help/headless/graphql-api/content-fragments.md#graphql-variables) verwalten.
+Mit der GraphiQL-IDE können Sie auch Ihre [Abfragevariablen](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
 Beispiel:
 
@@ -146,7 +146,7 @@ Dadurch wird die Abfrage für die ausgewählte Umgebung aktiviert. Sie können e
 
 Wie bei der Veröffentlichung können Sie die **Veröffentlichung rückgängig machen** Aktion.
 
-Dadurch wird die Abfrage in der von Ihnen ausgewählten Umgebung deaktiviert. entweder **Veröffentlichen** -Umgebung oder Ihrer **Vorschau** Umgebung.
+Dadurch wird die Abfrage in der von Ihnen ausgewählten Umgebung deaktiviert. Entweder **Veröffentlichen** -Umgebung oder Ihrer **Vorschau** Umgebung.
 
 >[!NOTE]
 >
@@ -154,7 +154,7 @@ Dadurch wird die Abfrage in der von Ihnen ausgewählten Umgebung deaktiviert. en
 
 ## Kopieren der URL, um direkt auf die Abfrage zuzugreifen {#copy-url}
 
-Mit der Option **URL kopieren** können Sie eine Abfrage simulieren, indem Sie die URL kopieren, mit der Sie direkt auf die persistente Abfrage zugreifen und die Ergebnisse sehen. Diese kann dann zu Testzwecken verwendet werden, z. B. durch Zugriff in einem Browser:
+Die **URL kopieren** -Option können Sie eine Abfrage simulieren, indem Sie die URL kopieren, die zum direkten Zugriff auf die beibehaltene Abfrage verwendet wird, und die Ergebnisse anzeigen. Diese kann dann zu Testzwecken verwendet werden, z. B. durch Zugriff in einem Browser:
 
 <!--
   >[!NOTE]

@@ -2,9 +2,9 @@
 title: Inhaltssuche und -indizierung
 description: Erfahren Sie mehr über die Inhaltssuche und -indizierung in AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2325'
+source-wordcount: '2324'
 ht-degree: 39%
 
 ---
@@ -287,7 +287,7 @@ Die Versionsnummer wird bei jeder Indexänderung inkrementiert. Um zu vermeiden,
 
 ### Änderungen an vordefinierten Indizes {#changes-to-out-of-the-box-indexes}
 
-Nachdem die Adobe einen vordefinierten Index wie &quot;damAssetLucene&quot;oder &quot;cqPageLucene&quot;ändert, wird ein neuer Index mit dem Namen `damAssetLucene-2` oder `cqPageLucene-2` erstellt wird. Oder wenn der Index bereits angepasst wurde, wird die angepasste Indexdefinition mit den Änderungen im vordefinierten Index zusammengeführt, wie unten dargestellt. Die Zusammenführung von Änderungen erfolgt automatisch. Das bedeutet, dass Sie nichts tun müssen, wenn sich ein vordefinierter Index ändert. Der Index lässt sich jedoch später erneut anpassen.
+Nach dem Adobe ändert sich ein vordefinierter Index wie &quot;damAssetLucene&quot;oder &quot;cqPageLucene&quot;, ein neuer Index mit dem Namen `damAssetLucene-2` oder `cqPageLucene-2` erstellt wird. Oder wenn der Index bereits angepasst wurde, wird die angepasste Indexdefinition mit den Änderungen im vordefinierten Index zusammengeführt, wie unten dargestellt. Die Zusammenführung von Änderungen erfolgt automatisch. Das bedeutet, dass Sie nichts tun müssen, wenn sich ein vordefinierter Index ändert. Der Index lässt sich jedoch später erneut anpassen.
 
 | Index | Vordefinierter Index | Verwendung in Version 2 | Verwendung in Version 3 |
 |---|---|---|---|

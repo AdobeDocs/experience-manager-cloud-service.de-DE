@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Rollout-Konflikte in Multi Site Manager verwa
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 85%
+source-wordcount: '920'
+ht-degree: 80%
 
 ---
 
@@ -17,7 +17,7 @@ Konflikte sind möglich, wenn neue Seiten mit demselben Seitennamen im Blueprint
 
 ## Konfliktbehandlung {#conflict-handling}
 
-Wenn Konfliktseiten (in den Blueprint- und Live Copy-Zweigen) vorhanden sind, gestattet Ihnen MSM die Definition, wie (oder sogar ob) dieser Konflikt behoben werden soll.
+Wenn in Konflikt stehende Seiten vorhanden sind (in den Blueprint- und Live Copy-Verzweigungen), können Sie mit MSM definieren, wie diese verarbeitet werden sollen (oder auch wenn dies der Fall ist).
 
 Um sicherzustellen, dass der Rollout nicht gesperrt ist, können mögliche Definitionen Folgendes umfassen:
 
@@ -54,7 +54,7 @@ In den folgenden Abschnitten werden wir zum Veranschaulichen der verschiedenen V
 
 ## Rollout-Manager und Konfliktbehandlung {#rollout-manager-and-conflict-handling}
 
-Mit dem Rollout-Manager können Sie das Konflikt-Management aktivieren oder deaktivieren.
+Mit dem Rollout-Manager können Sie das Konfliktmanagement aktivieren oder deaktivieren.
 
 Dies erfolgt mithilfe der [OSGi-Konfiguration](/help/implementing/deploying/configuring-osgi.md) von **Day CQ WCM Rollout Manager**. Legen Sie den Wert **Konflikt mit manuell erstellten Seiten beheben** (`rolloutmgr.conflicthandling.enabled`) auf „true“ fest, wenn der Rollout-Manager Konflikte von einer Seite bewältigen soll, die in der Live Copy mit einem in der Blueprint vorhandenen Namen erstellt wurde.
 
@@ -69,7 +69,7 @@ AEM bietet:
 * Die [Standard-Konflikt-Handler](#default-conflict-handler):
    * `ResourceNameRolloutConflictHandler`
 * Die Möglichkeit, einen [benutzerdefinierten Handler](#customized-handlers) zu implementieren
-* Den Service-Ranking-Mechanismus, mit dem Sie die Priorität jedes einzelnen Handlers festlegen können
+* Der Service-Ranking-Mechanismus, mit dem Sie die Priorität jedes einzelnen Handlers festlegen können
    * Der Service mit dem höchsten Ranking wird verwendet.
 
 ### Standard-Konflikt-Handler {#default-conflict-handler}

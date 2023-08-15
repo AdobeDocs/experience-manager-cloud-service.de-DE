@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '6665'
-ht-degree: 98%
+source-wordcount: '6663'
+ht-degree: 97%
 
 ---
 
@@ -257,7 +257,7 @@ Die einfachste Methode dazu besteht darin, den folgenden zweistufigen Vorgang du
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-Es ist jedoch möglich, einen anderen Ansatz zu verwenden und die Erstellung von Datenelementen zu umgehen. Sie können direkt auf ein Argument in einem Dynamic Media Viewer-Ereignis verweisen. Geben Sie im Eingabefeld **[!UICONTROL value]** der Analytics-Variablenzuweisung den vollständig qualifizierten Namen des Ereignis-Arguments ein. Stellen Sie sicher, dass Sie um den Namen Prozentzeichen (%) setzen. Beispiel:
+Es ist jedoch möglich, einen anderen Ansatz zu verwenden und die Erstellung von Datenelementen zu umgehen. Sie können direkt auf ein Argument in einem Dynamic Media Viewer-Ereignis verweisen. Geben Sie den vollständig qualifizierten Namen des Ereignisarguments in das Feld **[!UICONTROL value]** Eingabefeld der Analytics-Variablenzuweisung. Stellen Sie sicher, dass Sie um den Namen Prozentzeichen (%) setzen. Beispiel:
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -487,7 +487,7 @@ Siehe auch [Analytics-Implementierungshandbuch](https://experienceleague.adobe.c
 
 ## Konfigurieren von Experience Platform Tags für die Integration {#configuring-adobe-launch-for-the-integration}
 
-Nachdem Sie Experience Platform Tags konfiguriert haben, wird Folgendes für die Integration eingerichtet:
+Nachdem Sie Experience Platform-Tags konfiguriert haben, wird Folgendes für die Integration eingerichtet:
 
 * Erstellung einer neuen Eigenschaft, um alle Konfigurationen zusammenzuhalten.
 * Installation und Einrichtung von Erweiterungen. Der Client-seitige Code aller in der Eigenschaft installierten Erweiterungen wird in einer Bibliothek kompiliert. Diese Bibliothek wird später von der Web-Seite verwendet.
@@ -519,7 +519,7 @@ Mehr Informationen unter [Tipp-Eigenschaft konfigurieren](https://experienceleag
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-   Klicken Sie auf die neu erstellte Eigenschaft und fahren Sie dann mit der *Installation und Einrichtung von Erweiterungen* fort.
+   Wählen Sie die neu erstellte Eigenschaft aus und fahren Sie dann mit *Installation und Einrichtung von Erweiterungen*.
 
 ### Installation und Einrichtung von Erweiterungen {#installing-and-setup-of-extensions}
 

@@ -2,9 +2,9 @@
 title: OAuth2-Unterstützung für den E-Mail-Service
 description: OAuth2-Unterstützung für den E-Mail-Service in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '679'
 ht-degree: 42%
 
 ---
@@ -21,13 +21,13 @@ Weitere Informationen zum AEM as a Cloud Service E-Mail-Service finden Sie unter
 
 1. Gehen Sie zu [https://portal.azure.com/](https://portal.azure.com/) und melden Sie sich an.
 1. Suchen Sie nach **Azure Active Directory** in der Suchleiste und klicken Sie auf das Ergebnis. Alternativ können Sie direkt zu [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) navigieren.
-1. Klicken **App-Registrierung** > **Neue Registrierung**.
+1. Klicks **App-Registrierung** > **Neue Registrierung**.
 
    ![Starten des App-Registrierungsprozesses](assets/oauth-outlook1.png)
 
 1. Füllen Sie die Informationen entsprechend Ihren Anforderungen aus und klicken Sie dann auf **Registrieren**.
 1. Wechseln Sie zur neu erstellten App und wählen Sie **API-Berechtigungen**.
-1. Klicken **Berechtigung hinzufügen** > **Diagrammberechtigungen** > **Delegierte Berechtigungen**.
+1. Klicks **Berechtigung hinzufügen** > **Diagrammberechtigungen** > **Delegierte Berechtigungen**.
 1. Wählen Sie die folgenden Berechtigungen für Ihre Anwendung aus und klicken Sie dann auf **Berechtigung hinzufügen**:
    * `https://outlook.office.com/SMTP.Send`
    * `https://graph.microsoft.com/Mail.Read`
@@ -37,12 +37,12 @@ Weitere Informationen zum AEM as a Cloud Service E-Mail-Service finden Sie unter
    * `offline_access`
    * `email`
    * `profile`
-1. Navigieren Sie zu **Authentifizierung** > **Plattform hinzufügen** > **Web** und im **Umleitungs-URLs** Fügen Sie die folgenden URLs hinzu - eine mit und eine ohne Schrägstrich:
+1. Navigieren Sie zu **Authentifizierung** > **Plattform hinzufügen** > **Web** und in der **Umleitungs-URLs** Fügen Sie die folgenden URLs hinzu - eine mit und eine ohne Schrägstrich:
    * `http://localhost/`
    * `http://localhost`
 1. Presse **Konfigurieren** nach dem Hinzufügen der einzelnen URLs und der Konfiguration Ihrer Einstellungen entsprechend Ihren Anforderungen.
 1. Gehen Sie dann zu **Zertifikate und geheime Schlüssel**, klicken Sie auf **Neuer geheimer Client-Schlüssel** und folgen Sie den Anweisungen auf dem Bildschirm, um einen geheimen Schlüssel zu erstellen. Notieren Sie sich dieses Geheimnis für die spätere Verwendung.
-1. Presse **Übersicht** im linken Bereich und kopieren Sie die Werte für **Anwendungs-ID (client)** und **Verzeichnis-ID (Mandanten-ID)** zur späteren Verwendung.
+1. Presse **Übersicht** im linken Bereich und kopieren Sie die Werte für **Anwendungs-ID (client)** und **Verzeichnis-ID (Mandant)** zur späteren Verwendung.
 
 Um eine Neukodifizierung vorzunehmen, verwenden Sie die folgenden Informationen, um OAuth2 für den E-Mail-Dienst auf der AEM zu konfigurieren:
 
@@ -59,7 +59,7 @@ Generieren Sie anschließend das Aktualisierungstoken, das Teil der OSGi-Konfigu
 1. Öffnen Sie die folgende URL im Browser, nachdem Sie `clientID` und `tenantID` durch die für Ihr Konto spezifischen Werte ersetzt haben: `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`.
 1. Wenn Sie gefragt werden, erlauben Sie die Berechtigung.
 1. Die URL leitet zu einem neuen Speicherort um, der in folgendem Format erstellt wurde: `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`.
-1. Kopieren Sie den Wert von `<code>` im obigen Beispiel.
+1. Den Wert von `<code>` im obigen Beispiel.
 1. Verwenden Sie den folgenden cURL-Befehl, um das refreshToken abzurufen. Ersetzen Sie die tenantID, clientID und clientSecret durch die Werte für Ihr Konto und den Wert für `<code>`:
 
    ```
@@ -80,7 +80,7 @@ Generieren Sie anschließend das Aktualisierungstoken, das Teil der OSGi-Konfigu
 
 Bevor Sie mit der OAuth-Konfiguration auf der AEM-Seite fortfahren, überprüfen Sie mit dem folgenden Verfahren sowohl accessToken als auch refreshToken:
 
-1. Generieren Sie das accessToken, indem Sie das im vorherigen Verfahren erzeugte refreshToken verwenden, indem Sie die folgende curl verwenden und die Werte für `<client_id>`,`<client_secret>`und `<refreshToken>`:
+1. Generieren Sie das accessToken, indem Sie das im vorherigen Verfahren erzeugte refreshToken verwenden, indem Sie die folgende Curl verwenden und die Werte für `<client_id>`,`<client_secret>`, und `<refreshToken>`:
 
    ```
    curl --location --request POST 'https://login.microsoftonline.com/<tenetId>/oauth2/v2.0/token' \
@@ -100,7 +100,7 @@ Bevor Sie mit der OAuth-Konfiguration auf der AEM-Seite fortfahren, überprüfen
 >
 > Sie können die Postman-API-Sammlung von [diesem Speicherort](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow) abrufen.
 >
-> Weitere Informationen finden Sie in der Dokumentation zu MSFT OAuth . [here](https://learn.microsoft.com/de-de/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) für weitere Details.
+> Siehe die Dokumentation zu MSFT OAuth . [here](https://learn.microsoft.com/de-de/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) für weitere Details.
 
 ### Integration mit AEM as a Cloud Service {#integration-with-aem-as-a-cloud-service}
 
@@ -122,7 +122,7 @@ Bevor Sie mit der OAuth-Konfiguration auf der AEM-Seite fortfahren, überprüfen
    }
    ```
 
-1. Füllen Sie die `authUrl`, `tokenUrl`und `refreshURL` , indem Sie sie wie im vorherigen Abschnitt beschrieben erstellen.
+1. Füllen Sie die `authUrl`, `tokenUrl`, und `refreshURL` , indem Sie sie wie im vorherigen Abschnitt beschrieben erstellen.
 1. Fügen Sie der Konfiguration die folgenden Umfänge hinzu:
    * `https://outlook.office.com/SMTP.Send`
    * `https://graph.microsoft.com/Mail.Read`

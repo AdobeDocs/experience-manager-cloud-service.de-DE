@@ -2,10 +2,10 @@
 title: Experience Fragments  Übersicht
 description: Erweitern Sie Experience Fragments in Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 50%
+source-wordcount: '1640'
+ht-degree: 49%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 50%
 
 Ein [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) ist eine Gruppe aus einer oder mehreren Komponenten (einschließlich Inhalt und Layout), die innerhalb von Seiten referenziert werden können.
 
-Ein Experience Fragment Übergeordnet, eine Variante oder beides verwendet:
+Ein Experience Fragment-Master oder eine Variante oder beides verwendet:
 
 * `sling:resourceType`: `/libs/cq/experience-fragments/components/xfpage`
 
@@ -41,7 +41,7 @@ Beispiel:
 
 >[!NOTE]
 >
->Links verweisen immer auf die Veröffentlichungsinstanz. Sie sind für die Verwendung durch Dritte vorgesehen, sodass der Link immer von der Veröffentlichungsinstanz und nicht von der Autoreninstanz aufgerufen wird.
+>Links verweisen immer auf die Publishing-Instanz. Sie sind für die Verwendung durch Dritte vorgesehen, sodass der Link immer von der Veröffentlichungsinstanz und nicht von der Autoreninstanz aufgerufen wird.
 
 ![Einfache HTML-Ausgabe](assets/xf-14.png)
 
@@ -76,7 +76,7 @@ Beim Entwickeln einer neuen Vorlage für Experience Fragments können Sie die St
 <!-- When developing a new template for Experience Fragments you can follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
 -->
 
-So erstellen Sie eine Experience Fragment-Vorlage, die vom **Experience Fragment erstellen** einen dieser Regelsätze verwenden:
+So erstellen Sie eine Experience Fragment-Vorlage, die vom **Experience Fragment erstellen** -Assistenten verwenden, müssen Sie einen der folgenden Regelsätze ausführen:
 
 1. Beide:
 
@@ -136,13 +136,13 @@ Diese Funktion kann in einer Autoreninstanz von AEM aktiviert werden. Sie erford
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-Der Link Externalizer wird verwendet, um die richtigen URLs zu ermitteln, die beim Erstellen der HTML-Version des Target-Angebots erforderlich sind, das dann an Adobe Target gesendet wird. Dieser Vorgang ist erforderlich, da für Adobe Target der öffentliche Zugriff auf alle Links im Target HTML-Angebot erforderlich ist. Das bedeutet, dass alle Ressourcen, auf die die Links verweisen, und das Experience Fragment selbst veröffentlicht werden müssen, bevor sie verwendet werden können.
+Der Link Externalizer wird verwendet, um die richtigen URLs zu bestimmen, die beim Erstellen der HTML-Version des Target-Angebots erforderlich sind, das dann an Adobe Target gesendet wird. Dieser Vorgang ist erforderlich, da für Adobe Target der öffentliche Zugriff auf alle Links im Target HTML-Angebot erforderlich ist. Das bedeutet, dass alle Ressourcen, auf die die Links verweisen, und das Experience Fragment selbst veröffentlicht werden müssen, bevor sie verwendet werden können.
 
 Wenn Sie ein Target-HTML-Angebot erstellen, wird standardmäßig eine Anfrage an einen benutzerdefinierten Sling-Selektor in AEM gesendet. Dieser Selektor heißt `.nocloudconfigs.html`. Wie der Name schon sagt, erstellt er ein einfaches HTML-Rendering eines Experience Fragment, enthält jedoch keine Cloud-Konfigurationen (die überflüssige Informationen wären).
 
 Nachdem Sie die HTML-Seite generiert haben, wird die Sling Rewriter-Pipeline in die Ausgabe geändert:
 
-1. Die Elemente `html`, `head` und `body` werden durch `div`-Elemente ersetzt. Die `meta`, `noscript`und `title` -Elemente entfernt werden (sie sind untergeordnete Elemente des ursprünglichen `head` -Element und werden nicht berücksichtigt, wenn durch die `div` -Element).
+1. Die Elemente `html`, `head` und `body` werden durch `div`-Elemente ersetzt. Die `meta`, `noscript`, und `title` -Elemente entfernt werden (sie sind untergeordnete Elemente des ursprünglichen `head` -Element und werden nicht berücksichtigt, wenn durch die `div` -Element).
 
    Dadurch wird sichergestellt, dass das HTML-Target-Angebot in Target-Aktivitäten einbezogen werden kann.
 
@@ -152,8 +152,8 @@ Nachdem Sie die HTML-Seite generiert haben, wird die Sling Rewriter-Pipeline in 
 
    1. `src`-Attribute
    2. `href`-Attribute
-   3. `*-src` -Attribute (z. B. `data-src`und `custom-src`)
-   4. `*-href` -Attribute (z. B. `data-href`, `custom-href`und `img-href`)
+   3. `*-src` -Attribute (z. B. `data-src`, und `custom-src`)
+   4. `*-href` -Attribute (z. B. `data-href`, `custom-href`, und `img-href`)
 
    >[!NOTE]
    >
@@ -170,7 +170,7 @@ Für diese Anwendungsfälle stellt AEM die Link Rewriter Provider-Schnittstelle 
 
 ### Link Rewriter Provider-Schnittstelle {#link-rewriter-provider-interface}
 
-Für kompliziertere Fälle, die nicht vom [Standard](#default-link-rewriting) abgedeckt werden, bietet AEM die Link Rewriter Provider-Schnittstelle. Diese Schnittstelle ist eine `ConsumerType` -Schnittstelle, die Sie in Ihren Bundles als Dienst implementieren können. Sie umgeht die Änderungen, die AEM an internen Links eines HTML-Angebots vornimmt, die aus einem Experience Fragment gerendert wurden. Diese Schnittstelle ermöglicht es Ihnen, den Prozess des Umschreibens interner HTML-Links an Ihre geschäftlichen Anforderungen anzupassen.
+Für kompliziertere Fälle, die nicht vom [Standard](#default-link-rewriting) abgedeckt werden, bietet AEM die Link Rewriter Provider-Schnittstelle. Diese Schnittstelle ist eine `ConsumerType` -Schnittstelle, die Sie in Ihren Bundles als Dienst implementieren können. Sie umgeht die Änderungen, die AEM an internen Links eines HTML-Angebots vornimmt, die aus einem Experience Fragment gerendert wurden. Auf dieser Oberfläche können Sie den Prozess des Neuschreibens interner HTML-Links an Ihre geschäftlichen Anforderungen anpassen.
 
 Beispiele für Anwendungsfälle für die Implementierung dieser Schnittstelle als Service:
 

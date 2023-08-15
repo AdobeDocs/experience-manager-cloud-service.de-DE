@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit der Inhaltsfragmentkonsole Ihre AEM Inhal
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 76%
+source-wordcount: '2051'
+ht-degree: 75%
 
 ---
 
@@ -70,7 +70,7 @@ So erstellen Sie ein Inhaltsfragment:
 
 1. Das Dialogfeld **Neues Inhaltsfragment** wird geöffnet. Hier können Sie Folgendes angeben:
 
-   * **Standort** - automatisch mit dem aktuellen Speicherort ausgefüllt, Sie können jedoch bei Bedarf einen anderen Speicherort auswählen
+   * **Standort** - automatisch mit dem aktuellen Speicherort ausgefüllt, Sie können jedoch bei Bedarf einen anderen Speicherort auswählen.
    * **Inhaltsfragmentmodell** - Wählen Sie aus der Dropdown-Liste das Modell aus, das als Grundlage für das Fragment verwendet werden soll.
    * **Titel**
    * **Name** - basierend auf der **Titel**, kann jedoch bei Bedarf bearbeitet werden
@@ -247,7 +247,7 @@ Sie können Ihre Inhaltsfragmente in folgenden Bereichen veröffentlichen:
 
   >[!CAUTION]
   >
-  Veröffentlichen von Inhaltsfragmenten in der **Vorschaufunktion** ist nur über verfügbar. [Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); mithilfe der **Veröffentlichen** Aktion.
+  Veröffentlichen von Inhaltsfragmenten in der **Vorschaufunktion** ist nur über verfügbar [Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); unter Verwendung der **Veröffentlichen** Aktion.
 
   >[!NOTE]
   >
@@ -269,7 +269,7 @@ Wenn Sie ein Inhaltsfragment veröffentlichen, für das das Modell noch nicht ve
 
 1. Wählen Sie in der Symbolleiste **Veröffentlichen** und dann eine der folgenden Optionen, um das entsprechende Dialogfeld zu öffnen:
 
-   * **Jetzt** - Wählen Sie entweder die **Veröffentlichungsdienst** oder **Vorschaufunktion**; nach Bestätigung wird das Fragment sofort veröffentlicht
+   * **Jetzt** - Wählen Sie entweder die **Veröffentlichungsdienst** oder die **Vorschaufunktion**; nach Bestätigung wird das Fragment sofort veröffentlicht
    * **Zeitplan** - Zusätzlich zum erforderlichen Dienst können Sie auch das Datum und die Uhrzeit der Veröffentlichung des Fragments auswählen
 
    Bei Bedarf müssen Sie die Verweise zur Veröffentlichung angeben. Standardmäßig werden Verweise auch im Vorschaudienst veröffentlicht, um sicherzustellen, dass der Inhalt nicht umbrochen wird.
@@ -278,7 +278,7 @@ Beispiel für eine geplante Veröffentlichungsanforderung:
 
 1. Bestätigen Sie die Veröffentlichungsaktion.
 
-Sie können auch im **Veröffentlichungsdienst** von [Inhaltsfragment-Editor](#toolbar-actions-in-the-content-fragment-editor) mit:
+Sie können auch im **Veröffentlichungsdienst** aus dem [Inhaltsfragment-Editor](#toolbar-actions-in-the-content-fragment-editor) mit:
 * **Quick Publish**
 * **Veröffentlichung verwalten**
 
@@ -295,7 +295,7 @@ Nachdem ein Fragment veröffentlicht, referenziert oder beides wurde, zeigt AEM 
 Um die Veröffentlichung von Inhaltsfragmenten rückgängig zu machen, wählen Sie ein oder mehrere Fragmente aus und klicken Sie auf **Veröffentlichung rückgängig machen** in der Symbolleiste der [Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment). Sie können **Jetzt** oder **Geplant**.
 
 Wenn das entsprechende Dialogfeld geöffnet wird, können Sie den entsprechenden Dienst auswählen:
-![Dialogfeld &quot;Veröffentlichung rückgängig machen&quot;](assets/cfm-unpublish-01.png)
+![Dialogfeld &quot;Rückgängig&quot;](assets/cfm-unpublish-01.png)
 
 >[!NOTE]
 >
@@ -394,7 +394,7 @@ Sie werden nebeneinander angezeigt, wobei:
    * Eingefügter Text: Grün
    * Ersetzter Text: Blau
 
-* Sie über das Vollbildsymbol jede Version separat öffnen können. Wechseln Sie dann wieder zur parallelen Ansicht.
+* Über das Symbol für den Vollbildmodus können Sie jede Version einzeln öffnen und dann wieder zur parallelen Ansicht wechseln
 * Sie die jeweilige Version **wiederherstellen** können.
 * Sie über **Fertig** zur Konsole zurückkehren.
 

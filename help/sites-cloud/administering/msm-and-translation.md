@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre Inhalte projektübergreifend wiederverwe
 feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 49%
+source-wordcount: '409'
+ht-degree: 45%
 
 ---
 
@@ -17,14 +17,14 @@ Multi Site Manager und Übersetzungs-Tools von Adobe Experience Manager vereinfa
 
 * Multi Site Manager (MSM) und seine Live Copy-Funktionen ermöglichen Ihnen die Verwendung desselben Site-Inhalts sowie deren Variationen an mehreren Orten:
    * [Wiederverwenden von Inhalten: Multi Site Manager und Live Copy](msm/overview.md)
-* Die Übersetzungsfunktion ermöglicht Ihnen die Automatisierung der Übersetzung von Seiteninhalten, um mehrsprachige Websites zu erstellen und zu pflegen:
+* Mit der Übersetzung können Sie die Übersetzung von Seiteninhalten automatisieren, um mehrsprachige Websites zu erstellen und zu verwalten:
    * [Übersetzen von Inhalten für mehrsprachige Sites](translation/overview.md)
 
 Diese beiden Funktionen können kombiniert und für [internationale, mehrsprachige](#multinational-and-multilingual-sites) Websites eingesetzt werden.
 
 >[!TIP]
 >
->Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie [Sites Translation Journey](/help/journey-sites/translation/overview.md). Es handelt sich um einen geführten Weg durch die Übersetzung Ihrer AEM Sites-Inhalte mit AEM leistungsstarken Übersetzungstools. Ideal, wenn Sie keine AEM- oder Übersetzungserfahrung haben.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie [Sites-Übersetzungs-Journey](/help/journey-sites/translation/overview.md). Es handelt sich um einen geführten Weg durch die Übersetzung Ihrer AEM Sites-Inhalte mit AEM leistungsstarken Übersetzungs-Tools. Ideal, wenn Sie keine AEM oder Übersetzungs-Erfahrung haben.
 
 ## Internationale, mehrsprachige Websites {#multinational-and-multilingual-sites}
 

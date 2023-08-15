@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1501'
+source-wordcount: '1500'
 ht-degree: 93%
 
 ---
@@ -148,12 +148,11 @@ Sie können direkt auf der Benutzeroberfläche verschiedene Bearbeitungsaufgaben
 
    * Um Assets anhand des Namens in aufsteigender oder absteigender Reihenfolge zu sortieren, klicken Sie im linken Bereich auf **[!UICONTROL Assets]** (Bildsymbol). Klicken Sie rechts neben der Überschrift **[!UICONTROL Assets]** auf das Caret-Zeichen nach oben oder unten.
 
-      >[!NOTE]
-      >
-      >* Um ein komplettes gemischtes Medienset aus einem Anzeigemodus zu löschen (z. B. **[!UICONTROL Kartenansicht]** oder **[!UICONTROL Spaltenansicht]**), navigieren Sie zum gemischten Medienset. Bewegen Sie den Mauszeiger über das Asset und klicken Sie dann auf das Häkchensymbol, um es auszuwählen. Drücken Sie die **[!UICONTROL Rücktaste]** auf der Tastatur oder klicken Sie auf **[!UICONTROL Mehr]** (drei Punkte) in der Symbolleiste und dann auf **[!UICONTROL Löschen]**.
-      >
-      >* Sie können die Assets in einem gemischten Medienset bearbeiten, indem Sie zum Set navigieren. Wählen Sie in der linken Leiste die Option **[!UICONTROL Set-Mitglieder]** und wählen Sie dann das **[!UICONTROL Stiftsymbol]** bei einem einzelnen Asset, um das Bearbeitungsfenster zu öffnen.
-
+     >[!NOTE]
+     >
+     >* Um ein komplettes gemischtes Medienset aus einem Anzeigemodus zu löschen (z. B. **[!UICONTROL Kartenansicht]** oder **[!UICONTROL Spaltenansicht]**), navigieren Sie zum gemischten Medienset. Bewegen Sie den Mauszeiger über das Asset und klicken Sie dann auf das Häkchensymbol, um es auszuwählen. Drücken Sie die **[!UICONTROL Rücktaste]** auf der Tastatur oder klicken Sie auf **[!UICONTROL Mehr]** (drei Punkte) in der Symbolleiste und dann auf **[!UICONTROL Löschen]**.
+     >
+     >* Sie können die Assets in einem gemischten Medienset bearbeiten, indem Sie zum Set navigieren. Wählen Sie in der linken Leiste die Option **[!UICONTROL Set-Mitglieder]** und wählen Sie dann das **[!UICONTROL Stiftsymbol]** bei einem einzelnen Asset, um das Bearbeitungsfenster zu öffnen.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, wenn Sie mit der Bearbeitung fertig sind.
 
@@ -162,7 +161,6 @@ Sie können direkt auf der Benutzeroberfläche verschiedene Bearbeitungsaufgaben
    >* Um die Assets in einem gemischten Medienset zu bearbeiten, navigieren Sie zum gemischten Medienset. Tippen Sie auf das Set (nicht auswählen), um es auf der Seite „Experience Manager-Set-Vorschau“ zu öffnen. Klicken Sie in der linken Leiste auf das Caret-Zeichen nach unten, um die Dropdown-Liste zu öffnen, und klicken Sie dann auf **[!UICONTROL Set-Mitglieder]**. Bewegen Sie den Mauszeiger auf der Seite „Set-Mitglieder“ über ein Asset und klicken Sie dann auf **[!UICONTROL Bearbeiten]** (Stiftsymbol), um die Bearbeitungsseite zu öffnen.
    >
    >* Um ein komplettes gemischtes Medienset aus einem Anzeigemodus zu löschen (z. B. Karten- oder Spaltenansicht), navigieren Sie zum gemischten Medienset. Bewegen Sie den Mauszeiger über das Set und klicken Sie dann auf **[!UICONTROL Auswählen]** (Häkchensymbol). Drücken Sie die **[!UICONTROL Rücktaste]** oder klicken Sie auf **[!UICONTROL Mehr]** (Reihe von drei Punkten) und dann auf **[!UICONTROL Löschen]**.
-
 
 ## Zeigen Sie eine Vorschau der gemischten Mediensets an {#previewing-mixed-media-sets}
 

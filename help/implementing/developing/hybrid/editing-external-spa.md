@@ -2,10 +2,10 @@
 title: Bearbeiten einer externen SPA in AEM
 description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenständigen SPA in eine AEM-Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren des Authoring beschrieben.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2421'
-ht-degree: 48%
+source-wordcount: '2418'
+ht-degree: 49%
 
 ---
 
@@ -21,7 +21,7 @@ In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenstä
 
 Die Voraussetzungen sind einfach.
 
-* Stellen Sie sicher, dass eine Instanz von AEM lokal ausgeführt wird.
+* Stellen Sie sicher, dass eine AEM lokal ausgeführt wird.
 * Erstellen Sie ein AEM-SPA-Projekt mit [dem AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de#available-properties).
    * Forms bildet die Grundlage des AEM Projekts, das aktualisiert wird, um die externe SPA aufzunehmen.
    * Für die Beispiele in diesem Dokument verwendet Adobe den Ausgangspunkt von [das WKND-SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de#spa-editor).
@@ -53,7 +53,7 @@ Die `@adobe/aem-spa-page-model-manager` -Paket stellt die API zum Initialisieren
 
 #### Installation {#installation}
 
-Führen Sie Folgendes aus: `npm` -Befehl, damit Sie die erforderlichen Pakete installieren können.
+Führen Sie Folgendes aus: `npm` , damit Sie die erforderlichen Pakete installieren können.
 
 ```shell
 npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-manager @adobe/aem-react-editable-components
@@ -77,7 +77,7 @@ Die `initializationAsync` kann optional eine `options` -Objekt als Parameter:
 
 * `path` - Bei der Initialisierung wird das Modell vom definierten Pfad abgerufen und im `ModelStore` gespeichert. Dieser Pfad kann zum Abrufen der `rootModel` bei der Initialisierung, falls erforderlich.
 * `modelClient` - Ermöglicht die Bereitstellung eines benutzerdefinierten Clients, der für das Abrufen des Modells verantwortlich ist.
-* `model` - A `model` Objekt, das als Parameter übergeben wird, wird normalerweise ausgefüllt, wenn [Verwendung von SSR](/help/implementing/developing/hybrid/ssr.md).
+* `model` - A `model` -Objekt, das als Parameter übergeben wird, wird normalerweise ausgefüllt, wenn [Verwendung von SSR](/help/implementing/developing/hybrid/ssr.md).
 
 ### Bearbeitbare AEM-Blattkomponenten {#authorable-leaf-components}
 
@@ -111,7 +111,7 @@ Die `initializationAsync` kann optional eine `options` -Objekt als Parameter:
 
    ![Eigenschaften von Textkomponenten](assets/external-spa-text-properties.png)
 
-   Diese Werte werden als Eigenschaften an die neu erstellte `AEMText` React-Komponente und kann zum Rendern des Inhalts verwendet werden.
+   Diese Werte werden als Eigenschaften an die neu erstellte React-Komponente `AEMText` übergeben und können zum Rendern des Inhalts verwendet werden.
 
    ```javascript
    import React from 'react';
@@ -188,7 +188,7 @@ Die `AEMText`-Komponente kann jetzt in AEM bearbeitet werden.
 ### In AEM bearbeitbare Seiten {#aem-authorable-pages}
 
 1. Identifizieren Sie eine Seite, die zur Bearbeitung in der SPA hinzugefügt werden soll. In diesem Beispiel wird `/content/wknd-spa-react/us/en/home.html` verwendet.
-1. Erstellen Sie eine Datei (z. B. `Page.js`) für die bearbeitbare Seitenkomponente. die Seitenkomponente verwenden, die in `@adobe/cq-react-editable-components`.
+1. Datei erstellen (z. B. `Page.js`) für die bearbeitbare Seitenkomponente. die Seitenkomponente verwenden, die in `@adobe/cq-react-editable-components`.
 1. Wiederholen Sie Schritt 4 im Abschnitt [Bearbeitbare AEM-Blattkomponenten](#authorable-leaf-components). Verwenden Sie die Wrapper-Funktion `withMappable` für die Komponente.
 1. Wenden Sie wie zuvor `MapTo` auf die AEM-Ressourcentypen für alle untergeordneten Komponenten in der Seite an.
 
@@ -235,7 +235,7 @@ Die Komponente `TestPage` sieht nach dem Hinzufügen der virtuellen Komponente w
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass `AEMText` -Komponente `resourceType` in der Konfiguration festgelegt, damit Sie diese Funktion aktivieren können.
+>Stellen Sie die `AEMText` -Komponente hat `resourceType` in der Konfiguration festgelegt, damit Sie diese Funktion aktivieren können.
 
 Sie können jetzt die Änderungen an AEM entsprechend den Schritten im folgenden Abschnitt bereitstellen: [Überprüfen der Bearbeitung von Textinhalten in AEM](#verify-text-edit). Für die derzeit nicht vorhandene `text_20` Knoten.
 
@@ -316,7 +316,7 @@ Angenommen, Sie verfügen über eine SPA, in der die Anwendung in einem `div` El
 
    1. Erstellen Sie eine `body.html` für die Seitenkomponente.
 
-   ![Erstellen einer Datei &quot;body.html&quot;](assets/external-spa-update-body.gif)
+   ![Erstellen einer Datei body.html](assets/external-spa-update-body.gif)
 
    1. Fügen Sie das Stammelement in der neuen `body.html` -Datei.
 
@@ -343,11 +343,11 @@ Um die Bearbeitung in AEM für diese Beispiel-SPA zu aktivieren, sind die folgen
 
 1. Fügen Sie Helfer innerhalb des SPA-Routings hinzu.
 
-   * Die neu erstellte Seite kann den erwarteten Inhalt noch nicht in AEM rendern. Der Grund dafür ist, dass der Router einen Pfad von `/test` in der Erwägung, dass AEM aktive Pfad `/wknd-spa-react/us/en/test`. Um den AEM spezifischen Teil der URL aufzunehmen, müssen Sie einige Helfer auf der SPA hinzufügen.
+   * Die neu erstellte Seite kann den erwarteten Inhalt noch nicht in AEM rendern. Der Grund dafür ist, dass der Router einen Pfad von `/test` in der Erwägung, dass AEM aktive Pfad `/wknd-spa-react/us/en/test`. Um den AEM-spezifischen Teil der URL aufzunehmen, müssen Sie einige Helfer auf der SPA hinzufügen.
 
    ![Routing-Helfer](assets/external-spa-router-helper.png)
 
-   * Die `toAEMPath` Helfer bereitgestellt von `@adobe/cq-spa-page-model-manager` verwendet werden. Er wandelt den für das Routing bereitgestellten Pfad so um, dass er AEM-spezifische Teile enthält, wenn das Programm auf einer AEM-Instanz geöffnet ist. Es werden drei Parameter akzeptiert:
+   * Die `toAEMPath` Helper, bereitgestellt von `@adobe/cq-spa-page-model-manager` verwendet werden. Er wandelt den für das Routing bereitgestellten Pfad so um, dass er AEM-spezifische Teile enthält, wenn das Programm auf einer AEM-Instanz geöffnet ist. Es werden drei Parameter akzeptiert:
       * Der für das Routing erforderliche Pfad
       * Die ursprüngliche URL der AEM-Instanz, in der die SPA bearbeitet wird
       * Das Projektstammverzeichnis in AEM, wie im ersten Schritt festgelegt
@@ -356,7 +356,7 @@ Um die Bearbeitung in AEM für diese Beispiel-SPA zu aktivieren, sind die folgen
 
 1. Überprüfen Sie die Bearbeitung der Seite in AEM.
 
-   * Stellen Sie das Projekt in AEM bereit und navigieren Sie zur neu erstellten `test`-Seite. Der Seiteninhalt wird jetzt gerendert und die AEM-Komponenten können bearbeitet werden.
+   * Stellen Sie das Projekt AEM bereit und navigieren Sie zur neu erstellten `test` Seite. Der Seiteninhalt wird jetzt gerendert und die AEM-Komponenten können bearbeitet werden.
 
 ## Framework-Einschränkungen {#framework-limitations}
 

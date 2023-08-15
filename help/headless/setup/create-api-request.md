@@ -2,10 +2,10 @@
 title: Erstellen einer API-Anfrage – Headless-Einrichtung
 description: Erfahren Sie, wie Sie die GraphQL-API für die Headless-Bereitstellung von Inhaltsfragmentinhalten und die Assets-REST-API von AEM zur Verwaltung von Inhaltsfragmenten verwenden.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 63%
+source-wordcount: '651'
+ht-degree: 58%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie, wie Sie die GraphQL-API für die Headless-Bereitstellung von Inhal
 
 * [Die GraphQL-API](/help/headless/graphql-api/content-fragments.md) Ermöglicht die Erstellung von Anforderungen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten. Diese API bietet die zuverlässigsten Funktionen zum Abfragen und Verwenden von Inhaltsfragmentinhalten.
    * So verwenden Sie die API: [Endpunkte definieren und aktivieren in AEM](/help/headless/graphql-api/graphql-endpoint.md)und gegebenenfalls die [Installierte GraphiQL-Oberfläche](/help/headless/graphql-api/graphiql-ide.md).
-* Mit der [Assets-REST-API](/help/assets/content-fragments/assets-api-content-fragments.md) können Sie Inhaltsfragmente (und andere Assets) erstellen und ändern.
+* [Die Assets-REST-API](/help/assets/content-fragments/assets-api-content-fragments.md) ermöglicht das Erstellen und Ändern von Inhaltsfragmenten (und anderen Assets).
 
 Der Rest dieses Handbuchs konzentriert sich auf die Bereitstellung von GraphQL-Zugriff und Inhaltsfragmenten.
 
@@ -63,7 +63,7 @@ GraphiQL ist eine IDE, die in Ihrer AEM-Umgebung integriert ist; sie wird verfü
 
    ![GraphiQL-Editor](../assets/graphiql.png)
 
-1. Angenommen, das von Ihnen erstellte Modell wurde `person` mit Feldern `firstName`, `lastName`und `position`können Sie eine einfache Abfrage erstellen, um den Inhalt des Inhaltsfragments abzurufen.
+1. Angenommen, das von Ihnen erstellte Modell wurde `person` mit Feldern `firstName`, `lastName`, und `position`können Sie eine einfache Abfrage erstellen, um den Inhalt des Inhaltsfragments abzurufen.
 
    ```text
    query 

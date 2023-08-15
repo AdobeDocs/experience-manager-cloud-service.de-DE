@@ -2,10 +2,10 @@
 title: Replikation
 description: Erfahren Sie mehr über die Verteilung und Fehlerbehebung bei der Replikation in AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 46%
+source-wordcount: '1341'
+ht-degree: 45%
 
 ---
 
@@ -64,7 +64,7 @@ Alternativ können Sie ein Workflow-Modell erstellen, das die `Publish Content T
 1. Gehen Sie auf der Homepage von AEM as a Cloud Service zu **Tools > Workflow > Modelle**.
 1. Drücken Sie auf der Seite &quot;Workflow-Modelle&quot;die **Erstellen** in der oberen rechten Ecke des Bildschirms.
 1. Fügen Sie Ihrem Modell einen Titel und einen Namen hinzu. Weitere Informationen finden Sie unter [Erstellen von Workflow-Modellen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=de)..
-1. Wählen Sie das neu erstellte Modell aus der Liste aus und klicken Sie auf **Bearbeiten**.
+1. Wählen Sie das neu erstellte Modell aus der Liste aus und drücken Sie die Eingabetaste **Bearbeiten**
 1. Ziehen Sie im folgenden Fenster den Prozessschritt per Drag-and-Drop in den aktuellen Modellfluss:
 
    ![Prozessschritt](/help/operations/assets/processstep.png)

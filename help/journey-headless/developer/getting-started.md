@@ -2,10 +2,10 @@
 title: Erste Schritte mit AEM Headless as a Cloud Service
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Voraussetzungen für AEM Headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3084'
-ht-degree: 93%
+source-wordcount: '3080'
+ht-degree: 92%
 
 ---
 
@@ -82,10 +82,10 @@ Inhaltsfragmente enthalten strukturierten Inhalt und können im JSON-Format bere
 
 Um Inhalte „headless“ zu ändern, bietet AEM zwei robuste APIs.
 
-* Mit der GraphQL-API können Sie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellen.
+* Mit der GraphQL-API können Sie Anforderungen für den Zugriff auf Inhaltsfragmente und deren Bereitstellung erstellen.
 * Mit der Assets-REST-API können Sie Inhaltsfragmente (und andere Assets) erstellen und ändern.
 
-In einem späteren Teil der AEM Headless-Tour erfahren Sie mehr über diese APIs und deren Verwendung. Siehe [Zusätzliche Ressourcen](#additional-resources) unten für weitere Dokumentation.
+In einem späteren Teil der AEM Headless-Tour erfahren Sie mehr über diese APIs und deren Verwendung. Siehe [Zusätzliche Ressourcen](#additional-resources) unten finden Sie weitere Dokumentationen.
 
 ## Headless-Integrationsebenen {#integration-levels}
 
@@ -143,7 +143,7 @@ Für ein erfolgreiches Projekt ist es wichtig, nicht nur die Anforderungen des P
 
 ### Umfang {#scope}
 
-Es ist sehr wichtig, einen klar definierten Umfang für das Projekt zu haben. Der Umfang informiert über die Akzeptanzkriterien und ermöglicht es Ihnen, eine Definition von „erledigt“ festzulegen.
+Es ist sehr wichtig, einen klar definierten Umfang für das Projekt zu haben. Der Umfang informiert über die Akzeptanzkriterien und ermöglicht die Festlegung einer Definition des Erfüllten.
 
 Die erste Frage, die Sie sich stellen müssen, lautet: „Was versuche ich mit AEM Headless zu erreichen?“ Die Antwort sollte im Allgemeinen sein, dass Sie eine Erlebnisanwendung haben oder in Zukunft haben werden, die Sie mit Ihren eigenen Entwicklungs-Tools erstellt haben, nicht mit AEM. Bei dieser Erlebnisanwendung kann es sich um eine mobile App, eine Website oder eine andere Erlebnisanwendung für Endverbraucher handeln. Das Ziel der Verwendung von AEM Headless besteht darin, Ihre Erlebnisanwendung mit Inhalten zu versorgen, die in AEM erstellt, gespeichert und verwaltet werden, mit hochmodernen APIs, die AEM Headless aufrufen, um Inhalte oder sogar vollständige CRUD-Inhalte direkt aus Ihrer Erlebnisanwendung abzurufen. Wenn dies nicht das ist, was Sie tun möchten, sollten Sie [zurück zur AEM-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de) gehen und den Abschnitt finden, der besser zu dem passt, was Sie erreichen möchten.
 
@@ -199,7 +199,7 @@ Ordner können auch darauf beschränkt werden, nur bestimmte Inhaltstypen zuzula
 * verhindert, dass Inhaltsautoren Inhalte erstellen, die nicht zum Ordner gehören,
 * optimiert den Inhaltserstellungsprozess, indem die Inhaltstypen gefiltert werden, die im Ordner während der Erstellung zulässig sind, sodass nur gültige Inhaltstypen angezeigt werden.
 
-Durch die Erstellung einer geeigneten Inhaltsstruktur wird es einfacher, das Headless-Content-Authoring kanalübergreifend zu koordinieren, sodass Sie die Wiederverwendung von Inhalten maximieren können. Durch die Nutzung von Inhalten über mehrere Kanäle wird die Effizienz der Inhaltserstellung und das Änderungs-Management erheblich verbessert.
+Durch die Erstellung einer geeigneten Inhaltsstruktur wird es einfacher, das Headless Content Authoring kanalübergreifend zu koordinieren, sodass Sie die Wiederverwendung von Inhalten maximieren können. Durch die Nutzung von Inhalten über mehrere Kanäle wird die Effizienz der Inhaltserstellung und das Änderungs-Management erheblich verbessert.
 
 ##### Einrichten guter Benennungskonventionen {#naming-conventions}
 
@@ -259,7 +259,7 @@ Um Traffic und Traffic-Muster zu verstehen, beginnen Sie mit dem Sammeln dessen,
 
 #### Aktualisierungshäufigkeit {#update-frequency}
 
-Oft haben verschiedene Bereiche von Erlebnissen unterschiedliche Häufigkeiten von Inhaltsaktualisierungen. Um CDN- und Cache-Konfigurationen optimieren zu können, ist es wichtig, dies zu verstehen. Dies ist auch ein wichtiger Input für die [Inhaltsarchitekten](#content-architects), da sie Modelle zur Darstellung Ihrer Inhalte entwerfen. Ziehen Sie dies in Betracht:
+Oft haben verschiedene Bereiche von Erlebnissen unterschiedliche Häufigkeiten von Inhaltsaktualisierungen. Um CDN- und Cache-Konfigurationen anpassen zu können, ist es wichtig, dies zu verstehen. Dies ist auch ein wichtiger Input für die [Inhaltsarchitekten](#content-architects), da sie Modelle zur Darstellung Ihrer Inhalte entwerfen. Ziehen Sie dies in Betracht:
 
 * Müssen bestimmte Inhaltstypen nach einem bestimmten Zeitraum ablaufen?
 * Gibt es Elemente, die benutzerspezifisch sind und daher nicht zwischengespeichert werden können?

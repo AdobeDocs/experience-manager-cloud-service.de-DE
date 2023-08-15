@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4140'
-ht-degree: 82%
+source-wordcount: '4137'
+ht-degree: 80%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 82%
 
 ![data-integration](do-not-localize/data-integeration.png)
 
-Der Formulardatenmodelleditor bietet eine intuitive Benutzeroberfläche sowie Tools zum Bearbeiten und Konfigurieren eines Formulardatenmodells. Mithilfe des Editors können Sie Datenmodellobjekte, Eigenschaften und Services aus verknüpften Datenquellen im Formulardatenmodell hinzufügen und konfigurieren. Darüber hinaus können Sie Datenmodellobjekte und -eigenschaften ohne Datenquellen erstellen und später mit entsprechenden Datenmodellobjekten und -eigenschaften verbinden. Sie können auch Beispieldaten für Datenmodellobjekteigenschaften generieren und bearbeiten, die Sie zum Vorbefüllen adaptiver Formulare <!--and interactive communications--> und interaktiver Kommunikation während der Vorschau verwenden können. Sie können Datenmodellobjekte und Services testen, die in einem Formulardatenmodell konfiguriert sind, um sicherzustellen, dass sie ordnungsgemäß in Datenquellen integriert sind.
+Der Formulardatenmodelleditor bietet eine intuitive Benutzeroberfläche sowie Tools zum Bearbeiten und Konfigurieren eines Formulardatenmodells. Mithilfe des Editors können Sie Datenmodellobjekte, Eigenschaften und Services aus verknüpften Datenquellen im Formulardatenmodell hinzufügen und konfigurieren. Darüber hinaus können Sie Datenmodellobjekte und Eigenschaften ohne Datenquellen erstellen und sie später mit den entsprechenden Datenmodellobjekten und Eigenschaften verknüpfen. Sie können auch Beispieldaten für Datenmodellobjekteigenschaften generieren und bearbeiten, die Sie zum Vorbefüllen adaptiver Formulare <!--and interactive communications--> und interaktiver Kommunikation während der Vorschau verwenden können. Sie können Datenmodellobjekte und Services testen, die in einem Formulardatenmodell konfiguriert sind, um sicherzustellen, dass sie ordnungsgemäß in Datenquellen integriert sind.
 
 Wenn Sie mit der Forms-Datenintegration noch nicht vertraut sind und keine Datenquelle konfiguriert oder kein Formulardatenmodell erstellt haben, lesen Sie folgende Themen:
 
@@ -72,7 +72,7 @@ Hinzufügen von Datenmodellobjekten und Services:
    >
    >Das OData-Service-Metadatendokument enthält außer den Datenmodellobjekten und Services Navigationseigenschaften, die die Verknüpfung zwischen zwei Datenmodellobjekten definieren. Weitere Informationen finden Sie unter [Arbeiten mit Navigationseigenschaften von OData-Services](#work-with-navigation-properties-of-odata-services).
 
-1. Tippen **[!UICONTROL Speichern]** , um das Formularmodellobjekt zu speichern.
+1. Tippen **[!UICONTROL Speichern]** zum Speichern des Formularmodellobjekts.
 
    >[!NOTE]
    >
@@ -96,7 +96,7 @@ Als Nächstes können Sie untergeordnete Eigenschaften in ungebundenen Datenmode
 
 ### Hinzufügen von untergeordneten Eigenschaften {#child-properties}
 
-Mit dem Formulardatenmodelleditor können Sie untergeordnete Eigenschaften in einem Datenmodellobjekt erstellen. Die Eigenschaft ist bei der Erstellung an keine Eigenschaft in einer Datenquelle gebunden. Sie können die untergeordnete Eigenschaft später mit einer anderen Eigenschaft im übergeordneten Datenmodellobjekt verknüpfen.
+Mit dem Formulardatenmodell-Editor können Sie untergeordnete Eigenschaften in einem Datenmodellobjekt erstellen. Die Eigenschaft ist bei der Erstellung an keine Eigenschaft in einer Datenquelle gebunden. Sie können die untergeordnete Eigenschaft später mit einer anderen Eigenschaft im übergeordneten Datenmodellobjekt verknüpfen.
 
 Erstellen einer untergeordneten Eigenschaft:
 
@@ -273,12 +273,12 @@ So fügen Sie eine Verknüpfung hinzu:
 
    Tippen **[!UICONTROL Fertig]** , um das -Argument zu speichern.
 
-1. Tippen **[!UICONTROL Fertig]** , um die Zuordnung zu speichern, und dann **[!UICONTROL Speichern]** , um das Formulardatenmodell zu speichern.
+1. Tippen **[!UICONTROL Fertig]** zum Speichern der Zuordnung und dann **[!UICONTROL Speichern]** , um das Formulardatenmodell zu speichern.
 1. Wiederholen Sie die Schritte, um nach Bedarf weitere Zuordnungen zu erstellen.
 
 >[!NOTE]
 >
->Die hinzugefügte Verknüpfung wird im Objektfeld des Datenmodells mit dem angegebenen Titel und einer Linie angezeigt, die die verknüpften Datenmodellobjekte verbindet.
+>Die hinzugefügte Verknüpfung wird im Objektfeld des Datenmodells mit dem angegebenen Titel und einer Zeile angezeigt, die die verknüpften Datenmodellobjekte verbindet.
 >
 >Sie können eine Verknüpfung bearbeiten, indem Sie das Kontrollkästchen neben der Verknüpfung auswählen und auf **[!UICONTROL Verknüpfung bearbeiten]** tippen.
 
@@ -319,7 +319,7 @@ Beispielsweise können Sie eine berechnete Eigenschaft **FullName** erstellen, d
    ![calculate-prop](assets/computed-prop.png)
 
 1. Wählen Sie die FullName-Eigenschaft aus und tippen Sie auf **[!UICONTROL Regel bearbeiten]**. Ein Fenster des Regeleditors wird geöffnet.
-1. Tippen Sie im Fenster des Regeleditors auf **[!UICONTROL Erstellen]**. A **[!UICONTROL Wert einstellen]** Regelfenster geöffnet.
+1. Tippen Sie im Fenster des Regeleditors auf **[!UICONTROL Erstellen]**. A **[!UICONTROL Wert einstellen]** Das Regelfenster wird geöffnet.
 
    Wählen Sie in der Dropdownliste **[!UICONTROL Mathematischer Ausdruck]**. Weitere verfügbare Optionen sind **[!UICONTROL Formulardatenmodell-Objekt]** und **[!UICONTROL Zeichenfolge]**.
 
@@ -387,7 +387,7 @@ Darüber hinaus können Sie beim Hinzufügen von Verknüpfungen im Formulardaten
 
 ## Generieren und Bearbeiten von Beispieldaten {#sample}
 
-Mit dem Formulardatenmodelleditor können Sie Beispieldaten für alle Datenmodellobjekt-Eigenschaften, einschließlich berechneter Eigenschaften, in einem Formulardatenmodell generieren. Es handelt sich um einen Satz zufälliger Werte, die dem für jede Eigenschaft konfigurierten Datentyp entsprechen. Sie können auch Daten bearbeiten und speichern, die auch dann beibehalten werden, wenn Sie die Beispieldaten neu generieren.
+Mit dem Formulardatenmodell-Editor können Sie Beispieldaten für alle Datenmodellobjekteigenschaften, einschließlich berechneter Eigenschaften, in einem Formulardatenmodell generieren. Es handelt sich um einen Satz zufälliger Werte, die dem für jede Eigenschaft konfigurierten Datentyp entsprechen. Sie können auch Daten bearbeiten und speichern, die auch dann beibehalten werden, wenn Sie die Beispieldaten neu generieren.
 
 Gehen Sie wie folgt vor, um Beispieldaten zu generieren und zu bearbeiten:
 
@@ -425,7 +425,7 @@ Das Flag kann auf einen der folgenden Werte eingestellt werden:
 
 * **VOLLSTÄNDIG**: FDM führt die Validierung anhand aller Begrenzungen durch
 * **OFF**: Keine Validierung
-* **GRUNDLAGE**: FDM führt die Validierung basierend auf den Begrenzungen &quot;erforderlich&quot;und &quot;nullbar&quot;durch
+* **GRUNDLAGE**: FDM führt die Validierung basierend auf den Begrenzungen &quot;erforderlich&quot;und &quot;null&quot;durch.
 
 Wenn für das `ValidationOptions`-Flag kein Wert festgelegt ist, wird für die Eingabedaten eine **EINFACH**-Validierung durchgeführt.
 

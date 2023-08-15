@@ -1,14 +1,14 @@
 ---
 title: Konfigurieren von Data Sources
-description: Mit der Experience Manager Forms-Datenintegration können Sie unterschiedliche Datenquellen konfigurieren und Verbindungen zu ihnen herstellen. Erfahren Sie, wie Sie RESTful-Webservices, SOAP-basierte Webservices und OData-Services als Datenquellen konfigurieren und diese zum Erstellen von Formulardatenmodellen verwenden.
+description: Mit der Experience Manager Forms-Datenintegration können Sie unterschiedliche Datenquellen konfigurieren und eine Verbindung zu ihnen herstellen. Erfahren Sie, wie Sie RESTful-Webservices, SOAP-basierte Webservices und OData-Services als Datenquellen konfigurieren und diese zum Erstellen von Formulardatenmodellen verwenden.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2212'
-ht-degree: 98%
+source-wordcount: '2210'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 98%
 
 ![Datenintegration](do-not-localize/data-integeration.png)
 
-Mit der [!DNL Experience Manager Forms]-Datenintegration können Sie unterschiedliche Datenquellen konfigurieren und Verbindungen zu ihnen herstellen. Die folgenden Datenquellen werden standardmäßig unterstützt:
+[!DNL Experience Manager Forms] Mit der Datenintegration können Sie unterschiedliche Datenquellen konfigurieren und eine Verbindung zu ihnen herstellen. Die folgenden Datenquellen werden standardmäßig unterstützt:
 
 * Relationale Datenbanken – MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2] und [!DNL Oracle RDBMS]
 * RESTful-Webservices

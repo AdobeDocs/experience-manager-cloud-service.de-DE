@@ -2,10 +2,10 @@
 title: Varianten – Erstellen von Fragmentinhalten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit Varianten Ihre Headless-Inhalte in AEM noch flexibler gestalten können. Sie können damit Inhalte für ein Fragment und dann entsprechend dem jeweiligen Verwendungszweck Varianten dieses Inhalts erstellen.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2438'
-ht-degree: 79%
+source-wordcount: '2435'
+ht-degree: 78%
 
 ---
 
@@ -114,7 +114,7 @@ Das Format kann im Vollbild-Editor ausgewählt werden.
 
 ### Rich-Text {#rich-text}
 
-Mit der Rich-Text-Bearbeitung können Sie Folgendes formatieren:
+Die Rich-Text-Bearbeitung ermöglicht das Formatieren:
 
 * Fett
 * Kursiv
@@ -126,7 +126,7 @@ Mit der Rich-Text-Bearbeitung können Sie Folgendes formatieren:
 * Hyperlinks erstellen/unterbrechen
 * Text/aus Word einfügen
 * Tabelle einfügen
-* Absatzstil: Absatz 1 Überschrift 1/2/3
+* Absatzformat: Absatz, Überschrift 1/2/3
 * [Asset einfügen](#inserting-assets-into-your-fragment)
 * Öffnen Sie den Vollbild-Editor, in dem die folgenden Formatierungsoptionen zur Verfügung stehen:
    * Suchen
@@ -306,7 +306,7 @@ So kommentieren Sie ein Fragment:
 
 Anmerkungen:
 
-* Sie werden durch die Markierung auf dem Text sowohl im Vollbildmodus als auch im normalen Modus des Editors angezeigt. Vollständige Details einer Anmerkung können angezeigt, bearbeitet und/oder gelöscht werden, indem Sie auf den markierten Text klicken, der das Dialogfeld erneut öffnet.
+* Sie werden durch die Markierung auf dem Text sowohl im Vollbildmodus als auch im normalen Modus des Editors angezeigt. Vollständige Details einer Anmerkung können angezeigt, bearbeitet und/oder gelöscht werden, indem Sie auf den hervorgehobenen Text klicken, um das Dialogfeld erneut zu öffnen.
 
   >[!NOTE]
   >
@@ -324,7 +324,7 @@ Anmerkungen:
 
 Um die Erstellung von Inhaltsfragmenten zu vereinfachen, können Sie [Assets](/help/assets/manage-digital-assets.md) (Bilder) direkt zum Fragment hinzufügen.
 
-Sie werden der Absatzsequenz des Fragments ohne Formatierung hinzugefügt. Formatierung kann durchgeführt werden, wenn die [Fragment wird auf einer Seite verwendet/referenziert](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+Sie werden der Absatzsequenz des Fragments ohne Formatierung hinzugefügt. Formatierungen können vorgenommen werden, wenn die [Fragment wird auf einer Seite verwendet/referenziert](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -353,7 +353,7 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
    >[!CAUTION]
    >
    Wenn Sie nach dem Hinzufügen eines Assets das Format ändern in:
-   * **Nur Text**: Das Asset geht vollständig aus dem Fragment verloren.
+   * **Nur Text**: Das Asset geht im Fragment vollständig verloren.
    * **Markdown:** Das Asset wird nicht angezeigt, ist aber immer noch vorhanden, wenn Sie zu **Rich Text** zurückkehren.
 
 ### Einfügen eines Inhaltsfragments in ein Fragment {#inserting-content-fragment-into-your-fragment}
@@ -393,7 +393,7 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
    >[!CAUTION]
    >
    Wenn Sie nach dem Hinzufügen einer Referenz zu einem anderem Fragment das Format ändern, könnte folgendes auftreten:
-   * **Nur Text**: der Verweis im Fragment vollständig verloren geht.
+   * **Nur Text**: Die Referenz geht im Fragment vollständig verloren.
    * **Markdown**: Die Referenz bleibt bestehen.
 
 ## Verwalten von Varianten {#managing-variations}
@@ -408,7 +408,7 @@ So erstellen Sie eine neue Variante:
 1. Wählen Sie im seitlichen Bedienfeld in der Symbolleiste die Option **Varianten** aus.
 1. Auswählen **Variante erstellen**.
 1. Daraufhin wird ein Dialogfeld geöffnet, in dem der **Titel** und die **Beschreibung** für die neue Variante angegeben werden.
-1. Auswählen **Hinzufügen**; das Fragment **Übergeordnet** wird in die neue Variante kopiert, die jetzt für [Bearbeiten](#editing-a-variation).
+1. Auswählen **Hinzufügen**; das Fragment **Master** wird in die neue Variante kopiert, die jetzt für [Bearbeiten](#editing-a-variation).
 
    >[!NOTE]
    >
@@ -433,7 +433,7 @@ So benennen Sie eine vorhandene Variante um:
 
 1. Öffnen Sie das Fragment und wählen Sie über den Seitenbereich die Option **Varianten** aus.
 1. Wählen Sie die gewünschte Variante aus.
-1. Auswählen **Umbenennen** von **Aktionen** Dropdown-Liste.
+1. Auswählen **Umbenennen** aus dem **Aktionen** angezeigt.
 
 1. Geben Sie im Dialogfeld den neuen **Titel** und/oder die **Beschreibung** ein.
 
@@ -449,7 +449,7 @@ So löschen Sie eine vorhandene Variante:
 
 1. Öffnen Sie das Fragment und wählen Sie über den Seitenbereich die Option **Varianten** aus.
 1. Wählen Sie die gewünschte Variante aus.
-1. Auswählen **Löschen** von **Aktionen** Dropdown-Liste.
+1. Auswählen **Löschen** aus dem **Aktionen** angezeigt.
 
 1. Bestätigen Sie im Dialogfeld die Aktion **Löschen**.
 
@@ -461,7 +461,7 @@ So löschen Sie eine vorhandene Variante:
 
 **Primäre Version** ist ein wesentlicher Bestandteil eines Inhaltsfragments und enthält die primäre Version des Inhalts, während die Varianten einzelne aktualisierte und maßgeschneiderten Versionen des Inhalts enthalten. Wenn die primäre Version aktualisiert wird, können diese Änderungen auch für die Varianten relevant sein und müssen daher auf diese übertragen werden.
 
-Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisierung des aktuellen Elements der Variante mit der primären Version. Dadurch können Sie an der primären Version vorgenommene Änderungen automatisch in die entsprechende Variante kopieren.
+Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisierung des aktuellen Elements der Variante mit der primären Version. Auf diese Weise können Sie Änderungen, die an Master vorgenommen wurden, automatisch in die gewünschte Variante kopieren.
 
 >[!CAUTION]
 >
@@ -477,7 +477,7 @@ Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Versio
 
 1. Wählen Sie eine bestimmte Variante und dann die entsprechende Synchronisierungsaktion aus:
 
-   * die **Aktionen** Dropdown-Auswahl - **Aktuelles Element mit Übergeordneten Elementen synchronisieren**
+   * die **Aktionen** Dropdown-Auswahl - **Aktuelles Element mit Master synchronisieren**
 
      ![Mit primärer Version synchronisieren](assets/cfm-variations-11a.png)
 
@@ -485,7 +485,7 @@ Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Versio
 
      ![Mit primärer Version synchronisieren](assets/cfm-variations-11b.png)
 
-1. Übergeordnet und die Variante wird nebeneinander angezeigt:
+1. Master und Variante werden nebeneinander angezeigt:
 
    * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt wurde
    * Rot zeigt an, dass Inhalt entfernt wurde (aus der Variante)

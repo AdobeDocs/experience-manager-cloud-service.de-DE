@@ -2,10 +2,10 @@
 title: Konfigurieren von Übersetzungsregeln für Headless-Inhalte
 description: Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 96%
+source-wordcount: '941'
+ht-degree: 95%
 
 ---
 
@@ -69,14 +69,14 @@ Es gibt eine **Übersetzungskonfigurations**-Konsole, die zum Konfigurieren von 
 
 In der Benutzeroberfläche der **Übersetzungskonfiguration** gibt es eine Reihe von Optionen für Ihre Übersetzungsregeln. Hier werden die wichtigsten und typischsten Schritte hervorgehoben, die für eine einfache Headless-Lokalisierungskonfiguration erforderlich sind.
 
-1. Tippen oder klicken Sie auf **Kontext hinzufügen**, damit Sie einen Pfad hinzufügen können. Dies ist der Pfad der Inhalte, die von der Regel betroffen sind.
+1. Tippen oder klicken **Kontext hinzufügen**, mit dem Sie einen Pfad hinzufügen können. Dies ist der Pfad der Inhalte, die von der Regel betroffen sind.
    ![Kontext hinzufügen](assets/add-translation-context.png)
 1. Verwenden Sie den Pfad-Browser, um den erforderlichen Pfad auszuwählen, und tippen oder klicken Sie zum Speichern auf die Schaltfläche **Bestätigen**. Denken Sie daran, dass Inhaltsfragmente, die Headless-Inhalte enthalten, sich im Allgemeinen unter `/content/dam/<your-project>` befinden.
    ![Pfad auswählen](assets/select-context.png)
 1. AEM speichert die Konfiguration.
 1. Sie müssen den soeben erstellten Kontext auswählen und dann auf **Bearbeiten** tippen oder klicken. Dadurch wird der **Editor für Übersetzungsregeln** geöffnet, in dem die Eigenschaften konfiguriert werden können.
    ![Editor für Übersetzungsregeln](assets/translation-rules-editor.png)
-1. Standardmäßig werden alle Konfigurationen vom übergeordneten Pfad übernommen, in diesem Fall `/content/dam`. Deaktivieren Sie die Option . **Vererben von`/content/dam`** , damit Sie der Konfiguration zusätzliche Felder hinzufügen können.
+1. Standardmäßig werden alle Konfigurationen vom übergeordneten Pfad übernommen, in diesem Fall `/content/dam`. Deaktivieren Sie die Option **Vererben von`/content/dam`** , damit Sie der Konfiguration zusätzliche Felder hinzufügen können.
 1. Ist diese Option deaktiviert, fügen Sie im Abschnitt **Allgemein** der Liste die Eigenschaftsnamen der Inhaltsfragmentmodelle hinzu, die Sie [zuvor als zu übersetzende Felder identifiziert haben.](getting-started.md#content-models)
    1. Geben Sie den Eigenschaftsnamen im Feld **Neue Eigenschaft** ein.
    1. Die Optionen **Übersetzen** und **Übernehmen** werden automatisch aktiviert.

@@ -3,9 +3,9 @@ title: „Benutzeroberfläche von [!DNL Assets view]“
 description: Grundlegendes zur Benutzeroberfläche von und Navigation in [!DNL Assets view].
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: 6cb30ffda6c0de04e5cb3d01341b59c9ee75b335
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '895'
 ht-degree: 88%
 
 ---
@@ -46,8 +46,8 @@ Sie können die Ordner über die Hauptbenutzeroberfläche oder die linke Seitenl
 * **Kürzlich angesehen**: Liste der Assets, die Sie kürzlich in der Vorschau betrachtet haben. [!DNL Assets view] zeigt nur die Assets an, die Sie in der Vorschau anzeigen. Hier werden die Assets, an denen Sie beim Durchsuchen der Repository-Dateien oder -Ordner vorbeiscrollen, nicht angezeigt.
 * [Sammlungen](/help/assets/manage-collections-assets-view.md): Eine Sammlung ist ein Satz von Assets, Ordnern oder anderen Sammlungen in der Adobe Experience Manager Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzenden gemeinsam verwendet werden. Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten. Sie können mehrere Sammlungen für eine Benutzerin bzw. einen Benutzer freigeben. Jede Sammlung enthält Verweise auf Assets. Die referenzielle Integrität von Assets wird sammlungsübergreifend aufrechterhalten.
 
-* [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics): In [!DNL Assets view] können Sie Echtzeiteinblicke in Ihrem Dashboard anzeigen. Mit der Asset-Ansicht können Sie Echtzeitdaten für Ihre Assets-Ansichtsumgebung mit dem Insights-Dashboard anzeigen. Sie können Echtzeit-Ereignismetriken während der letzten 30 Tage oder für die letzten 12 Monate anzeigen.
-* **Papierkorb**: Enthält eine Liste der Assets, die aus dem Stammordner **[!UICONTROL Assets]** gelöscht wurden. Sie können ein Asset im Papierkorb-Ordner auswählen, um es entweder am ursprünglichen Speicherort wiederherzustellen oder dauerhaft zu löschen. Sie können auch ein Keyword angeben oder standardmäßige oder benutzerdefinierte Filter anwenden, um geeignete Assets im Ordner &quot;Papierkorb&quot;zu suchen. Weitere Informationen zur Verwendung von standardmäßigen und benutzerdefinierten Filtern finden Sie unter [Suchen von Assets in der Asset-Ansicht](/help/assets/search-assets-view.md).
+* [Erkenntnisse](/help/assets/manage-reports-assets-view.md#view-live-statistics): In [!DNL Assets view] können Sie Echtzeiterkenntnisse in Ihrem Dashboard anzeigen. Mit der Asset-Ansicht können Sie Echtzeitdaten für Ihre Assets-Ansichtsumgebung mit dem Insights-Dashboard anzeigen. Sie können Echtzeit-Ereignismetriken während der letzten 30 Tage oder für die letzten 12 Monate anzeigen.
+* **Papierkorb**: Enthält eine Liste der Assets, die aus dem Stammordner **[!UICONTROL Assets]** gelöscht wurden. Sie können ein Asset im Papierkorb-Ordner auswählen, um es entweder am ursprünglichen Speicherort wiederherzustellen oder dauerhaft zu löschen. Sie können auch ein Keyword angeben oder standardmäßige bzw. benutzerdefinierte Filter anwenden, um nach geeigneten Assets im Papierkorb-Ordner zu suchen. Weitere Informationen zur Verwendung von standardmäßigen und benutzerdefinierten Filtern finden Sie unter [Suchen von Assets in der Asset-Ansicht](/help/assets/search-assets-view.md).
 * **Einstellungen**: Sie können verschiedene Optionen der Asset-Ansicht mit **Einstellungen**, wie Metadatenformulare, Berichte und Taxonomieverwaltung.
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
@@ -78,7 +78,7 @@ Um in einen Ordner zu gelangen, doppelklicken Sie auf die Miniaturansichten des 
 
 Bevor Sie ein Asset verwenden, freigeben oder herunterladen, können Sie es sich genauer ansehen. Mit der Vorschaufunktion können Sie nicht nur die Bilder, sondern auch einige andere unterstützte Asset-Typen anzeigen.
 
-Um ein Asset in der Vorschau anzuzeigen, wählen Sie es aus und klicken Sie oben in der Symbolleiste auf [!UICONTROL Details] ![details icon](assets/do-not-localize/edit-in-icon.png). Sie können nicht nur das Asset, sondern auch seine detaillierten Metadaten anzeigen und andere Aktionen durchführen.
+Um ein Asset in der Vorschau anzuzeigen, wählen Sie es aus und klicken Sie oben in der Symbolleiste auf [!UICONTROL Details] ![details icon](assets/do-not-localize/edit-in-icon.png). Sie können das Asset nicht nur anzeigen, sondern auch die detaillierten Metadaten anzeigen und andere Aktionen durchführen.
 
 ![Anzeigen einer Vorschau für ein Asset](assets/preview-asset-2.png)
 
@@ -114,7 +114,7 @@ Other use cases after previewing.
 
 ## Nächste Schritte {#next-steps}
 
-* Stellen Sie Produkt-Feedback mit der [!UICONTROL Feedback] Option in der Benutzeroberfläche der Assets-Ansicht verfügbar
+* Stellen Sie mithilfe der [!UICONTROL Feedback] Option in der Benutzeroberfläche der Assets-Ansicht verfügbar
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 

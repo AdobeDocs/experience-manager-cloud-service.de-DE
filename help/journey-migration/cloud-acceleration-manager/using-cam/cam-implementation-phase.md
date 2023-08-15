@@ -2,10 +2,10 @@
 title: Implementierungsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Implementierungsphase in Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 34%
+source-wordcount: '661'
+ht-degree: 31%
 
 ---
 
@@ -33,7 +33,7 @@ Die Karte Lokale Entwicklung bietet alle relevanten Inhalte, die Ihnen bei der E
 
 Gehen Sie wie in diesem Abschnitt beschrieben vor, um die Karte für die Aktivität &quot;Lokale Entwicklung&quot;zu erkunden:
 
-1. Klicken **Ansicht** von **Lokale Entwicklung** Karte.
+1. Klicks **Ansicht** aus dem **Lokale Entwicklung** Karte.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
 
@@ -48,7 +48,7 @@ Die Karte für die Code-Refaktorierungs-Aktivität enthält alle relevanten Info
 
 Gehen Sie wie in diesem Abschnitt beschrieben vor, um die Karte der Code-Refaktorierungs-Aktivität zu erkunden:
 
-1. Klicken **Überprüfen** von **Code-Umgestaltung** Aktivitätskarte.
+1. Klicks **Überprüfen** aus dem **Code-Umgestaltung** Aktivitätskarte.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
 
@@ -78,7 +78,7 @@ AEM as a Cloud Service Bereitstellungskarte enthält alle relevanten Inhalte, mi
 
 Gehen Sie wie in diesem Abschnitt beschrieben vor, um AEM Karte der as a Cloud Service Bereitstellungskarte zu sehen:
 
-1. Klicken **Ansicht** von **AEM as a Cloud Service Bereitstellung** Aktivitätskarte.
+1. Klicks **Ansicht** aus dem **AEM as a Cloud Service Bereitstellung** Aktivitätskarte.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 
@@ -89,15 +89,15 @@ Gehen Sie wie in diesem Abschnitt beschrieben vor, um AEM Karte der as a Cloud S
 
 ## Verwenden der Karte „Inhaltstransfer“ {#content-transfer}
 
-Mit der Karte „Inhaltstransfer“ können Sie den Inhaltstransfer von Ihrer aktuellen AEM zu AEM as a Cloud Service starten und verwalten.
+Mit der Karte Inhaltstransfer können Sie den Inhaltstransfer von Ihrer aktuellen AEM auf AEM as a Cloud Service starten und verwalten.
 
 Folgen Sie diesem Abschnitt, damit Sie die Karte der Aktivität Inhaltstransfer erkunden können:
 
-1. Klicken **Überprüfen** von **Inhaltstransfer** Aktivitätskarte.
+1. Klicks **Überprüfen** aus dem **Content Transfer** Aktivitätskarte.
 
    ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
-1. Um einen Inhaltstransfer zu starten, müssen Sie einen Migrationssatz erstellen. Klicken **Migrationssatz erstellen**. Ein Migrationssatz ermöglicht die Übertragung von Inhalten zu AEM as a Cloud Service.
+1. Um einen Inhaltstransfer zu starten, müssen Sie einen Migrationssatz erstellen. Klicks **Migrationssatz erstellen**. Ein Migrationssatz ermöglicht die Übertragung von Inhalten zu AEM as a Cloud Service.
 
    ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
@@ -109,7 +109,7 @@ Folgen Sie diesem Abschnitt, damit Sie die Karte der Aktivität Inhaltstransfer 
 
 1. Laden Sie das Content Transfer Tool herunter und installieren Sie es, um den Migrationssatz zu füllen und die Extraktionsphase der Inhaltstransfer abzuschließen. Lesen Sie [Erste Schritte mit dem Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de), um zu erfahren, wie man das Content Transfer Tool verwendet.
 
-1. Um as a Cloud Service Inhalte aus dem Migrationssatz in eine Umgebung aufzunehmen, müssen Sie eine Aufnahme starten. Navigieren Sie zu **Aufnahmevorgänge** und klicken Sie auf **Neue Erfassung**. Überprüfen [Erfassen von Inhalten in Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=de) damit Sie lernen können, wie Sie die Aufnahmephase der Inhaltstransfer abschließen.
+1. Um as a Cloud Service Inhalte aus dem Migrationssatz in eine Umgebung aufzunehmen, müssen Sie eine Aufnahme starten. Navigieren Sie zu **Aufnahmevorgänge** und klicken **Neue Erfassung**. Überprüfen [Erfassen von Inhalten in Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=de) damit Sie lernen können, wie Sie die Aufnahmephase der Inhaltstransfer abschließen.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
@@ -128,4 +128,4 @@ You can also estimate the size of specific repository paths by using the `path` 
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie gelernt haben, wie Sie sich bei Cloud Acceleration Manager anmelden und wie Sie die Implementierungsphase verwenden, können Sie den nächsten Schritt im Abschnitt [Live-Phase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html).
+Nachdem Sie gelernt haben, wie Sie sich bei Cloud Acceleration Manager anmelden und wie Sie die Implementierungsphase verwenden, können Sie den nächsten Schritt im [Live-Phase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html).

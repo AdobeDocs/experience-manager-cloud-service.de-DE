@@ -2,10 +2,10 @@
 title: Inhaltserstellung mit dem universellen Editor
 description: Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: e03bf6437b72a4fe7e959a23f12f0baa892fa567
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2271'
-ht-degree: 30%
+source-wordcount: '2266'
+ht-degree: 29%
 
 ---
 
@@ -74,7 +74,7 @@ Dadurch wird die Organisation angezeigt, bei der Sie sich derzeit angemeldet hab
 
 #### Lösungen {#solutions}
 
-Durch Tippen oder Klicken auf den Lösungsumschalter können Sie schnell zu anderen Experience Cloud-Lösungen wechseln.
+Durch Tippen oder Klicken auf den Lösungsschalter können Sie schnell zu anderen Experience Cloud-Lösungen wechseln.
 
 ![Lösungsumschalter](assets/solutions.png)
 
@@ -217,7 +217,7 @@ Wenn Sie ein Inhaltsfragment auswählen, werden die Details in der Komponentenle
 
 Der Editor belegt den Großteil des Fensters und ist dort, wo die Seite angegeben ist in [die Standortleiste](#location-bar) wird gerendert.
 
-* Wenn sich der Editor in einem Bearbeitungsmodus befindet, z. B. [Textmodus](#text-mode) oder [Medienmodus,](#media-mode) Der Inhalt kann bearbeitet werden, Sie können jedoch keine Links folgen.
+* Wenn sich der Editor in einem Bearbeitungsmodus befindet, z. B. [Textmodus](#text-mode) oder [Medienmodus,](#media-mode) der Inhalt kann bearbeitet werden, Sie können jedoch nicht auf Links folgen.
 * Wenn sich der Editor in [Vorschaumodus](#preview-mode) Der Inhalt kann navigiert werden und Sie können Links folgen, den Inhalt kann jedoch nicht bearbeitet werden.
 
 ![Bearbeiter](assets/editor.png)

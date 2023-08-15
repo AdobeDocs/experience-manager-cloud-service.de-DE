@@ -1,9 +1,9 @@
 ---
 title: Konfigurieren der Massenbearbeitung von Seiteneigenschaften
 description: Erfahren Sie, wie Sie die Massenbearbeitung konfigurieren, damit Sie die Eigenschaften mehrerer Seiten gleichzeitig bearbeiten können.
-source-git-commit: 9563c24c2794f8209494891da1a4a5a3360781db
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '248'
 ht-degree: 19%
 
 ---

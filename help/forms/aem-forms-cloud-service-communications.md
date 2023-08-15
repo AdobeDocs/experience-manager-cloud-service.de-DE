@@ -2,17 +2,17 @@
 title: AEM Forms as a Cloud Service – Kommunikation
 description: Automatisches Zusammenführen von Daten mit XDP- und PDF-Vorlagen oder Generieren von Ausgaben in den Formaten PCL, ZPL und PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 100%
+source-wordcount: '683'
+ht-degree: 94%
 
 ---
 
 
 # Verwenden der synchronen Verarbeitung {#sync-processing-introduction}
 
-Mit den Forms as a Cloud Service Communications APIs können Sie markenorientierte und personalisierte Texte kreieren, zusammenstellen und bereitstellen, wie z. B. Geschäftskorrespondenz, Dokumente, Mitteilungen, Schadensbearbeitungsschreiben, Leistungsbenachrichtigungen, Monatsabrechnungen und Begrüßungs-Kits. Sie können Communications APIs verwenden, um eine Vorlage (XFA oder PDF) mit Kundendaten zu kombinieren und damit Dokumente im PDF-, PS-, PCL-, DPL-, IPL- und ZPL-Format zu generieren.
+Forms as a Cloud Service - Kommunikations-APIs ermöglichen Ihnen das Erstellen, Zusammenstellen und Bereitstellen markenorientierter und personalisierter Kommunikationen wie Geschäftskorrespondenzen, Dokumente, Aussagen, Anforderungsverarbeitung von Briefen, Hinweise zu Vorteilen, Verarbeitung von Briefen, monatlichen Rechnungen und Willkommenskits. Sie können Communications APIs verwenden, um eine Vorlage (XFA oder PDF) mit Kundendaten zu kombinieren und damit Dokumente im PDF-, PS-, PCL-, DPL-, IPL- und ZPL-Format zu generieren.
 
 Angenommen, Sie haben eine oder mehrere Vorlagen und für jede Vorlage mehrere Datensätze mit XML-Daten. Sie können Kommunikations-APIs verwenden, um für jeden Eintrag ein Print-Dokument zu generieren. <!-- You can also combine the records into a single document. --> Das Ergebnis ist ein nicht interaktives PDF-Dokument. Bei einem nicht interaktiven PDF-Dokument können Benutzer keine Daten in die Felder eingeben.
 
@@ -51,9 +51,9 @@ Einzelmandant-API-Vorgänge unterstützen zwei Authentifizierungstypen:
    1. Führen Sie die Experience Manager-API mit dem Zugriffstoken als Bearer-Authentifizierungstoken aus.
    1. [Legen Sie die entsprechenden Berechtigungen für den Benutzer des technischen Kontos in der Experience Manager-Umgebung fest](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=de#zugriff-in-aem-konfigurieren).
 
-   >[!NOTE]
-   >
-   >Adobe empfiehlt die Verwendung der Token-basierten Authentifizierung in einer Produktionsumgebung.
+  >[!NOTE]
+  >
+  >Adobe empfiehlt die Verwendung der Token-basierten Authentifizierung in einer Produktionsumgebung.
 
 <!-- 
 

@@ -2,10 +2,10 @@
 title: Verwenden von CRXDE Lite
 description: CRXDE Lite ist Teil des AEM-Schnellstarts und steht Ihnen zur Verfügung, um auf das Repository in Ihren lokalen Entwicklungsumgebungen im Browser zuzugreifen und es zu ändern.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1688'
-ht-degree: 88%
+source-wordcount: '1685'
+ht-degree: 85%
 
 ---
 
@@ -40,7 +40,7 @@ Die Benutzeroberfläche von CRXDE Lite besteht aus vielen Teilen und Funktionen.
 
 ### Obere Wechselleiste {#top-switcher-bar}
 
-Mit der oberen Umschaltleiste können Sie schnell zwischen CRXDE Lite und dem [Package Manager](package-manager.md) umschalten.
+Die obere Switcher-Leiste ermöglicht einen schnellen Wechsel zwischen CRXDE Lite und [Package Manager.](package-manager.md)
 
 ### Knotenpfad-Widget {#node-path-widget}
 
@@ -144,7 +144,7 @@ Mit der Schaltfläche **Umbenennen** wird der ausgewählte Knoten umbenannt.
 
 ### Mixins {#mixins-button}
 
-Mit der Schaltfläche **Mixins** können Sie dem Knotentyp Mixin-Typen hinzufügen. Die Mixin-Typen werden meist verwendet, um fortgeschrittene Funktionen hinzuzufügen.
+Die **Schaltfläche &quot;Mixins&quot;** ermöglicht das Hinzufügen von Mixin-Typen zum Knotentyp. Die Mixin-Typen werden meist verwendet, um fortgeschrittene Funktionen hinzuzufügen.
 
 ### Tools {#tools-button}
 
@@ -192,7 +192,7 @@ Jetzt können Sie den Knoten an Ihre Anforderungen anpassen, indem Sie die Eigen
 >
 Die meisten Bearbeitungsvorgänge, einschließlich **Knoten erstellen**, behalten alle Änderungen im Speicher und speichern sie erst beim Speichern im Repository (über die [**Schaltfläche „Alle speichern“**](#save-all-button)). Einige Vorgänge wie das Verschieben werden jedoch automatisch beibehalten.
 >
-Die Prüfung, ob der neu erstellte Knoten vom Knotentyp des übergeordneten Knoten zugelassen ist, wird auch vom Repository ausgeführt, wenn Änderungen gespeichert werden sollen. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (Sie können beispielsweise keine `nt:unstructured` Knoten als untergeordnetes Element von `nt:folder` Knoten).
+Die Überprüfung, ob der neu erstellte Knoten durch den Knotentyp des übergeordneten Knotens zugelassen ist, wird auch vom Repository beim Speichern von Änderungen durchgeführt. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (Sie können beispielsweise keine `nt:unstructured` Knoten als untergeordnetes Element von `nt:folder` Knoten).
 
 ## Erstellen einer Eigenschaft {#creating-a-property}
 
@@ -225,7 +225,7 @@ Exportieren einer Knotentypdefinition in CRXDE Lite:
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
 1. Wählen Sie den gewünschten Knoten aus.
 1. Wählen Sie **Tools** und dann **Knotentyp exportieren** aus.
-1. Die Definition wird in CND-Notation in einer neuen Registerkarte in Ihrem Browser angezeigt.
+1. Die Definition wird in der CND-Notation in einer neuen Registerkarte in Ihrem Browser angezeigt.
 1. Speichern Sie die Informationen bei Bedarf.
 
 So importieren Sie eine Knotentypdefinition:
@@ -234,7 +234,7 @@ So importieren Sie eine Knotentypdefinition:
 1. Wählen Sie **Tools** und dann **Knotentyp importieren** aus.
 1. Im [**Bearbeitungsfenster**](#edit-pane) wird eine neue Registerkarte mit der Beschriftung **Knotentypen importieren** geöffnet.
 1. Geben Sie die CND-Notation für die Definition in das Textfeld der Registerkarte **Knotentyp importieren** ein.
-1. Überprüfen **Aktualisierung zulassen** wenn Sie eine vorhandene Definition aktualisieren.
+1. Überprüfen **Aktualisierung zulassen** , wenn Sie eine vorhandene Definition aktualisieren.
 1. Wählen Sie **Importieren**.
 
 ## Protokollierung {#logging}

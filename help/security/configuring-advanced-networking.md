@@ -2,10 +2,10 @@
 title: Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3571'
-ht-degree: 77%
+ht-degree: 75%
 
 ---
 
@@ -36,13 +36,13 @@ Ein Programm kann eine einzige erweiterte Netzwerkvariante bereitstellen. Bei de
 
 >[!NOTE]
 >
->Kunden, die bereits über eine alte Technologie für dedizierte Ausgänge verfügen und eine dieser Optionen konfigurieren müssen, sollten dies nicht tun, da dies sonst die Website-Konnektivität beeinträchtigt sein könnte. Wenden Sie sich für Unterstützung an den Support der Adobe.
+>Kunden, die bereits über eine alte Technologie für dedizierte Ausgänge verfügen und eine dieser Optionen konfigurieren müssen, sollten dies nicht tun, da dies sonst die Website-Konnektivität beeinträchtigt sein könnte. Wenden Sie sich an den Adobe-Support , um Hilfe zu erhalten.
 
 ## Flexibler Port-Ausgang {#flexible-port-egress}
 
-Diese erweiterte Netzwerkfunktion ermöglicht es Ihnen, AEM as a Cloud Service so zu konfigurieren, dass der Ausgangs-Traffic über andere Ports als HTTP (Port 80) und HTTPS (Port 443), die standardmäßig geöffnet sind, läuft.
+Mit dieser erweiterten Netzwerkfunktion können Sie AEM as a Cloud Service konfigurieren, um Traffic über standardmäßig geöffnete Ports (HTTP (Port 80) und HTTPS (Port 443) auszulösen.
 
-### Zu beachten {#flexible-port-egress-considerations}
+### Überlegungen {#flexible-port-egress-considerations}
 
 Eine flexible Port-Ausfahrt ist die empfohlene Wahl, wenn Sie kein VPN benötigen und keine dedizierte Ausgangs-IP-Adresse benötigen, da Traffic, der nicht auf eine dedizierte Ausfahrt angewiesen ist, einen höheren Durchsatz erzielen kann.
 
@@ -180,7 +180,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!NOTE]
 >
->Wenn Sie vor der Version vom September 2021 über eine dedizierte Ausgangs-IP verfügen (06.10.21), finden Sie weitere Informationen unter [Alte dedizierte Egress-Adresskunden](#legacy-dedicated-egress-address-customers).
+>Wenn Sie vor der Version vom September 2021 über eine dedizierte Ausgangs-IP verfügen (06.10.21), lesen Sie [Alte dedizierte Egress-Adresskunden](#legacy-dedicated-egress-address-customers).
 
 ### Vorteile {#benefits}
 
@@ -198,7 +198,7 @@ Die Konfiguration der dedizierten Ausgangs-IP-Adresse ist mit dem Szenario [flex
 
 Der Hauptunterschied besteht darin, dass der Traffic immer von einer dedizierten, eindeutigen IP-Adresse ausgeht. Um diese IP zu finden, verwenden Sie einen DNS-Resolver, um die IP-Adresse zu identifizieren, die mit `p{PROGRAM_ID}.external.adobeaemcloud.com` verbunden ist. Es wird nicht erwartet, dass sich die IP-Adresse ändert. Wenn sich die IP jedoch in Zukunft ändern muss, wird eine erweiterte Benachrichtigung bereitgestellt.
 
-Zusätzlich zu den Routing-Regeln, die vom flexiblen Port-Ausgang im `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`-Endpunkt unterstützt werden, unterstützt die dedizierte Ausgangs-IP-Adresse einen `nonProxyHosts`-Parameter. Auf diese Weise können Sie eine Gruppe von Hosts deklarieren, die über einen gemeinsamen IP-Adressbereich statt über die dedizierte IP weitergeleitet werden sollen. Dies kann nützlich sein, da ausgehender Traffic über freigegebene IPs weiter optimiert werden kann. Die `nonProxyHost`-URLs können dem Muster von `example.com` oder `*.example.com` folgen, wobei der Platzhalter nur am Beginn der Domain unterstützt wird.
+Zusätzlich zu den Routing-Regeln, die vom flexiblen Port-Ausgang im `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`-Endpunkt unterstützt werden, unterstützt die dedizierte Ausgangs-IP-Adresse einen `nonProxyHosts`-Parameter. Auf diese Weise können Sie eine Gruppe von Hosts deklarieren, die über einen gemeinsamen IP-Adressbereich statt über die dedizierte IP weitergeleitet werden sollen. Dies kann nützlich sein, da das Traffic-egressing über freigegebene IPs weiter optimiert werden kann. Die `nonProxyHost`-URLs können dem Muster von `example.com` oder `*.example.com` folgen, wobei der Platzhalter nur am Beginn der Domain unterstützt wird.
 
 Bei der Entscheidung zwischen flexiblem Port-Ausgang und dedizierter Ausgangs-IP-Adresse sollten Kunden einen flexiblen Port-Ausgangt wählen, wenn keine bestimmte IP-Adresse erforderlich ist, da Adobe die Traffic-Leistung an flexiblen Ports-Ausgängen optimieren kann.
 
@@ -556,15 +556,15 @@ Wenn eine zusätzliche Region zu einer Umgebung hinzugefügt wird, in der bereit
 
 Wenn in der primären Region bereits eine erweiterte Netzwerkkonfiguration aktiviert ist, führen Sie die folgenden Schritte aus:
 
-1. Wenn Sie Ihre Infrastruktur so gesperrt haben, dass die dedizierte AEM IP-Adresse auf die Zulassungsliste gesetzt ist, wird empfohlen, alle Regeln zur Ablehnung in dieser Infrastruktur vorübergehend zu deaktivieren. Andernfalls wird die Anfrage von den IP-Adressen der neuen Region in einem kurzen Zeitraum von Ihrer eigenen Infrastruktur verweigert. Beachten Sie, dass dies nicht erforderlich ist, wenn Sie Ihre Infrastruktur über FQDN (FQDN) (`p1234.external.adobeaemcloud.com`, weil alle AEM Regionen erweiterten Netzwerk-Traffic aus demselben FQDN auslösen.
+1. Wenn Sie Ihre Infrastruktur so gesperrt haben, dass die dedizierte AEM IP-Adresse auf die Zulassungsliste gesetzt ist, wird empfohlen, alle Regeln zur Ablehnung in dieser Infrastruktur vorübergehend zu deaktivieren. Andernfalls wird die Anfrage von den IP-Adressen der neuen Region in einem kurzen Zeitraum von Ihrer eigenen Infrastruktur verweigert. Beachten Sie, dass dies nicht erforderlich ist, wenn Sie Ihre Infrastruktur mithilfe eines FullyQualified Domain Name (FQDN) gesperrt haben (`p1234.external.adobeaemcloud.com`, weil alle AEM Regionen erweiterten Netzwerk-Traffic aus demselben FQDN auslösen.
 1. Erstellen Sie die programmweite Netzwerkinfrastruktur für die sekundäre Region durch einen POST-Aufruf an die Cloud Manager-API zum Erstellen einer Netzwerkinfrastruktur, wie in der Dokumentation zur erweiterten Vernetzung beschrieben. Der einzige Unterschied in der JSON-Konfiguration der Payload im Verhältnis zum primären Bereich ist die Eigenschaft region .
 1. Wenn Ihre Infrastruktur nach IP gesperrt werden muss, um AEM Traffic zu ermöglichen, fügen Sie die IPs hinzu, die mit `p1234.external.adobeaemcloud.com`. Pro Region sollte eine geben.
 
-#### Erweiterte Netzwerke noch nicht konfiguriert {#not-yet-configured}
+#### Erweiterte Netzwerke, die noch nicht in einer Region konfiguriert sind {#not-yet-configured}
 
 Das Verfahren ähnelt größtenteils den vorherigen Anweisungen. Wenn die Produktionsumgebung jedoch noch nicht für erweiterte Netzwerke aktiviert wurde, können Sie die Konfiguration testen, indem Sie sie zuerst in einer Staging-Umgebung aktivieren:
 
-1. Erstellen Sie eine Netzwerkinfrastruktur für alle Regionen durch einen Aufruf der POST an die [Cloud Manager - Netzwerkinfrastruktur-API erstellen](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). Der einzige Unterschied in der JSON-Konfiguration der Payload im Verhältnis zur primären Region ist die Eigenschaft region .
+1. Erstellen Sie eine Netzwerkinfrastruktur für alle Regionen durch POST-Aufruf an die [Cloud Manager - Netzwerkinfrastruktur-API erstellen](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). Der einzige Unterschied in der JSON-Konfiguration der Payload im Verhältnis zur primären Region ist die Eigenschaft region .
 1. Aktivieren und konfigurieren Sie für die Staging-Umgebung das erweiterte Netzwerk, das in der Umgebung verfügbar ist, indem Sie `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Weitere Informationen finden Sie in der API-Dokumentation . [here](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
 1. Sperren Sie ggf. die externe Infrastruktur, vorzugsweise durch FQDN (z. B. `p1234.external.adobeaemcloud.com`). Andernfalls können Sie dies nach IP-Adresse tun
 1. Wenn die Staging-Umgebung erwartungsgemäß funktioniert, aktivieren und konfigurieren Sie die umgebungsübergreifende erweiterte Netzwerkkonfiguration für die Produktion.

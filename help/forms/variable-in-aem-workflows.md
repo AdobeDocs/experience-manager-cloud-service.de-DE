@@ -2,10 +2,10 @@
 title: Hinzufügen von Variablen in AEM-Workflow-Schritten
 description: Erfahren Sie, wie Sie eine Variable erstellen, einen Wert für die Variable festlegen und sie in  [!DNL AEM Forms] -Workflow-Schritten verwenden.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2080'
-ht-degree: 98%
+source-wordcount: '2079'
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ Verwenden Sie den Datentyp „ArrayList“, um Variablenauflistungen zu erstelle
 
 Erstellen einer Variablen:
 
-1. Navigieren Sie in einer AEM-Instanz zu Tools . ![Hammersymbol](assets/hammer-icon.svg) > Workflow > Modelle.
+1. Navigieren Sie in einer AEM zu Tools . ![Hammersymbol](assets/hammer-icon.svg) > Workflow > Modelle.
 1. Tippen Sie auf **[!UICONTROL Erstellen]** und geben Sie den Titel und einen optionalen Namen für das Workflow-Modell an. Wählen Sie das Modell aus und tippen Sie auf **[!UICONTROL Bearbeiten]**.
 1. Tippen Sie auf das Variablensymbol im Sidekick des Workflow-Modells und tippen Sie dann auf **[!UICONTROL Variable hinzufügen]**.
 
@@ -167,7 +167,7 @@ Wählen Sie auf ähnliche Weise einen externen Skriptpfad aus oder geben Sie das
 
 #### Go-To-Schritt {#go-to-step}
 
-Mit **GOTO** (Wechseln zu Schritt) können Sie den nächsten Schritt im Workflow-Modell angeben, der je nach dem Ergebnis eines Routing-Ausdrucks ausgeführt werden soll.
+Die **Zum Schritt wechseln** können Sie den nächsten auszuführenden Schritt im Workflow-Modell abhängig vom Ergebnis eines Routing-Ausdrucks angeben.
 
 Ähnlich wie beim ODER-Teilungs-Schritt können Sie Routing-Ausdrücke für einen GOTO-Schritt (Wechseln zu Schritt) mithilfe einer Regeldefinition, eines ECMA-Skripts oder eines externen Skripts definieren.
 

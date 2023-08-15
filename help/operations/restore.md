@@ -1,10 +1,10 @@
 ---
 title: Wiederherstellung von Inhalten in AEM as a Cloud Service
 description: Erfahren Sie, wie Sie mithilfe von Cloud Manager AEM as a Cloud Service Inhalte aus einer Sicherungskopie wiederherstellen können.
-source-git-commit: 6813b5b9570a4d115cd0600bcccd4d787dc42154
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 79%
+source-wordcount: '1166'
+ht-degree: 76%
 
 ---
 
@@ -59,11 +59,11 @@ Bestimmen Sie zunächst den Zeitrahmen des Inhalts, den Sie wiederherstellen mö
 
 1. Wählen Sie zunächst auf der Registerkarte **Inhalt wiederherstellen** der Seite mit den Umgebungsdetails den Zeitrahmen der Wiederherstellung unter der Dropdown-Liste **Wiederherstellungszeit**.
 
-   1. Wenn Sie **Letzte 24 Stunden** auswählen, können Sie im benachbarten Feld **Zeit** den genauen Zeitpunkt innerhalb der letzten 24 Stunden für die Wiederherstellung angeben.
+   1. Wenn Sie **Letzte 24 Stunden** die Nachbarländer **Zeit** -Feld können Sie die genaue Zeit innerhalb der letzten 24 Stunden angeben, die wiederhergestellt werden sollen.
 
       ![Letzte 24 Stunden](assets/backup-time.png)
 
-   1. Wenn Sie **Letzte Woche** wählen, können Sie im benachbarten Feld **Tag** ein Datum innerhalb der letzten sieben Tage auswählen, wobei die vergangenen 24 Stunden ausgeschlossen sind.
+   1. Wenn Sie **Letzte Woche** die Nachbarländer **Tag** -Feld können Sie ein Datum aus den letzten sieben Tagen auswählen, mit Ausnahme der letzten 24 Stunden.
 
       ![Letzte Woche](assets/backup-date.png)
 
@@ -130,4 +130,4 @@ Die Verwendung des Self-Service-Wiederherstellungsmechanismus unterliegt den fol
 * Ein Wiederherstellungsvorgang wird nicht initiiert, wenn gerade eine Konfigurations-Pipeline (Full-Stack oder Web-Stufe) für die Umgebung ausgeführt wird.
 * Eine Wiederherstellung kann nicht initiiert werden, wenn bereits eine andere Wiederherstellung in derselben Umgebung ausgeführt wird.
 * In seltenen Fällen kann es vorkommen, dass aufgrund der Beschränkung von 24 Stunden bzw. 7 Tagen für Sicherungskopien die ausgewählte Sicherungskopie aufgrund einer Verzögerung zwischen dem Zeitpunkt der Auswahl und dem Beginn der Wiederherstellung nicht mehr verfügbar ist.
-* Daten gelöschter Umgebungen gehen dauerhaft verloren und können nicht wiederhergestellt werden.
+* Daten gelöschter Umgebungen sind dauerhaft verloren und können nicht wiederhergestellt werden.

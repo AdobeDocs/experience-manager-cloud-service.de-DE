@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '1999'
 ht-degree: 81%
 
 ---
@@ -29,7 +29,7 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder einen Be
 ### Neuerstellen von Fragmenten {#create-fragment-from-scratch}
 
 1. Melden Sie sich bei der Autoreninstanz von [!DNL AEM Forms] unter https://[*Hostname*]:[*Port*]/aem/forms.html an.
-1. Klicken **Erstellen > Adaptives Formularfragment**.
+1. Klicks **Erstellen > Adaptives Formularfragment**.
 1. Geben Sie Titel, Namen, Beschreibung und Tags für das Fragment an.
 
    >[!NOTE]
@@ -61,7 +61,7 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder einen Be
 
 Im Bearbeitungsmodus können Sie eine beliebige adaptive Formularkomponente aus dem AEM Sidekick auf das Fragment ziehen. <!-- For information about Adaptive Form components, see Introduction to authoring Adaptive Forms. -->
 
-Wenn Sie außerdem ein XML-Schema oder eine XDP-Formularvorlage als Formularmodell für Ihr Fragment ausgewählt haben, wird in der Inhaltssuche eine neue Registerkarte mit der Formularmodellhierarchie angezeigt. Sie können dann Formularmodellelemente auf das Fragment ziehen. Die hinzugefügten Formularmodellelemente werden in Formularkomponenten konvertiert, während die ursprünglichen Eigenschaften aus der zugehörigen XDP oder XSD beibehalten werden.
+Wenn Sie außerdem ein XML-Schema oder eine XDP-Formularvorlage als Formularmodell für Ihr Fragment ausgewählt haben, wird in der Inhaltssuche eine neue Registerkarte mit der Formularmodellhierarchie angezeigt. Damit können Sie Formularmodellelemente per Drag &amp; Drop auf das Fragment ziehen. Die hinzugefügten Formularmodellelemente werden in Formularkomponenten konvertiert, während die ursprünglichen Eigenschaften aus der zugehörigen XDP oder XSD beibehalten werden.
 
 ### Bereich als Fragment speichern {#save-panel-as-a-fragment}
 

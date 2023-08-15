@@ -2,10 +2,10 @@
 title: Erstellen von Sandbox-Programmen
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Sandbox-Programm für Schulungs-, Demo-, POC- oder andere produktionsfremde Zwecke erstellen.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 48%
+source-wordcount: '444'
+ht-degree: 51%
 
 ---
 
@@ -49,7 +49,7 @@ Auf der Landingpage wird eine neue Sandbox-Programmkarte mit einer Statusanzeige
 
 Sie können die Details Ihrer Sandbox-Einrichtung anzeigen und auf die Umgebung zugreifen (sobald sie verfügbar ist), indem Sie die Seite mit der Programmübersicht aufrufen.
 
-1. Klicken Sie auf der Landingpage von Cloud Manager in Ihrem neu erstellten Programm auf die Suchschaltfläche .
+1. Klicken Sie auf der Landingpage von Cloud Manager in Ihrem neu erstellten Programm auf die Schaltfläche mit den Auslassungspunkten.
 
    ![Zugriff auf die Programmübersicht](assets/program-overview-sandbox.png)
 

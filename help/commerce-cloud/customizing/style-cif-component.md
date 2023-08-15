@@ -1,5 +1,5 @@
 ---
-title: Stile für Adobe Experience Manager CIF-Kernkomponenten festlegen
+title: Adobe Experience Manager CIF-Kernkomponenten formatieren
 description: Erfahren Sie, wie Sie Adobe Experience Manager (AEM) CIF-Kernkomponenten gestalten. In diesem Tutorial wird beschrieben, wie Client-seitige Bibliotheken oder Client-Bibliotheken zum Bereitstellen und Verwalten von CSS und JavaScript für eine AEM Commerce-Implementierung verwendet werden. In diesem Tutorial wird auch erläutert, wie das ui.frontend-Modul und ein Webpack-Projekt in den End-to-End-Build-Prozess integriert werden.
 sub-product: Commerce
 topics: Development
@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2535'
 ht-degree: 61%
 
 ---
@@ -71,9 +71,9 @@ Die CSS- und JavaScript-Dateien, die für das Rendern der Designs/Stile der Stor
 
 Markenspezifische Stile können auf AEM CIF-Kernkomponenten angewendet werden, indem das von diesen Client-Bibliotheken verwaltete CSS hinzugefügt und überschrieben wird. Kenntnisse dazu, wie Client-Bibliotheken strukturiert sind und auf der Seite eingeschlossen werden, sind von entscheidender Bedeutung.
 
-Die [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de) ist eine dedizierte [Webpack](https://webpack.js.org/) -Projekt zum Verwalten aller Frontend-Assets für ein Projekt. Mit diesem Webpack können Frontend-Entwickler eine beliebige Anzahl von Sprachen und Technologien wie [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/)und vieles mehr.
+Die [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de) ist ein spezielles [Webpack](https://webpack.js.org/) -Projekt zum Verwalten aller Frontend-Assets für ein Projekt. Mit diesem Webpack können Frontend-Entwickler eine beliebige Anzahl von Sprachen und Technologien wie [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/)und vieles mehr.
 
-Die `ui.frontend` -Modul ist auch ein Maven-Modul und mit dem größeren Projekt integriert, indem ein NPM-Modul verwendet wird, das [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). Während eines Builds kopiert der `aem-clientlib-generator` die kompilierten CSS- und JavaScript-Dateien im `ui.apps`-Modul in eine Client-Bibliothek.
+Die `ui.frontend` -Modul ist auch ein Maven-Modul und mit dem größeren Projekt integriert, indem ein NPM-Modul [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). Während eines Builds kopiert der `aem-clientlib-generator` die kompilierten CSS- und JavaScript-Dateien im `ui.apps`-Modul in eine Client-Bibliothek.
 
 ![ui.frontend-zu-ui.apps-Architektur](../assets/style-cif-component/ui-frontend-architecture.png)
 
@@ -166,7 +166,7 @@ Nehmen Sie als Nächstes eine kleine Änderung am Teaser-Stil vor, um zu sehen, 
 
    ![Kompilierte Site-CSS in ui.apps](../assets/style-cif-component/comiled-css-ui-apps.png)
 
-   Diese Datei ist `site.css` in die `ui.apps` Projekt. Sie ist jetzt Teil einer Client-Bibliothek namens `clientlib-site` mit der Kategorie `venia.site`. Sobald die Datei Teil des `ui.apps`-Moduls ist, kann sie in AEM bereitgestellt werden.
+   Diese Datei ist `site.css` kopiert in `ui.apps` Projekt. Sie ist jetzt Teil einer Client-Bibliothek namens `clientlib-site` mit der Kategorie `venia.site`. Sobald die Datei Teil des `ui.apps`-Moduls ist, kann sie in AEM bereitgestellt werden.
 
    >[!NOTE]
    >
@@ -267,7 +267,7 @@ Es gibt mehrere Optionen zum Einschließen einer Client-seitigen Bibliothek. Seh
 
    >[!NOTE]
    >
-   > Um alle verfügbaren Vorlagen vom Startbildschirm aus anzuzeigen, navigieren Sie zu AEM **Instrumente** > **Allgemein** > **Vorlagen**.
+   > Um alle verfügbaren Vorlagen über den Startbildschirm AEM, navigieren Sie zu **Instrumente** > **Allgemein** > **Vorlagen**.
 
 1. Wählen Sie in der oberen linken Ecke das Symbol **Seiteninformationen** und klicken Sie auf **Seitenrichtlinie**.
 
@@ -302,7 +302,7 @@ Der webpack-Dev-Server dient als Proxy für Bilder und einige der CSS/JavaScript
 
 1. Überschreiben Sie den Inhalt von `index.html` und **fügen** Sie den im vorherigen Schritt kopierten HTML-Code ein.
 
-1. Suchen Sie nach &quot;include&quot;für `clientlib-site.min.css`, `clientlib-site.min.js`und **remove** sie.
+1. Suchen Sie nach &quot;include&quot;für `clientlib-site.min.css`, `clientlib-site.min.js`, und **remove** sie.
 
    ```html
    <head>
@@ -463,7 +463,7 @@ Nachdem der Code für das Projekt in AEM bereitgestellt wurde, sollten Sie jetzt
 
 Sie können in [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) prüfen, ob die aktualisierte CSS-Datei bereitgestellt wurde: [http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
 
-Bei der Bereitstellung neuer CSS-Dateien, JavaScript-Dateien oder beidem ist es auch wichtig sicherzustellen, dass der Browser keine veralteten Dateien bereitstellt. Sie können dieses potenzielle Problem beheben, indem Sie den Browsercache löschen oder eine neue Browsersitzung starten.
+Bei der Bereitstellung neuer CSS-Dateien, JavaScript-Dateien oder beidem ist es auch wichtig sicherzustellen, dass der Browser keine veralteten Dateien bereitstellt. Sie können dieses potenzielle Problem beheben, indem Sie den Browser-Cache leeren oder eine neue Browser-Sitzung starten.
 
 Außerdem versucht AEM, Client-Bibliotheken für höhere Leistung zwischenzuspeichern. Gelegentlich werden nach einer Code-Implementierung die älteren Dateien bereitgestellt. Mit dem [Tool zur Neuerstellung von Client-Bibliotheken](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) können Sie den Cache der Client-Bibliothek von AEM manuell invalidieren. *Die Invalidierung des Cache ist die bevorzugte Methode, wenn Sie vermuten, dass AEM eine alte Version einer Client-Bibliothek zwischengespeichert hat. Die Neuerstellung von Bibliotheken ist ineffizient und zeitaufwendig.*
 

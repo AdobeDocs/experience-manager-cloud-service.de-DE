@@ -2,10 +2,10 @@
 title: Seitenvorlagen
 description: Seitenvorlagen werden beim Erstellen einer Seite verwendet, die als Grundlage für die neue Seite verwendet wird
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3294'
-ht-degree: 91%
+source-wordcount: '3291'
+ht-degree: 90%
 
 ---
 
@@ -328,7 +328,7 @@ Definitionen für Ihre benutzerdefinierten Vorlagentypen sollten in benutzerdefi
 
 >[!CAUTION]
 >
->Die Vorlagentypen müssen die richtige Ordnerstruktur (d. h. `/settings/wcm/...`), andernfalls werden die Vorlagentypen nicht gefunden.
+>Die Vorlagentypen müssen die richtige Ordnerstruktur aufweisen (d. h. `/settings/wcm/...`), andernfalls werden die Vorlagentypen nicht gefunden.
 
 <!--
 ### Template Type and Mobile Device Groups {#template-type-and-mobile-device-groups-br}
@@ -541,7 +541,7 @@ Beim Rendern einer Seite:
       * Die Seitenkomponente erlaubt es dem Autor nur, die Knoten der Vorlagenstruktur zu bearbeiten, die als bearbeitbar gekennzeichnet wurden (und alle untergeordneten Elemente).
       * Beim Rendern einer Komponente auf einer Seite wird der relative Pfad dieser Komponente aus dem `jcr:content` Knoten; derselbe Pfad unter `policies/jcr:content` -Knoten der Vorlage durchsucht werden.
          * Die Eigenschaft `cq:policy` dieses Knotens verweist auf die eigentliche Inhaltsrichtlinie (d. h. sie enthält die Design-Konfiguration für diese Komponente).
-            * Auf diese Weise können Sie mehrere Vorlagen nutzen, die dieselben Inhaltsrichtlinienkonfigurationen wiederverwenden.
+            * Auf diese Weise können Sie über mehrere Vorlagen verfügen, die dieselben Inhaltsrichtlinienkonfigurationen wiederverwenden.
 
 ### Verfügbarkeit von Vorlagen {#template-availability}
 
@@ -595,6 +595,6 @@ Das folgende Diagramm zeigt den Vorlagenauswertungsprozess:
 
 Um zu begrenzen, welche Vorlagen zum Erstellen von untergeordneten Seiten unter einer bestimmten Seite verwendet werden können, verwenden Sie die Eigenschaft `cq:allowedTemplates` des Knotens `jcr:content` auf der Seite. Damit lässt sich die Liste der Vorlagen angeben, die als untergeordnete Seiten zulässig sein sollen. Jeder Wert in der Liste muss ein absoluter Pfad zu einer Vorlage für eine zulässige untergeordnete Seite sein, zum Beispiel `/apps/wknd/templates/page-content`.
 
-Sie können die Eigenschaft `cq:allowedTemplates` im Knoten `jcr:content` der Vorlage verwenden, damit diese Konfiguration auf alle neu erstellten Seiten angewendet wird, die diese Vorlage nutzen.
+Sie können die `cq:allowedTemplates` -Eigenschaft auf der Vorlage  `jcr:content` -Knoten, damit diese Konfiguration auf alle neu erstellten Seiten angewendet wird, die diese Vorlage verwenden.
 
 Wenn Sie mehrere Einschränkungen hinzufügen möchten, z. B. bezüglich der Vorlagenhierarchie, können Sie die Eigenschaften `allowedParents/allowedChildren` auf der Vorlage verwenden. Sie können dann explizit angeben, dass Seiten, die aus einer Vorlage T erstellt wurden, übergeordnet/untergeordnet von Seiten sein müssen, die aus einer Vorlage T erstellt wurden.

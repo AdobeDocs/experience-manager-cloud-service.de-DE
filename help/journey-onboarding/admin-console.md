@@ -2,10 +2,10 @@
 title: Zugang zur Admin Console
 description: Sobald Sie mit den erforderlichen Vorbereitungsschritten für das Onboarding und die Grundlagen der AEMaaCS-Struktur vertraut sind, können Sie sich erstmals bei der Admin Console anmelden.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 94%
+source-wordcount: '1104'
+ht-degree: 89%
 
 ---
 
@@ -26,7 +26,7 @@ Als System-Admin sind Sie für die Benutzerverwaltung innerhalb Ihrer Organisati
 
 ## Die Admin Console {#admin-console}
 
-Die Adobe Admin Console ist ein zentraler Ort, um Ihre Adobe-Produktlizenzen und Benutzende zu verwalten. Mit der Admin Console können Sie Benutzende an einem zentralen Ort anstatt in jeder einzelnen Lösung erstellen und verwalten.
+Die Adobe Admin Console ist ein zentraler Ort, um Ihre Adobe-Produktlizenzen und Benutzende zu verwalten. Mit der Admin Console können Sie Benutzer an einem Ort erstellen und verwalten und nicht in Ihren einzelnen Lösungen.
 
 ## Adobe ID {#adobe-id}
 
@@ -50,7 +50,7 @@ Bevor Sie die Admin Console zum Verwalten von Benutzenden in Ihrem Team verwende
 
 1. Als System-Admin erhalten Sie im Rahmen des Onboarding-Prozesses mehrere E-Mails von Adobe. Suchen Sie nach der Begrüßungs-E-Mail mit Informationen zum Organisationsnamen, auf den Sie Zugriff erhalten haben.
 
-1. Klicken Sie in Ihrer Begrüßungs-E-Mail auf **Erste Schritte**, um zur Admin Console zu navigieren. Wenn Sie die E-Mail nicht finden können, navigieren Sie in einem Browser unter [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) direkt zur Admin Console.
+1. Klicken Sie in Ihrer Begrüßungs-E-Mail auf **Erste Schritte**, um zur Admin Console zu navigieren. Wenn Sie die E-Mail nicht finden können, öffnen Sie einen Browser direkt zur Admin Console unter [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
    ![Begrüßungs-E-Mail](/help/journey-onboarding/assets/get-started-email.png)
 
@@ -90,7 +90,7 @@ Sollten Sie Probleme haben, erhalten Sie über die Admin Console Zugang zum Adob
 
 ![Registerkarte „Support“](/help/journey-onboarding/assets/support-menu.png)
 
-Über die Registerkarte können Sie Fälle erstellen und verwalten, direkt mit den Support-Mitarbeitern von Adobe chatten und Sitzungen mit Experten arrangieren. System- und Support-Administratoren müssen sich anmelden, um Zugriff auf die Funktionen zur Verwaltung von Support-Fällen und Expertensitzungen zu erhalten.
+Im Tab können Sie Fälle erstellen und verwalten, direkt mit Support-Mitarbeitern von Adobe-Kunden chatten und Sitzungen mit Experten planen. System- und Support-Administratoren müssen sich anmelden, um Zugriff auf die Funktionen zur Verwaltung von Support-Fällen und Expertensitzungen zu erhalten.
 
 ## Wie geht es weiter? {#whats-next}
 

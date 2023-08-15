@@ -2,10 +2,10 @@
 title: Erstellen und Verwalten von Kanälen in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie in Screens as a Cloud Service Kanäle erstellen und verwalten.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 78%
+source-wordcount: '1092'
+ht-degree: 75%
 
 ---
 
@@ -69,7 +69,7 @@ Um Inhalt in einem Kanal hinzuzufügen oder zu bearbeiten, gehen Sie wie folgt v
 
    ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
-1. Mit dem Editor können Sie Assets/Komponenten zu Ihrem Kanal hinzufügen, die Sie veröffentlichen möchten.
+1. Mit dem Editor können Sie Assets/Komponenten zu Ihrem Kanal hinzufügen, den Sie veröffentlichen möchten.
 
 1. Ziehen Sie die Assets per Drag-and-Drop aus dem linken Bereich und fügen Sie sie zum Editor hinzu.
 
@@ -85,13 +85,13 @@ Die folgenden Vorlagen sind bei Verwendung des Assistenten zum **Erstellen** ein
 
 | Verfügbare Vorlagen | Beschreibung |
 |--- |--- |
-| Kanal-Ordner | Ermöglicht die Erstellung eines Ordners zum Speichern einer Sammlung von Kanälen. |
+| Kanal-Ordner | Ermöglicht die Erstellung eines Ordners zum Speichern einer Kanalsammlung. |
 | Sequenzkanal | Ermöglicht die Erstellung eines Kanals, in dem die Komponenten nacheinander in einer Diashow wiedergegeben werden. |
 | Splitscreen-Kanal mit L-Balken links oder rechts | Ermöglicht es den Autoren von Inhalten, verschiedene Arten von Assets in entsprechend großen Bereichen anzuzeigen. |
 
 ## Verwenden von Standardzuweisungsdetails für Kanäle {#default-channels}
 
-Mit dieser Funktion können Sie einen standardmäßigen Aktivierungsplan für einen Kanal definieren und ihn standardmäßig für jede Zuweisung für ein Display verwenden. Mit dieser Methode muss die umständliche Zeitplandefinition nicht wiederholt werden.
+Mit dieser Funktion können Sie einen standardmäßigen Aktivierungsplan für einen Kanal definieren und ihn standardmäßig für jede Zuweisung für eine Anzeige verwenden. Mit dieser Methode muss die umständliche Zeitplandefinition nicht wiederholt werden.
 
 ### Erstellen von Standardzuweisungsdetails für einen Kanal {#create-default}
 

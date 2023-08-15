@@ -1,13 +1,11 @@
 ---
 title: Neue Gebietsschemata zu einem adaptiven Formular hinzufügen
-seo-title: Learn to add support for new locales to your adaptive forms
 description: Mit AEM Forms können Sie neue Gebietsschemata zum Lokalisieren von adaptiven Formularen hinzufügen. Englisch (en), Spanisch (es), Französisch (fr), Italienisch (it), Deutsch (de), Japanisch (ja), brasilianisches Portugiesisch (pt-BR), Chinesisch (zh-CN), Chinesisch-Taiwan (zh-TW) und Koreanisch (ko-KR).
-seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 90%
+source-wordcount: '1266'
+ht-degree: 89%
 
 ---
 
@@ -105,7 +103,7 @@ Führen Sie diesen Schritt nur dann durch, wenn das `<locale>`, das Sie hinzufü
 1. Fügen Sie die `<locale-name>`-Standardgebietsschema-Werte `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` und `ko-kr` hinzu, falls noch nicht vorhanden.
 
 1. Fügen Sie das `<locale>` den Werten der Eigenschaft `languages` von `/etc/languages` hinzu.
-1. Fügen Sie die neu erstellten Ordner in der Datei `filter.xml` unter etc/META-INF/[Ordnerhierarchie] wie folgt hinzu:
+1. Fügen Sie die neu erstellten Ordner im `filter.xml` unter etc/META-INF/[Ordnerhierarchie] as:
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>

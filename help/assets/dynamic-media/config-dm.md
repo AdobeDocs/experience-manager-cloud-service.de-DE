@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Dynamic Media in Adobe Experience Manager as 
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3795'
-ht-degree: 100%
+source-wordcount: '3794'
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,6 @@ Mit der neuen Architektur ist Experience Manager für Assets aus Primärquellen 
 >* [Bereitstellung von Inhalten per HTTP/2](/help/assets/dynamic-media/http2faq.md)
 >* URL-Umleitung auf CDN-Ebene
 >* Akamai ChinaCDN (für optimalen Versand in China)
-
 
 <!-- OBSOLETE CONTENT
 
@@ -85,7 +84,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    Das neue Kennwort wird gespeichert, wenn Sie oben rechts auf der Seite **[!UICONTROL Dynamic Media-Konfiguration erstellen]** die Option **[!UICONTROL Speichern]** auswählen.
 
-   Wenn Sie im Dialogfeld **[!UICONTROL Kennwort ändern]** die Option **[!UICONTROL Abbrechen]** ausgewählt haben, müssen Sie dennoch ein neues Kennwort eingeben, wenn Sie die neu erstellte Dynamic Media-Konfiguration speichern.
+   Wenn Sie **[!UICONTROL Abbrechen]** im **[!UICONTROL Kennwort ändern]** eingeben, müssen Sie beim Speichern der neu erstellten Dynamic Media-Konfiguration weiterhin ein neues Kennwort eingeben.
 
    Weitere Informationen finden Sie unter [Ändern des Kennworts für Dynamic Media](#change-dm-password).
 
@@ -178,7 +177,7 @@ Das geänderte Kennwort wird gespeichert, wenn Sie **[!UICONTROL Speichern]** ob
 
    * Geben Sie im Feld **[!UICONTROL Neues Kennwort]** ein neues Kennwort ein.
 
-      Das Feld **[!UICONTROL Aktuelles Kennwort]** wird absichtlich vorab ausgefüllt und ausgeblendet.
+     Das Feld **[!UICONTROL Aktuelles Kennwort]** wird absichtlich vorab ausgefüllt und ausgeblendet.
 
    * Geben Sie im Feld **[!UICONTROL Kennwort wiederholen]** das neue Kennwort erneut ein und wählen Sie dann **[!UICONTROL Fertig]** aus.
 
@@ -238,7 +237,6 @@ Die Einrichtungs- und Konfigurationsaufgaben umfassen Folgendes:
 * [Konfigurieren des Farb-Managements](#configuring-color-management)
 * [Bearbeiten von MIME-Typen für unterstützte Formate](#editing-mime-types-for-supported-formats)
 * [Hinzufügen von MIME-Typen für nicht unterstützte Formate](#adding-mime-types-for-unsupported-formats)
-
 <!-- OBSOLETE BUT LEAVE FOR POSSIBLE FUTURE* [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
 
 #### Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Imageserver {#publishing-setup-for-image-server}

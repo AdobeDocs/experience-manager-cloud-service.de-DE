@@ -2,9 +2,9 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud Service kennen und erfahren Sie, worin sich dieser Dienst von AEM vor Ort und AEM in AMS unterscheidet.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f69b348b7de6c6537a9945793e3397bf4fe30f98
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2653'
 ht-degree: 86%
 
 ---
@@ -78,7 +78,7 @@ Wenn die Rate eingehender Anfragen an AEM gesunde Ebenen überschreitet, antwort
 
 AEM as a Cloud Service unterstützt nur die Touch-Benutzeroberfläche für Kundencode von Drittanbietern. Die klassische Benutzeroberfläche kann nicht angepasst werden.
 
-## Keine nativen Binärdateien oder native Bibliotheken {#avoid-native-binaries}
+## Keine nativen Binärdateien oder nativen Bibliotheken {#avoid-native-binaries}
 
 Native Binärdateien und Bibliotheken dürfen nicht in Cloud-Umgebungen bereitgestellt oder installiert werden.
 
@@ -205,7 +205,7 @@ Bei Produktionsprogrammen wird der Zugriff auf die Entwicklerkonsole durch „Cl
 
 ### Performance-Überwachung {#performance-monitoring}
 
-Adobe überwacht die Programmleistung und ergreift Maßnahmen, wenn eine Verschlechterung beobachtet wird. Derzeit können Programmmetriken nicht überwacht werden.
+Adobe überwacht die Programmleistung und ergreift Maßnahmen, wenn eine Verschlechterung beobachtet wird. Derzeit können Anwendungsmetriken nicht überwacht werden.
 
 ## Senden von E-Mails {#sending-email}
 

@@ -2,10 +2,10 @@
 title: Verwalten Ihrer Demo-Sites
 description: Erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihrer Demo-Sites helfen, und wie Sie diese entfernen können.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 98%
+source-wordcount: '943'
+ht-degree: 94%
 
 ---
 
@@ -70,7 +70,7 @@ Nachdem Sie eine Reihe von AEM-Funktionen getestet haben, benötigen Sie Ihre De
 
    >[!CAUTION]
    >
-   >Das Löschen von Sites und Vorlagen ist eine destruktive Aktion und kann nicht rückgängig gemacht werden, sobald sie eingeleitet wurde.
+   >Das Löschen von Sites und Vorlagen ist eine destruktive Aktion und kann nicht rückgängig gemacht werden, sobald sie initiiert wurden.
 
 1. Bestätigen Sie den Löschvorgang der Site im Dialogfeld.
 

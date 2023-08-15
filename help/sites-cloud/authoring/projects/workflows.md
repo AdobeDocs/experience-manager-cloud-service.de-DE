@@ -2,10 +2,10 @@
 title: Arbeiten mit Projekt-Workflows
 description: Standardmäßig sind diverse Projekt-Workflows verfügbar.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 72%
+source-wordcount: '451'
+ht-degree: 68%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 72%
 
 Folgende Projekt-Workflows sind im Lieferumfang enthalten:
 
-* **Workflow für Projektbestätigung** - Dieser Workflow ermöglicht es Ihnen, Inhalte einem Benutzer zuzuweisen, sie zu prüfen und dann zu bestätigen.
+* **Workflow für Projektbestätigung** - Mit diesem Workflow können Sie einem Benutzer Inhalte zuweisen, diese überprüfen und dann genehmigen.
 * **Launch anfragen** - Ein Workflow, der einen Launch anfordert.
 * **Einstiegsseite anfragen** - Dieser Workflow fragt eine Landingpage an.
 * **E-Mail anfordern** - Workflow zum Anfordern einer E-Mail.

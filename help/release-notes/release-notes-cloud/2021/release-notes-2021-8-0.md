@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.8.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2021.8.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 96%
+source-wordcount: '1027'
+ht-degree: 94%
 
 ---
 
@@ -53,7 +53,7 @@ Sehen Sie sich das Video [Versionsübersicht August 2021](https://video.tv.adobe
 
 ### Fehlerbehebungen in [!DNL Assets] {#assets-bugs-fixed}
 
-* Wenn ein Mitglied der Gruppe &quot;Mitarbeiter&quot;zum [!DNL Assets] Konsole, zusätzliche `POST` -Anfrage generiert, um eine Sammlung zu erstellen. Diese Anfrage ist nicht erforderlich. schlägt aufgrund von Berechtigungsproblemen fehl und führt zu vielen Fehlern in den Protokollen. (CQ-4328856)
+* Wenn ein Mitglied der Gruppe &quot;Mitarbeiter&quot;zum [!DNL Assets] Konsole, zusätzliche `POST` -Anfrage generiert, um eine Sammlung zu erstellen. Diese Anfrage ist nicht erforderlich. Sie schlägt aufgrund von Berechtigungsproblemen fehl und führt zu vielen Fehlern in den Protokollen. (CQ-4328856)
 * Wenn Benutzer ein Asset anzeigten und die [!UICONTROL Zeitleiste] im Popup-Menü im linken Bereich auswählten, wurde ein Fehler angezeigt. In den Protokollen wurden viele Warnungen aufgrund einer fehlerhaften Abfrage protokolliert. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -64,7 +64,7 @@ Sehen Sie sich das Video [Versionsübersicht August 2021](https://video.tv.adobe
 
 * **AcroForm-basiertes Datensatzdokument**: AEM Forms as a Cloud Service unterstützt neben XFA-basierten Formularvorlagen die Verwendung von [Adobe Acrobat Form PDF (AcroForm PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=de) als Vorlage für Datensatzdokumente (DoR, Documents of Record).
 
-* **Microsoft Azure-Datenspeicherungs-Connector**: Sie können jetzt das [Formulardatenmodell mit der Microsoft Azure-Datenspeicherung verbinden](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=de). Dadurch können Sie Daten aus adaptiven Formularen abrufen und in der Microsoft Azure-Datenspeicherung als BLOB speichern.
+* **Microsoft Azure-Datenspeicherungs-Connector**: Sie können jetzt das [Formulardatenmodell mit der Microsoft Azure-Datenspeicherung verbinden](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=de). Dadurch können Sie adaptive Formulardaten abrufen und in Microsoft Azure Storage as a BLOB speichern.
 
 ### Neue Funktionen in [!DNL Forms] im Kanal für die Vorabversion {#prerelease-features-forms}
 

@@ -1,17 +1,17 @@
 ---
 title: Externalisieren von URLs
-description: Der Externalizer ist ein OSGi-Service, der es Ihnen ermöglicht, Ressourcenpfade programmgesteuert in externe, absolute URLs umzuwandeln.
+description: Der Externalizer ist ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad programmgesteuert in eine externe und absolute URL umwandeln können.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 95%
+source-wordcount: '653'
+ht-degree: 82%
 
 ---
 
 # Externalisieren von URLs {#externalizing-urls}
 
-In AEM ist der **Externalizer** ein OSGi-Service, mit dem Sie einen Ressourcenpfad (z. B. `/path/to/my/page`) programmgesteuert in eine externe und absolute URL (z. B. `https://www.mycompany.com/path/to/my/page`) umwandeln können, indem der Pfad mit einem vorkonfigurierten DNS-Präfix versehen wird. 
+In AEM **Externalizer** ist ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad programmgesteuert umwandeln können (z. B. `/path/to/my/page`) in eine externe und absolute URL (zum Beispiel `https://www.mycompany.com/path/to/my/page`), indem dem Pfad ein vorkonfiguriertes DNS vorangestellt wird.
 
 Da eine AEM as a Cloud Service-Instanz ihre extern sichtbare URL nicht kennen kann und manchmal ein Link außerhalb des Anfragebereichs erstellt werden muss, bietet dieser Service eine zentrale Stelle, an der diese externen URLs konfiguriert und erstellt werden können.
 
@@ -44,7 +44,7 @@ Um die Werte `preview` und `publish` zu überschreiben, verwenden Sie Cloud Mana
 
 ## Konfigurieren des Externalizer-Service {#configuring-the-externalizer-service}
 
-Der Externalizer-Service ermöglicht es Ihnen, zentral mehrere Domains zu definieren, die für das programmgesteuerte Voranstellen in Ressourcenpfaden verwendet werden können. Der Externalizer-Service sollte nur für Programme mit einer einzelnen Domain verwendet werden.
+Mit dem Externalizer-Dienst können Sie zentral die Domäne definieren, die zum programmatischen Präfix von Ressourcenpfaden verwendet werden kann. Der Externalizer-Service sollte nur für Programme mit einer einzelnen Domain verwendet werden.
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ Definieren Sie eine Domain-Zuordnung für den Externalizer-Service wie folgt:
 
    >[!NOTE]
    >
-   >Mit einer benutzerdefinierten Konfiguration können Sie eine neue Kategorie hinzufügen, z. B. `production`, `staging` oder sogar externe Nicht-AEM-Systeme wie `my-internal-webservice`. Es ist nützlich, die Hartkodierung solcher URLs an verschiedenen Stellen in der Code-Basis eines Projekts zu vermeiden.
+   >Mit einer benutzerdefinierten Konfiguration können Sie eine neue Kategorie hinzufügen, z. B. `production`, `staging` oder auch externe AEM, wie `my-internal-webservice`. Es ist nützlich, die Hartkodierung solcher URLs an verschiedenen Stellen in der Code-Basis eines Projekts zu vermeiden.
 
 1. Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern.
 

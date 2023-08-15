@@ -2,10 +2,10 @@
 title: Journey für Autoren von AEM Commerce-Inhalten
 description: Beginnen Sie hier mit einer geführten Journey durch das AEM Commerce-Authoring
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -41,7 +41,7 @@ Informationen in dieser Journey können natürlich für andere Personen nützlic
 
 Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folgenden Artikel vermitteln Ihnen Grundlagenwissen und verlinken auf detaillierte technische Dokumentationen.
 
-Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Wenn Sie also neu bei AEM Content and Commerce sind, empfehlen wir Ihnen, am Anfang zu beginnen und nach und nach voranzuschreiten.
+Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Wenn Sie mit Content and Commerce noch nicht vertraut sind, empfiehlt Adobe daher, dass Sie am Anfang beginnen und den Prozess sequenziell fortsetzen.
 
 | Nummer | Artikel | Beschreibung |
 |---|---|---|

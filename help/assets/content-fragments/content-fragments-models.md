@@ -2,10 +2,10 @@
 title: Inhaltsfragmentmodelle (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für Ihre Headless-Inhalte dienen und wie Sie Inhaltsfragmente mit strukturierten Inhalten erstellen.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2901'
-ht-degree: 88%
+source-wordcount: '2898'
+ht-degree: 86%
 
 ---
 
@@ -51,7 +51,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 
    Nach dem Öffnen zeigt der Modell-Editor Folgendes an:
 
-   * left: bereits definierte Felder
+   * left: Felder bereits definiert
    * Rechts: verfügbare **Datentypen** für das Erstellen von Feldern (und **Eigenschaften**, die für erstellte Felder verwendet werden können)
 
    >[!NOTE]
@@ -236,7 +236,7 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 
 ### Inhaltsreferenz {#content-reference}
 
-Mit der Inhaltsreferenz können Sie Content aus einer anderen Quelle rendern, zum Beispiel ein Bild oder Inhaltsfragment.
+Mit der Inhaltsreferenz können Sie Inhalte aus einer anderen Quelle rendern, z. B. Bild oder Inhaltsfragment.
 
 Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
@@ -251,7 +251,7 @@ Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
 ### Fragmentreferenz (verschachtelte Fragmente) {#fragment-reference-nested-fragments}
 
-Die Fragmentreferenz verweist auf mindestens ein Inhaltsfragment. Diese Funktion ist besonders beim Abrufen von Content für die Verwendung in Ihrem Programm interessant, da sie es Ihnen ermöglicht, strukturierte Daten mit mehreren Ebenen abzurufen.
+Die Fragmentreferenz verweist auf mindestens ein Inhaltsfragment. Diese Funktion ist besonders beim Abrufen von Inhalten für die Verwendung in Ihrer App interessant, da sie es Ihnen ermöglicht, strukturierte Daten mit mehreren Ebenen abzurufen.
 
 Beispiel:
 
@@ -486,7 +486,7 @@ Sie können **Gesperrte** Modelle entweder aus der Konsole heraus oder im Modell
 
    * Sie können ein Modell zum Aktivieren von Bearbeitungen **Entsperren**.
 
-     Wenn Sie **Entsperren**, wird ein Warnhinweis angezeigt und Sie müssen die **Entsperren** Aktion:
+     Wenn Sie **Entsperren**, wird ein Warnhinweis angezeigt und Sie müssen die Variable **Entsperren** Aktion:
      ![Meldung beim Entsperren des Inhaltsfragmentmodells](assets/cfm-model-unlock-message.png)
 
      Anschließend können Sie das Modell zum Bearbeiten öffnen.

@@ -2,10 +2,10 @@
 title: Teilnehmen an Workflows
 description: Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1537'
-ht-degree: 92%
+source-wordcount: '1536'
+ht-degree: 91%
 
 ---
 
@@ -24,7 +24,7 @@ Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivitä
 
 Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), werden verschiedene Warnungen und/oder Benachrichtigungen angezeigt:
 
-* Ihre [Benachrichtigung](/help/sites-cloud/authoring/getting-started/inbox.md) Indikator (Symbolleiste) wird erhöht:
+* Ihre [Benachrichtigung](/help/sites-cloud/authoring/getting-started/inbox.md) Indikator (Symbolleiste) wird inkrementiert:
 
   ![Benachrichtigungssymbolleiste](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
@@ -163,7 +163,7 @@ Sie können auch die Zeitleiste verwenden, um einen Schritt zu delegieren und/od
 
 ### Wechseln zu einem vorherigen Teilnehmerschritt {#performing-step-back-on-a-participant-step}
 
-Wenn Sie erkennen, dass ein Schritt oder eine Reihe von Schritten wiederholt werden muss, können Sie zu einem vorherigen Schritt zurückkehren. Auf diese Weise können Sie einen früheren Schritt im Workflow zur erneuten Verarbeitung auswählen. Der Workflow kehrt zu dem von Ihnen angegebenen Schritt zurück und fährt dann von dort fort.
+Wenn Sie erkennen, dass ein Schritt oder eine Reihe von Schritten wiederholt werden muss, können Sie zu einem vorherigen Schritt zurückkehren. Auf diese Weise können Sie einen Schritt zur erneuten Verarbeitung auswählen, der zuvor im Workflow aufgetreten ist. Der Workflow kehrt zu dem von Ihnen angegebenen Schritt zurück und fährt dann von dort fort.
 
 Bei dieser Aktion können Sie Folgendes angeben:
 

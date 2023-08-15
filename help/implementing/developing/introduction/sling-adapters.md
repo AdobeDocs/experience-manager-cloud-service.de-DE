@@ -2,10 +2,10 @@
 title: Verwenden von Sling-Adaptern
 description: Mit Sling wird ein Adaptermuster zum bequemen Übersetzen von Objekten bereitgestellt, die zum Implementieren der Adaptable-Schnittstelle verwendet werden
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2214'
-ht-degree: 28%
+source-wordcount: '2213'
+ht-degree: 27%
 
 ---
 
@@ -54,7 +54,7 @@ Zur Verbesserung der Leistung dürfen Implementierungen das Objekt zwischenspeic
 
 Diese Zwischenspeicherung wird für alle auf `AdapterFactory` basierenden Fälle durchgeführt.
 
-Es gibt jedoch keine allgemeine Regel - das Objekt kann entweder eine neue oder eine vorhandene Instanz sein. Daher können Sie sich auf keines der beiden Verhalten verlassen. Es ist also – vor allem innerhalb von `AdapterFactory` – wichtig, dass Objekte bei diesem Szenario wiederverwendet werden können.
+Es gibt jedoch keine allgemeine Regel - das Objekt kann entweder eine neue oder eine vorhandene Instanz sein. Daher können Sie sich auf keines der beiden Verhaltensweisen verlassen. Es ist also – vor allem innerhalb von `AdapterFactory` – wichtig, dass Objekte bei diesem Szenario wiederverwendet werden können.
 
 ### Funktionsweise {#how-it-works}
 
@@ -93,11 +93,11 @@ Adaption von [**Resource**](https://developer.adobe.com/experience-manager/refer
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html">Map</a></td>
-   <td>Gibt eine Zuordnung der Eigenschaften zurück, wenn es sich um eine auf einem JCR-Knoten basierende Ressource handelt (oder eine andere Ressource, die Wertzuordnungen unterstützt)</td>
+   <td>Gibt eine Zuordnung der Eigenschaften zurück, wenn es eine auf einem JCR-Knoten basierende Ressource ist (oder eine andere Ressource, die Wertzuordnungen unterstützt)</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
-   <td>Gibt eine benutzerfreundliche Zuordnung der Eigenschaften zurück, wenn es sich um eine auf einem JCR-Knoten basierende Ressource handelt (oder eine andere Ressource, die Wertzuordnungen unterstützt). Kann (einfacher) auch durch die Verwendung von<br /> <code><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ResourceUtil.html">ResourceUtil.getValueMap(Resource)</a></code> (behandelt NULL-Groß-/Kleinschreibung usw.)</td>
+   <td>Gibt eine benutzerfreundliche Zuordnung der Eigenschaften zurück, wenn es eine auf einem JCR-Knoten basierende Ressource ist (oder eine andere Ressource, die Wertzuordnungen unterstützt). Kann (einfacher) auch durch die Verwendung von<br /> <code><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ResourceUtil.html">ResourceUtil.getValueMap(Resource)</a></code> (behandelt NULL-Groß-/Kleinschreibung usw.)</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">InheritanceValueMap</a></td>
@@ -105,7 +105,7 @@ Adaption von [**Resource**](https://developer.adobe.com/experience-manager/refer
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">ModifiableValueMap</a></td>
-   <td>Eine Erweiterung der <a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>, mit der Sie Eigenschaften auf diesem Knoten ändern können</td>
+   <td>Eine Erweiterung der <a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>, mit dem die Eigenschaften dieses Knotens geändert werden können</td>
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td>
@@ -113,7 +113,7 @@ Adaption von [**Resource**](https://developer.adobe.com/experience-manager/refer
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/net/URL.html">URL</a></td>
-   <td>Gibt eine URL für die Ressource zurück (Repository-URL dieses Knotens, wenn es eine auf einem JCR-Knoten basierende Ressource ist); jar bundle URL , wenn es eine Bundle-Ressource ist; Datei-URL, wenn es eine Dateisystemressource ist)</td>
+   <td>Gibt eine URL für die Ressource zurück (Repository-URL dieses Knotens, wenn es eine auf einem JCR-Knoten basierende Ressource ist; JAR-Bundle-URL, wenn es eine Bundle-Ressource ist; Datei-URL, wenn es eine Dateisystemressource ist)</td>
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/io/File.html">File</a></td>
@@ -141,7 +141,7 @@ Adaption von [**Resource**](https://developer.adobe.com/experience-manager/refer
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/components/Component.html">Komponente</a></td>
-   <td>Wenn es eine <code>cq:Component</code> Knotenressource</td>
+   <td>Wenn es sich um eine <code>cq:Component</code> Knoten resource</td>
   </tr>  
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/designer/Design.html">Design</a></td>
@@ -149,11 +149,11 @@ Adaption von [**Resource**](https://developer.adobe.com/experience-manager/refer
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Template.html">Vorlage  </a></td>
-   <td>Wenn es eine <code>cq:Template</code> Knotenressource</td>
+   <td>Wenn es sich um eine <code>cq:Template</code> Knoten resource</td>
   </tr>  
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/msm/api/Blueprint.html">Blueprint</a></td>
-   <td>Wenn es eine <code>cq:Template</code> Knotenressource</td>
+   <td>Wenn es sich um eine <code>cq:Template</code> Knoten resource</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/dam/api/Asset.html">Asset</a></td>
@@ -165,7 +165,7 @@ Adaption von [**Resource**](https://developer.adobe.com/experience-manager/refer
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/Tag.html">Tag</a></td>
-   <td>Wenn es eine <code>cq:Tag</code> Knotenressource</td>
+   <td>Wenn es sich um eine <code>cq:Tag</code> Knoten resource</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
@@ -181,7 +181,7 @@ Adaption von [**Resource**](https://developer.adobe.com/experience-manager/refer
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/SimpleSearch.html">SimpleSearch</a></td>
-   <td>Sucht unter der Ressource (oder verwenden Sie setSearchIn()), ob es sich um eine JCR-basierte Ressource handelt</td>
+   <td>Sucht unter der Ressource (oder verwenden Sie setSearchIn()), wenn es eine JCR-basierte Ressource ist</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/workflow/status/WorkflowStatus.html">WorkflowStatus</a></td>
@@ -193,15 +193,15 @@ Adaption von [**Resource**](https://developer.adobe.com/experience-manager/refer
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/connector/ConnectorResource.html">ConnectorResource</a></td>
-   <td>Gibt eine angepasste Connector-Ressource für bestimmte Typen zurück, wenn es sich um eine auf einem JCR-Knoten basierende Ressource handelt</td>
+   <td>Gibt eine angepasste Connector-Ressource für bestimmte Typen zurück, wenn es eine auf einem JCR-Knoten basierende Ressource ist</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/contentsync/config/package-summary.html">Config</a></td>
-   <td>Wenn es eine <code>cq:ContentSyncConfig</code> Knotenressource</td>
+   <td>Wenn es sich um eine <code>cq:ContentSyncConfig</code> Knoten resource</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>
-   <td>Wenn sie unter einer <code>cq:ContentSyncConfig</code> Knotenressource</td>
+   <td>Wenn sie unter einer <code>cq:ContentSyncConfig</code> Knoten resource</td>
   </tr>
  </tbody>
 </table>
@@ -331,7 +331,7 @@ Adaption von **[Template](https://developer.adobe.com/experience-manager/referen
 
 #### Sicherheit {#security}
 
-**Authorizable**, **Benutzer** und **Gruppe** angepasst an:
+**Authorizable**, **Benutzer**, und **Gruppe** angepasst an:
 
 | [Node](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Gibt den Stammknoten des Benutzers/der Gruppe zurück. |
 |---|---|

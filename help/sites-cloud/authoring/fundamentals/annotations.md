@@ -2,16 +2,16 @@
 title: Hinzufügen von Seitenanmerkungen
 description: Verwenden Sie den Anmerkungsmodus, um Anmerkungen und Skizzen auf den Seiten zu hinterlassen, so wie Sie Haftnotizen verwenden würden, um Ihren Prozess der Inhaltsüberprüfung zu unterstützen.
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 94%
+source-wordcount: '694'
+ht-degree: 87%
 
 ---
 
 # Hinzufügen von Seitenanmerkungen {#adding-page-annotations}
 
-Das Erstellen von Inhalten für Ihr digitales Erlebnis erfordert Diskussionen und Feedback vor der Veröffentlichung. Um diesen Feedback-Prozess zu unterstützen, können Sie mit AEM Anmerkungen zu Ihrem Inhalt hinzufügen.
+Das Erstellen von Inhalten für Ihr digitales Erlebnis erfordert Diskussionen und Feedback vor der Veröffentlichung. Um diesen Feedback-Prozess zu unterstützen, können AEM Anmerkungen zu Ihrem Inhalt hinzufügen.
 
 Bei einer Anmerkung wird eine einfache Skizze oder Notiz (stellen Sie sich eine echte Haftnotiz vor) auf der Seite platziert. Mit der Anmerkung können Sie Kommentare oder Fragen für andere Autoren und Prüfer hinterlassen.
 
@@ -51,7 +51,7 @@ Anmerkungen sind nur im Anmerkungsmodus sichtbar.
 
 ## Hinzufügen und Bearbeiten von Anmerkungen {#annotating-a-component}
 
-Neben der Anzeige der Anmerkungen können Sie im Anmerkungsmodus Anmerkungen für Ihre Inhalte erstellen, bearbeiten, verschieben oder löschen.
+Neben der Anzeige der Anmerkungen ermöglicht der Anmerkungsmodus das Erstellen, Bearbeiten, Verschieben oder Löschen von Anmerkungen in Ihrem Inhalt
 
 1. [Starten Sie den Anmerkungsmodus](#annotate-mode) auf der Seite.
 
@@ -63,7 +63,7 @@ Neben der Anzeige der Anmerkungen können Sie im Anmerkungsmodus Anmerkungen fü
 
    Hier können Sie das entsprechende Feld und/oder Symbol verwenden, um:
 
-   * Geben Sie den Anmerkungstext ein.
+   * den Anmerkungstext einzugeben.
    * Eine Zeichnung (Linien und Formen) erstellen, um den Bereich der Komponente hervorzuheben.
 
      ![Schaltfläche „Anmerkungszeichnung“](/help/sites-cloud/authoring/assets/annotation-sketch.png)

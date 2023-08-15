@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2931'
+source-wordcount: '2930'
 ht-degree: 97%
 
 ---
@@ -75,7 +75,7 @@ Gehen Sie wie folgt vor, um ein Standardverarbeitungsprofil zu erstellen:
 
 1. Administratoren greifen auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]** zu. Klicken Sie auf **[!UICONTROL Erstellen]**.
 1. Geben Sie einen Namen ein, der Ihnen hilft, das Profil beim Anwenden auf einen Ordner eindeutig zu identifizieren.
-1. Um FPO-Ausgabedarstellungen zu erzeugen, aktivieren Sie auf der Registerkarte **[!UICONTROL Bild]** die Option **[!UICONTROL FPO-Ausgabedarstellung erstellen]**. Eingabe einer **[!UICONTROL Qualität]** Wert von 1-100.
+1. Um FPO-Ausgabedarstellungen zu erzeugen, aktivieren Sie auf der Registerkarte **[!UICONTROL Bild]** die Option **[!UICONTROL FPO-Ausgabedarstellung erstellen]**. Geben Sie eine **[!UICONTROL Qualität]** Wert von 1-100.
 1. Um andere Ausgabedarstellungen zu erstellen, klicken Sie auf **[!UICONTROL Neu hinzufügen]** und geben Sie die folgenden Informationen ein:
 
    * Dateiname der jeweiligen Ausgabedarstellung.
@@ -246,7 +246,7 @@ Wenn keine Nachbearbeitung erforderlich ist, erstellen und verwenden Sie ein „
    * Titel: Deaktivieren des automatisch gestarteten Workflows
    * Name: disable-auto-start-workflow
 1. Wählen Sie __Fertig__ aus, um das Workflow-Modell zu erstellen.
-1. __Wählen__ Sie das neu erstellte Workflow-Modell aus und __bearbeiten__ Sie es.
+1. __Auswählen__ und __Bearbeiten__ das neu erstellte Workflow-Modell
 1. Wählen Sie im Workflow-Modell-Editor die Option __Schritt 1__ aus der Modelldefinition aus und löschen Sie sie.
 1. Öffnen Sie das __seitliche Bedienfeld__ und wählen Sie __Schritte__ aus.
 1. Ziehen Sie den Schritt __Abgeschlossener Prozess zum DAM-Workflow eines Asset-Updates__ in die Modelldefinition.

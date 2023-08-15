@@ -1,17 +1,17 @@
 ---
 title: Komponentenkonsole
-description: Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind.
+description: Mit der Komponentenkonsole können Sie alle für Ihre Instanz definierten Komponenten durchsuchen
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 81%
+source-wordcount: '273'
+ht-degree: 68%
 
 ---
 
 # Komponentenkonsole {#components-console}
 
-Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind, und wichtige Informationen für jede Komponente anzuzeigen.
+Mit der Komponentenkonsole können Sie alle für Ihre Instanz definierten Komponenten durchsuchen und wichtige Informationen zu den einzelnen Komponenten anzeigen.
 
 Auf sie kann über **Tools** > **Allgemein** > **Komponenten** zugegriffen werden. Da es keine Baumstruktur für Komponenten gibt, ist nur die Listenansicht verfügbar.
 
@@ -33,34 +33,34 @@ Um Details zu einer bestimmten Komponente anzuzeigen, tippen/klicken Sie auf die
 
 * **Eigenschaften**
 
-   ![Eigenschaften der Komponentenkonsole](/help/sites-cloud/authoring/assets/components-console-properties.png)
+  ![Eigenschaften der Komponentenkonsole](/help/sites-cloud/authoring/assets/components-console-properties.png)
 
-   In der Registerkarte „Eigenschaften“ haben Sie folgende Möglichkeiten:
+  In der Registerkarte „Eigenschaften“ haben Sie folgende Möglichkeiten:
 
    * Ansehen der allgemeinen Eigenschaften der Komponente
       * Sehen Sie sich an, wie das Symbol oder die Abkürzung für die Komponente definiert wurde. <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
-      * Durch Klicken auf die Quelle des Symbols gelangen Sie zu dieser Komponente.
+      * Wenn Sie auf die Quelle des Symbols klicken, gelangen Sie zu dieser Komponente.
    * Anzeigen der **Ressourcentyp** und **Resource Super Type** (sofern definiert) für die Komponente.
       * Wenn Sie auf den Ressourcen-Supertyp klicken, gelangen Sie zu dieser Komponente.
 
-   >[!NOTE]
-   >
-   >Da `/apps` zur Laufzeit nicht bearbeitet werden kann, ist die Komponentenkonsole schreibgeschützt.
+  >[!NOTE]
+  >
+  >Da `/apps` zur Laufzeit nicht bearbeitet werden kann, ist die Komponentenkonsole schreibgeschützt.
 
 * **Richtlinien**
 
-   ![Richtlinien der Komponentenkonsole](/help/sites-cloud/authoring/assets/components-console-policies.png)
+  ![Richtlinien der Komponentenkonsole](/help/sites-cloud/authoring/assets/components-console-policies.png)
 
 * **Live-Nutzung**
 
-   ![Live-Nutzung von Komponenten](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
+  ![Live-Nutzung von Komponenten](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
 
-   >[!CAUTION]
-   >
-   >Aufgrund der Art der Informationen, die für diese Ansicht erfasst werden, kann es eine Weile dauern, bis sie zusammengestellt/angezeigt wird.
+  >[!CAUTION]
+  >
+  >Aufgrund der Art der Informationen, die für diese Ansicht erfasst werden, kann es eine Weile dauern, bis sie zusammengestellt/angezeigt wird.
 
 * **Dokumentation**
 
-   Etwaige vom Entwickler für eine Komponente bereitgestellte Dokumentationen werden auf der Registerkarte **Dokumentation** angezeigt. Ist keine Dokumentation verfügbar, wird die Registerkarte **Dokumentation** nicht angezeigt. <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
+  Etwaige vom Entwickler für eine Komponente bereitgestellte Dokumentationen werden auf der Registerkarte **Dokumentation** angezeigt. Ist keine Dokumentation verfügbar, wird die Registerkarte **Dokumentation** nicht angezeigt. <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
 
-   ![Dokumentation zu Komponenten](/help/sites-cloud/authoring/assets/components-console-documentation.png)
+  ![Dokumentation zu Komponenten](/help/sites-cloud/authoring/assets/components-console-documentation.png)

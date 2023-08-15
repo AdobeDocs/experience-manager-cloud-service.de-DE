@@ -2,10 +2,10 @@
 title: Erste Schritte mit Cloud Acceleration Manager
 description: Auf dieser Seite erhalten Sie einen Überblick über die Verwendung und die ersten Schritte mit Cloud Acceleration Manager.
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 54%
+source-wordcount: '535'
+ht-degree: 51%
 
 ---
 
@@ -15,7 +15,7 @@ Cloud Acceleration Manager ist ein Cloud-basiertes Programm, das IT-Teams währe
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie mehr über die ersten Schritte mit Cloud Acceleration Manager (CAM). Nach dem Lesen sollten Sie Folgendes können:
+In diesem Dokument erfahren Sie mehr über die ersten Schritte mit Cloud Acceleration Manager (CAM). Nach dem Lesen sollten Sie in der Lage sein,
 
 * verstehen, wie Sie sich in CAM anmelden und
 * Ihr Projekt über die CAM-Benutzeroberfläche erstellen.
@@ -28,11 +28,11 @@ Cloud Acceleration Manager (CAM) bietet eine zentrale Anlaufstelle für Migratio
 
 Führen Sie die nachfolgenden Schritte aus, um Cloud Acceleration Manager (CAM) aufzurufen:
 
-1. Anmelden bei [Adobe Experience Cloud](https://experience.adobe.com).
+1. Melden Sie sich bei [Adobe Experience Cloud](https://experience.adobe.com).
 
-1. Klicken **Experience Manager** Karte.
+1. Klicks **Experience Manager** Karte.
 
-1. Klicken **Launch** von **Cloud Acceleration Manager** -Karte, damit Sie die Landingpage öffnen können.
+1. Klicks **Launch** aus dem **Cloud Acceleration Manager** -Karte, damit Sie die Landingpage öffnen können.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-1.png)
 
@@ -44,11 +44,11 @@ Führen Sie die nachfolgenden Schritte aus, um Cloud Acceleration Manager (CAM) 
 >abstract="Erstellen Sie Ihr Projekt und beschleunigen Sie Ihre Umstellung zu Adobe Experience Manager as a Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=de" text="Vorteile der Verwendung von Cloud Acceleration Manager"
 
-Über die Landingpage von Cloud Acceleration Manager (CAM) können mehrere Projekte erstellt und bearbeitet werden.
+Über die Landingpage des Cloud Acceleration Managers (CAM) können mehrere Projekte erstellt und bearbeitet werden.
 
 Gehen Sie wie folgt vor, um ein Projekt zu erstellen:
 
-1. Klicken **Projekt erstellen** von der Landingpage aus.
+1. Klicks **Projekt erstellen** von der Landingpage aus.
 
    ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/cam-2.png)
 
@@ -75,7 +75,7 @@ Sie können den Projektnamen, die Beschreibung und die Miniatur bearbeiten oder 
 
 Gehen Sie wie folgt vor, um Ihr Projekt zu bearbeiten:
 
-1. Wählen Sie das Projekt aus, bewegen Sie den Mauszeiger über das Projekt und klicken Sie auf das Stiftsymbol, damit Sie das Projekt öffnen, wie in der folgenden Abbildung dargestellt.
+1. Wählen Sie das Projekt aus, bewegen Sie den Mauszeiger über das Projekt und klicken Sie auf das Stiftsymbol, damit Sie die Bearbeitung des Projekts öffnen, wie in der folgenden Abbildung dargestellt.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
@@ -83,7 +83,7 @@ Gehen Sie wie folgt vor, um Ihr Projekt zu bearbeiten:
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-edit.png)
 
-1. Klicken **Aktualisieren** um Ihre Änderungen zu übernehmen.
+1. Klicks **Aktualisieren** , um Ihre Änderungen zu übernehmen.
 
 ### Löschen des Projekts {#delete-project}
 
@@ -93,7 +93,7 @@ Gehen Sie wie folgt vor, um Ihr Projekt zu löschen:
 
    ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
-1. Klicken **Löschen** , um den Schritt zu bestätigen.
+1. Klicks **Löschen** , um den Schritt zu bestätigen.
 
 ## Wie geht es weiter {#whats-next}
 

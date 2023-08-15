@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 86da8e784e3e5ff034efdb9186cf134d4b1c6e9c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2482'
 ht-degree: 67%
 
 ---
@@ -38,7 +38,7 @@ Adaptive Formulare bieten Ihnen die Möglichkeit, interaktive, responsive und dy
 * **Verwendung einer XML-Schemadefinition (XSD) oder eines JSON-Schemas** XML- und JSON-Schemas stellen die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Sie können das Schema mit einem adaptiven Formular verknüpfen und dem Formular mithilfe der Elemente dieses Schemas dynamische Inhalte hinzufügen. Die Elemente des Schemas stehen beim Authoring von Adaptive Forms auf der Registerkarte Datenmodellobjekte des Inhaltsbrowsers zur Verfügung.
 
 * **Verwenden von &quot;none&quot;oder &quot;without&quot;(Formularmodell)**
-Adaptive Forms, die mit dieser Option erstellt wurde, verwendet kein Formularmodell. Die XML-Datendatei, die aus diesen Formularen generiert wird, hat eine flache Struktur mit Feldern und entsprechenden Werten.
+Die mit dieser Option erstellte adaptive Forms verwendet kein Formularmodell. Die XML-Datendatei, die aus diesen Formularen generiert wird, hat eine flache Struktur mit Feldern und entsprechenden Werten.
 
   >[!NOTE]
   >
@@ -67,7 +67,7 @@ Wenn Sie ein neues adaptives Formular erstellen oder ein vorhandenes bearbeiten,
 
 ### Randleiste {#sidebar}
 
-Die Seitenleiste ermöglicht Ihnen Folgendes:
+In der Seitenleiste können Sie
 
 * Suchen, Anzeigen und Verwenden von Assets in Ihrem DAM (AEM Digital Asset Management)-Repository.
 * Anzeigen von Formularinhalt wie Bereichen, Komponenten, Feldern und Layout.
@@ -91,7 +91,7 @@ Im Inhalt-Browser können Sie Folgendes anzeigen:
 
    * **Datenmodellobjekte**
 Hiermit können Sie die Formularmodellhierarchie anzeigen.
-Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adaptive Formular ziehen. Die hinzugefügten Elemente werden automatisch in Formularkomponenten konvertiert, während ihre ursprünglichen Eigenschaften beibehalten werden. Sie können Datenmodellobjekte anzeigen, wenn Ihr Formular ein XML-Schema, ein JSON-Schema oder eine XDP-Vorlage verwendet.
+Sie können Formularmodellelemente per Drag-and-Drop in das adaptive Formular ziehen. Die hinzugefügten Elemente werden automatisch in Formularkomponenten konvertiert, während ihre ursprünglichen Eigenschaften beibehalten werden. Sie können Datenmodellobjekte anzeigen, wenn Ihr Formular ein XML-Schema, ein JSON-Schema oder eine XDP-Vorlage verwendet.
 
 * **Eigenschaften-Browser**
 
@@ -175,7 +175,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
   </tr>
   <tr>
    <td>Bild</td>
-   <td>Ermöglicht es Ihnen, ein Bild einzufügen.</td>
+   <td>Ermöglicht das Einfügen eines Bildes.</td>
   </tr>
   <tr>
    <td>Bildauswahl</td>
@@ -231,7 +231,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
   </tr>
   <tr>
    <td>Text</td>
-   <td>Ermöglicht die Angabe von statischem Text.</td>
+   <td>Hier können Sie statischen Text angeben.</td>
   </tr>
   <tr>
    <td>Senden-Schaltfläche</td>
@@ -331,13 +331,13 @@ Wenn Sie beispielsweise für ein Textfeld auf **[!UICONTROL Übergeordnet]** tip
 * Unterabschnitt
 * Abschnitt
 * guideRootPanel
-* Container für adaptive Formulare
+* Adaptiver Formularcontainer
 
 J. **sonstige**: Bietet weitere Optionen zum Arbeiten mit der ausgewählten Komponente.
 
 * SOM-Ausdruck anzeigen
-* Speichern eines Bedienfelds als Fragment (nur für Bedienfelder)
-* Untergeordnetes Bedienfeld hinzufügen (nur für Bedienfelder)
+* Bereich als Fragment speichern (nur für Bereiche)
+* Untergeordneten Bereich hinzufügen (nur für Bereiche)
 * Bedienfeld-Symbolleiste hinzufügen (nur für Bereiche)
 * Ersetzen (nicht für Bedienfelder)
 
@@ -353,10 +353,10 @@ Die Inhaltsstruktur enthält in der Regel die folgenden Hauptkomponenten:
 
    * *Mobile-Layout des adaptiven Formulars*: Definiert die Darstellung des Formulars auf mobilen Geräten.
    * *Dankeseite*: Definiert die Seite, auf die der Benutzer nach dem Senden des Formulars umgeleitet wird.
-   * *Übermittlungsaktion*: Definiert, wie das Formular auf dem Server verarbeitet wird, sobald der Benutzer das Formular sendet.
+   * *Übermittlungsaktion*: Definiert, wie das Formular auf dem Server verarbeitet wird, nachdem der Benutzer das Formular gesendet hat.
    * *Formatierung*: Gibt den Pfad zur CSS-Datei an, die zum Anpassen des Erscheinungsbilds des Formulars verwendet wird.
 
-* **rootPanel**: Der Stammbereich eines adaptiven Formulars. Sie kann Unterbereiche unter dem Elementknoten enthalten. Jedem Bedienfeld einschließlich des Stammbereichs kann ein Layout zugeordnet sein. Das Layout des Bedienfelds bestimmt das Layout des Formulars. Im Akkordeonlayout beispielsweise werden die Elemente als Akkordeonschritte angeordnet.
+* **rootPanel**: Der Stammbereich eines adaptiven Formulars. Sie kann Unterbereiche unter dem Elementknoten enthalten. Jedem Bedienfeld, einschließlich des Stammbereichs, kann ein Layout zugeordnet sein. Das Layout des Bedienfelds bestimmt das Layout des Formulars. Im Akkordeonlayout beispielsweise werden die Elemente als Akkordeonschritte angeordnet.
 
 * **Symbolleiste**: Ein Container für ein adaptives Formular verfügt über eine zugehörige Symbolleiste, die global für das Formular verfügbar ist. Diese Symbolleiste kann mit der Aktion **[!UICONTROL Symbolleiste hinzufügen]** in der Bearbeitungsleiste hinzugefügt werden. Damit können Autoren Aktionen wie Übermitteln, Speichern, Zurücksetzen usw. hinzufügen.
 

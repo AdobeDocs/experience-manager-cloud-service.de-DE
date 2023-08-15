@@ -2,10 +2,10 @@
 title: Grundlagen zum Authoring
 description: Erfahren Sie mehr über die Konzepte und Mechanismen sw Authoring für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 85%
+source-wordcount: '1714'
+ht-degree: 83%
 
 ---
 
@@ -50,7 +50,7 @@ Wie bei den meisten Systemen müssen Sie sich anmelden. Als Autor erhalten Sie F
 * Passwort
 * Link zum Zugriff auf den Anmeldebildschirm
 
-Ihr Konto wurde mit den erforderlichen Berechtigungen konfiguriert. Sollten Sie Probleme haben, empfehlen wir Ihnen, sich an Ihr internes Projektunterstützungsteam zu wenden.
+Ihr Konto wurde mit den erforderlichen Berechtigungen konfiguriert. Wenn Sie Probleme haben, empfiehlt Adobe, sich an Ihr internes Projektunterstützungsteam zu wenden.
 
 ### Navigation {#navigation}
 

@@ -2,10 +2,10 @@
 title: Implementierungsphase
 description: Sicherstellen, dass Ihr Code und die Inhalte für die Migration in die Cloud bereit sind
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2337'
-ht-degree: 92%
+source-wordcount: '2339'
+ht-degree: 89%
 
 ---
 
@@ -59,7 +59,7 @@ Mit diesem Tool können Sie die gewünschte Teilmenge Ihrer Inhalte angeben, die
 
 Die Migration von Inhalten ist ein mehrstufiger Prozess, der die Planung, Verfolgung und Zusammenarbeit zwischen verschiedenen Teams erfordert.
 
-Eine ausführliche Beschreibung der Funktionsweise des Tools und seiner empfohlenen Verwendung finden Sie im Abschnitt [Dokumentation zum Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
+Eine vollständige Beschreibung der Funktionsweise des Tools und der empfohlenen Verwendung durch Adobe finden Sie in der [Dokumentation zum Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 ## Code-Refaktorierung {#code-refactor}
 
@@ -112,7 +112,7 @@ Sobald Sie die lokale Entwicklungsumgebung eingerichtet haben, sollten Sie sich 
 
 ### Planen eines Code-Freeze {#schedule-a-code-freeze}
 
-Um Ihre laufende Code-Entwicklung in Ihrem aktiven AEM zusammen mit der Code-Refaktorierung als Teil Ihrer Umstellung zu verwalten, wird empfohlen, eine Code-Freeze-Periode einzuplanen, bis Sie die Neustrukturierung Ihres Maven-Projekts für die Kompatibilität mit AEM as a Cloud Service abgeschlossen haben.
+Um Ihre laufende Codeentwicklung auf Ihrer aktiven AEM zusammen mit den Code-Refaktorierungsaufgaben im Rahmen der Journey der Umstellung zu verwalten, empfiehlt Adobe, einen Code-Freeze-Zeitraum zu planen, bis Sie die Umstrukturierung Ihres Maven-Projekts abgeschlossen haben und damit mit AEM as a Cloud Service kompatibel sind.
 
 Sobald die Neustrukturierung des Projekts abgeschlossen ist, können Sie die Entwicklung neuen Codes basierend auf dieser neuen Struktur fortsetzen. Dadurch werden Cloud Manager-Pipeline-Fehler bei der Code-Bereitstellung und beim Testen reduziert.
 

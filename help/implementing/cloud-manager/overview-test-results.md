@@ -2,10 +2,10 @@
 title: Übersicht über Cloud Manager-Tests
 description: Verschaffen Sie sich einen Überblick über die drei Arten von Tests, die Cloud Manager automatisch durchführt, um die Qualität Ihres benutzerspezifischen Codes sicherzustellen.
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 100%
+source-wordcount: '162'
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ Es gibt drei allgemeine Testkategorien, die von Cloud Manager für Cloud Service
 
 1. [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   * Das Testen mit Experience Audit ist in allen Cloud Manager-Produktions-Pipelines aktiviert und kann nicht übersprungen werden.
+   * Der Erlebnisprüfungstest ist in allen Cloud Manager-Produktions-Pipelines aktiviert und kann nicht übersprungen werden.
 
 Diese Tests können folgendermaßen sein:
 
