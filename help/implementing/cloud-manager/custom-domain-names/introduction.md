@@ -1,11 +1,11 @@
 ---
 title: Einführung in benutzerdefinierte Domain-Namen
-description: Mit der Benutzeroberfläche von Cloud Manager können Sie per Self-Service eine benutzerdefinierte Domain hinzufügen, um Ihre Site mit einem eindeutigen, markenspezifischen Namen zu identifizieren.
+description: Über die Benutzeroberfläche von Cloud Manager können Sie eine benutzerdefinierte Domäne hinzufügen, um Ihre Site mit einem eindeutigen Markennamen auf Self-Service-Art zu identifizieren.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 93%
+source-wordcount: '757'
+ht-degree: 74%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_domains"
 >title="Verwalten von benutzerdefinierten Domain-Namen"
->abstract="Mit der Benutzeroberfläche von Cloud Manager können Sie per Self-Service eine benutzerdefinierte Domain hinzufügen, um Ihre Site mit einem eindeutigen, markenspezifischen Namen zu identifizieren."
+>abstract="Über die Benutzeroberfläche von Cloud Manager können Sie eine benutzerdefinierte Domäne hinzufügen, um Ihre Site mit einem eindeutigen Markennamen auf Self-Service-Art zu identifizieren."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html?lang=de" text="Hinzufügen eines benutzerdefinierten Domain-Namens"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html?lang=de" text="Benutzerdefinierte Domain-Namen anzeigen und aktualisieren"
 
-Mit der Benutzeroberfläche von Cloud Manager können Sie per Self-Service eine benutzerdefinierte Domain hinzufügen, um Ihre Site mit einem eindeutigen, markenspezifischen Namen zu identifizieren. Adobe Experience Manager as a Cloud Service wird mit einem Standard-Domain-Namen bereitgestellt, der auf `*.adobeaemcloud.com` endet. Dieser Name bleibt selbst dann bestehen, wenn Sie Ihrer Website benutzerdefinierte Domain-Namen zuordnen.
+Über die Benutzeroberfläche von Cloud Manager können Sie eine benutzerdefinierte Domäne hinzufügen, um Ihre Site mit einem eindeutigen Markennamen auf Self-Service-Art zu identifizieren. Adobe Experience Manager as a Cloud Service wird mit einem Standard-Domain-Namen bereitgestellt, der auf `*.adobeaemcloud.com` endet. Dieser Name bleibt selbst dann bestehen, wenn Sie Ihrer Website benutzerdefinierte Domain-Namen zuordnen.
 
 ## Was sind benutzerdefinierte Domain-Namen? {#what-are-custom-domain-names}
 
-Jeder Website ist eine eindeutige, von Computern lesbare, numerische Adresse zugeordnet, z. B. `184.33.123.64`. Das Domain Name System (DNS) ermöglicht es Ihnen, benutzerdefinierte Marken-Domains an Websites anzuhängen, indem numerische Adressen in einprägsame Adressen wie `wknd.com` übersetzt werden.
+Jeder Website ist eine eindeutige, von Computern lesbare, numerische Adresse zugeordnet, z. B. `184.33.123.64`. Das Domain Name System (DNS) ermöglicht es Ihnen, benutzerdefinierte Markendomänen an Websites anzuhängen, indem numerische Adressen in speicherbare Adressen wie `wknd.com`.
 
 Es empfiehlt sich, einen Domain-Namen für Ihre Site zu verwenden, der für Ihre Kunden einprägsam ist und Ihre Marke widerspiegelt.
 
@@ -35,12 +35,12 @@ Sie können einen Domain-Namen von einer Registrierungsstelle für Domain-Namen 
 
 ## Benutzerdefinierte Domänennamen und BYO-CDNs {#byo-cdn}
 
-AEM as a Cloud Service bietet einen integrierten CDN-Dienst (Content Delivery Network), ermöglicht Ihnen aber auch, Ihr eigenes CDN (BYO) für die Verwendung mit AEM bereitzustellen. Benutzerdefinierte Domänen können entweder im AEM verwalteten CDN oder einem von Ihnen verwalteten CDN installiert werden.
+AEM as a Cloud Service bietet einen integrierten Content Delivery Network (CDN)-Dienst, ermöglicht aber auch das Einbringen eines eigenen CDN (BYO) zur Verwendung mit AEM. Benutzerdefinierte Domänen können entweder im AEM verwalteten CDN oder einem von Ihnen verwalteten CDN installiert werden.
 
 * Benutzerdefinierte Domänennamen (und Zertifikate), die im AEM verwalteten CDN installiert sind, werden über Cloud Manager verwaltet.
 * Benutzerdefinierte Domänennamen (und Zertifikate), die in Ihrem eigenen CDN installiert sind, werden in diesem spezifischen CDN verwaltet.
 
-Domänen, die in Ihrem eigenen CDN verwaltet werden, müssen nicht über Cloud Manager installiert werden. Sie werden AEM über den X-Forwarded-Host zur Verfügung gestellt und entsprechen den im Dispatcher definierten vhosts. Siehe [CDN-Dokumentation](/help/implementing/dispatcher/cdn.md).
+Domänen, die in Ihrem eigenen CDN verwaltet werden, müssen nicht über Cloud Manager installiert werden. Sie werden AEM über den X-Forwarded-Host zur Verfügung gestellt und stimmen mit den im Dispatcher definierten vhosts überein. Siehe [CDN-Dokumentation](/help/implementing/dispatcher/cdn.md).
 
 In einer Umgebung können Sie beide Domänen im von AEM verwalteten CDN und in Ihrem eigenen CDN installiert haben.
 
@@ -70,8 +70,8 @@ Die Verwendung benutzerdefinierter Domain-Namen mit AEMaaCS unterliegt einer Rei
 
 * Benutzerdefinierte Domänennamen werden in Cloud Manager für Veröffentlichungs- und Vorschau-Services für Sites-Programme unterstützt. Benutzerdefinierte Domänen für Autoren-Services werden nicht unterstützt.
 * Jede Cloud Manager-Umgebung kann bis zu 500 benutzerdefinierte Domänen pro Umgebung hosten.
-* Domänennamen können nicht zur Umgebung hinzugefügt werden, solange eine laufende Pipeline an diese Umgebung angeschlossen ist.
-* Derselbe Domänenname kann nicht in mehreren Umgebungen verwendet werden.
+* Domänennamen können nicht zu Umgebungen hinzugefügt werden, solange eine aktuelle, laufende Pipeline mit diesen Umgebungen verbunden ist.
+* Derselbe Domänenname kann nicht in mehr als einer Umgebung verwendet werden.
 * Es kann jeweils nur ein Domain-Name hinzugefügt werden.
 * AEM as a Cloud Service unterstützt keine Platzhalterdomänen `*.example.com`.
 * Vor dem Hinzufügen eines benutzerdefinierten Domänennamens muss ein gültiges SSL-Zertifikat, das den benutzerdefinierten Domänennamen enthält, für Ihr Programm installiert werden (Platzhalterzertifikate sind gültig). Siehe [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) , um mehr zu erfahren.
