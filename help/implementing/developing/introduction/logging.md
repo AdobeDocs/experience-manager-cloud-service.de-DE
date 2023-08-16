@@ -2,10 +2,10 @@
 title: Protokollieren für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie mithilfe der Protokollierung für AEM as a Cloud Service globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festlegen oder die Datenprotokollierung anfordern können.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 2fcc33cfb8b0be89b4b9f91d687dc21ba456000c
 workflow-type: tm+mt
-source-wordcount: '2375'
-ht-degree: 91%
+source-wordcount: '2683'
+ht-degree: 81%
 
 ---
 
@@ -17,6 +17,7 @@ Die Protokollierung und Protokollierungsebenen in AEM as a Cloud Service werden 
 
 * AEM-Protokollierung, die die Protokollierung auf AEM-Programmebene durchführt,
 * Apache HTTPD Web Server-/Dispatcher-Protokollierung, die die Protokollierung des Webservers und Dispatchers in der Veröffentlichungsstufe durchführt.
+* Die CDN-Protokollierung, die, wie ihr Name anzeigt, die Protokollierung im CDN durchführt. Diese Funktion steht derzeit frühen Anwendern zur Verfügung. Um am frühen Adoptivprogramm teilzunehmen, senden Sie eine E-Mail an **aemcs-cdnlogs-adopter@adobe.com**, einschließlich des Namens Ihrer Organisation und des Kontexts, in dem Sie an der Funktion interessiert sind.
 
 ## AEM-Protokollierung {#aem-logging}
 
@@ -498,6 +499,57 @@ Define DISP_LOG_LEVEL debug
 >[!NOTE]
 >
 >Bei AEM as a Cloud Service-Umgebungen ist „debug“ die maximale Ausführlichkeitsstufe. Die Trace-Protokollebene wird nicht unterstützt. Daher sollten Sie beim Arbeiten in Cloud-Umgebungen vermeiden, sie festzulegen.
+
+## CDN-Protokoll {#cdn-log}
+
+>[!NOTE]
+>
+>Diese Funktion ist noch nicht allgemein verfügbar. Um dem laufenden Programm für frühe Nutzer beizutreten, senden Sie eine E-Mail **aemcs-cdnlogs-adopter@adobe.com**, einschließlich des Namens Ihrer Organisation und des Kontexts, in dem Sie an der Funktion interessiert sind.
+>
+
+AEM as a Cloud Service bietet Zugriff auf CDN-Protokolle, die für Anwendungsfälle nützlich sind, einschließlich der Optimierung der Cache-Trefferquote. Das CDN-Protokollformat kann nicht angepasst werden und es gibt kein Konzept, es auf verschiedene Modi wie Info, Warn oder Fehler festzulegen.
+
+**Beispiel**
+
+```
+{
+"timestamp": "2023-05-26T09:20:01+0000",
+"ttfb": 19,
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"rid": "974e67f6",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"host": "example.com",
+"url": "/content/hello.png",
+"method": "GET",
+"res_ctype": "image/png",
+"cache": "PASS",
+"status": 200,
+"res_age": 0,
+"pop": "PAR"
+}
+```
+
+**Protokollformat**
+
+Die CDN-Protokolle unterscheiden sich von den anderen Protokollen insofern, als sie einem JSON-Format entsprechen.
+
+| **Feldname** | **Beschreibung** |
+|---|---|
+| *timestamp* | Der Zeitpunkt, zu dem die Anfrage nach TLS-Beendigung gestartet wurde |
+| *ttfb* | Abkürzung für *Zeit bis zum ersten Byte*. Das Zeitintervall zwischen der Anfrage begann bis zu dem Punkt, an dem der Antworttext mit dem Streaming begann. |
+| *cli_ip* | Die Client-IP-Adresse. |
+| *cli_country* | Zweibuchstaben [ISO 3166-1](https://de.wikipedia.org/wiki/ISO_3166-1) Alpha-2-Ländercode für das Client-Land. |
+| *rid* | Der -Wert des Anforderungsheaders, der zur eindeutigen Identifizierung der Anfrage verwendet wird. |
+| *req_ua* | Der Benutzeragent, der für die Ausführung einer bestimmten HTTP-Anforderung verantwortlich ist. |
+| *host* | Die Behörde, für die der Antrag bestimmt ist. |
+| *url* | Der vollständige Pfad, einschließlich Abfrageparametern. |
+| *method* | Vom Client gesendete HTTP-Methode, z. B. &quot;GET&quot;oder &quot;POST&quot;. |
+| *res_ctype* | Der Content-Type, der den ursprünglichen Medientyp der Ressource angibt. |
+| *cache* | Status des Caches. Mögliche Werte sind HIT, MISS oder PASS |
+| *status* | Der HTTP-Statuscode als ganzzahliger Wert. |
+| *res_age* | Die Zeit (in Sekunden), die eine Antwort zwischengespeichert wurde (in allen Knoten). |
+| *pop* | Rechenzentrum des CDN-Cache-Servers |
 
 ## Zugriff auf Protokolle {#how-to-access-logs}
 
