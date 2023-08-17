@@ -3,10 +3,10 @@ title: Unterschiede zwischen AEM 6.5 Forms und AEM Cloud Services
 description: Verwenden Sie Experience Manager Forms und möchten auf Adobe Experience Manager Forms as a Cloud Service aktualisieren? Vergleichen Sie AEM 6.5 Forms und AEM Cloud Services und lernen Sie die wichtigsten Änderungen kennen, bevor Sie ein Upgrade durchführen oder zu Cloud Service migrieren.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: fa71eb6317314dc8c3540cd0ebb8afaa75d55a59
 workflow-type: tm+mt
-source-wordcount: '1417'
-ht-degree: 97%
+source-wordcount: '1343'
+ht-degree: 92%
 
 ---
 
@@ -60,11 +60,11 @@ Adobe Experience Manager Forms as a Cloud Service enthält einige wichtige Ände
 
 * **XSD-basierte adaptive Formulare**: Sie können eine XDP-Vorlage verwenden, um eine Vorlage für das Datensatzdokument zu entwerfen. Der Dienst unterstützt keine XFA-basierten adaptiven Formulare
 
-* **Komponenten**: Sie können [Kernkomponenten für adaptive Formulare](/help/forms/creating-adaptive-form-core-components.md) verwenden, um Ihre Formulare zu gestalten. Diese Komponenten basieren auf WCM-Kernkomponenten, befolgen BEM-Standards und können einfach angepasst werden. Der Dienst unterstützt keinen formularinternen Unterzeichnungsvorgang und enthält nicht die Zusammenfassungs- und Überprüfungskomponenten für adaptive Formulare.
+* **Komponenten**: Der Dienst unterstützt keine Formularsignaturerfahrung und enthält nicht die Komponenten &quot;Zusammenfassung&quot;und &quot;Überprüfen&quot;für adaptives Formular.
+
+* **Assistent-Benutzeroberfläche:** Sie können die [Assistent-Benutzeroberfläche](/help/forms/creating-adaptive-form-core-components.md) , um die allgemeinen Optionen schnell zu konfigurieren und einfach ein adaptives Formular zu erstellen.
 
 ## Formularportal
-
-* Sie können die Komponenten „Search &amp; Lister“, „Drafts and Submission“ und „Link“ vom Formularportal verwenden, um Formulare für angemeldete Benutzende aufzulisten. Die anonyme Nutzung des Formularportals steht gemäß der Vorkonfiguration (OOTB) nicht zur Verfügung. Sie können das Formularportal anpassen, um die Anzeige von Formularen für nicht angemeldete Benutzende zu aktivieren.
 
 * Der Dienst speichert keine Metadaten für Entwürfe und übermittelte adaptive Formulare.
 
@@ -85,7 +85,7 @@ Forms as a Cloud Service stellt RESTful-APIs für die Dokumenterstellung und Dok
 
 ## Datenintegration (Formulardatenmodell)
 
-* Der Dienst unterstützt auch JDBC-Connector, Microsoft Dynamics, SalesForce, SOAP-basierte Web-Dienste und Dienste, die OData unterstützen.
+* Der Dienst unterstützt auch Microsoft Dynamics, SalesForce, SOAP-basierte Webdienste und Dienste, die OData unterstützen.
 
 * Sie können auch AEM-Benutzerprofile verbinden, um Benutzerinformationen abzurufen und zu aktualisieren.
 
@@ -96,8 +96,6 @@ Forms as a Cloud Service stellt RESTful-APIs für die Dokumenterstellung und Dok
 
 ## Elektronische Signatur
 
-* Der Dienst bietet eine OOTB-Integration mit Adobe Sign und unterstützt DocuSign für E-Signaturen.
-
 * Der Dienst unterstützt auch Adobe Sign-Rollen. Sie können die Rollen im Editor für adaptive Formulare für Business-Anwenderinnen und -Anwender konfigurieren, um die Signatur-Workflows einfach zu gestalten.
 
 
@@ -105,7 +103,7 @@ Forms as a Cloud Service stellt RESTful-APIs für die Dokumenterstellung und Dok
 
 * Sie können eine AEM 6.5 Forms-Umgebung verwenden, um:
 
-   * Ihre XDP-basierten Formulare als HTML5 Formulare zu rendern. Der Service unterstützt keine HTML5-Formulare (Mobile Forms).
+   * Ihre XDP-basierten Formulare als HTML5 Formulare zu rendern. Der Dienst unterstützt keine HTML5 Forms.
 
    * Daten offline zu erfassen und zu synchronisieren, wenn Sie das nächste Mal mit der [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html?lang=de)-App online gehen.
 
