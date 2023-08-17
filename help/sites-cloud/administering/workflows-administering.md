@@ -1,11 +1,11 @@
 ---
 title: Verwalten der Workflow-Instanzen
-description: Erfahren Sie, wie Workflow-Instanzen verwaltet werden
+description: Erfahren Sie, wie Workflow-Instanzen verwaltet werden mithilfe der Workflow-Konsole
 feature: Administering
 role: Admin
-source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1288'
 ht-degree: 77%
 
 ---
@@ -27,7 +27,7 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
 
 1. Wählen Sie über die Navigation **Tools** und dann **Workflow** aus.
 1. Auswählen **Instanzen** , um die Liste der laufenden Workflow-Instanzen anzuzeigen, die derzeit ausgeführt werden.
-1. In der oberen Leiste in der rechten Ecke werden die Workflow-Instanzen angezeigt **Workflows ausführen**, **Status** und **Details**.
+1. In der oberen Leiste in der rechten Ecke werden die Workflow-Instanzen angezeigt **Workflows ausführen**, **Status**, und **Details**.
 1. **Workflows ausführen** zeigt die Anzahl der ausgeführten Workflows und ihren Status an. In den angegebenen Bildern ist beispielsweise die Anzahl der **Workflows ausführen** und **Status** AEM Instanz:
 
    * **Status: Gesund**
@@ -191,7 +191,7 @@ Sie können die maximale Größe des Posteingangs durch die Konfiguration des **
 
 ## Verwenden von Workflow-Variablen für kundeneigene Datenspeicher {#using-workflow-variables-customer-datastore}
 
-Von Workflows verarbeitete Daten werden im von Adobe bereitgestellten Speicher (JCR) gespeichert. Diese Daten können von sensibler Natur sein. Sie können alle benutzerdefinierten Metadaten/Daten in Ihrem eigenen verwalteten Speicher speichern, anstatt dass die Adobe bereitgestellt wird. In diesen Abschnitten wird beschrieben, wie Sie diese Variablen für die externe Speicherung einrichten.
+Von Workflows verarbeitete Daten werden im von Adobe bereitgestellten Speicher (JCR) gespeichert. Diese Daten können von sensibler Natur sein. Sie können alle benutzerdefinierten Metadaten/Daten in Ihrem eigenen verwalteten Speicher speichern, anstatt sie im Adobe-Speicher abzulegen. In diesen Abschnitten wird beschrieben, wie Sie diese Variablen für die externe Speicherung einrichten.
 
 ### Festlegen des Modells für die Verwendung der externen Datenspeicherung von Metadaten {#set-model-for-external-storage}
 
