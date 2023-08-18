@@ -2,9 +2,9 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 25af1b0d99f7c5971245f99a95c74d04ca943936
+source-git-commit: 6e491a68dedc55609349db75ac13691aeda2f0dc
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '673'
 ht-degree: 17%
 
 ---
@@ -56,6 +56,7 @@ Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Releas
 
 - SITES-15359: Inhaltsfragmente - Das Variantennamensmuster stimmt nicht mit Varianten überein, die ```'_'``` in ihren Ressourcennamen.
 - SITES-15463: Sites-Vorlagen - Vorlagen können nicht veröffentlicht werden (Problemumgehung: Verwenden Sie die Verteilungskonsole).
+- FORMS-10444: Adaptive Forms-Vorlagen - Vorlagen können nicht veröffentlicht werden (Problemumgehung: Verwenden Sie die Verteilungskonsole).
 - CQ-4354191: Workflows - Benutzerdefinierter Starter kann aufgrund von auf nt:unstrukturierten Knoten vorhandenen Replikations-Metadaten mehrmals Trigger werden (Problemumgehung: Aktualisieren Sie Starter, um Replikations-Metadateneigenschaften auszuschließen, um Überschneidungen zu vermeiden).
 
 ### Eingebettete Technologien {#embedded-tech-13099}
