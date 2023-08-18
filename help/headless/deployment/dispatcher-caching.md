@@ -2,10 +2,10 @@
 title: Persistente GraphQL-Abfragen - Aktivierung der Zwischenspeicherung im Dispatcher
 description: Der Dispatcher ist eine Caching- und Sicherheitsebene vor den Adobe Experience Manager-Veröffentlichungsumgebungen. Sie können die Zwischenspeicherung für persistente Abfragen in AEM Headless aktivieren.
 feature: Dispatcher, GraphQL API
-source-git-commit: 6f07089812e587834784aeda7e62d3e4614f45a1
+source-git-commit: 0066bfba3a403791c6a35b1280ae04b576315566
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 5%
+source-wordcount: '317'
+ht-degree: 6%
 
 ---
 
@@ -23,6 +23,10 @@ Die Zwischenspeicherung persistenter Abfragen ist im Dispatcher standardmäßig 
 >Der Dispatcher speichert die `Vary` -Kopfzeile.
 >
 >Das Caching anderer CORS-bezogener Header kann im Dispatcher aktiviert werden, reicht jedoch möglicherweise nicht aus, wenn mehrere CORS-Quellen vorhanden sind.
+
+>[!NOTE]
+>
+>Eine ausführliche Dokumentation zum Dispatcher finden Sie in der [Dispatcher-Anleitung](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de).
 
 ## Zwischenspeichern persistenter Abfragen aktivieren {#enable-caching-persisted-queries}
 
