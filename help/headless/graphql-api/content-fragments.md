@@ -3,9 +3,9 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
 workflow-type: tm+mt
-source-wordcount: '4913'
+source-wordcount: '4922'
 ht-degree: 92%
 
 ---
@@ -116,6 +116,8 @@ Die [persistenten Abfragen](/help/headless/graphql-api/persisted-queries.md) sin
 GraphQL-Abfragen über POST werden nicht empfohlen, da sie nicht zwischengespeichert werden. Daher ist der Dispatcher auf einer Standardinstanz so konfiguriert, dass er solche Abfragen blockiert.
 
 GraphQL unterstützt zwar auch GET-Anfragen, diese können jedoch Einschränkungen unterliegen (z. B. die Länge der URL), die durch die Verwendung persistenter Abfragen vermieden werden können.
+
+Siehe [Zwischenspeichern persistenter Abfragen aktivieren](/help/headless/deployment/dispatcher-caching.md) für weitere Informationen.
 
 >[!NOTE]
 >

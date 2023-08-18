@@ -2,9 +2,9 @@
 title: Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs
 description: In diesem Teil der AEM Headless-Entwickler-Tour lernen Sie, wie Sie GraphQL-Abfragen verwenden, um auf den Inhalt Ihrer Inhaltsfragmente zuzugreifen.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1366'
 ht-degree: 96%
 
 ---
@@ -374,5 +374,6 @@ Nachdem Sie nun erfahren haben, wie Sie mit der AEM-GraphQL-API auf Ihren Headle
    * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
    * [JSON-Ausgabe](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
 * [Verstehen von Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=de#understand-cross-origin-resource-sharing-(cors))
+* [Persistente GraphQL-Abfragen - Aktivierung der Zwischenspeicherung im Dispatcher](/help/headless/deployment/dispatcher-caching.md)
 * [Erstellen von Zugriffs-Tokens für Server-seitige APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
 * [Erste Schritte mit AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) – eine kurze Video-Tutorial-Reihe, die einen Überblick über die Verwendung AEM Headless-Funktionen bietet, einschließlich Inhaltsmodellierung und GraphQL.
