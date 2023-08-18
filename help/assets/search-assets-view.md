@@ -1,12 +1,12 @@
 ---
-title: Suchen und Auffinden von Assets in  [!DNL Assets view]
-description: Suchen und Auffinden von Assets in  [!DNL Assets view].
+title: Erfahren Sie, wie Sie Assets suchen und finden in [!DNL Assets view]?
+description: Erfahren Sie, wie Sie Assets in der AEM Assets-Ansicht suchen und finden. Mit der leistungsstarken Suchfunktion können Sie schnell das passende Asset ermitteln und die Geschwindigkeit Ihrer Inhaltserstellung steigern.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: ed7ce8be17ad1445132b9aa38a0efa84ffa70fdf
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 94%
+source-wordcount: '924'
+ht-degree: 92%
 
 ---
 
@@ -56,7 +56,7 @@ Sie können die gesuchten Assets in aufsteigender oder absteigender Reihenfolge 
 
 **Erforderliche Berechtigungen:**  `Can Edit`, `Owner` oder Administrator.
 
-In der Asset-Ansicht können Sie der Benutzeroberfläche auch benutzerdefinierte Filter hinzufügen. Sie können diese benutzerdefinierten Filter dann zusätzlich zu den [Standardfiltern](#refine-search-results) anwenden, um Ihre Suchergebnisse zu verfeinern.
+In der Asset-Ansicht können Sie auch benutzerdefinierte Filter zur Benutzeroberfläche hinzufügen. Sie können diese benutzerdefinierten Filter dann zusätzlich zu den [Standardfiltern](#refine-search-results) anwenden, um Ihre Suchergebnisse zu verfeinern.
 
 Die Asset-Ansicht bietet die folgenden benutzerdefinierten Filter:
 
@@ -146,7 +146,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 * [Video ansehen, um Assets in der Asset-Ansicht zu suchen](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=de)
 
-* Stellen Sie Produkt-Feedback mit der [!UICONTROL Feedback] Option in der Benutzeroberfläche der Assets-Ansicht verfügbar
+* Stellen Sie mithilfe der [!UICONTROL Feedback] Option in der Benutzeroberfläche der Assets-Ansicht verfügbar
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 

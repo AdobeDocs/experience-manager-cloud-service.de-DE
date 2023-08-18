@@ -1,10 +1,10 @@
 ---
 title: Wovon profitieren Sie von der neuen AEM Assets-Benutzeroberfläche oder der Assets-Ansicht in AEM?
-description: Erfahren Sie mehr über die wichtigsten Vorteile der neuen AEM Assets-Benutzeroberfläche oder der neuen Asset-Ansicht in AEM
+description: Erfahren Sie mehr über die wichtigsten Vorteile der neuen AEM Assets-Benutzeroberfläche oder der neuen Asset-Ansicht in AEM. Adobe nutzt sein Know-how bei der Unterstützung von Marketing- und Kreativprofis und bietet damit ein völlig neues Anwendererlebnis.
 mini-toc-levels: 3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1132'
 ht-degree: 66%
 
 ---
