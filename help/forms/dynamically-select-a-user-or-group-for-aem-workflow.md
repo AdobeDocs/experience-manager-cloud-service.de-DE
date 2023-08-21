@@ -1,17 +1,17 @@
 ---
-title: Dynamische Auswahl eines Benutzers oder einer Gruppe für AEM Forms-zentrierte Workflow-Schritte
+title: Dynamische Benutzer- oder Gruppenauswahl in AEM Workflow
 description: Erfahren Sie, wie Sie zur Laufzeit einen Benutzer oder eine Gruppe für einen  [!DNL AEM Forms] -Arbeitsablauf auswählen.
 content-type: troubleshooting
 topic-tags: publish
-source-git-commit: 3c2a66ac13ccee9eef87ed3c97288a7475ac64d0
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 58%
+source-wordcount: '895'
+ht-degree: 56%
 
 ---
 
 
-# Dynamische Auswahl eines Benutzers oder einer Gruppe für AEM Forms-zentrierte Workflow-Schritte {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+# Dynamische Benutzer- oder Gruppenauswahl in AEM Workflow {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 Erfahren Sie, wie Sie zur Laufzeit einen Benutzer oder eine Gruppe für einen [!DNL AEM Forms]-Workflow auswählen.
 
@@ -114,7 +114,7 @@ function getAdobeSignRecipients() {
 
 Sie können die Java-Schnittstelle [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html?lang=de) verwenden, um einen Benutzer oder eine Gruppe für die Schritte „[!DNL Adobe Sign]“ und „Aufgabe zuweisen“ dynamisch auszuwählen. Sie können ein OSGi-Bundle erstellen, das die Java-Schnittstelle [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html?lang=de) verwendet, und es auf dem [!DNL AEM Forms]-Server bereitstellen. Dadurch wird die Option zur Auswahl in den Komponenten „Aufgabe zuweisen“ und „[!DNL Adobe Sign]“ im AEM-Workflow verfügbar.
 
-Sie benötigen die Dateien [[!DNL AEM Forms] Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de)-JAR und [granite-JAR](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/), um die unten aufgeführten Code-Beispiele zu kompilieren. Fügen Sie diese JAR-Dateien als externe Abhängigkeiten zum OSGi-Bundle-Projekt hinzu. Sie können eine beliebige Java IDE verwenden, um ein OSGi-Bundle zu erstellen. Im folgenden Verfahren wird beschrieben, wie Sie mit Eclipse ein OSGi-Bundle erstellen:
+Sie benötigen die Dateien [[!DNL AEM Forms] Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de)-JAR und [granite-JAR](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/), um die unten aufgeführten Code-Beispiele zu kompilieren. Fügen Sie diese JAR-Dateien als externe Abhängigkeiten zum OSGi-Bundle-Projekt hinzu. Sie können eine beliebige Java-IDE verwenden, um ein OSGi-Bundle zu erstellen. Im folgenden Verfahren wird beschrieben, wie Sie mit Eclipse ein OSGi-Bundle erstellen:
 
 1. Öffnen Sie Eclipse IDE. Navigieren Sie zu **[!UICONTROL Datei]** > **[!UICONTROL Neues Projekt]**.
 1. Wählen Sie im Bildschirm &quot;Assistenten auswählen&quot;die Option **[!UICONTROL Maven-Projekt]** und klicken Sie auf **[!UICONTROL Nächste]**.

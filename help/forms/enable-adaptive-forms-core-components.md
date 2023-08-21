@@ -1,14 +1,13 @@
 ---
-title: Aktivieren der adaptiven Forms-Kernkomponenten in der as a Cloud Service und lokalen Entwicklungsumgebung von AEM Forms
-seo-title: Step-by-Step Guide for enabling Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment
+title: Aktivieren der adaptiven Forms-Kernkomponenten
 description: In unserer schrittweisen Anleitung erfahren Sie, wie Sie die adaptiven Forms-Kernkomponenten in AEM Forms as a Cloud Service aktivieren können. Unser Tutorial führt Sie durch den Prozess, wodurch es einfach wird, diese leistungsstarke Funktion für Ihre AEM Forms-Umgebung zu aktivieren.
 seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms as a Cloud Service with our step-by-step guide. Our tutorial walks you through the process, making it easy to enable this powerful feature for your AEM Forms environment.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1031'
 ht-degree: 8%
 
 ---

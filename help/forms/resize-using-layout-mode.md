@@ -1,18 +1,18 @@
 ---
-title: Verwenden des Layout-Modus zum Ändern der Größe von Komponenten für adaptive Formulare
+title: Verwenden Sie den Layout-Modus, um die Größe von Komponenten für adaptive Forms zu ändern.
 description: Definieren Sie die Position von Komponenten mithilfe des responsiven Rasters, das im Layout-Modus verfügbar ist. Hier erfahren Sie, wie Sie auf den Layout-Modus zugreifen, die Größe von Komponenten und Bedienfeldern ändern, Layouts mit mehreren Spalten für ein Bedienfeld definieren, das neue responsive Raster für alte responsive Layouts aktivieren und den Layout-Modus für Formulare mit altem responsiven Layout deaktivieren können.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 93%
+source-wordcount: '1157'
+ht-degree: 91%
 
 ---
 
-# Verwenden des Layout-Modus zum Ändern der Größe von Komponenten {#use-layout-mode-to-resize-components}
+# Verwenden Sie den Layout-Modus, um die Größe von Komponenten für adaptive Forms zu ändern. {#use-layout-mode-to-resize-components}
 
 <span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
 

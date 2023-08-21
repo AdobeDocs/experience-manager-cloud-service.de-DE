@@ -1,5 +1,5 @@
 ---
-title: Migrieren von einer AEM 6.5 Forms zu [!DNL AEM Forms] as a Cloud Service Umwelt?
+title: Migration von AEM 6.5 Forms zu AEM Forms as a Cloud Service
 description: Erste Schritte mit der Migration-Journey zu AEM as a Cloud Service | Adobe Experience Manager. Migrieren von  [!DNL AEM Forms]  (On-Premise- und AMS-Umgebungen) in eine  [!DNL AEM Forms]  as a Cloud Service-Umgebung.
 Keywords: 6.5 forms to cloud service, 6.5 forms to cs, migrate 6.5 forms to CS, migrate 6.5 forms to cloud service, upgrade 6.5 forms to CS, move 6.5 forms to CS, upgrade AEM 6.5 to CS, AEM Forms 6.5 to Cloud Service, AEM form migration to cloud service, Migration Journey to AEM as a Cloud Service | Adobe Experience Manager.
 contentOwner: khsingh
@@ -9,9 +9,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: d43e2d555a09f481900ec70e5e38bab42f4cc1d7
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1580'
 ht-degree: 71%
 
 ---
@@ -109,7 +109,7 @@ Führen Sie die folgenden Schritte aus, um Ihre [!DNL AEM Forms]-Assets mit Clou
 
    1. Tippen Sie auf **[!UICONTROL Migration von adaptiven Formularkomponenten]** und tippen Sie auf der Seite „Migration benutzerdefinierter Komponenten“ auf **[!UICONTROL Migration beginnen]**. Dadurch werden alle benutzerdefinierten Komponenten, die für adaptive Formulare und Komponentenüberlagerungen in Ihrer [!DNL AEM Forms]-Umgebung entwickelt wurden, mit [!DNL AEM] as a Cloud Service kompatibel gemacht.
 
-   1. Tippen Sie auf **[!UICONTROL Migration von adaptiven Formularvorlagen]** und tippen Sie auf der Seite „Migration von Komponenten“ auf **[!UICONTROL Migration beginnen]**. Es erstellt Vorlagen für adaptive Formulare unter `/apps` oder `/conf` und erstellt mit AEM Vorlageneditor kompatibel mit [!DNL AEM] as a Cloud Service .
+   1. Tippen Sie auf **[!UICONTROL Migration von adaptiven Formularvorlagen]** und tippen Sie auf der Seite „Migration von Komponenten“ auf **[!UICONTROL Migration beginnen]**. Es erstellt Vorlagen für adaptive Formulare unter `/apps` oder `/conf` und erstellt mit AEM Vorlageneditor kompatibel mit [!DNL AEM] AS A CLOUD SERVICE .
 
    1. Tippen Sie auf **[!UICONTROL Migration von AEM Forms Cloud-Konfigurationen]** und tippen Sie dann auf der Seite „Migration von Konfigurationen“ auf **[!UICONTROL Migration beginnen]**. Dadurch werden die folgenden Cloud Services aktualisiert und an einen neuen Speicherort verschoben:
 

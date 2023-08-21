@@ -1,15 +1,14 @@
 ---
-title: Erstellen eines Formularportals auf einer Experience Manager Sites-Seite
+title: Hinzufügen von Forms Portal zu einer AEM Sites-Seite
 description: Erfahren Sie, wie Sie ein Formularportal erstellen und vordefinierte Kernkomponenten auf einer Seite von AEM Sites verwenden können.
-exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1837'
-ht-degree: 85%
+source-wordcount: '1835'
+ht-degree: 84%
 
 ---
 
-# Auflisten der adaptiven Formulare in einem Portal {#publish-forms-on-portal}
+# Hinzufügen von Forms Portal zu einer AEM Sites-Seite {#publish-forms-on-portal}
 
 <span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
 

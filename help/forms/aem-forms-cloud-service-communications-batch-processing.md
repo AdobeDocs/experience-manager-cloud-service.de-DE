@@ -1,15 +1,15 @@
 ---
-title: Batch-Verarbeitung in der Kommunikationsfunktion von Experience Manager [!DNL Forms] as a Cloud Service
+title: Stapelverarbeitung von AEM Forms-Nachrichten für as a Cloud Service Kommunikation
 description: Wie erstelle ich markenorientierte und personalisierte Kommunikation?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 98%
+source-wordcount: '1698'
+ht-degree: 97%
 
 ---
 
-# Verwenden der Batch-Verarbeitung
+# Stapelverarbeitung von AEM Forms-Nachrichten für as a Cloud Service Kommunikation
 
 Mithilfe von Kommunikation können Sie markenorientierte und personalisierte Kommunikation erstellen, zusammenstellen und bereitstellen, wie z. B. Geschäftskorrespondenzen, Dokumente, Aussagen, Anforderungsdatenverarbeitungs-Briefe, Leistungsbenachrichtigungen, Antragsverarbeitungsbriefe, monatliche Rechnungen und Willkommenskits. Sie können Kommunikations-APIs verwenden, um eine Vorlage (XFA oder PDF) mit Kundendaten zu kombinieren und Dokumente im PDF-, PS-, PCL-, DPL-, IPL- und ZPL-Format zu generieren.
 

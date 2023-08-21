@@ -1,16 +1,14 @@
 ---
-title: Verbinden einer Datenbank mit [!DNL AEM Forms] as a Cloud Service
-seo-title: AEM Forms Data Integration
+title: Verbinden von AEM Forms mit einer Datenbank
 description: Sie können Daten aus  [!DNL AEM Forms]  as a Cloud Service abrufen und sie in RESTful-Webservices, SOAP-basierten Webservices und OData-Services speichern. Der Service bietet ein dediziertes Tool zum Abrufen, Testen, Validieren und Senden von Daten an verschiedene Datenquelltypen.
-exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 81%
+source-wordcount: '570'
+ht-degree: 78%
 
 ---
 
-# Verbinden von Datenquellen mit Cloud Service {#aem-forms-data-integration}
+# Verbinden von AEM Forms mit einer Datenbank {#aem-forms-data-integration}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |

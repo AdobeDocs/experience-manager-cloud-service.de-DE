@@ -1,20 +1,19 @@
 ---
-title: Hinzufügen benutzerdefinierter Fehler-Handler in Adaptive Forms für AEM Adaptive Forms
-seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms
+title: Hinzufügen benutzerdefinierter Fehler-Handler in AEM adaptiven Forms
 description: AEM Forms bietet vordefinierte Erfolgs- und Fehler-Handler für ein Formular mit dem REST-Endpunkt, der zum Aufrufen eines externen Dienstes konfiguriert wurde. Sie können einen Standard-Fehler-Handler sowie einen benutzerdefinierten Fehler-Handler in einem AEM adaptiven Formular hinzufügen.
 seo-description: Error handler function and Rule Editor in Adaptive Forms helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: Fügen Sie einen benutzerdefinierten Fehler-Handler hinzu, fügen Sie einen Standard-Fehler-Handler hinzu, fügen Sie einen Fehler-Handler zum Formular hinzu, verwenden Sie den invoke-Dienst des Regeleditors, um einen benutzerdefinierten Fehler-Handler hinzuzufügen, konfigurieren Sie den Regeleditor, um einen benutzerdefinierten Fehler-Handler hinzuzufügen, fügen Sie mithilfe des Regeleditors einen benutzerdefinierten Fehler-Handler hinzu.
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1983'
+source-wordcount: '1982'
 ht-degree: 9%
 
 ---
 
-# Fehler-Handler in Adaptive Forms {#error-handlers-in-adaptive-form}
+# Hinzufügen benutzerdefinierter Fehler-Handler in AEM adaptiven Forms {#error-handlers-in-adaptive-form}
 
 <span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
 

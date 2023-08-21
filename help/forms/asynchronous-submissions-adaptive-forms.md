@@ -1,18 +1,17 @@
 ---
-title: Konfiguration der asynchronen Übermittlung adaptiver Formulare
+title: Konfigurieren der asynchronen Übermittlung von AEM adaptiven Forms
 description: Erfahren Sie, wie die asynchrone Übermittlung adaptiver Formulare konfiguriert wird. Vertiefen Sie Ihre Kenntnisse über die Funktionsweise der asynchronen Übermittlung für adaptive Formulare.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 67%
+source-wordcount: '749'
+ht-degree: 73%
 
 ---
 
-# Asynchrone Übermittlung von adaptiven Formularen {#asynchronous-submission-of-adaptive-forms}
+# Konfigurieren der asynchronen Übermittlung von AEM adaptiven Forms {#asynchronous-submission-of-adaptive-forms}
 
 
 | Version | Artikel-Link |
@@ -42,7 +41,7 @@ So konfigurieren Sie die asynchrone Übermittlung für ein adaptives Formular:
 
 ## Funktionsweise der asynchronen Übermittlung {#how-asynchronous-submission-works}
 
-[!DNL Experience Manager Forms] bietet standardmäßig Handler zur Verarbeitung von erfolgreichen und fehlgeschlagenen Formularübermittlungen an. Handler sind clientseitige Funktionen, die basierend auf der Serverantwort ausgeführt werden. Wenn ein Formular gesendet wird, werden die Daten zur Validierung an den Server übermittelt, der eine Antwort mit Informationen zum Erfolgs- oder Fehlerereignis für die Übermittlung an den Client zurückgibt. Die Informationen werden als Parameter an den relevanten Handler übergeben, um die Funktion auszuführen.
+[!DNL Experience Manager Forms] bietet standardmäßig Handler zur Verarbeitung von erfolgreichen und fehlgeschlagenen Formularübermittlungen an. Handler sind Client-seitige Funktionen, die basierend auf der Server-Antwort ausgeführt werden. Wenn ein Formular gesendet wird, werden die Daten zur Validierung an den Server übermittelt, der eine Antwort mit Informationen zum Erfolgs- oder Fehlerereignis für die Übermittlung an den Client zurückgibt. Die Informationen werden als Parameter an den relevanten Handler übergeben, um die Funktion auszuführen.
 
 Darüber hinaus können Formularautoren und -entwickler formularspezifische Regeln schreiben, die die Standard-Handler überschreiben. Weitere Informationen finden Sie unter [Standard-Handler mithilfe von Regeln überschreiben](#custom).
 
@@ -71,7 +70,7 @@ Die Server-Antwort für Erfolgsereignis bei Übermittlung weist folgende Struktu
 
 Die Serverantwort im Falle einer erfolgreichen Formularübermittlung umfasst Folgendes:
 
-* Form data format type: XML oder JSON
+* Formulardatenformat-Typ: XML oder JSON
 * Formulardaten im XML- oder JSON-Format
 * Ausgewählte Option, um zu einer Seite umzuleiten oder eine Nachricht wie im Formular konfiguriert anzuzeigen
 * Seiten-URL oder Nachrichteninhalt, wie im Formular konfiguriert
@@ -98,7 +97,7 @@ Die Struktur der Serverantwort für das Ereignis bei Übertragungsfehlern sieht 
 Die Serverantwort im Fall eines Fehlers bei der Formularübermittlung umfasst Folgendes:
 
 * Grund für den Fehler, falsche Antwort in CAPTCHA oder fehlgeschlagene Server-seitige Validierung
-* Liste der Fehlerobjekte, einschließlich des SOM-Ausdrucks des Felds, bei dem die Validierung fehlgeschlagen ist, und der entsprechenden Fehlermeldung
+* Liste der Fehlerobjekte, einschließlich SOM-Ausdruck des Felds, bei dem die Validierung fehlgeschlagen ist, und der entsprechenden Fehlermeldung
 
 Der Fehler-Handler liest die Serverantwort und zeigt dementsprechend die Fehlermeldung im Formular an.
 

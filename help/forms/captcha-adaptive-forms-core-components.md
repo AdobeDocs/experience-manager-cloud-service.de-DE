@@ -1,18 +1,18 @@
 ---
-title: Verwenden von Google reCAPTCHA in einem adaptiven Formular basierend auf Kernkomponenten
+title: Verwenden von Google reCAPTCHA in einem AEM adaptiven Formular
 description: Verbessern der Formularsicherheit mit dem Google reCAPTCHA-Dienst. Schrittweise Anleitung innen!
 topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b81acc99b1d90b05b7c341253e7cbb46c6ea12ae
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 13%
+source-wordcount: '874'
+ht-degree: 17%
 
 ---
 
-# Verwenden von reCAPTCHA in Adaptive Forms basierend auf Kernkomponenten {#using-reCAPTCHA-in-adaptive-forms}
+# Verwenden von Google reCAPTCHA in einem AEM adaptiven Formular {#using-reCAPTCHA-in-adaptive-forms}
 
 CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine Herausforderung dar und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
 
@@ -25,12 +25,12 @@ CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans
 
 So verbinden Sie Ihre AEM Forms-Umgebung mit dem reCAPTCHA-Dienst von Google
 
-1. Erhalten [reCAPTCHA API-Schlüsselpaar](https://www.google.com/recaptcha/admin) aus Google. Er enthält eine **Site-Schlüssel** und **geheimer Schlüssel**.
+1. Rufen Sie ein [reCAPTCHA-API-Schlüsselpaar](https://www.google.com/recaptcha/admin) von Google ab. Er enthält einen **Site-Schlüssel** und einen **geheimen Schlüssel**.
 
    ![Erstellen Sie die Google reCAPTCHA-Konfiguration der Website von Google, um reCAPTCHA-Schlüssel zu erhalten.](/help/forms/assets/google-captcha.gif)
 1. Erstellen Sie einen Konfigurations-Container in Ihrer as a Cloud Service AEM Forms-Umgebung. Ein Konfigurations-Container enthält Cloud-Konfigurationen, mit denen AEM mit externen Diensten verbunden werden. So erstellen und konfigurieren Sie einen Konfigurations-Container, um Ihre AEM Forms-Umgebung mit dem reCAPTCHA-Dienst von Google zu verbinden:
    1. Öffnen Sie Ihre as a Cloud Service AEM Forms-Instanz.
-   1. Wählen Sie **[!UICONTROL Tools > Allgemein > Konfigurationsbrowser]**. Im Konfigurationsbrowser haben Sie folgende Möglichkeiten:
+   1. Wählen Sie **[!UICONTROL „Tools“ > „Allgemein“ > „Konfigurationsbrowser“]**. Im Konfigurationsbrowser haben Sie folgende Möglichkeiten:
    1. Wählen Sie einen vorhandenen Ordner aus oder erstellen Sie einen Ordner. Sie können einen Ordner erstellen und die Cloud-Konfigurationsoption dafür aktivieren oder die Option Cloud-Konfigurationen für einen vorhandenen Ordner aktivieren:
 
       * So erstellen Sie einen Ordner und aktivieren die entsprechende Cloud-Konfigurationsoption:
@@ -43,7 +43,7 @@ So verbinden Sie Ihre AEM Forms-Umgebung mit dem reCAPTCHA-Dienst von Google
          1. Tippen Sie auf **[!UICONTROL Speichern und schließen]**, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
 
 1. Konfigurieren des Cloud Service:
-   1. Wechseln Sie in Ihrer AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** und tippen **[!UICONTROL reCAPTCHA]**.
+   1. Wechseln Sie in Ihrer AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** und tippen **[!UICONTROL reCAPTCHA]**.
    1. Wählen Sie einen Konfigurations-Container aus, der im vorherigen Abschnitt erstellt oder aktualisiert wurde. Tippen Sie auf **[!UICONTROL Erstellen]**.
    1. Angeben **[!UICONTROL Titel]**, **[!UICONTROL Name]**, **[!UICONTROL Site-Schlüssel]**, und **[!UICONTROL Geheimer Schlüssel]** für den reCAPTCHA-Dienst (abgerufen in Schritt 1). Tippen Sie auf **[!UICONTROL Erstellen]**.
 

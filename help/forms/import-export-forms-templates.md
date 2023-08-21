@@ -1,18 +1,16 @@
 ---
-title: Importieren, Exportieren und Organisieren von adaptiven Formularen, PDF-Formularen und anderen Assets
-seo-title: Learn to import, export, and organize Adaptive Forms, PDF forms, and other assets on an[!DNL AEM Forms] instance
+title: Importieren oder Exportieren adaptiver Forms- und AEM Forms-Assets
 description: Sie möchten adaptive Formulare und Assets in und von einer AEM-Instanz migrieren? Hier erfahren Sie, wie Sie adaptive Formulare, PDF-Formulare, Designs und andere unterstützende Assets aus einer  [!DNL AEM Forms] -Instanz importieren und exportieren.
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
-exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1210'
-ht-degree: 85%
+source-wordcount: '1206'
+ht-degree: 83%
 
 ---
 
-# Importieren, Exportieren und Organisieren von adaptiven Formularen, PDF-Formularen und anderen Assets{#importing-and-exporting-assets-to-aem-forms}
+# Importieren oder Exportieren adaptiver Forms- und AEM Forms-Assets {#importing-and-exporting-assets-to-aem-forms}
 
 Sie können adaptive Formulare und zugehörige Assets wie Designs für adaptive Formulare, Formulardatenmodelle, Vorlagen für adaptive Formulare, Dokumentfragmente und PDF-Formulare zwischen einzelnen [!DNL AEM Forms]-Instanzen verschieben. Sie können Assets in CRX-Paket- oder binäre Dateiformate importieren und exportieren.
 

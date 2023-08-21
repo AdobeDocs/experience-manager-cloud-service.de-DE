@@ -1,6 +1,5 @@
 ---
-title: Verwenden des AEM-Übersetzungs-Workflows zum Lokalisieren von adaptiven Formularen und Datensatzdokumenten
-seo-title: Using AEM translation workflow to localize Adaptive Forms and Document of Record
+title: Lokalisieren des adaptiven Forms und Datensatzdokuments
 description: Hier erfahren Sie, wie Sie AEM-Übersetzungs-Workflows zum Lokalisieren von adaptiven Formularen und Datensatzdokumenten verwenden.
 seo-description: Learn to use AEM translation workflows to localize Adaptive Forms and Document of Record.
 uuid: 6c87a283-0203-4cf7-989a-3770ddbbbd6e
@@ -8,15 +7,15 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 75%
+source-wordcount: '527'
+ht-degree: 72%
 
 ---
 
 
-# Verwenden des AEM-Übersetzungs-Workflows zum Lokalisieren von adaptiven Formularen und Datensatzdokumenten {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
+# Lokalisieren des adaptiven Forms und Datensatzdokuments{#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
 Mit lokalisierten Formularen können Sie eine größere Zielgruppe über Ländergrenzen hinweg ansprechen. Mit den Adobe Experience Manager-Übersetzungs-Workflows können Sie adaptive Formulare und die entsprechenden Datensatzdokumente lokalisieren. Sie können zum Lokalisieren adaptiver Formulare **maschinelle Übersetzung** nutzen oder **Übersetzer** beauftragen.
 

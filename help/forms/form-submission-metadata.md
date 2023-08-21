@@ -1,18 +1,18 @@
 ---
-title: Wie werden Informationen aus Benutzerdaten den Metadaten zur Formularübermittlung hinzugefügt?
+title: Hinzufügen von Informationen aus Benutzerdaten zu Metadaten für die Formularübermittlung
 description: Erfahren Sie, wie Sie den Metadaten eines übermittelten Formulars mit vom Benutzer bereitgestellten Daten Informationen hinzufügen. Vertiefen Sie Ihre Kenntnisse über das Anzeigen der aktualisierten Formularübermittlungsmetadaten im CRX-Repository.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 52%
+source-wordcount: '689'
+ht-degree: 49%
 
 ---
 
 
-# Hinzufügen von Informationen aus Benutzerdaten zu Formularübermittlungsmetadaten {#adding-information-from-user-data-to-form-submission-metadata}
+# Hinzufügen von Informationen aus Benutzerdaten zu Metadaten für die Formularübermittlung {#adding-information-from-user-data-to-form-submission-metadata}
 
 Sie können die in ein Element Ihres Formulars eingegebenen Werte verwenden, um Metadatenfelder eines Entwurfs oder einer Formularübermittlung zu berechnen. Mit Metadaten können Sie Inhalte auf der Grundlage von Benutzerdaten filtern. Beispiel: Ein Benutzer gibt John Doe in das Namensfeld Ihres Formulars ein. Sie können diese Informationen verwenden, um Metadaten zu berechnen, die diese Übermittlung unter der JD der Initialen kategorisieren können.
 

@@ -1,19 +1,18 @@
 ---
-title: Erstellen und Verwalten von Überprüfungen adaptiver Formulare, die in die Sites-Seite eingebettet oder erstellt wurden
-seo-title: Review is a mechanism that allows reviewer to perform different tasks for adaptive forms using Assign Task step
+title: Erstellen und Verwalten von Überprüfungen für ein adaptives Formular
 description: Die Überprüfung ist ein Mechanismus, mit dem Überprüfende mithilfe des Schritts „Aufgabe zuweisen“ verschiedene Aufgaben für adaptive Formulare durchführen können.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: daeb407e27b9f1d390fe40151ca16ec0196712e6
-workflow-type: ht
-source-wordcount: '355'
-ht-degree: 100%
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 95%
 
 ---
 
 
-# Überprüfungsschritt für Formulare auf der Sites-Seite {#review-step-forms-aem-sites-page}
+# Erstellen und Verwalten von Überprüfungen für ein adaptives Formular {#review-step-forms-aem-sites-page}
 
 Unter Verwendung von [Schritt zuweisen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=de#assign-task-step) des AEM-Workflows prüfen Überprüfende das gesendete Formular und führt Aktionen dafür durch. Gehen Sie wie folgt vor, um das gesendete Formular mit dem Schritt „Aufgabe zuweisen“ zu überprüfen:
 
