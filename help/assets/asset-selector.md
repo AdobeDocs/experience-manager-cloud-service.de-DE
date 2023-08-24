@@ -4,7 +4,7 @@ description: Verwenden Sie den Asset-Selektor, um die Metadaten und Ausgabeforma
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: dd923ae9d63f1ca1379d8e177ff7b00648da052a
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 91%
@@ -44,6 +44,7 @@ Führen Sie die folgenden Aufgaben aus, um den Asset-Selektor in Ihr [!DNL Exper
 Sie können jede [!DNL Adobe] oder Nicht-Adobe-Applikation mit [!DNL Experience Manager Assets] als [!DNL Cloud Service]-Repository integrieren und Assets aus der Applikation heraus auswählen.
 
 Die Integration erfolgt durch den Import des Asset-Selektor-Pakets und die Verbindung zu Assets as a Cloud Service unter Verwendung der Vanilla JavaScript-Bibliothek. Sie müssen eine `index.html` oder eine andere geeignete Datei innerhalb Ihrer Applikation bearbeiten, um:
+
 * Authentifizierungsdetails zu definieren
 * Zugriff auf das Assets as a Cloud Service-Repository zu erhalten
 * Anzeigeeigenschaften des Asset-Selektors zu konfigurieren
@@ -73,6 +74,7 @@ You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken
 -->
 
 Definieren Sie die Voraussetzungen in der `index.html`-Datei oder einer ähnlichen Datei innerhalb Ihrer Anwendungsimplementierung, um die Authentifizierungsdetails für den Zugriff auf das [!DNL Experience Manager Assets] als [!DNL Cloud Service]-Repository festzulegen. Zu den Voraussetzungen gehören:
+
 * imsOrg
 * imsToken
 * apikey
@@ -105,7 +107,7 @@ Assets-Wähler sind sowohl über die ESM CDN-Version (z. B. [esm.sh](https://es
 In Browsern mit **UMD-Version** (empfohlen):
 
 ```
-<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
 
 <script>
   const { renderAssetSelector } = PureJSSelectors;
@@ -116,14 +118,14 @@ In Browsern mit `import maps`-Unterstützung mit **ESM CDN-Version**:
 
 ```
 <script type="module">
-  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 </script>
 ```
 
 In der Deno/Webpack Module Federation mit **ESM CDN-Version**:
 
 ```
-import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 ```
 
 ### Ausgewählter Asset-Typ {#selected-asset-type}
@@ -526,7 +528,7 @@ Der Asset-Selektor bietet außerdem vordefinierte Filteroptionen, mit denen Sie 
 * `MIME type`: umfasst JPG, GIF, PPTX, PNG, MP4, DOCX, TIFF, PDF, XLSX
 * `Image Size`: umfasst minimale/maximale Breite, minimale/maximale Höhe des Bildes
 
-![rail-view-example](assets/filters-asset-selector.png)
+  ![rail-view-example](assets/filters-asset-selector.png)
 
 ### Benutzerdefinierte Suche
 
