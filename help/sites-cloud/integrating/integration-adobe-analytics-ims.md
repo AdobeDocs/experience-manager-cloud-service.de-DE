@@ -2,10 +2,10 @@
 title: IMS-Konfiguration zur Verwendung bei der Integration mit Adobe Analytics
 description: Erfahren Sie mehr über die IMS-Konfiguration zur Verwendung bei der Integration mit Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: d59559d38eef182723a8791c6614d03930f64a85
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 91%
+source-wordcount: '914'
+ht-degree: 88%
 
 ---
 
@@ -45,7 +45,7 @@ Der erste Schritt der Konfiguration besteht darin, in AEM eine IMS-Konfiguration
 1. Öffnen Sie in AEM das Menü **Tools**.
 1. Wählen Sie im Abschnitt **Sicherheit** die Option **Adobe IMS-Konfigurationen** aus.
 1. Wählen Sie **Erstellen** aus, um **Technische Kontokonfiguration für Adobe IMS** zu öffnen.
-1. Verwenden der Dropdown-Liste unter **Cloud-Konfiguration** auswählen **Adobe Analytics**.
+1. Dropdown-Liste unter **Cloud-Konfiguration** auswählen **Adobe Analytics**.
 1. Aktivieren Sie **Neues Zertifikat erstellen** und geben Sie einen neuen Alias ein.
 1. Bestätigen Sie mit **Zertifikat erstellen**.
 
@@ -66,6 +66,12 @@ Mithilfe der Adobe-Entwicklerkonsole müssen Sie ein Projekt (Integration) mit A
 ### Erstellen des Projekts {#creating-the-project}
 
 Öffnen Sie die Adobe-Entwicklerkonsole, um ein Projekt mit Adobe Analytics zu erstellen, das AEM verwenden wird:
+
+>[!CAUTION]
+>
+>Derzeit unterstützen wir nur die **Dienstkonto (JWT)** Berechtigungstyp.
+>
+>Verwenden Sie nicht das **OAuth Server-zu-Server** Berechtigungstyp, der in Zukunft unterstützt wird.
 
 1. Öffnen Sie die Adobe-Entwicklerkonsole für Projekte:
 
