@@ -3,10 +3,10 @@ title: Wie werden adaptive Formulardaten an Microsoft&reg angeschlossen und gese
 description: Eine schrittweise Anleitung zum Verbinden und Senden von adaptiven Formulardaten an Microsoft&reg; Power Automate.
 keywords: Adaptive Forms Microsoft Power Automate, Senden adaptiver Forms-Daten an Microsoft Power Automate
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
+source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 76%
+source-wordcount: '1198'
+ht-degree: 75%
 
 ---
 
@@ -119,7 +119,7 @@ Nachdem Sie [Ihre Instanz von Forms as a Cloud Service mit Microsoft® Power Aut
 1. Melden Sie sich bei Ihrer Autoreninstanz an, wählen Sie Ihr adaptives Formular aus und klicken Sie auf **[!UICONTROL Eigenschaften]**.
 1. Suchen Sie im Konfigurations-Container den im Abschnitt [Erstellen einer Cloud-Konfiguration des Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration) erstellten Container, wählen Sie ihn aus und tippen Sie auf **[!UICONTROL Speichern und schließen]**.
 1. Öffnen Sie das adaptive Formular zur Bearbeitung und navigieren Sie zum Abschnitt **[!UICONTROL Übermittlung]** der Eigenschaften des Containers für adaptive Formulare.
-1. Wählen Sie im Eigenschaften-Container für **[!UICONTROL Übermittlungsaktionen]** die Option **[!UICONTROL Power Automate-Fluss aufrufen]**. Eine Liste der verfügbaren Power Automate-Flüsse wird zur verfügbaren Option **[!UICONTROL Power Automate-Fluss]**. Wählen Sie den erforderlichen Fluss aus, und die Daten von adaptiven Formularen werden bei der Übermittlung übermittelt.
+1. Im Eigenschaftencontainer, für **[!UICONTROL Sendeaktionen]** wählen Sie **[!UICONTROL Netzautomatisierungsfluss aufrufen]** und wählen Sie eine **[!UICONTROL Stromautomatisierungsfluss]**. Wählen Sie den erforderlichen Fluss aus, und die Daten von adaptiven Formularen werden bei der Übermittlung übermittelt.
 
    ![Konfigurieren der Übermittlungsaktion](assets/submission.png)
 
