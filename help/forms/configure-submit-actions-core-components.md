@@ -3,9 +3,9 @@ title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen.
 hide: true
 hidefromtoc: true
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
 workflow-type: tm+mt
-source-wordcount: '3365'
+source-wordcount: '3575'
 ht-degree: 80%
 
 ---
@@ -52,6 +52,7 @@ So wählen Sie eine Übermittlungsaktion für Ihr Formular aus und konfigurieren
    * [An REST-Endpunkt übermitteln](#submit-to-rest-endpoint)
    * [An OneDrive senden](#submit-to-onedrive)
    * [AEM-Workflow aufrufen](#invoke-an-aem-workflow)
+   * [An Power Automate übermitteln](#microsoft-power-automate)
 
 ## E-Mail senden {#send-email}
 
@@ -345,6 +346,20 @@ Wenn Sie das Formular senden, werden die Daten in der angegebenen Azure Storage-
 Ordnerstruktur zum Speichern von Daten: `/configuration_container/form_name/year/month/date/submission_id/data`.
 
 Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [stellen Sie die Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process) in Ihrer Cloud Service-Instanz bereit.
+
+
+## An Power Automate übermitteln {#microsoft-power-automate}
+
+Sie können ein adaptives Formular so konfigurieren, dass ein Microsoft® Power Automate Cloud-Fluss bei der Übermittlung ausgeführt wird. Das konfigurierte adaptive Formular sendet erfasste Daten, Anhänge und das Datensatzdokument zur Verarbeitung an den Cloud-Fluss von Power Automate. Dies hilft Ihnen beim Erstellen benutzerdefinierter Datenerfassungsprozesse und nutzt gleichzeitig die Leistungsfähigkeit von Microsoft® Power Automate, um Geschäftslogiken zu erfassten Daten zu erstellen und Kunden-Workflows zu automatisieren. Im Folgenden finden Sie einige Beispiele dafür, was Sie nach der Integration eines adaptiven Formulars in Microsoft® Power Automate tun können:
+
+* Verwenden Sie Daten von adaptiven Formularen in einem Power Automate-Geschäftsprozess
+* Verwenden Sie Power Automate, um erfasste Daten an mehr als 500 Datenquellen oder eine beliebige öffentlich verfügbare API zu senden
+* Führen Sie komplexe Berechnungen für erfasste Daten durch
+* Speichern Sie die Daten von adaptiven Formularen in Speichersystemen nach einem vordefinierten Zeitplan
+
+Der Editor für adaptive Formulare verfügt über die Übermittlungsaktion **Aufrufen eines Microsoft® Power Automate-Flusses** zum Senden von Daten, Anhängen und Datensatzdokumenten für adaptive Formulare an den Cloud-Fluss von Power Automate. Um mithilfe der Übermittlungsaktion erfasste Daten an Microsoft® Power Automate zu senden, [verbinden Sie Ihre Instanz von Forms as a Cloud Service mit Microsoft® Power Automate](forms-microsoft-power-automate-integration.md).
+
+Verwenden Sie nach erfolgreicher Konfiguration die [Microsoft® Power Automate Flow aufrufen](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) Übermittlungsaktion zum Senden von Daten an einen Power Automate Flow.
 
 ## Verwenden synchroner oder asynchroner Übermittlung {#use-synchronous-or-asynchronous-submission}
 
