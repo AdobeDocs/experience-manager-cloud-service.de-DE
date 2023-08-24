@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 68%
+ht-degree: 74%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 68%
 >id="aemcloud_golive_troubleshooting"
 >title="Beheben von Fehlern in AEM"
 >abstract="Lesen Sie die Best Practices für die kontinuierliche Entwicklung und verwalten Sie Protokolle zusammen mit Tools wie der Entwicklerkonsole und CRXDE Lite, um Probleme mit AEM zu beheben."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="Anzeigen und Verwalten von Protokollen"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="Entwicklungs-Tools für AEM as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=de" text="Anzeigen und Verwalten von Protokollen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=de#aem-as-a-cloud-service-development-tools" text="Entwicklungs-Tools für AEM as a Cloud Service"
 
 Diese Journey ist der letzte Teil, daher lernen Sie, wie Sie nach Abschluss der Migration auf Probleme überwachen und die Leistung verbessern können. In der Phase nach der Migration sollten Sie die Bereinigung temporärer Dateien sicherstellen, die Best Practices für die kontinuierliche Entwicklung überprüfen und die Protokolle verwalten.
 
@@ -58,7 +58,7 @@ Siehe [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-man
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
 >title="Hilfe und Support"
->abstract="Wenden Sie sich an Adobe AEM Support , um weitere Informationen zu erhalten."
+>abstract="Wenden Sie sich an Adobe AEM-Support, um Klärungen zu erhalten oder Probleme anzusprechen."
 >additional-url="https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud-Support"
 
 Wenn Sie Fragen zum Zugriff auf Cloud Service haben, wenden Sie sich an Ihren Adobe Kundenbetreuer oder den [Support für Experience Cloud](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html), um weitere Informationen zu erhalten.
