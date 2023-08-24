@@ -1,13 +1,10 @@
 ---
 title: Konfigurieren von Abwesenheitseinstellungen
-seo-title: Configure Out of Office settings
-description: Konfigurieren von Abwesenheitseinstellungen
-seo-description: Configure Out of Office settings
-exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+description: Delegieren Sie Aufgaben während der Abwesenheit oder außerhalb des Büros, um eine nahtlose Workflow-Ausführung zu ermöglichen.
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 99%
+source-wordcount: '826'
+ht-degree: 87%
 
 ---
 
@@ -29,7 +26,7 @@ Sie können die Elementzuweisung auf der Basis der Workflow-Modelle differenzier
 
 >[!NOTE]
 >
->* Wenn Sie die Abwesenheitseinstellung aktivieren, bleiben alle Elemente, die bis zu diesem Zeitpunkt in Ihrem Posteingang verfügbar sind, weiterhin im Posteingang. Nur Elemente, die nach Aktivierung der Abwesenheitseinstellungen empfangen wurden, werden delegiert.
+>* Wenn Sie die Einstellung &quot;Abwesenheit&quot;aktivieren, bleiben alle in Ihrem Posteingang verfügbaren Elemente, bevor Sie die Einstellung aktivieren, in Ihrem Posteingang. Nur Elemente, die nach Aktivierung der Abwesenheitseinstellungen empfangen wurden, werden delegiert.
 >* Wenn Sie die Abwesenheitseinstellung deaktivieren, werden die delegierten Elemente nicht automatisch an Sie zurückverwiesen. Mithilfe der Anforderungsfunktion können Sie Elemente an sich selbst übertragen.
 >* Wenn Benutzer A Elemente an Benutzer B delegiert und Benutzer B an Benutzer C weiterdelegiert, werden die Elemente nur Benutzer C und nicht Benutzer B zugewiesen.
 >* Wenn eine Schleife in der Aufgabenzuweisung entsteht, bleiben die Aufgaben beim ursprünglichen Benutzer. Eine solche Schleife besteht beispielsweise, wenn ein Element von Benutzer A an Benutzer B, von Benutzer B an Benutzer C, von Benutzer C an Benutzer D und schließlich von Benutzer D an Benutzer B delegiert wird. In einem solchen Fall verbleibt das Element beim ursprünglichen Benutzer. Beim Beispiel oben ist Benutzer A der ursprüngliche Benutzer.
@@ -55,7 +52,7 @@ Führen Sie folgende Schritte aus, um die Abwesenheitseinstellung für Ihr Konto
 
    >[!NOTE]
    >
-   >Die Reihenfolge der Empfänger ist wichtig. Wenn einem Benutzer, der die Abwesenheitseinstellung aktiviert hat, ein Element zugewiesen wird, wird das Element entsprechend der erstellten Empfängerliste weitergeleitet. Dabei gilt die Reihenfolge, in der die Empfänger hinzugefügt wurden. Erfüllt ein Element die Kriterien, wird es an den jeweiligen Empfänger weitergeleitet, ohne dass weitere Empfänger auf der Liste geprüft werden.
+   >Die Reihenfolge der Empfänger ist wichtig. Wenn ein Element einem Benutzer zugewiesen wird, der die Abwesenheitseinstellung aktiviert hat, wird das Element anhand der angegebenen Zielgruppenliste ausgewertet, in der die Bestellzuweisungen hinzugefügt werden. Wenn ein Element den Kriterien entspricht, wird es dem Bevollmächtigten zugewiesen und der nächste Bevollmächtigte wird nicht überprüft.
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**. Die Einstellung wird zum angegebenen Startzeitpunkt wirksam. Selbst wenn Sie sich während Ihrer Abwesenheit am System anmelden, gelten Sie erst wieder als anwesend, wenn Sie die Einstellungen ändern.
 
@@ -64,7 +61,7 @@ Nun werden alle während des Abwesenheitszeitraums empfangenen Elemente automati
 
 >[!NOTE]
 >
->(Nur bei Formular-zentrierten Workflow-Elementen) Aktivieren Sie die Option **[!UICONTROL Empfänger darf über Abwesenheitseinstellung delegieren]** des Schritts **[!UICONTROL Aufgabe zuweisen]**. Nur Elemente, bei denen diese Option aktiviert ist, werden an andere Benutzer delegiert.
+>(Nur bei Formular-zentrierten Workflow-Elementen) Aktivieren Sie die Option **[!UICONTROL Empfänger darf über Abwesenheitseinstellung delegieren]** des Schritts **[!UICONTROL Aufgabe zuweisen]**. Nur Elemente, für die die oben genannte Option aktiviert ist, werden an andere Benutzer delegiert.
 
 ## Beschränkungen {#limitations}
 

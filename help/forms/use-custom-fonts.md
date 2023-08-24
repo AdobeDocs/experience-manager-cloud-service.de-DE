@@ -1,11 +1,10 @@
 ---
 title: Verwenden benutzerdefinierter Schriftarten
-description: Verwenden benutzerdefinierter Schriftarten
-exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: 6bca307dcf41b138b5b724a8eb198ac35e2d906e
+description: Erfahren Sie, wie Sie benutzerdefinierte Schriftarten zu einer as a Cloud Service Forms-Umgebung hinzufügen.
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 100%
+source-wordcount: '466'
+ht-degree: 97%
 
 ---
 

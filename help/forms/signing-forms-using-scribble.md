@@ -1,12 +1,11 @@
 ---
 title: Formular mithilfe von Freihandsignaturen e-signieren
-description: Signieren von Formularen mit Freihandsignatur
-seo-description: Signing forms using scribble
+description: Adaptive Forms mit Scribble-Signatur und Signaturschritt einfach per E-Signatur signieren. Optimieren Sie die digitale Signatur für mehr Effizienz.
 topic-tags: author
-source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 84%
+source-wordcount: '725'
+ht-degree: 82%
 
 ---
 

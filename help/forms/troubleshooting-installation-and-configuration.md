@@ -1,14 +1,11 @@
 ---
-title: Behebung von Installations- und Konfigurationsproblemen
-seo-title: Troubleshooting installation and configuration
-description: Behebung von Installations- und Konfigurationsproblemen
-seo-description: Troubleshooting installation and configuration
+title: Behebung von Installations- und Konfigurationsproblemen Cloud Service
+description: Wie kann ich Probleme mit Installation und Konfiguration für AEM Forms as a Cloud Service beheben?
 contentOwner: khsingh
-exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 100%
+source-wordcount: '177'
+ht-degree: 91%
 
 ---
 

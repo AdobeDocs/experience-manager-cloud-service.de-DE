@@ -1,11 +1,10 @@
 ---
-title: Unterstützung von Fußnoten
-description: RTE-Unterstützung für Fußnoten.
-exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+title: Unterstützung von Fußnoten für adaptive Forms
+description: Verbessern Sie Adaptive Forms mit informativen Rich-Text-Fußnoten. Verbesserung der Benutzerfreundlichkeit und Interaktion.
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 88%
+source-wordcount: '439'
+ht-degree: 78%
 
 ---
 
@@ -33,7 +32,7 @@ In adaptiven Formularen wird eine [!UICONTROL Fußnote] verwendet, um Informatio
 Gehen Sie wie folgt vor, um Fußnoten in adaptiven Formularen hinzuzufügen:
 1. Öffnen Sie ein adaptives Formular im **Bearbeitungsmodus**.
 1. Ziehen Sie im Komponenten-Browser per Drag &amp; Drop die Komponente **[!UICONTROL Text]** auf das adaptive Formular.
-1. Wählen Sie die hinzugefügte Komponente **[!UICONTROL Text]** und tippen Sie auf ![cmppr](assets/configure-icon.svg), um ihre Eigenschaften zu bearbeiten.
+1. Wählen Sie die **[!UICONTROL Text]** Komponente, die Sie hinzugefügt haben, und tippen Sie ![cmppr](assets/configure-icon.svg) , um die Eigenschaften zu bearbeiten.
 
    ![Fußnote in adaptiven Formularen](/help/forms/assets/footnote_rte.png)
 
