@@ -2,7 +2,7 @@
 title: Experience Fragments
 description: Verwenden Sie Experience Fragments von Adobe Experience Manager as a Cloud Service, um Ihre Erlebnisse wiederverwendbar und flexibel zu gestalten.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bad2225e7c5f2554ebd51c0e7e737296c3aa552b
 workflow-type: tm+mt
 source-wordcount: '2044'
 ht-degree: 86%
@@ -356,14 +356,18 @@ So personalisieren Sie Ihr Fragment:
    >Der ausgewählte **ContextHub-Pfad** auf der Registerkarte **Personalisierung** muss wie folgt sein:
    >
    >* denselben Pfad wie der für die Seite, auf der das Fragment wiedergegeben wird
-   >Oder:
+   >
+   >  Oder:
+   >
    >* ein Pfad, der eine Untergruppe der Stores enthält, die im für die Seite konfigurierten ContextHub definiert sind
    >
-   > 
-Der ausgewählte **Segmentpfad** in der Registerkarte **Personalisierung** muss entweder:
+   >Der ausgewählte **Segmentpfad** in der Registerkarte **Personalisierung** muss entweder:
    >
-   * denselben Pfad wie der für die Seite, auf der das Fragment wiedergegeben wird, konfigurierte Pfad oder
-   * ein Pfad sein, der eine Untergruppe der für die Seite konfigurierten Segmente enthält
+   >* denselben Pfad wie der für die Seite, auf der das Fragment wiedergegeben wird
+   >
+   >  Oder
+   >
+   >* ein Pfad sein, der eine Untergruppe der für die Seite konfigurierten Segmente enthält
 
 ### Definieren des Targetings für Ihr Experience Fragment {#defining-targeting-experience-fragment}
 
@@ -390,9 +394,9 @@ Details werden in allen Ansichten der Konsole **Experience Fragments** angezeigt
 
    >[!CAUTION]
    >
-   Diese Registerkarten werden angezeigt, wenn Sie **Eigenschaften** in der Konsole „Experience Fragments“ öffnen.
+   >Diese Registerkarten werden angezeigt, wenn Sie **Eigenschaften** in der Konsole „Experience Fragments“ öffnen.
    >
-   Wenn Sie beim Bearbeiten eines Experience Fragment **Eigenschaften** öffnen, werden die entsprechenden [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) angezeigt.
+   >Wenn Sie beim Bearbeiten eines Experience Fragment **Eigenschaften** öffnen, werden die entsprechenden [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) angezeigt.
 
    ![Experience Fragment-Eigenschaften](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -422,7 +426,7 @@ Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe 
 
 >[!NOTE]
 >
-Auch wenn dies direkt über den Browser verfügbar ist, [Der primäre Zweck besteht darin, anderen Anwendungen (z. B. Web-Apps von Drittanbietern, benutzerdefinierte mobile Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, wobei nur die URL verwendet wird.](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+>Auch wenn dies direkt über den Browser verfügbar ist, [Der primäre Zweck besteht darin, anderen Anwendungen (z. B. Web-Apps von Drittanbietern, benutzerdefinierte mobile Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, wobei nur die URL verwendet wird.](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Veröffentlichen von Experience Fragments {#publishing-experience-fragments}
 
