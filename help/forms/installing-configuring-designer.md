@@ -1,10 +1,10 @@
 ---
 title: Herunterladen und Installieren von Forms Designer
 description: Sie können Forms Designer verwenden, um XDP- und PDF-Formularvorlagen zu erstellen, die als Vorlage für ein Datensatzdokument dienen. Designer ist zusammen mit der  [!DNL AEM Forms] -Lizenz erhältlich.
-source-git-commit: 115612a11f43000894c76758b1d2bcb3506f3bcb
+source-git-commit: 3b05d413756a98c034388eb31e752b2448758496
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 77%
+source-wordcount: '304'
+ht-degree: 75%
 
 ---
 
@@ -16,9 +16,12 @@ Designer ist ein benutzerfreundliches grafisches Programm für die Formulargesta
 
 Um die neueste Version von AEM Forms Designer 64-Bit oder 32-Bit zu installieren, benötigen Sie die folgende Software und die erforderliche Mindesthardware, um Designer zu installieren und zu konfigurieren:
 
+<!--
 >[!BEGINTABS]
 
->[!TAB 64-Bit-Betriebssysteme (empfohlen)]
+>[!TAB 64-bit OS (Recommended)] -->
+
++++ 64-Bit-Betriebssysteme (empfohlen)
 
 * [!DNL Microsoft® Windows® 2016 Server] oder [!DNL Microsoft® Windows® 2019 Server], und [!DNL Microsoft® Windows® 10]
 * Mindestens 2 GB RAM
@@ -31,7 +34,9 @@ Um die neueste Version von AEM Forms Designer 64-Bit oder 32-Bit zu installieren
 * Administratorrechte für die Installation von Designer
 * [!DNL Microsoft® Visual C++ 2019] (VC 14.28 oder höher)
 
->[!TAB 32-Bit-Betriebssysteme]
++++
+
++++ 32-Bit-Betriebssysteme
 
 * [!DNL Microsoft® Windows® 2016 Server] oder [!DNL Microsoft® Windows® 2019 Server], und [!DNL Microsoft® Windows® 10]
 * Mindestens 1 GB RAM
@@ -42,10 +47,9 @@ Um die neueste Version von AEM Forms Designer 64-Bit oder 32-Bit zu installieren
 * Beschleuniger für Video-Hardware (optional)
 * Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC
 * Administratorrechte für die Installation von Designer
-* Microsoft® Visual C++ 2019 (VC14.28 oder höher)
+* [!DNL Microsoft® Visual C++ 2019] (VC 14.28 oder höher)
 
->[!ENDTABS]
-
++++
 
 ## Installieren von Designer {#install-designer}
 
