@@ -2,9 +2,9 @@
 title: Inhaltserstellung mit dem universellen Editor
 description: Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f28b8a85de76a1658ef45c509cbf5600baa1bb3a
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2267'
 ht-degree: 29%
 
 ---
@@ -26,7 +26,7 @@ Dazu bietet der universelle Editor Autoren von Inhalten eine intuitive Benutzero
 
 >[!NOTE]
 >
->Der Universal Editor befindet sich noch in der Entwicklung. Derzeit können nicht alle Inhaltstypen bearbeitet werden.
+>Der Universal Editor befindet sich noch in der Entwicklung. Es kann derzeit nicht alle Inhaltstypen bearbeitet werden.
 
 ## Vorbereiten der App {#prepare-app}
 
@@ -224,7 +224,7 @@ Der Editor belegt den Großteil des Fensters und ist dort, wo die Seite angegebe
 
 ### Komponentenleiste {#component-rail}
 
-Die Komponentenleiste befindet sich immer links im Editor. Je nach Modus können Details zu einer im Inhalt ausgewählten Komponente oder die Hierarchie der Seiteninhalte angezeigt werden.
+Die Komponentenleiste befindet sich immer rechts im Editor. Je nach Modus können Details zu einer im Inhalt ausgewählten Komponente oder die Hierarchie der Seiteninhalte angezeigt werden.
 
 ![Die Komponentenleiste](assets/component-rail.png)
 
