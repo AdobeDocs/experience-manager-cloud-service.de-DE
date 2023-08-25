@@ -1,9 +1,9 @@
 ---
 title: Konfigurieren von CDN- und WAF-Regeln zum Filtern des Traffics
 description: Verwenden der Firewall-Regeln CDN und Web Application , um bösartigen Traffic zu filtern
-source-git-commit: a9b8b4d6029d0975428b9cff04dbbec993d56172
+source-git-commit: 0f1ee0ec5fc2d084a6dfdc65d15a8497c23f11a2
 workflow-type: tm+mt
-source-wordcount: '2371'
+source-wordcount: '2391'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 >
 >Diese Funktion ist noch nicht allgemein verfügbar. Um dem laufenden Programm für frühe Nutzer beizutreten, senden Sie eine E-Mail **aemcs-waf-adopter@adobe.com**, einschließlich des Namens Ihrer Organisation und des Kontexts, in dem Sie an der Funktion interessiert sind.
 
-Adobe versucht, Angriffe auf Kunden-Websites zu vermeiden. Es kann jedoch hilfreich sein, Anfragen, die bestimmten Mustern entsprechen, proaktiv zu filtern, damit böswilliger Traffic Ihre Anwendung nicht erreicht. Mögliche Ansätze sind:
+Adobe versucht, Angriffe auf Kunden-Websites zu vermeiden. Es kann jedoch nützlich sein, Anfragen, die bestimmten Mustern entsprechen, proaktiv zu filtern, sodass böswilliger Traffic Ihre Anwendung nicht erreicht. Mögliche Ansätze sind:
 
 * Apache-Ebenenmodule wie `mod_security`
 * Konfigurieren von Regeln, die über die Cloud Manager-Konfigurationspipeline im CDN bereitgestellt werden.
@@ -23,7 +23,7 @@ Adobe versucht, Angriffe auf Kunden-Websites zu vermeiden. Es kann jedoch hilfre
 In diesem Artikel wird der letztgenannte Ansatz beschrieben, der zwei Kategorien von Regeln vorsieht:
 
 1. **CDN-Regeln**: blockiert oder lässt Anfragen basierend auf Anforderungseigenschaften und Anforderungsheadern zu, einschließlich IP, Pfaden und Benutzeragent. Diese Regeln können von allen AEM as a Cloud Service Kunden konfiguriert werden
-1. **WAF** (Web Application Firewall)-Regeln: blockieren Anforderungen, die verschiedenen Mustern entsprechen, von denen bekannt ist, dass sie mit böswilligem Traffic verbunden sind. Diese Regeln können von Kunden konfiguriert werden, die das WAF-Add-on lizenzieren. Weitere Informationen erhalten Sie von Ihrem Adobe Account-Team. Beachten Sie, dass während des Programms für frühe Anwender keine zusätzliche Lizenz erforderlich ist.
+1. **WAF** (Web Application Firewall)-Regeln: blockieren Anforderungen, die verschiedenen Mustern entsprechen, von denen bekannt ist, dass sie mit böswilligem Traffic verbunden sind. Diese Regeln können von Kunden konfiguriert werden, die das WAF-Add-on lizenzieren. Weitere Informationen erhalten Sie von Ihrem Adobe-Account-Team. Beachten Sie, dass während des Programms für frühe Anwender keine zusätzliche Lizenz erforderlich ist.
 
 Diese Regeln können für Entwicklungs-, Staging- und Produktions-Cloud-Umgebungstypen bereitgestellt werden, und zwar für Produktionsprogramme (ohne Sandbox). Unterstützung für RDE-Umgebungen wird in Zukunft verfügbar sein.
 
@@ -256,7 +256,7 @@ Manchmal ist es wünschenswert, Traffic, der mit einer Regel übereinstimmt, nur
 | **Eigenschaft** | **Typ** | **Standardwert** | **Beschreibung** |
 |---|---|---|---|
 | limit | Ganzzahl von 10 bis 10000 | erforderlich | Anforderungsrate in Anforderungen pro Sekunde, für die die Regel ausgelöst wird |
-| Fenster | Ganzzahl-Enum: 1, 10 oder 60 | 10 | Sampling-Fenster in Sekunden, für die die Anforderungsrate berechnet wird |
+| window | Ganzzahl-Enum: 1, 10 oder 60 | 10 | Sampling-Fenster in Sekunden, für die die Anforderungsrate berechnet wird |
 | Sanktion | Ganzzahl von 60 bis 3600 | 300 (5 Minuten) | Ein Zeitraum in Sekunden, für den übereinstimmende Anforderungen blockiert werden (auf die nächste Minute gerundet) |
 
 ### Beispiele {#ratelimiting-examples}
@@ -310,17 +310,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
 "rid": "974e67f6",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "host": "example.com",
 "url": "/block-me",
-"req_mthd": "GET",
-"res_type": "",
+"method": "GET",
+"res_ctype": "",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=path-rule;waf=;action=blocked"
 }
 ```
@@ -329,17 +330,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "rid": "974e67f6",
 "host": "example.com",
 "url": "/?sqli=%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20fAPK",
-"req_mthd": "GET",
-"res_type": "image/png",
+"method": "GET",
+"res_ctype": "image/png",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=;waf=SQLI;action=blocked"
 }
 ```
@@ -352,15 +354,16 @@ Nachfolgend finden Sie eine Liste der in CDN-Protokollen verwendeten Feldnamen s
 |---|---|
 | *timestamp* | Der Zeitpunkt, zu dem die Anfrage nach TLS-Beendigung gestartet wurde |
 | *ttfb* | Abkürzung für *Zeit bis zum ersten Byte*. Das Zeitintervall zwischen der Anfrage begann bis zu dem Punkt, an dem der Antworttext mit dem Streaming begann. |
-| *cip* | Die Client-IP-Adresse. |
+| *cli_ip* | Die Client-IP-Adresse. |
+| *cli_country* | Zweibuchstaben [ISO 3166-1](https://de.wikipedia.org/wiki/ISO_3166-1) Alpha-2-Ländercode für das Client-Land. |
 | *rid* | Der -Wert des Anforderungsheaders, der zur eindeutigen Identifizierung der Anfrage verwendet wird. |
-| *ua* | Der Benutzeragent, der für die Ausführung einer bestimmten HTTP-Anforderung verantwortlich ist. |
+| *req_ua* | Der Benutzeragent, der für die Ausführung einer bestimmten HTTP-Anforderung verantwortlich ist. |
 | *host* | Die Behörde, für die der Antrag bestimmt ist. |
 | *url* | Der vollständige Pfad, einschließlich Abfrageparametern. |
-| *req_mthd* | Vom Client gesendete HTTP-Methode, z. B. &quot;GET&quot;oder &quot;POST&quot;. |
-| *res_type* | Der Content-Type, der den ursprünglichen Medientyp der Ressource angibt |
+| *method* | Vom Client gesendete HTTP-Methode, z. B. &quot;GET&quot;oder &quot;POST&quot;. |
+| *res_ctype* | Der Content-Type, der den ursprünglichen Medientyp der Ressource angibt. |
 | *cache* | Status des Caches. Mögliche Werte sind HIT, MISS oder PASS |
-| *res_status* | Der HTTP-Statuscode als ganzzahliger Wert. |
-| *res_bsize* | Textkörperbytes, die in der Antwort an den Client gesendet werden. |
-| *server* | Rechenzentrum des CDN-Cache-Servers |
+| *status* | Der HTTP-Statuscode als ganzzahliger Wert. |
+| *res_age* | Die Zeit (in Sekunden), die eine Antwort zwischengespeichert wurde (in allen Knoten). |
+| *pop* | Rechenzentrum des CDN-Cache-Servers |
 | *Regeln* | Der Name aller übereinstimmenden Regeln, sowohl für CDN-Regeln als auch für WAF-Regeln.<br><br>Übereinstimmende CDN-Regeln werden im Protokolleintrag für alle Anfragen an das CDN angezeigt, unabhängig davon, ob es sich um einen CDN-Treffer, einen CDN-Treffer, einen Pass- oder einen Fehler handelt.<br><br>Gibt auch an, ob die Übereinstimmung zu einem Block führte. <br><br>Beispiel: &quot;`cdn=;waf=SQLI;action=blocked`&quot;<br><br>Leer, wenn keine Regeln übereinstimmten. |
