@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 6b4fa2802b860c938f5085f047cc880f29698f3e
+source-git-commit: 22ed74b307b9eb4c6c2f72ac2a34e2ab6d30a85c
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 15%
+source-wordcount: '284'
+ht-degree: 38%
 
 ---
 
@@ -13,60 +13,44 @@ ht-degree: 15%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 13206 {#release-13206}
+## Version 13239 {#release-13239}
 
-Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Release 13206 zusammengefasst, das am 21. August 2023 veröffentlicht wurde. Diese Wartungsversion ersetzt die Versionen 13173 und 13099, um ein Problem zu beheben, das sich auf die Posteingangsfunktion auswirkt.
+Nachfolgend sind die kontinuierlichen Verbesserungen für die Wartungsversion 13239 zusammengefasst, die am 29. August 2023 veröffentlicht wurde. Dieses Maintenance Release ersetzt Version 13206.
 
-2023.8.0 Die Funktionsaktivierung stellt das vollständige Funktionssatz für dieses Maintenance Release bereit. Siehe [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de) für weitere Informationen.
+2023.9.0 Die Funktionsaktivierung stellt den vollständigen Funktionsumfang für dieses Maintenance Release bereit. Siehe [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de) für weitere Informationen.
 
-### Verbesserungen {#enhancements-13206}
+### Verbesserungen {#enhancements-13239}
 
-- SITES-13906: GraphQL - Upgrade auf graphql-java 20.1.
-- SITES-8972: GraphQL - Hinzufügen einer Optionsbeschriftung in JSON für den Auflistungsdatentyp.
-- SITES-9689: GraphQL - Fügen Sie Titel und Beschreibung in JSON für den Content Reference-Datentyp hinzu.
-- SITES-13052: Inhaltsfragmente - Exportieren von Inhaltsfragmenten in Adobe Target.
+- GRANITE-46784: Option hinzufügen, um BearerAuthenticationHandler zu deaktivieren
+- GRANITE-36205: Aktualisieren der internen Oak-Version auf die neueste
+- GRANITE-47059: Granite Jetty SSL Bundle entfernen
+- ASSETS-26713: Externer Link zur Touch-optimierten Benutzeroberfläche zum Dashboard der neuen Experience UI - Unified-Shell-Integration und ui-touch-optimierte Aktualisierung
+- SKYOPS-63302: Upgrade von com.adobe.granite:com.adobe.granite.auth.saml auf v1.0.54
+- GRANITE-46634: Upgrade auf Eventing-Client 1.4.0
+- GRANITE-46788: Aktualisieren der Apache Commons-Bibliotheken
+- GRANITE-29211: Update-Tools für Sling Feature Model 2.0
+- GRANITE-46705: Update auf Apache Felix HTTP Jetty 4.1.14
+- GRANITE-46631: Jackrabbit-Version auf 2.20.11 aktualisieren
+- SKYOPS-61895: Update auf Jackrabbit Filevault 3.7.0
 
-### Behobene Probleme {#fixed-issues-13206}
+### Behobene Probleme {#fixed-issues-13239}
 
-- SITES-14937: MSM - Rollout-Konfigurationen von übergeordnetem Wert übernehmen wird umgeschaltet, wenn auf Live Copies auf Speichern und schließen geklickt wird.
-- SITES-14847: Inhaltsfragmente - Inhaltsfragmentlinks werden nicht hervorgehoben.
-- SITES-11620: Inhaltsfragmente - Der Pfad &quot;Verweise&quot;ist in der Benutzeroberfläche leicht abgeschnitten.
-- SITES-14171: GraphQL - Zirkuläre Referenzen sind für zwischengespeicherte Daten in einigen Fällen nicht beschädigt.
-- SITES-14577: Experience Fragments - Bulk Publish funktioniert nicht für Live Copies.
-- SITES-14341: Administrator-Benutzeroberfläche - Inkonsistentes Verhalten der Schaltfläche &quot;Eigenschaften&quot;, wenn Löschberechtigungen entfernt werden.
-- SITES-11000: Administrator-Benutzeroberfläche - Verweise: Eingehende Links fehlen auf einigen Seiten.
-- SITES-11559: Admin-Benutzeroberfläche - Verweise: Eingehende Links zeigen falsche Seiten an.
-- SITES-14337: Admin-Benutzeroberfläche - Öffnen der Editor-Seite erzeugt in bestimmten Fällen einen Fehler.
-- SITES-13425: ContextHub - Menüleiste wird beim Klicken auf die Schaltfläche ContextHub nicht angezeigt.
-- CQ-4354266: Posteingangselemente können nicht geöffnet werden.
-- CQ-4354279: Aktivitätsbericht kann nicht auf der Registerkarte Personalisierung angezeigt werden.
-- FORMS-9971: Wenn ein adaptives Formular in einem anderen Gebietsschema wiedergegeben wird, wird die Sichtbarkeit von Komponenten ungenau interpretiert und angewendet.
-- FORMS-9888: Wenn ein adaptives Formular so eingestellt ist, dass es bei der Formularübermittlung zu einer externen URL (Dankeseite) umgeleitet wird, kann es nicht zur externen URL umgeleitet werden.
-- FORMS-9845: Nach dem Löschen eines Dropdown-Menüs mit dem Regeleditor bleiben die zuvor bereitgestellten Werte trotz der angeblichen Löschung erhalten.
-- FORMS-9263: Wenn die Beschriftung eines Kontrollkästchens Sonderzeichen enthält und ein Benutzer auf das Kontrollkästchen klickt, wird das entsprechende Kontrollkästchen nicht aktiviert.
-- FORMS-9254: Wenn ein Benutzer durch den Text der Komponente &quot;Geschäftsbedingungen&quot;blättert, wird das Kontrollkästchen innerhalb der Komponente automatisch aktiviert, auch bevor der Benutzer durch den gesamten Text gescrollt hat.
-- FORMS-9045: Das Skript-Tag löst keine externen Fragmentverweise in der Basis-XDP auf.
-- FORMS-9026: Beim Versuch, ein adaptives Formular mit einem JSON-Schema zu erstellen, das Enums mit leeren Zeichenfolgen enthält und ohne Fehler validiert, führt der Prozess zu einem Fehler. Nach dem Aktualisieren der Seite wird das Formular nicht ordnungsgemäß geladen, es zeigt ein leeres Formular zusammen mit einem Fehler in den Protokollen an.
-- FORMS-8964: In Android™ Chrome/Firefox kann Text in der Textfeldkomponente nicht bearbeitet werden, wenn die maximale Zeichenbeschränkung erreicht ist.
-- FORMS-8668: Übermäßige Java™-Stack-Dumps in Fehlerprotokollen, trotz funktionaler Formularwiedergabe, wodurch die Protokolldatei aufgebläht wird.
-- FORMS-8554: Adaptive Forms mit aktiviertem verzögertem Laden funktioniert nicht im Vorschaumodus der Autoreninstanz.
-- FORMS-8177: Wenn der Forms-Dienst aktiv ist, konnte die Ausnahme &quot;com.adobe.aem.formsndocuments.publish.AssetReferenceProvider konnte Asset-Abhängigkeiten nicht abrufen.&quot; auftritt. Der Fehler wird beim Deaktivieren des Formulardienstes ausgeblendet.
-- FORMS-3691: Bei einigen Objekten fehlt das Scoping IIFE (Sofort aufgerufener Funktionsausdruck). Der primäre Zweck der Verwendung einer IIFE besteht darin, einen Bereich für Variablen innerhalb der Funktion zu erstellen, um zu verhindern, dass diese Variablen den globalen Umfang verschmutzen.
-- SITES-15463: Sites-Vorlagen - Vorlagen können nicht veröffentlicht werden.
+- SKYOPS-63290: Fehlerhafte Evolution von Buckets behoben
+- SKYOPS-54607: Die Berechnung des Ratelimiter-Servers für fehlgeschlagene Anfragen ist nicht korrekt
+- ASSETS-27648: ContentModelIT kann Ausschlussdateien aus anderen Bundles nicht lesen
+- GRANITE-43744: Sling Authenticator funktioniert nicht ordnungsgemäß, wenn eine Fehlkonfiguration mit Authentifizierungspflicht und Vanity-Pfad vorliegt
+- GRANITE-46419: AEM Integrationsproblem mit Auth0 IPp
+- GRANITE-46292: Okta-SAML-Konfiguration funktioniert nach AEM Cloud-Update nicht
 
-### Bekannte Probleme {#known-issues-13206}
+### Bekannte Probleme {#known-issues-13239}
 
-- SITES-15359: Inhaltsfragmente - Das Variantennamensmuster stimmt nicht mit Varianten überein, die ```'_'``` in ihren Ressourcennamen.
-- FORMS-10444: Adaptive Forms-Vorlagen - Vorlagen können nicht veröffentlicht werden (Problemumgehung: Verwenden Sie die Verteilungskonsole).
-- CQ-4354191: Workflows - Benutzerdefinierter Starter kann aufgrund von auf nt:unstrukturierten Knoten vorhandenen Replikations-Metadaten mehrmals Trigger werden (Problemumgehung: Aktualisieren Sie Starter, um Replikations-Metadateneigenschaften auszuschließen, um Überschneidungen zu vermeiden).
-- SITES-15622: GraphQL - Problem mit persistenten Abfragen mit Zahlen und booleschen Parametern.
-- SITES-15654: GraphQL - Probleme mit Vereinigungen und Eigenschaften gleichen Namens.
+Keine
 
-### Eingebettete Technologien {#embedded-tech-13206}
+### Eingebettete Technologien {#embedded-tech-13239}
 
 | Technologie | Version | Link |
 |---|---|---|
-| AEM OAK | 1.52-T20230629133256-25c01b8 | [Oak-API 1.52.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.52.0/index.html) |
+| AEM OAK | 1.54-T20230817132355-3800a65 | [Oak-API 1.54.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.54.0/index.html) |
 | AEM SLING-API | Version: 2.27.2 | [Apache Sling-API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | Version: 1.4.20-1.4.0 | [Spezifikation von HTML-Vorlagensprachen](https://github.com/adobe/htl-spec) |
 | AEM-Kernkomponenten | Version: 2.23.2 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |
