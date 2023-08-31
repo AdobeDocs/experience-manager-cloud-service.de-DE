@@ -3,9 +3,9 @@ title: Validieren und Debuggen mit den Dispatcher Tools
 description: Erfahren Sie mehr über die lokale Validierung, das Debugging, die Dateistruktur mit flexiblem Modus und die Migration vom alten Modus zum flexiblen Modus.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: fccce4fed057b9cf20825bce043b3ec95c3a5ab8
+source-git-commit: 4a79284d879af1920c839a68be14619d1e35f7e9
 workflow-type: tm+mt
-source-wordcount: '2988'
+source-wordcount: '2990'
 ht-degree: 53%
 
 ---
@@ -113,13 +113,13 @@ Dieser Ordner enthält relative symbolische Links zu Dateien unter &quot;conf.di
 
 Beispielbefehle, die zum Erstellen dieser symbolischen Verknüpfungen erforderlich sind:
 
-Apple® macOS, Linux und WSL
+Apple macOS, Linux und WSL
 
 ```
 ln -s ../available_vhosts/wknd.vhost wknd.vhost
 ```
 
-Microsoft® Windows
+Microsoft Windows
 
 ```
 mklink wknd.vhost ..\available_vhosts\wknd.vhost
@@ -151,13 +151,13 @@ Dieser Ordner enthält relative symbolische Links zu Dateien unter &quot;conf.di
 
 Beispielbefehle, die zum Erstellen dieser symbolischen Verknüpfungen erforderlich sind:
 
-Apple® macOS, Linux und WSL
+Apple macOS, Linux und WSL
 
 ```
 ln -s ../available_farms/wknd.farm wknd.farm
 ```
 
-Microsoft® Windows
+Microsoft Windows
 
 ```
 mklink wknd.farm ..\available_farms\wknd.farm
