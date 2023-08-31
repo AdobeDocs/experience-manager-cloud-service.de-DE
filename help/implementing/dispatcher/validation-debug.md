@@ -3,10 +3,10 @@ title: Validieren und Debuggen mit den Dispatcher Tools
 description: Erfahren Sie mehr über die lokale Validierung, das Debugging, die Dateistruktur mit flexiblem Modus und die Migration vom alten Modus zum flexiblen Modus.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: fccce4fed057b9cf20825bce043b3ec95c3a5ab8
 workflow-type: tm+mt
-source-wordcount: '2860'
-ht-degree: 55%
+source-wordcount: '2988'
+ht-degree: 53%
 
 ---
 
@@ -107,6 +107,28 @@ Wenn Sie dem exakten Host entsprechen möchten, da Sie mehrere vhost-Dateien hab
 </VirtualHost>
 ```
 
+* `conf.d/enabled_vhosts/<CUSTOMER_CHOICE>.vhost`
+
+Dieser Ordner enthält relative symbolische Links zu Dateien unter &quot;conf.dispatcher.d/available_vhosts&quot;.
+
+Beispielbefehle, die zum Erstellen dieser symbolischen Verknüpfungen erforderlich sind:
+
+Apple® macOS, Linux und WSL
+
+```
+ln -s ../available_vhosts/wknd.vhost wknd.vhost
+```
+
+Microsoft® Windows
+
+```
+mklink wknd.vhost ..\available_vhosts\wknd.vhost
+```
+
+>[!NOTE]
+>
+> Wenn Sie unter Windows mit symbolischen Links arbeiten, sollten Sie an einer Eingabeaufforderung mit erhöhten Rechten, im Windows-Subsystem für Linux oder über die [Erstellen von symbolischen Links](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) zugewiesene Berechtigung.
+
 * `conf.d/rewrites/rewrite.rules`
 
 Die Datei wird aus dem `.vhost` -Dateien. Sie enthält eine Reihe von Neuschreibungsregeln für `mod_rewrite`.
@@ -122,6 +144,28 @@ Die Datei wird aus dem `dispatcher_vhost.conf` -Datei. Sie können die Protokoll
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
 Sie können eine oder mehrere dieser Dateien haben. Sie enthalten Farmen, um Hostnamen zuzuordnen und dem Dispatcher-Modul zu ermöglichen, jede Farm mit unterschiedlichen Regeln zu behandeln. Dateien werden im Verzeichnis `available_farms` erstellt und mit einer symbolischen Verknüpfung im Verzeichnis `enabled_farms` aktiviert. Aus dem `.farm` -Dateien, andere Dateien wie Filter, Cache-Regeln und andere werden einbezogen.
+
+* `conf.dispatcher.d/enabled_farms/<CUSTOMER_CHOICE>.farm`
+
+Dieser Ordner enthält relative symbolische Links zu Dateien unter &quot;conf.dispatcher.d/available_farms&quot;.
+
+Beispielbefehle, die zum Erstellen dieser symbolischen Verknüpfungen erforderlich sind:
+
+Apple® macOS, Linux und WSL
+
+```
+ln -s ../available_farms/wknd.farm wknd.farm
+```
+
+Microsoft® Windows
+
+```
+mklink wknd.farm ..\available_farms\wknd.farm
+```
+
+>[!NOTE]
+>
+> Wenn Sie unter Windows mit symbolischen Links arbeiten, sollten Sie an einer Eingabeaufforderung mit erhöhten Rechten, im Windows-Subsystem für Linux oder über die [Erstellen von symbolischen Links](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) zugewiesene Berechtigung.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -477,7 +521,7 @@ Anstatt die lokale Validierung (`validate.sh`) auszuführen und den Docker-Conta
 
 Sie können das Skript mit dem folgenden Befehl ausführen: `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
 
-Die ersten Zeilen der Ausgabe ähneln dem, für das `docker_run.sh`. Beispiel:
+Die ersten Zeilen der Ausgabe ähneln dem, für das `docker_run.sh`. Zum Beispiel:
 
 ```
 ~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082
