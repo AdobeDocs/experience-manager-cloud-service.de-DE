@@ -2,10 +2,10 @@
 title: Ansicht "My Workspace for Assets"
 description: Mein Arbeitsbereich ist eine Seite, die anpassbare visuelle Module bietet, mit denen Sie bequem auf wichtige Bereiche der Assets-Benutzeroberfläche und Informationen zugreifen können, die für den Benutzenden am relevantesten sind.
 exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
-source-git-commit: ab607be0cc4a6c7f686978250a513c776f73024e
+source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 77%
+source-wordcount: '740'
+ht-degree: 83%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 77%
 
 Assets enthält jetzt einen anpassbaren Arbeitsbereich, der Widgets für den bequemen Zugriff auf wichtige Bereiche der Assets-Benutzeroberfläche und Informationen bereitstellt, die für Sie am relevantesten sind. Diese Seite dient als zentrale Anlaufstelle, um einen Überblick über Ihre Arbeitselemente zu erhalten und schnellen Zugriff auf wichtige Workflows zu ermöglichen. Ein bequemerer Zugriff auf diese Optionen erhöht Ihre Effizienz und inhaltliche Geschwindigkeit.
 
-Sie können auf Mein Arbeitsbereich zugreifen, indem Sie auf **[!UICONTROL Mein Arbeitsbereich]** in den Elementen klicken, die im linken Navigationsbereich verfügbar sind. Mein Arbeitsbereich umfasst eine Vielzahl von Widgets, die Schnellzugriff-, Einblicke-, Aufgaben- und Content-Widgets anzeigen. Sie können je nach Ihren Voreinstellungen konfigurieren, wie diese Widgets in Ihrem Arbeitsbereich angezeigt werden.
+Sie können auf Mein Arbeitsbereich zugreifen, indem Sie auf **[!UICONTROL Mein Arbeitsbereich]** in den Elementen klicken, die im linken Navigationsbereich verfügbar sind. Das Dashboard „Mein Arbeitsbereich“ umfasst eine Vielzahl von Widgets, über die Schnellzugriff, Erkenntnisse, Aufgaben und Inhalte verfügbar sind. Sie können je nach Ihren Voreinstellungen konfigurieren, wie diese Widgets in Ihrem Arbeitsbereich angezeigt werden.
 
 >[!NOTE]
 >
->Das Insights-Widget ist nur für Administrierende sichtbar.
+>Das Widget „Erkenntnisse“ ist nur für Administrierende sichtbar.
 
 <!--
 
@@ -38,19 +38,27 @@ Highlights upcoming features for Assets.
 
 **Schnellzugriff**
 
-Pin-Dateien, Ordner und Sammlungen für einen schnelleren Zugriff auf diese Elemente, wenn Sie sie später benötigen. Alle fixierten Elemente werden im **Schnellzugriff** Abschnitt &quot;Mein Arbeitsbereich&quot;. Sie können über den Arbeitsbereich darauf zugreifen, anstatt zu dem Speicherort zu navigieren, an dem sie im Repository gespeichert sind.
+Heften Sie Dateien, Ordner und Sammlungen an, um im Bedarfsfall schneller auf diese Elemente zugreifen zu können. Alle angehefteten Elemente werden im Dashboard „Mein Arbeitsbereich“ im Abschnitt **Schnellzugriff** angezeigt. Sie können auf diese Elemente über das Dashboard „Mein Arbeitsbereich“ zugreifen, anstatt zu ihrem Speicherort im Repository zu navigieren.
 
-Um ein Asset, einen Ordner oder eine Sammlung zu veröffentlichen, wählen Sie das Element aus und klicken Sie auf **[!UICONTROL An Schnellzugriff anheften]**.
+So veröffentlichen Sie ein Asset, einen Ordner oder eine Sammlung:
 
-![Aufgaben in Workspace](assets/quick-access.png)
+1. Wählen Sie das Element aus und klicken Sie auf **[!UICONTROL An Schnellzugriff anheften]**.
 
-**Insights**
+1. Wählen Sie aus, ob das Element nur für Sie, für die gesamte Organisation oder für ausgewählte Gruppen veröffentlicht werden soll. Wenn Sie **[!UICONTROL Für Gruppen]**, definieren Sie die Gruppennamen in der **[!UICONTROL Pin für Gruppen]** -Feld.
 
-Administrierende können eine Zusammenfassung der Anzahl der Downloads und Uploads anzeigen, die in den letzten 30 Tagen in der Assets-Umgebung durchgeführt wurden. Sie können auf **[!UICONTROL Alle anzeigen]** klicken, um schnell zur Insights-Seite zu navigieren, um detailliertere Dashboards zu erhalten.
+   ![Elemente für Gruppen fixieren](assets/pin-items-for-groups.png)
+1. Klicks **[!UICONTROL Pin]**.
 
-Sie können die am häufigsten gesuchten Begriffe sowie die Anzahl der Suchvorgänge dieser Begriffe in Ihrer Assets-Ansichtsimplementierung mit der **Insights** Abschnitt &quot;Mein Arbeitsbereich&quot;. Sie können auch zu detaillierten Insights navigieren, um die wichtigsten Suchvorgänge der letzten 30 Tage oder 12 Monate anzuzeigen.
+   Das ausgewählte Element wird im **[!UICONTROL Schnellzugriff]** Abschnitt &quot;Mein Arbeitsbereich&quot;.
+   ![Aufgaben in Workspace](assets/quick-access.png)
 
-![Insights in Workspace](assets/insights.png)
+**Erkenntnisse**
+
+Administrierende können eine Zusammenfassung der Anzahl der Downloads und Uploads anzeigen, die in den letzten 30 Tagen in der Assets-Umgebung durchgeführt wurden. Sie können auf **[!UICONTROL Alle anzeigen]** klicken, um schnell zur Seite „Erkenntnisse“ zu navigieren, um detailliertere Dashboards zu erhalten.
+
+Sie können die am häufigsten gesuchten Begriffe sowie die Anzahl der Suchvorgänge dieser Begriffe in Ihrer Assets-Ansichtsimplementierung mit der **Insights** Abschnitt &quot;Mein Arbeitsbereich&quot;. Sie können zudem zu detaillierten Erkenntnissen navigieren, um die häufigsten Suchanfragen der letzten 30 Tage oder 12 Monate anzuzeigen.
+
+![Erkenntnisse in Workspace](assets/insights.png)
 
 **Aufgaben**
 
