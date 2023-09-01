@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 5b61b60a94b944a747232b238c3ce48195a5a212
+source-git-commit: c63f621f2526f05c8555acdac77a4c05a473c95d
 workflow-type: tm+mt
-source-wordcount: '4508'
+source-wordcount: '4481'
 ht-degree: 96%
 
 ---
@@ -121,19 +121,18 @@ Gehen Sie wie folgt vor, um eine Vorschau für ein Asset anzuzeigen.
 
 1. Um ein bestimmtes Datum/eine Zeit für die Aktivierung der Assets einzustellen, verwenden Sie die Datumsauswahl neben dem Feld **[!UICONTROL Einschaltzeit]**.
 
-   ![chlimage_1-217](assets/chlimage_1-217.png)
+   ![Datumsauswahl](assets/date-picker.png)
 
 1. Um das Asset nach einer bestimmten Laufzeit zu deaktivieren, wählen Sie das Datum/den Zeitpunkt mit der Datumsauswahl neben dem Feld **[!UICONTROL Ausschaltzeit]**. Das Deaktivierungsdatum sollte nach dem Aktivierungsdatum für ein Asset liegen. Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellungen weder über die Assets-Web-Oberfläche noch über die HTTP-API verfügbar.
 
-   ![chlimage_1-218](assets/chlimage_1-218.png)
-
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)
 1. Wählen Sie im Feld **[!UICONTROL Tags]** ein oder mehrere Tags aus. Um ein benutzerdefiniertes Tag hinzuzufügen, geben Sie den Namen des Tags in das Feld ein und wählen Sie anschließend die `Enter`-Taste aus. Das neue Tag wird in [!DNL Experience Manager] gespeichert.
 
    YouTube erfordert Tags zur Veröffentlichung und einen YouTube-Link (wenn ein geeigneter Link gefunden werden kann).
 
    >[!NOTE]
    >
-   >Um Tags zu erstellen, müssen Sie über eine Schreibberechtigung für den `/content/cq:tags/default`-Pfad im CRX-Repository verfügen.
+   > Um Tags zu erstellen, müssen Sie über eine Schreibberechtigung für den `/content/cq:tags/default`-Pfad im CRX-Repository verfügen.
 
 1. Tippen oder klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
@@ -181,7 +180,7 @@ Die anderen Eigenschaften und Metadateninformationen werden beibehalten. Beim Ko
 
 1. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Einfügen]**. Die Assets werden an diesen Speicherort kopiert.
 
-   ![chlimage_1-219](assets/chlimage_1-219.png)
+   <!--![chlimage_1-219](assets/chlimage_1-219.png)-->
 
    >[!NOTE]
    >
@@ -229,7 +228,7 @@ Die anderen Eigenschaften und Metadateninformationen werden beibehalten. Beim Ko
 
 1. Tippen oder klicken Sie auf das Asset, um die Asset-Seite zu öffnen.
 
-   ![chlimage_1-220](assets/chlimage_1-220.png)
+   <!--![chlimage_1-220](assets/chlimage_1-220.png)-->
 
 1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie in der Liste **[!UICONTROL Ausgabedarstellungen]** aus.
 
@@ -255,7 +254,7 @@ Die anderen Eigenschaften und Metadateninformationen werden beibehalten. Beim Ko
 
    Navigieren Sie zur Seite mit Asset-Details und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Ausgabedarstellung hinzufügen]**, um eine neue Ausgabedarstellung für das Asset hochzuladen.
 
-   ![chlimage_1-221](assets/chlimage_1-221.png)
+   <!--![chlimage_1-221](assets/chlimage_1-221.png)-->
 
    >[!NOTE]
    >
@@ -267,7 +266,7 @@ Die anderen Eigenschaften und Metadateninformationen werden beibehalten. Beim Ko
 
    Ebenso können Sie das Bild der Anmerkungsseite durch Überlagern von `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker` anpassen.
 
-   ![chlimage_1-222](assets/chlimage_1-222.png)
+   <!--![chlimage_1-222](assets/chlimage_1-222.png)-->
 
    Navigieren Sie zur Konfiguration der Ausgabedarstellungsabmessungen für ein Video-Asset zum Knoten `videopicker` im CRX-Repository am Speicherort `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, überlagern Sie den Knoten und bearbeiten Sie dann die entsprechende Eigenschaft.
 
@@ -451,11 +450,11 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
    * [Schnellaktionen](#quick-actions)
    * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben    oder zur Asset-Seite navigiert sind
 
-   ![chlimage_1-233](assets/chlimage_1-233.png)
+   <!--![chlimage_1-233](assets/chlimage_1-233.png)-->
 
 1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Zeitleiste einen Kommentar hinzu. Sie haben auch die Möglichkeit, einen Bereich im Bild zu markieren und im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** eine Anmerkung hinzuzufügen.
 
-   ![chlimage_1-234](assets/chlimage_1-234.png)
+<!-- ![chlimage_1-234](assets/chlimage_1-234.png)-->
 
 <!--
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
@@ -465,11 +464,11 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 >
 >Für einen Benutzer ohne Administratorberechtigung sind Vorschläge nur dann sichtbar, wenn er über eine Leseberechtigung in `/home` in CRXDE verfügt.
 
-![chlimage_1-235](assets/chlimage_1-235.png)
+<!--![chlimage_1-235](assets/chlimage_1-235.png)-->
 
 1. Nachdem Sie die Anmerkung hinzugefügt haben, klicken Sie auf **[!UICONTROL Hinzufügen]**, um sie zu speichern. Eine Benachrichtigung über die Anmerkung wird an Aaron gesendet.
 
-   ![chlimage_1-236](assets/chlimage_1-236.png)
+   <!--![chlimage_1-236](assets/chlimage_1-236.png)-->
 
    >[!NOTE]
    >
@@ -484,11 +483,11 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 
 1. Wenn Sie eine andere Farbe auswählen möchten, um zwischen Benutzern zu unterscheiden, klicken/tippen Sie auf das Symbol „Profil“. Anschließend klicken/tippen Sie auf **[!UICONTROL Benutzereinstellungen]**.
 
-   ![chlimage_1-237](assets/chlimage_1-237.png)
+   <!--![chlimage_1-237](assets/chlimage_1-237.png)-->
 
    Geben Sie die gewünschte Farbe im Feld **[!UICONTROL Anmerkungsfarbe]** an und klicken/tippen Sie auf **[!UICONTROL Annehmen]**.
 
-   ![chlimage_1-238](assets/chlimage_1-238.png)
+<!-- ![chlimage_1-238](assets/chlimage_1-238.png)-->
 
 >[!NOTE]
 >
@@ -508,15 +507,15 @@ Sie können immer nur eine Anmerkung auf einmal anzeigen.
 
 1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Zeitleiste]** aus der Liste aus.
 
-   ![chlimage_1-239](assets/chlimage_1-239.png)
+   <!--![chlimage_1-239](assets/chlimage_1-239.png)-->
 
 1. Wählen Sie in der Liste **[!UICONTROL Alle anzeigen]** in der Zeitleiste **[!UICONTROL Kommentare]** aus, um die Ergebnisse anhand von Anmerkungen zu filtern.
 
-   ![chlimage_1-240](assets/chlimage_1-240.png)
+   <!--![chlimage_1-240](assets/chlimage_1-240.png)-->
 
    Tippen oder klicken Sie im Bedienfeld **[!UICONTROL Zeitleiste]** auf einen Kommentar, um die entsprechende Anmerkung auf dem Bild anzuzeigen.
 
-   ![chlimage_1-241](assets/chlimage_1-241.png)
+   <!--![chlimage_1-241](assets/chlimage_1-241.png)-->
 
    Tippen oder klicken Sie auf **[!UICONTROL Löschen]**, um einen bestimmten Kommentar zu löschen.
 
@@ -540,29 +539,29 @@ Zum Drucken der Anmerkungen und des Prüfungsstatus tippen/klicken Sie auf das S
 
 1. Zum Drucken bestimmter Anmerkungen wählen Sie die Anmerkungen aus der Zeitleiste aus.
 
-   ![chlimage_1-242](assets/chlimage_1-242.png)
+   <!--![chlimage_1-242](assets/chlimage_1-242.png)-->
 
    Um nur den Prüfungsstatus zu drucken, wählen Sie ihn aus der Zeitleiste aus.
 
-   ![chlimage_1-243](assets/chlimage_1-243.png)
+   <!--![chlimage_1-243](assets/chlimage_1-243.png)-->
 
 1. Tippen/klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Drucken]**.
 
-   ![chlimage_1-244](assets/chlimage_1-244.png)
+   <!--![chlimage_1-244](assets/chlimage_1-244.png)-->
 
 1. Wählen Sie im Dialogfeld „Drucken“ die Position, deren Anmerkungen/Prüfungsstatus in der PDF-Datei angezeigt werden sollen. Wenn Sie beispielsweise die Anmerkungen/den Status in der linken oberen Ecke der Seite drucken möchten, die das gedruckte Bild enthält, verwenden Sie die Einstellung **Oben links**. Sie ist standardmäßig aktiviert.
 
-   ![chlimage_1-245](assets/chlimage_1-245.png)
+   <!--![chlimage_1-245](assets/chlimage_1-245.png)-->
 
    Sie können auch andere Einstellungen wählen, je nach der von Ihnen gewünschten Position der Anmerkungen oder des Status in der gedruckten PDF-Datei. Wenn sich die von Ihnen gewünschte Position der Anmerkungen/des Status auf einer Seite befindet, die nicht zum gedruckten Asset gehört, wählen Sie **[!UICONTROL Nächste Seite]**.
 
 1. Klicken Sie auf **[!UICONTROL Drucken]**. Je nach der Option, die Sie in Schritt 2 wählen, zeigt die erstellte PDF-Datei die Anmerkungen/den Status an der angegebenen Position an. Beispiel: Wenn Sie beide Anmerkungen und den Prüfungsstatus mithilfe der Einstellung **Oben links** drucken, ähnelt die erstellte Ausgabe der hier dargestellten PDF-Datei.
 
-   ![chlimage_1-246](assets/chlimage_1-246.png)
+   <!--![chlimage_1-246](assets/chlimage_1-246.png)-->
 
 1. Laden Sie die PDF-Datei herunter oder drucken Sie sie mithilfe der Optionen in der rechten oberen Ecke.
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
    Um das Erscheinungsbild der gerenderten PDF-Datei zu ändern (z. B. Schriftfarbe, Größe, Stil und Hintergrundfarbe der Kommentare und Status), öffnen Sie in Configuration Manager die **[!UICONTROL Konfiguration für PDF-Anmerkungen]** und ändern Sie die gewünschten Optionen. Um beispielsweise die Anzeigefarbe des Status „Bestätigt“ zu ändern, modifizieren Sie im entsprechenden Feld den Farb-Code. Informationen zum Ändern der Schriftfarbe von Anmerkungen finden Sie unter [Anmerkungen](/help/assets/manage-digital-assets.md#annotating).
 
@@ -594,15 +593,15 @@ Mit der Versionierungsfunktion können Sie Folgendes tun:
 
 1. Tippen oder klicken Sie unten auf das Symbol **[!UICONTROL Aktionen]** (Pfeil), um die verfügbaren Aktionen anzuzeigen, die Sie am Asset durchführen können.
 
-   ![chlimage_1-249](assets/chlimage_1-249.png)
+   <!--![chlimage_1-249](assets/chlimage_1-249.png)-->
 
 1. Tippen oder klicken Sie auf **[!UICONTROL Als Version speichern]**, um eine Version für das Asset zu erstellen.
 
-   ![chlimage_1-250](assets/chlimage_1-250.png)
+<!--![chlimage_1-250](assets/chlimage_1-250.png)-->
 
 1. Fügen Sie eine Beschriftung und Kommentare hinzu und klicken Sie auf **[!UICONTROL Erstellen]**, um eine Version zu erstellen. Tippen oder klicken Sie alternativ auf **Abbrechen**, um den Vorgang abzubrechen.
 
-   ![chlimage_1-251](assets/chlimage_1-251.png)
+   <!--![chlimage_1-251](assets/chlimage_1-251.png)-->
 
 1. Um die neue Version anzuzeigen, öffnen Sie in der Zeitleiste die Liste **[!UICONTROL Alle anzeigen]** auf der Detailseite für Assets oder der Assets-Benutzeroberfläche und wählen Sie **[!UICONTROL Versionen]**. Alle für ein Asset erstellten Versionen werden auf der Registerkarte „Zeitleiste“ aufgeführt. Sie können die Liste filtern, sodass Versionen angezeigt werden, indem Sie auf den Dropdown-Pfeil klicken und **[!UICONTROL Versionen]** aus der Liste auswählen.
 
@@ -635,23 +634,23 @@ Mit der Versionierungsfunktion können Sie Folgendes tun:
 
 1. Tippen oder klicken Sie unten auf das Symbol **[!UICONTROL Aktionen]** (Pfeil), um die Liste der Aktionen zu öffnen, die für das Asset verfügbar sind.
 
-   ![chlimage_1-252](assets/chlimage_1-252.png)
+   <!--![chlimage_1-252](assets/chlimage_1-252.png)-->
 
 1. Wählen Sie **[!UICONTROL Workflow starten]** aus der Liste aus.
 
-   ![chlimage_1-253](assets/chlimage_1-253.png)
+   <!--![chlimage_1-253](assets/chlimage_1-253.png)-->
 
 1. Wählen Sie im Dialogfeld **[!UICONTROL Workflow starten]** ein Workflow-Modell aus der Liste.
 
-   ![chlimage_1-254](assets/chlimage_1-254.png)
+   <!--![chlimage_1-254](assets/chlimage_1-254.png)-->
 
 1. (Optional) Geben Sie einen Titel für den Workflow an, der für den Verweis auf die Workflow-Instanz verwendet werden kann.
 
-   ![chlimage_1-255](assets/chlimage_1-255.png)
+   <!--![chlimage_1-255](assets/chlimage_1-255.png)-->
 
 1. Um zu bestätigen, tippen oder klicken Sie im Dialogfeld auf **[!UICONTROL Start]** und anschließend auf **[!UICONTROL Weiter]**. Jeder Schritt des Workflows wird in der Zeitleiste als ein Ereignis angezeigt.
 
-   ![chlimage_1-256](assets/chlimage_1-256.png)
+   <!--![chlimage_1-256](assets/chlimage_1-256.png)-->
 
 ## Sammlungen {#collections}
 
