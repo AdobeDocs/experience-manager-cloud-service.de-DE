@@ -4,16 +4,22 @@ description: Erfahren Sie, wie der Inhaltsfragment-Editor Markdown-Syntax verwen
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 80%
+source-wordcount: '576'
+ht-degree: 73%
 
 ---
 
 # Markdown {#markdown}
 
 Wenn Sie [Inhalt erstellen oder bearbeiten](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), verwendet der Inhaltsfragment-Editor die *Markdown*-Syntax, um Ihnen die Erstellung von Headless-Content zu erleichtern:
+
+>[!NOTE]
+>
+>Inhaltsfragmente sind eine Sites-Funktion, werden jedoch als **Assets**.
+>
+>Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor beschrieben, auf den Sie hauptsächlich über das **Assets** Konsole. Weitere Informationen finden Sie in der Sites-Dokumentation . [Inhaltsfragmente - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md)für Details zum neuen Editor (hauptsächlich über die **Inhaltsfragmente** -Konsole).
 
 ![Markdown-Editor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

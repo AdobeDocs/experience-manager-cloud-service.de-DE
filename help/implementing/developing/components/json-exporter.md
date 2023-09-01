@@ -2,10 +2,10 @@
 title: JSON-Exporter für Content Services
 description: Mit den AEM Content Services können die Beschreibung und Bereitstellung von Inhalten in/über AEM über einen Fokus auf Web-Seiten hinweg generalisiert werden. Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditionellen AEM-Web-Seiten sind, und nutzen standardisierte Methoden, die von allen Clients genutzt werden können.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 78%
+ht-degree: 92%
 
 ---
 
@@ -29,7 +29,7 @@ In AEM erfolgt die Bereitstellung mit dem `model`-Selektor und der `.json`-Erwei
 
 `.model.json`
 
-1. Beispielsweise eine URL wie:
+1. Beispielsweise werden durch eine URL wie:
 
    ```shell
    http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks.model.json
@@ -47,23 +47,23 @@ Verwenden Sie dazu den vollständigen Pfad zum Fragment (über `jcr:content`); b
 
 Ihre Seite kann entweder ein einzelnes Inhaltsfragment oder mehrere Komponenten verschiedener Typen enthalten. Sie können auch Mechanismen wie Listenkomponenten verwenden, um automatisch nach relevanten Inhalten zu suchen.
 
-* Beispielsweise eine URL wie:
+* Beispielsweise werden durch eine URL wie:
 
-   ```shell
-   http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/container/container/contentfragment.model.json
-   ```
+  ```shell
+  http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/container/container/contentfragment.model.json
+  ```
 
 * liefert Inhalte wie:
 
-   ![JSON-Modell für WKND-Inhaltsfragmente](assets/json-model-wknd-content-fragment.png)
+  ![JSON-Modell für WKND-Inhaltsfragmente](assets/json-model-wknd-content-fragment.png)
 
-   >[!NOTE]
-   >
-   >Sie können [Ihre eigenen Komponenten anpassen](enabling-json-exporter.md), um auf diese Daten zuzugreifen und sie zu verwenden.
+  >[!NOTE]
+  >
+  >Sie können [Ihre eigenen Komponenten anpassen](enabling-json-exporter.md), um auf diese Daten zuzugreifen und sie zu verwenden.
 
-   >[!NOTE]
-   >
-   >Obwohl es sich nicht um eine Standardimplementierung handelt, werden [mehrere Selektoren unterstützt,](enabling-json-exporter.md#multiple-selectors) jedoch muss `model` der erste sein.
+  >[!NOTE]
+  >
+  >Obwohl es sich nicht um eine Standardimplementierung handelt, werden [mehrere Selektoren unterstützt,](enabling-json-exporter.md#multiple-selectors) jedoch muss `model` der erste sein.
 
 ### Weiterführende Informationen {#further-information}
 
@@ -72,7 +72,7 @@ Siehe auch:
 * Assets-HTTP-API
    * [Assets-HTTP-API](/help/assets/developer-reference-material-apis.md)
 * Sling-Modelle:
-   * [Sling-Modelle - Verknüpfen einer Modellklasse mit einem Ressourcentyp seit 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+   * [Sling-Modelle – Zuordnen einer Modellklasse zu einem Ressourcentyp seit 1.3.0](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 * AEM mit JSON:
    * [Aktivieren eines JSON-Exports für eine Komponente](enabling-json-exporter.md)
 
@@ -80,7 +80,7 @@ Siehe auch:
 
 Weitere Informationen finden Sie unter:
 
-* [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md)
+* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [Bearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 * [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und die [Inhaltsfragmentkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=de)

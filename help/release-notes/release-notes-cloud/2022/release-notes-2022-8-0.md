@@ -2,7 +2,7 @@
 title: Versionshinweise für Version 2022.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2022.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 59%
@@ -45,7 +45,7 @@ Sehen Sie sich das Video Versionsübersicht vom August 2022 an, um eine Zusammen
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Sites] verfügbar {#prerelease-features-sites}
 
-* Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) bietet Benutzern die Möglichkeit, die Gesamtzahl der Sprachkopien anzuzeigen, die mit einem Inhaltsfragment verknüpft sind. Über einen 1-Klick-Zugriff können auch alle Sprachkopien angezeigt werden. Benutzende können die Tabellenansicht auch nach der Region filtern, die sie interessiert.
+* Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) bietet Benutzern die Möglichkeit, die Gesamtzahl der Sprachkopien anzuzeigen, die mit einem Inhaltsfragment verknüpft sind. Über einen 1-Klick-Zugriff können auch alle Sprachkopien angezeigt werden. Benutzende können die Tabellenansicht auch nach der Region filtern, die sie interessiert.
 
 ![Sprachen von Inhaltsfragmenten](/help/release-notes/assets/cfconsole-languages.png)
 

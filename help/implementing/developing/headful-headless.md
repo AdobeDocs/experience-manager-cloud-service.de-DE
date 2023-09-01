@@ -2,7 +2,7 @@
 title: Headful und Headless in AEM
 description: AEM-Projekte können in einem Headful- und in einem Headless-Modell implementiert werden, Sie müssen sich jedoch nicht entscheiden. AEM bietet die Flexibilität, die Vorteile beider Modelle in einem Projekt zu nutzen.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 90%
@@ -53,18 +53,18 @@ In AEM gibt es vier Stufen der SPA-Integration.
    * Die SPA und AEM sind getrennt und tauschen keine Informationen aus.
    * Content wird in zwei separaten Systemen erstellt, verwaltet und bereitgestellt.
 * **Ebene 1: Integration von Inhaltsfragmenten**
-   * [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments.md) werden in AEM verwendet, um eingeschränkte Inhalte für die SPA zu erstellen und zu verwalten.
+   * [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) werden in AEM verwendet, um eingeschränkte Inhalte für die SPA zu erstellen und zu verwalten.
    * Der SPA ruft diesen Inhalt über AEM ab [GraphQL-API](/help/headless/graphql-api/content-fragments.md).
    * Ein Teil des Contents wird in AEM und ein anderer in einem externen System verwaltet.
    * Content kann nur in der SPA angezeigt werden.
 * **Ebene 2: Einbetten der SPA in AEM**
-   * [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments.md) werden in AEM verwendet, um Content für die SPA zu erstellen und zu verwalten.
+   * [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) werden in AEM verwendet, um Content für die SPA zu erstellen und zu verwalten.
    * Der SPA ruft diesen Inhalt über AEM ab [GraphQL-API](/help/headless/graphql-api/content-fragments.md).
    * Ein Teil des Contents wird in AEM und ein anderer in einem externen System verwaltet.
    * Content kann in AEM im Kontext angezeigt werden.
    * Eingeschränkter Content kann in AEM bearbeitet werden.
 * **Ebene 3: Einbetten und vollständiges Aktivieren der SPA in AEM**
-   * [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments.md) werden in AEM verwendet, um Content für die SPA zu erstellen und zu verwalten.
+   * [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) werden in AEM verwendet, um Content für die SPA zu erstellen und zu verwalten.
    * Der SPA ruft diesen Inhalt über AEM ab [GraphQL-API](/help/headless/graphql-api/content-fragments.md).
    * Content kann in AEM im Kontext angezeigt werden.
    * Die meisten Inhalte können in AEM bearbeitet werden.

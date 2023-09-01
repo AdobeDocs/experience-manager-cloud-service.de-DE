@@ -2,7 +2,7 @@
 title: Konfigurationen und der Konfigurations-Browser
 description: Machen Sie sich mit AEM-Konfigurationen und der Verwaltung der Einstellungen für den Arbeitsbereich in AEM vertraut.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 91%
@@ -34,7 +34,7 @@ Der AEM Administrator und die Autoren können Konfigurationen als Arbeitsbereich
 Konfigurationen können für viele verschiedene Funktionen in AEM erstellt werden.
 
 * [Context-Hub-Segmente](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [Bearbeitbare Vorlagen](/help/sites-cloud/authoring/features/templates.md)
 * verschiedene Cloud-Konfigurationen
 
@@ -80,7 +80,7 @@ Es ist sehr einfach, mithilfe des Konfigurations-Browsers eine neue Konfiguratio
       * Er kann bei Bedarf angepasst werden.
 1. Markieren Sie die Art der Konfigurationen, die Sie zulassen möchten.
    * [Context-Hub-Segmente](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [Bearbeitbare Vorlagen](/help/sites-cloud/authoring/features/templates.md)
    * verschiedene Cloud-Konfigurationen
 1. Tippen oder klicken Sie auf **Erstellen**.

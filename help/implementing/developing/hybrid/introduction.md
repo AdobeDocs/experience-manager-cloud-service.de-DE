@@ -2,7 +2,7 @@
 title: Einführung in SPAs und exemplarische Anleitung
 description: In diesem Artikel werden die Konzepte einer SPA vorgestellt und die Nutzung einer einfachen SPA zur Inhaltserstellung erläutert. Außerdem wird gezeigt, wie eine SPA mit dem zugrunde liegenden AEM-SPA-Editor in Beziehung steht.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 85%
@@ -187,7 +187,7 @@ Im nächsten Abschnitt [Laden eines SPA-Programms](#loading-a-spa-application) w
 
    ![JSON der WKND-SPA-Projekt-Startseite](assets/wknd-json.png)
 
-   Der AEM-SPA-Editor verwendet [AEM Content Services](/help/sites-cloud/administering/content-fragments/content-fragments.md) , um den gesamten Inhalt der Seite als JSON-Modell bereitzustellen.
+   Der AEM SPA Editor verwendet [AEM Content Services](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-and-content-services) , um den gesamten Inhalt der Seite als JSON-Modell bereitzustellen.
 
    Durch Implementierung spezifischer Schnittstellen stellen Sling-Modelle die für die SPA notwendigen Daten bereit. Die Bereitstellung der JSON-Daten wird nach unten an jede Komponente delegiert (von Seite zu Absatz zu Komponente usw.).
 

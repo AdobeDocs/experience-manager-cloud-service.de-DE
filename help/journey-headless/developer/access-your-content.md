@@ -2,7 +2,7 @@
 title: Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs
 description: In diesem Teil der AEM Headless-Entwickler-Tour lernen Sie, wie Sie GraphQL-Abfragen verwenden, um auf den Inhalt Ihrer Inhaltsfragmente zuzugreifen.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
+source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 96%
@@ -369,10 +369,10 @@ Nachdem Sie nun erfahren haben, wie Sie mit der AEM-GraphQL-API auf Ihren Headle
    * [Beispielabfrage – ein Einzelstadtfragment](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
    * [Beispielabfrage für Metadaten – Liste der Metadaten für Auszeichnungen mit dem Titel „GB“](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
    * [Beispielabfrage – alle Städte mit einer gegebenen Variante](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
-* [Aktivieren der Funktionen für Inhaltsfragmente im Konfigurations-Browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
-* [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-   * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
-   * [JSON-Ausgabe](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+* [Aktivieren der Funktionen für Inhaltsfragmente im Konfigurations-Browser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)
+* [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
+   * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [JSON-Ausgabe](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [Verstehen von Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=de#understand-cross-origin-resource-sharing-(cors))
 * [Persistente GraphQL-Abfragen - Aktivierung der Zwischenspeicherung im Dispatcher](/help/headless/deployment/dispatcher-caching.md)
 * [Erstellen von Zugriffs-Tokens für Server-seitige APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)

@@ -3,8 +3,11 @@ title: Markdown
 description: Erfahren Sie, wie der Inhaltsfragment-Editor die Markdown-Syntax verwendet, um Ihnen die einfache Erstellung von Inhalten für die Seitenbearbeitung und die Headless-Bereitstellung zu ermöglichen.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 4e9b076e-7429-466b-bb53-2164da379650
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 81%
@@ -12,6 +15,12 @@ ht-degree: 81%
 ---
 
 # Markdown {#markdown}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Beim [Authoring](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#authoring-your-content) verwendet der Inhaltsfragment-Editor eine *Markdown*-Syntax, mit der Sie Inhalte für die Seitenbearbeitung und die Headless-Bereitstellung einfach erstellen können:
 

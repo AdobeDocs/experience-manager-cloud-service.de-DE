@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Übersetzungsregeln zu übersetzende Inhalte iden
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 94%
@@ -23,7 +23,7 @@ Die Übersetzungsregeln identifizieren die zu übersetzenden Inhalte für Seiten
 
 Die in diesem Dokument beschriebenen Übersetzungsregeln gelten nur dann für Inhaltsfragmente, wenn die Option **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** auf der [Konfigurationsebene des Übersetzungs-Integrations-Frameworks](integration-framework.md#assets-configuration-properties) nicht aktiviert wurde.
 
-Wenn die Option **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** aktiv ist, verwendet AEM das Feld **Übersetzbar** bei [Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties), um zu bestimmen, ob das Feld übersetzt werden soll, und um automatisch Übersetzungsregeln zu erstellen. Diese Option ersetzt ggf. von Ihnen erstellte Übersetzungsregeln und erfordert keine Eingriffe oder zusätzlichen Schritte.
+Wenn die Option **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** aktiv ist, verwendet AEM das Feld **Übersetzbar** bei [Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties), um zu bestimmen, ob das Feld übersetzt werden soll, und um automatisch Übersetzungsregeln zu erstellen. Diese Option ersetzt ggf. von Ihnen erstellte Übersetzungsregeln und erfordert keine Eingriffe oder zusätzlichen Schritte.
 
 Wenn Sie Übersetzungsregeln für die Übersetzung Ihrer Inhaltsfragmente verwenden möchten, muss die Option **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** in der Framework-Konfiguration für die Übersetzungsintegration deaktiviert sein und Sie müssen die unten beschriebenen Schritte ausführen, um Ihre Regeln zu erstellen.
 

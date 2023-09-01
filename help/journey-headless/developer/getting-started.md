@@ -2,10 +2,10 @@
 title: Erste Schritte mit AEM Headless as a Cloud Service
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Voraussetzungen für AEM Headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '3080'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -166,7 +166,7 @@ Der Administrator sollte der Benutzer sein, der AEM einrichtet und die Laufzeitu
 
 #### Inhaltsautor {#content-author}
 
-Inhaltsautoren erstellen und verwalten die Inhalte, die von AEM Headless bereitgestellt werden. Inhaltsautoren verwenden AEM-Funktionen wie Inhaltsfragmente und die Assets-Konsole, um ihre Inhalte zu verwalten.
+Inhaltsautoren erstellen und verwalten die Inhalte, die von AEM Headless bereitgestellt werden. Inhaltsautoren verwenden AEM Funktionen wie den Inhaltsfragment-Editor und verschiedene Konsolen zur Verwaltung ihrer Inhalte.
 
 Inhaltsautoren sollten die folgenden Best Practices beachten.
 
@@ -289,8 +289,8 @@ Es wird zwar empfohlen, zum nächsten Teil der Headless-Development-Tour voranzu
 * [Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md): Technische Dokumentation zu den Seitenbenennungsbeschränkungen in AEM.
 * [Multi Site Manager und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md): Technische Dokumentation zu den leistungsstarken Übersetzungsfunktionen von AEM.
 * [AEM-Workflows](/help/sites-cloud/authoring/workflows/overview.md): Technische Dokumentation zur Automatisierung von Workflows in AEM
-* [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments.md): Technische Dokumentation für Inhaltsfragmente.
-* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md): Technische Dokumentation für Inhaltsfragmentmodelle.
+* [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md): Technische Dokumentation für Inhaltsfragmente.
+* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md): Technische Dokumentation für Inhaltsfragmentmodelle.
 * [Technische Dokumentation zu GraphQL](https://graphql.org): Die GraphQL-Definition (externer Link).
 * [GraphQL-API](/help/headless/graphql-api/content-fragments.md): Technische Dokumentation, in der erläutert wird, wie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellt werden.
 * [Assets-REST-API](/help/assets/content-fragments/assets-api-content-fragments.md): Technische Dokumentation, in der erläutert wird, wie Inhaltsfragmente (und andere Assets) erstellt und geändert werden.

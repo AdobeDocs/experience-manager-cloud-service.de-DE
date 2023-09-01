@@ -3,7 +3,7 @@ title: Einführung in Headless für AEM
 description: Erfahren Sie mehr über Headless in Adobe Experience Manager (AEM) durch eine Mischung aus umfangreicher Dokumentation und Headless-Videos. Erfahren Sie, wie Sie Funktionen wie Inhaltsfragmentmodelle, Inhaltsfragmente und eine GraphQL-API verwenden können, um Headless-Erlebnisse zu unterstützen.
 landing-page-description: Erfahren Sie, wie Sie Headless in Adobe Experience Manager as a Cloud Service verwenden und verwalten können.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 98%
@@ -42,7 +42,7 @@ AEM as a Cloud Service ist ein flexibles Tool für das Headless-Implementierungs
 1. **Inhaltsfragmente**
    * Ein Inhaltsfragment wird auf Basis eines Inhaltsfragmentmodells erstellt.
    * Inhaltsfragmente werden von Inhaltsautorinnen und -autoren mit dem AEM-Inhaltsfragment-Editor erstellt.
-   * Inhaltsfragmente werden als AEM-Assets gespeichert, können jedoch entweder über die Assets-Konsole oder die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) verwaltet werden.
+   * Inhaltsfragmente werden als AEM-Assets gespeichert, können jedoch entweder über die Assets-Konsole oder die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) verwaltet werden.
 1. **Inhalts-API für die Bereitstellung**
    * Die AEM-GraphQL-API unterstützt die Bereitstellung von Inhaltsfragmenten.
    * Die AEM Assets-REST-API unterstützt CRUD-Vorgänge für Inhaltsfragmente.

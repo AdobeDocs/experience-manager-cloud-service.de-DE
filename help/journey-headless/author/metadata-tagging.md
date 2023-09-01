@@ -2,10 +2,10 @@
 title: Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente
 description: Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 85%
+source-wordcount: '191'
+ht-degree: 92%
 
 ---
 
@@ -26,21 +26,9 @@ Dieser Artikel baut darauf auf, damit Sie verstehen, wie Sie Metadaten und Tags 
 
 ## Hinzufügen von Metadaten und Tags {#adding-metadata-and-tags}
 
-Es gibt drei Methoden, mit denen Sie Metadaten und Tags hinzufügen können:
+Sie können Metadaten und Tags aus dem rechten Bereich des Inhaltsfragment-Editors hinzufügen:
 
-* Beim erstmaligen Erstellen eines Fragments (über die Konsole **Assets**):
-
-  ![Inhaltsfragment erstellen – Name angeben](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
-
-* Die **Varianten** im Tab Inhaltsfragment-Editor können Sie vordefinierte **Tags** aus Ihrem Projekt:
-
-  ![Inhaltsfragmente-Editor – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
-
-* Die **Metadaten** auf der Registerkarte &quot;Inhaltsfragment-Editor&quot;können Sie beide Metadatenfelder und vordefinierte **Tags** aus Ihrem Projekt:
-
-  ![Inhaltsfragmente-Editor – Metadaten](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
-
-   * Sie können auch direkt über die Option **Eigenschaften** in der Symbolleiste der Asset-Konsole darauf zugreifen.
+![Inhaltsfragmente-Editor – Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Wie geht es weiter {#whats-next}
 
@@ -48,8 +36,8 @@ Jetzt können Sie all dieses Wissen nutzen und mit der Erstellung von Inhaltsfra
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Metadaten – Fragmenteigenschaften](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+* [Metadaten – Fragmenteigenschaften](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
 
 * [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md)
 
-* [Inhaltsfragmentmodelle – Zulassen von Inhaltsfragmentmodellen für Ihren Asset-Ordner](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Inhaltsfragmentmodelle – Zulassen von Inhaltsfragmentmodellen für Ihren Asset-Ordner](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)

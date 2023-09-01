@@ -2,10 +2,10 @@
 title: Gestalten Ihres ersten Erlebnisses mit AEM Headless
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie Ihre ersten Headless-Erlebnisse in AEM implementieren, einschließlich Überlegungen zur Planung, und lernen Best Practices kennen, die für möglichst reibungslose Abläufe sorgen.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
-source-wordcount: '2012'
-ht-degree: 96%
+source-wordcount: '1991'
+ht-degree: 95%
 
 ---
 
@@ -110,8 +110,8 @@ Der Erfolg eines Headless-Projekts hängt nicht nur von der implementierten Tech
 
 ### Inhaltserstellung {#authoring}
 
-* Verwenden Sie für kanalspezifische Versionen Ihrer Inhalte Inhaltsfragmentvarianten. Varianten werden mit den übergeordneten Inhalten synchronisiert, um die Verwaltung von Inhaltsänderungen zu optimieren.
-* Bitten Sie andere Inhaltsautoren, Inhalte zu überprüfen und Feedback mit Anmerkungen und Kommentaren zu geben, die im Inhaltsfragment-Editor verfügbar sind und global für alle Fragmente in der Admin Console für Inhaltsfragmente abgerufen werden können.
+* Verwenden Sie für kanalspezifische Versionen Ihrer Inhalte Inhaltsfragmentvarianten. Varianten werden mit dem Hauptinhalt synchronisiert, um die Verwaltung von Inhaltsänderungen zu optimieren.
+* Laden Sie andere Inhaltsersteller ein, Inhalte zu überprüfen und Feedback zu geben.
 * Verzichten Sie bei Ihren Abläufen möglichst auf obligatorische Elemente. Obligatorische Elemente können Workflows behindern.
 
 ### Erstellen von globalen Inhalten {#localization}
@@ -149,6 +149,6 @@ Sie können wie empfohlen mit dem nächsten Teil der AEM Headless-Entwickler-Tou
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) – GitHub-Projekt mit Beispielprogrammen, die auf AEM-GraphQL-APIs eingehen
 * [Einführung in die Architektur von Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) – kompletter Überblick über die AEM-Architektur
 * [Einrichtung von Headless](/help/headless/introduction.md#getting-started) – kurze Einführung in die Headless-Funktionen von AEM für Anwender mit AEM-Vorkenntnissen
-* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) – technische Dokumentation zu Inhaltsfragmentmodellen
-* [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) – technische Dokumentation zu Inhaltsfragmenten
+* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) – technische Dokumentation zu Inhaltsfragmentmodellen
+* [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) – technische Dokumentation zu Inhaltsfragmenten
 * [AEM-GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/headless/graphql-api/content-fragments.md) – technische Dokumentation zur GraphQL-API

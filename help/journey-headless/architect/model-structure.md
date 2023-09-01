@@ -2,7 +2,7 @@
 title: Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM
 description: Erfahren Sie mehr über die Konzepte und Methoden der Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmentmodellen.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 84%
@@ -112,23 +112,23 @@ Nachdem Sie die Grundlagen gelernt haben, besteht der nächste Schritt darin, Ih
 
 * [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) – diese Seite basiert hauptsächlich auf der **Sites**-Konsole, aber viele/die meisten Funktionen sind auch für die Navigation zu und die Ausführung von Aktionen mit **Inhaltsfragmentmodellen** auf der **Allgemein**-Konsole relevant.
 
-* [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [Definieren des Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
+      * [Definieren des Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model)
 
-      * [Aktivieren oder Deaktivieren von Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+      * [Aktivieren oder Deaktivieren von Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [Zulassen von Inhaltsfragmentmodellen im Asset-Ordner](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Zulassen von Inhaltsfragmentmodellen im Asset-Ordner](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [Löschen eines Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+      * [Löschen eines Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#deleting-a-content-fragment-model)
 
-      * [Veröffentlichen eines Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+      * [Veröffentlichen eines Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model)
 
-      * [Rückgängigmachen der Veröffentlichung eines Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+      * [Rückgängigmachen der Veröffentlichung eines Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#unpublishing-a-content-fragment-model)
 
-      * [Gesperrte (veröffentlichte) Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+      * [Gesperrte (veröffentlichte) Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#locked-published-content-fragment-models)
 
 * Anleitungen für den Einstieg
 

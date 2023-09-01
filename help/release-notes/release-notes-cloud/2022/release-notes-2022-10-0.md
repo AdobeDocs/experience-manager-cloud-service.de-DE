@@ -2,7 +2,7 @@
 title: Versionshinweise für Version 2022.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2022.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 79%
@@ -38,7 +38,7 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2022“ an, das eine Zusa
 
 * Die [Registerkarte &quot;Personalisierung&quot;für Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) ermöglicht dem Experience Fragment-Editor Funktionen zur Segmentierungsspezifikation und die Flexibilität, verschachtelte Experience Fragments zu erstellen, wodurch Kopf- und Fußzeilen für mehrere Segmente erstellt werden können. Bis zur Einführung dieser Funktion ist die von AEM angebotene Personalisierung nur für Web-Seiten verfügbar, nicht aber für Experience Fragments.
 
-* Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) ermöglicht es Benutzenden, übersetzte Inhaltsfragmente effizient zu verwalten. Über einen 1-Klick-Zugriff können auch alle Sprachkopien angezeigt werden. Benutzende können die Tabellenansicht auch nach der Region filtern, die sie interessiert.
+* Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) ermöglicht es Benutzenden, übersetzte Inhaltsfragmente effizient zu verwalten. Über einen 1-Klick-Zugriff können auch alle Sprachkopien angezeigt werden. Benutzende können die Tabellenansicht auch nach der Region filtern, die sie interessiert.
 
 ![Sprachen von Inhaltsfragmenten](/help/release-notes/assets/cfconsole-languages.png)
 

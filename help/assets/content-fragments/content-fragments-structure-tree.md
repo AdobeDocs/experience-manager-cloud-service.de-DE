@@ -2,16 +2,22 @@
 title: Strukturbaum von Inhaltsfragmenten (Assets − Inhaltsfragmente)
 description: Verwenden Sie die Funktion „Strukturbaum“ des Inhaltsfragment-Editors in AEM, um Ihre Headless-Inhalte besser zu verstehen.
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 89%
+source-wordcount: '170'
+ht-degree: 63%
 
 ---
 
 # Strukturbaum der Inhaltsfragmente {#content-fragment-structure-tree}
 
 Verwenden Sie die Funktion „Strukturbaum“ des Inhaltsfragment-Editors in AEM, um Ihre Headless-Inhalte besser zu verstehen.
+
+>[!NOTE]
+>
+>Inhaltsfragmente sind eine Sites-Funktion, werden jedoch als **Assets**.
+>
+>Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor beschrieben, auf den Sie hauptsächlich über das **Assets** Konsole. Weitere Informationen finden Sie in der Sites-Dokumentation . [Inhaltsfragmente - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md)für Details zum neuen Editor (hauptsächlich über die **Inhaltsfragmente** -Konsole).
 
 Im Inhaltsfragment-Editor können Sie das Strukturbaumsymbol auswählen:
 

@@ -2,7 +2,7 @@
 title: Grundlegende Handhabung
 description: Machen Sie sich mit der Navigation in AEM und seiner grundlegenden Verwendung vertraut
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '2975'
 ht-degree: 90%
@@ -72,7 +72,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
 | Experience Fragments | Bei einem [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) handelt es sich um ein einzelnes Erlebnis, das kanalübergreifend wiederverwendet werden kann und Varianten aufweist. So erübrigt sich das wiederholte Kopieren und Einfügen von Erlebnissen oder Teilen von Erlebnissen. |
 | Assets | In der Assets-Konsole können Sie [digitale Assets, wie Bilder, Videos, Dokumente und Audiodateien](/help/assets/overview.md), importieren und verwalten. Diese Assets können dann von jeder Site verwendet werden, die auf derselben AEM-Instanz ausgeführt wird. Über die Assets-Konsole können Sie auch [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) erstellen und verwalten. |
 | Personalisierung    | Diese Konsole bietet ein Framework aus Tools für die [Bearbeitung von Inhalt für eine bestimmte Zielgruppe und die Darstellung personalisierter Erlebnisse](/help/sites-cloud/authoring/personalization/overview.md). |
-| Inhaltsfragmente | [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments.md) ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Veröffentlichen von seitenunabhängigen Inhalten. Sie ermöglichen es Ihnen, strukturierte Inhalte vorzubereiten, die an verschiedenen Orten und über verschiedene Kanäle verwendet werden können, und eignen sich sowohl für die Erstellung von Seiten als auch für die Headless-Bereitstellung. |
+| Inhaltsfragmente | [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Veröffentlichen von seitenunabhängigen Inhalten. Sie ermöglichen es Ihnen, strukturierte Inhalte vorzubereiten, die an verschiedenen Orten und über verschiedene Kanäle verwendet werden können, und eignen sich sowohl für die Erstellung von Seiten als auch für die Headless-Bereitstellung. |
 
 ## Tools-Bereich {#tools-panel}
 

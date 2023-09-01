@@ -2,10 +2,10 @@
 title: Inhaltsfragmentmodelle (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für Ihre Headless-Inhalte dienen und wie Sie Inhaltsfragmente mit strukturierten Inhalten erstellen.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
 workflow-type: tm+mt
-source-wordcount: '2898'
-ht-degree: 86%
+source-wordcount: '2937'
+ht-degree: 85%
 
 ---
 
@@ -30,7 +30,12 @@ So verwenden Sie Inhaltsfragmentmodelle:
    >
    >Wenn die [Verwendung von Inhaltsfragmentmodellen nicht aktiviert wurde](/help/assets/content-fragments/content-fragments-configuration-browser.md), ist die Option **Erstellen** nicht verfügbar.
 
-1. Geben Sie den **Modell-Titel** an. Sie können auch **Tags** und eine **Beschreibung** hinzufügen sowie **Modell aktivieren** auswählen, um das [Modell bei Bedarf zu aktivieren](#enabling-disabling-a-content-fragment-model).
+1. Geben Sie den **Modell-Titel** an.
+Sie können auch verschiedene Eigenschaften definieren, beispielsweise **Tags**, a **Beschreibung** und wählen Sie **Modell aktivieren** nach [das Modell aktivieren](#enabling-disabling-a-content-fragment-model) falls erforderlich.
+
+   >[!NOTE]
+   >
+   >Weitere Informationen zum **Standard-URL-Vorschaumuster** see [Inhaltsfragmentmodell - Eigenschaften](#content-fragment-model-properties).
 
    ![Titel und Beschreibung](assets/cfm-models-02.png)
 
@@ -313,6 +318,12 @@ Sie können die **Eigenschaften** eines Inhaltsfragmentmodells bearbeiten:
    * **Tags**
    * **Beschreibung**
    * **Bild hochladen**
+   * **Standardmäßige Echtzeitansicht für URL-Muster**
+
+     >[!NOTE]
+     >
+     >Dies wird nur von der *new* Inhaltsfragment-Editor. Siehe [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) für weitere Informationen.
+
 
 ## Aktivieren oder Deaktivieren von Inhaltsfragmentmodellen {#enabling-disabling-a-content-fragment-model}
 

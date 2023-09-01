@@ -2,10 +2,10 @@
 title: Protokollieren für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie mithilfe der Protokollierung für AEM as a Cloud Service globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festlegen oder die Datenprotokollierung anfordern können.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 2fcc33cfb8b0be89b4b9f91d687dc21ba456000c
+source-git-commit: 7d4e1acee54ebcb1398bcc6ab83491e3fa6a8801
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 81%
+source-wordcount: '2669'
+ht-degree: 82%
 
 ---
 
@@ -17,7 +17,7 @@ Die Protokollierung und Protokollierungsebenen in AEM as a Cloud Service werden 
 
 * AEM-Protokollierung, die die Protokollierung auf AEM-Programmebene durchführt,
 * Apache HTTPD Web Server-/Dispatcher-Protokollierung, die die Protokollierung des Webservers und Dispatchers in der Veröffentlichungsstufe durchführt.
-* Die CDN-Protokollierung, die, wie ihr Name anzeigt, die Protokollierung im CDN durchführt. Diese Funktion steht derzeit frühen Anwendern zur Verfügung. Um am frühen Adoptivprogramm teilzunehmen, senden Sie eine E-Mail an **aemcs-cdnlogs-adopter@adobe.com**, einschließlich des Namens Ihrer Organisation und des Kontexts, in dem Sie an der Funktion interessiert sind.
+* Die CDN-Protokollierung, die, wie ihr Name anzeigt, die Protokollierung im CDN durchführt. Diese Funktion wird Anfang September schrittweise für Kunden eingeführt.
 
 ## AEM-Protokollierung {#aem-logging}
 
@@ -504,10 +504,12 @@ Define DISP_LOG_LEVEL debug
 
 >[!NOTE]
 >
->Diese Funktion ist noch nicht allgemein verfügbar. Um dem laufenden Programm für frühe Nutzer beizutreten, senden Sie eine E-Mail **aemcs-cdnlogs-adopter@adobe.com**, einschließlich des Namens Ihrer Organisation und des Kontexts, in dem Sie an der Funktion interessiert sind.
+>Diese Funktion wird Anfang September schrittweise für Kunden eingeführt.
 >
 
 AEM as a Cloud Service bietet Zugriff auf CDN-Protokolle, die für Anwendungsfälle nützlich sind, einschließlich der Optimierung der Cache-Trefferquote. Das CDN-Protokollformat kann nicht angepasst werden und es gibt kein Konzept, es auf verschiedene Modi wie Info, Warn oder Fehler festzulegen.
+
+Beachten Sie, dass die Funktion Splunk-Weiterleitung CDN-Protokolle noch nicht unterstützt.
 
 **Beispiel**
 
@@ -600,6 +602,8 @@ Je nach Traffic und der Menge der von Debug geschriebenen Protokolleinträge kan
 Kunden mit Splunk-Konten können über das Kunden-Support-Ticket anfordern, dass ihre AEM Cloud Service-Protokolle an den entsprechenden Index weitergeleitet werden. Die Protokolldaten entsprechen denen, die über die Cloud Manager-Protokolldownloads verfügbar sind. Kunden können es jedoch praktisch finden, die im Splunk-Produkt verfügbaren Abfragefunktionen zu verwenden.
 
 Die Netzwerkbandbreite, die mit an Splunk gesendeten Protokollen verknüpft ist, wird als Teil der Netzwerk-E/A-Nutzung des Kunden betrachtet.
+
+Beachten Sie, dass die Splunk-Weiterleitung CDN-Protokolle noch nicht unterstützt.
 
 ### Aktivieren der Splunk-Weiterleitung {#enabling-splunk-forwarding}
 

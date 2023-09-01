@@ -3,8 +3,11 @@ title: Inhaltsfragmentmodelle
 description: Erfahren Sie, wie Inhaltsfragmentmodelle als Grundlage für Ihre Inhaltsfragmente in AEM verwendet werden. Auf diese Weise können Sie strukturierte Inhalte erstellen, die für die Headless-Bereitstellung oder die Seitenbearbeitung verwendet werden können.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2916'
 ht-degree: 86%
@@ -12,6 +15,12 @@ ht-degree: 86%
 ---
 
 # Inhaltsfragmentmodelle {#content-fragment-models}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 In Inhaltsfragmentmodellen in AEM wird die Struktur des Inhalts Ihrer [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments.md) definiert. Diese können für die Seitenbearbeitung oder als Grundlage für Ihre Headless-Inhalte verwendet werden.
 

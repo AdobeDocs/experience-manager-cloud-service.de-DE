@@ -3,15 +3,25 @@ title: Zugehörige Inhalte
 description: Erfahren Sie, wie die zugehörige Inhaltsfunktion für Inhaltsfragmente die Verbindung für Assets bereitstellt, die mit dem Fragment verwendet werden sollen (optional). So erhalten Sie zusätzliche Flexibilität bei der Seitenbearbeitung und der Bereitstellung von Headless-Inhalten.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 84%
 
 ---
 
+
 # Zugehörige Inhalte{#associated-content}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Die AEM-Funktion für zugehörige Inhalte bietet eine Verknüpfung, damit Assets optional mit einem Fragment verwendet werden können, wenn es zu einer Inhaltsseite hinzugefügt wird. Dabei werden [mehrere Assets bereitstellt, auf die bei Verwendung des Inhaltsfragments auf einer Seite zugegriffen werden kann](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content). Außerdem wird der Zeitaufwand für die Suche nach dem entsprechenden Asset reduziert. Dies ermöglicht auch die flexible Bereitstellung von Headless-Inhalten.
 

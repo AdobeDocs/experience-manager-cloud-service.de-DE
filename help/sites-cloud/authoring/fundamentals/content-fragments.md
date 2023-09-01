@@ -2,20 +2,31 @@
 title: Inhaltsfragmente
 description: Inhaltsfragmente in Adobe Experience Manager as a Cloud Service ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 86%
+source-wordcount: '1286'
+ht-degree: 83%
 
 ---
 
 # Inhaltsfragmente {#content-fragments}
 
-Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service werden als [seitenunabhängige Assets erstellt und verwaltet](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service werden als [seitenunabhängige Assets erstellt und verwaltet](/help/sites-cloud/administering/content-fragments/overview.md).
 
 Sie ermöglichen Ihnen das Erstellen kanalneutraler Inhalte zusammen mit (möglicherweise kanalspezifischen) Variationen. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
 
 In Verbindung mit dem aktualisierten JSON Exporter können strukturierte Inhaltsfragmente auch verwendet werden, um AEM-Inhalte über Content Services anderen Kanälen als AEM-Seiten bereitzustellen.
+
+>[!NOTE]
+>
+>Inhaltsfragmente sind eine **Sites** , aber als **Assets**.
+>
+>Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**-Konsole verwaltet, können jedoch weiterhin über die **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**-Konsole verwaltet werden.
+>
+>Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten:
+>
+>* Der neue Editor für [Inhaltsfragmente - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), wird hauptsächlich über die **Inhaltsfragmente** Konsole.
+>* Die [Originaleditor](/help/assets/content-fragments/content-fragments-variations.md) wird in erster Linie von der **Assets** Konsole.
 
 >[!NOTE]
 >
@@ -29,7 +40,7 @@ In Verbindung mit dem aktualisierten JSON Exporter können strukturierte Inhalts
 
 >[!CAUTION]
 >
->Lesen Sie diese Seite gemeinsam mit [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) (und den zugehörigen Seiten), da dort grundlegende Termini und Konzepte sowie die Erstellung und Verwaltung von Fragmenten erklärt werden.
+>Lesen Sie diese Seite gemeinsam mit [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md) (und den zugehörigen Seiten), da dort grundlegende Termini und Konzepte sowie die Erstellung und Verwaltung von Fragmenten erklärt werden.
 
 Die Inhaltsfragmente ermöglichen Folgendes:
 
@@ -105,7 +116,7 @@ Im entsprechenden Konfigurationsdialogfeld können Sie die verfügbaren Paramete
 
 ### Schnelle Verbindung zum Fragmenteditor {#quick-connection-to-fragment-editor}
 
-Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols **Bearbeiten** in der Komponenten-Symbolleiste öffnen. Auf diese Weise können Sie [das Inhaltsfragment bearbeiten und verwalten](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols **Bearbeiten** in der Komponenten-Symbolleiste öffnen. Auf diese Weise können Sie [das Inhaltsfragment bearbeiten und verwalten](/help/sites-cloud/administering/content-fragments/overview.md).
 
 >[!CAUTION]
 >
@@ -115,7 +126,7 @@ Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols 
 
 Wenn ein bestimmtes Inhaltsfragment zur Seite hinzugefügt wird, gibt es einen Platzhalter **Komponenten hierher ziehen** zwischen jedem HTML-Absatz (und am oberen/unteren Rand) des Fragments.
 
-Damit können Sie zusätzlichen Inhalt hinzufügen [dazwischen (d. h. Zwischeninhalt)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) den Fragmentinhalt (an einem der verfügbaren Punkte), ohne das Stammfragment ändern zu müssen.
+Damit können Sie zusätzlichen Inhalt hinzufügen [dazwischen (d. h. Zwischeninhalt)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) den Fragmentinhalt (an einem der verfügbaren Punkte), ohne das Stammfragment ändern zu müssen.
 
 Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 
@@ -131,9 +142,9 @@ Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 
 >[!NOTE]
 >
->Sie können auch [visuelle Elemente (Bilder) in das Fragment selbst einfügen](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>Sie können auch [visuelle Elemente (Bilder) in das Fragment selbst einfügen](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->Die in das Inhaltsfragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz verbunden. Deshalb können Zwischeninhalte nicht zwischen einem visuellen Asset und dem vorangehenden Absatz platziert werden. Wenn Sie diese Verbindungsebene benötigen, können Sie das Bild dem Fragment hinzufügen (als ein [Fragment mit gemischten Medien](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)).
+>Die in das Inhaltsfragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz verbunden. Deshalb können Zwischeninhalte nicht zwischen einem visuellen Asset und dem vorangehenden Absatz platziert werden. Wenn Sie diese Verbindungsebene benötigen, können Sie das Bild dem Fragment hinzufügen (als ein [Fragment mit gemischten Medien](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
 
 >[!CAUTION]
 >
@@ -148,11 +159,11 @@ Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 
 ### Verwenden von zugehörigen Inhalten {#using-associated-content}
 
-Wenn Sie [verknüpfter Inhalt](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) mit dem [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/content-fragments.md) Diese Assets sind im Seitenbereich verfügbar (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [Zwischeninhalte](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Wenn Sie [verknüpfter Inhalt](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) mit dem [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) Diese Assets sind im Seitenbereich verfügbar (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [Zwischeninhalte](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
->Es gibt verschiedene Methoden zum Hinzufügen von [visuellen Assets (z. B. Bildern)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder zu einer Seite.
+>Es gibt verschiedene Methoden zum Hinzufügen von [visuellen Assets (z. B. Bildern)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder zu einer Seite.
 
 >[!NOTE]
 >
@@ -166,7 +177,7 @@ Von hier können Sie die Assets an die gewünschte Position ziehen (entweder an 
 
 ### In das Fragment eingefügte Assets {#assets-inserted-into-the-fragment}
 
-Wenn Assets (z. B. Bilder) in das Fragment selbst eingefügt wurden (als [Fragmente mit gemischten Medien](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)), sind die Optionen zur Bearbeitung dieser Assets im Seiten-Editor eingeschränkt.
+Wenn Assets (z. B. Bilder) in das Fragment selbst eingefügt wurden (als [Fragmente mit gemischten Medien](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), sind die Optionen zur Bearbeitung dieser Assets im Seiten-Editor eingeschränkt.
 
 Beispielsweise haben Sie zur Bearbeitung eines Bildes folgende Möglichkeiten:
 
@@ -181,7 +192,7 @@ Andere Änderungen wie Verschieben, Kopieren und Löschen müssen im Fragmentedi
 
 Fragmente müssen zuerst veröffentlicht werden, damit sie auf Ihren veröffentlichten Web-Seiten verwendet werden können:
 
-* Ein Fragment kann veröffentlicht werden, nachdem [es in der Inhaltsfragmentkonsole erstellt wurde](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment).
+* Ein Fragment kann veröffentlicht werden, nachdem [es in der Inhaltsfragmentkonsole erstellt wurde](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment).
 * Wenn ein *unveröffentlichtes Fragment* auf einer Seite verwendet wird, die veröffentlicht wird, kann das Fragment gleichzeitig mit der Seite veröffentlicht werden.
 
 ## Exportieren von Inhaltsfragmenten {#exporting-content-fragments}

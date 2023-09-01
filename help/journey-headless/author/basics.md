@@ -2,10 +2,10 @@
 title: Grundlagen zum Authoring
 description: Erfahren Sie mehr über die Konzepte und Mechanismen sw Authoring für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 83%
+source-wordcount: '1729'
+ht-degree: 70%
 
 ---
 
@@ -71,7 +71,7 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 
 In der Konsole können Sie im linken Bereich Ordner auswählen, um zu Ihrem Inhaltsfragment zu navigieren. Sie können auch danach filtern und/oder suchen.
 
-![Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
+![Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
 ### Aktionen, Auswählen, Anzeigen {#actions-selecting-viewing}
 
@@ -183,43 +183,44 @@ Geben Sie Folgendes an:
 
 Bestätigen Sie dann Ihre Angaben, indem Sie entweder auf **Erstellen** oder auf **Erstellen und öffnen** klicken.
 
-<!--
-Creating a Content Fragment is very similar - you just use the **Content Fragment** option instead:
-
-![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
-
-This time a wizard opens. The first step is to select the Content Fragment Model that your fragment is based on:
-
-![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
-
-After continuing with **Next** you can supply the details (**Basic** and **Advanced**) for your fragment:
-
-![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
-
-Confirm with **Create** and you can then **Open** your fragment in the editor.
--->
-
 ### Bearbeiten eines Fragments {#editing-fragment}
 
 Sie können ein Fragment unmittelbar nach seiner Erstellung öffnen oder indem Sie es in der Inhaltsfragmente-Konsole (oder auch in der Assets-Konsole) auswählen.
 
+>[!NOTE]
+>
+>Inhaltsfragmente sind eine Sites-Funktion, werden jedoch als **Assets**.
+>
+>Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten.
+>
+>* Der neue Editor, auf den hauptsächlich über das **Inhaltsfragmente** Konsole.
+>* Der ursprüngliche Editor, auf den hauptsächlich über das **Assets** Konsole.
+
 Beim ersten Öffnen des Editors wird Folgendes angezeigt:
 
-* Eine Liste von Symbolen auf der linken Seite – diese bietet Ihnen Zugriff auf verschiedene Funktionsbereiche. Der Editor öffnet sich auf der Registerkarte **Varianten**, auf der der größte Teil der Bearbeitung stattfindet. Vielleicht interessieren Sie sich auch für die Registerkarten **Anmerkungen** und **Metadaten**.
+* obere Symbolleiste: für wichtige Informationen und Aktionen
+   * einen Link zur Inhaltsfragmentkonsole (Startseiten-Symbol)
+   * Informationen zum Modell und Ordner
+   * Links zur Vorschau; wenn das URL-Standardmuster für die Vorschau für das Modell konfiguriert ist
+   * Aktionen &quot;Veröffentlichen&quot;und &quot;Veröffentlichung rückgängig machen&quot;
+   * eine Option zum Anzeigen aller **Übergeordnete Verweise** (Verknüpfungssymbol)
+   * das Fragment **Status** und zuletzt gespeicherte Informationen
+   * Umschalten auf den ursprünglichen (Assets-basierten) Editor
+* linker Bereich: zeigt die **Varianten** für das Inhaltsfragment und dessen **Felder**:
+   * Diese Links können zum Navigieren in der Inhaltsfragmentstruktur verwendet werden.
+* rechter Bereich: enthält Registerkarten mit den Eigenschaften (Metadaten und Tags), Informationen zum Versionsverlauf und Informationen zu Sprachkopien
+   * im **Eigenschaften** Registerkarte können Sie die **Titel** und **Beschreibung** für das Fragment oder **Variante**
+* Zentralbereich: zeigt die tatsächlichen Felder und den Inhalt der ausgewählten Variante an
+   * ermöglicht die Bearbeitung des Inhalts
+   * if **Registerkartenplatzhalter** -Felder werden innerhalb des hier angezeigten Modells definiert und können für die Navigation verwendet werden
 
-* Eine Kopfzeile mit Informationen zum Fragment und Zugriff auf verschiedene Aktionen.
+Ein Fragment kann beispielsweise:
 
-* Hauptbearbeitungsbereich – dieser hängt von dem Modell ab, das zum Erstellen des Fragments verwendet wurde.
+* Erfordert mehrere Informationen, einige mit einem bestimmten Typ. Für Headless-Inhalte sind Verweise von zentraler Bedeutung (Sie werden später auf Ihrer Journey darüber erfahren).
 
-Beispiele:
+* Ermöglicht Ihnen das Schreiben eines langen Textabschnitts. Hier finden Sie zusätzliche Optionen zum Verwalten und Formatieren des Textes. Sie können die einzelnen Textfelder auch in einem Vollbild-Editor öffnen (mithilfe des kleinen bildschirmähnlichen Symbols auf der rechten Seite).
 
-* Ein Fragment, für das nur mehrere Informationen erforderlich sind, von denen einige einen bestimmten Typ aufweisen. Für Headless-Inhalte sind Verweise von zentraler Bedeutung (Sie werden später auf Ihrer Journey darüber erfahren).
-
-  ![Inhaltsfragmente-Editor – Mein Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
-
-* Ein Fragment, mit dem Sie einen langen Abschnitt mit Text schreiben können. Hier finden Sie zusätzliche Optionen zum Verwalten und Formatieren des Textes. Sie können die einzelnen Textfelder auch in einem Vollbild-Editor öffnen (mithilfe des kleinen bildschirmähnlichen Symbols auf der rechten Seite).
-
-  ![Inhaltsfragmente-Editor – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+![Inhaltsfragmente-Editor – Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
@@ -239,26 +240,12 @@ OK, dies mag zwar etwas seltsam erscheinen, aber sobald Sie den Inhaltsfragment-
 
 * **Inhaltsfragmentmodelle**
 
-  Der Name des Inhaltsfragmentmodells wird oben im Editor angezeigt – direkt unter dem Namen des Fragments. Dies ist auch ein Link, über den Sie zum Modell-Editor gelangen.
+  Der Name des Inhaltsfragmentmodells wird im rechten Bereich des Editors angezeigt. Dies ist auch ein Link, über den Sie zum Modell-Editor gelangen.
 Inhaltsfragmentmodelle sind für Ihre Inhaltsfragmente von entscheidender Bedeutung, da sie die zu verwendende Struktur definieren. Für die Erstellung und Bearbeitung ist jedoch (in der Regel) eine andere Rolle, der Inhaltsarchitekt, verantwortlich.
 
   >[!NOTE]
   >
   >Wenn Sie mehr darüber erfahren möchten, können Sie die Journey AEM Headless-Inhaltsarchitekten-Tour lesen.
-
-* **Zugehörige Inhalte**
-
-  Dies ist ziemlich offensichtlich, da es sich um eine Registerkarte im Editor handelt.
-
-  Inhaltsfragmente sind in AEM seit einigen Versionen verfügbar. Ursprünglich wurden sie für die „traditionelle“ Verwendung beim Authoring von Seiten zur Verfügung gestellt...und werden weiterhin in diesem Zusammenhang verwendet. Dazu kann es gehören, Assets (z. B. Bilder) zuzuordnen, die zwar nicht in das Fragment eingebettet sind, aber für den Autor beim Erstellen und Bearbeiten einer Seite verfügbar sein müssen.
-
-* **Vorschau**
-
-  Dies ist eine weitere Registerkarte im Editor und bietet eine technische Ansicht, die hauptsächlich für Entwickler gedacht ist.
-
-* **Seitenverweise aktualisieren**
-
-  Diese Aktion ist im Abschnitt **...** (Ellipsen). Es ist für Headless-Autoren nicht interessant, da es sich auf die Seitenbearbeitung bezieht.
 
 ### Veröffentlichung {#publishing}
 
@@ -296,15 +283,15 @@ Nachdem Sie nun die Grundlagen gelernt haben, lautet der nächste Schritt: [Erfa
 
    * [Schienenauswahl](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
-* [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+   * [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md)
 
-   * [Anwenden der Konfiguration auf Ihren Assets-Ordner](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+   * [Anwenden der Konfiguration auf Ihren Assets-Ordner](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
 
-   * [Erstellen eines Inhaltsfragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [Erstellen eines Inhaltsfragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [Varianten – Authoring von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+   * [Bearbeiten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/authoring.md)
 
    * Veröffentlichung
 
@@ -316,15 +303,17 @@ Nachdem Sie nun die Grundlagen gelernt haben, lautet der nächste Schritt: [Erfa
 
       * Aus dem **Inhaltsfragmente** Konsole
 
-         * [Veröffentlichen und Anzeigen der Vorschau eines Inhaltsfragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
+         * [Veröffentlichen und Anzeigen der Vorschau eines Inhaltsfragments](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)
 
-   * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [Inhaltsfragmentmodelle – Datentypen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+      * [Inhaltsfragmentmodelle – Datentypen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-      * [Inhaltsfragmentmodelle – Eigenschaften](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+      * [Inhaltsfragmentmodelle – Eigenschaften](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
-      * [Inhaltsfragmentmodelle – Zulassen von Inhaltsfragmentmodellen für Ihren Assets-Ordner](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Inhaltsfragmentmodelle – Zulassen von Inhaltsfragmentmodellen für Ihren Assets-Ordner](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+
+* [Inhaltsfragmente - der ursprüngliche Editor aus der Konsole &quot;Assets&quot;](/help/assets/content-fragments/content-fragments-variations.md)
 
 * Anleitungen für den Einstieg
    * [Erstellen eines Setups für einen Asset-Ordner (Headless)](/help/headless/setup/create-assets-folder.md)

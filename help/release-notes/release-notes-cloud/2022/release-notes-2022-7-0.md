@@ -2,7 +2,7 @@
 title: Versionshinweise für Version 2022.7.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2022.7.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 27%
@@ -37,7 +37,7 @@ Sehen Sie sich das Video Versionsübersicht vom Juli 2022 an, um eine Zusammenfa
 
 ### Neue Funktionen in [!DNL Sites] {#sites-features}
 
-* Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) unterstützt jetzt [Tastaturbefehle](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+* Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) unterstützt jetzt [Tastaturbefehle](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
 * AEM als Cloud Service [Web-optimierte Bildbereitstellung](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=de) ermöglicht eine deutliche Verbesserung der Seitengeschwindigkeit durch die Bereitstellung von Formaten wie WebP. Dieser neue Dienst bietet außerdem flexiblere Optionen zur Größenanpassung und Umwandlung von Bildern. Alle Versionen der [Kernbildkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de) ermöglichen die Verwendung dieses Dienstes und die Bereitstellung von Bildern als WebP durch Klicken auf eine Option in der Richtlinie der Bildkomponente.
 
@@ -54,7 +54,7 @@ Sehen Sie sich das Video Versionsübersicht vom Juli 2022 an, um eine Zusammenfa
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Assets] verfügbar {#prerelease-features-assets}
 
-Sie können Adobe Experience Manager Assets jetzt so konfigurieren, dass [den Typ der Assets einschränken, die Benutzer basierend auf dem MIME-Typ hochladen können](/help/assets/configure-asset-upload-restrictions.md).
+Sie können Adobe Experience Manager Assets jetzt konfigurieren für [den Typ der Assets einschränken, die Benutzer basierend auf dem MIME-Typ hochladen können](/help/assets/configure-asset-upload-restrictions.md).
 
 ![Einschränkungen beim Hochladen von Assets](/help/assets/assets/asset-upload-restrictions.png)
 
@@ -62,7 +62,7 @@ Sie können Adobe Experience Manager Assets jetzt so konfigurieren, dass [den Ty
 
 ### Neue Funktionen in [!DNL Forms] {#forms-features}
 
-* **[Unterstützung für Tastatureingaben für Scribble-Signaturen](/help/forms/signing-forms-using-scribble.md)**: Adaptive Forms werden zunehmend auf Touch-Geräten verwendet. Eine gängige Voraussetzung ist die Unterstützung von Signaturen. Das Unterschreiben von Dokumenten auf Touch-Geräten ist zu einer akzeptierten Methode zur Unterzeichnung von Formularen geworden. Adaptive Forms bietet native Unterstützung für Scribble-Signaturen und Adobe Sign für solche Anwendungsfälle. Jetzt können Sie zusammen mit anderen bereits unterstützten Optionen auch die Tastatur für Scribble-Signaturen in einem adaptiven Formular verwenden. Darüber hinaus wird die Einhaltung von Barrierefreiheitsregeln verbessert.
+* **[Unterstützung für Tastatureingaben für Scribble-Signaturen](/help/forms/signing-forms-using-scribble.md)**: Adaptive Forms wird zunehmend auf Touch-Geräten verwendet. Eine gängige Voraussetzung ist die Unterstützung von Signaturen. Das Unterschreiben von Dokumenten auf Touch-Geräten ist zu einer akzeptierten Methode zum Unterschreiben von Formularen geworden. Adaptive Forms bietet native Unterstützung für Scribble-Signaturen und Adobe Sign für solche Anwendungsfälle. Jetzt können Sie zusammen mit anderen bereits unterstützten Optionen auch die Tastatur für Scribble-Signaturen in einem adaptiven Formular verwenden. Darüber hinaus wird die Einhaltung von Vorschriften zur Barrierefreiheit verbessert.
 
 ![Unterstützung für Tastatureingaben auf Scribble-Signaturen auf dem iPhone](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
@@ -78,7 +78,7 @@ Sie können Adobe Experience Manager Assets jetzt so konfigurieren, dass [den Ty
 
 -->
 
-* **[DDX aufrufen - Ein AEM Workflow-Schritt](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: Document Description XML (DDX) ist eine deklarative Markup-Sprache, deren Elemente Bausteine von Dokumenten darstellen. Diese Bausteine umfassen PDF-Seiten, XDP-Dokumente sowie andere Elemente wie Kommentare, Lesezeichen und formatierten Text. DDX-Dokumente sind Vorlagen für die Dokumente und beschreiben die gewünschten Eigenschaften von Quelldokumenten, die in den Zieldokumenten angezeigt werden sollen. Eine einzelne DDX kann mit einer Reihe von Quelldokumenten verwendet werden. Sie können den Aufrufschritt und einen AEM Workflow verwenden, um verschiedene Vorgänge auszuführen, z. B. das Zusammenstellen von Dokumenten, das Erstellen und Ändern von Acrobat und XFA Forms und andere Vorgänge, die unter [DDX-Referenz](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) Dokumentation.
+* **[DDX aufrufen - Ein AEM Workflow-Schritt](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: Document Description XML (DDX) ist eine deklarative Markup-Sprache, deren Elemente Bausteine von Dokumenten darstellen. Diese Bausteine umfassen PDF-Seiten, XDP-Dokumente sowie andere Elemente wie Kommentare, Lesezeichen und formatierten Text. DDX-Dokumente sind Vorlagen für die Dokumente und beschreiben die gewünschten Eigenschaften von Quelldokumenten, die in den Zieldokumenten angezeigt werden sollen. Eine einzelne DDX kann mit einer Reihe von Quelldokumenten verwendet werden. Sie können den Schritt &quot;Aufrufen&quot;und einen AEM Workflow verwenden, um verschiedene Vorgänge auszuführen, z. B. das Zusammenstellen von Dokumenten, das Erstellen und Ändern von Acrobat und XFA Forms und andere Vorgänge, die unter [DDX-Referenz](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) Dokumentation.
 
 * **[Nach PDF/A konvertieren - Ein AEM Workflow-Schritt](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A ist ein Archivierungsformat für die Langzeitarchivierung des Dokumentinhalts, alle Schriftarten werden eingebettet und die Datei ist unkomprimiert. Jetzt können Sie den Schritt In PDF/A konvertieren und einen AEM Workflow verwenden, um Ihre Dokumente oder Dateien in einem beliebigen Format in das PDF/A-Format zu konvertieren.
 
@@ -108,15 +108,15 @@ Sie können Adobe Experience Manager Assets jetzt so konfigurieren, dass [den Ty
 ### AEM as a Cloud Service SDK Dispatcher Tools-Verbesserungen {#dispatcher-tools-enhancements}
 
 * Apache kann mit `docker_run_hot_reload.sh` -Skript, das automatisch alle nachfolgenden Änderungen an der Apache- und Dispatcher-Konfiguration lädt und validiert und so die Geschwindigkeit der Entwickler verbessert. Wird nur für den flexiblen Modus der Dispatcher-Tools unterstützt. Siehe auch [Debuggen der Apache- und Dispatcher-Konfiguration](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) für weitere Details zum automatischen Neuladen und zur Validierung.
-* Die lokale Apache-/Dispatcher-Konfiguration verfolgt Änderungen in Cloud-Umgebungen genauer, was die Parität zwischen den beiden Umgebungen erhöht.
+* Die lokale Apache-/Dispatcher-Konfiguration verfolgt Änderungen in Cloud-Umgebungen genauer, wodurch die Parität zwischen den beiden Umgebungen erhöht wird.
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Experience Manager] verfügbar {#prerelease-features-foundation}
 
 * AEM as a Cloud Service ist jetzt in Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Programmen zu vereinheitlichen. Siehe [Auf Unified Shell as a Cloud Service AEM](/help/overview/aem-cloud-service-on-unified-shell.md) für weitere Details.
 
-## Connectoren für Adobe Learning Manager {#learn-manage}
+## Adobe Learning Manager-Connectoren {#learn-manage}
 
-* Der neue Adobe Learning Manager verfügt über Connectoren für Adobe Experience Manager Sites, Marketo Engage und Adobe Commerce. Weitere Informationen finden Sie unter: [Benutzerhandbuch für Adobe Learning Manager](https://helpx.adobe.com/learning-manager/user-guide.html).
+* Der neue Adobe Learning Manager verfügt über Connectoren für Adobe Experience Manager Sites, Marketo Engage und Adobe Commerce. Weitere Informationen finden Sie unter [Benutzerhandbuch zu Adobe Learning Manager](https://helpx.adobe.com/learning-manager/user-guide.html).
 
 ## Cloud Manager {#cloud-manager}
 

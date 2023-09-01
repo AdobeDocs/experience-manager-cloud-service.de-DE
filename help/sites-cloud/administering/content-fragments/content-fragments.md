@@ -3,8 +3,11 @@ title: Arbeiten mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenbearbeitung und die Headless-Bereitstellung eignen.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2122'
 ht-degree: 94%
@@ -12,6 +15,12 @@ ht-degree: 94%
 ---
 
 # Arbeiten mit Inhaltsfragmenten {#working-with-content-fragments}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Mit Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten [seitenunabhängige Inhalte veröffentlichen](/help/sites-cloud/authoring/fundamentals/content-fragments.md), entwerfen, erstellen und kuratieren. Inhaltsfragmente ermöglichen Ihnen die Vorbereitung von Inhalten, die an mehreren Orten/auf mehreren Kanälen verwendet werden können und sich ideal für die Seitenbearbeitung und Headless-Bereitstellung eignen.
 
@@ -87,7 +96,7 @@ Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 >
->Weitere Informationen finden Sie unter [Grundlegendes zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
+>Weitere Informationen finden Sie unter [Grundlagen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
 
 ## Inhaltsfragmente und Content Services {#content-fragments-and-content-services}
 
@@ -121,7 +130,7 @@ Zuvor können Sie auch eine Vorschau eines Erlebnisses anzeigen, das mit Inhalts
 
 >[!CAUTION]
 >
->Veröffentlichen in der **Vorschaufunktion** ist nur über verfügbar. **Inhaltsfragmente** Konsole.
+>Veröffentlichen in der **Vorschaufunktion** ist nur über verfügbar **Inhaltsfragmente** Konsole.
 
 ## Inhaltstyp {#content-type}
 
@@ -294,7 +303,7 @@ Um Ihre Inhaltsfragmente zum Erstellen von Seiten zu verwenden, benötigen Sie a
 
    * Hilft bei der Bereitstellung des Fragments im HTML- und/oder JSON-Format.
    * Erforderlich zum [Referenzieren des Fragments auf einer Seite](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-   * Zuständig für das Layout und die Bereitstellung eines Fragments; also Kanäle.
+   * Zuständig für Layout und Bereitstellung eines Fragments, d. h. Kanäle.
    * Fragmente benötigen eine oder mehrere dedizierte Komponenten zur Definition des Layouts sowie zur Bereitstellung einiger oder aller Elemente/Varianten und zugehörigen Inhalte.
    * Durch Ziehen eines Fragments auf eine Seite während der Bearbeitung wird die erforderliche Komponente automatisch zugewiesen.
 

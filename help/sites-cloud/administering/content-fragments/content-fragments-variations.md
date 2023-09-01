@@ -3,8 +3,11 @@ title: Varianten – Erstellen von Fragmentinhalten
 description: Verstehen Sie, wie Varianten es Ihnen ermöglichen, Inhalte für das Fragment zu verfassen und dann je nach Zweck Varianten dieses Inhalts zu erstellen. Dies bietet mehr Flexibilität für die Headless-Bereitstellung und das Seiten-Authoring.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 78%
@@ -12,6 +15,12 @@ ht-degree: 78%
 ---
 
 # Varianten – Erstellen von Fragmentinhalten{#variations-authoring-fragment-content}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 [Varianten](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion für Inhaltsfragmente in AEM, da sie Ihnen die Möglichkeit bieten, Kopien des primären Inhalts für die Verwendung in bestimmten Kanälen und/oder Szenarien zu erstellen und zu bearbeiten, was sowohl die Seitenerstellung als auch die Bereitstellung von Headless-Inhalten noch flexibler macht.
 

@@ -2,16 +2,22 @@
 title: Varianten – Erstellen von Fragmentinhalten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit Varianten Ihre Headless-Inhalte in AEM noch flexibler gestalten können. Sie können damit Inhalte für ein Fragment und dann entsprechend dem jeweiligen Verwendungszweck Varianten dieses Inhalts erstellen.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: fa133319077388a3598ca13b2574b8b62bf9b2b4
 workflow-type: tm+mt
-source-wordcount: '2435'
-ht-degree: 78%
+source-wordcount: '2567'
+ht-degree: 75%
 
 ---
 
 # Varianten – Erstellen von Fragmentinhalten{#variations-authoring-fragment-content}
 
 [Varianten](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion für Inhaltsfragmente in AEM, da sie Ihnen die Möglichkeit bieten, Kopien des primären Inhalts für die Verwendung in bestimmten Kanälen und/oder Szenarien zu erstellen und zu bearbeiten, was die Bereitstellung von Headless-Inhalten noch flexibler macht.
+
+>[!NOTE]
+>
+>Inhaltsfragmente sind eine Sites-Funktion, werden jedoch als **Assets**.
+>
+>Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor beschrieben, auf den Sie hauptsächlich über das **Assets** Konsole. Weitere Informationen finden Sie in der Sites-Dokumentation . [Inhaltsfragmente - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md)für Details zum neuen Editor (hauptsächlich über die **Inhaltsfragmente** -Konsole).
 
 Aus dem **Varianten** können Sie Folgendes tun:
 
@@ -393,8 +399,33 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
    >[!CAUTION]
    >
    Wenn Sie nach dem Hinzufügen einer Referenz zu einem anderem Fragment das Format ändern, könnte folgendes auftreten:
+   >
    * **Nur Text**: Die Referenz geht im Fragment vollständig verloren.
    * **Markdown**: Die Referenz bleibt bestehen.
+
+## Vererbung {#inheritance}
+
+Die Vererbung ist der Mechanismus, bei dem Inhalte automatisch von einem Fragment in ein anderes verschoben werden können. Vererbte Felder und Varianten können das Produkt von [Multi-Site-Management](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+
+Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Je nach Kontext kann dies für eine Variante oder ein einzelnes Feld verfügbar sein, wenn das Fragment Teil einer Live Copy ist.
+
+![Ein Inhaltsfragment, das die Vererbungsbeziehung anzeigt](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
+
+Beispiel:
+
+* Vererbung abbrechen
+
+  ![Schaltfläche „Vererbung abbrechen“](/help/assets/content-fragments/assets/editing-cancel-inheritance.png)
+
+* Vererbung wieder aktivieren (wenn die Vererbung bereits abgebrochen wurde)
+
+  ![Schaltfläche „Vererbung wieder aktivieren“](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
+
+<!--
+* Rollout action is also available in Live Copy source
+
+  ![Rollout button](/help/assets/content-fragments/assets/editing-rollout.png)
+-->
 
 ## Verwalten von Varianten {#managing-variations}
 

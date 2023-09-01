@@ -6,10 +6,10 @@ keywords: Fügen Sie einen benutzerdefinierten Fehler-Handler hinzu, fügen Sie 
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 9%
+source-wordcount: '2428'
+ht-degree: 8%
 
 ---
 
@@ -26,9 +26,9 @@ AEM Forms bietet standardmäßig Handler zur Verarbeitung von erfolgreichen und 
 
 ![Workflow für Fehler-Handler, um zu verstehen, wie Sie benutzerdefinierten Fehler-Handler in Formularen hinzufügen](/help/forms/assets/error-handler-workflow.png)
 
-Das adaptive Formular validiert die Eingaben, die Sie in Feldern bereitstellen, basierend auf voreingestellten Validierungskriterien und prüft, ob verschiedene Fehler vom REST-Endpunkt zurückgegeben werden, der zum Aufrufen eines externen Dienstes konfiguriert ist. Sie können die Validierungskriterien auf Grundlage der Datenquelle festlegen, die Sie mit dem adaptiven Formular verwenden. Wenn Sie beispielsweise RESTful-Web-Services als Datenquelle verwenden, können Sie die Validierungskriterien in einer Swagger-Definitionsdatei definieren.
+Das adaptive Formular validiert die Eingaben, die Sie in Feldern bereitstellen, basierend auf voreingestellten Validierungskriterien und überprüft auf verschiedene Fehler, die vom REST-Endpunkt zurückgegeben werden, der zum Aufrufen eines externen Dienstes konfiguriert wurde. Sie können die Validierungskriterien auf Grundlage der Datenquelle festlegen, die Sie mit dem adaptiven Formular verwenden. Wenn Sie beispielsweise RESTful-Web-Services als Datenquelle verwenden, können Sie die Validierungskriterien in einer Swagger-Definitionsdatei definieren.
 
-Wenn die Eingabewerte die Validierungskriterien erfüllen und die Werte an die Datenquelle gesendet werden, zeigt das adaptive Formular eine Fehlermeldung mit einem Fehler-Handler an. Ähnlich wie dieser Ansatz integriert sich Adaptive Forms in benutzerdefinierte Fehler-Handler, um Datenvalidierungen durchzuführen. Wenn die Eingabewerte die Validierungskriterien nicht erfüllen, werden die Fehlermeldungen auf Feldebene im adaptiven Formular angezeigt. Dies tritt auf, wenn die vom Server zurückgegebene Validierungsfehlermeldung im standardmäßigen Nachrichtenformat vorliegt.
+Wenn die Eingabewerte die Validierungskriterien erfüllen und die Werte an die Datenquelle gesendet werden, zeigt das adaptive Formular eine Fehlermeldung mit einem Fehler-Handler an. Ähnlich wie bei diesem Ansatz integrieren Adaptive Forms mit benutzerdefinierten Fehler-Handlern, um Datenvalidierungen durchzuführen. Wenn die Eingabewerte die Validierungskriterien nicht erfüllen, werden die Fehlermeldungen auf Feldebene im adaptiven Formular angezeigt. Dies tritt auf, wenn die vom Server zurückgegebene Validierungsfehlermeldung im standardmäßigen Nachrichtenformat vorliegt.
 
 
 ## Verwendung von Fehler-Handlern {#uses-of-error-handler}
@@ -175,44 +175,42 @@ Sie können den Wert von dataRef im **[!UICONTROL Eigenschaften]** -Fenster eine
 
 ## Hinzufügen eines Fehler-Handlers mit dem Regeleditor {#add-error-handler-using-rule-editor}
 
-Verwenden der [Aufrufdienst des Regeleditors](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) -Aktion verwenden, definieren Sie die Validierungskriterien auf Grundlage der Datenquelle, die Sie mit dem adaptiven Formular verwenden. Wenn Sie RESTful-Webdienste als Datenquelle verwenden, können Sie die Validierungskriterien in einer Swagger-Definitionsdatei definieren. Durch die Verwendung der Funktionen für Fehler-Handler und des Regel-Editors in Adaptive Forms können Sie die Fehlerbehandlung effektiv verwalten und anpassen. Sie definieren die Bedingungen mithilfe des Regeleditors und konfigurieren die gewünschten Aktionen, die ausgeführt werden sollen, wenn die Regel ausgelöst wird. Adaptives Formular validiert die Eingaben, die Sie in Felder eingeben, basierend auf vordefinierten Validierungskriterien. Falls die Eingabewerte die Validierungskriterien nicht erfüllen, werden die Fehlermeldungen auf Feldebene in einem adaptiven Formular angezeigt.
+Verwenden der [Aufrufdienst des Regeleditors](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) -Aktion verwenden, definieren Sie die Validierungskriterien auf Grundlage der Datenquelle, die Sie mit dem adaptiven Formular verwenden. Wenn Sie RESTful-Webdienste als Datenquelle verwenden, können Sie die Validierungskriterien in einer Swagger-Definitionsdatei definieren. Durch die Verwendung der Funktionen für Fehler-Handler und des Regeleditors in Adaptive Forms können Sie die Fehlerbehandlung effektiv verwalten und anpassen. Sie definieren die Bedingungen mithilfe des Regeleditors und konfigurieren die gewünschten Aktionen, die ausgeführt werden sollen, wenn die Regel ausgelöst wird. Adaptives Formular validiert die Eingaben, die Sie in Felder eingeben, basierend auf vordefinierten Validierungskriterien. Falls die Eingabewerte die Validierungskriterien nicht erfüllen, werden die Fehlermeldungen auf Feldebene in einem adaptiven Formular angezeigt.
 
 >[!NOTE]
 >
 > * Um Fehler-Handler mit der Aktion &quot;Aufrufdienst&quot;des Regeleditors zu verwenden, konfigurieren Sie Adaptive Forms mit einem Formulardatenmodell.
-> * Standardmäßig wird ein standardmäßiger Fehler-Handler bereitgestellt, um Fehlermeldungen in Feldern anzuzeigen, wenn die Fehlerantwort im Standardschema enthalten ist. Der Standard-Fehler-Handler kann auch den benutzerdefinierten Fehler-Handler aufrufen, wenn die Fehlerantwort nicht dem Standardschema entspricht.
+> * Es wird ein standardmäßiger Fehler-Handler bereitgestellt, mit dem Fehlermeldungen in Feldern angezeigt werden, wenn die Fehlerantwort im Standardschema enthalten ist. Sie können auch den Standard-Fehler-Handler über die benutzerdefinierte Fehler-Handler-Funktion aufrufen.
 
-<!-- 
-Using Rule Editor, you can:
-* [Add default error handler function](#add-default-errror-handler)
-* [Add custom error handler function](#add-custom-errror-handler)
+Mit dem Regeleditor können Sie:
+* [Standard-Fehler-Handler-Funktion hinzufügen](#add-default-errror-handler)
+* [Hinzufügen einer benutzerdefinierten Fehler-Handler-Funktion](#add-custom-errror-handler)
 
 
-### Add default error handler function {#add-default-errror-handler}
+### Standard-Fehler-Handler-Funktion hinzufügen {#add-default-errror-handler}
 
-A default error handler is supported by default to display error messages on fields if the error response is in standard schema or in server-side validation failure. 
-To understand how to use a default error handler using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, take an example of a simple Adaptive Form with two fields, **Pet ID** and **Pet Name** and use a default error handler at the **Pet ID** field to check for various errors returned by the REST endpoint configured to invoke an external service, for example, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. To add a default error handler using the Rule Editor's Invoke Service action, execute the following steps:
+Ein standardmäßiger Fehler-Handler wird unterstützt, um Fehlermeldungen in Feldern anzuzeigen, wenn die Fehlerantwort im Standardschema oder bei serverseitigem Validierungsfehler liegt.
+Informationen zur Verwendung eines Standard-Fehler-Handlers mit der [Aufrufdienst des Regeleditors](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) -Aktion verwenden, nehmen Sie ein Beispiel für ein einfaches adaptives Formular mit zwei Feldern. **Haustier-ID** und **Heimtiername** und verwenden Sie den Standard-Fehler-Handler unter **Haustier-ID** -Feld zur Überprüfung auf verschiedene Fehler, die vom REST-Endpunkt zurückgegeben werden, der zum Aufrufen eines externen Dienstes konfiguriert ist, z. B. `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Führen Sie die folgenden Schritte aus, um mithilfe der Aktion &quot;Aufrufdienst&quot;des Regeleditors einen standardmäßigen Fehler-Handler hinzuzufügen:
 
-1. Open an Adaptive Form in authoring mode, select a form component and tap **[!UICONTROL Rule Editor]** to open the rule editor.
-1. Tap **[!UICONTROL Create]**.
-1. Create a condition in the **When** section of the rule. For example, **When[Name of Pet ID field]** is changed. Select is changed from the **Select State** drop-down list.
-1. In the **Then** section, select **[!UICONTROL Invoke Service]** from the **Select Action** drop-down list.
-1. Select a **Post service** and its corresponding data bindings from the **Input** section. For example, to validate **Pet ID**, select a **Post service** as **GET /pet/{petId}** and select **Pet ID** in the **Input** section.
-1. Select the data bindings from the **Output** section. Select **Pet Name** in the **Output** section.
-1. Select **[!UICONTROL Default Error Handler]** from the **Error Handler** section. 
-1. Click **[!UICONTROL Done]**.
+1. Öffnen Sie ein adaptives Formular im Bearbeitungsmodus, wählen Sie eine Formularkomponente aus und tippen Sie auf **[!UICONTROL Regeleditor]** , um den Regeleditor zu öffnen.
+1. Tippen Sie auf **[!UICONTROL Erstellen]**.
+1. Definieren Sie eine Bedingung im Abschnitt **Wann** der Regel. Beispiel: **Wann[Name des Felds &quot;Haustier-ID&quot;]** geändert. Wählen Sie die Option aus. **Status auswählen** Dropdown-Liste.
+1. Im Abschnitt **Dann** wählen Sie **[!UICONTROL Dienst aufrufen]** aus der Dropdown-Liste **Aktion auswählen.**
+1. Wählen Sie eine **Post-Service** und die entsprechenden Datenbindungen aus der **Eingabe** Abschnitt. Beispiel: Zu validieren **Haustier-ID**, wählen Sie eine **Post-Service** as **GET /pet/{petId}** und wählen **Haustier-ID** im **Eingabe** Abschnitt.
+1. Wählen Sie die Datenbindungen aus der **Ausgabe** Abschnitt. Auswählen **Heimtiername** im **Ausgabe** Abschnitt.
+1. Auswählen **[!UICONTROL Standard-Fehler-Handler]** aus dem **Fehler-Handler** Abschnitt.
+1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
- ![add a default error handler for a field validation checks in a form](/help/forms/assets/default-error-handler.png)
+![Standard-Fehler-Handler für Feldüberprüfungen in einem Formular hinzufügen](/help/forms/assets/default-error-handler.png)
 
-As a result of this rule, the values you enter for **Pet ID** checks validation for **Pet Name** using external service invoked by REST endpoint. If the validation criteria based on the data source fail, the error messages are displayed at the field level.
+Aus dieser Regel ergeben sich die Werte, für die Sie **Haustier-ID** überprüft die Validierung für **Heimtiername** Verwendung des externen Dienstes, der vom REST-Endpunkt aufgerufen wurde. Wenn die auf der Datenquelle basierenden Validierungskriterien fehlschlagen, werden die Fehlermeldungen auf Feldebene angezeigt.
 
- ![display the default error message when you add a default error handler in a form to handle error responses](/help/forms/assets/default-error-message.png)
-
--->
+![Anzeigen der Standardfehlermeldung beim Hinzufügen eines Standard-Fehler-Handlers in einem Formular zur Verarbeitung von Fehlerantworten](/help/forms/assets/default-error-message.png)
 
 ### Hinzufügen einer benutzerdefinierten Fehler-Handler-Funktion {#add-custom-errror-handler}
 
 Sie können eine benutzerdefinierte Fehler-Handler-Funktion hinzufügen, um einige der folgenden Aktionen auszuführen:
+
 * Verarbeiten Sie Fehlerantworten, die nicht standardmäßige oder standardmäßige Fehlerantworten verwenden. Es ist wichtig zu beachten, dass diese nicht standardmäßigen Fehlerantworten nicht mit dem [Standardschema von Fehlerantworten](#failure-response-format).
 * Analytics-Ereignisse an beliebige Analytics-Plattformen senden. Beispiel: Adobe Analytics.
 * modales Dialogfeld mit Fehlermeldungen anzeigen.
@@ -229,8 +227,10 @@ So fügen Sie einen benutzerdefinierten Fehler-Handler in einem adaptiven Formul
 #### 1. Erstellen Sie einen benutzerdefinierten Fehler-Handler {#create-custom-error-message}
 
 Um eine benutzerdefinierte Fehlerfunktion zu erstellen, führen Sie die folgenden Schritte aus:
-1. [Klonen Sie Ihr as a Cloud Service AEM Forms-Repository.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git).
-1. Navigieren Sie zu `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/`.
+
+1. [Klonen des as a Cloud Service AEM Forms-Repositorys](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git).
+1. Erstellen Sie einen Ordner unter dem `[AEM Forms as a Cloud Service repository folder]/apps/` Ordner. Erstellen Sie beispielsweise einen Ordner mit dem Namen `experience-league`
+1. Navigieren Sie zu `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` und erstellen Sie eine `ClientLibraryFolder` as `clientlibs`.
 1. Erstellen Sie einen Ordner mit dem Namen `js`.
 1. Navigieren Sie zum Ordner `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js`.
 1. Fügen Sie eine JavaScript-Datei hinzu, beispielsweise `function.js`. Die Datei enthält den Code für den benutzerdefinierten Fehler-Handler.
@@ -247,12 +247,22 @@ Fügen wir den folgenden Code zur JavaScript-Datei hinzu, um die Antwort und die
            console.log("Custom Error Handler processing start...");
            console.log("response:"+JSON.stringify(response));
            console.log("headers:"+JSON.stringify(headers));
+           guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers);
            console.log("Custom Error Handler processing end...");
        }
    ```
 
-   <!--  To call the default error handler after the custom error handler, the following line of the sample code is used:
-        `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `-->
+   Um den Standard-Fehler-Handler von Ihrem benutzerdefinierten Fehler-Handler aufzurufen, wird die folgende Zeile des Beispielcodes verwendet:
+   `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+
+   >[!NOTE]
+   >
+   > Im `.content.xml` -Datei, fügen Sie die `allowProxy` und `categories` Eigenschaften.
+   >
+   > * `allowProxy = [Boolean]true`
+   > * `categories= customfunctionsdemo`
+   >Beispiel: In diesem Fall [custom-errorhandler-name] wird bereitgestellt als `customfunctionsdemo`.
+
 1. Speichern Sie die Datei `function.js`.
 1. Navigieren Sie zum Ordner `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js`.
 1. Textdatei als `js.txt`. Die Datei enthält:
@@ -262,7 +272,10 @@ Fügen wir den folgenden Code zur JavaScript-Datei hinzu, um die Antwort und die
        functions.js
    ```
 
-1. Speichern Sie die Datei `js.txt`.
+1. Speichern Sie die Datei `js.txt`.\
+   Die erstellte Ordnerstruktur sieht wie folgt aus:
+
+   ![Ordnerstruktur der erstellten Client-Bibliothek](/help/forms/assets/customclientlibrary_folderstructure.png)
 
    >[!NOTE]
    >
@@ -282,6 +295,12 @@ Sobald die Pipeline erfolgreich ausgeführt wurde, steht der benutzerdefinierte 
 
 #### 2. Verwenden Sie den Regeleditor, um den benutzerdefinierten Fehler-Handler zu konfigurieren {#use-custom-error-handler}
 
+Bevor Sie den benutzerdefinierten Fehler-Handler in ein adaptives Formular implementieren, stellen Sie sicher, dass der Name der Client-Bibliothek im **[!UICONTROL Client-Bibliothekskategorie]** entspricht dem Namen, der in der Kategorieoption der `.content.xml` -Datei.
+
+![Hinzufügen des Namens der Client-Bibliothek in der Konfiguration des Containers für adaptive Formulare](/help/forms/assets/client-library-category-name.png)
+
+In diesem Fall wird der Name der Client-Bibliothek als `customfunctionsdemo` im `.content.xml` -Datei.
+
 So verwenden Sie einen benutzerdefinierten Fehler-Handler mit dem **[!UICONTROL Aufrufdienst des Regeleditors]** Aktion:
 
 1. Öffnen Sie ein adaptives Formular im Bearbeitungsmodus, wählen Sie eine Formularkomponente aus und tippen Sie auf **[!UICONTROL Regeleditor]** , um den Regeleditor zu öffnen.
@@ -295,9 +314,7 @@ So verwenden Sie einen benutzerdefinierten Fehler-Handler mit dem **[!UICONTROL 
 
 ![Fügen Sie einen benutzerdefinierten Fehler-Handler in ein Formular ein, um Fehlerantworten zu verarbeiten](/help/forms/assets/custom-error-handler.png)
 
-
 Aus dieser Regel ergeben sich die Werte, für die Sie **Haustier-ID** überprüft die Validierung für **Heimtiername** Verwendung des externen Dienstes, der vom REST-Endpunkt aufgerufen wurde. Wenn die auf der Datenquelle basierenden Validierungskriterien fehlschlagen, werden die Fehlermeldungen auf Feldebene angezeigt.
-
 
 ![Fügen Sie einen benutzerdefinierten Fehler-Handler in ein Formular ein, um Fehlerantworten zu verarbeiten.](/help/forms/assets/custom-error-handler-message.png)
 

@@ -3,8 +3,11 @@ title: Verwalten von Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit der Inhaltsfragmentkonsole Ihre AEM Inhaltsfragmente verwalten können – für die Seitenbearbeitung oder als Grundlage für Ihre Headless-Inhalte.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2051'
 ht-degree: 75%
@@ -12,6 +15,12 @@ ht-degree: 75%
 ---
 
 # Verwalten von Inhaltsfragmenten {#managing-content-fragments}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Erfahren Sie, wie Sie die **Inhaltsfragment**-Konsole zur Verwaltung Ihrer AEM-Inhaltsfragmente verwenden. Diese können für die Seitenbearbeitung oder als Grundlage für Ihre Headless-Inhalte verwendet werden.
 

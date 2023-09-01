@@ -8,10 +8,10 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '4249'
-ht-degree: 96%
+source-wordcount: '4258'
+ht-degree: 93%
 
 ---
 
@@ -35,6 +35,7 @@ ht-degree: 96%
    + Versionshinweise zu AEMaaCS-Funktionen {#release-notes}
       + [Aktuelle Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2023 {#2023}
+         + [Versionshinweise für 2023.7.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-7-0.md)
          + [Versionshinweise für 2023.6.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-6-0.md)
          + [Versionshinweise für 2023.4.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
          + [Versionshinweise für 2023.2.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
@@ -315,6 +316,16 @@ ht-degree: 96%
          + [Registrierung, Anmeldung und Anwenderprofil](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
    + Verwalten von {#administering}
       + Inhaltsfragmente {#content-fragments}
+         + [Übersicht und Konzepte](/help/sites-cloud/administering/content-fragments/overview.md)
+         + [Headless-Bereitstellung mit GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
+         + [Einrichten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/setup.md)
+         + [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+         + [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md)
+         + [Erstellen von Fragmentinhalten](/help/sites-cloud/administering/content-fragments/authoring.md)
+         + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
+         + [Überlegungen löschen](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
+         + [Struktur analysieren](/help/sites-cloud/administering/content-fragments/analysis.md)
+         + [Tastaturbefehle  ](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
          + [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
          + [Headless-Bereitstellung mit Inhaltsfragmenten und GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
          + [Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
@@ -519,6 +530,7 @@ ht-degree: 96%
       + [Unterstützte Dateitypen und Anwendungsfälle](/help/assets/supported-file-formats-assets-view.md)
       + [Anzeigen von Assets](/help/assets/navigate-assets-view.md)
       + [Hochladen und Hinzufügen von Assets](/help/assets/add-delete-assets-view.md)
+      + [Massenimport von Assets](/help/assets/bulk-import-assets-view.md)
       + [Suchen und Finden von Assets](/help/assets/search-assets-view.md)
       + [Asset-Management-Aufgaben](/help/assets/manage-organize-assets-view.md)
       + [Bearbeiten von Bildern](/help/assets/edit-images-assets-view.md)
@@ -574,6 +586,7 @@ ht-degree: 96%
       + Authoring adaptiver Formulare – Kernkomponenten {#authoring-adaptive-forms-core-components}
          + Erstellen eines adaptiven Formulars {#create-an-adaptive-form-on-forms-cs}
             + [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)
+            + [Erstellen eines adaptiven Formularfragments](/help/forms/adaptive-form-fragments-core-components.md)
             + [Erstellen von Designs für ein adaptives Formular – Kernkomponenten](/help/forms/using-themes-in-core-components.md)
             + [Generieren eines Datensatzdokuments für adaptive Formulare](/help/forms/generate-document-of-record-core-components.md)
             + [Erstellen eines adaptiven Formulars – Kernkomponenten auf einer AEM Sites-Seite](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
@@ -582,6 +595,7 @@ ht-degree: 96%
             + [Erstellen von Formularen mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
             + [Konfigurieren der Sendeaktion für ein adaptives Formular](/help/forms/configure-submit-actions-core-components.md)
             + [Verwenden von Google reCAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [Hinzufügen eines benutzerdefinierten Fehler-Handlers in einem adaptiven Formular](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
       + Authoring adaptiver Formulare – Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
          + Konvertieren von PDF-Formularen in adaptive Formulare {#afcs}
             + [Einführung in den Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de)
@@ -730,18 +744,14 @@ ht-degree: 96%
       + [Inhaltsfragment](/help/headless/setup/create-content-fragment.md)
       + [GraphQL-Endpunkt](/help/headless/setup/create-api-request.md)
    + Inhaltsfragmente {#content-fragments}
-      + [Übersicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html?lang=de)
-      + [Inhaltsfragmentkonsole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=de)
-      + [Inhaltsfragmentmodelle](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html?lang=de)
-      + [Verwaltung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html?lang=de)
+      + [Übersicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+      + [Inhaltsfragmentmodelle](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+      + [Verwalten von Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + Authoring {#authoring}
-         + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html?lang=de)
-         + [Texteditor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html?lang=de)
-         + [Zugehörige Inhalte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html?lang=de)
-         + [Varianten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html?lang=de#managing-variations)
-      + [Metadaten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html?lang=de)
-      + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html?lang=de)
-      + [JSON-Vorschau](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html?lang=de)
+         + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+      + [JSON-Vorschau](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=de)
    + GraphQL-API {#graphql-api}
       + [GraphQL-API für Inhaltsfragmente](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL-Endpunkte verwalten](/help/headless/graphql-api/graphql-endpoint.md)
@@ -961,6 +971,7 @@ ht-degree: 96%
       + [Anpassen und Erweitern von Inhaltsfragmenten](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
       + [Anpassen der Inhaltsfragmentkonsole](/help/implementing/developing/extending/content-fragment-console-customizing.md)
+      + [Anpassen der Inhaltsfragment-Konsole und des Editors](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
       + Verwalten von Suchformularen {#manage-search-forms}
          + [Konfigurieren von Suchformularen](/help/implementing/developing/extending/search-forms.md)
          + [Konfigurieren von Suchfiltern für den Posteingang](/help/implementing/developing/extending/configure-inbox-search-rail.md)

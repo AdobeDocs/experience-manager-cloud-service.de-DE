@@ -2,7 +2,7 @@
 title: Versionshinweise für Version 2022.5.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2022.5.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 75%
@@ -37,7 +37,7 @@ Eine Zusammenfassung der in der Version 2022.5.0 hinzugefügten Funktionen finde
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Sites] verfügbar {#prerelease-features-sites}
 
 * Verschiedene GraphQL-Funktionen
-* Eine [neue Konsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md), die für die Headless-Nutzung von Inhaltsfragmenten optimiert wurde
+* Eine [neue Konsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console), die für die Headless-Nutzung von Inhaltsfragmenten optimiert wurde
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -58,7 +58,7 @@ Experience Manager Assets verwendet jetzt die KI-Funktionen von Adobe Sensei, um
 
 * **Integrieren von adaptiven Formularen mit Microsoft® Power Automate**: Sie können jetzt ein adaptives Formular konfigurieren, um bei der Übermittlung einen Microsoft® Power Automate Cloud-Fluss auszuführen. Das konfigurierte adaptive Formular sendet erfasste Daten, Anhänge und das Datensatzdokument zur Verarbeitung an den Cloud-Fluss von Power Automate. Dies hilft Ihnen beim Erstellen benutzerdefinierter Datenerfassungserlebnisse und nutzt gleichzeitig die Leistungsfähigkeit von Microsoft® Power Automate, um Geschäftslogiken zu erfassten Daten zu erstellen und Kunden-Workflows zu automatisieren.
 
-* **Assistent zum Erstellen eines adaptiven Formulars**: Sie können den unternehmensfreundlichen Assistenten verwenden, um schnell Adaptive Forms zu erstellen. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
+* **Assistent zum Erstellen eines adaptiven Formulars**: Sie können einen benutzerfreundlichen Assistenten für Unternehmen verwenden, um schnell Adaptive Forms zu erstellen. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
 
   ![Assistent zum Erstellen eines adaptiven Formulars](/help/release-notes/assets/wizard.png)
 

@@ -2,10 +2,10 @@
 title: Arbeiten mit Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenbearbeitung und die Headless-Bereitstellung eignen. Auch wie sie zusammen mit MSM verwendet werden können.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 0706c4a466db1d360b27868e3ab5c320a3ba24f8
+source-git-commit: fa133319077388a3598ca13b2574b8b62bf9b2b4
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 91%
+source-wordcount: '2216'
+ht-degree: 88%
 
 ---
 
@@ -34,7 +34,11 @@ Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inha
 
 >[!NOTE]
 >
->Inhaltsfragmente werden als **Assets** gespeichert. Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)**-Konsole verwaltet, können jedoch weiterhin über die **Assets**-Konsole verwaltet werden. In diesem Abschnitt wird die Verwaltung über die **Assets**-Konsole beschrieben.
+>Inhaltsfragmente sind eine Sites-Funktion, werden jedoch als **Assets**.
+>
+>Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**-Konsole verwaltet, können jedoch weiterhin über die **Assets**-Konsole verwaltet werden. In diesem Abschnitt wird die Verwaltung über die **Assets**-Konsole beschrieben.
+>
+>Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor beschrieben, auf den Sie hauptsächlich über das **Assets** Konsole. Weitere Informationen finden Sie in der Sites-Dokumentation . [Inhaltsfragmente - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md)für Details zum neuen Editor (hauptsächlich über die **Inhaltsfragmente** -Konsole).
 
 Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurieren, Verwalten und Verwenden von Inhaltsfragmenten beschrieben:
 
@@ -114,7 +118,7 @@ Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser struktu
 
 Wenn der Zugriff über **Assets** -Konsole können Sie MSM verwenden und Live Copies für Ihre Fragmente erstellen.
 
-Weitere Informationen finden Sie unter [Wiederverwenden von Inhaltsfragmenten mit MSM für Assets](/help/assets/reuse-assets-using-msm.md).
+Weitere Informationen finden Sie unter [Wiederverwenden von Inhaltsfragmenten mit MSM für Assets](/help/assets/reuse-assets-using-msm.md). Dies ermöglicht [Vererbung](/help/assets/content-fragments/content-fragments-variations.md#inheritance) für Varianten und einzelne Felder Ihrer Fragmente.
 
 >[!CAUTION]
 >

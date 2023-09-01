@@ -2,7 +2,7 @@
 title: Aktivieren eines JSON-Exports für eine Komponente
 description: Komponenten können angepasst werden, um einen JSON-Export ihrer Inhalte basierend auf einem Modeler-Framework zu generieren.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 80%
@@ -78,7 +78,7 @@ Ein Beispiel ist die Sling-Modell-Implementierung der Bild-Kernkomponente und de
 
 Weitere Informationen finden Sie unter:
 
-* [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md)
+* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [Bearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 * [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und die [Inhaltsfragmentkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=de)

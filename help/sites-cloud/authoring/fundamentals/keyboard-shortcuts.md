@@ -2,7 +2,7 @@
 title: Tastaturbefehle für die Seitenbearbeitung
 description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung, darunter auch Befehle für die Bearbeitung von Seiten.
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 91%
@@ -11,7 +11,7 @@ ht-degree: 91%
 
 # Tastaturbefehle für die Seitenbearbeitung {#keyboard-shortcuts-when-editing-pages}
 
-In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für die Bearbeitung von Seiten, andere für die [Verwendung von Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) und manche insbesondere für die [Konsole „Inhaltsfragmente“](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für die Bearbeitung von Seiten, andere für die [Verwendung von Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) und manche insbesondere für die [Konsole „Inhaltsfragmente“](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 >
 >Sobald der Benutzer mit der Seite im Vorschaumodus interagiert, ist der Tastaturbefehl `Ctrl-Shift-m` nicht mehr verfügbar. Der Benutzer muss auf die obere Editor-Leiste klicken oder wieder in den Bearbeitungsmodus wechseln, damit der Tastaturbefehl erneut verfügbar wird.
 
-Desktop-Benutzern stehen bei der Verwendung von [Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) und insbesondere der [Konsole „Inhaltsfragmente“](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md) diverse Tastaturbefehle zur Verfügung.
+Desktop-Benutzern stehen bei der Verwendung von [Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) und insbesondere der [Konsole „Inhaltsfragmente“](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) diverse Tastaturbefehle zur Verfügung.
 
 >[!NOTE]
 >

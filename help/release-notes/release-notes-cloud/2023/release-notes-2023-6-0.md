@@ -1,10 +1,10 @@
 ---
 title: Versionshinweise für Version 2023.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2023.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 2d10d03e478bff5a162c620c41ceac38a6d7911a
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 16%
+ht-degree: 38%
 
 ---
 
@@ -37,7 +37,7 @@ Eine Zusammenfassung der in der Version 2023.6.0 hinzugefügten Funktionen finde
 
 ### Neue Funktionen in [!DNL Experience Manager Sites] {#sites-features}
 
-* Inhaltsfragmente und ihre Referenzen können jetzt in der [AEM-Vorschaudienst](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) mithilfe der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md), sodass Benutzer eine Vorschau des finalen Erlebnisses in einer entkoppelten Vorschau-App anzeigen können, bevor sie live gehen.
+* Inhaltsfragmente und ihre Referenzen können jetzt in der [AEM-Vorschaudienst](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) mithilfe der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console), sodass Benutzer eine Vorschau des finalen Erlebnisses in einer entkoppelten Vorschau-App anzeigen können, bevor sie live gehen.
 
 ![Vorschau in der Inhaltsfragmentkonsole](/help/assets/content-fragments-console-preview.png)
 
@@ -62,9 +62,9 @@ Mit Experience Manager Assets können Sie jetzt über die Benutzeroberfläche de
 
 * [Navigieren Sie zum Ordnerspeicherort](/help/assets/search-assets.md#aftersearch) für Assets, die in den Suchergebnissen angezeigt werden.
 
-**Miniaturansichten für 3D-Assets**
+**Miniaturansichtsvorschau für 3D-Assets**
 
-[!DNL Experience Manager Assets] generiert [Miniaturansichten für gängige 3D-Dateiformate](/help/assets/file-format-support.md) einschließlich gLB, USDz, FBX, 3DS, OBJ und SBSAR. Wenn diese Dateien hochgeladen werden, werden automatisch Miniaturansichten generiert.
+[!DNL Experience Manager Assets] generiert nun Miniaturansichtsvorschauen für gängige 3D-Dateiformate wie gLB, USDz, FBX, 3DS, OBJ und SBSAR. [](/help/assets/file-format-support.md) Wenn diese Dateien hochgeladen werden, werden automatisch Miniaturansichten generiert.
 
 **Konfiguration der Linkfreigabe**
 
@@ -78,23 +78,23 @@ Die Benutzeroberfläche für einige Felder mit Bezug auf smartes Zuschneiden in 
 
 ### Neue Funktionen in der Asset-Ansicht {#assets-view-features}
 
-**Hierarchisches Tagging von Assets für schnelleres Sucherlebnis**
+**Hierarchisches Tagging von Assets für ein schnelleres Sucherlebnis**
 
-Einfache Listen kontrollierter Vokabeln werden im Laufe der Zeit nicht mehr zu handhaben. Die Asset-Ansicht unterstützt jetzt [Hierarchische Tagging-Struktur](/help/assets/tagging-management-assets-view.md), was die Anwendung relevanter Metadaten, die Kategorisierung von Assets, die Unterstützung der Suche, die Wiederverwendung von Tags, die Verbesserung der Auffindbarkeit usw. erleichtert.
+Flache Listen mit kontrolliertem Vokabular werden im Laufe der Zeit immer unübersichtlicher. Die Asset-Ansicht unterstützt jetzt [Hierarchische Tagging-Struktur](/help/assets/tagging-management-assets-view.md), was die Anwendung relevanter Metadaten, die Kategorisierung von Assets, die Unterstützung der Suche, die Wiederverwendung von Tags, die Verbesserung der Auffindbarkeit usw. erleichtert.
 
 ![Tagging-Verwaltung](/help/assets/assets/tags-hierarchy.png)
 
-**Dateien, Ordner und Sammlungen für den schnellen Zugriff fixieren**
+**Anheften von Dateien, Ordnern und Sammlungen zwecks Schnellzugriffs**
 
-Sie können jetzt [Pin-Dateien, Ordner und Sammlungen für schnelleren Zugriff](/help/assets/my-workspace-assets-view.md) zu diesen Elementen hinzu, wenn Sie sie später benötigen. Die fixierten Elemente werden im **Schnellzugriff** Abschnitt &quot;Mein Arbeitsbereich&quot;. Sie können über den Arbeitsbereich darauf zugreifen, anstatt zu dem Speicherort zu navigieren, an dem sie im Repository gespeichert sind.
+Sie können jetzt [Pin-Dateien, Ordner und Sammlungen für schnelleren Zugriff](/help/assets/my-workspace-assets-view.md) zu diesen Elementen hinzu, wenn Sie sie später benötigen. Alle angehefteten Elemente werden im Dashboard „Mein Arbeitsbereich“ im Abschnitt **Schnellzugriff** angezeigt. Sie können auf diese Elemente über das Dashboard „Mein Arbeitsbereich“ zugreifen, anstatt zu ihrem Speicherort im Repository zu navigieren.
 
 ![Aufgaben in Workspace](/help/assets/assets/quick-access.png)
 
-**Filtern von Assets im Ordner &quot;Papierkorb&quot;**
+**Filtern von Assets im Papierkorb-Ordner**
 
-Die Asset-Ansicht ermöglicht jetzt Folgendes: [Filtern von Assets, die im Ordner &quot;Papierkorb&quot;verfügbar sind](/help/assets/navigate-assets-view.md). Sie können standardmäßige oder benutzerdefinierte Filter anwenden, um geeignete Assets im Ordner &quot;Papierkorb&quot;zu suchen, um sie wiederherzustellen oder dauerhaft zu löschen.
+Die Asset-Ansicht ermöglicht jetzt Folgendes: [Filtern von Assets, die im Ordner &quot;Papierkorb&quot;verfügbar sind](/help/assets/navigate-assets-view.md). Sie können standardmäßige oder benutzerdefinierte Filter anwenden, um im Papierkorb-Ordner nach geeigneten Assets zum Wiederherstellen oder dauerhaften Löschen zu suchen.
 
-**Miniaturansichten für 3D-Assets**
+**Miniaturansichtsvorschau für 3D-Assets**
 
 Die Asset-Ansicht generiert jetzt eine Miniaturansicht für gängige 3D-Dateiformate wie gLB, USDz, FBX, 3DS, OBJ und SBSAR. Wenn diese Dateien in die Asset-Ansicht hochgeladen werden, werden vom System standardmäßig automatisch Miniaturansichten generiert.
 
@@ -102,7 +102,7 @@ Die Asset-Ansicht generiert jetzt eine Miniaturansicht für gängige 3D-Dateifor
 
 **Anzeigen der am häufigsten gesuchten Begriffe**
 
-Die Asset-Ansicht unterstützt jetzt [Anzeigen der am häufigsten gesuchten Begriffe in Ihrer Implementierung](/help/assets/my-workspace-assets-view.md) mithilfe der **Insights** Abschnitt &quot;Mein Arbeitsbereich&quot;. Sie können auch zu detaillierten Insights navigieren, um die wichtigsten Suchvorgänge der letzten 30 Tage oder 12 Monate anzuzeigen.
+Die Asset-Ansicht unterstützt jetzt [Anzeigen der am häufigsten gesuchten Begriffe in Ihrer Implementierung](/help/assets/my-workspace-assets-view.md) mithilfe der **Insights** Abschnitt &quot;Mein Arbeitsbereich&quot;. Sie können zudem zu detaillierten Erkenntnissen navigieren, um die häufigsten Suchanfragen der letzten 30 Tage oder 12 Monate anzuzeigen.
 
 ![Aufgaben in Workspace](/help/assets/assets/insights-top-searches.png)
 
@@ -114,17 +114,17 @@ Die Asset-Ansicht ermöglicht jetzt Folgendes: [Mehrwert-Text- und Dropdown-List
 
 ### Neue Funktionen in [!DNL Forms] {#new-features-available-in-channel}
 
-* [Adaptives Forms im AEM Seiteneditor](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): Sie können jetzt AEM Seiteneditor verwenden, um schnell mehrere Formulare zu Ihren Siteseiten zu erstellen und hinzuzufügen. Diese Funktion ermöglicht es Inhaltsautoren, nahtlose Datenerfassungserlebnisse innerhalb von Sites-Seiten zu erstellen, indem sie die Leistung adaptiver Formularkomponenten nutzen, einschließlich dynamischem Verhalten, Überprüfungen, Datenintegration, Generierung von Datensatzdokumenten und Automatisierung von Geschäftsprozessen. Sie haben folgende Möglichkeiten:
+* [Adaptive Formulare im AEM-Seiteneditor](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): Sie können jetzt den AEM-Seiteneditor verwenden, um schnell mehrere Formulare zu Ihren Site-Seiten hinzuzufügen. Diese Funktion ermöglicht es Inhaltsautorinnen und -autoren, eine nahtlose Datenerfassung innerhalb von Sites-Seiten zu erstellen, indem sie die Leistungsfähigkeit adaptiver Formularkomponenten nutzen, einschließlich dynamischem Verhalten, Überprüfungen, Datenintegration, Generierung von Datensatzdokumenten und Automatisierung von Geschäftsprozessen. Sie haben folgende Möglichkeiten:
 
-   * Erstellen Sie ein adaptives Formular, indem Sie Formularkomponenten per Drag-and-Drop in die Adaptive Forms Container-Komponente im AEM Sites-Editor oder in Experience Fragments ziehen.
-   * Verwenden Sie den Assistenten für adaptive Forms im AEM Sites-Editor, damit Sie unabhängig von einer beliebigen Sites-Seite Formulare erstellen können, damit Sie diese Formulare auf mehreren Seiten wiederverwenden können.
-   * Fügen Sie mehrere Formulare zu einer Sites-Seite hinzu, optimieren Sie das Benutzererlebnis und bieten Sie mehr Flexibilität.
+   * Erstellen Sie ein adaptives Formular, indem Sie Formularkomponenten per Drag-and-Drop in die Komponente „Container für adaptive Formulare“ im AEM Sites-Editor oder in Experience Fragments ziehen.
+   * Verwenden Sie den Assistenten für adaptive Formulare im AEM Sites-Editor, damit Sie unabhängig von einer beliebigen Sites-Seite Formulare erstellen können und diese Formulare auch auf mehreren Seiten wiederverwenden können.
+   * Optimieren Sie das Anwendererlebnis und bieten Sie mehr Flexibilität, indem Sie mehrere Formulare zu einer Sites-Seite hinzufügen.
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-* [Adobe Acrobat Sign Solutions für Regierungsbehörden](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ist jetzt in Adobe Acrobat Sign Solutions für Regierungsbehörden integriert. Diese Integration bietet eine erweiterte Kompatibilität und Sicherheit für e-Signaturen mit adaptiven Formularen für staatlich verbundene Konten (Regierungsabteilungen und Behörden).
+* [Adobe Acrobat Sign Solutions für Regierungsbehörden](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ist jetzt in Adobe Acrobat Sign Solutions für Regierungsbehörden integriert. Diese Integration bietet eine erweiterte Kompatibilität und Sicherheit für E-Signaturen mit adaptiven Formularen für staatlich verbundene Konten (Regierungsabteilungen und Behörden).
 
-  Durch die Integration mit Adobe Acrobat Sign Solutions for Government können Partner und Regierungskunden der Adobe elektronische Signaturen in Adaptive Forms für einige der wichtigsten und sensibelsten Geschäftsbereiche verwenden. Diese zusätzliche Sicherheitsschicht stellt sicher, dass alle E-Signaturen vollständig mit der Einhaltung der FedRAMP Moderate-Richtlinien konform sind, was den Regierungskunden der Adobe einen gesunden Menschenverstand verschafft.
+  Durch die Integration mit Adobe Acrobat Sign Solutions for Government können Adobe- und Regierungskunden elektronische Signaturen in Adaptive Forms für einige der wichtigsten und sensibelsten Geschäftsbereiche verwenden. Diese zusätzliche Sicherheitsschicht stellt sicher, dass alle E-Signaturen vollständig mit der Einhaltung der FedRAMP Moderate Compliance konform sind, sodass die Regierungskundschaft von Adobe beruhigt sein kann.
 
 * [Verbesserte Fehlerbehebung mit benutzerdefinierten Fehler-Handlern im Regeleditor](/help/forms/add-custom-error-handler-adaptive-forms.md): Sie können jetzt eine benutzerdefinierte Funktion (mithilfe der Client-Bibliothek) aufrufen, wenn ein von einem externen Dienst zurückgegebener Fehler auftritt, und eine maßgeschneiderte Antwort für Endbenutzer bereitstellen. Sie können auch bestimmte Aktionen für Fehler ausführen, die von einem Dienst zurückgegeben werden. Sie können beispielsweise einen benutzerdefinierten Workflow im Backend für bestimmte Fehlercodes aufrufen oder den Kunden darüber informieren, dass der Dienst ausgefallen ist.
 

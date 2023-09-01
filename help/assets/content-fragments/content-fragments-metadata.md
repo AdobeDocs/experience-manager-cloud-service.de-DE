@@ -2,10 +2,10 @@
 title: Metadaten – Fragmenteigenschaften (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie die Metadateneigenschaften für Inhaltsfragmente anzeigen und bearbeiten können.
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 96%
+source-wordcount: '274'
+ht-degree: 79%
 
 ---
 
@@ -13,12 +13,18 @@ ht-degree: 96%
 
 Erfahren Sie, wie Sie die Metadateneigenschaften für Inhaltsfragmente in AEM anzeigen und bearbeiten können, um Ihren Headless-Content anzupassen.
 
+>[!NOTE]
+>
+>Inhaltsfragmente sind eine Sites-Funktion, werden jedoch als **Assets**.
+>
+>Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor beschrieben, auf den Sie hauptsächlich über das **Assets** Konsole. Weitere Informationen finden Sie in der Sites-Dokumentation . [Inhaltsfragmente - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md)für Details zum neuen Editor (hauptsächlich über die **Inhaltsfragmente** -Konsole).
+
 ## Bearbeiten von Eigenschaften/Metadaten {#editing-properties-meta-data}
 
 Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und bearbeiten:
 
 1. Navigieren Sie in der **Assets**-Konsole zum Speicherort des Inhaltsfragments.
-2. Entweder:
+2. Sie haben folgende Möglichkeiten:
 
    * Wählen Sie [**Eigenschaften anzeigen** aus, um das Dialogfeld zu öffnen](/help/assets/manage-digital-assets.md#editing-properties). Sobald es zur Anzeige geöffnet wurde, können Sie auch Bearbeitungen vornehmen.
    * Öffnen Sie das Inhaltsfragment zum Bearbeiten und wählen Sie anschließend im seitlichen Bedienfeld **Metadaten** aus.

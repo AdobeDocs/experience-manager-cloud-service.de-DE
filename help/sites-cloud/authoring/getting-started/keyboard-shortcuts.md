@@ -2,10 +2,10 @@
 title: Tastaturbefehle für Konsolen
 description: Mit diesen Tastaturbefehlen sparen Sie Zeit beim Authoring
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: bdefc8ccdb44bec7a72d9223614b3a6ba5c65225
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Assets“
 |  | `Left Arrow` | Navigieren nach oben in der Baumstruktur/Reduzieren des Strukturknotens |
 |  | `Down Arrow` | Navigieren nach unten in einer Liste mit Seiten auf derselben Ebene |
 |  | `Up Arrow` | Navigieren nach oben in einer Liste mit Seiten auf derselben Ebene |
-| Konsole - Spaltenansicht | `Shift-Up/Down Arrow` | Navigieren nach oben/unten und wählen Sie eine Liste von Seiten auf derselben Ebene aus |
+| Konsole – Spaltenansicht | `Shift-Up/Down Arrow` | Eine Liste von Seiten auf der gleichen Ebene nach oben/unten verschieben und auswählen |
 |  | `Esc` | Navigieren nach oben in einer Liste mit Seiten auf derselben Ebene |
 | Konsolen | `?` | Hilfe zu Tastaturbefehlen |
 |  | `/` | Aufrufen der [Suche](/help/sites-cloud/authoring/getting-started/search.md) |
@@ -47,19 +47,19 @@ Die für die Tastaturbefehle verwendeten Modifikatortasten variieren je nach dem
 
 ## Browser und Tastaturbefehle {#browsers-and-keyboard-shortcuts}
 
-AEM vermeidet gängige Tastaturbefehle, die bereits von gängigen Browsern verwendet werden. Das standardmäßige Browserverhalten wird jedoch nicht durch AEM Tastaturbefehle überschrieben.
+AEM vermeidet gängige Tastaturbefehle, die bereits von gängigen Browsern verwendet werden. Das standardmäßige Browser-Verhalten wird jedoch nicht durch AEM-Tastaturbefehle überschrieben.
 
 Außerdem sind die Tastaturbefehle für alle Gebietsschemata und Tastatur-Layouts identisch.
 
 >[!NOTE]
 >
->AEM Tastaturbefehle überschreiben nicht das standardmäßige Browserverhalten.
+>AEM-Tastaturbefehle überschreiben nicht das standardmäßige Browser-Verhalten.
 >
->Sollte es zu Konflikten zwischen AEM- und Browser-Tastaturbefehlen kommen, funktionieren AEM Verknüpfungen nicht, was zu Browserfunktionalität führt.
+>Sollte es zu Konflikten zwischen AEM- und Browser-Tastaturbefehlen kommen, funktionieren die AEM-Tastaturbefehle nicht, sondern die Browser-Funktionalität wird verwendet.
 
 >[!CAUTION]
 >
->AEM Tastaturbefehle könnten Bildschirmlesehilfen, einige Browserfunktionen und andere Eingabehilfen beeinträchtigen.
+>AEM-Tastaturbefehle könnten Bildschirmlesehilfen, einige Browser-Funktionen und andere Barrierefreiheits-Tools beeinträchtigen.
 >
 >Adobe empfiehlt, [AEM-Tastaturbefehle zu deaktivieren](#deactivating-keyboard-shortcuts), wenn eine Bildschirmlesehilfe verwendet wird.
 
@@ -67,9 +67,9 @@ Außerdem sind die Tastaturbefehle für alle Gebietsschemata und Tastatur-Layout
 
 AEM bietet Tastaturbefehle für einige häufig verwendete Funktionen (Bearbeiten, Eigenschaften, Kopieren/Einfügen, Anzeigen verschiedener Menüs in der Seitenleiste usw.).
 
-Für Benutzer, die keine Tastaturbefehle verwenden oder bestimmte Barrierefreiheitsanforderungen haben, können alle Tastaturbefehle deaktiviert werden.
+Für Benutzerinnen und Benutzer, die keine Tastaturbefehle verwenden oder bestimmte Barrierefreiheitsanforderungen haben, können alle Tastaturbefehle deaktiviert werden.
 
-Sie können Tastaturbefehle an zwei Stellen deaktivieren:
+Sie können die Tastaturbefehle an zwei Stellen deaktivieren:
 
 * [Benutzereinstellungen](/help/sites-cloud/authoring/getting-started/account-environment.md#my-preferences)
 * [Hilfemenü](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
@@ -84,4 +84,4 @@ In Adobe Experience Manager stehen verschiedene Tastaturbefehle zur Verfügung. 
 
 ## Tastaturbefehle für die Inhaltsfragmentkonsole {#keyboard-shortcuts-for-the-content-fragments-console}
 
-Einige Tastaturbefehle gelten für die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
+Einige Tastaturbefehle gelten für die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)

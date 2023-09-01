@@ -2,9 +2,9 @@
 title: Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten
 description: Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten für Inhalte, andere Fragmente und andere Assets (Medien). Einführung in die Notwendigkeit und die Mechanik verschachtelter Fragmente für Headless-CMS-Seitenbearbeitung.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '712'
 ht-degree: 87%
 
 ---
@@ -35,7 +35,7 @@ Verweise sind lediglich ein Mechanismus zum Verbinden Ihrer Ressourcen, sei es m
 
 Einige Verweise verfügen über dedizierte Datentypen (z. B. Inhaltsverweise und Fragmentverweise), während andere einfach als Verweis in einem Textblock hinzugefügt werden (Asset-Verweise und Ad-hoc-Verweise).
 
-![Inhaltsfragmente – Verweise](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![Inhaltsfragmente – Verweise](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Inhaltsreferenzen {#content-references}
 
@@ -92,11 +92,7 @@ Die Definition des Inhaltsfragmentmodells steuert:
 
 Wenn Sie die Registerkarte **Baumstruktur** des Inhaltsfragment-Editors verwenden, können Sie durch die Fragmente navigieren, auf die Ihr Fragment verweist, und dann durch alle Verweise, die sie möglicherweise enthalten. Wenn Sie eine Referenz auswählen, wird dieses Fragment zur Bearbeitung geöffnet.
 
->[!NOTE]
->
->Mithilfe der Breadcrumbs im Hauptbedienfeld können Sie zurück zu Ihrem Ausgangspunkt gelangen.
-
-![Strukturbaum der Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
+![Strukturbaum der Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 ## Ad-hoc-Verweise {#adhoc-references}
 
@@ -110,21 +106,21 @@ Nachdem Sie sich mit Verweisen und Strukturen in Inhaltsfragmenten vertraut gema
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+   * [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md)
 
-      * [Anwenden der Konfiguration auf Ihren Assets-Ordner](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [Anwenden der Konfiguration auf Ihren Assets-Ordner](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
 
-      * [Erstellen eines Inhaltsfragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+      * [Erstellen eines Inhaltsfragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [Varianten – Authoring von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+   * [Bearbeiten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/authoring.md)
 
-   * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [Inhaltsfragmentmodelle – Datentypen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+      * [Inhaltsfragmentmodelle – Datentypen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-      * [Inhaltsfragmentmodelle – Eigenschaften](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+      * [Inhaltsfragmentmodelle – Eigenschaften](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
 * Anleitungen für den Einstieg
    * [Erstellen eines Asset-Ordners – Headless-Einrichtung](/help/headless/setup/create-assets-folder.md)

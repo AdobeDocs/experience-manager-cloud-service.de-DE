@@ -3,7 +3,7 @@ title: Verwalten von GraphQL-Endpunkten in AEM
 description: Erfahren Sie, wie Sie GraphQL-Endpunkte in Adobe Experience Manager as a Cloud Service für die Bereitstellung von Headless-Inhalten verwalten.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 87%
@@ -22,10 +22,10 @@ Es gibt zwei Arten von Endpunkten in AEMٔ:
 
 * Global
    * Verfügbar zur Verwendung durch alle Websites.
-   * Dieser Endpunkt kann alle Inhaltsfragmentmodelle aus allen Sites-Konfigurationen verwenden (definiert im [Konfigurations-Browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
+   * Dieser Endpunkt kann alle Inhaltsfragmentmodelle aus allen Sites-Konfigurationen verwenden (definiert im [Konfigurations-Browser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)).
    * Wenn es Inhaltsfragmentmodelle gibt, die unter Sites-Konfigurationen freigegeben werden sollen, sollten diese unter den globalen Sites-Konfigurationen erstellt werden.
 * Sites-Konfigurationen:
-   * Entspricht einer Sites-Konfiguration, wie im [Konfigurations-Browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) definiert.
+   * Entspricht einer Sites-Konfiguration, wie im [Konfigurations-Browser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) definiert.
    * Spezifisch für eine bestimmte Website / ein bestimmtes Projekt.
    * Ein für die Sites-Konfiguration spezifischer Endpunkt verwendet die Inhaltsfragmentmodelle aus dieser spezifischen Sites-Konfiguration zusammen mit denen aus der globalen Sites-Konfiguration.
 
@@ -52,11 +52,11 @@ Um den GraphQL-Endpunkt für AEM zu aktivieren, gehen Sie folgendermaßen vor:
 
 ## Aktivieren des GraphQL-Endpunkts {#enabling-graphql-endpoint}
 
-Um einen GraphQL-Endpunkt zu aktivieren, benötigen Sie zunächst eine entsprechende Konfiguration. Siehe [Inhaltsfragmente – Konfigurations-Browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
+Um einen GraphQL-Endpunkt zu aktivieren, benötigen Sie zunächst eine entsprechende Konfiguration. Siehe [Inhaltsfragmente – Konfigurations-Browser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser).
 
 >[!CAUTION]
 >
->Wenn die [Verwendung von Inhaltsfragmentmodellen nicht aktiviert wurde](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md), ist die Option **Erstellen** nicht verfügbar.
+>Wenn die [Verwendung von Inhaltsfragmentmodellen nicht aktiviert wurde](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser), ist die Option **Erstellen** nicht verfügbar.
 
 So aktivieren Sie den entsprechenden Endpunkt:
 

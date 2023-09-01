@@ -3,7 +3,7 @@ title: Überlegungen zu Berechtigungen für Headless-Inhalte
 description: Erfahren Sie mehr über verschiedene Berechtigungen und Überlegungen zu ACL für eine Headless-Implementierung mit Adobe Experience Manager. Machen Sie sich mit den verschiedenen Rollen und möglichen Berechtigungsstufen vertraut, die sowohl für die Autoren- als auch für die Veröffentlichungsumgebung erforderlich sind.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 526520a8d9d217d0861a7283b10f7b89dffaf9d5
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 97%
@@ -52,9 +52,9 @@ Wenn Sie IMS für die Gruppenmitgliedschaft verwenden, fügen Sie die entspreche
 
 Es ist ratsam, die Berechtigungen einer vorkonfigurierten Gruppe nicht direkt zu ändern. Stattdessen können Sie auch Ihre eigene(n) Gruppe(n) erstellen, die nach den Berechtigungen der Gruppe **DAM-Benutzer** modelliert sind und den Zugriff auf verschiedene **Ordner** innerhalb von AEM Assets weiter einschränken.
 
-Für detailliertere Berechtigungen verwenden Sie die **Berechtigungen** Konsole in AEM und aktualisieren Sie den Pfad von `/content/dam` zu einem spezifischeren Pfad, d. h. `/content/dam/mycontentfragments`.
+Für detailliertere Berechtigungen verwenden Sie die **Berechtigungen** Konsole in AEM und Pfad aktualisieren von `/content/dam` zu einem spezifischeren Pfad, d. h. `/content/dam/mycontentfragments`.
 
-Es kann wünschenswert sein, dieser Benutzergruppe Berechtigungen zum Erstellen und Bearbeiten von Inhaltsfragmenten zu erteilen, jedoch nicht zum Löschen. Informationen zum Überprüfen und Zuweisen von Berechtigungen für die Bearbeitung, aber nicht zum Löschen finden Sie unter [Inhaltsfragmente – Überlegungen zum Löschen](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
+Es kann wünschenswert sein, dieser Benutzergruppe Berechtigungen zum Erstellen und Bearbeiten von Inhaltsfragmenten zu erteilen, jedoch nicht zum Löschen. Informationen zum Überprüfen und Zuweisen von Berechtigungen für die Bearbeitung, aber nicht zum Löschen finden Sie unter [Inhaltsfragmente – Überlegungen zum Löschen](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 ### Modell-Editoren
 

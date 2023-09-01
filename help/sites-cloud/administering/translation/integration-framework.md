@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie das Framework für die Übersetzungsintegrati
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 96%
@@ -73,7 +73,7 @@ Eine einzelne Konfiguration des Frameworks steuert, wie Seiteninhalte und Assets
 1. Navigieren Sie zu der Stelle in Ihrer Inhaltsstruktur, an der Sie die Konfiguration erstellen möchten. Diese bezieht sich oft auf eine bestimmte Site oder kann global sein.
 1. Geben Sie die folgenden Informationen in die Felder ein und klicken oder tippen Sie dann auf **Erstellen**:
    1. Wählen Sie **Konfigurationstyp** in der Dropdown-Liste aus.
-   1. Geben Sie einen **Titel** für Ihre Konfiguration ein. Die **Titel** identifiziert die Konfiguration in der **Cloud Services** -Konsole und in den Dropdown-Listen für Seiteneigenschaften angezeigt.
+   1. Geben Sie einen **Titel** für Ihre Konfiguration ein. Die **Titel** identifiziert die Konfiguration in der **Cloud Service** -Konsole und in den Dropdown-Listen für Seiteneigenschaften angezeigt.
    1. Geben Sie optional einen **Namen** für den Repository-Knoten ein, auf dem die Konfiguration gespeichert wird.
 1. Konfigurieren Sie im Fenster **Konfiguration bearbeiten** die Eigenschaften auf den Registerkarten **Sites** und **Assets** und klicken oder tippen Sie dann auf **Speichern und schließen**.
 
@@ -109,7 +109,7 @@ Asset-Eigenschaften steuern, wie Assets konfiguriert werden. Weitere Information
 | Tags übersetzen | Aktivieren Sie diese Eigenschaft, um Tags zu übersetzen, die mit dem Asset verknüpft sind. |
 | Übersetzung automatisch durchführen | Wählen Sie diese Eigenschaft aus, um Übersetzungsaufträge nach der Erstellung von Übersetzungsprojekten automatisch auszuführen. Bei dieser Option haben Sie keine Möglichkeit, den Übersetzungsauftrag zu prüfen oder seinen Umfang zu ermitteln. |
 | Deaktivieren der Übersetzung „Nur Update“. | Wenn diese Option markiert ist, werden beim Aktualisieren des Übersetzungsprojekts alle übersetzbaren Felder zur Übersetzung übermittelt, nicht nur die seit der letzten Übersetzung geänderten Felder. |
-| Aktivieren von Inhaltsmodellfeldern für die Übersetzung | Durch Aktivierung dieser Option wird das Feld **Übersetzbar** in [Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) verwendet, um zu ermitteln, ob das Feld übersetzt wurde. Automatisch werden entsprechend [Übersetzungsregeln](rules.md) erstellt. Diese Option ersetzt alle Übersetzungsregeln, die Sie erstellt haben. |
+| Aktivieren von Inhaltsmodellfeldern für die Übersetzung | Durch Aktivierung dieser Option wird das Feld **Übersetzbar** in [Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) verwendet, um zu ermitteln, ob das Feld übersetzt wurde. Automatisch werden entsprechend [Übersetzungsregeln](rules.md) erstellt. Diese Option ersetzt alle Übersetzungsregeln, die Sie erstellt haben. |
 
 ## Konfigurieren von Seiten für Übersetzungen {#configuring-pages-for-translation}
 

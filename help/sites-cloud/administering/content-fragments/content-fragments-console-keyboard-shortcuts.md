@@ -3,8 +3,11 @@ title: Tastaturbefehle für die Inhaltsfragmentkonsole
 description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung, darunter auch für die Verwaltung von Inhaltsfragmenten
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: fe6ea615-43aa-41cd-a21c-50d855084154
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 100%
@@ -12,6 +15,12 @@ ht-degree: 100%
 ---
 
 # Tastaturbefehle für die Inhaltsfragmentkonsole {#keyboard-shortcuts-content-fragments-console}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 In der Inhaltsfragmentkonsole stehen verschiedene Tastaturbefehle zur Verfügung.
 

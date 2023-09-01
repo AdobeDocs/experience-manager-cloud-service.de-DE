@@ -4,8 +4,11 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente über die Inhaltsfragmentkon
 landing-page-description: Erfahren Sie, wie Sie Inhaltsfragmente über die Inhaltsfragmentkonsole verwalten. Diese wird vor allem für Inhaltsfragmente mit hohem Volumen für Headless-Anwendungsfälle verwendet, kann aber auch zum Erstellen von Seiten herangezogen werden.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: afe676b0972462ef2c9b52150d96560c71f7a0f6
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 80%
@@ -13,6 +16,12 @@ ht-degree: 80%
 ---
 
 # Inhaltsfragmentkonsole  {#content-fragments-console}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Erfahren Sie, wie die Inhaltsfragmentkonsole den Zugriff auf Ihre Inhaltsfragmente optimiert und Sie dabei unterstützt, diese zu erstellen, zu durchsuchen und zu verwalten, indem Sie Verwaltungsaufgaben durchführen, wie Inhalte veröffentlichen, ihre Veröffentlichung aufheben und Kopien anfertigen.
 
@@ -180,7 +189,7 @@ Der Filterbereich bietet folgende Optionen:
 * die Möglichkeit, Ihre Konfiguration zu **speichern**
 * die Option zum Abrufen eines gespeicherten Suchfilters für die Wiederverwendung
 
-Nach der Auswahl wird die **Filtern nach** -Optionen angezeigt werden (unter dem Suchfeld). Sie können von dort aus abgewählt werden. Beispiel:
+Nach der Auswahl wird die **Filtern nach** -Optionen angezeigt werden (unter dem Suchfeld). Sie können von dort aus abgewählt werden. Zum Beispiel:
 
 ![Inhaltsfragmentkonsole – Filtern](assets/cfc-console-filter.png)
 

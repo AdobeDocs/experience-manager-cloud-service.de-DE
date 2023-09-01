@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5b61b60a94b944a747232b238c3ce48195a5a212
 workflow-type: tm+mt
-source-wordcount: '4376'
-ht-degree: 99%
+source-wordcount: '4508'
+ht-degree: 96%
 
 ---
 
@@ -76,6 +76,21 @@ Nach der Aktivierung sendet Experience Manager Benachrichtigungen über doppelte
 >[!NOTE]
 >
 >Wenn Sie Assets in das Repository hochladen, erkennt Experience Manager Duplikate und benachrichtigt Sie über die ersten 100 doppelt vorhandenen Assets.
+
+## ZIP-Archive extrahieren {#extract-zip-archives}
+
+Wählen Sie im Experience Manager verwaltete ZIP-Archive aus und extrahieren Sie die Dateien direkt in den Experience Manager, ohne sie herunterzuladen.
+
+Gehen Sie wie folgt vor, um die ZIP-Dateien zu extrahieren:
+
+1. Wählen Sie den ZIP-Dateityp aus.
+1. Klicken Sie auf **[!UICONTROL Archiv extrahieren]** in der Symbolleiste verfügbar.
+1. Wählen Sie den Ordner aus, in dem Sie die extrahierten Assets speichern müssen, die im komprimierten Ordner verfügbar sind.
+1. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Wählen Sie das geeignete Verhalten aus, um Dateinamenkonflikte während der Extraktion zu verarbeiten. Sie können auswählen, ob Sie eine neue Version eines vorhandenen Assets erstellen, das Asset ersetzen, beide Assets im Zielordner belassen oder die Extraktion des neuen Assets überspringen möchten.
+1. Klicks **[!UICONTROL Extract]**. Der Zip-Extraktionsvorgang wird gestartet. Sobald der Prozess abgeschlossen ist, können Sie die extrahierten Assets im Zielordner anzeigen.
+
+   ![ZIP-Extraktion](assets/zip-extraction.png)
 
 ## Anzeigen einer Vorschau für Assets {#previewing-assets}
 

@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
+source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
 workflow-type: tm+mt
-source-wordcount: '5162'
-ht-degree: 95%
+source-wordcount: '5532'
+ht-degree: 91%
 
 ---
 
@@ -60,6 +60,20 @@ Sie können die gewünschten Assets schneller auf der Suchergebnisseite ausfindi
 ![Anzeigen der ungefähren Asset-Anzahl ohne Filterung der Suchergebnisse in Suchfacetten.](assets/asset_search_results_in_facets_filters.png)
 
 *Abbildung: Anzeigen der ungefähren Asset-Anzahl ohne Filterung der Suchergebnisse in Suchfacetten.*
+
+Experience Manager Assets zeigt die Facettenanzahl für zwei Eigenschaften standardmäßig an:
+
+* Asset-Typ (jcr:content/metadata/dc:format)
+
+* Genehmigungsstatus (jcr:content/metadata/dam:status)
+
+Ab August 2023 enthält Experience Manager Assets eine neue Version 9 von `damAssetLucene` Index. die vorherigen Versionen, `damAssetLucene-8` und unten verwenden Sie die `statistical` -Modus, um die Zugriffskontrolle für ein Beispiel der Elemente für die einzelnen Suchfacettenzählungen zu überprüfen.
+
+`damAssetLucene-9` ändert das Verhalten der Facettenzählung der Oak-Abfrage, um die Zugriffskontrolle nicht mehr auf die Facettenzahlen auszuwerten, die vom zugrunde liegenden Suchindex zurückgegeben werden, was zu schnelleren Antwortzeiten bei der Suche führt. Daher werden Benutzern möglicherweise Werte für die Facettenanzahl angezeigt, die Assets enthalten, auf die sie keinen Zugriff haben. Diese Benutzer können nicht auf andere Details dieser Assets zugreifen, diese herunterladen oder lesen, einschließlich ihrer Pfade, oder sie können keine weiteren Informationen zu ihnen erhalten.
+
+Wenn Sie zum vorherigen Verhalten wechseln müssen (`statistical` -Modus), siehe [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=de) , um eine benutzerdefinierte Version der `damAssetLucene-9` Index. Adobe rät davon ab, zum `secure` -Modus aufgrund der Auswirkungen auf die Antwortzeiten der Suche mit großen Ergebnismengen.
+
+Weitere Informationen zu den Facettenfunktionen von Oak, einschließlich einer detaillierten Beschreibung dieser Modi, finden Sie unter [diesem Artikel](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
 ## Suchvorschläge bei der Eingabe {#searchsuggestions}
 
@@ -123,6 +137,20 @@ So können Sie das Ranking bestimmter Assets in den Keywords für das jeweilige 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Video: Erfahren Sie, wie Suchergebnisse ihren Rang erhalten und wie der Rang beeinflusst werden kann.*
+
+## Konfigurieren der Asset-Stapelgröße für die Anzeige von Suchergebnissen {#configure-asset-batch-size}
+
+Administratoren können jetzt die Batch-Größe von Assets konfigurieren, die bei einer Suche angezeigt werden. Die Asset-Suchergebnisse zeigen ein Vielfaches der konfigurierten Stapelgrößenanzahl an, wenn Sie weiter nach unten scrollen, um die Ergebnisse zu laden. Sie können aus den verfügbaren Batch-Größen 200, 500 und 1000 Assets auswählen. Wenn Sie eine niedrigere Stapelgrößenanzahl festlegen, werden die Antwortzeiten der Suche beschleunigt.
+
+Wenn Sie beispielsweise die Ergebnisanzahl auf eine Stapelgröße von 200 Assets festlegen, zeigt Experience Manager Assets beim Starten der Suche in den Suchergebnissen eine Stapelgröße von 200 Assets an. Wenn Sie nach unten scrollen, um durch die Suchergebnisse zu navigieren, wird der nächste Batch von 200 Assets angezeigt. Der Prozess wird fortgesetzt, bis alle Assets, die mit der Suchabfrage übereinstimmen, angezeigt werden.
+
+So konfigurieren Sie die Asset-Stapelgröße:
+
+1. Navigieren Sie zu **[!UICONTROL Instrumente]** > **[!UICONTROL Assets]** > **[!UICONTROL Assets-Konfigurationen]** > **[!UICONTROL Assets-Omnisearch-Konfiguration]**.
+
+1. Wählen Sie die Begrenzung der Ergebnisanzahl aus und klicken Sie auf **[!UICONTROL Speichern]**.
+
+   ![Konfiguration der Batch-Größe von Assets](/help/release-notes/assets/assets-batch-size-configuration.png)
 
 ## Erweiterte Suche {#scope}
 
@@ -411,10 +439,10 @@ Sie können Folgendes mit den Assets durchführen, in denen Sie gesucht haben [!
 * Ein oder mehrere Assets herunterladen.
 * Desktop-Aktionen verwenden, um die Assets im Desktop-Programm zu öffnen.
 * Smart-Sammlungen erstellen.
-* Version erstellen
+* eine Version erstellen
 * einen Workflow starten
-* Zuordnen oder Aufheben der Zuordnung von Assets
-* Wenden Sie mithilfe des Bedienfelds Filter an, das nach der Durchführung der Suche automatisch angezeigt wird, um die Suchergebnisse einzugrenzen.
+* eine Zuordnung für Assets herstellen oder aufheben
+* Filter anwenden, um die Suchergebnisse einzugrenzen. Verwenden Sie dazu das Filter-Bedienfeld, das nach der Suche automatisch angezeigt wird.
 * Navigieren zum Asset-Speicherort
 
 ### Sortieren von Suchergebnissen {#sort}
@@ -456,19 +484,19 @@ Eine Sammlung ist ein geordneter Satz von Assets, der Assets von verschiedenen S
 
 Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen Sie im Bedienfeld **[!UICONTROL Filter]** die Option **[!UICONTROL Dateien]** und klicken Sie auf **[!UICONTROL Smart-Sammlung speichern]**. Siehe [Verwalten von Sammlungen](/help/assets/manage-collections.md).
 
-### Version erstellen {#create-version}
+### Erstellen einer Version {#create-version}
 
 Erstellen Sie eine Version für die Assets, die in den Suchergebnissen angezeigt werden. Wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Version]**. Fügen Sie eine optionale Bezeichnung oder einen Kommentar hinzu und klicken Sie auf **[!UICONTROL Erstellen]**. Sie können auch mehrere Assets auswählen und gleichzeitig Versionen für sie erstellen.
 
 ### Workflow erstellen {#create-workflow}
 
-Ähnlich wie bei der Funktion &quot;Version erstellen&quot;können Sie auch einen Workflow für die Assets erstellen, die in den Suchergebnissen angezeigt werden. Wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Workflow]**. Wählen Sie das Workflow-Modell aus, geben Sie einen Titel für den Workflow an und klicken Sie auf **[!UICONTROL Starten]**.
+Ähnlich wie bei der Funktion „Version erstellen“ können Sie auch einen Workflow für die Assets erstellen, die in den Suchergebnissen angezeigt werden. Wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Workflow]**. Wählen Sie das Workflow-Modell aus, geben Sie einen Titel für den Workflow an und klicken Sie auf **[!UICONTROL Starten]**.
 
-### Zuordnen und Aufheben der Zuordnung von Assets {#relate-unrelate-assets}
+### Zuordnung für Assets herstellen und aufheben {#relate-unrelate-assets}
 
-Ordnen Sie Assets zu, die in den Suchergebnissen angezeigt werden, und heben Sie deren Zuordnung auf. Wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Relation]** oder **[!UICONTROL Nicht zuordnen]**.
+Ordnen Sie Assets, die in den Suchergebnissen angezeigt werden, einander zu und heben Sie die Zuordnung auf. Wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Zuordnen]** oder **[!UICONTROL Zuordnung aufheben]**.
 
-### Navigieren Sie zum Speicherort des Asset-Ordners . {#navigate-asset-folder-location}
+### Navigieren Sie zum Speicherort des Asset-Ordners {#navigate-asset-folder-location}
 
 Navigieren Sie zum Ordnerspeicherort für Assets, die in den Suchergebnissen angezeigt werden. Wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Speicherort der Datei anzeigen]**.
 
