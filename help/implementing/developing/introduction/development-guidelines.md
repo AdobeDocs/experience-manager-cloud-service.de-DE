@@ -2,7 +2,7 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud Service kennen und erfahren Sie, worin sich dieser Dienst von AEM vor Ort und AEM in AMS unterscheidet.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5a60c491db4a182529a2c4b6490b18b356c14fa7
+source-git-commit: 5aa4a049bc6a69f161ad04d2a64ab0871e672432
 workflow-type: tm+mt
 source-wordcount: '2746'
 ht-degree: 83%
@@ -98,8 +98,6 @@ Die Rückwärtsreplikation von der Veröffentlichungs- auf die Autoreninstanz wi
 
 Inhalte werden über einen Herausgeber-Abonnenten-Mechanismus von der Autoren- auf die Veröffentlichungsinstanz repliziert. Benutzerdefinierte Replikationsagenten werden nicht unterstützt.
 
-## Überwachung und Debugging {#monitoring-and-debugging}
-
 ## Keine Entwicklungsumgebungen überladen {#overloading-dev-envs}
 
 Die Größe von Produktionsumgebungen ist höher, um einen stabilen Betrieb sicherzustellen, während Staging-Umgebungen wie Produktionsumgebungen skaliert werden, um realistische Tests unter Produktionsbedingungen sicherzustellen.
@@ -107,6 +105,8 @@ Die Größe von Produktionsumgebungen ist höher, um einen stabilen Betrieb sich
 Entwicklungsumgebungen und Rapid Dev-Umgebungen sollten sich auf Entwicklungs-, Fehleranalyse- und Funktionstests beschränken und sind nicht für die Verarbeitung hoher Arbeitslasten oder großer Inhaltsmengen konzipiert.
 
 Beispielsweise kann das Ändern einer Indexdefinition in einem großen Inhalts-Repository in einer Entwicklungsumgebung zu einer Neuindizierung führen, was zu einer zu hohen Verarbeitungsrate führt. Tests, die umfangreiche Inhalte erfordern, sollten in Staging-Umgebungen durchgeführt werden.
+
+## Überwachung und Debugging {#monitoring-and-debugging}
 
 ### Protokolle {#logs}
 
