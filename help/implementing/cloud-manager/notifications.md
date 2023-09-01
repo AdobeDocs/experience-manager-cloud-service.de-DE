@@ -2,10 +2,10 @@
 title: Benachrichtigungen
 description: Erfahren Sie, wie Sie mithilfe des Adobe Experience Cloud-Benachrichtigungssystems Informationen zu Pipeline-Bereitstellungen erhalten.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 96%
+source-wordcount: '589'
+ht-degree: 86%
 
 ---
 
@@ -54,7 +54,7 @@ Mit den Abonnements legen Sie fest, welche Benachrichtigungen Sie für welche Pr
 
 ![Abonnements für Benachrichtigungen](assets/notifications-subscriptions.png)
 
-Standardmäßig erhalten Sie alle Benachrichtigungen für alle Produkte. Klicken Sie neben einem Produkt auf **Anpassen**, um die Arten von Benachrichtigungen festzulegen, die Sie für dieses Produkt erhalten möchten.
+Standardmäßig erhalten Sie alle Benachrichtigungen für alle Produkte sowohl in der Anwendung als auch per E-Mail. Klicken Sie auf den Pfeil neben einem Produktnamen, um die detaillierten Optionen anzuzeigen und die Benachrichtigungstypen zu definieren, die Sie für dieses Produkt erhalten. Oder aktivieren oder deaktivieren Sie die Optionen auf Produktebene, um alle Optionen für das Produkt auszuwählen/abzuwählen.
 
 ![Anpassung des Benachrichtigungsabonnements](assets/notifications-subscriptions-customize.png)
 
