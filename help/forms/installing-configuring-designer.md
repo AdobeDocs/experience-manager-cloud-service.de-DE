@@ -1,10 +1,10 @@
 ---
 title: Herunterladen und Installieren von Forms Designer
 description: Sie können Forms Designer verwenden, um XDP- und PDF-Formularvorlagen zu erstellen, die als Vorlage für ein Datensatzdokument dienen. Designer ist zusammen mit der  [!DNL AEM Forms] -Lizenz erhältlich.
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 34d966f6550cb9e507c751b580b16a3043137255
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 65%
+source-wordcount: '343'
+ht-degree: 67%
 
 ---
 
@@ -17,17 +17,9 @@ Designer ist ein benutzerfreundliches grafisches Programm für die Formulargesta
 
 Um die neueste Version von AEM Forms Designer 64-Bit oder 32-Bit zu installieren, benötigen Sie die folgende Software und die erforderliche Mindesthardware für die Installation und Konfiguration von Designer:
 
->[!NOTE]
->
-> Wenn Sie 32-Bit-Designer verwenden, müssen Sie vor der Installation von 64-Bit-Designer den 32-Bit-Designer deinstallieren, um Probleme bei der Installation von 64-Bit-Designer zu vermeiden.
-
-<!--
->[!BEGINTABS]
-
->[!TAB 64-bit OS (Recommended)] -->
-
 +++ 64-Bit-Designer (empfohlen)
 
+* Deinstallieren Sie vor der Installation der 64-Bit-Version von Forms Designer die 32-Bit-Version von Designer.
 * [!DNL Microsoft® Windows® 2016 Server] oder [!DNL Microsoft® Windows® 2019 Server], und [!DNL Microsoft® Windows® 10]
 * Mindestens 2 GB RAM
 * 20 GB Festplattenspeicher
