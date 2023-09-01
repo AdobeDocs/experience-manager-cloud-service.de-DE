@@ -2,9 +2,9 @@
 title: Erste Schritte mit der AEM Headless-Übersetzung
 description: Erfahren Sie, wie Sie Ihre Headless-Inhalte organisieren und wie AEM Übersetzungs-Tools funktionieren.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1425'
 ht-degree: 94%
 
 ---
@@ -188,3 +188,5 @@ Es wird zwar empfohlen, zum nächsten Teil der Headless-Übersetzungs-Tour voran
 * [Ermitteln von zu übersetzenden Inhalten](/help/sites-cloud/administering/translation/rules.md): Erfahren Sie, wie Übersetzungsregeln Inhalte ermitteln, die übersetzt werden müssen.
 * [Konfigurieren des Frameworks für die Übersetzungsintegration](/help/sites-cloud/administering/translation/integration-framework.md): Erfahren Sie, wie Sie das Translation Integration Framework (TIF) für die Integration mit Übersetzungs-Services von Drittanbietern konfigurieren.
 * [Verwalten von Übersetzungsprojekten](/help/sites-cloud/administering/translation/managing-projects.md): Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Übersetzungsprojekte in AEM erstellen und verwalten.
+* [Einführung in AEM als Headless-CMS](/help/headless/introduction.md)
+* [Headless-Tutorials für AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)

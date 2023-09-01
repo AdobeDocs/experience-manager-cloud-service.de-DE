@@ -2,9 +2,9 @@
 title: Erste Schritte mit AEM Headless as a Cloud Service
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Voraussetzungen für AEM Headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
 workflow-type: tm+mt
-source-wordcount: '3080'
+source-wordcount: '3098'
 ht-degree: 91%
 
 ---
@@ -281,6 +281,8 @@ Es wird zwar empfohlen, zum nächsten Teil der Headless-Development-Tour voranzu
 
 * [AEM Headless Übersetzungs-Tour](/help/journey-headless/translation/overview.md) – Diese Dokumentations-Tour vermittelt Ihnen ein umfassendes Verständnis der Headless-Technologie sowie davon, wie AEM Headless Inhalte bereitstellt und wie Sie sie übersetzen können.
 * [Einführung in die Architektur von Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) – Grundlegendes zur Struktur von AEM as a Cloud Service
+* Ein [Einführung in AEM als Headless-CMS](/help/headless/introduction.md)
+* Die [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
 * [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de): Nutzen Sie diese praxisnahen Tutorials, um herauszufinden, wie Sie die verschiedenen Optionen für die Bereitstellung von Inhalten an Headless-Endpunkte mit AEM verwenden können, und wählen Sie aus, was für Sie am besten geeignet ist.
 * [Headless Content Management mit GraphQL-APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses): In diesem Kurs erhalten Sie einen Überblick über die in AEM implementierte GraphQL-API. Eine Authentifizierung über Adobe ID ist erforderlich.
 * [AEM-Handbuch zu WKND – GraphQL](https://github.com/adobe/aem-guides-wknd-graphql): Dieses GitHub-Projekt enthält Beispielprogramme zu den AEM-GraphQL-APIs.

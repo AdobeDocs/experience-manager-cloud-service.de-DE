@@ -2,10 +2,10 @@
 title: Authoring für AEM als Headless-CMS – eine Einführung
 description: Eine Einführung in die Verwendung der Funktionen von Adobe Experience Manager as a Cloud Service als Headless-CMS zur Erstellung von Inhalten für Ihr Projekt.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 96%
+source-wordcount: '691'
+ht-degree: 95%
 
 ---
 
@@ -77,10 +77,16 @@ Jetzt, da Sie die Konzepte und Terminologie gelernt haben, lautet der nächste S
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
+* [Einführung in AEM als Headless-CMS](/help/headless/introduction.md)
+
+* [Headless-Tutorials für AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)
+
 * AEM Headless-Entwickler-Tour
    * [Grundlegendes zur CMS-Headless-Entwicklung](/help/journey-headless/developer/learn-about.md)
    * [Hier erfahren Sie, wie Sie Ihre Inhalte modellieren](/help/journey-headless/developer/model-your-content.md)
 
-* AEM Headless-Inhaltsarchitekten-Tour
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
 
-* AEM Headless-Übersetzungs-Tour
+* [AEM Headless-Inhaltsarchitekten-Tour](/help/journey-headless/architect/overview.md)
+
+* [AEM Headless-Übersetzungs-Tour](/help/journey-headless/translation/overview.md)

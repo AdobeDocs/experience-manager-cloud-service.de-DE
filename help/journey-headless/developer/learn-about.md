@@ -2,10 +2,10 @@
 title: Grundlegendes zur CMS-Headless-Entwicklung
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Headless-Technologie und darüber, warum Sie sie verwenden sollten.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1620'
-ht-degree: 92%
+source-wordcount: '1638'
+ht-degree: 91%
 
 ---
 
@@ -127,4 +127,6 @@ Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Headless-Tour fort, inde
 Es wird zwar empfohlen, mit dem nächsten Teil der Headless-Entwickler-Tour fortzufahren, indem Sie das Dokument [Erste Schritte mit AEM Headless as a Cloud Service](getting-started.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche, optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, die aber nicht erforderlich sind, um mit der Headless-Entwickler-Tour fortzufahren.
 
 * [Einführung in die Architektur von Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) – Grundlegendes zur Struktur von AEM as a Cloud Service
+* Ein [Einführung in AEM als Headless-CMS](/help/headless/introduction.md)
+* Die [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
 * [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de): Nutzen Sie diese praxisnahen Tutorials, um herauszufinden, wie Sie die verschiedenen Optionen für die Bereitstellung von Inhalten an Headless-Endpunkte mit AEM verwenden können, und wählen Sie aus, was für Sie am besten geeignet ist.

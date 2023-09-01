@@ -2,10 +2,10 @@
 title: Live-Schalten Ihres Headless-Programms
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie ein Headless-Programm live bereitstellen, indem Sie Ihren lokalen Code in Git in das Git-Repository von Cloud Manager für die CI/CD-Pipeline verschieben.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 93%
+source-wordcount: '1093'
+ht-degree: 92%
 
 ---
 
@@ -69,7 +69,7 @@ Nachdem die Aktualisierungen in Cloud Manager hochgeladen wurden, können sie mi
 
 Sie können mit der Bereitstellung Ihres Codes beginnen, indem Sie die CI/CD-Pipeline von Cloud Manager nutzen, die [hier](/help/implementing/deploying/overview.md) ausführlich erörtert wird.
 
-## Performance-Überwachung {#performance-monitoring}
+## Leistungsüberwachung {#performance-monitoring}
 
 Damit Benutzerinnen und Benutzern bei der Nutzung des AEM Headless-Programms das bestmögliche Erlebnis geboten wird, müssen Sie die wichtigsten Performance-Metriken überwachen, wie nachfolgend beschrieben:
 
@@ -130,6 +130,9 @@ Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem opt
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
+* [Einführung in AEM als Headless-CMS](/help/headless/introduction.md)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* [Headless-Tutorials für AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)
 * [Ein Überblick über das Bereitstellen für AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Verwenden von Cloud Manager zur Bereitstellung von Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de)
 * [Integrieren des Cloud Manager-Git-Repositorys mit einem externen Git-Repository und Bereitstellen eines Projekts in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=de)
