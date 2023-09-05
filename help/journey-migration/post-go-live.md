@@ -2,10 +2,10 @@
 title: Nach der Live-Schaltung
 description: Erfahren Sie, wie Sie Probleme erkennen und die Leistung verbessern können.
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
+source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 74%
+source-wordcount: '483'
+ht-degree: 73%
 
 ---
 
@@ -51,7 +51,7 @@ Siehe [Entwickeln mit CRXDE Lite](/help/implementing/developing/tools/crxde.md) 
 
 Benutzer können auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
 
-Siehe [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md) Hier erfahren Sie, wie Sie über die Benutzeroberfläche oder die API über Cloud Manager auf Protokolle zugreifen und diese verwalten.
+Siehe [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md) , um zu erfahren, wie Sie über die Benutzeroberfläche oder die API über Cloud Manager auf Protokolle zugreifen und diese verwalten können.
 
 ## Kontaktieren des Supports {#contacting-support}
 
