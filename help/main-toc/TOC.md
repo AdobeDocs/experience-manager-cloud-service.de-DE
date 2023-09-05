@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: bb15e840071279dbdf8bd2bfe89d59c067898aca
+source-git-commit: 71e9325997dcb32e27758d23177670cc70381537
 workflow-type: tm+mt
-source-wordcount: '4258'
+source-wordcount: '4260'
 ht-degree: 93%
 
 ---
@@ -516,6 +516,7 @@ ht-degree: 93%
       + [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
       + [Einbetten des dynamischen Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md)
       + [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+      + [Anforderungsfehlerbericht für fehlgeschlagene Versand-URLs](/help/assets/dynamic-media/reporting-dm.md)
       + [Verwenden von Regelsätzen zum Konvertieren von URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
       + [Veröffentlichen von Dynamic Media-Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
       + [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
@@ -570,6 +571,7 @@ ht-degree: 93%
          + [Integrieren von AEM Forms as a Cloud Service mit Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Integrieren eines adaptiven Formulars mit Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Einbetten eines adaptiven Formulars in eine AEM Sites-Seite](/help/forms/embed-adaptive-form-aem-sites.md)
+         + [Einbetten des adaptiven Formulars basierend auf Kernkomponenten in eine externe Webseite](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
       + Formulardatenmodell {#use-form-data-model}
          + [Verbinden von Datenquellen mit Cloud Service](/help/forms/data-integration.md)
          + [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md)
@@ -583,20 +585,19 @@ ht-degree: 93%
    + Adaptive Formulare {#adaptive-forms-authoring}
       + [Erstellen eines adaptiven Formulars](/help/forms/create-an-adaptive-form.md)
       + [Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-      + Authoring adaptiver Formulare – Kernkomponenten {#authoring-adaptive-forms-core-components}
+      + Kernkomponenten {#authoring-adaptive-forms-core-components}
          + Erstellen eines adaptiven Formulars {#create-an-adaptive-form-on-forms-cs}
             + [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)
             + [Erstellen eines adaptiven Formularfragments](/help/forms/adaptive-form-fragments-core-components.md)
             + [Erstellen von Designs für ein adaptives Formular – Kernkomponenten](/help/forms/using-themes-in-core-components.md)
             + [Generieren eines Datensatzdokuments für adaptive Formulare](/help/forms/generate-document-of-record-core-components.md)
-            + [Erstellen eines adaptiven Formulars – Kernkomponenten auf einer AEM Sites-Seite](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Verwenden Sie maschinelle Übersetzung oder menschliche Übersetzung, um ein adaptives Formular zu übersetzen.](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Konfigurieren der Umleitungsseite oder Dankesnachricht](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Erstellen von Formularen mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
             + [Konfigurieren der Sendeaktion für ein adaptives Formular](/help/forms/configure-submit-actions-core-components.md)
             + [Verwenden von Google reCAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Hinzufügen eines benutzerdefinierten Fehler-Handlers in einem adaptiven Formular](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-      + Authoring adaptiver Formulare – Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
+      + Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
          + Konvertieren von PDF-Formularen in adaptive Formulare {#afcs}
             + [Einführung in den Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de)
             + [Konvertieren eines vorhandenen PDF-Formulars in ein adaptives Formular](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=de)
