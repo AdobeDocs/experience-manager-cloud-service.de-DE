@@ -5,14 +5,21 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 17%
+source-wordcount: '947'
+ht-degree: 19%
 
 ---
 
-# Verwenden von Google reCAPTCHA in einem AEM adaptiven Formular {#using-reCAPTCHA-in-adaptive-forms}
+# Verwenden von Google reCAPTCHA in einem AEM adaptiven Formular, das auf Kernkomponenten basiert {#using-reCAPTCHA-in-adaptive-forms}
+
+<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, auf die über unsere [Pre-Release-Kanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+| Gilt für | Artikel-Link |
+| -------- | ---------------------------- |
+| Adaptives Formular basierend auf Kernkomponenten | Dieser Artikel |
+| Adaptives Formular basierend auf Foundation-Komponenten | [Hier klicken](/help/forms/captcha-adaptive-forms.md) |
 
 CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine Herausforderung dar und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
 
@@ -106,3 +113,9 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **F: Kann ich mehrere Captcha-Komponenten in einem adaptiven Formular verwenden?**
 **Ans:** Die Verwendung von mehr als einer Captcha-Komponente in einem adaptiven Formular wird nicht unterstützt. Es wird außerdem nicht empfohlen, die Captcha-Komponente in einem Fragment oder einem Bereich zu verwenden, das für verzögertes Laden markiert ist.
 
+## Siehe auch
+
+* [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)
+* [Erstellen eines adaptiven Formularfragments](/help/forms/adaptive-form-fragments-core-components.md)
+* [Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Verwenden von Google reCAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms-core-components.md)
