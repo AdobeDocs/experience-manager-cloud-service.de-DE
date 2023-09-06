@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: e75c957e8e791ed991117f5cd54012c3a24a2958
+source-git-commit: 555873b15e3a748c95893a371925d3ab6e87ae67
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1934'
 ht-degree: 13%
 
 ---
@@ -144,9 +144,8 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **[Protect Ihrer Dokumente mit DocAssurance-APIs (Teil der Kommunikations-APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: Mit den DocAssurance-APIs können Sie vertrauliche Informationen schützen, indem Sie die Dokumente signieren und verschlüsseln. Durch Verschlüsselung werden die Inhalte eines Dokuments in ein unlesbares Format umgewandelt, sodass nur autorisierte Benutzer Zugriff erhalten. Diese befestigte Schutzschicht schützt nicht nur wertvolle Daten vor unbefugten Augen, sondern bietet auch Seelenfrieden. Mit den Signature-APIs kann Ihr Unternehmen die Sicherheit und den Datenschutz von Adobe PDF-Dokumenten schützen, die es verteilt und empfängt. Dieser Service verwendet digitale Signaturen und Zertifizierung, um sicherzustellen, dass nur die Empfänger, für die dies vorgesehen ist, die Dokumente ändern können.
 
-  <br> Sie können eine E-Mail von Ihrer offiziellen E-Mail-Adresse an senden. `aem-forms-early-adopter-program@adobe.com`  , um dem Programm der frühen Adopter beizutreten und Zugang zu dieser Funktion zu beantragen.  <br>  <br>
-
-
+      Sie können von Ihrer offiziellen E-Mail-ID aus unter &quot;aem-forms-early-adopter-program@adobe.com&quot;schreiben, um dem frühen Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern.
+  
 * **[Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de)**: Verwenden Sie Headless Adaptive Forms, um Ihren Entwicklern die Möglichkeit zu geben, interaktive Formulare zu erstellen, zu veröffentlichen und zu verwalten, auf die über APIs und nicht über eine herkömmliche grafische Benutzeroberfläche zugegriffen und mit denen interagiert werden kann. Adaptive Headless-Formulare unterstützen Sie bei Folgendem:
 
    * Erstellen hochwertiger Mehrkanal-Formulare in der gewünschten Programmiersprache
