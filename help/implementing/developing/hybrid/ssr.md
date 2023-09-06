@@ -2,10 +2,10 @@
 title: Single Page Applications (SPAs) und Server-seitiges Rendering
 description: Die Verwendung von Server-seitigem Rendering (SSR) in Ihrer SPA kann das anfängliche Laden der Seite beschleunigen und dann das weitere Rendering an den Client weitergeben.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 66c9e95f96c8ce181722488a34a175c80f6f917c
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 55%
+source-wordcount: '1518'
+ht-degree: 54%
 
 ---
 
@@ -48,6 +48,10 @@ In den folgenden Abschnitten wird erläutert, wie Sie mit Adobe I/O Runtime für
 >Adobe empfiehlt für jede Umgebung einen separaten Adobe I/O Runtime-Arbeitsbereich (Staging, Produktion, Tests usw.). Dies ermöglicht typische SDLC-Muster (System Development Life Cycle) mit verschiedenen Versionen einer einzelnen Anwendung, die in verschiedenen Umgebungen bereitgestellt werden. Siehe [CI/CD für App Builder-Anwendungen](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) für weitere Informationen.
 >
 >Pro Instanz (Autor, Veröffentlichung) ist kein separater Arbeitsbereich erforderlich, es sei denn, es gibt Unterschiede in der Laufzeitimplementierung pro Instanztyp.
+
+>[!NOTE]
+>
+>Cloud Manager unterstützt keine Bereitstellung in Adobe I/O Runtime. Daher muss Ihre eigene Infrastruktur eingerichtet werden, um SSR-Code in der Adobe I/O Runtime bereitzustellen.
 
 ## Remote Renderer-Konfiguration {#remote-content-renderer-configuration}
 
