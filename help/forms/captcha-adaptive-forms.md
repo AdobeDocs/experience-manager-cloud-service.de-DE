@@ -2,24 +2,26 @@
 title: Verwenden von reCAPTCHA in Adaptive Forms
 description: Erfahren Sie, wie Sie den Google reCAPTCHA-Dienst in Adaptive Forms konfigurieren.
 topic-tags: adaptive_forms, author
-source-git-commit: ad63083016f0f8c51ea336e37461562e61c02a8f
+source-git-commit: 58451648b120991a5e204044f8dd6aeeaf655d81
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1933'
 ht-degree: 74%
 
 ---
 
-# Verwenden von reCAPTCHA in Adaptive Forms{#using-reCAPTCHA-in-adaptive-forms}
+# Verwenden von reCAPTCHA in Adaptive Forms {#using-reCAPTCHA-in-adaptive-forms}
 
-<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, auf die über unsere [Pre-Release-Kanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
 
+| Gilt für | Artikel-Link |
+| -------- | ---------------------------- |
+| Adaptives Formular basierend auf Foundation-Komponenten | Dieser Artikel |
+| Adaptives Formular basierend auf Kernkomponenten | [Hier klicken](/help/forms/captcha-adaptive-forms-core-components.md) |
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
 | AEM as a Cloud Service | Dieser Artikel |
-
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
 
 CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine Herausforderung dar und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
 
