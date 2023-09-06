@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie ein adaptives Formular in eine externe Websei
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 62%
+source-wordcount: '979'
+ht-degree: 63%
 
 ---
 
@@ -99,14 +99,12 @@ Einbetten des adaptiven Formulars:
 
 Das adaptive Formular ist in die Webseite eingebettet. Beachten Sie Folgendes im eingebetteten adaptiven Formular:
 
-* Kopf- und Fußzeile im ursprünglichen adaptiven Formular sind nicht im eingebetteten Formular enthalten.
 * Entwürfe und übermittelte Formulare sind auf der entsprechenden Registerkarte im Forms Portal verfügbar.
 * Die im ursprünglichen adaptiven Formular konfigurierte Sendeaktion wird im eingebetteten Formular beibehalten.
 * Die Regeln für adaptive Formulare werden beibehalten und im eingebetteten Formular vollständig verwendet.
 * Erlebnis-Targeting und im ursprünglichen adaptiven Formular konfigurierte A/B-Tests funktionieren im eingebetteten Formular nicht.
 * Wenn Adobe Analytics im Originalformular konfiguriert ist, werden die Analysedaten auf dem Adobe Analytics-Server erfasst. Sie ist jedoch nicht im Forms-Analysebericht verfügbar.
-
-In Adaptive Forms basierend auf Kernkomponenten werden die Client-Bibliotheken (ClientLibs) zusammen mit den Kopf- und Fußzeilenkomponenten eines Formulars eingeschlossen und geladen. Wenn Sie also eine adaptive Forms, die auf Kernkomponenten basiert, in eine Webseite einbetten, enthält sie immer Kopf- und Fußzeile des Formulars.
+* In Adaptive Forms basierend auf Kernkomponenten werden die Client-Bibliotheken (ClientLibs) zusammen mit den Kopf- und Fußzeilenkomponenten eines Formulars eingeschlossen und geladen. Wenn Sie also eine adaptive Forms, die auf Kernkomponenten basiert, in eine Webseite einbetten, enthält sie immer Kopf- und Fußzeile des Formulars.
 
 ## Beispieltopologie {#sample-topology}
 
