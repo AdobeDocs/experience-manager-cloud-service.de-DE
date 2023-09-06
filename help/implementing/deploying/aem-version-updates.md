@@ -3,7 +3,7 @@ title: AEM-Versionsaktualisierungen
 description: Erfahren Sie, wie AEM as a Cloud Service fortlaufende Integration und Bereitstellung (CI/CD) verwendet, um Ihre Projekte auf dem neuesten Stand zu halten.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: ca91e969014415e872ecf8e42fe86ffc9ca41e10
+source-git-commit: 7cdbda468221c42325a957131c6817c9f85a574a
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 29%
@@ -42,7 +42,7 @@ Es gibt zwei Arten von AEM-Versionsaktualisierungen:
 
 ## Aktualisierungsfehler {#update-failure}
 
-AEM-Aktualisierungen durchlaufen eine intensive und vollautomatisierte Produktvalidierungs-Pipeline, die mehrere Schritte umfasst, um sicherzustellen, dass keine Unterbrechung des Services für in Produktion befindliche Systeme auftritt. Konsistenzprüfungen erlauben eine Überwachung des Zustands der Anwendung. Wenn diese Prüfungen bei einer AEM as a Cloud Service Aktualisierung fehlschlagen, wird die Veröffentlichung nicht fortgesetzt und die Adobe untersucht, warum die Aktualisierung dieses unerwartete Verhalten verursacht hat.
+AEM-Aktualisierungen durchlaufen eine intensive und vollautomatisierte Produktvalidierungs-Pipeline, die mehrere Schritte umfasst, um sicherzustellen, dass keine Unterbrechung des Services für in Produktion befindliche Systeme auftritt. Konsistenzprüfungen erlauben eine Überwachung des Zustands der Anwendung. Wenn diese Prüfungen bei einer AEM as a Cloud Service Aktualisierung fehlschlagen, wird die Veröffentlichung nicht fortgesetzt. Adobe untersucht dann, warum die Aktualisierung dieses unerwartete Verhalten verursacht hat.
 
 Wenn Sie eine neue Version eines benutzerdefinierten Codes von in Ihren Umgebungen bereitstellen, [Produkt- und benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) eine entscheidende Rolle dabei zu spielen, dass die Produktionssysteme auch nach einer Änderung stabil und funktionsfähig bleiben. Diese Tests werden auch beim Aktualisierungsprozess der AEM-Version genutzt.
 
@@ -55,28 +55,22 @@ Wenn eine automatische Aktualisierung einer Entwicklungsumgebung fehlschlägt, w
 
 ## Best Practices {#best-practices}
 
-* 
-   * **Nutzung der Staging-Umgebung**
-   * Verwenden Sie für lange QA-/UAT-Zyklen eine andere Umgebung (nicht Staging).
-   * Nachdem die Integritätstests auf der Bühne abgeschlossen sind, fahren Sie zur Überprüfung in der Produktion fort.
+* **Nutzung der Staging-Umgebung**
+* Verwenden Sie für lange QA-/UAT-Zyklen eine andere Umgebung (nicht Staging).
+* Nachdem die Integritätstests auf der Bühne abgeschlossen sind, fahren Sie zur Überprüfung in der Produktion fort.
 
-* 
-   * **Produktions-Pipeline**
-   * Vor Implementierung in Produktion pausieren.
-   * Wenn die Pipeline nach einer Staging-Bereitstellung abgebrochen wird, bedeutet dies, dass der Code ein &quot;Durchlauf&quot;und kein gültiger Kandidat für die Produktion ist, siehe [Konfigurieren einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+* **Produktions-Pipeline**
+* Vor Implementierung in Produktion pausieren.
+* Wenn die Pipeline nach einer Staging-Bereitstellung abgebrochen wird, bedeutet dies, dass der Code ein &quot;Durchlauf&quot;und kein gültiger Kandidat für die Produktion ist, siehe [Konfigurieren einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
 
-* 
-   * **Produktionsfremde Pipeline**
+* **Produktionsfremde Pipeline**
 * Konfigurieren [Produktionsfremde Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
-* 
-   * Beschleunigen Sie die Geschwindigkeit und Häufigkeit der Bereitstellung bei Fehlern in der Produktions-Pipeline.  Ermitteln Sie Probleme in Pipelines ohne Produktanzeigen, indem Sie Funktionstests für das Produkt, benutzerdefinierte Funktionstests und benutzerdefinierte UI-Tests aktivieren.
+* Beschleunigen Sie die Geschwindigkeit und Häufigkeit der Bereitstellung bei Fehlern in der Produktions-Pipeline.  Ermitteln Sie Probleme in Pipelines ohne Produktanzeigen, indem Sie Funktionstests für das Produkt, benutzerdefinierte Funktionstests und benutzerdefinierte UI-Tests aktivieren.
 
-* 
-   * **Inhaltskopie**
-   * Verwendung [Inhaltskopie](/help/implementing/developing/tools/content-copy.md) , um ähnliche Inhaltssätze in eine Umgebung ohne Produktionsumgebung zu verschieben.
+* **Inhaltskopie**
+* Verwendung [Inhaltskopie](/help/implementing/developing/tools/content-copy.md) , um ähnliche Inhaltssätze in eine Umgebung ohne Produktionsumgebung zu verschieben.
 
-* 
-   * **Automatisierte Funktionstests**
+* **Automatisierte Funktionstests**
 * Schließen Sie automatisierte Tests in Ihre Pipeline ein, um wichtige Funktionen zu testen.
 * [Kundenfunktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) und [Testen der benutzerdefinierten Benutzeroberfläche](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) blockieren, wenn sie fehlschlagen, wird AEM Veröffentlichung nicht durchgeführt.
 
