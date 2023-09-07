@@ -1,25 +1,25 @@
 ---
-title: Aufnahme von Inhalten in Target
-description: Erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte aus Ihrem Migrationssatz in eine Cloud Service-Instanz aufnehmen können.
+title: Erfassen von Inhalten in Cloud Service
+description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ihrem Migrationssatz in eine Ziel-Cloud Service-Instanz aufnehmen können.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 382d1ed93e9545127ebb54641657db365886503d
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 44%
+source-wordcount: '1954'
+ht-degree: 40%
 
 ---
 
-# Aufnahme von Inhalten in Target {#ingesting-content}
+# Erfassen von Inhalten in Cloud Service {#ingesting-content}
 
 ## Aufnahme-Prozess im Content Transfer Tool {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="Inhaltsaufnahme"
->abstract="Aufnahme bezieht sich auf die Aufnahme von Inhalten aus dem Migrationssatz in die Cloud Service-Zielinstanz. Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden."
+>abstract="Aufnahme bezieht sich auf die Aufnahme von Inhalten aus dem Migrationssatz in die Ziel-Cloud Service-Instanz. Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de" text="Auffüllaufnahme"
 
-Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool aufzunehmen:
+Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager zu erfassen:
 
 >[!NOTE]
 >Haben Sie ein Support-Ticket für diesen Aufnahmevorgang erstellt? Weitere Informationen zu diesen und anderen Überlegungen zur erfolgreichen Aufnahme finden Sie unter [Wichtige Überlegungen vor Verwendung des Content Transfer Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=de#important-considerations).
@@ -80,7 +80,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
    Additionally, click on **Customer Care** to log a ticket, as shown in the figure below. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
-   
+
    Also, see [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
 
 1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
@@ -128,7 +128,7 @@ Sie können eine Aufnahme nur dann in die Zielumgebung starten, wenn Sie zum lok
 
 ### Migrationsdienst kann nicht erreicht werden {#unable-to-reach-migration-service}
 
-Nachdem eine Aufnahme angefordert wurde, kann dem Benutzer eine Meldung wie die folgende angezeigt werden: &quot;Der Migrationsdienst in der Zielumgebung ist nicht erreichbar. Wenn ja, versuchen Sie es später erneut oder kontaktieren Sie den Support von Adobe.&quot;
+Nachdem eine Aufnahme angefordert wurde, kann dem Benutzer eine Meldung wie die folgende angezeigt werden: &quot;Der Migrationsdienst in der Zielumgebung ist nicht erreichbar. Wenn ja, versuchen Sie es später erneut oder kontaktieren Sie den Adobe-Support.&quot;
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 
@@ -141,7 +141,7 @@ Diese Meldung weist darauf hin, dass der Cloud Acceleration Manager nicht in der
 * AEM as a Cloud Service behält den Umgebungsstatus bei und muss gelegentlich den Migrationsdienst aus verschiedenen normalen Gründen neu starten. Wenn dieser Dienst neu gestartet wird, kann er nicht erreicht werden, ist aber schließlich verfügbar.
 * Es ist möglich, dass ein anderer Prozess in der Instanz ausgeführt wird. Wenn z. B. der Release-Server ein Update anwendet, ist das System möglicherweise ausgelastet und der Migrationsdienst ist regelmäßig nicht verfügbar. Daher wird dringend empfohlen, Aktualisierungen während einer Erfassung auszusetzen, da dies die Staging- oder Produktionsinstanz beschädigen kann.
 * Wenn eine [IP-Zulassungsliste wurde angewendet](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Cloud Manager verhindert, dass Cloud Acceleration Manager den Migrationsdienst erreicht. Eine IP-Adresse kann nicht für die Aufnahme hinzugefügt werden, da ihre Adresse dynamisch ist. Derzeit besteht die einzige Lösung darin, die IP-Zulassungsliste während der Aufnahme zu deaktivieren.
-* Es kann andere Gründe geben, die untersucht werden müssen. Wenn die Aufnahme weiterhin fehlschlägt, wenden Sie sich an die Kundenunterstützung von Adobe.
+* Es kann andere Gründe geben, die untersucht werden müssen. Wenn die Aufnahme weiterhin fehlschlägt, wenden Sie sich an die Adobe-Kundenunterstützung.
 
 ### Automatische Aktualisierungen über Release Orchestrator sind weiterhin aktiviert
 
@@ -181,4 +181,7 @@ Best Practices weisen darauf hin, dass bei einer Aufnahme mit wp=false und &quot
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie die Aufnahme von Inhalten in die Target-Komponente abgeschlossen haben, können Sie die Protokolle jedes Schritts (Extraktion und Aufnahme) anzeigen und nach Fehlern suchen. Weitere Informationen finden Sie unter [Anzeigen von Protokollen für einen Migrationssatz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=de).
+Wenn die Aufnahme erfolgreich war, beginnt AEM Indizierung automatisch. Siehe [Indizierung nach der Migration von Inhalten](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) für weitere Informationen.
+
+Nachdem Sie die Aufnahme von Inhalten in Cloud Service abgeschlossen haben, können Sie die Protokolle jedes Schritts (Extraktion und Aufnahme) anzeigen und nach Fehlern suchen. Weitere Informationen finden Sie unter [Anzeigen von Protokollen für einen Migrationssatz](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md).
+

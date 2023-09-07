@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 71e9325997dcb32e27758d23177670cc70381537
+source-git-commit: 6c43921b90daa64dd4695c569e6dcd6f23e464cb
 workflow-type: tm+mt
-source-wordcount: '4260'
+source-wordcount: '4265'
 ht-degree: 93%
 
 ---
@@ -229,8 +229,9 @@ ht-degree: 93%
          + [Migrieren geschlossener Benutzergruppen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
          + [Handhabung großer Content-Repositorys ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [Benutzerzuordnung und Prinzipalmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
-         + [Extrahieren von Inhalten aus der Quelle](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-         + [Aufnahme von Inhalten in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+         + [Extrahieren von Inhalten aus der Quelle  ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+         + [Erfassen von Inhalten in Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+         + [Indizierung nach der Migration von Inhalten](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
          + [Anzeigen von Protokollen für einen Migrationssatz](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [Löschen eines Migrationssatzes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
