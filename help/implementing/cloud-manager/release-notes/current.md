@@ -1,19 +1,18 @@
 ---
-title: Versionshinweise für Cloud Manager 2023.8.0 in Adobe Experience Manager as a Cloud Service
-description: Dies sind die Versionshinweise für Cloud Manager 2023.8.0 in AEM as a Cloud Service.
+title: Versionshinweise für Cloud Manager 2023.9.0 in Adobe Experience Manager as a Cloud Service
+description: Dies sind die Versionshinweise für Cloud Manager 2023.9.0 in AEM as a Cloud Service.
 feature: Release Information
-exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 99772a1a3faa454a9b07dd92c9e7622ddb37ce2d
+source-git-commit: dd52aef2f88cf64e8d9a32b1c8cafe4fcfbcb812
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '409'
 ht-degree: 21%
 
 ---
 
 
-# Versionshinweise für Cloud Manager 2023.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Versionshinweise für Cloud Manager 2023.9.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2023.8.0 in AEM as a Cloud Service.
+Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2023.9.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,12 +20,11 @@ Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2023.8.0 in AE
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version 2023.8.0 von Cloud Manager in AEM as a Cloud Service wurde am 10. August 2023 veröffentlicht. Die nächste Version wird am 7. September 2023 veröffentlicht.
+Die Version 2023.9.0 von Cloud Manager in AEM as a Cloud Service wurde am 7. September 2023 veröffentlicht. Die Veröffentlichung der nächsten Version ist für den 5. Oktober 2023 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
-* Beim Konfigurieren eines Inhalts, der auf [Inhalt kopieren,](/help/implementing/developing/tools/content-copy.md) [kontextbezogene Konfigurationen](/help/implementing/developing/introduction/configurations.md) sind jetzt in Inhaltssätzen in der Benutzeroberfläche zulässig.
-* Es wurden Verbesserungen vorgenommen, um die Verständlichkeit und das Erscheinungsbild von Fehlermeldungen in der Cloud Manager-Benutzeroberfläche zu verbessern.
+Diese Version konzentriert sich auf Fehlerbehebungen.
 
 ## Frühzeitige Annahme des Programms {#early-adoption}
 
@@ -55,12 +53,6 @@ Möchten Sie das neue Dashboard testen? Bitte senden Sie eine E-Mail an `aem-lig
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* Die **Umgebungen** Menü wird nun geschlossen, nachdem die **[Inhalt kopieren](/help/implementing/developing/tools/content-copy.md)** modal.
-* [Neuausführung einer Pipeline](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment) ist nicht mehr zulässig, wenn die vorherige Ausführung nicht über eine `commitId` wird auf den Build-Phase-Status gesetzt.
-* Für seltene Fehler wird jetzt eine verständlichere Meldung angezeigt, wenn ein Benutzer auf eine Pipeline in der **Aktivität** oder **Pipeline** Bildschirme.
-* Die `contentSetName` -Wert fehlt nicht mehr in den Protokollen und wird jetzt beim Starten einer [Inhaltskopie](/help/implementing/developing/tools/content-copy.md) Vorgang.
-* Unter bestimmten seltenen Umständen ist es nicht mehr möglich, zwei Ausführungen derselben Pipeline zu starten, die zu einem &quot;blockierten&quot;Zustand führen.
-* Wenn ein Zertifikat abläuft, werden die mit dem Zertifikat verknüpften Domänennamen und IP-Zulassungslisten nicht mehr aus dem CDN entfernt.
-   * In solchen Fällen ist die Site weiterhin erreichbar.
-   * [](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)Die Benutzeroberfläche von Cloud Manager bietet sichtbarere Warnhinweise, dass das SSL-Zertifikat bald abläuft.
-* Ein Problem mit dem AEM, den Zugriff auf einen Veröffentlichungsendpunkt zu verlieren, wurde in Situationen behoben, in denen Sites als Lösung für ein Programm &quot;Nur Assets&quot;hinzugefügt wurde.
+* Wenn ein Programm gelöscht wird, werden auch alle verknüpften, laufenden Pipelines gelöscht, um sicherzustellen, dass die Pipeline nicht fälschlicherweise als fehlgeschlagen gekennzeichnet ist.
+* Wenn alle Schritte einer Pipeline-Ausführung &quot;abgeschlossen&quot;sind, wird der Status der Pipeline gelegentlich als &quot;ausgeführt&quot;betrachtet, sodass sie sich in einem blockierten Zustand zu befinden scheint. Es wird nun als &quot;vollständig&quot;bezeichnet.
+* Bei Repository-Verzweigungen, die mit dem Code-Generator-Archetyp generiert wurden, schlägt die CI/CD-Pipeline fehl.
