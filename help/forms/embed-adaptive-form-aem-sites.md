@@ -5,10 +5,10 @@ description: Sie können die Komponente Adaptive Forms - Embed verwenden, um Ada
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
+source-git-commit: d9dee0b5a070da6a19004c749f69c724fff9d967
 workflow-type: tm+mt
-source-wordcount: '3158'
-ht-degree: 35%
+source-wordcount: '3177'
+ht-degree: 34%
 
 ---
 
@@ -259,6 +259,11 @@ Sie können die erweiterten Einstellungen der **[!UICONTROL Adaptive Formulare �
 * **Seitensprache verwenden**: Verwenden Sie das Gebietsschema der AEM Sites-Seite anstelle des Gebietsschemas des adaptiven Formulars. Diese Option gilt nur für adaptive Formulare (Foundation).
 * **Fokus auf Formular festlegen**: Wählen Sie diese Option aus, um den Fokus auf das erste Feld des adaptiven Formulars zu legen. Diese Option gilt nur für adaptive Formulare (Foundation).
 * **Design**: Wählen Sie ein Design aus, das die Formatierung für die Komponenten in Ihrem adaptiven Formular definiert. Zur Formatierung gehören Eigenschaften des Erscheinungsbildes, wie Schriftstil, Hintergrundfarbe, Abmessungen und Ausrichtung. Diese Option gilt nur für adaptive Formulare (Foundation).
+
+  >[!NOTE]
+  >
+  > Sie können die **Seitensprache verwenden**, **Fokus auf Formular festlegen** und **Design** nur für adaptive Formulare (Foundation).
+
 * **Das Formular deckt die gesamte Breite des Rahmens ab**: Ein Inline-Frame (iframe) ist ein HTML-Element, das ein adaptives Formular auf eine AEM Sites-Seite lädt.
 
    * Wenn die Variable **[!UICONTROL Das Formular deckt die gesamte Breite des Rahmens ab]** aktiviert ist, belegt ein adaptives Formular die gesamte Breite des Containers, in dem es platziert wird. In diesem Fall wird kein iframe zum Rendern des Formulars verwendet. Das Layout und Design eines adaptiven Formulars passen sich an die gesamte Breite des Containers an, sodass es responsiv ist und an verschiedene Bildschirmgrößen angepasst werden kann. Mit dieser Option können Sie mehrere adaptive Forms in eine AEM Sites-Seite einbetten.

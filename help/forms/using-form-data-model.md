@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a6e76d2b3650d57adafe543b2b694360e4bb4169
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 75%
+source-wordcount: '1244'
+ht-degree: 62%
 
 ---
 
@@ -146,3 +146,26 @@ Beispielsweise ruft folgende Regel einen Get-Service auf, für den die Mitarbeit
 ![invoke-service](assets/invoke-service.png)
 
 Darüber hinaus können Sie mithilfe der `guidelib.dataIntegrationUtils.executeOperation`-API ein JavaScript im Codeeditor für den Regeleditor schreiben. <!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
+
+### Formulardatenmodell mit benutzerdefinierten Funktionen aufrufen {#invoke-form-data-model-using-custom-functions}
+
+Sie können [Aufrufen eines Formulardatenmodells aus dem Regeleditor mithilfe benutzerdefinierter Funktionen](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). Um das Formulardatenmodell aufzurufen, fügen Sie der Zulassungsliste ein Formulardatenmodell hinzu. So fügen Sie ein Formulardatenmodell zu einer Zulassungsliste hinzu:
+
+1. Navigieren Sie zur Experience Manager-Webkonsole unter `https://server:host/system/console/configMgr`.
+1. Suchen **[!UICONTROL Whitelisting auf adaptiver Formularebene des Formulardatenmodells für den Dienstaufruf - Konfigurationsfactory]**.
+1. Klicks ![Plus-Symbol](/help/forms/assets/Smock_Add_18_N.svg) -Symbol, um die Konfiguration hinzuzufügen.
+1. Hinzufügen **[!UICONTROL Inhaltspfadmuster]** um den Speicherort Ihrer adaptiven Forms anzugeben.  Standardmäßig lautet der Wert `/content/forms/af/(.*)` , das alle adaptiven Forms umfasst. Sie können auch den Pfad für ein bestimmtes adaptives Formular angeben.
+1. Hinzufügen **[!UICONTROL Pfadmuster des Formulardatenmodells]** um den Speicherort des Formulardatenmodells anzugeben. Standardmäßig lautet der Wert `/content/dams/formsanddocuments-fdm/(.*)` , das das gesamte Formulardatenmodell umfasst. Sie können auch den Pfad für ein bestimmtes Formulardatenmodell angeben.
+1. Speichern Sie die Einstellungen.
+
+Die hinzugefügte Konfiguration wird unter dem **[!UICONTROL Whitelisting auf adaptiver Formularebene des Formulardatenmodells für den Dienstaufruf - Konfigurationsfactory]** -Option.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3423977/adaptive-forms-custom-function-rule-editor)
+
+>[!NOTE]
+>
+> So rufen Sie ein Formulardatenmodell über ein AEM Archetyp-Projekt über den Regeleditor mit benutzerdefinierten Funktionen auf:
+>
+>1. [Konfigurationsdatei erstellen](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
+>1. Legen Sie Eigenschaften von getContentPathPattern und getFormDataModelPathPattern fest.
+>1. Stellen Sie das Projekt bereit.
