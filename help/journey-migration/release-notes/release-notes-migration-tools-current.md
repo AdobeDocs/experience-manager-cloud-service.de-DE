@@ -1,37 +1,30 @@
 ---
-title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.07.0
-description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2022.07.0
+title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.09.0
+description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2022.09.0
 feature: Release Information
-exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: 88227693b7dfc3cbd30751718dc85e55ee67bb96
+source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 46%
+source-wordcount: '150'
+ht-degree: 38%
 
 ---
 
-# Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.07.0 {#release-notes}
+# Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.09.0 {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2022.07.0.
+Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2022.09.0.
 
-## Best Practices Analyzer {#bpa-release}
+## Content Transfer Tool {#ctt-release}
 
-### Veröffentlichungsdatum {#release-date-bpa}
+### Veröffentlichungsdatum {#release-date-ctt}
 
-Best Practices Analyzer v2.1.42 wurde am 06. Juli 2023 veröffentlicht.
+Die Version 3.0.0 des Content Transfer Tool wurde am 7. September 2023 veröffentlicht.
 
-### Neue Funktionen {#what-is-new-bpa}
+### Neue Funktionen {#what-is-new-ctt}
 
-* In dieser Version von Best Practices Analyzer wurden mehrere Best Practices-Muster hinzugefügt. Dazu gehören:
-   * Ermitteln der Mindestkonfiguration für Wartungsaufgaben
-   * Erkennung langwieriger/schwerer Abfragen
-   * Erkennen einer hohen Anzahl von Autoren-Workflows im ausgeführten oder veralteten Zustand
-   * Erkennen der OSGI-Apache Sling-Auftragskonfiguration
-   * Erkennung benutzerdefinierter Guava-Caches
+Das Content Transfer Tool wurde erheblich verbessert und bietet nun folgende Vorteile:
+* Verringerte Übertragungszeit bei der Migration einer Teilmenge eines Inhalts-Repositorys durch Nutzung von AzCopy, um nur die erforderlichen Blob-IDs zu kopieren, anstatt alle Blob-IDs zu kopieren
+* Schnellere differenzielle Auffüllungen von Inhalten mit Oak-Upgrade
+* Die Stabilität wurde verbessert, indem der Indizierungsprozess vom Inhaltserfassungsprozess getrennt wurde. Im Falle einer fehlgeschlagenen Indizierung müssen Inhalte nicht erneut erfasst werden. Nur die Indizierung startet automatisch neu, wodurch viel Zeit und Aufwand eingespart wird.
 
-### Fehlerbehebungen {#bug-fixes-bpa}
-
-* BPA wurde verbessert, um Fehler bei der Generierung von Berichten mit hoher Anzahl von Ergebnissen zu vermeiden.
-* BPA wurde verbessert, um Escape-Zeichen in Pfaden zu erkennen, um Inhaltsaufnahmefehler bei der Migration von Inhalten auf AEM as a Cloud Service zu verhindern.
 
 
