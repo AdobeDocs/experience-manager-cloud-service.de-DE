@@ -8,10 +8,10 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
+source-git-commit: 96b3986f73ab71bad02b00ddc699aeecd498aebd
 workflow-type: tm+mt
-source-wordcount: '4271'
-ht-degree: 93%
+source-wordcount: '4284'
+ht-degree: 92%
 
 ---
 
@@ -572,6 +572,8 @@ ht-degree: 93%
          + [Integrieren von AEM Forms as a Cloud Service mit Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [Integrieren von AEM Forms as a Cloud Service mit DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
          + [Integrieren von AEM Forms as a Cloud Service mit Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+         + [Integrieren von Adaptive Forms in Adobe Analytics](/help/forms/forms-experience-cloud-setup-automation.md)
+         + [Anzeigen und Verstehen des adaptiven Forms Analytics-Berichts](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [Integrieren eines adaptiven Formulars mit Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Einbetten eines adaptiven Formulars in eine AEM Sites-Seite](/help/forms/embed-adaptive-form-aem-sites.md)
          + [Einbetten des adaptiven Formulars basierend auf Kernkomponenten in eine externe Webseite](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
