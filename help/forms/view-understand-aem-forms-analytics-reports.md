@@ -5,15 +5,17 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 96b3986f73ab71bad02b00ddc699aeecd498aebd
+source-git-commit: b44b54a88b87dc391dfeb51fb8b83095c274bd38
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
 
 
 # Anzeigen und Verstehen der Analyseberichte für adaptive Forms {#viewing-and-understanding-aem-forms-analytics-reports}
+
+<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, auf die über unsere [Pre-Release-Kanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 In der sich schnell entwickelnden Landschaft der digitalen Analyse ist es unerlässlich, sich an globale Trends zu halten, um fundierte Entscheidungen zu treffen und digitale Erfahrungen zu optimieren. Um dies zu beheben, integrieren Adaptive Forms nahtlos in Adobe Analytics , um Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente zu erfassen und zu verfolgen. Ziel der Analyse dieser Metriken ist es, datengesteuerte Entscheidungen mithilfe von Metriken und Analysen zu treffen, um die Benutzerfreundlichkeit und Effektivität der Formulare zu verbessern.
 
