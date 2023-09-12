@@ -2,21 +2,24 @@
 title: Integrieren von AEM Forms mit Adobe Analytics
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+hidefromtoc: true
+source-git-commit: d97b17981e82323317e34185e47ee3f4224795b3
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 99%
+source-wordcount: '1743'
+ht-degree: 83%
 
 ---
 
-# Integrieren mit [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
+# Integrieren von AEM Forms mit [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-AEM Forms lässt sich mit [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=de) integrieren, damit Sie Leistungsmetriken für Ihre veröffentlichten Formulare erfassen und verfolgen können. Ziel der Analyse dieser Metriken ist es, Geschäftsanwendern Einblicke in das Verhalten der Endbenutzer zu geben und das Erlebnis der Datenerfassung zu optimieren. Sie können das Verhalten sowohl angemeldeter als auch nicht angemeldeter (anonymer) Benutzer über Adobe Analytics für adaptive Formulare erfassen und verfolgen.
+<span class="preview"> Eine nahtlose und schnellere Integration adaptiver Formulare in Adobe Analytics finden Sie unter [Aktivieren Sie Adobe Analytics für ein adaptives Formular mithilfe der Automatisierung des Experience Cloud-Setups.](/help/forms/forms-experience-cloud-setup-automation.md). </span>
+
+AEM Forms lässt sich mit [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=de) integrieren, damit Sie Leistungsmetriken für Ihre veröffentlichten Formulare erfassen und verfolgen können. Ziel dieser Analyse ist es, Geschäftsbenutzern die Möglichkeit zu geben, Einblicke in das Verhalten von Endbenutzern zu gewinnen und die Datenerfassung zu optimieren. Sie können das Verhalten von angemeldeten und nicht angemeldeten (anonymen) Benutzern über Adobe Analytics for Adaptive Forms erfassen und verfolgen.
 
 Nachdem Sie die in diesem Artikel erwähnten Aktionen ausgeführt haben, können Sie Berichte konfigurieren und in [!DNL Adobe Analytics] anzeigen, wie im folgenden Video gezeigt:
 
@@ -38,7 +41,7 @@ Sie können [!DNL Adobe Analytics] verwenden, um Interaktionsmuster zu entdecken
 
 * **Speicherungen**: Angabe, wie oft Benutzer ein Formular im Formularportal speichern.
 
-Zusätzlich zu diesen vorkonfigurierten Ereignissen können Sie mit dem Regeleditor benutzerdefinierte Ereignisse in adaptiven Formularen definieren und diese Ereignisse Ereignissen in [!DNL Adobe Analytics] zuordnen.
+Zusätzlich zu diesen vordefinierten Ereignissen können Sie benutzerdefinierte Ereignisse in adaptiven Formularen mithilfe eines Regeleditors definieren und diese Ereignisse den Ereignissen in [!DNL Adobe Analytics]
 
 Die folgende Abbildung veranschaulicht die Aktionen, die Sie durchführen müssen, damit Sie Berichte in [!DNL Adobe Analytics] anzeigen können:
 
@@ -167,7 +170,7 @@ Führen Sie die folgenden Schritte aus, um Regeln auf der Grundlage der Erweiter
 1. Wählen Sie als Aktionstyp **[!UICONTROL Variablen löschen]** aus. Tippen Sie auf **[!UICONTROL Änderungen beibehalten]**. Nachdem Sie diese Schritte durchgeführt haben, wird der Abschnitt **[!UICONTROL Aktionen]** wie folgt angezeigt:
    ![Konfiguration von Aktionen](assets/actions-config.png)
 
-   Passen Sie den Abschnitt **[!UICONTROL Aktionen]** Ihren Anforderungen entsprechend an. Sie können beispielsweise zwei Schritte **Beacon senden** in einem Aktionsfluss definieren, um in einem Schritt Daten an [!DNL Adobe Analytics] zu senden und als Seitenansicht zu behandeln und im zweiten Schritt Daten an [!DNL Adobe Analytics] zu senden und nicht als Seitenansicht zu behandeln.
+   Passen Sie den Abschnitt **[!UICONTROL Aktionen]** Ihren Anforderungen entsprechend an. Sie können beispielsweise zwei **Beacon senden** Schritte in einem Aktionsfluss zum Senden von Daten an [!DNL Adobe Analytics] und behandeln sie als Seitenansicht in einem Schritt und senden Daten an [!DNL Adobe Analytics] und behandeln sie nicht als Seitenansicht im zweiten Schritt.
 
    ![Konfiguration von Aktionen](assets/actions-config-2.png)
 
@@ -192,13 +195,13 @@ Führen Sie zur Veröffentlichung der Konfiguration folgende Schritte aus:
 
 1. Tippen Sie im Abschnitt **[!UICONTROL Entwicklung]** auf ![Weitere Optionen](assets/more-options-icon.svg) und dann auf **[!UICONTROL Genehmigen und zur Produktion veröffentlichen]**.
 
-1. Bestätigen Sie die Änderungen. Der Veröffentlichungsfluss wird kurz darauf im Abschnitt **[!UICONTROL Veröffentlicht]** angezeigt.
+1. Vergewissern Sie sich, dass die Änderungen und der Veröffentlichungsfluss bald im **[!UICONTROL Veröffentlicht]** Abschnitt.
 
 ![Flüsse veröffentlichen](assets/publish-flow.png)
 
 ## 2. Konfiguration von AEM Forms {#configure-aem-forms}
 
-Bevor Sie eine Adobe Launch-Konfiguration erstellen, erstellen Sie eine [Adobe IMS-Konfiguration mit Adobe Launch als Cloud-Lösung](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=de).
+Erstellen Sie vor der Erstellung einer Adobe Launch-Konfiguration eine [Adobe IMS-Konfiguration mit Adobe Launch als Cloud-Lösung](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=de).
 
 ### Erstellen einer Adobe Launch-Konfiguration {#create-adobe-launch-configuration}
 
@@ -222,7 +225,7 @@ Führen Sie die folgenden Schritte aus, um eine Adobe Launch-Konfiguration zu er
 
 ### Aktivieren von [!DNL Adobe Analytics] für ein adaptives Formular {#enable-analytics-adaptive-form}
 
-Verwenden der [!DNL Adobe Launch]-Konfiguration in einem vorhandenen adaptiven Formular:
+So verwenden Sie die [!DNL Adobe Launch] Konfiguration in einem vorhandenen adaptiven Formular:
 
 1. Gehen Sie in der AEM Forms-Autoreninstanz zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente]**.
 1. Wählen Sie das adaptive Formular aus und tippen Sie auf **[!UICONTROL Eigenschaften]**.
@@ -234,11 +237,11 @@ Nachdem Sie [!DNL Adobe Analytics] für ein adaptives Formular aktiviert haben, 
 
 ### Erstellen von Regeln zur Erfassung benutzerdefinierter Ereignisse (optional) {#capture-custom-events}
 
-Erstellen Sie mit dem Regeleditor Regeln für bestimmte Felder eines adaptiven Formulars, um Analytics-Daten aus einem adaptiven Formular an [!DNL Adobe Analytics] zu senden.
+Erstellen Sie Regeln für bestimmte Felder eines adaptiven Formulars mithilfe eines Regeleditors, um Analytics-Daten von einem adaptiven Formular an zu senden. [!DNL Adobe Analytics].
 
 In einem zweistufigen Prozess definieren Sie eine Regel für ein Feld in einem adaptiven Formular. Die Regel löst ein Ereignis aus. Der Name des Ereignisses wird einem benutzerdefinierten Erfassungsereignis in Adobe Launch zugeordnet.
 
-So erstellen Sie mit dem Regeleditor Regeln in einem adaptiven Formular:
+So erstellen Sie Regeln mithilfe eines Regeleditors in einem adaptiven Formular:
 
 1. Tippen Sie auf das Feld und wählen Sie ![Regeleditor](assets/rule-editor-icon.svg), um die Seite mit dem Regeleditor zu öffnen.
 1. Definieren Sie eine Bedingung im Abschnitt [!UICONTROL Wenn] der Regel.
@@ -259,7 +262,7 @@ So ordnen Sie das Ereignis einem benutzerdefinierten Erfassungsereignis in [!DNL
 
 1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Ereignistyp]** die Option **[!UICONTROL Benutzerdefiniertes Ereignis erfassen]** aus.
 
-1. Geben Sie den Namen des Ereignisses an, den Sie in Schritt 4 beim Erstellen einer Regel mit dem Regeleditor angegeben haben.
+1. Geben Sie den Namen des Ereignisses an, das Sie beim Erstellen einer Regel mit dem Regeleditor in Schritt 4 angegeben haben.
 
 1. Tippen Sie auf **Änderungen beibehalten** und führen Sie die restlichen unter [Regeln konfigurieren](#configure-rules) angegebenen Aktionen aus.
 
@@ -281,7 +284,7 @@ Nachdem Sie ein adaptives Formular zum Senden von Ereignisdaten an [!DNL Adobe A
 
 1. Tippen Sie auf ![Visualisierungen](assets/visualization-icon.svg) und legen Sie einen Diagrammtyp im Abschnitt „Freiform“ ab. In ähnlicher Weise können Sie mehrere Diagrammtypen zum Abschnitt „Freiform“ hinzufügen.
 
-1. Drücken Sie die Tasten Strg+S und geben Sie einen Namen an, um das Projekt zu speichern.
+1. Tippen Sie auf die Tasten Strg + S und geben Sie einen Namen an, um das Projekt zu speichern.
 
 <!--
 
