@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie in der Admin Console Benutzerprofile erstelle
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: 6764fe48068325dfb7ed84cf7834c7eb5f25fb48
+source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 97%
+source-wordcount: '989'
+ht-degree: 95%
 
 ---
 
@@ -22,6 +22,10 @@ Von Zeit zu Zeit muss Adobe Benutzer bezüglich ihrer AEM as a Cloud Service-Umg
 
 * **Benachrichtigung bei Vorfällen**: Diese Benachrichtigungen werden während eines Vorfalls gesendet oder wenn Adobe ein potenzielles Verfügbarkeitsproblem bei Ihrer AEM as a Cloud Service-Umgebung erkannt hat.
 * **Proaktive Benachrichtigung**: Diese Benachrichtigungen werden gesendet, wenn ein Mitglied des Adobe-Support-Teams Anleitungen zu einer potenziellen Optimierung oder Empfehlung bereitstellen möchte, die für Ihre AEM as a Cloud Service-Umgebung von Vorteil sein kann.
+
+>[!NOTE]
+>
+>Das Zuweisen von Gruppen zu proaktiven Benachrichtigungen wird nicht unterstützt. Stattdessen müssen Sie den Produktprofilen Benutzer direkt zuweisen.
 
 Damit die richtigen Personen diese Benachrichtigungen erhalten, müssen Sie Benutzerprofile konfigurieren und zuweisen, wie in diesem Dokument beschrieben.
 
