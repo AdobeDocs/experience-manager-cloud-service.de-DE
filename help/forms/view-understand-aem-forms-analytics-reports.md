@@ -5,9 +5,9 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b44b54a88b87dc391dfeb51fb8b83095c274bd38
+source-git-commit: 39ea959cb0a0568fd94ca455be935228479c0415
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Für den AEM Forms Analytics-Bericht integrieren Sie zunächst Adobe Analytics �
 1. Wechseln Sie in Ihrer AEM-Instanz zu **[!UICONTROL Forms]** >> **[!UICONTROL Forms und Dokument]**.
 1. Wählen Sie das Formular aus. Sie sehen, dass Adobe Analytics wie auf der linken Seite gezeigt integriert ist und für Adobe Analytics aktiviert ist.
 
-   ![Bericht anzeigen](assets/activ-aa.png)
+   ![Bericht anzeigen](assets/activ-aa.png){width="100%"}
 
 1. Klicks **Adobe Analytics** , um Ihren Bericht anzuzeigen und Leistungsdaten zu analysieren.
 
@@ -50,7 +50,7 @@ Sie enthält die Metriken Formularwiedergaben, Formularübermittlungen, Validier
 
 * **Unique Visitors**: Unique Visitors stellen die Anzahl der Wiedergaben des Formulars durch einen Besucher dar. Weitere Informationen zu Unique Visitors finden Sie unter [Unique Visitors, Besuche und Kundenverhalten](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
 
-  ![Forms-Leistung](assets/forms-performance.png)
+  ![Forms-Leistung](assets/forms-performance.png){width="100%"}
 
 ### **Besucher Ihrer Formulare** {#visitors-to-your-forms}
 
@@ -59,46 +59,46 @@ So erhalten Sie wertvolle Einblicke in die Besucheraktivität in Ihren Formulare
 * **Besuche und Übermittlungen**: Beschreibt die Häufigkeit von Besuchen bei Formularen in einem Datumsbereich und die entsprechende Anzahl von Formularübermittlungen, um weitere Informationen zu diesem Klick zu erhalten. [Besuche](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
 * **Unique Visitors und ihre Gesamtbesuche**: Dabei wird zwischen den neuen und den wiederkehrenden Benutzern unterschieden. So kann ein Besucher beispielsweise jeden Tag einen Monat lang zu Ihrer Site kommen, zählt jedoch immer noch als einzelner Unique Visitor. Besuch [Unique Visitors](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html) für detaillierte Informationen.
 
-  ![Forms-Besucher](assets/forms-visitors.png)
+  ![Forms-Besucher](assets/forms-visitors.png){width="100%"}
 
 ### **Gerätetyp** {#device-type}
 
 Gerätetyp hilft Ihnen dabei, den Gerätetyp zu identifizieren, der für den Zugriff auf Ihre Formulare verwendet wird. Der Gerätetyp wird als Mobilgerätetyp kategorisiert. In diesem Fall ist es beispielsweise Mobilgerätetyp: Andere und Mobilgerätetyp: Mobiltelefon. Zu den verschiedenen Arten von Mobilgeräten gehören Mobiltelefon, Tablet, Medienplayer, Gaming-Konsole und mehr.
 
-![Gerätetyp](assets/device-type.png)
+![Gerätetyp](assets/device-type.png){width="100%"}
 
 ### **Geografische Aufgliederung** {#geographical-breakdown}
 
 Er zeigt den Speicherort an, von dem aus auf die Forms zugegriffen wird. Sie enthält regionsspezifische Informationen zu Formularbenutzern. Sie können beispielsweise sehen, dass eine regionsspezifische Information über einen Formularbenutzer Indien ist, wie in der Abbildung dargestellt.
 
-![geographische Aufschlüsselung](assets/geographical-breakdown.png)
+![Geografische Aufgliederung](assets/geographical-breakdown.png){width="100%"}
 
 ### **Top-Quellen für Traffic und beliebte Formulare** {#top-sources-of-traffic-and-popular-forms}
 
 Auf diese Weise können Sie die primäre Quelle oder den Link identifizieren, von dem aus Ihre Formulare referenziert werden. Im folgenden Bild sehen Sie beispielsweise Suchinstanzen für Ihre adaptiven Formulare mit 18,9 % **Eingegeben/mit Lesezeichen versehen**, 70,49% basierend auf **Suchmaschinen**, und 24 % stammen aus **Andere Websites**. Sie können Dimensionselemente basierend auf Ihren Anforderungen definieren. Außerdem können Sie herausfinden, welche die am häufigsten besuchten oder beliebtesten Formulare sind.
 
-![Referred Sites](assets/referred-sites.png)
+![Referrer Sites](assets/referred-sites.png){width="100%"}
 
 ### **Benutzeraktivität in Top-Formularen** {#user-activity-on-top-forms}
 
 Eine umfassende Ansicht der Benutzerinteraktion mit Feldbesuchen, Formularwiedergaben, Überprüfungsfehlern, abgebrochenen Formularen und Formularübermittlungen bietet Einblicke in die am aktivsten Formulare. In der unten stehenden Abbildung sehen Sie, dass das Antragsformular basierend auf den Formularereignismetriken die aktivste ist.
 
-![user-activity](assets/user-activity.png)
+![Benutzeraktivität](assets/user-activity.png){width="100%"}
 
 ### **Zeitleiste für die Formularbesuchszeit** {#timeline-for-time-spent-on-forms}
 
 Es ist die Zeit, die Benutzer mit der Zeit auf Ihre Formulare verbringen, um Interaktionsmuster zu identifizieren.
 
-![Besuchszeit für Formulare](assets/time-spent-on-forms.png)
+![Besuchszeit für Formulare](assets/time-spent-on-forms.png){width="100%"}
 
 ### **Bereiche, in denen Besucher beim Ausfüllen des Formulars Hilfe benötigen** {#areas-requiring-assistance}
 
 Metriken wie Hilfeansichten, Validierungsfehler und Feldbesuche zeigen, wo Benutzer Hilfe benötigen oder wie Fehler in Feldern verfolgt werden können. In der Abbildung unten sehen Sie dies beispielsweise in einem Formular mit Feldern wie **Vollständiger Name**, **Telefonnummer**, **DoB**. Die **Vollständiger Name** -Feld 12 Besuche, von 12 Besuchen 8 Besuche haben einen Validierungsfehler und 1 angeklicktes Hilfesymbol für die Hilfeansicht in diesem Feld. Sie können die Metrikdaten für andere Formularfelder anzeigen.
 
-![unterstützende Gebiete](assets/assisting-areas.png)
+![Fördergebiete](assets/assisting-areas.png){width="100%"}
 
 ### **Das letzte Formularfeld, das Besucher angezeigt haben, bevor sie das Formular verlassen haben** {#last-form-field-that-visitors-viewed}
 
 Sie können damit die Formularfelder analysieren, in denen die Benutzer Zeit verbracht haben, bevor sie das Formular verlassen haben. Beispiel: In der unten stehenden Abbildung sind von 5 verlassenen Formularen 2 im Feld übrig. **Vollständiger Name**, 2 links im Feld **Telefonnummer** und 1 im Feld links **Texteingabe**.
 
-![field-visitors](assets/field-visitors.png)
+![Feldbesucher](assets/field-visitors.png){width="100%"}
