@@ -1,9 +1,9 @@
 ---
 title: Konfigurieren von Traffic-Filterregeln (mit WAF-Regeln)
 description: Traffic-Filterregeln (mit WAF-Regeln) zum Filtern des Traffics verwenden
-source-git-commit: dc0c7e77bb4bc5423040364202ecac3c59adced0
+source-git-commit: b1b184b63ab6cdeb8a4e0019c31a34db59438a3d
 workflow-type: tm+mt
-source-wordcount: '2690'
+source-wordcount: '2709'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,8 @@ Traffic-Filterregeln können für alle Cloud-Umgebungstypen (RDE, dev, stage, pr
    ```
    kind: "CDN"
    version: "1"
-   envType: "dev"
+   metadata:
+     envTypes: ["dev"]
    data:
      trafficFilters:
        rules:
@@ -94,13 +95,14 @@ Im Folgenden finden Sie ein Beispiel für einen Satz von Traffic-Filterregeln, d
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "path-rule"
         when: { reqProperty: path, equals: /block-me }
-        action: 
+        action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
         when: { reqProperty: path, like: "*" }
@@ -225,7 +227,7 @@ Die `wafFlag` -Eigenschaft kann Folgendes umfassen:
 
 * Wenn eine Regel abgeglichen und blockiert wird, antwortet das CDN mit einer `406` Rückgabe-Code.
 
-* Die Konfigurationsdateien sollten keine Geheimnisse enthalten, da sie von allen Benutzern gelesen werden können, die Zugriff auf das Git-Repository haben
+* Die Konfigurationsdateien sollten keine Geheimnisse enthalten, da sie von allen Benutzern gelesen werden können, die Zugriff auf das Git-Repository haben.
 
 ## Regelbeispiele {#examples}
 
@@ -238,13 +240,14 @@ Diese Regel blockiert Anforderungen aus IP 192.168.1.1:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
        - name: "block-request-from-ip"
          when: { reqProperty: clientIp, equals: "192.168.1.1" }
-         action: 
+         action:
            type: block
 ```
 
@@ -255,7 +258,8 @@ Diese Regel blockiert Anforderungen für den Pfad `/helloworld` bei Veröffentli
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
@@ -265,7 +269,7 @@ data:
             - { reqProperty: path, equals: /helloworld }
             - { reqProperty: tier, equals: publish }
             - { reqHeader: user-agent, matches: '.*Chrome.*'  }
-           action: 
+           action:
              type: block
 ```
 
@@ -276,17 +280,18 @@ Diese Regel blockiert Anforderungen, die den Abfrageparameter enthalten `foo`, a
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "block-request-that-contains-query-parameter-foo"
         when: { queryParam: url-param, equals: foo }
-        action: 
+        action:
           type: block
       - name: "allow-all-requests-from-ip"
         when: { reqProperty: clientIp, equals: 192.168.1.1 }
-        action: 
+        action:
           type: allow
 ```
 
@@ -297,13 +302,14 @@ Diese Regel blockiert Anforderungen an den Pfad /block-me und blockiert alle Anf
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "path-rule"
         when: { reqProperty: path, equals: /block-me }
-        action: 
+        action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
         when: { reqProperty: path, like: "*" }
@@ -319,7 +325,8 @@ Diese Regel blockiert den Zugriff auf OFAC-Länder:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -352,20 +359,22 @@ Manchmal ist es wünschenswert, Traffic, der mit einer Regel übereinstimmt, nur
 
 | **Eigenschaft** | **Typ** | **Standard** | **BEDEUTUNG** |
 |---|---|---|---|
-| limit | Ganzzahl von 10 bis 10000 | erforderlich | Anforderungsrate in Anforderungen pro Sekunde, für die die Regel ausgelöst wird |
-| window | Ganzzahl-Enum: 1, 10 oder 60 | 10 | Sampling-Fenster in Sekunden, für die die Anforderungsrate berechnet wird |
-| Sanktion | Ganzzahl von 60 bis 3600 | 300 (5 Minuten) | Ein Zeitraum in Sekunden, für den übereinstimmende Anforderungen blockiert werden (auf die nächste Minute gerundet) |
+| limit | Ganzzahl von 10 bis 10000 | erforderlich | Anforderungsrate in Anforderungen pro Sekunde, für die die Regel ausgelöst wird. |
+| window | Ganzzahl-Enum: 1, 10 oder 60 | 10 | Stichprobenfenster in Sekunden, für die die Anforderungsrate berechnet wird. |
+| Sanktion | Ganzzahl von 60 bis 3600 | 300 (5 Minuten) | Ein Zeitraum in Sekunden, für den übereinstimmende Anforderungen blockiert werden (auf die nächste Minute gerundet). |
+| groupBy | array[Getter] | keine | Der Zähler der Ratenbegrenzer wird durch eine Reihe von Anforderungseigenschaften aggregiert (z. B. clientIp). |
 
 ### Beispiele {#ratelimiting-examples}
 
 **Beispiel 1**
 
-Diese Regel blockiert einen Client für 5 m, wenn er in den letzten 60 Sek. 100 Req/Sek. überschreitet
+Diese Regel blockiert einen Client für 5 m, wenn er in den letzten 60 Sekunden 100 Req/Sek übersteigt:
 
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     - name: limit-requests-client-ip
@@ -383,18 +392,19 @@ data:
 
 **Beispiel 2**
 
-Blockanfragen für 60 s auf dem Pfad /critical/resource , wenn er in den letzten 60 Sekunden 100 Req/Sek überschreitet
+Blockanfragen für 60 s für den Pfad /critical/resource , wenn er in den letzten 60 Sekunden 100 Req/Sek überschreitet:
 
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: rate-limit-example
         when: { reqProperty: path, equals: /critical/resource }
-        action: 
+        action:
           type: block
         rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
@@ -418,7 +428,7 @@ Zum Beispiel:
 Die Regeln verhalten sich wie folgt:
 
 * der vom Kunden deklarierte Regelname aller übereinstimmenden Regeln wird im Attribut stimmt überein aufgeführt.
-* Das Aktionsattribut gibt an, ob die Regeln die Wirkung hatten, zu blockieren, zu erlauben oder zu protokollieren
+* Das Aktionsattribut gibt an, ob die Regeln blockiert, zugelassen oder protokolliert wurden.
 * Wenn die WAF lizenziert und aktiviert ist, listet das waf -Attribut alle WAF-Regeln (z. B. SQLI; beachten Sie, dass diese unabhängig vom vom vom Kunden deklarierten Namen sind) auf, die erkannt wurden, unabhängig davon, ob die WAF-Regeln in der Konfiguration aufgelistet waren.
 * Wenn keine vom Kunden deklarierten Regeln übereinstimmen und keine WAF-Regeln übereinstimmen, ist die Regelattributeigenschaft leer.
 
@@ -430,7 +440,8 @@ Das folgende Beispiel zeigt ein Beispiel für cdn.yaml und zwei CDN-Protokollein
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -490,7 +501,7 @@ Nachfolgend finden Sie eine Liste der in CDN-Protokollen verwendeten Feldnamen s
 
 | **Feldname** | **Beschreibung** |
 |---|---|
-| *timestamp* | Der Zeitpunkt, zu dem die Anfrage nach TLS-Beendigung gestartet wurde |
+| *timestamp* | Der Zeitpunkt, zu dem die Anfrage nach TLS-Beendigung gestartet wurde. |
 | *ttfb* | Abkürzung für *Zeit bis zum ersten Byte*. Das Zeitintervall zwischen der Anfrage begann bis zu dem Punkt, an dem der Antworttext mit dem Streaming begann. |
 | *cli_ip* | Die Client-IP-Adresse. |
 | *cli_country* | Zweibuchstaben [ISO 3166-1](https://de.wikipedia.org/wiki/ISO_3166-1) Alpha-2-Ländercode für das Client-Land. |
