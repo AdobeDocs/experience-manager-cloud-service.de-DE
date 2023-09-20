@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: ht
-source-wordcount: '1205'
-ht-degree: 100%
+source-git-commit: 56a4b03e78e835108aa57fdb241803e75b867260
+workflow-type: tm+mt
+source-wordcount: '1263'
+ht-degree: 95%
 
 ---
 
@@ -87,6 +87,16 @@ Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um die veröffentli
 
 ![bp_landingpage](assets/bp_landingpage.png)
 
+>[!NOTE]
+>
+> * Die vorhandenen Benutzer, die Teil der DAM-Benutzergruppe sind, haben Lesezugriff auf den Pfad &quot;/conf/global/settings/cloudconfigs/mediaportal&quot;
+>* Die neuen Benutzer (oder Benutzer ohne Administratorrechte) benötigen die folgenden Berechtigungen, um auf dem Brand Portal zu veröffentlichen.
+> Pfade:
+> &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; : jcr:read
+>/libs : jcr:read
+>/conf : jcr:read
+>/content : jcr:read , crx:replicate
+>/content/dam/ : jcr:read ,Modify , crx:replicate
 
 ## Veröffentlichen von Ordnern in Brand Portal {#publish-folders-to-brand-portal}
 
@@ -104,7 +114,7 @@ Sie können Asset-Ordner sofort veröffentlichen oder deren Veröffentlichung au
 
    * Wählen Sie in der Symbolleiste **[!UICONTROL Quick Publish]** aus.
 
-      Wählen Sie im Menü **[!UICONTROL In Brand Portal veröffentlichen]** aus.
+     Wählen Sie im Menü **[!UICONTROL In Brand Portal veröffentlichen]** aus.
 
    * Wählen Sie in der Symbolleiste **[!UICONTROL Veröffentlichung verwalten]** aus.
 
