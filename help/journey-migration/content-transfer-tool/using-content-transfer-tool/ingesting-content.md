@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
 workflow-type: tm+mt
 source-wordcount: '2142'
-ht-degree: 31%
+ht-degree: 32%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 31%
 >id="aemcloud_ctt_ingestion"
 >title="Inhaltsaufnahme"
 >abstract="Aufnahme bezieht sich auf die Aufnahme von Inhalten aus dem Migrationssatz in die Cloud Service-Zielinstanz. Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="Auffüllextraktion"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=de#top-up-extraction-process" text="Auffüllextraktion"
 
 Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager zu erfassen:
 
