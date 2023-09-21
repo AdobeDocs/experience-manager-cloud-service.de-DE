@@ -1,11 +1,10 @@
 ---
-title: Neue Gebietsschemata zu einem adaptiven Formular hinzufügen
-description: Mit AEM Forms können Sie neue Gebietsschemata zum Lokalisieren von adaptiven Formularen hinzufügen. Englisch (en), Spanisch (es), Französisch (fr), Italienisch (it), Deutsch (de), Japanisch (ja), brasilianisches Portugiesisch (pt-BR), Chinesisch (zh-CN), Chinesisch-Taiwan (zh-TW) und Koreanisch (ko-KR).
-exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 9a1bb716256b5e820723911f4e78a6a4c69d940c
+title: Wie kann einem adaptiven Formular, das auf Kernkomponenten basiert, Unterstützung für neue Gebietsschemata hinzugefügt werden?
+description: Mit AEM Forms können Sie neue Gebietsschemata zum Lokalisieren von adaptiven Formularen hinzufügen.
+source-git-commit: b643cdc9ebf57e164088e0dc3598e4e0d3ded267
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 50%
+source-wordcount: '1336'
+ht-degree: 48%
 
 ---
 
@@ -49,7 +48,7 @@ AEM Forms unterstützt die Lokalisierung von Inhalten in adaptiven Formulare in 
 
 ![Gebietsschema zu einem Repository hinzufügen](add-a-locale-adaptive-form-core-components.png)
 
-### 1. Klonen Sie Ihr AEM as a Cloud Service Git-Repository {#clone-the-repository}
+### Klonen Sie Ihr AEM as a Cloud Service Git-Repository {#clone-the-repository}
 
 1. Öffnen Sie die Befehlszeile und wählen Sie einen Ordner zum Speichern des Repositorys aus, z. B. `/cloud-service-repository/`.
 
@@ -64,7 +63,7 @@ AEM Forms unterstützt die Lokalisierung von Inhalten in adaptiven Formulare in 
    Nach erfolgreichem Abschluss des Befehls wird ein Ordner `<my-program>` erstellt wird. Sie enthält den Inhalt, der aus dem Git-Repository geklont wurde. Im Rest des Artikels wird der Ordner als `[AEM Forms as a Cloud Service Git repostory]`.
 
 
-### 2. Fügen Sie dem Guide Localization Service das neue Gebietsschema hinzu. {#add-a-locale-to-the-guide-localization-service}
+### Hinzufügen des neuen Gebietsschemas zum Guide Localization Service {#add-a-locale-to-the-guide-localization-service}
 
 1. Öffnen Sie den im vorherigen Abschnitt geklonten Repository-Ordner in einem Texteditor.
 1. Navigieren Sie zum Ordner `[AEM Forms as a Cloud Service Git repostory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config`. Sie finden die `<appid>` im `archetype.properties` -Dateien des Projekts.
@@ -75,7 +74,7 @@ AEM Forms unterstützt die Lokalisierung von Inhalten in adaptiven Formulare in 
 1. Fügen Sie die [Gebietsschema-Code für die Sprache](https://de.wikipedia.org/wiki/Liste_der_ISO-639-1-Codes) Sie möchten z. B. &quot;hi&quot;für &quot;nachträglich&quot;hinzufügen.
 1. Speichern und schließen Sie die Datei.
 
-### 3. Erstellen einer Client-Bibliothek zum Hinzufügen eines Gebietsschemas
+### Erstellen einer Client-Bibliothek zum Hinzufügen eines Gebietsschemas
 
 AEM Forms bietet eine Beispiel-Client-Bibliothek, mit der Sie neue Gebietsschemata einfach hinzufügen können. Sie können die `clientlib-it-custom-locale` Client-Bibliothek aus dem Repository Adaptive Forms Core Components auf GitHub in Ihr as a Cloud Service Forms-Repository. Gehen Sie wie folgt vor, um die Client-Bibliothek hinzuzufügen:
 
@@ -85,7 +84,7 @@ AEM Forms bietet eine Beispiel-Client-Bibliothek, mit der Sie neue Gebietsschema
 1. Navigieren Sie zu `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` und fügen Sie die `clientlib-it-custom-locale` Verzeichnis.
 
 
-### 4. Gebietsschemaspezifische Datei erstellen {#locale-specific-file}
+### Gebietsschemaspezifische Datei erstellen {#locale-specific-file}
 
 1. Navigieren Sie zu `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
 1. Suchen Sie die [Englisch locale .json file on GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json), der den neuesten Satz von Standardzeichenfolgen enthält, die im Produkt enthalten sind.
@@ -95,7 +94,7 @@ AEM Forms bietet eine Beispiel-Client-Bibliothek, mit der Sie neue Gebietsschema
 1. Speichern und schließen Sie die Datei.
 
 
-### 4. Gebietsschema-Unterstützung zum Wörterbuch hinzufügen {#add-locale-support-for-the-dictionary}
+### Gebietsschema-Unterstützung zum Wörterbuch hinzufügen {#add-locale-support-for-the-dictionary}
 
 Führen Sie diesen Schritt nur dann durch, wenn das `<locale>`, das Sie hinzufügen möchten, nicht unter den Gebietsschemata `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` oder `ko-kr` ist.
 
@@ -134,7 +133,7 @@ Führen Sie diesen Schritt nur dann durch, wenn das `<locale>`, das Sie hinzufü
 
    ![Fügen Sie die neu erstellten Ordner im `filter.xml` under `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
-### 5. Zusagen der Änderungen und Bereitstellen der Pipeline {#commit-changes-in-repo-deploy-pipeline}
+### Übertragen der Änderungen und Bereitstellen der Pipeline {#commit-changes-in-repo-deploy-pipeline}
 
 Übertragen Sie die Änderungen an das GIT-Repository, nachdem Sie eine neue Gebietsschema-Unterstützung hinzugefügt haben. Stellen Sie Ihren Code mithilfe der Full-Stack-Pipeline bereit. Erfahren Sie, wie Sie [eine Pipeline einrichten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#setup-pipeline), um Unterstützung für ein neues Gebietsschema hinzuzufügen.
 Sobald die Pipeline-Einrichtung abgeschlossen ist, wird das neu hinzugefügte Gebietsschema in der AEM-Umgebung angezeigt.
