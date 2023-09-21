@@ -3,9 +3,9 @@ title: Versionshinweise für Cloud Manager 2023.9.0 in Adobe Experience Manager 
 description: Dies sind die Versionshinweise für Cloud Manager 2023.9.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 8bf2ffe8b1d3780f4ad3f6972fea4f8281945abb
+source-git-commit: a5e8c11340ab5eacdefb22da302f9e35d9429bc7
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '443'
 ht-degree: 19%
 
 ---
@@ -55,6 +55,6 @@ Möchten Sie das neue Dashboard testen? Bitte senden Sie eine E-Mail an `aem-lig
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* Wenn ein Programm gelöscht wird, werden auch alle verknüpften, laufenden Pipelines gelöscht, um sicherzustellen, dass die Pipeline nicht fälschlicherweise als fehlgeschlagen gekennzeichnet ist.
-* Die Schaltfläche Aufschalten zum Vervollständigen ist deaktiviert und informiert den Benutzer darüber, warum eine Pipeline ausgeführt wird.
-* Wenn alle Schritte einer Pipeline-Ausführung &quot;abgeschlossen&quot;sind, wird der Status der Pipeline gelegentlich als &quot;ausgeführt&quot;betrachtet, sodass sie sich in einem blockierten Zustand zu befinden scheint. Es wird nun als &quot;vollständig&quot;bezeichnet.
+* Wenn ein Programm gelöscht wird, werden alle verknüpften, laufenden Pipelines nun ebenfalls gelöscht.
+* Wenn eine Pipeline in Gang ist, wird die **Senden** Schaltfläche des **Abschluss der Live-Schaltung** ist jetzt deaktiviert und informiert den Benutzer darüber, dass das Go-Live-Datum aufgrund der laufenden Pipeline nicht festgelegt werden kann.
+* Es wurde ein gelegentlicher Fehler behoben, durch den alle Schritte einer Pipelineausführung als abgeschlossen markiert wurden, der Status der Pipeline jedoch weiterhin ausgeführt wurde, was das Erscheinungsbild eines blockierten Status verursachte.
