@@ -5,10 +5,10 @@ topic-tags: author
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: b3aac0cb7682f66c72c32ebf706f5db4067b12ed
 workflow-type: tm+mt
-source-wordcount: '1650'
-ht-degree: 22%
+source-wordcount: '1680'
+ht-degree: 21%
 
 ---
 
@@ -43,6 +43,11 @@ Sie können ein adaptives Formularfragment von Grund auf neu erstellen oder ein 
    ![Zeigt den Modelltyp auf der Registerkarte &quot;Formularmodell&quot;an](assets/create-af-1-1.png)
 
    * **Keines**: Gibt an, dass das Fragment von Grund auf ohne Formularmodell erstellt werden soll.
+
+     >[!NOTE]
+     >
+     >Ein Vorteil von auf Kernkomponenten basierenden Fragmenten gegenüber auf Foundation-Komponenten basierenden Fragmenten besteht in der Möglichkeit, mehrere auf Kernkomponenten basierende Fragmente zu verwenden, die nicht an ein Formularmodell in einem einzelnen adaptiven Formular gebunden sind.
+
    * **Schema**: Legt fest, dass das Fragment mit einem XML- oder JSON-Schema erstellt wird, das in AEM Forms hochgeladen wurde. Sie können ein XML- oder JSON-Schema als Formularmodell für das Fragment hochladen oder aus den verfügbaren Schemata auswählen. Wenn Sie ein XML-Schema auswählen, können Sie auch ein adaptives Formularfragment erstellen, indem Sie einen im ausgewählten Schema vorhandenen complexType aus dem **[!UICONTROL XML-Schema - komplexer Typ]** Dropdown-Feld. Wenn Sie ein JSON-Schema auswählen, können Sie auch ein adaptives Formularfragment erstellen, indem Sie eine Schemadefinition im ausgewählten Schema aus dem **[!UICONTROL JSON-Schemadefinitionen]** Dropdown-Feld.
    * **Formulardatenmodell**: Gibt an, dass das Fragment mithilfe eines Formulardatenmodells erstellt wird. Sie können ein adaptives Formularfragment erstellen, das auf nur einem Datenmodellobjekt in einem Formulardatenmodell basiert. Erweitern Sie die Dropdown-Liste Formulardatenmodelldefinitionen . Es listet alle Datenmodellobjekte im angegebenen Formulardatenmodell auf. Wählen Sie ein Datenmodellobjekt aus der Liste aus.
 
