@@ -2,10 +2,10 @@
 title: Neue Gebietsschemata zu einem adaptiven Formular hinzufügen
 description: Mit AEM Forms können Sie neue Gebietsschemata zum Lokalisieren von adaptiven Formularen hinzufügen. Englisch (en), Spanisch (es), Französisch (fr), Italienisch (it), Deutsch (de), Japanisch (ja), brasilianisches Portugiesisch (pt-BR), Chinesisch (zh-CN), Chinesisch-Taiwan (zh-TW) und Koreanisch (ko-KR).
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 9a1bb716256b5e820723911f4e78a6a4c69d940c
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 89%
+source-wordcount: '1251'
+ht-degree: 85%
 
 ---
 
@@ -17,7 +17,6 @@ ht-degree: 89%
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=de) |
-| AEM as a Cloud Service | Dieser Artikel |
 
 AEM Forms bietet vorkonfiguriert Unterstützung für die Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (it), Deutsch (de), Japanisch (ja), brasilianisches Portugiesisch (pt-BR), Chinesisch (zh-CN), Chinesisch – Taiwan (zh-TW) und Koreanisch (ko-KR). Sie können auch Unterstützung für weitere Gebietsschemata hinzufügen, wie Hindi (hi_IN).
 
@@ -31,7 +30,7 @@ Die Lokalisierung von adaptiven Formularen beruht auf zwei Arten von Gebietssche
 
 ## Unterstützung für neue Gebietsschemata hinzufügen {#add-support-for-new-locales}
 
-Führen Sie die folgenden Schritte aus, um Unterstützung für ein neues Gebietsschema hinzuzufügen:
+Führen Sie die folgenden Schritte aus, um Unterstützung für ein Gebietsschema hinzuzufügen:
 
 1. [Hinzufügen von Lokalisierungsunterstützung für nicht unterstützte Gebietsschemata](#add-localization-support-for-non-supported-locales)
 1. [Hinzugefügte Gebietsschemata in adaptiven Formularen verwenden](#use-added-locale-in-af)
@@ -40,7 +39,7 @@ Führen Sie die folgenden Schritte aus, um Unterstützung für ein neues Gebiets
 
 AEM Forms unterstützt die Lokalisierung von Inhalten in adaptiven Formulare in den Sprachumgebungen Englisch (en), Spanisch (es), Französisch (fr), Italianisch (it), Deutsch (de), Japanisch (ja), brasilianisches Portugiesisch (pt-BR), Chinesisch (zh-CN), Chinesisch – Taiwan (zh-TW) und Koreanisch (ko-KR).
 
-So fügen Sie während der Laufzeit in adaptiven Formularen Unterstützung für ein neues Gebietsschema hinzu:
+Hinzufügen der Unterstützung für ein Gebietsschema:
 
 1. [Klonen Sie Ihr Repository.](#clone-the-repository)
 1. [Fügen Sie ein Gebietsschema zum GuideLocalizationService hinzu.](#add-a-locale-to-the-guide-localization-service)
@@ -114,12 +113,12 @@ Bevor Sie die Änderungen in das AEM Git-Repository übernehmen, müssen Sie auf
 
 #### 5. Übertragen Sie die Änderungen an das Repository und stellen Sie die Pipeline bereit. {#commit-changes-in-repo-deploy-pipeline}
 
-Übertragen Sie die Änderungen an das GIT-Repository, nachdem Sie eine neue Gebietsschema-Unterstützung hinzugefügt haben. Stellen Sie Ihren Code mithilfe der Full-Stack-Pipeline bereit. Erfahren Sie, wie Sie [eine Pipeline einrichten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#setup-pipeline), um Unterstützung für ein neues Gebietsschema hinzuzufügen.
+Übertragen Sie die Änderungen an das GIT-Repository, nachdem Sie eine Gebietsschema-Unterstützung hinzugefügt haben. Stellen Sie Ihren Code mithilfe der Full-Stack-Pipeline bereit. Erfahren Sie, wie Sie [eine Pipeline einrichten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#setup-pipeline), um Unterstützung für ein neues Gebietsschema hinzuzufügen.
 Sobald die Pipeline-Einrichtung abgeschlossen ist, wird das neu hinzugefügte Gebietsschema in der AEM-Umgebung angezeigt.
 
 ### Verwenden eines hinzugefügten Gebietsschemas in adaptiven Formularen {#use-added-locale-in-af}
 
-Führen Sie die folgenden Schritte aus, um ein adaptives Formular mit einem neu hinzugefügten Gebietsschema zu verwenden und zu rendern:
+Führen Sie die folgenden Schritte aus, um ein adaptives Formular mit dem neu hinzugefügten Gebietsschema zu verwenden und zu rendern:
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an.
 1. Gehen Sie zu **Formulare** > **Formulare und Dokumente**.
