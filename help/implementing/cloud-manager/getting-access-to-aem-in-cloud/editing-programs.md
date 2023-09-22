@@ -2,10 +2,10 @@
 title: Bearbeiten von Programmen
 description: Erfahren Sie, wie Sie Ihre Produktions- und Sandbox-Programme bearbeiten, um ihre Optionen nach der Erstellung anzupassen.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 85%
+source-wordcount: '502'
+ht-degree: 44%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 85%
 
 Benutzer mit den erforderlichen Berechtigungen können [in Ihrer Organisation erstellte Produktionsprogramme](creating-production-programs.md) und [Sandbox-Programme, die in Ihrer Organisation erstellt wurden.](creating-sandbox-programs.md) Durch die Bearbeitung eines Programms haben Sie folgende Möglichkeiten:
 
-* Hinzufügen der Sites-Lösung zu einem vorhandenen Programm mit Assets oder umgekehrt.
+* Fügen Sie Sites-Lösungen zu einem vorhandenen Programm mit Assets hinzu und umgekehrt.
 * Entfernen von Sites oder Assets aus einem vorhandenen Programm, das sowohl Sites als auch Assets umfasst.
-* Hinzufügen einer zweiten, nicht verwendeten Lösungsberechtigung entweder für ein vorhandenes Programm oder als neues Programm.
+* Fügen Sie einem vorhandenen Programm oder einem neuen Programm eine zweite nicht verwendete Lösungsberechtigung hinzu.
 * Löschen von Sandbox-Programmen.
 
 ## Berechtigungen {#permissions}
@@ -24,13 +24,11 @@ Sie müssen Mitglied der Rolle **Geschäftsinhaber** sein, um Programme bearbeit
 
 ## Bearbeiten von Programmen {#editing}
 
-Führen Sie diese Schritte aus, um ein Programm zu bearbeiten.
-
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
 1. Klicken Sie auf das Programm, das Sie bearbeiten möchten, um dessen Details anzuzeigen.
 
-1. Klicken Sie oben links auf der Seite auf den Namen Ihres Programms und anschließend auf **Programm bearbeiten**.
+1. Klicken Sie oben links auf der Seite auf den Namen Ihres Programms und wählen Sie **Programm bearbeiten**.
 
    ![Option „Programm bearbeiten“](assets/edit-program-overview.png)
 
@@ -44,7 +42,7 @@ Führen Sie diese Schritte aus, um ein Programm zu bearbeiten.
 
    ![Lösungen auswählen](assets/edit-prg.png)
 
-1. Klicken Sie auf den Pfeil vor dem Lösungsnamen, um optionale Add-ons anzuzeigen, z. B. die Add-on-Option **Commerce** unter **Sites**.
+1. Klicken Sie auf den Pfeil vor dem Lösungsnamen, um optionale Add-ons anzuzeigen, z. B. die **Handel** Add-On-Option unter **Sites**.
 
    ![Add-ons bearbeiten](assets/edit-program-add-on.png)
 
@@ -52,18 +50,18 @@ Führen Sie diese Schritte aus, um ein Programm zu bearbeiten.
 
    ![Live-Schaltungs-Einstellungen bearbeiten](assets/edit-program-go-live.png)
 
-   * Dieses Datum dient nur zu Informationszwecken und löst das Live-Schaltungs-Widget auf der Programmübersichtsseite aus, um rechtzeitig produktinterne Links zur Best-Practice-Dokumentation von AEM as a Cloud Service bereitzustellen und Ihnen so eine erfolgreiche und reibungslose Live-Schaltung ermöglicht.
+   * Dieses Datum ist nur zur informativen Verwendung bestimmt. Dadurch wird das Widget Go Live auf der Programmübersichtsseite Trigger. Im Gegenzug bietet es produktinterne Links zur as a Cloud Service Best-Practice-Dokumentation von Adobe Experience Manager (AEM), um sie an Ihre Journey anzupassen, was zu einem erfolgreichen Go Live-Erlebnis führt.
    * Diese Registerkarte ist nicht für Sandbox-Programme verfügbar.
 
-1. Klicken Sie auf **Aktualisieren**, um Ihre Änderungen am Programm zu speichern.
+1. Klicks **Aktualisieren** , um Ihre Änderungen am Programm zu speichern.
 
-Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich Hinzufügen oder Entfernen einer Lösung oder eines Add-ons, werden diese Änderungen erst nach der nächsten Bereitstellung wirksam.
+Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich Hinzufügen oder Entfernen einer Lösung oder eines Add-ons, werden diese Änderungen nach der nächsten Bereitstellung wirksam.
 
 Wenn für Ihr Produktionsprogramm die erhöhte Sicherheit aktiviert war, wird eine zusätzliche **Verbesserte Sicherheit** im **Programm bearbeiten** -Fenster, um zu bestätigen, dass die Funktion für das Programm aktiv ist.
 
 ![Erweiterte Sicherheit für ein Programm aktiv](assets/edit-program-enhanced.png)
 
-Diese Einstellung kann nach der Erstellung des Programms nicht mehr geändert werden. Weitere Informationen zur erweiterten Sicherheitsoption finden Sie unter [Erstellen von Produktionsprogrammen](creating-production-programs.md) Dokument.
+Sie können diese Einstellung nicht mehr bearbeiten, nachdem das Programm erstellt wurde. Weitere Informationen zur erweiterten Sicherheitsoption finden Sie unter [Erstellen von Produktionsprogrammen](creating-production-programs.md).
 
 ## Löschen von Sandbox-Programmen {#delete-sandbox-program}
 
@@ -73,13 +71,13 @@ Durch das Löschen eines Sandbox-Programms werden alle damit verbundenen Umgebun
 >
 >Benutzer mit den Rollen **Geschäftsinhaber** oder **Bereitstellungs-Manager** können alternativ ihre Produktions- und Staging-Umgebungen anstelle des gesamten Sandbox-Programms löschen.
 
-Führen Sie die folgenden Schritte aus, um ein Sandbox-Programm zu löschen.
+Gehen Sie wie folgt vor, um ein Sandbox-Programm zu löschen.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
 1. Klicken Sie auf das Programm, das Sie bearbeiten möchten, um dessen Details anzuzeigen.
 
-1. Klicken Sie oben links auf der Seite auf den Namen Ihres Programms und anschließend auf **Programm löschen**.
+1. Klicken Sie links oben auf der Seite auf den Namen Ihres Programms und wählen Sie **Programm löschen**.
 
    ![Option „Programm löschen“](assets/delete-sandbox1.png)
 
