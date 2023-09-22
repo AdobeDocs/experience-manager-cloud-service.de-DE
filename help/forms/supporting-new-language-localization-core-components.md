@@ -1,10 +1,10 @@
 ---
 title: Wie kann einem adaptiven Formular Unterstützung für neue Gebietsschemata basierend auf Kernkomponenten hinzugefügt werden?
 description: Erfahren Sie, wie Sie neue Gebietsschemata für ein adaptives Formular hinzufügen.
-source-git-commit: 2a738d17b1e2f46c06828512ee07c1c20f35596c
+source-git-commit: 4e48e49fea66fa24052632138a1b305208690d06
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 26%
+source-wordcount: '1484'
+ht-degree: 27%
 
 ---
 
@@ -16,12 +16,11 @@ ht-degree: 26%
 | Foundation-Komponenten | [Hier klicken](supporting-new-language-localization.md) |
 | Kernkomponenten | Dieser Artikel |
 
-AEM Forms bietet vorkonfiguriert Unterstützung für die Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (it), Deutsch (de), Japanisch (ja), brasilianisches Portugiesisch (pt-BR), Chinesisch (zh-CN), Chinesisch – Taiwan (zh-TW) und Koreanisch (ko-KR). 
+AEM Forms bietet vorkonfiguriert Unterstützung für die Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (it), Deutsch (de), Japanisch (ja), brasilianisches Portugiesisch (pt-BR), Chinesisch (zh-CN), Chinesisch – Taiwan (zh-TW) und Koreanisch (ko-KR). Sie können auch Unterstützung für weitere Gebietsschemata hinzufügen, wie Hindi (hi_IN).
 
 ## Wie wird das Gebietsschema für ein adaptives Formular ausgewählt?
 
-
-Es gibt zwei Methoden zum Identifizieren und Auswählen des Gebietsschemas eines adaptiven Formulars bei der Wiedergabe:
+Bevor Sie mit dem Hinzufügen eines neuen Gebietsschemas für adaptive Forms beginnen, sollten Sie wissen, wie ein Gebietsschema für ein adaptives Formular ausgewählt wird. Es gibt zwei Methoden zum Identifizieren und Auswählen des Gebietsschemas eines adaptiven Formulars bei der Wiedergabe:
 
 * **Verwenden der [locale] Auswahl in der URL**: Beim Rendern eines adaptiven Formulars gibt das System das angeforderte Gebietsschema durch Überprüfen der [locale] -Selektor in der URL des adaptiven Formulars. Die URL hat folgendes Format: http:/[AEM Forms-Server-URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled. Die Verwendung der [locale] Auswahl ermöglicht die Zwischenspeicherung des adaptiven Formulars.
 
