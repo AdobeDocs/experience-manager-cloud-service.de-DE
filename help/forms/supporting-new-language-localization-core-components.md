@@ -1,10 +1,10 @@
 ---
 title: Wie kann einem adaptiven Formular, das auf Kernkomponenten basiert, Unterstützung für neue Gebietsschemata hinzugefügt werden?
 description: Erfahren Sie, wie Sie neue Gebietsschemata für ein adaptives Formular hinzufügen.
-source-git-commit: 911b377edd4eb0c8793d500c26ca44a44c69e167
+source-git-commit: 0d2e353208e4e59296d551ca5270be06e574f7df
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 23%
+source-wordcount: '1339'
+ht-degree: 22%
 
 ---
 
@@ -20,17 +20,17 @@ AEM Forms bietet vorkonfiguriert Unterstützung für die Gebietsschemata Englisc
 
 ## Wie wird das Gebietsschema für ein adaptives Formular ausgewählt?
 
-Bevor Sie mit dem Hinzufügen eines neuen Gebietsschemas für adaptive Forms beginnen, sollten Sie wissen, wie ein Gebietsschema für ein adaptives Formular ausgewählt wird. Es gibt zwei Methoden zum Identifizieren und Auswählen des Gebietsschemas eines adaptiven Formulars bei der Wiedergabe:
+Bevor Sie mit dem Hinzufügen eines Gebietsschemas für adaptive Forms beginnen, sollten Sie wissen, wie ein Gebietsschema für ein adaptives Formular ausgewählt wird. Es gibt zwei Methoden zum Identifizieren und Auswählen des Gebietsschemas für ein adaptives Formular bei der Wiedergabe:
 
-* **Verwenden der [locale] Auswahl in der URL**: Beim Rendern eines adaptiven Formulars gibt das System das angeforderte Gebietsschema durch Überprüfen der [locale] -Selektor in der URL des adaptiven Formulars. Die URL hat folgendes Format: http:/[AEM Forms-Server-URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled. Die Verwendung der [locale] Auswahl ermöglicht die Zwischenspeicherung des adaptiven Formulars.
+* **Verwenden der `locale` Auswahl in der URL**: Beim Rendern eines adaptiven Formulars gibt das System das angeforderte Gebietsschema durch Überprüfen der [locale] -Selektor in der URL des adaptiven Formulars. Die URL hat folgendes Format: http:/[AEM Forms-Server-URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled. Die Verwendung der [locale] Auswahl ermöglicht die Zwischenspeicherung des adaptiven Formulars. Beispielsweise die URL `www.example.com/content/forms/af/contact-us.hi.html?wcmmmode=disabled` gibt das Formular in Hindi-Sprache aus.
 
 * Abrufen der Parameter in der unten aufgeführten Reihenfolge:
 
-   * **Anforderungsparameter`afAcceptLang`**: Um das Browsergebietsschema des Benutzers zu überschreiben, können Sie den Anforderungsparameter afAcceptLang übergeben. Beispielsweise erzwingt diese URL die Wiedergabe des Formulars in kanadischem französischem Gebietsschema: `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
+   * **Verwenden der `afAcceptLang`Anforderungsparameter**: Um das Browsergebietsschema des Benutzers zu überschreiben, können Sie den Anforderungsparameter afAcceptLang übergeben. Beispiel: die `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr` URL erzwingt vom AEM Forms-Server die Wiedergabe des Formulars in kanadischem französischem Gebietsschema.
 
-   * **Browser-Gebietsschema (Accept-Language-Header)**: Das System berücksichtigt auch das Browser-Gebietsschema des Benutzers, das in der Anfrage mit der `Accept-Language` -Kopfzeile.
+   * **Verwenden des Browser-Gebietsschemas (Accept-Language-Header)**: Das System berücksichtigt auch das Browser-Gebietsschema des Benutzers, das in der Anfrage mit der `Accept-Language` -Kopfzeile.
 
-  Wenn keine Client-Bibliothek für das angeforderte Gebietsschema verfügbar ist, prüft das System, ob eine Client-Bibliothek für den Sprachcode im Gebietsschema vorhanden ist. Wenn das angeforderte Gebietsschema beispielsweise `en_ZA` (Südafrikanisches Englisch) und es gibt keine Client-Bibliothek für `en_ZA`verwendet das adaptive Formular die Client-Bibliothek für en (Englisch), sofern verfügbar. Wenn keines von beiden gefunden wird, greift das adaptive Formular auf das Wörterbuch für `en` Gebietsschema.
+  Wenn eine Client-Bibliothek (der Prozess zum Erstellen und Verwenden der Bibliothek wird später in diesem Artikel erläutert) für das angeforderte Gebietsschema nicht verfügbar ist, überprüft das System, ob eine Client-Bibliothek für den Sprachcode im Gebietsschema vorhanden ist. Wenn das angeforderte Gebietsschema beispielsweise `en_ZA` (Südafrikanisches Englisch) und es gibt keine Client-Bibliothek für `en_ZA`verwendet das adaptive Formular die Client-Bibliothek für en (Englisch), sofern verfügbar. Wenn keines von beiden gefunden wird, greift das adaptive Formular auf das Wörterbuch für `en` Gebietsschema.
 
   Sobald das Gebietsschema identifiziert wurde, wählt das adaptive Formular das entsprechende formularspezifische Wörterbuch aus. Wenn das Wörterbuch für das angeforderte Gebietsschema nicht gefunden wird, wird standardmäßig das Wörterbuch in der Sprache verwendet, in der das adaptive Formular verfasst wurde.
 
@@ -39,19 +39,21 @@ Bevor Sie mit dem Hinzufügen eines neuen Gebietsschemas für adaptive Forms beg
 
 ## Voraussetzungen {#prerequistes}
 
-Bevor Sie mit der Unterstützung für ein neues Gebietsschema beginnen,
+Bevor Sie mit dem Hinzufügen eines Gebietsschemas beginnen:
 
-* Installieren Sie einen Nur-Text-Editor (IDE) für eine einfachere Bearbeitung. Die Beispiele in diesem Dokument basieren auf Microsoft® Visual Studio Code.
+* Installieren Sie einen Nur-Text-Editor (IDE) für eine einfachere Bearbeitung. Die Beispiele in diesem Dokument basieren auf [Microsoft® Visual Studio Code](https://code.visualstudio.com/download).
 * Installieren Sie eine Version von [Git](https://git-scm.com), falls auf Ihrem Computer nicht verfügbar.
 * Klonen Sie die [Adaptive Forms-Kernkomponenten](https://github.com/adobe/aem-core-forms-components) Repository. So klonen Sie das Repository:
-   1. Öffnen Sie die Befehlszeile oder das Terminal-Fenster und navigieren Sie zu einem Speicherort für das Repository. Beispiel `/adaptive-forms-core-components`
+   1. Öffnen Sie die Befehlszeile oder das Terminal-Fenster und navigieren Sie zu einem Speicherort für das Repository. Zum Beispiel: `/adaptive-forms-core-components`
    1. Führen Sie den folgenden Befehl aus, um das Repository zu klonen:
 
       ```SHELL
           git clone https://github.com/adobe/aem-core-forms-components.git
       ```
 
-  Das Repository enthält eine Client-Bibliothek, die zum Hinzufügen eines Gebietsschemas erforderlich ist. Im Rest des Artikels wird der Ordner als [Adaptives Forms-Kernkomponenten-Repository].
+  Das Repository enthält eine Client-Bibliothek, die zum Hinzufügen eines Gebietsschemas erforderlich ist.
+
+  Bei erfolgreicher Ausführung des Befehls wird das Repository auf die `aem-core-forms-components` Ordner auf Ihrem Computer. Im Rest des Artikels wird der Ordner als [Adaptives Forms-Kernkomponenten-Repository].
 
 
 ## Gebietsschema hinzufügen {#add-localization-support-for-non-supported-locales}
@@ -169,7 +171,13 @@ Führen Sie die folgenden Schritte aus, um eine Vorschau eines adaptiven Formula
 * Adobe empfiehlt die Erstellung eines Übersetzungsprojekts nach der Erstellung eines adaptiven Formulars.
 
 * Wenn neue Felder in einem vorhandenen adaptiven Formular hinzugefügt werden:
-   * **Für maschinelle Übersetzung**: Erstellen Sie das Wörterbuch neu und führen Sie das Übersetzungsprojekt aus. Felder, die einem adaptiven Formular nach dem Erstellen eines Übersetzungsprojekts hinzugefügt wurden, bleiben unübersetzt.
-   * **Für die menschliche Übersetzung**: Exportieren Sie das Wörterbuch über `[server:port]/libs/cq/i18n/gui/translator.html`. Aktualisieren Sie das Wörterbuch für die neu hinzugefügten Felder und laden Sie es hoch.
+   * **Für maschinelle Übersetzung**[: Erstellen Sie das Wörterbuch neu und führen Sie das Übersetzungsprojekt aus](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). Felder, die einem adaptiven Formular nach dem Erstellen eines Übersetzungsprojekts hinzugefügt wurden, bleiben unübersetzt.
+   * **für die menschliche Übersetzung**: Exportieren Sie das Wörterbuch über die Benutzeroberfläche unter `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Aktualisieren Sie das Wörterbuch für die neu hinzugefügten Felder und laden Sie es hoch.
+
+## Weitere Informationen
+
+* [Verwenden Sie maschinelle Übersetzung oder menschliche Übersetzung, um ein auf Kernkomponenten basierendes adaptives Formular zu übersetzen.](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [Generieren eines Datensatzdokuments für adaptive Formulare](/help/forms/generate-document-of-record-core-components.md)
+* [Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 
