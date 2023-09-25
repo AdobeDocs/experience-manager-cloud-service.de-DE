@@ -2,10 +2,10 @@
 title: Übersicht über das Content Transfer Tool
 description: Erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte von einer On-Premise-AEM-Instanz auf AEM as a Cloud Service übertragen können.
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 79%
+ht-degree: 76%
 
 ---
 
@@ -47,7 +47,7 @@ Beim Inhaltstransfer gibt es zwei Phasen:
 
 Ein Migrationssatz hat die folgenden Attribute:
 
-* Mit der neuen Version können Sie maximal fünf Migrationssätze in einem Projekt erstellen, das in Cloud Acceleration Manager erstellt wurde.
+* Mit der neuen Version können Sie maximal zwanzig Migrationssätze in einem Projekt erstellen, das in Cloud Acceleration Manager erstellt wurde.
 * Jeder Migrationssatz sollte einen eindeutigen Namen haben.
 
 Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden.

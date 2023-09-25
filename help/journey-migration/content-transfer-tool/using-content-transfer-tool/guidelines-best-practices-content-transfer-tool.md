@@ -2,10 +2,10 @@
 title: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
 description: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 9212042db782dc413b64d40ebde096c12d754f97
+source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '1599'
-ht-degree: 87%
+ht-degree: 85%
 
 ---
 
@@ -49,7 +49,7 @@ Die allgemeine Formel zur Berechnung des erforderlichen freien Speicherplatzes l
    * *Knotenspeichergröße*: Größe des Segmentspeicherverzeichnisses oder der MongoDB-Datenbank.
 Bei einer Segmentspeichergröße von 20 GB wären daher 94 GB freier Speicherplatz erforderlich.
 
-* Ein Migrationssatz muss während der gesamten Aktivität zum Content-Transfer verwaltet werden, um das Auffüllen von Content zu unterstützen. Es können maximal fünf Migrationssätze pro Projekt im Cloud Acceleration Manager erstellt und verwaltet werden, während die Aktivität zum Übertragen von Inhalten ausgeführt wird. Wenn mehr als fünf Migrationssätze benötigt werden, müssen Sie ein zweites Projekt im Cloud Acceleration Manager erstellen. Dies erfordert jedoch zusätzliches Projektmanagement und Out-of-Product-Governance, um zu verhindern, dass Inhalte auf dem Ziel von mehreren Benutzern überschrieben werden.
+* Ein Migrationssatz muss während der gesamten Aktivität zum Content-Transfer verwaltet werden, um das Auffüllen von Content zu unterstützen. Es können maximal zwanzig Migrationssätze pro Projekt in Cloud Acceleration Manager erstellt und verwaltet werden, während die Aktivität zum Übertragen von Inhalten ausgeführt wird. Wenn mehr als zwanzig Migrationssätze benötigt werden, müssen Sie ein zweites Projekt in Cloud Acceleration Manager erstellen. Dies erfordert jedoch zusätzliches Projektmanagement und Out-of-Product-Governance, um zu verhindern, dass Inhalte auf dem Ziel von mehreren Benutzern überschrieben werden.
 
 * Ändern Sie nicht das Installationsverzeichnis des CTT-Tools. Standardmäßig findet die Installation im Pfad crx-quickstart/cloud-migration statt. Dieser spezifische Speicherort wird intern von anderen Bibliotheken verwendet. Eine Änderung dieses Pfads kann zu Extraktionsproblemen führen.
 

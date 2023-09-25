@@ -2,10 +2,10 @@
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erfahren Sie mehr über die ersten Schritte mit dem Content Transfer Tool
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 7de874f607c98501052ddb715c4af98f6c5d5324
+source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '1439'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -86,7 +86,7 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
 
    >[!NOTE]
    >
-   >In Cloud Acceleration Manager können pro Projekt maximal fünf Migrationssätze, einschließlich abgelaufener Sätze, erstellt werden.
+   >In Cloud Acceleration Manager können maximal zwanzig Migrationssätze, einschließlich abgelaufener Sets, pro Projekt erstellt werden.
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
