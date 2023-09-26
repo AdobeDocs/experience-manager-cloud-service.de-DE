@@ -3,9 +3,9 @@ title: Bearbeiten von Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente erstellen und dann Varianten dieses Inhalts entsprechend dem Zweck erstellen. Dies bietet mehr Flexibilität für die Headless-Bereitstellung und das Seiten-Authoring.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+source-git-commit: 2fa22bf2feb6b8697877b345bc29821e30b1c6a1
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2227'
 ht-degree: 4%
 
 ---
@@ -484,7 +484,7 @@ Die **Felder** enthält alle Felder im Inhaltsfragment. Das Symbol zeigt die **[
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Registerkarten-Platzhalter</b></p><p>Obwohl nicht durch ein reales Symbol dargestellt, wird eine <b>Registerkartenplatzhalter</b> wird sowohl im linken Bedienfeld als auch im zentralen Bedienfeld angezeigt.</p> </td>
+   <td><p><b>Registerkarten-Platzhalter</b></p><p>Obwohl nicht durch ein reales Symbol dargestellt, wird eine <b>Registerkartenplatzhalter</b> wird im linken Bereich angezeigt. <br>Sie wird auch im zentralen Bedienfeld angezeigt, entweder horizontal wie angezeigt oder in einer Dropdown-Liste (wenn zu viele vorhanden sind, um horizontal angezeigt zu werden).</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>
