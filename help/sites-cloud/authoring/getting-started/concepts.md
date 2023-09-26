@@ -2,12 +2,13 @@
 title: Authoring – Konzepte
 description: Erfahren Sie mehr über die Konzepte des Authoring in AEM mithilfe der Autoren-, Vorschau- und Veröffentlichungsumgebungen.
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 40%
 
 ---
+
 
 # Authoring – Konzepte {#authoring-concepts}
 
@@ -26,6 +27,8 @@ Die Autorenumgebung bietet die Mechanismen zum Erstellen, Aktualisieren und Übe
 ![Abbildung von Autor, Publisher und Dispatchern](/help/sites-cloud/authoring/assets/author-publish.png)
 
 In der Autorenumgebung wird die Funktionalität von AEM über AEM Authoring-Benutzeroberfläche bereitgestellt. In der Veröffentlichungsumgebung entwerfen Sie das gesamte Erscheinungsbild der Benutzeroberfläche, die Ihren Benutzern zur Verfügung gestellt wird.
+
+{{edge-delivery-authoring}}
 
 ## Authoring-Umgebung {#author-environment}
 

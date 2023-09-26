@@ -2,12 +2,13 @@
 title: Erstellen und Organisieren von Seiten
 description: Erfahren Sie, wie Sie Ihre Website organisieren können, indem Sie Seiten mit AEM erstellen und verwalten.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2543'
 ht-degree: 86%
 
 ---
+
 
 # Erstellen und Organisieren von Seiten {#creating-and-organizing-pages}
 
@@ -26,6 +27,8 @@ In diesem Dokument wird beschrieben, wie Sie mit Adobe Experience Manager Cloud 
 >[!TIP]
 >
 >Es steht eine Reihe von [Tastaturbefehlen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) in der Websites-Konsole zur Verfügung, die eine effizientere Seitenorganisation ermöglichen.
+
+{{edge-delivery-authoring}}
 
 ## Website-Organisation {#organizing-your-website}
 

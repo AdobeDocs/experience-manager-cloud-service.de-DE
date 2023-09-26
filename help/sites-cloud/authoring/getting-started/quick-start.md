@@ -2,12 +2,13 @@
 title: Schnellstartanleitung zum Verfassen von Seiten (Authoring)
 description: Ein kurzer, allgemeiner Leitfaden mit den ersten Schritten zur Seitenbearbeitung
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '1568'
 ht-degree: 86%
 
 ---
+
 
 # Schnellstartanleitung zum Verfassen von Seiten (Authoring) {#quick-guide-to-authoring-pages}
 
@@ -20,6 +21,8 @@ Genauere Informationen zur Bearbeitung mit AEM finden Sie unter:
 
 * [Konzepte der Bearbeitung (Authoring)](/help/sites-cloud/authoring/getting-started/concepts.md)
 * [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+
+{{edge-delivery-authoring}}
 
 ## Tipps {#a-few-quick-hints}
 

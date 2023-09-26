@@ -2,12 +2,13 @@
 title: Bearbeiten des Seiteninhalts
 description: Nachdem die Seite erstellt wurde, können Sie den Inhalt bearbeiten, um die erforderlichen Aktualisierungen vorzunehmen
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2983'
 ht-degree: 84%
 
 ---
+
 
 # Bearbeiten des Seiteninhalts{#editing-page-content}
 
@@ -31,6 +32,8 @@ Inhalte werden mithilfe von [Komponenten](/help/sites-cloud/authoring/features/c
 >[!TIP]
 >
 >Im **Bearbeitungsmodus** werden Links in Ihrem Inhalt angezeigt, können jedoch **nicht aufgerufen werden**. Verwenden Sie den [Vorschaumodus](#previewing-pages), wenn Sie mithilfe von Links in Ihrem Inhalt navigieren möchten.
+
+{{edge-delivery-authoring}}
 
 ## Seitensymbolleiste {#page-toolbar}
 
