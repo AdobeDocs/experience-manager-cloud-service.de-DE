@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit Edge Delivery Services
-description: Erste Schritte mit Edge Delivery Services
-source-git-commit: 22a3795340add4ae29ec690b41baef96e8fb4adc
+description: Erste Schritte mit Edge Delivery Services.
+source-git-commit: 6334efceb9abae560ae77c133df1a70ffb438e6a
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Das folgende Diagramm zeigt, wie Sie Inhalte in Microsoft Word (dokumentbasierte
 
 Die Edge-Bereitstellung ist ein zusammenstellbarer Satz von Diensten, der eine hohe Flexibilität bei der Erstellung von Inhalten auf Ihrer Website ermöglicht. Wie bereits erwähnt, können Sie beide [AEM Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) und [Dokumentenbasiertes Authoring](https://www.hlx.live/docs/authoring).
 
-Sie können beispielsweise Inhalte direkt aus Microsoft Word oder Google Docs verwenden. Das bedeutet, dass Dokumente aus diesen Quellen Seiten auf Ihrer Website werden können. Darüber hinaus können Überschriften, Listen, Bilder und Schriftelemente von der ursprünglichen Quelle auf die Website übertragen werden. Der neue Inhalt wird sofort ohne Neuerstellungsprozess hinzugefügt.
+Sie können beispielsweise Inhalte direkt aus Microsoft Word- oder Google-Dokumenten verwenden. Das bedeutet, dass Dokumente aus diesen Quellen Seiten auf Ihrer Website werden können. Darüber hinaus können Überschriften, Listen, Bilder und Schriftelemente von der ursprünglichen Quelle auf die Website übertragen werden. Der neue Inhalt wird sofort ohne Neuerstellungsprozess hinzugefügt.
 
 Die Edge-Bereitstellung nutzt GitHub, damit Kunden Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Sie können beispielsweise Inhalte entweder in Google Docs oder Microsoft Word schreiben und die Funktionalität Ihrer Site kann mithilfe von CSS und JavaScript in GitHub entwickelt werden. Wenn Sie bereit sind, können Sie die Sidekick-Browsererweiterung verwenden, um Inhaltsaktualisierungen in der Vorschau anzuzeigen und zu veröffentlichen.
 
