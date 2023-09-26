@@ -1,6 +1,6 @@
 ---
 title: Erste Schritte mit AEM Commerce as a Cloud Service
-description: Erfahren Sie, wie Sie mithilfe von Adobe Cloud Manager, einer CI/CD-Pipeline und der Venia-Referenz-Storefront ein AEM Commerce-Projekt bereitstellen.
+description: Erfahren Sie, wie Sie mit Adobe Cloud Manager, einer CI/CD-Pipeline und der Venia-Referenz-Storefront ein Adobe Experience Manager-Commerce-Projekt (AEM) bereitstellen.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
 version: Cloud Service
@@ -8,16 +8,16 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 44%
+source-wordcount: '1104'
+ht-degree: 42%
 
 ---
 
 # Erste Schritte mit AEM Commerce as a Cloud Service {#start}
 
-Um mit AEM Commerce as a Cloud Service zu beginnen, muss Ihr Experience Manager Cloud Service über das Commerce Integration Framework (CIF)-Add-on verfügen. Das CIF-Add-on ist ein zusätzliches Modul zusätzlich zu [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
+Um mit Adobe Experience Manager (AEM) Commerce as a Cloud Service zu beginnen, muss Ihr Experience Manager Cloud Service über das Add-on Commerce integration framework (CIF) verfügen. Das CIF-Add-on ist ein zusätzliches Modul zusätzlich zu [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
 
 ## Einstieg {#onboarding}
 
@@ -28,7 +28,7 @@ Das Onboarding für AEM Commerce as a Cloud Service erfolgt in zwei Schritten:
 
 Der erste Onboarding-Schritt wird von Adobe ausgeführt. Weitere Informationen zu Preisen und Bereitstellung erhalten Sie von Ihrem Vertriebsmitarbeiter.
 
-Nachdem Sie das CIF-Add-on bereitgestellt haben, wird es auf alle vorhandenen Cloud Manager-Programme angewendet. Wenn Sie kein Cloud Manager-Programm haben, müssen Sie eines erstellen. Weitere Informationen finden Sie unter [Einrichten des Programms](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
+Nachdem Sie das CIF Add-on bereitgestellt haben, wird es auf alle vorhandenen Cloud Manager-Programme angewendet. Wenn Sie kein Cloud Manager-Programm haben, müssen Sie eines erstellen. Weitere Informationen finden Sie unter [Einrichten des Programms](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
 
 Der zweite Schritt erfolgt per Self-Service für die einzelnen AEM as a Cloud Service-Umgebungen. Es gibt einige zusätzliche Konfigurationen, die Sie nach der ersten Bereitstellung des CIF-Add-ons vornehmen müssen.
 
@@ -38,12 +38,12 @@ So verbinden Sie das CIF-Add-on und das [CIF-Kernkomponenten AEM](https://github
 
 Diese Umgebungsvariable wird an zwei Stellen verwendet:
 
-- GraphQL-Aufrufe vom AEM zum Commerce-Backend über einen gemeinsamen GraphQl-Client, der von den AEM CIF-Kernkomponenten und Kundenprojektkomponenten verwendet wird.
-- Richten Sie in jeder AEM Umgebung, in der die Variable festgelegt ist, eine GraphQL-Proxy-URL ein unter `/api/graphql`. Diese URL wird von den AEM Commerce-Authoring-Tools (CIF-Add-on) und den clientseitigen CIF-Komponenten verwendet.
+- GraphQL-Aufrufe vom AEM zum Commerce-Backend über einen gemeinsamen GraphQl-Client, der von den AEM CIF Kernkomponenten und Kundenprojektkomponenten verwendet wird.
+- Richten Sie in jeder AEM Umgebung, in der die Variable festgelegt ist, eine GraphQL-Proxy-URL ein unter `/api/graphql`. Diese URL wird von den AEM Commerce-Authoring-Tools (CIF Add-on) und CIF Client-seitigen Komponenten verwendet.
 
-Für jede AEM as a Cloud Service-Umgebung kann eine andere GraphQL-Endpunkt-URL verwendet werden. Auf diese Weise können Projekte AEM-Staging-Umgebungen, die über Commerce-Staging-Systeme und eine AEM-Produktionsumgebung verfügen, mit einem Commerce-Produktionssystem verbinden. Der entsprechende-GraphQL-Endpunkt muss öffentlich verfügbar sein; private VPN- oder lokale Verbindungen werden nicht unterstützt. Optional kann ein Authentifizierungs-Header bereitgestellt werden, um zusätzliche CIF-Funktionen zu verwenden, für die eine Authentifizierung erforderlich ist.
+Für jede AEM as a Cloud Service-Umgebung kann eine andere GraphQL-Endpunkt-URL verwendet werden. Auf diese Weise können Projekte AEM-Staging-Umgebungen, die über Commerce-Staging-Systeme und eine AEM-Produktionsumgebung verfügen, mit einem Commerce-Produktionssystem verbinden. Der entsprechende-GraphQL-Endpunkt muss öffentlich verfügbar sein; private VPN- oder lokale Verbindungen werden nicht unterstützt. Optional kann ein Authentifizierungs-Header bereitgestellt werden, um zusätzliche CIF Funktionen zu verwenden, für die eine Authentifizierung erforderlich ist.
 
-Optional und nur für Adobe Commerce Enterprise/Cloud unterstützt das CIF-Add-on die Verwendung von gestaffelten Katalogdaten für AEM Autoren. Für diese Daten müssen Sie einen Autorisierungs-Header konfigurieren. Dieser konfigurierte Autorisierungs-Header ist aus Sicherheitsgründen nur auf AEM-Autoreninstanzen verfügbar und wird nur dort verwendet. AEM-Veröffentlichungsinstanzen können keine gestaffelten Daten anzeigen.
+Optional und nur für Adobe Commerce Enterprise/Cloud unterstützt das CIF Add-on die Verwendung von gestaffelten Katalogdaten für AEM Autoren. Für diese Daten müssen Sie einen Autorisierungs-Header konfigurieren. Diese Kopfzeile ist aus Sicherheitsgründen nur in AEM Autoreninstanzen verfügbar und wird verwendet. AEM Veröffentlichungsinstanzen können keine gestaffelten Daten anzeigen.
 
 Es gibt zwei Optionen zum Konfigurieren des Endpunkts:
 
@@ -65,7 +65,7 @@ Nachdem der Endpunkt und optional ein Autorisierungsheader für die staging-Kata
 
 ### Über Adobe I/O CLI  {#adobe-cli}
 
-Gehen Sie wie folgt vor, um über die Adobe I/O-CLI AEM mit einer Commerce-Lösung zu verbinden:
+Gehen Sie wie folgt vor, um AEM über Adobe I/O CLI mit einer Commerce-Lösung zu verbinden:
 
 1. Adobe I/O CLI mit dem Cloud Manager-Plug-in abrufen
 
@@ -103,11 +103,11 @@ Sie können AEM Commerce as a Cloud Service verwenden und Ihr Projekt über Clou
 
 ## Konfigurieren von Stores und Katalogen {#catalog}
 
-Das CIF-Add-on und das [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) kann auf mehreren AEM Site-Strukturen verwendet werden, die mit verschiedenen Commerce-Stores (oder Store-Ansichten usw.) verbunden sind. Standardmäßig wird das CIF-Add-on mit einer Standardkonfiguration bereitgestellt, die mit dem Standardspeicher und -katalog von Adobe Commerce verbunden ist.
+Das CIF-Add-on und das [CIF Kernkomponenten](https://github.com/adobe/aem-core-cif-components) kann auf mehreren AEM Site-Strukturen verwendet werden, die mit verschiedenen Commerce-Stores (oder Store-Ansichten usw.) verbunden sind. Standardmäßig wird das CIF-Add-on mit einer Standardkonfiguration bereitgestellt, die mit dem Standardspeicher und -katalog von Adobe Commerce verbunden ist.
 
 Diese Konfiguration kann mithilfe der CIF-Cloud Service-Konfiguration wie folgt für das Projekt angepasst werden:
 
-1. Gehen Sie AEM zu Tools > Cloud Services > CIF-Konfiguration .
+1. Gehen Sie AEM zu Tools > Cloud Service > CIF Konfiguration .
 
 2. Wählen Sie die Commerce-Konfiguration aus, die Sie ändern möchten.
 

@@ -4,16 +4,16 @@ description: Erfahren Sie, wie Sie Rollout-Konflikte in Multi Site Manager verwa
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 80%
+ht-degree: 52%
 
 ---
 
 # Rollout-Konflikte {#msm-rollout-conflicts}
 
-Konflikte sind möglich, wenn neue Seiten mit demselben Seitennamen im Blueprint-Zweig und in einem abhängigen Live Copy-Zweig erstellt werden. Solche Konflikte müssen nach dem Rollout gehandhabt und aufgelöst werden.
+Konflikte sind möglich, wenn neue Seiten mit demselben Seitennamen im Blueprint-Zweig und in einem abhängigen Live Copy-Zweig erstellt werden. Solche Konflikte müssen beim Rollout behandelt und gelöst werden.
 
 ## Konfliktbehandlung {#conflict-handling}
 
@@ -21,25 +21,25 @@ Wenn in Konflikt stehende Seiten vorhanden sind (in den Blueprint- und Live Copy
 
 Um sicherzustellen, dass der Rollout nicht gesperrt ist, können mögliche Definitionen Folgendes umfassen:
 
-* Welche Seite (Blueprint oder Live Copy) während des Rollouts Vorrang hat
+* Welche Seite (Blueprint oder Live Copy) hat während des Rollouts Priorität
 * Welche Seiten werden umbenannt und wie
-* Wie dies jeglichen veröffentlichten Inhalt beeinflusst
+* Auswirkungen auf veröffentlichte Inhalte
 
-Das vorkonfigurierte Standardverhalten von AEM besteht darin, dass veröffentlichte Inhalte davon unbeeinflusst bleiben. Wenn also eine Seite, die im Live Copy-Zweig manuell erstellt wurde, veröffentlicht wurde, wird dieser Inhalt nach der Konfliktbehandlung und dem Rollout auch weiterhin veröffentlicht.
+Das Standardverhalten von Adobe Experience Manager (AEM) ist, dass veröffentlichte Inhalte nicht betroffen sind. Wenn also eine Seite veröffentlicht wurde, die manuell in der Live Copy-Verzweigung erstellt wurde, wird dieser Inhalt nach der Konfliktbehandlung und dem Rollout weiterhin veröffentlicht.
 
 Neben der Standardfunktion können auch benutzerdefinierte Konflikt-Handler hinzugefügt werden, um verschiedene Regeln zu implementieren. Diese können auch Veröffentlichungsaktionen als einzelner Prozess zulassen.
 
 ### Beispiel-Szenario {#example-scenario}
 
-In den folgenden Abschnitten werden wir zum Veranschaulichen der verschiedenen Verfahren zur Konfliktbewältigung das Beispiel einer neuen Seite `b` verwenden, die sowohl im Blueprint- als auch im Live Copy-Zweig (manuell) erstellt wurde:
+In den folgenden Abschnitten ein Beispiel für eine neue Seite `b` wird verwendet, sowohl im Blueprint als auch in der Live Copy-Verzweigung (manuell erstellt), um die verschiedenen Methoden zur Konfliktbehebung zu veranschaulichen:
 
 * Blueprint: `/b`
 
-  Hauptseite mit einer untergeordneten Seite, `bp-level-1`
+  eine Masterseite mit einer untergeordneten Seite, `bp-level-1`
 
 * Live Copy: `/b`
 
-  Eine im Live Copy-Zweig manuell erstellte Seite mit einer untergeordneten Seite, `lc-level-1`
+  Eine Seite, die manuell in der Live Copy-Verzweigung mit einer untergeordneten Seite erstellt wurde, `lc-level-1`
 
    * Bei Veröffentlichung als `/b` aktiviert, zusammen mit der untergeordneten Seite
 
@@ -62,7 +62,7 @@ AEM verfügt über ein [vordefiniertes Verhalten, wenn das Konflikt-Management d
 
 ## Konflikt-Handler {#conflict-handlers}
 
-AEM nutzt Konflikt-Handler zum Lösen von Seitenkonflikten, die beim Rollout von Inhalten von einer Blueprint zu einer Live Copy vorliegen. Das Umbenennen von Seiten ist die übliche (nicht die einzige) Methode, um solche Konflikte zu lösen. Es können mehrere Konflikt-Handler verwendet werden, um eine Auswahl verschiedener Verhaltensweisen zu ermöglichen.
+AEM nutzt Konflikt-Handler zum Lösen von Seitenkonflikten, die beim Rollout von Inhalten von einer Blueprint zu einer Live Copy vorliegen. Das Umbenennen von Seiten ist die übliche (nicht nur) Methode zur Lösung solcher Konflikte. Es können mehrere Konflikt-Handler verwendet werden, um eine Auswahl verschiedener Verhaltensweisen zu ermöglichen.
 
 AEM bietet:
 
@@ -76,10 +76,10 @@ AEM bietet:
 
 Der standardmäßige Konflikt-Handler ist `ResourceNameRolloutConflictHandler`.
 
-* Mit diesem Handler hat die Blueprint-Seite Vorrang.
-* Die Service-Rangfolge für diesen Handler ist niedrig eingestellt, d. h. unter dem Standardwert für die `service.ranking` -Eigenschaft, da die Annahme ist, dass benutzerdefinierte Handler einen höheren Rang benötigen. Das Ranking ist jedoch nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
+* Bei diesem Handler hat die Blueprint-Seite Vorrang.
+* Der Service-Rang für diesen Handler ist niedrig eingestellt. Das heißt, unter dem Standardwert für `service.ranking` -Eigenschaft, da davon ausgegangen wird, dass benutzerdefinierte Handler einen höheren Rang benötigen. Das Ranking ist jedoch nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
 
-Dieser Konflikt-Handler hat Vorrang vor dem Blueprint. Die Live Copy-Seite `/b` wird beispielsweise innerhalb des Live Copy-Zweiges nach `/b_msm_moved` verschoben.
+Dieser Konflikt-Handler hat Vorrang vor dem Blueprint. Beispielsweise die Seite &quot;Live Copy&quot; `/b` wird innerhalb der Live Copy-Verzweigung nach `/b_msm_moved`.
 
 * Live Copy: `/b`
 
@@ -98,7 +98,7 @@ Dieser Konflikt-Handler hat Vorrang vor dem Blueprint. Die Live Copy-Seite `/b` 
 |  | Blueprint nach dem Rollout | Live Copy nach dem Rollout | Live Copy nach dem Rollout | Nach dem Rollout veröffentlichen |
 |---|---|---|---|---|
 | Wert | `b` | `b` | `b_msm_moved` | `b` |
-| Kommentar |  | Enthält den Inhalt der Blueprint-Seite `b`, die beim Rollout verschoben wurde | Enthält den Inhalt der Seite `b`, die in der Live Copy-Verzweigung manuell erstellt wurde | Keine Änderung, enthält den Inhalt der Originalseite `b`, die manuell in der Live Copy-Verzweigung erstellt wurde und jetzt `b_msm_moved` heißt |
+| Kommentar |  | Enthält den Inhalt der Blueprint-Seite `b`, die beim Rollout verschoben wurde | Enthält den Inhalt der Seite `b`, die in der Live Copy-Verzweigung manuell erstellt wurde | Keine Änderung; enthält den Inhalt der Originalseite `b` die manuell in der Live Copy-Verzweigung erstellt wurde und jetzt aufgerufen wird `b_msm_moved` |
 | Wert | `/bp-level-1` | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | Kommentar |  |  | Keine Änderung | Keine Änderung |
 
@@ -111,7 +111,7 @@ Benutzerdefinierte Konflikt-Handler können:
 * gemäß Ihren Anforderungen benannt werden;
 * gemäß Ihren Anforderungen entwickelt/konfiguriert werden.
    * Sie können beispielsweise einen Handler entwickeln, der der Live Copy-Seite Vorrang einräumt.
-* so konzipiert sein, dass die Konfiguration unter Verwendung der [OSGi-Konfiguration](/help/implementing/deploying/configuring-osgi.md) erfolgt. Insbesondere gilt:
+* Sie kann mithilfe der [OSGi-Konfiguration](/help/implementing/deploying/configuring-osgi.md). Insbesondere gilt:
    * Das **Service-Ranking** legt die Reihenfolge in Bezug auf die anderen Konflikt-Handler fest (`service.ranking`).
       * Der Standardwert ist `0`.
 
@@ -127,19 +127,19 @@ In diesem Fall hat die Live Copy effektiv Vorrang. Die Blueprint-Seite `/b` wird
 
 * Blueprint: `/b`
 
-  wird überhaupt nicht kopiert, sondern ignoriert.
+  Es wird überhaupt nicht kopiert, aber ignoriert.
 
 * Live Copy: `/b`
 
-  Bleibt gleich.
+  Es bleibt gleich.
 
 #### Nach dem Rollout {#after-rollout-no-conflict}
 
 |  | Blueprint nach dem Rollout | Live Copy nach dem Rollout | Nach dem Rollout veröffentlichen |
 |---|---|---|---|
 | Wert | `b` | `b` | `b` |
-| Kommentar |  | Keine Änderung. Enthält den Inhalt der Seite `b`, die in der Live Copy-Verzweigung manuell erstellt wurde | Keine Änderung. Enthält den Inhalt der Seite `b`, die in der Live Copy-Verzweigung manuell erstellt wurde |
-| Wert | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
+| Kommentar |  | Keine Änderung; hat den Inhalt der Seite `b` die manuell in der Live Copy-Verzweigung erstellt wurde | Keine Änderung; enthält den Inhalt der Seite `b` die manuell in der Live Copy-Verzweigung erstellt wurde |
+| Wert | `/bp-level-1,` | `/lc-level-1` | `/lc-level-1` |
 | Kommentar |  | Keine Änderung | Keine Änderung |
 
 ### Service-Rangfolge {#service-rankings}
