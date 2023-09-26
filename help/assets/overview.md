@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
+source-git-commit: a4601d95076d37ed5df79b7c9dabb8beab8353d0
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 66%
+source-wordcount: '825'
+ht-degree: 60%
 
 ---
 
@@ -52,6 +52,12 @@ DAM-Bibliothekare, -Entwickler und -Superbenutzer können die Admin-Ansicht weit
 ![add-tags](assets/newui-overview.svg)
 
 Informationen zum Zugriff auf die Asset-Ansicht und einige der Vereinfachungen, die sie über die Admin-Ansicht bietet, finden Sie unter [Einführung in die Asset-Ansicht](/help/assets/assets-view-introduction.md).
+
+## Integration in dokumentbasiertes Authoring für Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
+
+Mit der Edge-Bereitstellung können Sie schnelle und ansprechende Websites erstellen, auf denen Autoren Inhalte schnell aktualisieren und veröffentlichen können und neue Sites schnell gestartet werden können.
+
+Integrieren Sie AEM Assets in dokumentbasiertes Authoring für Edge Delivery Services, damit Website-Autoren in AEM Assets-Repositorys verfügbare Bilder beim Erstellen von Dokumenten in Microsoft Word oder Google Docs verwenden können. Weitere Informationen finden Sie unter [Integrieren von AEM Assets mit dokumentbasiertem Authoring](/help/edge/using.md#integrate-assets-edge).
 
 ## Neue Assets-Funktionen {#whats-new-assets}
 
