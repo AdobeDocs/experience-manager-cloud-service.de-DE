@@ -2,10 +2,10 @@
 title: Erstellen eines Programms
 description: Erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um das Add-on bereitzustellen.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: 7c33a618f474914ca80dff525552017c55a32517
+source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 68%
+source-wordcount: '710'
+ht-degree: 34%
 
 ---
 
@@ -16,25 +16,25 @@ Erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um d
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der Tour zum AEM-Referenz-Demo-Add-on, [Grundlagen zur Installation des Referenz-Demo-Add-ons](installation.md), haben Sie gelernt, wie der Installationsprozess des Referenz-Demo-Add-ons funktioniert. Dabei wurde gezeigt, wie die verschiedenen Teile zusammenarbeiten. Sie sollten jetzt folgende Punkte erfüllen:
+Im vorherigen Dokument der Adobe Experience Manager (AEM) Referenz-Demos-Add-on-Journey, [Grundlegendes zur Installation des Referenz-Demo-Add-ons,](installation.md) Sie haben gelernt, wie der Installationsprozess des Referenz-Demos-Add-ons funktioniert und gezeigt, wie die verschiedenen Teile zusammenarbeiten. Sie sollten jetzt folgende Punkte erfüllen:
 
 * Sollten Sie über grundlegende Kenntnisse zu Cloud Manager verfügen.
 * Wissen Sie, wie Pipelines Inhalte und Konfigurationen für AEM bereitstellen.
-* Wissen Sie, wie mit Vorlagen mit nur wenigen Klicks neue Sites erstellt werden können, die mit Demo-Inhalten gefüllt sind.
+* Erfahren Sie, wie Vorlagen mit nur wenigen Klicks vorab mit Demoinhalten gefüllte Sites erstellen können.
 
 Dieser Artikel baut auf diesen Grundlagen auf und führt den ersten Konfigurationsschritt durch, um ein Programm für Testzwecke zu erstellen. Dabei wird eine Pipeline zum Bereitstellen des Add-on-Inhalts verwendet.
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um das Add-on bereitzustellen. Nach dem Lesen sollten Sie folgende Punkte erfüllen:
+In diesem Dokument erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um das Add-on bereitzustellen. Nach dem Lesen sollten Sie Folgendes tun können:
 
-* Sie sollten verstehen, wie Sie mit Cloud Manager ein neues Programm erstellen können.
-* Sie sollten nun wissen, wie Sie das Referenzdemo-Add-on für das neue Programm aktivieren.
-* Sie sollten in der Lage sein, eine Pipeline zum Bereitstellen des Add-on-Inhalts ausführen.
+* Machen Sie sich mit der Verwendung von Cloud Manager zur Erstellung eines Programms vertraut und erläutern Sie sie.
+* Aktivieren Sie das Referenz-Demos-Add-on für das neue Programm.
+* Führen Sie eine Pipeline aus, um den Add-On-Inhalt bereitzustellen.
 
 ## Erstellen eines Programms {#create-program}
 
-Nach der Anmeldung bei Cloud Manager können Sie ein neues Sandbox-Programm für Ihre Test- und Demozwecke erstellen.
+Nach der Anmeldung bei Cloud Manager können Sie ein Sandbox-Programm für Ihre Test- und Demozwecke erstellen.
 
 >[!NOTE]
 >
@@ -56,16 +56,16 @@ Nach der Anmeldung bei Cloud Manager können Sie ein neues Sandbox-Programm für
 
    ![Dialogfeld „Programm erstellen“](assets/create-program.png)
 
-1. Im **Sandbox einrichten** im Dialogfeld **Lösungen und Add-ons** Tabelle, erweitern Sie die **Sites** durch Tippen oder Klicken auf einen Eintrag in der Liste und dann **Referenz-Demos**.
+1. Im **Sandbox einrichten** im Dialogfeld **Lösungen und Add-ons** -Tabelle, erweitern Sie die **Sites** durch Tippen oder Klicken auf einen Eintrag in der Liste und dann **Referenz-Demos**.
 
-   * Wenn Sie auch Demos für AEM Screens erstellen möchten, setzen Sie auch ein Häkchen bei der Option **Screens** in der Liste. Tippen oder klicken Sie auf **Aktualisieren**.
+   * Wenn Sie auch Demos für AEM Screens erstellen möchten, überprüfen Sie die **Screens** in der Liste. Tippen oder klicken Sie auf **Aktualisieren**.
 
    ![Auswählen des Add-ons für eine Referenzdemo bei der Programmeinrichtung](assets/select-reference-demo-add-on.png)
 
 
-1. Tippen oder klicken Sie auf **Erstellen** und Cloud Manager beginnt mit der Einrichtung Ihres Sandbox-Programms. Sie gelangen zum Bildschirm mit der Programmübersicht. Eine kurze Bannerbenachrichtigung zeigt an, dass der Prozess gestartet wurde. Auf der Übersichtsseite für Ihr neues Programm wurde eine Karte hinzugefügt. Der Einrichtungsprozess dauert einige Minuten.
+1. Tippen oder klicken **Erstellen** und Cloud Manager beginnt mit der Einrichtung Ihres Sandbox-Programms. Sie gelangen zum Bildschirm mit der Programmübersicht. Eine kurze Bannerbenachrichtigung zeigt an, dass der Prozess gestartet wurde. Auf der Übersichtsseite für Ihr neues Programm wurde eine Karte hinzugefügt. Der Einrichtungsprozess dauert einige Minuten.
 
-1. Sobald die Einrichtung abgeschlossen ist, zeigt die Karte für die Umgebung auf der Übersichtsseite ihren Status als **Bereit**. Tippen oder klicken Sie auf die Karte, um die Umgebung zu öffnen.
+1. Sobald die Einrichtung abgeschlossen ist, zeigt die Karte für die Umgebung auf der Übersichtsseite ihren Status als **Bereit**. Tippen oder klicken Sie auf die Karte, damit Sie die Umgebung öffnen können.
 
    ![Erstellung des Programms abgeschlossen](assets/ready.png)
 
@@ -77,18 +77,18 @@ Nach der Anmeldung bei Cloud Manager können Sie ein neues Sandbox-Programm für
 
    ![Bereitstellung](assets/deployment.png)
 
-Die Fertigstellung der Pipeline kann mehrere Minuten dauern. Nach dem Abschluss sind das Add-on und der zugehörige Demoinhalt für die Verwendung in der AEM Authoring-Umgebung verfügbar.
+Die Fertigstellung der Pipeline kann mehrere Minuten dauern. Nach Abschluss sind das Add-on und die zugehörigen Demoinhalte für die Verwendung in der AEM Authoring-Umgebung verfügbar.
 
 ## Wie geht es weiter {#what-is-next}
 
-Nachdem Sie nun diesen Teil der Tour zum Referenzdemo-Add-on von Adobe Experience Manager abgeschlossen haben, sollten Sie Folgendes können:
+Nachdem Sie diesen Teil der AEM Referenz-Demo-Add-on-Journey abgeschlossen haben, sollten Sie Folgendes tun:
 
-* Sie sollten verstehen, wie Sie mit Cloud Manager ein neues Programm erstellen können.
-* Sie sollten nun wissen, wie Sie das Referenzdemo-Add-on für das neue Programm aktivieren.
-* Sie sollten in der Lage sein, eine Pipeline zum Bereitstellen des Add-on-Inhalts ausführen.
+* Erfahren Sie, wie Sie mit Cloud Manager ein Programm erstellen.
+* Erfahren Sie, wie Sie das Referenz-Demos-Add-on für das Programm aktivieren.
+* Sie können eine Pipeline ausführen, damit Sie den Add-On-Inhalt bereitstellen können.
 
-Bauen Sie auf diesem Wissen auf und fahren Sie mit der Tour zum Referenzdemo-Add-on von Adobe Experience Manager fort, indem Sie sich das Dokument [Erstellen einer Demo-Site](create-site.md) erneut ansehen. Darin erfahren Sie, wie Sie basierend auf einer Bibliothek vorkonfigurierter Vorlagen, die von der Pipeline bereitgestellt wurden, eine Demo-Site in Adobe Experience Manager erstellen.
+Auf diesem Wissen aufbauen und Ihre AEM Referenz-Demo-Add-on-Journey fortsetzen, bevor Sie die [Erstellen einer Demosite](create-site.md). Hier erfahren Sie, wie Sie in AEM eine Demosite erstellen, die auf einer Bibliothek vorkonfigurierter Vorlagen basiert, die von der Pipeline bereitgestellt wurden.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=de) – Wenn Sie an weiteren Details zu den Funktionen von Cloud Manager interessiert sind, sehen Sie sich die ausführlichen technischen Dokumente an.
+* [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html) – Wenn Sie an weiteren Details zu den Funktionen von Cloud Manager interessiert sind, sehen Sie sich die ausführlichen technischen Dokumente an.
