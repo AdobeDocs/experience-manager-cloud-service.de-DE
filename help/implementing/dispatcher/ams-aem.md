@@ -3,7 +3,7 @@ title: Migrieren der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service
 description: Migrieren der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 24c6e5e78e3e1b30e4becfad2f4f6e57e75ad4e9
 workflow-type: tm+mt
 source-wordcount: '1451'
 ht-degree: 83%
@@ -34,7 +34,7 @@ Extrahieren Sie das Archiv in einen Ordner und stellen Sie sicher, dass die unmi
 
 ### Nicht verwendete Unterordner und Dateien entfernen
 
-Entfernen von Unterordnern `conf` und `conf.modules.d`, und Dateien, die übereinstimmen `conf.d/*.conf`.
+Unterordner entfernen `conf` und `conf.modules.d`, und Dateien, die übereinstimmen `conf.d/*.conf`.
 
 ### Alle nicht veröffentlichten virtuellen Hosts entfernen
 
@@ -101,7 +101,7 @@ Entfernen Sie alle Farm-Dateien in `conf.dispatcher.d/enabled_farms`, die im Nam
 
 ### Farm-Dateien umbenennen
 
-Alle Farmen in `conf.d/enabled_farms` müssen nach dem Muster `*.farm` umbenannt werden, sodass z. B. eine Farm-Datei namens `customerX_farm.any` in `customerX.farm` umbenannt werden sollte.
+Alle Farmen in `conf.dispatcher.d/enabled_farms` müssen nach dem Muster `*.farm` umbenannt werden, sodass z. B. eine Farm-Datei namens `customerX_farm.any` in `customerX.farm` umbenannt werden sollte.
 
 ### Cache überprüfen
 
