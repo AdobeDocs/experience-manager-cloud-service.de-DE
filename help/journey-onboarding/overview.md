@@ -2,10 +2,10 @@
 title: Einführung in die Onboarding-Tour durch AEM as a Cloud Service
 description: Beginnen Sie hier für einen Überblick über die geführte Tour durch den Onboarding-Prozess bei AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: d76a0782c72045698e8a595574f9e4c64c3ebaff
+source-git-commit: 7553d3c9f82c8b675af5f704a48bc316ba0d4885
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 96%
+source-wordcount: '1221'
+ht-degree: 95%
 
 ---
 
@@ -86,7 +86,7 @@ In den folgenden Artikeln werden die wichtigsten Onboarding-Konzepte detailliert
 
 >[!NOTE]
 >
->Edge Delivery Services ist ein neuer Satz von Diensten, die eine schnelle Entwicklungsumgebung ermöglichen, in der Autoren schnell aktualisieren und veröffentlichen können und neue Sites schnell gestartet werden. Weitere Informationen zu Edge Delivery Services finden Sie im Abschnitt [Seite &quot;Erste Schritte&quot;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
+>Edge Delivery Services ist ein neuer Satz von zusammenstellbaren Diensten, die eine flexible, schnelle Entwicklungsumgebung ermöglichen, in der Autoren schnell aktualisieren und veröffentlichen können und neue Sites schnell gestartet werden. Weitere Informationen zu Edge Delivery Services finden Sie im Abschnitt [Seite &quot;Erste Schritte&quot;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## Wie geht es weiter {#what-is-next}
 
