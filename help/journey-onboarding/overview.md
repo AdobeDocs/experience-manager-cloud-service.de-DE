@@ -2,10 +2,10 @@
 title: Einführung in die Onboarding-Tour durch AEM as a Cloud Service
 description: Beginnen Sie hier für einen Überblick über die geführte Tour durch den Onboarding-Prozess bei AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
-workflow-type: ht
-source-wordcount: '1172'
-ht-degree: 100%
+source-git-commit: d76a0782c72045698e8a595574f9e4c64c3ebaff
+workflow-type: tm+mt
+source-wordcount: '1220'
+ht-degree: 96%
 
 ---
 
@@ -83,6 +83,10 @@ In den folgenden Artikeln werden die wichtigsten Onboarding-Konzepte detailliert
 | 8 | [Zuweisen von AEM-Produktprofilen](assign-profiles-aem.md) | Erfahren Sie, wie der Systemadministrierende Ihre Team-Mitglieder in AEM as a Cloud Service Produktprofilen zuordnet. | Systemadministrator |
 | 9 | [Aufgaben für Entwickler und Bereitstellungs-Manager](developers.md) | Optional - Erfahren Sie, wie Sie als entwickelnde Person auf Cloud Manager Git zugreifen und es verwalten können und wie Sie als Bereitstellungs-Manager Pipelines einrichten und Code in Cloud Manager bereitstellen. | Entwickelnde und Bereitstellungs-Manager |
 | 10 | [AEM-Benutzeraufgaben](aem-users.md) | Optional: Als AEM-Autor oder -Autorin erfahren Sie, wie Sie auf eine Instanz von AEM as a Cloud Service zugreifen und sich mit der Inhaltserstellung für AEM as a Cloud Service vertraut machen können. | AEM-Benutzer |
+
+>[!NOTE]
+>
+>Edge Delivery Services ist ein neuer Satz von Diensten, die eine schnelle Entwicklungsumgebung ermöglichen, in der Autoren schnell aktualisieren und veröffentlichen können und neue Sites schnell gestartet werden. Weitere Informationen zu Edge Delivery Services finden Sie im Abschnitt [Seite &quot;Erste Schritte&quot;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## Wie geht es weiter {#what-is-next}
 
