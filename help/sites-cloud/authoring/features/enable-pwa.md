@@ -2,10 +2,10 @@
 title: Aktivieren von PWA (Progressive Web App)-Funktionen
 description: AEM Sites ermöglicht es dem Inhaltsautor, PWA (Progressive Web App)-Funktionen für eine Website durch eine einfache Konfiguration anstelle von Kodierung zu aktivieren.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
-source-wordcount: '1997'
-ht-degree: 91%
+source-wordcount: '2004'
+ht-degree: 62%
 
 ---
 
@@ -22,31 +22,31 @@ Durch eine einfache Konfiguration kann ein Inhaltsautor jetzt PWA (Progressive W
 >* Verständnis von Caching-Strategien
 >* Unterstützung durch Ihr Entwicklungs-Team
 >
->Bevor Sie diese Funktion verwenden, sollten Sie dies mit Ihrem Entwicklungsteam besprechen, um die beste Verwendung für Ihr Projekt zu definieren.
+>Bevor Sie diese Funktion verwenden, empfiehlt Adobe, dass Sie dies mit Ihrem Entwicklungsteam besprechen, um die beste Art und Weise zu bestimmen, wie Sie sie für Ihr Projekt verwenden können.
 
 ## Einführung {#introduction}
 
-[PWAs (Progressive Web Apps)](https://developer.mozilla.org/de-DE/docs/Web/Progressive_web_apps) ermöglichen ansprechende Mobile-App-ähnliche Erlebnisse für AEM Sites, indem sie lokal auf dem Rechner eines Benutzers gespeichert werden und offline zugänglich sind. Ein Benutzer kann eine Site unterwegs durchsuchen, selbst wenn die Internet-Verbindung unterbrochen ist. PWAs ermöglichen nahtlose Erlebnisse, selbst wenn das Netzwerk verloren geht oder instabil ist.
+[PWAs (Progressive Web Apps)](https://developer.mozilla.org/de-DE/docs/Web/Progressive_web_apps) ermöglichen ansprechende Mobile-App-ähnliche Erlebnisse für AEM Sites, indem sie lokal auf dem Rechner eines Benutzers gespeichert werden und offline zugänglich sind. Ein Benutzer kann eine Site unterwegs durchsuchen, selbst wenn die Internet-Verbindung unterbrochen ist. PWA ermöglichen ein nahtloses Erlebnis, selbst wenn das Netzwerk verloren geht oder instabil ist.
 
-Anstatt eine Neukodierung der Website zu erfordern, kann ein Inhaltsautor die PWA-Eigenschaften als zusätzliche Registerkarte in den [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) einer Website konfigurieren.
+Anstatt eine Neukodifizierung der Site zu erfordern, kann ein Inhaltsautor PWA-Eigenschaften als zusätzliche Registerkarte im [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) einer Site.
 
-* Beim Speichern oder Veröffentlichen löst diese Konfiguration einen Event-Handler aus, der die [Manifestdateien](https://developer.mozilla.org/de-DE/docs/Web/Manifest) und [Service Worker](https://developer.mozilla.org/de-DE/docs/Web/API/Service_Worker_API) schreibt, die die PWA-Funktionen auf der Site aktivieren.
+* Wenn diese Konfiguration gespeichert oder veröffentlicht wird, wird ein Ereignishandler Trigger, der die [Manifestdateien](https://developer.mozilla.org/de-DE/docs/Web/Manifest) und [Service Worker](https://developer.mozilla.org/de-DE/docs/Web/API/Service_Worker_API) die PWA-Funktionen auf der Site aktivieren.
 * Sling-Zuordnungen werden auch beibehalten, um sicherzustellen, dass der Service Worker aus dem Stammverzeichnis des Programms bedient wird, um Proxy-Inhalte zu ermöglichen, die Offline-Funktionen innerhalb der App erlauben.
 
 Mit PWA verfügt der Benutzer über eine lokale Kopie der Website, die auch ohne Internet-Verbindung eine Mobile-App-ähnliche Erfahrung bietet.
 
 >[!NOTE]
 >
->Progressive Web Apps sind eine sich weiterentwickelnde Technologie. Die Unterstützung für die Installation lokaler Apps und andere Funktionen [hängt davon ab, welchen Browser Sie verwenden.](https://developer.mozilla.org/de-DE/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
+>Progressive Web Apps sind eine sich weiterentwickelnde Technologie. Die Unterstützung für die Installation lokaler Apps und andere Funktionen [hängt davon ab, welchen Browser Sie verwenden.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary)
 
 ## Voraussetzungen {#prerequisites}
 
 Damit Sie die PWA-Funktionen für Ihre Site nutzen können, muss Ihre Projektumgebung zwei Voraussetzungen erfüllen:
 
 1. [Verwenden der Kernkomponenten](#adjust-components), um diese Funktion zu nutzen.
-1. [Anpassen der Dispatcher-Regeln](#adjust-dispatcher), um die erforderlichen Dateien verfügbar zu machen.
+1. [Anpassen des Dispatchers](#adjust-dispatcher) Regeln zum Anzeigen der erforderlichen Dateien
 
-Dies sind technische Schritte, die der Autor mit dem Entwicklungs-Team koordinieren muss. Diese Schritte sind nur einmal pro Site erforderlich.
+Dies sind technische Schritte, die der Autor mit dem Entwicklungsteam koordinieren muss. Diese Schritte sind nur einmal pro Site erforderlich.
 
 ### Verwenden der Kernkomponenten {#adjust-components}
 
@@ -58,13 +58,13 @@ Kernkomponenten-Version 2.15.0 und höher unterstützt die PWA-Funktionen von AE
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
 
- To do this, the developer will need to add the following link to the `customheaderlibs.html` file of your page component.
+ To do this, the developer adds the following link to the `customheaderlibs.html` file of your page component.
 
 ```xml
 <link rel="manifest" href="/content/<projectName>/manifest.webmanifest" crossorigin="use-credentials"/>
 ```
 
-The developer will also need to add the following link to the `customfooterlibs.html` file of your page component.
+The developer also adds the following link to the `customfooterlibs.html` file of your page component.
 
 ```xml
 <script>
@@ -82,7 +82,7 @@ The developer will also need to add the following link to the `customfooterlibs.
 
 ### Anpassen des Dispatchers {#adjust-dispatcher}
 
-Die PWA-Funktion generiert und verwendet `/content/<sitename>/manifest.webmanifest`-Dateien. Standardmäßig [Dispatcher](/help/implementing/dispatcher/overview.md) stellt solche Dateien nicht bereit. Um diese Dateien bereitzustellen, muss der Entwickler die folgende Konfiguration zum Site-Projekt hinzufügen.
+Die PWA-Funktion generiert und verwendet `/content/<sitename>/manifest.webmanifest`-Dateien. Standardmäßig ist [den Dispatcher](/help/implementing/dispatcher/overview.md) stellt solche Dateien nicht bereit. Um diese Dateien bereitzustellen, muss der Entwickler die folgende Konfiguration zum Site-Projekt hinzufügen.
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -91,7 +91,7 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
 /0102 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
 ```
 
-Je nach Projekt sollten Sie verschiedene Arten von Erweiterungen in die Rewrite-Regeln einbeziehen. Es kann nützlich sein, die Erweiterung `webmanifest` in die Rewrite-Bedingungen einzuschließen, wenn Sie eine Regel zum Ausblenden und Weiterleiten von Anfragen an `/content/<projectName>` einführen.
+Abhängig von Ihrem Projekt können Sie verschiedene Arten von Erweiterungen zu den Neuschreibungsregeln hinzufügen. Es kann nützlich sein, die Erweiterung `webmanifest` in die Rewrite-Bedingungen einzuschließen, wenn Sie eine Regel zum Ausblenden und Weiterleiten von Anfragen an `/content/<projectName>` einführen.
 
 ```text
 RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
@@ -99,12 +99,12 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## Aktivieren von PWA für Ihre Site {#enabling-pwa-for-your-site}
 
-Wenn [die Voraussetzungen](#prerequisites) erfüllt sind, ist es für einen Inhaltsautor sehr einfach, PWA-Funktionen für eine Site zu aktivieren. Im Folgenden finden Sie eine Übersicht über die Vorgehensweise. Die einzelnen Optionen sind im Abschnitt [Detaillierte Optionen](#detailed-options) aufgeführt.
+Mit [Voraussetzungen](#prerequisites) erfüllt, ist es für einen Inhaltsautor einfach, PWA-Funktionen für eine Site zu aktivieren. Im Folgenden finden Sie eine Übersicht über die Vorgehensweise. Die einzelnen Optionen werden im Abschnitt beschrieben. [Detaillierte Optionen.](#detailed-options)
 
 1. Melden Sie sich bei AEM an.
 1. Tippen oder klicken Sie im Hauptmenü auf **Navigation** > **Sites**.
 1. Wählen Sie Ihr Site-Projekt aus und tippen oder klicken Sie auf [**Eigenschaften**](/help/sites-cloud/authoring/fundamentals/page-properties.md) oder verwenden Sie den Hotkey `p`.
-1. Wählen Sie die Registerkarte **Progressive Web App** aus und konfigurieren Sie die entsprechenden Eigenschaften. Führen Sie mindestens Folgendes aus:
+1. Wählen Sie die Registerkarte **Progressive Web App** aus und konfigurieren Sie die entsprechenden Eigenschaften. Sie möchten mindestens:
    1. Wählen Sie die Option **PWA aktivieren** aus.
    1. Definieren Sie die **Start-URL**.
 
@@ -131,8 +131,8 @@ Ihre Site ist jetzt konfiguriert und Sie können sie [als lokale App installiere
 
 Nachdem Sie [Ihre Site für die Unterstützung von PWA konfiguriert haben](#enabling-pwa-for-your-site), können Sie sie selbst ausprobieren.
 
-1. Rufen Sie die Site in einem [unterstützten Browser](https://developer.mozilla.org/de-DE/docs/Web/Progressive_web_apps/Installable_PWAs#Summary) auf.
-1. In der Adressleiste des Browsers wird ein neues Symbol angezeigt, das darauf hinweist, dass die Site als lokale App installiert werden kann.
+1. Greifen Sie auf die Site in einer [unterstützter Browser](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
+1. In der Adressleiste des Browsers wird ein neues Symbol angezeigt, das angibt, dass die Site als lokale App installiert werden kann.
    * Je nach Browser kann das Symbol variieren und im Browser wird möglicherweise auch eine Benachrichtigung angezeigt (z. B. ein Banner oder ein Dialogfeld), die darauf hinweist, dass eine Installation als lokale App möglich ist.
 1. Installieren Sie das Programm.
 1. Die App wird auf dem Startbildschirm Ihres Geräts installiert.
@@ -144,31 +144,31 @@ Im folgende Abschnitt finden Sie weitere Informationen zu den Optionen, die bei 
 
 ### Konfigurieren installierbarer Erlebnisse {#configure-installable-experience}
 
-Mit diesen Einstellungen kann sich die Website wie eine native Mobile App verhalten, indem sie auf dem Startbildschirm der Besucher installierbar und offline verfügbar gemacht wird.
+Diese Einstellungen ermöglichen es Ihrer Site, sich wie eine native App zu verhalten, indem sie sie auf der Startseite des Besuchers installiert und offline verfügbar macht.
 
-* **PWA aktivieren**: Dies ist der Hauptumschalter zum Aktivieren von PWA für die Website.
-* **Start-URL**: Dies ist die [bevorzugte Start-URL](https://developer.mozilla.org/de-DE/docs/Web/Manifest/start_url), die die App öffnet, wenn der Benutzer die lokal installierte App lädt.
+* **PWA aktivieren** - Dies ist der Hauptschalter zum Aktivieren von PWA für die Site.
+* **Startseiten-URL** - Dies ist die [bevorzugte Start-URL](https://developer.mozilla.org/de-DE/docs/Web/Manifest/start_url) , das die App geöffnet wird, wenn der Benutzer die lokal installierte App lädt.
    * Dies kann ein beliebiger Pfad in Ihrer Inhaltsstruktur sein.
    * Dies muss nicht das Stammverzeichnis sein und ist oft eine spezielle Startseite für die App.
    * Wenn diese URL relativ ist, wird die Manifest-URL als Basis-URL verwendet, um sie aufzulösen.
-   * Wenn das Feld leer gelassen wird, verwendet die Funktion die Adresse der Web-Seite, von der aus die App installiert wurde.
+   * Wenn das Feld leer gelassen wird, verwendet die Funktion die Adresse der Webseite, von der aus die App installiert wurde.
    * Es wird empfohlen, einen Wert festzulegen.
 * **Anzeigemodus**: Eine PWA-fähige App ist immer noch eine AEM-Site, die über einen Browser bereitgestellt wird. [Diese Anzeigeoptionen](https://developer.mozilla.org/de-DE/docs/Web/Manifest/display) legen fest, wie der Browser ausgeblendet oder anderweitig dem Benutzer auf dem lokalen Gerät präsentiert werden soll.
-   * **Eigenständig**: Der Browser wird vollständig vor dem Benutzer verborgen und er erscheint wie eine native App. Dies ist der Standardwert.
+   * **Eigenständig** - Der Browser ist für den Benutzer ausgeblendet und erscheint wie eine native App. Dies ist der Standardwert.
       * Bei dieser Option muss die App-Navigation vollständig über Ihre Inhalte mithilfe von Links und Komponenten auf den Seiten der Website möglich sein, ohne die Navigationssteuerelemente des Browsers zu verwenden.
    * **Browser**: Der Browser wird so angezeigt, wie er normalerweise beim Besuch der Website angezeigt wird.
    * **Minimale Benutzeroberfläche**: Der Browser ist wie eine native App größtenteils ausgeblendet, grundlegende Navigationssteuerelemente werden jedoch angezeigt.
-   * **Vollbild**: Der Browser ist wie eine native App vollständig ausgeblendet, wird aber im Vollbildmodus gerendert.
+   * **Vollbild** - Der Browser ist wie eine native App ausgeblendet, wird jedoch im Vollbildmodus gerendert.
       * Bei dieser Option muss die App-Navigation vollständig über Ihre Inhalte mithilfe von Links und Komponenten auf den Seiten der Website möglich sein, ohne die Navigationssteuerelemente des Browsers zu verwenden.
 * **Bildschirmausrichtung** - Als lokale App muss der PWA wissen, wie [Geräteausrichtungen](https://developer.mozilla.org/de-DE/docs/Web/Manifest/orientation).
    * **Beliebig**: Die App passt sich der Ausrichtung des Geräts des Benutzers an. Dies ist der Standardwert.
    * **Hochformat**: Dadurch wird die App unabhängig von der Ausrichtung des Geräts des Benutzers im Hochformat geöffnet.
    * **Querformat**: Dadurch wird die App unabhängig von der Ausrichtung des Geräts des Benutzers im Querformat geöffnet.
 * **Themenfarbe**: Hiermit wird die [Farbe der App](https://developer.mozilla.org/de-DE/docs/Web/Manifest/theme_color) definiert, die sich darauf auswirkt, wie das Betriebssystem des lokalen Benutzers die native Symbolleiste der Benutzeroberfläche und die Navigationssteuerelemente anzeigt. Je nach Browser kann sich das auch auf andere Darstellungselemente der App auswirken.
-   * Verwenden Sie das Farbfeld-Popup, um eine Farbe auszuwählen.
+   * Verwenden Sie das Popup-Farbton, um eine Farbe auszuwählen.
    * Die Farbe kann auch durch einen Hex- oder RGB-Wert definiert werden.
 * **Hintergrundfarbe** - Dadurch wird die [Hintergrundfarbe der App](https://developer.mozilla.org/de-DE/docs/Web/Manifest/background_color), was beim Laden der App angezeigt wird.
-   * Verwenden Sie das Farbfeld-Popup, um eine Farbe auszuwählen.
+   * Verwenden Sie das Popup-Farbton, um eine Farbe auszuwählen.
    * Die Farbe kann auch durch einen Hex- oder RGB-Wert definiert werden.
    * Bestimmte Browser [bauen einen Startbildschirm automatisch](https://developer.mozilla.org/de-DE/docs/Web/Manifest#Splash_screens) aus dem App-Namen, der Hintergrundfarbe und dem Symbol auf.
 * **Symbol**: Hiermit wird [das Symbol](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) definiert, das die App auf dem Gerät des Benutzers darstellt.
@@ -182,13 +182,13 @@ Mit diesen Einstellungen werden Teile der Website offline und lokal auf dem Ger�
 * **Caching-Strategie und Häufigkeit der Inhaltsaktualisierung**: Diese Einstellung definiert das Caching-Modell für Ihre PWA.
    * **Mäßig**: [Diese Einstellung](https://web.dev/stale-while-revalidate/) gilt für die meisten Sites und ist der Standardwert.
       * Mit dieser Einstellung wird der vom Benutzer zuerst angezeigte Inhalt aus dem Cache geladen. Während der Benutzer diesen Inhalt verwendet, wird der restliche Inhalt im Cache erneut validiert.
-   * **Häufig**: Dies ist der Fall bei Sites, die sehr schnell aktualisiert werden müssen, wie z. B. Auktionshäuser.
-      * Bei dieser Einstellung sucht die App zuerst über das Netzwerk nach den neuesten Inhalten. Wenn diese nicht verfügbar sind, wird auf den lokalen Cache zurückgegriffen.
+   * **Häufig** - Dies gilt für Websites, die schnell aktualisiert werden müssen, wie Auktionshäuser.
+      * Mit dieser Einstellung sucht das Programm zuerst über das Netzwerk nach dem neuesten Inhalt. Wenn er nicht verfügbar ist, wird er wieder in den lokalen Cache geladen.
    * **Selten**: Dies ist der Fall bei Websites, die nahezu statisch sind, z. B. Referenzseiten.
-      * Bei dieser Einstellung sucht die App zuerst nach dem Inhalt im Cache und greift, wenn er nicht verfügbar ist, auf das Netzwerk zurück, um ihn abzurufen.
-* **Dateivorab-Zwischenspeicherung** - Diese auf AEM gehosteten Dateien werden im lokalen Browser-Cache gespeichert, wenn der Service Worker installiert und bevor er verwendet wird. Dadurch wird sichergestellt, dass die Web-App im Offline-Modus voll funktionsfähig ist.
+      * Mit dieser Einstellung sucht das Programm zuerst nach dem Inhalt im Cache und wenn nicht verfügbar, gelangt es zum Netzwerk, um ihn abzurufen.
+* **Dateivorab-Zwischenspeicherung** - Diese auf AEM gehosteten Dateien werden im lokalen Browser-Cache gespeichert, wenn der Service Worker installiert und bevor er verwendet wird. Dadurch wird sichergestellt, dass die Web-App im Offline-Modus vollständig funktioniert.
 * **Pfadeinschlüsse**: Netzwerkanfragen für die definierten Pfade werden abgefangen und zwischengespeicherte Inhalte werden entsprechend der konfigurierten **Caching-Strategie und der Häufigkeit der Inhaltsaktualisierung** zurückgegeben.
-* **Cache-Ausschlüsse**: Diese Dateien werden unabhängig von den Einstellungen unter **Vorab-Caching von Dateien** und **Pfadeinschlüsse** niemals zwischengespeichert.
+* **Cache-Ausschlüsse** - Diese Dateien werden unabhängig von den Einstellungen unter **Dateivorab-Zwischenspeicherung** und **Pfadeinschlüsse**.
 
 >[!TIP]
 >
@@ -200,25 +200,25 @@ Nicht alle PWA-Funktionen sind für AEM Sites verfügbar. Hier sind einige nenne
 
 * Seiten werden nicht automatisch synchronisiert oder aktualisiert, wenn der Benutzer die App nicht verwendet.
 
-Bei der Implementierung von PWA empfiehlt Adobe außerdem Folgendes.
+Adobe empfiehlt auch Folgendes, wenn Sie PWA implementieren.
 
 ### Minimieren Sie die Anzahl der Ressourcen, die vorab zwischengespeichert werden sollen. {#minimize-precache}
 
 Adobe empfiehlt, die Anzahl der Seiten, die vorab zwischengespeichert werden, zu begrenzen.
 
-* Betten Sie Bibliotheken ein, um die Anzahl der Einträge zu reduzieren, die beim Vorab-Caching verwaltet werden müssen.
+* Betten Sie Bibliotheken ein, damit Sie die Anzahl der Einträge reduzieren können, die bei der Zwischenspeicherung verwaltet werden sollen.
 * Schränken Sie die Anzahl der Bildvarianten ein, die vorab zwischengespeichert werden sollen.
 
 ### Aktivieren Sie PWA, nachdem die Projektskripte und Stylesheets stabilisiert wurden. {#pwa-stabilized}
 
-Client-Bibliotheken werden mit dem Zusatz eines Cache-Selektors bereitgestellt, der dem folgenden Muster `lc-<checksumHash>-lc` folgt. Jedes Mal, wenn eine der Dateien (und Abhängigkeiten), aus denen eine Bibliothek besteht, geändert wird, ändert sich auch dieser Selektor. Wenn Sie eine Client-Bibliothek aufgelistet haben, die vom Service Worker vorab zwischengespeichert werden soll, und Sie auf eine neue Version verweisen möchten, rufen Sie den Eintrag manuell ab und aktualisieren Sie ihn. Daher empfehlen wir Ihnen, Ihre Site nach der Stabilisierung der Projektskripte und Stylesheets als PWA zu konfigurieren.
+Client-Bibliotheken werden mit dem Zusatz eines Cache-Selektors bereitgestellt, der dem folgenden Muster `lc-<checksumHash>-lc` folgt. Jedes Mal, wenn sich eine der Dateien (und Abhängigkeiten), aus denen eine Bibliothek besteht, ändert sich dieser Selektor. Wenn Sie eine Client-Bibliothek aufgelistet haben, die vom Service Worker vorab zwischengespeichert werden soll, und Sie auf eine neue Version verweisen möchten, rufen Sie den Eintrag manuell ab und aktualisieren Sie ihn. Daher empfiehlt Adobe, dass Sie Ihre Site so konfigurieren, dass sie nach der Stabilisierung der Projektskripte und Stylesheets eine PWA ist.
 
 ### Minimieren Sie die Anzahl der Bildvarianten. {#minimize-variations}
 
 Die Bildkomponente der AEM-Kernkomponenten bestimmt eine der Frontend-Ausgabedarstellungen, die Sie am besten abrufen können. Dieser Mechanismus enthält auch einen Zeitstempel, der den Zeitpunkt der letzten Änderung dieser Ressource angibt. Durch diesen Mechanismus wird die Konfiguration des PWA-Vorab-Cachings komplizierter.
 
-Beim Konfigurieren des Vorab-Cachings muss der Benutzer alle Pfadvarianten auflisten, die abgerufen werden können. Diese Varianten bestehen aus Parametern wie Qualität und Breite. Es wird empfohlen, die Anzahl dieser Varianten auf maximal drei zu reduzieren - klein, mittel, groß. Dies können Sie über das Dialogfeld für die Inhaltsrichtlinie der [Bildkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de) angeben.
+Beim Konfigurieren des Pre-Cache muss der Benutzer alle Pfadvarianten auflisten, die abgerufen werden können. Diese Varianten bestehen aus Parametern wie Qualität und Breite. Es wird empfohlen, die Anzahl dieser Varianten auf maximal drei zu reduzieren - klein, mittel, groß. Dies können Sie über das Dialogfeld &quot;content-policy&quot;im [Bildkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=de).
 
-Wenn der Speicher- und Netzwerkverbrauch nicht sorgfältig konfiguriert wird, kann dies die Leistung Ihrer PWA erheblich beeinträchtigen. Wenn Sie z. B. 50 Bilder vorab zwischenspeichern möchten und pro Bild drei Breiten haben, muss der Benutzer, der die Site wartet, eine Liste von bis zu 150 Einträgen im Bereich des PWA-Vorab-Cachings der Seiteneigenschaften verwalten.
+Wenn der Speicher- und Netzwerkverbrauch nicht sorgfältig konfiguriert wird, kann dies die Leistung Ihrer PWA erheblich beeinträchtigen. Wenn Sie z. B. 50 Bilder zwischenspeichern möchten und drei Breiten pro Bild haben möchten, muss der Benutzer, der die Site verwaltet, eine Liste mit bis zu 150 Einträgen im Abschnitt &quot;PWA vor dem Cache&quot;der Seiteneigenschaften verwalten.
 
 Adobe empfiehlt Ihnen auch, Ihre Site so zu konfigurieren, dass sie eine PWA ist, nachdem sich die Verwendung der Bilder im Projekt stabilisiert hat.

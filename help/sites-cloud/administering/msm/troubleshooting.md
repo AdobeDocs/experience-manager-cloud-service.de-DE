@@ -1,13 +1,13 @@
 ---
 title: Beheben von Problemen mit MSM und häufig gestellte Fragen
-description: Hier erfahren Sie, wie Sie die häufigsten Probleme mit MSM beheben, und erhalten Antworten auf häufig gestellte Fragen zu MSM.
+description: Erfahren Sie, wie Sie die häufigsten MSM-bezogenen Probleme beheben und Antworten auf die häufigsten MSM-bezogenen Fragen erhalten.
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 80%
+source-wordcount: '767'
+ht-degree: 49%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 80%
 
 Wenn Sie ein Ihrer Ansicht nach falsches Verhalten oder einen Fehler in MSM feststellen, sollten Sie vor der detaillierten Fehlerbehebung Folgendes sicherstellen:
 
-* Lesen Sie die [häufig gestellten Fragen zu MSM](#faq) durch, da Ihre Probleme oder Fragen dort möglicherweise bereits angesprochen werden.
-* Lesen Sie den Artikel [Best Practices für MSM](best-practices.md), da er eine Reihe von Tipps enthält und Missverständnisse ausräumt.
+* Überprüfen Sie die [Häufig gestellte Fragen zu MSM](#faq) weil Ihre Probleme oder Fragen möglicherweise bereits dort angesprochen werden.
+* Überprüfen Sie die [Artikel zu Best Practices für MSM](best-practices.md) da dort mehrere Tipps sowie Erläuterungen zu einigen falschen Vorstellungen angeboten werden.
 
 ## Erweiterte Informationen zum Status Ihres Blueprints und Ihrer Live Copy {#advanced-info}
 
@@ -42,13 +42,13 @@ Die Servlets haben berechnete Informationen auf Grundlage MSM-spezifischer Knote
 
 * `cq:LiveSync`-Mixin-Typ
    * Dieser wird auf `jcr:content`-Knoten festgelegt und definiert Live Copy-Stammseiten.
-   * Diese Seiten haben einen untergeordneten `cq:LiveSyncConfig`-Knoten des Typs `cq:LiveCopy`, der grundlegende und obligatorische Informationen über die Live Copy in den folgenden Eigenschaften enthält:
+   * Diese Seiten haben eine `cq:LiveSyncConfig` untergeordneter Knoten des Typs `cq:LiveCopy` , die grundlegende und obligatorische Informationen über die Live Copy über die folgenden Eigenschaften enthält:
       * `cq:master` verweist auf die Blueprint-Seite der Live Copy.
       * `cq:rolloutConfigs` zeigt aktive Rollout-Konfigurationen an, die auf die Live Copy angewendet werden.
       * `cq:isDeep` ist „true“, wenn die untergeordneten Seiten dieses Live Copy-Stamms in der Live Copy enthalten sind.
 * `cq:LiveRelationship`-Mixin-Typ
    * Jede Live Copy-Seite verfügt über einen solchen Mixin-Typ auf ihrem `jcr:content`-Knoten.
-   * Ist dies nicht der Fall, wurde die Seite zu einem bestimmten Zeitpunkt getrennt oder außerhalb einer Live Copy-Aktion manuell über die Authoring-Oberfläche (Erstellen oder Rollout) erstellt.
+   * Ist dies nicht der Fall, wurde die Seite irgendwann getrennt oder manuell über die Authoring-Oberfläche außerhalb einer Live Copy-Aktion erstellt (Erstellen oder Rollout).
 * `cq:LiveSyncCancelled`-Mixin-Typ
    * Wurde zu `jcr:content`-Knoten der Live Copy-Seiten hinzugefügt, die ausgesetzt wurden.
    * Wenn die Aussetzung auch für untergeordnete Seiten gilt, wird eine `cq:isCancelledForChildren`-Eigenschaft auf demselben Knoten auf „true“ festgelegt.
@@ -65,29 +65,29 @@ Im Folgenden finden Sie einige häufig gestellte Fragen zu MSM und Live Copy.
 
 ### Warum werden einige Eigenschaften (z. B. Titel, Anmerkungen) während eines MSM-Rollouts nicht aktualisiert? {#missing-properties}
 
-MSM-Synchronisierungsaktionen sind hochgradig konfigurierbar. Welche Eigenschaften oder Komponenten während der Rollouts geändert werden, hängt unmittelbar von den Eigenschaften dieser Konfigurationen ab.
+MSM-Synchronisierungsaktionen sind hochgradig konfigurierbar. Welche Eigenschaften oder Komponenten bei Rollouts direkt geändert werden, hängt von den Eigenschaften dieser Konfigurationen ab.
 
 Siehe [diesem Artikel](best-practices.md) für weitere Informationen zu diesem Thema.
 
 ### Wie kann ich Rollout-Berechtigungen für eine Gruppe von Autoren entfernen? {#remove-rollout-permissions}
 
-Es gibt keine **Rollout**-Berechtigung, die für AEM-Prinzipale (Benutzer oder Gruppen) festgelegt oder entfernt werden kann.
+Es gibt keine **Rollout** Berechtigung, die für Adobe Experience Manager-Prinzipale (Benutzer oder Gruppen) festgelegt oder entfernt werden kann.
 
 Stattdessen können Sie Folgendes tun:
 
 * Passen Sie die Benutzeroberfläche des Produkts an, um die Rollout-Aktionen für einen bestimmten Prinzipal auszublenden.
-* Entfernen Sie Schreibberechtigungen aus der Live Copy-Struktur für Autoren, die keine Rollout durchführen dürfen.
+* Entfernen Sie Schreibberechtigungen aus der Live Copy-Struktur für Autoren, die keine Rollout durchführen dürfen.
 
 ### Warum sehe ich Live Copy-Seiten mit dem Suffix „_msm_move“? {#moved-pages}
 
-Wenn eine Blueprint-Seite bereitgestellt wird, aktualisiert sie entweder ihre Live Copy-Seite oder erstellt eine Live Copy-Seite, falls sie noch nicht vorhanden war (z. B. wenn sie zum ersten Mal bereitgestellt wird oder die Live Copy-Seite manuell gelöscht wurde).
+Wenn eine Blueprint-Seite bereitgestellt wird, aktualisiert sie entweder ihre Live Copy-Seite oder erstellt eine Live Copy-Seite, falls sie noch nicht vorhanden ist. Beispiel: Das Rollout erfolgt zum ersten Mal oder die Live Copy-Seite wurde manuell gelöscht.
 
-In diesem letzteren Fall jedoch, wenn eine Seite ohne `cq:LiveRelationship` -Eigenschaft mit demselben Namen vorhanden ist, wird diese Seite entsprechend umbenannt, bevor die Live Copy-Seite erstellt wird.
+In diesem letzteren Fall jedoch, wenn eine Seite ohne `cq:LiveRelationship` -Eigenschaft mit demselben Namen vorhanden ist, wird diese Seite so umbenannt, bevor die Live Copy-Seite erstellt wird.
 
-Standardmäßig erwartet der Rollout entweder eine verknüpfte Live Copy-Seite, auf die die Blueprints aktualisiert werden, oder bei der Erstellung einer Live Copy-Seite keine Seite.
+Standardmäßig erwartet der Rollout eine verknüpfte Live Copy-Seite, auf die die Aktualisierungen der Blueprints bereitgestellt werden. Oder es erwartet überhaupt keine Seite, wenn eine Live Copy-Seite erstellt wird.
 
-Wenn eine eigenständige Seite gefunden wird, benennt MSM diese Seite um und erstellt eine separate, verknüpfte Live Copy-Seite.
+Wenn eine &quot;eigenständige&quot;Seite gefunden wird, wählt MSM, diese Seite umzubenennen, und erstellt eine separate, verknüpfte Live Copy-Seite.
 
-Eine solche eigenständige Seite in einer Live Copy-Unterstruktur ist normalerweise das Ergebnis einer **Trennung** oder die vorherige Live Copy-Seite wurde von einem Autor manuell gelöscht und dann mit demselben Namen neu erstellt.
+Eine solche eigenständige Seite in einer Live Copy-Unterstruktur ist normalerweise das Ergebnis einer **Trennen** oder die frühere Live Copy-Seite von einem Autor manuell gelöscht und dann mit demselben Namen neu erstellt wurde.
 
-Um dies zu vermeiden, verwenden Sie die Funktion **Aussetzen** für die Live Copy anstelle von **Trennen**. Weitere Informationen zur Aktion **Trennen** finden Sie in [diesem Artikel.](creating-live-copies.md)
+Verwenden Sie dazu die Live Copy **Aussetzen** anstelle von **Trennen**. Weitere Informationen über **Trennen** -Aktion finden Sie unter [diesen Artikel.](creating-live-copies.md)
