@@ -2,20 +2,23 @@
 title: Adaptive Formularfragmente
 description: Adaptive Formulare bieten einen Mechanismus zum Erstellen eines Formularsegments (z. B. eines Bedienfelds oder einer Gruppe von Feldern) und zum Verwenden dieses Segments in einem beliebigen adaptiven Formular. Sie können auch ein vorhandenes Bedienfeld als Fragment speichern.
 topic-tags: author
+keywords: Adaptive Formularfragmente hinzufügen, adaptive Formularfragmente, Formularfragment erstellen, Fragment zu einem adaptiven Formular hinzufügen, Fragmente verwalten
 feature: Adaptive Forms
-hide: true
-hidefromtoc: true
-source-git-commit: b3aac0cb7682f66c72c32ebf706f5db4067b12ed
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '1680'
-ht-degree: 21%
+source-wordcount: '1734'
+ht-degree: 22%
 
 ---
 
 
 # Adaptive Formularfragmente {#adaptive-form-fragments}
 
-<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, auf die über unsere [Pre-Release-Kanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | Dieser Artikel |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
 Während jedes Formular für einen bestimmten Zweck entwickelt wurde, gibt es einige gängige Segmente in den meisten Formen, wie z. B. persönliche Angaben wie Name und Adresse, Familiendetails und Einkommensdetails. Formularentwickler müssen diese gängigen Segmente jedes Mal erstellen, wenn ein neues Formular erstellt wird.
 
@@ -186,3 +189,9 @@ Mithilfe der AEM Forms-Benutzeroberfläche können Sie mehrere Vorgänge für ad
 
 Referenzfragmente für adaptive Formulare, mit denen Sie Ihr Formular erstellen können, sind verfügbar.
 <!-- For more information, see [Reference Fragments](../../forms/using/reference-adaptive-form-fragments.md). -->
+
+## Siehe auch {#see-also}
+
+* [Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Erstellen oder Hinzufügen von Designs in Adaptive Forms](/help/forms/using-themes-in-core-components.md)
+* [Verwenden von Google reCAPTCHA in einem AEM adaptiven Formular, das auf Kernkomponenten basiert](/help/forms/captcha-adaptive-forms-core-components.md)

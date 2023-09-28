@@ -1,15 +1,21 @@
 ---
 title: Herunterladen und Installieren von Forms Designer
 description: Sie können Forms Designer verwenden, um XDP- und PDF-Formularvorlagen zu erstellen, die als Vorlage für ein Datensatzdokument dienen. Designer ist zusammen mit der  [!DNL AEM Forms] -Lizenz erhältlich.
-source-git-commit: 325769d4a3b93502b0c6857e20911b05df34a24a
+keywords: Installieren von Designer, Installieren von Forms Designer, Anforderungen für die Installation von Forms Designer
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 67%
+source-wordcount: '397'
+ht-degree: 65%
 
 ---
 
 
 # Herunterladen und Installieren von Forms Designer {#installing-and-configuring-designer}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | Dieser Artikel |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html) |
 
 Designer ist ein benutzerfreundliches grafisches Programm für die Formulargestaltung, das die Erstellung von XDP- und PDF-Formularvorlagen vereinfacht. Sie können eine Formularvorlage entwerfen, deren Logik definieren und strikte gesetzliche Anforderungen einhalten. XDP- und PDF-Formulare dienen als Vorlage für Datensatzdokumente in einem adaptiven Formular. Diese Formularvorlagen unterscheiden sich von [Vorlagen für adaptive Formulare](template-editor.md).
 
@@ -19,7 +25,6 @@ Um die neueste Version von AEM Forms Designer 64-Bit oder 32-Bit zu installieren
 
 +++ 64-Bit-Designer (empfohlen)
 
-* Deinstallieren Sie vor der Installation der 64-Bit-Version von Forms Designer die 32-Bit-Version von Designer.
 * [!DNL Microsoft® Windows® 2016 Server] oder [!DNL Microsoft® Windows® 2019 Server], und [!DNL Microsoft® Windows® 10]
 * Mindestens 2 GB RAM
 * 20 GB Festplattenspeicher
@@ -50,6 +55,10 @@ Um die neueste Version von AEM Forms Designer 64-Bit oder 32-Bit zu installieren
 
 ## Installieren von Designer {#install-designer}
 
+>[!NOTE]
+>
+> Deinstallieren Sie vor der Installation der 64-Bit-Version von Forms Designer die 32-Bit-Version von Designer.
+
 So installieren Sie Designer:
 
 1. Laden Sie Designer vom [Software-Verteilungsportal](https://experience.adobe.com/downloads) herunter.
@@ -59,3 +68,9 @@ So installieren Sie Designer:
 1. (Optional) Ändern Sie den Standardinstallationspfad, wenn Sie Designer an einem anderen Speicherort installieren möchten. Klicken Sie auf **[!UICONTROL Weiter]**.
 1. Klicken Sie auf **[!UICONTROL Zurück]**, um gegebenenfalls die Voreinstellungen zu ändern. Um Designer zu installieren, klicken Sie auf **[!UICONTROL Installieren]**.
 1. Klicken Sie auf **[!UICONTROL Fertig stellen]**, wenn die Installation abgeschlossen ist.
+
+## Siehe auch {#see-also}
+
+* [Verwenden benutzerdefinierter Schriftarten](/help/forms/use-custom-fonts.md)
+* [Erstellen eines eigenständigen, auf Kernkomponenten basierenden adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)
+* [Erstellen oder Hinzufügen eines adaptiven Formulars zur AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

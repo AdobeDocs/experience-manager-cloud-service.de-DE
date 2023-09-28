@@ -1,21 +1,25 @@
 ---
 title: Anzeigen und Verstehen der Analyseberichte für adaptive Forms
 description: Adaptive Forms lässt sich nahtlos in Adobe Analytics integrieren, um Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente zu erfassen und zu verfolgen.
+keywords: Anzeigen und Verstehen von Berichten zur adaptiven Forms-Analyse, Adobe-Analysebericht, Forms Analytics-Bericht
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 0%
+source-wordcount: '988'
+ht-degree: 1%
 
 ---
 
 
 # Anzeigen und Verstehen der Analyseberichte für adaptive Forms {#viewing-and-understanding-aem-forms-analytics-reports}
 
-<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, auf die über unsere [Pre-Release-Kanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | Dieser Artikel |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
 
 In der sich schnell entwickelnden Landschaft der digitalen Analyse ist es unerlässlich, sich an globale Trends zu halten, um fundierte Entscheidungen zu treffen und digitale Erfahrungen zu optimieren. Um dies zu beheben, integrieren Adaptive Forms nahtlos in Adobe Analytics , um Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente zu erfassen und zu verfolgen. Ziel der Analyse dieser Metriken ist es, datengesteuerte Entscheidungen mithilfe von Metriken und Analysen zu treffen, um die Benutzerfreundlichkeit und Effektivität der Formulare zu verbessern.
 
@@ -102,3 +106,9 @@ Metriken wie Hilfeansichten, Validierungsfehler und Feldbesuche zeigen, wo Benut
 Sie können damit die Formularfelder analysieren, in denen die Benutzer Zeit verbracht haben, bevor sie das Formular verlassen haben. Beispiel: In der unten stehenden Abbildung sind von 5 verlassenen Formularen 2 im Feld übrig. **Vollständiger Name**, 2 links im Feld **Telefonnummer** und 1 im Feld links **Texteingabe**.
 
 ![Feldbesucher](assets/field-visitors.png){width="100%"}
+
+## Siehe auch {#see-also}
+
+* [Aktivieren Sie Adobe Analytics für ein adaptives Formular mithilfe der Automatisierung des Experience Cloud-Setups.](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Integrieren von AEM Forms mit Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)

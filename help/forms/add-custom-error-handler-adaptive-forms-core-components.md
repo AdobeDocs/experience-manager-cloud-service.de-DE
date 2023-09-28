@@ -7,9 +7,9 @@ keywords: Fügen Sie einen benutzerdefinierten Fehler-Handler hinzu, fügen Sie 
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 963fcbe1e333dd6e0540e29ea150881826a1323c
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2406'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,6 @@ ht-degree: 7%
 
 # Fehlerhandler in Adaptive Forms (Kernkomponenten) {#error-handlers-in-adaptive-form}
 
-<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, auf die über unsere [Pre-Release-Kanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |

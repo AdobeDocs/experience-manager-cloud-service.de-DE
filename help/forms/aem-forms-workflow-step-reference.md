@@ -3,21 +3,21 @@ title: Verwenden formularzentrierter AEM Workflows zur Automatisierung von Gesch
 description: Mit Forms-zentrierten Workflows können Sie schnell auf adaptiven Formularen basierende Workflows erstellen. Mit Adobe Sign können Sie Dokumente elektronisch signieren, formularbasierte Geschäftsprozesse erstellen, Daten abrufen und an mehrere Datenquellen senden sowie E-Mail-Benachrichtigungen senden.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+keywords: Verwenden Sie AEM Workflows, indem Sie Aufgabenschritte zuweisen, in PDF/A-Schritt konvertieren, Dokument des aufgezeichneten Schritts generieren, Workflows verwenden, Dokumentschritt unterschreiben, Druckten Ausgabeschritt generieren, Nicht-interaktive PDF-Ausgabe generieren
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '7452'
-ht-degree: 78%
+source-wordcount: '7433'
+ht-degree: 79%
 
 ---
 
-# Verwenden von Forms-orientierten AEM Workflows - Schrittreferenz zur Automatisierung von Geschäftsprozessen{#forms-centric-workflow-on-osgi-step-reference}
+
+# Verwenden von Forms-orientierten AEM Workflows - Schrittreferenz zur Automatisierung von Geschäftsprozessen {#forms-centric-workflow-on-osgi-step-reference}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
-
-<span class="preview"> Sängerrollen, Audit-Protokoll und Authentifizierungsoptionen auf Basis von Behörden-IDs in der [Schritt &quot;Dokument unterschreiben&quot;](#sign-document-step) sind Vorabversionsfunktionen und können über unsere [Pre-Release-Kanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Sie verwenden Workflow-Modelle . Anhand eines Modells können Sie eine Reihe von Schritten definieren und ausführen. Sie können auch Modelleigenschaften definieren, um beispielsweise festzulegen, ob es sich um einen Übergangs-Workflow oder einen Workflow mit mehreren Ressourcen handelt. Sie können [verschiedene AEM-Workflow-Schritte in ein Modell aufnehmen, um die Business-Logik zu erzielen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=de#extending-aem).
 
@@ -40,7 +40,6 @@ Durch Forms-zentrierte Workflow-Schritte werden AEM Forms-spezifische Vorgänge 
 >[!NOTE]
 >
 >Wenn das Workflow-Modell für einen externen Speicher markiert ist, können Sie für alle Forms Workflow-Schritte nur die Variablenoption zum Speichern oder Abrufen von Datendateien und Anlagen auswählen.
-
 
 ## Schritt „Aufgabe zuweisen“ {#assign-task-step}
 
@@ -379,8 +378,6 @@ Der Schritt „Formulardatenmodell-Service aufrufen“ enthält folgende Felder 
 
 ## Schritt „Dokument signieren“ {#sign-document-step}
 
-<span class="preview"> Die Sängerrollen, das Audit-Protokoll und die Authentifizierungsoption auf Basis von Behörden-IDs im Adobe Sign-Schritt sind eine Vorabveröffentlichungsfunktion und können über unsere [Pre-Release-Kanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
 Mit dem Schritt „Dokument signieren“ können Sie [!DNL Adobe Sign] zum Signieren von Dokumenten verwenden. Wenn Sie [!DNL Adobe Sign] Workflow-Schritt zum Signieren eines adaptiven Formulars: Das Formular kann nacheinander über Empfänger hinweg übergeben oder an alle Empfänger gleichzeitig gesendet werden, je nach Konfiguration des Workflow-Schritts. [!DNL Adobe Sign] aktivierte adaptive Forms werden nur an den Experience Manager Forms-Server gesendet, nachdem alle Empfänger den Signiervorgang abgeschlossen haben.
 
 Standardmäßig wird die Variable [!DNL Adobe Sign] Der Scheduler-Dienst überprüft (fragt) die Empfängerantwort alle 24 Stunden. Sie können [das Standardintervall für Ihre Umgebung ändern](adobe-sign-integration-adaptive-forms.md#for-aem-workflows-only-configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status-configure-adobe-sign-scheduler-to-sync-the-signing-status).
@@ -591,3 +588,9 @@ Geben Sie den Gebietsschema-Code in das Feld „Literal“ ein oder wählen Sie 
 * **Linearisierte PDF**: Gibt an, ob die generierte PDF-Datei für die Ansicht im Web optimiert werden soll.
 * **PDF mit Tags**: Gibt an, ob die generierte PDF-Datei barrierefrei gemacht werden soll.
 * **XCI-Dokument**: Gibt den Pfad zur XCI-Datei an.
+
+## Siehe auch {#see-also}
+
+* [Variablen in formularzentrierten AEM-Workflows](/help/forms/variable-in-aem-workflows.md)
+* [Konfigurieren von Abwesenheitseinstellungen](/help/forms/configure-out-of-office-settings.md)
+

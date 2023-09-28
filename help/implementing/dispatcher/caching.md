@@ -3,10 +3,10 @@ title: Caching in AEM as a Cloud Service
 description: Erfahren Sie mehr über die Grundlagen der Zwischenspeicherung in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a6714e79396f006f2948c34514e5454fef84b5d8
 workflow-type: tm+mt
-source-wordcount: '2800'
-ht-degree: 50%
+source-wordcount: '2803'
+ht-degree: 49%
 
 ---
 
@@ -203,16 +203,18 @@ Wenn eine HEAD-Anfrage im Adobe-CDN für eine Ressource empfangen wird, die **ni
 
 ### Parameter von Marketing-Kampagnen {#marketing-parameters}
 
-Website-URLs enthalten häufig Marketing-Kampagnenparameter, mit denen der Erfolg einer Kampagne verfolgt werden kann. Um den Dispatcher-Cache effektiv zu verwenden, wird empfohlen, die Dispatcher-Konfiguration `ignoreUrlParams` Eigenschaft als [hier dokumentiert](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#ignoring-url-parameters).
+Website-URLs enthalten häufig Marketing-Kampagnenparameter, mit denen der Erfolg einer Kampagne verfolgt werden kann.
 
-Der Abschnitt `ignoreUrlParams` darf nicht kommentiert sein und sollte auf die Datei `conf.dispatcher.d/cache/marketing_query_parameters.any` verweisen. Die Datei kann geändert werden, indem die Kommentierung der Zeilen aufgehoben wird, die den für Ihre Marketing-Kanäle relevanten Parametern entsprechen. Sie können auch andere Parameter hinzufügen.
+In Umgebungen, die im Oktober 2023 oder höher erstellt wurden, entfernt das CDN gängige Marketing-bezogene Abfrageparameter, insbesondere diejenigen, die dem folgenden Regex-Muster entsprechen, um Cache-Anforderungen zu verbessern:
 
 ```
-/ignoreUrlParams {
-{{ /0001 { /glob "*" /type "deny" }}}
-{{ $include "../cache/marketing_query_parameters.any"}}
-}
+^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
 ```
+
+Bitte senden Sie ein Support-Ticket, wenn Sie möchten, dass dieses Verhalten deaktiviert wird.
+
+Für Umgebungen, die vor Oktober 2023 erstellt wurden, wird empfohlen, die `ignoreUrlParams` Eigenschaft als [hier dokumentiert](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#ignoring-url-parameters).
+
 
 ## Dispatcher-Cache-Invalidierung {#disp}
 
@@ -229,7 +231,7 @@ Wenn die Veröffentlichungsinstanz eine neue Version einer Seite oder eines Asse
 
 ## Explizite Invalidierung des Dispatcher-Caches {#explicit-invalidation}
 
-Adobe empfiehlt, sich zur Steuerung des Lebenszyklus der Inhaltsbereitstellung auf standardmäßige Cache-Header zu verlassen. Bei Bedarf können Inhalte jedoch direkt im Dispatcher invalidiert werden.
+Adobe empfiehlt, zur Steuerung des Lebenszyklus der Inhaltsbereitstellung auf Standard-Cache-Header zurückzugreifen. Bei Bedarf können Inhalte jedoch direkt im Dispatcher invalidiert werden.
 
 Die folgende Liste enthält Szenarien, in denen es sinnvoll sein kann, den Cache explizit zu invalidieren (während Sie optional auf den Abschluss der Invalidierung warten):
 
