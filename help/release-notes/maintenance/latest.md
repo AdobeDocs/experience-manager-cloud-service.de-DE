@@ -2,7 +2,7 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b147c80581bcb554ae0b4ac971c5f98e7160d1df
+source-git-commit: c62ae58240298604e6cd7737678603eb734434b3
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 7%
@@ -94,15 +94,9 @@ Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Releas
 * FORMS-10248: In Adaptive Forms basierend auf Kernkomponenten funktioniert das Festlegen des Werts für eine Optionsschaltfläche oder ein Kontrollkästchen, wenn der Datenwerttyp Boolesch ist, nicht erwartungsgemäß.
 * FORMS-8114: Die Datumsauswahl und das Muster werden von der NVDA-Bildschirmlesehilfe nicht korrekt gelesen. Insbesondere wird bei Verwendung der NVDA-Bildschirmlesehilfe die Datumsauswahl ohne Muster korrekt gelesen. Wenn jedoch ein Muster auf die Datumsauswahl angewendet wird, wird es als Tabelle gelesen und nicht richtig interpretiert.
 
-
-
-
-
-
-
 ### Bekannte Probleme {#known-issues-13665}
 
-Ohne
+Keine
 
 ### Eingebettete Technologien {#embedded-tech-13665}
 
