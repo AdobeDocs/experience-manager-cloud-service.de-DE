@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 0dab7428d8ae5ec4c11a88ff310fad649a365868
+source-git-commit: b147c80581bcb554ae0b4ac971c5f98e7160d1df
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 20%
+source-wordcount: '1363'
+ht-degree: 7%
 
 ---
 
@@ -26,6 +26,12 @@ Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Releas
 * SITES-11206: Inhaltsfragmente: Such-API für Inhaltsfragmente.
 * SITES-11262: Inhaltsfragmente: Schaltfläche zum Wechseln zum neuen Inhaltsfragment-Editor.
 * SITES-15447: Kernkomponenten: Version 2.23.4.
+* FORMS-9624: Einführung einer CAPTCHA-Komponente für adaptive Forms basierend auf Kernkomponenten.
+* FORMS-9913: Der invoke-Dienst des Visual Editors wurde verbessert, indem die Funktion hinzugefügt wurde, mit der Felder validiert und entsprechende Fehler- und Erfolgsmeldungen angezeigt werden können.
+* FORMS-10106: Verbesserte GeneratePDFOutput-API, um die Anzahl der im generierten Dokument enthaltenen Seiten zurückzugeben.
+* FORMS-2494: Unterstützung für Formularfragmente für adaptive Forms basierend auf Kernkomponenten hinzugefügt.
+* FORMS-9807: Unterstützung für das Navigieren zu einer Seiten-URL hinzugefügt, die infolge einer erfolgreichen Übermittlung über den Regeleditor für adaptive Formulare zurückgegeben wird.
+* FORMS-10571: Es wurde die Möglichkeit hinzugefügt, eine Dankeseiten-Umleitungs-URL basierend auf der Antwort eines Dienstes festzulegen, der in einer benutzerdefinierten Übermittlungsaktion für adaptive Forms basierend auf Kernkomponenten verwendet wird.
 
 ### Behobene Probleme {#fixed-issues-13665}
 
@@ -57,6 +63,42 @@ Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Releas
 * SITES-15815: Starts: Gelöschte Seite aus Launch bewirkt, dass Launch die Seite nicht erfolgreich weiterleitet.
 * SITES-15223: Seiten-Editor: Es ist nicht möglich, die Größe von Komponenten im Emulator für die Tablet-Größe zu ändern.
 * SITES-15463: Seitenvorlagen: Vorlagen können nicht veröffentlicht werden.
+* FORMS-10700: Bei Verwendung der Datumsauswahlkomponente in einem auf Kernkomponenten aufbauenden adaptiven Formular:
+   * Wenn der Benutzer das Formular sendet, ohne eine Eingabe für die Datumskomponente anzugeben, wird ein Fehler protokolliert.
+   * Bei der Verwendung lokalisierter Versionen der Datumsauswahl funktionieren einige Monate nahtlos. Die Auswahl bestimmter anderer Monate führt zu einer Funktionsstörung der Komponente.
+* FORMS-9598: Die AEM Forms-Einbettungskomponente funktioniert nicht.
+* FORMS-9579: Sie können bei Verwendung des Regeleditors keinen booleschen Wert an eine Funktion übergeben.
+* FORMS-9916: Wenn das Feld als ungültig markiert wird, wird ein Änderungsereignis erneut im selben Feld ausgelöst. Dieses unerwartete Ereignis Trigger die Regel erneut und erzeugt eine Schleife, die sich so lange wiederholt, bis sie eine maximale Wiederholungsgrenze von 10 Wiederholungen erreicht.
+* FORMS-10243: Die Option &quot;Fokus festlegen&quot;funktioniert nicht ordnungsgemäß für adaptive Forms, die auf Kernkomponenten basiert. Insbesondere wenn auf ein Optionsfeld geklickt wird und die Regel &quot;Fokus festlegen&quot;für ein Textfeldobjekt aktiviert ist, kann der Fokus nicht wie gewünscht festgelegt werden, obwohl andere Regeln ordnungsgemäß funktionieren.
+* FORMS-10416: Wenn für ein Headless-Adaptives Formular die Eigenschaft &quot;:type&quot;enthalten ist, wird die mehrzeilige Eingabekomponente als normale einzeilige Texteingabekomponente angezeigt.
+* FORMS-10015: Bei einem adaptiven Formular, das auf Kernkomponenten basiert, übergibt es im Regeleditor bei der Auswahl des Formularobjekts das gesamte Feldinstanzobjekt an die benutzerdefinierte Funktion und nicht nur an den Feldwert.
+* FORMS-9890: Benutzer in der Cloud-Administratorengruppe ohne Zugriff auf Formularbenutzer können Datenquellen, Formulare und Formulardatenmodell erstellen. Bei Verwendung von &quot;Dienst aufrufen&quot;im Regeleditor können sie jedoch keine verfügbaren Dienste im System anzeigen.
+* FORMS-9075: Beim Senden eines adaptiven Formulars geben die Bildschirmlesehilfen nicht alle Fehlermeldungen für die Pflichtfelder an.
+* FORMS-9014: Die folgenden Probleme mit der Barrierefreiheit wurden behoben:
+   * Beim Öffnen des Scribble-Signaturfelds springt der Cursor zur nächsten Komponente, nicht im Feld selbst. Dieses Verhalten wurde vom Zugänglichkeitsteam als Problem bestätigt.
+   * Nach dem Signieren wird das Dialogfeld durch Drücken der Eingabetaste nicht geschlossen. Benutzer müssen explizit auf die Schaltfläche OK klicken.
+   * Nach dem Signieren wird die Registerkartenreihenfolge auf den Anfang zurückgesetzt, anstatt bei der Signaturkomponente zu bleiben oder zur nächsten zu wechseln.
+   * Die Option zum Löschen der Signatur, dargestellt durch ein Kreuzsymbol, ist nicht Teil der Tab-Reihenfolge und wird nur beim Bewegen des Mauszeigers angezeigt.
+   * Auf das Dialogfeld &quot;Signaturbestätigung löschen&quot;kann nicht über die Tastatur zugegriffen werden.
+   * Die Beschriftung der Schaltfläche mit dem Tastaturzeichen sollte aus Gründen der Übersichtlichkeit korrigiert werden.
+   * Bei Steuerelementen innerhalb der Freihandsignatur fehlt das empfohlene Kontrastverhältnis.
+   * Der inaktive Status der Schaltfläche &quot;OK/Häkchen&quot;sollte das Attribut &quot;aria-disabled&quot;enthalten.
+   * Die Bildschirmlesehilfe versendet nicht den Text, der zum Erstellen der eingegebenen Signatur verwendet wird, sodass sie für sehbehinderte Benutzer nicht zugänglich ist.
+* FORMS-9214: Für adaptive Forms, die auf Kernkomponenten basiert, wird die benutzerdefinierte Funktion nur aufgerufen, wenn sie zum Ändern eines anderen Felds verwendet wird, z. B. zum Festlegen des Werts eines anderen Felds.
+* Bei APIs zur Dokumenterstellung zeigt der Pfad &quot;/content&quot;Inkonsistenz in der Verwendung über den Vorlagenpfad, den Inhaltsstamm und Daten hinweg. Es funktioniert in einigen Fällen korrekt, aber nicht einheitlich.
+* FORMS-10718: Unterstützung für die resolveNode-API von GuideBridge für adaptive Forms auf der Basis von Kernkomponenten hinzugefügt.
+* FORMS-9998: Im adaptiven Forms, das auf Kernkomponenten basiert, funktionieren die Funktionen &quot;Ist leer&quot;und &quot;Ist nicht leer&quot;bei der Validierung der Texteingabe über den Regeleditor nicht wie erwartet.
+* FORMS-10236: Die Dateianlagenkomponente funktioniert für Adaptive Forms basierend auf Kernkomponenten nicht ordnungsgemäß. Bei Verwendung der Anlagenkomponente funktioniert die Dateivorschau zunächst. Wenn Sie jedoch zusätzliche Dateien ähnlicher oder unterschiedlicher Typen oder Formate anhängen, funktioniert die Vorschau nicht.
+* FORMS-10470: Wenn in der Kontrollkästchenkomponente der Standardwert deaktiviert (&#39;off&#39;) und der Datentyp String ist, funktioniert die Senden-Schaltfläche nicht.
+* FORMS-10534: In Adaptive Forms basierend auf Kernkomponenten wird auf der linken Seite die boolesche Operandenoption angezeigt, die angibt, dass sie ausgewählt werden kann. Wenn ein Benutzer jedoch versucht, sie auszuwählen, wird eine Fehlerhervorhebung oder eine Fehlermeldung angezeigt, die darauf hinweist, dass die Auswahl nicht erwartungsgemäß funktioniert.
+* FORMS-10248: In Adaptive Forms basierend auf Kernkomponenten funktioniert das Festlegen des Werts für eine Optionsschaltfläche oder ein Kontrollkästchen, wenn der Datenwerttyp Boolesch ist, nicht erwartungsgemäß.
+* FORMS-8114: Die Datumsauswahl und das Muster werden von der NVDA-Bildschirmlesehilfe nicht korrekt gelesen. Insbesondere wird bei Verwendung der NVDA-Bildschirmlesehilfe die Datumsauswahl ohne Muster korrekt gelesen. Wenn jedoch ein Muster auf die Datumsauswahl angewendet wird, wird es als Tabelle gelesen und nicht richtig interpretiert.
+
+
+
+
+
+
 
 ### Bekannte Probleme {#known-issues-13665}
 
