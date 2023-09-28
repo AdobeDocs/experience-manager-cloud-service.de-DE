@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
+source-git-commit: c1e115e0fcf7e168c26f810f0803950df50b2c6f
 workflow-type: tm+mt
-source-wordcount: '5532'
-ht-degree: 91%
+source-wordcount: '5561'
+ht-degree: 90%
 
 ---
 
@@ -46,12 +46,26 @@ Die [!DNL Experience Manager]-Suchfunktionen erlauben die Suche nach Sammlungen 
 ## Verstehen der Asset-Suchoberfläche {#searchui}
 
 Machen Sie sich mit der Asset-Suchoberfläche und den verfügbaren Aktionen vertraut.
+<!--
+![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
+-->
+![Benutzeroberfläche für Experience Manager Assets-Suchergebnisse](assets/aem-search-interface.png)
+*Abbildung: Grundlagen [!DNL Experience Manager Assets] Suchergebnisoberfläche.*
 
-![Wissenswertes zur Benutzeroberfläche für Suchergebnisse von Experience Manager Assets](assets/aem_search_results.png)
-
-*Abbildung: Wissenswertes zur Benutzeroberfläche für Suchergebnisse von [!DNL Experience Manager Assets].*
-
-**A.** Suche als Smart-Sammlung speichern. **B.** Filter oder Prädikate zur Eingrenzung der Suchergebnisse. **C.** Dateien, Ordner oder beides anzeigen. **D.** Klicken Sie auf „Filter“, um die linke Leiste zu öffnen oder zu schließen. **E.** Die Suchposition ist DAM. **F.** Omnisearch-Feld mit benutzerdefiniertem Suchbegriff. **G.** Geladene Suchergebnisse auswählen. **H.** Anzahl der angezeigten Suchergebnisse im Verhältnis zu den gesamten Suchergebnissen. **I.** Suche schließen. **J.** Zwischen Karten- und Listenansicht wechseln.
+**A.** Suche als Smart-Sammlung speichern.
+**B.** Filter oder Prädikate zur Eingrenzung der Suchergebnisse.
+**C.** Dateien, Ordner oder beides anzeigen.
+**D.** Die Suchposition ist DAM.
+**E.** Auf gespeicherte Suchen zugreifen.
+**F.** Klicken Sie auf Filter , um die linke Leiste zu öffnen oder zu schließen.
+**G.** Zeigt Assets als Standardsuche an.
+**H.** Die Suchposition ist DAM.
+**I.** Omnisearch-Feld mit benutzerdefiniertem Suchbegriff.
+**J.** Wählen Sie die geladenen Suchergebnisse aus.
+**K.** Sortieren Sie nach Erstellt, Geändert, Name, Keine.
+**L.** Sortieren nach aufsteigender oder absteigender Reihenfolge
+**M.** Anzahl der angezeigten Suchergebnisse aus der Gesamtzahl der Suchergebnisse. **N.** Schließen Sie die Suche.
+**O.** Zwischen Karten- und Listenansicht wechseln.
 
 ### Dynamische Suchfacetten {#dynamicfacets}
 
@@ -160,7 +174,10 @@ So konfigurieren Sie die Asset-Stapelgröße:
 
 **In einem Ordner nach Assets suchen**: Sie können die Suche auf einen bestimmten Ordner beschränken. Fügen Sie im Bedienfeld **[!UICONTROL Filter]** den Pfad eines Ordners hinzu. Sie können immer nur einen Ordner auf einmal hinzufügen.
 
-![Suchergebnisse durch Hinzufügen eines Ordnerpfads im Bedienfeld „Filter“ auf einen Ordner begrenzen](assets/search_folder_select.gif)
+![Suchergebnisse durch Hinzufügen eines Ordnerpfads im Bedienfeld „Filter“ auf einen Ordner begrenzen](assets/limiting-search.gif)
+<!--
+![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
+-->
 
 *Abbildung: Suchergebnisse durch Hinzufügen eines Ordnerpfads im Bedienfeld „Filter“ auf einen Ordner begrenzen.*
 
@@ -277,7 +294,9 @@ Sie können die folgenden Anfrageparameter in einer URL übergeben, um den Asset
 
 Wechseln Sie für den Zugriff auf die Benutzeroberfläche des Asset-Wählers zu `https://[aem_server]:[port]/aem/assetpicker`. Navigieren Sie zum gewünschten Ordner und wählen Sie mindestens ein Asset aus. Alternativ können Sie im OmniSearch-Feld nach dem gewünschten Asset suchen, je nach Bedarf filtern und das Asset dann auswählen.
 
-![Asset im Asset-Wähler durchsuchen und auswählen](assets/assetpicker.png)
+![Asset im Asset-Wähler durchsuchen und auswählen](assets/select-asset.png)
+
+<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
 
 *Abbildung: Asset im Asset-Wähler durchsuchen und auswählen*
 
