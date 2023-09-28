@@ -2,10 +2,10 @@
 title: Einführung in Cloud Manager
 description: Erfahren Sie, wie Cloud Manager Ihr AEM-Projekt mittels seiner Programme, Umgebungen und Pipelines unterstützt.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 1608a44b8c9b5ae6bd75307ecb29dcd8f0ff367f
+source-git-commit: 0e0daf9870ba2e5923f9ea5dcdf3821a0cd0b7c6
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 82%
+source-wordcount: '861'
+ht-degree: 80%
 
 ---
 
@@ -51,6 +51,8 @@ Sie können auch von der Adobe Experience Cloud-Startseite aus zur Seite Program
 | Persönliches Zugriffs-Token erstellen | Zugriff auf Git |  | x |  | x |
 | Erstellen der RDE | Erstellen einer schnellen Entwicklungsumgebung | x |  |  | x |
 | Zurücksetzen der RDE | Zurücksetzen einer schnellen Entwicklungsumgebung | x |  |  | x |
+| Inhaltssätze erstellen/ändern | Inhaltssatz für Inhaltskopie erstellen oder ändern |  | x |  |  |
+| Inhaltskopie starten/abbrechen | Starten oder Abbrechen eines Inhaltskopierprozesses |  | x |  |  |
 
 >[!NOTE]
 >
