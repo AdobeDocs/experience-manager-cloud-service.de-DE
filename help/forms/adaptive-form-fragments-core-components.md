@@ -4,15 +4,15 @@ description: Adaptive Formulare bieten einen Mechanismus zum Erstellen eines For
 topic-tags: author
 keywords: Adaptive Formularfragmente hinzufügen, adaptive Formularfragmente, Formularfragment erstellen, Fragment zu einem adaptiven Formular hinzufügen, Fragmente verwalten
 feature: Adaptive Forms
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: 290cdecdb355b5c9a872d0f12ac701d271a258d4
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 22%
+source-wordcount: '1745'
+ht-degree: 21%
 
 ---
 
 
-# Adaptive Formularfragmente {#adaptive-form-fragments}
+# Erstellen und Verwenden adaptiver Forms-Fragmente in einem adaptiven Formular basierend auf Kernkomponenten {#adaptive-form-fragments}
 
 
 | Version | Artikel-Link |
