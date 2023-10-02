@@ -8,10 +8,10 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 904b35d31dc317703ad1aec09cefee3c111abcb0
+source-git-commit: a741105afdb2fb4dc3bfb70dc6dcb1bf317a3aea
 workflow-type: tm+mt
-source-wordcount: '4286'
-ht-degree: 92%
+source-wordcount: '4296'
+ht-degree: 91%
 
 ---
 
@@ -540,7 +540,10 @@ ht-degree: 92%
       + [Installieren von [!DNL enhanced connector] für [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Entfernen von externen Abhängigkeiten für vorhandene Installationen](/help/assets/remove-external-dependencies.md)
       + [Konfigurieren von [!DNL enhanced connector] für [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
-      + [Aktualisieren [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+      + [Aktualisieren von  [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+
++ Integration mit Adobe Expreß {#integration-adobe-express}
+   + [AEM Assets-Add-on für Adobe Expreß](/help/assets/addon-adobe-express.md)
 + Formulare {#forms}
    + Übersicht {#forms-overview}
       + [Einführung](/help/forms/home.md)
