@@ -2,10 +2,10 @@
 title: Verwalten von Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM-Inhaltsfragmente verwalten können, die die Grundlage für Ihren Headless-Content bilden.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
 workflow-type: tm+mt
-source-wordcount: '1813'
-ht-degree: 82%
+source-wordcount: '1855'
+ht-degree: 80%
 
 ---
 
@@ -38,7 +38,7 @@ Der [Inhaltsfragment-Editor](#opening-the-fragment-editor) bietet verschiedene [
 >
 >Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**-Konsole verwaltet, können jedoch weiterhin über die **Assets**-Konsole verwaltet werden. In diesem Abschnitt wird die Verwaltung über die **Assets**-Konsole beschrieben.
 >
->Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor beschrieben, auf den Sie hauptsächlich über das **Assets** Konsole. Weitere Informationen finden Sie in der Sites-Dokumentation . [Inhaltsfragmente - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md)für Details zum neuen Editor (hauptsächlich über die **Inhaltsfragmente** -Konsole).
+>Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor beschrieben, auf den Sie hauptsächlich über das **Assets** Konsole. Weitere Informationen finden Sie in der Sites-Dokumentation . [Inhaltsfragmente - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md)für Details zum neuen Editor (hauptsächlich über die **Inhaltsfragmente** -Konsole). Beide Editoren verfügen in der oberen Symbolleiste über einen Umschalter, um einen schnellen Zugriff auf den anderen Editor zu ermöglichen.
 
 ## Erstellen von Inhaltsfragmenten {#creating-content-fragments}
 
@@ -194,6 +194,8 @@ Einige Funktionen in der oberen Symbolleiste stehen in mehreren Modi zur Verfüg
    * **Veröffentlicht**: grün
    * **Geändert**: orange
    * **Deaktiviert**: rot
+
+* Mit einer Schaltfläche können Sie **Neuen Editor testen** durch direktes Öffnen der *new* [Inhaltsfragment-Editor](/help/sites-cloud/administering/content-fragments/authoring.md) , auf die über die [Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
 
 * Über **Speichern** haben Sie Zugriff auf die Option **Speichern und schließen**.
 

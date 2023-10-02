@@ -2,10 +2,10 @@
 title: Arbeiten mit Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service Seiteninhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenbearbeitung und die Headless-Bereitstellung eignen. Auch wie sie zusammen mit MSM verwendet werden können.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
 workflow-type: tm+mt
-source-wordcount: '2211'
-ht-degree: 61%
+source-wordcount: '2229'
+ht-degree: 60%
 
 ---
 
@@ -38,7 +38,7 @@ Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inha
 >
 >Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**-Konsole verwaltet, können jedoch weiterhin über die **Assets**-Konsole verwaltet werden. In diesem Abschnitt wird die Verwaltung über die **Assets**-Konsole beschrieben.
 >
->Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor beschrieben, auf den Sie hauptsächlich über das **Assets** Konsole. Weitere Informationen finden Sie in der Sites-Dokumentation . [Inhaltsfragmente - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md)für Details zum neuen Editor (hauptsächlich über die **Inhaltsfragmente** -Konsole).
+>Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor beschrieben, auf den Sie hauptsächlich über das **Assets** Konsole. Weitere Informationen finden Sie in der Sites-Dokumentation . [Inhaltsfragmente - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md)für Details zum neuen Editor (hauptsächlich über die **Inhaltsfragmente** -Konsole). Beide Editoren verfügen in der oberen Symbolleiste über einen Umschalter, um einen schnellen Zugriff auf den anderen Editor zu ermöglichen.
 
 Diese und die folgenden Seiten behandeln die Aufgaben zum Erstellen, Konfigurieren, Verwalten und Verwenden Ihrer Inhaltsfragmente:
 
