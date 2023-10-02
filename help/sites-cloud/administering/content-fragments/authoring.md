@@ -3,9 +3,9 @@ title: Bearbeiten von Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente erstellen und dann Varianten dieses Inhalts entsprechend dem Zweck erstellen. Dies bietet mehr Flexibilität für die Headless-Bereitstellung und das Seiten-Authoring.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 2fa22bf2feb6b8697877b345bc29821e30b1c6a1
+source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2249'
 ht-degree: 4%
 
 ---
@@ -62,6 +62,11 @@ Beim ersten Öffnen des Inhaltsfragment-Editors werden vier Hauptbereiche angeze
    * eine Option zum Anzeigen aller **Übergeordnete Verweise** (Verknüpfungssymbol)
    * das Fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** und zuletzt gespeicherte Informationen
    * Umschalten auf den ursprünglichen (Assets-basierten) Editor
+
+     >[!WARNING]
+     >
+     >Der ursprüngliche Editor wird auf derselben Registerkarte geöffnet. Es wird nicht empfohlen, beide Editoren gleichzeitig zu öffnen.
+
 * linker Bereich: zeigt die **[Varianten](#variations)** für das Inhaltsfragment und dessen **Felder**:
    * Diese Links können verwendet werden, um [Navigieren in der Inhaltsfragmentstruktur](#navigate-structure)
 * Rechter Bereich: enthält Registerkarten [Anzeigen der Eigenschaften (Metadaten) und Tags](#view-properties-tags), Informationen über die [Versionsverlauf](#view-version-history)sowie Informationen zu allen [Sprachkopien](#view-language-copies)

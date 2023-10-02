@@ -2,10 +2,10 @@
 title: Verwalten von Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM-Inhaltsfragmente verwalten können, die die Grundlage für Ihren Headless-Content bilden.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
+source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 80%
+source-wordcount: '1877'
+ht-degree: 79%
 
 ---
 
@@ -196,6 +196,10 @@ Einige Funktionen in der oberen Symbolleiste stehen in mehreren Modi zur Verfüg
    * **Deaktiviert**: rot
 
 * Mit einer Schaltfläche können Sie **Neuen Editor testen** durch direktes Öffnen der *new* [Inhaltsfragment-Editor](/help/sites-cloud/administering/content-fragments/authoring.md) , auf die über die [Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+
+  >[!WARNING]
+  >
+  >Der neue Editor wird auf derselben Registerkarte geöffnet. Es wird nicht empfohlen, beide Editoren gleichzeitig zu öffnen.
 
 * Über **Speichern** haben Sie Zugriff auf die Option **Speichern und schließen**.
 
