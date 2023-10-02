@@ -1,9 +1,7 @@
 ---
 title: AEM Assets-Add-on für Adobe Expreß
 description: Mit dem AEM Assets-Add-on für Adobe Expreß können Sie über die Adobe Expreß-Benutzeroberfläche direkt auf die in AEM Assets gespeicherten Assets zugreifen.
-hide: true
-hidefromtoc: true
-source-git-commit: 5fe4204bcfdd42edad53ca80b693800aef0a5dc5
+source-git-commit: e9ff2f2b15642288e82ac6f900dc567231bf85c7
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
