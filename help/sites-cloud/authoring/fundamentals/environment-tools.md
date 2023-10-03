@@ -2,9 +2,9 @@
 title: Autorenumgebung und Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: ccd4206f029ac77b90f731891ac300c5d3849ef8
 workflow-type: tm+mt
-source-wordcount: '2150'
+source-wordcount: '2166'
 ht-degree: 92%
 
 ---
@@ -224,7 +224,10 @@ Wenn Ihre Seite Inhaltsfragmente enthält, haben Sie auch Zugriff auf den [Brows
 
 Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen: In bestimmten Situationen sind weitere Aktionen verfügbar, wenn Sie einen bestimmten Verweis auswählen:
 
-* **Eingehende Links** enthält eine Liste der Seiten, die auf die Seite verweisen, und bietet direkten Zugriff zum **Bearbeiten** einer dieser Seiten, wenn Sie einen bestimmten Link auswählen.
+* **Eingehende Links** enthält eine Liste der Seiten, die auf die Seite verweisen, und bietet direkten Zugriff zum **Bearbeiten** einer dieser Seiten, wenn Sie einen bestimmten Link auswählen..
+
+   * Dies kann nur statische Links anzeigen, nicht dynamisch generierte Links, z. B. aus der Listenkomponente.
+
 * Instanzen von geliehenen und verliehenen Inhalten, die die **Referenz**-Komponente verwenden. Sie können von hier aus zur referenzierten Seite navigieren.
 * [Launches](/help/sites-cloud/authoring/launches/overview.md) bietet Zugriff auf zugehörige Launches.
 * [Live Copies](/help/sites-cloud/administering/msm/overview.md) zeigt die Pfade aller Live Copies an, die auf der gewählten Ressource basieren.
