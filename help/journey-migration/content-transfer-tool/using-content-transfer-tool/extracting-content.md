@@ -5,7 +5,7 @@ exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 source-git-commit: 44a3f3c4ca08cffa06056ea85adc58e3cf1f2f1c
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 37%
+ht-degree: 39%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
 >title="Inhaltsextraktion"
->abstract="Extraktion bezieht sich auf das Extrahieren von Inhalten aus der Adobe Experience Manager (AEM)-Quellinstanz in einen temporären Bereich, der als Migrationssatz bezeichnet wird. Ein Migrationssatz ist ein Cloud-Speicherplatzbereich, der von Adobe bereitgestellt wird, um die übertragenen Inhalte vorübergehend zwischen der AEM-Quellinstanz und der Cloud Service-AEM-Instanz zu speichern."
+>abstract="Extraktion bezieht sich auf das Extrahieren von Inhalten aus der Quellinstanz von Adobe Experience Manager (AEM) in einen temporären Bereich, der als Migrationssatz bezeichnet wird. Ein Migrationssatz ist ein Cloud-Speicherplatzbereich, der von Adobe bereitgestellt wird, um die übertragenen Inhalte vorübergehend zwischen der AEM-Quellinstanz und der Cloud Service-AEM-Instanz zu speichern."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=de#top-up-extraction-process" text="Auffüllextraktion"
 
 
