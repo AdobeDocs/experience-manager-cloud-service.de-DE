@@ -1,14 +1,13 @@
 ---
 title: Das Inhaltskopie-Werkzeug
 description: Das Werkzeug zum Kopieren von Inhalten ermöglicht es Benutzern, veränderliche Inhalte bei Bedarf aus ihren Produktionsumgebungen in AEM as a Cloud Service zu niedrigeren Umgebungen zu Testzwecken zu kopieren.
-exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
+source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 50%
 
 ---
-
 
 # Das Inhaltskopie-Werkzeug {#content-copy}
 
@@ -201,3 +200,5 @@ Für das Werkzeug zum Kopieren von Inhalten gelten die folgenden Einschränkunge
 * Das Werkzeug zum Kopieren von Inhalten verfügt über keine Versionierungsfunktion und kann geänderten oder neu erstellten Inhalt in der Quellumgebung in einem Inhaltsset seit dem letzten Vorgang der Inhaltskopie nicht automatisch erkennen.
    * Wenn Sie Ihre Zielumgebung nur mit Inhaltsänderungen aktualisieren möchten, müssen Sie seit dem letzten Vorgang der Inhaltskopie einen Inhaltssatz erstellen. Geben Sie dann die Pfade in der Quellinstanz an, an denen Änderungen seit dem letzten Vorgang der Inhaltskopie vorgenommen wurden.
 * Versionsinformationen sind in einer Inhaltskopie nicht enthalten.
+
+{{ims-group-profiles}}

@@ -2,10 +2,10 @@
 title: IMS-Unterstützung für Adobe Experience Manager as a Cloud Service
 description: Unterstützung von Image Management-Systemen für Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
 workflow-type: tm+mt
-source-wordcount: '1993'
-ht-degree: 39%
+source-wordcount: '1978'
+ht-degree: 38%
 
 ---
 
@@ -21,9 +21,7 @@ ht-degree: 39%
 >
 >Siehe [Zugriff auf AEM für Administratoren konfigurieren](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem?lang=de) für eine Einführung in die Authentifizierung von Benutzern mit Adobe IMS, um as a Cloud Service zu AEM. Erfahren Sie außerdem, wie Adobe IMS-Benutzer, Benutzergruppen und Produktprofile verwendet werden, um den Zugriff auf AEM und deren Funktionen zu steuern. Adobe ID ist erforderlich.
 
->[!NOTE]
->
->AEM unterstützt derzeit nicht die Zuweisung von Gruppen zu Profilen. Benutzer sollten stattdessen einzeln hinzugefügt werden.
+{{ims-group-profiles}}
 
 ## Wichtige Highlights {#key-highlights}
 
@@ -32,7 +30,7 @@ AEM as a Cloud Service bietet IMS-Authentifizierungsunterstützung nur für Auto
 * Die Admin Console stellt Kunden als IMS-Organisationen, Autoren- und Veröffentlichungsinstanzen in einer Umgebung als Produktkontextinstanzen dar. Diese Darstellung ermöglicht es System- und Produktadministratoren, den Zugriff auf Instanzen zu verwalten.
 * Produktprofile in der Admin Console bestimmen, auf welche Instanzen ein Benutzer zugreifen kann.
 * Kunden können ihre eigenen SAML 2-kompatiblen Identitätsanbieter (kurz IDP) für Single Sign-On verwenden.
-* Es werden nur Enterprise IDs oder Federated IDs für Single Sign-On beim Kunden unterstützt, keine persönlichen Adoben-IDs.
+* Es werden nur Enterprise IDs oder Federated IDs für Single Sign-On beim Kunden unterstützt, keine persönlichen Adobe IDs.
 
 ## Architektur {#architecture}
 
@@ -50,7 +48,7 @@ Das Onboarding von Kunden zur Adobe Admin Console ist eine Voraussetzung für di
 
 Als ersten Schritt muss für Kunden eine Organisation in Adobe IMS bereitgestellt werden. Adobe Enterprise-Kunden werden im [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html). In diesem Bereich verwalten Adobe-Kunden ihre Produktberechtigungen für ihre Benutzer und Gruppen.
 
-AEM Kunden sollten bereits über eine Organisation verfügen, und im Rahmen der IMS-Bereitstellung werden die Kundeninstanzen in der Admin Console für die Verwaltung von Benutzerberechtigungen und -zugriff zur Verfügung gestellt.
+AEM Kunden sollten bereits über eine Organisation verfügen. Im Rahmen der IMS-Bereitstellung werden die Kundeninstanzen in Admin Console zur Verwaltung der Benutzerberechtigungen und des Zugriffs bereitgestellt.
 
 Wenn ein Kunde als IMS-Organisation existiert, muss er sein System wie folgt konfigurieren:
 
@@ -84,7 +82,7 @@ Zur einfachen Handhabung der Benutzererstellung können Sie eine `.csv`-Datei ho
 
 **Tool zur Benutzersynchronisierung**
 
-Mit dem Tool zur Benutzersynchronisierung (kurz UST) können Unternehmenskunden von Adobe Adoben mithilfe von Active Directory erstellen und verwalten. Dieses UST funktioniert auch für andere getestete OpenLDAP-Verzeichnisdienste. Die Zielbenutzer sind IT Identity-Administratoren (Enterprise Directory- oder Systemadministratoren), die das Tool installieren und konfigurieren können. Das Open-Source-Tool ist anpassbar, sodass Kunden es an Ihre eigenen Anforderungen anpassen können.
+Mit dem Tool zur Benutzersynchronisierung (kurz UST) können Adobe-Unternehmenskunden Adobe-Benutzer mithilfe von Active Directory erstellen und verwalten. Dieses UST funktioniert auch für andere getestete OpenLDAP-Verzeichnisdienste. Die Zielbenutzer sind IT Identity-Administratoren (Enterprise Directory- oder Systemadministratoren), die das Tool installieren und konfigurieren können. Das Open-Source-Tool ist anpassbar, sodass Kunden es an Ihre eigenen Anforderungen anpassen können.
 
 Wenn die Benutzersynchronisierung ausgeführt wird, ruft sie eine Benutzerliste aus dem Active Directory des Unternehmens ab und vergleicht sie mit der Benutzerliste in der Admin Console. Anschließend ruft es die Adobe User Management-API auf, damit die Admin Console mit dem Verzeichnis des Unternehmens synchronisiert wird. Der Änderungsfluss ist einseitig. Änderungen, die in der Admin Console vorgenommen wurden, werden nicht in das Verzeichnis übertragen.
 
@@ -205,7 +203,7 @@ In AEM können die aus IMS synchronisierten Benutzergruppen vorhandenen lokalen 
 
 ![ACL3](/help/security/assets/ims17.png)
 
-Wie unten gezeigt, die Gruppe **AEM-GRP_008** erbt die Berechtigungen von **DAM-Benutzer**. Diese Vererbung ist eine effektive Möglichkeit zur Verwaltung von Berechtigungen für synchronisierte Gruppen und wird häufig in der LDAP-basierten Authentifizierungsmethode verwendet.
+Wie unten gezeigt, wird die Gruppe **AEM-GRP_008** erbt die Berechtigungen von **DAM-Benutzer**. Diese Vererbung ist eine effektive Möglichkeit zur Verwaltung von Berechtigungen für synchronisierte Gruppen und wird häufig in der LDAP-basierten Authentifizierungsmethode verwendet.
 
 ![ACL3](/help/security/assets/ims18.png)
 
