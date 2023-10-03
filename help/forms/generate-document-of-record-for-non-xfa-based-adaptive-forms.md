@@ -1,11 +1,11 @@
 ---
-title: Generieren eines Datensatzdokuments für adaptive Formulare
-description: Hier erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument (Document of Record, DoR) für adaptive Formulare generieren können.
+title: Generieren eines Datensatzdokuments für adaptive Forms
+description: Erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument (DoR) für adaptive Forms generieren.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '4139'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 

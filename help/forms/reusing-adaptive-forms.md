@@ -1,13 +1,12 @@
 ---
-title: Wiederverwenden von Metadateneigenschaften eines adaptiven Formulars
-seo-title: Reuse metadata properties of an Adaptive Form
-description: Sie können ein vorhandenes adaptives Formular verwenden, um neue adaptive Formulare zu erstellen.
+title: Wie kann ich Metadateneigenschaften eines adaptiven Formulars wiederverwenden?
+description: Entdecken Sie, wie Sie ein vorhandenes adaptives Formular effizient wiederverwenden können, um ein neues zu erstellen.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 86%
+source-wordcount: '613'
+ht-degree: 83%
 
 ---
 

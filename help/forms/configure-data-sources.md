@@ -1,13 +1,13 @@
 ---
 title: Konfigurieren von Data Sources
-description: Mit der Experience Manager Forms-Datenintegration können Sie unterschiedliche Datenquellen konfigurieren und eine Verbindung zu ihnen herstellen. Erfahren Sie, wie Sie RESTful-Webservices, SOAP-basierte Webservices und OData-Services als Datenquellen konfigurieren und diese zum Erstellen von Formulardatenmodellen verwenden.
+description: Erfahren Sie, wie Sie RESTful-Webdienste, SOAP-basierte Webdienste und OData-Dienste als Datenquellen für ein Formulardatenmodell konfigurieren.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2193'
 ht-degree: 97%
 
 ---

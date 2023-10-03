@@ -1,19 +1,14 @@
 ---
-title: Veröffentlichen von Formularen und Dokumenten und Rückgängigmachen von Veröffentlichungen
-seo-title: Publishing and unpublishing forms and documents
-description: Sie können die Veröffentlichung von Formularen und das Rückgängigmachen der Veröffentlichung planen. Veröffentlichte Formulare werden auf der Veröffentlichungsinstanz repliziert.
-seo-description: You can schedule publishing and unpublishing of forms. Published forms are replicated on the publish instance.
-uuid: 0bad5608-b7a8-4599-81cc-2cd0a3dc7dd5
+title: Wie kann ich Formulare und Dokumente veröffentlichen und deren Veröffentlichung rückgängig machen?
+description: Planen Sie die Veröffentlichung und das Rückgängigmachen der Veröffentlichung Ihrer adaptiven Forms. Veröffentlichte Formulare werden auf der Veröffentlichungsinstanz repliziert.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-content-strategy: max-2018
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+docset: aem65s
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 70%
+source-wordcount: '1335'
+ht-degree: 69%
 
 ---
 
@@ -79,7 +74,6 @@ Ein Asset kann über folgende Status verfügen:
       >
       >Wählen Sie nicht mehrere Assets aus. Das gleichzeitige Veröffentlichen mehrerer Assets wird nicht unterstützt.
 
-
 1. Wenn der Veröffentlichungsprozess beginnt, wird ein Bestätigungsdialogfeld angezeigt, in dem alle zugehörigen Assets und Ressourcen aufgelistet sind. Tippen Sie im Dialogfeld, das das zugehörige Asset enthält, auf **[!UICONTROL Veröffentlichen]**. Das Asset wird veröffentlicht, und das Dialogfeld über das erfolgreiche Veröffentlichen des Assets wird angezeigt.
 
    >[!NOTE]
@@ -117,7 +111,7 @@ Führen Sie nun die folgenden Schritte aus, um sämtliche Correspondence Managem
 
 1. Tippen Sie auf **Veröffentlichen** und anschließend in der Bestätigungsmeldung auf **OK**.
 
-   Nach Abschluss eines Batch-Prozesses können Sie die Details der letzten Ausführung anzeigen. Dazu gehören Informationen wie die Administrator-Anmeldung und ob der Batch erfolgreich ausgeführt wurde oder fehlgeschlagen ist.
+   Nachdem ein Batch-Prozess abgeschlossen ist, können Sie die Details der letzten Ausführung anzeigen. Dazu gehören Informationen wie die Administrator-Anmeldung und ob der Batch erfolgreich ausgeführt wurde oder fehlgeschlagen ist.
 
    >[!NOTE]
    >
@@ -193,7 +187,7 @@ Jedes Mal, wenn Sie ein Asset oder einen Brief veröffentlichen, nachdem Sie es 
 
 Sie können die Authentifizierung für Formulare aktivieren, auf die ausgewählte Benutzer zugreifen sollen. Wenn Sie die Authentifizierung für Ihre Formulare aktivieren, sehen Benutzer einen Anmeldebildschirm, bevor sie darauf zugreifen. Nur Benutzer mit autorisierten Anmeldeinformationen können auf die Formulare zugreifen.
 
-So aktivieren Sie die Authentifizierung für Ihre Formulare:
+Aktivieren der Authentifizierung für Ihre Formulare:
 
 1. Öffnen Sie in Ihrem Browser configMgr in der Veröffentlichungsinstanz.\
    URL: `https://<hostname>:<PublishPort>/system/console/configMgr`

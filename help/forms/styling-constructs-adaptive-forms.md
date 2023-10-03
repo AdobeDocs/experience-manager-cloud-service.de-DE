@@ -1,16 +1,14 @@
 ---
-title: Stilkonstrukte für adaptive Formulare
-seo-title: Styling constructs for Adaptive Forms
-description: Verwenden Sie das LESS-Framework, um das Erscheinungsbild adaptiver Formulare anzupassen.
-seo-description: Use LESS framework to customize appearance of Adaptive Forms.
+title: Wie werden Konstrukte für Adaptive Forms gestaltet?
+description: Verwenden Sie das LESS-Framework für Adaptive Forms, um das Erscheinungsbild von Adaptive Forms anzupassen.
 uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2310'
+source-wordcount: '2315'
 ht-degree: 81%
 
 ---
@@ -983,7 +981,7 @@ Diese Variablen beeinflussen die Kopfzeilenleiste, die auf einem Mobilgerät ode
 
 ## Scroll-Indikator {#scroll-indicator}
 
-Diese Variablen beeinflussen den Scroll-Indikator, einen orangefarbenen Pfeil, der auf einem Mobilgerät oder Geräten mit kleinem Bildschirm angezeigt wird. Der Scroll-Indikator zeigt an, dass es Inhalt gibt, der über den sichtbaren Bereich des Bildschirms hinausgeht. Sie können nach unten scrollen, um es zu sehen. Wenn Sie das Ende des Inhalts erreichen, verschwindet der Pfeil.
+Diese Variablen beeinflussen den Scroll-Indikator, bei dem es sich um einen orangefarbenen Pfeil handelt, der auf einem Mobilgerät oder Geräten mit kleinem Bildschirm angezeigt wird. Der Scroll-Indikator zeigt an, dass es Inhalt gibt, der über den sichtbaren Bereich des Bildschirms hinausgeht. Sie können nach unten scrollen, um es zu sehen. Wenn Sie das Ende des Inhalts erreichen, verschwindet der Pfeil.
 
 <table>
  <tbody>

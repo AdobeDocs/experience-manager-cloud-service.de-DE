@@ -1,17 +1,15 @@
 ---
 title: Adaptive Formularfragmente
-seo-title: Adaptive Form Fragments
-description: Adaptive Formulare bieten einen Mechanismus zum Erstellen eines Formularsegments (z. B. eines Bedienfelds oder einer Gruppe von Feldern) und zum Verwenden dieses Segments in einem beliebigen adaptiven Formular. Sie können auch ein vorhandenes Bedienfeld als Fragment speichern.
-seo-description: Adaptive Forms provides a mechanism to create a form segment, such as a panel or a group of fields, as use it in any Adaptive Form. You can also save an existing panel as fragment.
+description: Formularfragment ist eine modulare und wiederverwendbare Komponente eines Formulars. Erfahren Sie, wie Sie Formularfragmente erstellen und sie formularübergreifend wiederverwenden können, um eine effiziente Formularkonfiguration zu gewährleisten.
 uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 17df7ef15fbd4077201f7e0678ffc9ea2732863d
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2028'
-ht-degree: 79%
+source-wordcount: '2018'
+ht-degree: 78%
 
 ---
 

@@ -1,9 +1,10 @@
 ---
-title: Hinzufügen von Forms Portal zu einer AEM Sites-Seite
+title: Erstellen eines Formularportals auf einer Experience Manager Sites-Seite?
 description: Erfahren Sie, wie Sie ein Formularportal erstellen und vordefinierte Kernkomponenten auf einer Seite von AEM Sites verwenden können.
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1839'
 ht-degree: 84%
 
 ---

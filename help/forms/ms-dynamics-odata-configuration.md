@@ -1,14 +1,14 @@
 ---
 title: Konfigurieren von [!DNL Microsoft Dynamics] OData
-description: Dies ermöglicht Ihnen das Erstellen von Formulardatenmodellen basierend auf den im  [!DNL Microsoft Dynamics] -Service definierten Entitäten, Attributen und Services. Das Formulardatenmodell kann verwendet werden, um adaptive Formulare zu erstellen, die mit dem [!DNL Microsoft Dynamics] -Server interagieren, um Unternehmens-Workflows zu ermöglichen.
+description: Erfahren Sie, wie Sie ein Formulardatenmodell basierend auf den in [!DNL Microsoft Dynamics] -Dienst.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 97%
+source-wordcount: '982'
+ht-degree: 95%
 
 ---
 

@@ -1,14 +1,14 @@
 ---
-title: Verwenden Sie den Layout-Modus, um die Größe von Komponenten für adaptive Forms zu ändern.
-description: Definieren Sie die Position von Komponenten mithilfe des responsiven Rasters, das im Layout-Modus verfügbar ist. Hier erfahren Sie, wie Sie auf den Layout-Modus zugreifen, die Größe von Komponenten und Bedienfeldern ändern, Layouts mit mehreren Spalten für ein Bedienfeld definieren, das neue responsive Raster für alte responsive Layouts aktivieren und den Layout-Modus für Formulare mit altem responsiven Layout deaktivieren können.
+title: Verwenden des Layout-Modus zum Ändern der Größe von Komponenten für adaptive Formulare
+description: Definieren Sie die Position der AEM Forms-Komponenten, lernen Sie den Layout-Modus zu öffnen, passen Sie die Größe von Komponenten an, ändern Sie die Größe von Bedienfeldern und definieren Sie das mehrspaltige Layout für ein Bedienfeld.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 91%
+source-wordcount: '1134'
+ht-degree: 90%
 
 ---
 

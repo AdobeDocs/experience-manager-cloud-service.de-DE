@@ -1,11 +1,11 @@
 ---
-title: Integration von DocuSign mit einem adaptiven Formular
+title: Wie integriere ich DocuSign in ein adaptives Formular?
 description: Erfahren Sie, wie Sie DocuSign mit einem adaptiven Formular verwenden können, um E-Signaturen einzuholen.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 97%
+source-wordcount: '1559'
+ht-degree: 99%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 97%
 
 DocuSign ist eine herausragende Lösung für elektronische Signaturen. Damit lassen sich Vereinbarungen elektronisch unterzeichnen. Sie können DocuSign mit einem adaptiven Formular integrieren. Es hilft Ihnen dabei, ein adaptives Formular zur elektronischen Signatur an mehrere Empfänger zu senden. Die Verwendung von elektronischen Signaturen hilft Ihnen bei Folgendem:
 
-- Schließt Geschäfte von jedem Gerät mit vollautomatisierten Angebots-, Anführungszeichen- und Vertragsprozessen.
-- Schnelle Fertigstellung von Personalprozessen und Bereitstellung digitaler Erlebnisse für Ihre Mitarbeiter.
-- Verkürzen Sie die Vertragszykluszeiten und integrieren Sie Ihre Anbieter schneller.
+- Geschäftsabschlüsse von jedem Gerät aus mit vollautomatischen Prozessen für Vorschlag, Angebot und Vertrag.
+- Schnelle Fertigstellung von Personalprozessen und Bereitstellung digitaler Erlebnisse für Ihre Angestellten.
+- Kürzere Vertragszyklen und schnelleres Onboarding Ihrer Lieferanten.
 
 AEM Forms as a Cloud Service bietet eine [benutzerdefinierte Übermittlungsaktion für DocuSign](#deploy-custom-submit-action). Die Übermittlungsaktion hilft Ihnen dabei, die adaptiven Formulare für elektronische Signaturen mithilfe von DocuSign-APIs zu senden.
 
@@ -174,6 +174,7 @@ Erstellen eines signaturfähigen adaptiven Formulars:
    1. Geben Sie **[!UICONTROL Name]** und **[!UICONTROL Titel]** für das adaptive Formular an.
 
    1. Wählen Sie den [Konfigurations-Container](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) aus, der bei der [Integration von [!DNL DocuSign] in [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) erstellt wurde.
+
    Der Konfigurations-Container enthält die für Ihre Umgebung konfigurierten [!DNL DocuSign]-Cloud Services. Diese Services stehen im Editor für adaptive Formulare zur Auswahl.
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Formularmodell]** eine der folgenden Optionen:

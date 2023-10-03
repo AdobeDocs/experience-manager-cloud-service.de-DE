@@ -1,14 +1,14 @@
 ---
 title: Wie werden Inline-Stile auf Komponenten adaptiver Formulare angewendet?
-description: Auf ein adaptives Formular können Sie benutzerdefinierte Stile anwenden, und auf einzelne Komponenten eines adaptiven Formulars sind auch Inline-CSS-Eigenschaften anwendbar. Erfahren Sie, wie Sie Inline-Stile auf Komponenten eines adaptiven Formulars anwenden. Vertiefen Sie das anhand eines Beispiels, in dem Sie einen Inline-Stil auf eine Textfeldkomponente anwenden.
+description: Erfahren Sie, wie Sie benutzerdefinierte Stile auf ein adaptives Formular anwenden können. Sie können auch Inline-CSS-Eigenschaften auf einzelne Komponenten eines adaptiven Formulars anwenden.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 68%
+source-wordcount: '769'
+ht-degree: 64%
 
 ---
 
@@ -25,7 +25,7 @@ Sie können das allgemeine Erscheinungsbild und Design eines adaptiven Formulars
 
 ## Verwenden von Inline-CSS-Eigenschaften {#apply-inline-css-properties}
 
-So fügen Sie einer Komponente Inline-Stile hinzu:
+Hinzufügen von Inline-Stilen zu einer Komponente:
 
 1. Öffnen Sie das Formular im Formular-Editor und ändern Sie den Modus in den Formatierungsmodus. Um den Stilmodus zu aktivieren, tippen Sie in der Symbolleiste der Seite auf ](assets/Smock_ChevronDown.svg)Arbeitsfläche-Dropdown![ > **[!UICONTROL Stil]**.
 1. Wählen Sie eine Komponente auf der Seite aus und tippen Sie auf die Schaltfläche „Bearbeiten“ ![Bearbeiten-Schaltfläche](assets/edit.svg). Die Stileigenschaften werden in der Seitenleiste geöffnet.
@@ -36,7 +36,7 @@ So fügen Sie einer Komponente Inline-Stile hinzu:
 
    Wenn Sie eine Komponente in der Seitenleiste auswählen, sehen Sie alle aufgelisteten Unterkomponenten sowie die Eigenschaften der ausgewählten Komponente. Sie können eine bestimmte Unterkomponente auswählen und formatieren.
 
-1. Klicken Sie auf eine Registerkarte in der Seitenleiste, um CSS-Eigenschaften anzugeben. Sie können Eigenschaften angeben, z. B.:
+1. Klicken Sie auf eine Registerkarte in der Seitenleiste, um CSS-Eigenschaften anzugeben. Sie können Eigenschaften wie die folgenden angeben:
 
    * [!UICONTROL Abmessungen und Position] (Anzeigeeinstellung, Auffüllung, Höhe, Breite, Ränder, Position, Z-Index, „Float“, „Clear“, Überlauf)
    * [!UICONTROL Text] (Schriftfamilie, Stärke, Farbe, Größe, Zeilenhöhe und Ausrichtung)
@@ -88,7 +88,7 @@ Beachten Sie die Änderung des Textfeldstils, die in der folgenden Abbildung gez
    <td>Feld Hilfe Symbol</td>
    <td>Text &gt; Schriftfarbe</td>
    <td>#2ECC40</td>
-   <td>Ändert die Farbe des Gesichts des Hilfesymbols.</td>
+   <td>Ändert die Farbe des Hilfesymbol-Gesichts.</td>
   </tr>
   <tr>
    <td><p>Lange Beschreibung</p> </td>

@@ -1,11 +1,11 @@
 ---
-title: Verwenden von AEM Forms Designer
-description: Verwendung [!DNL Adobe Experience Manager (AEM) Forms] Designer zum Erstellen von Vorlagen für Datensatzdokumente.
+title: Wie kann ich mit Forms Designer Datensatzdokumentvorlagen und Formularfragmente erstellen?
+description: Verwendung [!DNL AEM Forms] Designer zum Erstellen von Datensatzdokumentvorlagen und Formularfragmenten.
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 69%
+source-wordcount: '167'
+ht-degree: 63%
 
 ---
 

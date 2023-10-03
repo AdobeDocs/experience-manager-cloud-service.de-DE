@@ -1,14 +1,14 @@
 ---
 title: Entwerfen eines XML-Schemas für ein adaptives Formular
-description: Erfahren Sie, wie Sie ein XML-Schema als Formularmodell in einem adaptiven Formular verwenden. Finden Sie anhand eines Beispiels für ein XML-Schema mehr heraus, fügen Sie Feldern mithilfe des XML-Schemas spezielle Eigenschaften hinzu und beschränken Sie die gültigen Werte für eine Komponente eines adaptiven Formulars.
+description: Erfahren Sie, wie Sie ein XML-Schema für ein adaptives Formular erstellen und ein adaptives Formular erstellen, das auf dem Schema basiert, um Schemafehlungsdaten zu erstellen.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 55%
+source-wordcount: '950'
+ht-degree: 52%
 
 ---
 
@@ -70,7 +70,7 @@ Diese Zuordnung von XML-Elementen zu Komponenten adaptiver Formulare sieht wie f
    <td>Dropdown</td>
   </tr>
   <tr>
-   <td>Jedes Element vom Typ "Komplex"</td>
+   <td>Jedes Element mit komplexem Typ</td>
    <td>Bedienfeld</td>
   </tr>
  </tbody>

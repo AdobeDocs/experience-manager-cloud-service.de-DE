@@ -1,14 +1,12 @@
 ---
-title: Konfigurieren von Freigegebenen Warteschlangen
-seo-title: Configure shared queues
+title: Wie werden freigegebene Warteschlangen konfiguriert?
 description: Erfahren Sie, wie Sie freigegebene Warteschlangen für Forms-zentrierte Workflows für [!DNL AEM Forms] unter OSGi verwenden.
-seo-description: Learn how to use shared queues for Forms-centric workflows on [!DNL AEM Forms] on OSGi.
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '840'
 ht-degree: 97%
 
 ---

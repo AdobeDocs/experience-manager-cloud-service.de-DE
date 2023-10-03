@@ -1,13 +1,13 @@
 ---
-title: Erstellen oder Hinzufügen eines adaptiven Formulars mit dem AEM Sites-Editor
-description: Sie können adaptive Formulare (Kernkomponenten) auf einer AEM Sites-Seite verwenden, um ein Formular auszufüllen und zu senden, ohne die AEM Sites-Seiten zu verlassen.
+title: Wie kann ich auf der AEM Sites-Seite Kernkomponenten für adaptive Formulare hinzufügen oder erstellen?
+description: Verwenden Sie die Kernkomponenten des adaptiven Formulars auf einer AEM Sites-Seite, um ein Formular auszufüllen und zu senden, ohne die AEM Sites-Seiten zu verlassen.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2129'
-ht-degree: 96%
+source-wordcount: '2131'
+ht-degree: 94%
 
 ---
 

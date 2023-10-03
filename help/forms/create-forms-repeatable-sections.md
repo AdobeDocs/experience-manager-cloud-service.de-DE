@@ -1,14 +1,14 @@
 ---
-title: Wiederholbarkeit im adaptiven Formular (Kernkomponenten)
-description: Verwenden Sie die Wiederholbarkeitsfunktion der Bedienfeldkomponenten, um ähnliche Abschnitte in einem adaptiven Formular zu wiederholen.
+title: Erstellen wiederholbarer Bereiche in den Kernkomponenten des adaptiven Formulars
+description: Erfahren Sie, wie Sie wiederholbare Abschnitte oder Felder in einem adaptiven Formular erstellen.
 role: Architect, Developer, Admin, User
-source-git-commit: fcdb96a6bbe8ff8761293eedc0d38efaecb56037
+exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1390'
 ht-degree: 26%
 
 ---
-
 
 # Erstellen von Formularen mit wiederholbaren Abschnitten (Kernkomponenten) {#repeat-panel}
 
@@ -18,7 +18,7 @@ ht-degree: 26%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-forms-repeatable-sections.html?lang=en) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-Ein wiederholbarer Abschnitt bezieht sich auf einen Teil eines Formulars, der mehrfach dupliziert oder wiederholt werden kann, um Informationen für mehrere Instanzen derselben Daten zu erfassen.
+Ein wiederholbarer Abschnitt bezieht sich auf einen Teil eines Formulars, der mehrmals dupliziert oder wiederholt werden kann, um Informationen für mehrere Instanzen derselben Daten zu erfassen.
 
 Betrachten Sie beispielsweise ein Formular, mit dem Informationen über die Arbeitserfahrung einer Person erfasst werden. Möglicherweise verfügen Sie über einen wiederholbaren Abschnitt zum Erfassen der Details jedes vorherigen Auftrags. Der wiederholbare Abschnitt enthält normalerweise Felder wie Unternehmensname, Berufsbezeichnung, Datum der Beschäftigung und Verantwortlichkeiten für den Auftrag. Der Benutzer kann mehrere Instanzen des wiederholbaren Abschnitts hinzufügen, um Informationen zu den einzelnen Aufträgen einzugeben, die er gespeichert hat.
 
@@ -33,7 +33,7 @@ Am Ende dieses Artikels lernen Sie Folgendes:
 Sie können die [Bedienfeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [Akkordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Horizontale Registerkarten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)oder [Assistent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) Komponenten, um Abschnitte eines adaptiven Formulars wiederholbar zu machen. Sie können untergeordnete Komponenten zum Bedienfeld, Akkordeon, horizontalen Registerkarten oder Assistentenkomponenten hinzufügen, um wiederholbare Abschnitte in einem Formular zu erstellen.
 
 
-Die Beispiele in diesem Dokument basieren auf dem [Bedienfeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) -Komponente. Sie können die gleichen Schritte ausführen, um die [Akkordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Horizontale Registerkarten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)und [Assistent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) wiederholbare Komponenten.
+Die Beispiele in diesem Dokument basieren auf dem [Bedienfeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) -Komponente. Sie können die gleichen Schritte ausführen, um die [Akkordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Horizontale Registerkarten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), und [Assistent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) wiederholbare Komponenten.
 
 ## Hinzufügen oder Löschen wiederholbarer Abschnitte in einem Formular {#add-or-delete-repeatable-section-in-panel-container}
 
@@ -69,7 +69,7 @@ Das übergeordnete Element des Bereichs, der wiederholt werden soll, sollte eine
    Wählen Sie in der Zeile „Formularobjekte“ und „Funktionen“ **Visual Editor.**
 
    1. Wählen Sie im Regelbereich unter „WENN“ den Status **Angeklickt**.
-   1. Wählen Sie unter THEN die Option **Instanz hinzufügen** und ziehen Sie das Bedienfeld per Drag-and-Drop ![Umschalten des Seitenbereichs](/help/forms/assets/toggle-side-panel.png) oder wählen Sie sie mithilfe **Legen Sie ein Objekt ab oder wählen Sie hier aus.**
+   1. Wählen Sie unter THEN die Option **Instanz hinzufügen** und ziehen Sie das Bedienfeld per Drag &amp; Drop ![Umschalten des Seitenbereichs](/help/forms/assets/toggle-side-panel.png) oder wählen Sie sie mithilfe der **Legen Sie ein Objekt ab oder wählen Sie hier aus.**
 
    Auswählen **Code-Editor** in der Zeile &quot;Formularobjekte und Funktionen&quot;. Klicken Sie auf **Regeln bearbeiten** und in den Code-Bereich:
 
@@ -90,7 +90,7 @@ Das übergeordnete Element des Bedienfelds sollte eine Schaltfläche zum Lösche
    Wählen Sie in der Zeile „Formularobjekte“ und „Funktionen“ **Visual Editor.**
 
    1. Im Regelbereich unter WENN **DeletePanel**, Status auswählen **angeklickt wird**.
-   1. Wählen Sie unter THEN die Option **Instanz löschen** und ziehen Sie das Bedienfeld per Drag-and-Drop ![Umschalten des Seitenbereichs](/help/forms/assets/toggle-side-panel.png) oder wählen Sie sie mithilfe **Legen Sie ein Objekt ab oder wählen Sie hier aus.**
+   1. Wählen Sie unter THEN die Option **Instanz löschen** und ziehen Sie das Bedienfeld per Drag &amp; Drop ![Umschalten des Seitenbereichs](/help/forms/assets/toggle-side-panel.png) oder wählen Sie sie mithilfe der **Legen Sie ein Objekt ab oder wählen Sie hier aus.**
 
    Auswählen **Code-Editor** in der Zeile &quot;Formularobjekte und Funktionen&quot;. Klicken Sie auf **Regeln bearbeiten** und in den Code-Bereich:
 
@@ -230,4 +230,4 @@ Im folgenden Code verwendet der `SampleType`Bereich die Eigenschaften „minOccu
 * [Erstellen eines adaptiven Formulars](creating-adaptive-form-core-components.md)
 * [Erstellen von Stilen oder Designs für Ihre Formulare](using-themes-in-core-components.md)
 * [Dynamisches Verhalten zu Formularen mithilfe des Regeleditors hinzufügen](rule-editor.md)
-* [Layout von Formularen für verschiedene Bildschirmgrößen und Gerätetypen festlegen](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Festlegen des Layouts von Formularen für verschiedene Bildschirmgrößen und Gerätetypen](/help/sites-cloud/authoring/features/responsive-layout.md)

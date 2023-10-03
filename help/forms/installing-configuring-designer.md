@@ -1,14 +1,14 @@
 ---
-title: Herunterladen und Installieren von Forms Designer
-description: Sie können Forms Designer verwenden, um XDP- und PDF-Formularvorlagen zu erstellen, die als Vorlage für ein Datensatzdokument dienen. Designer ist zusammen mit der  [!DNL AEM Forms] -Lizenz erhältlich.
+title: Wie wird Forms Designer heruntergeladen und installiert, um Vorlagen für Datensatzdokumente zu erstellen?
+description: Verwenden Sie Forms Designer, um XDP- und PDF-Formularvorlagen zu erstellen, die als Vorlage für ein Datensatzdokument dienen.
 keywords: Installieren von Designer, Installieren von Forms Designer, Anforderungen für die Installation von Forms Designer
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
 source-wordcount: '397'
-ht-degree: 65%
+ht-degree: 61%
 
 ---
-
 
 # Herunterladen und Installieren von Forms Designer {#installing-and-configuring-designer}
 

@@ -1,15 +1,12 @@
 ---
-title: Vorbefüllen von Feldern in adaptiven Formularen
-seo-title: Prefill Adaptive Form fields
-description: Verwenden Sie bestehende Daten, um die Felder eines adaptiven Formulars vorzubefüllen.
-seo-description: With Adaptive Forms, you users can prefill basic information in a form by logging in with their social profiles. This article describes how you can accomplish this.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+title: Wie kann ich adaptive Formularfelder vorbefüllen?
+description: Verwenden Sie vorhandene Daten, um Felder eines adaptiven Formulars vorab auszufüllen. Benutzer können grundlegende Informationen in einem Formular vorab ausfüllen, indem sie sich mit ihren sozialen Profilen anmelden.
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2025'
-ht-degree: 89%
+source-wordcount: '2042'
+ht-degree: 88%
 
 ---
 
@@ -206,7 +203,7 @@ Im Folgenden finden Sie ein Beispiel ohne `afData/afBoundData`-Wrapper:
 
 >[!NOTE]
 >
-> Die Verwendung ungebundener Felder in gebundenen Bereichen (Bereiche mit nicht leerem bindRef-Wert, die durch Ziehen von Komponenten aus dem Sidekick oder der Data Sources-Registerkarte erstellt wurden) ist **not** empfohlen, da dies zu Datenverlust der ungebundenen Felder führen kann. Es wird empfohlen, eindeutige Feldnamen im gesamten Formular zu verwenden, insbesondere für ungebundene Felder.
+> Die Verwendung ungebundener Felder in gebundenen Bereichen (Bereiche mit nicht leerem bindRef-Wert, die durch Ziehen von Komponenten aus der Registerkarte Sidekick oder Data Sources erstellt wurden) ist **not** empfohlen, da dies zu Datenverlust der ungebundenen Felder führen kann. Es wird empfohlen, eindeutige Feldnamen im gesamten Formular zu verwenden, insbesondere für ungebundene Felder.
 >
 
 ### Adaptives Formular ohne Formularmodell {#adaptive-form-with-no-form-model}
@@ -300,7 +297,7 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 ```
 
 - SERVICE_NAME verweist auf den Namen des OSGI-Vorbefüllungs-Service. Siehe [Erstellen und Ausführen eines Vorbefüllungs-Dienstes](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
-- IDENTIFIER bezieht sich auf alle Metadaten, die vom OSGI-Vorbefüllungs-Service erforderlich sind, um die Daten zum Vorbefüllen aufzurufen. Eine Kennung für den angemeldeten Benutzer ist ein Beispiel für Metadaten, die verwendet werden können.
+- IDENTIFIER bezieht sich auf alle Metadaten, die vom OSGI-Vorbefüllungs-Service erforderlich sind, um die Daten zum Vorbefüllen aufzurufen. Eine Kennung für die angemeldete Benutzerin bzw. den angemeldeten Benutzer ist ein Beispiel für Metadaten, die verwendet werden können.
 
 >[!NOTE]
 >

@@ -1,14 +1,12 @@
 ---
-title: Referenzthemen
-seo-title: Reference Themes
-description: AEM Forms bietet anpassungsfähige Formulardesigns, die Sie von Software Distribution beziehen und zur Gestaltung eines Formulars verwenden können.
-seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
+title: AEM Forms Reference Assets
+description: Verwenden Sie die Referenzmodelle für adaptive Formularthemen, Vorlagen und Formulardaten, die bereitgestellt werden, um schnell zu beginnen.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
-source-git-commit: 50d4be07b9563fb5047e9b313ae604cd7633a0e2
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 78%
+source-wordcount: '513'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +26,7 @@ Im Paket enthaltene Referenz-Assets:
 * Urbane
 * Canva
 
-Jedes Design enthält einen einzigartigen und eleganten Stil, den Sie verwenden können, um angenehme adaptive Formulare für Ihre Benutzer zu erstellen. Sie enthält einen eindeutigen Stil für Selektoren wie Bedienfeld, Textfeld, numerisches Feld, Optionsfeld, Tabelle und Switch. Stile in diesen Designs basieren auf Anforderungen. Beispielsweise benötigen Sie in einem bestimmten Szenario ein minimalistisches Design mit sauberen Schriftarten. Mit dem Design „Urbane“ können Sie diesen Look erzielen.
+Jedes Design enthält einen einzigartigen und eleganten Stil, den Sie verwenden können, um ansprechende adaptive Formulare für Ihre Benutzerinnen und Benutzer zu erstellen. Es enthält einen eindeutigen Stil für Selektoren wie Bedienfeld, Textfeld, numerisches Feld, Optionsfeld, Tabelle und Umschalter. Die Stile in diesen Designs basieren auf Anforderungen. Beispielsweise benötigen Sie in einem bestimmten Szenario ein minimalistisches Design mit sauberen Schriftarten. Mit dem Design „Urbane“ können Sie diesen Look erzielen.
 
 ![Referenzthemen](/help/forms/assets/ref-themes.png)
 
@@ -75,7 +73,7 @@ Liberty theme uses a minimalist approach to highlight the important. For example
 
 ### Tranquil {#tranquil}
 
-Das Tranquil-Design bietet helle und dunkle Schattierungen des Tranquil-Farbschemas, um verschiedene Komponenten eines Formulars hervorzuheben. Optionsfelder, Bedienfelder und Registerkarten erhalten beispielsweise eine andere grüne Schattierung.
+Das Tranquil-Design bietet helle und dunkle Schattierungen des Tranquil-Farbschemas, um verschiedene Komponenten eines Formulars hervorzuheben. Beispielsweise erhalten Optionsfelder, Bereiche und Registerkarten jeweils einen anderen Grünton.
 
 ![Tranquil-Design](/help/forms/assets/tranquil.png)
 
@@ -83,7 +81,7 @@ Das Tranquil-Design bietet helle und dunkle Schattierungen des Tranquil-Farbsche
 
 ### Ultramarine {#ultramarine}
 
-Das Ultramarine-Design verwendet tiefe blaue Schattierungen, um Komponenten wie Registerkarten, Bedienfelder, Textfelder und Schaltflächen hervorzuheben.
+Das Ultramarine-Design verwendet dunkelblaue Töne, um Komponenten wie Registerkarten, Bereiche, Textfelder und Schaltflächen hervorzuheben.
 
 ![Ultramarine-Design](/help/forms/assets/ultramarine.png)
 <!--[Click to enlarge](assets/ultramarine-1.png)-->

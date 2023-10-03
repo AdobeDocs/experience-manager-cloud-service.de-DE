@@ -1,12 +1,12 @@
 ---
-title: Importieren oder Exportieren adaptiver Forms- und AEM Forms-Assets
-description: Sie möchten adaptive Formulare und Assets in und von einer AEM-Instanz migrieren? Hier erfahren Sie, wie Sie adaptive Formulare, PDF-Formulare, Designs und andere unterstützende Assets aus einer  [!DNL AEM Forms] -Instanz importieren und exportieren.
-seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
+title: Erfahren Sie, wie Sie adaptive Formulare, PDF-Formulare und andere Assets einer [!DNL AEM Forms]-Instanz importieren, exportieren und organisieren können.
+description: Erfahren Sie, wie Sie adaptive Forms, PDF forms, Designs und andere unterstützende Assets in und von AEM Instanzen migrieren können.
 topic-tags: forms-manager
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1206'
-ht-degree: 83%
+source-wordcount: '1199'
+ht-degree: 82%
 
 ---
 

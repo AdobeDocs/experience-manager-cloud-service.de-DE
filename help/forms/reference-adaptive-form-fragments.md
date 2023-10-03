@@ -1,24 +1,22 @@
 ---
-title: Verweisen auf adaptive Formularfragmente
-seo-title: Reference Adaptive Form Fragments
-description: AEM Forms bietet adaptive Formularfragmente, die Sie als Assets verwenden können, um ein Formular schnell zu erstellen.
-seo-description: AEM Forms provides Adaptive Form Fragments that you can use as assets to create a form quickly.
+title: Was sind Referenzfragmente für adaptive Formulare?
+description: AEM Forms stellt adaptive Formularfragmente bereit, die Sie als Assets verwenden können, um Formulare schnell zu erstellen.
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 90%
+source-wordcount: '423'
+ht-degree: 75%
 
 ---
 
 
 # Verweisen auf adaptive Formularfragmente {#reference-adaptive-form-fragments}
 
-Adaptives Formularfragment steht für eine Gruppe von Feldern oder einen Bereich, der eine Gruppe von Feldern beinhaltet, die Sie verwenden können, wenn Sie ein Formular erstellen. Damit lassen sich Formulare mühelos und schnell erstellen. Sie können mit dem Assets-Browser in der Seitenleiste ein adaptives Formularfragment in ein Formular ziehen und es im Formular-Editor bearbeiten.
+Adaptives Formularfragment steht für eine Gruppe von Feldern oder einen Bereich, der eine Gruppe von Feldern beinhaltet, die Sie verwenden können, wenn Sie ein Formular erstellen. Damit lassen sich Formulare mühelos und schnell erstellen. Sie können ein adaptives Formularfragment per Drag-and-Drop in ein Formular ziehen, indem Sie den Assets-Browser in der Seitenleiste verwenden und im Formular-Editor bearbeiten.
 
 Für Entwickler adaptiver Formulare werden Referenzfragmente im [!DNL AEM Forms]-Paket [[!DNL AEM FORMS] REFERENCE FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS) bereitgestellt. Es beinhaltet folgende Fragmente:
 
@@ -39,7 +37,7 @@ Wenn Sie das Paket installieren, wird unter Forms und Dokumente ein Ordner mit R
 
 ## Adresse {#address}
 
-Enthält Felder, um die Adresse anzugeben. Die verfügbaren Felder sind Straße, Postleitzahl, Stadt, Bundesland und Land. Dazu gehören auch ein vorkonfigurierter Webservice, der Stadt und Staat für eine bestimmte US-Postleitzahl ausfüllt.
+Enthält Felder zur Angabe einer Postanschrift. Die verfügbaren Felder sind Straße, Postleitzahl, Stadt, Bundesland und Land. Dazu gehören auch ein vorkonfigurierter Webservice, der Stadt und Staat für eine bestimmte US-Postleitzahl ausfüllt.
 
 ![Adressfragment](assets/address.png)
 
@@ -49,7 +47,7 @@ Enthält Felder, um die Adresse anzugeben. Die verfügbaren Felder sind Straße,
 
 ## Kontaktangaben {#contact-information}
 
-Enthält Felder zum Erfassen von Telefonnummer und E-Mail-Adresse.
+Enthält Felder zum Erfassen einer Telefonnummer und E-Mail-Adresse.
 
 ![Kontaktangabenfragment](assets/contact-info.png)
 
@@ -60,7 +58,7 @@ Enthält Felder zum Erfassen von Telefonnummer und E-Mail-Adresse.
 ## Kreditkartenangaben {#credit-card-information}
 
 Beinhaltet Felder zur Erfassung von Kreditkartenangaben, die zur Verarbeitung von Zahlungen verwendet werden können.
-[ ![Kreditkartenangabenfragment](assets/cc-info.png)](assets/cc-info-1.png)
+[![Kreditkartenangabenfragment](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Aktuelle Beschäftigung {#current-employment}
 

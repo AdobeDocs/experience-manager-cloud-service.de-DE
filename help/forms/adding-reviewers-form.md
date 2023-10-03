@@ -1,17 +1,16 @@
 ---
 title: Zuweisen von Übermittlungsprüfern mit einem Formular
 seo-title: Associating submission reviewers with a form
-description: Erfahren Sie, wie Sie in  [!DNL AEM Forms] Übermittlungs-Reviewer mit einem Formular verknüpfen. Verknüpfte Reviewer überprüfen ein Formular, das über das Formularportal übermittelt wurde.
-seo-description: Learn how to associate submission reviewers with a form in [!DNL AEM Forms]. Associated reviewers review a form submitted via forms portal.
+description: Freigeben eines adaptiven Formulars zur Überprüfung für einen oder mehrere Überprüfer.
 uuid: 58c8c8fb-9262-4c37-b9b2-e46fe21b77d9
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 95%
+source-wordcount: '483'
+ht-degree: 92%
 
 ---
 

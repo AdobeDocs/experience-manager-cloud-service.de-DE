@@ -1,14 +1,14 @@
 ---
 title: Verwenden des Formulardatenmodells
-description: Erfahren Sie, wie Sie adaptive Formulare und adaptive Formularfragmente auf Grundlage eines Formulardatenmodells erstellen. Finden Sie durch das Erzeugen und Bearbeiten von Beispieldaten für Datenmodellobjekte im Formulardatenmodell mehr heraus. Sie können diese Daten zur Vorschau und zum Testen adaptiver Formulare verwenden.
+description: Erfahren Sie, wie Sie adaptive Forms und Fragmente basierend auf einem Formulardatenmodell (FDM) erstellen. Erstellen und bearbeiten Sie Beispieldaten für Datenmodellobjekte im FDM.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: a6e76d2b3650d57adafe543b2b694360e4bb4169
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1244'
-ht-degree: 62%
+source-wordcount: '1226'
+ht-degree: 59%
 
 ---
 

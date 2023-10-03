@@ -1,18 +1,16 @@
 ---
-title: Erstellen barrierefreier adaptiver Formulare
-seo-title: Creating accessible Adaptive Forms
-description: AEM Forms stellt Ihnen Werkzeuge zum Erstellen barrierefreier adaptiver Formulare bereit und vereinfacht die Einhaltung von Standards bezüglich der Barrierefreiheit.
-seo-description: AEM Forms provides you tools and to create accessible Adaptive Forms and helps comply with accessibility standards.
+title: Wie erstelle ich barrierefreie adaptive Forms?
+description: AEM Forms bietet Tools zum Erstellen barrierefreier adaptiver Forms und hilft bei der Einhaltung von Barrierefreiheitsstandards.
 uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 77%
+source-wordcount: '2025'
+ht-degree: 76%
 
 ---
 
@@ -47,7 +45,7 @@ ANDI funktioniert mit allen gängigen Internetbrowsern. Detaillierte Anweisungen
 
 ### Herunterladen und Installieren des „Ultramarine-Accessible“-Designs
 
-Das „Ultramarine-Accessible“-Design („Ultramarinblau – Barrierefreiheit“) ist ein Referenzdesign. Es hilft, zu veranschaulichen, wie Sie Farbkontrast- und andere Probleme mit der Barrierefreiheit in einem adaptiven Formular beheben können. Adobe empfiehlt, basierend auf den von Ihrem Unternehmen genehmigten Stilen ein benutzerdefiniertes Design für die Produktionsumgebung zu erstellen. Führen Sie die folgenden Schritte aus, um das Thema in Ihre AEM-Instanz hochzuladen:
+Das „Ultramarine-Accessible“-Design („Ultramarinblau – Barrierefreiheit“) ist ein Referenzdesign. Es hilft, zu veranschaulichen, wie Sie Farbkontrast- und andere Probleme mit der Barrierefreiheit in einem adaptiven Formular beheben können. Adobe empfiehlt die Erstellung eines benutzerdefinierten Designs für die Produktionsumgebung basierend auf den von Ihrem Unternehmen genehmigten Stilen. Führen Sie die folgenden Schritte aus, um das Thema in Ihre AEM-Instanz hochzuladen:
 
 1. Laden Sie das Designpaket herunter.
 1. Navigieren Sie in Ihrer AEM-Instanz zu **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigation](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulare]**.

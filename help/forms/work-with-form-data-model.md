@@ -1,13 +1,13 @@
 ---
 title: Arbeiten mit dem Formulardatenmodell
-description: Erfahren Sie, wie Sie Datenmodellobjekte und Services hinzufügen, Datenmodellobjekte und untergeordnete Eigenschaften erstellen, Services konfigurieren, Zuordnungen hinzufügen und mit Navigationseigenschaften von OData-Services arbeiten. Finden Sie genauer heraus, wie Sie Beispieldaten erzeugen und bearbeiten, Datenmodellobjekte sowie Services testen und die Validierung von Eingabedaten automatisieren können.
+description: Fügen Sie Datenmodellobjekte und Dienste hinzu, erstellen Sie Datenmodellobjekte und untergeordnete Eigenschaften, konfigurieren Sie Dienste, arbeiten Sie mit Navigationseigenschaften von OData-Diensten.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '4137'
+source-wordcount: '4108'
 ht-degree: 80%
 
 ---

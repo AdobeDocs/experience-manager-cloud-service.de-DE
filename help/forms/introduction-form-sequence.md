@@ -1,14 +1,14 @@
 ---
-title: Wie wird eine mehrstufige Formularsequenz erstellt?
-description: Mit [!DNL Experience Manager Forms] können Sie eine Sequenz von Formularbereichen definieren, damit die Benutzer in einem adaptiven Formular navigieren und es ausfüllen können. Vertiefen Sie Ihre Kenntnisse, indem Sie sich an einem Anwendungsfall als Beispiel für das Erstellen einer mehrstufigen Formularsequenz orientieren.
+title: Wie erstelle ich eine mehrstufige Formularsequenz?
+description: Mit [!DNL Experience Manager Forms] können Sie eine Sequenz von Formularbereichen definieren, damit die Benutzer in einem adaptiven Formular navigieren und es ausfüllen können.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 69%
+source-wordcount: '547'
+ht-degree: 67%
 
 ---
 
@@ -35,7 +35,7 @@ Nehmen wir ein Fallbeispiel, in dem Sie für ein Formular eine Sequenz der Schri
 
    In diesem Beispiel können wir die folgenden Bedienfelder hinzufügen:
 
-   * **[!UICONTROL Füllung]**: Sie enthält Formularfelder zur Datenerfassung. Hier können Sie verschachtelte untergeordnete Bedienfelder einfügen, um Abschnitte für verschiedene Arten von Informationen zu erstellen, z. B. persönlicher, familiärer, finanzieller Art usw.
+   * **[!UICONTROL Füllung]**: Enthält Formularfelder zum Erfassen von Daten. Hier können Sie verschachtelte untergeordnete Bedienfelder einfügen, um Abschnitte für verschiedene Arten von Informationen zu erstellen, z. B. persönlicher, familiärer, finanzieller Art usw.
 
    <!--* **[!UICONTROL Verify]**: It contains the **[!UICONTROL Verify]** component that can be used in an XFA-based Adaptive Form. It displays the information captured in the Fill panel in read-only mode for verification.-->
 

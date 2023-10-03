@@ -1,13 +1,11 @@
 ---
-title: Erstellen und Verwenden von Designs
-description: Mithilfe von Designs können Sie ein adaptives Formular formatieren und ihm eine visuelle Identität verleihen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
-seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
-keywords: Neues Design erstellen, Design anpassen, neues Design hochladen, Design in Formularen verwenden, Design mithilfe der Frontend-Pipeline anpassen
+title: Wie werden Designs in Adaptive Forms erstellt und verwendet?
+description: Sie können Designs verwenden, um ein adaptives Formular mithilfe von Kernkomponenten zu gestalten und eine visuelle Identität bereitzustellen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2709'
-ht-degree: 16%
+source-wordcount: '2697'
+ht-degree: 17%
 
 ---
 
@@ -24,8 +22,8 @@ Sie können Designs erstellen und anwenden, um ein adaptives Formular zu formati
 
 Forms as Cloud Service bietet die folgenden aufgelisteten Designs für Kernkomponenten-basiertes adaptives Forms:
 
-* [Arbeitsflächendesign](https://github.com/adobe/aem-forms-theme-canvas)
-* [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
+* [Design „Canvas“](https://github.com/adobe/aem-forms-theme-canvas)
+* [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
 
 ## Grundlegendes zur Struktur der Themen
@@ -46,8 +44,8 @@ Ein Design ist ein Paket, das die CSS-Datei, JavaScript-Dateien und Ressourcen (
 
 Forms bietet die folgenden aufgelisteten Designs für die auf Kernkomponenten basierende adaptive Forms.
 
-* [Arbeitsflächendesign](https://github.com/adobe/aem-forms-theme-canvas)
-* [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
+* [Design „Canvas“](https://github.com/adobe/aem-forms-theme-canvas)
+* [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
 
 Sie können [Anpassen dieser Designs, um ein neues Design zu erstellen](#customize-a-theme-core-components).
@@ -95,8 +93,8 @@ Die im Dokument bereitgestellten Beispiele basieren auf dem **Arbeitsfläche** -
 
 Um ein Design für die auf Kernkomponenten basierende adaptive Forms zu klonen, wählen Sie eines der folgenden Designs:
 
-* [Arbeitsflächendesign](https://github.com/adobe/aem-forms-theme-canvas)
-* [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
+* [Design „Canvas“](https://github.com/adobe/aem-forms-theme-canvas)
+* [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
 
 Um ein Design zu klonen, führen Sie die folgenden Anweisungen aus:
@@ -136,7 +134,7 @@ Um ein Design zu klonen, führen Sie die folgenden Anweisungen aus:
 
    Der Ordner wird im Visual Studio-Code geöffnet.
 
-1. Öffnen Sie die Datei `package.json`, um sie zu bearbeiten.
+1. Öffnen Sie die Datei `package.json` zur Bearbeitung.
 
 1. Legen Sie die Werte für die `name` und `description` -Attribute.
 
@@ -159,7 +157,7 @@ Sie können einzelne Komponenten anpassen oder Änderungen auf Designebene mithi
 
 Die `variable.scss` -Datei enthält die globalen Variablen des Designs. Durch Aktualisierung dieser Variablen können Sie stilistisch relevante Änderungen auf der Designebene vornehmen. Gehen Sie wie folgt vor, um Stile auf Designebene anzuwenden:
 
-1. Öffnen Sie die Datei `<your-theme-sources>/src/site/_variables.scss`, um sie zu bearbeiten.
+1. Öffnen Sie die Datei `<your-theme-sources>/src/site/_variables.scss` zur Bearbeitung.
 1. Ändern Sie den Wert einer beliebigen Eigenschaft. Die standardmäßige Fehlerfarbe lautet beispielsweise `red`. So ändern Sie die Fehlerfarbe von `red` nach `blue`ändern Sie den Farb-Hex-Code des `$errorvariable`. Zum Beispiel: `$error: #196ee5`.
 1. Speichern und schließen Sie die Datei.
 
@@ -334,7 +332,7 @@ Nun können Sie die Änderungen an das Design-Repository Ihres AEM Forms-Cloud S
    git push [name-for-createdrepository]
    ```
 
-   Beispiel:
+   Zum Beispiel:
 
    ```
    git remote add canvascloudthemerepo https://git.cloudmanager.adobe.com/stage-aemformsdev/customcanvastheme/

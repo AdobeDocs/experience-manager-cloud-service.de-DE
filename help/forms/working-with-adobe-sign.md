@@ -1,17 +1,17 @@
 ---
 title: Verwenden von [!DNL Adobe Sign] in einem adaptiven Formular
-description: Indem Sie Workflows mit E-Signatur ([!DNL Adobe Sign]) für ein adaptives Formular aktivieren, können Sie Signatur-Workflows automatisieren, Prozesse mit mindestens einer Signatur vereinfachen und Formulare elektronisch von Mobilgeräten aus signieren.
+description: Verwenden Sie Adobe Sign in einem adaptiven Formular, damit Formularempfänger ein Formular auf dem Gerät und an dem Ort ihrer Wahl e-signieren können.
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '3173'
-ht-degree: 97%
+source-wordcount: '3169'
+ht-degree: 96%
 
 ---
-
 
 # Verwenden von [!DNL Adobe Sign] in einem adaptiven Formular {#using-adobe-sign-in-an-adaptive-form}
 

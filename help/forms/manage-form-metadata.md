@@ -1,12 +1,10 @@
 ---
-title: Verwalten von Metadaten
-seo-title: Manage [!DNL AEM Forms] metadata
+title: Verwalten von Metadaten für AEM Forms
 description: Metadaten ermöglichen eine einfachere Kategorisierung und Organisation der Assets und erleichtern Benutzern die Suche nach einem bestimmten Asset.
-seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1738'
 ht-degree: 67%
 
 ---
@@ -66,7 +64,7 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
   <tr> 
    <td>Typ</td> 
    <td>Alle</td> 
-   <td><p>Ein schreibgeschützter Wert, der den Asset-Typ angibt. Er kann einen der folgenden Werte aufweisen:</p> 
+   <td><p>Ein schreibgeschützter Wert, der den Typ des Assets angibt. Er kann einen der folgenden Werte aufweisen:</p> 
     <ul> 
      <li>Formularvorlage</li> 
      <li>PDF-Formular, PDF-Formular (Acroform) oder PDF-Formular (Signiert)</li> 
@@ -142,7 +140,7 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
      <li>HTML</li> 
      <li>PDF</li> 
      <li>Beide</li> 
-    </ul> <p>Mit dieser Option wird das Renderformat der Formulare nur im Forms Portal eingeschränkt, wo sie für den Endbenutzer sichtbar sind.</p> </td> 
+    </ul> <p>Diese Option wird verwendet, um das Renderformat der Formulare nur im Forms Portal zu beschränken, wo sie für den Endbenutzer sichtbar sind.</p> </td> 
   </tr> 
   <tr> 
    <td>Tags</td> 
@@ -154,8 +152,8 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
    <td><p>Adaptives Formular</p> <p>Formularvorlage</p> <p>Ressource</p> </td> 
    <td><p>Liste der Assets (andere Formulare oder Ressourcen), mit denen dieses Formular verknüpft ist. Diese Assets können in die folgenden beiden Kategorien unterteilt werden:</p> 
     <ul> 
-     <li>Verweist auf: Assets, auf die sich das aktuelle Formular bezieht.</li> 
-     <li>Verwiesen von: Assets, die auf das aktuelle Asset verweisen.</li> 
+     <li>Refers: Assets, auf die sich das aktuelle Formular bezieht.</li> 
+     <li>Referred by: Assets, die auf das aktuelle Asset verweisen.</li> 
     </ul> <p>Diese Assets werden als Links angezeigt und der Zugriff auf ihre Metadaten erfolgt direkt durch Klicken auf sie.<br /> </p> </td> 
   </tr> 
   <tr> 
@@ -234,7 +232,7 @@ Im linken Bedienfeld der Eigenschaftsseite wird die Miniaturansicht des Formular
 
 Für alle Formulartypen haben Sie die Möglichkeit, ein Bild hochzuladen, indem Sie auf **[!UICONTROL Bild hochladen]** und suchen Sie nach einer Bilddatei aus dem lokalen Verzeichnis. Das ausgewählte Bild wird anstelle des Standardbilds als Miniaturansicht verwendet.
 
-Bei adaptiven Formularen werden zusätzliche Funktionen bereitgestellt, mit denen der Benutzer eine Miniaturansicht als Momentaufnahme der aktuellen Vorschau des adaptiven Formulars generieren kann. Da [!DNL AEM Forms] auch das Erstellen adaptiver Formulare unterstützt, kann sich die Vorschau des adaptiven Formulars ändern, wenn Sie das adaptive Formular ändern. Mit dieser Funktion zum Generieren einer Miniaturansicht können Sie eine neue Miniaturansicht für das adaptive Formular erzeugen, die auf dem aktuellen Vorschaustatus basiert. Klicken **[!UICONTROL Vorschau generieren]** um diese Maßnahme durchzuführen.
+Bei adaptiven Formularen werden zusätzliche Funktionen bereitgestellt, mit denen der Benutzer eine Miniaturansicht als Momentaufnahme der aktuellen Vorschau des adaptiven Formulars generieren kann. Da [!DNL AEM Forms] auch das Erstellen adaptiver Formulare unterstützt, kann sich die Vorschau des adaptiven Formulars ändern, wenn Sie das adaptive Formular ändern. Mit dieser Funktion zum Generieren einer Miniaturansicht können Sie eine neue Miniaturansicht für das adaptive Formular erzeugen, die auf dem aktuellen Vorschaustatus basiert. Klicks **[!UICONTROL Vorschau generieren]** um diese Maßnahme durchzuführen.
 
 >[!NOTE]
 >
@@ -291,8 +289,8 @@ Ein Tool (Metadatenschema-Editor) wird bereitgestellt, um das Schema für das Me
 
 1. Klicken Sie auf eine Komponente, die Sie gerade verschoben haben. Geben Sie in der Registerkarte „Einstellungen“, die im rechten Bedienfeld geöffnet wird, die Informationen für folgende Felder ein:
 
-   1. Geben Sie eine Feldbezeichnung an, die als Anzeigename über dem im Schema platzierten Feld verwendet werden soll (z. B.: Abteilung)
-   1. Unter dem Feld „Zu Eigenschaft zuordnen“ wird ein bereits befüllter Wert angezeigt **„./jcr:content/metadata/default&#39;**. Ändern Sie die **default**&#39; auf einen gewünschten Eigenschaftsnamen, der zum Speichern der Eigenschaft im CRX-Repository verwendet wird (z. B.: &quot;./jcr:content/metadata/department“)
+   1. Geben Sie eine Feldbezeichnung an, die als Anzeigename über dem im Schema platzierten Feld verwendet werden soll (z. B. Abteilung)
+   1. Unter dem Feld „Zu Eigenschaft zuordnen“ wird ein bereits befüllter Wert angezeigt **„./jcr:content/metadata/default&#39;**. Ändern Sie die **default**&#39; auf einen gewünschten Eigenschaftsnamen, der zum Speichern der Eigenschaft im CRX-Repository verwendet wird (z. B. &#39;./jcr:content/metadata/department“)
 
       >[!NOTE]
       >

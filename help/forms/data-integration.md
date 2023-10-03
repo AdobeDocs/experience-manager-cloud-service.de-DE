@@ -1,10 +1,11 @@
 ---
-title: Verbinden von AEM Forms mit einer Datenbank
-description: Sie können Daten aus  [!DNL AEM Forms]  as a Cloud Service abrufen und sie in RESTful-Webservices, SOAP-basierten Webservices und OData-Services speichern. Der Service bietet ein dediziertes Tool zum Abrufen, Testen, Validieren und Senden von Daten an verschiedene Datenquelltypen.
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+title: Verbinden einer Datenbank mit [!DNL AEM Forms] as a Cloud Service
+description: Rufen Sie Daten von einem adaptiven Formular oder einem AEM Workflow ab und speichern Sie sie in RESTful-Webdiensten, SOAP-basierten Webdiensten und OData-Diensten.
+exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 78%
+source-wordcount: '555'
+ht-degree: 75%
 
 ---
 
