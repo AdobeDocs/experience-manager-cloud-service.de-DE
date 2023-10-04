@@ -3,13 +3,13 @@ title: Bearbeiten von Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente erstellen und dann Varianten dieses Inhalts entsprechend dem Zweck erstellen. Dies bietet mehr Flexibilität für die Headless-Bereitstellung und das Seiten-Authoring.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
+exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
+source-git-commit: e92e0d76ed5aa904c3e16bcfda13650fb6a8b5b6
 workflow-type: tm+mt
-source-wordcount: '2249'
+source-wordcount: '2253'
 ht-degree: 4%
 
 ---
-
 
 # Bearbeiten von Inhaltsfragmenten {#authoring-content-fragments}
 
@@ -32,23 +32,9 @@ Dieser Editor bietet Folgendes:
 * Fähigkeit [Anzeigen und Öffnen von übergeordneten Verweisen](#view-parent-references).
 * Eine hierarchische Ansicht des Inhaltsfragments und seiner Verweise mithilfe der [Strukturstruktur](#structure-tree).
 
->[!CAUTION]
+>[!WARNING]
 >
 >Der in diesem Abschnitt beschriebene Editor ist: *only* verfügbar im *online* Adobe Experience Manager (AEM) as a Cloud Service.
-
->[!CAUTION]
->
->Zum Bearbeiten eines Inhaltsfragments benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, wenn Probleme auftreten.
-> 
->Wenn Sie beispielsweise `edit` -Berechtigungen ist der Editor schreibgeschützt.
-
->[!NOTE]
->
->Umfassende Informationen zu den [ursprünglicher Inhaltsfragmente-Editor](/help/assets/content-fragments/content-fragments-variations.md) - sie ist sowohl über die **Assets** und **Inhaltsfragmente** Konsole.
-
->[!NOTE]
->
->Ihr Projektteam kann den Editor bei Bedarf anpassen. Siehe [Anpassen der Inhaltsfragment-Konsole und des Editors](/help/implementing/developing/extending/content-fragments-console-and-editor.md) für weitere Informationen.
 
 ## Inhaltsfragment-Editor {#content-fragment-editor}
 
@@ -76,12 +62,6 @@ Beim ersten Öffnen des Inhaltsfragment-Editors werden vier Hauptbereiche angeze
    * if **Registerkartenplatzhalter** -Felder werden innerhalb des Modells definiert, das hier angezeigt wird, und können für die Navigation verwendet werden. Sie werden entweder horizontal oder als Dropdown-Liste angezeigt
 
 ![Inhaltsfragmente-Editor - Übersicht](assets/cf-authoring-overview.png)
-
->[!CAUTION]
->
->Ein Inhaltsfragmentmodell kann häufig Datenfelder definieren, die **Titel** und **Beschreibung**. Wenn diese Felder vorhanden sind, handelt es sich um benutzerdefinierte Felder, die im *Zentralbereich* beim Bearbeiten des Fragments.
->
->Das Inhaltsfragment und seine Varianten verfügen auch über Metadatenfelder (Varianteneigenschaften) namens **Titel** und **Beschreibung**. Diese Felder sind integraler Bestandteil jedes Inhaltsfragments und werden beim Fragment anfänglich definiert. Sie können im Abschnitt *Rechter Bereich* beim Bearbeiten des Fragments.
 
 ## Navigieren zur Inhaltsfragmentstruktur {#navigate-structure}
 
@@ -494,3 +474,19 @@ Die **Felder** enthält alle Felder im Inhaltsfragment. Das Symbol zeigt die **[
   </tr>
  </tbody>
 </table>
+
+## Wissenswertes {#good-to-know}
+
+Zusätzlich:
+
+* Zum Bearbeiten eines Inhaltsfragments benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, wenn Probleme auftreten.
+
+  Wenn Sie beispielsweise `edit` -Berechtigungen ist der Editor schreibgeschützt.
+
+* Ein Inhaltsfragmentmodell kann häufig Datenfelder definieren, die **Titel** und **Beschreibung**. Wenn diese Felder vorhanden sind, handelt es sich um benutzerdefinierte Felder, die im *Zentralbereich* beim Bearbeiten des Fragments.
+
+  Das Inhaltsfragment und seine Varianten verfügen auch über Metadatenfelder (Varianteneigenschaften) namens **Titel** und **Beschreibung**. Diese Felder sind integraler Bestandteil jedes Inhaltsfragments und werden beim Fragment anfänglich definiert. Sie können im Abschnitt *Rechter Bereich* beim Bearbeiten des Fragments.
+
+* Umfassende Informationen zu den [ursprünglicher Inhaltsfragmente-Editor](/help/assets/content-fragments/content-fragments-variations.md) - sie ist sowohl über die **Assets** und **Inhaltsfragmente** Konsole.
+
+* Ihr Projektteam kann den Editor bei Bedarf anpassen. Siehe [Anpassen der Inhaltsfragment-Konsole und des Editors](/help/implementing/developing/extending/content-fragments-console-and-editor.md) für weitere Informationen.
