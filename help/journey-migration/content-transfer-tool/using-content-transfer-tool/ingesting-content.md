@@ -2,10 +2,10 @@
 title: Erfassen von Inhalten in Cloud Service
 description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ihrem Migrationssatz in eine Ziel-Cloud Service-Instanz aufnehmen können.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
+source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
 workflow-type: tm+mt
-source-wordcount: '2142'
-ht-degree: 32%
+source-wordcount: '2191'
+ht-degree: 28%
 
 ---
 
@@ -20,9 +20,6 @@ ht-degree: 32%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=de#top-up-extraction-process" text="Auffüllextraktion"
 
 Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager zu erfassen:
-
->[!NOTE]
->Haben Sie ein Support-Ticket für diesen Aufnahmevorgang erstellt? Weitere Informationen zu diesen und anderen Überlegungen zur erfolgreichen Aufnahme finden Sie unter [Wichtige Überlegungen vor Verwendung des Content Transfer Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=de#important-considerations).
 
 1. Gehen Sie zum Cloud Acceleration Manager. Klicken Sie auf Ihre Projektkarte und dann auf die Karte Inhaltstransfer . Navigieren Sie zu **Aufnahmevorgänge** und klicken **Neue Erfassung**
 
@@ -120,21 +117,27 @@ Diese Meldung weist darauf hin, dass der Cloud Acceleration Manager nicht in der
 > Das Feld „Migrations-Token“ wird angezeigt, da in einigen Fällen das Abrufen dieses Tokens tatsächlich nicht zulässig ist. Durch die manuelle Bereitstellung kann die Benutzerin oder der Benutzer die Aufnahme schnell und ohne zusätzliche Hilfe starten. Wenn das Token bereitgestellt wird und die Nachricht weiterhin angezeigt wird, war das Abrufen des Tokens nicht das Problem.
 
 * AEM as a Cloud Service behält den Umgebungsstatus bei und muss gelegentlich den Migrationsdienst aus verschiedenen normalen Gründen neu starten. Wenn dieser Dienst neu gestartet wird, kann er nicht erreicht werden, ist aber schließlich verfügbar.
-* Es ist möglich, dass ein anderer Prozess in der Instanz ausgeführt wird. Wenn z. B. der Release-Server ein Update anwendet, ist das System möglicherweise ausgelastet und der Migrationsdienst ist regelmäßig nicht verfügbar. Daher wird dringend empfohlen, Aktualisierungen während einer Erfassung auszusetzen, da dies die Staging- oder Produktionsinstanz beschädigen kann.
+* Es ist möglich, dass ein anderer Prozess in der Instanz ausgeführt wird. Wenn beispielsweise [AEM Versionsaktualisierungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=de) eine Aktualisierung ausführt, das System möglicherweise ausgelastet ist und der Migrationsdienst regelmäßig nicht verfügbar ist. Sobald dieser Vorgang abgeschlossen ist, kann der Beginn der Aufnahme erneut versucht werden.
 * Wenn eine [IP-Zulassungsliste wurde angewendet](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Cloud Manager verhindert, dass Cloud Acceleration Manager den Migrationsdienst erreicht. Eine IP-Adresse kann nicht für die Aufnahme hinzugefügt werden, da ihre Adresse dynamisch ist. Derzeit besteht die einzige Lösung darin, die IP-Zulassungsliste während der Aufnahme zu deaktivieren.
 * Es kann andere Gründe geben, die untersucht werden müssen. Wenn die Aufnahme weiterhin fehlschlägt, wenden Sie sich an die Adobe-Kundenunterstützung.
 
-### Automatische Aktualisierungen über Release Orchestrator sind weiterhin aktiviert
+### AEM-Versionsaktualisierungen und -verschreibungen
 
-Release Orchestrator hält Umgebungen durch die automatische Anwendung von Aktualisierungen automatisch auf dem aktuellen Stand. Wenn die Aktualisierung bei der Ausführung einer Aufnahme ausgelöst wird, kann dies zu unvorhersehbaren Ergebnissen führen, einschließlich der Beschädigung der Umgebung. Ein guter Grund, ein Support-Ticket vor der Aufnahme zu protokollieren (siehe &quot;Hinweis&quot;oben), damit die zeitweilige Deaktivierung des Freigabe-Dispatches geplant werden kann.
+[AEM Versionsaktualisierungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=de) werden automatisch auf Umgebungen angewendet, um sie mit der neuesten AEM as a Cloud Service Version auf dem neuesten Stand zu halten. Wenn die Aktualisierung bei der Ausführung einer Aufnahme ausgelöst wird, kann dies zu unvorhersehbaren Ergebnissen führen, einschließlich der Beschädigung der Umgebung.
 
-Wenn der Release-Server beim Start einer Aufnahme noch ausgeführt wird, wird diese Meldung in der Benutzeroberfläche angezeigt. Sie können trotzdem fortfahren und das Risiko eingehen, indem Sie das Feld markieren und die Taste erneut drücken.
+Wenn die &quot;AEM Versionsaktualisierungen&quot;im Zielprogramm integriert ist, versucht der Aufnahmevorgang, die Warteschlange zu deaktivieren, bevor sie gestartet wird. Wenn die Aufnahme abgeschlossen ist, wird der Status des Versionsaktualisierers so zurückgegeben, wie er vor dem Start der Aufnahme(en) war.
 
 >[!NOTE]
 >
-> Die Veröffentlichungsumgebungen werden jetzt in Entwicklungsumgebungen bereitgestellt, sodass auch Aktualisierungen in diesen Umgebungen angehalten werden sollten.
+> Es ist nicht mehr erforderlich, ein Support-Ticket zu protokollieren, um &quot;AEM Versionsaktualisierungen&quot;zu deaktivieren.
 
-![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+Wenn &quot;AEM Versionsaktualisierungen&quot;aktiv ist (d. h. Aktualisierungen werden ausgeführt oder in die Warteschlange gestellt), beginnt die Aufnahme nicht und die Benutzeroberfläche zeigt die folgende Meldung an. Sobald die Aktualisierungen abgeschlossen sind, kann die Aufnahme gestartet werden. Cloud Manager kann verwendet werden, um den aktuellen Status der Pipelines des Programms anzuzeigen.
+
+>[!NOTE]
+>
+> &quot;AEM Versionsaktualisierungen&quot;wird in der Pipeline der Umgebung ausgeführt und wartet, bis die Pipeline gelöscht ist. Wenn Updates länger als erwartet in die Warteschlange gestellt werden, stellen Sie sicher, dass die Pipeline in einem benutzerdefinierten Workflow nicht unbeabsichtigt gesperrt wird.
+
+![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
 ### Fehler bei Auffüllaufnahme Aufgrund der Eindeutigkeitsbeschränkung
 

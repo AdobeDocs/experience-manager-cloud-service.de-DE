@@ -2,9 +2,9 @@
 title: Richtlinien und Best Practices für die Verwendung des Content Transfer Tool
 description: Erfahren Sie mehr über die Richtlinien und Best Practices für die Verwendung des Content Transfer Tool.
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1432'
 ht-degree: 60%
 
 ---
@@ -78,12 +78,6 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 * Die vom Content Transfer Tool übertragenen Benutzenden und Gruppen sind nur diejenigen, die vom Inhalt zur Erfüllung der Berechtigungen benötigt werden. Im _Extraktionsprozess_ wird alles unter `/home` in den Migrationssatz kopiert und eine Benutzerzuordnung erstellt, indem ein aus der E-Mail-Adresse jedes Benutzers bzw. jeder Benutzerin generiertes Feld hinzugefügt wird. Weitere Informationen finden Sie unter [Benutzerzuordnung und Prinzipalmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Im _Aufnahmeprozess_ werden alle Benutzenden und Gruppen, auf die in den migrierten Inhalts-ACLs verwiesen wird, kopiert. Siehe [Migrieren geschlossener Benutzergruppen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) für zusätzliche Überlegungen zu Gruppen, die in einer CUG-Richtlinie (Closed User Group, geschlossene Benutzergruppe) verwendet werden.
 
 * Während der Extraktionsphase wird das Content Transfer Tool in einer aktiven AEM-Quellinstanz ausgeführt.
-
-* Erstellen Sie ein Support-Ticket nach Abschluss der *Extraktionsphase* des Prozesses zur Inhaltsübertragung und vor dem Start der *Aufnahmephase*, um Inhalte in Ihre *Staging*- oder *Produktionsinstanzen* von AEM as a Cloud Service aufzunehmen. Adobe über Ihre Absicht informieren, *Aufnahme* damit Adobe sicherstellen kann, dass während der *Aufnahme* -Prozess. Öffnen Sie das Support-Ticket eine Woche vor dem geplanten *Aufnahmedatum*. Nachdem Sie das Support-Ticket gesendet haben, bietet das Supportteam Anleitungen zu den nächsten Schritten an. Sie können ein Support-Ticket mit den folgenden Details senden:
-
-   * Genaues Datum und geschätzte Uhrzeit (mit Ihrer Zeitzone), zu der Sie die *Aufnahmephase* starten möchten.
-   * Umgebungstyp (Phase oder Produktion), in den Sie Daten aufnehmen möchten.
-   * Programm-ID.
 
 * In der *Aufnahmephase* für die Autoreninstanz wird die gesamte Autorenbereitstellung herunterskaliert. Das bedeutet, dass die AEM während des gesamten Aufnahmevorgangs nicht verfügbar ist. Stellen Sie außerdem sicher, dass keine Cloud Manager-Pipelines ausgeführt werden, während Sie die *Aufnahme* Phase.
 
