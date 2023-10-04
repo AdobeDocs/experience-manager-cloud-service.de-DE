@@ -2,9 +2,9 @@
 title: Protokollieren für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie mithilfe der Protokollierung für AEM as a Cloud Service globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festlegen oder die Datenprotokollierung anfordern können.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 7d4e1acee54ebcb1398bcc6ab83491e3fa6a8801
+source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2657'
 ht-degree: 82%
 
 ---
@@ -501,11 +501,6 @@ Define DISP_LOG_LEVEL debug
 >Bei AEM as a Cloud Service-Umgebungen ist „debug“ die maximale Ausführlichkeitsstufe. Die Trace-Protokollebene wird nicht unterstützt. Daher sollten Sie beim Arbeiten in Cloud-Umgebungen vermeiden, sie festzulegen.
 
 ## CDN-Protokoll {#cdn-log}
-
->[!NOTE]
->
->Diese Funktion wird Anfang September schrittweise für Kunden eingeführt.
->
 
 AEM as a Cloud Service bietet Zugriff auf CDN-Protokolle, die für Anwendungsfälle nützlich sind, einschließlich der Optimierung der Cache-Trefferquote. Das CDN-Protokollformat kann nicht angepasst werden und es gibt kein Konzept, es auf verschiedene Modi wie Info, Warn oder Fehler festzulegen.
 
