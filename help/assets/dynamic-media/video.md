@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 1df4f371fe4a98b910634b4742d9ff1a9448674f
+source-git-commit: 00cd62aa64c183a0560326feaacda1db70627858
 workflow-type: tm+mt
-source-wordcount: '9442'
-ht-degree: 63%
+source-wordcount: '9448'
+ht-degree: 64%
 
 ---
 
@@ -551,6 +551,7 @@ Gleichzeitig erstellen Sie ein Adobe-Support-Szenario, bei dem DASH für Ihr Kon
 1. Um einen Support-Fall zu erstellen, befolgen Sie die Anweisungen und stellen Sie dabei sicher, dass Sie die folgenden Informationen bereitstellen:
 
    * Name des Hauptansprechpartners, E-Mail, Telefon.
+   * Ihre Programm-ID und Umgebungs-ID.
    * Name Ihres Dynamic Media-Kontos.
    * Geben Sie an, dass in Ihrem Dynamic Media-Konto in Experience Manager 6.5 DASH-, Multi-Subtitle- und Multi-Audio-Track-Unterstützung aktiviert werden soll.
 
@@ -565,7 +566,7 @@ Gleichzeitig erstellen Sie ein Adobe-Support-Szenario, bei dem DASH für Ihr Kon
 
 ## Über die Unterstützung von Multiuntertiteln und Multiaudio-Track für Videos in Dynamic Media{#about-msma}
 
-Mit der Funktion für mehrere Untertitel und mehrere Audiospuren in Dynamic Media können Sie einem Hauptvideo mühelos mehrere Untertitel und Audiospuren hinzufügen. Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
+Mit der Funktion für mehrere Untertitel und mehrere Audiospuren in Dynamic Media können Sie einem Hauptvideo mühelos mehrere Untertitel und Audiospuren hinzufügen. Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autorinnen und Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
 
 ![Registerkarte &quot;Untertitel und Audiospuren&quot;in Dynamic Media zusammen mit einer Tabelle mit hochgeladenen .VTT-Untertiteldateien und hochgeladenen .MP3-Audiospur-Dateien für ein Video.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
 
