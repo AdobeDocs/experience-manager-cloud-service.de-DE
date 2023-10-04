@@ -1,21 +1,21 @@
 ---
-title: Bearbeiten im Kontext
+title: Bearbeiten im Kontext mit dem universellen Editor
 description: Erfahren Sie, wie Sie mit dem universellen Editor beliebige Aspekte Ihres Inhalts an Ort und Stelle und im Kontext in jeder Implementierung bearbeiten können.
 hidefromtoc: true
 index: false
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
+source-git-commit: 226df8999d1344ffe8acb2a9ce75b58634300a11
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '971'
 ht-degree: 9%
 
 ---
 
-
-# Bearbeiten im Kontext {#editing-in-context}
+# Bearbeiten im Kontext mit dem universellen Editor {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="Bearbeiten im Kontext"
+>title="Bearbeiten im Kontext mit dem universellen Editor"
 >abstract="Erfahren Sie, wie Ihre Headless-Apps den universellen Editor nutzen können, um Ihren Autorinnen und Autoren reibungslose, kontextbezogene Bearbeitung zu ermöglichen."
 
 >[!CONTEXTUALHELP]
