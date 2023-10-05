@@ -3,12 +3,13 @@ title: Verwalten von Pipelines
 description: Erfahren Sie, wie Sie Ihre vorhandenen Pipelines verwalten, einschließlich Bearbeiten, Ausführen und Löschen.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8d692e354851a31b4f66b24135c863b5ca723b4
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 97%
+source-wordcount: '667'
+ht-degree: 80%
 
 ---
+
 
 # Verwalten von Pipelines {#managing-pipelines}
 
@@ -74,7 +75,9 @@ Je nach Pipeline-Typ können Sie die Ausführung möglicherweise abbrechen, inde
 >
 >Eine laufende Pipeline kann nicht gelöscht werden.
 
-## Details anzeigen {#view-details}
+## Pipeline-Details anzeigen {#view-details}
+
+Sie können die Details einer Pipeline anzeigen, um den Status und die Protokolle ihrer letzten Ausführung anzuzeigen.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
@@ -84,8 +87,32 @@ Je nach Pipeline-Typ können Sie die Ausführung möglicherweise abbrechen, inde
 
 ![Pipeline-Details](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-running-details.png)
 
-Von hier aus können Sie den Status der verschiedenen Schritte der Pipeline einsehen und Build-Protokolle zu Diagnosezwecken abrufen. Weitere Informationen finden Sie im Dokument [Bereitstellen des Codes](/help/implementing/cloud-manager/deploy-code.md).
+Von hier aus können Sie den Status der verschiedenen Schritte der Pipeline einsehen und Build-Protokolle zu Diagnosezwecken abrufen. Siehe Dokument . [Bereitstellen des Codes](/help/implementing/cloud-manager/deploy-code.md) für weitere Informationen zur Codebereitstellung und zur Ausführung von Tests.
 
 >[!NOTE]
 >
 >Sie können nur Details einer Pipeline anzeigen, die gerade ausgeführt wird oder mindestens einmal ausgeführt worden ist.
+
+## Pipelines abbrechen {#cancel}
+
+Wenn sich eine Pipeline in der Validierungs- oder Build-Bildphase befindet, können Sie den Pipeline-Ausführen sicher abbrechen.
+
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
+
+1. Klicken Sie auf der Programmübersichtsseite auf die Suchschaltfläche der Pipeline, die Sie abbrechen möchten. **Pipelines** Karte.
+
+   ![Abbruch einer Pipeline](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
+
+1. Tippen oder klicken **Abbrechen**.
+
+Alternativ können Sie eine Pipeline auf der Seite mit den Pipeline-Details abbrechen.
+
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
+
+1. Navigieren Sie zum **Pipelines** Registerkarte aus **Programmübersicht** und tippen oder klicken Sie auf die Pipeline, die Sie abbrechen möchten.
+
+1. Sie gelangen zur Detailseite der Pipeline, die gerade ausgeführt wird.
+
+   ![Pipeline-Details abbrechen](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
+
+1. Tippen oder klicken **Abbrechen**.

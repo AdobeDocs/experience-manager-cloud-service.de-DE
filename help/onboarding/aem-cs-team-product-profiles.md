@@ -2,12 +2,13 @@
 title: AEM as a Cloud Service – Team- und Produktprofile
 description: Erfahren Sie, wie Sie über AEM as a Cloud Service Team- und Produktprofile erstellen und den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren oder einschränken.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 83%
+source-wordcount: '853'
+ht-degree: 74%
 
 ---
+
 
 # AEM as a Cloud Service – Team- und Produktprofile {#product-profiles}
 
@@ -54,10 +55,18 @@ Cloud Manager verfügt über vorkonfigurierte Produktprofile, die man sich als r
 
 Jedem Produktprofil sind spezifische Berechtigungen zugeordnet.
 
-* **Geschäftsinhaber**: In dieser Rolle haben Sie die Berechtigung, ein neues Programm hinzuzufügen oder ein Programm zu bearbeiten, eine Umgebung hinzuzufügen oder zu aktualisieren, Code in der AEM-Umgebung bereitzustellen oder Code-Qualitätsprüfungen durchzuführen.
-* **Bereitstellungs-Manager**: In dieser Rolle sind Sie berechtigt, eine Umgebung hinzuzufügen oder zu aktualisieren, eine beliebige Pipeline auszuführen und Code in der AEM-Umgebung bereitzustellen oder Code-Qualitätsprüfungen durchzuführen.
-* **Entwickler**: In dieser Rolle sind Sie berechtigt, persönliche Zugriffs-Token für den Zugriff auf Git zu generieren.
-* **Programm-Manager**: In dieser Rolle sind Sie berechtigt, Pipelines zu planen, die dreistufigen Quality Gates außer Kraft zu setzen und Produktionsgenehmigungen zu erteilen.
+* **Geschäftsinhaber**
+   * In dieser Rolle können Sie ein neues Programm hinzufügen oder ein Programm bearbeiten, eine Umgebung hinzufügen oder aktualisieren, Code in AEM Umgebung bereitstellen oder Code-Qualitätsprüfungen durchführen.
+   * Dieser Anwender ist verantwortlich für die Definition von KPIs, die Genehmigung von Produktionbereitstellungen und das Überschreiben von gravierenden 3-Tier-Fehlern, falls erforderlich.
+* **Bereitstellungs-Manager**
+   * In dieser Rolle sind Sie berechtigt, eine Umgebung hinzuzufügen oder zu aktualisieren, eine beliebige Pipeline auszuführen, Code für AEM Umgebung bereitzustellen oder Code-Qualitätsprüfungen durchzuführen.
+   * Dieser Anwender verwaltet die Bereitstellungsvorgänge mit Cloud Manager, um Staging- und Produktionsbereitstellungen durchzuführen, CI/CD-Pipeline zu bearbeiten, kann bei Bedarf gravierende 3-Tier-Fehler genehmigen und hat Zugriff auf das Git-Repository.
+* **Entwickler**
+   * In dieser Rolle haben Sie die Berechtigung, persönliche Zugriffstoken für den Zugriff auf Git zu generieren.
+   * Dieser Anwender entwickelt und testet benutzerdefinierten Anwendungscode, verwendet Cloud Manager hauptsächlich zur Anzeige des Bereitstellungsstatus und für Code-Commits auf das Git-Repository zugreifen.
+* **Programm-Manager**
+   * In dieser Rolle haben Sie die Berechtigung, Pipelines zu planen, die dreistufigen Quality Gates zu überschreiben und eine Produktionsgenehmigung zu erteilen.
+   * Dieser Anwender nutzt Cloud Manager, um die Einrichtung von Teams vorzunehmen, den Status zu überprüfen, KPIs einzusehen und ggf. gravierende 3-Tier-Fehler zu genehmigen.
 
 Benutzende können mehreren Produktprofilen zugewiesen werden. Wenn Sie beispielsweise einem Benutzer bzw. einer Benutzerin die beiden Rollen **Geschäftsinhaber** und **Bereitstellungs-Manager** zuweisen, erhält er/sie die Summe aller dieser Berechtigungen.
 

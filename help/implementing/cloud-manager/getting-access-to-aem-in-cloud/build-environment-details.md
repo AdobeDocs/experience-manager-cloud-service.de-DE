@@ -2,10 +2,10 @@
 title: Build-Umgebung
 description: Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie sie den Code erstellt und testet.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: d3bc5dbb5a88aff7765beffc8282d99063dde99f
+source-git-commit: 08cb1b4fc74e03a931551042814afb2d722005a5
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 92%
+source-wordcount: '1039'
+ht-degree: 86%
 
 ---
 
@@ -19,9 +19,10 @@ Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie s
 Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellungsumgebung.
 
 * Die Erstellungsumgebung ist Linux-basiert und von Ubuntu 18.04 abgeleitet.
-* Apache Maven 3.6.0 ist installiert.
-* Die installierten Java-Versionen sind Oracle JDK 8u202 und Oracle JDK 11.0.2.
-* Standardmäßig wird die Umgebungsvariable `JAVA_HOME` auf `/usr/lib/jvm/jdk1.8.0_202` festgelegt, was Oracle JDK 8u202 enthält. Weitere Einzelheiten finden Sie im Abschnitt [Alternative Maven-Ausführung JDK-Version](#alternate-maven-jdk-version).
+* Mit dem [Version von Cloud Manager, Oktober 2023](/help/implementing/cloud-manager/release-notes/current.md) Java- und Maven-Versionen werden laufend aktualisiert.
+   * Apache Maven 3.6.0 oder 3.8.8 ist installiert.
+   * Die installierten Java-Versionen sind Oracle JDK 8u202 und Oracle JDK 11.0.2. oder Oracle JDK 8u371 und Oracle JDK 11.0.20.
+   * Standardmäßig wird die Variable `JAVA_HOME` Umgebungsvariable auf `/usr/lib/jvm/jdk1.8.0_202` die Oracle JDK 8u202 oder `/usr/lib/jvm/jdk1.8.0_371` enthält Oracle JDK 8u371. Siehe [JDK-Version der alternativen Maven-Ausführung](#alternate-maven-jdk-version) für weitere Details.
 * Es sind einige zusätzliche erforderliche Systempakete installiert.
 
    * `bzip2`
