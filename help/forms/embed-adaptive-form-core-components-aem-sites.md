@@ -4,9 +4,9 @@ description: Verwenden Sie die Kernkomponenten des adaptiven Formulars auf einer
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '2131'
+source-wordcount: '2150'
 ht-degree: 94%
 
 ---
@@ -267,3 +267,8 @@ Die AEM Sites-Seite enthält einen Verweis auf das adaptive Formular. Wenn Sie e
 
 * Die Kopf- und Fußzeile im Originalformular sind nicht im eingebetteten Formular enthalten.
 * Benutzerentwürfe und -übermittlungen von eingebetteten Formularen werden unterstützt und sind auf den Registerkarten „Entwürfe“und „Gesendete Formulare“ im Formularportal sichtbar.
+
+>[!MORELIKETHIS]
+>
+>* [Einbetten des adaptiven Formulars basierend auf Kernkomponenten in eine externe Webseite](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+>* [Anpassungsfähige Formulare in externe Web-Seiten einbetten](/help/forms/embed-adaptive-form-external-web-page.md)

@@ -1,16 +1,16 @@
 ---
-title: Anpassungsfähige Formulare in externe Web-Seiten einbetten
-description: Erfahren Sie, wie Sie ein adaptives Formular in eine externe Webseite einbetten
+title: Wie bettet man ein adaptives Formular, das auf Kernkomponenten basiert, in eine externe Webseite ein?
+description: Erfahren Sie, wie Sie eine adaptive Forms in eine Website einbetten.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
+exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 63%
+source-wordcount: '984'
+ht-degree: 61%
 
 ---
-
 
 # Einbetten des adaptiven Formulars basierend auf Kernkomponenten in eine externe Webseite {#embed-adaptive-form-in-external-web-page}
 
@@ -162,6 +162,3 @@ Beachten Sie beim Einbetten eines adaptiven Formulars in eine Webseite die folge
 1. Gehen Sie in der AEM-Veröffentlichungsinstanz zum Konfigurations-Manager der AEM-Web-Konsole unter `https://'[server]:[port]'/system/console/configMgr`.
 1. Suchen Sie die Konfiguration **Apache Sling Referrer Filter** und öffnen Sie sie.
 1. Geben Sie im Feld Zulässige Hosts die Domain an, in der sich die Webseite befindet. Dadurch kann der Host POST-Anforderungen an den AEM-Server senden. Sie können auch einen regulären Ausdruck verwenden, um eine Reihe von externen Anwendungs-Domains anzugeben.
-
-
-
