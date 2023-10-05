@@ -1,17 +1,17 @@
 ---
-title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.09.0
-description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2022.09.0
+title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.10.0
+description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2022.10.0
 feature: Release Information
-source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
+source-git-commit: 2ff6aeeb0145695aa44c79f42aefd53c7c545fea
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 38%
+source-wordcount: '124'
+ht-degree: 46%
 
 ---
 
-# Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.09.0 {#release-notes}
+# Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.10.0 {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2022.09.0.
+Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2022.10.0.
 
 ## Content Transfer Tool {#ctt-release}
 
@@ -21,10 +21,4 @@ Die Version 3.0.0 des Content Transfer Tool wurde am 7. September 2023 veröffen
 
 ### Neue Funktionen {#what-is-new-ctt}
 
-Das Content Transfer Tool wurde erheblich verbessert und bietet nun folgende Vorteile:
-* Verringerte Übertragungszeit bei der Migration einer Teilmenge eines Inhalts-Repositorys durch Nutzung von AzCopy, um nur die erforderlichen Blob-IDs zu kopieren, anstatt alle Blob-IDs zu kopieren
-* Schnellere differenzielle Auffüllungen von Inhalten mit Oak-Upgrade
-* Die Stabilität wurde verbessert, indem der Indizierungsprozess vom Inhaltserfassungsprozess getrennt wurde. Im Falle einer fehlgeschlagenen Indizierung müssen Inhalte nicht erneut erfasst werden. Nur die Indizierung startet automatisch neu, wodurch viel Zeit und Aufwand eingespart wird.
-
-
-
+Am Prozess der Inhaltsaufnahme wurden Änderungen vorgenommen - Es ist nicht mehr erforderlich, ein Ticket für die Kundenunterstützung/den Support einzureichen, um die AEM-Versionsaktualisierungen in der Zielumgebung zu deaktivieren. Dieser Prozess ist jetzt automatisiert. Weitere Informationen finden Sie unter [AEM-Versionsaktualisierungen und -verschreibungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#aem-version-updates-and-ingestions)
