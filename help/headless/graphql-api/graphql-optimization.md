@@ -2,10 +2,10 @@
 title: Optimieren von GraphQL-Abfragen
 description: Erfahren Sie, wie Sie Ihre GraphQL-Abfragen beim Filtern, Paging und Sortieren Ihrer Inhaltsfragmente in Adobe Experience Manager as a Cloud Service optimieren können, um Headless-Inhalte bereitzustellen.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: ba864cb28d2de0559d36f113e8e154ed5c115cae
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 96%
+source-wordcount: '1877'
+ht-degree: 62%
 
 ---
 
@@ -14,6 +14,84 @@ ht-degree: 96%
 >[!NOTE]
 >
 >Bevor Sie diese Optimierungsempfehlungen anwenden, empfehlen wir Ihnen, [Ihre Inhaltsfragmente für Paging und Sortierung in der GraphQL-Filterung zu aktualisieren](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md), um eine optimale Leistung zu erzielen.
+
+Diese Richtlinien helfen Ihnen bei der Vermeidung von Leistungsproblemen bei Ihren GraphQL-Abfragen.
+
+## GraphQL-Checkliste {#graphql-checklist}
+
+Die folgende Checkliste soll Ihnen dabei helfen, die Konfiguration und Verwendung von GraphQL in Adobe Experience Manager (AEM) as a Cloud Service zu optimieren.
+
+### Erste Grundsätze {#first-principles}
+
+#### Verwenden persistenter GraphQL-Abfragen {#use-persisted-graphql-queries}
+
+**Empfehlung**
+
+Die Verwendung von persistenten GraphQL-Abfragen wird dringend empfohlen.
+
+Beständige GraphQL-Abfragen helfen durch die Verwendung des Content Delivery Network (CDN) bei der Reduzierung der Abfrageleistung. Clientanwendungen fordern persistente Abfragen mit GET-Anforderungen an, um eine schnelle Edge-fähige Ausführung zu ermöglichen.
+
+**Weitere Informationen**
+
+Siehe:
+
+* [Persistierte GraphQL-Abfragen](/help/headless/graphql-api/persisted-queries.md).
+* [Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen](/help/headless/graphql-api/sample-queries.md)
+
+### Cache-Strategie {#cache-strategy}
+
+Zur Optimierung können auch verschiedene Methoden der Zwischenspeicherung verwendet werden.
+
+#### Aktivieren AEM Dispatcher-Caching {#enable-aem-dispatcher-caching}
+
+**Empfehlung**
+
+[AEM Dispatcher](/help/implementing/dispatcher/overview.md) ist der Zwischenspeicher der ersten Ebene im AEM-Dienst vor dem CDN-Cache.
+
+**Weitere Informationen**
+
+Siehe:
+
+* [Persistente GraphQL-Abfragen - Aktivierung der Zwischenspeicherung im Dispatcher](/help/headless/deployment/dispatcher-caching.md)
+
+#### Verwenden eines Content Delivery Network (CDN) {#use-cdn}
+
+**Empfehlung**
+
+GraphQL-Abfragen und ihre JSON-Antworten können zwischengespeichert werden, wenn sie als Ziel ausgewählt werden. `GET` Anfragen bei Verwendung eines CDN. Im Gegensatz dazu können nicht zwischengespeicherte Anfragen sehr (ressourcenintensiv) teuer und langsam verarbeitet werden, was weitere nachteilige Auswirkungen auf die Ressourcen des Ursprungs haben kann.
+
+**Weitere Informationen**
+
+Siehe:
+
+* [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
+
+#### Festlegen von HTTP-Cache-Steuerelement-Headern {#set-http-cache-control-headers}
+
+**Empfehlung**
+
+Bei der Verwendung von persistenten GraphQL-Abfragen mit einem CDN wird empfohlen, geeignete HTTP-Cache-Steuerelement-Header festzulegen.
+
+Jede beibehaltene Abfrage kann über einen eigenen Satz von Cache-Steuerelement-Headern verfügen. Die Kopfzeilen können über die [GraphQL-API](/help/headless/graphql-api/content-fragments.md) oder [AEM GraphiQL-IDE](/help/headless/graphql-api/graphiql-ide.md).
+
+**Weitere Informationen**
+
+Siehe:
+
+* [Caching persistenter Abfragen](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
+* [Verwaltung des Cache für Ihre persistenten Abfragen](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+
+#### Verwenden AEM GraphQL-Vorab-Zwischenspeicherung {#use-aem-graphql-pre-caching}
+
+**Empfehlung**
+
+Diese Funktion ermöglicht es AEM, Inhalte im Rahmen von GraphQL-Abfragen weiter zwischenzuspeichern, die dann als Blöcke in der JSON-Ausgabe und nicht als Zeilen pro Zeile zusammengestellt werden können.
+
+**Weitere Informationen**
+
+Wenden Sie sich an Adobe, um diese Funktion für Ihr AEM Cloud Service-Programm und Ihre Umgebungen zu aktivieren.
+
+### GraphQL-Abfrageoptimierung {#graphql-query-optimization}
 
 Auf einer AEM-Instanz mit einer großen Anzahl von Inhaltsfragmenten, die dasselbe Modell verwenden, können GraphQL-Listenabfragen kostenintensiv sein (im Hinblick auf Ressourcen).
 
@@ -25,14 +103,16 @@ Um Leistungs- und Speicherprobleme zu vermeiden, muss diese anfängliche Ergebni
 
 AEM bietet zwei Methoden zur Optimierung von GraphQL-Abfragen:
 
-* [Hybride Filterung](#hybrid-filtering)
-* [Paging](#paging) (oder Paginierung)
+* [Hybride Filterung](#use-aem-graphql-hybrid-filtering)
+* [Paging](#use-graphql-pagination) (oder Paginierung)
 
-   * [Sortierung](#sorting) ist nicht direkt mit der Optimierung verbunden, sondern mit dem Paging
+   * [Sortierung](#use-graphql-sorting) ist nicht direkt mit der Optimierung verbunden, sondern mit dem Paging
 
-Jede Methode beinhaltet eigene Anwendungsfälle und Einschränkungen. In diesem Dokument finden Sie Informationen zur hybriden Filterung und zum Paging sowie einige [Best Practices](#best-practices), um GraphQL-Abfragen zu optimieren.
+Jede Methode beinhaltet eigene Anwendungsfälle und Einschränkungen. In diesem Abschnitt finden Sie Informationen zum Hybrid-Filter und zum Paging sowie einige der [Best Practices](#best-practices) zur Verwendung bei der Optimierung von GraphQL-Abfragen.
 
-## Hybride Filterung {#hybrid-filtering}
+#### Verwenden AEM GraphQL Hybrid-Filterung {#use-aem-graphql-hybrid-filtering}
+
+**Empfehlung**
 
 Hybride Filterung kombiniert JCR-Filterung mit AEM-Filterung.
 
@@ -44,7 +124,22 @@ Dabei wird ein JCR-Filter (in Form einer Abfragebegrenzung) angewendet, bevor de
 
 Bei dieser Methode wird die Flexibilität bewahrt, die GraphQL-Filter bieten, während gleichzeitig ein möglichst großer Teil der Filterung an JCR delegiert wird.
 
-## Paging {#paging}
+>[!NOTE]
+>
+>AEM Hybrid-Filterung erfordert die Aktualisierung vorhandener Inhaltsfragmente
+
+**Weitere Informationen**
+
+Siehe:
+
+* [Aktualisieren Ihrer Inhaltsfragmente für Paging und Sortierung in GraphQL-Filterung](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+* [Beispielabfrage mit Filterung nach _tags-ID und Ausschluss von Varianten](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+
+#### GraphQL-Paginierung verwenden {#use-aem-graphql-pagination}
+
+**Empfehlung**
+
+Die Reaktionszeit komplexer Abfragen mit großen Ergebnismengen kann durch die Segmentierung von Antworten in Blöcke mithilfe der Paginierung (ein GraphQL-Standard) verbessert werden.
 
 GraphQL in AEM unterstützt zwei Arten der Paginierung:
 
@@ -64,7 +159,17 @@ In der Abfrage geben Sie den Cursor des letzten Elements der vorherigen Seite so
   >
   >Backward Paging (mithilfe der Parameter `before`/`last`) wird nicht unterstützt.
 
-## Sortierung {#sorting}
+**Weitere Informationen**
+
+Siehe:
+
+* [Beispielhafte Paginierungsabfrage mit „first“ und „after“](/help/headless/graphql-api/sample-queries.md#sample-pagination-first-after)
+
+#### GraphQL-Sortierung verwenden {#use-graphql-sorting}
+
+**Empfehlung**
+
+Die GraphQL-Standardsortierung ermöglicht es Kunden, JSON-Inhalte in sortierter Reihenfolge zu erhalten. Dies kann die Notwendigkeit einer weiteren Verarbeitung auf dem Client verringern.
 
 Die Sortierung ist nur dann effizient, wenn sich alle Sortierungskriterien auf Fragmente der obersten Ebene beziehen.
 
@@ -74,9 +179,15 @@ Wenn die Sortierreihenfolge ein oder mehrere Felder enthält, die sich auf einem
 >
 >Die Sortierung der Felder der obersten Ebene wirkt sich ebenfalls (wenn auch geringfügig) auf die Leistung aus.
 
+**Weitere Informationen**
+
+Siehe:
+
+* [Beispielabfrage mit Filtern nach _tags-ID und Ausschließen von Varianten und Sortieren nach Namen](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+
 ## Best Practices {#best-practices}
 
-Das Hauptziel aller Optimierungsmaßnahmen besteht darin, die anfängliche Ergebnismenge zu reduzieren. Die hier aufgeführten Best Practices bieten Möglichkeiten dazu. Sie können (und sollten) kombiniert werden.
+Das Hauptziel aller Optimierungsempfehlungen besteht darin, die anfängliche Ergebnismenge zu reduzieren. Die hier aufgeführten Best Practices bieten Möglichkeiten dazu. Sie können (und sollten) kombiniert werden.
 
 ### Nur nach Eigenschaften der obersten Ebene filtern {#filter-top-level-properties-only}
 
@@ -166,3 +277,27 @@ Es gibt mehrere andere Situationen, in denen ein Filterausdruck nicht auf der JC
 * Filterausdrücke mit dem `CONTAINS_NOT`-Operator.
 
 * Filterausdrücke in einem `Calendar`-, `Date`- oder `Time`-Wert, die den `NOT_AT`-Operator nutzen.
+
+### Minimieren der Verschachtelung von Inhaltsfragmenten {#minimize-content-fragment-nesting}
+
+Das Verschachteln von Inhaltsfragmenten ist eine hervorragende Möglichkeit, benutzerdefinierte Inhaltsstrukturen zu modellieren. Sie können sogar ein Fragment mit einem verschachtelten Fragment mit einem verschachtelten Fragment haben, das ... usw. aufweist.
+
+Das Erstellen einer Struktur mit zu vielen Ebenen kann jedoch die Verarbeitungszeiten für eine GraphQL-Abfrage erhöhen, da GraphQL die gesamte Hierarchie aller verschachtelten Inhaltsfragmente durchlaufen muss.
+
+Tiefes Verschachteln kann sich auch nachteilig auf die Inhaltsverwaltung auswirken. Im Allgemeinen wird empfohlen, die Verschachtelung von Inhaltsfragmenten auf weniger als fünf oder sechs Ebenen zu beschränken.
+
+### Nicht alle Formate ausgeben (mehrzeilige Textelemente) {#do-not-output-all-formats}
+
+AEM GraphQL kann Text zurückgeben, der im **[Mehrzeiliger Text](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** Datentyp in mehreren Formaten: Rich-Text, Einfacher Text und Markdown.
+
+Die Ausgabe aller drei Formate erhöht die Größe der Textausgabe in JSON um den Faktor drei. Dies kann zusammen mit im Allgemeinen großen Ergebnismengen aus sehr breiten Abfragen sehr große JSON-Antworten generieren, die daher lange für die Berechnung benötigen. Es ist besser, die Ausgabe auf die Textformate zu beschränken, die für die Wiedergabe des Inhalts erforderlich sind.
+
+### Ändern von Inhaltsfragmenten {#modifying-content-fragments}
+
+Ändern Sie nur Inhaltsfragmente und deren Ressourcen mithilfe der AEM-Benutzeroberfläche oder APIs. Nehmen Sie keine Änderungen direkt in JCR vor.
+
+### Abfragen testen {#test-your-queries}
+
+Die Verarbeitung von GraphQL-Abfragen ähnelt der Verarbeitung von Suchabfragen und ist wesentlich komplexer als einfache API-Anfragen für GET-alle-Inhalte.
+
+Eine sorgfältige Planung, Prüfung und Optimierung Ihrer Abfragen in einer kontrollierten Nicht-Produktionsumgebung ist für den späteren Erfolg bei der Verwendung in der Produktion von entscheidender Bedeutung.
