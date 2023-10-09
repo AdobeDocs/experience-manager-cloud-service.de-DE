@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 00cd62aa64c183a0560326feaacda1db70627858
+source-git-commit: 51b048f753fe2e548d0ffdd9e3a903b21032aed7
 workflow-type: tm+mt
-source-wordcount: '9448'
-ht-degree: 64%
+source-wordcount: '9463'
+ht-degree: 63%
 
 ---
 
@@ -521,7 +521,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 
 
-### DASH-, Multi-Subtitle- und Multi-Audio-Track-Unterstützung für Ihr Dynamic Media-Konto aktivieren {#enable-dash}
+## DASH-, Multi-Subtitle- und Multi-Audio-Track-Unterstützung für Ihr Dynamic Media-Konto aktivieren {#enable-dash}
 
 **Informationen zum Aktivieren der DASH-Unterstützung für Ihr Konto**
 DASH (Digital Adaptive Streaming über HTTP) ist der internationale Standard für Video-Streaming und wird in verschiedenen Video-Viewern auf breiter Front verwendet. Wenn DASH in Ihrem Konto aktiviert ist, können Sie entweder DASH oder HLS für adaptives Video-Streaming auswählen. Sie können auch beide Optionen beim automatischen Wechseln zwischen Playern wählen, wenn **[!UICONTROL auto]** als Wiedergabetyp in der Viewer-Vorgabe ausgewählt ist.
@@ -539,7 +539,7 @@ Die Aktivierung der DASH-Unterstützung für Ihr Konto erfolgt über einen Adobe
 
 **Über die Aktivierung der Unterstützung für Multiuntertitel und Multiaudio-Track in Ihrem Konto**
 
-Gleichzeitig erstellen Sie ein Adobe-Support-Szenario, bei dem DASH für Ihr Konto aktiviert wird. Außerdem profitieren Sie auch von der automatischen Aktivierung der Unterstützung für mehrere Untertitel und Multiaudio-Track. Nach der Aktivierung werden alle nachfolgenden Videos, die Sie hochladen, mit einer neuen Backend-Architektur verarbeitet, die Unterstützung für das Hinzufügen von Multiuntertiteln und Multiaudio-Tracks zu Ihren Videos enthält.
+Gleichzeitig mit der Erstellung eines Support-Falles für Adobe, in dem DASH für Ihr Konto aktiviert wird, können Sie auch von der automatischen Aktivierung der Unterstützung für mehrere Untertitel und für mehrere Audiospuren profitieren. Nach der Aktivierung werden alle nachfolgenden Videos, die Sie hochladen, mit einer neuen Backend-Architektur verarbeitet, die Unterstützung für das Hinzufügen von Multiuntertiteln und Multiaudio-Tracks zu Ihren Videos enthält.
 
 >[!IMPORTANT]
 >
@@ -551,8 +551,9 @@ Gleichzeitig erstellen Sie ein Adobe-Support-Szenario, bei dem DASH für Ihr Kon
 1. Um einen Support-Fall zu erstellen, befolgen Sie die Anweisungen und stellen Sie dabei sicher, dass Sie die folgenden Informationen bereitstellen:
 
    * Name des Hauptansprechpartners, E-Mail, Telefon.
-   * Ihre Programm-ID und Umgebungs-ID.
-   * Name Ihres Dynamic Media-Kontos.
+   * Ihre Cloud Service-Umgebung (Programm-ID und Umgebungs-ID).
+   * Name Ihres Dynamic Media-Unternehmenskontos.
+   * Ihre Dynamic Media-Region: Nordamerika (NA), Asien-Pazifik (APAC) oder Europa-Naher Osten-Asien (EMEA).
    * Geben Sie an, dass in Ihrem Dynamic Media-Konto in Experience Manager 6.5 DASH-, Multi-Subtitle- und Multi-Audio-Track-Unterstützung aktiviert werden soll.
 
 1. Der Adobe-Kundensupport fügt Sie basierend auf der Reihenfolge, in der Anfragen gesendet werden, zur Kundenwarteschlange hinzu.
@@ -887,7 +888,7 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
 
 ## Hinzufügen von Kapitelmarken zu Videos {#adding-chapter-markers-to-video}
 
-Um das Ansehen von und Navigieren in langformatigen Videos zu vereinfachen, können Sie einzelnen Videos oder adaptiven Videosets Kapitelmarken hinzufügen. Wenn ein Benutzer das Video abspielt, kann er auf die Kapitelmarken in der Video-Zeitleiste (auch als Video-Scrubber bezeichnet) klicken. Er kann einfach zu seinem Zielpunkt gehen oder sofort zu neuen Inhalten, Schulungen und Demonstrationen springen.
+Sie können die Wiedergabe und Navigation Ihrer Videos in langen Formularen vereinfachen, indem Sie einzelnen Videos oder adaptiven Videosets Kapitelmarken hinzufügen. Wenn ein Benutzer das Video abspielt, kann er auf die Kapitelmarken in der Video-Zeitleiste (auch als Video-Scrubber bezeichnet) klicken. Er kann einfach zu seinem Zielpunkt gehen oder sofort zu neuen Inhalten, Schulungen und Demonstrationen springen.
 
 >[!NOTE]
 >
