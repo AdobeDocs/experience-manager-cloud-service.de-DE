@@ -1,13 +1,13 @@
 ---
 title: Konfigurieren von Traffic-Filterregeln mit WAF-Regeln
 description: Verwenden von Traffic-Filterregeln mit WAF-Regeln zum Filtern des Traffics
-source-git-commit: ce7b6922f92208c06f85afe85818574bf2bc8f6d
+exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
+source-git-commit: 445134438c1a43276235b069ab44f99f7255aed1
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2740'
 ht-degree: 2%
 
 ---
-
 
 # Konfigurieren von Traffic-Filterregeln mit WAF-Regeln zum Filtern des Traffics {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
@@ -32,8 +32,7 @@ Traffic-Filterregeln können für alle Cloud-Umgebungstypen (RDE, dev, stage, pr
 
    ```
    config/
-        cdn/
-           cdn.yaml
+        cdn.yaml
    ```
 
 1. `cdn.yaml` sollte Metadaten sowie eine Liste von Traffic-Filterregeln und WAF-Regeln enthalten.
@@ -46,7 +45,15 @@ Traffic-Filterregeln können für alle Cloud-Umgebungstypen (RDE, dev, stage, pr
    data:
      trafficFilters:
        rules:
-         ...
+       # Block simple path
+       - name: block-path
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/block/me'
+         action: block
    ```
 
 Der Parameter &quot;type&quot;sollte auf &quot;CDN&quot;gesetzt werden und die Version sollte auf die Schemaversion festgelegt werden, die derzeit &quot;1&quot;ist. Siehe Beispiele weiter unten.
@@ -81,6 +88,7 @@ Der Parameter &quot;type&quot;sollte auf &quot;CDN&quot;gesetzt werden und die V
       > Benutzer müssen als Bereitstellungsmanager angemeldet sein, um diese Pipelines konfigurieren oder ausführen zu können.
       > Außerdem können Sie nur eine Config-Pipeline pro Umgebung konfigurieren und ausführen.
 
+   1. Legen Sie den Codespeicherort auf den Speicherort Ihrer Stammkonfiguration fest (z. B. /config).
    1. Wählen Sie **Speichern** aus. Ihre neue Pipeline wird auf der Pipeline-Karte angezeigt und kann ausgeführt werden, wenn Sie bereit sind.
    1. Für RDEs wird die Befehlszeile verwendet, RDE wird jedoch derzeit nicht unterstützt.
 
@@ -171,6 +179,7 @@ Eine Gruppe von Bedingungen besteht aus mehreren einfachen und/oder Gruppenbedin
 | **doesNotMatch** | `string` | true , wenn das Getter-Ergebnis nicht mit dem bereitgestellten Regex übereinstimmt |
 | **in** | `array[string]` | true , wenn die bereitgestellte Liste das Getter-Ergebnis enthält |
 | **notIn** | `array[string]` | true , wenn die bereitgestellte Liste kein Getter-Ergebnis enthält |
+| **vorhanden** | `boolean` | &quot;true&quot;, wenn auf &quot;true&quot;gesetzt und die Eigenschaft existiert oder auf &quot;false&quot;gesetzt ist und die Eigenschaft nicht vorhanden ist |
 
 ### Aktionsstruktur {#action-structure}
 
@@ -188,7 +197,7 @@ Aktionen werden entsprechend ihren Typen in der folgenden Tabelle priorisiert, d
 
 ### WAF-Flags-Liste {#waf-flags-list}
 
-Die `wafFlag` -Eigenschaft kann Folgendes umfassen:
+Die `wafFlags` -Eigenschaft kann Folgendes umfassen:
 
 | **Kennzeichen-ID** | **Flag Name** | **Beschreibung** |
 |---|---|---|
@@ -318,7 +327,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-**Beispiel 4**
+**Beispiel 5**
 
 Diese Regel blockiert den Zugriff auf OFAC-Länder:
 
@@ -333,7 +342,8 @@ data:
       - name: block-ofac-countries
         when:
           allOf:
-            - { reqProperty: tier, equals: publish }
+            - reqProperty: tier
+              matches: "author|publish"
             - reqProperty: clientCountry
               in:
                 - SY
@@ -379,8 +389,8 @@ data:
   trafficFilters:
     - name: limit-requests-client-ip
       when:
-        reqProperty: path
-        like: '*'
+        - reqProperty: tier
+        - matches: "author|publish"
       rateLimit:
         limit: 60
         window: 10
