@@ -2,10 +2,10 @@
 title: Qualitätsregeln für benutzerspezifischen Code
 description: Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der Code-Qualitätstests ausgeführt werden. Sie basieren auf Best Practices von Adobe Experience Manager-Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 57a7cd3fd2bfc34ebcee82832e020cf45887afa9
 workflow-type: tm+mt
-source-wordcount: '3502'
-ht-degree: 92%
+source-wordcount: '3868'
+ht-degree: 85%
 
 ---
 
@@ -560,7 +560,7 @@ public class DontDoThis implements Page {
 
 Mehrere vorkonfigurierte Experience Manager Oak-Indizes enthalten eine Tika-Konfiguration und Anpassungen dieser Indizes müssen eine Tika-Konfiguration enthalten. Diese Regel überprüft auf Anpassungen der Indizes `damAssetLucene`, `lucene` und `graphqlConfig` und löst ein Problem aus, wenn entweder der Knoten `tika` fehlt oder wenn im Knoten `tika` ein untergeordneter Knoten mit dem Namen `config.xml` fehlt.
 
-Siehe [Indizierungsdokumentation](/help/operations/indexing.md#preparing-the-new-index-definition) Weitere Informationen zum Anpassen von Indexdefinitionen.
+Siehe [Indexdokumentation](/help/operations/indexing.md#preparing-the-new-index-definition) Weitere Informationen zum Anpassen von Indexdefinitionen.
 
 #### Nicht konformer Code {#non-compliant-code-indextikanode}
 
@@ -570,7 +570,6 @@ Siehe [Indizierungsdokumentation](/help/operations/indexing.md#preparing-the-new
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
 ```
@@ -583,7 +582,6 @@ Siehe [Indizierungsdokumentation](/help/operations/indexing.md#preparing-the-new
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -606,11 +604,8 @@ Oak-Indizes des Typs `lucene` muss immer asynchron indiziert werden. Andernfalls
     + damAssetLucene-1-custom
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - type: lucene
-      - reindex: false
       - tags: [visualSimilaritySearch]
-      - type: lucene
       + tika
         + config.xml
 ```
@@ -623,7 +618,6 @@ Oak-Indizes des Typs `lucene` muss immer asynchron indiziert werden. Andernfalls
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -647,7 +641,6 @@ Damit die Asset-Suche in Experience Manager Assets ordnungsgemäß funktioniert,
       - async: [async, nrt]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - type: lucene
       + tika
         + config.xml
@@ -661,7 +654,6 @@ Damit die Asset-Suche in Experience Manager Assets ordnungsgemäß funktioniert,
       - async: [async, nrt]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -811,7 +803,7 @@ Kunden, die die Rückwärtsreplikation verwenden, sollten sich für alternative 
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Experience Manager-Client-Bibliotheken können statische Ressourcen wie Bilder und Schriftarten enthalten. Wie im Dokument beschrieben [Verwendung von Präprozessoren,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) Bei Verwendung von Proxyclient-Bibliotheken müssen diese statischen Ressourcen in einem untergeordneten Ordner mit dem Namen `resources` auf die Veröffentlichungsinstanzen effektiv verwiesen werden.
+Experience Manager-Client-Bibliotheken können statische Ressourcen wie Bilder und Schriftarten enthalten. Wie im Dokument beschrieben [Verwendung von Präprozessoren,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) Bei Verwendung von Proxyclient-Bibliotheken müssen diese statischen Ressourcen in einem untergeordneten Ordner mit dem Namen `resources` auf den Veröffentlichungsinstanzen effektiv referenziert werden.
 
 #### Nicht konformer Code {#non-compliant-proxy-enabled}
 
@@ -884,7 +876,7 @@ Experience Manager as a Cloud Service erzwingt eine strikte Benennungsrichtlinie
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Für den as a Cloud Service Experience Manager müssen benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) direkt untergeordnete Knoten von `/oak:index`. Indizes in anderen Speicherorten müssen so verschoben werden, dass sie mit Experience Manager as a Cloud Service kompatibel sind. Weitere Informationen zu Suchindizes finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md).
+Für den as a Cloud Service Experience Manager müssen benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) sind direkt untergeordnete Knoten von `/oak:index`. Indizes in anderen Speicherorten müssen so verschoben werden, dass sie mit Experience Manager as a Cloud Service kompatibel sind. Weitere Informationen zu Suchindizes finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md).
 
 ### Knoten für benutzerdefinierte Suchindex-Definitionen benötigen eine compatVersion von 2 {#oakpal-custom-search-compatVersion}
 
@@ -948,3 +940,208 @@ Experience Manager as a Cloud Service verbietet es, dass benutzerdefinierte Such
 * **Seit**: Version 2021.2.0
 
 Experience Manager as a Cloud Service verbietet es, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) eine Eigenschaft mit dem Namen `reindex` enthalten. Die Indizierung mit dieser Eigenschaft muss vor der Migration auf Experience Manager as a Cloud Service aktualisiert werden. Weitere Informationen finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use).
+
+### Benutzerdefinierte DAM-Asset-Lucene-Knoten dürfen &quot;queryPaths&quot;nicht angeben {#oakpal-damAssetLucene-queryPaths}
+
+* **Schlüssel**: IndexDamAssetLucene
+* **Typ**: Fehler
+* **Schweregrad**: Blocker
+* **Seit**: Version 2022.1.0
+
+#### Nicht konformer Code {#non-compliant-code-damAssetLucene-queryPaths}
+
+```text
++ oak:index
+    + damAssetLucene-1-custom-1
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: [/content/dam]
+      - queryPaths: [/content/dam]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+#### Konformer Code {#compliant-code-damAssetLucene-queryPaths}
+
+```text
++ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: [/content/dam]
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+### Wenn die Definition des benutzerdefinierten Suchindex compatVersion enthält, muss sie auf 2 gesetzt werden {#oakpal-compatVersion}
+
+* **Schlüssel**: IndexCompatVersion
+* **Typ**: Code Smell
+* **Schweregrad**: Hoch
+* **Seit**: Version 2022.1.0
+
+
+### Der Indexknoten, der &quot;includedPaths&quot;angibt, sollte auch &quot;queryPaths&quot;mit denselben Werten angeben {#oakpal-included-paths-without-query-paths}
+
+* **Schlüssel**: IndexIncludedPathsWithoutQueryPaths
+* **Typ**: Code Smell
+* **Schweregrad**: Gering
+* **Seit**: Version 2023.1.0
+
+Bei benutzerdefinierten Indizes sind beide `includedPaths` und `queryPaths` mit identischen Werten konfiguriert werden. Wenn eine angegeben ist, muss die andere übereinstimmen. Für Indizes von `damAssetLucene`, einschließlich der benutzerdefinierten Versionen. Für diese sollten Sie nur `includedPaths`.
+
+### Indexknoten, der nodeScopeIndex für den generischen Knotentyp angibt, sollten auch includedPaths und queryPaths angeben. {#oakpal-full-text-on-generic-node-type}
+
+* **Schlüssel**: IndexFulltextOnGenericType
+* **Typ**: Code Smell
+* **Schweregrad**: Gering
+* **Seit**: Version 2023.1.0
+
+Wenn Sie `nodeScopeIndex` -Eigenschaft auf einem &quot;generischen&quot;Knotentyp wie `nt:unstructured` oder `nt:base`, müssen Sie auch die `includedPaths` und `queryPaths` Eigenschaften.
+`nt:base` kann als &quot;generisch&quot;betrachtet werden, da alle Knotentypen von ihr erben. So legen Sie eine `nodeScopeIndex` on `nt:base` führt ihn dazu, alle Knoten im Repository zu indizieren. Ebenso `nt:unstructured` wird auch als &quot;generisch&quot;betrachtet, da es viele Knoten in Repositorys mit diesem Typ gibt.
+
+#### Nicht konformer Code {#non-compliant-code-full-text-on-generic-node-type}
+
+```text
++ oak:index/acme.someIndex-custom-1
+  - async: [async, nrt]
+  - evaluatePathRestrictions: true
+  - tags: [visualSimilaritySearch]
+  - type: lucene
+    + indexRules
+      - jcr:primaryType: nt:unstructured
+      + nt:base
+        - jcr:primaryType: nt:unstructured
+        + properties
+          + acme.someIndex-custom-1
+            - nodeScopeIndex: true
+```
+
+#### Konformer Code {#compliant-code-full-text-on-generic-node-type}
+
+```text
++ oak:index/acme.someIndex-custom-1
+  - async: [async, nrt]
+  - evaluatePathRestrictions: true
+  - tags: [visualSimilaritySearch]
+  - type: lucene
+  - includedPaths: ["/content/dam/"] 
+  - queryPaths: ["/content/dam/"]
+    + indexRules
+      - jcr:primaryType: nt:unstructured
+      + nt:base
+        - jcr:primaryType: nt:unstructured
+        + properties
+          + acme.someIndex-custom-1
+            - nodeScopeIndex: true
+```
+
+### Die queryLimitReads -Eigenschaft der Abfrage-Engine sollte nicht überschrieben werden {#oakpal-query-limit-reads}
+
+* **Schlüssel**: OverrideOfQueryLimitReads
+* **Typ**: Code Smell
+* **Schweregrad**: Gering
+* **Seit**: Version 2023.1.0
+
+Das Überschreiben des Standardwerts kann zu sehr langsamen Seitenvorgängen führen, insbesondere wenn mehr Inhalt hinzugefügt wird.
+
+### Mehrere aktive Versionen desselben Indes {#oakpal-multiple-active-versions}
+
+* **Schlüssel**: IndexDetectMultipleActiveVersionsOfSameIndex
+* **Typ**: Code Smell
+* **Schweregrad**: Gering
+* **Seit**: Version 2023.1.0
+
+#### Nicht konformer Code {#non-compliant-code-multiple-active-versions}
+
+```text
++ oak:index
+  + damAssetLucene-1-custom-1
+    ...
+  + damAssetLucene-1-custom-2
+    ...
+  + damAssetLucene-1-custom-3
+    ...
+```
+
+#### Konformer Code {#compliant-code-multiple-active-versions}
+
+```text
++ damAssetLucene-1-custom-3
+    ...
+```
+
+
+### Der Name vollständig benutzerdefinierter Indexdefinitionen sollte den offiziellen Richtlinien entsprechen {#oakpal-fully-custom-index-name}
+
+* **Schlüssel**: IndexValidFullyCustomName
+* **Typ**: Code Smell
+* **Schweregrad**: Gering
+* **Seit**: Version 2023.1.0
+
+Das erwartete Muster für vollständig benutzerdefinierte Indexnamen lautet: `[prefix].[indexName]-custom-[version]`. Weitere Informationen finden Sie im Dokument . [Inhaltssuche und -indizierung](/help/operations/indexing.md).
+
+
+### Dieselbe Eigenschaft mit unterschiedlichen analysierten Werten in derselben Indexdefinition {#oakpal-same-property-different-analyzed-values}
+
+#### Nicht konformer Code {#non-compliant-code-same-property-different-analyzed-values}
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+```
+
+#### Konformer Code {#compliant-code-same-property-different-analyzed-values}
+
+Beispiel:
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+```
+
+Beispiel:
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+```
+
+Wenn die analysierte Eigenschaft nicht explizit festgelegt wurde, lautet der Standardwert false.
+
+### Tags-Eigenschaft
+
+* **Schlüssel**: IndexHasValidTagsProperty
+* **Typ**: Code Smell
+* **Schweregrad**: Gering
+* **Seit**: Version 2023.1.0
+
+Achten Sie bei bestimmten Indizes darauf, die Eigenschaft &quot;tags&quot;und die aktuellen Werte beizubehalten. Das Hinzufügen neuer Werte zur Eigenschaft &quot;tags&quot;ist zwar zulässig, das Löschen vorhandener Werte (oder der Eigenschaft insgesamt) kann jedoch zu unerwarteten Ergebnissen führen.
