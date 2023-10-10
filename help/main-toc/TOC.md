@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2a1bb951c9da5ea0fdcafd1bb82eda3f55d0a16a
+source-git-commit: baf2a91f76af83ff9790ba3a97e7dafa415086c6
 workflow-type: tm+mt
-source-wordcount: '4316'
+source-wordcount: '4324'
 ht-degree: 91%
 
 ---
@@ -580,6 +580,7 @@ ht-degree: 91%
          + [Salesforce-Anwendungsintegration mit OAuth 2.0-Client-Anmeldedaten](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [Konfigurieren von [!DNL Azure] -Speicher](/help/forms/configure-azure-storage.md)
          + [Konfigurieren von [!DNL Microsoft Dynamics 365] und [!DNL Salesforce] -Cloud-Services](/help/forms/configure-msdynamics-salesforce.md)
+         + [Verbinden eines adaptiven Formulars mit der Microsoft SharePoint-Liste](/help/forms/connect-aem-adaptive-form-to-sharepointlist.md)
          + [Erstellen von Formulardatenmodellen](/help/forms/create-form-data-models.md)
          + [Arbeiten mit Formulardatenmodellen](/help/forms/work-with-form-data-model.md)
          + [Verwenden von Formulardatenmodellen](/help/forms/using-form-data-model.md)
@@ -736,7 +737,7 @@ ht-degree: 91%
    + [Migration](/help/commerce-cloud/migration.md)
    + [Häufig gestellte Fragen (FAQ)](/help/commerce-cloud/faq.md)
 + Edge-Bereitstellungsdienste {#edge-delivery}
-   + [Erste Schritte mit der Edge-Bereitstellung](/help/edge/overview.md)
+   + [Erste Schritte mit Edge Delivery](/help/edge/overview.md)
    + [Verwenden der Edge-Bereitstellung](/help/edge/using.md)
 + Headless {#headless}
    + [Was ist ein Headless-CMS?](/help/headless/what-is-headless.md)

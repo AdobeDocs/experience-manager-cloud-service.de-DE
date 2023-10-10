@@ -2,9 +2,9 @@
 title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: ba83b35f411ffd51e0032e7c7f12c7c82cd982ad
 workflow-type: tm+mt
-source-wordcount: '3388'
+source-wordcount: '3395'
 ht-degree: 97%
 
 ---
@@ -184,8 +184,9 @@ So verbinden Sie AEM Forms mit Ihrem Microsoft® SharePoint-Speicher:
 1. Gehen Sie zu Ihrer **AEM Forms-Autoreninstanz** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® SharePoint]**.
 1. Sobald Sie **[!UICONTROL Microsoft® SharePoint]** auswählen, werden Sie zum **[!UICONTROL SharePoint-Browser]** weitergeleitet.
 1. Wählen Sie einen **Konfigurations-Container**. Die Konfiguration wird im ausgewählten Konfigurations-Container gespeichert.
-1. Klicken Sie auf **[!UICONTROL Erstellen]**. Der SharePoint-Konfigurationsassistent wird angezeigt.
-   ![SharePoint-Konfiguration](/help/forms/assets/sharepoint_configuration.png)
+1. Klicks **[!UICONTROL Erstellen]** > **[!UICONTROL SharePoint Document Library]** aus der Dropdown-Liste. Der SharePoint-Konfigurationsassistent wird angezeigt.
+
+![SharePoint-Konfiguration](/help/forms/assets/sharepoint_configuration.png)
 1. Geben Sie **[!UICONTROL Titel]**, **[!UICONTROL Client-ID]**, **[!UICONTROL Client-Geheimnis]** und **[!UICONTROL OAuth-URL]** an. Informationen zum Abrufen der Client-ID, des Client-Geheimnisses und der Mandanten-ID für die OAuth-URL finden Sie in der [Dokumentation von Microsoft®](https://learn.microsoft.com/de-de/graph/auth-register-app-v2).
    * Sie können die `Client ID` und das `Client Secret` Ihrer App über das Microsoft® Azure-Portal abrufen.
    * Fügen Sie im Microsoft® Azure-Portal den Umleitungs-URI als `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html` hinzu. Ersetzen Sie `[author-instance]` mit der URL Ihrer Autoreninstanz.
@@ -210,6 +211,7 @@ Jetzt können Sie die SharePoint-Sites-Konfiguration für die Sendeaktion in ein
 ### Verwenden der SharePoint-Konfiguration in einem adaptiven Formular {#use-sharepoint-configuartion-in-af}
 
 Sie können die erstellte SharePoint-Konfiguration in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einem SharePoint-Ordner zu speichern. Führen Sie die folgenden Schritte aus, um eine SharePoint-Speicherkonfiguration in einem adaptiven Formular zu verwenden:
+
 1. Erstellen eines [adaptives Formular](/help/forms/creating-adaptive-form.md).
 
    >[!NOTE]
