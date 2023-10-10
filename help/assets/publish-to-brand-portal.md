@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 780d04852d3760f92c6f0c5edf77630d4bb5a343
+source-git-commit: 7f806c457f7bef1c5309bbc6f69d3989af1b06d3
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 95%
+source-wordcount: '1301'
+ht-degree: 92%
 
 ---
 
@@ -32,6 +32,8 @@ Spätere Änderungen am ursprünglichen Asset, Order oder an der ursprünglichen
 >[!NOTE]
 >
 >Adobe empfiehlt eine gestaffelte Veröffentlichung, vorzugsweise außerhalb der Spitzenzeiten, sodass die AEM-Autoreninstanz keine übermäßigen Ressourcen belegt.
+>Assets sollten in Batches veröffentlicht werden. Die Empfehlung für die Batch-Größe beträgt 15.000.
+> Für [!DNL Experience Manager Assets] as a [!DNL Cloud Service], beträgt die Übertragungsrate unter Laborbedingungen 1000 Assets pro Stunde. Die Rate wird mit einer durchschnittlichen Größe von 10 MB Assets beobachtet.
 
 ## Veröffentlichen von Assets in Brand Portal {#publish-assets-to-bp}
 
