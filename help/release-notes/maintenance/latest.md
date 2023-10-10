@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 2ec0e09a20e2d129c9f2c01ebe21202b73505ee2
+source-git-commit: 3fbdb150a9a1c133b4910603682e37f1c5d885d2
 workflow-type: tm+mt
-source-wordcount: '1364'
-ht-degree: 7%
+source-wordcount: '414'
+ht-degree: 32%
 
 ---
 
@@ -13,96 +13,44 @@ ht-degree: 7%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 13665 {#release-13665}
+## Version 13804 {#release-13804}
 
-Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Release 13665 zusammengefasst, das am 27. September 2023 veröffentlicht wurde. Dieses Maintenance Release ersetzt Version 13420.
+Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Release 13804 zusammengefasst, das am 10. Oktober 2023 veröffentlicht wurde. Diese Wartungsversion ist eine Aktualisierung der vorherigen Wartungsversion 13665.
 
 2023.10.0 Die Funktionsaktivierung stellt das vollständige Funktionssatz für dieses Maintenance Release bereit. Siehe [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de) für weitere Informationen.
 
-### Verbesserungen {#enhancements-13665}
+### Verbesserungen {#enhancements-13804}
 
-* Verschiedene Verbesserungen an den Inhaltsfragment-APIs.
-* ASSETS-26713: Assets-Dashboard: Das neue Dashboard der Experience-Benutzeroberfläche ist jetzt über die Touch-Benutzeroberfläche erreichbar.
-* SITES-11206: Inhaltsfragmente: Such-API für Inhaltsfragmente.
-* SITES-11262: Inhaltsfragmente: Schaltfläche zum Wechseln zum neuen Inhaltsfragment-Editor.
-* SITES-15447: Kernkomponenten: Version 2.23.4.
-* FORMS-9624: Einführung einer CAPTCHA-Komponente für adaptive Forms basierend auf Kernkomponenten.
-* FORMS-9913: Der invoke-Dienst des Visual Editors wurde verbessert, indem die Funktion hinzugefügt wurde, mit der Felder validiert und entsprechende Fehler- und Erfolgsmeldungen angezeigt werden können.
-* FORMS-10106: Verbesserte GeneratePDFOutput-API, um die Anzahl der im generierten Dokument enthaltenen Seiten zurückzugeben.
-* FORMS-2494: Unterstützung für Formularfragmente für adaptive Forms basierend auf Kernkomponenten hinzugefügt.
-* FORMS-9807: Unterstützung für das Navigieren zu einer Seiten-URL hinzugefügt, die infolge einer erfolgreichen Übermittlung über den Regeleditor für adaptive Formulare zurückgegeben wird.
-* FORMS-10571: Es wurde die Möglichkeit hinzugefügt, eine Dankeseiten-Umleitungs-URL basierend auf der Antwort eines Dienstes festzulegen, der in einer benutzerdefinierten Übermittlungsaktion für adaptive Forms basierend auf Kernkomponenten verwendet wird.
+* GRANITE-47238: Audit Log Maintenance - Purge cronjobs zur Verwendung der Kundenkonfiguration.
+* GRANITE-47123: Veröffentlichen (Sling) - Verbessern Sie die Startzeit, indem Sie den Vanity-Pfad-Cache standardmäßig asynchron initialisieren.
+* GRANITE-46618: Veröffentlichen (Replikation) - Verbessern Sie die Geschwindigkeit beim Start der Veröffentlichung durch die Stapelverarbeitung von Replikationsstatus-Meldungen.
+* GRANITE-47136: Indizierung (Download) - Verbessern Sie die Download-Geschwindigkeit des neuen parallelen Index-Downloaders (durch Deaktivieren der Prüfsummenvalidierung).
+* GRANITE-47211: Veröffentlichen (Infra) - Verbessern Sie die Entkopplung von Veröffentlichungsstufe-Bereitstellungen (durch Speichern und Abrufen des Segmentspeicherrevisionsnamens).
+* GRANITE-47267: Update auf Apache Felix Http Jetty 4.2.18 (enthält Fehlerbehebung für die Verarbeitung von Anforderungsparametern ([FELIX-6625](https://issues.apache.org/jira/browse/FELIX-6625)) mit Leistungsverbesserungen für lokale und RDE-Entwicklungen).
+* GRANITE-47247: Aktualisierung auf Sling Servlets Resolver 2.9.14 mit Leistungsverbesserungen bei der Servlet-Auflösung.
 
-### Behobene Probleme {#fixed-issues-13665}
+### Behobene Probleme {#fixed-issues-13804}
 
-* Verschiedene Übersetzungsaktualisierungen.
-* CQ-4354428: Workflows: Aufgabe im Posteingang kann nicht abgeschlossen werden.
-* SITES-9733: Inhaltsfragmente: Asset-Verweise im Inhaltsfragmentverweis-Bedienfeld zeigen Verweise auf 0 (null).
-* SITES-14561: Inhaltsfragmente: Korrigierte und verbesserte HTML zur Markup-Konvertierung.
-* SITES-14882: Inhaltsfragmente: Sobald wir Inhaltsfragmente bearbeiten und die Registerkarte schließen, ohne auf die Schaltfläche &quot;Speichern&quot;oder &quot;Schließen&quot;zu klicken, werden die Werte gespeichert.
-* SITES-15167: Inhaltsfragmente: Durch das Patchen einer Variante mit einer ungültigen Payload werden nicht 400, sondern 500 zurückgegeben.
-* SITES-15514: Inhaltsfragmente: Falsch formatierte Markdown-Ausgabe für Tabellen in RTE.
-* SITES-15661: Inhaltsfragmente: Verwenden Sie keine eindeutigen Einschränkungen und ordnen Sie Elemente in Referenzfeldern in der Fragments-API neu an.
-* SITES-15730: Screens: Screens-Kanalvorschau-Funktion funktioniert nicht auf Dashboard.
-* SITES-15995: Inhaltsfragmente: MIME-Typen von Modellen und langen Textfeldern für Fragmente sind fest codiert.
-* SITES-16074: Inhaltsfragmente: Tag-Felder, die keine Zeichenfolge sind[] kann nicht aus JCR abgerufen werden.
-* SITES-16084: Inhaltsfragmente: CFHomeCardModelImpl fehlt der Zielnavigator.
-* SITES-14773: Experience Fragments: Die Link-Referenz wird im Experience Fragment nicht aktualisiert.
-* SITES-14899: Experience Fragments: Mehrere Angebote, die für XF-Varianten in Target erstellt wurden.
-* SITES-8590: GraphQL: Kodierungsprobleme mit Variablen in persistenten Abfragen.
-* SITES-9224: GraphQL: Ausnahmefehler &quot;Writer has been closed&quot;in GraphQLServlet.
-* SITES-14800: GraphQL: Ausnahme bei persistenten GraphQL-Abfragen mit Variablen.
-* SITES-15586: GraphQL: Problem mit persistenten Abfragen, die mit Nullwerten filtern.
-* SITES-15622: GraphQL: Problem mit persistenten Abfragen mit Zahlen und booleschen Parametern.
-* SITES-15654: GraphQL: Problem mit Vereinigungen und Eigenschaften mit demselben Namen.
-* SITES-15267: Launches: Die Promotion nimmt keine Launch-Seiten auf, die vor der Änderung der Launch-Konfiguration geändert wurden.
-* SITES-15406: Launches: Launch-Seite kann nicht hinzugefügt werden.
-* SITES-15427: Starts: Inkonsistentes Verhalten des Bereichs &quot;Aktuelle Seite und Unterseiten bewerben&quot;.
-* SITES-15429: Launches: Authoring-Seiten, die beim Anzeigen von Launches gelöscht wurden.
-* SITES-15462: Launches: Der Prozess &quot;Automatische Promotion&quot;veröffentlicht Seiten außerhalb des Promotion-Bereichs.
-* SITES-15815: Starts: Gelöschte Seite aus Launch bewirkt, dass Launch die Seite nicht erfolgreich weiterleitet.
-* SITES-15223: Seiten-Editor: Es ist nicht möglich, die Größe von Komponenten im Emulator für die Tablet-Größe zu ändern.
-* SITES-15463: Seitenvorlagen: Vorlagen können nicht veröffentlicht werden.
-* FORMS-10700: Bei Verwendung der Datumsauswahlkomponente in einem auf Kernkomponenten aufbauenden adaptiven Formular:
-   * Wenn der Benutzer das Formular sendet, ohne eine Eingabe für die Datumskomponente anzugeben, wird ein Fehler protokolliert.
-   * Bei der Verwendung lokalisierter Versionen der Datumsauswahl funktionieren einige Monate nahtlos. Die Auswahl bestimmter anderer Monate führt zu einer Funktionsstörung der Komponente.
-* FORMS-9598: Die AEM Forms-Einbettungskomponente funktioniert nicht.
-* FORMS-9579: Sie können bei Verwendung des Regeleditors keinen booleschen Wert an eine Funktion übergeben.
-* FORMS-9916: Wenn das Feld als ungültig markiert wird, wird ein Änderungsereignis erneut im selben Feld ausgelöst. Dieses unerwartete Ereignis Trigger die Regel erneut und erzeugt eine Schleife, die sich so lange wiederholt, bis sie eine maximale Wiederholungsgrenze von 10 Wiederholungen erreicht.
-* FORMS-10243: Die Option &quot;Fokus festlegen&quot;funktioniert nicht ordnungsgemäß für adaptive Forms, die auf Kernkomponenten basiert. Insbesondere wenn auf ein Optionsfeld geklickt wird und die Regel &quot;Fokus festlegen&quot;für ein Textfeldobjekt aktiviert ist, kann der Fokus nicht wie gewünscht festgelegt werden, obwohl andere Regeln ordnungsgemäß funktionieren.
-* FORMS-10416: Wenn für ein Headless-Adaptives Formular die Eigenschaft &quot;:type&quot;enthalten ist, wird die mehrzeilige Eingabekomponente als normale einzeilige Texteingabekomponente angezeigt.
-* FORMS-10015: Bei einem adaptiven Formular, das auf Kernkomponenten basiert, übergibt es im Regeleditor bei der Auswahl des Formularobjekts das gesamte Feldinstanzobjekt an die benutzerdefinierte Funktion und nicht nur an den Feldwert.
-* FORMS-9890: Benutzer in der Cloud-Administratorengruppe ohne Zugriff auf Formularbenutzer können Datenquellen, Formulare und Formulardatenmodell erstellen. Bei Verwendung von &quot;Dienst aufrufen&quot;im Regeleditor können sie jedoch keine verfügbaren Dienste im System anzeigen.
-* FORMS-9075: Beim Senden eines adaptiven Formulars geben die Bildschirmlesehilfen nicht alle Fehlermeldungen für die Pflichtfelder an.
-* FORMS-9014: Die folgenden Probleme mit der Barrierefreiheit wurden behoben:
-   * Beim Öffnen des Scribble-Signaturfelds springt der Cursor zur nächsten Komponente, nicht im Feld selbst. Dieses Verhalten wurde vom Zugänglichkeitsteam als Problem bestätigt.
-   * Nach dem Signieren wird das Dialogfeld durch Drücken der Eingabetaste nicht geschlossen. Benutzer müssen explizit auf die Schaltfläche OK klicken.
-   * Nach dem Signieren wird die Registerkartenreihenfolge auf den Anfang zurückgesetzt, anstatt bei der Signaturkomponente zu bleiben oder zur nächsten zu wechseln.
-   * Die Option zum Löschen der Signatur, dargestellt durch ein Kreuzsymbol, ist nicht Teil der Tab-Reihenfolge und wird nur beim Bewegen des Mauszeigers angezeigt.
-   * Auf das Dialogfeld &quot;Signaturbestätigung löschen&quot;kann nicht über die Tastatur zugegriffen werden.
-   * Die Beschriftung der Schaltfläche mit dem Tastaturzeichen sollte aus Gründen der Übersichtlichkeit korrigiert werden.
-   * Bei Steuerelementen innerhalb der Freihandsignatur fehlt das empfohlene Kontrastverhältnis.
-   * Der inaktive Status der Schaltfläche &quot;OK/Häkchen&quot;sollte das Attribut &quot;aria-disabled&quot;enthalten.
-   * Die Bildschirmlesehilfe versendet nicht den Text, der zum Erstellen der eingegebenen Signatur verwendet wird, sodass sie für sehbehinderte Benutzer nicht zugänglich ist.
-* FORMS-9214: Für adaptive Forms, die auf Kernkomponenten basiert, wird die benutzerdefinierte Funktion nur aufgerufen, wenn sie zum Ändern eines anderen Felds verwendet wird, z. B. zum Festlegen des Werts eines anderen Felds.
-* Bei APIs zur Dokumenterstellung zeigt der Pfad &quot;/content&quot;Inkonsistenz in der Verwendung über den Vorlagenpfad, den Inhaltsstamm und Daten hinweg. Es funktioniert in einigen Fällen korrekt, aber nicht einheitlich.
-* FORMS-10718: Unterstützung für die resolveNode-API von GuideBridge für adaptive Forms auf der Basis von Kernkomponenten hinzugefügt.
-* FORMS-9998: Im adaptiven Forms, das auf Kernkomponenten basiert, funktionieren die Funktionen &quot;Ist leer&quot;und &quot;Ist nicht leer&quot;bei der Validierung der Texteingabe über den Regeleditor nicht wie erwartet.
-* FORMS-10236: Die Dateianlagenkomponente funktioniert für Adaptive Forms basierend auf Kernkomponenten nicht ordnungsgemäß. Bei Verwendung der Anlagenkomponente funktioniert die Dateivorschau zunächst. Wenn Sie jedoch zusätzliche Dateien ähnlicher oder unterschiedlicher Typen oder Formate anhängen, funktioniert die Vorschau nicht.
-* FORMS-10470: Wenn in der Kontrollkästchenkomponente der Standardwert deaktiviert (&#39;off&#39;) und der Datentyp String ist, funktioniert die Senden-Schaltfläche nicht.
-* FORMS-10534: In Adaptive Forms basierend auf Kernkomponenten wird auf der linken Seite die boolesche Operandenoption angezeigt, die angibt, dass sie ausgewählt werden kann. Wenn ein Benutzer jedoch versucht, sie auszuwählen, wird eine Fehlerhervorhebung oder eine Fehlermeldung angezeigt, die darauf hinweist, dass die Auswahl nicht erwartungsgemäß funktioniert.
-* FORMS-10248: In Adaptive Forms basierend auf Kernkomponenten funktioniert das Festlegen des Werts für eine Optionsschaltfläche oder ein Kontrollkästchen, wenn der Datenwerttyp Boolesch ist, nicht erwartungsgemäß.
-* FORMS-8114: Die Datumsauswahl und das Muster werden von der NVDA-Bildschirmlesehilfe nicht korrekt gelesen. Insbesondere wird bei Verwendung der NVDA-Bildschirmlesehilfe die Datumsauswahl ohne Muster korrekt gelesen. Wenn jedoch ein Muster auf die Datumsauswahl angewendet wird, wird es als Tabelle gelesen und nicht richtig interpretiert.
+* GRANITE-47376: Autor (Infra) - Fehlerbehebung für DiscoveryTopologyUndefinierte Fehler nach rollierendem Neustart.
+* CQ-4353436: AEM Web Console (Sling) - Leere Konfigurationen in ServiceUserMapperImpl Validators (Principal/User) unterbrechen AEM Instanz ([SLING-11912](https://issues.apache.org/jira/browse/SLING-11912)).
+* SKYOPS-63925: Transform Job - Vermeiden von TransformJob-Fehlern mit JDK 11 - ZipException: Ungültige CEN-Kopfzeilenfehler (mit der JVM-Markierung disableZip64ExtraFieldValidation ).
+* SKYOPS-63361: Vorgang (Protokollierung) umformen Verbesserte Protokollierung mit Umwandlungsaufträgen (Unterschritt CUSTOMER_EXTRACT ).
+* SKYOPS-64103: FACT-Tool (Protokollierung) - Reduzieren oder Abschneiden von Kompilierungsfehlern und Warnmeldungen der Clientlib-Datei.
+* SKYOPS-65109: FACT Tool (Error Handling) - Inhaltspakete mit nicht aufgelösten Abhängigkeiten führen zu einem ordnungsgemäß gemeldeten Fehler.
+* SKYOPS-65368: FACT Tool (Error Handling) - Tool läuft in einen endlosen Einschlusszyklus und endet schließlich mit einer Zeitüberschreitung bei zirkulären Einbettungen von Clientlibs.
+* SKYOPS-64031: RDE - ComponentCacheImpl kann aufgrund der doppelten Registrierung von ResourceResolverFactory ([SLING-12019](https://issues.apache.org/jira/browse/SLING-12019)).
+* ASSETS-29105: RDE - Restriction provider missing from SecurityProviderRegistration requiredServicePids in RDE feature model.
+* GRANITE-44674: CoralUI - Die erforderliche Feldfunktionalität für Datepicker ist nicht korrekt.
 
-### Bekannte Probleme {#known-issues-13665}
+### Bekannte Probleme {#known-issues-13804}
 
 Keine
 
-### Eingebettete Technologien {#embedded-tech-13665}
+### Eingebettete Technologien {#embedded-tech-13804}
 
 | Technologie | Version | Link |
 |---|---|---|
-| AEM Oak | 1.54-T20230817132355-3800a65 | [Oak-API 1.54.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.54.0/index.html) |
+| AEM OAK | 1.56-T20230927085643-189caed | [Oak-API 1.56.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.56.0/index.html) |
 | AEM SLING-API | Version: 2.27.2 | [Apache Sling-API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | Version: 1.4.20-1.4.0 | [Spezifikation von HTML-Vorlagensprachen](https://github.com/adobe/htl-spec) |
 | AEM-Kernkomponenten | Version: 2.23.4 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |
