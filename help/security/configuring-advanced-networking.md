@@ -2,9 +2,9 @@
 title: Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 46ff33808e710b511db7cfcdad931c14846d8cfe
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '3600'
 ht-degree: 75%
 
 ---
@@ -55,7 +55,7 @@ Nach dem Aufruf dauert es in der Regel etwa 15 Minuten, bis die Netzwerkinfrastr
 Wenn die Konfiguration des flexiblen Port-Ausgangs für den Programmbereich fertig ist, muss der `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`-Endpunkt pro Umgebung aufgerufen werden, um die Vernetzung auf Umgebungsebene zu aktivieren und optional Regeln für die Port-Weiterleitung zu deklarieren. Parameter können pro Umgebung konfiguriert werden, um Flexibilität zu bieten.
 
 Regeln für die Port-Weiterleitung sollten für alle Ziel-Ports mit Ausnahme von 80/443 deklariert werden, jedoch nur, wenn kein HTTP- oder HTTPS-Protokoll verwendet wird.
-Geben Sie dazu einen Satz von Ziel-Hosts an (Name oder IP und mit anderen Ports). Für jeden Ziel-Host müssen Kunden den vorgesehenen Ziel-Port einem Port von 30000 bis 30999 zuordnen.
+Geben Sie dazu einen Satz von Ziel-Hosts an (Name oder IP und mit anderen Ports). Die Client-Verbindung, die Port 80/443 über HTTP/https verwendet, muss weiterhin Proxy-Einstellungen in ihrer Verbindung verwenden, damit die Eigenschaften des erweiterten Netzwerks auf die Verbindung angewendet werden. Für jeden Ziel-Host müssen Kunden den vorgesehenen Ziel-Port einem Port von 30000 bis 30999 zuordnen.
 
 Die API sollte in nur wenigen Sekunden antworten und einen Aktualisierungsstatus angeben. Nach etwa 10 Minuten sollte die `GET`-Methode des Endpunkts anzeigen, dass das erweiterte Netzwerk aktiviert ist.
 
