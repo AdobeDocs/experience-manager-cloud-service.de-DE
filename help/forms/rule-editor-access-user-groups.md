@@ -1,13 +1,13 @@
 ---
-title: Gewähren von Zugriff auf den Regeleditor für ausgewählte Benutzergruppen
+title: Wie können Sie Zugriff auf den Regeleditor für adaptive Formulare gewähren, um Benutzergruppen auszuwählen?
 description: Möglicherweise sind unterschiedliche Typen von Benutzern mit unterschiedlichen Fähigkeiten vorhanden, die mit adaptiven Formularen arbeiten. Erfahren Sie, wie Sie den Zugriff auf den Regeleditor für Benutzer auf Grundlage ihrer Rolle oder Funktion einschränken können.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 95%
+source-wordcount: '325'
+ht-degree: 91%
 
 ---
 

@@ -1,15 +1,15 @@
 ---
-title: Adaptive Formularfragmente
+title: Wie werden adaptive Formularfragmente erstellt und verwendet?
 description: Formularfragment ist eine modulare und wiederverwendbare Komponente eines Formulars. Erfahren Sie, wie Sie Formularfragmente erstellen und sie formularübergreifend wiederverwenden können, um eine effiziente Formularkonfiguration zu gewährleisten.
 uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2018'
-ht-degree: 78%
+source-wordcount: '2023'
+ht-degree: 77%
 
 ---
 

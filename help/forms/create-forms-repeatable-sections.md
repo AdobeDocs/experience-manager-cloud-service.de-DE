@@ -1,9 +1,9 @@
 ---
-title: Erstellen wiederholbarer Bereiche in den Kernkomponenten des adaptiven Formulars
+title: Wie werden wiederholbare Bereiche in den Kernkomponenten des adaptiven Formulars erstellt?
 description: Erfahren Sie, wie Sie wiederholbare Abschnitte oder Felder in einem adaptiven Formular erstellen.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 26%

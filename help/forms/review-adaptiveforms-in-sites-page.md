@@ -1,12 +1,12 @@
 ---
-title: Wie werden Rezensionen von Adaptive Forms erstellt, die in die Sites-Seite eingebettet oder darin erstellt wurden?
+title: Wie kann ich ein adaptives Formular zur Überprüfung senden? Wie werden Überprüfungen für ein adaptives AEM-Formular verwaltet?
 description: '"Überprüfen"ist ein Mechanismus, mit dem der Überprüfer mithilfe des Schritts "Aufgabe zuweisen"verschiedene Aufgaben für adaptive Formulare ausführen kann.'
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '360'
 ht-degree: 88%
 
 ---

@@ -1,12 +1,12 @@
 ---
-title: Verwenden formularzentrierter AEM Workflows zur Automatisierung von Geschäftsprozessen
+title: Welche Workflow-Schritte sind für den AEM Forms-Cloud Service verfügbar, um einen Workflow zu erstellen, oder für die Automatisierung von Geschäftsprozessen (Business Process Automation, BPM)?
 description: Mit Forms-zentrierten Workflows können Sie schnell auf adaptiven Formularen basierende Workflows erstellen. Mit Adobe Sign können Sie Dokumente elektronisch signieren, formularbasierte Geschäftsprozesse erstellen, Daten abrufen und an mehrere Datenquellen senden sowie E-Mail-Benachrichtigungen senden.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Verwenden Sie AEM Workflows, indem Sie Aufgabenschritte zuweisen, in PDF/A-Schritt konvertieren, Dokument des aufgezeichneten Schritts generieren, Workflows verwenden, Dokumentschritt unterschreiben, Druckten Ausgabeschritt generieren, Nicht-interaktive PDF-Ausgabe generieren
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '7433'
+source-wordcount: '7446'
 ht-degree: 79%
 
 ---

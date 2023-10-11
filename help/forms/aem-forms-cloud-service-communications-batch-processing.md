@@ -1,17 +1,17 @@
 ---
-title: Stapelverarbeitung von AEM Forms-Nachrichten für as a Cloud Service Kommunikation
+title: Efforless Bulk PDF Creation - Master the Art with Batch Processing - Ihr Selbsthilfehandbuch zum Generieren von Millionen von PDF-Dokumenten!
 description: Wie erstelle ich markenorientierte und personalisierte Kommunikation?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 97%
+source-wordcount: '1705'
+ht-degree: 96%
 
 ---
 
 # Stapelverarbeitung von AEM Forms-Nachrichten für as a Cloud Service Kommunikation
 
-Mithilfe von Kommunikation können Sie markenorientierte und personalisierte Kommunikation erstellen, zusammenstellen und bereitstellen, wie z. B. Geschäftskorrespondenzen, Dokumente, Aussagen, Anforderungsdatenverarbeitungs-Briefe, Leistungsbenachrichtigungen, Antragsverarbeitungsbriefe, monatliche Rechnungen und Willkommenskits. Sie können Kommunikations-APIs verwenden, um eine Vorlage (XFA oder PDF) mit Kundendaten zu kombinieren und Dokumente im PDF-, PS-, PCL-, DPL-, IPL- und ZPL-Format zu generieren.
+Mithilfe von Kommunikation können Sie markenorientierte und personalisierte Kommunikation erstellen, zusammenstellen und bereitstellen, z. B. Geschäftskorrespondenzen, Dokumente, Aussagen, Anforderungsdatenverarbeitungs-Briefe, Leistungsbenachrichtigungen, monatliche Rechnungen und Willkommenskits. Sie können Kommunikations-APIs verwenden, um eine Vorlage (XFA oder PDF) mit Kundendaten zu kombinieren und Dokumente im PDF-, PS-, PCL-, DPL-, IPL- und ZPL-Format zu generieren.
 
 Die Kommunikationsfunktion bietet APIs für die On-Demand- und geplante Dokumenterstellung. Sie können synchrone APIs für die On-Demand-Dokumenterstellung und Batch-APIs (asynchrone APIs) für die geplante Dokumenterstellung verwenden:
 

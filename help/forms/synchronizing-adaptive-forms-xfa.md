@@ -1,17 +1,15 @@
 ---
-title: Synchronisieren von adaptiven Formularen mit XFA-Formularvorlagen
-seo-title: Synchronizing Adaptive Forms with XFA Form Templates
+title: Wie kann Adaptive Forms mit XFA-Formularvorlagen synchronisiert werden?
 description: Synchronisieren von adaptiven Formularen mit XFA-/XDP-Dateien.
-seo-description: Synchronizing Adaptive Forms with XFA/XDP files.
 uuid: 92818132-1ae0-4576-84f2-ece485a34457
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 84%
+source-wordcount: '1146'
+ht-degree: 83%
 
 ---
 

@@ -1,13 +1,14 @@
 ---
-title: Verbessern der Performance umfangreicher Formulare durch verzögertes Laden
+title: Wie können wir die Leistung großer Formulare mit verzögertem Laden verbessern?
 description: Erfahren Sie, wie Sie die Leistung umfangreicher Formulare durch verzögertes Laden verbessern können. Verzögertes Laden (Lazy Loading) verbessert die Performance von umfangreichen und komplexen adaptiven Formularen erheblich, indem Formularfragmente erst dann initialisiert und geladen werden, wenn sie sichtbar werden.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
+exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 69%
+source-wordcount: '1075'
+ht-degree: 68%
 
 ---
 

@@ -1,13 +1,13 @@
 ---
-title: Wie kann einem adaptiven Formular, das auf Kernkomponenten basiert, Unterstützung für neue Gebietsschemata hinzugefügt werden?
+title: Wie füge ich einem adaptiven Formular Unterstützung für neue Gebietsschemata hinzu, basierend auf Kernkomponenten?
 description: Erfahren Sie, wie Sie neue Gebietsschemata für ein adaptives Formular hinzufügen.
-source-git-commit: 0d2e353208e4e59296d551ca5270be06e574f7df
+exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1340'
 ht-degree: 22%
 
 ---
-
 
 # Gebietsschema für adaptive Forms auf Basis von Kernkomponenten hinzufügen {#supporting-new-locales-for-adaptive-forms-localization}
 
@@ -179,5 +179,3 @@ Führen Sie die folgenden Schritte aus, um eine Vorschau eines adaptiven Formula
 * [Verwenden Sie maschinelle Übersetzung oder menschliche Übersetzung, um ein auf Kernkomponenten basierendes adaptives Formular zu übersetzen.](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [Generieren eines Datensatzdokuments für adaptive Formulare](/help/forms/generate-document-of-record-core-components.md)
 * [Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
-

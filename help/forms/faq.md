@@ -1,13 +1,13 @@
 ---
-title: Häufig gestellte Fragen zu Forms as a Cloud Service
+title: Häufig gestellte Fragen zu AEM Forms as a Cloud Service
 description: Häufig gestellte Fragen zu Forms as a Cloud Service
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 index: false
-source-git-commit: 93e7c4b31ea3037c98b64790ffdee11f94cc6134
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 100%
+source-wordcount: '995'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ Sie können die [!DNL JavaScript™]-API-Referenzdokumentation vom [!DNL  Maven 
 * **Kann ich vorhandene Designs und Vorlagen weiterverwenden?**
 Ja, Sie können mit AEM 6.4 Forms und AEM 6.5 Forms erstellte Designs weiterhin verwenden, nachdem Sie diese Designs mithilfe des [Migrationsdienstprogramms](migrate-to-forms-as-a-cloud-service.md) in [!DNL AEM Forms] as a Cloud Service übertragen haben.
 
-   Außerdem können Sie ein Projekt auf der Grundlage des [!DNL AEM Forms] as a Cloud Service [-Archteyps](setup-local-development-environment.md#forms-cloud-service-local-development-environment) erstellen und die darin enthaltenen Beispielvorlagen und Designs verwenden.
+  Außerdem können Sie ein Projekt auf der Grundlage des [!DNL AEM Forms] as a Cloud Service [-Archteyps](setup-local-development-environment.md#forms-cloud-service-local-development-environment) erstellen und die darin enthaltenen Beispielvorlagen und Designs verwenden.
 
 * **Kann ich schemakonforme Daten generieren?**
 Ja, Sie können adaptive Formulare erstellen, um schemakonforme Daten zu generieren.
@@ -60,7 +60,7 @@ Das Caching geschützter Inhaltsfunktionen ist standardmäßig deaktiviert. Um d
 
 * **Ich habe ein lokalisiertes adaptives Formular, aber die lokalisierte Version wird nicht gerendert. Was könnte die Ursache sein, und wie kann man sie beheben?**
 
-   Die URL-Konvention von lokalisierten adaptiven Formularen unterstützt nun die Angabe eines Gebietsschemas in der URL. Die neue URL-Konvention ermöglicht das Caching lokalisierter Formulare in einem Dispatcher oder CDN. Verwenden Sie in der Cloud Service-Umgebung, um die lokalisierte Version eines adaptiven Formulars anzufordern, das URL-Format `http://host:port/content/forms/af/<afName>.<locale>.html` statt `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe empfiehlt die Verwendung von Dispatcher- oder CDN-Caching. Auf diese Weise wird das Rendern vorausgefüllter Formulare beschleunigt.
+  Die URL-Konvention von lokalisierten adaptiven Formularen unterstützt nun die Angabe eines Gebietsschemas in der URL. Die neue URL-Konvention ermöglicht das Caching lokalisierter Formulare in einem Dispatcher oder CDN. Verwenden Sie in der Cloud Service-Umgebung, um die lokalisierte Version eines adaptiven Formulars anzufordern, das URL-Format `http://host:port/content/forms/af/<afName>.<locale>.html` statt `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe empfiehlt die Verwendung von Dispatcher- oder CDN-Caching. Auf diese Weise wird das Rendern vorausgefüllter Formulare beschleunigt.
 
 * **Ich habe ein adaptives Formular aktualisiert. Warum ist die aktualisierte Version für Kunden nicht verfügbar?**
 Standardmäßig aktualisiert CDN den Cache alle 5 Minuten. Warten Sie 5 Minuten und überprüfen Sie dann erneut die Verfügbarkeit der aktualisierten Version.
@@ -82,11 +82,11 @@ Das Formulardatenmodell stellt keine Methode zur Verwendung benutzerdefinierter 
 
 * **Kann ich Übermittlungsaktionen des Formularportals für adaptive Formulare verwenden?**
 
-   Sie können Ihr vorhandenes adaptives Formular dahingehend ändern, dass die Übermittlungsaktionen [An REST-Endpunkt übermitteln](configuring-submit-actions.md#submit-to-rest-endpoint), [E-Mail senden](configuring-submit-actions.md#send-email), [Senden mit Formulardatenmodell](configuring-submit-actions.md#submit-using-form-data-model) und [AEM-Workflow aufrufen](configuring-submit-actions.md#invoke-an-aem-workflow) verwendet werden. Formularportal und Formularportal-Übermittlungsaktionen sind noch nicht verfügbar. Behalten Sie die monatlichen Versionshinweise hinsichtlich einer Verfügbarkeit dieser Funktionen im Auge.
+  Sie können Ihr vorhandenes adaptives Formular dahingehend ändern, dass die Übermittlungsaktionen [An REST-Endpunkt übermitteln](configuring-submit-actions.md#submit-to-rest-endpoint), [E-Mail senden](configuring-submit-actions.md#send-email), [Senden mit Formulardatenmodell](configuring-submit-actions.md#submit-using-form-data-model) und [AEM-Workflow aufrufen](configuring-submit-actions.md#invoke-an-aem-workflow) verwendet werden. Formularportal und Formularportal-Übermittlungsaktionen sind noch nicht verfügbar. Behalten Sie die monatlichen Versionshinweise hinsichtlich einer Verfügbarkeit dieser Funktionen im Auge.
 
 * **Kann ich die [!DNL AEM Forms]-Mobile-App mit [!DNL AEM Forms] as a Cloud Service verwenden?**
 
-   Adaptive Formulare bieten ein responsives Design. Diese Formulare ändern Erscheinungsbild, Design und Interaktivität je nach zugrunde liegendem Gerät. Sie können adaptive Formulare weiter auf Mobilgeräten verwenden, während Sie die monatlichen Versionshinweise hinsichtlich einer Verfügbarkeit der Funktionen mitverfolgen.
+  Adaptive Formulare bieten ein responsives Design. Diese Formulare ändern Erscheinungsbild, Design und Interaktivität je nach zugrunde liegendem Gerät. Sie können adaptive Formulare weiter auf Mobilgeräten verwenden, während Sie die monatlichen Versionshinweise hinsichtlich einer Verfügbarkeit der Funktionen mitverfolgen.
 
 * **Welche Funktionen sind in der ersten GA-Version nicht enthalten?**
 Das Formularportal, die [!DNL AEM Forms]-Mobile-App, die Integration mit Adobe Analytics und die Integration mit Adobe Target sind nicht Teil der ersten GA-Version. Informationen zu neuen Funktionen finden Sie in den monatlichen Versionshinweisen.

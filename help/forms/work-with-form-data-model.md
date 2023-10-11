@@ -1,14 +1,14 @@
 ---
-title: Arbeiten mit dem Formulardatenmodell
+title: Wie funktioniert das Arbeiten mit einem Formulardatenmodell in AEM Forms?
 description: Fügen Sie Datenmodellobjekte und Dienste hinzu, erstellen Sie Datenmodellobjekte und untergeordnete Eigenschaften, konfigurieren Sie Dienste, arbeiten Sie mit Navigationseigenschaften von OData-Diensten.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '4108'
-ht-degree: 80%
+source-wordcount: '4115'
+ht-degree: 79%
 
 ---
 

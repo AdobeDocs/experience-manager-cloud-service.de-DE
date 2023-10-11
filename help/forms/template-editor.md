@@ -1,11 +1,11 @@
 ---
-title: Erstellen einer Vorlage für ein adaptives Formular
+title: Wie kann eine Vorlage für ein adaptives Formular erstellt werden?
 description: Erstellen Sie Vorlagen für adaptive Formulare, indem Sie mithilfe des Vorlagen-Editors die grundlegende Struktur und die anfänglichen Inhalte definieren.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2095'
-ht-degree: 73%
+source-wordcount: '2096'
+ht-degree: 72%
 
 ---
 
@@ -124,7 +124,7 @@ Sie möchten beispielsweise eine Vorlage mit den folgenden Registerkarten erstel
 
 Sie haben ein Logo hinzugefügt, einen Titel angegeben und eine Fußzeile in der Strukturebene hinzugefügt. Sperren Sie die Kopf- und Fußzeile, damit Autoren sie nicht bearbeiten, wenn sie die Vorlage zum Erstellen von Formularen verwenden.
 
-Ändern Sie die Ebene von Struktur in Anfänglicher Inhalt und beginnen Sie mit dem Hinzufügen von Inhalt zum Formular. Um eine Struktur mit Registerkarten zu erstellen, fügen Sie ein untergeordnetes Bedienfeld im guideRootPanel des Containers für adaptive Formulare hinzu. So fügen Sie einen Bereich hinzu:
+Ändern Sie die Ebene von Struktur in Anfänglicher Inhalt und fügen Sie dem Formular Inhalt hinzu. Um eine Struktur mit Registerkarten zu erstellen, fügen Sie ein untergeordnetes Bedienfeld im guideRootPanel des Containers für adaptive Formulare hinzu. So fügen Sie einen Bereich hinzu:
 
 * Sie können ein Bedienfeld hinzufügen, indem Sie auf die Schaltfläche **[!UICONTROL +]** tippen, wenn Sie die Option **[!UICONTROL Komponenten hierher ziehen]** auswählen.
 

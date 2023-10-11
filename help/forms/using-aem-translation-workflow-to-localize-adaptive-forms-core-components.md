@@ -1,11 +1,11 @@
 ---
-title: Wie übersetzt man ein auf Kernkomponenten basierendes adaptives Formular?
+title: Wie können wir ein auf Kernkomponenten basierendes adaptives Formular übersetzen?
 description: Erfahren Sie, wie Sie ein Formulardatenmodell in AEM Forms erstellen, das Modell mit Beispieldaten und -diensten testen und verschiedene Optionen für ein Modell konfigurieren.
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '894'
 ht-degree: 21%
 
 ---

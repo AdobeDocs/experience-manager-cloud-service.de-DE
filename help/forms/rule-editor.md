@@ -1,13 +1,13 @@
 ---
-title: Was ist der Regeleditor für adaptive Forms?
+title: Wie können Sie mit dem Regeleditor Regeln zu Formularfeldern hinzufügen, um dynamisches Verhalten hinzuzufügen und eine komplexe Logik zu einem adaptiven Formular zu erstellen?
 description: Der Regeleditor für adaptive Formulare ermöglicht es Ihnen, ohne Programmierung oder Skripterstellung dynamisches Verhalten und komplexe Logik in Ihre Formulare zu integrieren.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '6422'
+source-wordcount: '6440'
 ht-degree: 66%
 
 ---

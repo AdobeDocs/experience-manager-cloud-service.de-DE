@@ -1,10 +1,10 @@
 ---
-title: Wie kann einem adaptiven Formular Unterstützung für neue Gebietsschemata hinzugefügt werden?
+title: Wie füge ich einem adaptiven Formular, das auf Foundation-Komponenten basiert, Unterstützung für neue Gebietsschemata hinzu?
 description: Bei Adaptive Forms können Sie Gebietsschemata für weitere Sprachen hinzufügen, mit Ausnahme der standardmäßig bereitgestellten Sprachen.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1264'
 ht-degree: 74%
 
 ---

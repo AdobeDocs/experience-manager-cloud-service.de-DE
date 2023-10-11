@@ -1,12 +1,12 @@
 ---
-title: Hinzufügen von Informationen aus Benutzerdaten zu Metadaten für die Formularübermittlung
+title: Wie werden Metadaten eines gesendeten Formulars aktualisiert?
 description: Erfahren Sie, wie Sie den Metadaten eines übermittelten Formulars mit vom Benutzer bereitgestellten Daten Informationen hinzufügen. Vertiefen Sie Ihre Kenntnisse über das Anzeigen der aktualisierten Formularübermittlungsmetadaten im CRX-Repository.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '688'
 ht-degree: 49%
 
 ---

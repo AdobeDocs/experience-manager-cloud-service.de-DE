@@ -1,14 +1,14 @@
 ---
-title: Entwerfen eines XML-Schemas für ein adaptives Formular
+title: Wie entwirft man ein XML-Schema für ein adaptives Formular?
 description: Erfahren Sie, wie Sie ein XML-Schema für ein adaptives Formular erstellen und ein adaptives Formular erstellen, das auf dem Schema basiert, um Schemafehlungsdaten zu erstellen.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 52%
+source-wordcount: '952'
+ht-degree: 51%
 
 ---
 
