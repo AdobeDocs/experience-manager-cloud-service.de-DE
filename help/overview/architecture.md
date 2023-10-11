@@ -2,10 +2,10 @@
 title: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service
 description: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 13c67c35238c5138120f6d0d4845c759221d65ad
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 97%
+source-wordcount: '2015'
+ht-degree: 88%
 
 ---
 
@@ -77,7 +77,7 @@ Es gibt drei Arten von Umgebungen, die mit AEM as a Cloud Service verfügbar sin
 
 * **Entwicklungsumgebung**: ermöglicht Entwicklern die Implementierung von AEM-Anwendungen unter denselben Laufzeitbedingungen wie bei den Staging- und Produktionsumgebungen.
 
-  Siehe [Verwalten von Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de#using-cloud-manager) für weitere Details.
+  Siehe [Umgebungen verwalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de#using-cloud-manager) für weitere Details.
 
 * **Schnelle Entwicklungsumgebung**: Ermöglicht schnelle Entwicklungsiterationen zum Debugging von neuem oder vorhandenem Code.
 
@@ -198,3 +198,26 @@ Die neue Architektur von AEM as a Cloud Service führt einige grundlegende Ände
 * Zur Automatisierung des Lebenszyklus der Veröffentlichungsknoten wurde das Konzept eines Golden Masters eingeführt. Der Golden Master ist ein spezieller Veröffentlichungsknoten, auf den kein Endbenutzer zugreifen kann und von dem aus alle Knoten des Veröffentlichungs-Service erstellt werden. Wartungsoperationen wie die Komprimierung werden an dem Content-Repository ausgeführt, das an den Golden Master angehängt ist. Die Veröffentlichungsknoten werden täglich wiederverwendet und erfordern keine routinemäßige Wartung; in der Vergangenheit machte diese Wartung einige Ausfallzeiten nötig, insbesondere für die Autoreninstanz.
 
 * Die Architektur trennt den Anwendungsinhalt vollständig vom Anwendungs-Code und der Konfiguration. Der gesamte Code und die Konfiguration sind praktisch unveränderlich und werden in das Grundlinienbild zur Erstellung der verschiedenen Knoten des Autoren- und Veröffentlichungs-Service zurückgeschrieben. Daher gibt es eine absolute Garantie, dass jeder Knoten identisch ist und die Änderungen am Code und der Konfiguration nur global vorgenommen werden können, indem eine Cloud Manager-Pipeline ausgeführt wird.
+
+## AEM mit Edge Delivery Services {#aem-with-edge-delivery-services}
+
+Mit Edge Delivery Services bietet AEM außergewöhnliche Erlebnisse, die Interaktionen und Konversionen fördern. AEM bietet dazu wirkungsvolle Erlebnisse, die schnell erstellt und weiterentwickelt werden können. Edge Delivery Services sind ein zusammenstellbarer Satz von Diensten, die eine schnelle Entwicklungsumgebung ermöglichen, in der Autoren schnell aktualisieren und veröffentlichen können und neue Sites schnell gestartet werden. So können Sie mit Edge Delivery Services die Konversion verbessern, Kosten reduzieren und extreme Content Velocity erzielen.
+
+Die aktualisierte Architektur umfasst Folgendes:
+
+* Content Management, jetzt mit einer Auswahl von Editoren:
+   * Universeller visueller Editor
+   * Inhaltsfragment-Editor
+   * Seiteneditor
+   * Dokumentenbasiertes Authoring, von SharePoint oder Google Drive
+* Experience Delivery umfasst jetzt:
+   * Edge-Bereitstellungsdienste
+* Hilfsdienste für die schnelle und effiziente Bereitstellung von Inhalt und Code
+
+![AEM as a Cloud Service Übersicht - mit Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "AEM as a Cloud Service Übersicht - mit Edge Delivery Services")
+
+Siehe auch:
+
+* [AEM as a Cloud Service Übersicht - mit Edge Delivery Services](/help/edge/overview.md)
+* [Verwenden von Edge Delivery Services](/help/edge/using.md)
+* [Erkunden Sie die zugrunde liegende Architektur und wichtige AEM, die mit Edge Delivery Services as a Cloud Service sind.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
