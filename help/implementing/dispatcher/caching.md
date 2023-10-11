@@ -3,10 +3,10 @@ title: Caching in AEM as a Cloud Service
 description: Erfahren Sie mehr über die Grundlagen der Zwischenspeicherung in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a6714e79396f006f2948c34514e5454fef84b5d8
+source-git-commit: 469c5f0e115cc57cf7624aecf5b9f45645f2e99a
 workflow-type: tm+mt
-source-wordcount: '2803'
-ht-degree: 49%
+source-wordcount: '2878'
+ht-degree: 48%
 
 ---
 
@@ -99,6 +99,33 @@ In beiden Fällen können die Caching-Kopfzeilen auf einer detaillierteren Ebene
 ```
 
 Achten Sie beim Ändern der Zwischenspeicherkopfzeilen auf der Dispatcher-Ebene darauf, nicht zu weit zwischengespeichert zu werden. Siehe die Diskussion im Abschnitt HTML/Text . [above](#html-text). Stellen Sie außerdem sicher, dass Assets, die privat bleiben sollen (und nicht zwischengespeichert werden sollen), nicht Teil der Filter der `LocationMatch`-Anweisung sind.
+
+JCR-Ressourcen (größer als 16 KB), die im Blob Store gespeichert sind, werden von AEM normalerweise als 302-Weiterleitungen bereitgestellt. Diese Umleitungen werden abgefangen und vom CDN gefolgt und der Inhalt wird direkt aus dem Blob Store bereitgestellt. Nur eine begrenzte Anzahl von Headern kann für diese Antworten angepasst werden. Um beispielsweise `Content-Disposition` Sie sollten die Dispatcher-Anweisungen wie folgt verwenden:
+
+```
+<LocationMatch "\.(?i:pdf)$">
+  ForceType application/pdf
+  Header set Content-Disposition inline
+  </LocationMatch>
+```
+
+Die Liste der Header, die für Blob-Antworten angepasst werden können, ist:
+
+```
+content-security-policy
+x-frame-options
+x-xss-protection
+x-content-type-options
+x-robots-tag
+access-control-allow-origin
+content-disposition
+permissions-policy
+referrer-policy
+x-vhost
+content-disposition
+cache-control
+vary
+```
 
 #### Neues Caching-Standardverhalten {#new-caching-behavior}
 
