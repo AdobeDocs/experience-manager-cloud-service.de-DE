@@ -2,7 +2,7 @@
 title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular?
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: fb3d3732f698015151d9703bfddfe94b531d31b6
+source-git-commit: 89e61c009890e2052c5db74b38c93fd54e697cd3
 workflow-type: tm+mt
 source-wordcount: '3395'
 ht-degree: 97%
@@ -235,6 +235,8 @@ Die Übermittlungsaktion **[!UICONTROL An OneDrive senden]** verbindet ein adapt
 2. [Verwenden der Übermittlungsaktion „An OneDrive senden“ in einem adaptiven Formular](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): Dadurch wird Ihr adaptives Formular mit dem konfigurierten Microsoft® OneDrive verbunden.
 
 ### Erstellen einer OneDrive-Konfiguration {#create-onedrice-configuration}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
 Verbinden von AEM Forms mit dem Microsoft® OneDrive-Speicher:
 
