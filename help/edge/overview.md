@@ -3,9 +3,9 @@ title: Erste Schritte mit Edge Delivery Services
 description: Erste Schritte mit Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: beaadc7b59223d527b61ed43d44fcd97a0079e0d
+source-git-commit: 39a7e45e3b367323cb1123227fd806f60d3ea224
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '877'
 ht-degree: 3%
 
 ---
@@ -60,7 +60,7 @@ Adobe bietet drei Kanäle, um Ihnen bei Edge Delivery Services zu helfen:
 
 ### Auf Community-Ressourcen zugreifen {#community-resource}
 
-Adobe verfügt über zwei Community-Ressourcen, die Ihnen bei der Edge-Bereitstellung helfen. [Experience League Community](https://adobe.ly/3Q6kTKl) und [Dispatch-Kanal](https://discord.gg/aem-live).
+Adobe setzt sich dafür ein, Ihnen die bestmögliche Community-Interaktion und -Unterstützung für Edge Delivery Services und dokumentbasiertes Authoring zu bieten. Teilnehmen an [Experience League Community](https://adobe.ly/3Q6kTKl) Fragen zu stellen, Feedback zu teilen, Diskussionen einzuleiten, Adobe-Experten und AEM-Berater/Champs zu unterstützen und in Echtzeit mit Gleich gesinnten in Kontakt zu treten. Und schließen Sie sich unserem [Dispatch-Kanal](https://discord.gg/aem-live), eine lockere Plattform für Echtzeit-Interaktionen und einen schnellen Ideenaustausch.
 
 ### Zugriff auf Ihren Produktkollaborationskanal {#collab-channel}
 
