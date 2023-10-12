@@ -4,10 +4,10 @@ description: Dieser Artikel beschreibt, wie Sie in Experience Manager Suchfacett
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 220350e6669c38ea602c2796ec1d5559992338ec
 workflow-type: tm+mt
-source-wordcount: '2444'
-ht-degree: 99%
+source-wordcount: '2503'
+ht-degree: 97%
 
 ---
 
@@ -303,6 +303,18 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
   </tr>
  </tbody>
 </table>
+
+## Standardsuchfacetten entfernen {#removing-default-search-facets}
+
+Adobe empfiehlt, beim Entfernen von Standardsuchfacetten vorsichtig zu sein, um Leistungsprobleme zu vermeiden. Das Entfernen von Standardsuchfacetten kann sich auch auf das Verhalten von Standardfunktionen auswirken.
+
+Entfernen Sie nicht die folgenden ausgeblendeten Felder, da dies bei OmniSearch- und Smart-Sammlungen zu einem Leistungsproblem bei der Abfrage führt:
+
+* group.2_group.type=dam:Asset
+
+* group.1_group.type=nt:folder
+
+* group.p.or=true
 
 ## Standard-Suchfacetten wiederherstellen {#restoring-default-search-facets}
 
