@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2218aa58c6105d5fbfc08975e9e39d6476f4b173
+source-git-commit: 66a6897a28bb7fa57992c6782c001629f0f1d0c5
 workflow-type: tm+mt
-source-wordcount: '4333'
+source-wordcount: '4325'
 ht-degree: 91%
 
 ---
@@ -581,7 +581,6 @@ ht-degree: 91%
          + [Salesforce-Anwendungsintegration mit OAuth 2.0-Client-Anmeldedaten](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [Konfigurieren von [!DNL Azure] -Speicher](/help/forms/configure-azure-storage.md)
          + [Konfigurieren von [!DNL Microsoft Dynamics 365] und [!DNL Salesforce] -Cloud-Services](/help/forms/configure-msdynamics-salesforce.md)
-         + [Verbinden eines adaptiven Formulars mit der Microsoft SharePoint-Liste](/help/forms/connect-aem-adaptive-form-to-sharepointlist.md)
          + [Erstellen von Formulardatenmodellen](/help/forms/create-form-data-models.md)
          + [Arbeiten mit Formulardatenmodellen](/help/forms/work-with-form-data-model.md)
          + [Verwenden von Formulardatenmodellen](/help/forms/using-form-data-model.md)
