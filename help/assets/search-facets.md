@@ -4,9 +4,9 @@ description: Dieser Artikel beschreibt, wie Sie in Experience Manager Suchfacett
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 220350e6669c38ea602c2796ec1d5559992338ec
+source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
-source-wordcount: '2503'
+source-wordcount: '2506'
 ht-degree: 97%
 
 ---
@@ -342,6 +342,7 @@ Wenn Ihnen nicht die Rolle eines Administrators zugewiesen wurde, finden Sie hie
 
 **Siehe auch**
 
+* [Best Practices durchsuchen](search-best-practices.md)
 * [Assets übersetzen](translate-assets.md)
 * [Assets-HTTP-API](mac-api-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)

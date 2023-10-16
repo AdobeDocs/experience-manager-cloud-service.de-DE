@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: c1e115e0fcf7e168c26f810f0803950df50b2c6f
+source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
-source-wordcount: '5561'
-ht-degree: 90%
+source-wordcount: '5564'
+ht-degree: 89%
 
 ---
 
@@ -539,6 +539,7 @@ Navigieren Sie zum Ordnerspeicherort für Assets, die in den Suchergebnissen ang
 
 **Siehe auch**
 
+* [Best Practices durchsuchen](search-best-practices.md)
 * [Assets übersetzen](translate-assets.md)
 * [Assets-HTTP-API](mac-api-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)

@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 66a6897a28bb7fa57992c6782c001629f0f1d0c5
+source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
-source-wordcount: '4325'
+source-wordcount: '4330'
 ht-degree: 91%
 
 ---
@@ -537,6 +537,8 @@ ht-degree: 91%
       + [Asset, Ordner und Sammlungen ansehen](/help/assets/manage-notifications-assets-view.md)
       + [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
       + [Verwalten von Tags](/help/assets/tagging-management-assets-view.md)
+   + Best Practices{#best-practices}
+      + [Best Practices durchsuchen](/help/assets/search-best-practices.md)
    + Integration mit Adobe Workfront {#integrations}
       + [Integrationen mit  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Konfigurieren der Asset-Metadatenzuordnung](/help/assets/configure-asset-metadata-mapping.md)
