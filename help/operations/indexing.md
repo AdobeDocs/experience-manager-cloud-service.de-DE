@@ -2,10 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Erfahren Sie mehr über die Inhaltssuche und -indizierung in AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d567115445c0a068380e991452d9b976535e3a1d
 workflow-type: tm+mt
-source-wordcount: '2324'
-ht-degree: 39%
+source-wordcount: '2433'
+ht-degree: 36%
 
 ---
 
@@ -34,6 +34,11 @@ Beschränkungen:
 * Intern können andere Indizes konfiguriert und für Abfragen verwendet werden. Zum Beispiel Abfragen, die gegen für den `damAssetLucene`-Index geschrieben wurden, können auf Skyline tatsächlich für eine Elasticsearch-Version dieses Index ausgeführt werden. Dieser Unterschied ist normalerweise für die Anwendung und den Benutzer nicht sichtbar. Allerdings sind bestimmte Tools wie die `explain` -Funktion einen anderen Index anzeigen. Unterschiede zwischen Lucene-Indizes und Elastic-Indizes finden Sie unter [die Elastic-Dokumentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Kunden müssen und können keine Elasticsearch-Indizes direkt konfigurieren.
 * Suche nach ähnlichen Funktionsvektoren (`useInSimilarity = true`) wird nicht unterstützt.
 
+>[!TIP]
+>
+>Weitere Informationen zur Oak-Indizierung und zu Abfragen, einschließlich einer detaillierten Beschreibung der erweiterten Such- und Indizierungsfunktionen, finden Sie im Abschnitt [Dokumentation zu Apache Oak](https://jackrabbit.apache.org/oak/docs/query/query.html).
+
+
 ## Verwendung {#how-to-use}
 
 Indexdefinitionen können wie folgt in drei primäre Anwendungsfälle kategorisiert werden:
@@ -54,11 +59,15 @@ Eine Indexdefinition kann in eine der folgenden Kategorien unterteilt werden:
 
 3. Vollständig benutzerdefinierter Index: Es ist möglich, einen völlig neuen Index von Grund auf neu zu erstellen. Ihr Name muss über ein Präfix verfügen, um Namenskonflikte zu vermeiden. Beispiel: `/oak:index/acme.product-1-custom-2`, wobei das Präfix `acme.`
 
+>[!NOTE]
+>
+>Neue Indizes in der `dam:Asset` Von Knotentyp (insbesondere Volltext-Indizes) wird dringend abgeraten, da diese mit OOTB-Produktfunktionen in Konflikt geraten können, was zu Funktions- und Leistungsproblemen führt. Im Allgemeinen werden der aktuellen Version zusätzliche Eigenschaften hinzugefügt `damAssetLucene-*` Die Indexversion ist die am besten geeignete Methode, Abfragen auf der `dam:Asset` Knotentyp (diese Änderungen werden automatisch zu einer neuen Produktversion des Index zusammengeführt, wenn sie später veröffentlicht werden). Im Zweifelsfall wenden Sie sich bitte an den Adobe Support um Rat.
+
 ## Vorbereiten der neuen Indexdefinition {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->Wenn Sie beispielsweise einen vorkonfigurierten Index anpassen, z. B. `damAssetLucene-8`, kopieren Sie bitte die neueste vorkonfigurierte Indexdefinition aus einer *Cloud Service-Umgebung* mithilfe des CRX DE Package Manager (`/crx/packmgr/`). Umbenennen in `damAssetLucene-8-custom-1` (oder höher) und fügen Sie Ihre Anpassungen in die XML-Datei ein. Dadurch wird sichergestellt, dass die erforderlichen Konfigurationen nicht versehentlich entfernt werden. Beispiel: der Knoten `tika` unter `/oak:index/damAssetLucene-8/tika` ist im angepassten Index des Cloud-Service erforderlich. Er existiert nicht im Cloud-SDK.
+>Wenn Sie beispielsweise einen vorkonfigurierten Index anpassen, z. B. `damAssetLucene-8`, kopieren Sie bitte die neueste vorkonfigurierte Indexdefinition aus einer *Cloud Service-Umgebung* mithilfe des CRX DE Package Manager (`/crx/packmgr/`). Umbenennen in `damAssetLucene-8-custom-1` (oder höher) und fügen Sie Ihre Anpassungen in die XML-Datei ein. Dadurch wird sichergestellt, dass die erforderlichen Konfigurationen nicht versehentlich entfernt werden. Beispiel: die `tika` Knoten unter `/oak:index/damAssetLucene-8/tika` ist in dem angepassten Index erforderlich, der in einer AEM Cloud Service-Umgebung bereitgestellt wird, aber nicht im lokalen AEM SDK vorhanden ist.
 
 Für Anpassungen eines OOTB-Index erstellen Sie ein neues Paket, das die tatsächliche Indexdefinition enthält, die diesem Namensmuster folgt:
 

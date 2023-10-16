@@ -2,10 +2,10 @@
 title: Query Builder-Prädikatsreferenz
 description: Prädikatreferenz für die Query Builder-API in AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: e10c39c1d7fa05b738dd8f25662617a3a9568f83
 workflow-type: tm+mt
-source-wordcount: '2252'
-ht-degree: 58%
+source-wordcount: '2295'
+ht-degree: 57%
 
 ---
 
@@ -25,6 +25,8 @@ Der Name &quot;root&quot;wird in einer Abfrage nie verwendet; er ist implizit.
 * **`p.limit`** - Zahl, die die Seitengröße angibt.
 * **`p.guessTotal`** - empfohlen: Vermeidung der Berechnung der vollständigen Ergebnissumme, was kostspielig sein kann. Entweder eine Zahl, die die maximal zu zählende Summe angibt (z. B. 1000, eine Zahl, die Benutzern genügend Feedback zur groben Größe und exakten Zahlen für kleinere Ergebnisse gibt). Oder `true` nur bis zum erforderlichen Minimum zählen `p.offset` + `p.limit`.
 * **`p.excerpt`** - wenn auf `true`, fügen Sie einen Volltextextextrakt in das Ergebnis ein.
+* **`p.indexTag`** - Wenn festgelegt, enthält die Abfrage eine Index-Tag-Option (siehe [Index-Tag der Abfrageoption](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)).
+* **`p.facetStrategy`** - wenn auf `oak`, delegiert Query Builder die Facettenextraktion an Oak (siehe [Facets](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)).
 * **`p.hits`** - (nur für das JSON-Servlet) Wählen Sie die Art und Weise aus, wie die Treffer als JSON geschrieben werden, mit diesen Standardtreffern (erweiterbar über den ResultHitWriter-Dienst).
    * **`simple`** - Minimale Elemente wie `path`, `title`, `lastmodified`, `excerpt` (falls festgelegt).
    * **`full`** - Sling JSON-Rendering des Knotens mit `jcr:path` gibt den Pfad des Treffers an. Standardmäßig werden nur die direkten Eigenschaften des Knotens aufgelistet und eine tiefere Struktur mit `p.nodedepth=N`, wobei 0 die gesamte, unendliche Unterstruktur bedeutet. Hinzufügen `p.acls=true` , um die JCR-Berechtigungen der aktuellen Sitzung für das angegebene Ergebniselement (Zuordnungen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
@@ -172,7 +174,7 @@ Nur-Filter-Prädikat; Suchindex kann nicht verwendet werden. Facettenextraktion 
 
 #### Eigenschaften {#properties-7}
 
-* **`hasPermission`** - alle kommagetrennten JCR-Berechtigungen, die die aktuelle Benutzersitzung für den betreffenden Knoten haben muss. Beispiel, `jcr:write`, `jcr:modifyAccessControl`
+* **`hasPermission`** - alle kommagetrennten JCR-Berechtigungen, die die aktuelle Benutzersitzung für den betreffenden Knoten haben muss. Zum Beispiel, `jcr:write`, `jcr:modifyAccessControl`
 
 ### language {#language}
 
