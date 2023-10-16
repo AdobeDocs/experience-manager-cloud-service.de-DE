@@ -1,12 +1,12 @@
 ---
 title: Einführung in  [!DNL AEM Forms]  as a Cloud Service
-description: Entdecken Sie AEM Forms, um geschäftsbereite Formulare zu erstellen, Geschäftsprozess-Workflows zu erstellen und Dokumentdienste zu verwenden, um Dokumente zu erstellen und zu schützen.
+description: Entdecken Sie AEM Forms, um einsatzbereite Formulare zu entwerfen, Geschäftsprozess-Workflows zu erstellen und Dokumentendienste zum Erstellen und Schützen von Dokumenten zu verwenden.
 landing-page-description: Erfahren Sie, wie Sie Formulare in AEM as a Cloud Service verwenden.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '1149'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 
