@@ -2,7 +2,7 @@
 title: Extrahieren von Inhalten aus der Quelle
 description: Erfahren Sie, wie Sie Inhalte aus einer Adobe Experience Manager (AEM)-Quellinstanz extrahieren, um sie später in eine Cloud Service-AEM-Instanz zu übertragen.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 44a3f3c4ca08cffa06056ea85adc58e3cf1f2f1c
+source-git-commit: 031ddfa2da0fc5ecc92267eae1f9dcaac394573d
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 39%
@@ -36,7 +36,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
 
 1. Dadurch wird das Dialogfeld Extraktion angezeigt. Klicks **Extract** zur Einleitung der Extraktionsphase.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png)
+   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
 
    >[!NOTE]
    >Optional können Sie den Staging-Container während der Extraktionsphase überschreiben. Wenn **Staging-Container überschreiben** deaktiviert ist, kann es die Extraktion für nachfolgende Migrationen beschleunigen, bei denen die Einstellungen für Inhaltspfade oder Include-Versionen nicht geändert wurden. Wenn sich die Einstellungen für Inhaltspfade oder eingeschlossene Versionen jedoch geändert haben, dann sollte **Staging-Container überschreiben** aktiviert sein.
