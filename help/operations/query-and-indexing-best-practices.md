@@ -3,9 +3,9 @@ title: Best Practices für Abfragen und Indizierung
 description: Erfahren Sie, wie Sie Ihre Indizes und Abfragen anhand der Best-Practice-Richtlinien von Adobe optimieren können.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 1cdda5f793d853493f1f61eefebbf2af8cdeb6cb
+source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
 workflow-type: tm+mt
-source-wordcount: '3141'
+source-wordcount: '3144'
 ht-degree: 46%
 
 ---
@@ -315,4 +315,15 @@ Dies kann aus verschiedenen Gründen auftreten -
    * In diesem Fall müssen alle vom Index zurückgegebenen Ergebnisse von der Abfrage-Engine gelesen und im Arbeitsspeicher sortiert werden.
    * Dies ist um ein Vielfaches langsamer als die Anwendung der Sortierung in der zugrunde liegenden Indexabfrage.
 1. Der Executor der Abfrage versucht, eine große Ergebnismenge zu iterieren.
-   * Diese Situation kann aus verschiedenen Gründen auftreten - | Ursache | Schadensminderung | |—|—| | Die Kommission `p.guessTotal` (oder die Verwendung einer sehr großen guessTotal), die dazu führt, dass QueryBuilder eine große Anzahl von Ergebnissen zählt |Bereitstellung `p.guessTotal` mit einem geeigneten Wert | | Verwendung einer großen oder unbegrenzten Beschränkung in Query Builder (d. h. `p.limit=-1`) |Verwenden Sie einen geeigneten Wert für `p.limit` (idealerweise 1000 oder weniger) | | Die Verwendung eines Filterprädikats in Query Builder, das eine große Anzahl von Ergebnissen aus der zugrunde liegenden JCR-Abfrage filtert | Ersetzen von Filtereigenschaften durch Einschränkungen, die in der zugrunde liegenden JCR-Abfrage angewendet werden können | | Die Verwendung einer vergleicherbasierten Sortierung in QueryBuilder |Ersetzen durch eigenschaftsbasierte Reihenfolge in der zugrunde liegenden JCR-Abfrage (unter Verwendung von Eigenschaften, die wie geordnet indiziert sind) | | Filterung einer großen Anzahl von Ergebnissen aufgrund der Zugriffskontrolle |Wenden Sie zusätzliche indizierte Eigenschaft oder Pfadbeschränkung auf die Abfrage an, um die Zugriffskontrolle zu spiegeln. | | Die Verwendung von &#39;Offset-Paginierung&#39; mit einem großen Offset |Verwenden Sie [Keyset-Paginierung](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| | Iteration einer großen oder unbegrenzten Anzahl von Ergebnissen |Verwenden Sie [Keyset-Paginierung](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| | Falscher Index ausgewählt |Verwenden Sie Tags in der Abfrage- und Indexdefinition, um sicherzustellen, dass der erwartete Index verwendet wird.|
+   * Diese Situation kann aus verschiedenen Gründen auftreten, wie unten aufgeführt:
+
+| Ursache | Abmilderung |
+|----------|--------------|
+| Die Kommission `p.guessTotal` (oder die Verwendung einer sehr großen guessTotal), die dazu führt, dass QueryBuilder eine große Anzahl von Ergebnissen zählt | Bereitstellung `p.guessTotal` mit einem geeigneten Wert |
+| Die Verwendung einer großen oder unbegrenzten Beschränkung in Query Builder (d. h. `p.limit=-1`) | Verwenden Sie einen geeigneten Wert für `p.limit` (idealerweise 1000 oder weniger) |
+| Die Verwendung eines Filterprädikats in Query Builder, das eine große Anzahl von Ergebnissen aus der zugrunde liegenden JCR-Abfrage filtert | Ersetzen von Filtereigenschaften durch Einschränkungen, die in der zugrunde liegenden JCR-Abfrage angewendet werden können |
+| Die Verwendung einer vergleicherbasierten Sortierung in QueryBuilder | Ersetzen Sie durch eigenschaftsbasierte Reihenfolge in der zugrunde liegenden JCR-Abfrage (unter Verwendung der als geordnet indizierten Eigenschaften). |
+| Filtern einer großen Anzahl von Ergebnissen aufgrund der Zugriffskontrolle | Wenden Sie zusätzliche indizierte Eigenschaft oder Pfadbeschränkung auf die Abfrage an, um die Zugriffskontrolle zu spiegeln. |
+| Die Verwendung von &#39;Offset-Paginierung&#39; mit einem großen Offset | Verwenden Sie [Keyset-Paginierung](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| Iteration einer großen oder unbegrenzten Anzahl von Ergebnissen | Verwenden Sie [Keyset-Paginierung](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| Falsch ausgewählter Index | Verwenden Sie Tags in der Abfrage- und Indexdefinition, um sicherzustellen, dass der erwartete Index verwendet wird. |
