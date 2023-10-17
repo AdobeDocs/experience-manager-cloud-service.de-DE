@@ -3,9 +3,9 @@ title: Abrufen von Zugriffsinformationen zum Git-Repository
 description: Erfahren Sie, wie der Front-End-Entwickler Cloud Manager verwendet, um auf Git-Repository-Informationen zuzugreifen.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '891'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Erfahren Sie, wie der Front-End-Entwickler Cloud Manager verwendet, um auf Git-R
 
 Wenn Sie ein Front-End-Entwickler sind, der nur für die Anpassung des Sitedesigns verantwortlich ist, benötigen Sie keine Kenntnisse darüber, wie AEM eingerichtet wurde, und können zum Abschnitt [Ziel](#objective) dieses Dokuments wechseln.
 
-Wenn Sie auch die Rolle von Cloud Manager oder AEM Administrator und Frontend-Entwickler erfüllen, haben Sie im vorherigen Dokument der Journey zur AEM Schnellseitenerstellung gelernt. [Gewähren von Zugriff für Frontend-Entwickler,](grant-access.md) wie Sie den Frontend-Entwickler integrieren, damit er Zugriff auf das Git-Repository hat, und Sie sollten jetzt wissen:
+Wenn Sie auch in der Rolle eines Cloud Manager- oder AEM-Admins sowie einer Frontend-Entwicklungsperson arbeiten, haben Sie im vorherigen Dokument der Tour zur schnellen AEM-Site-Erstellung, [Gewähren von Zugriff für Frontend-Entwicklungspersonen](grant-access.md), gelernt, wie Sie eine Frontend-Entwicklungsperson integrieren, damit sie Zugriff auf das Git-Repository hat, und Sie sollten jetzt Folgendes wissen:
 
 * Wie ein Front-End-Entwickler als Benutzer hinzugefügt wird.
 * Wie dem Front-End-Entwickler die erforderlichen Rollen zugewiesen werden.
@@ -50,9 +50,9 @@ Das Tools zur schnellen Site-Erstellung ermöglicht es Front-End-Entwicklern, un
    * Eine Begrüßungs-E-Mail von Cloud Manager, die Sie über den Zugriff informiert
    * Name des Programms oder dessen URL innerhalb von Cloud Manager
 
-Wenn eines dieser Elemente fehlt, wenden Sie sich an den AEM Administrator oder Cloud Manager-Administrator.
+Wenn eines dieser Elemente fehlt, wenden Sie sich an die AEM- oder Cloud Manager-Admins.
 
-Es wird davon ausgegangen, dass der Frontend-Entwickler über umfassende Erfahrung mit Frontend-Entwicklungs-Workflows und installierten allgemeinen Tools verfügt, darunter:
+Es wird davon ausgegangen, dass die Frontend-Entwicklungsperson über umfassende Erfahrungen mit Frontend-Entwicklungs-Workflows sowie gängigen installierten Tools verfügt, darunter:
 
 * Git
 * npm
@@ -72,7 +72,7 @@ Der Cloud Manager-Administrator hat Sie als Cloud Manager-Benutzer integriert. S
 
 ![Begrüßungs-E-Mail](assets/welcome-email.png)
 
-Wenn Sie diese E-Mail nicht erhalten haben, wenden Sie sich an den Cloud Manager-Administrator.
+Wenn Sie diese E-Mail nicht erhalten haben, wenden Sie sich an die Cloud Manager-Admins.
 
 ## Zugreifen auf Cloud Manager {#access-cloud-manager}
 
