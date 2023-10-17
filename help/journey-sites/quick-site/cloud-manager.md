@@ -3,9 +3,9 @@ title: Grundlegendes zu Cloud Manager und dem Workflow von Quick Site Creation
 description: Erfahren Sie mehr über Cloud Manager und sie Verbindung zum neuen Prozess von Quick Site Creation.
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1128'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Für Frontend-Entwickler ist keine Verwendung von AEM erforderlich.
 
 >[!TIP]
 >
->Wenn Sie nicht mit Cloud Manager-Rollen und Rollenverwaltung vertraut sind, finden Sie im Dokument Rollenbasierte Berechtigungen im Abschnitt [Zusätzliche Ressourcen](#additional-resources) Abschnitt.
+>Wenn Sie nicht mit Cloud Manager-Rollen und Rollenverwaltung vertraut sind, finden Sie weitere Informationen im Dokument „Rollenbasierte Berechtigungen“ im Abschnitt [Zusätzliche Ressourcen](#additional-resources).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -124,6 +124,6 @@ Bauen Sie auf diesem Wissen auf und setzen Sie Ihre Tour zu AEM Quick Site Creat
 Es wird zwar empfohlen, mit dem nächsten Teil der Tour zu Quick Site Creation fortzufahren, indem Sie das Dokument [Erstellen einer Site aus einer Vorlage](create-site.md) durchgehen, Sie finden aber im Folgenden noch einige zusätzliche, optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen. Diese sind jedoch nicht zwingend erforderlich, um mit der Tour fortzufahren.
 
 * [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=de): Wenn Sie an weiteren Details zu den Funktionen von Cloud Manager interessiert sind, sollten Sie sich die ausführlichen technischen Dokumente direkt ansehen.
-* [Rollenbasierte Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=de): Cloud Manager verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Weitere Informationen zu diesen Rollen und deren Verwaltung finden Sie in diesem Dokument .
+* [Rollenbasierte Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=de): Cloud Manager verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Weitere Informationen zu diesen Rollen und deren Verwaltung finden Sie in diesem Dokument.
 * [npm](https://www.npmjs.com): AEM-Designs, die zum schnellen Erstellen von Sites verwendet werden, basieren auf npm.
 * [webpack](https://webpack.js.org): AEM-Designs, die zum schnellen Erstellen von Sites verwendet werden, verwenden webpack.
