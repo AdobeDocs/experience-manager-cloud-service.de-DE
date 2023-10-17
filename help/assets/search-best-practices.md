@@ -2,10 +2,10 @@
 title: Best Practices für die Suche [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Best Practices zum Suchen, Suchen und Abrufen von Asset-Metadaten in Ihrer Anwendung.
 contentOwner: KK
-source-git-commit: 31526510cc32c9587e76da522d9377afd837d991
+source-git-commit: 2c9316431d588241b470c8146c9444dbfc0af5fd
 workflow-type: tm+mt
-source-wordcount: '2556'
-ht-degree: 12%
+source-wordcount: '2544'
+ht-degree: 11%
 
 ---
 
@@ -299,13 +299,11 @@ The newly added assets are not indexed.
 
 <table>
     <tr>
-        <th> S.No.</th>
         <th> Parameter </th>
         <th> Admin-Ansicht </th>
         <th> Assets-Ansicht </th>
     </tr>
     <tr>
-        <td> 1. </td>
         <td> Benutzerdefinierte Facetten </td>
         <td> Sie können <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=de">benutzerdefinierte Suchfacetten gemäß den Anforderungen.</td>
         <td> Die benutzerdefinierten Facetten werden teilweise in der Asset-Ansicht unterstützt. Folgende Facetten werden unterstützt:
@@ -319,37 +317,31 @@ The newly added assets are not indexed.
         </td>
     </tr>
     <tr>
-        <td> 2. </td>
         <td> Operatoren  </td>
         <td> Unterstützt AND, OR und NOT </td>
         <td> Nicht unterstützt </td>
     </tr>
     <tr>
-        <td> 3. </td>
         <td> Platzhalter  </td>
         <td> Unterstützt Fragezeichen (?) und Sternchen (*).</td>
         <td> Nicht unterstützt </td>
     </tr>
     <tr>
-        <td> 4. </td>
         <td> Suchergebnisse steigern </td>
         <td> Unterstützt </td>
         <td> Nicht unterstützt </td>
     </tr>
      <tr>
-        <td> 5. </td>
         <td> Alle Filter gleichzeitig löschen </td>
         <td> Nicht unterstützt </td>
         <td> Unterstützt</td>
     </tr>
      <tr>
-        <td> 6. </td>
         <td> Dateien/Ordner/Dateien und Ordner </td>
         <td> Unterstützt </td>
         <td> Eine Option zur Auswahl eines Ordners ist unter "Dateityp"verfügbar </td>
     </tr>
      <tr>
-        <td> 7. </td>
         <td> Asset-Status </td>
         <td> 
             Unterstützte Optionen sind:
@@ -374,7 +366,6 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 8. </td>
         <td> Dateityp </td>
         <td>
         Unterstützte Optionen sind:
@@ -398,7 +389,6 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 9. </td>
         <td> Dateigröße </td>
         <td>
         Unterstützte Optionen sind:
@@ -410,7 +400,6 @@ The newly added assets are not indexed.
         <td> Nicht unterstützt </td>
     </tr>
      <tr>
-        <td> 10. </td>
         <td> Sonstige Filter </td>
         <td>
             <ul>
@@ -427,7 +416,6 @@ The newly added assets are not indexed.
         <td> Nicht unterstützt </td>
     </tr>
      <tr>
-        <td> 11. </td>
         <td> Ähnliches finden </td>
         <td> Unterstützt </td>
         <td> Nicht unterstützt </td>
