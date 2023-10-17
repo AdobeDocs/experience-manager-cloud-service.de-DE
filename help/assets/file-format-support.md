@@ -6,9 +6,9 @@ feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1030'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Zu den Highlights für die Asset-Konversion mithilfe von Asset-Mircoservices zä
 * Gängige [Adobe-Dateiformate](#adobe-formats), die von Adobe-Programmen und -Services erstellt werden, einschließlich [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] und [!DNL Adobe Acrobat] oder PDF.
 * Gängige [Bildformate](#image-formats).
 * [Camera Raw-Dateiformate](#camera-raw-formats) für eine Vielzahl von Kameras von Herstellern wie Canon, Nikon, Fujifilm und Olympus (unterstützt von Adobe Camera Raw).
-* Häufig [Dokumentenformate](#document-formats), einschließlich Microsoft® Office- und Open Document-Formate.
+* Häufig verwendete [Dokumentenformate](#document-formats) wie Microsoft Office® sowie Open Document-Formate.
 * Ein breites Spektrum an [Video-](#video-formats) und [Audioformaten](#audio-formats).
 
 Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt wird.
@@ -51,7 +51,7 @@ Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt w
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* für [!DNL Adobe InDesign] -Dateien (INDD) wird die Größe der Ausgabedarstellungen durch die in die INDD-Datei eingebettete Vorschau bestimmt. Konfigurieren Sie die Voreinstellungen unter [!DNL InDesign] (**[!UICONTROL Voreinstellungen > Dateiverarbeitung > Vorschaubilder immer mit Dokumenten speichern, Vorschaugröße]**), damit Sie größere Ausgabedarstellungen einbetten können.
+\* Bei [!DNL Adobe InDesign]-Dateien (INDD) wird die Größe der Ausgabedarstellung durch die in die INDD-Datei eingebettete Vorschau bestimmt. Konfigurieren Sie die Voreinstellungen in [!DNL InDesign] (**[!UICONTROL Voreinstellungen > Dateiverarbeitung > Vorschaubilder immer mit Dokumenten speichern, Vorschaugröße]**), damit Sie größere Ausgabedarstellungen einbetten können.
 
 ## Bildformate {#image-formats}
 
@@ -185,14 +185,14 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 * Windows Media Video (WMV)/ASF (.wmv, .asf)
 * AVI (unkomprimiert, 8 Bit/10 Bit) (.avi)
 * MP4 (.mp4, .m4a, .m4v)
-* Microsoft® Digital Video Recording(DVR-MS) (.dvr-ms)
+* Microsoft® Digital Video Recording (DVR-MS) (.dvr-ms)
 * Matroska/WebM (.mkv)
 * WAVE/WAV (.wav)
 * QuickTime (.mov)
 
 ## Tipps und Einschränkungen {#limitations-and-tips}
 
-* Derzeit beträgt die maximale Dateigröße für die Extraktion von Metadaten etwa 15 GB. Beim Hochladen großer Assets schlägt der Vorgang zum Extrahieren von Metadaten manchmal fehl.
+* Derzeit beträgt die maximale Dateigröße für die Extraktion von Metadaten etwa 15 GB. Beim Hochladen großer Assets schlägt die Metadatenextraktion manchmal fehl.
 
 ## Dynamic Media – Unterstützte Eingabevideoformate für die Transkodierung {#video-dynamic-media-transcoding}
 
@@ -241,7 +241,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
 ## Dynamic Media – Nicht unterstützte Rasterbildformate {#unsupported-raster-image-formats-dm}
 
-Die folgenden Untertypen von Rasterbilddateiformaten, die *not* unterstützt in [!DNL Dynamic Media]:
+Die folgenden Untertypen von Rastergrafikdateiformaten, die *nicht* in [!DNL Dynamic Media] unterstützt werden:
 
 * PNG-Dateien mit einer IDAT-Blockgröße größer als 100 MB.
 * PSB-Dateien.
