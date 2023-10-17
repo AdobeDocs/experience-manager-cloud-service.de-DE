@@ -3,19 +3,19 @@ title: Inhaltsfragmente – Konfigurations-Browser (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie Inhaltsfragmentfunktionen im Konfigurations-Browser aktivieren.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '358'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
 # Inhaltsfragmente – Konfigurations-Browser{#content-fragments-configuration-browser}
 
-Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurationsbrowser für die Verwendung AEM leistungsstarken Headless-Bereitstellungsfunktionen aktivieren.
+Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurations-Browser aktivieren, um die leistungsstarken Funktionen von AEM für die Headless-Bereitstellung zu nutzen.
 
 ## Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz {#enable-content-fragment-functionality-instance}
 
-Bevor Sie Inhaltsfragmente verwenden, müssen Sie die **Konfigurationsbrowser** aktivieren:
+Bevor Sie Inhaltsfragmente verwenden können, müssen Sie den **Konfigurations-Browser** verwenden, um Folgendes zu aktivieren:
 
 * **Inhaltsfragmentmodelle** – obligatorisch
 * **GraphQL: Beständige Abfragen** – optional
@@ -24,34 +24,34 @@ Bevor Sie Inhaltsfragmente verwenden, müssen Sie die **Konfigurationsbrowser** 
 >
 >Wenn Sie **Inhaltsfragmentmodelle** nicht aktivieren:
 >
->* die **Erstellen** ist nicht zum Erstellen von Modellen verfügbar.
->* kann [Wählen Sie die Sites-Konfiguration aus, um den zugehörigen Endpunkt zu erstellen.](/help/headless/graphql-api/graphql-endpoint.md).
+>* ist die Option **Erstellen** nicht zum Erstellen von Modellen verfügbar.
+>* können Sie nicht [die Sites-Konfiguration auswählen, um den entsprechenden Endpunkt zu erstellen](/help/headless/graphql-api/graphql-endpoint.md).
 
 Um die Funktion für Inhaltsfragmente zu aktivieren, müssen Sie die folgenden Schritte ausführen:
 
-* Aktivieren der Verwendung der Inhaltsfragmentfunktionalität über den Konfigurationsbrowser
+* Aktivieren Sie die Verwendung der Inhaltsfragmentfunktionen im Konfigurations-Browser.
 * Wenden Sie die Konfiguration auf Ihren Assets-Ordner an.
 
 ### Aktivieren der Funktionen für Inhaltsfragmente im Konfigurations-Browser {#enable-content-fragment-functionality-in-configuration-browser}
 
-Verwendung bestimmter [Inhaltsfragmentfunktionalität](#creating-a-content-fragment-model), **must** sie zunächst über die **Konfigurationsbrowser**:
+Um bestimmte [Inhaltsfragment-Funktionen](#creating-a-content-fragment-model) zu nutzen, **müssen** Sie diese zunächst über den **Konfigurations-Browser** aktivieren:
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [Konfigurationsbrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Weitere Informationen finden Sie unter [Konfigurations-Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >
->[Unterkonfigurationen](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (eine in einer anderen Konfiguration verschachtelte Konfiguration) werden vollständig für die Verwendung mit Inhaltsfragmenten, Inhaltsfragmentmodellen und GraphQL-Abfragen unterstützt.
+>[Unterkonfigurationen](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (eine Konfiguration, die in einer anderen Konfiguration verschachtelt ist) werden vollständig zur Verwendung mit Inhaltsfragmenten, Inhaltsfragmentmodellen und GraphQL-Abfragen unterstützt.
 >
 >Beachten Sie Folgendes:
 >
 >
 >* Nach dem Erstellen von Modellen in einer Unterkonfiguration ist es NICHT möglich, das Modell in eine andere Unterkonfiguration zu verschieben oder zu kopieren.
 >
->* Ein GraphQL-Endpunkt basiert (noch) auf einer übergeordneten (Stamm-)Konfiguration.
+>* Ein GraphQL-Endpunkt basiert (weiterhin) auf einer übergeordneten (Stamm-)Konfiguration.
 >
->* Beständige Abfragen werden (noch) gespeichert und sind für die übergeordnete (Stamm-)Konfiguration relevant.
+>* Persistierte Abfragen werden (weiterhin) gespeichert und sind für die übergeordnete (Stamm-)Konfiguration relevant.
 
 
 1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann den **Konfigurations-Browser**.
@@ -59,8 +59,8 @@ Verwendung bestimmter [Inhaltsfragmentfunktionalität](#creating-a-content-fragm
 1. Öffnen Sie über **Erstellen** das Dialogfeld, in dem Sie:
 
    1. einen **Titel** angeben,
-   1. Die **Name** wird zum Knotennamen im Repository.
-      * Sie wird automatisch anhand des Titels generiert und entsprechend angepasst [AEM Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md).
+   1. Der **Name** wird zum Knotennamen im Repository.
+      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md) angepasst.
       * Sie können sie bei Bedarf anpassen.
    1. Um ihre Verwendung zu aktivieren, wählen Sie
       * **Inhaltsfragmentmodelle**
@@ -76,6 +76,6 @@ Verwendung bestimmter [Inhaltsfragmentfunktionalität](#creating-a-content-fragm
 
 Wenn die Konfiguration **Global** für die Inhaltsfragmentfunktionalität aktiviert ist, gilt sie für jeden Assets-Ordner.
 
-Um andere Konfigurationen (d. h. ohne globale Konfigurationen) mit einem vergleichbaren Asset-Ordner zu verwenden, müssen Sie die Verbindung definieren. Diese Verbindung wird hergestellt, indem Sie die entsprechende **Konfiguration** im **Cloud Services** des **Ordnereigenschaften** des entsprechenden Ordners.
+Um andere Konfigurationen (d. h. nicht global) mit einem vergleichbaren Assets-Ordner zu verwenden, müssen Sie die Verbindung definieren. Diese Verbindung erfolgt durch Auswahl der entsprechenden **Konfiguration** auf der Registerkarte **Cloud Services** der **Ordnereigenschaften** des entsprechenden Ordners.
 
 ![Konfiguration anwenden](assets/cfm-conf-02.png)
