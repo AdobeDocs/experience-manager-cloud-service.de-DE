@@ -4,9 +4,9 @@ description: Hochladen von Assets in  [!DNL Assets view], Anzeigen des Upload-St
 role: User
 exl-id: a85a4455-4456-48af-aee9-f05300677605
 source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '835'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Sobald alle Dateien in die Warteschlange gestellt sind, klicken Sie auf **[!UICO
 
 >[!TIP]
 >
->Wenn Sie eine Ordnerstruktur in die Asset-Ansicht hochladen, müssen Sie keine ZIP-Datei mit der Ordnerstruktur erstellen, da Sie Ordnerstrukturen direkt hochladen können. Eine ZIP-Datei, die in die Asset-Ansicht hochgeladen wurde, wird als ein ZIP-Asset gespeichert und nach dem Hochladen nicht automatisch extrahiert.
+>Sie können Ordnerstrukturen in der Assets-Ansicht direkt hochladen und müssen keine ZIP-Datei mit der Ordnerstruktur erstellen. Eine in die Assets-Ansicht hochgeladene ZIP-Datei wird als ein einzelnes ZIP-Asset gespeichert und nach dem Hochladen nicht automatisch extrahiert.
 
 ## Anzeigen von Upload-Fortschritt und -Status {#upload-progress}
 
@@ -82,7 +82,7 @@ Wenn Sie versuchen, doppelte Assets hochzuladen, werden die Assets erst hochgela
 
 >[!TIP]
 >
->Sie können Assets direkt aus Ihren [!DNL Creative Cloud]-Desktop-Programmen in das DAM-Repository hochladen.
+>Sie können Assets direkt aus Ihren [!DNL Creative Cloud]-Desktop-Anwendungen in das DAM-Repository hochladen.
 <!--TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
@@ -101,9 +101,9 @@ Benutzer können nicht mehr benötigte einzelne Assets oder Ordner löschen. Fü
 
 ## Nächste Schritte {#next-steps}
 
-* [Video zum Hochladen von Assets in der Asset-Ansicht ansehen](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=de)
+* [Sehen Sie sich ein Video zum Hochladen von Assets in der Assets-Ansicht an](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=de)
 
-* Stellen Sie Produkt-Feedback mit der [!UICONTROL Feedback] Option in der Benutzeroberfläche der Assets-Ansicht verfügbar
+* Geben Sie Produkt-Feedback über die Option [!UICONTROL Feedback] in der Benutzeroberfläche der Assets-Ansicht
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
