@@ -12,9 +12,9 @@ hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3708'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -102,7 +102,7 @@ Um aber Dynamic Media über die Bildvorgaben hinaus einen weiteren Mehrwert zu v
 
 Die intelligente Bildbearbeitung sorgt für eine noch bessere Leistung bei der Bereitstellung von Bild-Assets, indem sie das Format und die Dateigröße eines Bildes automatisch auf der Grundlage der Browser-Fähigkeiten des Kunden optimiert. Sie funktioniert mit Ihren vorhandenen Bildvorgaben (Bildvorgaben werden in Teil 2 dieser Tour besprochen) und nutzt Intelligenz bei der Bereitstellung.
 
-Durch diese Intelligenz wird die Größe der Bilddateien je nach Browser und Geschwindigkeit der Netzwerkverbindung weiter reduziert. Da Bild-Assets den größten Teil der Ladezeit einer Seite ausmachen, kann die Leistungsverbesserung grundlegende Auswirkungen auf wichtige Geschäftsindikatoren haben, z. B.:
+Durch diese Intelligenz wird die Größe der Bilddateien je nach Browser und Geschwindigkeit der Netzwerkverbindung weiter reduziert. Da Bild-Assets den größten Teil der Ladezeit einer Seite ausmachen, kann sich die Leistungsverbesserung entscheidend auf wichtige Geschäftsindikatoren auswirken, wie z. B.:
 
 * Höhere Konversion
 * Auf der Website verbrachte Zeit
@@ -128,7 +128,7 @@ Sie beginnen mit Ihrem ursprünglichen, primären Video, das Sie in das System h
 
 Auf einem iOS-Mobilgerät wird beispielsweise die Bandbreite 4G, 5G oder WLAN erkannt. Dann wird automatisch das richtig kodierte Video aus den verschiedenen Video-Bitraten im adaptiven Videoset ausgewählt. Das Video wird an Mobilgeräte, Tablets oder Desktop-Computer gestreamt.
 
-Außerdem wird die Videoqualität automatisch dynamisch umgeschaltet, wenn sich die Netzbedingungen ändern. Und wenn ein Kunde auf einem Desktop in den Vollbildmodus wechselt, reagiert das adaptive Videoset mit einer besseren Auflösung, wodurch das Anzeigeerlebnis des Kunden verbessert wird.
+Außerdem wird die Videoqualität automatisch dynamisch umgeschaltet, wenn sich die Netzbedingungen ändern. Wenn darüber hinaus eine Kundin oder ein Kunde den Vollbildmodus auf einem Desktop aktiviert, reagiert das adaptive Video-Set, indem eine bessere Auflösung verwendet wird, um das Anzeigeerlebnis zu verbessern.
 
 Adaptive Videosets bieten Ihnen bestmögliche Wiedergabe für Kunden, die das Dynamic Media-Video auf unterschiedlichen Bildschirmen und Geräten wiedergeben. Damit wird die Komplexität von Videos tatsächlich beseitigt.
 
@@ -182,7 +182,7 @@ Ein weiterer Anwendungsfall, den Dynamic Media löst, ist Video. Video ist kompl
 
 Kunden wenden sich mit folgendem Problem, das sie zu lösen hoffen, an Dynamic Media:
 
-&quot;_Wir haben das Video, und wir haben viel Geld ausgegeben, um es zu erstellen. Aber wir schreckten davor zurück, es auf Seiten zu platzieren oder zu liefern, denn durch unsere Tests können wir die Qualität des Videos nicht garantieren, oder ob es wirklich spielen wird. Und das wirkt sich letztlich auf unsere Marken und möglicherweise auch auf unsere Rolle bei der Konversion aus_.“
+„_Wir haben das Video, und wir haben viel Geld ausgegeben, um es zu erstellen. Aber wir haben uns davor gescheut, es auf Seiten zu platzieren oder bereitzustellen, weil wir nach unseren Tests nicht für die Qualität des Videos garantieren können oder dafür, dass es wirklich abgespielt wird. Und das wirkt sich letztlich auf unsere Marken und möglicherweise auch auf unsere Rolle bei der Konversion aus_.“
 
 Die Lösung von Dynamic Media besteht darin, diese eine primäre Videodatei zu nehmen und Dynamic Media alle Größen durch seinen Transkodierungsprozess bestimmen zu lassen. Kombinieren Sie dies dann mit dem intelligenten Videoplayer von Dynamic Media. Dieser Workflow gewährleistet, dass das Video auf Ihrer Haupt-Landingpage oder auf einer Kategorie- oder Produktdetailseite konsistent ist und in hoher Qualität bereitgestellt wird.
 
@@ -265,7 +265,7 @@ Die obige Ausgabedarstelleung ist jetzt live! [Jetzt probieren](https://s7d1.sce
 
 ## Optional – Weitere Informationen
 
-In Teil 1 dieser Tour wurden die Grundlagen verschiedener Dynamic Media-Themen behandelt. Wenn Sie mehr darüber erfahren möchten, was Sie gerade lesen, verwenden Sie die unten stehenden Materialien, um Konzepte genauer zu untersuchen. Andernfalls können Sie mit Teil 2 Ihrer Tour fortfahren. Siehe [Nächste Schritte in dieser Dynamic Media-Tour](#whats-next).
+In Teil 1 dieser Tour wurden die Grundlagen verschiedener Dynamic Media-Themen behandelt. Wenn Sie mehr über das soeben Gelesene erfahren möchten, nutzen Sie die folgenden Materialien, um die Konzepte zu vertiefen. Andernfalls können Sie mit Teil 2 Ihrer Tour fortfahren. Siehe [Nächste Schritte in dieser Dynamic Media-Tour](#whats-next).
 
 _Dynamic Media-Hilfethemen_
 
@@ -291,7 +291,7 @@ _Dynamic Media-Viewer_
 
 ## Nächste Schritte in dieser Dynamic Media-Tour {#whats-next}
 
-In Teil II dieser Journey untersuchen Sie Dynamic Media-URLs ein wenig näher, um besser zu verstehen, was bei der Bereitstellung eines Assets passiert. Außerdem erfahren Sie mehr über die Grundlagen zum Erstellen von Bildvorgaben zum Rendern von Assets sowie über Bildsets, Rotationssets und Sets für gemischte Medien und deren Erstellung.
+In Teil 2 dieser Tour werden Sie Dynamic Media-URLs etwas näher untersuchen, um besser zu verstehen, was passiert, wenn ein Asset bereitgestellt wird. Außerdem erfahren Sie mehr über die Grundlagen der Erstellung von Bildvorgaben zum Rendern von Assets und lernen etwas über Bildsets, Rotationssets und Sets mit gemischten Medien und darüber, wie sie erstellt werden.
 
 Hier geht es zu [Dynamic Media-Tour: Grundlagen, Teil 2](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 
