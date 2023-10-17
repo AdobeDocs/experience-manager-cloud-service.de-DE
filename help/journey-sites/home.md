@@ -3,9 +3,9 @@ title: AEM Sites-Touren
 description: Beginnen Sie hier mit einem Überblick über die geführten Touren, die zum Verständnis der leistungsstarken Sites-Funktionen in AEM verfügbar sind.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '418'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Beginnen Sie hier mit einem Überblick über die geführten Touren, die zum Vers
 
 ## Einführung {#introduction}
 
-[AEM Sites](https://business.adobe.com/de/products/experience-manager/sites/aem-sites.html) ist eine einheitliche Suite leistungsstarker Tools, mit denen Sie auf allen Kanälen digitale Erlebnisse einfach erstellen, verwalten und veröffentlichen können. AEM Sites ist eine umfassende, zentrale Lösung, mit der Sie, wo immer Sie sich befinden, hervorragende Erlebnisse für Ihre Zielgruppen schaffen können, von der Einrichtung Ihrer anfänglichen Inhaltsstruktur über die einfache Erstellung wiederverwendbarer Inhalte bis hin zur Bereitstellung in mehreren Märkten und Sprachen bis hin zur Erstellung benutzerdefinierter Programme mit personalisierten Erlebnissen.
+[AEM Sites](https://business.adobe.com/de/products/experience-manager/sites/aem-sites.html) ist eine einheitliche Suite leistungsstarker Tools, mit denen Sie auf allen Kanälen digitale Erlebnisse einfach erstellen, verwalten und veröffentlichen können. AEM Sites ist eine umfassende und zentralisierte Lösung, die es Ihnen ermöglicht, Ihren Zielgruppen unabhängig von ihrem Standort ein hervorragendes Erlebnis zu bieten – von der Erstellung der ersten Inhaltsstruktur über die einfache Erstellung wiederverwendbarer Inhalte und die Bereitstellung in mehreren Märkten und Sprachen bis hin zur Erstellung benutzerdefinierter Anwendungen, die ein personalisiertes Erlebnis bieten.
 
 ## AEM-Dokumentations-Touren {#documentation-journeys}
 
