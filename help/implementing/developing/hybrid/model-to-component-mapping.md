@@ -1,40 +1,40 @@
 ---
 title: Zuordnung dynamischer Modelle zu Komponenten für SPAs
-description: In diesem Artikel wird beschrieben, wie das dynamische Modell für die Komponentenzuordnung im JavaScript SPA SDK für AEM erfolgt.
+description: In diesem Artikel wird beschrieben, wie die Zuordnung des dynamischen Modells zu Komponenten im JavaScript SPA SDK für AEM erfolgt.
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '319'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
 # Zuordnung dynamischer Modelle zu Komponenten für SPAs {#dynamic-model-to-component-mapping-for-spas}
 
-In diesem Dokument wird beschrieben, wie die Zuordnung des dynamischen Modells zu Komponenten im JavaScript-SPA-SDK für AEM erfolgt.
+In diesem Dokument wird beschrieben, wie die Zuordnung des dynamischen Modells zu Komponenten im JavaScript SPA SDK für AEM erfolgt.
 
 ## ComponentMapping-Modul {#componentmapping-module}
 
-Das `ComponentMapping`-Modul wird dem Frontend-Projekt als NPM-Paket bereitgestellt. Es speichert Frontend-Komponenten und bietet der Single Page Application die Möglichkeit, Frontend-Komponenten AEM-Ressourcentypen zuzuordnen. Das Modul ermöglicht eine dynamische Auflösung von Komponenten beim Analysieren des JSON-Modells der Anwendung.
+Das `ComponentMapping`-Modul wird dem Frontend-Projekt als NPM-Paket bereitgestellt. Es speichert Frontend-Komponenten und bietet der Single Page Application die Möglichkeit, Frontend-Komponenten AEM-Ressourcentypen zuzuordnen. Dieses Modul ermöglicht eine dynamische Auflösung von Komponenten beim Parsen des JSON-Modells der Anwendung.
 
-Jedes im Modell vorhandene Element enthält eine `:type` -Feld, das einen AEM Ressourcentyp verfügbar macht. Bei der Implementierung kann sich die Frontend-Komponente mit dem Fragment des Modells, das sie von den zugrunde liegenden Bibliotheken erhalten hat, selbst rendern.
+Alle im Modell vorhandenen Elemente enthalten ein `:type`-Feld, das einen AEM-Ressourcentyp verfügbar macht. Bei der Implementierung kann sich die Frontend-Komponente mit dem Fragment des Modells, das sie von den zugrunde liegenden Bibliotheken erhalten hat, selbst rendern.
 
-Siehe [SPA Blueprint](blueprint.md) Dokument finden Sie weitere Informationen zum Parsen von Modellen und zum Zugriff der Frontend-Komponenten auf das Modell.
+Weitere Informationen zum Parsen von Modellen und zum Zugriff der Frontend-Komponenten auf das Modell finden Sie im Dokument [SPA-Blueprint](blueprint.md).
 
 Weitere Informationen finden Sie im npm-Paket: [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping).
 
 ## Modellgesteuerte Single Page Application {#model-driven-single-page-application}
 
-Einzelseiten-Apps, die das JavaScript SPA SDK für AEM verwenden, sind modellgesteuert:
+Anwendungen mit einzelnen Seiten, die das JavaScript SPA SDK für AEM nutzen, sind modellgesteuert:
 
 1. Frontend-Komponenten registrieren sich im [Komponentenzuordnungs-Store](#componentmapping-module).
 1. Anschließend durchläuft der [Container](blueprint.md#container), sobald ihm ein Modell vom [Modellanbieter](blueprint.md#the-model-provider) zur Verfügung gestellt wurde, seinen Modellinhalt (`:items`).
 
-1. Wenn eine Seite vorhanden ist, werden die untergeordneten Elemente (`:children`) erhalten Sie zunächst eine Komponentenklasse aus der [Komponentenzuordnung](blueprint.md#componentmapping) und dann instanziieren.
+1. Wenn es eine Seite gibt, erhalten ihre untergeordneten Elemente (`:children`) zuerst eine Komponentenklasse aus der [Komponentenzuordnung](blueprint.md#componentmapping) und instanziieren sie dann.
 
 ## App-Initialisierung {#app-initialization}
 
-Jede Komponente wird um die Funktionen des [`ModelProvider`](blueprint.md#the-model-provider) erweitert. Die Initialisierung hat daher folgende allgemeine Form:
+Jede Komponente wird um die Funktionen des [`ModelProvider`](blueprint.md#the-model-provider) erweitert. Die Initialisierung hat daher die folgende allgemeine Form:
 
 1. Jeder Modellanbieter initialisiert sich selbst und wartet auf Änderungen, die an dem Modell vorgenommen wurden, das seiner inneren Komponente entspricht.
 1. [`PageModelManager`](blueprint.md#pagemodelmanager) muss gemäß dem [Initialisierungsfluss](blueprint.md) initialisiert werden.
