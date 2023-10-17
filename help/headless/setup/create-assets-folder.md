@@ -3,9 +3,9 @@ title: Erstellen eines Asset-Ordners – Headless-Einrichtung
 description: Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren – die Grundlage für Ihren Headless-Content.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '383'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten 
 
 Zunächst müssen Sie jedoch einen Ordner für Assets erstellen, in dem Sie diese speichern.
 
-Asset-Ordner werden für [Organisieren von traditionellen Inhalts-Assets](/help/assets/manage-digital-assets.md) wie Bilder und Videos zusammen mit Inhaltsfragmenten.
+Asset-Ordner dienen der [Organisation traditioneller Inhalts-Assets](/help/assets/manage-digital-assets.md) wie Bilder und Videos, zusammen mit Inhaltsfragmenten.
 
 ## Erstellen eines Asset-Ordners {#how-to-create-an-assets-folder}
 
@@ -29,12 +29,12 @@ Administratoren müssen nur gelegentlich Ordner erstellen, um Inhalte bei der Er
 1. Tippen oder klicken Sie auf **Erstellen > Ordner**.
 1. Geben Sie einen **Titel** und einen **Namen** für Ihren Ordner an.
    * Der **Titel** sollte beschreibend sein.
-   * Die **Name** wird zum Knotennamen im Repository.
-      * Sie wird automatisch anhand des Titels generiert und entsprechend angepasst [AEM Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md).
+   * Der **Name** wird zum Knotennamen im Repository.
+      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md) angepasst.
       * Er kann bei Bedarf angepasst werden.
 
    ![Ordner erstellen](../assets/assets-folder-create.png)
-1. Wählen Sie den soeben erstellten Ordner aus, indem Sie den Mauszeiger über das Häkchen bewegen und darauf tippen. Wählen Sie anschließend **Eigenschaften** über die Symbolleiste (oder verwenden Sie die `p` [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)).
+1. Wählen Sie den soeben erstellten Ordner aus, indem Sie den Mauszeiger über das Häkchen bewegen und darauf tippen. Wählen Sie anschließend **Eigenschaften** in der Symbolleiste (oder verwenden Sie den [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `p`).
 1. Wählen Sie im Fenster **Eigenschaften** die Registerkarte **Cloud-Services** aus.
 1. Wählen Sie für die **Cloud-Konfiguration** die zuvor erstellte [Konfiguration aus.](create-configuration.md)
    ![Konfigurieren des Asset-Ordners](../assets/assets-folder-configure.png)
