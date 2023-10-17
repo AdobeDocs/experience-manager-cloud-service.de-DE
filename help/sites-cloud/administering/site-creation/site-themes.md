@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '353'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Sites, die mit AEM-Site-Vorlagen erstellt wurden, ermöglichen den einfachen Dow
 
 >[!NOTE]
 >
->AEM-Site-Designs sollten nicht mit [AEM-Site-Vorlagen verwechselt werden](site-templates.md). AEM-Site-Designs enthalten nur die Stil-Informationen für eine AEM-Site. AEM Site-Vorlagen definieren die Site-Struktur und den anfänglichen Inhalt und enthalten ein AEM Site-Design, um [Schnellsite-Erstellung](create-site.md).
+>AEM-Site-Designs sollten nicht mit [AEM-Site-Vorlagen verwechselt werden](site-templates.md). AEM-Site-Designs enthalten nur die Stil-Informationen für eine AEM-Site. AEM-Site-Vorlagen definieren die Site-Struktur und den anfänglichen Inhalt und beinhalten ein AEM-Site-Design, um die [schnelle Erstellung von Sites](create-site.md) zu ermöglichen.
 
 ## Verwenden von Site-Designs {#using-themes}
 
@@ -34,7 +34,7 @@ Site-Designs werden auf zwei verschiedene Arten verwendet:
 
 >[!TIP]
 >
->Eine vollständige Beschreibung des Prozesses zum Erstellen einer Site aus einer Vorlage und zum Anpassen ihres Designs finden Sie im Abschnitt [Tour zum Quick Site Creation](/help/journey-sites/quick-site/overview.md).
+>Eine vollständige Beschreibung des Prozesses zum Erstellen einer Site aus einer Vorlage und zum Anpassen ihres Designs finden Sie in der [Tour zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md).
 
 ## Struktur von Site-Designs {#structure}
 
