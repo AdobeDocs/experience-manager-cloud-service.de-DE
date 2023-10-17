@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1532'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -89,9 +89,9 @@ Mit der Kenntnis dieser Rollen und ihrer Funktionen können Sie jetzt Ihre Liste
 
 Sie können jetzt Benutzende hinzufügen und dem Produktprofil **Geschäftsinhaber** zuweisen.
 
-1. Identifizieren Sie die Benutzer, die Cloud Manager-Programme verwalten müssen. Dies sind Ihre **Betriebsinhaber**.
+1. Ermitteln Sie die Benutzenden, die Cloud Manager-Programme verwalten müssen. Dies sind Ihre **Geschäftsinhaberinnen und -inhaber**.
 
-1. Melden Sie sich bei der Admin Console an unter `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` und auf **Übersicht** Seite, wählen Sie **Adobe Experience Manager as a Cloud Service** Produkt aus **Produkte und Dienstleistungen** Karte.
+1. Melden Sie sich bei der Admin Console unter `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` an und wählen Sie auf der Seite **Übersicht** in der Karte **Produkte und Services** die Option **Adobe Experience Manager as a Cloud Service** aus.
 
    ![Produkte und Services](/help/journey-onboarding/assets/assign-team1.png)
 
@@ -185,5 +185,5 @@ Es wird empfohlen, mit der Onboarding-Tour weiterzumachen, wie zuvor beschrieben
 
 * [Einführung in Cloud Manager](/help/onboarding/cloud-manager-introduction.md) - Erfahren Sie mehr über Cloud Manager und Cloud Manager-Programme und -Umgebungen.
 * [Cloud Manager-Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md) - Erfahren Sie mehr über ein AEM as a Cloud Service-Team und Produktprofile.
-* [Identitätstypen in Adobe Admin Console](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - Das Identitätsverwaltungssystem von Adobe hilft Administratoren beim Erstellen und Verwalten des Benutzerzugriffs auf Anwendungen und Dienste. Adobe bietet diese Identitätstypen oder -konten an, um Benutzer zu authentifizieren und zu autorisieren.
+* [Identitätstypen in Adobe Admin Console](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/identity.ug.html) – Das Identitätsverwaltungssystem von Adobe hilft Admins beim Erstellen und Verwalten des Benutzerzugriffs auf Programme und Services. Adobe bietet diese Identitätstypen oder -konten an, um Benutzende zu authentifizieren und zu autorisieren.
 
