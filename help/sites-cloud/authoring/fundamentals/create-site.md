@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
 source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '127'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -22,4 +22,4 @@ Erfahren Sie, wie Administratoren mithilfe von Site-Vorlagen in AEM eine neue Si
 
 Bevor Inhaltsautoren Seiten mit neuen Inhalten erstellen können, muss die Site zuerst erstellt werden. Der Erfolg einer Site hängt maßgeblich von der anfänglichen Berücksichtigung und Planung der Site-Struktur, des Stils und der anfänglichen Inhalte ab. Deswegen wird die anfängliche Site-Erstellung in der Regel von einem AEM-Administrator durchgeführt.
 
-Weitere Informationen dazu, wie die Verwendung von Site-Vorlagen den Site-Erstellungsprozess schnell und flexibel macht, finden Sie unter [Erstellen der Dokumentation für einen neuen Site-Administrator](/help/sites-cloud/administering/site-creation/create-site.md).
+Weitere Informationen darüber, wie die Verwendung von Site-Vorlagen den Prozess der Site-Erstellung schnell und flexibel macht, finden Sie im Abschnitt [Erstellen der Dokumentation für einen neuen Site-Admin](/help/sites-cloud/administering/site-creation/create-site.md).
