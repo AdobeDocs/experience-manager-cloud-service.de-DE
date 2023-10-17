@@ -3,9 +3,9 @@ title: Überlagerungen für Adobe Experience Manager as a Cloud Service
 description: AEM as a Cloud Service nutzt das Prinzip von Überlagerungen, um Ihnen zu ermöglichen, die Konsolen und andere Funktionen zu erweitern und anzupassen.
 exl-id: 24bdb1a9-6d77-43c7-a75e-28e6e0fd7608
 source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '404'
-ht-degree: 32%
+ht-degree: 100%
 
 ---
 
@@ -13,38 +13,38 @@ ht-degree: 32%
 
 Adobe Experience Manager as a Cloud Service verwendet das Prinzip von Überlagerungen, um Ihnen zu ermöglichen, die Konsolen und andere Funktionen (z. B. das Erstellen von Seiten) zu erweitern und anzupassen.
 
-Der Begriff „Überlagerung“ kann in unterschiedlichen Zusammenhängen verwendet werden. In diesem Zusammenhang bedeutet eine Erweiterung AEM as a Cloud Service, dass eine Überlagerung die vordefinierten Funktionen nutzt und eigene Definitionen über sie durchsetzt, um die Standardfunktionalität anzupassen.
+Der Begriff „Überlagerung“ kann in unterschiedlichen Zusammenhängen verwendet werden. In diesem Zusammenhang, der Erweiterung von AEM as a Cloud Service, bedeutet eine Überlagerung, dass Sie die vordefinierte Funktionalität nehmen und Ihre eigenen Definitionen darüber legen, um die Standardfunktionalität anzupassen.
 
-In einer Standardinstanz wird die vordefinierte Funktion unter `/libs` Es wird empfohlen, Ihre Überlagerung (Anpassungen) unter der `/apps` Verzweigung (mithilfe von [Suchpfad](#search-paths) um die Ressourcen aufzulösen).
+In einer Standardinstanz wird die vordefinierte Funktionalität unter `/libs` gehalten und es wird empfohlen, Ihre Überlagerung (Anpassungen) unter der Verzweigung `/apps` zu definieren (mithilfe eines [Suchpfades](#search-paths), um die Ressourcen aufzulösen).
 
-* Die Touch-optimierte Benutzeroberfläche verwendet [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)-zugehörige Überlagerungen:
+* Die Touch-fähige Benutzeroberfläche verwendet [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)-bezogene Überlagerungen:
 
    * Methode
 
       * Rekonstruieren Sie die entsprechende `/libs`-Struktur unter `/apps`.
 
-        Diese Umstrukturierung erfordert keine 1:1-Kopie, da die [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) wird verwendet, um auf die erforderlichen Originaldefinitionen zu verweisen. Der Sling Resource Merger bietet Dienste für den Zugriff auf und die Zusammenführung von Ressourcen mit Vergleichsmechanismen (Differenzierungsmechanismen).
+        Bei dieser Umstrukturierung ist keine 1:1-Kopie erforderlich, da der [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) als Querverweis auf die erforderlichen Originaldefinitionen verwendet wird. Der Sling Resource Merger stellt Services für den Zugriff auf und die Zusammenführung von Ressourcen mittels Diff(Differenzierungs)-Mechanismen bereit.
 
-      * under `/apps`, nehmen Sie Änderungen vor.
+      * Nehmen Sie unter `/apps` Änderungen vor.
 
    * Vorteile
 
       * Robuster gegenüber Änderungen unter `/libs`.
-      * Definieren Sie nur das Erforderliche neu.
+      * Definieren Sie nur neu, was erforderlich ist.
 
 >[!CAUTION]
 >
->Der [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) und die zugehörigen Methoden können nur mit [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) verwendet werden. Diese Regel bedeutet, dass das Erstellen einer Überlagerung mit einer Skelettstruktur nur für die standardmäßige Touch-optimierte Benutzeroberfläche geeignet ist.
+>Der [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) und die zugehörigen Methoden können nur mit [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) verwendet werden. Diese Regel bedeutet, dass die Erstellung einer Überlagerung mit einer Skelettstruktur nur für die standardmäßige, Touch-fähige Benutzeroberfläche geeignet ist.
 
 Überlagerungen sind die empfohlene Methode für viele Änderungen. Sie können beispielsweise Ihre Konsolen konfigurieren oder eine Auswahlkategorie für den Asset-Browser im Seitenbereich erstellen (wird bei der Seitenbearbeitung verwendet). Sie sind aus folgenden Gründen erforderlich:
 
-* **Im `/libs` Verzweigung, *nicht* Änderungen vornehmen**
-Alle Änderungen, die Sie vornehmen, können verloren gehen, da diese Verzweigung bei jeder Anwendung von Upgrades auf Ihre Instanz geändert werden kann.
+* **Nehmen Sie *keine* Änderungen in der Verzweigung `/libs` vor**
+Alle Änderungen, die Sie vornehmen, können verloren gehen, da diese Verzweigung für Änderungen anfällig ist, wenn Upgrades auf Ihre Instanz angewendet werden.
 
-* Sie konzentrieren Ihre Änderungen an einem Ort, wodurch Sie Ihre Änderungen bei Bedarf leichter verfolgen, migrieren, sichern oder debuggen können.
+* Sie bündeln Ihre Änderungen an einem Speicherort und erleichtern Ihnen so das Nachverfolgen, Migrieren, Sichern oder Debuggen Ihrer Änderungen, falls erforderlich.
 
 ## Suchpfade {#search-paths}
 
-AEM verwendet den Suchpfad, um eine Ressource zu finden, wobei zuerst - standardmäßig - die `/apps` und dann `/libs` -Verzweigung. Dieser Mechanismus bedeutet, dass Ihre Überlagerung in `/apps` (und die dort definierten Anpassungen) hat Priorität.
+AEM verwendet einen Suchpfad, um eine Ressource zu finden, wobei – standardmäßig – zuerst die Verzweigung `/apps` und dann die Verzweigung `/libs` durchsucht wird. Durch diesen Mechanismus hat Ihre Überlagerung in `/apps` (und die dort definierten Anpassungen) Priorität.
 
-Bei Überlagerungen ist die bereitgestellte Ressource ein Aggregat der abgerufenen Ressourcen und Eigenschaften, abhängig von den in der OSGi-Konfiguration definierten Suchpfaden.
+Bei Überlagerungen ist die bereitgestellte Ressource ein Aggregat der abgerufenen Ressourcen und Eigenschaften, je nach den in der OSGi-Konfiguration definierten Suchpfaden.
