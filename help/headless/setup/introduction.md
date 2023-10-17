@@ -3,15 +3,15 @@ title: Headless-Einrichtung
 description: In dieser Kurzanleitung erfahren Sie mehr über die wichtigsten Funktionen von AEM as a Cloud Service Headless wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '278'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
 # Headless-Einrichtung {#introduction}
 
-Nachstehend finden Sie einen einfachen Weg zum Erstellen, Verwalten und Bereitstellen von Erlebnissen mit AEM as a Cloud Service in fünf Schritten für Benutzer, die bereits mit AEM und Headless-Technologie vertraut sind. Jedes Handbuch baut auf dem vorherigen auf, daher wird empfohlen, sie gründlich und in der richtigen Reihenfolge zu lesen.
+Benutzende, die bereits mit AEM und Headless-Technologie vertraut sind, finden im Folgenden eine einfache Anleitung in fünf Schritten zum Erstellen, Verwalten und Bereitstellen von Erlebnissen unter Verwendung von AEM as a Cloud Service. Jedes Handbuch baut auf dem vorherigen auf, daher wird empfohlen, sie gründlich und in der richtigen Reihenfolge zu lesen.
 
 1. [Erstellen einer Konfiguration](create-configuration.md)
 1. [Erstellen eines Inhaltsfragmentmodells](create-content-model.md)
@@ -23,7 +23,7 @@ Nachstehend finden Sie einen einfachen Weg zum Erstellen, Verwalten und Bereitst
 >
 >In diesem Erste-Schritte-Leitfaden werden Kenntnisse über AEM und Headless-Technologien vorausgesetzt.
 >
->Wenn Sie neu AEM oder Headless sind, finden Sie in den Journey der Headless-Dokumentation von Adobe eine durchgängige Einführung in Headless und wie AEM sie unterstützt.
+>Wenn Sie AEM oder Headless noch nicht kennen, finden Sie in den Touren zu Headless-Dokumentation von Adobe eine umfassende Einführung in Headless und in die Unterstützung durch AEM.
 >
 >* [Tour für Headless-Entwickler](/help/journey-headless/developer/overview.md)
 >* [Tour für Headless-Inhaltsarchitekten](/help/journey-headless/architect/overview.md)
@@ -32,13 +32,13 @@ Nachstehend finden Sie einen einfachen Weg zum Erstellen, Verwalten und Bereitst
 
 ## Zielgruppe {#audience}
 
-Die beschriebenen Aufgaben sind für eine einfache, durchgängige Demonstration von AEM Headless-Funktionen erforderlich. Jeder Benutzer mit Administratorzugriff auf eine AEM-Testinstanz kann diesen Handbüchern folgen, um die Headless-Bereitstellung in AEM zu verstehen, obwohl jemand mit Entwicklererfahrung ideal ist.
+Die beschriebenen Aufgaben sind für eine einfache, durchgängige Demonstration von AEM Headless-Funktionen erforderlich. Jede Person mit Administratorzugriff auf eine AEM-Testinstanz kann diesen Handbüchern folgen, um die Headless-Bereitstellung in AEM zu verstehen, auch wenn jemand mit Entwicklererfahrung ideal ist.
 
-In einer Produktionssituation werden die Aufgaben jedoch von verschiedenen Personen mit unterschiedlicher Häufigkeit ausgeführt. Beispiel:
+In einer Produktionssituation werden die Aufgaben jedoch von verschiedenen Personen unterschiedlich oft ausgeführt. Beispiel:
 
-* **Administratoren** muss die anfängliche Konfiguration und die Ordnerstruktur für den Inhalt normalerweise nur einmal oder sporadisch einrichten.
-* **Informationsarchitekten** im Allgemeinen neue Modelle hinzufügen, wenn sich die Anforderungen der Organisation entwickeln.
-* **Inhaltsautoren** kontinuierlich Inhalte als Inhaltsfragmente basierend auf den von den Architekten definierten Modellen erstellen.
+* **Admins** müssen die anfängliche Konfiguration und Ordnerstruktur für den Inhalt normalerweise nur einmal oder sporadisch einrichten.
+* **Informationsarchitektinnen und -architekten** fügen im Allgemeinen neue Modelle hinzu, wenn sich die Anforderungen der Organisation ändern.
+* **Inhaltsautorinnen und -autoren** erstellen kontinuierlich neue Inhalte als Inhaltsfragmente basierend auf den von den Architektinnen und Architekten definierten Modellen.
 
 ## Nächster Schritt {#next-step}
 
