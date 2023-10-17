@@ -6,9 +6,9 @@ feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1238'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
