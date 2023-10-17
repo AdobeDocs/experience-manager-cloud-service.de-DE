@@ -2,9 +2,9 @@
 title: Bereitstellungsprozess – Übersicht
 description: Bereitstellungsprozess – Übersicht
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Nachdem die automatische Bereitstellung abgeschlossen ist:
 ![processoverview.jpg](assets/processOverview.jpg)
 
 
-Weitere Informationen finden Sie unter [Auf Experience League as a Cloud Service Einstieg in den Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=de).
+Weitere Informationen finden Sie unter [Onboarding in Experience Manager as a Cloud Service auf Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=de).
 
 ### Ressourcen und Links
 
