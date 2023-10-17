@@ -1,11 +1,11 @@
 ---
 title: Häufig gestellte Fragen zu Screens as a Cloud Service
-description: Auf dieser Seite werden häufig gestellte Fragen zu Screens beschrieben.
+description: Auf dieser Seite werden häufig gestellte Fragen zu Screens as a Cloud Service beschrieben.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
 source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '456'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -15,12 +15,12 @@ Im folgenden Abschnitt finden Sie Antworten auf häufig gestellte Fragen (FAQs) 
 
 ## Was sollte ich tun, wenn ein AEM Screens-Player, der auf Screens as a Cloud Service verweist, die benutzerdefinierten Client-Bibliotheken mit dem Format /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css nicht auswählt?
 
-AEM as a Cloud Service ändert die langen Cache-Schlüssel bei jeder Bereitstellung. AEM Screens generiert die Offline-Caches, wenn der Inhalt geändert wird, und nicht, wenn Cloud Manager die Bereitstellung ausführt. Diese langen Cache-Schlüssel in den Manifesten sind ungültig, sodass der Player die *clientlibs*.
+AEM as a Cloud Service ändert die langen Cache-Schlüssel bei jeder Bereitstellung. AEM Screens generiert die Offline-Caches, wenn der Inhalt geändert wird, und nicht, wenn Cloud Manager die Bereitstellung ausführt. Diese langen Cache-Schlüssel in den Manifesten sind ungültig, sodass der Player die *Client-Bibliotheken* nicht herunterladen kann.
 
-Verwenden `longCacheKey="none"` in `clientlib` Ordner entfernt die langen Cache-Schlüssel vollständig für die *clientlibs*.
+Durch die Verwendung von `longCacheKey="none"` in Ihrem `clientlib`-Ordner werden die langen Cache-Schlüssel für diese *Client-Bibliotheken* vollständig entfernt.
 
 
-## Was sollte ich tun, wenn das Offline-Manifest nicht alle Ressourcen wie gewünscht enthält? {#offline-manifest}
+## Was sollte ich tun, wenn das Offline-Manifest nicht alle gewünschten Ressourcen enthält? {#offline-manifest}
 
 Offline-Caches werden mithilfe des Servives **bulk-offline-update-screens-service** erzeugt. Bestimmte Pfade, auf die von `bulk-offline-update-screens-service` nicht zugegriffen werden kann, führen zu fehlenden Inhalten in Offline-Manifesten.
 
@@ -36,14 +36,14 @@ scripts=[
         "] 
 ```
 
-## Welche Bildformate werden für die nahtlose Wiedergabe von Bildern in einem as a Cloud Service AEM Screens-Kanal empfohlen?{#screens-cloud-image-format}
+## Welche Bildformate werden für das nahtlose Rendern von Bildern in einem Kanal von AEM Screens as a Cloud Service empfohlen?{#screens-cloud-image-format}
 
 Es wird empfohlen, in einem AEM Screens as a Cloud Service-Kanal Bilder im Format `.png` und `.jpeg` zu verwenden, um ein optimales Digital Signage-Erlebnis zu erzielen.
-Bilder im Format `*.tif` (Tag-Image-Dateiformat) werden in AEM Screens as a Cloud Service nicht unterstützt. Wenn ein Kanal dieses Bildformat aufweist, wird das Bild auf der Player-Seite nicht gerendert.
+Bilder im Format `*.tif` (Tag-Image-Dateiformat) werden in AEM Screens as a Cloud Service nicht unterstützt. Wenn ein Kanal dieses Bildformat hat, wird das Bild auf der Player-Seite nicht gerendert.
 
-## Was sollte ich tun, wenn ein Kanal im Entwicklermodus (online) nicht auf dem AEM Screens-Player gerendert wird? {#screens-cloud-online-channel-blank-iframe}
+## Was sollte ich tun, wenn ein Kanal im Entwicklermodus (online) nicht auf dem AEM Screens-Player gerendert wird?{#screens-cloud-online-channel-blank-iframe}
 
-Adobe empfiehlt die Verwendung von AEM Screens-Caching-Funktionen. Wenn Sie Ihren Kanal jedoch im Entwicklermodus ausführen müssen und der AEM Screens-Player einen leeren Bildschirm anzeigt, überprüfen Sie die Entwicklertools Ihres Players und suchen Sie nach `X-Frame-Options` oder `frame-ancestors` Fehler. Die Lösung besteht darin, den Dispatcher so zu konfigurieren, dass Inhalte in iFrames ausgeführt werden können. Normalerweise funktioniert die folgende Konfiguration:
+Adobe empfiehlt die Verwendung der Caching-Funktionen von AEM Screens. Wenn Sie Ihren Kanal jedoch im Entwicklermodus ausführen müssen und der AEM Screens-Player einen leeren Bildschirm anzeigt, überprüfen Sie die Entwickler-Tools Ihres Players und suchen Sie nach `X-Frame-Options`- oder `frame-ancestors`-Fehlern. Die Lösung besteht darin, den Dispatcher so zu konfigurieren, dass Inhalte in iFrames ausgeführt werden können. Normalerweise funktioniert die folgende Konfiguration:
 
 ```
 Header set Content-Security-Policy "frame-ancestors 'self' file: localhost:*;"
@@ -51,4 +51,4 @@ Header set Content-Security-Policy "frame-ancestors 'self' file: localhost:*;"
 
 ## Was bedeutet die Verwendung der Registrierungs-Code-Grenze?
 
-Als Best Practice können Sie die Verwendung des Registrierungs-Codes einschränken. Wenn ein Registrierungs-Code kompromittiert ist, aber eine Grenze von 100 Registrierungen hat, kann sich der Angreifer nur bis zu dieser Zahl registrieren, aber nicht häufiger. Sie können die Nutzungsbeschränkung jederzeit aktualisieren, nachdem der Registrierungs-Code erstellt und einige der Player des Kunden bereits registriert wurden. Wenn der Kunde eine ungewöhnliche Registrierungsaktivität für einen bestimmten Registrierungs-Code beobachtet, kann er die Beschränkung in Echtzeit senken, während er untersucht. Sie können die Anzahl wieder erhöhen, wenn es sich um einen falschen Alarm handelt, ohne dass die bereits registrierten Spieler betroffen sind.
+Als Best Practice können Sie die Verwendung des Registrierungs-Codes einschränken. Wenn ein Registrierungs-Code kompromittiert ist, aber eine Grenze von 100 Registrierungen hat, kann sich der Angreifer nur bis zu dieser Zahl registrieren, aber nicht häufiger. Sie können die Nutzungsbeschränkung jederzeit aktualisieren, nachdem der Registrierungs-Code erstellt und einige der Player des Kunden bereits registriert wurden. Wenn Kundinnen oder Kunden eine ungewöhnliche Registrierungsaktivität für einen bestimmten Registrierungs-Code beobachten, können sie die Grenze in Echtzeit senken, während sie dies untersuchen. Die Anzahl kann wieder erhöht werden, wenn es sich um einen falschen Alarm handelt, ohne dass sich dies auf die bereits registrierten Player auswirkt.
