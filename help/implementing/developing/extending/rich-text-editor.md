@@ -4,9 +4,9 @@ description: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in [!DNL Adobe E
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1876'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -163,7 +163,7 @@ Die [Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-man
 
 ## RTE-Symbolleiste konfigurieren {#dialogfullscreen}
 
-[!DNL Experience Manager] ermöglicht es Ihnen, die Benutzeroberfläche für den Rich-Text-Editor für die verschiedenen Bearbeitungsmodi unterschiedlich zu konfigurieren. Die Standardeinstellungen finden Sie unten. Sie können diese Standardwerte entsprechend Ihren Anforderungen überschreiben. Sie passen nur die Symbolleisteneigenschaften an, die Sie Ihren Autoren zur Verfügung stellen möchten. Sie brauchen nicht alle Symbolleistenkonfigurationen anzugeben.
+Mit [!DNL Experience Manager] können Sie die Benutzeroberfläche für den Rich-Text-Editor für die verschiedenen Bearbeitungsmodi unterschiedlich konfigurieren. Die Standardeinstellungen finden Sie unten. Sie können diese Standardwerte entsprechend Ihren Anforderungen überschreiben. Sie passen nur die Symbolleisteneigenschaften an, die Sie Ihren Autoren zur Verfügung stellen möchten. Sie brauchen nicht alle Symbolleistenkonfigurationen anzugeben.
 
 Um die Symbolleiste für `dialogFullScreen` zu konfigurieren, verwenden Sie die folgende Beispielkonfiguration.
 
@@ -223,7 +223,7 @@ Administratoren können die RTE-Optionen mithilfe von Content-Richtlinien steuer
 Die verfügbaren Optionen im RTE werden von der Benutzeroberflächenkonfiguration abwärts zu den Content-Richtlinien übertragen.
 
 * Die Benutzeroberflächen-Konfigurationseinstellungen definieren, welche Optionen für die Content-Richtlinien verfügbar sind.
-* Wenn die Benutzeroberflächenkonfiguration des RTE entfernt wurde oder ein Element nicht aktiviert wird, kann die Inhaltsrichtlinie es nicht konfigurieren.
+* Wenn die Benutzeroberflächen-Konfiguration des RTE entfernt oder ein Element nicht aktiviert wird, kann die Inhaltsrichtlinie sie nicht konfigurieren.
 * Ein Autor hat nur auf die Funktionen Zugriff, die durch die Benutzeroberflächen-Konfigurationen und Content-Richtlinien zur Verfügung gestellt werden.
 
 Beispielsweise können Sie die [Dokumentation zur Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=de#the-text-component-and-the-rich-text-editor) sehen.
