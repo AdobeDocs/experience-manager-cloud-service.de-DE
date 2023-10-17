@@ -6,9 +6,9 @@ feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 source-git-commit: 5540b7aa03a384fe613abe9b32cfbf6da2268b64
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1631'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -29,29 +29,29 @@ Mit [!DNL Adobe Experience Manager Assets] können Sie Assets, Ordner und Sammlu
 
 ## Voraussetzungen {#prerequisites}
 
-Sie benötigen Administratorberechtigungen für [Einstellungen zum Freigeben von Assets als Link konfigurieren](#config-link-share-settings).
+Sie benötigen Adminrechte, um die [Einstellungen für die Freigabe von Assets als Link](#config-link-share-settings) zu konfigurieren.
 
-## Einstellungen zur Linkfreigabe konfigurieren {#config-link-share-settings}
+## Konfigurieren der Einstellungen zur Link-Freigabe {#config-link-share-settings}
 
-[!DNL Experience Manager Assets] ermöglicht Ihnen die Konfiguration der standardmäßigen Einstellungen für die Linkfreigabe.
+[!DNL Experience Manager Assets] ermöglicht Ihnen die Konfiguration der standardmäßigen Einstellungen für die Link-Freigabe.
 
-1. Klicken Sie auf [!DNL Experience Manager] -Logo und navigieren Sie dann zu **[!UICONTROL Instrumente]** > **[!UICONTROL Assets]** > **[!UICONTROL Asset-Konfiguration]** > **[!UICONTROL Linkfreigabe]**.
+1. Klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie dann zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Assets-Konfiguration]** > **[!UICONTROL Link-Freigabe]**.
 1. Anfangseinstellungen:
 
    * **Originale einschließen:**
 
-      * Auswählen `Select Include Originals` zur Auswahl der `Include Originals` standardmäßig im Dialogfeld Linkfreigabe.
-      * Geben Sie das Verhalten an, indem Sie die entsprechende Option auswählen, um die `Include Originals` Option bearbeitbar, schreibgeschützt oder ausgeblendet.
+      * Wählen Sie `Select Include Originals`, um die Option `Include Originals` standardmäßig im Dialogfeld für die Link-Freigabe auszuwählen.
+      * Legen Sie das Verhalten fest, indem Sie die entsprechende Option wählen, um die Option `Include Originals` bearbeitbar, schreibgeschützt oder ausgeblendet festzulegen.
    * **Ausgabedarstellungen einschließen:**
-      * Auswählen `Select Include Renditions` Option zum Auswählen der `Include Renditions` standardmäßig im Dialogfeld Linkfreigabe.
-      * Wählen Sie das Verhalten aus, indem Sie die entsprechende Option auswählen, um die `Include Renditions` Option bearbeitbar, schreibgeschützt oder ausgeblendet.
+      * Wählen Sie die Option `Select Include Renditions`, um die Option `Include Renditions` standardmäßig im Dialog für die Link-Freigabe auszuwählen.
+      * Wählen Sie das Verhalten, indem Sie die entsprechende Option wählen, um die Option `Include Renditions` bearbeitbar, schreibgeschützt oder ausgeblendet festzulegen.
 
-1. Geben Sie den standardmäßigen Gültigkeitszeitraum für den Link im `Validity Period` im Feld `Expiration date` Abschnitt.
+1. Geben Sie die standardmäßige Gültigkeitsdauer für den Link im Feld `Validity Period` im Abschnitt `Expiration date` an.
 
-1. **[!UICONTROL Linkfreigabe]** in der Aktionsleiste:
-   * Alle Benutzer mit `jcr:modifyAccessControl` -Berechtigungen können die [!UICONTROL Linkfreigabe] -Option. Er ist standardmäßig für alle Administratoren sichtbar. Die [!UICONTROL Linkfreigabe] -Schaltfläche standardmäßig für alle sichtbar ist. Sie können konfigurieren, dass diese Option nur für die definierten Gruppen angezeigt wird, oder Sie können diese Option auch für bestimmte Gruppen ablehnen. Auswählen `Allow only for groups` Wenn Sie zulassen möchten, dass bestimmte Gruppen die `Share Link` -Option. Auswählen `Deny from groups` die `Share Link` -Option aus bestimmten Gruppen. Nachdem Sie eine dieser Optionen ausgewählt haben, geben Sie die Gruppennamen mithilfe von `Select Groups` -Feld, um die Gruppennamen hinzuzufügen, die Sie zulassen oder ablehnen müssen.
+1. Die Schaltfläche zur **[!UICONTROL Link-Freigabe]** in der Aktionsleiste:
+   * Alle Benutzenden mit `jcr:modifyAccessControl`-Berechtigungen können die Option [!UICONTROL Link-Freigabe] sehen. Sie ist standardmäßig für alle Admins sichtbar. Die Schaltfläche [!UICONTROL Link-Freigabe] ist standardmäßig für alle sichtbar. Sie können konfigurieren, dass diese Option nur für die definierten Gruppen angezeigt wird, oder Sie können deren Anzeige auch für bestimmte Gruppen ablehnen. Wählen Sie `Allow only for groups`, wenn Sie bestimmten Gruppen erlauben wollen, die Option `Share Link` zu sehen. Wählen Sie `Deny from groups`, wenn Sie bestimmte Gruppen davon ausschließen wollen, die Option `Share Link` zu sehen. Sobald Sie eine dieser Optionen ausgewählt haben, geben Sie die Gruppennamen im Feld `Select Groups` an, um die Namen der Gruppen hinzuzufügen, für die Sie es zulassen bzw. ausschließen möchten.
 
-Informationen zu Einstellungen für die E-Mail-Konfiguration finden Sie unter [Dokumentation zu E-Mail-Diensten](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
+Die Einstellungen für die E-Mail-Konfiguration finden Sie unter [Dokumentation zum E-Mail-Dienst](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=de).
 
 ![E-Mail-Dienst konfigurieren](config-email-service.png)
 
@@ -70,12 +70,12 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 Es gibt zwei Möglichkeiten, die Assets mithilfe der Link-Freigabe freizugeben:
 
-1. Erstellen Sie einen freigegebenen Link, [kopieren Sie den Asset-Link und teilen Sie ihn](#copy-and-share-assets-link) mit anderen Benutzern.
-1. Erstellen Sie einen freigegebenen Link und [teilen Sie den Asset-Link per E-Mail](#share-assets-link-through-email). Sie können die Standardwerte wie Ablaufdatum und -zeit ändern und das Herunterladen der Original-Assets und ihrer Ausgabeformate zulassen. Sie können E-Mails an mehrere Benutzer senden, indem Sie deren E-Mail-Adressen hinzufügen.
+1. Erstellen Sie einen freigegebenen Link, [kopieren Sie den Asset-Link und teilen Sie ihn](#copy-and-share-assets-link) mit anderen Benutzenden.
+1. Erstellen Sie einen freigegebenen Link und [teilen Sie den Asset-Link per E-Mail](#share-assets-link-through-email). Sie können die Standardwerte wie Ablaufdatum und -zeit ändern und das Herunterladen der Original-Assets und ihrer Ausgabedarstellungen zulassen. Sie können E-Mails an mehrere Benutzer senden, indem Sie deren E-Mail-Adressen hinzufügen.
 
    ![Dialogfeld „Linkfreigabe“](assets/share-link.png)
 
-In beiden Fällen können Sie die Standardwerte wie Ablaufdatum und -zeit ändern und das Herunterladen der Original-Assets und ihrer Ausgabeformate zulassen.
+In beiden Fällen können Sie die Standardwerte wie Ablaufdatum und -zeit ändern und das Herunterladen der Original-Assets und ihrer Ausgabedarstellungen zulassen.
 
 ### Kopieren und Freigeben des Asset-Links{#copy-and-share-asset-link}
 
@@ -85,8 +85,8 @@ Freigeben von Assets als öffentliche URL:
 1. Wählen Sie die Assets oder den Ordner mit den Assets aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Link freigeben]**.
 1. Der Dialog **[!UICONTROL Linkfreigabe]** wird angezeigt, der im Feld **[!UICONTROL Link freigeben]** auch einen automatisch generierten Asset-Link enthält.
 1. Legen Sie das Ablaufdatum des freigegebenen Links nach Bedarf fest.
-1. under **[!UICONTROL Linkeinstellungen]**, aktivieren oder deaktivieren `Include Originals` oder `Include Renditions` einen der beiden Elemente ein- oder auszuschließen. Die Auswahl von mindestens ist obligatorisch.
-1. Die Namen der ausgewählten Assets werden in der rechten Spalte der [!DNL Share Link] Dialogfeld.
+1. Aktivieren oder deaktivieren Sie unter **[!UICONTROL Link-Einstellungen]** `Include Originals` bzw. `Include Renditions`, um eine oder beide einzubeziehen bzw. auszuschließen. Die Auswahl von mindestens einer Option ist obligatorisch.
+1. Die Namen der ausgewählten Assets werden in der rechten Spalte des Dialogfelds [!DNL Share Link] angezeigt.
 1. Kopieren Sie diesen Link und teilen Sie ihn mit anderen Benutzern.
 
 ### Freigeben des Asset-Links per E-Mail-Benachrichtigung {#share-assets-link-through-email}
@@ -96,7 +96,7 @@ So geben Sie Assets per E-Mail frei:
 1. Wählen Sie die Assets oder den Ordner mit den Assets aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Link freigeben]**.
 1. Der Dialog **[!UICONTROL Linkfreigabe]** wird angezeigt, der im Feld **[!UICONTROL Link freigeben]** auch einen automatisch generierten Asset-Link enthält.
 
-   * Geben Sie in das Feld &quot;E-Mail-Adresse&quot;die E-Mail-Adresse des Benutzers ein, für den Sie den Link freigeben möchten. Sie können den Link für mehrere Benutzer freigeben. Wenn der Benutzer Mitglied Ihres Unternehmens ist, wählen Sie seine E-Mail-Adresse aus den Vorschlägen aus, die in der Dropdown-Liste angezeigt werden. Geben Sie im Textfeld der E-Mail-Adresse die E-Mail-Adresse des Benutzers ein, für den Sie den Link freigeben möchten, und klicken Sie auf [!UICONTROL Eingabe]. Sie können den Link für mehrere Benutzer freigeben.
+   * Geben Sie im Feld „E-Mail-Adresse“ die E-Mail-Adresse der Person ein, für die Sie den Link freigeben möchten. Sie können den Link für mehrere Benutzende freigeben. Wenn die Person Mitglied Ihres Unternehmens ist, wählen Sie ihre E-Mail-Adresse aus den Vorschlägen aus, die in der Dropdown-Liste angezeigt werden. Geben Sie in das Textfeld „E-Mail-Adresse“ die E-Mail-Adresse der Person ein, für die Sie den Link freigeben möchten, und klicken Sie auf [!UICONTROL Eingabe]. Sie können den Link für mehrere Benutzende freigeben.
 
    * Geben Sie im Feld **[!UICONTROL Betreff]** einen Betreff ein, um den Zweck der freigegebenen Assets anzugeben.
    * Geben Sie bei Bedarf eine Nachricht in das Feld **[!UICONTROL Nachricht]** ein.
@@ -121,11 +121,11 @@ Jeder Benutzer, der Zugriff auf den freigegebenen Asset-Link hat, kann die in ei
 
   ![Warteschlangen-Download](assets/queue-download.png)
 
-* Klicken Sie bei der Vorbereitung der Download-Datei auf das **[!UICONTROL Posteingang herunterladen]** -Option, um den Status Ihres Downloads anzuzeigen. Bei großen Downloads klicken Sie auf die Schaltfläche **[!UICONTROL Aktualisieren]** -Schaltfläche, um den Status zu aktualisieren.
+* Klicken Sie während der Vorbereitung der Download-Datei auf die Option **[!UICONTROL Download-Posteingang]**, um den Status Ihres Downloads anzuzeigen. Klicken Sie bei großen Downloads auf die Schaltfläche **[!UICONTROL Aktualisieren]**, um den Status zu aktualisieren.
 
   ![Download-Posteingang](assets/link-sharing-download-inbox.png)
 
-* Nachdem die Verarbeitung abgeschlossen ist, klicken Sie auf die **[!UICONTROL Herunterladen]** Schaltfläche zum Herunterladen der ZIP-Datei.
+* Nachdem die Verarbeitung abgeschlossen ist, klicken Sie auf die Schaltfläche **[!UICONTROL Download]**, um die Zip-Datei herunterzuladen.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -223,7 +223,7 @@ Die verschiedenen Optionen zum Freigeben der Assets erfordern eine spezifische K
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Die URL für Assets, die Sie freigeben möchten, generieren Sie im Dialogfeld Linkfreigabe. Benutzer mit Administratorrechten oder mit Leserechten für den Speicherort `/var/dam/share` können dann die Links sehen, die für sie freigegeben sind. Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für externe Parteien verfügbar zu machen, ohne dass sich diese zunächst bei [!DNL Assets] anmelden müssen.
+Die URL für Assets, die Sie freigeben möchten, generieren Sie im Dialogfeld „Link-Freigabe“. Benutzende mit Administratorrechten oder mit Leserechten für den Speicherort `/var/dam/share` können dann die Links sehen, die für sie freigegeben sind. Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für externe Parteien verfügbar zu machen, ohne dass sich diese zunächst bei [!DNL Assets] anmelden müssen.
 
 >[!NOTE]
 >
