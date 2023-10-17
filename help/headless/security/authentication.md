@@ -1,32 +1,32 @@
 ---
 title: Authentifizierung für AEM-GraphQL-Remote-Abfragen in Inhaltsfragmenten
-description: Machen Sie sich mit der Authentifizierung vertraut, die für Remote Adobe Experience Manager GraphQL-Abfragen erforderlich ist, um die Bereitstellung Headless Content zu sichern.
+description: Machen Sie sich mit der Authentifizierung vertraut, die für Adobe Experience Manager-GraphQL-Remote-Abfragen erforderlich ist, um die Bereitstellung von Headless-Inhalten zu sichern.
 feature: Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '230'
-ht-degree: 26%
+ht-degree: 100%
 
 ---
 
 # Authentifizierung für AEM-GraphQL-Remote-Abfragen in Inhaltsfragmenten {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Ein primärer Anwendungsfall für die [Adobe Experience Manager as a Cloud Service (AEM) GraphQL-API für die Bereitstellung von Inhaltsfragmenten](/help/headless/graphql-api/content-fragments.md) bedeutet, Remote-Abfragen von Drittanbieteranwendungen oder -diensten zu akzeptieren. Für diese Remote-Abfragen ist möglicherweise ein authentifizierter API-Zugriff erforderlich, um eine sichere, Headless-Content-Bereitstellung zu gewährleisten.
+Ein primäres Anwendungsbeispiel für die [GraphQL-API von Adobe Experience Manager as a Cloud Service (AEM) für die Bereitstellung von Inhaltsfragmenten](/help/headless/graphql-api/content-fragments.md) ist das Annehmen von Remote-Abfragen von Drittanbieter-Programmen oder -Services. Diese Remote-Abfragen erfordern möglicherweise einen authentifizierten API-Zugriff, um die Bereitstellung von Headless-Inhalten zu sichern.
 
 >[!NOTE]
 >
->Zum Testen und Entwickeln können Sie auch direkt über die AEM GraphQL-API auf die [GraphiQL-Benutzeroberfläche](/help/headless/graphql-api/graphiql-ide.md).
+>Für Tests und Entwicklung können Sie auch direkt über die [GraphiQL-Schnittstelle](/help/headless/graphql-api/graphiql-ide.md) auf die AEM GraphQL-API zugreifen.
 
-Für die Authentifizierung muss der Drittanbieterdienst [Zugriffstoken abrufen](#retrieving-access-token) kann [in der GraphQL-Anforderung verwendet](#use-access-token-in-graphql-request).
+Zur Authentifizierung muss der Drittanbieter-Service ein [Zugriffs-Token](#retrieving-access-token) abrufen, das dann [in der GraphQL-Anfrage](#use-access-token-in-graphql-request) verwendet werden kann.
 
 ## Abrufen eines Zugriffs-Tokens {#retrieving-access-token}
 
-Siehe [Generieren von Zugriffstoken für serverseitige APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) für ausführliche Informationen.
+Ausführliche Informationen finden Sie unter [Generieren von Zugriffs-Token für Server-seitige APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md).
 
 ## Verwenden des Zugriffs-Tokens in einer GraphQL-Anfrage {#use-access-token-in-graphql-request}
 
-Damit ein Drittanbieterdienst eine Verbindung mit einer AEM-Instanz herstellen kann, muss er über eine *Zugriffstoken*. Der Service muss dieses Token dann der `Authorization`-Kopfzeile in der POST-Anfrage hinzufügen.
+Damit ein Drittanbieter-Service eine Verbindung mit einer AEM-Instanz herstellen kann, benötigt er ein *Zugriffs-Token*. Der Service muss dieses Token dann der `Authorization`-Kopfzeile in der POST-Anfrage hinzufügen.
 
 Ein Beispiel für eine GraphQL-Autorisierungskopfzeile:
 
@@ -36,8 +36,8 @@ Authorization: Bearer <access_token>
 
 ## Berechtigungsanforderungen {#permission-requirements}
 
-Alle Anfragen, die mithilfe des Zugriffstokens gestellt werden, werden ausgeführt *durch das Benutzerkonto, das das Token generiert hat*.
+Alle Anfragen, die mit dem Zugriffs-Token durchgeführt werden, werden *von dem Benutzerkonto ausgeführt, das das Token generiert hat*.
 
-Dieses Benutzerkonto bedeutet, dass Sie überprüfen müssen, ob das Konto über die erforderlichen Berechtigungen zum Ausführen von GraphQL-Abfragen verfügt.
+Dieses Benutzerkonto bedeutet, dass Sie überprüfen müssen, ob das Konto über die erforderlichen Berechtigungen zur Ausführung von GraphQL-Abfragen verfügt.
 
-Sie können diese Berechtigungen mithilfe von GraphiQL in der lokalen Instanz überprüfen. Weitere Informationen über [Berechtigungen finden Sie hier](/help/headless/security/permissions.md).
+Sie können diese Berechtigungen mit GraphiQL auf der lokalen Instanz überprüfen. Weitere Informationen über [Berechtigungen finden Sie hier](/help/headless/security/permissions.md).
