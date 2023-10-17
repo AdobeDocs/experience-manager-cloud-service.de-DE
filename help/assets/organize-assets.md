@@ -6,9 +6,9 @@ feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
 source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '930'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, die Asset
 
 ## Organisieren von Assets mit Tags {#use-tags-to-organize-assets}
 
-Das Hinzufügen von Tags zu Assets erleichtert den Abruf während einer Suche, das Erstellen von Sammlungen mithilfe der Suchergebnisse, das Anheben des Suchrangs für einige Assets und das Anwenden von KI-Algorithmen von Adobe Sensei zur Asset-Erkennung.
+Das Hinzufügen von Tags zu Assets erleichtert deren Abruf bei einer Suche, das Erstellen von Sammlungen mithilfe der Suchergebnisse, das Verbessern des Suchrangs für einige Assets und das Anwenden von KI-Algorithmen von Adobe Sensei zur Asset-Erkennung.
 
 [!DNL Adobe Experience Manager Assets] verwendet einen selbstlernenden Algorithmus, um hochgradig beschreibende Tags zu erstellen, mit denen Sie das richtige Asset mit nur wenigen Klicks finden können. Smart-Tagging nutzt Adobe Sensei, künstliche Intelligenz und ein Framework für maschinelles Lernen, das trainiert werden kann, um standardmäßige und geschäftsspezifische Tags zu erkennen und auf Bilder anzuwenden. Smart-Tags können auch Inhalte, einzelne Wörter oder Ausdrücke identifizieren und automatisch beschreibende Tags auf Assets anwenden.
 
