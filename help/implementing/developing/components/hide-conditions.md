@@ -1,23 +1,23 @@
 ---
 title: Verwenden von Bedingungen zum Ausblenden
-description: Ausblendebedingungen können verwendet werden, um zu bestimmen, ob eine Komponentenressource gerendert wird oder nicht.
+description: Ausblendungsbedingungen können verwendet werden, um zu bestimmen, ob eine Komponentenressource gerendert wird oder nicht.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '615'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
 # Verwenden von Bedingungen zum Ausblenden {#using-hide-conditions}
 
-Ausblendebedingungen können verwendet werden, um zu bestimmen, ob eine Komponentenressource gerendert wird oder nicht. Etwa wenn ein Vorlagenautor die Kernkomponente [Listenkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=de) im [Vorlageneditor](/help/sites-cloud/authoring/features/templates.md) konfiguriert und beschließt, die Optionen zum Erstellen der Liste auf Basis untergeordneter Seiten zu deaktivieren. Durch das Deaktivieren dieser Option im Design-Dialogfeld wird eine Eigenschaft so festgelegt, dass beim Rendern der Listenkomponente die Bedingung zum Ausblenden ausgewertet und die Option zum Anzeigen untergeordneter Seiten nicht angezeigt wird.
+Ausblendungsbedingungen können verwendet werden, um zu bestimmen, ob eine Komponentenressource gerendert wird oder nicht. Etwa wenn ein Vorlagenautor die Kernkomponente [Listenkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=de) im [Vorlageneditor](/help/sites-cloud/authoring/features/templates.md) konfiguriert und beschließt, die Optionen zum Erstellen der Liste auf Basis untergeordneter Seiten zu deaktivieren. Durch das Deaktivieren dieser Option im Design-Dialogfeld wird eine Eigenschaft so festgelegt, dass beim Rendern der Listenkomponente die Bedingung zum Ausblenden ausgewertet und die Option zum Anzeigen untergeordneter Seiten nicht angezeigt wird.
 
 ## Übersicht {#overview}
 
-Dialogfelder können aufgrund der zahlreichen Optionen sehr komplex für die Benutzer sein, die möglicherweise nur einen kleinen Teil der ihnen zur Verfügung stehenden Optionen nutzen. Dies kann zu überwältigenden Benutzeroberflächen-Erlebnissen führen.
+Dialogfelder können aufgrund der zahlreichen Optionen sehr komplex für die Benutzer sein, die möglicherweise nur einen kleinen Teil der ihnen zur Verfügung stehenden Optionen nutzen. Dies kann dazu führen, dass Benutzende mit der Benutzeroberfläche überfordert sind.
 
-Durch die Verwendung von Bedingungen zum Ausblenden können Administratoren, Entwickler und Superuser Ressourcen anhand eines Regelsatzes ausblenden. Mit dieser Funktion können sie entscheiden, welche Ressourcen angezeigt werden sollen, wenn ein Autor Inhalte bearbeitet.
+Durch die Verwendung von Ausblendungsbedingungen können Admins, Entwicklungspersonen und Superuser Ressourcen anhand eines Regelsatzes ausblenden. Mit dieser Funktion können sie entscheiden, welche Ressourcen angezeigt werden sollen, wenn eine Autorin oder ein Autor Inhalte bearbeitet.
 
 >[!NOTE]
 >
@@ -49,13 +49,13 @@ Beachten Sie beim Definieren Ihrer Bedingung zum Ausblenden Folgendes:
 
 ## Beispiel {#example}
 
-Beispiele für Bedingungen zum Ausblenden finden sich überall in AEM und insbesondere in den [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). Betrachten Sie beispielsweise die [Listenkernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=de) wie im [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+Beispiele für Bedingungen zum Ausblenden finden sich überall in AEM und insbesondere in den [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). Betrachten wir zum Beispiel die [Listenkernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=de), wie sie im [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) implementiert ist.
 
-[Mit dem Vorlageneditor](/help/sites-cloud/authoring/features/templates.md) kann der Vorlagenautor im Design-Dialogfeld festlegen, welche Optionen der Listenkomponente dem Seitenautor zur Verfügung stehen. Optionen wie die, ob die Liste eine statische Liste, eine Liste mit untergeordneten Seiten, eine Liste getaggter Seiten usw. sein darf, kann aktiviert oder deaktiviert werden.
+[Mit dem Vorlageneditor](/help/sites-cloud/authoring/features/templates.md) kann der Vorlagenautor im Design-Dialogfeld festlegen, welche Optionen der Listenkomponente dem Seitenautor zur Verfügung stehen. Optionen wie die, ob die Liste eine statische Liste, eine Liste mit untergeordneten Seiten, eine Liste getaggter Seiten usw. sein darf, können aktiviert oder deaktiviert werden.
 
-Wenn ein Vorlagenautor die Option für untergeordnete Seiten deaktiviert, wird eine Designeigenschaft festgelegt und eine Ausblendebedingung dafür ausgewertet, wodurch die Option für den Seitenautor nicht gerendert wird.
+Wenn eine Vorlagenautorin oder ein Vorlagenautor die Option für untergeordnete Seiten deaktiviert, wird eine Design-Eigenschaft festgelegt und eine Ausblendebedingung dafür ausgewertet, wodurch die Option für die Seitenautorin bzw. den Seitenautor nicht gerendert wird.
 
-1. Standardmäßig kann der Seitenautor die Listenkernkomponente verwenden, um eine Liste mit untergeordneten Seiten zu erstellen, indem er die Option auswählt **Untergeordnete Seiten**.
+1. Standardmäßig kann die Seitenautorin bzw. der Seitenautor die Listenkernkomponente verwenden, um mithilfe der Option **Untergeordnete Seiten** eine Liste mit untergeordneten Seiten zu erstellen.
 
    ![Einstellungen der Listenkomponente](assets/hide-conditions-list-settings.png)
 
