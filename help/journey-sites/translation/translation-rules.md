@@ -6,9 +6,9 @@ hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '789'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ AEM erstellt automatisch Übersetzungsregeln für alle Inhalte. So zeigen Sie di
 
    ![Editor für Übersetzungsregeln](assets/translation-rules-editor.png)
 
-1. Die übersetzten Seiteneigenschaften befinden sich unter der **Allgemein** der Liste. Sie können bestehende Eigenschaftsnamen, die Sie explizit in die Übersetzung einbeziehen möchten, hinzufügen oder aktualisieren.
+1. Seiteneigenschaften, die übersetzt werden, befinden sich unter dem Abschnitt **Allgemein** der Liste. Sie können bestehende Eigenschaftsnamen, die Sie explizit in die Übersetzung einbeziehen möchten, hinzufügen oder aktualisieren.
    1. Geben Sie den Eigenschaftsnamen im Feld **Neue Eigenschaft** ein.
    1. Die Optionen **Übersetzen** und **Übernehmen** werden automatisch aktiviert.
    1. Tippen oder klicken Sie auf **Hinzufügen**.
