@@ -1,21 +1,21 @@
 ---
 title: Verwalten von Benachrichtigungen
-description: Überwachen Sie die Vorgänge, die mit den im Repository verfügbaren Assets oder Ordnern ausgeführt werden, mithilfe der Benachrichtigungen zur Ansicht "Assets".
+description: Überwachen Sie die Vorgänge, die mit den im Repository verfügbaren Assets oder Ordnern durchgeführt werden, mithilfe der Assets-Ansichtsbenachrichtigungen.
 exl-id: 5c0039a2-caa2-4b55-b963-0e7e9e542c47
 source-git-commit: bdbe47a8f06d2ec1cd75103905677fcd3955632d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '617'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
 # Überwachen von Assets, Ordnern und Sammlungen {#watch-assets-folders}
 
-Mit Benachrichtigungen zur Asset-Ansicht können Sie die Vorgänge überwachen, die für die im Repository verfügbaren Assets, Ordner oder Sammlungen ausgeführt werden. Sie müssen den Inhalt auswählen und abonnieren, für den die Benachrichtigungen an Sie gesendet werden sollen. Sie können auch die Kategorien konfigurieren, für die die Benachrichtigungen an Sie gesendet werden.
+Assets-Ansichtsbenachrichtigungen ermöglichen es Ihnen, die Vorgänge zu überwachen, die mit den im Repository verfügbaren Assets, Ordnern oder Sammlungen durchgeführt werden. Sie müssen den Inhalt auswählen und abonnieren, für den die Benachrichtigungen an Sie gesendet werden sollen. Sie können auch die Kategorien konfigurieren, für die die Benachrichtigungen an Sie gesendet werden.
 
 ## Abonnieren von Benachrichtigungskategorien {#subscribe-to-notification-categories}
 
-Sie können aus einer Liste von Kategorien auswählen und diese abonnieren, um Benachrichtigungen zu erhalten. Die Asset-Ansicht sendet die Benachrichtigungen nur für die Kategorien, die Sie aus den verfügbaren Optionen auswählen:
+Sie können aus einer Liste von Kategorien auswählen und diese abonnieren, um Benachrichtigungen zu erhalten. Die Assets-Ansicht sendet Ihnen die Benachrichtigungen nur für die Kategorien, die Sie aus den verfügbaren Optionen ausgewählt haben:
 
 <table>
     <tbody>
@@ -60,18 +60,18 @@ Sie können aus einer Liste von Kategorien auswählen und diese abonnieren, um B
 
 So abonnieren Sie die Benachrichtigungskategorien:
 
-1. Klicken ![Glockensymbol](assets/bell-icon.svg) rechts neben der Menüleiste auf der Benutzeroberfläche der Asset-Ansicht.
+1. Klicken Sie in der Benutzeroberfläche der Assets-Ansicht auf das ![Glockensymbol](assets/bell-icon.svg) am rechten Ende der Menüleiste.
 
 1. Klicken Sie auf das Symbol ![Einstellungen](assets/settings-icon.svg), um die Seite [!UICONTROL Experience Cloud-Einstellungen] anzuzeigen.
 
 1. Klicken Sie auf die Option **[!UICONTROL Benachrichtigungen]** im linken Fensterbereich.
 
-1. Im **[!UICONTROL Benachrichtigungen]** -Abschnitt, navigieren Sie zum [!UICONTROL Asset-Ansicht] und stellen Sie sicher, dass die Umschalter-Option auf den Status &quot;EIN&quot;umgestellt ist.
+1. Navigieren Sie im Abschnitt **[!UICONTROL Benachrichtigungen]** zum Abschnitt [!UICONTROL Assets-Ansicht] und vergewissern Sie sich, dass die Umschaltoption auf EIN geschaltet ist.
 
-   ![Benachrichtigungen in der Asset-Ansicht](assets/enable-notifications.png)
+   ![Benachrichtigungen in der Assets-Ansicht](assets/enable-notifications.png)
 
 1. Klicken Sie auf **[!UICONTROL Anpassen]**, um die Benachrichtigungskategorien anzuzeigen.
-   ![Benachrichtigungen in der Asset-Ansicht](assets/enable-notification-categories.png)
+   ![Benachrichtigungen in der Assets-Ansicht](assets/enable-notification-categories.png)
 
 1. Wählen Sie die Benachrichtigungskategorien aus, für die Sie benachrichtigt werden möchten.
 
@@ -82,22 +82,22 @@ Nachdem Sie [die Benachrichtigungskategorien abonniert haben](#subscribe-to-noti
 >[!NOTE]
 >
 >* Für die Benachrichtigungskategorien **[!UICONTROL Anfragen]** und **[!UICONTROL Mir zugewiesen]** müssen Sie den Inhalt nicht abonnieren, nachdem Sie die Benachrichtigungskategorien abonniert haben. Sie werden automatisch benachrichtigt, wenn Sie eine Anfrage erstellen oder wenn Ihnen eine Aufgabe zugewiesen wird.
->* Die Asset-Ansicht sendet Benachrichtigungen nur, wenn andere Benutzer Aktionen für den abonnierten Inhalt ausführen. Sie erhalten keine Benachrichtigungen über die Aktionen, die Sie für den abonnierte Inhalte ausführen.
+>* Die Assets-Ansicht sendet nur Benachrichtigungen, wenn andere Menschen Aktionen für abonnierte Inhalte ausführen. Sie erhalten keine Benachrichtigungen über die Aktionen, die Sie für den abonnierte Inhalte ausführen.
 
 Um den Inhalt zu abonnieren, wählen Sie den zu abonnierenden Ordner, das zu abonnierende Asset oder die zu abonnierende Kollektion und klicken Sie auf **[!UICONTROL Ansehen]**.
 
-In der Asset-Ansicht wird eine Erfolgsmeldung angezeigt. Sie können auf **[!UICONTROL Zu den Benachrichtigungseinstellungen gehen]** klicken, die auf der Erfolgsmeldung verfügbar sind, um Ihr [Abonnement für Benachrichtigungskategorien](#subscribe-to-notification-categories) zu bearbeiten.
+Die Assets-Ansicht zeigt eine Erfolgsmeldung an. Sie können auf **[!UICONTROL Zu den Benachrichtigungseinstellungen gehen]** klicken, was in der Erfolgsmeldung verfügbar ist, um Ihr [Abonnement für Benachrichtigungskategorien](#subscribe-to-notification-categories) zu bearbeiten.
 
-![Benachrichtigungen in der Asset-Ansicht](assets/watch-assets.png)
+![Benachrichtigungen in der Assets-Ansicht](assets/watch-assets.png)
 
-Die Asset-Ansicht sendet jetzt Benachrichtigungen für die abonnierten Kategorien. Sie können auch mehrere Assets, Ordner oder Kollektionen auswählen und auf **[!UICONTROL Ansehen]** klicken, um Zeit zu sparen. Wenn Sie jedoch mehrere Entitäten auswählen, von denen einige bereits abonniert wurden, wird die Option **[!UICONTROL Ansehen]** nicht angezeigt.
+Die Assets-Ansicht sendet jetzt Benachrichtigungen für die abonnierten Kategorien. Sie können auch mehrere Assets, Ordner oder Kollektionen auswählen und auf **[!UICONTROL Ansehen]** klicken, um Zeit zu sparen. Wenn Sie jedoch mehrere Entitäten auswählen, von denen einige bereits abonniert wurden, wird die Option **[!UICONTROL Ansehen]** nicht angezeigt.
 
 Um ein Abonnement zu kündigen, wählen Sie das abonnierte Asset, den abonnierten Ordner oder die abonnierte Kollektion aus und klicken Sie auf **[!UICONTROL Nicht mehr beobachten]**.
 
 ## Anzeigen von Benachrichtigungen {#view-notifications}
 
-Die Benachrichtigungen werden rechts in der Menüleiste auf der Benutzeroberfläche der Assets-Ansicht angezeigt.
+Die Benachrichtigungen werden in der Benutzeroberfläche der Assets-Ansicht am rechten Ende der Menüleiste angezeigt.
 
-![Benachrichtigungen in der Asset-Ansicht](assets/notifications-assets-essentials.png)
+![Benachrichtigungen in der Assets-Ansicht](assets/notifications-assets-essentials.png)
 
-Wenn Sie auf eine Benachrichtigung klicken, navigiert die Ansicht &quot;Assets&quot;zu dem entsprechenden Asset oder Ordner, auf den in der Benachrichtigung verwiesen wird.
+Wenn Sie auf eine Benachrichtigung klicken, gelangen Sie in der Assets-Ansicht zum entsprechenden Asset oder Ordner, worauf sich die Benachrichtigung bezieht.
