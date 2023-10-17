@@ -1,11 +1,11 @@
 ---
 title: Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial
-description: Neu bei der Entwicklung von AEM? Benötigen Sie einen Auffrischungskurs zu Best Practices? Dann sind Sie hier richtig! Ziel dieses mehrteiligen Tutorials ist es, Entwicklern, die neu sind, beizubringen, wie eine Website in AEM mit den neuesten Standards und Technologien implementiert AEM.
+description: Sind Sie neu bei der Entwicklung mit AEM? Benötigen Sie einen Auffrischungskurs zu Best Practices? Dann sind Sie hier richtig! Ziel dieses mehrteiligen Tutorials ist es, Entwicklerinnen und Entwicklern, die gerade mit AEM beginnen, beizubringen, wie sie in AEM eine Website unter Verwendung der neuesten Standards und Technologien implementieren können.
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '241'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 56%
 
 Steigen Sie gerade in die Entwicklung mit Adobe Experience Manager as a Cloud Service ein? Benötigen Sie einen Auffrischungskurs zu den Best Practices? Dann sind Sie hier richtig!
 
-Ziel dieses mehrteiligen Tutorials ist es, Entwicklern, die neu sind, beizubringen, wie eine Website in AEM mit den neuesten Standards und Technologien implementiert AEM. Die Hoffnung ist, dass Sie am Ende dieses Tutorials die Grundlagen der AEM Plattform verstehen und einige der gängigen Design-Muster kennen.
+Ziel dieses mehrteiligen Tutorials ist es, Entwicklerinnen und Entwicklern, die gerade mit AEM beginnen, beizubringen, wie sie in AEM eine Website unter Verwendung der neuesten Standards und Technologien implementieren können. Wir hoffen, dass Sie am Ende dieses Tutorials die Grundlagen der AEM-Plattform verstehen und einige der gängigen Design-Muster kennen.
 
 ## WKND-Entwickler-Tutorial {#wknd-developer-tutorial}
 
@@ -25,7 +25,7 @@ Ziel dieses mehrteiligen Tutorials ist es, Entwicklern, die neu sind, beizubring
 
 ## Grundlegende Konzepte {#core-concepts}
 
-Die Tutorial-Implementierung verwendet viele leistungsstarke Funktionen von AEM. Die Site wird implementiert unter Verwendung von:
+Die Tutorial-Implementierung nutzt eine Vielzahl leistungsstarker Funktionen von AEM. Die Site wird implementiert unter Verwendung von:
 
 * [Maven-AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de)
 * [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
