@@ -4,9 +4,9 @@ description: Wie Sie auf  [!DNL Assets view] zugreifen können, wie Sie sich anm
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
 source-git-commit: 88cbaae2ad8b610b8cd14b3ba0a92e7238ae8e9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '390'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Die Verwaltung digitaler Assets mit [!DNL Assets view] erfordert nur drei einfac
 * **Schritt 2**: [Durchsuchen](/help/assets/search-assets-view.md) und [Herunterladen](/help/assets/manage-organize-assets-view.md#download) von Assets.
 * **Schritt 3**: [Verwalten und Organisieren](/help/assets/manage-organize-assets-view.md) der Assets.
 
-Um [!DNL Assets view] zu verwenden, melden Sie sich unter [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets) an. Wählen Sie beim Anmelden `Company or School Account` aus. Wenden Sie sich an den Administrator Ihres Unternehmens, um Zugriff zu erhalten.
+Um [!DNL Assets view] zu verwenden, melden Sie sich unter [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets) an. Wählen Sie beim Anmelden `Company or School Account` aus. Wenden Sie sich an die Admins Ihrer Organisation, um Zugriff zu erhalten.
 
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
@@ -57,9 +57,9 @@ Nachfolgend finden Sie die verschiedenen DAM-Aufgaben (Digital Asset Management)
 
 ## Nächste Schritte {#next-steps}
 
-* [Video zu den ersten Schritten mit der Asset-Ansicht ansehen](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=de)
+* [Sehen Sie sich ein Video zu den ersten Schritten mit der Assets-Ansicht an](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=de) 
 
-* Stellen Sie Produkt-Feedback mit der [!UICONTROL Feedback] Option in der Benutzeroberfläche der Assets-Ansicht verfügbar
+* Geben Sie Produkt-Feedback über die Option [!UICONTROL Feedback] in der Benutzeroberfläche der Assets-Ansicht
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
