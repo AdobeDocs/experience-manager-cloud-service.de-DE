@@ -5,7 +5,7 @@ exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1055'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,7 @@ Beim Authoring ist dies der Bearbeitungsmodus, in dem Sie die Komponenten für d
 
 Ein gruppierter Satz von Komponenten, aus denen ein Erlebnis besteht.
 
-[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) bestehen aus Inhalten und Informationen (Stilen usw.) zum Erstellen eines Erlebnisses. Sie können beim Erstellen von Seiten direkt verwendet werden. Sie können als Teilmenge einer AEM-Seite betrachtet werden. Sie ermöglichen es Autoren von Inhalten, Inhalte kanalübergreifend wiederzuverwenden, einschließlich Sites-Seiten und Drittanbietersystemen.
+[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) bestehen aus Inhalten und Informationen (Stilen usw.) zum Erstellen eines Erlebnisses. Sie können beim Erstellen von Seiten direkt verwendet werden. Sie können als Teilmenge einer AEM-Seite betrachtet werden. Sie ermöglichen Inhaltsautorinnen und Inhaltsautoren die Wiederverwendung von Inhalten über verschiedene Kanäle hinweg, einschließlich der Seiten von Sites und Drittanbietersystemen.
 
 Um ein Personalisierungsbeispiel zu geben, können die Schaltflächen „Titel“, „Bild“, „Beschreibung“ und „Aktionsaufruf“ kombiniert werden, um ein Teaser-Erlebnis zu bilden. Die Verwendung von Experience Fragments ist ein wichtiger Bestandteil der Adobe Target-Personalisierung.
 
@@ -118,7 +118,7 @@ AEM verfügt über die integrierte Targeting-Engine [ContextHub](/help/implement
 Mit der Targeting-Engine von [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) werden von Seitenbesuchen gesammelte Informationen in Adobe Target verfolgt.
 
 * Bei der Verwendung dieser Targeting-Engine setzen Sie Segmente ein, die Sie aus Adobe Target importieren, um die Zielgruppen Ihrer Erlebnisse zu bestimmen.
-* Aktivitäten, die die Adobe Target-Engine verwenden, sind [mit Target synchronisiert](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
+* Aktivitäten, die die Adobe Target-Engine verwenden, werden [mit Target synchronisiert](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
 Sie können diese Engine verwenden, wenn Sie über eine [Integration mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) verfügen.
 

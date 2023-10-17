@@ -7,7 +7,7 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1085'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -66,7 +66,7 @@ Sie beginnen mit dem GraphQL Explorer auf einer neuen Registerkarte. Hier könne
 
    ![Listenabfrage](assets/do-not-localize/list-query-1-3-4-5.png)
 
-Sie haben soeben eine Listenabfrage für eine vollständige Liste aller Inhaltsfragmente validiert. Mit diesem Prozess wird sichergestellt, dass die Antwort dem entspricht, was Ihre App erwartet, und Ergebnisse liefert, die veranschaulichen, wie Ihre Apps und Websites die in AEM erstellten Inhalte abrufen.
+Sie haben gerade eine Listenabfrage für eine vollständige Liste aller Inhaltsfragmente validiert. Mit diesem Prozess wird sichergestellt, dass die Antwort dem entspricht, was Ihre App erwartet, und Ergebnisse liefert, die veranschaulichen, wie Ihre Apps und Websites die in AEM erstellten Inhalte abrufen.
 
 ## Abfrage eines bestimmten Elements des Beispielinhalts {#bypath-query}
 
@@ -105,7 +105,7 @@ Wenn Sie eine byPath-Abfrage ausführen, können Sie Inhalte für ein bestimmtes
 
    ![byPath-Abfrageergebnisse](assets/do-not-localize/bypath-query-2-3-4.png)
 
-Sie haben soeben eine byPath-Abfrage validiert, um ein bestimmtes Inhaltsfragment abzurufen, das durch den Pfad dieses Fragments identifiziert wird.
+Sie haben gerade eine byPath-Abfrage validiert, um ein bestimmtes, durch den Pfad dieses Fragments identifiziertes Inhaltsfragment abzurufen.
 
 ## Abfrage von eigenen Inhalten {#own-queries}
 

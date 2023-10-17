@@ -9,7 +9,7 @@ exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3870'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Die Funktion „Connected Assets“ unterstützt die oben genannten Anwendungsf�
 
 ## Überblick über Connected Assets {#overview-of-connected-assets}
 
-Beim Bearbeiten von Seiten als Ziel im [!UICONTROL Seiteneditor] können die Autoren nahtlos Assets aus einer anderen [!DNL Assets]-Bereitstellung, die als Asset-Quelle dient, suchen, durchsuchen und einbetten. Die Administratoren erstellen eine einmalige Integration einer Bereitstellung von [!DNL Experience Manager] mit [!DNL Sites]-Funktion mit einer anderen Bereitstellung von [!DNL Experience Manager] mit [!DNL Assets]-Funktion. Sie können Dynamic Media-Bilder auch über Connected Assets auf den Webseiten Ihrer Site verwenden und die Dynamic Media-Funktionen wie smartes Zuschneiden und Bildvorgaben verwenden.
+Beim Bearbeiten von Seiten als Ziel im [!UICONTROL Seiteneditor] können die Autoren nahtlos Assets aus einer anderen [!DNL Assets]-Bereitstellung, die als Asset-Quelle dient, suchen, durchsuchen und einbetten. Die Administratoren erstellen eine einmalige Integration einer Bereitstellung von [!DNL Experience Manager] mit [!DNL Sites]-Funktion mit einer anderen Bereitstellung von [!DNL Experience Manager] mit [!DNL Assets]-Funktion. Sie können Dynamic Media-Bilder auch über Connected Assets auf den Web-Seiten Ihrer Site verwenden und die Dynamic Media-Funktionen wie intelligentes Zuschneiden und Bildvorgaben nutzen.
 
 Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale Assets zur Verfügung. Die Funktion unterstützt die nahtlose Suche und den Zugriff auf Remote-Assets im Site-Editor. Für alle anderen Anwendungsfälle, für die möglicherweise das vollständige Asset-Corpus auf Sites verfügbar sein muss, sollten Sie die Assets massenweise migrieren, anstatt Connected Assets zu nutzen.
 
@@ -144,7 +144,7 @@ Sie können die Verbindung zwischen konfigurierten [!DNL Sites]-Bereitstellungen
 ## Verwenden von Dynamic Media-Assets {#dynamic-media-assets}
 
 
-Bei Connected Assets können Sie Bild-Assets verwenden, die von [!DNL Dynamic Media] von der Remote-DAM-Bereitstellung auf Sites-Seiten und verwenden Dynamic Media-Funktionen wie smartes Zuschneiden und Bildvorgaben.
+Mit Connected Assets können Sie Bild-Assets, die von [!DNL Dynamic Media] aus der DAM-Remote-Bereitstellung verarbeitet wurden, auf Sites-Seiten verwenden und Dynamic Media-Funktionen wie intelligentes Zuschneiden und Bildvorgaben nutzen.
 
 Verwenden von [!DNL Dynamic Media] mit Connected Assets:
 
@@ -316,7 +316,7 @@ Sie können der [!DNL Sites]-Bereitstellung Assets hinzufügen, diese Assets kö
 ## Einschränkungen und Best Practices {#tip-and-limitations}
 
 * Um Erkenntnisse zur Asset-Nutzung zu erhalten, konfigurieren Sie die Funktion [Assets Insights](/help/assets/assets-insights.md) in der [!DNL Sites]-Instanz.
-* Die Verwendung des Pfadbrowsers in Authoring-Komponenten wird in verbundenen Assets nicht unterstützt.
+* Die Verwendung des Pfad-Browsers beim Verfassen von Komponenten wird in verbundenen Assets nicht unterstützt.
 
 * Sie können das Remote-Asset nicht auf die [Dialogfeld &quot;Konfiguration der Bildkomponente&quot;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). Sie können das Remote-Asset jedoch direkt auf die Bildkomponente auf der Sites-Seite ziehen, ohne auf **[!UICONTROL Konfigurieren]**.
 
@@ -354,7 +354,7 @@ Führen Sie die folgenden Schritte aus, um häufig auftretende Fehler zu beheben
 
 * Wenn Sie im [!UICONTROL Content Finder] nicht nach Remote-Assets suchen können, überprüfen Sie erneut, ob die erforderlichen Rollen und Berechtigungen eingerichtet sind.
 
-* Ein aus dem Remote-DAM abgerufenes Asset kann aus verschiedenen Gründen nicht auf einer Web-Seite veröffentlicht werden. Sie existiert nicht auf dem Remote-Server, es gibt keine entsprechenden Berechtigungen, um sie abzurufen, oder Netzwerkfehler können die Ursachen sein. Stellen Sie sicher, dass das Asset nicht aus dem Remote-DAM entfernt wird. Stellen Sie sicher, dass die entsprechenden Berechtigungen eingerichtet und die Voraussetzungen erfüllt sind. Wiederholen Sie den Vorgang zum Hinzufügen des Assets zur Seite und veröffentlichen Sie erneut. Überprüfen Sie die [Liste asynchroner Aufträge](/help/operations/asynchronous-jobs.md) auf Fehler beim Abrufen von Assets.
+* Ein aus dem Remote-DAM abgerufenes Asset kann aus verschiedenen Gründen nicht auf einer Web-Seite veröffentlicht werden. Es existiert nicht auf dem Remote-Server, es fehlen entsprechende Berechtigungen zum Abrufen oder es liegt ein Netzwerkfehler vor. Stellen Sie sicher, dass das Asset nicht aus dem Remote-DAM entfernt wird. Stellen Sie sicher, dass die entsprechenden Berechtigungen eingerichtet und die Voraussetzungen erfüllt sind. Wiederholen Sie den Vorgang zum Hinzufügen des Assets zur Seite und veröffentlichen Sie erneut. Überprüfen Sie die [Liste asynchroner Aufträge](/help/operations/asynchronous-jobs.md) auf Fehler beim Abrufen von Assets.
 
 * Wenn Sie über die lokale [!DNL Sites]-Implementierung nicht auf die Remote-DAM-Bereitstellung zugreifen können, stellen Sie sicher, dass Website-übergreifende Cookies zulässig sind und [Cookie-Unterstützung für dieselbe Website](/help/security/same-site-cookie-support.md) konfiguriert ist. Wenn Website-übergreifende Cookies blockiert werden, werden die Bereitstellungen von [!DNL Experience Manager] möglicherweise nicht authentifiziert. Beispielsweise kann [!DNL Google Chrome] im Inkognito-Modus Cookies von Drittanbietern blockieren. Um Cookies im [!DNL Chrome]-Browser zuzulassen, klicken Sie auf das Augensymbol in der Adressleiste, gehen Sie zu **Site funktioniert nicht** > **Blockiert**, wählen Sie die Remote-DAM-URL aus und lassen Sie das Anmelde-Token-Cookie zu. Alternativ finden Sie Informationen hierzu in [Aktivieren von Cookies von Drittanbietern](https://support.google.com/chrome/answer/95647).
 

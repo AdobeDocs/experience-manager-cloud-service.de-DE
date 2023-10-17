@@ -8,7 +8,7 @@ exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '6663'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ name used to be Experience Platform Launch. Changed to Experience Platform Data 
 
 *Mit der Dynamic Media Viewers*-Erweiterung für Experience Platform Tags und Dynamic Media Viewers 5.13 können Adobe Analytics- und Experience Platform Tags-Kunden ihrer Experience Platform Tags-Konfiguration für Dynamic Media Viewers spezifische Ereignisse und Daten verwenden.
 
-Diese Integration ermöglicht es Ihnen, die Nutzung von Dynamic Media Viewers auf Ihrer Website mit Adobe Analytics zu verfolgen. Gleichzeitig können Sie die von den Viewern angezeigten Ereignisse und Daten mit jeder anderen Experience Platform-Tags-Erweiterung verwenden, die von Adobe oder einem Drittanbieter stammt.
+Diese Integration ermöglicht es Ihnen, die Nutzung von Dynamic Media Viewers auf Ihrer Website mit Adobe Analytics zu verfolgen. Gleichzeitig können Sie die von den Viewern angezeigten Ereignisse und Daten mit jeder anderen Experience Platform Tags-Erweiterung von Adobe oder einem Drittanbieter verwenden.
 
 Weitere Informationen zu Erweiterungen von Adobe oder Drittanbieterern finden Sie unter [Adobe-Erweiterungen](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html?lang=de) im Benutzerhandbuch zu Experience Platform Tags.
 
@@ -420,7 +420,7 @@ Vergewissern Sie sich, dass Sie bei der Konfiguration Zugriff auf eine Firma in 
 
 ## Konfigurieren von Adobe Analytics für die Integration {#configuring-adobe-analytics-for-the-integration}
 
-Nachdem Sie Adobe Analytics konfiguriert haben, wird Folgendes für die Integration eingerichtet:
+Nach der Konfiguration von Adobe Analytics wird Folgendes für die Integration eingerichtet:
 
 * Eine Report Suite ist vorhanden und ausgewählt.
 * Analytics-Variablen stehen zum Empfang von Verfolgungsdaten zur Verfügung.
@@ -460,7 +460,7 @@ Siehe auch [Analytics-Implementierungshandbuch](https://experienceleague.adobe.c
 
    Siehe [Übersicht über props und eVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=de#vars).
 
-   Für die Zwecke dieser Dokumentation wird nur eine Custom Traffic-Variable (Props) verwendet, da sie innerhalb weniger Minuten nach einer Aktion auf einer Webseite in einem Analytics-Bericht verfügbar werden.
+   Für die Zwecke dieser Dokumentation wird nur eine Variable „Custom Traffic (props)“ verwendet, da diese in einem Analytics-Bericht innerhalb weniger Minuten nach dem Ausführen einer Aktion auf einer Web-Seite verfügbar ist.
 
    Um eine neue Custom Traffic-Variable zu aktivieren, klicken Sie in Adobe Analytics in der Symbolleiste auf **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 
@@ -487,7 +487,7 @@ Siehe auch [Analytics-Implementierungshandbuch](https://experienceleague.adobe.c
 
 ## Konfigurieren von Experience Platform Tags für die Integration {#configuring-adobe-launch-for-the-integration}
 
-Nachdem Sie Experience Platform-Tags konfiguriert haben, wird Folgendes für die Integration eingerichtet:
+Nachdem Sie Experience Platform Tags konfiguriert haben, werden für die Integration folgende Schritte vorgenommen:
 
 * Erstellung einer neuen Eigenschaft, um alle Konfigurationen zusammenzuhalten.
 * Installation und Einrichtung von Erweiterungen. Der Client-seitige Code aller in der Eigenschaft installierten Erweiterungen wird in einer Bibliothek kompiliert. Diese Bibliothek wird später von der Web-Seite verwendet.
@@ -571,7 +571,7 @@ Danach ist die Erweiterung *Dynamic Media Viewer* nur verfügbar, wenn die Exper
 
 Siehe [Erstellen einer Eigenschaft in Experience Platform Tags](#creating-a-property-in-adobe-launch).
 
-Nachdem die Erweiterungen installiert und eingerichtet wurden, werden mindestens die folgenden fünf Erweiterungen (vier, wenn Sie kein Video verfolgen) im Bereich Erweiterungen > Installiert aufgeführt.
+Nachdem die Erweiterungen installiert und eingerichtet wurden, werden im Bereich „Erweiterungen“ > „Installiert“ mindestens die folgenden fünf Erweiterungen aufgeführt (vier, wenn Sie kein Video-Tracking nutzen).
 
 ![image2019-7-22_12-7-36](assets/image2019-7-22_12-7-36.png)
 

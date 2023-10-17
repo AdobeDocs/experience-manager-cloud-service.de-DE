@@ -8,7 +8,7 @@ exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
 source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
 source-wordcount: '318'
-ht-degree: 80%
+ht-degree: 94%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 80%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 In [!DNL Adobe Experience Manager Assets] können Sie Bildern ein digitales Wasserzeichen hinzufügen. [!DNL Assets] unterstützt das Anwenden eines Bilds als Wasserzeichen für andere Bilddateien. Wasserzeichen können Benutzern dabei helfen, die Authentizität und das Urheberrecht von Assets zu überprüfen. Außerdem können Wasserzeichen dazu dienen, den Status eines Dokuments (wie vertraulich, Entwurf, Gültigkeit usw.) anzugeben.
@@ -39,10 +39,10 @@ So konfigurieren Sie [!DNL Experience Manager] für Wasserzeichen-Assets:
 
    >[!NOTE]
    >
-   >Wenn Sie das System Watermarking Profile mithilfe von `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` Konfigurationsdatei (OSGi-Konfiguration) verwenden, können Sie sie weiterhin verwenden. Adobe empfiehlt jedoch die Verwendung der neuen Methode.
+   >Wenn Sie das System-Wasserzeichenprofil mithilfe der Konfigurationsdatei `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` (OSGi-Konfiguration) konfiguriert haben, können Sie es weiterhin verwenden. Adobe empfiehlt jedoch die Verwendung der neuen Methode.
 
 
-1. [Verarbeitungsprofil erstellen](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) , um Asset-Microservices zum Anwenden des Wasserzeichens zu verwenden.
+1. [Erstellen Sie ein Verarbeitungsprofil](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile), um Asset-Microservices zur Anwendung des Wasserzeichens zu nutzen.
 
    ![Asset-Verarbeitungsprofil zum Erstellen eines Wasserzeichens](assets/watermark-processing-profile.png)
 

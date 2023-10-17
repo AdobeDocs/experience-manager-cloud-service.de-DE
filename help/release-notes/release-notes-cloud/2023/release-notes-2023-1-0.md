@@ -5,7 +5,7 @@ exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '976'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Sehen Sie sich das Video Versionsübersicht Januar 2023 an, das eine Zusammenfas
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-* Asset-Berichte bieten Administrierenden jetzt die Möglichkeit der [Erstellung von Asset-Download-Berichten](/help/assets/asset-reports.md) aus der Experience Manager Assets as a Cloud Service-Bereitstellung. Diese Daten ermöglichen es Administratoren außerdem, Einblicke aus wichtigen Erfolgsmetriken zu gewinnen, um die Akzeptanz von Assets innerhalb Ihres Unternehmens und durch Kunden zu messen.
+* Asset-Berichte bieten Administrierenden jetzt die Möglichkeit der [Erstellung von Asset-Download-Berichten](/help/assets/asset-reports.md) aus der Experience Manager Assets as a Cloud Service-Bereitstellung. Diese Daten ermöglichen es Admins außerdem, Erkenntnisse aus wichtigen Erfolgsmetriken abzuleiten, um die Akzeptanz von Assets in Ihrem Unternehmen und bei der Kundschaft zu messen.
 
   ![PDF-Ausgabe für andere Formate](/help/release-notes/assets/choose_report.png)
 

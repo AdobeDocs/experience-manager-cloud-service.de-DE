@@ -5,7 +5,7 @@ exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '967'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -67,7 +67,7 @@ Adobe empfiehlt die Verwaltung von Marketing-bezogenen Daten und Inhalten in AEM
 
 ## 14. Wie lässt sich PCI-Compliance sicherstellen, wenn AEM für die gesamte Präsentationsebene verwendet wird?
 
-Adobe empfiehlt die Verwendung abstrakter Zahlungsmethoden. Dadurch kommuniziert der Browser-Client direkt mit dem Payment Gateway Provider, sodass weder Adobe noch die Commerce-Lösungen Daten von Karteninhabern speichern oder weitergeben. Dieser Ansatz erfordert nur PCI-Compliance der Stufe 3. Es gibt jedoch noch weitere Aspekte, die Sie im Hinblick auf eine umfassende PCI-Compliance berücksichtigen sollten, beispielsweise die Art und Weise, wie Mitarbeiter mit dem System und den Daten interagieren. Weitere Informationen zur PCI-Compliance von Adobe Commerce finden Sie unter [PCI-Compliance-Anforderungen](https://business.adobe.com/de/products/magento/pci-compliance.html).
+Adobe empfiehlt die Verwendung abstrakter Zahlungsmethoden. Dadurch kommuniziert der Browser-Client direkt mit dem Payment Gateway Provider, sodass weder Adobe noch die Commerce-Lösungen Daten von Karteninhabern speichern oder weitergeben. Dieser Ansatz erfordert nur PCI-Compliance der Stufe 3. Es gibt jedoch noch weitere Aspekte, die Sie im Hinblick auf eine umfassende PCI-Compliance berücksichtigen sollten, beispielsweise die Art und Weise, wie Mitarbeiter mit dem System und den Daten interagieren. Weitere Informationen zur PCI-Konformität von Adobe Commerce finden Sie unter [PCI-Konformitätsanforderungen](https://business.adobe.com/de/products/magento/pci-compliance.html).
 
 ## 15. Wenn ich AEM- und Adobe Commerce-Cloud-Versionen verwende, ist diese gemeinsame Lösung PCI-kompatibel?
 

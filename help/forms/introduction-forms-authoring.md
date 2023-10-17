@@ -11,7 +11,7 @@ exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '2482'
-ht-degree: 67%
+ht-degree: 96%
 
 ---
 
@@ -33,10 +33,10 @@ Adaptive Formulare bieten Ihnen die Möglichkeit, interaktive, responsive und dy
 
 * **Verwenden einer XDP-Formularvorlage** Dieses Formularmodell ist ideal, wenn bereits ein Bestand an XFA- oder XDP-basierten Formularen vorhanden ist. Es bietet eine direkte Möglichkeit, Ihre XFA-basierten Formulare in adaptive Formulare zu konvertieren. Alle vorhandenen XFA-Regeln bleiben in den adaptiven Formularen erhalten. Die resultierenden adaptiven Formulare unterstützen XFA-Konstrukte, z. B. Validierungen, Ereignisse, Eigenschaften und Muster.
 
-* **Verwendung einer XML-Schemadefinition (XSD) oder eines JSON-Schemas** XML- und JSON-Schemas stellen die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Sie können das Schema mit einem adaptiven Formular verknüpfen und dem Formular mithilfe der Elemente dieses Schemas dynamische Inhalte hinzufügen. Die Elemente des Schemas stehen beim Authoring von Adaptive Forms auf der Registerkarte Datenmodellobjekte des Inhaltsbrowsers zur Verfügung.
+* **Verwendung einer XML-Schemadefinition (XSD) oder eines JSON-Schemas** XML- und JSON-Schemas stellen die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Sie können das Schema mit einem adaptiven Formular verknüpfen und dem Formular mithilfe der Elemente dieses Schemas dynamische Inhalte hinzufügen. Die Elemente des Schemas sind für die Verwendung auf der Registerkarte „Datenmodellobjekte“ des Content Browser verfügbar, wenn sie adaptive Formulare erstellen.
 
-* **Verwenden von &quot;none&quot;oder &quot;without&quot;(Formularmodell)**
-Die mit dieser Option erstellte adaptive Forms verwendet kein Formularmodell. Die XML-Datendatei, die aus diesen Formularen generiert wird, hat eine flache Struktur mit Feldern und entsprechenden Werten.
+* **Keines verwenden oder ohne Formularmodell**
+Bei dieser Option wird kein Formularmodell für die Erstellung der adaptiven Formulare verwendet. Die XML-Datendatei, die aus diesen Formularen generiert wird, hat eine flache Struktur mit Feldern und entsprechenden Werten.
 
   >[!NOTE]
   >
@@ -133,7 +133,7 @@ Sie können Formularmodellelemente per Drag-and-Drop in das adaptive Formular zi
   </tr>
   <tr>
    <td>Feld zur Datumseingabe</td>
-   <td>Verwenden Sie die Komponente Datumseingabefeld in Ihrem Formular, damit Kunden Tag, Monat und Jahr separat in drei Feldern ausfüllen können. Sie können das Erscheinungsbild der Komponente anpassen und das Datumsformat ändern. Beispielsweise können Sie Ihren Kunden die Eingabe von Datumsangaben im Format MM/TT/JJJJ oder TT/MM/JJJJ gestatten.</td>
+   <td>Verwenden Sie die Komponente „Feld zur Datumseingabe“ in Ihrem Formular, damit Kundinnen und Kunden Tag, Monat und Jahr in drei separaten Feldern ausfüllen können. Sie können das Erscheinungsbild der Komponente anpassen und das Datumsformat ändern. Beispielsweise können Sie Ihren Kunden die Eingabe von Datumsangaben im Format MM/TT/JJJJ oder TT/MM/JJJJ gestatten.</td>
   </tr>
   <tr>
    <td>Datumsauswahl</td>
@@ -145,7 +145,7 @@ Sie können Formularmodellelemente per Drag-and-Drop in das adaptive Formular zi
   </tr>
   <tr>
    <td>Dokumentfragmentgruppe</td>
-   <td>Ermöglicht das Hinzufügen einer Gruppe verwandter Dokumentfragmente, die Sie in einer Briefvorlage als Einheit verwenden können.</td>
+   <td>Ermöglicht das Hinzufügen einer Gruppe verwandter Dokumentfragmente, die Sie in einer Briefvorlage als eine Einheit verwenden können.</td>
   </tr>
   <tr>
    <td>Dropdown-Liste</td>
@@ -160,7 +160,7 @@ Sie können Formularmodellelemente per Drag-and-Drop in das adaptive Formular zi
    <td><p>Fügt eine Schaltfläche hinzu, mit der Benutzende ergänzende Dokumente suchen und an das Formular anhängen können.</p> <p><strong>Hinweis: </strong>Die Dateianhangskomponente unterstützt eine vordefinierte Gruppe von Dateiformaten in adaptiven Formularen, die für Adobe Sign aktiviert sind. Weitere Informationen finden Sie unter <a href="https://helpx.adobe.com/de/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Unterstützte Dateiformate</a>.</p> </td>
   </tr>
   <tr>
-   <td>Dateianlagenliste</td>
+   <td>Auflistung der Dateianhänge</td>
    <td>Fügt ein Feld hinzu, das alle mit der Dateianlagenkomponente hochgeladenen Anlagen auflistet.</td>
   </tr>
   <tr>
@@ -177,11 +177,11 @@ Sie können Formularmodellelemente per Drag-and-Drop in das adaptive Formular zi
   </tr>
   <tr>
    <td>Bildauswahl</td>
-   <td>Ermöglicht es Ihren Kunden, ein Bild auszuwählen, um Informationen bereitzustellen. Mithilfe dieser Informationen können Sie Ihren Kunden personalisierte Dienste anbieten.</td>
+   <td>Ermöglicht es Ihrer Kundschaft, ein Bild auszuwählen, um Informationen bereitzustellen. Mithilfe dieser Informationen können Sie Ihrer Kundschaft personalisierte Dienste anbieten.</td>
   </tr>
   <tr>
    <td>Schaltfläche „Weiter“</td>
-   <td>Fügt eine Schaltfläche hinzu, um zum nächsten Bereich in einem Formular zu navigieren.</td>
+   <td>Fügt eine Schaltfläche hinzu, über die Sie zum nächsten Bedienfeld in einem Formular navigieren.</td>
   </tr>
   <tr>
    <td>Numerisches Feld</td>
@@ -189,19 +189,19 @@ Sie können Formularmodellelemente per Drag-and-Drop in das adaptive Formular zi
   </tr>
   <tr>
    <td>Numerische Schritte</td>
-   <td>Verwenden Sie numerische Schritte in Ihrem Formular, damit Ihre Kunden einen numerischen Wert eingeben können, den sie anhand eines vordefinierten Schritts erhöhen oder verringern können.</td>
+   <td>Verwenden Sie „Numerische Schritte“ in Ihrem Formular, damit Ihre Kundschaft einen numerischen Wert eingeben können, den sie basierend auf einem vordefinierten numerischen Schritt erhöhen oder verringern können.</td>
   </tr>
   <tr>
    <td>Bereich</td>
-   <td><p>Fügt einen Bereich oder Unterbereich hinzu.</p> <p>Sie können auch eine Bedienfeldkomponente aus der Symbolleiste des übergeordneten Bedienfelds hinzufügen, indem Sie die <span class="uicontrol">Untergeordnetes Bedienfeld hinzufügen</code> Schaltfläche. Auf ähnliche Weise können Sie eine bereichsspezifische Symbolleiste mit der <span class="uicontrol">Bereichssymbolleiste hinzufügen</code> Schaltfläche. Sie können die Position der Bedienfeld-Symbolleiste mithilfe des Dialogfelds „Bedienfeld bearbeiten“ konfigurieren.</p> </td>
+   <td><p>Fügt einen Bereich oder Unterbereich hinzu.</p> <p>Sie können auch eine Bedienfeldkomponente aus der Symbolleiste des übergeordneten Bedienfelds hinzufügen, indem Sie die Schaltfläche <span class="uicontrol">„Untergeordnetes Bedienfeld“</code> hinzufügen. In ähnlicher Weise können Sie mit der Funktion <span class="uicontrol">„Panel-Symbolleiste hinzufügen“ eine bedienfeldspezifische Symbolleiste</code> hinzufügen. Sie können die Position der Bedienfeld-Symbolleiste mithilfe des Dialogfelds „Bedienfeld bearbeiten“ konfigurieren.</p> </td>
   </tr>
   <tr>
    <td>Kennwortfeld</td>
    <td>Fügt ein Feld zum Erfassen eines Kennworts hinzu.</td>
   </tr>
   <tr>
-   <td>Schaltfläche "Zurück"</td>
-   <td>Fügt eine Schaltfläche hinzu, die Benutzer benötigen, um zur vorherigen Seite oder zum vorherigen Bedienfeld zurückzukehren.</td>
+   <td>Schaltfläche „Zurück“</td>
+   <td>Fügt eine Schaltfläche hinzu, die Benutzende benötigen, um zur vorherigen Seite oder zum vorherigen Bedienfeld zurückzukehren.</td>
   </tr>
   <tr>
    <td>Optionsschaltfläche</td>
@@ -213,7 +213,7 @@ Sie können Formularmodellelemente per Drag-and-Drop in das adaptive Formular zi
   </tr>
   <tr>
    <td>Schaltfläche „Speichern“</td>
-   <td>Fügt eine Schaltfläche zum Speichern von Formulardaten hinzu.</td>
+   <td>Fügt eine Schaltfläche zum Speichern der Formulardaten hinzu.</td>
   </tr>
   <tr>
    <td>Freihändige Unterschrift</td>
@@ -225,7 +225,7 @@ Sie können Formularmodellelemente per Drag-and-Drop in das adaptive Formular zi
   </tr>
   <tr>
    <td>Unterschriftsschritt</td>
-   <td>Zeigt die Informationen an, die im Formular bereitgestellt werden, sowie die Signaturfelder, die der Benutzer zum Überprüfen und Signieren des Formulars verwenden kann.</td>
+   <td>Zeigt die Informationen an, die im Formular bereitgestellt werden, sowie die Signaturfelder, die die Benutzerin bzw. der Benutzer zum Überprüfen und Signieren des Formulars verwenden kann.</td>
   </tr>
   <tr>
    <td>Text</td>
@@ -254,16 +254,16 @@ Sie können Formularmodellelemente per Drag-and-Drop in das adaptive Formular zi
      <li>Der Typ „International“ wird durch <code>^[+][0-9]{0,14}$</code> validiert.</li>
      <li>Der Typ „USPhoneNumber“ wird durch <code>{'+1 ('999') '999-9999}</code> validiert.</li>
      <li>Der Typ „UKPhoneNumber“ wird durch <code>text{'+'99 999 999 9999}</code> validiert.</li>
-     <li>Der Typ Benutzerdefiniert bietet kein standardmäßiges Überprüfungsmuster. Er nimmt den Wert des zuletzt ausgewählten Telefonnummerntyps an. Sie können auch Ihr eigenes benutzerdefiniertes Überprüfungsmuster angeben.</li>
+     <li>Beim Typ „Benutzerdefiniert“ steht kein standardmäßiges Validierungsmuster zur Verfügung. Er nimmt den Wert des zuletzt ausgewählten Telefonnummerntyps an. Sie können auch ein eigenes benutzerdefiniertes Validierungsmuster angeben.</li>
     </ul> </td>
   </tr>
   <tr>
    <td>Geschäftsbedingungen<br /> </td>
-   <td>Fügt ein Feld hinzu, mit dem Autoren die Bedingungen festlegen können, die Benutzer überprüfen können, bevor sie das Formular ausfüllen.</td>
+   <td>Fügt ein Feld hinzu, mit dem Autorinnen und Autoren angeben können, welche allgemeinen Geschäftsbedingungen die Benutzenden überprüfen sollen, bevor sie das Formular ausfüllen.</td>
   </tr>
   <tr>
    <td>Textfeld </td>
-   <td><p>Fügt ein Textfeld hinzu, in dem ein Benutzer die erforderlichen Informationen angeben kann. </p> <p>Standardmäßig akzeptiert die Textfeldkomponente nur Text. Sie können die Eingabe von Rich Text in einer Textfeldkomponente ermöglichen. Eine für Rich-Text aktivierte Textkomponente bietet Optionen zum Hinzufügen von Kopfzeilen, zum Ändern von Zeichenstilen (fett, kursiv, unterstreichen die Zeichen), zum Erstellen geordneter und ungeordneter Listen, zum Ändern von Texthintergrund und Textfarbe und zum Hinzufügen von Hyperlinks. Um Rich Text für ein Textfeld zu aktivieren, aktivieren Sie die Option <strong>Rich Text erlauben</strong> in den Komponenteneigenschaften.</p> </td>
+   <td><p>Fügt ein Textfeld hinzu, in dem Benutzende die erforderlichen Informationen angeben können. </p> <p>In der Textfeldkomponente kann standardmäßig nur einfacher Text angegeben werden. Sie können die Eingabe von Rich Text in einer Textfeldkomponente ermöglichen. In Textkomponenten mit Rich Text stehen Optionen zum Hinzufügen von Überschriften, zum Ändern des Schriftstils (Fett, Kursiv, Unterstrichen), zum Erstellen geordneter und ungeordneter Listen, zum Ändern des Texthintergrunds und der Textfarbe sowie zum Hinzufügen von Hyperlinks zur Verfügung. Um Rich Text für ein Textfeld zu aktivieren, aktivieren Sie die Option <strong>Rich Text erlauben</strong> in den Komponenteneigenschaften.</p> </td>
   </tr>
   <tr>
    <td>Titel</td>
@@ -271,14 +271,14 @@ Sie können Formularmodellelemente per Drag-and-Drop in das adaptive Formular zi
   </tr>
   <tr>
    <td>Überprüfungsschritt</td>
-   <td><p>Fügt einen Platzhalter hinzu, um das ausgefüllte Formular zur Überprüfung durch den Benutzer anzuzeigen.</p> <p><strong>Hinweis</strong>: Adaptive Formulare, die die Verify-Komponente enthalten, unterstützen keine anonymen Benutzer. Außerdem wird nicht empfohlen, die Verify-Komponente in einem adaptiven Formularfragment zu verwenden.</p> </td>
+   <td><p>Fügt einen Platzhalter hinzu, um das ausgefüllte Formular zur Überprüfung durch die Benutzenden anzuzeigen.</p> <p><strong>Hinweis</strong>: Adaptive Formulare, die die Verify-Komponente enthalten, unterstützen keine anonymen Benutzer. Außerdem wird nicht empfohlen, die Verify-Komponente in einem adaptiven Formularfragment zu verwenden.</p> </td>
   </tr>
  </tbody>
 </table>
 
 ### Seitensymbolleiste {#page-toolbar}
 
-Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau des Formulars anzeigen, Formulareigenschaften ändern und das Formularlayout bearbeiten können. Sie können eine Vorschau des Formulars anzeigen, wenn Sie es erstellen, und entsprechend Änderungen vornehmen. In der Symbolleiste der Seite wird Folgendes angezeigt:
+Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau des Formulars anzeigen, Formulareigenschaften ändern und das Formular-Layout bearbeiten können. Sie können beim Authoring eine Vorschau des Formulars anzeigen und die gewünschten Änderungen vornehmen. In der Symbolleiste der Seite wird Folgendes angezeigt:
 
 * **Seitliches Bedienfeld ein/aus** ![toggle-side-panel](assets/Smock_RailLeft_18_N.svg): Hiermit können Sie die Seitenleiste ein- oder ausblenden.
 
@@ -293,7 +293,7 @@ Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau des For
 
    * **Entwickler**: Hier haben Entwickler folgende Möglichkeiten:
 
-      * Erfahren Sie, woraus Formulare bestehen.
+      * Identifizieren der Bestandteile von Formularen.
       * Debuggen Sie, was wo und wann passiert, was wiederum hilft, Probleme zu lösen.
 
       * **Design**: Hier können Sie benutzerdefinierte Komponenten oder auch nicht in der Seitenleiste aufgelistete vordefinierte Komponenten aktivieren oder deaktivieren.
@@ -304,9 +304,9 @@ Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau des For
 
 ![Komponentensymbolleiste in der Touch-Benutzeroberfläche](assets/component-toolbar.png)
 
-Wenn Sie eine Komponente auswählen, wird eine Symbolleiste angezeigt, über die Sie sie bearbeiten können. Sie erhalten Optionen zum Ausschneiden, Einfügen, Verschieben und Angeben von Eigenschaften der Komponenten. Ihre Optionen sind:
+Wenn Sie eine Komponente auswählen, wird eine Symbolleiste angezeigt, mit der Sie sie bearbeiten können. Sie erhalten Optionen zum Ausschneiden, Einfügen, Verschieben und Festlegen von Eigenschaften der Komponenten. Ihre Optionen sind:
 
-A. **Konfigurieren**: Wenn Sie auf **[!UICONTROL Konfigurieren]** tippen, werden in der Seitenleiste Komponenteneigenschaften sichtbar. Durch die Konfiguration dieser Eigenschaften können Sie die Datenerfassung anpassen. Sie können den Elementnamen der Komponente ändern und den Beschriftungstext im Feld Titel der Komponente angeben. Mit dem Elementnamen können Sie Werte erfassen, die Benutzer mithilfe der Komponente eingeben. In den Komponenteneigenschaften geben Sie das Verhalten der Komponente an und verwalten die Benutzereingabe. Konfigurieren Sie Eigenschaften in der Seitenleiste, um Benutzerdaten zu erfassen und sie für die weitere Verarbeitung zu verwenden. Mit den Eigenschaften für den adaptiven Formular-Container können Sie Client-Bibliotheken, Layouts, Designs sowie die Einstellungen für Datensatzdokumente, Speicherung, Übermittlung und Metadaten festlegen.
+A. **Konfigurieren**: Wenn Sie auf **[!UICONTROL Konfigurieren]** tippen, werden in der Seitenleiste Komponenteneigenschaften sichtbar. Durch die Konfiguration dieser Eigenschaften können Sie die Benutzererfahrung beim Erfassen von Daten anpassen. Sie können den Elementnamen der Komponente ändern und den Beschriftungstext im Titelfeld der Komponente angeben. Mit dem Elementnamen können Sie Werte erfassen, die Benutzende mithilfe der Komponente eingeben. In den Komponenteneigenschaften geben Sie das Verhalten der Komponente an und verwalten die Benutzereingabe. Konfigurieren Sie Eigenschaften in der Seitenleiste, um Benutzerdaten zu erfassen und sie für die weitere Verarbeitung zu verwenden. Mit den Eigenschaften für den adaptiven Formular-Container können Sie Client-Bibliotheken, Layouts, Designs sowie die Einstellungen für Datensatzdokumente, Speicherung, Übermittlung und Metadaten festlegen.
 
 B. **Kopieren**: Sie können die Kopieroption verwenden, um eine Komponente zu kopieren und an anderen Positionen im Formular einzufügen. Wenn Sie eine Komponente einfügen, erhält die eingefügte Komponente einen neuen Elementnamen, behält jedoch die Eigenschaften der kopierten Komponente bei.
 
@@ -329,13 +329,13 @@ Wenn Sie beispielsweise für ein Textfeld auf **[!UICONTROL Übergeordnet]** tip
 * Unterabschnitt
 * Abschnitt
 * guideRootPanel
-* Adaptiver Formularcontainer
+* Container für ein adaptives Formular
 
-J. **sonstige**: Bietet weitere Optionen zum Arbeiten mit der ausgewählten Komponente.
+J. **Andere**: Bietet weitere Optionen für die Arbeit mit der ausgewählten Komponente.
 
 * SOM-Ausdruck anzeigen
-* Bereich als Fragment speichern (nur für Bereiche)
-* Untergeordneten Bereich hinzufügen (nur für Bereiche)
+* Bedienfeld als Fragment speichern (nur für Bedienfelder)
+* Untergeordnetes Bedienfeld hinzufügen (nur für Bedienfelder)
 * Bedienfeld-Symbolleiste hinzufügen (nur für Bereiche)
 * Ersetzen (nicht für Bedienfelder)
 
@@ -350,11 +350,11 @@ Die Inhaltsstruktur enthält in der Regel die folgenden Hauptkomponenten:
 * **guideContainer**: Der Stamm eines adaptiven Formulars, der als **[!UICONTROL Beginn des adaptiven Formulars]** in der Benutzeroberfläche des adaptiven Formulars markiert ist. In dieser Komponente können Sie Folgendes angeben:
 
    * *Mobile-Layout des adaptiven Formulars*: Definiert die Darstellung des Formulars auf mobilen Geräten.
-   * *Dankeseite*: Definiert die Seite, auf die der Benutzer nach dem Senden des Formulars umgeleitet wird.
-   * *Übermittlungsaktion*: Definiert, wie das Formular auf dem Server verarbeitet wird, nachdem der Benutzer das Formular gesendet hat.
-   * *Formatierung*: Gibt den Pfad zur CSS-Datei an, die zum Anpassen des Erscheinungsbilds des Formulars verwendet wird.
+   * *Dankeseite*: Definiert die Seite, auf die die Benutzenden nach dem Senden des Formulars umgeleitet werden.
+   * *Übermittlungsaktion*: Definiert, wie das Formular auf dem Server verarbeitet wird, sobald die Benutzenden das Formular senden.
+   * *Stile*: Gibt den Pfad zur CSS-Datei an, die zum Anpassen des Erscheinungsbilds des Formulars verwendet wird.
 
-* **rootPanel**: Der Stammbereich eines adaptiven Formulars. Sie kann Unterbereiche unter dem Elementknoten enthalten. Jedem Bedienfeld, einschließlich des Stammbereichs, kann ein Layout zugeordnet sein. Das Layout des Bedienfelds bestimmt das Layout des Formulars. Im Akkordeonlayout beispielsweise werden die Elemente als Akkordeonschritte angeordnet.
+* **rootPanel**: Der Stammbereich eines adaptiven Formulars. Es kann Unterbereiche unter dem Elementknoten enthalten. Jedem Bedienfeld einschließlich des Stammbereichs kann ein Layout zugeordnet sein. Das Layout des Bedienfelds bestimmt das Layout des Formulars. Im Akkordeonlayout beispielsweise werden die Elemente als Akkordeonschritte angeordnet.
 
 * **Symbolleiste**: Ein Container für ein adaptives Formular verfügt über eine zugehörige Symbolleiste, die global für das Formular verfügbar ist. Diese Symbolleiste kann mit der Aktion **[!UICONTROL Symbolleiste hinzufügen]** in der Bearbeitungsleiste hinzugefügt werden. Damit können Autoren Aktionen wie Übermitteln, Speichern, Zurücksetzen usw. hinzufügen.
 

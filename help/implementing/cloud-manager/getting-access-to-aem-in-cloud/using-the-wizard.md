@@ -5,45 +5,45 @@ exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '312'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 # Assistent zur Projekterstellung {#project-creation-wizard}
 
-Nachdem Sie Ihr Produktionsprogramm erstellt haben, bietet Cloud Manager einen Assistenten, um ein AEM Projekt mit minimalem Volumen auf der Grundlage der [AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) um schnell zu beginnen.
+Nachdem Sie Ihr Produktionsprogramm erstellt haben, bietet Cloud Manger einen Assistenten zum Erstellen eines minimalen AEM-Projekts auf der Grundlage des [AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de), damit Sie umgehend beginnen können.
 
-Führen Sie diese Schritte aus, um mithilfe des Assistenten ein AEM Anwendungsprojekt in Cloud Manager zu erstellen.
+Gehen Sie wie folgt vor, um mit dem Assistenten ein AEM-Anwendungsprojekt in Cloud Manager zu erstellen.
 
-1. Erstellen Sie ein Produktionsprogramm, indem Sie die im Dokument beschriebenen Schritte befolgen [Erstellen von Produktionsprogrammen](creating-production-programs.md)
+1. Erstellen Sie ein Produktionsprogramm, indem Sie die im Dokument [Erstellen von Produktionsprogrammen](creating-production-programs.md) beschriebenen Schritte befolgen
 
-1. Sobald die Programmeinrichtung abgeschlossen ist, rufen Sie die **Übersicht** Bildschirm Ihres Programms anzeigen und die **Verzweigung und Projekt erstellen** Aktionsaufruf-Karte oben.
+1. Sobald die Einrichtung des Programms abgeschlossen ist, rufen Sie den Bildschirm **Übersicht** Ihres Programms auf, und Sie sehen oben die Karte **Verzweigung und Projekt erstellen** mit dem Aktionsaufruf.
 
-   ![Aktionsaufruf für den Assistenten](assets/create-wizard1.png)
+   ![Aktionsaufruf-Karte für den Assistenten](assets/create-wizard1.png)
 
-1. Klicken **Erstellen** , um den Assistenten zu starten und die **Titel** und **Neuer Verzweigungsname** im **Erstellen einer Verzweigung und eines Projekts** Fenster.
+1. Klicken Sie auf **Erstellen**, um den Assistenten zu starten und bestätigen Sie den **Titel** und den **neuen Verzweigungsnamen** im Fenster **Verzweigung und Projekt erstellen**.
 
-   ![Erstellen einer Verzweigung und eines Projekts](assets/create-wizard2.png)
+   ![Verzweigung und Projekt erstellen](assets/create-wizard2.png)
 
-1. Optional können Sie auf die Trennlinie klicken, um die zusätzlichen Parameter Ihres Projekts anzuzeigen. Die Standardwerte werden vom AEM Projektarchetyp bereitgestellt und müssen im Allgemeinen nicht geändert werden.
+1. Optional können Sie auf die Trennlinie klicken, um die zusätzlichen Parameter Ihres Projekts anzuzeigen. Die Standardwerte werden vom AEM-Projektarchetyp bereitgestellt und müssen im Allgemeinen nicht geändert werden.
 
    ![Zusätzliche Projektparameter](assets/create-wizard5.png)
 
-1. Klicken **Erstellen** , um den Projekterstellungsprozess zu starten.
+1. Klicken Sie auf **Erstellen**, um den Projekterstellungsprozess zu starten.
 
 
-A **Projekterstellung läuft** -Karte ersetzt jetzt die **Verzweigung und Projekt erstellen** Aktionsaufruf-Karte oben im **Programmübersicht** angezeigt.
+Eine Karte **Projekterstellung in Bearbeitung** ersetzt jetzt die Aktionsaufrufs-Karte **Verzweigung und Projekt erstellen** am oberen Rand des Bildschirms **Programmübersicht**.
 
 ![Projekterstellung läuft](assets/create-wizard3.png)
 
-Sobald die Erstellung des Programms abgeschlossen ist, wird ein **Umgebung hinzufügen** -Karte ersetzt die **Projekterstellung läuft** -Karte am oberen Rand des **Programmübersicht** angezeigt.
+Sobald die Programmerstellung abgeschlossen ist, ersetzt eine Karte **Umgebung hinzufügen** die Karte **Projekterstellung läuft** oben auf dem Bildschirm **Programmübersicht**.
 
 ![Umgebung hinzufügen](assets/create-wizard4.png)
 
-Sie haben jetzt ein AEM Projekt, das auf dem AEM Archetyp basiert, der Ihrem Git-Repository hinzugefügt wurde, um als Grundlage für die Entwicklung Ihres eigenen Projekts zu dienen. Als Nächstes können Sie Ihre Umgebungen erstellen, in denen Sie den Projektcode bereitstellen können.
+Sie haben jetzt ein AEM-Projekt auf der Grundlage des AEM-Archetyps zu Ihrem Git-Repository hinzugefügt, das als Grundlage für die Entwicklung Ihres eigenen Projekts dient. Als Nächstes können Sie Ihre Umgebungen erstellen, in denen Sie den Projekt-Code bereitstellen können.
 
-Siehe [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md) , um zu erfahren, wie Sie Umgebungen hinzufügen oder verwalten.
+Informationen zum Hinzufügen und Verwalten von Umgebungen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md).
 
 >[!NOTE]
 >
->Der Assistent ist nur für Produktionsprogramme verfügbar. weil [Sandbox-Programme](introduction-sandbox-programs.md#auto-creation) automatische Projekterstellung einschließen, ist der Assistent nicht erforderlich.
+>Der Assistent ist nur für Produktionsprogramme verfügbar. Da [Sandbox-Programme](introduction-sandbox-programs.md#auto-creation) eine automatische Projekterstellung beinhalten, ist der Assistent nicht notwendig.

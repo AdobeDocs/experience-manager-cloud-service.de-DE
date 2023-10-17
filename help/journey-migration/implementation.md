@@ -5,7 +5,7 @@ exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2339'
-ht-degree: 89%
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ In der Implementierungsphase der Tour lernen Sie die Tools kennen, mit denen Sie
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-In den vorherigen Teilen der Journey haben Sie [Lernen Sie die Änderungen in AEM as a Cloud Service kennen](/help/journey-migration/getting-started.md)und ermittelt, ob Ihre Bereitstellung bereit ist, mit der [Bereitschaftsphase](/help/journey-migration/readiness.md).
+In den vorherigen Teilen der Tour haben Sie sich [mit den Änderungen in AEM as a Cloud Service](/help/journey-migration/getting-started.md) vertraut gemacht und in der [Bereitschaftsphase](/help/journey-migration/readiness.md) ermittelt, ob Ihre Bereitstellung bereit ist, in die Cloud verschoben zu werden.
 
 In diesem Artikel wird die Verwendung der von Adobe bereitgestellten Tools erläutert, um sicherzustellen, dass Ihr Code und Ihre Inhalte bereit sind, in die Cloud verschoben zu werden.
 
@@ -25,7 +25,7 @@ Dieses Dokument zielt auf Folgendes ab:
 
 * Ihnen eine Einführung in Cloud Manager, die fortwährende Integration von AEM und das für die Bereitstellung von Code für AEM as a Cloud Service benutzte Bereitstellungs-Framework zu geben.
 * Sie auf den neuesten Stand des Content Transfer Tools zu bringen
-* Beschreiben Sie die Code-Refaktorierungs-Tools, die Sie verwenden müssen, damit Sie Ihren Code für AEM as a Cloud Service modernisieren können.
+* Ihnen eine Beschreibung der Code-Refaktorierungs-Tools an die Hand zu geben, die Sie verwenden müssen, um Ihren Code für AEM as a Cloud Service zu modernisieren  
 
 ## Verwenden von Cloud Manager {#using-cloud-manager}
 
@@ -49,7 +49,7 @@ Die folgende Abbildung zeigt die wichtigsten Schritte in der Phase, in der Sie I
 
 ![image](/help/journey-migration/assets/exec-image1.png)
 
-Wir werden anfangen, die Tools detailliert zu beschreiben, die Sie verwenden müssen, damit Sie dies in den folgenden Kapiteln erreichen können.
+In den folgenden Kapiteln werden wir Ihnen die Tools vorstellen, mit denen Sie dies erreichen können.
 
 ## Inhaltsmigration {#content-migration}
 
@@ -67,10 +67,10 @@ Eine vollständige Beschreibung der Funktionsweise des Tools und der empfohlenen
 
 Wir sollten jetzt mit der Refaktorierung der vorhandenen Funktionen beginnen, damit sie mit Cloud Services kompatibel sind.
 
-Sehen Sie sich zunächst die Dokumentation zu den grundlegenden Tools an und beginnen Sie mit der Umgestaltung Ihres Codes:
+Sehen Sie sich zunächst die Dokumentation zu den grundlegenden Tools an und beginnen Sie mit der Refaktorierung Ihres Codes:
 
 
-* Bei der Planung ist es empfehlenswert, eine Liste von Gebieten zu erstellen, die umgestaltet werden müssen, um mit AEM as a Cloud Service vereinbar zu sein. Weitere Informationen zur Refaktorierung und Optimierung von Code für Cloud Service finden Sie in den [Entwicklungsrichtlinien](/help/implementing/developing/introduction/development-guidelines.md).
+* Bei der Planung empfiehlt es sich, eine Liste von Bereichen zu erstellen, die überarbeitet werden müssen, damit sie mit AEM as a Cloud Service kompatibel sind. Weitere Informationen zur Refaktorierung und Optimierung von Code für Cloud Service finden Sie in den [Entwicklungsrichtlinien](/help/implementing/developing/introduction/development-guidelines.md).
 * Lesen Sie mehr darüber, wie Sie [Konfigurationen in AEM as a Cloud Service verwalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=de#what-is-a-configuration).
 * Erfahren Sie, wie Sie eine lokale Entwicklungsumgebung einrichten, indem Sie das [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=de) herunterladen
 * Machen Sie sich abschließend mit der [AEM as a Cloud Service Java-API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) vertraut.
@@ -256,4 +256,4 @@ Im folgenden Abschnitt werden die wichtigen Schritte und zugehörigen Aufgaben b
 
 ## Wie geht es weiter {#what-is-next}
 
-Nachdem Sie vollständig verstanden haben, wie Sie beurteilen können, ob Ihre AEM-Installation bereit ist, in die Cloud verschoben zu werden, da wir lernen, wie wir die erforderlichen Tools verwenden, um sie bereit zu machen, ist es an der Zeit, zum [Go-Live-Phase](/help/journey-migration/go-live.md).
+Nachdem Sie vollständig verstanden haben, wie Sie beurteilen können, ob Ihre AEM-Installation für die Verlagerung in die Cloud bereit ist, und wie Sie die dafür erforderlichen Tools verwenden können, ist es an der Zeit, zur [Phase der Inbetriebnahme](/help/journey-migration/go-live.md) überzugehen.

@@ -5,7 +5,7 @@ exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '962'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ Die Konsole „Zielgruppen“ ermöglicht das Erstellen, Organisieren und Verwal
 * Zielgruppen hinzufügen – entweder Adobe Target-Zielgruppen oder ContextHub-Segmente.
 * Verwalten von Zielgruppen
 
-Zielgruppen werden in ContextHub als *Segment* bezeichnet und sind Besuchergruppen, die durch bestimmte Kriterien definiert werden und mit denen bestimmt wird, wer welche zielgerichteten Inhalte zu sehen bekommt. Wenn Sie eine Aktivität als Ziel auswählen, können Sie entweder Zielgruppen direkt im Targeting-Prozess auswählen oder neue Zielgruppen in der Konsole &quot;Zielgruppen&quot;erstellen.
+Zielgruppen werden in ContextHub als *Segment* bezeichnet und sind Besuchergruppen, die durch bestimmte Kriterien definiert werden und mit denen bestimmt wird, wer welche zielgerichteten Inhalte zu sehen bekommt. Bei der Zielgruppenbestimmung von Aktivitäten können Zielgruppen entweder direkt während des Verfahrens der Zielgruppenbestimmung ausgewählt werden oder es können neue Zielgruppen in der Konsole „Zielgruppen“ erstellt werden.
 
 In der Zielgruppen-Konsole werden die Zielgruppen nach Marken geordnet.
 
@@ -44,13 +44,13 @@ So erstellen Sie ContextHub-Segmente in der Konsole „Zielgruppen“:
    >
    >Sie können die geänderte Liste sortieren, indem Sie auf **Geändert** um nach absteigender Reihenfolge zu sortieren, um neu erstellte Zielgruppen anzuzeigen.
 
-Weitere Informationen zum Erstellen von Segmenten mit ContextHub finden Sie in der Dokumentation Konfigurieren der Segmentierung mit ContextHub. <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
+Weitere Informationen zum Erstellen von Segmenten mit ContextHub finden Sie in der Dokumentation zum Konfigurieren der Segmentierung mit ContextHub. <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 
 ## Erstellen von Adobe Target-Zielgruppen mit der Konsole „Zielgruppen“ {#creating-an-adobe-target-audience-using-the-audience-console}
 
 Sie können Adobe Target-Zielgruppen mithilfe der Zielgruppen-Konsole direkt in AEM erstellen.
 
-Zielgruppen werden durch Regeln definiert, die bestimmen, wer in einer Target-Aktivität enthalten ist. Eine Zielgruppendefinition kann mehrere Regeln enthalten und jede Regel kann mehrere Parameter enthalten.
+Zielgruppen werden durch Regeln definiert, die bestimmen, wer in einer Zielgruppenbestimmungs-Aktivität enthalten ist. Eine Zielgruppendefinition kann mehrere Regeln enthalten und jede Regel kann mehrere Parameter enthalten.
 
 Wenn Sie mehr als eine Regel verwenden, werden diese Regeln durch den booleschen Operator AND kombiniert. Das bedeutet, dass jedes potenzielle Mitglied der Zielgruppe alle definierten Bedingungen erfüllen muss, um in die Aktivität aufgenommen zu werden. Wenn Sie beispielsweise eine Betriebssystemregel und eine Browser-Regel definieren, werden nur Besucherinnen und Besucher, die sowohl das definierte Betriebssystem als auch den definierten Browser verwenden, in die Aktivität aufgenommen.
 
@@ -83,7 +83,7 @@ Sie können Targeting-Regeln für jedes der folgenden Attribute erstellen:
 |---|---|---|
 | **Mobilgerät** | Targeting von Mobilgeräten anhand von Parametern wie Mobilgerät, Gerätetyp, Geräteanbieterfirma, Bildschirmmaße (in Pixeln) usw. | Siehe [Mobile-Dokumentation](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html?lang=de) in Adobe Target. |
 | **Benutzerdefiniert** | Benutzerdefinierte Parameter sind Mbox-Parameter. Wenn Sie Mbox-Parameter an Mboxes übergeben oder die Funktion „targetPageParams“ verwenden, werden diese Parameter hier angezeigt und können in Zielgruppen verwendet werden. | Siehe [Dokumentation zu benutzerdefinierten Parametern](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html?lang=de) in Adobe Target. |
-| **BS** | Sie können Besucherinnen und Besucher, die ein bestimmtes Betriebssystem verwenden, als Ziel auswählen. | Geben Sie Benutzer als Ziel an, die Linux, Macintosh oder Windows verwenden. |
+| **BS** | Sie können Besucherinnen und Besucher, die ein bestimmtes Betriebssystem verwenden, als Ziel auswählen. | Targeting von Benutzerinnen und Benutzern, die Linux, Macintosh oder Windows verwenden. |
 | **Seiten der Site** | Targeting von Besucherinnen und Besuchern, die sich auf einer bestimmten Seite befinden oder die einen bestimmten mBox-Parameter aufweisen. | Weitere Informationen finden Sie in der [Dokumentation für Website-Seiten](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html?lang=de) für Adobe Target. |
 | **Browser** | Sie können Benutzerinnen und Benutzer, die beim Besuch Ihrer Seite einen bestimmten Browser oder bestimmte Browser-Optionen verwenden, als Ziel auswählen. | Weitere Informationen finden Sie in der [Dokumentation für Browser-Optionen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=de) für Adobe Target. |
 | **Besucherprofil** | Targeting von Besucherinnen und Besuchern, die bestimmte Profilparameter erfüllen. | Weitere Informationen finden Sie in der [Dokumentation für Besucherprofile](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html?lang=de) für Adobe Target. |
@@ -93,7 +93,7 @@ Sie können Targeting-Regeln für jedes der folgenden Attribute erstellen:
 
 >[!NOTE]
 >
->Sie können nur Adobe Target-Zielgruppen bearbeiten, die in derselben AEM-Instanz erstellt wurden, in der Sie gerade arbeiten. Zielgruppen, die in unterschiedlichen AEM-Umgebungen erstellt wurden, können nicht bearbeitet werden.
+>Sie können nur Adobe Target-Zielgruppen bearbeiten, die in derselben AEM-Instanz erstellt wurden, in der Sie gerade arbeiten. Zielgruppen, die in anderen AEM-Umgebungen erstellt wurden, können nicht bearbeitet werden.
 
 ContextHub-Zielgruppen lassen sich beliebig mit der Konsole „Zielgruppen“ bearbeiten. Sie können zudem Adobe Target-Zielgruppen bearbeiten, jedoch nur diejenigen, die in AEM erstellt wurden:
 

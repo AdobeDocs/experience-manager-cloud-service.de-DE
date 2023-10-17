@@ -5,7 +5,7 @@ exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: fc14675e47e7a61bf36acb9a16756a593189b702
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ Das Cloud Manager-Programm wird automatisch mit seinem eigenen Git-Repository be
 
 Damit ein Benutzer auf das Git-Repository von Cloud Manager zugreifen kann, muss er einen Git-Client mit einem Befehlszeilen-Tool, einen eigenständigen visuellen Git-Client oder die IDE des Benutzers wie Eclipse, IntelliJ oder NetBeans verwenden.
 
-Nachdem ein Git-Client eingerichtet wurde, können Sie Ihr Git-Repository über die Cloud Manager-Benutzeroberfläche verwalten. Informationen zum Verwalten von Git über die Benutzeroberfläche von Cloud Manager finden Sie unter [Zugriff auf Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
+Nachdem ein Git-Client eingerichtet wurde, können Sie Ihr Git-Repository über die Cloud Manager-Benutzeroberfläche verwalten. Weitere Informationen zum Verwalten von Git mithilfe der Cloud Manager-Benutzeroberfläche finden Sie unter [Zugriff auf Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 Um mit der Entwicklung der AEM Cloud-Anwendung zu beginnen, muss eine lokale Kopie des Anwendungs-Codes erstellt werden, indem Sie ihn aus dem Cloud Manager-Repository an einen Speicherort auf dem lokalen Computer auschecken.
 
@@ -56,8 +56,8 @@ Der einzige Unterschied besteht darin, dass das Remote-Git-Repository Teil von C
 Ein Benutzer kann **production** oder **Sandbox** Programm.
 
 * Ein **Produktionsprogramm** wird erstellt, um Live-Traffic für Ihre Site zu ermöglichen.
-   * Siehe [Einführung in Produktionsprogramme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) für weitere Details.
+   * Weitere Informationen finden Sie in der [Einführung in Produktionsprogramme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 * Ein **Sandbox-Programm** wird normalerweise für Schulungen, Ausführungen von Demos, Aktivierungen, Konzeptnachweise oder Dokumentation erstellt.
    * Eine Sandbox-Umgebung soll keinen Live-Traffic verarbeiten und hat Einschränkungen, die ein Produktionsprogramm nicht hat.
-   * Es umfasst Sites und Assets und wird automatisch mit einer Git-Verzweigung geliefert, die Beispiel-Code, eine Entwicklungsumgebung und eine produktionsfremde Pipeline enthält.
-   * Siehe [Einführung in Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) für weitere Details.
+   * Sie umfasst Sites und Assets und wird automatisch mit einer Git-Verzweigung befüllt, die Beispiel-Code, eine Entwicklungsumgebung und eine produktionsfremde Pipeline enthält.
+   * Weitere Informationen finden Sie in der [Einführung in Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).

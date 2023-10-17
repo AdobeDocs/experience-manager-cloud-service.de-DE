@@ -5,7 +5,7 @@ exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
 workflow-type: tm+mt
 source-wordcount: '1432'
-ht-degree: 60%
+ht-degree: 64%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 60%
 
 -->
 
-Es ist eine neue Version des Content Transfer Tool verfügbar, die den Inhaltstransferprozess mit Cloud Acceleration Manager integriert. Es wird dringend empfohlen, zu dieser neuen Version zu wechseln, um alle Vorteile nutzen zu können, die sie bietet:
+Es ist eine neue Version des Content Transfer Tools verfügbar, die den Inhaltstransferprozess mit Cloud Acceleration Manager integriert. Es wird dringend empfohlen, zu dieser neuen Version zu wechseln, um alle ihre Vorteile nutzen zu können:
 
 * Self-Service-Methode zur einmaligen Extraktion eines Migrationssatzes und zur gleichzeitigen Aufnahme in mehrere Umgebungen
 * Verbesserte Benutzererfahrung durch verbesserte Ladezustände, Limits und Fehlerbehandlung
@@ -79,17 +79,17 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Während der Extraktionsphase wird das Content Transfer Tool in einer aktiven AEM-Quellinstanz ausgeführt.
 
-* In der *Aufnahmephase* für die Autoreninstanz wird die gesamte Autorenbereitstellung herunterskaliert. Das bedeutet, dass die AEM während des gesamten Aufnahmevorgangs nicht verfügbar ist. Stellen Sie außerdem sicher, dass keine Cloud Manager-Pipelines ausgeführt werden, während Sie die *Aufnahme* Phase.
+* In der *Aufnahmephase* für die Autoreninstanz wird die gesamte Autorenbereitstellung herunterskaliert. Dies bedeutet, dass AEM Author während des gesamten Aufnahmeprozesses nicht verfügbar ist. Stellen Sie zudem sicher, dass während der laufenden *Aufnahmephase* keine Cloud Manager-Pipelines ausgeführt werden.
 
 * Bei Verwendung von `Amazon S3` oder `Azure` als Datenspeicher im Quell-AEM-System sollte der Datenspeicher so konfiguriert werden, dass die gespeicherten Blobs nicht gelöscht werden können (gesammelter Abfall). Dadurch wird die Integrität der Indexdaten sichergestellt. Wird diese Konfiguration nicht auf diese Weise vorgenommen, kann es zu fehlgeschlagenen Extraktionen kommen, da die Integrität dieser Indexdaten nicht gewährleistet ist.
 
-* Wenn Sie benutzerdefinierte Indizes verwenden, müssen Sie sicherstellen, dass Sie die benutzerdefinierten Indizes mit dem Knoten `tika` konfigurieren, bevor Sie das Content Transfer Tool ausführen. Siehe [Vorbereiten der neuen Indexdefinition](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#preparing-the-new-index-definition) für weitere Details.
+* Wenn Sie benutzerdefinierte Indizes verwenden, müssen Sie sicherstellen, dass Sie die benutzerdefinierten Indizes mit dem Knoten `tika` konfigurieren, bevor Sie das Content Transfer Tool ausführen. Weitere Informationen finden Sie unter [Vorbereiten der neuen Indexdefinition](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#preparing-the-new-index-definition).
 
 * Wenn Sie Auffüllungen durchführen möchten, darf sich die Inhaltsstruktur des vorhandenen Inhalts nicht von dem Zeitpunkt an ändern, zu dem die erste Extraktion erfolgt, bis zum Zeitpunkt der Auffüllextraktion. Für Inhalte, deren Struktur seit der ersten Extraktion geändert wurde, können keine Auffüllungen ausgeführt werden. Achten Sie darauf, dies während des Migrationsprozesses entsprechend einzuschränken.
 
 * Wenn Sie beabsichtigen, Versionen als Teil eines Migrationssatzes einzubeziehen und Auffüllungen mit `wipe=false` durchzuführen, müssen Sie aufgrund einer aktuellen Einschränkung im Content Transfer Tool die Versionsbereinigung deaktivieren. Wenn Sie es vorziehen, die Versionsbereinigung aktiviert zu lassen und in einen Migrationssatz aufzufüllen, dann müssen Sie die Aufnahme als `wipe=true` durchführen.
 
-* Ein Migrationssatz läuft nach einer längeren Inaktivitätsdauer ab, nach der seine Daten nicht mehr verfügbar sind. Überprüfen [Ablauf des Migrationssatzes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de#migration-set-expiry) für weitere Details.
+* Ein Migrationssatz läuft nach einer längeren Inaktivitätsdauer ab, nach der seine Daten nicht mehr verfügbar sind. Weitere Informationen finden Sie unter [Ablauf von Migrationssätzen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de#migration-set-expiry).
 
 ## Wie geht es weiter {#whats-next}
 

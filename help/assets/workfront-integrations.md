@@ -7,7 +7,7 @@ exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
 source-git-commit: f295eead13bcdeed910ae6b8c82373e2b70f1224
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 68%
+ht-degree: 88%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 68%
 
 [!DNL Adobe Workfront] ist ein Programm für das Arbeits-Management, mit dem Sie den gesamten Arbeitszyklus an einem Ort verwalten können. Die Integration von [!DNL Workfront] und [!DNL Adobe Experience Manager Assets] ermöglicht es Unternehmen, die Geschwindigkeit von Inhalten und die Zeit bis zur Markteinführung zu verbessern, indem sie Workfront und Digital Asset Management miteinander verbinden. Im Rahmen der Verwaltung ihrer Arbeit in Workfront haben Benutzer Zugriff auf die erforderlichen Dokumente und Bilder.
 
-Adobe-Angebote an [integrieren [!DNL Workfront] und [!DNL Adobe Experience Manager Assets] nativ (unterstützt Assets Essentials und Assets as a Cloud Service)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=de).
+Adobe bietet [integrieren [!DNL Workfront] und [!DNL Adobe Experience Manager Assets] nativ (Unterstützung von Assets Essentials und Assets as a Cloud Service)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=de).
 
 Mit der nativen Experience Manager-Integration können Sie:
 
@@ -38,7 +38,7 @@ Mit der nativen Experience Manager-Integration können Sie:
 ## Adobe Workfront für Experience Manager Enhanced Connector {#enhanced-connector-information}
 
 
-Seit Juni 2022 bietet Adobe eine neue native Integration für die Verbindung von Workfront mit Adobe Experience Manager Assets as a Cloud Service. Diese Integration ist zur erforderlichen Methode für die Verbindung dieser beiden Lösungen geworden. Jede künftige neue Implementierung des erweiterten Connectors (1.9.8 und höher) zur Verbindung von Workfront mit AEM Assets as a Cloud Service wird blockiert. Weitere Informationen zum Einrichten dieser Integration finden Sie unter [Konfigurieren der as a Cloud Service Integration von Experience Manager Assets](workfront-connector-configure.md).
+Seit Juni 2022 bietet Adobe eine neue native Integration für die Verbindung von Workfront mit Adobe Experience Manager Assets as a Cloud Service. Diese Integration ist zu einer erforderlichen Methode geworden, um diese beiden Lösungen miteinander zu verbinden. Jede künftige neue Implementierung des erweiterten Connectors (1.9.8 und höher) zur Verbindung von Workfront mit AEM Assets as a Cloud Service wird blockiert. Weitere Informationen zum Einrichten dieser Integration finden Sie unter [Konfigurieren der Integration von Experience Manager Assets as a Cloud Service](workfront-connector-configure.md).
 
 >[!NOTE]
 >

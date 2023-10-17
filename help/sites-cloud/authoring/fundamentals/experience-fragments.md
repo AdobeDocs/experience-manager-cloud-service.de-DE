@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: bad2225e7c5f2554ebd51c0e7e737296c3aa552b
 workflow-type: tm+mt
 source-wordcount: '2044'
-ht-degree: 86%
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ Experience Fragments können in folgenden Fällen verwendet werden:
 Ohne Experience Fragments müsste der Autor dieses Fragment kopieren und einfügen. Das Erstellen und Verwalten dieser zum Kopieren/Einfügen vorgesehenen Erlebnisse sind zeitaufwendige und fehleranfällige Verfahren.
 Mit Experience Fragments ersparen Sie sich das Kopieren/Einfügen.
 * Zur Unterstützung des Nutzungsszenarios mit Headless-Content-Management-Systemen.
-Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kunden. Ein Drittanbietersystem/Touchpoint würde dieses Erlebnis nutzen und dann an den Endbenutzer übermitteln.
+Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kunden. In diesem Fall würde das Erlebnis über ein System/einen Touchpoint eines Drittanbieters aufgenommen und dann an die Endbenutzerin bzw. den Endbenutzer weitergeben werden.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für der
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 >
->Weitere Informationen finden Sie unter [Grundlagen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
+>Weitere Details finden Sie in den [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
 
 >[!NOTE]
 >
@@ -55,17 +55,17 @@ Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für der
 >
 >* `experience-fragments-editors`
 >
->Wenden Sie sich an Ihren Systemadministrator, wenn Probleme auftreten.
+>Falls Probleme auftreten, wenden Sie sich an Ihre Systemadmins.
 
 ## Wann ist die Verwendung von Experience Fragments sinnvoll? {#when-should-you-use-experience-fragments}
 
 Experience Fragments sollten in folgenden Fällen verwendet werden:
 
 * Wann immer Sie Erlebnisse wiederverwenden möchten.
-   * Erlebnisse, die mit demselben oder ähnlichen Inhalten wiederverwendet werden.
-* Wenn Sie AEM als Inhaltsbereitstellungs-Plattform für Dritte nutzen möchten.
-   * Nutzung durch beliebige Lösungen, bei denen AEM als Plattform zur Inhaltsbereitstellung fungieren soll.
-   * Einbetten von Inhalten in Touchpoints von Drittanbietern.
+   * Bei Erlebnissen, die mit demselben oder ähnlichen Inhalten wiederverwendet werden.
+* Wenn Sie AEM als Plattform zur Inhaltsbereitstellung für Dritte nutzen möchten.
+   * Zur Nutzung durch beliebige Lösungen, bei denen AEM als Plattform zur Inhaltsbereitstellung fungieren soll.
+   * Beim Einbetten von Inhalten in Touchpoints von Drittanbietern.
 * Wenn Sie über ein Erlebnis mit unterschiedlichen Varianten oder Ausgabedarstellungen verfügen.
    * Kanal- oder kontextspezifische Varianten.
    * Erlebnisse, die als Gruppe sinnvoll eingesetzt werden können (z. B. eine Kampagne, die abhängig vom jeweiligen Kanal unterschiedliche Erlebnisse liefert).
@@ -143,7 +143,7 @@ Um einen Ordner für Ihre Experience Fragments zu erstellen und zu konfigurieren
 
 >[!CAUTION]
 >
->Es wird nicht empfohlen, die **zulässigen Vorlagen** mit dieser Methode zu ändern, da die angegebenen Vorlagen bei der Aktualisierung überschrieben werden können.
+>Es wird nicht empfohlen, die **zulässigen Vorlagen** mit dieser Methode zu ändern, da die angegebenen Vorlagen bei einer Aktualisierung überschrieben werden können.
 >
 >Verwenden Sie dieses Dialogfeld nur zu Informationszwecken.
 
@@ -184,7 +184,7 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 
 1. Geben Sie die **Eigenschaften** für das **Experience Fragment** ein.
 
-   Ein **Titel** ist zwingend erforderlich. Wenn die Variable **Name** leer gelassen wird, wird es aus dem **Titel**.
+   Ein **Titel** ist zwingend erforderlich. Wenn der **Name** leer gelassen wird, wird er aus dem **Titel** abgeleitet.
 
    ![Experience Fragment-Eigenschaften](/help/sites-cloud/authoring/assets/xf-04.png)
 
@@ -241,7 +241,7 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragments ers
 
    * **Vorlage**
    * **Titel**
-   * **Name** - Wenn Sie das Feld leer lassen, wird es aus dem Titel abgeleitet.
+   * **Name** (Wenn Sie das Feld leer lassen, wird der Name vom Titel abgeleitet)
    * **Beschreibung**
    * **Varianten-Tags**
 
@@ -250,7 +250,7 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragments ers
    ![Varianteneigenschaften](/help/sites-cloud/authoring/assets/xf-07.png)
 
 
-1. Bestätigen mit **Fertig**, wird die neue Variante im Bedienfeld angezeigt.
+1. Bestätigen Sie Ihre Auswahl mit **Fertig**. Daraufhin wird die neue Variante im Bedienfeld angezeigt.
 
 ## Verwenden eines Experience Fragment {#using-your-experience-fragment}
 
@@ -293,7 +293,7 @@ So erstellen Sie einen neuen Baustein:
 
    ![Baustein „Name“](/help/sites-cloud/authoring/assets/xf-11.png)
 
-1. Die **Baustein** wird auf der linken Registerkarte (**Lokal**) und kann für weitere Aktionen ausgewählt werden:
+1. Der **Baustein** wird auf der linken Registerkarte (**Lokal**) angezeigt und kann für weitere Aktionen ausgewählt werden:
 
    ![Baustein in der Leiste](/help/sites-cloud/authoring/assets/xf-12.png)
 
@@ -341,7 +341,7 @@ So personalisieren Sie Ihr Fragment:
 
    >[!NOTE]
    >
-   >Für einen Ordner definierte Personalisierungseigenschaften werden von allen untergeordneten Ordnern über die Unterstruktur und Experience Fragments (und Varianten) innerhalb dieser Unterstruktur übernommen. Sie können überschrieben werden, indem die Vererbung unterbrochen wird.
+   >Für einen Ordner definierte Personalisierungseigenschaften werden von allen untergeordneten Ordnern über die Unterstruktur sowie die Experience Fragments (und Varianten) in dieser Unterstruktur geerbt. Sie können überschrieben werden, indem die Vererbung unterbrochen wird.
 
 1. Öffnen Sie die Registerkarte **Personalisierung**, um Ihre Einstellungen zu definieren und zu speichern. Zum Beispiel für einen Ordner:
 
@@ -349,13 +349,13 @@ So personalisieren Sie Ihr Fragment:
 
    >[!CAUTION]
    >
-   >Wenn ein Fragment in eine Sites-Seite eingebettet wird, und **Personalisierung** konfiguriert wurde, wird nur die Personalisierungsversion der Seite zum Rendern der Seite verwendet.
+   >Wenn ein Fragment in eine Sites-Seite eingebettet wird und die **Personalisierung** konfiguriert wurde, wird beim Rendern der Seite nur die Personalisierungsversion der Seite verwendet.
    >
    >Damit das Targeting für die Komponenten in einem Fragment beim Rendern der Seite funktioniert, müssen die folgenden Bedingungen erfüllt sein:
    >
    >Der ausgewählte **ContextHub-Pfad** auf der Registerkarte **Personalisierung** muss wie folgt sein:
    >
-   >* denselben Pfad wie der für die Seite, auf der das Fragment wiedergegeben wird
+   >* der gleiche Pfad wie der Pfad, der für die Seite konfiguriert wurde, auf der das Fragment gerendert wird
    >
    >  Oder:
    >
@@ -363,7 +363,7 @@ So personalisieren Sie Ihr Fragment:
    >
    >Der ausgewählte **Segmentpfad** in der Registerkarte **Personalisierung** muss entweder:
    >
-   >* denselben Pfad wie der für die Seite, auf der das Fragment wiedergegeben wird
+   >* der gleiche Pfad wie der Pfad, der für die Seite konfiguriert wurde, auf der das Fragment gerendert wird
    >
    >  Oder
    >
@@ -426,7 +426,7 @@ Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe 
 
 >[!NOTE]
 >
->Auch wenn dies direkt über den Browser verfügbar ist, [Der primäre Zweck besteht darin, anderen Anwendungen (z. B. Web-Apps von Drittanbietern, benutzerdefinierte mobile Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, wobei nur die URL verwendet wird.](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+>Diese ist zwar direkt über den Browser verfügbar, [aber ihr Hauptzweck ist es, anderen Anwendungen (beispielsweise Web-Anwendungen von Drittanbietern oder benutzerdefinierten Mobile- Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragments zu ermöglichen, und zwar allein über die URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Veröffentlichen von Experience Fragments {#publishing-experience-fragments}
 
@@ -438,7 +438,7 @@ Alternativ können Sie auch [In der Vorschau veröffentlichen](/help/sites-cloud
 
 Standardmäßig werden Experience Fragments im HTML-Format bereitgestellt. Dies kann sowohl von AEM als auch von Drittanbieterkanälen verwendet werden.
 
-Für den Export nach Adobe Target kann JSON ebenfalls verwendet werden. Siehe:
+Für den Export nach Adobe Target kann auch JSON verwendet werden. Siehe:
 
 * [Integrieren mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 * [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)

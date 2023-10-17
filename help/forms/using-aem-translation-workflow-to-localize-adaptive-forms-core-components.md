@@ -6,7 +6,7 @@ exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 21%
+ht-degree: 93%
 
 ---
 
@@ -14,29 +14,29 @@ ht-degree: 21%
 
 Mit lokalisierten Formularen können Sie eine größere Zielgruppe über Ländergrenzen hinweg ansprechen. Mit den Adobe Experience Manager-Übersetzungs-Workflows können Sie adaptive Formulare und die entsprechenden Datensatzdokumente lokalisieren. Sie können zum Lokalisieren adaptiver Formulare **maschinelle Übersetzung** nutzen oder **Übersetzer** beauftragen.
 
-## Übersetzen eines adaptiven Formulars und Datensatzdokuments mithilfe der maschinellen Übersetzung {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
+## Übersetzen eines adaptiven Formulars und Datensatzdokuments mithilfe maschineller Übersetzung {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
-Der Dienst für maschinelle Übersetzung übersetzt Ihre Inhalte sofort in das adaptive Formular und [Datensatzdokument](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service ist für die Verwendung einer Testversion von Microsoft Translator für maschinelle Übersetzung vorkonfiguriert. Führen Sie zum Aktivieren des Dienstes für Ihre adaptiven Formulare und Datensatzdokumente folgende Schritte durch:
+Der Service für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adaptiven Formulare und [Datensatzdokumente](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service ist für die Verwendung einer Testversion von Microsoft Translator für die maschinelle Übersetzung vorkonfiguriert. Führen Sie zum Aktivieren des Dienstes für Ihre adaptiven Formulare und Datensatzdokumente folgende Schritte durch:
 
-1. Wählen Sie auf der Benutzeroberfläche von AEM Forms ein Formular aus und tippen Sie auf die Option **[!UICONTROL Wörterbuch hinzufügen]**.
-1. Im Bildschirm &quot;Wörterbuch zum Übersetzungsprojekt hinzufügen&quot;für **[!UICONTROL Projekt]** option
+1. Wählen Sie in der Benutzeroberfläche von AEM Forms ein Formular aus und tippen Sie auf die Option **[!UICONTROL Wörterbuch hinzufügen]**.
+1. Auf dem Bildschirm „Wörterbuch zum Übersetzungsprojekt hinzufügen“ für die Option **[!UICONTROL Projekt]**
 
-   * Um ein Übersetzungsprojekt zu erstellen, wählen Sie die **[!UICONTROL Neues Übersetzungsprojekt erstellen]** und in der **Projekttitel** -Feld geben Sie den Titel an. Zum Beispiel: `Government Reference Site - German locale.`
-   * Um einem vorhandenen Übersetzungsprojekt ein neues Wörterbuch hinzuzufügen, wählen Sie die **[!UICONTROL Hinzufügen zu einem vorhandenen Übersetzungsprojekt]** und wählen Sie eine **[!UICONTROL Vorhandenes Übersetzungsprojekt]**.
-1. Im **Zielsprachen** ein Gebietsschema (z. B. `German(de)`). Sie können mehrere Gebietsschemas angeben. Das Formular wird in alle im Feld **Zielsprachen** angegebenen Gebietsschemas übersetzt. Klicken Sie auf **Fertig**.
-1. Klicken Sie im Dialogfeld Wörterbuch hinzugefügt auf **Projekte öffnen**.
-1. Klicken Sie im Bildschirm &quot;Projekte&quot;auf das neu erstellte Projekt. Klicken Sie beispielsweise auf die **Referenzseite für Behörden - Gebietsschema Deutsch** Kachel.
-1. Klicken Sie auf der Kachel **Übersetzungsauftrag** auf das Symbol ![aem62forms_downarrow](assets/aem62forms_downarrow.png) und dann auf **Start**. Der Status der Kachel ändert sich in Entwurf. Nach Abschluss der Übersetzung ändert sich der Status in **Genehmigt**. Aktualisieren Sie die Seite nach einigen Minuten und überprüfen Sie den Status.
+   * Wählen Sie zum Erstellen eines Übersetzungsprojekts die Option **[!UICONTROL Neues Übersetzungsprojekt erstellen]** aus und legen Sie im Feld **Projekttitel** den Titel fest. Beispiel: `Government Reference Site - German locale.`
+   * Um einem vorhandenen Übersetzungsprojekt ein neues Wörterbuch hinzuzufügen, wählen Sie die Option **[!UICONTROL Zu vorhandenem Übersetzungsprojekt hinzufügen]** aus und wählen Sie ein **[!UICONTROL vorhandenes Übersetzungsprojekt]** aus.
+1. Geben Sie im Feld **Zielsprachen** ein Gebietsschema an (beispielsweise `German(de)`). Sie können mehrere Gebietsschemata angeben. Das Formular wird in alle im Feld **Zielsprachen** angegebenen Gebietsschemata übersetzt. Klicken Sie auf **Fertig**.
+1. Klicken Sie im Dialogfeld „Wörterbuch hinzugefügt“ auf **Projekte öffnen**.
+1. Klicken Sie im Bildschirm &quot;Projekte&quot;auf das neu erstellte Projekt. Klicken Sie beispielsweise auf den Titel **Referenz-Site Behörde – Gebietsschema Deutsch**.
+1. Klicken Sie auf der Kachel **Übersetzungsauftrag** auf das Symbol ![aem62forms_downarrow](assets/aem62forms_downarrow.png) und dann auf **Start**. Der Status der Kachel ändert sich in „Entwurf“. Bei Fertigstellung der Übersetzung ändert sich der Status in **Genehmigt**. Aktualisieren Sie die Seite nach einigen Minuten und überprüfen Sie den Status.
 
    ![Übersetzung starten](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
-1. Nachdem sich der Status in **Genehmigt** auf **Übersetzungsauftrag** klicken Sie auf die ![aem62forms_downarrow](assets/aem62forms_downarrow.png) und klicken Sie auf **Fertig**.
+1. Nachdem der Status für die Kachel **Übersetzungsauftrag** in **Genehmigt** geändert wurde, klicken Sie auf das Symbol ![aem62forms_downarrow](assets/aem62forms_downarrow.png) und klicken Sie auf **Fertigstellen**.
 
-1. Um das lokalisierte Formular in der AEM Forms-Benutzeroberfläche als Vorschau anzuzeigen, wählen Sie das lokalisierte Formular aus. Klicks **[!UICONTROL Vorschau]** >**[!UICONTROL Vorschau als HTML]**. Öffnen Sie das Formular erneut, nachdem Sie die `afAcceptLang=<locale code>` zur URL des Formulars. Fügen Sie beispielsweise `afAcceptLang=de`, um die deutsche Version des Formulars zu öffnen.
+1. Um eine Vorschau des lokalisierten Formulars in der AEM Forms-Benutzeroberfläche anzuzeigen, wählen Sie das lokalisierte Formular aus. Klicken Sie auf **[!UICONTROL Vorschau]** > **[!UICONTROL Vorschau als HTML]**. Öffnen Sie das Formular erneut, nachdem Sie `afAcceptLang=<locale code>` zur URL des Formulars hinzugefügt haben. Fügen Sie beispielsweise `afAcceptLang=de`hinzu, um die deutsche Version des Formulars zu öffnen.
 
 
    >[!NOTE]
    >
-   >* Bevor Sie die lokalisierte Version des Formulars im Browserfenster öffnen, stellen Sie sicher, dass das Gebietsschema des Browsers auf das Gebietsschema des Formulars eingestellt ist. Wenn das Formular beispielsweise in die Sprache Deutsch(de) übersetzt wird, setzen Sie das Gebietsschema des Browsers auf Deutsch(de).
+   >* Stellen Sie vor dem Öffnen der lokalisierten Version des Formulars im Browserfenster sicher, dass das Gebietsschema des Browsers so eingestellt ist, dass es mit dem Gebietsschema des Formulars übereinstimmt. Wenn beispielsweise das Formular in die Sprache Deutsch(de) übersetzt wird, stellen Sie für das Gebietsschema des Browsers „Deutsch(de)“ ein.
    >* Komponenten für adaptive Formulare unterstützen keine RTL-Sprachen (Right to Left – von rechts nach links). Zum Beispiel Hebräisch.
 
 <!-- 
@@ -53,33 +53,33 @@ Der Dienst für maschinelle Übersetzung übersetzt Ihre Inhalte sofort in das a
 
 -->
 
-## Lokalisieren eines adaptiven Formulars und seines Datensatzdokuments mithilfe der menschlichen Übersetzung {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
+## Lokalisieren eines adaptiven Formulars und seines Datensatzdokuments mithilfe menschlicher Übersetzung {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 
-Bei der menschlichen Übersetzung werden die Inhalte an einen Übersetzungsanbieter gesendet und von professionellen Übersetzern übersetzt. Wenn die Inhalte übersetzt wurden, werden sie zurückgesendet und in AEM importiert. Ist Ihr Übersetzungsdienstleister in AEM integriert, werden die Inhalte automatisch von AEM an den Übersetzungsdienstleister gesendet.
+Bei der menschlichen Übersetzung wird der Inhalt an einen Übersetzungsanbieter gesendet und von professionellen Übersetzerinnen oder Übersetzern übersetzt. Wenn die Inhalte übersetzt wurden, werden sie zurückgesendet und in AEM importiert. Ist Ihr Übersetzungsdienstleister in AEM integriert, werden die Inhalte automatisch von AEM an den Übersetzungsdienstleister gesendet.
 
-Für die Übersetzung wird ein Wörterbuch mit Dateien im XLIFF-Format für die professionellen Übersetzer freigegeben. Das Wörterbuch enthält eine separate XLIFF-Datei für jedes Gebietsschema. Jede XLIFF-Datei enthält Text, der den Endbenutzern angezeigt wird, sowie Platzhalter für den entsprechenden lokalisierten Text.
+Für die Übersetzung wird den professionellen Übersetzerinnen oder Übersetzern ein Wörterbuch zur Verfügung gestellt, das Dateien im XLIFF-Format enthält. Das Wörterbuch enthält für jedes Gebietsschema eine separate XLIFF-Datei. Jede XLIFF-Datei enthält Text, der den Endbenutzenden angezeigt wird, und Platzhalter für den entsprechenden lokalisierten Text.
 
-Führen Sie die folgenden Schritte aus, um ein Formular und sein Datensatzdokument mithilfe von Übersetzern zu lokalisieren:
+Führen Sie die folgenden Schritte zum Lokalisieren eines Formulars und seines Datensatzdokuments mit menschlicher Übersetzung durch:
 
-1. Wählen Sie auf der Benutzeroberfläche von AEM Forms ein Formular aus und tippen Sie auf die Option **[!UICONTROL Wörterbuch hinzufügen]**.
-1. Im Bildschirm &quot;Wörterbuch zum Übersetzungsprojekt hinzufügen&quot;für **[!UICONTROL Projekt]** option
+1. Wählen Sie in der Benutzeroberfläche von AEM Forms ein Formular aus und tippen Sie auf die Option **[!UICONTROL Wörterbuch hinzufügen]**.
+1. Auf dem Bildschirm „Wörterbuch zum Übersetzungsprojekt hinzufügen“ für die Option **[!UICONTROL Projekt]**
 
-   * Um ein Übersetzungsprojekt zu erstellen, wählen Sie die **[!UICONTROL Neues Übersetzungsprojekt erstellen]** und in der **Projekttitel** -Feld geben Sie den Titel an. Zum Beispiel: `Government Reference Site - German locale.`
-   * Um einem vorhandenen Übersetzungsprojekt ein neues Wörterbuch hinzuzufügen, wählen Sie die **[!UICONTROL Hinzufügen zu einem vorhandenen Übersetzungsprojekt]** und wählen Sie eine **[!UICONTROL Vorhandenes Übersetzungsprojekt]**.
-1. Im **Zielsprachen** ein Gebietsschema (z. B. `German(de)`). Sie können mehrere Gebietsschemas angeben. Das Formular wird in alle im Feld **Zielsprachen** angegebenen Gebietsschemas übersetzt. Klicken Sie auf **Fertig**.
-1. Klicken Sie im Dialogfeld Wörterbuch hinzugefügt auf **Projekte öffnen**.
-1. Klicken Sie im Bildschirm &quot;Projekte&quot;auf das neu erstellte Projekt. Klicken Sie beispielsweise auf die **Referenzseite für Behörden - Gebietsschema Deutsch** Kachel.
-1. Am unteren Rand des **Zusammenfassung** klicken Sie auf die **Ellipsen**. Der Bildschirm Eigenschaften des Übersetzungsprojekts wird geöffnet.
-1. Öffnen Sie die **[!UICONTROL Erweitert]** Registerkarte oben im **Eigenschaften des Übersetzungsprojekts** angezeigt. Für **[!UICONTROL Übersetzungsfeld]** auswählen **[!UICONTROL Menschliche Übersetzung]**. Klicks **Speichern und schließen** oben auf dem Bildschirm.
-1. Im **Übersetzungsauftrag** klicken Sie auf die ![aem62forms_downarrow](assets/aem62forms_downarrow.png) und klicken Sie auf **Export**. Klicken Sie im Dialogfeld Exportieren auf die Option Exportierte Datei herunterladen . Es lädt eine ZIP-Datei herunter.
+   * Wählen Sie zum Erstellen eines Übersetzungsprojekts die Option **[!UICONTROL Neues Übersetzungsprojekt erstellen]** aus und legen Sie im Feld **Projekttitel** den Titel fest. Beispiel: `Government Reference Site - German locale.`
+   * Um einem vorhandenen Übersetzungsprojekt ein neues Wörterbuch hinzuzufügen, wählen Sie die Option **[!UICONTROL Zu vorhandenem Übersetzungsprojekt hinzufügen]** aus und wählen Sie ein **[!UICONTROL vorhandenes Übersetzungsprojekt]** aus.
+1. Geben Sie im Feld **Zielsprachen** ein Gebietsschema an (beispielsweise `German(de)`). Sie können mehrere Gebietsschemata angeben. Das Formular wird in alle im Feld **Zielsprachen** angegebenen Gebietsschemata übersetzt. Klicken Sie auf **Fertig**.
+1. Klicken Sie im Dialogfeld „Wörterbuch hinzugefügt“ auf **Projekte öffnen**.
+1. Klicken Sie im Bildschirm &quot;Projekte&quot;auf das neu erstellte Projekt. Klicken Sie beispielsweise auf den Titel **Referenz-Site Behörde – Gebietsschema Deutsch**.
+1. Klicken Sie am unteren Rand der Kachel **Zusammenfassung** auf die **Auslassungspunkte**. Der Bildschirm „Eigenschaften des Übersetzungsprojekts“ wird geöffnet.
+1. Öffnen Sie oben auf dem Bildschirm **Eigenschaften des Übersetzungsprojekts** die Registerkarte **[!UICONTROL Erweitert]**. Wählen Sie für das **[!UICONTROL Übersetzungsfeld]** die Option **[!UICONTROL Menschliche Übersetzung]** aus. Klicken Sie oben auf dem Bildschirm auf **Speichern und schließen**.
+1. Klicken Sie auf der Kachel **Übersetzungsauftrag** auf das Symbol ![aem62forms_downarrow](assets/aem62forms_downarrow.png) und dann auf **Exportieren**. Klicken Sie im Dialogfeld „Exportieren“ auf die Option „Exportierte Datei herunterladen“. Es wird eine ZIP-Datei heruntergeladen.
    ![Übersetzungsdatei exportieren](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
-1. Extrahieren Sie die heruntergeladene ZIP-Datei. Der extrahierte Ordner hat zwei Dateien:
+1. Entpacken Sie die heruntergeladene ZIP-Datei. Der extrahierte Ordner hat zwei Dateien:
    * translation_export_summary.xml
-   * [form-fields-file].xml
+   * [form-fields-file].xml.
 1. Öffnen Sie die [form-fields-file].xml zur Bearbeitung. Fügen Sie die lokalisierten Zeichenfolgen und Meldungen für Formularfelder hinzu. Speichern und schließen Sie die Datei.
-1. Komprimieren Sie die Dateien &quot;translation_export_summary.xml&quot;und [form-fields-file].xml
-1. Im **Übersetzungsauftrag** klicken Sie auf die ![aem62forms_downarrow](assets/aem62forms_downarrow.png) und klicken Sie auf **Import**. Wählen Sie das Archiv aus, das [form-fields-file].xml mit lokalisierten Zeichenfolgen und Meldungen für Formularfelder.
+1. Komprimieren Sie die Dateien „translation_export_summary.xml“ und [form-fields-file].xml.
+1. Klicken Sie auf der Kachel **Übersetzungsauftrag** auf das Symbol ![aem62forms_downarrow](assets/aem62forms_downarrow.png) und dann auf **Importieren**. Wählen Sie das Archiv aus, das [form-fields-file].xml enthält. Außerdem sind die lokalisierten Zeichenfolgen und Meldungen für Formularfelder enthalten.
 
    ![Importieren einer Übersetzungsdatei](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
-1. Um das lokalisierte Formular in der AEM Forms-Benutzeroberfläche als Vorschau anzuzeigen, wählen Sie das lokalisierte Formular aus. Klicks **[!UICONTROL Vorschau]** >**[!UICONTROL Vorschau als HTML]**. Öffnen Sie das Formular erneut, nachdem Sie die `afAcceptLang=<locale code>` zur URL des Formulars. Fügen Sie beispielsweise `afAcceptLang=de`, um die deutsche Version des Formulars zu öffnen.
+1. Um eine Vorschau des lokalisierten Formulars in der AEM Forms-Benutzeroberfläche anzuzeigen, wählen Sie das lokalisierte Formular aus. Klicken Sie auf **[!UICONTROL Vorschau]** > **[!UICONTROL Vorschau als HTML]**. Öffnen Sie das Formular erneut, nachdem Sie `afAcceptLang=<locale code>` zur URL des Formulars hinzugefügt haben. Fügen Sie beispielsweise `afAcceptLang=de`hinzu, um die deutsche Version des Formulars zu öffnen.

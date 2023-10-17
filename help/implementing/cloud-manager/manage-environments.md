@@ -1,18 +1,18 @@
 ---
 title: Verwalten von Umgebungen
-description: Erfahren Sie mehr über die Typen von Umgebungen, die Sie erstellen können, und wie Sie sie für Ihr Cloud Manager-Projekt erstellen.
+description: Erfahren Sie mehr über die Arten von Umgebungen, die Sie erstellen können, und wie Sie sie für ein Cloud Manager-Projekt erstellen.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
 workflow-type: tm+mt
 source-wordcount: '2558'
-ht-degree: 33%
+ht-degree: 88%
 
 ---
 
 
 # Verwalten von Umgebungen {#managing-environments}
 
-Erfahren Sie mehr über die Typen von Umgebungen, die Sie erstellen können, und wie Sie sie für Ihr Cloud Manager-Projekt erstellen.
+Erfahren Sie mehr über die Arten von Umgebungen, die Sie erstellen können, und wie Sie sie für ein Cloud Manager-Projekt erstellen.
 
 ## Umgebungstypen {#environment-types}
 
@@ -22,7 +22,7 @@ Ein Benutzer mit den erforderlichen Berechtigungen kann die folgenden Umgebungst
 
 * **Entwicklung**: Die Entwicklungsumgebung kann zu Entwicklungs- und Testzwecken erstellt werden und wird ausschließlich produktionsfremden Pipelines zugeordnet.
 
-* **Schnelle Entwicklung** - Eine schnelle Entwicklungsumgebung (RDE) ermöglicht es einem Entwickler, Änderungen schnell bereitzustellen und zu überprüfen, wodurch der Zeitaufwand für das Testen von Funktionen minimiert wird, die nachweislich in einer lokalen Entwicklungsumgebung funktionieren. Siehe [Dokumentation zur raschen Entwicklung](/help/implementing/developing/introduction/rapid-development-environments.md) für Details zur Verwendung eines RDE.
+* **Schnelle Entwicklung**: Eine schnelle Entwicklungsumgebung (RDE) ermöglicht es Entwicklungspersonen, Änderungen schnell bereitzustellen und zu überprüfen, wodurch der Zeitaufwand für das Testen von Funktionen, die nachweislich in einer lokalen Entwicklungsumgebung funktionieren, minimiert wird. Details zur Verwendung einer RDE finden Sie in der [Dokumentation zur schnellen Entwicklungsumgebung](/help/implementing/developing/introduction/rapid-development-environments.md).
 
 Die Fähigkeiten der einzelnen Umgebungen hängen von den Lösungen ab, die im [Programm](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) der Umgebung ermöglicht werden.
 
@@ -33,7 +33,7 @@ Die Fähigkeiten der einzelnen Umgebungen hängen von den Lösungen ab, die im [
 
 >[!NOTE]
 >
->Die Produktions- und Staging-Umgebung werden nur als Paar erstellt. Sie können nicht nur eine Staging- oder eine Produktionsumgebung erstellen.
+>Die Produktions- und Staging-Umgebung werden nur als Paar erstellt. Sie können nicht nur eine Staging- oder nur eine Produktionsumgebung erstellen.
 
 ## Hinzufügen einer Umgebung {#adding-environments}
 
@@ -41,7 +41,7 @@ Die Fähigkeiten der einzelnen Umgebungen hängen von den Lösungen ab, die im [
 
 1. Klicken Sie auf das Programm, für das Sie eine Umgebung hinzufügen möchten.
 
-1. Aus dem **Programmübersicht** Seite, klicken Sie auf **Umgebung hinzufügen** auf **Umgebungen** -Karte, um eine Umgebung hinzuzufügen.
+1. Auf der Seite **Programmübersicht** klicken Sie auf der Karte **Umgebungen** auf **Umgebung hinzufügen**, um eine Umgebung hinzuzufügen.
 
    ![Karte „Umgebung“](assets/no-environments.png)
 
@@ -57,10 +57,10 @@ Die Fähigkeiten der einzelnen Umgebungen hängen von den Lösungen ab, die im [
       * Die Anzahl der verfügbaren/verwendeten Umgebungen wird in Klammern hinter dem Namen des Umgebungstyps angezeigt.
    * Geben Sie einen **Namen** für die Umgebung an.
    * Geben Sie eine **Beschreibung** für die Umgebung an.
-   * Wenn Sie eine **Produktion und Staging** -Umgebung müssen Sie einen Umgebungsnamen und eine Beschreibung für Ihre Produktions- und Staging-Umgebungen angeben.
+   * Wenn Sie eine **Produktion + Staging**-Umgebung hinzufügen, müssen Sie einen Umgebungsnamen und eine Beschreibung sowohl für die Produktions- als auch für die Staging-Umgebung angeben.
    * Wählen Sie in der Dropdown-Liste eine **primäre Region** aus.
-      * Der primäre Bereich kann nach der Erstellung nicht mehr geändert werden.
-      * Je nach den verfügbaren Berechtigungen können Sie [mehrere Regionen](#multiple-regions).
+      * Die primäre Region kann nach der Erstellung nicht mehr geändert werden.
+      * Je nach den verfügbaren Berechtigungen können Sie [mehrere Regionen](#multiple-regions) konfigurieren.
 
    ![Dialogfeld „Umgebung hinzufügen“](assets/add-environment2.png)
 
@@ -70,64 +70,64 @@ Der Bildschirm **Überblick** zeigt nun in der Karte **Umgebungen** Ihre neue Um
 
 ## Mehrere Veröffentlichungsregionen {#multiple-regions}
 
-Ein Benutzer mit der **Business Owner** Rolle kann Produktions- und Staging-Umgebungen so konfigurieren, dass neben der primären Region bis zu drei weitere Veröffentlichungsregionen einbezogen werden. Zusätzliche Veröffentlichungsregionen können die Verfügbarkeit verbessern. Siehe [Zusätzliche Dokumentation zu Veröffentlichungsregionen](/help/operations/additional-publish-regions.md) für weitere Details.
+Benutzende mit der **Geschäftsinhaber**-Rolle können Produktions- und Staging-Umgebungen so konfigurieren, dass neben der primären Region bis zu drei weitere Veröffentlichungsregionen einbezogen werden. Zusätzliche Veröffentlichungsregionen können die Verfügbarkeit verbessern. Weitere Details finden Sie in der [Zusätzlichen Dokumentation zu Veröffentlichungsregionen](/help/operations/additional-publish-regions.md).
 
 >[!TIP]
 >
->Sie können die [Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) , um eine aktuelle Liste der verfügbaren Regionen abzurufen.
+>Sie können die [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) verwenden, um eine aktuelle Liste der verfügbaren Regionen abzurufen.
 
-### Hinzufügen mehrerer Veröffentlichungsbereiche zu einer neuen Umgebung {#add-regions}
+### Hinzufügen mehrerer Veröffentlichungsregionen zu einer neuen Umgebung {#add-regions}
 
 Wenn Sie eine Umgebung hinzufügen, können Sie zusätzlich zur primären Region weitere Regionen konfigurieren.
 
-1. Wählen Sie die **Primäre Region**.
-   * Der primäre Bereich kann nach der Erstellung der Umgebung nicht mehr geändert werden.
-1. Auswählen der Option **Zusätzliche Veröffentlichungsregionen hinzufügen** und eine neue **Zusätzliche Veröffentlichungsregionen** -Option angezeigt.
-1. Im **Zusätzliche Veröffentlichungsregionen** in der Dropdown-Liste einen zusätzlichen Bereich auswählen.
+1. Wählen Sie die **primäre Region**.
+   * Die primäre Region kann nach der Erstellung der Umgebung nicht mehr geändert werden.
+1. Wenn Sie die Option **Zusätzliche Veröffentlichungsregionen hinzufügen** wählen, wird eine neue Dropdown-Option **Zusätzliche Veröffentlichungsregionen** angezeigt.
+1. Wählen Sie in der Dropdown-Liste **Zusätzliche Veröffentlichungsregionen** eine zusätzliche Region aus.
 1. Die ausgewählte Region wird unter der Dropdown-Liste hinzugefügt, um ihre Auswahl anzugeben.
-   * Tippen oder klicken Sie auf `X` neben dem ausgewählten Bereich, damit Sie die Auswahl aufheben können.
-1. Wählen Sie einen weiteren Bereich aus dem **Zusätzliche Veröffentlichungsregionen** Dropdown, um einen weiteren Bereich hinzuzufügen.
-1. Tippen oder klicken Sie auf **Speichern** wenn Sie bereit sind, Ihre Umgebung zu erstellen.
+   * Tippen oder klicken Sie auf `X` neben der ausgewählten Region, um sie wieder abzuwählen.
+1. Wählen Sie eine andere Region aus der Dropdown-Liste **Zusätzliche Veröffentlichungsregionen**, um eine weitere Region hinzuzufügen.
+1. Tippen oder klicken Sie auf **Speichern**, wenn Sie bereit sind, Ihre Umgebung zu erstellen.
 
 ![Auswählen mehrerer Regionen](assets/select-multiple-regions.png)
 
 Die ausgewählten Regionen gelten sowohl für Produktions- als auch für Staging-Umgebungen.
 
-Wenn Sie keine weiteren Regionen angeben, [Sie können dies später tun, nachdem die Umgebungen erstellt wurden.](#edit-regions)
+Wenn Sie keine zusätzlichen Regionen angeben, [können Sie dies später tun, nachdem die Umgebungen erstellt wurden.](#edit-regions)
 
-Wenn Sie Bereitstellung [erweiterte Vernetzung](/help/security/configuring-advanced-networking.md) Für das Programm wird empfohlen, diese Bereitstellung vor dem Hinzufügen zusätzlicher Veröffentlichungsbereiche zu den Umgebungen mithilfe der Cloud Manager-API durchzuführen. Andernfalls durchläuft der Traffic der zusätzlichen Veröffentlichungsregionen den Proxy der primären Region.
+Wenn Sie [erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-networking.md) für das Programm bereitstellen möchten, wird empfohlen, diese Bereitstellung vor dem Hinzufügen zusätzlicher Veröffentlichungsregionen zu den Umgebungen mithilfe der Cloud Manager-API durchzuführen. Andernfalls wird der Traffic der zusätzlichen Veröffentlichungsregionen über den Proxy der primären Region geleitet.
 
-### Bearbeiten mehrerer Veröffentlichungsbereiche {#edit-regions}
+### Bearbeiten mehrerer Veröffentlichungsregionen {#edit-regions}
 
-Wenn Sie anfangs keine weiteren Regionen angegeben haben, können Sie dies nach der Erstellung der Umgebungen tun, sofern Sie über die erforderlichen Berechtigungen verfügen.
+Wenn Sie anfangs keine weiteren Regionen angegeben haben, können Sie dies auch nach der Erstellung der Umgebungen tun, sofern Sie über die erforderlichen Berechtigungen verfügen.
 
-Sie können auch zusätzliche Veröffentlichungsbereiche entfernen. Sie können jedoch nur Regionen in einer Transaktion hinzufügen oder entfernen. Wenn Sie eine Region hinzufügen und eine Region entfernen müssen, fügen Sie zuerst Ihre Änderung hinzu, speichern Sie sie und entfernen Sie sie dann (oder umgekehrt).
+Sie können auch zusätzliche Veröffentlichungsregionen entfernen. Sie können jedoch in einer Transaktion Regionen nur entweder hinzufügen oder entfernen. Wenn Sie eine Region hinzufügen und eine andere Region entfernen müssen, fügen Sie zuerst eine hinzu, speichern Ihre Änderung und entfernen dann die andere (oder umgekehrt).
 
-1. Klicken Sie in der Konsole Programmübersicht Ihres Programms auf die Suchschaltfläche für Ihre Produktionsumgebung und wählen Sie **Bearbeiten** aus dem Menü.
+1. Klicken Sie in der Programmübersichtskonsole Ihres Programms auf die Schaltfläche mit den Auslassungspunkten für Ihre Produktionsumgebung und wählen Sie im Menü **Bearbeiten**.
 
    ![Umgebung bearbeiten](assets/select-edit-environment.png)
 
-1. Im **Bearbeiten der Produktionsumgebung** die erforderlichen Änderungen an den zusätzlichen Veröffentlichungsregionen vornehmen.
-   * Verwenden Sie die **Zusätzliche Veröffentlichungsregionen** zur Auswahl zusätzlicher Regionen.
-   * Klicken Sie auf das X neben den ausgewählten zusätzlichen Veröffentlichungsbereichen, um deren Auswahl aufzuheben.
+1. Nehmen Sie im Dialog **Produktionsumgebung bearbeiten** die erforderlichen Änderungen an den zusätzlichen Veröffentlichungsregionen vor.
+   * Verwenden Sie die Dropdown-Liste **Zusätzliche Veröffentlichungsregionen**, um weitere Regionen auszuwählen.
+   * Klicken Sie auf das X neben den ausgewählten zusätzlichen Veröffentlichungsregionen, um deren Auswahl aufzuheben.
 
    ![Umgebung bearbeiten](assets/edit-environment.png)
 
 1. Tippen oder klicken Sie auf **Speichern**, um die Änderungen zu speichern.
 
-Änderungen an der Produktionsumgebung gelten sowohl für die Produktions- als auch für die Staging-Umgebung. Änderungen an mehreren Veröffentlichungsbereichen können nur in der Produktionsumgebung bearbeitet werden.
+Änderungen an der Produktionsumgebung gelten sowohl für die Produktions- als auch für die Staging-Umgebung. Änderungen an mehreren Veröffentlichungsregionen können nur in der Produktionsumgebung bearbeitet werden.
 
-Wenn Sie Bereitstellung [erweiterte Vernetzung](/help/security/configuring-advanced-networking.md) Für das Programm wird empfohlen, diese Bereitstellung durchzuführen, bevor den Umgebungen zusätzliche Veröffentlichungsbereiche hinzugefügt werden. Andernfalls durchläuft der Traffic der zusätzlichen Veröffentlichungsregionen den Proxy der primären Region.
+Wenn Sie [erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-networking.md) für das Programm bereitstellen möchten, wird empfohlen, diese Bereitstellung vor dem Hinzufügen zusätzlicher Veröffentlichungsregionen zu den Umgebungen durchzuführen. Andernfalls wird der Traffic der zusätzlichen Veröffentlichungsregionen über den Proxy der primären Region geleitet.
 
 ## Umgebungsdetails {#viewing-environment}
 
-Sie können die **Umgebungen** auf der Übersichtsseite, um auf die Details einer Umgebung auf zwei Arten zuzugreifen.
+Sie können die Karte **Umgebungen** auf der Übersichtsseite auf zwei Arten verwenden, um auf Details zu Umgebungen zuzugreifen.
 
-1. Aus dem **Übersicht** klicken Sie auf die **Umgebungen** oben im Bildschirm.
+1. Klicken Sie auf der Seite **Überblick** auf die Registerkarte **Umgebungen** oben auf dem Bildschirm.
 
    ![Registerkarte „Umgebungen“](assets/environments-tab2.png)
 
-   * Alternativ können Sie auf die **Alle anzeigen** Schaltfläche auf der **Umgebungen** -Karte, um direkt zum **Umgebungen** Registerkarte.
+   * Alternativ können Sie auf die Schaltfläche **Alle anzeigen** auf der Karte **Umgebungen** klicken, um direkt zur Registerkarte **Umgebungen** zu gelangen.
 
      ![Option „Alle anzeigen“](assets/environment-showall.png)
 
@@ -135,7 +135,7 @@ Sie können die **Umgebungen** auf der Übersichtsseite, um auf die Details eine
 
    ![Registerkarte „Umgebungen“](assets/environment-view-2.png)
 
-1. Klicken Sie auf eine Umgebung in der Liste, um Details anzuzeigen.
+1. Klicken Sie auf eine Umgebung in der Liste, um deren Details anzuzeigen.
 
    ![Umgebungsdetails](assets/environ-preview1.png)
 
@@ -145,33 +145,33 @@ Alternativ können Sie auf die Schaltfläche mit den Auslassungspunkten der gew�
 
 >[!NOTE]
 >
->Die Karte **Umgebungen** listet nur drei Umgebungen auf. Klicken **Alle anzeigen** wie zuvor beschrieben, um alle Umgebungen des Programms zu sehen.
+>Die Karte **Umgebungen** listet nur drei Umgebungen auf. Klicken Sie auf **Alle anzeigen** wie zuvor beschrieben, um alle Umgebungen des Programms zu sehen.
 
 ### Zugriff auf den Vorschau-Service {#access-preview-service}
 
-Cloud Manager bietet für jede AEM as a Cloud Service Umgebung einen Vorschaudienst (bereitgestellt als zusätzlicher Veröffentlichungsdienst).
+Cloud Manager bietet für jede AEM as a Cloud Service-Umgebung einen Vorschau-Service (bereitgestellt als zusätzlicher Publishing-Service).
 
-Mithilfe des Service können Sie eine Vorschau des endgültigen Erlebnisses einer Website anzeigen, bevor diese die tatsächliche Veröffentlichungsumgebung erreicht und öffentlich verfügbar wird.
+Mithilfe des Service können Sie eine Vorschau des endgültigen Erlebnisses einer Website anzeigen, bevor diese die tatsächliche Publishing-Umgebung erreicht und öffentlich verfügbar wird.
 
-Bei der Erstellung wird dem Vorschaudienst eine standardmäßige IP-Zulassungsliste vom Typ &quot;&quot;zugewiesen, die `Preview Default [<envId>]`, wodurch der gesamte Traffic an den Vorschaudienst blockiert wird. Heben Sie die Anwendung der standardmäßigen IP-Zulassungsliste im Vorschaudienst auf, damit Sie den Zugriff aktivieren können.
+Bei der Erstellung wird auf den Vorschau-Service eine standardmäßige IP-Zulassungsliste mit der Bezeichnung `Preview Default [<envId>]` angewendet, wodurch der gesamte Traffic zum Vorschau-Service blockiert wird. Heben Sie die Anwendung der standardmäßigen IP-Zulassungsliste im Vorschau-Service auf, damit Sie den Zugriff aktivieren können.
 
 ![Vorschau-Service und seine Zulassungsliste](assets/preview-ip-allow.png)
 
-Benutzer mit den erforderlichen Berechtigungen müssen die folgenden Schritte ausführen, bevor sie die Vorschau-Dienst-URL freigeben, um den Zugriff darauf sicherzustellen.
+Benutzende mit den erforderlichen Berechtigungen müssen die folgenden Schritte ausführen, bevor sie die Vorschau-Service-URL freigeben können, damit der Zugriff darauf möglich ist.
 
-1. Erstellen Sie eine entsprechende IP-Zulassungsliste, wenden Sie sie auf den Vorschaudienst an und heben Sie die Anwendung sofort auf. `Preview Default [<envId>]` Zulassungsliste.
+1. Erstellen Sie eine entsprechende IP-Zulassungsliste, wenden Sie sie auf den Vorschau-Service an und heben Sie sofort die Anwendung der `Preview Default [<envId>]`-Zulassungsliste wieder auf.
 
    * Siehe [Anwenden und Aufheben der Anwendung von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) für weitere Details.
 
-1. Verwenden Sie den Workflow zum Aktualisieren von **IP-Zulassungslisten**, um die standardmäßige IP-Adresse zu entfernen und nach Bedarf IP-Adressen hinzuzufügen. Siehe [Verwalten von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) , um mehr zu erfahren.
+1. Verwenden Sie den Workflow zum Aktualisieren von **IP-Zulassungslisten**, um die standardmäßige IP-Adresse zu entfernen und nach Bedarf IP-Adressen hinzuzufügen. Weitere Informationen finden Sie unter [Verwalten von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md).
 
-Nachdem der Zugriff auf den Vorschaudienst entsperrt wurde, wird das Sperrsymbol vor dem Vorschaudienstnamen nicht mehr angezeigt.
+Nachdem der Zugriff auf den Vorschau-Service entsperrt wurde, erscheint das Sperrsymbol nicht mehr vor dem Namen des Vorschau-Services.
 
-Nach der Aktivierung können Sie Inhalte im Vorschau-Service veröffentlichen, indem Sie die Benutzeroberfläche zur Verwaltung von Veröffentlichungen in AEM verwenden. Siehe [Vorschau des Inhalts](/help/sites-cloud/authoring/fundamentals/previewing-content.md) für weitere Details.
+Nach der Aktivierung können Sie Inhalte im Vorschau-Service veröffentlichen, indem Sie die Benutzeroberfläche zur Verwaltung von Veröffentlichungen in AEM verwenden. Siehe [Vorschau von Inhalten](/help/sites-cloud/authoring/fundamentals/previewing-content.md) für weitere Informationen.
 
 >[!NOTE]
 >
->Ihre Umgebung muss auf AEM Version `2021.05.5368.20210529T101701Z` oder höher ausgeführt werden, um den Vorschau-Service nutzen zu können. Vergewissern Sie sich, dass in Ihrer Umgebung eine Aktualisierungs-Pipeline erfolgreich ausgeführt wurde, damit Sie den Vorschaudienst verwenden können.
+>Ihre Umgebung muss auf AEM Version `2021.05.5368.20210529T101701Z` oder höher ausgeführt werden, um den Vorschau-Service nutzen zu können. Vergewissern Sie sich, dass in Ihrer Umgebung eine Aktualisierungs-Pipeline erfolgreich ausgeführt wurde, damit Sie den Vorschau-Service verwenden können.
 
 ### Status weiterer Veröffentlichungsregionen {#additional-region-status}
 
@@ -203,13 +203,13 @@ Wenn Probleme mit zusätzlichen Veröffentlichungsregionen gemeldet werden:
 
 Wie lange Sie darauf warten, dass sich das System von selbst erholt, bevor Sie zusätzliche Maßnahmen ergreifen, hängt von den Auswirkungen ab, die der Ausfall dieser Region auf Ihre Systeme hat.
 
-Beachten Sie, dass in jedem Fall [Der Traffic wird immer in die nächstgelegene Region weitergeleitet, die online ist.](/help/operations/additional-publish-regions.md) Wenn weiterhin Probleme auftreten, wenden Sie sich an die Kundenunterstützung von Adobe.
+Beachten Sie, dass in jedem Fall [Der Traffic wird immer in die nächstgelegene Region weitergeleitet, die online ist.](/help/operations/additional-publish-regions.md) Wenn weiterhin Probleme auftreten, wenden Sie sich an die Adobe-Kundenunterstützung.
 
 ## Aktualisieren von Umgebungen {#updating-dev-environment}
 
 Als Cloud-nativer Service verwaltet Adobe automatisch die Aktualisierungen Ihrer Staging- und Produktionsumgebungen innerhalb der Produktionsprogramme.
 
-Aktualisierungen der Entwicklungsumgebungen und der Umgebungen in Sandbox-Programmen werden jedoch innerhalb der Programme verwaltet. Wenn in einer solchen Umgebung nicht die neueste öffentlich verfügbare AEM ausgeführt wird, wird der Status auf der **Umgebungen** auf der Karte **Übersicht** Programmbildschirm **Verfügbare Aktualisierung**.
+Aktualisierungen von Entwicklungsumgebungen sowie Umgebungen in Sandbox-Programmen werden jedoch innerhalb der Programme verwaltet. Wenn in einer solchen Umgebung nicht die neueste öffentlich verfügbare AEM-Version ausgeführt wird, zeigt der Status auf der Karte **Umgebungen** auf dem Bildschirm **Überblick** des Programms **Aktualisierung verfügbar** an.
 
 ![Aktualisierungsstatus der Umgebung](assets/environ-update.png)
 
@@ -217,7 +217,7 @@ Aktualisierungen der Entwicklungsumgebungen und der Umgebungen in Sandbox-Progra
 
 Pipelines sind der einzige Weg, [Code in den Umgebungen von AEM as a Cloud Service bereitzustellen.](deploy-code.md) Aus diesem Grund ist jede Pipeline mit einer bestimmten AEM-Version verknüpft.
 
-Wenn Cloud Manager erkennt, dass eine neuere Version von AEM verfügbar ist als die, die zuletzt mit der Pipeline bereitgestellt wurde, wird die **Verfügbare Aktualisierung** Status für die Umgebung.
+Wenn Cloud Manager erkennt, dass eine neuere Version von AEM verfügbar ist als die, die zuletzt mit der Pipeline bereitgestellt wurde, wird der Status **Aktualisierung verfügbar** für die Umgebung angezeigt.
 
 Der Prozess der Aktualisierung erfolgt also in zwei Schritten:
 
@@ -226,11 +226,11 @@ Der Prozess der Aktualisierung erfolgt also in zwei Schritten:
 
 ### Aktualisieren von Umgebungen {#updating-your-environments}
 
-Die **Aktualisieren** -Option verfügbar über **Umgebungen** Karte für Entwicklungsumgebungen und -umgebungen in Sandbox-Programmen durch Klicken auf die Suchschaltfläche der Umgebung.
+Die Option **Aktualisieren** ist für Entwicklungsumgebungen und Umgebungen in Sandbox-Programmen über die Karte **Umgebungen** durch Klicken auf die Schaltfläche mit den Auslassungspunkten für die Umgebung verfügbar.
 
-![Option „Aktualisieren“ auf der Karte Umgebungen](assets/environ-update2.png)
+![Option „Aktualisieren“ auf der Karte „Umgebungen“](assets/environ-update2.png)
 
-Diese Option ist auch verfügbar, indem Sie auf **Umgebungen** und wählen Sie dann die Suchschaltfläche der Umgebung aus.
+Diese Option ist auch verfügbar, indem Sie auf die Registerkarte **Umgebungen** klicken und anschließend auf die Schaltfläche mit den Auslassungspunkten für die Umgebung.
 
 ![Update-Option auf der Registerkarte „Umgebungen“](assets/environ-update3.png)
 
@@ -248,13 +248,13 @@ Das Verhalten der Option **Aktualisieren** hängt von der Konfiguration und dem 
 
 ## Löschen von Entwicklungsumgebungen {#deleting-environment}
 
-Benutzer mit der erforderlichen Berechtigung können eine Entwicklungsumgebung löschen.
+Benutzerinnen und Benutzer mit den erforderlichen Berechtigungen können eine Entwicklungsumgebung löschen.
 
-Aus dem **Übersicht** Bildschirm des Programms auf der **Umgebungen** klicken Sie auf die Suchschaltfläche der Entwicklungsumgebung, die Sie löschen möchten.
+Klicken Sie im Bildschirm **Überblick** des Programms auf der Karte **Umgebungen** auf die Schaltfläche mit den Auslassungspunkten für die Entwicklungsumgebung, die Sie löschen möchten.
 
 ![Die Löschoption](assets/environ-delete.png)
 
-Die Löschoption ist auch über die Registerkarte **Umgebungen** des Fensters **Überblick** des Programms verfügbar. Klicken Sie auf die Suchschaltfläche der Umgebung und wählen Sie **Löschen**.
+Die Löschoption ist auch über die Registerkarte **Umgebungen** des Fensters **Überblick** des Programms verfügbar. Klicken Sie auf die Schaltfläche mit den Auslassungspunkten für die Umgebung und anschließend auf **Löschen**.
 
 ![Die Löschoption auf der Registerkarte „Umgebungen“](assets/environ-delete2.png)
 
@@ -271,27 +271,27 @@ Wählen Sie aus dem Menü mit den Auslassungspunkten der Umgebung auf der Karte 
 
 >[!TIP]
 >
->Siehe [AEM as a Cloud Service Team und Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md) , wenn Sie erfahren möchten, wie AEM as a Cloud Service Team und Produktprofile den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren und beschränken können.
+>Siehe [Team- und Produktprofile in AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md), wenn Sie erfahren möchten, wie Sie mit Team- und Produktprofilen in AEM as a Cloud Service den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren oder einschränken können. 
 
 ## Zugriff auf die Entwicklerkonsole {#accessing-developer-console}
 
-Wählen Sie aus dem Menü mit den Auslassungspunkten der Umgebung auf der Karte **Umgebungen** die Option **Entwicklerkonsole** aus. In Ihrem Browser wird eine neue Registerkarte mit der Anmeldeseite zum **Entwicklerkonsole**.
+Wählen Sie aus dem Menü mit den Auslassungspunkten der Umgebung auf der Karte **Umgebungen** die Option **Entwicklerkonsole** aus. In Ihrem Browser wird eine neue Registerkarte mit der Anmeldeseite zur **Developer Console** geöffnet.
 
-![Melden Sie sich bei der Developer Console an](assets/environ-devconsole.png)
+![Anmelden bei der Developer Console](assets/environ-devconsole.png)
 
-Nur Benutzer mit der **Entwickler** Rolle hat Zugriff auf die **Entwicklerkonsole**. Bei Sandbox-Programmen hat jedoch jeder Benutzer mit Zugriff auf das Sandbox-Programm Zugriff auf **Entwicklerkonsole**.
+Nur eine Benutzerin bzw. ein Benutzer mit der Rolle **Entwickler** hat Zugriff auf die **Developer Console**. Für Sandbox-Programme hat jedoch jede Person mit Zugriff auf das Sandbox-Programm auch Zugriff auf die **Developer Console**.
 
-Siehe [Ruhezustand und Deaktivieren des Ruhezustands von Sandbox-Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html#hibernation) für weitere Details.
+Weitere Details finden Sie unter [Aktivieren und Deaktivieren des Ruhezustands von Sandbox-Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=de#hibernation).
 
 Diese Option ist auch über die Registerkarte **Umgebung** des Fensters **Überblick** beim Klicken auf das Menü mit den Auslassungspunkten einer einzelnen Umgebung verfügbar.
 
 ## Lokale Anmeldung {#login-locally}
 
-Auswählen **Lokale Anmeldung** aus dem Suchmenü der Umgebung im **Umgebungen** -Karte, damit Sie sich lokal bei Adobe Experience Manager anmelden können.
+Wählen Sie **Lokale Anmeldung** aus dem Menü mit den Auslassungspunkten auf der Karte **Umgebungen** aus, um sich lokal bei Adobe Experience Manager anzumelden.
 
 ![Lokale Anmeldung](assets/environ-login-locally.png)
 
-Außerdem können Sie sich lokal über die **Umgebungen** des **Übersicht** Seite.
+Darüber hinaus können Sie sich auch über die Registerkarte **Umgebungen** der Seite **Überblick** lokal anmelden.
 
 ![Lokale Anmeldung über die Registerkarte Umgebungen](assets/environ-login-locally-2.png)
 
@@ -299,7 +299,7 @@ Außerdem können Sie sich lokal über die **Umgebungen** des **Übersicht** Sei
 
 Benutzerdefinierte Domain-Namen werden in Cloud Manager for Sites-Programmen sowohl für Veröffentlichungs- als auch für Vorschau-Services unterstützt. Jede Cloud Manager-Umgebung kann bis zu 250 benutzerdefinierte Domains hosten.
 
-Um benutzerdefinierte Domänennamen zu konfigurieren, navigieren Sie zum **Umgebungen** und klicken Sie auf eine Umgebung, um Details zur Umgebung anzuzeigen.
+Um benutzerdefinierte Domain-Namen zu konfigurieren, gehen Sie zur Registerkarte **Umgebungen** und klicken Sie auf eine Umgebung, um die Details der Umgebung anzuzeigen.
 
 ![Umgebungsdetails](assets/domain-names.png)
 
@@ -316,29 +316,29 @@ Die folgenden Aktionen können für Ihre Umgebung im Veröffentlichungs-Service 
 
 ## Verwalten von IP-Zulassungslisten {#manage-ip-allow-lists}
 
-IP-Zulassungslisten werden in Cloud Manager für Autoren-, Veröffentlichungs- und Vorschaudienste für Sites-Programme unterstützt.
+IP-Zulassungslisten werden in Cloud Manager für Author-, Publish- und Vorschau-Services für Sites-Programme unterstützt.
 
-Um IP-Zulassungslisten zu verwalten, navigieren Sie zum **Umgebungen** des **Übersicht** Seite Ihres Programms. Klicken Sie auf eine einzelne Umgebung, damit Sie deren Details verwalten können.
+Um IP-Zulassungslisten zu verwalten, gehen Sie zur Registerkarte **Umgebungen** der Seite **Überblick** Ihres Programms. Klicken Sie auf eine einzelne Umgebung, damit Sie deren Details verwalten können.
 
 ### Anwenden einer IP-Zulassungsliste {#apply-ip-allow-list}
 
-Beim Anwenden einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Bereiche mit einem Autoren- oder Veröffentlichungsdienst in einer Umgebung verknüpft. Ein Benutzer im **Business Owner** oder **Bereitstellungsmanager** -Rolle muss angemeldet sein, um eine IP-Zulassungsliste anwenden zu können.
+Beim Anwenden einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Adressen-Bereiche mit einem Author- oder Publish-Service in einer Umgebung verknüpft. Um eine IP-Zulassungsliste anwenden zu können, muss die betreffende Person die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** innehaben und angemeldet sein.
 
-Die IP-Zulassungsliste muss in Cloud Manager vorhanden sein, um sie auf eine Umgebung anwenden zu können. Weitere Informationen zu IP-Zulassungslisten in Cloud Manager finden Sie unter [Einführung in IP-Zulassungslisten in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Die IP-Zulassungsliste muss in Cloud Manager vorhanden sein, damit sie auf eine Umgebung angewendet werden kann. Weitere Informationen zu IP-Zulassungslisten in Cloud Manager finden Sie in der [Einführung in IP-Zulassungslisten in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 **So wenden Sie eine IP-Zulassungsliste an:**
 
-1. Gehen Sie von der Registerkarte **Umgebungen** des Bildschirms **Überblick** des Programms zu der bestimmten Umgebung und gehen Sie zur Tabelle **IP-Zulassungslisten**.
-1. Verwenden Sie die Eingabefelder oben in der Tabelle der IP-Zulassungslisten-, damit Sie die IP-Zulassungsliste und den Autoren- oder Veröffentlichungsdienst auswählen können, auf den Sie sie anwenden möchten.
+1. Navigieren Sie von der Registerkarte **Umgebungen** des Bildschirms **Überblick** des Programms zu der gewünschten Umgebung und dann zur Tabelle **IP-Zulassungslisten**.
+1. Verwenden Sie die Eingabefelder oben in der Tabelle der IP-Zulassungsliste, um die IP-Zulassungsliste und den Author- oder Publish-Service auszuwählen, auf die Sie sie anwenden möchten.
 1. Klicken Sie auf **Anwenden** und bestätigen Sie Ihre Übermittlung.
 
 ### Aufheben der Anwendung einer IP-Zulassungsliste {#unapply-ip-allow-list}
 
-Wenn Sie die Anwendung einer IP-Zulassungsliste aufheben, werden alle in der Definition der Zulassungsliste enthaltenen IP-Bereiche von einem Autoren- oder Publisher-Dienst in einer Umgebung getrennt. Ein Benutzer im **Business Owner** oder **Bereitstellungsmanager** -Rolle muss angemeldet sein, damit die Anwendung einer IP-Zulassungsliste aufgehoben werden kann.
+Durch das Aufheben der Anwendung einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Adressbereiche von einem Author- oder Publish-Service in einer Umgebung getrennt. Eine Person mit der Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** muss angemeldet sein, um die Anwendung einer IP-Zulassungsliste aufheben zu können.
 
 **So heben Sie die Anwendung einer IP-Zulassungsliste auf:**
 
-1. Gehen Sie von der Registerkarte **Umgebungen** des Bildschirms **Überblick** des Programms zu der bestimmten Umgebung und gehen Sie zur Tabelle **IP-Zulassungslisten**.
-1. Identifizieren Sie die Zeile, in der die IP-Zulassungsliste-Regel, deren Anwendung Sie aufheben möchten, aufgeführt ist.
+1. Navigieren Sie von der Registerkarte **Umgebungen** des Bildschirms **Überblick** des Programms zu der gewünschten Umgebung und dann zur Tabelle **IP-Zulassungslisten**.
+1. Identifizieren Sie die Zeile, in der die Regel der IP-Zulassungsliste aufgeführt ist, deren Anwendung Sie aufheben möchten.
 1. Klicken Sie auf die Schaltfläche mit den Auslassungspunkten am Ende der Zeile.
 1. Wählen Sie **Anwendung rückgängig machen** aus und bestätigen Sie Ihre Übermittlung.

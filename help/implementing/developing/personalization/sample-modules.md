@@ -5,7 +5,7 @@ exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1126'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -23,19 +23,19 @@ Informationen zum Hinzufügen von UI-Modulen zu ContextHub finden Sie unter [Hin
 
 Der UI-Modultyp contexthub.base ist der Basistyp für alle anderen UI-Modultypen. Sie bietet daher allgemeine Funktionen zum Rendern von Store-Daten.
 
-Die folgenden Funktionen sind verfügbar:
+Die folgenden Optionen sind verfügbar:
 
 * **Titel und Symbol:** Geben Sie einen Titel für das UI-Modul und ein Symbol an. Auf das Symbol kann über eine URL oder aus der Coral-UI-Symbolbibliothek verwiesen werden.
 * **Daten speichern:** Identifizieren Sie einen oder mehrere Stores, aus denen Daten abgerufen werden sollen.
 * **Inhalt:** Geben Sie den Inhalt an, der im UI-Modul angezeigt wird, so wie er in der ContextHub-Symbolleiste angezeigt wird.
 * **Popover-Inhalt:** Geben Sie den Inhalt an, der in einem Popover angezeigt wird, wenn auf das UI-Modul geklickt oder getippt wird.
-* **Vollbildmodus:** Steuern Sie, ob der Vollbildmodus zulässig ist.
+* **Vollbildmodus:** Legen Sie fest, ob der Vollbildmodus zulässig ist.
 
 Der Quell-Code befindet sich unter `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`.
 
 ### Konfiguration {#configuration}
 
-Konfigurieren Sie das Benutzeroberflächenmodul contexthub.base mithilfe eines JavaScript-Objekts im JSON-Format. Fügen Sie eine der folgenden Eigenschaften zum Konfigurieren der UI-Modulfunktionen hinzu:
+Konfigurieren Sie das UI-Modul „contexthub.base“ mithilfe eines JavaScript-Objekts im JSON-Format. Fügen Sie eine der folgenden Eigenschaften zum Konfigurieren der UI-Modulfunktionen hinzu:
 
 * **image:** eine URL zu einem Bild, das als Symbol angezeigt werden soll.
 * **icon:** der Name einer [Coral-Benutzeroberflächensymbolklasse](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html). Wenn Sie einen Wert für das Symbol und die Bildeigenschaften angeben, wird das Bild verwendet.
@@ -45,8 +45,8 @@ Konfigurieren Sie das Benutzeroberflächenmodul contexthub.base mithilfe eines J
 * **storeMapping:** Ein Schlüssel-/Store-Diagramm. Verwenden Sie den Schlüssel in den Handlebar-Vorlagen, um auf die zugehörigen ContextHub-Store-Daten zuzugreifen.
 * **list:** ein Array von Elementen, die beim Klicken auf das UI-Modul als Liste in einem Popover angezeigt werden. Wenn Sie diesen Artikel einschließen, schließen Sie popoverTemplate nicht ein. Der Wert ist ein Array von Objekten mit den folgenden Schlüsseln:
    * title: Der für dieses Element anzuzeigende Text
-   * image: (Optional) Eine URL zu einem Bild, das links angezeigt werden soll
-   * Symbol: (Optional) Eine CUI-Symbolklasse, die links angezeigt werden soll. ignoriert , wenn ein Bild angegeben ist
+   * image: (optional) Eine URL zu einem Bild, das links angezeigt werden soll
+   * icon: (optional) Eine CUI-Symbolklasse, die links angezeigt werden soll; wird ignoriert, wenn ein Bild angegeben ist
    * selected: (optional) Ein boolescher Wert, der angibt, ob dieses Element als ausgewählt angezeigt werden soll (true=ausgewählt). Standardmäßig werden ausgewählte Elemente in Fettschrift angezeigt. Verwenden Sie eine `listType`-Eigenschaft, um andere Erscheinungen zu konfigurieren (siehe unten).
 * **listType:** Der für Popover-Listenelemente zu verwendende Stil. Verwenden Sie einen der folgenden Werte:
    * checkmark
@@ -71,7 +71,7 @@ Im folgenden Beispiel wird ein c`ontexthub.base`-UI-Modul zum Anzeigen von Infor
 
 ![contexthub.base-Modul](assets/base-module.png)
 
-## Benutzeroberflächenmodultyp contexthub.browserinfo {#contexthub-browserinfo-ui-module-type}
+## UI-Modultyp contexthub.browserinfo {#contexthub-browserinfo-ui-module-type}
 
 Das UI-Modul `contexthub.browserinfo` zeigt Informationen über den Client-Webbrowser und das Betriebssystem an. Informationen werden vom Store „surferinfo“ bezogen, der auf dem Store-Kandidaten [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) basiert.
 
@@ -186,7 +186,7 @@ Instanzen des UI-Moduls `contexthub.screen-orientation` benötigen keinen Wert f
 
 ## Benutzeroberflächenmodultyp contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
-Das UI-Modul `contexthub.tagcloud` zeigt Informationen zu Tags an. Auf der Symbolleiste zeigt das UI-Modul die Anzahl der Tags an. Das Popup zeigt eine Tagcloud und eine Texbox zum Hinzufügen neuer Tags an. Das UI-Modul ruft Informationen aus einem ContextHub-Store namens „tagcloud“ ab, der auf dem Store-Kandidaten `contexthub.tagcloud` basiert.
+Das UI-Modul `contexthub.tagcloud` zeigt Informationen zu Tags an. Auf der Symbolleiste zeigt das UI-Modul die Anzahl der Tags an. Das Popup zeigt eine Tagcloud und ein Texbox zum Hinzufügen neuer Tags an. Das UI-Modul ruft Informationen aus einem ContextHub-Store namens „tagcloud“ ab, der auf dem Store-Kandidaten `contexthub.tagcloud` basiert.
 
 ![contexthub.tagcloud-Modul](assets/tagcloud-module.png)
 
@@ -210,7 +210,7 @@ Instanzen des UI-Moduls `contexthub.tagcloud` benötigen keinen Wert für die De
 
 ## UI-Modultyp granite.profile {#granite-profile-ui-module-type}
 
-Das ContextHub-UI-Modul `granite.profile` zeigt den Anzeigenamen des aktuellen Benutzers an. Das Popup-Fenster zeigt den Anmeldenamen des Benutzers an und ermöglicht es Ihnen, den Wert des Anzeigenamens zu ändern. Das UI-Modul erhält Informationen von einem ContextHub-Store namens Profile, der auf dem Store-Kandidaten [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) basiert.
+Das ContextHub-UI-Modul `granite.profile` zeigt den Anzeigenamen des aktuellen Benutzers an. Das Popup-Fenster zeigt den Anmeldenamen der Benutzenden an und ermöglicht es Ihnen, den Wert des Anzeigenamens zu ändern. Das UI-Modul erhält Informationen von einem ContextHub-Store namens Profile, der auf dem Store-Kandidaten [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) basiert.
 
 ![granite.profile-Modul](assets/profile-module.png)
 

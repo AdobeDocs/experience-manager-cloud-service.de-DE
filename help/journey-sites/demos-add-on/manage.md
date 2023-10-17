@@ -5,7 +5,7 @@ exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -105,7 +105,7 @@ Sie können jetzt die Funktionen von AEM mit Ihren eigenen Demo-Sites erkunden. 
 
 * [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=de): Wenn Sie an weiteren Details zu den Funktionen von Cloud Manager interessiert sind, sollten Sie sich die ausführlichen technischen Dokumente direkt ansehen.
 * [Site erstellen](/help/sites-cloud/administering/site-creation/create-site.md): Erfahren Sie, wie Sie AEM verwenden, um eine Site mithilfe von Site-Vorlagen zu erstellen, um den Stil und die Struktur Ihrer Site zu definieren.
-* [Seitenbenennungskonventionen in AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - Auf dieser Seite finden Sie Informationen zu den Konventionen für die Organisation AEM Seiten.
-* [Grundlegende Handhabung in AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md): Lesen Sie sich dieses Dokument durch, wenn Sie noch nicht mit AEM vertraut sind, um grundlegende Konzepte wie z. B. die Navigation in der Konsole und ihre Organisation zu verstehen.
+* [Seitenbenennungskonventionen in AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). Auf dieser Seite finden Sie die Konventionen zum Organisieren von AEM-Seiten.
+* [AEM – Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md): Lesen Sie sich dieses Dokument durch, wenn Sie noch nicht mit AEM vertraut sind, um grundlegende Konzepte wie z. B. die Navigation in der Konsole und ihre Organisation zu verstehen.
 * [Technische Dokumentation zu AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de): Wenn Sie bereits über ein solides Verständnis von AEM verfügen, sehen Sie sich die ausführlichen technischen Dokumente an.
 * [Site-Vorlagen](/help/sites-cloud/administering/site-creation/site-templates.md): Lesen Sie dieses Dokument, wenn Sie mehr über die Struktur von Site-Vorlagen und deren Verwendung zur Erstellung von Sites erfahren möchten.

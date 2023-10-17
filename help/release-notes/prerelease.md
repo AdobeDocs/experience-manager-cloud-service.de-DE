@@ -5,7 +5,7 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1304'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ Erfahren Sie, wie Sie über den Vorabversionskanal eine Vorschau bevorstehender 
 
 Adobe Experience Manager as a Cloud Service entwickelt regelmäßig neue Funktionen entsprechend dem [Entwicklungsplan für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de#aem-as-cloud-service).
 
-Um sich mit den Funktionen vertraut zu machen, die für die folgende Funktionsveröffentlichung geplant sind, können Sie den Kanal für die Vorabversion abonnieren, auf den Sie durch die Konfiguration Ihrer Entwicklungsumgebungen oder beliebiger Sandbox-Umgebungen zugreifen können. Sie können Änderungen, auf die über die AEM-Benutzeroberfläche zugegriffen werden kann, in der Vorschau anzeigen und Code für alle neuen Vorabversions-APIs erstellen.
+Um sich mit den Funktionen vertraut zu machen, die in der nächsten Version verfügbar sein werden, können Sie den Vorabversionskanal abonnieren, auf den Sie durch eine entsprechende Konfiguration Ihrer Entwicklungsumgebungen oder beliebiger Sandbox-Umgebungen zugreifen können. Sie können Änderungen, auf die über die AEM-Benutzeroberfläche zugegriffen werden kann, in der Vorschau anzeigen und Code für alle neuen Vorabversions-APIs erstellen.
 
-Die Liste der Vorabversionsfunktionen für eine bestimmte Funktionsversion wird im Abschnitt [Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md).
+Die Liste der Vorabversionsfunktionen für bestimmte Funktionsveröffentlichungen wird in den [monatlichen Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md) veröffentlicht.
 
 ## AEM as a Cloud Service-Versionen {#releases}
 
@@ -31,13 +31,13 @@ AEM as a Cloud Service hat zwei Arten von Versionen.
 
 Dadurch werden kontinuierliche Versionsveröffentlichungen ohne Service-Unterbrechung sichergestellt.
 
-Mit dem Kanal für die Vorabversion können Sie eine Vorschau der für die bevorstehende Veröffentlichung geplanten Funktionen anzeigen, damit Sie künftige Funktionen bewerten und die mögliche Implementierung für Ihre eigenen Projekte planen können. Damit können Sie die nächste Version der Funktion planen.
+Der Vorabversionskanal bietet Ihnen eine Vorschau der für die bevorstehende Version geplanten Funktionen, damit Sie die neue Funktionalität bewerten und deren mögliche Implementierung in Ihre eigenen Projekte planen können. Damit können Sie schon vorab Pläne für die nächste Version erstellen.
 
-Wenn es beispielsweise Mai ist und Sie den Kanal für die Vorabversion abonniert haben, können Sie die Funktionen in der kommenden Version vom Juni bewerten.
+Wenn Sie den Vorabversionskanal abonniert haben, können Sie beispielsweise schon im Mai die Funktionen der Juni-Version prüfen.
 
 ![Diagramm zum Veröffentlichungsintervall von Vorabversionen](assets/prerelease-cadence.png)
 
-Mit der Vorabversion erhalten Sie ein rollierendes einmonatiges Fenster zu den bevorstehenden AEMaaCS-Funktionen, in dem Sie die Auswirkungen neuer Funktionen auf Ihre Projekte und Anpassungen bewerten und die Einführung solcher Funktionen, Tests und Benutzerschulungen planen können.
+Mit der Vorabversion erhalten Sie einen rollierenden, einmonatigen Einblick in die bevorstehenden AEMaaCS-Funktionen. Damit können Sie die Auswirkungen neuer Funktionen auf Ihre Projekte und Einstellungen prüfen sowie Rollouts für diese Funktionen planen und Tests und Benutzerschulungen durchführen.
 
 Die effektive Nutzung des Vorabversionskanals erfordert vier Schritte.
 
@@ -157,7 +157,7 @@ Javadocs werden in Maven Central veröffentlicht.
      </dependency>
    ```
 
-   Um zum Vorabversions-SDK zu wechseln, ändern Sie einfach die Abhängigkeit von `com.adobe.aem:aem-sdk-api` nach `com.adobe.aem:aem-prerelease-sdk-api` wie unten angegeben:
+   Um zum Vorabversions-SDK zu wechseln, ändern Sie einfach die Abhängigkeit von `com.adobe.aem:aem-sdk-api` zu `com.adobe.aem:aem-prerelease-sdk-api` wie unten beschrieben:
 
    ```
    <dependencyManagement>
@@ -189,7 +189,7 @@ Das [Build Analyzer Maven-Plug-in der AEM CS-SDK der Version 1.0 und höher](htt
 
 ## Schulung von Benutzenden  {#train-users}
 
-Nachdem Sie die neuen Funktionen im Vorversionskanal getestet und entschieden haben, sie in Ihren Projekten zu verwenden, müssen Sie Ihre Benutzer schulen.
+Nachdem Sie die neuen Funktionen im Vorabversionskanal getestet und entschieden haben, sie in Ihren Projekten zu nutzen, müssen Sie Ihre Benutzerinnen und Benutzer schulen.
 
 Adobe Experience League bietet viele Ressourcen zum Kennenlernen von AEMaaCS an.
 

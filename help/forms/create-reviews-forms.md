@@ -6,11 +6,11 @@ exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
 source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 77%
+ht-degree: 85%
 
 ---
 
-# Erstellen und Verwalten von Überprüfung von Formularen{#creating-and-managing-reviews-to-forms}
+# Erstellen und Verwalten von Überprüfungen in Formularen{#creating-and-managing-reviews-to-forms}
 
 <span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird ein älterer Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
 
@@ -33,7 +33,7 @@ Bei einer Überprüfung handelt es sich um einen Mechanismus, mit dem ein oder m
    * **Titel**: obligatorisch, kann alphanumerische Zeichen, Bindestriche und Unterstriche enthalten.
    * **Beschreibung**: optional, Beschreibung des Zwecks/Inhalts der Überprüfung.
    * **Frist**: optional, das Datum, an dem die Überprüfung beendet sein soll. Wenn die Frist bereits abgelaufen ist, wird die Aufgabe als „überfällig“ angezeigt.
-   * **Name der Überprüfungsperson**: Es ist mindestens ein Name erforderlich. Verwenden Sie das Kombinationsfeld, um Überprüfer hinzuzufügen, indem Sie eine Namensliste mit allen entsprechenden Namen eingeben. Wählen Sie einen Namen aus und klicken Sie auf **Hinzufügen**. Im nächsten Abschnitt der **Überprüfer** zeigt die Namen aller validierungsverantwortlichen Benutzer an.
+   * **Name der Überprüfungsperson**: Es ist mindestens ein Name erforderlich. Verwenden Sie das Kombinationsfeld, um Überprüfungspersonen hinzuzufügen, indem Sie eine Namensliste mit allen übereinstimmenden Namen eingeben, einen Namen auswählen und auf **Hinzufügen** klicken. Im nächsten Abschnitt der **Überprüfer** zeigt die Namen aller validierungsverantwortlichen Benutzer an.
 
 1. Klicken Sie auf **Start**, um eine Überprüfung zu starten.
 
@@ -60,11 +60,11 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 >[!NOTE]
 >
 >* Nur laufende Überprüfungen können geändert werden.
->* Abgeschlossene Überprüfungen können nicht mehr geändert werden.
+>* Abgeschlossene Überprüfungen können nicht geändert werden.
 
 1. Gehen Sie zur Registerkarte „Formulare“ und wählen Sie ein Formular aus.
 
-1. Wenn in einem Formular eine Überprüfung ausgeführt wird und Sie der Initiator der Überprüfung sind, wird eine **Prüfung verwalten** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) in der Aktionsleiste angezeigt. Nur der Initiator der Überprüfung kann die Überprüfung verwalten (aktualisieren/beenden).
+1. Wenn für ein Formular eine Überprüfung im Gange ist und Sie die Person sind, die die Überprüfung initiiert hat, erscheint ein Symbol **Überprüfung verwalten** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) in der Aktionsleiste. Nur die Person, die die Überprüfung initiiert hat, kann die Überprüfung verwalten (aktualisieren/beenden).
 
    Klicken Sie auf das Symbol **Überprüfung verwalten** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 
@@ -84,10 +84,10 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 
 ### Aktionen beim Ändern einer Überprüfung {#actions-that-occur-when-a-review-is-modified}
 
-Dieser Abschnitt beschreibt, was bei **Aktualisierung/Beendigung einer Überprüfung** geschieht:
+Dieser Abschnitt beschreibt, was beim **Aktualisieren/Beenden einer Überprüfung** geschieht:
 
-1. Wenn die Überprüfungsbeschreibung geändert wird, wird die entsprechende Aufgabe der Überprüfenden und der initiierenden Person aktualisiert.
-1. Wenn der Überprüfungstermin geändert wird, wird die entsprechende Aufgabe der Überprüfenden mit dem neuen Datum aktualisiert.
+1. Wenn die Überprüfungsbeschreibung geändert wird, wird die entsprechende Aufgabe der Überprüfungspersonen und der initiierenden Person aktualisiert.
+1. Wenn der Überprüfungstermin geändert wird, wird die entsprechende Aufgabe der Überprüfungspersonen mit dem neuen Datum aktualisiert.
 
 1. Wenn ein Reviewer entfernt wird:
 

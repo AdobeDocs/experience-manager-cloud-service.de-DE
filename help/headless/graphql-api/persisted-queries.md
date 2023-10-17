@@ -1,12 +1,12 @@
 ---
-title: Persistierte GraphQL-Abfragen
-description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Client-Programme verbessert wird.
+title: Persistente GraphQL-Abfragen
+description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service persistieren, um die Leistung zu optimieren. Persistente Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Client-Programme verbessert wird.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '1680'
-ht-degree: 83%
+ht-degree: 99%
 
 ---
 
@@ -38,9 +38,9 @@ Um beispielsweise eine persistente Abfrage speziell für die WKND-Website-Konfig
 
 Wenn es beispielsweise eine bestimmte Abfrage namens `my-query` gibt, die ein `my-model`-Modell aus der Sites-Konfiguration `my-conf` verwendet:
 
-* Sie können eine Abfrage mit der `my-conf` und dann wird die Abfrage wie folgt gespeichert:
+* Sie können eine Abfrage unter Verwendung des spezifischen Endpunkts `my-conf` erstellen, und die Abfrage wird wie folgt gespeichert:
   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* Dieselbe Abfrage können Sie mit `global` -Endpunkt, dann wird die Abfrage jedoch wie folgt gespeichert:
+* Sie können die gleiche Abfrage mit dem Endpunkt `global` erstellen, aber dann wird die Abfrage wie folgt gespeichert:
   `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
@@ -196,7 +196,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 Dabei ist `PERSISTENT_PATH` ein gekürzter Pfad zum Speicherort der persistenten Abfrage.
 
-1. Beispiel: `wknd` ist der Konfigurationsname und `plain-article-query` ist der Name der persistenten Abfrage. So führen Sie die Abfrage aus:
+1. Zum Beispiel ist `wknd` der Konfigurationsname und `plain-article-query` der Name der persistierten Abfrage. So führen Sie die Abfrage aus:
 
    ```shell
    $ curl -X GET \
@@ -228,7 +228,7 @@ Die Struktur sieht wie folgt aus:
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-Die folgende Abfrage enthält beispielsweise eine Variable `activity` , um eine Liste nach einem Aktivitätswert zu filtern:
+Die folgende Abfrage enthält beispielsweise die Variable `activity`, um eine Liste nach einem Aktivitätswert zu filtern:
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -355,11 +355,11 @@ Um den Cache global zu verwalten, können Sie [die OSGi-Einstellungen](/help/imp
 
 >[!NOTE]
 >
->Für die Cache-Steuerung ist die OSGi-Konfiguration nur für Veröffentlichungsinstanzen geeignet. Die Konfiguration ist in Authoring-Instanzen zwar vorhanden, wird jedoch ignoriert.
+>Für die Cache-Steuerung ist die OSGi-Konfiguration nur für Publishing-Instanzen geeignet. Die Konfiguration ist in Authoring-Instanzen zwar vorhanden, wird jedoch ignoriert.
 
 >[!NOTE]
 >
->Die **Konfigurationen für beständige Abfragen** wird auch für [Konfiguration des Antwort-Codes der Abfrage](#configuring-query-response-code).
+>Die **Konfiguration des Dienstes für persistierte Abfragen** wird auch zur [Konfiguration des Abfrageantwort-Codes](#configuring-query-response-code) verwendet.
 
 Die standardmäßige OSGi-Konfiguration für Veröffentlichungsinstanzen:
 
@@ -376,29 +376,31 @@ Die standardmäßige OSGi-Konfiguration für Veröffentlichungsinstanzen:
 
 * und falls nicht verfügbar, verwendet die OSGi-Konfiguration die [Standardwerte für Veröffentlichungsinstanzen](#publish-instances).
 
-## Konfiguration des Antwort-Codes der Abfrage {#configuring-query-response-code}
+## Konfiguration des Abfrageantwort-Codes {#configuring-query-response-code}
 
-Standardmäßig wird die `PersistedQueryServlet` sendet eine `200` Antwort, wenn sie eine Abfrage ausführt, unabhängig vom tatsächlichen Ergebnis.
+Standardmäßig sendet der `PersistedQueryServlet` eine `200`-Antwort, wenn er eine Abfrage ausführt, unabhängig vom tatsächlichen Ergebnis.
 
-Sie können [Konfigurieren der OSGi-Einstellungen](/help/implementing/deploying/configuring-osgi.md) für die **Konfigurationen für beständige Abfragen** , um zu steuern, welcher Status-Code von der `/execute.json/persisted-query` -Endpunkt, wenn in der persistenten Abfrage ein Fehler auftritt.
+Sie können [die OSGi-Einstellungen](/help/implementing/deploying/configuring-osgi.md) für die **Konfiguration des Dienstes für persistierte Abfragen** konfigurieren, um zu steuern, welcher Status-Code vom `/execute.json/persisted-query`-Endpunkt zurückgegeben wird, wenn ein Fehler in der persistierten Abfrage auftritt.
 
 >[!NOTE]
 >
->Die **Konfigurationen für beständige Abfragen** wird auch für [Verwalten des Cache](#cache-osgi-configration).
+>Die **Konfiguration des Dienstes für persistierte Abfragen** wird auch für [Verwalten des Caches](#cache-osgi-configration) verwendet.
 
 Das Feld `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) kann nach Bedarf definiert werden:
 
-* `false` (Standardwert): Es spielt keine Rolle, ob die persistente Abfrage erfolgreich ist oder nicht. Die `/execute.json/persisted-query` gibt den Statuscode aus `200` und `Content-Type` zurückgegebene Kopfzeile ist `application/json`.
+* `false` (Standardwert):
+Es spielt keine Rolle, ob die persistierte Abfrage erfolgreich ist oder nicht. Die `/execute.json/persisted-query` gibt den Status-Code `200` zurück und der zurückgegebene Header `Content-Type` ist `application/json`.
 
-* `true`: Der Endpunkt gibt zurück. `400` oder `500` zuweisen, wenn bei der Ausführung der persistenten Abfrage irgendeine Form von Fehler vorliegt. Außerdem wird die zurückgegebene `Content-Type` is `application/graphql-response+json`.
+* `true`:
+Der Endpunkt gibt je nach Fall `400` oder `500` zurück, wenn bei der Ausführung der gespeicherten Abfrage ein Fehler auftritt. Der zurückgegebene `Content-Type` ist `application/graphql-response+json`.
 
   >[!NOTE]
   >
   >Weitere Informationen finden Sie unter https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
-## Codieren der Abfrage-URL zur Verwendung in einer Mobile App {#encoding-query-url}
+## Codieren der Abfrage-URL zur Verwendung in einer Mobile-App {#encoding-query-url}
 
-Für die Verwendung durch eine Anwendung werden alle Sonderzeichen verwendet, die beim Erstellen von Abfragevariablen verwendet werden (d. h. Semikolons (`;`), Gleichheitszeichen (`=`), Schrägstriche `/`) muss konvertiert werden, um die entsprechende UTF-8-Kodierung zu verwenden.
+Damit die Abfrage-URL von einer Applikation verwendet werden kann, müssen alle Sonderzeichen, die beim Erstellen von Abfragevariablen verwendet werden – d. h. Semikolons (`;`), Gleichheitszeichen (`=`), Schrägstriche (`/`) – konvertiert werden, sodass die entsprechende UTF-8-Codierung verwendet wird.
 
 Beispiel:
 
@@ -440,7 +442,7 @@ So erstellen Sie ein Paket:
 1. Erstellen Sie ein neues Paket durch Tippen auf **Paket erstellen**. Dadurch wird ein Dialogfeld zum Definieren des Pakets geöffnet.
 1. Geben Sie im Dialogfeld zur Paketdefinition unter **Allgemein** einen **Namen** wie „wknd-persistent-queries“ ein.
 1. Geben Sie eine Versionsnummer wie „1.0“ ein.
-1. Fügen Sie unter **Filter** einen neuen **Filter** hinzu. Wählen Sie über die Pfadsuche den Ordner `persistentQueries` unterhalb der Konfiguration aus. Beispiel: für die `wknd` Konfiguration, lautet der vollständige Pfad `/conf/wknd/settings/graphql/persistentQueries`.
+1. Fügen Sie unter **Filter** einen neuen **Filter** hinzu. Wählen Sie über die Pfadsuche den Ordner `persistentQueries` unterhalb der Konfiguration aus. Für die Konfiguration von `wknd` lautet der vollständige Pfad beispielsweise `/conf/wknd/settings/graphql/persistentQueries`.
 1. Tippen Sie auf **Speichern**, um die neue Paketdefinition zu speichern und das Dialogfeld zu schließen.
 1. Tippen Sie auf **Build** in der neu erstellten Package-Definition.
 

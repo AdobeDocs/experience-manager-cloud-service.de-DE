@@ -7,7 +7,7 @@ exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 52%
+ht-degree: 63%
 
 ---
 
@@ -27,7 +27,7 @@ Um sicherzustellen, dass der Rollout nicht gesperrt ist, können mögliche Defin
 
 Das Standardverhalten von Adobe Experience Manager (AEM) ist, dass veröffentlichte Inhalte nicht betroffen sind. Wenn also eine Seite veröffentlicht wurde, die manuell in der Live Copy-Verzweigung erstellt wurde, wird dieser Inhalt nach der Konfliktbehandlung und dem Rollout weiterhin veröffentlicht.
 
-Neben der Standardfunktion können auch benutzerdefinierte Konflikt-Handler hinzugefügt werden, um verschiedene Regeln zu implementieren. Diese können auch Veröffentlichungsaktionen als einzelner Prozess zulassen.
+Neben der Standardfunktion können auch benutzerdefinierte Konflikt-Handler hinzugefügt werden, um verschiedene Regeln zu implementieren. Diese können auch Veröffentlichungsaktionen als einzelnen Prozess zulassen.
 
 ### Beispiel-Szenario {#example-scenario}
 
@@ -66,7 +66,7 @@ AEM nutzt Konflikt-Handler zum Lösen von Seitenkonflikten, die beim Rollout von
 
 AEM bietet:
 
-* Die [Standard-Konflikt-Handler](#default-conflict-handler):
+* Der [standardmäßige Konflikt-Handler ist](#default-conflict-handler):
    * `ResourceNameRolloutConflictHandler`
 * Die Möglichkeit, einen [benutzerdefinierten Handler](#customized-handlers) zu implementieren
 * Der Service-Ranking-Mechanismus, mit dem Sie die Priorität jedes einzelnen Handlers festlegen können
@@ -104,7 +104,7 @@ Dieser Konflikt-Handler hat Vorrang vor dem Blueprint. Beispielsweise die Seite 
 
 ### Angepasste Handler {#customized-handlers}
 
-Mit benutzerdefinierten Konflikt-Handlern können Sie Ihre eigenen Regeln implementieren. Mit dem Service-Ranking-Mechanismus können Sie auch definieren, wie sie mit anderen Handlern interagieren.
+Mit benutzerdefinierten Konflikt-Handlern können Sie Ihre eigenen Regeln implementieren. Mit dem Mechanismus des Service-Rankings können Sie auch festlegen, wie sie mit anderen Handlern interagieren.
 
 Benutzerdefinierte Konflikt-Handler können:
 

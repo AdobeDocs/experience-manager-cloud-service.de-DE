@@ -8,7 +8,7 @@ exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '1009'
-ht-degree: 65%
+ht-degree: 91%
 
 ---
 
@@ -19,49 +19,49 @@ ht-degree: 65%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-Durch die Aktivierung der adaptiven Forms-Kernkomponenten in AEM Forms as a Cloud Service können Sie mit der Erstellung, Veröffentlichung und Bereitstellung von Kernkomponenten auf Basis von Adaptive Forms und Headless Forms beginnen, indem Sie Ihre AEM Forms-Cloud Service-Instanzen für mehrere Kanäle verwenden. Um adaptive Headless-Formulare verwenden zu können, müssen Sie die Kernkomponenten für adaptive Formulare in Ihrer Umgebung aktivieren.
+Durch die Aktivierung der adaptiven Forms-Kernkomponenten in AEM Forms as a Cloud Service können Sie mit der Erstellung, Veröffentlichung und Bereitstellung von Kernkomponenten auf Basis von Adaptive Forms und Headless Forms beginnen, indem Sie Ihre AEM Forms-Cloud Service-Instanzen für mehrere Kanäle verwenden. Sie benötigen eine Umgebung mit aktivierten Kernkomponenten für adaptive Formulare, um adaptive Headless-Formulare zu verwenden.
 
 ## Überlegungen
 
-* Wenn Sie ein neues as a Cloud Service AEM Forms-Programm erstellen, [Adaptive Forms-Kernkomponenten und Headless-Adaptive Forms sind bereits für Ihre Umgebung aktiviert](#are-adaptive-forms-core-components-enabled-for-my-environment).
+* Wenn Sie ein neues AEM Forms as a Cloud Service-Programm erstellen, sind die [Kernkomponenten von adaptiven Formularen und adaptiven Headless-Formularen bereits für Ihre Umgebung aktiviert](#are-adaptive-forms-core-components-enabled-for-my-environment).
 
-* Wenn Sie über ein älteres Forms as a Cloud Service-Programm verfügen, in dem die Kernkomponenten [nicht aktiviert sind](#enable-components), können Sie zu Ihrem AEM as a Cloud Service-Repository [Abhängigkeiten von Kernkomponenten für adaptive Formulare hinzufügen](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) und dieses in Ihren Cloud Service-Umgebungen nutzen, um adaptive Headless-Formulare zu aktivieren.
+* Wenn Sie ein älteres Forms as a Cloud Service-Programm haben, in dem Kernkomponenten [nicht aktiviert sind](#enable-components), können Sie [Abhängigkeiten von Kernkomponenten adaptiver Formulare zu Ihrem AEM as a Cloud Service-Repository hinzufügen](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) und das Repository in Ihren Cloud Service-Umgebungen bereitstellen, um adaptive Headless-Formulare zu aktivieren.
 
-* Wenn Ihre bestehende Cloud Service-Umgebung eine Option bietet, [Erstellen von auf Kernkomponenten basierenden adaptiven Forms](creating-adaptive-form-core-components.md), Adaptive Forms-Kernkomponenten und Headless-Adaptive Forms sind bereits für Ihre Umgebung aktiviert. Sie können auf Kernkomponenten basierende adaptive Forms als Headless-Formulare für Kanäle wie mobile, Web, native Apps und Dienste bereitstellen, für die eine Headless-Darstellung des adaptiven Forms erforderlich ist.
+* Wenn Ihre bestehende Cloud Service-Umgebung die Option zum [Erstellen von auf Kernkomponenten basierten adaptiven Formularen](creating-adaptive-form-core-components.md) bietet, sind Kernkomponenten für adaptive Formulare und adaptive Headless-Formulare bereits für Ihre Umgebung aktiviert und Sie können auf Kernkomponenten basierte adaptive Formulare als Headless-Formulare für Kanäle wie Mobile, Web, native Apps und Dienste bereitstellen, die eine Headless-Darstellung von adaptiven Formularen erfordern.
 
 
-## Aktivieren der adaptiven Forms-Kernkomponenten und des Headless-Adaptiven Forms {#enable-headless-forms}
+## Aktivieren der Kernkomponenten für adaptive Formulare und adaptive Headless-Formulare {#enable-headless-forms}
 
-Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um die adaptiven Forms-Kernkomponenten und die Headless-Adaptive Forms für eine as a Cloud Service AEM Forms-Umgebung zu aktivieren
+Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um die Kernkomponenten für adaptive Formulare und adaptive Headless-Formulare für eine AEM Forms as a Cloud Service-Umgebung zu aktivieren
 
 
 ![Kernkomponenten und Headless-adaptive Formulare aktivieren](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
-## 1. Klonen Sie Ihr AEM Forms as a Cloud Service Git-Repository {#clone-git-repository}
+## 1. Klonen Sie Ihr AEM Forms as a Cloud Service-Git-Repository {#clone-git-repository}
 
-1. Melden Sie sich bei [Cloud Manager](https://my.cloudmanager.adobe.com/) an und wählen Sie Ihr Unternehmen und das Programm aus.
+1. Melden Sie sich bei [Cloud Manager](https://my.cloudmanager.adobe.com/) an und wählen Sie Ihre Organisation und Ihr Programm aus.
 
-1. Navigieren Sie zur Karte **Pipelines** auf der Seite **Programmübersicht** und klicken Sie auf **Auf Repo-Info zugreifen**, um Ihr Git-Repository zu öffnen und zu verwalten. Die Seite enthält folgende Informationen:
+1. Navigieren Sie von Ihrer **Programmübersichtsseite** zur Karte **Pipelines** und klicken Sie auf die Schaltfläche **Zugriff auf Repo Info**, um auf Ihr Git-Repository zuzugreifen und es zu verwalten. Die Seite enthält die folgenden Informationen:
 
-   * Die URL zum Cloud Manager-Git-Repository.
-   * Anmeldeinformationen für das Git-Repository (Benutzername und Kennwort) Git-Benutzername.
+   * Die URL zum Git-Repository von Cloud Manager.
+   * Anmeldeinformationen des Git-Repositorys (Benutzername und Password), Git-Benutzername.
 
    Klicken Sie auf **Kennwort generieren**, um das Kennwort anzuzeigen oder zu generieren.
 
-1. Öffnen Sie das Terminal oder die Eingabeaufforderung auf Ihrem lokalen Computer und führen Sie folgenden Befehl aus:
+1. Öffnen Sie das Terminal oder eine Eingabeaufforderung auf Ihrem lokalen Computer und führen Sie den folgenden Befehl aus:
 
    ```Shell
    git clone [Git Repository URL]
    ```
 
-   Geben Sie die Anmeldeinformationen ein, wenn Sie dazu aufgefordert werden. Das Repository wird auf Ihrem lokalen Computer geklont.
+   Geben Sie bei Aufforderung die Anmeldeinformationen ein. Das Repository wird auf Ihrem lokalen Computer geklont.
 
 
-## 2. Fügen Sie Abhängigkeiten von Kernkomponenten für adaptive Formulare zu Ihrem Git-Repository hinzu {#add-adaptive-forms-core-components-dependencies}
+## 2. Hinzufügen von Abhängigkeiten von Kernkomponenten für adaptive Formulare zu Ihrem Git-Repository {#add-adaptive-forms-core-components-dependencies}
 
 1. Öffnen Sie Ihren Git-Repository-Ordner in einem einfachen Texteditor. Beispiel: VS Code.
-1. Öffnen Sie die Datei `[AEM Repository Folder]\pom.xml` zur Bearbeitung.
+1. Öffnen Sie die Datei `[AEM Repository Folder]\pom.xml`, um sie zu bearbeiten.
 1. Ersetzen Sie die Versionen der Komponenten `core.forms.components.version`, `core.forms.components.af.version` und `core.wcm.components.version` durch die in der [Dokumentation zu Kernkomponenten](https://github.com/adobe/aem-core-forms-components) angegebenen Versionen. Wenn die Komponente nicht vorhanden ist, fügen Sie diese Komponenten hinzu.
 
    ```XML
@@ -74,9 +74,9 @@ Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um die ad
    </properties>
    ```
 
-   ![Erwähnung der neuesten Version der Forms-Kernkomponenten](/help/forms/assets/latest-forms-component-version.png)
+   ![Erwähnung der neuesten Version der Kernkomponenten für adaptive Formulare](/help/forms/assets/latest-forms-component-version.png)
 
-1. Fügen Sie im Abschnitt Abhängigkeiten der Datei `[AEM Repository Folder]\pom.xml` folgende Abhängigkeiten hinzu und speichern Sie die Datei.
+1. Fügen Sie im Abschnitt „Abhängigkeiten“ der Datei `[AEM Repository Folder]\pom.xml` die folgenden Abhängigkeiten hinzu und speichern Sie die Datei.
 
    ```XML
        <!-- WCM Core Component Examples Dependencies -->
@@ -137,7 +137,7 @@ Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um die ad
    <!-- End of AEM Forms Core Component Dependencies -->
    ```
 
-1. Öffnen Sie die Datei `[AEM Repository Folder]/all/pom.xml`, um sie zu bearbeiten. Fügen Sie die folgenden Abhängigkeiten im Abschnitt `<embeddeds>` hinzu und speichern Sie die Datei.
+1. Öffnen Sie die Datei `[AEM Repository Folder]/all/pom.xml`, um sie zu bearbeiten. Fügen Sie die folgenden Abhängigkeiten in den Abschnitt `<embeddeds>` ein und speichern Sie die Datei.
 
    ```XML
    <!-- WCM Core Component Examples Dependencies -->
@@ -194,7 +194,7 @@ Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um die ad
    >
    >  Ersetzen Sie `${appId}` durch Ihre appId.
    >
-   >  Um Ihre `${appId}` zu finden, suchen Sie in der Datei `[AEM Repository Folder]/all/pom.xml` den Ausdruck `-packages/application/install`. Der Text vor dem Ausdruck `-packages/application/install` ist Ihre `${appId}`. Im folgenden Code ist zum Beispiel `myheadlessform` die `${appId}`.
+   >  Um Ihre `${appId}` zu finden, suchen Sie in der Datei `[AEM Repository Folder]/all/pom.xml` den Begriff `-packages/application/install`. Der Text vor dem Begriff `-packages/application/install` ist Ihre `${appId}`. Der folgende Code `myheadlessform` ist zum Beispiel `${appId}`.
    >
    >   ```
    >             <embedded>
@@ -205,7 +205,7 @@ Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um die ad
    >             </embedded>
    >   ```
 
-1. Fügen Sie folgende Abhängigkeiten im Abschnitt `<dependencies>` der Datei `[AEM Repository Folder]/all/pom.xml` hinzu und speichern Sie die Datei:
+1. Fügen Sie im Abschnitt `<dependencies>` der Datei `[AEM Repository Folder]/all/pom.xml` die folgenden Abhängigkeiten hinzu und speichern Sie die Datei:
 
    ```XML
            <!-- Other existing dependencies -->
@@ -281,7 +281,7 @@ Stellen Sie den aktualisierten Code in Ihren lokalen Entwicklungs- und Cloud Ser
 
 * [Erstellen und Bereitstellen von aktualisiertem Code in einer lokalen Entwicklungsumgebung (AEM as a Cloud Service SDK)](#core-components-on-aem-forms-local-sdk)
 
-* [Erstellen und Bereitstellen von aktualisiertem Code in einer as a Cloud Service AEM Forms-Umgebung](#core-components-on-aem-forms-cs)
+* [Erstellen und Bereitstellen von aktualisiertem Code in einer AEM Forms as a Cloud Service-Umgebung](#core-components-on-aem-forms-cs)
 
 ### Erstellen und Bereitstellen von aktualisiertem Code in einer lokalen Entwicklungsumgebung {#core-components-on-aem-forms-local-sdk}
 
@@ -299,13 +299,13 @@ Stellen Sie den aktualisierten Code in Ihren lokalen Entwicklungs- und Cloud Ser
 
    Nachdem das Paket erfolgreich erstellt wurde, finden Sie es unter [Git-Repository-Ordner]\all\target\[appid].all-[version].zip
 
-1. Verwenden Sie die [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) zur Bereitstellung der [AEM Archetyp-Projektordner]\all\target\[appid].all-[version].zip-Paket in der lokalen Entwicklungsumgebung.
+1. Verwenden Sie den [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de), um das Paket [AEM Archetyp-Projektordner]\all\target\[appid].all-[version].zip in der lokalen Entwicklungsumgebung bereitzustellen.
 
 
-### Erstellen und Bereitstellen von aktualisiertem Code in einer as a Cloud Service AEM Forms-Umgebung {#core-components-on-aem-forms-cs}
+### Erstellen und Bereitstellen von aktualisiertem Code in einer AEM Forms as a Cloud Service-Umgebung {#core-components-on-aem-forms-cs}
 
 1. Öffnen Sie das Terminal oder die Eingabeaufforderung.
-1. Navigieren Sie zu Ihrem `[AEM Repository Folder]` und führen Sie folgende Befehle in der angegebenen Reihenfolge aus
+1. Navigieren Sie zu Ihrem `[AEM Repository Folder]` und führen Sie die folgenden Befehle in der angegebenen Reihenfolge aus
 
    ```Shell
     git add pom.xml
@@ -315,35 +315,35 @@ Stellen Sie den aktualisierten Code in Ihren lokalen Entwicklungs- und Cloud Ser
     git push origin
    ```
 
-1. Nach der Übertragung der Dateien in das Git-Repository können Sie die [Pipeline ausführen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de).
+1. Nachdem die Dateien in das Git-Repository übertragen wurden, [führen Sie die Pipeline aus](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de).
 
-   Nach erfolgreicher Pipeline-Ausführung sind die Kernkomponenten für adaptive Formulare für die entsprechende Umgebung aktiviert. Außerdem werden eine Vorlage für adaptive Formulare (Kernkomponenten) und ein Canvas 3.0-Design zu Ihrer Forms as a Cloud Service-Umgebung hinzugefügt, mit denen Sie adaptive Formulare auf Grundlage der Kernkomponenten anpassen und erstellen können.
+   Nach erfolgreicher Ausführung der Pipeline sind die Kernkomponenten für adaptive Formulare für die entsprechende Umgebung aktiviert. Außerdem werden Ihrer Forms as a Cloud Service-Umgebung eine Vorlage für adaptive Formulare (Kernkomponenten) sowie ein Design für Canvas 3.0 hinzugefügt, was Ihnen Optionen zum Anpassen und Erstellen von Kernkomponenten auf Basis von adaptiven Formularen bietet.
 
 
 ## Häufig gestellte Fragen {#faq}
 
 ### Was sind Kernkomponenten? {#core-components}
 
-Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) sind eine Reihe standardisierter Web Content Management(WCM)-Komponenten für AEM, mit denen Sie die Entwicklungszeiten verkürzen und die Wartungskosten für Ihre Web-Seiten senken können.
+Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) sind eine Reihe von standardisierten Web Content Management(WCM)-Komponenten für AEM, die die Entwicklungszeit beschleunigen und die Wartungskosten Ihrer Websites reduzieren.
 
-### Welche Funktionen werden durch die Aktivierung der Kernkomponenten hinzugefügt? {#core-components-capabilities}
+### Welche Funktionen werden hinzugefügt, wenn Kernkomponenten aktiviert sind? {#core-components-capabilities}
 
-Nachdem Sie die Kernkomponenten der adaptiven Formulare für Ihre Umgebung aktiviert haben, werden eine leere Vorlage für adaptive Formulare und ein Canvas 3.0-Design zu Ihrer Umgebung hinzugefügt. Nachdem Sie die Kernkomponenten der adaptiven Formulare für Ihre Umgebung aktiviert haben, können Sie Folgendes tun:
+Wenn die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert sind, werden Ihrer Umgebung eine leere, auf Kernkomponenten basierende Vorlage für adaptive Formulare und ein Canvas 3.0-Design hinzugefügt. Nachdem Sie die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert haben, können Sie Folgendes tun:
 
-* [Erstellen Sie adaptive Formulare auf Grundlage der Kernkomponenten](/help/forms/creating-adaptive-form-core-components.md).
-* [Erstellen Sie Vorlagen für adaptive Formulare auf Grundlage der Kernkomponenten](/help/forms/template-editor.md).
-* [Erstellen Sie benutzerdefinierte Vorlagen-Designs für adaptive Formulare auf Grundlage der Kernkomponenten](/help/forms/using-themes-in-core-components.md).
-* [Stellen Sie JSON-Darstellungen adaptiver Formulare auf Grundlage der Kernkomponenten für Kanäle wie Mobile, Web, native Apps und Dienste bereit, die eine Headless-Darstellung des Formulars erfordern](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de).
+* [Kernkomponenten-basierte adaptive Formulare erstellen](/help/forms/creating-adaptive-form-core-components.md).
+* [Vorlagen für Kernkomponenten-basierte adaptive Formulare erstellen](/help/forms/template-editor.md).
+* [Benutzerdefinierte Designs für Kernkomponenten-basierte adaptive Formulare erstellen](/help/forms/using-themes-in-core-components.md).
+* [JSON-Darstellungen für Kernkomponenten-basierte adaptive Formulare in Kanälen wie Mobilgeräten, Web- und nativen Apps und Diensten bereitstellen, für die die Headless-Darstellung eines Formulars erforderlich ist](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de).
 
 ### Sind für meine Umgebung Kernkomponenten für adaptive Formulare aktiviert? {#enable-components}
 
-So finden Sie heraus, ob die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert sind:
+So prüfen Sie, ob die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert sind:
 
 1. [Klonen Sie Ihr AEM Forms as a Cloud Service-Repository](#1-clone-your-aem-forms-as-a-cloud-service-git-repository).
 
-1. Öffnen Sie die Datei `[AEM Repository Folder]/all/pom.xml` Ihres AEM Forms Cloud Service-Git-Repositorys.
+1. Öffnen Sie die Datei `[AEM Repository Folder]/all/pom.xml` Ihres AEM Forms as a Cloud Service-Git-Repositorys.
 
-1. Suchen Sie nach folgenden Abhängigkeiten:
+1. Suchen Sie nach den folgenden Abhängigkeiten:
 
    * core-forms-components-af-core
    * core-forms-components-core
@@ -352,6 +352,6 @@ So finden Sie heraus, ob die Kernkomponenten für adaptive Formulare für Ihre U
    * core-forms-components-examples-apps
    * core-forms-components-examples-content
 
-   ![Suchen Sie das Artefakt core-forms-components-af-core in all/pom.xml](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
+   ![Suchen Sie das Artefakt „core-forms-components-af-core“ in „all/pom.xml“.](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
    Wenn die Abhängigkeiten vorhanden sind, sind die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert.

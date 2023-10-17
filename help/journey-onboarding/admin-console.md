@@ -5,7 +5,7 @@ exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1104'
-ht-degree: 89%
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,7 @@ Die Adobe Admin Console ist ein zentraler Ort, um Ihre Adobe-Produktlizenzen und
 
 Um sich bei der Admin Console anzumelden, benötigen Sie eine Adobe ID. Eine Adobe ID ist ein Konto, das mit einer bestimmten E-Mail-Adresse verknüpft, die zum Anmelden und Zugreifen auf AEM as a Cloud Service oder Ihre Adobe-Lösungen erforderlich ist. Durch die Verwendung Ihrer Adobe ID sind alle Ihre Adobe-Pläne und -Produkte mit einem einzigen Konto verknüpft.
 
-Wenn Sie als Systemadministrator Ihr Team in der Admin Console einrichten, geben Sie die E-Mail-Adresse an, die als Adobe ID verwendet wird.
+Wenn Sie als System-Admin Ihr Team in der Admin Console einrichten, geben Sie die E-Mail-Adresse an, die als Adobe ID verwendet wird.
 
 Es gibt drei Arten von Adobe IDs:
 
@@ -58,7 +58,7 @@ Bevor Sie die Admin Console zum Verwalten von Benutzenden in Ihrem Team verwende
 
    ![Die Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
-1. Wenn Sie Zugriff auf mehrere Organisationen haben, stellen Sie sicher, dass Sie sich bei der richtigen Organisation angemeldet haben. Um Ihre Organisation zu ändern, klicken Sie oben rechts auf den Organisationsnamen und wählen Sie die gewünschte Organisation aus, auf die Sie Zugriff benötigen.
+1. Wenn Sie Zugriff auf mehrere Organisationen haben, stellen Sie sicher, dass Sie sich bei der richtigen Organisation angemeldet haben. Um Ihre Organisation zu ändern, klicken Sie oben rechts im Bildschirm auf den Organisationsnamen und wählen Sie die gewünschte Organisation aus, auf die Sie Zugriff benötigen.
 
    ![Ändern der Organisation](/help/journey-onboarding/assets/admin-console-orgswitch.png)
 

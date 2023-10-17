@@ -12,7 +12,7 @@ exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
 source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
 source-wordcount: '3493'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -197,7 +197,7 @@ Die folgenden Asset-Typen und -Funktionen werden derzeit nicht unterstützt:
 
   >[!IMPORTANT]
   >
-  >Ab dem 1. Mai 2023 sind UGC-Assets in Dynamic Media bis zu 60 Tage ab dem Datum des Uploads verfügbar. Nach 60 Tagen werden die Assets entfernt.
+  >Ab dem 1. Mai 2023 stehen UGC-Assets in Dynamic Media bis zu 60 Tage ab dem Datum des Uploads zur Verfügung. Nach 60 Tagen werden die Assets entfernt.
 
   >[!NOTE]
   >

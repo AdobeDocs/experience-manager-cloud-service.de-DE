@@ -5,13 +5,13 @@ exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '3648'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
 # Komponenten-Referenzhandbuch {#components-reference-guide}
 
-Komponenten bilden den Kern bei der Erstellung eines Erlebnisses in AEM. Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) erleichtern den Einstieg mit einem Toolset aus vorgefertigten, robusten Komponenten. Die [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) führt den Entwickler durch, wie diese Tools verwendet werden und wie benutzerdefinierte Komponenten zum Erstellen einer AEM-Site erstellt werden.
+Komponenten bilden den Kern bei der Erstellung eines Erlebnisses in AEM. Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) erleichtern den Einstieg mit einem Toolset aus vorgefertigten, robusten Komponenten. Das [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) führt Entwicklerinnen und Entwickler durch die Verwendung dieser Tools und das Erstellen benutzerdefinierter Komponenten, um eine neue AEM-Site zu erstellen.
 
 >[!TIP]
 >
@@ -55,7 +55,7 @@ Dies bedeutet, dass Sie nur die erforderlichen Unterschiede neu definieren müss
 
 ### Inhaltslogik und Rendering-Markup  {#content-logic-and-rendering-markup}
 
-Ihre Komponente wird mit [HTML](https://www.w3schools.com/htmL/html_intro.asp). Ihre Komponente muss den HTML-Code definieren, der erforderlich ist, um den erforderlichen Inhalt zu übernehmen und anschließend in der Autoren- und Veröffentlichungsumgebung nach Bedarf zu rendern.
+Ihre Komponente wird mit [HTML](https://www.w3schools.com/htmL/html_intro.asp) gerendert. Ihre Komponente muss den HTML-Code definieren, der notwendig ist, um den erforderlichen Inhalt zu übernehmen und anschließend in der Authoring- und Publishing-Umgebung nach Bedarf zu rendern.
 
 Es empfiehlt sich, den für Markup und Rendering zuständigen Code getrennt von dem Code zu halten, der die Logik zur Auswahl des Komponenteninhalts enthält.
 
@@ -122,12 +122,12 @@ Das Symbol oder die Abkürzung für die Komponente wird mit JCR-Eigenschaften de
 1. `abbreviation` – Zeichenfolgeneigenschaft, die die Abkürzung des Komponentennamens im Komponenten-Browser anpasst.
    * Die Abkürzung sollte auf zwei Zeichen beschränkt sein.
    * Bei einer leeren Zeichenfolge wird die Abkürzung aus den ersten beiden Buchstaben der Eigenschaft `jcr:title` gebildet.
-      * Beispiel: &quot;Im&quot;für &quot;Bild&quot;
-      * Der lokalisierte Titel wird verwendet, um die Abkürzung zu erstellen.
+      * Beispiel: „Gr“ für „Grafik“
+      * Zum Erstellen der Abkürzung wird der lokalisierte Titel verwendet.
    * Die Abkürzung wird nur übersetzt, wenn die Komponente die Eigenschaft `abbreviation_commentI18n` aufweist, die dann als Anweisung für eine Übersetzung genutzt wird.
 1. `cq:icon.png` oder `cq:icon.svg` – Symbol für diese Komponente, das im Komponenten-Browser angezeigt wird.
    * Symbole von Standardkomponenten haben eine Größe von 20 x 20 Pixeln.
-      * Größere Symbole werden clientseitig herunterskaliert.
+      * Größere Symbole werden (Client-seitig) herunterskaliert.
    * Die empfohlene Farbe ist rgb(112, 112, 112) > #707070.
    * Der Hintergrund von Symbolen von Standardkomponenten ist transparent.
    * Es werden nur `.png`- und `.svg`-Dateien unterstützt.
@@ -173,7 +173,7 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
 | `cq:editConfig` | `cq:EditConfig` | Dadurch wird die [Bearbeitungskonfiguration der Komponente](#edit-behavior) definiert. |
 | `cq:htmlTag` | `nt:unstructured` | Dies gibt zusätzliche Tag-Attribute zurück, die zum umgebenden HTML-Tag hinzugefügt werden. Ermöglicht das Hinzufügen von Attributen zu den automatisch generierten div-Tags. |
 | `cq:noDecoration` | `Boolean` | Bei „true“ wird die Komponente nicht mit automatisch erstellten div- und CSS-Klassen gerendert. |
-| `cq:template` | `nt:unstructured` | Wenn dieser Knoten gefunden wird, wird er als Inhaltsvorlage verwendet, wenn die Komponente vom Komponenten-Browser hinzugefügt wird. |
+| `cq:template` | `nt:unstructured` | Wenn vorhanden, wird dieser Knoten als Inhaltsvorlage genutzt, wenn die Komponente vom Komponenten-Browser hinzugefügt wird. |
 | `jcr:created` | `Date` | Dies ist das Erstellungsdatum der Komponente. |
 | `jcr:description` | `String` | Dies ist die Beschreibung der Komponente. |
 | `jcr:title` | `String` | Dies ist der Titel der Komponente. |
@@ -223,7 +223,7 @@ In diesem Dialogfeld werden einzelne Felder definiert:
 
 Design-Dialogfelder ähneln den Dialogfeldern, die zum Bearbeiten und Konfigurieren von Inhalten genutzt werden. Sie stellen die Oberfläche für Vorlagenautoren bereit, um Design-Details für diese Komponente auf einer Seitenvorlage zu konfigurieren und bereitzustellen. Seitenvorlagen werden dann von den Inhaltsautoren verwendet, um Inhaltsseiten zu erstellen. Weitere Informationen zum Erstellen von Vorlagen finden Sie in der [Vorlagendokumentation](/help/sites-cloud/authoring/features/templates.md).
 
-[Design-Dialoge werden beim Bearbeiten einer Seitenvorlage verwendet](/help/sites-cloud/authoring/features/templates.md), obwohl sie nicht für alle Komponenten benötigt werden. Beispiel: die **Titel** und **Bildkomponenten** beide über Designdialogfelder verfügen, während die **Social-Media-Sharing-Komponente** nicht.
+[Design-Dialoge werden beim Bearbeiten einer Seitenvorlage verwendet](/help/sites-cloud/authoring/features/templates.md), obwohl sie nicht für alle Komponenten benötigt werden. Zum Beispiel verfügen die **Titel**- und **Bildkomponente** beide über Design-Dialoge, während die **Komponente für Freigabe in Social Media** keine besitzt.
 
 ### Coral- und Granite-Benutzeroberfläche {#coral-and-granite}
 
@@ -276,7 +276,7 @@ Nachdem Sie eine Komponente erstellt haben, müssen Sie sie aktivieren, um sie z
 
 ### Hinzufügen einer Komponente zur Vorlage {#adding-your-component-to-the-template}
 
-Nachdem eine Komponente definiert wurde, muss sie zur Verwendung verfügbar gemacht werden. Um eine Komponente für die Verwendung in einer Vorlage verfügbar zu machen, müssen Sie die Komponente in der Richtlinie des Layout-Containers der Vorlage aktivieren.
+Nachdem eine Komponente definiert wurde, muss sie zur Verwendung bereitgestellt werden. Um eine Komponente für die Verwendung in einer Vorlage verfügbar zu machen, müssen Sie die Komponente in der Richtlinie des Layout-Containers der Vorlage aktivieren.
 
 Weitere Informationen zum Erstellen von Vorlagen finden Sie in der [Vorlagendokumentation](/help/sites-cloud/authoring/features/templates.md).
 
@@ -321,7 +321,7 @@ In AEM sind viele Konfigurationen vorhanden. Sie können mit dem Abfrage-Tool in
 
 Komponenten müssen immer HTML-Inhalte wiedergeben, die für den Autor sichtbar sind, auch wenn die Komponente keinen Inhalt hat. Andernfalls könnte sie visuell aus der Benutzeroberfläche des Editors verschwinden, sodass sie zwar technisch vorhanden, aber auf der Seite und im Editor unsichtbar ist. In einem solchen Fall sind die Autoren nicht in der Lage, die leere Komponente auszuwählen und mit ihr zu interagieren.
 
-Aus diesem Grund sollten Komponenten einen Platzhalter rendern, solange sie keine sichtbare Ausgabe rendern, wenn die Seite im Seiteneditor gerendert wird (wenn der WCM-Modus aktiviert ist) `edit` oder `preview`).
+Aus diesem Grund sollten Komponenten einen Platzhalter darstellen, solange sie beim Rendern der Seite im Seiteneditor (wenn der WCM-Modus `edit` oder `preview` ist) keine sichtbare Ausgabe erzeugen.
 Das typische HTML-Markup für einen Platzhalter sieht wie folgt aus:
 
 ```HTML
@@ -383,7 +383,7 @@ Die folgende Konfiguration aktiviert die Bearbeitung der Komponente im Kontext u
 
 ### Handhabung von Feldereignissen – cq:listeners {#cq-listeners}
 
-Die Methode zur Verarbeitung von Ereignissen in Dialogfeldern erfolgt mit Listenern in einer benutzerdefinierten [Client-Bibliothek](/help/implementing/developing/introduction/clientlibs.md).
+Die Methode zur Handhabung von Ereignissen in Dialogfeldern wird jetzt mit Listenern in einer benutzerdefinierten [Client-Bibliothek](/help/implementing/developing/introduction/clientlibs.md) ausgeführt.
 
 Um Logik in Ihr Feld zu injizieren, sollten Sie Folgendes beachten:
 
@@ -416,7 +416,7 @@ Der Knoten `cq:listeners` (Knotentyp `cq:EditListenersConfig`) legt fest, was ge
 >* `aftermove`
 >* `aftercopy`
 
-Der Ereignis-Handler kann mit einer angepassten Implementierung implementiert werden. Beispiel: (wobei `project.customerAction` ist eine statische Methode):
+Der Ereignis-Handler kann mit einer angepassten Implementierung implementiert werden. Zum Beispiel (hier ist `project.customerAction` eine statische Methode):
 
 `afteredit = "project.customerAction"`
 
@@ -469,7 +469,7 @@ Sie müssen lediglich eine `README.md`-Datei in der Komponentenstruktur platzier
 
 ![README.md in der Komponentenstruktur](assets/components-documentation.png)
 
-Dieses Markdown wird dann im [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console.md).
+Dieser Markdown wird dann in der [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console.md) angezeigt.
 
 ![README.md sichtbar in der Komponentenkonsole](assets/components-documentation-console.png)
 

@@ -1,17 +1,17 @@
 ---
 title: SPA-Seitenkomponente
-description: In einer SPA stellt die Seitenkomponente die HTML-Elemente ihrer untergeordneten Komponenten nicht bereit, sondern delegiert sie stattdessen an das SPA Framework. In diesem Dokument wird erläutert, warum die Seitenkomponente einer SPA dadurch besonders ist.
+description: In einer SPA stellt die Seitenkomponente die HTML-Elemente ihrer untergeordneten Komponenten nicht bereit, sondern delegiert sie stattdessen an das SPA-Framework. In diesem Dokument wird erläutert, warum die Seitenkomponente einer SPA dadurch einzigartig wird.
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '602'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # SPA-Seitenkomponente {#spa-page-component}
 
-Die Seitenkomponente für eine SPA stellt die HTML-Elemente ihrer untergeordneten Komponenten nicht über eine JSP- oder HTL-Datei und Ressourcenobjekte bereit. Dieser Vorgang wird an das SPA-Framework delegiert. Die Darstellung der untergeordneten Komponenten wird als JSON-Datenstruktur abgerufen (d. h. als Modell). Die SPA-Komponenten werden dann gemäß dem angegebenen JSON-Modell zur Seite hinzugefügt. Somit unterscheidet sich die anfängliche Textzusammensetzung der Seitenkomponente von den im Vorab gerenderten HTML-Entsprechungen.
+Die Seitenkomponente für eine SPA stellt die HTML-Elemente ihrer untergeordneten Komponenten nicht über die JSP- oder HTL-Datei und Ressourcenobjekte bereit. Dieser Vorgang wird an das SPA-Framework delegiert. Die Darstellung der untergeordneten Komponenten wird als JSON-Datenstruktur (d. h. das Modell) abgerufen. Die SPA-Komponenten werden dann gemäß dem angegebenen JSON-Modell zur Seite hinzugefügt. Somit unterscheidet sich die anfängliche Textzusammensetzung der Seitenkomponente von den im Vorab gerenderten HTML-Entsprechungen.
 
 ## Seitenmodellverwaltung {#page-model-management}
 

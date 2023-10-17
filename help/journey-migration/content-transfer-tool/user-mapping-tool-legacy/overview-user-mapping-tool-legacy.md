@@ -7,7 +7,7 @@ hidefromtoc: true
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 28%
 
 >[!INFO]
 >
->Diese Dokumentation bezieht sich auf eine veraltete Version des Tools. Weitere Informationen zur neuesten Version finden Sie unter [Benutzerzuordnung und Hauptmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>Diese Dokumentation bezieht sich auf eine veraltete Version des Tools. Weitere Informationen zur neuesten Version finden Sie unter [Benutzerzuordnung und Prinzipalmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 <!-- Alexandru: drafting this for now
 
@@ -32,13 +32,13 @@ NOTE: "LEGACY" for user mapping includes everything before (that is, not includi
 
 ## Einführung {#introduction}
 
-Im Rahmen der Umstellung auf Adobe Experience Manager (AEM) as a Cloud Service müssen Sie Benutzer und Gruppen von Ihrem bestehenden AEM auf AEM as a Cloud Service verschieben. Diese Migration wird vom Content Transfer Tool durchgeführt.
+Im Rahmen der Übergangs zu Adobe Experience Manager (AEM) as a Cloud Service müssen Sie Benutzende und Gruppen aus Ihrem vorhandenen AEM-System nach AEM as a Cloud Service übertragen. Diese Migration erfolgt über das Content Transfer Tool.
 
-Eine wichtige Änderung an AEM as a Cloud Service ist die vollständig integrierte Verwendung von Adobe IDs für den Zugriff auf die Autorenebene. Diese Integration erfordert die Verwendung der [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) für die Verwaltung von Benutzern und Benutzergruppen. Die Benutzerprofilinformationen werden im Adobe Identity Management System (IMS) zentralisiert, das Single Sign-On für alle Adobe Cloud-Anwendungen bietet. Weitere Informationen finden Sie unter [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=en#identity-management). Aufgrund dieser Änderung müssen bestehende Benutzer und Gruppen ihren IMS-IDs zugeordnet werden, um doppelte Benutzer und Gruppen in der Autoreninstanz des Cloud Service zu vermeiden.
+Eine wichtige Änderung an AEM as a Cloud Service ist die vollständig integrierte Verwendung von Adobe IDs für den Zugriff auf die Autorenebene. Diese Integration setzt voraus, dass die [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) zum Verwalten von Benutzenden und Benutzergruppen verwendet wird. Die Benutzerprofilinformationen sind im Adobe Identity Management System (IMS) zentralisiert, das Single Sign-on über alle Adobe-Cloud-Anwendungen hinweg bereitstellt. Weitere Informationen finden Sie unter [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=de#identity-management). Aufgrund dieser Änderung müssen vorhandene Benutzende und Gruppen ihren IMS-IDs zugeordnet werden, um doppelte Benutzende und Gruppen in der Authoring-Instanz in Cloud Service zu vermeiden.
 
-## User Mapping Tool {#mapping-tool}
+## Tool für die Benutzerzuordnung {#mapping-tool}
 
-Das Content Transfer Tool (ohne Benutzerzuordnung) migriert alle Benutzer und Gruppen, die mit dem migrierten Inhalt verknüpft sind. Das Tool zur Benutzerzuordnung ist Teil des Content Transfer Tool. Der einzige Zweck besteht darin, die Benutzer so zu bearbeiten, dass sie von IMS, der von AEM as a Cloud Service verwendeten Single Sign-On-Funktion, korrekt erkannt werden. Nachdem diese Änderungen vorgenommen wurden, migriert das Content Transfer Tool die Benutzer und Gruppen des angegebenen Inhalts wie gewohnt.
+Das Content Transfer Tool (ohne Benutzerzuordnung) migriert alle Benutzenden und Gruppen, die mit den migrierten Inhalten verknüpft sind. Das Tool für die Benutzerzuordnung ist Teil des Content Transfer Tools. Es dient einzig dazu, die Benutzenden und Gruppen so zu bearbeiten, dass sie von IMS, der von AEM as a Cloud Service verwendeten Single-Sign-on-Funktion, korrekt erkannt werden können. Sobald diese Änderungen vorgenommen wurden, migriert das Content Transfer Tool die mit dem angegebenen Inhalt verknüpften Benutzenden und Gruppen wie gewohnt.
 
 ### Wie geht es weiter {#whats-next}
 

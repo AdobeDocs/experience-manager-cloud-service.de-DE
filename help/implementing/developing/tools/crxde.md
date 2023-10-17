@@ -5,7 +5,7 @@ exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1685'
-ht-degree: 85%
+ht-degree: 96%
 
 ---
 
@@ -48,19 +48,19 @@ Das Knotenpfad-Widget zeigt den Pfad zum aktuell ausgewählten Knoten an.
 
 Sie können es auch verwenden, um zu einem Knoten zu springen, indem Sie den Pfad von Hand eingeben oder ihn von woanders einfügen und die Eingabetaste drücken.
 
-Es bietet auch Unterstützung für die Suche nach Knoten mit bestimmtem Knotennamen. Geben Sie den Namen des Knotens, den Sie suchen möchten, ein, und warten Sie (oder wählen Sie das Suchsymbol auf der rechten Seite aus). Wenn ein bestimmter Knoten in den Explorer geladen wird, wird die Liste angezeigt. Sie können den Pfad auswählen und die Eingabetaste drücken, um zu ihm zu navigieren. Beachten Sie, dass dies nur für die Knoten funktioniert, die derzeit im CRXDE-Client-Programm im Browser geladen sind. Wenn Sie das gesamte Repository durchsuchen möchten, verwenden Sie **Tools** > **Abfrage**.
+Es bietet auch Unterstützung für die Suche nach Knoten mit bestimmtem Knotennamen. Geben Sie den Namen des Knotens, den Sie suchen möchten, ein, und warten Sie (oder wählen Sie das Suchsymbol auf der rechten Seite aus). Wenn ein oder mehrere bestimmte Knoten in das Explorer-Fenster geladen werden, wird die Liste angezeigt, in der Sie einen Pfad auswählen und die Eingabetaste drücken können, um dorthin zu navigieren. Beachten Sie, dass dies nur für die Knoten funktioniert, die derzeit im CRXDE-Client-Programm im Browser geladen sind. Wenn Sie das gesamte Repository durchsuchen möchten, verwenden Sie **Tools** > **Abfrage**.
 
 ### Explorer-Fenster {#explorer-pane}
 
 Das **Explorer-Fenster** zeigt eine Baumstruktur aller Knoten im Repository an.
 
-Klicken Sie auf einen Knoten, um seine Eigenschaften auf der Registerkarte **Eigenschaften** anzuzeigen. Nachdem Sie auf einen Knoten geklickt haben, können Sie eine Aktion in der Symbolleiste auswählen. Klicken Sie erneut auf den Knoten , um ihn umzubenennen.
+Klicken Sie auf einen Knoten, um seine Eigenschaften auf der Registerkarte **Eigenschaften** anzuzeigen. Nachdem Sie auf einen Knoten geklickt haben, können Sie eine Aktion in der Symbolleiste auswählen. Klicken Sie erneut auf den Knoten, um ihn umzubenennen.
 
 Baumstrukturnavigationsfilter (Fernglassymbol): ermöglicht es Ihnen, die Knoten im Repository zu filtern, deren Name den Eingabetext enthält. Gilt nur für Knoten, die lokal geladen wurden.
 
 ### Bearbeitungsfenster {#edit-pane}
 
-Die **Bedienfeld bearbeiten** Sie können den Inhalt der aktuell ausgewählten Datei im Repository anzeigen. Jede geöffnete Datei wird als eigene Registerkarte im Bereich dargestellt.
+Im **Bearbeitungsfenster** können Sie den Inhalt der aktuell im Repository ausgewählten Datei anzeigen. Jede geöffnete Datei wird in dem Fenster als eigene Registerkarte dargestellt.
 
 Auf der **Startseite** können Sie nach Inhalten und/oder Dokumentationen suchen und auf die Entwicklerdokumentation und Unterstützung von Adobe zugreifen.
 
@@ -109,7 +109,7 @@ Mit der Schaltfläche **Aktualisieren** wird die aktuelle Auswahl aktualisiert. 
 
 ### Schaltfläche „Alle speichern“ {#save-all-button}
 
-Mit der Schaltfläche **Alle speichern** werden alle von Ihnen vorgenommenen Änderungen gespeichert. Bis Sie das Speichern auswählen, sind die Änderungen temporär und gehen beim Beenden der Konsole verloren.
+Mit der Schaltfläche **Alle speichern** werden alle von Ihnen vorgenommenen Änderungen gespeichert. Solange Sie nicht speichern, sind die Änderungen nur vorübergehend und gehen verloren, wenn Sie die Konsole verlassen.
 
 * **Wiederherstellen**: Verwirft alle Änderungen, die Sie seit dem letzten Speichervorgang am ausgewählten Knoten vorgenommen haben, lädt dann den aktuellen Status des Repositorys für den ausgewählten Knoten erneut.
 * **Alle wiederherstellen**: Verwirft alle Änderungen, die Sie seit dem letzten Speichervorgang im gesamten Repository vorgenommen haben, lädt dann den aktuellen Status des Repositorys erneut.
@@ -192,7 +192,7 @@ Jetzt können Sie den Knoten an Ihre Anforderungen anpassen, indem Sie die Eigen
 >
 Die meisten Bearbeitungsvorgänge, einschließlich **Knoten erstellen**, behalten alle Änderungen im Speicher und speichern sie erst beim Speichern im Repository (über die [**Schaltfläche „Alle speichern“**](#save-all-button)). Einige Vorgänge wie das Verschieben werden jedoch automatisch beibehalten.
 >
-Die Überprüfung, ob der neu erstellte Knoten durch den Knotentyp des übergeordneten Knotens zugelassen ist, wird auch vom Repository beim Speichern von Änderungen durchgeführt. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (Sie können beispielsweise keine `nt:unstructured` Knoten als untergeordnetes Element von `nt:folder` Knoten).
+Die Überprüfung, ob der neu erstellte Knoten durch den Knotentyp des übergeordneten Knotens zugelassen ist, wird auch vom Repository beim Speichern von Änderungen durchgeführt. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (Sie können z. B. keinen `nt:unstructured`-Knoten als untergeordneten Knoten eines `nt:folder`-Knotens erstellen).
 
 ## Erstellen einer Eigenschaft {#creating-a-property}
 
@@ -223,10 +223,10 @@ Mit CRXDE Lite können Sie Knotentypdefinitionen in [CND-Notation (Compact Names
 Exportieren einer Knotentypdefinition in CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. Wählen Sie den gewünschten Knoten aus.
+1. Wählen Sie Ihren gewünschten Knoten aus.
 1. Wählen Sie **Tools** und dann **Knotentyp exportieren** aus.
-1. Die Definition wird in der CND-Notation in einer neuen Registerkarte in Ihrem Browser angezeigt.
-1. Speichern Sie die Informationen bei Bedarf.
+1. Die Definition wird in CND-Notation auf einer neuen Registerkarte in Ihrem Browser angezeigt.
+1. Speichern Sie die Informationen (falls erforderlich).
 
 So importieren Sie eine Knotentypdefinition:
 
@@ -234,7 +234,7 @@ So importieren Sie eine Knotentypdefinition:
 1. Wählen Sie **Tools** und dann **Knotentyp importieren** aus.
 1. Im [**Bearbeitungsfenster**](#edit-pane) wird eine neue Registerkarte mit der Beschriftung **Knotentypen importieren** geöffnet.
 1. Geben Sie die CND-Notation für die Definition in das Textfeld der Registerkarte **Knotentyp importieren** ein.
-1. Überprüfen **Aktualisierung zulassen** , wenn Sie eine vorhandene Definition aktualisieren.
+1. Aktivieren Sie **Aktualisierung zulassen**, wenn Sie eine vorhandene Definition aktualisieren.
 1. Wählen Sie **Importieren**.
 
 ## Protokollierung {#logging}
@@ -243,7 +243,7 @@ Mit CRXDE Lite können Sie die Datei `error.log` anzeigen, die sich im Dateisyst
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
 1. Wählen Sie im Dropdown-Menü auf der rechten Seite der [**Registerkarte „Konsole“**](#console-tab) unten im Fenster die Option **Serverprotokolle** aus.
-1. Klicken Sie auf **Anhalten** -Symbol, um die Nachrichten anzuzeigen.
+1. Klicken Sie auf das **Stopp-Symbol**, um die Nachrichten anzuzeigen.
 
 Sie haben folgende Möglichkeiten:
 

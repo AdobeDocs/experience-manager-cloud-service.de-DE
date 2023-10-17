@@ -5,7 +5,7 @@ exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '2811'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -211,7 +211,7 @@ AEM Forms as a Cloud Service bietet eine Docker-basierte SDK-Umgebung zur einfac
 
 1. Öffnen Sie „sdk.bat“ oder „sdk.sh“ zur Bearbeitung. Legen Sie AEM_HOME auf die lokale AEM-Autoreninstallation fest. Beispiel: C:\aem\author\.
 
-1. Öffnen Sie die Eingabeaufforderung und navigieren Sie zum Ordner `aem-forms-addon-native-<version>`.
+1. Öffnen Sie eine Eingabeaufforderung und navigieren Sie zum Ordner `aem-forms-addon-native-<version>`.
 
 1. Stellen Sie sicher, dass Ihre lokale AEM-Autoreninstanz ausgeführt wird. Führen Sie den folgenden Befehl aus, um das SDK zu starten:
 
@@ -329,11 +329,11 @@ Führen Sie folgende Schritte aus, um den Dispatcher-Cache für Experience Manag
 
 Ihre lokale Entwicklungsumgebung ist bereit.
 
-## Aktivieren der adaptiven Forms-Kernkomponenten in der as a Cloud Service und lokalen Entwicklungsumgebung von AEM Forms
+## Aktivieren der Kernkomponenten für adaptive Formulare in AEM Forms as a Cloud Service und lokaler Entwicklungsumgebung
 
-Durch die Aktivierung der adaptiven Forms-Kernkomponenten in AEM Forms as a Cloud Service können Sie mit der Erstellung, Veröffentlichung und Bereitstellung von Kernkomponenten auf Basis von Adaptive Forms und Headless Forms beginnen, indem Sie Ihre AEM Forms-Cloud Service-Instanzen für mehrere Kanäle verwenden. Um adaptive Headless-Formulare verwenden zu können, müssen Sie die Kernkomponenten für adaptive Formulare in Ihrer Umgebung aktivieren.
+Durch die Aktivierung der adaptiven Forms-Kernkomponenten in AEM Forms as a Cloud Service können Sie mit der Erstellung, Veröffentlichung und Bereitstellung von Kernkomponenten auf Basis von Adaptive Forms und Headless Forms beginnen, indem Sie Ihre AEM Forms-Cloud Service-Instanzen für mehrere Kanäle verwenden. Sie benötigen eine Umgebung mit aktivierten Kernkomponenten für adaptive Formulare, um adaptive Headless-Formulare zu verwenden.
 
-Anweisungen finden Sie unter [Aktivieren der adaptiven Forms-Kernkomponenten in der as a Cloud Service und lokalen Entwicklungsumgebung von AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
+Anweisungen finden Sie unter [Aktivieren der Kernkomponenten für adaptive Formulare in AEM Forms as a Cloud Service und lokaler Entwicklungsumgebung](/help/forms/enable-adaptive-forms-core-components.md)
 
 
 ## Upgrade Ihrer lokalen Entwicklungsumgebung {#upgrade-your-local-development-environment}

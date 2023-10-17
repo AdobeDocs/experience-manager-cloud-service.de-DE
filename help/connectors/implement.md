@@ -5,7 +5,7 @@ exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
 workflow-type: tm+mt
 source-wordcount: '980'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ AEM ist eine hochmoderne Web-Experience-Management-Lösung und bietet viele pote
 * Konfigurieren und Rendern einer benutzerdefinierten Komponente der Benutzeroberfläche. Beispielsweise können Sie einem Autor gestatten, eine Videokomponente per Drag-and-Drop zu verschieben und ein bestimmtes Video für die Wiedergabe auf der Live-Site zu konfigurieren.
 * Aktionen für ein Asset mit einem Partner-Service. Senden eines Assets an eine Videoplattform, wenn eine Seite veröffentlicht wird.
 * Analysieren einer Site, Seite oder eines Assets in der AEM Admin Console. So können Sie beispielsweise SEO-Empfehlungen für eine vorhandene oder unveröffentlichte Seite abgeben.
-* Zugriff auf Benutzerdaten auf Seitenebene, die von einem externen Service verwaltet werden. Verwenden Sie beispielsweise demografische Informationen, um das Site-Erlebnis zu personalisieren. Lesen Sie mehr über ContextHub, ein Framework zum Speichern, Bearbeiten und Präsentieren von Kontextdaten.
+* Zugriff auf Benutzerdaten auf Seitenebene, die von einem externen Service verwaltet werden. Sie können beispielsweise demografische Informationen nutzen, um das Site-Erlebnis zu personalisieren. Lesen Sie mehr über ContextHub, ein Framework zum Speichern, Bearbeiten und Präsentieren von Kontextdaten.
 * Übersetzung von Site-Kopien oder Asset-Metadaten. Im [AEM Translation Framework Bootstrap Connector](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector) finden Sie Beispiel-Code für das AEM Translation Framework, das die bevorzugte Implementierung von Übersetzungs-Connectoren ist.
 
 
@@ -52,7 +52,7 @@ Zusätzlich zur obenstehenden statischen Dokumentation bieten Adobe und die AEM-
 Regeln für die Paketstruktur
 -----------------------
 
-Um rollierende Bereitstellungen zu unterstützen, AEM as a Cloud Service Pakete, von denen Connectoren Beispiele sind, eine strikte Trennung zwischen &quot;unveränderlichen&quot;und &quot;veränderlichen&quot;Inhalten aufweisen. Es sollte klar zwischen Paketen mit den folgenden Inhalten unterschieden werden:
+Um fortlaufende Bereitstellungen zu unterstützen, wird bei AEM as a Cloud Service-Paketen (z. B. Connectoren) strikt zwischen „unveränderlichen“ und „veränderlichen“ Inhalten unterschieden. Es sollte klar zwischen Paketen mit den folgenden Inhalten unterschieden werden:
 
 * `/apps`
 * `/content` und `/conf`
@@ -74,7 +74,7 @@ Ein Aspekt der Connector-Implementierung ist der Code, der die Konfiguration des
 Kontextabhängige Konfigurationen
 -----------------------------
 
-[Kontextabhängige Konfigurationen](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) ermöglichen die Konfiguration von Ebenen über verschiedene Ordner hinweg, einschließlich `/libs`, `/apps`, `/conf` und der Unterordner unter `/conf`. Es wird die Vererbung unterstützt, sodass ein Kunde eine globale Konfiguration festlegen und gleichzeitig spezifische Änderungen für jede Microsite vornehmen kann. Da diese Funktion für Cloud Services-Konfigurationen verwendet werden kann, sollte der Connector-Code mithilfe der kontextsensitiven Konfigurations-API auf die Konfiguration verweisen, anstatt auf einen bestimmten Konfigurationsknoten zu verweisen.
+[Kontextabhängige Konfigurationen](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) ermöglichen die Konfiguration von Ebenen über verschiedene Ordner hinweg, einschließlich `/libs`, `/apps`, `/conf` und der Unterordner unter `/conf`. Es wird die Vererbung unterstützt, sodass ein Kunde eine globale Konfiguration festlegen und gleichzeitig spezifische Änderungen für jede Microsite vornehmen kann. Da diese Funktion für Cloud Services-Konfigurationen genutzt werden kann, sollte der Connector-Code mithilfe der API für kontextabhängige Konfigurationen auf die Konfiguration verweisen, anstatt auf einen bestimmten Konfigurationsknoten zu verweisen.
 
 Wenn im Connector geänderte Konfigurationen verwendet werden, können Sie den Connector so gestalten, dass zukünftige Aktualisierungen der vom Connector bereitgestellten Standardkonfigurationen mit Kundenkonfigurationen integriert/zusammengeführt werden. Denken Sie daran, dass das Ändern von benutzerdefinierten (also vom Kunden geänderten) Inhalten oder Konfigurationen ohne Warnung und Zustimmung des Kunden zu einer Unterbrechung (oder zu unerwartetem Verhalten) des Connectors führen kann.
 

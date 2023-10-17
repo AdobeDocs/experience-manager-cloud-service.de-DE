@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '1729'
-ht-degree: 70%
+ht-degree: 84%
 
 ---
 
@@ -30,7 +30,7 @@ Bevor Sie mit Inhaltsfragmenten umgehen, hier eine (sehr) kurze Einführung in d
 
 ### Authoring, Vorschau und Veröffentlichung {#author-preview-publish}
 
-Eine AEM Installation besteht im Allgemeinen aus drei Umgebungen:
+Eine AEM-Installation besteht im Allgemeinen aus drei Umgebungen:
 
 * Autor
 * Veröffentlichung
@@ -40,11 +40,11 @@ Sie melden sich an und verwenden die Autorenumgebung, um Ihre Inhalte zu erzeuge
 
 Weitere Informationen finden Sie unter „Authoring-Konzepte“.
 
-Aus dem **Inhaltsfragmente** -Konsole können Sie auch in der **Vorschaufunktion**, zum Testen und zur Vorschau vor der Veröffentlichung. Siehe Veröffentlichen und Anzeigen einer Vorschau eines Fragments .
+Von der **Inhaltsfragmentkonsole** aus können Sie auch an den **Vorschau-Service** veröffentlichen, um vor der Veröffentlichung zu testen und eine Vorschau anzuzeigen. Siehe „Veröffentlichung und Vorschau eines Fragments“.
 
 ### Anmeldung {#signing-in}
 
-Wie bei den meisten Systemen müssen Sie sich anmelden. Als Autor erhalten Sie Folgendes:
+Wie bei den meisten Systemen müssen Sie sich anmelden. Als Autorin bzw. Autor erhalten Sie Folgendes:
 
 * Name des Benutzers (Konto)
 * Passwort
@@ -56,7 +56,7 @@ Ihr Konto wurde mit den erforderlichen Berechtigungen konfiguriert. Wenn Sie Pro
 
 Wenn Sie sich zum ersten Mal anmelden, wird ein kleines Online-Tutorial einige der wichtigsten Funktionen der Benutzeroberfläche vorstellen.
 
-Sie können dann über das Navigationsfenster auf wichtige Bereiche von AEM zugreifen. Für Inhaltsfragmente verwenden Sie die **Inhaltsfragmente** -Konsole (für einige Aktionen verwenden Sie auch die **Assets** -Konsole).
+Sie können dann über das Navigationsfenster auf wichtige Bereiche von AEM zugreifen. Für Inhaltsfragmente steht die **Inhaltsfragmentkonsole** zur Verfügung (für einige Aktionen können Sie auch die **Assets**-Konsole verwenden).
 
 Das Navigationsfenster kann geöffnet werden, indem Sie links oben auf das Adobe-Symbol und dann auf das kleine Kompasssymbol klicken.
 
@@ -119,9 +119,9 @@ You can view additional information about items using the Rail Selector. This al
 ![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
 -->
 
-## Bearbeiten von Inhaltsfragmenten {#authoring-content-fragments}
+## Erstellung von Inhaltsfragmenten {#authoring-content-fragments}
 
-Das war eine sehr schnelle Einführung in die AEM Benutzeroberfläche, aber hoffentlich hatten Sie die Möglichkeit, es auszuprobieren. Jetzt kommen wir zu Ihrem echten Interesse – Inhaltsfragmente für Headless.
+Das war also eine sehr kurze Einführung in die AEM-Benutzeroberfläche (UI), aber ich hoffe, Sie hatten bereits die Gelegenheit, sie auszuprobieren. Jetzt kommen wir zu Ihrem echten Interesse – Inhaltsfragmente für Headless.
 
 Wir müssen die Dinge von Anfang bis Ende durchgehen, aber in Ihrer Instanz wurden möglicherweise bereits Ordner und/oder Fragmente erstellt, die sich an verschiedenen Stellen befinden. Die Prinzipien sind dieselben.
 
@@ -141,7 +141,7 @@ Daraufhin wird ein Dialogfeld geöffnet, in dem Sie die Details eingeben und dan
 
 #### Verwenden von Pfaden und Tags zur Beschränkung von Inhaltsfragmentmodellen, die im Ordner verfügbar sind {#tags-paths-for-models-in-folder}
 
-Dieser Abschnitt ist etwas komplexer. Man braucht es nicht wirklich, wenn man gerade erst beginnt und Dinge ausprobiert, aber es ist *very* nützlich, wenn Sie viele Fragmente haben. Also ist es gut, darüber zu wissen - auch wenn Sie es noch nicht ganz verwenden.
+Dieser Abschnitt ist etwas komplexer. Man braucht ihn nicht wirklich, wenn man gerade erst anfängt und Dinge ausprobiert, aber er ist *sehr* nützlich, wenn man viele Fragmente hat. Also ist es gut, ihn zu kennen – auch wenn man ihn noch nicht wirklich benutzt.
 
 Ihr Inhaltsarchitekt hat alle Inhaltsfragmentmodelle erstellt, die für Ihr aktuelles Projekt erforderlich sind, und möglicherweise auch für einige andere Projekte. Um Ihnen und anderen Autoren die Arbeit zu erleichtern, können Sie die Liste der für einen bestimmten Ordner verfügbaren Modelle einschränken.
 
@@ -196,7 +196,7 @@ Sie können ein Fragment unmittelbar nach seiner Erstellung öffnen oder indem S
 >* Der neue Editor, auf den hauptsächlich über das **Inhaltsfragmente** Konsole.
 >* Der ursprüngliche Editor, auf den hauptsächlich über das **Assets** Konsole.
 
-Beim ersten Öffnen des Editors wird Folgendes angezeigt:
+Wenn der Editor zum ersten Mal geöffnet wird, sehen Sie Folgendes:
 
 * obere Symbolleiste: für wichtige Informationen und Aktionen
    * einen Link zur Inhaltsfragmentkonsole (Startseiten-Symbol)
@@ -216,7 +216,7 @@ Beim ersten Öffnen des Editors wird Folgendes angezeigt:
 
 Ein Fragment kann beispielsweise:
 
-* Erfordert mehrere Informationen, einige mit einem bestimmten Typ. Für Headless-Inhalte sind Verweise von zentraler Bedeutung (Sie werden später auf Ihrer Journey darüber erfahren).
+* Erfordert mehrere Informationen, einige mit einem bestimmten Typ. Für Headless-Inhalte sind Verweise von zentraler Bedeutung (Sie werden später in Ihrer Tour mehr darüber erfahren).
 
 * Ermöglicht Ihnen das Schreiben eines langen Textabschnitts. Hier finden Sie zusätzliche Optionen zum Verwalten und Formatieren des Textes. Sie können die einzelnen Textfelder auch in einem Vollbild-Editor öffnen (mithilfe des kleinen bildschirmähnlichen Symbols auf der rechten Seite).
 
@@ -234,9 +234,9 @@ Bestätigen Sie Ihre Aktualisierungen mit **Speichern** oder **Speichern und sch
 >
 >Weitere Informationen finden Sie unter „Varianten – Authoring von Inhaltsfragmenten“.
 
-#### Was Sie (wahrscheinlich) nicht benötigen {#what-you-probably-do-not-need-to-worry-about}
+#### Worüber Sie sich (wahrscheinlich) keine Sorgen machen müssen {#what-you-probably-do-not-need-to-worry-about}
 
-OK, dies mag zwar etwas seltsam erscheinen, aber sobald Sie den Inhaltsfragment-Editor öffnen und mit der Untersuchung beginnen, können Sie verschiedene Optionen sehen, die (wahrscheinlich) nicht für Ihre Headless-Journey als Inhaltsautor gelten. Dies ist also nur ein kurzer Hinweis darauf, was man im Headless-Kontext ignorieren kann:
+OK, dieser Abschnitt mag etwas seltsam erscheinen, aber sobald Sie den Inhaltsfragment-Editor öffnen und mit der Erkundung beginnen, können Sie verschiedene Optionen sehen, die (wahrscheinlich) nicht für Ihre Headless-Inhaltsautoren-Tour relevant sind. Dies ist also nur ein kurzer Hinweis darauf, was man im Headless-Kontext ignorieren kann:
 
 * **Inhaltsfragmentmodelle**
 
@@ -255,11 +255,11 @@ Nachdem Sie Ihr Fragment fertig gestellt haben, können Sie es **Veröffentliche
 
 Die Veröffentlichungsaktionen sind im Editor verfügbar:
 
-![Inhaltsfragmente-Editor – Mein Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
+![Inhaltsfragment-Editor – Mein Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
 >[!NOTE]
 >
->Sie können Ihr Fragment auch über die **Assets** oder **Inhaltsfragmente** Konsole.
+>Sie können Ihr Fragment auch über die **Assets**- oder **Inhaltsfragmente**-Konsole veröffentlichen.
 
 ## Wie geht es weiter {#whats-next}
 
@@ -291,19 +291,19 @@ Nachdem Sie nun die Grundlagen gelernt haben, lautet der nächste Schritt: [Erfa
 
    * [Erstellen eines Inhaltsfragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [Bearbeiten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/authoring.md)
+   * [Erstellung von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/authoring.md)
 
    * Veröffentlichung
 
-      * im Editor oder **Assets** console
+      * Über den Editor oder die **Assets**-Konsole
 
          * [Quick Publish](/help/assets/manage-publication.md#quick-publish)
 
          * [Veröffentlichung verwalten](/help/assets/manage-publication.md#manage-publication)
 
-      * Aus dem **Inhaltsfragmente** Konsole
+      * Über die **Inhaltsfragmentkonsole**
 
-         * [Veröffentlichen und Anzeigen der Vorschau eines Inhaltsfragments](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)
+         * [Veröffentlichung und Vorschau eines Inhaltsfragments](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)
 
    * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 

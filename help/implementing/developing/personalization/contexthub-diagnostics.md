@@ -5,7 +5,7 @@ exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -15,11 +15,11 @@ ContextHub bietet eine Diagnoseseite, auf der Sie einen Überblick über das Con
 
 `http://<host>:<port>/conf/<site>/settings/cloudsettings/default/contexthub.diagnostics.html`
 
-Auf der Seite &quot;ContextHub-Diagnose&quot;finden Sie Informationen zu den erstellten Stores und Benutzeroberflächenmodulen, den geladenen Client-Bibliotheksordnern und Links zu nützlichen Seiten.
+Die Seite „ContextHub-Diagnose“ enthält Informationen zu den erstellten Speicher- und UI-Modulen sowie zu den geladenen Client-Bibliotheksordnern und Links zu nützlichen Seiten.
 
 >[!NOTE]
 >
->Damit Diagnoseinformationen zurückgegeben werden können, muss der Debug-Modus aktiviert sein. Andernfalls ist die Diagnoseseite leer. Siehe [dieses Dokuments](configuring-contexthub.md#debugging-contexthub) für Details zum Aktivieren des Debug-Modus.
+>Damit Diagnoseinformationen zurückgegeben werden können, muss der Debug-Modus aktiviert sein, da andernfalls die Diagnoseseite leer ist. In [diesem Dokument](configuring-contexthub.md#debugging-contexthub) finden Sie Details zum Aktivieren des Debug-Modus.
 
 ## Stores {#stores}
 
@@ -28,7 +28,7 @@ Der Abschnitt „Stores“ listet alle ContextHub-Stores auf, die konfiguriert w
 * **Title:** Der [Store-Typ](sample-stores.md), auf dem der Store basiert.
 * **path:** Der Pfad zum Repository-Knoten, der die Konfiguration enthält.
 * **resourceType:** Der Pfad des Repository-Knotens, in dem der Speichertyp definiert ist.
-* **clientlibs:** Die Kategorien der geladenen Client-Bibliotheken, die den Store-Typ implementieren.
+* **clientlibs:** Die Kategorien der geladenen Client-Bibliotheken, die den Speichertyp implementieren.
 
 ## Modules {#modules}
 
@@ -52,8 +52,8 @@ Der Abschnitt „Clientlibs“ listet alle [Ordner der Client-Bibliothek](/help/
 Der Abschnitt „URLs“ enthält Links zu ContextHub-Features:
 
 * **Konfigurationseditor:** Öffnet die [ContextHub-Konfigurationsseite](configuring-contexthub.md), wo Sie Stores, Benutzeroberflächenmodi und Benutzeroberflächenmodule konfigurieren können.
-* **Konfiguration von ContextHub-Modulen:** Öffnet die `/etc/cloudsettings/default/contexthub.config.kernel.js` -Datei, die die JavaScript-Objektdarstellung der ContextHub-Store-Konfigurationen enthält.
-* **Konfiguration der ContextHub-Benutzeroberfläche:** Öffnet die `/etc/cloudsettings/default/contexthub.config.ui.js` -Datei, die die JavaScript-Objektdarstellung der ContextHub-Benutzeroberflächenmoduskonfigurationen enthält.
+* **Konfiguration von ContextHub-Modulen:** Öffnet die Datei `/etc/cloudsettings/default/contexthub.config.kernel.js`, die die JavaScript-Objektdarstellung der ContextHub-Speicher-Konfigurationen enthält.
+* **Konfiguration der ContextHub-Benutzeroberfläche:** Öffnet die Datei `/etc/cloudsettings/default/contexthub.config.ui.js`, die die JavaScript-Objektdarstellung der ContextHub-Benutzeroberflächen-Modus-Konfigurationen enthält.
 * **kernel.js:** Öffnet die `/etc/cloudsettings/default/contexthub.kernel.js`-Datei, die den Quell-Code der Client-Bibliotheken enthält, die das ContextHub-Framework, die Segment-Engine und die Store-Typen implementieren.
 * **ui.js:** Öffnet die `/etc/cloudsettings/default/contexthub.ui.js`-Datei, die den Quell-Code der Client-Bibliotheken enthält, die die ContextHub-Benutzeroberfläche und Benutzeroberflächenmodultypen implementieren.
 * **style.css:** Öffnet die `/etc/cloudsettings/default/contexthub.styles.css`-Datei, die die CSS-Stile für die ContextHub-Benutzeroberfläche und Benutzeroberflächenmodule enthält.

@@ -5,7 +5,7 @@ exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
 source-wordcount: '738'
-ht-degree: 47%
+ht-degree: 56%
 
 ---
 
@@ -23,7 +23,7 @@ Während eine solche Automatisierung für ein einzelnes kundeneigenes Git-Reposi
 
 Im Folgenden finden Sie eine Beispiel-`pom.xml`-Datei für zwei kundeneigene Git-Repositorys.
 
-* Das erste Projekt wird in den Ordner namens `project-a`.
+* Das erste Projekt wird im Verzeichnis namens `project-a` abgelegt.
 * Das zweite Projekt wird im Verzeichnis namens `project-b` abgelegt.
 
 ```xml
@@ -122,7 +122,7 @@ jobs:
           git -C ${MAIN_BRANCH} push
 ```
 
-Die Verwendung einer GitHub-Aktion ist flexibel. Jede Zuordnung zwischen Zweigen der Git-Repositorys kann durchgeführt werden und jede Zuordnung der einzelnen Git-Projekte zum Verzeichnis-Layout des Hauptprojekts.
+Die Verwendung einer GitHub-Aktion ist flexibel. Es können jegliche Zuordnungen zwischen Verzweigungen der Git-Repositorys sowie jede Zuordnung der separaten Git-Projekte in das Verzeichnis-Layout des Hauptprojekts erfolgen.
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ git commit -F ../commit.txt
 git push
 ```
 
-Die Verwendung eines Jenkins-Auftrags ist flexibel. Jede Zuordnung zwischen Zweigen der Git-Repositorys kann durchgeführt werden und jede Zuordnung der einzelnen Git-Projekte zum Verzeichnis-Layout des Hauptprojekts.
+Die Verwendung eines Jenkins-Auftrags ist flexibel. Es können jegliche Zuordnungen zwischen Verzweigungen der Git-Repositorys sowie jede Zuordnung der separaten Git-Projekte in das Verzeichnis-Layout des Hauptprojekts erfolgen.
 
 >[!NOTE]
 >

@@ -1,11 +1,11 @@
 ---
 title: Arbeiten mit Projekt-Workflows
-description: Standardmäßig sind diverse Projekt-Workflows verfügbar.
+description: Eine Vielzahl von Projekt-Workflows ist bereits vorkonfiguriert.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '451'
-ht-degree: 68%
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ Folgende Projekt-Workflows sind im Lieferumfang enthalten:
 * **Launch anfragen** - Ein Workflow, der einen Launch anfordert.
 * **Einstiegsseite anfragen** - Dieser Workflow fragt eine Landingpage an.
 * **E-Mail anfordern** - Workflow zum Anfordern einer E-Mail.
-* **DAM-Kopie erstellen und übersetzen und DAM-Sprachkopie erstellen** - Erstellt übersetzte Binärdateien, Metadaten und Tags für Assets und Ordner.
+* **DAM-Kopie erstellen und übersetzen und DAM-Sprachkopie erstellen**: Erstellt übersetzte Binärdateien, Metadaten und Tags für Assets und Ordner.
 
 Je nachdem, welche Projektvorlage Sie auswählen, stehen Ihnen bestimmte Workflows zur Verfügung:
 
@@ -36,7 +36,7 @@ Je nachdem, welche Projektvorlage Sie auswählen, stehen Ihnen bestimmte Workflo
 
 Das Starten und Abschließen eines Workflows ist unabhängig vom gewählten Workflow immer gleich. Nur die Schritte ändern sich.
 
-Sie starten einen Workflow direkt in Projekten (mit Ausnahme von DAM Create Language Copy oder DAM Create and Translate Language Copy). Informationen zu ausstehenden Aufgaben in einem Projekt finden Sie in der **Aufgaben** Kachel. Benachrichtigungen zu auszuführenden Aufgaben werden neben dem Benutzersymbol angezeigt.
+Sie starten einen Workflow direkt in Projekten (mit Ausnahme von „DAM-Sprachkopie erstellen“ bzw. „DAM-Sprachkopie erstellen und übersetzen“). Informationen über alle ausstehenden Aufgaben in einem Projekt werden in der Kachel **Aufgaben** aufgelistet. Benachrichtigungen für Aufgaben, die ausgeführt werden müssen, werden neben dem Benutzersymbol angezeigt.
 
 Weitere Informationen zum Arbeiten mit Workflows in AEM finden Sie unter:
 
@@ -62,7 +62,7 @@ Im Workflow für Projektbestätigung weisen Sie Inhalte einem Benutzer zu, über
 Mit diesem Workflow können Sie einen Launch anfordern.
 
 1. Wählen Sie in Ihrem einfachen Projekt das **Plussymbol** in der Kachel **Workflows** aus und wählen Sie dann **Workflow „Launch anfordern“** aus.
-1. Geben Sie einen Titel für den Launch ein und geben Sie den Launch-Quellpfad an. Sie können bei Bedarf auch eine Beschreibung und ein Live-Datum hinzufügen. Wählen Sie &quot;Quellseiten-Live-Daten übernehmen&quot;oder &quot;Unterseiten ausschließen&quot;, je nachdem, wie sich der Launch verhalten soll.
+1. Geben Sie einen Titel für den Launch ein und geben Sie den Launch-Quellpfad an. Sie können bei Bedarf auch eine Beschreibung und ein Live-Datum hinzufügen. Wählen Sie „Quellseiten-Live-Daten erben“ oder „Unterseiten ausschließen“ aus, je nachdem, wie der Launch sich verhalten soll.
 
    ![Launch anfordern](/help/sites-cloud/authoring/assets/projects-request-launch.png)
 
@@ -70,4 +70,4 @@ Mit diesem Workflow können Sie einen Launch anfordern.
 
 ## Workflow „Sprachkopie erstellen (und übersetzen)“ für Assets {#create-and-translate-language-copy-workflow-for-assets}
 
-Die Workflows **Sprachkopie erstellen** und **Sprachkopie erstellen und übersetzen**[ werden in „Erstellen von Sprachkopien für Assets“ genauer erläutert](/help/assets/translate-assets.md).
+Die Workflows **Sprachkopie erstellen** und **Sprachkopie erstellen und übersetzen** [werden in „Erstellen von Sprachkopien für Assets“ genauer erläutert](/help/assets/translate-assets.md).

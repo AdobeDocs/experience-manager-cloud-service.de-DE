@@ -5,7 +5,7 @@ exl-id: d631d6df-7507-4752-862b-9094af9759a0
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1838'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ AEM as a Cloud Service hält sich an die neuesten Best Practices für Package-Ma
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im [AEM Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de) in der AEM as a Cloud Service Dokumentation und dem [AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) Dokumentation. Beide werden für AEM 6.5 vollständig unterstützt.
+>Weitere Informationen finden Sie im Artikel [AEM-Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de), in der AEM as a Cloud Service -Dokumentation sowie in der Dokumentation zum [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de). Beide werden für AEM 6.5 vollständig unterstützt.
 
 ## Abrufen des Content Package Maven-Plug-ins {#obtaining-the-content-package-maven-plugin}
 
@@ -56,11 +56,11 @@ Um das Inhaltspaket-Maven-Plug-in zu verwenden, fügen Sie das folgende Plug-in-
 </plugin>
 ```
 
-Um Maven das Herunterladen des Plug-ins zu ermöglichen, verwenden Sie das im [Abrufen des Inhaltspaket-Maven-Plug-ins](#obtaining-the-content-package-maven-plugin) auf dieser Seite.
+Um Maven zu ermöglichen, das Plug-in herunterzuladen, verwenden Sie das Profil, das im Abschnitt [Abrufen des Inhaltspaket-Maven-Plug-ins](#obtaining-the-content-package-maven-plugin) auf dieser Seite bereitgestellt wird.
 
 ## Ziele des Inhaltspaket-Maven-Plug-ins {#goals-of-the-content-package-maven-plugin}
 
-Die Ziele und Zielparameter, die das Content Package-Plug-in bereitstellt, werden in den folgenden Abschnitten beschrieben. Parameter, die im Abschnitt Allgemeine Parameter beschrieben werden, können für die meisten Ziele verwendet werden. Parameter, die für ein Ziel gelten, werden im Abschnitt für dieses Ziel beschrieben.
+Die durch das Inhaltspaket-Plug-in bereitgestellten Ziele und Zielparameter werden in den folgenden Abschnitten beschrieben. Die im Abschnitt „Allgemeine Parameter“ beschriebenen Parameter können für die meisten der Ziele verwendet werden. Parameter, die für ein Ziel gelten, werden im Abschnitt für dieses Ziel beschrieben.
 
 ### Plug-in-Präfix {#plugin-prefix}
 
@@ -94,7 +94,7 @@ Die Parameter in der folgenden Tabelle gelten für alle Ziele, sofern kein entsp
 | `serverId` | `String` | Nein | Die Server-ID, über die der Benutzername und das Passwort für die Authentifizierung abgerufen werden | Alle Ziele mit Ausnahme von `package` |
 | `targetURL` | `String` | Ja | `http://localhost:4502/crx/packmgr/service.jsp` | Die URL der HTTP-Service-API von AEM Package Manager | Alle Ziele mit Ausnahme von `package` |
 | `timeout` | `int` | Nein | `5` | Die Verbindungszeitüberschreitung für die Kommunikation mit dem Package Manager-Service in Sekunden | Alle Ziele mit Ausnahme von `package` |
-| `useProxy` | `boolean` | Nein | `true` | Ein Wert von `true` führt dazu, dass Maven die erste aktive Proxy-Konfiguration verwendet, die für Proxy-Anforderungen an den Package Manager gefunden wurde. | Alle Ziele mit Ausnahme von `package` |
+| `useProxy` | `boolean` | Nein | `true` | Der Wert von `true` veranlasst Maven, die erste aktive Proxy-Konfiguration zu verwenden, die gefunden wurde, um Anforderungen an Package Manager zu senden. | Alle Ziele mit Ausnahme von `package` |
 | `userId` | `String` | Ja | `admin` | Der Benutzername zur Authentifizierung bei AEM | Alle Ziele mit Ausnahme von `package` |
 | `verbose` | `boolean` | Nein | `false` | Aktiviert oder deaktiviert die ausführliche Protokollierung | Alle Ziele mit Ausnahme von `package` |
 
@@ -135,7 +135,7 @@ Lesen Sie neben den folgenden Parametern die Beschreibungen im Abschnitt [Allgem
 
 ### ls {#ls}
 
-Listet die Pakete auf, die in bereitgestellt werden [Package Manager](/help/implementing/developing/tools/package-manager.md).
+Führt die in [Package Manager](/help/implementing/developing/tools/package-manager.md) bereitgestellten Pakete auf.
 
 #### Parameter {#parameters-2}
 
@@ -143,7 +143,7 @@ Alle Parameter des Ziels „Is“ werden im Abschnitt [Allgemeine Parameter](#co
 
 ### rm {#rm}
 
-Entfernt ein Paket aus dem [Package Manager](/help/implementing/developing/tools/package-manager.md).
+Entfernt ein Paket aus [Package Manager](/help/implementing/developing/tools/package-manager.md).
 
 #### Parameter {#parameters-3}
 
@@ -151,7 +151,7 @@ Alle Parameter des Ziels „rm“ werden im Abschnitt [Allgemeine Parameter](#co
 
 ### uninstall {#uninstall}
 
-Deinstalliert ein Paket. Das Paket verbleibt auf dem Server im deinstallierten Status.
+Deinstalliert ein Paket. Das Paket verbleibt auf dem Server mit dem deinstallierten Status.
 
 #### Parameter {#parameters-4}
 
@@ -181,7 +181,7 @@ Lesen Sie neben den folgenden Parametern die Beschreibung des Parameters `name` 
 | `prefix` | `java.lang.String` | Nein | Kein |  |
 | `project` | `org.apache.maven.project.MavenProject` | Ja | Kein | Das Maven-Projekt |
 | `properties` | `java.util.Map` | Nein | Kein | Diese Parameter definieren zusätzliche Eigenschaften, die Sie in der Datei `properties.xml` festlegen können. Diese Eigenschaften können die folgenden vordefinierten Eigenschaften nicht außer Kraft setzen: `group` (Parameter `group` zum Festlegen verwenden), `name` (Parameter `name` zum Festlegen verwenden), `version` (Parameter `version` zum Festlegen verwenden), `description` (festgelegt anhand der Projektbeschreibung), `groupId` (`groupId` des Maven-Projektdeskriptors), `artifactId` (`artifactId` des Maven-Projektdeskriptors), `dependencies` (Parameter `dependencies` zum Festlegen verwenden), `createdBy` (Wert der Systemeigenschaft `user.name`), `created` (die aktuelle Systemzeit), `requiresRoot` (Parameter `requiresRoot` zum Festlegen verwenden), `packagePath` (automatisch generiert anhand des Gruppen- und Paketnamens) |
-| `requiresRoot` | `boolean` | Ja | false | Definiert, ob für das Paket „root“ erforderlich ist. wird zum `requiresRoot` -Eigenschaft der `properties.xml` -Datei. |
+| `requiresRoot` | `boolean` | Ja | false | Definiert, ob für das Paket „root“ erforderlich ist. Wird zur `requiresRoot`-Eigenschaft der Datei `properties.xml`. |
 | `subPackages` | `java.util.List` | Nein | Kein |  |
 | `version` | `java.lang.String` | Ja | Die im Maven-Projekt definierte Version | Die Version des Inhaltspakets |
 | `workDirectory` | `java.io.File` | Ja | Das im Maven-Projekt (Build-Phase) definierte Verzeichnis | Das Verzeichnis mit den in das Paket einzuschließenden Inhalten |
@@ -229,7 +229,7 @@ Wenn der Filter kein `mode`-Element aufweist, wird der Standardwert `replace` ve
 
 ## Einbeziehen eines Miniaturbilds oder einer Eigenschaftsdatei im Paket {#including-a-thumbnail-image-or-properties-file-in-the-package}
 
-Ersetzen Sie die standardmäßigen Paketkonfigurationsdateien, um die Paketeigenschaften anzupassen. Fügen Sie beispielsweise eine Miniaturansicht hinzu, um das Paket in [Package Manager](/help/implementing/developing/tools/package-manager.md).
+Ersetzen Sie die standardmäßigen Paketkonfigurationsdateien, um die Paketeigenschaften anzupassen. Verwenden Sie beispielsweise ein Miniaturbild, um das Paket in [Package Manager](/help/implementing/developing/tools/package-manager.md) zu unterscheiden.
 
 Die Quelldateien können sich überall in Ihrem Dateisystem befinden. Definieren Sie in der POM-Datei die Build-Ressourcen, um die Quelldateien nach `target/vault-work/META-INF` zu kopieren, um sie ins Paket einzuschließen.
 
@@ -263,8 +263,8 @@ Im folgenden POM-Code wird nur ein Miniaturbild zum Paket hinzugefügt. Das Mini
 
 ## Verwenden des AEM-Projektarchetyps zum Erzeugen von AEM-Projekten {#using-archetypes}
 
-Der aktuelle AEM-Projektarchetyp implementiert die Best Practice-Paketstruktur sowohl für On-Premise- als auch für AMS-Implementierungen und wird für alle AEM-Projekte empfohlen.
+Der aktuelle AEM-Projektarchetyp implementiert die am meisten bewährte Paketstruktur sowohl für On-Premise- als auch für AMS-Implementierungen und wird für alle AEM-Projekte empfohlen.
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im [AEM Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de) in der AEM as a Cloud Service Dokumentation und dem [AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) Dokumentation. Beide werden für AEM 6.5 vollständig unterstützt.
+>Weitere Informationen finden Sie im Artikel [AEM-Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de) in der AEM as a Cloud Service-Dokumentation sowie in der Dokumentation zum [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de). Beide werden für AEM 6.5 vollständig unterstützt.

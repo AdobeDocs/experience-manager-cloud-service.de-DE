@@ -5,7 +5,7 @@ exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,7 @@ Nachdem Sie Ihren Connector eingerichtet haben, führt Sie dieser Artikel durch 
 >Dieser Schritt der Dokumentations-Tour ist nur erforderlich, wenn Sie die Markierung **Übersetzbar** für Inhaltsfragmente nicht verwenden.
 >
 >* Die Markierung **Übersetzbar** erstellt automatisch Übersetzungsregeln für Sie und erfordert kein Eingreifen.
->* Die **Übersetzbar** Kennzeichen wird nur verwendet, wenn die Konfiguration des Translation Integration Framework auf **[Aktivieren von Inhaltsmodellfeldern für die Übersetzung](/help/sites-cloud/administering/translation/integration-framework.md)**.
+>* Die Markierung **Übersetzbar** wird nur verwendet, wenn die Konfiguration des Übersetzungsintegrations-Frameworks auf **[Inhaltsmodellfelder für die Übersetzung aktivieren](/help/sites-cloud/administering/translation/integration-framework.md)** festgelegt ist.
 >* Durch Aktivierung dieser Option in der TIF-Konfiguration werden alle manuell erstellten Übersetzungsregeln ersetzt.|
 
 ## Ziel {#objective}
@@ -76,7 +76,7 @@ In der Benutzeroberfläche der **Übersetzungskonfiguration** gibt es eine Reihe
 1. AEM speichert die Konfiguration.
 1. Sie müssen den soeben erstellten Kontext auswählen und dann auf **Bearbeiten** tippen oder klicken. Dadurch wird der **Editor für Übersetzungsregeln** geöffnet, in dem die Eigenschaften konfiguriert werden können.
    ![Editor für Übersetzungsregeln](assets/translation-rules-editor.png)
-1. Standardmäßig werden alle Konfigurationen vom übergeordneten Pfad übernommen, in diesem Fall `/content/dam`. Deaktivieren Sie die Option **Vererben von`/content/dam`** , damit Sie der Konfiguration zusätzliche Felder hinzufügen können.
+1. Standardmäßig werden alle Konfigurationen vom übergeordneten Pfad übernommen, in diesem Fall `/content/dam`. Deaktivieren Sie die Option **Übernehmen von`/content/dam`**, um der Konfiguration zusätzliche Felder hinzuzufügen.
 1. Ist diese Option deaktiviert, fügen Sie im Abschnitt **Allgemein** der Liste die Eigenschaftsnamen der Inhaltsfragmentmodelle hinzu, die Sie [zuvor als zu übersetzende Felder identifiziert haben.](getting-started.md#content-models)
    1. Geben Sie den Eigenschaftsnamen im Feld **Neue Eigenschaft** ein.
    1. Die Optionen **Übersetzen** und **Übernehmen** werden automatisch aktiviert.

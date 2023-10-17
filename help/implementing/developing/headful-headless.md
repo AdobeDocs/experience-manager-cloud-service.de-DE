@@ -5,7 +5,7 @@ exl-id: 709850ca-7757-47ab-9625-f411121cde2c
 source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '1013'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ Single Page Applications (SPAs) sind häufig das Ziel für Content, der von AEM 
 
 ## Webshop-Beispiel {#web-shop-example}
 
-Angenommen, Sie haben einen Webshop für Ihre Firma als SPA. Darin haben Sie alle Produktdetails und Bilder. Anschließend stellen Sie AEM vor, um Ihre Marketing-Maßnahmen wie Werbe-Sites, Blogs und Kampagneninhalte zu unterstützen. Wie integrieren Sie beides? AEM bietet eine Reihe von Optionen:
+Angenommen, Sie haben einen Webshop für Ihre Firma als SPA. Darin haben Sie alle Produktdetails und Bilder. Anschließend führen Sie AEM ein, um Ihre Marketing-Maßnahmen wie Werbeseiten, Blogs und Kampagneninhalte zu unterstützen. Wie integrieren Sie beides? AEM bietet eine Reihe von Optionen:
 
 * **Die Systeme können unabhängig betrieben werden.**
 * **Der Webshop wird mit eingeschränktem Inhalt von AEM über GraphQL versorgt.** Content kann von Autoren in AEM erstellt, aber nur über die Webshop-SPA angezeigt werden.
@@ -43,7 +43,7 @@ Im nächsten Abschnitt werden diese Integrationsstufen genauer untersucht.
 
 >[!NOTE]
 >
->Natürlich können Sie auch die Web-Shop-SPA als voll funktionierende AEM neu implementieren SPA [Verwenden des AEM SPA Editor-Frameworks](/help/implementing/developing/hybrid/introduction.md). Wenn Sie bereits AEM haben und einen neuen Webshop oder eine andere SPA erstellen möchten, ist dies die empfohlene Methode. Diese würde den Umfang dieses Dokuments allerdings sprengen.
+>Selbstverständlich könnten Sie die Webshop-SPA auch [mithilfe des AEM-SPA-Editor-Frameworks](/help/implementing/developing/hybrid/introduction.md) als voll funktionsfähige AEM-SPA erneut implementieren. Wenn Sie bereits AEM haben und einen neuen Webshop oder eine andere SPA erstellen möchten, ist dies die empfohlene Methode. Diese würde den Umfang dieses Dokuments allerdings sprengen.
 
 ## SPA-Integrationsstufen {#integration-levels}
 
@@ -54,18 +54,18 @@ In AEM gibt es vier Stufen der SPA-Integration.
    * Content wird in zwei separaten Systemen erstellt, verwaltet und bereitgestellt.
 * **Ebene 1: Integration von Inhaltsfragmenten**
    * [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) werden in AEM verwendet, um eingeschränkte Inhalte für die SPA zu erstellen und zu verwalten.
-   * Der SPA ruft diesen Inhalt über AEM ab [GraphQL-API](/help/headless/graphql-api/content-fragments.md).
+   * Die SPA ruft diese Inhalte über die [GraphQL-API](/help/headless/graphql-api/content-fragments.md) von AEM ab.
    * Ein Teil des Contents wird in AEM und ein anderer in einem externen System verwaltet.
    * Content kann nur in der SPA angezeigt werden.
 * **Ebene 2: Einbetten der SPA in AEM**
    * [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) werden in AEM verwendet, um Content für die SPA zu erstellen und zu verwalten.
-   * Der SPA ruft diesen Inhalt über AEM ab [GraphQL-API](/help/headless/graphql-api/content-fragments.md).
+   * Die SPA ruft diese Inhalte über die [GraphQL-API](/help/headless/graphql-api/content-fragments.md) von AEM ab.
    * Ein Teil des Contents wird in AEM und ein anderer in einem externen System verwaltet.
    * Content kann in AEM im Kontext angezeigt werden.
    * Eingeschränkter Content kann in AEM bearbeitet werden.
 * **Ebene 3: Einbetten und vollständiges Aktivieren der SPA in AEM**
    * [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) werden in AEM verwendet, um Content für die SPA zu erstellen und zu verwalten.
-   * Der SPA ruft diesen Inhalt über AEM ab [GraphQL-API](/help/headless/graphql-api/content-fragments.md).
+   * Die SPA ruft diese Inhalte über die [GraphQL-API](/help/headless/graphql-api/content-fragments.md) von AEM ab.
    * Content kann in AEM im Kontext angezeigt werden.
    * Die meisten Inhalte können in AEM bearbeitet werden.
 

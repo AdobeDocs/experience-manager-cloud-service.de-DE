@@ -9,7 +9,7 @@ docset: aem65
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '2023'
-ht-degree: 77%
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 77%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-Zwar wird jedes Formular für einen bestimmten Zweck entwickelt, doch enthalten die meisten Formularen einige gängige Elemente (z. B. für persönliche Angaben wie Name und Anschrift, Angaben zu Familienstand, Einkommen usw.). Formularentwickler müssen diese gängigen Segmente jedes Mal erstellen, wenn ein neues Formular erstellt wird. Adaptive Formulare bieten einen praktischen Mechanismus, mit dem Formularsegmente wie ein Bedienfeld oder eine Gruppe von Feldern nur einmal erstellt und dann in adaptiven Formularen wiederverwendet werden können. Diese wiederverwendbaren, unabhängigen Segmente werden als adaptive Formularfragmente bezeichnet.
+Zwar wird jedes Formular für einen bestimmten Zweck entwickelt, doch enthalten die meisten Formularen einige gängige Elemente (z. B. für persönliche Angaben wie Name und Anschrift, Angaben zu Familienstand, Einkommen usw.). Formularentwicklerinnen und -entwickler müssen diese gängigen Segmente jedes Mal erstellen, wenn ein neues Formular erstellt wird. Adaptive Formulare bieten einen praktischen Mechanismus, mit dem Formularsegmente wie ein Bedienfeld oder eine Gruppe von Feldern nur einmal erstellt und dann in adaptiven Formularen wiederverwendet werden können. Diese wiederverwendbaren, unabhängigen Segmente werden als adaptive Formularfragmente bezeichnet.
 
 
 ## Erstellen eines Fragments {#create-a-fragment}
@@ -32,7 +32,7 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder einen Be
 ### Neuerstellen von Fragmenten {#create-fragment-from-scratch}
 
 1. Melden Sie sich bei der Autoreninstanz von [!DNL AEM Forms] unter https://[*Hostname*]:[*Port*]/aem/forms.html an.
-1. Klicks **Erstellen > Adaptives Formularfragment**.
+1. Klicken Sie auf **Erstellen > Adaptives Formularfragment**.
 1. Geben Sie Titel, Namen, Beschreibung und Tags für das Fragment an.
 
    >[!NOTE]
@@ -41,7 +41,7 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder einen Be
 
 1. Klicken Sie, um die Registerkarte **Formularmodell** zu öffnen. Wählen Sie dann aus der Dropdown-Liste **Auswählen** eines der folgenden Fragmentmodelle:
 
-   * **Keines**: Gibt an, dass das Fragment von Grund auf ohne Formularmodell erstellt werden soll.
+   * **Keins**: Gibt an, dass das Fragment von Grund auf ohne Formularmodell erstellt werden soll.
    * **Formularvorlage**: Das Fragment wird mithilfe einer XDP-Vorlage erstellt, die in [!DNL AEM Forms] hochgeladen wurde. Wählen Sie die entsprechende XDP-Vorlage als Formularmodell für das Fragment aus.
 
    ![Erstellen eines adaptiven Formulars mit einer Formularvorlage als Modell](assets/form-template-model.png)
@@ -69,13 +69,13 @@ Wenn Sie außerdem ein XML-Schema oder eine XDP-Formularvorlage als Formularmode
 ### Bereich als Fragment speichern {#save-panel-as-a-fragment}
 
 1. Öffnen Sie ein adaptives Formular, das das Bedienfeld enthält, das Sie als adaptives Formularfragment speichern möchten.
-1. Klicken Sie in der Symbolleiste des Bedienfelds auf **[!UICONTROL Als Fragment speichern]**. Das Dialogfeld Als Fragment speichern wird geöffnet.
+1. Klicken Sie in der Symbolleiste des Bedienfelds auf **[!UICONTROL Als Fragment speichern]**. Das Dialogfeld „Als Fragment speichern“ wird geöffnet.
 
    >[!NOTE]
    >
-   >Wenn das Bedienfeld, das Sie als Fragment speichern, ein untergeordnetes Bedienfeld enthält, enthält das daraus resultierende Fragment sie.
+   >Wenn das Bedienfeld, das Sie gerade speichern, ein untergeordnetes Bedienfeld enthält, wird dieses auch im resultierenden Fragment enthalten sein.
 
-1. Geben Sie im Dialogfeld &quot;Fragmenterstellung&quot;die folgenden Informationen an:
+1. Geben Sie im Dialogfeld „Fragmenterstellung“ die folgenden Informationen an:
 
    * **Name**: Name des Fragments. Der Standardwert ist der Elementname des Bedienfelds. Dies ist ein Pflichtfeld.
 
@@ -89,7 +89,7 @@ Wenn Sie außerdem ein XML-Schema oder eine XDP-Formularvorlage als Formularmode
 
    * **Tags**: Kennzeichnet Metadaten für das Fragment.
 
-   * **Zielpfad**: Repository-Pfad, in dem das Fragment gespeichert wird. Wenn Sie keinen Pfad angeben, wird ein Knoten mit dem Namen des Fragments neben dem Knoten erstellt, der das adaptive Formular enthält. Das Fragment wird in diesem Knoten gespeichert.
+   * **Zielpfad**: Pfad zum Repository, in dem das Fragment gespeichert wird. Wenn Sie keinen Pfad angeben, wird ein Knoten mit dem Namen des Fragments neben dem Knoten erstellt, der das adaptive Formular enthält. Das Fragment wird in diesem Knoten gespeichert.
 
    * **Formularmodell**: Je nach Formularmodell für das adaptive Formular wird das **XML-Schema**, die **Formularvorlage** oder **Ohne** angezeigt. Dies ist ein Feld, das nicht bearbeitet werden kann.
 
@@ -102,11 +102,11 @@ Wenn Sie **/** als Fragmentmodellstamm auswählen, wird die vollständige XSD-St
 
    ![save-fragment](assets/save-fragment.png)
 
-   Dialogfeld &quot;Als Fragment speichern&quot;
+   Dialogfeld „Als Fragment speichern“
 
 1. Klicken Sie auf **OK**.
 
-   Das Bedienfeld wird am angegebenen oder dem Standardspeicherort im Repository gespeichert. In einem adaptiven Formular wird das Fenster durch einen Schnappschuss des Fragments ersetzt. Wie unten gezeigt, werden das Bedienfeld „Allgemeine Informationen“ und seine untergeordneten Bedienfelder, „Persönliche Informationen“ und „Adresse“, als Fragment gespeichert.
+   Das Bedienfeld wird am angegebenen oder am Standardspeicherort im Repository gespeichert. In einem adaptiven Formular wird das Fenster durch einen Schnappschuss des Fragments ersetzt. Wie unten gezeigt, werden das Bedienfeld „Allgemeine Informationen“ und seine untergeordneten Bedienfelder, „Persönliche Informationen“ und „Adresse“, als Fragment gespeichert.
 
    Um das Fragment zu bearbeiten, klicken Sie in der Symbolleiste des Bedienfelds auf das Symbol **[!UICONTROL Element bearbeiten]**. Das Fragment wird in einer neuen Registerkarte oder einem neuen Fenster im Bearbeitungsmodus geöffnet.
 
@@ -123,7 +123,7 @@ Führen Sie die folgenden Schritte aus, um vollständige Fragmente in Formularen
 1. Wechseln Sie zur Seite zur Konfiguration der AEM-Web-Konsole unter https://[*Host*]:[*Port*]/system/console/configMgr.
 
 1. Suchen Sie nach **[!UICONTROL Konfigurations-Service für adaptive Formulare]** und klicken Sie darauf, um die Funktion im Bearbeitungsmodus zu öffnen.
-1. Deaktivieren **[!UICONTROL Platzhalter anstelle des Fragments aktivieren]** aktivieren, um vollständige Fragmente anstelle des Platzhalterbilds anzuzeigen.
+1. Deaktivieren Sie das Kontrollkästchen **[!UICONTROL Platzhalter anstelle des Fragments aktivieren]**, um vollständige Fragmente anstelle des Platzhalterbildes anzuzeigen.
 
 ### Einfügen eines Fragments in ein adaptives Formular {#insert-a-fragment-in-an-adaptive-form}
 
@@ -190,11 +190,11 @@ Sie können über die Benutzeroberfläche von [!DNL AEM Forms] mehrere Vorgänge
   </tr>
   <tr>
    <td><p>Eigenschaften anzeigen</p> </td>
-   <td><p>Öffnet den Bereich Eigenschaften . Im Bereich Eigenschaften können Sie Eigenschaften anzeigen und bearbeiten, eine Vorschau erstellen und ein Miniaturbild für das ausgewählte Fragment hochladen. Weitere Informationen finden Sie unter <a href="manage-form-metadata.md" target="_blank">Verwalten von Metadaten</a>.<br /> <br /> </p> </td>
+   <td><p>Öffnet das Bedienfeld „Eigenschaften“. Im Bedienfeld „Eigenschaften“ können Sie Eigenschaften anzeigen und bearbeiten, eine Vorschau erstellen und ein Miniaturbild für das ausgewählte Fragment hochladen. Weitere Informationen finden Sie unter <a href="manage-form-metadata.md" target="_blank">Verwalten von Metadaten</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Kopieren</p> </td>
-   <td><p>Kopiert das ausgewählte Fragment. Die Schaltfläche Einfügen wird in der Symbolleiste angezeigt.<br /> <br /> </p> </td>
+   <td><p>Kopiert das ausgewählte Fragment. Das Symbol „Einfügen“ wird in der Symbolleiste angezeigt.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Download</p> </td>
@@ -210,7 +210,7 @@ Sie können über die Benutzeroberfläche von [!DNL AEM Forms] mehrere Vorgänge
   </tr>
   <tr>
    <td><p>Wörterbuch erstellen</p> </td>
-   <td><p>Erstellt ein Wörterbuch zum Lokalisieren des ausgewählten Fragments. <!-- For more information, see <a href="lazy-loading-adaptive-forms.md" target="_blank">Localizing Adaptive Forms</a>.<br /> <br /> --> </p> </td>
+   <td><p>Erzeugt ein Wörterbuch zum Lokalisieren des ausgewählten Fragments. <!-- For more information, see <a href="lazy-loading-adaptive-forms.md" target="_blank">Localizing Adaptive Forms</a>.<br /> <br /> --> </p> </td>
   </tr>
   <tr>
    <td><p>Veröffentlichen/Veröffentlichung rückgängig machen</p> </td>
@@ -234,7 +234,7 @@ Zum Lokalisieren eines adaptiven Formulars, das adaptive Formularfragmente enth�
 ## Wichtige Hinweise zum Arbeiten mit Fragmenten {#key-points-to-remember-when-working-with-fragments}
 
 * Stellen Sie sicher, dass der Fragmentname eindeutig ist. Das Fragment kann nicht erstellt werden, wenn ein vorhandenes Fragment mit demselben Namen vorhanden ist.
-* Wenn Sie in einem XDP-basierten adaptiven Formular ein Bedienfeld speichern, das ein anderes XDP-Fragment enthält, wird das daraus resultierende Fragment automatisch an das untergeordnete XDP-Fragment gebunden. Bei einem XSD-basierten adaptiven Formular ist das resultierende Fragment an den Schemastamm gebunden.
+* Wenn Sie in einem XDP-basierten adaptiven Formular ein Bedienfeld, das ein anderes XDP-Fragment enthält, als Fragment speichern, wird das daraus resultierende Fragment automatisch an das untergeordnete XDP-Fragment gebunden. Bei XSD-basierten adaptiven Formularen wird das resultierende Fragment an den Schemastamm gebunden.
 * Wenn Sie ein adaptives Formularfragment erstellen, wird ein Fragmentknoten erstellt, der dem Knoten „guideContainer“ für ein adaptives Formular in CRXDe Lite ähnelt.
 * Ein Fragment, das ein anderes Formulardatenmodell verwendet, wird in einem adaptiven Formular nicht unterstützt. Zum Beispiel wird in einem XSD-basierten adaptiven Formular ein XDP-basiertes Fragment nicht unterstützt und umgekehrt.
 * Adaptive Formularfragmente sind in der AEM-Inhaltssuche auf der Registerkarte „Adaptive Formularfragmente“ verfügbar.

@@ -7,7 +7,7 @@ exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 93%
 
 ## AEM Trust Store {#aem-trust-store}
 
-Um asymmetrische kryptografische Vorgänge zu unterstützen, speichert AEM Zertifikate im Inhalts-Repository in einem globalen Trust Store. Die Inhalte sind öffentlich und stehen standardmäßig allen Publisher-Instanzen anonym zur Verfügung.
+Um asymmetrische, kryptografische Vorgänge zu unterstützen, speichert AEM Zertifikate innerhalb des Inhalts-Repositorys in einem globalen Trust Store. Die Inhalte sind öffentlich und stehen standardmäßig allen Publisher-Instanzen anonym zur Verfügung.
 
 ### Eigenschaften des Trust Store {#truststore-characteristics}
 

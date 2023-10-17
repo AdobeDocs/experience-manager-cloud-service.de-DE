@@ -5,7 +5,7 @@ exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
 source-wordcount: '231'
-ht-degree: 82%
+ht-degree: 99%
 
 ---
 
@@ -27,8 +27,8 @@ Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer
 
 1. Je nachdem, ob bereits Sammlungen zugeordnet wurden oder nicht, wählen Sie eine der folgenden Optionen aus:
 
-   * **Inhalt verknüpfen** - dies ist die erste verknüpfte Sammlung.
-   * **Sammlung verknüpfen** - Zugeordnete Sammlungen sind bereits konfiguriert.
+   * **Inhalt verknüpfen**: Die erste verknüpfte Sammlung
+   * **Sammlung verknüpfen**: Zugeordnete Sammlungen sind bereits konfiguriert
 
 1. Wählen Sie die erforderliche Sammlung aus.
 
@@ -44,7 +44,7 @@ Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer
 
 Nachdem Sie eine Sammlung zugewiesen haben, können Sie Folgendes tun:
 
-* **Entfernen** den Verband.
-* **Hinzufügen von Assets** in die Sammlung ein.
-* Wählen Sie ein Asset für weitere Aktionen aus.
-* Bearbeiten Sie das Asset.
+* Die Zuordnung **entfernen**.
+* Assets zu einer Sammlung **hinzufügen**.
+* Ein Asset für weitere Aktionen auswählen.
+* Das ausgewählte Asset bearbeiten.

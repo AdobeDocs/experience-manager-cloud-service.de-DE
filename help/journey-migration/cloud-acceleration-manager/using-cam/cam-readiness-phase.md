@@ -5,7 +5,7 @@ exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 51%
+ht-degree: 55%
 
 ---
 
@@ -29,7 +29,7 @@ Führen Sie die folgenden Schritte aus, um in die Bereitschaftsphase zu gelangen
    ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
-   >Weitere Informationen finden Sie unter Erstellen und Verwalten eines Projekts in Cloud Acceleration Manager .
+   >Weitere Informationen finden Sie unter „Erstellen und Verwalten eines Projekts in Cloud Acceleration Manager“.
 
 ## Verwenden der Karte „Best-Practices-Analyse“ {#best-practices-analysis}
 
@@ -159,7 +159,7 @@ Sie können den Bericht nach Wichtigkeit, Untertyp oder Anzahl filtern.
 ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Siehe [Interpretieren des Best Practices Analyzer-Berichts](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=de) um mehr über die Kategorien und Wichtigkeitsstufen der Ergebnisse zu erfahren.
+>Unter [Interpretieren des Best Practices Analyzer-Berichts](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=de) erfahren Sie mehr über die Ergebniskategorien und Wichtigkeitsstufen.
 
 #### Best-Practices-Bewertung {#best-practices-assessment}
 

@@ -7,7 +7,7 @@ exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 45%
+ht-degree: 96%
 
 ---
 
@@ -24,33 +24,33 @@ Diese beiden Funktionen können kombiniert und für [internationale, mehrsprachi
 
 >[!TIP]
 >
->Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie [Sites-Übersetzungs-Journey](/help/journey-sites/translation/overview.md). Es handelt sich um einen geführten Weg durch die Übersetzung Ihrer AEM Sites-Inhalte mit AEM leistungsstarken Übersetzungs-Tools. Ideal, wenn Sie keine AEM oder Übersetzungs-Erfahrung haben.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, gehen Sie die [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md) durch. Es ist ein geführter Weg durch die Übersetzung Ihrer AEM-Sites-Inhalte mit den leistungsstarken Übersetzungs-Tools von AEM und ideal, wenn Sie noch keine Erfahrung mit AEM oder Übersetzungen haben.
 
 ## Internationale, mehrsprachige Websites {#multinational-and-multilingual-sites}
 
 Sie können durch den kombinierten Einsatz von Multi Site Manager und Übersetzungs-Workflow auf effiziente Weise Inhalte für internationale, mehrsprachige Websites erstellen.
 
-In der Regel erstellen Sie eine primäre Site in einer Sprache und für ein bestimmtes Land und verwenden diese Inhalte dann als Grundlage für die anderen Sites, wobei Sie bei Bedarf eine Übersetzung verwenden.
+In der Regel erstellen Sie eine primäre Site in einer Sprache und für ein bestimmtes Land und verwenden dann diese Inhalte als Grundlage für die anderen Sites, wobei Sie bei Bedarf Übersetzungen vornehmen.
 
-1. [Übersetzen](translation/overview.md) die primäre Site in verschiedene Sprachen unterteilt.
+1. [Übersetzen](translation/overview.md) Sie die primäre Site in verschiedene Sprachen.
 1. Verwenden Sie [Multi Site Manager](msm/overview.md) für Folgendes:
-   1. Wiederverwenden von Inhalten der primären Site und deren Übersetzungen, um Websites für andere Länder und Kulturen zu erstellen.
+   1. Verwenden Sie die Inhalte der primären Site sowie ihre Übersetzungen, um Sites für andere Länder und Kulturen zu erstellen.
    1. Trennen Sie bei Bedarf Elemente von den Live Copies, um Lokalisierungsdetails hinzuzufügen.
 
 >[!TIP]
 >
 >Beschränken Sie die Verwendung von Multi Site Manager auf Inhalte in einer Sprache.
 >
->Verwenden Sie beispielsweise das primäre Englisch , um die englische Version der Seiten für die USA, Kanada und Großbritannien zu erstellen. Verwenden Sie dann die primäre französische Version, um die französische Seitenversion für Frankreich, die Schweiz, Kanada usw. zu erstellen.
+>Verwenden Sie z. B. die primäre englische Version, um die englische Seitenversion für die USA, Kanada und Großbritannien zu erstellen. Verwenden Sie dann die primäre französische Version, um die französische Seitenversion für Frankreich, die Schweiz, Kanada usw. zu erstellen.
 
 Das folgende Diagramm veranschaulicht, wie sich die Hauptkonzepte überschneiden (es sind jedoch nicht alle beteiligten Ebenen/Elemente dargestellt):
 
 ![Übersicht über die lokale Anpassung](assets/localization-overview.png)
 
-In diesem Szenario und vergleichbaren Versionen verwaltet MSM nicht die verschiedenen Sprachversionen als solche.
+In diesem und in vergleichbaren Szenarien verwaltet MSM die verschiedenen Sprachversionen nicht als solche.
 
-* [MSM](msm/overview.md) verwaltet die Bereitstellung übersetzter Inhalte von einem Blueprint (d. h. einem primären globalen Design) zu den Live Copies (d. h. den lokalen Sites) innerhalb der Grenzen einer Sprache.
-* Die [Übersetzung](translation/overview.md) Integrationsfunktionen von AEM mit Übersetzungsmanagementdiensten von Drittanbietern verwalten die Sprachen und übersetzen Inhalte in diese verschiedenen Sprachen.
+* [MSM](msm/overview.md) verwaltet die Bereitstellung übersetzter Inhalte von einem Blueprint (d. h. einem primären globalen) zu den Live Copys (d. h. den lokalen Sites) innerhalb der Grenzen einer Sprache.
+* Die AEM-Integrationsfunktionen zur [Übersetzung](translation/overview.md) verwalten mit Übersetzungs-Management-Diensten von Drittanbietern die Sprachen und die Übersetzung der Inhalte in diese verschiedenen Sprachen.
 
 Für erweiterte Anwendungsfälle kann MSM auch in allen Primärsprachen verwendet werden.
 

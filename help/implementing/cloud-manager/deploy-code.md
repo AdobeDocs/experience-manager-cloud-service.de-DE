@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 source-git-commit: 2d1d3ac98f8fe40ba5f9ab1ccec946c8448ddc43
 workflow-type: tm+mt
 source-wordcount: '1193'
-ht-degree: 68%
+ht-degree: 92%
 
 ---
 
@@ -70,26 +70,26 @@ Die Phase der **Staging-Bereitstellung** umfasst diese Schritte.
 Die **Staging-Test**-Phase umfasst diese Schritte.
 
 * **Produktfunktionstests**: Die Cloud Manager-Pipeline führt Tests aus, die für die Staging-Umgebung ausgeführt werden.
-   * Siehe [Produktfunktionstests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) für weitere Details.
+   * Weitere Informationen finden Sie unter [Produktfunktionstests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing).
 
 * **Benutzerdefinierte Funktionstests**: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig erfolgreich durchgeführt.
-   * Siehe [Benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) für weitere Details.
+   * Weitere Informationen finden Sie unter [Benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing).
 
 * **Testen von benutzerdefinierten Benutzeroberflächen**: Dieser Schritt ist eine optionale Funktion, mit der automatisch für benutzerdefinierte Programme erstellte Benutzeroberflächentests ausgeführt werden.
    * Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen).
-   * Siehe [Testen der benutzerdefinierten Benutzeroberfläche](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) für weitere Details.
+   * Weitere Informationen finden Sie unter [Benutzerdefinierte UI-Tests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
 
 * **Erlebnis-Audit**: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Bei Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests, die die Prüfungen ausführen, ein Schritt zur Erlebnisprüfung eingefügt.
    * Die konfigurierten Seiten werden an den Service übermittelt und ausgewertet.
    * Die Ergebnisse sind informativer Natur und zeigen die Bewertungen sowie die Änderung zwischen den aktuellen und vorherigen Bewertungen.
-   * Diese Einblicke sind nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Implementierung eingeführt wird.
-   * Siehe [Verstehen der Ergebnisse von Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md) für weitere Details.
+   * Diese Erkenntnis ist wertvoll, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wird.
+   * Weitere Einzelheiten finden Sie unter [Grundlegendes zu den Ergebnissen von Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 ![Staging-Tests](assets/stage-testing.png)
 
 ## Phase der Produktionsbereitstellung {#deployment-production}
 
-Der Bereitstellungsprozess für Produktions-Topologien unterscheidet sich geringfügig, um die Auswirkungen auf Besucher einer AEM Website zu minimieren.
+Der Prozess für die Bereitstellung in Produktionstopologien unterscheidet sich geringfügig, um die Auswirkungen auf die Besuchenden einer AEM-Site zu minimieren.
 
 Produktionsbereitstellungen nutzen im Allgemeinen die oben beschriebenen Schritte, aber auf rollierende Weise.
 
@@ -121,27 +121,27 @@ Die folgenden Schritte führen zu einer Zeitüberschreitung, wenn auf Benutzer-F
 
 ## Bereitstellungsprozess {#deployment-process}
 
-Alle Cloud-Dienste werden in einem fortlaufenden Prozess bereitgestellt, um zu gewährleisten, dass keine Ausfallzeiten entstehen. Siehe [Funktionsweise von rollierenden Implementierungen](/help/implementing/deploying/overview.md#how-rolling-deployments-work) , um mehr zu erfahren.
+Alle Cloud-Dienste werden in einem fortlaufenden Prozess bereitgestellt, um zu gewährleisten, dass keine Ausfallzeiten entstehen. Weitere Informationen finden Sie unter [Funktionsweise von rollierenden Bereitstellungen](/help/implementing/deploying/overview.md#how-rolling-deployments-work).
 
 >[!NOTE]
 >
 >Der Dispatcher-Cache wird bei jeder Bereitstellung gelöscht. Er wird anschließend aufgewärmt, damit die neuen Veröffentlichungsknoten Traffic akzeptieren.
 
-## Neuausführung einer Produktionsbereitstellung {#reexecute-deployment}
+## Erneutes Ausführen einer Produktionsbereitstellung {#reexecute-deployment}
 
-In seltenen Fällen können Produktionsbereitstellungsschritte aus Verlaufsgründen fehlschlagen. In solchen Fällen wird die Neuausführung des Produktionsbereitstellungsschritts unterstützt, solange der Produktionsbereitstellungsschritt abgeschlossen ist, unabhängig vom Fertigstellungstyp (z. B. abgebrochen oder nicht erfolgreich). Bei der erneuten Ausführung wird eine neue Ausführung mit derselben Pipeline erstellt, die aus drei Schritten besteht.
+In seltenen Fällen kann es vorkommen, dass Schritte der Produktionsbereitstellung aus vorübergehenden Gründen fehlschlagen. In solchen Fällen wird die Neuausführung des Produktionsbereitstellungsschritts unterstützt, solange der Produktionsbereitstellungsschritt abgeschlossen ist, unabhängig vom Fertigstellungstyp (z. B. abgebrochen oder nicht erfolgreich). Bei der erneuten Ausführung wird eine neue Ausführung mit derselben Pipeline erstellt, die aus drei Schritten besteht.
 
-1. Der Validierungsschritt - Dies ist im Wesentlichen dieselbe Validierung, die während einer normalen Pipeline-Ausführung erfolgt.
-1. Der Build-Schritt - Im Kontext einer erneuten Ausführung kopiert der Build-Schritt Artefakte und führt keinen neuen Build-Prozess aus.
-1. Der Schritt zur Produktionsbereitstellung : Hierbei werden dieselben Konfigurationen und Optionen wie beim Schritt zur Produktionsbereitstellung bei einer normalen Pipeline-Ausführung verwendet.
+1. Der Validierungsschritt – Dies ist im Wesentlichen dieselbe Validierung wie bei einer normalen Pipeline-Ausführung.
+1. Der Build-Schritt – Im Rahmen einer erneuten Ausführung kopiert der Build-Schritt Artefakte und führt keinen wirklich neuen Build-Prozess aus.
+1. Der Produktionsbereitstellungsschritt – Dieser Schritt verwendet dieselbe Konfiguration und dieselben Optionen wie der Produktionsbereitstellungsschritt bei einer normalen Pipeline-Ausführung.
 
-Wenn eine Neuausführung möglich ist, stellt die Produktions-Pipeline-Statusseite die **Neu ausführen** neben der üblichen **Build-Protokoll herunterladen** -Option.
+In solchen Fällen, in denen eine erneute Ausführung möglich ist, bietet die Statusseite der Produktions-Pipeline neben der üblichen Option **Build-Protokoll herunterladen** auch die Option **Erneut ausführen**.
 
-![Die Option &quot;Neu ausführen&quot;im Fenster der Pipeline-Übersicht](assets/re-execute.png)
+![Die Option „Erneut ausführen“ im Pipeline-Übersichtsfenster](assets/re-execute.png)
 
 >[!NOTE]
 >
->Bei einer erneuten Ausführung wird der Build-Schritt in der Benutzeroberfläche beschriftet, um anzuzeigen, dass er Artefakte kopiert und nicht neu erstellt.
+>Bei einer erneuten Ausführung wird der Build-Schritt in der Benutzeroberfläche mit dem Hinweis versehen, dass er Artefakte kopiert und nicht neu erstellt.
 
 ### Einschränkungen {#limitations}
 
@@ -152,13 +152,13 @@ Wenn eine Neuausführung möglich ist, stellt die Produktions-Pipeline-Statussei
 
 ### Erneutes Ausführen der API {#reexecute-API}
 
-Zusätzlich zur Verfügbarkeit in der Benutzeroberfläche können Sie [Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) um Trigger-Wiederausführungen sowie die Identifizierung von Ausführungen, die als Wiederausführungen ausgelöst wurden.
+Zusätzlich zur Verfügbarkeit in der Benutzeroberfläche können Sie [die Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) verwenden, um erneute Ausführungen auszulösen und Ausführungen zu identifizieren, die als erneute Ausführungen ausgelöst wurden.
 
 #### Auslösen einer erneuten Ausführung {#reexecute-deployment-api}
 
 Um eine Neuausführung Trigger, stellen Sie eine PUT-Anfrage an den HAL-Link `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` im Status der Produktionsbereitstellungs-Schritte.
 
-* Wenn dieser Link vorhanden ist, kann die Ausführung von diesem Schritt an neu gestartet werden.
+* Wenn diese Verknüpfung vorhanden ist, kann die Ausführung von diesem Schritt aus neu gestartet werden.
 * Wenn dies nicht der Fall ist, kann die Ausführung von diesem Schritt an nicht erneut gestartet werden.
 
 Dieser Link ist nur für den Schritt zur Produktionsbereitstellung verfügbar.
@@ -200,8 +200,8 @@ Dieser Link ist nur für den Schritt zur Produktionsbereitstellung verfügbar.
 
 Die Syntax des href-Werts des HAL-Links ist nur ein Beispiel. Der tatsächliche Wert sollte immer aus dem HAL-Link gelesen und nicht generiert werden.
 
-Die Übermittlung einer PUT-Anfrage an diesen Endpunkt führt bei Erfolg zu einer 201-Antwort und der Antworttext stellt die Darstellung der neuen Ausführung dar. Dies ähnelt dem Starten einer regulären Ausführung über die API.
+Das Senden einer PUT-Anfrage an diesen Endpunkt führt zu einer 201-Antwort bei Erfolg, wobei der Antworttext die Darstellung der neuen Ausführung ist. Dies ähnelt dem Starten einer regulären Ausführung über die API.
 
 #### Identifizieren einer erneut ausgeführten Ausführung {#identify-reexecution}
 
-Wiederausgeführte Ausführungen können durch den Wert identifiziert werden `RE_EXECUTE` im `trigger` -Feld.
+Erneute Ausführungen können durch den Wert `RE_EXECUTE` im Feld `trigger` identifiziert werden.

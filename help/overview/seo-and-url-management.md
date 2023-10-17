@@ -5,7 +5,7 @@ exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3705'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Es gibt einige anerkannte Best Practices für URLs.
 
 Wenn Sie URLs für Ihr AEM-Projekt bewerten, stellen Sie sich die folgenden Fragen:
 
-*&quot;Wenn ein Benutzer diese URL und keinen Inhalt auf der Seite sieht, könnte er beschreiben, worum es auf dieser Seite ging?&quot;*
+*„Wenn Benutzerinnen und Benutzer diese URL, jedoch keinen Inhalt der Seite sehen, wären sie dennoch in der Lage zu beschreiben, worum es auf dieser Seite geht?“*
 
 Wenn die Antwort „ja“ lautet, ist es wahrscheinlich, dass die URL für Suchmaschinen gut funktioniert.
 
@@ -55,7 +55,7 @@ wird `mybrand.com/products/product-detail.1234.html` vorgezogen
 
    * Planen Sie die Inhaltshierarchie gemäß dieser Richtlinie passend zur der Art und Weise, wie die Inhalte dargestellt werden.
 
-* Die Effektivität von Keywords in URLs nimmt bei mit zunehmender Länge der URL und späterer Position des Keywords ab. Mit anderen Worten: je kürzer, umso besser.
+* Die Effektivität von Keywords in URLs nimmt bei mit zunehmender Länge der URL und späterer Position des Keywords ab. Mit anderen Worten: je kürzer, desto besser.
 
    * Nutzen Sie die von AEM zur Verfügung gestellten Techniken und Funktionen zum Kürzen von URLs, um unnötige URL-Elemente zu entfernen.
    * Beispiel: `mybrand.com/en/myPage.html` wird `mybrand.com/content/my-brand/en/myPage.html` vorgezogen.
@@ -77,9 +77,9 @@ wird `mybrand.com/products/product-detail.1234.html` vorgezogen
 
 * Stellen Sie sicher, dass jede Seite nur von einem Protokoll bedient wird.
 
-   * Manchmal werden Sites über `http` bis ein Benutzer eine Seite erreicht, die beispielsweise ein Checkout- oder Anmeldeformular enthält, und zu diesem Zeitpunkt zu `https`. Wenn von dieser Seite aus verlinkt wird und der Benutzer auf `http`-Seiten zurückkehren und auf diese über `https` zugreifen kann, verfolgt die Suchmaschine diese als zwei getrennte Seiten.
+   * Manchmal werden Websites über `http` bedient, bis eine Benutzerin bzw. ein Benutzer eine Seite erreicht, die beispielsweise ein Zahlungsformular oder Anmeldeformular enthält, woraufhin die Seite in das `https`-Format wechselt. Wenn von dieser Seite aus verlinkt wird und der Benutzer auf `http`-Seiten zurückkehren und auf diese über `https` zugreifen kann, verfolgt die Suchmaschine diese als zwei getrennte Seiten.
 
-   * Google bevorzugt derzeit `https`-Seiten gegenüber `http`-Seiten. Aus diesem Grund ist es oft für alle Beteiligten einfacher, die gesamte Website zu bedienen `https`.
+   * Google bevorzugt derzeit `https`-Seiten gegenüber `http`-Seiten. Aus diesem Grund ist es häufig für alle Beteiligten einfacher, die ganze Website über `https` zu bedienen.
 
 ### Server-Konfiguration {#server-configuration}
 
@@ -87,7 +87,7 @@ Hinsichtlich der Server-Konfiguration können Sie mit den folgenden Schritten ge
 
 * Verwenden Sie eine `robots.txt`-Datei, um Crawling von nicht indizierten Inhalten zu vermeiden.
 
-   * Blockieren Sie **alles** Crawling in Testumgebungen.
+   * Blockieren Sie **jegliches** Crawling in Testumgebungen.
 
 * Richten Sie beim Launch einer neuen Website mit aktualisierten URLs eine 301-Weiterleitung ein, um sicherzustellen, dass das derzeitige SEO-Ranking nicht verloren geht.
 * Fügen Sie ein Favicon für Ihre Site hinzu.
@@ -145,7 +145,7 @@ Bei diesem Ansatz sind einige Punkte zu berücksichtigen:
 
 #### Sling-Servlets (eine Ebene nach unten) {#sling-servlets-one-level-down}
 
-**Sling**-Servlets ermöglichen die Registrierung von Servlets auf gegensätzliche Art und Weise. Anstatt ein Servlet zu adressieren und den Inhalt anzugeben, den das Servlet basierend auf den Abfrageparametern rendern soll, adressieren Sie den gewünschten Inhalt und geben das Servlet an, das den Inhalt basierend auf Sling-Selektoren rendern soll.
+**Sling**-Servlets ermöglichen die Registrierung von Servlets auf gegensätzliche Art und Weise. Anstatt ein Servlet zu adressieren und den Inhalt anzugeben, den das Servlet basierend auf den Abfrageparametern rendern soll, adressieren Sie den gewünschten Inhalt und legen das Servlet fest, das den Inhalt basierend auf Sling-Selektoren rendern soll.
 
 Der SCR-Vermerk für diese Art von Servlet sieht in etwa so aus:
 
@@ -243,7 +243,7 @@ Ein Beispiel dafür, wie dieses Problem auftritt:
 
 Es gibt Möglichkeiten, benutzerdefinierte Dispatch-Flush-Regeln zu konfigurieren, welche die kürzere URL zur Invalidierung des Caches der längeren URL zuordnen.
 
-Es gibt jedoch auch eine einfachere Möglichkeit, dies zu handhaben:
+Es gibt jedoch auch einfachere Möglichkeiten, dieses Problem zu beheben:
 
 1. **SlingResourceResolver-Regeln**
 
@@ -267,7 +267,7 @@ Es gibt jedoch auch eine einfachere Möglichkeit, dies zu handhaben:
    * von `/content/my-brand/my-page.html`
    * in `/my-page.html`
 
-   Dies entspricht der empfohlenen Vorgehensweise, URLs so kurz wie möglich zu halten.
+   Dies steht im Einklang mit den empfohlenen Verfahren, URLs so kurz wie möglich zu halten.
 
 1. **Zuordnen der URL-Ausgabe auf Seiten**
 
@@ -286,7 +286,7 @@ Es gibt jedoch auch eine einfachere Möglichkeit, dies zu handhaben:
 
 Bisher haben Sie die Zuordnungen gemeinsam mit der Logik in den Komponenten implementiert, um diese Zuordnungen bei der Ausgabe von URLs auf Seiten zu verwenden.
 
-Das letzte Teil des Puzzles besteht darin, diese gekürzten URLs zu verwalten, wenn sie beim Dispatcher ankommen, wobei `mod_rewrite` ins Spiel kommt. Der größte Vorteil bei der Verwendung von `mod_rewrite` ist, dass die URLs wieder ihrem langen Formular zugeordnet werden *before* sie werden an das Dispatcher-Modul gesendet. Das bedeutet, dass der Dispatcher die lange URL vom Veröffentlichungs-Server abfragt und diese entsprechend zwischenspeichert. Daher können alle Dispatcher-Flushes, die vom Veröffentlichungs-Server eintreffen, diesen Inhalt erfolgreich ungültig machen.
+Das letzte Teil des Puzzles besteht darin, diese gekürzten URLs zu verwalten, wenn sie beim Dispatcher ankommen, wobei `mod_rewrite` ins Spiel kommt. Der größte Vorteil bei der Verwendung von `mod_rewrite` besteht darin, dass die URLs zurück in ihre lange Form gebracht werden, *bevor* sie an das Dispatcher-Modul gesendet werden. Das bedeutet, dass der Dispatcher die lange URL vom Veröffentlichungs-Server abfragt und diese entsprechend zwischenspeichert. Daher können alle Dispatcher-Flushes, die vom Veröffentlichungs-Server eintreffen, diesen Inhalt erfolgreich ungültig machen.
 
 Um diese Regeln zu implementieren, können Sie `RewriteRule`-Elemente unter Ihrem virtuellen Host in der Apache HTTP Server-Konfiguration hinzufügen. Wenn Sie gekürzte URLs aus dem vorherigen Beispiel erweitern möchten, können Sie eine Regel implementieren, die folgendermaßen aussieht:
 
@@ -320,7 +320,7 @@ Das `href`-Attribut kann relativ oder absolut sein. Der Code sollte im Seiten-La
 
 ### Konfigurieren des Dispatchers für das Ignorieren von Groß- und Kleinschreibung {#configuring-the-dispatcher-for-case-insensitivity}
 
-Die Best Practice besteht darin, alle Seiten mit Kleinbuchstaben zu bedienen. Sie möchten jedoch nicht, dass Benutzende einen 404-Fehler erhalten, wenn sie versuchen, auf Ihre Website unter Verwendung von Großbuchstaben in der URL zugreifen. Aus diesem Grund empfiehlt Adobe, dass Sie eine Umschreiberegel in der Apache HTTP Server-Konfiguration hinzufügen, um alle eingehenden URLs in Kleinbuchstaben darzustellen. Darüber hinaus müssen Autoren dahingehend geschult werden, Seiten nur mit Namen in Kleinbuchstaben zu erstellen.
+Die Best Practice besteht darin, alle Seiten mit Kleinbuchstaben zu bedienen. Sie möchten jedoch nicht, dass Benutzende einen 404-Fehler erhalten, wenn sie Ihre Website unter Verwendung von Großbuchstaben in der URL aufrufen. Aus diesem Grund empfiehlt Adobe, dass Sie eine Umschreiberegel in der Apache HTTP Server-Konfiguration hinzufügen, um alle eingehenden URLs in Kleinbuchstaben darzustellen. Darüber hinaus müssen Autoren dahingehend geschult werden, Seiten nur mit Namen in Kleinbuchstaben zu erstellen.
 
 Um Apache so zu konfigurieren, dass sämtlicher eingehender Traffic in Kleinbuchstaben erfolgt, fügen Sie der Konfiguration `vhost` Folgendes hinzu:
 
@@ -349,7 +349,7 @@ Disallow: /
 
 Wahlweise können Sie in einer Live-Umgebung bestimmte Pfade ablehnen, die nicht indiziert werden sollen.
 
-Der Nachteil bei der Platzierung der `robots.txt` -Datei im Stammverzeichnis der Site ist, dass Dispatcher-Flush-Anfragen diese Datei löschen können und dass URL-Zuordnungen den Site-Stamm wahrscheinlich an einen anderen Ort als den `DOCROOT` wie in der Apache HTTP Server-Konfiguration definiert. Aus diesem Grund ist es üblich, diese Datei in der Autoreninstanz am Site-Stamm zu platzieren und sie in der Veröffentlichungsinstanz zu replizieren.
+Der Nachteil der Platzierung einer `robots.txt`-Datei im Stammverzeichnis der Website besteht darin, dass Flush-Anfragen des Dispatchers diese Datei löschen könnten und die URL-Zuordnungen den Stammordner der Site wahrscheinlich an einen anderen Ort als `DOCROOT` verschieben, wie in der Apache-HTTP-Server-Konfiguration festgelegt. Aus diesem Grund ist es üblich, diese Datei in der Autoreninstanz am Site-Stamm zu platzieren und sie in der Veröffentlichungsinstanz zu replizieren.
 
 ### Erstellen einer XML-Sitemap in AEM {#building-an-xml-sitemap-on-aem}
 
@@ -459,20 +459,20 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Darüber hinaus kann die für XML-Sitemaps implementierte Funktionalität auch in verschiedenen Anwendungsfällen verwendet werden, z. B. um den kanonischen Link hinzuzufügen oder die Sprache wechselt zum Kopf einer Seite. Siehe [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) -Schnittstelle für weitere Informationen.
+Darüber hinaus kann die für XML-Sitemaps implementierte Funktionalität auch in verschiedenen Anwendungsfällen verwendet werden, z. B. um den kanonischen Link hinzuzufügen oder die Sprache wechselt zum Kopf einer Seite. Weitere Informationen finden Sie in der [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html)-Oberfläche.
 
 ### Erstellen von 301-Weiterleitungen für veraltete URLs {#creating-redirects-for-legacy-urls}
 
 Beim Start einer Website mit einer neuen Struktur ist die Implementierung und Prüfung von 301-Weiterleitungen in Apache HTTP Server aus zwei Gründen wichtig:
 
-* Die veralteten URLs bauen über die Zeit hinweg SEO-Wert auf. Durch Implementierung einer Umleitung kann die Suchmaschine diesen Wert auf die neue URL anwenden.
-* Benutzer der Website könnten Lesezeichen für diese Seiten erstellt haben. Durch die Implementierung von Umleitungen können Sie sicherstellen, dass Benutzende auf diejenige Seite der neuen Site geleitet werden, die am ehesten dem entspricht, was sie auf der alten Site gesucht haben.
+* Die veralteten URLs bauen über die Zeit hinweg SEO-Wert auf. Durch Implementierung einer Weiterleitung kann die Suchmaschine diesen Wert auf die neue URL anwenden.
+* Benutzer der Website könnten Lesezeichen für diese Seiten erstellt haben. Durch die Implementierung von Weiterleitungen können Sie sicherstellen, dass Benutzende auf diejenige Seite der neuen Site geleitet werden, die am ehesten dem entspricht, was sie auf der alten Site gesucht haben.
 
 Werfen Sie einen Blick in den Abschnitt mit zusätzlichen Ressourcen, der Anleitungen zur Implementierung von Weiterleitungen des Typs 301 sowie ein Werkzeug zum Testen der Weiterleitung enthält.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Weitere Informationen finden Sie in den folgenden zusätzlichen Ressourcen:
+Weitere Informationen finden Sie in den zusätzlichen Ressourcen:
 
 <!--
 * [Resource Mapping](/help/sites-deploying/resource-mapping.md)

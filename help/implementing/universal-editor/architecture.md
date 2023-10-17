@@ -5,7 +5,7 @@ exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
 source-wordcount: '651'
-ht-degree: 75%
+ht-degree: 89%
 
 ---
 
@@ -16,7 +16,7 @@ Erfahren Sie mehr über die Architektur des universellen Editors und darüber, w
 
 ## Bausteine für Architekturen {#building-blocks}
 
-Der universelle Editor besteht aus vier wesentlichen Bausteinen, die interagieren und es Inhaltsautoren ermöglichen, beliebige Aspekte von Inhalten in jeder Implementierung zu bearbeiten, sodass Sie außergewöhnliche Erlebnisse bereitstellen, die Geschwindigkeit von Inhalten erhöhen und ein modernes Entwicklererlebnis bieten können.
+Der universelle Editor besteht aus vier wesentlichen Bausteinen, die interagieren und es Inhaltsautorinnen und -autoren ermöglichen, beliebige Aspekte von Inhalten in jeder Implementierung zu bearbeiten, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
 
 1. [Editoren](#editors)
 1. [Remote-App](#remote-app)
@@ -33,12 +33,12 @@ In diesem Dokument werden die einzelnen Bausteine und ihr Austausch von Daten be
 
 ### Editoren {#editors}
 
-* **Universeller Editor** – Der universelle Editor verwendet ein instrumentiertes DOM, um die Bearbeitung von Inhalten im Kontext zu ermöglichen. Siehe [Attribute und Typen](attributes-types.md) für Details zu den erforderlichen Metadaten. Im Dokument [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) finden Sie ein Beispiel für die Instrumentierung in AEM.
+* **Universeller Editor** – Der universelle Editor verwendet ein instrumentiertes DOM, um die Bearbeitung von Inhalten im Kontext zu ermöglichen. Lesen Sie [Attribute und Typen](attributes-types.md) für Details zu den notwendigen Metadaten. Im Dokument [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) finden Sie ein Beispiel für die Instrumentierung in AEM.
 * **Eigenschaftenleiste** – Einige Eigenschaften von Komponenten können nicht kontextbezogen bearbeitet werden, z. B. die Drehzeit eines Karussells oder welche Registerkarte für das Akkordeon immer geöffnet bzw. geschlossen werden soll. Um die Bearbeitung solcher Komponenteninformationen zu ermöglichen, wird in der Seitenleiste des Editors ein formularbasierter Editor bereitgestellt.
 
 ### Remote-App {#remote-app}
 
-Damit eine App im universellen Editor kontextbezogen bearbeitet werden kann, muss das DOM instrumentiert werden. Die Remote-App muss bestimmte Attribute im DOM rendern. Siehe [Attribute und Typen](attributes-types.md) für Details zu den erforderlichen Metadaten. Im Dokument [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) finden Sie ein Beispiel für die Instrumentierung in AEM.
+Damit eine App im universellen Editor kontextbezogen bearbeitet werden kann, muss das DOM instrumentiert werden. Die Remote-App muss bestimmte Attribute im DOM rendern. Lesen Sie [Attribute und Typen](attributes-types.md) für Details zu den notwendigen Metadaten. Im Dokument [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) finden Sie ein Beispiel für die Instrumentierung in AEM.
 
 Der universelle Editor strebt ein minimales SDK an, daher liegt die Instrumentierung in der Verantwortung der Remote-App-Implementierung.
 
@@ -78,7 +78,7 @@ Der universelle Editor sendet alle Inhaltsänderungen an einen zentralen Dienst,
 
 Weitere Informationen zum universellen Editor finden Sie in diesen Dokumenten.
 
-* [Einführung in den universellen Editor](introduction.md) - Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, sodass Sie außergewöhnliche Erlebnisse bereitstellen, die Inhaltsgeschwindigkeit erhöhen und ein modernes Entwicklererlebnis bieten können.
+* [Einführung in den universellen Editor](introduction.md) – Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
 * [Inhaltserstellung mit dem universellen Editor](authoring.md) – Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
 * [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md) - Erfahren Sie, wie der Universal Editor Inhalte veröffentlicht und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
 * [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) – Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.

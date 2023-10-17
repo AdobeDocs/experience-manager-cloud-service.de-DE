@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
 workflow-type: tm+mt
 source-wordcount: '2937'
-ht-degree: 85%
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ So verwenden Sie Inhaltsfragmentmodelle:
 
 1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann **Inhaltsfragmentmodelle**.
 1. Navigieren Sie zu dem Ordner, der Ihrer [Konfiguration oder Unterkonfiguration](/help/assets/content-fragments/content-fragments-configuration-browser.md) entspricht.
-1. Verwendung **Erstellen** , um den Assistenten zu öffnen.
+1. Verwenden Sie **Erstellen**, um den Assistenten zu öffnen.
 
    >[!CAUTION]
    >
@@ -39,7 +39,7 @@ Sie können auch verschiedene Eigenschaften definieren, beispielsweise **Tags**,
 
    ![Titel und Beschreibung](assets/cfm-models-02.png)
 
-1. Verwendung **Erstellen** , um das leere Modell zu speichern. Eine Meldung weist auf den Erfolg der Aktion hin. Sie können **Öffnen** das Modell sofort bearbeiten oder **Fertig** , um zur Konsole zurückzukehren.
+1. Verwenden Sie **Erstellen**, um das leere Modell zu speichern. Eine Meldung weist auf den Erfolg der Aktion hin. Sie können **Öffnen** auswählen, um das Modell sofort zu bearbeiten oder **Fertig**, um zur Konsole zurückzukehren.
 
 ## Definieren des Inhaltsfragmentmodells {#defining-your-content-fragment-model}
 
@@ -56,12 +56,12 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 
    Nach dem Öffnen zeigt der Modell-Editor Folgendes an:
 
-   * left: Felder bereits definiert
+   * Links: bereits definierte Felder
    * Rechts: verfügbare **Datentypen** für das Erstellen von Feldern (und **Eigenschaften**, die für erstellte Felder verwendet werden können)
 
    >[!NOTE]
    >
-   >Wenn ein Feld als **Erforderlich**, die **Titel** im linken Bereich mit einem Sternchen (**&#42;**).
+   >Wenn ein Feld ein **Pflichtfeld** ist, wird die **Bezeichnung** im linken Bereich mit einem Stern markiert (**&#42;**).
 
 ![Eigenschaften](assets/cfm-models-03.png)
 
@@ -80,7 +80,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
         >
         >Wenn Sie die Eigenschaft **Eigenschaftsname** für einen Datentyp manuell aktualisieren, beachten Sie, dass Namen nur A–Z, a–z, 0–9 und den Unterstrich „_“ als Sonderzeichen enthalten dürfen.
         >
-        >Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder aktualisieren Sie diese Zeichen.
+        >Wenn Modelle, die in früheren Versionen von AEM erstellt wurden, unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
      Beispiel:
 
@@ -127,11 +127,11 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 * **JSON-Objekt**
    * Ermöglicht es dem Autor des Inhaltsfragments, JSON-Syntax in die entsprechenden Elemente eines Fragments einzugeben.
       * Damit AEM direktes JSON speichern kann, das Sie von einem anderen Service kopiert/eingefügt haben.
-      * Die JSON-Datei wird in GraphQL als JSON-Datei übergeben und ausgegeben.
-      * Umfasst JSON-Syntaxhervorhebung, automatische Vervollständigung und Fehlerhervorhebung im Inhaltsfragmente-Editor.
+      * Das JSON wird weitergegeben und als JSON in GraphQL ausgegeben.
+      * Umfasst JSON-Syntaxhervorhebung, automatische Vervollständigung und Fehlerhervorhebung im Inhaltsfragmenteditor.
 * **Registerkarten-Platzhalter**
    * Ermöglicht die Einführung von Registerkarten zur Bearbeitung des Inhalts von Inhaltsfragmenten.
-Dies wird als Trennzeichen im Modell-Editor angezeigt, der Abschnitte der Liste der Inhaltsdatentypen trennt. Jede Instanz stellt den Beginn einer neuen Registerkarte dar.
+Dies wird im Modelleditor als Trennlinie dargestellt, welche Abschnitte der Liste der Inhaltsdatentypen voneinander trennt. Jede Instanz stellt den Beginn einer neuen Registerkarte dar.
 Im Fragment-Editor wird jede Instanz als Registerkarte angezeigt.
      >[!NOTE]
      >
@@ -147,13 +147,13 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
 
   >[!CAUTION]
   >
-  >Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder aktualisieren Sie diese Zeichen.
+  >Wenn Modelle, die in früheren Versionen von AEM erstellt wurden, unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
 * **Rendern als**
-Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Häufig können Sie mit dieser Eigenschaft definieren, ob der Autor eine einzelne Instanz des Felds sieht oder ob es möglich ist, mehrere Instanzen zu erstellen.
+Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Mit dieser Eigenschaft können Sie oft festlegen, ob die Autorin bzw. der Autor nur eine einzige Instanz des Feldes sieht oder ob mehrere Instanzen erstellt werden dürfen.
 
 * **Feldbezeichnung**
-Eingabe einer **Feldbezeichnung** generiert automatisch eine **Eigenschaftsname**, die dann bei Bedarf manuell aktualisiert werden kann.
+Bei Eingabe einer **Feldbezeichnung** wird automatisch ein **Eigenschaftsname** generiert, der dann bei Bedarf manuell aktualisiert werden kann.
 
 * **Validierung**
 Die grundlegende Basic ist mittels Mechanismen wie etwa die Eigenschaft **Erforderlich** verfügbar. Einige Datentypen verfügen über zusätzliche Validierungsfelder. Weitere Informationen finden Sie unter [Validierung](#validation).
@@ -173,7 +173,7 @@ Content (für das spezifische Feld) muss für alle Inhaltsfragmente, die anhand 
 
   Dadurch wird sichergestellt, dass Inhaltsersteller Content, der bereits einem anderen Fragment desselben Modells hinzugefügt wurde, nicht wiederholen können.
 
-  Beispielsweise kann ein **einzeiliges Textfeld** mit dem Namen `Country` im Inhaltsfragmentmodell nicht den Wert `Japan` in zwei abhängigen Inhaltsfragmenten haben. Wenn die zweite Instanz versucht wird, wird eine Warnung angezeigt.
+  Beispielsweise kann ein **einzeiliges Textfeld** mit dem Namen `Country` im Inhaltsfragmentmodell nicht den Wert `Japan` in zwei abhängigen Inhaltsfragmenten haben. Eine Warnung wird ausgegeben, wenn versucht wird, eine zweite Instanz zu erstellen.
 
   >[!NOTE]
   >
@@ -185,7 +185,7 @@ Content (für das spezifische Feld) muss für alle Inhaltsfragmente, die anhand 
 
   >[!CAUTION]
   >
-  >Wenn Sie MSM verwenden möchten (wodurch Kopien von Inhaltsfragmenten erstellt werden), müssen Sie **Eindeutig** -Einschränkungen sollten aus allen Datentypen entfernt werden, die in den entsprechenden Inhaltsfragmentmodellen verwendet werden.
+  >Wenn Sie MSM verwenden möchten (wodurch Kopien von Inhaltsfragmenten erstellt werden), sollten Sie alle **Eindeutig**-Einschränkungen aus allen Datentypen entfernen, die in den jeweiligen Inhaltsfragmentmodellen verwendet werden.
 
 * Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Inhaltsreferenz](#content-reference)**.
 
@@ -429,11 +429,11 @@ So veröffentlichen Sie ein Inhaltsfragmentmodell:
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
 1. Wählen Sie Ihr Modell und anschließen die Option **Veröffentlichen** aus der Symbolleiste aus.
-Der veröffentlichte Status wird in der Konsole angezeigt.
+Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
 
    >[!NOTE]
    >
-   >Wenn Sie ein Inhaltsfragment veröffentlichen, für das das Modell noch nicht veröffentlicht wurde, wird dies in einer Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+   >Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
 ## Rückgängigmachen der Veröffentlichung eines Inhaltsfragmentmodells {#unpublishing-a-content-fragment-model}
 
@@ -445,7 +445,7 @@ So machen Sie die Veröffentlichung eines Inhaltsfragmentmodells rückgängig:
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
 1. Wählen Sie Ihr Modell und anschließen die Option **Veröffentlichung aufheben** aus der Symbolleiste aus.
-Der veröffentlichte Status wird in der Konsole angezeigt.
+Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
 
 Wenn Sie versuchen, die Veröffentlichung eines Modells aufzuheben, das aktuell von einem oder mehreren Fragmenten verwendet wird, werden Sie über eine Fehlermeldung über Folgendes informiert:
 
@@ -497,7 +497,7 @@ Sie können **Gesperrte** Modelle entweder aus der Konsole heraus oder im Modell
 
    * Sie können ein Modell zum Aktivieren von Bearbeitungen **Entsperren**.
 
-     Wenn Sie **Entsperren**, wird ein Warnhinweis angezeigt und Sie müssen die Variable **Entsperren** Aktion:
+     Wenn Sie **Entsperren** wählen, wird eine Warnung angezeigt, und Sie müssen die **Entsperren**-Aktion bestätigen:
      ![Meldung beim Entsperren des Inhaltsfragmentmodells](assets/cfm-model-unlock-message.png)
 
      Anschließend können Sie das Modell zum Bearbeiten öffnen.
@@ -507,7 +507,7 @@ Sie können **Gesperrte** Modelle entweder aus der Konsole heraus oder im Modell
 
 * Modell-Editor
 
-   * Wenn Sie ein gesperrtes Modell öffnen, werden Sie gewarnt und Ihnen drei Aktionen angezeigt: **Abbrechen**, **Schreibgeschützt anzeigen**, **Bearbeiten**:
+   * Wenn Sie ein gesperrtes Modell öffnen, werden Sie gewarnt und es werden Ihnen drei Aktionen angezeigt: **Abbrechen**, **Schreibgeschützt anzeigen**, **Bearbeiten**:
 
      ![Meldung beim Anzeigen eines gesperrten Inhaltsfragmentmodells](assets/cfm-model-editor-lock-message.png)
 

@@ -10,7 +10,7 @@ exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
 source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
 source-wordcount: '2025'
-ht-degree: 76%
+ht-degree: 98%
 
 ---
 
@@ -45,7 +45,7 @@ ANDI funktioniert mit allen gängigen Internetbrowsern. Detaillierte Anweisungen
 
 ### Herunterladen und Installieren des „Ultramarine-Accessible“-Designs
 
-Das „Ultramarine-Accessible“-Design („Ultramarinblau – Barrierefreiheit“) ist ein Referenzdesign. Es hilft, zu veranschaulichen, wie Sie Farbkontrast- und andere Probleme mit der Barrierefreiheit in einem adaptiven Formular beheben können. Adobe empfiehlt die Erstellung eines benutzerdefinierten Designs für die Produktionsumgebung basierend auf den von Ihrem Unternehmen genehmigten Stilen. Führen Sie die folgenden Schritte aus, um das Thema in Ihre AEM-Instanz hochzuladen:
+Das „Ultramarine-Accessible“-Design („Ultramarinblau – Barrierefreiheit“) ist ein Referenzdesign. Es hilft, zu veranschaulichen, wie Sie Farbkontrast- und andere Probleme mit der Barrierefreiheit in einem adaptiven Formular beheben können. Adobe empfiehlt, ein benutzerdefiniertes Design für die Produktionsumgebung zu erstellen, das auf den in Ihrem Unternehmen zulässigen Stilen basiert. Führen Sie die folgenden Schritte aus, um das Thema in Ihre AEM-Instanz hochzuladen:
 
 1. Laden Sie das Designpaket herunter.
 1. Navigieren Sie in Ihrer AEM-Instanz zu **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigation](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulare]**.
@@ -96,9 +96,9 @@ Nachdem Sie ein barrierefreies Design angewendet haben, führen Sie die folgende
 
 ### 2. Angeben angemessener Beschriftungen für Formularsteuerelemente {#provide-proper-labels-for-form-controls}
 
-Die Beschriftung oder der Titel einer Komponente gibt an, was die Formularkomponente darstellt. Der Text „Vorname“ weist Benutzende zum Beispiel darauf hin, dass sie ihren Vornamen in ein Textfeld eingeben müssen. Damit Bildschirmlesehilfen auf die Beschriftung zugreifen können, wird sie programmgesteuert mit einer Formularkomponente verknüpft. Alternativ kann das Formularsteuerelement mit zusätzlichen Barrierefreiheitsinformationen konfiguriert werden.
+Die Beschriftung oder der Titel einer Komponente gibt an, was die Formularkomponente darstellt. Der Text „Vorname“ weist Benutzende zum Beispiel darauf hin, dass sie ihren Vornamen in ein Textfeld eingeben müssen. Damit Bildschirmlesehilfen auf die Beschriftung zugreifen können, wird sie programmgesteuert mit einer Formularkomponente verknüpft. Alternativ kann das Formularsteuerelement mit zusätzlichen Informationen zur Barrierefreiheit konfiguriert werden.
 
-Die Beschriftung, die von Bildschirmlesehilfen wahrgenommen wird, muss nicht unbedingt mit der visuellen Beschriftung übereinstimmen. In einigen Fällen möchten Sie den Zweck des Steuerelements möglicherweise genauer untersuchen. Für jedes Feldobjekt in einem Formular können die Barrierefreiheitsoptionen verwendet werden, um anzugeben, was die Bildschirmlesehilfe ankündigt, um das spezifische Formularfeld zu identifizieren.
+Die Beschriftung, die von Bildschirmlesehilfen wahrgenommen wird, muss nicht unbedingt mit der visuellen Beschriftung übereinstimmen. In einigen Fällen möchten Sie den Zweck des Steuerelements möglicherweise genauer untersuchen. Für jedes Feldobjekt in einem Formular können die Barrierefreiheitsoptionen verwendet werden, um festzulegen, was die Bildschirmlesehilfe anzeigt, um das spezifische Formularfeld zu identifizieren.
 
 Gehen Sie wie folgt vor, um die Barrierefreiheitsoption zu verwenden:
 
@@ -109,7 +109,7 @@ Gehen Sie wie folgt vor, um die Barrierefreiheitsoption zu verwenden:
 
 ![Barrierefreiheitsoptionen in Formularkomponenten](assets/accessibility-options.png)
 
-**Eigener Text** Formularautoren geben den Inhalt im Textfeld „Eigener Text“ der Barrierefreiheitsoptionen an. Die Hilfstechnologie, wie Bildschirmlesegeräte, verwendet diesen benutzerdefinierten Text. Die Verwendung der Einstellung Titel ist in den meisten Szenarien die beste Option. Erwägen Sie die Erstellung von benutzerdefiniertem Bildschirmtext nur, wenn Sie den Reader oder eine Kurzbeschreibung nicht verwenden können.
+**Eigener Text** Formularautoren geben den Inhalt im Textfeld „Eigener Text“ der Barrierefreiheitsoptionen an. Die Hilfstechnologie, wie Bildschirmlesegeräte, verwendet diesen benutzerdefinierten Text. In den meisten Szenarien ist die Verwendung der Einstellung „Titel“ die beste Option. Sie sollten nur dann benutzerdefinierten Text für Bildschirmlesehilfen erstellen, wenn die Option „Titel“ oder eine Kurzbeschreibung nicht möglich ist.
 
 **Kurzbeschreibung** Bei den meisten Komponenten wird die Kurzbeschreibung zur Laufzeit angezeigt, wenn der Benutzer den Mauszeiger über die Komponente hält. Sie können diese Option im Feld „Kurzbeschreibung“ unter der Option für den Hilfeinhalt festlegen.
 
@@ -126,7 +126,7 @@ Gehen Sie wie folgt vor, um die Barrierefreiheitsoption zu verwenden:
 
 ### 3. Angabe von Textäquivalenten für Bilder {#provide-text-equivalents-for-images}
 
-Bilder können bei einigen Benutzern dazu beitragen, das Verständnis zu verbessern. Für Benutzer, die Bildschirmlesehilfen verwenden, verringern Bilder jedoch die Barrierefreiheit Ihres Formulars. Wenn Sie Bilder verwenden möchten, geben Sie Textbeschreibungen für alle Bilder an.
+Bilder können bei einigen Benutzenden dazu beitragen, das Verständnis zu verbessern. Für Benutzende, die Bildschirmlesehilfen verwenden, verringern Bilder jedoch die Barrierefreiheit Ihres Formulars. Wenn Sie Bilder verwenden möchten, geben Sie Textbeschreibungen für alle Bilder an.
 
 Stellen Sie sicher, dass der Text das Objekt und seinen Zweck im Formular beschreibt. Eine Bildschirmlesehilfe liest diesen alternativen Text, wenn ein Bild auftritt. Für ein Bild muss immer ein alternativer Text angegeben sein.
 
@@ -136,26 +136,26 @@ Wählen Sie eine Bildkomponente aus und tippen Sie auf ![cmppr](assets/cmppr.png
 
 ### 4. Sicherstellen von ausreichendem Farbkontrast {#provide-sufficient-color-contrast}
 
-Bei Barrierefreiheits-Designs müssen zusätzliche Richtlinien zur Farbverwendung beachtet werden. Formularautoren können Farben verwenden, um das Erscheinungsbild von Formularen zu verbessern, indem sie verschiedene Formularkomponenten hervorheben. Eine unsachgemäße Verwendung von Farbe kann jedoch das Lesen eines Formulars für Personen mit unterschiedlichen Fähigkeiten erschweren oder unmöglich machen.
+Bei Barrierefreiheits-Designs müssen zusätzliche Richtlinien zur Farbverwendung beachtet werden. Formularautorinnen und -autoren können Farben verwenden, um das Erscheinungsbild von Formularen zu verbessern, indem sie verschiedene Formularkomponenten hervorheben. Eine unsachgemäße Verwendung von Farbe kann jedoch das Lesen eines Formulars für Personen mit unterschiedlichen Fähigkeiten erschweren oder unmöglich machen.
 
-Sehbehinderte Benutzer benötigen einen hohen Kontrast zwischen Text und Hintergrund, um digitale Inhalte zu lesen. Ohne ausreichenden Kontrast kann ein Formular für einige Benutzer schwierig, wenn nicht gar unmöglich zu lesen sein.
+Benutzende mit Sehbehinderung benötigen einen hohen Kontrast zwischen Text und Hintergrund, um digitale Inhalte zu lesen. Ohne ausreichenden Kontrast kann ein Formular für manche Benutzende schwer oder gar nicht lesbar sein.
 
-Es wird empfohlen, die standardmäßigen Schrift- und Hintergrundfarben zu verwenden - Inhalte in schwarzer Farbe auf einem weißen Hintergrund. Wenn Sie die Standardfarben ändern, wählen Sie entweder eine dunkle Vordergrundfarbe auf einer hellen Hintergrundfarbe oder umgekehrt.
+Es wird empfohlen, die standardmäßigen Schrift- und Hintergrundfarben zu verwenden: Inhalte in schwarzer Farbe auf einem weißen Hintergrund. Wenn Sie die Standardfarben ändern, wählen Sie entweder eine dunkle Vordergrundfarbe auf einer hellen Hintergrundfarbe oder umgekehrt.
 
 <!-- See [Creating custom themes for Adaptive Forms](creating-custom-adaptive-form-themes.md), for more information about changing the color contrast and theme for the Adaptive Forms. -->
 
 ### 5. Sicherstellen, dass Formularsteuerelemente mit der Tastatur aufgerufen werden können {#ensure-that-form-controls-are-keyboard-accessible}
 
-Ein barrierefreies Formular kann vollständig mit nur der Tastatur oder einem entsprechenden Eingabegerät ausgefüllt werden. Benutzer mit eingeschränkter Mobilität oder Sehfähigkeit haben möglicherweise keine andere Wahl, als die Tastatur zu verwenden, und viele Benutzer, die eine Maus verwenden können, bevorzugen die Eingabe über die Tastatur. Indem Sie die verschiedenen Eingabemethoden berücksichtigen, erstellen Sie nicht nur barrierefreie Formulare, sondern auch Formulare, die den Vorlieben aller Benutzer besser entsprechen.
+Ein barrierefreies Formular kann vollständig mit nur der Tastatur oder einem entsprechenden Eingabegerät ausgefüllt werden. Benutzende mit eingeschränkter Mobilität oder Sehfähigkeit haben möglicherweise keine andere Wahl, als die Tastatur zu verwenden, und viele Benutzende, die eine Maus verwenden können, bevorzugen die Eingabe über die Tastatur. Indem Sie die verschiedenen Eingabemethoden berücksichtigen, erstellen Sie nicht nur barrierefreie Formulare, sondern auch Formulare, die den Vorlieben aller Benutzenden besser entsprechen.
 
 Die folgenden Tastaturbefehle sind in [!DNL AEM Forms] verfügbar.
 
 | Aktion | Tastaturbefehl |
 |---|---|
-| Den Cursor durch ein Formular bewegen | Tab |
+| Den Cursor in einem Formular vorwärts bewegen | Tab |
 | Den Cursor in einem Formular rückwärts bewegen | Umsch+Tab |
-| Zum nächsten Bereich wechseln | Alt+Rechtspfeil |
-| Zum vorherigen Bereich wechseln | Alt+Linkspfeil |
+| Zum nächsten Bedienfeld wechseln | Alt+Rechtspfeil |
+| Zum vorherigen Bedienfeld wechseln | Alt+Linkspfeil |
 | Zurücksetzen der ausgefüllten Daten in einem Formular | Alt+R |
 | Formular senden | Alt+S |
 

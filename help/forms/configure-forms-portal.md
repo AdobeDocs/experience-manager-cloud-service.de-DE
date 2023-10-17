@@ -5,7 +5,7 @@ exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
 source-wordcount: '1839'
-ht-degree: 84%
+ht-degree: 94%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 84%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-In einem typischen formularzentrierten Portal-Bereitstellungsszenario sind die Formularentwicklung und die Portalentwicklung zwei getrennte Aktivitäten. Während Formularentwickler Formulare in einem Repository entwerfen und speichern, erstellen Webentwickler eine Webanwendung, um Formulare aufzulisten und die Übermittlung von Formularen zu verarbeiten. Forms wird in die Webstufe kopiert, da keine Kommunikation zwischen dem Formular-Repository und der Webanwendung besteht.
+In einem typischen formularzentrierten Portal-Bereitstellungsszenario sind die Formularentwicklung und die Portalentwicklung zwei getrennte Aktivitäten. Während Formular-Entwicklerinnen bzw. -Entwickler Formulare in einem Repository entwerfen und speichern, erstellen Web-Entwicklerinnen bzw. -Entwickler eine Web-Applikation, um Formulare aufzulisten und die Übermittlung von Formularen zu verarbeiten. Formulare werden in die Web-Stufe kopiert, da keine Kommunikation zwischen dem Formular-Repository und der Web-Applikation besteht.
 
-Solche Szenarien führen oft zu Managementproblemen und Produktionsverzögerungen. Wenn beispielsweise eine neuere Version eines Formulars im Repository verfügbar ist, müssen Sie das Formular auf der Webstufe ersetzen, die Webanwendung ändern und das Formular erneut auf der öffentlichen Website bereitstellen. Die erneute Bereitstellung der Webanwendung kann zu Serverausfällen führen. In der Regel handelt es sich bei dem Serverausfall um eine geplante Aktivität, weshalb die Änderungen nicht sofort an die öffentliche Site gesendet werden können.
+Solche Szenarien führen oft zu Managementproblemen und Produktionsverzögerungen. Wenn beispielsweise eine neuere Version eines Formulars im Repository verfügbar ist, müssen Sie das Formular auf der Web-Stufe ersetzen, die Web-Applikation ändern und das Formular erneut auf der öffentlichen Website bereitstellen. Die erneute Bereitstellung der Web-Applikation kann zu Server-Ausfällen führen. In der Regel handelt es sich bei dem Server-Ausfall um eine geplante Aktivität, weshalb die Änderungen nicht sofort an die öffentliche Site gesendet werden können.
 
 AEM Forms bietet Portalkomponenten, die den Verwaltungsaufwand und Produktionsverzögerungen reduzieren. Mit den Komponenten können Web-Entwickler Formularportale auf mit Adobe Experience Manager (AEM) erstellten Websites erstellen und anpassen. 
 
@@ -41,7 +41,7 @@ AEM Forms bietet standardmäßig die folgenden Portalkomponenten:
 
 * Search &amp; Lister: Mit dieser Komponente können Sie Formulare aus dem Formular-Repository auf Ihrer Portalseite auflisten und Konfigurationsoptionen bereitstellen, um Formulare basierend auf angegebenen Kriterien aufzulisten.
 
-* Drafts &amp; Submissions: Während die Komponente „Search &amp; Lister“ Formulare anzeigt, die vom Formularautor veröffentlicht wurden, zeigt die Komponente „Drafts &amp; Submissions“ Formulare, die für den späteren Abschluss als Entwurf gespeichert wurden, sowie gesendete Formulare an. Diese Komponente bietet jedem angemeldeten Benutzer ein personalisiertes Erlebnis.
+* Drafts &amp; Submissions: Während die Komponente „Search &amp; Lister“ Formulare anzeigt, die vom Formularautor veröffentlicht wurden, zeigt die Komponente „Drafts &amp; Submissions“ Formulare, die für den späteren Abschluss als Entwurf gespeichert wurden, sowie gesendete Formulare an. Diese Komponente bietet jeder angemeldeten Person ein personalisiertes Erlebnis.
 
 * Link: Mit dieser Komponente können Sie einen Link zu einem Formular an einer beliebigen Stelle auf der Seite erstellen.
 
@@ -104,7 +104,7 @@ Führen Sie die folgenden Schritte aus, um Unified Storage Connector für AEM-Wo
 
 ## Aktivieren von Komponenten des Formularportals {#enable-forms-portal-components}
 
-Um eine beliebige Kernkomponente (einschließlich der vordefinierten Portalkomponenten) in einer Adobe Experience Manager-Site (AEM) zu verwenden, müssen Sie eine Proxy-Komponente erstellen und für Ihre Site aktivieren. Informationen zum Erstellen einer Proxy-Komponente und Aktivieren von Portalkomponenten finden Sie unter [Verwenden von Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=de#create-proxy-components).
+Um eine beliebige Kernkomponente (einschließlich der vordefinierten Portalkomponenten) auf einer Adobe Experience Manager-Site (AEM) zu verwenden, müssen Sie eine Proxy-Komponente erstellen und für Ihre Site aktivieren. Informationen zum Erstellen einer Proxy-Komponente und Aktivieren von Portalkomponenten finden Sie unter [Verwenden von Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=de#create-proxy-components).
 
 Sobald eine Portalkomponente aktiviert ist, können Sie sie in der Autoreninstanz Ihrer Sites-Seite verwenden.
 

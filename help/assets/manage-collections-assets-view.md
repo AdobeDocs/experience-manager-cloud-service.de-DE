@@ -1,11 +1,11 @@
 ---
 title: Verwalten von Sammlungen
-description: Eine Sammlung ist ein Satz von Assets in der Experience Manager Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden.
+description: Eine Sammlung ist ein Satz von Assets innerhalb der Experience Manager Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden.
 exl-id: 33c889f5-c989-4772-9591-db62f50e5c80
 source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="assets_collections"
 >title="Verwalten von Sammlungen"
->abstract="Eine Sammlung ist eine Reihe von Assets, Ordnern oder sonstigen Sammlungen in der Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzenden gemeinsam verwendet werden. Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten. Sie können mehrere Sammlungen für eine Benutzerin bzw. einen Benutzer freigeben. Jede Sammlung enthält Verweise auf Assets. Die referenzielle Integrität von Assets wird sammlungsübergreifend aufrechterhalten."
+>abstract="Eine Sammlung ist ein Satz von Assets, Ordnern oder sonstigen Sammlungen in der Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzenden gemeinsam verwendet werden. Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten. Sie können mehrere Sammlungen für eine Benutzerin bzw. einen Benutzer freigeben. Jede Sammlung enthält Verweise auf Assets. Die referenzielle Integrität von Assets wird sammlungsübergreifend aufrechterhalten."
 
-Eine Sammlung ist ein Satz von Assets, Ordnern oder anderen Sammlungen in der Adobe Experience Manager Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden.
+Eine Sammlung ist ein Satz von Assets, Ordnern oder sonstigen Sammlungen in der Adobe Experience Manager Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden.
 
 Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten.
 
@@ -92,7 +92,7 @@ Entfernen von Assets aus einer Sammlung
 
 ## Verwalten einer Smart-Sammlung {#manage-smart-collection}
 
-Speichern Sie Ihre Suchergebnisse als Smart-Sammlung, um die Sammlungsinhalte dynamisch zu aktualisieren. Wenn dem Asset-Ansichts-Repository Assets hinzugefügt werden, die den beim Erstellen der Smart-Sammlung definierten Suchkriterien entsprechen, werden die Inhalte der Smart-Sammlung beim Öffnen einer Smart-Sammlung automatisch aktualisiert.
+Speichern Sie Ihre Suchergebnisse als Smart-Sammlung, um die Sammlungsinhalte dynamisch zu aktualisieren. Wenn zum Assets-Ansichts-Repository Assets hinzugefügt werden, die den beim Erstellen der Smart-Sammlung festgelegten Suchkriterien entsprechen, wird der Inhalt der Smart-Sammlung beim Öffnen einer Smart-Sammlung automatisch aktualisiert.
 
 ### Erstellen einer Smart-Sammlung {#create-smart-collection}
 
@@ -162,7 +162,7 @@ Anzeigen und Bearbeiten von Sammlungsmetadaten
 
 ![Freigeben von Links für Assets](assets/share-link-collections.png)
 
-Weitere Informationen zum Freigeben von Sammlungslinks für externe Akteure finden Sie unter [Freigeben von Links für Assets](/help/assets/share-links-for-assets-view.md).
+Weitere Informationen zum Freigeben von Sammlungs-Links für externe Projektbeteiligte finden Sie unter [Freigeben von Links zu Assets](/help/assets/share-links-for-assets-view.md).
 
 ## Herunterladen von Sammlungen {#download-collection}
 
@@ -188,7 +188,7 @@ Löschen von Sammlungen
 
 ## Nächste Schritte {#next-steps}
 
-* Stellen Sie Produkt-Feedback mit der [!UICONTROL Feedback] Option in der Benutzeroberfläche der Assets-Ansicht verfügbar
+* Geben Sie Produkt-Feedback über die Option [!UICONTROL Feedback] in der Benutzeroberfläche der Assets-Ansicht
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 

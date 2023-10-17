@@ -5,7 +5,7 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '644'
-ht-degree: 74%
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ Der Status Ihrer SSL-Zertifikate ist auf der SSL-Zertifikatsseite auf einen Blic
 * **Grün**: Dieser Status zeigt an, dass Ihr Zertifikat ab dem aktuellen Datum mindestens 60 Tage gültig ist.
 
 * **Orange**: Dieser Status gibt an, dass Ihr Zertifikat in weniger als 60 Tagen ablaufen wird.
-   * Es ist an der Zeit, sicherzustellen, dass Sie planen, Ihr Zertifikat zu erneuern und es über die Cloud Manager-Benutzeroberfläche zu ersetzen, um möglichen Site-Zugriff oder -Ausfall zu vermeiden.
+   * Sie sollten sicherstellen und planen, Ihr Zertifikat zu erneuern und über die Cloud Manager-Benutzeroberfläche zu ersetzen, um mögliche Website-Zugriffe oder Ausfälle zu vermeiden.
    * Cloud Manager sendet in der Benutzeroberfläche regelmäßige Benachrichtigungen, um Sie über einen bevorstehenden Zertifikatablauf zu informieren.
 
 * **Rot**: Dieser Status gibt an, dass das SSL-Zertifikat abgelaufen ist.
@@ -39,7 +39,7 @@ Wenn ein Zertifikat abläuft, funktionieren die Domains, die mit dem abgelaufene
 
 >[!NOTE]
 >
->Ein Benutzer muss Mitglied der **Business Owner** oder **Bereitstellungsmanager** Rolle zum Aktualisieren eines SSL-Zertifikats in Cloud Manager.
+>Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um ein SSL-Zertifikat in Cloud Manager zu aktualisieren.
 
 ## Ersetzen eines SSL-Zertifikats {#replace-ssl-certificate}
 
@@ -49,7 +49,7 @@ Ein SSL-Zertifikat kann durch Befolgen der gleichen Schritte, die im Abschnitt [
 
 Das Entfernen von Zertifikaten aus Cloud Manager ist eine dauerhafte Aktion, die nicht rückgängig gemacht werden kann. Als Best Practice empfiehlt Adobe, SSL-Dateien lokal zu speichern, bevor sie in Cloud Manager gelöscht werden.
 
-Cloud Manager ermöglicht es nicht, ein SSL-Zertifikat zu löschen, dem eine oder mehrere Domains zugeordnet sind. Alle verknüpften Domains müssen vor dem Löschen des SSL-Zertifikats gelöscht werden. Siehe [Verwalten benutzerdefinierter Domänennamen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) , um mehr zu erfahren.
+Cloud Manager ermöglicht es nicht, ein SSL-Zertifikat zu löschen, dem eine oder mehrere Domains zugeordnet sind. Alle verknüpften Domains müssen vor dem Löschen des SSL-Zertifikats gelöscht werden. Weitere Informationen finden Sie unter [Verwalten von benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
 
 Gehen Sie wie folgt vor, um ein SSL-Zertifikat zu löschen.
 
@@ -62,14 +62,14 @@ Gehen Sie wie folgt vor, um ein SSL-Zertifikat zu löschen.
 
 >[!NOTE]
 >
->Ein Benutzer muss Mitglied der **Business Owner** oder **Bereitstellungsmanager** Rolle zum Löschen eines SSL-Zertifikats in Cloud Manager.
+>Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um ein SSL-Zertifikat in Cloud Manager zu löschen.
 
 ## Bereits vorhandene CDN-Konfigurationen {#pre-existing-cdn}
 
-Wenn Sie über eine bereits vorhandene CDN-Konfiguration für Ihr SSL-Zertifikat verfügen, enthält die **SSL-Zertifikate** -Seite, die Sie dazu ermutigt, diese Konfigurationen über die Benutzeroberfläche hinzuzufügen, damit sie in Cloud Manager sichtbar und konfigurierbar sind.
+Wenn Sie über eine bereits vorhandene CDN-Konfiguration für Ihr SSL-Zertifikat verfügen, finden Sie auf der Seite **SSL-Zertifikate** eine informative Nachricht, die Sie dazu ermutigt, diese Konfigurationen über die Benutzeroberfläche hinzuzufügen, damit sie in Cloud Manager sichtbar und konfigurierbar sind.
 
 Die Nachricht verschwindet, sobald alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche migriert wurden. Es kann 1–2 Werktage dauern, bis die Nachricht nicht mehr angezeigt wird.
 
-Siehe [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) für weitere Details.
+Weitere Details finden Sie unter [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
 Eine ähnliche Nachricht wird auch auf den Seiten **IP-Zulassungsliste** und **Umgebungen** für Umgebungen mit bereits vorhandenen CDN-Konfigurationen für IP-Zulassungslisten oder benutzerdefinierte Domain-Namen gezeigt.

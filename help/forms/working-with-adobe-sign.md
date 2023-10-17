@@ -29,7 +29,7 @@ ht-degree: 96%
 In einem typischen Szenario mit [!DNL Adobe Sign] und adaptiven Formularen füllt ein Benutzer ein adaptives Formular aus, um einen Service zu beantragen, für den Signaturen von mindestens einer Partei erforderlich sind. Beispielsweise sind für einen Hypotheken- und Kreditkartenantrag rechtskräftige Signaturen von allen Kreditnehmern und Mitantragstellern erforderlich. Um elektronische Signatur-Workflows für ähnliche Szenarien zu aktivieren, können Sie [!DNL Adobe Sign] in ein adaptives Formular integrieren. Einige weitere Anwendungsbeispiele für [!DNL Adobe Sign] sind:
 
 * Geschäftsabschlüsse von jedem Gerät aus mit vollautomatischen Prozessen für Vorschlag, Angebot und Vertrag.
-* Schnelle Fertigstellung von Personalprozessen und Bereitstellung digitaler Erlebnisse für Ihre Angestellten.
+* Schnelleres Abschließen von Prozessen im Personalwesen und Zugang zu digitalen Abläufen für Ihre Mitarbeitenden.
 * Kürzere Vertragszyklen und schnelleres Onboarding Ihrer Lieferanten.
 * Erstellen digitaler Workflows zur Automatisierung häufig verwendeter Prozesse.
 
@@ -203,7 +203,7 @@ Es kann einen oder mehrere Empfänger für eine Adobe Sign-Vereinbarung geben. W
      >
      >Vergewissern Sie sich, dass die E-Mail-Adresse des ersten bzw. einzigen Empfängers (sofern es einen einzelnen Empfänger gibt) nicht mit dem [!DNL Adobe Sign]-Konto identisch ist, das zum Konfigurieren von AEM Cloud Services verwendet wird.
 
-   * **[!UICONTROL Authentifizierungsmethode für Empfänger]:** Geben Sie die Authentifizierungsmethode für einen Empfänger an, bevor Sie die Adobe Sign-Vereinbarung öffnen. Sie können wählen zwischen Telefon, Wissensdatenbank, Social Identity-basierter Authentifizierung und [Regierungskennung](https://helpx.adobe.com/de/sign/using/adobesign-authentication-government-id.html) für [!DNL Adobe Acrobat Sign]. Für [!DNL Adobe Acrobat Sign for Government] Sie können zwischen Telefon- und wissensbasierter Authentifizierung wählen.
+   * **[!UICONTROL Authentifizierungsmethode für Empfänger]:** Geben Sie die Authentifizierungsmethode für einen Empfänger an, bevor Sie die Adobe Sign-Vereinbarung öffnen. Sie können für [!DNL Adobe Acrobat Sign] zwischen Authentifizierung per Telefon, Wissensdatenbank, Social Media-Profil und [amtlichem Lichtbildausweis](https://helpx.adobe.com/de/sign/using/adobesign-authentication-government-id.html) wählen. Bei [!DNL Adobe Acrobat Sign for Government] können Sie zwischen telefonischer und wissensbasierter Authentifizierung wählen.
 
    >[!NOTE]
    >

@@ -1,51 +1,51 @@
 ---
 title: Aktionszentrum
-description: Nutzung des Aktionszentrums, um bequem Maßnahmen bei Vorfällen und anderen wichtigen Informationen zu ergreifen
+description: Nutzen Sie das Aktionszentrum, um bequem auf Vorfälle und andere wichtige Informationen reagieren zu können
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 source-git-commit: 4adae6ffe45dcd2b80d7d199fc29a806ce5e78c4
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 25%
+ht-degree: 95%
 
 ---
 
 # Aktionszentrum {#actions-center}
 
-AEM als Cloud Service sendet E-Mail-Benachrichtigungen an das Aktionszentrum, wenn kritische Zwischenfälle auftreten, die sofortiges Handeln erfordern, und proaktive Empfehlungen für Optimierungen. Beispiele dafür sind eine blockierte Warteschlange oder ein ablaufender Satz von Anmeldeinformationen. Der vollständige Satz der Benachrichtigungstypen von Actions Center kann im Abschnitt [unten stehende Tabelle](#supported-notification-types), die sich im Laufe der Zeit ausweiten wird.
+AEM as a Cloud Service sendet Aktionszentrums-Benachrichtigungs-E-Mails bei kritischen Vorfällen, die sofortiges Handeln erfordern, sowie proaktive Empfehlungen für Optimierungen. Beispiele sind eine blockierte Warteschlange oder ein ablaufender Satz von Anmeldeinformationen. Die vollständige Liste der Aktionszentrums-Benachrichtigungstypen ist in der [Tabelle unten](#supported-notification-types) zu sehen, die im Laufe der Zeit erweitert wird.
 
-Wenn eine E-Mail-Benachrichtigung des Aktionszentrums empfangen wird, kann darauf geklickt werden, um AEM Aktionszentrum von as a Cloud Service mit einem Popup zu öffnen, in dem ein zusätzlicher Kontext angezeigt wird, der die Aktion für einen Kunden erklärt.
+Wenn eine Aktionszentrums-Benachrichtigungs-E-Mail empfangen wird, kann darauf geklickt werden, um das Aktionszentrum von AEM as a Cloud Service mit einem Popup zu öffnen, in dem ein zusätzlicher Kontext angezeigt wird, der einer Kundin oder einem Kunden die Aktion erklärt.
 
-Zusätzlich zur Anzeige von Informationen über die gerade angeklickte E-Mail-Benachrichtigung dient das Aktionszentrum als Drehscheibe, über den Sie den Satz aktueller und älterer Benachrichtigungen anzeigen und verwalten können. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
+Zusätzlich zur Anzeige von Informationen über die gerade angeklickte Benachrichtigungs-E-Mail dient das Aktionszentrum als Drehscheibe, über den Sie den Satz aktueller und älterer Benachrichtigungen anzeigen und verwalten können. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
-Im Aktionszentrum werden zwei allgemeine Benachrichtigungskategorien angezeigt:
+Im Aktionszentrum werden zwei übergeordnete Benachrichtigungskategorien angezeigt:
 
 1. Operative Vorfälle: Ein Ereignis ist aufgetreten, für das normalerweise eine sofortige Lösung erforderlich ist. Beispiel: Beheben einer blockierten Warteschlange.
 1. Proaktiv Empfehlungen: Adobe hat eine Empfehlung für eine Aktion, die eine Kundin oder ein Kunde in naher Zukunft durchführen sollte. Es kann sich beispielsweise darum handeln, nicht mehr auf eine veraltete Benutzeroberfläche zu verweisen.
 
-Siehe [unten stehende Tabelle](#supported-notification-types) für die Benachrichtigungen, die derzeit im Aktionszentrum unterstützt werden.
+In der [Tabelle unten](#supported-notification-types) finden Sie die derzeit im Aktionszentrum unterstützten Benachrichtigungen.
 
-Im Aktionszentrum können Sie ein bestimmtes Programm und eine bestimmte Umgebung auswählen, die sich durch Filtern nach diesem Bereich auswirkt.
+Im Aktionszentrum können Sie ein bestimmtes Programm und eine bestimmte Umgebung auswählen, wodurch in diesem Umfang gefiltert wird.
 
 ## Konfiguration {#configuration}
 
-Erstellen Sie zum Konfigurieren des Empfangs von E-Mail-Benachrichtigungen des Aktionszentrums die beschriebenen Produktprofile [in diesem Artikel](/help/journey-onboarding/notification-profiles.md), d. h. Benachrichtigung bei Vorfällen - Cloud Service und proaktive Benachrichtigung - Cloud Service. Weisen Sie diesen Profilen auch die entsprechenden Adoben-IDs aus Ihrer Organisation zu. Auf diese Weise kann ein Administrator bestimmen, welche Benutzer für den Erhalt dieser E-Mail-Benachrichtigungen qualifiziert sind.
+Um den Empfang von Aktionszentrums-Benachrichtigungs-E-Mail zu konfigurieren, erstellen Sie die in diesem Artikel beschriebenen [Produktprofile](/help/journey-onboarding/notification-profiles.md), nämlich Benachrichtigung bei Vorfällen – Cloud Service und proaktive Benachrichtigung – Cloud Service. Weisen Sie diesen Profilen auch die entsprechenden Adobe-IDs aus Ihrer Organisation zu. Auf diese Weise kann ein Admin bestimmen, welche Personen für den Erhalt dieser Benachrichtigungs-E-Mails qualifiziert sind.
 
 >[!NOTE]
->Aktionen Center E-Mail-Benachrichtigungen funktionieren auf Organisationsebene, sodass Abonnenten Benachrichtigungen für alle Programme und Umgebungen innerhalb dieser Programme erhalten.
+>Aktionszentrums-Benachrichtigungs-E-Mails werden auf Organisationsebene erstellt, sodass die Abonnierenden Benachrichtigungen für alle Programme und Umgebungen innerhalb dieser Programme erhalten.
 
 ## Detaillierter Benutzerfluss {#detailed-user-flow}
 
-Durch Klicken auf die E-Mail gelangen Sie zum Aktionszentrum mit einem Popup-Fenster, in dem der Kontext der angeklickten Benachrichtigung sowie in einigen Fällen Links zu weiteren Informationen angezeigt werden, die beschreiben, wie Korrekturmaßnahmen ergriffen werden können. Sie können auch direkt auf das Aktionszentrum zugreifen unter [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), wo Sie das entsprechende Programm und die entsprechende Umgebung auswählen können.
+Durch Klicken auf die E-Mail gelangen Sie zum Aktionszentrum mit einem Popup-Fenster, in dem der Kontext der angeklickten Benachrichtigung sowie in einigen Fällen Links zu zusätzlichen Informationen angezeigt werden, die beschreiben, wie Korrekturmaßnahmen ergriffen werden können. Sie können auch direkt auf das Aktionszentrum zugreifen unter [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), wo Sie das entsprechende Programm und die entsprechende Umgebung auswählen können.
 
 ![Details zu Vorfällen](/help/operations/assets/incident-details.png)
 
-Klicken Sie auf **Weitere Infos** Der Link navigiert zum Benutzer zu diesem Artikel, in dem der Benachrichtigungstyp im [Tabelle mit unterstützten Benachrichtigungstypen](#supported-notification-types) im Folgenden finden Sie Leitlinien zu den zu ergreifenden Maßnahmen.
+Wenn Sie auf den Link **Mehr erfahren** klicken, gelangen Sie zu diesem Artikel, in dem der Benachrichtigungstyp in der Tabelle [Unterstützte Benachrichtigungstypen](#supported-notification-types) unten aufgeführt ist, die Hinweise zu den zu ergreifenden Maßnahmen enthält.
 
-Im Aktionszentrum wird eine Liste weiterer aktueller Benachrichtigungen angezeigt. Es wird empfohlen, mithilfe der Aktionsliste eine Benachrichtigung zu bestätigen, um der Adobe mitzuteilen, dass Ihr Unternehmen über die Aufgabe informiert ist, und die Benachrichtigung später aufzulösen, wenn Abhilfemaßnahmen ergriffen wurden.
+Im Aktionszentrum wird eine Liste weiterer aktueller Benachrichtigungen angezeigt. Es wird empfohlen, dass Sie mithilfe der Aktionsliste eine Benachrichtigung bestätigen, um Adobe mitzuteilen, dass Ihr Unternehmen über die Aufgabe informiert ist, und damit die Benachrichtigung später aufgelöst wird, wenn Korrekturmaßnahmen ergriffen worden sind.
 
 ![Benachrichtigungsliste](/help/operations/assets/notification-list.png)
 
-In den meisten Fällen sollte das Popup-Fenster den erforderlichen Kontext zur Lösung des Problems bieten. Wenn jedoch Fragen zur Adobe-Unterstützung vorliegen, können Sie auf die **Support kontaktieren** im Popup-Fenster. Dadurch wird ein Formular eingeblendet, in dem Sie die Frage beschreiben und zur Erstellung eines Support-Tickets einreichen können. Das Formular enthält auch einen Verweis auf die spezifische Benachrichtigung, sodass ein Support-Mitarbeiter der Adobe den entsprechenden Kontext hat.
+In den meisten Fällen sollte das Popup den erforderlichen Kontext bieten, um das Problem zu beheben. Wenn jedoch Fragen für den Adobe-Support vorliegen, können Sie auf den Link **Support kontaktieren** im Popup klicken. Dadurch wird ein Formular eingeblendet, in dem Sie die Frage beschreiben und zur Erstellung eines Support-Tickets einreichen können. Das Formular enthält auch einen Verweis auf die spezifische Benachrichtigung, sodass die Kontaktperson des Adobe-Supports über den entsprechenden Kontext verfügt.
 
 ![Support 1 kontaktieren](/help/operations/assets/contact-support1.png)
 
@@ -57,17 +57,17 @@ Wie alle Support-Tickets wird es [auf der Registerkarte „Support-Fälle“ in 
 
 ## Welche Benachrichtigungen werden angezeigt? {#which-notification}
 
-AEM as a Cloud Service verfügt über mehrere Arten von Benachrichtigungen, aber im Aktionszentrum wird nur eine Teilmenge angezeigt, wie in der unten stehenden Tabelle dargestellt.
+AEM as a Cloud Service verfügt über mehrere Arten von Benachrichtigungen, aber nur eine Teilmenge wird im Aktionszentrum angezeigt, wie in der unten stehenden Tabelle dargestellt.
 
 | Benachrichtigungstyp | Beschreibung | Vorgehensweise bei der Konfiguration | Wird im Aktionszentrum angezeigt |
 |---|---|---|---|
-| Operative Vorfälle | Kritische Vorfälle, die sofortiges Handeln erfordern | Benutzer, der dem Produktprofil &quot;Incident Notification - Cloud Service&quot;zugewiesen ist | X |
-| Proaktive Empfehlungen | Zu planende Optimierungen | Dem Produktprofil &quot;Proaktive Benachrichtigung - Cloud Service&quot;zugewiesener Benutzer | X |
-| Cloud Manager-Pipeline-Status | Informationen zum Zustand Ihrer Pipelines | Benutzende mit den Rollen „Geschäftsinhaber“, „Programm-Manager“ oder „Bereitstellungs-Manager“ und aktiviertem Kontrollkästchen „Sonstige“ in den [Experience Cloud-Voreinstellungen](https://experience.adobe.com/preferences), als [hier beschrieben](/help/implementing/cloud-manager/notifications.md). |   |
+| Operative Vorfälle | Kritische Vorfälle, die sofortiges Handeln erfordern | Benutzerin bzw. Benutzer, die/der dem Produktprofil „Benachrichtigung bei Vorfällen – Cloud Service“ zugewiesen ist | X |
+| Proaktive Empfehlungen | Zu planende Optimierungen | Benutzerin bzw. Benutzer, die/der dem Produktprofil „proaktive Benachrichtigung – Cloud Service“ zugewiesen ist | X |
+| Cloud Manager-Pipeline-Status | Informationen zum Zustand Ihrer Pipelines | Benutzende mit den Rollen „Geschäftsinhaber“, „Programm-Manager“ oder „Bereitstellungs-Manager“ und aktiviertem Kontrollkästchen „Sonstige“ in den [Experience Cloud-Voreinstellungen](https://experience.adobe.com/preferences), wie [hier beschrieben](/help/implementing/cloud-manager/notifications.md). |   |
 
 ## Unterstützte Benachrichtigungstypen {#supported-notification-types}
 
-In der folgenden Tabelle sind die Benachrichtigungstypen aufgeführt, die derzeit im Aktionszentrum unterstützt werden. Benachrichtigungen sind derzeit auf Produktionsumgebungen beschränkt.
+In der folgenden Tabelle sind die Benachrichtigungsarten aufgeführt, die derzeit im Aktionszentrum unterstützt werden. Benachrichtigungen sind derzeit auf Produktionsumgebungen beschränkt.
 
 | Benachrichtigungstyp | Verwandtes Produktprofil | Korrekturmaßnahmen |
 |---|---|---|

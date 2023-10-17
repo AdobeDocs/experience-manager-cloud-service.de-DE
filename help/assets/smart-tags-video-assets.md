@@ -7,7 +7,7 @@ exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1212'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ Video-Tagging ist standardmäßig in [!DNL Adobe Experience Manager] as a [!DNL 
 
 ## Taggen von Videos mit Smart-Tags beim Hochladen {#smart-tag-assets-on-ingestion}
 
-Wenn Sie [Video-Assets in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] hochladen](add-assets.md#upload-assets), werden die Videos verarbeitet. Sobald die Verarbeitung abgeschlossen ist, finden Sie weitere Informationen auf der Registerkarte [!UICONTROL Allgemein] auf der Seite [!UICONTROL Asset-Eigenschaften]. Smart-Tags werden unter [!UICONTROL Smart-Tags] automatisch zum Video hinzugefügt. Asset-Microservices verwenden [!DNL Adobe Sensei] , um diese Smart-Tags zu erstellen.
+Wenn Sie [Video-Assets in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] hochladen](add-assets.md#upload-assets), werden die Videos verarbeitet. Sobald die Verarbeitung abgeschlossen ist, finden Sie weitere Informationen auf der Registerkarte [!UICONTROL Allgemein] auf der Seite [!UICONTROL Asset-Eigenschaften]. Smart-Tags werden unter [!UICONTROL Smart-Tags] automatisch zum Video hinzugefügt. Asset Microservices verwendet [!DNL Adobe Sensei], um diese Smart-Tags zu erstellen.
 
 ![Smart-Tags werden Videos hinzugefügt und auf der Registerkarte „Allgemein“ der Asset-Eigenschaften angezeigt.](assets/smart-tags-added-to-videos.png)
 

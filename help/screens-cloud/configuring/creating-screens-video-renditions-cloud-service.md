@@ -5,7 +5,7 @@ exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
 source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 44%
+ht-degree: 93%
 
 ---
 
@@ -25,45 +25,45 @@ Gehen Sie wie folgt vor, um von Screens Content Provider aus Video-Ausgabedarste
 1. Gehen Sie in Screens Content Provider zu Ihrem Kanal.
 
    >[!NOTE]
-   >Siehe [Verwenden des Screens Content Providers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) für weitere Details.
+   >Weitere Informationen finden Sie unter [Verwenden von Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=de#screens-content-provider).
 
-1. Klicken Sie in der linken Navigationsleiste auf den Bereich Tools und dann auf **Assets** und klicken Sie anschließend auf **Verarbeitungsprofile**.
+1. Klicken Sie in der linken Navigationsleiste auf den Abschnitt „Tools“, dann auf **Assets** und dann auf **Verarbeitungsprofile**.
 
-   ![Auf Verarbeitungsprofile klicken](/help/screens-cloud/assets/configure/screens-cp-3.png)
+   ![Klicken auf „Verarbeitungsprofile“](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
-1. Klicken **Erstellen** , um ein Verarbeitungsprofil zu erstellen.
+1. Klicken Sie auf **Erstellen**, um ein Verarbeitungsprofil zu erstellen.
 
-   ![Klicken Sie auf Erstellen](/help/screens-cloud/assets/configure/screens-video-2.png).
+   ![Klicken auf „Erstellen“](/help/screens-cloud/assets/configure/screens-video-2.png)
 
-1. Geben Sie den **Namen** ein, z. B. **ScreensVerarbeitungsprofil**.
+1. Geben Sie den **Namen** ein, z. B. **ScreensVerarbeitungsProfil**.
 
-   ![Dialogfeld &quot;Verarbeitungsprofil&quot;mit hervorgehobenem Feld &quot;Name&quot;.](/help/screens-cloud/assets/configure/screens-video-3.png)
+   ![Dialogfeld &quot;Verarbeitungsprofil&quot;mit hervorgehobenem Feld &quot;Name&quot;](/help/screens-cloud/assets/configure/screens-video-3.png)
 
-1. Navigieren Sie zu **Video** Registerkarte, damit Sie eine Videokodierung hinzufügen können, und klicken Sie dann auf **Neu hinzufügen**.
+1. Navigieren Sie zur Registerkarte **Video**, um eine Videocodierung hinzuzufügen, und klicken Sie dann auf **Neue hinzufügen**.
 
-   ![Dialogfeld &quot;Verarbeitungsprofil&quot;mit hervorgehobener Schaltfläche &quot;Neu hinzufügen&quot;.](/help/screens-cloud/assets/configure/screens-video-4a.png)
+   ![Dialogfeld &quot;Verarbeitungsprofil&quot;mit hervorgehobener Schaltfläche &quot;Neu hinzufügen&quot;](/help/screens-cloud/assets/configure/screens-video-4a.png)
 
-1. Geben Sie den **Kodierungsnamen**, wie z. B. **screens-fullhd** und die **Bitrate** als **2500** ein.
+1. Geben Sie den **Codierungsnamen** wie z. B. **screens-fullhd** und die **Bitrate** als **2500** ein.
 
    ![Dialogfeld &quot;Verarbeitungsprofil&quot;mit hervorgehobener Schaltfläche Speichern.](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >Verwenden Sie den Kodierungsnamen, der mit &quot;screens-&quot;beginnt. Nur bei diesen Videoausgabeformaten wird davon ausgegangen, dass sie das Videoerlebnis in Screens as a Cloud Service wiedergeben. Geben Sie die Bitrate ein, mit der Ihre Videos funktionieren (2500 kBit/s für 720 px und 5000 kBit/s für 1080 px).
+   >Verwenden Sie den Codierungsnamen, der mit „screens-“ beginnt. Nur bei diesen Videoausgabedarstellungen wird davon ausgegangen, dass sie das Videoerlebnis in Screens as a Cloud Service wiedergeben. Geben Sie die Bitrate ein, mit der Ihre Videos funktionieren (2500 kbps für Videos mit 720 px und 5000 kbps für 1080 px).
 
    >[!NOTE]
-   >Für Videos können mehrere Video-Ausgabedarstellungen mit unterschiedlicher Breite/Höhe/Bitrate hinzugefügt werden. Alle Bildschirme und Ausgabedarstellungen werden von den Screens-Geräten heruntergeladen, auch wenn das Gerät nur die Videoausgabedarstellung wiedergibt.
+   >Für Ihre Videos können mehrere Video-Ausgabedarstellungen mit unterschiedlicher Breite/Höhe/Bitrate hinzugefügt werden. Alle „screens-“-Ausgabedarstellungen werden von den Screens-Geräten heruntergeladen, auch wenn das Gerät nur Video-Ausgabedarstellungen wiedergibt.
 
 1. Klicken Sie auf **Speichern**.
 
-1. Wählen Sie das Verarbeitungsprofil aus und klicken Sie auf **Anwenden von Profilen auf Ordner**.
+1. Wählen Sie das Verarbeitungsprofil aus und klicken Sie auf **Profil auf Ordner anwenden**.
 
    ![Profil auf Ordner anwenden](/help/screens-cloud/assets/configure/screens-video-5.png)
 
-1. Wählen Sie die Ordner aus, in denen Screens-Videos aufbewahrt werden, und klicken Sie auf **Anwenden**.
+1. Wählen Sie die Ordner aus, in denen Screens-Videos gespeichert werden, und klicken Sie auf **Anwenden**.
 
-   ![Klicken Sie auf Übernehmen](/help/screens-cloud/assets/configure/screens-video-6.png)
+   ![Klicken auf „Übernehmen“](/help/screens-cloud/assets/configure/screens-video-6.png)
 
    >[!NOTE]
    >
    >* Sie können mehrere Verarbeitungsprofile erstellen und sie auf die entsprechenden Ordner anwenden, sodass die Videos in diesen Ordnern die spezifischen Video-Ausgabedarstellungen erhalten.
-   >* Wenn Sie Videos in den Ordner hochladen, auf den ein Verarbeitungsprofil angewendet wird, werden Videos verarbeitet. Konfigurierte Ausgabeformate werden erstellt, die von den Screens-Geräten zur Wiedergabe der Videos verwendet werden.
+   >* Wenn Sie Videos in einen Ordner hochladen, auf den ein Verarbeitungsprofil angewendet wird, werden die Videos verarbeitet. Es werden konfigurierte Ausgabedarstellungen erstellt, die von den Screens-Geräten zur Wiedergabe der Videos verwendet werden.

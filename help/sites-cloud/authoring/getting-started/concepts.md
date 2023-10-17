@@ -5,7 +5,7 @@ exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '394'
-ht-degree: 40%
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ Eine AEM-Installation besteht im Allgemeinen aus mindestens zwei Umgebungen:
 * Autor
 * Veröffentlichung
 
-Diese Umgebungen interagieren, damit Sie Inhalte auf Ihrer Website verfügbar machen können, damit Ihre Besucher darauf zugreifen können.
+Diese Umgebungen interagieren miteinander und bieten Ihnen die Möglichkeit, Inhalte auf Ihrer Website verfügbar zu machen, sodass Ihre Besucherinnen und Besucher darauf zuzugreifen können.
 
 Die Autorenumgebung bietet die Mechanismen zum Erstellen, Aktualisieren und Überprüfen dieses Inhalts, bevor er tatsächlich veröffentlicht wird.
 
@@ -26,27 +26,27 @@ Die Autorenumgebung bietet die Mechanismen zum Erstellen, Aktualisieren und Übe
 
 ![Abbildung von Autor, Publisher und Dispatchern](/help/sites-cloud/authoring/assets/author-publish.png)
 
-In der Autorenumgebung wird die Funktionalität von AEM über AEM Authoring-Benutzeroberfläche bereitgestellt. In der Veröffentlichungsumgebung entwerfen Sie das gesamte Erscheinungsbild der Benutzeroberfläche, die Ihren Benutzern zur Verfügung gestellt wird.
+In der Authoring-Umgebung wird die Funktionalität von AEM über die Benutzeroberfläche von AEM zur Verfügung gestellt. In der Publishing-Umgebung entwerfen Sie das Aussehen der Oberfläche, die Sie Ihren Benutzenden zur Verfügung stellen.
 
 {{edge-delivery-authoring}}
 
 ## Authoring-Umgebung {#author-environment}
 
-Der Autor arbeitet in dem so genannten **Autorenumgebung**. Diese Umgebung bietet eine benutzerfreundliche Benutzeroberfläche (grafische Benutzeroberfläche (GUI oder UI)) zum Erstellen des Inhalts. Der Autor muss sich mit einem Konto anmelden, dem die entsprechenden Zugriffsrechte zugewiesen sind.
+Die Autorin bzw. der Autor arbeitet in der sogenannten **Authoring-Umgebung**. Diese Umgebung bietet eine benutzerfreundliche Benutzeroberfläche (grafische Benutzeroberfläche (GUI oder UI)) zum Erstellen des Inhalts. Die Autorin bzw. der Autor muss sich mit einem Konto anmelden, dem die entsprechenden Zugriffsrechte zugewiesen wurden.
 
 >[!NOTE]
 >
 >Ihr Konto muss über die entsprechenden Zugriffsrechte verfügen, um Inhalte zu erstellen, zu bearbeiten oder zu veröffentlichen.
 
-Je nachdem, wie Ihre Instanz und Ihre persönlichen Zugriffsrechte konfiguriert sind, können Sie viele Aufgaben an Ihrem Inhalt ausführen, darunter (unter anderem):
+Je nachdem, wie Ihre Instanz und Ihre persönlichen Zugriffsrechte konfiguriert sind, können Sie viele Aufgaben in Bezug auf Ihre Inhalte durchführen, unter anderem:
 
 * Erstellen neuer Inhalte oder Bearbeiten vorhandener Inhalte auf einer Seite
 * Verwenden vordefinierter Vorlagen zum Erstellen von Inhaltsseiten
 * Erstellen, Bearbeiten und Verwalten Ihrer Assets und Sammlungen
 * Verschieben, Kopieren und Löschen von Inhaltsseiten und Assets.
-* Veröffentlichen (oder Rückgängigmachen der Veröffentlichung) von Seiten und Assets
+* Veröffentlichen (oder Rückgängigmachen der Veröffentlichung) von Seiten und Assets.
 
-Außerdem gibt es administrative Aufgaben, die Ihnen bei der Verwaltung Ihrer Inhalte helfen:
+Außerdem gibt es administrative Aufgaben, die Sie beim Verwalten des Inhalts unterstützen:
 
 * Workflows für die Verwaltung von Änderungen, beispielsweise das Anfordern einer Prüfung vor der Veröffentlichung
 * Projekte zur Koordinierung einzelner Aufgaben
@@ -57,7 +57,7 @@ Außerdem gibt es administrative Aufgaben, die Ihnen bei der Verwaltung Ihrer In
 
 ## Vorschau von Inhalten {#previewing-content}
 
-AEM bietet außerdem einen Sites-Vorschaudienst, mit dem Entwickler und Inhaltsautoren eine Vorschau des finalen Erlebnisses einer Website anzeigen können, bevor diese in die Veröffentlichungsumgebung gelangt und öffentlich verfügbar ist.
+AEM bietet den Sites-Vorschau-Service, der Entwicklungspersonen und Inhaltsautorinnen bzw -autoren die Vorschau des endgültigen Erlebnisses einer Website ermöglicht, bevor diese in die Publishing-Umgebung gelangt und öffentlich verfügbar ist.
 
 Siehe [Vorschau von Inhalten](/help/sites-cloud/authoring/fundamentals/previewing-content.md) für weitere Informationen.
 
@@ -65,8 +65,8 @@ Siehe [Vorschau von Inhalten](/help/sites-cloud/authoring/fundamentals/previewin
 
 Wenn die Inhalte Ihrer Site fertig sind, werden sie in der **Veröffentlichungsumgebung** veröffentlicht. Hier werden die Seiten der Website in Übereinstimmung mit dem Aussehen der entworfenen Oberfläche der vorgesehenen Zielgruppe bereitgestellt.
 
-Weitere Informationen zum Veröffentlichen und Rückgängigmachen der Veröffentlichung von Seiten finden Sie im Dokument zum [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
+Weitere Informationen zum Veröffentlichen und zum Rückgängigmachen der Veröffentlichung von Seiten finden Sie im Dokument zum [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
 
 ## Dispatcher {#dispatcher}
 
-Um die Leistung für Besucher Ihrer Website zu optimieren, muss die Variable **[Dispatcher](/help/implementing/dispatcher/overview.md)** implementiert Lastenausgleich und Caching.
+Um eine optimale Nutzung der Website durch Ihre Besucherinnen und Besucher zu gewährleisten, führt der **[Dispatcher](/help/implementing/dispatcher/overview.md)** Lastverteilung und Caching durch.

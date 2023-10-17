@@ -5,15 +5,15 @@ exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '990'
-ht-degree: 82%
+ht-degree: 97%
 
 ---
 
 # Erste Schritte mit SPAs in AEM unter Verwendung von Angular {#getting-started-with-spas-in-aem-using-angular}
 
-Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickler möchten Sites mit SPA Frameworks erstellen können und Autoren möchten Inhalte in AEM für eine Site, die mit SPA Frameworks erstellt wurde, nahtlos bearbeiten.
+Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickelnde möchten Sites mit SPA-Frameworks erstellen und Autorinnen sowie Autoren möchten Inhalte in AEM nahtlos für eine Site bearbeiten, die durch SPA-Frankeworks erstellt wurde.
 
-Die SPA Authoring-Funktion bietet eine umfassende Lösung zur Unterstützung von SPA in AEM. Dieser Artikel beschreibt eine vereinfachte SPA-Anwendung im Angular-Framework, erläutert, wie sie zusammengestellt wird, und ermöglicht es Ihnen, rasch mit Ihrer eigenen SPA zu arbeiten.
+Die SPA-Autorenfunktion bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM. Dieser Artikel beschreibt eine vereinfachte SPA-Anwendung im Angular-Framework, erläutert, wie sie zusammengestellt wird, und ermöglicht es Ihnen, rasch mit Ihrer eigenen SPA zu arbeiten.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Weitere Details zur Funktionsweise von SPAs in AEM finden Sie in den folgenden D
 
 >[!NOTE]
 >
->Um Inhalte in einem SPA erstellen zu können, muss der Inhalt in AEM gespeichert und durch das Inhaltsmodell verfügbar gemacht werden.
+>Um Inhalt in einer SPA zu erstellen, muss der Inhalt in AEM gespeichert und durch das Inhaltsmodell verfügbar gemacht werden.
 >
 >Eine SPA, die außerhalb von AEM entwickelt wurde, wird nicht autorisiert, wenn der Content-Modell-Vertrag nicht eingehalten wird.
 
@@ -39,7 +39,7 @@ Dieses Dokument erläutert die Struktur einer vereinfachten SPA und veranschauli
 
 ## Abhängigkeiten, Konfiguration und Aufbau {#dependencies-configuration-and-building}
 
-Zusätzlich zur erwarteten Angular-Abhängigkeit kann die SPA zusätzliche Bibliotheken verwenden, um die Erstellung der SPA effizienter zu gestalten.
+Zusätzlich zur erwarteten Angular-Abhängigkeit kann die Beispiel-SPA zusätzliche Bibliotheken nutzen, um die Erstellung der SPA effizienter zu gestalten.
 
 ### Abhängigkeiten {#dependencies}
 
@@ -53,7 +53,7 @@ Die `package.json`-Datei definiert die Anforderungen des übergeordneten SPA-Pak
 }
 ```
 
-Die `aem-clientlib-generator` wird verwendet, um die Erstellung von Client-Bibliotheken als Teil des Build-Prozesses automatisch zu machen.
+Der `aem-clientlib-generator` wird genutzt, um die Erstellung von Client-Bibliotheken als Teil des Build-Prozesses automatisch zu gestalten.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -90,7 +90,7 @@ module.exports = {
 
 ### Erstellung {#building}
 
-Beim Erstellen der App wird [Webpack](https://webpack.js.org/) für die Übertragung zusätzlich zum aem-clientlib-generator zur automatischen Client-Bibliothekserstellung. Daher ähnelt der Build-Befehl:
+Bei der Erstellung der Anwendung wird neben dem aem-clientlib-generator zur automatischen Client-Bibliothekserstellung auch [Webpack](https://webpack.js.org/) für die Übertragung verwendet. Daher sieht der Build-Befehl ungefähr so aus:
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
@@ -98,7 +98,7 @@ Sobald das Paket erstellt wurde, kann es in eine AEM-Instanz hochgeladen werden.
 
 ### AEM-Projektarchetyp {#aem-project-archetype}
 
-Jedes AEM Projekt sollte [AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de), SPA Projekte mit React oder Angular unterstützt und das SPA SDK verwendet.
+Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK verwendet.
 
 ## Anwendungsstruktur {#application-structure}
 

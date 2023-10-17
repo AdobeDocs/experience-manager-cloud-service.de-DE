@@ -7,7 +7,7 @@ exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
 source-wordcount: '767'
-ht-degree: 49%
+ht-degree: 52%
 
 ---
 
@@ -61,13 +61,13 @@ Das Wissen über diese Eigenschaften kann auch nützlich sein, damit Sie Ihr Rep
 
 ## Häufig gestellte Fragen (FAQ) {#faq}
 
-Im Folgenden finden Sie einige häufig gestellte Fragen zu MSM und Live Copy.
+Im Folgenden finden Sie einige häufig gestellte Fragen zu MSM und Live Copy.
 
 ### Warum werden einige Eigenschaften (z. B. Titel, Anmerkungen) während eines MSM-Rollouts nicht aktualisiert? {#missing-properties}
 
 MSM-Synchronisierungsaktionen sind hochgradig konfigurierbar. Welche Eigenschaften oder Komponenten bei Rollouts direkt geändert werden, hängt von den Eigenschaften dieser Konfigurationen ab.
 
-Siehe [diesem Artikel](best-practices.md) für weitere Informationen zu diesem Thema.
+Weitere Informationen zu diesem Thema finden Sie in [diesem Artikel](best-practices.md).
 
 ### Wie kann ich Rollout-Berechtigungen für eine Gruppe von Autoren entfernen? {#remove-rollout-permissions}
 

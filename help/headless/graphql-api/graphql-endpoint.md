@@ -6,7 +6,7 @@ exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
@@ -33,7 +33,7 @@ Es gibt zwei Arten von Endpunkten in AEMٔ:
 >
 >Der Inhaltsfragment-Editor kann zulassen, dass ein Inhaltsfragment einer Sites-Konfiguration (über Richtlinien) auf ein Inhaltsfragment einer anderen Sites-Konfiguration verweist.
 >
->In einem solchen Fall ist nicht der gesamte Inhalt mithilfe eines konfigurationsspezifischen Endpunkts für Sites abrufbar.
+>In diesem Fall können nicht alle Inhalte mithilfe eines für eine Sites-Konfiguration spezifischen Endpunkts abgerufen werden.
 >
 >Der Inhaltsautor sollte dieses Szenario steuern. Beispielsweise kann es nützlich sein, freigegebene Inhaltsfragmentmodelle unter die globale Sites-Konfiguration zu stellen.
 
@@ -61,7 +61,7 @@ Um einen GraphQL-Endpunkt zu aktivieren, benötigen Sie zunächst eine entsprech
 So aktivieren Sie den entsprechenden Endpunkt:
 
 1. Gehen Sie zu **Tools**, **Allgemein** und wählen Sie **GraphQL** aus.
-1. Wählen Sie **Erstellen**.
+1. Wählen Sie **Erstellen** aus.
 1. Das Dialogfeld **Neuen GraphQL-Endpunkt erstellen** wird geöffnet. Hier können Sie Folgendes angeben:
    * **Name**: Name des Endpunkts; Sie können einen beliebigen Text eingeben.
    * **GraphQL-Schema verwenden, das bereitgestellt wurde von**: Verwenden Sie das Dropdown-Menü, um die gewünschte Website / das gewünschte Projekt auszuwählen.
@@ -70,7 +70,7 @@ So aktivieren Sie den entsprechenden Endpunkt:
    >
    >Die folgende Warnung wird im Dialogfeld angezeigt:
    >
-   >* *GraphQL-Endpunkte können Probleme mit der Datensicherheit und -leistung verursachen, wenn sie nicht sorgfältig verwaltet werden. Stellen Sie sicher, dass die entsprechenden Berechtigungen festgelegt werden, nachdem Sie einen Endpunkt erstellt haben.*
+   >* *GraphQL-Endpunkte können Probleme mit der Datensicherheit und Leistung verursachen, wenn sie nicht sorgfältig verwaltet werden. Stellen Sie sicher, dass die entsprechenden Berechtigungen festgelegt werden, nachdem Sie einen Endpunkt erstellt haben.*
 
 1. Bestätigen Sie mit **Erstellen**.
 1. Die **Nächste Schritte** -Dialogfeld bietet einen direkten Link zur Sicherheitskonsole, damit Sie sicherstellen können, dass der neu erstellte Endpunkt über geeignete Berechtigungen verfügt.

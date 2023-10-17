@@ -5,7 +5,7 @@ exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
 source-wordcount: '860'
-ht-degree: 76%
+ht-degree: 96%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 76%
 
 Wahrscheinlich sind in Ihrer Organisation mehrere Abteilungen für verschiedene Aspekte des digitalen Erlebnisses zuständig. Ohne Steuerung sind die Voraussetzungen für endlose Debatten, Kämpfe und Verwirrung geschaffen.
 
-Digital Governance beginnt damit, herauszufinden, wer für was verantwortlich ist und wer welche digital ausgerichteten Aufgaben erledigt. Möglicherweise müssen Sie einige strategische Einstellungen vornehmen, um die benötigten Fähigkeiten hinzuzufügen. Eine noch größere Herausforderung besteht darin, einen Kulturwandel zu fördern - breite Unterstützung für die neue Technologie zu schaffen und Menschen zu helfen, sich an neue Wege zu gewöhnen, Dinge zu tun. Ein wichtiger Teil dieser Bemühungen ist die Schaffung einer digitalen Gemeinschaft, die es den Mitarbeitern ermöglicht, voneinander zu lernen und sich gegenseitig zu unterstützen.
+Die digitale Steuerung beginnt damit, herauszufinden, wer wofür zuständig ist und wer welche digital ausgerichtete Aufgabe übernimmt. Möglicherweise müssen Sie einige strategische Einstellungen vornehmen, um die benötigten Fähigkeiten hinzuzufügen. Eine noch größere Herausforderung besteht darin, einen Kulturwandel voranzutreiben – eine breite Unterstützung für die neue Technologie aufzubauen und den Mitarbeiterinnen und Mitarbeitern zu helfen, sich an neue Methoden zu gewöhnen. Ein wichtiger Teil dieser Bemühungen ist die Schaffung einer digitalen Gemeinschaft, die es den Mitarbeitern ermöglicht, voneinander zu lernen und sich gegenseitig zu unterstützen.
 
-Vorerst geht es darum, die richtigen Personen in die richtigen Jobs zu versetzen, um Ihre Adobe Experience Manager-Implementierung zu fördern. Für jedes Kernprodukt - Experience Manager Sites und Experience Manager Assets - hat die Adobe eine Liste der Rollen bereitgestellt, die Sie erfüllen müssen, zusammen mit den Kompetenzen, dem Kenntnisstand und den Attributen, die Menschen in den verschiedenen Rollen effektiv machen.
+Vorerst konzentrieren wir uns darauf, die richtigen Mitarbeiterinnen und Mitarbeiter auf die richtigen Positionen zu bringen, um Ihre Adobe Experience Manager-Bereitstellung voranzutreiben. Für jedes Kernprodukt – Experience Manager Sites und Experience Manager Assets – hat Adobe eine Liste der Rollen bereitgestellt, die Sie besetzen müssen, sowie die Fähigkeiten, Fachkenntnisse und Attribute, die die Mitarbeiterinnen und Mitarbeiter in den verschiedenen Rollen effektiv machen.
 
 Ihre Aufgabe in dieser Woche ist es, beide Listen mit Ihrem Implementierungs-Team zu überprüfen und sicherzustellen, dass Sie in jeder Rolle Mitarbeiter mit den relevanten Qualifikationen haben.
 
@@ -46,7 +46,7 @@ Nachdem Sie nun wissen, welche Rollen erforderlich sind, sehen Sie in der folgen
 
 <br>
 
-![Rollen für die Implementierung überprüfen](assets/team_involvement.png)
+![Überprüfen der Rollen für die Implementierung](assets/team_involvement.png)
 
 **Überprüfen Sie diese Liste mit Ihrem Implementierungs-Team** und stellen Sie sicher, dass Sie in jeder Rolle über entsprechende Qualifikationen verfügen. Team-Mitglieder, die mit Adobe Experience Cloud weniger vertraut sind, können sich mithilfe von [Experience League](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager)-Lernressourcen über [Adobe Digital Learning](https://learning.adobe.com/certification.html) zertifizieren lassen.
 
@@ -54,7 +54,7 @@ Nachdem Sie nun wissen, welche Rollen erforderlich sind, sehen Sie in der folgen
 
 Vom Architekten bis zum Scrum Master ist jede Rolle in diesem Team unverzichtbar – einschließlich des DAM-Bibliothekars.
 
-Möglicherweise verfügen Sie bereits über die meisten Mitarbeiter, die Sie zum Ausführen einer erfolgreichen Implementierung von Adobe Experience Manager Assets benötigen. Diese Liste ähnelt der für Adobe Experience Manager Sites mit einer wichtigen Ergänzung: Sie benötigen eine Bibliothek, um sicherzustellen, dass Ihre digitalen Assets so organisiert und beschriftet sind, dass sie leicht zu finden sind.
+Möglicherweise verfügen Sie bereits über die meisten Mitarbeiter, die Sie zum Ausführen einer erfolgreichen Implementierung von Adobe Experience Manager Assets benötigen. Diese Liste ähnelt der Liste für Adobe Experience Manager Sites, mit einem wichtigen Zusatz: Sie benötigen eine Bibliothekarin bzw. einen Bibliothekar, um sicherzustellen, dass Ihre digitalen Assets so organisiert und beschriftet sind, dass sie leicht zu finden sind.
 
 | Rolle | Kompetenzen | Kompetenzstufe | Qualitäten |
 |--- |--- |--- |--- |
@@ -77,4 +77,4 @@ Nachdem Sie nun wissen, welche Rollen erforderlich sind, sehen Sie in der folgen
 
 >[!TIP]
 >
-> Erfahren Sie mehr über Adobe Experience Cloud und die Verwendung von Ressourcen unter [Experience League](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager) und zertifizieren Sie sich über [Adobe Digital Learning](https://learning.adobe.com/certification.html).
+> Erfahren Sie mehr über Adobe Experience Cloud und nutzen Sie die Ressourcen in [Experience League](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager). Lassen Sie sich über [Adobe Digital Learning](https://learning.adobe.com/certification.html) zertifizieren.

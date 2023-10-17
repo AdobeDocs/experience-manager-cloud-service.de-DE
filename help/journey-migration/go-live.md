@@ -5,7 +5,7 @@ exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1710'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ In den vorherigen Phasen der Tour:
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie die Migration auf AEM as a Cloud Service durchführen können, sobald Sie mit den vorherigen Schritten des Journey vertraut sind. Sie erfahren, wie Sie die ursprüngliche Produktionsmigration durchführen und die Best Practices für die Migration zu AEM as a Cloud Service ermitteln.
+In diesem Dokument erfahren Sie, wie Sie die Migration zu AEM as a Cloud Service durchführen können, sobald Sie mit den vorherigen Schritten der Tour vertraut sind. Sie erfahren, wie Sie die erstmalige Produktionsmigration durchführen und welche Best Practices Sie bei der Migration zu AEM as a Cloud Service anwenden sollten.
 
 ## Erstmalige Produktionsmigration {#initial-migration}
 
-Bevor Sie die Produktionsmigration durchführen können, befolgen Sie die im Abschnitt [Inhaltsmigrationsstrategie und -zeitleiste](/help/journey-migration/implementation.md##strategy-timeline) Abschnitt [Implementierungsphase](/help/journey-migration/implementation.md).
+Bevor Sie die Produktionsmigration durchführen können, befolgen Sie die Schritte zur Anpassung und zum Nachweis der Migration, die im Abschnitt [Inhaltsmigrationsstrategie und Zeitplan](/help/journey-migration/implementation.md##strategy-timeline) der [Implementierungsphase](/help/journey-migration/implementation.md) beschrieben sind.
 
 * Starten Sie die Migration von der Produktion basierend auf den Erfahrungen, die Sie während der Staging-Migration für Klone in AEM as a Cloud Service gesammelt haben:
    * Author-Author
@@ -59,7 +59,7 @@ Wie bereits erwähnt, müssen Sie einen Einfrierzeitraum für Code und Inhalte p
 * Wie lange muss ich die Inhaltserstellung einfrieren?
 * Für welchen Zeitraum sollte ich mein Versand-Team bitten, keine neuen Funktionen mehr hinzuzufügen?
 
-Um die erste Frage zu beantworten, sollten Sie die Zeit in Betracht ziehen, die für die Durchführung von Testläufen in Nicht-Produktionsumgebungen benötigt wurde. Um die zweite Frage zu beantworten, benötigen Sie eine enge Zusammenarbeit zwischen dem Team, das neue Funktionen hinzufügt, und dem Team, das den Code überarbeitet. Das Ziel besteht darin sicherzustellen, dass der gesamte Code, der der vorhandenen Bereitstellung hinzugefügt wird, auch der Cloud Services-Verzweigung hinzugefügt, getestet und bereitgestellt wird. Im Allgemeinen bedeutet dies, dass der Code-Freeze-Wert niedriger ist.
+Um die erste Frage zu beantworten, sollten Sie die Zeit in Betracht ziehen, die für die Durchführung von Testläufen in Nicht-Produktionsumgebungen benötigt wurde. Um die zweite Frage zu beantworten, benötigen Sie eine enge Zusammenarbeit zwischen dem Team, das neue Funktionen hinzufügt, und dem Team, das den Code überarbeitet. Das Ziel sollte darin bestehen sicherzustellen, dass der gesamte Code, der zur vorhandenen Implementierung hinzugefügt wird, auch zur Cloud Services-Verzweigung hinzugefügt, getestet und bereitgestellt wird. Im Allgemeinen bedeutet dies, dass weniger Code einfriert.
 
 Darüber hinaus müssen Sie ein Einfrieren von Inhalten einplanen, wenn die endgültige Auffüllung der Inhalte geplant ist.
 
@@ -81,12 +81,12 @@ Stellen Sie sicher, dass Sie bei der Live-Schaltung die Inhaltsmigration in der 
 
 Bei der Produktionsmigration sollten Sie aus folgenden Gründen vermeiden, das Content Transfer Tool aus einem Klon auszuführen:
 
-* Wenn für einen Kunden bei Auffüllmigration Inhaltsversionen migriert werden müssen, werden die Versionen bei Ausführung des Content Transfer Tool aus einem Klon nicht migriert. Selbst wenn der Klon häufig von einem Live-Autor neu erstellt wird, werden bei jeder Erstellung eines Klons die vom Content Transfer Tool zur Berechnung der Deltas verwendeten Checkpoints zurückgesetzt.
+* Wenn für einen Kunden bei Auffüllmigration Inhaltsversionen migriert werden müssen, werden die Versionen bei Ausführung des Content Transfer Tool aus einem Klon nicht migriert. Selbst wenn der Klon häufig von Live-Author neu erstellt wird, werden bei jeder Erstellung eines Klons die Checkpoints zurückgesetzt, die vom Content Transfer Tool zur Berechnung der Deltas verwendet werden.
 * Da ein Klon nicht als Ganzes aktualisiert werden kann, muss das ACL Query-Paket verwendet werden, um den bei der Produktion hinzugefügten oder bearbeiteten Inhalt zu verpacken und zu installieren, damit er geklont werden kann. Das Problem bei diesem Ansatz besteht darin, dass das Löschen von Inhalten in der Quellinstanz nie zum Klon gelangt, es sei denn, sie werden manuell aus Quelle und Klon gelöscht. Dadurch wird die Möglichkeit eröffnet, dass der gelöschte Produktionsinhalt im Klon und in AEM as a Cloud Service nicht gelöscht wird.
 
-**Optimieren Sie die Belastung Ihrer AEM-Quelle bei der Migration von Inhalten**
+**Optimieren der Belastung Ihrer AEM-Quelle bei der Migration von Inhalten**
 
-Beachten Sie, dass die Belastung der AEM während der Extraktionsphase größer ist. Beachten Sie Folgendes:
+Beachten Sie, dass die Belastung der AEM-Quelle während der Extraktionsphase größer ist. Beachten Sie Folgendes:
 
 * Das Content Transfer Tool ist ein externer Java-Prozess, der einen JVM-Heap von 4 GB verwendet
 * Die Nicht-AzCopy-Version lädt Binärdateien herunter, speichert sie auf einem temporären Speicherplatz auf der AEM-Autoreninstanz, was Datenträger-E/A belegt, und lädt sie dann in den Azure-Container hoch, was Netzwerkbandbreite verbraucht
@@ -95,7 +95,7 @@ Beachten Sie, dass die Belastung der AEM während der Extraktionsphase größer 
 
 ## Bekannte Einschränkungen {#known-limitations}
 
-Beachten Sie, dass die gesamte Aufnahme fehlschlägt, wenn eine der folgenden Einschränkungen im extrahierten Migrationssatz gefunden wird:
+Bitte beachten Sie, dass die gesamte Aufnahme fehlschlägt, wenn eine der folgenden Verletzungen von Einschränkungen als Teil des extrahierten Migrationssatzes gefunden wird:
 
 * Ein JCR-Knoten mit einem Namen, der länger als 150 Zeichen ist
 * Ein JCR-Knoten, der größer als 16 MB ist
@@ -109,18 +109,18 @@ Im Gegensatz zum obigen Abschnitt schlägt die Aufnahme **nicht** aufgrund der f
 * Jedes Asset, bei dem die ursprüngliche Ausgabedarstellung fehlt
 * Jeder Ordner, dessen `jcr:content`-Knoten fehlt.
 
-Beide der oben genannten Punkte werden im [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) Bericht.
+Die beiden oben genannten Punkte werden im Bericht von [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) identifiziert und gemeldet.
 
-## Go-Live-Checkliste {#Go-Live-Checklist}
+## Checkliste der Live-Schaltung {#Go-Live-Checklist}
 
-Überprüfen Sie diese Aktivitätenliste, um sicherzustellen, dass Sie eine reibungslose und erfolgreiche Migration durchführen.
+Überprüfen Sie diese Liste der Aktivitäten, um sicherzustellen, dass Sie eine reibungslose und erfolgreiche Migration durchführen können.
 
 * Führen Sie eine End-to-End-Produktions-Pipeline mit Funktions- und Benutzeroberflächentests aus, um ein **immer aktuelles** AEM Produkterlebnis zu gewährleisten. Sehen Sie sich die folgenden Ressourcen an.
    * [AEM-Versionsaktualisierungen](/help/implementing/deploying/aem-version-updates.md)
    * [Benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [Testen der Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md)
 * Migrieren Sie Inhalte in die Produktion und stellen Sie sicher, dass beim Staging eine relevante Teilmenge zum Testen verfügbar ist.
-   * Die Best Practices von DevOps für AEM implizieren, dass der Code von der Entwicklungsumgebung in die Produktionsumgebung verschoben wird, während der Inhalt von Produktionsumgebungen nach unten verschoben wird.
+   * Die Best Practices von DevOps für AEM sehen vor, dass der Code von der Entwicklungs- zur Produktionsumgebung nach oben verschoben wird, während die Inhalte von der Produktionsumgebung nach unten verschoben werden.
 * Planen der Periode zum Einfrieren von Code und Inhalten.
    * Siehe auch den Abschnitt [Zeitpläne für das Einfrieren von Code und Inhalten für die Migration](#code-content-freeze).
 * Ausführen der endgültigen Inhaltsauffüllung.

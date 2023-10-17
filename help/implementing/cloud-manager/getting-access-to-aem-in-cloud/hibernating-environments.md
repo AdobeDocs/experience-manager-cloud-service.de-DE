@@ -5,7 +5,7 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '685'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Gehen Sie wie folgt vor, um Ihre Sandbox-Programmumgebungen manuell in den Ruhez
 
 1. Klicken Sie auf der Karte **Umgebungen** auf die Schaltfläche mit den Auslassungspunkten und wählen Sie **Entwicklerkonsole** aus.
 
-   * Siehe [Aufrufen der Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) Weitere Informationen zur Entwicklerkonsole.
+   * Siehe [Aufrufen der Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console), um weitere Informationen zur Developer Console zu erhalten.
 
    ![Menüoption „Entwicklerkonsole“](assets/developer-console-menu-option.png)
 
@@ -69,7 +69,7 @@ In der Entwicklerkonsole können Sie auch auf den Link **Umgebungen** in den Bre
 
 1. Klicken Sie auf der Karte **Umgebungen** auf die Schaltfläche mit den Auslassungspunkten und wählen Sie **Entwicklerkonsole** aus.
 
-   * Siehe [Aufrufen der Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) Weitere Informationen zur Entwicklerkonsole.
+   * Siehe [Aufrufen der Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console), um weitere Informationen zur Developer Console zu erhalten.
 
 1. Klicken Sie auf **Ruhezustand aufheben**.
 

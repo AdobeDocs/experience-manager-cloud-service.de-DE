@@ -5,7 +5,7 @@ exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
 source-wordcount: '1638'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -84,7 +84,7 @@ Robuste REST-APIs werden weiterhin benötigt. Allerdings können REST-Anfragen g
 
 Bei der Headless-Bereitstellung von Inhalten werden häufig GraphQL-APIs verwendet. GraphQL ermöglicht eine ähnliche statuslose Übertragung, ermöglicht jedoch zielgerichtetere Abfragen, reduziert die Gesamtzahl der erforderlichen Abfragen und verbessert die Leistung. Häufig sieht man Lösungen, die eine Mischung aus REST und GraphQL verwenden, wobei im Wesentlichen das beste Tool für die jeweilige Aufgabe gewählt wird.
 
-Unabhängig von der gewählten API können Sie durch die Definition eines Headless-Systems auf der Basis gängiger APIs den neuesten Browser und andere Web-Technologien wie progressive Web-Apps (PWA) verwenden. APIs erstellen eine Standardschnittstelle, die einfach erweiterbar und anpassbar ist.
+Unabhängig von der gewählten API können Sie durch die Definition eines Headless-Systems auf der Basis gängiger APIs den neuesten Browser und andere Web-Technologien wie progressive Web-Apps (PWA) nutzen. APIs erstellen eine Standardschnittstelle, die einfach erweiterbar und anpassbar ist.
 
 Normalerweise werden Inhalte Client-seitig gerendert. Das bedeutet in der Regel, dass jemand Ihre Inhalte auf einem Mobilgerät aufruft, Ihr CMS die Inhalte bereitstellt und das Mobilgerät (der Client) dann für das Rendern der von Ihnen bereitgestellten Inhalte verantwortlich ist. Wenn das Gerät alt oder anderweitig langsam ist, ist auch Ihr digitales Erlebnis langsam.
 
@@ -96,7 +96,7 @@ Headless eröffnet Ihnen eine Welt der Flexibilität für die Bereitstellung dig
 
 Viele verschiedene Kanäle zu haben, kann bedeuten, dass diese jeweils ihre eigenen Präsentationssysteme haben. Obwohl sie alle dieselben Inhalte über dieselben APIs nutzen, kann das Erlebnis aufgrund der verschiedenen Präsentationen unterschiedlich sein. Die Konsistenz des Kundenerlebnisses muss sorgfältig sichergestellt werden.
 
-Durch die Implementierung sorgfältiger Designsysteme, die gemeinsame Nutzung von Musterbibliotheken und die Nutzung wiederverwendbarer Designkomponenten sowie etablierter, offener Client-seitiger Frameworks können konsistente Erlebnisse sichergestellt werden, dies muss jedoch geplant werden.
+Durch die Implementierung sorgfältiger Design-Systeme, die Freigabe von Musterbibliotheken und die Nutzung wiederverwendbarer Design-Komponenten sowie etablierter, offener Client-seitiger Frameworks können konsistente Erlebnisse sichergestellt werden. Dies muss jedoch geplant werden.
 
 ## Die Zukunft ist Headless und die Zukunft ist jetzt {#future}
 
@@ -110,7 +110,7 @@ Wenn Sie mit dieser Entwickler-Tour fortfahren, erfahren Sie, wie AEM die Headle
 
 Als Branchenführer im Bereich Digital Experience Management hat Adobe erkannt, dass die ideale Lösung für die Herausforderungen der realen Welt, vor denen Entwickler von Erlebnissen stehen, selten eine binäre Wahl ist. Aus diesem Grund unterstützt AEM nicht nur beide Modelle, sondern ermöglicht auf einzigartige Weise die nahtlose hybride Kombination der beiden, die die Vorteile von Headless und Full-Stack vereint, damit Sie die Konsumenten Ihrer Inhalte optimal bedienen können, egal wo sie sich befinden.
 
-Diese Tour konzentriert sich auf das reine Headless-Modell der Inhaltsbereitstellung. Sobald Sie jedoch über dieses grundlegende Wissen verfügen, können Sie weiter untersuchen, wie die Macht beider Modelle genutzt werden kann.
+Diese Tour konzentriert sich auf das reine Headless-Modell der Inhaltsbereitstellung. Sobald Sie jedoch über dieses Grundwissen verfügen, können Sie weiter erkunden, wie Sie die Leistungsfähigkeit beider Modelle nutzen können.
 
 ## Wie geht es weiter {#what-is-next}
 

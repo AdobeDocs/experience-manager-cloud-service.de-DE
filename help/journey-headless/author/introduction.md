@@ -5,7 +5,7 @@ exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ Das bedeutet, dass Ihre Inhalte eine breite Palette von Geräten in einer Vielza
 (Und als Doppelvorteil können diese Fragmente auch beim Erstellen von AEM-Web-Seiten verwendet werden – falls gewünscht.)
 
 * „Traditionelles“ CMS
-   * Inhalte werden für Web-Seiten erstellt, wobei eine Reihe von Komponenten verwendet wird, die definieren, wie der Inhalt auf Ihrer Website wiedergegeben wird. Auch hier ist AEM äußerst flexibel, da Ihr Projektteam benutzerdefinierte Komponenten entwickeln kann.
+   * Inhalte werden für Web-Seiten erstellt, wobei eine Reihe von Komponenten verwendet wird, die definieren, wie der Inhalt auf Ihrer Website dargestellt wird. Auch hier ist AEM äußerst flexibel, da Ihr Projektteam benutzerdefinierte Komponenten entwickeln kann.
 
 ## Inhaltsmodellierung {#content-modeling}
 

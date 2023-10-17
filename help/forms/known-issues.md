@@ -9,7 +9,7 @@ exl-id: 871f294d-f251-4966-a021-39df65b613f0
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 86%
+ht-degree: 95%
 
 ---
 
@@ -33,7 +33,7 @@ Bevor Sie mit der Nutzung von [!DNL AEM Forms] as a Cloud Service beginnen, mach
 
   ![Bekanntes Problem mit Forms-Miniaturansicht](/help/forms/assets/forms-tumbnail-known-issue.png)
 
-* Wenn Sie ein Schema mit wiederholbaren Elementen verwenden, um ein auf Kernkomponenten basierendes adaptives Formular zu erstellen, funktioniert die Option zum Ziehen und Ablegen wiederholbarer Elemente aus der Datenmodellstruktur im adaptiven Forms-Editor nicht.
+* Wenn Sie ein Schema mit wiederholbaren Elementen verwenden, um ein auf Kernkomponenten basierendes adaptives Formular zu erstellen, funktioniert die Drag-and-Drop-Option für wiederholbare Elemente aus der Datenmodellstruktur im Editor für adaptive Formulare nicht.
 
 ## Beschränkungen {#limitations}
 

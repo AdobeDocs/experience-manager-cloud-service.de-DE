@@ -5,7 +5,7 @@ exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1025'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 86%
 
 Adobe Experience Manager as a Cloud Service Sites ist bereit, Kunden bei der Erfüllung ihrer Datenschutzverpflichtungen und der Einhaltung von Datenschutzbestimmungen zu unterstützen. Auf dieser Seite werden die Verfahren zur Handhabung DSGVO-bezogener Anfragen in AEM Sites beschrieben. Sie beschreibt den Speicherort der privaten Daten und wie diese manuell oder per Code entfernt werden können.
 
-Weitere Informationen finden Sie unter [Datenschutzzentrum für Adoben](https://www.adobe.com/de/privacy.html).
+Weitere Informationen finden Sie im [Datenschutzzentrum von Adobe](https://www.adobe.com/de/privacy.html).
 
 >[!NOTE]
 >
->Unter [Adobe Experience Manager as a Cloud Service – Bereitschaft für Datenschutzbestimmungen](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md) finden Sie weitere Einzelheiten dazu.
+>Unter [Adobe Experience Manager as a Cloud Service – Einhaltung von Datenschutzbestimmungen](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md) finden Sie weitere Einzelheiten dazu.
 
 ## AEM-Autorenebene {#aem-author-tier}
 
@@ -37,7 +37,7 @@ Auf dem Autoren-Server gespeicherte Benutzerkonten und benutzergenerierte Inhalt
 
 Die für die Authentifizierung von Besuchern verwendeten Benutzerkonten und die UGC-Inhalte, die auf dem Publishing-Server gespeichert werden, werden in der [Dokumentation zu AEM Foundation](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md) erläutert.
 
-Standardmäßig speichern die Komponenten von AEM Sites keine von Besuchern auf dem Publishing-Server eingegebenen Daten. Es wird empfohlen, die Daten zur weiteren Verarbeitung an ein Drittanbietersystem oder Adobe Campaign weiterzuleiten.
+Standardmäßig speichern die Komponenten von AEM Sites keine von Besuchern auf dem Publishing-Server eingegebenen Daten. Es wird empfohlen, diese Daten zur weiteren Verarbeitung an ein Drittanbietersystem oder an Adobe Campaign zu übermitteln.
 
 ## Opt-in/Opt-out {#opt-in-opt-out}
 
@@ -56,7 +56,7 @@ Opt-out:
 
 1. Wählen Sie den referenzierten Link aus. Aktuell mit dem Titel **hier**.
 
-1. Ihnen werden die folgenden Details zusammen mit den Optionen zum Opt-out oder An angezeigt:
+1. Ihnen werden die folgenden Details sowie die Optionen zum Opt-out oder Opt-in angezeigt:
 
    * Um der Aggregation und Analyse von Daten über Ihren Besuch auf dieser Website zu widersprechen, ist es notwendig, ein Cookie in Ihrem Browser zu installieren. Dieses Cookie registriert, dass Sie widersprochen haben.
 
@@ -76,13 +76,13 @@ Opt-out:
 
 AEM Sites bietet eine optionale Integration mit Analytics Foundation, das Funktionen innerhalb des On-Demand-Service von Adobe Analytics verwendet.
 
-Weitere Informationen zur Verwaltung von Anfragen von Datensubjekten im Zusammenhang mit Adobe Analytics finden Sie unter [Adobe Analytics und Datenschutz](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=de).
+Weitere Informationen zur Verwaltung von DSGVO-Anfragen von betroffenen Personen in Adobe Analytics finden Sie unter [Adobe Analytics und Datenschutz](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=de).
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
-AEM Sites bietet eine optionale Integration mit Personalization Foundation by Target, das Funktionen innerhalb des On-Demand-Service von Adobe Analytics verwendet.
+AEM Sites bietet eine optionale Integration mit Personalization Foundation by Target, das Funktionen innerhalb des On-Demand-Service von Adobe Target verwendet.
 
-Informationen zum Verwalten von Anfragen von Datensubjekten im Zusammenhang mit Adobe Target finden Sie unter [Adobe Target - Privatsphäre und Datenschutz-Grundverordnung](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=de).
+Weitere Informationen zur Verwaltung von DSGVO-Anfragen von betroffenen Personen in Adobe Target finden Sie unter [Adobe Target – Datenschutz und die DSGVO](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=de).
 
 ## ContextHub {#contexthub}
 

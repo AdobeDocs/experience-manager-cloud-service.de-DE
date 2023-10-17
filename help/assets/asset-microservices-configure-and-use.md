@@ -8,7 +8,7 @@ exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2930'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -75,7 +75,7 @@ Gehen Sie wie folgt vor, um ein Standardverarbeitungsprofil zu erstellen:
 
 1. Administratoren greifen auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]** zu. Klicken Sie auf **[!UICONTROL Erstellen]**.
 1. Geben Sie einen Namen ein, der Ihnen hilft, das Profil beim Anwenden auf einen Ordner eindeutig zu identifizieren.
-1. Um FPO-Ausgabedarstellungen zu erzeugen, aktivieren Sie auf der Registerkarte **[!UICONTROL Bild]** die Option **[!UICONTROL FPO-Ausgabedarstellung erstellen]**. Geben Sie eine **[!UICONTROL Qualität]** Wert von 1-100.
+1. Um FPO-Ausgabedarstellungen zu erzeugen, aktivieren Sie auf der Registerkarte **[!UICONTROL Bild]** die Option **[!UICONTROL FPO-Ausgabedarstellung erstellen]**. Geben Sie für die **[!UICONTROL Qualität]** einen Wert von 1–100 ein.
 1. Um andere Ausgabedarstellungen zu erstellen, klicken Sie auf **[!UICONTROL Neu hinzufügen]** und geben Sie die folgenden Informationen ein:
 
    * Dateiname der jeweiligen Ausgabedarstellung.
@@ -101,7 +101,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Benutzerdefiniertes Profil und Anwendungsfälle {#custom-config}
 
-Der [!DNL Asset Compute Service] unterstützt eine Vielzahl von Anwendungsfällen, z. B. Standardverarbeitung, Verarbeitung von Adobe-spezifischen Formaten wie Photoshop-Dateien und Implementierung benutzerdefinierter oder unternehmensspezifischer Verarbeitungsformate. Die zuvor erforderliche Anpassung des Workflows DAM-Update-Asset wird entweder automatisch oder über die Konfiguration von Verarbeitungsprofilen durchgeführt. Wenn diese Verarbeitungsoptionen geschäftlichen Anforderungen nicht gerecht werden, empfiehlt Adobe, die Standardfunktionen mit [!DNL Asset Compute Service] zu entwickeln und zu erweitern. Einen Überblick finden Sie unter [Erweiterbarkeit und Verwendungszeitpunkt](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=de).
+Der [!DNL Asset Compute Service] unterstützt eine Vielzahl von Anwendungsfällen, z. B. Standardverarbeitung, Verarbeitung von Adobe-spezifischen Formaten wie Photoshop-Dateien und Implementierung benutzerdefinierter oder unternehmensspezifischer Verarbeitungsformate. Die zuvor erforderliche Anpassung des Asset-Workflows zum DAM-Update wird entweder automatisch oder über die Konfiguration von Verarbeitungsprofilen vorgenommen. Wenn diese Verarbeitungsoptionen geschäftlichen Anforderungen nicht gerecht werden, empfiehlt Adobe, die Standardfunktionen mit [!DNL Asset Compute Service] zu entwickeln und zu erweitern. Einen Überblick finden Sie unter [Erweiterbarkeit und Verwendungszeitpunkt](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=de).
 
 >[!NOTE]
 >
@@ -204,7 +204,7 @@ Weitere Informationen dazu, welcher standardmäßige Workflow-Schritt im Nachbea
 
 Nachbearbeitungs-Workflow-Modelle sind normale [!DNL Experience Manager]-Workflow-Modelle. Erstellen Sie verschiedene Modelle, wenn Sie für verschiedene Repository-Standorte oder Asset-Typen eine unterschiedliche Verarbeitung benötigen.
 
-Die Verarbeitungsschritte werden nach Bedarf hinzugefügt. Sie können sowohl die unterstützten Schritte als auch alle benutzerdefinierten Workflow-Schritte verwenden.
+Die Verarbeitungsschritte werden nach Bedarf hinzugefügt. Sie können sowohl die zur Verfügung stehenden unterstützten Schritte als auch beliebige benutzerdefinierte Workflow-Schritte verwenden.
 
 Stellen Sie sicher, dass der letzte Schritt jedes Nachbearbeitungs-Workflows `DAM Update Asset Workflow Completed Process` ist. Der letzte Schritt stellt sicher, dass Experience Manager weiß, wann die Asset-Verarbeitung abgeschlossen ist.
 
@@ -262,7 +262,7 @@ Befolgen Sie die Schritte unter [Anwenden eines Workflow-Modells auf einen Ordne
 
 ## Best Practices und Einschränkungen {#best-practices-limitations-tips}
 
-* Berücksichtigen Sie beim Entwickeln von Workflows Ihre Anforderungen für alle Arten von Ausgabedarstellungen. Wenn Sie der Meinung sind, dass eine Ausgabedarstellung in Zukunft nicht erforderlich sein wird, entfernen Sie den Erstellungsschritt aus dem Workflow. Ausgabedarstellungen können später nicht mehr stapelweise gelöscht werden. Unerwünschte Ausgabedarstellungen können nach längerer Nutzung von [!DNL Experience Manager]. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie [!DNL Experience Manager] so anpassen, dass entweder bestimmte Ausgabedarstellungen gelöscht oder die Assets gelöscht und die gelöschten Assets erneut hochgeladen werden.
+* Berücksichtigen Sie beim Entwickeln von Workflows Ihre Anforderungen für alle Arten von Ausgabedarstellungen. Wenn Sie der Meinung sind, dass eine Ausgabedarstellung in Zukunft nicht erforderlich sein wird, entfernen Sie den Erstellungsschritt aus dem Workflow. Ausgabedarstellungen können später nicht mehr stapelweise gelöscht werden. Unerwünschte Ausgabedarstellungen können nach längerer Nutzung von [!DNL Experience Manager] viel Speicherplatz beanspruchen. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie [!DNL Experience Manager] so anpassen, dass entweder bestimmte Ausgabedarstellungen gelöscht oder die Assets gelöscht und die gelöschten Assets erneut hochgeladen werden.
 * Derzeit ist die Unterstützung auf das Erzeugen von Ausgabedarstellungen beschränkt. Das Erstellen neuer Assets wird nicht unterstützt.
 * Derzeit beträgt die maximale Dateigröße für die Extraktion von Metadaten etwa 15 GB. Beim Hochladen sehr großer Assets schlägt die Metadatenextraktion manchmal fehl.
 

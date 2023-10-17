@@ -5,7 +5,7 @@ exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
 source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
 source-wordcount: '784'
-ht-degree: 29%
+ht-degree: 52%
 
 ---
 
@@ -32,7 +32,7 @@ An einer IP-Zulassungsliste können keine Aktualisierungen vorgenommen werden, s
 
 ## Überprüfen des Status von IP-Zulassungslisten {#check-allow-list-status}
 
-1. Melden Sie sich bei Cloud Manager an unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
 1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
@@ -48,28 +48,28 @@ An einer IP-Zulassungsliste können keine Aktualisierungen vorgenommen werden, s
 
 * **Aktualisieren** - Es wird eine Aktualisierung der IP-Zulassungsliste durchgeführt, die eine oder mehrere Anwendungen oder Aufheben der Anwendung der Liste enthalten kann.
 
-   * Jede Anwendung/Aufhebung wird zusammen mit dem eigenen Status **Nicht gestartet**, **In Bearbeitung**, **Fertig** oder **Fehlgeschlagen** aufgeführt.
+   * Jede Anwendung bzw. Aufhebung der Anwendung wird zusammen mit dem eigenen Status **Nicht gestartet**, **In Bearbeitung**, **Fertig** oder **Fehlgeschlagen** aufgeführt.
 
-* **Fehlgeschlagen** - Ein oder mehrere Anwendungs- oder Aufheben der Anwendung eines Updates sind fehlgeschlagen.
-   * Jede Anwendung und jede Aufhebung der Anwendung wird zusammen mit ihrem Status aufgelistet.
-      * Der Status lautet **Fehlgeschlagen**, wenn eine Anwendung/Aufhebung bei der Aktualisierung fehlschlägt.
-      * Der Status bleibt unverändert als **Fehlgeschlagen** bis alle Fehler behoben sind.
-         * Wählen Sie die **Wiederholen** neben dem Status angezeigt, damit Sie den Fehler löschen können.
+* **Fehlgeschlagen**: Ein oder mehrere Anwendungs- oder Aufhebungsvorgänge sind bei einem Update fehlgeschlagen.
+   * Jede Anwendung bzw. Aufhebung der Anwendung wird zusammen mit dem Status aufgelistet.
+      * Der Status lautet **Fehlgeschlagen**, wenn eine Anwendung bzw. Aufhebung bei der Aktualisierung fehlschlägt.
+      * Der Status bleibt **Fehlgeschlagen**, bis alle Fehler behoben sind.
+         * Wählen Sie das Symbol **Wiederholen** neben dem Status, um den Fehler zu löschen.
       * Sie können eine IP-Zulassungsliste nicht mit einer **Fehlgeschlagen** -Status.
 
 * **Löschen** - Das Löschen einer IP-Zulassungsliste wird ausgeführt.
    * Das Löschen umfasst das Aufheben der Anwendung der Liste bei allen Diensten.
-   * Jede Nicht-Anwendung wird zusammen mit ihrem eigenen Status von **Nicht gestartet**, **In Bearbeitung**, **Fertig** oder **Fehlgeschlagen**.
+   * Jede Aufhebung wird zusammen mit ihrem eigenen Status aufgeführt: **Nicht gestartet**, **In Bearbeitung**, **Fertig**, oder **Fehlgeschlagen**.
    * Wenn der Löschvorgang abgeschlossen ist:
       * Die IP-Zulassungsliste wird nicht in der Tabelle der IP-Zulassungsliste angezeigt.
       * Die IP-Zulassungsliste wird auf keinen Dienst im Programm in Cloud Manager angewendet.
 
-* **Fehler löschen** - Eine oder mehrere Nicht-Anwendungen sind während eines Löschvorgangs fehlgeschlagen.
+* **Löschen fehlgeschlagen**: Eine oder mehrere Aufhebungen sind während eines Löschvorgangs fehlgeschlagen.
 
-   * Jede Aufhebung der Anwendung wird zusammen mit dem Status aufgeführt **Fertig** oder **Fehlgeschlagen**.
-   * Der Status wird **Fehler löschen** , wenn eine Nicht-Anwendung fehlschlägt.
-   * Der Status bleibt unverändert als **Fehler löschen** bis alle Fehler behoben sind.
-      * Auswählen **Löschen** aus dem Menü mit den Auslassungspunkten ganz rechts neben der Zeile in der Tabelle, damit Sie Fehler löschen können.
+   * Jede Aufhebung wird mit dem Status **Fertig** oder **Fehlgeschlagen** aufgeführt.
+   * Der Status wird zu **Löschen fehlgeschlagen**, wenn eine Aufhebung fehlschlägt.
+   * Der Status bleibt **Löschen fehlgeschlagen**, bis alle Fehlschläge gelöscht sind.
+      * Wählen Sie **Löschen** aus dem Menü mit den Auslassungspunkten ganz rechts in der Tabellenzeile, damit Sie alle Fehler löschen können.
    * Sie können eine IP-Zulassungsliste nicht aktualisieren, solange der Status **Fehlgeschlagen**.
 
 ## Löschen einer IP-Zulassungsliste {#delete-allow-list}

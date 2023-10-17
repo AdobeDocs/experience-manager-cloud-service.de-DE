@@ -7,7 +7,7 @@ exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: 1d5460c87aef10ae1adee7401cd462242e106f8c
 workflow-type: tm+mt
 source-wordcount: '2426'
-ht-degree: 87%
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ In diesem Abschnitt finden Sie Informationen zu den installierten Rollout-Konfig
 
 ### Rollout-Auslöser {#rollout-triggers}
 
-Jede Rollout-Konfiguration verwendet einen Rollout-Trigger, der den Rollout verursacht. Rollout-Konfigurationen können einen der folgenden Trigger verwenden:
+Jede Rollout-Konfiguration nutzt einen Rollout-Trigger, der den Rollout auslöst. Rollout-Konfigurationen können einen der folgenden Trigger verwenden:
 
 * **Bei Rollout**: Der Befehl **Rollout** wird auf der Blueprint-Seite genutzt oder der Befehl **Synchronisieren** wird auf der Live Copy-Seite verwendet.
 * **Bei Modifizierung**: Die Quellseite wird bearbeitet.
@@ -68,7 +68,7 @@ Wenn die installierten Aktionen Ihre Anforderungen nicht erfüllen, können Sie 
 | `contentDelete` | Diese Aktion löscht Knoten der Live Copy, die in der Quelle nicht vorhanden sind. [Konfigurieren Sie den Service **CQ MSM Content Delete Action**](#excluding-properties-and-node-types-from-synchronization), um die Knotentypen, Absatzelemente und Seiteneigenschaften zu definieren, die ausgeschlossen werden sollen. |  |
 | `contentUpdate` | Diese Aktion aktualisiert den Live Copy-Inhalt mit den Änderungen in der Quelle. [Konfigurieren Sie den Service **CQ MSM Content Update Action**](#excluding-properties-and-node-types-from-synchronization), um die Knotentypen, Absatzelemente und Seiteneigenschaften zu definieren, die ausgeschlossen werden sollen. |  |
 | `editProperties` | Diese Aktion bearbeitet die Eigenschaften der Live Copy. Die `editMap`-Eigenschaft bestimmt, welche Eigenschaften bearbeitet werden, und legt ihren Wert fest. Der Wert der Eigenschaft `editMap` muss das folgende Format verwenden:<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` und `new_value` sind reguläre Ausdrücke und `n` ist eine inkrementierte Ganzzahl.<br>Betrachten Sie zum Beispiel den folgenden Wert für `editMap`:<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>Dieser Wert bearbeitet die Eigenschaften der Live Copy-Knoten wie folgt: <br>Die `sling:resourceType`-Eigenschaften, die entweder auf `contentpage` oder auf `homepage` festgelegt sind, werden auf `mobilecontentpage` gesetzt.<br>Die `cq:template`-Eigenschaften, die auf `contentpage` eingestellt sind, werden auf `mobilecontentpage` eingestellt. | `editMap: (String)` identifiziert die Eigenschaft, den aktuellen Wert und den neuen Wert. Weitere Informationen finden Sie in der Beschreibung. |
-| `notify` | Diese Aktion sendet ein Seitenereignis, dass das Rollout der Seite erfolgt ist. Um benachrichtigt zu werden, muss man zunächst Rollout-Ereignisse abonnieren. |  |
+| `notify` | Diese Aktion sendet ein Seitenereignis, dass das Rollout der Seite erfolgt ist. Um Benachrichtigungen zu erhalten, müssen Benutzende zunächst Rollout-Ereignisse abonnieren. |  |
 | `orderChildren` | Diese Aktion ordnet die untergeordneten Knoten basierend auf der Reihenfolge auf dem Blueprint an. |  |
 | `referencesUpdate` | Durch diese Synchronisierungsaktion werden die Verweise der Live Copy aktualisiert.<br>Sie sucht in den Live Copy-Seiten Pfade, die auf eine Ressource im Blueprint verweisen. Wenn sie solch einen Pfad gefunden hat, wird er so aktualisiert, dass er auf die zugehörige Ressource in der Live Copy verweist. Verweise, die Ziele außerhalb des Blueprints aufweisen, werden nicht geändert. <br>[Konfigurieren Sie den Service **CQ MSM References Update Action**](#excluding-properties-and-node-types-from-synchronization), um die Knotentypen, Absatzelemente und Seiteneigenschaften zu definieren, die ausgeschlossen werden sollen. |  |
 | `targetVersion` | Diese Aktion erstellt eine Version der Live Copy.<br>Diese Aktion muss die einzige Synchronisierungsaktion in einer Rollout-Konfiguration sein. |  |
@@ -97,7 +97,7 @@ Sie können mehrere OSGi-Services konfigurieren, die die entsprechenden Synchron
 
 Bei der Arbeit mit AEM gibt es verschiedene Methoden, die Konfigurationseinstellungen für solche Services zu verwalten. Weitere Informationen und empfohlene Vorgehensweisen finden Sie unter [Konfigurieren von OSGi](/help/implementing/deploying/configuring-osgi.md).
 
-In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, für die Sie die auszuschließenden Knoten angeben können. Die Tabelle enthält die Namen der Dienste, die mit der Web-Konsole konfiguriert werden sollen, und die PID für die Konfiguration mit einem Repository-Knoten.
+In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, von denen Sie Knoten ausschließen können. Die Tabelle enthält die Namen der Dienste, die mit der Web-Konsole konfiguriert werden sollen, und die PID für die Konfiguration mit einem Repository-Knoten.
 
 | Synchronisierungsaktion | Service-Name in der Web-Konsole | Service-PID |
 |---|---|---|
@@ -118,9 +118,9 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die Sie konfiguri
 
 #### CQ MSM Content Update Action – Ausschlüsse {#cq-msm-content-update-action-exclusions}
 
-Verschiedene Eigenschaften und Knotentypen sind standardmäßig ausgeschlossen. Sie werden in der OSGi-Konfiguration von **CQ MSM Content Update Action**, unter **Ausgeschlossene Seiteneigenschaften**.
+Mehrere Eigenschaften und Knotentypen sind standardmäßig ausgeschlossen. Diese sind in der OSGi-Konfiguration von **CQ MSM Content Update Action** unter **Ausgeschlossene Seiteneigenschaften** definiert.
 
-Standardmäßig werden Eigenschaften, die den folgenden regulären Ausdrücken entsprechen, beim Rollout ausgeschlossen (d. h. nicht aktualisiert):
+Standardmäßig werden Eigenschaften, die den folgenden regulären Ausdrücken entsprechen, beim Rollout ausgeschlossen (d. h. nicht aktualisiert):
 
 ![Live Copy-Ausschluss-Regexe](../assets/live-copy-exclude.png)
 
@@ -176,7 +176,7 @@ Sie können die Rollout-Konfigurationen für eine Live Copy-Seite auch konfiguri
 
 1. Passen Sie bei Bedarf die Markierung **Live Copy-Vererbung** an. Bei Auswahl dieser Option gilt die Life Copy-Konfiguration für alle untergeordneten Elemente.
 
-1. Löschen Sie die **Rollout-Konfiguration von übergeordnetem Element übernehmen** -Eigenschaft und wählen Sie dann eine oder mehrere Rollout-Konfigurationen aus der Liste aus.
+1. Deaktivieren Sie die Eigenschaft **Rollout-Konfiguration aus übergeordnetem Element übernehmen** und wählen Sie dann eine oder mehrere Rollout-Konfigurationen aus der Liste aus.
 
    Die ausgewählten Rollout-Konfigurationen werden unter der Dropdown-Liste angezeigt.
 
@@ -188,12 +188,12 @@ Sie können die Rollout-Konfigurationen für eine Live Copy-Seite auch konfiguri
 
 Konfigurieren Sie eine Blueprint-Seite mit den Rollout-Konfigurationen, die beim Rollout der Blueprint-Seite genutzt werden sollen.
 
-Beachten Sie, dass die untergeordneten Seiten der Blueprint-Seite die Konfiguration übernehmen. Wenn Sie die zu verwendende Rollout-Konfiguration konfigurieren, überschreiben Sie möglicherweise die Konfiguration, die die Seite von der übergeordneten Seite erbt.
+Beachten Sie, dass die untergeordneten Seiten der Blueprint-Seite die Konfiguration übernehmen. Wenn Sie die zu verwendende Rollout-Konfiguration konfigurieren, überschreiben Sie die Konfiguration, die die Seite von der übergeordneten Seite erbt.
 
 1. Wählen Sie über die **Sites-Konsole** die Stammseite der Blueprint aus.
 1. Wählen Sie in der Symbolleiste **Eigenschaften** aus.
 1. Öffnen Sie die Registerkarte **Blueprint**.
-1. Wählen Sie eine oder mehrere **Rollout-Konfigurationen** über die Dropdown-Auswahl.
+1. Wählen Sie eine oder mehrere **Rollout-Konfigurationen** aus, indem Sie die Dropdown-Liste verwenden.
 1. Übernehmen Sie die Aktualisierungen mit **Speichern**.
 
 ### Festlegen der standardmäßigen Rollout-Konfiguration {#setting-the-system-default-rollout-configuration}

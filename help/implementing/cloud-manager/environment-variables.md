@@ -5,7 +5,7 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: 15a53778e0934a1940efa5cc88467c20b4b67fe4
 workflow-type: tm+mt
 source-wordcount: '1016'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
@@ -34,13 +34,13 @@ Typische Anwendungsfälle für die Verwendung von Umgebungsvariablen sind:
 
 >[!NOTE]
 >
->Sie müssen Mitglied der [**Bereitstellungsmanager** Rolle](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) um Umgebungsvariablen hinzuzufügen oder zu ändern.
+>Sie müssen Mitglied der [**Implementierungs-Manager**-Rolle](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) sein, um Umgebungsvariablen hinzufügen oder ändern zu können.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Adobe Cloud Manager an.
 1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Wählen Sie die aus, die Sie verwalten möchten.
 1. Wählen Sie die Registerkarte **Umgebungen** für das ausgewählte Programm und wählen Sie dann im linken Navigationsfenster die Umgebung aus, für die Sie eine Umgebungsvariable erstellen möchten.
 1. Wählen Sie in den Details der Umgebung die Registerkarte **Konfiguration** und dann **Hinzufügen** aus, um das Dialogfeld **Umgebungskonfiguration** zu öffnen.
-   * Wenn Sie zum ersten Mal eine Umgebungsvariable hinzufügen, wird eine **Konfiguration hinzufügen** in der Mitte der Seite. Sie können diese Schaltfläche oder **Hinzufügen** verwenden, um das Dialogfeld **Umgebungskonfiguration** zu öffnen.
+   * Wenn Sie zum ersten Mal eine Umgebungsvariable hinzufügen, wird die Schaltfläche **Konfiguration hinzufügen** in der Mitte der Seite angezeigt. Sie können diese Schaltfläche oder **Hinzufügen** verwenden, um das Dialogfeld **Umgebungskonfiguration** zu öffnen.
 
    ![Registerkarte „Konfiguration“](assets/configuration-tab.png)
 
@@ -88,7 +88,7 @@ Nachdem Sie Umgebungsvariablen erstellt haben, können Sie diese mithilfe der Sc
 
    ![Variable bearbeiten](assets/edit-variable.png)
 
-1. Nachdem Sie alle erforderlichen Konfigurationsänderungen vorgenommen haben, wählen Sie **Speichern**.
+1. Nachdem Sie alle erforderlichen Konfigurationsänderungen vorgenommen haben, wählen Sie **Speichern** aus.
 
 [Wie beim Hinzufügen von Variablen](#add-variables) wird ein Indikator mit dem Status **Aktualisieren** oben in der Tabelle und neben den neu aktualisierten Variablen angezeigt, um anzugeben, dass die Umgebung mit der Konfiguration aktualisiert wird. Nach Abschluss sind die aktualisierten Umgebungsvariablen in der Tabelle sichtbar.
 
@@ -128,7 +128,7 @@ Umgebungsvariablen können jedoch nicht in `IfDefine` Richtlinien.
 
 ### OSGi-Konfigurationen {#osgi}
 
-Sowohl reguläre Umgebungsvariablen als auch Geheimnisse können in [OSGi-Konfigurationen](/help/implementing/deploying/configuring-osgi.md).
+In den [OSGi-Konfigurationen](/help/implementing/deploying/configuring-osgi.md) können sowohl reguläre Umgebungsvariablen als auch Geheimnisse verwendet werden.
 
 ### Pipeline-Variablen {#pipeline}
 

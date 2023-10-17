@@ -5,7 +5,7 @@ exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -29,7 +29,7 @@ Dieser Artikel soll Ihnen helfen zu verstehen, wie Sie Ihre AEM-Headless-Anwendu
 
 ## Das AEM-SDK {#the-aem-sdk}
 
-Das AEM-SDK wird zum Erstellen und Bereitstellen von anwenderdefiniertem Code verwendet. Es ist das wichtigste Tool, das Sie benötigen, damit Sie Ihre Headless-Anwendung entwickeln und testen können, bevor Sie live gehen. Es enthält die folgenden Artefakte:
+Das AEM-SDK wird zum Erstellen und Bereitstellen von anwenderdefiniertem Code verwendet. Es ist das wichtigste Tool, das Sie vor der Live-Schaltung zum Entwickeln und Testen Ihrer Headless-Anwendung benötigen. Es enthält die folgenden Artefakte:
 
 * Die Quickstart-JAR-Datei: eine ausführbare JAR-Datei, die sowohl zum Einrichten einer Autoren- als auch einer Veröffentlichungsinstanz verwendet werden kann
 * Dispatcher-Tools: das Dispatcher-Modul und seine Abhängigkeiten für Windows- und UNIX®-basierte Systeme
@@ -64,7 +64,7 @@ Node.js ist eine JavaScript-Laufzeitumgebung, die zum Arbeiten mit den Frontend-
 
 Als Nächstes sehen wir uns die Bestandteile einer AEM-Umgebung an.
 
-Eine vollständige AEM-Umgebung besteht aus einer Autoren-, Veröffentlichungs- und Dispatcher-Komponente. Dieselben Komponenten werden zur Laufzeit der lokalen Entwicklung bereitgestellt, damit Sie die Vorschau Ihres Codes und Inhalts vor der Live-Schaltung einfacher gestalten können.
+Eine vollständige AEM-Umgebung besteht aus einer Autoren-, Veröffentlichungs- und Dispatcher-Komponente. Dieselben Komponenten werden in der lokalen Entwicklungslaufzeit verfügbar gemacht, damit Sie Ihre Code- und Inhaltsvorschau vor der Live-Schaltung einfacher anzeigen können.
 
 * **Der Autoren-Service**, mit dem interne Anwender Inhalte erstellen, verwalten und in der Vorschau anzeigen.
 
@@ -84,7 +84,7 @@ In einem Produktionssystem befinden sich Dispatcher und ein Apache-HTTP-Server i
 
 ## Lokale Vorschau Ihres Codes und Ihrer Inhalte mit der lokalen Entwicklungsumgebung {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
-Um Ihr AEM Headless-Projekt auf den Start vorzubereiten, müssen Sie sicherstellen, dass alle Bestandteile Ihres Projekts gut funktionieren.
+Um Ihr Headless-AEM-Projekt auf den Launch vorzubereiten, müssen Sie sicherstellen, dass alle Bestandteile Ihres Projekts einwandfrei funktionieren.
 
 Dazu müssen Sie alle Komponenten – Code, Inhalte und Konfiguration – zusammenführen und anschließend in einer lokalen Entwicklungsumgebung testen, damit sie bereit für die Live-Schaltung sind.
 

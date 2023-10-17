@@ -5,7 +5,7 @@ exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '610'
-ht-degree: 79%
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seite
 
 >[!NOTE]
 >
->Der Benutzer muss über die **Ändern/Erstellen/Löschen** Berechtigung auf dem Knoten `/content/versionhistory` , um die Funktion zu verwenden.
+>Die Benutzenden müssen über die Berechtigung zum **Ändern/Erstellen/Löschen** auf dem Knoten `/content/versionhistory` verfügen, um die Funktion verwenden zu können.
 >
 >Weitere Informationen zu dieser Funktion finden Sie unter [Entwicklung und Seitenvergleich](/help/implementing/developing/introduction/page-diff.md#operation-details).
 
@@ -41,7 +41,7 @@ Unabhängig vom verglichenen Inhalt bleibt die Darstellung der Unterschiede dies
 * Nachdem Sie den Seitenvergleich gestartet haben, wird der ausgewählte Inhalt auf der linken Seite angezeigt (der Differenzeinstiegspunkt).
 * Rechts wird der zu vergleichende Inhalt angezeigt (der mit dem ausgewählten Inhalt verglichen wird).
 
-Wenn Sie beispielsweise Versionen vergleichen, wird die aktuelle Version links und die vorherige Version rechts angezeigt.
+Wenn Sie beispielsweise Versionen vergleichen, wird die aktuelle Version auf der linken Seite und die vorherige Version auf der rechten Seite angezeigt.
 
 Die Quelle beider Seiten wird deutlich in der Kopfzeile am oberen Rand des Browser-Fensters angezeigt.
 
@@ -65,7 +65,7 @@ Der Vergleich erkennt Änderungen auf Komponenten- und HTML-Ebene. Geänderte El
 
 ### Vollbild und Beenden {#fullscreen-and-exiting}
 
-Um sich auf bestimmte Inhalte zu konzentrieren, können Sie auf das Vollbildsymbol für eine der &quot;Seiten&quot;des Seitenvergleichs klicken, um den Vollbildmodus zum vollständigen Browser-Fenster zu vergrößern.
+Damit Sie sich auf einen bestimmten Inhalt konzentrieren können, haben Sie die Möglichkeit, auf jeder Seite des Seitenvergleichs auf das Vollbildsymbol zu klicken, um die Ansicht auf das ganze Browser-Fenster zu vergrößern.
 
 ![Schaltfläche „Vollbild“](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 
@@ -87,9 +87,9 @@ Sie können den Seitenvergleich jederzeit beenden, indem Sie in der Kopfzeile au
 
 Es gibt Situationen, in denen der Seitenvergleich möglicherweise Unterschiede nicht wie erwartet erkennt.
 
-* Beim Vergleich von Versionen und Launches berücksichtigt der Seitenvergleich keine dynamischen Komponenten wie Breadcrumbs, Menüs, Produktlisten oder Logos (Komponenten, die die Site-Struktur zur Darstellung ihres Inhalts nutzen).
+* Beim Vergleich von Versionen und Launches berücksichtigt der Seitenvergleich keine dynamischen Komponenten wie Breadcrumbs, Menüs, Produktlisten oder Logos (Komponenten, die die Site-Struktur zur Darstellung ihrer Inhalte nutzen).
 * Bei Versionen erstellt der Vergleich die Richtlinien zur Zugriffssteuerung und die Live Copy-Beziehungen nicht neu.
-* Wenn eine Seite verschoben wird, können Sie keinen Vergleich mehr mit Versionen durchführen, die vor dem Verschieben erstellt wurden. 
+* Wenn eine Seite verschoben wird, können Sie keinen Vergleich mehr mit Versionen durchführen, die vor dem Verschieben erstellt wurden.
    * Wenn Probleme beim Vergleich auftreten, überprüfen Sie in der [Zeitleiste](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
 
 >[!NOTE]
@@ -98,4 +98,4 @@ Es gibt Situationen, in denen der Seitenvergleich möglicherweise Unterschiede n
 
 >[!NOTE]
 >
->Weitere Informationen zur Funktionsweise des Seitenvergleichsmechanismus und zu Einschränkungen, die sich auf den Seitenvergleich auswirken können, finden Sie unter [Entwicklerdokumentation](/help/implementing/developing/introduction/page-diff.md) dieser Funktion.
+>Weitere Informationen zum Ablauf des Seitenvergleichsmechanismus sowie Einschränkungen, die sich auf den Seitenvergleich auswirken können, finden Sie in der [Entwickler-Dokumentation](/help/implementing/developing/introduction/page-diff.md) zu dieser Funktion.

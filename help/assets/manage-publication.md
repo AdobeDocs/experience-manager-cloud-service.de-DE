@@ -8,13 +8,13 @@ exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1627'
-ht-degree: 81%
+ht-degree: 95%
 
 ---
 
 # Verwalten der Veröffentlichung in Experience Manager Assets {#manage-publication-in-aem}
 
-Als [!DNL Adobe Experience Manager Assets]-Administrator können Sie Assets und Ordner mit Assets aus Ihrer Autoreninstanz in [!DNL Experience Manager Assets], [!DNL Dynamic Media]und [!DNL Brand Portal] veröffentlichen. Sie können auch planen, ein Asset oder einen Ordner zu einem späteren Zeitpunkt zu veröffentlichen. Nach der Veröffentlichung können die Benutzer auf die Assets zugreifen und sie an andere Benutzer weiterleiten. Standardmäßig können Sie Assets und Ordner in [!DNL Experience Manager Assets] veröffentlichen. Sie können jedoch [!DNL Experience Manager Assets] so konfigurieren, dass die Veröffentlichung in [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=de) und [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=de) aktiviert wird.
+Als [!DNL Adobe Experience Manager Assets]-Administrator können Sie Assets und Ordner mit Assets aus Ihrer Autoreninstanz in [!DNL Experience Manager Assets], [!DNL Dynamic Media]und [!DNL Brand Portal] veröffentlichen. Außerdem können Sie die Veröffentlichung eines Assets oder Ordners zu einem späteren Zeitpunkt einplanen. Nach der Veröffentlichung können die Benutzer auf die Assets zugreifen und sie an andere Benutzer weiterleiten. Standardmäßig können Sie Assets und Ordner in [!DNL Experience Manager Assets] veröffentlichen. Sie können jedoch [!DNL Experience Manager Assets] so konfigurieren, dass die Veröffentlichung in [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=de) und [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=de) aktiviert wird.
 
 Sie können Assets auf der Asset- oder Ordnerebene veröffentlichen oder die Veröffentlichung rückgängig machen, indem Sie eine der Optionen **[!UICONTROL Quick Publish]** oder **[!UICONTROL Veröffentlichung verwalten]** verwenden, die in der [!DNL Experience Manager Assets]-Benutzeroberfläche verfügbar sind. Wenn Sie in [!DNL Experience Manager Assets] nachfolgende Änderungen am ursprünglichen Asset oder Ordner vornehmen, werden die Änderungen erst dann in der Veröffentlichungsinstanz übernommen, wenn Sie von [!DNL Experience Manager Assets] aus erneut veröffentlichen. Dadurch wird sichergestellt, dass laufende Änderungen nicht in der Veröffentlichungsinstanz verfügbar sind. Nur genehmigte, von einem Administrator veröffentlichte Änderungen sind in der Veröffentlichungsinstanz verfügbar.
 
@@ -61,7 +61,7 @@ Um fortzufahren, klicken Sie auf **[!UICONTROL Weiter]**. Je nach Auswahl werden
 
 ### Inhalt hinzufügen {#add-content}
 
-Veröffentlichen in [!DNL Experience Manager Assets] können Sie der Veröffentlichungsliste weitere Inhalte (Assets und Ordner) hinzufügen. Sie können der Liste weitere Assets oder Ordner aus den gesamten DAM-Repositorys hinzufügen. Klicks **[!UICONTROL Inhalt hinzufügen]** um weitere Inhalte hinzuzufügen.
+Veröffentlichen in [!DNL Experience Manager Assets] können Sie der Veröffentlichungsliste weitere Inhalte (Assets und Ordner) hinzufügen. Sie können der Liste weitere Assets oder Ordner aus den gesamten DAM-Repositorys hinzufügen. Klicken Sie auf die Schaltfläche **[!UICONTROL Inhalt hinzufügen]**, um weitere Inhalte hinzuzufügen.
 
 Sie können mehrere Assets aus einem Ordner hinzufügen oder mehrere Ordner gleichzeitig hinzufügen. Es ist jedoch nicht möglich, Assets aus mehreren Ordnern gleichzeitig hinzuzufügen.
 
@@ -179,26 +179,26 @@ Sie können Assets, Ordner und Sammlungen in der [!DNL Experience Manager Assets
 
 ## Veröffentlichung anfordern {#request-publication}
 
-Die `Request Publication` -Option hilft beim Authentifizieren des Workflows von Assets, bevor sie veröffentlicht werden [!DNL AEM] Assets-Umgebung. [!DNL AEM] bietet verschiedenen Benutzern unterschiedliche Berechtigungen. Sie können *contributor* , der Assets hochlädt, diese jedoch erst veröffentlichen kann, nachdem die Uploads überprüft wurden. Darüber hinaus ist es ein *Admin* Sie können es verwalten, Workflows der Assets zu lesen und zu schreiben.
+Die Option `Request Publication` hilft bei der Authentifizierung des Workflows von Assets, bevor sie in der Assets-Umgebung [!DNL AEM] veröffentlicht werden. [!DNL AEM] bietet verschiedenen Benutzenden unterschiedliche Berechtigungen. Sie können eine bzw. einer der *Mitwirkenden* sein, die/der Assets hochlädt, diese aber nicht veröffentlichen kann, bevor die Uploads überprüft wurden. Zusätzlich können Sie als *Admin* die Workflows der Assets lesen und schreiben.
 
-Die Option Veröffentlichung anfordern steht folgenden Benutzern zur Verfügung:
-* **Mitarbeiter:** Wenn Sie Benutzer sind, die dazu beitragen können, [!DNL AEM] Assets und Sie haben dann eingeschränkten Zugriff auf die [!DNL AEM] Assets-Workflow. `Manage publication` Schaltfläche ist für Sie ausgeblendet. Als Mitwirkender können Sie nur Beiträge hinzufügen, indem Sie Assets hinzufügen, diese jedoch nicht veröffentlichen oder Lesezugriff auf den Workflow haben.
+Die Option „Veröffentlichung anfordern“ steht folgenden Benutzenden zur Verfügung:
+* **Mitwirkende:** Wenn Sie eine Benutzerin bzw. ein Benutzer sind, die/der zu [!DNL AEM]-Assets beitragen kann, dann haben Sie begrenzten Zugriff auf den Workflow von [!DNL AEM]-Assets. Die Schaltfläche `Manage publication` ist ausgeblendet. Als Mitwirkende können Sie nur Beiträge hinzufügen, indem Sie Assets hinzufügen, diese jedoch nicht veröffentlichen oder Lesezugriff auf den Workflow haben.
 
-* **Workflow-Benutzer:** Dieser Benutzer kann keine Assets veröffentlichen, hat jedoch Lesezugriff auf den Workflow. Als Workflow-Benutzer haben Sie folgende Möglichkeiten:
-   * Anfragenveröffentlichung
-   * Ansicht `Manage publication` button
-   * Workflow planen und Optionen anzeigen `schedule now` und `schedule later`
+* **Workflow-Benutzende:** Diese Person kann keine Assets veröffentlichen, hat jedoch Lesezugriff auf den Workflow. Als Workflow-Benutzende haben Sie folgende Möglichkeiten:
+   * Veröffentlichung anfordern
+   * Die Schaltfläche `Manage publication` ansehen
+   * Den Workflow planen und die Optionen `schedule now` und `schedule later` einsehen
 
-* **Admin:** Als Administrator können Sie die gesamten Workflow-Schritte für Assets verwalten. `Manage publication` -Schaltfläche angezeigt. Wenn das Ziel `publish` ausgewählt ist, können Sie ein Asset später für den Workflow-Schritt planen.
+* **Admin:** Als Admin können Sie die gesamten Workflow-Schritte für Assets verwalten. Die Schaltfläche `Manage publication` wird angezeigt. Wenn das Ziel `publish` ausgewählt ist, können Sie später ein Asset für den Workflow-Schritt planen.
 
 >[!NOTE]
 >
->Wenn [!DNL Dynamic Media] als Ziel ausgewählt ist, wird der Workflow-Schritt für **Workflow-Benutzer** und **admin** Benutzer.
+>Wenn [!DNL Dynamic Media] als Ziel ausgewählt ist, ist der Workflow-Schritt für **Workflow-Benutzende** und **Admin** deaktiviert.
 >
 
 ## Einschränkungen und Tipps {#limitations-and-tips}
 
-* `Manage publication` steht Benutzern zur Verfügung, die über die geringste Leseberechtigung für den Workflow verfügen.
+* `Manage publication` steht Benutzenden zur Verfügung, die über zumindest die geringste Leseberechtigung für den Workflow verfügen.
 * Leere Ordner werden nicht veröffentlicht.
 * Wenn Sie ein Asset veröffentlichen, das verarbeitet wird, wird nur der Originalinhalt veröffentlicht. Die Ausgabedarstellungen fehlen. Warten Sie entweder, bis die Verarbeitung abgeschlossen ist, und veröffentlichen Sie das Asset, oder veröffentlichen Sie es erneut, erst dann, wenn die Verarbeitung abgeschlossen ist.
 * Wenn Sie die Veröffentlichung eines komplexen Assets aufheben möchten, achten Sie darauf, nur die Veröffentlichung des Assets aufzuheben. Machen Sie nicht die Veröffentlichung der Verweise rückgängig, da diese möglicherweise auch von anderen veröffentlichten Assets referenziert werden.

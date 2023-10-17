@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 82%
+ht-degree: 94%
 
 ---
 
@@ -49,7 +49,7 @@ Führen Sie die folgenden Schritte aus, um ein Zertifikat mit Cloud Manager hinz
 
 1. Gehen Sie auf der **Übersichtsseite** zum Bildschirm **Umgebungen**.
 
-1. Klicken Sie im linken Navigationsbereich auf **SSL-Zertifikate**. Eine Tabelle mit Details zu vorhandenen SSL-Zertifikaten wird auf dem Hauptbildschirm angezeigt.
+1. Klicken Sie im linken Navigationsbereich auf **SSL-Zertifikate**. Auf diesem Hauptbildschirm wird eine Tabelle mit Details zu vorhandenen SSL-Zertifikaten angezeigt.
 
    ![Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
@@ -63,7 +63,7 @@ Führen Sie die folgenden Schritte aus, um ein Zertifikat mit Cloud Manager hinz
 
    * Alle erkannten Fehler werden angezeigt.
       * Sie müssen alle Fehler beheben, bevor Ihr Zertifikat gespeichert werden kann.
-      * Siehe [Zertifikatfehler](#certificate-errors) finden Sie weitere Informationen zur Behebung häufiger Fehler.
+      * Weitere Informationen zum Beheben häufiger Fehler finden Sie im Abschnitt [Zertifikatfehler](#certificate-errors).
 
 1. Klicken Sie auf **Speichern**, um Ihr Zertifikat zu speichern.
 
@@ -73,7 +73,7 @@ Nach dem Speichern wird Ihr Zertifikat als neue Zeile in der Tabelle angezeigt.
 
 >[!NOTE]
 >
->Ein Benutzer muss Mitglied der **Business Owner** oder **Bereitstellungsmanager** Rolle zum Installieren eines SSL-Zertifikats in Cloud Manager.
+>Eine Benutzerin bzw. ein Benutzer muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um ein SSL-Zertifikat in Cloud Manager zu installieren.
 
 ## Zertifikatfehler {#certificate-errors}
 
@@ -81,7 +81,7 @@ Bestimmte Fehler können auftreten, wenn ein Zertifikat nicht ordnungsgemäß in
 
 ### Zertifikatrichtlinie {#certificate-policy}
 
-Wenn der folgende Fehler auftritt, überprüfen Sie die Richtlinie Ihres Zertifikats.
+Wenn der folgende Fehler angezeigt wird, überprüfen Sie die Richtlinie Ihres Zertifikats.
 
 ```text
 Certificate policy must conform with EV or OV, and not DV policy.

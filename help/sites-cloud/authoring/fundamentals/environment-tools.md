@@ -5,7 +5,7 @@ exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: ccd4206f029ac77b90f731891ac300c5d3849ef8
 workflow-type: tm+mt
 source-wordcount: '2166'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ In den Konsolen stehen weitere [Hilferessourcen zur Verfügung](/help/sites-clou
 
 ## Komponenten-Browser {#components-browser}
 
-Komponenten sind die Bausteine von AEM-Inhalten. Sie platzieren mehrere Komponenten auf einer Seite und konfigurieren deren Optionen, um Ihre Inhaltsseite mit AEM zu erstellen.
+Komponenten sind die Bausteine von AEM-Inhalten. Sie platzieren mehrere Komponenten auf einer Seite und konfigurieren deren Optionen, um mit AEM Ihre Inhaltsseite zu erstellen.
 
 Der Komponenten-Browser enthält alle Komponenten, die zur Verwendung auf der aktuellen Seite verfügbar sind. Sie können diese an die gewünschte Position ziehen und dann bearbeiten, um Inhalte hinzuzufügen.
 
@@ -88,7 +88,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
   In der oberen Symbolleiste des **Komponenten-Browsers** haben Sie folgende Möglichkeiten:
 
    * Komponenten nach Namen filtern
-   * Begrenzen Sie die Anzeige mithilfe der Dropdown-Auswahl auf eine bestimmte Gruppe.
+   * Mittels Dropdown-Auswahl die Anzeige auf eine bestimmte Gruppe begrenzen
 
   Für eine detailliertere Beschreibung der Komponente können Sie im Browser **Komponenten** auf das Informationssymbol neben der Komponente tippen/klicken (falls verfügbar). Zum Beispiel für das **Inhaltsfragment**:
 
@@ -155,7 +155,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
 >[!NOTE]
 >
->Ein Mobilgerät wird erkannt, wenn die Breite weniger als 1024 Pixel beträgt, d. h. auch bei einem kleinen Desktop-Fenster.
+>Ein Mobilgerät wird erkannt, wenn die Breite geringer als 1024 Pixel ist, d. h. auch bei einem kleinen Desktop-Fenster.
 
 Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den [Asset-Editor](/help/assets/manage-digital-assets.md) auch direkt über den Browser starten. Klicken Sie dazu einfach auf das Bearbeitungssymbol neben dem Asset-Namen.
 
@@ -175,7 +175,7 @@ Wenn Sie das Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. 
 
 Da eine Seite häufig zahlreiche Komponenten desselben Typs enthält, wird in der Komponentenstruktur (Inhalt) neben dem Namen des Komponententyps (schwarz dargestellt) zusätzlich eine Beschreibung angezeigt (grau dargestellt). Der Text für diese Beschreibung wird aus den allgemeinen Eigenschaften der Komponente (z. B. Titel oder Text) entnommen.
 
-Komponententypen werden in der Benutzersprache angezeigt, während der Text für die Komponentenbeschreibung aus der Seitensprache stammt.
+Die Komponententypen werden in der für die Benutzeroberfläche ausgewählten Sprache angezeigt, die Beschreibung dagegen in der Sprache, die für die Seite verwendet wird.
 
 Durch Klicken auf den Richtungspfeil neben einer Komponente wird die entsprechende Ebene ein- bzw. ausgeblendet.
 
@@ -276,7 +276,7 @@ Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über d
 * [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - ermöglicht die Anzeige des Seitenstatus zu einem bestimmten Zeitpunkt.
 * [Live Copy-Status:](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) Für einen schnellen Überblick über den Live Copy-Status und darüber, welche Komponenten übernommen oder nicht übernommen wurden.
 * [Entwicklermodus](/help/implementing/developing/tools/developer-mode.md)
-* [Vorschau](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - wird verwendet, um die Seite so anzuzeigen, wie sie in der Veröffentlichungsumgebung angezeigt wird, oder um mithilfe von Links im Inhalt zu navigieren.
+* [Vorschau](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages): Dient zur Anzeige der Darstellung der Seite in der Publishing-Umgebung oder zur Navigation anhand der Links im Inhalt.
 * [Anmerken](/help/sites-cloud/authoring/fundamentals/annotations.md): In diesem Modus können Sie Anmerkungen auf der Seite hinzufügen oder anzeigen.
 
 Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Symbol ändert sich je nach verwendetem Modus:

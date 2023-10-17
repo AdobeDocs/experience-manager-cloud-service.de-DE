@@ -8,7 +8,7 @@ exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '4115'
-ht-degree: 79%
+ht-degree: 97%
 
 ---
 
@@ -72,7 +72,7 @@ Hinzufügen von Datenmodellobjekten und Services:
    >
    >Das OData-Service-Metadatendokument enthält außer den Datenmodellobjekten und Services Navigationseigenschaften, die die Verknüpfung zwischen zwei Datenmodellobjekten definieren. Weitere Informationen finden Sie unter [Arbeiten mit Navigationseigenschaften von OData-Services](#work-with-navigation-properties-of-odata-services).
 
-1. Tippen **[!UICONTROL Speichern]** zum Speichern des Formularmodellobjekts.
+1. Tippen Sie auf **[!UICONTROL Speichern]**, um das Formularmodellobjekt zu speichern.
 
    >[!NOTE]
    >
@@ -101,11 +101,11 @@ Mit dem Formulardatenmodell-Editor können Sie untergeordnete Eigenschaften in e
 Erstellen einer untergeordneten Eigenschaft:
 
 1. Wählen Sie in einem Formulardatenmodell ein Datenmodellobjekt aus und tippen Sie auf **[!UICONTROL Untergeordnete Eigenschaft erstellen]**.
-1. Im **[!UICONTROL Untergeordnete Eigenschaft erstellen]** Geben Sie einen Namen und einen Datentyp für die Eigenschaft in der **[!UICONTROL Name]** und **[!UICONTROL Typ]** angegeben. Sie können optional einen Titel und eine Beschreibung für die Eigenschaft angeben.
-1. Aktivieren Sie &quot;Berechnet&quot;, wenn die Eigenschaft eine berechnete Eigenschaft ist. Der Wert einer berechneten Eigenschaft wird basierend auf einer Regel oder einem Ausdruck ausgewertet. Weitere Informationen finden Sie unter [Eigenschaften bearbeiten](#properties).
+1. Geben Sie im Dialogfeld **[!UICONTROL Untergeordnete Eigenschaft erstellen]** einen Namen und einen Datentyp für die Eigenschaft in den Feldern **[!UICONTROL Name]** und **[!UICONTROL Typ]** ein. Sie können optional einen Titel und eine Beschreibung für die Eigenschaft angeben.
+1. Aktivieren Sie „Berechnet“, wenn die Eigenschaft eine berechnete Eigenschaft ist. Der Wert einer berechneten Eigenschaft wird basierend auf einer Regel oder einem Ausdruck ausgewertet. Weitere Informationen finden Sie unter [Eigenschaften bearbeiten](#properties).
 1. Wenn das Datenmodellobjekt an eine Datenquelle gebunden ist, wird die hinzugefügte untergeordnete Eigenschaft automatisch an die Eigenschaft des übergeordneten Datenmodellobjekts mit demselben Namen und Datentyp gebunden.
 
-   Um eine untergeordnete Eigenschaft manuell mit einer Datenmodellobjekteigenschaft zu verknüpfen, tippen Sie auf das Symbol &quot;Durchsuchen&quot;neben dem **[!UICONTROL Bindungsverweis]** -Feld. Die **[!UICONTROL Objekt auswählen]** enthält alle Eigenschaften des übergeordneten Datenmodellobjekts. Wählen Sie eine Eigenschaft aus, an die gebunden werden soll, und tippen Sie auf das Häkchen-Symbol. Beachten Sie, dass Sie nur eine Eigenschaft desselben Datentyps wie die untergeordnete Eigenschaft auswählen können.
+   Um eine untergeordnete Eigenschaft manuell mit einer Datenmodellobjekteigenschaft zu verknüpfen, tippen Sie auf das Symbol zum Durchsuchen neben dem Feld **[!UICONTROL Bindungsverweis]**. Im Dialogfeld **[!UICONTROL Objekt auswählen]** werden alle Eigenschaften des übergeordneten Datenmodellobjekts aufgelistet. Wählen Sie eine Eigenschaft aus, mit der Sie eine Verknüpfung erstellen möchten, und tippen Sie auf das Häkchensymbol. Beachten Sie, dass Sie nur eine Eigenschaft desselben Datentyps wie die untergeordnete Eigenschaft auswählen können.
 
 1. Tippen Sie auf **[!UICONTROL Fertig]**, um die untergeordnete Eigenschaft zu speichern, und dann auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern. Die untergeordnete Eigenschaft wird jetzt dem Datenmodellobjekt hinzugefügt.
 
@@ -117,11 +117,11 @@ Wenn die Datenquellen, die Sie in das Formulardatenmodell integrieren möchten, 
 
 1. Wählen Sie im Formulardatenmodell die ungebundene Datenquelle aus, die Sie an eine Datenquelle binden möchten.
 1. Tippen Sie auf **[!UICONTROL Eigenschaften bearbeiten]**.
-1. Tippen Sie im Bedienfeld **[!UICONTROL Eigenschaften bearbeiten]** auf das Suchsymbol neben dem Feld **[!UICONTROL Bindung]**. Er öffnet die **[!UICONTROL Objekt auswählen]** -Dialogfeld, das Datenquellen auflistet, die im Formulardatenmodell hinzugefügt wurden.
+1. Tippen Sie im Bedienfeld **[!UICONTROL Eigenschaften bearbeiten]** auf das Suchsymbol neben dem Feld **[!UICONTROL Bindung]**. Es öffnet sich das Dialogfeld **[!UICONTROL Objekt auswählen]**, in dem Datenquellen aufgelistet sind, die im Formulardatenmodell hinzugefügt wurden.
 
    ![select-object](assets/select-object.png)
 
-1. Erweitern Sie die Datenquellenstruktur, wählen Sie ein Datenmodellobjekt aus, an das Sie eine Bindung herstellen möchten, und tippen Sie auf das Häkchen-Symbol.
+1. Erweitern Sie die Datenquellenstruktur, wählen Sie ein Datenmodellobjekt aus, an das Sie eine Bindung herstellen möchten, und tippen Sie auf das Häkchensymbol.
 1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Eigenschaften zu speichern, und dann auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern. Das Datenmodellobjekt ist jetzt an eine Datenquelle gebunden. Beachten Sie, dass das Datenmodellobjekt nicht mehr als ungebunden markiert ist.
 
    ![bound-model-object](assets/bound-model-object.png)
@@ -130,7 +130,7 @@ Wenn die Datenquellen, die Sie in das Formulardatenmodell integrieren möchten, 
 
 Um Daten für ein Datenmodellobjekt zu lesen und zu schreiben, gehen Sie folgendermaßen vor, um Lese- und Schreib-Services zu konfigurieren:
 
-1. Aktivieren Sie das Kontrollkästchen oben in einem Datenmodellobjekt, um es auszuwählen, und tippen Sie auf **[!UICONTROL Eigenschaften bearbeiten]**.
+1. Aktivieren Sie das Kontrollkästchen am oberen Rand eines Datenmodellobjekts, um es auszuwählen, und tippen Sie auf **[!UICONTROL Eigenschaften bearbeiten]**.
 
    ![edit-properties](assets/edit-properties.png)
 
@@ -149,7 +149,7 @@ Um Daten für ein Datenmodellobjekt zu lesen und zu schreiben, gehen Sie folgend
    >
    >Weitere Informationen zur Verwendung des Service finden Sie unter [Arbeiten mit Navigationseigenschaften von OData-Services](#work-with-navigation-properties-of-odata-services).
 
-1. Umschalten **[!UICONTROL Objekt auf oberster Ebene]** , um anzugeben, ob das Datenmodellobjekt ein Modellobjekt der obersten Ebene ist.
+1. Schalten Sie **[!UICONTROL Objekt der obersten Ebene]** ein, um anzugeben, ob das Datenmodellobjekt ein Modellobjekt der obersten Ebene ist.
 
    Datenmodellobjekte, die in einem Formulardatenmodell konfiguriert sind, stehen auf der Registerkarte „Datenmodellobjekte“ im Inhaltsbrowser adaptiver Formulare zur Verfügung, die auf dem Formulardatenmodell basieren. Wenn Sie eine Verknüpfung zwischen zwei Datenmodellobjekten hinzufügen, wird das Ziel-Datenmodellobjekt auf der Registerkarte **[!UICONTROL Datenmodellobjekte]** unter dem Ausgangs-Datenmodellobjekt geschachtelt. Wenn das verschachtelte Datenmodell ein Objekt der obersten Ebene ist, wird es auch separat auf der Registerkarte **[!UICONTROL Datenmodellobjekte]** angezeigt. Daher werden zwei Einträge davon angezeigt, einer innerhalb und einer außerhalb der geschachtelten Hierarchie, was zu Verwirrung bei Formularautoren führen könnte. Damit das zugeordnete Datenmodellobjekt nur in der verschachtelten Hierarchie angezeigt wird, deaktivieren Sie die Eigenschaft „Objekt der obersten Ebene“.
 
@@ -228,7 +228,7 @@ Wenn Sie beispielsweise das Attribut `petid=100` in der Anforderung angeben, wer
 
 ## Hinzufügen von Verknüpfungen {#add-associations}
 
-In der Regel gibt es Verbindungen, die zwischen Datenmodellobjekten in einer Datenquelle erstellt werden. Die Zuordnung kann 1:1 oder 1:n sein. Beispielsweise können einem Mitarbeitenden mehrere abhängige Elemente zugeordnet sein. Dies wird als Eins-zu-Viele-Verknüpfung bezeichnet und in der Form `1:n` auf der Linie dargestellt, die die zugeordneten Datenmodellobjekte verbindet. Wenn jedoch eine Verknüpfung einen eindeutigen Mitarbeiternamen für eine gegebene Mitarbeiter-ID zurückgibt, wird dies als Eins-zu-Eins-Verknüpfung bezeichnet.
+In der Regel werden Verknüpfungen zwischen Datenmodellobjekten in einer Datenquelle erstellt. Die Zuordnung kann 1:1 oder 1:n sein. Beispielsweise können einem Mitarbeitenden mehrere abhängige Elemente zugeordnet sein. Dies wird als Eins-zu-Viele-Verknüpfung bezeichnet und in der Form `1:n` auf der Linie dargestellt, die die zugeordneten Datenmodellobjekte verbindet. Wenn jedoch eine Verknüpfung einen eindeutigen Mitarbeiternamen für eine gegebene Mitarbeiter-ID zurückgibt, wird dies als Eins-zu-Eins-Verknüpfung bezeichnet.
 
 Wenn Sie verknüpfte Datenmodellobjekte in einer Datenquelle einem Formulardatenmodell hinzufügen, werden ihre Verknüpfungen beibehalten und mit Pfeillinien verbunden angezeigt. In einem Formulardatenmodell können Sie Verknüpfungen zwischen Datenmodellobjekten über unterschiedliche Datenquellen hinweg hinzufügen.
 
@@ -238,26 +238,26 @@ Wenn Sie verknüpfte Datenmodellobjekte in einer Datenquelle einem Formulardaten
 
 So fügen Sie eine Verknüpfung hinzu:
 
-1. Aktivieren Sie das Kontrollkästchen oben in einem Datenmodellobjekt, um es auszuwählen, und tippen Sie auf **[!UICONTROL Verknüpfung hinzufügen]**. Das Dialogfeld „Verknüpfung hinzufügen“ wird geöffnet.
+1. Markieren Sie das Kontrollkästchen am oberen Rand eines Datenmodellobjekts, um es auszuwählen, und tippen Sie auf **[!UICONTROL Verknüpfung hinzufügen]**. Das Dialogfeld „Verknüpfung hinzufügen“ wird geöffnet.
 
    ![add-associated](assets/add-association.png)
 
    >[!NOTE]
    >
-   >Das OData-Service-Metadatendokument enthält außer den Datenmodellobjekten und Services Navigationseigenschaften, die die Verknüpfung zwischen zwei Datenmodellobjekten definieren. Sie können diese Navigationseigenschaften verwenden, wenn Sie Verknüpfungen im Formulardatenmodell hinzufügen. Weitere Informationen finden Sie unter [Arbeiten mit Navigationseigenschaften von OData-Services](#work-with-navigation-properties-of-odata-services).
+   >Das OData-Service-Metadatendokument enthält außer den Datenmodellobjekten und Services Navigationseigenschaften, die die Verknüpfung zwischen zwei Datenmodellobjekten definieren. Sie können diese Navigationseigenschaften beim Hinzufügen von Verknüpfungen im Formulardatenmodell verwenden. Weitere Informationen finden Sie unter [Arbeiten mit Navigationseigenschaften von OData-Services](#work-with-navigation-properties-of-odata-services).
 
    Der Dialog [!UICONTROL Verknüpfung hinzufügen] wird geöffnet.
 
    ![add-associated-2](assets/add-association-2.png)
 
-   Dialogfeld &quot;Verknüpfung hinzufügen&quot;
+   Dialogfeld „Verknüpfung hinzufügen“
 
 1. Im Bereich Verknüpfung hinzufügen:
 
    * Geben Sie einen Titel für die Verknüpfung ein.
    * Wählen Sie den Verknüpfungstyp: **[!UICONTROL Eins-zu-Eins]** oder **[!UICONTROL Eins-zu-Viele]**.
    * Wählen Sie das Datenmodellobjekt aus, mit dem verknüpft werden soll.
-   * Wählen Sie den Lese-Service, der die Daten aus dem ausgewählten Modellobjekt lesen soll. Das Argument des Lese-Service wird angezeigt. Bearbeiten Sie, um das Argument bei Bedarf zu ändern und es an die Eigenschaft des zu verknüpfenden Datenmodellobjekts zu binden.
+   * Wählen Sie den Lese-Service, der die Daten aus dem ausgewählten Modellobjekt lesen soll. Das Argument des Lese-Service wird angezeigt. Bearbeiten Sie das Argument gegebenenfalls mit den nötigen Änderungen, und binden Sie es an die Eigenschaft des zu verknüpfenden Datenmodellobjekts.
 
    Im folgenden Beispiel ist `dependentid` das Standardargument für den Lese-Service des Datenmodellobjekts „Angehörige“.
 
@@ -271,14 +271,14 @@ So fügen Sie eine Verknüpfung hinzu:
 
    Aktualisiertes Argument und Bindung
 
-   Tippen **[!UICONTROL Fertig]** , um das -Argument zu speichern.
+   Tippen Sie auf **[!UICONTROL Fertig]**, um das Argument zu speichern.
 
-1. Tippen **[!UICONTROL Fertig]** zum Speichern der Zuordnung und dann **[!UICONTROL Speichern]** , um das Formulardatenmodell zu speichern.
-1. Wiederholen Sie die Schritte, um nach Bedarf weitere Zuordnungen zu erstellen.
+1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Verknüpfung zu speichern, und dann auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern.
+1. Wiederholen Sie die Schritte, um nach Bedarf weitere Verknüpfungen zu erstellen.
 
 >[!NOTE]
 >
->Die hinzugefügte Verknüpfung wird im Objektfeld des Datenmodells mit dem angegebenen Titel und einer Zeile angezeigt, die die verknüpften Datenmodellobjekte verbindet.
+>Die hinzugefügte Verknüpfung wird im Objektfeld des Datenmodells mit dem angegebenen Titel und einer Linie angezeigt, die die verknüpften Datenmodellobjekte verbindet.
 >
 >Sie können eine Verknüpfung bearbeiten, indem Sie das Kontrollkästchen neben der Verknüpfung auswählen und auf **[!UICONTROL Verknüpfung bearbeiten]** tippen.
 
@@ -301,11 +301,11 @@ So bearbeiten Sie Eigenschaften:
 
    Dialog „Eigenschaften bearbeiten“ für einen Get-Service
 
-1. Tippen **[!UICONTROL Fertig]** zum Speichern von Eigenschaften und dann **[!UICONTROL Speichern]** , um das Formulardatenmodell zu speichern.
+1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Eigenschaften zu speichern, und dann auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern.
 
 ### Erstellen berechneter Eigenschaften {#computed}
 
-Eine berechnete Eigenschaft ist diejenige, deren Wert anhand einer Regel oder eines Ausdrucks berechnet wird. Mithilfe einer Regel können Sie den Wert einer berechneten Eigenschaft auf ein Literal, eine Zahl, das Ergebnis eines mathematischen Ausdrucks oder den Wert einer anderen Eigenschaft im Formulardatenmodell festlegen.
+Eine berechnete Eigenschaft ist diejenige, deren Wert anhand einer Regel oder eines Ausdrucks berechnet wird. Mithilfe einer Regel können Sie den Wert einer berechneten Eigenschaft auf ein Zeichenfolgenliteral, eine Zahl, das Ergebnis eines mathematischen Ausdrucks oder den Wert einer anderen Eigenschaft im Formulardatenmodell festlegen.
 
 Beispielsweise können Sie eine berechnete Eigenschaft **FullName** erstellen, deren Wert ein Ergebnis der Verkettung der vorhandenen Eigenschaften **FirstName** und **LastName** ist. Gehen Sie dazu wie folgt vor:
 
@@ -314,16 +314,16 @@ Beispielsweise können Sie eine berechnete Eigenschaft **FullName** erstellen, d
 
    ![computed](assets/computed.png)
 
-   Die berechnete FullName-Eigenschaft wird erstellt. Beachten Sie, dass das Symbol neben der Eigenschaft eine berechnete Eigenschaft darstellt.
+   Die berechnete Eigenschaft „FullName“ wird erstellt. Beachten Sie, dass das Symbol neben der Eigenschaft eine berechnete Eigenschaft darstellt.
 
    ![calculate-prop](assets/computed-prop.png)
 
-1. Wählen Sie die FullName-Eigenschaft aus und tippen Sie auf **[!UICONTROL Regel bearbeiten]**. Ein Fenster des Regeleditors wird geöffnet.
-1. Tippen Sie im Fenster des Regeleditors auf **[!UICONTROL Erstellen]**. A **[!UICONTROL Wert einstellen]** Das Regelfenster wird geöffnet.
+1. Wählen Sie die FullName-Eigenschaft aus und tippen Sie auf **[!UICONTROL Regel bearbeiten]**. Ein Regeleditor-Fenster wird geöffnet.
+1. Tippen Sie im Fenster des Regeleditors auf **[!UICONTROL Erstellen]**. Ein Regelfenster **[!UICONTROL Wert festlegen]** wird geöffnet.
 
-   Wählen Sie in der Dropdownliste **[!UICONTROL Mathematischer Ausdruck]**. Weitere verfügbare Optionen sind **[!UICONTROL Formulardatenmodell-Objekt]** und **[!UICONTROL Zeichenfolge]**.
+   Wählen Sie in der Dropdownliste **[!UICONTROL Mathematischer Ausdruck]**. Weitere verfügbare Optionen sind **[!UICONTROL Formulardatenmodellobjekt]** und **[!UICONTROL Zeichenfolge]**.
 
-1. Wählen Sie im mathematischen Ausdruck **[!UICONTROL FirstName]** und **[!UICONTROL LastName]** in den ersten bzw. zweiten Objekten. Wählen Sie **[!UICONTROL plus]** als Operator.
+1. Wählen Sie im mathematischen Ausdruck **[!UICONTROL FirstName]** und **[!UICONTROL LastName]** im ersten bzw. zweiten Objekt aus. Wählen Sie **[!UICONTROL plus]** als Operator.
 
    Tippen Sie auf **[!UICONTROL Fertig]** und dann auf **[!UICONTROL Schließen]**, um das Regeleditorfenster zu schließen. Die Regel sieht ähnlich der Folgenden aus:
 
@@ -389,7 +389,7 @@ Darüber hinaus können Sie beim Hinzufügen von Verknüpfungen im Formulardaten
 
 Mit dem Formulardatenmodell-Editor können Sie Beispieldaten für alle Datenmodellobjekteigenschaften, einschließlich berechneter Eigenschaften, in einem Formulardatenmodell generieren. Es handelt sich um einen Satz zufälliger Werte, die dem für jede Eigenschaft konfigurierten Datentyp entsprechen. Sie können auch Daten bearbeiten und speichern, die auch dann beibehalten werden, wenn Sie die Beispieldaten neu generieren.
 
-Gehen Sie wie folgt vor, um Beispieldaten zu generieren und zu bearbeiten:
+Führen Sie die folgenden Schritte aus, um Beispieldaten zu generieren, zu bearbeiten und zu speichern:
 
 1. Öffnen Sie ein Formulardatenmodell und tippen Sie auf **[!UICONTROL Beispieldaten bearbeiten]**. Es werden Beispieldaten im Fenster „Beispieldaten bearbeiten“ generiert und angezeigt.
 
@@ -411,7 +411,7 @@ Ihr Formulardatenmodell ist konfiguriert. Bevor Sie es verwenden, sollten Sie je
 
 1. Wählen Sie im Fenster [!UICONTROL Formulardatenmodell testen] unter „Eingabe“ das zu testende Datenmodellobjekt bzw. den Service.
 
-1. Geben Sie einen Argumentwert im Testcode an und tippen Sie auf **[!UICONTROL Test]**. Bei einem erfolgreichen Test wird die Ausgabe im Bereich Ausgabe zurückgegeben.
+1. Geben Sie einen Argumentwert im Testcode an und tippen Sie auf **[!UICONTROL Test]**. Ist der Test erfolgreich, wird die Ausgabe im Bereich „Ausgabe“ angezeigt.
 
    ![Testergebnisse](assets/test_results_form_data_model_new.png)
 
@@ -425,7 +425,7 @@ Das Flag kann auf einen der folgenden Werte eingestellt werden:
 
 * **VOLLSTÄNDIG**: FDM führt die Validierung anhand aller Begrenzungen durch
 * **OFF**: Keine Validierung
-* **GRUNDLAGE**: FDM führt die Validierung basierend auf den Begrenzungen &quot;erforderlich&quot;und &quot;null&quot;durch.
+* **EINFACH**: FDM führt die Validierung anhand der Begrenzungen „erforderlich“ und „löschbar“ durch
 
 Wenn für das `ValidationOptions`-Flag kein Wert festgelegt ist, wird für die Eingabedaten eine **EINFACH**-Validierung durchgeführt.
 
@@ -524,7 +524,7 @@ In folgender Tabelle sind die Begrenzungen für Eingabedaten auf Grundlage der D
  </tbody> 
 </table>
 
-In diesem Beispiel werden die Eingabedaten anhand der in der Swagger-Datei definierten Begrenzungen „maximum“, „minimum“ und „required“ validiert. Die Eingabedaten erfüllen die Validierungskriterien nur, wenn die Bestell-ID vorhanden ist und der Wert zwischen 1 und 10 liegt.
+In diesem Beispiel werden die Eingabedaten anhand der in der Swagger-Datei definierten Begrenzungen „maximum“, „minimum“ und „required“ validiert. Die Eingabedaten erfüllen die Validierungskriterien nur, wenn die Bestellnummer vorhanden ist und einen Wert von 1 bis 10 hat.
 
 ```json
    parameters: [

@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: ac7e1a1ada156734c3a487269e674e8eade7c9c3
 workflow-type: tm+mt
 source-wordcount: '2452'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -72,7 +72,7 @@ Sie können relationale Datenbanken mithilfe der [!DNL Experience Manager] Web-K
 
    >[!NOTE]
    >
-   > Siehe [SQL-Verbindungen mit JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=de) für detailliertere Informationen.
+   > Weitere Informationen finden Sie unter [SQL-Verbindungen mit JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=de).
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, um die Konfiguration zu speichern.
 
@@ -176,7 +176,7 @@ Einige der von RESTful Services Open API Specifikation Version 3.0 nicht unterst
 * Links
 * Verschiedene Anfrageinstanzen für verschiedene MIME-Typen für einen einzelnen Vorgang
 
-Siehe [OpenAPI 3.0-Spezifikation](https://swagger.io/specification/v3/) für detaillierte Informationen.
+Weitere Informationen finden Sie unter [OpenAPI 3.0-Spezifikation](https://swagger.io/specification/v3/).
 
 ### HTTP-Client-Konfiguration des Formulardatenmodells zur Leistungsoptimierung {#fdm-http-client-configuration}
 

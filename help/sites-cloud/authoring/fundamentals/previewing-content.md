@@ -5,7 +5,7 @@ exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 1804eacb5399dc38c97ff953031666711b9a0e4f
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 83%
+ht-degree: 86%
 
 ---
 
@@ -20,7 +20,7 @@ Dies erleichtert die Vorschau von Seitenerlebnissen, die sonst nicht in der Auto
 >
 >So lautet der Inhalt *veröffentlicht* in der Vorschauumgebung ist sie über die URL zugänglich (erfordert also keinen Zugriff auf AEM).
 
-Weitere Informationen zu den Vorschauumgebungen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+Weitere Informationen zu den Vorschauumgebungen finden Sie im Dokument [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Veröffentlichen von Inhalten in der Vorschau {#publishing-content-to-preview}
 

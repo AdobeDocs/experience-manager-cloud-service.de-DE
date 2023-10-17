@@ -5,7 +5,7 @@ exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 source-git-commit: 57d6b50ef5256bf6e8fce84100eed4690b77cb87
 workflow-type: tm+mt
 source-wordcount: '1220'
-ht-degree: 67%
+ht-degree: 74%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 67%
 
 Adobe Experience Manager (AEM) Assets verwendet Adobe Sensei AI-Funktionen, um zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden. Diese Tags ermöglichen ein verbessertes Sucherlebnis, das auf der Bildfarbkomposition basiert.
 
-Sie können festlegen, wie viele Farben innerhalb eines Bereichs von 1 bis 40 mit einem Bild versehen werden, damit Sie später anhand dieser Farben nach Bildern suchen können. Experience Manager Assets wendet die Tags auf Grundlage der Farbabdeckung eines Bildes an. Sie können auch das Anzeigeformat für ein Farb-Tag konfigurieren.
+Sie können die Anzahl der Farben, mit denen ein Bild getaggt wird, zwischen eins und 40 konfigurieren, sodass Sie später nach Bildern suchen können, die auf diesen Farben basieren. Experience Manager Assets wendet die Tags auf Grundlage der Farbabdeckung eines Bildes an. Sie können auch das Anzeigeformat für ein Farb-Tag konfigurieren.
 
 Die folgende Abbildung zeigt die Abfolge von Aufgaben zum Konfigurieren und Verwalten des Farb-Tagging für Bilder in Experience Manager Assets:
 
@@ -44,13 +44,13 @@ So verwalten Sie die Farb-Tagging-Eigenschaften für Bilder:
 
 1. Geben Sie die Anzahl der Farben an, die Sie für die Bilder taggen möchten, im **[!UICONTROL Limit]** -Feld. Diese Farben werden angezeigt, wenn Sie die Eigenschaften für ein Bild anzeigen. In diesem Feld können Sie eine Zahl zwischen 1 und 40 definieren. Der Standardwert für dieses Feld ist zehn Farben.
 
-1. Geben Sie im Feld **[!UICONTROL Schwellenwert für Abdeckung/Dominanz %]** den minimalen Farbabdeckungsprozentsatz an, um ein Farb-Tag in die Suchergebnisse einzufügen. Wenn die Abdeckung der roten Farbe in einem Bild beispielsweise 10 Prozent beträgt und Sie in diesem Feld neun Prozent definieren, wird das Bild bei der Suche nach Bildern mit roter Farbe einbezogen. Wenn die rote Farbabdeckung in einem Bild jedoch 10 % beträgt und Sie in diesem Feld 11 % definieren, wird das Bild bei der Suche nach Bildern mit roter Farbe nicht einbezogen.
+1. Geben Sie im Feld **[!UICONTROL Schwellenwert für Abdeckung/Dominanz %]** den minimalen Farbabdeckungsprozentsatz an, um ein Farb-Tag in die Suchergebnisse einzufügen. Wenn die Abdeckung der roten Farbe in einem Bild beispielsweise 10 Prozent beträgt und Sie in diesem Feld neun Prozent definieren, wird das Bild bei der Suche nach Bildern mit roter Farbe einbezogen. Wenn jedoch die rote Farbabdeckung in einem Bild 10 Prozent beträgt und Sie 11 Prozent in diesem Feld definieren, wird das Bild bei der Suche nach Bildern mit roter Farbe nicht berücksichtigt.
 
-   In diesem Feld können Sie eine beliebige Zahl zwischen 5 und 100 angeben. Der Standardwert ist 11.
+   In diesem Feld können Sie eine beliebige Zahl zwischen 5 und 100 angeben. Der Standardwert ist 11.
 
    >[!NOTE]
    >
-   >Adobe empfiehlt die Verwendung eines Werts, der dem Standardwert in diesem Feld nahe kommt. Wenn Sie einen für dieses Feld festgelegten Wert mit hoher Zahl festlegen (z. B. größer als 25), werden möglicherweise nur wenige Suchergebnisse zurückgegeben. Auf ähnliche Weise kann die Festlegung eines niedrigen Zahlenwerts (z. B. unter 6) zu vielen Suchergebnissen führen, was möglicherweise nicht nützlich ist.
+   >Adobe empfiehlt, in diesem Feld einen Wert zu verwenden, der nahe bei dem Standardwert liegt. Wenn Sie einen für dieses Feld festgelegten Wert mit hoher Zahl festlegen (z. B. größer als 25), werden möglicherweise nur wenige Suchergebnisse zurückgegeben. Auf ähnliche Weise kann die Festlegung eines niedrigen Zahlenwerts (z. B. unter 6) zu vielen Suchergebnissen führen, was möglicherweise nicht nützlich ist.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 

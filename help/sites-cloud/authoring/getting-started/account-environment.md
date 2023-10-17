@@ -5,7 +5,7 @@ exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '495'
-ht-degree: 46%
+ht-degree: 60%
 
 ---
 
@@ -19,7 +19,7 @@ Beginnen Sie, indem Sie in der Kopfzeile die Option [Benutzer](#user-settings) a
 
 ## Benutzereinstellungen {#user-settings}
 
-Die **Benutzer** Über das Dialogfeld &quot;Einstellungen&quot;haben Sie Zugriff auf:
+Im Dialogfeld **Benutzereinstellungen** können Sie auf Folgendes zugreifen:
 
 * Identität annehmen als
    * Mit der Funktion „Identität annehmen als“ kann ein Benutzer im Namen eines anderen Benutzers arbeiten. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
@@ -40,7 +40,7 @@ Jeder Benutzer kann seine eigenen bevorzugten Eigenschaften festlegen.
 
 * **Sprache**
 
-  Dadurch wird die Sprache definiert, die für die Benutzeroberfläche der Authoring-Umgebung verwendet werden soll. Wählen Sie in der Liste die gewünschte Sprache aus.
+  Dadurch wird die Sprache definiert, die für die Benutzeroberfläche der Authoring-Umgebung verwendet werden soll. Wählen Sie die gewünschte Sprache aus der verfügbaren Liste aus.
 
 * **Fensterverwaltung**
 

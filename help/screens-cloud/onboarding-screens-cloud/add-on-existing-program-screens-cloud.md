@@ -5,7 +5,7 @@ exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
 source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 44%
+ht-degree: 53%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 44%
 In diesem Abschnitt wird beschrieben, wie Sie Screens als Add-on zu einem vorhandenen Programm in Cloud Manager hinzufügen.
 
 >[!NOTE]
->Siehe [Grundlegendes zu Programmen und Programmtypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=en) , um mehr über Cloud Manager-Programme zu erfahren.
+>Weitere Informationen zu Cloud Manager-Programmen finden Sie unter [Grundlegendes zu Programmen und Programmtypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=en).
 
 ## Ziel {#objective}
 
@@ -27,7 +27,7 @@ Gehen Sie wie folgt vor, um Screens als Add-on zu einem vorhandenen Programm hin
 1. Gehen Sie zu [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Siehe [Einführung in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=de) , um mehr über Cloud Manager zu erfahren.
+   >Weitere Informationen zu Cloud Manager finden Sie in der [Einführung in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=de).
 
 1. Navigieren Sie zu Ihrem Projekt und klicken Sie auf das **Programm bearbeiten** -Option in der Cloud Manager - **Übersicht** Seite.
 

@@ -7,7 +7,7 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -51,7 +51,7 @@ Je nach den betrieblichen Anforderungen können Benutzende beide Rollen haben.
 Bevor Sie mit den in diesem Dokument beschriebenen Aufgaben als Entwickelnde oder Bereitstellungs-Manager beginnen, stellen Sie sicher, dass Ihr Systemadministrator bzw. Ihre Systemadministratorin alle in dieser Tour beschriebenen Schritte ausgeführt hat. Das heißt:
 
 * Ihr Systemadministrator bzw. Ihre Systemadministratorin hat die Entwickelnden und Bereitstellungs-Manager ihren jeweiligen Produktprofilen zugewiesen.
-* Entwickler müssen zusätzlich zugewiesen werden **AEM** oder **AEM Administratoren** Produktprofile auch AEM verwenden.
+* Entwicklungspersonen müssen zusätzlich den Produktprofilen **AEM-Benutzer** oder **AEM-Admins** zugewiesen werden, um AEM ebenfalls verwenden zu können.
 * Cloud-Ressourcen wurden eingerichtet.
 
 ## Zugriff auf Git {#accessing-git}

@@ -5,7 +5,7 @@ exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
 source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 70%
+ht-degree: 95%
 
 ---
 
@@ -23,13 +23,13 @@ Staging-Produktdaten beinhalten zukünftig jede Mutation wie neue Kategorien, Pr
 
 ## Konfiguration {#configuration}
 
-Produktkataloge müssen in AEM konfiguriert werden. Siehe [Konfigurieren von Shops und Katalogen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) für weitere Informationen.
+Produktkataloge müssen in AEM konfiguriert werden. Siehe [Konfigurieren von Shops und Katalogen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=de#catalog) für weitere Informationen.
 
-Das Aktivieren von gestaffelten Katalogfunktionen erfordert eine Authentifizierung. Siehe [Erste Schritte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) für weitere Informationen.
+Das Aktivieren von gestaffelten Katalogfunktionen erfordert eine Authentifizierung. Siehe [Erste Schritte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=de) für weitere Informationen.
 
 >[!NOTE]
 >
->Staging-Katalogfunktionen sind nur bei Adobe Commerce- und Drittanbieter-Connectoren verfügbar, die Token-basierte Authentifizierung unterstützen.
+>Gestaffelte Katalogfunktionen sind nur mit Adobe Commerce und Connectoren von Drittanbietern verfügbar, die eine Token-basierte Authentifizierung unterstützen.
 
 ## Öffnen des Produkt-Cockpits {#opening-product-cockpit}
 
@@ -63,13 +63,13 @@ Eine Volltextsuche über den gesamten Produktkatalog wird auf der linken Filter-
 
 ## Durchsuchen des gestaffelten Produktkatalogs {#staged-product-catalogs}
 
-Standardmäßig zeigt das Produkt-Cockpit Live-Produktkatalogdaten an. Mithilfe des &quot;STAGED CATALOG&quot;auf der Registerkarte mit dem linken Filter wird der Produktkatalog für ein beliebiges Datum geladen.
+Standardmäßig zeigt das Produkt-Cockpit Live-Produktkatalogdaten an. Mithilfe von „STAGED CATALOG“ auf der linken Filterseite wird der Produktkatalog für jedes ausgewählte Datum geladen.
 
 ![gestaffelter Katalog](../assets/staged-cockpit.png)
 
 ## Eigenschaften des Produktkatalogs {#catalog-properties}
 
-Durch Klicken auf das Eigenschaftensymbol eines Produkts oder einer Kategorie wird die Eigenschaftenansicht des ausgewählten Objekts geöffnet. Offene Eigenschaften einer Produktvariante sind gleich dem Öffnen der Hauptprodukteigenschaften.
+Durch Klicken auf das Eigenschaftensymbol eines Produkts oder einer Kategorie wird die Eigenschaftenansicht des ausgewählten Objekts geöffnet. Das Öffnen der Eigenschaften einer Produktvariante ist gleichbedeutend mit dem Öffnen der Haupteigenschaften des Produkts.
 
 ### Registerkarten „Commerce“ {#tabs}
 

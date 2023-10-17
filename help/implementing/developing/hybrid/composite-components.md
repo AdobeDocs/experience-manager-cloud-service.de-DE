@@ -5,13 +5,13 @@ exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # Zusammengesetzte Komponenten in SPAs {#composite-components-in-spas}
 
-Composite-Komponenten verwenden den modularen Charakter AEM Komponenten, indem sie mehrere Basiskomponenten zu einer Komponente kombinieren. Ein gängiges Anwendungsbeispiel für zusammengesetzte Komponenten ist die Kartenkomponente, die aus einer Kombination aus Bild- und Textkomponenten besteht.
+Zusammengesetzte Komponenten nutzen den modularen Charakter von AEM-Komponenten, indem sie mehrere Basiskomponenten zu einer einzelnen Komponente kombinieren. Ein gängiges Anwendungsbeispiel für zusammengesetzte Komponenten ist die Kartenkomponente, die aus einer Kombination aus Bild- und Textkomponenten besteht.
 
 Wenn zusammengesetzte Komponenten ordnungsgemäß im Editor-Framework für AEM-Single-Page-Applications (SPA) implementiert sind, können die Inhaltsautoren solche Komponenten wie jede andere Komponente per Drag-and-Drop verschieben, haben aber dennoch die Möglichkeit, jede Komponente, aus der die zusammengesetzte Komponente besteht, einzeln zu bearbeiten.
 
@@ -19,7 +19,7 @@ In diesem Artikel wird gezeigt, wie Sie Ihrer Single Page Application eine zusam
 
 ## Nutzungsszenario {#use-case}
 
-In diesem Artikel wird die typische Kartenkomponente als Anwendungsbeispiel verwendet. Karten sind ein gängiges Element in Benutzeroberflächen für viele digitale Erlebnisse und bestehen in der Regel aus einem Bild und einem zugehörigen Text oder einer Beschriftung. Ein Autor möchte die gesamte Karte per Drag-and-Drop verschieben, aber in der Lage sein, das Kartenbild individuell zu bearbeiten und den zugehörigen Text anzupassen.
+In diesem Artikel wird die typische Kartenkomponente als Anwendungsbeispiel verwendet. Karten sind ein gängiges Element in Benutzeroberflächen für viele digitale Erlebnisse und bestehen in der Regel aus einem Bild und einem zugehörigen Text oder einer Beschriftung. Eine Autorin oder ein Autor möchte die gesamte Karte per Drag-and-Drop verschieben können, aber in der Lage sein, sowohl das Kartenbild individuell zu bearbeiten als auch den zugehörigen Text anzupassen.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -41,7 +41,7 @@ In den folgenden Abschnitten finden Sie Beispiele für die Implementierung der e
 
 ### Die Komponente ist nicht in Ihrem AEM-Projekt vorhanden. {#component-does-not-exist}
 
-Erstellen Sie zunächst die Komponenten, aus denen die Composite-Komponente besteht, d. h. Komponenten für das Bild und seinen Text.
+Erstellen Sie zunächst die Komponenten, aus denen die zusammengesetzte Komponente besteht, d. h. Komponenten für das Bild und dessen Text.
 
 1. Erstellen Sie die Textkomponente in Ihrem AEM-Projekt.
 1. Fügen Sie den entsprechenden `resourceType` aus dem Projekt im Knoten `editConfig` der Komponente hinzu.
@@ -56,7 +56,7 @@ Erstellen Sie zunächst die Komponenten, aus denen die Composite-Komponente best
    export const AEMText = withMappable(Text, TextEditConfig); 
    ```
 
-Die Textkomponente ähnelt der folgenden.
+Die Textkomponente sieht ähnlich wie die folgende aus.
 
 ```javascript
 import React from 'react';
@@ -118,7 +118,7 @@ function Home() {
 }
 ```
 
-Dadurch wird im Editor ein leerer Platzhalter für einen Text und ein Bild angezeigt. Bei der Eingabe von Werten für diese mithilfe des Editors werden sie in dem angegebenen Seitenpfad gespeichert, der wie folgt lautet: `/content/wknd-spa/home`  auf der Stammebene mit den in `itemPath`.
+Dadurch wird im Editor ein leerer Platzhalter für einen Text und ein Bild angezeigt. Bei der Eingabe von Werten für diese mithilfe des Editors werden sie im angegebenen Seitenpfad gespeichert, d. h. `/content/wknd-spa/home` auf der Stammebene mit den in `itemPath` angegebenen Namen.
 
 ![Zusammengesetzte Kartenkomponente im Editor](assets/composite-card.png)
 
@@ -156,7 +156,7 @@ Anschließend können Sie es zu Ihrer SPA hinzufügen und die Inhalte abrufen.
     itemPath='root/responsivegrid' />
    ```
 
-1. Fügen Sie die erstellte Komponente `wknd-spa/components/imagecard` den zulässigen Komponenten für die Container-Komponente [in der Seitenvorlage hinzu](/help/sites-cloud/authoring/features/templates.md).
+1. Fügen Sie die erstellte Komponente `wknd-spa/components/imagecard` den zulässigen Komponenten für die Container-Komponente [in der Seitenvorlage](/help/sites-cloud/authoring/features/templates.md) hinzu.
 
 Jetzt kann die Komponente `imagecard` direkt zum Container im AEM-Editor hinzugefügt werden.
 

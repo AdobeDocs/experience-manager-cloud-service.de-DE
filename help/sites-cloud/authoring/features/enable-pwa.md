@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
 source-wordcount: '2004'
-ht-degree: 62%
+ht-degree: 67%
 
 ---
 
@@ -50,7 +50,7 @@ Dies sind technische Schritte, die der Autor mit dem Entwicklungsteam koordinier
 
 ### Verwenden der Kernkomponenten {#adjust-components}
 
-Kernkomponenten-Version 2.15.0 und höher unterstützt die PWA-Funktionen von AEM Sites vollständig. Da AEMaaCS immer die neueste Version der Kernkomponenten enthält, können Sie PWA-Funktionen sofort verwenden. Ihr AEMaaCS-Projekt erfüllt diese Anforderung automatisch.
+Die Kernkomponenten-Version 2.15.0 und höher unterstützt die PWA-Funktionen von AEM Sites vollständig. Da AEMaaCS immer die neueste Version der Kernkomponenten enthält, können Sie die PWA-Funktionen sofort nutzen. Ihr AEMaaCS-Projekt erfüllt diese Anforderung automatisch.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ The developer also adds the following link to the `customfooterlibs.html` file o
 
 ### Anpassen des Dispatchers {#adjust-dispatcher}
 
-Die PWA-Funktion generiert und verwendet `/content/<sitename>/manifest.webmanifest`-Dateien. Standardmäßig ist [den Dispatcher](/help/implementing/dispatcher/overview.md) stellt solche Dateien nicht bereit. Um diese Dateien bereitzustellen, muss der Entwickler die folgende Konfiguration zum Site-Projekt hinzufügen.
+Die PWA-Funktion generiert und verwendet `/content/<sitename>/manifest.webmanifest`-Dateien. Standardmäßig ist [den Dispatcher](/help/implementing/dispatcher/overview.md) stellt solche Dateien nicht bereit. Um diese Dateien bereitzustellen, muss die Entwicklungsperson die folgende Konfiguration zum Site-Projekt hinzufügen.
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -118,7 +118,7 @@ Mit [Voraussetzungen](#prerequisites) erfüllt, ist es für einen Inhaltsautor e
       * `/content/<sitename>`
       * `/content/experiencefragements/<sitename>`
       * `/content/dam/<sitename>`
-      * Schriftartverweise von Drittanbietern
+      * Alle Schriftart-Referenzen von Drittanbietern
       * `/etc/clientlibs/<sitename>`
 
       ![PWA-Offline-Pfade definieren](../assets/pwa-offline.png)
@@ -134,7 +134,7 @@ Nachdem Sie [Ihre Site für die Unterstützung von PWA konfiguriert haben](#enab
 1. Greifen Sie auf die Site in einer [unterstützter Browser](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
 1. In der Adressleiste des Browsers wird ein neues Symbol angezeigt, das angibt, dass die Site als lokale App installiert werden kann.
    * Je nach Browser kann das Symbol variieren und im Browser wird möglicherweise auch eine Benachrichtigung angezeigt (z. B. ein Banner oder ein Dialogfeld), die darauf hinweist, dass eine Installation als lokale App möglich ist.
-1. Installieren Sie das Programm.
+1. Installieren Sie die App.
 1. Die App wird auf dem Startbildschirm Ihres Geräts installiert.
 1. Öffnen Sie die App, navigieren Sie ein wenig und stellen Sie sicher, dass die Seiten offline verfügbar sind.
 
@@ -167,7 +167,7 @@ Diese Einstellungen ermöglichen es Ihrer Site, sich wie eine native App zu verh
 * **Themenfarbe**: Hiermit wird die [Farbe der App](https://developer.mozilla.org/de-DE/docs/Web/Manifest/theme_color) definiert, die sich darauf auswirkt, wie das Betriebssystem des lokalen Benutzers die native Symbolleiste der Benutzeroberfläche und die Navigationssteuerelemente anzeigt. Je nach Browser kann sich das auch auf andere Darstellungselemente der App auswirken.
    * Verwenden Sie das Popup-Farbton, um eine Farbe auszuwählen.
    * Die Farbe kann auch durch einen Hex- oder RGB-Wert definiert werden.
-* **Hintergrundfarbe** - Dadurch wird die [Hintergrundfarbe der App](https://developer.mozilla.org/de-DE/docs/Web/Manifest/background_color), was beim Laden der App angezeigt wird.
+* **Hintergrundfarbe**: Hiermit wird die [Hintergrundfarbe der App](https://developer.mozilla.org/de-DE/docs/Web/Manifest/background_color) definiert, die beim Laden der App angezeigt wird.
    * Verwenden Sie das Popup-Farbton, um eine Farbe auszuwählen.
    * Die Farbe kann auch durch einen Hex- oder RGB-Wert definiert werden.
    * Bestimmte Browser [bauen einen Startbildschirm automatisch](https://developer.mozilla.org/de-DE/docs/Web/Manifest#Splash_screens) aus dem App-Namen, der Hintergrundfarbe und dem Symbol auf.
@@ -181,12 +181,12 @@ Mit diesen Einstellungen werden Teile der Website offline und lokal auf dem Ger�
 
 * **Caching-Strategie und Häufigkeit der Inhaltsaktualisierung**: Diese Einstellung definiert das Caching-Modell für Ihre PWA.
    * **Mäßig**: [Diese Einstellung](https://web.dev/stale-while-revalidate/) gilt für die meisten Sites und ist der Standardwert.
-      * Mit dieser Einstellung wird der vom Benutzer zuerst angezeigte Inhalt aus dem Cache geladen. Während der Benutzer diesen Inhalt verwendet, wird der restliche Inhalt im Cache erneut validiert.
+      * Bei dieser Einstellung wird der Inhalt, den die Benutzerin bzw. der Benutzer zuerst sieht, aus dem Cache geladen, und während die Person diesen Inhalt verwendet, wird der restliche Inhalt im Cache erneut validiert.
    * **Häufig** - Dies gilt für Websites, die schnell aktualisiert werden müssen, wie Auktionshäuser.
       * Mit dieser Einstellung sucht das Programm zuerst über das Netzwerk nach dem neuesten Inhalt. Wenn er nicht verfügbar ist, wird er wieder in den lokalen Cache geladen.
    * **Selten**: Dies ist der Fall bei Websites, die nahezu statisch sind, z. B. Referenzseiten.
       * Mit dieser Einstellung sucht das Programm zuerst nach dem Inhalt im Cache und wenn nicht verfügbar, gelangt es zum Netzwerk, um ihn abzurufen.
-* **Dateivorab-Zwischenspeicherung** - Diese auf AEM gehosteten Dateien werden im lokalen Browser-Cache gespeichert, wenn der Service Worker installiert und bevor er verwendet wird. Dadurch wird sichergestellt, dass die Web-App im Offline-Modus vollständig funktioniert.
+* **Vorab-Caching von Dateien**: Diese in AEM gehosteten Dateien werden beim Installieren des Service Workers und vor der Verwendung im lokalen Browser-Cache gespeichert. Dadurch wird sichergestellt, dass die Web-App im Offline-Modus vollständig funktioniert.
 * **Pfadeinschlüsse**: Netzwerkanfragen für die definierten Pfade werden abgefangen und zwischengespeicherte Inhalte werden entsprechend der konfigurierten **Caching-Strategie und der Häufigkeit der Inhaltsaktualisierung** zurückgegeben.
 * **Cache-Ausschlüsse** - Diese Dateien werden unabhängig von den Einstellungen unter **Dateivorab-Zwischenspeicherung** und **Pfadeinschlüsse**.
 

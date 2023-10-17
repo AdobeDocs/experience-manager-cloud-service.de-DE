@@ -5,7 +5,7 @@ exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '2698'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -134,7 +134,7 @@ Um ein Design zu klonen, führen Sie die folgenden Anweisungen aus:
 
    Der Ordner wird im Visual Studio-Code geöffnet.
 
-1. Öffnen Sie die Datei `package.json` zur Bearbeitung.
+1. Öffnen Sie die Datei `package.json`, um sie zu bearbeiten.
 
 1. Legen Sie die Werte für die `name` und `description` -Attribute.
 
@@ -157,8 +157,8 @@ Sie können einzelne Komponenten anpassen oder Änderungen auf Designebene mithi
 
 Die `variable.scss` -Datei enthält die globalen Variablen des Designs. Durch Aktualisierung dieser Variablen können Sie stilistisch relevante Änderungen auf der Designebene vornehmen. Gehen Sie wie folgt vor, um Stile auf Designebene anzuwenden:
 
-1. Öffnen Sie die Datei `<your-theme-sources>/src/site/_variables.scss` zur Bearbeitung.
-1. Ändern Sie den Wert einer beliebigen Eigenschaft. Die standardmäßige Fehlerfarbe lautet beispielsweise `red`. So ändern Sie die Fehlerfarbe von `red` nach `blue`ändern Sie den Farb-Hex-Code des `$errorvariable`. Zum Beispiel: `$error: #196ee5`.
+1. Öffnen Sie die Datei `<your-theme-sources>/src/site/_variables.scss`, um sie zu bearbeiten.
+1. Ändern Sie den Wert einer beliebigen Eigenschaft. Die standardmäßige Fehlerfarbe lautet beispielsweise `red`. So ändern Sie die Fehlerfarbe von `red` nach `blue`ändern Sie den Farb-Hex-Code des `$errorvariable`. Beispiel: `$error: #196ee5`.
 1. Speichern und schließen Sie die Datei.
 
    ![Bearbeiten eines Designs](/help/forms/assets/edit_theme.png)
@@ -332,7 +332,7 @@ Nun können Sie die Änderungen an das Design-Repository Ihres AEM Forms-Cloud S
    git push [name-for-createdrepository]
    ```
 
-   Zum Beispiel:
+   Beispiel:
 
    ```
    git remote add canvascloudthemerepo https://git.cloudmanager.adobe.com/stage-aemformsdev/customcanvastheme/
@@ -410,7 +410,7 @@ Wenn Sie Informationen wie ein Logo, einen Firmennamen in der Kopfzeile und Copy
 
 **Ans:** Wenn Anpassungen sowohl auf globaler als auch auf Komponentenebene vorgenommen werden, hat die Anpassung auf Komponentenebene Priorität.
 
-## Siehe Nächste
+## Siehe nächste Punkte
 
 * [Festlegen des Layouts von Formularen für verschiedene Bildschirmgrößen und Gerätetypen](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [Generieren des Datensatzdokuments für adaptive Forms (Kernkomponenten)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
@@ -420,5 +420,5 @@ Wenn Sie Informationen wie ein Logo, einen Firmennamen in der Kopfzeile und Copy
 
 ## Verwandter Artikel {#related-article}
 
-* [Aktivieren der adaptiven Forms-Kernkomponenten in der as a Cloud Service und lokalen Entwicklungsumgebung von AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
+* [Aktivieren der Kernkomponenten für adaptive Formulare in AEM Forms as a Cloud Service und lokaler Entwicklungsumgebung](/help/forms/enable-adaptive-forms-core-components.md)
 * [Erstellen eines eigenständigen, auf Kernkomponenten basierenden adaptiven Formulars](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=de)

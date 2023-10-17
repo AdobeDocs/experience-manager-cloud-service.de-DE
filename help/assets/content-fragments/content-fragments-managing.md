@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
 source-wordcount: '1877'
-ht-degree: 79%
+ht-degree: 90%
 
 ---
 
@@ -80,9 +80,9 @@ Die Methode zum Erstellen eines Inhaltsfragments ist folgende:
 
       * **Name**
 
-        Der Name; wird verwendet, um die URL zu bilden.
+        Der Name, der für die URL verwendet wird.
 
-        Obligatorisch; wird automatisch aus dem Titel abgeleitet, kann jedoch aktualisiert werden.
+        Obligatorisch. Wird automatisch aus dem Titel abgeleitet, kann jedoch aktualisiert werden.
 
 1. Wählen Sie **Erstellen** aus, um den Vorgang abzuschließen, und **öffnen** Sie das Fragment zur Bearbeitung oder wechseln Sie über **Fertig** wieder zur Konsole.
 
@@ -133,7 +133,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
 >[!CAUTION]
 >
->Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, wenn Probleme auftreten.
+>Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihre Systemadmins, falls Probleme auftreten.
 
 1. Navigieren Sie in der **Assets**-Konsole zum Speicherort des gewünschten Inhaltsfragments.
 1. Öffnen Sie das Fragment zur Bearbeitung. Befolgen Sie dazu einen der folgenden Schritte:
@@ -179,7 +179,7 @@ Einige Funktionen in der oberen Symbolleiste stehen in mehreren Modi zur Verfüg
 
 ![In verschiedenen Modi verfügbare Symbolleistenaktionen](assets/cfm-managing-top-toolbar.png)
 
-* Eine Meldung wird angezeigt, wenn das Fragment bereits auf einer Inhaltsseite referenziert wurde. Sie können die Nachricht **schließen**
+* Es wird eine Benachrichtigung angezeigt, wenn das Fragment bereits auf einer Inhaltsseite referenziert wird. Sie können die Nachricht **schließen**
 
 * Das seitliche Bedienfeld kann über das Symbol **Seitliches Bedienfeld ein/aus** ein- oder ausgeblendet werden.
 
@@ -227,7 +227,7 @@ Der Editor bietet mehrere Optionen:
 
   >[!CAUTION]
   >
-  >Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, wenn Probleme auftreten.
+  >Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihre Systemadmins, falls Probleme auftreten.
 
   >[!NOTE]
   >
@@ -235,13 +235,13 @@ Der Editor bietet mehrere Optionen:
 
   >[!CAUTION]
   >
-  >Mit der Aktion werden nicht nur einfach Ihre Änderungen gespeichert, sondern auch alle Verweise aktualisiert und sichergestellt, dass der Dispatcher nach Bedarf geleert wird. Es kann einige Zeit dauern, bis diese Änderungen verarbeitet werden. Aufgrund dieser Zeit kann sich die Leistung auf ein großes/komplexes/stark belastetes System auswirken.
+  >Mit der Aktion werden nicht nur einfach Ihre Änderungen gespeichert, sondern auch alle Verweise aktualisiert und sichergestellt, dass der Dispatcher nach Bedarf geleert wird. Es kann einige Zeit dauern, bis diese Änderungen verarbeitet werden. Aus diesem Grund kann die Leistung eines umfassenden, komplexen oder stark belasteten Systems beeinträchtigt werden.
   >
-  >Beachten Sie diesen Vorgang bei Verwendung von **Speichern und schließen** und dann schnell wieder in den Fragmenteditor wechseln, um weitere Änderungen vorzunehmen und zu speichern.
+  >Beachten Sie dies, wenn Sie die Option **Speichern und schließen** auswählen und den Fragment-Editor danach schnell erneut aufrufen, um weitere Änderungen vorzunehmen und zu speichern.
 
 * **Schließen**
 
-  Beendet den Editor, ohne die neuesten Änderungen zu speichern (d. h. die seit der letzten Änderung vorgenommen wurden) **Speichern**).
+  Damit wird der Editor beendet, ohne die neuesten Änderungen zu speichern (also die Änderungen seit dem letzten **Speichern**).
 
 Beim Bearbeiten Ihres Inhaltsfragments erstellt AEM automatisch Versionen, damit ältere Inhalte werden können, falls Sie Ihre Änderungen verwerfen möchten (verwenden Sie dazu die Option **Schließen** ohne zu Speichern):
 
@@ -272,7 +272,7 @@ Sobald Sie den primären Inhalt erstellt haben, können Sie [Varianten](/help/as
 
 ## Verknüpfen von Inhalt mit Ihrem Fragment {#associating-content-with-your-fragment}
 
-Sie können auch Inhalte mit einem Fragment [verknüpfen](/help/assets/content-fragments/content-fragments-assoc-content.md). Dadurch wird eine Verbindung bereitgestellt, sodass Assets (d. h. Bilder) (optional) mit dem Fragment verwendet werden können, wenn es zu einer Inhaltsseite hinzugefügt wird.
+Sie können auch Inhalte mit einem Fragment [verknüpfen](/help/assets/content-fragments/content-fragments-assoc-content.md). So entsteht eine Verbindung, mit der Assets (d. h. Bilder) für ein Fragment verwendet werden können (falls gewünscht), wenn sie zu einer Inhaltsseite hinzugefügt werden.
 
 ## Anzeigen und Bearbeiten von Metadaten (Eigenschaften) des Fragments {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -359,9 +359,9 @@ Sie können eine frühere Version Ihres Fragments wiederherstellen.
 >
 Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
-Wenn Sie ein Inhaltsfragment veröffentlichen, für das das Modell noch nicht veröffentlicht wurde, wird dies in einer Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
-Inhaltsfragmente müssen veröffentlicht werden, um in der Veröffentlichungsumgebung genutzt werden zu können. Dies geschieht mithilfe der standardmäßigen Assets-Funktionen:
+Inhaltsfragmente müssen veröffentlicht werden, um in der Publishing-Umgebung genutzt werden zu können. Dies geschieht mithilfe der standardmäßigen Assets-Funktionen:
 
 * [Quick Publish](/help/assets/manage-publication.md#quick-publish)
 * [Veröffentlichung verwalten](/help/assets/manage-publication.md#manage-publication)
@@ -371,7 +371,7 @@ Der Zugriff kann auf folgende Weisen erfolgen:
 * Nach der Erstellung; Verwenden von [Aktionen, die in der Assets-Konsole verfügbar sind](#actions-for-a-content-fragment-assets-console).
 * Im [Inhaltsfragment-Editor](#toolbar-actions-in-the-content-fragment-editor)
 
-Wenn Sie [eine Seite veröffentlichen, die das Fragment verwendet](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); das Fragment wird in den Seitenverweisen aufgeführt.
+Wenn Sie [eine Seite veröffentlichen, in der das Fragment verwendet wird](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), wird das Fragment außerdem in den Seitenverweisen aufgeführt.
 
 >[!CAUTION]
 >

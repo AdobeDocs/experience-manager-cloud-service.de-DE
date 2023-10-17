@@ -9,7 +9,7 @@ exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '3403'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -28,15 +28,15 @@ Mit der Funktion „Multi Site Manager“ (MSM) in [!DNL Adobe Experience Mana
 
 >[!NOTE]
 >
->MSM für [!DNL Assets] umfasst Inhaltsfragmente, die als [!DNL Assets] (obwohl als Sites-Funktion betrachtet).
+>Das MSM für die [!DNL Assets]-Funktionalität enthält Inhaltsfragmente, die als [!DNL Assets] gespeichert werden (obwohl sie als Sites-Funktion gelten).
 
 >[!CAUTION]
 >
->MSM für Inhaltsfragmente ist nur verfügbar, wenn Inhaltsfragmente über die **[!UICONTROL Assets]** Konsole.
+>MSM für Inhaltsfragmente ist nur verfügbar, wenn Inhaltsfragmente über die **[!UICONTROL Assets]**-Konsole verwendet werden.
 >
->MSM-Funktionalität ist *not* verfügbar bei Verwendung von **[!UICONTROL Inhaltsfragmente]** Konsole.
+>Die MSM-Funktionalität ist *nicht* verfügbar, wenn die **[!UICONTROL Inhaltsfragmentkonsole]** verwendet wird.
 
-## Die Vorteile und Konzepte von MSM verstehen {#concepts}
+## Wissenswertes über Vorteile und Konzepte von MSM {#concepts}
 
 ### Funktionsweise und Vorteile {#how-it-works-and-the-benefits}
 
@@ -53,7 +53,7 @@ MSM behält eine (Live-)Beziehung zwischen dem Quell-Asset und seinen Live Copi
 
 **Live Copy**: Die Kopie der Quell-Assets/-Ordner, die mit der zugehörigen Quelle synchronisiert wird. Live Copies können eine Quelle für weitere Live Copies sein. Siehe „Erstellen von LCs“.
 
-**Vererbung**: Ein Link/Verweis zwischen einem Live Copy-Asset/Ordner und seiner Quelle, die das System verwendet, um sich zu merken, wohin es die Aktualisierungen senden soll. Die Vererbung existiert auf granularer Ebene für Metadatenfelder, auch Inhaltsfragmentvarianten und -felder. Die Vererbung kann für ausgewählte Elemente entfernt werden, während die Live-Beziehung zwischen Quelle und deren Live Copy beibehalten wird.
+**Vererbung**: Ein Link/Verweis zwischen einem Live Copy-Asset/Ordner und seiner Quelle, die das System verwendet, um sich zu merken, wohin es die Aktualisierungen senden soll. Die Vererbung existiert auf granularer Ebene für Metadatenfelder, auch für Inhaltsfragmentvarianten und -felder. Die Vererbung kann für ausgewählte Elemente entfernt werden, während die Live-Beziehung zwischen Quelle und zugehöriger Live Copy beibehalten wird.
 
 **Rollout**: Eine Aktion, durch die die Änderungen an der Quelle nachgelagert an die Live Copys weitergegeben werden. Es ist möglich, mithilfe der Aktion „Rollout“ eine oder mehrere Live Copies in einem Schritt zu aktualisieren. Siehe „Rollout“.
 
@@ -76,7 +76,7 @@ Führen Sie einen der folgenden Schritte aus, um eine Live Copy aus einem oder 
 * Methode 1: Wählen Sie die Quell-Assets aus und klicken Sie oben in der Symbolleiste auf **[!UICONTROL Erstellen]** > **[!UICONTROL Live Copy]**.
 * Methode 2: Klicken Sie oben rechts in der [!DNL Experience Manager]-Benutzeroberfläche auf **[!UICONTROL Erstellen]** > **[!UICONTROL Live Copy]**.
 
-Sie können Live Copies eines Assets oder Ordners einzeln erstellen. Sie können Live Copies erstellen, die aus einem Asset oder Ordner abgeleitet werden, der ebenfalls eine Live Copy ist.
+Sie können Live Copies eines Assets oder Ordners einzeln erstellen. Sie können Live Copys erstellen, die aus einem Asset oder Ordner abgeleitet werden, der ebenfalls eine Live Copy ist.
 
 Führen Sie folgende Schritte aus, um Live Copies mit der ersten Methode zu erstellen:
 
@@ -249,7 +249,7 @@ Sie können die Live Copy-Vererbung für Folgendes abbrechen:
 
 * Metadatenfeld
 * Inhaltsfragmentvariante
-* Datenfeld &quot;Inhaltsfragment&quot;
+* Inhaltsfragment-Datenfeld
 
 Dies bedeutet, dass das Element nicht mehr mit der Quellkomponente synchronisiert wird. Sie können die Vererbung bei Bedarf zu einem späteren Zeitpunkt aktivieren.
 
@@ -257,19 +257,19 @@ Dies bedeutet, dass das Element nicht mehr mit der Quellkomponente synchronisier
 
 So brechen Sie die Vererbung ab:
 
-1. Wählen Sie die **Vererbung abbrechen** neben dem erforderlichen Element:
+1. Wählen Sie das Symbol **Vererbung abbrechen** neben dem erforderlichen Element:
 
-   ![Aktion „Synchronisieren“ – Abrufen von Quelländerungen](assets/cancel-inheritance-icon.png)
+   ![Aktion „Synchronisieren“ – Abrufen der Quelländerungen](assets/cancel-inheritance-icon.png)
 
-1. Bestätigen Sie die Aktion im Dialogfeld Vererbung abbrechen mit Ja.
+1. Bestätigen Sie die Aktion im Dialogfeld „Vererbung abbrechen“ mit „Ja“.
 
 ### Vererbung erneut aktivieren {#reenable-inheritance}
 
 So aktivieren Sie die Vererbung erneut:
 
-1. Um die Vererbung für ein Element zu aktivieren, wählen Sie die **Vererbung erneut aktivieren** neben dem erforderlichen Element:
+1. Um die Vererbung für ein Element zu aktivieren, wählen Sie das Symbol **Vererbung erneut aktivieren** neben dem erforderlichen Element:
 
-   ![Aktion „Synchronisieren“ – Abrufen von Quelländerungen](assets/re-enable-inheritance-icon.png)
+   ![Aktion „Synchronisieren“ – Abrufen der Quelländerungen](assets/re-enable-inheritance-icon.png)
 
    >[!NOTE]
    >
@@ -363,7 +363,7 @@ In weiteren Szenarien entspricht das Verhalten von MSM für [!DNL Assets] dem vo
 
 >[!NOTE]
 >
->Denken Sie daran, dass MSM für Inhaltsfragmente (auf die über das **[!UICONTROL Assets]** -Konsole) verwendet die Assets-Funktion; Dies liegt daran, dass sie als Assets gespeichert werden (obwohl sie als Sites-Funktion betrachtet werden).
+>Denken Sie daran, dass MSM für Inhaltsfragmente (zugänglich über die **[!UICONTROL Assets]**-Konsole) die Assets-Funktionalität verwendet. Dies liegt daran, dass sie als Assets gespeichert werden (obwohl sie als Sites-Funktion gelten).
 
 ## Beschränkungen und bekannte Probleme bei MSM für [!DNL Assets] {#limitations}
 

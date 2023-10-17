@@ -5,7 +5,7 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
 source-wordcount: '1093'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Befolgen Sie die unten beschriebenen Best Practices, um Ihr AEM Headless-Program
 
 * Erstellen Sie möglichst keine Abfragen, die JSON-Dateien mit einer Größe von mehr als 15 KB ausgeben (gzip-komprimiert). Die Analyse großer JSON-Dateien ist für Client-Programme ressourcenintensiv.
 * Vermeiden Sie mehr als fünf verschachtelte Ebenen in Fragmenthierarchien. Zusätzliche Ebenen erschweren es Inhaltsautoren, die Auswirkungen ihrer Änderungen zu berücksichtigen.
-* Verwenden Sie Abfragen mit mehreren Objekten, anstatt Abfragen mit Abhängigkeitshierarchien innerhalb der Modelle zu modellieren. Dies ermöglicht eine langfristige Flexibilität bei der Neustrukturierung der JSON-Ausgabe, ohne dass viele Inhaltsänderungen erforderlich sind.
+* Verwenden Sie Abfragen mit mehreren Objekten, anstatt Abfragen mit Abhängigkeitshierarchien innerhalb der Modelle zu modellieren. Dies ermöglicht eine langfristigere Flexibilität bei der Neustrukturierung der JSON-Ausgabe, ohne dass viele Inhaltsänderungen erforderlich sind.
 
 ## Maximieren der CDN-Cache-Trefferquote {#maximize-cdn}
 
@@ -50,7 +50,7 @@ Befolgen Sie die unten beschriebenen Best Practices, um Ihr AEM Headless-Program
    * Verwenden Sie nach Möglichkeit persistente Abfragen.
    * Geben Sie eine CDN-TTL von mehr als 600 Sekunden an, damit das CDN sie zwischenspeichert.
    * AEM kann die Auswirkungen einer Modelländerung auf vorhandene Abfragen berechnen.
-* Teilen Sie JSON-Dateien/GraphQL-Abfragen zwischen niedriger und hoher Inhaltsänderungsrate auf, damit Sie den Client-Traffic auf CDN reduzieren und eine höhere TTL zuweisen können. Dies minimiert den Aufwand für das CDN, die JSON-Dateien beim Ursprungs-Server erneut zu validieren.
+* Teilen Sie JSON-Dateien/GraphQL-Abfragen nach niedriger und hoher Inhaltsänderungsrate auf, um den Client-Traffic zum CDN zu reduzieren und eine längere TTL zuzuweisen. Dies minimiert den Aufwand für das CDN, die JSON-Dateien beim Ursprungs-Server erneut zu validieren.
 * Inhalte aus dem CDN können Sie aktiv per Soft Purge ungültig machen. Dadurch kann das CDN die Inhalte erneut herunterladen, ohne dass es zu Cache-Fehlern kommt.
 
 ## Verkürzen der Download-Zeit für Headless-Content {#improve-download-time}
@@ -101,7 +101,7 @@ Befolgen Sie die folgenden Best Practices als allgemeinen Debugging-Ansatz:
 
 ### Protokollieren eines Fehlers beim Support {#logging-a-bug-with-support}
 
-Gehen Sie wie folgt vor, um einen Fehler mit dem Support zu protokollieren, falls Sie weitere Unterstützung benötigen:
+Führen Sie Folgendes aus, um einen Fehler effizient beim Support zu protokollieren, falls Sie weitere Unterstützung benötigen:
 
 * Erstellen Sie ggf. Screenshots zum Problem.
 * Dokumentieren Sie eine Methode, das Problem zu reproduzieren.
@@ -124,7 +124,7 @@ Sie haben entweder bereits Ihr erstes AEM Headless-Projekt gestartet oder verfü
 
 ### Erkunden von Single Page Applications {#explore-spa}
 
-Die Headless-Stores in AEM müssen hier aber nicht aufhören. Im Abschnitt mit den [ersten Schritten der AEM Headless-Entwickler-Tour](getting-started.md#integration-levels) haben wir kurz gestreift, wie AEM nicht nur Headless-Bereitstellungen und herkömmliche Full-Stack-Modelle unterstützt, sondern auch Hybridmodelle unterstützen kann, die die Vorteile beider Modelle kombinieren.
+Die Headless-Stores in AEM müssen hier jedoch nicht enden. Im Abschnitt mit den [ersten Schritten der AEM Headless-Entwickler-Tour](getting-started.md#integration-levels) haben wir kurz gestreift, wie AEM nicht nur Headless-Bereitstellungen und herkömmliche Full-Stack-Modelle unterstützt, sondern auch Hybridmodelle unterstützen kann, die die Vorteile beider Modelle kombinieren.
 
 Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem optionalen, zusätzlichen Teil der AEM Headless-Entwickler-Tour fort: [Erstellen von Single Page Applications (SPAs) mit AEM](create-spa.md).
 

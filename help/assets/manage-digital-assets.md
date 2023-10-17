@@ -9,7 +9,7 @@ exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 source-git-commit: 2f3845495b545f88a1bc5a5feef1a6312f679a26
 workflow-type: tm+mt
 source-wordcount: '4501'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -66,7 +66,7 @@ So aktivieren Sie die Funktion:
 
 >[!NOTE]
 >
->Wenn Sie die Duplikatserkennung mit `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` Konfigurationsdatei (OSGi-Konfiguration) verwenden, können Sie sie weiterhin verwenden. Adobe empfiehlt jedoch die Verwendung der neuen Methode.
+>Wenn Sie die Duplikaterkennung mit der Konfigurationsdatei `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` (OSGi-Konfiguration) verwenden, können Sie sie weiterhin verwenden. Adobe empfiehlt jedoch die Verwendung der neuen Methode.
 
 
 Nach der Aktivierung sendet Experience Manager Benachrichtigungen über doppelte Assets an den Posteingang von Experience Manager. Dabei handelt es sich um ein aggregiertes Ergebnis für mehrere Duplikate. Benutzer können die Assets anhand der Ergebnisse entfernen.
@@ -205,7 +205,7 @@ Die anderen Eigenschaften und Metadateninformationen werden beibehalten. Beim Ko
 
    >[!NOTE]
    >
-   >* Sie können denselben Namen für das Asset angeben, wenn am neuen Speicherort kein Asset mit diesem Namen vorhanden ist. Sie sollten jedoch einen anderen Namen verwenden, wenn Sie das Asset an einen Speicherort verschieben, an dem sich ein Asset mit demselben Namen befindet. Wenn Sie denselben Namen verwenden, erzeugt das System automatisch eine Variation des Namens. Wenn Ihr Asset beispielsweise den Namen &quot;Quadrat&quot;hat, generiert das System den Namen &quot;Quadrat1&quot;für die Kopie.
+   >* Sie können denselben Namen für das Asset angeben, wenn am neuen Speicherort kein Asset mit diesem Namen vorhanden ist. Sie sollten jedoch einen anderen Namen verwenden, wenn Sie das Asset an einen Speicherort verschieben, an dem sich ein Asset mit demselben Namen befindet. Wenn Sie denselben Namen verwenden, erzeugt das System automatisch eine Variation des Namens. Wenn Sie beispielsweise ein Asset mit dem Namen „Quadrat“ kopieren, generiert das System den Namen „Quadrat1“ für die Kopie.
    >* Beim Umbenennen sind Leerzeichen im Dateinamen nicht zulässig.
 
 1. Führen Sie im Dialogfeld **[!UICONTROL Ziel auswählen]** eine der folgenden Aktionen aus:

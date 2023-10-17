@@ -6,7 +6,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1507'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ Sobald Sie mit der Benutzeroberfläche von [!UICONTROL Cloud Manager] Ihr Progra
    **Verhalten bei bedeutenden Metrikfehlern**: Bei der Einrichtung oder Bearbeitung der Pipeline kann der **Bereitstellungs-Manager** festlegen, wie sich die Pipeline verhält, wenn bei einem der Quality Gates ein wichtiger Fehler auftritt. Folgende Optionen sind verfügbar:
 
    * **Jedes Mal fragen**: Das ist die Standardeinstellung und erfordert manuelles Eingreifen bei einem wichtigen Fehler.
-   * **Sofort scheitern** - Wenn diese Option aktiviert ist, wird die Pipeline bei einem wichtigen Fehler abgebrochen. Damit wird im Grunde ein Anwender simuliert, der manuell jeden Fehler ablehnt.
+   * **Sofortiger Ausfall**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem bedeutenden Fehler abgebrochen. Damit wird im Grunde ein Anwender simuliert, der manuell jeden Fehler ablehnt.
    * **Sofort fortfahren**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem wichtigen Fehler automatisch fortgesetzt. Damit wird im Grunde ein Anwender simuliert, der manuell jeden Fehler genehmigt.
 
    ![Konfiguration der Produktions-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
@@ -95,7 +95,7 @@ Eine Pipeline mit Full-Stack-Code stellt gleichzeitig Backend- und Frontend-Code
 
 >[!NOTE]
 >
->Wenn für die ausgewählte Umgebung bereits eine Vollstapel-Code-Pipeline vorhanden ist, ist diese Auswahl deaktiviert.
+>Wenn für die ausgewählte Umgebung bereits eine Pipeline mit Full-Stack-Code vorhanden ist, wird diese Auswahl deaktiviert.
 
 Gehen Sie wie folgt vor, um die Konfiguration der Pipeline mit Full-Stack-Code abzuschließen.
 
@@ -126,18 +126,18 @@ Gehen Sie wie folgt vor, um die Konfiguration der Pipeline mit Full-Stack-Code a
 
    ![Definieren eines Pfads für das Experience Audit](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-1. Klicks **Seite hinzufügen** und der Pfad wird automatisch mit der Adresse Ihrer Umgebung ausgefüllt und der Pfadtabelle hinzugefügt.
+1. Wenn Sie auf **Seite hinzufügen** klicken, wird der Pfad automatisch mit der Adresse Ihrer Umgebung ausgefüllt und der Pfadtabelle hinzugefügt.
 
    ![Speichern des Pfads zur Tabelle](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
 1. Fügen Sie weitere Pfade hinzu, indem Sie die vorherigen beiden Schritte wiederholen.
 
    * Sie können maximal 25 Pfade hinzufügen.
-   * Wenn Sie keine Pfade definieren, ist die Startseite der Site standardmäßig in Experience Audit enthalten.
+   * Wenn Sie keine Pfade definieren, wird die Startseite der Site standardmäßig in das Experience Audit einbezogen.
 
 1. Klicken Sie auf **Speichern**, um die Pipeline zu speichern.
 
-Für Experience Audit konfigurierte Pfade werden an den Dienst gesendet und gemäß den Leistungs-, Zugänglichkeits-, SEO- (Suchmaschinenoptimierung), Best Practice- und PWA-Tests (Progressive Web App) bewertet, wenn die Pipeline ausgeführt wird. Siehe [Verstehen der Ergebnisse von Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md) für weitere Details.
+Für das Experience Audit konfigurierte Pfade werden an den Dienst gesendet und gemäß den Leistungs-, Zugänglichkeits-, SEO- (Suchmaschinenoptimierung), Best Practices- und PWA (Progressive Web-App)-Tests bewertet, wenn die Pipeline ausgeführt wird. Weitere Einzelheiten finden Sie unter [Grundlegendes zu den Ergebnissen von Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
 
@@ -177,7 +177,7 @@ Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können S
 
 Mit Frontend-Pipelines erhalten Frontend-Entwicklern mehr Unabhängigkeit und der Entwicklungsprozess kann beschleunigt werden.
 
-Siehe [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) , um zu erfahren, wie dieser Prozess funktioniert, und einige Überlegungen anzustellen, um das Potenzial dieses Prozesses voll auszuschöpfen.
+Wie dieser Prozess abläuft und was dabei zu beachten ist, um das volle Potenzial dieses Prozesses auszuschöpfen, erfahren Sie unter [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
 
 ## Überspringen von Dispatcher-Paketen {#skip-dispatcher-packages}
 

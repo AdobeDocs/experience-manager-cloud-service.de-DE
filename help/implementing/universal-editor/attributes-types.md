@@ -5,7 +5,7 @@ exl-id: 02795a31-244a-42b4-8297-2649125d7777
 source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
 source-wordcount: '680'
-ht-degree: 73%
+ht-degree: 87%
 
 ---
 
@@ -27,9 +27,9 @@ Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss si
 |---|---|
 | `itemid` | URN zur Ressource, siehe den Abschnitt [„Instrumentieren der Seite“ im Dokument „Erste Schritte mit dem universellen Editor in AEM“](getting-started.md#instrument-thepage) |
 | `itemprop` | Attribut der Ressource, siehe den Abschnitt [„Instrumentieren der Seite“ im Dokument „Erste Schritte mit dem universellen Editor in AEM“](getting-started.md#instrument-thepage) |
-| `itemtype` | Typ des bearbeitbaren Elements (z. B. Text, Bild und Verweis) |
+| `itemtype` | Typ des bearbeitbaren Elements (z. B. Text, Bild, Referenz usw.) |
 | `data-editor-itemfilter` | Definiert, welche Verweise verwendet werden können |
-| `data-editor-itemlabel` | Definiert eine benutzerdefinierte Bezeichnung für ein auswählbares Element, das im Editor angezeigt wird <br>In diesem Fall `itemmodel` festgelegt ist, wird die Bezeichnung über das Modell abgerufen |
+| `data-editor-itemlabel` | Definiert eine benutzerdefinierte Beschriftung für ein auswählbares Element, das im Editor angezeigt wird. <br>Wenn `itemmodel` festgelegt ist, wird die Beschriftung über das Modell abgerufen |
 | `data-editor-itemmodel` | Definiert ein Modell, das für die formularbasierte Bearbeitung in der Eigenschaftenleiste verwendet wird |
 | `data-editor-behavior` | Definiert das Verhalten einer Instrumentierung, z. B. kann ein eigenständiger Text oder ein Bild auch eine Komponente imitieren, um sie verschiebbar oder löschbar zu machen |
 
@@ -38,7 +38,7 @@ Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss si
 | `itemtype` | Beschreibung | `itemid` | `itemprop` | `data-editor-itemfilter` | `data-editor-itemlabel` | `data-editor-itemmodel` | `data-editor-behvior` |
 |---|---|---|---|---|---|---|---|
 | `text` | Text kann innerhalb der HTML-Tags bearbeitet werden, jedoch nur im einfachen Textformat, ohne verfügbare Rich-Text-Formatierung. Dies wird häufig bei Titelkomponenten verwendet, z. B. | Optional | Erforderlich | Nicht zutreffend | Optional | Nicht zutreffend | Optional |
-| `richtext` | Der Text kann mit allen Rich-Text-Funktionen bearbeitet werden. Der RTE wird im rechten Bereich angezeigt | Optional | Erforderlich | Nicht zutreffend | Optional | Nicht zutreffend | Optional |
+| `richtext` | Der Text kann mit allen Rich-Text-Funktionen bearbeitet werden. RTE wird im rechten Bedienfeld angezeigt | Optional | Erforderlich | Nicht zutreffend | Optional | Nicht zutreffend | Optional |
 | `media` | Das bearbeitbare Element ist ein Asset, z. B. Bild oder Video | Optional | Erforderlich | Optional<br>Liste der Kriterien für Bild- oder Videofilter, die an den Asset-Selektor übergeben werden | Optional | Nicht zutreffend | Optional |
 | `container` | Das bearbeitbare Element verhält sich als Container für Komponenten, auch bekannt als Absatzsystem. | Abhängig von <br>siehe unten | Abhängig von <br>siehe unten | Optional<br>eine Liste der zulässigen Komponenten | Optional | Nicht zutreffend | Nicht zutreffend |
 | `component` | Das bearbeitbare Element ist eine Komponente. Es werden keine zusätzlichen Funktionen hinzugefügt. Es ist erforderlich, bewegliche/löschbare Teile des DOM anzugeben und die Eigenschaftenleiste und ihre Felder zu öffnen | Erforderlich | Nicht zutreffend | Nicht zutreffend | Optional | Optional | Nicht zutreffend |
@@ -60,7 +60,7 @@ Je nach Anwendungsfall kann `itemprop` oder `itemid` erforderlich sein oder nich
 
 Weitere Informationen zum universellen Editor finden Sie in diesen Dokumenten.
 
-* [Einführung in den universellen Editor](introduction.md) - Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, sodass Sie außergewöhnliche Erlebnisse bereitstellen, die Inhaltsgeschwindigkeit erhöhen und ein modernes Entwicklererlebnis bieten können.
+* [Einführung in den universellen Editor](introduction.md) – Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
 * [Inhaltserstellung mit dem universellen Editor](authoring.md) – Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
 * [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md) - Erfahren Sie, wie der Universal Editor Inhalte veröffentlicht und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
 * [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) – Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.

@@ -5,7 +5,7 @@ exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 81%
+ht-degree: 95%
 
 ---
 
@@ -48,7 +48,7 @@ So erstellen Sie einen CSV-Export:
 
 1. Öffnen Sie die **Sites-Konsole** und wechseln Sie zum gewünschten Verzeichnis, falls erforderlich.
    * Die Option **CSV-Bericht erstellen** ist verfügbar, wenn Sie durch die Konsole **Sites** (in der Listenansicht) navigieren.
-   * Dies ist eine Option der **Erstellen** Dropdown-Menü:
+   * Es handelt sich um eine Option im Dropdown-Menü **Erstellen**:
 
      ![Option „CSV-Bericht erstellen“](/help/sites-cloud/authoring/assets/csv-create.png)
 
@@ -56,6 +56,6 @@ So erstellen Sie einen CSV-Export:
 
    ![CSV-Exportoptionen](/help/sites-cloud/authoring/assets/csv-options.png)
 
-1. Wählen Sie die erforderlichen Eigenschaften aus, die exportiert werden sollen.
+1. Wählen Sie die zu exportierenden Eigenschaften aus.
 1. Wählen Sie **Erstellen**.
    ![Resultierender CSV-Export in Excel](/help/sites-cloud/authoring/assets/csv-example.png)

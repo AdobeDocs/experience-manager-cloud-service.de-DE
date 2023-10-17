@@ -5,7 +5,7 @@ exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
 source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ java -jar oak-run.jar datastorecheck --consistency --store [<SEGMENT_STORE_PATH>
 java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO_URI>] --[s3ds|fds|azureds] <DATASTORE_CFG> --out-dir <OUT_DIR> --work-dir <TEMP_DIR> --verbose
 ```
 
-Siehe [Oak Runable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) für weitere Details.
+Weitere Informationen finden Sie unter [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run).
 
 Die Dateien, die im oben angegebenen Verzeichnis *OUT_DIR* erstellt wurden, um Konsistenz zu gewährleisten, können dann auf Pfade ohne Binärdateien überprüft werden. Anschließend können geeignete Maßnahmen ergriffen werden, wie das Wiederherstellen aus einer Sicherung, das Löschen der Pfade, die Neuindizierung usw.
 

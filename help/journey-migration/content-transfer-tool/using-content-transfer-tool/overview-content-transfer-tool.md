@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 76%
+ht-degree: 93%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 76%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Übersicht"
->abstract="Das Content Transfer Tool ist ein von Adobe entwickeltes Tool, mit dem die Migration vorhandener Inhalte von einer AEM-Quellinstanz (On-Premise oder AMS) in die Zielinstanz in AEM Cloud Service initiiert werden kann. Dieses Tool überträgt auch Prinzipale (Benutzer oder Gruppen) automatisch."
+>abstract="Das Content Transfer Tool ist ein von Adobe entwickeltes Tool, mit dem die Migration vorhandener Inhalte von einer AEM-Quellinstanz (On-Premise oder AMS) in die Zielinstanz in AEM Cloud Service initiiert werden kann. Dieses Tool überträgt auch Prinzipale (Benutzende oder Gruppen) automatisch."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=de" text="Richtlinien und Best Practices"
 
-Das Content Transfer Tool ist ein von Adobe entwickeltes Tool, mit dem die Migration vorhandener Inhalte von einer Quell-AEM-Instanz (On-Premise oder AMS) zur AEM Cloud Service-Zielinstanz initiiert werden kann.
+Das Content Transfer Tool ist ein von Adobe entwickeltes Tool, mit dem die Migration vorhandener Inhalte von einer AEM-Quellinstanz (On-Premise oder AMS) in die Zielinstanz in AEM Cloud Service initiiert werden kann.
 
-Dieses Tool überträgt auch Prinzipale (Benutzer oder Gruppen) automatisch.  Siehe [Benutzerzuordnung und Hauptmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) für weitere Informationen.
+Dieses Tool überträgt auch Prinzipale (Benutzende oder Gruppen) automatisch.  Weitere Informationen finden Sie unter [Benutzerzuordnung und Prinzipalmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
-Das Content Transfer Tool integriert den Inhaltstransferprozess in Cloud Acceleration Manager. Dadurch erhält der Benutzer alle Vorteile, die er bietet:
+Das Content Transfer Tool integriert den Inhaltstransferprozess in Cloud Acceleration Manager. Dadurch erhalten die Benutzenden alle Vorteile des Tools:
 
 * Self-Service-Methode zur einmaligen Extraktion eines Migrationssatzes und zur gleichzeitigen Aufnahme in mehrere Umgebungen
-* Verbessertes Benutzererlebnis durch verbesserte Ladezustände, Limits und Fehlerbehandlung
+* Verbessertes Anwendererlebnis durch bessere Ladezustände, Schutzmechanismen und Fehlerbehandlung
 * Aufnahmeprotokolle bleiben erhalten und stehen immer zur Fehlerbehebung zur Verfügung.
-* Validierungs- und Hauptmigrationsberichte stehen zur Validierung zur Verfügung
+* Validierungs- und Prinzipalmigrationsberichte zur Validierung
 
 ## Phasen im Content Transfer Tool {#phases-content-transfer-tool}
 
@@ -34,7 +34,7 @@ Beim Inhaltstransfer gibt es zwei Phasen:
 
 1. **Extraktion**: Extraktion bezieht sich auf das Extrahieren von Inhalten aus der AEM-Quellinstanz in einen temporären Bereich, der als *Migrationssatz* bezeichnet wird. Ein *Migrationssatz* ist ein Cloud-Speicherplatzbereich, der von Adobe bereitgestellt wird, um die übertragenen Inhalte vorübergehend zwischen der AEM-Quellinstanz und der Cloud Service-AEM-Instanz zu speichern.
 
-   Siehe [Extraktionsvorgang beim Inhaltstransfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) für weitere Details.
+   Weitere Informationen finden Sie unter [Extraktionsvorgang beim Inhaltstransfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md).
 
    >[!NOTE]
    >Die Benutzerzuordnung wird jetzt automatisch im Rahmen der Extraktionsphase bei Author ausgeführt (kann aber optional bei Author deaktiviert oder bei Publish aktiviert werden). Weitere Informationen finden Sie unter [Benutzerzuordnung und Prinzipalmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
@@ -55,9 +55,9 @@ Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle A
 >[!NOTE]
 >Nach dem ersten Transfer von Inhalten wird empfohlen, häufige differenzielle Auffüllungen des Inhalts durchzuführen, um den Zeitraum für das Einfrieren des Inhalts für den endgültigen differenziellen Inhaltstransfer zu verkürzen, bevor er in Cloud Service live geschaltet wird.
 
-In der Extraktionsphase muss die Option ***Überschreiben*** deaktiviert werden, um einen vorhandenen Migrationssatz *aufzufüllen*. Siehe [Auffüllextraktion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) für weitere Details.
+In der Extraktionsphase muss die Option ***Überschreiben*** deaktiviert werden, um einen vorhandenen Migrationssatz *aufzufüllen*. Weitere Informationen finden Sie unter [Auffüllextraktion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
 
-In der Aufnahmephase muss die *Löschoption* deaktiviert werden, damit der Delta-Inhalt zusätzlich zum aktuellen Inhalt angewendet wird. Siehe [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) für weitere Details.
+In der Aufnahmephase muss die *Löschoption* deaktiviert werden, damit der Delta-Inhalt zusätzlich zum aktuellen Inhalt angewendet wird. Weitere Informationen finden Sie unter [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process).
 
 ## Ablauf von Migrationssätzen {#migration-set-expiry}
 

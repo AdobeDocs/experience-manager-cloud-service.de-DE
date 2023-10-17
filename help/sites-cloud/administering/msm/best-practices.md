@@ -7,7 +7,7 @@ exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1420'
-ht-degree: 75%
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 75%
 
 ## Allgemein {#general}
 
-MSM ist ein konfigurierbares Framework zur Automatisierung der Inhaltsbereitstellung. Implementierungen umfassen häufig große Teile einer Website und umfassen Organisationen und Regionen. Daher wird dringend empfohlen, MSM-Implementierungen so sorgfältig zu planen, wie Sie Ihre Website planen:
+MSM ist ein konfigurierbares Framework zur Automatisierung der Inhaltsbereitstellung. Implementierungen umfassen häufig große Teile einer Website und umspannen Organisationen und geografische Standorte. Daher wird dringend empfohlen, MSM-Implementierungen so sorgfältig zu planen, wie Sie Ihre Website planen:
 
 * **Planen Sie zunächst sorgfältig die Struktur und den Inhaltsfluss**, bevor Sie mit der Implementierung beginnen.
 * **Beschränken Sie Anpassungen auf das Nötigste.** MSM unterstützt zwar ein hohes Maß an Anpassungen (beispielsweise Rollout-Konfigurationen). Es empfiehlt sich jedoch, möglichst wenige Anpassungen vorzunehmen, um die Leistung und Zuverlässigkeit Ihrer Website nicht zu beeinträchtigen und Website-Upgrades durchführen zu können.
@@ -25,12 +25,12 @@ MSM ist ein konfigurierbares Framework zur Automatisierung der Inhaltsbereitstel
 
 ## Live Copy-Quellen und Blueprint-Konfigurationen {#live-copy-sources-and-blueprint-configurations}
 
-Eine Live Copy kann entweder unter Verwendung [regulärer Seiten](creating-live-copies.md#creating-a-live-copy-of-a-page) oder unter Verwendung einer [Blueprint-Konfiguration](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) erstellt werden. Beide sind gültige Anwendungsfälle.
+Eine Live Copy kann entweder unter Verwendung [regulärer Seiten](creating-live-copies.md#creating-a-live-copy-of-a-page) oder unter Verwendung einer [Blueprint-Konfiguration](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) erstellt werden. Beides sind gültige Anwendungsfälle.
 
-Die Verwendung einer Blueprint-Konfiguration bietet darüber hinaus folgende Vorteile:
+Eine Blueprint-Konfiguration hat die folgenden zusätzlichen Vorteile:
 
-* Autor darf die **Rollout** -Option auf einem Blueprint verwenden, um explizit Änderungen an Live Copies zu übertragen, die von diesem Blueprint erben.
-* Autor darf **Site erstellen** , um einfach Sprachen auszuwählen und die Struktur der Live Copy zu konfigurieren.
+* Die Autorin bzw. der Autor kann für einen Blueprint die Option **Rollout** verwenden und so (explizit) Änderungen an Live Copies pushen, die von diesem Blueprint erben.
+* Die Autorin bzw. der Autor kann mit **Website erstellen** einfach Sprachen auswählen und die Struktur der Live Copy konfigurieren.
 * Sie definiert eine standardmäßige Rollout-Konfiguration für Live Copies, die über eine Beziehung mit dem Blueprint verfügen.
 
 Ohne Verweis auf eine Blueprint-Konfiguration können Rollouts nur von Live Copies selbst initiiert werden, wobei im Wesentlichen Inhalt aus der Quelle abgerufen wird.
@@ -39,16 +39,16 @@ Wenn Sie eine neue Website mit Live Copy erstellen, empfiehlt es sich, Blueprint
 
 >[!NOTE]
 >
->Beachten Sie, dass CUGs auf der Registerkarte „Berechtigungen“ aus Blueprints nicht zu Live Copies ausgerollt werden können. Planen Sie diese Regel bei der Konfiguration der Live Copy um.
+>Beachten Sie, dass CUGs auf der Registerkarte „Berechtigungen“ aus Blueprints nicht zu Live Copies ausgerollt werden können. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
 
 ## Komponenten- und Container-Synchronisierung {#components-and-container-synchronization}
 
-Im Allgemeinen lautet die Rollout-Regel in MSM bezüglich der Synchronisierung von Komponenten:
+Generell gilt in MSM die Rollout-Regel, dass die Komponenten synchronisiert werden müssen:
 
 * Beim Rollout der Komponenten werden alle in der Blueprint enthaltenen Ressourcen synchronisiert.
 * Container synchronisieren nur die aktuelle Ressource.
 
-Dies bedeutet, dass Komponenten als Aggregat behandelt werden und die Komponente selbst und alle untergeordneten Elemente in einem Rollout durch die Komponenten in den Blueprints ersetzt werden. Das bedeutet, dass eine Ressource, die einer solchen Komponente lokal hinzugefügt wird, beim Rollout für den Blueprint-Inhalt verloren geht.
+Dies bedeutet, dass Komponenten als ein Aggregat behandelt werden und die Komponente selbst und alle untergeordneten Elemente in einem Rollout durch die Komponenten in den Blueprints ersetzt werden. Wenn also eine Ressource lokal zu einer solchen Komponente hinzugefügt wird, geht sie für den Inhalt des Blueprints beim Rollout verloren.
 
 Um die Schachtelung von Komponenten zu unterstützen, sodass lokal hinzugefügte Komponenten bei einem Rollout erhalten bleiben, muss die Komponente als Container deklariert werden.
 
@@ -81,7 +81,7 @@ MSM kann Sie auf zwei Arten beim Erstellen mehrsprachiger Websites unterstützen
 
 Beachten Sie beim Erstellen von Sprachstämmen Folgendes:
 
-* Während MSM selbst **bietet keine Inhaltsübersetzung**, kann sie mit Übersetzungs-Connectoren von Drittanbietern integriert werden, die dies tun. Beachten Sie Folgendes:
+* Während MSM selbst **keine Inhaltsübersetzung** anbietet, kann es mit Übersetzungs-Connectoren von Drittanbietern integriert werden, die dies tun. Beachten Sie Folgendes:
    * Mit MSM können Sie die Vererbung auf Seiten- und/oder Komponentenebene abbrechen. So verhindern Sie, dass übersetzter Inhalt aus einer Live Copy beim nächsten Rollout durch noch nicht übersetzten Inhalt aus einem Blueprint überschrieben wird.
       * Einige Übersetzungs-Connectoren von Dritten bieten eine automatisierte Verwaltung der MSM-Vererbung.
       * Weitere Informationen erhalten Sie von Ihrem Übersetzungsdienstleister.
@@ -131,10 +131,10 @@ MSM-Rollout-Konfigurationen können in hohem Maße angepasst werden. Beachten Si
 Beachten Sie bei Verwendung des [Rollout-Auslösers](live-copy-sync-config.md#rollout-triggers) `onModify` Folgendes:
 
 * Die Automatisierung von Rollouts mit Auslösern vom Typ `onModify` kann die Leistung bei der Bearbeitung beeinträchtigen, da nach jeder Seitenbearbeitung Rollouts ausgelöst werden.
-* Das Rollout-Ergebnis kann sich von dem erwarteten unterscheiden:
+* Das Ergebnis des Rollouts kann von dem erwarteten Ergebnis abweichen:
    * Sie können die Reihenfolge der resultierenden Änderungsereignisse nicht angeben.
    * Die ereignisbasierte Architektur kann die Reihenfolge der Ereignisse, die an den Rollout-Manager übergeben werden, nicht garantieren.
-* Die Verwendung einer solchen Rollout-Konfiguration kann zu Commitkonflikten führen, wenn gleichzeitige Aktualisierungen derselben Ressource auftreten.
+* Die Verwendung einer solchen Rollout-Konfiguration kann zu Commit-Konflikten führen, wenn gleichzeitige Updates derselben Ressource auftreten.
 
 Auslöser vom Typ `onModify` sollten daher nur verwendet werden, wenn die Vorteile einer automatischen Rollout-Initiierung die potenziellen Leistungsprobleme überwiegen.
 

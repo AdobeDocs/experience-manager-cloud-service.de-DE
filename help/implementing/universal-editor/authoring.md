@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
 source-wordcount: '2410'
-ht-degree: 25%
+ht-degree: 32%
 
 ---
 
@@ -16,7 +16,7 @@ Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren is
 
 ## Einführung {#introduction}
 
-Der universelle Editor ermöglicht die Bearbeitung beliebiger Inhalte in jeder Implementierung, sodass Sie außergewöhnliche Erlebnisse bereitstellen, die Inhaltsgeschwindigkeit erhöhen und ein modernes Entwicklererlebnis bieten können.
+Der universelle Editor ermöglicht die Bearbeitung beliebiger Inhalte in jeder Implementierung, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
 
 Dazu bietet der universelle Editor Autoren von Inhalten eine intuitive Benutzeroberfläche, für die eine minimale Schulung erforderlich ist, um einfach in die Lage zu wechseln und mit der Bearbeitung von Inhalten zu beginnen. In diesem Dokument wird das Authoring-Erlebnis des universellen Editors beschrieben.
 
@@ -30,11 +30,11 @@ Dazu bietet der universelle Editor Autoren von Inhalten eine intuitive Benutzero
 
 ## Vorbereiten der App {#prepare-app}
 
-Um Inhalte für eine App mit dem universellen Editor zu erstellen, muss die App von einem Entwickler instrumentiert werden, um den Editor zu unterstützen.
+Um Inhalte für eine App mit dem universellen Editor erstellen zu können, muss die App von einer Entwicklerperson instrumentiert werden, um den Editor zu unterstützen.
 
 >[!TIP]
 >
->Siehe [Erste Schritte mit dem Universal Editor in AEM](getting-started.md) ein Beispiel für die Konfiguration einer AEM App für die Verwendung mit dem universellen Editor.
+>Im Dokument [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) finden Sie ein Beispiel dafür, wie Sie eine AEM-App für die Arbeit mit dem universellen Editor konfigurieren.
 
 ## Anmelden {#sign-in}
 
@@ -92,13 +92,13 @@ Dieses Symbol ist mit der Anzahl der aktuell zugewiesenen unvollständigen Zeich
 
 #### Benutzereigenschaften {#user-properties}
 
-Tippen oder klicken Sie auf das Symbol für Ihre Benutzerin bzw. Ihren Benutzer, um auf Ihre Benutzereinstellungen zuzugreifen. Wenn Sie kein Benutzerbild konfiguriert haben, wird ein Symbol zufällig zugewiesen.
+Tippen oder klicken Sie auf das Symbol für Ihre Benutzerin bzw. Ihren Benutzer, um auf Ihre Benutzereinstellungen zuzugreifen. Wenn Sie kein Benutzerbild konfiguriert haben, wird ein zufälliges Symbol zugewiesen.
 
 ![Benutzereigenschaften](assets/user-properties.png)
 
 ### Die Kopfzeile des universellen Editors {#universal-editor-header}
 
-Die Kopfzeile des universellen Editors befindet sich immer oben im Bildschirm direkt unter [der Kopfzeile von Experience Cloud.](#experience-cloud-header) So erhalten Sie schnellen Zugriff auf die Navigation zu einer anderen Seite, um sie zu bearbeiten und die aktuelle Seite zu veröffentlichen.
+Die Kopfzeile des universellen Editors befindet sich immer oben im Bildschirm direkt unter [der Kopfzeile von Experience Cloud.](#experience-cloud-header) Dadurch erhalten Sie schnellen Zugriff auf die Navigation zu einer anderen Seite, die Sie bearbeiten können, sowie auf die Veröffentlichung der aktuellen Seite.
 
 ![Die Kopfzeile des universellen Editors](assets/universal-editor-header.png)
 
@@ -150,9 +150,9 @@ Tippen oder klicken Sie auf das Symbol &quot;App-Vorschau öffnen&quot;, um die 
 >
 >Verwenden des Hotkeys `O` (Buchstabe O), um die App-Vorschau zu öffnen.
 
-#### Veröffentlichen  {#publish}
+#### Veröffentlichen {#publish}
 
-Tippen oder klicken Sie auf die Schaltfläche &quot;Veröffentlichen&quot;, damit Sie die Änderungen an den Inhalten live für Ihre Leser veröffentlichen können.
+Tippen oder klicken Sie auf die Schaltfläche „Veröffentlichen“, um die Änderungen am Inhalt für Ihre Leserinnen und Leser live zu veröffentlichen.
 
 ![Schaltfläche „Veröffentlichen“](assets/publish.png)
 
@@ -408,7 +408,7 @@ Beachten Sie, dass im Vorschaumodus beim Tippen oder Klicken auf den Inhalt die 
 
 Weitere Informationen zum universellen Editor finden Sie in diesen Dokumenten.
 
-* [Einführung in den universellen Editor](introduction.md) - Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, sodass Sie außergewöhnliche Erlebnisse bereitstellen, die Inhaltsgeschwindigkeit erhöhen und ein modernes Entwicklererlebnis bieten können.
+* [Einführung in den universellen Editor](introduction.md) – Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
 * [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md) - Erfahren Sie, wie der Universal Editor Inhalte veröffentlicht und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
 * [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) – Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.
 * [Architektur des universellen Editors](architecture.md) – Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.

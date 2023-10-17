@@ -5,7 +5,7 @@ exl-id: 06287618-0328-40b1-bba8-84002283f23f
 source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
 source-wordcount: '710'
-ht-degree: 34%
+ht-degree: 42%
 
 ---
 
@@ -20,7 +20,7 @@ Im vorherigen Dokument der Adobe Experience Manager (AEM) Referenz-Demos-Add-on-
 
 * Sollten Sie über grundlegende Kenntnisse zu Cloud Manager verfügen.
 * Wissen Sie, wie Pipelines Inhalte und Konfigurationen für AEM bereitstellen.
-* Erfahren Sie, wie Vorlagen mit nur wenigen Klicks vorab mit Demoinhalten gefüllte Sites erstellen können.
+* Sehen, wie mit Vorlagen in nur wenigen Klicks neue Sites erstellt werden können, die mit Demo-Inhalten gefüllt sind.
 
 Dieser Artikel baut auf diesen Grundlagen auf und führt den ersten Konfigurationsschritt durch, um ein Programm für Testzwecke zu erstellen. Dabei wird eine Pipeline zum Bereitstellen des Add-on-Inhalts verwendet.
 
@@ -38,7 +38,7 @@ Nach der Anmeldung bei Cloud Manager können Sie ein Sandbox-Programm für Ihre 
 
 >[!NOTE]
 >
->Ihr Benutzer muss Mitglied der **Business Owner** Rolle in Cloud Manager in Ihrem Unternehmen bei der Erstellung von Programmen.
+>Ihre Benutzerin bzw. Ihr Benutzer muss in Cloud Manager in Ihrem Unternehmen die Rolle **Geschäftsinhaber** innehaben, um Programme zu erstellen.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Adobe Cloud Manager an.
 
@@ -81,7 +81,7 @@ Die Fertigstellung der Pipeline kann mehrere Minuten dauern. Nach Abschluss sind
 
 ## Wie geht es weiter {#what-is-next}
 
-Nachdem Sie diesen Teil der AEM Referenz-Demo-Add-on-Journey abgeschlossen haben, sollten Sie Folgendes tun:
+Nachdem Sie nun diesen Teil der Tour durch das AEM-Referenzdemo-Add-on abgeschlossen haben, sollten Sie:
 
 * Erfahren Sie, wie Sie mit Cloud Manager ein Programm erstellen.
 * Erfahren Sie, wie Sie das Referenz-Demos-Add-on für das Programm aktivieren.
@@ -91,4 +91,4 @@ Auf diesem Wissen aufbauen und Ihre AEM Referenz-Demo-Add-on-Journey fortsetzen,
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html) – Wenn Sie an weiteren Details zu den Funktionen von Cloud Manager interessiert sind, sehen Sie sich die ausführlichen technischen Dokumente an.
+* [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=de) – Wenn Sie an weiteren Details zu den Funktionen von Cloud Manager interessiert sind, sehen Sie sich die ausführlichen technischen Dokumente an.

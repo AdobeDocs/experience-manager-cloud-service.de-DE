@@ -5,7 +5,7 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1161'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Erfahren Sie, wie das Testen der Code-Qualität von Pipelines funktioniert und w
 
 Beim Testen der Code-Qualität wird Ihr Programm-Code anhand eines Satzes von Qualitätsregeln bewertet. Dabei handelt es sich um das Kernziel einer reinen Code-Qualitäts-Pipeline, die unmittelbar nach dem Erstellungsschritt in allen produktionsfremden und Produktions-Pipelines ausgeführt wird.
 
-Siehe [Konfigurieren der CI/CD-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) , um mehr über verschiedene Pipelinetypen zu erfahren.
+Weitere Informationen zu den verschiedenen Pipelines finden Sie unter [Konfigurieren Ihrer CI/CD-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 ## Code-Qualitätsregeln {#understanding-code-quality-rules}
 
@@ -30,7 +30,7 @@ Beim Testen der Code-Qualität wird der Quell-Code gescannt, um sicherzustellen,
 
 >[!NOTE]
 >
->Sie können die vollständige Liste der Regeln herunterladen [mit diesem Link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+>Sie können die vollständige Liste von Regeln [über diesen Link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) herunterladen.
 
 ### Dreistufige Bewertungen {#three-tiered-gate}
 
@@ -60,16 +60,16 @@ In der folgenden Tabelle sind die Bewertungen und Fehlerschwellenwerte für die 
 | Abdeckung | Definiert durch eine Mischung aus Zeilenabdeckung der Einheitstests und Bedingungsabdeckung nach der Formel: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <ul><li>`CT` = Bedingungen wurden mindestens einmal während der Ausführung der Einheitentests zu `true` ausgewertet</li><li>`CF` = Bedingungen wurden mindestens einmal während der Ausführung der Einheitentests zu `false` ausgewertet</li><li>`LC` = abgedeckte Zeilen = lines_to_cover - uncovered_lines</li><li>`B` = Gesamtzahl der Bedingungen</li><li>`EL` = Gesamtzahl der ausführbaren Zeilen (lines_to_cover)</li></ul> | Wichtig | &lt; 50 % |
 | Übersprungene Einheitentests | Anzahl der übersprungenen Einheitentests | Info | > 1 |
 | Offene Probleme | Allgemeine Problemtypen – Schwachstellen (Vulnerability), Fehler (Bug) und Code-Smells (Code Smell) | Info | > 0 |
-| Duplizierte Zeilen | Definiert als die Anzahl der Zeilen, die in doppelten Blöcken enthalten sind. Ein Code-Block gilt unter den folgenden Bedingungen als dupliziert.<br>Nicht-Java-Projekte:<ul><li>Es sollten mindestens 100 aufeinanderfolgende und duplizierte Token vorhanden sein.</li><li>Diese Token sollten sich mindestens wie folgt verteilen: </li><li>30 Codezeilen für COBOL </li><li>20 Codezeilen für ABAP </li><li>10 Codezeilen für andere Sprachen</li></ul>Java-Projekte:<ul></li><li> Unabhängig von der Anzahl der Token und Zeilen sollte es mindestens 10 aufeinanderfolgende und duplizierte Anweisungen geben.</li></ul>Unterschiede bei Einzügen und Zeichenfolgenliteralen werden beim Erkennen von Duplikaten ignoriert. | Info | > 1 % |
+| Duplizierte Zeilen | Definiert als die Anzahl der Zeilen, die in doppelten Blöcken enthalten sind. Ein Code-Block gilt unter den folgenden Bedingungen als dupliziert.<br>Nicht-Java-Projekte:<ul><li>Es sollten mindestens 100 aufeinanderfolgende und duplizierte Token vorhanden sein.</li><li>Diese Token sollten sich mindestens wie folgt verteilen: </li><li>30 Codezeilen für COBOL </li><li>20 Codezeilen für ABAP </li><li>10 Codezeilen für andere Sprachen</li></ul>Java-Projekte:<ul></li><li> Unabhängig von der Anzahl der Token und Zeilen sollte es mindestens 10 aufeinanderfolgende und duplizierte Anweisungen geben.</li></ul>Unterschiede bei Einzügen sowie Zeichenfolgenliteralen werden beim Erkennen von Duplikaten ignoriert. | Info | > 1 % |
 | Kompatibilität mit Cloud Service | Anzahl der festgestellten Kompatibilitätsprobleme mit Cloud Service | Info | > 0 |
 
 >[!NOTE]
 >
->Siehe [Metrikdefinitionen von SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) für detailliertere Definitionen.
+>Genauere Definitionen finden Sie unter [Metrikdefinitionen von SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/).
 
 >[!NOTE]
 >
->Weitere Informationen zu benutzerspezifischen Regeln für die Code-Qualität, die von [!UICONTROL Cloud Manager], siehe [Benutzerspezifische Regeln für Code-Qualität](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+>Weitere Informationen zu den benutzerdefinierten Code-Qualitätsregeln, die von [!UICONTROL Cloud Manager] ausgeführt werden, finden Sie unter [Benutzerdefinierte Code-Qualitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## Umgang mit falsch positiven Treffern {#dealing-with-false-positives}
 
@@ -103,10 +103,10 @@ Dann bestünde die richtige Lösung darin, das hartcodierte Kennwort zu entferne
 
 >[!NOTE]
 >
->Es empfiehlt sich zwar, die `@SuppressWarnings` -Anmerkungen so spezifisch wie möglich sind, d. h. nur die spezifische Anweisung oder den Block kommentieren, der das Problem verursacht. Es ist möglich, Anmerkungen auf Klassenebene hinzuzufügen.
+>Obwohl es sich als Best Practice erweist, die `@SuppressWarnings`-Anmerkung so spezifisch wie möglich zu gestalten, d. h. nur die spezifische Anweisung oder den Block, der das Problem verursacht, zu kommentieren, ist es möglich, auf Klassenebene zu kommentieren.
 
 >[!NOTE]
->Es gibt zwar keinen expliziten Schritt für Sicherheitstests, aber beim Schritt Code-Qualität werden sicherheitsbezogene Regeln für die Code-Qualität evaluiert. Siehe [Sicherheitsübersicht für AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) um mehr über die Sicherheit in Cloud Service zu erfahren.
+>Es gibt zwar keinen expliziten Schritt für Sicherheitstests, aber beim Schritt der Code-Qualität werden sicherheitsbezogene Regeln für die Code-Qualität evaluiert. Weitere Informationen zur Sicherheit in Cloud Service finden Sie in der [Sicherheitsübersicht für AEM as a Cloud Service](/help/security/cloud-service-security-overview.md).
 
 ## Optimierung der Inhaltspaketüberprüfung {#content-package-scanning-optimization}
 
@@ -116,11 +116,11 @@ Im Rahmen des Qualitätsanalyseprozesses führt Cloud Manager eine Analyse der v
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (übersprungenes Inhaltspaket)
 * `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (übersprungenes Inhaltspaket)
 
-Wenn die einzigen Elemente in `myco-all-1.0.0-SNAPSHOT.zip` die beiden übersprungenen Inhaltspakete sind, werden die beiden eingebetteten Pakete anstelle des Inhaltspakets &quot;all&quot;gescannt.
+Wenn die beiden übersprungenen Inhaltspakete die einzigen Elemente innerhalb von `myco-all-1.0.0-SNAPSHOT.zip` sind, werden die beiden eingebetteten Pakete anstelle des gesamten Inhaltspakets („all“) gescannt.
 
 Bei Projekten, die Dutzende von eingebetteten Paketen produzieren, kann diese Optimierung nachweislich bis zu 10 Minuten pro Pipeline-Ausführung einsparen.
 
-Ein Sonderfall kann eintreten, wenn das Inhaltspaket „all“ eine Kombination aus übersprungenen Inhaltspaketen und OSGi-Bundles enthält. Wenn beispielsweise `myco-all-1.0.0-SNAPSHOT.zip` die beiden zuvor erwähnten eingebetteten Pakete und eines oder mehrere OSGi-Pakete enthielt, wird ein neues, minimales Inhaltspaket nur mit den OSGi-Bundles erstellt. Dieses Paket hat immer die Bezeichnung `cloudmanager-synthetic-jar-package` und die darin enthaltenen Bundles werden in `/apps/cloudmanager-synthetic-installer/install` abgelegt.
+Ein Sonderfall kann eintreten, wenn das Inhaltspaket „all“ eine Kombination aus übersprungenen Inhaltspaketen und OSGi-Bundles enthält. Wenn `myco-all-1.0.0-SNAPSHOT.zip` beispielsweise die beiden zuvor erwähnten eingebetteten Pakete und ein oder mehrere OSGi-Bundles enthält, wird ein neues, minimales Inhaltspaket nur mit den OSGi-Bundles erstellt. Dieses Paket hat immer die Bezeichnung `cloudmanager-synthetic-jar-package` und die darin enthaltenen Bundles werden in `/apps/cloudmanager-synthetic-installer/install` abgelegt.
 
 >[!NOTE]
 >

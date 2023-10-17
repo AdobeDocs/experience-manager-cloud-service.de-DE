@@ -9,7 +9,7 @@ exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
 source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
 source-wordcount: '5564'
-ht-degree: 89%
+ht-degree: 90%
 
 ---
 
@@ -452,16 +452,16 @@ Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets such
 
 ## Arbeiten mit Asset-Suchergebnissen {#aftersearch}
 
-Sie können Folgendes mit den Assets durchführen, in denen Sie gesucht haben [!DNL Experience Manager]:
+Mit den in [!DNL Experience Manager] gesuchten Assets können Sie Folgendes tun:
 
 * Metadateneigenschaften und andere Informationen anzeigen.
 * Ein oder mehrere Assets herunterladen.
 * Desktop-Aktionen verwenden, um die Assets im Desktop-Programm zu öffnen.
 * Smart-Sammlungen erstellen.
-* eine Version erstellen
-* einen Workflow starten
-* eine Zuordnung für Assets herstellen oder aufheben
-* Filter anwenden, um die Suchergebnisse einzugrenzen. Verwenden Sie dazu das Filter-Bedienfeld, das nach der Suche automatisch angezeigt wird.
+* Eine Version erstellen
+* Einen Workflow starten
+* Zuordnung für Assets herstellen oder aufheben
+* Filter anwenden, um die Suchergebnisse einzugrenzen. Verwenden Sie dazu das Filter-Panel, das nach der Suche automatisch angezeigt wird.
 * Navigieren zum Asset-Speicherort
 
 ### Sortieren von Suchergebnissen {#sort}
@@ -505,15 +505,15 @@ Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen 
 
 ### Erstellen einer Version {#create-version}
 
-Erstellen Sie eine Version für die Assets, die in den Suchergebnissen angezeigt werden. Wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Version]**. Fügen Sie eine optionale Bezeichnung oder einen Kommentar hinzu und klicken Sie auf **[!UICONTROL Erstellen]**. Sie können auch mehrere Assets auswählen und gleichzeitig Versionen für sie erstellen.
+Erstellen Sie eine Version für die Assets, die in den Suchergebnissen angezeigt werden. Wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Version]**. Fügen Sie eine optionale Bezeichnung oder einen Kommentar hinzu und klicken Sie auf **[!UICONTROL Erstellen]**. Sie können auch mehrere Assets auswählen und Versionen gleichzeitig für sie erstellen.
 
-### Workflow erstellen {#create-workflow}
+### Erstellen eines Workflows {#create-workflow}
 
 Ähnlich wie bei der Funktion „Version erstellen“ können Sie auch einen Workflow für die Assets erstellen, die in den Suchergebnissen angezeigt werden. Wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Workflow]**. Wählen Sie das Workflow-Modell aus, geben Sie einen Titel für den Workflow an und klicken Sie auf **[!UICONTROL Starten]**.
 
 ### Zuordnung für Assets herstellen und aufheben {#relate-unrelate-assets}
 
-Ordnen Sie Assets, die in den Suchergebnissen angezeigt werden, einander zu und heben Sie die Zuordnung auf. Wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Zuordnen]** oder **[!UICONTROL Zuordnung aufheben]**.
+Ordnen Sie Assets zu, die in den Suchergebnissen angezeigt werden, und heben Sie deren Zuordnung auf. Wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Zuordnen]** oder **[!UICONTROL Zuordnung aufheben]**.
 
 ### Navigieren Sie zum Speicherort des Asset-Ordners {#navigate-asset-folder-location}
 

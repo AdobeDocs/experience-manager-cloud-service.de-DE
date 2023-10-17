@@ -8,7 +8,7 @@ exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
 source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
 source-wordcount: '1767'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -83,7 +83,7 @@ Wenn Sie Dateien an das adaptive Formular anhängen, validiert der Server die Da
 
 Nach dem Ausführen der gewünschten Aktion leitet das Sende-Servlet die Abfrage an den Weiterleitungspfad weiter. Eine Aktion verwendet die setForwardPath-API, um den Weiterleitungspfad im Guide Submit-Servlet festzulegen.
 
-Wenn die Aktion keinen Weiterleitungspfad bereitstellt, leitet das Senden-Servlet den Browser mithilfe der Umleitungs-URL um. Der Autor konfiguriert die Umleitungs-URL über die Konfiguration der Danksagungsseite im Dialogfeld für die Bearbeitung adaptiver Formulare. Sie können die Umleitungs-URL auch über die Sende-Aktion oder die setRedirectUrl-API im Guide Submit-Servlet konfigurieren. Sie können die Anfrageparameter, die an die Umleitungs-URL gesendet werden, auch mithilfe der setRedirectParameters-API im Guide Submit-Servlet konfigurieren.
+Wenn die Aktion keinen Weiterleitungspfad bereitstellt, leitet das Übermittlungs-Servlet den Browser mithilfe der Umleitungs-URL um. Der Autor konfiguriert die Umleitungs-URL über die Konfiguration der Danksagungsseite im Dialogfeld für die Bearbeitung adaptiver Formulare. Sie können die Umleitungs-URL auch über die Sende-Aktion oder die setRedirectUrl-API im Guide Submit-Servlet konfigurieren. Sie können die Anfrageparameter, die an die Umleitungs-URL gesendet werden, auch mithilfe der setRedirectParameters-API im Guide Submit-Servlet konfigurieren.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Wenn die Aktion keinen Weiterleitungspfad bereitstellt, leitet das Senden-Servle
 
 Bei einer Sende-Aktion handelt es sich um ein sling:Folder-Objekt, das Folgendes enthält:
 
-* **addfields.jsp**: Dieses Skript stellt die Aktionsfelder bereit, die der HTML-Datei während der Ausgabe hinzugefügt werden. Verwenden Sie dieses Skript, um verborgene Eingabeparameter im Skript „post.POST.jsp“ hinzuzufügen, die während der Übermittlung benötigt werden.
+* **addfields.jsp**: Dieses Skript stellt die Aktionsfelder bereit, die der HTML-Datei während der Ausgabe hinzugefügt werden. Verwenden Sie dieses Skript, um im Skript „post.POST.jsp“ verborgene Eingabeparameter hinzuzufügen, die während der Übermittlung benötigt werden.
 * **dialog.xml**: Dieses Skript ähnelt dem Dialogfeld für die CQ-Komponente. Es enthält Konfigurationsinformationen, die der Autor anpasst. Die Felder werden im Dialogfeld für die Bearbeitung des adaptiven Formulars auf der Registerkarte „Aktionen übermitteln“ angezeigt, wenn Sie die Sende-Aktion auswählen.
 * **post.POST.jsp**: Das Submit-Servlet ruft dieses Skript mit den Daten, die Sie übermitteln, und den zusätzlichen Daten aus den vorherigen Bereichen auf. Jede Erwähnung einer Aktionsausführung auf dieser Seite impliziert die Ausführung des Skripts „post.POST.jsp“. Um die Übermittlungsaktion mit dem adaptiven Formular zu registrieren, sodass sie im Dialogfeld für die Bearbeitung des adaptiven Formulars angezeigt wird, fügen Sie diese Eigenschaften zum sling:Folder: hinzu.
 
@@ -110,7 +110,7 @@ Bei einer Sende-Aktion handelt es sich um ein sling:Folder-Objekt, das Folgendes
 
 Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Sende-Aktion zu erstellen, die die Daten im CRX-Repository speichert und Ihnen anschließend eine E-Mail sendet. Das adaptive Formular enthält die vordefinierte Sende-Aktion „Inhalt speichern“ (veraltet), mit der die Daten im CRX-Repository gespeichert werden. Zudem stellt AEM eine [Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html)-API zum Senden von E-Mails bereit. Vor der Verwendung der Mail-API müssen Sie den Service „Day CQ Mail“ über die Systemkonsole konfigurieren. Sie können die Aktion „Inhalt speichern“ (veraltet) erneut verwenden, um Daten im Repository zu speichern. Die Aktion „Inhalt speichern“ (veraltet) ist im Ordner /libs/fd/af/components/guidesubmittype/store im CRX-Repository verfügbar.
 
-1. Melden Sie sich unter der URL https://&lt;server>:&lt;port>/crx/de/index.jsp bei CRXDE Lite an. Erstellen Sie einen Knoten mit der Eigenschaft „sling:Folder“ und dem Namen „store_and_mail“ im Ordner /apps/custom_submit_action. Erstellen Sie den Ordner custom_submit_action , falls er noch nicht vorhanden ist.
+1. Melden Sie sich unter der URL https://&lt;server>:&lt;port>/crx/de/index.jsp bei CRXDE Lite an. Erstellen Sie einen Knoten mit der Eigenschaft „sling:Folder“ und dem Namen „store_and_mail“ im Ordner /apps/custom_submit_action. Erstellen Sie den Ordner „custom_submit_action“, falls er noch nicht vorhanden ist.
 
    ![Screenshot zur Erstellung eines Knotens mit der Eigenschaft „sling:Folder“](assets/step1.png)
 

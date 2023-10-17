@@ -5,7 +5,7 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
 source-wordcount: '1827'
-ht-degree: 67%
+ht-degree: 68%
 
 ---
 
@@ -45,7 +45,7 @@ Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie verstehen, wie Sie Ihr
 
 *Die Welt da draußen ist groß und schlecht*.
 
-Vielleicht, aber vielleicht nicht. Es ist sicherlich eine ***kompliziert*** -Welt da draußen und Datenmodellierung wird verwendet, um eine vereinfachte Darstellung eines sehr (sehr) kleinen Unterabschnitts zu definieren, wobei die spezifischen Informationen verwendet werden, die für einen bestimmten Zweck benötigt werden.
+Vielleicht, aber vielleicht auch nicht. Es ist sicherlich eine ***kompliziert*** -Welt da draußen und Datenmodellierung wird verwendet, um eine vereinfachte Darstellung eines sehr (sehr) kleinen Unterabschnitts zu definieren, wobei die spezifischen Informationen verwendet werden, die für einen bestimmten Zweck benötigt werden.
 
 >[!NOTE]
 >

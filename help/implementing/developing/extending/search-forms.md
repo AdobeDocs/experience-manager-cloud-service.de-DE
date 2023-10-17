@@ -5,7 +5,7 @@ exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2037'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Zusammen sollen diese Ihnen helfen, Ihre Inhalte schnell und einfach zu finden:
 
 Mit **Suchformularen** können Sie diese Bedienfelder entsprechend Ihren spezifischen Anforderungen anpassen und erweitern.
 
-Die **Suchformulare** bieten eine vordefinierte Auswahl an [Prädikaten](#predicates-and-their-settings), die Sie kombinieren und definieren können. Die [Dialogfelder zum Konfigurieren dieser Formulare](#configuring-your-search-forms) Der Zugriff erfolgt über:
+Die **Suchformulare** bieten eine vordefinierte Auswahl an [Prädikaten](#predicates-and-their-settings), die Sie kombinieren und definieren können. Die [Dialogfelder für die Konfiguration dieser Formulare](#configuring-your-search-forms) finden Sie unter:
 
 * **Tools**
    * **Allgemein**
@@ -37,7 +37,7 @@ Die **Suchformulare** bieten eine vordefinierte Auswahl an [Prädikaten](#predic
 
 ## Standardformulare {#default-forms}
 
-Wenn Sie zum ersten Mal auf die Konsole **Suchformulare** zugreifen, weisen alle Konfigurationen ein Vorhängeschlosssymbol auf. Dieses Symbol bedeutet, dass die entsprechende Konfiguration die Standardkonfiguration (vorkonfiguriert) ist und nicht gelöscht werden kann. Nachdem Sie eine Konfiguration angepasst und gespeichert haben, wird die Sperre ausgeblendet. Sie wird wieder angezeigt, wenn Sie [Ihre benutzerdefinierte Konfiguration löschen](#deleting-a-configuration-to-reinstate-the-default), wobei der Standard (und die Sperranzeige) erneut aktiviert wird.
+Wenn Sie zum ersten Mal auf die Konsole **Suchformulare** zugreifen, weisen alle Konfigurationen ein Vorhängeschlosssymbol auf. Dieses Symbol bedeutet, dass die entsprechende Konfiguration die Standardkonfiguration (vorkonfiguriert) ist und nicht gelöscht werden kann. Nachdem Sie eine Konfiguration angepasst und gespeichert haben, wird die Sperre ausgeblendet. Sie wird wieder angezeigt, wenn Sie [Ihre benutzerdefinierte Konfiguration löschen](#deleting-a-configuration-to-reinstate-the-default). In diesem Fall werden die Standardeinstellung (und die Sperranzeige) erneut angezeigt.
 
 ![Übersicht über das Konfigurieren von Suchformularen](assets/csf-overview.png)
 
@@ -548,8 +548,8 @@ Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfü
 1. Navigieren Sie zu **Tools** > **Allgemein** > **Suchformulare**.
 
 1. Wählen Sie die Konfiguration aus, die Sie anpassen möchten.
-1. Verwenden Sie die **Bearbeiten** -Symbol, um die Konfiguration für die Aktualisierung zu öffnen.
-1. Bei einer neuen Anpassung möchten Sie wahrscheinlich [neue Prädikatsfelder hinzufügen und Einstellungen definieren](#add-edit-a-predicate-field-and-define-field-settings) nach Bedarf. Bei einer vorhandenen Anpassung können Sie ein vorhandenes Feld auswählen und [Einstellungen aktualisieren](#add-edit-a-predicate-field-and-define-field-settings).
+1. Verwenden Sie das Symbol **Bearbeiten**, um die Konfiguration für das Aktualisieren zu öffnen.
+1. Bei einer neuen Anpassung wollen Sie wahrscheinlich [neue Prädikatsfelder hinzufügen und die Einstellungen](#add-edit-a-predicate-field-and-define-field-settings) nach Bedarf definieren. Bei einer vorhandenen Anpassung können Sie ein vorhandenes Feld auswählen und [die Einstellungen aktualisieren](#add-edit-a-predicate-field-and-define-field-settings).
 1. Wählen Sie **Fertig** aus, um die Konfiguration zu speichern. Ihre Änderungen werden beim nächsten Einsatz der Konfiguration angezeigt.
 
    >[!NOTE]
@@ -563,8 +563,8 @@ Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfü
 
 Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definieren/aktualisieren:
 
-1. [Öffnen Sie die benutzerdefinierte Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
-1. Wenn Sie ein neues Feld hinzufügen möchten, öffnen Sie die **Eigenschaft auswählen** und ziehen Sie das gewünschte Prädikat an die gewünschte Position. Beispiel: die **Datumsbereich-Eigenschaft**:
+1. [Öffnen Sie die benutzerdefinierte Konfiguration](#creating-opening-a-customized-configuration) für das Aktualisieren.
+1. Um ein neues Feld hinzuzufügen, öffnen Sie die Registerkarte **Prädikat auswählen** und ziehen Sie das benötigte Prädikat an die gewünschte Stelle. Beispiel: die **Datumsbereich-Eigenschaft**:
 
    ![Hinzufügen von Prädikaten](assets/csf-add-predicate.png)
 
@@ -590,7 +590,7 @@ Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definiere
 
    ![Vorschausymbol](assets/csf-preview-icon.png)
 
-1. Zeigt die Suchformulare so an, wie sie in der Suchspalte der entsprechenden Konsole angezeigt werden (vollständig eingeblendet).
+1. Zeigt die Suchformulare so an, wie sie in der Suchspalte der entsprechenden Konsole angezeigt werden (vollständig ausgeklappt).
 
    ![Vorschau des Formulars anzeigen](assets/csf-preview-form.png)
 
@@ -598,8 +598,8 @@ Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definiere
 
 ### Löschen eines Prädikatfelds {#deleting-a-predicate-field}
 
-1. [Öffnen Sie die benutzerdefinierte Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
-1. Wählen Sie das Prädikatsfeld aus (rechts) und öffnen Sie das **Einstellungen** und wählen Sie dann die **Löschen** Symbol (unten links).
+1. [Öffnen Sie die benutzerdefinierte Konfiguration](#creating-opening-a-customized-configuration) für das Aktualisieren.
+1. Wählen Sie das Prädikatsfeld (rechts) aus, öffnen Sie die Registerkarte **Einstellungen** und wählen Sie dann das Symbol **Löschen** (unten links) aus.
 
    ![Löschsymbol](assets/csf-delete-icon.png)
 
@@ -621,7 +621,7 @@ Das Löschen einer angepassten Konfiguration erfolgt über die Konsole:
 
    ![Standardangaben wiederherstellen](assets/csf-restore-default.png)
 
-1. Die angepasste Konfiguration wird gelöscht und die Standardeinstellung wird wieder aktiviert (dies wird durch das Wiedersehen des Vorhängeschloss-Symbols in der Konsole angezeigt).
+1. Die angepasste Konfiguration wird gelöscht und die Standardkonfiguration wiederhergestellt (erkennbar am Vorhängeschlosssymbol, das wieder in der Konsole angezeigt wird).
 
 ### Hinzufügen von Optionsprädikaten {#adding-options-predicates}
 
@@ -654,7 +654,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
 
 1. Öffnen Sie die **Suchformulare-Konsole** und wählen Sie die Konfiguration aus, die Sie aktualisieren möchten. Beispiel: **Sites-Admin-Suchschiene**. Wählen Sie dann **Bearbeiten** aus.
 
-1. Fügen Sie je nach Konfiguration eine **Optionen** oder **Options-Eigenschaft** zur Konfiguration hinzu.
+1. Je nach Konfiguration fügen Sie **Optionen** oder eine **Optionseigenschaft** zur Konfiguration hinzu.
 1. Aktualisieren Sie die Felder, insbesondere:
 
    * **Eigenschaftsname**
@@ -672,7 +672,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
    ![Optionsprädikate](assets/csf-options-predicate-02.png)
 
 1. Wählen Sie **Fertig** aus, um die Konfiguration zu speichern.
-1. Navigieren Sie zur entsprechenden Konsole (in diesem Beispiel: **Sites**) und öffnen Sie die Leiste **Suchen – Filter**. Die neu definierten Suchformulare sowie die verschiedenen Optionen werden angezeigt. Wählen Sie die benötigte Option aus, um die Suchergebnisse anzuzeigen.
+1. Navigieren Sie zur entsprechenden Konsole (in diesem Beispiel: **Sites**) und öffnen Sie die Leiste **Suchen – Filter**. Die neu definierten Suchformulare werden zusammen mit den verschiedenen Optionen angezeigt. Wählen Sie die benötigte Option aus, um die Suchergebnisse anzuzeigen.
 
    ![Verwendete Optionen](assets/csf-options-usage.png)
 

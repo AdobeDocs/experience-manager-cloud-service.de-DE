@@ -3,11 +3,11 @@ title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud S
 description: Verwenden Sie den Asset-Selektor, um die Metadaten und Ausgabeformate von Assets in Ihrer Applikation zu suchen, zu finden und abzurufen.
 contentOwner: Adobe
 role: Admin,User
-exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: dd923ae9d63f1ca1379d8e177ff7b00648da052a
+exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: tm+mt
 source-wordcount: '2373'
-ht-degree: 91%
+ht-degree: 96%
 
 ---
 
@@ -173,12 +173,12 @@ Die folgende Tabelle beschreibt einige der wichtigen Eigenschaften des ausgewäh
 | *repo:size* | Number (Zahl) | Die Größe des Assets in Bytes. |
 | *repo:path* | Zeichenfolge | Der Speicherort des Assets im Repository. |
 | *repo:ancestors* | `Array<string>` | Ein Array von Vorgängerelementen für das Asset im Repository. |
-| *repo:state* | Zeichenfolge | Aktueller Status des Assets im Repository (z. B. aktiv, gelöscht usw.) |
+| *repo:state* | Zeichenfolge | Aktueller Status des Assets im Repository (z. B. aktiv, gelöscht). |
 | *repo:createdBy* | Zeichenfolge | Die Person oder das System, welches das Asset erstellt hat. |
 | *repo:createDate* | Zeichenfolge | Datum und Uhrzeit der Erstellung des Assets. |
 | *repo:modifiedBy* | Zeichenfolge | Die Person oder das System, welches das Asset zuletzt geändert hat. |
 | *repo:modifyDate* | Zeichenfolge | Datum und Uhrzeit der letzten Änderung des Assets. |
-| *dc:format* | Zeichenfolge | Das Format des Assets, z. B. der Dateityp (z. B. JPEG, PNG usw.). |
+| *dc:format* | Zeichenfolge | Das Format des Assets, z. B. der Dateityp (z. B. JPEG, PNG usw.). |
 | *tiff:imageWidth* | Number (Zahl) | Die Breite eines Assets. |
 | *tiff:imageLength* | Number (Zahl) | Die Höhe eines Assets. |
 | *computedMetadata* | `Record<string, any>` | Ein Objekt, das einen Behälter für alle Metadaten des Assets aller Art (Repository, Applikation oder eingebettete Metadaten) darstellt. |
@@ -225,7 +225,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 Dieses Beispiel zeigt, wie der Asset-Wähler mit einem Nicht-SUSI-Fluss verwendet wird, wenn eine [!DNL Adobe]-Applikation unter Unified Shell läuft oder wenn Sie bereits `imsToken` für die Authentifizierung generiert haben.
 
-Fügen Sie das Asset-Selektor-Paket mit dem `script` Tag, wie in _Zeilen 6-15_ des unten stehenden Beispiels. Sobald das Skript geladen ist, kann die globale Variable `PureJSSelectors` verwendet werden. Definieren der Asset-Auswahl [properties](#asset-selector-properties) wie in _Zeilen 16-23_. Die Eigenschaften `imsOrg` und `imsToken` sind beide für die Authentifizierung im Nicht-SUSI-Fluss erforderlich. Die `handleSelection`-Eigenschaft wird verwendet, um die ausgewählten Assets zu behandeln. Um den Asset-Wähler zu rendern, rufen Sie die `renderAssetSelector`-Funktion wie in _Zeile 17_ erwähnt auf. Der Asset-Wähler wird im Container-Element `<div>` angezeigt, wie in _Zeilen 21 und 22_ zu sehen.
+Fügen Sie das Asset-Wähler-Paket mit dem `script`-Tag in Ihren Code ein, wie in _Zeilen 6 bis 15_ des folgenden Beispiels zu sehen. Sobald das Skript geladen ist, kann die globale Variable `PureJSSelectors` verwendet werden. Definieren Sie die [Eigenschaften](#asset-selector-properties) des Asset-Wählers wie in _Zeilen 16 bis 23_ zu sehen. Die Eigenschaften `imsOrg` und `imsToken` sind beide für die Authentifizierung im Nicht-SUSI-Fluss erforderlich. Die `handleSelection`-Eigenschaft wird verwendet, um die ausgewählten Assets zu behandeln. Um den Asset-Wähler zu rendern, rufen Sie die `renderAssetSelector`-Funktion wie in _Zeile 17_ erwähnt auf. Der Asset-Wähler wird im Container-Element `<div>` angezeigt, wie in _Zeilen 21 und 22_ zu sehen.
 
 Wenn Sie diese Schritte befolgen, können Sie den Asset-Wähler mit einem Nicht-SUSI-Fluss in Ihrer [!DNL Adobe]-Applikation verwenden.
 
@@ -362,11 +362,11 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 
 | Eigenschaft | Typ | Erforderlich | Standard | Beschreibung |
 |---|---|---|---|---|
-| *Leiste* | Boolesch | Nein | Falsch | Wenn markiert `true`, wird der Asset-Selektor in einer Ansicht auf der linken Leiste gerendert. Wenn es markiert ist `false`, wird der Asset-Selektor in der modalen Ansicht gerendert. |
-| *imsOrg* | Zeichenfolge | Ja | | Die Adobe Identity Management System (IMS)-ID, die bei der Bereitstellung von [!DNL Adobe Experience Manager] als [!DNL Cloud Service] für Ihre Organisation zugewiesen wird. Die `imsOrg` -Schlüssel ist erforderlich, um zu authentifizieren, ob sich die Organisation, auf die Sie zugreifen, unter Adobe IMS befindet oder nicht. |
+| *Leiste* | Boolesch | Nein | Falsch | Wenn als `true` markiert, wird der Asset-Wähler in der linken Leistenansicht gerendert. Wenn als `false` markiert, wird der Asset-Wähler in der modalen Ansicht gerendert. |
+| *imsOrg* | Zeichenfolge | Ja | | Die Adobe Identity Management System (IMS)-ID, die bei der Bereitstellung von [!DNL Adobe Experience Manager] als [!DNL Cloud Service] für Ihre Organisation zugewiesen wird. Der `imsOrg`-Schlüssel ist erforderlich, damit authentifiziert wird, ob sich die Organisation, auf die Sie zugreifen, unter Adobe IMS befindet oder nicht. |
 | *imsToken* | Zeichenfolge | Nein | | Für die Authentifizierung verwendeter IMS-Bearer-Token. `imsToken` ist erforderlich, wenn Sie den Nicht-SUSI-Fluss verwenden. |
 | *apiKey* | Zeichenfolge | Nein | | API-Schlüssel, der für den Zugriff auf den AEM Discovery-Dienst verwendet wird. `apiKey` ist erforderlich, wenn Sie den Nicht-SUSI-Fluss verwenden. |
-| *rootPath* | Zeichenfolge | Nein | /content/dam/ | Ordnerpfad, aus dem der Asset-Wähler Ihre Assets anzeigt. `rootPath` kann auch in Form einer Verkapselung verwendet werden. Beispielsweise kann unter dem folgenden Pfad `/content/dam/marketing/subfolder/`: Die Asset-Auswahl ermöglicht es Ihnen nicht, durch einen übergeordneten Ordner zu navigieren, sondern zeigt nur die untergeordneten Ordner an. |
+| *rootPath* | Zeichenfolge | Nein | /content/dam/ | Ordnerpfad, aus dem der Asset-Wähler Ihre Assets anzeigt. `rootPath` kann auch in Form einer Verkapselung verwendet werden. Bei dem folgenden Pfad `/content/dam/marketing/subfolder/` können Sie mit dem Asset-Wähler beispielsweise nicht durch übergeordnete Ordner navigieren, sondern nur die untergeordneten Ordner anzeigen. |
 | *path* | Zeichenfolge | Nein | | Pfad, der zum Navigieren zu einem bestimmten Asset-Verzeichnis verwendet wird, wenn der Asset-Wähler gerendert wird. |
 | *filterSchema* | Array | Nein | | Modell, das zum Konfigurieren von Filtereigenschaften verwendet wird. Dies ist nützlich, wenn Sie bestimmte Filteroptionen des Asset-Wählers einschränken möchten. |
 | *filterFormProps* | Objekt | Nein | | Geben Sie die Filtereigenschaften an, die Sie zur Verfeinerung Ihrer Suche verwenden müssen. Beispielsweise MIME-Typ, JPG, PNG, GIF. |

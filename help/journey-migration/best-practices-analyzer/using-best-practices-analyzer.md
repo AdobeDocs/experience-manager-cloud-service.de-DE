@@ -5,7 +5,7 @@ exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
 source-wordcount: '2484'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -28,12 +28,12 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung von Best
 * BPA wird in AEM-Instanzen mit Version 6.1 und höher unterstützt.
 
   >[!NOTE]
-  >Siehe [Installation auf AEM 6.1](#installing-on-aem61) für besondere Anforderungen für die Installation von BPA auf AEM 6.1.
+  >Besondere Anforderungen für die Installation von BPA unter AEM 6.1 finden Sie unter [Installieren in AEM 6.1](#installing-on-aem61).
 
 * BPA kann in jeder Umgebung ausgeführt werden, es wird jedoch empfohlen, das Tool in einer *Staging*-Umgebung auszuführen.
 
   >[!NOTE]
-  >Um Auswirkungen auf geschäftskritische Instanzen zu vermeiden, wird empfohlen, BPA auf einer *Autor* Umgebung, die der *Produktion* -Umgebung in den Bereichen Anpassungen, Konfigurationen, Inhalte und Benutzeranwendungen. Alternativ kann BPA in einem Klon der *Autoren*-Produktionsumgebung ausgeführt werden.
+  >Um Auswirkungen auf geschäftskritische Instanzen zu vermeiden, wird empfohlen, BPA auf einer *Authoring*-Umgebung auszuführen, die der *Produktions*-Umgebung im Hinblick auf Anpassungen, Konfigurationen, Inhalte und Anwenderprogrammen möglichst nahekommt. Alternativ kann BPA in einem Klon der *Autoren*-Produktionsumgebung ausgeführt werden.
 
 * Die Erstellung von BPA-Berichten kann sehr viel Zeit in Anspruch nehmen, von einigen Minuten bis zu einigen Stunden. Die benötigte Zeit hängt in hohem Maße von der Größe und Art des AEM-Repository-Inhalts, der AEM-Version und anderen Faktoren ab.
 
@@ -107,7 +107,7 @@ Gehen Sie wie folgt vor, um Ergebnisse zu [ACS Commons](https://adobe-consulting
    ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   >Die Ergebnisse von ACS Commons sollten nicht ignoriert werden. Siehe [Dokumentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) , um die Kompatibilität mit AEM as a Cloud Service zu ermitteln.
+   >Die Ergebnisse von ACS Commons sollten nicht ignoriert werden. Informationen zur Kompatibilität mit AEM as a Cloud Service finden Sie in der [Dokumentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility).
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
@@ -144,7 +144,7 @@ Das Format des Berichts lautet:
 Jedem Ergebnis wird eine Wichtigkeitsstufe zugewiesen, um eine ungefähre Priorität für das Handeln anzugeben.
 
 >[!NOTE]
->Weitere Informationen zu den einzelnen Suchkategorien finden Sie unter [Mustererkennungskategorien](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=de).
+>Weitere Informationen zu den einzelnen Kategorien finden Sie unter [Musterdetektorkategorien](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=de).
 
 Sie finden die Wichtigkeitsstufen in der folgenden Tabelle:
 
@@ -157,7 +157,7 @@ Sie finden die Wichtigkeitsstufen in der folgenden Tabelle:
 
 ## Interpretieren des Best Practices Analyzer-CSV-Berichts {#cra-csv-report}
 
-Wenn Sie in Ihrer AEM-Instanz auf die Option **CSV** klicken, wird das CSV-Format des Best Practices Analyzer-Berichts aus dem Inhalts-Cache erstellt und an Ihren Browser zurückgegeben. Abhängig von Ihren Browsereinstellungen wird dieser Bericht automatisch als Datei mit dem Standardnamen `results.csv`.
+Wenn Sie in Ihrer AEM-Instanz auf die Option **CSV** klicken, wird das CSV-Format des Best Practices Analyzer-Berichts aus dem Inhalts-Cache erstellt und an Ihren Browser zurückgegeben. Abhängig von Ihren Browser-Einstellungen wird dieser Bericht automatisch als Datei mit dem Standardnamen `results.csv` heruntergeladen.
 
 Wenn der Cache abgelaufen ist, wird der Bericht erneut generiert, bevor die CSV-Datei erstellt und heruntergeladen wird.
 
@@ -192,7 +192,7 @@ Die HTTP-Schnittstelle kann auf verschiedene Weise verwendet werden.
 
 Eine einfache Möglichkeit besteht darin, eine Browser-Registerkarte im selben Browser zu öffnen, in dem Sie sich bereits als Administrator bei AEM angemeldet haben. Sie können die URL in der Browser-Registerkarte eingeben und die Ergebnisse vom Browser anzeigen oder herunterladen lassen.
 
-Sie können auch ein Befehlszeilen-Tool wie `curl` oder `wget` und jeder HTTP-Clientanwendung. Wenn Sie keine Browser-Registerkarte mit einer authentifizierten Sitzung verwenden, müssen Sie als Teil des Kommentars einen Administrator-Benutzernamen und ein Kennwort angeben.
+Sie können auch ein Befehlszeilen-Tool wie `curl` oder `wget` oder eine beliebige HTTP-Client-Anwendung verwenden. Wenn Sie keine Browser-Registerkarte mit einer authentifizierten Sitzung verwenden, müssen Sie als Teil des Kommentars einen Administrator-Benutzernamen und ein Kennwort angeben.
 
 Im Folgenden ein Beispiel:
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`.
@@ -207,10 +207,10 @@ Diese Schnittstelle verwendet die folgenden HTTP-Kopfzeilen:
 
 Die folgenden HTTP-Abfrageparameter stehen zur Verfügung, wenn HTTP-Kopfzeilen möglicherweise nicht einfach verwendet werden können:
 
-* `max-age` (Zahl, optional): Gibt die Lebensdauer der Cache-Aktualisierung in Sekunden an. Diese Zahl muss 0 oder höher sein. Die Standardlebensdauer für die Aktualisierung beträgt 86400 Sekunden. Ohne diesen Parameter oder den entsprechenden Header wird ein frischer Cache verwendet, um Anforderungen 24 Stunden lang bereitzustellen. Dann muss der Cache neu generiert werden. Durch die Verwendung von `max-age=0` wird das Löschen des Caches erzwungen und eine Neuerstellung des Berichts eingeleitet. Dazu wird die zuvor festgelegte Lebensdauer für die Aktualisierung mit einem Wert, der ungleich null ist, für den neu generierten Cache verwendet.
+* `max-age` (Zahl, optional): Gibt die Lebensdauer der Cache-Aktualisierung in Sekunden an. Diese Zahl muss 0 oder höher sein. Die Standardlebensdauer für die Aktualisierung beträgt 86400 Sekunden. Ohne diesen Parameter oder den entsprechenden Header wird ein Aktualisierungs-Cache verwendet, um Anfragen 24 Stunden lang zu verarbeiten, bevor der Bericht neu generiert werden muss. Durch die Verwendung von `max-age=0` wird das Löschen des Caches erzwungen und eine Neuerstellung des Berichts eingeleitet. Dazu wird die zuvor festgelegte Lebensdauer für die Aktualisierung mit einem Wert, der ungleich null ist, für den neu generierten Cache verwendet.
 * `respond-async` (boolesch, optional): Gibt an, dass die Antwort asynchron bereitgestellt werden soll. Die Verwendung von `respond-async=true`, wenn der Cache veraltet ist, führt dazu, dass der Server die Antwort `202 Accepted` zurückgibt und den Cache verarbeitet, ohne darauf zu warten, dass der Cache aktualisiert und der Bericht generiert wird. Wenn der Cache aktualisiert ist, hat dieser Parameter keine Auswirkung. Der Standardwert lautet `false`. Ohne diesen Parameter oder den entsprechenden Header reagiert der Server synchron. Dies kann viel Zeit und eine Anpassung der maximalen Antwortzeit für den HTTP-Client erfordern.
-* `may-refresh-cache` (boolesch, optional): Gibt an, dass der Server den Cache bei einer Anfrage aktualisieren kann, wenn der aktuelle Cache leer oder veraltet ist bzw. in Kürze veraltet sein wird. Wenn `may-refresh-cache=true` oder wenn dieser Wert nicht angegeben wird, dann kann der Server eine Hintergrundaufgabe initiieren, die den Musterdetektor aufruft und den Cache aktualisiert. Wenn `may-refresh-cache=false` löst der Server keine Aktualisierungsaufgabe aus, die andernfalls ausgeführt worden wäre, wenn der Cache leer oder veraltet ist. In diesem Fall ist der Bericht leer. Auf eine Aktualisierungsaufgabe, die bereits in Bearbeitung ist, hat dieser Parameter keine Auswirkung.
-* `return-minimal` (boolesch, optional): Gibt an, dass die Antwort des Servers nur den Status mit der Fortschrittsanzeige und dem Cache-Status im JSON-Format enthalten sollte. Wenn `return-minimal=true`, ist der Antworttext auf das Statusobjekt beschränkt. Wenn `return-minimal=false`oder wenn sie nicht angegeben ist, wird eine vollständige Antwort bereitgestellt.
+* `may-refresh-cache` (boolesch, optional): Gibt an, dass der Server den Cache bei einer Anfrage aktualisieren kann, wenn der aktuelle Cache leer oder veraltet ist bzw. in Kürze veraltet sein wird. Wenn `may-refresh-cache=true` oder wenn dieser Wert nicht angegeben wird, dann kann der Server eine Hintergrundaufgabe initiieren, die den Musterdetektor aufruft und den Cache aktualisiert. Wenn `may-refresh-cache=false`, dann initiiert der Server keine Aktualisierungsaufgabe, die andernfalls ausgeführt worden wäre, wenn der Cache leer oder veraltet ist. In diesem Fall ist der Bericht leer. Auf eine Aktualisierungsaufgabe, die bereits in Bearbeitung ist, hat dieser Parameter keine Auswirkung.
+* `return-minimal` (boolesch, optional): Gibt an, dass die Antwort des Servers nur den Status mit der Fortschrittsanzeige und dem Cache-Status im JSON-Format enthalten sollte. Wenn `return-minimal=true`, dann ist der Antworttext auf das Statusobjekt beschränkt. Wenn `return-minimal=false` oder der Wert nicht angegeben wird, wird eine vollständige Antwort bereitgestellt.
 * `log-findings` (boolesch, optional): Gibt an, dass der Server den Inhalt des Caches beim ersten Erstellen oder Aktualisieren protokollieren soll. Jedes Ergebnis aus dem Cache wird als JSON-Zeichenfolge protokolliert. Diese Protokollierung erfolgt nur, wenn `log-findings=true` und die Anfrage einen neuen Cache generiert.
 
 Wenn sowohl eine HTTP-Kopfzeile als auch ein entsprechender Abfrageparameter vorhanden sind, hat der Abfrageparameter Vorrang.
@@ -235,7 +235,7 @@ Die folgenden Antwortwerte sind möglich:
 
 ### Anpassung der Cache-Lebensdauer {#cache-adjustment}
 
-Die standardmäßige BPA-Cache-Lebensdauer beträgt 24 Stunden. Mit der Option zum Aktualisieren eines Berichts und zum erneuten Generieren des Caches sowohl in der AEM-Instanz als auch in der HTTP-Schnittstelle ist dieser Standardwert wahrscheinlich für die meisten Verwendungen von BPA geeignet. Wenn die Berichtgenerierungszeit für Ihre AEM-Instanz besonders lang ist, sollten Sie die Cache-Lebensdauer anpassen, um die Neuerstellung des Berichts zu minimieren.
+Die standardmäßige BPA-Cache-Lebensdauer beträgt 24 Stunden. Mit der Option zum Aktualisieren eines Berichts und zum erneuten Generieren des Caches sowohl in der AEM-Instanz als auch in der HTTP-Schnittstelle ist dieser Standardwert wahrscheinlich für die meisten Verwendungen von BPA geeignet. Wenn die Zeit für die Berichterstellung für Ihre AEM-Instanz besonders lang ist, möchten Sie möglicherweise die Cache-Lebensdauer anpassen, um das erneute Generieren des Berichts zu minimieren.
 
 Der Wert für die Cache-Lebensdauer wird als `maxCacheAge`-Eigenschaft im folgenden Repository-Knoten gespeichert:
 `/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`

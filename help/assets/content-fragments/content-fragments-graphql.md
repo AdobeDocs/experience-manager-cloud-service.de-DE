@@ -6,7 +6,7 @@ exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '730'
-ht-degree: 89%
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,7 @@ In Bezug auf das Erstellen von Inhaltsfragmenten in AEM bedeutet dies Folgendes:
 
 * Sie können Inhaltsfragmente verwenden, um Inhalte zu erstellen, die nicht primär für die direkte Veröffentlichung (1:1) auf formatierten Seiten vorgesehen sind.
 
-* Der Inhalt Ihrer Inhaltsfragmente ist vorab strukturiert - entsprechend den Inhaltsfragmentmodellen. Dies vereinfacht den Zugriff für Ihre Programme, die Ihre Inhalte weiterverarbeiten werden.
+* Der Inhalt Ihrer Inhaltsfragmente wird in einer vorgegebenen Art und Weise strukturiert – entsprechend den Inhaltsfragmentmodellen. Dies vereinfacht den Zugriff für Ihre Anwendungen, die Ihre Inhalte dann weiterverarbeiten.
 
 ## Ein Übersicht über GraphQL {#graphql-overview}
 

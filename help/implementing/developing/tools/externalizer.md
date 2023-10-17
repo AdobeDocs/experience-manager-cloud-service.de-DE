@@ -5,7 +5,7 @@ exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '653'
-ht-degree: 82%
+ht-degree: 86%
 
 ---
 
@@ -15,7 +15,7 @@ In AEM **Externalizer** ist ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad pr
 
 Da eine AEM as a Cloud Service-Instanz ihre extern sichtbare URL nicht kennen kann und manchmal ein Link außerhalb des Anfragebereichs erstellt werden muss, bietet dieser Service eine zentrale Stelle, an der diese externen URLs konfiguriert und erstellt werden können.
 
-Auf dieser Seite wird beschrieben, wie Sie den Externalizer-Service konfigurieren und verwenden. Technische Details zum Dienst finden Sie unter [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
+Auf dieser Seite wird beschrieben, wie Sie den Externalizer-Service konfigurieren und verwenden. Technische Details zum Service finden Sie unter [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Standardverhalten des Externalizers und Überschreiben {#default-behavior}
 
@@ -73,7 +73,7 @@ Definieren Sie eine Domain-Zuordnung für den Externalizer-Service wie folgt:
    * **`scheme`** ist normalerweise HTTP oder HTTPS, kann aber ein anderes Protokoll sein.
 
       * Es wird empfohlen, HTTPS zu verwenden, um HTTPS-Links zu erzwingen.
-      * Sie wird verwendet, wenn der Client-Code das Schema nicht überschreibt, wenn er die Externalisierung einer URL anfordert.
+      * Es wird verwendet, wenn der Client-Code das Schema nicht überschreibt, wenn er die Externalisierung einer URL anfordert.
 
    * **`server`** ist der Host-Name (kann ein Domain-Name oder eine IP-Adresse sein).
    * **`port`** (optional) ist die Port-Nummer.

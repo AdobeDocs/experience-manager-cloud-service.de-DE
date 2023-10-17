@@ -7,7 +7,7 @@ exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
@@ -92,4 +92,4 @@ Zwar ist zu hoffen, dass die Registerkarte **Fehler** niemals Daten anzeigt (wie
 * Eine Warnung, falls die Komponente einen Eintrag in das Fehlerprotokoll schreibt, und Details zum Fehler sowie direkte Links zum entsprechenden Code in CRXDE Lite.
 * Eine Warnung, falls die Komponente eine Admin-Sitzung öffnet.
 
-Wenn beispielsweise eine nicht definierte Methode aufgerufen wird, wird der resultierende Fehler im **Fehler** und dem Komponenteneintrag in der Baumstruktur des **Komponenten** -Tab wird auch mit einem Indikator markiert, wenn ein Fehler auftritt.
+Wenn beispielsweise eine undefinierte Methode aufgerufen wird, wird der daraus resultierende Fehler auf der Registerkarte **Fehler** angezeigt, und der Komponenteneintrag in der Baumstruktur der Registerkarte **Komponenten** wird ebenfalls mit einem Indikator versehen, wenn ein Fehler auftritt.

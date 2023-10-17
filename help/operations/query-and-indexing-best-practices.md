@@ -6,7 +6,7 @@ exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
 workflow-type: tm+mt
 source-wordcount: '3144'
-ht-degree: 46%
+ht-degree: 49%
 
 ---
 
@@ -28,17 +28,17 @@ Darüber hinaus muss beim Entwerfen einer Taxonomie bedacht werden, ob eine Sort
 
 ### Abfragen in Komponenten {#queries-in-components}
 
-Da Abfragen zu den stärker belastenden Vorgängen in einem AEM-System gehören können, empfiehlt es sich, diese in Ihren Komponenten zu vermeiden. Wenn beim Rendern einer Seite mehrere Abfragen gleichzeitig ausgeführt werden, kann dies die Leistung des Systems beeinträchtigen. Es gibt zwei Strategien, mit denen sich beim Rendering von Komponenten die Ausführung von Abfragen vermeiden lässt: **[Durchlaufen von Knoten](#traversing-nodes)** und **[Vorabrufen von Ergebnissen](#prefetching-results)**.
+Da Abfragen zu den stärker belastenden Vorgängen in einem AEM-System gehören können, empfiehlt es sich, diese in Ihren Komponenten zu vermeiden. Die Ausführung mehrerer Abfragen bei jedem Rendern einer Seite kann häufig die Leistung des Systems beeinträchtigen. Es gibt zwei Strategien, mit denen sich beim Rendering von Komponenten die Ausführung von Abfragen vermeiden lässt: **[Durchlaufen von Knoten](#traversing-nodes)** und **[Vorabrufen von Ergebnissen](#prefetching-results)**.
 
 ### Durchlaufen von Knoten {#traversing-nodes}
 
-Wenn das Repository so konzipiert ist, dass eine vorherige Kenntnis des Speicherorts der erforderlichen Daten möglich ist, kann Code, der diese Daten aus den erforderlichen Pfaden abruft, bereitgestellt werden, ohne Abfragen ausführen zu müssen, um sie zu finden.
+Wenn das Repository so konzipiert ist, dass eine vorherige Kenntnis des Speicherorts der erforderlichen Daten möglich ist, kann Code, der diese Daten aus den erforderlichen Pfaden abruft, bereitgestellt werden, ohne erst Abfragen ausführen zu müssen, um sie zu finden.
 
 Ein Beispiel hierfür wäre das Rendern von Inhalten, die zu einer bestimmten Kategorie passen. Ein Ansatz wäre, den Inhalt mit einer Kategorieeigenschaft zu organisieren, die abgefragt werden kann, um eine Komponente mit Elementen einer Kategorie aufzufüllen.
 
-Besser wäre es allerdings, diesen Inhalt in einer Taxonomie nach Kategorie zu strukturieren, damit er manuell abgerufen werden kann.
+Ein besserer Ansatz wäre, diesen Inhalt in einer Taxonomie nach Kategorie zu strukturieren, damit er manuell abgerufen werden kann.
 
-Angenommen, der Inhalt wird in einer Taxonomie wie der folgenden gespeichert:
+Nahmen wir beispielsweise an, der Inhalt wird in einer Taxonomie gespeichert ist, die Folgendem ähnelt:
 
 ```xml
 /content/myUnstructuredContent/parentCategory/childCategory/contentPiece
@@ -46,15 +46,15 @@ Angenommen, der Inhalt wird in einer Taxonomie wie der folgenden gespeichert:
 
 In diesem Fall lässt sich der Knoten `/content/myUnstructuredContent/parentCategory/childCategory` einfach abrufen und seine untergeordneten Elemente können analysiert und zum Rendern der Komponente verwendet werden.
 
-Bei einem kleinen oder homogenen Ergebnissatz kann es außerdem schneller sein, das Repository zu durchlaufen und dabei die erforderlichen Knoten zu erfassen, statt eine Abfrage zu erstellen, die denselben Ergebnissatz zurückgibt. Generell sollten Abfragen vermieden werden, soweit dies möglich ist.
+Wenn Sie es mit einem kleinen oder homogenen Ergebnissatz zu tun haben, kann es außerdem schneller sein, das Repository zu durchlaufen und die erforderlichen Knoten zu sammeln, anstatt eine Abfrage zu erstellen, die denselben Ergebnissatz zurückgibt. Generell gilt, dass Abfragen nach Möglichkeit vermieden werden sollten.
 
-### Vorabruf der Ergebnisse {#prefetching-results}
+### Vorabruf von Ergebnissen {#prefetching-results}
 
 Mitunter lassen die Inhalte oder Anforderungen im Zusammenhang mit der Komponente nicht zu, dass Knoten zum Abrufen der erforderlichen Daten durchlaufen werden. In solchen Fällen müssen die erforderlichen Abfragen vor dem Rendern der Komponente ausgeführt werden, damit eine optimale Leistung sichergestellt werden kann.
 
 Sofern die für die Komponente erforderlichen Ergebnisse zum Zeitpunkt der Erstellung ermittelt werden können und nicht zu erwarten ist, dass sich der Inhalt ändert, kann die Abfrage nach einer Änderung ausgeführt werden.
 
-Wenn sich die Daten oder Inhalte regelmäßig ändern, kann die Abfrage planmäßig oder über einen Listener für Aktualisierungen der zugrunde liegenden Daten ausgeführt werden. Anschließend können die Ergebnisse in einen freigegebenen Speicherort im Repository geschrieben werden. Alle Komponenten, die diese Daten benötigen, können dann die Werte aus diesem einzelnen Knoten beziehen, ohne eine Abfrage zur Laufzeit auszuführen.
+Wenn sich die Daten oder Inhalte regelmäßig ändern, kann die Abfrage planmäßig oder über einen Listener für Aktualisierungen der zugrunde liegenden Daten ausgeführt werden. Anschließend können die Ergebnisse an einen freigegebenen Speicherort im Repository geschrieben werden. Alle Komponenten, die diese Daten benötigen, können dann die Werte aus diesem einzelnen Knoten beziehen, ohne eine Abfrage zur Laufzeit auszuführen.
 
 Eine ähnliche Strategie kann verwendet werden, um das Ergebnis in einem Arbeitsspeicher-Cache zu speichern, der beim Start gefüllt und bei jeder Änderung aktualisiert wird (mithilfe eines JCR-Elements `ObservationListener` oder eines Sling-Elements `ResourceChangeListener`).
 
@@ -77,7 +77,7 @@ Dieses Diagramm zeigt den allgemeinen Ablauf zur Verwendung des Abfrageleistungs
 
 Jede Abfrage sollte einen Index verwenden, um eine optimale Leistung zu erzielen. In den meisten Fällen sollten die vorhandenen, vordefinierten Indizes für die Verarbeitung von Abfragen ausreichen.
 
-Manchmal müssen jedoch benutzerdefinierte Eigenschaften zu einem vorhandenen Index hinzugefügt werden, damit zusätzliche Einschränkungen mithilfe des Index abgefragt werden können. Weitere Informationen finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md#changing-an-index). Die [JCR-Abfrage-Schnellübersicht](#jcr-query-cheatsheet) -Abschnitt dieses Dokuments beschreibt, wie eine Eigenschaftsdefinition in einem Index aussehen muss, um einen bestimmten Abfragetyp zu unterstützen.
+Manchmal müssen jedoch benutzerdefinierte Eigenschaften zu einem vorhandenen Index hinzugefügt werden, damit zusätzliche Einschränkungen mithilfe des Index abgefragt werden können. Weitere Informationen finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md#changing-an-index). Der Abschnitt [JCR-Abfrage-Schnellübersicht](#jcr-query-cheatsheet) dieses Dokuments beschreibt, wie eine Eigenschaftsdefinition in einem Index aussehen muss, um einen bestimmten Abfragetyp zu unterstützen.
 
 ### Verwenden der richtigen Kriterien {#use-the-right-criteria}
 
@@ -254,7 +254,7 @@ Um die Leistung dieser zweiten Abfrage zu optimieren, erstellen Sie eine benutze
 
 Um die Erstellung effizienter JCR-Abfragen und Indexdefinitionen zu unterstützen, kann die [JCR-Abfrage-Schnellübersicht](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=de#jcrquerycheatsheet) heruntergeladen und während der Entwicklung als Referenz verwendet werden.
 
-Sie enthält Beispielabfragen für QueryBuilder, XPath und SQL-2, die mehrere Szenarien abdecken, welche sich hinsichtlich der Abfrageleistung unterschiedlich verhalten. Sie enthält auch Empfehlungen zum Erstellen oder Anpassen von Oak-Indizes. Der Inhalt dieses Spiegels gilt für AEM as a Cloud Service und AEM 6.5.
+Sie enthält Beispielabfragen für QueryBuilder, XPath und SQL-2, die mehrere Szenarien abdecken, welche sich hinsichtlich der Abfrageleistung unterschiedlich verhalten. Sie enthält auch Empfehlungen zum Erstellen oder Anpassen von Oak-Indizes. Der Inhalt dieser Schnellübersicht gilt sowohl für AEM as a Cloud Service als auch für AEM 6.5.
 
 ## Best Practices für die Indexdefinition {#index-definition-best-practices}
 

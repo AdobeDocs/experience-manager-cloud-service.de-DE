@@ -5,7 +5,7 @@ exl-id: a90fd619-eff6-466f-9178-90374f988b5d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '788'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 65%
 
 Wenn eine Komponente einer Web-Seite gerendert wird, kann ein HTML-Element generiert werden, das die gerenderte Komponente in sich einschließt. Dies hat zwei Hauptgründe:
 
-* Eine Komponente kann nur bearbeitet werden, wenn sie mit einem HTML-Element umschlossen ist.
+* Eine Komponente kann nur bearbeitet werden, wenn sie in einem HTML-Element eingeschlossen ist.
 * Das einschließende Element wird verwendet, um HTML-Klassen anzuwenden, die Folgendes bieten:
    * Layout-Informationen
    * Styling-Informationen
@@ -27,7 +27,7 @@ Für Entwickler bietet AEM eine klare und einfache Logik für die Steuerung von 
 
 Im Folgenden finden Sie einige allgemeine Empfehlungen dazu, wann das Wrapper-Element eingeschlossen werden sollte, um unerwartete Probleme zu vermeiden:
 
-* Das Wrapper-Element sollte nicht zwischen WCMModes (Bearbeitungs- oder Vorschaumodus), Instanzen (Autor oder Veröffentlichung) oder Umgebung (Staging oder Produktion) unterscheiden, sodass CSS und JavaScript der Seite in allen Fällen identisch funktionieren.
+* Das Wrapper-Element sollte sich in den verschiedenen WCM-Modi (Bearbeitungs- oder Vorschaumodus), Instanzen (Author oder Publish) oder Umgebungen (Staging oder Produktion) nicht unterscheiden, sodass das CSS und JavaScript der Seite in allen Fällen identisch funktionieren.
 * Das einschließende Element sollte allen bearbeitbaren Komponenten hinzugefügt werden, sodass der Seiteneditor sie korrekt initialisieren und aktualisieren kann.
 * Bei nicht bearbeitbaren Komponenten kann das Wrapper-Element vermieden werden, wenn es keine bestimmte Funktion erfüllt, sodass das resultierende Markup nicht unnötig aufgebläht wird.
 
@@ -39,14 +39,14 @@ Die folgenden Eigenschaften und Knoten können auf Komponenten angewendet werden
 * **`cq:htmlTag`node :** Dieser Knoten kann unter einer Komponente hinzugefügt werden und die folgenden Eigenschaften aufweisen:
    * **`cq:tagName {String}`:** Damit können Sie ein eigenes HTML-Tag angeben, das die Komponenten anstatt des standardmäßigen DIV-Elements einschließen soll.
    * **`class {String}`:** Damit können Sie css-Klassennamen angeben, die dem einschließenden Element hinzugefügt werden sollen.
-   * Andere Eigenschaftsnamen werden als HTML-Attribute mit demselben String-Wert wie angegeben hinzugefügt.
+   * Andere Eigenschaftsnamen werden als HTML-Attribute mit demselben angegebenen Zeichenfolgenwert hinzugefügt.
 
-## Skript-Steuerung {#script-controls}
+## Skript-Steuerelemente {#script-controls}
 
 Im Allgemeinen lässt sich das Wrapper-Verhalten in HTL wie folgt beschreiben:
 
 * Standardmäßig wird kein Wrapper-DIV gerendert (wenn nur `data-sly-resource="foo"` ausgeführt wird).
-* Alle wcm-Modi (deaktiviert, Vorschau, Bearbeitung auf Autor- und Veröffentlichungsinstanz) werden identisch dargestellt.
+* Alle WCM-Modi (Deaktiviert, Vorschau, Bearbeitung in Author und Publish) werden identisch dargestellt.
 
 Das Verhalten des Wrappers kann ebenfalls vollständig gesteuert werden.
 
@@ -55,7 +55,7 @@ Das Verhalten des Wrappers kann ebenfalls vollständig gesteuert werden.
 
 Sie können das Verhalten der Wrapper-Tags von HTL-Skripten und der zugehörigen Logik vollständig kontrollieren.
 
-Weitere Informationen zur Entwicklung in HTL finden Sie unter [HTL-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=de).
+Weitere Informationen zur Entwicklung in HTL finden Sie in der [HTL-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=de).
 
 ### Entscheidungsbaum {#decision-tree}
 
@@ -89,7 +89,7 @@ Bei allen nachfolgenden Beispielen wird von der folgenden Inhaltsstruktur und de
 
 #### Anwendungsfall 1: Einfügen einer Komponente zur Wiederverwendung von Code {#use-case-include-a-component-for-code-reuse}
 
-Der häufigste Anwendungsfall besteht darin, dass eine Komponente eine andere Komponente enthält, damit Code erneut verwendet werden kann. In diesem Fall soll die enthaltene Komponente nicht mit ihrer eigenen Symbolleiste und ihrem eigenen Dialogfeld bearbeitbar sein, sodass kein Wrapper erforderlich ist und die Komponente `cq:htmlTag` wird ignoriert. Dies gilt als das Standardverhalten.
+Der häufigste Anwendungsfall besteht darin, dass eine Komponente eine andere Komponente enthält, damit Code erneut verwendet werden kann. In diesem Fall sollte die enthaltene Komponente nicht mit ihrer eigenen Symbolleiste und ihrem eigenen Dialogfeld bearbeitbar sein, sodass kein Wrapper notwendig ist. Das `cq:htmlTag` der Komponente wird ignoriert. Dies gilt als das Standardverhalten.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 

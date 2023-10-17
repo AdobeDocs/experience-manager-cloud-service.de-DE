@@ -7,7 +7,7 @@ exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -121,13 +121,13 @@ So legen Sie das Ablaufdatum eines Assets fest:
 
 Das Kennzeichen `Expired` der Asset-Karte hat Vorrang vor dem Kennzeichen `Approved` oder `Rejected`, das für ein Asset festgelegt wurde.
 
-Sie können Assets auch nach einem Asset-Status filtern. Weitere Informationen finden Sie unter [Suchen von Assets in der Asset-Ansicht](search-assets-view.md).
+Sie können Assets auch nach einem Asset-Status filtern. Weitere Informationen finden Sie unter [Suchen nach Assets in der Assets-Ansicht](search-assets-view.md).
 
 ## Anpassen von Metadatenformularen zur Aufnahme eines Asset-Statusfeldes {#customize-asset-status-metadata-form}
 
 **Erforderliche Berechtigungen:** Administrator
 
-Die Asset-Ansicht bietet standardmäßig viele Standard-Metadatenfelder. Unternehmen haben zusätzliche Metadatenanforderungen und benötigen mehr Metadatenfelder, um geschäftsspezifische Metadaten hinzuzufügen. Mit Metadatenformularen können Unternehmen benutzerdefinierte Metadatenfelder zur Seite [!UICONTROL Details] eines Assets hinzufügen. Die geschäftsspezifischen Metadaten verbessern die Verwaltung und Erkennung der Assets.
+Die Assets-Ansicht bietet standardmäßig viele Standard-Metadatenfelder. Unternehmen haben zusätzliche Metadatenanforderungen und benötigen mehr Metadatenfelder, um geschäftsspezifische Metadaten hinzuzufügen. Mit Metadatenformularen können Unternehmen benutzerdefinierte Metadatenfelder zur Seite [!UICONTROL Details] eines Assets hinzufügen. Die geschäftsspezifischen Metadaten verbessern die Verwaltung und Erkennung der Assets.
 
 Weitere Informationen zum Hinzufügen zusätzlicher Metadatenfelder zum Metadatenformular finden Sie unter [Metadaten-Formulare](metadata-assets-view.md#metadata-forms).
 
@@ -141,9 +141,9 @@ Um das Metadatenfeld „Ablaufdatum“ zum Formular hinzuzufügen, ziehen Sie di
 
 ## Nächste Schritte {#next-steps}
 
-* [Video zum Verwalten von Assets in der Asset-Ansicht ansehen](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html?lang=de)
+* [Sehen Sie sich ein Video zum Verwalten von Assets in der Assets-Ansicht an](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html?lang=de)
 
-* Stellen Sie mithilfe der [!UICONTROL Feedback] Option in der Benutzeroberfläche der Assets-Ansicht verfügbar
+* Geben Sie Produkt-Feedback über die Option [!UICONTROL Feedback] in der Benutzeroberfläche der Assets-Ansicht
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 

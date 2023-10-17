@@ -5,7 +5,7 @@ exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
 source-git-commit: 2ac93fbe0075cc2c88def444daba613e8b40c018
 workflow-type: tm+mt
 source-wordcount: '1877'
-ht-degree: 62%
+ht-degree: 65%
 
 ---
 
@@ -35,7 +35,7 @@ Beständige GraphQL-Abfragen helfen durch die Verwendung des Content Delivery Ne
 
 Siehe:
 
-* [Persistierte GraphQL-Abfragen](/help/headless/graphql-api/persisted-queries.md).
+* [Persistente GraphQL-Abfragen](/help/headless/graphql-api/persisted-queries.md).
 * [Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen](/help/headless/graphql-api/sample-queries.md)
 
 ### Cache-Strategie {#cache-strategy}
@@ -120,7 +120,7 @@ Dabei wird ein JCR-Filter (in Form einer Abfragebegrenzung) angewendet, bevor de
 
 >[!NOTE]
 >
->Aus technischen Gründen (z. B. Flexibilität, Verschachtelung von Fragmenten) kann AEM die gesamte Filterung nicht an JCR delegieren.
+>Aus technischen Gründen (z. B. Flexibilität oder Verschachtelung von Fragmenten) kann AEM nicht die gesamte Filterung an JCR delegieren.
 
 Bei dieser Methode wird die Flexibilität bewahrt, die GraphQL-Filter bieten, während gleichzeitig ein möglichst großer Teil der Filterung an JCR delegiert wird.
 
@@ -240,7 +240,7 @@ Wenn Sie in erster Linie daran interessiert sind, nur die ersten Seiten abzurufe
 
 ### Logische Vorgänge in Filterausdrücken {#logical-operations-in-filter-expressions}
 
-Wenn Sie nach verschachtelten Fragmenten filtern, können Sie dennoch die JCR-Filterung anwenden, indem Sie einen begleitenden Filter für ein Feld der obersten Ebene bereitstellen, das mithilfe der `AND` Operator.
+Wenn Sie verschachtelte Fragmente filtern, können Sie weiterhin die JCR-Filterung nutzen, indem Sie einen begleitenden Filter für ein Feld der obersten Ebene bereitstellen, das mithilfe des `AND`-Operators kombiniert wird.
 
 Ein typischer Anwendungsfall bestünde darin, den Umfang der Abfrage mithilfe eines Filters auf das Feld `_path` des Fragments der obersten Ebene einzugrenzen und dann zusätzliche Felder zu filtern, die sich möglicherweise auf der obersten Ebene oder in einem verschachtelten Fragment befinden.
 

@@ -5,7 +5,7 @@ exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '660'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Sie können einen Workflow wie folgt starten:
 
 In beiden Fällen ist Folgendes nötig:
 
-* [Angeben von Workflow-Details im Assistenten „Workflow erstellen“](#specifying-workflow-details-in-the-create-workflow-wizard)
+* [Angeben der Workflow-Details im Assistenten „Workflow erstellen“](#specifying-workflow-details-in-the-create-workflow-wizard)
 
 ### Starten eines Workflows von der Sites-Symbolleiste aus {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -99,7 +99,7 @@ Details können Sie angeben wie folgt:
 
    Je nach Workflow-Modell stehen auch die folgenden Optionen zur Verfügung. Dadurch kann das als Payload erstellte Paket nach Abschluss des Workflows beibehalten werden.
 
-   * **Workflow-Paket behalten**
+   * **Workflow-Paket beibehalten**
    * **Paketname**
 
       * Sie können einen Titel für das Paket angeben, um die Identifizierung zu erleichtern.
@@ -122,7 +122,7 @@ Details können Sie angeben wie folgt:
 
    * Eine vorhandene Ressource, um weitere Aktionen zu sehen:
 
-      * **Untergeordnete Elemente einschließen** , um anzugeben, dass die untergeordneten Elemente dieser Ressource im Workflow enthalten sind.
+      * **Untergeordnete Elemente einbeziehen**, um anzugeben, dass untergeordnete Elemente der betreffenden Ressource im Workflow enthalten sind.
 Ein Dialogfeld wird geöffnet, in dem Sie die Auswahl verfeinern können:
 
          * Nur unmittelbar untergeordnete Elemente einbeziehen.
@@ -143,6 +143,6 @@ Ein Dialogfeld wird geöffnet, in dem Sie die Auswahl verfeinern können:
 
 ## Starten eines Workflows aus dem Seiten-Editor {#starting-a-workflow-from-the-page-editor}
 
-Wenn Sie eine Seite bearbeiten, können Sie die **Seiteninformationen** von der Symbolleiste aus aufrufen. Das Dropdown-Menü enthält die Option **Workflow starten**. Ein Dialogfeld wird geöffnet, in dem Sie den gewünschten Workflow ggf. zusammen mit einem Titel angeben können:
+Wenn Sie eine Seite bearbeiten, können Sie die **Seiteninformationen** von der Symbolleiste aus aufrufen. Das Dropdown-Menü enthält die Option **In Workflow starten**. Ein Dialogfeld wird geöffnet, in dem Sie den gewünschten Workflow ggf. zusammen mit einem Titel angeben können:
 
 ![Starten eines Workflows aus dem Seiten-Editor](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

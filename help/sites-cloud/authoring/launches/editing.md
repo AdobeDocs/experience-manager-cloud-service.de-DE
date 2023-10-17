@@ -1,11 +1,11 @@
 ---
 title: Bearbeiten von Launches
-description: Nachdem Sie einen Launch für Ihre Seite (oder mehrere Seiten) erstellt haben, können Sie den Inhalt in der Launch Copy der Seiten bearbeiten.
+description: Nachdem Sie einen Launch für Ihre Seite (oder eine Reihe von Seiten) erstellt haben, können Sie den Inhalt in der „Launch-Kopie“ der Seite(n) bearbeiten.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -37,9 +37,9 @@ Wenn Ihr Launch auf einer [Live Copy](/help/sites-cloud/administering/msm/overv
 
 Eine Live Copy wird verwendet, um Inhalte *von* der Quellverzweigung *mit* Ihrer Launch-Verzweigung zu synchronisieren (um Ihren Launch mit den Änderungen an der Quelle zu aktualisieren).
 
-Sie können Änderungen auf dieselbe Weise vornehmen, wie eine standardmäßige Live Copy. Beispiel:
+Sie können Änderungen auf dieselbe Weise vornehmen wie für eine standardmäßige Live Copy. Zum Beispiel:
 
-* Durch Klicken auf ein geschlossenes Schloss wird die Synchronisierung unterbrochen und Sie haben die Möglichkeit, neue Aktualisierungen am Inhalt Ihres Launches vorzunehmen. Nach dem Entsperren (Vorhängeschloss öffnen) werden Ihre Änderungen nicht durch Änderungen überschrieben, die an derselben Stelle innerhalb des Quellzweigs vorgenommen werden.
+* Durch Klicken auf ein geschlossenes Schloss wird die Synchronisierung unterbrochen und Sie haben die Möglichkeit, neue Aktualisierungen am Inhalt Ihres Launches vorzunehmen. Nach dem Entsperren (offenes Vorhängeschloss) werden Ihre Änderungen nicht durch Änderungen überschrieben, die an derselben Stelle innerhalb des Quellzweigs vorgenommen werden.
 * Sie können die Vererbung für eine bestimmte Seite **aussetzen** (und **fortsetzen**).
 
 Siehe [Ändern des Live-Copy-Inhalts](/help/sites-cloud/administering/msm/creating-live-copies.md).
@@ -50,11 +50,11 @@ Um die vorgenommenen Änderungen zu verfolgen, können Sie den Launch in **Refer
 
 1. Navigieren Sie in der **Sites-Konsole** [zu den Quellseiten Ihres Launches und wählen Sie sie eine aus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Öffnen Sie das Bedienfeld **[Verweise](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** und wählen Sie **Launches** aus.
-1. Wählen Sie den gewünschten Launch aus und dann **Mit Quelle vergleichen**:
+1. Wählen Sie den gewünschten Launch aus und dann **Mit Quelle vergleichen**
 
    ![Vergleichen von Launch und Quelle](/help/sites-cloud/authoring/assets/launches-compare.png)
 
-1. Die beiden Seiten (Start und Quelle) werden nebeneinander geöffnet.
+1. Die beiden Seiten (Launch und Quelle) werden nebeneinander geöffnet.
 
    Vollständige Informationen zur Verwendung der Vergleichsfunktion finden Sie unter [Seitenvergleich](/help/sites-cloud/authoring/features/page-diff.md).
 
@@ -72,7 +72,7 @@ Sie können jederzeit Seiten zum Bereich der Quellseiten für einen Launch hinzu
 
 >[!NOTE]
 >
->Um Seiten zu einem Launch hinzuzufügen, müssen sie sich unter einem gemeinsamen Sprachstamm befinden. das heißt, innerhalb einer einzelnen Site.
+>Um Seiten zu einem Launch hinzuzufügen, müssen sie sich unter einem gemeinsamen Sprachstamm befinden. d. h. innerhalb einer einzelnen Site.
 
 ## Bearbeiten einer Launch-Konfiguration {#editing-a-launch-configuration}
 

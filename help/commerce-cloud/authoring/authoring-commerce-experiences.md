@@ -5,7 +5,7 @@ exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -71,7 +71,7 @@ CIF-Produktkatalogseiten sind virtuelle Seiten, die dynamisch gerendert werden. 
 
     >[!NOTE]
     >
-    > Wenn sowohl Kategorie als auch Produkt ausgewählt werden, wird das Produkt ausgewählt.
+    > Wenn sowohl Kategorie als auch Produkt ausgewählt werden, wird das Produkt verwendet.
 
 Dadurch wird ein Platzhalter-Link erstellt, der beim Rendern der Seite durch einen echten Link ersetzt wird.
 

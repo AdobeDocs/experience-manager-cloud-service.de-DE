@@ -1,13 +1,13 @@
 ---
 title: Konsole „Live Copy-Übersicht“
-description: Erfahren Sie mehr über die Grundlagen der Konsole "Live Copy-Übersicht", um den Status Ihrer Live Copies zum Synchronisieren von Inhalten schnell zu verstehen.
+description: Lernen Sie die Grundlagen der Konsole „Live Copy-Übersicht“ kennen, um einen Überblick über den Status Ihrer Live Copys zu erhalten und Inhalte zu synchronisieren.
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 86%
+ht-degree: 97%
 
 ---
 
@@ -48,8 +48,8 @@ Die **Live Copy-Übersicht** wird über das seitliche Bedienfeld **Verweise** d
 
 Die **Live Copy-Übersicht** kann beim Anzeigen der Eigenschaften einer Blueprint-Seite geöffnet werden:
 
-1. Öffnen **Eigenschaften** für die entsprechende Blueprint-Seite.
-1. Öffnen Sie die **Blueprint** tab - das **Live Copy-Übersicht** wird in der oberen Symbolleiste angezeigt:
+1. Öffnen Sie die **Eigenschaften** für die entsprechende Blueprint-Seite.
+1. Wenn Sie nun die Registerkarte **Blueprint** öffnen, wird die Option **Live Copy-Übersicht** in der oberen Symbolleiste angezeigt:
 
    ![Registerkarte „Blueprint-Eigenschaften“](../assets/live-copy-blueprint-tab.png)
 
@@ -72,7 +72,7 @@ Eine Rollout-Konfiguration wird beispielsweise als `targetActivate` definiert. D
 Mit der **Live Copy-Übersicht** können auch Aktionen in der Live Copy durchgeführt werden:
 
 1. Öffnen Sie die **Live Copy-Übersicht**.
-1. Wählen Sie die gewünschte Blueprint- oder Live Copy-Seite aus und die Symbolleiste wird aktualisiert, um die verfügbaren Aktionen anzuzeigen. Die verfügbaren [Aktionen](overview.md#terms-used) hängen davon ab, ob Sie eine [Blueprint](#actions-for-a-blueprint-page)- oder [Live Copy](#actions-for-a-live-copy-page)-Seite auswählen.
+1. Wählen Sie die erforderliche Blueprint- oder Live Copy-Seite aus. Die Symbolleiste wird aktualisiert und zeigt die verfügbaren Aktionen an. Die verfügbaren [Aktionen](overview.md#terms-used) hängen davon ab, ob Sie eine [Blueprint](#actions-for-a-blueprint-page)- oder eine [Live Copy](#actions-for-a-live-copy-page)-Seite auswählen.
 
 ### Aktionen für Blueprint-Seiten {#actions-for-a-blueprint-page}
 

@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
 workflow-type: tm+mt
 source-wordcount: '1366'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -32,7 +32,7 @@ Dieser Artikel baut auf diesen Grundlagen auf, damit Sie verstehen, wie Sie in A
 
 ## Sie möchten also auf Ihre Inhalte zugreifen? {#so-youd-like-to-access-your-content}
 
-Sie haben also all diesen Inhalt, sauber strukturiert (in Inhaltsfragmenten) und warten nur darauf, Ihre neue App zu füttern. Doch wie bekommen Sie sie dorthin?
+Sie haben all diese Inhalte, sauber strukturiert (in Inhaltsfragmenten) und möchten sie nun in Ihre neue App aufnehmen. Doch wie bekommen Sie sie dorthin?
 
 Sie benötigen eine Möglichkeit, bestimmte Inhalte gezielt anzusprechen, auszuwählen, was Sie benötigen, und sie zur weiteren Verarbeitung an Ihr Programm zurückzugeben.
 

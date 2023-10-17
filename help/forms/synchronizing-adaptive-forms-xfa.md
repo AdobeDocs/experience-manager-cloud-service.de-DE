@@ -9,7 +9,7 @@ docset: aem65
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '1146'
-ht-degree: 83%
+ht-degree: 92%
 
 ---
 
@@ -54,9 +54,9 @@ Das Paket enthält die folgenden Assets:
 
 ### Hinzufügen von Inhalten zu einem adaptiven Formular {#add-content-to-adaptive-form-br}
 
-1. Navigieren Sie zu https://&lt;server>:&lt;port>/aem/forms.html. Geben Sie auf Anfrage Ihre Anmeldedaten ein.
+1. Navigieren Sie zu https://&lt;server>:&lt;port>/aem/forms.html. Geben Sie auf Anfrage Ihre Anmeldeinformationen ein.
 1. Öffnen Sie sample-af-xfa zur Bearbeitung im Autorenmodus.
-1. Wählen Sie im Inhaltsbrowser in der Seitenleiste die Registerkarte Datenmodellobjekte . Ziehen Sie NumericField1 und TextField1 auf das adaptive Formular.
+1. Wählen Sie im Inhalt-Browser in der Seitenleiste die Registerkarte „Datenmodellobjekte“. Ziehen Sie „NumericField1“ und „TextField1“ auf das adaptive Formular.
 1. Ändern Sie den Titel von „NumericField1“ von **Numerisches Feld** zu **Numerisches AF-Feld**.
 
 >[!NOTE]
@@ -113,7 +113,7 @@ Sie müssen nicht auf den Link in der Fehlermeldung klicken, um die Felder in de
 
 ### Gelöschte Felder in der XDP-Datei {#deleted-fields-in-xdp-file}
 
-Wenn ein Feld, das zuvor in ein adaptives Formular kopiert wurde, aus einer XDP-Datei gelöscht wird, wird im Authoring-Modus eine Fehlermeldung angezeigt, die besagt, dass das Feld nicht in der XDP-Datei vorhanden ist. In diesem Fall müssen Sie das Feld in dem adaptiven Formular manuell löschen oder die Eigenschaft `bindRef` im Komponentendialogfeld entfernen.
+Wenn ein zuvor in ein adaptives Formular kopiertes Feld in einer XDP-Datei gelöscht wird, wird eine Fehlermeldung im Autorenmodus angezeigt, die angibt, dass das Feld in der XDP-Datei nicht vorhanden ist. In diesem Fall müssen Sie das Feld in dem adaptiven Formular manuell löschen oder die Eigenschaft `bindRef` im Komponentendialogfeld entfernen.
 
 Die folgenden Schritte veranschaulichen diesen Vorgang für die Assets, die in dem Beispiel in diesem Artikel verwendet wurden:
 
@@ -121,7 +121,7 @@ Die folgenden Schritte veranschaulichen diesen Vorgang für die Assets, die in d
 1. Laden Sie die Datei `sample-form.xdp` in die [!DNL AEM Forms]-Benutzeroberfläche hoch.
 1. Öffnen Sie das adaptive Formular `sample-xfa-af` für das Authoring. Die folgende Fehlermeldung wird angezeigt: „Schema/Form Template for the Adaptive Form has been updated.“ `Click Here` to rebase it with the new version (Schema/Formularvorlage für das adaptive Formular wurde geändert. Klicken Sie hier, um ein Rebase mit der neuen Version auszuführen.)
 
-1. Klicken Sie auf den (mit „`Click Here`“ beschrifteten) Link in der Meldung. Es wird eine Fehlermeldung angezeigt, die darauf hinweist, dass das Feld nicht mehr in der XDP-Datei vorhanden ist.
+1. Klicken Sie auf den (mit „`Click Here`“ beschrifteten) Link in der Meldung. Eine Fehlermeldung wird angezeigt, die besagt, dass das Feld in der XDP-Datei nicht mehr vorhanden ist.
 
 ![Fehler, der angezeigt wird, wenn Sie ein Element in der XDP-Datei löschen](assets/no-element-xdp.png)
 

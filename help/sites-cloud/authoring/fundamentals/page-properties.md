@@ -5,13 +5,13 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2279'
-ht-degree: 78%
+ht-degree: 98%
 
 ---
 
 # Bearbeiten der Seiteneigenschaften {#editing-page-properties}
 
-Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese können je nach Art der Seite variieren. Beispielsweise sind einige Seiten möglicherweise mit einer Live Copy verbunden, andere nicht und die Live Copy-Informationen sind entsprechend verfügbar.
+Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese können je nach Art der Seite variieren. So können beispielsweise einige Seiten mit einer Live Copy verbunden sein, andere nicht, und die Informationen der Live Copy sind je nach Bedarf verfügbar.
 
 ## Seiteneigenschaften {#page-properties}
 
@@ -26,7 +26,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    * **Tags** – Hier können Sie der Seite Tags hinzufügen oder Tags aus der Seite entfernen, indem Sie die Liste im Auswahlfeld aktualisieren.
       * Nachdem Sie ein Tag ausgewählt haben, wird es unter dem Auswahlfeld aufgeführt. Sie können ein Tag mit dem „x“ aus dieser Liste entfernen.
       * Sie können ein völlig neues Tag eingeben, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
-         * Das neue Tag wird erstellt, wenn Sie die Eingabetaste drücken.
+         * Der neue Tag wird erstellt, wenn Sie die Eingabetaste drücken.
          * Das neue Tag wird dann mit einem kleinen Stern auf der rechten Seite angezeigt, der es als neues Tag kennzeichnet.
       * In der Dropdown-Liste können Sie aus vorhandenen Tags auswählen.
       * Wenn Sie den Mauszeiger über ein Tag im Auswahlfeld halten, wird ein „x“ angezeigt, mit dem Sie das Tag löschen können.
@@ -39,8 +39,8 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    * **Marken-Slug**
 
-      * **Überschreiben** – Aktivieren Sie diese Option, um den Marken-Slug auf dieser Seite zu definieren.
-         * Der Wert wird von allen untergeordneten Seiten übernommen, es sei denn, sie verfügen auch über ihre **Überschreibung** festgelegten Werte.
+      * **Überschreiben**: Aktivieren Sie diese Option, um den Marken-Slug auf dieser Seite zu definieren.
+         * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, deren Werte für **Überschreiben** sind auch eingestellt.
       * **Überschreibungswert** – Der Text des Marken-Slugs, der an den Seitentitel angehängt werden soll.
          * Der Wert wird nach einem Pipe-Zeichen an den Seitentitel angehängt, z. B. „Cycling Tuscany | Always ready for the WKND“.
 
@@ -50,8 +50,8 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Weitere Titel und Beschreibungen**
 
-   * **Seitentitel** – Ein Titel zur Verwendung auf der Seite. Wird normalerweise von Titelkomponenten verwendet. Wenn leer, wird die **Titel** verwendet.
-   * **Navigationstitel** - Sie können einen separaten Titel für die Verwendung in der Navigation angeben (z. B. wenn Sie etwas präzisere angeben möchten). Wenn leer, wird die **Titel** verwendet.
+   * **Seitentitel** – Ein Titel zur Verwendung auf der Seite. Wird normalerweise von Titelkomponenten verwendet. Wenn dies leer gelassen wird, wird der **Titel** verwendet.
+   * **Navigationstitel**: Sie können einen eigenen Titel für die Navigation angeben (z. B. wenn Sie einen kürzeren Titel wünschen). Wenn dies leer gelassen wird, wird der **Titel** verwendet.
    * **Untertitel** – Ein Untertitel zur Verwendung auf der Seite.
    * **Beschreibung** – Ihre Beschreibung der Seite, der Zweck oder beliebige andere Details, die Sie hinzufügen möchten.
 
@@ -62,15 +62,15 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
   > Weitere Informationen zum Konfigurieren der zugehörigen automatischen Replikation finden Sie unter [Ein- und Ausschaltzeiten – Trigger-Konfiguration](/help/operations/replication.md#on-and-off-times-trigger-configuration).
 
   >[!NOTE]
-  >Wenn entweder **Einschaltzeit** oder **Ausschaltzeit** in der Vergangenheit liegt und die automatische Replikation konfiguriert ist, wird die entsprechende Aktion sofort ausgelöst.
+  >Wenn entweder die **Einschaltzeit** oder die **Ausschaltzeit** in der Vergangenheit liegt und die automatische Replikation konfiguriert ist, wird die entsprechende Aktion sofort ausgelöst.
 
-   * **Einschaltzeit** - Datum und Uhrzeit, zu der die veröffentlichte Seite in der Veröffentlichungsumgebung sichtbar (gerendert) wird. Die Seite muss entweder manuell oder durch vorkonfigurierte automatische Replikation veröffentlicht werden.
+   * **Einschaltzeit**: Zeitpunkt (Datum und Uhrzeit), zu dem die veröffentlichte Seite in der Publishing-Umgebung sichtbar (gerendert) wird. Die Seite muss entweder manuell oder durch vorkonfigurierte automatische Replikation veröffentlicht werden.
 
-      * Wenn bereits [veröffentlicht (manuell)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) Diese Seite ruht (ausgeblendet) bis zum Rendern zum angegebenen Zeitpunkt.
-      * Wenn die Seite nicht veröffentlicht und für die automatische Replikation konfiguriert ist, wird sie automatisch veröffentlicht und dann zum angegebenen Zeitpunkt gerendert.
+      * Wenn diese Seite bereits [(manuell) veröffentlicht wurde](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), wird sie bis zum Rendern am angegebenen Zeitpunkt ruhend (ausgeblendet) gehalten.
+      * Wenn die Seite nicht veröffentlicht, aber für die automatische Replikation konfiguriert ist, wird sie automatisch veröffentlicht und dann zum festgelegten Zeitpunkt gerendert.
       * Wenn die Seite nicht veröffentlicht und nicht für die automatische Replikation konfiguriert ist, wird sie nicht automatisch veröffentlicht. Daher wird ein 404-Fehler angezeigt, wenn versucht wird, auf die Seite zuzugreifen.
 
-   * **Ausschaltzeit** - ähnlich wie und häufig in Kombination mit **Einschaltzeit** festgelegt ist, wird dadurch der Zeitpunkt definiert, zu dem die veröffentlichte Seite in der Veröffentlichungsumgebung ausgeblendet wird.
+   * **Ausschaltzeit**: Ähnlich wie und häufig in Kombination mit der **Einschaltzeit** wird hier der Zeitpunkt festgelegt, zu dem die Publishing-Umgebung auf der Veröffentlichungsseite ausgeblendet wird.
 
    * Lassen Sie diese Felder (**Einschaltzeit** und **Ausschaltzeit**) für Seiten, die Sie sofort veröffentlichen möchten und die in der Veröffentlichungsumgebung verfügbar sein sollen, leer, bis sie deaktiviert werden (der Normalfall).
 
@@ -115,7 +115,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Vorlageneinstellungen**
 
-   * **Zulässige Vorlagen** - [Definiert die Liste der verfügbaren Vorlagen](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) innerhalb dieser Unterverzweigung
+   * **Erlaubte Vorlagen**: [Definiert die Liste der Vorlagen, die innerhalb dieses Unterzweigs verfügbar sind](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author)
 
 * **Authentifizierungspflicht**
 
@@ -133,7 +133,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **SEO**
 
-   * **Kanonische URL** - kann verwendet werden, um die kanonische URL der Seite zu überschreiben. Wenn Sie das Feld leer lassen, ist die URL der Seite die kanonische URL
+   * **Kanonische URL**: Kann verwendet werden, um die kanonische URL der Seite zu überschreiben; wenn Sie das Feld leer lassen, dient die URL der Seite als ihre kanonische URL
 
    * **Robots-Tags** – Wählen Sie die Robots-Tags aus, um das Verhalten der Suchmaschinen-Crawler zu steuern.
 
@@ -141,7 +141,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
      >
      >Einige der Optionen stehen in Konflikt miteinander. Im Falle eines Konflikts hat die Option mit größerer Berechtigung Vorrang.
 
-   * **Sitemap generieren** - Wenn ausgewählt, wird eine sitemap.xml für diese Seite und deren untergeordnete Elemente generiert.
+   * **Sitemap generieren**: Wenn ausgewählt, wird eine sitemap.xml für diese Seite und ihre Unterseiten generiert
 
 ### Bilder {#images}
 
@@ -198,13 +198,13 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blueprints dienen als Grundlage für Live Copys und sind Teil des [Multi-Site-Managements](/help/sites-cloud/administering/msm/overview.md).
 
-* **Aktuelle Live Copies** - Listet Seiten auf, die auf dieser Blueprint-Seite basieren (d. h. Live Copies von sind)
+* **Aktuelle Live Copies**: Listet Seiten auf, die auf dieser Blueprint-Seite basieren (das heißt, Live Copies dieser Seite sind).
 
-* **Rollout-Konfigurationen** - Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden
+* **Rollout-Konfigurationen**: Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
 
 ### Live Copy {#live-copy}
 
-Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copys konfiguriert sind. Wie bei Blueprints sind Live Copies Teil von [Multi-Site-Management](/help/sites-cloud/administering/msm/overview.md).
+Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copys konfiguriert sind. Wie Blueprints sind Live Copys Teil des [Multi-Site-Managements](/help/sites-cloud/administering/msm/overview.md).
 
 * **Synchronisieren** – Live Copy wird mit Blueprint synchronisiert; lokale Änderungen werden beibehalten.
 * **Zurücksetzen** – Live Copy auf Status der Blueprint zurücksetzen; lokale Änderungen werden entfernt.
@@ -223,7 +223,7 @@ Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copys konfigurier
 
    * **Live Copy-Vererbung** – Bei Auswahl dieser Option gilt die Live Copy-Konfiguration für alle untergeordneten Elemente.
    * **Rollout-Konfigurationen von übergeordneter Seite übernehmen** – Wenn diese Option aktiviert ist, wird die Rollout-Konfiguration von der übergeordneten Seite übernommen.
-   * **Rollout-Konfiguration auswählen** - Definiert die Umstände, unter denen Änderungen von der Blueprint propagiert werden und nur verfügbar sind, wenn **Rollout-Konfigurationen von übergeordnetem Element übernehmen** ist nicht ausgewählt
+   * **Rollout-Konfiguration auswählen**: Legt fest, unter welchen Umständen Änderungen aus dem Blueprint übernommen werden, und ist nur verfügbar, wenn **Rollout-Konfigurationen von übergeordneter Seite erben** nicht aktiviert ist.
 
 ### Vorschau {#preview}
 
@@ -253,7 +253,7 @@ Durch eine einfache Konfiguration können Inhaltsautorinnen und -autoren jetzt P
 
    * **Caching-Strategie und Häufigkeit der Inhaltsaktualisierung** – Definiert das Caching-Modell für Ihre PWA
    * **Dateien zum Zwischenspeichern für die Offline-Nutzung**
-      * **Dateivorab-Zwischenspeicherung (technische Vorschau)** - Dateien, die auf AEM gehostet werden, werden im lokalen Browser-Cache gespeichert, wenn der Service Worker installiert und bevor er verwendet wird.
+      * **Vorab-Caching von Dateien (technische Vorschau)**: In AEM gehostete Dateien werden beim Installieren des Service-Worker und vor dessen Verwendung im lokalen Browser-Cache gespeichert
       * **Client-seitige Bibliotheken** – Client-seitige Bibliotheken zum Zwischenspeichern für Offline-Erlebnisse
       * **Pfadeinschlüsse** – Netzwerkanfragen für die definierten Pfade werden abgefangen, und zwischengespeicherte Inhalte werden entsprechend der konfigurierten Caching-Strategie und der Häufigkeit der Inhaltsaktualisierung zurückgegeben
       * **Pfadausschlüsse** – Diese Dateien werden unabhängig von den Einstellungen zum Vorab-Caching von Dateien und zu Pfadeinschlüssen niemals zwischengespeichert
@@ -276,7 +276,7 @@ durch Klicken oder Tippen auf **Eigenschaften**, um die Seiteneigenschaften fest
 1. Wählen Sie die Option **Eigenschaften** für die gewünschte Seite aus, indem Sie wahlweise Folgendes verwenden:
    * [Schnellaktionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
-   * Die Seiteneigenschaften werden auf den entsprechenden Registerkarten angezeigt.
+   * Die Seiteneigenschaften werden in den entsprechenden Registerkarten angezeigt.
 1. Sie können die Eigenschaften nach Bedarf anzeigen oder bearbeiten.
 1. Speichern Sie dann Ihre Aktualisierungen mit **Speichern** und klicken Sie danach auf **Schließen**, um zur Konsole zurückzukehren.
 
@@ -300,7 +300,7 @@ Sie können mehrere Seiten für die Massenbearbeitung mit verschiedenen Methoden
 * Beim Durchsuchen der **Sites**-Konsole
 * Nach Verwendung von **Suche**, um einen Seitensatz zu finden
 
-Nach Auswahl der Seiten und anschließendes Klicken oder Tippen auf **Eigenschaften-Option**, werden die Masseneigenschaften angezeigt:
+Nach Auswahl der Seiten und anschließendem Klicken oder Tippen auf die Option **Eigenschaften** werden die Masseneigenschaften angezeigt:
 
 ![Massenbearbeitung von Seiteneigenschaften](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
@@ -308,7 +308,7 @@ Sie können nur Massenbearbeitungen von Seiten durchführen, die:
 
 * den gleichen Ressourcentyp haben
 * nicht Teil einer Live Copy sind
-   * Wenn sich eine der Seiten in einer Live Copy befindet, wird beim Öffnen der Eigenschaften eine Meldung angezeigt.
+   * Ist eine der Seiten Teil einer Live Copy, wird beim Öffnen der Eigenschaften eine Meldung angezeigt.
 
 Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 
@@ -329,6 +329,6 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 * **Bearbeiten**
 
    * Sie können die Werte in den verfügbaren Feldern aktualisieren.
-      * Die neuen Werte werden bei Auswahl auf alle ausgewählten Seiten angewendet **Fertig**.
-      * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
-   * Gemeinsame Felder, die unterschiedliche Werte auf den verschiedenen Seiten aufweisen, werden durch einen speziellen Wert wie den Text gekennzeichnet `<Mixed Entries>`.
+      * Die neuen Werte werden auf alle gewählten Seiten angewendet, wenn Sie **Fertig** wählen.
+      * Wenn es sich um ein mehrwertiges Feld handelt (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
+   * Felder, die häufig vorkommen, aber auf den verschiedenen Seiten unterschiedliche Werte haben, werden durch einen speziellen Wert angegeben, beispielsweise `<Mixed Entries>`.

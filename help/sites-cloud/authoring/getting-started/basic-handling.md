@@ -5,7 +5,7 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2975'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
@@ -16,8 +16,8 @@ Dieses Dokument soll einen Überblick über die grundlegende Handhabung der AEM-
 
 >[!NOTE]
 >
->* Einige Funktionen stehen nicht in allen Konsolen zur Verfügung und in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Spezifische Informationen zu den einzelnen Konsolen und den zugehörigen Funktionen werden auf anderen Seiten ausführlicher behandelt.
->* In AEM stehen verschiedene Tastaturbefehle zur Verfügung, insbesondere bei [der Verwendung von Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) und [der Bearbeitung von Seiten](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+>* Einige Funktionen stehen nicht in allen Konsolen zur Verfügung und in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Detaillierte Informationen zu den einzelnen Konsolen und ihren jeweiligen Funktionen finden Sie auf den anderen Seiten.
+>* In AEM stehen verschiedene Tastaturbefehle zur Verfügung, insbesondere beim [Verwenden von Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) und beim [Bearbeiten von Seiten](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md). 
 
 {{edge-delivery-authoring}}
 
@@ -45,7 +45,7 @@ Die Übersicht wird bei Ihrem nächsten Zugriff auf eine Konsole wieder gestarte
 
 ## Globale Navigation {#global-navigation}
 
-Sie können mithilfe des globalen Navigationsfensters zwischen den Konsolen navigieren. Dies wird als Vollbild-Dropdown-Liste ausgelöst, wenn Sie auf den Link Adobe Experience Manager oben links im Bildschirm klicken oder tippen.
+Sie können mithilfe des globalen Navigationsfensters zwischen den Konsolen navigieren. Dieses Navigationsfenster wird als Vollbild-Dropdown angezeigt, wenn Sie auf den Adobe Experience Manager-Link in der linken oberen Bildschirmecke klicken oder tippen.
 
 Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließen** klicken oder tippen. Sie kehren dann zu Ihrer vorherigen Position zurück.
 
@@ -74,7 +74,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
 | Sites | Mit der Konsole „Sites“ können Sie [Websites erstellen, anzeigen und verwalten](/help/sites-cloud/authoring/fundamentals/organizing-pages.md), die auf Ihrer AEM-Instanz ausgeführt werden. Mithilfe dieser Konsole können Sie Seiten erstellen, bearbeiten, kopieren, verschieben, löschen und veröffentlichen sowie Workflows starten. |
 | Experience Fragments | Bei einem [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) handelt es sich um ein einzelnes Erlebnis, das kanalübergreifend wiederverwendet werden kann und Varianten aufweist. So erübrigt sich das wiederholte Kopieren und Einfügen von Erlebnissen oder Teilen von Erlebnissen. |
 | Assets | In der Assets-Konsole können Sie [digitale Assets, wie Bilder, Videos, Dokumente und Audiodateien](/help/assets/overview.md), importieren und verwalten. Diese Assets können dann von jeder Site verwendet werden, die auf derselben AEM-Instanz ausgeführt wird. Über die Assets-Konsole können Sie auch [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) erstellen und verwalten. |
-| Personalisierung    | Diese Konsole bietet ein Framework aus Tools für die [Bearbeitung von Inhalt für eine bestimmte Zielgruppe und die Darstellung personalisierter Erlebnisse](/help/sites-cloud/authoring/personalization/overview.md). |
+| Personalisierung    | Diese Konsole bietet ein Framework aus Tools für die [Bearbeitung von Inhalten für eine bestimmte Zielgruppe und das Bieten personalisierter Erlebnisse](/help/sites-cloud/authoring/personalization/overview.md). |
 | Inhaltsfragmente | [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Veröffentlichen von seitenunabhängigen Inhalten. Sie ermöglichen es Ihnen, strukturierte Inhalte vorzubereiten, die an verschiedenen Orten und über verschiedene Kanäle verwendet werden können, und eignen sich sowohl für die Erstellung von Seiten als auch für die Headless-Bereitstellung. |
 
 ## Tools-Bereich {#tools-panel}
@@ -85,7 +85,7 @@ Im Tools-Bereich befindet sich ein seitliches Bedienfeld mit einem Bereich von K
 
 ## Die Kopfzeile {#the-header}
 
-Die Kopfzeile befindet sich immer oben im Bildschirm. Die meisten Optionen in der Kopfzeile bleiben unabhängig von Ihrer Position im System gleich, manche sind aber kontextspezifisch.
+Die Kopfzeile befindet sich immer am oberen Rand des Bildschirms. Die meisten Optionen in der Kopfzeile bleiben unabhängig von Ihrer Position im System gleich, manche sind aber kontextspezifisch.
 
 ![Navigationskopfzeile](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
@@ -113,7 +113,7 @@ Die Kopfzeile befindet sich immer oben im Bildschirm. Die meisten Optionen in de
 
   ![Schaltfläche „Benachrichtigungen“](/help/sites-cloud/authoring/assets/notifications.png)
 
-  Dieses Symbol ist mit der Anzahl der aktuell zugewiesenen unvollständigen Benachrichtigungen gekennzeichnet.
+  Dieses Symbol wird mit der Anzahl der aktuell zugewiesenen unvollständigen Benachrichtigungen gekennzeichnet.
 
 * [Benutzereigenschaften](/help/sites-cloud/authoring/getting-started/account-environment.md)
 
@@ -193,7 +193,7 @@ Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
 
 * **Tools-Konsole**
 
-  Über die **Tools**-Konsole können Sie auch auf die externen **Ressourcen** zugreifen:
+  Über die **Tools**-Konsole können Sie auch auf die externen **Ressourcen** zugreifen.
 
    * **Dokumentation** –
 Dokumentation für Web Experience Management anzeigen
@@ -220,7 +220,7 @@ In der Symbolleiste werden immer nur jene Aktionen angezeigt, die Sie bei den je
 
 Wie Sie [eine Ressource auswählen](#viewing-and-selecting-resources), hängt von der Ansicht ab.
 
-Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbolleiste schnell länger als der verfügbare Platz werden. In diesem Fall werden weitere Optionen angezeigt. Klicken oder tippen Sie auf die Auslassungspunkte (die drei Punkte oder **...**) öffnet eine Dropdown-Auswahl, die alle verbleibenden Aktionen enthält. Beispiel: Sie haben eine Seite in der **Sites-Konsole** ausgewählt:
+Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbolleiste schnell länger als der verfügbare Platz werden. In diesem Fall werden weitere Optionen angezeigt. Durch Klicken oder Tippen auf die Auslassungspunkte (drei Punkte bzw. **…**) wird eine Dropdown-Auswahl geöffnet, die alle verbleibenden Aktionen enthält. Beispiel: Sie haben eine Seite in der **Sites-Konsole** ausgewählt:
 
 ![Zusätzliche Optionen](/help/sites-cloud/authoring/assets/additional-options.png)
 
@@ -230,9 +230,9 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 
 ## Schnellaktionen {#quick-actions}
 
-In [Kartenansicht](#card-view) bestimmte Aktionen sind als Schnellaktion-Symbole verfügbar und befinden sich in der Symbolleiste. Schnellaktionssymbole sind jeweils nur für ein Element verfügbar, sodass Sie keine Vorauswahl treffen müssen.
+In der [Kartenansicht](#card-view) sind bestimmte Aktionen sowohl als Schnellaktionssymbole als auch auf der Symbolleiste vorhanden. Schnellaktionssymbole sind jeweils nur für ein Element verfügbar, sodass Sie keine Vorauswahl treffen müssen.
 
-Die Schnellaktionen sind sichtbar, wenn Sie den Mauszeiger über eine Ressourcenkarte (Desktop-Gerät) bewegen. Die verfügbaren Schnellaktionen können von der Konsole und dem Kontext abhängen. Hier finden Sie beispielsweise die Schnellaktionen für eine Seite in der **Sites**-Konsole:
+Die Schnellaktionen sind sichtbar, wenn Sie den Mauszeiger (auf Desktop-Geräten) über eine Ressourcenkarte bewegen. Die verfügbaren Schnellaktionen können von der Konsole und dem Kontext abhängen. Hier finden Sie beispielsweise die Schnellaktionen für eine Seite in der **Sites**-Konsole:
 
 ![Zusätzliche Optionen](/help/sites-cloud/authoring/assets/quick-actions.png)
 
@@ -264,7 +264,7 @@ Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht un
 
 Sie können alle Elemente in einer Ansicht auswählen, indem Sie in der oberen rechten Ecke der Konsole auf die Option **Alles auswählen** klicken.
 
-* dass in der **Kartenansicht** alle Karten ausgewählt sind.
+* In der **Kartenansicht** sind alle Karten ausgewählt.
 * In der **Listenansicht** sind alle Elemente in der Liste ausgewählt.
 * In der **Spaltenansicht** sind alle Elemente in der Spalte ganz links ausgewählt.
 
@@ -285,7 +285,7 @@ In allen Ansichten kann die Auswahl aller Elemente aufgehoben werden, indem Sie 
 
 #### Auswahlbeispiel {#selecting-example}
 
-1. Beispiel in der Kartenansicht:
+1. Beispiel für die Kartenansicht:
 
    ![Auswahl von Kartenansicht](/help/sites-cloud/authoring/assets/card-view-select.png)
 
@@ -299,17 +299,17 @@ In allen Ansichten kann die Auswahl aller Elemente aufgehoben werden, indem Sie 
 
 Die Spaltenansicht ermöglicht eine visuelle Navigation eines Inhaltsbaums durch eine Reihe kaskadierender Spalten. Mit dieser Ansicht können Sie die Baumstruktur Ihrer Website visualisieren und durchlaufen.
 
-Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeordneten Ressourcen in einer Spalte rechts angezeigt. Wenn Sie eine Ressource in der rechten Spalte auswählen, werden die untergeordneten Ressourcen in einer anderen Spalte rechts angezeigt usw.
+Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeordneten Ressourcen in einer Spalte rechts angezeigt. Wenn Sie eine Ressource in der rechten Spalte auswählen, werden die ihr untergeordneten Ressourcen in einer anderen Spalte rechts angezeigt usw.
 
-* Sie können im Baum nach oben und unten navigieren, indem Sie auf den Ressourcennamen oder den Pfeil rechts neben dem Ressourcennamen tippen/klicken.
+* Sie können in der Baumstruktur nach oben und unten navigieren, indem Sie auf den Ressourcennamen oder den Pfeil rechts neben dem Ressourcennamen tippen/klicken.
 
-   * Der Ressourcenname und der Pfeil werden beim Tippen oder Klicken hervorgehoben.
-   * Die untergeordneten Elemente der angeklickten/getippten Ressource werden in der Spalte rechts neben der angeklickten/angetippten Ressource angezeigt.
-   * Wenn Sie auf einen Ressourcennamen tippen oder klicken, der keine untergeordneten Elemente enthält, werden dessen Details in der letzten Spalte angezeigt.
+   * Beim Tippen bzw. Klicken werden der Ressourcenname und der Pfeil hervorgehoben.
+   * Die untergeordneten Elemente der angeklickten/angetippten Ressource werden in der Spalte rechts neben der angeklickten/angetippten Ressource angezeigt.
+   * Wenn Sie auf einen Ressourcennamen tippen oder klicken, der keine untergeordneten Elemente besitzt, werden die Ressourcendetails in der letzten Spalte angezeigt.
 
-* Durch Tippen oder Klicken auf die Miniatur wird die Ressource ausgewählt.
+* Durch Tippen oder Klicken auf die Miniaturansicht wird die Ressource ausgewählt.
 
-   * Wenn diese Option aktiviert ist, wird ein Häkchen auf der Miniaturansicht eingefügt und der Ressourcenname wird ebenfalls hervorgehoben.
+   * Wenn diese Option ausgewählt ist, wird ein Häkchen auf der Miniaturansicht angezeigt und zudem wird der Ressourcenname hervorgehoben.
    * Die Details der ausgewählten Ressource werden in der letzten Spalte angezeigt.
    * Die Aktionssymbolleiste wird verfügbar.
 
@@ -333,9 +333,9 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
    * wichtige Daten (z. B. zuletzt bearbeitet, zuletzt veröffentlicht)
    * ob die Seite gesperrt, ausgeblendet oder Teil einer Live Copy ist
    * wann Sie im Zuge eines Workflows eine Aktion ausführen müssen (sofern zutreffend)
-      * Markierungen, die die erforderlichen Aktionen angeben, können mit Einträgen in Ihrem [Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md) in Verbindung gebracht werden.
+      * Markierungen, die die erforderlichen Aktionen angeben, können mit Einträgen in Ihrem [Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md) in Verbindung stehen.
 
-* [Schnellaktionen](#quick-actions) sind auch in dieser Ansicht verfügbar, z. B. Auswahl und allgemeine Aktionen wie Bearbeiten.
+* [Schnellaktionen](#quick-actions) sind ebenfalls in dieser Ansicht verfügbar, z. B. Auswahl und allgemeine Aktionen wie Bearbeiten.
 
   ![Schnellaktionen](/help/sites-cloud/authoring/assets/quick-actions.png)
 
@@ -363,13 +363,13 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 * Wählen Sie mit der Option **Ansichtseinstellungen** unter der Schaltfläche „Ansichten“ die Spalten aus, die angezeigt werden sollen. Die folgenden Spalten stehen zur Anzeige zur Verfügung:
 
    * **Name** – Seitenname, der in einer mehrsprachigen Authoring-Umgebung nützlich sein kann, da er Teil der URL der Seite ist und sich unabhängig von der Sprache nicht ändert
-   * **Geändert** – Datum der letzten Änderung und letzte Änderung durch die Benutzerin oder den Benutzer
+   * **Geändert** – Datum und Person der letzten Änderung
    * **Veröffentlicht** – Veröffentlichungsstatus
    * **Vorschau** – Vorschaustatus
    * **Vorlage** – Vorlage, auf der die Seite basiert
    * **Workflow** – Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darauf bewegen oder die Zeitleiste öffnen.
    * **Seiten-Analytik**
-   * **Unique visitors**
+   * **Unique Visitors**
    * **Zeit auf Seite**
 
      ![Spalten auswählen](/help/sites-cloud/authoring/assets/select-columns.png)
@@ -406,7 +406,7 @@ Wenn „Nur Inhalt“ ausgewählt ist, wird lediglich das Schienensymbol angezei
 
 Die Inhaltsstruktur kann verwendet werden, um schnell in der Site-Hierarchie im Seitenbereich zu navigieren und viele Informationen über die Seiten im aktuellen Ordner anzuzeigen.
 
-Mithilfe des Seitenbereichs der Inhaltsstruktur in Verbindung mit einer Listen- oder Kartenansicht können Benutzer die hierarchische Struktur des Projekts einfach erkennen, mit dem Seitenbereich der Inhaltsstruktur einfach durch die Inhaltsstruktur navigieren und detaillierte Seiteninformationen in der Listenansicht anzeigen.
+Mithilfe des Seitenbereichs der Inhaltsstruktur in Verbindung mit einer Listen- oder Kartenansicht können Benutzerinnen und Benutzer die hierarchische Struktur des Projekts einfach erkennen, mit dem Seitenbereich der Inhaltsstruktur einfach durch die Inhaltsstruktur navigieren und detaillierte Seiteninformationen in der Listenansicht anzeigen.
 
 ![Inhaltsstruktur](/help/sites-cloud/authoring/assets/content-tree.png)
 
@@ -414,7 +414,7 @@ Mithilfe des Seitenbereichs der Inhaltsstruktur in Verbindung mit einer Listen- 
 >
 >Sobald ein Eintrag in der Hierarchieansicht ausgewählt ist, können Sie mithilfe der Pfeiltasten schnell in der Hierarchie navigieren.
 >
->Siehe [Tastaturbefehle](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) für weitere Informationen.
+>Weitere Informationen finden Sie unter [Tastaturbefehle](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 ### Zeitleiste {#timeline}
 
@@ -450,7 +450,7 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
 ### Verweise {#references}
 
-**Verweise** zeigen Verbindungen zur ausgewählten Ressource an. In der Konsole **Sites** wird zum Beispiel folgendes für [Verweise](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) für Seiten angezeigt:
+**Verweise** zeigen Verbindungen zur ausgewählten Ressource an. In der **Sites**-Konsole wird zum Beispiel folgendes für [Verweise](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) für Seiten angezeigt:
 
 * [Launches](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 * [Live Copies](/help/sites-cloud/administering/msm/overview.md#openingthelivecopyoverviewfromreferences)
@@ -468,11 +468,11 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
 ![Site-Leiste](../assets/site-rail.png)
 
-Siehe Dokument . [Verwenden der Site-Leiste zum Verwalten Ihres Site-Designs](/help/sites-cloud/administering/site-creation/site-rail.md) Weitere Informationen dazu, wie Sie die Leiste zum Verwalten der [Design Ihrer Site](/help/sites-cloud/administering/site-creation/site-themes.md).
+Im Dokument [Verwenden der Site-Leiste zur Verwaltung des Designs Ihrer Site](/help/sites-cloud/administering/site-creation/site-rail.md) finden Sie weitere Einzelheiten darüber, wie Sie die Leiste zur Verwaltung des [Designs Ihrer Site](/help/sites-cloud/administering/site-creation/site-themes.md) verwenden können.
 
 >[!TIP]
 >
->Eine vollständige Beschreibung des Prozesses zum Erstellen einer neuen Site aus einer Vorlage und zum Anpassen ihres Designs finden Sie im Abschnitt [Journey zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md).
+>Eine vollständige Beschreibung des Prozesses zum Erstellen einer neuen Site aus einer Vorlage und zum Anpassen ihres Designs finden Sie in der [Tour zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md).
 
 ### Filter {#filter}
 

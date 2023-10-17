@@ -7,13 +7,13 @@ exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: 151ef672e847f793b37d220920081ac9fce94edf
 workflow-type: tm+mt
 source-wordcount: '4308'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Erstellen und Synchronisieren von Live Copies {#creating-and-synchronizing-live-copies}
+# Erstellen und Synchronisieren von Live CopYs {#creating-and-synchronizing-live-copies}
 
-Sie können eine Live Copy aus einer Seite oder Blueprint-Konfiguration erstellen, um diesen Inhalt auf Ihrer Site wiederzuverwenden. Verwalten Sie die Vererbung und Synchronisation und legen Sie fest, wie Inhaltsänderungen weitergegeben werden.
+Sie können eine Live Copy über eine Seiten- oder Blueprint-Konfiguration erstellen, um diesen Inhalt auf Ihrer Website wiederzuverwenden. Verwalten Sie die Vererbung und Synchronisation und legen Sie fest, wie Inhaltsänderungen weitergegeben werden.
 
 ## Verwalten von Blueprint-Konfigurationen {#managing-blueprint-configurations}
 
@@ -77,7 +77,7 @@ Sie können eine vorhandene Blueprint-Konfiguration bearbeiten oder löschen:
 
    ![Blueprint-Konfigurationen](../assets/blueprint-configurations.png)
 
-1. Wählen Sie die erforderliche Blueprint-Konfiguration aus. Die entsprechenden Aktionen werden in der Symbolleiste verfügbar:
+1. Wenn Sie die erforderliche Blueprint-Konfiguration auswählen, werden die entsprechenden Aktionen in der Symbolleiste verfügbar:
 
    * **Eigenschaften**; Sie können dies verwenden, um die Eigenschaften der Konfiguration anzuzeigen und zu bearbeiten.
    * **Löschen**
@@ -101,7 +101,7 @@ Sie können Live Copies für beliebige Seite erstellen.
 
 Der einzige Unterschied besteht darin, dass die Verfügbarkeit des Befehls **Rollout** auf den Quell-/Blueprint-Seiten davon abhängig ist, ob die Quelle von einer Blueprint-Konfiguration referenziert wird:
 
-* Wenn Sie die Live Copy von einer Quellseite erstellen, die **is** in einer Blueprint-Konfiguration referenziert wird, ist der Rollout-Befehl auf den Quell-/Blueprint-Seiten verfügbar.
+* Wenn Sie die Live Copy von einer Quellseite erstellen, die von einer Blueprint-Konfiguration **referenziert wird**, dann ist der Befehl „Rollout“ auf den Quell-/Blueprint-Seiten verfügbar.
 * Wenn Sie die Live Copy ausgehend von einer Quellseite erstellen, die **nicht** von einer Blueprint-Konfiguration referenziert wird, dann ist der Befehl „Rollout“ auf der oder den Quell-/Blueprint-Seite(n) nicht verfügbar.
 
 So erstellen Sie eine Live Copy:
@@ -135,7 +135,7 @@ So erstellen Sie eine Live Copy:
    * Bei Deaktivierung wird eine Live Copy mit allen untergeordneten Elementen der ausgewählten Seite erstellt (tiefe Live Copy).
 
 1. (Optional) Um eine oder mehrere Rollout-Konfigurationen für die Live Copy zu spezifizieren, wählen Sie sie in der Dropdown-Liste **Rollout-Konfigurationen** aus. Ausgewählte Konfigurationen werden unter der Dropdown-Auswahl angezeigt.
-1. Klicken oder tippen Sie auf **Erstellen**. Eine Bestätigungsnachricht wird angezeigt. Hier können Sie entweder **Öffnen** oder **Fertig**.
+1. Klicken oder tippen Sie auf **Erstellen**. Eine Bestätigungsmeldung wird angezeigt. Hier können Sie entweder **Öffnen** oder **Fertig** auswählen.
 
    >[!NOTE]
    >
@@ -164,7 +164,7 @@ Geben Sie beim Erstellen der Site Werte für die folgenden Eigenschaften an:
 
 So erstellen Sie die Live Copy einer Site über eine Blueprint-Konfiguration:
 
-1. Im **Sites** Konsole, wählen Sie **Erstellen**, dann **Site** aus der Dropdown-Auswahl aus.
+1. Wählen Sie in der **Sites**-Konsole die Option **Erstellen** und dann aus der Dropdown-Auswahl die Option **Site** aus.
 1. Wählen Sie die als Quelle der Live Copy zu verwendende Blueprint-Konfiguration aus und fahren Sie mit **Weiter** fort:
 
    ![Erstellen einer Site aus einer Blueprint](../assets/create-site-from-blueprint.png)
@@ -256,7 +256,7 @@ Rollouts werden als asynchrone Vorgänge verarbeitet und können auf der Seite [
 
    ![Rollout-Blueprint aus der Verweisleiste](../assets/rollout-blueprint-from-references.png)
 
-1. Sie werden aufgefordert, Details zum Rollout zu bestätigen:
+1. Sie werden zum Bestätigen der Rollout-Details aufgefordert:
 
    * **Rollout-Umfang**:
 
@@ -309,7 +309,7 @@ Synchronisieren Sie eine Live Copy, um Änderungen von der Quelle per Pull auf 
 
    ![Schaltfläche „Synchronisieren“](../assets/synchronize.png)
 
-   Die Bestätigung wird angefordert, verwenden Sie **Synchronisieren** um fortzufahren.
+   Sie werden zur Bestätigung aufgefordert. Verwenden Sie **Sync**, um fortzufahren.
 
 #### Synchronisieren von Live Copies über die Live Copy-Übersicht {#synchronize-a-live-copy-from-the-live-copy-overview}
 
@@ -335,7 +335,7 @@ Zum Ändern von Live Copy-Inhalt haben Sie folgende Möglichkeiten:
 >
 >Wenn Sie eine neue Seite manuell in der Live Copy erstellen, liegt diese für die Live Copy lokal vor. Sie verfügt also über keine entsprechende Quellseite, mit der sie verbunden ist.
 >
->Als Best Practice für die Erstellung einer lokalen Seite, die Teil der Beziehung ist, wird empfohlen, die lokale Seite in der Quelle zu erstellen und einen tiefen Rollout durchzuführen. Hierdurch wird die Seite lokal als Live Copy erstellt.
+>Eine Best Practice zur Erstellung einer lokalen Seite, die Teil der Beziehung ist, besteht darin, die lokale Seite in der Quelle zu erstellen und einen tiefen Rollout durchzuführen. Hierdurch wird die Seite lokal als Live Copy erstellt.
 
 >[!NOTE]
 >
@@ -423,13 +423,13 @@ Wenn diese Option ausgewählt ist, wird das Dialogfeld angezeigt. Sie können gg
 
 Die [Fortsetzungsaktion ist auch über die Live Copy-Übersicht verfügbar](live-copy-overview.md#using-the-live-copy-overview), wenn eine Live Copy-Seite ausgewählt wird.
 
-1. Öffnen Sie die [Live Copy-Übersicht](live-copy-overview.md#using-the-live-copy-overview) und wählen Sie eine ausgesetzte Live Copy-Seite aus. Die Seite wird als **VERERBUNG ABGEBROCHEN**.
+1. Öffnen Sie die [Live Copy-Übersicht](live-copy-overview.md#using-the-live-copy-overview) und wählen Sie eine Live Copy-Seite aus. Die Seite ist mit **VERERBUNG ABGEBROCHEN** gekennzeichnet.
 1. Wählen Sie in der Symbolleiste die Option **Fortsetzen** aus.
 1. Geben Sie an, ob die Seite nach Wiederherstellung der Vererbung synchronisiert werden soll. Bestätigen Sie dann die Aktion **Fortsetzen** im Dialogfeld **Live Copy fortsetzen**.
 
 ### Ändern der Vererbungstiefe (flach/tief) {#changing-inheritance-depth-shallow-deep}
 
-Bei einer vorhandenen Live Copy können Sie die Tiefe einer Seite ändern, d. h., ob untergeordnete Seiten einbezogen werden.
+Sie können bei einer vorhandenen Live Copy die Tiefe für eine Seite ändern, d. h. ob untergeordnete Seiten eingeschlossen werden sollen.
 
 * Wechseln zu einer flachen Live Copy:
 
@@ -498,7 +498,7 @@ Um die Vererbung für eine Komponente zu aktivieren, klicken oder tippen Sie in 
 Wenn eine Live Copy Komponenten enthält, die zu einem Absatzsystem gehören, werden bei der Vererbung dieses Absatzsystems die folgenden Regeln befolgt:
 
 * Die Komponentenanordnung in einem vererbten Absatzsystem kann selbst bei bestehender Vererbung geändert werden.
-* Beim Rollout wird die Reihenfolge der Komponenten aus dem Blueprint wiederhergestellt. Wenn der Live Copy vor dem Rollout neue Komponenten hinzugefügt wurden, werden diese zusammen mit den Komponenten, über denen sie hinzugefügt wurden, neu angeordnet.
+* Beim Rollout wird die Komponentenanordnung anhand des Blueprints wiederhergestellt. Wenn der Live Copy vor dem Rollout neue Komponenten hinzugefügt wurden, werden diese gemeinsam mit den Komponenten, über denen sie eingefügt wurden, neu angeordnet.
 * Wird die Vererbung des Absatzsystems abgebrochen, wird die Komponentenanordnung beim Rollout nicht wiederhergestellt und bleibt gegenüber der Live Copy unverändert.
 
 >[!NOTE]
@@ -641,7 +641,7 @@ So trennen Sie eine Live Copy:
 
    ![Schaltfläche „Trennen“](../assets/detach-button.png)
 
-1. Ein Bestätigungsdialogfeld wird angezeigt, wählen Sie **Trennen** , um die Aktion abzuschließen.
+1. Wählen Sie im daraufhin angezeigten Bestätigungsdialogfeld die Option **Trennen** aus, um die Aktion abzuschließen.
 
 ### Trennen von Live Copy-Seiten über die Live Copy-Übersicht {#detach-a-live-copy-page-from-the-live-copy-overview}
 

@@ -5,7 +5,7 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Erfahren Sie, was Sandbox-Programme sind und wie sie sich von Produktionsprogram
 
 Sandboxes werden normalerweise für Schulungen, Ausführung von Demos, Aktivierungen oder Proof of Concepts (POCs) erstellt. Sie sind nicht dazu gedacht, Live-Traffic zu übertragen.
 
-Ein Sandbox-Programm ist einer von zwei Programmtypen, die in AEM as a Cloud Service verfügbar sind; der andere ist ein [Produktionsprogramm.](introduction-production-programs.md) Siehe [Grundlegendes zu Programmen und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) , um mehr über Programmtypen zu erfahren.
+Ein Sandbox-Programm ist einer von zwei Programmtypen, die in AEM as a Cloud Service verfügbar sind; der andere ist ein [Produktionsprogramm.](introduction-production-programs.md) Weitere Informationen zu den Programmtypen finden Sie in den [Grundlagen zu Programmen und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ## Automatische Erstellung {#auto-creation}
 
@@ -49,7 +49,7 @@ Benutzerdefinierte Domains und IP-Zulassungslisten sind in Sandbox-Programmen ni
 
 ### Keine erweiterten Netzwerkfunktionen {#advanced-networking}
 
-[Erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-networking.md) (z. B. Self-Service-Bereitstellung von VPN, nicht standardmäßigen Ports, dedizierten Ausgangs-IP-Adressen usw.) sind in Sandbox-Programmen nicht verfügbar.
+[Erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-networking.md) (z. B. Self-Service-Bereitstellung von VPN, nicht standardmäßigen Ports und dedizierten Ausgangs-IP-Adressen) sind in Sandbox-Programmen nicht verfügbar.
 
 ### Manuelle AEM-Updates {#updates}
 
@@ -58,18 +58,18 @@ AEM-Updates werden nicht automatisch an Sandbox-Programme gesendet, können aber
 * Ein manuelles Update ist nur möglich, wenn die Zielumgebung über eine ordnungsgemäß konfigurierte Pipeline verfügt.
 * Bei einem manuellen Update der Produktions- oder Staging-Umgebung wird jeweils automatisch auch die andere Umgebung aktualisiert. Der Satz aus Produktions- und Staging-Umgebung muss sich in derselben AEM-Version befinden.
 
-Siehe [AEM](/help/implementing/deploying/aem-version-updates.md) für weitere Details.
+Weitere Informationen finden Sie unter [AEM-Versionsaktualisierungen](/help/implementing/deploying/aem-version-updates.md).
 
-Siehe [Umgebung aktualisieren](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) , um zu erfahren, wie Sie eine Umgebung aktualisieren.
+Informationen zum Aktualisieren einer Umgebung finden Sie unter [Aktualisieren von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).
 
 ### Ruhezustand und Löschung {#hibernation}
 
-Umgebungen in einem Sandbox-Programm werden nach acht Stunden Inaktivität automatisch in den Ruhezustand versetzt. Sandbox-Umgebungen werden nach sechsmonatigem Ruhezustand gelöscht.
+Umgebungen in einem Sandbox-Programm werden nach acht Stunden Inaktivität automatisch in den Ruhezustand versetzt. Sandbox-Umgebungen werden nach sechsmonatigem kontinuierlichem Ruhezustand gelöscht.
 
-Siehe [Ruhezustand und Deaktivieren des Ruhezustands von Sandbox-Umgebungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) Weitere Informationen zum Deaktivieren des Ruhezustands von Umgebungen und zum automatischen Löschen von Sandboxes.
+Weitere Informationen zum Deaktivieren des Ruhezustands von Umgebungen und zum automatischen Löschen von Sandboxes finden Sie unter [Aktivieren und Deaktivieren des Ruhezustands von Sandbox-Umgebungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md).
 
 ### Kein technischer Support {#no-support}
 
-Da Sandbox-Programme normalerweise für Schulungen, laufende Demos, Aktivierungen oder Machbarkeitsstudien (POCs) erstellt werden, steht kein technischer Support für Probleme mit Sandbox-Programmen zur Verfügung.
+Da Sandbox-Programme normalerweise für Schulungen, Demos, Aktivierungen oder Machbarkeitsnachweise (Proof of Concepts, POCs) erstellt werden, steht kein technischer Support für Probleme mit Sandbox-Programmen zur Verfügung.
 
-Wenn beim Erstellen und Verwalten von Sandbox-Programmen Probleme auftreten, ist dies weiterhin der technische Support.
+Wenn beim Erstellen und Verwalten von Sandbox-Programmen Probleme auftreten, ist dies weiterhin durch den technischen Support abgedeckt.

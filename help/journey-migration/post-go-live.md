@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 73%
+ht-degree: 76%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 73%
 >id="aemcloud_golive_troubleshooting"
 >title="Beheben von Fehlern in AEM"
 >abstract="Lesen Sie die Best Practices für die kontinuierliche Entwicklung und verwalten Sie Protokolle zusammen mit Tools wie der Entwicklerkonsole und CRXDE Lite, um Probleme mit AEM zu beheben."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=de" text="Anzeigen und Verwalten von Protokollen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=de" text="Zugreifen auf und Verwalten von Protokollen"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=de#aem-as-a-cloud-service-development-tools" text="Entwicklungs-Tools für AEM as a Cloud Service"
 
 Diese Journey ist der letzte Teil, daher lernen Sie, wie Sie nach Abschluss der Migration auf Probleme überwachen und die Leistung verbessern können. In der Phase nach der Migration sollten Sie die Bereinigung temporärer Dateien sicherstellen, die Best Practices für die kontinuierliche Entwicklung überprüfen und die Protokolle verwalten.
@@ -36,7 +36,7 @@ In diesem Dokument werden die Tools beschrieben, die zur Fehlerbehebung in AEM a
 
 Die Fehlerbehebung für Entwicklerumgebungen von AEM as a Cloud Service ist in der Entwicklerkonsole für Entwicklungs-, Staging- und Produktionsumgebung verfügbar.
 
-Siehe [Implementieren für AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) , um mehr über Entwicklungswerkzeuge zu erfahren.
+Weitere Informationen zu Entwicklungs-Tools finden Sie unter [Implementierung für AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools).
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -49,7 +49,7 @@ Siehe [Entwickeln mit CRXDE Lite](/help/implementing/developing/tools/crxde.md) 
 
 ## Verwalten von Protokollen {#managing-logs}
 
-Benutzer können auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
+Benutzerinnen und Benutzer können auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
 
 Siehe [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md) , um zu erfahren, wie Sie über die Benutzeroberfläche oder die API über Cloud Manager auf Protokolle zugreifen und diese verwalten können.
 

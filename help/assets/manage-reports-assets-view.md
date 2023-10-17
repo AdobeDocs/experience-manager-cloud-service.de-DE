@@ -1,11 +1,11 @@
 ---
-title: Berichte in der Asset-Ansicht verwalten
-description: Greifen Sie auf die Daten im Abschnitt "Berichte"der Asset-Ansicht zu, um die Produkt- und Funktionsnutzung zu bewerten und Einblicke in wichtige Erfolgsmetriken zu erhalten.
+title: Verwalten von Berichten in Assets-Ansicht
+description: Greifen Sie auf die Daten im Abschnitt „Berichte“ der Assets-Ansicht zu, um die Produkt- und Funktionsnutzung zu bewerten und Erkenntnisse zu wichtigen Erfolgsmetriken zu erhalten.
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
 source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
 workflow-type: tm+mt
 source-wordcount: '814'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -14,27 +14,27 @@ ht-degree: 75%
 >[!CONTEXTUALHELP]
 >id="assets_reports"
 >title="Berichte"
->abstract="Das Asset-Reporting bietet Admins Einblicke in die Aktivität der Adobe Experience Manager Assets-Umgebungsansicht. Diese Daten liefern nützliche Informationen darüber, wie Benutzende mit Inhalten und dem Produkt interagieren. Alle Benutzenden, die dem Administrierenden-Produktprofil zugeordnet sind, können auf das Insights-Dashboard zugreifen oder benutzerdefinierte Berichte erstellen."
+>abstract="Das Asset-Reporting bietet Admins Einblicke in die Aktivitäten in der Ansichtsumgebung von Adobe Experience Manager Assets. Diese Daten liefern nützliche Informationen darüber, wie Benutzende mit Inhalten und dem Produkt interagieren. Alle Benutzenden, die dem Administrierenden-Produktprofil zugeordnet sind, können auf das Dashboard „Erkenntnisse“ zugreifen oder benutzerdefinierte Berichte erstellen."
 
-Das Asset-Reporting bietet Admins Einblicke in die Aktivität der Adobe Experience Manager Assets-Umgebungsansicht. Diese Daten liefern nützliche Informationen darüber, wie Benutzende mit Inhalten und dem Produkt interagieren.
+Das Asset-Reporting bietet Admins Einblicke in die Aktivitäten in der Ansichtsumgebung von Adobe Experience Manager Assets. Diese Daten liefern nützliche Informationen darüber, wie Benutzende mit Inhalten und dem Produkt interagieren.
 
 ## Zugreifen auf Berichte {#access-reports}
 
-Alle Benutzer, die dem Produktprofil Assets-Ansichtsadministratoren zugewiesen sind, können auf das Insights-Dashboard zugreifen oder benutzerdefinierte Berichte in der Asset-Ansicht erstellen.
+Alle Benutzenden, die dem Produktprofil Assets-Ansicht-Admins zugeordnet sind, können in der Assets-Ansicht auf das Insights-Dashboard zugreifen oder benutzerdefinierte Berichte erstellen.
 
 ## Anzeigen von Insights {#view-live-statistics}
 
-Mit der Asset-Ansicht können Sie Echtzeitdaten für Ihre Assets-Ansichtsumgebung mit dem Insights-Dashboard anzeigen. Sie können Echtzeit-Ereignismetriken während der letzten 30 Tage oder für die letzten 12 Monate anzeigen.
+In der Assets-Ansicht können Sie mit dem Insights-Dashboard Echtzeitdaten für Ihre Assets Essentials-Umgebung anzeigen. Sie können Echtzeit-Ereignismetriken während der letzten 30 Tage oder für die letzten 12 Monate anzeigen.
 
 ![Symbolleistenoptionen bei der Auswahl eines Assets](assets/assets-essentials-live-statistics.png)
 
-Klicken Sie auf **[!UICONTROL Insights]** im linken Navigationsbereich, um die folgenden automatisch generierten Diagramme anzuzeigen:
+Klicken Sie auf **[!UICONTROL Erkenntnisse]** im linken Navigationsbereich, um die folgenden automatisch generierten Diagramme anzuzeigen:
 
-* **Downloads**: Die Anzahl der Assets, die in den letzten 30 Tagen oder 12 Monaten aus der Assets-Ansichtsumgebung heruntergeladen wurden, wird mithilfe eines Liniendiagramms dargestellt.
+* **Downloads**: Die Anzahl der Assets, die in den letzten 30 Tagen oder 12 Monaten aus der Assets-Ansichtsumgebung heruntergeladen wurden, dargestellt als Liniendiagramm.
 
-* **Uploads**: Die Anzahl der Assets, die in den letzten 30 Tagen oder 12 Monaten in die Asset-Ansichtsumgebung hochgeladen wurden, wird mithilfe eines Liniendiagramms dargestellt.
+* **Uploads**: Die Anzahl der Assets, die in den letzten 30 Tagen oder 12 Monaten in die Assets-Ansichtsumgebung hochgeladen wurden, dargestellt als Liniendiagramm.
 
-* **Top-Suchvorgänge**: Zeigen Sie die am häufigsten gesuchten Begriffe zusammen mit der Anzahl der Suchvorgänge dieser Begriffe in Ihrer Assets-Ansichtsumgebung in den letzten 30 Tagen oder 12 Monaten an, die in einem tabellarischen Format dargestellt werden.
+* **Top-Suchvorgänge**: Zeigt die in den letzten 30 Tagen oder 12 Monaten am häufigsten gesuchten Begriffe zusammen mit der Anzahl der Suchvorgänge dieser Begriffe in Ihrer Assets-Ansichtsumgebung an, dargestellt in tabellarischem Format.
 
 <!--
 
@@ -58,7 +58,7 @@ So erstellen Sie einen Herunterladen-Bericht:
 
    >[!NOTE]
    >
-   > In der Asset-Ansicht werden alle lokalen Zeitzonen in &quot;Coordinated Universal Time (UTC)&quot;konvertiert.
+   > Die Assets-Ansicht konvertiert alle lokalen Zeitzonen in die koordinierte Weltzeit (UTC).
 
 1. Wählen Sie auf der Registerkarte [!UICONTROL Spalten] die Spaltennamen aus, die Sie im Bericht anzeigen möchten.
 
@@ -80,7 +80,7 @@ In der folgenden Tabelle wird die Verwendung aller Spalten erläutert, die Sie d
      </tr>
      <tr>
       <td>Pfad </td>
-      <td>Der Ordnerpfad, unter dem das Asset in der Asset-Ansicht verfügbar ist.</td>
+      <td>Der Ordnerpfad, in dem das Asset in der Assets-Ansicht verfügbar ist.</td>
      </tr>
      <tr>
       <td>MIME-Typ</td>
@@ -104,7 +104,7 @@ In der folgenden Tabelle wird die Verwendung aller Spalten erläutert, die Sie d
      </tr>
      <tr>
       <td>Erstellungsdatum</td>
-      <td>Das Datum, an dem das Asset in die Asset-Ansicht hochgeladen wurde.</td>
+      <td>Das Datum, an dem das Asset in die Assets-Ansicht hochgeladen wurde.</td>
      </tr>
      <tr>
       <td>Änderungsdatum</td>
@@ -155,7 +155,7 @@ In der folgenden Tabelle wird die Verwendung aller Spalten erläutert, die Sie d
      </tr>
      <tr>
       <td>Pfad </td>
-      <td>Der Ordnerpfad, unter dem das Asset in der Asset-Ansicht verfügbar ist.</td>
+      <td>Der Ordnerpfad, in dem das Asset in der Assets-Ansicht verfügbar ist.</td>
      </tr>
      <tr>
       <td>MIME-Typ</td>
@@ -171,7 +171,7 @@ In der folgenden Tabelle wird die Verwendung aller Spalten erläutert, die Sie d
      </tr>
      <tr>
       <td>Erstellungsdatum</td>
-      <td>Das Datum, an dem das Asset in die Asset-Ansicht hochgeladen wurde.</td>
+      <td>Das Datum, an dem das Asset in die Assets-Ansicht hochgeladen wurde.</td>
      </tr>
      <tr>
       <td>Änderungsdatum</td>

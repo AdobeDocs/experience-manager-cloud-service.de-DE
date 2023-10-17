@@ -5,7 +5,7 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '694'
-ht-degree: 87%
+ht-degree: 91%
 
 ---
 
@@ -57,7 +57,7 @@ Neben der Anzeige der Anmerkungen ermöglicht der Anmerkungsmodus das Erstellen,
 
 1. Klicken/tippen Sie auf das Symbol „Anmerkung hinzufügen“ (Plussymbol links in der Symbolleiste), um mit dem Hinzufügen von Anmerkungen zu beginnen.
 
-1. Klicken oder tippen Sie auf die gewünschte Komponente (Komponenten, die kommentiert werden können, werden mit einem blauen Rahmen markiert), um die Anmerkung hinzuzufügen und das Dialogfeld zu öffnen:
+1. Tippen oder klicken Sie auf die erforderliche Komponente (Komponenten, denen eine Anmerkung hinzugefügt werden kann, sind mit einem blauen Rand gekennzeichnet), um die Anmerkung hinzuzufügen und das Dialogfeld zu öffnen:
 
    ![Hinzufügen von Anmerkungen](/help/sites-cloud/authoring/assets/annotation-adding.png)
 

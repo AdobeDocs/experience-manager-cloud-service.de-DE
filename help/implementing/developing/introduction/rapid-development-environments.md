@@ -1,17 +1,17 @@
 ---
 title: Schnelle Entwicklungsumgebungen
-description: Erfahren Sie, wie Sie Rapid Development Environments für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung verwenden.
+description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen (Rapid Development Environments) für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung nutzen können.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
 source-wordcount: '3304'
-ht-degree: 58%
+ht-degree: 67%
 
 ---
 
 # Schnelle Entwicklungsumgebungen {#rapid-development-environments}
 
-Um Änderungen bereitzustellen, erfordern aktuelle Cloud-Entwicklungsumgebungen die Verwendung eines Prozesses, der umfassende Code-Sicherheits- und Qualitätsregeln anwendet, die als CI/CD-Pipeline bezeichnet werden. Für Situationen, in denen schnelle und iterative Änderungen erforderlich sind, hat Adobe schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs) eingeführt.
+Zur Bereitstellung von Änderungen erfordern aktuelle Cloud-Entwicklungsumgebungen die Verwendung eines Prozesses, der umfassende Code-Sicherheits- und -Qualitätsregeln anwendet, die als CI/CD-Pipeline bezeichnet werden. Für Situationen, in denen schnelle und iterative Änderungen erforderlich sind, hat Adobe schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs) eingeführt.
 
 RDEs ermöglichen es Entwicklern, Änderungen schnell bereitzustellen und zu überprüfen und so den Zeitaufwand für das Testen von Funktionen zu minimieren, die nachweislich in einer lokalen Entwicklungsumgebung funktionieren.
 
@@ -20,7 +20,7 @@ Sobald die Änderungen in einer RDE getestet wurden, können sie über die Cloud
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-Zusätzliche Videos zur Veranschaulichung [Einrichtung](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html?lang=de), [Verwendung](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=de)und die [Entwicklungslebenszyklus](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html?lang=de) mit RDE.
+Sie können sich weitere Videos ansehen, in denen die [Einrichtung](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html?lang=de), [Verwendung](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=de) und der [Entwicklungslebenszyklus](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html?lang=de) mit RDE gezeigt werden.
 
 ## Einführung {#introduction}
 
@@ -42,9 +42,9 @@ Führen Sie diese Schritte aus, damit Sie mit Cloud Manager einen RDE für Ihr P
 
 1. Klicken Sie auf das Programm, dem Sie einen RDE hinzufügen möchten, um dessen Details anzuzeigen.
 
-   * RDEs können zu beiden hinzugefügt werden [Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) und [Produktionsprogramme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
+   * RDEs können sowohl zu [Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) als auch zu [Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) hinzugefügt werden.
 
-1. Aus dem **Programmübersicht** Seite, klicken **Umgebung hinzufügen** auf **Umgebungen** -Karte, um eine Umgebung hinzuzufügen.
+1. Auf der Seite **Programmübersicht** klicken Sie auf der Karte **Umgebungen** auf **Umgebung hinzufügen**, um eine Umgebung hinzuzufügen.
 
    ![Karte „Umgebung“](/help/implementing/cloud-manager/assets/no-environments.png)
 
@@ -70,11 +70,11 @@ Der Bildschirm **Überblick** zeigt nun in der Karte **Umgebungen** Ihre neue Um
 
 Nach der Erstellung werden RDEs auf die neueste AEM Version eingestellt. Ein RDE-Reset, das auch mit Cloud Manager durchgeführt werden kann, führt zu einer Zykluseinstellung des RDE und legt ihn auf die neueste AEM Version fest.
 
-Weitere Informationen zur Verwendung von Cloud Manager zum Erstellen von Umgebungen, zum Verwalten, wer Zugriff darauf hat, und zum Zuweisen benutzerdefinierter Domänen finden Sie unter [die Cloud Manager-Dokumentation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+Weitere Informationen zur Verwendung von Cloud Manager zum Erstellen von Umgebungen, zum Verwalten von Zugriffsrechten und zum Zuweisen benutzerdefinierter Domains finden Sie in der [Dokumentation zu Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ## Installieren der RDE-Befehlszeilen-Tools {#installing-the-rde-command-line-tools}
 
-Nachdem Sie mit Cloud Manager einen RDE für Ihr Programm hinzugefügt haben, können Sie damit interagieren, indem Sie die Befehlszeilen-Tools einrichten, wie in den folgenden Schritten beschrieben:
+Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, können Sie damit interagieren, indem Sie die Befehlszeilen-Tools wie in den folgenden Schritten beschrieben einrichten:
 
 >[!IMPORTANT]
 >
@@ -104,7 +104,7 @@ Nachdem Sie mit Cloud Manager einen RDE für Ihr Programm hinzugefügt haben, k�
 
    `aio config:set cloudmanager_environmentid 123456`
 
-1. Nachdem Sie die Konfiguration des Plug-ins abgeschlossen haben, melden Sie sich durch
+1. Nachdem Sie die Konfiguration des Plug-ins abgeschlossen haben, melden Sie sich mit folgendem Befehl an:
 
    `aio login`
 
@@ -365,7 +365,7 @@ Weitere Informationen und Demonstrationen finden Sie im Video-Tutorial [Verwendu
 
 ## Zurücksetzen {#reset-rde}
 
-Durch Zurücksetzen der RDE werden der gesamte benutzerdefinierte Code, Konfigurationen und Inhalte aus der Autoren- und Veröffentlichungsinstanz entfernt. Diese Einstellung ist beispielsweise nützlich, wenn der RDE zum Testen einer bestimmten Funktion verwendet wurde und Sie sie auf einen Standardstatus zurücksetzen möchten, sodass Sie eine andere Funktion testen können.
+Durch Zurücksetzen der RDE werden der gesamte benutzerdefinierte Code, Konfigurationen und Inhalte aus der Autoren- und Veröffentlichungsinstanz entfernt. Diese Zurücksetzung kann beispielsweise nützlich sein, wenn die RDE zum Testen einer bestimmten Funktion verwendet wurde und Sie sie auf den Standardzustand zurücksetzen möchten, um eine andere Funktion zu testen.
 
 Beim Zurücksetzen wird der RDE auf die neueste AEM Version gesetzt.
 
@@ -393,11 +393,11 @@ Sie können Cloud Manager verwenden, um Ihre RDE zurückzusetzen, indem Sie die 
 
 1. Klicken Sie auf das Programm, für das Sie den RDE zurücksetzen möchten.
 
-1. Aus dem **Übersicht** klicken Sie auf die **Umgebungen** oben im Bildschirm.
+1. Klicken Sie auf der Seite **Überblick** auf die Registerkarte **Umgebungen** oben auf dem Bildschirm.
 
    ![Registerkarte „Umgebungen“](/help/implementing/cloud-manager/assets/environments-tab2.png)
 
-   * Alternativ können Sie auf die **Alle anzeigen** Schaltfläche auf der **Umgebungen** -Karte, um direkt zum **Umgebungen** Registerkarte.
+   * Alternativ können Sie auf die Schaltfläche **Alle anzeigen** auf der Karte **Umgebungen** klicken, um direkt zur Registerkarte **Umgebungen** zu gelangen.
 
      ![Option „Alle anzeigen“](/help/implementing/cloud-manager/assets/environment-showall.png)
 
@@ -417,7 +417,7 @@ Sie können Cloud Manager verwenden, um Ihre RDE zurückzusetzen, indem Sie die 
 
    ![Zurücksetzen der Banner-Benachrichtigung](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-Nach dem Start des RDE-Reset-Prozesses dauert es in der Regel einige Minuten, bis die Umgebung abgeschlossen ist und wieder den Standardzustand erhält. Der Status des Zurücksetzungsprozesses kann jederzeit in der Spalte **Status** der Registerkarte **Umgebungen** oder im Fenster **Umgebungen** eingesehen werden.
+Nach dem Start des RDE-Zurücksetzungsprozesses dauert es in der Regel einige Minuten, bis er abgeschlossen ist und die Umgebung in den Standardzustand zurückversetzt wurde. Der Status des Zurücksetzungsprozesses kann jederzeit in der Spalte **Status** der Registerkarte **Umgebungen** oder im Fenster **Umgebungen** eingesehen werden.
 
 ![RDE-Zurücksetzungsstatus](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
@@ -425,7 +425,7 @@ Sie können die RDE auch direkt auf der Seite **Übersicht** auf der Karte **Umg
 
 ![RDE über die Karte „Umgebungen“ zurücksetzen](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
-Weitere Informationen zur Verwendung von Cloud Manager zur Verwaltung Ihrer Umgebungen finden Sie unter [die Cloud Manager-Dokumentation](/help/implementing/cloud-manager/manage-environments.md).
+Weitere Informationen zur Verwendung von Cloud Manager zur Verwaltung Ihrer Umgebungen finden Sie in der [Dokumentation zu Cloud Manager](/help/implementing/cloud-manager/manage-environments.md).
 
 ## Ausführungsmodi {#runmodes}
 
@@ -463,7 +463,7 @@ Protokollebenen können durch Ändern von OSGi-Konfigurationen festgelegt werden
 
 ## Worin unterscheiden sich RDEs von Cloud-Entwicklungsumgebungen? {#how-are-rds-different-from-cloud-development-environments}
 
-Der RDE ähnelt zwar auf vielerlei Weise einer Cloud-Entwicklungsumgebung, es gibt jedoch einige geringfügige Unterschiede in der Architektur, die eine schnelle Synchronisierung von Code ermöglichen. Der Mechanismus für den Code-Transfer zu RDE ist anders - für RDEs synchronisiert ein Code aus einer lokalen Entwicklungsumgebung, während für Cloud-Entwicklungsumgebungen ein Code über Cloud Manager bereitgestellt wird.
+Die RDE ähnelt zwar in vielerlei Hinsicht einer Cloud-Entwicklungsumgebung, es gibt jedoch einige geringfügige Unterschiede in der Architektur, um eine schnelle Synchronisierung von Code zu ermöglichen. Der Mechanismus für den Code-Transfer zu RDE ist anders - für RDEs synchronisiert ein Code aus einer lokalen Entwicklungsumgebung, während für Cloud-Entwicklungsumgebungen ein Code über Cloud Manager bereitgestellt wird.
 
 Aus diesen Gründen wird empfohlen, den Code nach seiner Validierung in einer RDE mithilfe der Nicht-Produktions-Pipeline in einer Cloud-Entwicklungsumgebung bereitzustellen. Testen Sie schließlich den Code, bevor Sie ihn mit der Produktions-Pipeline bereitstellen.
 

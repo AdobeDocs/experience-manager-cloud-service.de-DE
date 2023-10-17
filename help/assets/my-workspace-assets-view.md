@@ -1,11 +1,11 @@
 ---
-title: Ansicht "My Workspace for Assets"
+title: Mein Arbeitsbereich für die Assets-Ansicht
 description: Mein Arbeitsbereich ist eine Seite, die anpassbare visuelle Module bietet, mit denen Sie bequem auf wichtige Bereiche der Assets-Benutzeroberfläche und Informationen zugreifen können, die für den Benutzenden am relevantesten sind.
 exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
 source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
 workflow-type: tm+mt
 source-wordcount: '740'
-ht-degree: 83%
+ht-degree: 90%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 83%
 
 Assets enthält jetzt einen anpassbaren Arbeitsbereich, der Widgets für den bequemen Zugriff auf wichtige Bereiche der Assets-Benutzeroberfläche und Informationen bereitstellt, die für Sie am relevantesten sind. Diese Seite dient als zentrale Anlaufstelle, um einen Überblick über Ihre Arbeitselemente zu erhalten und schnellen Zugriff auf wichtige Workflows zu ermöglichen. Ein bequemerer Zugriff auf diese Optionen erhöht Ihre Effizienz und inhaltliche Geschwindigkeit.
 
-Sie können auf Mein Arbeitsbereich zugreifen, indem Sie auf **[!UICONTROL Mein Arbeitsbereich]** in den Elementen klicken, die im linken Navigationsbereich verfügbar sind. Das Dashboard „Mein Arbeitsbereich“ umfasst eine Vielzahl von Widgets, über die Schnellzugriff, Erkenntnisse, Aufgaben und Inhalte verfügbar sind. Sie können je nach Ihren Voreinstellungen konfigurieren, wie diese Widgets in Ihrem Arbeitsbereich angezeigt werden.
+Sie können auf Mein Arbeitsbereich zugreifen, indem Sie auf **[!UICONTROL Mein Arbeitsbereich]** in den Elementen klicken, die im linken Navigationsbereich verfügbar sind. Das Dashboard „Mein Arbeitsbereich“ umfasst eine Vielzahl von Widgets, über die Schnellzugriff, Einblicke, Aufgaben und Inhalte verfügbar sind. Sie können je nach Ihren Voreinstellungen konfigurieren, wie diese Widgets in Ihrem Arbeitsbereich angezeigt werden.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Highlights upcoming features for Assets.
 
 **Schnellzugriff**
 
-Heften Sie Dateien, Ordner und Sammlungen an, um im Bedarfsfall schneller auf diese Elemente zugreifen zu können. Alle angehefteten Elemente werden im Dashboard „Mein Arbeitsbereich“ im Abschnitt **Schnellzugriff** angezeigt. Sie können auf diese Elemente über das Dashboard „Mein Arbeitsbereich“ zugreifen, anstatt zu ihrem Speicherort im Repository zu navigieren.
+Heften Sie Dateien, Ordner und Sammlungen an, um im Bedarfsfall schneller auf diese Elemente zugreifen zu können. Alle angehefteten Elemente werden im Dashboard „Mein Arbeitsbereich“ im Abschnitt **Schnellzugriff** angezeigt. Sie können über „Mein Arbeitsbereich“ darauf zugreifen, anstatt zu dem Speicherort zu navigieren, an dem sie im Repository gespeichert sind.
 
 So veröffentlichen Sie ein Asset, einen Ordner oder eine Sammlung:
 
@@ -56,7 +56,7 @@ So veröffentlichen Sie ein Asset, einen Ordner oder eine Sammlung:
 
 Administrierende können eine Zusammenfassung der Anzahl der Downloads und Uploads anzeigen, die in den letzten 30 Tagen in der Assets-Umgebung durchgeführt wurden. Sie können auf **[!UICONTROL Alle anzeigen]** klicken, um schnell zur Seite „Erkenntnisse“ zu navigieren, um detailliertere Dashboards zu erhalten.
 
-Sie können die am häufigsten gesuchten Begriffe sowie die Anzahl der Suchvorgänge dieser Begriffe in Ihrer Assets-Ansichtsimplementierung mit der **Insights** Abschnitt &quot;Mein Arbeitsbereich&quot;. Sie können zudem zu detaillierten Erkenntnissen navigieren, um die häufigsten Suchanfragen der letzten 30 Tage oder 12 Monate anzuzeigen.
+Im Dashboard „Mein Arbeitsbereich“ können Sie über den Abschnitt **Insights** auch die am häufigsten gesuchten Begriffe sowie die Anzahl der Suchvorgänge für diese Begriffe in Ihrer Bereitstellung der Assets-Ansicht anzeigen. Sie können auch zu detaillierten Einblicken navigieren, um die häufigsten Suchbegriffe der letzten 30 Tage oder 12 Monate anzuzeigen.
 
 ![Erkenntnisse in Workspace](assets/insights.png)
 
@@ -74,7 +74,7 @@ Zeigt auf der Registerkarte **[!UICONTROL Meine Aufgaben]** die Liste der Ihnen 
 
 Zeigt Asset-Ansichten an, einschließlich der Liste der Assets, die Sie kürzlich angezeigt haben. Sie können auswählen, ob Assets im Widget in einer Listenansicht, Rasteransicht, Galerie- oder Wasserfallansicht angezeigt werden sollen, und die Assets nach Name, Größe und Änderungsdatum sortieren. Sie können auch ein Asset auswählen, um die Asset-Details anzuzeigen oder es aus der Liste der zuletzt angezeigten Assets zu entfernen.
 
-Die **[!UICONTROL Top-Downloads]** -Registerkarte zeigt die zehn am häufigsten heruntergeladenen Assets an, die in Ihrer Assets-Ansichtsumgebung verfügbar sind. Sie können wählen, ob die Assets in der Listen- oder Rasteransicht angezeigt werden sollen. Beide Ansichten zeigen für jedes Asset den Formattyp und die Anzahl der Downloads an. Sie können auch ein Asset auswählen und auf **[!UICONTROL Details]** klicken, um seine Eigenschaften anzuzeigen.
+Die Registerkarte **[!UICONTROL Top-Downloads]** zeigt die zehn am häufigsten heruntergeladenen Assets, die in Ihrer Assets-Ansicht-Umgebung verfügbar sind. Sie können wählen, ob die Assets in der Listen- oder Rasteransicht angezeigt werden sollen. Beide Ansichten zeigen für jedes Asset den Formattyp und die Anzahl der Downloads an. Sie können auch ein Asset auswählen und auf **[!UICONTROL Details]** klicken, um seine Eigenschaften anzuzeigen.
 
 ![Inhalts-Widget in Workspace](assets/workspace-content.png)
 

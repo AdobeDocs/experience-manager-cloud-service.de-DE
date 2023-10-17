@@ -5,7 +5,7 @@ exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
 source-git-commit: 155b24c4b46e8baebd6215c0717d9f2adde95017
 workflow-type: tm+mt
 source-wordcount: '883'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,7 @@ Der erste Schritt der Konfiguration besteht darin, in AEM eine IMS-Konfiguration
 1. Öffnen Sie in AEM das Menü **Tools**.
 1. Wählen Sie im Abschnitt **Sicherheit** die Option **Adobe IMS-Konfigurationen** aus.
 1. Wählen Sie **Erstellen** aus, um **Technische Kontokonfiguration für Adobe IMS** zu öffnen.
-1. Dropdown-Liste unter **Cloud-Konfiguration** auswählen **Adobe Target**.
+1. Wählen Sie in der Dropdown-Liste unter **Cloud-Konfiguration** die Option **Adobe Target** aus.
 1. Aktivieren Sie **Neues Zertifikat erstellen** und geben Sie einen neuen Alias ein.
 1. Bestätigen Sie mit **Zertifikat erstellen**.
 
@@ -53,7 +53,7 @@ Der erste Schritt der Konfiguration besteht darin, in AEM eine IMS-Konfiguration
 
    >[!CAUTION]
    >
-   >Lassen Sie diese Konfiguration geöffnet, sie wird erneut benötigt, wenn [Abschließen der IMS-Konfiguration in AEM](#completing-the-ims-configuration-in-aem).
+   >Lassen Sie diese Konfiguration geöffnet, denn wird beim [Abschließen der IMS-Konfiguration in AEM](#completing-the-ims-configuration-in-aem) wieder benötigt.
 
    ![Zertifikat herunterladen](assets/integrate-target-ims-02.png)
 
@@ -75,11 +75,11 @@ Adobe-Entwicklerkonsolen-Projekt (Integration) mit Adobe Target, das AEM verwend
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Alle Projekte, die Sie haben, werden angezeigt. Wählen Sie **Neues Projekt erstellen** aus. Position und Verwendung hängen von Folgendem ab:
+1. Alle vorhandenen Projekte werden angezeigt. Wählen Sie **Neues Projekt erstellen** aus. Position und Verwendung hängen von Folgendem ab:
 
-   * Wenn Sie noch kein Projekt haben, **Neues Projekt erstellen** ist zentriert, unten.
+   * Wenn Sie noch kein Projekt haben, befindet sich **Neues Projekt erstellen** unten in der Mitte.
      ![Neues Projekt erstellen – Erstes Projekt](assets/integration-target-ims-02.png)
-   * Wenn Sie bereits über vorhandene Projekte verfügen, werden diese aufgelistet und **Neues Projekt erstellen** oben rechts.
+   * Wenn Sie bereits über vorhandene Projekte verfügen, werden diese aufgelistet und **Neues Projekt erstellen** wird oben rechts angezeigt.
      ![Neues Projekt erstellen – Mehrere Projekte](assets/integration-target-ims-03.png)
 
 
@@ -175,7 +175,7 @@ Wenn Sie zu AEM zurückkehren, können Sie die IMS-Konfiguration abschließen, i
 
 1. Bestätigen Sie mit **Erstellen**.
 
-1. Ihre Adobe Target-Konfiguration wird in der AEM Console angezeigt.
+1. Ihre Adobe Target-Konfiguration wird in der AEM-Konsole angezeigt.
 
    ![IMS-Konfiguration](assets/integrate-target-ims-11.png)
 

@@ -1,17 +1,17 @@
 ---
 title: Editor-Einschränkungen
-description: Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit Inhalten zu interagieren, die in einem iframe enthalten sind. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler.
+description: Der Editor in der Touch-optimierten Benutzeroberfläche verwendet Überlagerungen, um mit den in einem Iframe eingeschlossenen Inhalten zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 65%
+ht-degree: 99%
 
 ---
 
 # Editor-Einschränkungen {#editor-limitations}
 
-Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit Inhalten zu interagieren, die in einem iframe enthalten sind. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler. Diese Seite fasst diese Einschränkungen zusammen und bietet nach Möglichkeit Lösungen oder Umgehungen.
+Der Editor in der Touch-optimierten Benutzeroberfläche verwendet Überlagerungen, um mit den in einem Iframe eingeschlossenen Inhalten zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler. Diese Seite fasst diese Einschränkungen zusammen und bietet nach Möglichkeit Lösungen oder Umgehungen.
 
 ## Funktionale Einschränkungen {#functional-limitations}
 
@@ -35,7 +35,7 @@ Entwickler sehen sich hinsichtlich der Interaktionen des Editors mit CSS möglic
 
 Absolut positionierte Elemente können Probleme bei der Position ihrer Überlagerung verursachen.
 
-* Stellen Sie in diesem Fall sicher, dass die Dimensionen des absolut positionierten Elements korrekt sind, da der Editor eine Überlagerung mit exakt denselben Dimensionen erstellt.
+* Stellen Sie in diesem Fall sicher, dass die Abmessungen des absolut positionierten Elements korrekt sind, da der Editor eine Überlagerung mit exakt denselben Abmessungen erstellt.
 
 ### vh-Einheiten {#vh-units}
 
@@ -51,7 +51,7 @@ Feste Hintergrundbilder werden beim Scrollen nicht als fest angezeigt, weil sie 
 
 100 % Höhe wird im Hauptteilelement einer Seite nicht unterstützt.
 
-* Eine Problemumgehung ist möglich, einen Vollbildtext zu implementieren, indem das Hauptteilelement wie folgt gestreckt wird:
+* Dieses Problem kann umgangen werden, um einen bildschirmfüllenden Hauptteil zu implementieren, indem das Hauptteilelement wie folgt gestreckt wird:
 
 ```xml
 body {

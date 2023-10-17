@@ -1,17 +1,17 @@
 ---
 title: Protokollieren für AEM as a Cloud Service
-description: Erfahren Sie, wie Sie mithilfe der Protokollierung für AEM as a Cloud Service globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festlegen oder die Datenprotokollierung anfordern können.
+description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Service verwenden können, um globale Parameter für den zentralen Protokollierungs-Dienst zu konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festzulegen oder die Datenprotokollierung anzufordern.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
 workflow-type: tm+mt
 source-wordcount: '2657'
-ht-degree: 82%
+ht-degree: 89%
 
 ---
 
 # Protokollieren für AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service ist eine Plattform, auf der Kunden benutzerdefinierten Code einbinden können, um einzigartige Erlebnisse für ihre Kunden zu erstellen. Vor diesem Hintergrund ist der Protokollierungsdienst eine wichtige Funktion, um die Codeausführung in lokalen Entwicklungs- und Cloud-Umgebungen, insbesondere in den Entwicklungsumgebungen des AEM as a Cloud Service, zu debuggen und zu verstehen.
+AEM as a Cloud Service ist eine Plattform, auf der Kunden benutzerdefinierten Code einbinden können, um einzigartige Erlebnisse für ihre Kunden zu erstellen. Vor diesem Hintergrund ist der Protokollierungs-Service eine wichtige Funktion, um die Code-Ausführung in lokalen Entwicklungs- und Cloud-Umgebungen, insbesondere den Entwicklungsumgebungen von AEM as a Cloud Service, zu debuggen und zu verstehen.
 
 Die Protokollierung und Protokollierungsebenen in AEM as a Cloud Service werden in Konfigurationsdateien verwaltet, die als Teil des AEM-Projekts in Git gespeichert und als Teil des AEM-Projekts über Cloud Manager bereitgestellt werden. Die Protokollierung in AEM as a Cloud Service kann in zwei logische Gruppen unterteilt werden:
 
@@ -53,7 +53,7 @@ Entwicklung</td>
 DEBUG</td>
 <td>
 Beschreibt, was im Programm geschieht.<br>
-Wenn die DEBUG-Protokollierung aktiv ist, werden Einträge protokolliert, die ein klares Bild davon vermitteln, welche Aktivitäten stattfinden und welche Schlüsselparameter die Verarbeitung beeinflussen.</td>
+Wenn die DEBUG-Protokollierung aktiv ist, werden Einträge protokolliert, die ein klares Bild davon vermitteln, welche Aktivitäten stattfinden, sowie alle Schlüsselparameter, die die Verarbeitung beeinflussen.</td>
 <td>
 <ul>
 <li> Lokale Entwicklung</li>
@@ -95,7 +95,7 @@ Wenn die ERROR-Protokollierung aktiv ist, werden nur Einträge protokolliert, di
 
 Während die Java-Protokollierung mehrere andere Ebenen der Protokollierungsgranularität unterstützt, empfiehlt AEM as a Cloud Service die Verwendung der drei oben beschriebenen Ebenen.
 
-Die AEM-Protokollstufen werden pro Umgebungstyp über die OSGi-Konfiguration festgelegt, die wiederum an Git gebunden sind, und über den Cloud Manager an AEM as a Cloud Service bereitgestellt. Aus diesem Grund ist es am besten, Protokolleinträge konsistent und für Umgebungstypen bekannt zu halten, um sicherzustellen, dass die über AEM verfügbaren Protokolle auf der optimalen Protokollebene verfügbar sind, ohne dass eine erneute Bereitstellung der Anwendung mit der aktualisierten Protokollebenenkonfiguration erforderlich ist.
+Die AEM-Protokollstufen werden pro Umgebungstyp über die OSGi-Konfiguration festgelegt, die wiederum an Git gebunden sind, und über den Cloud Manager an AEM as a Cloud Service bereitgestellt. Aus diesem Grund ist es am besten, die Protokolleinträge für die Umgebungstypen konsistent und bekannt zu halten, um sicherzustellen, dass die über AEM as Cloud Service verfügbaren Protokolle auf der optimalen Protokollebene verfügbar sind, ohne dass eine Neubereitstellung der Anwendung für eine aktualisierte Protokollebenen-Konfiguration erforderlich ist.
 
 **Beispiel einer Protokollausgabe**
 
@@ -594,9 +594,9 @@ Je nach Traffic und der Menge der von Debug geschriebenen Protokolleinträge kan
 
 ## Splunk-Protokolle {#splunk-logs}
 
-Kunden mit Splunk-Konten können über das Kunden-Support-Ticket anfordern, dass ihre AEM Cloud Service-Protokolle an den entsprechenden Index weitergeleitet werden. Die Protokolldaten entsprechen denen, die über die Cloud Manager-Protokolldownloads verfügbar sind. Kunden können es jedoch praktisch finden, die im Splunk-Produkt verfügbaren Abfragefunktionen zu verwenden.
+Kundinnen und Kunden mit Splunk-Konten können über das Kunden-Support-Ticket anfordern, dass ihre AEM Cloud Service-Protokolle an den entsprechenden Index weitergeleitet werden. Die Protokolldaten entsprechen denen, die über die Cloud Manager-Protokoll-Downloads verfügbar sind. Kundinnen und Kunden können es jedoch hilfreich finden, die im Splunk-Produkt verfügbaren Abfragefunktionen zu nutzen.
 
-Die Netzwerkbandbreite, die mit an Splunk gesendeten Protokollen verknüpft ist, wird als Teil der Netzwerk-E/A-Nutzung des Kunden betrachtet.
+Die Netzwerkbandbreite, die mit an Splunk gesendeten Protokollen verknüpft ist, wird als Teil der kundenseitigen Netzwerk-E/A-Nutzung betrachtet.
 
 Beachten Sie, dass die Splunk-Weiterleitung CDN-Protokolle noch nicht unterstützt.
 
@@ -621,7 +621,7 @@ Die obigen Eigenschaften sollten für jede relevante Kombination aus Programm un
 
 Sie sollten sicherstellen, dass die anfängliche Anfrage zusätzlich zur Staging-/Produktionsumgebung alle Entwicklungsumgebungen enthält, die aktiviert werden sollen. Splunk muss über ein SSL-Zertifikat verfügen und öffentlich zugänglich sein.
 
-Wenn neue Entwicklungsumgebungen, die nach der ersten Anfrage erstellt wurden, die Splunk-Weiterleitung verwenden sollen, diese aber nicht aktiviert haben, sollte eine zusätzliche Anfrage gestellt werden.
+Wenn für neue Entwicklungsumgebungen, die nach der ersten Anfrage erstellt wurden, eine Splunk-Weiterleitung vorgesehen ist, diese jedoch nicht aktiviert ist, sollte eine zusätzliche Anfrage gestellt werden.
 
 Beachten Sie außerdem, dass in anderen Entwicklungsumgebungen, die nicht in der Anfrage enthalten sind, oder sogar in Sandbox-Umgebungen die Splunk-Weiterleitung aktiviert ist und einen Splunk-Index gemeinsam nutzt, wenn Entwicklungsumgebungen angefordert wurden. Kunden können anhand des Felds `aem_env_id` zwischen diesen Umgebung unterscheiden.
 

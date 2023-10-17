@@ -5,7 +5,7 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
 workflow-type: tm+mt
 source-wordcount: '589'
-ht-degree: 86%
+ht-degree: 89%
 
 ---
 
@@ -60,7 +60,7 @@ Standardmäßig erhalten Sie alle Benachrichtigungen für alle Produkte sowohl i
 
 ### Priorität {#priority}
 
-Warnhinweise mit Priorität sind mit einer **HOCH** -Tag und können so konfiguriert werden, dass sie ausschließlich als Warnhinweise empfangen werden. Im Abschnitt **Priorität** können Sie festlegen, welche Kategorien als Prioritätsbenachrichtigungen eingestuft werden.
+Prioritätswarnhinweise werden mit einem **HOCH**-Tag gekennzeichnet und können so konfiguriert werden, dass sie ausschließlich als Warnhinweise empfangen werden. Im Abschnitt **Priorität** können Sie festlegen, welche Kategorien als Prioritätsbenachrichtigungen eingestuft werden.
 
 ![Benachrichtigungspriorität](assets/notifications-priority.png)
 
@@ -74,7 +74,7 @@ Warnhinweise werden für einige Sekunden in der oberen rechten Ecke des Fensters
 
 Sie können das Verhalten der Warnhinweise definieren.
 
-* **Warnhinweise anzeigen für**: Definiert die Arten von Benachrichtigungen, die Warnungen auslösen.
+* **Warnhinweise anzeigen für**: Definiert die Arten von Benachrichtigungen, die Warnhinweise auslösen.
 * **Warnhinweise sollen am Bildschirm angezeigt werden, bis ich sie schließe**: Legt fest, ob die Warnhinweise bestehen bleiben sollen, bis Sie sie aktiv deaktivieren.
 * **Dauer**: Legt fest, wie lange ein Warnhinweis auf dem Bildschirm eingeblendet werden soll, außer Sie haben ausgewählt, dass ein Warnhinweis auf dem Bildschirm verbleiben soll.
 

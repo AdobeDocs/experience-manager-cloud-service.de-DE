@@ -9,7 +9,7 @@ discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
 source-wordcount: '974'
-ht-degree: 54%
+ht-degree: 68%
 
 ---
 
@@ -22,11 +22,11 @@ Cachen ist ein Mechanismus zum Verkürzen von Datenzugriffszeiten, zur Reduktion
 
 1. Wechseln Sie zum Konfigurations-Manager der AEM-Web-Konsole unter `https://[server]:[port]/system/console/configMgr`.
 1. Klicken Sie auf **[!UICONTROL Konfiguration für adaptive Formulare und interaktiven Kommunikations-Web-Kanal]**, um die Konfigurationswerte zu bearbeiten.
-1. Im [!UICONTROL Konfigurationswerte bearbeiten] Dialogfeld angeben, die maximale Anzahl von Formularen angeben oder eine Instanz des AEM dokumentieren [!DNL Forms Server] kann im **[!UICONTROL Anzahl der adaptiven Forms]** -Feld. Der Standardwert ist 100.
+1. Geben Sie im Dialogfeld [!UICONTROL Bearbeiten der Konfigurationswerte] die maximale Anzahl von Formularen oder Dokumenten an, die eine Instanz von AEM [!DNL Forms Server] im Feld **[!UICONTROL Anzahl adaptiver Formulare]** zwischenspeichern kann. Der Standardwert ist 100.
 
    >[!NOTE]
    >
-   >Um den Cache zu deaktivieren, setzen Sie den Wert im Feld Anzahl adaptiver Forms auf **0**. Der Cache wird zurückgesetzt, und alle Formulare und Dokumente werden aus dem Cache entfernt, wenn Sie die Cachekonfiguration deaktivieren oder ändern.
+   >Um den Cache zu deaktivieren, legen Sie den Wert im Feld „Anzahl adaptiver Formulare“ auf **0** fest. Der Cache wird zurückgesetzt, und alle Formulare und Dokumente werden aus dem Cache entfernt, wenn Sie die Cachekonfiguration deaktivieren oder ändern.
 
    ![Dialogfeld zum Konfigurieren des HTML-Cache für adaptive Formulare](assets/cache-configuration-edit.png)
 
@@ -35,7 +35,7 @@ Cachen ist ein Mechanismus zum Verkürzen von Datenzugriffszeiten, zur Reduktion
 Ihre Umgebung ist für die Nutzung des Cache für adaptive Formulare und zugehörige Assets konfiguriert.
 
 
-## (Optional) Konfigurieren des Cache für adaptive Formulare im Dispatcher {#configure-the-cache}
+## (Optional) Konfigurieren des Dispatcher-Cache für adaptive Formulare {#configure-the-cache}
 
 Sie können auch die Zwischenspeicherung adaptiver Formulare im Dispatcher konfigurieren, um die Leistung zusätzlich zu verbessern.
 
@@ -44,22 +44,22 @@ Sie können auch die Zwischenspeicherung adaptiver Formulare im Dispatcher konfi
 * Aktivieren Sie die [Zusammenführen oder Vorausfüllen von Daten auf dem Client](prepopulate-adaptive-form-fields.md#prefill-at-client) -Option. Dadurch können eindeutige Daten für jede Instanz eines vorbefüllten Formulars zusammengeführt werden.
 * [Aktivieren eines Flush-Agenten für jede Veröffentlichungsinstanz](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de#invalidating-dispatcher-cache-from-a-publishing-instance). Durch diesen Schritt wird die Cache-Performance für adaptive Formulare verbessert. Die Standard-URL von Flush-Agents ist `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
 
-### Überlegungen zum Zwischenspeichern des adaptiven Forms auf einem Dispatcher {#considerations}
+### Überlegungen zum Caching von adaptiven Formularen auf einem Dispatcher {#considerations}
 
 * Wenn Sie den Cache für adaptive Formulare verwenden, nutzen Sie den AEM-[!DNL Dispatcher], um Client-Bibliotheken (CSS und JavaScript) eines adaptiven Formulars zwischenzuspeichern.
 * Beim Entwickeln der benutzerdefinierten Komponenten muss auf dem für die Entwicklung verwendeten Server der Cache für adaptive Formulare deaktiviert bleiben.
-* URLs ohne Erweiterung werden nicht zwischengespeichert. Beispiel: URL mit Muster `/content/forms/[folder-structure]/[form-name].html` zwischengespeichert werden und beim Zwischenspeichern werden URLs mit Mustern ignoriert `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. Verwenden Sie daher URLs mit Erweiterungen, um die Vorteile des Caching zu nutzen.
+* URLs ohne Erweiterung werden nicht zwischengespeichert. Beispiel: URLs mit dem Muster `/content/forms/[folder-structure]/[form-name].html` werden im Cache abgelegt, während URLs mit dem Muster `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content` von der Caching-Funktion ignoriert werden. Verwenden Sie daher URLs mit Erweiterungen, um die Vorteile des Caching zu nutzen.
 * Überlegungen zu lokalisierten adaptiven Formularen:
    * Verwenden Sie das URL-Format `http://host:port/content/forms/af/<afName>.<locale>.html` anstelle von `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`, um die lokalisierte Version eines adaptiven Formulars aufzurufen.
    * Deaktivieren Sie die Verwendung des Browser-Gebietsschemas <!-- [Disable using browser locale](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) -->für URLs mit dem Format `http://host:port/content/forms/af/<adaptivefName>.html`.
    * Wenn Sie das URL-Format `http://host:port/content/forms/af/<adaptivefName>.html` verwenden und **[!UICONTROL Browser-Gebietsschema verwenden]** im Konfigurations-Manager deaktiviert ist, wird die nicht lokalisierte Version des adaptiven Formulars bereitgestellt. Die nicht lokalisierte Sprache ist die Sprache, die bei der Entwicklung des adaptiven Formulars verwendet wurde. Das für Ihren Browser konfigurierte Gebietsschema (Browser-Gebietsschema) wird nicht berücksichtigt und es wird eine nicht lokalisierte Version des adaptiven Formulars bereitgestellt.
    * Wenn Sie das URL-Format `http://host:port/content/forms/af/<adaptivefName>.html` verwenden und **[!UICONTROL Browser-Gebietsschema verwenden]** im Konfigurations-Manager aktiviert ist, wird, sofern verfügbar, eine lokalisierte Version des adaptiven Formulars bereitgestellt. Die Sprache des lokalisierten adaptiven Formulars basiert auf dem für Ihren Browser konfigurierten Gebietsschema (Browser-Gebietsschema). Dies kann zu [Zwischenspeicherung nur der ersten Instanz eines adaptiven Formulars]. Um zu erfahren, wie Sie diesem Problem vorbeugen können, lesen Sie unter [Fehlerbehebung](#only-first-insatnce-of-adptive-forms-is-cached) nach.
 
-### Zwischenspeicherung im Dispatcher aktivieren
+### Aktivieren des Dispatcher-Cache
 
-Führen Sie die folgenden Schritte aus, damit Sie die Zwischenspeicherung von Adaptive Forms in Dispatcher aktivieren und konfigurieren können:
+Führen Sie die folgenden Schritte aus, um den Dispatcher-Cache für adaptive Formulare zu aktivieren und zu konfigurieren:
 
-1. Öffnen Sie die folgende URL für jede Veröffentlichungsinstanz Ihrer Umgebung und konfigurieren Sie den Replikationsagenten:
+1. Öffnen Sie die folgende URL für jede Publishing-Instanz Ihrer Umgebung und konfigurieren Sie den Replikationsagenten:
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
 1. [Fügen Sie folgende Zeilen in Ihre Datei dispatcher.any ein](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#automatically-invalidating-cached-files):
@@ -125,7 +125,7 @@ Führen Sie die folgenden Schritte aus, damit Sie die Zwischenspeicherung von Ad
       }
    ```
 
-Ihre AEM-Umgebung ist so konfiguriert, dass adaptive Formulare im Cache abgelegt werden. Es werden alle Arten von adaptiven Formularen zwischengespeichert. Wenn Sie die Benutzerzugriffsberechtigungen für eine Seite überprüfen müssen, bevor Sie die zwischengespeicherte Seite bereitstellen, lesen Sie [Zwischenspeichern gesicherter Inhalte](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=de).
+Ihre AEM-Umgebung ist so konfiguriert, dass adaptive Formulare im Cache abgelegt werden. Es werden alle Arten von adaptiven Formularen zwischengespeichert. Falls Sie vor Bereitstellung einer zwischengespeicherten Seite die Zugriffsberechtigungen für diese Seite überprüfen wollen, lesen Sie [Caching von geschütztem Inhalt](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=de).
 
 ## Fehlerbehebung {#troubleshooting}
 
@@ -139,7 +139,7 @@ Wenn Sie Bilder oder Videos über den Asset-Browser auswählen und in einem adap
 
 Nach dem Veröffentlichen der Bilder und Videos müssen Sie die Veröffentlichung des adaptiven Formulars, das auf diese Assets verweist, rückgängig machen und das Formular erneut veröffentlichen.
 
-### Einige adaptive Forms, die Inhaltsfragmente oder Experience Fragments enthalten, werden nicht automatisch aus dem Dispatcher-Cache invalidiert {#content-or-experience-fragment-not-auto-invalidated}
+### Einige adaptive Formulare, die Inhaltsfragmente oder Experience Fragments enthalten, werden nicht automatisch im Dispatcher-Cache ungültig {#content-or-experience-fragment-not-auto-invalidated}
 
 #### Problem {#issue2}
 

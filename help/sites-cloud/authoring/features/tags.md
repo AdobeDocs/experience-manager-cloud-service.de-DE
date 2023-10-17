@@ -5,16 +5,16 @@ exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 source-git-commit: a7774ff75fb6bac55d5e931b13597d90bf8d721b
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
 # Verwenden von Tags {#using-tags}
 
-Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website. Tags können als Schlüsselwörter oder Beschriftungen betrachtet werden, die an eine Seite, ein Asset oder andere Inhalte angehängt werden können, um Suchen zu ermöglichen, mit denen diese und zugehörige Inhalte gefunden werden können.
+Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website. Tags können als Keywords oder Beschriftungen betrachtet werden, die an eine Seite, ein Asset oder andere Inhalte angehängt werden können, um Suchen zu ermöglichen, mit denen diese und zugehörige Inhalte gefunden werden können.
 
 * Siehe [Verwalten von Tags](/help/sites-cloud/administering/tags.md) für Informationen zum Erstellen und Verwalten von Tags und darüber, auf welche Inhalts-Tags angewendet wurden.
-* Siehe [Tagging für Entwickler](/help/implementing/developing/introduction/tagging-framework.md) für Informationen zum Tagging-Framework sowie zum Einschließen und Erweitern von Tags in benutzerdefinierten Anwendungen.
+* Unter [Tagging für Entwicklerpersonen](/help/implementing/developing/introduction/tagging-framework.md) finden Sie Informationen über das Tagging-Framework sowie die Einbeziehung und Erweiterung von Tags in benutzerdefinierten Applikationen.
 
 ## Zehn Gründe für das Verwenden von Tags {#ten-reasons-to-use-tagging}
 

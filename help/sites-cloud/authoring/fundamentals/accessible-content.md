@@ -5,7 +5,7 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '13862'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -436,7 +436,7 @@ Entsprechend sind Informationen, für die zwischen verschiedenen Klängen unters
 
 >[!NOTE]
 >
-Anforderungen für Alternativen zu Farben finden Sie unter [Verwendung der Farbe](#use-of-color).
+Die Anforderungen, die sich auf die Alternativen für Farben beziehen, finden Sie unter [Verwendung von Farbe](#use-of-color).
 
 #### Erfüllen: Sensorische Eigenschaften (1.3.3) {#how-to-meet-sensory-characteristics}
 

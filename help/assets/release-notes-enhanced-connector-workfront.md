@@ -5,7 +5,7 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: f5f2c460815d273fe445c6f415dee7776cc18fce
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 73%
+ht-degree: 84%
 
 ---
 
@@ -32,18 +32,18 @@ Die neueste Version der [!DNL Workfront for Experience Manager enhanced connecto
 
 >[!NOTE]
 >
->AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=en).
+>AEM 6.4 hat das Ende des erweiterten Supports erreicht. Weitere Informationen finden Sie in unseren [technischen Supportzeiträumen](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Die unterstützten Versionen finden Sie [hier](https://experienceleague.adobe.com/docs/?lang=de).
 
 
 >[!IMPORTANT]
 >
->Adobe empfiehlt, [Aktualisierung auf die neueste Version 1.9.14](/help/assets/workfront-connector-install.md) des [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe empfiehlt eine [Aktualisierung auf die neueste Version 1.9.14](/help/assets/workfront-connector-install.md) des [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekannte Probleme {#known-issues}
 
 * Beim Konfigurieren von projektverknüpften Ordnern mit AEM 6.4 speichert Experience Manager die Werte für die Felder **[!UICONTROL Unterordner]** und **[!UICONTROL Verknüpften Ordner in Projekten mit Portfolio erstellen]** nicht. Der Wert für das Feld **[!UICONTROL Unterordner]** wird auf **[!UICONTROL undefiniert]** und der Wert für das Feld **[!UICONTROL Verknüpften Ordner in Projekten mit Portfolio erstellen]** wird nach dem Speichern der Konfiguration automatisch auf **[!UICONTROL Standardportfolio]** aktualisiert.
 
-* Wenn Sie das klassische Workfront-Erlebnis verwenden, können Sie mit der Option **[!UICONTROL Senden an]** in der Dropdown-Liste **[!UICONTROL Mehr]** das Ziel in Experience Manager nicht auswählen. Die **[!UICONTROL Senden an]** -Option funktioniert mit der **[!UICONTROL Dokumentaktionen]** Dropdown-Liste. Die **[!UICONTROL Senden an]** -Option funktioniert ordnungsgemäß für **[!UICONTROL Mehr]** Dropdown-Liste und **[!UICONTROL Dokumentaktionen]** Dropdown-Liste, die im neuen Workfront-Erlebnis verfügbar ist.
+* Wenn Sie das klassische Workfront-Erlebnis verwenden, können Sie mit der Option **[!UICONTROL Senden an]** in der Dropdown-Liste **[!UICONTROL Mehr]** das Ziel in Experience Manager nicht auswählen. Die Option **[!UICONTROL Senden an]** funktioniert korrekt über die Dropdown-Liste **[!UICONTROL Dokumentenaktionen]**. Die Option **[!UICONTROL Senden an]** funktioniert korrekt für die Dropdown-Liste **[!UICONTROL Mehr]** und die Dropdown-Liste **[!UICONTROL Dokumentenaktionen]**, die in dem neuen Workfront-Erlebnis verfügbar sind.
 
 ## Frühere Versionen {#previous-releases}
 
@@ -165,7 +165,7 @@ Die neueste Version der [!DNL Workfront for Experience Manager enhanced connecto
 
 [!DNL Workfront for Experience Manager enhanced connector] Version 1.9.4 vom 7. Oktober enthält folgende Aktualisierungen:
 
-* Aufgrund vieler Ereignisse kann die Registerkarte &quot;Ereignisabonnements&quot;auf der Seite mit der verbesserten Connector-Konfiguration nicht angezeigt werden.
+* Aufgrund einer großen Anzahl von Ereignissen kann die Registerkarte „Ereignisabonnements“ auf der Seite mit der erweiterten Connector-Konfiguration nicht angezeigt werden.
 
 * Workfront kann die Liste der in einem Projekt vorhandenen Ordner nicht abrufen, was zur Erstellung doppelter Ordner führt.
 
@@ -173,7 +173,7 @@ Die neueste Version der [!DNL Workfront for Experience Manager enhanced connecto
 
 [!DNL Workfront for Experience Manager enhanced connector] Version 1.9.3 vom 16. September enthält folgende Aktualisierungen:
 
-* Eine Datei mit mehr als 8 GB kann nicht hochgeladen werden.
+* Dateien mit einer Größe von mehr als 8 GB können nicht hochgeladen werden.
 * Probleme beim automatischen Veröffentlichen von Assets, die von Workfront an AEM gesendet werden.
 * Das Feld „Stammpfad“ ist beim Bearbeiten eines standardmäßigen Metadatenschema-Formulars nicht für das Feld „Tags“ verfügbar.
 * Probleme beim Hinzufügen neuer Versionen in Workfront mithilfe von AEM Workflows.
@@ -204,7 +204,7 @@ Die neueste Version der [!DNL Workfront for Experience Manager enhanced connecto
 
 [!DNL Workfront for Experience Manager enhanced connector] umfasst jetzt die folgenden Updates:
 
-* Wenn Sie den Upload über einen verknüpften Ordner durchführen oder die `Send To` -Aktion, die in Workfront verfügbar ist, um Assets in Experience Manager as a Cloud Service hochzuladen, werden die Assets beschädigt und können nicht in Adobe Photoshop geöffnet werden.
+* Wenn Sie einen Upload über einen verknüpften Ordner durchführen oder die in Workfront verfügbare Aktion `Send To` verwenden, um Assets in Experience Manager as a Cloud Service hochzuladen, werden die Assets beschädigt und können nicht in Adobe Photoshop geöffnet werden.
 
 ### Version vom März 2022 {#march-2022-release}
 

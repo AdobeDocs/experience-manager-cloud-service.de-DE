@@ -5,7 +5,7 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '1439'
-ht-degree: 82%
+ht-degree: 98%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 82%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de" text="Versionshinweise"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution-Portal"
 
-Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Portal heruntergeladen werden. Sie können das Paket über [Package Manager](/help/implementing/developing/tools/package-manager.md) in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren. Laden Sie unbedingt die neueste Version herunter. Weitere Informationen zur neuesten Version finden Sie unter [Versionshinweise](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de).
+Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Portal heruntergeladen werden. Sie können das Paket über [Package Manager](/help/implementing/developing/tools/package-manager.md) in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren. Laden Sie unbedingt die neueste Version herunter. Weitere Informationen zur neuesten Version finden Sie in den [Versionshinweisen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de).
 
-Es wird nur Version 2.0.0 und höher unterstützt und es wird empfohlen, die neueste Version zu verwenden.
+Nur Version 2.0.0 und höher wird unterstützt, und es wird empfohlen, die neueste Version zu verwenden.
 
 >[!NOTE]
 >Laden Sie das Content Transfer Tool vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) herunter.
@@ -34,7 +34,7 @@ Es wird nur Version 2.0.0 und höher unterstützt und es wird empfohlen, die neu
 >
 >Ein Verbindungsfehler kann auch auftreten, wenn ein Migrationssatz aus Cloud Acceleration Manager gelöscht wurde.
 
-Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo sie nur bestimmte Hosts erreichen kann, die zu einer Zulassungsliste hinzugefügt wurden. Um eine Extraktion erfolgreich auszuführen, müssen die folgenden Endpunkte von der AEM ausgeführten Instanz aus zugänglich sein:
+Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo sie nur bestimmte Hosts erreichen kann, die zu einer Zulassungsliste hinzugefügt wurden. Damit eine Extraktion erfolgreich durchgeführt werden kann, muss von der Instanz, auf der AEM ausgeführt wird, auf die folgenden Endpunkte zugegriffen werden können:
 
 * Der Azure Blob Storage-Service: `casstorageprod.blob.core.windows.net`
 
@@ -53,7 +53,7 @@ SSL-/TLS-Verbindungsprobleme zu verstehen kann manchmal schwierig sein. Um Verbi
    ![image](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
 >[!NOTE]
->Dieses Flag dient nur zum Debugging von SSL-Problemen. Stellen Sie sicher, dass das Flag vor dem Ausführen der Extraktion deaktiviert ist, da es möglicherweise eine große Menge an Festplattenspeicher erfordert. Dies könnte potenziell die Laufwerkskapazität ausfüllen und dazu führen, dass der Extraktionsprozess fehlschlägt.
+>Diese Markierung dient nur zum Debugging von SSL-Problemen. Stellen Sie sicher, dass die Markierung vor dem Ausführen der Extraktion deaktiviert ist, da sie möglicherweise eine große Menge an Festplattenspeicher erfordert. Dies könnte potenziell die Laufwerkskapazität überfüllen und dazu führen, dass der Extraktionsprozess fehlschlägt.
 
 ## Ausführen des Content Transfer Tools {#running-tool}
 
@@ -96,13 +96,13 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
 
    >[!NOTE]
    >
-   >Der Name muss denselben Konventionen eines AEM-Knotens entsprechen, sodass keines der folgenden Zeichen enthalten kann: . / : [ ] | *
+   >Der Name muss denselben Konventionen wie bei einem AEM-Knoten entsprechen, d. h., er darf keines der folgenden Zeichen enthalten: . / : [ ] | *
 
 1. Ihre Migrationsliste sollte jetzt in der Listenansicht angezeigt werden. Klicken Sie auf die drei Punkte (**...**), um das Dropdown-Menü zu öffnen, und klicken Sie auf **Extraktionsschlüssel kopieren**. Sie benötigen diesen Schlüssel während der Extraktionsphase. Kopieren Sie diesen Extraktionsschlüssel.
 
    >[!NOTE]
    >
-   >Der Extraktionsschlüssel ermöglicht es Ihrer AEM-Quellumgebung, eine sichere Verbindung mit dem Migrationssatz herzustellen. Behandeln Sie diesen Schlüssel mit der gleichen Sorgfalt wie ein Passwort und geben Sie ihn nie über ein unsicheres Medium wie E-Mail weiter.
+   >Der Extraktionsschlüssel ermöglicht es Ihrer AEM-Quellumgebung, eine sichere Verbindung mit dem Migrationssatz herzustellen. Behandeln Sie diesen Schlüssel mit der gleichen Sorgfalt wie ein Kennwort und geben Sie ihn nie über ein unsicheres Medium wie E-Mail weiter.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam4.png)
 
@@ -122,11 +122,11 @@ Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu fül
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
-1. Fügen Sie den zuvor aus CAM kopierten Extraktionsschlüssel in das Eingabefeld für den Extraktionsschlüssel im Formular **Migrationssatz erstellen** ein. Danach werden die Felder Migrationssatzname und Cloud Acceleration Manager (CAM)-Projektname automatisch ausgefüllt. Diese sollten mit dem Migrationssatznamen in CAM und dem von Ihnen erstellten CAM-Projektnamen übereinstimmen. Sie können jetzt Inhaltspfade hinzufügen. Nachdem Sie Inhaltspfade hinzugefügt haben, speichern Sie den Migrationssatz. Sie können die Extraktion mit eingeschlossenen oder ausgeschlossenen Versionen ausführen.
+1. Fügen Sie den zuvor aus CAM kopierten Extraktionsschlüssel in das Eingabefeld für den Extraktionsschlüssel im Formular **Migrationssatz erstellen** ein. Danach werden die Felder für den Migrationssatznamen und den Cloud Acceleration Manager(CAM)-Projektnamen automatisch ausgefüllt. Diese sollten mit dem Migrationssatznamen in CAM und dem von Ihnen erstellten CAM-Projektnamen übereinstimmen. Sie können jetzt Inhaltspfade hinzufügen. Speichern Sie den Migrationssatz, nachdem Sie Inhaltspfade hinzugefügt haben. Sie können die Extraktion mit eingeschlossenen oder ausgeschlossenen Versionen ausführen.
 
    >[!NOTE]
    >
-   >Vergewissern Sie sich, dass der Extraktionsschlüssel gültig ist und nicht kurz vor seinem Ablaufdatum ist. Diese Informationen finden Sie im Dialogfeld **Migrationssatz erstellen**, nachdem Sie den Extraktionsschlüssel eingefügt haben. Wenn Sie einen Verbindungsfehler erhalten, lesen Sie [Verbindung der Quellumgebung](#source-environment-connectivity) für weitere Informationen.
+   >Vergewissern Sie sich, dass der Extraktionsschlüssel gültig ist und nicht kurz vor seinem Ablaufdatum ist. Diese Informationen finden Sie im Dialogfeld **Migrationssatz erstellen**, nachdem Sie den Extraktionsschlüssel eingefügt haben. Wenn Sie einen Verbindungsfehler erhalten, finden Sie unter [Konnektivität der Quellumgebung](#source-environment-connectivity) weitere Informationen.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 
@@ -187,11 +187,11 @@ Gehen Sie wie folgt vor, um eine Größenüberprüfung durchzuführen:
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. Nachher **Größe überprüfen** -Prozess abgeschlossen ist, ändert sich der Status in **FERTIG**. Wählen Sie denselben Migrationssatz aus und klicken Sie auf **Größe überprüfen**, um die Ergebnisse anzuzeigen. Nachfolgend finden Sie ein Beispiel für Ergebnisse des Prozesses **Größe überprüfen** ohne Warnungen.
+1. Sobald der Prozess **Größe überprüfen** abgeschlossen ist, ändert sich der Status in **BEENDET**. Wählen Sie denselben Migrationssatz aus und klicken Sie auf **Größe überprüfen**, um die Ergebnisse anzuzeigen. Nachfolgend finden Sie ein Beispiel für Ergebnisse des Prozesses **Größe überprüfen** ohne Warnungen.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
-1. Wenn die Variable **Größe überprüfen** Die Ergebnisse zeigen an, dass entweder nicht genügend Speicherplatz vorhanden ist oder der Migrationssatz die Produktbeschränkungen überschreitet oder beides. **WARNUNG** angezeigt.
+1. Wenn die Ergebnisse des Prozesses **Größe überprüfen** darauf hindeuten, dass entweder nicht genügend Speicherplatz vorhanden ist und/oder der Migrationssatz die Produktbeschränkungen überschreitet, wird der Status **WARNUNG** angezeigt.
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    

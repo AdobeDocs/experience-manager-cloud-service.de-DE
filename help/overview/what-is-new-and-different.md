@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1896'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -113,13 +113,13 @@ Konkret werden die Anzahl und die Art der AEM-Programme, die aus Cloud Manager e
 
 Cloud Manager hat sich zu einem Selbstbedienungsportal entwickelt, in dem die Hauptkomponenten von AEM as a Cloud Service erstellt und konfiguriert werden können:
 
-* Erstellen und Verwalten neuer Programme. Siehe [Grundlegendes zu Programmen und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) für weitere Details.
+* Erstellen und Verwalten neuer Programme. Weitere Informationen finden Sie unter [Grundlegendes zu Programmen und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
-* Erstellen und Verwalten der AEM-Umgebungen in diesen Programmen. Siehe [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md) für weitere Details.
+* Erstellen und Verwalten der AEM-Umgebungen in diesen Programmen. Weitere Informationen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md).
 
-* Erstellen und Verwalten der Pipelines für die Bereitstellung des Kunden-Codes und der zugehörigen Konfiguration in einer bestimmten Umgebung. Siehe [Konfigurieren der CI/CD-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) für weitere Details.
+* Erstellen und Verwalten der Pipelines für die Bereitstellung des Kunden-Codes und der zugehörigen Konfiguration in einer bestimmten Umgebung. Weitere Informationen finden Sie unter [Konfigurieren der CI/CD-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
-* Benachrichtigung über wichtige Lebenszyklusereignisse für diese Komponenten (z. B. Produktaktualisierungen).
+* Benachrichtigung über wichtige Lebenszyklusereignisse für diese Komponenten (z. B. Produktaktualisierungen).
 
 Cloud Manager erstellt Umgebungen in Rechenzentren in vielen geografischen Regionen und ermöglicht so eine globale Abdeckung. CDN Points of Presence (PoPs) sorgen für die Bereitstellung von Inhalten mit niedriger Latenz für Kunden in der ganzen Welt.
 
@@ -192,7 +192,7 @@ Aufgrund der klaren Trennung von Code und Inhalt können Entwickler ein bestimmt
 
 ### Lokale Entwicklung {#aem-as-a-cloud-service-developing-local-development}
 
-Um schnelle Iterationen und Entwicklungen zu unterstützen, ist es auch möglich, AEM Anwendungen außerhalb des AEM as a Cloud Service Kontextes zu entwickeln. Zu diesem Zweck werden den Entwicklern die folgenden Artefakte zur Verfügung gestellt:
+Um schnelle Iterationen und Entwicklungen zu unterstützen, ist es auch möglich, AEM-Applikationen außerhalb von AEM as a Cloud Service zu entwickeln. Zu diesem Zweck werden den Entwicklern die folgenden Artefakte zur Verfügung gestellt:
 
 * AEM as a Cloud Service QuickStart: ein `.jar`-basiertes, eigenständiges Installationsprogramm der neuesten AEM-Code-Basis, mit der gleichen Funktions- und API-Oberfläche.
 
@@ -242,7 +242,7 @@ Dies kombiniert die folgenden Vorteile:
 >
 >Für weitere Informationen beginnen Sie mit [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md).
 
-Die Grundprinzipien der Authoring-Benutzeroberfläche (Benutzeroberfläche) für sowohl Sites als auch Assets kennen alle, die AEM in der Vergangenheit verwendet haben.
+Die Grundprinzipien der Authoring-Benutzeroberfläche, sowohl für Sites als auch für Assets, werden allen, die AEM in der Vergangenheit verwendet haben, sehr vertraut sein.
 
 Der Hauptunterschied besteht darin, dass die Benutzeroberfläche exklusiv Touch-fähig ist. Die klassische Benutzeroberfläche ist nicht mehr verfügbar. Ansonsten bleiben die Grundlagen unverändert, wobei nur kleine Änderungen sichtbar sind.
 
@@ -274,6 +274,6 @@ Weitere Informationen finden Sie unter:
 
 >[!TIP]
 >
->Sobald Sie einen Überblick über AEM as a Cloud Service haben, können Sie schnell eingebunden werden, indem Sie die [Onboarding-Journey](/help/journey-onboarding/overview.md).
+>Sobald Sie einen Überblick über AEM as a Cloud Service haben, können Sie sich schnell einarbeiten, indem Sie die [Onboarding-Tour](/help/journey-onboarding/overview.md) absolvieren.
 >
 >Sind Sie bereits dabei oder bereit, die Funktionen von AEM zu testen? Installieren Sie das [AEM-Referenzdemo-Add-on](/help/journey-sites/demos-add-on/overview.md), um die leistungsstarken Funktionen von AEM anhand von umfangreichen Beispielen zu erkunden.

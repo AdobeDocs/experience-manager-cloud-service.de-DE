@@ -5,7 +5,7 @@ exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '2080'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -45,7 +45,7 @@ Verwenden Sie den Datentyp „ArrayList“, um Variablenauflistungen zu erstelle
 
 Erstellen einer Variablen:
 
-1. Navigieren Sie in einer AEM zu Tools . ![Hammersymbol](assets/hammer-icon.svg) > Workflow > Modelle.
+1. Navigieren Sie in einer AEM-Instanz zu „Tools“ ![Hammersymbol](assets/hammer-icon.svg) > „Workflow“ > „Modelle“.
 1. Tippen Sie auf **[!UICONTROL Erstellen]** und geben Sie den Titel und einen optionalen Namen für das Workflow-Modell an. Wählen Sie das Modell aus und tippen Sie auf **[!UICONTROL Bearbeiten]**.
 1. Tippen Sie auf das Variablensymbol im Sidekick des Workflow-Modells und tippen Sie dann auf **[!UICONTROL Variable hinzufügen]**.
 
@@ -283,4 +283,4 @@ So löschen Sie eine Variable:
 
 ## Verweise {#references}
 
-Weitere Beispiele für die Verwendung von Variablen in [!DNL AEM Forms] Workflow-Schritte, siehe [Variablen in AEM Workflows](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=de).
+Weitere Beispiele zur Verwendung von Variablen in [!DNL AEM Forms]-Workflow-Schritten finden Sie unter [Variablen in AEM-Workflows](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=de).

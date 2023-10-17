@@ -7,7 +7,7 @@ exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
 source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
 source-wordcount: '807'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -73,7 +73,7 @@ Erstellen Sie [über die Admin Console einen Support-Fall](https://helpx.adobe.c
 
    1. Der Support fügt Sie entsprechend der Reihenfolge der eingegangenen Anfragen der HTTP/2-Kundenwarteschlange hinzu.
    1. Wenn Adobe für die Bearbeitung Ihrer Anfrage bereit ist, setzt sich der Support mit Ihnen in Verbindung, um die Umstellung zu koordinieren und ein Zieldatum festzulegen.
-   1. Sie werden nach Abschluss benachrichtigt und können eine erfolgreiche Umstellung auf HTTP2 überprüfen.
+   1. Sie werden nach Abschluss benachrichtigt und können die erfolgreiche Umstellung auf HTTP2 überprüfen.
 
 ## Wann kann ich mit der Umstellung auf HTTP/2 rechnen? {#when-can-i-expect-to-be-transitioned-over-to-http}
 

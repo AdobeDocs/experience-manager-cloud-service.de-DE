@@ -5,7 +5,7 @@ exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2552'
-ht-degree: 83%
+ht-degree: 98%
 
 ---
 
@@ -21,17 +21,17 @@ Vorteile der Verwendung Client-seitiger Bibliotheken in AEM:
 * Client-seitige Bibliotheken werden über einen Pfad verfügbar gemacht, auf den der [Dispatcher](/help/implementing/dispatcher/disp-overview.md) zugreifen kann.
 * Das Umschreiben von Pfaden für referenzierte Dateien oder Bilder wird ermöglicht.
 
-Clientlibs sind die integrierte Lösung für die Bereitstellung von CSS und JavaScript von AEM.
+Client-seitige Bibliotheken bilden die integrierte Lösung zur Bereitstellung von CSS und JavaScript aus AEM.
 
 >[!TIP]
 >
->Frontend-Entwickler, die CSS und JavaScript für AEM Projekte erstellen, sollten sich auch mit der [AEM Projektarchetyp und sein automatisierter Front-End-Build-Prozess.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de)
+>Frontend-Entwicklerinnen und -Entwickler, die CSS und JavaScript für AEM-Projekte verwenden, sollten sich auch mit dem [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de) und seinem automatisierten Frontend-Build-Mechanismus vertraut machen.
 
 ## Was sind Client-seitige Bibliotheken? {#what-are-clientlibs}
 
-Für Sites sind JavaScript und CSS sowie statische Ressourcen wie Symbole und Webfonts erforderlich, damit sie clientseitig verarbeitet werden können. Eine Client-seitige Bibliothek ist ein Mechanismus von AEM, um auf diese Ressourcen zu verweisen (ggf. nach Kategorie) und sie bereitzustellen.
+Für Sites sind JavaScript und CSS sowie statische Ressourcen wie Symbole und Webfonts erforderlich, um eine Client-seitige Verarbeitung zu ermöglichen. Eine Client-seitige Bibliothek (Clientlib) ist der Mechanismus von AEM, um auf diese Ressourcen zu verweisen (ggf. nach Kategorie) und sie bereitzustellen.
 
-AEM erfasst das CSS und JavaScript der Site in einer einzigen Datei an einem zentralen Speicherort, um sicherzustellen, dass nur eine Kopie einer Ressource in der HTML-Ausgabe enthalten ist. Dadurch wird die Effizienz der Bereitstellung gesteigert. Außerdem können diese Ressourcen über einen Proxy zentral im Repository verwaltet werden, sodass der Zugriff sicher bleibt.
+AEM erfasst die CSS- und JavaScript-Elemente der Site in einer einzigen Datei an einem zentralen Speicherort, um sicherzustellen, dass in der HTML-Ausgabe nur eine Kopie einer Ressource enthalten ist. Dadurch wird die Effizienz der Bereitstellung gesteigert. Außerdem können diese Ressourcen über einen Proxy zentral im Repository verwaltet werden, sodass der Zugriff sicher bleibt.
 
 ## Frontend-Entwicklung für AEM as a Cloud Service {#fed-for-aemaacs}
 
@@ -71,7 +71,7 @@ Client-Bibliotheksordner enthalten die folgenden Elemente:
 
 ## Erstellen Client-seitiger Bibliotheksordner {#creating-clientlib-folders}
 
-Client-Bibliotheken müssen sich unter `/apps` befinden. Diese Regel ist erforderlich, um Code besser von Inhalt und Konfiguration zu isolieren.
+Client-Bibliotheken müssen sich unter `/apps` befinden. Diese Regel ist wichtig, um Code besser von Inhalt und Konfiguration zu isolieren.
 
 Damit die Client-Bibliotheken unter `/apps` zugänglich sind, wird ein Proxy-Servlet verwendet. Die ACLs werden weiterhin im Client-Bibliotheksordner erzwungen, aber das Servlet ermöglicht, dass der Content über `/etc.clientlibs/` gelesen wird, wenn die `allowProxy`-Eigenschaft auf `true` gesetzt ist.
 
@@ -135,7 +135,7 @@ This is possible. Still need detail.
 
 ## Client-Bibliotheken auf einer Autoreninstanz im Vergleich zur Veröffentlichungsinstanz {#clientlibs-author-publish}
 
-Die meisten Client-seitigen Bibliotheken sind für die AEM Veröffentlichungsinstanz erforderlich. Das bedeutet, dass der Zweck der meisten Client-seitigen Bibliotheken darin besteht, das Endanwendererlebnis des Contents zu erstellen. Bei Client-seitigen Bibliotheken auf Veröffentlichungsinstanzen können [Frontend-Build-Tools](#fed-for-aemaacs) wie oben beschrieben über [Client-Bibliotheksordner](#creating-clientlib-folders) verwendet und bereitgestellt werden.
+Die meisten Client-seitigen Bibliotheken sind für die AEM-Publishing-Instanz erforderlich. Das bedeutet, dass der Zweck der meisten Client-seitigen Bibliotheken darin besteht, das Endanwendererlebnis des Contents zu erstellen. Bei Client-seitigen Bibliotheken auf Veröffentlichungsinstanzen können [Frontend-Build-Tools](#fed-for-aemaacs) wie oben beschrieben über [Client-Bibliotheksordner](#creating-clientlib-folders) verwendet und bereitgestellt werden.
 
 Es kann jedoch vorkommen, dass Client-Bibliotheken zum Anpassen des Authoring-Erlebnisses erforderlich sind. Beispielsweise kann es zum Anpassen eines Dialogfelds erforderlich sein, kleine CSS- oder JS-Elemente auf der AEM-Autoreninstanz bereitzustellen.
 
@@ -155,7 +155,7 @@ Die Komponente `/libs/cq/granite/components/dumplibs/dumplibs` generiert eine Se
 
 `https://<host>:<port>/libs/granite/ui/content/dumplibs.test.html`
 
-Die Informationen enthalten den Bibliothekspfad und -typ (CSS oder JS) sowie die Werte der Bibliotheksattribute, wie Kategorien und Abhängigkeiten. Nachfolgende Tabellen auf der Seite zeigen die Bibliotheken in jeder Kategorie und jedem Kanal an.
+Zu den Informationen gehören der Bibliothekspfad und -typ (CSS oder JS) sowie die Werte der Bibliotheksattribute, wie z. B. Kategorien und Abhängigkeiten. Nachfolgende Tabellen auf der Seite zeigen die Bibliotheken in jeder Kategorie und jedem Kanal.
 
 ### Anzeigen der generierten Ausgabe {#see-generated-output}
 
@@ -170,11 +170,11 @@ Die Komponente `dumplibs` enthält einen Test-Selektor, der den für `ui:include
 
 ## Zusätzliche Funktionen für Client-Bibliotheksordner {#additional-features}
 
-Es gibt eine Reihe weiterer Funktionen, die von Client-Bibliotheksordner in AEM unterstützt werden. Diese sind jedoch nicht für AEM as a Cloud Service erforderlich und werden daher nicht empfohlen. Sie werden hier zur Vollständigkeit aufgelistet.
+Es gibt eine Reihe weiterer Funktionen, die von Client-Bibliotheksordner in AEM unterstützt werden. Diese sind jedoch nicht für AEM as a Cloud Service erforderlich und werden daher nicht empfohlen. Sie werden hier der Vollständigkeit halber aufgelistet.
 
 >[!WARNING]
 >
->Diese zusätzlichen Funktionen für Client-Bibliotheksordner sind jedoch nicht für AEM as a Cloud Service erforderlich und werden daher nicht empfohlen. Sie werden hier zur Vollständigkeit aufgelistet.
+>Diese zusätzlichen Funktionen für Client-Bibliotheksordner sind jedoch für AEM as a Cloud Service nicht erforderlich und werden daher nicht empfohlen. Sie werden hier der Vollständigkeit halber aufgelistet.
 
 ### Adobe Granite HTML Library Manager {#html-library-manager}
 
@@ -184,12 +184,12 @@ Weitere Einstellungen der Client-Bibliothek können über das Bedienfeld **Adobe
 
 Zu den zusätzlichen Ordnereigenschaften gehört die Möglichkeit, Abhängigkeiten und Einbettungen zu kontrollieren, sie sind jedoch im Allgemeinen nicht mehr erforderlich und von ihrer Verwendung wird abgeraten:
 
-* `dependencies`: Eine Liste anderer Client-Bibliothekskategorien, von denen dieser Bibliotheksordner abhängt. Beispiel: Bei zwei `cq:ClientLibraryFolder` nodes `F` und `G`, wenn eine Datei in `F` erfordert eine andere Datei in `G` , um ordnungsgemäß zu funktionieren, muss mindestens eine der `categories` von `G` sollte zu den `dependencies` von `F`.
-* `embed`: Wird zum Einbetten von Code aus anderen Bibliotheken verwendet. If-Knoten `F` Einbettungsknoten `G` und `H`, ist die resultierende HTML eine Verkettung von Inhalten von Knoten `G` und `H`.
+* `dependencies`: Eine Liste anderer Client-Bibliothekskategorien, von denen dieser Bibliotheksordner abhängt. Beispiel: Wenn bei zwei `cq:ClientLibraryFolder`-Knoten `F` und `G` eine Datei in `F` eine andere Datei in `G` benötigt, muss mindestens eine der `categories` von `G` in den `dependencies` von `F` aufgeführt sein, um eine ordnungsgemäße Funktionsweise sicherzustellen.
+* `embed`: Wird zum Einbetten von Code aus anderen Bibliotheken verwendet. Wenn der Knoten `F` die Knoten `G` und `H` einbettet, enthält die resultierende HTML-Ausgabe Inhalte aus den Knoten `G` und `H`.
 
 ### Verknüpfen mit Abhängigkeiten {#linking-to-dependencies}
 
-Wenn der Code in Ihrem Client-Bibliotheksordner auf andere Bibliotheken verweist, müssen Sie die anderen Bibliotheken als Abhängigkeiten angeben. Die `ui:includeClientLib` -Tag, das auf Ihren Client-Bibliotheksordner verweist, führt dazu, dass der HTML-Code einen Link zu Ihrer generierten Bibliotheksdatei und den Abhängigkeiten enthält.
+Wenn der Code in Ihrem Client-Bibliotheksordner auf andere Bibliotheken verweist, müssen Sie die anderen Bibliotheken als Abhängigkeiten angeben. Durch das Tag `ui:includeClientLib`, das Ihren Client-Bibliotheksordner referenziert, enthält der HTML-Code einen Link zu Ihrer generierten Bibliotheksdatei sowie die Abhängigkeiten.
 
 Die Abhängigkeiten müssen ein anderer `cq:ClientLibraryFolder` sein. Fügen Sie Ihrem `cq:ClientLibraryFolder`-Knoten eine Eigenschaft mit den folgenden Attributen hinzu, um Abhängigkeiten anzugeben:
 
@@ -206,9 +206,9 @@ Beispielsweise weist `/etc/clientlibs/myclientlibs/publicmain` eine Abhängigkei
 
 ### Einbetten von Code aus anderen Bibliotheken {#embedding-code-from-other-libraries}
 
-Sie können Code aus einer Client-Bibliothek in eine andere Client-Bibliothek einbetten. Zur Laufzeit enthalten die generierten JS- und CSS-Dateien der eingebetteten Bibliothek den Code der eingebetteten Bibliothek.
+Sie können Code aus einer Client-Bibliothek in eine andere Client-Bibliothek einbetten. Zur Laufzeit wird der Code der eingebetteten Bibliothek in die generierten JS- und CSS-Dateien der einbettenden Bibliothek eingefügt.
 
-Das Einbetten von Code ist nützlich für den Zugriff auf Bibliotheken, die in gesicherten Bereichen des Repositorys gespeichert sind.
+Das Einbetten von Code ist nützlich, um Zugriff auf Bibliotheken zu ermöglichen, die in sicheren Bereichen des Repositorys gespeichert sind.
 
 #### Anwendungsspezifische Client-Bibliotheksordner {#app-specific-client-library-folders}
 
@@ -277,20 +277,20 @@ Wenn Sie die Datei `publicmain.css` öffnen, sehen Sie den folgenden Code:
 
 AEM ist mit austauschbaren Präprozessoren kompatibel und bietet Unterstützung für [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) für CSS und JavaScript sowie für [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) für JavaScript. YUI ist der Standard-Präprozessor in AEM.
 
-Die Plug-in-fähigen Präprozessoren ermöglichen eine flexible Verwendung, einschließlich:
+Die austauschbaren Präprozessoren bieten flexible Einsatzmöglichkeiten, z. B.:
 
-* Definieren von ScriptProcessors, die Skriptquellen verarbeiten können
-* Prozessoren können mit Optionen konfiguriert werden
-* Prozessoren können für die Minimierung, aber auch für nicht minimierte Fälle verwendet werden
-* Die clientlib kann definieren, welcher Prozessor verwendet werden soll
+* Definition von ScriptProcessors, die Skriptquellen verarbeiten können
+* Prozessoren sind mit Optionen konfigurierbar
+* Prozessoren können zur Minimierung, aber auch für nicht minimierte Fälle verwendet werden
+* Die Client-Bibliothek kann den zu verwendenden Prozessor festlegen
 
 >[!NOTE]
 >
->Standardmäßig verwendet AEM den YUI Compressor. Siehe [GitHub-Dokumentation zu YUI Compressor](https://github.com/yui/yuicompressor/issues) für eine Liste bekannter Probleme. Beim Wechseln zum GCC-Kompressor für bestimmte Clientlibs können einige Probleme behoben werden, die bei der Verwendung von YUI beobachtet wurden.
+>Standardmäßig verwendet AEM den YUI Compressor. In der [GitHub-Dokumentation zum YUI Compressor](https://github.com/yui/yuicompressor/issues) finden Sie eine Liste bekannter Probleme. Ein Wechsel zum GCC Compressor für bestimmte Client-Bibliotheken kann einige Probleme beheben, die mit YUI auftreten.
 
 >[!CAUTION]
 >
->Platzieren Sie keine minimierte Bibliothek in einer Client-Bibliothek. Geben Sie stattdessen die Rohbibliothek an und verwenden Sie, falls eine Minimierung erforderlich ist, die Optionen der Präprozessoren.
+>Platzieren Sie eine minimierte Bibliothek nicht in einer Client-Bibliothek. Stellen Sie stattdessen die Rohbibliothek bereit. Wenn eine Minimierung erforderlich ist, können Sie die Möglichkeiten der Präprozessoren verwenden.
 
 #### Nutzung {#usage}
 
@@ -343,7 +343,7 @@ Weitere Informationen zu GCC-Optionen finden Sie in der [GCC-Dokumentation](http
 
 #### Festlegen des Systemstandard-Minimierers {#set-system-default-minifier}
 
-YUI ist in AEM als Standard-Miniaturansicht festgelegt. Gehen Sie wie folgt vor, um dies in GCC zu ändern.
+YUI ist in AEM der Standardminimierer. Um stattdessen GCC festzulegen, führen Sie die folgenden Schritte aus.
 
 1. Rufen Sie Apache Felix Config Manager unter `http://<host>:<portY/system/console/configMgr` auf.
 1. Suchen und bearbeiten Sie den **Adobe Granite HTML Library Manager**.

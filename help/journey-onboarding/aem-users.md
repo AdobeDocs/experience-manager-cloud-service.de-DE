@@ -7,7 +7,7 @@ exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Nachdem Sie dieses Dokument gelesen haben, sollten Sie wissen, wie Sie:
 * Zugreifen auf Cloud Manager.
 * Anmeldung bei einer AEM as a Cloud Service-Instanz.
 
-Herzlichen Glückwunsch! Sie sind jetzt bereit, AEM-Inhalte zu erstellen und zu veröffentlichen. Siehe [Zusätzliche Ressourcen](#additional-resources) für weitere Informationen zum Erstellen von Inhalten in AEM und dessen Verwaltung.
+Herzlichen Glückwunsch! Sie sind jetzt bereit, AEM-Inhalte zu erstellen und zu veröffentlichen. Im Abschnitt [Zusätzliche Ressourcen](#additional-resources) finden Sie weitere Informationen zum Verfassen von Inhalten in AEM und zur Verwaltung dieser Inhalte.
 
 Wenn Sie daran interessiert sind, wie Entwickler und Bereitstellungs-Manager benutzerdefinierte Programme für AEM as a Cloud Service erstellen und verwalten, fahren Sie mit dem zweiten, optionalen Teil der Onboarding-Tour, [AEM-Entwickleraufgaben](developers.md), fort.
 

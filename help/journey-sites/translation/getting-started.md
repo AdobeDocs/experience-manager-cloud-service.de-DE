@@ -8,7 +8,7 @@ exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1399'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ Bevor Sie mit der Übersetzung Ihrer AEM-Inhalte beginnen, müssen Sie eine Reih
 
 >[!TIP]
 >
->Wenn Sie nicht mit der Verwendung eines umfangreichen CMS wie AEM vertraut sind, sollten Sie die Dokumentation [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) lesen, bevor Sie fortfahren. Die Grundlegende Handling-Dokumentation ist nicht Teil des Journey. Kehren Sie daher nach Abschluss zu dieser Seite zurück.
+>Wenn Sie nicht mit der Verwendung eines umfangreichen CMS wie AEM vertraut sind, sollten Sie die Dokumentation [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) lesen, bevor Sie fortfahren. Die grundlegende Dokumentation der Handhabung ist nicht Teil der Tour. Kehren Sie daher nach Abschluss zu dieser Seite zurück.
 
 ### Tools {#tools}
 
@@ -57,11 +57,11 @@ Bevor Sie mit der Übersetzung Ihrer AEM-Inhalte beginnen, müssen Sie eine Reih
 
 ## Speichern von Inhalten AEM {#content-in-aem}
 
-Für den Übersetzungsspezialisten ist es nicht wichtig, die Art und Weise, wie AEM Inhalte verwaltet, genau zu verstehen. Die Kenntnis der grundlegenden Konzepte und Terminologie ist jedoch hilfreich, wenn Sie später AEM Übersetzungstools verwenden. Am wichtigsten ist, dass Sie Ihre eigenen Inhalte verstehen und verstehen müssen, wie sie strukturiert sind, um sie effektiv zu übersetzen.
+Für den Übersetzungsspezialisten ist es nicht wichtig, die Art und Weise, wie AEM Inhalte verwaltet, genau zu verstehen. Wenn Sie jedoch mit den grundlegenden Konzepten und der Terminologie vertraut sind, wird dies bei der späteren Verwendung der AEM-Übersetzungs-Tools hilfreich sein. Vor allem müssen Sie Ihre eigenen Inhalte verstehen und wissen, wie sie strukturiert sind, um sie effektiv übersetzen zu können.
 
 ### Sites-Konsole {#sites-console}
 
-Die Sites-Konsole bietet einen Überblick über die Struktur Ihres Inhalts, sodass Sie mühelos in Ihren Inhalt navigieren und ihn verwalten können, indem Sie neue Seiten erstellen, Seiten verschieben und kopieren und Inhalte veröffentlichen.
+Die Sites-Konsole bietet einen Überblick über die Struktur Ihrer Inhalte, sodass Sie mühelos in Ihren Inhalten navigieren und sie verwalten können, indem Sie neue Seiten erstellen, Seiten verschieben und kopieren sowie Inhalte veröffentlichen.
 
 So greifen Sie auf die Sites-Konsole zu:
 
@@ -75,7 +75,7 @@ So greifen Sie auf die Sites-Konsole zu:
 
    ![Inhaltshierarchie](assets/sites-console-hierarchy.png)
 
-1. Durch Tippen oder Klicken auf das Kontrollkästchen eines Elements in einer Spalte wird dieses Element ausgewählt, die Details des ausgewählten Elements werden rechts in der Spalte angezeigt und es werden eine Reihe von Aktionen angezeigt, die für das ausgewählte Element in der Symbolleiste oben verfügbar sind.
+1. Durch Tippen oder Klicken auf das Kontrollkästchen eines Elements in einer Spalte wird dieses Element ausgewählt, und die Details des ausgewählten Elements werden in der Spalte rechts angezeigt. Außerdem wird in der Symbolleiste darüber eine Reihe von Aktionen angezeigt, die für das ausgewählte Element verfügbar sind.
 
    ![Inhaltsauswahl](assets/sites-console-selection.png)
 
@@ -97,7 +97,7 @@ In der Sites-Konsole können Sie durch Ihren Inhalt navigieren und einen Überbl
 
 So bearbeiten Sie eine Seite:
 
-1. Verwenden Sie die Sites-Konsole, um eine Seite zu suchen und auszuwählen. Denken Sie daran, dass Sie auf das Kontrollkästchen einer einzelnen Seite tippen oder klicken müssen, um sie auszuwählen.
+1. Verwenden Sie die Sites-Konsole, um eine Seite zu suchen und auszuwählen. Denken Sie daran, dass Sie auf das Kontrollkästchen einer Einzelseite tippen oder klicken müssen, um sie auszuwählen.
 
    ![Auswahl einer zu bearbeitenden Seite](assets/sites-editor-select-page.png)
 
@@ -175,7 +175,7 @@ Die endgültige Struktur kann etwa wie folgt aussehen:
     |- ...
 ```
 
-Beachten Sie den spezifischen Pfad Ihres Inhalts, da die Konfiguration der Übersetzung später erforderlich ist.
+Notieren Sie sich den spezifischen Pfad Ihrer Inhalte, da er später zur Konfiguration Ihrer Übersetzung erforderlich ist.
 
 >[!NOTE]
 >

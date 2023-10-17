@@ -1,11 +1,11 @@
 ---
 title: Suchen
-description: Schnellere Suche von Inhalten mit umfassender Suche
+description: Rasches Auffinden von Inhalten dank umfassender Suchfunktionen
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -33,16 +33,16 @@ Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
 So durchsuchen und filtern Sie Ressourcen:
 
-1. Öffnen Sie die Option **Suchen** (mit der Lupe in der Symbolleiste) und geben Sie den Suchbegriff ein. Vorschläge werden gemacht und können ausgewählt werden:
+1. Öffnen Sie die Option **Suchen** (mit der Lupe in der Symbolleiste) und geben Sie den Suchbegriff ein. Es werden Empfehlungen angezeigt, die Sie dann auswählen können:
 
    ![Suchbegriff](/help/sites-cloud/authoring/assets/search-term.png)
 
-   Standardmäßig sind die Suchergebnisse auf Ihre aktuelle Position beschränkt (d. h. Konsole und Ressourcentyp):
+   Standardmäßig sind die Suchergebnisse auf Ihre aktuelle Position begrenzt (d. h. Konsole und zugehöriger Ressourcentyp):
 
    ![Suchposition](/help/sites-cloud/authoring/assets/search-term-location.png)
 
 1. Bei Bedarf können Sie den Positionsfilter entfernen (wählen Sie für den zu entfernenden Filter **X** aus), um alle Konsolen-/Ressourcentypen zu durchsuchen.
-1. Die Ergebnisse werden angezeigt und nach Konsole und Ressourcentyp gruppiert.
+1. Die Ergebnisse werden gemäß der Konsole und dem zugehörigen Ressourcentyp gruppiert angezeigt.
 
    Sie können entweder eine spezifische Ressource (für eine spätere Aktion) oder eine Drilldown-Suche auswählen, indem Sie den erforderlichen Ressourcentyp auswählen, z. B. **Alle Sites anzeigen**:
 
@@ -96,7 +96,7 @@ Sie können nicht nur nach zahlreichen Facetten suchen, sondern auch eine bestim
 
    ![Speichern einer Suche mit einem Namen](/help/sites-cloud/authoring/assets/search-save-name.png)
 
-1. Die gespeicherte Suche ist in der Auswahl verfügbar, wenn Sie das nächste Mal auf den Suchbereich zugreifen:
+1. Die gespeicherte Suche ist außerdem in der Auswahl verfügbar, wenn Sie das nächste Mal auf den Suchbereich zugreifen:
 
    ![Gespeicherte Suchvorgänge](/help/sites-cloud/authoring/assets/saved-searches.png)
 

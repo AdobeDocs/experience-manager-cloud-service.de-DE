@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: e771913562b3770e5a504432d40c770804aadc4b
 workflow-type: tm+mt
 source-wordcount: '435'
-ht-degree: 30%
+ht-degree: 35%
 
 ---
 
@@ -17,7 +17,7 @@ Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuel
 
 Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Release 13804 zusammengefasst, das am 10. Oktober 2023 veröffentlicht wurde. Diese Wartungsversion ist eine Aktualisierung der vorherigen Wartungsversion 13665.
 
-2023.10.0 Die Funktionsaktivierung stellt das vollständige Funktionssatz für dieses Maintenance Release bereit. Siehe [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de) für weitere Informationen.
+2023.10.0: Die Funktionsaktivierung bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de).
 
 ### Verbesserungen {#enhancements-13804}
 

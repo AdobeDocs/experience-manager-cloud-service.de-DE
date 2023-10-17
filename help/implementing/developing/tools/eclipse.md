@@ -5,7 +5,7 @@ exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
 workflow-type: tm+mt
 source-wordcount: '1199'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -34,7 +34,7 @@ Bevor Sie die AEM Developer Tools verwenden, müssen Sie Folgendes tun:
 
 >[!NOTE]
 >
->In macOS müssen Sie mit der rechten Maustaste auf **Eclipse.app** und wählen Sie **Paketinhalt anzeigen** um `eclipse.ini`**.**
+>Unter macOS müssen Sie mit der rechten Maustaste auf **Eclipse.app** klicken und dann **Paketinhalt anzeigen** auswählen, um Ihre `eclipse.ini`**zu finden.**
 
 ## Installieren der AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -56,7 +56,7 @@ Sobald die oben genannten [Voraussetzungen](#requirements) erfüllt sind, könne
 1. Klicken Sie auf **Weiter**.
 1. Klicken Sie im Fenster **Installationsdetails** erneut auf **Weiter**.
 1. Akzeptieren Sie die Lizenzvereinbarungen und klicken Sie auf **Beenden**.
-1. Klicks **Neu startenNow** um Eclipse neu zu starten.
+1. Klicken Sie auf **Jetzt neu starten**, um Eclipse neu zu starten.
 
 ## Die AEM-Perspektive {#the-aem-perspective}
 
@@ -104,7 +104,7 @@ Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
 1. Anschließend konfigurieren Sie einen AEM-Server, mit dem sich Eclipse verbindet.
 
-   Um die Debugger-Funktion zu verwenden, müssen Sie AEM Debugmodus gestartet haben, was erreicht werden kann, indem Sie Folgendes zur Befehlszeile hinzufügen:
+   Um die Debugger-Funktion zu verwenden, müssen Sie AEM im Debugging-Modus starten. Dies kann z. B. erreicht werden, indem Sie Folgendes zur Befehlszeile hinzufügen:
 
    ```text
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123

@@ -1,11 +1,11 @@
 ---
 title: SPA-Blueprint
-description: In diesem Dokument wird der allgemeine, Framework-unabhängige Vertrag beschrieben, den jedes SPA Framework erfüllen soll, damit Sie bearbeitbare SPA in AEM implementieren können.
+description: In diesem Dokument wird der allgemeine, Framework-unabhängige Vertrag beschrieben, den jedes SPA-Framework erfüllen sollte, um in AEM bearbeitbare SPA-Komponenten zu implementieren.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2056'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ Damit der Autor den AEM-SPA-Editor zum Bearbeiten des Inhalts einer SPA verwende
 
 ## Einführung {#introduction}
 
-In diesem Dokument wird der allgemeine Vertrag beschrieben, den jedes SPA Framework erfüllen sollte (d. h. die Art AEM Support-Layer), damit Sie bearbeitbare SPA in AEM implementieren können.
+In diesem Dokument wird der Generalvertrag beschrieben, den jedes SPA-Framework erfüllen sollte (d. h. die Art der AEM-Support-Ebene), damit sich in AEM bearbeitbare SPA-Komponenten implementieren lassen.
 
 Damit der Autor den AEM-Seiteneditor zum Bearbeiten der von einem SPA-Framework bereitgestellten Daten verwenden kann, muss ein Projekt die Struktur des Modells interpretieren können, das die Semantik der für ein Programm im AEM-Repository gespeicherten Daten darstellt. Dafür stehen zwei Framework-agnostische Bibliotheken zur Verfügung: `PageModelManager` und `ComponentMapping`.
 
 >[!NOTE]
 >
->Die folgenden Anforderungen sind Framework-unabhängig. Wenn diese Anforderungen erfüllt sind, kann eine Framework-spezifische Schicht aus Modulen, Komponenten und Diensten bereitgestellt werden.
+>Die folgenden Anforderungen sind Framework-unabhängig. Wenn diese Anforderungen erfüllt sind, kann eine Framework-spezifische Ebene aus Modulen, Komponenten und Diensten bereitgestellt werden.
 >
 >**Für die React- und Angular-Frameworks werden diese Anforderungen in AEM bereits erfüllt.** Die Anforderungen im vorliegenden Blueprint sind nur relevant, wenn Sie ein anderes Framework zur Verwendung mit AEM implementieren möchten.
 
@@ -49,7 +49,7 @@ Alle im Modell vorhandenen Elemente enthalten ein Feld `:type`, das einen AEM-Re
 
 #### Dynamisches Modell für die Komponentenzuordnung {#dynamic-model-to-component-mapping}
 
-Weitere Informationen dazu, wie die Zuordnung des dynamischen Modells zu Komponenten im JavaScript SPA SDK erfolgt, finden Sie AEM Artikel . [Dynamisches Modell für die Komponentenzuordnung für SPA](model-to-component-mapping.md).
+Weitere Informationen dazu, wie das dynamische Modell für die Komponentenzuordnung im JavaScript SPA SDK für AEM funktioniert, finden Sie im Artikel [Dynamisches Modell für die Komponentenzuordnung bei SPAs](model-to-component-mapping.md).
 
 ### Framework-spezifische Schicht {#framework-specific-layer}
 
@@ -61,20 +61,20 @@ Das restliche Dokument beschreibt die Anforderungen dieser zwischengelagerten Fr
 
 ### Seitenmodell {#page-model}
 
-Die Inhaltsstruktur der Seite wird in AEM gespeichert. Das Modell der Seite wird verwendet, um SPA Komponenten zuzuordnen und zu instanziieren. Die SPA-Entwickler erstellen SPA-Komponenten, die sie den AEM-Komponenten zuordnen. Dazu verwenden sie den Ressourcentyp (oder Pfad zur AEM-Komponente) als eindeutigen Schlüssel.
+Die Inhaltsstruktur der Seite wird in AEM gespeichert. Das Modell der Seite wird verwendet, um SPA-Komponenten zuzuordnen und zu instanziieren. Die SPA-Entwickler erstellen SPA-Komponenten, die sie den AEM-Komponenten zuordnen. Dazu verwenden sie den Ressourcentyp (oder Pfad zur AEM-Komponente) als eindeutigen Schlüssel.
 
 Die SPA-Komponenten müssen mit dem Seitenmodell synchron sein und bei Änderungen des Inhalts entsprechend aktualisiert werden. Sie müssen ein Muster verwenden, das dynamische Komponenten nutzt, um Komponenten entsprechend der vorgegebenen Seitenmodellstruktur spontan zu instanziieren.
 
 ### Meta-Felder {#meta-fields}
 
-Das Seitenmodell verwendet den JSON Model Exporter, der wiederum auf der [Sling-Modell](https://sling.apache.org/documentation/bundles/models.html) API. Die exportierbaren Sling-Modelle stellen die folgende Liste von Feldern bereit, damit die zugrunde liegenden Bibliotheken das Datenmodell interpretieren können:
+Das Seitenmodell nutzt den JSON Model Exporter, der wiederum auf der [Sling Model](https://sling.apache.org/documentation/bundles/models.html)-API basiert. Die exportierbaren Sling-Modelle machen die folgende Liste von Feldern verfügbar, damit die zugrunde liegenden Bibliotheken das Datenmodell interpretieren können:
 
 * `:type`: Typ der AEM-Ressource (Standard = Ressourcentyp)
 * `:children`: Hierarchische untergeordnete Elemente der aktuellen Ressource. Untergeordnete Elemente sind nicht Teil des inneren Inhalts der aktuellen Ressource (können bei Elementen gefunden werden, die eine Seite darstellen).
 * `:hierarchyType`: Hierarchischer Typ einer Ressource. Der `PageModelManager` unterstützt derzeit den Seitentyp
 
 * `:items`: Untergeordnete Inhaltsressourcen der aktuellen Ressource (verschachtelte Struktur, nur in Containern vorhanden)
-* `:itemsOrder`: Sortierte Liste der untergeordneten Elemente. Das JSON-Zuordnungsobjekt garantiert nicht die Reihenfolge seiner Felder. Mit dem Zuordnungsobjekt und dem aktuellen Array hat der Nutzer der API die Vorteile beider Strukturen.
+* `:itemsOrder`: Sortierte Liste der untergeordneten Elemente. Das JSON-Zuordnungsobjekt bietet keine Garantie für die Reihenfolge seiner Felder. Mit dem Zuordnungsobjekt und dem aktuellen Array hat der Nutzer der API die Vorteile beider Strukturen.
 * `:path`: Inhaltspfad eines Elements (vorhanden bei Elementen, die eine Seite darstellen)
 
 Siehe auch [Erste Schritte mit AEM Content Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de).

@@ -5,7 +5,7 @@ exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 source-git-commit: 031ddfa2da0fc5ecc92267eae1f9dcaac394573d
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 39%
+ht-degree: 44%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 39%
 Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu extrahieren:
 
 >[!NOTE]
->Wenn Amazon S3, Azure Data Store oder File Data Store als Datenspeichertyp verwendet wird, können Sie den optionalen Vorkopieschritt ausführen, um die Extraktionsphase zu beschleunigen. Der Schritt &quot;Vorab-Kopieren&quot;ist am effektivsten für die erste vollständige Extraktion und Aufnahme. Siehe [Umgang mit großen Inhaltsverzeichnissen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) für weitere Details.
+>Wenn Amazon S3, Azure Data Store oder File Data Store als Datenspeichertyp verwendet wird, können Sie den optionalen Vorkopieschritt ausführen, um die Extraktionsphase zu beschleunigen. Der Schritt der Vorabkopie ist am effektivsten bei der ersten vollständigen Extraktion und Aufnahme. Weitere Informationen finden Sie unter [Handhabung großer Inhalts-Repositorys](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md).
 
 1. Wählen Sie einen Migrationssatz aus dem **Content Transfer** Assistent und klicken Sie auf **Extract** , um die Extraktion zu starten.
 
@@ -63,7 +63,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
 Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden.
 
 >[!NOTE]
->Nach dem ersten Transfer von Inhalten wird empfohlen, häufige differenzielle Auffüllungen des Inhalts durchzuführen, um den Zeitraum für das Einfrieren des Inhalts für den endgültigen differenziellen Inhaltstransfer zu verkürzen, bevor er in Cloud Service live geschaltet wird. Wenn Sie den Schritt zum Vorauskopieren für die erste vollständige Extraktion verwendet haben, können Sie die Vorkopie für nachfolgende Auffüllextraktionen überspringen (wenn die Größe des Auffüllmigrationssatzes kleiner als 200 GB ist). Der Grund dafür ist, dass dadurch dem gesamten Prozess Zeit hinzugefügt werden kann.
+>Nach dem ersten Transfer von Inhalten wird empfohlen, häufige differenzielle Auffüllungen des Inhalts durchzuführen, um den Zeitraum für das Einfrieren des Inhalts für den endgültigen differenziellen Inhaltstransfer zu verkürzen, bevor er in Cloud Service live geschaltet wird. Wenn Sie den Schritt zum Vorauskopieren für die erste vollständige Extraktion verwendet haben, können Sie die Vorkopie für nachfolgende Auffüllextraktionen überspringen (wenn die Größe des Auffüllmigrationssatzes kleiner als 200 GB ist). Dadurch kann sich nämlich der gesamte Vorgang verlängern.
 >Außerdem ist es wichtig, dass die Inhaltsstruktur vorhandener Inhalte nicht von dem Zeitpunkt an geändert wird, zu dem die erste Extraktion erfolgt, bis zum Zeitpunkt der Auffüllextraktion. Für Inhalte, deren Struktur seit der ersten Extraktion geändert wurde, können keine Auffüllungen ausgeführt werden. Achten Sie darauf, dies während des Migrationsprozesses entsprechend einzuschränken.
 
 Sobald die Extraktion abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Auffüllextraktion übertragen.

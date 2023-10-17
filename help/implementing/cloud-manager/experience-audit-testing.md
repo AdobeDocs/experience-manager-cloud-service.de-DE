@@ -5,7 +5,7 @@ exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 source-git-commit: 9f305e1127957fdba6dae978da4ac5fce4d3a776
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 82%
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ Experience Audit ist eine Funktion, die in Cloud Manager Sites-Produktions-Pipel
 
 Experience Audit in Cloud Manager stellt sicher, dass das Erlebnis der Endbenutzenden auf der Site höchsten Standards entspricht.
 
-Die Ergebnisse des Audits sind rein informativ und ermöglichen es dem Bereitstellungs-Manager, die Bewertungen sowie die Unterschiede zwischen aktuellen und vorherigen Bewertungen anzuzeigen. Diese Einblicke sind nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Implementierung eingeführt wurde.
+Die Ergebnisse des Audits sind rein informativ und ermöglichen es dem Bereitstellungs-Manager, die Bewertungen sowie die Unterschiede zwischen aktuellen und vorherigen Bewertungen anzuzeigen. Diese Erkenntnis ist wertvoll, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wurde.
 
 Experience Audit basiert auf Google Lighthouse, einem Open-Source-Tool von Google, und ist in allen Cloud Manager-Produktions-Pipelines aktiviert.
 
@@ -39,7 +39,7 @@ Experience Audit basiert auf Google Lighthouse, einem Open-Source-Tool von Googl
 
 >[!TIP]
 >
->Sie konfigurieren, welche Seiten bei der Erlebnisprüfung einbezogen werden sollen [Einrichten der Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
+>Sie konfigurieren, welche Seiten bei Experience Audit einbezogen werden sollen, wenn Sie das [Einrichten Ihrer Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code) vornehmen.
 
 ## Verstehen der Ergebnisse von Experience Audit {#understanding-experience-audit-results}
 
@@ -72,6 +72,6 @@ Die Änderungsmetrik kann einen der folgenden Werte haben.
 
 Durch das Aufrufen der Details in einem Test kann eine detailliertere Bewertung auf Seitenebene angezeigt werden. Sie können sehen, wie die einzelnen Seiten für den jeweiligen Test bewertet wurden, zusammen mit der Änderung im Vergleich zum vorherigen Testlauf.
 
-Wenn Sie auf die Details einer einzelnen Seite klicken, erhalten Sie Informationen zu den bewerteten Elementen der Seite sowie Anleitungen zum Beheben von Problemen, falls Verbesserungsmöglichkeiten erkannt werden.
+Wenn Sie auf die Details einer einzelnen Seite klicken, erhalten Sie Informationen zu den bewerteten Elementen der Seite sowie Anleitungen zur Problembehebung, falls Verbesserungsmöglichkeiten erkannt werden.
 
 ![Werte auf Seitenebene](/help/implementing/cloud-manager/assets/exp-audit-2.png)

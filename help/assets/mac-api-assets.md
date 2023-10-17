@@ -8,7 +8,7 @@ exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1562'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -123,7 +123,7 @@ Ruft eine Siren-Darstellung eines vorhandenen Ordners und seiner untergeordneten
 * 404 – NICHT GEFUNDEN – Ordner existiert nicht oder ist nicht zugänglich.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-**Antwort**: Die Klasse der zurückgegebenen Entität ist ein Asset oder ein Ordner. Die Eigenschaften der enthaltenen Entitäten bilden eine Teilmenge der vollständigen Eigenschaften jeder Entität. Um eine vollständige Darstellung der Entität zu erhalten, sollten Kunden den Inhalt der URL abrufen, auf die der Link mit einer `rel` von `self`.
+**Antwort**: Die Klasse der zurückgegebenen Entität ist ein Asset oder ein Ordner. Die Eigenschaften der enthaltenen Entitäten bilden eine Teilmenge der vollständigen Eigenschaften jeder Entität. Um eine vollständige Darstellung der Entität zu erreichen, sollten Kundinnen und Kunden den Inhalt der URL abrufen, auf die der Link mit einem `rel` von `self` verweist.
 
 ## Erstellen von Ordnern {#create-a-folder}
 

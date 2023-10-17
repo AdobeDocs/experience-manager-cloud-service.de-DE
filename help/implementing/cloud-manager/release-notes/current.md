@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: b760b3a65d89b0b4f924379fc460015a58e2ed3e
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 16%
+ht-degree: 19%
 
 ---
 
@@ -17,7 +17,7 @@ Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2023.10.0 in A
 
 >[!NOTE]
 >
->Siehe [diese Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) für die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
+>Auf [dieser Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) finden Sie die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
 
 ## Veröffentlichungsdatum {#release-date}
 

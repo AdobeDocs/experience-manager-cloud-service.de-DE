@@ -6,7 +6,7 @@ exl-id: 534a8084-88f7-410e-b872-719e47e62b10
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -44,11 +44,11 @@ Sie können die Ordner über die Hauptbenutzeroberfläche oder die linke Seitenl
 * [Aufgaben](/help/assets/my-workspace-assets-view.md): Sie können die Aufgaben, die Ihnen zugewiesen wurden, auf der Registerkarte **Meine Aufgaben** ansehen. Die Aufgaben, die von Ihnen erstellt wurden, können hingegen auf der Registerkarte **Zugewiesene Aufgaben** angesehen werden. Darüber hinaus finden Sie die Aufgaben, die Sie abgeschlossen haben, auf der Registerkarte **Abgeschlossene Aufgaben**.
 * [Assets](/help/assets/manage-organize-assets-view.md): Liste aller Ordner in einer Baumstrukturansicht, auf die Sie Zugriff haben.
 * **Kürzlich angesehen**: Liste der Assets, die Sie kürzlich in der Vorschau betrachtet haben. [!DNL Assets view] zeigt nur die Assets an, die Sie in der Vorschau anzeigen. Hier werden die Assets, an denen Sie beim Durchsuchen der Repository-Dateien oder -Ordner vorbeiscrollen, nicht angezeigt.
-* [Sammlungen](/help/assets/manage-collections-assets-view.md): Eine Sammlung ist ein Satz von Assets, Ordnern oder anderen Sammlungen in der Adobe Experience Manager Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzenden gemeinsam verwendet werden. Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten. Sie können mehrere Sammlungen für eine Benutzerin bzw. einen Benutzer freigeben. Jede Sammlung enthält Verweise auf Assets. Die referenzielle Integrität von Assets wird sammlungsübergreifend aufrechterhalten.
+* [Sammlungen](/help/assets/manage-collections-assets-view.md): Eine Sammlung ist ein Satz von Assets, Ordnern oder sonstigen Sammlungen in der Adobe Experience Manager Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzenden gemeinsam verwendet werden. Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten. Sie können mehrere Sammlungen für eine Benutzerin bzw. einen Benutzer freigeben. Jede Sammlung enthält Verweise auf Assets. Die referenzielle Integrität von Assets wird sammlungsübergreifend aufrechterhalten.
 
-* [Erkenntnisse](/help/assets/manage-reports-assets-view.md#view-live-statistics): In [!DNL Assets view] können Sie Echtzeiterkenntnisse in Ihrem Dashboard anzeigen. Mit der Asset-Ansicht können Sie Echtzeitdaten für Ihre Assets-Ansichtsumgebung mit dem Insights-Dashboard anzeigen. Sie können Echtzeit-Ereignismetriken während der letzten 30 Tage oder für die letzten 12 Monate anzeigen.
-* **Papierkorb**: Enthält eine Liste der Assets, die aus dem Stammordner **[!UICONTROL Assets]** gelöscht wurden. Sie können ein Asset im Papierkorb-Ordner auswählen, um es entweder am ursprünglichen Speicherort wiederherzustellen oder dauerhaft zu löschen. Sie können auch ein Keyword angeben oder standardmäßige bzw. benutzerdefinierte Filter anwenden, um nach geeigneten Assets im Papierkorb-Ordner zu suchen. Weitere Informationen zur Verwendung von standardmäßigen und benutzerdefinierten Filtern finden Sie unter [Suchen von Assets in der Asset-Ansicht](/help/assets/search-assets-view.md).
-* **Einstellungen**: Sie können verschiedene Optionen der Asset-Ansicht mit **Einstellungen**, wie Metadatenformulare, Berichte und Taxonomieverwaltung.
+* [Erkenntnisse](/help/assets/manage-reports-assets-view.md#view-live-statistics): In [!DNL Assets view] können Sie Echtzeiterkenntnisse in Ihrem Dashboard anzeigen. In der Assets-Ansicht können Sie mit dem Insights-Dashboard Echtzeitdaten für Ihre Assets Essentials-Umgebung anzeigen. Sie können Echtzeit-Ereignismetriken während der letzten 30 Tage oder für die letzten 12 Monate anzeigen.
+* **Papierkorb**: Enthält eine Liste der Assets, die aus dem Stammordner **[!UICONTROL Assets]** gelöscht wurden. Sie können ein Asset im Papierkorb-Ordner auswählen, um es entweder am ursprünglichen Speicherort wiederherzustellen oder dauerhaft zu löschen. Sie können auch einen Suchbegriff angeben oder standardmäßige bzw. benutzerdefinierte Filter anwenden, um im Papierkorb-Ordner nach geeigneten Assets zu suchen. Weitere Informationen zum Verwenden standardmäßiger und benutzerdefinierter Filter finden Sie unter [Suchen nach Assets in der Assets-Ansicht](/help/assets/search-assets-view.md).
+* **Einstellungen**: Sie können verschiedene Optionen der Assets-Ansicht mithilfe von **Einstellungen** konfigurieren, wie etwa Metadatenformulare, Berichte und Taxonomieverwaltung.
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
 * **Libraries**: Access to [!DNL Adobe Creative Cloud Team] (CCT) Libraries view. This view is visible only if the user is entitled to CCT Libraries.
@@ -114,7 +114,7 @@ Other use cases after previewing.
 
 ## Nächste Schritte {#next-steps}
 
-* Stellen Sie mithilfe der [!UICONTROL Feedback] Option in der Benutzeroberfläche der Assets-Ansicht verfügbar
+* Geben Sie Produkt-Feedback über die Option [!UICONTROL Feedback] in der Benutzeroberfläche der Assets-Ansicht
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 

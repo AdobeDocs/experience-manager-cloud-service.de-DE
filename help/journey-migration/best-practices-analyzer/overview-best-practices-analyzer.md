@@ -5,7 +5,7 @@ exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
 source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
@@ -37,4 +37,4 @@ Weitere Informationen zu den Kategorien und möglichen Auswirkungen und Lösunge
 >[!NOTE]
 >Mithilfe des Best Practices Analyzer-Berichts kann der Zeit- und Kostenaufwand für die Umstellung auf AEM as a Cloud Service schneller abgeschätzt werden, indem Informationen bereitgestellt werden, die andernfalls manuell erfasst und ausgewertet werden müssten.
 
-Sie können den Best Practices Analyzer-Bericht auch von Ihrer AEM-Instanz herunterladen. Siehe [Anzeigen des Berichts &quot;Best Practices Analyzer&quot;](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) für weitere Details.
+Sie können den Best Practices Analyzer-Bericht auch von Ihrer AEM-Instanz herunterladen. Weitere Informationen finden Sie unter [Anzeigen des Best Practices Analyzer-Berichts](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report).

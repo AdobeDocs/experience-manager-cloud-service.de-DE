@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: 6ba6dddd8f949e55a0575bd373c0b87dc2d7f2b5
 workflow-type: tm+mt
 source-wordcount: '1732'
-ht-degree: 75%
+ht-degree: 91%
 
 ---
 
@@ -30,7 +30,7 @@ New Relic One APM für AEM as a Cloud Service hat viele Funktionen.
 
 * Instrumentierter New Relic One APM-Agent, der exakte Methodenaufrufe mit Zeilennummern anzeigt, einschließlich externer Abhängigkeiten und Datenbanken
 
-* Ganzheitliche Leistungsoptimierung durch Kombination von Schlüsselmetriken aus Überwachung auf Infrastrukturebene und Anwendungsüberwachung (Adobe Experience Manager)
+* Ganzheitliche Leistungsoptimierung durch die Kombination von Schlüsselmetriken aus der Überwachung auf Infrastruktur- und Anwendungsebene (Adobe Experience Manager).
 
 * Anzeige von JMX-Mbeans- und Konsistenzprüfungen von AEM as a Cloud Service direkt in New Relic Insights-Metriken, was eine umfassende Leistungsprüfung des Programm-Stacks und der Konsistenzmetriken ermöglicht.
 
@@ -64,7 +64,7 @@ Sobald die Benutzenden definiert sind, sendet New Relic eine Bestätigungs-E-Mai
 
 >[!NOTE]
 >
->Wenn Sie die New Relic One-Benutzer verwalten, müssen Sie sich auch selbst als Benutzer hinzufügen, um ebenfalls Zugriff zu erhalten. Die Rolle als **Geschäftsinhaber** oder **Bereitstellungs-Manager** reicht nicht aus, um Zugriff auf New Relic One zu erhalten. Sie müssen auch sich selbst die Benutzenden-Rolle zuweisen.
+>Wenn Sie die Benutzenden von New Relic One verwalten, müssen Sie sich auch selbst als Benutzerin bzw. Benutzer hinzufügen, um ebenfalls Zugriff zu erhalten. Die Rolle als **Geschäftsinhaber** oder **Bereitstellungs-Manager** reicht nicht aus, um Zugriff auf New Relic One zu erhalten. Sie müssen auch sich selbst die Benutzenden-Rolle zuweisen.
 
 ## Aktivieren Ihres New Relic One-Benutzerkontos {#activate-account}
 
@@ -84,7 +84,7 @@ Führen Sie diese Schritte aus, um Ihr Konto als New Relic-Benutzer bzw. -Benutz
 
 1. New Relic sendet Ihnen eine E-Mail mit einem Link zur Kontobestätigung.
 
-Wenn Sie keine Bestätigungs-E-Mail von New Relic erhalten, lesen Sie [Fehlerbehebung .](#troubshooting)
+Wenn Sie keine Bestätigungs-E-Mail von New Relic erhalten, lesen Sie bitte den Abschnitt [Fehlerbehebung](#troubshooting).
 
 ## Zugriff auf New Relic One {#accessing-new-relic}
 
@@ -114,9 +114,9 @@ Direkter Zugriff auf New Relic One
 
 Wenn Sie während der Anmeldung bei New Relic One aufgefordert werden, Ihre E-Mail-Adresse zu überprüfen, bedeutet dies, dass Ihre E-Mail-Adresse mit mehreren Konten verknüpft ist. Auf diese Weise können Sie festlegen, auf welches Konto zugegriffen werden soll.
 
-Wenn Sie Ihre E-Mail-Adresse nicht überprüfen, versucht New Relic, Sie mit dem zuletzt erstellten Benutzerdatensatz anzumelden, der mit Ihrer E-Mail-Adresse verknüpft ist. Um zu vermeiden, dass Ihre E-Mail-Adresse bei jeder Anmeldung überprüft wird, klicken Sie im Anmeldebildschirm auf das Kontrollkästchen **Angaben speichern**.
+Wenn Sie Ihre E-Mail-Adresse nicht verifizieren, versucht New Relic, Sie mit dem zuletzt erstellten Benutzerdatensatz anzumelden, der mit Ihrer E-Mail-Adresse verknüpft ist. Um zu vermeiden, dass Ihre E-Mail-Adresse bei jeder Anmeldung überprüft wird, klicken Sie im Anmeldebildschirm auf das Kontrollkästchen **Angaben speichern**.
 
-Um weitere Hilfe zu erhalten, öffnen Sie ein Support-Ticket über das [AEM Support Portal](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+Um weitere Hilfe zu erhalten, öffnen Sie ein Support-Ticket über das [AEM Support-Portal](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 
 ## Fehlerbehebung für den Zugriff auf New Relic One {#troubleshooting}
 
@@ -134,20 +134,20 @@ Wenn Sie als New Relic One-Benutzerin oder -Benutzer hinzugefügt wurden, wie im
 
 1. New Relic sendet Ihnen eine E-Mail mit einem Link zur Kontobestätigung.
 
-Wenn Sie den Anmeldevorgang abgeschlossen haben und sich aufgrund von E-Mail- oder Kennwortfehlermeldungen nicht bei Ihrem Konto anmelden können, melden Sie ein Supportticket über die [Admin Console.](https://adminconsole.adobe.com/)
+Wenn Sie den Anmeldevorgang abgeschlossen haben und sich aufgrund von E-Mail- oder Kennwortfehlermeldungen nicht bei Ihrem Konto anmelden können, erstellen Sie ein Support-Ticket über die [Admin Console](https://adminconsole.adobe.com/).
 
-Wenn Sie keine E-Mail von New Relic erhalten:
+Falls Sie keine E-Mail von New Relic erhalten:
 
 * Überprüfen Sie Ihre [Spam-Filter](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/).
 * [Fügen Sie New Relic gegebenenfalls zu Ihrer E-Mail-Zulassungsliste hinzu](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
-* Wenn keiner der Vorschläge hilft, können Sie Feedback zum Support-Ticket geben und das Adobe Support-Team kann Ihnen helfen.
+* Wenn keiner dieser Vorschläge hilft, geben Sie Feedback zum Support-Ticket, und das Adobe-Supportteam wird Ihnen weiterhelfen.
 
 ## Einschränkungen {#limitations}
 
 Die folgenden Einschränkungen gelten für das Hinzufügen von Benutzenden zu New Relic One:
 
-* Es können maximal 30 Benutzende hinzugefügt werden. Wenn die maximale Anzahl von Benutzern erreicht wurde, entfernen Sie Benutzer, um neue Benutzer hinzufügen zu können.
-* Benutzer, die zu New Relic hinzugefügt wurden, sind vom Typ **Beschränkt**, siehe [Weitere Informationen finden Sie in der Dokumentation zu New Relic .](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
+* Es können maximal 30 Benutzende hinzugefügt werden. Wenn die maximale Anzahl von Benutzenden erreicht wurde, entfernen Sie Benutzende, um neue Benutzende hinzufügen zu können.
+* Benutzende, die zu New Relic hinzugefügt wurden, sind vom Typ **Eingeschränkt**. Weitere Informationen finden Sie in der [Dokumentation zu New Relic](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change).
 * AEM as a Cloud Service bietet nur die New Relic One APM-Lösung, aber keine Unterstützung für Warnhinweise, Protokollierung oder API-Integrationen.
 
 >[!NOTE]
@@ -156,7 +156,7 @@ Die folgenden Einschränkungen gelten für das Hinzufügen von Benutzenden zu Ne
 >
 >Bitte öffnen Sie ein Support-Ticket über das [AEM Support Portal](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) wenn Sie den APM-Agenten für Ihre AEMaaCS-Umgebungen erneut aktivieren möchten.
 
-Wenn Sie weitere Hilfe oder zusätzliche Anleitungen zu New Relic One-Angeboten für Ihr AEM as a Cloud Service Programm benötigen, öffnen Sie ein Supportticket über [AEM Support Portal](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+Um weitere Hilfe oder zusätzliche Anleitungen zu New Relic One-Angeboten für Ihr Programm in AEM as a Cloud Service zu erhalten, öffnen Sie ein Support-Ticket über das [AEM-Support-Portal](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 
 ## Häufig gestellte Fragen zu New Relic One {#faqs}
 
@@ -182,7 +182,7 @@ Adobe bietet New Relic One nur zu Beobachtungszwecken Zugriff und nutzt ihn nich
 
 ### Wer kann auf die Daten des Cloud-Service von New Relic One zugreifen? {#access-new-relic-cloud}
 
-Bis zu 30 Mitglieder Ihres Teams erhalten uneingeschränkten Lesezugriff. Sie erhalten Lesezugriff für alle APM-Metriken, die vom New Relic One-Agenten erfasst werden.
+Vollständiger Lesezugriff wird bis zu 30 Mitgliedern Ihres Teams gewährt. Sie erhalten Lesezugriff für alle APM-Metriken, die vom New Relic One-Agenten erfasst werden.
 
 ### Wird eine benutzerdefinierte SSO-Konfiguration unterstützt? {#custom-sso}
 
@@ -194,11 +194,11 @@ New Relic One ist die neue Beobachtungsplattform von New Relic und ermöglicht e
 
 New Relic One bietet Benutzenden die Möglichkeit, alle Konten zu durchsuchen, zu denen sie Zugriff haben, und die Daten von allen Services und Hosts in einer Ansicht zu visualisieren.
 
-Während der Adobe-Support die AEM as a Cloud Service Anwendung mithilfe von New Relic One und anderen internen Tools im Rahmen Ihres Dienstes überwacht, können Ihre Teams New Relic weiterhin für lokal gehostete Dienste und Infrastruktur verwenden. Sie können die Daten sowohl aus dem Adobe New Relic One-Konto als auch aus kundenverwalteten New Relic-Konten visualisieren.
+Während die Adobe-Supportteams im Rahmen Ihres Services die AEM as a Cloud Service-Anwendung mit New Relic One und anderen internen Tools überwachen, können Ihre Teams New Relic für lokal gehostete Services und Infrastrukturen nutzen. Die Visualisierung der Daten ist sowohl über das Adobe New Relic One-Konto als auch über kundenseitig verwaltete New Relic-Konten möglich.
 
 >[!NOTE]
 >
->Um beide Datensätze in New Relic One anzuzeigen, müssen Benutzende über die entsprechenden Berechtigungen verfügen und für beide Konten (das Adobe New Relic One- und das von der Kundin bzw. dem Kunden verwaltete New Relic-Konto) dieselbe Anmeldemethode verwenden.
+>Um beide Datensätze in New Relic One anzuzeigen, müssen Benutzende über die entsprechenden Berechtigungen verfügen und für beide Konten (das Adobe New Relic One- und das kundenseitig verwaltete New Relic-Konto) dieselbe Anmeldemethode verwenden.
 
 ### Der APM-Agent für mein New Relic One-Konto wird angehalten. Was ist passiert? {#deactivated}
 

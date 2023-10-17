@@ -13,7 +13,7 @@ exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
 source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 47%
+ht-degree: 51%
 
 ---
 
@@ -43,7 +43,7 @@ Gehen Sie wie folgt vor, um eine AEM Site zu verbinden und AEM Kernkomponenten m
    * Wählen Sie die von Ihnen erstellte Basiskonfiguration aus
    * Erstellen Sie eine Konfiguration anhand der unter Nummer 2 beschriebenen Schritte.
 
-   Diese neue Konfiguration wird als untergeordnete Konfiguration der Basiskonfiguration erstellt. Sie können nun die Konfigurationseinstellungen unter „Tools“ -> „Allgemein“ -> „Konfigurationsbrowser“ erstellen.
+   Diese neue Konfiguration wird als untergeordnete Konfiguration der Basiskonfiguration erstellt. Sie können nun die Konfigurationseinstellungen unter „Tools“ > „Allgemein“ > „Konfigurationsbrowser“ erstellen.
 
    >[!TIP]
    >

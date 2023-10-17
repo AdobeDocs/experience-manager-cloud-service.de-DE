@@ -5,7 +5,7 @@ exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Der Sling Resource Merger bietet Dienste für den Zugriff auf und das Zusammenf�
 
 Mit dem Sling Resource Merger werden die Überlagerungs-/Überschreibungsressourcen bzw. -eigenschaften mit den ursprünglichen Ressourcen/Eigenschaften zusammengeführt:
 
-* Der Inhalt der benutzerdefinierten Definition hat eine höhere Priorität als der des Originals (d. h. *Overlays* oder *Außerkraftsetzungen* ).
+* Der Inhalt der angepassten Definition hat eine höhere Priorität als der des Originals (d. h. er *überlagert* oder *überschreibt* dieses).
 
 * Wo nötig, geben bei der Anpassung definierte [Eigenschaften](#properties) an, wie aus dem Original zusammengeführte Inhalte zu verwenden sind.
 
@@ -117,7 +117,7 @@ Somit werden im obigen Überlagerungsbeispiel die folgenden Knoten benötigt:
 
 >[!NOTE]
 >
->Bei Verwendung des Sling Resource Merger (d. h. bei Verwendung der standardmäßigen, Touch-optimierten Benutzeroberfläche) wird nicht empfohlen, die gesamte Struktur aus zu kopieren. `/libs` da dies zu einer zu großen Anzahl von Informationen führen würde `/apps`. Dies führt u. U. zu Problemen, wenn für das System ein Upgrade jedweder Art durchgeführt wird.
+>Bei Verwendung des Sling Resource Merger (d. h. bei Verwendung der standardmäßigen, Touch-optimierten Benutzeroberfläche) ist es nicht empfehlenswert, die gesamte Struktur aus `/libs` zu kopieren, da so zu viele Informationen in `/apps` gespeichert würden. Dies führt u. U. zu Problemen, wenn für das System ein Upgrade jedweder Art durchgeführt wird.
 
 ### Anwendungsfälle {#use-cases}
 
@@ -140,7 +140,7 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
       * Die Eigenschaft verfügt über eine Priorität, die auf der Konfiguration des Sling Resource Resolver basiert.
       * Das Ändern des Eigenschaftstyps wird unterstützt.
 
-        Wenn Sie einen Eigenschaftstyp verwenden, der sich von dem in `/libs`festgelegt ist, wird der von Ihnen definierte Eigenschaftstyp verwendet.
+        Wenn Sie einen Eigenschaftstyp verwenden, der sich von dem in `/libs` verwendeten unterscheidet, wird der von Ihnen definierte Eigenschaftstyp verwendet.
 
   >[!NOTE]
   >

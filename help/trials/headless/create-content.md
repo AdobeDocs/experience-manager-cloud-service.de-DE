@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 82%
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 82%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="Gute gemacht! In diesem Modul haben Sie erfahren, wie Sie auf der Grundlage des zuvor erstellten Modells Headless-Inhalte als Inhaltsfragment erstellen können. Sie wissen jetzt, wie Content Teams Inhalte für Apps und Websites unabhängig von Entwicklungszyklen erstellen und verwalten können."
+>title="Gut gemacht! In diesem Modul haben Sie erfahren, wie Sie auf der Grundlage des zuvor erstellten Modells Headless-Inhalte als Inhaltsfragment erstellen können. Sie wissen jetzt, wie Content Teams Inhalte für Apps und Websites unabhängig von Entwicklungszyklen erstellen und verwalten können."
 >abstract=""
 
 ## Erstellen eines Inhaltsfragments {#create-fragment}
@@ -39,7 +39,7 @@ Die Inhaltsfragmentkonsole wird verwendet, um Headless-Inhalte über Versandkan�
 
 1. Tippen oder klicken Sie oben rechts in der Konsole auf die Schaltfläche **Erstellen**.
 
-1. Die **Neues Inhaltsfragment** wird geöffnet, in dem Sie mit der Erstellung eines neuen Inhaltsfragments beginnen können. **Standort** automatisch mit dem Speicherort des neuen Inhalts gefüllt.
+1. Der Dialog **Neues Inhaltsfragment** wird geöffnet, in dem Sie mit der Erstellung eines neuen Inhaltsfragments beginnen können. **Speicherort** wird automatisch mit dem Speicherort des neuen Inhalts befüllt.
 
 1. Wählen Sie in der Dropdown-Liste **Inhaltsfragmentmodell** das zuvor erstellte **Abenteuer**-Inhaltsfragmentmodell.
 
@@ -51,11 +51,11 @@ Die Inhaltsfragmentkonsole wird verwendet, um Headless-Inhalte über Versandkan�
 
 >[!TIP]
 >
->Abhängig von Ihren Browsereinstellungen wird die neue Browser-Registerkarte möglicherweise durch einen Popup-Blocker unterdrückt. Wenn das neue Fragment nach dem Klicken nicht geöffnet wird **Erstellen und öffnen**, überprüfen Sie Ihre Browsereinstellungen.
+>Abhängig von Ihren Browsereinstellungen wird die neue Browser-Registerkarte möglicherweise durch einen Popup-Blocker unterdrückt. Wenn sich Ihr neues Fragment nicht öffnet, nachdem Sie auf **Erstellen und öffnen** geklickt haben, überprüfen Sie bitte Ihre Browser-Einstellungen.
 
 ## Hinzufügen von Inhalt zu Ihrem Inhaltsfragment {#add-content}
 
-Nachdem Sie das neue Inhaltsfragment gespeichert und geöffnet haben, wird der Inhaltsfragment-Editor auf einer neuen Registerkarte geöffnet. Hier können Sie den Inhalt des neuen Fragments hinzufügen.
+Wenn Sie Ihr neues Inhaltsfragment speichern und öffnen, wird der Inhaltsfragment-Editor auf einer neuen Registerkarte geöffnet. Hier können Sie den Inhalt des neuen Fragments hinzufügen.
 
 1. Der Inhaltsfragment-Editor enthält die Felder, die Sie im ausgewählten Modell definiert haben. Hier können Sie jedem Feld Inhalt hinzufügen, um Ihr Inhaltsfragment zu vervollständigen. Ihr Fortschritt wird automatisch gespeichert.
 

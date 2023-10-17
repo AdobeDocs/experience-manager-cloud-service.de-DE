@@ -5,7 +5,7 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
 workflow-type: tm+mt
 source-wordcount: '2229'
-ht-degree: 60%
+ht-degree: 63%
 
 ---
 
@@ -88,7 +88,7 @@ Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 >
->Weitere Informationen finden Sie unter [Grundlagen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
+>Weitere Details finden Sie auch in den [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
 
 ## Inhaltsfragmente und Content Services {#content-fragments-and-content-services}
 
@@ -122,7 +122,7 @@ Weitere Informationen finden Sie unter [Wiederverwenden von Inhaltsfragmenten mi
 
 >[!CAUTION]
 >
->Wenn Sie MSM verwenden möchten (wodurch Kopien von Inhaltsfragmenten erstellt werden), müssen Sie **Eindeutig** -Einschränkungen sollten aus allen Datentypen entfernt werden, die in der entsprechenden [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md).
+>Wenn Sie MSM verwenden wollen (welches Kopien von Inhaltsfragmenten erstellt), dann sollten alle **Eindeutig**-Einschränkungen aus allen Datentypen entfernt werden, die in den jeweiligen [Inhaltsfragmentmodellen](/help/assets/content-fragments/content-fragments-models.md) verwendet werden.
 
 ## Inhaltstyp {#content-type}
 
@@ -294,7 +294,7 @@ Um Ihre Inhaltsfragmente für die Seitenbearbeitung zu verwenden, benötigen Sie
 
    * Instrumentiert, um das Fragment im HTML-Format, JSON-Format oder beides bereitzustellen.
    * Erforderlich zum [Referenzieren des Fragments auf einer Seite](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-   * Zuständig für Layout und Bereitstellung eines Fragments, d. h. Kanäle.
+   * Zuständig für das Layout und die Bereitstellung eines Fragments, d. h. Kanäle.
    * Fragmente benötigen eine oder mehrere dedizierte Komponenten, um das Layout zu definieren und einige oder alle Elemente/Varianten und zugehörigen Inhalte bereitzustellen.
    * Wenn Sie ein Fragment bei der Bearbeitung auf eine Seite ziehen, wird die erforderliche Komponente automatisch zugewiesen.
 

@@ -5,7 +5,7 @@ exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
 source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 34%
+ht-degree: 44%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 34%
 In diesem Abschnitt wird beschrieben, wie Sie eine Verzweigung für Ihr Programm in Cloud Manager erstellen.
 
 >[!NOTE]
->Siehe [Verwenden des Assistenten in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html?lang=en) , um zu erfahren, wie Sie mithilfe des Assistenten ein AEM Anwendungsprojekt in Cloud Manager erstellen.
+>Informationen zum Erstellen eines AEM-Anwendungsprojekts in Cloud Manager mithilfe des Assistenten finden Sie unter [Verwenden des Assistenten in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html?lang=en).
 
 ## Ziel {#objective}
 

@@ -5,7 +5,7 @@ exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
 workflow-type: tm+mt
 source-wordcount: '2000'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ Unabhängig von AEM sollten Sie auch sicherstellen, dass Sie eine geeignete Entw
 
 ### Definieren von Inhaltsmodellen und APIs {#defining-models}
 
-Sie möchten konsistente Erlebnisse gestalten und personalisierte Kampagnen kanalübergreifend verwalten, sodass Sie jeden einzelnen Kanal und jede einzelne Oberfläche als eigene Inhaltsstruktur für die Bereitstellung betrachten können. Die Pflege jedes Kanals mit seinem eigenen Inhaltsmodell ist jedoch schwierig.
+Sie möchten konsistente Erlebnisse gestalten und personalisierte Kampagnen kanalübergreifend verwalten, sodass Sie jeden einzelnen Kanal und jede einzelne Oberfläche als eigene Inhaltsstruktur für die Bereitstellung betrachten können. Allerdings wäre es schwierig, für jeden Kanal ein eigenes Inhaltsmodell zu verwalten.
 
 Stattdessen sollten Sie sich überlegen, wie Inhalte auf verschiedenen Oberflächen basierend auf Organisationsprinzipien wie Marken- und Produkthierarchien, Waren- oder Oberflächenkategorien oder Schritten in der Customer Journey zusammenhängen. Wenn Sie beispielsweise über eine Reihe von Oberflächen zur Betreuung einer bestimmten von Ihnen hergestellten Automarke verfügen, empfiehlt es sich, mit einem Inhaltsmodell für allgemeine Informationen zu beginnen, die für das gesamte Fahrzeug gelten, und dann zu spezifischeren Elemente überzugehen, beispielsweise Inhalte, die benötigt werden, wenn das Fahrzeug in Betrieb genommen wird oder in die Werkstatt muss. Mit einem solchen Modell wird eine Vererbung der allgemeinen Inhalte der Automarke erzwungen und gleichzeitig Verschiebungen basierend auf bestimmtem Kontext ermöglicht. Das Modell hilft auch bei der späteren Verwaltung von Aktualisierungen dieser Inhalte, da Sie die Kontrolle auf der Grundlage von Rollen durchsetzen können, wie z. B. dem übergeordneten Marketer oder Produkt-Manager für die gesamte Automarke im Vergleich zu dem Autor, der für das „Starterlebnis“ verantwortlich ist.
 
@@ -76,7 +76,7 @@ Inhaltsautoren erstellen Inhalte auf Basis der Inhaltsmodelle, die in der Stagin
 
 Bevor Sie Headless-Technologie in AEM nutzen können, müssen Sie sicherstellen, dass alle erforderlichen Funktionen aktiviert sind. Diese werden nachfolgend beschrieben. Die einzelnen Schritte werden im Verlauf der [AEM Headless-Entwickler-Tour](#overview.md) näher erläutert.
 
-Optional können Sie auch [Zusätzliche Ressourcen](#additional-resources) für weitere Informationen zu den einzelnen Themen.
+Optional können Sie auch [zusätzliche Ressourcen](#additional-resources) für weitere Informationen zu den einzelnen Themen einsehen.
 
 ### Konfiguration {#configuration}
 
@@ -86,7 +86,7 @@ Optional können Sie auch [Zusätzliche Ressourcen](#additional-resources) für 
 
 ## Implementieren Ihres ersten AEM Headless-Programms
 
-Hier finden Sie einen Überblick darüber, was zur Implementierung Ihres ersten Headless-Programms mit AEM zur Bereitstellung Ihrer Inhalte erforderlich ist. Wie diese Schritte ausgeführt werden, wird in späteren Teilen der Headless Developer Journey ausführlich beschrieben.
+Hier finden Sie einen Überblick darüber, was zur Implementierung Ihres ersten Headless-Programms mit AEM zur Bereitstellung Ihrer Inhalte erforderlich ist. Wie diese Schritte auszuführen sind, wird in späteren Abschnitten der AEM Headless-Entwickler-Tour ausführlich beschrieben.
 
 1. Erstellen von Inhaltsfragmentmodellen
 1. Erstellen von Inhaltsfragmenten
@@ -106,7 +106,7 @@ Der Erfolg eines Headless-Projekts hängt nicht nur von der implementierten Tech
 * Gruppieren Sie ähnliche Inhalte in einem Ordner.
    * Mit großer Wahrscheinlichkeit kopieren Inhaltsautoren vorhandene Inhalte, um sie an anderer Stelle einzufügen und neue Inhalte zu erstellen. Daher ist es effizienter, wenn dies im selben Ordner erfolgt.
    * AEM ermöglicht es, zulässige Modelle pro Ordner festzulegen, sodass durch Klicken auf die Schaltfläche **Neu erstellen** nur die an diesem Speicherort unterstützten Modelle angezeigt werden.
-* Die Erstellung neuer Inhaltsfragmente im Inline-Inhaltsfragment-Editor kann vereinfacht werden, wenn der Stammordner im Modell festgelegt ist. Dann muss der Praktiker keinen Ort auswählen, sondern nur einen Namen angeben und die neue Referenz bearbeiten.
+* Die Erstellung neuer Inhaltsfragmente im Inline-Inhaltsfragment-Editor kann vereinfacht werden, wenn der Stammordner im Modell festgelegt ist. Dann müssen die Fachleute keinen Speicherort auswählen, sondern brauchen nur einen Namen anzugeben und können die neue Referenz bearbeiten.
 
 ### Inhaltserstellung {#authoring}
 

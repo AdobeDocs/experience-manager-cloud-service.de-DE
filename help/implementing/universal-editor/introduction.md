@@ -5,7 +5,7 @@ exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 79%
+ht-degree: 88%
 
 ---
 
@@ -28,11 +28,11 @@ Der universelle Editor kann für jede Implementierung, für jeden Inhalt und fü
 
 ### Jegliche Implementierung {#any-implementation}
 
-Da Erlebnisse auf viele verschiedene Arten erstellt werden können, kann jede Implementierung den Universal Editor verwenden, damit Autoren kontextbezogene Bearbeitungen durchführen können.
+Da Erlebnisse auf viele verschiedene Arten erstellt werden können, kann jede Implementierung den universellen Editor nutzen, damit Autorinnen und Autoren Bearbeitungen direkt im Kontext durchführen können.
 
 Benutzer glauben oft, dass eine Headless-Implementierung die Autoren daran hindert, alle Inhalte in einer formularbasierten Benutzeroberfläche zu bearbeiten. Dies ist jedoch beim universellen Editor nicht der Fall.
 
-Die Anforderungen für eine Implementierung zur Verwendung des universellen Editors sind unkompliziert und unterstützen Folgendes:
+Die Anforderungen für eine Implementierung zur Nutzung des universellen Editors sind sehr einfach und unterstützen die folgenden Punkte:
 
 * **Beliebige Architektur** – Server-seitiges Rendering, Edge-seitiges Rendering, Client-seitiges Rendering usw.
 * **Jegliches Framework** – Vanilla-AEM oder Drittanbieter-Frameworks wie React, Next.js, Angular usw.
@@ -58,7 +58,7 @@ Durch die Entkopplung des Inhaltserstellungserlebnisses von einem bestimmten Inh
 
 ![Der Wert des universellen Editors](assets/value.png)
 
-* **Außergewöhnliche Erlebnisse bereitstellen** - Damit Praktiker ein überzeugendes Erlebnis für Besucher erstellen können, können im universellen Editor Praktiker den Inhalt im Kontext der Vorschau erstellen und bearbeiten. Auf diese Weise können sie Inhalte erstellen, die dem Design des Erlebnisses entsprechen und zu einer aussagekräftigen Journey für Besuchende beitragen.
+* **Bereitstellen außergewöhnlicher Erlebnisse**: Damit technische Fachkräfte ein überzeugendes Erlebnis für Besucherinnen und Besucher schaffen können, können sie im universellen Editor die Inhalte im Kontext der Vorschau erstellen und bearbeiten. Auf diese Weise können sie Inhalte erstellen, die dem Design des Erlebnisses entsprechen und zu einer aussagekräftigen Journey für Besuchende beitragen.
 * **Inhaltsgeschwindigkeit erhöhen** – Um den Verwaltungs-Workflow für technische Fachkräfte zu optimieren, ermöglicht der universelle Editor die Bearbeitung von Inhalten in der Vorschau, um sie zu leiten, indem nur die Optionen angezeigt werden, die für diesen Kontext relevant sind, und der Workflow von den Inhaltsquellen unabhängig wird.
 * **Modernstes Entwicklererlebnis** – Zur Unterstützung der heterogenen Anwendungslandschaft in der realen Welt ist der universelle Editor vollständig entkoppelt und technologieunabhängig, sodass Entwicklerinnen und Entwickler ihren bevorzugten Technologiestapel zur Implementierung des Erlebnisses nutzen können.
 
@@ -82,7 +82,7 @@ Eine Marketing-Fachkraft möchte Inhalte erstellen, die auf das Layout eines bes
 
 Es ist wichtig zu beachten, dass der universelle Editor noch in Bearbeitung ist und dass einige der in diesem Dokument beschriebenen Funktionen eine Vision des endgültigen Editors darstellen, aber nicht notwendigerweise für seine aktuellen Funktionen repräsentativ sind.
 
-Wenden Sie sich an Ihren Adobe-Ansprechpartner, um mehr über die für den universellen Editor geplanten künftigen Funktionen zu erfahren.
+Wenden Sie sich an Ihre Ansprechperson bei Adobe, um mehr über die für den universellen Editor geplanten Funktionen zu erfahren.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

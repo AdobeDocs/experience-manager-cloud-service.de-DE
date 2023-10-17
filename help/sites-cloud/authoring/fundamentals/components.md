@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website
 
 ## Allgemeine Verwendung {#general-usage}
 
-Die Komponenten sind im Seiteneditor auf dem seitlichen Bedienfeld der Registerkarte **Komponenten** verfügbar, wenn Sie eine [Seite bearbeiten](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+Die Komponenten sind im Seiteneditor auf dem seitlichen Bedienfeld der Registerkarte **Komponenten** verfügbar, wenn Sie eine [Seite bearbeiten](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 Sie können eine Komponente auswählen und an die gewünschte Stelle auf Ihrer Seite ziehen. Sie können sie dann bearbeiten, indem Sie Folgendes verwenden:
 
@@ -31,7 +31,7 @@ Sie können eine Komponente auswählen und an die gewünschte Stelle auf Ihrer S
 * [Inhalt bearbeiten](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 * [Inhalt bearbeiten – Vollbildmodus](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
 
-Weitere Informationen zum Hinzufügen von Komponenten zu einer Seite finden Sie unter [Bearbeiten des Seiteninhalts](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+Weitere Informationen zum Hinzufügen von Komponenten zu einer Seite finden Sie unter [Bearbeiten von Seiteninhalten](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 ## Übersicht über alle Komponenten {#overview-of-all-components}
 
@@ -43,7 +43,7 @@ Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager
 
 Sie werden mithilfe der Best Practices von AEM erstellt und bilden die Grundlage für das AEM-Authoring. Kernkomponenten können von Entwicklern einfach erweitert werden, um spezifischen Projektanforderungen gerecht zu werden.
 
-Neben den WCM-Kernkomponenten können Sie auch [Adaptive Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). Diese Kernkomponenten bieten standardmäßige und einfachere Methoden für [Erstellen oder Hinzufügen von Formularen zu einer AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+Neben den WCM-Kernkomponenten können Sie auch [Kernkomponenten von adaptiven Formularen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de#features) verwenden. Diese Kernkomponenten bieten standardmäßige und einfachere Methoden für das [Erstellen oder Hinzufügen von Formularen zu einer AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### Konfigurieren von Vorlagen {#configuring-templates}
 

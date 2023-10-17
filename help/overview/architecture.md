@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 13c67c35238c5138120f6d0d4845c759221d65ad
 workflow-type: tm+mt
 source-wordcount: '2015'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -65,7 +65,7 @@ Die Skalierung von Instanzen pro Mandant des Dienstes gilt für die beiden Achse
 ## Umgebungen {#environments}
 
 >[!NOTE]
->Weitere Informationen finden Sie unter [Bereitstellen - Runmodes](/help/implementing/deploying/overview.md#runmodes)
+>Weitere Informationen finden Sie unter [Bereitstellen – Laufzeitmodi](/help/implementing/deploying/overview.md#runmodes).
 
 AEM as a Cloud Service wird als Einzelinstanzen bereitgestellt, wobei jede Instanz eine vollständige AEM-Umgebung darstellt.
 
@@ -77,7 +77,7 @@ Es gibt drei Arten von Umgebungen, die mit AEM as a Cloud Service verfügbar sin
 
 * **Entwicklungsumgebung**: ermöglicht Entwicklern die Implementierung von AEM-Anwendungen unter denselben Laufzeitbedingungen wie bei den Staging- und Produktionsumgebungen.
 
-  Siehe [Umgebungen verwalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de#using-cloud-manager) für weitere Details.
+  Weitere Details finden Sie unter [Verwalten von Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de#using-cloud-manager).
 
 * **Schnelle Entwicklungsumgebung**: Ermöglicht schnelle Entwicklungsiterationen zum Debugging von neuem oder vorhandenem Code.
 
@@ -125,15 +125,15 @@ Diese neue Architektur verfügt über verschiedene Hauptkomponenten:
 
    * Die Vorschauebene besteht aus einem einzelnen Vorschauknoten. Dies wird zur Qualitätssicherung von Inhalten vor der Veröffentlichung in der Veröffentlichungsebene verwendet.
 
-   * Die Veröffentlichungsstufe besteht aus zwei oder mehr Knoten in einer einzelnen Veröffentlichungsfarm.
+   * Die Veröffentlichungsebene besteht aus zwei oder mehr Knoten in einer einzelnen Veröffentlichungsfarm.
 
-      * Die Knoten können unabhängig voneinander arbeiten.
+      * Die Knoten können unabhängig voneinander agieren.
 
       * Jeder Knoten besteht aus einem AEM-Publisher und einem Webserver, der mit dem AEM-Dispatcher-Modul ausgestattet ist.
 
-      * Die Skalierung erfolgt automatisch entsprechend den Anforderungen des Sitetraffic.
+      * Die Skalierung erfolgt automatisch entsprechend den Anforderungen des Sitetraffics.
 
-      * Standardmäßig befindet sich jedoch eine einzelne Veröffentlichungsfarm im primären Bereich. [zusätzliche Veröffentlichungsregionen](/help/operations/additional-publish-regions.md) dürfen lizenziert sein.
+      * Standardmäßig gibt es in der primären Region eine einzige Veröffentlichungsfarm, es können jedoch [zusätzliche Veröffentlichungsregionen](/help/operations/additional-publish-regions.md) lizenziert werden.
 
       * Endbenutzer oder Site-Besucher besuchen die Website über den AEM-Veröffentlichungs-Service.
 

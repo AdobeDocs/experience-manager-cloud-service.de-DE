@@ -1,11 +1,11 @@
 ---
 title: Seitenvorlagen
-description: Seitenvorlagen werden beim Erstellen einer Seite verwendet, die als Grundlage für die neue Seite verwendet wird
+description: Seitenvorlagen werden beim Erstellen einer Seite verwendet, die als Basis für die neue Seite verwendet wird
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3291'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
@@ -42,19 +42,19 @@ Seitenvorlagen werden von Vorlagenautoren in erster Linie mit der [Vorlagenkonso
 
 Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
-1. Erstellen Sie einen [Ordner für die Vorlagen](#template-folders). Dies ist nicht obligatorisch, wird jedoch als Best Practice empfohlen.
+1. Erstellen Sie einen [Ordner für die Vorlagen](#template-folders). Dieser Ordner ist nicht obligatorisch, wird jedoch als Best Practice empfohlen.
 1. Wählen Sie einen [Vorlagentyp](#template-type) aus. Dieser wird kopiert, um die [Vorlagendefinition](#template-definitions) zu erstellen.
 
    >[!NOTE]
    >
-   >Eine Auswahl von Vorlagentypen ist standardmäßig verfügbar. Sie können auch [eigene Site-spezifische Vorlagentypen erstellen](#creating-template-types) falls erforderlich.
+   >Eine Auswahl von Vorlagentypen ist standardmäßig verfügbar. Bei Bedarf können Sie aber auch [eigene Site-spezifische Vorlagentypen](#creating-template-types) erstellen.
 
 1. Konfigurieren Sie die Struktur, die Inhaltsrichtlinien, den anfänglichen Inhalt und das Layout der neuen Vorlage.
 
    **Struktur**
 
    * Die Struktur ermöglicht die Definition von Komponenten und Inhalten für Ihre Vorlage.
-   * Komponenten, die in der Vorlagenstruktur definiert sind, können nicht auf einer resultierenden Seite verschoben oder von den resultierenden Seiten gelöscht werden.
+   * Komponenten, die in der Vorlagenstruktur definiert sind, können auf einer resultierenden Seite nicht verschoben oder von dort gelöscht werden.
    * Wenn Sie möchten, dass Seitenautorinnen und -autoren Komponenten hinzufügen und entfernen können, fügen Sie der Vorlage ein Absatzsystem hinzu.
    * Komponenten lassen sich entsperren und erneut sperren, damit Sie den anfänglichen Inhalt definieren können.
 
@@ -76,8 +76,8 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
    **Anfänglicher Inhalt**
 
-   * Anfänglicher Inhalt definiert Inhalte, die angezeigt werden, wenn eine Seite zum ersten Mal basierend auf der Vorlage erstellt wird.
-   * Der anfängliche Inhalt kann dann bearbeitet werden.
+   * Der anfängliche Inhalt definiert den Inhalt, der angezeigt wird, wenn eine Seite anfänglich auf Grundlage einer Vorlage erstellt wird.
+   * Der anfängliche Inhalt kann dann von Seitenautorinnen bzw. -autoren bearbeitet werden.
 
    Einzelheiten dazu, wie Vorlagenautoren Strukturen definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#editing-a-template-initial-content-author).
 
@@ -141,7 +141,7 @@ Zum Organisieren Ihrer Vorlagen können Sie die folgenden Ordner verwenden:
 >
 >Obwohl Sie Ihre Ordner verschachteln können, werden sie den Benutzern in der **Vorlagenkonsole** als flache Struktur angezeigt.
 
-In einer Standard-AEM-Instanz ist der Ordner `global` bereits in der Vorlagenkonsole vorhanden. Er enthält Standardvorlagen und dient als Ausweichlösung, wenn keine Richtlinien und/oder Vorlagentypen im aktuellen Ordner gefunden werden. Sie können diesem Ordner Ihre Standardvorlagen hinzufügen oder einen neuen Ordner erstellen (empfohlen).
+In einer Standard-AEM-Instanz ist der Ordner `global` bereits in der Vorlagenkonsole vorhanden. Er enthält Standardvorlagen und dient als Ausweichlösung, wenn keine Richtlinien und/oder Vorlagentypen im aktuellen Ordner gefunden werden. Sie können Ihre Standardvorlagen entweder zu diesem Ordner hinzufügen oder aber einen Ordner erstellen (empfohlen).
 
 >[!NOTE]
 >
@@ -205,7 +205,7 @@ Um einen neuen Ordner zu erstellen, haben Sie folgende Möglichkeiten:
 1. Im Dialogfeld **Konfiguration erstellen** müssen die folgenden Felder konfiguriert werden:
 
    * **Titel**: Geben Sie einen Titel für den Konfigurationsordner an.
-   * **Bearbeitbare Vorlagen**: Klicken Sie auf , um bearbeitbare Vorlagen in diesem Ordner zuzulassen.
+   * **Bearbeitbare Vorlagen**: Aktivieren Sie diese Option, um bearbeitbare Vorlagen in diesem Ordner zuzulassen.
 
 1. Klicken Sie auf **Erstellen**.
 
@@ -227,7 +227,7 @@ Die Gruppe `template-authors` ist die Gruppe zum Verwalten des Zugriffs auf Vorl
 >
 >Die Gruppe `template-authors` ist nur für Benutzer, die die Möglichkeit haben müssen, neue Vorlagen zu erstellen.
 >
->Das Bearbeiten von Vorlagen hat weitreichende Auswirkungen und bei nicht ordnungsgemäßem Vorgehen können vorhandene Vorlagen beschädigt werden. Daher sollte diese Rolle fokussiert sein und nur qualifizierte Benutzer einschließen.
+>Das Bearbeiten von Vorlagen hat weitreichende Auswirkungen und bei nicht ordnungsgemäßem Vorgehen können vorhandene Vorlagen beschädigt werden. Daher sollte diese Rolle zielgerichtet und nur qualifizierten Benutzerinnen und Benutzern zugewiesen werden.
 
 In der folgenden Tabelle sind die erforderlichen Berechtigungen für die Bearbeitung von Vorlagen aufgeführt.
 
@@ -285,16 +285,16 @@ In der folgenden Tabelle sind die erforderlichen Berechtigungen für die Bearbei
  </tbody>
 </table>
 
-Diese standardmäßige `template-authors`-Gruppe umfasst nur die Projekteinstellungen, bei denen alle Mitglieder von `template-authors` auf alle Vorlagen zugreifen und diese erstellen dürfen. Für komplexere Setups, bei denen mehrere Vorlagenautorengruppen benötigt werden, um einen getrennten Zugriff auf Vorlagen zu ermöglichen, müssen weitere benutzerdefinierte Vorlagenautorengruppen erstellt werden. Die Berechtigungen für die Vorlagenautorengruppen sind jedoch weiterhin identisch.
+Diese standardmäßige `template-authors`-Gruppe umfasst nur die Projekteinstellungen, bei denen alle Mitglieder von `template-authors` auf alle Vorlagen zugreifen und diese erstellen dürfen. Für komplexere Setups, bei denen mehrere Vorlagenautorengruppen benötigt werden, um einen getrennten Zugriff auf Vorlagen zu ermöglichen, müssen weitere benutzerdefinierte Vorlagenautorengruppen erstellt werden. Die Berechtigungen für die Vorlagenautorengruppen bleiben dabei jedoch dieselben.
 
 ## Vorlagentyp {#template-type}
 
 Beim Erstellen einer neuen Vorlage müssen Sie einen Vorlagentyp angeben:
 
-* Vorlagentypen stellen effektiv Vorlagen für eine Vorlage bereit. Beim Erstellen einer neuen Vorlage werden Struktur und anfänglicher Inhalt des ausgewählten Vorlagentyps verwendet, um für die neue Vorlage zu erstellen.
+* Vorlagentypen stellen effektiv Vorlagen für eine Vorlage bereit. Bei der Erstellung einer Vorlage werden Struktur und anfänglicher Inhalt des ausgewählten Vorlagentyps zum Erstellen der Vorlage verwendet.
 
    * Der Vorlagentyp wird kopiert, um die Vorlage zu erstellen.
-   * Sobald die Kopie erfolgt ist, ist die einzige Verbindung zwischen der Vorlage und dem Vorlagentyp eine statische Referenz zu Informationszwecken.
+   * Nach dem Kopieren besteht die einzige Verbindung zwischen der Vorlage und dem Vorlagentyp in einer statischen Referenz zu Informationszwecken.
 
 * Mit Vorlagentypen können Sie Folgendes definieren:
 
@@ -328,7 +328,7 @@ Definitionen für Ihre benutzerdefinierten Vorlagentypen sollten in benutzerdefi
 
 >[!CAUTION]
 >
->Die Vorlagentypen müssen die richtige Ordnerstruktur aufweisen (d. h. `/settings/wcm/...`), andernfalls werden die Vorlagentypen nicht gefunden.
+>Die Vorlagentypen müssen die korrekte Ordnerstruktur aufweisen (also `/settings/wcm/...`), sonst werden die Vorlagentypen nicht gefunden.
 
 <!--
 ### Template Type and Mobile Device Groups {#template-type-and-mobile-device-groups-br}
@@ -435,8 +435,8 @@ Definiert die Struktur der resultierenden Seite:
 * Sie wird beim Erstellen einer neuen Seite mit dem anfänglichen Inhalt (`/initial`) zusammengeführt.
 * Änderungen an der Struktur spiegeln sich in allen Seiten wider, die mit der Vorlage erstellt wurden.
 * Der Knoten `root` (`structure/jcr:content/root`) definiert die Liste der Komponenten, die auf der resultierenden Seite verfügbar sind.
-   * Komponenten, die in der Vorlagenstruktur definiert sind, können in resultierenden Seiten nicht verschoben oder gelöscht werden.
-   * Nachdem eine Komponente entsperrt wurde, wird die `editable` -Eigenschaft auf `true`.
+   * Komponenten, die in der Vorlagenstruktur definiert sind, können auf einer resultierenden Seite nicht verschoben oder von dort gelöscht werden.
+   * Nachdem eine Komponente entsperrt wurde, wird die Eigenschaft `editable` auf `true` gesetzt.
    * Nachdem eine Komponente, die bereits Inhalt enthält, entsperrt wurde, wird dieser Inhalt in die Verzweigung `initial` verschoben.
 
 * Der Knoten `cq:responsive` enthält Definitionen für das responsive Layout.
@@ -448,7 +448,7 @@ Definiert den anfänglichen Inhalt, den eine neue Seite bei Erstellung enthält:
 * Er enthält einen Knoten `jcr:content`, der auf alle neue Seiten kopiert wird.
 * Er wird beim Erstellen einer neuen Seite mit der Struktur (`/structure`) zusammengeführt.
 * Vorhandene Seiten werden nicht aktualisiert, wenn der anfängliche Inhalt nach der Erstellung geändert wird.
-* Die `root` -Knoten enthält eine Liste von Komponenten, um zu definieren, was auf der resultierenden Seite verfügbar ist.
+* Der Knoten `root` enthält eine Liste von Komponenten, die definieren, was auf der resultierenden Seite verfügbar ist.
 * Wird einer Komponente im Strukturmodus Inhalt hinzugefügt und wird diese Komponente anschließend entsperrt (oder umgekehrt), so wird dieser Inhalt als anfänglicher Inhalt verwendet.
 
 ### Layout {#layout}
@@ -538,8 +538,8 @@ Beim Rendern einer Seite:
 * **Komponenten**:
 
    * Die Seitenkomponente führt die Baumstruktur `structure/jcr:content` der Vorlage mit der Baumstruktur `jcr:content` der Seite zusammen.
-      * Die Seitenkomponente erlaubt es dem Autor nur, die Knoten der Vorlagenstruktur zu bearbeiten, die als bearbeitbar gekennzeichnet wurden (und alle untergeordneten Elemente).
-      * Beim Rendern einer Komponente auf einer Seite wird der relative Pfad dieser Komponente aus dem `jcr:content` Knoten; derselbe Pfad unter `policies/jcr:content` -Knoten der Vorlage durchsucht werden.
+      * Die Seitenkomponente gestattet es der Autorin bzw. dem Autor nur, die Knoten der Vorlagenstruktur zu bearbeiten, die als bearbeitbar gekennzeichnet wurden (sowie jegliche untergeordneten Elemente).
+      * Beim Rendern einer Komponente auf einer Seite wird der relative Pfad dieser Komponente vom Knoten `jcr:content` übernommen. Derselbe Pfad unter dem Knoten `policies/jcr:content` der Vorlage wird dann durchsucht.
          * Die Eigenschaft `cq:policy` dieses Knotens verweist auf die eigentliche Inhaltsrichtlinie (d. h. sie enthält die Design-Konfiguration für diese Komponente).
             * Auf diese Weise können Sie über mehrere Vorlagen verfügen, die dieselben Inhaltsrichtlinienkonfigurationen wiederverwenden.
 

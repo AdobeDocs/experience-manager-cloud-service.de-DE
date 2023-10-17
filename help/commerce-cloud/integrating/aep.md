@@ -14,7 +14,7 @@ exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2076'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -471,30 +471,30 @@ Mit dem PWA Studio-Projekt können Sie Storefronts als Progressive Web Applicati
 
 Ab sofort werden die folgenden Ereignisse unterstützt:
 
-__Erlebnis-XDM-Ereignisse:__
+__Experience-XDM-Ereignisse:__
 
 1. Zum Warenkorb hinzufügen (AEM)
-1. Seite anzeigen (AEM)
-1. Produkt anzeigen (AEM)
+1. Anzeigen der Seite (AEM)
+1. Anzeigen des Produkts (AEM)
 1. Suchanfrage gesendet (AEM)
-1. Erhalt der Suchantwort (AEM)
+1. Suchantwort erhalten (AEM)
 
-Wann [Peregrine Komponenten](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) werden im AEM Commerce-Projekt wiederverwendet:
+Wann [Peregrine-Komponenten](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) im AEM Commerce-Projekt wiederverwendet werden:
 
-__Erlebnis-XDM-Ereignisse:__
+__Experience-XDM-Ereignisse:__
 
-1. Aus Warenkorb entfernen
-1. Offener Warenkorb
-1. Warenkorb anzeigen
-1. Sofortiger Kauf
-1. Checkout starten
-1. Vollständiger Kasse
+1. Entfernen aus Warenkorb
+1. Öffnen des Warenkorbs
+1. Anzeigen des Warenkorbs
+1. Sofortkauf
+1. Start des Checkouts
+1. Abschließen des Checkouts
 
-__Profil-XDM-Ereignisse:__
+__Profile-XDM-Ereignisse:__
 
 1. Anmelden
 1. Konto erstellen
-1. Konto bearbeiten
+1. Bearbeiten des Kontos
 
 
 ## Zusätzliche Ressourcen {#additional-resources}
@@ -503,5 +503,5 @@ Weitere Informationen finden Sie in den folgenden Ressourcen:
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
 - [Übersicht zu Experience Platform Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html?lang=de)
-- [Experience Platform-Connector-Ereignisse](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
+- [Experience Platform Connector-Ereignisse](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html?lang=de)
 - [Überblick zu Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=de)

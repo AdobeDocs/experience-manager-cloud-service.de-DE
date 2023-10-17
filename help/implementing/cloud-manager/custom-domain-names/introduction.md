@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 83%
+ht-degree: 89%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service bietet einen integrierten Content Delivery Network (CDN)-
 * Benutzerdefinierte Domänennamen (und Zertifikate), die im AEM verwalteten CDN installiert sind, werden über Cloud Manager verwaltet.
 * Benutzerdefinierte Domänennamen (und Zertifikate), die in Ihrem eigenen CDN installiert sind, werden in diesem spezifischen CDN verwaltet.
 
-Domänen, die in Ihrem eigenen CDN verwaltet werden, müssen nicht über Cloud Manager installiert werden. Sie werden AEM über den X-Forwarded-Host zur Verfügung gestellt und stimmen mit den im Dispatcher definierten vhosts überein. Siehe [CDN-Dokumentation](/help/implementing/dispatcher/cdn.md).
+Domains, die in Ihrem eigenen CDN verwaltet werden, müssen nicht über Cloud Manager installiert werden. Sie werden AEM über „X-Forwarded-Host“ zur Verfügung gestellt und stimmen mit den im Dispatcher definierten virtuellen Hosts überein. Weitere Informationen finden Sie in der [CDN-Dokumentation](/help/implementing/dispatcher/cdn.md).
 
 In einer Umgebung können Sie beide Domänen im von AEM verwalteten CDN und in Ihrem eigenen CDN installiert haben.
 
@@ -74,4 +74,4 @@ Die Verwendung benutzerdefinierter Domain-Namen mit AEMaaCS unterliegt einer Rei
 * Derselbe Domänenname kann nicht in mehr als einer Umgebung verwendet werden.
 * Es kann jeweils nur ein Domain-Name hinzugefügt werden.
 * AEM as a Cloud Service unterstützt keine Platzhalterdomänen `*.example.com`.
-* Vor dem Hinzufügen eines benutzerdefinierten Domänennamens muss ein gültiges SSL-Zertifikat, das den benutzerdefinierten Domänennamen enthält, für Ihr Programm installiert werden (Platzhalterzertifikate sind gültig). Siehe [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) , um mehr zu erfahren.
+* Vor dem Hinzufügen eines benutzerdefinierten Domänennamens muss ein gültiges SSL-Zertifikat, das den benutzerdefinierten Domänennamen enthält, für Ihr Programm installiert werden (Platzhalterzertifikate sind gültig). Weitere Informationen finden Sie unter [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).

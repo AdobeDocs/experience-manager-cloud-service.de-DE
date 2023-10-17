@@ -8,7 +8,7 @@ exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2643'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -173,7 +173,7 @@ Wenn Sie diese Option verwenden, wird die Gruppe der Assets zu einem vorhandenen
 
 ### Erstellen temporärer Sprachkopien {#creating-temporary-language-copies}
 
-Wenn Sie einen Übersetzungs-Workflow ausführen, um eine Sprachkopie mit bearbeiteten Versionen der ursprünglichen Assets zu aktualisieren, wird die vorhandene Sprachkopie beibehalten, bis Sie die übersetzten Assets genehmigen. [!DNL Assets] speichert die neu übersetzten Assets an einem temporären Speicherort und aktualisiert die vorhandene Sprachkopie, nachdem Sie die Assets explizit genehmigt haben. Wenn Sie die Assets ablehnen, bleibt die Sprachkopie unverändert.
+Wenn Sie einen Übersetzungs-Workflow ausführen, um eine Sprachkopie mit bearbeiteten Versionen der ursprünglichen Assets zu aktualisieren, wird die vorhandene Sprachkopie beibehalten, bis Sie die übersetzten Assets genehmigen. [!DNL Assets] speichert die neu übersetzten Assets an einem temporären Speicherort und aktualisiert die vorhandene Sprachkopie, nachdem Sie die Assets ausdrücklich genehmigt haben. Wenn Sie die Assets ablehnen, bleibt die Sprachkopie unverändert.
 
 1. Klicken/tippen Sie auf den Quellstammordner unter **[!UICONTROL Sprachkopien]**, für den Sie bereits eine Sprachkopie erstellt haben, und klicken/tippen Sie anschließend auf **[!UICONTROL In Assets einblenden]**, um den Ordner in [!DNL Assets] zu öffnen.
 1. Wählen Sie in der Assets-Benutzeroberfläche ein bereits übersetztes Asset und tippen/klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Bearbeiten]**, um das Asset im Bearbeitungsmodus zu öffnen.

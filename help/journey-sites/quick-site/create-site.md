@@ -5,7 +5,7 @@ exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1506'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Dieser Teil der Journey gilt für den AEM-Administrator.
 
 ## Site-Vorlagen {#site-templates}
 
-Site-Vorlagen bieten die Möglichkeit, grundlegende Site-Inhalte in einem handlichen und wiederverwendbaren Paket zu kombinieren. Site-Vorlagen enthalten in der Regel grundlegende Site-Inhalte und Struktur- und Site-Styling-Informationen, damit neue Sites schnell gestartet werden können. Die eigentliche Struktur sieht wie folgt aus:
+Site-Vorlagen bieten die Möglichkeit, grundlegende Site-Inhalte in einem handlichen und wiederverwendbaren Paket zu kombinieren. Site-Vorlagen enthalten in der Regel grundlegende Site-Inhalte und -Struktur sowie Site-Styling-Informationen, um neue Sites schnell live schalten zu können. Die eigentliche Struktur sieht wie folgt aus:
 
 * `files`: Ordner mit dem Benutzeroberflächen-Kit, der XD-Datei und möglicherweise anderen Dateien
 * `previews`: Ordner mit Screenshots der Site-Vorlage
@@ -57,11 +57,11 @@ Nach dem Herunterladen können Sie sie wie jedes andere Paket in Ihre AEM-Umgebu
 
 >[!TIP]
 >
->Die AEM-Standard-Site-Vorlage kann an die Anforderungen Ihres Projekts angepasst werden und die Notwendigkeit weiterer Anpassungen vermeiden. Dies sprengt jedoch den Rahmen dieser Journey. Weitere Informationen finden Sie in der GitHub-Dokumentation der Standard-Site-Vorlage .
+>Die AEM-Standard-Site-Vorlage kann an die Anforderungen Ihres Projekts angepasst werden und die Notwendigkeit weiterer Anpassungen vermeiden. Dies sprengt jedoch den Rahmen dieser Journey. Weitere Informationen finden Sie in der GitHub-Dokumentation zur Standard-Site-Vorlage.
 
 >[!TIP]
 >
->Sie können die Vorlage auch als Teil Ihres Projekt-Workflows aus der Quelle erstellen. Dies sprengt jedoch den Rahmen dieser Journey. Weitere Informationen finden Sie in der GitHub-Dokumentation der Standard-Site-Vorlage .
+>Sie können die Vorlage auch als Teil Ihres Projekt-Workflows aus der Quelle erstellen. Dies sprengt jedoch den Rahmen dieser Journey. Weitere Informationen finden Sie in der GitHub-Dokumentation zur Standard-Site-Vorlage.
 
 ## Installieren einer Site-Vorlage {#installing-template}
 
@@ -85,7 +85,7 @@ Die Verwendung einer Vorlage zur Erstellung einer neuen Site ist sehr einfach.
 
    ![Auswählen einer Vorlage](assets/select-site-template.png)
 
-1. Geben Sie einen Titel für die Site ein. Ein Site-Name kann aus dem Titel bereitgestellt oder generiert werden, wenn er weggelassen wird.
+1. Geben Sie einen Titel für die Site ein. Der Name der Site kann angegeben oder aus dem Titel generiert werden, falls er weggelassen wird.
 
    * Der Titel der Site wird in der Titelleiste des Browsers angezeigt.
    * Der Site-Name wird Teil der URL.
@@ -109,7 +109,7 @@ Inhaltsautoren können jetzt mit der Bearbeitung beginnen.
 Site-Vorlagen sind sehr leistungsstark und flexibel und können in beliebiger Anzahl für ein Projekt erstellt werden, was eine einfache Erstellung von Site-Varianten ermöglicht. Je nachdem, welcher Grad von Anpassungen bereits an der von Ihnen verwendeten Site-Vorlage vorgenommen wurde, müssen Sie möglicherweise nicht einmal zusätzliche Front-End-Anpassungen vornehmen.
 
 * Wenn Ihre Site keine zusätzliche Anpassung erfordert, haben Sie es geschafft. Ihre Journey endet hier!
-* Wenn Sie weiterhin zusätzliche Frontend-Anpassungen benötigen oder einfach den gesamten Prozess verstehen möchten, falls Sie zukünftige Anpassungen benötigen, lesen Sie weiter.
+* Wenn Sie noch weitere Anpassungen am Frontend benötigen, oder wenn Sie einfach den gesamten Prozess verstehen wollen, falls Sie zukünftige Anpassungen benötigen, lesen Sie weiter.
 
 ## Beispielseite {#example-page}
 
@@ -184,4 +184,4 @@ Es wird zwar empfohlen, mit dem nächsten Teil der Journey zur schnellen Site-Er
 * [Erstellen und Organisieren von Seiten](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) – In diesem Handbuch wird beschrieben, wie Sie Seiten Ihrer AEM-Site verwalten, wenn Sie sie nach der Erstellung aus der Vorlage weiter anpassen möchten.
 * [Arbeiten mit Paketen](/help/implementing/developing/tools/package-manager.md) – Pakete ermöglichen den Import und Export von Repository-Inhalten. In diesem Dokument wird erläutert, wie Sie mit Paketen in AEM 6.5 arbeiten. Dies gilt auch für AEMaaCS.
 * [Dokumentation zur Site-Administration](/help/sites-cloud/administering/site-creation/create-site.md) – Weitere Informationen zu den Funktionen des Tools für die schnelle Site-Erstellung finden Sie in den technischen Dokumenten zur Site-Erstellung.
-* [Erstellen oder Hinzufügen von Formularen zu einer AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) - Lernen Sie Schritt für Schritt Techniken und Best Practices für die Integration von Formularen in Ihre Website kennen und optimieren Sie Ihre digitalen Erlebnisse für eine maximale Wirkung.
+* [Erstellen oder Hinzufügen von Formularen zu einer AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): Lernen Sie Schritt für Schritt Techniken und Best Practices für die Integration von Formularen in Ihre Website kennen und optimieren Sie Ihre digitalen Erlebnisse für eine maximale Wirkung.

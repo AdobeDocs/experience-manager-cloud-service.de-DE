@@ -6,7 +6,7 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 79%
+ht-degree: 95%
 
 ---
 
@@ -30,7 +30,7 @@ Die **GraphiQL** Mit diesem Tool können Sie Ihre GraphQL-Abfragen testen und de
 * Ausführen von Abfragen mit sofortiger Anzeige der Ergebnisse
 * Verwalten von **Abfragevariablen**
 * Speichern und Verwalten von **Persistenten Abfragen**
-* Veröffentlichung oder Rückgängigmachen der Veröffentlichung, **Beständige Abfragen**, um entweder **Veröffentlichen** oder **Vorschau** Dienst, z. B. von/zu `dev-publish`
+* **Persistierte Abfragen** entweder in Ihrem **Publish**- oder **Preview**-Service veröffentlichen bzw. die Veröffentlichung aufheben; zum Beispiel in/aus `dev-publish`
 * Anzeige des **Verlaufs** der vorherigen Abfragen
 * Verwenden des **Dokumentations-Explorers**, um auf die Dokumentation zuzugreifen; hilft Ihnen zu lernen und zu verstehen, welche Methoden verfügbar sind.
 
@@ -74,13 +74,13 @@ Verwenden Sie **Speichern unter**, um Ihre neue Abfrage beizubehalten.
 
 Wählen Sie die Abfrage, die Sie aktualisieren möchten, aus der Liste im Bereich **Persistente Abfragen** (ganz links).
 
-Die Abfrage wird im Editor angezeigt. Nehmen Sie die gewünschten Änderungen vor, und verwenden Sie dann **Speichern**, um die Aktualisierungen in der persistenten Abfrage zu speichern.
+Die Abfrage wird im Editor-Panel angezeigt. Nehmen Sie die gewünschten Änderungen vor, und verwenden Sie dann **Speichern**, um die Aktualisierungen in der persistenten Abfrage zu speichern.
 
 ## Ausführen von Abfragen {#running-queries}
 
-Sie können eine neue Abfrage sofort ausführen oder eine persistente Abfrage laden und ausführen. Um eine persistente Abfrage zu laden, wählen Sie sie aus der Liste aus. Die Abfrage wird im Editor angezeigt.
+Sie können eine neue Abfrage sofort ausführen oder eine persistente Abfrage laden und ausführen. Um eine persistierte Abfrage zu laden, wählen Sie sie aus der Liste aus – die Abfrage wird im Editor-Panel angezeigt.
 
-In beiden Fällen ist die im Editor angezeigte Abfrage die Abfrage, die ausgeführt wird, wenn Sie entweder:
+In beiden Fällen ist die Abfrage, die im Editor-Panel angezeigt wird, die Abfrage, die ausgeführt wird, wenn Sie entweder:
 
 * auf das Symbol **Abfrage ausführen** klicken/tippen oder
 * die Tastaturkombination `Control-Enter` verwenden.
@@ -130,27 +130,27 @@ Caches können im Falle eines Ursprungsfehlers eine zwischengespeicherte Antwort
 
 1. Wählen Sie **Speichern**, um die Änderungen beizubehalten.
 
-## Persistente Abfragen veröffentlichen und in der Vorschau anzeigen {#publishing-previewing-persisted-queries}
+## Publishing und Vorschau von persistierten Abfragen {#publishing-previewing-persisted-queries}
 
-Nachdem Sie die beibehaltene Abfrage aus der Liste (linker Bereich) ausgewählt haben, können Sie die **Veröffentlichen** Aktion.
+Sobald Sie Ihre persistierte Abfrage aus der Liste (linkes Bedienfeld) ausgewählt haben, können Sie die Aktion **Publish** verwenden.
 
-Dadurch wird die Abfrage für die ausgewählte Umgebung aktiviert. Sie können entweder **Veröffentlichen** Umgebung (z. B. `dev-publish`) oder Ihrer **Vorschau** -Umgebung für einfachen Zugriff durch Ihre Anwendungen beim Testen.
+Dadurch wird die Abfrage in der von Ihnen gewählten Umgebung aktiviert. Sie können entweder Ihre **Publish**-Umgebung (z. B. `dev-publish`) oder Ihre **Vorschau**-Umgebung für den einfachen Zugriff Ihrer Anwendungen beim Testen wählen.
 
-![GraphiQL - Veröffentlichte persistente Abfrage](assets/cfm-graphiql-publish.png "GraphiQL - Veröffentlichungspersistente Abfrage")
-
->[!NOTE]
->
->Für den Cache `Time To Live` der persistenten Abfrage {&quot;cache-control&quot;:&quot;parameter&quot;:value} ist der Standardwert von 2 Stunden (7.200 Sekunden) definiert.
-
-## Veröffentlichung persistenter Abfragen aufheben {#unpublishing-persisted-queries}
-
-Wie bei der Veröffentlichung können Sie die **Veröffentlichung rückgängig machen** Aktion.
-
-Dadurch wird die Abfrage in der von Ihnen ausgewählten Umgebung deaktiviert. Entweder **Veröffentlichen** -Umgebung oder Ihrer **Vorschau** Umgebung.
+![GraphiQL – Veröffentlichte persistierte Abfrage](assets/cfm-graphiql-publish.png "GraphiQL – Veröffentlichen einer persistierten Abfrage")
 
 >[!NOTE]
 >
->Sie sollten auch sicherstellen, dass Sie die erforderlichen Änderungen an Ihrer Client-Anwendung vorgenommen haben, um potenzielle Probleme zu vermeiden.
+>Die Definition für den Cache der persistierten Abfrage `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} hat einen Standardwert von 2 Stunden (7200 Sekunden).
+
+## Veröffentlichung persistierte Abfragen aufheben {#unpublishing-persisted-queries}
+
+Wie bei der Veröffentlichung können Sie, sobald Sie Ihre persistierte Abfrage aus der Liste (linkes Bedienfeld) ausgewählt haben, die Aktion **Veröffentlichung aufheben** verwenden.
+
+Dadurch wird die Abfrage in der von Ihnen gewählten Umgebung deaktiviert; entweder in Ihrer **Publish**-Umgebung oder in Ihrer **Vorschau**-Umgebung.
+
+>[!NOTE]
+>
+>Sie sollten auch sicherstellen, dass Sie die notwendigen Änderungen an Ihrer Client-Anwendung vorgenommen haben, um mögliche Probleme zu vermeiden.
 
 ## Kopieren der URL, um direkt auf die Abfrage zuzugreifen {#copy-url}
 

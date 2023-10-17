@@ -8,7 +8,7 @@ exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '4176'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Suchen Sie nach der Überschrift **Beispiele** in einigen der Schnellstartaufgab
 
 
 
-Das Tutorial veranschaulicht die Schritte zur Integration interaktiver Bilder auf Ihrer eigenen Website.
+Die Beispiele veranschaulichen die Schritte zur Integration interaktiver Videos auf Ihrer Website.
 
 Schritte zum Erstellen interaktiver Bilder:
 
@@ -69,9 +69,9 @@ Wenn Ihre Experience Manager-Implementierung E-Commerce nutzt, können Sie diese
 
 Ermitteln Sie zunächst die dynamischen Variablen, die von Ihrer vorhandenen Schnellansichtsimplementierung verwendet werden, damit Sie Hotspot-Daten eingeben können, um das interaktive Bild zu erstellen.
 
-Wenn Sie Hotspots zu einem Banner-Bild in Experience Manager Assets hinzufügen, müssen Sie eine SKU (Stock Keeping Unit) zuweisen. Die SKU ist eine eindeutige Kennung für jedes einzelne Produkt oder jede einzelne Dienstleistung, die Sie anbieten. Fügen Sie jedem Hotspot beliebige optionale Variablen hinzu. Diese Hotspot-Variablen werden später verwendet, um Hotspots mit Schnellansichtsinhalten abzugleichen.
+Wenn Sie Hotspots zu einem Banner-Bild in Experience Manager Assets hinzufügen, müssen Sie eine SKU (Stock Keeping Unit) zuweisen. Die SKU ist eine eindeutige Kennung für jedes einzelne Produkt oder jede einzelne Dienstleistung, die Sie anbieten. Fügen Sie jedem Hotspot beliebige optionale Variablen hinzu. Anhand dieser Hotspot-Variablen werden Hotspots später mit Schnellansichtsinhalten abgeglichen.
 
-Es ist wichtig, die Anzahl und den Typ der Variablen, die mit Hotspot-Daten verknüpft werden sollen, ordnungsgemäß zu identifizieren. Jeder dem Bannerbild hinzugefügte Hotspot muss ausreichend Informationen enthalten, um das Produkt im vorhandenen Backend-System eindeutig zu identifizieren.
+Es ist wichtig, die Anzahl und den Typ der Variablen, denen Hotspot- oder Imagemap-Daten zugewiesen werden sollen, korrekt zu ermitteln. Jeder dem Bannerbild hinzugefügte Hotspot muss ausreichend Informationen enthalten, um das Produkt im vorhandenen Backend-System eindeutig zu identifizieren.
 
 Sie können ein Set aus Variablen für Hotspot-Daten auf mehrere Arten ermitteln.
 
@@ -100,11 +100,11 @@ Suchen Sie nun die Schnellansichts-Ajax-URL im Netzwerkprotokoll und kopieren Si
 
 Während dieses Vorgangs müssen Sie verschiedene Bereiche der Website mit verschiedenen Produktkategorien und -typen besuchen. Der Grund dafür ist, dass Schnellansicht-URLs Teile enthalten können, die für eine bestimmte Website-Kategorie häufig verwendet werden. Sie ändern sich nur, wenn Sie einen anderen Bereich der Website besuchen.
 
-Im einfachsten Fall ist der einzige variable Teil der Schnellansichts-URL die Produkt-SKU. In diesem Fall ist der SKU-Wert das einzige Datenelement, das Sie zum Hinzufügen von Hotspots zum Bannerbild benötigen.
+Im einfachsten Fall ist der einzige variable Teil der Schnellansichts-URL die Produkt-SKU. In diesem Fall ist der SKU-Wert das einzige Datenelement, das Sie benötigen, um dem Bannerbild Hotspots hinzuzufügen.
 
 In komplexen Fällen enthält die Schnellansichts-URL jedoch zusätzlich zur SKU verschiedene andere Elemente. Variierende Elemente können beispielsweise die Kategorien-ID, den Farb-Code und den Größen-Code enthalten. In diesen Fällen ist jedes Element eine separate Variable in der Hotspot-Datendefinition der Funktion für interaktive Bilder mit Shopping-Funktion in Experience Manager Assets.
 
-Sehen Sie sich die folgenden Beispiele für Schnellansichts-URLs und die resultierenden Hotspot-Variablen an:
+Nachfolgend finden Sie einige Beispiele für Schnellansichts-URLs und die resultierenden Hotspot-Variablen:
 
 <table>
   <tbody>
@@ -186,10 +186,10 @@ Nachdem Sie die Viewer-Vorgabe gespeichert haben, wird sie automatisch auf der S
 
 1. Wählen Sie im Pulldown-Menü „Rich-Media-Typ“ die Option **[!UICONTROL Interaktives Bild]** aus.
 1. Wählen Sie **[!UICONTROL Erstellen]**.
-1. Tippen Sie auf der Seite &quot;Viewer-Vorgabe bearbeiten&quot;auf die **[!UICONTROL Erscheinungsbild]** Registerkarte.
+1. Wählen Sie auf der Seite „Viewer-Vorgabe bearbeiten“ die Registerkarte **[!UICONTROL Erscheinungsbild]** aus.
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Um ein eigenes Hotspot-Bild hochzuladen, das Sie für Bilder verwenden möchten, tippen Sie auf das Symbol Asset-Auswahl . Navigieren Sie auf der Seite „Inhalt auswählen“ zum gewünschten Hotspot-Bild und wählen Sie es aus. Wählen Sie oben rechts das Häkchen-Symbol aus.
+   * Um ein eigenes Hotspot-Bild hochzuladen, das Sie für Bilder verwenden möchten, klicken Sie auf das Asset-Auswahl-Symbol. Navigieren Sie auf der Seite „Inhalt auswählen“ zum gewünschten Hotspot-Bild und wählen Sie es aus. Wählen Sie oben rechts das Häkchen-Symbol aus.
    * Um ein vordefiniertes Hotspot-Bild auszuwählen, tippen Sie auf das Symbol für die Hotspot-Galerie. Tippen Sie in der Palette der Hotspot-Galerie auf das gewünschte Hotspot-Bild.
 
 1. Tippen Sie oben rechts auf **[!UICONTROL Speichern]**.
@@ -216,7 +216,7 @@ Wenn Sie die gewünschten Bilder bereits hochgeladen haben, fahren Sie mit dem n
 
 Sie können einem Bildbanner Hotspots hinzufügen, indem Sie den Editor auf der Seite „Hotspot-Verwaltung“ verwenden.
 
-Beim Hinzufügen von Hotspots können Sie sie als Popup-Schnellansichtsanzeige, als Hyperlink oder als Experience Fragment definieren.
+Beim Hinzufügen von Hotspots können Sie sie als eine Schnellansichts-Popup-Anzeige, als einen Hyperlink oder als ein Experience Fragment definieren.
 
 Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
@@ -244,7 +244,7 @@ Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden,
 
 **So fügen Sie einem Bildbanner Hotspots hinzu:**
 
-1. Navigieren Sie in der Ansicht &quot;Assets&quot;zum Bildbanner, das interaktiv sein soll.
+1. Navigieren Sie in der Assets-Ansicht zu dem Bildbanner, das Sie interaktiv machen möchten.
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Bewegen Sie den Mauszeiger über das Bild und tippen Sie auf **[!UICONTROL Auswählen]** (Häkchensymbol). Tippen Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
@@ -256,12 +256,12 @@ Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden,
 1. Tippen Sie oben links auf der Seite auf **[!UICONTROL Hotspot hinzufügen]** (Fingertipp-Symbol), um die Hotspot-Verwaltungsseite zu öffnen.
 1. Tippen Sie oben links auf der Seite auf **[!UICONTROL Hotspot]**.
 
-   1. Tippen Sie in der Nähe der linken oberen Ecke der Seite &quot;Hotspot-Verwaltung&quot;auf **[!UICONTROL Hotspot]**.
+   1. Tippen Sie oben links auf der Seite „Hotspot-Verwaltung“ auf **[!UICONTROL Hotspot]**.
    1. Tippen Sie im Bild auf eine Stelle, an der der Hotspot angezeigt werden soll. Ziehen Sie bei Bedarf den Hotspot, um seine Position anzupassen. Sie können auch die Pfeiltasten verwenden, um die Position eines ausgewählten Hotspots zu steuern.
    1. Fügen Sie bei Bedarf weitere Hotspots hinzu, indem Sie die Schritte a und b wiederholen.
    1. (Optional) Um einen Hotspot zu löschen, wählen Sie ihn auf dem Bild aus und tippen Sie dann auf **[!UICONTROL Löschen]** (Papierkorb-Symbol) unter der Überschrift **[!UICONTROL Hotspots]**.
 
-1. Geben Sie im Textfeld Name den Namen des Hotspots ein. Dieser Name wird auch in der Dropdown-Liste Ausgewählter Hotspot angezeigt.
+1. Geben Sie im Textfeld „Name“ den Namen des Hotspots ein. Dieser Name wird auch in der Dropdown-Liste „Ausgewählte Hotspots“ angezeigt.
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Wählen Sie **[!UICONTROL Schnellansicht]** aus.
@@ -360,7 +360,7 @@ Informationen hierzu finden Sie im Thema über das Konfigurationsattribut [ZoomV
 
 Informationen finden Sie unter [Image-Serving-Befehl](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html?lang=de).
 
-Jetzt können Sie das interaktive Bild in eine Schnellansicht auf Ihrer Website integrieren.
+Jetzt können Sie das interaktive Bild in eine vorhandene Schnellansicht auf Ihrer Website integrieren.
 
 ## Integrieren eines interaktiven Bildes in einer Schnellansicht {#integrating-an-interactive-image-with-an-existing-quickview}
 
@@ -386,8 +386,8 @@ Wenn das interaktive Bild mit Shopping-Funktion Schritt 1 und teilweise Schritt 
 
 In einem solchen Ereignis-Handler nimmt der Frontend-Code Folgendes vor:
 
-* Listet ein Ereignis auf, das vom interaktiven Bild mit Shopping-Funktion ausgegeben wird.
-* Erstellt anhand der Hotspot-Daten eine Schnellansichts-URL.
+* Er lauscht auf ei Ereignis, das durch das interaktive Bild mit Shopping-Funktion ausgegeben wurde.
+* Er erstellt anhand der Hotspot-Daten eine Schnellansichts-URL.
 * Er löst den Schnellansichts-Ladevorgang vom Backend aus und rendert die Schnellansicht auf dem Bildschirm, um sie anzuzeigen.
 
 Der von Experience Manager Assets zurückgegebene Einbettungs-Code verfügt über einen einsatzbereiten Ereignis-Handler, der auskommentiert ist, wie im folgenden hervorgehobenen Code-Fragment zu sehen ist:
@@ -453,7 +453,7 @@ Unter Verwendung der vorherigen Schnellansichts-URL-Beispiele können Sie in den
 
 Im letzten Schritt muss die Schnellansichts-URL ausgelöst und der Schnellansichtsbereich aktiviert werden. Hierzu ist die Unterstützung eines Frontend-IT-Mitarbeiters aus Ihrem Unternehmen erforderlich. Diese Fachkraft verfügt am ehesten über das entsprechende Fachwissen, um mithilfe einer vordefinierten Schnellansichts-URL die Implementierung der Schnellansicht im entsprechenden Schritt auszulösen.
 
-Sie können sehen, wie diese Schritte auf die Demo-Website angewendet werden, sodass ein interaktives Bild mit Shopping-Funktion mit dem Schnellansichts-Code voll integriert wird. Zuvor wurde die Struktur der Schnellansichts-URL wie folgt identifiziert:
+Sie können sehen, wie diese Schritte auf die Demo-Website angewendet werden, sodass ein interaktives Bild mit Shopping-Funktion mit dem Schnellansichts-Code voll integriert wird. Zuvor wurde die Struktur der Schnellansichts-URL wie folgt ermittelt:
 
 ```xml {.line-numbers}
 /datafeed/$categoryId$-$SKU$.json

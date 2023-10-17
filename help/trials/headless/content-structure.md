@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 41%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Erstellen der Inhaltsstruktur für Ihre App"
->abstract="Im Zuge dieser Serie von interaktiven Handbüchern erfahren Sie, wie Sie eine Struktur (das sogenannte Inhaltsfragmentmodell) erstellen, die als Grundlage für Headless-Inhalte dienen kann."
+>abstract="Im Zuge dieser Serie von interaktiven Handbüchern erfahren Sie, wie Sie eine Struktur (das sogenannte Inhaltsfragmentmodell) erstellen, die als Grundlage für Ihre Headless-Inhalte dienen kann."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="Starten der Modellkonsole"
->abstract="Nun sehen wir uns an, wie Sie ein wiederverwendbares Schema, ein sogenanntes Inhaltsfragmentmodell, für Ihre Inhalte in Adobe Experience Manager as a Cloud Service erstellen. Sehen Sie sich das Video an, um zu verstehen, warum dieser Schritt wichtig ist. <br><br>In diesem Lernmodul wird eine Reise-Website als Beispiel verwendet und die Erstellung eines Modells für eine Reise Schritt für Schritt erläutert.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie auf die Schaltfläche unten klicken und dieser Anleitung folgen."
+>abstract="Nun sehen wir uns an, wie Sie ein wiederverwendbares Schema, ein sogenanntes Inhaltsfragmentmodell, für Ihre Inhalte in Adobe Experience Manager as a Cloud Service erstellen. Sehen Sie sich das Video an, um zu verstehen, warum dieser Schritt wichtig ist. <br><br>In diesem Lernmodul wird eine Reise-Website als Beispiel verwendet und Schritt für Schritt die Erstellung eines Modells für eine Reise erläutert.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie auf die Schaltfläche unten klicken und dieser Anleitung folgen."
 >additional-url="https://video.tv.adobe.com/v/3413261?captions=ger" text="Einführungsvideo zu Inhaltsstrukturen"
 
 >[!CONTEXTUALHELP]
@@ -32,45 +32,45 @@ ht-degree: 41%
 
 ## Erstellen eines Modells {#create-model}
 
-Die Inhaltsfragmentmodell-Konsole wird auf einer neuen Registerkarte geöffnet. Stellen Sie sich die Inhaltsfragmentmodellkonsole als Ihre Modellbibliothek vor, in der Sie Modelle erstellen und vorhandene Modelle verwalten.
+Die Inhaltsfragmentmodell-Konsole wird auf einer neuen Registerkarte geöffnet. Stellen Sie sich die Inhaltsfragmentmodell-Konsole als eine Modellbibliothek vor, in der Sie neue Modelle erstellen und vorhandene verwalten können.
 
-Beispielsweise erstellen Sie ein Modell, das die Datenstruktur einer Reise darstellt, die auf einer Reisewebsite dargestellt wird. Eine Reise mit diesem Modell wird als **Abenteuer**.
+Für das Beispiel erstellen Sie ein Modell, das die Datenstruktur einer Reise darstellt, die auf einer Reise-Website angeboten wird. Eine Reise mit diesem Modell wird als **Abenteuer** bezeichnet.
 
-1. Klicken Sie in der rechten oberen Ecke des Bildschirms auf **Erstellen** , um mit der Erstellung eines Inhaltsfragmentmodells zu beginnen.
+1. Klicken Sie in der rechten oberen Ecke des Bildschirms auf **Erstellen**, um mit der Erstellung eines Inhaltsfragmentmodells zu beginnen.
 
-1. Der Assistent Modell erstellen führt Sie durch die Erstellung Ihres Modells. Geben Sie die folgenden Informationen an.
+1. Der Modellerstellungs-Assistent führt Sie durch die Erstellung Ihres Modells. Geben Sie die erforderlichen Informationen an.
 
-   * **Modelltitel** - Eine kurze Bezeichnung des Modells, die normalerweise den Zweck des Modells angibt. Sie können das neue Modell aufrufen `Adventure`.
+   * **Modelltitel** – Dies ist eine kurze Bezeichnung des Modells und enthält normalerweise den Zweck des Modells. Sie können das neue Modell `Adventure` nennen.
    * **Modell aktivieren**: Diese Option ist standardmäßig aktiviert. Es muss aktiviert sein, damit auf diesem Modell basierende Inhaltsfragmente erstellt werden können.
 
-1. Nachdem die Pflichtfelder ausgefüllt sind, klicken Sie auf **Erstellen** oben rechts, um das Modell zu erstellen.
+1. Nachdem die Pflichtfelder ausgefüllt wurden, klicken Sie oben rechts auf **Erstellen**, um das Modell zu erstellen.
 
-1. Die **Erfolg** bestätigt, dass das Modell erstellt wurde. Klicken **Öffnen** im Dialogfeld, damit Sie Ihr neues Inhaltsfragmentmodell im Editor in einer neuen Registerkarte öffnen können. Fahren Sie dann mit dem nächsten Schritt fort, um Ihrem Modell Datenfelder hinzuzufügen.
+1. Das Dialogfeld **Erfolg** bestätigt, dass das Modell erstellt wurde. Klicken Sie im Dialogfeld auf **Öffnen**, damit Sie Ihr neues Inhaltsfragmentmodell im Editor auf einer neuen Registerkarte öffnen können. Fahren Sie dann mit dem nächsten Schritt fort, um Ihrem Modell Datenfelder hinzuzufügen.
 
 ![Schritte 2 und 3 zum Erstellen eines Inhaltsfragmentmodells](assets/do-not-localize/create-model.png)
 
 ## Verwenden des Modell-Editors {#configure-model}
 
-Sie haben jetzt ein Modell namens **Abenteuer**, hat jedoch keine Details wie Dauer, Ziel und Aktivitäten. Bevor Sie Ihr Modell verwenden können, müssen Sie die Datenstruktur definieren.
+Wir haben jetzt ein Modell namens **Abenteuer**, aber es hat keine Details wie Dauer, Ziel und Aktivitäten. Bevor Sie das Modell verwenden können, müssen Sie die Datenstruktur definieren.
 
 Im Editor für Inhaltsfragmentmodelle konfigurieren Sie die Datentypen und Eigenschaften, die den Inhalt des Modells definieren.
 
 >[!TIP]
 >
->Es ist wichtig, die Namensschemas in den folgenden Anweisungen zu befolgen, da diese spezifischen Namen in späteren Modulen referenziert werden.
+>Es ist wichtig, die Namensschemata in den folgenden Anweisungen zu befolgen, da diese spezifischen Namen in späteren Modulen referenziert werden.
 
-1. Ziehen Sie ein **Einzeiliges Textfeld** aus dem Bedienfeld **Datentypen** auf der rechten Seite des Editors und legen Sie es auf Ihrem Inhaltsfragmentmodell ab.
+1. Ziehen Sie ein **einzeiliges Textfeld** aus dem Bedienfeld **Datentypen** auf der rechten Seite des Editors und legen Sie es auf Ihrem Inhaltsfragmentmodell ab.
 
-1. Sobald ein Datentyp platziert wurde, wird die **Datentypen** -Spalte automatisch in **Eigenschaften** -Tab, in dem Sie die Details des platzierten Datentyps definieren können. Für dieses erste Feld möchten Sie den Titel der Reise oder des Abenteuers speichern. Tragen Sie die folgenden Eigenschaften ein.
+1. Nachdem ein Datentyp abgelegt wurde, wird automatisch statt der Spalte **Datentypen** die Registerkarte **Eigenschaften** angezeigt, auf der Sie die Details des von Ihnen platzierten Datentyps definieren können. Für dieses erste Feld sollten Sie den Titel der Reise oder des Abenteuers speichern. Tragen Sie die folgenden Eigenschaften ein.
 
-   * **Render As:** **Textfeld** - Wenn Sie ein Abenteuer erstellen, speichert dieses Feld den Titel des Abenteuers.
-   * **Feldbezeichnung:** `Title` - Der Titel, der bei der Erstellung eines Abenteuers für dieses Feld angezeigt wird.
+   * **Rendern als:** **Textfeld** – Wenn Sie ein Abenteuer erstellen, wird in diesem Feld der Titel des Abenteuers gespeichert.
+   * **Feldbezeichnung:** `Title`: Die Bezeichnung, die für dieses Feld angezeigt wird, wenn ein Abenteuer erstellt wird.
 
-1. Nachdem Sie die Eigenschaften des Felds definiert haben, können Sie zum **Datentypen** im rechten Bereich ein und fügen Sie durch Ziehen und Ablegen zusätzliche Felder hinzu.
+1. Sobald Sie die Eigenschaften des Feldes definiert haben, können Sie zurück zur Registerkarte **Datentypen** im rechten Bereich wechseln und durch Ziehen und Ablegen weitere Felder hinzufügen.
 
-Auf diese Weise können Sie Ihrem Modell so viele Felder wie nötig hinzufügen, um die benötigte Datenstruktur zu unterstützen. Die Datenfeld-Typen variieren, aber der Prozess, sie zu Ihrem Modell hinzuzufügen, bleibt gleich.
+Auf diese Weise können Sie Ihrem Modell so viele Felder wie nötig hinzufügen, um die Datenstruktur zu unterstützen, die Sie benötigen. Die Datenfeld-Typen variieren, aber der Prozess, sie zu Ihrem Modell hinzuzufügen, bleibt gleich.
 
-Fahren Sie mit dem nächsten Abschnitt fort, damit Sie die zum Ausfüllen erforderlichen Felder hinzufügen und die **Abenteuer** model
+Fahren Sie mit dem nächsten Abschnitt fort, um die zum Ausfüllen und Speichern des Modells **Abenteuer** erforderlichen Felder hinzuzufügen
 
 ![Schritte 1, 2 und 3 zum Hinzufügen von Feldern zum Modell](assets/do-not-localize/define-model-fields.png)
 
@@ -84,21 +84,21 @@ Sie haben bereits ein Feld für den Titel des Abenteuers. Jetzt müssen Sie Feld
 
 Gehen Sie wie oben beschrieben vor, um diese zusätzlichen Felder hinzuzufügen. Der einzige Unterschied besteht in den Eigenschaften, die Sie festlegen müssen.
 
-1. Fügen Sie ein Feld hinzu, damit Sie die Beschreibung des Abenteuers speichern können, indem Sie einen **Mehrzeiliger Text** und geben Sie die folgenden Eigenschaften ein:
+1. Fügen Sie ein Feld hinzu, um die Beschreibung des Abenteuers zu speichern, indem Sie ein **mehrzeiliges Textfeld** per Drag-and-Drop hinzufügen und die folgenden Eigenschaften eingeben:
 
-   * **Render As:** **Textbereich** - Wenn Sie ein Abenteuer erstellen, speichert dieses Feld eine kurze Beschreibung der Reise.
-   * **Feldbezeichnung:** `Description` - Der Titel, der bei der Erstellung eines Abenteuers für dieses Feld angezeigt wird.
+   * **Rendern als:** **Textbereich**: Wenn Sie ein Abenteuer erstellen, wird in diesem Feld eine kurze Beschreibung der Reise gespeichert.
+   * **Feldbezeichnung:** `Description`: Die Bezeichnung, die für dieses Feld angezeigt wird, wenn ein Abenteuer erstellt wird.
 
-1. Fügen Sie ein Feld hinzu, damit Sie den Preis des Abenteuers speichern können, indem Sie einen **Einzelzeilentext** und geben Sie die folgenden Eigenschaften ein:
+1. Fügen Sie ein Feld hinzu, damit Sie den Preis des Abenteuers zu speichern, indem Sie ein **einzeiliges Textfeld** per Drag-and-Drop hinzufügen und die folgenden Eigenschaften eingeben:
 
-   * **Render As:** **Textfeld** - Wenn Sie ein Abenteuer erstellen, speichert dieses Feld den Preis der Reise.
-   * **Feldbezeichnung:** `Price` - Der Titel, der bei der Erstellung eines Abenteuers für dieses Feld angezeigt wird.
+   * **Rendern als:** **Textfeld**: Wenn Sie ein Abenteuer erstellen, wird in diesem Feld der Preis der Reise gespeichert.
+   * **Feldbezeichnung:** `Price`: Die Bezeichnung, die für dieses Feld angezeigt wird, wenn ein Abenteuer erstellt wird.
 
-1. Fügen Sie ein Feld hinzu, damit Sie ein Bild speichern können, das die Reise darstellt. Bilder in AEM werden als ein weiterer Inhaltstyp namens **Assets** gespeichert. Um ein Feld für sie zu erstellen, ziehen Sie eine **Inhaltsreferenz** -Feld, das auf das Asset des Bildes verweist.
+1. Fügen Sie ein Feld hinzu, um ein Bild zu speichern, das die Reise darstellt. Bilder in AEM werden als ein weiterer Inhaltstyp namens **Assets** gespeichert. Um ein Feld für sie zu erstellen, erstellen Sie per Drag-and-Drop ein **Inhaltsreferenz**-Feld, das auf das Asset des Bildes verweist.
 
-   * **Render As:** **Inhaltsreferenz** - Wenn Sie ein Abenteuer erstellen, verweist dieses Feld auf das Bild-Asset, das diese Reise darstellt.
-   * **Feldbezeichnung:** `Image` - Der Titel, der bei der Erstellung eines Abenteuers für dieses Feld angezeigt wird.
+   * **Rendern als:** **Inhaltsreferenz**: Wenn Sie ein Abenteuer erstellen, verweist dieses Feld auf das Bild-Asset, das diese Reise darstellt.
+   * **Feldbezeichnung:** `Image`: Die Bezeichnung, die für dieses Feld angezeigt wird, wenn ein Abenteuer erstellt wird.
 
 1. Nachdem Sie die erforderlichen Felder für das Inhaltsfragmentmodell hinzugefügt haben, klicken Sie oben rechts im Fenster auf **Speichern**.
 
-1. Das Modell wird gespeichert und Sie kehren zur Inhaltsfragmentmodell-Konsole zurück.
+1. Das Modell wird gespeichert, und Sie kehren zur Inhaltsfragmentmodell-Konsole zurück.

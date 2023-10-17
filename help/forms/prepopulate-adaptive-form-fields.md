@@ -6,7 +6,7 @@ exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
 source-wordcount: '2042'
-ht-degree: 88%
+ht-degree: 95%
 
 ---
 
@@ -203,7 +203,7 @@ Im Folgenden finden Sie ein Beispiel ohne `afData/afBoundData`-Wrapper:
 
 >[!NOTE]
 >
-> Die Verwendung ungebundener Felder in gebundenen Bereichen (Bereiche mit nicht leerem bindRef-Wert, die durch Ziehen von Komponenten aus der Registerkarte Sidekick oder Data Sources erstellt wurden) ist **not** empfohlen, da dies zu Datenverlust der ungebundenen Felder führen kann. Es wird empfohlen, eindeutige Feldnamen im gesamten Formular zu verwenden, insbesondere für ungebundene Felder.
+> Die Verwendung von ungebundenen Feldern in gebundenen Bedienfeldern (Bedienfelder mit nicht leerer bindRef, die durch Ziehen von Komponenten aus der Registerkarte „Sidekick“ oder „Datenquellen“ erstellt wurden) wird **nicht** empfohlen, da dies zum Verlust von Daten der ungebundenen Felder führen kann. Es wird empfohlen, eindeutige Feldnamen im gesamten Formular zu verwenden, insbesondere für ungebundene Felder.
 >
 
 ### Adaptives Formular ohne Formularmodell {#adaptive-form-with-no-form-model}
@@ -257,7 +257,7 @@ Um Konfigurationswerte festzulegen [generieren Sie OSGi-Konfigurationen mit dem 
 Im Allgemeinen werden gebundene (Formularschema) und ungebundene Felder im selben adaptiven Formular erstellt. Im Folgenden werden allerdings einige Ausnahmen genannt, die gelten, falls die gebundenen Bereiche wiederholbar sind:
 
 - Ungebundene wiederholbare Bereiche werden bei adaptiven Formularen mit XFA-Formularvorlage, XSD, JSON- oder FDM-Schema nicht unterstützt.
-- Verwenden Sie keine ungebundenen Felder in gebundenen wiederholbaren Bereichen.
+- Verwenden Sie keine ungebundenen Felder in gebundenen, wiederholbaren Bedienfeldern.
 
 >[!NOTE]
 >
@@ -296,7 +296,7 @@ https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://
 https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 ```
 
-- SERVICE_NAME verweist auf den Namen des OSGI-Vorbefüllungs-Service. Siehe [Erstellen und Ausführen eines Vorbefüllungs-Dienstes](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
+- SERVICE_NAME verweist auf den Namen des OSGI-Vorbefüllungs-Service. Weitere Informationen finden Sie unter [Erstellen und Ausführen eines Vorausfüllungsdienstes](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
 - IDENTIFIER bezieht sich auf alle Metadaten, die vom OSGI-Vorbefüllungs-Service erforderlich sind, um die Daten zum Vorbefüllen aufzurufen. Eine Kennung für die angemeldete Benutzerin bzw. den angemeldeten Benutzer ist ein Beispiel für Metadaten, die verwendet werden können.
 
 >[!NOTE]
@@ -353,8 +353,8 @@ Der Vorbefüllungs-Service ist ein OSGi-Service und wird über das OSGi-Paket be
 
 Das Textbausteinpaket (Vorbefüllungs-Service-Beispielpaket) enthält folgende Beispielimplementierung des [!DNL AEM Forms]-Vorbefüllungs-Service. Öffnen Sie das Textbausteinpaket in einem Code-Editor. Öffnen Sie beispielsweise das Textbausteinprojekt zur Bearbeitung in Eclipse. Nachdem Sie das Textbausteinpaket in einem Code-Editor geöffnet haben, führen Sie folgende Schritte aus, um den Service zu erstellen.
 
-1. Öffnen Sie die Datei src\main\java\com\adobe\test\Prefill.java zur Bearbeitung.
-1. Legen Sie im Code den Wert fest:
+1. Öffnen Sie die Datei „src\main\java\com\adobe\test\Prefill.java“ zur Bearbeitung.
+1. Legen Sie im Code folgenden Wert fest:
 
    - `nodePath:` Die Knotenpfadvariable, die auf den CRX-Repository-Speicherort verweist, enthält den Pfad der Daten-(Vorbefüllungs)-Datei. Beispiel: /content/prefilldata.xml
    - `label:` Der Parameter „label“ gibt den Anzeigenamen des Service an. Beispiel: Standardvorbefüllungs-Service

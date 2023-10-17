@@ -7,7 +7,7 @@ exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3770'
-ht-degree: 82%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ Ein Paket enthält auch Vault-Metadaten, einschließlich der Filterdefinitionen 
 
 >[!NOTE]
 >
->Pakete stellen die aktuelle Version des Inhalts zum Zeitpunkt der Erstellung des Pakets dar. Sie enthalten keine früheren Versionen des Inhalts, die AEM im Repository speichert.
+>Pakete repräsentieren die aktuelle Version der Inhalte zum Zeitpunkt der Erstellung des Pakets. Sie umfassen keine früheren Versionen der Inhalte, die AEM im Repository speichert.
 
 ## Pakete in AEM as a Cloud Service {#aemaacs-packages}
 
@@ -33,7 +33,7 @@ Inhaltspakete, die für Programme von AEM as a Cloud Service erstellt wurden, m�
 
 >[!NOTE]
 >
->Pakete können nur Inhalte enthalten. Jede Funktion (z. B. Inhalte, die unter `/apps` gespeichert werden) muss [mithilfe Ihrer CI/CD-Pipeline in Cloud Manager bereitgestellt werden](/help/implementing/cloud-manager/deploy-code.md).
+>Pakete können nur Inhalte enthalten. Jede Funktion (z. B. Inhalte, die unter `/apps` gespeichert werden) muss [mithilfe Ihrer CI/CD-Pipeline in Cloud Manager bereitgestellt werden](/help/implementing/cloud-manager/deploy-code.md).
 
 >[!IMPORTANT]
 >
@@ -43,25 +43,25 @@ Inhaltspakete, die für Programme von AEM as a Cloud Service erstellt wurden, m�
 >
 >Wiederholen Sie die Installation nicht, wenn ein solcher Fehler auftritt. Die Installation wird im Hintergrund korrekt ausgeführt. Würden Sie die Installation neu starten, könnten Konflikte durch mehrere gleichzeitige Importprozesse entstehen.
 
-Weitere Informationen zum Verwalten von Paketen für AEMaaCS finden Sie unter [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md) im Benutzerhandbuch zur Bereitstellung.
+Weitere Informationen zum Verwalten von Paketen für AEMaaCS finden Sie unter [Bereitstellen für AEM as a Cloud Service](/help/implementing/deploying/overview.md) im Benutzerhandbuch zur Bereitstellung.
 
-## Packungsgröße {#package-size}
+## Paketgröße {#package-size}
 
-Adobe empfiehlt, keine großen Pakete zu erstellen. Dadurch werden beim Hochladen und Herunterladen von Paketen Zeitüberschreitungsprobleme vermieden.
+Adobe empfiehlt, keine großen Pakete zu erstellen. Dadurch werden beim Hoch- und Herunterladen von Paketen Zeitüberschreitungsprobleme vermieden.
 
-In der Regel sollte ein Paket innerhalb von 60 Sekunden vollständig übertragen werden. Hier finden Sie die folgende Formel als Anleitung.
+In der Regel sollte ein Paket innerhalb von 60 Sekunden vollständig übertragen werden. Daraus ergibt sich die folgende Formel als Richtlinie.
 
 ```text
 MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 ```
 
-Da der Netzwerk-Traffic variabel ist und immer kleiner ist als der angegebene maximale theoretische Wert, versuchen Sie, ein Online-Internet-Geschwindigkeitstest-Tool zu verwenden.
+Da der Netzwerk-Traffic variabel und immer kleiner als der angegebene maximale theoretische Wert ist, versuchen Sie, ein Online-Tool zum Testen der Internet-Geschwindigkeit zu verwenden.
 
-Die Internetgeschwindigkeiten unterscheiden sich fast immer von denen von Uploads und Downloads. Wenn Sie Pakete hochladen und herunterladen müssen, sollten Sie den niedrigeren Wert (in der Regel die Upload-Geschwindigkeit) in Ihrer Berechnung verwenden.
+Die Internet-Geschwindigkeiten unterscheiden sich fast immer zwischen Uploads und Downloads. Wenn Sie Pakete sowohl hoch- als auch herunterladen müssen, sollten Sie in Ihrer Berechnung den niedrigeren Wert (in der Regel die Upload-Geschwindigkeit) verwenden.
 
 ### Beispiel {#example}
 
-Mithilfe eines Testwerkzeugs für die Internetgeschwindigkeit sehe ich, dass meine aktuelle Upload-Geschwindigkeit bei etwa 100 MBit/s liegt.
+Mithilfe eines Tools zum Testen der Internet-Geschwindigkeit sehe ich, dass meine aktuelle Upload-Geschwindigkeit bei etwa 100 MBit/s liegt.
 
 ```text
 100 Mbps = 12.5 MB/s
@@ -72,9 +72,9 @@ Also sollten alle Pakete, die ich erstelle, kleiner als 750 MB sein.
 
 >[!NOTE]
 >
->Netzwerkgeschwindigkeiten unterliegen aktuellen lokalen Bedingungen. Selbst bei einem kürzlichen Geschwindigkeitstest kann der tatsächliche Durchsatz variieren.
+>Netzwerkgeschwindigkeiten unterliegen aktuellen lokalen Bedingungen. Selbst bei einem vor kurzem durchgeführten Geschwindigkeitstest kann der tatsächliche Durchsatz variieren.
 >
->Daher ist die bereitgestellte Formel nur eine Richtlinie und Ihre tatsächliche empfohlene Maximalgröße kann variieren.
+>Daher ist die angegebene Formel nur eine Richtlinie und Ihre tatsächliche empfohlene maximale Paketgröße kann variieren.
 
 ## Package Manager {#package-manager}
 
@@ -110,7 +110,7 @@ Package Manager ist in vier Hauptfunktionsbereiche unterteilt:
 * **Aktivitätsprotokoll**: Dieses Bedienfeld ist zunächst minimiert und wird erweitert, um die Aktivität von Package Manager detailliert zu beschreiben, z. B. wenn ein Paket aufgebaut oder installiert wird. Unter der Registerkarte „Aktivitätsprotokoll“ sind weitere Schaltflächen für Folgendes verfügbar:
    * **Protokoll löschen**
    * **Einblenden/ausblenden**
-* **Symbolleiste** - Die Symbolleiste enthält Aktualisierungsschaltflächen für die Liste des linken Navigationsbereichs und der Pakete sowie Schaltflächen zum Suchen, Erstellen und Hochladen von Paketen.
+* **Symbolleiste**: Die Symbolleiste enthält Aktualisierungsschaltflächen für den linken Navigationsbereich und die Liste der Pakete sowie Schaltflächen zum Suchen, Erstellen und Hochladen von Paketen.
 
 ![Benutzeroberfläche von Package Manager](assets/package-manager-ui.png)
 
@@ -194,8 +194,8 @@ Beim Erstellen von Filtern können Sie einen Pfad definieren oder einen regulär
 
 | Regeltyp | Beschreibung |
 |---|---|
-| include | Das Einschließen eines Ordners umfasst diesen Ordner sowie alle Dateien und Ordner in diesem Verzeichnis (d. h. die gesamte Unterstruktur), jedoch **nicht** andere Dateien oder Ordner aus unter dem angegebenen Stammpfad einschließen. |
-| exclude | Wenn Sie ein Verzeichnis ausschließen, werden dieses Verzeichnis sowie alle Dateien und Ordner in diesem Verzeichnis ausgeschlossen (d. h. die gesamte Unterstruktur). |
+| include | Das Einbeziehen eines Verzeichnisses schließt dieses Verzeichnis und alle Dateien und Ordner in diesem Verzeichnis ein (d. h. die gesamte Unterstruktur), aber es werden **keine** anderen Dateien oder Ordner unter dem angegebenen Stammpfad einbezogen. |
+| exclude | Beim Ausschließen eines Verzeichnisses werden dieses Verzeichnis sowie alle Dateien und Ordner in diesem Verzeichnis (d. h. die gesamte Unterstruktur) ausgeschlossen. |
 
 Paketfilter werden meistens definiert, wenn Sie das Paket zum ersten Mal [erstellen.](#creating-a-new-package) Sie können jedoch auch später bearbeitet werden. Danach sollte das Paket neu aufgebaut werden, um seinen Inhalt basierend auf den neuen Filterdefinitionen zu aktualisieren.
 
@@ -244,7 +244,7 @@ Es gibt viele Aktionen, die mit einem Paket durchgeführt werden können.
 
    >[!TIP]
    >
-   >Wenn Ihre Instanz über viele Pakete verfügt, gibt es möglicherweise eine Ordnerstruktur. In solchen Fällen ist es einfacher, zum erforderlichen Zielordner zu navigieren, bevor Sie das neue Paket erstellen.
+   >Wenn Ihre Instanz viele Pakete hat, könnte eine Ordnerstruktur vorhanden sein. In solchen Fällen ist es einfacher, zum erforderlichen Zielordner zu navigieren, bevor Sie das neue Paket erstellen.
 
 1. Geben Sie im Dialogfeld **Neues Paket** die folgenden Felder ein:
 
@@ -270,7 +270,7 @@ Es ist nicht zwingend erforderlich, das Paket sofort nach seiner Erstellung aufz
 
 >[!TIP]
 >
->Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe [keine großen Packages zu erstellen.](#package-size)
+>Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe, [keine großen Pakete zu erstellen.](#package-size)
 
 ### Aufbauen eines Pakets {#building-a-package}
 
@@ -280,13 +280,13 @@ Ein Paket wird oft gleich beim [Erstellen des Pakets](#creating-a-new-package) a
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Klicken Sie auf **Aufbauen**. Ein Dialogfeld fordert Sie auf zu bestätigen, dass Sie das Paket erstellen möchten, da vorhandene Paketinhalte überschrieben werden.
+1. Klicken Sie auf **Aufbauen**. Ein Dialogfeld fordert Sie auf zu bestätigen, dass Sie das Paket erstellen möchten, da eventuell vorhandene Paketinhalte überschrieben werden.
 
 1. Klicken Sie auf **OK**. AEM baut das Paket auf und listet alle zum Paket hinzugefügten Inhalte so auf, wie dies in der Aktivitätenliste der Fall ist. Nachdem der Vorgang abgeschlossen ist, zeigt AEM eine Bestätigung an, dass das Paket aufgebaut wurde. Zudem aktualisiert AEM die Paketlisteninformationen (wenn Sie das Dialogfeld schließen).
 
 >[!TIP]
 >
->Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe [keine großen Packages zu erstellen.](#package-size)
+>Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe, [keine großen Pakete zu erstellen.](#package-size)
 
 ### Bearbeiten eines Pakets {#edit-package}
 
@@ -354,7 +354,7 @@ Nach dem Aufbau eines Pakets können Sie dessen Inhalt anzeigen.
 
 >[!TIP]
 >
->Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe [keine großen Packages zu erstellen.](#package-size)
+>Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe, [keine großen Pakete zu erstellen.](#package-size)
 
 ### Hochladen von Paketen vom Dateisystem {#uploading-packages-from-your-file-system}
 
@@ -377,7 +377,7 @@ Der Paketinhalt ist jetzt in AEM vorhanden. Um den Inhalt jedoch verfügbar zu m
 
 >[!TIP]
 >
->Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe [keine großen Packages zu erstellen.](#package-size)
+>Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe, [keine großen Pakete zu erstellen.](#package-size)
 
 ### Validieren von Paketen {#validating-packages}
 
@@ -387,7 +387,7 @@ Da Pakete vorhandene Inhalte ändern können, ist es oft nützlich, diese Änder
 
 Package Manager kann die folgenden Validierungen durchführen:
 
-* [OSGi-Paketimporte](#osgi-package-imports)
+* [OSGi-Paket-Importe](#osgi-package-imports)
 * [Überlagerungen](#overlays)
 * [ACLs](#acls)
 
@@ -407,7 +407,7 @@ Eventuelle versionierte Abhängigkeiten, die von der AEM-Instanz nicht erfüllt 
 
 **Fehlerstatus**
 
-Wenn Abhängigkeiten nicht erfüllt sind, starten die OSGi-Bundles im Paket mit diesen Abhängigkeiten nicht. Dies führt zu einer fehlerhaften Bereitstellung des Programms, da alle auf dem nicht gestarteten OSGi-Bundle basierenden Prozesse nicht ordnungsgemäß funktionieren.
+Wenn die Abhängigkeiten nicht erfüllt sind, werden die OSGi-Bundles in dem Paket mit diesen Abhängigkeiten nicht gestartet. Dies führt zu einer fehlerhaften Bereitstellung des Programms, da alle auf dem nicht gestarteten OSGi-Bundle basierenden Prozesse nicht ordnungsgemäß funktionieren.
 
 **Fehlerbehebung**
 
@@ -421,7 +421,7 @@ Um Fehler aufgrund nicht erfüllter OSGi-Bundles zu beheben, muss die Abhängigk
 
 **Prüfumfang**
 
-Diese Validierung ermittelt, ob das installierte Paket eine Datei enthält, die bereits in der Ziel-AEM-Instanz überlagert ist.
+Diese Validierung ermittelt, ob das zu installierende Paket eine Datei enthält, die bereits in der Ziel-AEM-Instanz überlagert ist.
 
 Beispiel: Bei einer bestehenden Überlagerung unter `/apps/sling/servlet/errorhandler/404.jsp` ändert ein Paket, das `/libs/sling/servlet/errorhandler/404.jsp` enthält, die vorhandene Datei unter `/libs/sling/servlet/errorhandler/404.jsp`.
 
@@ -431,7 +431,7 @@ Solche Überlagerungen werden im Aktivitätsprotokoll von Package Manager beschr
 
 **Fehlerstatus**
 
-Ein Fehlerstatus bedeutet, dass das Paket versucht, eine bereits überlagerte Datei bereitzustellen. Daher werden die Änderungen im Paket durch die Überlagerung überschrieben (und daher &quot;ausgeblendet&quot;) und nicht übernommen.
+Ein Fehlerstatus bedeutet, dass das Paket versucht, eine bereits überlagerte Datei bereitzustellen. Daher werden die Änderungen im Paket von der Überlagerung überschrieben (und somit „ausgeblendet“) und nicht übernommen.
 
 **Fehlerbehebung**
 
@@ -445,7 +445,7 @@ Zur Behebung dieses Problems muss der Verantwortliche für die Überlagerungsdat
 
 **Prüfumfang**
 
-Diese Validierung prüft, welche Berechtigungen hinzugefügt werden, wie sie verarbeitet werden (Zusammenführen/Ersetzen) und ob die aktuellen Berechtigungen betroffen sind.
+Diese Validierung prüft, welche Berechtigungen hinzugefügt werden, wie sie verarbeitet werden (zusammenführen/ersetzen) und ob die aktuellen Berechtigungen betroffen sind.
 
 **Reporting**
 
@@ -522,13 +522,13 @@ Pakete werden durch ihre Filter definiert. Sie können Package Manager anweisen,
 
 ### Installieren von Paketen {#installing-packages}
 
-Beim Hochladen eines Pakets wird nur der Paketinhalt zum Repository hinzugefügt, das Paket ist jedoch nicht verfügbar. Sie müssen das hochgeladene Paket installieren, um den Inhalt des Pakets zu verwenden.
+Beim Hochladen eines Pakets wird nur der Paketinhalt zum Repository hinzugefügt, das Paket ist jedoch nicht verfügbar. Sie müssen das hochgeladene Paket installieren, um den Inhalt des Pakets verwenden zu können.
 
 >[!CAUTION]
 >
->Durch die Installation eines Pakets können vorhandene Inhalte überschrieben oder gelöscht werden. Laden Sie ein Paket nur hoch, wenn Sie sicher sind, dass es keine benötigten Inhalte löscht oder überschreibt.
+>Beim Installieren eines Pakets können vorhandene Inhalte überschrieben oder gelöscht werden. Laden Sie ein Paket nur hoch, wenn Sie sich sicher sind, dass dadurch keine benötigten Inhalte gelöscht oder überschrieben werden.
 
-Vor der Installation Ihres Pakets erstellt Package Manager automatisch ein Snapshot-Paket, das den überschriebenen Inhalt enthält. Dieser Schnappschuss wird bei der Deinstallation des Pakets neu installiert.
+Vor der Installation Ihres Pakets erstellt Package Manager automatisch ein Snapshot-Paket, das den Inhalt enthält, der überschrieben wird. Dieser Snapshot wird wieder installiert, falls Sie das Paket deinstallieren.
 
 1. [Greifen Sie auf Package Manager zu.](#accessing)
 

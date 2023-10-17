@@ -9,7 +9,7 @@ exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
 source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
 source-wordcount: '1935'
-ht-degree: 74%
+ht-degree: 75%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 74%
 | Gilt für | Adaptives Formular basierend auf Foundation-Komponenten. <br> Für adaptive Formulare, die auf Kernkomponenten basieren, [Hier klicken](/help/forms/captcha-adaptive-forms-core-components.md). |
 
 
-CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine Herausforderung dar und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
+CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine herausfordernde Aufgabe und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
 
 [!DNL AEM Forms] unterstützt reCAPTCHA in Adaptive Forms. Sie können den reCAPTCHA-Service von Google verwenden, um CAPTCHA zu implementieren.
 
@@ -36,7 +36,7 @@ CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans
 >* reCAPTCHA im adaptiven Forms wird im Offline-Modus nicht unterstützt in [!DNL AEM Forms] App.
 >
 
-## reCAPTCHA-Dienst von Google konfigurieren {#google-reCAPTCHA}
+## Konfigurieren des reCAPTCHA-Service von Google {#google-reCAPTCHA}
 
 Formularautoren können den reCAPTCHA-Dienst von Google verwenden, um reCAPTCHA in Adaptive Forms zu implementieren. Es bietet erweiterte CAPTCHA-Funktionen zum Schutz Ihrer Site. Weitere Informationen zur Funktionsweise von reCAPTCHA finden Sie unter [Google reCAPTCHA](https://developers.google.com/recaptcha/). Der reCAPTCHA-Dienst umfasst [!DNL reCAPTCHA v2] und [!DNL reCAPTCHA Enterprise] in die integriert werden kann [!DNL AEM Forms]. Je nach Ihren Anforderungen können Sie den reCAPTCHA-Service konfigurieren, um Folgendes zu aktivieren:
 
@@ -229,7 +229,7 @@ Tippen Sie im Formular auf das Feld **[!UICONTROL Währungswert]** und erstellen
 
 >[!NOTE]
 >
-> Wenn Sie eine reCAPTCHA v2-Konfiguration auswählen und die Größe auf [!UICONTROL Unsichtbar], bleibt die Ein-/Ausblenden-Option deaktiviert.
+> Wenn Sie eine reCAPTCHA v2-Konfiguration auswählen und die Größe auf [!UICONTROL Unsichtbar] festgelegt ist, bleibt die Ein-/Ausblenden-Option deaktiviert.
 
 ### CAPTCHA validieren {#validate-captcha}
 

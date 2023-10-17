@@ -7,7 +7,7 @@ exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="assets_user_entitlements"
 >title="Zuweisen von AEM-Produktprofilen"
->abstract="Sie sind nicht berechtigt, Experience Manager Assets zu verwenden. Kontaktieren Sie diesbezüglich Ihre oder Ihren Admin."
+>abstract="Sie sind nicht berechtigt, Experience Manager Assets zu verwenden. Kontaktieren Sie diesbezüglich Ihre Admins."
 
 In diesem Teil der [Onboarding-Journey](overview.md) erfahren Sie, wie Sie Ihrem Team mithilfe von AEM-Produktprofilen Zugriff auf AEM gewähren.
 
@@ -39,10 +39,10 @@ Um AEM verwenden zu können, müssen Ihre Team-Mitglieder mindestens einem AEM-P
 
 >[!NOTE]
 >
->Jeder Benutzer, der einem AEM as a Cloud Service-Produktprofil zugewiesen ist, hat über die Rolle **Cloud Manager-Benutzer** schreibgeschützten Zugriff auf Cloud Manager.
+>Jede Person, die einem AEM as a Cloud Service-Produktprofil zugewiesen ist, hat über die Rolle **Cloud Manager-Benutzer** schreibgeschützten Zugriff auf Cloud Manager.
 >
->Benutzer mit **Cloud Manager** Die Benutzerrolle kann sich nur bei Cloud Manager anmelden und in den (falls vorhanden) AEM Autorenumgebungen navigieren, indem Sie die Menüoptionen Programme verwenden. Die Rolle **Cloud Manager-Benutzer** reicht nicht aus, um auf Programmdetails zuzugreifen. Wenn ein solcher Zugriff erforderlich ist, müssen Benutzende von ihrem Systemadministrator zusätzliche Rollen erhalten.
->Siehe [Abschnitt &quot;Zusätzliche Ressourcen&quot; unten](#additional-resources) Weitere Informationen zu Cloud Manager-Benutzerrollen.
+>Benutzerinnen und Benutzer, die nur die Rolle **Cloud Manager-Benutzer** haben, können sich bei Cloud Manager anmelden und zu den AEM-Authoring-Umgebungen navigieren (falls vorhanden), indem sie die Menüoptionen unter „Anwendungen“ verwenden. Die Rolle **Cloud Manager-Benutzer** reicht nicht aus, um auf Programmdetails zuzugreifen. Wenn ein solcher Zugriff erforderlich ist, müssen Benutzende von ihrem Systemadministrator zusätzliche Rollen erhalten.
+>Im [Abschnitt „Zusätzliche Ressourcen“ weiter unten](#additional-resources) finden Sie weitere Informationen zu Cloud Manager-Benutzerrollen.
 
 >[!CAUTION]
 >
@@ -113,7 +113,7 @@ Wenn Sie jedoch besser verstehen möchten, wie Autoren und Entwickler das System
 
 Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt der Onboarding-Tour hinausgehen möchten.
 
-* [Team- und Produktprofile in AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) – Erfahren Sie, wie Sie mit Team- und Produktprofilen in AEM as a Cloud Service den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren und einschränken können. 
+* [Team- und Produktprofile in AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) – Erfahren Sie, wie Sie mit Team- und Produktprofilen in AEM as a Cloud Service den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren bzw. einschränken können.
 * [Verwalten von Produkten und Benutzerzugriffen in der Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console): Erfahren Sie, wie Sie die Admin Console zur Verwaltung des Benutzerzugriffs verwenden können.
-* [Zugriff auf AEM konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html): In dieser kurzen Anleitung erfahren Sie mehr über die Konfiguration von Adobe IMS-Benutzern, Benutzergruppen und Produktprofilen in Admin Console.
+* [Zugriff auf AEM konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=de): In dieser kurzen Anleitung erfahren Sie mehr über die Konfiguration von Adobe IMS-Benutzern, Benutzergruppen und Produktprofilen in Admin Console.
 

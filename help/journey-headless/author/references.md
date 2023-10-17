@@ -5,7 +5,7 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '712'
-ht-degree: 87%
+ht-degree: 92%
 
 ---
 
@@ -71,7 +71,7 @@ Und das ist nur für den Einstieg. Je nach Komplexität kann eine Auszeichnung f
 
 Die Repräsentation dieser Beziehungen kann mit Fragmentverweisen erreicht werden, da diese sowohl von Ihnen (dem Autor) als auch von den Headless-Programmen verstanden werden.
 
-Als Autor sind Sie nicht für die Definition dieser Beziehungen verantwortlich (das wird vom Inhaltsarchitekten beim Erstellen des Inhaltsfragmentmodells vorgenommen), Sie müssen jedoch wissen, wie Sie die Verweise erkennen und bearbeiten können.
+Als Autorin bzw. Autor sind Sie nicht für die Definition dieser Beziehungen verantwortlich (das wird im Rahmen der Inhaltsarchitektur beim Erstellen des Inhaltsfragmentmodells vorgenommen), Sie müssen jedoch wissen, wie Sie die Verweise erkennen und bearbeiten können.
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
@@ -114,7 +114,7 @@ Nachdem Sie sich mit Verweisen und Strukturen in Inhaltsfragmenten vertraut gema
 
       * [Erstellen eines Inhaltsfragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [Bearbeiten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/authoring.md)
+   * [Erstellung von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/authoring.md)
 
    * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 

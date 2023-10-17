@@ -7,7 +7,7 @@ exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 72%
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ Der Assistent „Sprachkopie erstellen“ führt Sie durch die Erstellung und Ve
 
 >[!TIP]
 >
->Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , der durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt, ideal für Benutzer ohne AEM- oder Übersetzungserfahrung.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, durchlaufen Sie unsere [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine Erfahrung mit AEM oder Übersetzungen haben.
 
 >[!NOTE]
 >

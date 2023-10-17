@@ -6,7 +6,7 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
 source-wordcount: '1099'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 92%
 
 Willkommen in der Dokumentation für Entwickler, die neu bei Adobe Experience Manager Headless CMS sind!
 
-Erfahren Sie mehr über die leistungsstarken und flexiblen Headless-Funktionen, ihre Funktionen und ihre Verwendung bei Ihrem ersten Headless-Entwicklungsprojekt. Auf dieser Tour erhalten Sie die gesamte Informationen, die Sie zur Entwicklung Ihres ersten Headless-Programms benötigen.
+Erfahren Sie mehr über die leistungsstarken und flexiblen Headless-Funktionen, ihre Möglichkeiten und darüber, wie Sie sie in Ihrem ersten Headless-Entwicklungsprojekt einsetzen können. Im Rahmen dieser Tour erhalten Sie die gesamten Informationen, die Sie zur Entwicklung Ihrer ersten Headless-Anwendung benötigen.
 
 {{headless-trials-promotion}}
 
@@ -90,7 +90,7 @@ Dokumentations-Touren zeigen Ihnen, wie AEM ein Geschäftsproblem löst, indem s
 In diesen zusätzlichen Touren finden Sie weitere Informationen darüber, wie die leistungsstarken Funktionen von AEM zusammenarbeiten.
 
 * Die [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
-* [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de) - Wenn Sie lieber lernen möchten, indem Sie tun und vorhandene Kenntnisse über AEM haben, nehmen Sie unsere praxisorientierten Tutorials, organisiert von API und Framework, die die Erstellung und Verwendung von Anwendungen erforschen, die auf AEM Headless aufbauen.
+* [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de): Wenn Sie es vorziehen, durch praktisches Arbeiten zu lernen, und technisch in AEM versiert sind, können Sie unsere nach API und Framework geordneten praktischen Tutorials nutzen, in denen die Erstellung und Verwendung von Anwendungen auf der Grundlage von AEM Headless behandelt wird.
 * [AEM Headless Übersetzungs-Tour](/help/journey-headless/translation/overview.md) – Diese Dokumentations-Tour vermittelt Ihnen ein umfassendes Verständnis der Headless-Technologie sowie davon, wie AEM Headless Inhalte bereitstellt und wie Sie sie übersetzen können.
 * [Headless-Autoren-Tour](/help/journey-headless/author/overview.md) – Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistungsstarken und flexiblen Headless-Funktionen von AEM und deren Möglichkeiten. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Projekt Inhalte modellieren können.
 * [Headless-Architekten-Tour](/help/journey-headless/architect/overview.md) – Beginnen Sie hier mit einer Einführung in die leistungsstarken, flexiblen Headless-Funktionen von Adobe Experience Manager as a Cloud Service und erfahren Sie, wie Sie Inhalte für Ihr Projekt modellieren können.

@@ -5,7 +5,7 @@ exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Nach der Lektüre dieses Dokuments werden Sie Folgendes verstehen
 * Wie sich der Vertrag auf den Onboarding-Prozess auswirkt.
 * Wie Sie sich auf Ihr Onboarding-Gespräch vorbereiten können.
 
-Machen Sie sich keine Sorgen, wenn Sie nicht mit allen auf dieser Seite verwendeten Begriffen vertraut sind. Die Begriffe werden im nächsten Teil der Journey erläutert.
+Machen Sie sich keine Sorgen, wenn Sie nicht mit allen auf dieser Seite verwendeten Begriffen vertraut sind. Die Begriffe werden im nächsten Teil der Tour erläutert.
 
 ## Video    {#video}
 
@@ -42,13 +42,13 @@ Das Onboarding von AEM as a Cloud Service beginnt mit einem unterzeichneten Vert
 * Ihr Premier Support Level (falls zutreffend)
 * Ihre Ansprechpartner für das Onboarding
 
-Wenn Sie diese Informationen nicht kennen, wenden Sie sich an das Vertragsteam in Ihrem Unternehmen.
+Wenn Ihnen diese Details nicht bekannt sind, wenden Sie sich an das Vertrags-Team in Ihrer Organisation.
 
 Nach Vertragsunterzeichnung stellt die Adobe Ihre Umgebungen bereit, sendet eine Willkommens-E-Mail an die im Vertrag definierten Onboarding-Kontakte und organisiert ein Onboarding-Gespräch. Dies geschieht in der Regel einige Tage nach Vertragsschluss, es sei denn, es wird ein späteres Datum für den Service-Beginn vereinbart.
 
 ## Systembereitstellung {#provisioning}
 
-Nach Vertragsunterzeichnung werden alle AEM Cloud-Umgebungen, die unter den Vertrag fallen, automatisch von Adobe bereitgestellt. Diese Umgebungen werden auch mit Ihren Programmen in Cloud Manager verknüpft (weitere Informationen zu diesem Thema finden Sie weiter unten in der Journey). Diese AEM-Cloud-Umgebungen sind in jedem AEM as a Cloud Service-Abonnement enthalten und bestehen in der Regel aus mindestens einer Produktionsumgebung, einer Staging-Umgebung und optional einer oder mehreren Entwicklungs- oder Testumgebungen.
+Nachdem der Vertrag unterzeichnet wurde, werden alle AEM Cloud-Umgebungen, die unter den Vertrag fallen, automatisch von Adobe bereitgestellt. Diese Umgebungen werden auch mit Ihren Programmen in Cloud Manager verknüpft (weitere Informationen zu diesem Thema finden Sie weiter unten in der Journey). Diese AEM-Cloud-Umgebungen sind in jedem AEM as a Cloud Service-Abonnement enthalten und bestehen in der Regel aus mindestens einer Produktionsumgebung, einer Staging-Umgebung und optional einer oder mehreren Entwicklungs- oder Testumgebungen.
 
 ## Onboarding-Gespräch {#onboarding-call}
 
@@ -60,7 +60,7 @@ Zu den Teilnehmern seitens Ihrer Organisation sollten gehören:
 * Technische Fachkräfte
 * Ihr Implementierungspartner
 
-Die Adobe wird wie folgt dargestellt:
+Adobe wird vertreten durch:
 
 * Onboarding-Spezialist
 * Ihr technischer Account Manager (falls zutreffend)
@@ -88,4 +88,4 @@ Sie sollten jetzt ein grundlegendes Verständnis haben von:
 * Wie sich der Vertrag auf den Onboarding-Prozess auswirkt.
 * Wie Sie sich auf Ihr Onboarding-Gespräch vorbereiten können.
 
-Jetzt, da Sie mit diesen Vorbereitungsschritten vertraut sind, sind Sie so gut wie bereit, sich selbst bei dem System anzumelden. Zunächst benötigen Sie jedoch einen kurzen Überblick darüber, wie die Struktur von AEM as a Cloud Service aus Sicht eines Systemadministrators aufgebaut ist, und sollten einige wichtige Begriffe kennenlernen. Fahren Sie mit dem nächsten Teil der Journey fort, [AEM as a Cloud Service Terminologie](terminology.md).
+Jetzt, da Sie mit diesen Vorbereitungsschritten vertraut sind, sind Sie so gut wie bereit, sich selbst bei dem System anzumelden. Zunächst benötigen Sie jedoch einen kurzen Überblick darüber, wie die Struktur von AEM as a Cloud Service aus Sicht eines Systemadministrators aufgebaut ist, und sollten einige wichtige Begriffe kennenlernen. Fahren Sie mit dem nächsten Teil der Tour fort: [Terminologie von AEM as a Cloud Service](terminology.md).

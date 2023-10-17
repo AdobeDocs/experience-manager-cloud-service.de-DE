@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2543'
-ht-degree: 86%
+ht-degree: 99%
 
 ---
 
@@ -86,7 +86,7 @@ Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
 
 Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind aber verwandt:
 
-* Beim Erstellen einer Seite ist nur das **Titelfeld** erforderlich. Wenn bei der Erstellung von Seiten kein **Name** angegeben wird, generiert AEM einen Namen aus den ersten 64 Zeichen des Titels (entsprechend der nachfolgenden Validierung). Nur die ersten 64 Zeichen werden verwendet, um die Best Practice für kurze Seitennamen zu unterstützen.
+* Beim Erstellen einer Seite ist nur das **Titelfeld** erforderlich. Wenn bei der Erstellung von Seiten kein **Name** angegeben wird, generiert AEM einen Namen aus den ersten 64 Zeichen des Titels (entsprechend der nachfolgenden Validierung). Nur die ersten 64 Zeichen werden verwendet, um gängige Best Practices für kurze Seitennamen zu unterstützen.
 * Wenn ein Seitenname manuell vom Autor angegeben wird, gilt die Beschränkung von 64 Zeichen nicht, aber andere technische Einschränkungen gelten unter Umständen für die Länge des Seitennamens.
 
 >[!TIP]
@@ -115,7 +115,7 @@ Umfassende Informationen zu allen zulässigen Zeichen finden Sie in den [Benennu
 
 Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen** für die Seite von dieser Zeichenfolge ab und [validiert den Namen entsprechend den Konventionen von AEM und JCR](/help/implementing/developing/introduction/naming-conventions.md).
 
-A **Titel** -Feld mit ungültigen Zeichen wird akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
+Im Feld **Titel** werden ungültige Zeichen akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
 
 | Titel | Abgeleiteter Name |
 |---|---|
@@ -124,7 +124,7 @@ A **Titel** -Feld mit ungültigen Zeichen wird akzeptiert, wobei die ungültigen
 
 #### Name {#name}
 
-Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen gemäß den AEM- und JCR-Konventionen](/help/implementing/developing/introduction/naming-conventions.md). Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld durch eine erläuternde Meldung hervorgehoben.
+Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen gemäß den AEM- und JCR-Konventionen](/help/implementing/developing/introduction/naming-conventions.md). Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erläuternden Meldung hervorgehoben.
 
 ![Beispiel für die Eingabe eines ungültigen Seitennamens](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -179,7 +179,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
 
 1. Öffnen Sie die Sites-Konsole (z. B. `https://<host>:<port>/sites.html/content`).
 1. Navigieren Sie zu der Position, an der Sie die neue Seite erstellen möchten.
-1. Öffnen Sie die Dropdown-Auswahl mit **Erstellen** Wählen Sie in der Symbolleiste die Option **Seite** aus der Liste:
+1. Öffnen Sie das Dropdown-Menü über **Erstellen** in der Symbolleiste und wählen Sie **Seite** aus der Liste aus:
 
    ![Erstellen von Seiten](/help/sites-cloud/authoring/assets/organizing-create-page.png)
 
@@ -207,11 +207,11 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
 
       * Mit diesem Wert wird der URI generiert. Wenn kein Name angegeben ist, wird der Name vom Titel abgeleitet.
       * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den Konventionen von AEM und JCR](/help/implementing/developing/introduction/naming-conventions.md).
-      * Die **Eingabe von ungültigen Zeichen** im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld hervorgehoben und eine erläuternde Meldung angezeigt, die die Zeichen angibt, die entfernt/ersetzt werden müssen.
+      * Die **Eingabe von ungültigen Zeichen** im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die auf zu entfernende/ersetzende Zeichen verweist.
 
    >[!TIP]
    >
-   >Siehe [Seitenbenennungskonventionen](#page-naming-conventions).
+   >Siehe [Seitenbenennungskonventionen](#page-naming-conventions)
 
    Zum Erstellen einer neuen Seite muss zumindest der **Titel** angegeben werden.
 
@@ -223,7 +223,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
 
    >[!NOTE]
    >
-   >Wenn Sie eine Seite erstellen und dabei einen in diesem Verzeichnis bereits vorhandenen Namen verwenden, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `beach` bereits vorhanden ist, wird eine neue Seite `beach1`.
+   >Wenn Sie eine Seite erstellen und dabei einen in diesem Verzeichnis bereits vorhandenen Namen verwenden, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `beach` bereits vorhanden ist, wird eine neue Seite `beach1` genannt.
 
 1. Wenn Sie zur Konsole zurückkehren, wird die neue Seite angezeigt:
 
@@ -237,7 +237,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
 
 Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhandenen Seite navigiert sind, können Sie diese zur Bearbeitung öffnen:
 
-1. Öffnen Sie die **Sites-Konsole**.
+1. Öffnen Sie die **Sites**-Konsole.
 1. Navigieren Sie zu der Seite, die Sie bearbeiten möchten.
 1. Wählen Sie Ihre Seite mit einer der folgenden Methoden aus:
 
@@ -248,7 +248,7 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 
    ![Schaltfläche „Bearbeiten“](/help/sites-cloud/authoring/assets/edit.png)
 
-1. Die Seite wird geöffnet und Sie können [Bearbeiten der Seite](/help/sites-cloud/authoring/fundamentals/editing-content.md) nach Bedarf.
+1. Die Seite wird geöffnet und Sie können [die Seite bearbeiten](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 >[!NOTE]
 >
@@ -283,7 +283,7 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
 
 >[!NOTE]
 >
->Wenn Sie die Seite an einen Speicherort kopieren, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `beach` bereits vorhanden ist, eine neue Seite mit dem Namen `beach` wird `beach1`.
+>Wenn Sie die Seite an einen Speicherort kopieren, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variante des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `beach` bereits existiert, wird eine neue Seite mit dem Namen `beach` zu `beach1`.
 
 >[!NOTE]
 >
@@ -322,7 +322,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
    >[!NOTE]
    >
-   >Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `beach` bereits vorhanden ist, eine neue Seite mit dem Namen `beach` wird `beach1`.
+   >Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `beach` bereits existiert, wird eine neue Seite mit dem Namen `beach` zu `beach1`.
 
 1. Im Schritt **Ziel auswählen** des Assistenten können Sie entweder:
 
@@ -335,15 +335,15 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
    >[!NOTE]
    >
-   >Standardmäßig wird das übergeordnete Element der Seite, die Sie verschieben oder umbenennen, als Ziel ausgewählt.
+   >Standardmäßig wird das übergeordnete Element der Seite, die Sie verschieben/umbenennen, als das Ziel ausgewählt.
 
    ![Auswählen eines Seitenverschiebungsziels](/help/sites-cloud/authoring/assets/move-page-destination.png)
 
    >[!NOTE]
    >
-   >Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `winter` bereits existiert, `winter` wird `winter1`.
+   >Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `winter` bereits existiert, wird `winter` zu `winter1`.
 
-1. Wenn die Seite verknüpft ist oder darauf verwiesen wird oder veröffentlicht wurde, werden die Details im **Anpassen/Erneutes Veröffentlichen** Schritt.
+1. Wenn die Seite verknüpft ist oder auf sie verwiesen wird, werden die Details im Schritt **Anpassen/Erneut veröffentlichen** aufgeführt.
 
    Sie können angeben, welche Verweise ggf. angepasst und neu veröffentlicht werden sollen.
 
@@ -357,11 +357,11 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
 >[!NOTE]
 >
->Wenn die Seite bereits veröffentlicht wurde, wird die Veröffentlichung durch Verschieben der Seite automatisch aufgehoben. Standardmäßig wird sie nach Abschluss des Verschiebevorgangs erneut veröffentlicht. Dies kann jedoch geändert werden, indem Sie die Option **Neu veröffentlichen** im Feld **Anpassen/Erneutes Veröffentlichen** Schritt.
+>Wenn die Seite bereits veröffentlicht wurde, wird das Veröffentlichen durch Verschieben der Seite automatisch rückgängig gemacht. Standardmäßig wird sie nach Abschluss des Verschiebevorgangs erneut veröffentlicht. Dies lässt sich jedoch ändern, indem Sie im Schritt **Anpassen/Erneut veröffentlichen** das Kontrollkästchen **Neu veröffentlichen** deaktivieren.
 
 >[!NOTE]
 >
->Wenn auf die Seite in keiner Weise verwiesen wird, wird die **Anpassen/Erneutes Veröffentlichen** -Schritt übersprungen wird.
+>Wenn es keine Verweise auf die Seite gibt, wird der Schritt **Anpassen/Erneut veröffentlichen** übersprungen.
 
 >[!NOTE]
 >
@@ -375,7 +375,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
 Normalerweise wird eine Aktion zum Verschieben oder Umbenennen von Seiten sofort ausgeführt. Dies gilt als synchrone Verarbeitung und weitere Aktionen in der Benutzeroberfläche werden blockiert, bis die Aktion abgeschlossen ist.
 
-Wenn die Anzahl der betroffenen Seiten jedoch über einem definierten Limit liegt, wird die Aktion asynchron verarbeitet, sodass der Benutzer die Bearbeitung in der Benutzeroberfläche fortsetzen kann, ohne durch die Aktion zum Verschieben oder Umbenennen der Seite behindert zu werden.
+Liegt die Anzahl der betroffenen Seiten jedoch über einer definierten Grenze, wird die Aktion asynchron verarbeitet, sodass die Inhaltserstellung in der Benutzeroberfläche fortgesetzt werden kann, ohne von der Aktion zum Verschieben oder Umbenennen der Seite aufgehalten zu werden.
 
 * Wenn Sie im letzten Schritt oben auf **Verschieben** klicken, prüft AEM die konfigurierte Beschränkung.
 * Wenn die Anzahl der betroffenen Seiten unter der Grenze liegt, wird ein synchroner Vorgang ausgeführt.
@@ -390,7 +390,7 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
 
 >[!NOTE]
 >
->Weitere Informationen zur asynchronen Auftragsverarbeitung und zum Konfigurieren der Begrenzung für Seitenverschiebungs-/Umbenennungsaktionen finden Sie unter [Asynchrone Aufträge](/help/operations/asynchronous-jobs.md) Dokument im Benutzerhandbuch zu Vorgängen.
+>Weitere Informationen zur asynchronen Auftragsverarbeitung und zum Konfigurieren der Begrenzung für Verschiebungs-/Umbenennungsaktionen für Seiten finden Sie im Dokument [Asynchrone Aufträge](/help/operations/asynchronous-jobs.md) im Benutzerhandbuch für den Betrieb.
 
 ### Löschen einer Seite {#deleting-a-page}
 
@@ -407,13 +407,13 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
 
    ![Dialogfeld „Löschen“](/help/sites-cloud/authoring/assets/delete-page.png)
 
-   * **Möchten Sie Seiten vor dem Löschen archivieren?** - Wenn diese Option aktiviert ist, werden beim Löschen Versionen der zu löschenden Seiten erstellt.
+   * **Möchten Sie Seiten vor dem Löschen archivieren?** – Wenn diese Option aktiviert ist, werden beim Löschen Versionen der zu löschenden Seiten erstellt.
       * [Versionen können zu einem späteren Zeitpunkt wiederhergestellt werden](/help/sites-cloud/authoring/features/page-versions.md).
       * Seiten, die ohne vorherige Versionen gelöscht wurden, können nicht wiederhergestellt werden.
    * Mit **Abbrechen** können Sie den Vorgang abbrechen
    * Mit **Löschen** bestätigen Sie die Aktion.
 
-      * Wenn die Seite keine Verweise enthält, wird die Seite gelöscht.
+      * Wenn die Seite keine Verweise enthält, wird sie gelöscht.
       * Wenn die Seite Verweise enthält, werden Sie in einem Meldungsfeld darauf hingewiesen, dass **eine oder mehrere Seiten über einen Verweis verfügen**. Sie können **Löschen erzwingen** oder **Abbrechen** auswählen.
 
 >[!NOTE]

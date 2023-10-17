@@ -5,7 +5,7 @@ exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '1165'
-ht-degree: 59%
+ht-degree: 60%
 
 ---
 
@@ -83,7 +83,7 @@ Ziehen Sie jetzt die Komponente **Commerce-Inhaltsfragment** in die Vorlage und 
 
 In diesem Dialogfeld wird das Dialogfeld Kernkomponente &quot;Inhaltsfragment&quot;wiederverwendet. Weitere Informationen finden Sie unter „Zusätzliche Ressourcen“. Der einzige Unterschied ist die Eigenschaft **Link-Element**, die das Kennungsfeld (Produkt-SKU oder Kategorie-UID) im Inhaltsfragmentmodell konfiguriert.
 
-Zeigen Sie jetzt eine Produktseite mit einem zugehörigen Inhaltsfragment und/oder Experience Fragment in der Vorschau an. Wenn AEM eine Seite rendert, sucht sie nach jedem Platzhalter basierend auf dem Typ (Inhalt oder Experience Fragment), der Kennung und dem Platzhalternamen für Experience Fragments. AEM verwendet einen URL-Resolver, um die Kennung abzurufen (SKU für Produkte, UID für Kategorien). Wenn ein Erlebnis oder ein Inhaltsfragment zurückgegeben wird, wird es an der Position des Platzhalters gerendert, andernfalls wird der Platzhalter ignoriert.
+Zeigen Sie jetzt eine Produktseite mit einem zugehörigen Inhaltsfragment und/oder Experience Fragment in der Vorschau an. Wenn AEM eine Seite rendert, sucht sie nach jedem Platzhalter basierend auf dem Typ (Inhalt oder Experience Fragment), der Kennung und dem Platzhalternamen für Experience Fragments. AEM verwendet einen URL-Resolver, um die Kennung abzurufen (SKU für Produkte, UID für Kategorien). Wenn ein Experience Fragment oder ein Inhaltsfragment zurückgegeben wird, wird es an der Position des Platzhalters gerendert. Andernfalls wird der Platzhalter ignoriert.
 
 ![PEM-Ergebnis](assets/pem-result.png)
 

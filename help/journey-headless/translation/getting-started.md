@@ -5,7 +5,7 @@ exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
 source-wordcount: '1425'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -44,7 +44,7 @@ Bevor Sie mit der Übersetzung Ihrer Headless-AEM-Inhalte beginnen, müssen Sie 
 
 >[!TIP]
 >
->Wenn Sie nicht mit der Verwendung eines umfangreichen CMS wie AEM vertraut sind, sollten Sie die Dokumentation [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) lesen, bevor Sie fortfahren. Die Grundlegende Handling-Dokumentation ist nicht Teil des Journey. Kehren Sie daher nach Abschluss zu dieser Seite zurück.
+>Wenn Sie nicht mit der Verwendung eines umfangreichen CMS wie AEM vertraut sind, sollten Sie die Dokumentation [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) lesen, bevor Sie fortfahren. Die grundlegende Dokumentation der Handhabung ist nicht Teil der Tour. Kehren Sie daher nach Abschluss zu dieser Seite zurück.
 
 ### Tools {#tools}
 
@@ -64,7 +64,7 @@ Inhalte in AEM, seien sie Headless- oder herkömmliche Webseiten, werden durch i
 
 ## Wie AEM Headless-Inhalte speichert {#headless-content-in-aem}
 
-Für den Übersetzer ist es nicht wichtig, zu verstehen, wie AEM Headless-Inhalte verwaltet. Die Kenntnis der grundlegenden Konzepte und Terminologie ist jedoch hilfreich, wenn Sie später AEM Übersetzungstools verwenden. Am wichtigsten ist, dass Sie Ihre eigenen Inhalte und ihre Struktur verstehen müssen, damit Sie sie effektiv übersetzen können.
+Für den Übersetzer ist es nicht wichtig, zu verstehen, wie AEM Headless-Inhalte verwaltet. Wenn Sie jedoch mit den grundlegenden Konzepten und der Terminologie vertraut sind, wird dies bei der späteren Verwendung der AEM-Übersetzungs-Tools hilfreich sein. Vor allem müssen Sie Ihre eigenen Inhalte und deren Struktur verstehen, um sie effektiv übersetzen zu können.
 
 ### Inhaltsmodelle {#content-models}
 
@@ -153,7 +153,7 @@ Die endgültige Struktur kann etwa wie folgt aussehen:
         |- ...
 ```
 
-Beachten Sie den spezifischen Pfad Ihres Inhalts, da er später zur Konfiguration Ihrer Übersetzung erforderlich ist.
+Notieren Sie sich den spezifischen Pfad Ihrer Inhalte, da er später zur Konfiguration Ihrer Übersetzung erforderlich ist.
 
 >[!NOTE]
 >

@@ -5,7 +5,7 @@ exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 55%
+ht-degree: 56%
 
 ---
 
@@ -89,7 +89,7 @@ Die übrigen Registerkarten zeigen alle AEM-Inhalte an, die mit dem Produkt verk
 Die Verwendung von Omnisearch ist eine einfache Möglichkeit, AEM-Inhalte mithilfe der Volltextsuche zu finden. CIF erweitert Omnisearch um die Volltextsuche in Produktkatalogen mit den zugehörigen AEM-Inhalten.
 ![Commerce-Menüelement](assets/omnisearch.png)
 
-Omnisearch führt eine Volltextsuche im Commerce-Backend durch, um alle verwandten Produkte zu finden. Das Ergebnis wird unter **Alle Produkte anzeigen** aufgeführt. Omnisearch sucht auch AEM nach Inhalten, die mit dem gesuchten Produkt verknüpft sind. Die Ergebnisse werden unter den entsprechenden AEM aufgelistet. In diesem Beispiel ist ein Inhaltsfragment mit dem Produkt verknüpft.
+Omnisearch führt eine Volltextsuche im Commerce-Backend durch, um alle verwandten Produkte zu finden. Das Ergebnis wird unter **Alle Produkte anzeigen** aufgeführt. Omnisearch sucht auch AEM nach Inhalten, die mit dem gesuchten Produkt verknüpft sind. Die Ergebnisse werden in den jeweiligen AEM-Kategorien aufgelistet. In diesem Beispiel ist ein Inhaltsfragment mit dem Produkt verknüpft.
 
 ## Wie geht es weiter {#what-is-next}
 

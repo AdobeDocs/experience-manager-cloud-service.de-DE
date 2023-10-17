@@ -165,7 +165,7 @@ Die folgende Tabelle gibt die XCI-Optionen an.
 
 * Bei asynchronen APIs (Batch-Verarbeitung) wird die standardmäßige Aufzeichnungsebene auf 2 gesetzt. Sie können eine benutzerdefinierte XCI-Datei verwenden, um die Aufzeichnungsebene in 1 zu ändern.
 
-* Wenn die standardmäßige XCI-Datei konfiguriert ist, enthält sie den Pfad bis zur ursprünglichen Ausgabedarstellung. Zum Beispiel: `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
+* Wenn die standardmäßige XCI-Datei konfiguriert ist, enthält sie den Pfad bis zur ursprünglichen Ausgabedarstellung. Beispiel: `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
 
 
 

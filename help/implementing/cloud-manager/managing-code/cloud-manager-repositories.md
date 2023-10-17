@@ -5,7 +5,7 @@ exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Sie können das Repository in der Tabelle auswählen, auf die Schaltfläche mit 
 
 ![Repository-Optionen](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-In Cloud Manager erstellte Repositorys stehen Ihnen auch beim Hinzufügen oder Bearbeiten von Pipelines zur Verfügung. Siehe [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) , um mehr zu erfahren.
+In Cloud Manager erstellte Repositorys stehen Ihnen auch beim Hinzufügen oder Bearbeiten von Pipelines zur Verfügung. Weitere Informationen finden Sie unter [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 Für jede Pipeline gibt es ein einzelnes primäres Repository oder eine Verzweigung. Mit der [Unterstützung von Git-Untermodulen](#git-submodule-support) können jedoch viele sekundäre Verzweigungen zum Zeitpunkt der Erstellung einbezogen werden.
 
@@ -51,7 +51,7 @@ Für jede Pipeline gibt es ein einzelnes primäres Repository oder eine Verzweig
 Das Löschen eines Repositorys führt dazu, dass:
 
 * der Name des gelöschten Repositorys für neue Repositorys, die in Zukunft erstellt werden, unbrauchbar gemacht wird.
-   * Die Fehlermeldung `Repository name should be unique within organization.` wird in solchen Fällen angezeigt.
+   * In solchen Fällen wird die Fehlermeldung `Repository name should be unique within organization.` angezeigt.
 * Stellen Sie sicher, dass das gelöschte Repository nicht in Cloud Manager verfügbar ist und daher nicht mit einer Pipeline verknüpft werden kann.
 
 Führen Sie diese Schritte aus, um ein Repository in Cloud Manager zu löschen.
@@ -76,7 +76,7 @@ $ git submodule update --init
 
 Diese Technik ist eine potenzielle Alternative zur [Arbeit mit mehreren Quellen-Git-Repositorys](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) für Organisationen, die mit der Verwendung von Git-Untermodulen vertraut sind und keinen externen Zusammenführungsprozess verwalten möchten.
 
-Angenommen, es gibt drei Repositorys, die jeweils eine einzige Verzweigung mit dem Namen `main` enthalten. Im primären Repository, d. h. dem in den Pipelines konfigurierten, wird die `main` Verzweigung hat `pom.xml` Datei, in der die in den beiden anderen Repositorys enthaltenen Projekte deklariert werden.
+Angenommen, es gibt drei Repositorys, die jeweils eine einzige Verzweigung mit dem Namen `main` enthalten. Im „primären“ Repository, d. h. dem in den Pipelines konfigurierten, verfügt die Verzweigung `main` über eine Datei `pom.xml`, in der die in den beiden anderen Repositorys enthaltenen Projekte deklariert werden.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

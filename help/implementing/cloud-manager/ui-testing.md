@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2389'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 75%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="Testen der Benutzeroberfläche"
->abstract="Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen)."
+>abstract="Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann. UI-Tests sind Selenium-basierte Tests, die in einem Docker-Bild verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen)."
 
 Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann.
 
@@ -23,19 +23,19 @@ Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine option
 
 AEM bietet eine integrierte Suite mit [Cloud Manager-Qualitäts-Akzeptanztests](/help/implementing/cloud-manager/custom-code-quality-rules.md), um eine reibungslose Aktualisierung ihrer benutzerdefinierten Programme sicherzustellen. Insbesondere IT-Testgates ermöglichen bereits die Erstellung und Automatisierung von benutzerdefinierten Tests mithilfe von AEM-APIs.
 
-UI-Tests werden in einem Docker-Bild zusammengefasst, um eine große Auswahl in Sprache und Frameworks zu ermöglichen (z. B. Cypress, Selenium, Java und Maven und JavaScript). Zusätzlich kann ein Projekt für Benutzeroberflächentests einfach mithilfe [des AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) erzeugt werden.
+UI-Tests werden in einem Docker-Bild zusammengefasst, um eine große Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Cypress, Selenium, Java und Maven sowie JavaScript). Ein Projekt für UI-Tests kann auch einfach mithilfe [des AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) erzeugt werden.
 
-Adobe fördert die Nutzung von Cypress, da es Echtzeit-Neuladung und automatisches Warten ermöglicht, was Zeit spart und die Produktivität beim Testen steigert. Cypress bietet außerdem eine einfache und intuitive Syntax, die das Lernen und die Bedienung auch für die, die noch nicht getestet sind, erleichtert.
+Adobe empfiehlt die Verwendung von Cypress, da es Echtzeit-Neuladen und automatisches Warten ermöglicht, was Zeit spart und die Produktivität beim Testen steigert. Cypress bietet außerdem eine einfache und intuitive Syntax, die auch für Testneulinge leicht zu erlernen und anzuwenden ist.
 
-UI-Tests werden als Teil eines bestimmten Qualitätstests für jede Cloud Manager-Pipeline mit dem Schritt](/help/implementing/cloud-manager/deploy-code.md) [**Testen der benutzerdefinierten Benutzeroberfläche** in [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) oder optional [produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) ausgeführt. Alle UI-Tests, einschließlich Regression und neuer Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
+UI-Tests werden als Teil eines bestimmten Qualitätstests für jede Cloud Manager-Pipeline mit dem Schritt](/help/implementing/cloud-manager/deploy-code.md) [**Testen der benutzerdefinierten Benutzeroberfläche** in [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) oder optional [produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) ausgeführt. Alle UI-Tests, einschließlich Regression und neue Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
 
-Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können die Benutzeroberflächentests ein Docker-Image mit Tests in einer beliebigen Sprache sein, sofern sie den unter [Erstellen von Benutzeroberflächentests](#building-ui-tests) definierten Konventionen entsprechen.
+Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können die UI-Tests ein Docker-Image mit Tests in einer beliebigen Sprache sein, sofern sie den unter [Erstellen von UI-Tests](#building-ui-tests) definierten Konventionen entsprechen.
 
 >[!TIP]
 >
->Adobe empfiehlt die Verwendung von Cypress zum Testen der Benutzeroberfläche gemäß dem im Abschnitt [AEM Testbeispielspeicher](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
+>Adobe empfiehlt, Cypress für UI-Tests zu verwenden und dabei den Code aus dem [AEM-Testbeispiele-Repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress) einzusetzen.
 > 
->Adobe bietet auch Beispiele für UI-Testmodule, die auf JavaScript mit WebdriverIO basieren (siehe [AEM Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) und Java mit WebDriver (siehe [AEM Testbeispielspeicher](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)).
+>Adobe bietet auch Beispiele für UI-Testmodule, die auf JavaScript mit WebdriverIO basieren (siehe [AEM Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) und Java mit WebDriver (siehe [AEM-Testbeispiele-Repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)).
 
 ## Erste Schritte mit Benutzeroberflächentests {#get-started-ui-tests}
 
@@ -43,9 +43,9 @@ In diesem Abschnitt werden die Schritte beschrieben, die zum Einrichten von Benu
 
 1. Entscheiden Sie, welche Programmiersprache Sie verwenden möchten.
 
-   * Verwenden Sie für Cypress den Beispielcode aus dem [AEM Testbeispielspeicher](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
+   * Verwenden Sie für Cypress den Beispiel-Code aus dem [AEM-Testbeispiele-Repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
 
-   * Verwenden Sie für JavaScript und WDIO den Beispielcode, der automatisch im Ordner `ui.tests` Ihres Cloud Manager-Repositorys generiert wird.
+   * Verwenden Sie für JavaScript und WDIO den Beispiel-Code, der automatisch im Ordner `ui.tests` Ihres Cloud Manager-Repositorys generiert wird.
 
      >[!NOTE]
      >
@@ -53,11 +53,11 @@ In diesem Abschnitt werden die Schritte beschrieben, die zum Einrichten von Benu
 
    * Verwenden Sie für Java und WebDriver den Beispiel-Code aus dem [AEM-Testbeispiele-Repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
-   * Weitere Programmiersprachen finden Sie im Abschnitt . [Erstellen von UI-Tests](#building-ui-tests) in diesem Dokument, um das Testprojekt einzurichten.
+   * Weitere Informationen zu anderen Programmiersprachen finden Sie im Abschnitt [Erstellen von UI-Tests](#building-ui-tests) in diesem Dokument zum Einrichten des Testprojekts.
 
-1. Stellen Sie sicher, dass das Testen der Benutzeroberfläche gemäß Abschnitt [Kunden-Opt-In](#customer-opt-in) in diesem Dokument aktiviert ist.
+1. Stellen Sie sicher, dass das Testen der UI gemäß Abschnitt [Kunden-Opt-in](#customer-opt-in) in diesem Dokument aktiviert ist.
 
-1. Entwickeln Sie Ihre Testfälle und [die Tests lokal ausführen](#run-ui-tests-locally).
+1. Entwickeln Sie Ihre Testfälle und [führen Sie diese Tests lokal aus](#run-ui-tests-locally).
 
 1. Übertragen Sie Ihren Code in das Cloud Manager-Repository und führen Sie eine Cloud Manager-Pipeline aus.
 
@@ -69,7 +69,7 @@ In diesem Abschnitt werden die Schritte beschrieben, die zum Hinzufügen eines P
 
 >[!TIP]
 >
->Die [AEM Projektarchetyp](https://github.com/adobe/aem-project-archetype) Sie können ein UI-Test-Projekt für Sie generieren, das der folgenden Beschreibung entspricht, wenn Sie keine speziellen Anforderungen für die Programmiersprache haben.
+>Der [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype) kann ein Projekt für Benutzeroberflächentests für Sie generieren, das der folgenden Beschreibung entspricht, wenn Sie keine speziellen Anforderungen für die Programmiersprache haben.
 
 ### Generieren eines Docker-Build-Kontexts {#generate-docker-build-context}
 
@@ -160,7 +160,7 @@ Der Build sollte entweder 0 oder 1 Archiv erzeugen. Wenn kein Archiv erzeugt wir
 
 ### Kunden-Opt-in {#customer-opt-in}
 
-Damit Cloud Manager Ihre UI-Tests erstellen und ausführen kann, müssen Sie diese Funktion aktivieren, indem Sie eine Datei zu Ihrem Repository hinzufügen.
+Damit Cloud Manager Ihre Benutzeroberflächentests erstellen und ausführen kann, müssen Sie diese Funktion aktivieren, indem Sie eine Datei zu Ihrem Repository hinzufügen.
 
 * Der Dateiname muss `testing.properties` lauten.
 
@@ -168,7 +168,7 @@ Damit Cloud Manager Ihre UI-Tests erstellen und ausführen kann, müssen Sie die
 * Die Datei muss sich unter dem Maven-Submodul für Benutzeroberflächentests neben der `pom.xml`-Datei des Submoduls für Benutzeroberflächentests befinden.
 * Die Datei muss sich im Stammverzeichnis der erstellten `tar.gz`-Datei befinden.
 
-Der Build und die Ausführungen der Benutzeroberflächentests werden übersprungen, wenn diese Datei nicht vorhanden ist.
+Wenn diese Datei nicht vorhanden ist, werden die Erstellung und Ausführung der Benutzeroberflächentests übersprungen.
 
 Um eine `testing.properties`-Datei in das Build-Artefakt aufzunehmen, fügen Sie eine `include`-Anweisung in die `assembly-ui-test-docker-context.xml`-Datei ein.
 
@@ -186,7 +186,7 @@ Um eine `testing.properties`-Datei in das Build-Artefakt aufzunehmen, fügen Sie
 >
 >Falls Ihr Projekt die Zeile nicht enthält, müssen Sie diese Datei bearbeiten, um sich für Tests der Benutzeroberfläche anmelden zu können.
 >
->Die Datei kann eine Zeile enthalten, in der empfohlen wird, sie nicht zu bearbeiten. Dies liegt daran, dass es in Ihr Projekt eingeführt wurde, bevor Opt-in-UI-Tests eingeführt wurden und die Clients die Datei nicht bearbeiten sollten. Dies kann ignoriert werden.
+>Die Datei kann eine Zeile enthalten, in der empfohlen wird, sie nicht zu bearbeiten. Das liegt daran, dass die Datei in Ihr Projekt aufgenommen wurde, bevor Opt-in-Benutzeroberflächentests eingeführt wurden, und dass die Kundschaft die Datei nicht bearbeiten sollte. Dies kann ignoriert werden.
 
 Wenn Sie die von Adobe bereitgestellten Beispiele verwenden:
 
@@ -200,7 +200,7 @@ Wenn Sie die von Adobe bereitgestellten Beispiele verwenden:
   fi
   ```
 
-* Die von Adobe bereitgestellten Beispiele für die Tests Cypress und Java Selenium haben bereits das Opt-in-Flag gesetzt.
+* In den von Adobe bereitgestellten Cypress- und Java-Selenium-Testbeispielen ist die Opt-in-Markierung bereits gesetzt.
 
 ## Schreiben von Benutzeroberflächentests {#writing-ui-tests}
 
@@ -208,7 +208,7 @@ In diesem Abschnitt werden die Konventionen beschrieben, denen das Docker-Image 
 
 ### Umgebungsvariablen {#environment-variables}
 
-Die folgenden Umgebungsvariablen werden je nach Framework zur Laufzeit an Ihr Docker-Bild übergeben.
+Die folgenden Umgebungsvariablen werden zur Laufzeit an Ihr Docker-Image übergeben, abhängig von Ihrem Framework.
 
 | Variable | Beispiele | Beschreibung | Test-Framework |
 |---|---|---|---|
@@ -231,19 +231,19 @@ Die Adobe-Testbeispiele bieten Hilfsfunktionen für den Zugriff auf die Konfigur
 
 ### Generieren von Testberichten {#generate-test-reports}
 
-Das Docker-Image muss Testberichte im JUnit-XML-Format generieren und in dem von der Umgebungsvariablen `REPORTS_PATH` angegebenen Pfad speichern. Das JUnit XML-Format ist ein häufig verwendetes Format für die Berichterstellung über die Testergebnisse. Wenn das Docker-Image Java und Maven verwendet, können Standard-Testmodule wie das [Maven Surefire Plug-in](https://maven.apache.org/surefire/maven-surefire-plugin/) und das [Maven Failsafe Plug-in](https://maven.apache.org/surefire/maven-failsafe-plugin/) solche Berichte vorkonfiguriert erstellen.
+Das Docker-Image muss Testberichte im JUnit-XML-Format generieren und in dem von der Umgebungsvariablen `REPORTS_PATH` angegebenen Pfad speichern. Das JUnit-XML-Format ist ein weitverbreitetes Format für Testergebnisberichte. Wenn das Docker-Image Java und Maven verwendet, können Standard-Testmodule wie das [Maven Surefire Plug-in](https://maven.apache.org/surefire/maven-surefire-plugin/) und das [Maven Failsafe Plug-in](https://maven.apache.org/surefire/maven-failsafe-plugin/) solche Berichte vorkonfiguriert erstellen.
 
 Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implementiert ist, lesen Sie in der Dokumentation der ausgewählten Tools nach, wie Sie JUnit-XML-Berichte erzeugen.
 
 >[!NOTE]
 >
->Das Ergebnis des Benutzeroberflächen-Testschritts wird nur anhand der Testberichte ausgewertet. Stellen Sie sicher, dass Sie den Bericht entsprechend für Ihre Testausführung generieren.
+>Das Ergebnis des Benutzeroberflächen-Testschritts wird nur anhand der Testberichte ausgewertet. Stellen Sie sicher, dass Sie den Bericht entsprechend Ihrer Testausführung generieren.
 >
 >Verwenden Sie Assertionen, anstatt einfach einen Fehler in STDERR zu protokollieren oder einen Exit-Code ungleich Null zurückzugeben, da Ihre Bereitstellungs-Pipeline sonst normal weiterlaufen kann.
 
 ### Voraussetzungen {#prerequisites}
 
-* Die Tests in Cloud Manager werden von einem technischen Administrator ausgeführt.
+* Die Tests in Cloud Manager werden von technischen Admins ausgeführt.
 
 >[!NOTE]
 >
@@ -254,15 +254,15 @@ Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implemen
 | Typ | Wert | Beschreibung |
 |----------------------|-------|-----------------------------------------------------------------------|
 | CPU | 2.0 | Menge an CPU-Zeit, die pro Testausführung reserviert wird |
-| Arbeitsspeicher | 1Gi | Dem Test zugewiesener Arbeitsspeicher, Wert in Byte |
+| Arbeitsspeicher | 1Gi | Menge des für den Test zugewiesenen Speichers, Wert in Gibibytes |
 | Zeitüberschreitung | 30m | Die Dauer, nach der der Test beendet wird. |
-| Empfohlene Dauer | 15m | Adobe empfiehlt, die Tests nicht länger als diese Zeit zu schreiben. |
+| Empfohlene Dauer | 15m | Adobe empfiehlt, Tests so zu schreiben, dass sie diese Dauer nicht überschreiten. |
 
 >[!NOTE]
 >
-> Wenn Sie weitere Ressourcen benötigen, erstellen Sie einen Fall für die Kundenunterstützung und beschreiben Sie Ihren Anwendungsfall. Adobe wird Ihre Anfrage überprüfen und geeignete Unterstützung leisten.
+> Wenn Sie weitere Ressourcen benötigen, erstellen Sie einen Fall für die Kundenunterstützung und beschreiben Sie Ihren Anwendungsfall. Unser Team wird Ihre Anfrage überprüfen und entsprechende Unterstützung anbieten.
 
-## Selenspezifische Details
+## Selenium-spezifische Details
 
 >[!NOTE]
 >
@@ -281,7 +281,7 @@ Die Testbeispiele der Adobe-Benutzeroberfläche behandeln dies mit dem Skript `w
 
 ### Erfassen von Screenshots und Videos {#capture-screenshots}
 
-Das Docker-Bild kann zusätzliche Testausgabe generieren (z. B. Screenshots oder Videos) und sie in dem Pfad speichern, der durch die Umgebungsvariable angegeben wird `REPORTS_PATH`. Jede Datei, die sich unter dem Verzeichnis `REPORTS_PATH` befindet, wird in das Testergebnisarchiv aufgenommen.
+Das Docker-Bild kann zusätzliche Testausgaben generieren (z. B. Screenshots oder Videos) und sie in dem Pfad speichern, der durch die Umgebungsvariable `REPORTS_PATH` angegeben wird. Jede Datei, die sich unter dem Verzeichnis `REPORTS_PATH` befindet, wird in das Testergebnisarchiv aufgenommen.
 
 Die von Adobe bereitgestellten Testbeispiele erstellen standardmäßig Screenshots für fehlgeschlagene Tests.
 
@@ -294,7 +294,7 @@ Wenn während der Ausführung eines Benutzeroberflächen-Tests ein Testergebnisa
 
 ### Hochladen von Dateien {#upload-files}
 
-Tests müssen manchmal Dateien in das zu testende Programm hochladen. Um die Bereitstellung von Selenium relativ zu Ihren Tests flexibel zu halten, ist es nicht möglich, ein Asset direkt in Selenium hochzuladen. Stattdessen sind für das Hochladen einer Datei die folgenden Schritte erforderlich.
+Tests müssen manchmal Dateien in das zu testende Programm hochladen. Um die Bereitstellung von Selenium in Bezug auf Ihre Tests flexibel zu halten, ist es nicht möglich, ein Asset direkt in Selenium hochzuladen. Stattdessen sind für das Hochladen einer Datei die folgenden Schritte erforderlich.
 
 1. Laden Sie die Datei unter der von der Umgebungsvariablen `UPLOAD_URL` angegebenen URL hoch.
    * Der Upload muss in einer POST-Anfrage mit einem mehrteiligen Formular durchgeführt werden.
@@ -310,21 +310,19 @@ Tests müssen manchmal Dateien in das zu testende Programm hochladen. Um die Ber
 
 ## Ausführen von lokalen Benutzeroberflächentests {#run-ui-tests-locally}
 
-Vor dem Aktivieren von UI-Tests in einer Cloud Manager-Pipeline wird empfohlen, die UI-Tests lokal mit 
-der [AEM as a Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-oder mit einer tatsächlichen AEM as a Cloud Service-Instanz auszuführen.
+Vor dem Aktivieren von UI-Tests in einer Cloud Manager-Pipeline wird empfohlen, die UI-Tests lokal entweder mit dem [AEM as a Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) oder mit einer tatsächlichen AEM as a Cloud Service-Instanz auszuführen.
 
-### Beispiel für einen Cypress-Test {#cypress-sample}
+### Cypress-Testbeispiel {#cypress-sample}
 
 1. Öffnen Sie eine Shell und navigieren Sie zum Ordner `ui.tests/test-module` im Repository
 
-1. Installieren von Cypress und anderen Voraussetzungen
+1. Installieren Sie Cypress und andere Voraussetzungen
 
    ```shell
    npm install
    ```
 
-1. Umgebungsvariablen festlegen, die für die Testausführung erforderlich sind
+1. Legen Sie die Umgebungsvariablen fest, die für die Testausführung erforderlich sind
 
    ```shell
    export AEM_AUTHOR_URL=https://author-<program-id>-<environment-id>.adobeaemcloud.com
@@ -336,7 +334,7 @@ oder mit einer tatsächlichen AEM as a Cloud Service-Instanz auszuführen.
    export REPORTS_PATH=target/
    ```
 
-1. Ausführen von Tests mit einem der folgenden Befehle
+1. Führen Sie Tests mit einem der folgenden Befehle aus
 
    ```shell
    npm test              # Using default Cypress browser
@@ -348,9 +346,9 @@ oder mit einer tatsächlichen AEM as a Cloud Service-Instanz auszuführen.
 >
 >Die Protokolldateien werden im Ordner `target/` Ihres Repositorys gespeichert.
 >
->Weitere Informationen finden Sie unter [AEM Testbeispielspeicher](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
+>Weitere Informationen finden Sie unter [AEM-Testbeispiele-Repository](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
-### Beispiel für JavaScript-WebdriverIO-Test {#javascript-sample}
+### Beispieltest für JavaScript WebdriverIO {#javascript-sample}
 
 1. Öffnen Sie eine Shell und navigieren Sie zum Ordner `ui.tests` im Repository
 
@@ -368,17 +366,17 @@ oder mit einer tatsächlichen AEM as a Cloud Service-Instanz auszuführen.
 
 >[!NOTE]
 >
->* Dadurch wird eine eigenständige Seleninstanz gestartet und die Tests dagegen durchgeführt.
+>* Dadurch wird eine eigenständige Selenium-Instanz gestartet und die Tests werden damit ausgeführt.
 >* Die Protokolldateien werden im Ordner `target/reports` Ihres Repositorys gespeichert
->* Sie müssen sicherstellen, dass Ihr Computer die neueste Chrome-Version ausführt, da der Test die neueste Version des ChromeDriver automatisch zum Testen herunterlädt.
+>* Sie müssen sicherstellen, dass Sie die neueste Chrome-Version verwenden, da der Test die neueste Version von ChromeDriver automatisch zum Testen herunterlädt.
 >
->Weitere Informationen finden Sie unter [AEM Projektarchetyp-Repository](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
+>Weitere Informationen finden Sie unter [AEM-Projektarchetyp-Repository](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
 
-### Beispiel für Java Selenium WebDriver-Test {#java-sample}
+### Beispieltest für Java Selenium WebDriver {#java-sample}
 
 1. Öffnen Sie eine Shell und navigieren Sie zum Ordner `ui.tests/test-module` im Repository
 
-1. Führen Sie die folgenden Befehle aus, um die Tests mit Maven zu starten
+1. Führen Sie den folgenden Befehl aus, um die Tests mit Maven zu starten
 
    ```shell
    # Start selenium docker image (for x64 CPUs)
@@ -395,4 +393,4 @@ oder mit einer tatsächlichen AEM as a Cloud Service-Instanz auszuführen.
 >
 >Die Protokolldateien werden im Ordner `target/reports` Ihres Repositorys gespeichert.
 >
->Weitere Informationen finden Sie unter [AEM Testbeispielspeicher](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
+>Weitere Informationen finden Sie unter [AEM-Testbeispiele-Repository](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).

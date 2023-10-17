@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
 source-wordcount: '502'
-ht-degree: 44%
+ht-degree: 50%
 
 ---
 
@@ -57,7 +57,7 @@ Sie müssen Mitglied der Rolle **Geschäftsinhaber** sein, um Programme bearbeit
 
 Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich Hinzufügen oder Entfernen einer Lösung oder eines Add-ons, werden diese Änderungen nach der nächsten Bereitstellung wirksam.
 
-Wenn für Ihr Produktionsprogramm die erhöhte Sicherheit aktiviert war, wird eine zusätzliche **Verbesserte Sicherheit** im **Programm bearbeiten** -Fenster, um zu bestätigen, dass die Funktion für das Programm aktiv ist.
+Wenn für Ihr Produktionsprogramm die erweiterte Sicherheitsoption aktiviert war, ist die zusätzliche Registerkarte **Erweiterte Sicherheit** im Fenster **Programm bearbeiten** verfügbar, um zu bestätigen, dass diese Funktion für das Programm aktiv ist.
 
 ![Erweiterte Sicherheit für ein Programm aktiv](assets/edit-program-enhanced.png)
 

@@ -5,7 +5,7 @@ exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Wenn Sie wissen möchten, wie Adobe empfiehlt, Geschäftsfälle für Websites mi
 
 Diese Journey ist für AEM Commerce-Inhaltsautoren konzipiert. In dieser Journey werden die Anforderungen, Schritte und Ansätze für die ersten Schritte und die Verwaltung von Katalogseiten, Vorlagen und vollständigen Produkterlebnissen erläutert.
 
-Informationen in dieser Journey können natürlich für andere Personen nützlich sein, aber einige Informationen überflüssig für bestimmte Rollen. Freuen Sie sich auf neue Touren, mit denen wir künftig auf weitere Rollen eingehen.
+Die Informationen in dieser Tour können natürlich auch für andere Rollen nützlich sein, aber einige Hinweise sind für bestimmte Rollen nicht relevant. Freuen Sie sich auf neue Touren, mit denen wir künftig auf weitere Rollen eingehen.
 
 ## Die Journey {#the-journey}
 

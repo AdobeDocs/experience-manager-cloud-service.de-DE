@@ -6,7 +6,7 @@ exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '1793'
-ht-degree: 58%
+ht-degree: 60%
 
 ---
 
@@ -159,7 +159,7 @@ In Umgebungen mit bestimmten Authentifizierungsanforderungen wird OAuth empfohle
 
 Inhaltsfragmente sind eine bestimmte Art von Assets. Informationen finden Sie unter [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md).
 
-Weitere Informationen zu den über die API verfügbaren Funktionen finden Sie unter:
+Weitere Informationen zu den über die APIs verfügbaren Funktionen:
 
 * Die [Assets-REST-API](/help/assets/mac-api-assets.md)
 * [Entitätstypen](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types), bei denen die für jeden unterstützten Typ spezifischen Funktionen (soweit für Inhaltsfragmente relevant) erläutert werden.
@@ -175,7 +175,7 @@ Die Antwort enthält Paging-Informationen als Teil der `properties` -Abschnitt d
 
 >[!NOTE]
 >
->Paging wird normalerweise auf Container-Entitäten angewendet (d. h. Ordner oder Assets mit Ausgabedarstellungen), da es sich auf die untergeordneten Elemente der angeforderten Entität bezieht.
+>Paging wird normalerweise auf Container-Entitäten (also Ordner oder Assets mit Ausgabedarstellungen) angewendet, da es die untergeordneten Objekte des angeforderten Elements betrifft.
 
 #### Beispiel: Paging {#example-paging}
 

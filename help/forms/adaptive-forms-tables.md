@@ -7,7 +7,7 @@ exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
 source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
 source-wordcount: '2496'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -307,13 +307,13 @@ Um diese Daten mit der Tabelle zur Laufzeit zusammenzuführen, muss das adaptive
 
 Wenn Sie ein adaptives Formular anhand einer XFA-Formularvorlage erstellt haben, sind die XFA-Elemente in der AEM-Inhaltssuche auf der Registerkarte „Datenmodell“ verfügbar. Sie können diese XFA-Elemente, einschließlich Tabellen, mittels Drag-and-Drop in das adaptive Formular ziehen.
 
-Das XFA-Tabellenelement wird der Tabellenkomponente zugeordnet und funktioniert standardmäßig in adaptiven Formularen. Alle Eigenschaften und Funktionen der XDP-Tabelle werden beibehalten, wenn sie in ein adaptives Formular verschoben werden, und Sie können beliebige Vorgänge darauf ausführen, wie auch auf native adaptive Formulare. Wenn beispielsweise eine Zeile in einer XDP-Tabelle als wiederholbar markiert ist, wird sie auch wiederholt, wenn sie in adaptiven Formularen abgelegt wird.
+Das XFA-Tabellenelement wird der Tabellenkomponente zugeordnet und funktioniert standardmäßig in adaptiven Formularen. Alle Eigenschaften und Funktionen der XDP-Tabelle werden beibehalten, wenn sie in ein adaptives Formular verschoben werden, und Sie können beliebige Vorgänge darauf ausführen, wie auch auf native adaptive Formulare. Beispiel: Wenn eine Zeile in einer XDP-Tabelle als wiederholbar gekennzeichnet ist, wird sie auch wiederholt, wenn sie in adaptiven Formularen eingefügt wird.
 
 Darüber hinaus können Sie XDP-Teilformulare per Drag-and-Drop in die Tabelle einfügen, um eine neue Zeile hinzuzufügen. Beachten Sie jedoch, dass verschachtelte Teilformulare nicht eingefügt werden können.
 
 >[!NOTE]
 >
->Eine XDP-Tabelle ohne Kopfzeile wird nicht der Tabellenkomponente des adaptiven Formulars zugeordnet. Stattdessen wird sie der Bereichskomponente des adaptiven Formulars mit fließendem Layout zugeordnet. Wenn Sie außerdem eine verschachtelte Tabelle aus einem XDP einem adaptiven Formular hinzufügen, wird die äußere Tabelle in ein Bedienfeld konvertiert, während die innere Tabelle erhalten bleibt.
+>Eine XDP-Tabelle ohne Kopfzeile wird nicht der Tabellenkomponente des adaptiven Formulars zugeordnet. Stattdessen wird sie der Panel-Komponente des adaptiven Formulars mit fließendem Layout zugeordnet. Wenn Sie außerdem eine verschachtelte Tabelle aus einem XDP einem adaptiven Formular hinzufügen, wird die äußere Tabelle in ein Bedienfeld konvertiert, während die innere Tabelle erhalten bleibt.
 
 Darüber hinaus können Sie eine Gruppe von komplexen XSD-Typelementen ablegen, um eine Tabellenzeile zu erstellen. Eine neue Zeile wird direkt unterhalb der Zeile erstellt, in der Sie die Elemente abgelegt haben. Die Zellen, die mit den komplexen XSD-Typelementen erstellt wurden, behalten eine Bindungsreferenz zur XSD bei. Sie können auch eine Textzelle durch ein komplexes XSD-Typelement ersetzen, indem Sie das Element in die Zelle ablegen.
 
@@ -321,7 +321,7 @@ Darüber hinaus können Sie eine Gruppe von komplexen XSD-Typelementen ablegen, 
 >
 >Die Anzahl der Elemente in einer XDP-Tabellenkomponente, einem Teilformular oder einem komplexen XSD-Typ darf die Anzahl der Zellen in einer Zeile nicht überschreiten. Sie können beispielsweise nicht vier Elemente in einer Zeile ablegen, die nur drei Zellen enthält. Dies führt zu einem Fehler.
 >
->Wenn die Anzahl der Elemente geringer ist als die Anzahl der Zellen in einer Zeile, werden in der neuen Zeile zunächst Zellen auf der Grundlage der Elemente hinzugefügt, und dann werden die Standardzellen hinzugefügt, um die verbleibenden Zellen in der Zeile zu füllen. Wenn Sie beispielsweise eine Gruppe von drei Elementen in einer Zeile ablegen, die aus vier Zellen besteht, basieren die ersten drei Zellen auf den abgelegten Elementen und die verbleibende Zelle ist die standardmäßige Tabellenzelle.
+>Wenn die Anzahl der Elemente geringer ist als die Anzahl der Zellen in einer Zeile, werden in der neuen Zeile zunächst Zellen auf der Grundlage der Elemente hinzugefügt, und dann werden die Standardzellen hinzugefügt, um die verbleibenden Zellen in der Zeile zu füllen. Wenn Sie beispielsweise eine Gruppe von drei Elementen in einer Zeile mit vier Zellen ablegen, basieren die ersten drei Zellen auf den abgelegten Elementen und die restliche Zelle ist die standardmäßige Tabellenzelle.
 
 ## Wichtige Aspekte {#key-considerations}
 

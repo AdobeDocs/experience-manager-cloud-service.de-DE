@@ -8,7 +8,7 @@ exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Bearbeiten Sie die folgenden Eigenschaften für die Komponente **[!UICONTROL Bes
 
      >[!NOTE]
      >
-     >Hinzufügen eines Standardwerts zu einer neuen Metadateneigenschaft (die unter `/jcr:content/metadata` -Knoten) zeigt die Eigenschaft und deren Wert nicht standardmäßig auf der Eigenschaftsseite des Assets an. Um die neue [!UICONTROL Eigenschaft] auf der Eigenschaftsseite des Assets anzuzeigen, müssen Sie das entsprechende Schemaformular ändern.
+     >Wenn Sie einer neuen Metadateneigenschaft (die noch nicht im Knoten `/jcr:content/metadata` vorhanden ist) einen Standardwert hinzufügen, werden die Eigenschaft und deren Wert nicht standardmäßig auf der Eigenschaften-Seite des Assets angezeigt. Um die neue [!UICONTROL Eigenschaft] auf der Eigenschaftsseite des Assets anzuzeigen, müssen Sie das entsprechende Schemaformular ändern.
 
 1. (Optional) Fügen Sie dem Bearbeitungsformular auf der Registerkarte **[!UICONTROL Formular erstellen]** weitere Komponenten hinzu und konfigurieren Sie die zugehörigen Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen]**. Die folgenden Eigenschaften sind auf der Registerkarte **[!UICONTROL Formular erstellen]** verfügbar:
 

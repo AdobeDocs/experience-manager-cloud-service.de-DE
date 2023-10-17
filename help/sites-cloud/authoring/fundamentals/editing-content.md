@@ -5,7 +5,7 @@ exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2983'
-ht-degree: 84%
+ht-degree: 97%
 
 ---
 
@@ -43,9 +43,9 @@ Die Seite-Symbolleiste bietet Zugriff auf die entsprechenden Funktionen, die von
 
 Die Symbolleiste bietet Zugriff auf eine Vielzahl von Optionen. Je nach aktuellem Kontext und Ihrer Konfiguration sind einige Optionen möglicherweise nicht verfügbar.
 
-* **Seitliches Panel ein/aus**
+* **Seitliches Bedienfeld ein/aus**
 
-  Dadurch wird das seitliche Panel geöffnet/geschlossen, das den [Asset-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser), den [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) und die [Inhaltsstruktur](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree) enthält.
+  Dadurch wird das seitliche Bedienfeld geöffnet/geschlossen, das den [Asset-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser), den [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) und die [Inhaltsstruktur](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree) enthält.
 
   ![Seitliches Bedienfeld ein/aus](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
@@ -101,7 +101,7 @@ Wird eine Seite bearbeitet, die einem oder mehreren [Workflows](/help/sites-clou
 >
 >Die Statusleiste ist nur für Benutzerkonten mit entsprechenden Berechtigungen sichtbar.
 
-In der Benachrichtigung ist der Workflow aufgeführt, dem die Seite zugeordnet ist. Wenn Benutzende am aktuellen Workflow-Schritt beteiligt sind, sind zusätzlich auch Optionen verfügbar, die sich [auf den Workflow-Status auswirken](/help/sites-cloud/authoring/workflows/participating.md) und die weitere Informationen zum Workflow liefern, darunter:
+In der Benachrichtigung ist der Workflow aufgeführt, dem die Seite zugeordnet ist. Wenn Benutzende am aktuellen Workflow-Schritt beteiligt sind, sind zusätzlich auch Optionen verfügbar, die sich [auf den Workflow-Status auswirken](/help/sites-cloud/authoring/workflows/participating.md) und die weiteren Informationen zum Workflow liefern, darunter:
 
 * **Abschließen**: Öffnet das Dialogfeld **Arbeitselement abschließen**.
 * **Delegieren**: Öffnet das Dialogfeld **Arbeitselement abschließen**.
@@ -115,7 +115,7 @@ Wenn die Seite mehreren Workflows unterliegt, werden in der Benachrichtigung rec
 
 ## Komponenten-Platzhalter {#component-placeholder}
 
-Der Komponenten-Platzhalter zeigt an, wo eine Komponente platziert wird, wenn Sie sie per Drag-and-Drop ablegen - oberhalb der Komponente, über der Sie gerade den Mauszeiger bewegen.
+Der Komponenten-Platzhalter zeigt an, wo eine Komponente platziert wird, wenn Sie sie per Drag-and-Drop ablegen – oberhalb der Komponente, über der sich der Mauszeiger gerade befindet:
 
 * Beim Hinzufügen einer neuen Komponente zur Seite (Ziehen aus dem Komponenten-Browser per Drag-and-Drop):
 
@@ -129,7 +129,7 @@ Der Komponenten-Platzhalter zeigt an, wo eine Komponente platziert wird, wenn Si
 
 ### Einfügen einer Komponente aus dem Komponenten-Browser {#inserting-a-component-from-the-components-browser}
 
-Sie können eine neue Komponente mit dem [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) hinzufügen. Die [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente positioniert ist:
+Sie können eine neue Komponente mit dem [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) hinzufügen. Der [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente platziert wird:
 
 1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Öffnen Sie den [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
@@ -147,7 +147,7 @@ Sie können eine neue Komponente über das Feld **Komponenten hierher ziehen** d
 1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Es gibt zwei Möglichkeiten, eine neue Komponente aus dem Absatzsystem auszuwählen und hinzuzufügen:
 
-   * Wählen Sie die Option **Komponente einfügen** (+) aus der Symbolleiste einer vorhandenen Komponente oder aus dem Feld **Komponenten hierher ziehen**.
+   * Wählen Sie die Option **Komponente einfügen** (+) aus der Symbolleiste einer vorhandenen Komponente oder aus dem Feld **Komponenten hierherziehen**.
 
      ![Einfügen einer Komponente](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
@@ -157,7 +157,7 @@ Sie können eine neue Komponente über das Feld **Komponenten hierher ziehen** d
 
      ![Dialogfeld „Neue Komponente einfügen“](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
-1. Die ausgewählte Komponente wird am unteren Rand der Seite hinzugefügt. [Bearbeiten](#edit-content) Sie bei Bedarf die Komponente.
+1. Die ausgewählte Komponente wird unten auf der Seite hinzugefügt. [Bearbeiten](#edit-content) Sie bei Bedarf die Komponente.
 
 ### Einfügen einer Komponente mit dem Assets-Browser {#inserting-a-component-using-the-assets-browser}
 
@@ -169,7 +169,7 @@ So erstellen Sie eine Komponente, indem Sie einen der obigen Asset-Typen ziehen:
 
 1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Öffnen Sie den [Asset-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
-1. Ziehen Sie die benötigte Komponente an die passende Position. Die [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente positioniert ist.
+1. Ziehen Sie die benötigte Komponente an die passende Position. Der [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente platziert wird.
 
    Eine für den Asset-Typ geeignete Komponente wird am erforderlichen Speicherort erstellt und enthält das ausgewählte Asset.
 
@@ -187,19 +187,19 @@ Wenn Sie die Assets durchgehen und feststellen, dass Sie an einem der Assets ein
 
 Wenn Sie eine Komponente auswählen, wird die Symbolleiste geöffnet. Dort haben Sie Zugriff auf verschiedene Aktionen, die Sie auf die Komponente anwenden können.
 
-Die tatsächlichen Aktionen, die dem Benutzer zur Verfügung stehen, werden entsprechend angezeigt und hier können nicht alle Aktionen beschrieben werden.
+Die tatsächlichen für die Benutzenden verfügbaren Aktionen werden abhängig von der jeweiligen Situation angezeigt, sodass hier u. U. nicht alle möglichen Aktionen beschrieben werden.
 
 ![Komponentensymbolleiste](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 
 * **Bearbeiten**
 
-  [Abhängig vom Komponententyp](/help/sites-cloud/authoring/fundamentals/components.md)ermöglicht, [Inhalt der Komponente bearbeiten](#edit-content). Häufig wird eine Symbolleiste bereitgestellt.
+  [Abhängig vom Komponententyp](/help/sites-cloud/authoring/fundamentals/components.md) können Sie hierüber den [Inhalt der Komponente bearbeiten](#edit-content). Häufig wird eine Symbolleiste bereitgestellt.
 
   ![Schaltfläche „Bearbeiten“](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
 
 * **Konfigurieren**
 
-  [Abhängig vom Komponententyp](/help/sites-cloud/authoring/fundamentals/components.md)können Sie damit die Eigenschaften der Komponente bearbeiten und konfigurieren. Häufig wird ein Dialogfeld geöffnet.
+  [Abhängig vom Komponententyp](/help/sites-cloud/authoring/fundamentals/components.md) können Sie hierüber die Eigenschaften der Komponente bearbeiten und konfigurieren. Häufig wird ein Dialogfeld geöffnet.
 
   ![Schaltfläche „Konfigurieren“](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
 
@@ -211,7 +211,7 @@ Die tatsächlichen Aktionen, die dem Benutzer zur Verfügung stehen, werden ents
 
 * **Ausschneiden**
 
-  Kopiert die Komponente in die Zwischenablage. Nach der Einfügeaktion wird die ursprüngliche Komponente entfernt.
+  Kopiert die Komponente in die Zwischenablage. Nach dem Einfügen wird die ursprüngliche Komponente entfernt.
 
   ![Schaltfläche „Ausschneiden“](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
 
@@ -232,7 +232,7 @@ Die tatsächlichen Aktionen, die dem Benutzer zur Verfügung stehen, werden ents
   Fügt die Komponente aus der Zwischenablage in die Seite ein. Ob das Original erhalten bleibt, hängt davon ab, ob Sie „Kopieren“ oder „Ausschneiden“ verwendet haben.
 
    * Sie können Komponenten auf derselben oder einer anderen Seite einfügen.
-   * Das eingefügte Element wird über dem Element eingefügt, in dem Sie die Einfügeaktion auswählen.
+   * Das eingefügte Element wird über dem Element eingefügt, auf dem Sie die Einfügeaktion auswählen.
    * Die Aktion „Einfügen“ wird nur angezeigt, wenn sich Inhalt in der Zwischenablage befindet.
 
   ![Schaltfläche „Einfügen“](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
@@ -294,7 +294,7 @@ Welche Bearbeitungsoptionen verfügbar sind, hängt von der Komponente ab (und f
 
 * Bildkomponente – Vollbild
 
-  [Vollbildmodus aufrufen](#edit-content-full-screen-mode) für die Bildkomponente mehr Platz zum Bearbeiten des Bildes und zum Anzeigen zusätzlicher Bearbeitungsoptionen wie **Startkarte** und **Zoom zurücksetzen**. Außerdem können im Vollbildmodus Zuschnittvoreinstellungen ausgewählt werden.
+  [Der Wechsel in den Vollbildmodus](#edit-content-full-screen-mode) für die Bildkomponente bietet mehr Platz zum Bearbeiten des Bildes und zeigt zusätzliche Bearbeitungsoptionen wie **Karte starten** und **Zoom zurücksetzen**. Außerdem können im Vollbildmodus Zuschnittvoreinstellungen ausgewählt werden.
 
   ![Vollbildmodus der Bildkomponente](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -361,7 +361,7 @@ Wenn Sie eine Komponente anpassen möchten, müssen Sie nicht ständig zwischen 
 
 >[!TIP]
 >
->Die Layout-Aktion ist immer auf die jeweils ausgewählte Komponente beschränkt. Wenn Sie beispielsweise das Layout einer Komponente bearbeiten und dann auf eine andere Komponente klicken, wird die standardmäßige Bearbeitungssymbolleiste (nicht die Layout-Symbolleiste) für die neu ausgewählte Komponente und die Größenänderungsgriffe angezeigt und die Emulator-Symbolleiste wird ausgeblendet.
+>Die Layout-Aktion ist immer auf die jeweils ausgewählte Komponente beschränkt. Wenn Sie z. B. das Layout einer Komponente bearbeiten und dann auf eine andere Komponente klicken, werden die Layout-Aktionen in der Bearbeitungssymbolleiste durch die Standardaktionen ersetzt und die Ziehpunkte zur Größenanpassung und die Emulator-Symbolleiste werden nicht mehr angezeigt.
 >
 >Um das Layout für die gesamte Seite, d. h. über mehrere Komponenten hinweg, zu bearbeiten, wechseln Sie in den [Layout-Modus](/help/sites-cloud/authoring/features/responsive-layout.md).
 
@@ -400,7 +400,7 @@ Durch Auswählen der Seite in der [Spaltenansicht](/help/sites-cloud/authoring/g
 
 Mit dem [Seitenmodus „Live Copy-Status“](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) erhalten Sie einen schnellen Überblick über den Live Copy-Status und darüber, welche Komponenten übernommen bzw. nicht übernommen wurden:
 
-* Grüner Rahmen: Übernommen
+* Grüner Rahmen: Vererbt
 * Rosa Rahmen: Vererbung wurde abgebrochen
 
 Beispiel:
@@ -434,7 +434,7 @@ Beim Bearbeiten von Inhalt können Sie mithilfe des [Vorschaumodus](/help/sites-
 
 * Blendet diverse Bearbeitungsmechanismen aus, damit Sie einen schnellen Überblick darüber erhalten, wie die Seite veröffentlicht aussehen wird.
 * Ermöglicht die Verwendung von Links zur Navigation.
-* aktualisiert **nicht** den Seiteninhalt.
+* Aktualisiert **nicht** den Seiteninhalt.
 
 Bei der Bearbeitung einer Seite können Sie den Vorschaumodus über das Symbol rechts oben im Seiteneditor aufrufen:
 
@@ -446,11 +446,11 @@ Die Option **Als veröffentlicht anzeigen** ist über das Menü [Seiteninformati
 
 ## Sperren einer Seite   {#locking-a-page}
 
-AEM ermöglicht das Sperren einer Seite, sodass niemand anders den Inhalt bearbeiten kann. Diese Sperrung ist nützlich, wenn Sie zahlreiche Änderungen an einer bestimmten Seite vornehmen oder wenn Sie eine Seite für eine kurze Zeit einfrieren müssen.
+AEM bietet Ihnen die Möglichkeit, eine Seite zu sperren, sodass niemand außer Ihnen den Inhalt bearbeiten kann. Diese Sperre ist nützlich, wenn Sie zahlreiche Änderungen an einer bestimmten Seite vornehmen oder wenn Sie eine Seite für kurze Zeit einfrieren müssen.
 
-Eine Seite kann gesperrt werden durch:
+Eine Seite kann wie folgt gesperrt werden:
 
-* die **Sites**-Konsole
+* **Sites**-Konsole
 
    1. Wählen Sie die Seite mit dem [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) aus.
    1. Wählen Sie das Sperrsymbol aus.
@@ -472,7 +472,7 @@ Nach der Sperrung werden die Informationen der Konsolenansicht aktualisiert und 
 >
 >Seiten können nicht entsperrt werden, indem man sich als der Benutzer ausgibt, der die Seite gesperrt hat.
 >
->Wenn der Benutzer, der die Seite gesperrt hat, nicht zum Entsperren der Seite verfügbar ist, wenden Sie sich an den Support, um Optionen zum Entfernen der Sperrung auszuwerten.
+>Wenn die Benutzerin bzw. der Benutzer, die bzw. der die Seite gesperrt hat, nicht zum Entsperren der Seite verfügbar ist, wenden Sie sich an den Support, um sich über Optionen zum Entfernen der Sperrung zu informieren.
 
 ## Entsperren einer Seite {#unlocking-a-page}
 
@@ -488,7 +488,7 @@ Im Menü „Seiteninformationen“ steht dann die Option **Entsperren** zur Verf
 >
 >Seiten können nicht entsperrt werden, indem man sich als der Benutzer ausgibt, der die Seite gesperrt hat.
 >
->Wenn der Benutzer, der die Seite gesperrt hat, nicht zum Entsperren der Seite verfügbar ist, wenden Sie sich an den Support, um Optionen zum Entfernen der Sperrung auszuwerten.
+>Wenn die Benutzerin bzw. der Benutzer, die bzw. der die Seite gesperrt hat, nicht zum Entsperren der Seite verfügbar ist, wenden Sie sich an den Support, um sich über Optionen zum Entfernen der Sperrung zu informieren.
 
 <!--
 >[!CAUTION]
@@ -519,7 +519,7 @@ Mit den folgenden Symbolen können Sie eine Aktion rückgängig machen oder wied
 
 ## Rückgängigmachen und Wiederholen von Seitenbearbeitungen - Die Theorie {#undoing-and-redoing-page-edits-the-theory}
 
-AEM speichert einen Verlauf der Aktionen, die Sie ausführen, sowie die Reihenfolge, in der Sie sie ausgeführt haben. So können Sie mehrere Aktionen in der Reihenfolge rückgängig machen, in der Sie sie ausgeführt haben, und sie wiederholen, um bei Bedarf eine oder mehrere Aktionen erneut anzuwenden.
+AEM speichert einen Verlauf der Aktionen, die Sie ausführen, sowie die Reihenfolge der Ausführung. Sie können also mehrere Aktionen in der umgekehrten Reihenfolge ihrer Ausführung rückgängig machen und bei Bedarf die Aktionen wiederholen, wenn Sie eine oder mehrere davon erneut anwenden möchten.
 
 Wenn ein Element auf der Inhaltsseite ausgewählt wird, gelten die Befehle „Rückgängig“ und „Wiederholen“ für das ausgewählte Element, also z. B. für eine Textkomponente.
 

@@ -5,7 +5,7 @@ exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
 source-wordcount: '1077'
-ht-degree: 68%
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ Benutzer können zuverlässig ermitteln, ob der gesamte vom Content Transfer Too
 >
 >Diese Funktion ist ab Version 1.8.x des Content Transfer Tool (CTT) verfügbar. Die AEM as a Cloud Service-Zielumgebung muss mindestens Version 6158 oder höher ausführen. Außerdem muss die Quellumgebung für die Ausführung der [Vorabkopie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step) eingerichtet sein. Die Validierungsfunktion sucht in der Quelle nach der Datei azcopy.config. Wenn die Datei nicht gefunden werden kann, wird die Validierung nicht ausgeführt. Weitere Informationen zum Konfigurieren einer azcopy.config-Datei finden Sie auf [dieser Seite](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
-Die Validierung eines Inhaltstransfers ist eine optionale Funktion. Durch die Aktivierung dieser Funktion wird sowohl die Zeit für die Extraktion als auch für die Aufnahme verlängert. Um die Funktion zu verwenden, aktivieren Sie sie in der Systemkonsole der Quell-AEM-Umgebung, indem Sie die folgenden Schritte ausführen:
+Die Validierung eines Inhaltstransfers ist eine optionale Funktion. Durch die Aktivierung dieser Funktion verlängert sich der zeitliche Aufwand bei der Durchführung sowohl einer Extraktion als auch einer Aufnahme. Um die Funktion zu verwenden, aktivieren Sie sie in der Systemkonsole der AEM-Quellumgebung, indem Sie die folgenden Schritte ausführen:
 
 1. Sie gelangen zur Adobe Experience Manager Web-Konsole in Ihrer Quellinstanz, indem Sie zu **Tools – Vorgänge – Web-Konsole** gehen oder direkt zur URL unter *https://serveraddress:serverport/system/console/configMgr*
 1. Suchen Sie nach **Konfiguration des Content Transfer Tool-Extrahierungs-Service**
@@ -36,7 +36,7 @@ Weitere Informationen zum Installieren des Content Transfer Tools finden Sie unt
 
 Wenn die Migrationsvalidierung in der Quell-AEM-Umgebung aktiviert ist, starten Sie eine Extraktion.
 
-Wenn **Überschreiben des Staging-Containers während der Extraktion** aktiviert ist, werden alle Knoten, die an der Extraktion beteiligt sind, beim Digest des Extraktionspfads protokolliert. Wenn diese Einstellung verwendet wird, muss die Einstellung **Vorhandene Inhalte in der Cloud-Instanz vor der Aufnahme löschen** während der Aufnahme aktiviert sein, da andernfalls Knoten im Aufnahme-Auszug fehlen können. Hierbei handelt es sich um die Knoten, die bereits aus früheren Aufnahmen im Ziel vorhanden sind.
+Wenn **Staging-Container während der Extraktion überschreiben** aktiviert ist, werden alle Knoten, die an der Extraktion beteiligt sind, im Auszug des Extraktionspfads protokolliert. Wenn diese Einstellung verwendet wird, muss die Einstellung **Vorhandene Inhalte in der Cloud-Instanz vor der Aufnahme löschen** während der Aufnahme aktiviert sein, da andernfalls Knoten im Aufnahme-Auszug fehlen können. Hierbei handelt es sich um die Knoten, die bereits aus früheren Aufnahmen im Ziel vorhanden sind.
 
 Eine grafische Darstellung dieses Problems finden Sie in den folgenden Beispielen:
 
@@ -68,13 +68,13 @@ Eine grafische Darstellung dieses Problems finden Sie in den folgenden Beispiele
 
   Diese Kombination aus „Überschreiben“ und „Löschen“ führt zu konsistenten Validierungsergebnissen für die erste Aufnahme.
 
-  Wenn die Aufnahme wiederholt wird, ist der Aufnahmedigest leer, und die Validierung scheint fehlgeschlagen zu sein. Der Aufnahmedigest ist leer, da alle Knoten dieser Extraktion bereits auf dem Ziel vorhanden sind.
+  Wenn die Aufnahme wiederholt wird, ist der Aufnahmeauszug leer und die Validierung scheint fehlgeschlagen zu sein. Der Aufnahmeauszug ist leer, da alle Knoten dieser Extraktion bereits im Ziel vorhanden sind.
 
 Sobald die Extraktion abgeschlossen ist, beginnen Sie mit der Aufnahme.
 
 Am Anfang des Aufnahmeprotokolls befindet sich ein Eintrag, ähnlich `aem-ethos/tools:1.2.438`. Stellen Sie sicher, dass diese Versionsnummer **1.2.438** oder höher ist, andernfalls wird die Validierung von der AEM as a Cloud Service-Version, die Sie verwenden, nicht unterstützt.
 
-Nachdem die Aufnahme abgeschlossen ist und die Validierung beginnt, wird der folgende Protokolleintrag im Aufnahmeprotokoll vermerkt:
+Sobald die Aufnahme abgeschlossen ist und die Validierung beginnt, wird der folgende Protokolleintrag im Aufnahmeprotokoll vermerkt:
 
 ```
 Gathering artifacts for migration validation...
@@ -127,28 +127,28 @@ Migration validation took 0 minutes
 
 Das obige Fehlerbeispiel wurde durch Ausführen einer Aufnahme und anschließendes erneutes Ausführen derselben Aufnahme mit deaktiviertem Löschen erreicht, sodass während der Aufnahme keine Knoten beteiligt waren – alles war bereits auf dem Ziel vorhanden.
 
-Der Validierungsbericht wird nicht nur in das Aufnahmeprotokoll aufgenommen, sondern kann auch über die Benutzeroberfläche der **Aufnahmeaufträge** in Cloud Acceleration Manager aufgerufen werden. Klicken Sie dazu auf die drei Punkte (**...**) und klicken Sie dann auf **Validierungsbericht** in der Dropdown-Liste, um den Validierungsbericht anzuzeigen.
+Der Validierungsbericht wird nicht nur in das Aufnahmeprotokoll aufgenommen, sondern kann auch über die Benutzeroberfläche der **Aufnahmeaufträge** in Cloud Acceleration Manager aufgerufen werden. Klicken Sie dazu auf die drei Punkte (**…**) und dann in der Dropdown-Liste auf **Validierungsbericht**, um den Validierungsbericht anzuzeigen.
 
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
-## Überprüfen der Hauptmigration {#how-to-validate-principal-migration}
+## Validieren der Prinzipalmigration {#how-to-validate-principal-migration}
 
-Siehe [Benutzerzuordnung und Hauptmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) , um die wichtigsten Migrationsdetails zu lesen und zu erfahren, warum dies erforderlich ist.
+Weitere Informationen zur Prinzipalmigration und dazu, warum diese erforderlich ist, finden Sie unter [Benutzerzuordnung und Prinzipalmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
-Nach erfolgreichem Abschluss der Extraktion und Aufnahme ist eine Zusammenfassung und ein Bericht zur Hauptmigration verfügbar. Diese Informationen können verwendet werden, um zu überprüfen, welche Benutzer und Gruppen erfolgreich migriert wurden, und um festzustellen, warum einige Benutzer nicht migriert wurden.
+Nach erfolgreichem Abschluss der Extraktion und Aufnahme ist eine Zusammenfassung und ein Bericht zur Prinzipalmigration verfügbar. Anhand dieser Informationen lässt sich überprüfen, welche Benutzenden und Gruppen erfolgreich migriert wurden, und ggf. feststellen, warum einige Benutzenden nicht migriert wurden.
 
-Um diese Informationen anzuzeigen, gehen Sie zu Cloud Acceleration Manager. Klicken Sie auf Ihre Projektkarte und dann auf die Karte „Inhaltstransfer“. Navigieren Sie zu **Aufnahmevorgänge** und suchen Sie die Aufnahme, die Sie überprüfen möchten. Klicken Sie auf die drei Punkte (**...**) für diese Aufnahme klicken Sie dann auf **Prinzipal-Zusammenfassung anzeigen** in der Dropdown-Liste.
+Gehen Sie zu Cloud Acceleration Manager, um diese Informationen anzuzeigen. Klicken Sie auf Ihre Projektkarte und dann auf die Karte „Inhaltstransfer“. Navigieren Sie zu **Aufnahmevorgänge** und suchen Sie nach der zu überprüfenden Aufnahme. Klicken Sie auf die drei Punkte (**…**) für diese Aufnahme und dann in der Dropdown-Liste auf **Prinzipalzusammenfassung anzeigen**.
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-Es wird ein Dialogfeld mit den Zusammenfassungsinformationen angezeigt. Verwenden Sie die Hilfesymbole, um eine umfassendere Beschreibung zu lesen. Klicken Sie auf **Bericht herunterladen** Schaltfläche zum Herunterladen des vollständigen CSV-Berichts (CSV).
+Es wird ein Dialogfeld mit den Zusammenfassungsinformationen angezeigt. Verwenden Sie die Hilfesymbole, um eine umfassendere Beschreibung zu lesen. Klicken Sie auf die Schaltfläche **Bericht herunterladen**, um den vollständigen, durch Kommas getrennten Bericht (CSV-Format) herunterzuladen.
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
 >[!NOTE]
 >
->Wenn die Benutzerzuordnung deaktiviert ist, wird eine weitere Variante dieses Dialogfelds angezeigt. Sie zeigt an, dass die Benutzerzuordnung deaktiviert war, und zeigt nicht die 3 Felder an, die Benutzerzuordnungswerte enthalten.
+>Wenn die Benutzerzuordnung deaktiviert ist, wird eine weitere Variante dieses Dialogfelds angezeigt. Darin wird angegeben, dass die Benutzerzuordnung deaktiviert war. Zudem umfasst es nicht die drei Felder mit Benutzerzuordnungswerten.
 
 ## Fehlerbehebung {#troubleshooting}
 
@@ -156,7 +156,7 @@ Es wird ein Dialogfeld mit den Zusammenfassungsinformationen angezeigt. Verwende
 
 Der erste Schritt besteht darin festzustellen, ob die Aufnahme wirklich fehlschlug oder ob die extrahierten Inhalte bereits in der Zielumgebung vorhanden sind. Dies kann vorkommen, wenn eine Aufnahme wiederholt wird, während die Option **Vorhandene Inhalte in der Cloud-Instanz vor der Aufnahme löschen** deaktiviert ist.
 
-Wählen Sie zur Überprüfung einen Pfad aus dem Validierungsbericht aus und überprüfen Sie, ob er in der Zielumgebung vorhanden ist. Wenn es sich um eine Veröffentlichungsumgebung handelt, können Sie Seiten und Assets nur direkt überprüfen. Öffnen Sie ein Ticket bei der Kundenunterstützung, wenn Sie Hilfe zu diesem Schritt benötigen.
+Wählen Sie zur Überprüfung einen Pfad aus dem Validierungsbericht aus und überprüfen Sie, ob er in der Zielumgebung vorhanden ist. Wenn es sich um eine Veröffentlichungsumgebung handelt, können Sie Seiten und Assets nur direkt überprüfen. Wenn Sie Hilfe zu diesem Schritt benötigen, öffnen Sie ein Ticket bei der Kundenunterstützung.
 
 ### Die Knotenanzahl ist geringer als erwartet. Warum ist das so? {#node-count-lower-than-expected}
 

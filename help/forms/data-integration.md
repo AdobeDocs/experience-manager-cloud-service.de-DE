@@ -5,7 +5,7 @@ exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
 source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
 source-wordcount: '555'
-ht-degree: 75%
+ht-degree: 87%
 
 ---
 
@@ -45,7 +45,7 @@ Nachdem Sie ein Formulardatenmodell erstellt haben, können Sie es in verschiede
 
 ## Erste Schritte mit der Datenintegration {#get-started-with-data-integration}
 
-Der erste Schritt zur Implementierung der Datenintegration besteht darin, Datenquellen zu identifizieren und zu konfigurieren, die Informationen speichern, die Sie in Anwendungsfällen für adaptive Forms und interaktive Kommunikation verwenden möchten. Als Nächstes erstellen Sie ein Formulardatenmodell, das Datenmodellobjekte, Eigenschaften und Services aus mindestens einer Datenquelle verwendet. Sie können adaptive Formulare und interaktive Kommunikation auf Grundlage eines Formulardatenmodells erstellen, bei dem Felder adaptiver Formulare oder Platzhalter in interaktiver Kommunikation an die jeweiligen Datenquelleneigenschaften gebunden sind.
+Der erste Schritt zur Implementierung der Datenintegration besteht darin, Datenquellen, die Informationen speichern und die Sie in Anwendungsfällen für adaptive Formulare sowie interaktive Kommunikation verwenden möchten, zu identifizieren und zu konfigurieren. Als Nächstes erstellen Sie ein Formulardatenmodell, das Datenmodellobjekte, Eigenschaften und Services aus mindestens einer Datenquelle verwendet. Sie können adaptive Formulare und interaktive Kommunikation auf Grundlage eines Formulardatenmodells erstellen, bei dem Felder adaptiver Formulare oder Platzhalter in interaktiver Kommunikation an die jeweiligen Datenquelleneigenschaften gebunden sind.
 
 [!DNL AEM Forms] Sie können auch ein Formulardatenmodell erstellen, das unabhängig von Datenquellen ist, und Datenmodellobjekte und Eigenschaften im Formulardatenmodell später mit der Datenquelle verknüpfen oder verknüpfen. Dadurch werden alle Abhängigkeiten von Datenquellen entfernt, während Sie an einem Formulardatenmodell arbeiten.
 

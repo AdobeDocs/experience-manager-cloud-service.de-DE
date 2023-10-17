@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: 08cb1b4fc74e03a931551042814afb2d722005a5
 workflow-type: tm+mt
 source-wordcount: '1039'
-ht-degree: 86%
+ht-degree: 91%
 
 ---
 
@@ -109,7 +109,7 @@ Diese Tabelle verweist auf die Produktversionsnummern. Java-Build-Nummern oder -
 
 >[!NOTE]
 >
->Ab April 2022 wird Oracle JDK zum Standard-JDK für die Entwicklung und den Betrieb von AEM-Anwendungen. Der Build-Prozess von Cloud Manager wechselt automatisch zur Verwendung von Oracle JDK, auch wenn in der Maven-Toolchain explizit eine alternative Option ausgewählt ist. Siehe Versionshinweise vom April 2022.
+>Ab April 2022 wird Oracle JDK das Standard-JDK für die Entwicklung und den Betrieb von AEM-Anwendungen sein. Der Build-Prozess von Cloud Manager wechselt automatisch zur Verwendung von Oracle JDK, auch wenn in der Maven-Toolchain explizit eine alternative Option ausgewählt ist. Weitere Informationen finden Sie in den Versionshinweisen für April 2022.
 
 #### Version des alternativen Maven-Ausführungs-JDK {#alternate-maven-jdk-version}
 
@@ -244,4 +244,4 @@ Mit derselben Methode können Sie auch sprachspezifische Pakete installieren, z.
 
 >[!TIP]
 >
->Weitere Informationen zur Frontend-Build-Umgebung finden Sie unter [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
+>Weitere Informationen zur Frontend-Build-Umgebung finden Sie im Dokument [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).

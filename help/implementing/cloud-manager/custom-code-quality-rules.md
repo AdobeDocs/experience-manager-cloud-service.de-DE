@@ -5,7 +5,7 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: 57a7cd3fd2bfc34ebcee82832e020cf45887afa9
 workflow-type: tm+mt
 source-wordcount: '3868'
-ht-degree: 85%
+ht-degree: 92%
 
 ---
 
@@ -20,7 +20,7 @@ Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die 
 
 >[!NOTE]
 >
->Vollständige SonarQube-Regeln stehen aufgrund von proprietären Informationen von Adobe nicht zum Download zur Verfügung. Sie können die vollständige Liste von Regeln [über diesen Link herunterladen](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Lesen Sie dieses Dokument weiter, um Beschreibungen und Beispiele für die Regeln zu erhalten.
+>Vollständige SonarQube-Regeln stehen aufgrund von proprietären Informationen von Adobe nicht zum Download zur Verfügung. Sie können die vollständige Liste von Regeln [über diesen Link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) herunterladen. Lesen Sie dieses Dokument weiter, um Beschreibungen und Beispiele für die Regeln zu erhalten.
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Schweregrad**: Kritisch
 * **Seit**: Version 2018.6.0
 
-Beim Ausführen von HTTP-Anforderungen aus einer Experience Manager-Anwendung muss unbedingt sichergestellt werden, dass ordnungsgemäße Timeouts konfiguriert sind, um unnötigen Thread-Verbrauch zu vermeiden. Leider sind in Javas™ Standard-HTTP-Client (`java.net.HttpUrlConnection`) und dem häufig verwendeten Client für Apache-HTTP-Komponenten standardmäßig keine Zeitüberschreitungswerte festgelegt, sodass diese explizit eingestellt werden müssen. Als Best Practice gilt, für diese Zeitüberschreitungswerte maximal 60 Sekunden zu definieren.
+Beim Ausführen von HTTP-Anfragen über eine Experience Manager-Anwendung muss unbedingt sichergestellt sein, dass korrekte Zeitüberschreitungswerte konfiguriert werden, um unnötigen Thread-Verbrauch zu vermeiden. Leider sind in Javas™ Standard-HTTP-Client (`java.net.HttpUrlConnection`) und dem häufig verwendeten Client für Apache-HTTP-Komponenten standardmäßig keine Zeitüberschreitungswerte festgelegt, sodass diese explizit eingestellt werden müssen. Als Best Practice gilt, für diese Zeitüberschreitungswerte maximal 60 Sekunden zu definieren.
 
 #### Nicht konformer Code {#non-compliant-code-2}
 
@@ -504,7 +504,7 @@ public void doThis(Resource resource) {
 
 Verwenden Sie den Sling-Scheduler nicht für Aufgaben, die eine garantierte Ausführung erfordern. Über Sling geplante Vorgänge garantieren die Ausführung und eignen sich besser für Umgebungen mit und ohne Cluster.
 
-Siehe [Apache Sling Eventing und Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) , um mehr darüber zu erfahren, wie Sling-Aufträge in Clusterumgebungen verarbeitet werden.
+Weitere Informationen zum Umgang mit Sling-Vorgängen in Cluster-Umgebungen finden Sie unter [Apache Sling-Ereignisse und -Vorgangsverarbeitung](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html).
 
 ### Keine nicht mehr unterstützten Experience Manager-APIs verwenden {#sonarqube-aem-deprecated}
 
@@ -560,7 +560,7 @@ public class DontDoThis implements Page {
 
 Mehrere vorkonfigurierte Experience Manager Oak-Indizes enthalten eine Tika-Konfiguration und Anpassungen dieser Indizes müssen eine Tika-Konfiguration enthalten. Diese Regel überprüft auf Anpassungen der Indizes `damAssetLucene`, `lucene` und `graphqlConfig` und löst ein Problem aus, wenn entweder der Knoten `tika` fehlt oder wenn im Knoten `tika` ein untergeordneter Knoten mit dem Namen `config.xml` fehlt.
 
-Siehe [Indexdokumentation](/help/operations/indexing.md#preparing-the-new-index-definition) Weitere Informationen zum Anpassen von Indexdefinitionen.
+Weitere Informationen zum Anpassen von Indexdefinitionen finden Sie in der [Dokumentation zur Indizierung](/help/operations/indexing.md#preparing-the-new-index-definition).
 
 #### Nicht konformer Code {#non-compliant-code-indextikanode}
 
@@ -765,10 +765,10 @@ Die OSGi-Konfiguration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` def
 Experience Manager-Komponenten mit einem Dialogfeld für die klassische Benutzeroberfläche sollten immer über ein entsprechendes Dialogfeld für die Touch-Benutzeroberfläche verfügen. Beide bieten ein optimales Authoring-Erlebnis und sind mit dem Cloud Service-Bereitstellungsmodell kompatibel, in dem die klassische Benutzeroberfläche nicht unterstützt wird. Diese Regel überprüft die folgenden Szenarien:
 
 * Eine Komponente mit einem Dialogfeld für die klassische Benutzeroberfläche (d. h. einem untergeordneten `dialog`-Knoten) muss über ein entsprechendes Dialogfeld für die Touch-Benutzeroberfläche verfügen (d. h. über einen untergeordneten `cq:dialog`-Knoten).
-* Eine Komponente mit einem Design-Dialogfeld für die klassische Benutzeroberfläche (d. h. eine `design_dialog` -Knoten) muss über ein entsprechendes Design-Dialogfeld für die Touch-Benutzeroberfläche verfügen (d. h. über eine `cq:design_dialog` untergeordneten Knoten).
+* Eine Komponente mit einem Design-Dialogfeld für die klassische Benutzeroberfläche (d. h. einem `design_dialog`-Knoten) muss über ein entsprechendes Design-Dialogfeld für die Touch-Benutzeroberfläche verfügen (d. h. über einen untergeordneten `cq:design_dialog`-Knoten).
 * Eine Komponente mit einem Dialogfeld für die klassische Benutzeroberfläche und einem Design-Dialogfeld für die klassische Benutzeroberfläche muss sowohl über ein entsprechendes Dialogfeld für die Touch-Benutzeroberfläche als auch über ein entsprechendes Design-Dialogfeld für die Touch-Benutzeroberfläche verfügen.
 
-Die Dokumentation zu den Experience Manager-Modernisierungs-Tools bietet Dokumentation und Tools zum Konvertieren von Komponenten aus der klassischen Benutzeroberfläche in die Touch-Benutzeroberfläche. Siehe [Dokumentation zu den Experience Manager-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/) für weitere Details.
+Die Dokumentation zu den Experience Manager-Modernisierungs-Tools bietet Dokumentation und Tools zum Konvertieren von Komponenten aus der klassischen Benutzeroberfläche in die Touch-Benutzeroberfläche. Weitere Details finden Sie in der [Dokumentation zu den Experience Manager-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### In Paketen sollten veränderliche und unveränderliche Inhalte nicht gemischt werden {#oakpal-packages-immutable}
 
@@ -783,7 +783,7 @@ Um mit dem Cloud Service-Bereitstellungsmodell kompatibel zu sein, müssen einze
 >
 >Die Regel [Kundenpakete sollten Knoten unter /libs nicht erstellen oder ändern](#oakpal-customer-package) ist immer gültig.
 
-Siehe [Experience Manager-Projektstruktur](/help/implementing/developing/introduction/aem-project-content-package-structure.md) für weitere Details.
+Weitere Details finden Sie unter [Experience Manager-Projektstruktur](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ### Verwenden Sie keine Agenten für Rückwärtsreplikation {#oakpal-reverse-replication}
 
@@ -792,7 +792,7 @@ Siehe [Experience Manager-Projektstruktur](/help/implementing/developing/introdu
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
-In Cloud Service-Implementierungen ist keine Unterstützung für die Rückwärtsreplikation verfügbar, wie im Abschnitt zum Experience Manager as a Cloud Service [Versionshinweise](/help/release-notes/aem-cloud-changes.md#replication-agents).
+Die Unterstützung für die Rückwärtsreplikation ist in Cloud-Service-Bereitstellungen nicht verfügbar, wie in den [Versionshinweisen](/help/release-notes/aem-cloud-changes.md#replication-agents) zu Experience Manager as a Cloud Service beschrieben.
 
 Kunden, die die Rückwärtsreplikation verwenden, sollten sich für alternative Lösungen an Adobe wenden.
 
@@ -803,7 +803,7 @@ Kunden, die die Rückwärtsreplikation verwenden, sollten sich für alternative 
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Experience Manager-Client-Bibliotheken können statische Ressourcen wie Bilder und Schriftarten enthalten. Wie im Dokument beschrieben [Verwendung von Präprozessoren,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) Bei Verwendung von Proxyclient-Bibliotheken müssen diese statischen Ressourcen in einem untergeordneten Ordner mit dem Namen `resources` auf den Veröffentlichungsinstanzen effektiv referenziert werden.
+Experience Manager-Client-Bibliotheken können statische Ressourcen wie Bilder und Schriftarten enthalten. Wie im Dokument [Verwenden von Präprozessoren](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) beschrieben, müssen diese statischen Ressourcen bei der Verwendung von Proxy-fähigen Client-Bibliotheken in einem untergeordneten Ordner namens `resources` enthalten sein, damit sie in den Publishing-Instanzen effektiv referenziert werden können.
 
 #### Nicht konformer Code {#non-compliant-proxy-enabled}
 
@@ -856,7 +856,7 @@ Die Migration von statischen zu bearbeitbaren Vorlagen kann mithilfe des [Experi
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Die veralteten Foundation-Komponenten (d. h. Komponenten unter `/libs/foundation`) für mehrere Experience Manager-Versionen zugunsten der Kernkomponenten veraltet sind. Von der Verwendung der Foundation-Komponenten als Basis für benutzerdefinierte Komponenten – sei es durch Überlagerung oder Vererbung – wird abgeraten und sie sollten in die entsprechende Kernkomponente konvertiert werden.
+Die veralteten Foundation-Komponenten (d. h. Komponenten unter `/libs/foundation`) werden seit mehreren Versionen von Experience Manager nicht mehr verwendet und wurden durch die Kernkomponenten ersetzt. Von der Verwendung der Foundation-Komponenten als Basis für benutzerdefinierte Komponenten – sei es durch Überlagerung oder Vererbung – wird abgeraten und sie sollten in die entsprechende Kernkomponente konvertiert werden.
 
 Diese Konvertierung mit den [Experience Manager-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/) vorgenommen werden.
 
@@ -876,7 +876,7 @@ Experience Manager as a Cloud Service erzwingt eine strikte Benennungsrichtlinie
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Für den as a Cloud Service Experience Manager müssen benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) sind direkt untergeordnete Knoten von `/oak:index`. Indizes in anderen Speicherorten müssen so verschoben werden, dass sie mit Experience Manager as a Cloud Service kompatibel sind. Weitere Informationen zu Suchindizes finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md).
+Experience Manager as a Cloud Service verlangt, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) direkt untergeordnete Knoten von `/oak:index` sein müssen. Indizes in anderen Speicherorten müssen so verschoben werden, dass sie mit Experience Manager as a Cloud Service kompatibel sind. Weitere Informationen zu Suchindizes finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md).
 
 ### Knoten für benutzerdefinierte Suchindex-Definitionen benötigen eine compatVersion von 2 {#oakpal-custom-search-compatVersion}
 
@@ -912,7 +912,7 @@ Ein korrekt definierter benutzerdefinierter Suchindex-Definitionsknoten muss ein
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Für den as a Cloud Service Experience Manager müssen benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) muss nach einem bestimmten Muster benannt werden, das im Dokument beschrieben wird [Inhaltssuche und -indizierung](/help/operations/indexing.md).
+Experience Manager as a Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) nach einem bestimmten Muster benannt werden, das im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md) beschrieben wird.
 
 ### Knoten für benutzerdefinierte Suchindex-Definitionen müssen den Indextyp Lucene verwenden  {#oakpal-index-type-lucene}
 
@@ -921,7 +921,7 @@ Für den as a Cloud Service Experience Manager müssen benutzerdefinierte Suchin
 * **Schweregrad**: Blocker
 * **Seit**: Version 2021.2.0 (Änderung von Typ und Schweregrad in 2021.8.0)
 
-Für den as a Cloud Service Experience Manager müssen benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) haben eine `type` -Eigenschaft mit dem Wert `lucene`. Die Indizierung mit veralteten Indextypen muss vor der Migration auf Experience Manager as a Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use).
+Experience Manager as a Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) eine `type`-Eigenschaft mit dem definierten Wert `lucene` aufweisen. Die Indizierung mit veralteten Indextypen muss vor der Migration auf Experience Manager as a Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use).
 
 ### Knoten einer benutzerdefinierten Suchindex-Definition dürfen keine Eigenschaft namens „seed“ enthalten {#oakpal-property-name-seed}
 

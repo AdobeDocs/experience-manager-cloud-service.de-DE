@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 18d63a9ed1fd52ebcd696a4ec5f635350cacb1c0
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 83%
+ht-degree: 94%
 
 ---
 
@@ -36,7 +36,7 @@ In Verbindung mit dem aktualisierten JSON Exporter können strukturierte Inhalts
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 >
->Weitere Informationen finden Sie unter [Grundlagen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
+>Weitere Details finden Sie in den [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
 
 >[!CAUTION]
 >
@@ -73,7 +73,7 @@ Die Inhaltsfragmente ermöglichen Folgendes:
    >
    >Eine alternative Methode besteht darin, ein bestimmtes Inhaltsfragment direkt auf die Seite zu ziehen. Dabei wird automatisch die zugehörige Komponente (Inhaltsfragment) erstellt.
 
-4. Zunächst wird der Inhalt aus dem **Main** Element und **Master** (Variante) angezeigt. Sie können nach Bedarf aber [auch andere Elemente und/oder Varianten auswählen](#selecting-the-element-or-variation).
+4. Anfangs wird der Inhalt aus den Elementen **Allgemein** und **Master** (Variante) angezeigt. Sie können nach Bedarf aber [auch andere Elemente und/oder Varianten auswählen](#selecting-the-element-or-variation).
 
    ![Inhaltsfragmente im Assets-Browser](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -148,7 +148,7 @@ Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 
 >[!CAUTION]
 >
->Nachdem Sie Übergangsinhalte zu einem Inhaltsfragment auf Ihrer Seite hinzugefügt haben, kann das Ändern der Struktur des zugrunde liegenden Inhaltsfragments (d. h. im Inhaltsfragmente-Editor) zu fehlerhaften/unerwarteten Ergebnissen führen.
+>Wenn Sie Zwischeninhalte zu einem Inhaltsfragment auf Ihrer Seite hinzugefügt haben, kann das Ändern der Struktur des zugrunde liegenden Inhaltsfragments (d. h. im Inhaltsfragment-Editor) zu fehlerhaften/unerwarteten Ergebnissen führen.
 >
 >Wenn dies eintritt, wird der Zwischeninhalt unverändert beibehalten:
 >
@@ -159,7 +159,7 @@ Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 
 ### Verwenden von zugehörigen Inhalten {#using-associated-content}
 
-Wenn Sie [verknüpfter Inhalt](/help/assets/content-fragments/content-fragments-assoc-content.md) mit dem [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) Diese Assets sind im Seitenbereich verfügbar (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [Zwischeninhalte](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Wenn Sie Inhalt mit dem [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) [verknüpft](/help/assets/content-fragments/content-fragments-assoc-content.md) haben, sind diese Assets im seitlichen Panel verfügbar (nachdem Sie Ihr Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [Zwischeninhalte](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ Wenn Sie [verknüpfter Inhalt](/help/assets/content-fragments/content-fragments-
 
 Nachdem Sie ein Fragment mit verknüpftem Inhalt zu Ihrer Seite hinzugefügt haben, wird eine neue Registerkarte (**Verknüpfte Inhalte**) im Seitenbereich geöffnet.
 
-Von hier können Sie die Assets an die gewünschte Position ziehen (entweder an eine vorhandene Komponente oder an die gewünschte Position, an der die entsprechende Komponente erstellt wird):
+Von hier aus können Sie die Assets an die gewünschte Position ziehen (entweder zu einer vorhandenen Komponente oder an die gewünschte Position, an der die entsprechende Komponente erstellt wird):
 
 ![Einfügen eines Bildes](/help/sites-cloud/authoring/assets/content-fragments-image.png)
 

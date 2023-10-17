@@ -5,7 +5,7 @@ exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2231'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -69,7 +69,7 @@ Bevor Sie ein Fragment exportieren, müssen Sie die **Cloud-Konfiguration** für
 * einen Target-Arbeitsbereich als Ziel auszuwählen
 * eine Externalizer-Domäne zum Umschreiben von Verweisen im Inhaltsfragment auszuwählen (optional)
 
-Die erforderlichen Optionen können in **Seiteneigenschaften** des erforderlichen Ordners, Fragments oder beides; die Spezifikation wird bei Bedarf übernommen.
+Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderlichen Ordners bzw. Fragments (oder von beiden) ausgewählt werden. Die Spezifikation wird nach Bedarf vererbt.
 
 1. Navigieren Sie zur **Assets**-Konsole.
 
@@ -136,7 +136,7 @@ Sie können die Cloud-Konfiguration so konfigurieren, dass Segmente aus Adobe Ta
 
 Gehen Sie wie folgt vor, um eine Target-Cloud-Konfiguration in AEM zu erstellen:
 
-1. Gehen Sie zu **Legacy Cloud Services**: Über das **AEM-Logo** > **Tools** > **Cloud-Services** zu **Legacy Cloud Services**.
+1. Gehen Sie zu **Legacy Cloud Services**: Über **das AEM-Logo** > **Tools** > **Cloud-Services** zu **Legacy Cloud Services**.
 Zum Beispiel: ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
    Die Übersichtsseite **Adobe Experience Cloud** wird geöffnet.
@@ -175,7 +175,7 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
 
    * **Mandanten-ID**: die Mandanten-ID
 
-   * **IMS-Konfiguration**: Wählen Sie die gewünschte Konfiguration aus der Dropdownliste aus.
+   * **IMS-Konfiguration**: Wählen Sie die gewünschte Konfiguration aus der Dropdown-Liste aus
 
    * **API-Typ**: standardmäßig auf REST gesetzt (XML ist veraltet)
 
@@ -338,9 +338,9 @@ So exportieren Sie ein Inhaltsfragment aus AEM in Target (nach Angabe der Cloud-
 
    >[!NOTE]
    >
-   >Die tatsächlichen angezeigten Aktionen hängen vom Status des Fragments und der zugehörigen Assets ab.
+   >Welche Aktionen tatsächlich angezeigt werden, hängt vom Status Ihres Fragments und der zugehörigen Assets ab.
    >
-   >Wenn alles bereits veröffentlicht wurde und seitdem nichts geändert wurde, wird dieser Schritt übergeben.
+   >Wenn alles bereits veröffentlicht wurde und seitdem nichts mehr geändert wurde, wird dieser Schritt übersprungen.
 
    >[!NOTE]
    >
@@ -364,7 +364,7 @@ So exportieren Sie ein Inhaltsfragment aus AEM in Target (nach Angabe der Cloud-
 
 ## Verwenden Ihrer Inhaltsfragmente in Adobe Target {#using-your-content-fragments-in-adobe-target}
 
-Nach dem Ausführen der zuvor genannten Aufgaben wird das Inhaltsfragment auf der Seite „Angebote“ in Target angezeigt. Siehe [spezifische Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=de) um zu erfahren, was man dort erreichen kann.
+Nach dem Ausführen der zuvor genannten Aufgaben wird das Inhaltsfragment auf der Seite „Angebote“ in Target angezeigt. In der [spezifischen Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=de) erfahren Sie, was Sie dort erreichen können.
 
 >[!NOTE]
 >
@@ -396,7 +396,7 @@ So vermeiden Sie solche Situationen:
 
 ## Weitere Ressourcen {#further-resources}
 
-Weitere Informationen finden Sie unter den folgenden Themen:
+Weitere Informationen finden Sie in den folgenden Themen:
 
 <!--
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)

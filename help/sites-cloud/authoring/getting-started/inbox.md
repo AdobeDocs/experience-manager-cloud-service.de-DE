@@ -5,7 +5,7 @@ exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
 source-wordcount: '914'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ Sie erhalten diese Benachrichtigungen in Ihrem eigenen Posteingang, wo Sie sie a
 
 >[!NOTE]
 >
->Weitere Informationen zu den Elementtypen finden Sie unter folgenden Themen:
+>Weitere Informationen zu den Objekttypen finden Sie im Folgenden:
 >
 >* [Projekte](/help/sites-cloud/authoring/projects/overview.md)
 >* [Projekte – Arbeiten mit Aufgaben](/help/sites-cloud/authoring/projects/tasks.md)
@@ -102,7 +102,7 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen festlegen:
 
   ![Einstellungen für die Listenansicht im Posteingang](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  Sie können Ihren Kalender auch an andere Benutzer delegieren, eine Zuweisung von anderen Benutzern anfordern und Ihre Delegationen verwalten.
+  Sie können Ihren Kalender auch an andere Benutzende delegieren sowie die Delegierung von anderen Benutzenden anfordern und Ihre Delegierungen verwalten.
 
   ![Delegierungseinstellungen für die Listenansicht im Posteingang](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
@@ -112,7 +112,7 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen festlegen:
 >
 >Obwohl es möglich ist, mehr als ein Element auszuwählen, können Aktionen immer nur für ein Element zur gleichen Zeit durchgeführt werden.
 
-1. Um eine Aktion auf ein Element anzuwenden, wählen Sie die Miniatur des gewünschten Elements aus. In der Symbolleiste werden Symbole für die Aktionen angezeigt, die auf dieses Element angewendet werden können:
+1. Um eine Aktion auf ein Element anzuwenden, wählen Sie die Miniatur des gewünschten Elements aus. In der Symbolleiste werden Symbole für die Aktionen angezeigt, die auf dieses Element anwendbar sind:
 
    ![Posteingangselement auswählen](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
@@ -136,9 +136,9 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen festlegen:
    >
    >* Workflow-Elemente – [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md)
 
-2. Je nach ausgewähltem Element wird eine Aktion gestartet, beispielsweise:
+2. Abhängig vom ausgewählten Element wird eine bestimmte Aktion gestartet, z. B.:
 
-   * Ein Dialogfeld für die Aktion wird geöffnet
+   * Ein Dialogfeld, das der Aktion entspricht, wird geöffnet
    * Ein Aktionsassistent wird gestartet
    * Eine Dokumentationsseite wird geöffnet
 
@@ -156,7 +156,7 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen festlegen:
 
 Im Posteingang können Sie Aufgaben erstellen:
 
-1. Klicken Sie auf **Erstellen** und dann auf **Aufgabe**.
+1. Klicken Sie auf **Erstellen** und dann auf **Aufgabe**
 1. Füllen Sie die Felder in den Registerkarten **Allgemein** und **Erweitert** aus. Obligatorisch ist hierbei nur der **Titel**, alle anderen sind optional:
 
    * **Allgemein**:
@@ -174,7 +174,7 @@ Im Posteingang können Sie Aufgaben erstellen:
 
    * **Erweitert**
 
-      * **Name**: Wird verwendet, um die URL zu bilden, und wenn leer, basiert sie auf der **Titel**.
+      * **Name**: Daraus wird die URL gebildet. Wird kein Name angegeben, basiert sie auf dem **Titel**.
 
    ![Posteingang – Erweiterte Optionen zum Hinzufügen von Aufgaben](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 

@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
 source-wordcount: '4330'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -227,7 +227,7 @@ ht-degree: 91%
          + [Verwenden von Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
       + Content Transformer {#content-transformer}
          + [Übersicht](/help/journey-migration/content-transformer/overview.md)
-         + [Verwenden von Content Transformer](/help/journey-migration/content-transformer/using.md)
+         + [Verwenden des Content Transformers](/help/journey-migration/content-transformer/using.md)
       + Content Transfer Tool {#content-transfer-tool}
          + [Übersicht](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [Voraussetzungen für die Verwendung des Content Transfer Tools](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
@@ -400,7 +400,7 @@ ht-degree: 91%
    + [Barrierefreiheit in  [!DNL Assets]](/help/assets/accessibility.md)
    + Verwalten digitaler Assets {#manage}
       + [Micro-Front-End-Asset-Selektor](/help/assets/asset-selector.md)
-      + [Zielauswahl für MikroFrontend](/help/assets/destination-selector.md)
+      + [Zielauswahl für Micro-Frontend](/help/assets/destination-selector.md)
       + [Freigeben von Assets](/help/assets/share-assets.md)
       + [Überwachen von Aktivitäten und DAM-Aufgaben](/help/assets/assets-activity-history.md)
       + [Erste Schritte mit Asset-Microservices](/help/assets/asset-microservices-configure-and-use.md)
@@ -520,10 +520,10 @@ ht-degree: 91%
       + [Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)](/help/assets/dynamic-media/http2faq.md)
       + [Einstellung von Flash Viewer](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Einstellung von DHTML Viewer](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-   + Arbeiten mit der Asset-Ansicht {#assets-view}
+   + Arbeiten mit der Assets-Ansicht {#assets-view}
       + [Einführung](/help/assets/assets-view-introduction.md)
       + [Erste Schritte](/help/assets/get-started-assets-view.md)
-      + [Mein Arbeitsbereich](/help/assets/my-workspace-assets-view.md)
+      + [Mein Workspace](/help/assets/my-workspace-assets-view.md)
       + [Unterstützte Dateitypen und Anwendungsfälle](/help/assets/supported-file-formats-assets-view.md)
       + [Anzeigen von Assets](/help/assets/navigate-assets-view.md)
       + [Hochladen und Hinzufügen von Assets](/help/assets/add-delete-assets-view.md)
@@ -534,7 +534,7 @@ ht-degree: 91%
       + [Verwalten von Asset-Metadaten](/help/assets/metadata-assets-view.md)
       + [Freigeben von Medienelementen](/help/assets/share-links-for-assets-view.md)
       + [Verwalten von Sammlungen](/help/assets/manage-collections-assets-view.md)
-      + [Asset, Ordner und Sammlungen ansehen](/help/assets/manage-notifications-assets-view.md)
+      + [Überwachen von Assets, Ordnern und Sammlungen](/help/assets/manage-notifications-assets-view.md)
       + [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
       + [Verwalten von Tags](/help/assets/tagging-management-assets-view.md)
    + Best Practices{#best-practices}
@@ -560,7 +560,7 @@ ht-degree: 91%
    + Einrichten und Migrieren {#setup-configure-migrate}
       + [Einführen der Cloud Service-Umgebung](/help/forms/setup-forms-cloud-service.md)
       + [Einrichten einer lokalen Entwicklungsumgebung](/help/forms/setup-local-development-environment.md)
-      + [Aktivieren der adaptiven Forms-Kernkomponenten in der as a Cloud Service und lokalen Entwicklungsumgebung von AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
+      + [Aktivieren der Kernkomponenten für adaptive Formulare in AEM Forms as a Cloud Service und lokaler Entwicklungsumgebung](/help/forms/enable-adaptive-forms-core-components.md)
       + [Konfigurieren eines einheitlichen Speicher-Connectors](/help/forms/configure-unified-storage-connector.md)
       + [Migrieren von  [!DNL AEM 6.5 Forms]  oder früher zu  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppen und Berechtigungen](/help/forms/forms-groups-privileges-tasks.md)
@@ -595,8 +595,8 @@ ht-degree: 91%
             + [Erstellen eines adaptiven Formularfragments](/help/forms/adaptive-form-fragments-core-components.md)
             + [Erstellen von Designs für ein adaptives Formular – Kernkomponenten](/help/forms/using-themes-in-core-components.md)
             + [Generieren eines Datensatzdokuments für adaptive Formulare](/help/forms/generate-document-of-record-core-components.md)
-            + [Verwenden Sie maschinelle Übersetzung oder menschliche Übersetzung, um ein adaptives Formular zu übersetzen.](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
-            + [Konfigurieren der Umleitungsseite oder Dankesnachricht](/help/forms/configure-redirect-page-or-thank-you-message.md)
+            + [Verwenden einer maschinellen oder menschlichen Übersetzung, um ein adaptives Formular zu übersetzen](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+            + [Konfigurieren der Umleitungsseite oder der Dankesnachricht](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Erstellen von Formularen mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
             + [Konfigurieren der Sendeaktion für ein adaptives Formular](/help/forms/configure-submit-actions-core-components.md)
             + [Verwenden von Google reCAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms-core-components.md)
@@ -628,7 +628,7 @@ ht-degree: 91%
             + [Anwenden von Inline-CSS-Stilen auf einzelne Komponenten adaptiver Formulare](/help/forms/inline-style-adaptive-forms.md)
          + Hinzufügen von Regeln und Verwenden von Ausdrücken in adaptiven Formularen {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [Hinzufügen von Regeln zu adaptiven Formularen](/help/forms/rule-editor.md)
-            + [Fügen Sie mithilfe des Aufrufdienstes des Regeleditors einen benutzerdefinierten Fehler-Handler hinzu.](/help/forms/add-custom-error-handler-adaptive-forms.md)
+            + [Hinzufügen eines benutzerdefinierten Fehler-Handlers mit dem Aufruf-Sevice des Regel-Editors](/help/forms/add-custom-error-handler-adaptive-forms.md)
          + Verwenden von [!DNL Adobe Sign] {#use-adobe-sign}
             + [Verwenden von Adobe Sign zum elektronischen Signieren adaptiver Formulare](/help/forms/working-with-adobe-sign.md)
          + Konfigurieren von Sende-Aktionen und Metadaten-Übermittlung {#configure-submit-actions-and-metadata-submission}
@@ -852,7 +852,7 @@ ht-degree: 91%
             + [Testen der Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md)
          + [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [Experience Audit-Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md)
-      + [Anzeigen und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md)
+      + [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md)
       + [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md)
       + [SLA-Berichte](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)

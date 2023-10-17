@@ -5,7 +5,7 @@ exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '1782'
-ht-degree: 54%
+ht-degree: 56%
 
 ---
 
@@ -46,7 +46,7 @@ Content Fragment Management (CFM) ist Teil von Adobe Experience Manager (AEM) As
 
 * Inhaltsfragmente sind Assets.
 * Sie verwenden vorhandene Assets-Funktionen.
-* Sie sind vollständig in Assets integriert (Admin Console usw.).
+* Sie sind vollständig in Assets integriert (Admin Consoles usw.).
 
 Inhaltsfragmente werden als AEM Sites-Funktion betrachtet, da:
 
@@ -67,7 +67,8 @@ Inhaltsfragmente, die auf einem Inhaltsfragmentmodell basieren, werden einem ein
 
    * Die Daten der einzelnen Elemente werden im entsprechenden Unterknoten als Eigenschaft mit dem Elementnamen gespeichert: z. B. der Inhalt des Elements `text` wird als Eigenschaft gespeichert `text` on `jcr:content/data/master`
 
-* Metadaten und verknüpfte Inhalte werden unter `jcr:content/metadata` gespeichert. Eine Ausnahme bilden der Titel und die Beschreibung, die nicht als Metadaten im herkömmlichen Sinne gelten und in `jcr:content` gespeichert werden.
+* Metadaten und verknüpfte Inhalte werden unter `jcr:content/metadata` gespeichert.
+Eine Ausnahme bilden der Titel und die Beschreibung, die nicht als Metadaten im herkömmlichen Sinne gelten und in `jcr:content` gespeichert werden.
 
 #### Asset-Speicherort {#asset-location}
 
@@ -119,7 +120,7 @@ AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen andere
 >
 >Wenn ein Inhaltsfragment auf einer Seite verwendet wird, wird auf das Inhaltsfragmentmodell verwiesen, auf dem es basiert.
 >
->Wenn das Modell also zum Zeitpunkt der Seitenveröffentlichung nicht veröffentlicht wurde, wird dies gekennzeichnet und das Modell den Ressourcen hinzugefügt, die mit der Seite veröffentlicht werden sollen.
+>Falls das Modell also zum Zeitpunkt der Seitenveröffentlichung nicht veröffentlicht wurde, wird dies gekennzeichnet und das Modell zu den Ressourcen hinzugefügt, die mit der Seite veröffentlicht werden sollen.
 
 ### Integration mit anderen Frameworks {#integration-with-other-frameworks}
 
@@ -296,7 +297,7 @@ Dazu können Sie die Ressource, die die API darstellt, wie folgt anpassen:
 
 `com.adobe.cq.dam.cfm.ContentFragment`
 
-Zum Beispiel:
+Beispiel:
 
 ```java
 // first, get the resource
@@ -332,7 +333,7 @@ Die [Intervall für automatisches Speichern](/help/sites-cloud/administering/con
 
 Wenn Sie ein Intervall für das automatische Speichern von 5 Minuten festlegen möchten, definieren Sie die Eigenschaft auf Ihrem Knoten.
 
-Zum Beispiel:
+Beispiel:
 
 * Knoten: `/conf/global/settings/dam/cfm/jcr:content`
 * Eigenschaftsname: `autoSaveInterval`

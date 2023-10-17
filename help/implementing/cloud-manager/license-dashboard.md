@@ -5,7 +5,7 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ In jedem Abschnitt wird zusammengefasst, welche Produkte bzw. Umgebungen verfüg
 
 >[!TIP]
 >
->Siehe [Übersicht über die Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) , um zu erfahren, wie Sie Ihre Berechtigung für Adoben in Ihrem gesamten Unternehmen von der Admin Console aus verwalten.
+>In der [Übersicht über Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) erfahren Sie, wie Sie Ihre Adobe-Berechtigungen in Ihrer gesamten Organisation von Admin Console aus verwalten können.
 
 ## Häufig gestellte Fragen {#faq}
 
@@ -79,13 +79,13 @@ Inhaltsanfragen weisen Abweichungen von den Analytics-Reporting-Tools einer Orga
 | Report Suites | Seiten, die Teil derselben AEM-Instanz und -Domain sind, können Daten an verschiedene Analytics Report Suites senden. |
 | Überwachungs- und Sicherheits-Tools von Drittanbietern | Überwachungs- und Sicherheitsüberprüfungs-Tools können Inhaltsanfragen für AEM generieren, die in Analytics-Berichten nicht erfasst werden. |
 | Vorheriges Abrufen von Anfragen | Die Verwendung eines Vorabruf-Services zum Vorladen von Seiten, um die Geschwindigkeit zu erhöhen, kann zu erheblichen Traffic-Zunahmen bei Inhaltsanfragen führen. |
-| DDOS | Adobe unternimmt alle Anstrengungen, um Traffic automatisch aus DDOS-Angriffen zu erkennen und herauszufiltern. Es gibt jedoch keine Garantie dafür, dass alle möglichen DDOS-Angriffe erkannt werden |
+| DDOS | Adobe unternimmt zwar alle Anstrengungen, um Traffic durch DDOS-Angriffe automatisch zu erkennen und herauszufiltern, aber es gibt keine Garantie dafür, dass alle möglichen DDOS-Angriffe erkannt werden |
 | Traffic-Blocker | Die Verwendung eines Tracker-Blockers in einem Browser kann die Nachverfolgung mancher Anfragen verhindern. |
 | Firewalls | Firewalls können das Analytics-Tracking blockieren. Dies ist bei Unternehmens-Firewalls häufiger der Fall. |
 
 ### Wie erfahre ich mehr über mein Inhaltsanfragevolumen? {#current-request-volumes}
 
-Wenn Sie zusätzliche Einblicke in das Inhaltsanfragevolumen erhalten möchten, das im Lizenz-Dashboard angezeigt wird, kann Ihnen Ihr Adobe-Team einen Bericht bereitstellen, der die wichtigsten Treiber von Inhaltsanfragen aufzeigt. Wenden Sie sich an Ihr Adobe-Team oder an die Adobe-Kundenunterstützung, um einen Bericht zur Topnutzung anzufordern.
+Wenn Sie zusätzliche Einblicke in das Inhaltsanfragevolumen erhalten möchten, das im Lizenz-Dashboard angezeigt wird, kann Ihnen Ihr Adobe-Team einen Bericht bereitstellen, der die wichtigsten Treiber von Inhaltsanfragen aufzeigt. Wenden Sie sich an Ihr Adobe-Team oder an die Adobe-Kundenunterstützung, um einen Bericht über die hauptsächliche Nutzung anzufordern.
 
 ### Was passiert, wenn ich mein eigenes CDN verwende? {#using-own-cdn}
 

@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 5aa4a049bc6a69f161ad04d2a64ab0871e672432
 workflow-type: tm+mt
 source-wordcount: '2746'
-ht-degree: 83%
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ Dieses Dokument enthält Richtlinien für die Entwicklung von AEM as a Cloud Ser
 
 Code, der in AEM as a Cloud Service ausgeführt wird, muss wissen, dass er immer in einem Cluster ausgeführt wird. Das bedeutet, dass immer mehr als eine Instanz ausgeführt wird. Der Code muss robust sein, insbesondere da eine Instanz jederzeit gestoppt werden kann.
 
-Während der Aktualisierung AEM as a Cloud Service gibt es Instanzen mit altem und neuem Code, die parallel ausgeführt werden. Daher darf der alte Code nicht mit dem durch den neuen Code erzeugten Inhalt abstürzen, und der neue Code muss mit dem alten Inhalt umgehen können.
+Während der Aktualisierung von AEM as a Cloud Service werden Instanzen mit altem und neuem Code parallel ausgeführt. Daher darf der alte Code nicht mit dem durch den neuen Code erzeugten Inhalt abstürzen, und der neue Code muss mit dem alten Inhalt umgehen können.
 
 Wenn die Primärinstanz im Cluster identifiziert werden muss, kann die Apache Sling Discovery-API verwendet werden, um sie zu erkennen.
 
@@ -33,7 +33,7 @@ Der Status darf nicht im Speicher gehalten werden, sondern muss im Repository ve
 
 ## Status im Dateisystem {#state-on-the-filesystem}
 
-Das Dateisystem der Instanz sollte in AEM as a Cloud Service verwendet werden. Der Datenträger ist temporär und wird bei der Wiederverwertung der Instanzen entsorgt. Eine beschränkte Nutzung des Dateisystems für die temporäre Datenspeicherung im Zusammenhang mit der Verarbeitung einzelner Anfragen ist möglich, sollte aber nicht für riesige Dateien missbraucht werden. Dies liegt daran, dass sich dies negativ auf das Ressourcennutzungskontingent auswirken und zu Datenträgerbeschränkungen führen kann.
+Das Dateisystem der Instanz sollte in AEM as a Cloud Service verwendet werden. Der Datenträger ist temporär und wird verworfen, wenn Instanzen recycelt werden. Eine beschränkte Nutzung des Dateisystems für die temporäre Datenspeicherung im Zusammenhang mit der Verarbeitung einzelner Anfragen ist möglich, sollte aber nicht für riesige Dateien missbraucht werden. Dies liegt daran, dass sich dies negativ auf das Ressourcennutzungskontingent auswirken und zu Datenträgerbeschränkungen führen kann.
 
 Wenn beispielsweise die Nutzung des Dateisystems nicht unterstützt wird, sollte die Veröffentlichungsebene sicherstellen, dass alle Daten, die beibehalten werden müssen, zur längeren Datenspeicherung an einen externen Service gesendet werden.
 
@@ -47,7 +47,7 @@ Als Hintergrundaufgaben ausgeführter Code muss davon ausgehen, dass die Instanz
 
 Um die Probleme zu minimieren, sollten Aufträge mit langer Laufzeit nach Möglichkeit vermieden und zumindest wieder aufgenommen werden können. Verwenden Sie für die Ausführung solcher Aufträge Sling-Aufträge, die eine Garantie für mindestens einmaliges Ausführen haben und daher, falls sie unterbrochen werden, so schnell wie möglich wieder ausgeführt werden. Aber sie sollten wahrscheinlich nicht wieder von vorne anfangen. Für die Planung solcher Aufträge ist es am besten, die Planung von [Sling-Aufträgen](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) zu verwenden, da dies wiederum die mindestens einmalige Ausführung garantiert.
 
-Der Sling Commons Scheduler sollte nicht für die Planung verwendet werden, da die Ausführung nicht garantiert werden kann. Es ist nur wahrscheinlicher, dass sie geplant wird.
+Der Sling Commons Scheduler sollte nicht für die Planung verwendet werden, da die Ausführung nicht garantiert werden kann. Es ist nur wahrscheinlicher, dass er eingeplant wird.
 
 In ähnlicher Weise kann nicht garantiert werden, dass alles, was asynchron geschieht, wie z. B. die Reaktion auf Beobachtungsereignisse (JCR-Ereignisse oder Sling-Ressourcenereignisse), ausgeführt wird. Daher sollte man bei der Verwendung vorsichtig sein. Dies gilt bereits jetzt für AEM-Bereitstellungen.
 
@@ -65,7 +65,7 @@ Alternativen, von denen bekannt ist, dass sie funktionieren, für die Sie jedoch
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (nicht empfohlen, da veraltet und durch Version 4.x ersetzt)
 * [OK HTTP](https://square.github.io/okhttp/) (nicht von AEM bereitgestellt)
 
-Neben der Bereitstellung von Timeouts sollte auch eine ordnungsgemäße Verarbeitung solcher Timeouts und unerwartete HTTP-Status-Codes implementiert werden.
+Neben der Bereitstellung von Zeitüberschreitungen sollte auch eine ordnungsgemäße Verarbeitung solcher Zeitüberschreitungen sowie unerwarteter HTTP-Status-Codes implementiert werden.
 
 ## Umgang mit Anforderungsratenbeschränkungen {#rate-limit-handling}
 
@@ -76,13 +76,13 @@ Wenn die Rate eingehender Anfragen an AEM gesunde Ebenen überschreitet, antwort
 
 ## Keine Anpassungen der klassischen Benutzeroberfläche {#no-classic-ui-customizations}
 
-AEM as a Cloud Service unterstützt nur die Touch-Benutzeroberfläche für Kundencode von Drittanbietern. Die klassische Benutzeroberfläche kann nicht angepasst werden.
+AEM as a Cloud Service unterstützt die Touch-Benutzeroberfläche nur für Kunden-Code von Drittanbietern. Die klassische Benutzeroberfläche kann nicht angepasst werden.
 
-## Keine nativen Binärdateien oder nativen Bibliotheken {#avoid-native-binaries}
+## Keine nativen Binärdateien oder native Bibliotheken {#avoid-native-binaries}
 
 Native Binärdateien und Bibliotheken dürfen nicht in Cloud-Umgebungen bereitgestellt oder installiert werden.
 
-Darüber hinaus sollte der Code nicht versuchen, native Binärdateien oder native Java-Erweiterungen (z. B. JNI) zur Laufzeit herunterzuladen.
+Darüber hinaus sollte der Code nicht versuchen, native Binärdateien oder native Java-Erweiterungen (z. B. JNI) zur Laufzeit herunterzuladen.
 
 ## Keine Streaming-Binärdateien über AEM as a Cloud Service {#no-streaming-binaries}
 
@@ -116,11 +116,11 @@ In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterl
 
 **Festlegen der Protokollebene**
 
-Um die Protokollierungsstufen für Cloud-Umgebungen zu ändern, sollte die OSGi-Konfiguration für die Sling-Protokollierung geändert und anschließend vollständig neu bereitgestellt werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, ausführliche Protokolle zu Produktionsumgebungen zu aktivieren, die viel Traffic erhalten. In Zukunft ist es möglich, dass es Mechanismen gibt, um die Protokollebene schneller zu ändern.
+Um die Protokollierungsstufen für Cloud-Umgebungen zu ändern, sollte die OSGi-Konfiguration für die Sling-Protokollierung geändert und anschließend vollständig neu bereitgestellt werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, ausführliche Protokolle über Produktionsumgebungen zu aktivieren, die viel Traffic erhalten. In Zukunft wird es möglicherweise Mechanismen geben, um die Protokollstufe schneller zu ändern.
 
 >[!NOTE]
 >
->Um die unten aufgeführten Konfigurationsänderungen durchzuführen, erstellen Sie sie in einer lokalen Entwicklungsumgebung und übertragen sie dann auf eine AEM as a Cloud Service Instanz. Weitere Informationen dazu finden Sie unter [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md).
+>Um die unten aufgeführten Konfigurationsänderungen durchzuführen, erstellen Sie sie in einer lokalen Entwicklungsumgebung und pushen sie dann auf eine AEM as a Cloud Service-Instanz. Weitere Informationen dazu finden Sie unter [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 **Aktivieren der DEBUG-Protokollebene**
 
@@ -167,7 +167,7 @@ Die Protokollebenen lauten wie folgt:
 
 ### Thread-Dumps {#thread-dumps}
 
-Thread-Dumps in Cloud-Umgebungen werden laufend gesammelt, können aber derzeit nicht selbst heruntergeladen werden. Wenden Sie sich in der Zwischenzeit an AEM Support, wenn Thread-Dumps zum Debuggen eines Problems erforderlich sind, und geben Sie das genaue Zeitfenster an.
+Thread-Dumps in Cloud-Umgebungen werden laufend gesammelt, können aber derzeit nicht selbst heruntergeladen werden. Wenden Sie sich in der Zwischenzeit an den AEM-Support, wenn Thread-Dumps zum Debuggen eines Problems erforderlich sind, und geben Sie das genaue Zeitfenster an.
 
 ## CRX/DE Lite und Developer Console {#crxde-lite-and-developer-console}
 
@@ -209,7 +209,7 @@ Die Entwicklerkonsole ist auch für das Debugging nützlich und enthält einen L
 
 ![Developer Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Bei Produktionsprogrammen wird der Zugriff auf die Entwicklerkonsole durch „Cloud Manager – Entwicklerrolle“ in der Admin Console definiert. Bei Sandbox-Programmen steht die Entwicklerkonsole jedem Benutzer mit einem Produktprofil zur Verfügung, das ihm Zugriff auf AEM as a Cloud Service gewährt. Für alle Programme ist &quot;Cloud Manager - Entwicklerrolle&quot;für Status-Dumps erforderlich und der Repository-Browser sowie Benutzer müssen auch im AEM Benutzer- oder AEM Administrator-Produktprofil für Autoren- und Veröffentlichungsdienste definiert sein, um Daten aus beiden Diensten anzuzeigen. Weitere Informationen zum Einrichten von Anwenderberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=de).
+Bei Produktionsprogrammen wird der Zugriff auf die Entwicklerkonsole durch „Cloud Manager – Entwicklerrolle“ in der Admin Console definiert. Bei Sandbox-Programmen steht die Entwicklerkonsole jedem Benutzer mit einem Produktprofil zur Verfügung, das ihm Zugriff auf AEM as a Cloud Service gewährt. Für alle Programme ist „Cloud Manager - Entwicklerrolle“ für Status-Dumps erforderlich, und der Repository Browser und die Benutzenden müssen auch in den Produktprofilen „AEM-Benutzer“ oder „AEM-Administrator“ sowohl für die Authoring- als auch für die Publishing-Services definiert sein, um Daten von beiden Services anzeigen zu können. Weitere Informationen zum Einrichten von Anwenderberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=de).
 
 ### Performance-Überwachung {#performance-monitoring}
 
@@ -285,7 +285,7 @@ Der SMTP-Server-Host sollte auf den Host Ihres E-Mail-Servers eingestellt werden
 
 Das Oak-Content-Repository, das AEM as a Cloud Service zugrunde liegt, ist nicht für die Verwendung mit einer übermäßigen Anzahl von mehrwertigen Eigenschaften (MVPs) vorgesehen. Eine Faustregel besagt, dass MVPs unter 1000 bleiben sollten. Die tatsächliche Leistung hängt jedoch von vielen Faktoren ab.
 
-Warnungen werden standardmäßig nach mehr als 1000 protokolliert. Sie ähneln den folgenden.
+Warnhinweise werden standardmäßig nach mehr als 1000 protokolliert. Sie ähneln den folgenden.
 
 ```text
 org.apache.jackrabbit.oak.jcr.session.NodeImpl Large multi valued property [/path/to/property] detected (1029 values). 
@@ -297,7 +297,7 @@ Große MVPs können zu Fehlern führen, da das MongoDB-Dokument mehr als 16 MB 
 Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
 ```
 
-Siehe [Apache Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) für weitere Details.
+Lesen Sie die [Apache Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) für weitere Details.
 
 ## [!DNL Assets]-Entwicklungsrichtlinien und -Anwendungsfälle {#use-cases-assets}
 
