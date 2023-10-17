@@ -4,9 +4,9 @@ description: Einführung und Übersicht zu Adobe Experience Manager Content and 
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '891'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Mit Adobe Experience Manager Content and Commerce können Marken schneller skali
 
 Angesichts der stetig steigenden Kundenerwartungen an Erlebnisse im Online-Handel sind Marken gezwungen, differenzierte Erlebnisse zu bieten und schneller mehr Inhalte bereitzustellen. Die Implementierung einer Content-Management-Plattform ist jedoch häufig mit einem hohen zeitlichen Aufwand und Investitionen in die Entwicklung grundlegender Elemente wie anwenderdefinierter Komponenten und Authoring-Tools sowie Verwaltung- und Upgrade-Kosten verbunden. Experience Manager Sites bietet Content and Commerce als Add-On-Modul für Experience Manager as a Cloud Service, das vordefinierte Commerce-Kernkomponenten, Authoring-Tools und eine Referenz-Storefront bereitstellt, um Veröffentlichungen zu beschleunigen, die nahtlose Zusammenarbeit von Teams zu ermöglichen und die Conversion Rates zu steigern.
 
-Marken können Experience Manager mit Adobe Commerce, einem Bestandteil von Adobe Experience Cloud, und einer beliebigen Commerce-Engine integrieren. Mit Experience Manager Content and Commerce profitieren Marken von den folgenden Vorteilen:
+Marken können Experience Manager mit Adobe Commerce, das Teil von Adobe Experience Cloud ist, sowie mit jeder beliebigen Commerce-Engine integrieren. Mit Experience Manager Content and Commerce profitieren Marken von den folgenden Vorteilen:
 
 * Schnelleres Skalieren und Entwickeln von Innovationen
 * Personalisieren von Erlebnissen zur Steigerung der Conversion Rates
@@ -42,11 +42,11 @@ Diese Komplexität sorgt für potenzielle Schwachstellen, erhöhte Gesamtbetrieb
 
 ## CIF unterstützt seit 2013 erfolgreich Kunden {#support}
 
-Mit mehr als 200 Kunden hat sich CIF als Bestandteil eines erfolgreichen Content and Commerce-Projekts etabliert. Dies ist für IT und Unternehmen heute und in der Zukunft von Nutzen. Neuere Kundenprojekte beschreiben CIF als &quot;großen Beschleuniger und einen großen Zeitersparnis mit viel Wert&quot;.
+Mit mehr als 200 Kunden hat sich CIF als Bestandteil eines erfolgreichen Content and Commerce-Projekts etabliert. Dies ist für IT und Unternehmen heute und in der Zukunft von Nutzen. Neuere Kundenprojekte beschreiben CIF als „großartigen Beschleuniger und enorme Zeitersparnis von großem Wert“.
 
 ## Vorteile des CIF {#cif-benefits}
 
-CIF bietet vordefinierte Commerce-Kernkomponenten, die den Bedarf an anwenderdefiniertem Code reduzieren und die Markteinführungszeit für Marken verkürzen. Alle Kernkomponenten sind standardmäßig mit der clientseitigen Datenschicht von Adobe integriert, um Kundenprofile wie beispielsweise das einheitliche Profil zu hydrieren. Dieses Profil erfasst detailliert das Verhalten eines Besuchers, das zur Vorhersage und Personalisierung der Journey in Echtzeit verwendet werden kann.
+CIF bietet vordefinierte Commerce-Kernkomponenten, die den Bedarf an anwenderdefiniertem Code reduzieren und die Markteinführungszeit für Marken verkürzen. Alle Kernkomponenten sind gebrauchsfertig in die Client-seitige Datenschicht von Adobe integriert, um Kundenprofile zu erweitern, wie etwas das einheitliche Profil. Dieses Profil erfasst detailliert das Verhalten von Besucherinnen und Besuchern und dient dazu, die Customer Journey in Echtzeit zu prognostizieren und zu personalisieren.
 
 Das CIF-Add-on integriert Produktkontext in Experience Manager und bietet Authoring-Tools wie eine Produktkonsole und Produkt-/Kategorieauswahl, mit denen Marketing-Experten „shoppable“ Erlebnisse in Experience Manager erstellen und bereitstellen können, ohne auf die Hilfe von Entwicklern angewiesen zu sein. Die Vorteile:
 
@@ -79,6 +79,6 @@ CIF unterstützt Kunden mit standardisierten Integrationsmustern, die auf Best P
 
 ## Tour {#journey}
 
-Wenn Sie einer Commerce-Journey folgen, gehen Sie zum nächsten Schritt:
+Wenn Sie einer Commerce-Tour folgen, gehen Sie zum nächsten Schritt:
 
 * Die [AEM-Inhaltsautoren-Tour](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
