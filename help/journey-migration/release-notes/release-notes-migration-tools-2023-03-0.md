@@ -3,9 +3,9 @@ title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 
 description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2022.03.0
 feature: Release Information
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '320'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Das Content Transfer Tool v2.0.16 wurde am 08. März 2022 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt}
 
-* Die Benutzerzuordnung wurde optimiert und in den Schritt zur Inhaltsextraktion integriert. Es ist kein Setup erforderlich und die Benutzerzuordnung erfolgt standardmäßig automatisch, wenn der Benutzer die Inhaltsextraktion startet. Der Benutzer hat bei Bedarf die Möglichkeit, die Benutzerzuordnung zu deaktivieren. Weitere Informationen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=de#user-mapping-detail).
+* Die Benutzerzuordnung wurde optimiert und in den Schritt zur Inhaltsextraktion integriert. Es ist keine Einrichtung erforderlich. Standardmäßig erfolgt die Benutzerzuordnung automatisch, wenn Benutzende die Inhaltsextraktion starten. Benutzende haben die Möglichkeit, bei Bedarf die Benutzerzuordnung zu deaktivieren. Weitere Informationen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=de#user-mapping-detail).
 * Der Vorkopierschritt mit [AzCopy](https://learn.microsoft.com/de-de/azure/storage/common/storage-use-azcopy-v10) wurde in das Content Transfer Tool integriert, was die Extraktion von Inhalten erheblich beschleunigt. Vorkopie wird automatisch konfiguriert und installiert, wenn diese CTT-Version installiert ist. Wenn die Extraktion initiiert wird, wird die Vorkopie automatisch für Migrationssätze ausgeführt, die größer als 200 GB sind. Benutzende haben die Möglichkeit, sie bei Bedarf zu deaktivieren. Weitere Informationen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=de).
 * CTT kann jetzt auf Windows-Servern verwendet werden.
 
