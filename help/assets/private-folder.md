@@ -6,7 +6,7 @@ role: User
 feature: Collaboration
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
 source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '621'
 ht-degree: 100%
 
