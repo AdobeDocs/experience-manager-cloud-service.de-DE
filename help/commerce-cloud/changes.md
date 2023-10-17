@@ -3,15 +3,15 @@ title: Wesentliche Änderungen des CIF-Add-ons (Commerce Integration Framework)
 description: Wesentliche Änderungen des CIF-Add-ons im Vergleich zu alten CIF-Versionen.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Wesentliche Änderungen des CIF-Add-ons{#notable-changes}
 
-Adobe Experience Manager as a Cloud Service bietet eine Vielzahl neuer Funktionen und Möglichkeiten für die Verwaltung Ihrer AEM-Projekte. Weitere Informationen zu diesen Funktionen erhalten Sie über den Link [Änderungen an Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service bietet eine Vielzahl neuer Funktionen und Möglichkeiten für die Verwaltung Ihrer AEM-Projekte. Weitere Informationen zu diesen Funktionen finden Sie unter folgendem Link [Änderungen an Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
 In diesem Dokument werden die wichtigsten Unterschiede zwischen dem Add-on Commerce Integration Framework (CIF) und den alten CIF-Versionen, bekannt als CIF Classic (Quickstart) und CIF Open-Source, hervorgehoben.
 
@@ -63,4 +63,4 @@ AEM rendert Produktkatalog-Erlebnisse direkt mithilfe von AEM-Katalogvorlagen, d
 
 >[!NOTE]
 >
->Weitere Dokumentationen zur Verwendung von CIF mit AEM Managed Service oder AEM On-Premise finden Sie unter [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>Weitere Dokumentationen zur Verwendung von CIF mit AEM Managed Service oder AEM On-Premise finden Sie unter [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html).
