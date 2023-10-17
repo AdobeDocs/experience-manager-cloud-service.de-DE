@@ -3,9 +3,9 @@ title: Inhaltsfragmente – Überlegungen zum Löschen (Assets – Inhaltsfragme
 description: Lesen Sie diese wichtigen Überlegungen, bevor Sie Ihre Richtlinien zum Löschen von Inhaltsfragmenten in AEM definieren. Inhaltsfragmente sind ein leistungsstarkes Tool für die Bereitstellung von Headless-Inhalten. Die Auswirkungen des Löschens müssen sorgfältig berücksichtigt werden.
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
 source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '472'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Beispielsweise wenn Varianten bearbeitet oder Metadaten oder verknüpfte Inhalte
 
 Die zum Bearbeiten oder Aktualisieren eines Fragments benötigten Rechte müssen auf den Knoten, der das Fragment enthält, oder einen entsprechenden übergeordneten Knoten angewendet werden (auf allen Ebenen unter `/content/dam`). Wenn sie einem übergeordneten Knoten zugewiesen sind, werden die Berechtigungen auf alle Knoten in diesem Zweig angewendet.
 
-Beispiel: ein Ordner, der alle Inhaltsfragmente enthält, z. B.:
+Beispiel: Ein Ordner, der alle Inhaltsfragmente enthält, z. B.:
 
 * `/content/dam/contentfragments`
 
@@ -59,9 +59,9 @@ Beispiel: ein Ordner, der alle Inhaltsfragmente enthält, z. B.:
 >
 >Die Berechtigungen können auch auf `/content/dam` festgelegt werden, weil hier alle Inhaltsfragmente gespeichert werden.
 >
->Diese Aktion wendet jedoch dieselben Löschberechtigungen auf *all* auch andere Asset-Typen.
+>Allerdings wird die Löschberechtigung dadurch auch für *alle* anderen Asset-Typen gewährt.
 
-Die Berechtigungsvoraussetzung, die es einem bestimmten Benutzer und/oder einer bestimmten Gruppe gestattet, ein Inhaltsfragment zu bearbeiten/zu aktualisieren, ist:
+Die Berechtigungsvoraussetzungen, die es bestimmten Benutzenden und/oder einer bestimmten Gruppe gestattet, ein Inhaltsfragment zu bearbeiten/zu aktualisieren, sind:
 
 >[!NOTE]
 >
