@@ -3,9 +3,9 @@ title: Konfigurieren der OSGi-Einstellungen für die Vorschauebene
 description: Erfahren Sie, wie Sie mit dem AEM Vorschau-Service vor der Live-Schaltung eine Vorschau von Inhalten anzeigen können.
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Die OSGi-Eigenschaftswerte der Vorschauebene werden von der Veröffentlichungseb
 
 >[!NOTE]
 >
->Weitere Informationen zu den Vorschauumgebungen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>Weitere Informationen zu den Vorschauumgebungen finden Sie im Dokument [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Konfigurieren der OSGi-Einstellungen für die Vorschauebene {#configuring-osgi-settings-for-the-preview-tier}
 
