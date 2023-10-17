@@ -3,9 +3,9 @@ title: Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM
 description: Erfahren Sie mehr über die Konzepte und Methoden der Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmentmodellen.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '687'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur defin
 
 Nachdem Sie diese Option ausgewählt haben, gehen Sie zum Speicherort für Ihr Modell und klicken Sie auf **Erstellen**. Hier können Sie verschiedene wichtige Details eingeben.
 
-Die Option **Modell aktivieren** ist standardmäßig aktiviert. Das bedeutet, dass Ihr Modell zur Verwendung (beim Erstellen von Inhaltsfragmenten) verfügbar ist, sobald Sie es gespeichert haben. Sie können dies bei Bedarf deaktivieren – es gibt auch später Möglichkeiten, ein vorhandenes Modell zu aktivieren (oder zu deaktivieren).
+Die Option **Modell aktivieren** ist standardmäßig aktiviert. Das bedeutet, dass Ihr Modell zur Verwendung verfügbar ist (beim Erstellen von Inhaltsfragmenten), sobald Sie es gespeichert haben. Sie können dies bei Bedarf deaktivieren – es gibt auch später Möglichkeiten, ein vorhandenes Modell zu aktivieren (oder zu deaktivieren).
 
 ![Erstellen von Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
@@ -59,11 +59,11 @@ Wenn Sie ein neues Modell zum ersten Mal öffnen, sehen Sie einen großen leeren
 
 Was ist also zu tun?
 
-Sie können Instanzen der **Datentypen** auf den linken Bereich - Sie definieren bereits Ihr Modell!
+Sie können Instanzen der **Datentypen** in den linken Bereich ziehen – Sie definieren bereits Ihr Modell!
 
 ![Felder definieren](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-Nachdem Sie einen Datentyp hinzugefügt haben, müssen Sie die **Eigenschaften** für dieses Feld. Diese hängen vom verwendeten Typ ab. Beispiel:
+Nachdem Sie einen Datentyp hinzugefügt haben, müssen Sie die **Eigenschaften** für dieses Feld definieren. Diese hängen vom verwendeten Typ ab. Beispiel:
 
 ![Dateneigenschaften](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -73,7 +73,7 @@ Sie können beliebig viele Felder hinzufügen. Beispiel:
 
 ### Ihre Inhaltsautoren {#your-content-authors}
 
-Ihre Inhaltsautoren sehen nicht die tatsächlichen Datentypen und -eigenschaften, die Sie zum Erstellen Ihrer Modelle verwendet haben. Dies bedeutet, dass Sie möglicherweise Hilfe und Informationen dazu bereitstellen müssen, wie bestimmte Felder ausgefüllt werden. Für grundlegende Informationen können Sie die Feldbeschriftung und den Standardwert verwenden. In komplexeren Fällen sollte jedoch eine projektspezifische Dokumentation in Betracht gezogen werden.
+Ihre Inhaltsautorinnen und -autoren sehen nicht die tatsächlichen Datentypen und -eigenschaften, die Sie zum Erstellen Ihrer Modelle verwendet haben. Dies bedeutet, dass Sie möglicherweise Hilfe und Informationen dazu bereitstellen müssen, wie bestimmte Felder ausgefüllt werden. Für grundlegende Informationen können Sie die Feldbeschriftung und den Standardwert verwenden. In komplexeren Fällen sollte jedoch eine projektspezifische Dokumentation in Betracht gezogen werden.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlich
 
 >[!NOTE]
 >
->Wenn ein Autor versucht, ein Inhaltsfragment zu veröffentlichen, für das das Modell noch nicht veröffentlicht wurde, wird dies in einer Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+>Wenn eine Autorin bzw. ein Autor versucht, Inhaltsfragmente zu veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
 Sobald ein Modell veröffentlicht wird, wird es auf der Autoreninstanz in einen SCHREIBGESCHÜTZTEN Modus versetzt und *gesperrt*. Dadurch soll verhindert werden, dass Änderungen zu Fehlern an vorhandenen GraphQL-Schemata und -Abfragen führen, insbesondere in der Veröffentlichungsumgebung. Dies wird in der Konsole durch **Gesperrt** angezeigt.
 
