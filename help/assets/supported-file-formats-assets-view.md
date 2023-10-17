@@ -5,9 +5,9 @@ role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: bc44e98d-446e-41ff-b5b4-9dc324834630
 source-git-commit: 6cb30ffda6c0de04e5cb3d01341b59c9ee75b335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '363'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -122,7 +122,7 @@ Benutzer von [!DNL Adobe Asset Link] können Dateien aus den unterstützten Desk
 
 ## Nächste Schritte {#next-steps}
 
-* Stellen Sie Produkt-Feedback mit der [!UICONTROL Feedback] Option in der Benutzeroberfläche der Assets-Ansicht verfügbar
+* Geben Sie Produkt-Feedback über die Option [!UICONTROL Feedback] in der Benutzeroberfläche der Assets-Ansicht
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
