@@ -4,9 +4,9 @@ description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 20
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '428'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Das Content Transfer Tool 2.0.12 wurde am 19. Juli 2022 veröffentlicht.
 * Benutzende können jetzt durch die Aktivierung der SSL-Protokollierung das Debugging bei SSL-/TLS-Verbindungsproblemen während der Extraktionen vereinfachen.
 * Um Probleme mit der Quellverbindung zu beheben, werden nun Subdomain-Namen in den Protokollen angegeben, wenn die Verbindung zu Azure fehlschlägt.
 * Um Probleme während der Vorkopie zu beheben, werden AzCopy-Protokolle jetzt an die Extraktionslogs angehängt, wenn die Vorkopie fehlschlägt.
-* Um veraltete Ergebnisse der Prüfung der Größe zu vermeiden, können Benutzer erst nach Abschluss einer vorherigen Prüfung der Größe die Funktion &quot;Prüfgröße&quot;erneut ausführen.
+* Um veraltete Größenprüfungsergebnisse zu vermeiden, können Benutzende erst dann eine neue Größenprüfung durchführen, wenn die vorherige abgeschlossen ist.
 
 ### Fehlerbehebungen {#bug-fixes-ctt}
 
@@ -59,5 +59,5 @@ Das Veröffentlichungsdatum für Cloud Acceleration Manager war der 15. Juli 202
 
 ### Neue Funktionen {#what-is-new-cam}
 
-* Cloud Acceleration Manager bietet Benutzenden jetzt die Möglichkeit, das Migrations-Token manuell abzurufen, um eine Aufnahme starten zu können, wenn der automatische Abruf fehlschlägt. Der automatische Abruf kann fehlschlagen, wenn Kunden eine IP-Zulassungsliste eingerichtet haben, die CAM blockiert, oder wenn Benutzende ohne Administratorrechte versuchen, eine Aufnahme zu starten. Siehe [Fehlerbehebung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) für weitere Informationen.
+* Cloud Acceleration Manager bietet Benutzenden jetzt die Möglichkeit, das Migrations-Token manuell abzurufen, um eine Aufnahme starten zu können, wenn der automatische Abruf fehlschlägt. Der automatische Abruf kann fehlschlagen, wenn Kunden eine IP-Zulassungsliste eingerichtet haben, die CAM blockiert, oder wenn Benutzende ohne Administratorrechte versuchen, eine Aufnahme zu starten. Weitere Informationen finden Sie unter [Fehlerbehebung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting).
 * Lange Tabellen auf der Seite „Migrationskomplexität“ können jetzt reduziert werden, um die Verwendung zu vereinfachen.
