@@ -3,9 +3,9 @@ title: Erste Anmeldung bei Screens as a Cloud Service
 description: Auf dieser Seite werden die ersten Schritte mit Screens as a Cloud Service beschrieben.
 exl-id: d3a6aa5d-226b-484d-97ea-0b8312c7a0fd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Nach Unterzeichnung des Vertrags startet Adobe Managed Services (AMS) das Onboar
 
 ## Hinzufügen von Benutzern zu Adobe Admin Console {#admin-console}
 
-Sobald Sie über eine Adobe Identity Management System (IMS)-Organisations-ID verfügen, können Sie auf [Adobe Admin Console](https://adminconsole.adobe.com/) zugreifen. Siehe [Adobe Admin Console-Benutzer](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/users.ug.html) , um mehr über das Hinzufügen von Benutzern zur Admin Console zu erfahren.
+Sobald Sie über eine Adobe Identity Management System (IMS)-Organisations-ID verfügen, können Sie auf [Adobe Admin Console](https://adminconsole.adobe.com/) zugreifen. Weitere Informationen zum Hinzufügen von Benutzerinnen und Benutzern zur Admin Console finden Sie unter [Adobe Admin Console-Benutzer](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/users.ug.html).
 
 >[!NOTE]
 >Die Benutzer haben Zugriff auf das AEM Cloud Service-Produktprofil, damit sie sich über die Adobe ID oder Federated ID bei AEM anmelden können.
