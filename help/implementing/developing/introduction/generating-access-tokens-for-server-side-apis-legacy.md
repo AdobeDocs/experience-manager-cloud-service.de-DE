@@ -1,16 +1,16 @@
 ---
-title: Generieren von Zugriffstoken für serverseitige APIs (alt)
-description: Erfahren Sie, wie Sie die Kommunikation zwischen einem Drittanbieterserver und AEM as a Cloud Service erleichtern können, indem Sie ein sicheres JWT-Token generieren.
+title: Erstellen von Zugriffs-Token für Server-seitige APIs (Legacy)
+description: Erfahren Sie, wie Sie durch Generieren eines sicheren JWT-Tokens die Kommunikation zwischen einem Drittanbieter-Server und AEM as a Cloud Service ermöglichen.
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1359'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
-# Generieren von Zugriffstoken für serverseitige APIs (alt) {#generating-access-tokens-for-server-side-apis-legacy}
+# Erstellen von Zugriffs-Token für Server-seitige APIs (Legacy) {#generating-access-tokens-for-server-side-apis-legacy}
 
 Einige Architekturen müssen AEM as a Cloud Service von einer Programm aufrufen, das auf einem Server außerhalb der AEM-Infrastruktur gehostet wird. Dies könnte eine Mobile App sein, die einen Server aufruft, welcher anschließend API-Anfragen an AEM as a Cloud Service sendet.
 
@@ -23,11 +23,11 @@ Der Server-zu-Server-Fluss wird unten beschrieben, zusammen mit einem vereinfach
 
 ## Der Server-zu-Server-Fluss {#the-server-to-server-flow}
 
-Ein Benutzer mit der Rolle „IMS-Organisationsadministrator“, der auch Mitglied des AEM-Benutzerprofils oder AEM-Administrator-Produktprofils in der AEM-Autoreninstanz ist, kann Anmeldeinformationen für AEM as a Cloud Service erzeugen. Diese Berechtigung kann später von einem Benutzer mit der AEM as a Cloud Service Umgebungsadministratorrolle abgerufen werden und sollte auf dem Server installiert sein und muss sorgfältig als geheimer Schlüssel behandelt werden. Diese Datei im JSON-Format enthält alle Daten, die zur Integration mit einer AEM as a Cloud Service-API erforderlich sind. Die Daten werden zum Erstellen eines signierten JWT-Tokens verwendet, das mit IMS gegen ein IMS-Zugriffs-Token eingetauscht wird. Dieses Zugriffs-Token kann dann als Inhaberauthentifizierungs-Token für Anfragen an AEM as a Cloud Service verwendet werden. Die Anmeldeinformationen laufen standardmäßig nach einem Jahr ab, können jedoch bei Bedarf aktualisiert werden, wie [hier](#refresh-credentials) beschrieben.
+Ein Benutzer mit der Rolle „IMS-Organisationsadministrator“, der auch Mitglied des AEM-Benutzerprofils oder AEM-Administrator-Produktprofils in der AEM-Autoreninstanz ist, kann Anmeldeinformationen für AEM as a Cloud Service erzeugen. Diese Anmeldeinformationen können später von einer Benutzerin oder einem Benutzer mit einer Admin-Rolle für die AEM as a Cloud Service-Umgebung abgerufen werden und sollten auf dem Server installiert sein. Sie müssen zudem sorgfältig als geheimer Schlüssel behandelt werden. Diese Datei im JSON-Format enthält alle Daten, die zur Integration mit einer AEM as a Cloud Service-API erforderlich sind. Die Daten werden zum Erstellen eines signierten JWT-Tokens verwendet, das mit IMS gegen ein IMS-Zugriffs-Token eingetauscht wird. Dieses Zugriffs-Token kann dann als Inhaberauthentifizierungs-Token für Anfragen an AEM as a Cloud Service verwendet werden. Die Anmeldeinformationen laufen standardmäßig nach einem Jahr ab, können jedoch bei Bedarf aktualisiert werden, wie [hier](#refresh-credentials) beschrieben.
 
 Der Server-zu-Server-Fluss umfasst die folgenden Schritte:
 
-* Rufen Sie die Anmeldeinformationen für AEM as a Cloud Service aus der Developer Console ab.
+* Rufen Sie die Anmeldeinformationen für AEM as a Cloud Service aus Developer Console ab.
 * Installieren Sie die Anmeldeinformationen für AEM as a Cloud Service auf einem Nicht-AEM-Server, der Aufrufe an AEM sendet.
 * Generieren eines JWT-Tokens und Eintauschen dieses Tokens gegen ein Zugriffs-Token über die IMS-APIs von Adobe
 * Aufrufen der AEM-API mit dem Zugriffs-Token als Inhaberauthentifizierungs-Token
@@ -35,11 +35,11 @@ Der Server-zu-Server-Fluss umfasst die folgenden Schritte:
 
 ### Abrufen der Anmeldeinformationenn für AEM as a Cloud Service {#fetch-the-aem-as-a-cloud-service-credentials}
 
-Benutzer mit Zugriff auf die AEM as a Cloud Service Entwicklerkonsole finden die Registerkarte Integrationen in der Entwicklerkonsole für eine bestimmte Umgebung sowie zwei Schaltflächen. Ein Benutzer mit der AEM as a Cloud Service Umgebungsadministratorrolle kann auf die **Dienstanmeldeinformationen generieren** -Schaltfläche, um die Dienstanmeldeinformationen zu generieren und anzuzeigen. Die JSON-Datei enthält alle für den Nicht-AEM-Server erforderlichen Informationen, einschließlich Client-ID, Client-Geheimnis, privater Schlüssel, Zertifikat und Konfiguration für die Autoren- und Veröffentlichungsschicht der Umgebung, unabhängig von der Pod-Auswahl.
+Benutzenden mit Zugriff auf die Developer Console von AEM as a Cloud Service werden in der Developer Console die Registerkarte mit Integrationen für eine bestimmte Umgebung sowie zwei Schaltflächen angezeigt. Benutzende mit einer Admin-Rolle für die AEM as a Cloud Service-Umgebung können auf die Schaltfläche **Service-Anmeldeinformationen generieren** klicken, um die JSON-Datei mit den Service-Anmeldeinformationen zu generieren und anzuzeigen. Die JSON-Datei enthält alle für den Nicht-AEM-Server erforderlichen Informationen, darunter Client-ID, Client-Geheimnis, privater Schlüssel, Zertifikat und Konfiguration für die Authoring- und Publishing-Ebene der Umgebung, unabhängig von der Pod-Auswahl.
 
 ![JWT-Generierung](assets/JWTtoken3.png)
 
-Die Ausgabe ähnelt der folgenden:
+Die Ausgabe sieht ähnlich wie die folgende aus:
 
 ```
 {
@@ -61,19 +61,19 @@ Die Ausgabe ähnelt der folgenden:
 }
 ```
 
-Nach der Generierung können die Anmeldeinformationen später abgerufen werden, indem Sie die **Get Service-Anmeldedaten** -Schaltfläche an derselben Stelle.
+Nach der Generierung können die Anmeldeinformationen später abgerufen werden, indem Sie an derselben Stelle auf die Schaltfläche **Service-Anmeldeinformationen abrufen** klicken.
 
 >[!IMPORTANT]
 >
->Ein IMS-Organisationsadministrator - in der Regel der Benutzer, der die Umgebung über Cloud Manager bereitgestellt hat -, der auch Mitglied des AEM-Benutzerprofils oder AEM Administrator-Produktprofils in der AEM-Autoreninstanz sein sollte - greift auf die Developer Console zu. Anschließend müssen sie auf die **Dienstanmeldeinformationen generieren** -Schaltfläche, damit die Anmeldeinformationen von einem Benutzer mit Administratorberechtigungen für die AEM as a Cloud Service Umgebung generiert und später abgerufen werden. Wenn der IMS-Organisationsadministrator diese Aufgabe nicht ausgeführt hat, wird er in einer Meldung darüber informiert, dass er die Rolle &quot;IMS-Organisationsadministrator&quot;benötigt.
+>Ein Mitglied aus der Gruppe der IMS-Organisationsadmins (in der Regel die Person, die die Umgebung über Cloud Manager bereitgestellt hat), das auch Mitglied des AEM-Benutzerprofils oder AEM-Administrator-Produktprofils in der AEM-Authoring-Instanz sein sollte, greift auf die Developer Console zu. Anschließend muss diese Person auf die Schaltfläche **Service-Anmeldeinformationen generieren** klicken, damit die Anmeldeinformationen von Benutzenden mit Administratorberechtigungen für die AEM as a Cloud Service-Umgebung generiert und später abgerufen werden können. Wenn die oder der IMS-Organisationsadmin diese Aufgabe nicht durchgeführt hat, wird in einer Meldung darauf hingewiesen, dass die IMS-Organisationsadmin-Rolle erforderlich ist.
 
-### Installieren Sie die AEM-Dienstanmeldeinformationen auf einem Nicht-AEM-Server {#install-the-aem-service-credentials-on-a-non-aem-server}
+### Installieren der AEM-Service-Anmeldeinformationen auf einem Nicht-AEM-Server {#install-the-aem-service-credentials-on-a-non-aem-server}
 
-Die nicht AEM Anwendung, die AEM aufruft, sollte auf die Anmeldeinformationen von AEM as a Cloud Service zugreifen und sie als geheim behandeln können.
+Die Nicht-AEM-Anwendung, die Aufrufe an AEM sendet, sollte in der Lage sein, auf die Anmeldeinformationen für AEM as a Cloud Service zuzugreifen, und diese geheim behandeln.
 
 ### Generieren und Eintauschen eines JWT-Tokens gegen ein Zugriffs-Token {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-Verwenden Sie die Anmeldeinformationen, um ein JWT-Token in einem Aufruf des IMS-Dienstes der Adobe zu erstellen und ein Zugriffstoken abzurufen, das 24 Stunden lang gültig ist.
+Verwenden Sie die Anmeldeinformationen, um ein JWT-Token in einem Aufruf an den IMS-Service von Adobe zu erstellen und ein Zugriffs-Token abzurufen, das 24 Stunden gültig ist.
 
 Die Anmeldeinformationen für den AEM CS-Service können mithilfe von zu diesem Zweck eingerichteten Client-Bibliotheken gegen ein Zugriffs-Token eingetauscht werden. Die Client-Bibliotheken sind im [öffentlichen GitHub-Repository von Adobe](https://github.com/adobe/aemcs-api-client-lib) verfügbar, das detailliertere Anleitungen und aktuelle Informationen enthält.
 
@@ -97,7 +97,7 @@ exchange(config).then(accessToken => {
 
 Derselbe Austausch kann in jeder Sprache durchgeführt werden, die in der Lage ist, ein signiertes JWT-Token im richtigen Format zu generieren und die IMS Token Exchange-APIs aufzurufen.
 
-Das Zugriffstoken definiert, wann es abläuft, was normalerweise 24 Stunden dauert. Im Git-Repository steht Beispiel-Code für das Verwalten und Aktualisieren eines Zugriffs-Tokens vor dem Ablauf zur Verfügung.
+Das Zugriffs-Token bestimmt, wann es abläuft – in der Regel nach 24 Stunden. Im Git-Repository steht Beispiel-Code für das Verwalten und Aktualisieren eines Zugriffs-Tokens vor dem Ablauf zur Verfügung.
 
 ### Aufrufen der AEM-API {#calling-the-aem-api}
 
@@ -109,15 +109,15 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ### Festlegen der entsprechenden Berechtigungen für den technischen Kontobenutzer in AEM {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}
 
-Nachdem der Benutzer des technischen Kontos in AEM erstellt wurde (tritt nach der ersten Anfrage mit dem entsprechenden Zugriffstoken auf), muss der Benutzer des technischen Kontos über die entsprechenden Berechtigungen verfügen **in** AEM.
+Sobald technische Kontobenutzende in AEM erstellt wurden (dies erfolgt nach der ersten Anfrage mit dem entsprechenden Zugriffs-Token), müssen diese **in** AEM die entsprechenden Berechtigungen erhalten.
 
-Standardmäßig wird im AEM-Autorendienst der Benutzer für das technische Konto der Benutzergruppe Mitarbeiter hinzugefügt, die Lesezugriff AEM.
+Technische Kontobenutzende werden im AEM Author-Service standardmäßig der Benutzergruppe „Mitwirkende“ hinzugefügt und verfügen damit über Leserechte für AEM.
 
 Dieser Benutzer eines technischen Kontos in AEM kann mit den üblichen Methoden weitere Berechtigungen erhalten.
 
 ## Entwicklungsablauf {#developer-flow}
 
-Entwickler sollten Tests mit einer Entwicklungsinstanz ihrer AEM (entweder auf ihrem Laptop ausgeführt oder gehostet) durchführen, die Anforderungen an eine Entwicklungsumgebung AEM as a Cloud Service Entwicklungsumgebung sendet. Da Entwickler jedoch nicht unbedingt über IMS-Administratorrollenberechtigungen verfügen, kann Adobe nicht davon ausgehen, dass sie den im regulären Server-zu-Server-Fluss beschriebenen JWT-Träger generieren können. Daher bietet Adobe einen Mechanismus, mit dem Entwickler direkt ein Zugriffstoken generieren können, das in Anforderungen an eine AEM as a Cloud Service Umgebung verwendet werden kann, auf die sie Zugriff haben.
+Entwicklerinnen und Entwickler sollten Tests mit einer Entwicklungsinstanz ihrer Nicht-AEM-Anwendung durchführen (entweder auf ihrem Laptop oder gehostet), die Anfragen an eine Entwicklungsumgebung von AEM as a Cloud Service sendet. Da Entwicklerinnen und Entwickler jedoch nicht unbedingt über IMS-Admin-Berechtigungen verfügen, kann Adobe nicht davon ausgehen, dass sie das im normalen Server-zu-Server-Fluss beschriebene JWT-Bearer-Token generieren können. Deshalb bietet Adobe Entwicklerinnen und Entwicklern einen Mechanismus, um direkt ein Zugriffs-Token zu generieren, das in Anfragen an AEM as a Cloud Service-Umgebungen verwendet werden kann, auf die sie Zugriff haben.
 
 Informationen zu den erforderlichen Berechtigungen zur Verwendung der Entwicklerkonsole von AEM as a Cloud Service finden Sie in der Dokumentation zu [Entwicklerrichtlinien](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
 
@@ -125,7 +125,7 @@ Informationen zu den erforderlichen Berechtigungen zur Verwendung der Entwickler
 >
 Das lokale Zugriffs-Token für Entwickler ist maximal 24 Stunden lang gültig. Danach muss es mit derselben Methode neu generiert werden.
 
-Entwickler können dieses Token verwenden, um Aufrufe von ihrem Nicht-AEM-Testprogramm an eine AEM as a Cloud Service-Umgebung zu senden. In der Regel verwendet der Entwickler dieses Token mit der AEM Anwendung auf seinem eigenen Laptop. Außerdem ist AEM as a Cloud Service normalerweise keine Produktionsumgebung.
+Entwicklerinnen und Entwickler können dieses Token verwenden, um Aufrufe von ihrem Nicht-AEM-Testprogramm an eine AEM as a Cloud Service-Umgebung zu senden. Normalerweise verwenden sie dieses Token mit der Nicht-AEM-Anwendung auf dem eigenen Laptop. Außerdem ist AEM as a Cloud Service normalerweise keine Produktionsumgebung.
 
 Der Entwicklungsablauf umfasst die folgenden Schritte:
 
@@ -136,7 +136,7 @@ Entwickler können auch API-Aufrufe an ein AEM-Projekt auf ihrem lokalen Compute
 
 ### Generieren des Zugriffs-Tokens {#generating-the-access-token}
 
-Um ein Zugriffstoken zu generieren, klicken Sie in der Developer Console auf **Abrufen des lokalen Entwicklungstokens**.
+Um ein Zugriffs-Token zu generieren, klicken Sie in der Developer Console auf **Lokales Entwicklungs-Token abrufen**.
 
 ### Aufrufen des AEM-Programms mit einem Zugriffs-Token {#call-the-aem-application-with-an-access-token}
 
@@ -144,11 +144,11 @@ Senden Sie die entsprechenden Server-zu-Server-API-Aufrufe vom Nicht-AEM-Program
 
 ## Verlängern der Gültigkeit von Anmeldeinformationen {#refresh-credentials}
 
-Standardmäßig laufen AEM as a Cloud Service Anmeldedaten nach einem Jahr ab. Um die Kontinuität des Service sicherzustellen, haben Entwickler die Möglichkeit, die Gültigkeit der Anmeldeinformationen zu verlängern, sodass sie für ein weiteres Jahr gültig bleiben. Verwendung **Dienstanmeldeinformationen aktualisieren** von **Integrationen** in der Developer Console, wie unten dargestellt.
+Standardmäßig laufen die Anmeldeinformationen in AEM as a Cloud Service nach einem Jahr ab. Um die Kontinuität des Service sicherzustellen, haben Entwicklerinnen und Entwickler die Möglichkeit, die Gültigkeit der Anmeldeinformationen zu verlängern, sodass sie für ein weiteres Jahr gültig bleiben. Verwenden Sie dazu in der Developer Console auf der Registerkarte **Integrationen** die Option **Service-Anmeldeinformationen aktualisieren**, wie unten gezeigt.
 
 ![Aktualisieren von Anmeldeinformationen](assets/credential-refresh.png)
 
-Nach dem Drücken der Schaltfläche wird ein neuer Satz von Anmeldeinformationen generiert. Sie können Ihren geheimen Speicher mit den neuen Anmeldedaten aktualisieren und überprüfen, ob sie wie gewünscht funktionieren.
+Nach dem Klicken auf die Schaltfläche wird ein neuer Satz von Anmeldeinformationen generiert. Sie können Ihren geheimen Speicher mit den neuen Anmeldedaten aktualisieren und überprüfen, ob sie wie gewünscht funktionieren.
 
 >[!NOTE]
 >
@@ -156,11 +156,11 @@ Nachdem Sie auf die Schaltfläche **Service-Anmeldeinformationen aktualisieren**
 
 ## Widerruf der Service-Anmeldeinformationen {#service-credentials-revocation}
 
-Wenn die Anmeldeinformationen widerrufen werden müssen, müssen Sie mithilfe der folgenden Schritte eine Anfrage an den Support senden:
+Wenn die Anmeldeinformationen widerrufen werden müssen, müssen Sie eine Anfrage an den Kunden-Support senden, indem Sie folgende Schritte durchführen:
 
 1. Deaktivieren Sie den technischen Kontobenutzer für die Adobe Admin Console in der Benutzeroberfläche:
-   * Klicken Sie in Cloud Manager auf die Schaltfläche **...** neben Ihrer Umgebung. Durch diese Aktion wird die Seite mit den Produktprofilen geöffnet.
-   * Klicken Sie nun auf die **AEM** Profil, um eine Liste der Benutzer anzuzeigen
+   * Klicken Sie in Cloud Manager auf die Schaltfläche **...** neben Ihrer Umgebung. Dadurch wird die Seite mit den Produktprofilen geöffnet.
+   * Klicken Sie nun auf das Profil für die **AEM-Benutzenden**, um eine Liste der Benutzenden anzuzeigen.
    * Klicken Sie auf die Registerkarte **API-Anmeldeinformationen**, suchen Sie den entsprechenden Benutzer des technischen Kontos und löschen Sie ihn.
 2. Wenden Sie sich an den Kunden-Support und fordern Sie an, dass die Service-Anmeldeinformationen für diese bestimmte Umgebung gelöscht werden.
 3. Schließlich können Sie die Anmeldeinformationen erneut generieren, wie in dieser Dokumentation beschrieben. Stellen Sie außerdem sicher, dass der neu erstellte Benutzer des technischen Kontos über die entsprechenden Berechtigungen verfügt.
