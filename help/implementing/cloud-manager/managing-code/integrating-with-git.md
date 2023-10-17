@@ -1,11 +1,11 @@
 ---
 title: Verwenden von Git mit Cloud Manager
-description: Erfahren Sie, wie Sie die Git-Repositorys von Cloud Manager verwenden und wie Sie Ihr eigenes On-Premise-kundenverwaltetes Git-Repository mit Cloud Manager integrieren.
+description: Erfahren Sie, wie Sie die Git-Repositorys von Cloud Manager verwenden und Ihr eigenes, On-Premise kundenverwaltetes Git-Repository in Cloud Manager integrieren.
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
 source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '316'
-ht-degree: 32%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Sie können das Git-Repository von Cloud Manager vorkonfiguriert verwenden. Sie 
 
 ## Übersicht über die Git-Integration {#git-integration-overview}
 
-In dieser Videoreihe werden verschiedene Anwendungsfälle bei der Integration eines kundenverwalteten Git-Repositorys in Cloud Manager untersucht, darunter:
+In dieser Videoreihe werden verschiedene Anwendungsfälle für die Integration eines kundenverwalteten Git-Repositorys in Cloud Manager untersucht, darunter:
 
 * [Erstsynchronisierung](#initial-sync)
 * [Standard-Verzweigungsstrategie](#branching-strategy)
@@ -29,7 +29,7 @@ Die Videoreihe setzt grundlegende Kenntnisse der Git- und Quell-Code-Verwaltung 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28710/)
 
-Die Schritte und Benennungskonventionen, die in dieser Videoreihe beschrieben werden, stellen einige Best Practices für die Arbeit mit einem kundenverwalteten Git-Repository in Cloud Manager dar. Es wird erwartet, dass die dargestellten Konventionen und Workflows für einzelne Anwendungsfälle angepasst werden.
+Die Schritte und Benennungskonventionen in dieser Videoreihe präsentieren mehrere Best Practices für die Arbeit mit einem kundenverwalteten Git-Repository und Cloud Manager. Es wird erwartet, dass die dargestellten Konventionen und Arbeitsabläufe für einzelne Anwendungsfälle angepasst werden.
 
 ## Erstsynchronisierung {#initial-sync}
 
@@ -45,19 +45,19 @@ In diesem Video erfahren Sie grundlegende Verzweigungsstrategien.
 
 ## Entwicklung von Funktionsverzweigungen {#feature-development}
 
-Verwenden Sie eine Funktionsverzweigung, um Codeänderungen in einem kundenverwalteten Git-Repository zu isolieren und mit dem Git-Repository von Cloud Manager zu synchronisieren, um eine Nicht-Produktions-Pipeline für Codequalität- und Validierungstests zu verwenden.
+Verwenden Sie eine Funktionsverzweigung, um Code-Änderungen in einem kundenverwalteten Git-Repository zu isolieren und mit dem Git-Repository von Cloud Manager zu synchronisieren. So können Sie eine produktionsfremde Pipeline für Code-Qualität- und Validierungstests verwenden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
 
 ## Produktionsbereitstellung {#production-deployment}
 
-Bereiten Sie Code für eine Produktionsversion in einem kundenverwalteten Git-Repository vor und synchronisieren Sie mit dem Git-Repository von Cloud Manager, um es in Staging- und Produktionsumgebungen bereitzustellen.
+Bereiten Sie Code für die Produktionsfreigabe in einem kundenverwalteten Git-Repository vor und synchronisieren Sie mit dem Git-Repository von Cloud Manager, um eine Bereitstellung in Staging- und Produktionsumgebungen vorzunehmen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
 
 ## Synchronisieren von Versions-Tags {#sync-tags}
 
-Synchronisieren Sie Release-Tags aus einem Cloud Manager-Git-Repository in einem kundenverwalteten Git-Repository, um Sichtbarkeit für den Code zu bieten, der in Staging- und Produktionsumgebungen bereitgestellt wurde.
+Synchronisieren Sie Versions-Tags aus einem Cloud Manager-Git-Repository in einem kundenverwalteten Git-Repository, um für Sichtbarkeit des in Staging- und Produktionsumgebungen bereitgestellten Codes zu sorgen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
 
