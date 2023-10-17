@@ -6,9 +6,9 @@ feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
 source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '631'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 83%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-Experience Manager Assets unterstützt die Erfassung, Verwaltung, Vorschau und Bereitstellung von 3D-Assets.
+Experience Manager Assets unterstützt die Aufnahme, Verwaltung, Vorschau und Bereitstellung von 3D-Assets.
 
-Sie können eine Vorschau von 3D-Assets mit den automatisch generierten Miniaturansichten oder dem interaktiven 3D-Viewer anzeigen. Der interaktive 3D-Viewer ist auf der Seite „Asset-Details“ in Experience Manager verfügbar. Der Viewer enthält unter anderem eine Sammlung interaktiver Kamerasteuerungen, mit denen Sie die 3D-Szene drehen, zoomen und schwenken können.
+Sie können eine Vorschau von 3D-Assets mit den automatisch generierten Miniaturansichten oder dem interaktiven 3D-Viewer anzeigen lassen. Der interaktive 3D-Viewer ist auf der Seite „Asset-Details“ in Experience Manager verfügbar. Der Viewer enthält unter anderem eine Reihe von interaktiven Kamerasteuerungen, mit denen Sie die 3D-Szene drehen, zoomen und schwenken können.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Unterstützte Formate für die Vorschau von Miniaturansichten in Experience Manager{#supported-thumbnail-previewing-assets}
+## Unterstützte Formate für die Miniaturvorschau in Experience Manager{#supported-thumbnail-previewing-assets}
 
 Experience Manager generiert standardmäßig Miniaturansichten für die folgenden Dateiformate:
 
@@ -35,7 +35,7 @@ Experience Manager generiert standardmäßig Miniaturansichten für die folgende
 | FBX | Autodesk FBX | application/octet-stream |  |
 | OBJ | WaveFront 3D-Objektdatei | application/x-tgif |  |
 | 3DS | 3D Studio-Modell | application/x-3ds |  |
-| USDz | Universal Scene Description | model/vnd.usdz+zip |  |
+| USDz | Universelle Szenenbeschreibung | model/vnd.usdz+zip |  |
 
 ## Unterstützte Formate für die interaktive 3D-Vorschau in Experience Manager{#supported-3d-previewing-assets}
 
