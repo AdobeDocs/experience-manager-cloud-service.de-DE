@@ -3,7 +3,7 @@ title: Einführung in SPAs und exemplarische Anleitung
 description: In diesem Artikel werden die Konzepte einer SPA vorgestellt und die Nutzung einer einfachen SPA zur Inhaltserstellung erläutert. Außerdem wird gezeigt, wie eine SPA mit dem zugrunde liegenden AEM-SPA-Editor in Beziehung steht.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: Aktivieren eines JSON-Exports für eine Komponente
 description: Komponenten können angepasst werden, um einen JSON-Export ihrer Inhalte basierend auf einem Modeler-Framework zu generieren.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 100%
 

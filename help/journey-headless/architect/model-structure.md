@@ -3,7 +3,7 @@ title: Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM
 description: Erfahren Sie mehr über die Konzepte und Methoden der Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmentmodellen.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 100%
 
