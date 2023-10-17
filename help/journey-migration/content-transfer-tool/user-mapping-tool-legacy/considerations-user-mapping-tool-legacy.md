@@ -5,9 +5,9 @@ exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
 hide: true
 hidefromtoc: true
 source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '593'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
@@ -15,33 +15,33 @@ ht-degree: 12%
 
 >[!INFO]
 >
->Diese Dokumentation bezieht sich auf eine veraltete Version des Tools. Weitere Informationen zur neuesten Version finden Sie unter [Benutzerzuordnung und Hauptmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>Diese Dokumentation bezieht sich auf eine veraltete Version des Tools. Weitere Informationen zur neuesten Version finden Sie unter [Benutzerzuordnung und Prinzipalmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 ## Ausnahmefälle {#exceptional-cases}
 
 Die folgenden spezifischen Fälle sind protokolliert:
 
-1. Wenn der Benutzer keine E-Mail-Adresse in der `profile/email` ihres *jcr* -Knoten, wird der betreffende Benutzer oder die fragliche Gruppe migriert, aber nicht zugeordnet. Diese Regel ist auch dann anwendbar, wenn die E-Mail-Adresse als Benutzername für die Anmeldung verwendet wird.
+1. Wenn eine Benutzerin oder ein Benutzer keine E-Mail-Adresse im Feld `profile/email` des *jcr*-Knotens hat, wird die betreffende Person oder Gruppe migriert, jedoch nicht zugeordnet. Diese Regel gilt auch dann, wenn die E-Mail-Adresse als Benutzername für die Anmeldung verwendet wird.
 
-1. Wenn im Adobe Identity Management System (IMS) keine E-Mail für die verwendete Organisations-ID gefunden wird (oder wenn die IMS-ID nicht abgerufen werden kann), wird der Benutzer oder die Gruppe migriert, aber nicht zugeordnet.
+1. Wenn eine E-Mail im Adobe Identity Management System (IMS) für die verwendete Organisations-ID nicht gefunden wird (oder wenn die IMS-ID nicht abgerufen werden kann), wird die betreffende Person oder Gruppe migriert, aber nicht zugeordnet.
 
-1. Falls die Benutzenden deaktiviert sind, werden sie ebenso behandelt, als wären sie nicht deaktiviert. Er wird wie gewohnt zugeordnet und migriert und bleibt in der Cloud-Instanz deaktiviert.
+1. Falls die Benutzenden deaktiviert sind, werden sie ebenso behandelt, als wären sie nicht deaktiviert. Sie werden wie üblich zugeordnet und migriert, bleiben jedoch in der Cloud-Instanz deaktiviert.
 
-1. Wenn ein Benutzer in der AEM Cloud Service-Zielinstanz mit demselben Benutzernamen (rep:principalName) wie einer der Benutzer in der Quell-AEM-Instanz vorhanden ist, wird der Benutzer oder die Gruppe nicht migriert.
+1. Falls in der AEM Cloud Service-Zielinstanz eine Person mit demselben Benutzernamen (rep:principalName) wie eine oder einer der Benutzenden in der AEM-Quellinstanz existiert, wird die Person oder Gruppe nicht migriert.
 
-1. Wenn ein Benutzer migriert wird, ohne zunächst über die Benutzerzuordnung zugeordnet zu werden, kann er sich auf dem Ziel-Cloud-System nicht mit seiner IMS-ID anmelden. Sie können sich möglicherweise mit der herkömmlichen AEM anmelden, aber dieser Workflow ist normalerweise nicht das, was gewünscht oder erwartet wird.
+1. Wenn Benutzende migriert werden, ohne zunächst über die Benutzerzuordnung zugeordnet zu werden, können sie sich auf dem Cloud-Zielsystem nicht mit ihrer IMS-ID anmelden. Sie können sich gegebenenfalls mit der herkömmlichen AEM-Methode anmelden, jedoch wird dies normalerweise nicht gewünscht oder erwartet.
 
 ## Zusätzliche Überlegungen {#additional-considerations}
 
-* Wenn die Einstellung **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** festgelegt ist, werden bereits übertragene Benutzer in der Cloud Service-Instanz gelöscht. Das gesamte vorhandene Repository wird ebenfalls gelöscht und ein neues Repository erstellt, in das Inhalte aufgenommen werden. Diese Aktion setzt auch alle Einstellungen zurück, einschließlich Berechtigungen für die Ziel-Cloud Service-Instanz, und gilt für einen Administrator, der der **Administratoren** hinzugefügt. Der Admin-Benutzer muss in die **Administratoren** -Gruppe, um das Zugriffstoken für CTT abzurufen.
+* Wenn die Einstellung **Vorhandene Inhalte in der Cloud-Instanz vor der Aufnahme löschen** festgelegt ist, werden bereits übertragene Benutzende in der Cloud Service-Instanz gelöscht. Das gesamte vorhandene Repository wird ebenfalls gelöscht und ein neues Repository erstellt, in das Inhalte aufgenommen werden. Dadurch werden auch alle Einstellungen zurückgesetzt, einschließlich der Berechtigungen für die Cloud Service-Zielinstanz. Dies gilt für Admin-Benutzende, die der Gruppe der **Admins** hinzugefügt wurden. Die Admin-Benutzenden müssen der Gruppe der **Admins** erneut hinzugefügt werden, um das Zugriffs-Token für CTT abzurufen.
 
-* Adobe empfiehlt, dass Sie jeden vorhandenen Cloud Service aus der Ziel-AEM-Instanz entfernen, bevor Sie CTT mit User Mapping ausführen. Diese Aktion ist erforderlich, um Konflikte zwischen der Migration von Benutzern aus der AEM zur Ziel-AEM-Instanz zu vermeiden. Konflikte können während der Aufnahme auftreten, wenn derselbe Benutzer in der Quell-AEM-Instanz und der Ziel-AEM-Instanz vorhanden ist.
+* Adobe empfiehlt, alle vorhandenen Benutzenden aus der AEM Cloud Service-Zielinstanz zu entfernen, bevor CTT mit Benutzerzuordnung ausgeführt wird. Dies ist erforderlich, um beim Migrieren der Benutzenden Konflikte zwischen der AEM-Quellinstanz und AEM-Zielinstanz zu vermeiden. Diese Konflikte treten während der Aufnahme auf, wenn dieselbe Benutzerin oder derselbe Benutzer in der AEM-Quellinstanz und in der AEM-Zielinstanz vorhanden ist.
 
-* Wenn bei der Auffüllung von Inhalten keine Inhalte übertragen werden, weil sie seit der vorherigen Übertragung nicht geändert wurden, werden die mit diesen Inhalten verknüpften Benutzer und Gruppen auch nicht übertragen. Diese Regel gilt auch dann, wenn sich die Benutzer und Gruppen zwischenzeitlich geändert haben. Der Grund dafür ist, dass Benutzer und Gruppen zusammen mit den Inhalten migriert werden, mit denen sie verknüpft sind.
+* Wenn bei der Durchführung von Inhaltsauffüllungen Inhalte nicht übertragen werden, weil sie sich seit der letzten Übertragung nicht geändert haben, werden auch die mit diesen Inhalten verbundenen Benutzenden und Gruppen nicht übertragen. Diese Regel gilt auch dann, wenn sich die Benutzenden und Gruppen zwischenzeitlich geändert haben. Dies liegt daran, dass Benutzende und Gruppen zusammen mit den Inhalten, mit denen sie verknüpft sind, migriert werden.
 
-* Wenn die AEM Cloud Service einen Benutzer mit einem anderen Benutzernamen, aber derselben E-Mail-Adresse wie ein Benutzer in der Quell-AEM-Instanz hat und die Benutzerzuordnung aktiviert ist, wird eine Fehlermeldung protokolliert. Außerdem wird der Quell-AEM-Benutzer nicht übertragen, da nur ein Benutzer mit einer bestimmten E-Mail-Adresse auf dem Zielsystem zulässig ist.
+* Wenn AEM Cloud Service eine Person mit einem anderen Benutzernamen, aber derselben E-Mail-Adresse wie eine Benutzerin oder ein Benutzer in der AEM-Quellinstanz aufweist und die Benutzerzuordnung aktiviert ist, wird eine Fehlermeldung protokolliert. Außerdem wird die AEM-Quellbenutzerin oder der AEM-Quellbenutzer nicht übertragen, da nur eine Benutzerin oder ein Benutzer mit einer bestimmten E-Mail-Adresse auf dem Zielsystem zulässig ist.
 
-* Wenn zwei Benutzer in der Quell-AEM-Instanz dieselbe E-Mail-Adresse haben und die Benutzerzuordnung aktiviert ist, wird eine Fehlermeldung protokolliert. Außerdem wird einer der Quell-AEM-Benutzer übertragen, da nur ein Benutzer mit einer bestimmten E-Mail-Adresse auf dem Zielsystem zulässig ist.
+* Wenn zwei Benutzende in der AEM-Quellinstanz dieselbe E-Mail-Adresse haben und die Benutzerzuordnung aktiviert ist, wird eine Fehlermeldung protokolliert. Außerdem wird eine oder einer der AEM-Quellbenutzenden übertragen, da nur eine Person mit einer bestimmten E-Mail-Adresse auf dem Zielsystem zulässig ist.
 
 ### Wie geht es weiter {#whats-next}
 
