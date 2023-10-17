@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über verschiedene Berechtigungen und Überlegung
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 source-git-commit: 526520a8d9d217d0861a7283b10f7b89dffaf9d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '841'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Wenn Sie IMS für die Gruppenmitgliedschaft verwenden, fügen Sie die entspreche
 
 Es ist ratsam, die Berechtigungen einer vorkonfigurierten Gruppe nicht direkt zu ändern. Stattdessen können Sie auch Ihre eigene(n) Gruppe(n) erstellen, die nach den Berechtigungen der Gruppe **DAM-Benutzer** modelliert sind und den Zugriff auf verschiedene **Ordner** innerhalb von AEM Assets weiter einschränken.
 
-Für detailliertere Berechtigungen verwenden Sie die **Berechtigungen** Konsole in AEM und Pfad aktualisieren von `/content/dam` zu einem spezifischeren Pfad, d. h. `/content/dam/mycontentfragments`.
+Um detailliertere Berechtigungen zu ermöglichen, verwenden Sie die Konsole **Berechtigungen** in AEM und ändern Sie den Pfad von `/content/dam` in einen spezifischeren Pfad, z. B. `/content/dam/mycontentfragments`.
 
 Es kann wünschenswert sein, dieser Benutzergruppe Berechtigungen zum Erstellen und Bearbeiten von Inhaltsfragmenten zu erteilen, jedoch nicht zum Löschen. Informationen zum Überprüfen und Zuweisen von Berechtigungen für die Bearbeitung, aber nicht zum Löschen finden Sie unter [Inhaltsfragmente – Überlegungen zum Löschen](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
