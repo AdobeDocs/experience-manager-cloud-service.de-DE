@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
 source-git-commit: 393ec79e820632e879a377e697ecd09f4571c0b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '854'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 71%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 Ein Benutzer mit Administratorzugriff in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] installiert den erweiterten Connector. Überprüfen Sie vor der Installation die Plattformunterstützung und andere [Voraussetzungen für den Connector](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >
->Seit Juni 2022 bietet Adobe eine neue native Integration für die Verbindung von Workfront mit Adobe Experience Manager Assets as a Cloud Service. Diese Integration ist zur erforderlichen Methode für die Verbindung dieser beiden Lösungen geworden. Jede künftige neue Implementierung des erweiterten Connectors (1.9.8 und höher) zur Verbindung von Workfront mit AEM Assets as a Cloud Service wird blockiert. Weitere Informationen zum Einrichten dieser Integration finden Sie unter [Konfigurieren der as a Cloud Service Integration von Experience Manager Assets](workfront-connector-configure.md).
+>Seit Juni 2022 bietet Adobe eine neue native Integration für die Verbindung von Workfront mit Adobe Experience Manager Assets as a Cloud Service. Diese Integration ist zu einer erforderlichen Methode geworden, um diese beiden Lösungen miteinander zu verbinden. Jede künftige neue Implementierung des erweiterten Connectors (1.9.8 und höher) zur Verbindung von Workfront mit AEM Assets as a Cloud Service wird blockiert. Weitere Informationen zum Einrichten dieser Integration finden Sie unter [Konfigurieren der Integration von Experience Manager Assets as a Cloud Service](workfront-connector-configure.md).
 
 >[!IMPORTANT]
 >
@@ -36,26 +36,26 @@ Ein Benutzer mit Administratorzugriff in [!DNL Adobe Experience Manager] as a [!
 
 Führen Sie vor der Installation des Connectors die folgenden Vorinstallationsschritte aus:
 
-1. Wenn Ihr AEM as a Cloud Service Programm erweiterte Netzwerke konfiguriert und IP-Zulassungsauflistung aktiviert hat, müssen Sie die Workfront-IPs dieser Zulassungsliste hinzufügen, damit Ereignisabos und verschiedene API-Aufrufe an AEM weitergeleitet werden können.
+1. Wenn für Ihr AEM as a Cloud Service-Programm erweiterte Netzwerkfunktionen konfiguriert sind und die IP-Zulassungsauflistung aktiviert ist, müssen Sie die Workfront-IPs dieser Zulassungsliste hinzufügen, damit Ereignisabonnements und verschiedene API-Aufrufe an AEM weitergeleitet werden können.
 
-   * [Workfront Cluster-IPs](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=en#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). Für weitere Informationen zum IP-Cluster in [!DNL Workfront] navigieren Sie zu **[!UICONTROL Einrichtung]** > **[!UICONTROL System]** > **[!UICONTROL Kundeninformationen]**.
+   * [Workfront Cluster-IPs](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=de#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). Für Details zum IP-Cluster in [!DNL Workfront] navigieren Sie zu **[!UICONTROL Einrichtung]** > **[!UICONTROL System]** > **[!UICONTROL Kundeninformationen]**.
 
-   * [Workfront Event Subscription APIs](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html)
+   * [Workfront Ereignisabonnement-API-IPs](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html?lang=de)
 
    >[!IMPORTANT]
    >
-   >* Wenn Sie für Ihr Programm erweitertes Netzwerk konfiguriert haben und IP-Zulassungsauflistung verwenden, müssen Sie aufgrund einer Beschränkung mit der erweiterten Workfront Connector-Architektur auch die IP-Ausgangs-IP zur Zulassungsliste in Cloud Manager hinzufügen.
+   >* Wenn Sie für Ihr Programm erweiterte Netzwerkfunktionen konfiguriert haben und die IP-Zulassungsauflistung verwenden, müssen Sie aufgrund einer Beschränkung mit der erweiterten Workfront Connector-Architektur auch die Ausgangs-IP des Programms zur Zulassungsliste in Cloud Manager hinzufügen.
    >
    >* p{PROGRAM_ID}.external.adobeaemcloud.com
    >
-   >* Um die IP-Adresse Ihres Programms zu finden, öffnen Sie ein Terminal-Fenster und führen Sie einen Befehl aus, z. B.:
+   >* Um die IP-Adresse Ihres Programms zu finden, öffnen Sie ein Terminal-Fenster und führen Sie einen Befehl aus wie z. B.:
    >
    >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
    >
    >    ```
 
-1. Stellen Sie sicher, dass die folgenden Überlagerungen nicht in [!DNL Experience Manager] Repository. Wenn Sie bereits vorhandene Überlagerungen auf diesen Pfaden haben, müssen Sie entweder die Überlagerungen entfernen oder die Unterschiede zwischen den beiden zusammenführen:
+1. Stellen Sie sicher, dass die folgenden Überlagerungen nicht im [!DNL Experience Manager]-Repository vorhanden sind. Wenn Sie bereits vorhandene Überlagerungen auf diesen Pfaden haben, müssen Sie entweder die Überlagerungen entfernen oder das Delta der Änderungen zwischen den beiden Pfaden zusammenführen:
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
    * `/apps/dam/gui/coral/components/admin/folderschemaforms/formbuilder`
