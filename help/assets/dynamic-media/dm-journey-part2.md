@@ -12,9 +12,9 @@ hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2872'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Dynamic Media verfügt über zahlreiche Bildverarbeitungsparameter, mit denen Si
 
 Versuchen Sie jetzt, dem Bild der Uhr einen Rotationsparameter hinzuzufügen. Geben Sie am Ende des URL-Pfads, unmittelbar nach `wid=1000`, `&rotate=90` ein, und drücken Sie die **[!UICONTROL Eingabetaste]**. [Jetzt ausprobieren](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target="_blank"}.
 
-Die Uhr ist immer noch leicht nach links geneigt. Ändern Sie den Drehwert von `90` nach `92`und drücken Sie dann die **[!UICONTROL Eingabetaste]**. [Probieren Sie es jetzt aus](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9).{target="_blank"}.
+Die Uhr ist immer noch leicht nach links geneigt. Ändern Sie den Drehwert von `90` nach `92`und drücken Sie dann die **[!UICONTROL Eingabetaste]**. [Probieren Sie es jetzt aus](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9).{target="_blank"}
 
 Auch hier wird in dem Moment, in dem Sie die **[!UICONTROL Eingabetaste]** drücken, fast augenblicklich eine neue Ausgabedarstellung der Uhr erzeugt. Sie können die Leistung, die Sie erhalten, nachvollziehen, wenn Sie verstehen, dass Dynamic Media an einem arbeitsreichen Wochenende oder an einem großen Feiertag mehr als 800.000 Bildanfragen _pro Sekunde_ liefern kann.
 
@@ -141,7 +141,7 @@ Wenn Sie sich das Bild der Uhr noch einmal ansehen, können Sie sehen, dass es e
 ![Statische und dynamische Bildvorgaben](/help/assets/dynamic-media/assets/dm-image-presets.png)
 _Statische und dynamische Bildvorgaben. Das Bild der Uhr wurde mit der `PDP-page`-Bildvorgabe gerendert._
 
-Aber was ist, wenn Sie ein Bild auf Ihrer Website ändern müssen? Angenommen, Sie haben einige Tests durchgeführt und festgestellt, dass das Bild von 120 x 120 (das `Cart` Bildvorgabe) nicht empfangen werden, wie Sie gedacht haben. Sie müssen das Bild vergrößern, indem Sie die Breite und die Höhe auf 175 Pixel erhöhen. Traditionell müssten Sie in Adobe Photoshop gehen und all diese Warenkorbbilder neu erstellen. Mit Dynamic Media bearbeiten Sie jedoch einfach die Bildvorgabe, indem Sie die Werte für Breite und Höhe auf 175 ändern und die Vorgabe speichern, wie im folgenden Beispiel gezeigt.
+Aber was ist, wenn Sie ein Bild auf Ihrer Website ändern müssen? Angenommen, Sie haben einige Tests durchgeführt und festgestellt, dass Sie das Bild von 120 x 120 (die `Cart`-Bildvorgabe) nicht so erhalten, wie Sie dachten. Sie müssen das Bild vergrößern, indem Sie die Breite und die Höhe auf 175 Pixel erhöhen. Traditionell müssten Sie in Adobe Photoshop gehen und all diese Warenkorbbilder neu erstellen. Mit Dynamic Media bearbeiten Sie jedoch einfach die Bildvorgabe, indem Sie die Werte für Breite und Höhe auf 175 ändern und die Vorgabe speichern, wie im folgenden Beispiel gezeigt.
 
 ![Bearbeiten einer Bildvorgabe](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
 _Bearbeiten der Breite und Höhe des `Cart` Bildvorgabe._
@@ -193,13 +193,13 @@ Mit der einzelnen URL können Sie das Bildset und den Viewer verwenden, wo Sie s
 
 Der Flyout-Viewer ist ein standardmäßiger, vorkonfigurierter Viewer, dessen Eigenschaften Sie bearbeiten können. Sie können aber auch, genau wie bei der Erstellung einer Bildvorlage, einen eigenen, benutzerdefinierten Viewer erstellen.
 
-Angenommen, Ihr Verkaufs- und Marketingteam mag den Flyout-Viewer nicht. Sie mögen die Zoom-Funktion, möchten aber, dass Kunden den Zoom-Effekt direkt über den Schuhen sehen. In diesem Fall wenden Sie einfach den Viewer InlineZoom auf das Bildset an und kopieren und fügen die URL in Ihren Browser ein, um zu sehen, wie es sich verhält. [Jetzt ausprobieren](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}.
+Angenommen, Ihrem Verkaufs- und Marketing-Team gefällt der Flyout-Viewer nicht. Sie mögen die Zoom-Funktion, möchten aber, dass Kunden den Zoom-Effekt direkt über den Schuhen sehen. In diesem Fall wenden Sie einfach den Viewer InlineZoom auf das Bildset an und kopieren und fügen die URL in Ihren Browser ein, um zu sehen, wie es sich verhält. [Jetzt ausprobieren](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}.
 
 Wenn Sie den Mauszeiger über den Schuh bewegen, zoomen Sie in das Bild ein, und Sie können mehr Details sehen, wenn Sie den Mauszeiger hin und her bewegen. Der Grund dafür ist einfach die Größe des Bildes, das ursprünglich in Dynamic Media hochgeladen wurde.
 
 Wenn man über sein Leben als Verbraucher nachdenkt, oder wenn man in seiner täglichen Rolle arbeitet, und wenn man auf verschiedene Websites geht, sieht man Dinge wie diese. Denken Sie darüber nach, wie das gemacht wird und wie Sie die Leistung von Dynamic Media in Ihrer eigenen Arbeit und auf der Website Ihres Unternehmens nutzen können.
 
-Sie lesen nur über Bildsets und Viewer. Sehen wir uns einige andere Viewer an und probieren sie für einzelne Assets aus. Um den Viewer zurückzusetzen, klicken Sie auf die Schaltfläche **[!UICONTROL Aktualisieren]** in der linken unteren Ecke.
+Sie haben sich gerade über Bildsätze und Viewer informiert. Sehen wir uns einige andere Viewer an und probieren sie für einzelne Assets aus. Um den Viewer zurückzusetzen, klicken Sie auf die Schaltfläche **[!UICONTROL Aktualisieren]** in der linken unteren Ecke.
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
@@ -208,7 +208,7 @@ Sie lesen nur über Bildsets und Viewer. Sehen wir uns einige andere Viewer an u
 
 ## Optional – Weitere Informationen
 
-Wenn Sie mehr darüber erfahren möchten, was Sie gerade lesen, verwenden Sie die unten stehenden Materialien, um Konzepte genauer zu untersuchen. Ansonsten ist Ihre Dynamic Media-Tour abgeschlossen!
+Wenn Sie mehr darüber erfahren möchten, was Sie gerade gelesen haben, nutzen Sie die unten stehenden Materialien, um Konzepte genauer zu erkunden. Ansonsten ist Ihre Dynamic Media-Tour abgeschlossen!
 
 _Dynamic Media-Hilfethemen_
 
