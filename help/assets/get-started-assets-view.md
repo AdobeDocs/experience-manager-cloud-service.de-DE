@@ -4,13 +4,13 @@ description: Wie Sie auf  [!DNL Assets View] zugreifen können, wie Sie sich anm
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
 source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# Erste Schritte mit der Asset-Ansicht {#assets-view-get-started}
+# Erste Schritte mit der Assets-Ansicht {#assets-view-get-started}
 
 <!-- TBD: Make links for these steps. -->
 
@@ -20,14 +20,14 @@ Die Verwaltung digitaler Assets mit [!DNL Assets View] erfordert nur drei einfac
 * **Schritt 2**: [Durchsuchen](/help/assets/search-assets-view.md) und [Herunterladen](/help/assets/manage-organize-assets-view.md#download) von Assets.
 * **Schritt 3**: [Verwalten und Organisieren](/help/assets/manage-organize-assets-view.md) der Assets.
 
-Um [!DNL Assets View] zu verwenden, melden Sie sich unter [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets) an. Wählen Sie beim Anmelden `Company or School Account` aus. Wenden Sie sich an den Administrator Ihres Unternehmens, um Zugriff zu erhalten.
+Um [!DNL Assets View] zu verwenden, melden Sie sich unter [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets) an. Wählen Sie beim Anmelden `Company or School Account` aus. Wenden Sie sich an die Admins Ihrer Organisation, um Zugriff zu erhalten.
 
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
 
-## Asset-Ansicht aufrufen {#access-assets-view}
+## Zugriff auf die Assets-Ansicht {#access-assets-view}
 
-Siehe [Zugriff auf die Asset-Ansicht](/help/assets/assets-view-introduction.md#how-to-access-assets-view) für detaillierte Anweisungen zum Zugriff auf die Asset-Ansicht.
+Siehe [Zugriff auf die Asset-Ansicht](/help/assets/assets-view-introduction.md#how-to-access-assets-view) für detaillierte Anweisungen dazu, wie auf die Assets-Ansicht zugegriffen werden kann.
 
 ## Konfigurieren von [!DNL Assets View] {#configuration}
 
@@ -55,9 +55,9 @@ Nachfolgend finden Sie die verschiedenen DAM-Aufgaben (Digital Asset Management)
 
 ## Nächste Schritte {#next-steps}
 
-* [Video zu den ersten Schritten mit der Asset-Ansicht ansehen](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=de)
+* [Sehen Sie sich ein Video zu den ersten Schritten mit der Assets-Ansicht an](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=de)
 
-* Stellen Sie Produkt-Feedback mit der [!UICONTROL Feedback] Option in der Benutzeroberfläche &quot;Assets View&quot;verfügbar
+* Geben Sie Produkt-Feedback über die Option [!UICONTROL Feedback] in der Benutzeroberfläche der Assets-Ansicht
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
