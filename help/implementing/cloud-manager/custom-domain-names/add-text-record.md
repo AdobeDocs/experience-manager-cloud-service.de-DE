@@ -3,9 +3,9 @@ title: Hinzufügen eines TXT-Eintrags
 description: Erfahren Sie, wie Sie einen TXT-Eintrag hinzufügen, um einen benutzerdefinierten Domain-Namen in Cloud Manager hinzuzufügen.
 exl-id: d441de29-af41-4d3e-9155-531af9702841
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '329'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Wenn Sie die Domain-Überprüfung starten, erhalten Sie von Cloud Manager den Na
 1. Melden Sie sich bei Ihrem Domain-Host an und wechseln Sie zum Abschnitt mit den DNS-Einträgen.
 1. Fügen Sie `_aemverification.[yourdomainname]` als **Namen** hinzu und fügen Sie den TXT-Wert genau so hinzu, wie er angezeigt wird.
 
-Siehe Beispiele in dieser Tabelle.
+Siehe die Beispiele in dieser Tabelle.
 
 | Domain | Name | TXT-Wert |
 |--- |--- |---|
