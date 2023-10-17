@@ -3,9 +3,9 @@ title: Wie werden Suchfilter für den Posteingang konfiguriert?
 description: Erfahren Sie, wie Sie Suchfilter für Elemente im Posteingang konfigurieren.
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1000'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Die Konfigurationsänderungen werden beim Öffnen der Seite „Filter“ überno
 
 >[!NOTE]
 >
->In diesem Artikel werden die neuesten Optionen der Benutzeroberfläche aufgeführt. Die Optionsnamen werden in der kommenden Version auf der Benutzeroberfläche aktualisiert.
+>In diesem Artikel werden die neuesten Optionen der Benutzeroberfläche aufgeführt. Die Optionsnamen werden mit der kommenden Version in der Benutzeroberfläche aktualisiert.
 
 ## Konfigurieren der Texteigenschaft {#text-predicate}
 
