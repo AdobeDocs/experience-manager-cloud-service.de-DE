@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '872'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -15,16 +15,16 @@ ht-degree: 91%
 
 >[!TIP]
 >
->Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , der durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe AEM leistungsstarken Übersetzungstools geführt wird, ideal für Benutzer ohne AEM oder Übersetzungs-Erlebnis.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, durchlaufen Sie unsere [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine Erfahrung mit AEM oder Übersetzungen haben.
 
 ## Allgemein {#general}
 
 Das Erstellen bzw. Erweitern einer globalen Web-Präsenz kann ein komplexer Prozess sein, aber mit Voraussicht und Planung kann AEM Ihre Bemühungen vereinfachen und Ihre globalen Unternehmensziele unterstützen.
 
 * **Planen Sie die globale Expansion**, bevor Sie Ihre erste Website implementieren. Es ist für gewöhnlich schwieriger, eine vorhandene Website für globale Abdeckung anzupassen, wenn die Website kurzfristig implementiert wurde, als wenn Sie von Anfang an auf eine globale Expansion hin planen:
-   * Prüfen Sie den aktuellen Status der Lokalisierungsreife Ihres Unternehmens. Stellen Sie fest, ob Sie über die für eine globale Expansion notwendigen **Tools**, **Prozesse** und **Ressourcen** verfügen.
+   * Bewerten Sie den aktuellen Stand der Lokalisierungsreife Ihres Unternehmens. Stellen Sie fest, ob Sie über die für eine globale Expansion notwendigen **Tools**, **Prozesse** und **Ressourcen** verfügen.
    * Beachten Sie **lokal unterschiedliche Rechtsvorschriften** und **regionale sprachliche Präferenzen**. Entwerfen Sie flexible Inhaltsstrukturen und -prozesse, die für eine in ständigem Wandel befindliche globale Geschäftsumgebung geeignet sind.
-* Wählen Sie ein **Governance**-Modell, das die globale Geschäftstätigkeit unterstützt, und verwenden Sie AEM-Mechanismen (z. B. MSM und Benutzerberechtigungen), um das gewählte Modell durchzusetzen. Ermitteln Sie beispielsweise, ob Inhalte zentral verfasst und in Regionen/Länder &quot;verschoben&quot;oder &quot;abgerufen&quot;werden. Legen Sie fest, welche Inhalte in Regionen entsperrt und geändert werden können. Legen Sie fest, wer für das Initiieren und Verwalten von Übersetzungen zuständig ist.
+* Wählen Sie ein **Governance**-Modell, das die globale Geschäftstätigkeit unterstützt, und verwenden Sie AEM-Mechanismen (z. B. MSM und Benutzerberechtigungen), um das gewählte Modell durchzusetzen. Legen Sie beispielsweise fest, ob Inhalte zentral verfasst und an Regionen/Länder verteilt oder von ihnen abgerufen werden. Legen Sie fest, welche Inhalte in Regionen entsperrt und geändert werden können. Legen Sie fest, wer für das Initiieren und Verwalten von Übersetzungen zuständig ist.
 * Falls die Ressourcensituation es erlaubt, sollten Übersetzungsaktivitäten von einem zentralen Team verwaltet werden, das Fachwissen hinsichtlich der nötigen Tools, Prozesse und Lieferantenbeziehungen entwickeln kann.
 * **Planen** Sie Ihre globale Struktur und Ihre Prozesse, **erstellen Sie Prototypen** davon und **testen** Sie sie, um sicherzustellen, dass sie Ihr Unternehmen unterstützen und dass Sie über die notwendige Unterstützung der Stakeholder in den Regionen verfügen.
 
@@ -32,7 +32,7 @@ Das Erstellen bzw. Erweitern einer globalen Web-Präsenz kann ein komplexer Proz
 
 * Beginnen Sie den Entwurf der Site-Struktur mit der Untersuchung Ihrer Inhalte und stellen Sie fest, wo und in welcher Sprache Inhalte verfasst werden. Dieser Ort muss die höchste Ebene Ihrer Website darstellen.
 * Bewährt und empfohlen ist eine **sprachbasierte Struktur** mit höchstens drei Ebenen zwischen den Autorenaktivitäten auf höchster Ebene und den landesspezifischen Websites.
-* Verwenden Sie eine Sprache/Land-Site-Namenskonvention, die folgt **[W3C-Standards](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**.
+* Verwenden Sie für sprachen- bzw. länderspezifische Websites eine Namenskonvention, die den **[W3C-Standards](/help/sites-cloud/authoring/fundamentals/accessible-content.md)** entspricht.
 * Legen Sie fest, wie Inhalte nach Regionen und Ländern verteilt werden. Berücksichtigen Sie Länder, in denen dieselbe Sprache gesprochen wird. Es wird empfohlen, Sprachstämme zu erstellen, eine Ebene nicht aktivierter Seiten, auf denen übersetzte Inhalte überprüft und geändert und dann an eine länderspezifische Website mit der jeweiligen Sprache verteilt oder von ihr abgerufen werden können.
 * Zum Erstellen von Sprachstämmen gibt es zwei Ansätze, einen mit Sprachkopien und einen mit MSM-/Live Copies.
    * Der Ansatz mit den Sprachkopien wird vom standardmäßigen Übersetzungsintegrations-Framework von AEM verwendet und stellt daher die einfachste Methode für den Anfang dar. Das Framework bietet eine Benutzeroberfläche, die es zunächst einfach macht, inhaltliche Änderungen vom Stamm der Hauptsprache (z. B. Englisch) an Sprachstämme weiterzugeben und zu übersetzen. Mit dem Wachstum des Projekts wird die Workflow-Automatisierung jedoch immer notwendiger für die Verwaltung der Übersetzung der steigenden Anzahl von Seiten und/oder Sprachen.
