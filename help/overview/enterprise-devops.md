@@ -1,20 +1,20 @@
 ---
 title: DevOp-Strategien für Unternehmen
-description: Erfahren Sie mehr über die Prozesse, Methoden und Kommunikation, die zur Erleichterung der Bereitstellung und Vereinfachung der Zusammenarbeit erforderlich sind.
+description: Erfahren Sie mehr über die Prozesse, Methoden und Kommunikation, die zur Vereinfachung von Bereitstellung und Zusammenarbeit nötig sind.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
 source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1009'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
 # DevOp-Strategien für Unternehmen{#enterprise-devops}
 
-DevOps umfasst die Prozesse, Methoden und Kommunikation, die erforderlich sind, um:
+DevOp-Strategien umfassen die notwendigen Prozesse, Methoden und Kommunikation für Folgendes:
 
 * Erleichterung der Bereitstellung der Software über die verschiedenen Umgebungen hinweg;
-* Vereinfachen Sie die Zusammenarbeit zwischen den Entwicklungs-, Test- und Bereitstellungsteams.
+* Vereinfachung der Zusammenarbeit zwischen der Entwicklungs-, Test- und Bereitstellungs-Teams.
 
 DevOp-Strategien sollen unter anderem zur Vermeidung folgender Probleme beitragen:
 
@@ -39,16 +39,16 @@ Adobe Experience Manager (AEM) as a Cloud Service besteht gewöhnlich aus mehr
 
 ### Entwicklung {#development}
 
-Die Entwickler sind für die Entwicklung und Anpassung des vorgeschlagenen Projekts (Website, Mobile Apps, DAM-Implementierung usw.) mit allen erforderlichen Funktionen verantwortlich. Sie:
+Die Entwicklenden sind für die Entwicklung und Anpassung des vorgeschlagenen Projekts mit sämtlichen benötigten Funktionen verantwortlich (z. B. Website, Mobile Apps, DAM-Implementierung). Sie:
 
 * entwickeln und passen die notwendigen Elemente an, beispielsweise Vorlagen, Komponenten, Arbeitsabläufe, Anwendungen;
 * setzen das Design um;
-* entwickeln die erforderlichen Dienste und Skripte, damit Sie die erforderlichen Funktionen implementieren können.
+* entwickeln die zum Implementieren der erforderlichen Funktionen nötigen Dienste und Skripte
 
-Die Konfiguration der [development](/help/implementing/developing/introduction/development-guidelines.md) -Umgebung kann von verschiedenen Faktoren abhängen, in der Regel besteht sie jedoch aus:
+Die Konfiguration der [Entwicklungsumgebung](/help/implementing/developing/introduction/development-guidelines.md) kann von verschiedenen Faktoren abhängen, meist besteht sie jedoch aus:
 
-* Ein integriertes Entwicklungssystem mit Versionskontrolle zur Bereitstellung einer integrierten Codebasis. Diese integrierte Codebasis wird verwendet, um Code aus den einzelnen Entwicklungsumgebungen zusammenzuführen und zu konsolidieren, die von den einzelnen Entwicklern verwendet werden.
-* eine persönliche Umgebung für jeden Entwickler, für gewöhnlich auf einem lokalen Rechner. In angemessenen Abständen wird der Code mit dem Versionskontrollsystem synchronisiert
+* einem integrierten Entwicklungssystem mit Versionskontrolle, um eine integrierte Code-Basis zur Verfügung zu stellen. Diese integrierte Code-Basis dient der Zusammenführung und Konsolidierung von Code aus den einzelnen Entwicklungsumgebungen, die von den einzelnen Entwicklerinnen und Entwicklern verwendet werden.
+* eine persönliche Umgebung für die einzelnen Entwicklenden, meist auf deren lokalem Rechner. In geeigneten Abständen wird der Code mit dem Versionskontrollsystem synchronisiert
 
 Je nach Größe Ihres Systems kann die Entwicklungsumgebung sowohl über Autoren- als auch Veröffentlichungsinstanzen verfügen.
 
@@ -58,26 +58,26 @@ Diese Umgebung wird vom Qualitätssicherungs-Team zur umfassenden Prüfung des n
 
 ### Staging   {#staging}
 
-Die Staging-Umgebung sollte ein Spiegel der Produktionsumgebung sein - Konfiguration, Code und Inhalt:
+Die Staging-Umgebung sollte ein Spiegelbild der Produktionsumgebung sein – Konfiguration, Code und Inhalte:
 
-* Sie wird zum Testen von Skripten verwendet, die zur Umsetzung der eigentlichen Bereitstellung genutzt werden.
-* Sie kann für endgültige Tests (Design, Funktionalität und Schnittstellen) vor der Bereitstellung in den Produktionsumgebungen verwendet werden.
+* Sie wird zum Testen von Skripten genutzt, die zur Umsetzung der eigentlichen Bereitstellung verwendet werden.
+* Sie kann für abschließende Tests (Design, Funktionalität und Schnittstellen) vor der Bereitstellung für die Produktionsumgebungen verwendet werden.
 * Obwohl es nicht immer möglich ist, die Staging-Umgebung völlig identisch mit der Produktionsumgebung zu gestalten, sollten die beiden so ähnlich wie möglich sein, um Leistungs- und Belastungstests zu ermöglichen.
 
 ### Produktion - Autoren- und Veröffentlichungsumgebung   {#production-author-and-publish}
 
-Die Produktionsumgebung besteht aus den Umgebungen, in denen [Autoren- und Veröffentlichungsinstanz](/help/sites-cloud/authoring/getting-started/concepts.md) Ihre Implementierung.
+Die Produktionsumgebung besteht aus den für das tatsächliche [Verfassen und Veröffentlichen](/help/sites-cloud/authoring/getting-started/concepts.md) der Implementierung notwendigen Umgebungen.
 
 Eine Produktionsumgebung besteht aus mindestens einer Autoreninstanz und einer Veröffentlichungsinstanz:
 
 * [Autoreninstanz](#author) für die Eingabe von Inhalt;
 * [Veröffentlichungsinstanz](#publish) für Inhalte, die den Besuchern/Benutzern zugänglich gemacht werden.
 
-Je nach Größe des Projekts besteht es oft aus mehreren Autoren, Herausgebern oder beidem. Auf niedrigerer Ebene kann das Repository in mehrere Instanzen gebündelt werden.
+Je nach Größe des Projekts besteht sie oft aus mehreren Autorinnen und Autoren, Herausgebenden oder beidem. Auf niedrigerer Ebene kann das Repository in mehrere Instanzen gebündelt werden.
 
 #### Autor {#author}
 
-Normalerweise befinden sich Autoreninstanzen hinter der internen Firewall. Diese interne Firewall ist die Umgebung, in der Sie und Ihre Kollegen Bearbeitungsaufgaben ausführen, z. B. die folgenden:
+Autoreninstanzen befinden sich meist hinter der internen Firewall. Diese interne Firewall ist die Umgebung, in der Sie und Ihre Kolleginnen und Kollegen Bearbeitungsaufgaben ausführen wie die folgenden:
 
 * Verwalten des gesamten Systems;
 * Eingeben von Inhalten;
@@ -86,34 +86,34 @@ Normalerweise befinden sich Autoreninstanzen hinter der internen Firewall. Diese
 
 Aktivierte Inhalte werden gebündelt und in der Replikationswarteschlange der Autorenumgebung abgelegt. Der Replikationsprozess überträgt den Inhalt dann in die Veröffentlichungsumgebung.
 
-Um in einer Veröffentlichungsumgebung generierte Daten rückgängig zu machen, fragt ein Replikations-Listener in der Autorenumgebung die Veröffentlichungsumgebung ab und ruft diese Inhalte aus dem Postausgang für die Rückwärtsreplikation der Veröffentlichungsumgebung ab.
+Um die in der Publishing-Umgebung erstellten Daten umgekehrt zu replizieren, durchsucht ein Replikations-Listener in der Autorenumgebung die Publishing-Umgebung und fragt solche Inhalte aus dem Postausgang für die umgekehrte Replikation der Publishing-Umgebung ab.
 
-#### Veröffentlichen  {#publish}
+#### Veröffentlichen {#publish}
 
-Normalerweise befindet sich eine Veröffentlichungsumgebung in der &quot;DMZ (Demilitarisierte Zone)&quot;. In dieser Umgebung greifen Besucher auf Ihren Inhalt zu (z. B. über eine Website oder eine Mobile App) und interagieren mit ihm, sei es öffentlich oder in Ihrem Intranet. Die Veröffentlichungsumgebung:
+Normalerweise befindet sich eine Publishing-Umgebung in der „Demilitarized Zone“ (DMZ). Dies ist die Umgebung, in der die Besuchenden auf Ihren Inhalt zugreifen (beispielsweise über die Website oder über eine Mobile App) und damit interagieren, sei es öffentlich oder innerhalb Ihres Intranets. Die Veröffentlichungsumgebung:
 
 * enthält alle aus der Autorenumgebung replizierten Inhalte;
 * macht Inhalte für Besucher zugänglich;
 * speichert Benutzerdaten, die von den Besuchern erstellt werden, wie Kommentare oder andere Formen von Beiträgen;
 * kann so konfiguriert werden, dass solche Benutzerdaten einem Postausgang für die umgekehrte Replikation in die Autorenumgebung hinzugefügt werden.
 
-Die Veröffentlichungsumgebung erzeugt Ihren Inhalt dynamisch in Echtzeit und der Inhalt kann für jeden einzelnen Benutzer personalisiert werden.
+Die Publishing-Umgebung erzeugt Ihren Inhalt dynamisch in Echtzeit und ermöglicht die Personalisierung des Inhalts für die einzelnen Benutzenden.
 
-## Code-Verschiebung   {#code-movement}
+## Code-Verschiebung {#code-movement}
 
 Übergeben Sie Code immer von unten nach oben:
 
 * Der Code wird zunächst in der lokalen Umgebung entwickelt und dann in die Entwicklungsumgebungen integriert,
-* gefolgt von gründlichen Tests in den QS-Umgebungen
+* gefolgt von gründlichen Tests in den QA-Umgebungen,
 * und wird dann abermals in den Staging-Umgebungen getestet.
 * Der Code sollte erst danach in den Produktionsumgebungen bereitgestellt werden.
 
-Normalerweise wird der Code (z. B. benutzerdefinierte Webanwendungsfunktionen und Designvorlagen) durch den Export und Import von Paketen zwischen den verschiedenen Inhalts-Repositorys übertragen. Wo angemessen, kann die Replikation als automatischer Prozess konfiguriert werden.
+In der Regel wird der Code (z. B. angepasste Funktionalitäten von Web-Anwendungen und Design-Vorlagen) durch den Export und Import von Datenpaketen zwischen den verschiedenen Inhalts-Repositorys übertragen. Ggf. kann diese Replikation als automatischer Prozess konfiguriert werden.
 
-Projekte zur Bereitstellung von Trigger-Code AEM as a Cloud Service häufig:
+Projekte in AEM as a Cloud Service lösen häufig eine Code-Bereitstellung aus:
 
-* Automatisch: zur Übertragung an die Entwicklungs- und QS-Umgebungen.
-* Manuell: Bereitstellungen in den Staging- und Produktionsumgebungen erfolgen kontrollierter, häufig manuell. bei Bedarf jedoch auch Automatisierung möglich ist.
+* Automatisch: zur Übertragung an die Entwicklungs- und QA-Umgebungen.
+* Manuell: Die Bereitstellung für die Staging- und Produktionsumgebungen erfolgt kontrollierter und häufig manuell. Bei Bedarf ist jedoch eine Automatisierung möglich.
 
 ![Code-Verschiebung](assets/code-movement.png)
 
@@ -121,17 +121,17 @@ Projekte zur Bereitstellung von Trigger-Code AEM as a Cloud Service häufig:
 
 Inhalte, die für die Produktion erstellt werden, sollten **immer** in der Autoreninstanz der Produktion verfasst werden.
 
-Der Inhalt sollte nicht der Codeverschiebung von niedrigeren Umgebungen zu höheren Umgebungen folgen. Es empfiehlt sich also nicht, Inhalte auf lokalen Computern oder in niedrigeren Umgebungen zu erstellen und sie dann in die Produktionsumgebung zu verschieben. Der Grund dafür ist, dass es zu Fehlern und Inkonsistenzen führen kann.
+Der Inhalt sollte nicht dem Code folgen, der sich von niedrigeren Umgebungen zu höheren bewegt. Es empfiehlt sich also nicht, Inhalte auf lokalen Computern oder in niedrigeren Umgebungen zu erstellen und sie dann in die Produktionsumgebung zu verschieben. Der Grund dafür ist, dass es zu Fehlern und Inkonsistenzen führen kann.
 
-Die Produktionsinhalte sollten von der Produktionsumgebung in die Staging-Umgebung verschoben werden, um zu gewährleisten, dass die Staging-Umgebung eine effiziente und genaue Testumgebung bietet.
+Die Produktionsinhalte sollten von der Produktionsumgebung in die Staging-Umgebung verschoben werden, sodass gewährleistet ist, dass die Staging-Umgebung eine effiziente und genaue Testumgebung bietet.
 
 >[!NOTE]
 >
->Diese Methode bedeutet nicht, dass Staging-Inhalte kontinuierlich mit der Produktion synchronisiert werden müssen. regelmäßige Aktualisierungen sind ausreichend, insbesondere vor dem Testen einer neuen Iteration des Codes. Inhalte in den QS- und Entwicklungsumgebungen müssen nicht so häufig aktualisiert werden. Es muss nur eine gute Darstellung des Produktionsinhalts sein.
+>Diese Methodik bedeutet nicht, dass die Staging-Inhalte kontinuierlich mit der Produktion synchronisiert werden müssen. Regelmäßige Updates reichen aus, jedoch sollten diese besonders vor Tests und vor der Einführung von neuem Code erfolgen. Inhalte in den QA- und Entwicklungsumgebungen müssen nicht so häufig aktualisiert werden. Es sollte einfach eine gute Darstellung des Produktionsinhalts vorliegen.
 
-Inhalt kann übertragen werden:
+Inhalt kann wie folgt übertragen werden:
 
-* zwischen verschiedenen Umgebungen - durch den Export und Import von Paketen;
-* Zwischen verschiedenen Instanzen - durch direktes Replizieren (AEM as a Cloud Service Replikation) des Inhalts (mithilfe einer HTTP- oder HTTPS-Verbindung).
+* zwischen verschiedenen Umgebungen – durch den Export und Import von Paketen;
+* zwischen verschiedenen Instanzen – durch direktes Replizieren (AEM as a Cloud Service-Replikation) des Inhalts (durch Verwendung einer HTTP- oder HTTPS-Verbindung).
 
 ![Inhaltsverschiebung](assets/content-movement.png)
