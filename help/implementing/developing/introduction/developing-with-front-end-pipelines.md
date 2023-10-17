@@ -3,26 +3,26 @@ title: Entwickeln von Sites mit der Frontend-Pipeline
 description: Mit der Frontend-Pipeline erhalten Frontend-Entwickler mehr Unabhängigkeit und der Entwicklungsprozess wird erheblich beschleunigt. In diesem Dokument werden einige besondere Überlegungen zum Frontend-Build-Prozess beschrieben, die berücksichtigt werden sein sollten.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1155'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
 # Entwickeln von Sites mit der Frontend-Pipeline {#developing-site-with-front-end-pipeline}
 
-[Mit der Frontend-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) erhalten Frontend-Entwickler mehr Unabhängigkeit und der Entwicklungsprozess kann erheblich an Geschwindigkeit gewinnen. In diesem Dokument wird beschrieben, wie dieser Prozess funktioniert, und es werden einige Überlegungen erläutert, die Sie beachten sollten, damit Sie das gesamte Potenzial dieses Prozesses ausschöpfen können.
+[Mit der Frontend-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) erhalten Frontend-Entwickler mehr Unabhängigkeit und der Entwicklungsprozess kann erheblich an Geschwindigkeit gewinnen. In diesem Dokument wird beschrieben, wie dieser Prozess abläuft und was Sie dabei beachten sollten, damit Sie das volle Potenzial dieses Prozesses ausschöpfen können.
 
 >[!TIP]
 >
->Wenn Sie noch nicht mit der Verwendung der Frontend-Pipeline und den damit verbundenen Vorteilen vertraut sind, finden Sie im Abschnitt [Weg zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md) ein Beispiel dafür, wie Sie eine neue Site schnell bereitstellen und ihr Design ganz unabhängig von der Backend-Entwicklung anpassen können.
+>Wenn Sie noch nicht mit der Verwendung der Front-End-Pipeline und den Vorteilen vertraut sind, die sie mit sich bringen kann, sehen Sie sich die [Tour zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md) an. Hier finden Sie ein Beispiel dafür, wie Sie schnell eine neue Website einrichten und ihr Thema völlig unabhängig von der Back-End-Entwicklung anpassen können.
 
 ## Frontend-Build-Vertrag {#front-end-build-contract}
 
 Ähnlich wie die [Full-Stack-Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) verfügt die Frontend-Pipeline über eine eigene Umgebung. Entwickelnde haben eine gewisse Flexibilität bei dieser Pipeline, solange der folgende Frontend-Build-Vertrag eingehalten wird.
 
-Für die Frontend-Pipeline muss das Frontend-Projekt Node.js die Variable `build` Skriptanweisung zum Generieren des Builds, der von der Frontend-Pipeline bereitgestellt wird. Cloud Manager verwendet den Befehl `npm run build`, um das bereitstellbare Projekt für den `dist`-Ordner zu generieren.
+Die Front-End-Pipeline erfordert, dass das Projekt „Front-End-Node.js“ die `build`-Skriptanweisung verwendet, um den Build zu generieren, der von der Front-End-Pipeline bereitgestellt wird. Cloud Manager verwendet den Befehl `npm run build`, um das bereitstellbare Projekt für den `dist`-Ordner zu generieren.
 
 Der Inhalt des Ordners `dist` wird schließlich für AEM as a Cloud Service von der Cloud Manager-Pipeline bereitgestellt.
 
@@ -58,7 +58,7 @@ Die folgenden Schritte werden im Allgemeinen empfohlen, wenn es notwendig ist, �
 
 1. Das Backend-Team richtet zunächst eine Entwicklungsumgebung mit der neuen HTML- und/oder JSON-Ausgabe ein.
    1. Über die Full-Stack-Pipeline stellen sie den Code bereit, der zum Rendern der gewünschten neuen HTML- und/oder JSON-Ausgabe erforderlich ist.
-   1. Wenn dies eine Umgebung ist, auf die das Frontend-Team zuvor keinen Zugriff hatte, müssen die folgenden Schritte ausgeführt werden.
+   1. Wenn dies eine Umgebung ist, auf die das Front-End-Team zuvor keinen Zugriff hatte, müssen die folgenden Schritte ausgeführt werden.
       1. URL: Das Frontend-Team muss die URL dieser Entwicklungsumgebung kennen.
       1. ACL: Dem Frontend-Team muss ein lokaler AEM-Benutzer mit Berechtigungen wie „Mitwirkende“ zugewiesen werden.
       1. Git: Das Frontend-Team muss über einen separaten Git-Speicherort für das Frontend-Modul verfügen, der speziell auf diese Entwicklungsumgebung ausgerichtet ist.
@@ -68,7 +68,7 @@ Die folgenden Schritte werden im Allgemeinen empfohlen, wenn es notwendig ist, �
    1. Wie üblich zur lokalen Entwicklung:
       1. Der Befehl `npx aem-site-theme-builder proxy`, der innerhalb des Frontend-Moduls ausgeführt wird, startet einen Proxy-Server, der den Inhalt von einer AEM-Umgebung anfordert, während die CSS- und JS-Dateien des Frontend-Moduls durch die Dateien des lokalen Ordners `dist` ersetzt werden.
       1. Wenn Sie die Variable `AEM_URL` in der ausgeblendeten Datei `.env` konfigurieren, können Sie kontrollieren, von welcher AEM-Umgebung der lokale Proxy-Server den Inhalt verwendet.
-      1. Ändern des Werts `AEM_URL` ermöglicht es Ihnen daher, zwischen der Produktions- und Entwicklungsumgebung zu wechseln, um CSS und JS so anzupassen, dass sie zu beiden Umgebungen passen.
+      1. Das Ändern des Werts `AEM_URL` ermöglicht daher den Wechsel zwischen der Produktions- und Entwicklungsumgebung, um CSS und JS so anzupassen, dass sie zu beiden Umgebungen passen.
       1. Dies muss mit der Entwicklungsumgebung, die die neue Ausgabe rendert, und mit der Produktionsumgebung funktionieren, die die alte Ausgabe rendert.
    1. Die Frontend-Arbeit ist abgeschlossen, wenn das aktualisierte Frontend-Modul für beide Umgebungen funktioniert und bereitgestellt wird.
 1. Das Backend-Team kann dann die Produktionsumgebung aktualisieren, indem es den Code bereitstellt, der die neue HTML- und/oder JSON-Ausgabe über die Full-Stack-Pipeline rendert.
