@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1767'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 86%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 Ein Benutzer mit Administratorzugriff in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] konfiguriert den erweiterten Connector nach der Installation. Anweisungen zur Installation finden Sie unter [Installieren des Connectors](/help/assets/workfront-integrations.md).
 
 >[!IMPORTANT]
 >
-> Seit Juni 2022 bietet Adobe eine neue native Integration für die Verbindung von Workfront mit Adobe Experience Manager Assets as a Cloud Service. Diese Integration ist zur erforderlichen Methode für die Verbindung dieser beiden Lösungen geworden. Jede künftige neue Implementierung des erweiterten Connectors (1.9.8 und höher) zur Verbindung von Workfront mit AEM Assets as a Cloud Service wird blockiert.
+> Seit Juni 2022 bietet Adobe eine neue native Integration für die Verbindung von Workfront mit Adobe Experience Manager Assets as a Cloud Service. Diese Integration ist zu einer erforderlichen Methode geworden, um diese beiden Lösungen miteinander zu verbinden. Jede künftige neue Implementierung des erweiterten Connectors (1.9.8 und höher) zur Verbindung von Workfront mit AEM Assets as a Cloud Service wird blockiert.
 
 >[!IMPORTANT]
 >
@@ -36,7 +36,7 @@ Ein Benutzer mit Administratorzugriff in [!DNL Adobe Experience Manager] as a [!
 
 ## Konfigurieren von Ereignisabonnements {#event-subscriptions}
 
-Ereignisabonnements werden verwendet, um AEM über Ereignisse zu informieren, die in [!DNL Adobe Workfront] stattfinden. Es gibt drei [!DNL Workfront for Experience Manager enhanced connector] Funktionen, für die Ereignisabos funktionieren müssen, sind:
+Ereignisabonnements werden verwendet, um AEM über Ereignisse zu informieren, die in [!DNL Adobe Workfront] stattfinden. Es gibt drei [!DNL Workfront for Experience Manager enhanced connector]-Funktionen, die Ereignisabonnements benötigen, um zu funktionieren, und zwar:
 
 * Automatische Erstellung von projektgebundenen Ordnern.
 * Synchronisierung von Änderungen in benutzerdefinierten Formularwerten in Workfront-Dokumenten mit AEM Asset-Metadaten.
@@ -66,9 +66,9 @@ Gehen Sie wie folgt vor, um die Ereignisse zu abonnieren:
 1. Das Kontrollkästchen „Verknüpfte Ordnertitel in Workfront unter Verwendung der Namen der Ordnerstruktur erstellen“ sollte aktiviert werden, wenn der Titel des Ordners in Workfront alle Ordner in der Struktur enthalten soll. Andernfalls ist es der Titel des letzten Ordners.
 1. Im Mehrfachfeld „Unterordner“ können Sie eine Liste von Ordnern angeben, die als Unterordner des verknüpften Ordners erstellt werden sollen.
 1. Projektstatus: Wählen Sie den Status aus, für den das Projekt festgelegt werden muss, um den verknüpften Ordner zu erstellen.
-1. Erstellen Sie einen verknüpften Ordner in Projekten mit Portfolio: Liste der Portfolios, zu denen das Projekt gehören muss, damit Sie den verknüpften Ordner erstellen können. Lassen Sie diese Liste leer, wenn der verknüpfte Ordner für alle Projektportfolios erstellt werden soll.
-1. Erstellen Sie einen verknüpften Ordner in Projekten mit einem benutzerdefinierten Formularfeld: Benutzerdefiniertes Formularfeld und der entsprechende Wert, den das Projekt aufweisen muss, damit Sie den verknüpften Ordner erstellen können. Diese Konfiguration wird ignoriert, wenn sie leer gelassen wird. Wählen Sie `CUSTOM FORMS: Create DAM Linked Folder` als Feld und geben Sie `Yes` als Wert ein.
-1. Klicken Sie auf „Automatische Erstellung verknüpfter Ordner aktivieren“. Wenn Sie zur Registerkarte Ereignisabonnements zurückkehren, sehen Sie, dass es jetzt ein Erstellungsereignis gibt.
+1. Erstellen eines verknüpften Ordners in Projekten mit Portfolio: Liste der Portfolios, denen das Projekt angehören muss, um den verknüpften Ordner erstellen zu können. Lassen Sie diese Liste leer, wenn der verknüpfte Ordner für alle Projektportfolios erstellt werden soll.
+1. Verknüpften Ordner in Projekten mit benutzerdefiniertem Formularfeld erstellen: Benutzerdefiniertes Formularfeld und sein entsprechender Wert, den das Projekt haben muss, damit Sie den verknüpften Ordner erstellen können. Diese Konfiguration wird ignoriert, wenn sie leer gelassen wird. Wählen Sie `CUSTOM FORMS: Create DAM Linked Folder` als Feld und geben Sie `Yes` als Wert ein.
+1. Klicken Sie auf „Automatische Erstellung verknüpfter Ordner aktivieren“. Wenn Sie zur Registerkarte „Ereignisabonnements“ zurückkehren, sehen Sie, dass es jetzt ein Erstellungsereignis gibt.
 
 ![Konfiguration verknüpfter Ordner](/help/assets/assets/wf-linked-folder-config.png)
 
@@ -107,7 +107,7 @@ Gehen Sie wie folgt vor, um die Zuordnungen zu konfigurieren:
    * Benutzerdefinierte Formularfelder für Aufgaben
    * Felder zur Projektübersicht (ID, Name, Beschreibung oder Referenznummer)
 
-1. In dem Fall, in dem die [!DNL Workfront] in [!UICONTROL Workfront Custom Form Field] ist ein Workfront-Benutzertyp-Ahead-Feld. Es muss angegeben werden, welches Workfront-Benutzerfeld Sie zuordnen möchten. Aktivieren Sie dazu die Option „Wert aus dem von Workfront referenzierten Objektfeld abrufen“ und geben Sie dann den Namen des [!UICONTROL benutzerdefinierten Workfront-Formularfelds] an, von dem der zuzuordnende Wert abgerufen werden soll.
+1. Wenn das als [!UICONTROL Benutzerdefiniertes Workfront-Formularfeld] ausgewählte [!DNL Workfront]-Feld ein Workfront-Benutzerfeld mit Eingabepuffer ist, müssen Sie angeben, welches Workfront-Benutzerfeld Sie zuordnen möchten. Aktivieren Sie dazu die Option „Wert aus dem von Workfront referenzierten Objektfeld abrufen“ und geben Sie dann den Namen des [!UICONTROL benutzerdefinierten Workfront-Formularfelds] an, von dem der zuzuordnende Wert abgerufen werden soll.
 
    ![Konfiguration der Metadatenzuordnung](/help/assets/assets/wf-metadata-mapping-config1.png)
 
@@ -173,7 +173,7 @@ Um den Versionsverlauf von Assets in AEM beizubehalten, konfigurieren Sie die As
 
 1. Gehen Sie in Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Konfiguration der Workfront-Tools]** und öffnen Sie die Registerkarte **[!UICONTROL Erweitert]**.
 
-1. Wählen Sie die Option **[!UICONTROL Assets mit demselben Namen wie Versionen des vorhandenen Assets speichern]**. Wenn diese Option aktiviert ist, können Sie Assets speichern, die mit demselben Namen und demselben Speicherort wie die Version des vorhandenen Assets hochgeladen wurden. Wenn diese Option deaktiviert ist, wird ein neues Asset mit einem anderen Namen erstellt (z. B. `asset-name.pdf` und `asset-name-1.pdf`).
+1. Wählen Sie die Option **[!UICONTROL Assets mit demselben Namen wie Versionen des vorhandenen Assets speichern]**. Wenn diese Option aktiviert ist, können Sie Assets speichern, die mit demselben Namen und demselben Speicherort wie die Version des vorhandenen Assets hochgeladen wurden. Wenn diese Option nicht aktiviert ist, wird ein neues Asset mit einem anderen Namen erstellt (z. B. `asset-name.pdf` und `asset-name-1.pdf`).
 
 1. Wählen Sie die Option **[!UICONTROL Asset-Metadaten beim Erstellen einer neuen Version aktualisieren]**. Wenn diese Option aktiviert ist, werden die Asset-Metadaten bei jeder Erstellung einer neuen Version des Assets aktualisiert. Wenn diese Option deaktiviert ist, behält das Asset die Metadaten bei, die es vor dem Erstellen der neuen Version hatte.
 
