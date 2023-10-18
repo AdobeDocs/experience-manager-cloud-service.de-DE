@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
-source-wordcount: '1943'
+source-wordcount: '1939'
 ht-degree: 99%
 
 ---
@@ -215,8 +215,7 @@ Um beispielsweise den Konfigurationsdienst täglich um 0:00 Uhr auszuführen, s
 Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [stellen Sie die Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process) in Ihrer Cloud Service-Instanz bereit.
 
 
-## Ähnliche Artikel {#related-articles}
-
-* [Verwenden von Adobe Acrobat Sign in einem adaptiven Formular](working-with-adobe-sign.md)
-
-* [Best Practices für das Verwenden von Adobe Sign mit adaptiven Formularen](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
+>[!MORELIKETHIS]
+>
+>* [Formular mithilfe von Freihandsignaturen e-signieren](/help/forms/signing-forms-using-scribble.md)
+>* [Best Practices für das Verwenden von Adobe Sign mit adaptiven Formularen](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)

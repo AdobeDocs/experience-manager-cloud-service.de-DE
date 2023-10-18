@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 64%
+source-wordcount: '778'
+ht-degree: 63%
 
 ---
 
@@ -132,3 +132,12 @@ So definieren Sie die Formatierung für einen Status einer Komponente:
 Sie können die Statuszustände „Erfolg“ und „Fehler“ auch simulieren. Tippen Sie auf das Symbol „Erweitern“, um die Optionen **[!UICONTROL Erfolg simulieren]** und **[!UICONTROL Fehler simulieren]** anzuzeigen.
 
 ![Status simulieren](assets/simulate-states.png)
+
+
+## Siehe auch {#see-also}
+
+{{see-also}}
+
+>[!MORELIKETHIS]
+>
+>* [Verwenden von Designs in Kernkomponenten für adaptive Formulare](/help/forms/using-themes-in-core-components.md)

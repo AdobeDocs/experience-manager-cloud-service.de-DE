@@ -2,9 +2,9 @@
 title: Wie generieren Sie ein Datensatzdokument (DoR) für AEM Forms?
 description: Erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument (DoR) für adaptive Forms generieren.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '4140'
+source-wordcount: '4142'
 ht-degree: 96%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 ## Übersicht {#overview}
@@ -503,3 +503,8 @@ Mit einer XCI-Datei können Sie verschiedene Eigenschaften eines Dokuments festl
 1. Öffnen Sie den Cloud Service SDK Configuration Manager. Die Standard-URL ist: <http://localhost:4502/system/console/configMgr>.
 1. Suchen und öffnen Sie die Konfiguration **[!UICONTROL Web-Kanal für adaptive Formulare und Interaktive Kommunikation]**.
 1. Geben Sie den Pfad der XCI-Datei an und klicken Sie auf **[!UICONTROL Speichern]**.
+
+
+## Siehe auch {#see-also}
+
+{{see-also}}

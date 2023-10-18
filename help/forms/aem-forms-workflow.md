@@ -4,9 +4,9 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: Verwenden Sie AEM Forms Workflow, um Geschäftsprozessabläufe zu automatisieren und schnell zu erstellen. Zum Beispiel Überprüfung und Genehmigung, PDF-Generierung, Adobe Sign-Workflows.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2392'
 ht-degree: 67%
 
 ---
@@ -270,3 +270,9 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 ### Bereinigen von Workflow-Instanzen {#purge-workflow-instances}
 
 Da die Minimierung der Anzahl von Workflow-Instanzen die Leistung der Workflow-Engine steigert, sollten Sie regelmäßig abgeschlossene oder laufende Workflow-Instanzen aus dem Repository löschen. Ausführliche Informationen dazu finden Sie unter [Regelmäßiges Bereinigen von Workflow-Instanzen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=de).
+
+
+>[!MORELIKETHIS]
+>
+>* [Verwenden AEM Übersetzungs-Workflows zum Lokalisieren von Adaptive Forms und Datensatzdokument](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
+>* [Variablen in formularzentrierten AEM-Workflows](/help/forms/variable-in-aem-workflows.md)

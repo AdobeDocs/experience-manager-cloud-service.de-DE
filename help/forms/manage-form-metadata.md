@@ -2,9 +2,9 @@
 title: Wie können Metadaten für AEM Forms verwaltet werden?
 description: Metadaten ermöglichen eine einfachere Kategorisierung und Organisation der Assets und erleichtern Benutzern die Suche nach einem bestimmten Asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1741'
+source-wordcount: '1743'
 ht-degree: 96%
 
 ---
@@ -307,3 +307,8 @@ Ein Tool (Metadatenschema-Editor) wird bereitgestellt, um das Schema für das Me
    Sie haben erfolgreich eine benutzerdefinierte Metadateneigenschaft hinzugefügt.
 
 Alle adaptiven Formulare in [!DNL AEM Forms] enthalten jetzt diese zusätzliche Metadateneigenschaft. Sie können sie über die Eigenschaftsseite bearbeiten.
+
+
+## Siehe auch {#see-also}
+
+{{see-also}}

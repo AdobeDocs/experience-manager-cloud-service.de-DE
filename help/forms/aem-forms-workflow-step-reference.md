@@ -4,7 +4,7 @@ description: Mit Forms-zentrierten Workflows können Sie schnell auf adaptiven F
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Verwenden Sie AEM Workflows, indem Sie Aufgabenschritte zuweisen, in PDF/A-Schritt konvertieren, Dokument des aufgezeichneten Schritts generieren, Workflows verwenden, Dokumentschritt unterschreiben, Druckten Ausgabeschritt generieren, Nicht-interaktive PDF-Ausgabe generieren
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '7446'
 ht-degree: 79%
@@ -594,3 +594,11 @@ Geben Sie den Gebietsschema-Code in das Feld „Literal“ ein oder wählen Sie 
 * [Variablen in formularzentrierten AEM-Workflows](/help/forms/variable-in-aem-workflows.md)
 * [Konfigurieren von Abwesenheitseinstellungen](/help/forms/configure-out-of-office-settings.md)
 
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Forms-centric workflow on OSGi](/help/forms/aem-forms-workflow.md)
+>* [Use AEM translation workflow to localize Adaptive Forms and Document of Record](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
+
+-->

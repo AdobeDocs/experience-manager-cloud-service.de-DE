@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2484'
 ht-degree: 96%
 
 ---
@@ -359,3 +359,7 @@ Die Inhaltsstruktur enthält in der Regel die folgenden Hauptkomponenten:
 * **Symbolleiste**: Ein Container für ein adaptives Formular verfügt über eine zugehörige Symbolleiste, die global für das Formular verfügbar ist. Diese Symbolleiste kann mit der Aktion **[!UICONTROL Symbolleiste hinzufügen]** in der Bearbeitungsleiste hinzugefügt werden. Damit können Autoren Aktionen wie Übermitteln, Speichern, Zurücksetzen usw. hinzufügen.
 
 * **assets**: Dieser Knoten enthält zusätzliche Informationen für das Formular-Authoring. Beispiele: Formularmodelldetails, Lokalisierungsdetails usw.
+
+## Siehe auch {#see-also}
+
+{{see-also}}

@@ -5,10 +5,10 @@ uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 45%
+source-wordcount: '1140'
+ht-degree: 64%
 
 ---
 
@@ -46,7 +46,7 @@ Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
          * Um eine Schaltfläche zum Hinzufügen eines Bereichs zu erstellen, wählen Sie **Instanz hinzufügen** und ziehen Sie den Bereich per Drag-and-Drop mit ![toggle-side-panel](assets/toggle-side-panel.png) oder wählen Sie ihn mithilfe von **Objekt ablegen oder hier auswählen** aus.
          * Um eine Schaltfläche zum Löschen eines Bereichs zu erstellen, wählen Sie **Instanz entfernen** und ziehen Sie den Bereich per Drag-and-Drop mit ![toggle-side-panel](assets/toggle-side-panel.png) oder wählen Sie ihn mithilfe von **Objekt ablegen oder hier auswählen** aus.
 
-      Auswählen **Code-Editor** in der Zeile &quot;Formularobjekte und Funktionen&quot;. Klicken Sie auf **Regeln bearbeiten** und in den Code-Bereich:
+      Wählen Sie in der Zeile „Formularobjekte und Funktionen“ **Code-Editor** aus. Klicken Sie auf **Regeln bearbeiten** und in den Code-Bereich:
 
       * Um eine Schaltfläche zum Hinzufügen eines Bereichs zu erstellen, geben Sie `this.panel.instanceManager.addInstance()` an.
       * Um eine Schaltfläche zum Löschen eines Bereichs zu erstellen, geben Sie `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)` an.
@@ -104,14 +104,14 @@ Ein Bedienfeld verfügt über verschiedene Layoutoptionen. Die Option &quot;Layo
 
 Wiederholbare Teilformulare ähneln den wiederholbaren Bedienfeldern in adaptiven Formularen. Führen Sie in [!DNL AEM Forms] Designer die folgenden Schritte aus, um ein sich wiederholendes Teilformular zu erstellen:
 
-1. Wählen Sie in der Palette &quot;Hierarchie&quot;das übergeordnete Teilformular des zu wiederholenden Teilformulars aus.
-1. Klicken Sie in der Palette &quot;Objekt&quot;auf die Registerkarte &quot;Teilformular&quot;und wählen Sie in der Liste &quot;Inhalt&quot;die Option &quot;Textfluss&quot;aus.
+1. Wählen Sie das übergeordnete Teilformular des zu wiederholenden Teilformulars in der Palette „Hierarchie“ aus.
+1. Klicken Sie in der Palette „Objekt“ auf die Registerkarte „Teilformular“ und wählen Sie in der Liste „Inhalt“ die Option „Textfluss“ aus.
 1. Wählen Sie das zu wiederholende Teilformular aus.
-1. Klicken Sie in der Palette &quot;Objekt&quot;auf die Registerkarte &quot;Teilformular&quot;und wählen Sie in der Liste &quot;Inhalt&quot;die Option &quot;Position&quot;oder &quot;Textfluss&quot;aus.
-1. Klicken Sie auf die Registerkarte &quot;Bindung&quot;und wählen Sie &quot;Teilformular wiederholen für jedes Datenelement&quot;.
-1. Um die Mindestanzahl von Wiederholungen festzulegen, wählen Sie &quot;Min-Zähler&quot;aus und geben Sie im entsprechenden Feld eine Zahl ein. Wenn diese Option auf 0 gesetzt ist und zum Zeitpunkt der Datenzusammenführung keine Daten für die Objekte im Teilformular bereitgestellt werden, wird das Teilformular bei der Wiedergabe des Formulars nicht platziert.
-1. Um die maximale Anzahl von Teilformularwiederholungen festzulegen, wählen Sie &quot;Maximal&quot;aus und geben Sie im entsprechenden Feld eine Zahl ein. Wenn Sie im Feld &quot;Maximal&quot;keinen Wert angeben, ist die Anzahl der Teilformularwiederholungen unbegrenzt.
-1. Wenn Sie unabhängig von der Datenmenge eine bestimmte Anzahl an Teilformularwiederholungen festlegen möchten, wählen Sie &quot;Anfangszahl&quot;und geben Sie im entsprechenden Feld eine Zahl ein. Wenn Sie diese Option auswählen und entweder keine Daten verfügbar sind oder weniger Dateneinträge als der angegebene Wert für &quot;Anfangszahl&quot;vorhanden sind, werden leere Instanzen des Teilformulars weiterhin im Formular platziert.
+1. Klicken Sie in der Palette „Objekt“ auf die Registerkarte „Teilformular“ und wählen Sie in der Liste „Inhalt“ die Option „Position“ oder „Textfluss“ aus.
+1. Klicken Sie auf die Registerkarte „Bindung“ und wählen Sie die Option „Teilformular wiederh. f. jedes Datenelement“ aus.
+1. Um die Mindestanzahl von Wiederholungen festzulegen, wählen Sie „Min-Zähler“ aus und geben Sie im entsprechenden Feld eine Zahl ein. Wenn diese Option auf 0 gesetzt ist und zum Zeitpunkt der Datenzusammenführung keine Daten für die Objekte im Teilformular angegeben sind, wird das Teilformular nicht platziert, wenn das Formular gerendert wird.
+1. Um die maximale Anzahl von Teilformularwiederholungen festzulegen, wählen Sie „Max“ aus und geben Sie im entsprechenden Kästchen eine Zahl ein. Wenn Sie im Kästchen „Max“ keinen Wert angeben, ist die Anzahl der Teilformularwiederholungen unbegrenzt.
+1. Wenn Sie unabhängig von der Datenmenge eine bestimmte Anzahl an Teilformularwiederholungen festlegen möchten, wählen Sie „Anfangszahl“ aus und geben Sie im entsprechenden Kästchen eine Zahl ein. Wenn Sie diese Option auswählen und entweder keine Daten verfügbar sind oder weniger Dateneinträge als der angegebene Wert für „Anfangszahl“ vorhanden sind, werden leere Instanzen des Teilformulars weiterhin im Formular platziert.
 1. Fügen Sie im übergeordneten Teilformular zwei Schaltflächen hinzu: eine zum Hinzufügen der Instanz und eine andere zum Löschen der Instanz eines wiederholbaren Teilformulars. Ausführliche Anweisungen finden Sie unter [Erstellen einer Aktion](https://help.adobe.com/de_DE/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
 1. Jetzt verknüpfen Sie die Formularvorlage mit dem adaptiven Formular. Ausführliche Anweisungen finden Sie unter [Erstellen eines adaptiven Formulars basierend auf einer Vorlage](creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
 1. Verwenden Sie die in Schritt 9 erstellten Schaltflächen, um Teilformulare hinzuzufügen und zu entfernen.
@@ -169,3 +169,8 @@ Im folgenden Code verwendet der Bereich `SampleType`die Eigenschaften „minOccu
 >[!NOTE]
 >
 >Verwenden Sie für Nicht-Akkordeon-Layout Schaltflächenkomponenten für adaptives Formular , um Instanzen hinzuzufügen und zu entfernen.
+
+
+>[!MORELIKETHIS]
+>
+>* [Erstellen von Formularen mit wiederholbaren Abschnitten in den Kernkomponenten des adaptiven Formulars](/help/forms/create-forms-repeatable-sections.md)

@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1137'
 ht-degree: 89%
 
 ---
@@ -131,3 +131,7 @@ Gehen Sie wie folgt vor, um den Layout-Modus zu deaktivieren:
 
 1. Tippen Sie auf die Registerkarte **[!UICONTROL Layout-Einstellungen]** und wählen Sie **[!UICONTROL Layout-Modus deaktivieren]** aus.
 1. Tippen Sie auf ![Änderungen speichern](assets/save_icon.svg), um die Vorlageneigenschaften zu speichern.
+
+## Siehe auch {#see-also}
+
+{{see-also}}

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '248'
 ht-degree: 59%
 
 ---
@@ -45,3 +45,8 @@ Der Inhalt auf Seite Null wird standardmäßig angezeigt, wenn ein PDF-Viewer, d
 >[!NOTE]
 >
 >Die soeben erstellte benutzerdefinierte Eigenschaft wird möglicherweise nicht ordnungsgemäß im Dialogfeld &quot;Formulareigenschaften&quot;angezeigt, wenn Sie das Formular erneut öffnen. Es funktioniert jedoch einwandfrei und das Formular zeigt die aktualisierte Meldung auf Seite Null an.
+
+>[!MORELIKETHIS]
+>
+>* [Herunterladen und Installieren von Forms Designer zum Erstellen von Datensatzdokumentvorlagen](/help/forms/installing-configuring-designer.md)
+>* [Verwenden von Forms Designer zum Erstellen von DoR-Vorlagen und Formularfragmenten?](/help/forms/use-forms-designer.md)

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 91%
+source-wordcount: '499'
+ht-degree: 89%
 
 ---
 
@@ -75,3 +75,7 @@ Verknüpfen von Benutzergruppen mit einem adaptiven Formular:
 >
 >Stellen Sie sicher, dass alle Benutzer als Review-Mitglieder der Benutzergruppen in der Remote-Implementierung repliziert werden.
 
+>[!MORELIKETHIS]
+>
+>* [Erstellen und Verwalten von Überprüfungen in Formularen](/help/forms/create-reviews-forms.md)
+>* [Erstellen und Verwalten von Überprüfungen für ein adaptives Formular](/help/forms/review-adaptiveforms-in-sites-page.md)

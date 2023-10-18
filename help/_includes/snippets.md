@@ -1,8 +1,8 @@
 ---
-source-git-commit: cada650e940aa941538a43ffb1f9a16d1f0b8a61
+source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 62%
+source-wordcount: '244'
+ht-degree: 25%
 
 ---
 # Snippets {#snippets}
@@ -20,3 +20,28 @@ ht-degree: 62%
 >[!NOTE]
 >
 >AEM unterstützt derzeit nicht die Zuweisung von Gruppen zu Profilen. Benutzer sollten stattdessen einzeln hinzugefügt werden.
+
+## Siehe auch {#see-also}
+
+* [AEM adaptives Formular erstellen](/help/forms/creating-adaptive-form-core-components.md)
+* [Hinzufügen eines AEM adaptiven Formulars zur AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Anwenden von Designs auf ein AEM adaptives Formular](/help/forms/using-themes-in-core-components.md)
+* [Komponenten zu einem AEM adaptiven Formular hinzufügen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)
+* [Verwenden von CAPTCHA in einem AEM adaptiven Formular](/help/forms/captcha-adaptive-forms-core-components.md)
+* [PDF-Version (DoR) eines AEM adaptiven Formulars generieren](/help/forms/generate-document-of-record-core-components.md)
+* [Übersetzen eines AEM adaptiven Formulars](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [Aktivieren Sie Adobe Analytics für ein adaptives Formular, um die Formularnutzung zu verfolgen.](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [Adaptives Formular mit Microsoft SharePoint verbinden](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
+* [Adaptives Formular mit Microsoft Power Automated verbinden](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+* [Adaptives Formular mit Microsoft OneDrive verbinden](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
+* [Adaptives Formular mit Microsoft Azure Blob Storage verbinden](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
+* [Adaptives Formular mit Salesforce verbinden](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Verwenden von Adobe Sign in einem AEM adaptiven Formular](/help/forms/working-with-adobe-sign.md)
+* [Neues Gebietsschema für ein adaptives Formular hinzufügen](/help/forms/supporting-new-language-localization-core-components.md)
+* [Senden adaptiver Formulardaten an eine Datenbank](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html?lang=de)
+* [Senden adaptiver Formulardaten an einen REST-Endpunkt](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
+* [Senden adaptiver Formulardaten an AEM Workflow](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
+* [Verwenden von Forms Portal zur Auflistung AEM adaptiven Forms auf einer AEM-Website](/help/forms/configure-forms-portal.md)
+
+
+

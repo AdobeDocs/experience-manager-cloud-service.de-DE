@@ -2,10 +2,10 @@
 title: Wie füge ich einem adaptiven Formular, das auf Foundation-Komponenten basiert, Unterstützung für neue Gebietsschemata hinzu?
 description: Bei Adaptive Forms können Sie Gebietsschemata für weitere Sprachen hinzufügen, mit Ausnahme der standardmäßig bereitgestellten Sprachen.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 79%
+source-wordcount: '1266'
+ht-degree: 80%
 
 ---
 
@@ -159,3 +159,8 @@ Abrufen einer [Beispiel-Client-Bibliothek](/help/forms/assets/locale-support-sam
 * Wenn neue Felder in einem vorhandenen adaptiven Formular hinzugefügt werden:
    * **Für maschinelle Übersetzung**: Erstellen Sie das Wörterbuch neu und führen Sie das Übersetzungsprojekt aus. Felder, die einem adaptiven Formular nach dem Erstellen eines Übersetzungsprojekts hinzugefügt wurden, bleiben unübersetzt.
    * **Für die menschliche Übersetzung**: Exportieren Sie das Wörterbuch über `[server:port]/libs/cq/i18n/gui/translator.html`. Aktualisieren Sie das Wörterbuch für die neu hinzugefügten Felder und laden Sie es hoch.
+
+
+## Siehe auch {#see-also}
+
+{{see-also}}

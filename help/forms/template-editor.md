@@ -2,9 +2,9 @@
 title: Wie kann eine Vorlage für ein adaptives Formular erstellt werden?
 description: Erstellen Sie Vorlagen für adaptive Formulare, indem Sie mithilfe des Vorlagen-Editors die grundlegende Struktur und die anfänglichen Inhalte definieren.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2096'
+source-wordcount: '2098'
 ht-degree: 97%
 
 ---
@@ -222,3 +222,8 @@ Sie können ein adaptives Formular auch als Vorlage für zukünftige Verwendunge
 * Wenn Sie Eigenschaften des Formulars im Vorlageneditor ändern, verwenden Sie nicht die Eigenschaft „BindReference“.
 * Wenn Sie einen Haltepunkt hinzufügen möchten, erstellen Sie ihn dann, wenn Sie die Vorlage für das adaptive Formular bearbeiten.
 Weitere Informationen zu Haltepunkten finden Sie unter [Responsive Layout](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html?lang=de#authoring).
+
+
+## Siehe auch {#see-also}
+
+{{see-also}}

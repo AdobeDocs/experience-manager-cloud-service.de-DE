@@ -4,10 +4,10 @@ description: Mit AEM Forms können Sie kontextbezogene Hilfe zu Feldern und Bere
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 50%
+source-wordcount: '384'
+ht-degree: 48%
 
 ---
 
@@ -65,3 +65,7 @@ Wenn Sie Hilfe für das Bedienfeld hinzufügen, wird eine **?** neben der Bedien
 
 ![Beispiel für kontextbezogene Hilfe auf Formularbereichsebene](assets/photoshop-1.png)
 
+>[!MORELIKETHIS]
+>
+>* [Hinzufügen von Platzhaltertext zu Formularfeldern](/help/forms/placeholder-text-in-aem-forms.md)
+>* [Hinzufügen von Fußnoten zu einem adaptiven Formular für Rich-Text](/help/forms/footnotes-richtextsupport.md)

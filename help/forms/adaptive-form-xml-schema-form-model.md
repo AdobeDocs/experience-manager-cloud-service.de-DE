@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 51%
+source-wordcount: '959'
+ht-degree: 52%
 
 ---
 
@@ -298,3 +298,7 @@ Sie haben zwei Optionen:
 **Warum kann ich nicht einzelne Elemente eines Teilformulars (Struktur aus einem komplexen Typ generiert) für wiederholbare Teilformulare ziehen (Wert von „minOccurs“ oder „maxOccurs“ ist größer als 1)?**
 
 In einem wiederholbaren Teilformular müssen Sie das gesamte Teilformular verwenden. Wenn Sie nur einzelne Felder nutzen möchten, verwenden Sie die gesamte Struktur und löschen Sie unerwünschte Felder.
+
+>[!MORELIKETHIS]
+>
+>* [Entwerfen eines JSON-Schemas für ein adaptives Formular](/help/forms/adaptive-form-json-schema-form-model.md)

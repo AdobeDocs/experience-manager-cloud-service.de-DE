@@ -5,10 +5,10 @@ topic-tags: author
 keywords: Adaptive Formularfragmente hinzufügen, adaptive Formularfragmente, Formularfragment erstellen, Fragment zu einem adaptiven Formular hinzufügen, Fragmente verwalten
 feature: Adaptive Forms
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 21%
+source-wordcount: '1716'
+ht-degree: 34%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 21%
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Dieser Artikel |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=de) |
 
-Während jedes Formular für einen bestimmten Zweck entwickelt wurde, gibt es einige gängige Segmente in den meisten Formen, wie z. B. persönliche Angaben wie Name und Adresse, Familiendetails und Einkommensdetails. Formularentwickler müssen diese gängigen Segmente jedes Mal erstellen, wenn ein neues Formular erstellt wird.
+Während jedes Formular für einen bestimmten Zweck entwickelt wurde, gibt es einige gängige Segmente in den meisten Formen, wie z. B. persönliche Angaben wie Name und Adresse, Familiendetails und Einkommensdetails. Formularentwicklerinnen und -entwickler müssen diese gängigen Segmente jedes Mal erstellen, wenn ein neues Formular erstellt wird.
 
 Adaptive Formulare bieten einen praktischen Mechanismus, mit dem Formularsegmente wie ein Bedienfeld oder eine Gruppe von Feldern nur einmal erstellt und dann in adaptiven Formularen wiederverwendet werden können. Diese wiederverwendbaren und eigenständigen Segmente werden als &quot;Adaptive Formularfragmente&quot;bezeichnet.
 
@@ -33,7 +33,7 @@ Sie können ein Fragment mehrmals zu einem Dokument hinzufügen und die Datenbin
 Sie können ein adaptives Formularfragment von Grund auf neu erstellen oder ein Bedienfeld in einem vorhandenen adaptiven Formular als Fragment speichern. So erstellen Sie ein Formularfragment:
 
 1. Melden Sie sich bei Ihrer AEM Forms-Instanz unter https:// an.[*hostname*]:[*port*]/aem/forms.html
-1. Klicks **Erstellen > Adaptives Formularfragment**.
+1. Klicken Sie auf **Erstellen > Adaptives Formularfragment**.
 1. Geben Sie Titel, Namen, Beschreibung und Tags für das Fragment an. Stellen Sie sicher, dass Sie einen eindeutigen Namen für das Fragment angeben. Wenn bereits ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.
 1. Wählen Sie eine Formularvorlage aus. Sie können ein Formularfragment für Kernkomponenten-basierte adaptive Forms- oder Foundation-Komponenten-basierte adaptive Forms erstellen.
    * Um Formularfragmente für auf Kernkomponenten basierende Formulare zu erstellen, wählen Sie eine Vorlage auf Basis von Kernkomponenten aus.
@@ -45,7 +45,7 @@ Sie können ein adaptives Formularfragment von Grund auf neu erstellen oder ein 
 
    ![Zeigt den Modelltyp auf der Registerkarte &quot;Formularmodell&quot;an](assets/create-af-1-1.png)
 
-   * **Keines**: Gibt an, dass das Fragment von Grund auf ohne Formularmodell erstellt werden soll.
+   * **Keins**: Gibt an, dass das Fragment von Grund auf ohne Formularmodell erstellt werden soll.
 
      >[!NOTE]
      >
@@ -137,11 +137,11 @@ Mithilfe der AEM Forms-Benutzeroberfläche können Sie mehrere Vorgänge für ad
   </tr>
   <tr>
    <td><p>Eigenschaften</p> </td>
-   <td><p>Öffnet den Bereich Eigenschaften . Im Bereich Eigenschaften können Sie Eigenschaften anzeigen und bearbeiten, eine Vorschau erstellen und ein Miniaturbild für das ausgewählte Fragment hochladen. Weitere Informationen finden Sie unter <a>Verwalten von Metadaten</a>.<br /> <br /> </p> </td>
+   <td><p>Öffnet das Bedienfeld „Eigenschaften“. Im Bedienfeld „Eigenschaften“ können Sie Eigenschaften anzeigen und bearbeiten, eine Vorschau erstellen und ein Miniaturbild für das ausgewählte Fragment hochladen. Weitere Informationen finden Sie unter <a>Verwalten von Metadaten</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Kopieren</p> </td>
-   <td><p>Kopiert das ausgewählte Fragment. Die Schaltfläche Einfügen wird in der Symbolleiste angezeigt.<br /> <br /> </p> </td>
+   <td><p>Kopiert das ausgewählte Fragment. Das Symbol „Einfügen“ wird in der Symbolleiste angezeigt.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Download</p> </td>
@@ -157,7 +157,7 @@ Mithilfe der AEM Forms-Benutzeroberfläche können Sie mehrere Vorgänge für ad
   </tr>
   <tr>
    <td><p>Wörterbuch hinzufügen</p> </td>
-   <td><p>Erstellt ein Wörterbuch zum Lokalisieren des ausgewählten Fragments. Weitere Informationen finden Sie unter <a>Lokalisieren von Adaptive Forms</a>.<br /> <br /> </p> </td>
+   <td><p>Erzeugt ein Wörterbuch zum Lokalisieren des ausgewählten Fragments. Weitere Informationen finden Sie unter <a>Lokalisieren von Adaptive Forms</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Veröffentlichen/Veröffentlichung rückgängig machen</p> </td>
@@ -190,8 +190,8 @@ Mithilfe der AEM Forms-Benutzeroberfläche können Sie mehrere Vorgänge für ad
 Referenzfragmente für adaptive Formulare, mit denen Sie Ihr Formular erstellen können, sind verfügbar.
 <!-- For more information, see [Reference Fragments](../../forms/using/reference-adaptive-form-fragments.md). -->
 
+
+
 ## Siehe auch {#see-also}
 
-* [Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Erstellen oder Hinzufügen von Designs in Adaptive Forms](/help/forms/using-themes-in-core-components.md)
-* [Verwenden von Google reCAPTCHA in einem AEM adaptiven Formular, das auf Kernkomponenten basiert](/help/forms/captcha-adaptive-forms-core-components.md)
+{{see-also}}

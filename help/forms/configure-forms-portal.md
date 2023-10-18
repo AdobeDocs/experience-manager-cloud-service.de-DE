@@ -2,9 +2,9 @@
 title: Erstellen eines Formularportals auf einer Experience Manager Sites-Seite?
 description: Erfahren Sie, wie Sie ein Formularportal erstellen und vordefinierte Kernkomponenten auf einer Seite von AEM Sites verwenden können.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1841'
 ht-degree: 94%
 
 ---
@@ -182,3 +182,19 @@ Sie können die Funktion zum automatischen Speichern für ein adaptives Formular
 1. Setzen Sie das Häkchen bei **[!UICONTROL Aktivieren]**, um das automatische Speichern des Formulars zu aktivieren. Sie können Folgendes konfigurieren:
 * Standardmäßig wird [!UICONTROL Adaptives Formularereignis] auf „true“ gesetzt, was bedeutet, dass das Formular nach jedem Ereignis automatisch gespeichert wird.
 * Wählen Sie unter [!UICONTROL Auslöser] die Einstellungen entsprechend, sodass die automatische Speicherung basierend auf dem Vorkommen eines Ereignisses oder nach einem bestimmten Zeitintervall ausgelöst wird.
+
+## Siehe auch {#see-also}
+
+{{see-also}}
+
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+
+-->

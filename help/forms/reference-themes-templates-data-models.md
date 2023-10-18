@@ -2,9 +2,9 @@
 title: Wie erhalten Sie Referenzthemen und Vorlagen für AEM Formulare?
 description: AEM Forms bietet Beispiel-Designs, Vorlagen und Formulardatenmodelle für adaptive Formulare, die Ihnen beim schnellen Erstellen von Formularen helfen.
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '841'
 ht-degree: 90%
 
 ---
@@ -120,3 +120,8 @@ Sie können die folgenden Formulardatenmodelle erhalten, indem Sie das [Referenz
 * Salesforce
 
 Informationen zur Verwendung dieser Modelle finden Sie unter [Konfigurieren von Microsoft Dynamics 365- und Salesforce-Cloud-Diensten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=de#configure-dynamics-cloud-service)
+
+
+## Siehe auch {#see-also}
+
+{{see-also}}

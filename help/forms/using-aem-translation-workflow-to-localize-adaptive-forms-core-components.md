@@ -3,9 +3,9 @@ title: Wie können wir ein auf Kernkomponenten basierendes adaptives Formular ü
 description: Erfahren Sie, wie Sie ein Formulardatenmodell in AEM Forms erstellen, das Modell mit Beispieldaten und -diensten testen und verschiedene Optionen für ein Modell konfigurieren.
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '896'
 ht-degree: 93%
 
 ---
@@ -83,3 +83,7 @@ Führen Sie die folgenden Schritte zum Lokalisieren eines Formulars und seines D
    ![Importieren einer Übersetzungsdatei](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. Um eine Vorschau des lokalisierten Formulars in der AEM Forms-Benutzeroberfläche anzuzeigen, wählen Sie das lokalisierte Formular aus. Klicken Sie auf **[!UICONTROL Vorschau]** > **[!UICONTROL Vorschau als HTML]**. Öffnen Sie das Formular erneut, nachdem Sie `afAcceptLang=<locale code>` zur URL des Formulars hinzugefügt haben. Fügen Sie beispielsweise `afAcceptLang=de`hinzu, um die deutsche Version des Formulars zu öffnen.
+
+## Siehe auch {#see-also}
+
+{{see-also}}

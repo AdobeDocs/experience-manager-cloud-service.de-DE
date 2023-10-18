@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: e4dc01d2-7c89-4bd8-af0a-1d2df4676a9a
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 89%
+source-wordcount: '214'
+ht-degree: 85%
 
 ---
 
@@ -35,3 +35,7 @@ Formularersteller können für jedes Formular eine Seite konfigurieren, zu der d
 Formularautoren können die folgenden Parameter verwenden, die an die Dankeseite übergeben werden. Bei allen verfügbaren Übermittlungsaktionen werden `status`- und `owner`-Parameter übergeben. Neben diesen beiden Parametern werden für die folgenden Übermittlungsaktionen einige weitere Parameter übergeben:
 
 * **[!UICONTROL An REST-Endpunkt übermitteln]**: Parameter, die für die Zuordnung feldinterner Werte zu Parametern hinzugefügt wurden, werden weitergeleitet. Die Parameter `status` und `owner` werden bei dieser Übermittlungsaktion nicht übergeben. Weitere Informationen finden Sie unter [Konfigurieren der Übermittlungsaktion „An REST-Endpunkt übermitteln“](configuring-submit-actions.md).
+
+>[!MORELIKETHIS]
+>
+>* [Umleitungsseite oder Dankesnachricht konfigurieren](/help/forms/configure-redirect-page-or-thank-you-message.md)

@@ -1,8 +1,7 @@
 ---
 title: Was sind adaptive Formularausdrücke?
-seo-title: Adaptive Form Expressions
 description: Verwenden Sie adaptive Formularausdrücke, um automatische Überprüfung und Berechnung hinzuzufügen sowie die Sichtbarkeit eines Abschnitts zu aktivieren oder zu deaktivieren.
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '2697'
 ht-degree: 99%

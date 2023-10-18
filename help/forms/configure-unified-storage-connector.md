@@ -2,10 +2,10 @@
 title: Konfigurieren von Unified Storage Connector für AEM Forms
 description: Erfahren Sie, wie Sie Unified Storage Connector für AEM Forms verwalten. Verwenden Sie Unified Storage Connector, um AEM Forms mit externen Datenspeichern zu verbinden.
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 95%
 
 ---
 
@@ -66,3 +66,10 @@ Im Folgenden finden Sie die Richtlinien für die Verwendung von AEM-Workflows un
 * Verwenden Sie in einem Workflow-Modell keinen benutzerdefinierten AEM-Workflow-Schritt, um Daten im CRX DE-Repository zu speichern.
 
 * Wenn Sie [ein AEM Workflow-Modell für die externe Datenspeicherung konfigurieren](#configure-workflow-external-data-storage), erstellen Sie keine benutzerdefinierten Spalten für den AEM-Posteingang, da die Werte der benutzerdefinierten Spalten nicht abgerufen werden, wenn das Arbeitselement im AEM Posteingang zu einem Workflow gehört, der für die externe Datenspeicherung markiert ist.
+
+>[!MORELIKETHIS]
+>
+>* [Konfigurieren von Datenquellen für AEM Forms](/help/forms/configure-data-sources.md)
+>* [Konfigurieren von Azure Storage für AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integrieren von Microsoft Dynamics 365 und Salesforce mit Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>  [Hinzufügen von Forms Portal zu einer AEM Sites-Seite](/help/forms/configure-forms-portal.md)

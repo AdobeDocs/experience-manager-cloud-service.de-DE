@@ -2,10 +2,10 @@
 title: Efforless Bulk PDF Creation - Master the Art with Batch Processing - Ihr Selbsthilfehandbuch zum Generieren von Millionen von PDF-Dokumenten!
 description: Wie erstelle ich markenorientierte und personalisierte Kommunikation?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1705'
-ht-degree: 96%
+source-wordcount: '1735'
+ht-degree: 95%
 
 ---
 
@@ -171,3 +171,10 @@ Sehen wir uns ein Beispiel an: Angenommen, es gibt eine Eingabedatendatei `recor
 ## API-Referenzdokumentation
 
 Die Dokumentation zur API-Referenz enthält detaillierte Informationen zu allen Parametern, Authentifizierungsmethoden und verschiedenen Services, die von APIs bereitgestellt werden. Die API-Referenzdokumentation ist auch im .yaml-Format verfügbar. Sie können die [Batch-APIs](assets/batch-api.yaml) als Datei herunterladen und in Postman hochladen, um die Funktionalität der APIs zu überprüfen.
+
+>[!MORELIKETHIS]
+>
+>* [Einführung in die as a Cloud Service Kommunikation mit AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Kommunikationsverarbeitung - Synchrone APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Kommunikationsverarbeitung - Batch-APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

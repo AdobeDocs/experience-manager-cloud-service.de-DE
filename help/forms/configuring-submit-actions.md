@@ -2,9 +2,9 @@
 title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular?
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 6d949d9f31cc13b30f8ba06058911ddfe8e817af
+source-git-commit: ddc7ddbcd1761b4320e1c7a30a015d844ef3e0c0
 workflow-type: tm+mt
-source-wordcount: '3395'
+source-wordcount: '3403'
 ht-degree: 97%
 
 ---
@@ -403,3 +403,7 @@ Konfigurieren Sie im Rahmen der AEM-Richtlinie für Sicherheit und Absicherung b
 Wenn Sie ein Formulardatenmodell oder ein Schema-basiertes adaptives Formular mit XML- oder JSON-Daten ausfüllen, die konform zu einem Schema sind, bei dem Daten keine `<afData>`-, `<afBoundData>`- und `</afUnboundData>`-Tags enthalten, gehen die Daten der ungebundenen Felder des adaptiven Formulars verloren. Das Schema kann ein XML-Schema, ein JSON-Schema oder ein Formulardatenmodell sein. Ungebundene Felder sind Felder des adaptiven Formulars ohne die Eigenschaft `bindref`.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
+
+>[!MORELIKETHIS]
+>
+>* [Erstellen einer benutzerdefinierten Sende-Aktion für adaptive Formulare](/help/forms/custom-submit-action-form.md)

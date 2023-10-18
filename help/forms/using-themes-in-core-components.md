@@ -2,9 +2,9 @@
 title: Wie können Designs in Adaptive Forms erstellt und verwendet werden?
 description: Sie können Designs verwenden, um ein adaptives Formular mithilfe von Kernkomponenten zu gestalten und eine visuelle Identität bereitzustellen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2680'
 ht-degree: 18%
 
 ---
@@ -418,7 +418,11 @@ Wenn Sie Informationen wie ein Logo, einen Firmennamen in der Kopfzeile und Copy
 * [Vorlagen für Musterdesigns und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
-## Verwandter Artikel {#related-article}
+>[!MORELIKETHIS]
+>
+>* [Aktivieren der Kernkomponenten für adaptive Formulare in AEM Forms as a Cloud Service und lokaler Entwicklungsumgebung](/help/forms/enable-adaptive-forms-core-components.md)
 
-* [Aktivieren der Kernkomponenten für adaptive Formulare in AEM Forms as a Cloud Service und lokaler Entwicklungsumgebung](/help/forms/enable-adaptive-forms-core-components.md)
-* [Erstellen eines eigenständigen, auf Kernkomponenten basierenden adaptiven Formulars](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=de)
+
+## Siehe auch {#see-also}
+
+{{see-also}}

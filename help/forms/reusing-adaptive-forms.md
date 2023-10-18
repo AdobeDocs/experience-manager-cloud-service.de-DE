@@ -3,9 +3,9 @@ title: Wie kann ich die Metadateneigenschaften eines adaptiven Formulars wiederv
 description: Entdecken Sie, wie Sie ein vorhandenes adaptives Formular effizient wiederverwenden können, um ein neues zu erstellen.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '617'
 ht-degree: 83%
 
 ---
@@ -71,3 +71,8 @@ Wenn Sie eingefügte adaptive Formulare anders als das kopierte Formular gestalt
 1. **Neu veröffentlichen:**
 
    Das eingefügte Asset unterscheidet sich vom kopierten. Sie können es als neues Asset veröffentlichen, um es für Endbenutzer verfügbar zu machen. Unter <!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) --> erfahren Sie, wie ein Asset veröffentlicht wird,
+
+
+## Siehe auch {#see-also}
+
+{{see-also}}

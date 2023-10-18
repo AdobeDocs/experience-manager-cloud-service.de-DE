@@ -4,9 +4,9 @@ description: Verwenden Sie die Tabellenkomponente, um einem adaptiven Formular T
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2496'
+source-wordcount: '2498'
 ht-degree: 95%
 
 ---
@@ -329,3 +329,8 @@ Darüber hinaus können Sie eine Gruppe von komplexen XSD-Typelementen ablegen, 
 * Jeder Textzelle in einer Standardtabelle ist ein vordefinierter Elementname zugeordnet. Wenn Sie eine weitere Tabelle in dem adaptiven Formular hinzufügen, erhalten die Standardtextzellen in der neuen Tabelle denselben Elementnamen wie in der ersten Tabelle. In diesem Fall enthalten die Daten, die beim Übermitteln des Formulars generiert werden, nur Daten in den Standardtextzellen einer der Tabellen. Stellen Sie daher sicher, dass Sie die Elementnamen für Standardtextzellen umbenennen, um sie in allen Tabellen eindeutig zu halten und Datenverlust zu vermeiden.
 
   Beachten Sie, dass dies lediglich für die standardmäßigen Textzellen gilt. Wenn Sie einer Tabelle weitere Zeilen oder Spalten hinzufügen, werden automatisch eindeutige Elementnamen für nicht standardmäßige Textzellen generiert.
+
+## Siehe auch {#see-also}
+
+{{see-also}}
+

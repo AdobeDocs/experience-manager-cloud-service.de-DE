@@ -8,9 +8,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2462'
 ht-degree: 79%
 
 ---
@@ -407,7 +407,10 @@ Using this custom error handler, the adaptive form converts the fields listed in
 
 ## Siehe auch {#see-also}
 
-* [Erstellen und Verwenden benutzerdefinierter Fehler-Handler in Adaptive Forms (Kernkomponenten)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-* [Erstellen eines eigenständigen, auf Kernkomponenten basierenden adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)
-* [Erstellen von Stilen oder Designs für Ihre Formulare](/help/forms/using-themes-in-core-components.md)
-* [Erstellen oder Hinzufügen eines adaptiven Formulars zur AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+{{see-also}}
+
+>[!MORELIKETHIS]
+>
+>* [Erstellen und Verwenden benutzerdefinierter Fehler-Handler in Adaptive Forms (Kernkomponenten)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+>* [Erstellen von Stilen oder Designs für Ihre Formulare](/help/forms/using-themes-in-core-components.md)
+>* [Erstellen oder Hinzufügen eines adaptiven Formulars zur AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

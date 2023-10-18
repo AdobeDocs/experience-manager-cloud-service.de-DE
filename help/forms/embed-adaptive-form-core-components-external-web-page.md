@@ -5,10 +5,10 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
-source-git-commit: fb3d3732f698015151d9703bfddfe94b531d31b6
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '982'
-ht-degree: 62%
+ht-degree: 63%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 62%
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Dieser Artikel |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=de) |
 
 
 Sie können [adaptive Formulare in eine AEM Sites-Seite](/help/forms/embed-adaptive-form-aem-sites.md) oder eine außerhalb von AEM gehostete Webseite einbetten. Das eingebettete adaptive Formular ist voll funktionsfähig, und Benutzende können es ausfüllen und senden, ohne die Seite zu verlassen. Es hilft Benutzenden, im Kontext anderer Elemente auf der Web-Seite zu bleiben und gleichzeitig mit dem Formular zu interagieren.
@@ -162,3 +162,11 @@ Beachten Sie beim Einbetten eines adaptiven Formulars in eine Webseite die folge
 1. Gehen Sie in der AEM-Veröffentlichungsinstanz zum Konfigurations-Manager der AEM-Web-Konsole unter `https://'[server]:[port]'/system/console/configMgr`.
 1. Suchen Sie die Konfiguration **Apache Sling Referrer Filter** und öffnen Sie sie.
 1. Geben Sie im Feld Zulässige Hosts die Domain an, in der sich die Webseite befindet. Dadurch kann der Host POST-Anforderungen an den AEM-Server senden. Sie können auch einen regulären Ausdruck verwenden, um eine Reihe von externen Anwendungs-Domains anzugeben.
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Embed adaptive form based on core components to AEM sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+
+-->

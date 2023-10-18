@@ -6,7 +6,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
 workflow-type: tm+mt
 source-wordcount: '3172'
 ht-degree: 96%
@@ -361,7 +361,12 @@ Wenn der [!DNL Adobe Sign]-Service für ein adaptives Formular konfiguriert ist,
 
 * Verwenden Sie separate E-Mail-Adressen, um das [!DNL Adobe Sign]-Konto und das Konto für den ersten oder einzigen Empfänger zu konfigurieren. Die E-Mail-Adresse des ersten bzw. einzigen Empfängers (sofern es nur einen einzelnen Empfänger gibt) darf nicht mit dem [!DNL Adobe Sign]-Konto identisch sein, das zum Konfigurieren von AEM Cloud Services verwendet wird.
 
-## Ähnliche Artikel {#related-articles}
+>[!MORELIKETHIS]
+>
+>* [Integrieren Sie [!DNL Adobe Sign] mit [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
+>* [Best Practices für die Verwendung von  [!DNL Adobe Sign] mit adaptiven Formularen](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 
-* [Integration von [!DNL Adobe Sign] mit [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
-* [Best Practices für die Verwendung von  [!DNL Adobe Sign] mit adaptiven Formularen](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
+
+## Siehe auch {#see-also}
+
+{{see-also}}

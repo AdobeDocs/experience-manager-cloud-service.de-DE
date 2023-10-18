@@ -5,9 +5,9 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1013'
 ht-degree: 91%
 
 ---
@@ -355,3 +355,7 @@ So prüfen Sie, ob die Kernkomponenten für adaptive Formulare für Ihre Umgebun
    ![Suchen Sie das Artefakt „core-forms-components-af-core“ in „all/pom.xml“.](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
    Wenn die Abhängigkeiten vorhanden sind, sind die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert.
+
+>[!MORELIKETHIS]
+>
+>* [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)

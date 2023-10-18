@@ -3,9 +3,9 @@ title: Wie werden Überprüfungen in Formularen erstellt und verwaltet?
 description: Verwenden Sie den Überprüfungsmechanismus, um Überprüfer hinzuzufügen und es ihnen zu ermöglichen, Kommentare zu einem Formular abzugeben.
 topic-tags: forms-manager
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '733'
 ht-degree: 85%
 
 ---
@@ -114,3 +114,17 @@ Dieser Abschnitt beschreibt, was beim **Aktualisieren/Beenden einer Überprüfun
    1. **Alle**: Die Überprüfung wird im Abschnitt für die vorherigen Überprüfungen angezeigt. Es können keine weiteren Kommentare hinzugefügt werden.
 
    ![Überprüfung abgeschlossen](assets/review-complete-imgg.png)
+
+
+## Siehe auch {#see-also}
+
+{{see-also}}
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Associating submission reviewers with a form](/help/forms/adding-reviewers-form.md)
+
+-->

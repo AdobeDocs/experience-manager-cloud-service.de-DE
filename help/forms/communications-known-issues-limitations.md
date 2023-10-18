@@ -2,10 +2,10 @@
 title: Was sind Überlegungen, bekannte Probleme und Best Practices in AEM Forms?
 description: Überlegungen zu bekannten Problemen und Best Practices für AEM Forms Communication APIs.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1718'
-ht-degree: 98%
+source-wordcount: '1748'
+ht-degree: 96%
 
 ---
 
@@ -203,3 +203,11 @@ Im Vergleich zur On-Premise-Umgebung bietet Cloud Service zusätzliche Vorteile 
 
 **Kann ich mehrere Batch-Vorgänge gleichzeitig ausführen?**
 Ja, Sie können mehrere Batch-Vorgänge gleichzeitig ausführen. Verwenden Sie immer unterschiedliche Quell- und Zielordner für jeden Vorgang, um Konflikte zu vermeiden.
+
+>[!MORELIKETHIS]
+>
+>* [Einführung in die as a Cloud Service Kommunikation mit AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Kommunikationsverarbeitung - Synchrone APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Kommunikationsverarbeitung - Batch-APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+

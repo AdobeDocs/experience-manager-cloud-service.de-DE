@@ -2,10 +2,10 @@
 title: Wie füge ich einem adaptiven Formular Unterstützung für neue Gebietsschemata hinzu, basierend auf Kernkomponenten?
 description: Erfahren Sie, wie Sie neue Gebietsschemata für ein adaptives Formular hinzufügen.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 22%
+source-wordcount: '1328'
+ht-degree: 23%
 
 ---
 
@@ -44,7 +44,7 @@ Bevor Sie mit dem Hinzufügen eines Gebietsschemas beginnen:
 * Installieren Sie einen Nur-Text-Editor (IDE) für eine einfachere Bearbeitung. Die Beispiele in diesem Dokument basieren auf [Microsoft® Visual Studio Code](https://code.visualstudio.com/download).
 * Installieren Sie eine Version von [Git](https://git-scm.com), falls auf Ihrem Computer nicht verfügbar.
 * Klonen Sie die [Adaptive Forms-Kernkomponenten](https://github.com/adobe/aem-core-forms-components) Repository. So klonen Sie das Repository:
-   1. Öffnen Sie die Befehlszeile oder das Terminal-Fenster und navigieren Sie zu einem Speicherort für das Repository. Zum Beispiel: `/adaptive-forms-core-components`
+   1. Öffnen Sie die Befehlszeile oder das Terminal-Fenster und navigieren Sie zu einem Speicherort für das Repository. Beispiel: `/adaptive-forms-core-components`
    1. Führen Sie den folgenden Befehl aus, um das Repository zu klonen:
 
       ```SHELL
@@ -176,6 +176,10 @@ Führen Sie die folgenden Schritte aus, um eine Vorschau eines adaptiven Formula
 
 ## Weitere Informationen
 
-* [Verwenden Sie maschinelle Übersetzung oder menschliche Übersetzung, um ein auf Kernkomponenten basierendes adaptives Formular zu übersetzen.](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [Generieren eines Datensatzdokuments für adaptive Formulare](/help/forms/generate-document-of-record-core-components.md)
 * [Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+
+## Siehe auch {#see-also}
+
+{{see-also}}

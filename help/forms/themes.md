@@ -2,9 +2,9 @@
 title: Wie können Designs erstellt und verwendet werden, um ein adaptives Formular zu gestalten?
 description: Verwenden Sie Designs für adaptive Formulare, um ein adaptives Formular zu gestalten und eine visuelle Identität bereitzustellen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '5579'
+source-wordcount: '5581'
 ht-degree: 98%
 
 ---
@@ -670,3 +670,8 @@ Zum Anzeigen der generierten CSS-Datei stehen die folgenden Optionen zur Verfüg
 
   Verwenden Sie den Design-Editor, wenn Sie Kopf- und Fußzeilen mit Formatierungsoptionen wie Schriftschnitt, Hintergrund und Transparenz formatieren möchten.
 Wenn Sie Informationen wie ein Logo, einen Firmennamen in der Kopfzeile und Copyright-Informationen in der Fußzeile angeben möchten, verwenden Sie dazu die im Formular-Editor verfügbaren Optionen.
+
+
+## Siehe auch {#see-also}
+
+{{see-also}}

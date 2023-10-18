@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '549'
 ht-degree: 67%
 
 ---
@@ -51,3 +51,8 @@ Nehmen wir ein Fallbeispiel, in dem Sie für ein Formular eine Sequenz der Schri
 1. Führen Sie die restlichen Schritte aus, um die Formularvorlage zu erstellen. <!-- For more information, see [Creating a custom Adaptive Form template](custom-adaptive-forms-templates.md). -->
 
 Nachdem Sie die Formularsequenz in der Formularvorlage definiert haben, können Sie sie zum Erstellen von Formularen verwenden, deren Grundstruktur der gegenwärtig definierten Sequenz entspricht. Sie haben jedoch immer die Möglichkeit, das Formular Ihren Bedürfnissen anzupassen.
+
+
+## Siehe auch {#see-also}
+
+{{see-also}}

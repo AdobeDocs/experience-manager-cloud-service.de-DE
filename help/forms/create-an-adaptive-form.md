@@ -7,13 +7,13 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '2780'
-ht-degree: 87%
+source-wordcount: '2748'
+ht-degree: 89%
 
 ---
-
 
 # Erstellen eines adaptiven Formulars {#creating-an-adaptive-form}
 
@@ -271,7 +271,4 @@ Sie können die Eigenschaften des Formularmodells auch im Editor für adaptive F
 
 >[!MORELIKETHIS]
 >
->* [Erstellen eines adaptiven Formulars auf der AEM Sites-Seite oder im Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
->* [Erstellen eines benutzerdefinierten adaptiven Forms-Designs](using-themes-in-core-components.md)
->* [Konfigurieren von Sendeaktionen für ein Formular](configuring-submit-actions.md)
->* [Verfügbare Kernkomponenten für adaptive Formulare](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)
+>* [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)

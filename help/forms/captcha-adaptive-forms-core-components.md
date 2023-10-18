@@ -4,9 +4,9 @@ description: Verbessern der Formularsicherheit mit dem Google reCAPTCHA-Dienst. 
 topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA-Dienst, Adaptive Forms, CAPTCHA-Herausforderung, Bot-Prävention, Kernkomponenten, Formularübermittlungssicherheit, Form-Spam-Prävention
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '919'
 ht-degree: 19%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 19%
 | Adaptives Formular basierend auf Kernkomponenten | Dieser Artikel |
 | Adaptives Formular basierend auf Foundation-Komponenten | [Hier klicken](/help/forms/captcha-adaptive-forms.md) |
 
-CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine Herausforderung dar und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
+CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine herausfordernde Aufgabe und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
 
 [!DNL AEM Forms] as a [!DNL Cloud Service] unterstützt Google reCAPTCHA v2 in Adaptive Forms. Sie können es verwenden, um eine CAPTCHA-Herausforderung bei der Formularübermittlung zu stellen. So verwenden Sie reCAPTCHA in einem adaptiven Formular:
 
@@ -106,9 +106,6 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **F: Kann ich mehrere Captcha-Komponenten in einem adaptiven Formular verwenden?**
 **Ans:** Die Verwendung von mehr als einer Captcha-Komponente in einem adaptiven Formular wird nicht unterstützt. Es wird außerdem nicht empfohlen, die Captcha-Komponente in einem Fragment oder einem Bereich zu verwenden, das für verzögertes Laden markiert ist.
 
-## Siehe auch
+## Siehe auch {#see-also}
 
-* [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)
-* [Erstellen eines adaptiven Formularfragments](/help/forms/adaptive-form-fragments-core-components.md)
-* [Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Verwenden von Google reCAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms-core-components.md)
+{{see-also}}

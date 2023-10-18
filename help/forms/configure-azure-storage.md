@@ -2,7 +2,7 @@
 title: Wie konfiguriert man Azure-Speicher?
 description: Erfahren Sie, wie Sie Formulare mit dem Azure-Speicher-Server integrieren.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 100%
@@ -101,3 +101,13 @@ Nachdem Sie die Eigenschaften des Datenmodellobjekts als Suchschlüssel definier
 >[!NOTE]
 >
 >Es sind nur 10 Suchbegriffe pro Azure-Entität zulässig, da Azure nur 10 Tags pro Blob zulässt. Der Wert der Eigenschaften, der als Suchbegriff markiert ist, wird nach dem Hashing in Azure-Index-Tags gespeichert.
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>  [Add Forms Portal to an AEM Sites page](/help/forms/configure-forms-portal.md)
+
+-->

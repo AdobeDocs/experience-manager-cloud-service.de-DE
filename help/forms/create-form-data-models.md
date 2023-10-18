@@ -5,14 +5,14 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1548'
 ht-degree: 93%
 
 ---
 
-# Erstellen von Formulardatenmodellen {#create-form-data-model}
+# Erstellen eines Formulardatenmodells {#create-form-data-model}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -139,3 +139,8 @@ Wenn dieser Projektarchetyp über die CM-Pipeline bereitgestellt wird, liefert d
 Sie haben jetzt ein Formulardatenmodell, dem Datenquellen hinzugefügt wurden. Als Nächstes können Sie das Formulardatenmodell bearbeiten, um Datenmodellobjekte und -Services hinzuzufügen und zu konfigurieren, Verknüpfungen zwischen Datenmodellobjekten hinzuzufügen, Eigenschaften zu bearbeiten, benutzerdefinierte Datenmodellobjekte und -eigenschaften hinzuzufügen, Beispieldaten zu generieren und so weiter.
 
 Weitere Informationen finden Sie unter [Arbeiten mit einem Formulardatenmodell](work-with-form-data-model.md).
+
+
+>[!MORELIKETHIS]
+>
+>* [Verwenden von Formulardatenmodellen](/help/forms/using-form-data-model.md)

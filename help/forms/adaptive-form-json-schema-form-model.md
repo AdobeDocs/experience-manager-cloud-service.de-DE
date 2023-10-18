@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1345'
-ht-degree: 56%
+source-wordcount: '1347'
+ht-degree: 57%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 56%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 
@@ -770,3 +770,15 @@ Sie haben zwei Optionen:
 **Welche Erweiterung sollte die JSON-Schema-Datei aufweisen?**
 
 Für eine JSON-Schema-Datei muss immer die Erweiterung .schema.json verwendet werden. Beispiel: &lt;filename>.schema.json.
+
+## Siehe auch {#see-also}
+
+{{see-also}}
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Design XML Schema for an Adaptive Form](/help/forms/adaptive-form-xml-schema-form-model.md)
+
+-->

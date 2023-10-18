@@ -3,9 +3,9 @@ title: Einführung in  [!DNL AEM Forms]  as a Cloud Service
 description: Entdecken Sie AEM Forms, um einsatzbereite Formulare zu entwerfen, Geschäftsprozess-Workflows zu erstellen und Dokumentendienste zum Erstellen und Schützen von Dokumenten zu verwenden.
 landing-page-description: Erfahren Sie, wie Sie Formulare in AEM as a Cloud Service verwenden.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1151'
 ht-degree: 94%
 
 ---
@@ -67,11 +67,10 @@ Der Dienst ist mit Adobe Analytics integriert, mit dem Sie Leistungsmetriken fü
 | Datenquellen | Verknüpfen Sie Ihre Formulare und Dokumente einfach mit externen Datenquellen, um Daten abzurufen und zu senden: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=de">Herstellen einer Verbindung zu einem RDBMS- oder REST-Endpunkt</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=de">Verbinden mit Microsoft® Dynamics 365 oder dem Salesforce-Cloud-Service</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=de">Verbinden mit Microsoft® Azure Blob Storage</a></li></ul> |
 
 
-## Verwandte Artikel
-
-* [In einer Cloud Service-Umgebung integriert](/help/forms/setup-forms-cloud-service.md)
-* [Einrichten einer lokalen Entwicklungsumgebung](/help/forms/setup-local-development-environment.md)
-* [Migration von AEM 6.5 Forms zu Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-
-
+>[!MORELIKETHIS]
+>
+>* [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)
+>* [In einer Cloud Service-Umgebung integriert](/help/forms/setup-forms-cloud-service.md)
+>* [Einrichten einer lokalen Entwicklungsumgebung](/help/forms/setup-local-development-environment.md)
+>* [Migration von AEM 6.5 Forms zu Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 
