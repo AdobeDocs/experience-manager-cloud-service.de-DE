@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '1238'
-ht-degree: 100%
+source-git-commit: 3a14f3b6f75f6021a7843a5a8a3439d6ea7f886d
+workflow-type: tm+mt
+source-wordcount: '1387'
+ht-degree: 89%
 
 ---
 
@@ -88,7 +88,7 @@ Gehen Sie wie folgt vor, um Assets herunterzuladen:
 
 1. Klicken Sie im Dialogfeld auf **[!UICONTROL Herunterladen]**.
 
-   Wenn die E-Mail-Benachrichtigung für große Downloads aktiviert ist, wird in Ihrem Posteingang eine E-Mail mit einer Download-URL des archivierten ZIP-Ordners angezeigt. Klicken Sie in der E-Mail auf den Download-Link, um das ZIP-Archiv herunterzuladen.
+   Wenn die E-Mail-Benachrichtigung für große Downloads aktiviert ist, wird in Ihrem Posteingang eine E-Mail mit einer Download-URL des archivierten ZIP-Ordners angezeigt. Klicken Sie in der E-Mail auf den Downloadlink, um das ZIP-Archiv herunterzuladen.
 
    ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
 
@@ -131,6 +131,15 @@ Wenn Sie die Download-Funktion nicht benötigen, deaktivieren Sie das Servlet, u
 1. Um Asset-Download-Anfragen über eine Dispatcher-Konfiguration zu blockieren, bearbeiten Sie die Konfiguration `dispatcher.any` und fügen Sie dem [Filterabschnitt](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring) eine neue Regel hinzu.
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+
+## OnTime/OffTime-Ausgabedarstellung {#on-off-time-rendition}
+
+So aktivieren Sie die `OnOffTimeAssetAccessFilter` -Dienst verwenden, müssen Sie eine OSGi-Konfiguration erstellen. Dieser Dienst ermöglicht das Blockieren des Zugriffs auf Ausgabedarstellungen und Metadaten zusätzlich zum Asset selbst basierend auf den Ein-/Ausschaltzeiteinstellungen. Die OSGi-Konfiguration sollte für `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. Führen Sie dazu folgende Schritte durch:
+
+1. Erstellen Sie in Ihrem Projektcode in Git eine Konfigurationsdatei unter `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. Die Datei sollte `{}` als Inhalt bezeichnet, was eine leere OSGi-Konfiguration für die entsprechende OSGi-Komponente bedeutet. Diese Aktion aktiviert den Dienst.
+1. Bereitstellen des Codes, einschließlich dieser neuen Konfiguration, durch [!DNL Cloud Manager].
+1. Nach der Bereitstellung sind die Ausgabedarstellungen und Metadaten gemäß den Ein-/Ausschaltzeiteinstellungen der Assets verfügbar. Wenn das aktuelle Datum bzw. die aktuelle Uhrzeit vor oder nach der Ausfallzeit liegt, wird eine Fehlermeldung angezeigt.
+Weitere Informationen zum Hinzufügen einer leeren OSGi-Konfiguration finden Sie in diesem Abschnitt [Handbuch](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=de).
 
 ## Tipps und Einschränkungen {#tips-limitations}
 
