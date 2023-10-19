@@ -2,7 +2,7 @@
 title: Konfigurieren von Traffic-Filterregeln mit WAF-Regeln
 description: Verwenden von Traffic-Filterregeln mit WAF-Regeln zum Filtern des Traffics
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 9345ec974c9fbd525b12b53d20d98809cd72cb04
+source-git-commit: 146b85093331fe26da891252c398fc24d4f7c0d6
 workflow-type: tm+mt
 source-wordcount: '3810'
 ht-degree: 1%
@@ -165,7 +165,7 @@ Eine Gruppe von Bedingungen besteht aus mehreren einfachen und/oder Gruppenbedin
 | reqProperty | `string` | Anfrageeigenschaft.<br><br>Eines von: `path` , `queryString`, `method`, `tier`, `domain`, `clientIp`, `clientCountry`<br><br>Die Domain-Eigenschaft ist eine Transformation der Host-Kopfzeile der Anfrage in Kleinbuchstaben. Dies ist für Zeichenfolgenvergleiche nützlich, sodass Übereinstimmungen aufgrund der Groß-/Kleinschreibung nicht übersehen werden.<br><br>Die `clientCountry` verwendet zwei Buchstaben-Codes, die unter [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) |
 | reqHeader | `string` | Gibt den Anforderungsheader mit dem angegebenen Namen zurück |
 | queryParam | `string` | Gibt Abfrageparameter mit dem angegebenen Namen zurück |
-| Cookie | `string` | Gibt Cookie mit dem angegebenen Namen zurück |
+| reqCookie | `string` | Gibt Cookie mit dem angegebenen Namen zurück |
 
 **Prädikat**
 
