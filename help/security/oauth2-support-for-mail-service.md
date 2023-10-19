@@ -2,7 +2,7 @@
 title: OAuth2-Unterstützung für den E-Mail-Service
 description: OAuth2-Unterstützung für den E-Mail-Service in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 417efad485226464b396c3ac3ef5ca8968309792
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 98%
@@ -56,9 +56,15 @@ Zusammenfassend benötigen Sie die folgenden Informationen, um OAuth2 für den E
 
 Generieren Sie anschließend in einem nachfolgenden Schritt das Aktualisierungs-Token, das Teil der OSGi-Konfiguration ist, indem Sie Folgendes ausführen:
 
-1. Öffnen Sie die folgende URL im Browser, nachdem Sie `clientID` und `tenantID` durch die für Ihr Konto spezifischen Werte ersetzt haben: `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`.
+1. Öffnen Sie die folgende URL im Browser, nachdem Sie `clientID` und `tenantID` durch die für Ihr Konto spezifischen Werte ersetzt haben:
+
+   `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
+
 1. Wenn Sie gefragt werden, erlauben Sie die Berechtigung.
-1. Die URL wird an einen neuen Ort umgeleitet. Sie wird in folgendem Format erstellt: `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`.
+1. Die URL wird an einen neuen Ort umgeleitet. Sie wird in folgendem Format erstellt:
+
+   `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
+
 1. Kopieren Sie den Wert von `<code>` aus dem obigen Beispiel.
 1. Verwenden Sie den folgenden cURL-Befehl, um das refreshToken abzurufen. Ersetzen Sie tenantID, clientID und clientSecret durch die Werte für Ihr Konto und den Wert für `<code>`:
 
