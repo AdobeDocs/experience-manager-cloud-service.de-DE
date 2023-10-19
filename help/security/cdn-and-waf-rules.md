@@ -2,9 +2,9 @@
 title: Konfigurieren von Traffic-Filterregeln mit WAF-Regeln
 description: Verwenden von Traffic-Filterregeln mit WAF-Regeln zum Filtern des Traffics
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 550ef9a969dc184fccbfd3b79716744cd80ce463
+source-git-commit: 218bf89a21f6b5e7f2027a88c488838b3e72b80e
 workflow-type: tm+mt
-source-wordcount: '3826'
+source-wordcount: '3810'
 ht-degree: 1%
 
 ---
@@ -532,7 +532,7 @@ Nachfolgend finden Sie eine Liste der in CDN-Protokollen verwendeten Feldnamen s
 
 Adobe bietet einen Mechanismus zum Herunterladen von Dashboard-Tools auf Ihren Computer, um CDN-Protokolle zu erfassen, die über Cloud Manager heruntergeladen wurden. Mit diesem Tool können Sie Ihren Traffic analysieren, um die entsprechenden Traffic-Filterregeln zu finden, die deklariert werden können, einschließlich WAF-Regeln. In diesem Abschnitt erhalten Sie zunächst Anweisungen, wie Sie sich mit den Dashboard-Tools in einer Entwicklungsumgebung vertraut machen können. Anschließend erhalten Sie Anleitungen dazu, wie Sie dieses Wissen nutzen können, um Regeln in einer Produktionsumgebung zu erstellen.
 
-Traffic-Filter Regeln für frühe Anwender sollten eine ZIP-Datei der Dashboard-Tools anfordern, die eine README-Datei enthält, die beschreibt, wie der Docker-Container geladen und die CDN-Protokolle erfasst werden.
+Dashboard-Tools können direkt aus dem [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) GitHub-Repository
 
 
 ### Machen Sie sich mit den Dashboard-Tools vertraut {#dashboard-getting-familiar}
