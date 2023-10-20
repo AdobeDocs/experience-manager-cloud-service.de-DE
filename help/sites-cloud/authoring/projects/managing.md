@@ -135,7 +135,7 @@ So legen Sie ein Projekt als inaktiv (oder aktiv) fest:
 
    >[!NOTE]
    >
-   Möglicherweise müssen Sie diese Kachel erst noch einfügen, wenn sie nicht bereits in Ihrem Projekt enthalten ist. Weitere Informationen finden Sie unter [Hinzufügen von Kacheln](#adding-items-to-a-tile).
+   >Möglicherweise müssen Sie diese Kachel erst noch einfügen, wenn sie nicht bereits in Ihrem Projekt enthalten ist. Weitere Informationen finden Sie unter [Hinzufügen von Kacheln](#adding-items-to-a-tile).
 
 1. Tippen/klicken Sie auf **Bearbeiten**.
 1. Ändern Sie die Auswahl von **Aktiv** in **Inaktiv** (oder umgekehrt).
