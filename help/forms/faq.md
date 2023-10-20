@@ -37,7 +37,7 @@ Sie können die Referenzdokumentation zur Java™-API von [!DNL Maven Central R
    1. Öffnen Sie die Datei „index.html“, um die API-Referenzdokumentation aufzurufen.
 
 * **Wo erhalte ich die [!DNL JavaScript™]-API-Referenzdokumentation für adaptive Formulare?**
-Sie können die [!DNL JavaScript™]-API-Referenzdokumentation vom [!DNL  Maven Central Repository] herunterladen. Zum Herunterladen:
+Sie können die [!DNL JavaScript™]-API-Referenzdokumentation vom [!DNL &#x200B; Maven Central Repository] herunterladen. Zum Herunterladen:
    1. Öffnen Sie [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
    1. Suchen und öffnen Sie die Seite mit der neuesten SDK-Version für [!DNL Experience Manager Forms].
    1. Klicken Sie auf die Option „Alle anzeigen“, um alle Dateien anzuzeigen.

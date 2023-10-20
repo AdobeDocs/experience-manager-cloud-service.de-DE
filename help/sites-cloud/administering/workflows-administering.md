@@ -32,17 +32,21 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
 1. **Laufende Workflows** zeigt die Anzahl der aktuell ausgeführten Workflows und ihren Status an. In den angegebenen Bildern ist beispielsweise die Anzahl der **laufenden Workflows** sowie der **Status** der AEM-Instanz zu sehen:
 
    * **Status: Gesund**
+
      ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **Status: Ungesund**
+
      ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. Klicken Sie für **Statusdetails** von Workflow-Instanzen auf **Details**, um die **Anzahl der laufenden Workflows**, **abgeschlossenen Workflow-Instanzen**, **abgebrochenen Workflow-Instanzen**, **fehlgeschlagenen Workflow-Instanzen** usw. anzuzeigen. Beispielsweise sind unten die jeweiligen Bilder aufgeführt, die **Statusdetails** wie folgt anzeigen:
 
    * **Statusdetails: Gesund**
+
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **Statusdetails: Ungesund**
+
      ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
@@ -111,7 +115,7 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
 Schlägt ein Workflow fehl, ermöglicht Ihnen AEM mit der **Fehler-Konsole** die Untersuchung und das Ergreifen entsprechender Maßnahmen, sobald die ursprüngliche Ursache behoben wurde:
 
 * **Fehlerdetails**
-Öffnet ein Fenster zum Anzeigen von **Fehlermeldung**, **Schritt und **Fehlerstapel**.
+Öffnet ein Fenster zum Anzeigen von **Fehlermeldung**, **Schritt und &#x200B;** Fehlerstapel**.
 
 * **Offener Verlauf** Die Details des Workflow-Verlaufs werden angezeigt.
 

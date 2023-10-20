@@ -181,6 +181,7 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
    * Ermöglicht die Einführung von Registerkarten zur Bearbeitung des Inhalts von Inhaltsfragmenten.
       * Diese werden als Trennzeichen im Modell-Editor angezeigt, wobei Abschnitte der Liste der Inhaltsdatentypen getrennt werden. Jede Instanz stellt den Beginn einer neuen Registerkarte dar.
       * Im Fragment-Editor wird jede Instanz als Registerkarte angezeigt.
+
      >[!NOTE]
      >
      >Dieser Datentyp dient ausschließlich zur Formatierung und wird vom GraphQL-Schema von AEM ignoriert.
@@ -268,6 +269,7 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 * **[Fragmentreferenz](#fragment-reference-nested-fragments)** (verschachtelte Fragmente)
    * Verweist auf andere Fragmente, abhängig von den angegebenen Modellen.
    * Ermöglicht das Einschließen/Abrufen strukturierter Daten.
+
      >[!NOTE]
      >
      >Diese Methode ist bei der Verwendung von [Headless-Content-Bereitstellung mit Inhaltsfragmenten mit GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).

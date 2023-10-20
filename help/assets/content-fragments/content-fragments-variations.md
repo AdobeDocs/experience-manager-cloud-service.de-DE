@@ -242,14 +242,14 @@ Mithilfe der Zusammenfassung von Text können Benutzer die Länge des Textes auf
 
 >[!CAUTION]
 >
-Englisch ist standardmäßig verfügbar.
+>Englisch ist standardmäßig verfügbar.
 >
-Andere Sprachen sind als Sprachmodellpakete über Software Distribution verfügbar:
+>Andere Sprachen sind als Sprachmodellpakete über Software Distribution verfügbar:
 >
-* [Französisch (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [Deutsch (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italienisch (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [Spanisch (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Französisch (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Deutsch (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italienisch (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Spanisch (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 1. Wählen Sie **Primäre Version** oder die erforderliche Variante aus.
@@ -318,7 +318,7 @@ Anmerkungen:
 
   >[!NOTE]
   >
-  Eine Dropdown-Liste wird angezeigt, wenn mehrere Anmerkungen auf einen Textausschnitt angewendet wurden.
+  >Eine Dropdown-Liste wird angezeigt, wenn mehrere Anmerkungen auf einen Textausschnitt angewendet wurden.
 
 * Wenn Sie den gesamten Text löschen, auf den die Anmerkung angewendet wurde, wird der Kommentar ebenfalls gelöscht.
 
@@ -336,13 +336,13 @@ Sie werden der Absatzsequenz des Fragments ohne Formatierung hinzugefügt. Die F
 
 >[!CAUTION]
 >
-Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
+>Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
 >
-Das Formatieren von Assets (z. B. Größe) muss im [Seiten-Editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
+>Das Formatieren von Assets (z. B. Größe) muss im [Seiten-Editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
 
 >[!NOTE]
 >
-Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
+>Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
 
 1. Positionieren Sie den Cursor an der Stelle, an der das Bild hinzugefügt werden soll.
 1. Öffnen Sie das Suchdialogfeld mithilfe der Schaltfläche **Asset einfügen**.
@@ -357,10 +357,10 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
 
    >[!CAUTION]
    >
-   Wenn Sie nach dem Hinzufügen eines Assets das Format ändern in:
+   >Wenn Sie nach dem Hinzufügen eines Assets das Format ändern in:
    >
-   * **Nur Text**: Das Asset geht aus dem Fragment verloren.
-   * **Markdown**: Das Asset wird nicht angezeigt, ist aber immer noch vorhanden, wenn Sie zu **Rich-Text** zurückkehren.
+   >* **Nur Text**: Das Asset geht aus dem Fragment verloren.
+   >* **Markdown**: Das Asset wird nicht angezeigt, ist aber immer noch vorhanden, wenn Sie zu **Rich-Text** zurückkehren.
 
 ### Einfügen eines Inhaltsfragments in ein Fragment {#inserting-content-fragment-into-your-fragment}
 
@@ -370,17 +370,17 @@ Sie werden als Referenz an Ihrer aktuellen Position in Ihrem Fragment hinzugefü
 
 >[!NOTE]
 >
-Diese Option ist verfügbar, wenn Ihre **Mehrzeiliger Text** konfiguriert wurde mit **Fragmentverweis zulassen**.
+>Diese Option ist verfügbar, wenn Ihre **Mehrzeiliger Text** konfiguriert wurde mit **Fragmentverweis zulassen**.
 
 >[!CAUTION]
 >
-Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
+>Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
 >
-Das Formatieren von Assets (z. B. Größe) muss im [Seiten-Editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
+>Das Formatieren von Assets (z. B. Größe) muss im [Seiten-Editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
 
 >[!NOTE]
 >
-Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
+>Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
 
 1. Positionieren Sie den Cursor an der Stelle, an der das Fragment hinzugefügt werden soll.
 1. Öffnen Sie das Suchdialogfeld mithilfe der Schaltfläche **Inhaltsfragment einfügen**.
@@ -395,10 +395,10 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
 
    >[!CAUTION]
    >
-   Wenn Sie nach dem Hinzufügen eines Verweises zu einem anderen Fragment das Format ändern in:
+   >Wenn Sie nach dem Hinzufügen eines Verweises zu einem anderen Fragment das Format ändern in:
    >
-   * **Nur Text**: Die Referenz geht aus dem Fragment verloren.
-   * **Markdown**: Die Referenz bleibt erhalten.
+   >* **Nur Text**: Die Referenz geht aus dem Fragment verloren.
+   >* **Markdown**: Die Referenz bleibt erhalten.
 
 ## Vererbung {#inheritance}
 
@@ -440,11 +440,11 @@ Mithilfe von Varianten können Sie die **Master** Inhalt und variieren sie je na
 
    >[!NOTE]
    >
-   Beim Erstellen einer Variante ist immer die **Master** kopiert wird, nicht die geöffnete Variante.
+   >Beim Erstellen einer Variante ist immer die **Master** kopiert wird, nicht die geöffnete Variante.
 
    >[!NOTE]
    >
-   Wenn Sie eine Variante erstellen, werden alle **Tags** derzeit zugewiesen ist, **Master** -Variante in Ihre neue Variante kopiert werden.
+   >Wenn Sie eine Variante erstellen, werden alle **Tags** derzeit zugewiesen ist, **Master** -Variante in Ihre neue Variante kopiert werden.
 
 ### Bearbeiten einer Variante {#editing-a-variation}
 
@@ -467,7 +467,7 @@ Sie können den Varianteninhalt ändern, nachdem Sie entweder:
 
 >[!NOTE]
 >
-Dies betrifft nur den **Titel** der Variante.
+>Dies betrifft nur den **Titel** der Variante.
 
 ### Löschen einer Variante {#deleting-a-variation}
 
@@ -479,7 +479,7 @@ Dies betrifft nur den **Titel** der Variante.
 
 >[!NOTE]
 >
-**Primäre Version** kann nicht gelöscht werden.
+>**Primäre Version** kann nicht gelöscht werden.
 
 ### Mit primärer Version synchronisieren {#synchronizing-with-master}
 
@@ -489,13 +489,13 @@ Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zum Synchronisie
 
 >[!CAUTION]
 >
-Die Synchronisierung ist nur verfügbar, um Änderungen *von der **primären Version**in die Variante* zu kopieren.
+>Die Synchronisierung ist nur verfügbar, um Änderungen *von der **primären Version**&#x200B;in die Variante* zu kopieren.
 >
-Es wird nur das aktuelle Element der Variante synchronisiert.
+>Es wird nur das aktuelle Element der Variante synchronisiert.
 >
-Die Synchronisierung funktioniert nur auf der **Mehrzeiliger Text** Datentyp.
+>Die Synchronisierung funktioniert nur auf der **Mehrzeiliger Text** Datentyp.
 >
-Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Version*** zu übertragen.
+>Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Version*** zu übertragen.
 
 1. Öffnen Sie das Inhaltsfragment im Fragment-Editor. Stellen Sie sicher, dass die **primäre Version** bearbeitet wurde.
 

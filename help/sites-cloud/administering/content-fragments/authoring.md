@@ -248,7 +248,7 @@ Dadurch wird das mehrzeilige Feld im Vollbildmodus geöffnet und:
 
   >[!CAUTION]
   >
-  >Die Synchronisierung ist nur zum Kopieren von Änderungen verfügbar *von **Main**zur Änderung*.
+  >Die Synchronisierung ist nur zum Kopieren von Änderungen verfügbar *von **Main**&#x200B;zur Änderung*.
   >
   >Änderungen übertragen *von einer Änderung zu **Main*** ist nicht als Option verfügbar.
 

@@ -83,9 +83,11 @@ Um eine Experience Fragment-Vorlage zu erstellen, die vom Assistenten **Erstelle
 1. Beide:
 
    1. Der Ressourcentyp der Vorlage (der Anfangsknoten) muss erben von:
+
       `cq/experience-fragments/components/xfpage`
 
    1. Der Name der Vorlage muss beginnen mit:
+
       `experience-fragments`
 Dieses Muster ermöglicht es Benutzenden, Experience Fragments in /content/experience-fragments zu erstellen, da die Eigenschaft `cq:allowedTemplates` dieses Ordners alle Vorlagen enthält, deren Namen mit `experience-fragment` beginnen. Kunden können diese Eigenschaft aktualisieren, um ihr eigenes Namensschema oder ihre eigenen Vorlagenspeicherorte einzuschließen.
 

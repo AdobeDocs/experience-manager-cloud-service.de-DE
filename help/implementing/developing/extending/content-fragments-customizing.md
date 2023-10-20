@@ -61,6 +61,7 @@ Inhaltsfragmente, die auf einem Inhaltsfragmentmodell basieren, werden einem ein
 * Alle Inhalte werden im Knoten `jcr:content/data` des Assets gespeichert:
 
    * Die Elementdaten werden unter dem Master-Unterknoten gespeichert:
+
      `jcr:content/data/master`
 
    * Varianten werden unter einem Unterknoten gespeichert, der den Namen der Variante trägt, z. B.: `jcr:content/data/myvariation`

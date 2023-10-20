@@ -164,7 +164,7 @@ Schließen Sie die `customfooterlibs` Client-Bibliothek zur AEM Sites-Seite mith
        &quot;
        // customheaderlibs.html
        &lt;sly data-sly-use.page=&quot;com.adobe.cq.wcm.core.components.models.Page&quot;>
-       &lt;sly data-sly-test=&quot;${page.data &amp;&amp; page.dataLayerClientlibIncluded}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.commons.v1.datalayer&amp;#39;, async=true}&quot;>&lt;/sly>
+       &lt;sly data-sly-test=&quot;${page.data &amp;&amp; page.dataLayerClientlibIncluded}&quot; data-sly-call=&quot;${clientlib.js @ categories=&#39;core.forms.components.commons.v1.datalayer&#39;, async=true}&quot;>&lt;/sly>
        &lt;/sly>
        
        &quot;

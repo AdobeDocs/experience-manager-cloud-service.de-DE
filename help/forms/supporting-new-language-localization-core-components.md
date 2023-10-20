@@ -171,7 +171,7 @@ Führen Sie die folgenden Schritte aus, um eine Vorschau eines adaptiven Formula
 * Adobe empfiehlt die Erstellung eines Übersetzungsprojekts nach der Erstellung eines adaptiven Formulars.
 
 * Wenn neue Felder in einem vorhandenen adaptiven Formular hinzugefügt werden:
-   * **Für maschinelle Übersetzung**[: Erstellen Sie das Wörterbuch neu und führen Sie das Übersetzungsprojekt aus](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). Felder, die einem adaptiven Formular nach dem Erstellen eines Übersetzungsprojekts hinzugefügt wurden, bleiben unübersetzt.
+   * **Für maschinelle Übersetzung**&#x200B;[: Erstellen Sie das Wörterbuch neu und führen Sie das Übersetzungsprojekt aus](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). Felder, die einem adaptiven Formular nach dem Erstellen eines Übersetzungsprojekts hinzugefügt wurden, bleiben unübersetzt.
    * **für die menschliche Übersetzung**: Exportieren Sie das Wörterbuch über die Benutzeroberfläche unter `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Aktualisieren Sie das Wörterbuch für die neu hinzugefügten Felder und laden Sie es hoch.
 
 ## Weitere Informationen

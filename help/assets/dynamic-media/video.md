@@ -58,6 +58,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
    * Video-Assets vorab anzeigen und veröffentlichen
 
       * Zeigen Sie das Quellvideo und die kodierten Ausgabedarstellungen des Videos zusammen mit den zugehörigen Miniaturen an:
+
         [Vorschau von Videos anzeigen](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) oder [Vorschau von Assets anzeigen](/help/assets/dynamic-media/previewing-assets.md)
         [Verwalten von Videoausgabedarstellungen](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -67,6 +68,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
    * Arbeiten mit Videometadaten
 
       * Bearbeiten Sie die Eigenschaften von Videos, beispielsweise Titel, Beschreibung, Tags und benutzerdefinierte Metadatenfelder:
+
         [Bearbeiten von Videoeigenschaften](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [Verwalten von Metadaten für digitale Assets](/help/assets/manage-metadata.md)
@@ -91,9 +93,11 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
    * Wenn Sie das Web-Content-Management-System eines Drittanbieters verwenden, können Sie Videos mit Web-Seiten verknüpfen oder darin einbetten.
 
       * Integrieren von Videos mithilfe der URL:
+
         [Verknüpfen von URLs mit Ihrer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Integrieren von Videos mithilfe von Einbettungs-Code auf der Web-Seite:
+
         [Einbetten des Video-Viewer auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md).
 
    * [Erzeugen von Videoberichten](#viewing-video-reports).
@@ -717,7 +721,7 @@ Alle hochgeladenen Audio-Track-Dateien können jedoch als Standardaudio festgele
 >Die Wiedergabe des Standardaudioinhalts kann auch davon abhängen, was in den folgenden Browsern festgelegt ist:
 >
 >* Chrome: Das Standardaudio, das im Video festgelegt ist, wird wiedergegeben.
-* Safari: Wenn die Standardsprache in Safari festgelegt ist, wird Audio mit der festgelegten Standardsprache wiedergegeben, sofern mit dem Manifest des Videos verfügbar. Andernfalls wird das Standardaudio abgespielt, das als Teil der Eigenschaften eines Videos festgelegt wird.
+>* Safari: Wenn die Standardsprache in Safari festgelegt ist, wird Audio mit der festgelegten Standardsprache wiedergegeben, sofern mit dem Manifest des Videos verfügbar. Andernfalls wird das Standardaudio abgespielt, das als Teil der Eigenschaften eines Videos festgelegt wird.
 
 **So legen Sie die Standardaudio für ein Video mit mehreren Audiospuren fest:**
 
@@ -746,7 +750,7 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-medi
 
 >[!NOTE]
 >
-Auf der Standardregisterkarte für die Vorschau von Experience Managern werden nicht mehrere Untertitel- und Audiospuren angezeigt. Der Grund dafür ist, dass diese Tracks mit Dynamic Media verknüpft sind und nur mit der Dynamic Media-Viewer-Vorschau angezeigt werden können.
+>Auf der Standardregisterkarte für die Vorschau von Experience Managern werden nicht mehrere Untertitel- und Audiospuren angezeigt. Der Grund dafür ist, dass diese Tracks mit Dynamic Media verknüpft sind und nur mit der Dynamic Media-Viewer-Vorschau angezeigt werden können.
 
 **So zeigen Sie die Vorschau eines Videos an, das mehrere Untertitel und Audiospuren aufweist:**
 
@@ -825,7 +829,7 @@ Der ursprüngliche Audio-Track, der aus einer Primärdatei extrahiert wurde, kan
 
 >[!IMPORTANT]
 >
-Adobe empfiehlt, dass Sie [Multiuntertitel- und Multiaudio-Track-Funktion aktivieren](#enable-dash) auf Ihrem Dynamic Media-Konto. Auf diese Weise können Sie die neueste Dynamic Media-Backend-Architektur und einen vereinfachten Workflow zum Hinzufügen von Untertiteln, Untertiteln und Audiospuren zu Ihren Videos nutzen.
+>Adobe empfiehlt, dass Sie [Multiuntertitel- und Multiaudio-Track-Funktion aktivieren](#enable-dash) auf Ihrem Dynamic Media-Konto. Auf diese Weise können Sie die neueste Dynamic Media-Backend-Architektur und einen vereinfachten Workflow zum Hinzufügen von Untertiteln, Untertiteln und Audiospuren zu Ihren Videos nutzen.
 
 Sorgen Sie dafür, dass Ihre Videos Märkte auf der ganzen Welt erreichen, indem Sie Untertitel zu einzelnen Videos oder adaptiven Videosets hinzufügen. Wenn Sie verdeckte Untertitel hinzufügen, müssen Sie die Audiodaten nicht synchronisieren oder Muttersprachler bzw. Muttersprachlerinnen damit beauftragen, das Audio in einer anderen Sprache neu aufzuzeichnen. Das Video wird in der Sprache, in der es aufgenommen wurde, wiedergegeben. Fremdsprachliche Untertitel werden angezeigt, sodass auch Nutzer anderer Sprachen den Audioteil verstehen können.
 
@@ -833,7 +837,7 @@ Geschlossene Untertitel ermöglichen auch einen besseren Zugang für Personen, d
 
 >[!NOTE]
 >
-Der verwendete Video-Player muss die Anzeige von Untertiteln unterstützen.
+>Der verwendete Video-Player muss die Anzeige von Untertiteln unterstützen.
 
 Weitere Informationen finden Sie unter [Barrierefreiheit in Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md).
 
@@ -861,7 +865,7 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
 
    >[!NOTE]
    >
-   Für globale Unterstützung von Videountertiteln in verschiedenen Sprachen ist zu beachten, dass der WebVTT-Standard separate .vtt-Dateien und Abrufe für jede Sprache benötigt, die Sie unterstützen möchten.
+   >Für globale Unterstützung von Videountertiteln in verschiedenen Sprachen ist zu beachten, dass der WebVTT-Standard separate .vtt-Dateien und Abrufe für jede Sprache benötigt, die Sie unterstützen möchten.
 
    Im Allgemeinen sollte die VTT-Untertiteldatei denselben Namen haben wie die Videodatei, an den jedoch ein Kürzel für die Sprache wie -EN, -FR oder -DE angehängt ist. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen Web-Content-Management-System zu automatisieren.
 
@@ -892,7 +896,7 @@ Sie können die Wiedergabe und Navigation Ihrer Videos in langen Formularen vere
 
 >[!NOTE]
 >
-Der verwendete Video-Player muss die Verwendung von Kapitelmarken unterstützen. Dynamic Media-Video-Player unterstützten Kapitelmarken, Video-Player von Drittanbietern jedoch möglicherweise nicht.
+>Der verwendete Video-Player muss die Verwendung von Kapitelmarken unterstützen. Dynamic Media-Video-Player unterstützten Kapitelmarken, Video-Player von Drittanbietern jedoch möglicherweise nicht.
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 

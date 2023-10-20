@@ -85,7 +85,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Instanz von Forms as a Cloud Ser
 
    >[!NOTE]
    >
-   Wenn Sie ein adaptives Formular erstellen, geben Sie den Namen des Containers im Feld **[!UICONTROL Konfigurations-Container]** an.
+   >Wenn Sie ein adaptives Formular erstellen, geben Sie den Namen des Containers im Feld **[!UICONTROL Konfigurations-Container]** an.
 
 1. Tippen Sie auf der Konfigurationsseite auf **[!UICONTROL Erstellen]**, um die [!DNL Microsoft®® Power Automate Flow Service]-Konfiguration in AEM Forms zu erstellen.
 1. Im **[!UICONTROL Konfigurieren des Datenversand-Dienstes für Microsoft® Power Automated]** Seite, geben Sie die **[!UICONTROL Client-ID]** (auch als Bewerbungs-ID bezeichnet), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth-URL]** und **[!UICONTROL URL der dynamischen Umgebung]**. Verwenden Sie die Client-ID, den geheimen Client-Schlüssel, die OAuth-URL und die URL der Dynamics-Umgebung der [Microsoft® Azure Active Directory-Anwendung](#ms-power-automate-application), die Sie im vorherigen Abschnitt erstellt haben. Verwenden Sie die Option „Endpunkte“ in der Benutzeroberfläche der Microsoft® Azure Active Directory-Anwendung, um die OAuth-URL zu finden.
@@ -101,7 +101,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Instanz von Forms as a Cloud Ser
 
    >[!NOTE]
    >
-   Wenn Sie ein adaptives Formular erstellen, geben Sie den Namen des Containers im Feld **[!UICONTROL Konfigurations-Container]** an.
+   >Wenn Sie ein adaptives Formular erstellen, geben Sie den Namen des Containers im Feld **[!UICONTROL Konfigurations-Container]** an.
 
 1. Tippen Sie auf der Konfigurationsseite auf **[!UICONTROL Erstellen]**, um die [!DNL Microsoft®® Power Automate Flow Service]-Konfiguration in AEM Forms zu erstellen.
 1. Im **[!UICONTROL Konfigurieren von Datenquellen für Microsoft® Power Automated]** Seite, geben Sie die **[!UICONTROL Client-ID]** (auch als Bewerbungs-ID bezeichnet), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth-URL]** und **[!UICONTROL URL der dynamischen Umgebung]**. Verwenden Sie die Client-ID, den geheimen Client-Schlüssel, die OAuth-URL und die ID der Dynamics-Umgebung. Verwenden Sie die Option „Endpunkte“ in der Benutzeroberfläche der Microsoft® Azure Active Directory-Anwendung, um die OAuth-URL zu finden. Öffnen Sie den Link [Meine Flüsse](https://powerautomate.microsoft.com/de-de/), tippen Sie auf „Meine Flüsse“ und verwenden Sie die in „URL als Dynamics-Umgebungs-ID“ aufgeführte ID.
@@ -128,7 +128,7 @@ Nachdem Sie [Ihre Instanz von Forms as a Cloud Service mit Microsoft® Power Aut
 
 >[!NOTE]
 >
-Stellen Sie vor dem Übermitteln des adaptiven Formulars sicher, dass der Trigger `When an HTTP Request is received` mit dem folgenden JSON-Schema zu Ihrem Power Automate-Fluss hinzugefügt wurde.
+>Stellen Sie vor dem Übermitteln des adaptiven Formulars sicher, dass der Trigger `When an HTTP Request is received` mit dem folgenden JSON-Schema zu Ihrem Power Automate-Fluss hinzugefügt wurde.
 
 ```
         {
@@ -198,4 +198,4 @@ Stellen Sie vor dem Übermitteln des adaptiven Formulars sicher, dass der Trigge
 
 >[!MORELIKETHIS]
 >
-* [Adaptives Formular mit Microsoft Power Automated verbinden](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+>* [Adaptives Formular mit Microsoft Power Automated verbinden](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)

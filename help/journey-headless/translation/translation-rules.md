@@ -83,6 +83,7 @@ In der Benutzeroberfläche der **Übersetzungskonfiguration** gibt es eine Reihe
    1. Tippen oder klicken Sie auf **Hinzufügen**.
    1. Wiederholen Sie diese Schritte für alle Felder, die Sie übersetzen müssen.
    1. Tippen oder klicken Sie auf **Speichern**.
+
       ![Eigenschaft hinzufügen](assets/add-property.png)
 
 Sie haben jetzt Ihre Übersetzungsregeln konfiguriert.

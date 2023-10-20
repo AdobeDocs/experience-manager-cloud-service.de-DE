@@ -490,7 +490,7 @@ Sie können jetzt die Schriftarten, die in einem Webservice verfügbar sind, in 
 
 Führen Sie die folgenden Schritte aus, um Adobe Fonts in Experience Manager zu konfigurieren:
 
-1. Klicken Sie in der Author-Instanz auf ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]**>**[!UICONTROL  Tools ]**![Hammer](assets/hammer.png) >**[!UICONTROL  Bereitstellung ]**>**[!UICONTROL  Cloud Services ]**.
+1. Klicken Sie in der Author-Instanz auf ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager &#x200B;]**>**[!UICONTROL &#x200B; Tools &#x200B;]**![Hammer](assets/hammer.png) >**[!UICONTROL &#x200B; Bereitstellung &#x200B;]**>**[!UICONTROL &#x200B; Cloud Services &#x200B;]**.
 1. Navigieren Sie auf der Seite **[!UICONTROL Cloud Services]** zur Option **[!UICONTROL Adobe Fonts]** und öffnen Sie sie. Öffnen Sie den Konfigurationsordner und klicken Sie auf **[!UICONTROL Erstellen]**.
 1. Geben Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen Titel für die neue Konfiguration an und klicken Sie auf **[!UICONTROL Erstellen]**.
 

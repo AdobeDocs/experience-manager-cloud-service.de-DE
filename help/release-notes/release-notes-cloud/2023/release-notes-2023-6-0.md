@@ -64,7 +64,7 @@ Mit Experience Manager Assets können Sie jetzt über die Benutzeroberfläche de
 
 **Miniaturansichtsvorschau für 3D-Assets**
 
-[!DNL Experience Manager Assets] generiert nun Miniaturansichtsvorschauen für gängige 3D-Dateiformate wie gLB, USDz, FBX, 3DS, OBJ und SBSAR. [](/help/assets/file-format-support.md) Wenn diese Dateien hochgeladen werden, werden automatisch Miniaturansichten generiert.
+[!DNL Experience Manager Assets] generiert nun Miniaturansichtsvorschauen für gängige 3D-Dateiformate wie gLB, USDz, FBX, 3DS, OBJ und SBSAR. [&#128279;](/help/assets/file-format-support.md) Wenn diese Dateien hochgeladen werden, werden automatisch Miniaturansichten generiert.
 
 **Konfiguration der Linkfreigabe**
 

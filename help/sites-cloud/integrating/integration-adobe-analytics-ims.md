@@ -80,8 +80,10 @@ Mithilfe der Adobe-Entwicklerkonsole müssen Sie ein Projekt (Integration) mit A
 1. Alle vorhandenen Projekte werden angezeigt. Wählen Sie **Neues Projekt erstellen** aus. Position und Verwendung hängen von Folgendem ab:
 
    * Wenn Sie noch kein Projekt haben, befindet sich **Neues Projekt erstellen** unten in der Mitte.
+
      ![Neues Projekt erstellen – Erstes Projekt](assets/integration-analytics-ims-02.png)
    * Wenn Sie bereits über vorhandene Projekte verfügen, werden diese aufgelistet und **Neues Projekt erstellen** wird oben rechts angezeigt.
+
      ![Neues Projekt erstellen – Mehrere Projekte](assets/integration-analytics-ims-03.png)
 
 

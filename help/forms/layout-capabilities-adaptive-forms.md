@@ -75,7 +75,7 @@ Ein Zusammenfassungsausdruck kann verwendet werden, um im Titel des minimierten 
 
 ![Wiederholbare Bereiche mit Akkordeonlayout in adaptiven Formularen](assets/accordion-layout.png)
 
-### [!UICONTROL Layout mit Registerkarten – Registerkarten werden auf der linken Seite angezeigt ] {#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL Layout mit Registerkarten – Registerkarten werden auf der linken Seite angezeigt &#x200B;] {#tabbed-layout-tabs-appear-on-the-left}
 
 Mithilfe dieses Layouts können Sie die Komponente **[!UICONTROL Bereich für adaptive Formulare]** in einen Bereich mit Registerkartennavigation einfügen. Die Registerkarten befinden sich auf der linken Seite der Bereichsinhalte.
 
@@ -109,7 +109,7 @@ Wie der Name schon sagt, werden bei diesem Layout neben dem Navigationsmenü und
 
 ![Layouts für Mobilgeräte mit Bereichstiteln in den Formularkopfzeilen](assets/mobile-layout1.png)
 
-### [!UICONTROL Layout ohne Bereichstitel in der Formularkopfzeile ] {#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL Layout ohne Bereichstitel in der Formularkopfzeile &#x200B;] {#layout-without-panel-titles-in-the-form-header}
 
 Wie der Name schon sagt, werden bei diesem Layout nur das Navigationsmenü und die Navigationsleiste ohne Bedienfeldtitel angezeigt. Dieses Layout enthält auch die Symbole Weiter und Zurück zur Navigation.
 

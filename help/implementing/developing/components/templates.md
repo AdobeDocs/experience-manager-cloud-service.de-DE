@@ -489,6 +489,7 @@ Seitenrichtlinien erm√∂glichen es, die [Inhaltsrichtlinie](#content-policies) f√
    * Durch Festlegen der Statuseigenschaft des Knotens `jcr:content`
 
       * Zum Beispiel unter:
+
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Definieren Sie die Eigenschaft:
@@ -501,6 +502,7 @@ Seitenrichtlinien erm√∂glichen es, die [Inhaltsrichtlinie](#content-policies) f√
 
    * [Definieren Sie die Pfade zugelassener Vorlagen √ºber die **Seiteneigenschaften**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
    * Legen Sie die folgende Eigenschaft fest:
+
      `cq:allowedTemplates`
 Im `jcr:content`-Knoten der erforderlichen Verzweigung.
 
