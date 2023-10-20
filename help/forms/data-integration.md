@@ -2,10 +2,10 @@
 title: Verbinden einer Datenbank mit [!DNL AEM Forms] as a Cloud Service
 description: Rufen Sie Daten von einem adaptiven Formular oder einem AEM Workflow ab und speichern Sie sie in RESTful-Webdiensten, SOAP-basierten Webdiensten und OData-Diensten.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 596cd08a98b1d9d47825438e1d64b6db3f847271
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 87%
+source-wordcount: '542'
+ht-degree: 59%
 
 ---
 
@@ -17,11 +17,12 @@ ht-degree: 87%
 | AEM as a Cloud Service | Dieser Artikel |
 
 
+
 ![Datenintegration](do-not-localize/data-integeration.png)
 
 Unternehmensinfrastrukturen umfassen unterschiedliche Back-End-Systeme oder Datenquellen wie Datenbanken, Webservices, REST-Services, OData-Services und CRM-Lösungen. Zusammen bilden sie ein Informationssystem, das Daten für Unternehmensanwendungen zur Abwicklung des Tagesgeschäfts bereitstellt. Umgekehrt erfassen die Anwendungen Daten und senden sie zurück, um die Datenquellen zu aktualisieren.
 
-Für [!DNL AEM Forms]-Anwendungen wie adaptive Formulare und interaktive Kommunikation ist die Integration in Datenquellen erforderlich, damit Kundendaten abgerufen, Formulare gerendert und interaktive Kommunikation erstellt werden können. Es gibt Anwendungsfälle, bei denen Daten basierend auf Benutzereingaben in adaptiven Formularen aus Datenquellen abgerufen werden. Zusätzlich können die übermittelten Daten im adaptiven Formular in die jeweiligen Datenquellen zurückgeschrieben werden, um diese zu aktualisieren.
+Wenn Sie das adaptive Formular mit einer Datenbank verbinden, ist die Integration mit Datenquellen erforderlich, um Kundendaten beim Rendern von Formularen abzurufen. Es gibt Anwendungsfälle, bei denen Daten basierend auf Benutzereingaben in adaptiven Formularen aus Datenquellen abgerufen werden. Wenn Sie ein adaptives Formular an eine Datenbank senden, können die gesendeten Daten des adaptiven Formulars zurückgeschrieben werden, um die entsprechenden Datenquellen zu aktualisieren.
 
 Ein verteiltes, modulares System hat seine eigenen Vorteile, aber die Herausforderung besteht darin, Datenverknüpfungen über Datenquellen hinweg zu integrieren und zu erstellen. Datenintegration ist der Schlüssel zu einer funktionsfähigen und effizienten Unternehmensinfrastruktur mit unterschiedlichen Datenquellen, die für den Austausch von Geschäftsdaten mit Anwendungen verbunden sind.
 
@@ -36,20 +37,20 @@ Ein verteiltes, modulares System hat seine eigenen Vorteile, aber die Herausford
 * Erstellen von Verknüpfungen zwischen Datenmodellobjekten innerhalb und zwischen Datenquellen.
 * Aufrufen von Services für Datenmodellobjekte zum Abfragen von Daten aus und Schreiben von Daten in Datenquellen.
 
-Nachdem Sie ein Formulardatenmodell erstellt haben, können Sie es in verschiedenen Workflows für adaptive Formulare und interaktive Kommunikation verwenden, zum Beispiel:
+Nachdem Sie ein Formulardatenmodell erstellt haben, können Sie es wie folgt verwenden:
 
-* Erstellen adaptiver Formulare und interaktiver Kommunikation basierend auf dem Formulardatenmodell
-* Ausfüllen adaptiver Formulare und interaktiver Kommunikation aus konfigurierten Datenquellen
+* Adaptive Forms basierend auf einem Formulardatenmodell erstellen
+* Adaptives Forms aus konfigurierten Datenquellen vorbefüllen
 * Aufrufen von Datenquellen-Serivices/-vorgängen mithilfe von Regeln für adaptive Formulare
 * Schreiben von Daten übermittelten adaptiven Formulardaten in Datenquellen
 
 ## Erste Schritte mit der Datenintegration {#get-started-with-data-integration}
 
-Der erste Schritt zur Implementierung der Datenintegration besteht darin, Datenquellen, die Informationen speichern und die Sie in Anwendungsfällen für adaptive Formulare sowie interaktive Kommunikation verwenden möchten, zu identifizieren und zu konfigurieren. Als Nächstes erstellen Sie ein Formulardatenmodell, das Datenmodellobjekte, Eigenschaften und Services aus mindestens einer Datenquelle verwendet. Sie können adaptive Formulare und interaktive Kommunikation auf Grundlage eines Formulardatenmodells erstellen, bei dem Felder adaptiver Formulare oder Platzhalter in interaktiver Kommunikation an die jeweiligen Datenquelleneigenschaften gebunden sind.
+Der erste Schritt zur Implementierung der Datenintegration zum Senden des adaptiven Formulars an eine Datenbank besteht darin, Datenquellen zu identifizieren und zu konfigurieren, in denen Informationen gespeichert werden, die Sie in Adaptive Forms verwenden möchten. Als Nächstes erstellen Sie ein Formulardatenmodell, das Datenmodellobjekte, Eigenschaften und Dienste aus einer oder mehreren Datenquellen verwendet. Sie können adaptive Forms auf Grundlage eines Formulardatenmodells erstellen, bei dem adaptive Formularfelder an die entsprechenden Datenquelleneigenschaften gebunden sind.
 
 [!DNL AEM Forms] Sie können auch ein Formulardatenmodell erstellen, das unabhängig von Datenquellen ist, und Datenmodellobjekte und Eigenschaften im Formulardatenmodell später mit der Datenquelle verknüpfen oder verknüpfen. Dadurch werden alle Abhängigkeiten von Datenquellen entfernt, während Sie an einem Formulardatenmodell arbeiten.
 
-Lesen Sie folgende Informationen für die ersten Schritte mit der Datenintegration, um sie zu verstehen und zu implementieren.
+Lesen Sie folgende Informationen für die ersten Schritte mit der Datenintegration, um sie zu verstehen und zu implementieren:
 
 * [Konfigurieren von Datenquellen](configure-data-sources.md)
 * [Erstellen des Formulardatenmodells](create-form-data-models.md)

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2bb6c6b5846264145543134f607bd6520865b4ed
+source-git-commit: bb7bbe5e31d75a72b3c81939ce560e3ff3979a86
 workflow-type: tm+mt
-source-wordcount: '4330'
+source-wordcount: '4331'
 ht-degree: 93%
 
 ---
@@ -575,7 +575,7 @@ ht-degree: 93%
          + [Einbetten des adaptiven Formulars basierend auf Kernkomponenten in eine externe Webseite](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [Einbetten des adaptiven Formulars basierend auf Foundation-Komponenten in eine externe Webseite](/help/forms/embed-adaptive-form-external-web-page.md)
       + Formulardatenmodell {#use-form-data-model}
-         + [Verbinden von Datenquellen mit Cloud Service](/help/forms/data-integration.md)
+         + [Verbinden von AEM Forms mit Datenbank oder Datenquelle](/help/forms/data-integration.md)
          + [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md)
          + [Konfigurieren von [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Salesforce-Anwendungsintegration mit OAuth 2.0-Client-Anmeldedaten](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
