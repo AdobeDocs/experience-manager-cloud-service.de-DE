@@ -120,7 +120,7 @@ Damit eine Komponente mit dem Stilsystem von AEM zusammenarbeitet und die Regist
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
-Dabei werden [Überlagerungen](/help/implementing/developing/introduction/overlays.md) über den [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) verwendet.
+>Dabei werden [Überlagerungen](/help/implementing/developing/introduction/overlays.md) über den [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) verwendet.
 
 Ist die Komponente entsprechend konfiguriert, fügt AEM die von den Seitenautorinnen bzw. -autoren festgelegten Stile automatisch in das Dekorationselement ein, das AEM automatisch für jede bearbeitbare Komponente als Wrapper verwendet. Dafür ist keine weitere Aktion der Komponente erforderlich.
 
@@ -134,11 +134,11 @@ Die Registerkarte für das Dialogfeld „Bearbeiten“ kann auf ähnliche Weise 
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
-Dabei werden [Überlagerungen](/help/implementing/developing/introduction/overlays.md) über den [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) verwendet.
+>Dabei werden [Überlagerungen](/help/implementing/developing/introduction/overlays.md) über den [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) verwendet.
 
 >[!NOTE]
 >
-Die Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ ist standardmäßig nicht aktiviert.
+>Die Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ ist standardmäßig nicht aktiviert.
 
 ### Stile mit Elementnamen {#styles-with-element-names}
 
@@ -150,11 +150,11 @@ Diese Eigenschaft wird auf dem Knoten `cq:Component` festgelegt. Beispiel:
 
 >[!CAUTION]
 >
-Definieren Sie keine Elementnamen für Stile, die kombiniert werden können. Wenn mehrere Elementnamen definiert werden, gilt die folgende Prioritätsreihenfolge:
+>Definieren Sie keine Elementnamen für Stile, die kombiniert werden können. Wenn mehrere Elementnamen definiert werden, gilt die folgende Prioritätsreihenfolge:
 >
-1. HTL hat stets den Vorrang: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
-1. Danach wird unter mehreren aktiven Stilen der erste Stil in der Liste der in der Komponentenrichtlinie konfigurierten Stile ausgewählt.
-1. Die Werte `cq:htmlTag`/`cq:tagName` der Komponente werden schließlich als Ausweichwert verwendet.
+>1. HTL hat stets den Vorrang: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
+>1. Danach wird unter mehreren aktiven Stilen der erste Stil in der Liste der in der Komponentenrichtlinie konfigurierten Stile ausgewählt.
+>1. Die Werte `cq:htmlTag`/`cq:tagName` der Komponente werden schließlich als Ausweichwert verwendet.
 >
 
 Die Fähigkeit, Stilnamen zu definieren, ist bei generischen Komponenten wie dem Layout-Container oder der Inhaltsfragmentkomponente hilfreich, um diesen eine zusätzliche Bedeutung zu verleihen.

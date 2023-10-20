@@ -312,7 +312,7 @@ Die darin enthaltenen Dateien müssen wie folgt benannt werden:
 
 >[!TIP]
 >
-Um mehr Dateien auf weniger eingeschränkte Weise einbeziehen zu können, sollten Sie zum flexiblen Dispatcher-Konfigurationsmodus wechseln. Weitere Informationen zum flexiblen Modus finden Sie im Dokument [Validieren und Debuggen mit den Dispatcher-Tools](/help/implementing/dispatcher/validation-debug.md).
+>Um mehr Dateien auf weniger eingeschränkte Weise einbeziehen zu können, sollten Sie zum flexiblen Dispatcher-Konfigurationsmodus wechseln. Weitere Informationen zum flexiblen Modus finden Sie im Dokument [Validieren und Debuggen mit den Dispatcher-Tools](/help/implementing/dispatcher/validation-debug.md).
 
 Alternativ können Sie die **Standardversion** der Neuschreibungsregeln einbeziehen, deren Name `conf.d/rewrites/default_rewrite.rules` lautet.
 Beachten Sie, dass es keine Standardversion der Variablendateien gibt.
@@ -352,7 +352,7 @@ Vermeiden Sie diesen Fehler, indem Sie den Pfad aus Windows Explorer kopieren un
 Diese Phase überprüft die Apache-Syntax, indem Docker in einem Image gestartet wird. Docker muss lokal installiert sein, aber beachten Sie, dass es nicht erforderlich ist, AEM auszuführen.
 
 >[!NOTE]
-Windows-Benutzerinnen und -Benutzer müssen Windows 10 Professional oder andere Distributionen verwenden, die Docker unterstützen. Diese Voraussetzung ist erforderlich, um den Dispatcher auf einem lokalen Computer auszuführen und zu debuggen.
+>Windows-Benutzerinnen und -Benutzer müssen Windows 10 Professional oder andere Distributionen verwenden, die Docker unterstützen. Diese Voraussetzung ist erforderlich, um den Dispatcher auf einem lokalen Computer auszuführen und zu debuggen.
 
 Diese Phase kann auch unabhängig über `validator full -d out src/dispatcher` ausgeführt werden, wodurch ein „Out“-Verzeichnis generiert wird, das vom nächsten Befehl `bin/docker_run.sh out host.docker.internal:4503 8080` benötigt wird.
 
