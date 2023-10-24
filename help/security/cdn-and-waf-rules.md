@@ -2,9 +2,9 @@
 title: Konfigurieren von Traffic-Filterregeln mit WAF-Regeln
 description: Verwenden von Traffic-Filterregeln mit WAF-Regeln zum Filtern des Traffics
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 218bf89a21f6b5e7f2027a88c488838b3e72b80e
+source-git-commit: 5231d152a67b72909ca5b38f0bbc40616ccd4739
 workflow-type: tm+mt
-source-wordcount: '3810'
+source-wordcount: '3661'
 ht-degree: 1%
 
 ---
@@ -166,6 +166,7 @@ Eine Gruppe von Bedingungen besteht aus mehreren einfachen und/oder Gruppenbedin
 | reqHeader | `string` | Gibt den Anforderungsheader mit dem angegebenen Namen zurück |
 | queryParam | `string` | Gibt Abfrageparameter mit dem angegebenen Namen zurück |
 | reqCookie | `string` | Gibt Cookie mit dem angegebenen Namen zurück |
+| postParam | `string` | Gibt den Parameter mit dem angegebenen Namen aus dem Hauptteil zurück. Nur funktionieren, wenn der Hauptteil vom Inhaltstyp ist `application/x-www-form-urlencoded` |
 
 **Prädikat**
 
@@ -208,12 +209,9 @@ Die `wafFlags` -Eigenschaft kann Folgendes umfassen:
 | TRAVERSAL | Verzeichnisdurchlauf | Directory Traversal ist der Versuch, in einem System durch privilegierte Ordner zu navigieren, in der Hoffnung, vertrauliche Informationen zu erhalten. |
 | BENUTZERAGENT | Attack-Tools | Attack Tooling ist der Einsatz automatisierter Software zur Identifizierung von Sicherheitslücken oder zum Versuch, eine entdeckte Verwundbarkeit auszunutzen. |
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI-Angriffe versuchen, die [Sicherheitslücke durch Log4Shell](https://en.wikipedia.org/wiki/Log4Shell) in Log4J-Versionen vor 2.16.0 vorhanden |
-| AWS SSRF | AWS-SSRF | Server Side Request Forgery (SSRF) ist eine Anfrage, die versucht, von der Webanwendung gestellte Anforderungen an interne Systeme zu senden. AWS SSRF-Angriffe nutzen SSRF, um Amazon Web Services (AWS)-Schlüssel zu erhalten und Zugriff auf S3-Buckets und deren Daten zu erhalten. |
 | BHH | Bad Hop Headers | Bad Hop-Header weisen auf einen HTTP-Schmuggelversuch durch einen fehlerhaften Transfer-Encoding (TE)- oder Content-Length (CL)-Header oder einen korrekt formatierten TE- und CL-Header hin. |
 | ABNORMALPATH | Anormaler Pfad | Anormaler Pfad gibt an, dass der ursprüngliche Pfad vom normalisierten Pfad abweicht (z. B. `/foo/./bar` wird normalisiert in `/foo/bar`) |
-| KOMPRIMIERT | Komprimierung erkannt | Der Hauptteil der POST-Anforderung ist komprimiert und kann nicht überprüft werden. Wenn beispielsweise ein Anforderungsheader &quot;Content-Encoding: gzip&quot;angegeben ist und der POST-Textkörper kein Normaltext ist. |
 | DOUBLEENCODE | Doppelte Kodierung | Bei der doppelten Kodierung wird geprüft, ob HTML-Zeichen doppelt kodiert werden |
-| FORCEFULBROWSING | Erzwungenes Browsen | Beim erzwungenen Browsen wird nicht versucht, auf Admin-Seiten zuzugreifen. |
 | NOTUTF8 | Ungültige Kodierung | Eine ungültige Kodierung kann dazu führen, dass der Server böswillige Zeichen aus einer Anfrage in eine Antwort übersetzt, was entweder zu einer Dienstverweigerung oder XSS führt |
 | JSON-FEHLER | JSON-Kodierungsfehler | Ein POST-, PUT- oder PATCH-Anforderungstext, der als JSON-Inhalt im Anforderungsheader &quot;Content-Type&quot;enthält, aber JSON-Parsing-Fehler enthält. Dies hängt häufig mit einem Programmierfehler oder einer automatisierten oder böswilligen Anfrage zusammen. |
 | MALFORMED-DATA | Fehlerhafte Daten im Anfrageinhalt | Ein POST-, PUT- oder PATCH-Anfrageinhalt, der gemäß der Anfragekopfzeile &quot;Content-Type&quot;fehlerhaft ist. Wenn beispielsweise ein Anforderungsheader &quot;Content-Type: application/x-www-form-urlencoded&quot;angegeben ist und einen POST-Hauptteil enthält, der json ist. Dies ist häufig ein Programmierfehler, eine automatisierte oder böswillige Anfrage. Erfordert Agent 3.2 oder höher. |
@@ -222,9 +220,7 @@ Die `wafFlags` -Eigenschaft kann Folgendes umfassen:
 | NO-CONTENT-TYPE | Fehlende Anfrage-Kopfzeile &quot;Content-Type&quot; | Eine Anfrage vom Typ POST, PUT oder PATCH, die keinen Anforderungsheader vom Typ &quot;Content-Type&quot;enthält. Standardmäßig sollten Anwendungsserver in diesem Fall von &quot;Content-Type: text/plain; charset=us-ascii&quot;ausgehen. Bei vielen automatisierten und böswilligen Anfragen fehlt möglicherweise &quot;Content Type&quot;. |
 | NOUA | Kein Benutzeragent | Viele automatisierte und böswillige Anfragen verwenden gefälschte oder fehlende Benutzeragenten, um die Identifizierung des Gerätetyps zu erschweren, der die Anforderungen stellt. |
 | TORNODE | Tor Traffic | Tor ist eine Software, die die Identität eines Benutzers verschleiert. Eine Spitze im Tor-Traffic kann darauf hinweisen, dass ein Angreifer versucht, seinen Standort zu verschleiern. |
-| DATENZENTRUM | Datenverkehr in Rechenzentren | Datenzentrum-Traffic ist nicht organischer Traffic, der von identifizierten Hosting-Anbietern stammt. Diese Art von Traffic wird normalerweise nicht mit einem echten Endbenutzer verknüpft. |
 | NULLBYTE | Null Byte | Null-Bytes werden normalerweise nicht in einer Anfrage angezeigt und weisen darauf hin, dass die Anfrage falsch formatiert ist und möglicherweise bösartig ist. |
-| IMPOSTOR | SearchBot-Impostor | Suchbot-Impostor ist jemand, der vorgibt, ein Google- oder Bing-Suchbot zu sein, aber nicht legitim ist. Beachten Sie, dass nicht von einer Antwort allein abhängt, sondern zuerst in der Cloud aufgelöst werden muss. Daher sollte sie nicht in einer Vorregel verwendet werden. |
 | PRIVATEFILE | Private Dateien | Private Dateien sind normalerweise vertraulich, wie z. B. ein Apache `.htaccess` -Datei oder einer Konfigurationsdatei, die vertrauliche Informationen übergeben kann |
 | SCANNER | Scanner | Identifiziert beliebte Scandienste und -werkzeuge |
 | RESPONSESPLIT | HTTP-Antwortaufteilung | Gibt an, wann CRLF-Zeichen als Eingabe an die Anwendung gesendet werden, um Header in die HTTP-Antwort einzufügen. |
