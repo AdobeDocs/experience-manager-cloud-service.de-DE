@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bb7bbe5e31d75a72b3c81939ce560e3ff3979a86
+source-git-commit: 5e6d209729809952b2478fd0a71b32668ba41230
 workflow-type: tm+mt
-source-wordcount: '4331'
+source-wordcount: '4336'
 ht-degree: 93%
 
 ---
@@ -563,7 +563,7 @@ ht-degree: 93%
       + [Migrieren von  [!DNL AEM 6.5 Forms]  oder früher zu  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppen und Berechtigungen](/help/forms/forms-groups-privileges-tasks.md)
       + [Importieren, Exportieren und Organisieren von adaptiven Formularen, PDF-Formularen und anderen Assets](/help/forms/import-export-forms-templates.md)
-   + Integrieren von {#integrate}
+   + Integrieren von {#integrate} 
       + Dienste {#services}
          + [Integrieren von AEM Forms as a Cloud Service mit Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [Integrieren von AEM Forms as a Cloud Service mit DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
@@ -873,6 +873,7 @@ ht-degree: 93%
          + [Anwenden und Aufheben der Anwendung von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [Verwalten von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md)
+      + [Grundlegendes zu Cloud Service-Inhaltsanforderungen](/help/implementing/cloud-manager/content-requests.md)
       + [Häufig gestellte Fragen zu Cloud Manager](/help/implementing/cloud-manager/faqs.md)
    + Entwickeln für AEM as a Cloud Service {#developing}
       + [Struktur von AEM-Projekten](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
