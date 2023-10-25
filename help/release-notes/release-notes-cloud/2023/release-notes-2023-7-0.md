@@ -1,13 +1,13 @@
 ---
 title: Versionshinweise für Version 2023.7.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2023.7.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 1158508cc28d33e5799b3102381f227db05a0107
+exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
 workflow-type: tm+mt
 source-wordcount: '942'
-ht-degree: 33%
+ht-degree: 47%
 
 ---
-
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2023.7.0 {#release-notes}
 
@@ -15,7 +15,7 @@ Im folgenden Abschnitt werden die Versionshinweise zu den neuen Funktionen der V
 
 >[!NOTE]
 >
->Von hier aus können Sie zu Versionshinweisen früherer Versionen wie 2021 oder 2022 navigieren.
+>Von hier aus können Sie zu den Versionshinweisen früherer Versionen wie 2021 oder 2022 navigieren.
 >
 >Sehen Sie sich die [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de) an, um mehr über die bevorstehenden Funktionsaktivierungen für [!DNL Experience Manager] as a Cloud Service zu erfahren.
 
@@ -41,13 +41,13 @@ Sehen Sie sich das Video Versionsübersicht vom Juli 2023 an, um eine Zusammenfa
 
 ### Neue Funktionen in der Vorabversion von [!DNL Experience Manager Sites] {#prerelease-sites}
 
-* Die [Inhaltsfragmentkonsole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en) ermöglicht es Benutzern nun, Tags anzuzeigen und nach Tags zu suchen, die als Metadaten auf Inhaltsfragmente angewendet werden. Benutzer müssen nicht mehr zur Assets-Benutzeroberfläche wechseln, um diese Funktion zu nutzen, wodurch der Kontextwechsel reduziert und die Effizienz verbessert wird.
+* Die [Inhaltsfragmentkonsole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=de) ermöglicht es Benutzern nun, Tags anzuzeigen und nach Tags zu suchen, die als Metadaten auf Inhaltsfragmente angewendet werden. Benutzer müssen nicht mehr zur Assets-Benutzeroberfläche wechseln, um diese Funktion zu nutzen, wodurch der Kontextwechsel reduziert und die Effizienz verbessert wird.
 
 ![Tagging in der Inhaltsfragmentkonsole](/help/assets/content-fragments-console-tags.png)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Neue Funktionen in der Asset-Ansicht {#assets-view-features}
+### Neue Funktionen in der Assets-Ansicht {#assets-view-features}
 
 <!--
 
@@ -84,7 +84,7 @@ Assets Essentials sortiert die Suchergebnisse nun standardmäßig nach Relevanz.
 
 * **[React-Komponenten für Headless Forms](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: Sie können jetzt Headless-Adaptive Formularwiedergaben mit den vordefinierten React-Komponenten in der Vorschau anzeigen und anpassen. Diese Komponenten nutzen BEM-Klassen aus den adaptiven Forms-Kernkomponenten für die Formatierung, sodass Sie das Erscheinungsbild mühelos an Ihre spezifischen Anforderungen anpassen können.
 
-* [**Adaptive Forms mit wiederholbaren Abschnitten erstellen**](/help/forms/create-forms-repeatable-sections.md): Jetzt können Sie [Akkordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Assistent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Bedienfeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), und [Horizontale Registerkarten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) Komponenten, die auf dem adaptiven Formular basieren, wiederholbar für die Erfassung mehrerer Datensätze.  Mit diesen wiederholbaren Abschnitten können Sie mehrere Dateneinträge einfach bereitstellen. Dies ist nützlich, wenn die erforderlichen Dateninstanzen im Voraus unbekannt sind. Ein Formularbenutzer kann problemlos Abschnitte hinzufügen oder entfernen, sodass Formulare an verschiedene Dateneingabeszenarien angepasst werden können und die Erfassung mehrerer Vorkommen desselben Datensatzes vereinfacht wird.
+* [**Adaptive Forms mit wiederholbaren Abschnitten erstellen**](/help/forms/create-forms-repeatable-sections.md): Jetzt können Sie [Akkordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=de), [Assistent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=de), [Bedienfeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=de), und [Horizontale Registerkarten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=de) Komponenten, die auf dem adaptiven Formular basieren, wiederholbar für die Erfassung mehrerer Datensätze.  Mit diesen wiederholbaren Abschnitten können Sie mehrere Dateneinträge einfach bereitstellen. Dies ist nützlich, wenn die erforderlichen Dateninstanzen im Voraus unbekannt sind. Ein Formularbenutzer kann problemlos Abschnitte hinzufügen oder entfernen, sodass Formulare an verschiedene Dateneingabeszenarien angepasst werden können und die Erfassung mehrerer Vorkommen desselben Datensatzes vereinfacht wird.
 
 
 ### Funktionen zur Vorabversion sind verfügbar in [!DNL Forms] {#pre-release-features-available-in-forms-channel}
@@ -95,14 +95,14 @@ Assets Essentials sortiert die Suchergebnisse nun standardmäßig nach Relevanz.
 
 ### Early-Adopter-Programm für adaptive Headless-Formulare {#forms-early-adopter}
 
-Verwendung [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de) , damit Ihre Entwickler interaktive Formulare erstellen, veröffentlichen und verwalten können, auf die über APIs und nicht über eine herkömmliche grafische Benutzeroberfläche zugegriffen und mit denen interagiert werden kann. Adaptive Headless-Formulare unterstützen Sie bei Folgendem:
+Die Benutzung von [adaptiven Headless-Formularen](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de) ermöglicht es Entwicklerinnen und Entwicklern, interaktive Formulare zu erstellen, zu veröffentlichen und zu verwalten, für die der Zugriff und die Interaktion über APIs und nicht über eine herkömmliche grafische Benutzeroberfläche möglich ist. Adaptive Headless-Formulare unterstützen Sie bei Folgendem:
 
 * Erstellen hochwertiger Mehrkanal-Formulare in der gewünschten Programmiersprache
 * Native Integration von Formularen in Ihre Desktop- und Mobile Apps, Websites und Chat-Anwendungen
 * Wiederverwenden Ihrer proprietären UI-Komponenten mit Formularanwendungen
 * Nutzung der Leistungsfähigkeit von Adobe Experience Manager Forms
 
-Sie können eine E-Mail an senden `aem-forms-headless@adobe.com` von Ihrer offiziellen E-Mail-ID, um dem frühen Adopter-Programm beizutreten.
+Sie können von Ihrer offiziellen E-Mail-ID eine E-Mail an `aem-forms-headless@adobe.com` senden, um am Early-Adopter-Programm teilzunehmen.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -120,7 +120,7 @@ Filtern Sie den Traffic im CDN anhand von:
 
 Möchten Sie die Funktion ausprobieren und Feedback teilen? E-Mail an senden **aemcs-waf-adopter@adobe.com** von Ihrer offiziellen E-Mail-ID, um mehr über das Programm für frühe Anwender zu erfahren. Der Platz ist begrenzt.
 
-Weitere Informationen zur Funktion finden Sie im Artikel . [here](/help/security/cdn-and-waf-rules.md).
+Weitere Informationen zur Funktion finden Sie im Artikel . [here](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Sonstige Foundation-Änderungen {#other-foundation-changes}
 

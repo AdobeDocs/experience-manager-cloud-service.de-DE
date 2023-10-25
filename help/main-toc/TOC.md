@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5e6d209729809952b2478fd0a71b32668ba41230
+source-git-commit: c9ad4b6f2ae5107569c556ca11c75868c9e4be63
 workflow-type: tm+mt
-source-wordcount: '4336'
+source-wordcount: '4335'
 ht-degree: 93%
 
 ---
@@ -168,7 +168,7 @@ ht-degree: 93%
    + [IMS-Unterstützung für AEM as a Cloud Service](/help/security/ims-support.md)
    + [Same-Site-Cookie-Unterstützung für AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [OAuth2-Unterstützung für den E-Mail-Service](/help/security/oauth2-support-for-mail-service.md)
-   + [Konfigurieren von Traffic-Filterregeln mit WAF-Regeln zum Filtern des Traffics](/help/security/cdn-and-waf-rules.md)
+   + [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service Sicherheitsüberlegungen](/help/security/security-considerations.md)
 + Einstieg {#onboarding}
    + [Hier beginnen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=de)
@@ -578,7 +578,7 @@ ht-degree: 93%
          + [Verbinden von AEM Forms mit Datenbank oder Datenquelle](/help/forms/data-integration.md)
          + [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md)
          + [Konfigurieren von [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [Salesforce-Anwendungsintegration mit OAuth 2.0-Client-Anmeldedaten](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [Verbinden des adaptiven Formulars mit der Salesforce-Anwendung mithilfe des OAuth 2.0-Client-Anmeldedatenflusses](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [Konfigurieren von [!DNL Azure] -Speicher](/help/forms/configure-azure-storage.md)
          + [Konfigurieren von [!DNL Microsoft Dynamics 365] und [!DNL Salesforce] -Cloud-Services](/help/forms/configure-msdynamics-salesforce.md)
          + [Erstellen von Formulardatenmodellen](/help/forms/create-form-data-models.md)

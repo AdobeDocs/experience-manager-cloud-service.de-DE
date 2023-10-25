@@ -1,13 +1,13 @@
 ---
 title: Versionshinweise für Version 2023.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2023.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 2b242cb10fb5d1da725c1396633d2db779a78639
+exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
 workflow-type: tm+mt
 source-wordcount: '1686'
-ht-degree: 21%
+ht-degree: 30%
 
 ---
-
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2023.8.0 {#release-notes}
 
@@ -27,7 +27,7 @@ Sehen Sie sich das Video Versionsübersicht vom August 2023 an, um eine Zusammen
 
 ### Neue Funktionen in [!DNL Experience Manager Sites] {#sites-features}
 
-* Die [Inhaltsfragmentkonsole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en) ermöglicht es Benutzern nun, Tags anzuzeigen und nach Tags zu suchen, die als Metadaten auf Inhaltsfragmente angewendet werden. Benutzer müssen nicht mehr zur Assets-Benutzeroberfläche wechseln, um diese Funktion zu nutzen, wodurch der Kontextwechsel reduziert und die Effizienz verbessert wird.
+* Die [Inhaltsfragmentkonsole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=de) ermöglicht es Benutzern nun, Tags anzuzeigen und nach Tags zu suchen, die als Metadaten auf Inhaltsfragmente angewendet werden. Benutzer müssen nicht mehr zur Assets-Benutzeroberfläche wechseln, um diese Funktion zu nutzen, wodurch der Kontextwechsel reduziert und die Effizienz verbessert wird.
 
   ![Tagging in der Inhaltsfragmentkonsole](/help/assets/content-fragments-console-tags.png)
 * Der neue Inhaltsfragment-Editor ist jetzt auf AEM as a Cloud Service verfügbar. Sie ermöglicht es Autoren von Inhalten, produktiver zu sein, indem sie ihre Authoring-Aufgaben optimieren und das Wechseln zwischen verschiedenen Apps bei der Bearbeitung von Inhalten reduzieren.
@@ -54,7 +54,7 @@ Der neue Inhaltsfragment-Editor bietet die folgenden Vorteile, die im ursprüngl
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Neue Funktionen in der Asset-Ansicht {#assets-view-features}
+### Neue Funktionen in der Assets-Ansicht {#assets-view-features}
 
 <!--
 
@@ -66,21 +66,21 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 -->
 
-* **Massenimport von Assets aus Datenquellen**: Administratoren verfügen jetzt über die [Möglichkeit zum Importieren einer großen Anzahl von Assets](/help/assets/bulk-import-assets-view.md) von einer Datenquelle zu AEM Assets. Administratoren müssen keine einzelnen Assets oder Ordner mehr in AEM Assets hochladen. Zu den unterstützten Datenquellen für den Massenimport gehören Azure, AWS, Google Cloud und Dropbox.
+* **Massenimport von Assets aus Datenquellen**: Administratoren verfügen jetzt über die [Möglichkeit zum Importieren einer großen Anzahl von Assets](/help/assets/bulk-import-assets-view.md) von einer Datenquelle zu AEM Assets. Die Admins müssen keine einzelnen Assets oder Ordner mehr in AEM Assets hochladen. Zu den unterstützten Datenquellen für den Massenimport gehören Azure, AWS, Google Cloud und Dropbox.
 
   ![Massenimport von Assets aus einer Datenquelle](/help/release-notes/assets/bulk-import.png)
 
-* **Bildbearbeitungswerkzeuge auf Basis von Adobe Expreß**: Einfach und intuitiv [Bildbearbeitungswerkzeuge auf Basis von Adobe Expreß](/help/assets/edit-images-assets-view.md) direkt in AEM Assets verfügbar sind, um die Wiederverwendung von Inhalten zu steigern und die Content-Geschwindigkeit zu beschleunigen.
+* **Bildbearbeitungswerkzeuge basierend auf Adobe Express**: Einfach und intuitiv [Bildbearbeitungswerkzeuge auf Basis von Adobe Expreß](/help/assets/edit-images-assets-view.md) direkt in AEM Assets verfügbar sind, um die Wiederverwendung von Inhalten zu steigern und die Content-Geschwindigkeit zu beschleunigen.
 
-  ![Bildbearbeitung mit Adobe Expreß](/help/release-notes/assets/edit-adobe-express.png)
+  ![Bildbearbeitung mit Adobe Express](/help/release-notes/assets/edit-adobe-express.png)
 
-* **Flexibilität beim Einfügen von Elementen für meinen Workspace-Schnellzugriff**: Möglichkeit, Elemente für Sie, für Ihre gesamte Organisation oder für eine Liste von Gruppen auszuwählen und anzuheften, damit sie in der [Bereich &quot;Schnellzugriff&quot;in My Workspace](/help/assets/my-workspace-assets-view.md) basierend auf Ihrer Auswahl.
+* **Flexibilität beim Anheften von Elementen für den Schnellzugriff „Mein Arbeitsbereich“**: Möglichkeit, Elemente für Sie, für Ihre gesamte Organisation oder für eine Liste von Gruppen auszuwählen und anzuheften, damit sie in der [Bereich &quot;Schnellzugriff&quot;in My Workspace](/help/assets/my-workspace-assets-view.md) basierend auf Ihrer Auswahl.
 
-  ![Elemente für Gruppen fixieren](/help/release-notes/assets/pin-items-for-groups.png)
+  ![Anheften von Elementen für Gruppen](/help/release-notes/assets/pin-items-for-groups.png)
 
 ### Neue Funktionen in der Administratoransicht {#admin-view-features}
 
-**Verbesserungen der Suche**
+**Verbesserungen bei der Suche**
 
 * Administratoren können jetzt [Konfigurieren der Stapelgröße von Assets](/help/assets/search-assets.md#configure-asset-batch-size) die bei der Durchführung einer Suche angezeigt werden. Die Asset-Suchergebnisse zeigen ein Vielfaches der konfigurierten Stapelgrößenanzahl an, wenn Sie weiter nach unten scrollen, um die Ergebnisse zu laden. Sie können aus den verfügbaren Batch-Größen 200, 500 und 1000 Assets auswählen. Wenn Sie eine niedrigere Stapelgrößenanzahl festlegen, werden die Antwortzeiten der Suche beschleunigt.
 
@@ -96,7 +96,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **Assets**: Möglichkeit zur Auswahl von ZIP-Archiven, die in Experience Manager verwaltet werden, und [Extrahieren der Dateien direkt in Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) , ohne sie herunterzuladen.
 
-  ![Elemente für Gruppen fixieren](/help/release-notes/assets/extract-archive.png)
+  ![Anheften von Elementen für Gruppen](/help/release-notes/assets/extract-archive.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -127,19 +127,19 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **Unterstützung der Seitenzahl in Kommunikations-APIs**: Jetzt können Sie neben dem Abrufen Ihres Dokuments über die Kommunikations-APIs auch die wertvollen Informationen über die Anzahl der im Dokument enthaltenen Seiten erhalten.
 
-* **[Umgang mit Fehlern mit benutzerdefinierten Fehler-Handlern im Regeleditor](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: Sie können jetzt eine benutzerdefinierte Funktion aufrufen, wenn ein von einem externen Dienst zurückgegebener Fehler auftritt, und eine angepasste Antwort für Endbenutzer bereitstellen. Sie können beispielsweise einen benutzerdefinierten Workflow im Backend für bestimmte Fehlercodes aufrufen oder den Kunden darüber informieren, dass der Dienst ausgefallen ist.
+* **[Umgang mit Fehlern mit benutzerdefinierten Fehler-Handlern im Regeleditor](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: Sie können jetzt eine benutzerdefinierte Funktion aufrufen, wenn ein von einem externen Dienst zurückgegebener Fehler auftritt, und eine angepasste Antwort für Endbenutzer bereitstellen. Sie können beispielsweise einen benutzerdefinierten Workflow im Back-End für bestimmte Fehler-Codes aufrufen oder die Kundin bzw. den Kunden darüber informieren, dass der Dienst nicht verfügbar ist.
 
 
 ### Early-Adopter-Programm für adaptive Headless-Formulare {#forms-early-adopter}
 
-Verwendung [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de) , damit Ihre Entwickler interaktive Formulare erstellen, veröffentlichen und verwalten können, auf die über APIs und nicht über eine herkömmliche grafische Benutzeroberfläche zugegriffen und mit denen interagiert werden kann. Adaptive Headless-Formulare unterstützen Sie bei Folgendem:
+Die Benutzung von [adaptiven Headless-Formularen](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de) ermöglicht es Entwicklerinnen und Entwicklern, interaktive Formulare zu erstellen, zu veröffentlichen und zu verwalten, für die der Zugriff und die Interaktion über APIs und nicht über eine herkömmliche grafische Benutzeroberfläche möglich ist. Adaptive Headless-Formulare unterstützen Sie bei Folgendem:
 
 * Erstellen hochwertiger Mehrkanal-Formulare in der gewünschten Programmiersprache
 * Native Integration von Formularen in Ihre Desktop- und Mobile Apps, Websites und Chat-Anwendungen
 * Wiederverwenden Ihrer proprietären UI-Komponenten mit Formularanwendungen
 * Nutzung der Leistungsfähigkeit von Adobe Experience Manager Forms
 
-Sie können eine E-Mail an senden `aem-forms-headless@adobe.com` von Ihrer offiziellen E-Mail-ID, um dem frühen Adopter-Programm beizutreten.
+Sie können von Ihrer offiziellen E-Mail-ID eine E-Mail an `aem-forms-headless@adobe.com` senden, um am Early-Adopter-Programm teilzunehmen.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
@@ -156,7 +156,7 @@ Filtern Sie den Traffic im CDN anhand von:
 
 Möchten Sie die Funktion ausprobieren und Feedback teilen? E-Mail an senden **aemcs-waf-adopter@adobe.com** von Ihrer offiziellen E-Mail-ID, um mehr über das Programm für frühe Anwender zu erfahren. Der Platz ist begrenzt.
 
-Weitere Informationen zur Funktion finden Sie im Artikel . [here](/help/security/cdn-and-waf-rules.md).
+Weitere Informationen zur Funktion finden Sie im Artikel . [here](/help/security/traffic-filter-rules-including-waf.md).
 
 
 ## Wartungsversionshinweise {#maintenance}
