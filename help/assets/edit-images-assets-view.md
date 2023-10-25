@@ -6,23 +6,23 @@ exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
 source-git-commit: 30b8c9b8eaee6292323dde4b436c29fe8290c910
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 55%
+ht-degree: 94%
 
 ---
 
 # Bearbeiten von Bildern in [!DNL Assets view] {#edit-images}
 
-[!DNL Assets view] bietet benutzerfreundliche Bearbeitungsoptionen, die von [!DNL Adobe Express] und [!DNL Adobe Photoshop Express]. Die Bearbeitungsaktionen, die mit [!DNL Adobe Express] sind Bildgröße ändern, Hintergrund entfernen, Bild beschneiden und JPEG in PNG konvertieren.
+[!DNL Assets view] bietet benutzerfreundliche Bearbeitungsoptionen, die von [!DNL Adobe Express] und [!DNL Adobe Photoshop Express] unterstützt werden. Die Bearbeitungsaktionen, die mit [!DNL Adobe Express] verfügbar sind, sind „Bildgröße ändern“, „Hintergrund entfernen“, „Bild zuschneiden“ und „JPEG in PNG konvertieren“.
 
-Nachdem Sie ein Bild bearbeitet haben, können Sie das neue Bild als neue Version speichern. Mit der Versionierung können Sie bei Bedarf später zum Original-Asset zurückkehren. So bearbeiten Sie ein Bild: [Vorschau öffnen](/help/assets/navigate-assets-view.md) und klicken **[!UICONTROL Bild bearbeiten]**.
+Nachdem Sie ein Bild bearbeitet haben, können Sie das neue Bild als neue Version speichern. Mit der Versionierung können Sie bei Bedarf später zum Original-Asset zurückkehren. Um ein Bild zu bearbeiten, [öffnen Sie seine Vorschau](/help/assets/navigate-assets-view.md) und klicken Sie auf **[!UICONTROL Bild bearbeiten]**.
 
 >[!NOTE]
 >
->Sie können Bilder von PNG- und JPEG-Dateitypen mit [!DNL Adobe Express].
+>Sie können mit [!DNL Adobe Express] Bilder vom Dateityp PNG und JPEG bearbeiten.
 
 <!--The editing actions that are available are Spot healing, Crop and straighten, Resize image, and Adjust image.-->
 
-## Bilder mit Adobe Expreß bearbeiten {#edit-using-express}
+## Bearbeiten von Bildern mit Adobe Express {#edit-using-express}
 
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -31,56 +31,56 @@ Nachdem Sie ein Bild bearbeitet haben, können Sie das neue Bild als neue Versio
 
 ### Ändern der Bildgröße {#resize-image-using-express}
 
-Ein beliebtes Anwendungsbeispiel ist die Größenanpassung eines Bildes auf eine bestimmte Größe. [!DNL Assets view] ermöglicht es Ihnen, die Größe des Bildes schnell an die gängigen Bildgrößen anzupassen, indem es vorab berechnete neue Auflösungen für bestimmte Bildgrößen bereitstellt. So ändern Sie die Bildgröße mithilfe von [!DNL Assets view]führen Sie die folgenden Schritte aus:
+Ein beliebtes Anwendungsbeispiel ist die Größenanpassung eines Bildes auf eine bestimmte Größe. [!DNL Assets view] ermöglicht es Ihnen, die Größe des Bildes schnell an die gängigen Bildgrößen anzupassen, indem es vorab berechnete neue Auflösungen für bestimmte Bildgrößen bereitstellt. Um die Bildgröße mit [!DNL Assets view] zu ändern, führen Sie die folgenden Schritte aus:
 
-1. Bild auswählen und auf **Bearbeiten**.
+1. Wählen Sie ein Bild aus und klicken Sie auf **Bearbeiten**.
 2. Klicks **[!DNL Resize Image]** über die im linken Bereich verfügbaren Schnellaktionen.
-3. Wählen Sie die entsprechende Social-Media-Plattform aus dem **[!UICONTROL Größe ändern für]** und wählen Sie die Bildgröße aus den angezeigten Optionen aus.
-4. Falls erforderlich, skalieren Sie das Bild mithilfe der **[!UICONTROL Bildskala]** -Feld.
+3. Wählen Sie die entsprechende Social-Media-Plattform aus der Dropdown-Liste **[!UICONTROL Größe ändern für]** aus und wählen Sie die Bildgröße aus den angezeigten Optionen aus.
+4. Falls erforderlich, skalieren Sie das Bild mithilfe des Feldes **[!UICONTROL Bildskala]**.
 5. Klicks **[!DNL Apply]** , um Ihre Änderungen anzuwenden.
-   ![Bildbearbeitung mit Adobe Expreß](assets/adobe-express-resize-image.png)
+   ![Bildbearbeitung mit Adobe Express](assets/adobe-express-resize-image.png)
 
-   Ihr bearbeitetes Bild kann heruntergeladen werden. Sie können das bearbeitete Asset entweder als neue Version desselben Assets speichern oder als neues Asset speichern.
-   ![Bild mit Adobe Expreß speichern](assets/adobe-express-resize-save.png)
+   Ihr bearbeitetes Bild kann heruntergeladen werden. Sie können das bearbeitete Asset entweder als neue Version desselben Assets oder als neues Asset speichern.
+   ![Speichern des Bildes mit Adobe Express](assets/adobe-express-resize-save.png)
 
-### Hintergrund entfernen {#remove-background-using-express}
+### Entfernen des Hintergrunds {#remove-background-using-express}
 
 Sie können den Hintergrund aus einem Bild in einigen einfachen Schritten entfernen, wie unten beschrieben:
 
-1. Bild auswählen und auf **Bearbeiten**.
+1. Wählen Sie ein Bild aus und klicken Sie auf **Bearbeiten**.
 2. Klicks **[!DNL Remove Background]** über die im linken Bereich verfügbaren Schnellaktionen. Experience Manager Assets zeigt das Bild ohne Hintergrund an.
 3. Klicks **[!DNL Apply]** , um Ihre Änderungen anzuwenden.
-   ![Bild mit Adobe Expreß speichern](assets/adobe-express-remove-background.png)
+   ![Speichern des Bildes mit Adobe Express](assets/adobe-express-remove-background.png)
 
-   Ihr bearbeitetes Bild kann heruntergeladen werden. Sie können das bearbeitete Asset entweder als neue Version desselben Assets speichern oder als neues Asset speichern.
+   Ihr bearbeitetes Bild kann heruntergeladen werden. Sie können das bearbeitete Asset entweder als neue Version desselben Assets oder als neues Asset speichern.
 
-### Bild beschneiden {#crop-image-using-express}
+### Zuschneiden eines Bildes {#crop-image-using-express}
 
-Das Umwandeln eines Bildes in eine perfekte Größe ist einfach durch Einbetten [!DNL Adobe Express] Schnellaktionen.
+Das Umwandeln eines Bildes in eine perfekte Größe ist einfach mit den eingebetteten Schnellaktionen von [!DNL Adobe Express].
 
-1. Bild auswählen und auf **Bearbeiten**.
+1. Wählen Sie ein Bild aus und klicken Sie auf **Bearbeiten**.
 2. Klicks **[!DNL Crop Image]** über die im linken Bereich verfügbaren Schnellaktionen.
-3. Ziehen Sie die Griffe an die Ecken des Bildes, um den gewünschten Zuschnitt zu erstellen.
+3. Ziehen Sie die Griffe an den Ecken des Bildes, um den gewünschten Zuschnitt zu erstellen.
 4. Klicken Sie auf **[!DNL Apply]**.
-   ![Bild mit Adobe Expreß speichern](assets/adobe-express-crop-image.png)
-Das zugeschnittene Bild kann heruntergeladen werden. Sie können das bearbeitete Asset entweder als neue Version desselben Assets speichern oder als neues Asset speichern.
+   ![Speichern Sie das Bild mit Adobe Express](assets/adobe-express-crop-image.png)
+Das zugeschnittene Bild kann heruntergeladen werden. Sie können das bearbeitete Asset entweder als neue Version desselben Assets oder als neues Asset speichern.
 
 ### JPEG in PNG konvertieren {#convert-jpeg-to-png-using-express}
 
-Mithilfe von Adobe Expreß können Sie schnell ein JPEG-Bild in ein PNG-Format konvertieren. Führen Sie die folgenden Schritte aus:
+Mithilfe von Adobe Express können Sie schnell ein JPEG-Bild in ein PNG-Format konvertieren. Führen Sie die folgenden Schritte aus:
 
-1. Bild auswählen und auf **Bearbeiten**.
+1. Wählen Sie ein Bild aus und klicken Sie auf **Bearbeiten**.
 2. Klicks **[!DNL JPEG to PNG]** über die im linken Bereich verfügbaren Schnellaktionen.
-   ![Konvertieren in PNG mit Adobe Expreß](assets/adobe-express-convert-image.png)
-3. Klicken Sie auf **[!UICONTROL Download]**.
+   ![Konvertieren in PNG mit Adobe Express](assets/adobe-express-convert-image.png)
+3. Klicken Sie auf **[!UICONTROL Herunterladen]**.
 
 ### Einschränkungen {#limitations-adobe-express}
 
-* Unterstützte Bildauflösung: Mindestens - 50 Pixel, Maximum - 6000 Pixel pro Dimension
+* Unterstützte Bildauflösung: Minimum – 50 Pixel, Maximum – 6000 Pixel pro Dimension
 
 * Maximale Dateigröße: 17 MB
 
-## Bilder bearbeiten mit [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
+## Bearbeiten von Bildern mit [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
 
 <!--
 After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](//help/navigate-assets-view.md#preview-assets) and click **[!UICONTROL Edit Image]** ![edit icon](assets/do-not-localize/edit-icon.png) from the rail on the right.
@@ -105,7 +105,7 @@ For more information about how Spot Healing works in Photoshop, see [retouching 
 
 ### Bilder zuschneiden und gerade ausrichten {#crop-straighten-images-using-photoshop-express}
 
-Mit der Option &quot;Zuschneiden und gerade ausrichten&quot;können Sie einfache Zuschnitte vornehmen, Bilder drehen, horizontal oder vertikal drehen und sie auf für beliebte Social-Media-Websites geeignete Dimensionen zuschneiden.
+Mit der Option „Zuschneiden und gerade ausrichten“ können Sie das Bild einfach zuschneiden, drehen, horizontal oder vertikal drehen und es auf für beliebte Social-Media-Websites geeignete Abmessungen zuschneiden.
 
 Um Ihre Änderungen zu speichern, klicken Sie auf **[!UICONTROL Bild zuschneiden]**. Nach der Bearbeitung können Sie das neue Bild als Version speichern.
 

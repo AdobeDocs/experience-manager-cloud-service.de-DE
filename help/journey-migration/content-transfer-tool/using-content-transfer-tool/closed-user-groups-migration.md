@@ -3,7 +3,8 @@ title: Migrieren geschlossener Benutzergruppen
 description: Erfahren Sie mehr über die erforderlichen besonderen Aspekte, um geschlossene Benutzergruppen nach der Migration von Inhalten zu Adobe Experience Manager as a Cloud Service zu aktivieren.
 hide: true
 hidefromtoc: true
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 8%
@@ -46,4 +47,3 @@ Zusammenfassend sind dies die Schritte, um CUG nach einer Migration zu aktiviere
    - Ist dies nicht der Fall, installieren Sie Pakete in der Zielinstanz (oder erstellen Sie sie dort manuell) und aktivieren Sie sie und ihre Mitglieder. Überprüfen Sie dann, ob es in der Veröffentlichungsinstanz vorhanden ist.
 1. Veröffentlichen Sie alle mit einer CUG-Richtlinie verknüpften Seiten erneut, und stellen Sie sicher, dass sie veröffentlicht werden, indem Sie beispielsweise die Seite zuerst bearbeiten. Es ist wichtig, alle erneut zu veröffentlichen.
    - Nachdem alle Seiten erneut veröffentlicht wurden, überprüfen Sie die Funktionalität für jede CUG-geschützte Seite.
-

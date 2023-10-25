@@ -72,7 +72,7 @@ Neben der Bereitstellung von Zeitüberschreitungen sollte auch eine ordnungsgem�
 >[!NOTE]
 >Die HTTP-Fehlerantwort ändert sich in der Woche vom 7. August 2023 von 503 auf 429.
 >
->Wenn die Rate eingehender Anfragen an AEM gesunde Ebenen überschreitet, antwortet AEM auf neue Anfragen mit dem HTTP-Fehlercode 429. Anwendungen, die programmatische Aufrufe an AEM durchführen, können eine defensive Programmierung in Erwägung ziehen und es nach einigen Sekunden mit einer exponentiellen Backoff-Strategie erneut versuchen. Vor Mitte August 2023 reagierte AEM auf dieselbe Bedingung mit dem HTTP-Fehlercode 503.
+Wenn die Rate eingehender Anfragen an AEM gesunde Ebenen überschreitet, antwortet AEM auf neue Anfragen mit dem HTTP-Fehlercode 429. Anwendungen, die programmatische Aufrufe an AEM durchführen, können eine defensive Programmierung in Erwägung ziehen und es nach einigen Sekunden mit einer exponentiellen Backoff-Strategie erneut versuchen. Vor Mitte August 2023 reagierte AEM auf dieselbe Bedingung mit dem HTTP-Fehlercode 503.
 
 ## Keine Anpassungen der klassischen Benutzeroberfläche {#no-classic-ui-customizations}
 

@@ -5,7 +5,7 @@ exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
 source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
 workflow-type: tm+mt
 source-wordcount: '740'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -44,12 +44,12 @@ So veröffentlichen Sie ein Asset, einen Ordner oder eine Sammlung:
 
 1. Wählen Sie das Element aus und klicken Sie auf **[!UICONTROL An Schnellzugriff anheften]**.
 
-1. Wählen Sie aus, ob das Element nur für Sie, für die gesamte Organisation oder für ausgewählte Gruppen veröffentlicht werden soll. Wenn Sie **[!UICONTROL Für Gruppen]**, definieren Sie die Gruppennamen in der **[!UICONTROL Pin für Gruppen]** -Feld.
+1. Wählen Sie aus, ob das Element nur für Sie, für die gesamte Organisation oder für ausgewählte Gruppen veröffentlicht werden soll. Wenn Sie **[!UICONTROL Für Gruppen]** auswählen, definieren Sie die Gruppennamen im Feld **[!UICONTROL Für Gruppen anheften]**.
 
-   ![Elemente für Gruppen fixieren](assets/pin-items-for-groups.png)
-1. Klicks **[!UICONTROL Pin]**.
+   ![Anheften von Elementen für Gruppen](assets/pin-items-for-groups.png)
+1. Klicken Sie auf **[!UICONTROL Anheften]**.
 
-   Das ausgewählte Element wird im **[!UICONTROL Schnellzugriff]** Abschnitt &quot;Mein Arbeitsbereich&quot;.
+   Das ausgewählte Element wird in „Mein Arbeitsbereich“ im Abschnitt **[!UICONTROL Schnellzugriff]** angezeigt.
    ![Aufgaben in Workspace](assets/quick-access.png)
 
 **Erkenntnisse**

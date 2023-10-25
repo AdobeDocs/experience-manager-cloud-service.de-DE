@@ -3,7 +3,7 @@ title: Handbuch zur Migration zu Experience Manager as a Cloud Service für Part
 description: Handbuch zur Migration zu Experience Manager as a Cloud Service für Partner
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 100%
 
