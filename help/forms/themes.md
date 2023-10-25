@@ -2,9 +2,9 @@
 title: Wie können Designs erstellt und verwendet werden, um ein adaptives Formular zu gestalten?
 description: Verwenden Sie Designs für adaptive Formulare, um ein adaptives Formular zu gestalten und eine visuelle Identität bereitzustellen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '5581'
+source-wordcount: '5578'
 ht-degree: 98%
 
 ---
@@ -490,7 +490,7 @@ Sie können jetzt die Schriftarten, die in einem Webservice verfügbar sind, in 
 
 Führen Sie die folgenden Schritte aus, um Adobe Fonts in Experience Manager zu konfigurieren:
 
-1. Klicken Sie in der Author-Instanz auf ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager &#x200B;]**>**[!UICONTROL &#x200B; Tools &#x200B;]**![Hammer](assets/hammer.png) >**[!UICONTROL &#x200B; Bereitstellung &#x200B;]**>**[!UICONTROL &#x200B; Cloud Services &#x200B;]**.
+1. Klicken Sie in der Author-Instanz auf ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]**>**[!UICONTROL  Tools ]**![Hammer](assets/hammer.png) >**[!UICONTROL  Bereitstellung ]**>**[!UICONTROL  Cloud Services ]**.
 1. Navigieren Sie auf der Seite **[!UICONTROL Cloud Services]** zur Option **[!UICONTROL Adobe Fonts]** und öffnen Sie sie. Öffnen Sie den Konfigurationsordner und klicken Sie auf **[!UICONTROL Erstellen]**.
 1. Geben Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen Titel für die neue Konfiguration an und klicken Sie auf **[!UICONTROL Erstellen]**.
 
@@ -652,7 +652,7 @@ Zum Anzeigen der generierten CSS-Datei stehen die folgenden Optionen zur Verfüg
     
     * **Design-Editor:**
     
-    Mit dem Design-Editor können Sie Stile zum Formatieren eines Formulars erstellen &lt;!-- oder einer interaktiven Kommunikation -->. Sie können auch die Gestaltung von Komponenten in einem Design festlegen, um ein konsistentes Erscheinungsbild der von Ihnen entwickelten Formulare &lt;!-- oder interaktiven Kommunikation --> zu ermöglichen. Es wird empfohlen, Formatierungsinformationen in einem Design anzugeben und dann das Design auf ein Formular anzuwenden.
+    Mit dem Design-Editor können Sie Stile zum Formatieren eines Formulars erstellen &lt;!-- oder einer interaktiven Kommunikation -->. Sie können die Formatierung von Komponenten in einem Design festlegen, die die Konsistenz des Erscheinungsbilds bei mehreren Formularen, die Sie entwickeln, ermöglichen. Es wird empfohlen, Formatierungsinformationen in einem Design anzugeben und dann das Design auf ein Formular anzuwenden.
     
     * **Inline-Formatierung:**
     

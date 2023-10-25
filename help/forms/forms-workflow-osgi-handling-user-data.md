@@ -5,10 +5,10 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 99%
+source-wordcount: '1030'
+ht-degree: 96%
 
 ---
 
@@ -74,7 +74,7 @@ Sie können Benutzerdaten aus einer Workflow-Instanz im Repository aufrufen und 
 Bei der Identifizierung von Workflows, die mit einer Initiatorin oder einem Initiator verbunden sind, können Sie jedoch in den folgenden Szenarien keine Workflows identifizieren oder die Ergebnisse sind möglicherweise nicht eindeutig:
 
 * **Workflow, der durch einen überwachten Ordner ausgelöst wird**: Eine Workflow-Instanz kann nicht über die Person identifiziert werden, die sie initiiert hat, wenn der Workflow durch einen überwachten Ordner ausgelöst wird. In diesem Fall werden die Benutzerinformationen in den gespeicherten Daten codiert.
-* **Workflow, der von der AEM-Veröffentlichungsinstanz initiiert wurde**: Alle Workflow-Instanzen werden mithilfe eines Servicebenutzers erstellt, wenn adaptive Formulare, interaktive Mitteilungen oder Briefe von der AEM-Veröffentlichungsinstanz gesendet werden. In diesen Fällen wird der Benutzername der angemeldeten Person nicht in den Workflow-Instanzdaten erfasst.
+* **Workflow, der von AEM Veröffentlichungsinstanz initiiert wurde**: Alle Workflow-Instanzen werden mit einem Dienstbenutzer erstellt, wenn Adaptive Forms oder Briefe von AEM Veröffentlichungsinstanz gesendet werden. In diesen Fällen wird der Benutzername der angemeldeten Person nicht in den Workflow-Instanzdaten erfasst.
 
 ### Zugreifen auf Benutzerdaten {#access}
 

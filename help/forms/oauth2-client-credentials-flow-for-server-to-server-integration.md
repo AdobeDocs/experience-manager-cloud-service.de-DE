@@ -3,14 +3,14 @@ title: Wie integrieren Sie Salesforce mithilfe des OAuth 2.0-Client-Anmeldedaten
 description: Erfahren Sie, wie Sie Salesforce mit AEM Forms mithilfe des OAuth 2.0-Client-Anmeldedatenflusses integrieren können.
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 37%
+source-wordcount: '422'
+ht-degree: 33%
 
 ---
 
-# Integration von Salesforce durch OAuth 2.0-Client-Anmeldedaten {#configure-salesforce-with-ouath-2.0-client-credential}
+# Verbinden des adaptiven Formulars mit Salesforce mithilfe des OAuth 2.0-Client-Anmeldedatenflusses {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -20,6 +20,7 @@ ht-degree: 37%
 Sie können OAuth 2.0-Client-Anmeldeinformationen verwenden, um AEM Forms in die Salesforce-Anwendung zu integrieren. OAuth 2.0-Client-Anmeldeinformationen sind eine standardmäßige und sichere Methode für die direkte Kommunikation ohne Benutzerbeteiligung.
 
 ![Workflow beim Festlegen der Kommunikation zwischen AEM Forms und Salesforce](/help/forms/assets/salesforce-workflow.png)
+
 AEM Forms tauscht die in der Salesforce Connect-Anwendung definierten Client-Anmeldeinformationen (Consumer Key und Consumer Secret) aus, um ein Zugriffstoken zu erhalten.
 
 Die Verwendung von OAuth 2.0-Client-Anmeldeinformationen für die Authentifizierung über die Authentifizierung für die Flussauthentifizierung des Autorisierungscodes bietet mehrere Vorteile:
@@ -38,7 +39,7 @@ Bevor Sie die Kommunikation zwischen einer Salesforce-Anwendung und einer AEM Um
 
 ## Salesforce-Anwendung mithilfe des OAuth 2.0 Client Credential-Flusses konfigurieren {#steps-to-create-aem-datasource-configuration}
 
-Führen Sie die folgenden Schritte aus, um die Salesforce-Anwendung mit den Authentifizierungseinstellungen für Client-Anmeldedaten von OAuth 2.0 in ein adaptives Formular zu integrieren:
+So verbinden Sie das adaptive Formular mit der Salesforce-Anwendung mithilfe der Authentifizierungseinstellungen für Client-Anmeldedaten von OAuth 2.0:
 
 1. Melden Sie sich bei Ihrer Authoring-Instanz an.
 1. Wechseln Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Datenquellen]**.
@@ -66,4 +67,6 @@ Führen Sie die folgenden Schritte aus, um die Salesforce-Anwendung mit den Auth
 1. Klicken Sie auf **[!UICONTROL Verbindung testen]**.
 1. Wenn die Verbindung erfolgreich hergestellt wurde, klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**.
 
-Jetzt können Sie das [Formulardatenmodell erstellen](/help/forms/create-form-data-models.md), um die konfigurierte Datenquelle in Ihr adaptives Formular zu integrieren.
+Jetzt können Sie [Formulardatenmodell erstellen](/help/forms/create-form-data-models.md) , um das adaptive Formular an die Salesforce-Anwendung zu senden.
+
+
