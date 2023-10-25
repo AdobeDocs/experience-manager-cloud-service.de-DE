@@ -2,10 +2,10 @@
 title: Bearbeiten von Programmen
 description: Erfahren Sie, wie Sie Ihre Produktions- und Sandbox-Programme bearbeiten, um ihre Optionen nach der Erstellung anzupassen.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 50%
+source-wordcount: '507'
+ht-degree: 44%
 
 ---
 
@@ -53,15 +53,19 @@ Sie müssen Mitglied der Rolle **Geschäftsinhaber** sein, um Programme bearbeit
    * Dieses Datum ist nur zur informativen Verwendung bestimmt. Dadurch wird das Widget Go Live auf der Programmübersichtsseite Trigger. Im Gegenzug bietet es produktinterne Links zur as a Cloud Service Best-Practice-Dokumentation von Adobe Experience Manager (AEM), um sie an Ihre Journey anzupassen, was zu einem erfolgreichen Go Live-Erlebnis führt.
    * Diese Registerkarte ist nicht für Sandbox-Programme verfügbar.
 
+1. Wenn die erforderlichen Berechtigungen für das Programm verfügbar sind, wird die **Sicherheit** zeigt an, wo Sie die Sicherheitsoptionen für das Programm ändern können.
+
+   ![Sicherheitseinstellungen bearbeiten](assets/edit-program-security.png)
+
+   * HIPAA kann nicht aktiviert oder deaktiviert werden nach [Programmerstellung.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+      * Hier finden Sie [weitere Informationen](https://www.adobe.com/go/hipaa-ready) zur Implementierung der HIPAA-fähigen Lösung von Adobe.
+   * Nach der Aktivierung kann der WAF-DDOS-Schutz konfiguriert werden, indem eine [produktionsfremde Pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+
+   {{waf-limited-release}}
+
 1. Klicks **Aktualisieren** , um Ihre Änderungen am Programm zu speichern.
 
 Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich Hinzufügen oder Entfernen einer Lösung oder eines Add-ons, werden diese Änderungen nach der nächsten Bereitstellung wirksam.
-
-Wenn für Ihr Produktionsprogramm die erweiterte Sicherheitsoption aktiviert war, ist die zusätzliche Registerkarte **Erweiterte Sicherheit** im Fenster **Programm bearbeiten** verfügbar, um zu bestätigen, dass diese Funktion für das Programm aktiv ist.
-
-![Erweiterte Sicherheit für ein Programm aktiv](assets/edit-program-enhanced.png)
-
-Sie können diese Einstellung nicht mehr bearbeiten, nachdem das Programm erstellt wurde. Weitere Informationen zur erweiterten Sicherheitsoption finden Sie unter [Erstellen von Produktionsprogrammen](creating-production-programs.md).
 
 ## Löschen von Sandbox-Programmen {#delete-sandbox-program}
 
