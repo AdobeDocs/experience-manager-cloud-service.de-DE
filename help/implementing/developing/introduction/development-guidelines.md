@@ -2,10 +2,10 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud Service kennen und erfahren Sie, worin sich dieser Dienst von AEM vor Ort und AEM in AMS unterscheidet.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5aa4a049bc6a69f161ad04d2a64ab0871e672432
+source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
 workflow-type: tm+mt
-source-wordcount: '2746'
-ht-degree: 93%
+source-wordcount: '2733'
+ht-degree: 94%
 
 ---
 
@@ -69,9 +69,6 @@ Neben der Bereitstellung von Zeitüberschreitungen sollte auch eine ordnungsgem�
 
 ## Umgang mit Anforderungsratenbeschränkungen {#rate-limit-handling}
 
->[!NOTE]
->Die HTTP-Fehlerantwort ändert sich in der Woche vom 7. August 2023 von 503 auf 429.
->
 Wenn die Rate eingehender Anfragen an AEM gesunde Ebenen überschreitet, antwortet AEM auf neue Anfragen mit dem HTTP-Fehlercode 429. Anwendungen, die programmatische Aufrufe an AEM durchführen, können eine defensive Programmierung in Erwägung ziehen und es nach einigen Sekunden mit einer exponentiellen Backoff-Strategie erneut versuchen. Vor Mitte August 2023 reagierte AEM auf dieselbe Bedingung mit dem HTTP-Fehlercode 503.
 
 ## Keine Anpassungen der klassischen Benutzeroberfläche {#no-classic-ui-customizations}
