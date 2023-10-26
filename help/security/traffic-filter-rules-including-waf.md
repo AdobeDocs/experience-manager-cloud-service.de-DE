@@ -2,9 +2,9 @@
 title: Traffic-Filterregeln, einschließlich WAF-Regeln
 description: Konfigurieren von Traffic-Filterregeln einschließlich Web Application Firewall (WAF)-Regeln
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 00d3323be28fe12729204ef00e336c7a4c63cda7
+source-git-commit: aca385ff9a44733a6529c7e78e73fc1b138c1177
 workflow-type: tm+mt
-source-wordcount: '3480'
+source-wordcount: '3453'
 ht-degree: 2%
 
 ---
@@ -227,7 +227,7 @@ when:
 
 ### Aktionsstruktur {#action-structure}
 
-Wird durch `action` -Feld, das entweder eine Zeichenfolge sein kann, die den Aktionstyp (allow, block, log) angibt und Standardwerte für alle anderen Optionen übernimmt, oder ein Objekt, bei dem der Regeltyp über definiert wird `type` erforderliches Feld zusammen mit anderen für diesen Typ zutreffenden Optionen.
+Ein `action` kann entweder eine Zeichenfolge sein, die die Aktion angibt (allow, block oder log), oder ein Objekt, das sowohl aus dem Aktionstyp (allow, block oder log) als auch aus Optionen wie wafFlags und/oder dem Status besteht.
 
 **Aktionstypen**
 
@@ -278,6 +278,8 @@ Die `wafFlags` -Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln 
 * Die Konfigurationsdateien sollten keine Geheimnisse enthalten, da sie von allen Benutzern gelesen werden können, die Zugriff auf das Git-Repository haben.
 
 * In Cloud Manager definierte IP-Zulassungslisten haben Vorrang vor Traffic-Filter-Regeln.
+
+* Die WAF-Regelübereinstimmung wird nur in CDN-Protokollen angezeigt, wenn CDN fehlt und weitergibt, nicht aber bei Treffern.
 
 ## Regelbeispiele {#examples}
 
@@ -491,7 +493,7 @@ Die Regeln verhalten sich wie folgt:
 * Wenn die WAF lizenziert und aktiviert ist, wird die `waf` -Attribut listet alle WAF-Flags (z. B. SQLI) auf, die erkannt wurden, unabhängig davon, ob die WAF-Flags in irgendwelchen Regeln aufgeführt wurden. Dies soll Einblicke in potenzielle neue Regeln für die Deklarierung bieten.
 * Wenn keine vom Kunden deklarierten Regeln übereinstimmen und keine WAF-Regeln übereinstimmen, wird die `rules` -Eigenschaft leer ist.
 
-Im Allgemeinen werden die Übereinstimmungsregeln im Protokolleintrag für alle Anfragen an das CDN angezeigt, unabhängig davon, ob es sich um einen CDN-Treffer, einen CDN-Treffer, einen Pass- oder einen Fehler handelt. WAF-Regeln werden jedoch nur für Anfragen an das CDN im Protokolleintrag angezeigt, die als CDN-Fehlschläge oder -Übermittlungen gelten, nicht aber für CDN-Treffer.
+Wie bereits erwähnt, erscheinen WAF-Regelübereinstimmungen nur in CDN-Protokollen für CDN-Fehlschläge und -Übermittlungen, nicht aber für Treffer.
 
 Das folgende Beispiel zeigt ein Beispiel `cdn.yaml` und zwei CDN-Protokolleinträge:
 
