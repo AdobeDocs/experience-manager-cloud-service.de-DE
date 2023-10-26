@@ -3,7 +3,9 @@ title: Wie verbindet AEM adaptive Formular mit der Microsoft® SharePoint-Liste?
 description: Verbinden Sie ein adaptives Formular mit der Microsoft® SharePoint-Liste. Erfahren Sie, wie Sie die Microsoft® SharePoint-Liste konfigurieren und ein Formulardatenmodell mithilfe der Konfiguration erstellen. Außerdem erfahren Sie, wie Sie das FDM in Ihr adaptives Formular integrieren.
 role: User, Developer
 keywords: Verbinden Sie AEM adaptive Formular mit der Microsoft SharePoint-Liste, verbinden Sie das adaptive Formular mit der Microsoft SharePoint-Liste, integrieren Sie AEM adaptive Formular in die Microsoft SharePoint-Liste, integrieren Sie das adaptive Formular in Microsoft Liste, senden Sie Daten aus einem adaptiven Formular in SharePoint Liste, senden Sie AEM Workflow an SharePoint Liste.
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+hide: true
+hidefromToC: true
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 5%

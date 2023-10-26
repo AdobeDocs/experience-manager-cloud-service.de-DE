@@ -2,10 +2,10 @@
 title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular?
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: ddc7ddbcd1761b4320e1c7a30a015d844ef3e0c0
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
-source-wordcount: '3403'
-ht-degree: 97%
+source-wordcount: '3429'
+ht-degree: 93%
 
 ---
 
@@ -172,14 +172,22 @@ Bevor Sie die Übermittlungsaktion **[!UICONTROL AEM-Workflow aufrufen]** verwen
 
 ## An SharePoint senden {#submit-to-sharedrive}
 
-Die Sendeaktion **[!UICONTROL An SharePoint senden]** verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint-Speicher senden. So verwenden Sie die Sendeaktion **[!UICONTROL An SharePoint senden]** in einem adaptiven Formular:
+Die Sendeaktion **[!UICONTROL An SharePoint senden]** verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint-Speicher senden.
 
-1. [Erstellen einer SharePoint-Konfiguration](#create-a-sharepoint-configuration-create-sharepoint-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® Sharepoint-Speicher verbunden.
+<!-- Using Submit to SharePoint, you can:
+* [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
+* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) -->
+
+### Verbinden eines adaptiven Formulars mit der SharePoint Document Library {#connect-af-sharepoint-doc-library}
+
+So verwenden Sie die **[!UICONTROL An SharePoint Document Library übermitteln]** Sendeaktion in einem adaptiven Formular:
+
+1. [Erstellen einer SharePoint Document Library-Konfiguration](#create-a-sharepoint-configuration-create-sharepoint-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® SharePoint-Speicher verbunden.
 2. [Verwenden der Sendeaktion „An SharePoint senden“ in einem adaptiven Formular](#use-sharepoint-configuartion-in-af): Dadurch wird Ihr adaptives Formular mit dem konfigurierten Microsoft® SharePoint verbunden.
 
-### Erstellen einer SharePoint-Konfiguration {#create-sharepoint-configuration}
+#### Erstellen einer SharePoint Document Library-Konfiguration {#create-sharepoint-configuration}
 
-So verbinden Sie AEM Forms mit Ihrem Microsoft® SharePoint-Speicher:
+So verbinden Sie AEM Forms mit Ihrem Microsoft® Sharepoint Document Library-Speicher:
 
 1. Gehen Sie zu Ihrer **AEM Forms-Autoreninstanz** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® SharePoint]**.
 1. Sobald Sie **[!UICONTROL Microsoft® SharePoint]** auswählen, werden Sie zum **[!UICONTROL SharePoint-Browser]** weitergeleitet.
@@ -208,15 +216,15 @@ So verbinden Sie AEM Forms mit Ihrem Microsoft® SharePoint-Speicher:
 
 Jetzt können Sie die SharePoint-Sites-Konfiguration für die Sendeaktion in einem adaptiven Formular verwenden.
 
-### Verwenden der SharePoint-Konfiguration in einem adaptiven Formular {#use-sharepoint-configuartion-in-af}
+#### Verwenden der SharePoint Document Library-Konfiguration in einem adaptiven Formular {#use-sharepoint-configuartion-in-af}
 
-Sie können die erstellte SharePoint-Konfiguration in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einem SharePoint-Ordner zu speichern. Führen Sie die folgenden Schritte aus, um eine SharePoint-Speicherkonfiguration in einem adaptiven Formular zu verwenden:
+Sie können die erstellte SharePoint Document Library-Konfiguration in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einem SharePoint-Ordner zu speichern. Führen Sie die folgenden Schritte aus, um eine SharePoint Document Library-Speicherkonfiguration in einem adaptiven Formular zu verwenden:
 
 1. Erstellen eines [adaptives Formular](/help/forms/creating-adaptive-form.md).
 
    >[!NOTE]
    >
-   > * Wählen Sie denselben [!UICONTROL Konfigurations-Container] für ein adaptives Formular, in dem Sie Ihren SharePoint-Speicher erstellt haben.
+   > * Gleiches auswählen [!UICONTROL Konfigurations-Container] für ein adaptives Formular, in dem Sie den SharePoint Document Library-Speicher erstellt haben.
    > * Wenn kein [!UICONTROL Konfigurations-Container] ausgewählt ist, erscheinen die globalen [!UICONTROL Speicherkonfigurations]-Ordner im Fenster mit den Eigenschaften der Sendeaktion.
 
 1. Wählen Sie **Sendeaktion** als **[!UICONTROL An SharePoint senden]**.
@@ -224,16 +232,74 @@ Sie können die erstellte SharePoint-Konfiguration in einem adaptiven Formular v
 1. Wählen Sie die **[!UICONTROL Speicherkonfiguration]**, in der Sie Ihre Daten speichern möchten.
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Sendeeinstellungen zu speichern.
 
-Wenn Sie das Formular senden, werden die Daten im angegebenen Microsoft® Sharepoint-Speicher gespeichert.
+Wenn Sie das Formular übermitteln, werden die Daten im angegebenen Microsoft® Sharepoint Document Library-Speicher gespeichert.
 Ordnerstruktur zum Speichern von Daten: `/folder_name/form_name/year/month/date/submission_id/data`.
+
+<!--
+### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
+
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
+
+To use the [!UICONTROL Submit to SharePoint List] Submit Action in an Adaptive Form:
+
+1. [Create a SharePoint List Configuration](#create-sharepoint-list-configuration): It connects AEM Forms to your Microsoft® Sharepoint List Storage.
+1. [Use the Submit using Form Data Model in an Adaptive Form](#use-submit-using-fdm): It connects your Adaptive Form to configured Microsoft® SharePoint.
+
+#### Create a SharePoint List Configuration {#create-sharepoint-list-configuration}
+
+To connect AEM Forms to your Microsoft&reg; Sharepoint List:
+
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
+1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
+1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
+1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
+    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft® Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
+    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
+
+      >[!NOTE]
+      >
+      > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
+
+1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
+1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
+1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+
+    >[!NOTE]
+    >
+    > In Microsoft® SharePoint List, the following column types are not supported:
+    > * image column
+    > * metadata column
+    > * person column
+    > * external data column
+
+#### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
+
+You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List folder. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
+
+1. [Create a Form Data Model using Microsoft® SharePoint List configuration](/help/forms/create-form-data-models.md)
+1. [Configure the Form Data Model to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
+1. [Configure Submit action using a Form Data Model](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+
+When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
+
+    >[!NOTE]
+    >
+    > In Microsoft® SharePoint List, the following column types are not supported:
+    > * image column
+    > * metadata column
+    > * person column
+    > * external data column
+    
+-->
 
 ## An OneDrive senden {#submit-to-onedrive}
 
-Die Übermittlungsaktion **[!UICONTROL An OneDrive senden]** verbindet ein adaptives Formular mit Microsoft® OneDrive. Sie können die Formulardaten, Dateien, Anhänge oder Datensatzdokumente an den verbundenen Microsoft® OneDrive-Speicher senden.
-
->[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
-
-Verwenden der Übermittlungsaktion [!UICONTROL An OneDrive senden] in einem adaptiven Formular:
+Die Übermittlungsaktion **[!UICONTROL An OneDrive senden]** verbindet ein adaptives Formular mit Microsoft® OneDrive. Sie können die Formulardaten, Dateien, Anhänge oder Datensatzdokumente an den verbundenen Microsoft® OneDrive-Speicher senden. Verwenden der Übermittlungsaktion [!UICONTROL An OneDrive senden] in einem adaptiven Formular:
 
 1. [Erstellen einer OneDrive-Konfiguration](#create-a-onedrive-configuration-create-onedrive-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® OneDrive-Speicher verbunden.
 2. [Verwenden der Übermittlungsaktion „An OneDrive senden“ in einem adaptiven Formular](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): Dadurch wird Ihr adaptives Formular mit dem konfigurierten Microsoft® OneDrive verbunden.

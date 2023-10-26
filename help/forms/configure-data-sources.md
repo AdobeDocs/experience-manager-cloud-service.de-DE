@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
-source-wordcount: '2452'
-ht-degree: 87%
+source-wordcount: '2202'
+ht-degree: 90%
 
 ---
 
@@ -134,13 +134,12 @@ RESTful-Webdienste können mithilfe von [Swagger-Spezifikationen](https://swagge
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um den **[!UICONTROL Assistenten für das Erstellen von Datenquellkonfigurationen]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL RESTful-Service]** aus der Dropdown-Liste **[!UICONTROL Service-Typ]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration und tippen Sie auf **[!UICONTROL Weiter]**.
 1. Geben Sie folgende Details für den RESTful-Service an:
 
-   * Wählen Sie eine URL oder Datei aus dem [!UICONTROL Swagger Source] und geben Sie dementsprechend die [!DNL Swagger URL] der[!DNL &#x200B; Swagger] Definitionsdatei oder laden Sie die [!DNL Swagger] -Datei aus Ihrem lokalen Dateisystem.
-   * Auf der Grundlage der [!DNL &#x200B; Swagger] Quelleingabe, werden die folgenden Felder mit Werten vorausgefüllt:
+   * Wählen Sie eine URL oder Datei aus dem [!UICONTROL Swagger Source] und geben Sie dementsprechend die [!DNL Swagger URL] der[!DNL  Swagger] Definitionsdatei oder laden Sie die [!DNL Swagger] -Datei aus Ihrem lokalen Dateisystem.
+   * Auf der Grundlage der [!DNL  Swagger] Quelleingabe, werden die folgenden Felder mit Werten vorausgefüllt:
 
       * Schema: Die von der REST-API verwendeten Übertragungsprotokolle. Die Anzahl der in der Dropdown-Liste angezeigten Schematypen hängt von den Schemas ab, die in der [!DNL Swagger]-Quelle definiert wurden.
       * Host: Der Domain-Name oder die IP-Adresse des Hosts, der die REST-API bereitstellt. Dies ist ein Pflichtfeld.
       * Basispfad: Das URL-Präfix für alle API-Pfade. Dies ist ein optionales Feld.\
-
         Bearbeiten Sie bei Bedarf die vorbefüllten Werte für diese Felder.
 
    * Wählen Sie den Authentifizierungstyp – Ohne, OAuth2.0 ([Autorisierungs-Code](https://oauth.net/2/grant-types/authorization-code/), [Client-Anmeldeinformationen](https://oauth.net/2/grant-types/client-credentials/)), Standardauthentifizierung, API-Schlüssel oder benutzerdefinierte Authentifizierung – für den Zugriff auf den RESTful-Service aus und geben Sie dementsprechend die Details für die Authentifizierung an.
@@ -160,8 +159,8 @@ RESTful-Webdienste können mithilfe von [Swagger-Spezifikationen](https://swagge
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um den **[!UICONTROL Assistenten für das Erstellen von Datenquellkonfigurationen]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL RESTful-Service]** aus der Dropdown-Liste **[!UICONTROL Service-Typ]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration und tippen Sie auf **[!UICONTROL Weiter]**.
 1. Geben Sie folgende Details für den RESTful-Service an:
 
-   * Wählen Sie eine URL oder Datei aus dem [!UICONTROL Swagger Source] und geben Sie dementsprechend die [!DNL Swagger 3.0 URL] der[!DNL &#x200B; Swagger] Definitionsdatei oder laden Sie die [!DNL Swagger] -Datei aus Ihrem lokalen Dateisystem.
-   * Basierend auf den [!DNL &#x200B; Swagger] Quelleingabe, werden die Verbindungsinformationen zum Zielserver angezeigt.
+   * Wählen Sie eine URL oder Datei aus dem [!UICONTROL Swagger Source] und geben Sie dementsprechend die [!DNL Swagger 3.0 URL] der[!DNL  Swagger] Definitionsdatei oder laden Sie die [!DNL Swagger] -Datei aus Ihrem lokalen Dateisystem.
+   * Basierend auf den [!DNL  Swagger] Quelleingabe, werden die Verbindungsinformationen zum Zielserver angezeigt.
    * Wählen Sie den Authentifizierungstyp – Ohne, OAuth2.0 ([Autorisierungs-Code](https://oauth.net/2/grant-types/authorization-code/), [Client-Anmeldeinformationen](https://oauth.net/2/grant-types/client-credentials/)), Standardauthentifizierung, API-Schlüssel oder benutzerdefinierte Authentifizierung – für den Zugriff auf den RESTful-Service aus und geben Sie dementsprechend die Details für die Authentifizierung an.
 
    Wenn Sie **[!UICONTROL API-Schlüssel]** als Authentifizierungstyp auswählen, geben Sie den Wert für den API-Schlüssel an. Der API-Schlüssel kann als Anforderungskopfzeile oder als Abfrageparameter gesendet werden. Wählen Sie eine dieser Optionen aus der Dropdown-Liste **[!UICONTROL Speicherort]** und geben Sie den Namen der Kopfzeile oder des Abfrageparameters im Feld **[!UICONTROL Parametername]** entsprechend an.
@@ -253,13 +252,11 @@ Sie können einen regulären Ausdruck angeben, der als Filter für absolute URLs
 
 Legen Sie die `importAllowlistPattern`-Eigenschaft der Konfiguration **[!UICONTROL Formulardatenmodell Importzulassungsliste für SOAP-Webservices]** fest, um den regulären Ausdruck anzugeben. Folgende JSON-Datei zeigt ein Beispiel:
 
-
 ```json
 {
   "importAllowlistPattern": ".*"
 }
 ```
-
 
 Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [stellen Sie die Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process) in Ihrer Cloud Service-Instanz bereit.
 
@@ -286,32 +283,35 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
 
    >[!NOTE]
    >
-   >Sie müssen den OAuth 2.0-Authentifizierungstyp auswählen, mit dem eine Verbindung hergestellt werden soll [!DNL Microsoft®® Dynamics] Dienste, die den OData-Endpunkt als Dienststamm verwenden.
+   Sie müssen den OAuth 2.0-Authentifizierungstyp auswählen, mit dem eine Verbindung hergestellt werden soll [!DNL Microsoft®® Dynamics] Dienste, die den OData-Endpunkt als Dienststamm verwenden.
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den OData-Service zu erstellen.
 
-## Microsoft® SharePoint-Liste konfigurieren {#config-sharepoint-list}
+<!--
+## Configure Microsoft® SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, auf die über unsere [Pre-Release-Kanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
-Verwenden Sie zum Speichern von Daten in Tabellenform die Microsoft® SharePoint-Liste. So konfigurieren Sie eine Microsoft SharePoint-Liste in [!DNL Experience Manager] Gehen Sie as a Cloud Service wie folgt vor:
+To save data in a tabular form use, Microsoft® SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 
-1. Navigieren Sie zu **[!UICONTROL Instrumente]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
-1. Wählen Sie einen **Konfigurations-Container**. Die Konfiguration wird im ausgewählten Konfigurations-Container gespeichert.
-1. Klicks **[!UICONTROL Erstellen]** > **[!UICONTROL SharePoint-Liste]** aus der Dropdown-Liste. Der SharePoint-Konfigurationsassistent wird angezeigt.
-1. Geben Sie **[!UICONTROL Titel]**, **[!UICONTROL Client-ID]**, **[!UICONTROL Client-Geheimnis]** und **[!UICONTROL OAuth-URL]** an. Informationen zum Abrufen der Client-ID, des Client-Geheimnisses und der Mandanten-ID für die OAuth-URL finden Sie in der [Dokumentation von Microsoft®](https://learn.microsoft.com/de-de/graph/auth-register-app-v2).
-   * Sie können die `Client ID` und das `Client Secret` Ihrer App über das Microsoft® Azure-Portal abrufen.
-   * Fügen Sie im Microsoft® Azure-Portal den Umleitungs-URI als `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html` hinzu. Ersetzen Sie `[author-instance]` mit der URL Ihrer Autoreninstanz.
-   * API-Berechtigungen hinzufügen `offline_access` und `Sites.Manage.All` im **Microsoft® Diagramm** Registerkarte, um Lese-/Schreibberechtigungen bereitzustellen. Hinzufügen `AllSites.Manage` -Berechtigung in der **Sharepoint** -Tab, um remote mit SharePoint-Daten zu interagieren.
-   * Verwenden der OAuth-URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Ersetzen Sie `<tenant-id>` durch die `tenant-id` Ihrer App aus dem Microsoft® Azure-Portal.
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
+1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
+1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
+1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
+    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft® Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
+    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
 
-     >[!NOTE]
-     >
-     >Ob das Feld **Client-Geheimnis** obligatorisch oder optional ist, hängt von der Konfiguration Ihrer Azure Active Directory-Anwendung ab. Wenn Ihre Anwendung so konfiguriert ist, dass sie ein Client-Geheimnis verwendet, ist die Angabe des Client-Geheimnisses obligatorisch.
+      >[!NOTE]
+      >
+      > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
 
-1. Klicken Sie auf **[!UICONTROL Verbinden]**. Bei erfolgreicher Verbindung erscheint die Meldung `Connection Successful`.
-1. Auswählen **[!UICONTROL SharePoint-Site]** und **[!UICONTROL SharePoint-Liste]** aus der Dropdown-Liste.
-1. Tippen **[!UICONTROL Erstellen]** , um die Cloud-Konfiguration für die Microsoft® SharePointList zu erstellen.
+1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
+1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
+1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+
+-->
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
