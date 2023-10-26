@@ -2,9 +2,9 @@
 title: Traffic-Filterregeln, einschließlich WAF-Regeln
 description: Konfigurieren von Traffic-Filterregeln einschließlich Web Application Firewall (WAF)-Regeln
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
+source-git-commit: 00d3323be28fe12729204ef00e336c7a4c63cda7
 workflow-type: tm+mt
-source-wordcount: '3312'
+source-wordcount: '3480'
 ht-degree: 2%
 
 ---
@@ -118,6 +118,10 @@ Die `kind` -Parameter auf `CDN` und die Version auf die Schemaversion eingestell
 
 Für RDEs wird die Befehlszeile verwendet, RDE wird jedoch derzeit nicht unterstützt.
 
+**Anmerkungen**
+
+* Sie können `yq` , um die YAML-Formatierung Ihrer Konfigurationsdatei lokal zu überprüfen (z. B. `yq cdn.yaml`).
+
 ## Syntax für Traffic-Filterregeln {#rules-syntax}
 
 Sie können `traffic filter rules` , um eine Übereinstimmung mit Mustern wie IPs, Benutzeragent, Anfragekopfzeilen, Hostname, Geo und URL zu erhalten.
@@ -152,7 +156,7 @@ Das Format der Traffic-Filterregeln im `cdn.yaml` wird unten beschrieben. Siehe 
 |---|---|---|---|---|---|
 | name | X | X | `string` | - | Regelname (64 Zeichen lang, darf nur alphanumerische Zeichen und - enthalten.) |
 | when | X | X | `Condition` | - | Die Grundstruktur lautet:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[Siehe Syntax für Bedingungsstruktur](#condition-structure) weiter unten, in dem die Getter, Eigenschaften und die Kombination mehrerer Bedingungen beschrieben werden. |
-| Aktion | X | X | `Action` | log | log-, allow-, block-, log- oder action-Objekt Standard ist log |
+| Aktion | X | X | `Action` | log | log-, allow-, block- oder Action-Objekt. Der Standardwert ist log |
 | rateLimit | X |   | `RateLimit` | nicht definiert | Ratenbegrenzungskonfiguration. Die Ratenbegrenzung ist deaktiviert, wenn sie nicht definiert ist.<br><br>Weiter unten finden Sie einen separaten Abschnitt mit einer Beschreibung der Syntax rateLimit sowie Beispiele. |
 
 ### Bedingungsstruktur {#condition-structure}
@@ -188,11 +192,11 @@ Eine Gruppe von Bedingungen besteht aus mehreren einfachen und/oder Gruppenbedin
 
 | **Eigenschaft** | **Typ** | **Beschreibung** |
 |---|---|---|
-| reqProperty | `string` | Anfrageeigenschaft.<br><br>Eines von: `path` , `queryString`, `method`, `tier`, `domain`, `clientIp`, `clientCountry`<br><br>Die Domain-Eigenschaft ist eine Transformation der Host-Kopfzeile der Anfrage in Kleinbuchstaben. Dies ist für Zeichenfolgenvergleiche nützlich, sodass Übereinstimmungen aufgrund der Groß-/Kleinschreibung nicht übersehen werden.<br><br>Die `clientCountry` verwendet zwei Buchstaben-Codes, die unter [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) |
+| reqProperty | `string` | Anfrageeigenschaft.<br><br>Eines von:<br><ul><li>`path`: Gibt den vollständigen Pfad einer URL ohne die Abfrageparameter zurück.</li><li>`queryString`: Gibt den Abfrageteil einer URL zurück</li><li>`method`: Gibt die in der Anfrage verwendete HTTP-Methode zurück.</li><li>`tier`: Gibt einen von zurück `author`, `preview` oder `publish`.</li><li>`domain`: Gibt die Eigenschaft der Domäne zurück (wie im Abschnitt `Host` -Kopfzeile) in Kleinbuchstaben</li><li>`clientIp`: Gibt die Client-IP zurück.</li><li>`clientCountry`: Gibt einen aus zwei Buchstaben bestehenden Code ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) , die angeben, in welchem Land sich der Kunde befindet.</li></ul> |
 | reqHeader | `string` | Gibt den Anforderungsheader mit dem angegebenen Namen zurück |
 | queryParam | `string` | Gibt Abfrageparameter mit dem angegebenen Namen zurück |
 | reqCookie | `string` | Gibt Cookie mit dem angegebenen Namen zurück |
-| postParam | `string` | Gibt den Parameter mit dem angegebenen Namen aus dem Hauptteil zurück. Funktioniert nur, wenn der Hauptteil vom Inhaltstyp ist `application/x-www-form-urlencoded` |
+| postParam | `string` | Gibt den Post-Parameter mit dem angegebenen Namen aus dem Anforderungstext zurück. Funktioniert nur, wenn der Hauptteil vom Inhaltstyp ist `application/x-www-form-urlencoded` |
 
 **Prädikat**
 
@@ -207,6 +211,19 @@ Eine Gruppe von Bedingungen besteht aus mehreren einfachen und/oder Gruppenbedin
 | **in** | `array[string]` | true , wenn die bereitgestellte Liste das Getter-Ergebnis enthält |
 | **notIn** | `array[string]` | true , wenn die bereitgestellte Liste kein Getter-Ergebnis enthält |
 | **vorhanden** | `boolean` | &quot;true&quot;, wenn auf &quot;true&quot;gesetzt und die Eigenschaft existiert oder auf &quot;false&quot;gesetzt ist und die Eigenschaft nicht vorhanden ist |
+
+**Anmerkungen**
+
+* Die Anfrageeigenschaft `clientIp` kann nur mit den folgenden Eigenschaften verwendet werden: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` kann bei Verwendung von `in` und `notIn` -Prädikaten. Im folgenden Beispiel wird eine Bedingung implementiert, um zu bewerten, ob eine Client-IP im IP-Bereich von 192.168.0.0/24 liegt (also von 192.168.0.0 bis 192.168.0.255):
+
+```
+when:
+  reqProperty: clientIp
+  in: [ "192.168.0.0/24" ]
+```
+
+* Wir empfehlen die Verwendung von [regex101](https://regex101.com/) und [Fastly Fiddle](https://fiddle.fastly.dev/) bei der Arbeit mit Regex. Weitere Informationen dazu, wie schnell Regex gehandhabt wird, finden Sie in diesem [Artikel](https://developer.fastly.com/reference/vcl/regex/#best-practices-and-common-mistakes).
+
 
 ### Aktionsstruktur {#action-structure}
 
@@ -259,6 +276,8 @@ Die `wafFlags` -Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln 
 * Wenn eine Regel abgeglichen und blockiert wird, antwortet das CDN mit einer `406` Rückgabe-Code.
 
 * Die Konfigurationsdateien sollten keine Geheimnisse enthalten, da sie von allen Benutzern gelesen werden können, die Zugriff auf das Git-Repository haben.
+
+* In Cloud Manager definierte IP-Zulassungslisten haben Vorrang vor Traffic-Filter-Regeln.
 
 ## Regelbeispiele {#examples}
 
@@ -396,9 +415,10 @@ Die Ratenbeschränkungen werden pro CDN POP berechnet. Nehmen wir beispielsweise
 | **Eigenschaft** | **Typ** | **Standard** | **BEDEUTUNG** |
 |---|---|---|---|
 | limit | Ganzzahl von 10 bis 10000 | erforderlich | Anforderungsrate (pro CDN POP) in Anforderungen pro Sekunde, für die die Regel ausgelöst wird. |
-| window | Ganzzahl-Enum: 1, 10 oder 60 | 10 | Stichprobenfenster in Sekunden, für die die Anforderungsrate berechnet wird. |
+| window | Ganzzahl-Enum: 1, 10 oder 60 | 10 | Stichprobenfenster in Sekunden, für die die Anforderungsrate berechnet wird. Die Genauigkeit der Zähler hängt von der Größe des Fensters ab (größere Genauigkeit des Fensters). Beispielsweise kann man eine Genauigkeit von 50 % für das 1-Sekunden-Fenster und eine Genauigkeit von 90 % für das 60-Sekunden-Fenster erwarten. |
 | Sanktion | Ganzzahl von 60 bis 3600 | 300 (5 Minuten) | Ein Zeitraum in Sekunden, für den übereinstimmende Anforderungen blockiert werden (auf die nächste Minute gerundet). |
 | groupBy | array[Getter] | keine | Der Zähler der Ratenbegrenzer wird durch eine Reihe von Anforderungseigenschaften aggregiert (z. B. clientIp). |
+
 
 ### Beispiele {#ratelimiting-examples}
 
