@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: aa9629c3e48ca0bf4654351462a94777af9ed651
+source-git-commit: 6e82bbcc1b83fa9216831f6f746665507a46eec7
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 22%
+source-wordcount: '585'
+ht-degree: 23%
 
 ---
 
@@ -71,8 +71,7 @@ Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Releas
 
 ### Bekannte Probleme {#known-issues-14029}
 
-* CQ-4354836: Workflow kann nicht gestartet oder Aufgabe aus der Projektekonsole erstellt werden.
-* CQ-4354834 : Benutzer können in einer Posteingangsaufgabe keine Kommentare hinzufügen.
+Keine
 
 ### Eingebettete Technologien {#embedded-tech-14029}
 
