@@ -2,10 +2,10 @@
 title: Qualitätsregeln für benutzerspezifischen Code
 description: Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der Code-Qualitätstests ausgeführt werden. Sie basieren auf Best Practices von Adobe Experience Manager-Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 57a7cd3fd2bfc34ebcee82832e020cf45887afa9
+source-git-commit: a62312954db0631cf594a27db36bab8a2441360f
 workflow-type: tm+mt
-source-wordcount: '3868'
-ht-degree: 92%
+source-wordcount: '4097'
+ht-degree: 87%
 
 ---
 
@@ -519,6 +519,53 @@ In vielen Fällen sind diese APIs unter Verwendung der Standard-Java™-Annotati
 
 Es gibt jedoch auch Fälle, in denen eine API im Experience Manager-Kontext veraltet ist, in anderen Kontexten jedoch nicht. Diese Regel identifiziert diese zweite Gruppe. 
 
+### Verwenden Sie in Sling-Modellen keine @Inject-Anmerkung mit @Optional . {#sonarqube-slingmodels-inject-optional}
+
+* **Schlüssel**: InjectAnnotationWithOptionalInjectionCheck
+* **Typ**: Softwarequalität
+* **Schweregrad**: Gering
+* **Seit**: Version 2023.11
+
+Das Apache Sling-Projekt rät von der Verwendung der `@Inject` -Anmerkung im Kontext von Sling-Modellen, da dies zu schlechter Leistung führen kann, wenn sie mit der `DefaultInjectionStrategy.OPTIONAL` (entweder auf Feld- oder Klassenebene). Stattdessen werden spezifischere Injektionen (wie die `@ValueMapValue` oder `@OsgiInjector` Anmerkungen) verwendet werden.
+
+Überprüfen Sie die [Apache Sling-Dokumentation](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) für weitere Informationen über die empfohlenen Anmerkungen und die Gründe, warum diese Empfehlung überhaupt abgegeben wurde.
+
+
+### Wiederverwendung von HTTPClient-Instanzen {#sonarqube-reuse-httpclient}
+
+* **Schlüssel**: AEMSRE-870
+* **Typ**: Softwarequalität
+* **Schweregrad**: Gering
+* **Seit**: Version 2023.11
+
+AEM Anwendungen erreichen häufig andere Anwendungen über das HTTP-Protokoll, und der Apache HttpClient ist eine häufig verwendete Bibliothek, um dies zu erreichen. Die Erstellung eines solchen HttpClient-Objekts bringt jedoch einen gewissen Mehraufwand mit sich, sodass diese Objekte so weit wie möglich wiederverwendet werden sollten.
+
+Diese Regel überprüft, ob ein solches HttpClient-Objekt in einer Methode nicht privat, sondern auf Klassenebene global ist, sodass es wiederverwendet werden kann. In diesem Fall sollte das Feld httpClient im Konstruktor der Klasse oder der `activate()` -Methode (wenn diese Klasse eine OSGi-Komponente/ein OSGi-Dienst ist).
+
+Überprüfen Sie auch die [Optimierungshandbuch](https://hc.apache.org/httpclient-legacy/performance.html) des HttpClient finden Sie einige Best Practices für die Verwendung des HttpClient.
+
+#### Nicht konformer Code {#non-compliant-code-14}
+
+```java
+public void doHttpCall() {
+  HttpClient httpclient = HttpClients.createDefault();
+  // do something with the httpclient
+}
+```
+
+#### Konformer Code {#compliant-code-11}
+
+```java
+public class myClass {
+
+  HttpClient httpclient;
+
+  public void doHttpCall() {
+    // do something with the httpclient
+  }
+
+}
+```
 
 ## Inhaltsregeln für OakPAL {#oakpal-rules}
 
