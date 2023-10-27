@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 6e834244f3de7e615df12b137f2ae90a11e64ad0
+source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 26%
+source-wordcount: '920'
+ht-degree: 27%
 
 ---
 
@@ -68,17 +68,12 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2023“ an, das eine Zusa
 
 ### Neue Funktionen in [!DNL Experience Manager Forms] {#forms-features}
 
-* **Benutzerdefinierte Eigenschaften für adaptive Forms**: Sie können benutzerdefinierte Attribute (Schlüssel-Wert-Paare) mit einer Formularvorlage oder adaptiven Formularkomponente verknüpfen, damit Formularentwickler dynamisches Formularverhalten bereitstellen können, das sich basierend auf den Werten dieser benutzerdefinierten Attribute anpasst. Beispielsweise können Entwickler basierend auf den Werten benutzerdefinierter Attribute verschiedene Ausgabeformate einer Headless-Forms-Komponente auf mobilen, Desktop- oder Webplattformen erstellen und so das Benutzererlebnis auf einer Vielzahl von Geräten erheblich verbessern.
+* **[Benutzerdefinierte Eigenschaften für adaptive Forms](/help/forms/template-editor-core-components.md#add-a-custom-group-name-in-the-policy-of-template-editor)**: Sie können benutzerdefinierte Attribute (Schlüssel-Wert-Paare) mit einer Formularvorlage oder adaptiven Formularkomponente verknüpfen, damit Formularentwickler dynamisches Formularverhalten bereitstellen können, das sich basierend auf den Werten dieser benutzerdefinierten Attribute anpasst. Beispielsweise können Entwickler basierend auf den Werten benutzerdefinierter Attribute verschiedene Ausgabeformate einer Headless-Forms-Komponente auf mobilen, Desktop- oder Webplattformen erstellen und so das Benutzererlebnis auf einer Vielzahl von Geräten erheblich verbessern.
 
 * **Designs und Vorlagen**: Starten Sie Ihren Formularerstellungsprozess mit unseren neuen Designs und Vorlagen, die auf erfahrene Profis und neue Formularautoren zugeschnitten sind. Nahtlos mit den Kernkomponenten von Adaptive Forms erstellt, ermöglichen Ihnen diese sorgfältig kuratierten Designs und Vorlagen die rasche Erstellung von Formularen für gängige Anwendungsfälle.
 
   ![Vordefinierte Vorlagen](/help/forms/assets/form-templates-ootb.png)
 
-### Funktionen zur Vorabversion sind verfügbar in [!DNL Forms] {#pre-release-features-available-in-forms-channel}
-
-* **Übermitteln von Forms an die Microsoft SharePoint-Liste**: AEM Forms bietet eine OOTB-Integration, um Formulardaten direkt an die SharePoint-Liste zu senden, sodass Sie die Funktionen der SharePoint-Listen nutzen können.
-
-  >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
 ### Programm für frühe Anwender {#forms-early-adopter}
 
