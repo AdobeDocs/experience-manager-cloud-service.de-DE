@@ -2,13 +2,13 @@
 title: Best Practices für die Suche [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Best Practices zum Suchen, Suchen und Abrufen von Asset-Metadaten in Ihrer Anwendung.
 contentOwner: KK
-source-git-commit: 2c9316431d588241b470c8146c9444dbfc0af5fd
+exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '2544'
 ht-degree: 11%
 
 ---
-
 
 # Best Practices für die AEM
 
@@ -346,7 +346,7 @@ The newly added assets are not indexed.
         <td> 
             Unterstützte Optionen sind:
             <ul>
-            <li> Veröffentlichen 
+            <li> Veröffentlichen
             <li> Veröffentlichungsdatum
             <li> Zuletzt veröffentlicht von
             <li> Genehmigung 

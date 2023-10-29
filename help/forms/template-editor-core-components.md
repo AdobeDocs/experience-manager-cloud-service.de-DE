@@ -2,13 +2,13 @@
 title: Wie erstelle ich eine Vorlage für ein adaptives Formular basierend auf der Kernkomponente?
 description: Erstellen Sie Vorlagen für adaptive Formulare basierend auf der Kernkomponente , um die grundlegende Struktur und den anfänglichen Inhalt mithilfe des Vorlagen-Editors zu definieren.
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '1993'
 ht-degree: 58%
 
 ---
-
 
 # Erstellen einer Vorlage für ein adaptives Formular basierend auf Kernkomponenten {#adaptive-form-templates}
 
@@ -289,4 +289,3 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 ## Siehe auch {#see-also}
 
 {{see-also}}
-

@@ -1,13 +1,13 @@
 ---
 title: Best Practices für die Einrichtung und Verwendung von AEM GraphQL mit Inhaltsfragmenten
 description: Erfahren Sie mehr über die empfohlenen Best Practices für die Einrichtung und Verwendung von AEM GraphQL mit Inhaltsfragmenten.
-source-git-commit: 9a544fb9d2494862efdb2263f3b9b61214c4b8b9
+exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '737'
-ht-degree: 29%
+ht-degree: 36%
 
 ---
-
 
 # Best Practices für die Einrichtung und Verwendung von AEM GraphQL mit Inhaltsfragmenten{#best-practices-setup-use-aem-graphql-content-fragments}
 
@@ -20,7 +20,7 @@ So machen Sie sich schneller:
 * [Was ist Headless?](/help/headless/what-is-headless.md)
 * Überblick über die verschiedenen Umgebungen in der AEM [Architektur](/help/headless/deployment/architecture.md)
 
-## Einrichtung {#setup}
+## Setup {#setup}
 
 Um AEM GraphQL für die Verwendung mit Inhaltsfragmenten und Apps sicher einzurichten, müssen Sie verschiedene Komponenten konfigurieren.
 
@@ -36,9 +36,9 @@ Der Endpunkt ist der Pfad, der für den Zugriff auf GraphQL für AEM verwendet w
 
 Endpunkte müssen konfiguriert werden in:
 
-* Autor
+* Author
 * Vorschau
-* Veröffentlichen 
+* Veröffentlichen
 
 Für:
 
@@ -82,7 +82,7 @@ CORS ist in der Regel für Folgendes konfiguriert:
 
 ### Authentifizierung {#authentication}
 
-Ein Hauptanwendungsfall für die Adobe Experience Manager as a Cloud Service (AEM) GraphQL API für die Bereitstellung von Inhaltsfragmenten besteht darin, Remote-Abfragen von Drittanbieteranwendungen oder -diensten zu akzeptieren. Für diese Remote-Abfragen ist möglicherweise ein authentifizierter API-Zugriff erforderlich, um eine sichere, Headless-Content-Bereitstellung zu gewährleisten.
+Ein primäres Anwendungsbeispiel für die GraphQL-API von Adobe Experience Manager as a Cloud Service (AEM) für die Bereitstellung von Inhaltsfragmenten ist das Annehmen von Remote-Abfragen von Drittanbieter-Programmen oder -Services. Diese Remote-Abfragen erfordern möglicherweise einen authentifizierten API-Zugriff, um die Bereitstellung von Headless-Inhalten zu sichern.
 
 #### Details {#details-authentication}
 
@@ -93,7 +93,7 @@ Ein Hauptanwendungsfall für die Adobe Experience Manager as a Cloud Service (AE
 Die Authentifizierung ist normalerweise für Folgendes konfiguriert:
 
 * Vorschau
-* Veröffentlichen 
+* Veröffentlichen
 
 Für:
 
@@ -113,9 +113,9 @@ Bei einer Headless-Implementierung gibt es mehrere Bereiche von Sicherheit und B
 
 Berechtigungen werden in der Regel für Folgendes konfiguriert:
 
-* Autor
+* Author
 * Vorschau
-* Veröffentlichen 
+* Veröffentlichen
 
 Für:
 
@@ -152,9 +152,9 @@ AEM GraphQL wird zum Abrufen von Informationen aus Ihren Inhaltsfragmenten verwe
 
 Inhaltsfragmente werden definiert, erstellt, getestet, veröffentlicht und für folgende Zwecke aufgerufen:
 
-* Autor
+* Author
 * Vorschau
-* Veröffentlichen 
+* Veröffentlichen
 
 Für:
 
@@ -184,14 +184,14 @@ AEM Headless-CMS gibt Entwicklern die Freiheit, außergewöhnliche Erlebnisse mi
 
 * [Installieren und Verwenden des AEM SDK für die Entwicklung](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=de)
 * [AEM Headless-Entwicklerressourcen](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
-* Beispiele, darunter [React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html), [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html), [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html), darunter
+* Beispiele, darunter [React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=de), [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html), [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html), darunter
 
 #### Umgebungen {#environments-your-apps}
 
 Apps werden in der Regel entwickelt, getestet und für folgende Zwecke verwendet:
 
 * Vorschau
-* Veröffentlichen 
+* Veröffentlichen
 
 Für:
 

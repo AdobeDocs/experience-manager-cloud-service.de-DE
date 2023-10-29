@@ -1,13 +1,13 @@
 ---
 title: Grundlegendes zu Cloud Service-Inhaltsanforderungen
 description: Wenn Sie Lizenzen für Inhaltsanforderungen von Adobe erworben haben, erfahren Sie mehr über die Arten von Inhaltsanforderungen, die Adobe Experience Cloud as a Service misst, und über die Abweichungen mit den Analytics-Reporting-Tools eines Unternehmens.
-source-git-commit: e34b21194e35b2f56dd1e7df2165c3fa5c0cb7da
+exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 12%
 
 ---
-
 
 # Cloud Service-Inhaltsanforderungen
 
@@ -67,5 +67,3 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 | Commerce integration framework-Aufrufe ausschließen | Ausgeschlossen | Dies sind Anfragen an AEM, die an die Commerce integration framework weitergeleitet werden - die URL beginnt mit `/api/graphql`—um eine doppelte Zählung zu vermeiden, sind sie für den Cloud Service nicht abrechenbar. |
 | Ausschließen `manifest.json` | Ausgeschlossen | Manifest ist kein API-Aufruf. Hier finden Sie Informationen zur Installation von Websites auf Desktop- oder Mobiltelefonen. Adobe sollte JSON-Anfrage nicht zählen zu `/etc.clientlibs/*/manifest.json` |
 | Ausschließen `favicon.ico` | Ausgeschlossen | Obwohl der zurückgegebene Inhalt nicht HTML oder JSON sein sollte, stellen wir fest, dass in einigen Szenarien wie SAML-Authentifizierungsflüssen Favicons zurückgegeben werden können, da HTML daher explizit von der Zählung ausgeschlossen ist. |
-
-
