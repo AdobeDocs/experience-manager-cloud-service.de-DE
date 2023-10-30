@@ -2,9 +2,9 @@
 title: Wie können Designs in Adaptive Forms erstellt und verwendet werden?
 description: Sie können Designs verwenden, um ein adaptives Formular mithilfe von Kernkomponenten zu gestalten und eine visuelle Identität bereitzustellen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2678'
 ht-degree: 18%
 
 ---
@@ -158,7 +158,7 @@ Sie können einzelne Komponenten anpassen oder Änderungen auf Designebene mithi
 Die `variable.scss` -Datei enthält die globalen Variablen des Designs. Durch Aktualisierung dieser Variablen können Sie stilistisch relevante Änderungen auf der Designebene vornehmen. Gehen Sie wie folgt vor, um Stile auf Designebene anzuwenden:
 
 1. Öffnen Sie die Datei `<your-theme-sources>/src/site/_variables.scss`, um sie zu bearbeiten.
-1. Ändern Sie den Wert einer beliebigen Eigenschaft. Die standardmäßige Fehlerfarbe lautet beispielsweise `red`. So ändern Sie die Fehlerfarbe von `red` nach `blue`ändern Sie den Farb-Hex-Code des `$errorvariable`. Beispiel: `$error: #196ee5`.
+1. Ändern Sie den Wert einer beliebigen Eigenschaft. Die standardmäßige Fehlerfarbe lautet beispielsweise `red`. So ändern Sie die Fehlerfarbe von `red` nach `blue`ändern Sie den Farb-Hex-Code des `$errorvariable`. Zum Beispiel: `$error: #196ee5`.
 1. Speichern und schließen Sie die Datei.
 
    ![Bearbeiten eines Designs](/help/forms/assets/edit_theme.png)
@@ -410,19 +410,29 @@ Wenn Sie Informationen wie ein Logo, einen Firmennamen in der Kopfzeile und Copy
 
 **Ans:** Wenn Anpassungen sowohl auf globaler als auch auf Komponentenebene vorgenommen werden, hat die Anpassung auf Komponentenebene Priorität.
 
-## Siehe nächste Punkte
+<!--
 
-* [Festlegen des Layouts von Formularen für verschiedene Bildschirmgrößen und Gerätetypen](/help/sites-cloud/authoring/features/responsive-layout.md)
-* [Generieren des Datensatzdokuments für adaptive Forms (Kernkomponenten)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-* [Erstellen einer adaptiven Forms mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
-* [Vorlagen für Musterdesigns und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+## See next
+
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+* [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
 >[!MORELIKETHIS]
 >
->* [Aktivieren der Kernkomponenten für adaptive Formulare in AEM Forms as a Cloud Service und lokaler Entwicklungsumgebung](/help/forms/enable-adaptive-forms-core-components.md)
+>* [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
+
+-->
 
 
 ## Siehe auch {#see-also}
 
 {{see-also}}
+
+* [Festlegen des Layouts von Formularen für verschiedene Bildschirmgrößen und Gerätetypen](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Generieren des Datensatzdokuments für adaptive Forms (Kernkomponenten)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+* [Erstellen einer adaptiven Forms mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
+* [Vorlagen für Musterdesigns und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [Aktivieren der Kernkomponenten für adaptive Formulare in AEM Forms as a Cloud Service und lokaler Entwicklungsumgebung](/help/forms/enable-adaptive-forms-core-components.md)

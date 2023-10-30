@@ -3,9 +3,9 @@ title: Wie erstelle ich eine Vorlage für ein adaptives Formular basierend auf d
 description: Erstellen Sie Vorlagen für adaptive Formulare basierend auf der Kernkomponente , um die grundlegende Struktur und den anfänglichen Inhalt mithilfe des Vorlagen-Editors zu definieren.
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: 25a1504e2655e414f32dfea20e416889cea06dcc
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '1991'
 ht-degree: 58%
 
 ---
@@ -281,11 +281,18 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 * Schränken Sie die Anzahl der Vorlagen so ein, dass sie den grundlegend verschiedenen auf den Websites verfügbaren Formulartypen entsprechen.
 * Stellen Sie die erforderlichen Flexibilität und Konfigurationsfunktionen für Ihre benutzerdefinierten Komponenten bereit, die in einer Vorlage verwendet werden.
 
-## Siehe nächste Punkte
+<!--
+## See next
 
-* [Erstellen von Stilen oder Designs für Ihre Formulare](using-themes-in-core-components.md)
-* [Erstellen eines adaptiven Formulars (Kernkomponenten)](/help/forms/creating-adaptive-form-core-components.md)
+* [Create style or themes for your forms](using-themes-in-core-components.md)
+* [Create an Adaptive Form (core components)](/help/forms/creating-adaptive-form-core-components.md)
+
+-->
 
 ## Siehe auch {#see-also}
 
 {{see-also}}
+
+* [Erstellen von Stilen oder Designs für Ihre Formulare](using-themes-in-core-components.md)
+* [Erstellen eines adaptiven Formulars (Kernkomponenten)](/help/forms/creating-adaptive-form-core-components.md)
+

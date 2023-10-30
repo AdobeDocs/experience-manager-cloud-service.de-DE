@@ -1,23 +1,23 @@
 ---
-title: Konfigurieren von Unified Storage Connector für AEM Forms
-description: Erfahren Sie, wie Sie Unified Storage Connector für AEM Forms verwalten. Verwenden Sie Unified Storage Connector, um AEM Forms mit externen Datenspeichern zu verbinden.
+title: Wie wird Unified Storage Connector (USC) für AEM Forms konfiguriert?
+description: Erfahren Sie, wie Sie Unified Storage Connector (USC) für AEM Forms verwalten. Verwenden Sie den Unified Storage Connector (USC), um AEM Forms mit externen Datenspeichern zu verbinden.
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: c33f59cb56decf1e5bbbe0b5bb084e906585e702
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 95%
+source-wordcount: '641'
+ht-degree: 78%
 
 ---
 
-# Verwalten von Unified Storage Connector für AEM Forms {#manage-unified-storage-connector}
+# Unified Storage Connector (USC) für AEM Forms verwalten {#manage-unified-storage-connector}
 
-Sie können Unified Storage Connector verwenden, um AEM Forms mit externen Datenspeichern zu verbinden.
+Sie können Unified Storage Connector (USC) verwenden, um AEM Forms mit externen Datenspeichern zu verbinden.
 
-Beispielsweise können Sie Werte für Felder in einem adaptiven Formular ausfüllen und an einen AEM-Workflow senden. Sie können AEM-Workflows außerdem so konfigurieren, dass Daten in einem externen Datenspeicher wie dem Microsoft Azure-Speicher-Server gespeichert werden. Verwenden Sie Unified Storage Connector, um eine Verbindung zwischen AEM-Workflows und dem externen Datenspeicher herzustellen.
+Beispielsweise können Sie Werte für Felder in einem adaptiven Formular ausfüllen und an einen AEM-Workflow senden. Sie können AEM-Workflows außerdem so konfigurieren, dass Daten in einem externen Datenspeicher wie dem Microsoft Azure-Speicher-Server gespeichert werden. Verwenden Sie den Unified Storage Connector (USC), um eine Verbindung zwischen AEM Workflows und dem externen Speicher herzustellen.
 
 ## Verbinden von AEM-Workflows mit einem Microsoft Azure-Speicher-Server {#connect-workflows-with-azure}
 
-Erstellen Sie eine Azure-Speicherkonfiguration, und verweisen Sie mit Unified Storage Connector auf diese Konfiguration. Anschließend können Sie AEM-Workflow-Modelle konfigurieren, um den Datenspeicher zu externalisieren und ihn mit einem Azure-Speicher-Server zu verbinden.
+Erstellen Sie eine Azure-Speicherkonfiguration und beziehen Sie sich auf diese Konfiguration mithilfe des Unified Storage Connector (USC). Anschließend können Sie AEM-Workflow-Modelle konfigurieren, um den Datenspeicher zu externalisieren und ihn mit einem Azure-Speicher-Server zu verbinden.
 
 ### Erstellen einer [!DNL Azure]-Speicherkonfiguration {#create-azure-storage-configuration}
 
@@ -31,9 +31,9 @@ Führen Sie die folgenden Schritte aus, um eine [!DNL Azure]-Speicherkonfigurati
 1. Geben Sie den Namen des [!DNL Azure]-Speicherkontos im Feld **[!UICONTROL Azure-Speicherkonto]** an.
 1. Geben Sie den Schlüssel für den Zugriff auf das Azure-Speicherkonto im Feld **[!UICONTROL Azure-Zugriffsschlüssel]** an und tippen Sie auf **[!UICONTROL Speichern]**.
 
-### Konfigurieren von Unified Storage Connector für AEM-Workflows {#configure-unified-storage-connector-workflows}
+### Unified Storage Connector (USC) für AEM Workflows konfigurieren {#configure-unified-storage-connector-workflows}
 
-Führen Sie die folgenden Schritte aus, um Unified Storage Connector für AEM-Workflows zu konfigurieren:
+Führen Sie die folgenden Schritte aus, um Unified Storage Connector (USC) für AEM Workflows zu konfigurieren:
 
 1. Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Unified Storage Connector]**.
 

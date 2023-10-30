@@ -5,9 +5,9 @@ role: User, Developer
 keywords: Verbinden Sie AEM adaptive Formular mit der Microsoft SharePoint-Liste, verbinden Sie das adaptive Formular mit der Microsoft SharePoint-Liste, integrieren Sie AEM adaptive Formular in die Microsoft SharePoint-Liste, integrieren Sie das adaptive Formular in Microsoft Liste, senden Sie Daten aus einem adaptiven Formular in SharePoint Liste, senden Sie AEM Workflow an SharePoint Liste.
 hide: true
 hidefromToC: true
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '550'
 ht-degree: 5%
 
 ---
@@ -86,16 +86,12 @@ Erfahren Sie, wie [AEM-Workflow verwenden](https://experienceleague.adobe.com/do
 * [Konfigurieren von Datenquellen](/help/forms/configuring-submit-actions.md)
 * [Erstellen des Formulardatenmodells](/help/forms/create-form-data-models.md)
 * [Verwenden von Forms-orientierten AEM Workflows - Schrittreferenz zur Automatisierung von Geschäftsprozessen](/help/forms/aem-forms-workflow-step-reference.md)
-
-## Zusätzliche Informationen
-
+* [Erstellen einer benutzerdefinierten Sende-Aktion für adaptive Formulare](/help/forms/custom-submit-action-form.md)
 * [Erstellen oder Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Einbetten eines adaptiven Formulars in eine AEM Sites-Seite](/help/forms/embed-adaptive-form-aem-sites.md)
 * [Erstellen, Verwenden und Anpassen von Designs in einem adaptiven Formular](/help/forms/using-themes-in-core-components.md)
 
->[!MORELIKETHIS]
->
->* [Erstellen einer benutzerdefinierten Sende-Aktion für adaptive Formulare](/help/forms/custom-submit-action-form.md)
+
 
 
 

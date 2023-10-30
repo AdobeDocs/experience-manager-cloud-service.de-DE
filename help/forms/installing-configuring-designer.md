@@ -3,7 +3,7 @@ title: Wie wird Forms Designer heruntergeladen und installiert, um Vorlagen für
 description: Verwenden Sie Forms Designer, um XDP- und PDF-Formularvorlagen zu erstellen, die als Vorlage für ein Datensatzdokument dienen.
 keywords: Installieren von Designer, Installieren von Forms Designer, Anforderungen für die Installation von Forms Designer
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 62%
@@ -74,8 +74,13 @@ So installieren Sie Designer:
 * [Verwenden benutzerdefinierter Schriftarten](/help/forms/use-custom-fonts.md)
 * [Erstellen eines eigenständigen, auf Kernkomponenten basierenden adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)
 * [Erstellen oder Hinzufügen eines adaptiven Formulars zur AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Verwenden von Forms Designer zum Erstellen von DoR-Vorlagen und Formularfragmenten](/help/forms/use-forms-designer.md)
 
+
+<!--
 
 >[!MORELIKETHIS]
 >
->* [Verwenden von Forms Designer zum Erstellen von DoR-Vorlagen und Formularfragmenten](/help/forms/use-forms-designer.md)
+>* [Use Forms Designer to create Document of Record (DoR) templates and form fragments](/help/forms/use-forms-designer.md)
+
+-->

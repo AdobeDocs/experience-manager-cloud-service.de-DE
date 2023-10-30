@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie ein adaptives Formular erstellen oder zu Ihre
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 7b797524d0df764c497baa6e4ffd0b3cabd368ca
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3212'
 ht-degree: 82%
 
 ---
@@ -255,14 +255,21 @@ Beim Senden eines Formulars können Sie die Benutzenden zu einer anderen Web-Sei
    * Um eine Umleitungs-URL zu konfigurieren, wählen Sie für die Option &quot;Beim Senden&quot;die Option **[!UICONTROL Zu URL umleiten]** und eine AEM Sites-Seite durchsuchen und auswählen oder die URL einer externen Seite angeben.
    * Um eine benutzerdefinierte Nachricht oder Dankesnachricht zu konfigurieren, wählen Sie für die Option &quot;Senden&quot;die Option **[!UICONTROL Nachricht anzeigen]** und geben Sie eine Nachricht im **[!UICONTROL Nachrichteninhalt]** ankreuzen. Es handelt sich um ein Rich-Text-Feld. Sie können die Vollbildoption verwenden, um alle verfügbaren Rich-Text-Elemente anzuzeigen.
 
-## Siehe nächste Punkte
 
-* [Erstellen von Stilen oder Designs für Ihre Formulare](using-themes-in-core-components.md)
-* [Hinzufügen von dynamischem Verhalten zu Formularen mithilfe des Regeleditors](rule-editor.md)
-* [Festlegen des Layouts von Formularen für verschiedene Bildschirmgrößen und Gerätetypen](/help/sites-cloud/authoring/features/responsive-layout.md)
+<!--
+## See next
 
+* [Create style or themes for your forms](using-themes-in-core-components.md)
+* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+-->
 
 ## Siehe auch {#see-also}
 
 {{see-also}}
+
+* [Hinzufügen von dynamischem Verhalten zu Formularen mithilfe des Regeleditors](rule-editor.md)
+* [Festlegen des Layouts von Formularen für verschiedene Bildschirmgrößen und Gerätetypen](/help/sites-cloud/authoring/features/responsive-layout.md)
+
 

@@ -3,9 +3,9 @@ title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular?
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen
 keywords: Anleitung zum Auswählen einer Sendeaktion für ein adaptives Formular, Verbinden eines adaptiven Formulars mit einer Sharepoint-Liste, Verbinden eines adaptiven Formulars mit einer SharePoint-Dokumentbibliothek, Verbinden eines adaptiven Formulars mit einem Formulardatenmodell
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '3658'
+source-wordcount: '3635'
 ht-degree: 81%
 
 ---
@@ -497,12 +497,14 @@ Wenn Sie ein Formulardatenmodell oder ein Schema-basiertes adaptives Formular mi
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 
 
-## Siehe nächste Punkte
+<!--
+## See next
 
-* [Erstellen von Stilen oder Designs für Ihre Formulare](using-themes-in-core-components.md)
-* [Erstellen eines adaptiven Formulars (Kernkomponenten)](/help/forms/creating-adaptive-form-core-components.md)
-* [Erstellen einer benutzerdefinierten Sende-Aktion für adaptive Formulare](/help/forms/custom-submit-action-form.md)
+* [Create style or themes for your forms](using-themes-in-core-components.md)
+* [Create an Adaptive Form (core components)](/help/forms/creating-adaptive-form-core-components.md)
+* [Create a custom Submit Action for Adaptive Forms](/help/forms/custom-submit-action-form.md)
 
+-->
 
 ## Siehe auch {#see-also}
 

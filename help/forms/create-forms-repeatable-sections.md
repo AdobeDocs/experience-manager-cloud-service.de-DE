@@ -3,9 +3,9 @@ title: Wie werden wiederholbare Bereiche in den Kernkomponenten des adaptiven Fo
 description: Erfahren Sie, wie Sie wiederholbare Abschnitte oder Felder in einem adaptiven Formular erstellen.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1359'
 ht-degree: 96%
 
 ---
@@ -229,10 +229,13 @@ Im folgenden Code verwendet der `SampleType`Bereich die Eigenschaften „minOccu
 
 {{see-also}}
 
+<!--
 
 >[!MORELIKETHIS]
 >
->* [Erstellen eines adaptiven Formulars](creating-adaptive-form-core-components.md)
->* [Erstellen von Stilen oder Designs für Ihre Formulare](using-themes-in-core-components.md)
->* [Hinzufügen von dynamischem Verhalten zu Formularen mithilfe des Regeleditors](rule-editor.md)
->* [Festlegen des Layouts von Formularen für verschiedene Bildschirmgrößen und Gerätetypen](/help/sites-cloud/authoring/features/responsive-layout.md)
+>* [Create an Adaptive Form](creating-adaptive-form-core-components.md)
+>* [Create style or themes for your forms](using-themes-in-core-components.md)
+>* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
+>* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+-->

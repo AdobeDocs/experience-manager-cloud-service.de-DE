@@ -2,9 +2,9 @@
 title: Traffic-Filterregeln, einschließlich WAF-Regeln
 description: Konfigurieren von Traffic-Filterregeln einschließlich Web Application Firewall (WAF)-Regeln
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: aca385ff9a44733a6529c7e78e73fc1b138c1177
+source-git-commit: 8df8322eef7c74932d6feeeb4a7a6045935edd88
 workflow-type: tm+mt
-source-wordcount: '3453'
+source-wordcount: '3473'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 2%
 # Traffic-Filterregeln, einschließlich WAF-Regeln {#traffic-filter-rules-including-waf-rules}
 
 >[!NOTE]
->Diese Funktion wird in Kürze in Entwicklungsumgebungen verfügbar sein, mit einem schrittweisen Rollout zu Staging- und Produktionsumgebungen im November. Sie können einen früheren Zugriff auf Staging und Produktion per E-Mail anfordern **aemcs-waf-adopter@adobe.com**.
+>Diese Funktion ist jetzt in Entwicklungsumgebungen verfügbar, mit einem schrittweisen Rollout zu Staging- und Produktionsumgebungen im späteren November. Sie können einen früheren Zugriff auf Staging und Produktion per E-Mail anfordern **aemcs-waf-adopter@adobe.com**.
 
 Traffic-Filterregeln können verwendet werden, um Anforderungen auf der CDN-Ebene zu blockieren oder zuzulassen. Dies kann in Szenarien wie den folgenden nützlich sein:
 
@@ -26,6 +26,8 @@ Die meisten dieser Traffic-Filterregeln stehen allen AEM as a Cloud Service Site
 Eine Unterkategorie von Traffic-Filterregeln erfordert entweder eine Lizenz für Enhanced Security oder eine WAF-DDoS Protection-Lizenz und wird später in diesem Jahr verfügbar sein. Diese leistungsstarken Regeln werden als Traffic-Filterregeln für WAF (Web Application Firewall) (kurz WAF-Regeln) bezeichnet und haben Zugriff auf die [WAF-Flags](#waf-flags-list) weiter unten in diesem Artikel beschrieben.
 
 Traffic-Filterregeln können über Cloud Manager-Konfigurations-Pipelines bereitgestellt werden, um Typen von Entwicklungs-, Staging- und Produktionsumgebungen in Produktionsprogrammen (ohne Sandbox) bereitzustellen. Die Unterstützung von RDEs wird in Zukunft stattfinden.
+
+[Tutorial durchlaufen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) um rasch konkrete Kenntnisse zu dieser Funktion zu erwerben.
 
 ## Organisation dieses Artikels {#how-organized}
 

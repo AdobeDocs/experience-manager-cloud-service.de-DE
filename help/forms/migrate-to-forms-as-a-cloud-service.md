@@ -9,7 +9,7 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
 source-wordcount: '1583'
 ht-degree: 94%
@@ -171,7 +171,7 @@ Wenn Sie AEM Workflow-Modelle von AEM Forms 6.5 auf Cloud Service migrieren, geb
 Das Migrationsdienstprogramm hilft Ihnen bei der Migration von adaptiven Formularen basierend auf Foundation-Komponenten. Darüber hinaus unterstützt Forms as a Cloud Service Kernkomponenten für adaptive Formulare. Damit können Sie:
 
 * [Auf Kernkomponenten basierende, eigenständige adaptive Formulare erstellen](/help/forms/creating-adaptive-form-core-components.md)
-* [Auf Kernkomponenten basierende, adaptive Formulare direkt auf einer AEM Sites-Seite erstellen](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Erstellen eines auf Kernkomponenten basierenden adaptiven Formulars direkt auf einer AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 Weitere Informationen zu AEM Forms as a Cloud Service finden Sie unter:
 
