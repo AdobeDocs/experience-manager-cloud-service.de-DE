@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie AEM Inhaltsfragmentmodelle verwenden können,
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
+source-git-commit: 07f61a3f6a794e18bc2e02e966392cdce3103a81
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 100%
+source-wordcount: '1009'
+ht-degree: 98%
 
 ---
 
@@ -98,6 +98,7 @@ Gehen Sie wie oben beschrieben vor, um diese zusätzlichen Felder hinzuzufügen.
 
    * **Rendern als:** **Inhaltsreferenz**: Wenn Sie ein Abenteuer erstellen, verweist dieses Feld auf das Bild-Asset, das diese Reise darstellt.
    * **Feldbezeichnung:** `Image`: Die Bezeichnung, die für dieses Feld angezeigt wird, wenn ein Abenteuer erstellt wird.
+   * **Stammpfad:** `/content/dam/aem-demo-assets/en` - Gibt einen Startpunktpfad beim Suchen nach Assets mit der Asset-Auswahl an.
 
 1. Nachdem Sie die erforderlichen Felder für das Inhaltsfragmentmodell hinzugefügt haben, klicken Sie oben rechts im Fenster auf **Speichern**.
 
