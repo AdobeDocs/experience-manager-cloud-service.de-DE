@@ -2,10 +2,10 @@
 title: Wie können Designs in Adaptive Forms erstellt und verwendet werden?
 description: Sie können Designs verwenden, um ein adaptives Formular mithilfe von Kernkomponenten zu gestalten und eine visuelle Identität bereitzustellen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
 workflow-type: tm+mt
-source-wordcount: '2678'
-ht-degree: 18%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -430,7 +430,6 @@ Wenn Sie Informationen wie ein Logo, einen Firmennamen in der Kopfzeile und Copy
 ## Siehe auch {#see-also}
 
 {{see-also}}
-
 * [Festlegen des Layouts von Formularen für verschiedene Bildschirmgrößen und Gerätetypen](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [Generieren des Datensatzdokuments für adaptive Forms (Kernkomponenten)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Erstellen einer adaptiven Forms mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
