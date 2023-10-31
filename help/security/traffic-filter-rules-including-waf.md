@@ -4,8 +4,8 @@ description: Konfigurieren von Traffic-Filterregeln einschließlich Web Applicat
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 8df8322eef7c74932d6feeeb4a7a6045935edd88
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3473'
+ht-degree: 2%
 
 ---
 

@@ -2,10 +2,10 @@
 title: Konfigurieren von Übersetzungsregeln für Headless-Inhalte
 description: Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 98%
+ht-degree: 90%
 
 ---
 
@@ -15,12 +15,12 @@ Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalt
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der AEM Headless-Übersetzungs-Tour, [Konfigurieren des Übersetzungs-Connectors](configure-connector.md), haben Sie gelernt, wie Sie Ihren Übersetzungs-Connector installieren und konfigurieren. Sie sollten jetzt:
+Im vorherigen Dokument der Journey für die AEM Headless-Übersetzung [Übersetzungsintegration konfigurieren](configure-connector.md) Sie haben gelernt, wie Sie Ihre Übersetzungsintegration installieren und konfigurieren und sollten jetzt:
 
 * die wichtigen Parameter des Translation Integration Framework in AEM verstehen.
-* in der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungs-Service einzurichten.
+* In der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungsdienst einzurichten.
 
-Nachdem Sie Ihren Connector eingerichtet haben, führt Sie dieser Artikel durch den nächsten Schritt, um herauszufinden, welche Inhalte übersetzt werden müssen.
+Nachdem Sie Ihre Integration eingerichtet haben, führt Sie dieser Artikel durch den nächsten Schritt, um zu ermitteln, welche Inhalte übersetzt werden müssen.
 
 >[!CAUTION]
 >
@@ -83,7 +83,6 @@ In der Benutzeroberfläche der **Übersetzungskonfiguration** gibt es eine Reihe
    1. Tippen oder klicken Sie auf **Hinzufügen**.
    1. Wiederholen Sie diese Schritte für alle Felder, die Sie übersetzen müssen.
    1. Tippen oder klicken Sie auf **Speichern**.
-
       ![Eigenschaft hinzufügen](assets/add-property.png)
 
 Sie haben jetzt Ihre Übersetzungsregeln konfiguriert.
@@ -101,7 +100,7 @@ Nachdem Sie nun diesen Teil der Headless-Übersetzungs-Tour abgeschlossen haben,
 * Verstehen, was die Übersetzungsregeln bewirken.
 * Eigene Übersetzungsregeln definieren können.
 
-Bauen Sie auf diesem Wissen auf und setzen Sie die AEM Headless-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Inhalte übersetzen](translate-content.md) lesen, in dem Sie erfahren, wie Ihr Connector und Ihre Regeln zusammenarbeiten, um Headless-Inhalte zu übersetzen.
+Auf diesen Erkenntnissen aufbauen und Ihre Journey-zur Headless-AEM-Übersetzung fortsetzen, indem Sie das Dokument erneut überprüfen. [Inhalt übersetzen](translate-content.md) Hier erfahren Sie, wie Ihre Integration und Regeln zusammenarbeiten, um Headless-Inhalte zu übersetzen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

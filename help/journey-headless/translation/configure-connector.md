@@ -1,15 +1,15 @@
 ---
-title: Konfigurieren des Übersetzungs-Connectors für Headless-Inhalte
-description: Erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.
+title: Konfigurieren der Übersetzungsintegration für Headless Content
+description: Erfahren Sie, wie Sie AEM mit einem Übersetzungs-Service verbinden.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+workflow-type: tm+mt
 source-wordcount: '1231'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
-# Konfigurieren des Übersetzungs-Connectors {#configure-connector}
+# Konfigurieren der Übersetzungsintegration {#configure-integration}
 
 Erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.
 
@@ -25,7 +25,7 @@ Dieser Artikel baut auf diesen Grundlagen auf, damit Sie den ersten Konfiguratio
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie einen AEM-Connector für Ihren ausgewählten Übersetzungsdienst einrichten. Nach dem Lesen sollten Sie:
+In diesem Dokument erfahren Sie, wie Sie eine AEM Integration mit Ihrem ausgewählten Übersetzungsdienst einrichten. Nach dem Lesen sollten Sie:
 
 * die wichtigen Parameter des Translation Integration Framework in AEM verstehen.
 * In der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungsdienst einzurichten.

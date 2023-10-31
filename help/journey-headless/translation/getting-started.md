@@ -2,10 +2,10 @@
 title: Erste Schritte mit der AEM Headless-Übersetzung
 description: Erfahren Sie, wie Sie Ihre Headless-Inhalte organisieren und wie AEM Übersetzungs-Tools funktionieren.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
 workflow-type: tm+mt
 source-wordcount: '1425'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -85,7 +85,6 @@ Da die Inhaltsmodelle die Struktur Ihrer Inhalte definieren, müssen Sie wissen,
 1. Der **Inhaltsfragmentmodell-Editor** wird geöffnet.
    1. Die linke Spalte enthält die Felder des Modells. Diese Spalte interessiert uns.
    1. Die rechte Spalte enthält die Felder, die dem Modell hinzugefügt werden können. Diese Spalte können wir ignorieren.
-
       ![Inhaltsfragmentmodell-Editor](assets/content-fragment-model-editor.png)
 1. Tippen oder klicken Sie auf eines der Felder des Modells. AEM markiert es und die Details dieses Felds werden in der rechten Spalte angezeigt.
    ![Details des Inhaltsfragmentmodell-Editors](assets/content-fragment-model-editor-detail.png)
@@ -179,7 +178,7 @@ Nachdem Sie nun diesen Teil der Headless-Übersetzungs-Tour abgeschlossen haben,
 * verstehen, wie AEM Headless-Inhalte speichert.
 * mit den Übersetzungs-Tools von AEM vertraut sein.
 
-Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Headless-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Konfigurieren des Übersetzungs-Connectors](configure-connector.md) lesen, in dem Sie lernen, wie Sie AEM mit einem Übersetzungs-Service verbinden.
+Auf diesen Erkenntnissen aufbauen und Ihre Journey-zur Headless-AEM-Übersetzung fortsetzen, indem Sie das Dokument erneut überprüfen. [Übersetzungsintegration konfigurieren](configure-connector.md) Hier erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.|
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

@@ -2,17 +2,17 @@
 title: Übersetzen von Headless-Inhalten
 description: Verwenden Sie den Übersetzungs-Connector, um Ihre Headless-Inhalte zu übersetzen.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
 workflow-type: tm+mt
 source-wordcount: '2175'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
 
 # Übersetzen von Headless-Inhalten {#translate-content}
 
-Verwenden Sie den Übersetzungs-Connector, um Ihre Headless-Inhalte zu übersetzen.
+Übersetzen Sie Ihre Headless Content mithilfe der Übersetzungsintegration.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
