@@ -1,17 +1,17 @@
 ---
 title: Asynchrone Aufträge
-description: Adobe Experience Manager optimiert die Leistung, indem einige ressourcenintensive Aufgaben asynchron als Hintergrundvorgänge ausgeführt werden.
+description: Adobe Experience Manager optimiert die Leistung durch asynchrone Ausführung einiger ressourcenintensiver Aufgaben im Hintergrund.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 65%
+source-wordcount: '865'
+ht-degree: 100%
 
 ---
 
 # Asynchrone Vorgänge {#asynchronous-operations}
 
-Um negative Auswirkungen auf die Leistung zu reduzieren, verarbeitet Adobe Experience Manager bestimmte langwierige und ressourcenintensive Vorgänge asynchron als Hintergrundvorgänge. Die asynchrone Verarbeitung umfasst den Aufbau einer Warteschlange mit mehreren Aufträgen und schließlich deren serielle Ausführung gemäß der Verfügbarkeit von Systemressourcen.
+Um negative Auswirkungen auf die Leistung einzuschränken, werden bestimmte lang laufende und ressourcenintensive Vorgänge in Adobe Experience Manager asynchron im Hintergrund verarbeitet. Die asynchrone Verarbeitung umfasst den Aufbau einer Warteschlange mit mehreren Aufträgen und schließlich deren serielle Ausführung gemäß der Verfügbarkeit von Systemressourcen.
 
 Zu diesen Vorgängen gehören:
 
@@ -19,10 +19,9 @@ Zu diesen Vorgängen gehören:
 * Verschieben vieler Assets oder Assets mit vielen Verweisen
 * Exportieren/Importieren von Asset-Metadaten in großen Mengen
 * Abrufen von Assets, die über dem festgelegten Schwellenwert liegen, aus einer Remote-AEM-Bereitstellung
-* Verschieben von Seiten
 * Ausrollen von Live Copies
 
-Sie können den Status asynchroner Aufträge im **[!UICONTROL Hintergrundvorgänge]** Dashboard am **Globale Navigation** -> **Instrumente** -> **Allgemein** -> **Aufträge**.
+Sie können den Status von asynchronen Aufträgen im Dashboard **[!UICONTROL Hintergrundvorgänge]** unter **Globale Navigation** -> **Tools** -> **Allgemein** -> **Aufträge** einsehen.
 
 >[!NOTE]
 >
@@ -34,11 +33,11 @@ Sie können den Status asynchroner Aufträge im **[!UICONTROL Hintergrundvorgän
 
 Wenn AEM einen Vorgang asynchron verarbeitet, erhalten Sie eine Benachrichtigung in Ihrem [Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md) und per E-Mail (falls aktiviert).
 
-Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie zum **[!UICONTROL Hintergrundvorgänge]** Seite.
+Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie zur Seite **[!UICONTROL Hintergrundvorgänge]**.
 
-1. Wählen Sie in der Experience Manager-Benutzeroberfläche die Option **Globale Navigation** -> **Instrumente** -> **Allgemein** -> **Aufträge**.
+1. Wählen Sie in der Benutzeroberfläche von Experience Manager die Option **Globale Navigation** -> **Tools** -> **Allgemein** -> **Aufträge**.
 
-1. Im **[!UICONTROL Hintergrundvorgänge]** Seite, überprüfen Sie die Details der Vorgänge.
+1. Überprüfen Sie die Details für die Vorgänge auf der Seite **[!UICONTROL Hintergrundvorgänge]**.
 
    ![Status und Details asynchroner Vorgänge](assets/async-operation-status.png)
 
@@ -72,19 +71,19 @@ Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie z
 
 ## Konfigurieren der Optionen für die asynchrone Auftragsverarbeitung {#configure}
 
-Es gibt eine Reihe von Optionen für asynchrone Aufträge, die konfiguriert werden können. Die folgenden Beispiele zeigen, wie dies mit dem Konfigurationsmanager in einem lokalen Entwicklungssystem durchgeführt werden kann.
+Es gibt eine Reihe von Optionen für asynchrone Aufträge, die konfiguriert werden können. Die folgenden Beispiele zeigen, wie dies mit dem Konfigurations-Manager in einem lokalen Entwicklungssystem durchgeführt werden kann.
 
 >[!NOTE]
 >
->[OSGi-Konfigurationen](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) als veränderlicher Inhalt betrachtet werden und solche Konfigurationen als Inhaltspaket für eine Produktionsumgebung bereitgestellt werden müssen.
+>[OSGi-Konfigurationen](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) werden als veränderliche Inhalte betrachtet, und solche Konfigurationen müssen als Inhaltspaket für eine Produktionsumgebung implementiert werden.
 
 ### Bereinigen von abgeschlossenen Aufträgen {#purging-completed-jobs}
 
-AEM führt jeden Tag um 01:00 Uhr einen Bereinigungsauftrag aus, um abgeschlossene asynchrone Aufträge zu löschen, die älter als einen Tag sind.
+AEM führt jede Nacht um 01:00 Uhr einen Bereinigungsauftrag aus, um abgeschlossene asynchrone Aufträge zu löschen, die älter als einen Tag sind.
 
-Sie können den Zeitplan für den Bereinigungsauftrag und die Dauer ändern, für die Details abgeschlossener Aufträge beibehalten werden, bevor sie gelöscht werden. Sie können auch die maximale Anzahl abgeschlossener Aufträge konfigurieren, für die Details zu jedem Zeitpunkt beibehalten werden.
+Sie können den Zeitplan für den Bereinigungsauftrag bearbeiten. Außerdem können Sie anpassen, wie lange die Details zu abgeschlossenen Aufträgen gespeichert werden sollen, bevor sie gelöscht werden. Darüber hinaus können Sie die maximale Anzahl abgeschlossener Aufträge konfigurieren, deren Details zu einem beliebigen Zeitpunkt gespeichert werden.
 
-1. Melden Sie sich bei der AEM SDK QuickStart Jar-AEM Webkonsole an unter `https://<host>:<port>/system/console` als Administrator.
+1. Melden Sie sich bei der AEM-Web-Konsole von AEM SDK Quickstart Jar unter `https://<host>:<port>/system/console` als Admin-Benutzerin bzw. -Benutzer an.
 1. Navigieren Sie zu **OSGi** > **Konfiguration**
 1. Öffnen Sie den Auftrag **[!UICONTROL Adobe Granite – Geplante Bereinigung asynchroner Aufträge]**.
 1. Geben Sie Folgendes an:
@@ -100,7 +99,7 @@ Sie können den Zeitplan für den Bereinigungsauftrag und die Dauer ändern, fü
 
 Wenn die Anzahl der Assets oder der zu löschenden Ordner den Schwellenwert überschreitet, wird der Löschvorgang asynchron ausgeführt.
 
-1. Melden Sie sich bei der AEM SDK QuickStart Jar-AEM Webkonsole an unter `https://<host>:<port>/system/console` als Administrator.
+1. Melden Sie sich bei der AEM-Web-Konsole von AEM SDK Quickstart Jar unter `https://<host>:<port>/system/console` als Admin-Benutzerin bzw. -Benutzer an.
 1. Navigieren Sie zu **OSGi** > **Konfiguration**
 1. Öffnen Sie in der Web-Konsole die **[!UICONTROL Konfiguration der Standardwarteschlange für asynchrone Vorgänge.]**
 1. Legen Sie im Feld **[!UICONTROL Schwellenwert für Assets]** den Schwellenwert für die Anzahl von Assets/Ordnern für die asynchrone Verarbeitung von Löschvorgängen an.
@@ -114,7 +113,7 @@ Wenn die Anzahl der Assets oder der zu löschenden Ordner den Schwellenwert übe
 
 Wenn die Anzahl der zu verschiebenden Anlagen/Ordner oder Referenzen den Schwellenwert übersteigt, wird der Verschiebevorgang asynchron ausgeführt.
 
-1. Melden Sie sich bei der AEM SDK QuickStart Jar-AEM Webkonsole an unter `https://<host>:<port>/system/console` als Administrator.
+1. Melden Sie sich bei der AEM-Web-Konsole von AEM SDK Quickstart Jar unter `https://<host>:<port>/system/console` als Admin-Benutzerin bzw. -Benutzer an.
 1. Navigieren Sie zu **OSGi** > **Konfiguration**
 1. Öffnen Sie in der Web-Konsole die **[!UICONTROL Konfiguration der Verarbeitung asynchroner Verschiebeaufträge]**.
 1. Legen Sie im Feld **[!UICONTROL Schwellenwert für Assets/Verweise]** den Schwellenwert für Assets/Ordner oder Verweise für die asynchrone Verarbeitung von Verschiebevorgängen fest.
@@ -124,23 +123,9 @@ Wenn die Anzahl der zu verschiebenden Anlagen/Ordner oder Referenzen den Schwell
 1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispiel: Erfolg, fehlgeschlagen.
 1. Speichern Sie die Änderungen.
 
-### Konfigurieren von asynchronen Seitenverschiebungsvorgängen {#configuring-asynchronous-page-move-operations}
-
-Wenn die Anzahl der Verweise auf die zu verschiebende(n) Seite(n) den Schwellenwert überschreitet, wird der Verschiebungsvorgang asynchron durchgeführt.
-
-1. Melden Sie sich bei der AEM SDK QuickStart Jar-AEM Webkonsole an unter `https://<host>:<port>/system/console` als Administrator.
-1. Navigieren Sie zu **OSGi** > **Konfiguration**
-1. Öffnen Sie in der Web-Konsole die **[!UICONTROL Konfiguration der Verarbeitung asynchroner Seitenverschiebeaufträge]**.
-1. Legen Sie im Feld **[!UICONTROL Schwellenwert für Verweise]** den Schwellenwert für Verweise für asynchrone Verarbeitungen von Seitenverschiebevorgängen fest.
-
-   ![Schwellenwert für Seitenverschiebungen](assets/async-page-move.png)
-
-1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispiel: Erfolg, fehlgeschlagen.
-1. Speichern Sie die Änderungen.
-
 ### Konfigurieren asynchroner MSM-Vorgänge {#configuring-asynchronous-msm-operations}
 
-1. Melden Sie sich bei der AEM SDK QuickStart Jar-AEM Webkonsole an unter `https://<host>:<port>/system/console` als Administrator.
+1. Melden Sie sich bei der AEM-Web-Konsole von AEM SDK Quickstart Jar unter `https://<host>:<port>/system/console` als Admin-Benutzerin bzw. -Benutzer an.
 1. Navigieren Sie zu **OSGi** > **Konfiguration**
 1. Öffnen Sie in der Web-Konsole die **[!UICONTROL Konfiguration der Verarbeitung asynchroner Seitenverschiebeaufträge]**.
 1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispiel: Erfolg, fehlgeschlagen.
@@ -153,5 +138,4 @@ Wenn die Anzahl der Verweise auf die zu verschiebende(n) Seite(n) den Schwellenw
 >
 >* [Erstellen und Organisieren von Seiten](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
 >* [Importieren und Exportieren von Asset-Metadaten in großen Mengen](/help/assets/metadata-import-export.md).
->* [Verwenden Sie verbundene Assets, um DAM-Assets aus Remote-Implementierungen freizugeben](/help/assets/use-assets-across-connected-assets-instances.md).
-
+>* [Verwenden Sie verbundene Assets, um DAM-Assets aus Remote-Bereitstellungen freizugeben](/help/assets/use-assets-across-connected-assets-instances.md).
