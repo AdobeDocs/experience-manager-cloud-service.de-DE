@@ -2,10 +2,10 @@
 title: Einführung – Verwalten von SSL-Zertifikaten
 description: Erfahren Sie, wie Cloud Manager Ihnen Self-Service-Tools zur Installation von SSL-Zertifikaten bereitstellt.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 100%
+source-wordcount: '679'
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ AEM as a Cloud Service unterstützt nur sichere `https`-Sites.
 * Kunden mit mehreren benutzerdefinierten Domains möchten nicht jedes Mal, wenn sie eine Domain hinzufügen, ein Zertifikat hochladen.
 * Daher profitieren solche Kundinnen und Kunden von einem Zertifikat mit mehreren Domains.
 
-## Voraussetzungen {#requirements}
+## Zertifikatanforderungen {#requirements}
 
 * AEM as a Cloud Service akzeptiert nur OV- (Organisationsvalidierung) oder EV-Richtlinien (erweiterte Validierung). 
 * Außerdem muss es sich um ein X.509-TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle mit einem entsprechenden privaten 2048-Bit-RSA-Schlüssel handeln.
@@ -57,6 +57,30 @@ AEM as a Cloud Service unterstützt nur sichere `https`-Sites.
 * Selbstsignierte Zertifikate werden nicht akzeptiert.
 
 OV- und EV-Zertifikate bieten Benutzern zusätzliche, von der Zertifizierungsstelle validierte Informationen, anhand derer sie entscheiden können, ob der Eigentümer einer Website, der Absender einer E-Mail oder der digitale Unterzeichner von ausführbarem Code oder PDF-Dokumenten vertrauenswürdig ist. DV-Zertifikate erlauben keine solche Eigentumsprüfung.
+
+### Zertifikatformat {#certificate-format}
+
+SSL-Dateien müssen im PEM-Format vorliegen, damit sie in Cloud Manager installiert werden können. Häufige Dateierweiterungen des PEM-Formats umfassen `.pem,` .`crt`, `.cer` und `.cert`.
+
+Folgende `openssl`-Befehle können zum Konvertieren von Nicht-PEM-Zertifikaten verwendet werden.
+
+* Konvertieren von PFX in PEM
+
+  ```shell
+  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
+  ```
+
+* Konvertieren von P7B in PEM
+
+  ```shell
+  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
+  ```
+
+* Konvertieren von DER in PEM
+
+  ```shell
+  openssl x509 -inform der -in certificate.cer -out certificate.pem
+  ```
 
 ## Beschränkungen {#limitations}
 

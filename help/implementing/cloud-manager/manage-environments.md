@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen
 description: Erfahren Sie mehr über die Arten von Umgebungen, die Sie erstellen können, und wie Sie sie für ein Cloud Manager-Projekt erstellen.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
+source-git-commit: 532f3ac9450d34f3e2a168c04695bafde5a44c9f
 workflow-type: tm+mt
-source-wordcount: '2558'
-ht-degree: 88%
+source-wordcount: '2601'
+ht-degree: 85%
 
 ---
 
@@ -36,6 +36,8 @@ Die Fähigkeiten der einzelnen Umgebungen hängen von den Lösungen ab, die im [
 >Die Produktions- und Staging-Umgebung werden nur als Paar erstellt. Sie können nicht nur eine Staging- oder nur eine Produktionsumgebung erstellen.
 
 ## Hinzufügen einer Umgebung {#adding-environments}
+
+Um eine Umgebung hinzuzufügen oder zu bearbeiten, muss ein Benutzer Mitglied der **Business Owner** Rolle.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
@@ -234,7 +236,7 @@ Diese Option ist auch verfügbar, indem Sie auf die Registerkarte **Umgebungen**
 
 ![Update-Option auf der Registerkarte „Umgebungen“](assets/environ-update3.png)
 
-Ein Benutzer mit der Rolle **Bereitstellungs-Manager** kann diese Option verwenden, um die mit dieser Umgebung verknüpfte Pipeline auf die neueste AEM-Version zu aktualisieren.
+Ein Benutzer mit der **Bereitstellungsmanager** oder **Business Owner** Rolle kann diese Option verwenden, um die mit dieser Umgebung verknüpfte Pipeline auf die neueste AEM zu aktualisieren.
 
 Nachdem die Pipeline-Version auf die neueste öffentlich verfügbare AEM-Version aktualisiert wurde, wird der Benutzer aufgefordert, die zugehörige Pipeline auszuführen, um die neueste Version in der Umgebung bereitzustellen.
 
@@ -248,7 +250,7 @@ Das Verhalten der Option **Aktualisieren** hängt von der Konfiguration und dem 
 
 ## Löschen von Entwicklungsumgebungen {#deleting-environment}
 
-Benutzerinnen und Benutzer mit den erforderlichen Berechtigungen können eine Entwicklungsumgebung löschen.
+Ein Benutzer mit der **Bereitstellungsmanager** oder **Business Owner** Rolle kann eine Entwicklungsumgebung löschen.
 
 Klicken Sie im Bildschirm **Überblick** des Programms auf der Karte **Umgebungen** auf die Schaltfläche mit den Auslassungspunkten für die Entwicklungsumgebung, die Sie löschen möchten.
 
@@ -287,7 +289,7 @@ Diese Option ist auch über die Registerkarte **Umgebung** des Fensters **Überb
 
 ## Lokale Anmeldung {#login-locally}
 
-Wählen Sie **Lokale Anmeldung** aus dem Menü mit den Auslassungspunkten auf der Karte **Umgebungen** aus, um sich lokal bei Adobe Experience Manager anzumelden.
+Auswählen **Lokale Anmeldung** aus dem Suchmenü der Umgebung im **Umgebungen** -Karte, um sich lokal bei Adobe Experience Manager anzumelden.
 
 ![Lokale Anmeldung](assets/environ-login-locally.png)
 
@@ -300,6 +302,8 @@ Darüber hinaus können Sie sich auch über die Registerkarte **Umgebungen** der
 Benutzerdefinierte Domain-Namen werden in Cloud Manager for Sites-Programmen sowohl für Veröffentlichungs- als auch für Vorschau-Services unterstützt. Jede Cloud Manager-Umgebung kann bis zu 250 benutzerdefinierte Domains hosten.
 
 Um benutzerdefinierte Domain-Namen zu konfigurieren, gehen Sie zur Registerkarte **Umgebungen** und klicken Sie auf eine Umgebung, um die Details der Umgebung anzuzeigen.
+
+Benutzerinnen oder Benutzer müssen über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um einen benutzerdefinierten Domain-Namen in Cloud Manager hinzuzufügen.
 
 ![Umgebungsdetails](assets/domain-names.png)
 
