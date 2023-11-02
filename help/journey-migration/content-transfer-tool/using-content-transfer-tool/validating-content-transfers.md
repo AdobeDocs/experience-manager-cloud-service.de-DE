@@ -2,10 +2,10 @@
 title: Validieren von Inhaltsübertragungen
 description: Validieren von Inhaltsübertragungen mithilfe des Content Transfer Tool
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
+source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 97%
+source-wordcount: '1084'
+ht-degree: 96%
 
 ---
 
@@ -101,7 +101,7 @@ Migration validation took 33 minutes
 
 Dies ist ein Beispiel für eine erfolgreich durchgeführte Validierung, da im Aufnahmeauszug keine Einträge fehlten, die im Extraktionsauszug vorhanden waren.
 
-So würde vergleichsweise ein Validierungsbericht aussehen, wenn die Validierung fehlgeschlagen wäre:
+Hier sehen Sie, wie ein Validierungsbericht aussehen würde, wenn die Validierung fehlgeschlagen wäre (oder wenn eine Auffüllmigration durchgeführt wurde):
 
 ```
 Beginning publish migration validation. Migration job id=[ac217e5a-a08d-4e81-cbd6-f39f88b174ce]

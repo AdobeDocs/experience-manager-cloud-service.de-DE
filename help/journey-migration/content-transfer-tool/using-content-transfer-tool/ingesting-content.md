@@ -2,16 +2,16 @@
 title: Erfassen von Inhalten in Cloud Service
 description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ihrem Migrationssatz in eine Ziel-Cloud Service-Instanz aufnehmen können.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
+source-git-commit: 28cbdff5756b0b25916f8d9a523ab4745873b5fa
 workflow-type: tm+mt
-source-wordcount: '2191'
-ht-degree: 56%
+source-wordcount: '2324'
+ht-degree: 48%
 
 ---
 
 # Erfassen von Inhalten in Cloud Service {#ingesting-content}
 
-## Aufnahmevorgang im Cloud Acceleration Manager {#ingestion-process}
+## Aufnahmevorgang in Cloud Acceleration Manager {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
@@ -31,27 +31,35 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager zu
 
 1. Geben Sie die erforderlichen Informationen ein, um eine Aufnahme zu erstellen.
 
-   * Wählen Sie als Quelle den Migrationssatz aus, der die extrahierten Daten enthält.
+   * **Migrationssatz:** Wählen Sie als Quelle den Migrationssatz aus, der die extrahierten Daten enthält.
       * Migrationssätze laufen nach längerer Inaktivität ab. Daher wird erwartet, dass die Aufnahme relativ bald nach der Extraktion erfolgt. Lesen Sie [Ablauf von Migrationssätzen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry), um mehr darüber zu erfahren.
-   * Wählen Sie die Zielumgebung aus. In dieser Umgebung werden die Inhalte des Migrationssatzes aufgenommen. Wählen Sie die Ebene aus. (Author/Publish). Schnelle Entwicklungsumgebungen (Rapid Development Environments, RDE) werden nicht unterstützt.
+
+   >[!TIP]
+   > Wenn die Extraktion derzeit ausgeführt wird, wird sie im Dialogfeld angezeigt. Nach erfolgreichem Abschluss der Extraktion wird die Aufnahme automatisch gestartet. Wenn die Extraktion fehlschlägt oder angehalten wird, wird der Aufnahmevorgang zurückgesetzt.
+
+   * **Ziel:** Wählen Sie die Zielumgebung aus. In dieser Umgebung werden die Inhalte des Migrationssatzes aufgenommen.
+      * Einstiege unterstützen kein RDE-Ziel (Rapid Development Environment) und erscheinen nicht als mögliche Zielauswahl, selbst wenn der Benutzer Zugriff darauf hat.
+      * Während ein Migrationssatz gleichzeitig in mehrere Ziele aufgenommen werden kann, kann ein Ziel nur das Ziel einer gleichzeitig ausgeführten oder wartenden Aufnahme sein.
+
+   * **Ebene:** Wählen Sie die Ebene aus. (Autoren- / und Veröffentlichungsinstanz).
+      * Wenn die Quelle `Author`wird empfohlen, sie in die `Author` Ebene auf dem Ziel. Wenn die Quelle `Publish`, sollte die Zielgruppe `Publish` sowie.
 
    >[!NOTE]
-   >Die folgenden Hinweise gelten für die Aufnahme von Inhalten:
-   > Wenn die Quelle die Autoreninstanz war, wird empfohlen, sie in die Autorenebene auf dem Ziel aufzunehmen. Wenn die Quelle die Veröffentlichungsinstanz war, sollte das Ziel ebenfalls „Veröffentlichung“ sein.
    > Wenn es sich bei `Author` um die Zielebene handelt, wird die Authoring-Instanz während der Aufnahmedauer heruntergefahren, sodass sie Benutzenden (wie beispielsweise Autorinnen und Autoren oder anderen, die Wartungsarbeiten durchführen) nicht zur Verfügung steht. Dadurch soll das System geschützt werden, und es sollen Änderungen verhindert werden, die verloren gehen oder einen Aufnahmekonflikt verursachen könnten. Stellen Sie sicher, dass Ihr Team sich dieser Tatsache bewusst ist. Beachten Sie außerdem, dass sich die Umgebung während der Author-Aufnahme im Ruhezustand befindet.
-   > Sie können den optionalen Schritt zum Vorauskopieren ausführen, um die Aufnahme erheblich zu beschleunigen. Weitere Informationen finden Sie unter [Aufnehmen mit AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
-   > Wenn die Aufnahme mit einer Vorkopie verwendet wird (für den S3- oder Azure Data Store), wird empfohlen, die Author-Aufnahme zuerst allein auszuführen. Dadurch wird die Publish-Aufnahme beschleunigt, wenn sie später ausgeführt wird.
-   > Aufnahmen unterstützen kein Rapid Development Environment(RDE)-Ziel und werden nicht als mögliche Zielauswahl angezeigt, selbst wenn die Benutzerin oder der Benutzer Zugriff darauf hat.
 
-   >[!IMPORTANT]
-   > Sie können eine Aufnahme in der Zielumgebung nur initiieren, wenn Sie der lokalen Gruppe der **AEM-Admins** im Ziel-Author-Service von Cloud Service angehören. Wenn Sie eine Aufnahme nicht starten können, finden Sie unter [Aufnahme kann nicht gestartet werden](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) weitere Informationen dazu.
-
-   * Wählen Sie die `Wipe` value
+   * **Wischen:** Wählen Sie die `Wipe` value
       * Die **Wischen** -Option legt den Startpunkt des Ziels für die Aufnahme fest. Wenn **Wischen** aktiviert ist, wird das Ziel, einschließlich des gesamten Inhalts, auf die in Cloud Manager angegebene AEM zurückgesetzt. Wenn diese Option nicht aktiviert ist, behält das Ziel seinen aktuellen Inhalt als Ausgangspunkt bei.
       * Beachten Sie, dass diese Option **NOT** beeinflussen, wie die Inhaltsaufnahme durchgeführt wird. Die Aufnahme verwendet immer eine Inhaltsersetzungsstrategie und _not_ eine Inhaltszusammenführungsstrategie, sodass in beiden **Wischen** und **Nicht wischen** In Fällen überschreibt die Aufnahme eines Migrationssatzes Inhalte im selben Pfad auf dem Ziel. Wenn der Migrationssatz beispielsweise Folgendes enthält: `/content/page1` und das Ziel bereits enthält `/content/page1/product1`, entfernt die Aufnahme die gesamte `page1` Pfad und zugehörige Unterseiten, einschließlich `product1`und ersetzen Sie sie durch den Inhalt im Migrationssatz. Dies bedeutet, dass bei der Durchführung einer **Nicht wischen** Aufnahme in ein Ziel, das alle Inhalte enthält, die gepflegt werden sollen.
 
    >[!IMPORTANT]
    > Wenn die Einstellung **Wischen** für die Aufnahme aktiviert ist, wird das gesamte bestehende Repository zurückgesetzt, einschließlich der Benutzerberechtigungen für die Ziel-Cloud Service-Instanz. Diese Zurücksetzung gilt auch für einen Administrator, der zum **Administratoren** und dieser Benutzer der Administratorgruppe erneut hinzugefügt werden, um eine Aufnahme zu starten.
+
+   * **Vorab kopieren:** Wählen Sie die `Pre-copy` value
+      * Sie können den optionalen Schritt zum Vorauskopieren ausführen, um die Aufnahme erheblich zu beschleunigen. Weitere Informationen finden Sie unter [Aufnehmen mit AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
+      * Wenn die Aufnahme mit einer Vorkopie verwendet wird (für S3- oder Azure-Datenspeicher), wird empfohlen, `Author` Aufnahme zuerst allein. Dadurch wird die `Publish` Erfassung, wenn sie später ausgeführt wird.
+
+   >[!IMPORTANT]
+   > Sie können eine Aufnahme in der Zielumgebung nur initiieren, wenn Sie der lokalen Gruppe der **AEM-Admins** im Ziel-Author-Service von Cloud Service angehören. Wenn Sie eine Aufnahme nicht starten können, finden Sie unter [Aufnahme kann nicht gestartet werden](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) weitere Informationen dazu.
 
 1. Klicken Sie auf **Aufnehmen**.
 
@@ -162,6 +170,9 @@ Zur Lösung des Problems kann es erforderlich sein, dass die Auffüllextraktion 
 
 Best Practices weisen darauf hin, dass **Nicht wischen** Die Aufnahme muss mithilfe eines Migrationssatzes durchgeführt werden, der Versionen enthält (d. h. extrahiert mit &quot;include versions&quot;=true). Es ist wichtig, dass der Zielinhalt so wenig wie möglich geändert wird, bis die Migration-Journey abgeschlossen ist. Andernfalls können diese Konflikte auftreten.
 
+### Aufnahme zurückgesetzt
+
+Eine Aufnahme, die mit einer laufenden Extraktion als Migrationssatz für die Quelle erstellt wurde, wartet geduldig, bis diese Extraktion erfolgreich ist, und beginnt zu diesem Zeitpunkt normal. Wenn die Extraktion fehlschlägt oder angehalten wird, werden die Aufnahme und der zugehörige Indizierungsauftrag nicht gestartet, aber zurückgesetzt. Überprüfen Sie in diesem Fall die Extraktion, um festzustellen, warum sie fehlgeschlagen ist, beheben Sie das Problem und beginnen Sie erneut mit dem Extrahieren. Sobald die feste Extraktion ausgeführt wird, kann eine neue Aufnahme geplant werden.
 
 ## Wie geht es weiter {#whats-next}
 

@@ -2,9 +2,9 @@
 title: Implementierungsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Implementierungsphase in Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '652'
 ht-degree: 96%
 
 ---
@@ -109,7 +109,7 @@ In diesem Abschnitt erfahren Sie mehr über die Aktivitätskarte „Inhaltstrans
 
 1. Laden Sie das Content Transfer Tool herunter und installieren Sie es, um den Migrationssatz zu füllen und die Extraktionsphase des Inhaltstransfers abzuschließen. Lesen Sie [Erste Schritte mit dem Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de), um zu erfahren, wie man das Content Transfer Tool verwendet.
 
-1. Um Inhalte aus dem Migrationssatz in eine Umgebung von AEM as a Cloud Service aufzunehmen, müssen Sie eine Aufnahme starten. Navigieren Sie zu **Aufnahmevorgänge** und klicken Sie auf **Neue Aufnahme**. Lesen Sie [Aufnehmen von Inhalten in Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=de), um zu erfahren, wie Sie die Aufnahmephase des Inhaltstransfers abschließen.
+1. Um Inhalte aus dem Migrationssatz in eine Umgebung von AEM as a Cloud Service aufzunehmen, müssen Sie eine Aufnahme starten. Navigieren Sie zu **Aufnahmevorgänge** und klicken Sie auf **Neue Aufnahme**. Lesen Sie [Aufnehmen von Inhalten in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md), um zu erfahren, wie Sie die Aufnahmephase des Inhaltstransfers abschließen.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 

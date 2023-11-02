@@ -2,10 +2,10 @@
 title: Handhabung großer Content-Repositorys
 description: In diesem Abschnitt wird die Handhabung großer Content-Repositorys beschrieben.
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
-source-wordcount: '1813'
-ht-degree: 100%
+source-wordcount: '1835'
+ht-degree: 98%
 
 ---
 
@@ -190,6 +190,9 @@ Die Protokolleinträge von AzCopy werden im Extraktionsprotokoll angezeigt und s
 Bei einem Prolem mit AzCopy schlägt die Extraktion sofort fehl. Die Extraktionsprotokolle enthalten in diesem Fall Details zu dem Fehler.
 
 Blobs, die vor Auftreten des Fehlers kopiert wurden, werden von AzCopy bei nachfolgenden Ausführungen automatisch übersprungen und müssen nicht erneut kopiert werden.
+
+>[!TIP]
+>Eine Aufnahme kann nun so geplant werden, dass sie unmittelbar nach erfolgreichem Abschluss einer Extraktion automatisch startet. Siehe [Erfassen von Inhalten in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) für weitere Informationen.
 
 #### Für Dateidatenspeicher {#file-data-store-extract}
 

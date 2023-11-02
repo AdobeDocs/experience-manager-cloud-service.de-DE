@@ -2,10 +2,10 @@
 title: Extrahieren von Inhalten aus der Quelle
 description: Erfahren Sie, wie Sie Inhalte aus einer Adobe Experience Manager (AEM)-Quellinstanz extrahieren, um sie später in eine Cloud Service-AEM-Instanz zu übertragen.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 031ddfa2da0fc5ecc92267eae1f9dcaac394573d
+source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 44%
+source-wordcount: '735'
+ht-degree: 43%
 
 ---
 
@@ -28,6 +28,9 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
 1. Wählen Sie einen Migrationssatz aus dem **Content Transfer** Assistent und klicken Sie auf **Extract** , um die Extraktion zu starten.
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
+
+   >[!TIP]
+   >Eine Aufnahme kann nun so geplant werden, dass sie unmittelbar nach erfolgreichem Abschluss einer Extraktion automatisch startet. Siehe [Erfassen von Inhalten in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) für weitere Informationen.
 
    >[!IMPORTANT]
    >
