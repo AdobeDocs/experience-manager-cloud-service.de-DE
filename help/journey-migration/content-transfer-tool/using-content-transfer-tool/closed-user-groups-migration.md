@@ -1,5 +1,5 @@
 ---
-title: Migrieren geschlossener Benutzergruppen
+title: Migration geschlossener Benutzergruppen
 description: Erfahren Sie mehr über die erforderlichen besonderen Aspekte, um geschlossene Benutzergruppen nach der Migration von Inhalten zu Adobe Experience Manager as a Cloud Service zu aktivieren.
 hide: true
 hidefromtoc: true
@@ -7,15 +7,15 @@ exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
-# Migrieren geschlossener Benutzergruppen {#migrating-closed-user-groups}
+# Migration geschlossener Benutzergruppen {#migrating-closed-user-groups}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cug_migration"
->title="Migration geschlossener Benutzergruppen"
+>title="Migrieren von geschlossenen Benutzergruppen"
 >abstract="Für die Migration geschlossener Benutzergruppen (CUG) sind derzeit einige Prüfungen und Schritte erforderlich, damit es nach einer Migration betriebsbereit ist."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html?lang=de" text="Geschlossene Benutzergruppen in AEM"
 

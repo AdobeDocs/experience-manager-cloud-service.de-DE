@@ -56,7 +56,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
   <tr>
     <td>Bereinigung von Prüfprotokollen</td>
     <td>Adobe</td>
-    <td>Für bestehende Umgebungen (die vor dem 1. November 2023 erstellt wurden) ist die Bereinigung deaktiviert und wird in Zukunft nur aktiviert, wenn der Kunde dies explizit aktiviert hat. Zu diesem Zeitpunkt kann die Bereinigung auch mit benutzerdefinierten Werten konfiguriert werden.<br><br> <!-- See above for the two line breaks -->Für neue Umgebungen (die ab dem 1. November 2023 erstellt wurden) ist die Bereinigung standardmäßig unter der Variablen <code>/content</code> Knoten des Repositorys gemäß folgendem Verhalten:
+    <td>Für bestehende Umgebungen (die vor dem 1. November 2023 erstellt wurden) ist die Bereinigung deaktiviert und wird in Zukunft nur aktiviert, wenn der Kunde dies explizit aktiviert hat. Zu diesem Zeitpunkt kann die Bereinigung auch mit benutzerdefinierten Werten konfiguriert werden.<br><br> <!-- See above for the two line breaks -->Für neue Umgebungen (die ab dem 1. November 2023 erstellt wurden) ist die Bereinigung standardmäßig unter dem Knoten <code>/content</code> des Repositorys gemäß folgendem Verhalten aktiviert:
      <ol>
        <li>Für die Replikationsprüfung werden Prüfprotokolle entfernt, die älter als 3 Tage sind</li>
        <li>Bei der DAM (Assets)-Prüfung werden Prüfprotokolle entfernt, die älter als 30 Tage sind</li>

@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
 source-wordcount: '1033'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ Weitere Informationen finden Sie unter [Verwalten von IP-Zulassungslisten](/help
 >
 >Nur Anfragen von den zulässigen IPs werden vom in AEM verwalteten CDN bearbeitet. Wenn Sie Ihr eigenes CDN auf das von AEM verwaltete CDN verweisen, stellen Sie sicher, dass die IPs Ihres CDN in der Zulassungsliste enthalten sind.
 
-## Kunden-CDN verweist auf AEM verwaltetes CDN {#point-to-point-CDN}
+## Kunden-CDN verweist auf AEM-verwaltetes CDN {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
