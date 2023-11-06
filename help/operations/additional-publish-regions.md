@@ -2,10 +2,10 @@
 title: Zusätzliche Veröffentlichungsregionen
 description: Erfahren Sie, wie AEM as a Cloud Service zusätzliche Veröffentlichungsregionen für höhere Verfügbarkeit und geringere Latenz unterstützt.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: 4f11d1958cbfb252f29a7815af8800426d945ebd
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 100%
+source-wordcount: '606'
+ht-degree: 89%
 
 ---
 
@@ -35,6 +35,11 @@ Im Folgenden finden Sie einige Anwendungsfälle, in denen Unternehmen von der Li
 Nach der Lizenzierung einer zusätzlichen Veröffentlichungsregion werden die Regionen mithilfe von Cloud Manager konfiguriert. Detaillierte Anweisungen finden Sie in der [Dokumentation zu Cloud Manager](/help/implementing/cloud-manager/manage-environments.md#multiple-regions).
 
 Zusätzliche Veröffentlichungsregionen werden auf Staging- und Produktionsumgebungen angewendet, nicht jedoch auf RDE- oder Entwicklungsumgebungen.
+
+Sollte eine Region nicht verfügbar sein, müssen Kunden das Routing von Traffic zu verfügbaren Regionen nicht verwalten, da es vom Adobe CDN verwaltet wird.
+
+Wie im Abschnitt Hinweise zu erweiterten Netzwerken unten beschrieben, wird empfohlen, dass Kunden, die erweiterte Netzwerke verwenden, diese für jede zusätzliche Veröffentlichungsregion konfigurieren, damit die Verfügbarkeit beibehalten wird, wenn eine Region nicht mehr verfügbar ist.
+
 
 ## Überlegungen zu erweiterten Netzwerken {#advanced-networking-considerations}
 

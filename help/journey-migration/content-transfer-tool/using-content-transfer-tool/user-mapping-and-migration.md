@@ -2,10 +2,10 @@
 title: Benutzerzuordnung und Prinzipalmigration
 description: Überblick über Benutzerzuordnung und Hauptmigration in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 2fdfb65543fa2942e809aa5d379f4000e40bd517
+source-git-commit: 2f5eeb0333cee13b12edefd0f95541a891e30960
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 47%
+source-wordcount: '1003'
+ht-degree: 45%
 
 ---
 
@@ -27,7 +27,7 @@ Eine wichtige Änderung an AEM as a Cloud Service ist die vollständig integrier
 
 ## Details zur Hauptmigration {#principal-migration-detail}
 
-Das Content Transfer Tool und Cloud Acceleration Manager migrieren alle Prinzipale, die mit dem migrierten Inhalt verknüpft sind, in das Cloud-System.  Das Content Transfer Tool kopiert dazu während des Extraktionsvorgangs alle Prinzipale aus dem AEM.  CAM Ingestion wählt dann nur die Prinzipale aus, die mit dem aufgenommenen Inhalt verbunden sind, und migriert sie.
+Das Content Transfer Tool und Cloud Acceleration Manager migrieren alle Prinzipale, die mit dem migrierten Inhalt verknüpft sind, in das Cloud-System.  Das Content Transfer Tool kopiert dazu während des Extraktionsvorgangs alle Prinzipale aus dem AEM.  CAM Ingestion wählt dann nur die Prinzipale aus, die mit dem aufgenommenen Inhalt verbunden sind, und migriert sie. Wenn ein Prinzipal eine ACL- oder CUG-Richtlinie mit migrierten Inhalten verwendet, werden dieser Prinzipal und alle Gruppen, in denen er sich befindet, sowie ihre übergeordneten (übergeordneten) Gruppen migriert. Wenn ein Prinzipal im Inhalt eine Gruppe ist, werden auch alle untergeordneten Gruppen und Benutzer migriert.
 
 ## Details zur Benutzerzuordnung {#user-mapping-detail}
 
