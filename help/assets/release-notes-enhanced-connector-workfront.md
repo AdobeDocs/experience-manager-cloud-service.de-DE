@@ -61,7 +61,7 @@ Die neueste Version der [!DNL Workfront for Experience Manager enhanced connecto
 
 * Wettlaufsituationen bei Metadaten-Aktualisierungen für ein Asset in Experience Manager.
 
-### Version vom Juni 2023 {#june-2023-release}
+### Version Juni 2023 {#june-2023-release}
 
 * Wenn Sie erweiterte Netzwerke konfiguriert haben, treten beim Senden von Inhalten von Adobe Workfront an AEM as a Cloud Service Probleme auf.
 

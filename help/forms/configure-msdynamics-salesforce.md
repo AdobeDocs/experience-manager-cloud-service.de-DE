@@ -103,6 +103,6 @@ Nach der Konfiguration des [[!DNL Microsoft® Dynamics 365] Cloud Config-Service
 
 >[!MORELIKETHIS]
 >
->* [Konfigurieren von Datenquellen für AEM Forms](/help/forms/configure-data-sources.md)
->* [Konfigurieren von Azure Storage für AEM Forms](/help/forms/configure-azure-storage.md)
->[Hinzufügen von Forms Portal zu einer AEM Sites-Seite](/help/forms/configure-forms-portal.md)
+* [Konfigurieren von Datenquellen für AEM Forms](/help/forms/configure-data-sources.md)
+* [Konfigurieren von Azure Storage für AEM Forms](/help/forms/configure-azure-storage.md)
+[Hinzufügen von Forms Portal zu einer AEM Sites-Seite](/help/forms/configure-forms-portal.md)
