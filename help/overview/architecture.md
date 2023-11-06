@@ -2,9 +2,9 @@
 title: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service
 description: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 689b672e75c4e4d2fa8f716d93c65418f332a266
+source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
 workflow-type: tm+mt
-source-wordcount: '2656'
+source-wordcount: '2665'
 ht-degree: 11%
 
 ---
@@ -66,7 +66,7 @@ Es gibt vier Arten von [Umgebung](/help/implementing/cloud-manager/manage-enviro
 
 Ein AEM Programm kann mit der [Edge-Bereitstellungsdienste](/help/edge/overview.md) sowie.
 
-Nach der Konfiguration kann AEM auf GitHub-Code-Repositorys verweisen, die zum Erstellen der Erlebnisse mit Edge Delivery Services verwendet werden. Daher stehen neue Konfigurationsoptionen für die zugehörigen Erlebnisse zur Verfügung. Dazu gehören die Einrichtung des Adobe-verwalteten CDN, der Zugriff auf Lizenzierungsmetriken oder SLA-Berichte.
+Nach der Konfiguration kann AEM auf GitHub-Code-Repositorys verweisen, die zum Erstellen der Erlebnisse mit Edge Delivery Services verwendet werden. Daher stehen neue Konfigurationsoptionen für die zugehörigen Erlebnisse zur Verfügung. Dazu gehören die Einrichtung des Adobe-verwalteten CDN und der Zugriff auf Lizenzierungsmetriken oder SLA-Berichte.
 
 ## Dienstarchitektur {#service-architecture}
 
@@ -198,7 +198,7 @@ In beiden Fällen wird derselbe Satz automatisierter Tests ausgeführt. Er beste
 
 * von Adobe zur Gewährleistung der Produktintegrität beigetragen
 * vom Kunden hinzugefügte Tests
-   * Funktionstests: http
+   * Funktionstests: über HTTP-Anforderungen an die AEM- oder Veröffentlichungsstufe
    * UI-Tests auf Basis von Selenium- oder Cypress-Technologie
 
 Diese automatisierten Tests werden in der Staging-Umgebung ausgeführt. Daher ist es wichtig, den Inhalt der Staging-Umgebung so nah wie möglich an den Inhalt in der Produktionsinstanz zu halten.
