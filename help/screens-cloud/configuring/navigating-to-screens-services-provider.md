@@ -2,10 +2,10 @@
 title: Navigieren zu Screens Services Provider
 description: Auf dieser Seite wird beschrieben, wie Sie zu Screens Services Provider navigieren.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: ad5a8656b200ba35a0a6f58afd4be03202138f47
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 95%
+source-wordcount: '292'
+ht-degree: 85%
 
 ---
 
@@ -38,6 +38,9 @@ Gehen Sie wie folgt vor, um Screens Services Provider einzurichten:
 3. Geben Sie die folgenden Details im Dialogfeld „Einstellungen bearbeiten“ ein.
    * **Veröffentlichungs-URL**: AEM-Veröffentlichungs-URL (z. B. `https://publish-p12345-e12345.adobeaemcloud.com`)
    * **Autoren-URL**: AEM-Autoren-URL (z. B. `https://author-p12345-e12345.adobeaemcloud.com`)
+
+   >[!NOTE]
+   >Stellen Sie sicher, dass Sie mindestens einen AEM Screens-Kanal erstellen und veröffentlichen, bevor Sie die AEM unter Screens Service Provider konfigurieren. Um einen Kanal zu erstellen, navigieren Sie zu /screens.html in Ihrem Content Provider.
 
    ![Bild](/help/screens-cloud/assets/configure/configure-screens4.png)
 

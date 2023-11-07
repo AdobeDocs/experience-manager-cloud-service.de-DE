@@ -3,7 +3,7 @@ title: Best Practices für die Suche [!DNL Adobe Experience Manager] as a [!DNL 
 description: Best Practices zum Suchen, Suchen und Abrufen von Asset-Metadaten in Ihrer Anwendung.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 780f0dee9a2a0fd7fa63b93bdd8be6bc23eef04f
+source-git-commit: a3f7564932e7f9318841623376f62dad91ceca18
 workflow-type: tm+mt
 source-wordcount: '2544'
 ht-degree: 11%
@@ -46,7 +46,9 @@ Sie können die Suche spezifischer gestalten, indem Sie Ihren Suchbegriff in dop
 
 Die Suche zeigt ähnliche Ergebnisse an, wenn Sie in der **[!UICONTROL Asset-Ansicht]** sowie.
 
+<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425489)
+-->
 
 ## Dateien und Ordner {#files-folders}
 
@@ -67,7 +69,9 @@ Wählen Sie den Ordner aus dem Pfad aus und navigieren Sie zum gewünschten Ordn
 
 ![Suchen mit Dateien und Ordnern](assets/files-folders.png)
 
+<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
+-->
 
 ## Operatoren  {#operators}
 
@@ -119,7 +123,9 @@ Ein Sternchen ist ein Platzhalter-Operator, der verwendet wird, um Ihre Suche du
 * `car*` gibt Assets mit CarWasch, Träger, Transport usw. zurück.
 * `*car` gibt Assets mit modernen Autos, Sportwagen usw. zurück.
 
+<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425488)
+-->
 
 **[!UICONTROL Asset-Ansicht]** unterstützt die Verwendung von Platzhaltern nicht.
 
@@ -187,7 +193,9 @@ So suchen Sie nach Assets mithilfe des erwähnten Szenarios in **[!UICONTROL Ass
 1. Navigieren Sie zu Suchfiltern.
 1. Navigieren Sie zu Filter. under [!UICONTROL MIME-Typ], wählen Sie alle angegebenen MIME-Typen aus, deaktivieren Sie jedoch PNG.
 
+<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425486)
+-->
 
 ## Erweiterte Suche {#advanced-search}
 
@@ -241,7 +249,9 @@ Sie können ein bestimmtes Kriterium mithilfe verschiedener Suchfilter erfassen.
 
 Die Suche zeigt ähnliche Ergebnisse an, wenn Sie in der **[!UICONTROL Asset-Ansicht]** sowie.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425490)
+<!--
+>[!VIDEO](https://video.tv.adobe.com/v/3425490)  
+-->
 
 **Szenario 9: Ähnliche Übereinstimmung für roten Farbwagen suchen**
 
