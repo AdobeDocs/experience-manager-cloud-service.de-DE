@@ -3,9 +3,9 @@ title: Best Practices für die Suche [!DNL Adobe Experience Manager] as a [!DNL 
 description: Best Practices zum Suchen, Suchen und Abrufen von Asset-Metadaten in Ihrer Anwendung.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: 8fc09f11127b29a6cd0f56f4e9d217b9756bbb8f
 workflow-type: tm+mt
-source-wordcount: '2544'
+source-wordcount: '2603'
 ht-degree: 11%
 
 ---
@@ -46,7 +46,7 @@ Sie können die Suche spezifischer gestalten, indem Sie Ihren Suchbegriff in dop
 
 Die Suche zeigt ähnliche Ergebnisse an, wenn Sie in der **[!UICONTROL Asset-Ansicht]** sowie.
 
-<!--[Watch a video to perform a simple search in AEM Assets] ()-->
+[Video ansehen, um eine einfache Suche in AEM Assets durchzuführen](https://video.tv.adobe.com/v/3425489)
 
 ## Dateien und Ordner {#files-folders}
 
@@ -67,7 +67,7 @@ Wählen Sie den Ordner aus dem Pfad aus und navigieren Sie zum gewünschten Ordn
 
 ![Suchen mit Dateien und Ordnern](assets/files-folders.png)
 
-<!--[Watch a video to perform search in AEM Assets using Files and Folders] ()-->
+[Sehen Sie sich ein Video an, um mithilfe von Dateien und Ordnern in AEM Assets zu suchen.](https://video.tv.adobe.com/v/3425487)
 
 ## Operatoren  {#operators}
 
@@ -119,7 +119,7 @@ Ein Sternchen ist ein Platzhalter-Operator, der verwendet wird, um Ihre Suche du
 * `car*` gibt Assets mit CarWasch, Träger, Transport usw. zurück.
 * `*car` gibt Assets mit modernen Autos, Sportwagen usw. zurück.
 
-<!--[Watch a video to perform a search in AEM Assets using wildcards] ()-->
+[Video ansehen, um eine Suche in AEM Assets mithilfe von Platzhaltern durchzuführen](https://video.tv.adobe.com/v/3425488)
 
 **[!UICONTROL Asset-Ansicht]** unterstützt die Verwendung von Platzhaltern nicht.
 
@@ -172,8 +172,6 @@ Führen Sie die folgenden Schritte aus unter **[!UICONTROL Asset-Ansicht]**:
 1. Navigieren Sie zu Filter. under [!UICONTROL MIME-Typ]auswählen [!UICONTROL PDF].
 1. Navigieren Sie zu [!UICONTROL Asset-Status]auswählen [!UICONTROL Alle] , um alle veröffentlichten und nicht veröffentlichten Assets einzuschließen.
 
-<!--[Watch a video to perform search in AEM Assets using various filters] ()-->
-
 **Szenario 5: Suche nach allen Bildern außer PNG**
 
 Wenn Sie sich bezüglich des Titels oder der Meta-Beschreibung eines Assets nicht sicher sind, können Sie verschiedene Suchfilter verwenden, um Ihre Suche relevanter zu gestalten. So suchen Sie beispielsweise Assets in **[!UICONTROL Admin-Ansicht]** führen Sie die folgenden Schritte aus:
@@ -188,6 +186,8 @@ So suchen Sie nach Assets mithilfe des erwähnten Szenarios in **[!UICONTROL Ass
 
 1. Navigieren Sie zu Suchfiltern.
 1. Navigieren Sie zu Filter. under [!UICONTROL MIME-Typ], wählen Sie alle angegebenen MIME-Typen aus, deaktivieren Sie jedoch PNG.
+
+[Video ansehen, um mithilfe von Filtern nach AEM Assets zu suchen](https://video.tv.adobe.com/v/3425486)
 
 ## Erweiterte Suche {#advanced-search}
 
@@ -240,6 +240,8 @@ Sie können ein bestimmtes Kriterium mithilfe verschiedener Suchfilter erfassen.
 ![Suchen anhand von Tags](assets/search-tags.png)
 
 Die Suche zeigt ähnliche Ergebnisse an, wenn Sie in der **[!UICONTROL Asset-Ansicht]** sowie.
+
+[Video ansehen, um mithilfe der erweiterten Suche in AEM Assets zu suchen](https://video.tv.adobe.com/v/3425490)
 
 **Szenario 9: Ähnliche Übereinstimmung für roten Farbwagen suchen**
 

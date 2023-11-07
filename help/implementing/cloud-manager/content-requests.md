@@ -2,10 +2,10 @@
 title: Grundlegendes zu Cloud Service-Inhaltsanforderungen
 description: Wenn Sie Lizenzen für Inhaltsanforderungen von Adobe erworben haben, erfahren Sie mehr über die Arten von Inhaltsanforderungen, die Adobe Experience Cloud as a Service misst, und über die Abweichungen mit den Analytics-Reporting-Tools eines Unternehmens.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: dc01da4c85b37f21deb169b941c0cf2a958298b8
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 12%
+source-wordcount: '1164'
+ht-degree: 10%
 
 ---
 
@@ -25,7 +25,7 @@ Inhaltsanforderungen können Abweichungen von den Analytics-Reporting-Tools eine
 | Überwachungs- und Sicherheits-Tools von Drittanbietern | Überwachungs- und Sicherheitsüberprüfungs-Tools können Inhaltsanfragen für AEM generieren, die in Analytics-Berichten nicht erfasst werden. |
 | API-Zugriff | Der programmatische Zugriff auf Seiten oder Adobe Experience Manager-APIs kann Inhaltsanforderungen für AEM generieren, die in Analytics-Berichten nicht verfolgt werden. |
 | Vorheriges Abrufen von Anfragen | Die Verwendung eines Vorabruf-Services zum Vorladen von Seiten, um die Geschwindigkeit zu erhöhen, kann zu erheblichen Traffic-Zunahmen bei Inhaltsanfragen führen. |
-| DDOS | Adobe unternimmt zwar alle Anstrengungen, um Traffic durch DDOS-Angriffe automatisch zu erkennen und herauszufiltern, aber es gibt keine Garantie dafür, dass alle möglichen DDOS-Angriffe erkannt werden |
+| DDOS | Während Adobe versucht, Traffic automatisch aus DDOS-Angriffen zu erkennen und herauszufiltern, gibt es keine Garantie, dass alle möglichen DDOS-Angriffe erkannt werden. |
 | Traffic-Blocker | Die Verwendung eines Tracker-Blockers in einem Browser kann die Nachverfolgung mancher Anfragen verhindern. |
 | Firewalls | Firewalls können das Analytics-Tracking blockieren. Dieses Szenario tritt bei Firewalls des Unternehmens häufiger auf. |
 
@@ -59,7 +59,7 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 | HTTP-Code 400-499 | Ausgeschlossen | Fehler, die an den Besucher zurückgegeben werden, wenn der Inhalt nicht vorhanden ist (404) oder andere Inhalte oder anfragebezogene Probleme vorliegen. |
 | HTTP-Code 300-399 | Ausgeschlossen | Dies sind gute Anfragen, die entweder überprüfen, ob sich auf dem Server etwas geändert hat, oder die Anfrage an eine andere Ressource weiterleiten. Sie enthalten keine Inhalte selbst, daher sind sie nicht abrechnungsfähig. |
 | Anforderungen für /libs/* | Ausgeschlossen | AEM interne JSON-Anforderungen, z. B. das CSRF-Token, das nicht abrechenbar ist. |
-| Traffic durch DDOS-Angriffe | Ausgeschlossen | DDOS-Schutz. AEM erkennt einige DDOS-Angriffe automatisch und blockiert sie. DDOS-Angriffe werden nicht abgerechnet, wenn sie erkannt werden.<br><br>Automatisch erkannte DDOS-Typen:<br>・ DDOSBlockedCiphersSHA<br>・ DDOSBlockedPattern<br>・ DDOSSuspiciousRequest |
+| Traffic durch DDOS-Angriffe | Ausgeschlossen | DDOS-Schutz. AEM erkennt einige DDOS-Angriffe automatisch und blockiert sie. DDOS-Angriffe werden nicht abgerechnet, wenn sie erkannt werden. |
 | AEM as a Cloud Service NewRelic-Überwachung | Ausgeschlossen | AEM as a Cloud Service globale Überwachung. |
 | URL für Kunden zur Überwachung ihres Cloud Service-Programms | Ausgeschlossen | Empfohlene URL zur externen Überwachung der Verfügbarkeit.<br><br>`/system/probes/health` |
 | AEM as a Cloud Service Warm-up-Dienst für Werbeunterbrechungen | Ausgeschlossen | Benutzeragent: skyline-service-warmup/1.* |
