@@ -5,9 +5,9 @@ topic-tags: author
 keywords: Adaptive Formularfragmente hinzufügen, adaptive Formularfragmente, Formularfragment erstellen, Fragment zu einem adaptiven Formular hinzufügen, Fragmente verwalten
 feature: Adaptive Forms
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 8de3189495c374fad156e7e6cb23c96c84ece482
+source-git-commit: 1bdd9e323e74a3f2bb06bff52235742e9e22a136
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '1776'
 ht-degree: 33%
 
 ---
@@ -49,7 +49,7 @@ Sie können ein adaptives Formularfragment von Grund auf neu erstellen oder ein 
 
      >[!NOTE]
      >
-     > In Adaptive Forms, basierend auf Kernkomponenten, können Sie ein einzelnes Formularfragment mehrmals in einem Formular verwenden. Es unterstützt nicht-basierte und schemabasierte Formularfragmente.
+     > In Adaptive Forms können Sie ein einzelnes Formularfragment (basierend auf Kernkomponenten) mehrmals verwenden. Es unterstützt nicht-basierte und schemabasierte Formularfragmente.
 
    * **Schema**: Legt fest, dass das Fragment mit einem XML- oder JSON-Schema erstellt wird, das in AEM Forms hochgeladen wurde. Sie können ein XML- oder JSON-Schema als Formularmodell für das Fragment hochladen oder aus den verfügbaren Schemata auswählen. Wenn Sie ein XML-Schema auswählen, können Sie auch ein adaptives Formularfragment erstellen, indem Sie einen im ausgewählten Schema vorhandenen complexType aus dem **[!UICONTROL XML-Schema - komplexer Typ]** Dropdown-Feld. Wenn Sie ein JSON-Schema auswählen, können Sie auch ein adaptives Formularfragment erstellen, indem Sie eine Schemadefinition im ausgewählten Schema aus dem **[!UICONTROL JSON-Schemadefinitionen]** Dropdown-Feld.
    * **Formulardatenmodell**: Gibt an, dass das Fragment mithilfe eines Formulardatenmodells erstellt wird. Sie können ein adaptives Formularfragment erstellen, das auf nur einem Datenmodellobjekt in einem Formulardatenmodell basiert. Erweitern Sie die Dropdown-Liste Formulardatenmodelldefinitionen . Es listet alle Datenmodellobjekte im angegebenen Formulardatenmodell auf. Wählen Sie ein Datenmodellobjekt aus der Liste aus.

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 8de3189495c374fad156e7e6cb23c96c84ece482
+source-git-commit: cf7c9fc3f254628f2efee2e00ed295e038d17c99
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2147'
 ht-degree: 89%
 
 ---
@@ -45,7 +45,7 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder einen Be
 
      >[!NOTE]
      >
-     > In Adaptive Forms, basierend auf Kernkomponenten, können Sie ein einzelnes Formularfragment mehrmals in einem Formular verwenden. Es unterstützt nicht-basierte und schemabasierte Formularfragmente.
+     > In Adaptive Forms können Sie ein einzelnes Formularfragment (basierend auf Kernkomponenten) mehrmals in einem Formular verwenden. Es unterstützt nicht-basierte und schemabasierte Formularfragmente.
 
    * **Formularvorlage**: Das Fragment wird mithilfe einer XDP-Vorlage erstellt, die in [!DNL AEM Forms] hochgeladen wurde. Wählen Sie die entsprechende XDP-Vorlage als Formularmodell für das Fragment aus.
 
@@ -173,7 +173,7 @@ Sie können ein schemabasiertes Formularfragment mehrmals in einem adaptiven For
 
 >[!NOTE]
 >
-> * Wenn Sie nicht basierte Formularfragmente mehrmals in einem adaptiven Formular verwenden, erfolgt eine Datensynchronisation zwischen den Feldern der Fragmente. Sie können eine [Formularfragment (basierend auf Kernkomponenten)](/help/forms/adaptive-form-fragments-core-components.md)  mehrere Male in einem Formular enthalten. Es unterstützt nicht-basierte und schemabasierte Formularfragmente ohne Probleme bei der Datensynchronisierung.
+> Wenn Sie nicht-basierte Formularfragmente mehrmals in einem adaptiven Formular verwenden, erfolgt eine Datensynchronisation zwischen den Feldern der Fragmente. Sie können eine [Formularfragment (basierend auf Kernkomponenten)](/help/forms/adaptive-form-fragments-core-components.md) das nicht mehrmals an ein Formulardatenmodell in einem Formular gebunden ist, ohne dass Probleme mit der Datensynchronisierung auftreten.
 
 ## Automatisches Zuordnen von Fragmenten für die Datenbindung {#auto-mapping-of-fragments-for-data-binding}
 
@@ -261,9 +261,11 @@ Zum Lokalisieren eines adaptiven Formulars, das adaptive Formularfragmente enth�
 * (**Nur Mac**) Um sicherzustellen, dass die Formularfragmentfunktionalität in allen Szenarien einwandfrei funktioniert, fügen Sie der Datei „/private/etc/hosts“ den folgenden Eintrag hinzu:
   `127.0.0.1 <Host machine>` **Host-Computer**: Der Apple Mac-Computer, auf dem [!DNL AEM Forms] bereitgestellt wird.
 
-## Referenzfragmente {#reference-fragments}
+<!--
+## Reference Fragments {#reference-fragments}
 
-Es sind Referenzfragmente für adaptive Formulare vorhanden, die Sie zum Erstellen von Formularen verwenden können. Weitere Informationen finden Sie unter [Referenzfragmente](reference-adaptive-form-fragments.md).
+Reference Adaptive Form Fragments that you can use to create your form are available. For more information, see [Reference Fragments](reference-adaptive-form-fragments.md).
+-->
 
 >[!MORELIKETHIS]
 >
