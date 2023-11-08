@@ -4,10 +4,10 @@ description: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as 
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '3156'
-ht-degree: 100%
+source-git-commit: 4305b334afd3337b849d80e79ca4669802cd4be8
+workflow-type: tm+mt
+source-wordcount: '3188'
+ht-degree: 98%
 
 ---
 
@@ -58,7 +58,7 @@ Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich z
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-Um eine Datei (oder mehrere Dateien) hochzuladen, können Sie diese auf Ihrem Desktop auswählen und in der Benutzeroberfläche (Webbrowser) in den Zielordner ziehen. Sie können den Upload alternativ auch über die Benutzeroberfläche starten.
+Um eine Datei (oder mehrere Dateien) hochzuladen, können Sie diese auf Ihrem Desktop auswählen und in der Benutzeroberfläche (Webbrowser) in den Zielordner ziehen. Sie können den Upload alternativ auch über die Benutzeroberfläche starten. [!DNL Experience Manager] kann Ordner mit mehr als 1000 Assets aufnehmen. Wenn Sie weitere Elemente in diesen Ordner mit bereits 1000 oder mehr vorhandenen Elementen hochladen möchten, kann dies zu Verzögerungen beim Hochladen oder Erstellen des neuen Ordners führen.
 
 >[!IMPORTANT]
 >
@@ -195,7 +195,7 @@ Gehen Sie wie folgt vor, um das Tool für den Massenimport zu konfigurieren:
 
 1. Wählen Sie den **[!UICONTROL Importmodus]**. Wählen Sie **Überspringen**, **Ersetzen** oder **Version erstellen**. Der Modus „Überspringen“ ist der Standardmodus. In diesem Modus überspringt das Aufnahme-Tool den Import eines Assets, wenn es bereits vorhanden ist. Siehe die Bedeutung der [Optionen zum Ersetzen und Erstellen von Versionen](#handling-upload-existing-file).
 
-1. Um einen Speicherort in DAM zu definieren, in den Assets importiert werden sollen, indem Sie das Feld **[!UICONTROL Zielordner für Assets]** verwenden, geben Sie einen Pfad an. Beispiel: `/content/dam/imported_assets`.
+1. Um einen Speicherort in DAM zu definieren, in den Assets importiert werden sollen, indem Sie das Feld **[!UICONTROL Zielordner für Assets]** verwenden, geben Sie einen Pfad an. Zum Beispiel: `/content/dam/imported_assets`.
 
 1. (Optional) Geben Sie im Feld **[!UICONTROL Metadatendatei]** die zu importierende Metadatendatei im CSV-Format an. Geben Sie die CSV-Datei im Quell-Blob-Speicherort an und verweisen Sie beim Konfigurieren des Tools für den Massenimport auf den Pfad. Das CSV-Dateiformat, auf das in diesem Feld verwiesen wird, ist dasselbe wie das CSV-Dateiformat beim [Massenimport und -export von Asset-Metadaten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html?lang=de). Wenn Sie die Option **Quelldatei nach Import löschen** wählen, filtern Sie CSV-Dateien entweder mit den Feldern **Ausschließen** oder **MIME-Typ einschließen** oder **Nach Pfad/Datei filtern**. Sie können in diesen Feldern einen regulären Ausdruck verwenden, um CSV-Dateien zu filtern.
 
