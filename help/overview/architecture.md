@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
 workflow-type: tm+mt
 source-wordcount: '2665'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -158,7 +158,7 @@ Die Edge Delivery Services werden auf einer CDN- und Server-losen Infrastruktur 
 
 Die Konvertierung in die semantische HTML erfolgt über den veröffentlichten Inhalt, der von der AEM Autorenstufe oder der dokumentbasierten Authoring-Umgebung bereitgestellt wird.
 
-Das folgende Diagramm zeigt, wie Sie Sites-Inhalte in Microsoft Word (dokumentbasiertes Authoring) bearbeiten und in der Edge-Bereitstellung veröffentlichen können. Es zeigt auch die traditionelle AEM Veröffentlichungsmethode mit den verschiedenen Editoren.
+Das folgende Diagramm zeigt, wie Sie Sites-Inhalte in Microsoft Word (dokumentbasiertes Authoring) bearbeiten und in der Edge-Bereitstellung veröffentlichen können. Es zeigt auch die herkömmliche AEM-Veröffentlichungsmethode mit den verschiedenen Editoren.
 
 ![AEM Sites as a Cloud Service - mit Edge Delivery Services](assets/architecture-aem-edge-author-publish.png "AEM Sites as a Cloud Service - mit Edge Delivery Services")
 

@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 27%
+ht-degree: 29%
 
 ---
 
@@ -87,9 +87,9 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2023“ an, das eine Zusa
 
 [Filtern des Traffics auf dem von Adobe verwalteten CDN](/help/security/traffic-filter-rules-including-waf.md) durch Deklarierung von Regeln, die dem Website-Traffic nach Eigenschaften wie URL, IP-Adresse und Benutzeragent entsprechen, oder Festlegung benutzerdefinierter Traffic-Ratenbeschränkungen, um DoS-Angriffe zu verhindern. Kunden können auch eine Reihe erweiterter WAF-Regeln (Web Application Firewall) für zusätzlichen Schutz vor komplexen Website-Bedrohungen lizenzieren.
 
-Wir empfehlen Ihnen, sich mit Traffic-Filterregeln vertraut zu machen, indem Sie [Tutorial ausprobieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! Er führt Sie durch die Einrichtung einer neuen Cloud Manager-Konfigurationspipelines, das Deklarieren von Regeln in einer Konfigurationsdatei und das Analysieren von CDN-Protokollen auf schädlichen Traffic.
+Wir empfehlen Ihnen, sich mit Traffic-Filterregeln vertraut zu machen, indem Sie [Tutorial ausprobieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=de)! Er führt Sie durch die Einrichtung einer neuen Cloud Manager-Konfigurationspipelines, das Deklarieren von Regeln in einer Konfigurationsdatei und das Analysieren von CDN-Protokollen auf schädlichen Traffic.
 
-Traffic-Filterregeln sind jetzt in Entwicklungsumgebungen verfügbar, mit einem schrittweisen Rollout zu Staging- und Produktionsumgebungen im November. Sie können einen früheren Zugriff auf Staging und Produktion per E-Mail anfordern **aemcs-waf-adopter@adobe.com**.
+Traffic-Filterregeln sind jetzt in Entwicklungsumgebungen verfügbar, mit einem schrittweisen Rollout zu Staging- und Produktionsumgebungen im November. Sie können einen früheren Zugriff auf Staging und Produktion per E-Mail anfordern, indem Sie eine E-Mail an **aemcs-waf-adopter@adobe.com** senden.
 
 Die erweiterten WAF-Traffic-Filterregeln können noch in diesem Jahr über die Enhanced Security- oder WAF-DDoS-Schutzangebote lizenziert werden.
 

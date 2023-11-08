@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8de3189495c374fad156e7e6cb23c96c84ece482
 workflow-type: tm+mt
-source-wordcount: '2029'
-ht-degree: 95%
+source-wordcount: '2167'
+ht-degree: 89%
 
 ---
 
@@ -42,6 +42,11 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder einen Be
 1. Klicken Sie, um die Registerkarte **Formularmodell** zu öffnen. Wählen Sie dann aus der Dropdown-Liste **Auswählen** eines der folgenden Fragmentmodelle:
 
    * **Keins**: Gibt an, dass das Fragment von Grund auf ohne Formularmodell erstellt werden soll.
+
+     >[!NOTE]
+     >
+     > In Adaptive Forms, basierend auf Kernkomponenten, können Sie ein einzelnes Formularfragment mehrmals in einem Formular verwenden. Es unterstützt nicht-basierte und schemabasierte Formularfragmente.
+
    * **Formularvorlage**: Das Fragment wird mithilfe einer XDP-Vorlage erstellt, die in [!DNL AEM Forms] hochgeladen wurde. Wählen Sie die entsprechende XDP-Vorlage als Formularmodell für das Fragment aus.
 
    ![Erstellen eines adaptiven Formulars mit einer Formularvorlage als Modell](assets/form-template-model.png)
@@ -159,6 +164,16 @@ Sie können verschachtelte adaptive Formularfragmente erstellen, d. h. ein Frag
 ### Ändern von Fragmenten {#change-fragments}
 
 Sie können ein adaptives Formularfragment ändern oder durch ein anderes ersetzen, indem Sie die Eigenschaft **Fragment-Asset auswählen** im Dialogfeld „Komponente bearbeiten“ eines adaptiven Formularfragments verwenden.
+
+### Verwenden eines Formularfragments mehrmals in einem adaptiven Formular {#using-form-fragment-mutiple-times-in-af}
+
+Sie können ein schemabasiertes Formularfragment mehrmals in einem adaptiven Formular verwenden, um Daten eindeutig für jedes Formularfragmentfeld zu speichern. Sie können beispielsweise ein Adressformularfragment verwenden, um Adressdetails für permanente Kommunikation und die Darstellung lebender Adressen in einem Kreditantragsformular zu erfassen.
+
+![Verwenden mehrerer Fragmente im adaptiven Formular](/help/forms/assets/using-multiple-fragment-af.gif)
+
+>[!NOTE]
+>
+> * Wenn Sie nicht basierte Formularfragmente mehrmals in einem adaptiven Formular verwenden, erfolgt eine Datensynchronisation zwischen den Feldern der Fragmente. Sie können eine [Formularfragment (basierend auf Kernkomponenten)](/help/forms/adaptive-form-fragments-core-components.md)  mehrere Male in einem Formular enthalten. Es unterstützt nicht-basierte und schemabasierte Formularfragmente ohne Probleme bei der Datensynchronisierung.
 
 ## Automatisches Zuordnen von Fragmenten für die Datenbindung {#auto-mapping-of-fragments-for-data-binding}
 
