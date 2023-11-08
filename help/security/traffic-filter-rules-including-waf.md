@@ -1,11 +1,11 @@
 ---
 title: Traffic-Filterregeln, einschließlich WAF-Regeln
-description: Konfigurieren von Traffic-Filterregeln einschließlich Web Application Firewall (WAF)-Regeln
+description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 8df8322eef7c74932d6feeeb4a7a6045935edd88
 workflow-type: tm+mt
 source-wordcount: '3473'
-ht-degree: 2%
+ht-degree: 97%
 
 ---
 
@@ -13,64 +13,65 @@ ht-degree: 2%
 # Traffic-Filterregeln, einschließlich WAF-Regeln {#traffic-filter-rules-including-waf-rules}
 
 >[!NOTE]
->Diese Funktion ist jetzt in Entwicklungsumgebungen verfügbar, mit einem schrittweisen Rollout zu Staging- und Produktionsumgebungen im späteren November. Sie können einen früheren Zugriff auf Staging und Produktion per E-Mail anfordern **aemcs-waf-adopter@adobe.com**.
+>Diese Funktion ist jetzt in Entwicklungsumgebungen verfügbar, mit einem schrittweisen Rollout zu Staging- und Produktionsumgebungen im späteren November. Sie können einen früheren Zugriff auf Staging und Produktion per E-Mail anfordern, indem Sie eine E-Mail an **aemcs-waf-adopter@adobe.com** senden.
 
 Traffic-Filterregeln können verwendet werden, um Anforderungen auf der CDN-Ebene zu blockieren oder zuzulassen. Dies kann in Szenarien wie den folgenden nützlich sein:
 
-* Einschränken des Zugriffs auf bestimmte Domänen auf den internen Unternehmensdatenverkehr, bevor eine neue Site live geschaltet wird
-* Festlegung von Ratenbeschränkungen, um für volumetrische DoS-Angriffe weniger anfällig zu sein
-* Verhindern von IP-Adressen, von denen bekannt ist, dass sie bösartig auf Seiten sind
+* Einschränken des Zugriffs auf bestimmte Domains auf den internen Unternehmensdatenverkehr, bevor eine neue Site live geschaltet wird
+* Festlegen von Ratenbeschränkungen, um für volumetrische DoS-Angriffe weniger anfällig zu sein
+* Verhindern, dass IP-Adressen, die als bösartig bekannt sind, auf Ihre Seiten zugreifen.
 
-Die meisten dieser Traffic-Filterregeln stehen allen AEM as a Cloud Service Sites- und Forms-Kunden zur Verfügung. Sie funktionieren hauptsächlich mit Anforderungseigenschaften und Anforderungsheadern, einschließlich IP, Hostname, Pfad und Benutzeragent.
+Die meisten dieser Traffic-Filterregeln stehen allen Kundinnen und Kunden von AEM as a Cloud Service Sites und Forms zur Verfügung.  Sie arbeiten hauptsächlich mit den Eigenschaften und Kopfzeilen von Anfragen, einschließlich IP, Host-Name, Pfad und Benutzeragent.
 
-Eine Unterkategorie von Traffic-Filterregeln erfordert entweder eine Lizenz für Enhanced Security oder eine WAF-DDoS Protection-Lizenz und wird später in diesem Jahr verfügbar sein. Diese leistungsstarken Regeln werden als Traffic-Filterregeln für WAF (Web Application Firewall) (kurz WAF-Regeln) bezeichnet und haben Zugriff auf die [WAF-Flags](#waf-flags-list) weiter unten in diesem Artikel beschrieben.
+Eine Unterkategorie von Traffic-Filterregeln erfordert entweder eine Lizenz für Enhanced Security oder eine WAF-DDoS Protection-Lizenz, was später in diesem Jahr verfügbar sein wird. Diese leistungsstarken Regeln werden als Traffic-Filterregeln für WAF (Web Application Firewall, kurz: WAF-Regeln) bezeichnet und haben Zugriff auf die [WAF-Flags](#waf-flags-list), die weiter unten in diesem Artikel beschrieben werden.
 
-Traffic-Filterregeln können über Cloud Manager-Konfigurations-Pipelines bereitgestellt werden, um Typen von Entwicklungs-, Staging- und Produktionsumgebungen in Produktionsprogrammen (ohne Sandbox) bereitzustellen. Die Unterstützung von RDEs wird in Zukunft stattfinden.
+Traffic-Filterregeln können über Cloud Manager-Konfigurations-Pipelines bereitgestellt werden, um Typen von Entwicklungs-, Staging- und Produktionsumgebungen in Produktionsprogrammen (ohne Sandbox) bereitzustellen. Die Unterstützung von RDEs wird in Zukunft verfügbar sein.
 
-[Tutorial durchlaufen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) um rasch konkrete Kenntnisse zu dieser Funktion zu erwerben.
+[Tutorial durchlaufen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=de) um rasch konkrete Kenntnisse zu dieser Funktion zu erwerben.
 
-## Organisation dieses Artikels {#how-organized}
+## Wie dieser Artikel organisiert ist {#how-organized}
 
 Dieser Artikel ist in die folgenden Abschnitte unterteilt:
 
-* **Übersicht über den Traffic-Schutz:** Erfahren Sie, wie Sie vor schädlichem Traffic geschützt sind.
+* **Traffic-Schutz – Übersicht:** Erfahren Sie, wie Sie vor schädlichem Traffic geschützt werden.
 * **Empfohlener Prozess zum Konfigurieren von Regeln:** Erfahren Sie mehr über eine allgemeine Methode zum Schutz Ihrer Website.
-* **Einrichtung:** Erfahren Sie, wie Sie Traffic-Filterregeln einrichten, konfigurieren und bereitstellen, einschließlich der erweiterten WAF-Regeln.
-* **Regelsyntax:** Erfahren Sie, wie Sie Traffic-Filterregeln deklarieren im `cdn.yaml` Konfigurationsdatei. Dazu gehören sowohl die Traffic-Filterregeln, die für alle Sites- und Forms-Kunden verfügbar sind, als auch die Unterkategorie der WAF-Regeln für diejenigen, die diese Funktion lizenzieren.
-* **Regelbeispiele:** Sehen Sie sich Beispiele für deklarierte Regeln an, um Sie auf den Weg zu bringen.
-* **Regeln für die Begrenzung von Beträgen:** Erfahren Sie, wie Sie Regeln zur Ratenbegrenzung verwenden, um Ihre Site vor Angriffen mit hohem Volumen zu schützen.
+* **Setup:** Erfahren Sie, wie Sie Traffic-Filterregeln einrichten, konfigurieren und bereitstellen, einschließlich der erweiterten WAF-Regeln.
+* **Regelsyntax:** Erfahren Sie, wie Sie Traffic-Filterregeln in der Konfigurationsdatei von `cdn.yaml` deklarieren. Dazu gehören sowohl die Traffic-Filterregeln, die für alle Kundinnen und Kunden von Sites und Forms verfügbar sind, als auch die Unterkategorie der WAF-Regeln für diejenigen, die diese Funktion lizenzieren.
+* **Regelbeispiele:** Sehen Sie sich zu Beginn Beispiele für deklarierte Regeln an.
+* **Ratenbegrenzungsregeln:** Erfahren Sie, wie Sie Regeln zur Ratenbegrenzung verwenden, um Ihre Site vor Angriffen mit hohem Volumen zu schützen.
 * **CDN-Protokolle:** Erfahren Sie, welche deklarierten Regeln und WAF-Flags mit Ihrem Traffic übereinstimmen.
 * **Dashboard-Tooling:** Analysieren Sie Ihre CDN-Protokolle, um neue Traffic-Filterregeln zu erstellen.
-* **Empfohlene Starterregeln:** Ein Regelsatz für die ersten Schritte.
-* **Tutorial:** Praktische Kenntnisse über die Funktion, einschließlich der Verwendung der Dashboard-Werkzeuge zur Deklarierung der richtigen Regeln.
+* **Empfohlene Anfangsregeln:** Ein Regelsatz für die ersten Schritte.
+* **Tutorial:** Praktisches Wissen bezüglich der Funktion, einschließlich der Verwendung der Dashboard-Werkzeuge zum Deklarieren der richtigen Regeln.
 
-Wir laden Sie ein, Feedback zu geben oder Fragen zu Traffic-Filterregeln per E-Mail zu stellen **aemcs-waf-adopter@adobe.com**.
+Wir laden Sie ein, Feedback zu geben oder Fragen zu Traffic-Filterregeln zu stellen, indem Sie eine E-Mail an **aemcs-waf-adopter@adobe.com** senden.
 
-## Traffic Protection - Übersicht {#traffic-protection-overview}
+## Traffic-Schutz – Übersicht {#traffic-protection-overview}
 
-In der aktuellen digitalen Landschaft stellt böswilliger Traffic eine immer präsente Bedrohung dar. Wir erkennen die Schwere des Risikos und bieten verschiedene Ansätze zum Schutz von Kundenanwendungen und zur Eindämmung von Angriffen, wenn diese auftreten.
+In der aktuellen digitalen Landschaft stellt schädlicher Traffic eine immer präsente Bedrohung dar. Wir erkennen die Schwere des Risikos an und bieten verschiedene Ansätze zum Schutz von Kundenanwendungen und zur Eindämmung von Angriffen, wenn diese auftreten.
 
-Am Rande absorbiert das von Adobe verwaltete CDN DoS-Angriffe auf der Netzwerkschicht (Ebenen 3 und 4), einschließlich Überschwemmungen und Reflektions-/Verstärkungsangriffe.
+Am Rande absorbiert das von Adobe verwaltete CDN DoS-Angriffe auf der Netzwerkschicht
+(Ebene 3 und 4), einschließlich Angriffe durch Überschwemmung oder Reflexion/Verstärkung.
 
-Adobe ergreift standardmäßig Maßnahmen, um eine Leistungsbeeinträchtigung durch unerwartet hohen Traffic-Aufkommen über einen bestimmten Schwellenwert hinaus zu verhindern. Im Falle eines DoS-Angriffs, der sich auf die Verfügbarkeit der Website auswirkt, werden die Teams von Adobe-Operationen benachrichtigt und Maßnahmen zur Abmilderung des Problems ergriffen.
+Adobe ergreift standardmäßig Maßnahmen, um eine Leistungsbeeinträchtigung durch unerwartet hohes Traffic-Aufkommen über einen bestimmten Schwellenwert hinaus zu verhindern. Im Falle eines DoS-Angriffs, der sich auf die Verfügbarkeit der Website auswirkt, werden die operativen Teams von Adobe benachrichtigt und Maßnahmen zur Eindämmung des Problems ergriffen.
 
-Kunden können proaktive Maßnahmen ergreifen, um Anwendungsschichtangriffe (Ebene 7) zu minimieren, indem sie Regeln auf verschiedenen Ebenen des Inhaltsbereitstellungsflusses konfigurieren.
+Kundinnen und Kunden können proaktive Maßnahmen ergreifen, um Angriffe auf Anwendungsebene (Ebene 7) zu minimieren, indem sie Regeln auf verschiedenen Ebenen des Inhaltsbereitstellungsflusses konfigurieren.
 
-Auf der Apache-Ebene können Kunden beispielsweise die [Dispatcher-Modul](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter) oder [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=en) , um den Zugriff auf bestimmte Inhalte zu beschränken.
+Auf der Apache-Ebene können Kundinnen und Kunden beispielsweise das [Dispatcher-Modul](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring-access-to-content-filter) oder [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=de) konfigurieren, um den Zugriff auf bestimmte Inhalte zu beschränken.
 
-Wie in diesem Artikel beschrieben, können Traffic-Filterregeln mithilfe der Cloud Manager-Konfigurationspipeline auf dem von Adobe verwalteten CDN bereitgestellt werden. Zusätzlich zu Traffic-Filterregeln, die auf Eigenschaften wie IP-Adresse, Pfad und Kopfzeilen oder Regeln basieren, die auf der Festlegung von Ratenbeschränkungen basieren, können Kunden auch eine leistungsstarke Unterkategorie von Traffic-Filterregeln lizenzieren, die so genannten WAF-Regeln.
+Wie in diesem Artikel beschrieben, können Traffic-Filterregeln mithilfe der Cloud Manager-Konfigurations-Pipeline auf dem von Adobe verwalteten CDN bereitgestellt werden. Zusätzlich zu Traffic-Filterregeln, die auf Eigenschaften wie IP-Adresse, Pfad und Kopfzeilen basieren, oder Regeln, die auf der Festlegung von Ratenbeschränkungen beruhen, können Kundinnen und Kunden auch eine leistungsstarke Unterkategorie von Traffic-Filterregeln lizenzieren, die sogenannten WAF-Regeln.
 
 ## Vorgeschlagener Prozess {#suggested-process}
 
-Im Folgenden finden Sie einen allgemeinen empfohlenen End-to-End-Prozess für die Erstellung der richtigen Traffic-Filterregeln:
+Im Folgenden finden Sie einen allgemein empfohlenen End-to-End-Prozess für die Erstellung der richtigen Traffic-Filterregeln:
 
-1. Konfigurieren Sie die Konfigurations-Pipelines für Nicht-Produktion und Produktion, wie im Abschnitt [Einrichtung](#setup) Abschnitt.
-1. Kunden, die die Unterkategorie der WAF-Traffic-Filterregeln lizenziert haben, sollten sie in Cloud Manager aktivieren.
-1. Lesen und probieren Sie das Tutorial aus, um genau zu verstehen, wie Traffic-Filterregeln verwendet werden, einschließlich WAF-Regeln, wenn sie lizenziert wurden. Das Tutorial führt Sie durch die Bereitstellung von Regeln in einer Entwicklungsumgebung, die Simulation von schädlichem Traffic und den Download der [CDN-Protokolle](#cdn-logs)und analysieren sie in [Dashboard-Tools](#dashboard-tooling).
-1. Kopieren Sie die empfohlenen Starterregeln in `cdn.yaml` und stellen Sie die Konfiguration in der Produktionsumgebung im Protokollmodus bereit.
-1. Nachdem Sie Traffic erfasst haben, analysieren Sie die Ergebnisse mit [Dashboard-Tools](#dashboard-tooling) um zu sehen, ob es Übereinstimmungen gab. Suchen Sie nach Falsch-Positiv-Werten und nehmen Sie die erforderlichen Anpassungen vor, um schließlich die Starter-Regeln im Blockmodus zu aktivieren.
-1. Fügen Sie benutzerdefinierte Regeln hinzu, die auf der Analyse der CDN-Protokolle basieren. Testen Sie zunächst den simulierten Traffic in Entwicklungsumgebungen, bevor Sie sie im Protokollmodus in Staging- und Produktionsumgebungen bereitstellen, und blockieren Sie dann den Modus.
-1. Überwachung des Traffics auf fortlaufender Basis, Anpassung der Regeln im Zuge der Entwicklung der Bedrohungslandschaft.
+1. Konfigurieren Sie die Konfigurations-Pipelines für Nicht-Produktion und Produktion, wie im Abschnitt [Setup](#setup) beschrieben.
+1. Kundinnen und Kunden, die die Unterkategorie der WAF-Traffic-Filterregeln lizenziert haben, sollten sie in Cloud Manager aktivieren.
+1. Lesen und probieren Sie das Tutorial aus, um genau zu verstehen, wie Traffic-Filterregeln verwendet werden, einschließlich WAF-Regeln, wenn sie lizenziert wurden. Das Tutorial führt Sie durch die Bereitstellung von Regeln in einer Entwicklungsumgebung, die Simulation von schädlichem Traffic sowie den Download der [CDN-Protokolle](#cdn-logs) und ihre Analyse in den [Dashboard-Tools](#dashboard-tooling).
+1. Kopieren Sie die empfohlenen Anfangsregeln nach `cdn.yaml` und stellen Sie die Konfiguration in der Produktionsumgebung im Protokollmodus bereit.
+1. Nachdem Sie etwas Traffic erfasst haben, analysieren Sie die Ergebnisse mit den [Dashboard-Tools](#dashboard-tooling), um zu sehen, ob es Übereinstimmungen gab. Suchen Sie nach Falsch-Positiv-Werten und nehmen Sie die erforderlichen Anpassungen vor, um schließlich die Anfangsregeln im Blockmodus zu aktivieren.
+1. Fügen Sie benutzerdefinierte Regeln hinzu, die auf der Analyse der CDN-Protokolle basieren. Testen Sie sie zunächst mit simuliertem Traffic in Entwicklungsumgebungen, bevor Sie sie in Staging- und Produktionsumgebungen im Protokollmodus und dann im Blockmodus bereitstellen.
+1. Überwachen Sie den Traffic auf fortlaufender Basis und nehmen Sie Änderungen an den Regeln vor, wenn sich die Bedrohungslage weiterentwickelt.
 
 ## Setup {#setup}
 
@@ -102,35 +103,35 @@ Im Folgenden finden Sie einen allgemeinen empfohlenen End-to-End-Prozess für di
          action: block
    ```
 
-Die `kind` -Parameter auf `CDN` und die Version auf die Schemaversion eingestellt werden sollte, die derzeit `1`. Siehe Beispiele weiter unten.
+Der `kind`-Parameter sollte auf `CDN` gesetzt sein und die Version auf die Schemaversion eingestellt sein, die derzeit `1` ist. Siehe die Beispiele weiter unten.
 
 
 <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
-1. Wenn WAF-Regeln lizenziert sind, sollten Sie die Funktion in Cloud Manager aktivieren, wie unten für die neuen und bestehenden Programmszenarien beschrieben.
+1. Wenn WAF-Regeln lizenziert sind, sollten Sie die Funktion in Cloud Manager aktivieren, wie unten für sowohl neue als auch bestehende Programmszenarien beschrieben.
 
-   1. Um WAF in einem neuen Programm zu konfigurieren, überprüfen Sie die **WAF-DDOS-Schutz** Kontrollkästchen auf der **Sicherheit** Registerkarte bei [ein Produktionsprogramm hinzufügen.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+   1. Um WAF in einem neuen Programm zu konfigurieren, markieren Sie das Kontrollkästchen **WAF-DDOS-Schutz** auf der Registerkarte **Sicherheit**, wenn Sie [ein Produktionsprogramm hinzufügen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
-   1. So konfigurieren Sie WAF für ein vorhandenes Programm: [Bearbeiten des Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) und auf **Sicherheit** Registerkarte deaktivieren oder überprüfen Sie **WAF-DDOS** jederzeit verfügbar.
+   1. Um WAF für ein vorhandenes Programm zu konfigurieren, können Sie jederzeit [Ihr Programm bearbeiten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) und auf der Registerkarte **Sicherheit** die Option **WAF-DDOS** deaktivieren oder aktivieren.
 
 1. Erstellen Sie für andere Umgebungstypen als RDE eine zielgerichtete Bereitstellungskonfigurations-Pipeline in Cloud Manager.
 
-   * [Informationen zu Produktions-Pipelines finden Sie in diesem Dokument .](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-   * [Informationen zu produktionsfremden Pipelines finden Sie in diesem Dokument .](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * [Informationen zu Produktions-Pipelines finden Sie in diesem Dokument.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+   * [Informationen zu produktionsfremden Pipelines finden Sie in diesem Dokument.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 
-Für RDEs wird die Befehlszeile verwendet, RDE wird jedoch derzeit nicht unterstützt.
+Für RDEs wird später die Befehlszeile verwendet, RDE wird jedoch derzeit noch nicht unterstützt.
 
 **Anmerkungen**
 
-* Sie können `yq` , um die YAML-Formatierung Ihrer Konfigurationsdatei lokal zu überprüfen (z. B. `yq cdn.yaml`).
+* Sie können `yq` verwenden, um die YAML-Formatierung Ihrer Konfigurationsdatei lokal zu überprüfen (z. B. `yq cdn.yaml`).
 
 ## Syntax für Traffic-Filterregeln {#rules-syntax}
 
-Sie können `traffic filter rules` , um eine Übereinstimmung mit Mustern wie IPs, Benutzeragent, Anfragekopfzeilen, Hostname, Geo und URL zu erhalten.
+Sie können `traffic filter rules` konfigurieren, um eine Übereinstimmung mit Mustern wie IPs, Benutzeragent, Anfragekopfzeilen, Host-Name, Geo und URL zu erhalten.
 
-Kunden, die das Angebot &quot;Enhanced Security&quot;oder &quot;WAF-DDoS Protection Security&quot;lizenzieren, können auch eine spezielle Kategorie von Traffic-Filterregeln konfigurieren, die als `WAF traffic filter rules` (oder WAF-Regeln für kurz), die auf eine oder mehrere [WAF-Flags](#waf-flags-list).
+Kunden, die eine Lizenz für das Angebot „Enhanced Security“ oder „WAF-DDoS Protection Security“ erwerben, können auch eine spezielle Kategorie von Traffic-Filterregeln namens `WAF traffic filter rules` (oder kurz: WAF-Regeln) konfigurieren, die auf eine oder mehrere [WAF-Flags](#waf-flags-list) verweisen.
 
-Im Folgenden finden Sie ein Beispiel für einen Satz von Traffic-Filterregeln, die auch eine WAF-Regel enthalten.
+Im Folgenden finden Sie ein Beispiel für einen Satz von Traffic-Filterregeln, der auch eine WAF-Regel enthält.
 
 ```
 kind: "CDN"
@@ -151,15 +152,15 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-Das Format der Traffic-Filterregeln im `cdn.yaml` wird unten beschrieben. Siehe einige [andere Beispiele](#examples) in einem späteren Abschnitt sowie einem separaten Abschnitt zu [Regeln für Ratenbegrenzungen](#rate-limit-rules).
+Das Format der Traffic-Filterregeln in der Datei `cdn.yaml` wird im Folgenden beschrieben. Siehe einige [andere Beispiele](#examples) in einem späteren Abschnitt sowie in einem separaten Abschnitt zu [Ratenbegrenzungsregeln](#rate-limit-rules).
 
 
 | **Eigenschaft** | **Die meisten Traffic-Filterregeln** | **WAF-Traffic-Filterregeln** | **Typ** | **Standardwert** | **Beschreibung** |
 |---|---|---|---|---|---|
-| name | X | X | `string` | - | Regelname (64 Zeichen lang, darf nur alphanumerische Zeichen und - enthalten.) |
-| when | X | X | `Condition` | - | Die Grundstruktur lautet:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[Siehe Syntax für Bedingungsstruktur](#condition-structure) weiter unten, in dem die Getter, Eigenschaften und die Kombination mehrerer Bedingungen beschrieben werden. |
-| Aktion | X | X | `Action` | log | log-, allow-, block- oder Action-Objekt. Der Standardwert ist log |
-| rateLimit | X |   | `RateLimit` | nicht definiert | Ratenbegrenzungskonfiguration. Die Ratenbegrenzung ist deaktiviert, wenn sie nicht definiert ist.<br><br>Weiter unten finden Sie einen separaten Abschnitt mit einer Beschreibung der Syntax rateLimit sowie Beispiele. |
+| name | X | X | `string` | - | Regelname (64 Zeichen lang, darf nur alphanumerische Zeichen und „-“ enthalten.) |
+| wenn | X | X | `Condition` | - | Die Grundstruktur ist:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[Siehe Syntax für Bedingungsstruktur](#condition-structure) weiter unten, in dem die Getter, Eigenschaften und die Kombination mehrerer Bedingungen beschrieben werden. |
+| Aktion | X | X | `Action` | protokollieren | protokollieren, zulassen, blockieren oder Aktionsobjekt Standard ist „protokollieren“ |
+| rateLimit | X |   | `RateLimit` | nicht definiert | Ratenbegrenzungskonfiguration. Die Ratenbegrenzung ist deaktiviert, wenn sie nicht definiert ist.<br><br>Weiter unten finden Sie einen separaten Abschnitt mit einer Beschreibung der rateLimit-Syntax sowie Beispiele. |
 
 ### Bedingungsstruktur {#condition-structure}
 
@@ -187,36 +188,36 @@ Eine Gruppe von Bedingungen besteht aus mehreren einfachen und/oder Gruppenbedin
 
 | **Eigenschaft** | **Typ** | **Bedeutung** |
 |---|---|---|
-| **allOf** | `array[Condition]` | **und** Vorgang. true , wenn alle aufgelisteten Bedingungen &quot;true&quot;zurückgeben |
-| **anyOf** | `array[Condition]` | **oder** Vorgang. true , wenn eine der aufgelisteten Bedingungen &quot;true&quot;zurückgibt |
+| **allOf** | `array[Condition]` | **Und**-Vorgang. „True“, wenn alle aufgelisteten Bedingungen „true“ zurückgeben |
+| **anyOf** | `array[Condition]` | **Oder** Vorgang. „True“, wenn eine der aufgelisteten Bedingungen „true“ zurückgibt |
 
 **Getter**
 
 | **Eigenschaft** | **Typ** | **Beschreibung** |
 |---|---|---|
-| reqProperty | `string` | Anfrageeigenschaft.<br><br>Eines von:<br><ul><li>`path`: Gibt den vollständigen Pfad einer URL ohne die Abfrageparameter zurück.</li><li>`queryString`: Gibt den Abfrageteil einer URL zurück</li><li>`method`: Gibt die in der Anfrage verwendete HTTP-Methode zurück.</li><li>`tier`: Gibt einen von zurück `author`, `preview` oder `publish`.</li><li>`domain`: Gibt die Eigenschaft der Domäne zurück (wie im Abschnitt `Host` -Kopfzeile) in Kleinbuchstaben</li><li>`clientIp`: Gibt die Client-IP zurück.</li><li>`clientCountry`: Gibt einen aus zwei Buchstaben bestehenden Code ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) , die angeben, in welchem Land sich der Kunde befindet.</li></ul> |
-| reqHeader | `string` | Gibt den Anforderungsheader mit dem angegebenen Namen zurück |
-| queryParam | `string` | Gibt Abfrageparameter mit dem angegebenen Namen zurück |
-| reqCookie | `string` | Gibt Cookie mit dem angegebenen Namen zurück |
-| postParam | `string` | Gibt den Post-Parameter mit dem angegebenen Namen aus dem Anforderungstext zurück. Funktioniert nur, wenn der Hauptteil vom Inhaltstyp ist `application/x-www-form-urlencoded` |
+| reqProperty | `string` | Anfrageeigenschaft.<br><br>Eines von:<br><ul><li>`path`: Gibt den vollständigen Pfad einer URL ohne die Abfrageparameter zurück.</li><li>`queryString`: Gibt den Abfrageteil einer URL zurück</li><li>`method`: Gibt die in der Anfrage verwendete HTTP-Methode zurück.</li><li>`tier`: Gibt entweder `author`, `preview` oder `publish` zurück.</li><li>`domain`: Gibt die Eigenschaft der Domain (wie in der `Host`-Kopfzeile definiert) in Kleinschreibung zurück</li><li>`clientIp`: Gibt die Client-IP zurück.</li><li>`clientCountry`: Gibt einen aus zwei Buchstaben bestehenden Code ([https://de.wikipedia.org/wiki/ISO-3166-1-Kodierliste](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) zurück, der angibt, in welchem Land sich die Kundin bzw. der Kunde befindet.</li></ul> |
+| reqHeader | `string` | Gibt die Anfragekopfzeile mit dem angegebenen Namen zurück |
+| queryParam | `string` | Gibt den Abfrageparameter mit dem angegebenen Namen zurück |
+| reqCookie | `string` | Gibt ein Cookie mit dem angegebenen Namen zurück |
+| postParam | `string` | Gibt den Post-Parameter mit dem angegebenen Namen aus dem Anfragetext zurück. Funktioniert nur, wenn der Hauptteil vom Inhaltstyp `application/x-www-form-urlencoded` ist |
 
 **Prädikat**
 
 | **Eigenschaft** | **Typ** | **Bedeutung** |
 |---|---|---|
-| **gleich** | `string` | true , wenn das Getter-Ergebnis dem bereitgestellten Wert entspricht |
-| **doesNotEqual** | `string` | true , wenn das Getter-Ergebnis nicht dem bereitgestellten Wert entspricht |
-| **Gefällt mir** | `string` | true , wenn das Getter-Ergebnis dem angegebenen Muster entspricht |
-| **notLike** | `string` | true , wenn das Getter-Ergebnis nicht mit dem bereitgestellten Muster übereinstimmt |
-| **Stimmt überein** | `string` | true , wenn das Getter-Ergebnis mit bereitgestelltem Regex übereinstimmt |
-| **doesNotMatch** | `string` | true , wenn das Getter-Ergebnis nicht mit dem bereitgestellten Regex übereinstimmt |
-| **in** | `array[string]` | true , wenn die bereitgestellte Liste das Getter-Ergebnis enthält |
-| **notIn** | `array[string]` | true , wenn die bereitgestellte Liste kein Getter-Ergebnis enthält |
-| **vorhanden** | `boolean` | &quot;true&quot;, wenn auf &quot;true&quot;gesetzt und die Eigenschaft existiert oder auf &quot;false&quot;gesetzt ist und die Eigenschaft nicht vorhanden ist |
+| **gleich** | `string` | „True“, wenn das Getter-Ergebnis dem angegebenen Wert entspricht |
+| **doesNotEqual** | `string` | „True“, wenn das Getter-Ergebnis nicht dem angegebenen Wert entspricht |
+| **like** | `string` | „True“, wenn das Getter-Ergebnis mit dem angegebenen Muster übereinstimmt |
+| **notLike** | `string` | „True“, wenn das Getter-Ergebnis nicht mit dem angegebenen Muster übereinstimmt |
+| **matches** | `string` | „True“, wenn das Getter-Ergebnis mit dem angegebenen Regex übereinstimmt |
+| **doesNotMatch** | `string` | „True“, wenn das Getter-Ergebnis nicht mit dem angegebenen Regex übereinstimmt |
+| **in** | `array[string]` | „True“, wenn die angegebene Liste das Getter-Ergebnis enthält |
+| **notIn** | `array[string]` | „True“, wenn die angegebene Liste das Getter-Ergebnis nicht enthält |
+| **exists** | `boolean` | „True“, wenn auf es auf „true“ gesetzt ist und die Eigenschaft existiert, oder wenn es auf „false“ gesetzt ist und die Eigenschaft nicht vorhanden ist |
 
 **Anmerkungen**
 
-* Die Anfrageeigenschaft `clientIp` kann nur mit den folgenden Eigenschaften verwendet werden: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` kann bei Verwendung von `in` und `notIn` -Prädikaten. Im folgenden Beispiel wird eine Bedingung implementiert, um zu bewerten, ob eine Client-IP im IP-Bereich von 192.168.0.0/24 liegt (also von 192.168.0.0 bis 192.168.0.255):
+* Die Anfrageeigenschaft `clientIp` kann nur mit den folgenden Prädikaten verwendet werden: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` kann bei auch mit IP-Bereichen verglichen werden, wenn die Prädikate `in` und `notIn` verwendet werden. Im folgenden Beispiel wird eine Bedingung implementiert, um zu bewerten, ob eine Client-IP im IP-Bereich von 192.168.0.0/24 liegt (also von 192.168.0.0 bis 192.168.0.255):
 
 ```
 when:
@@ -224,7 +225,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* Wir empfehlen die Verwendung von [regex101](https://regex101.com/) und [Fastly Fiddle](https://fiddle.fastly.dev/) bei der Arbeit mit Regex. Weitere Informationen dazu, wie schnell Regex gehandhabt wird, finden Sie in diesem [Artikel](https://developer.fastly.com/reference/vcl/regex/#best-practices-and-common-mistakes).
+* Wir empfehlen die Verwendung von [regex101](https://regex101.com/) und [Fastly Fiddle](https://fiddle.fastly.dev/), wenn Sie mit Regex arbeiten. Weitere Informationen dazu, wie Fastly mit Regex arbeitet, finden Sie in diesem [Artikel](https://developer.fastly.com/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 
 ### Aktionsstruktur {#action-structure}
@@ -233,51 +234,51 @@ Ein `action` kann entweder eine Zeichenfolge sein, die die Aktion angibt (allow,
 
 **Aktionstypen**
 
-Aktionen werden entsprechend ihren Typen in der folgenden Tabelle priorisiert, die entsprechend der ausgeführten Bestellaktionen angeordnet ist:
+Aktionen werden entsprechend ihren Typen in der folgenden Tabelle priorisiert, die entsprechend der Reihenfolge sortiert ist, in der die Aktionen ausgeführt werden.
 
 | **Name** | **Zulässige Eigenschaften** | **Bedeutung** |
 |---|---|---|
-| **zulassen** | `wafFlags` (optional) | Wenn wafFlags nicht vorhanden ist, stoppt die weitere Regelverarbeitung und fährt mit der Bereitstellung der Antwort fort. Wenn wafFlags vorhanden ist, deaktiviert es die angegebenen WAF-Schutzmechanismen und fährt mit der weiteren Regelverarbeitung fort. |
-| **block** | `status, wafFlags` (fakultativ und gegenseitig ausschließen) | Wenn wafFlags nicht vorhanden ist, wird der HTTP-Fehler unter Umgehung aller anderen Eigenschaften zurückgegeben. Der Fehlercode wird durch die Statuseigenschaft definiert oder standardmäßig auf 406 gesetzt. Wenn wafFlags vorhanden ist, ermöglicht es bestimmte WAF-Schutzmaßnahmen und fährt mit der weiteren Regelverarbeitung fort. |
-| **log** | `wafFlags` (optional) | protokolliert die Tatsache, dass die Regel ausgelöst wurde, andernfalls hat dies keine Auswirkungen auf die Verarbeitung. wafFlags hat keine Auswirkung |
+| **allow** | `wafFlags` (optional) | Wenn wafFlags nicht vorhanden ist, stoppt die weitere Regelverarbeitung und es wird mit der Bereitstellung der Antwort fortgefahren. Wenn wafFlags vorhanden ist, deaktiviert es die angegebenen WAF-Schutzmechanismen und fährt mit der weiteren Regelverarbeitung fort. |
+| **block** | `status, wafFlags` (optional und schließt sich gegenseitig aus) | Wenn wafFlags nicht vorhanden ist, wird der HTTP-Fehler unter Umgehung aller anderen Eigenschaften zurückgegeben. Der Fehler-Code wird durch die Statuseigenschaft definiert bzw. standardmäßig auf 406 gesetzt. Wenn wafFlags vorhanden ist, ermöglicht es bestimmte WAF-Schutzmaßnahmen und fährt mit der weiteren Regelverarbeitung fort. |
+| **log** | `wafFlags` (optional) | protokolliert die Tatsache, dass die Regel ausgelöst wurde, hat jedoch ansonsten keine Auswirkung auf die Verarbeitung. wafFlags hat keine Auswirkung |
 
 ### WAF-Flags-Liste {#waf-flags-list}
 
-Die `wafFlags` -Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln verwendet werden kann, kann auf Folgendes verweisen:
+Die `wafFlags`-Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln verwendet werden kann, kann auf Folgendes verweisen:
 
-| **Kennzeichen-ID** | **Flag Name** | **Beschreibung** |
+| **Flag-ID** | **Flag-Name** | **Beschreibung** |
 |---|---|---|
-| SQLI | SQL-Injektion | SQL Injection ist der Versuch, durch die Ausführung beliebiger Datenbankabfragen Zugriff auf eine Anwendung zu erhalten oder privilegierte Informationen zu erhalten. |
-| HINTERGRUND | Backend | Ein Backdoor-Signal ist eine Anfrage, die versucht festzustellen, ob eine gemeinsame Backdoor-Datei auf dem System vorhanden ist. |
+| SQLI | SQL-Injektion | SQL-Injektion ist der Versuch, durch die Ausführung beliebiger Datenbankabfragen Zugriff auf eine Anwendung zu erhalten oder privilegierte Informationen zu erhalten. |
+| BACKDOOR | Backdoor | Ein Backdoor-Signal ist eine Anfrage, die versucht festzustellen, ob eine gemeinsame Backdoor-Datei auf dem System vorhanden ist. |
 | CMDEXE | Befehlsausführung | Befehlsausführung ist der Versuch, durch beliebige Systembefehle mithilfe von Benutzereingaben die Kontrolle über ein Zielsystem zu erlangen oder ein Zielsystem zu beschädigen. |
-| XSS | Site-übergreifende Skripterstellung | Die Site-übergreifende Skripterstellung ist der Versuch, das Konto eines Benutzers oder die Webbrowsing-Sitzung durch schädlichen JavaScript-Code zu ersetzen. |
-| TRAVERSAL | Verzeichnisdurchlauf | Directory Traversal ist der Versuch, in einem System durch privilegierte Ordner zu navigieren, in der Hoffnung, vertrauliche Informationen zu erhalten. |
-| BENUTZERAGENT | Attack-Tools | Attack Tooling ist der Einsatz automatisierter Software zur Identifizierung von Sicherheitslücken oder zum Versuch, eine entdeckte Verwundbarkeit auszunutzen. |
-| LOG4J-JNDI | Log4J JNDI | Log4J JNDI-Angriffe versuchen, die [Sicherheitslücke durch Log4Shell](https://en.wikipedia.org/wiki/Log4Shell) in Log4J-Versionen vor 2.16.0 vorhanden |
-| BHH | Bad Hop Headers | Bad Hop-Header weisen auf einen HTTP-Schmuggelversuch durch einen fehlerhaften Transfer-Encoding (TE)- oder Content-Length (CL)-Header oder einen korrekt formatierten TE- und CL-Header hin. |
-| ABNORMALPATH | Anormaler Pfad | Anormaler Pfad gibt an, dass der ursprüngliche Pfad vom normalisierten Pfad abweicht (z. B. `/foo/./bar` wird normalisiert in `/foo/bar`) |
-| DOUBLEENCODE | Doppelte Kodierung | Bei der doppelten Kodierung wird geprüft, ob HTML-Zeichen doppelt kodiert werden |
-| NOTUTF8 | Ungültige Kodierung | Eine ungültige Kodierung kann dazu führen, dass der Server böswillige Zeichen aus einer Anfrage in eine Antwort übersetzt, was entweder zu einer Dienstverweigerung oder XSS führt |
-| JSON-FEHLER | JSON-Kodierungsfehler | Ein POST-, PUT- oder PATCH-Anforderungstext, der als JSON-Inhalt im Anforderungsheader &quot;Content-Type&quot;enthält, aber JSON-Parsing-Fehler enthält. Dies hängt häufig mit einem Programmierfehler oder einer automatisierten oder böswilligen Anfrage zusammen. |
-| MALFORMED-DATA | Fehlerhafte Daten im Anfrageinhalt | Ein POST-, PUT- oder PATCH-Anfrageinhalt, der gemäß der Anfragekopfzeile &quot;Content-Type&quot;fehlerhaft ist. Wenn beispielsweise ein Anforderungsheader &quot;Content-Type: application/x-www-form-urlencoded&quot;angegeben ist und einen POST-Hauptteil enthält, der json ist. Dies ist häufig ein Programmierfehler, eine automatisierte oder böswillige Anfrage. Erfordert Agent 3.2 oder höher. |
-| SANS | böswilliger IP-Traffic | [SANS Internet Storm Center](https://isc.sans.edu/) Liste der IP-Adressen, von denen berichtet wurde, dass sie schädliche Aktivitäten durchgeführt haben |
-| SIGSCI-IP | Netzwerkeffekt | IP-Adresse, die von SignalSciences gekennzeichnet wird: Jedes Mal, wenn eine IP aufgrund eines bösartigen Signals von der Entscheidungs-Engine gekennzeichnet wird, wird diese IP an alle Kunden weitergeleitet. Nachfolgende Anfragen von den IP-Adressen, die ein zusätzliches Signal für die Dauer der Markierung enthalten, werden dann protokolliert |
-| NO-CONTENT-TYPE | Fehlende Anfrage-Kopfzeile &quot;Content-Type&quot; | Eine Anfrage vom Typ POST, PUT oder PATCH, die keinen Anforderungsheader vom Typ &quot;Content-Type&quot;enthält. Standardmäßig sollten Anwendungsserver in diesem Fall von &quot;Content-Type: text/plain; charset=us-ascii&quot;ausgehen. Bei vielen automatisierten und böswilligen Anfragen fehlt möglicherweise &quot;Content Type&quot;. |
-| NOUA | Kein Benutzeragent | Viele automatisierte und böswillige Anfragen verwenden gefälschte oder fehlende Benutzeragenten, um die Identifizierung des Gerätetyps zu erschweren, der die Anforderungen stellt. |
-| TORNODE | Tor Traffic | Tor ist eine Software, die die Identität eines Benutzers verschleiert. Eine Spitze im Tor-Traffic kann darauf hinweisen, dass ein Angreifer versucht, seinen Standort zu verschleiern. |
-| NULLBYTE | Null Byte | Null-Bytes werden normalerweise nicht in einer Anfrage angezeigt und weisen darauf hin, dass die Anfrage falsch formatiert ist und möglicherweise bösartig ist. |
-| PRIVATEFILE | Private Dateien | Private Dateien sind normalerweise vertraulich, wie z. B. ein Apache `.htaccess` -Datei oder einer Konfigurationsdatei, die vertrauliche Informationen übergeben kann |
-| SCANNER | Scanner | Identifiziert beliebte Scandienste und -werkzeuge |
-| RESPONSESPLIT | HTTP-Antwortaufteilung | Gibt an, wann CRLF-Zeichen als Eingabe an die Anwendung gesendet werden, um Header in die HTTP-Antwort einzufügen. |
-| XML-FEHLER | XML-Kodierungsfehler | Ein POST-, PUT- oder PATCH-Anfrageinhalt, der im Anfrageheader &quot;Content-Type&quot;als XML-Inhalt mit XML-Parsing-Fehlern angegeben ist. Dies hängt häufig mit einem Programmierfehler oder einer automatisierten oder böswilligen Anfrage zusammen. |
+| XSS | Cross-Site-Scripting | Cross-Site-Scripting ist der Versuch, das Konto einer Benutzerin oder eines Benutzers oder die Webbrowsing-Sitzung durch schädlichen JavaScript-Code zu ersetzen. |
+| TRAVERSAL | Verzeichnistraversierung | Verzeichnistraversierung ist der Versuch, in einem System durch privilegierte Ordner zu navigieren, in der Hoffnung, vertrauliche Informationen zu erhalten. |
+| USERAGENT | Angriffs-Tooling | Angriffs-Tooling ist der Einsatz automatisierter Software zur Identifizierung von Sicherheitslücken oder zum Versuch, eine entdeckte Anfälligkeit auszunutzen. |
+| LOG4J-JNDI | Log4J JNDI | Log4J JNDI-Angriffe versuchen, die [Log4Shell-Anfälligkeit](https://en.wikipedia.org/wiki/Log4Shell) in Log4J-Versionen vor 2.16.0 auszunutzen. |
+| BHH | Bad Hop Headers | Bad Hop Headers weisen auf einen HTTP-Schmuggelversuch durch einen fehlerhaften Transfer-Encoding(TE)- oder Content-Length(CL)-Header oder einen korrekt formatierten TE- und CL-Header hin. |
+| ABNORMALPATH | Anormaler Pfad | Anormaler Pfad bedeutet, dass der ursprüngliche Pfad vom normalisierten Pfad abweicht (z. B. `/foo/./bar` wird normalisiert in `/foo/bar`) |
+| DOUBLEENCODE | Doppelte Codierung | Bei der doppelten Codierung wird geprüft, ob HTML-Zeichen doppelt codiert werden |
+| NOTUTF8 | Ungültige Codierung | Eine ungültige Codierung kann dazu führen, dass der Server böswillige Zeichen aus einer Anfrage in eine Antwort übersetzt, was entweder zu einer Dienstverweigerung oder zu XSS führt |
+| JSON-ERROR | JSON-Codierungsfehler | Ein POST-, PUT- oder PATCH-Anfragetext, für den angegeben ist, dass er JSON in der Anfragekopfzeile „Inhaltstyp“ enthält, der jedoch JSON-Parsing-Fehler enthält. Dies hängt häufig mit einem Programmierfehler oder einer automatisierten oder schädlichen Anfrage zusammen. |
+| MALFORMED-DATA | Fehlerhafte Daten im Anfrageinhalt | Ein POST-, PUT- oder PATCH-Anfrageinhalt, der gemäß der Anfragekopfzeile „Inhaltstyp“ fehlerhaft ist. Wenn beispielsweise eine Anfragekopfzeile „Content-Type: application/x-www-form-urlencoded“ angegeben ist und ein POST-Hauptteil vorliegt, der JSON ist. Dies ist häufig ein Programmierfehler, eine automatisierte oder schädliche Anfrage. Erfordert Agent 3.2 oder höher. |
+| SANS | Schädlicher IP-Traffic | Liste von IP-Adressen vom [SANS Internet Storm Center](https://isc.sans.edu/), von denen berichtet wurde, dass sie an bösartigen Aktivitäten beteiligt waren |
+| SIGSCI-IP | Netzwerkeffekt | Von SignalSciences gekennzeichnet: Jedes Mal, wenn eine IP aufgrund eines schädlichen Signals von der Entscheidungs-Engine gekennzeichnet wird, wird diese IP an alle Kundinnen und Kunden weitergeleitet. Nachfolgende Anfragen von denjenigen IP-Adressen, die ein zusätzliches Signal für die Dauer der Markierung enthalten, werden dann protokolliert |
+| NO-CONTENT-TYPE | Fehlende Anfragekopfzeile „Content-Type“ | Eine Anfrage vom Typ POST, PUT oder PATCH, die keine Anfragekopfzeile vom Typ „Content-Type“ enthält. Standardmäßig sollten Anwendungs-Server in diesem Fall von „Content-Type: text/plain; charset=us-ascii“ ausgehen. Bei vielen automatisierten und böswilligen Anfragen fehlt möglicherweise „Content-Type“. |
+| NOUA | Kein Benutzeragent | Viele automatisierte und schädliche Anfragen verwenden gefälschte oder fehlende Benutzeragenten, um die Identifizierung des Gerätetyps zu erschweren, der die Anfragen stellt. |
+| TORNODE | Tor-Traffic | Tor ist eine Software, die die Identität einer Benutzerin oder eines Benutzers verschleiert. Eine Spitze im Tor-Traffic kann darauf hinweisen, dass eine angreifende Person versucht, ihren Standort zu verschleiern. |
+| NULLBYTE | Null-Byte | Null-Bytes werden normalerweise nicht in einer Anfrage angezeigt und weisen darauf hin, dass die Anfrage falsch formatiert ist und möglicherweise schädlich ist. |
+| PRIVATEFILE | Private Dateien | Private Dateien sind normalerweise vertraulich, wie z. B. eine Apache `.htaccess`-Datei oder eine Konfigurationsdatei, der vertrauliche Informationen entnommen werden könnten. |
+| SCANNER | Scanner | Identifiziert beliebte Scan-Dienste und -Werkzeuge |
+| RESPONSESPLIT | HTTP-Antwortaufteilung | Gibt an, wann CRLF-Zeichen als Eingabe an die Anwendung gesendet werden, um Kopfzeilen in die HTTP-Antwort einzufügen. |
+| XML-ERROR | XML-Codierungsfehler | Ein POST-, PUT- oder PATCH-Anfrageinhalt, für den in der Anfragekopfzeile angegeben wird, dass der „Content-Type“ XML enthält, der jedoch XML-Parsing-Fehler aufweist. Dies hängt häufig mit einem Programmierfehler oder einer automatisierten oder schädlichen Anfrage zusammen. |
 
 ## Überlegungen {#considerations}
 
-* Wenn zwei in Konflikt stehende Regeln erstellt werden, haben die Zulassungsregeln immer Vorrang vor den Blockregeln. Wenn Sie beispielsweise eine Regel erstellen, die einen bestimmten Pfad blockiert, und eine Regel, die eine bestimmte IP-Adresse zulässt, sind Anforderungen von dieser IP-Adresse auf dem blockierten Pfad zulässig.
+* Wenn zwei in Konflikt stehende Regeln erstellt werden, haben die Zulassungsregeln immer Vorrang vor den Blockierungsregeln. Wenn Sie beispielsweise eine Regel erstellen, die einen bestimmten Pfad blockiert, und eine Regel, die eine bestimmte IP-Adresse zulässt, sind Anfragen von dieser IP-Adresse auf dem blockierten Pfad zulässig.
 
-* Wenn eine Regel abgeglichen und blockiert wird, antwortet das CDN mit einer `406` Rückgabe-Code.
+* Wenn eine Regel abgeglichen und blockiert wird, antwortet das CDN mit einem `406`-Rückgabe-Code.
 
-* Die Konfigurationsdateien sollten keine Geheimnisse enthalten, da sie von allen Benutzern gelesen werden können, die Zugriff auf das Git-Repository haben.
+* Die Konfigurationsdateien sollten keine Geheimnisse enthalten, da sie von allen Benutzenden gelesen werden können, die Zugriff auf das Git-Repository haben.
 
 * In Cloud Manager definierte IP-Zulassungslisten haben Vorrang vor Traffic-Filter-Regeln.
 
@@ -285,11 +286,11 @@ Die `wafFlags` -Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln 
 
 ## Regelbeispiele {#examples}
 
-Es folgen einige Regelbeispiele. Siehe [Ratenbegrenzungsabschnitt](#rules-with-rate-limits) weiter unten für Beispiele für Regeln zur Begrenzung der Steuersätze.
+Es folgen einige Regelbeispiele. Siehe den [Abschnitt „Ratenbegrenzung](#rules-with-rate-limits) weiter unten, um Beispiele für Ratenbegrenzungsregeln zu erhalten.
 
 **Beispiel 1**
 
-Diese Regel blockiert Anforderungen aus IP 192.168.1.1:
+Diese Regel blockiert Anfragen von der IP 192.168.1.1:
 
 ```
 kind: "CDN"
@@ -307,7 +308,7 @@ data:
 
 **Beispiel 2**
 
-Diese Regel blockiert Anforderungen für den Pfad `/helloworld` bei Veröffentlichung mit einem Benutzeragenten, der Chrome enthält:
+Diese Regel blockiert Anfragen auf dem Pfad `/helloworld` bei Veröffentlichung mit einem Benutzeragenten, der Chrome enthält:
 
 ```
 kind: "CDN"
@@ -329,7 +330,7 @@ data:
 
 **Beispiel 3**
 
-Diese Regel blockiert Anforderungen, die den Abfrageparameter enthalten `foo`, aber erlaubt jede Anfrage von IP 192.168.1.1:
+Diese Regel blockiert Anfragen, die den Abfrageparameter `foo` enthalten, erlaubt jedoch jede Anfrage von der IP 192.168.1.1:
 
 ```
 kind: "CDN"
@@ -351,7 +352,7 @@ data:
 
 **Beispiel 4**
 
-Diese Regel blockiert Anforderungen an den Pfad `/block-me`und blockiert alle Anforderungen, die mit einer `SQLI` oder `XSS` Muster. Dieses Beispiel enthält eine WAF-Traffic-Filterregel, die auf die Variable `SQLI` und `XSS` [WAF-Flags](#waf-flags-list)und erfordert daher eine separate Lizenz.
+Diese Regel blockiert Anfragen an den Pfad `/block-me` und blockiert alle Anfragen, die mit einem `SQLI`- oder `XSS`-Muster übereinstimmen. Dieses Beispiel enthält eine WAF-Traffic-Filterregel, die auf [WAF-Flags](#waf-flags-list) `SQLI` und `XSS` verweist und daher eine separate Lizenz erfordert.
 
 ```
 kind: "CDN"
@@ -406,29 +407,29 @@ data:
         action: block
 ```
 
-## Regeln für Ratenbegrenzungen {#rate-limits-rules}
+## Ratenbegrenzungsregeln {#rate-limits-rules}
 
-Manchmal ist es wünschenswert, Traffic zu blockieren, wenn er eine bestimmte Rate eingehender Anfragen überschreitet, möglicherweise basierend auf einer bestimmten Bedingung. Festlegen eines Werts für `rateLimit` -Eigenschaft begrenzt die Rate der Anforderungen, die mit der Regelbedingung übereinstimmen.
+Manchmal ist es wünschenswert, Traffic zu blockieren, wenn er eine bestimmte Rate eingehender Anfragen überschreitet, möglicherweise basierend auf einer bestimmten Bedingung. Wenn Sie einen Wert für die Eigenschaft `rateLimit` festlegen, wird die Rate der Anfragen, die mit der Regelbedingung übereinstimmen, begrenzt.
 
-Regeln für die Begrenzung von Werten können nicht auf WAF-Flags verweisen. Sie stehen allen Sites- und Forms-Kunden zur Verfügung.
+Ratenbegrenzungsregeln können nicht auf WAF-Flags verweisen. Sie stehen allen Kundinnen und Kunden von Sites und Forms zur Verfügung.
 
-Die Ratenbeschränkungen werden pro CDN POP berechnet. Nehmen wir beispielsweise an, POPs in Montreal, Miami und Dublin weisen Traffic-Raten von 80, 90 bzw. 120 Anforderungen pro Sekunde auf und die Ratenbegrenzungsregel ist auf einen Grenzwert von 100 festgelegt. In diesem Fall wäre nur der Verkehr nach Dublin begrenzt.
+Die Ratenbegrenzungen werden pro CDN-POP berechnet. Nehmen wir beispielsweise an, POPs in Montreal, Miami und Dublin weisen Traffic-Raten von 80, 90 bzw. 120 Anfragen pro Sekunde auf und die Ratenbegrenzungsregel ist auf einen Grenzwert von 100 festgelegt. In diesem Fall wäre nur der Traffic nach Dublin begrenzt.
 
 ### rateLimit-Struktur {#ratelimit-structure}
 
 | **Eigenschaft** | **Typ** | **Standard** | **BEDEUTUNG** |
 |---|---|---|---|
-| limit | Ganzzahl von 10 bis 10000 | erforderlich | Anforderungsrate (pro CDN POP) in Anforderungen pro Sekunde, für die die Regel ausgelöst wird. |
-| window | Ganzzahl-Enum: 1, 10 oder 60 | 10 | Stichprobenfenster in Sekunden, für die die Anforderungsrate berechnet wird. Die Genauigkeit der Zähler hängt von der Größe des Fensters ab (größere Genauigkeit des Fensters). Beispielsweise kann man eine Genauigkeit von 50 % für das 1-Sekunden-Fenster und eine Genauigkeit von 90 % für das 60-Sekunden-Fenster erwarten. |
-| Sanktion | Ganzzahl von 60 bis 3600 | 300 (5 Minuten) | Ein Zeitraum in Sekunden, für den übereinstimmende Anforderungen blockiert werden (auf die nächste Minute gerundet). |
-| groupBy | array[Getter] | keine | Der Zähler der Ratenbegrenzer wird durch eine Reihe von Anforderungseigenschaften aggregiert (z. B. clientIp). |
+| limit | Ganzzahl von 10 bis 10.000 | erforderlich | Anfragerate (pro CDN-POP) in Anfragen pro Sekunde, für die die Regel ausgelöst wird. |
+| window | Ganzzahl: 1, 10 oder 60 | 10 | Stichprobenfenster in Sekunden, für das die Anfragerate berechnet wird. Die Genauigkeit der Zähler hängt von der Größe des Fensters ab (ein größeres Fenster liefert höhere Genauigkeit). Beispielsweise kann man eine Genauigkeit von 50 % für das 1-Sekunden-Fenster und eine Genauigkeit von 90 % für das 60-Sekunden-Fenster erwarten. |
+| penalty | Ganzzahl von 60 bis 3600 | 300 (5 Minuten) | Ein Zeitraum in Sekunden, für den übereinstimmende Anfragen blockiert werden (auf die nächste Minute gerundet). |
+| groupBy | array[Getter] | keine | Der Zähler der Ratenbegrenzer wird durch eine Reihe von Anfrageeigenschaften aggregiert (z. B. clientIp). |
 
 
 ### Beispiele {#ratelimiting-examples}
 
 **Beispiel 1**
 
-Diese Regel blockiert einen Client für 5 m, wenn er in den letzten 60 Sekunden 100 Req/Sek (pro CDN POP) übersteigt:
+Diese Regel blockiert einen Client für 5 Minuten, wenn er in den letzten 60 Sekunden 100 Anfragen/Sek. (pro CDN-POP) überschreitet:
 
 ```
 kind: "CDN"
@@ -453,7 +454,7 @@ data:
 
 **Beispiel 2**
 
-Blockanfragen für 60 s für den Pfad /critical/resource , wenn er in den letzten 60 Sekunden 100 Req/Sek (pro CDN POP) überschreitet:
+Blockiert Anfragen für 60 s für den Pfad /critical/resource, wenn er in den letzten 60 Sekunden 100 Anfragen/Sek. (pro CDN-POP) überschreitet:
 
 ```
 kind: "CDN"
@@ -472,11 +473,11 @@ data:
 
 ## CDN-Protokolle {#cdn-logs}
 
-AEM as a Cloud Service bietet Zugriff auf CDN-Protokolle, die für Anwendungsfälle nützlich sind, einschließlich der Optimierung der Cache-Trefferquote und der Konfiguration von Traffic-Filterregeln. CDN-Protokolle werden in Cloud Manager angezeigt **Protokolle herunterladen** angezeigt, wenn Sie den Autoren- oder Veröffentlichungsdienst auswählen.
+AEM as a Cloud Service bietet Zugriff auf CDN-Protokolle, die für Anwendungsfälle nützlich sind, einschließlich der Optimierung der Cache-Trefferquote und der Konfiguration von Traffic-Filterregeln. CDN-Protokolle werden im Cloud Manager-Dialog **Protokolle herunterladen** angezeigt, wenn Sie den Author- oder Publish-Service auswählen.
 
 Beachten Sie, dass sich CDN-Protokolle möglicherweise um bis zu 5 Minuten verzögern.
 
-Die `rules` -Eigenschaft beschreibt, welche Traffic-Filterregeln übereinstimmen, und weist folgendes Muster auf:
+Die Eigenschaft `rules` beschreibt, welche Traffic-Filterregeln übereinstimmen, und weist folgendes Muster auf:
 
 ```
 "rules": "match=<matching-customer-named-rules-that-are-matched>,waf=<matching-WAF-rules>,action=<action_type>"
@@ -490,14 +491,14 @@ Beispiel:
 
 Die Regeln verhalten sich wie folgt:
 
-* Der vom Kunden deklarierte Regelname aller übereinstimmenden Regeln wird im `match` -Attribut.
-* Die `action` bestimmt, ob die Regeln blockiert, zugelassen oder protokolliert wurden.
-* Wenn die WAF lizenziert und aktiviert ist, wird die `waf` -Attribut listet alle WAF-Flags (z. B. SQLI) auf, die erkannt wurden, unabhängig davon, ob die WAF-Flags in irgendwelchen Regeln aufgeführt wurden. Dies soll Einblicke in potenzielle neue Regeln für die Deklarierung bieten.
-* Wenn keine vom Kunden deklarierten Regeln übereinstimmen und keine WAF-Regeln übereinstimmen, wird die `rules` -Eigenschaft leer ist.
+* Der auf Kundenseite deklarierte Regelname aller übereinstimmenden Regeln wird im Attribut `match` aufgeführt.
+* Das Attribut `action` bestimmt, ob die Regeln zum Blockieren, Zulassen oder Protokollieren führen.
+* Wenn die WAF lizenziert und aktiviert ist, listet das Attribut `waf` alle WAF-Flags (z. B. SQLI) auf, die erkannt wurden, unabhängig davon, ob die WAF-Flags in Regeln aufgeführt wurden. Dies soll Aufschluss über potenzielle neue Regeln geben, die deklariert werden können.
+* Wenn keine auf Kundenseite deklarierten Regeln übereinstimmen und keine WAF-Regeln übereinstimmen, ist die Eigenschaft `rules` leer.
 
 Wie bereits erwähnt, erscheinen WAF-Regelübereinstimmungen nur in CDN-Protokollen für CDN-Fehlschläge und -Übermittlungen, nicht aber für Treffer.
 
-Das folgende Beispiel zeigt ein Beispiel `cdn.yaml` und zwei CDN-Protokolleinträge:
+Das folgende Beispiel zeigt eine beispielhafte `cdn.yaml` und zwei CDN-Protokolleinträge:
 
 
 ```
@@ -564,33 +565,33 @@ Nachfolgend finden Sie eine Liste der in CDN-Protokollen verwendeten Feldnamen s
 
 | **Feldname** | **Beschreibung** |
 |---|---|
-| *timestamp* | Der Zeitpunkt, zu dem die Anfrage nach TLS-Beendigung gestartet wurde. |
-| *ttfb* | Abkürzung für *Zeit bis zum ersten Byte*. Das Zeitintervall zwischen der Anfrage begann bis zu dem Punkt, an dem der Antworttext mit dem Streaming begann. |
+| *timestamp* | Der Zeitpunkt, zu dem die Anfrage nach der TLS-Beendigung gestartet wurde. |
+| *ttfb* | Abkürzung für *Time To First Byte*. Das Zeitintervall vom Start der Anfrage bis zu dem Punkt, an dem das Streamen des Antworttexts begann. |
 | *cli_ip* | Die Client-IP-Adresse. |
-| *cli_country* | Zweibuchstaben [ISO 3166-1](https://de.wikipedia.org/wiki/ISO_3166-1) Alpha-2-Ländercode für das Client-Land. |
-| *rid* | Der -Wert des Anforderungsheaders, der zur eindeutigen Identifizierung der Anfrage verwendet wird. |
-| *req_ua* | Der Benutzeragent, der für die Ausführung einer bestimmten HTTP-Anforderung verantwortlich ist. |
-| *host* | Die Behörde, für die der Antrag bestimmt ist. |
+| *cli_country* | Der Alpha-2-Ländercode gemäß [ISO 3166-1](https://de.wikipedia.org/wiki/ISO_3166-1) mit zwei Buchstaben für das Client-Land. |
+| *rid* | Der Wert der Anfragekopfzeile, der zur eindeutigen Identifizierung der Anfrage verwendet wird. |
+| *req_ua* | Der Benutzeragent, der für die Ausführung einer bestimmten HTTP-Anfrage verantwortlich ist. |
+| *host* | Die Stelle, für die die Anfrage bestimmt ist. |
 | *url* | Der vollständige Pfad, einschließlich Abfrageparametern. |
-| *method* | Vom Client gesendete HTTP-Methode, z. B. &quot;GET&quot;oder &quot;POST&quot;. |
-| *res_ctype* | Der Content-Type, der den ursprünglichen Medientyp der Ressource angibt. |
-| *cache* | Status des Caches. Mögliche Werte sind HIT, MISS oder PASS |
-| *status* | Der HTTP-Statuscode als ganzzahliger Wert. |
-| *res_age* | Die Zeit (in Sekunden), die eine Antwort zwischengespeichert wurde (in allen Knoten). |
-| *pop* | Rechenzentrum des CDN-Cache-Servers |
-| *Regeln* | Der Name aller übereinstimmenden Regeln.<br><br>Gibt auch an, ob die Übereinstimmung zu einem Block führte. <br><br>Beispiel: &quot;`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`&quot;<br><br>Leer, wenn keine Regeln übereinstimmten. |
+| *Methode* | Die vom Client gesendete HTTP-Methode, z. B. „GET“ oder „POST“. |
+| *res_ctype* | Der Content-Typ, der den ursprünglichen Medientyp der Ressource angibt. |
+| *cache* | Der Status des Caches. Mögliche Werte sind HIT, MISS oder PASS |
+| *status* | Der HTTP-Status-Code als ganzzahliger Wert. |
+| *res_age* | Die Zeit in Sekunden, für die eine Antwort zwischengespeichert wurde (in allen Knoten). |
+| *pop* | das Rechenzentrum des CDN-Cache-Servers |
+| *rules* | Der Name aller übereinstimmenden Regeln.<br><br>Gibt auch an, ob die Übereinstimmung zu einer Blockierung führte. <br><br>Beispiel: „`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`“ <br><br>Leer, wenn keine Regeln übereinstimmten. |
 
-## Dashboard-Tooling {#dashboard-tooling}
+## Dashboard-Tools {#dashboard-tooling}
 
-Adobe bietet einen Mechanismus zum Herunterladen von Dashboard-Tools auf Ihren Computer, um CDN-Protokolle zu erfassen, die über Cloud Manager heruntergeladen wurden. Mit diesem Tool können Sie Ihren Traffic analysieren, um die entsprechenden Traffic-Filterregeln zu finden, die deklariert werden können, einschließlich WAF-Regeln.
+Adobe bietet einen Mechanismus zum Herunterladen von Dashboard-Tools auf Ihren Computer, um CDN-Protokolle zu erfassen, die über Cloud Manager heruntergeladen wurden. Mit diesen Tools können Sie Ihren Traffic analysieren, um die entsprechenden Traffic-Filterregeln zu finden, die deklariert werden können, einschließlich WAF-Regeln.
 
-Dashboard-Tools können direkt aus dem [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) GitHub-Repository
+Dashboard-Tools können direkt aus dem GitHub-Repository [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) heruntergeladen werden.
 
-[Siehe Tutorial](#tutorial) für konkrete Anweisungen zur Verwendung der Dashboard-Werkzeuge.
+[Siehe das Tutorial](#tutorial) für konkrete Anweisungen zur Verwendung der Dashboard-Tools.
 
-## Empfohlene Startregeln {#recommended-starter-rules}
+## Empfohlene Anfangsregeln {#recommended-starter-rules}
 
-Sie können die unten empfohlenen Regeln in Ihre `cdn.yaml` um zu beginnen. Starten Sie im Protokollmodus, analysieren Sie Ihren Traffic und wechseln Sie, wenn Sie zufrieden sind, in den Blockmodus. Sie können die Regeln auf Grundlage der einzigartigen Merkmale des Live-Traffics Ihrer Website ändern.
+Sie können für den Anfang die folgenden empfohlenen Regeln in Ihre `cdn.yaml` kopieren. Starten Sie im Protokollmodus, analysieren Sie Ihren Traffic und wechseln Sie, wenn Sie zufrieden sind, in den Blockierungsmodus. Sie können die Regeln auf Grundlage der einzigartigen Merkmale des Live-Traffics Ihrer Website ändern.
 
 ```
 kind: "CDN"
@@ -674,12 +675,12 @@ data:
 
 ## Tutorial {#tutorial}
 
-[Arbeiten durch ein Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) um praktische Kenntnisse und Erfahrungen im Zusammenhang mit Traffic-Filterregeln zu sammeln.
+[Arbeiten Sie ein Tutorial durch](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=de), um praktische Kenntnisse und Erfahrungen im Zusammenhang mit Traffic-Filterregeln zu sammeln.
 
-Das Tutorial führt Sie durch:
+Das Tutorial führt Sie durch Folgendes:
 
-* Einrichten der Cloud Manager-Konfigurationspipeline
+* Einrichten der Konfigurations-Pipeline für Cloud Manager
 * Verwenden von Tools zur Simulation von schädlichem Traffic
 * Definieren von Traffic-Filterregeln, einschließlich WAF-Regeln
-* Analyse der Ergebnisse mit Dashboard-Tools
+* Analyse von Ergebnissen mit Dashboard-Tools
 * Best Practices
