@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: e7e565556b382a662fb8afc5aadaa26d2357e294
+source-git-commit: 2f0a7171f93bb5bc947dba5edb59a8e0e538e052
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 11%
+source-wordcount: '1130'
+ht-degree: 12%
 
 ---
 
@@ -101,9 +101,6 @@ Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Releas
 * FORMS-11206: Wenn ein Benutzer versucht, einen Veröffentlichungs-Workflow für ein adaptives Formular zu planen, funktioniert er nicht wie erwartet.
 * FORMS-11546: Der Lighthouse hat eine fehlende ARIA-Beschriftung für wiederholte Bedienfelder in einem adaptiven Formular erkannt, was sich auf die Barrierefreiheit auswirkt.
 * FORMS-11095: Das ARIA-Attribut wurde falsch für Telefonnummer, E-Mail-Adresse und Zahlenfelder definiert, was zu Zugänglichkeitsproblemen führt.
-* FORMS-9894: Die Output Service-API generiert einen falschen Fehlercode, wenn ein Benutzer einen ungültigen Repository-Pfad bereitstellt, was für Benutzer, die dieses Problem bemerken, zu Verwirrung führt.
-* FORMS-11404: Der ImportData-Dienst weist beim Zusammenführen verschiedener XML-Daten mit einer Reader-erweiterten PDF ein inkonsistentes Verhalten auf. Insbesondere werden die Reader-Erweiterungseigenschaften für ein Ausgabedokument erfolgreich beibehalten, dies ist jedoch für andere Ausgabe-PDF-PDF nicht möglich.
-
 
 ### Bekannte Probleme {#known-issues-14157}
 
