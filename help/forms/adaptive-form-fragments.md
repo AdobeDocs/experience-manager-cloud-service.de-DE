@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: cf7c9fc3f254628f2efee2e00ed295e038d17c99
+source-git-commit: 1835559f9becea5f79d179be9b01efbe67c82151
 workflow-type: tm+mt
-source-wordcount: '2147'
+source-wordcount: '2148'
 ht-degree: 89%
 
 ---
@@ -173,7 +173,7 @@ Sie können ein schemabasiertes Formularfragment mehrmals in einem adaptiven For
 
 >[!NOTE]
 >
-> Wenn Sie nicht-basierte Formularfragmente mehrmals in einem adaptiven Formular verwenden, erfolgt eine Datensynchronisation zwischen den Feldern der Fragmente. Sie können eine [Formularfragment (basierend auf Kernkomponenten)](/help/forms/adaptive-form-fragments-core-components.md) das nicht mehrmals an ein Formulardatenmodell in einem Formular gebunden ist, ohne dass Probleme mit der Datensynchronisierung auftreten.
+> Wenn Sie nicht-basierte Formularfragmente mehrmals in einem adaptiven Formular verwenden, tritt ein Problem bei der Datensynchronisierung zwischen den Feldern der Fragmente auf. Sie können eine [Formularfragment (basierend auf Kernkomponenten)](/help/forms/adaptive-form-fragments-core-components.md) die nicht an ein Formulardatenmodell gebunden sind, mehrmals in einem Formular, ohne dass Probleme mit der Datensynchronisierung auftreten.
 
 ## Automatisches Zuordnen von Fragmenten für die Datenbindung {#auto-mapping-of-fragments-for-data-binding}
 
