@@ -2,9 +2,9 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 2f0a7171f93bb5bc947dba5edb59a8e0e538e052
+source-git-commit: a8651a44300772b5c9706a5fd85e7fefef72e47d
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1124'
 ht-degree: 12%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 12%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 14157 {#release-14157}
+## Version 14227 {#release-14227}
 
-Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Release 14157 zusammengefasst, das am 7. November 2023 veröffentlicht wurde. Diese Wartungsversion ist eine Aktualisierung der vorherigen Wartungsversion 14029.
+Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Release 14227 zusammengefasst, das am 9. November 2023 veröffentlicht wurde. Diese Wartungsversion ist eine Aktualisierung der vorherigen Wartungsversion 14029. Das Maintenance Release 14227 ersetzt 14157, um ein Problem zu beheben.
 
 2023.11.0: Die Funktionsaktivierung bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de).
 
-### Verbesserungen {#enhancements-14157}
+### Verbesserungen {#enhancements-14227}
 
 * ASSETS-29631: Assets Cloud: Verwenden Sie dam:roles für sichere Bereitstellung/Suche.
 * CQ-4354515: Übersetzungen: Option zur Unterdrückung der Übersetzung referenzierter Ressourcen.
@@ -40,7 +40,7 @@ Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Releas
 * SITES-16545: Inhaltsfragmente: Fügen Sie einen Endpunkt zum Abrufen der Verweise auf die Variante eines Inhaltsfragments hinzu.
 * SITES-16853: Inhaltsfragmente: Entfernen Sie /adobe/sites/cf/fragments/{fragmentId}/variation/{name}/tags -Endpunkt.
 
-### Behobene Probleme {#fixed-issues-14157}
+### Behobene Probleme {#fixed-issues-14227}
 
 * Verschiedene Probleme mit der Barrierefreiheit behoben
 * ASSETS-31015: Dateien können nicht in Assets mit unbekannten Dateierweiterungen hochgeladen werden.
@@ -85,7 +85,6 @@ Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Releas
 * SITES-16243: Inhaltsfragmente: Suchen und Ersetzen funktioniert nicht mit Feldern mit &quot;Render as: Multiple&quot;.
 * SITES-16250: Inhaltsfragmente: Beim Patchen eines CF wird manchmal eine falsche eTag-Kopfzeile zurückgegeben.
 * SITES-16686: Inhaltsfragmente: Inhaltsfragmente, die keine Fragmente sind, werden serialisiert, wenn die übergeordnete Referenz die maximale Tiefe erreicht.
-* SITES-16234: ContextHub: Korrekter Name der ausgewählten Markenaktivität wird beim Start des Targeting nicht angezeigt.
 * SITES-12880: Fast-Track: Fix-Lokalisierung für Sites > Einrichten von Analytics.
 * SITES-16103: Experience Fragments: Target-Optionen werden aufgrund eines Konsolenfehlers nicht unter Cloud Services angezeigt.
 * SITES-16001: MSM: Fähigkeit, Komponenten mit mehreren Feldern bei der Erstellung von Live Copy aus der Rollout-Konfiguration auszuschließen.
@@ -102,11 +101,11 @@ Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Releas
 * FORMS-11546: Der Lighthouse hat eine fehlende ARIA-Beschriftung für wiederholte Bedienfelder in einem adaptiven Formular erkannt, was sich auf die Barrierefreiheit auswirkt.
 * FORMS-11095: Das ARIA-Attribut wurde falsch für Telefonnummer, E-Mail-Adresse und Zahlenfelder definiert, was zu Zugänglichkeitsproblemen führt.
 
-### Bekannte Probleme {#known-issues-14157}
+### Bekannte Probleme {#known-issues-14227}
 
 Keine
 
-### Eingebettete Technologien {#embedded-tech-14157}
+### Eingebettete Technologien {#embedded-tech-14227}
 
 | Technologie | Version | Link |
 |---|---|---|
