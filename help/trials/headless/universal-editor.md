@@ -4,12 +4,13 @@ description: Erfahren Sie, wie Sie mit dem universellen Editor beliebige Aspekte
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 226df8999d1344ffe8acb2a9ce75b58634300a11
+source-git-commit: 2c7ad41ec44ed2627bfcfe206c1b7ba660cef9c0
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '977'
 ht-degree: 11%
 
 ---
+
 
 # Bearbeiten im Kontext mit dem universellen Editor {#editing-in-context}
 
@@ -38,11 +39,11 @@ Die Bearbeitung an Ort und Stelle und im Kontext kann häufig von Vorteil gegen�
 
 Mit dem universellen Editor können Sie Ihren Text im Kontext und an Ort und Stelle flexibel bearbeiten und so einfache und intuitive Inhaltserstellung ermöglichen.
 
-1. Der Editor sollte standardmäßig in **Text** -Modus. Wenn nicht, tippen oder klicken Sie auf die **Text** in der Modusleiste auf der linken Seite des Editors.
+1. Der Editor sollte standardmäßig in **Komponenten** -Modus. Wenn nicht, tippen oder klicken Sie auf die **Komponenten** in der Modusleiste auf der linken Seite des Editors.
 
-1. Tippen oder klicken Sie auf den Titel des neuesten Artikels, um ihn zu bearbeiten.
+1. Doppeltippen oder klicken Sie auf den Titel des neuesten Artikels, um ihn zu bearbeiten.
 
-   ![Der Universal Editor](assets/do-not-localize/ue-text-mode.png)
+   ![Der Universal Editor](assets/do-not-localize/ue-component-mode.png)
 
 1. Die Komponente wird wie durch einen blauen Rand ausgewählt, wobei eine Registerkarte angibt, dass es sich um eine Textkomponente handelt. Ein Cursor befindet sich im Rahmen, der auf die Texteingabe wartet. Ändern Sie den Text in `Aloha Spirit in Lofoten`.
 
@@ -56,11 +57,9 @@ Der Universal Editor speichert Ihre Änderungen automatisch in der Authoring-Umg
 
 Sie können auch Bilder austauschen, während sie im Kontext Ihres Inhalts verbleiben, indem Sie den universellen Editor verwenden.
 
-1. Ändern Sie den Editor in **Medien** Modus durch Tippen oder Klicken auf **Medien** in der Modusleiste.
+1. Verbleibend in **Komponenten** -Modus, tippen oder klicken Sie auf das Bild des Surfers, um es auszuwählen.
 
-1. Tippen oder klicken Sie auf das Bild des Surfers, um es auszuwählen.
-
-1. In der Komponentenleiste können Sie die Details des Assets sehen. Tippen oder klicken **Ersetzen**.
+1. In der Komponentenleiste können Sie die Details des Assets sehen. Tippen oder klicken Sie auf **Vorgestelltes Bild** Miniaturansicht.
 
    ![Auswählen eines zu bearbeitenden Bildes](assets/do-not-localize/ue-edit-media.png)
 
@@ -82,7 +81,7 @@ Mit dem universellen Editor können Sie mit Ihren Inhalten in ihrem Kontext inte
 
 1. Reader können sich auf verschiedenen Geräten mit unterschiedlichen Seitenverhältnissen befinden, sodass der Editor Emulationsmodi anbietet, um zu sehen, wie die Seite Benutzern angezeigt wird. Wählen Sie beispielsweise die Mobilgeräteoption im Hochformat aus.
 
-   ![Menüelement &quot;Emulator&quot;](assets/do-not-localize/ue-emulator-3.png)
+   ![Menüelement &quot;Emulator&quot;](assets/do-not-localize/ue-emulator-2.png)
 
 1. Siehe Inhaltsänderung im Editor. Das Symbol für den Emulator ändert sich ebenfalls entsprechend dem Modus, in dem er sich befindet. Tippen oder klicken Sie auf eine beliebige Stelle außerhalb des Emulator-Menüs, um es zu schließen und mit Ihrem Inhalt zu interagieren.
 
@@ -118,12 +117,12 @@ Um das Authoring-Erlebnis für Inhalte zu beschleunigen, wenn die strukturierte 
 
 1. Wählen Sie in der Modusleiste links im Editor die Option **Komponenten**. Auf diese Weise können Sie Seitenkomponenten im Editor auswählen.
 
-1. Tippen oder klicken Sie auf eines der Abenteuer, um es auszuwählen.
+1. Tippen oder klicken Sie auf eines der Abenteuer, z. B. **Bali Surf Camp** , um sie auszuwählen.
 
-   * Beachten Sie den blauen Umriss der ausgewählten Komponente. Die Registerkarte sollte lesen **reference** wenn ein Inhaltsfragment ausgewählt ist.
+   * Beachten Sie den blauen Umriss der ausgewählten Komponente. Auf der Registerkarte sollte der Name des Inhaltsfragments angezeigt werden, wenn ein Inhaltsfragment ausgewählt wird. In diesem Fall **Bali Surf Camp**.
    * Da der universelle Editor die Auswahl eines beliebigen Objekts auf der Seite ermöglicht, können Komponenten, die Teil eines Inhaltsfragments sind, auch einzeln ausgewählt werden. Tippen oder klicken Sie an die Stelle in der Abbildung, um die gesamte Inhaltsfragment-Komponente auszuwählen.
 
-1. Eine neue **Bearbeiten** in der Modusleiste angezeigt. Tippen oder klicken Sie auf **Bearbeiten** -Symbol, um den Inhaltsfragment-Editor auf einer neuen Registerkarte zu öffnen.
+1. Die **Bearbeiten** wird in der Komponentenleiste angezeigt. Tippen oder klicken Sie auf **Bearbeiten** -Symbol, um den Inhaltsfragment-Editor auf einer neuen Registerkarte zu öffnen.
 
 ![Auswählen von Inhaltsfragmenten im universellen Editor](assets/do-not-localize/ue-content-fragments.png)
 
