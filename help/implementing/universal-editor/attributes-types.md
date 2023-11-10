@@ -2,12 +2,13 @@
 title: Attribute und Typen
 description: Erfahren Sie mehr über die Datenattribute und -typen, die der universelle Editor erfordert.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 87%
 
 ---
+
 
 # Attribute und Typen {#attributes-types}
 
