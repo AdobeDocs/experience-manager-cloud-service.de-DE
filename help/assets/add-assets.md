@@ -4,10 +4,10 @@ description: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as 
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 408fdf3cac2943fc6c8abfa8d3e94b212a1e455f
+source-git-commit: 5dfcf1c5484b978c1a778eb99a09421533234734
 workflow-type: tm+mt
-source-wordcount: '3211'
-ht-degree: 97%
+source-wordcount: '3179'
+ht-degree: 98%
 
 ---
 
@@ -58,7 +58,7 @@ Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich z
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-Um eine Datei (oder mehrere Dateien) hochzuladen, können Sie diese auf Ihrem Desktop auswählen und in der Benutzeroberfläche (Webbrowser) in den Zielordner ziehen. Sie können den Upload alternativ auch über die Benutzeroberfläche starten. [!DNL Experience Manager] kann Ordner mit mehr als 1000 Assets aufnehmen. Wenn Sie weitere Elemente in diesen Ordner mit bereits 1000 oder mehr vorhandenen Elementen hochladen möchten, kann dies zu Verzögerungen beim Hochladen oder Erstellen des neuen Ordners führen.
+Um eine Datei (oder mehrere Dateien) hochzuladen, können Sie diese auf Ihrem Desktop auswählen und in der Benutzeroberfläche (Webbrowser) in den Zielordner ziehen. Sie können den Upload alternativ auch über die Benutzeroberfläche starten.
 
 >[!IMPORTANT]
 >
