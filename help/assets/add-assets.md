@@ -4,10 +4,10 @@ description: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as 
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 4305b334afd3337b849d80e79ca4669802cd4be8
+source-git-commit: 408fdf3cac2943fc6c8abfa8d3e94b212a1e455f
 workflow-type: tm+mt
-source-wordcount: '3188'
-ht-degree: 98%
+source-wordcount: '3211'
+ht-degree: 97%
 
 ---
 
@@ -384,7 +384,7 @@ Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Sour
 
 * Der direkte binäre Upload ist eine neue Methode zum Hochladen von Assets. Sie wird standardmäßig von den Produktfunktionen und Clients wie der [!DNL Experience Manager]-Benutzeroberfläche, [!DNL Adobe Asset Link] und dem [!DNL Experience Manager]-Desktop-Programm unterstützt. Jeder benutzerdefinierte Code, der von den technischen Teams des Kunden angepasst oder erweitert wird, muss die neuen Kunde-APIs und Protokolle verwenden.
 
-* Adobe empfiehlt, in jedem Ordner unter [!DNL Experience Manager Assets] maximal 1.000 Assets hinzuzufügen. Sie können zwar mehr Assets zu einem Ordner hinzufügen, es können jedoch Leistungsprobleme auftreten, z. B. eine langsamere Navigation zu diesen Ordnern.
+* Adobe empfiehlt, in jedem Ordner unter [!DNL Experience Manager Assets] maximal 1.000 Assets hinzuzufügen. Wenn Sie dies versuchen, erhalten Sie möglicherweise eine Warnmeldung mit der Meldung: &quot;Dieses Verzeichnis enthält mehr als 1000 Elemente. Uploads und neue Ordnererstellungen können verzögert sein.&quot; Sie können einem Ordner zwar noch weitere Assets hinzufügen, es kann aber zu Leistungsproblemen kommen, wie z. B. einer langsameren Navigation zu diesen Ordnern.
 
 * Wenn Sie die Option **[!UICONTROL Ersetzen]** im Dialogfeld [!UICONTROL Namenskonflikt] auswählen, wird die Asset-ID für das neue Asset neu generiert. Diese ID unterscheidet sich von der ID des vorherigen Assets. Wenn [Asset Insights](/help/assets/assets-insights.md) zur Verfolgung von Impressions oder Klicks mit [!DNL Adobe Analytics] aktiviert ist, werden die für das Asset in [!DNL Analytics] erfassten Daten durch die erneut generierte Asset-ID ungültig.
 
