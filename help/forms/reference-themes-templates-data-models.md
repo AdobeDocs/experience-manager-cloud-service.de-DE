@@ -2,14 +2,20 @@
 title: Wie erhalten Sie Referenzthemen und Vorlagen für AEM Formulare?
 description: AEM Forms bietet Beispiel-Designs, Vorlagen und Formulardatenmodelle für adaptive Formulare, die Ihnen beim schnellen Erstellen von Formularen helfen.
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: dd0c45352ea402065c7c6fced1394849ed9c316c
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '864'
 ht-degree: 90%
 
 ---
 
 # Referenzthemen, Vorlagen und Formulardatenmodelle {#reference-themes-templates-and-data-models}
+
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| Kernkomponenten für adaptive Formulare | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 <span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
 
