@@ -2,10 +2,10 @@
 title: Cloud Manager-Repositorys
 description: Erfahren Sie, wie Sie Ihre Git-Repositorys in Cloud Manager erstellen, anzeigen und löschen.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: af8ab1f741c658dcb47bdf0d37e403fcb180631a
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 100%
+source-wordcount: '588'
+ht-degree: 96%
 
 ---
 
@@ -22,9 +22,11 @@ Erfahren Sie, wie Sie Ihre Git-Repositorys in Cloud Manager erstellen, anzeigen 
 
 Folgen Sie diesen Schritten, um Repositorys im Cloud Manager anzuzeigen und zu verwalten.
 
-1. Klicken Sie auf der Seite **Programmübersicht** auf die Registerkarte **Repositorys** und gehen Sie zur Seite **Repositorys**.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Klicken Sie auf **Repository hinzufügen**, um den Assistenten zu starten.
+1. Aus dem **Programmübersicht** Seite, tippen oder klicken Sie auf **Repositorys** Registerkarte, um zu der **Repositorys** Seite.
+
+1. Klicken Sie auf **Repository hinzufügen**.
 
    ![Schaltfläche „Repository hinzufügen“](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
 

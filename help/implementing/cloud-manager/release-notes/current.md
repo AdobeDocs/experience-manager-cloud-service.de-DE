@@ -1,19 +1,19 @@
 ---
-title: Versionshinweise für Cloud Manager 2023.10.0 in Adobe Experience Manager as a Cloud Service
-description: Dies sind die Versionshinweise für Cloud Manager 2023.10.0 in AEM as a Cloud Service.
+title: Versionshinweise für Cloud Manager 2023.11.0 in Adobe Experience Manager as a Cloud Service
+description: Dies sind die Versionshinweise für Cloud Manager 2023.11.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 36f7ece65c1312ff3ac463cd8c6abb2882b99043
+source-git-commit: b51b3c9aed4d9dacbf12a6cad5f8923d82766bd9
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 29%
+source-wordcount: '715'
+ht-degree: 14%
 
 ---
 
 
-# Versionshinweise für Cloud Manager 2023.10.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Versionshinweise für Cloud Manager 2023.11.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2023.10.0 in AEM as a Cloud Service.
+Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2023.11.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,24 +21,27 @@ Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2023.10.0 in A
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version 2023.10.0 von Cloud Manager in AEM as a Cloud Service wurde am 5. Oktober 2023 veröffentlicht. Die nächste Version ist für den 2. November 2023 geplant.
+Version 2023.11.0 von Cloud Manager in AEM as a Cloud Service wurde am 14. November 2023 veröffentlicht. Die nächste Version wurde am 7. Dezember 2023 veröffentlicht.
 
 ## Neue Funktionen {#what-is-new}
 
-* Verbesserungen bei [Indizierung](/help/operations/indexing.md) die Pipeline-Dauer bei der Bereitstellung neuer Indizes verkürzt haben.
-   * Verbesserungen variieren je nach Inhaltsprofil.
-* Automatisch [Aktualisierungen für Entwicklungsumgebungen](/help/implementing/cloud-manager/manage-environments.md#updating-environments) sind standardmäßig für neue Programme aktiviert, sodass Sie Zeit haben, Aktualisierungen manuell auszuführen.
-   * Diese Aktualisierung wird schrittweise durchgeführt.
-* Mit der Cloud Manager-Version Oktober 2023 werden Java-Versionen schrittweise aktualisiert.
-   * Die kleineren Versionen für Java 8 und 11 und Maven wurden aktualisiert und werden in den nächsten zwei Monaten schrittweise eingeführt. Die neue Version verfügt über mehrere Sicherheitskorrekturen und Fehlerbehebungen. Die neuen Versionen sind:
-      * **Maven:** `3.8.8`
-      * **Java 8-Version:** `/usr/lib/jvm/jdk1.8.0_371`
-      * **Java 11-Version:** `/usr/lib/jvm/jdk-11.0.20`
-   * [Siehe die OpenJDK-Beratung](https://openjdk.org/groups/vulnerability/advisories/) für Details zur Sicherheit und zu Fehlerbehebungen in diesen JDK-Updates.
+* Der Schutz der Web Application Firewall-DDOS (WAF-DDOS) ist jetzt im Rahmen Ihrer AEM as a Cloud Service Berechtigungen zum Kauf verfügbar. [kann auf Self-Service-Art konfiguriert werden.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+* Spezialisiert [Implementierungs-Pipelines konfigurieren](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Pipelines sind jetzt verfügbar, um Umgebungseinstellungen, Wartungsaufgaben, CDN-Regeln und mehr innerhalb von Minuten zu konfigurieren.
+* [Beim Kopieren von Inhalten](/help/implementing/developing/tools/content-copy.md) von einer höheren Umgebung in eine Entwicklungsumgebung zu übertragen, wird jetzt eine Meldung angezeigt, die beim Kopieren großer Inhaltssets Vorsicht weckt, da die Entwicklungsumgebungen nur über eine begrenzte Kapazität verfügen.
+* [Seite mit Details zur Pipelineausführung](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) zeigt nun alle Schritte in einer Pipeline-Ausführung an, bei denen die Schritte noch nicht ausgegraut wurden.
+* Bei beiden **[Aktivität](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** und **[Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** Seiten enthält, ist jetzt eine Zusammenfassung der Pipeline-Ausführung verfügbar, wenn auf eine Pipeline mit einem Ausführungsstatus geklickt wird.
+* Eine neue **Dauer** wurde zum Abschnitt [Pipeline-Detailseite](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) , die die durchschnittliche Dauer des Pipeline-Schritts basierend auf dem historischen Trend für dieses Programm enthält.
+* Auf der Seite zur Pipelineausführung zeigen die abgeschlossenen Schritte jetzt die Dauer an.
 
 ## Frühzeitige Annahme des Programms {#early-adoption}
 
 Nehmen Sie an unserem Programm teil und haben Sie die Möglichkeit, einige bevorstehende Funktionen zu testen.
+
+### Erstellen Sie Ihren eigenen GitHub {#byo-github}
+
+Wenn Sie Ihre Repositorys mit GitHub verwalten, [Sie können jetzt Code direkt in Ihren GitHub-Repositorys über Cloud Manager validieren.](/help/implementing/cloud-manager/managing-code/byo-github.md) Durch diese Integration entfällt die Notwendigkeit, Code konsistent mit dem Adobe-Repository zu synchronisieren, und Sie können Pull-Anforderungen überprüfen, bevor Sie sie in die Hauptverzweigungen zusammenführen.
+
+Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte eine E-Mail an `Grp-CloudManager_BYOG@adobe.com` von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse aus.
 
 ### Benutzerdefinierte Berechtigungen {#custom-permissions}
 

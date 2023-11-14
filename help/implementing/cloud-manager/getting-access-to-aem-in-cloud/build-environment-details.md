@@ -2,10 +2,10 @@
 title: Build-Umgebung
 description: Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie sie den Code erstellt und testet.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 08cb1b4fc74e03a931551042814afb2d722005a5
+source-git-commit: 7945d67fe7d258af7131076d2416cbe121354a62
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 91%
+source-wordcount: '1006'
+ht-degree: 97%
 
 ---
 
@@ -19,25 +19,21 @@ Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie s
 Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellungsumgebung.
 
 * Die Erstellungsumgebung ist Linux-basiert und von Ubuntu 18.04 abgeleitet.
-* Mit dem [Version von Cloud Manager, Oktober 2023](/help/implementing/cloud-manager/release-notes/current.md) Java- und Maven-Versionen werden laufend aktualisiert.
-   * Apache Maven 3.6.0 oder 3.8.8 ist installiert.
-   * Die installierten Java-Versionen sind Oracle JDK 8u202 und Oracle JDK 11.0.2. oder Oracle JDK 8u371 und Oracle JDK 11.0.20.
-   * Standardmäßig wird die Variable `JAVA_HOME` Umgebungsvariable auf `/usr/lib/jvm/jdk1.8.0_202` die Oracle JDK 8u202 oder `/usr/lib/jvm/jdk1.8.0_371` enthält Oracle JDK 8u371. Siehe [JDK-Version der alternativen Maven-Ausführung](#alternate-maven-jdk-version) für weitere Details.
+* Apache Maven 3.8.8 ist installiert.
+* Die installierten Java-Versionen sind Oracle JDK 8u371 und Oracle JDK 11.0.20.
+* Standardmäßig wird die Umgebungsvariable `JAVA_HOME` auf `/usr/lib/jvm/jdk1.8.0_371` festgelegt, was Oracle JDK 8u371 enthält. Siehe [JDK-Version der alternativen Maven-Ausführung](#alternate-maven-jdk-version) für weitere Details.
 * Es sind einige zusätzliche erforderliche Systempakete installiert.
-
    * `bzip2`
    * `unzip`
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-
 * Andere Pakete können zur Build-Zeit installiert werden, wie im Abschnitt [Installieren zusätzlicher Systempakete](#installing-additional-system-packages) beschrieben. 
 * Jeder Build wird in einer unberührten Umgebung erstellt, der Build-Container speichert zwischen den Ausführungen keinen Status.
 * Maven wird immer mit den folgenden drei Befehlen ausgeführt.
-
-* `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
-* `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
-* `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
+   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
+   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
+   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven wird auf Systemebene mit einer `settings.xml`-Datei konfiguriert, die automatisch das öffentliche Adobe-Artefakt-Repository enthält und ein Profil namens `adobe-public` verwendet. (Weitere Informationen dazu finden Sie im [Adobe Public Maven Repository](https://repo1.maven.org/)).
 
 >[!NOTE]
