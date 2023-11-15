@@ -2,18 +2,15 @@
 title: Traffic-Filterregeln, einschließlich WAF-Regeln
 description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 8df8322eef7c74932d6feeeb4a7a6045935edd88
+source-git-commit: a129c188e9ec6871c86245acb5f0bf0333fdc340
 workflow-type: tm+mt
-source-wordcount: '3473'
+source-wordcount: '3441'
 ht-degree: 97%
 
 ---
 
 
 # Traffic-Filterregeln, einschließlich WAF-Regeln {#traffic-filter-rules-including-waf-rules}
-
->[!NOTE]
->Diese Funktion ist jetzt in Entwicklungsumgebungen verfügbar, mit einem schrittweisen Rollout zu Staging- und Produktionsumgebungen im späteren November. Sie können einen früheren Zugriff auf Staging und Produktion per E-Mail anfordern, indem Sie eine E-Mail an **aemcs-waf-adopter@adobe.com** senden.
 
 Traffic-Filterregeln können verwendet werden, um Anforderungen auf der CDN-Ebene zu blockieren oder zuzulassen. Dies kann in Szenarien wie den folgenden nützlich sein:
 
