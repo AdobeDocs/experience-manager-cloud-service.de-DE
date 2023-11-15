@@ -3,9 +3,9 @@ title: Konfigurieren von produktionsfremden Pipelines
 description: Erfahren Sie, wie Sie produktionsfremde Pipelines so konfigurieren, dass die Qualität des Codes vor seiner Bereitstellung in Produktionsumgebungen getestet wird.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1288'
 ht-degree: 80%
 
 ---
@@ -121,7 +121,7 @@ Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile I
 >
 >* Wenn für die ausgewählte Umgebung bereits eine Web-Stufen-Code-Pipeline vorhanden ist, wird diese Auswahl deaktiviert.
 >* Wenn Sie über eine vorhandene Full-Stack-Pipeline verfügen, die in einer Umgebung bereitgestellt wird, wird beim Erstellen einer Web-Stufen-Konfigurations-Pipeline für dieselbe Umgebung die vorhandene Web-Stufen-Konfiguration in der Full-Stack-Pipeline ignoriert.
-> * Es kann immer nur eine Konfigurationsbereitstellungs-Pipeline pro Umgebung geben.
+> * Es kann immer nur eine Konfigurationspipeline pro Umgebung geben.
 
 Die Schritte zum Erstellen Ihrer nicht produktionsbezogenen, zielgerichteten Implementierungs-Pipeline sind dieselben, wenn Sie einen Bereitstellungstyp auswählen.
 
@@ -145,7 +145,7 @@ Die Schritte zum Erstellen Ihrer nicht produktionsbezogenen, zielgerichteten Imp
       * Geben Sie die ersten Zeichen des Verzweigungsnamens und die Funktion zur automatischen Vervollständigung dieses Felds ein. Es werden die entsprechenden auswählbaren Verzweigungen gesucht.
    * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
 
-   ![Konfigurationsbereitstellungs-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![Config-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
 
 1. Klicken Sie auf **Speichern**.
 

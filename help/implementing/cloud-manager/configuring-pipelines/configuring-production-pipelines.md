@@ -3,9 +3,9 @@ title: Konfigurieren von Produktions-Pipelines
 description: Erfahren Sie, wie Sie Produktions-Pipelines konfigurieren, um Ihren Code zu erstellen und in Produktionsumgebungen bereitzustellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: edc5d88b4ffc4e13299d21f6579f5f52c40e0773
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1418'
 ht-degree: 80%
 
 ---
@@ -132,7 +132,7 @@ Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile I
 >
 >* Wenn für die ausgewählte Umgebung bereits eine Web-Stufen-Code-Pipeline vorhanden ist, wird diese Auswahl deaktiviert.
 >* Wenn Sie über eine vorhandene Full-Stack-Pipeline verfügen, die in einer Umgebung bereitgestellt wird, wird beim Erstellen einer Web-Stufen-Konfigurations-Pipeline für dieselbe Umgebung die vorhandene Web-Stufen-Konfiguration in der Full-Stack-Pipeline ignoriert.
-> * Es kann immer nur eine Konfigurationsbereitstellungs-Pipeline pro Umgebung geben.
+> * Es kann immer nur eine Konfigurationspipeline pro Umgebung geben.
 
 Die Schritte zum Abschluss der Erstellung Ihrer Produktions- und Zielgruppen-Bereitstellungs-Pipeline sind dieselben, wenn Sie einen Bereitstellungstyp auswählen.
 
@@ -158,7 +158,7 @@ Die Schritte zum Abschluss der Erstellung Ihrer Produktions- und Zielgruppen-Ber
    * **Anhalten vor der Bereitstellung in der Produktion**: Diese Option setzt die Pipeline vor der Bereitstellung in der Produktion aus.
    * **Geplant**: Mit dieser Option kann der Benutzer die geplante Bereitstellung in der Produktionsumgebung aktivieren. Nur für zielgerichtete Bereitstellungen mit Webstufe verfügbar.
 
-   ![Konfigurationsbereitstellungs-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
+   ![Config-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
 1. Klicken Sie auf **Speichern**.
 

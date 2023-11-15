@@ -3,9 +3,9 @@ title: CI/CD-Pipelines
 description: Erfahren Sie mehr über die CI/CD-Pipelines in Cloud Manager und wie sie zur effizienten Bereitstellung Ihres Codes verwendet werden können.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1443'
 ht-degree: 92%
 
 ---
@@ -53,7 +53,7 @@ Eine produktionsfremde Pipeline dient hauptsächlich dazu, Code-Qualitätsprüfu
 Neben Produktion und produktionsfremd können Pipelines nach dem Typ des von ihnen bereitgestellten Codes unterschieden werden.
 
 * **[Full-Stack-Pipelines](#full-stack-pipeline)**: Gleichzeitiges Bereitstellen von Backend- und Frontend-Code-Builds mit einer oder mehreren AEM-Serveranwendungen zusammen mit HTTPD-/Dispatcher-Konfigurationen
-* **[Implementierungs-Pipelines konfigurieren](#config-deployment-pipeline)** - Konfigurieren Sie Einstellungen für Ihre AEM-Umgebung, Wartungsaufgaben, CDN-Regeln und mehr.
+* **[Config Pipelines](#config-deployment-pipeline)** - Konfigurieren Sie Einstellungen für Ihre AEM-Umgebung, Wartungsaufgaben, CDN-Regeln und mehr.
 * **[Frontend-Pipelines](#front-end)**: Bereitstellen von Frontend-Code-Builds mit einer oder mehreren Client-seitigen Benutzeroberflächenanwendungen
 * **[Web-Ebenen-Konfigurations-Pipelines](#web-tier-config-pipelines)**: Bereitstellung von HTTPD-/Dispatcher-Konfigurationen
 
@@ -111,15 +111,15 @@ Informationen zum Konfigurieren von Full-Stack-Pipelines finden Sie in den folge
 * [Hinzufügen einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
 * [Hinzufügen einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
 
-## Implementierungs-Pipelines konfigurieren {#config-deployment-pipeline}
+## Config Pipelines {#config-deployment-pipeline}
 
-Mit einer Konfigurationsbereitstellungs-Pipeline können Sie Konfigurationseinstellungen für Wartungsaufgaben, CDN-Regeln und mehr in Ihrer AEM Umgebung bereitstellen.
+Mit einer Konfigurationspipeline können Sie Konfigurationseinstellungen für Wartungsaufgaben, CDN-Regeln und mehr in Ihrer AEM bereitstellen.
 
 Lesen Sie das Dokument . [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md) , um zu erfahren, wie Sie die Konfigurationen in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
 
-### Konfigurieren von Pipelines für die Konfigurationsbereitstellung {#configure-config-deployment}
+### Konfigurieren von Konfigurations-Pipelines {#configure-config-deployment}
 
-Informationen zum Konfigurieren von Pipelines für die Konfigurationsbereitstellung finden Sie in den folgenden Dokumenten:
+Informationen zum Konfigurieren von Konfigurations-Pipelines finden Sie in den folgenden Dokumenten:
 
 * [Hinzufügen einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
 * [Hinzufügen einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
