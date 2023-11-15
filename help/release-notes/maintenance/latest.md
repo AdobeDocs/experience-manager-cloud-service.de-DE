@@ -2,9 +2,9 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: a8651a44300772b5c9706a5fd85e7fefef72e47d
+source-git-commit: 1a128e35be06d018ec25fb0e6a479cfd0d242dbd
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1114'
 ht-degree: 12%
 
 ---
@@ -21,7 +21,7 @@ Nachfolgend sind die kontinuierlichen Verbesserungen für das Maintenance Releas
 
 ### Verbesserungen {#enhancements-14227}
 
-* ASSETS-29631: Assets Cloud: Verwenden Sie dam:roles für sichere Bereitstellung/Suche.
+<!--* ASSETS-29631: Assets Cloud: Use dam:roles for secure delivery/search.-->
 * CQ-4354515: Übersetzungen: Option zur Unterdrückung der Übersetzung referenzierter Ressourcen.
 * FORMS-9993: Schritte zum Verschieben von Forms-Kernkomponenten in Skyline definieren.
 * FORMS-10570: Integrierte EC-APIs zur API - Erster Router.
