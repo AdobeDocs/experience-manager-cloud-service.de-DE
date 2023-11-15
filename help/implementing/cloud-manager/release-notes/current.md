@@ -3,9 +3,9 @@ title: Versionshinweise für Cloud Manager 2023.11.0 in Adobe Experience Manager
 description: Dies sind die Versionshinweise für Cloud Manager 2023.11.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: b51b3c9aed4d9dacbf12a6cad5f8923d82766bd9
+source-git-commit: 71746b00c2d4ee05126af54241db30a7d3aeab1c
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '750'
 ht-degree: 14%
 
 ---
@@ -31,7 +31,10 @@ Version 2023.11.0 von Cloud Manager in AEM as a Cloud Service wurde am 14. Nove
 * [Seite mit Details zur Pipelineausführung](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) zeigt nun alle Schritte in einer Pipeline-Ausführung an, bei denen die Schritte noch nicht ausgegraut wurden.
 * Bei beiden **[Aktivität](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** und **[Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** Seiten enthält, ist jetzt eine Zusammenfassung der Pipeline-Ausführung verfügbar, wenn auf eine Pipeline mit einem Ausführungsstatus geklickt wird.
 * Eine neue **Dauer** wurde zum Abschnitt [Pipeline-Detailseite](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) , die die durchschnittliche Dauer des Pipeline-Schritts basierend auf dem historischen Trend für dieses Programm enthält.
-* Auf der Seite zur Pipelineausführung zeigen die abgeschlossenen Schritte jetzt die Dauer an.
+* Im [Pipeline-Ausführungsseite,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity-window) Die abgeschlossenen Schritte zeigen nun die Dauer an.
+* Ausführungen, die [Build-Artefakte wiederverwenden](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) zeigt nun den Link zur Ausführung, die diese Artefakte ursprünglich erstellt hat.
+* Die ausgewählte Option **Wichtige Metrikfehler** kann jetzt konfiguriert werden für [Code-Qualitäts-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) sowie.
+
 
 ## Frühzeitige Annahme des Programms {#early-adoption}
 
