@@ -2,10 +2,10 @@
 title: Zugreifen auf und Verwalten von Protokollen
 description: Erfahren Sie, wie Sie auf Protokolle zugreifen und diese verwalten können, um Ihren Entwicklungsprozess in AEM as a Cloud Service zu unterstützen.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '267'
-ht-degree: 100%
+source-git-commit: c4bd0390fc67b3d8e985c0cd2b1f436ae13420ee
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 91%
 
 ---
 
@@ -83,3 +83,8 @@ Weitere Informationen zur Cloud Manager-API und zur Adobe I/O-CLI finden Sie in 
 
 * [Dokumentation für Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/)
 * [Adobe I/O-CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+
+Weitere Informationen zu Protokolldateien in AEM as a Cloud Service finden Sie in den folgenden zusätzlichen Ressourcen:
+
+* [Cloud 5-AEM-Protokolldateien](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
+* [Debugging von AEM as a Cloud Service mithilfe von Protokollen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=de)
