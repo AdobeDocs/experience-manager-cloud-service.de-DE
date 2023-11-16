@@ -2,10 +2,10 @@
 title: Protokollieren für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Service verwenden können, um globale Parameter für den zentralen Protokollierungs-Dienst zu konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festzulegen oder die Datenprotokollierung anzufordern.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
+source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 89%
+source-wordcount: '2683'
+ht-degree: 94%
 
 ---
 
@@ -523,7 +523,8 @@ Beachten Sie, dass die Funktion Splunk-Weiterleitung CDN-Protokolle noch nicht u
 "cache": "PASS",
 "status": 200,
 "res_age": 0,
-"pop": "PAR"
+"pop": "PAR",
+"rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
 }
 ```
 
@@ -533,20 +534,22 @@ Die CDN-Protokolle unterscheiden sich von den anderen Protokollen insofern, als 
 
 | **Feldname** | **Beschreibung** |
 |---|---|
-| *timestamp* | Der Zeitpunkt, zu dem die Anfrage nach TLS-Beendigung gestartet wurde |
-| *ttfb* | Abkürzung für *Zeit bis zum ersten Byte*. Das Zeitintervall zwischen der Anfrage begann bis zu dem Punkt, an dem der Antworttext mit dem Streaming begann. |
+| *timestamp* | Der Zeitpunkt, zu dem die Anfrage nach der TLS-Beendigung gestartet wurde |
+| *ttfb* | Abkürzung für *Time To First Byte*. Das Zeitintervall vom Start der Anfrage bis zu dem Punkt, an dem das Streamen des Antworttexts begann. |
 | *cli_ip* | Die Client-IP-Adresse. |
-| *cli_country* | Zweibuchstaben [ISO 3166-1](https://de.wikipedia.org/wiki/ISO_3166-1) Alpha-2-Ländercode für das Client-Land. |
-| *rid* | Der -Wert des Anforderungsheaders, der zur eindeutigen Identifizierung der Anfrage verwendet wird. |
-| *req_ua* | Der Benutzeragent, der für die Ausführung einer bestimmten HTTP-Anforderung verantwortlich ist. |
-| *host* | Die Behörde, für die der Antrag bestimmt ist. |
+| *cli_country* | Der Alpha-2-Ländercode gemäß [ISO 3166-1](https://de.wikipedia.org/wiki/ISO_3166-1) mit zwei Buchstaben für das Client-Land. |
+| *rid* | Der Wert der Anfragekopfzeile, der zur eindeutigen Identifizierung der Anfrage verwendet wird. |
+| *req_ua* | Der Benutzeragent, der für die Ausführung einer bestimmten HTTP-Anfrage verantwortlich ist. |
+| *host* | Die Stelle, für die die Anfrage bestimmt ist. |
 | *url* | Der vollständige Pfad, einschließlich Abfrageparametern. |
-| *method* | Vom Client gesendete HTTP-Methode, z. B. &quot;GET&quot;oder &quot;POST&quot;. |
-| *res_ctype* | Der Content-Type, der den ursprünglichen Medientyp der Ressource angibt. |
-| *cache* | Status des Caches. Mögliche Werte sind HIT, MISS oder PASS |
-| *status* | Der HTTP-Statuscode als ganzzahliger Wert. |
-| *res_age* | Die Zeit (in Sekunden), die eine Antwort zwischengespeichert wurde (in allen Knoten). |
-| *pop* | Rechenzentrum des CDN-Cache-Servers |
+| *Methode* | Die vom Client gesendete HTTP-Methode, z. B. „GET“ oder „POST“. |
+| *res_ctype* | Der Content-Typ, der den ursprünglichen Medientyp der Ressource angibt. |
+| *cache* | Der Status des Caches. Mögliche Werte sind HIT, MISS oder PASS |
+| *status* | Der HTTP-Status-Code als ganzzahliger Wert. |
+| *res_age* | Die Zeit in Sekunden, für die eine Antwort zwischengespeichert wurde (in allen Knoten). |
+| *pop* | das Rechenzentrum des CDN-Cache-Servers |
+| *rules* | Die Namen aller übereinstimmenden [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md) und WAF-Flags, die auch angeben, ob die Übereinstimmung zu einem Block führte. Leer, wenn keine Regeln übereinstimmten. |
+
 
 ## Zugriff auf Protokolle {#how-to-access-logs}
 
