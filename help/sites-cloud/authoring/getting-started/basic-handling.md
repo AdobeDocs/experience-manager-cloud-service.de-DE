@@ -2,10 +2,10 @@
 title: Grundlegende Handhabung
 description: Machen Sie sich mit der Navigation in AEM und seiner grundlegenden Verwendung vertraut
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2975'
-ht-degree: 98%
+source-wordcount: '2970'
+ht-degree: 95%
 
 ---
 
@@ -133,7 +133,7 @@ Die Kopfzeile befindet sich immer am oberen Rand des Bildschirms. Die meisten Op
 
   Breadcrumbs befinden sich immer in der Mitte der Leiste und zeigen die Beschreibung des aktuell ausgewählten Elements an. Sie ermöglichen Ihnen damit die Navigation innerhalb einer bestimmten Konsole. In der **Sites**-Konsole können Sie damit durch die Ebenen Ihrer Website navigieren.
 
-  Klicken Sie einfach auf den Breadcrumb-Text, um eine Dropdown-Liste mit den Hierarchieebenen des aktuell ausgewählten Elements anzuzeigen. Klicken Sie auf einen Eintrag, um zu dieser Stelle zu springen.
+  Klicken Sie einfach auf den Breadcrumb-Text, um eine Dropdown-Liste mit den Hierarchieebenen des aktuell ausgewählten Elements anzuzeigen. Klicken Sie auf einen Eintrag, um zu dieser Position zu springen.
 
   ![Beispiel für Breadcrumbs (erweitert)](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
@@ -171,7 +171,7 @@ Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
 
 * **Konsolensymbolleiste**
 
-  Durch Auswahl des Symbols **Hilfe** werden abhängig von Ihrer Position die geeigneten Ressourcen geöffnet:
+  Je nach Standort kann die **Hilfe** -Symbol öffnet die entsprechenden Ressourcen:
 
   ![Hilfesymbol](/help/sites-cloud/authoring/assets/help-console.png)
 
@@ -305,7 +305,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
    * Beim Tippen bzw. Klicken werden der Ressourcenname und der Pfeil hervorgehoben.
    * Die untergeordneten Elemente der angeklickten/angetippten Ressource werden in der Spalte rechts neben der angeklickten/angetippten Ressource angezeigt.
-   * Wenn Sie auf einen Ressourcennamen tippen oder klicken, der keine untergeordneten Elemente besitzt, werden die Ressourcendetails in der letzten Spalte angezeigt.
+   * Wenn Sie auf einen Ressourcennamen tippen oder klicken, der keine untergeordneten Elemente enthält, werden dessen Details in der letzten Spalte angezeigt.
 
 * Durch Tippen oder Klicken auf die Miniaturansicht wird die Ressource ausgewählt.
 
@@ -476,6 +476,6 @@ Im Dokument [Verwenden der Site-Leiste zur Verwaltung des Designs Ihrer Site](/h
 
 ### Filter {#filter}
 
-Hierdurch wird ein dem [Suchbereich](/help/sites-cloud/authoring/getting-started/search.md) ähnliches Fenster mit bereits entsprechend eingestellten Ortsfiltern geöffnet. So können Sie den für die Anzeige gewünschten Inhalt weiter filtern.
+Dadurch wird ein Bedienfeld geöffnet, das dem [suchen](/help/sites-cloud/authoring/getting-started/search.md) mit den entsprechenden Ortsfiltern, die bereits eingestellt sind, können Sie den anzuzeigenden Inhalt weiter filtern.
 
 ![Filterbeispiel](/help/sites-cloud/authoring/assets/filter.png)

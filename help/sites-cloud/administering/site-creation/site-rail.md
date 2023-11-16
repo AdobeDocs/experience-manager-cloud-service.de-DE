@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die leistungsstarken Funktionen der Site-Le
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 97%
+source-wordcount: '595'
+ht-degree: 95%
 
 ---
 
@@ -60,7 +60,7 @@ Wenn die Site-Leiste in der Sites-Konsole angezeigt wird, wählen Sie das Stammv
 
 Die aktuelle Version des Designs wird mit dem Commit-Hash und dem Zeitstempel der letzten Aktualisierung angezeigt.
 
-Tippen oder klicken Sie auf **Version auswählen**, um frühere Versionen des Designs anzuzeigen.
+Tippen oder klicken **Version auswählen** , um frühere Versionen des Designs anzuzeigen.
 
 ![Auswahl der Design-Version](/help/sites-cloud/administering/assets/select-theme-versions.png)
 

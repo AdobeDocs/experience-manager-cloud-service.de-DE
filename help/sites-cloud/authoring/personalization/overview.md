@@ -2,10 +2,10 @@
 title: Personalisierung und Content-Targeting
 description: Informationen zum Erstellen von personalisierten, zielgerichteten Inhalten mit AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 100%
+source-wordcount: '1053'
+ht-degree: 93%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Personalisierung der Web-Inhalte, die Sie Kunden bereitstellen, bedeutet, diese Erlebnisse auf die Kundeninteressen und -bedürfnisse abzustimmen. Sie können dies auf der Grundlage der Informationen tun, die Sie über Ihre Kunden haben. z. B. Einkaufsübersicht, Alter, Geschlecht, geografische Angaben usw.
 
-Mit Adobe Experience Manager as a Cloud Service (AEM) können Sie eine Auswahl von Inhalten erstellen und dann festlegen, welche Zielgruppen (Gruppen von Endbenutzern) die einzelnen Erlebnisse zu sehen bekommen. Das bedeutet, dass Sie Ihre personalisierten Erlebnisse an bestimmte Zielgruppen richten.
+Mit Adobe Experience Manager as a Cloud Service (AEM) können Sie eine Inhaltsauswahl erstellen und dann festlegen, welche Zielgruppen (Gruppen von Endbenutzern) die einzelnen Erlebnisse sehen. Das bedeutet, dass Sie Ihre personalisierten Erlebnisse an bestimmte Zielgruppen richten.
 
 Wenn Ihr Reader online ist, überprüft Ihre Targeting-Engine die über den Endbenutzer verfügbaren Informationen und vergleicht sie mit den Erlebnisdefinitionen. Die Engine *„entscheidet“* dann, welches personalisierte Erlebnis angezeigt werden soll.
 
@@ -40,7 +40,7 @@ Beim Erstellen von Seiten definieren Sie mehrere Erlebnisse, wobei jedes Erlebni
 
 Ein Angebot ist ein personalisiertes Erlebnis, das oft nur für einen begrenzten Zeitraum zur Verfügung steht.
 
-Beispielsweise kann eine Seite einer Beispiel-Website Angebote als das Teaser-Bild verwenden, das oben auf der Seite eingeblendet wird. Für Personen über 30 und Personen unter 30 werden jeweils andere Angebote als Erlebnis-Teaser angezeigt.
+Beispielsweise kann eine Seite von einer Beispiel-Website Angebote als Teaser-Bild verwenden, das oben auf der Seite angezeigt wird. Eine Person über 30 und eine Person unter 30 Jahren können verschiedene Angebote als Erlebnis-Teaser sehen.
 
 ## Zielgruppe {#audience}
 

@@ -4,17 +4,17 @@ description: Erfahren Sie, wie Entwicklende und Implementierungs-Manager auf Git
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 95%
+source-wordcount: '1411'
+ht-degree: 90%
 
 ---
 
 
 # Aufgaben von Entwickelnden und Bereitstellungs-Managern {#developer-deployment-manager}
 
-In diesem optionalen Teil der [Onboarding-Tour](overview.md) erfahren Sie, wie Entwicklende und Implementierungs-Manager auf Git zugreifen können, um Anwendungen zu entwickeln und Pipelines zur Bereitstellung zu verwenden.
+In diesem optionalen Teil des [Onboarding-Journey,](overview.md) Hier erfahren Sie, wie Entwickler und Bereitstellungsmanager auf Git zugreifen können, um Anwendungen zu entwickeln und diese mithilfe von Pipelines bereitzustellen.
 
 ## Ihre bisherige Tour {#story-so-far}
 
@@ -64,7 +64,7 @@ Sie können über die Benutzeroberfläche von Cloud Manager über die Self-Servi
 
    ![Schaltfläche „Zugriff auf Repo Info“ auf der Karte „Umgebungen“](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Klicken Sie auf die Schaltfläche **Repo Info anzeigen**, um ein Dialogfeld mit folgenden Inhalten zu öffnen:
+1. Klicken Sie auf **Repo Info anzeigen** Schaltfläche zum Öffnen eines Dialogfelds zur Ansicht:
 
    * Die URL zum Git-Repository von Cloud Manager.
    * Der Git-Benutzername.
@@ -82,7 +82,7 @@ Führen Sie diese Schritte aus, um Ihre erste produktionsfremde Bereitstellungs-
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Rufen Sie die Karte **Pipelines** über den Startbildschirm von Cloud Manager auf. Klicken Sie auf **+Hinzufügen** und wählen Sie **Hinzufügen einer produktionsfremden Pipeline** aus.
+1. Rufen Sie die Karte **Pipelines** über den Startbildschirm von Cloud Manager auf. Klicken Sie auf **+Hinzufügen** und wählen Sie **Produktionsfremde Pipeline hinzufügen** aus.
 
    ![Produktionsfremde Pipeline hinzufügen](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
@@ -119,7 +119,7 @@ Nachdem Entwickler bzw. Entwicklerinnen ihren benutzerdefinierten Code zu den Gi
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Navigieren Sie zur Karte **Pipelines** in der **Programmübersicht**, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der Pipeline, die Sie im vorherigen Abschnitt erstellt haben, und wählen Sie im Menü **Ausführen** aus.
+1. Navigieren Sie zum **Pipelines** Karte aus der **Programmübersicht** und klicken Sie auf die Suchschaltfläche neben der Pipeline, die Sie im vorherigen Abschnitt erstellt haben, und wählen Sie **Ausführen** aus dem Menü.
 
 1. Der Pipeline-Ausführung beginnt. Dies wird in der Spalte **Status** angezeigt.
 

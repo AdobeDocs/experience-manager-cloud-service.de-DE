@@ -4,19 +4,19 @@ description: Sobald der Systemadministrator die erforderlichen Cloud-Ressourcen 
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 100%
+source-wordcount: '577'
+ht-degree: 93%
 
 ---
 
 
 # AEM-Benutzeraufgaben {#aem-user-tasks}
 
-In diesem optionalen Teil der [Onboarding-Tour](overview.md) erfahren Sie, wie AEM-Benutzer auf AEM as a Cloud Service zugreifen können, um Inhalte zu erstellen.
+In diesem optionalen Teil des [Onboarding-Journey,](overview.md) Hier erfahren Sie, wie AEM Benutzer auf AEM zugreifen können, die für die Inhaltserstellung as a Cloud Service sind.
 
-## Die bisherige Entwicklung {#story-so-far}
+## Ihre bisherige Tour {#story-so-far}
 
 Sie sind in Ihrer Onboarding-Tour weit gekommen! Herzlichen Glückwunsch! Der Systemadministrator bzw. die Systemadministratorin hat die Onboarding-Journey abgeschlossen, indem er/sie die erforderlichen Cloud-Ressourcen eingerichtet und Zugriff auf das Dokument [Zuweisen von AEM-Produktprofilen](assign-profiles-aem.md) gewährt hat.
 
@@ -52,7 +52,7 @@ Als AEM-Autor müssen Sie sich bei AEM anmelden, um Inhalte erstellen zu können
 
 1. Wählen Sie das entsprechende Programm aus der Cloud Manager-Seite **Programme und Produkte** aus, um die Seite **Übersicht** zu starten. Fragen Sie Ihren Systemadministrator, wenn Sie nicht sicher sind, auf welches Programm Sie zugreifen müssen.
 
-1. Klicken Sie auf der Seite **Überblick** in Cloud Manager auf den Link „Autor“ auf der Karte **Umgebungen**.
+1. Aus dem **Übersicht** in Cloud Manager auf den Link &quot;author&quot;im **Umgebungen** Karte.
 
    ![Umgebungskarte](/help/journey-onboarding/assets/author-environ.png)
 

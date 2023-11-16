@@ -2,10 +2,10 @@
 title: Erstellen von Produktionsprogrammen
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Produktionsprogramm für das Hosten von Live-Traffic erstellen.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 88%
+source-wordcount: '601'
+ht-degree: 73%
 
 ---
 
@@ -22,7 +22,7 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Klicken Sie oben rechts im Bildschirm auf **Programm hinzufügen**.
+1. Klicks **Programm hinzufügen** oben rechts im Bildschirm.
 
    ![Cloud Manager-Landingpage](assets/log-in.png)
 
@@ -49,7 +49,7 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen.
 
    ![Lösungen auswählen](assets/setup-prod-select.png)
 
-1. Klicken Sie auf den Pfeil vor dem Lösungsnamen, um optionale Add-ons anzuzeigen, z. B. die Add-on-Option **Commerce** unter **Sites**.
+1. Klicken Sie auf den Pfeil vor den Lösungsnamen, um optionale Add-ons anzuzeigen, z. B. die **Handel** Add-On-Option unter **Sites**.
 
    ![Add-ons auswählen](assets/setup-prod-commerce.png)
 
@@ -70,7 +70,7 @@ Ihr Programm wird von Cloud Manager erstellt, wird auf der Landingpage angezeigt
 
 ## Zugriff auf ein Programm {#accessing}
 
-1. Sobald Sie die Programmkarte auf der Landingpage sehen, klicken Sie auf die Schaltfläche mit den Auslassungspunkten, um die für Sie verfügbaren Menüoptionen anzuzeigen.
+1. Wenn Ihre Programmkarte auf der Landingpage angezeigt wird, wählen Sie die Suchschaltfläche aus, um die verfügbaren Menüoptionen anzuzeigen.
 
    ![Programmübersicht](assets/program-overview.png)
 
@@ -80,7 +80,7 @@ Ihr Programm wird von Cloud Manager erstellt, wird auf der Landingpage angezeigt
 
    ![Programmübersicht](assets/set-up-prod5.png)
 
-Wenn Sie irgendwann zu einem anderen Programm wechseln oder zur Übersichtsseite zurückkehren möchten, um ein anderes Programm zu erstellen, klicken Sie auf den Namen Ihres Programms oben links im Bildschirm, um die Option **Navigieren zu** aufzurufen.
+Wenn Sie zu einem anderen Programm wechseln oder zur Übersichtsseite zurückkehren müssen, um ein anderes Programm zu erstellen, klicken Sie auf den Programmnamen oben links im Bildschirm, um die **Navigieren Sie zu** -Option.
 
 ![Navigieren zu](assets/create-program-a1.png)
 

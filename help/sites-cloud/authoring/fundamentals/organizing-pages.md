@@ -2,10 +2,10 @@
 title: Erstellen und Organisieren von Seiten
 description: Erfahren Sie, wie Sie Ihre Website organisieren können, indem Sie Seiten mit AEM erstellen und verwalten.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2451'
-ht-degree: 98%
+source-wordcount: '2449'
+ht-degree: 97%
 
 ---
 
@@ -225,7 +225,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
    >
    >Wenn Sie eine Seite erstellen und dabei einen in diesem Verzeichnis bereits vorhandenen Namen verwenden, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `beach` bereits vorhanden ist, wird eine neue Seite `beach1` genannt.
 
-1. Wenn Sie zur Konsole zurückkehren, wird die neue Seite angezeigt:
+1. Wenn Sie zur Konsole zurückkehren, wird Ihre neue Seite angezeigt:
 
    ![Neu erstellte Seite](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
 

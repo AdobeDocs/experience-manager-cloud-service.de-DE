@@ -2,10 +2,10 @@
 title: Erfahren Sie mehr über Headless-Inhalte und ihre Übersetzung in AEM
 description: Lernen Sie die Headless-Konzepte, ihre Zuordnung zu AEM und die Theorie der Übersetzung in AEM kennen.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 99%
+source-wordcount: '742'
+ht-degree: 96%
 
 ---
 
@@ -57,7 +57,7 @@ Zusätzlich zu den robusten Tools zum Erstellen, Verwalten und Bereitstellen her
 
 Die Leistungsfähigkeit von AEM ermöglicht es, Inhalte entweder „headless“, im Full Stack oder in beiden Modellen gleichzeitig bereitzustellen. Der Übersetzungsspezialisten kannn die gleichen Übersetzungs-Tools auf beide Inhaltstypen anwenden, sodass er einen einheitlichen Ansatz für die Übersetzung seiner Inhalte erhält.
 
-Im weiteren Verlauf der Tour erfahren Sie mehr darüber, wie AEM Inhalte übersetzt, aber im Prinzip ist das Konzept ganz einfach:
+Auf der Journey erfahren Sie mehr darüber, wie AEM Inhalte übersetzt, aber auf hoher Ebene ist das Konzept einfach:
 
 1. Eine Verbindung zu einem Übersetzungsdienst wird definiert, indem das Translation Integration Framework (TIF) konfiguriert wird.
 1. Mithilfe von Übersetzungsregeln wird festgelegt, welche Inhalte übersetzt werden sollen.

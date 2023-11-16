@@ -2,10 +2,10 @@
 title: Verwalten von Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM-Inhaltsfragmente verwalten können, die die Grundlage für Ihren Headless-Content bilden.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1877'
-ht-degree: 90%
+source-wordcount: '1873'
+ht-degree: 89%
 
 ---
 
@@ -141,7 +141,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
    * Klicken/tippen Sie auf das Fragment oder den Fragment-Link (abhängig von der Konsolenansicht).
    * Wählen Sie das Fragment und anschließend in der Symbolleiste die Option **Bearbeiten** aus.
 
-1. Der Fragment-Editor wird geöffnet. Nehmen Sie die gewünschten Änderungen vor:
+1. Der Fragmenteditor wird geöffnet. Nehmen Sie die gewünschten Änderungen vor:
 
    ![Fragmenteditor](assets/cfm-managing-03.png)
 
@@ -185,7 +185,7 @@ Einige Funktionen in der oberen Symbolleiste stehen in mehreren Modi zur Verfüg
 
 * Unter dem Fragmentnamen sehen Sie den Namen des [Inhaltsfragmentmodells](/help/assets/content-fragments/content-fragments-models.md), das zum Erstellen des aktuellen Fragments verwendet wurde:
 
-   * Der Name ist auch ein Link, über den der Modell-Editor geöffnet wird.
+   * Der Name ist auch ein Link, der den Modell-Editor öffnet.
 
 * Zeigen Sie den Status des Fragments an, zum Beispiel Informationen zum Zeitpunkt der Erstellung, Änderung oder Veröffentlichung. Der Status ist auch farbcodiert:
 
@@ -299,16 +299,16 @@ Neben den Standardoptionen enthält die [Zeitleiste](/help/assets/manage-digital
 
 >[!NOTE]
 >
->Kommentare sind:
+Kommentare sind:
 >
->* Standardfunktionen für alle Assets
->* In der Zeitleiste erstellt worden
->* mit dem Fragment-Asset verbunden
+* Standardfunktionen für alle Assets
+* In der Zeitleiste erstellt worden
+* mit dem Fragment-Asset verbunden
 >
->Anmerkungen (für Inhaltsfragmente) sind:
+Anmerkungen (für Inhaltsfragmente) sind:
 >
->* Im Fragmenteditor eingegeben worden
->* spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
+* Im Fragmenteditor eingegeben worden
+* spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
 >
 
 Beispiel:
@@ -339,7 +339,7 @@ Sie werden nebeneinander angezeigt, wobei:
 
 >[!NOTE]
 >
->Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleichen.
+Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleichen.
 
 ![Varianten vergleichen](assets/cfm-managing-06.png)
 
@@ -357,9 +357,9 @@ Sie können eine frühere Version Ihres Fragments wiederherstellen.
 
 >[!CAUTION]
 >
->Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
->Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
 Inhaltsfragmente müssen veröffentlicht werden, um in der Publishing-Umgebung genutzt werden zu können. Dies geschieht mithilfe der standardmäßigen Assets-Funktionen:
 
@@ -375,7 +375,7 @@ Wenn Sie [eine Seite veröffentlichen, in der das Fragment verwendet wird](/help
 
 >[!CAUTION]
 >
->Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
+Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
 
 ## Löschen von Fragmenten {#deleting-a-fragment}
 
@@ -386,11 +386,11 @@ So löschen Sie ein Fragment:
 
    >[!NOTE]
    >
-   >Die **Löschaktion** ist nicht als Schnellzugriff verfügbar.
+   Die **Löschaktion** ist nicht als Schnellzugriff verfügbar.
 
 3. Wählen Sie **Löschen** in der Symbolleiste aus.
 4. Bestätigen Sie die **Löschaktion**.
 
    >[!CAUTION]
    >
-   >Wenn das Fragment bereits in einer Seite referenziert wird, werden Sie in einer Warnung zur Bestätigung des **erzwungenen Löschens** aufgefordert. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.
+   Wenn das Fragment bereits in einer Seite referenziert wird, werden Sie in einer Warnung zur Bestätigung des **erzwungenen Löschens** aufgefordert. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.

@@ -2,10 +2,10 @@
 title: Ihr Posteingang
 description: Erfahren Sie, wie Sie mit den Benachrichtigungen, die in Ihren Posteingang eintreffen, Ihre Aufgaben verwalten können.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 98%
+source-wordcount: '912'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +47,7 @@ So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
 
 1. Klicken/tippen Sie auf die Anzeige in der Symbolleiste.
 
-1. Wählen Sie **Alle anzeigen** aus. Der **AEM-Posteingang** wird geöffnet. Im Posteingang werden Elemente aus den Bereichen Workflows, Projekte und Aufgaben angezeigt.
+1. Wählen Sie **Alle anzeigen** aus. Die **AEM Posteingang** geöffnet. Im Posteingang werden Elemente aus den Bereichen Workflows, Projekte und Aufgaben angezeigt.
 1. Die Standardansicht ist die [Listenansicht](#inbox-list-view), Sie können aber auch zur [Kalenderansicht ](#inbox-calendar-view)wechseln. Dies erfolgt mit der Ansichtsauswahl (Symbolleiste oben rechts).
 
    Für beide Ansichten können Sie die [Anzeigeeinstellungen](#inbox-view-settings) festlegen. Die verfügbaren Optionen hängen dabei von der aktuellen Ansicht ab.
@@ -142,7 +142,7 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen festlegen:
    * Ein Aktionsassistent wird gestartet
    * Eine Dokumentationsseite wird geöffnet
 
-   Wird etwa die Aktion **Delegieren** ausgeführt, öffnet sich ein Dialogfeld:
+   Beispiel: **Delegieren** öffnet ein Dialogfeld:
 
    ![Posteingangsaufgabe delegieren](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 

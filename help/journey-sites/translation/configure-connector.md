@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1164'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1163'
+ht-degree: 97%
 
 ---
 
@@ -133,7 +133,7 @@ Nachdem Sie nun diesen Teil der AEM Sites-Übersetzungs-Tour abgeschlossen haben
 * die wichtigen Parameter des Translation Integration Framework in AEM verstehen.
 * In der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungsdienst einzurichten.
 
-Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Sites-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Übersetzungsregeln konfigurieren](translation-rules.md) lesen, in dem Sie erfahren, wie Sie festlegen, welche Inhalte übersetzt werden sollen.
+Machen Sie sich mit diesem Wissen vertraut und fahren Sie mit Ihrer AEM Sites-Übersetzungs-Journey fort, indem Sie das Dokument erneut überprüfen. [Übersetzungsregeln konfigurieren,](translation-rules.md) wo Sie lernen, wie Sie definieren, welche Inhalte übersetzt werden sollen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

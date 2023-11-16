@@ -4,9 +4,9 @@ description: Lernen Sie die Grundlagen der AEM-Paketverwaltung mit Package Manag
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3769'
 ht-degree: 98%
 
 ---
@@ -149,7 +149,7 @@ Wenn das Paket geändert wurde oder noch nie aufgebaut wurde, wird der Status al
 
 ## Paketeinstellungen {#package-settings}
 
-Ein Paket ist im Wesentlichen ein Satz von Filtern und den Repository-Daten, die auf diesen Filtern basieren. Mithilfe der Package Manager-Benutzeroberfläche können Sie auf ein Paket und dann auf die Schaltfläche **Bearbeiten** klicken, um die Details eines Pakets einschließlich der folgenden Einstellungen anzuzeigen.
+Ein Paket ist im Wesentlichen ein Satz von Filtern und den Repository-Daten, die auf diesen Filtern basieren. Mithilfe der Package Manager-Benutzeroberfläche können Sie auf ein Paket klicken und dann die **Bearbeiten** -Schaltfläche, um die Details eines Pakets mit den folgenden Einstellungen anzuzeigen.
 
 * [Allgemeine Einstellungen](#general-settings)
 * [Paketfilter](#package-filters)

@@ -2,16 +2,16 @@
 title: Zugang zur Admin Console
 description: Sobald Sie mit den erforderlichen Vorbereitungsschritten für das Onboarding und die Grundlagen der AEMaaCS-Struktur vertraut sind, können Sie sich erstmals bei der Admin Console anmelden.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 95%
+source-wordcount: '1098'
+ht-degree: 85%
 
 ---
 
 # Zugang zur Admin Console {#accessing-admin-console}
 
-In diesem Teil der [Onboarding-Tour](overview.md) erfahren Sie mehr über die erforderlichen Vorbereitungsmaßnahmen, bevor Sie sich erstmals in das System einloggen können.
+In diesem Teil des [Onboarding-Journey,](overview.md) Sie erfahren mehr über die erforderliche Vorbereitung, bevor Sie sich zum ersten Mal in das System einloggen können.
 
 ## Ziel {#objective}
 
@@ -50,11 +50,11 @@ Bevor Sie die Admin Console zum Verwalten von Benutzenden in Ihrem Team verwende
 
 1. Als System-Admin erhalten Sie im Rahmen des Onboarding-Prozesses mehrere E-Mails von Adobe. Suchen Sie nach der Begrüßungs-E-Mail mit Informationen zum Organisationsnamen, auf den Sie Zugriff erhalten haben.
 
-1. Klicken Sie in Ihrer Begrüßungs-E-Mail auf **Erste Schritte**, um zur Admin Console zu navigieren. Wenn Sie die E-Mail nicht finden können, öffnen Sie einen Browser direkt zur Admin Console unter [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
+1. Klicken Sie auf **Erste Schritte** in Ihrer Begrüßungs-E-Mail klicken, um zur Admin Console zu navigieren. Wenn Sie die E-Mail nicht finden können, öffnen Sie einen Browser direkt zur Admin Console unter [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
    ![Begrüßungs-E-Mail](/help/journey-onboarding/assets/get-started-email.png)
 
-1. Melden Sie sich mit Ihrer Adobe ID an. Nach erfolgreicher Anmeldung sehen Sie die Seite **Übersicht** der Adobe Admin Console.
+1. Melden Sie sich mit Ihrer Adobe ID an. Nach erfolgreicher Anmeldung sehen Sie die **Übersicht** -Seite von Adobe Admin Console.
 
    ![Die Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
@@ -66,7 +66,7 @@ Bevor Sie die Admin Console zum Verwalten von Benutzenden in Ihrem Team verwende
 
    ![Überprüfen von Administratoren](/help/journey-onboarding/assets/get-started2.png)
 
-1. Nachdem Sie in der Karte **Benutzer** auf **Administratoren** geklickt haben, können Sie eine Suche durchführen, indem Sie die E-Mail-Adresse Ihrer Adobe ID, Ihren Benutzernamen, Vor- oder Nachnamen eingeben.
+1. Nachdem Sie auf **Administratoren** aus dem **Benutzer** -Karte, können Sie suchen, indem Sie Ihre Adobe ID-E-Mail-Adresse, Ihren Benutzernamen, Vor- oder Nachnamen eingeben.
 
    ![Suchen nach Benutzenden](/help/journey-onboarding/assets/get-started3.png)
 
@@ -82,7 +82,7 @@ AEM as a Cloud Service wird vorkonfiguriert mit Adobe Identity Management System
 
 Durch die Verwendung von IMS kann die Anmeldung bei AEM as a Cloud Service und dem Rest von Adobe Experience Cloud gemeinsam ausgeführt werden. Unternehmen, die mehrere Adobe-Produkte besitzen, profitieren besonders davon, da sie in der Adobe Admin Console rollenbasierte Gruppen erstellen und dann über IMS Zugriff auf mehrere Produkte gewähren können, einschließlich AEM as a Cloud Service.
 
-Weitere Informationen zu Produktprofilen und der Zuweisung von Benutzern finden Sie im nächsten Teil dieser Onboarding-Tour.
+Weitere Informationen zu Produktprofilen und der Zuweisung von Benutzern finden Sie im nächsten Teil dieser Onboarding-Journey.
 
 ## Kontaktaufnahme mit dem Adobe-Support {#support}
 

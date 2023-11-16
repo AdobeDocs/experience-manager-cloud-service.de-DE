@@ -2,10 +2,10 @@
 title: Cloud Manager-Repositorys
 description: Erfahren Sie, wie Sie Ihre Git-Repositorys in Cloud Manager erstellen, anzeigen und löschen.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: af8ab1f741c658dcb47bdf0d37e403fcb180631a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 96%
+source-wordcount: '585'
+ht-degree: 87%
 
 ---
 
@@ -24,9 +24,9 @@ Folgen Sie diesen Schritten, um Repositorys im Cloud Manager anzuzeigen und zu v
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Aus dem **Programmübersicht** Seite, tippen oder klicken Sie auf **Repositorys** Registerkarte, um zu der **Repositorys** Seite.
+1. Aus dem **Programmübersicht** Tippen oder klicken Sie auf **Repositorys** Registerkarte, um zu der **Repositorys** Seite.
 
-1. Klicken Sie auf **Repository hinzufügen**.
+1. Klicks **Repository hinzufügen**.
 
    ![Schaltfläche „Repository hinzufügen“](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
 
@@ -36,7 +36,7 @@ Folgen Sie diesen Schritten, um Repositorys im Cloud Manager anzuzeigen und zu v
 
 Wenn der Assistent geschlossen wird, wird Ihr neues Repository in der Tabelle angezeigt.
 
-Sie können das Repository in der Tabelle auswählen, auf die Schaltfläche mit Auslassungspunkten klicken und **Repository-URL kopieren**, **Anzeigen und Aktualisieren** oder **Löschen** auswählen.
+Sie können das Repository in der Tabelle auswählen, auf die Suchschaltfläche klicken und **Repository-URL kopieren**, **Anzeigen und Aktualisieren** oder **Löschen**.
 
 ![Repository-Optionen](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
@@ -58,9 +58,9 @@ Das Löschen eines Repositorys führt dazu, dass:
 
 Führen Sie diese Schritte aus, um ein Repository in Cloud Manager zu löschen.
 
-1. Klicken Sie auf der Seite **Programmübersicht** auf die Registerkarte **Repositorys** und gehen Sie zur Seite **Repositorys**.
+1. Aus dem **Programmübersicht** klicken Sie auf die **Repositorys** und navigieren Sie zum **Repositorys** Seite.
 
-1. Wählen Sie das Repository aus, klicken Sie auf die Schaltfläche mit den Auslassungspunkten und wählen Sie **Löschen**, um das Repository zu löschen.
+1. Wählen Sie das Repository aus, klicken Sie auf die Suchschaltfläche und wählen Sie **Löschen** , um das Repository zu löschen.
 
    ![Repository löschen](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 

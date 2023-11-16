@@ -2,10 +2,10 @@
 title: Hinzufügen eines benutzerdefinierten Domain-Namens
 description: Erfahren Sie, wie Sie mit Cloud Manager einen benutzerdefinierten Domain-Namen hinzufügen.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: d3021a4dd78a0ca86352a81965ce92868e94664a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 87%
+source-wordcount: '632'
+ht-degree: 83%
 
 ---
 
@@ -30,11 +30,11 @@ Gehen Sie folgendermaßen vor, um auf der Seite **Domain-Einstellungen** einen b
 
 1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
-1. Klicken Sie im linken Navigationsbereich auf **Domain-Einstellungen**.
+1. Klicks **Domäneneinstellungen** im linken Navigationsbereich.
 
    ![Fenster „Domain-Einstellungen“](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
-1. Klicken Sie auf die Schaltfläche **Domain hinzufügen** oben rechts, um den Dalog **Domain-Namen hinzufügen** anzuzeigen.
+1. Klicken Sie auf **Domäne hinzufügen** Schaltfläche oben rechts, um die **Domänennamen hinzufügen** angezeigt.
 
    ![Dialog „Domain hinzufügen“](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
@@ -82,7 +82,7 @@ Führen Sie die folgenden Schritte von der Seite **Umgebungen** aus, um einen be
 
    1. Geben Sie den benutzerdefinierten Domain-Namen ein.
    1. Wählen Sie in der Dropdown-Liste das mit diesem Namen verknüpfte SSL-Zertifikat aus.
-   1. Klicken Sie auf **+ Hinzufügen**.
+   1. Klicks **+Hinzufügen**.
 
    ![Löschen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 

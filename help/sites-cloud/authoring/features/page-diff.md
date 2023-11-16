@@ -2,10 +2,10 @@
 title: Seitenvergleich
 description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, indem sie nebeneinander angezeigt werden und die Unterschiede hervorgehoben sind.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 93%
+source-wordcount: '609'
+ht-degree: 89%
 
 ---
 
@@ -65,7 +65,7 @@ Der Vergleich erkennt Änderungen auf Komponenten- und HTML-Ebene. Geänderte El
 
 ### Vollbild und Beenden {#fullscreen-and-exiting}
 
-Damit Sie sich auf einen bestimmten Inhalt konzentrieren können, haben Sie die Möglichkeit, auf jeder Seite des Seitenvergleichs auf das Vollbildsymbol zu klicken, um die Ansicht auf das ganze Browser-Fenster zu vergrößern.
+Um sich auf bestimmte Inhalte zu konzentrieren, können Sie auf das Vollbildsymbol für eine der beiden Seiten des Seitenvergleichs klicken, um den Vollbildmodus auf das vollständige Browser-Fenster zu vergrößern.
 
 ![Schaltfläche „Vollbild“](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 

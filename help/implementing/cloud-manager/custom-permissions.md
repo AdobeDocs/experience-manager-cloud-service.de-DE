@@ -1,13 +1,13 @@
 ---
 title: Benutzerdefinierte Berechtigungen
 description: Erfahren Sie, wie Sie mit benutzerdefinierten Berechtigungen neue benutzerdefinierte Berechtigungsprofile mit konfigurierbaren Berechtigungen erstellen können, um den Zugriff auf Programme, Pipelines und Umgebungen für Cloud Manager-Benutzer zu beschränken.
-source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
+exl-id: 167da985-7f19-45b3-90a3-884817907da2
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1506'
 ht-degree: 2%
 
 ---
-
 
 # Benutzerdefinierte Berechtigungen {#custom-permissions}
 
@@ -44,7 +44,7 @@ In diesem Abschnitt werden diese Schritte beschrieben. Sie können es für nütz
 
 >[!NOTE]
 >
->Sie müssen über Produktadministratorberechtigungen für Adobe Experience Manager as a Cloud Service verfügen, um neue Profile erstellen und Berechtigungen für Cloud Manager verwalten zu können.
+>Sie müssen über Produktadministratorrechte in Admin Console für Adobe Experience Manager as a Cloud Service verfügen, um neue Profile zu erstellen und Berechtigungen für Cloud Manager zu verwalten.
 
 ### Neues Produktprofil erstellen {#create}
 
@@ -81,7 +81,7 @@ Nachdem Sie ein neues Produktprofil erstellt haben, können Sie ihm benutzerdefi
 
    ![Bearbeitbare Berechtigungen](assets/permissions-tab.png)
 
-1. Tippen oder klicken Sie auf die **Bearbeiten** Link einer Berechtigung zur Bearbeitung.
+1. Tippen oder klicken Sie auf **Bearbeiten** Link einer Berechtigung zur Bearbeitung.
 
 1. Die **Berechtigungen bearbeiten** öffnet sich.
    * Die Berechtigung, die Sie im vorherigen Schritt ausgewählt haben, wird in der linken Spalte ausgewählt.

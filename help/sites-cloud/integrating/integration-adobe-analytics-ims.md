@@ -2,10 +2,10 @@
 title: IMS-Konfiguration zur Verwendung bei der Integration mit Adobe Analytics
 description: Erfahren Sie mehr über die IMS-Konfiguration zur Verwendung bei der Integration mit Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: d59559d38eef182723a8791c6614d03930f64a85
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 96%
+source-wordcount: '911'
+ht-degree: 94%
 
 ---
 
@@ -80,10 +80,8 @@ Mithilfe der Adobe-Entwicklerkonsole müssen Sie ein Projekt (Integration) mit A
 1. Alle vorhandenen Projekte werden angezeigt. Wählen Sie **Neues Projekt erstellen** aus. Position und Verwendung hängen von Folgendem ab:
 
    * Wenn Sie noch kein Projekt haben, befindet sich **Neues Projekt erstellen** unten in der Mitte.
-
      ![Neues Projekt erstellen – Erstes Projekt](assets/integration-analytics-ims-02.png)
    * Wenn Sie bereits über vorhandene Projekte verfügen, werden diese aufgelistet und **Neues Projekt erstellen** wird oben rechts angezeigt.
-
      ![Neues Projekt erstellen – Mehrere Projekte](assets/integration-analytics-ims-03.png)
 
 
@@ -147,7 +145,7 @@ Wählen Sie einen bestimmten Projekteintrag aus, um weitere Details zur Konfigur
 * APIs
    * Beispiel: Adobe Analytics
 
-Einige dieser Details benötigen Sie, um die Integration von Adobe Analytics in AEM basierend auf IMS abzuschließen.
+Einige davon müssen Sie die Integration von Adobe Analytics in AEM auf der Basis von IMS abschließen.
 
 ## Abschließen der IMS-Konfiguration in AEM {#completing-the-ims-configuration-in-aem}
 
@@ -189,7 +187,7 @@ So überprüfen Sie, ob die Konfiguration erwartungsgemäß funktioniert:
 
    ![IMS-Konfiguration – Konsistenzprüfung](assets/integrate-analytics-ims-12.png)
 
-1. Bei erfolgreicher Ausführung wird eine Bestätigungsmeldung angezeigt.
+1. Bei Erfolg wird eine Bestätigungsmeldung angezeigt.
 
 ## Abschließen der Integration mit Adobe Analytics {#complete-the-integration-with-adobe-analytics}
 
@@ -203,7 +201,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 1. Open the **Tools** menu. Then, within the **Cloud Services** section, select **Legacy Cloud Services**.
 1. Scroll down to **Adobe Analytics** and select **Configure now**.
 
-   The **Create Configuration** dialog will open.
+   The **Create Configuration** dialog opens.
 
 1. Enter a **Title** and, if you want, a **Name** (if left blank, it is generated from the title).
 
@@ -211,7 +209,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
 1. Confirm with **Create**.
 
-   The **Edit Component** dialog will open.
+   The **Edit Component** dialog opens.
 
 1. Enter the details in the **Analytics Settings** tab:
 

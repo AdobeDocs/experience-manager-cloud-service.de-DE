@@ -2,10 +2,10 @@
 title: Erstellen einer Demo-Site
 description: Erstellen Sie eine Demosite in AEM basierend auf einer Bibliothek vorkonfigurierter Vorlagen.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '841'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '838'
+ht-degree: 92%
 
 ---
 
@@ -35,7 +35,7 @@ In diesem Dokument erfahren Sie, wie Sie eine neue Site basierend auf den Vorlag
 
 Nachdem die Pipeline das Referenz-Demo-Add-On bereitgestellt hat, können Sie auf die Authoring-Umgebung in AEM zugreifen, um Demo-Sites basierend auf dem Inhalt des Add-Ons zu erstellen.
 
-1. Tippen oder klicken Sie auf der Seite mit der Programmübersicht in Cloud Manager auf den Link zur Authoring-Umgebung in AEM.
+1. Tippen oder klicken Sie auf der Seite mit der Programmübersicht in Cloud Manager auf den Link zur AEM Authoring-Umgebung.
 
    ![Zugriff auf die Authoring-Umgebung](assets/access-author.png)
 
@@ -104,7 +104,7 @@ Nachdem Sie nun diesen Teil der Tour zum Referenzdemo-Add-on von Adobe Experienc
 Sie können jetzt die Funktionen von AEM mithilfe von Add-On-Inhalten testen. Sie haben zwei Möglichkeiten, um mit der Tour fortzufahren:
 
 * Wenn Sie AEM Screens-Inhalte vollständig demonstrieren und testen möchten, stellen Sie sicher, dass Sie, wie zuvor beschrieben, eine Site basierend auf der **We.Cafe-Site-Vorlage** bereitgestellt haben und weiterhin [AEM Screens für Ihre Demo-Site aktivieren](screens.md).
-* Wenn Sie nur Inhalte von Demo-Sites zeigen möchten, fahren Sie mit dem Abschnitt [Verwalten Ihrer Demo-Sites](manage.md) fort. Dort erfahren Sie, welche Tools Ihnen bei der Verwaltung Ihrer Demo-Sites helfen und wie Sie sie entfernen können.
+* Wenn Sie nur mit zum Demo von Sites-Inhalten arbeiten, fahren Sie mit [Verwalten Ihrer Demosites,](manage.md) Hier erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihrer Demosites zur Verfügung stehen und wie Sie diese entfernen können.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

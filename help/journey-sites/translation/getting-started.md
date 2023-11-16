@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1399'
-ht-degree: 98%
+source-wordcount: '1398'
+ht-degree: 95%
 
 ---
 
@@ -107,7 +107,7 @@ So bearbeiten Sie eine Seite:
 
    ![Bearbeiten einer Seite](assets/sites-editor-title.png)
 
-Sie können jederzeit zur Sites-Konsole zurückkehren, indem Sie in Ihrem Browser zu diesem Tab zurückkehren. Mit dem Sites-Editor können Sie die Inhalte der Seite schnell so anzeigen, wie die Inhaltsautoren und Ihre Zielgruppe sie sehen werden.
+Sie können jederzeit zur Sites-Konsole zurückkehren, indem Sie in Ihrem Browser zu diesem Tab zurückkehren. Mit dem Sites-Editor können Sie den Inhalt der Seite schnell anzeigen, da die Inhaltsautoren und Ihre Zielgruppe ihn sehen können.
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ Nachdem Sie nun diesen Teil der AEM Sites-Übersetzungs-Tour abgeschlossen haben
 * verstehen, wie AEM Inhalte speichert.
 * mit den Übersetzungs-Tools von AEM vertraut sein.
 
-Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Sites-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Konfigurieren des Übersetzungs-Connectors](configure-connector.md) lesen, in dem Sie lernen, wie Sie AEM mit einem Übersetzungsdienstleister verbinden.
+Machen Sie sich mit diesem Wissen vertraut und fahren Sie mit Ihrer AEM Sites-Übersetzungs-Journey fort, indem Sie das Dokument erneut überprüfen. [Konfigurieren des Übersetzungs-Connectors](configure-connector.md) Hier erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.|
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

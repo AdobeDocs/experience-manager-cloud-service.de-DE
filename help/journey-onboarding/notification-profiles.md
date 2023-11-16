@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie in der Admin Console Benutzerprofile erstelle
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 96%
+source-wordcount: '985'
+ht-degree: 93%
 
 ---
 
@@ -38,7 +38,7 @@ Da Benutzergruppen in der Admin Console erstellt und gepflegt werden, müssen vo
 
 ## Erstellen neuer Cloud Manager-Produktprofile {#create-profiles}
 
-Um den Empfang von Benachrichtigungen ordnungsgemäß einzurichten, müssen Sie zwei Benutzerprofile erstellen. Diese Schritte dürfen nur einmal ausgeführt werden.
+Erstellen Sie zwei Benutzerprofile, um den Erhalt von Benachrichtigungen ordnungsgemäß einzurichten. Diese Schritte werden nur einmal ausgeführt.
 
 1. Melden Sie sich bei Admin Console unter [`https://adminconsole.adobe.com` an.](https://adminconsole.adobe.com)
 
@@ -52,7 +52,7 @@ Um den Empfang von Benachrichtigungen ordnungsgemäß einzurichten, müssen Sie 
 
    ![Liste der Instanzen in der Admin Console](assets/cloud_manager_instance.png)
 
-1. Sie sehen die Liste aller vorkonfigurierten Cloud Manager-Produktprofile.
+1. Sie können die Liste aller konfigurierten Cloud Manager-Produktprofile anzeigen.
 
    ![Produktprofile in der Admin Console](assets/cloud_manager_profiles.png)
 

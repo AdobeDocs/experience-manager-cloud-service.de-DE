@@ -2,9 +2,9 @@
 title: Arbeiten mit Ihren eigenen GitHub-Repositorys in Cloud Manager
 description: Erfahren Sie, wie Sie Cloud Manager für die Arbeit mit Ihren eigenen GitHub-Repositorys einrichten.
 feature: Release Information
-source-git-commit: 8d689ea08ab7caf9cb0fa84df23d7e0fd906f379
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '745'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Die Konfiguration besteht aus zwei Hauptschritten:
 
 ### Repository hinzufügen {#add-repo}
 
-1. In Cloud Manager über die **Programmübersicht** Seite, tippen oder klicken Sie auf **Repositorys** Registerkarte, um zu der **Repositorys** Seite und klicken Sie auf **Repository hinzufügen**.
+1. In Cloud Manager über die **Programmübersicht** Tippen oder klicken Sie auf **Repositorys** Registerkarte, um zu der **Repositorys** Seite und klicken Sie auf **Repository hinzufügen**.
 
 1. Im **Repository hinzufügen** Dialogfeld auswählen **Privates Repository** als Repository-Typ.
 
@@ -65,7 +65,7 @@ Cloud Manager weiß jetzt von Ihrem GitHub-Repository, muss aber trotzdem darauf
 
 1. Zurück im **Validierung des Eigentums an privaten Repositorys** -Fenster hat Cloud Manager den Inhalt der privaten Datei im **Geheimer Dateiinhalt** -Feld. Kopieren Sie den Inhalt aus diesem Feld.
 
-   * Der Inhalt der geheimen Datei wird nur einmal angezeigt. Wenn Sie den Inhalt nicht kopieren, bevor Sie dieses Fenster schließen, müssen Sie das Geheimnis neu generieren.
+   * Der Inhalt der geheimen Datei wird nur einmal angezeigt. Wenn Sie den Inhalt nicht vor dem Schließen dieses Fensters kopieren, generieren Sie den geheimen Schlüssel erneut.
 
    ![Inhalt der geheimen Datei kopieren](/help/implementing/cloud-manager/assets/repos/new-secret.png)
 
@@ -81,7 +81,7 @@ Bis zur Validierung wird das Repository mit einem roten Symbol aufgeführt, das 
 
 Beachten Sie Folgendes: **Typ** -Spalte identifiziert einfach von Adobe bereitgestellte Repositorys (**Adobe**) und Ihre eigenen GitHub-Repositorys (**GitHub**).
 
-Wenn Sie zu einem späteren Zeitpunkt zum Repository zurückkehren müssen, um die Validierung abzuschließen, muss die **Repositorys** auf die Suchschaltfläche in der Zeile, die das soeben hinzugefügte GitHub-Repository darstellt, tippen oder klicken Sie darauf und wählen Sie **Validierung des Eigentums** aus dem Dropdown-Menü.
+Wenn Sie zu einem späteren Zeitpunkt zum Repository zurückkehren müssen, um die Validierung abzuschließen, wird im **Repositorys** auf die Suchschaltfläche in der Zeile, die das soeben hinzugefügte GitHub-Repository darstellt, tippen oder klicken Sie darauf und wählen Sie **Validierung des Eigentums** aus dem Dropdown-Menü.
 
 ## Verwenden eigener GitHub-Repositorys mit Cloud Manager {#using}
 

@@ -2,10 +2,10 @@
 title: Zugriff auf Repositorys
 description: Erfahren Sie, wie Sie mithilfe der Self-Service-Git-Kontoverwaltung über Cloud Manager auf Ihr Git-Repository zugreifen und es verwalten können.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
-workflow-type: ht
-source-wordcount: '232'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ Cloud Manager macht es Ihnen leicht, Ihre Repository-Informationen abzurufen, in
 
    ![Schaltfläche „Zugriff auf Repo Info“ auf der Karte „Umgebungen“](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Klicken Sie auf die Schaltfläche **Repo Info anzeigen**, um ein Dialogfeld mit folgenden Inhalten zu öffnen:
+1. Klicken Sie auf **Repo Info anzeigen** Schaltfläche zum Öffnen eines Dialogfelds zur Ansicht:
 
    * Die URL zum Git-Repository von Cloud Manager.
    * Der Git-Benutzername.

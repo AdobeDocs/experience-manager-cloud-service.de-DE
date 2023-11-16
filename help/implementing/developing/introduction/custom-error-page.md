@@ -2,10 +2,10 @@
 title: benutzerdefinierte Fehlerseiten
 description: AEM enthält einen Standard-Fehler-Handler für die Verarbeitung von HTTP-Fehlern, der angepasst werden kann.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 100%
+source-wordcount: '572'
+ht-degree: 96%
 
 ---
 
@@ -34,9 +34,9 @@ Sie können Ihre eigenen Skripte erstellen, um die Seiten anzupassen, die der Fe
 1. Kopieren Sie im Repository das/die Standardskript(e):
 
    * von `/libs/sling/servlet/errorhandler/`
-   * in `/apps/sling/servlet/errorhandler/`
+   * nach `/apps/sling/servlet/errorhandler/`
 
-   Da der Zielpfad standardmäßig nicht vorhanden ist, müssen Sie ihn erstellen, wenn Sie diesen Vorgang zum ersten Mal durchführen.
+   Der Zielpfad ist standardmäßig nicht vorhanden. Daher müssen Sie ihn erstellen, wenn Sie dies zum ersten Mal durchführen.
 
 1. Navigieren Sie zu `/apps/sling/servlet/errorhandler`. Hier können Sie entweder:
 

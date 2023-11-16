@@ -2,10 +2,10 @@
 title: Ruhezustand und Aufheben des Ruhezustands von Sandbox-Umgebungen
 description: Erfahren Sie, wie die Umgebungen eines Sandbox-Programms automatisch in den Ruhezustand übergehen und wie Sie den Ruhezustand wieder aufheben können.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 100%
+source-wordcount: '681'
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ Gehen Sie wie folgt vor, um Ihre Sandbox-Programmumgebungen manuell in den Ruhez
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Klicken Sie auf das Programm, das Sie in den Ruhezustand versetzen möchten, um seine Details anzuzeigen.
+1. Klicken Sie auf das Programm, das Sie in den Ruhezustand versetzen möchten, um die Details anzuzeigen.
 
 1. Klicken Sie auf der Karte **Umgebungen** auf die Schaltfläche mit den Auslassungspunkten und wählen Sie **Entwicklerkonsole** aus.
 
@@ -47,7 +47,7 @@ Gehen Sie wie folgt vor, um Ihre Sandbox-Programmumgebungen manuell in den Ruhez
 
    ![Bestätigen des Ruhezustands](assets/hibernate-2.png)
 
-Nach erfolgreicher Aktivierung des Ruhezustands wird im Bildschirm **Entwicklerkonsole** eine Benachrichtigung zur Fertigstellung des Ruhezustands für Ihre Umgebung angezeigt.
+Wenn der Ruhezustand erfolgreich war, wird die Benachrichtigung zum Abschluss des Ruhezustands für Ihre Umgebung im **Entwicklerkonsole** angezeigt.
 
 ![Ruhezustand – Bestätigung](assets/hibernate-4.png)
 
@@ -65,13 +65,13 @@ In der Entwicklerkonsole können Sie auch auf den Link **Umgebungen** in den Bre
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Klicken Sie auf das Programm, das Sie in den Ruhezustand versetzen möchten, um seine Details anzuzeigen.
+1. Klicken Sie auf das Programm, das Sie in den Ruhezustand versetzen möchten, um die Details anzuzeigen.
 
 1. Klicken Sie auf der Karte **Umgebungen** auf die Schaltfläche mit den Auslassungspunkten und wählen Sie **Entwicklerkonsole** aus.
 
    * Siehe [Aufrufen der Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console), um weitere Informationen zur Developer Console zu erhalten.
 
-1. Klicken Sie auf **Ruhezustand aufheben**.
+1. Klicks **Ruhezustand deaktivieren**.
 
    ![Schaltfläche „Ruhezustand aufheben“](assets/de-hibernation-img1.png)
 

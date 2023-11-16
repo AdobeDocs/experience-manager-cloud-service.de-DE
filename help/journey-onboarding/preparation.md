@@ -2,10 +2,10 @@
 title: Onboarding-Vorbereitung
 description: Bevor der Onboarding-Prozess beginnt, gibt es eine Reihe von vorbereitenden Schritten, die der Systemadmin verstehen muss, bevor er sich beim System anmeldet.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 96%
 
 ---
 
@@ -88,4 +88,4 @@ Sie sollten jetzt ein grundlegendes Verständnis haben von:
 * Wie sich der Vertrag auf den Onboarding-Prozess auswirkt.
 * Wie Sie sich auf Ihr Onboarding-Gespräch vorbereiten können.
 
-Jetzt, da Sie mit diesen Vorbereitungsschritten vertraut sind, sind Sie so gut wie bereit, sich selbst bei dem System anzumelden. Zunächst benötigen Sie jedoch einen kurzen Überblick darüber, wie die Struktur von AEM as a Cloud Service aus Sicht eines Systemadministrators aufgebaut ist, und sollten einige wichtige Begriffe kennenlernen. Fahren Sie mit dem nächsten Teil der Tour fort: [Terminologie von AEM as a Cloud Service](terminology.md).
+Jetzt, da Sie mit diesen Vorbereitungsschritten vertraut sind, sind Sie so gut wie bereit, sich selbst bei dem System anzumelden. Zunächst benötigen Sie jedoch einen kurzen Überblick darüber, wie AEM as a Cloud Service Struktur aus Sicht eines Systemadministrators strukturiert ist, und lernen einige wichtige Begriffe kennen. Fahren Sie mit dem nächsten Teil der Tour fort: [Terminologie von AEM as a Cloud Service](terminology.md).

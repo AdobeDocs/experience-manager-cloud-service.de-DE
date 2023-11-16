@@ -2,16 +2,16 @@
 title: Terminologie von AEM as a Cloud Service
 description: Bevor Sie sich bei AEMaaCS anmelden, sollten Sie einige Begriffe des Systems und seine grundlegende Struktur kennen.
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 100%
+source-wordcount: '461'
+ht-degree: 87%
 
 ---
 
 # Terminologie von AEM as a Cloud Service {#terminology}
 
-In diesem Teil der [Onboarding-Tour](overview.md) lernen Sie die Terminologie von AEM as a Cloud Service und seine Grundstruktur kennen.
+In diesem Teil des [Onboarding-Journey,](overview.md) Sie lernen die Terminologie AEM as a Cloud Service und seiner Grundstruktur kennen.
 
 ## Ziel {#objective}
 
@@ -34,7 +34,7 @@ Für diese Onboarding-Tour ist kein vollständiges Verständnis der Struktur von
 * **PROGRAMME**: Jeder Mandant verfügt über ein oder mehrere Programme, die häufig die lizenzierten Lösungen des Kunden widerspiegeln.
 * **UMGEBUNGEN**: Jedes Programm verfügt über mehrere Umgebungen, z. B. die Produktion für Live-Inhalte, eine für Staging und eine für Entwicklungszwecke.
 * **REPOSITORY**: Umgebungen verfügen über ein oder mehrere Git-Repositorys, in denen Anwendungs- und Frontend-Code gespeichert wird.
-* **TOOLS UND WORKFLOWS**: Pipelines verwalten die Implementierung von Code aus den Repositorys in den Umgebungen.
+* **TOOLS UND WORKFLOWS**: Pipelines verwalten die Bereitstellung von Code aus den Repositorys in den Umgebungen.
 
 Oft ist ein Beispiel hilfreich, um diese Hierarchie zu kontextualisieren.
 
@@ -53,4 +53,4 @@ Nachdem Sie nun diesen Teil der AEM-Onboarding-Tour abgeschlossen haben, wissen 
 * Die verschiedenen Ebenen, aus denen AEMaaCS besteht.
 * Die Grundlagen der einzelnen Ebenen.
 
-Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM-Onboarding-Tour fort, indem Sie als Nächstes das Dokument [Zugriff auf die Admin Console](admin-console.md) lesen. Dort erfahren Sie, wie Sie auf die Konsole zugreifen und Ihren Status als System-Admin überprüfen können.
+Auf diesem Wissen aufbauen und Ihre AEM Onboarding-Journey fortsetzen, bevor Sie das Dokument zum nächsten Mal lesen [Zugriff auf die Admin Console](admin-console.md), wo Sie erfahren, wie Sie auf die Konsole zugreifen und Ihren Status als Systemadministrator überprüfen.

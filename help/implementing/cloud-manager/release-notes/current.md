@@ -3,9 +3,9 @@ title: Versionshinweise für Cloud Manager 2023.11.0 in Adobe Experience Manager
 description: Dies sind die Versionshinweise für Cloud Manager 2023.11.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 4e2ea040ec14515525424b42f524601d34786cb8
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '745'
 ht-degree: 14%
 
 ---
@@ -81,6 +81,6 @@ Wenn die Variable **Anhalten vor der Bereitstellung in der Produktion** -Option 
 
 1. Pipeline ausführen.
 1. Testen Sie den Code in der Staging-Umgebung.
-1. Wenn die Bereitstellung und Genehmigung verfügbar ist, klicken Sie auf **Ablehnen**.
+1. Wenn die Bereitstellung und Genehmigung verfügbar wird, klicken Sie auf **Ablehnen**.
 1. Bearbeiten Sie die Pipeline, um die **Anhalten vor der Bereitstellung in der Produktion** -Option.
 1. Führen Sie die Pipeline erneut aus. Es wird erneut beim Staging und dann bei der Produktion ausgeführt.

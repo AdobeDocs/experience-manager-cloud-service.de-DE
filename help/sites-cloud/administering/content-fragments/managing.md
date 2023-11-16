@@ -3,13 +3,13 @@ title: Verwalten von Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Ihre AEM Inhaltsfragmente über die Konsole und den Editor als Grundlage für Ihren Headless Content oder für die Seitenbearbeitung verwalten.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: d381cc80e2c15ea35f9fd23baa78806ce15ec1af
+exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2540'
-ht-degree: 50%
+source-wordcount: '2532'
+ht-degree: 53%
 
 ---
-
 
 # Verwalten von Inhaltsfragmenten {#managing-content-fragments}
 
@@ -23,7 +23,7 @@ Nach der Definition von [Inhaltsfragmentmodelle](#creating-a-content-model) Sie 
 
 * [Erstellen von Inhaltsfragmenten](#creating-a-content-fragment).
 * Öffnen Sie dann die [Inhaltsfragment-Editor](#opening-the-fragment-editor) nach [Inhalte erstellen und Varianten verwalten](#editing-the-content-of-your-fragment).
-* [Verwalten von Tags](#manage-tags)
+* [Tags verwalten](#manage-tags)
 * [Eigenschaften (Metadaten) anzeigen und bearbeiten](#viewing-and-editing-properties)
 * [Strukturbaum anzeigen](/help/sites-cloud/administering/content-fragments/authoring.md#structure-tree)
 
@@ -58,7 +58,7 @@ Weitere Einzelheiten finden Sie unter:
 
 * [Suchen und Filtern in der Inhaltsfragmentkonsole](#filtering-fragments)
 
-* [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)In dieser Konsole stehen verschiedene Tastaturbefehle zur Verfügung
+* [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)In dieser Konsole stehen verschiedene Tastaturbefehle zur Verfügung
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Weitere Einzelheiten finden Sie unter:
 
 ### Grundlegende Struktur und Handhabung der Konsole {#basic-structure-handling-content-fragments-console}
 
-Wenn Sie **Inhaltsfragmente** auswählen, wird die Konsole in einer neuen Registerkarte geöffnet.
+Auswählen **Inhaltsfragmente** öffnet die Konsole in einer neuen Registerkarte.
 
 ![Inhaltsfragmentkonsole – Übersicht](assets/cf-managing-console-overview.png)
 
@@ -131,7 +131,7 @@ Bestimmte Aktionen sind über die Konsole verfügbar, ohne ein bestimmtes Inhalt
 
 #### Aktionen für ein (ausgewähltes) Inhaltsfragment {#actions-selected-content-fragment}
 
-Wenn Sie ein bestimmtes Fragment auswählen, wird eine Symbolleiste geöffnet, die die verfügbaren Aktionen für dieses Fragment anzeigt. Sie können auch mehrere Fragmente auswählen. Die Auswahl der Aktionen wird dann entsprechend angepasst.
+Wenn Sie ein bestimmtes Fragment auswählen, wird eine Symbolleiste geöffnet, die sich auf die für dieses Fragment verfügbaren Aktionen konzentriert. Sie können auch mehrere Fragmente auswählen. Die Auswahl der Aktionen wird dann entsprechend angepasst.
 
 ![Konsole „Inhaltsfragmente“ – Symbolleiste für ein ausgewähltes Fragment](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -173,9 +173,9 @@ Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angez
    * Kann für [Schnelles Filtern](#fast-filtering)
 * **Vorschau**
    * Nur Informationen:
-      * **Synchronisiert**: Inhaltsfragment wird im **Autor** und **Vorschau** Dienste.
-      * **Nicht synchronisiert**: Inhaltsfragment ist nicht synchronisiert auf der **Autor** und **Vorschau** Dienste. Sie müssen **Veröffentlichen** nach **Vorschau** , um sicherzustellen, dass die beiden Instanzen wieder synchronisiert werden.
-      * leer: Das Inhaltsfragment ist nicht im **Vorschau** -Dienst.
+      * **Synchronisiert**: Inhaltsfragment ist mit den **Autoren-** und **Vorschau-** Services synchronisiert.
+      * **Nicht synchronisiert**: Inhaltsfragment ist nicht mit den **Autoren-** und **Vorschau-** Services synchronisiert. Sie müssen **Veröffentlichen** für eine **Vorschau** einrichten, um sicherzustellen, dass die beiden Instanzen wieder synchronisiert werden.
+      * leer: Das Inhaltsfragment existert nicht im **Vorschau**-Service.
 * **Geändert**
    * Nur Informationen.
 * **Geändert von**
@@ -191,7 +191,7 @@ Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angez
    * Nur Informationen.
    * Kann für [Schnelles Filtern](#fast-filtering).
 * **Referenziert von**:
-   * Enthält einen Link, der ein Dialogfeld öffnet, in dem alle [übergeordnete Verweise](#parent-references-fragment)  dieses Fragments, einschließlich der Referenzierung von Inhaltsfragmenten, Experience Fragments und Seiten. Um eine bestimmte Referenz zu öffnen, klicken Sie im Dialogfeld auf **Titel**.
+   * Enthält einen Link, der ein Dialogfeld öffnet, in dem alle [übergeordnete Verweise](#parent-references-fragment)  dieses Fragments, einschließlich der Referenzierung von Inhaltsfragmenten, Experience Fragments und Seiten. Um eine bestimmte Referenz zu öffnen, klicken Sie auf die **Titel** im Dialogfeld.
 
      ![Inhaltsfragmentkonsole – Dialogfeld „Verweise“](assets/cf-managing-console-references-dialog.png)
 
@@ -201,7 +201,7 @@ Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angez
 
      ![Inhaltsfragmentkonsole – Sprachindikator](assets/cf-managing-console-language-indicator.png)
 
-   * Klicken/tippen Sie auf die Anzahl, um ein Dialogfeld zu öffnen, in dem alle Sprachkopien angezeigt werden. Um eine bestimmte Sprachkopie zu öffnen, klicken Sie auf den **Titel** im Dialogfeld.
+   * Klicken/tippen Sie auf die Anzahl, um ein Dialogfeld zu öffnen, in dem alle Sprachkopien angezeigt werden. Um eine bestimmte Sprachkopie zu öffnen, klicken Sie auf das **Titel** im Dialogfeld.
 
      ![Inhaltsfragmentkonsole – Dialogfeld „Sprache“](assets/cf-managing-console-languages-dialog.png)
 
@@ -224,7 +224,7 @@ So erstellen Sie ein Inhaltsfragment:
    >
    >Damit der Speicherort des neuen Fragments vordefiniert ist, können Sie zu dem Ordner navigieren, in dem Sie das Fragment erstellen möchten, oder Sie können den Speicherort während des Erstellungsprozesses angeben.
 
-1. Das Dialogfeld **Neues Inhaltsfragment** wird geöffnet. Hier können Sie Folgendes angeben:
+1. Die **Neues Inhaltsfragment** wird geöffnet. Hier können Sie Folgendes angeben:
 
    * **Speicherort** – wird automatisch mit dem aktuellen Speicherort ausgefüllt, Sie können jedoch bei Bedarf einen anderen Speicherort auswählen.
    * **Inhaltsfragmentmodell** – Wählen Sie aus der Dropdown-Liste das Modell aus, das als Grundlage für das Fragment verwendet werden soll.
@@ -257,7 +257,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 1. Navigieren Sie in der **Inhaltsfragmentkonsole** zum Speicherort des gewünschten Inhaltsfragments.
 1. Öffnen Sie das Fragment zur Bearbeitung, indem Sie das Fragment auswählen und dann **Im neuen Editor öffnen** aus der Symbolleiste.
 
-1. Der Fragment-Editor wird geöffnet. Wählen Sie Ihre Anforderungen aus **Variante** können Ihre Änderungen nach Bedarf vornehmen (sie werden automatisch gespeichert):
+1. Der Fragmenteditor wird geöffnet. Wählen Sie Ihre Anforderungen aus **Variante** können Ihre Änderungen nach Bedarf vornehmen (sie werden automatisch gespeichert):
 
    ![Fragmenteditor](assets/cf-managing-editor.png)
 
@@ -286,17 +286,17 @@ Sie können die auf ein Fragment angewendeten Tags auch mithilfe der [Eigenschaf
 
 Sie können die Eigenschaften (Metadaten) eines Fragments mithilfe der [Eigenschaften](/help/sites-cloud/administering/content-fragments/authoring.md) des Editors. Die angezeigten Informationen unterscheiden sich zwischen **Main** und **Varianten**.
 
-## Veröffentlichen und Anzeigen der Vorschau eines Fragments {#publishing-and-previewing-a-fragment}
+## Veröffentlichen und Anzeigen von Fragmenten in der Vorschau {#publishing-and-previewing-a-fragment}
 
-Sie können Ihre Inhaltsfragmente in folgenden Bereichen veröffentlichen:
+Sie können Ihre Inhaltsfragmente hier veröffentlichen:
 
-* die **[Veröffentlichungsdienst](/help/headless/deployment/architecture.md)** - uneingeschränkter Zugang der Öffentlichkeit
+* der **[Publishing-Service](/help/headless/deployment/architecture.md)** – für uneingeschränkten öffentlichen Zugriff
 
-* die **[Vorschaufunktion](/help/headless/deployment/architecture.md)** - Vorschau des Inhalts vor vollständiger Verfügbarkeit
+* der **[Vorschau-Service](/help/headless/deployment/architecture.md)** – um den Inhalt for der vollständigen Verfügbarkeit in der Vorschau zu sehen
 
   >[!CAUTION]
   >
-  >Veröffentlichen von Inhaltsfragmenten in der **Vorschaufunktion** ist nur über die Konsole &quot;Inhaltsfragmente&quot;verfügbar. Verwenden Sie die **Veröffentlichen** Aktion.
+  >Das Veröffentlichen von Inhaltsfragmenten im **Vorschau-Service** ist nur über die Inhaltsfragmentkonsole mithilfe der Aktion **Veröffentlichen** verfügbar.
 
   >[!NOTE]
   >
@@ -304,7 +304,7 @@ Sie können Ihre Inhaltsfragmente in folgenden Bereichen veröffentlichen:
   >
   >* [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   >* [Konfigurieren der OSGi-Einstellungen für die Vorschauebene](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-  >* [Debugging der Vorschau mithilfe der Entwicklungs-Konsole](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+  >* [Debuggen der Vorschau mithilfe der Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
 
 >[!CAUTION]
 >
@@ -329,13 +329,13 @@ Nach Auswahl der **Veröffentlichen** Aktion:
    * **Jetzt** - Wählen Sie entweder die **Veröffentlichungsdienst** oder die **Vorschaufunktion** Nach der Bestätigung wird das Fragment sofort veröffentlicht
    * **Zeitplan** - Zusätzlich zum erforderlichen Dienst können Sie auch das Datum und die Uhrzeit der Veröffentlichung des Fragments auswählen
 
-1. Geben Sie alle Details im Dialogfeld an. Beispiel für eine geplante Veröffentlichungsanforderung:
+1. Geben Sie alle Details im Dialogfeld an. Beispiel für eine geplante Veröffentlichungsanfrage:
 
    ![Dialogfeld „Veröffentlichen“](assets/cf-managing-publish-dialog.png)
 
    >[!NOTE]
    >
-   >Bei Bedarf müssen Sie die Verweise auf die Veröffentlichung angeben. Standardmäßig werden Verweise auch im Vorschaudienst veröffentlicht, um sicherzustellen, dass der Inhalt nicht umbrochen wird.
+   >Bei Bedarf müssen Sie die Verweise auf die Veröffentlichung angeben. Standardmäßig werden Verweise auch im Vorschau-Service veröffentlicht, um sicherzustellen, dass keine Brüche im Inhalt vorhanden sind.
 
 1. Bestätigen Sie die Veröffentlichungsaktion.
 
@@ -399,7 +399,7 @@ Details der übergeordneten Verweise können über das
 
 Beide bieten einen Link, der ein Dialogfeld öffnet, in dem alle übergeordneten Verweise dieses Fragments aufgelistet werden, einschließlich Verweisen auf Inhaltsfragmente, Experience Fragments und Seiten. Um eine bestimmte Referenz zu öffnen, klicken Sie auf die **Titel** oder das Verknüpfungssymbol im Dialogfeld.
 
-Zum Beispiel:
+Beispiel:
 
 ![Inhaltsfragmentkonsole – Dialogfeld „Verweise“](assets/cf-managing-console-references-dialog.png)
 
@@ -414,7 +414,7 @@ Das Symbol zeigt das Gebietsschema des Inhaltsfragments zusammen mit der Gesamtz
 
 ![Inhaltsfragmentkonsole – Sprachindikator](assets/cfc-console-language-indicator.png)
 
-Klicken/tippen Sie auf die Anzahl, um ein Dialogfeld zu öffnen, in dem alle Sprachkopien angezeigt werden. Um eine bestimmte Sprachkopie zu öffnen, klicken Sie auf den **Titel** im Dialogfeld.
+Klicken/tippen Sie auf die Anzahl, um ein Dialogfeld zu öffnen, in dem alle Sprachkopien angezeigt werden. Um eine bestimmte Sprachkopie zu öffnen, klicken Sie auf das **Titel** im Dialogfeld.
 
 ![Inhaltsfragmentkonsole – Dialogfeld „Sprache“](assets/cf-managing-console-languages-dialog.png)
 
@@ -438,7 +438,7 @@ Der Filterbereich bietet folgende Optionen:
 * die Möglichkeit, Ihre Konfiguration zu **speichern**
 * die Option zum Abrufen eines gespeicherten Suchfilters für die Wiederverwendung
 
-Nach der Auswahl wird die **Filtern nach** -Optionen angezeigt werden (unter dem Suchfeld). Sie können von dort aus abgewählt werden. Zum Beispiel:
+Nach der Auswahl wird die **Filtern nach** -Optionen angezeigt werden (unter dem Suchfeld). Sie können von dort aus abgewählt werden. Beispiel:
 
 ![Inhaltsfragmentkonsole – Filtern](assets/cf-managing-console-filter.png)
 

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente und die GraphQL-API als Head
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 98%
+source-wordcount: '1076'
+ht-degree: 93%
 
 ---
 
@@ -163,7 +163,7 @@ Sie erstellen eine persistente Abfrage mit Daten, die Sie in Ihrer Client-Applik
 
    >[!NOTE]
    >
-   >Wenn Sie nicht dieselben Feldbeschreibungen wie in den vorherigen Modulen verwendet haben, müssen Sie die Feldnamen in dieser Abfrage aktualisieren.
+   >Wenn Sie nicht dieselben Feldbeschreibungen wie in den vorherigen Modulen verwendet haben, aktualisieren Sie die Feldnamen in dieser Abfrage.
    >
    >Verwenden Sie die GraphQL-Funktion „autocomplete“ (Strg + Leertaste oder Option + Leertaste) wie zuvor beschrieben, um die verfügbaren Eigenschaften zu identifizieren.
 
@@ -183,7 +183,7 @@ Sie erstellen eine persistente Abfrage mit Daten, die Sie in Ihrer Client-Applik
 
 1. Die Abfrage wird beibehalten, wie durch eine Bannermeldung am unteren Bildschirmrand bestätigt. Die Abfrage wird jetzt auch im linken Bereich der persistierten Abfragen im Fenster angezeigt.
 
-1. Damit die persistierte Abfrage öffentlich verfügbar ist, muss sie ähnlich wie die Veröffentlichung Ihrer Inhaltsfragmente veröffentlicht werden. Klicken Sie auf die Schaltfläche **Veröffentlichen** oben rechts im Abfrage-Editor, um die Abfrage zu veröffentlichen.
+1. Damit die persistente Abfrage öffentlich verfügbar ist, muss sie ähnlich wie Ihre Inhaltsfragmente veröffentlicht werden. Klicks **Veröffentlichen** oben rechts im Abfrageeditor, um die Abfrage zu veröffentlichen.
 
 1. Die Veröffentlichung wird durch eine Bannerbenachrichtigung bestätigt.
 

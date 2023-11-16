@@ -2,9 +2,9 @@
 title: SLA-Berichte
 description: Erfahren Sie, wie Sie die Leistung Ihrer Produktionsumgebung im Vergleich zum vertraglich vereinbarten Service Level Agreement (SLA) AEM.
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '247'
 ht-degree: 9%
 
 ---
@@ -16,7 +16,7 @@ Erfahren Sie, wie Sie die Leistung Ihrer Produktionsumgebung im Vergleich zum ve
 
 ## Einführung {#introduction}
 
-SLA-Berichtsdaten sind für jedes Produktionsprogramm über **Berichte** Registerkarte. Führen Sie die folgenden Schritte aus, um auf zuzugreifen.
+SLA-Berichtsdaten sind für jedes Produktionsprogramm über die **Berichte** Registerkarte. Führen Sie die folgenden Schritte aus, um auf zuzugreifen.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
@@ -36,11 +36,11 @@ Das Diagramm des ausgewählten Jahres enthält eine Reihe von Datensätzen.
 
 * **Veröffentlichen von Tier-Verträgen** - Dies ist der SLA, der in Ihrem Vertrag mit Adobe für die Veröffentlichungsstufe definiert ist.
 
-* **Tatsächliche Veröffentlichungsebene** - Dies ist die gemessene Produktionszeit für Factoring-Vorfälle in der Produktionsveröffentlichungsstufe, die von Anbietern von Adobe oder Adobe verursacht wurden.
+* **Tatsächliche Veröffentlichungsebene** - Dies ist die gemessene Produktionszeit der Factoring-Vorfälle auf der Produktionsveröffentlichungsstufe, die durch Adobe oder Adobe vendors verursacht wurden.
 
-* **Autorenstufenvertrag** - Dies ist der SLA, der in Ihrem Vertrag mit der Adobe für die Autorenstufe definiert ist.
+* **Autoren-Stufenvertrag** - Dies ist der SLA, der in Ihrem Vertrag mit Adobe für die Autorenstufe definiert ist.
 
-* **Autorenebene - realisiert** - Dies ist die gemessene Produktionszeit für Factoring-Vorfälle auf der Produktionsautorenstufe, die von Anbietern von Adoben oder Adoben verursacht wurden.
+* **Autorenebene - realisiert** - Dies ist die gemessene Produktionszeit der Factoring-Vorfälle auf der Produktionsautorenstufe, die durch Adobe oder Adobe vendors verursacht wurden.
 
 ## Ereignisanalyse {#event-analysis}
 

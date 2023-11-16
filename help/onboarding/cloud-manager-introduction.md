@@ -2,10 +2,10 @@
 title: Einführung in Cloud Manager
 description: Erfahren Sie, wie Cloud Manager Ihr AEM-Projekt mittels seiner Programme, Umgebungen und Pipelines unterstützt.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 97%
+source-wordcount: '860'
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ Darüber hinaus können Sie von der Adobe Experience Cloud-Startseite aus auch z
 
 1. Wählen Sie **Experience Manager** aus.
 
-1. Klicken Sie auf der Karte **Cloud Manager** auf **Starten**
+1. Im **Cloud Manager** Karte, klicken Sie auf **Launch**
 
 ## Rollenbasierte Berechtigungen in Cloud Manager {#role-based-permissions}
 

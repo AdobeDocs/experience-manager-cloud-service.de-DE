@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2590'
-ht-degree: 100%
+source-wordcount: '2586'
+ht-degree: 96%
 
 ---
 
@@ -60,7 +60,7 @@ Für Inhaltsverantwortliche, die auch für die Übersetzung verantwortlich ist, 
    * Beachten Sie, dass vor der ersten Übersetzung die anderen Sprachordner leere Platzhalter sind. Diese werden normalerweise vom Inhaltsarchitekten erstellt.
 1. Suchen Sie den Sprachstamm Ihres Projekts.
 1. Tippen oder klicken Sie auf die Auswahlleiste und zeigen Sie den Bereich **Verweise** an.
-1. Tippen oder klicken Sie auf **Sprachkopien**.
+1. Tippen oder klicken **Sprachkopien**.
 1. Aktivieren Sie das Kontrollkästchen **Sprachkopien**.
 1. Erweitern Sie den Abschnitt **Sprachkopien aktualisieren** unten im Bereich „Verweise“.
 1. Wählen Sie in der Dropdown-Liste **Projekt** die Option **Übersetzungsprojekt(e) erstellen** aus.
@@ -144,7 +144,7 @@ Beim automatischen Erstellen des Übersetzungsprojekts bewertet AEM die Inhalte 
 
 So sehen Sie die Details der in diesem Projekt enthaltenen Inhalte:
 
-1. Tippen oder klicken Sie unten auf der Karte **Übersetzungsauftrag** auf die Schaltfläche mit den Auslassungspunkten.
+1. Tippen oder klicken Sie unten im **Übersetzungsauftrag** Karte.
 1. Im Fenster **Übersetzungsauftrag** werden alle Elemente des Auftrags aufgelistet.
 
    ![Detail des Übersetzungsauftrags](assets/translation-job-detail.png)
@@ -262,7 +262,7 @@ Wenn Sie über **Navigation** > **Sites** zu diesem Ordner gehen, sehen Sie die 
 
 Das AEM-Übersetzungs-Framework erhält die Übersetzungen vom Übersetzungs-Connector und erstellt dann automatisch die Inhaltsstruktur basierend auf dem Sprachstamm und unter Verwendung der vom Connector bereitgestellten Übersetzungen.
 
-Es ist wichtig zu verstehen, dass diese Inhalte nicht veröffentlicht werden und daher nicht für den Verbrauch verfügbar sind. Im nächsten Schritt der Übersetzungs-Tour lernen wir diese Autoren- und Veröffentlichungstruktur kennen und erfahren, wie wir unsere übersetzten Inhalte veröffentlichen.
+Es ist wichtig zu verstehen, dass diese Inhalte nicht veröffentlicht werden und daher nicht für den Verbrauch verfügbar sind. Sie erfahren mehr über diese Autoren- und Veröffentlichungsstruktur und erfahren, wie Sie unsere übersetzten Inhalte im nächsten Schritt der Übersetzungs-Journey veröffentlichen.
 
 ## Menschliche Übersetzung {#human-translation}
 
@@ -276,9 +276,9 @@ Nachdem Sie nun diesen Teil der AEM Sites-Übersetzungs-Tour abgeschlossen haben
 
 * verstehen, was ein Übersetzungsprojekt ist.
 * Neue Übersetzungsprojekte erstellen können.
-* Übersetzen Sie Ihre Inhalte mithilfe von Übersetzungsprojekten.
+* Ihre Inhalte mithilfe von Übersetzungsprojekten übersetzen können.
 
-Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Sites-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Veröffentlichen von übersetzten Inhalten](publish-content.md) lesen, in dem Sie lernen, wie Sie Ihre übersetzten Inhalte veröffentlichen und wie Sie diese Übersetzungen aktualisieren, wenn sich Ihr Sprachstamminhalt ändert.
+Machen Sie sich mit diesem Wissen vertraut und fahren Sie mit Ihrer AEM Sites-Übersetzungs-Journey fort, indem Sie das Dokument erneut überprüfen. [Übersetzten Inhalt veröffentlichen](publish-content.md) Hier erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und diese Übersetzungen aktualisieren können, wenn sich Ihr Sprachstamm ändert.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

@@ -2,10 +2,10 @@
 title: Authoring von Commerce-Erlebnissen
 description: Erfahren Sie, wie Sie Commerce-bezogene Erlebnisse effizient erstellen und erstellen können, indem Sie auf Produktdaten und Inhalte zugreifen können, ohne den Kontext verlassen zu müssen.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 97%
+source-wordcount: '717'
+ht-degree: 92%
 
 ---
 

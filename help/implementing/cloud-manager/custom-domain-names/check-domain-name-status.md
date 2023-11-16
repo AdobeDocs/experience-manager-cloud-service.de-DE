@@ -2,10 +2,10 @@
 title: Überprüfen des Domain-Namenstatus
 description: Erfahren Sie, wie Sie feststellen können, ob Ihr benutzerdefinierter Domain-Name von Cloud Manager erfolgreich verifiziert wurde.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 97%
+source-wordcount: '647'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ Sie können den Status Ihres benutzerdefinierten Domain-Namens in Cloud Manager 
 
 1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
-1. Klicken Sie im linken Navigationsbereich auf **Domain-Einstellungen**.
+1. Klicks **Domäneneinstellungen** im linken Navigationsbereich.
 
 1. Klicken Sie auf das Symbol **Status**, um den Domain-Namen zu sehen.
 
@@ -63,7 +63,7 @@ Dieser Fehler kann bei der Domain-Validierung des TXT-Eintrags auftreten, selbst
 
 #### Fehlerursache {#cause}
 
-Fastly beschränkt eine Domain auf das ursprünglich registrierte Konto, und kein anderes Konto kann eine Subdomain registrieren, ohne die Erlaubnis dafür einzuholen. Darüber hinaus können Sie mit Fastly nur einem Fastly-Dienst und -Konto eine Apex-Domäne und zugehörige Subdomains zuweisen. Wenn Sie über ein vorhandenes Fastly-Konto verfügen, das denselben Namen und dieselbe Subdomain verknüpft, die für Ihre AEM as a Cloud Service-Domains verwendet werden, wird dieser Fehler angezeigt.
+Fastly beschränkt eine Domain auf das ursprünglich registrierte Konto, und kein anderes Konto kann eine Subdomain registrieren, ohne die Erlaubnis dafür einzuholen. Darüber hinaus können Sie mit Fastly nur einem Fastly-Dienst und -Konto eine Apex-Domäne und zugehörige Subdomains zuweisen. Wenn Sie über ein vorhandenes Fastly-Konto verfügen, das denselben Namen und dieselbe Subdomäne verknüpft, die für Ihre AEM Cloud Service-Domänen verwendet werden, wird dieser Fehler angezeigt.
 
 #### Fehlerbehebung {#resolution}
 

@@ -2,10 +2,10 @@
 title: Anpassen des Site-Designs
 description: Erfahren Sie, wie das Site-Design erstellt wird, wie Sie es anpassen und wie Sie es mit AEM-Live-Inhalten testen können.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: 64509c13abacd6a6b54b58245acbf510feafdffa
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 100%
+source-wordcount: '962'
+ht-degree: 96%
 
 ---
 
@@ -135,7 +135,7 @@ Nachdem Sie nun diesen Teil der AEM-Journey zur schnellen Site-Erstellung abgesc
 * Verstehen, wie Sie Ihre Design-Anpassungen mit echten AEM-Inhalten über einen lokalen Proxy testen können.
 * Wissen, wie Sie Ihre Änderungen in das AEM Git-Repository übertragen.
 
-Bauem Sie auf diesem Wissen auf und fahren Sie mit der Tour zur AEM Quick Site Creation fort, indem Sie das Dokument [Bereitstellen Ihres benutzerdefinierten Designs](deploy-theme.md) noch einmal durchgehen, in dem Sie erfahren, wie Sie das Design mithilfe der Frontend-Pipeline bereitstellen.
+Machen Sie sich mit diesem Wissen vertraut und fahren Sie mit der Journey zur AEM SchnellSite-Erstellung fort, indem Sie das Dokument erneut überprüfen. [Bereitstellen Ihres benutzerdefinierten Designs,](deploy-theme.md) Hier erfahren Sie, wie Sie das Design mithilfe der Frontend-Pipeline bereitstellen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

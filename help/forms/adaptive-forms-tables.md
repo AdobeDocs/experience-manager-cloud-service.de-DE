@@ -4,10 +4,10 @@ description: Verwenden Sie die Tabellenkomponente, um einem adaptiven Formular T
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2498'
-ht-degree: 95%
+source-wordcount: '2494'
+ht-degree: 92%
 
 ---
 
@@ -71,13 +71,13 @@ Um eine Zeile hinzuzufügen, zu löschen oder zu verschieben, muss eine beliebig
 
 ![add-delete-move-row-column](assets/add-delete-move-row.png)
 
-Durch Doppelklicken auf die Zeile lassen sich Eigenschaften einer Zeile wie Name, Verbindungsreferenz, Wiederholungseinstellungen oder CSS-Klasse konfigurieren.
+Doppelklicken Sie auf die Zeile, um Eigenschaften einer Zeile wie Name, Bindungsverweis, Wiederholungseinstellungen, CSS-Klasse zu konfigurieren.
 ![add-delete-move-row-column](assets/row-properties-image.png)
 
 
 #### Hinzufügen oder Löschen einer Spalte
 
-Um eine Spalte hinzuzufügen oder zu löschen, muss auf die Textzelle im Kopfzeilenbereich geklickt werden. Eine Symbolleiste mit den Optionen zum Hinzufügen oder Löschen einer Spalte wird geöffnet:
+Um eine Spalte hinzuzufügen oder zu löschen, klicken Sie auf die Textzelle im Kopfzeilenbereich. Eine Symbolleiste mit den Optionen zum Hinzufügen oder Löschen einer Spalte wird geöffnet:
 
 ![add-delete-move-row-column](assets/add-delet-column.png)
 
@@ -155,7 +155,7 @@ Tabellen unterstützen standardmäßig das dynamische Hinzufügen oder Löschen 
 1. Geben Sie auf der Registerkarte „Wiederholungseinstellungen“ die Mindest- und Höchstanzahl der Zeilen in der Tabelle an.
 1. Klicken Sie auf **Fertig**.
 
-Während der Laufzeit oder der Vorschau werden die Schaltflächen **+** und ![Entfernen](/help/forms/assets/Smock_Delete.svg) für das Hinzufügen bzw. Löschen einer Zeile angezeigt.
+Zur Laufzeit oder Vorschau wird **+** und ![Schaltfläche &quot;Löschen&quot;](/help/forms/assets/Smock_Delete.svg) -Schaltflächen zum Hinzufügen oder Löschen einer Zeile.
 
 ![add-delete-rows-dynamic](assets/add-delete-layout.png)
 

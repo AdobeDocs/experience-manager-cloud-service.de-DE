@@ -2,10 +2,10 @@
 title: Weiterleiten von Launches
 description: Sie müssen Launch-Seiten weiterleiten, damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: ht
-source-wordcount: '814'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '812'
+ht-degree: 98%
 
 ---
 
@@ -52,7 +52,7 @@ Sie können Launches über die Konsolen **Sites** oder **Launches** weiterleiten
       1. Wählen Sie die erforderliche Launch-Seite mit dem [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md) aus.
       1. Die Aktion **Weiterleiten** steht in der Symbolleiste zur Verfügung.
    * In der Konsole **Launches**:
-      1. Wählen Sie den Launch aus, indem Sie auf die Miniaturansicht tippen/klicken.
+      1. Wählen Sie Ihren Launch aus (tippen/klicken Sie auf die Miniaturansicht).
       1. Wählen Sie **Bewerben** aus.
 1. Im ersten Schritt können Sie folgende Optionen festlegen:
    * **Ziel**
@@ -80,7 +80,7 @@ Sie können Launches über die Konsolen **Sites** oder **Launches** weiterleiten
 
 ## Weiterleiten von Launch-Seiten bei der Bearbeitung {#promoting-launch-pages-when-editing}
 
-Wenn Sie eine Launch-Seite bearbeiten, steht die Aktion **Launch bewerben** auch im Bereich **Seiteninformationen** zur Verfügung. Dadurch wird der Assistent geöffnet, um die benötigten Informationen zusammenzustellen.
+Wenn Sie eine Launch-Seite bearbeiten, steht die Aktion **Launch bewerben** auch im Bereich **Seiteninformationen** zur Verfügung. Dadurch wird der Assistent geöffnet, mit dem die benötigten Informationen erfasst werden.
 
 ![Launch von Site-Informationen aus bewerben](/help/sites-cloud/authoring/assets/launches-promote-page-info.png)
 

@@ -2,10 +2,10 @@
 title: Konfigurieren von Suchformularen
 description: Konfigurieren von Suchformularen für Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2037'
-ht-degree: 100%
+source-wordcount: '2035'
+ht-degree: 98%
 
 ---
 
@@ -572,7 +572,7 @@ Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definiere
 
    * Sie fügen ein neues Feld hinzu:
 
-     Nach dem Hinzufügen des Prädikats öffnet sich die Registerkarte **Einstellungen**. Dort werden die Eigenschaften angezeigt, die definiert werden können.
+     Nach dem Hinzufügen des Prädikats wird die **Einstellungen** wird geöffnet und zeigt die Eigenschaften an, die definiert werden können.
 
    * Sie aktualisieren ein vorhandenes Prädikat:
 
@@ -631,7 +631,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
 
 1. Erstellen Sie den Knoten, der die zu suchende Eigenschaft enthält.
 
-   Sie benötigen einen Stammknoten, der die Definitionen der einzelnen Optionen umfasst, die für Benutzer verfügbar sein sollen.
+   Sie benötigen einen Stammknoten, der Definitionen der einzelnen Optionen enthält, die dem Benutzer zur Verfügung stehen sollen.
 
    Die Knoten für die einzelnen Optionen müssen die folgenden Eigenschaften aufweisen:
 

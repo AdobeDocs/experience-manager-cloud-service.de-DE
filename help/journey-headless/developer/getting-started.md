@@ -2,10 +2,10 @@
 title: Erste Schritte mit AEM Headless as a Cloud Service
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Voraussetzungen für AEM Headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3098'
-ht-degree: 97%
+source-wordcount: '3096'
+ht-degree: 95%
 
 ---
 
@@ -85,7 +85,7 @@ Um Inhalte „headless“ zu ändern, bietet AEM zwei robuste APIs.
 * Mit der GraphQL-API können Sie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellen.
 * Mit der Assets-REST-API können Sie Inhaltsfragmente (und andere Assets) erstellen und ändern.
 
-In einem späteren Teil der AEM Headless-Tour erfahren Sie mehr über diese APIs und deren Verwendung. Weitere Informationen finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) unten.
+Sie erfahren mehr über diese APIs und wie Sie sie in einem späteren Teil der Journey ohne Kopfzeilenfunktion AEM. Oder siehe [Zusätzliche Ressourcen](#additional-resources) unten finden Sie weitere Dokumentationen.
 
 ## Headless-Integrationsebenen {#integration-levels}
 
@@ -273,7 +273,7 @@ Nachdem Sie nun diesen Teil der AEM Headless-Entwickler-Tour abgeschlossen haben
 * sich der Headless-Integrationsebenen von AEM bewusst sein.
 * in der Lage sein, Ihr Projekt in Bezug auf den Umfang zu definieren.
 
-Sie sollten Ihre AEM Headless-Tour fortsetzen, indem Sie sich das Dokument [Der Weg zu Ihrem ersten Erlebnis mit AEM Headless](path-to-first-experience.md) ansehen. Hier erfahren Sie, wie Sie die erforderlichen Tools einrichten und mit der Modellierung Ihrer Daten in AEM beginnen.
+Sie sollten Ihre AEM Headless-Journey fortsetzen, indem Sie das Dokument erneut überprüfen. [Pfad zu Ihrem ersten Erlebnis mit AEM Headless](path-to-first-experience.md) Hier erfahren Sie, wie Sie die erforderlichen Tools einrichten und wie Sie beginnen, über die Modellierung Ihrer Daten in AEM nachzudenken.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

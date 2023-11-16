@@ -2,10 +2,10 @@
 title: Verwenden von CRXDE Lite
 description: CRXDE Lite ist Teil des AEM-Schnellstarts und steht Ihnen zur Verfügung, um auf das Repository in Ihren lokalen Entwicklungsumgebungen im Browser zuzugreifen und es zu ändern.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 96%
+source-wordcount: '1684'
+ht-degree: 95%
 
 ---
 
@@ -71,7 +71,7 @@ Sobald eine Datei im **Bearbeitungsfenster** bearbeitet wurde, sind die folgende
 * **In Baum anzeigen**: Zeigt die Datei in der Repository-Baumstruktur an.
 * **Suchen/Ersetzen**: - Führt Such- und Ersetzungsvorgänge durch.
 
-Durch einen Doppelklick auf die Statuszeile des **Bearbeitungsfensters** öffnen Sie das Dialogfeld **Zu Zeile wechseln**, in dem Sie eine bestimmte Zeilennummer eingeben können, um dorthin zu gelangen.
+Doppelklicken Sie auf die Statuszeile des **Bedienfeld bearbeiten** öffnet die **Gehe zu Zeile** angezeigt, damit Sie eine bestimmte Zeilennummer eingeben können.
 
 ### Registerkarte „Eigenschaften“ {#properties-tab}
 
@@ -89,7 +89,7 @@ Die Berechtigungen sind in die folgenden Kategorien unterteilt.
 
 >[!NOTE]
 >
->Um die Zugriffssteuerungsinformationen anzuzeigen, muss der Benutzer, der sich bei CRXDE Lite angemeldet hat, über Berechtigungen zum Lesen von ACL-Einträgen verfügen.
+Um die Zugriffssteuerungsinformationen anzuzeigen, muss der Benutzer, der sich bei CRXDE Lite angemeldet hat, über Berechtigungen zum Lesen von ACL-Einträgen verfügen.
 
 ### Registerkarte „Replikation“ {#replication-tab}
 
@@ -190,9 +190,9 @@ Jetzt können Sie den Knoten an Ihre Anforderungen anpassen, indem Sie die Eigen
 
 >[!NOTE]
 >
->Die meisten Bearbeitungsvorgänge, einschließlich **Knoten erstellen**, behalten alle Änderungen im Speicher und speichern sie erst beim Speichern im Repository (über die [**Schaltfläche „Alle speichern“**](#save-all-button)). Einige Vorgänge wie das Verschieben werden jedoch automatisch beibehalten.
+Die meisten Bearbeitungsvorgänge, einschließlich **Knoten erstellen**, behalten alle Änderungen im Speicher und speichern sie erst beim Speichern im Repository (über die [**Schaltfläche „Alle speichern“**](#save-all-button)). Einige Vorgänge wie das Verschieben werden jedoch automatisch beibehalten.
 >
->Die Überprüfung, ob der neu erstellte Knoten durch den Knotentyp des übergeordneten Knotens zugelassen ist, wird auch vom Repository beim Speichern von Änderungen durchgeführt. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (Sie können z. B. keinen `nt:unstructured`-Knoten als untergeordneten Knoten eines `nt:folder`-Knotens erstellen).
+Die Überprüfung, ob der neu erstellte Knoten durch den Knotentyp des übergeordneten Knotens zugelassen ist, wird auch vom Repository beim Speichern von Änderungen durchgeführt. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (Sie können z. B. keinen `nt:unstructured`-Knoten als untergeordneten Knoten eines `nt:folder`-Knotens erstellen).
 
 ## Erstellen einer Eigenschaft {#creating-a-property}
 

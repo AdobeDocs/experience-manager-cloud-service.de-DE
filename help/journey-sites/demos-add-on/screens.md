@@ -2,10 +2,10 @@
 title: Aktivieren von AEM Screens für Ihren Demo-Standort
 description: Erfahren Sie mehr über die Schritte zur Aktivierung des vollständigen AEM Screens as a Cloud Service-Erlebnisses auf Ihrer Demo-Site.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2666'
-ht-degree: 100%
+source-wordcount: '2665'
+ht-degree: 98%
 
 ---
 
@@ -388,7 +388,7 @@ Nachdem Sie nun diesen Teil der Tour durch das AEM-Referenzdemo-Add-on abgeschlo
 * Den Demoinhalt von We.Cafe verstehen.
 * Wissen, wie man AEM Screens für We.Cafe konfiguriert.
 
-Sie können jetzt die Funktionen von AEM Screens mit Ihren eigenen Demo-Standorten erkunden. Fahren Sie mit dem nächsten Abschnitt der Tour, [Verwalten Ihrer Demo-Standorte](manage.md), fort. Hier erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihrer Demo-Standorte zur Verfügung stehen und wie Sie sie entfernen können.
+Sie können jetzt die Funktionen von AEM Screens mit Ihren eigenen Demo-Standorten erkunden. Fahren Sie mit dem nächsten Abschnitt des Journey fort, [Verwalten Ihrer Demosites,](manage.md) Hier erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihrer Demosites zur Verfügung stehen und wie Sie diese entfernen können.
 
 Schauen Sie sich einige der zusätzlichen Ressourcen an, die im Abschnitt [Zusätzliche Ressourcen](#additional-resources) verfügbar sind, um mehr über die Funktionen zu erfahren, die Sie während dieser Tour gesehen haben.
 

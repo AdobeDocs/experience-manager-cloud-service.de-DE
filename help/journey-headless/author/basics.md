@@ -2,10 +2,10 @@
 title: Grundlagen zum Authoring
 description: Erfahren Sie mehr über die Konzepte und Mechanismen sw Authoring für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1729'
-ht-degree: 84%
+source-wordcount: '1727'
+ht-degree: 83%
 
 ---
 
@@ -135,7 +135,7 @@ Dazu können Sie im Bereich **Dateien** der **Assets**-Konsole Ordner erstellen.
 
 ![Option „Ordner erstellen“](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Daraufhin wird ein Dialogfeld geöffnet, in dem Sie die Details eingeben und dann mit **Erstellen** bestätigen können:
+Ein Dialogfeld wird geöffnet, in das Sie die Details eingeben und dann mit **Erstellen**:
 
 ![Dialogfeld „Ordner erstellen“](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -216,7 +216,7 @@ Wenn der Editor zum ersten Mal geöffnet wird, sehen Sie Folgendes:
 
 Ein Fragment kann beispielsweise:
 
-* Erfordert mehrere Informationen, einige mit einem bestimmten Typ. Für Headless-Inhalte sind Verweise von zentraler Bedeutung (Sie werden später in Ihrer Tour mehr darüber erfahren).
+* Erfordert mehrere Informationen, einige mit einem bestimmten Typ. Für Headless-Inhalte sind Verweise von zentraler Bedeutung (Sie erfahren später auf Ihrer Journey darüber).
 
 * Ermöglicht Ihnen das Schreiben eines langen Textabschnitts. Hier finden Sie zusätzliche Optionen zum Verwalten und Formatieren des Textes. Sie können die einzelnen Textfelder auch in einem Vollbild-Editor öffnen (mithilfe des kleinen bildschirmähnlichen Symbols auf der rechten Seite).
 

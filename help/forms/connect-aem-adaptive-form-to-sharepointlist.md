@@ -1,13 +1,13 @@
 ---
-title: Wie verbindet AEM adaptive Formular mit der Microsoft® SharePoint-Liste?
-description: Verbinden Sie ein adaptives Formular mit der Microsoft® SharePoint-Liste. Erfahren Sie, wie Sie die Microsoft® SharePoint-Liste konfigurieren und ein Formulardatenmodell mithilfe der Konfiguration erstellen. Außerdem erfahren Sie, wie Sie das FDM in Ihr adaptives Formular integrieren.
+title: Wie verbinde ich AEM adaptive Formular mit Microsoft&reg; SharePoint List?
+description: Verbinden Sie ein adaptives Formular mit Microsoft&reg; SharePoint-Liste. Erfahren Sie, wie Sie die Liste Microsoft&reg; SharePoint konfigurieren und ein Formulardatenmodell mithilfe der Konfiguration erstellen. Darüber hinaus erfahren Sie, wie Sie das FDM in Ihr adaptives Formular integrieren.
 role: User, Developer
 keywords: Verbinden Sie AEM adaptive Formular mit der Microsoft SharePoint-Liste, verbinden Sie das adaptive Formular mit der Microsoft SharePoint-Liste, integrieren Sie AEM adaptive Formular in die Microsoft SharePoint-Liste, integrieren Sie das adaptive Formular in Microsoft Liste, senden Sie Daten aus einem adaptiven Formular in SharePoint Liste, senden Sie AEM Workflow an SharePoint Liste.
 hide: true
 hidefromToC: true
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '539'
 ht-degree: 5%
 
 ---
@@ -30,15 +30,15 @@ Anweisungen zur Integration einer **Microsoft® SharePoint Document Library** mi
 
 Führen Sie die folgenden Schritte aus, bevor Sie ein adaptives Formular mit der Microsoft® SharePoint-Liste verbinden:
 
-1. [Microsoft® SharePoint-Liste konfigurieren](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
-1. [Erstellen eines Formulardatenmodells mit der Microsoft® SharePoint-Listenkonfiguration](/help/forms/create-form-data-models.md)
+1. [Konfigurieren von Microsoft](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
+1. [Erstellen eines Formulardatenmodells mit Microsoft](/help/forms/create-form-data-models.md)
 1. [Formulardatenmodell zum Abrufen und Senden von Daten konfigurieren](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)
 
 Jetzt können Sie:
 
-* [Verbinden der Microsoft® SharePoint-Liste mit einem adaptiven Formular](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
-* [Verbinden einer Microsoft® SharePoint-Liste mit einem AEM Workflow](#connect-sharepoint-list-workflow)
+* [Microsoft verbinden](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
+* [Microsoft verbinden](#connect-sharepoint-list-workflow)
 
 ## Verbinden eines adaptiven Formulars mit der Microsoft® SharePoint-Liste {#connect-af-sharepoint-list}
 
@@ -73,7 +73,7 @@ Erfahren Sie, wie [AEM-Workflow verwenden](https://experienceleague.adobe.com/do
 
 ## Best Practices {#best-practices}
 
-<!-- * For storing data in a tabular format or implementing data permissions, it is advisable to use Microsoft® SharePoint List rather than Microsoft® SharePoint Document Library. -->
+<!-- * For storing data in a tabular format or implementing data permissions, it is advisable to use Microsoft&reg; SharePoint List rather than Microsoft&reg; SharePoint Document Library. -->
 * In der Microsoft® SharePoint-Liste werden die folgenden Spaltentypen nicht unterstützt:
    * Bildspalte
    * Metadatenspalte

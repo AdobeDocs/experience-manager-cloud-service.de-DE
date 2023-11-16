@@ -2,10 +2,10 @@
 title: Verwenden von Best Practices Analyzer
 description: Erfahren Sie, wie Sie mit Best Practices Analyzer die Upgrade-Bereitschaft verstehen können.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2484'
-ht-degree: 99%
+source-wordcount: '2478'
+ht-degree: 95%
 
 ---
 
@@ -61,7 +61,7 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. Klicken Sie auf **Bericht erzeugen**, um Best Practices Analyzer auszuführen.
+1. Klicks **Bericht erstellen** , um Best Practices Analyzer auszuführen.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -69,7 +69,7 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-1. Sobald der BPA-Bericht erstellt wurde, werden eine Zusammenfassung sowie die Anzahl der Ergebnisse in tabellarischer Form angezeigt, die nach Ergebnistyp und Wichtigkeitsstufe geordnet sind. Um weitere Details zu einem bestimmten Ergebnis zu erhalten, können Sie auf die Zahl klicken, die dem Typ des Ergebnisses in der Tabelle entspricht.
+1. Nach Erstellung des BPA-Berichts werden eine Zusammenfassung und die Anzahl der Ergebnisse in tabellarischer Form angezeigt, die nach Art der Ergebnisse und Wichtigkeitsstufe geordnet sind. Um weitere Details zu einem bestimmten Ergebnis zu erhalten, können Sie auf die Zahl klicken, die dem Ergebnistyp in der Tabelle entspricht.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 
@@ -95,9 +95,9 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
 
 Gehen Sie wie folgt vor, um Ergebnisse zu [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) herauszufiltern:
 
-1. Klicken Sie links auf der Seite auf das Symbol in der linken Leiste. Dadurch wird der **ACS Commons-Filter** angezeigt. Klicken Sie auf **ACS Commons-Filter**, um das interaktive Kontrollkästchen anzuzeigen, wie in der nachfolgenden Abbildung dargestellt.
+1. Klicken Sie auf das linke Leistensymbol auf der linken Seite der Seite. Dadurch wird der **ACS Commons-Filter** angezeigt. Klicken Sie auf **ACS Commons-Filter** , um das interaktive Kontrollkästchen anzuzeigen, wie in der Abbildung unten dargestellt.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
+   ![Bild](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
    >Das Symbol in der linken Leiste wird nur angezeigt, wenn BPA die Verwendung von ACS Commons erkennt.

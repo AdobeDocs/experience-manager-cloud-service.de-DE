@@ -2,10 +2,10 @@
 title: Wie richte ich eine lokale Entwicklungsumgebung für AEM Forms ein?
 description: Einrichten einer lokalen Entwicklungsumgebung für Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a0433718a223a6d3aa7740232caa17650bce5ff6
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2847'
-ht-degree: 96%
+source-wordcount: '2846'
+ht-degree: 95%
 
 ---
 
@@ -88,7 +88,7 @@ Herunterladen der neuesten Version von Adobe Experience Manager as a Cloud Servi
 
 1. Navigieren Sie zur Registerkarte **[!UICONTROL AEM as a Cloud Service]**.
 1. Sortieren Sie in absteigender Reihenfolge nach dem Veröffentlichungsdatum.
-1. Klicken Sie auf die neueste Version von Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms-Funktionsarchiv (AEM Forms-Add-on), Forms-Referenz-Assets oder Forms Designer.
+1. Klicken Sie auf das neueste Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms Feature Archiv (AEM Forms-Add-on), die Formularverweis-Assets oder Forms Designer.
 1. Lesen und akzeptieren Sie den Endbenutzer-Lizenzvertrag. Tippen Sie auf die Schaltfläche **[!UICONTROL Herunterladen]**.
 
 ## Einrichten von Entwicklungs-Tools für AEM-Projekte {#setup-development-tools-for-AEM-projects}

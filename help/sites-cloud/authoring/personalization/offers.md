@@ -2,10 +2,10 @@
 title: Erstellen und Verwalten von Angeboten (Angebotskonsole)
 description: Mit der Angebotskonsole lassen sich Angebote erstellen, die für Erlebnisse in Aktivitäten eingesetzt werden können.
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -86,7 +86,7 @@ Fügen Sie bei Bedarf Tags hinzu.
 
 1. Bestätigen Sie mit **Fertig**.
 
-   Wenn Sie jetzt zur Konsole der **Experience Fragment-Angebote** navigieren, sehen Sie Ihr neues Experience Fragment zusammen mit den zugehörigen Varianten.
+   Navigieren Sie jetzt zur **Experience Fragment-Angebote** -Konsole können Sie Ihr neues Experience Fragment zusammen mit den zugehörigen Varianten sehen.
 
 ### Targeting mit der Angebotsvorlage {#targeting-offers-template}
 

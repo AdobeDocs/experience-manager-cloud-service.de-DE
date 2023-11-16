@@ -2,10 +2,10 @@
 title: Abrufen von Zugriffsinformationen zum Git-Repository
 description: Erfahren Sie, wie der Front-End-Entwickler Cloud Manager verwendet, um auf Git-Repository-Informationen zuzugreifen.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '891'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '889'
+ht-degree: 93%
 
 ---
 
@@ -76,7 +76,7 @@ Wenn Sie diese E-Mail nicht erhalten haben, wenden Sie sich an die Cloud Manager
 
 ## Zugreifen auf Cloud Manager {#access-cloud-manager}
 
-1. Melden Sie sich bei Adobe Experience Cloud unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an oder klicken Sie auf den in der Begrüßungs-E-Mail angegebenen Link.
+1. Melden Sie sich bei Adobe Experience Cloud an unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) oder klicken Sie auf den in der Begrüßungs-E-Mail angegebenen Link.
 
 1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Tippen oder klicken Sie auf das Programm, auf das Sie zugreifen müssen, wie vom Cloud Manager-Administrator angegeben. Wenn dies Ihr erstes Front-End-Projekt für AEMaaCS ist, ist wahrscheinlich nur ein Programm verfügbar.
 
@@ -111,7 +111,7 @@ Nachdem Sie nun diesen Teil der AEM-Journey zur schnellen Site-Erstellung abgesc
 * Erfahren Sie ganz allgemein, was Cloud Manager ist.
 * Rufen Sie Ihre Anmeldeinformationen ab, um auf AEM-Git zuzugreifen, damit Sie Ihre Anpassungen übernehmen können.
 
-Nutzen Sie Ihre Kenntnisse und fahren Sie mit der AEM-Journey zur schnellen Site-Erstellung fort, indem Sie das Dokument [Anpassen des Sitedesigns](customize-theme.md) lesen. Hier erfahren Sie, wie das Sitedesign erstellt, angepasst und mit Live-AEM-Inhalt getestet wird.
+Machen Sie sich mit diesem Wissen vertraut und fahren Sie mit der Journey zur AEM SchnellSite-Erstellung fort, indem Sie das Dokument erneut überprüfen. [Anpassen des Site-Designs,](customize-theme.md) Hier erfahren Sie, wie das Site-Design erstellt wird, wie es angepasst wird und wie es mit Live-AEM getestet wird.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

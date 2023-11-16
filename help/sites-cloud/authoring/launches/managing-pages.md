@@ -2,10 +2,10 @@
 title: Verwalten von Seiten in Ihrem Launch
 description: Sie können neue Seiten in Ihrem Launch erstellen. Sie können auch unerwünschte Seiten löschen.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 100%
+source-wordcount: '289'
+ht-degree: 94%
 
 ---
 
@@ -25,36 +25,34 @@ Von hier können durch die Struktur Ihres Launchs navigieren:
 * Dem Seiten-Editor:
 
    * Wählen Sie **Navigieren** aus, um die Struktur des Launchs in der Konsole zu öffnen:
-      ![Navigieren zum Launch über den Seiten-Editor](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
+     ![Navigieren zum Launch über den Seiten-Editor](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
-      >[!NOTE]
-      >
-      >Sie können auch Folgendes durchführen:
-      >
-      >* **Verlassen** Sie den Launch und fahren Sie mit der Bearbeitung der Quellseite fort.
-
+     >[!NOTE]
+     >
+     >Sie können auch Folgendes durchführen:
+     >
+     >* **Verlassen** Sie den Launch und fahren Sie mit der Bearbeitung der Quellseite fort.
 
 * Die Konsole **Launches**:
 Wenn Sie einen bestimmten Launch auswählen, können Sie **Inhalt verwalten** auswählen:
-   ![Launches-Konsole – Verwalten von Inhalten](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+  ![Launches-Konsole – Verwalten von Inhalten](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
 * Die **Sites-Konsole**:
 Wenn Sie eine bestimmte Quellseite auswählen und **Verweise** öffnen, können Sie **Launches** und anschließend **Inhalt verwalten** auswählen:
-   ![Launches-Konsole – Verwalten von Inhalten](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
+  ![Launches-Konsole – Verwalten von Inhalten](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
 
-   >[!NOTE]
-   >
-   >Sie können auch **/Launches-Konsole** auswählen, um auf **Inhalt verwalten** (und andere Optionen) zuzugreifen.
+  >[!NOTE]
+  >
+  >Sie können auch **/Launches-Konsole** auswählen, um auf **Inhalt verwalten** (und andere Optionen) zuzugreifen.
 
-All diese Einstiegspunkte öffnen den Launch in der Sites-Konsole, wo Sie Folgendes ausführen können:
+Alle diese Einstiegspunkte öffnen den Launch in der Sites-Konsole, wo Sie Folgendes tun können:
 
 * Navigieren,
 * neue Seiten **erstellen**,
 * vorhandene Seiten auswählen und Aktionen ausführen, beispielsweise **Bearbeiten**, **Eigenschaften** öffnen, **Sperren**, **Kopieren**, **Einfügen** und **Löschen**
-
-   ![Navigieren in der Sites-Konsole über „Inhalt verwalten“](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+  ![Navigieren in der Sites-Konsole über „Inhalt verwalten“](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * Verwenden Sie die Leiste **Verweise**, um zu den Seiten **Launch-Quelle** zurückzukehren:
-   ![Sites-Konsole – Launch-Quelle](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
+  ![Sites-Konsole – Launch-Quelle](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## Hinzufügen von Seiten zu Ihrem Launch {#add-pages-to-launch}
 

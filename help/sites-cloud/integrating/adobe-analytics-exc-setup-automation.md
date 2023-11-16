@@ -4,10 +4,10 @@ description: Die Automatisierung der Einrichtung von Experience Cloud bietet ein
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: ht
-source-wordcount: '754'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ Bevor Sie diese Funktion verwenden, müssen Sie diesen Anweisungen folgen, um si
 
 1. Melden Sie sich bei der Adobe Admin Console an (https://adminconsole.adobe.com/).
 1. Stellen Sie sicher, dass oben rechts die richtige Kennung der IMS-Organisation ausgewählt ist.
-1. Klicken Sie auf die Navigationsoption „Produkte“.
+1. Klicken Sie auf die Navigationsoption Produkte .
 1. Überprüfen Sie, ob „Adobe Experience Manager as a Cloud Service“ für die IMS-Organisation bereitgestellt wurde.
 1. Überprüfen Sie, ob „Adobe Analytics“ für die IMS-Organisation bereitgestellt wurde.
 1. Rufen Sie Cloud Manager auf (https://experience.adobe.com/cloud-manager).
@@ -46,7 +46,7 @@ Die Umgebung sollte jetzt für die Automatisierung der Einrichtung von Experienc
 1. Navigieren Sie zu **Sites** und wählen Sie den Stamm der Site aus, die in Adobe Analytics integriert werden soll.
 1. Erweitern Sie das Menü der Seitenleiste und tippen Sie auf **Analytics einrichten**.
 
-   Dies ist eine neue Option in der Seitenleiste, durch die sich ein Bedienfeld öffnet, das Steuerelemente und Status für die Automatisierung der Experience Cloud-Einrichtung bereitstellt.
+   Dies ist eine neue Option in der Seitenleiste, die ein Bedienfeld öffnet, das Steuerelemente und Status für die Automatisierung des Experience Cloud-Setups bereitstellt.
 1. Tippen Sie auf die Schaltfläche **Analytics integrieren**.
 1. Geben Sie im daraufhin angezeigten Dialogfeld einen Namen für die **Report Suite-ID** ein.
 

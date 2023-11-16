@@ -2,10 +2,10 @@
 title: Build-Umgebung
 description: Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie sie den Code erstellt und testet.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 7945d67fe7d258af7131076d2416cbe121354a62
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 97%
+source-wordcount: '1005'
+ht-degree: 95%
 
 ---
 
@@ -179,7 +179,7 @@ Bei Verwendung in einer Maven-`pom.xml`-Datei ist es in der Regel hilfreich, die
 
 ## Installieren zusätzlicher Systempakete {#installing-additional-system-packages}
 
-Einige Builds erfordern die Installation zusätzlicher Systempakete, damit sie vollumfänglich funktionieren. So ist es z. B. möglich, dass ein Build ein Python- oder Ruby-Skript aufruft, wofür der entsprechende Sprach-Interpreter installiert sein muss. Dies kann durch Aufrufen des [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) in ihrer `pom.xml` erfolgen, wodurch APT aufgerufen wird. Diese Ausführung sollte im Allgemeinen in einem Cloud Manager-spezifischen Maven-Profil eingeschlossen sein. In diesem Beispiel wird Python installiert.
+Einige Builds erfordern die Installation zusätzlicher Systempakete, damit sie vollumfänglich funktionieren. Beispielsweise kann ein Build ein Python- oder Ruby-Skript aufrufen und muss einen entsprechenden Sprachinterpreter installiert haben. Dies kann durch Aufrufen des [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) in ihrer `pom.xml` erfolgen, wodurch APT aufgerufen wird. Diese Ausführung sollte im Allgemeinen in einem Cloud Manager-spezifischen Maven-Profil eingeschlossen sein. In diesem Beispiel wird Python installiert.
 
 ```xml
         <profile>

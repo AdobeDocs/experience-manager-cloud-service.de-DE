@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 100%
+source-wordcount: '1356'
+ht-degree: 97%
 
 ---
 
@@ -98,7 +98,7 @@ Der Prozess unterscheidet sich jedoch geringfügig, je nachdem, ob Sie sich für
 1. Gehen Sie zu **Navigation** > **Assets** > **Dateien**. Beachten Sie, dass Inhalte in AEM unter `/content` gespeichert werden.
 1. Wählen Sie den Sprachstamm Ihres Projekts aus. In diesem Fall haben wir `/content/wknd/en` ausgewählt.
 1. Tippen oder klicken Sie auf die Auswahlleiste und zeigen Sie den Bereich **Verweise** an.
-1. Tippen oder klicken Sie auf **Sprachkopien**.
+1. Tippen oder klicken **Sprachkopien**.
 1. Aktivieren Sie das Kontrollkästchen **Sprachkopien**.
 1. Erweitern Sie den Abschnitt **Sprachkopien aktualisieren** unten im Bereich „Verweise“.
 1. Wählen Sie in der Dropdown-Liste **Projekt** die Option **Hinzufügen zu einem vorhandenen Übersetzungsprojekt** aus.
@@ -140,7 +140,7 @@ Um eine Übersetzung zu aktualisieren, können Sie Ihrem vorhandenen Projekt ein
 
    ![Zielsprache auswählen](assets/select-target-language.png)
 
-1. Sobald die Zielsprache Ihres neuen Übersetzungsauftrags festgelegt ist, tippen oder klicken Sie unten auf der Auftragskarte auf die Schaltfläche mit den Auslassungspunkten, um die Details des Auftrags anzuzeigen.
+1. Sobald die Zielsprache Ihres neuen Übersetzungsauftrags festgelegt ist, tippen oder klicken Sie unten auf der Auftragskarte auf die Suchschaltfläche , um die Details des Auftrags anzuzeigen.
 1. Der Auftrag ist beim ersten Erstellen leer. Fügen Sie Inhalte zum Auftrag hinzu, indem Sie auf die Schaltfläche **Hinzufügen** klicken und den Pfad-Browser verwenden, [wie Sie es bereits bei der Erstellung des Übersetzungsprojekts getan haben.](translate-content.md##manually-creating)
 
 >[!TIP]

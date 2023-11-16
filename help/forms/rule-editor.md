@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: ebb77adfc97c805383de660d238e04a2173122b7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '6440'
+source-wordcount: '6439'
 ht-degree: 94%
 
 ---
@@ -93,7 +93,7 @@ Der Regeleditor bietet die folgenden logischen Operatoren und Ereignisse, mit de
 * **Hat ausgewählt:** Gibt „true“ zurück, wenn der Benutzer eine bestimmte Option für ein Kontrollkästchen, ein Dropdown-Element oder ein Optionsfeld auswählt.
 * **Ist initialisiert (Ereignis):** Gibt „true“ zurück, wenn ein Formularobjekt im Browser dargestellt wird.
 * **Wird geändert (Ereignis):** Gibt „true“ zurück, wenn der Benutzer den eingegebenen Wert oder die ausgewählte Option für ein Formularobjekt ändert.
-* **Navigation (Ereignis):** Gibt „true“ zurück, wenn der Benutzer auf ein Navigationsobjekt klickt. Navigationsobjekte werden verwendet, um zwischen Bereichen zu wechseln.
+* **Navigation(Ereignis):** Gibt true zurück, wenn der Benutzer auf ein Navigationsobjekt klickt. Navigationsobjekte werden verwendet, um zwischen Bereichen zu wechseln.
 * **Schritt abgeschlossen (Ereignis):** Gibt „true“ zurück, wenn ein Regelschritt abgeschlossen ist.
 * **Erfolgreiche Übermittlung (Ereignis):** Gibt „true“ zurück, wenn Daten erfolgreich an ein Formulardatenmodell gesendet wurden.
 * **Fehler bei der Übermittlung (Ereignis):** Gibt „true“ zurück, wenn die Daten nicht erfolgreich an ein Formulardatenmodell gesendet wurden.

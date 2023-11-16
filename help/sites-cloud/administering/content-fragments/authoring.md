@@ -1,17 +1,17 @@
 ---
-title: Bearbeiten von Inhaltsfragmenten
+title: Erstellung von Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente erstellen und dann Varianten dieses Inhalts entsprechend dem Zweck erstellen. Dies bietet mehr Flexibilität für die Headless-Bereitstellung und das Seiten-Authoring.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: b8206ffc0947de4fed085a03a6f90b5ac0f85aab
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 4%
+source-wordcount: '2252'
+ht-degree: 5%
 
 ---
 
-# Bearbeiten von Inhaltsfragmenten {#authoring-content-fragments}
+# Erstellung von Inhaltsfragmenten {#authoring-content-fragments}
 
 Die Inhaltserstellung von Inhaltsfragmenten konzentriert sich sowohl auf die Headless-Bereitstellung als auch auf die Seitenbearbeitung.
 
@@ -203,7 +203,7 @@ Für **[Mehrzeiliger Text](/help/sites-cloud/administering/content-fragments/con
 * [Statistiken](#statistics-rich-text)
 * [Vergleichen und Synchronisieren](#compare-and-synchronize-rich-text)
 
-Zum Beispiel:
+Beispiel:
 
 ![Inhaltsfragmente-Editor - Mehrzeiliger Text - Umschalter im Vollbildmodus](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
@@ -215,7 +215,7 @@ Zum Beispiel:
 
 Der Vollbild-Editor bietet dieselben Bearbeitungsoptionen wie im Textfluss - bietet jedoch mehr Platz für den Text.
 
-Zum Beispiel:
+Beispiel:
 
 ![Inhaltsfragment-Editor - Mehrzeiliger Text - Vollbild](assets/cf-authoring-multilinetext-fullscreen.png)
 
@@ -223,7 +223,7 @@ Zum Beispiel:
 
 Die Aktion **Statistik** zeigt eine Reihe von Informationen zum Text in einem mehrzeiligen Feld an.
 
-Zum Beispiel:
+Beispiel:
 
 ![Inhaltsfragmente-Editor - Statistiken](assets/cf-authoring-multilinetext-statistics.png)
 
@@ -248,7 +248,7 @@ Dadurch wird das mehrzeilige Feld im Vollbildmodus geöffnet und:
 
   >[!CAUTION]
   >
-  >Die Synchronisierung ist nur zum Kopieren von Änderungen verfügbar *von **Main**&#x200B;zur Änderung*.
+  >Die Synchronisierung ist nur zum Kopieren von Änderungen verfügbar *von **Main**zur Änderung*.
   >
   >Änderungen übertragen *von einer Änderung zu **Main*** ist nicht als Option verfügbar.
 
@@ -320,13 +320,13 @@ So fügen Sie Verweise auf AEM Seiten, Experience Fragments oder andere Content-
 
 Durch Auswahl des Link-Symbols in der oberen Symbolleiste wird eine Liste aller übergeordneten Verweise geöffnet.
 
-Zum Beispiel:
+Beispiel:
 
 ![Inhaltsfragmente-Editor - Verweise anzeigen](assets/cf-authoring-show-references-link.png)
 
 Ein Fenster mit allen zugehörigen Verweisen wird geöffnet. Um einen Verweis zu öffnen, wählen Sie den Namen, den Titel oder das Link-Symbol aus.
 
-Zum Beispiel:
+Beispiel:
 
 ![Inhaltsfragmente-Editor - Verweise anzeigen](assets/cf-authoring-show-references.png)
 
@@ -353,7 +353,7 @@ Auf der Registerkarte &quot;Eigenschaften&quot;(rechtes Bedienfeld) können Sie 
 
 Wenn Sie **Main** ausgewählt ist, wird der Name des zugrunde liegenden Inhaltsfragmentmodells im Abschnitt &quot;Eigenschaften&quot;angezeigt. Wenn Sie das Link-Symbol auswählen, wird das Modell in einer separaten Registerkarte geöffnet.
 
-Zum Beispiel:
+Beispiel:
 
 ![Inhaltsfragmente-Editor - Inhaltsfragmentmodell öffnen](assets/cf-authoring-open-model.png)
 
@@ -383,7 +383,7 @@ So stellen Sie eine bestimmte Version wieder her:
 
 Im **Spracheigenschaften** -Tab-Details verwandter Sprachkopien werden angezeigt. Wenn Sie ein Link-Symbol auswählen, wird die Kopie auf einer separaten Registerkarte geöffnet.
 
-Zum Beispiel:
+Beispiel:
 
 ![Inhaltsfragmente-Editor - Sprachkopie öffnen](assets/cf-authoring-open-language-copies.png)
 
@@ -478,7 +478,7 @@ Die **Felder** enthält alle Felder im Inhaltsfragment. Das Symbol zeigt die **[
 
 Zusätzlich:
 
-* Zum Bearbeiten eines Inhaltsfragments benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, wenn Probleme auftreten.
+* Zum Bearbeiten eines Inhaltsfragments benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihre Systemadmins, falls Probleme auftreten.
 
   Wenn Sie beispielsweise `edit` -Berechtigungen ist der Editor schreibgeschützt.
 

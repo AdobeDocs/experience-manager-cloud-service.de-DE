@@ -2,10 +2,10 @@
 title: Schnellstartanleitung zum Verfassen von Seiten (Authoring)
 description: Ein kurzer, allgemeiner Leitfaden mit den ersten Schritten zur Seitenbearbeitung
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 98%
+source-wordcount: '1561'
+ht-degree: 90%
 
 ---
 
@@ -93,11 +93,11 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
 
 1. Spaltenansicht:
 
-   * Tippen/klicken Sie auf die Miniatur für die gewünschte Ressource. Auf der Miniaturansicht wird die ausgewählte Ressource durch ein Häkchen gekennzeichnet.
+   * Tippen/klicken Sie auf die Miniaturansicht der gewünschten Ressource. Die Miniaturansicht wird mit einem Häkchen versehen, um anzuzeigen, dass sie ausgewählt wurde.
 
 1. Listenansicht:
 
-   * Tippen/klicken Sie auf die Miniatur für die gewünschte Ressource. Auf der Miniaturansicht wird die ausgewählte Ressource durch ein Häkchen gekennzeichnet.
+   * Tippen/klicken Sie auf die Miniaturansicht der gewünschten Ressource. Die Miniaturansicht wird mit einem Häkchen versehen, um anzuzeigen, dass sie ausgewählt wurde.
 
 1. Kartenansicht:
 
@@ -168,7 +168,7 @@ So bearbeiten Sie Ihre Seite:
 
    >[!NOTE]
    >
-   >Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie Komponenten auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden und Kopieren geöffnet war, muss diese Seite aktualisiert werden.
+   >Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie eine Seite auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden/Kopieren geöffnet war, muss diese Seite aktualisiert werden.
 
    * Eine Komponente [löschen](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar):
 
@@ -258,7 +258,7 @@ Diese Aktionen können alle wie folgt ausgelöst werden:
 
    * [Verschieben](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
-      * Der Assistent wird geöffnet, um die erforderlichen Informationen zum Verschieben der Seite zu erfassen. Befolgen Sie die Anweisungen auf dem Bildschirm.
+      * Der Assistent wird geöffnet, um die zum Verschieben der Seite erforderlichen Informationen zu sammeln. Befolgen Sie die Anweisungen auf dem Bildschirm.
 
    * [Löschen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
@@ -292,7 +292,7 @@ Beispielsweise sieht das Schloss-Symbol folgendermaßen aus:
 
    ![Ansicht „Verweise“](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. Tippen/klicken Sie auf den gewünschten Verweistyp, um weitere Details anzuzeigen und (bei Bedarf) weitere Aktionen auszuführen.
+1. Tippen oder klicken Sie auf den gewünschten Referenztyp, um weitere Details anzuzeigen und (falls zutreffend) weitere Aktionen durchzuführen.
 
 ### Erstellen einer Seitenversion {#creating-a-version-of-your-page}
 
@@ -302,7 +302,7 @@ So erstellen Sie eine [Version](/help/sites-cloud/authoring/features/page-versio
 
    ![Ansichtsoption „Timeline“](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. Tippen oder klicken Sie unten rechts in der Spalte „Timeline“ auf das Auslassungszeichen, um weitere Schaltflächen einzublenden, darunter auch **Als Version speichern**.
+1. Tippen/klicken Sie unten rechts in der Spalte &quot;Timeline&quot;auf das Auslassungszeichen, um zusätzliche Schaltflächen anzuzeigen, einschließlich **Als Version speichern**.
 
    ![Ansicht „Timeline“](/help/sites-cloud/authoring/assets/timeline-view.png)
 

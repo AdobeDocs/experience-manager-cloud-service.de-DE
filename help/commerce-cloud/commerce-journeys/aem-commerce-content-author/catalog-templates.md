@@ -2,10 +2,10 @@
 title: Verwalten von Produktkatalogseiten und -vorlagen
 description: Erfahren Sie, wie Sie Produktkatalogseiten und -vorlagen verwalten
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 100%
+source-wordcount: '719'
+ht-degree: 88%
 
 ---
 
@@ -37,7 +37,7 @@ Katalogseiten werden dynamisch mithilfe einer AEM-CIF-Katalogvorlage und Echtzei
 Die Navigationskomponente zeigt Inhalts- und Katalogseiten an. Es ist möglich, die Katalog-Landingpage oder die Kategorien der ersten Ebene in der Navigation anzuzeigen. Wenn Sie den Mauszeiger über eine Kategorie bewegen, werden Kategorien der zweiten Ebene als zweite Zeile angezeigt.
 ![Katalognavigation](assets/catalog-navigation.png)
 
-Durch Klicken auf eine Kategorie wird die Kategorieseite (oder Produktlistenseite) geöffnet.
+Wenn Sie auf eine Kategorie klicken, wird die Kategorieseite (oder Produktlistenseite) geöffnet.
 
 ![PLP](assets/catalog-plp.png)
 
@@ -89,11 +89,11 @@ Die Vorlage kann mit jeder Kategorie/jedem Produkt in der Vorschau angezeigt wer
 
 ![Vorlage erstellen ](assets/create-template-picker.png)
 
-Nun müssen wir diese Vorlage der jeweiligen Kategorie zuweisen. Öffnen Sie „Eigenschaften“ im Menü **Seiteninformationen** und wechseln Sie zur Registerkarte „Commerce“. Klicken Sie in der Kategorieauswahl auf das Ordnersymbol, um die Kategorie **Den Look kaufen** auszuwählen. Es ist möglich, einer Vorlage mehrere Kategorien und auch Unterkategorien zuzuweisen, indem Sie das Kontrollkästchen aktivieren.
+Nun müssen wir diese Vorlage der jeweiligen Kategorie zuweisen. Öffnen Sie „Eigenschaften“ im Menü **Seiteninformationen** und wechseln Sie zur Registerkarte „Commerce“. Klicken Sie auf das Ordnersymbol, um die **Look kaufen** aus der Kategorieauswahl. Es ist möglich, einer Vorlage mehrere Kategorien und auch Unterkategorien zuzuweisen, indem Sie das Kontrollkästchen aktivieren.
 
 ![Vorlagenzuordnung erstellen](assets/create-template-associate.png)
 
-Navigieren Sie zurück zur Hauptseite und klicken Sie auf die Kategorie **Shop The Look**, um die spezifische Vorlage anzuzeigen. Alle anderen Kategorien verwenden weiterhin die generische Vorlage.
+Gehen Sie zurück zur Hauptseite und klicken Sie auf **Look kaufen** -Kategorie, um die spezifische Vorlage anzuzeigen. Alle anderen Kategorien verwenden weiterhin die generische Vorlage.
 
 ![Vorlagenergebnis erstellen](assets/create-template-result.png)
 
@@ -107,7 +107,7 @@ Nachdem Sie nun diesen Teil der Tour abgeschlossen haben, sollten Sie:
 * die Funktionsweise generischer Vorlagen verstehen
 * eine individuelle Vorlage erstellt haben
 
-Machen Sie sich mit diesem Wissen vertraut und fahren Sie mit Ihrer Tour fort, indem Sie jetzt das Dokument [Verwalten von Erlebnissen im gestaffelten Produktkatalog](staged-catalog.md) durchgehen, in dem Sie erfahren, wie Sie mit gestaffelten Produktdaten und AEM-Launches arbeiten.
+Machen Sie sich mit diesem Wissen vertraut und fahren Sie mit dem Journey fort, indem Sie das Dokument erneut überprüfen. [Erlebnisse im gestaffelten Produktkatalog verwalten](staged-catalog.md), wo Sie erfahren, wie Sie mit gestaffelten Produktdaten und AEM Launches arbeiten.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

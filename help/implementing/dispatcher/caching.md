@@ -3,10 +3,10 @@ title: Caching in AEM as a Cloud Service
 description: Erfahren Sie mehr über die Grundlagen der Zwischenspeicherung in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 469c5f0e115cc57cf7624aecf5b9f45645f2e99a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2878'
-ht-degree: 94%
+source-wordcount: '2874'
+ht-degree: 95%
 
 ---
 
@@ -100,7 +100,7 @@ In beiden Fällen können die Caching-Kopfzeilen auf einer detaillierteren Ebene
 
 Achten Sie beim Ändern der Caching-Header auf der Dispatcher-Ebene darauf, nicht zu weitläufig zwischenzuspeichern. Siehe die Diskussion im Abschnitt HTML/Text [oben](#html-text). Stellen Sie außerdem sicher, dass Assets, die privat bleiben sollen (und nicht zwischengespeichert werden sollen), nicht Teil der Filter der `LocationMatch`-Anweisung sind.
 
-JCR-Ressourcen (größer als 16 KB), die im Blob Store gespeichert sind, werden von AEM normalerweise als 302-Weiterleitungen bereitgestellt. Diese Umleitungen werden abgefangen und vom CDN gefolgt und der Inhalt wird direkt aus dem Blob Store bereitgestellt. Nur eine begrenzte Anzahl von Headern kann für diese Antworten angepasst werden. Um beispielsweise `Content-Disposition` Sie sollten die Dispatcher-Anweisungen wie folgt verwenden:
+JCR-Ressourcen (größer als 16 KB), die im Blob Store gespeichert sind, werden von AEM normalerweise als 302-Weiterleitungen bereitgestellt. Diese Umleitungen werden abgefangen und vom CDN gefolgt und der Inhalt wird direkt aus dem Blob Store bereitgestellt. Nur eine begrenzte Anzahl von Headern kann für diese Antworten angepasst werden. So können Sie beispielsweise `Content-Disposition` Sie sollten die Dispatcher-Anweisungen wie folgt verwenden:
 
 ```
 <LocationMatch "\.(?i:pdf)$">

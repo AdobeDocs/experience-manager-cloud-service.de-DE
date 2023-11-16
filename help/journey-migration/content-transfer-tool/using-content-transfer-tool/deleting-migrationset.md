@@ -2,10 +2,10 @@
 title: Löschen eines Migrationssatzes im Content Transfer Tool
 description: Erfahren Sie, wie Sie einen Migrationssatz im Content Transfer Tool löschen.
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 95%
+source-wordcount: '232'
+ht-degree: 68%
 
 ---
 
@@ -22,11 +22,11 @@ Migrationssätze können aus Cloud Acceleration Manager gelöscht werden.
 
 Gehen Sie wie folgt vor, um einen Migrationssatz zu löschen:
 
-1. Navigieren Sie zur Listenansicht „Migrationssatz“ in Cloud Acceleration Manager und klicken Sie auf die drei Punkte (**...**) neben dem Migrationssatz, den Sie löschen möchten. Die Aktion **Löschen** sollte angezeigt werden, wie unten dargestellt.
+1. Navigieren Sie zur Listenansicht &quot;Migrationssatz&quot;in Cloud Acceleration Manager und klicken Sie auf die drei Punkte (**...**) neben dem Migrationssatz, den Sie löschen möchten. Die Aktion **Löschen** sollte angezeigt werden, wie unten dargestellt.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 
-1. Sobald Sie auf **Löschen** klicken, wird ein Dialogfeld angezeigt, in dem Sie die Löschaktion bestätigen können.
+1. Wenn Sie auf **Löschen** wird ein Dialogfeld angezeigt, in dem der Löschvorgang bestätigt wird.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete2.png)
 
@@ -36,6 +36,6 @@ Gehen Sie wie folgt vor, um einen Migrationssatz zu löschen:
 >
 >Damit das Content Transfer Tool mit Cloud Acceleration Manager synchron bleibt, können Benutzerinnen und Benutzer den Migrationssatz auch aus dem Content Transfer Tool löschen.
 
-Um den Migrationssatz aus dem Inhaltsübertragungs-Assistenten zu löschen, wählen Sie den Migrationssatz aus und klicken Sie in der Aktionsleiste auf **Löschen**.
+Um den Migrationssatz aus dem Inhaltsübertragungs-Assistenten zu löschen, wählen Sie den Migrationssatz aus und klicken Sie auf **Löschen** in der Aktionsleiste.
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam27.png)
+![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam27.png)

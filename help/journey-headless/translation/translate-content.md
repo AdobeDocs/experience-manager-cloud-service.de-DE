@@ -2,10 +2,10 @@
 title: Übersetzen von Headless-Inhalten
 description: Verwenden Sie den Übersetzungs-Connector, um Ihre Headless-Inhalte zu übersetzen.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2175'
-ht-degree: 99%
+source-wordcount: '2170'
+ht-degree: 95%
 
 ---
 
@@ -56,7 +56,7 @@ Für Inhaltsverantwortliche, die auch für die Übersetzung verantwortlich ist, 
 1. Gehen Sie zu **Navigation** > **Assets** > **Dateien**. Beachten Sie, dass Headless-Inhalte in AEM als Assets gespeichert werden. Diese werden auch als Inhaltsfragmente bezeichnet.
 1. Wählen Sie den Sprachstamm Ihres Projekts aus. In diesem Fall haben wir `/content/dam/wknd/en` ausgewählt.
 1. Tippen oder klicken Sie auf die Auswahlleiste und zeigen Sie den Bereich **Verweise** an.
-1. Tippen oder klicken Sie auf **Sprachkopien**.
+1. Tippen oder klicken **Sprachkopien**.
 1. Aktivieren Sie das Kontrollkästchen **Sprachkopien**.
 1. Erweitern Sie den Abschnitt **Sprachkopien aktualisieren** unten im Bereich „Verweise“.
 1. Wählen Sie in der Dropdown-Liste **Projekt** die Option **Übersetzungsprojekt(e) erstellen** aus.
@@ -130,7 +130,7 @@ Beim automatischen Erstellen des Übersetzungsprojekts wertet AEM den Headless-I
 
 So sehen Sie die Details der Headless-Inhalte in diesem Projekt:
 
-1. Tippen oder klicken Sie unten auf der Karte **Übersetzungsauftrag** auf die Schaltfläche mit den Auslassungspunkten.
+1. Tippen oder klicken Sie unten im **Übersetzungsauftrag** Karte.
 1. Im Fenster **Übersetzungsauftrag** werden alle Elemente des Auftrags aufgelistet.
    ![Detail des Übersetzungsauftrags](assets/translation-job-detail.png)
 1. Tippen oder klicken Sie auf eine Zeile, um die Details dieser Zeile anzuzeigen. Dabei ist zu beachten, dass eine Zeile mehrere zu übersetzende Inhaltselemente darstellen kann.
@@ -226,7 +226,7 @@ Wenn Sie über **Navigation** > **Dateien** > **Assets** zu diesem Ordner navigi
 
 Das Übersetzungs-Framework von AEM erhält die Übersetzungen vom Übersetzungs-Connector und erstellt dann automatisch die Inhaltsstruktur, basierend auf dem Sprachstamm und unter Verwendung der vom Connector bereitgestellten Übersetzungen.
 
-Es ist wichtig zu verstehen, dass diese Inhalte nicht veröffentlicht werden und daher nicht für Ihre Headless-Services verfügbar sind. Im nächsten Schritt der Übersetzungs-Tour lernen wir diese Autoren- und Veröffentlichungstruktur kennen und erfahren, wie wir unsere übersetzten Inhalte veröffentlichen.
+Es ist wichtig zu verstehen, dass diese Inhalte nicht veröffentlicht werden und daher nicht für Ihre Headless-Services verfügbar sind. Sie erfahren mehr über diese Autoren- und Veröffentlichungsstruktur und erfahren, wie Sie übersetzte Inhalte im nächsten Schritt der Übersetzungs-Journey veröffentlichen.
 
 ## Menschliche Übersetzung {#human-translation}
 
@@ -242,7 +242,7 @@ Nachdem Sie nun diesen Teil der Headless-Übersetzungs-Tour abgeschlossen haben,
 * Neue Übersetzungsprojekte erstellen können.
 * Übersetzungsprojekte verwenden können, um Ihre Headless-Inhalte zu übersetzen.
 
-Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Headless-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Veröffentlichen übersetzter Inhalte](publish-content.md) lesen. Dort lernen Sie, wie Sie übersetzte Inhalte veröffentlichen und wie Sie diese Übersetzungen aktualisieren, wenn sich die Inhalte Ihres Sprachstamms ändern.
+Auf diesen Erkenntnissen aufbauen und Ihre Journey-zur Headless-AEM-Übersetzung fortsetzen, indem Sie das Dokument erneut überprüfen. [Übersetzten Inhalt veröffentlichen](publish-content.md) Hier erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und diese Übersetzungen aktualisieren können, wenn sich Ihr Sprachstamm ändert.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

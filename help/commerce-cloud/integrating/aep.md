@@ -11,10 +11,10 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2076'
-ht-degree: 97%
+source-wordcount: '2074'
+ht-degree: 96%
 
 ---
 
@@ -440,7 +440,7 @@ Um das Ereignis zu triggern, können Sie den AEM-Autor oder den Veröffentlichun
 
 1. Klicken Sie in der oberen Aktionsleiste auf __Als veröffentlicht anzeigen__ und klicken Sie dann in der Navigation der Storefront auf eine beliebige bevorzugte Kategorie.
 
-1. Klicken Sie auf eine beliebige Produktkarte auf der __Produktseite__ und wählen Sie __Farbe, Größe__, um die Schaltfläche __Zum Warenkorb hinzufügen__ zu aktivieren.
+1. Klicken Sie auf eine beliebige Produktkarte im __Produktseite__, wählen Sie __Farbe, Größe__ um die __Zum Warenkorb hinzufügen__ Schaltfläche.
 
 
 1. Öffnen Sie im Erweiterungsbedienfeld des Browsers die Erweiterung __Adobe Experience Platform Debugger__ und wählen Sie in der linken Leiste __Experience Platform Web SDK__.

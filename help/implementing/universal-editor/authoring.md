@@ -2,10 +2,10 @@
 title: Inhaltserstellung mit dem universellen Editor
 description: Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: c6d4300e6e031a4958277fa3bce251ac6aa5dbc9
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 32%
+source-wordcount: '2432'
+ht-degree: 31%
 
 ---
 
@@ -38,7 +38,7 @@ Um Inhalte für eine App mit dem universellen Editor erstellen zu können, muss 
 
 ## Anmelden {#sign-in}
 
-Sobald die App für die Verwendung mit dem universellen Editor konfiguriert wurde, müssen Sie sich beim universellen Editor anmelden. Sie benötigen eine Adobe ID, um sich anzumelden und [Zugang zum universellen Editor zu erhalten](getting-started.md#request-access).
+Nachdem die App für die Verwendung mit dem universellen Editor konfiguriert wurde, melden Sie sich beim universellen Editor an. Sie benötigen eine Adobe ID, um sich anzumelden und [haben Zugriff auf den universellen Editor.](getting-started.md#request-access)
 
 Geben Sie nach der Anmeldung die URL der Seite ein, die Sie bearbeiten möchten, im [Standortleiste.](#location-bar) damit Sie mit der Bearbeitung von Inhalten beginnen können, z. B. [Textinhalt](#text-mode) oder [Medieninhalte.](#media-mode)
 
@@ -192,7 +192,7 @@ Im Vorschaumodus wird die Seite im Editor so gerendert, wie sie in Ihrem veröff
 
 #### Komponentenmodus {#component-mode}
 
-Im Komponentenmodus kann der Inhaltsautor auf klicken, um Komponenten auszuwählen und sie zu bearbeiten, darunter:
+Im Komponentenmodus kann der Inhaltsautor Komponenten zur Bearbeitung auswählen, darunter:
 
 * [Bearbeiten von Normaltext](#editing-content) vorhanden sind.
 * [Rich-Text bearbeiten](#editing-rich-text) mit zusätzlichen Formatierungsoptionen, die in der Eigenschaftenleiste angezeigt werden.

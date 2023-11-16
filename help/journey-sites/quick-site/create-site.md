@@ -2,10 +2,10 @@
 title: Erstellen einer Site aus einer Vorlage
 description: Erfahren Sie, wie Sie mithilfe einer Site-Vorlage schnell eine neue AEM-Site erstellen können.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1506'
-ht-degree: 100%
+source-wordcount: '1504'
+ht-degree: 98%
 
 ---
 
@@ -75,13 +75,13 @@ Die Verwendung einer Vorlage zur Erstellung einer neuen Site ist sehr einfach.
 
    ![Erstellen einer neuen Site aus einer Vorlage](assets/create-site-from-template.png)
 
-1. Tippen oder klicken Sie im Assistenten zum Erstellen einer Site oben in der linken Spalte auf **Importieren**.
+1. Tippen oder klicken Sie im Assistenten oben in der linken Spalte auf **Importieren**.
 
    ![Assistent zur Site-Erstellung](assets/site-creation-wizard.png)
 
 1. Suchen Sie im Datei-Browser nach der Vorlage, die [Sie heruntergeladen haben](#obtaining-template), und tippen oder klicken Sie auf **Hochladen**.
 
-1. Nach dem Hochladen wird sie in der Liste der verfügbaren Vorlagen angezeigt. Tippen oder klicken Sie auf die Vorlage, um sie auszuwählen (dadurch werden auch Informationen über die Vorlage in der rechten Spalte angezeigt), und tippen oder klicken Sie dann auf **Weiter**.
+1. Nach dem Hochladen wird sie in der Liste der verfügbaren Vorlagen angezeigt. Tippen oder klicken Sie darauf, um die Vorlage auszuwählen (dadurch werden auch Informationen über die Vorlage in der rechten Spalte angezeigt) und tippen oder klicken Sie auf **Nächste**.
 
    ![Auswählen einer Vorlage](assets/select-site-template.png)
 

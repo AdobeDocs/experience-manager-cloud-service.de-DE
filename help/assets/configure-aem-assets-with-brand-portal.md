@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: ac393e4b275693fae7413fb79496052d106b219c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2589'
-ht-degree: 97%
+source-wordcount: '2585'
+ht-degree: 94%
 
 ---
 
@@ -48,7 +48,7 @@ Sie können Brand Portal während der Erstellung der Produktionsumgebungen für 
 
    Brand Portal darf für eine der verfügbaren Umgebungen verwendet werden und wird unter **[!UICONTROL Umgebungsinformationen]** angezeigt.
 
-   Sobald Sie die mit Brand Portal verknüpfte Umgebung gefunden haben, klicken Sie auf die Schaltfläche **[!UICONTROL Brand Portal aktivieren]**, um den Workflow für die Aktivierung zu starten.
+   Sobald Sie die mit Brand Portal verknüpfte Umgebung gefunden haben, klicken Sie auf das **[!UICONTROL Aktivieren von Brand Portal]** -Schaltfläche, um den Aktivierungs-Workflow zu starten.
 
    ![Brand Portal aktivieren](assets/create-environment4.png)
 
@@ -86,7 +86,7 @@ Führen Sie die folgenden Schritte aus, wenn Sie sich nicht sicher sind, wie die
 
 1. Melden Sie sich bei der [Admin Console](https://adminconsole.adobe.com/) an und navigieren Sie zu **[!UICONTROL Produkte]**.
 1. Wählen Sie im linken Bedienfeld **[!UICONTROL Adobe Experience Manager Brand Portal – Brand Portal]** aus.
-1. Klicken Sie auf **[!UICONTROL Wechseln zu Brand Portal]**, um Brand Portal direkt im Browser zu öffnen.
+1. Klicks **[!UICONTROL Navigieren zu Brand Portal]** , um Brand Portal direkt im Browser zu öffnen.
 
    Oder kopieren Sie die URL des Brand Portal-Mandanten aus dem Link **[!UICONTROL Wechseln zu Brand Portal]** und fügen Sie sie in Ihren Browser ein, um die Benutzeroberfläche von Brand Portal zu öffnen.
 
@@ -122,7 +122,7 @@ Führen Sie die folgenden Schritte durch, um die Verbindung zwischen Ihrer Insta
 
    ![Verarbeitungswarteschlange für die Verteilung von Assets](assets/test-bpconfig3.png)
 
-1. Um die Verbindung zwischen Experience Manager Assets as a [!DNL Cloud Service] und Brand Portal zu überprüfen, klicken Sie auf das Symbol **[!UICONTROL Verbindung testen]**.
+1. Überprüfen der Verbindung zwischen Experience Manager Assets as a [!DNL Cloud Service] und Brand Portal klicken Sie auf die **[!UICONTROL Verbindung testen]** Symbol.
 
    ![Überprüfen der Verbindung zwischen AEM und Brand Portal](assets/test-bpconfig4.png)
 
@@ -290,7 +290,7 @@ Führen Sie die folgenden Schritte aus, um die Anmeldeinformationen für das Ser
 
    ![Profil auswählen](assets/service-account4.png)
 
-1. Sobald die API konfiguriert ist, werden Sie zur Seite mit der API-Übersicht weitergeleitet. Klicken Sie in der linken Navigation unter **[!UICONTROL Anmeldedaten]** auf die Option **[!UICONTROL Service-Konto (JWT)]**.
+1. Sobald die API konfiguriert ist, werden Sie zur Seite mit der API-Übersicht weitergeleitet. Von der linken Navigation unter **[!UICONTROL Anmeldeinformationen]**, klicken Sie auf die **[!UICONTROL Dienstkonto (JWT)]** -Option.
 
    >[!NOTE]
    >
@@ -444,7 +444,7 @@ Perform the following steps to validate the configuration:
 
    ![test-bpconfig3](assets/test-bpconfig3.png)
 
-1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
+1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click the **[!UICONTROL Test Connection]** icon.
 
    ![test-bpconfig4](assets/test-bpconfig4.png)
 

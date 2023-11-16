@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie AEM verwenden, um eine Site mithilfe von Site
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '775'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '774'
+ht-degree: 96%
 
 ---
 
@@ -59,7 +59,7 @@ Die Verwendung einer Vorlage zum Erstellen einer Site ist einfach.
 
    ![Erstellen einer Site aus einer Vorlage](../assets/create-site-from-template.png)
 
-1. Tippen oder klicken Sie im Seitenerstellungsassistenten auf eine vorhandene Vorlage im linken Bereich oder auf **Importieren** oben in der linken Spalte, um eine neue Vorlage zu importieren.
+1. Tippen oder klicken Sie im Assistenten Site erstellen auf eine vorhandene Vorlage im linken Bereich oder auf **Import** oben in der linken Spalte, um eine neue Vorlage zu importieren.
 
    ![Assistent zur Site-Erstellung](../assets/site-creation-wizard.png)
 

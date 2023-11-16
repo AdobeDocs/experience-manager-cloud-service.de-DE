@@ -3,9 +3,9 @@ title: Best Practices für Abfragen und Indizierung
 description: Erfahren Sie, wie Sie Ihre Indizes und Abfragen anhand der Best-Practice-Richtlinien von Adobe optimieren können.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3144'
+source-wordcount: '3133'
 ht-degree: 49%
 
 ---
@@ -120,7 +120,7 @@ Die Tabellen &quot;Langsame Abfragen&quot;und &quot;Beliebte Abfragen&quot;umfas
 * Die Abfrageanweisung selbst.
 * Details des letzten Thread, der die Abfrage ausgeführt hat, sodass die Seite oder die Anwendungsfunktion identifiziert werden kann, die die Abfrage ausführt.
 * Ein &quot;Leseoptimierungswert&quot;für die Abfrage.
-   * Dies wird als Verhältnis zwischen der Anzahl der Zeilen/Knoten berechnet, die zur Ausführung der Abfrage überprüft werden, und der Anzahl der gelesenen übereinstimmenden Ergebnisse.
+   * Dies wird als Verhältnis zwischen der Anzahl der Zeilen/Knoten berechnet, die zur Ausführung der Abfrage gescannt wurden, und der Anzahl der gelesenen übereinstimmenden Ergebnisse.
    * Eine Abfrage, für die jede Einschränkung (und jede Bestellung) am Index verarbeitet werden kann, ergibt in der Regel 90 % oder mehr.
 * Details zur maximalen Zeilenanzahl -
    * Gelesen - gibt an, dass eine Zeile Teil eines Ergebnissatzes war.
@@ -137,6 +137,7 @@ Mit dem Tool Abfrage erklären können Entwickler den Ausführungsplan für Abfr
 #### Abfrage erläutern
 
 Gehen Sie wie folgt vor, um eine Abfrage zu erklären:
+
 * Wählen Sie die entsprechende Abfragesprache mithilfe der `Language` Dropdown.
 * Geben Sie die Abfrage-Anweisung in die `Query` -Feld.
 * Wählen Sie bei Bedarf mithilfe der bereitgestellten Kontrollkästchen aus, wie die Abfrage ausgeführt werden soll.

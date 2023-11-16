@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit dem universellen Editor beliebige Aspekte
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 2c7ad41ec44ed2627bfcfe206c1b7ba660cef9c0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '969'
 ht-degree: 11%
 
 ---
@@ -35,7 +35,7 @@ Die Bearbeitung an Ort und Stelle und im Kontext kann häufig von Vorteil gegen�
 
 >[!NOTE]
 >
->Um den universellen Editor in dieser Testversion verwenden zu können, müssen Sie Chrome als Browser und nicht im Inkognito-Modus verwenden. Dies ist eine Einschränkung der Testerfahrung, nicht des universellen Editors.
+>Um den universellen Editor in dieser Testversion zu verwenden, müssen Sie Chrome als Browser und nicht im Inkognito-Modus verwenden. Dies ist eine Einschränkung der Testerfahrung, nicht des universellen Editors.
 
 Mit dem universellen Editor können Sie Ihren Text im Kontext und an Ort und Stelle flexibel bearbeiten und so einfache und intuitive Inhaltserstellung ermöglichen.
 
@@ -79,7 +79,7 @@ Mit dem universellen Editor können Sie mit Ihren Inhalten in ihrem Kontext inte
 
    ![Menüelement &quot;Emulator&quot;](assets/do-not-localize/ue-emulator-1.png)
 
-1. Reader können sich auf verschiedenen Geräten mit unterschiedlichen Seitenverhältnissen befinden, sodass der Editor Emulationsmodi anbietet, um zu sehen, wie die Seite Benutzern angezeigt wird. Wählen Sie beispielsweise die Mobilgeräteoption im Hochformat aus.
+1. Reader können sich auf verschiedenen Geräten mit unterschiedlichen Seitenverhältnissen befinden. Daher bietet der Editor Emulationsmodi, um zu sehen, wie die Seite Benutzern angezeigt wird. Wählen Sie beispielsweise die Mobilgeräteoption im Hochformat aus.
 
    ![Menüelement &quot;Emulator&quot;](assets/do-not-localize/ue-emulator-2.png)
 

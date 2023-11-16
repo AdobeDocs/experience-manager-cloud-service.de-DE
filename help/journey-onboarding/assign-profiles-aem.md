@@ -1,13 +1,13 @@
 ---
 title: Zuweisen von AEM-Produktprofilen
-description: Nachdem Sie Ihre Cloud-Ressourcen konfiguriert haben, müssen Sie Ihrem Team mithilfe von AEM-Produktprofilen Zugriff auf AEM gewähren.
+description: Nachdem Sie Ihre Cloud-Ressourcen konfiguriert haben, gewähren Sie Ihrem Team mithilfe AEM Produktprofilen Zugriff auf AEM selbst.
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 97%
+source-wordcount: '886'
+ht-degree: 79%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 97%
 >title="Zuweisen von AEM-Produktprofilen"
 >abstract="Sie sind nicht berechtigt, Experience Manager Assets zu verwenden. Kontaktieren Sie diesbezüglich Ihre Admins."
 
-In diesem Teil der [Onboarding-Journey](overview.md) erfahren Sie, wie Sie Ihrem Team mithilfe von AEM-Produktprofilen Zugriff auf AEM gewähren.
+In diesem Teil des [Onboarding-Journey,](overview.md) Hier erfahren Sie, wie Sie Ihrem Team mithilfe AEM Produktprofilen Zugriff auf AEM gewähren.
 
 ## Ziel {#objective}
 
-Nachdem Sie das vorherige Dokument [Umgebungen erstellen](create-environments.md) in dieser Onboarding-Journey gelesen haben und Ihre Cloud-Ressourcen konfiguriert haben, müssen Sie Ihrem Team mithilfe von AEM-Produktprofilen Zugriff auf AEM gewähren. Als Systemadmin weisen Sie dazu AEM-Produktprofile zu.
+Nachdem Sie das vorherige Dokument in dieser Onboarding-Journey gelesen haben, [Erstellen von Umgebungen,](create-environments.md) und lassen Sie Ihre Cloud-Ressourcen konfiguriert sein, gewähren Sie Ihrem Team Zugriff auf AEM selbst mithilfe AEM Produktprofilen. Als Systemadmin weisen Sie dazu AEM-Produktprofile zu.
 
 Nach dem Lesen dieses Dokuments wissen Sie Folgendes:
 
@@ -74,7 +74,7 @@ Führen Sie diese Schritte aus, um die AEM-Produktprofile aus Admin Console anzu
 
    ![Instanz auswählen](/help/journey-onboarding/assets/cloud-profiles-1.png)
 
-1. Sie sehen die Liste der AEM as a Cloud Service-Produktprofile, die Benutzenden basierend auf ihrer Rolle zugewiesen werden müssen.
+1. Sie können die Liste AEM as a Cloud Service Produktprofile anzeigen, die einem Benutzer basierend auf seinen Benutzerrollen zugewiesen werden können.
 
    ![Produktprofile](/help/journey-onboarding/assets/cloud-profiles-2.png)
 
@@ -92,7 +92,7 @@ Für diese Aufgaben müssen Sie Systemadmin für das Produktprofil **Geschäftsi
 
    ![Zugriff zuweisen](/help/journey-onboarding/assets/add-team2.png)
 
-1. Wählen Sie `AEM Administrator` oder `AEM User` aus und klicken Sie auf **Benutzer hinzufügen**, wie unten dargestellt. Übermitteln Sie die erforderlichen Details, um das Hinzufügen des Team-Mitglieds abzuschließen.
+1. Auswählen `AEM Administrator` oder `AEM User` und klicken **Benutzer hinzufügen** wie unten gezeigt, und senden Sie die erforderlichen Details, um das Hinzufügen des Teammitglieds abzuschließen.
 
    ![Team-Mitglied hinzufügen](/help/journey-onboarding/assets/add-team3.png)
 
@@ -106,8 +106,8 @@ Herzlichen Glückwunsch! Die Benutzenden, die Sie AEM as a Cloud Service-Produkt
 
 Wenn Sie jedoch besser verstehen möchten, wie Autoren und Entwickler das System verwenden, können Sie mit zwei optionalen Teilen dieser Onboarding-Journey fortfahren:
 
-* [Aufgaben für Entwickler und Bereitstellungs-Manager](developers.md) - Hier erfahren Sie, wie Entwickler Git verwenden, um ihren benutzerdefinierten Code zu speichern und ihn mithilfe von Cloud Manager-Pipelines bereitzustellen.
-* [AEM-Benutzeraufgaben](aem-users.md) - Hier erfahren Sie, wie Sie in die AEM-Umgebung gelangen, in der Sie Inhalte erstellen können.
+* [Aufgaben für Entwickler und Bereitstellungs-Manager](developers.md) - Hier erfahren Sie, wie Entwickler auf Git zugreifen, um ihren benutzerdefinierten Code zu speichern und ihn mithilfe von Cloud Manager-Pipelines bereitzustellen.
+* [AEM Benutzeraufgaben](aem-users.md) - Hier erfahren Sie, wie Sie auf die AEM-Umgebung zugreifen können, in der Sie mit der Erstellung von Inhalten beginnen können.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

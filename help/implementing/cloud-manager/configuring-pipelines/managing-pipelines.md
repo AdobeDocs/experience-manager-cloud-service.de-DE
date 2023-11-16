@@ -3,10 +3,10 @@ title: Verwalten von Pipelines
 description: Erfahren Sie, wie Sie Ihre vorhandenen Pipelines verwalten, einschließlich Bearbeiten, Ausführen und Löschen.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 01a89f779689733fb82a556291e091026def63e0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 59%
+source-wordcount: '952'
+ht-degree: 46%
 
 ---
 
@@ -41,7 +41,7 @@ Die **Pipelines** zeigt eine vollständige Liste aller Pipelines für das ausgew
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Aus dem **Programmübersicht** Seite, tippen oder klicken Sie auf **Pipelines** Registerkarte, um zu der **Pipelines** Fenster.
+1. Aus dem **Programmübersicht** Tippen oder klicken Sie auf **Pipelines** Registerkarte, um zu der **Pipelines** Fenster.
 
 1. Hier sehen Sie eine Liste aller Pipelines für das Programm sowie die Ausführung der Pipeline wie im **Pipelines Card**.
 
@@ -57,7 +57,7 @@ Die **Tätigkeiten** zeigt eine vollständige Liste aller Pipelines-Ausführunge
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Aus dem **Programmübersicht** Seite, tippen oder klicken Sie auf **Aktivität** Registerkarte, um zu der **Aktivität** Fenster.
+1. Aus dem **Programmübersicht** Tippen oder klicken Sie auf **Aktivität** Registerkarte, um zu der **Aktivität** Fenster.
 
 1. Hier sehen Sie eine Liste aller Pipeline-Ausführungen für das Programm, einschließlich aktueller und historischer Ausführungen.
 
@@ -71,7 +71,7 @@ Tippen oder Klicken **Details anzeigen** bringt Sie zu [Details zur Pipelineausf
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Navigieren Sie von der Seite **Programmübersicht** zur Karte **Pipelines**, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der Pipeline, die Sie ausführen, und wählen Sie im Menü **Ausführen** aus.
+1. Navigieren Sie zum **Pipelines** Karte aus der **Programmübersicht** und klicken Sie auf die Suchschaltfläche neben der Pipeline, die Sie ausführen, wählen Sie **Ausführen** aus dem Menü.
 
 1. Der Pipeline-Ausführung beginnt und wird durch die Spalte **Status** angezeigt.
 
@@ -83,7 +83,7 @@ Je nach Pipeline-Typ können Sie die Ausführung möglicherweise abbrechen, inde
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Navigieren Sie von der Seite **Programmübersicht** zur Karte **Pipelines**, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der Pipeline, die Sie bearbeiten möchten, und wählen Sie im Menü **Bearbeiten** aus.
+1. Navigieren Sie zum **Pipelines** Karte aus der **Programmübersicht** und klicken Sie auf die Suchschaltfläche neben der Pipeline, die Sie bearbeiten möchten, und wählen Sie **Bearbeiten** aus dem Menü.
 
 1. Daraufhin wird das Dialogfeld **Produktions-Pipeline bearbeiten** oder **Produktionsfremde Pipeline bearbeiten** angezeigt, sodass Sie die Details bearbeiten können, die Sie beim Erstellen der Pipeline eingegeben haben.
 
@@ -91,7 +91,7 @@ Je nach Pipeline-Typ können Sie die Ausführung möglicherweise abbrechen, inde
       * [Konfigurieren von Produktions-Pipelines](configuring-production-pipelines.md)
       * [Konfigurieren von produktionsfremden Pipelines](configuring-non-production-pipelines.md)
 
-1. Klicken Sie auf **Aktualisieren**, nachdem Sie die Pipeline bearbeitet haben.
+1. Klicks **Aktualisieren** nachdem Sie die Pipeline bearbeitet haben.
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ Je nach Pipeline-Typ können Sie die Ausführung möglicherweise abbrechen, inde
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Navigieren Sie von der Seite **Programmübersicht** zur Karte **Pipelines**, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der Pipeline, die Sie löschen möchten, und wählen Sie im Menü **Löschen** aus.
+1. Navigieren Sie zum **Pipelines** Karte aus der **Programmübersicht** und klicken Sie auf die Suchschaltfläche neben der Pipeline, die Sie ausführen, wählen Sie **Löschen** aus dem Menü.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Sie können die Details einer Pipeline anzeigen, um den Status und die Protokoll
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Navigieren Sie von der Seite **Programmübersicht** zur Karte **Pipelines**, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der Pipeline, die Sie ausführen, und wählen Sie **Details anzeigen** aus dem Menü.
+1. Navigieren Sie zum **Pipelines** Karte aus der **Programmübersicht** und klicken Sie auf die Suchschaltfläche neben der Pipeline, die Sie ausführen, wählen Sie **Details anzeigen** aus dem Menü.
 
 1. Sie gelangen zur Detailseite der Pipeline, die gerade ausgeführt wird.
 

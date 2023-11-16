@@ -3,13 +3,13 @@ title: Inhaltsfragmentmodelle
 description: Erfahren Sie, wie Inhaltsfragmentmodelle als Grundlage für Ihre Inhaltsfragmente in AEM verwendet werden. Mit diesen Fragmenten können Sie strukturierte Inhalte erstellen, die für die Headless-Bereitstellung oder die Seitenbearbeitung verwendet werden können.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3064'
-ht-degree: 58%
+source-wordcount: '3061'
+ht-degree: 60%
 
 ---
-
 
 # Inhaltsfragmentmodelle {#content-fragment-models}
 
@@ -26,7 +26,7 @@ So verwenden Sie Inhaltsfragmentmodelle:
 
 1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann **Inhaltsfragmentmodelle**.
 1. Navigieren Sie zu dem Ordner, der Ihrer [Konfiguration oder Unterkonfiguration](/help/sites-cloud/administering/content-fragments/setup.md).
-1. Verwendung **Erstellen** , um den Assistenten zu öffnen.
+1. Verwenden Sie **Erstellen**, um den Assistenten zu öffnen.
 
    >[!CAUTION]
    >
@@ -42,7 +42,7 @@ Sie können auch verschiedene Eigenschaften definieren, beispielsweise **Tags**,
 
    ![Titel und Beschreibung](assets/cf-cfmodels-create.png)
 
-1. Verwendung **Erstellen** , um das leere Modell zu speichern. Eine Meldung weist auf den Erfolg der Aktion hin. Sie können **Öffnen** das Modell sofort bearbeiten oder **Fertig** , um zur Konsole zurückzukehren.
+1. Verwenden Sie **Erstellen**, um das leere Modell zu speichern. Eine Meldung weist auf den Erfolg der Aktion hin. Sie können **Öffnen** das Modell sofort bearbeiten oder **Fertig** , um zur Konsole zurückzukehren.
 
 ### Inhaltsfragmentmodell – Eigenschaften {#content-fragment-model-properties}
 
@@ -97,7 +97,7 @@ Das Inhaltsfragmentmodell definiert die Struktur der resultierenden Inhaltsfragm
 
    Nach dem Öffnen zeigt der Modell-Editor Folgendes an:
 
-   * left: Felder bereits definiert
+   * Links: bereits definierte Felder
    * Rechts: verfügbare **Datentypen** für das Erstellen von Feldern (und **Eigenschaften**, die für erstellte Felder verwendet werden können)
 
    >[!NOTE]
@@ -121,9 +121,9 @@ Das Inhaltsfragmentmodell definiert die Struktur der resultierenden Inhaltsfragm
         >
         >Beim manuellen Aktualisieren der Eigenschaft **Eigenschaftsname** für einen Datentyp müssen Namen *only* A-Z, a-z, 0-9 und Unterstrich &quot;_&quot;als Sonderzeichen.
         >
-        >Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder aktualisieren Sie diese Zeichen.
+        >Wenn Modelle, die in früheren Versionen von AEM erstellt wurden, unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
-     Zum Beispiel:
+     Beispiel:
 
      ![Feldeigenschaften](assets/cf-cfmodels-field-properties.png)
 
@@ -133,7 +133,7 @@ Das Inhaltsfragmentmodell definiert die Struktur der resultierenden Inhaltsfragm
 
    ![Remove](assets/cf-cfmodels-remove-icon.png)
 
-1. Fügen Sie alle erforderlichen Felder hinzu und legen Sie bei Bedarf die zugehörigen Eigenschaften fest. Zum Beispiel:
+1. Fügen Sie alle erforderlichen Felder hinzu und legen Sie bei Bedarf die zugehörigen Eigenschaften fest. Beispiel:
 
    ![Speichern](assets/cf-cfmodels-save.png)
 
@@ -175,7 +175,7 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 * **JSON-Objekt**
    * Ermöglicht dem Inhaltsfragmentautor die Eingabe der JSON-Syntax in die entsprechenden Elemente eines Fragments.
       * Damit AEM direktes JSON speichern kann, das Sie von einem anderen Service kopiert/eingefügt haben.
-      * Die JSON-Datei wird in GraphQL als JSON-Datei übergeben und ausgegeben.
+      * Das JSON wird weitergegeben und als JSON in GraphQL ausgegeben.
       * Enthält JSON-Syntaxhervorhebung, automatische Vervollständigung und Fehlerhervorhebung im Inhaltsfragment-Editor.
 * **Registerkarten-Platzhalter**
    * Ermöglicht die Einführung von Registerkarten zur Bearbeitung des Inhalts von Inhaltsfragmenten.
@@ -199,10 +199,10 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
   >Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
 * **Rendern als**
-Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Oft können Sie damit festlegen, ob dem Autor nur eine einzige Instanz des Feldes angezeigt wird oder ob er mehrere Instanzen erstellen darf.
+Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Häufig können Sie damit definieren, ob der Autor eine einzelne Instanz des Felds sieht oder ob es möglich ist, mehrere Instanzen zu erstellen.
 
 * **Feldbezeichnung**
-Durch die Eingabe einer **Feldbezeichnung** automatisch generiert eine **Eigenschaftsname**, die dann bei Bedarf manuell aktualisiert werden kann.
+Eingabe einer **Feldbezeichnung** automatisch generiert eine **Eigenschaftsname**, die dann bei Bedarf manuell aktualisiert werden kann.
 
 * **Validierung**
 Die grundlegende Basic ist mittels Mechanismen wie etwa die Eigenschaft **Erforderlich** verfügbar. Einige Datentypen verfügen über zusätzliche Validierungsfelder. Weitere Informationen finden Sie unter [Validierung](#validation).
@@ -222,7 +222,7 @@ Der Inhalt (für das spezifische Feld) muss für alle Inhaltsfragmente eindeutig
 
   Dadurch wird sichergestellt, dass Inhaltsersteller Content, der bereits einem anderen Fragment desselben Modells hinzugefügt wurde, nicht wiederholen können.
 
-  Beispielsweise kann ein **einzeiliges Textfeld** mit dem Namen `Country` im Inhaltsfragmentmodell nicht den Wert `Japan` in zwei abhängigen Inhaltsfragmenten haben. Wenn die zweite Instanz versucht wird, wird eine Warnung angezeigt.
+  Beispielsweise kann ein **einzeiliges Textfeld** mit dem Namen `Country` im Inhaltsfragmentmodell nicht den Wert `Japan` in zwei abhängigen Inhaltsfragmenten haben. Eine Warnung wird ausgegeben, wenn versucht wird, eine zweite Instanz zu erstellen.
 
   >[!NOTE]
   >
@@ -269,7 +269,6 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 * **[Fragmentreferenz](#fragment-reference-nested-fragments)** (verschachtelte Fragmente)
    * Verweist auf andere Fragmente, abhängig von den angegebenen Modellen.
    * Ermöglicht das Einschließen/Abrufen strukturierter Daten.
-
      >[!NOTE]
      >
      >Diese Methode ist bei der Verwendung von [Headless-Content-Bereitstellung mit Inhaltsfragmenten mit GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
@@ -316,7 +315,7 @@ Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
 Die Fragmentreferenz verweist auf ein oder mehrere Inhaltsfragmente. Diese Funktion ist besonders beim Abrufen von Inhalten für die Verwendung in Ihrer App interessant, da Sie damit strukturierte Daten mit mehreren Ebenen abrufen können.
 
-Zum Beispiel:
+Beispiel:
 
 * Ein Modell, das Details für einen Mitarbeiter definiert, einschließlich:
    * Ein Verweis auf das Modell, das den Arbeitgeber definiert (Firma)
@@ -487,9 +486,9 @@ So machen Sie die Veröffentlichung eines Inhaltsfragmentmodells rückgängig:
 
 1. Navigieren Sie zum Ordner mit Ihrem Inhaltsfragmentmodell.
 1. Wählen Sie Ihr Modell und anschließen die Option **Veröffentlichung aufheben** aus der Symbolleiste aus.
-Der veröffentlichte Status wird in der Konsole angezeigt.
+Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
 
-Wenn Sie versuchen, die Veröffentlichung eines Modells aufzuheben, das derzeit von einem oder mehreren Fragmenten verwendet wird, wird eine Fehlerwarnung angezeigt. Zum Beispiel:
+Wenn Sie versuchen, die Veröffentlichung eines Modells aufzuheben, das derzeit von einem oder mehreren Fragmenten verwendet wird, wird eine Fehlerwarnung angezeigt. Beispiel:
 
 ![Fehlermeldung zum Inhaltsfragmentmodell beim Rückgängigmachen der Veröffentlichung eines verwendeten Modells](assets/cf-cfmodels-unpublish-error.png)
 

@@ -4,17 +4,17 @@ description: Auf dieser Seite erfahren Sie, wie Sie Team-Mitglieder den Cloud Ma
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '1532'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1528'
+ht-degree: 94%
 
 ---
 
 
 # Zuweisen von Team-Mitgliedern zu Cloud Manager-Produktprofilen {#assign-team-members}
 
-In diesem Teil der [Onboarding-Tour](overview.md) erfahren Sie, wie Sie Team-Mitglieder Cloud Manager-Produktprofilen zuweisen.
+In diesem Teil des [Onboarding-Journey,](overview.md) Hier erfahren Sie, wie Sie Team-Mitglieder Cloud Manager-Produktprofilen zuweisen.
 
 ## Ziel {#objective}
 
@@ -33,7 +33,7 @@ Nach dem Lesen dieses Dokuments wissen Sie Folgendes:
 
 ## Voraussetzungen {#prerequisites}
 
-Um Produktprofilen Team-Mitglieder zuweisen zu können, benötigen Sie Details zu Ihren Team-Mitgliedern, die auf AEM as a Cloud Service zugreifen müssen, darunter:
+Um Produktprofilen Teammitglieder zuzuweisen, benötigen Sie Informationen zu Ihren Teammitgliedern, die auf AEM as a Cloud Service zugreifen müssen, darunter:
 
 * Namen
 * E-Mail-Adressen
@@ -73,7 +73,7 @@ In der Admin Console können Sie die Liste der Cloud Manager-Profile einsehen.
 
    ![Cloud Manager](/help/journey-onboarding/assets/assign-team2.png)
 
-1. Sie sehen die Liste der vorkonfigurierten Cloud Manager-Produktprofile.
+1. Sie können die Liste der vorkonfigurierten Cloud Manager-Produktprofile anzeigen.
 
    ![Produktprofile](/help/journey-onboarding/assets/assign-team3.png)
 
@@ -175,9 +175,9 @@ In diesem Teil der Onboarding-Tour haben Sie alles über das Zuweisen Ihrer Team
 * Überblick darüber, was Produktprofile sind.
 * Überblick darüber, was Cloud Manager ist.
 * Überblick über die drei zentralen Cloud Manager-Produktprofile: **Geschäftsinhaber**, **Bereitstellungs-Manager** und **Entwickler**.
-* Sie können Teammitglieder den Cloud Manager-Produktprofilen zuordnen.
+* Sie können Team-Mitglieder den Cloud Manager-Produktprofilen zuordnen.
 
-Wie Sie nun mit der Onboarding-Journey fortfahren, erfahren Sie im Dokument [Zugriff auf Cloud Manager](cloud-manager.md). Hier wird beschrieben, wie Sie auf Cloud Manager zugreifen und Ihre Projektressourcen erstellen.
+Sie können jetzt mit dem Onboarding-Journey fortfahren, indem Sie das Dokument erneut überprüfen. [Zugriff auf Cloud Manager,](cloud-manager.md) Hier erfahren Sie, wie Sie auf Cloud Manager zugreifen und Ihre Projektressourcen erstellen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

@@ -2,10 +2,10 @@
 title: Grundlegendes zur CMS-Headless-Entwicklung
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Headless-Technologie und darüber, warum Sie sie verwenden sollten.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1638'
-ht-degree: 98%
+source-wordcount: '1636'
+ht-degree: 93%
 
 ---
 
@@ -106,7 +106,7 @@ Es ist unmöglich, die Zukunft vorherzusagen, aber Headless gibt Ihnen die Agili
 
 ## AEM und Headless {#aem-and-headless}
 
-Wenn Sie mit dieser Entwickler-Tour fortfahren, erfahren Sie, wie AEM die Headless-Bereitstellung neben den Funktionen für die Full-Stack-Bereitstellung unterstützt.
+Wenn Sie mit dieser Entwickler-Journey fortfahren, erfahren Sie, wie AEM die Headless-Bereitstellung neben den Funktionen für die Bereitstellung im vollen Stapel unterstützt.
 
 Als Branchenführer im Bereich Digital Experience Management hat Adobe erkannt, dass die ideale Lösung für die Herausforderungen der realen Welt, vor denen Entwickler von Erlebnissen stehen, selten eine binäre Wahl ist. Aus diesem Grund unterstützt AEM nicht nur beide Modelle, sondern ermöglicht auf einzigartige Weise die nahtlose hybride Kombination der beiden, die die Vorteile von Headless und Full-Stack vereint, damit Sie die Konsumenten Ihrer Inhalte optimal bedienen können, egal wo sie sich befinden.
 
@@ -120,7 +120,7 @@ Danke für Ihren Einstieg in die AEM Headless-Tour! Nachdem Sie dieses Dokument 
 * verstehen, warum und wann Headless erforderlich ist,
 * grundsätzlich wissen, wie Headless-Konzepte verwendet werden und wie sie miteinander zusammenhängen.
 
-Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Headless-Tour fort, indem Sie als Nächstes das Dokument [Erste Schritte mit AEM Headless as a Cloud Service](getting-started.md) lesen, in dem Sie erfahren, wie Sie die erforderlichen Tools einrichten und wie Sie damit beginnen können, darüber nachzudenken, wie AEM an die Headless-Inhaltsbereitstellung herangeht und welche Voraussetzungen dafür erforderlich sind.
+Auf diesem Wissen aufbauen und Ihre AEM Headless-Journey fortsetzen, indem Sie das Dokument erneut überprüfen [Erste Schritte mit AEM Headless as a Cloud Service](getting-started.md) Hier erfahren Sie, wie Sie die erforderlichen Tools einrichten und wie Sie damit beginnen, darüber nachzudenken, wie AEM die Headless-Bereitstellung von Inhalten und deren Voraussetzungen angeht.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

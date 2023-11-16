@@ -2,10 +2,10 @@
 title: Überprüfen des Status von DNS-Einträgen
 description: Erfahren Sie, wie Sie mithilfe von Cloud Manager feststellen können, ob Ihre DNS-Einstellungen ordnungsgemäß aufgelöst werden.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '250'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ In Cloud Manager können Sie feststellen, ob Ihr Domain-Name ordnungsgemäß auf
 
 1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
-1. Klicken Sie im linken Navigationsbereich auf **Domain-Einstellungen**.
+1. Klicks **Domäneneinstellungen** im linken Navigationsbereich.
 
 1. Klicken Sie auf das Symbol **Status** für den Domain-Namen.
 

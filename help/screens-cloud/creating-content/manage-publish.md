@@ -2,10 +2,10 @@
 title: Veröffentlichen eines Kanals in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie einen Kanal in Screens as a Cloud Service veröffentlichen.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 95%
+source-wordcount: '304'
+ht-degree: 84%
 
 ---
 
@@ -35,14 +35,14 @@ Gehen Sie wie folgt vor, um den Kanal zu veröffentlichen:
 
 1. Klicken Sie in der Aktionsleiste auf **Veröffentlichung verwalten**.
 
-1. Wählen Sie die **Aktion** **Veröffentlichen** und **Planung** und **Jetzt** im **Assistenten „Veröffentlichung verwalten“** aus und klicken Sie auf **Weiter**.
+1. Wählen Sie die **Aktion** as **Veröffentlichen** und **Planung** as **Jetzt** aus dem **Assistenten &quot;Veröffentlichung verwalten&quot;** und klicken **Nächste**.
 
    ![Veröffentlichungsaktion auswählen](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
    >Klicken Sie in der Aktionsleiste auf **Untergeordnete Elemente einschließen**. Deaktivieren Sie alle Optionen, um alle Module im Projekt zu veröffentlichen, und klicken Sie auf „Hinzufügen“, um sie zu veröffentlichen. Standardmäßig werden alle Felder markiert, und Sie müssen die Kontrollkästchen manuell deaktivieren, um alle Module in Ihrem Projekt zu veröffentlichen.
 
-1. Nachdem Sie den Kanal im Assistenten **Veröffentlichung verwalten** ausgewählt haben, klicken Sie auf **Veröffentlichen**, um den Kanal zu veröffentlichen.
+1. Nach Auswahl des Kanals aus dem **Veröffentlichung verwalten** Assistent, klicken Sie auf **Veröffentlichen** um den Kanal zu veröffentlichen.
 
    ![Kanal veröffentlichen](/help/screens-cloud/assets/create-content/managepub-3.png)
 

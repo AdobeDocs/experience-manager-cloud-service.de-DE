@@ -2,10 +2,10 @@
 title: Live-Schaltung
 description: Erfahren Sie, wie Sie die Migration durchführen, sobald der Code und der Inhalt Cloud-fähig sind.
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 100%
+source-wordcount: '1704'
+ht-degree: 96%
 
 ---
 
@@ -138,7 +138,7 @@ Die beiden oben genannten Punkte werden im Bericht von [Best Practice Analyzer](
 * Konfigurieren Sie CDN, SSL und DNS.
    * Wenn Sie Ihr eigenes CDN verwenden, geben Sie ein Support-Ticket ein, um das entsprechende Routing zu konfigurieren.
       * Weitere Einzelheiten finden Sie im Abschnitt [Kunden-CDN verweist auf von AEM verwaltetes CDN](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) in der CDN-Dokumentation.
-      * Sie müssen SSL und DNS gemäß der Dokumentation Ihres CDN-Anbieters konfigurieren.
+      * Konfigurieren Sie SSL und DNS gemäß der Dokumentation Ihres CDN-Anbieters.
    * Wenn Sie kein zusätzliches CDN verwenden, verwalten Sie SSL und DNS gemäß der folgenden Dokumentation:
       * Verwalten von SSL-Zertifikaten
          * [Einführung – Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)

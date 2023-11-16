@@ -2,10 +2,10 @@
 title: Erstellen und Verwalten von Displays in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Displays in Screens as a Cloud Service erstellen und verwalten.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '663'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '659'
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ In diesem Dokument erfahren Sie, wie Sie in Screens Services Provider Displays e
 Gehen Sie wie folgt vor, um das Display über Screens Services Provider zu erstellen:
 
 1. Gehen Sie von Ihrer AEM Cloud Service-Instanz zu Screens Services Provider.
-1. Wählen Sie **Displays** aus dem linken Navigationsbereich und klicken Sie oben rechts im Bildschirm auf **Erstellen**.
+1. Auswählen **Anzeigen** Klicken Sie im linken Navigationsbereich auf **Erstellen** oben rechts im Bildschirm.
 
    ![image](/help/screens-cloud/assets/display/disp-1.png)
 
@@ -35,7 +35,7 @@ Gehen Sie wie folgt vor, um das Display über Screens Services Provider zu erste
 
    ![image](/help/screens-cloud/assets/display/disp-2.png)
 
-1. Geben Sie den Titel als **LoopingChannelDisplay** in **Display-Name** ein und klicken Sie auf **Erstellen**.
+1. Geben Sie den Titel als **LoopingChannelDisplay** in **Anzeigename** und klicken **Erstellen**.
 
    ![image](/help/screens-cloud/assets/display/disp3.png)
 
@@ -47,9 +47,9 @@ Gehen Sie wie folgt vor, um das Display über Screens Services Provider zu erste
 
 Sie können ein Display über Screens Services Provider löschen.
 
-Wählen Sie das Display aus und klicken Sie unten im Bedienfeld auf **Löschen**, wie in der folgenden Abbildung dargestellt.
+Wählen Sie die Anzeige aus und klicken Sie auf **Löschen** aus dem unteren Bereich des Bedienfelds, wie in der folgenden Abbildung dargestellt.
 
-![image](/help/screens-cloud/assets/display/disp-5.png)
+![Bild](/help/screens-cloud/assets/display/disp-5.png)
 
 ## Schritte zum Organisieren von Displays in Ordnern {#organize-display}
 
