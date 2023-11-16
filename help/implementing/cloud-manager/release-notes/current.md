@@ -3,7 +3,7 @@ title: Versionshinweise für Cloud Manager 2023.11.0 in Adobe Experience Manager
 description: Dies sind die Versionshinweise für Cloud Manager 2023.11.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 3a9eaa162d62cd3e674f14ba39ed7c96ad271f79
+source-git-commit: 4e2ea040ec14515525424b42f524601d34786cb8
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 14%
@@ -26,7 +26,7 @@ Version 2023.11.0 von Cloud Manager in AEM as a Cloud Service wurde am 14. Nove
 ## Neue Funktionen {#what-is-new}
 
 * Der Schutz der Web Application Firewall-DDOS (WAF-DDOS) ist jetzt im Rahmen Ihrer AEM as a Cloud Service Berechtigungen zum Kauf verfügbar. [kann auf Self-Service-Art konfiguriert werden.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-* Spezialisiert [Konfigurations-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) sind jetzt verfügbar, um Umgebungseinstellungen, Wartungsaufgaben, CDN-Regeln und mehr innerhalb von Minuten zu konfigurieren.
+* Spezialisiert [Konfigurations-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) sind jetzt verfügbar, um innerhalb von Minuten Traffic-Filterregeln, einschließlich WAF-Regeln, zu konfigurieren und bereitzustellen.
 * [Beim Kopieren von Inhalten](/help/implementing/developing/tools/content-copy.md) von einer höheren Umgebung in eine Entwicklungsumgebung zu übertragen, wird jetzt eine Meldung angezeigt, die beim Kopieren großer Inhaltssets Vorsicht weckt, da die Entwicklungsumgebungen nur über eine begrenzte Kapazität verfügen.
 * [Seite mit Details zur Pipelineausführung](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) zeigt nun alle Schritte in einer Pipeline-Ausführung an, bei denen die Schritte noch nicht ausgegraut wurden.
 * Bei beiden **[Aktivität](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** und **[Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** Seiten enthält, ist jetzt eine Zusammenfassung der Pipeline-Ausführung verfügbar, wenn auf eine Pipeline mit einem Ausführungsstatus geklickt wird.

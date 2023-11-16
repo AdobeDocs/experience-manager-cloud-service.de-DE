@@ -3,9 +3,9 @@ title: CI/CD-Pipelines
 description: Erfahren Sie mehr über die CI/CD-Pipelines in Cloud Manager und wie sie zur effizienten Bereitstellung Ihres Codes verwendet werden können.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
+source-git-commit: 8b8f10bfaad2d8d7d409384e01a2c65a588d77e0
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1423'
 ht-degree: 92%
 
 ---
@@ -53,7 +53,7 @@ Eine produktionsfremde Pipeline dient hauptsächlich dazu, Code-Qualitätsprüfu
 Neben Produktion und produktionsfremd können Pipelines nach dem Typ des von ihnen bereitgestellten Codes unterschieden werden.
 
 * **[Full-Stack-Pipelines](#full-stack-pipeline)**: Gleichzeitiges Bereitstellen von Backend- und Frontend-Code-Builds mit einer oder mehreren AEM-Serveranwendungen zusammen mit HTTPD-/Dispatcher-Konfigurationen
-* **[Config Pipelines](#config-deployment-pipeline)** - Konfigurieren Sie Einstellungen für Ihre AEM-Umgebung, Wartungsaufgaben, CDN-Regeln und mehr.
+* **[Config Pipelines](#config-deployment-pipeline)** - Konfigurieren und Bereitstellen von Traffic-Filterregeln, einschließlich WAF-Regeln, innerhalb von Minuten
 * **[Frontend-Pipelines](#front-end)**: Bereitstellen von Frontend-Code-Builds mit einer oder mehreren Client-seitigen Benutzeroberflächenanwendungen
 * **[Web-Ebenen-Konfigurations-Pipelines](#web-tier-config-pipelines)**: Bereitstellung von HTTPD-/Dispatcher-Konfigurationen
 
@@ -113,7 +113,7 @@ Informationen zum Konfigurieren von Full-Stack-Pipelines finden Sie in den folge
 
 ## Config Pipelines {#config-deployment-pipeline}
 
-Mit einer Konfigurationspipeline können Sie Konfigurationseinstellungen für Wartungsaufgaben, CDN-Regeln und mehr in Ihrer AEM bereitstellen.
+Mit einer Konfigurations-Pipeline können Sie innerhalb von Minuten Traffic-Filterregeln, einschließlich WAF-Regeln, konfigurieren und bereitstellen.
 
 Lesen Sie das Dokument . [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md) , um zu erfahren, wie Sie die Konfigurationen in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
 
@@ -129,10 +129,6 @@ Informationen zum Konfigurieren von Konfigurations-Pipelines finden Sie in den f
 Frontend-Code ist jeder Code, der als statische Datei bereitgestellt wird. Er ist nicht mit dem von AEM bereitgestellten UI-Code identisch und kann Site-Designs, kundendefinierte SPAs, SPAs und andere Lösungen umfassen.
 
 Frontend-Pipelines helfen Ihren Teams, Ihren Design- und Entwicklungsprozess zu optimieren, indem sie eine beschleunigte Bereitstellung von Frontend-Code ermöglichen, der asynchron von der Backend-Entwicklung ausgeführt wird. Diese dedizierte Pipeline stellt JavaScript und CSS als Design auf der AEM-Verteilungsebene bereit, was zu einer neuen Design-Version führt, die von Seiten referenziert werden kann, die von AEM bereitgestellt werden.
-
->[!IMPORTANT]
->
->Sie müssen mit der AEM-Version `2021.10.5933.20211012T154732Z ` oder höher arbeiten und AEM Sites aktivieren, um Frontend-Pipelines zu verwenden.
 
 >[!NOTE]
 >
