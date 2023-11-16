@@ -2,10 +2,10 @@
 title: Zugreifen auf und Verwalten von Protokollen
 description: Erfahren Sie, wie Sie auf Protokolle zugreifen und diese verwalten können, um Ihren Entwicklungsprozess in AEM as a Cloud Service zu unterstützen.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: c4bd0390fc67b3d8e985c0cd2b1f436ae13420ee
+source-git-commit: 7272f6ebd1b9c4e67985cba0221d8cafbeb1560a
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 91%
+source-wordcount: '345'
+ht-degree: 83%
 
 ---
 
@@ -18,7 +18,7 @@ Sie können über die Karte **Umgebungen** auf der Seite **Überblick** oder der
 
 ## Herunterladen von Protokollen {#download-logs}
 
-Gehen Sie wie folgt vor, um Protokolle herunterzuladen.
+Gehen Sie wie folgt vor, um Protokolle herunterzuladen:
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
@@ -32,11 +32,17 @@ Gehen Sie wie folgt vor, um Protokolle herunterzuladen.
 
    ![Dialog „Protokolle herunterladen“](assets/download-preview.png)
 
+   In diesem Fall [Zusätzliche Veröffentlichungsregionen](/help/operations/additional-publish-regions.md) für Ihre Umgebung aktiviert sind, können Sie jede Region auswählen und die Protokolle separat herunterladen, wie unten dargestellt:
+
+   ![Protokolle für weitere Veröffentlichungsregionen herunterladen](assets/download-publish-region-logs.png)
+
 1. Nachdem Sie Ihren Service ausgewählt haben, klicken Sie auf das Download-Symbol neben dem Protokoll, das Sie abrufen möchten.
 
 Sie können Ihre Protokolle auch über die Seite **Umgebungen** aufrufen.
 
 ![Protokolle aus dem Bildschirm „Umgebungen“](assets/download-logs.png)
+
+
 
 ## Protokolle über API {#logs-through-api}
 

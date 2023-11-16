@@ -2,10 +2,10 @@
 title: Zusätzliche Veröffentlichungsregionen
 description: Erfahren Sie, wie AEM as a Cloud Service zusätzliche Veröffentlichungsregionen für höhere Verfügbarkeit und geringere Latenz unterstützt.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 4f11d1958cbfb252f29a7815af8800426d945ebd
+source-git-commit: c0c669f847c9ef64b1fa22cfc24ac693c3c8ad90
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 89%
+source-wordcount: '639'
+ht-degree: 84%
 
 ---
 
@@ -46,6 +46,10 @@ Wie im Abschnitt Hinweise zu erweiterten Netzwerken unten beschrieben, wird empf
 Wenn eine zusätzliche Veröffentlichungsregion in einem Programm aktiviert wird, für das bereits ein erweitertes Netzwerk konfiguriert ist, wird der Traffic in der zusätzlichen Veröffentlichungsregion, der den erweiterten Netzwerkregeln entspricht, standardmäßig durch die primäre Region geleitet. Um die Vorteile der erhöhten Verfügbarkeit zu nutzen, empfiehlt es sich, ein erweitertes Netzwerk auf den zusätzlichen Regionen zu aktivieren.
 
 Weitere Informationen finden Sie im Abschnitt [Erweiterte Netzwerkkonfiguration für zusätzliche Veröffentlichungsregionen](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) in der Dokumentation zu erweiterten Netzwerken, einschließlich einer Anleitung, wie Sie erweiterte Netzwerkkonfigurationen zu zusätzlichen Regionen hinzufügen können, ohne dass es zu einem Verlust der Konnektivität kommt.
+
+## Protokollierung {#logging}
+
+Wenn zusätzliche Veröffentlichungsbereiche aktiviert sind, werden über Cloud Manager separate Protokolle für jede Region bereitgestellt. Weitere Informationen finden Sie unter [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md) und [Protokolle für weitere Veröffentlichungsregionen](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
 
 ## Einschränkungen {#limitations}
 

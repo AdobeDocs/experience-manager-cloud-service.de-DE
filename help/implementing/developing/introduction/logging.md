@@ -2,10 +2,10 @@
 title: Protokollieren für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Service verwenden können, um globale Parameter für den zentralen Protokollierungs-Dienst zu konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festzulegen oder die Datenprotokollierung anzufordern.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
+source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 94%
+source-wordcount: '2757'
+ht-degree: 92%
 
 ---
 
@@ -556,6 +556,16 @@ Die CDN-Protokolle unterscheiden sich von den anderen Protokollen insofern, als 
 ### Cloud-Umgebungen {#cloud-environments}
 
 Auf die Protokolle in AEM as a Cloud Service für Cloud-Services kann entweder durch Herunterladen über die Cloud Manager-Oberfläche oder durch Nachverfolgung der Protokolle über die Befehlszeile mithilfe der Adobe I/O-Befehlszeilenschnittstelle zugegriffen werden. Weitere Informationen finden Sie in der [Dokumentation zur Cloud Manager-Protokollierung](/help/implementing/cloud-manager/manage-logs.md).
+
+### Protokolle für weitere Veröffentlichungsregionen {#logs-for-additional-publish-regions}
+
+Wenn für eine bestimmte Umgebung zusätzliche Veröffentlichungsregionen aktiviert sind, können Protokolle für jede Region wie oben erwähnt aus Cloud Manager heruntergeladen werden.
+
+Die AEM Protokolle und die Dispatcher-Protokolle für die zusätzlichen Veröffentlichungsregionen geben die Region in den ersten drei Buchstaben nach der Umgebungs-ID an, wie dies anhand von **nld2** im folgenden Beispiel, das sich auf eine zusätzliche AEM Veröffentlichungsinstanz in den Niederlanden bezieht:
+
+```
+cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
+```
 
 ### Lokales SDK {#local-sdk}
 
