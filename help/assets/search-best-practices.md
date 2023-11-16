@@ -3,9 +3,9 @@ title: Best Practices für die Suche [!DNL Adobe Experience Manager] as a [!DNL 
 description: Best Practices zum Suchen, Suchen und Abrufen von Asset-Metadaten in Ihrer Anwendung.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 6638298056f2dae027db4df8c31c3fd59812a56b
+source-git-commit: b3b2cc516743243fbfdcf6189bfd851a1272bf78
 workflow-type: tm+mt
-source-wordcount: '2544'
+source-wordcount: '2520'
 ht-degree: 11%
 
 ---
@@ -38,11 +38,11 @@ Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden 
 
 Angeben `classic car` als Suchbegriff ein und klicken Sie auf &quot;Suchen&quot;. Sie können die Suchvorschläge bei der Eingabe des Suchbegriffs in einer Dropdown-Liste anzeigen. Die Suchvorschläge basieren auf dem Inhalt des Suchindex in Ihrer Experience Manager-Implementierung. Wenn Sie die entsprechenden Assets nicht im Dropdown-Menü anzeigen können, drücken Sie die Eingabetaste , um die Ergebnisliste anzuzeigen. Die Ergebnisse werden nach Relevanz sortiert, beginnend mit den nächsten Treffern.
 
-![Grundlegende Suchmethode 1](assets/simple-search-1.png)
+<!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
 Sie können die Suche spezifischer gestalten, indem Sie Ihren Suchbegriff in doppelte Anführungszeichen setzen (&quot;&quot;&quot;). Diese Suche umfasst nur Assets, die die angegebenen Begriffe zusammen enthalten. Die Suchkriterien sehen wie folgt aus: `"classic car"`. Daher enthält die Suche beide Begriffe `classic` und `car` angezeigt.
 
-![Suche nach exakter Übereinstimmung](assets/simple-search-2.png)
+<!--![Finding exact match](assets/simple-search-2.png)-->
 
 Die Suche zeigt ähnliche Ergebnisse an, wenn Sie in der **[!UICONTROL Asset-Ansicht]** sowie.
 
@@ -65,7 +65,7 @@ Führen Sie die folgenden Schritte aus, um dieses Szenario zu erreichen:
 Wählen Sie den Ordner aus dem Pfad aus und navigieren Sie zum gewünschten Ordner, wenn Sie innerhalb des bestimmten Ordners suchen möchten.
 3. Wählen Sie Dateien aus der Dropdownliste aus, um alle Dateien mit dem Schlüsselwort anzuzeigen `classic car`.
 
-![Suchen mit Dateien und Ordnern](assets/files-folders.png)
+<!--![Search using files and folders](assets/files-folders.png)-->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
@@ -164,7 +164,7 @@ Führen Sie die folgenden Schritte aus unter **[!UICONTROL Admin-Ansicht]**:
 1. Auswählen [!UICONTROL PDF].
 1. Navigieren Sie zu [!UICONTROL Status] > [!UICONTROL Veröffentlichen] > [!UICONTROL Veröffentlichung rückgängig gemacht].
 
-![Filterbeispiel 2](assets/filter-2.png)
+<!--![Filter example 2](assets/filter-2.png)-->
 
 Führen Sie die folgenden Schritte aus unter **[!UICONTROL Asset-Ansicht]**:
 
@@ -180,7 +180,7 @@ Wenn Sie sich bezüglich des Titels oder der Meta-Beschreibung eines Assets nich
 1. Navigieren Sie zu Filter. under [!UICONTROL Dateityp], erweitern [!UICONTROL Bilder] und wählen [!UICONTROL Web aktiviert]
 1. Deaktivieren Sie PNG.
 
-![Alle Bilder außer Jeep durchsuchen](assets/images-png.png)
+<!--![Search all images except jeep](assets/images-png.png)-->
 
 So suchen Sie nach Assets mithilfe des erwähnten Szenarios in **[!UICONTROL Asset-Ansicht]** führen Sie die folgenden Schritte aus:
 
@@ -203,7 +203,7 @@ So suchen Sie nach Szenario 6:
 2. Navigieren Sie zum Filterbedienfeld und wählen Sie unter &quot;Dateityp&quot;die Option Dokumente aus.
 3. Verfeinern Sie Ihre Suche mithilfe des Sternchen-Platzhalters. Typ `"classic car"` , um alle Assets zu durchsuchen, die `classic car` Keyword.
 
-![Szenario 6](assets/scenario-6.png)
+<!--![Scenario 6](assets/scenario-6.png)-->
 
 Szenario 6 kann nicht in **[!UICONTROL Asset-Ansicht]** da es die Verwendung von Platzhaltern nicht unterstützt.
 
@@ -213,7 +213,7 @@ So suchen Sie nach Szenario 7:
 
 Geben Sie die `car - classic` Suchbegriff in der Suchleiste. Navigieren Sie zum Filterbedienfeld und wählen Sie unter &quot;Dateityp&quot;die Option Dokumente aus. Die Prioritätsreihenfolge der Suche basiert auf Folgendem: Priorität 1: Metadatenpriorität 2: Smart-Tags
 
-![Szenario 7](assets/scenario-7.png)
+<!--![Scenario 7](assets/scenario-7.png)-->
 
 Szenario 7 ist nicht möglich in **[!UICONTROL Asset-Ansicht]** da es die Verwendung von Platzhaltern nicht unterstützt.
 
@@ -237,7 +237,7 @@ When you are unsure about the title or meta description of an asset, you can use
 
 Sie können ein bestimmtes Kriterium mithilfe verschiedener Suchfilter erfassen. Tag ist ein Schlüsselwort, das einem Asset zugewiesen wird, damit es von einer großen Anzahl von Assets identifiziert werden kann. Suchen Sie in diesem Szenario beispielsweise nach Assets mit *jeep* Tags darin. Geben Sie dazu `tags:jeep` in der Suchleiste. In den Suchergebnissen werden nur Assets aufgelistet, die diese Kriterien erfüllen.
 
-![Suchen anhand von Tags](assets/search-tags.png)
+<!--![Search using tags](assets/search-tags.png)-->
 
 Die Suche zeigt ähnliche Ergebnisse an, wenn Sie in der **[!UICONTROL Asset-Ansicht]** sowie.
 
