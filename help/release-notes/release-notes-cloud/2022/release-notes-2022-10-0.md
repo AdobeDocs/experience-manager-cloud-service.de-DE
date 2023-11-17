@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2022.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2022.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 79%
+source-wordcount: '835'
+ht-degree: 77%
 
 ---
 
@@ -69,7 +69,7 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2022“ an, das eine Zusa
    * **[Formulardatenmodell im Vorlagen-Editor](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: Sie können das Schema für ein Formulardatenmodell mit einer Vorlage für adaptive Formulare im Vorlagen-Editor verknüpfen. Dadurch wird die Zeit für die Erstellung eines adaptiven Formulars reduziert. Die Option wird auch zum Editor für adaptive Formulare hinzugefügt, damit Benutzende ein Formulardatenmodell für vorhandene Formulare auswählen oder ändern können.
    * **[Datensatzdokument im Vorlagen-Editor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: Sie können jetzt die Generierung des Datensatzdokuments für alle Formulare standardisieren, die mithilfe einer Vorlage erstellt wurden. Dies trägt dazu bei, die Einhaltung und Standardisierung von Organisationsanforderungen zu verbessern.
 
-* **[Starten des Assistenten für adaptive Formulare von einer AEM Sites-Seite](/help/forms/embed-adaptive-form-aem-sites.md)**: Die AEM Sites-Seite bietet nun erweiterte Unterstützung für adaptive Formulare. Sie können jetzt ohne Verlassen der AEM Sites-Seite ein neues adaptives Formular erstellen oder ein vorhandenes adaptives Formular einbetten.
+* **[Starten des Assistenten für adaptive Formulare von einer AEM Sites-Seite](/help/forms/embed-adaptive-form-aem-sites.md)**: Die AEM Sites-Seite bietet nun erweiterte Unterstützung für adaptive Formulare. Sie können jetzt ein adaptives Formular erstellen oder ein vorhandenes adaptives Formular einbetten, während Sie auf der AEM Sites-Seite verbleiben.
 * **[Ändern der Anzeigenausrichtung für Kontrollkästchen und Optionsfelder im Datensatzdokument](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**: Sie können jetzt die gewünschte Ausrichtung (horizontal, vertikal, gleich wie adaptive Formulare) für das Kontrollkästchen und das Optionsfeld im Datensatzdokument festlegen. Diese Option bestimmt die Positionierung von Optionen für Kontrollkästchen und Optionsfelder im Datensatzdokument.
 
 ## CIF-Add-on {#cloud-services-cif}

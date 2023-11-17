@@ -2,10 +2,10 @@
 title: Verwalten Ihrer Demo-Sites
 description: Erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihrer Demo-Sites helfen, und wie Sie diese entfernen können.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 95%
+source-wordcount: '942'
+ht-degree: 94%
 
 ---
 
@@ -93,7 +93,7 @@ Sie können Vorlagen auf die gleiche Weise wie unter der Überschrift **Löschen
 Herzlichen Glückwunsch! Sie haben die Tour zum AEM-Referenzdemo-Add-on abgeschlossen! Sie sollten jetzt:
 
 * Über grundlegende Kenntnisse zu Cloud Manager verfügen und verstehen, wie Pipelines Inhalte und Konfigurationen für AEM bereitstellen.
-* Sie sollten verstehen, wie Sie mit Cloud Manager ein neues Programm erstellen können.
+* Erfahren Sie, wie Sie mit Cloud Manager ein Programm erstellen.
 * Wissen, wie Sie das Referenzdemo-Add-on für das neue Programm aktivieren und eine Pipeline zum Bereitstellen des Add-on-Inhalts bereitstellen können.
 * Wissen, wie Sie auf die AEM-Autorenumgebung zugreifen können, um eine auf einer Vorlage basierende Site zu erstellen.
 * Verstehen, wie man auf die Demo-Dienstprogramme zur Selbstbedienung zugreift.

@@ -2,9 +2,9 @@
 title: Verwalten von Tags
 description: Erfahren Sie, wie Sie Tags in AEM verwalten, um Ihre Inhalte zu organisieren.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2265'
 ht-degree: 5%
 
 ---
@@ -79,7 +79,7 @@ Es gibt eine Reihe von Schritten zum Erstellen und Verwenden von Tags zum Organi
 
 Zum Organisieren anderer Tags wird ein Namespace verwendet. Sie kann als Tag der untersten Ebene betrachtet werden und wird normalerweise zum Gruppieren anderer Tags verwendet.
 
-1. Um einen neuen Namespace zu erstellen, öffnen Sie die [Tagging-Konsole](#tagging-console) und tippen oder klicken Sie auf **Erstellen** in der Symbolleiste und **Namespace erstellen**.
+1. Um einen Namespace zu erstellen, öffnen Sie die [Tagging-Konsole](#tagging-console) und tippen oder klicken Sie auf **Erstellen** in der Symbolleiste und **Namespace erstellen**.
 
    ![Dialogfeld &quot;Namespace hinzufügen&quot;](/help/sites-cloud/administering/assets/add-namespace.png)
 
@@ -101,7 +101,7 @@ Ein Namespace muss keine Unter-Tags enthalten. Da ein Namespace selbst ein Tag i
 
 Tags werden im Allgemeinen zu Namespaces hinzugefügt.
 
-1. Um ein neues Tag zu erstellen, öffnen Sie die [Tagging-Konsole.](#tagging-console)
+1. Um ein Tag zu erstellen, öffnen Sie die [Tagging-Konsole.](#tagging-console)
 
 1. Wählen Sie den Namespace aus, in dem Sie das Tag erstellen möchten. Oder wählen Sie ein anderes Tag aus, um ein untergeordnetes Tag darunter zu erstellen.
 
@@ -123,11 +123,11 @@ Das Tag wird erstellt und die Konsole wird aktualisiert, um das neue Tag anzuzei
 Tags ermöglichen die flexible Erstellung Ihrer eigenen Taxonomie entsprechend Ihren organisatorischen Anforderungen.
 
 * Sie können untergeordnete Tags vorhandener Tags erstellen, indem Sie in der Konsole das übergeordnete Tag auswählen, bevor Sie das neue Tag erstellen.
-* Wenn Sie ein Tag erstellen, ohne einen Namespace oder ein anderes Tag auszuwählen, erstellen Sie effektiv einen neuen Namespace.
+* Wenn Sie ein Tag erstellen, ohne einen Namespace oder ein anderes Tag auszuwählen, erstellen Sie effektiv einen Namespace.
 
 ### Veröffentlichen von Tags {#publishing-tags}
 
-Genau wie beim Erstellen anderer Inhalte in AEM, existiert dieser nur in der Authoring-Umgebung, sobald Sie ein Tag (oder einen Namespace) erstellt haben. Damit Ihre Tags Ihren Benutzern zur Verfügung stehen, müssen Sie die Tags veröffentlichen.
+Genau wie beim Erstellen anderer Inhalte in AEM, existiert dieser nur in der Authoring-Umgebung, nachdem Sie ein Tag (oder einen Namespace) erstellt haben. Damit Ihre Tags Ihren Benutzern zur Verfügung stehen, müssen Sie die Tags veröffentlichen.
 
 1. Um ein Tag zu veröffentlichen, öffnen Sie die [Tagging-Konsole.](#tagging-console)
 

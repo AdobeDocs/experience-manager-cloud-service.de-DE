@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Über
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '4077'
+source-wordcount: '4075'
 ht-degree: 99%
 
 ---
@@ -448,9 +448,10 @@ So vergleichen Sie Sprachkopien mit dem Sprachstamm:
 
 ## Verschieben oder Umbenennen einer Quellseite {#move-source}
 
-Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page) werden muss, wird bei erneuter Übersetzung der Seite nach dem Verschieben eine neue Sprachkopie auf der Basis des neuen Seitennamens/Speicherorts erstellt. Die alte Sprachkopie mit dem vorherigen Namen/Speicherort bleibt bestehen.
+Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), wodurch die Seite nach dem Verschieben erneut übersetzt wird, erstellen Sie eine Sprachkopie basierend auf dem neuen Seitennamen/Speicherort. Die alte Sprachkopie mit dem vorherigen Namen/Speicherort bleibt bestehen.
 
 Die Best Practice für dieses Szenario ist folgendes Verfahren:
+
 1. Machen Sie die Veröffentlichung der Sprachkopien, die mit der zu verschiebenden Quellseite verknüpft sind, rückgängig.
 1. Löschen Sie sie.
 1. Erstellen Sie in der neu verschobenen Quellseite neue Sprachkopien.

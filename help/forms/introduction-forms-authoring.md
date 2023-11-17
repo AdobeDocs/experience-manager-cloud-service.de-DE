@@ -1,16 +1,14 @@
 ---
 title: Einführung in das Erstellen adaptiver Formulare
 description: AEM Forms bietet eine so benutzerfreundliche wie effektive Benutzeroberfläche zum Erstellen adaptiver Formulare. Es enthält eine Reihe von Komponenten und Werkzeugen, mit denen Sie Formulare erstellen können.
-uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2482'
 ht-degree: 96%
 
 ---
@@ -52,7 +50,7 @@ Die Touch-optimierte Benutzeroberfläche für das Erstellen adaptiver Formulare 
 * Standardmäßige Formularkomponenten
 * Integriertes Repository für Assets
 
-Wenn Sie ein neues adaptives Formular erstellen oder ein vorhandenes bearbeiten, verwenden Sie die folgenden UI-Elemente:
+Wenn Sie ein vorhandenes adaptives Formular erstellen oder bearbeiten, verwenden Sie die folgenden Elemente der Benutzeroberfläche:
 
 * [Randleiste](#sidebar)
 * [Seitensymbolleiste](#page-toolbar)

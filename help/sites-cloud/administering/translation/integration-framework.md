@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie das Framework für die Übersetzungsintegrati
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 100%
+source-wordcount: '1517'
+ht-degree: 99%
 
 ---
 
@@ -67,7 +67,7 @@ Nachdem Sie ein Framework für die Übersetzungsintegration erstellt haben, kön
 >
 >Einen Überblick über die Funktionen zur Übersetzung von Inhalten in AEM erhalten Sie unter [Übersetzen von Inhalten für mehrsprachige Sites](overview.md).
 
-Eine einzelne Konfiguration des Frameworks steuert, wie Seiteninhalte und Assets übersetzt werden. So erstellen Sie eine neue Übersetzungskonfiguration:
+Eine einzelne Konfiguration des Frameworks steuert, wie Seiteninhalte und Assets übersetzt werden. So erstellen Sie eine Übersetzungskonfiguration:
 
 1. Klicken oder tippen Sie im [globalen Navigationsmenü](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) auf **Tools > Cloud Services > Übersetzungs-Cloud Services**.
 1. Navigieren Sie zu der Stelle in Ihrer Inhaltsstruktur, an der Sie die Konfiguration erstellen möchten. Diese bezieht sich oft auf eine bestimmte Site oder kann global sein.

@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '4346'
+source-wordcount: '4344'
 ht-degree: 96%
 
 ---
@@ -31,7 +31,7 @@ Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, k�
 >* Die Freigabe eines Asset-Ordners vom Typ `sling:OrderedFolder` wird bei der Weitergabe an Experience Cloud nicht unterstützt. Wenn Sie einen Ordner freigeben möchten, wählen Sie beim Erstellen eines Ordners nicht [!UICONTROL Geordnet] aus.
 >* In Experience Manager ist die Verwendung von `subassets` als Ordnername nicht zulässig. Dies ist ein Keyword, das für Knoten reserviert ist, die Teil-Assets für ebenenübergreifende Assets enthalten.
 
-1. Navigieren Sie zu der Stelle in Ihrem Ordner für digitale Assets, an der Sie einen neuen Ordner erstellen möchten. Klicken Sie im Menü auf **[!UICONTROL Erstellen]**. Wählen Sie **[!UICONTROL Neuer Ordner]** aus.
+1. Navigieren Sie zu dem Ort in Ihrem Ordner „Digitale Assets“, an dem Sie einen neuen Ordner erstellen möchten. Klicken Sie im Menü auf **[!UICONTROL Erstellen]**. Wählen Sie **[!UICONTROL Neuer Ordner]** aus.
 1. Geben Sie in das Feld **[!UICONTROL Titel]** einen Ordnernamen an. Standardmäßig verwendet DAM den von Ihnen als Ordnernamen angegebenen Titel. Wenn der Ordner erstellt wurde, können Sie die Standardeinstellung überschreiben und einen anderen Ordnernamen angeben.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. Ihr Ordner wird im Ordner „Digitale Assets“ angezeigt.
 
@@ -54,7 +54,7 @@ Gehen Sie wie folgt vor, um die ZIP-Dateien zu extrahieren:
 1. Klicken Sie auf **[!UICONTROL Archiv extrahieren]** in der Symbolleiste verfügbar.
 1. Wählen Sie den Ordner aus, in dem Sie die extrahierten Assets speichern müssen, die im komprimierten Ordner verfügbar sind.
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
-1. Wählen Sie das geeignete Verhalten aus, um Dateinamenkonflikte während der Extraktion zu verarbeiten. Sie können auswählen, ob Sie eine neue Version eines vorhandenen Assets erstellen, das Asset ersetzen, beide Assets im Zielordner belassen oder die Extraktion des neuen Assets überspringen möchten.
+1. Wählen Sie das geeignete Verhalten aus, um Dateinamenkonflikte während der Extraktion zu verarbeiten. Sie können auswählen, ob Sie eine Version eines vorhandenen Assets erstellen, das Asset ersetzen, beide Assets im Zielordner belassen oder die Extraktion des neuen Assets überspringen möchten.
 1. Klicks **[!UICONTROL Extract]**. Der Zip-Extraktionsvorgang wird gestartet. Sobald der Prozess abgeschlossen ist, können Sie die extrahierten Assets im Zielordner anzeigen.
 
    ![ZIP-Extraktion](assets/zip-extraction.png)

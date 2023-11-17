@@ -2,10 +2,10 @@
 title: Verwalten von Projekten
 description: In „Projekte“ können Sie ein Projekt organisieren, indem Sie Ressourcen zu einer Einheit zusammenfassen. Der Zugriff und die Verwaltung erfolgen über die Projektekonsole.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '893'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '892'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ Standardmäßig enthält AEM folgende Vorlagen für die Projekterstellung:
 * Product Photo Shoot Project 
 -->
 
-Die Vorgehensweise beim Erstellen eines Projekts ist für jedes Projekt identisch. Unterschiede zwischen den Projekttypen gibt es in Bezug auf verfügbare [Benutzerrollen](/help/sites-cloud/authoring/projects/overview.md) und [Workflows](/help/sites-cloud/authoring/projects/workflows.md).  So erstellen Sie ein neues Projekt:
+Die Vorgehensweise beim Erstellen eines Projekts ist für jedes Projekt identisch. Unterschiede zwischen den Projekttypen gibt es in Bezug auf verfügbare [Benutzerrollen](/help/sites-cloud/authoring/projects/overview.md) und [Workflows](/help/sites-cloud/authoring/projects/workflows.md).  So erstellen Sie ein Projekt:
 
 1. Tippen Sie in **Projekte** auf **Erstellen**, um den Assistenten zur **Projekterstellung** zu öffnen:
 1. Wählen Sie eine Vorlage aus und klicken Sie auf **Weiter**.
@@ -135,7 +135,7 @@ So legen Sie ein Projekt als inaktiv (oder aktiv) fest:
 
    >[!NOTE]
    >
-   >Möglicherweise müssen Sie diese Kachel erst noch einfügen, wenn sie nicht bereits in Ihrem Projekt enthalten ist. Weitere Informationen finden Sie unter [Hinzufügen von Kacheln](#adding-items-to-a-tile).
+   Möglicherweise müssen Sie diese Kachel erst noch einfügen, wenn sie nicht bereits in Ihrem Projekt enthalten ist. Weitere Informationen finden Sie unter [Hinzufügen von Kacheln](#adding-items-to-a-tile).
 
 1. Tippen/klicken Sie auf **Bearbeiten**.
 1. Ändern Sie die Auswahl von **Aktiv** in **Inaktiv** (oder umgekehrt).

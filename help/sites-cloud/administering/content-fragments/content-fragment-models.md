@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Inhaltsfragmentmodelle als Grundlage für Ihre In
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3061'
+source-wordcount: '3060'
 ht-degree: 60%
 
 ---
@@ -354,7 +354,7 @@ Gibt einen Stammpfad für referenzierte Fragmente an.
 
 * **Fragmenterstellung zulassen**
 
-  Dadurch kann der Fragmentautor ein neues Fragment basierend auf dem entsprechenden Modell erstellen.
+  Dadurch kann der Fragmentautor ein Fragment basierend auf dem entsprechenden Modell erstellen.
 
    * **fragmentreferencecomposite**: Ermöglicht dem Fragmentautor das Erstellen einer Composite-Datei durch Auswahl mehrerer Fragmente.
 

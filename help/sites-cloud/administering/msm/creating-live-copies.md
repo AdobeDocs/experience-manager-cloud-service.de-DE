@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Live Copies erstellen und synchronisieren, um
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 151ef672e847f793b37d220920081ac9fce94edf
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '4308'
-ht-degree: 100%
+source-wordcount: '4307'
+ht-degree: 99%
 
 ---
 
@@ -333,7 +333,7 @@ Zum Ändern von Live Copy-Inhalt haben Sie folgende Möglichkeiten:
 
 >[!TIP]
 >
->Wenn Sie eine neue Seite manuell in der Live Copy erstellen, liegt diese für die Live Copy lokal vor. Sie verfügt also über keine entsprechende Quellseite, mit der sie verbunden ist.
+>Wenn Sie eine Seite manuell in der Live Copy erstellen, ist die neue Seite lokal in der Live Copy, d. h. sie verfügt nicht über eine entsprechende Quellseite, an die sie angehängt ist.
 >
 >Eine Best Practice zur Erstellung einer lokalen Seite, die Teil der Beziehung ist, besteht darin, die lokale Seite in der Quelle zu erstellen und einen tiefen Rollout durchzuführen. Hierdurch wird die Seite lokal als Live Copy erstellt.
 

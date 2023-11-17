@@ -2,7 +2,7 @@
 title: Grundlegendes zu Cloud Manager und dem Workflow von Quick Site Creation
 description: Erfahren Sie mehr über Cloud Manager und sie Verbindung zum neuen Prozess von Quick Site Creation.
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 96%

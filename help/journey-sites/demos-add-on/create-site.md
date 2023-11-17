@@ -2,10 +2,10 @@
 title: Erstellen einer Demo-Site
 description: Erstellen Sie eine Demosite in AEM basierend auf einer Bibliothek vorkonfigurierter Vorlagen.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 92%
+source-wordcount: '836'
+ht-degree: 89%
 
 ---
 
@@ -15,9 +15,9 @@ Erstellen Sie eine Demosite in AEM basierend auf einer Bibliothek vorkonfigurier
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der Tour zum AEM-Referenz-Demo-Add-on, [Erstellen eines Programms](create-program.md), haben Sie den ersten Konfigurationsschritt ausgeführt, um ein Programm zu Testzwecken zu erstellen, und eine Pipeline verwendet, um den Add-on-Inhalt bereitzustellen. Sie sollten jetzt:
+Im vorherigen Dokument der Tour zum AEM-Referenz-Demo-Add-on, [Erstellen eines Programms](create-program.md), haben Sie den ersten Konfigurationsschritt ausgeführt, um ein Programm zu Testzwecken zu erstellen, und eine Pipeline verwendet, um den Add-on-Inhalt bereitzustellen. Sie sollten jetzt folgende Punkte erfüllen:
 
-* Sie sollten verstehen, wie Sie mit Cloud Manager ein neues Programm erstellen können.
+* Erfahren Sie, wie Sie mit Cloud Manager ein Programm erstellen.
 * Sie sollten nun wissen, wie Sie das Referenzdemo-Add-on für das neue Programm aktivieren.
 * Sie sollten in der Lage sein, eine Pipeline zum Bereitstellen des Add-on-Inhalts ausführen.
 
@@ -25,7 +25,7 @@ In diesem Artikel wird der nächste Schritt des Prozesses beschrieben, in dem ei
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie eine neue Site basierend auf den Vorlagen des Referenz-Demo-Add-ons erstellen. Nach dem Lesen sollten Sie Folgendes können:
+In diesem Dokument erfahren Sie, wie Sie eine Site basierend auf den Vorlagen des Referenz-Demo-Add-ons erstellen. Nach dem Lesen sollten Sie Folgendes können:
 
 * Verstehen, wie Sie auf die AEM Authoring-Umgebung zugreifen.
 * Wissen, wie Sie eine Site basierend auf einer Vorlage erstellen.

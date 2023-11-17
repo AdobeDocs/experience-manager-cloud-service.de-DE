@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1162'
 ht-degree: 97%
 
 ---
@@ -71,7 +71,7 @@ Nachdem das Connector-Paket für Ihren bevorzugten Übersetzungsdienst installie
 * ob eine menschliche oder maschinelle Übersetzung erfolgen soll
 * ob weitere Inhalte übersetzt werden sollen, die den Seiten zugeordnet sind, beispielsweise Tags
 
-So erstellen Sie eine neue Übersetzungskonfiguration:
+So erstellen Sie eine Übersetzungskonfiguration:
 
 1. Klicken oder tippen Sie im globalen Navigationsmenü auf **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services**.
 1. Navigieren Sie zu der Stelle in Ihrer Inhaltsstruktur, an der Sie die Konfiguration erstellen möchten. Diese bezieht sich oft auf ein bestimmted Projekt oder kann global sein.

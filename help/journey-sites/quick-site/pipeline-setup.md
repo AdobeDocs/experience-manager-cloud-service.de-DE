@@ -2,10 +2,10 @@
 title: Einrichten der Pipeline
 description: Erstellen Sie eine Frontend-Pipeline, um die Anpassung des Designs Ihrer Site zu verwalten.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 97%
+source-wordcount: '964'
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ Erstellen Sie eine Frontend-Pipeline, um die Anpassung des Designs Ihrer Site zu
 Im vorherigen Dokument der Tour zu AEM Quick Site Creation, [Erstellen einer Site aus einer Vorlage](create-site.md), haben Sie gelernt, wie Sie mit einer Site-Vorlage schnell eine AEM-Site erstellen können, die mithilfe von Frontend-Tools weiter angepasst werden kann. Jetzt sollten Sie:
 
 * Wissen, wie Sie AEM-Site-Vorlagen abrufen.
-* Wissen, wie Sie mit einer Vorlage eine neue Site erstellen.
+* Erfahren Sie, wie Sie eine Site mit einer Vorlage erstellen.
 * Erfahren haben, wie Sie die Vorlage von Ihrer neuen Site herunterladen, um sie für den Front-End-Entwickler bereitzustellen.
 
 Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie eine Frontend-Pipeline einrichten können, die der Frontend-Entwickler später zur Bereitstellung von Frontend-Anpassungen verwendet.

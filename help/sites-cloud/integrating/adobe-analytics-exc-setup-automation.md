@@ -4,10 +4,10 @@ description: Die Automatisierung der Einrichtung von Experience Cloud bietet ein
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 96%
+source-wordcount: '750'
+ht-degree: 92%
 
 ---
 
@@ -50,7 +50,7 @@ Die Umgebung sollte jetzt für die Automatisierung der Einrichtung von Experienc
 1. Tippen Sie auf die Schaltfläche **Analytics integrieren**.
 1. Geben Sie im daraufhin angezeigten Dialogfeld einen Namen für die **Report Suite-ID** ein.
 
-   Diese Zeichenfolge wird verwendet, um in Adobe Analytics eine neue [Report Suite-ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en?lang=de) als Datenspeicher für die Analysedaten für die ausgewählte AEM-Site zu erstellen. An die angegebene Zeichenfolge werden Umgebungs- und Ebenen-IDs angehängt, um die Eindeutigkeit sicherzustellen.
+   Diese Zeichenfolge wird verwendet, um eine [Report Suite-ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en?lang=de) in Adobe Analytics als Datenspeicher für die Analysedaten für die ausgewählte AEM Site. An die angegebene Zeichenfolge werden Umgebungs- und Ebenen-IDs angehängt, um die Eindeutigkeit sicherzustellen.
 
 1. Aktualisieren Sie die Seite und das Bedienfeld und tippen Sie auf **Integrationsstatus überprüfen**, um den Status der Automatisierung zu überprüfen.
 

@@ -4,10 +4,10 @@ description: Konfigurieren von [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1771'
-ht-degree: 99%
+source-wordcount: '1770'
+ht-degree: 98%
 
 ---
 
@@ -98,7 +98,7 @@ Die Zuordnung von Metadaten zwischen Adobe Workfront-Dokumenten und Assets wird 
 Gehen Sie wie folgt vor, um die Zuordnungen zu konfigurieren:
 
 1. Navigieren Sie zu **Tools** > **Assets** > **Metadatenschemata**.
-1. Wählen Sie das Metadatenschema-Formular aus, das Sie bearbeiten möchten, und klicken Sie auf **Bearbeiten** oder erstellen Sie ein neues Metadatenschema von Grund auf.
+1. Wählen Sie das Metadatenschema-Formular aus, das Sie bearbeiten möchten, und klicken Sie auf **Bearbeiten** oder erstellen Sie ein Metadatenschema von Grund auf neu.
 1. Wählen Sie das Metadatenschema-Formularfeld aus, das Sie bearbeiten möchten, und wählen Sie die Registerkarte **Einstellungen** im rechten Bedienfeld.
 1. Wählen Sie in [!DNL Workfront] unter „Benutzerdefiniertes Formularfeld“ den Namen des [!DNL Workfront]-Feldes, das Sie der ausgewählten AEM-Eigenschaft zuordnen möchten. Verfügbare Optionen sind:
 

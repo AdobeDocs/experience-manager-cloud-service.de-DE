@@ -1,13 +1,13 @@
 ---
 title: Erweitern des Multi-Site-Managers
 description: Erfahren Sie, wie Sie die Funktionalität des Multi-Site-Managers erweitern.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2435'
 ht-degree: 67%
 
 ---
-
 
 # Erweitern des Multi-Site-Managers {#extending-the-multi-site-manager}
 
@@ -77,7 +77,7 @@ Sie können benutzerdefinierte Synchronisierungsaktionen erstellen, die mit Ihre
 
 Erstellen Sie dazu zwei Klassen:
 
-* eine Implementierung der Schnittstelle [`com.day.cq.wcm.msm.api.LiveAction` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html), die die Aktion ausführt
+* eine Implementierung der Schnittstelle [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html), die die Aktion ausführt
 * Eine OSGi-Komponente, die die [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) -Benutzeroberfläche und erstellt Instanzen Ihrer `LiveAction` class
 
 `LiveActionFactory` erstellt Instanzen der Klasse `LiveAction` für eine bestimmte Konfiguration:
@@ -165,9 +165,9 @@ Die neue Rollout-Konfiguration steht dann zur Verfügung, wenn Sie die Rollout-K
 
 ### Erstellen der Rollout-Konfiguration {#create-the-rollout-configuration}
 
-So erstellen Sie eine neue Rollout-Konfiguration:
+So erstellen Sie eine Rollout-Konfiguration:
 
-1. CRXDE Lite öffnen unter `https://<host>:<port>/crx/de`.
+1. Öffnen Sie CRXDE Lite unter `https://<host>:<port>/crx/de`.
 
 1. Navigieren Sie zu `/apps/msm/<your-project>/rolloutconfigs`, die benutzerdefinierte Version von Ihrem Projekt `/libs/msm/wcm/rolloutconfigs`.
 
@@ -181,17 +181,14 @@ So erstellen Sie eine neue Rollout-Konfiguration:
 1. Fügen Sie diesem Knoten die folgenden Eigenschaften hinzu:
 
    * **Name**: `jcr:title`
-
      **Typ**: `String`
      **Wert**: Ein Identifizierungstitel, der in der Benutzeroberfläche angezeigt wird
 
    * **Name**: `jcr:description`
-
      **Typ**: `String`
      **Wert**: Eine optionale Beschreibung.
 
    * **Name**: `cq:trigger`
-
      **Typ**: `String`
      **Wert**: Der zu verwendende [Rollout-Trigger](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers)
       * `rollout`
@@ -207,7 +204,7 @@ Rollout-Konfigurationen werden unter dem [Rollout-Konfigurationsknoten](#create-
 
 Fügen Sie untergeordnete Knoten des Typs `cq:LiveSyncAction` hinzu, um Synchronisierungsaktionen zur Rollout-Konfiguration hinzuzufügen. Die Reihenfolge der Synchronisierungsaktionsknoten bestimmt die Reihenfolge, in der die Aktionen durchgeführt werden.
 
-1. Wählen Sie in CRXDE Lite Ihre [Rollout-Konfiguration](#create-the-rollout-configuration) Knoten, z. B. `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
+1. Wählen Sie unter CRXDE Lite Ihre [Rollout-Konfiguration](#create-the-rollout-configuration) Knoten, z. B. `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
 
 1. Erstellen Sie einen Knoten mit den folgenden Knoteneigenschaften:
 
@@ -637,7 +634,6 @@ Ob für eine Seiteneigenschaft ein Rollout durchgeführt werden muss und daher b
       * **Typ**: `String`
       * **Wert**: Enthält den Namen der betreffenden Immobilie und ist mit dem Wert der Immobilie vergleichbar `name`
          * Ein Beispiel finden Sie unter
-
            `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Wenn `cq-msm-lockable` definiert wurde, interagiert das Öffnen oder Schließen der Kettenverbindung mit MSM wie folgt:

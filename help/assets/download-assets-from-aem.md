@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: d25d433203b8ec6787dec87a9ec35092a247096e
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1388'
-ht-degree: 89%
+source-wordcount: '1387'
+ht-degree: 88%
 
 ---
 
@@ -116,7 +116,7 @@ Um das Herunterladen von Assets aus Ihrem DAM zu ermöglichen (z. B. bei Verwen
 
    `/apps/<your-app-name>/config.publish`
 
-1. Erstellen Sie im Konfigurationsordner eine neue Datei des Typs `nt:file` mit dem Namen `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
+1. Erstellen Sie im Konfigurationsordner eine Datei vom Typ `nt:file` benannt `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
 1. Füllen Sie `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` wie folgt. Legt eine maximale Größe (in Byte) für den Download als Wert von `asset.download.prezip.maxcontentsize` fest. Im folgenden Beispiel wird die maximale Größe des ZIP-Downloads auf 100 KB begrenzt.
 
    ```java

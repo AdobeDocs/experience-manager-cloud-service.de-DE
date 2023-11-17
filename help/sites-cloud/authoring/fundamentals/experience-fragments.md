@@ -2,9 +2,9 @@
 title: Experience Fragments
 description: Verwenden Sie Experience Fragments von Adobe Experience Manager as a Cloud Service, um Ihre Erlebnisse wiederverwendbar und flexibel zu gestalten.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: bad2225e7c5f2554ebd51c0e7e737296c3aa552b
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2043'
 ht-degree: 99%
 
 ---
@@ -279,7 +279,7 @@ Sie können eine oder mehrere Komponenten auswählen, um einen Baustein zur Wied
 
 ### Erstellen eines Bausteins {#creating-a-building-block}
 
-So erstellen Sie einen neuen Baustein:
+So erstellen Sie einen Baustein:
 
 1. Wählen Sie im Experience Fragment-Editor die Komponenten aus, die Sie wiederverwenden möchten:
 

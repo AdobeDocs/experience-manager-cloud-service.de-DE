@@ -2,10 +2,10 @@
 title: Erstellen und Verwalten von Kanälen in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie in Screens as a Cloud Service Kanäle erstellen und verwalten.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 90%
+source-wordcount: '1086'
+ht-degree: 88%
 
 ---
 
@@ -28,7 +28,7 @@ In diesem Dokument erfahren Sie, wie Sie in Screens Content Provider Kanäle fü
 >**Voraussetzungen**
 >Bevor Sie mit diesem Abschnitt des Handbuchs beginnen, lesen Sie [Erstellen und Verwalten von Projekten in Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
-Gehen Sie wie folgt vor, um einen neuen Sequenzkanal in Screens as a Cloud Service zu erstellen:
+Gehen Sie wie folgt vor, um einen Sequenzkanal in Screens as a Cloud Service zu erstellen:
 
 1. Gehen Sie zu Screens Content Provider.
 

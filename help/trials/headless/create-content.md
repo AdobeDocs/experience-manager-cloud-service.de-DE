@@ -4,10 +4,10 @@ description: Nutzen Sie ihr zuvor erstelltes Inhaltsfragmentmodell, um Inhalte z
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 93%
+source-wordcount: '701'
+ht-degree: 91%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 93%
 
 Inhaltsfragmente stellen Ihren Headless-Inhalt dar und basieren auf vordefinierten Strukturen, den sogenannten Inhaltsfragmentmodellen. Sie haben ein Modell bereits in einem vorherigen Modul erstellt.
 
-In diesem Modul erstellen Sie mithilfe der Inhaltsfragmentkonsole ein neues Inhaltsfragment, das auf diesem Modell basiert. Stellen Sie sich die Inhaltsfragmentkonsole als Ihre Bibliothek vor, in der Headless-Content verfügbar ist. Verwenden Sie die Inhaltsfragmentkonsole, um neue Inhaltsfragmente zu erstellen und vorhandene Fragmente zu verwalten.
+In diesem Modul erstellen Sie mithilfe der Inhaltsfragmentkonsole ein auf diesem Modell basierendes Inhaltsfragment. Stellen Sie sich die Inhaltsfragmentkonsole als Ihre Bibliothek vor, in der Headless-Content verfügbar ist. Verwenden Sie die Inhaltsfragmentkonsole, um neue Inhaltsfragmente zu erstellen und vorhandene Fragmente zu verwalten.
 
 Die Inhaltsfragmentkonsole wird verwendet, um Headless-Inhalte über Versandkanäle hinweg und unabhängig vom Kontext zu erstellen und zu bearbeiten. Dies kann in vielen Authoring-Fällen die effektivste Methode sein. In einem späteren Modul werden wir die Bearbeitung von Headless Content im Kontext und an Ort und Stelle untersuchen.
 

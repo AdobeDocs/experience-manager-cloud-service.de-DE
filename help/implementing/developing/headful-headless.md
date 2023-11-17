@@ -2,10 +2,10 @@
 title: Headful und Headless in AEM
 description: AEM-Projekte können in einem Headful- und in einem Headless-Modell implementiert werden, Sie müssen sich jedoch nicht entscheiden. AEM bietet die Flexibilität, die Vorteile beider Modelle in einem Projekt zu nutzen.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 96%
+source-wordcount: '1012'
+ht-degree: 93%
 
 ---
 
@@ -43,7 +43,7 @@ Im nächsten Abschnitt werden diese Integrationsstufen genauer untersucht.
 
 >[!NOTE]
 >
->Selbstverständlich könnten Sie die Webshop-SPA auch [mithilfe des AEM-SPA-Editor-Frameworks](/help/implementing/developing/hybrid/introduction.md) als voll funktionsfähige AEM-SPA erneut implementieren. Wenn Sie bereits AEM haben und einen neuen Webshop oder eine andere SPA erstellen möchten, ist dies die empfohlene Methode. Diese würde den Umfang dieses Dokuments allerdings sprengen.
+>Selbstverständlich könnten Sie die Webshop-SPA auch [mithilfe des AEM-SPA-Editor-Frameworks](/help/implementing/developing/hybrid/introduction.md) als voll funktionsfähige AEM-SPA erneut implementieren. Wenn Sie bereits AEM haben und einen Webshop oder andere SPA erstellen möchten, ist dies die empfohlene Methode, die jedoch nicht in den Geltungsbereich dieses Dokuments fällt.
 
 ## SPA-Integrationsstufen {#integration-levels}
 

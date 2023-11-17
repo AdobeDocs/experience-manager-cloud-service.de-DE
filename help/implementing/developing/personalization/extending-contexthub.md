@@ -2,10 +2,10 @@
 title: Erweitern von ContextHub
 description: Definieren Sie neue Typen von ContextHub-Stores und -Modulen, wenn die bereitgestellten Typen nicht Ihren Lösungsanforderungen entsprechen
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 87%
+source-wordcount: '627'
+ht-degree: 84%
 
 ---
 
@@ -62,7 +62,7 @@ In den meisten Fällen ist nur ein Kandidat erforderlich und die Priorität kann
 
 ## Erstellen von Typen von ContextHub-Benutzeroberflächenmodulen {#creating-contexthub-ui-module-types}
 
-Erstellen Sie benutzerdefinierte Typen eines Benutzeroberflächenmoduls, wenn die [mit ContextHub installierten Typen](sample-modules.md) nicht Ihren Anforderungen entsprechen. Erstellen Sie dazu einen neuen Benutzeroberflächenmodul-Renderer, indem Sie die `ContextHub.UI.BaseModuleRenderer`-Klasse erweitern und sie dann mit `ContextHub.UI` registrieren.
+Erstellen Sie benutzerdefinierte Typen eines Benutzeroberflächenmoduls, wenn die [mit ContextHub installierten Typen](sample-modules.md) nicht Ihren Anforderungen entsprechen. Um einen UI-Modultyp zu erstellen, erstellen Sie einen Benutzeroberflächenmodul-Renderer, indem Sie die `ContextHub.UI.BaseModuleRenderer` und dann mit `ContextHub.UI`.
 
 Erstellen Sie zum Erstellen eines Benutzeroberflächenmodul-Renderers ein `Class`-Objekt, das die Logik enthält, die das Benutzeroberflächenmodul rendert. Ihre Klasse muss mindestens die folgenden Aktionen durchführen:
 

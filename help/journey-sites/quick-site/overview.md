@@ -2,10 +2,10 @@
 title: Tour zu AEM Quick Site Creation
 description: Beginnen Sie hier mit einer geführten Tour durch das benutzerfreundliche Tool AEM Quick Site Creation, um die Frontend-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site schnell ohne AEM-Backend-Kenntnisse anzupassen.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1034'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '1032'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ Beginnen Sie hier mit einer geführten Tour durch das benutzerfreundliche Tool A
 
 AEM Sites ist ein leistungsstarkes Toolset zum Erstellen und Verwalten digitaler Erlebnisse. Inhaltsautorinnen und -autoren können mit dem Sites-Editor einfach digitale Erlebnisse erstellen und die Inhalte mithilfe der Sites-Konsole organisieren. Gleichzeitig können sie die Inhalte live so sehen, wie sie kanalübergreifend von AEM an Zielgruppen bereitgestellt werden.
 
-Mit dem Tool AEM Quick Site Creation können Nicht-Entwickler mithilfe von Site-Vorlagen schnell eine neue Site von Grund auf erstellen. Nach der Erstellung ermöglicht das Tool Quick Site Creation auch eine schnelle Anpassung des Designs und des Stils der AEM-Site (JavaScript, CSS und statische Ressourcen). Dadurch kann der Frontend-Entwickler, der keine Kenntnisse über AEM benötigt, getrennt und parallel zu den Erstellern von Inhalten arbeiten. Der AEM-Administrator lädt ganz einfach das Site-Design herunter und stellt es dem Frontend-Entwickler bereit, der es mithilfe seiner bevorzugten Tools anpasst und dann die Änderungen an das AEM Code-Repository übergibt, das dann bereitgestellt wird.
+Mit dem Tool AEM schnelle Site-Erstellung können Nicht-Entwickler mithilfe von Site-Vorlagen eine Site von Grund auf neu erstellen. Nach der Erstellung ermöglicht das Tool Quick Site Creation auch eine schnelle Anpassung des Designs und des Stils der AEM-Site (JavaScript, CSS und statische Ressourcen). Dadurch kann der Frontend-Entwickler, der keine Kenntnisse über AEM benötigt, getrennt und parallel zu den Erstellern von Inhalten arbeiten. Der AEM-Administrator lädt ganz einfach das Site-Design herunter und stellt es dem Frontend-Entwickler bereit, der es mithilfe seiner bevorzugten Tools anpasst und dann die Änderungen an das AEM Code-Repository übergibt, das dann bereitgestellt wird.
 
 Indem es Entwicklerwissen für die Site-Erstellung unnötig macht, keine Anforderungen an spezielles AEM-Wissens für die Frontend-Entwicklung stellt und ermöglicht, dass die Design-Entwicklung parallel zur Inhaltserstellung fortgesetzt wird, beschleunigt das Tool AEM Quick Site Creation die Time-to-Value Ihrer Site erheblich und erhöht die Flexibilität beim Anpassen und Bereitstellen der Site.
 
@@ -54,7 +54,7 @@ Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folge
 |---|---|---|--|
 | 0 | Tour zur schnellen AEM-Site-Erstellung | Dieses Dokument | AEM- und Cloud Manager-Admins |
 | 1 | [Grundlegendes zu Cloud Manager und dem Workflow der schnellen Site-Erstellung](cloud-manager.md) | Erfahren Sie mehr über Cloud Manager und dessen Verbindung zum neuen Prozess der schnellen Site-Erstellung. | AEM-Admin |
-| 2 | [Erstellen einer Site aus einer Vorlage](create-site.md) | Erfahren Sie, wie Sie mithilfe einer Site-Vorlage schnell eine neue AEM-Site erstellen können. | AEM-Admin |
+| 2 | [Erstellen einer Site aus einer Vorlage](create-site.md) | Erfahren Sie, wie Sie mithilfe einer Site-Vorlage schnell eine AEM erstellen. | AEM-Admin |
 | 3 | [Einrichten der Pipeline](pipeline-setup.md) | Erstellen Sie eine Frontend-Pipeline, um die Anpassung des Designs Ihrer Site zu verwalten. | Cloud Manager-Admin |
 | 4 | [Gewähren des Zugriffs für die Frontend-Entwicklungsperson](grant-access.md) | Integrieren Sie die Frontend-Entwicklungspersonen in Cloud Manager, damit sie Zugriff auf das Git-Repository und die Pipeline der AEM-Site haben. | Cloud Manager-Admin |
 | 5 | [Abrufen von Zugriffsinformationen zum Git-Repository](retrieve-access.md) | Erfahren Sie, wie die Frontend-Entwicklungsperson Cloud Manager verwendet, um auf Git-Repository-Informationen zuzugreifen. | Frontend-Entwicklungsperson |

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie AEM verwenden, um eine Site mithilfe von Site
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 96%
+source-wordcount: '773'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie, wie Sie mit AEM eine Site mithilfe von Site-Vorlagen erstellen, um
 
 Bevor Inhaltsautoren Seiten mit Inhalten erstellen können, muss die Site zuerst erstellt werden. Dies wird im Allgemeinen von einem AEM-Administrator durchgeführt, der die anfängliche Struktur der Site definiert. Die Verwendung von Site-Vorlagen ermöglicht eine schnelle und flexible Erstellung von Sites.
 
-Mit dem Tool AEM Quick Site Creation können Nicht-Entwickler mithilfe von Site-Vorlagen schnell eine neue Site von Grund auf erstellen.
+Mit dem Tool AEM schnelle Site-Erstellung können Nicht-Entwickler mithilfe von Site-Vorlagen eine Site von Grund auf neu erstellen.
 
 Nach der Erstellung ermöglicht das Tool Quick Site Creation auch eine schnelle Anpassung des Designs und des Stils der AEM-Site (JavaScript, CSS und statische Ressourcen). Dadurch kann der Frontend-Entwickler, der keine Kenntnisse über AEM benötigt, getrennt und parallel zu den Erstellern von Inhalten arbeiten. Der AEM-Administrator lädt ganz einfach das Site-Design herunter und stellt es dem Frontend-Entwickler bereit, der es mithilfe seiner bevorzugten Tools anpasst und dann die Änderungen an das AEM Code-Repository übergibt, das dann bereitgestellt wird.
 

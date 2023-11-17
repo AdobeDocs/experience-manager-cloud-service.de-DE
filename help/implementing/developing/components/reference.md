@@ -2,9 +2,9 @@
 title: Komponenten-Referenzhandbuch
 description: Ein Referenzhandbuch für Entwickler zu den Details der Komponenten und ihrer Struktur.
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3646'
 ht-degree: 99%
 
 ---
@@ -248,7 +248,7 @@ Content not found
 >See the [AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) on customizing dialog fields.
 -->
 
-Um ein neues Widget zur Verwendung in einem Komponentendialogfeld zu erstellen, müssen Sie eine neue Granite-Benutzeroberflächenfeldkomponente erstellen.
+Zum Erstellen eines Widgets zur Verwendung in einem Komponentendialogfeld müssen Sie eine Granite-UI-Feldkomponente erstellen.
 
 Wenn Sie das Dialogfeld für einen einfachen Container für ein Formularelement halten, können Sie den Primärinhalt Ihres Dialogfeldinhalts als auch Formularfelder sehen. Um ein neues Formularfeld zu erstellen, müssen Sie einen Ressourcentyp erstellen. Dies entspricht dem Erstellen einer neuen Komponente. Um Ihnen bei dieser Aufgabe zu helfen, bietet die Granite-Benutzeroberfläche eine generische Feldkomponente, von der eine Vererbung möglich ist (mithilfe von `sling:resourceSuperType`):
 

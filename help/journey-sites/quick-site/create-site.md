@@ -1,33 +1,33 @@
 ---
 title: Erstellen einer Site aus einer Vorlage
-description: Erfahren Sie, wie Sie mithilfe einer Site-Vorlage schnell eine neue AEM-Site erstellen können.
+description: Erfahren Sie, wie Sie mithilfe einer Site-Vorlage schnell eine AEM erstellen.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1504'
-ht-degree: 98%
+source-wordcount: '1496'
+ht-degree: 91%
 
 ---
 
 # Erstellen einer Site aus einer Vorlage {#create-site-from-template}
 
-Erfahren Sie, wie Sie mithilfe einer Site-Vorlage schnell eine neue AEM-Site erstellen können.
+Erfahren Sie, wie Sie mithilfe einer Site-Vorlage schnell eine AEM erstellen.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
 Im vorherigen Dokument der AEM-Journey zur schnellen Site-Erstellung, [Grundlegendes zu Cloud Manager und zum Workflow für die schnelle Site-Erstellung](cloud-manager.md), haben Sie sich mit Cloud Manager vertraut gemacht und erfahren, wie sich der Prozess zur schnellen Site-Erstellung zusammensetzt. Sie sollten jetzt:
 
 * Wissen, wie AEM Sites und Cloud Manager zusammenarbeiten, um die Front-End-Entwicklung zu erleichtern.
-* Erfahren haben, dass der Front-End-Anpassungsschritt vollständig von AEM entkoppelt ist und keine AEM-Kenntnisse erfordert.
+* Erfahren haben, dass der Frontend-Anpassungsschritt vollständig von AEM entkoppelt ist und keine AEM-Kenntnisse erfordert.
 
-Dieser Artikel baut auf diesen Grundlagen auf. Sie können also den ersten Konfigurationsschritt durchführen und eine neue Site aus einer Vorlage erstellen, die Sie später mithilfe von Front-End-Tools anpassen können.
+Dieser Artikel baut auf diesen Grundlagen auf, damit Sie den ersten Konfigurationsschritt durchführen und eine Site für eine Vorlage erstellen können, die Sie später mithilfe von Frontend-Tools anpassen können.
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie mithilfe einer Site-Vorlage schnell eine neue AEM-Site erstellen. Nach dem Lesen sollten Sie:
+In diesem Dokument erfahren Sie, wie Sie mithilfe einer Site-Vorlage schnell eine AEM Site erstellen. Nach dem Lesen sollten Sie:
 
 * Wissen, wie Sie AEM-Site-Vorlagen abrufen.
-* Wissen, wie Sie mit einer Vorlage eine neue Site erstellen.
+* Erfahren Sie, wie Sie eine Site mit einer Vorlage erstellen.
 * Erfahren haben, wie Sie die Vorlage von Ihrer neuen Site herunterladen, um sie für den Front-End-Entwickler bereitzustellen.
 
 ## Verantwortliche Rolle {#responsible-role}
@@ -65,7 +65,7 @@ Nach dem Herunterladen können Sie sie wie jedes andere Paket in Ihre AEM-Umgebu
 
 ## Installieren einer Site-Vorlage {#installing-template}
 
-Die Verwendung einer Vorlage zur Erstellung einer neuen Site ist sehr einfach.
+Die Verwendung einer Vorlage zum Erstellen einer Site ist einfach.
 
 1. Melden Sie sich bei Ihrer AEM-Authoring-Umgebung an und navigieren Sie zur Sites-Konsole
 
@@ -171,7 +171,7 @@ Sie haben die Konfiguration abgeschlossen. Inhaltsautoren können jetzt mit der 
 Nachdem Sie nun diesen Teil der AEM-Journey zur schnellen Site-Erstellung abgeschlossen haben, sollten Sie:
 
 * Wissen, wie Sie AEM-Site-Vorlagen abrufen.
-* Wissen, wie Sie mit einer Vorlage eine neue Site erstellen.
+* Erfahren Sie, wie Sie eine Site mit einer Vorlage erstellen.
 * Erfahren haben, wie Sie die Vorlage von Ihrer neuen Site herunterladen, um sie für den Front-End-Entwickler bereitzustellen.
 
 Fahren Sie aufbauend auf diesen Kenntnissen mit der AEM-Journey zur schnellen Site-Erstellung fort, indem Sie als Nächstes das Dokument [Einrichten der Pipeline](pipeline-setup.md) lesen. Darin erstellen Sie eine Front-End-Pipeline, um die Anpassung des Designs Ihrer Site zu verwalten.

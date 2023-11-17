@@ -4,10 +4,10 @@ description: Hier finden Sie Best Practices für die Einrichtung und Verwendung 
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 95%
+source-wordcount: '1419'
+ht-degree: 94%
 
 ---
 
@@ -66,7 +66,7 @@ Live Copies können mit AEM auf zwei Arten erstellt werden:
 
 Berücksichtigen Sie beim Erstellen einer Website folgende Punkte:
 
-* Für die Erstellung einer neuen Website benötigen Sie eine [Blueprint-Konfiguration](creating-live-copies.md#managing-blueprint-configurations).
+* Um eine Site zu erstellen, benötigen Sie eine [Blueprint-Konfiguration](creating-live-copies.md#managing-blueprint-configurations).
 * Um das Auswählen von Sprachpfaden zu ermöglichen, die für eine neue Website erstellt werden sollen, muss der Blueprint (Quelle) die entsprechenden Sprachstämme enthalten.
 * Nach der [Erstellung einer neuen Website als Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (mithilfe von **Erstellen** > **Website**) sind die ersten beiden Ebenen dieser Live Copy *flach*. Untergeordnete Elemente der Seite sind nicht Teil der Live-Beziehung, werden bei einem Rollout aber trotzdem berücksichtigt, wenn eine dem Auslöser entsprechende Live-Beziehung gefunden wird.
 

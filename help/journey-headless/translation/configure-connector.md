@@ -2,10 +2,10 @@
 title: Konfigurieren der Übersetzungsintegration für Headless Content
 description: Erfahren Sie, wie Sie AEM mit einem Übersetzungs-Service verbinden.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 95%
+source-wordcount: '1229'
+ht-degree: 93%
 
 ---
 
@@ -68,9 +68,9 @@ Nachdem das Connector-Paket für Ihren bevorzugten Übersetzungsdienst installie
 * ob eine menschliche oder maschinelle Übersetzung erfolgen soll
 * ob weitere Inhalte übersetzt werden sollen, die den Inhaltsfragmenten zugeordnet sind, beispielsweise Tags
 
-So erstellen Sie eine neue Übersetzungskonfiguration:
+So erstellen Sie eine Übersetzungskonfiguration:
 
-1. Klicken oder tippen Sie im globalen Navigationsmenü auf **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services**.
+1. Klicken oder tippen Sie im globalen Navigationsmenü auf **Instrumente** > **Cloud Service** > **Übersetzungs-Cloud Service**.
 1. Navigieren Sie zu der Stelle in Ihrer Inhaltsstruktur, an der Sie die Konfiguration erstellen möchten. Diese bezieht sich oft auf ein bestimmted Projekt oder kann global sein.
    * In diesem Fall kann beispielsweise eine Konfiguration global vorgenommen werden, um sie auf alle Inhalte oder nur auf das WKND-Projekt anzuwenden.
 

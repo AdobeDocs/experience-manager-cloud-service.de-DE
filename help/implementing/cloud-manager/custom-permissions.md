@@ -2,9 +2,9 @@
 title: Benutzerdefinierte Berechtigungen
 description: Erfahren Sie, wie Sie mit benutzerdefinierten Berechtigungen neue benutzerdefinierte Berechtigungsprofile mit konfigurierbaren Berechtigungen erstellen können, um den Zugriff auf Programme, Pipelines und Umgebungen für Cloud Manager-Benutzer zu beschränken.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1501'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ In diesem Abschnitt werden diese Schritte beschrieben. Sie können es für nütz
 
 ### Neues Produktprofil erstellen {#create}
 
-Sie müssen zunächst ein neues Produktprofil erstellen, bevor Sie benutzerdefinierte Berechtigungen zuweisen können.
+Sie müssen zunächst ein Produktprofil erstellen, bevor Sie benutzerdefinierte Berechtigungen zuweisen können.
 
 1. Melden Sie sich bei Cloud Manager an unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)
 
@@ -123,10 +123,10 @@ Die folgenden Berechtigungen sind für das Erstellen benutzerdefinierter Profile
 
 | Berechtigung | Beschreibung |
 |---|---|
-| Programm erstellen | Benutzer können ein neues Programm erstellen |
+| Programm erstellen | Benutzern das Erstellen eines Programms erlauben |
 | Programmzugriff | Ermöglichen des Zugriffs auf Programme |
 | Programmbearbeitung | Benutzer können Programme bearbeiten |
-| Umgebung erstellen | Benutzer können eine neue Umgebung erstellen |
+| Umgebung erstellen | Benutzern erlauben, eine Umgebung zu erstellen |
 | Umgebungsbearbeitung | Benutzer können Umgebungen aktualisieren und bearbeiten |
 | Umgebungsprotokolle lesen | Lesen von Umgebungsprotokollen durch Benutzer zulassen |
 | Pipeline erstellen | Benutzer können neue Pipelines erstellen |
@@ -145,7 +145,7 @@ Berechtigungen auf Organisationsebene beziehen sich auf Berechtigungen, die imme
 
 Die folgenden Berechtigungen sind Berechtigungen auf Unternehmensebene:
 
-* **Programm erstellen** - Mit dieser Berechtigung können Benutzer ein neues Programm in der Organisation erstellen.
+* **Programm erstellen** - Mit dieser Berechtigung können Benutzer ein Programm in der Organisation erstellen.
 * **Zugriff auf Repository-Informationen** Mit dieser Berechtigung auf Mandanten-/Organisationsebene können Benutzer Benutzernamen, Kennwort und Repository-URL generieren, um auf das Kundenprojekt zuzugreifen und zu diesem beizutragen.
    * Benutzername und Kennwort für den Repository-Zugriff sind in allen Repositorys in der Organisation gleich, die Repository-URL ist jedoch für jedes Programm eindeutig.
    * Lesen Sie das Dokument . [Zugreifen auf Repositorys](/help/implementing/cloud-manager/managing-code/accessing-repos.md) für weitere Informationen.

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 98%
+source-wordcount: '984'
+ht-degree: 96%
 
 ---
 
@@ -41,9 +41,9 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
    ![Auswahlformular](assets/select_form.png)
 
-1. (Optional) Erstellen Sie in dem Metadatenschema-Editor ein neues Feld zur Konditionalisierung. Geben Sie einen Namen und einen Eigenschaftspfad auf der Registerkarte **[!UICONTROL Einstellungen]** an. 
+1. (Optional) Erstellen Sie im Metadatenschema-Editor ein Feld, um Bedingungen zu erstellen. Geben Sie einen Namen und einen Eigenschaftspfad auf der Registerkarte **[!UICONTROL Einstellungen]** an. 
 
-   Um eine neue Registerkarte zu erstellen, tippen/klicken Sie auf `+`, um eine Registerkarte sowie anschließend ein Metadatenfeld hinzuzufügen.
+   Um eine Registerkarte zu erstellen, tippen/klicken Sie auf `+` , um eine Registerkarte hinzuzufügen und anschließend ein Metadatenfeld hinzuzufügen.
 
    ![Registerkarte hinzufügen](assets/add_tab.png)
 

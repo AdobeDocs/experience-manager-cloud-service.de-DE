@@ -2,10 +2,10 @@
 title: Verwalten von Produktkatalogseiten und -vorlagen
 description: Erfahren Sie, wie Sie Produktkatalogseiten und -vorlagen verwalten
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 88%
+source-wordcount: '718'
+ht-degree: 85%
 
 ---
 
@@ -61,7 +61,7 @@ Vorlagen können bearbeitet werden, indem Sie die Vorlagenseite direkt öffnen o
 
 ### Kategorie- oder produktspezifische Vorlagen {#specific}
 
-CIF unterstützt mehrere Vorlagen mit nur wenigen Klicks. Um eine andere Vorlage zu erstellen, wählen Sie die generische Vorlage aus der entsprechenden Kategorie aus und erstellen Sie eine neue Seite mithilfe der Aktion **Erstellen**.
+CIF unterstützt mehrere Vorlagen mit nur wenigen Klicks. Um eine andere Vorlage zu erstellen, wählen Sie die generische Vorlage aus der entsprechenden Kategorie aus und erstellen Sie eine Seite mithilfe der **Erstellen** Aktion.
 
 ![Erstellen einer Vorlagenseite](assets/create-template-page.png)
 

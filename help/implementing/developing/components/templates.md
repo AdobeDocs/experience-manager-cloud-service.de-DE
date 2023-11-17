@@ -2,10 +2,10 @@
 title: Seitenvorlagen
 description: Seitenvorlagen werden beim Erstellen einer Seite verwendet, die als Basis für die neue Seite verwendet wird
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3291'
-ht-degree: 98%
+source-wordcount: '3287'
+ht-degree: 97%
 
 ---
 
@@ -103,7 +103,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
 1. Verwenden Sie sie, um Inhaltsseiten zu erstellen.
 
-   * Wenn Sie eine Vorlage zum Erstellen einer neuen Seite verwenden, ist kein Unterschied zwischen den statischen und bearbeitbaren Vorlagen ersichtlich.
+   * Wenn Sie eine Vorlage zum Erstellen einer Seite verwenden, gibt es keinen sichtbaren Unterschied und keinen Hinweis zwischen statischen und bearbeitbaren Vorlagen.
    * Für die Seitenautoren ist der Prozess transparent.
 
    Einzelheiten dazu, wie Seitenautoren Vorlagen zum Erstellen von Seiten verwenden können, finden Sie unter [Erstellen und Organisieren von Seiten](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
@@ -145,7 +145,7 @@ In einer Standard-AEM-Instanz ist der Ordner `global` bereits in der Vorlagenkon
 
 >[!NOTE]
 >
->Als Best Practice wird empfohlen, einen neuen Ordner für Ihre benutzerdefinierten Vorlagen zu erstellen und nicht den Ordner `global` zu verwenden.
+>Es empfiehlt sich, einen Ordner zu erstellen, in dem Ihre benutzerdefinierten Vorlagen gespeichert werden, und nicht die `global` Ordner.
 
 >[!CAUTION]
 >
@@ -161,7 +161,7 @@ Arten von Vorlagen und Richtlinien werden gemäß der folgenden Rangordnung in a
 
 Eine Liste aller zulässigen Einträge wird erstellt. Wenn sich Konfigurationen (`path`/`label`) überschneiden, wird den Benutzern nur die Instanz angezeigt, die dem aktuellen Ordner am nächsten ist.
 
-Um einen neuen Ordner zu erstellen, haben Sie folgende Möglichkeiten:
+Um einen Ordner zu erstellen, haben Sie folgende Möglichkeiten:
 
 * Programmierbar oder mit CRXDE Lite
 * Verwenden des [Konfigurations-Browsers ](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
@@ -489,7 +489,6 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
    * Durch Festlegen der Statuseigenschaft des Knotens `jcr:content`
 
       * Zum Beispiel unter:
-
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Definieren Sie die Eigenschaft:
@@ -502,7 +501,6 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
 
    * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
    * Legen Sie die folgende Eigenschaft fest:
-
      `cq:allowedTemplates`
 Im `jcr:content`-Knoten der erforderlichen Verzweigung.
 

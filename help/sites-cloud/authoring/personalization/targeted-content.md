@@ -2,10 +2,10 @@
 title: Verfassen zielgerichteter Inhalte im Targeting-Modus
 description: Im Targeting-Modus und in der Targeting-Komponente stehen verschiedene Werkzeuge zur Verfügung, mit deren Hilfe sich Inhalte für Erlebnisse erstellen lassen
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '5409'
-ht-degree: 99%
+source-wordcount: '5408'
+ht-degree: 98%
 
 ---
 
@@ -102,7 +102,7 @@ So fügen Sie eine Aktivität hinzu:
 
    >[!NOTE]
    >
-   >Wenn Sie eine neue Aktivität erstellen und der Seite oder einer der ihr übergeordneten Seiten eine Adobe Target-Cloud-Konfiguration angehängt ist, wird Adobe Target von AEM automatisch als Targeting-Engine festgelegt.
+   >Wenn Sie eine Aktivität erstellen und eine Adobe Target-Cloud-Konfiguration an die Seite oder eine ihrer übergeordneten Seiten angehängt ist, nimmt AEM automatisch Adobe Target als Engine an.
 
 1. Wählen Sie aus dem Dropdown-Menü **Targeting** die gewünschte Targeting-Engine aus.
 

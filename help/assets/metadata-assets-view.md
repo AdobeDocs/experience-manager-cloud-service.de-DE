@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Metadaten in der Asset-Ansicht verwalten. Dur
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 98%
+source-wordcount: '1556'
+ht-degree: 96%
 
 ---
 
@@ -111,7 +111,7 @@ In diesem Video finden Sie die Reihenfolge der Schritte:
 
 Nachdem ein Formular erstellt wurde, wird es automatisch angewendet, wenn Benutzer ein Asset des entsprechenden MIME-Typs hochladen.
 
-Wenn Sie ein vorhandenes Formular wiederzuverwenden wollen, um ein neues Formular zu erstellen, wählen Sie ein Metadatenformular aus, klicken Sie in der Symbolleiste auf **[!UICONTROL Kopieren]**, geben Sie einen Namen ein und klicken Sie auf **[!UICONTROL Bestätigen]**. Sie können ein Metadatenformular bearbeiten, um es zu ändern. Wenn Sie ein Formular ändern, wird es für Assets verwendet, die nach der Änderung hochgeladen wurden. Die vorhandenen Assets werden nicht geändert.
+Wenn Sie ein vorhandenes Formular wiederverwenden möchten, um ein Formular zu erstellen, wählen Sie ein Metadatenformular aus und klicken Sie auf **[!UICONTROL Kopieren]** Geben Sie in der Symbolleiste einen Namen ein und klicken Sie auf **[!UICONTROL Bestätigen]**. Sie können ein Metadatenformular bearbeiten, um es zu ändern. Wenn Sie ein Formular ändern, wird es für Assets verwendet, die nach der Änderung hochgeladen wurden. Die vorhandenen Assets werden nicht geändert.
 
 ## Eigenschaftskomponenten {#property-components}
 
@@ -145,7 +145,7 @@ Nachfolgend finden Sie eine Übersicht über die einzelnen Eigenschaftstypen und
 * Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&amp;lang=de#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
-To reuse an existing form to create a new form, do one of these:
+To reuse an existing form to create a form, do one of these:
 
 * Select a metadata form and click **[!UICONTROL Copy]** from the toolbar, provide a name, and click **[!UICONTROL Confirm]**.
 

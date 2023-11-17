@@ -2,10 +2,10 @@
 title: Erstellen und Verwalten von Displays in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Displays in Screens as a Cloud Service erstellen und verwalten.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 93%
+source-wordcount: '657'
+ht-degree: 91%
 
 ---
 
@@ -67,7 +67,7 @@ Sie können die Ordnerleiste von der Anzeige aller Ordner in die Anzeige bestimm
 
 1. Wählen Sie zum Schließen **Ordner ausblenden** aus.
 
-## Erstellen eines neuen Ordners {#create-folder}
+## Erstellen eines Ordners {#create-folder}
 
 Sie können Ordner erstellen, um Ihre Displays besser zu organisieren.
 
@@ -86,7 +86,7 @@ Sie können Ordner erstellen, um Ihre Displays besser zu organisieren.
 
    ![image](/help/screens-cloud/assets/display/Createfolder2.png)
 
-## Erstellen eines neuen verschachtelten Ordners {#nested-folder}
+## Erstellen eines verschachtelten Ordners {#nested-folder}
 
 1. Navigieren Sie zur Ansicht mit dem Display-Bestand.
 

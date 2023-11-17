@@ -2,10 +2,10 @@
 title: Gestalten Ihres ersten Erlebnisses mit AEM Headless
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie Ihre ersten Headless-Erlebnisse in AEM implementieren, einschließlich Überlegungen zur Planung, und lernen Best Practices kennen, die für möglichst reibungslose Abläufe sorgen.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 98%
+source-wordcount: '1999'
+ht-degree: 97%
 
 ---
 
@@ -70,7 +70,7 @@ In der Entwicklungsphase wird empfohlen, mit einer Entwicklungs- und Staging-Umg
 
 Entwickler benötigen eine AEM-Entwicklungsumgebung mit den ausgefüllten Inhaltsmodellen. Die Entwickler entwickeln den Client, der Inhalte von AEM Headless nutzt, während die Inhaltsautoren noch mit der Inhaltserstellung beschäftigt sind. Aus diesem Grund sind die API-Definitionen sehr wichtig. Mithilfe des AEM-SDK können Entwickler einen Test-Hook erstellen. Damit lassen sich Client- und Unit-Tests entwickeln, um sicherzustellen, dass der Client die Inhalte ordnungsgemäß rendern kann.
 
-Inhaltsautoren erstellen Inhalte auf Basis der Inhaltsmodelle, die in der Staging-Umgebung definiert wurden. Mit dem Authoring-Tool für Inhaltsfragmente erstellen Autoren neue Inhaltsfragmente bzw. bearbeiten vorhandene Inhaltsfragmente. Vor der Veröffentlichung können Autoren eine Vorschau der Inhalte im Client anzeigen. Dazu müssen sie mit den Entwicklern zusammenarbeiten, um das Inhaltsmodell in die Entwicklungsumgebung zu übertragen oder eine spezielle Entwicklungsumgebung einzurichten, damit die Autoren in der Vorschau anzeigen können, wie die Inhalte im Client aussehen würden.
+Inhaltsautoren erstellen Inhalte auf Basis der Inhaltsmodelle, die in der Staging-Umgebung definiert wurden. Mit dem Authoring-Tool für Inhaltsfragmente erstellt der Autor ein Inhaltsfragment oder bearbeitet ein vorhandenes Inhaltsfragment. Vor der Veröffentlichung können Autoren eine Vorschau der Inhalte im Client anzeigen. Dazu müssen sie mit den Entwicklern zusammenarbeiten, um das Inhaltsmodell in die Entwicklungsumgebung zu übertragen oder eine spezielle Entwicklungsumgebung einzurichten, damit die Autoren in der Vorschau anzeigen können, wie die Inhalte im Client aussehen würden.
 
 ## Einrichtung {#setup}
 

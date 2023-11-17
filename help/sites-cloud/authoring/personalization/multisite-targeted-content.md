@@ -2,10 +2,10 @@
 title: Verwenden zielgerichteter Inhalte in Multisites
 description: Möchten Sie zielgerichtete Inhalte wie beispielsweise Aktivitäten, Erlebnisse und Angebote auf Ihren Sites verwalten, können Sie hierzu die in AEM integrierte Multisite-Unterstützung für zielgerichtete Inhalte verwenden
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2889'
-ht-degree: 98%
+source-wordcount: '2885'
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ Dieses Dokument beschäftigt sich mit den folgenden Themen:
 
 Um festzulegen, wie Ihre Sites personalisierte Inhalte teilen, müssen Sie die folgenden Schritte ausführen:
 
-1. [Erstellen Sie ein neues Gebiet](#creating-new-areas) oder [erstellen Sie ein neues Gebiet als Live Copy](#creating-new-areas). Ein Gebiet umfasst alle Aktivitäten, die für ein *Gebiet* der Seite zur Verfügung stehen; das heißt, die Stelle auf der Seite, auf die die Komponente abzielt. Beim Erstellen eines neuen Gebiets ist dieses zunächst leer, wobei Sie jedoch Inhalte Site-Struktur-übergreifend übernehmen können, wenn Sie das neue Gebiet als Live Copy erstellen.
+1. [Neues Gebiet erstellen](#creating-new-areas) oder [Gebiet als Live Copy erstellen](#creating-new-areas). Ein Gebiet umfasst alle Aktivitäten, die für ein *Gebiet* der Seite zur Verfügung stehen; das heißt, die Stelle auf der Seite, auf die die Komponente abzielt. Beim Erstellen eines neuen Gebiets ist dieses zunächst leer, wobei Sie jedoch Inhalte Site-Struktur-übergreifend übernehmen können, wenn Sie das neue Gebiet als Live Copy erstellen.
 
 1. [Verknüpfen Sie Ihre Website oder Seite](#linking-sites-to-an-area) mit einem Gebiet.
 
@@ -119,9 +119,9 @@ Sie können die Vererbung jederzeit aussetzen oder die Vererbung vollständig tr
 
 ### Erstellen eines neuen Gebiets bzw. eines neuen Gebiets als Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
-In AEM haben Sie die Wahl, entweder ein neues Gebiet oder ein neues Gebiet als Live Copy zu erstellen. Bei der Erstellung eines neuen Gebiets werden Aktivitäten und jegliche mit ihnen verbundenen Elemente (Angebote, Erlebnisse usw.) gruppiert. Neue Gebiete werden dann benötigt, wenn Sie entweder einen Satz zielgerichteter erstellen, die sich vollständig von anderen Inhalten unterscheiden, oder wenn Sie einen Satz zielgerichteter Inhalte teilen möchten.
+In AEM haben Sie die Wahl, entweder ein neues Gebiet oder ein neues Gebiet als Live Copy zu erstellen. Bei der Erstellung eines neuen Gebiets werden Aktivitäten und jegliche mit ihnen verbundenen Elemente (Angebote, Erlebnisse usw.) gruppiert. Sie erstellen ein Gebiet, in dem Sie entweder einen völlig eigenen Satz zielgerichteter Inhalte erstellen oder einen Satz zielgerichteter Inhalte freigeben möchten.
 
-Wenn Sie jedoch über MSM eine Vererbung zwischen den beiden Sites eingerichtet haben, möchten Sie die Aktivitäten möglicherweise vererben. In diesem Fall erstellen Sie ein neues Gebiet als Live Copy, wobei Y eine Live Copy von X ist und daher alle Aktivitäten erbt.
+Wenn Sie jedoch über MSM eine Vererbung zwischen den beiden Sites eingerichtet haben, möchten Sie die Aktivitäten möglicherweise vererben. In diesem Fall erstellen Sie ein Gebiet als Live Copy, wobei Y eine Live Copy von X ist und daher alle Aktivitäten übernimmt.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Gebiete können aktivitäten- und angebotsübergreifend gelten. Nach der Erstell
 >
 >Der Standardbereich &quot;Masterbereich&quot;wird standardmäßig ausgeblendet, wenn Sie auf den Namen einer Marke tippen oder klicken **bis** Erstellen Sie einen anderen Bereich. Wählen Sie entweder in der **Aktivitäts-** oder der **Angebotskonsole** eine Marke aus, wird Ihnen die **Gebietskonsole** angezeigt.
 
-So erstellen Sie ein neues Gebiet:
+So erstellen Sie einen Bereich:
 
 1. Navigieren Sie zu **Personalisierung** > **Aktivitäten** oder **Angebote** und dann zu Ihrer Marke.
 1. Tippen oder klicken Sie auf **Gebiet erstellen**.

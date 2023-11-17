@@ -2,10 +2,10 @@
 title: Asset-Metadatenzuordnung zwischen Workfront und Experience Manager Assets konfigurieren
 description: Asset-Metadatenfelder zwischen Adobe Workfront und Experience Manager as a Cloud Service-Programmen zuordnen. Durch die Zuordnung von Metadatenfeldern können Sie beim Senden eines Assets von Workfront an Experience Manager Assets die zugeordneten Asset-Metadaten in Experience Manager Assets anzeigen.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: ht
-source-wordcount: '1025'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '1023'
+ht-degree: 97%
 
 ---
 
@@ -56,7 +56,7 @@ So senden Sie das Bild von Workfront an Experience Manager Assets:
 
 1. Klicken Sie auf das Hauptmenüsymbol ![Menü anzeigen](assets/show-menu.svg) in der oberen rechten Ecke des Adobe Workfront-Programms und dann auf **[!UICONTROL Projekte]**.
 
-1. Klicken Sie auf **[!UICONTROL Neues Projekt]**, um ein neues Projekt zu erstellen.
+1. Klicks **[!UICONTROL Neues Projekt]** , um ein Projekt zu erstellen.
 
 1. Klicken Sie auf **[!UICONTROL Dokumente]** im linken Bereich, ziehen Sie das Bild, das Sie an Experience Manager Assets senden möchten, und wählen Sie es aus.
 
@@ -82,7 +82,7 @@ So konfigurieren Sie die Metadatenzuordnung mit einem neuen Metadatenformular in
 
 1. Wählen Sie das Schemaformular aus und klicken Sie auf **[!UICONTROL Bearbeiten]**.
 
-1. (Optional) Klicken Sie im Metadatenschema-Formular-Editor auf `+`, um eine neue Registerkarte für die Workfront-Felder zu erstellen.
+1. (Optional) Klicken Sie im Metadatenschema-Formular-Editor auf `+` , um eine Registerkarte für die Workfront-Felder zu erstellen.
 
 1. Klicken Sie auf **[!UICONTROL Formular erstellen]** und ziehen Sie die **[!UICONTROL Einzelzeilentext]**-Komponente in das Formular. Klicken Sie auf die Komponente im Formular. Gehen Sie auf der Registerkarte **[!UICONTROL Formular erstellen]** folgendermaßen vor:
 

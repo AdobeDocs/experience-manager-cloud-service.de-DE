@@ -2,9 +2,9 @@
 title: Inhaltsfragmentmodelle (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für Ihre Headless-Inhalte dienen und wie Sie Inhaltsfragmente mit strukturierten Inhalten erstellen.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2937'
+source-wordcount: '2935'
 ht-degree: 96%
 
 ---
@@ -224,7 +224,6 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 * **[Fragmentreferenz](#fragment-reference-nested-fragments)** (verschachtelte Fragmente)
    * Verweist auf andere Fragmente, abhängig von den angegebenen Modellen.
    * Ermöglicht das Einschließen/Abrufen strukturierter Daten.
-
      >[!NOTE]
      >
      >Diese Methode ist in Verbindung mit der [Headless-Bereitstellung mithilfe von Inhaltsfragmenten mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md) besonders interessant.
@@ -298,7 +297,7 @@ Gibt einen Stammpfad für referenzierte Fragmente an.
 
 * **Fragmenterstellung zulassen**
 
-  Auf diese Weise kann der Fragmentautor ein neues Fragment erstellen, das auf dem entsprechenden Modell basiert.
+  Dadurch kann der Fragmentautor ein Fragment basierend auf dem entsprechenden Modell erstellen.
 
    * **fragmentreferencecomposite**: Ermöglicht dem Fragmentautor das Erstellen einer Composite-Datei durch Auswahl mehrerer Fragmente.
 

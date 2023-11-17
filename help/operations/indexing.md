@@ -2,10 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Erfahren Sie mehr über die Inhaltssuche und -indizierung in AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: d567115445c0a068380e991452d9b976535e3a1d
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2433'
-ht-degree: 72%
+source-wordcount: '2432'
+ht-degree: 71%
 
 ---
 
@@ -47,7 +47,7 @@ Indexdefinitionen können wie folgt in drei primäre Anwendungsfälle kategorisi
 2. **Aktualisieren** eine vorhandene Indexdefinition durch Hinzufügen einer neuen Version.
 3. **Entfernen** eine Indexdefinition, die nicht mehr erforderlich ist.
 
-Für die Punkte 1 und 2 müssen Sie als Teil Ihrer benutzerspezifischen Code-Basis im jeweiligen Release-Plan für Cloud Manager eine neue Indexdefinition erstellen. Weitere Informationen finden Sie unter [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md) Dokumentation.
+Für die obigen Punkte 1 und 2 müssen Sie eine Indexdefinition als Teil Ihrer benutzerdefinierten Codebasis im entsprechenden Cloud Manager-Veröffentlichungszeitplan erstellen. Weitere Informationen finden Sie unter [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md) Dokumentation.
 
 ## Indexnamen {#index-names}
 

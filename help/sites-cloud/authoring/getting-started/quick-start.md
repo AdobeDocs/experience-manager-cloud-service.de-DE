@@ -2,9 +2,9 @@
 title: Schnellstartanleitung zum Verfassen von Seiten (Authoring)
 description: Ein kurzer, allgemeiner Leitfaden mit den ersten Schritten zur Seitenbearbeitung
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1560'
 ht-degree: 90%
 
 ---
@@ -76,7 +76,7 @@ Es gibt verschiedene Möglichkeiten, eine Seite zu finden: Sie können navigiere
 
 ### Erstellen einer neuen Seite {#creating-a-new-page}
 
-[So erstellen Sie eine neue Seite](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
+nach [Erstellen einer Seite](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
 1. [Navigieren Sie zu der Position, an der Sie die neue Seite erstellen möchten.](#finding-your-page)
 1. Verwenden Sie das Symbol **Erstellen** und wählen Sie dann **Seite** aus der Liste:

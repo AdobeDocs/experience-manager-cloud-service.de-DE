@@ -3,10 +3,10 @@ title: Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfra
 description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einem wichtigen Teil der Adobe Experience Manager-Funktion zur Headless-Bereitstellung.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1793'
-ht-degree: 60%
+source-wordcount: '1791'
+ht-degree: 59%
 
 ---
 
@@ -263,7 +263,7 @@ Die Verwendung kann davon abhängen, ob Sie eine AEM Autoren- oder Veröffentlic
 
 Es gibt einige Beschränkungen:
 
-* **Inhaltsfragmentmodelle werden derzeit nicht unterstützt**: sie können weder gelesen noch erstellt werden. Zum Erstellen eines neuen oder Aktualisieren eines vorhandenen Inhaltsfragments müssen Entwickler den richtigen Pfad zum Inhaltsfragmentmodell kennen. Derzeit ist dies lediglich über die Verwaltungsoberfläche möglich.
+* **Inhaltsfragmentmodelle werden derzeit nicht unterstützt**: sie können weder gelesen noch erstellt werden. Um ein vorhandenes Inhaltsfragment erstellen oder aktualisieren zu können, müssen Entwickler den richtigen Pfad zum Inhaltsfragmentmodell kennen. Derzeit ist dies lediglich über die Verwaltungsoberfläche möglich.
 * **Verweise werden ignoriert**. Zurzeit sind keine Überprüfungen für Verweise auf vorhandene Inhaltsfragmente verfügbar. Wenn Sie beispielsweise ein Inhaltsfragment löschen, treten möglicherweise Probleme auf einer Seite auf, die einen Verweis auf das gelöschte Inhaltsfragment enthält.
 * **JSON-Datentyp** Die REST-API-Ausgabe der *JSON-Datentyp* is *Zeichenfolgenbasierte Ausgabe*.
 

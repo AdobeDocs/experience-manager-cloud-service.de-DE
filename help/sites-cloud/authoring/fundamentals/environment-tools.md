@@ -2,10 +2,10 @@
 title: Autorenumgebung und Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2164'
-ht-degree: 94%
+source-wordcount: '2163'
+ht-degree: 93%
 
 ---
 
@@ -120,7 +120,7 @@ Um ein Asset zu der Seite hinzuzufügen, wählen Sie es aus und ziehen Sie es an
 
 * Eine vorhandene Komponente des entsprechenden Typs.
    * Sie können beispielsweise ein Asset des Typs „Bild“ auf eine Bildkomponente ziehen.
-* Ein [Platzhalter](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) im Absatzsystem zum Erstellen einer neuen Komponente des entsprechenden Typs.
+* A [Platzhalter](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) im Absatzsystem, um eine Komponente des entsprechenden Typs zu erstellen.
    * Sie können beispielsweise ein Asset des Typs „Bild“ in das Absatzsystem ziehen, um eine Bildkomponente zu erstellen.
 
 >[!NOTE]

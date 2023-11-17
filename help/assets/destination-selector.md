@@ -4,9 +4,9 @@ description: Verwenden Sie die AEM-Zielauswahl, um Assets anzuzeigen und auszuw�
 contentOwner: Adobe
 role: Admin,User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1906'
 ht-degree: 93%
 
 ---
@@ -212,7 +212,7 @@ Sie können die [Eigenschaften](#destination-selector-properties) der Zielauswah
 
 ### Beispiel 1: Erstellen eines Ordners in der Zielauswahl
 
-Mit der Zielauswahl können Sie einen neuen Ordner erstellen, in den Assets am gewünschten Speicherort hochgeladen, verschoben oder kopiert werden können.
+Mit der Zielauswahl können Sie einen Ordner zum Hochladen, Verschieben oder Kopieren von Assets an einem bestimmten Speicherort erstellen.
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -261,7 +261,7 @@ Dies ist ein Beispiel für die Eigenschaft `optionsFormSetup`. Sie können sie v
 
 ### Neuen Ordner erstellen {#create-new-folder}
 
-Damit können Sie einen neuen Ordner im Zielordner Ihrer [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+Damit können Sie einen Ordner im Zielordner Ihrer [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
 ### Ansichtstypen {#types-of-view}
 

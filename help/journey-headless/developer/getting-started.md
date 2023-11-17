@@ -2,10 +2,10 @@
 title: Erste Schritte mit AEM Headless as a Cloud Service
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Voraussetzungen für AEM Headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3096'
-ht-degree: 95%
+source-wordcount: '3095'
+ht-degree: 94%
 
 ---
 
@@ -117,7 +117,7 @@ Diese Integrationsebene baut auf Ebene zwei auf, indem die meisten Inhalte in de
 
 ### Sie haben noch keinen externen Benutzer der Headless-Inhalte, z. B. eine Single Page Application (SPA). {#do-not-have-a-spa}
 
-Wenn Sie eine neue SPA erstellen möchten, die Inhalte von AEM „headless“ nutzt, können Sie Funktionen wie Inhaltsfragmente verwenden, um Ihre Headless-Inhalte zu verwalten, und auch eine SPA mit dem AEM Editor-Framework erstellen.
+Wenn Sie ein SPA erstellen möchten, das Inhalte von AEM nutzlos nutzt, können Sie Funktionen wie Inhaltsfragmente verwenden, um Headless-Inhalte zu verwalten und auch eine SPA mit AEM Editor-Framework zu erstellen.
 
 Mit dem SPA-Editor nutzt die SPA nicht nur Inhalte aus AEM, sondern kann auch innerhalb von AEM von Ihren Inhaltsautoren vollständig bearbeitet werden, sodass Sie sowohl die Flexibilität der Headless-Bereitstellung als auch der kontextbezogenen Bearbeitung innerhalb von AEM nutzen können.
 

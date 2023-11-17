@@ -2,9 +2,9 @@
 title: Verwenden von CRXDE Lite
 description: CRXDE Lite ist Teil des AEM-Schnellstarts und steht Ihnen zur Verfügung, um auf das Repository in Ihren lokalen Entwicklungsumgebungen im Browser zuzugreifen und es zu ändern.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1683'
 ht-degree: 95%
 
 ---
@@ -206,7 +206,7 @@ So erstellen Sie eine Eigenschaft mit CRXDE Lite:
 
 ## Erstellen einer Datei {#creating-a-file}
 
-Erstellen einer neuen Datei mit CRXDE Lite:
+So erstellen Sie eine Datei mit CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
 1. Klicken Sie im [**Explorer-Fenster**,](#explorer-pane) mit der rechten Maustaste auf die Komponente, für die Sie die Datei erstellen möchten, wählen Sie **Erstellen** und dann **Datei erstellen** aus.
