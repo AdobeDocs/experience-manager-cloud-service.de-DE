@@ -2,10 +2,10 @@
 title: Entfernen des generischen Lucene-Index
 description: Erfahren Sie mehr über die geplante Entfernung des generischen Lucene-Index und darüber, wie Sie betroffen sein könnten.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 100%
+source-wordcount: '1335'
+ht-degree: 95%
 
 ---
 
@@ -38,7 +38,7 @@ Beispielsweise sollten Referenz-Lookup-Abfragen, wie im folgenden Beispiel, nun 
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-Um größere Kundendatenvolumen zu unterstützen, erstellt Adobe für neue AEM as a Cloud Service-Umgebungen den generischen Lucene-Index nicht mehr. Darüber hinaus entfernt Adobe den Index aus vorhandenen Repositorys. Weitere Einzelheiten finden Sie [in der Timeline](#timeline) am Ende dieses Dokuments.
+Um größere Kundendatenvolumen zu unterstützen, erstellt Adobe für neue AEM as a Cloud Service-Umgebungen den generischen Lucene-Index nicht mehr. Außerdem entfernt Adobe den Index aus vorhandenen Repositorys. Weitere Einzelheiten finden Sie [in der Timeline](#timeline) am Ende dieses Dokuments.
 
 Adobe hat die Indexkosten bereits über die `costPerEntry`- und `costPerExecution`-Eigenschaften angepasst, um sicherzustellen, dass andere Indizes wie `/oak:index/pathreference` nach Möglichkeit bevorzugt werden.
 
@@ -74,7 +74,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 ## Potenzielle Abhängigkeiten von generischen Lucene-Indizes {#potential-dependencies}
 
-Es gibt eine Reihe von Bereichen, in denen Ihre Programme und AEM-Installationen von generischen Lucene-Indizes sowohl für Autoren- als auch Veröffentlichungsinstanzen abhängig sein können.
+Es gibt mehrere Bereiche, in denen Ihre Anwendungen und AEM Installationen von generischen Lucene-Indizes sowohl auf Autoren- als auch auf Veröffentlichungsinstanzen abhängig sein können.
 
 ### Veröffentlichungsinstanz {#publish-instance}
 
@@ -121,7 +121,7 @@ Deshalb greift die Abfrage auf den allgemeinen Volltextindex zurück, in dem all
 
 ### Autoreninstanz {#author-instance}
 
-Zusätzlich zu Abfragen in Kundenprogramm-Servlets, OSGi-Komponenten und Rendering-Skripten kann es eine Reihe von autorenspezifischen Verwendungen des generischen Lucene-Index geben.
+Zusätzlich zu Abfragen in Kundenanwendungs-Servlets, OSGi-Komponenten und Rendering-Skripten kann es mehrere author-spezifische Verwendungen des generischen Lucene-Index geben.
 
 #### Referenzsuche {#reference-search}
 

@@ -3,10 +3,10 @@ title: Verwalten von Pipelines
 description: Erfahren Sie, wie Sie Ihre vorhandenen Pipelines verwalten, einschließlich Bearbeiten, Ausführen und Löschen.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 46%
+source-wordcount: '938'
+ht-degree: 45%
 
 ---
 
@@ -41,7 +41,7 @@ Die **Pipelines** zeigt eine vollständige Liste aller Pipelines für das ausgew
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Aus dem **Programmübersicht** Tippen oder klicken Sie auf **Pipelines** Registerkarte, um zu der **Pipelines** Fenster.
+1. Aus dem **Programmübersicht** Seite, wählen Sie die **Pipelines** Registerkarte, um zu der **Pipelines** Fenster.
 
 1. Hier sehen Sie eine Liste aller Pipelines für das Programm sowie die Ausführung der Pipeline wie im **Pipelines Card**.
 
@@ -57,7 +57,7 @@ Die **Tätigkeiten** zeigt eine vollständige Liste aller Pipelines-Ausführunge
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Aus dem **Programmübersicht** Tippen oder klicken Sie auf **Aktivität** Registerkarte, um zu der **Aktivität** Fenster.
+1. Aus dem **Programmübersicht** Seite, wählen Sie die **Aktivität** Registerkarte, um zu der **Aktivität** Fenster.
 
 1. Hier sehen Sie eine Liste aller Pipeline-Ausführungen für das Programm, einschließlich aktueller und historischer Ausführungen.
 
@@ -87,7 +87,7 @@ Je nach Pipeline-Typ können Sie die Ausführung möglicherweise abbrechen, inde
 
 1. Daraufhin wird das Dialogfeld **Produktions-Pipeline bearbeiten** oder **Produktionsfremde Pipeline bearbeiten** angezeigt, sodass Sie die Details bearbeiten können, die Sie beim Erstellen der Pipeline eingegeben haben.
 
-   * Auf den folgenden Seiten finden Sie Details zu allen Feldern und Konfigurationsoptionen, die für Pipelines verfügbar sind.
+   * Auf den folgenden Seiten finden Sie Details zu den Feldern und Konfigurationsoptionen, die für Pipelines verfügbar sind.
       * [Konfigurieren von Produktions-Pipelines](configuring-production-pipelines.md)
       * [Konfigurieren von produktionsfremden Pipelines](configuring-non-production-pipelines.md)
 
@@ -127,7 +127,7 @@ Sobald ein Pipeline-Schritt abgeschlossen ist, wird eine Zusammenfassung angezei
 
 ![Schrittzusammenfassung](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
 
-Tippen oder klicken Sie auf **Details anzeigen** -Link, um die **Dauer** Abschnitt. Dies umfasst die durchschnittliche Dauer der Pipeline basierend auf dem historischen Trend für dieses Programm.
+Wählen Sie die **Details anzeigen** -Link, um die **Dauer** Abschnitt. Dies umfasst die durchschnittliche Dauer der Pipeline basierend auf dem historischen Trend für dieses Programm.
 
 ![Dauer](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
 
@@ -145,16 +145,16 @@ Wenn sich eine Pipeline in der Validierungs- oder Build-Bildphase befindet, kön
 
    ![Abbruch einer Pipeline](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
 
-1. Tippen oder klicken **Abbrechen**.
+1. Auswählen **Abbrechen**.
 
 Alternativ können Sie eine Pipeline auf der Seite mit den Pipeline-Details abbrechen.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Navigieren Sie zum **Pipelines** Registerkarte aus **Programmübersicht** und tippen oder klicken Sie auf die Pipeline, die Sie abbrechen möchten.
+1. Navigieren Sie zum **Pipelines** Registerkarte aus **Programmübersicht** und wählen Sie die Pipeline aus, die Sie abbrechen möchten.
 
 1. Sie gelangen zur Detailseite der Pipeline, die gerade ausgeführt wird.
 
    ![Pipeline-Details abbrechen](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
 
-1. Tippen oder klicken **Abbrechen**.
+1. Auswählen **Abbrechen**.

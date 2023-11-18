@@ -2,10 +2,10 @@
 title: Veröffentlichen von Inhalten mit dem universellen Editor
 description: Erfahren Sie, wie der Universal Editor Inhalte veröffentlicht und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 73%
+source-wordcount: '359'
+ht-degree: 67%
 
 ---
 
@@ -34,4 +34,4 @@ Eine andere Möglichkeit besteht darin, die App in zwei verschiedenen Umgebungen
 
 Ziel des universellen Editors ist es, kein bestimmtes Muster vorzuschreiben, damit die Implementierung ihre Ziele am besten vollständig entkoppelt erreichen kann und dabei alles für die Implementierung einfach und unkompliziert bleibt.
 
-Gleichermaßen stellt der universelle Editor keine Anforderungen daran, wie ein bestimmtes Projekt die Bestimmung der Ebene durchführt, von der der Inhalt bereitgestellt werden soll. Stattdessen bietet er eine Reihe von Möglichkeiten und ermöglicht es dem Projekt zu bestimmen, welche Lösung für seine eigenen Anforderungen am besten geeignet ist.
+Gleichermaßen stellt der universelle Editor keine Anforderungen daran, wie ein bestimmtes Projekt die Bestimmung der Ebene durchführt, von der der Inhalt bereitgestellt werden soll. Stattdessen bietet es mehrere Möglichkeiten und ermöglicht dem Projekt zu bestimmen, welche Lösung für seine eigenen Anforderungen am besten geeignet ist.

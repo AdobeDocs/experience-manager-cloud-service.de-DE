@@ -2,10 +2,10 @@
 title: Komponenten-Referenzhandbuch
 description: Ein Referenzhandbuch für Entwickler zu den Details der Komponenten und ihrer Struktur.
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3646'
-ht-degree: 99%
+source-wordcount: '3642'
+ht-degree: 96%
 
 ---
 
@@ -55,7 +55,7 @@ Dies bedeutet, dass Sie nur die erforderlichen Unterschiede neu definieren müss
 
 ### Inhaltslogik und Rendering-Markup  {#content-logic-and-rendering-markup}
 
-Ihre Komponente wird mit [HTML](https://www.w3schools.com/htmL/html_intro.asp) gerendert. Ihre Komponente muss den HTML-Code definieren, der notwendig ist, um den erforderlichen Inhalt zu übernehmen und anschließend in der Authoring- und Publishing-Umgebung nach Bedarf zu rendern.
+Ihre Komponente wird mit [HTML](https://www.w3schools.com/htmL/html_intro.asp) gerendert. Ihre Komponente muss die HTML definieren, die erforderlich ist, um den erforderlichen Inhalt zu übernehmen und ihn dann nach Bedarf in der Autoren- und Veröffentlichungsumgebung wiederzugeben.
 
 Es empfiehlt sich, den für Markup und Rendering zuständigen Code getrennt von dem Code zu halten, der die Logik zur Auswahl des Komponenteninhalts enthält.
 
@@ -181,7 +181,7 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
 | `component.html` | `nt:file` | Dies ist die HTL-Skriptdatei der Komponente. |
 | `cq:icon` | `String` | Dieser Wert verweist auf das [Symbol der Komponente](#component-icon) und wird im Komponenten-Browser angezeigt. |
 
-Wenn wir uns die **Textkomponente** ansehen, sehen wir eine Reihe dieser Elemente:
+Wenn Sie sich die **Text** -Komponente können Sie mehrere dieser Elemente sehen:
 
 ![Struktur der Textkomponente](assets/components-text.png)
 
@@ -250,7 +250,7 @@ Content not found
 
 Zum Erstellen eines Widgets zur Verwendung in einem Komponentendialogfeld müssen Sie eine Granite-UI-Feldkomponente erstellen.
 
-Wenn Sie das Dialogfeld für einen einfachen Container für ein Formularelement halten, können Sie den Primärinhalt Ihres Dialogfeldinhalts als auch Formularfelder sehen. Um ein neues Formularfeld zu erstellen, müssen Sie einen Ressourcentyp erstellen. Dies entspricht dem Erstellen einer neuen Komponente. Um Ihnen bei dieser Aufgabe zu helfen, bietet die Granite-Benutzeroberfläche eine generische Feldkomponente, von der eine Vererbung möglich ist (mithilfe von `sling:resourceSuperType`):
+Wenn Sie das Dialogfeld für einen einfachen Container für ein Formularelement halten, können Sie den Primärinhalt Ihres Dialogfeldinhalts als auch Formularfelder sehen. Zum Erstellen eines neuen Formularfelds müssen Sie einen Ressourcentyp erstellen. Dies entspricht dem Erstellen einer Komponente. Um Ihnen bei dieser Aufgabe zu helfen, bietet die Granite-Benutzeroberfläche eine generische Feldkomponente, von der eine Vererbung möglich ist (mithilfe von `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -441,7 +441,7 @@ Die Feldüberprüfung in der Granite-Benutzeroberfläche und den Granite-Benutze
 
 ### Erkennen der Verfügbarkeit des Dialogfelds {#dialog-ready}
 
-Wenn Sie über ein benutzerdefiniertes JavaScript verfügen, das nur ausgeführt werden muss, wenn das Dialogfeld verfügbar und bereit ist, sollten Sie auf das `dialog-ready`-Ereignis achten.
+Wenn Sie über ein benutzerdefiniertes JavaScript verfügen, das nur ausgeführt werden darf, wenn das Dialogfeld verfügbar und bereit ist, sollten Sie auf die `dialog-ready` -Ereignis.
 
 Dieses Ereignis wird ausgelöst, wenn das Dialogfeld geladen (oder erneut geladen) wird und einsatzbereit ist, d. h., wenn eine Änderung (Erstellen/Aktualisieren) im DOM des Dialogfelds erfolgt.
 

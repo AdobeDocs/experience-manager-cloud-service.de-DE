@@ -2,9 +2,9 @@
 title: SLA-Berichte
 description: Erfahren Sie, wie Sie die Leistung Ihrer Produktionsumgebung im Vergleich zum vertraglich vereinbarten Service Level Agreement (SLA) AEM.
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '245'
 ht-degree: 9%
 
 ---
@@ -32,7 +32,7 @@ Bewegen Sie den Cursor über einen Datenpunkt, um die spezifischen Werte für di
 
 ## SLA-Metriken {#sla-metrics}
 
-Das Diagramm des ausgewählten Jahres enthält eine Reihe von Datensätzen.
+Das Diagramm des ausgewählten Jahres enthält mehrere Datensätze.
 
 * **Veröffentlichen von Tier-Verträgen** - Dies ist der SLA, der in Ihrem Vertrag mit Adobe für die Veröffentlichungsstufe definiert ist.
 

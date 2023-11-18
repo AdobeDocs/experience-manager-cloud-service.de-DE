@@ -2,21 +2,21 @@
 title: Vorschau von Seiten mit ContextHub-Daten
 description: In der ContextHub-Symbolleiste werden Daten aus ContextHub Stores angezeigt. Außerdem können Sie mithilfe der Leiste Store-Daten bearbeiten und Inhalte in der Vorschau ansehen.
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 57%
+source-wordcount: '360'
+ht-degree: 84%
 
 ---
 
 # Vorschau von Seiten mit ContextHub-Daten  {#previewing-pages-using-contexthub-data}
 
-In der ContextHub-Symbolleiste werden Daten aus ContextHub-Stores angezeigt und Sie können Store-Daten ändern. Die ContextHub-Symbolleiste ist für die Vorschau von Inhalten nützlich, die durch Daten in einem ContextHub-Store bestimmt werden.
+In der ContextHub-Symbolleiste werden Daten aus ContextHub Stores angezeigt. Außerdem können mithilfe dieser Leiste Store-Daten bearbeitet werden. Die ContextHub-Symbolleiste ist für die Vorschau von Inhalten nützlich, die durch Daten in einem ContextHub-Store bestimmt werden.
 
-Die Symbolleiste besteht aus einer Reihe von Benutzeroberflächenmodi, die ein oder mehrere Benutzeroberflächenmodule enthalten.
+Die Symbolleiste besteht aus einer Reihe von UI-Modi, die ein oder mehrere UI-Module enthalten.
 
-* Benutzeroberflächenmodi sind Symbole, die links in der Symbolleiste angezeigt werden. Wenn Sie auf ein Symbol klicken oder tippen, zeigt die Symbolleiste die darin enthaltenen UI-Module an.
-* Benutzeroberflächenmodule zeigen Daten aus einem oder mehreren ContextHub-Stores an. Einige Benutzeroberflächenmodule ermöglichen es Ihnen auch, gespeicherte Daten zu bearbeiten.
+* UI-Modi sind Symbole, die links in der Symbolleiste angezeigt werden. Wenn Sie ein Symbol auswählen, zeigt die Symbolleiste die darin enthaltenen Benutzeroberflächenmodule an.
+* UI-Module zeigen Daten aus einem oder mehreren ContextHub-Stores an. Einige UI-Module ermöglichen es Ihnen auch, Store-Daten zu bearbeiten.
 
 Es werden verschiedene Benutzeroberflächenmodi und -module von ContextHub installiert. Möglicherweise hat Ihr Admin [ContextHub so konfiguriert](/help/implementing/developing/personalization/configuring-contexthub.md), dass andere Module als die hier gezeigten dargestellt werden.
 
@@ -26,17 +26,17 @@ Die ContextHub-Symbolleiste ist im Vorschaumodus verfügbar. Die Symbolleiste wi
 
 ![Die ContextHub-Symbolleiste](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
 
-1. Klicken oder tippen Sie bei zur Bearbeitung geöffneter Seite auf die Vorschauoption.
+1. Wenn die Seite zur Bearbeitung geöffnet ist, wählen Sie in der Symbolleiste Vorschau aus.
 
    ![Die Vorschauschaltfläche](/help/sites-cloud/authoring/assets/contexthub-preview-button.png)
 
-1. Klicken oder tippen Sie auf das ContextHub-Symbol, um die Symbolleiste einzublenden.
+1. Um die Symbolleiste einzublenden, wählen Sie das ContextHub-Symbol aus.
 
    ![Die ContextHub-Schaltfläche](/help/sites-cloud/authoring/assets/contexthub-button.png)
 
 ## Benutzeroberflächenmodul-Funktionen {#ui-module-features}
 
-Jedes UI-Modul bietet unterschiedliche Funktionen, die folgenden Arten von Funktionen sind jedoch üblich. Da UI-Module erweiterbar sind, kann Ihr Entwickler nach Bedarf andere Funktionen implementieren.
+Jedes UI-Modul bietet unterschiedliche Funktionen, die folgenden Arten von Funktionen sind jedoch allgemein üblich. Da sich die UI-Module erweitern lassen, können Entwicklerinnen und Entwickler je nach Wunsch weitere Funktionen implementieren.
 
 ### Inhalt der Symbolleiste {#toolbar-content}
 
@@ -52,10 +52,10 @@ Einige Benutzeroberflächenmodule zeigen ein überlagertes Popup an, wenn darauf
 
 ### Popup-Formulare {#popup-forms}
 
-In einigen Popup-Overlays der Benutzeroberflächenmodule befinden sich Formularelemente, mit deren Hilfe Sie Daten im ContextHub Store bearbeiten können. Wenn der Seiteninhalt durch die Speicherdaten bestimmt wird, können Sie das Formular verwenden und Änderungen am Seiteninhalt beobachten.
+In einigen Popup-Overlays der Benutzeroberflächenmodule befinden sich Formularelemente, mit deren Hilfe Sie Daten im ContextHub Store bearbeiten können. Wenn Seiteninhalt durch die Store-Daten bestimmt wird, können Sie das Formular verwenden und Änderungen am Seiteninhalt beobachten.
 
 ### Vollbildmodus {#fullscreen-mode}
 
-Die Popup-Überlagerung kann ein Symbol enthalten, auf das Sie klicken oder tippen können, um den Popup-Inhalt so zu erweitern, dass er das gesamte Browser-Fenster oder den Bildschirm einnimmt.
+Popup-Überlagerungen können ein Symbol enthalten, mit dem Sie den Popup-Inhalt erweitern und so das gesamte Browserfenster oder den gesamten Bildschirm abdecken.
 
 ![Schaltfläche „Vollbild“](/help/sites-cloud/authoring/assets/contexthub-fullscreen.png)

@@ -3,10 +3,10 @@ title: Verwenden der GraphiQL-IDE in AEM
 description: Erfahren Sie, wie Sie die GraphiQL IDE in Adobe Experience Manager verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 95%
+source-wordcount: '1137'
+ht-degree: 94%
 
 ---
 
@@ -82,7 +82,7 @@ Sie können eine neue Abfrage sofort ausführen oder eine persistente Abfrage la
 
 In beiden Fällen ist die Abfrage, die im Editor-Panel angezeigt wird, die Abfrage, die ausgeführt wird, wenn Sie entweder:
 
-* auf das Symbol **Abfrage ausführen** klicken/tippen oder
+* auf der **Ausführen der Abfrage** icon
 * die Tastaturkombination `Control-Enter` verwenden.
 
 ## Abfragevariablen {#query-variables}
@@ -99,7 +99,7 @@ Beispiel:
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [Zwischenspeichern persistierter Abfragen](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>Siehe [Zwischenspeichern persistenter Abfragen](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >

@@ -2,10 +2,10 @@
 title: Suchen
 description: Rasches Auffinden von Inhalten dank umfassender Suchfunktionen
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 98%
+source-wordcount: '492'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ Die Suchfunktion ist über die obere Symbolleiste verfügbar:
 Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
 * Suchen Sie nach einem bestimmten Keyword, Pfad oder Tag
-* Filtern nach ressourcenspezifischen Kriterien, wie Änderungsdatumsangaben, Seitenstatus, Dateigröße usw.
+* Filtern nach ressourcenspezifischen Kriterien, wie Änderungsdatum, Seitenstatus, Dateigröße usw.
 * Definieren und Verwenden einer [gespeicherten Suche](#saved-searches), die auf den oben genannten Kriterien basiert
 
 >[!NOTE]

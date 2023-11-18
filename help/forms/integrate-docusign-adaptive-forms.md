@@ -2,10 +2,10 @@
 title: Wie integriere ich DocuSign in ein adaptives Formular?
 description: Erfahren Sie, wie Sie DocuSign mit einem adaptiven Formular verwenden können, um E-Signaturen einzuholen.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1559'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 99%
 DocuSign ist eine herausragende Lösung für elektronische Signaturen. Damit lassen sich Vereinbarungen elektronisch unterzeichnen. Sie können DocuSign mit einem adaptiven Formular integrieren. Es hilft Ihnen dabei, ein adaptives Formular zur elektronischen Signatur an mehrere Empfänger zu senden. Die Verwendung von elektronischen Signaturen hilft Ihnen bei Folgendem:
 
 - Geschäftsabschlüsse von jedem Gerät aus mit vollautomatischen Prozessen für Vorschlag, Angebot und Vertrag.
-- Schnelle Fertigstellung von Personalprozessen und Bereitstellung digitaler Erlebnisse für Ihre Angestellten.
+- Schnelleres Abschließen von Prozessen im Personalwesen und Zugang zu digitalen Abläufen für Ihre Mitarbeitenden.
 - Kürzere Vertragszyklen und schnelleres Onboarding Ihrer Lieferanten.
 
 AEM Forms as a Cloud Service bietet eine [benutzerdefinierte Übermittlungsaktion für DocuSign](#deploy-custom-submit-action). Die Übermittlungsaktion hilft Ihnen dabei, die adaptiven Formulare für elektronische Signaturen mithilfe von DocuSign-APIs zu senden.
@@ -186,7 +186,7 @@ Erstellen eines signaturfähigen adaptiven Formulars:
 1. Tippen Sie auf **[!UICONTROL Erstellen.]** Es wird ein signaturfähiges adaptives Formular erstellt. Sie können Ihre [!DNL DocuSign]-Felder zum Formular hinzufügen und dieses zum Signieren senden.
 1. Öffnen Sie Ihr adaptives Formular im Bearbeitungsmodus. Tippen Sie auf der Registerkarte **[!UICONTROL Inhalt]** auf **[!UICONTROL Formular-Container]** und dann auf ![Konfigurieren](assets/configure-icon.svg).
 
-1. Wählen Sie im Abschnitt **[!UICONTROL Übermittlung]** die Option **[!UICONTROL Senden mit DocuSign-E-Signaturen]** aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]**.
+1. Im **[!UICONTROL Einsendung]** Bereich, wählen Sie **[!UICONTROL Senden mit elektronischen Dokumentunterschriften]** aus dem **[!UICONTROL Übermittlungsaktion]** Dropdown-Liste.
 
 1. Tippen Sie im Abschnitt **[!UICONTROL Aktionskonfiguration]** auf **[!UICONTROL Hinzufügen]**, um einen Empfänger hinzuzufügen, und geben Sie die E-Mail-Adresse des Empfängers an. Tippen Sie erneut auf **[!UICONTROL Hinzufügen]**, um weitere Empfänger hinzuzufügen.
 
@@ -211,7 +211,7 @@ Verwenden von [!DNL DocuSign] in einem vorhandenen adaptiven Formular:
 
 1. Öffnen Sie Ihr adaptives Formular im Bearbeitungsmodus. Tippen Sie auf der Registerkarte **[!UICONTROL Inhalt]** auf **[!UICONTROL Formular-Container]** und dann auf ![Konfigurieren](assets/configure-icon.svg).
 
-1. Wählen Sie im Abschnitt **[!UICONTROL Übermittlung]** die Option **[!UICONTROL Senden mit DocuSign-E-Signaturen]** aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]**.
+1. Im **[!UICONTROL Einsendung]** Bereich, wählen Sie **[!UICONTROL Senden mit elektronischen Dokumentunterschriften]** aus dem **[!UICONTROL Übermittlungsaktion]** Dropdown-Liste.
 
 1. Tippen Sie im Abschnitt **[!UICONTROL Aktionskonfiguration]** auf **[!UICONTROL Hinzufügen]**, um einen Empfänger hinzuzufügen, und geben Sie die E-Mail-Adresse des Empfängers an. Tippen Sie erneut auf **[!UICONTROL Hinzufügen]**, um weitere Empfänger hinzuzufügen.
 

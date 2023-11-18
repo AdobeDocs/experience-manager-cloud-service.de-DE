@@ -4,10 +4,10 @@ description: Nachdem Sie Ihre Cloud-Ressourcen konfiguriert haben, gewähren Sie
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 79%
+source-wordcount: '885'
+ht-degree: 77%
 
 ---
 
@@ -24,7 +24,7 @@ In diesem Teil des [Onboarding-Journey,](overview.md) Hier erfahren Sie, wie Sie
 
 Nachdem Sie das vorherige Dokument in dieser Onboarding-Journey gelesen haben, [Erstellen von Umgebungen,](create-environments.md) und lassen Sie Ihre Cloud-Ressourcen konfiguriert sein, gewähren Sie Ihrem Team Zugriff auf AEM selbst mithilfe AEM Produktprofilen. Als Systemadmin weisen Sie dazu AEM-Produktprofile zu.
 
-Nach dem Lesen dieses Dokuments wissen Sie Folgendes:
+Nach dem Lesen dieses Dokuments sollten Sie Folgendes verstehen:
 
 * Was sind AEM-Produktprofile?
 * Wie man Team-Mitglieder zu AEM-Benutzer-Produktprofilen hinzufügt.
@@ -88,7 +88,7 @@ Für diese Aufgaben müssen Sie Systemadmin für das Produktprofil **Geschäftsi
 
    ![Zugriff verwalten](/help/journey-onboarding/assets/add-team1.png)
 
-1. Über eine neue Registerkarte gelangen Sie zu Admin Console, von wo aus Sie Zugriff auf die Autoreninstanz der Umgebung haben. Wählen Sie **AEM-Admins** oder **AEM-Benutzer** basierend auf den Berechtigungen aus, die diese Person erhalten muss.
+1. Über eine neue Registerkarte gelangen Sie zu Admin Console, von wo aus Sie Zugriff auf die Autoreninstanz der Umgebung haben. Auswählen **AEM Administratoren** oder **AEM** basierend auf den Berechtigungen, die diese Person erhalten muss.
 
    ![Zugriff zuweisen](/help/journey-onboarding/assets/add-team2.png)
 

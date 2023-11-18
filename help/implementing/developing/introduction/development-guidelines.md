@@ -2,10 +2,10 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud Service kennen und erfahren Sie, worin sich dieser Dienst von AEM vor Ort und AEM in AMS unterscheidet.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2733'
-ht-degree: 94%
+source-wordcount: '2732'
+ht-degree: 92%
 
 ---
 
@@ -35,7 +35,7 @@ Der Status darf nicht im Speicher gehalten werden, sondern muss im Repository ve
 
 Das Dateisystem der Instanz sollte in AEM as a Cloud Service verwendet werden. Der Datenträger ist temporär und wird verworfen, wenn Instanzen recycelt werden. Eine beschränkte Nutzung des Dateisystems für die temporäre Datenspeicherung im Zusammenhang mit der Verarbeitung einzelner Anfragen ist möglich, sollte aber nicht für riesige Dateien missbraucht werden. Dies liegt daran, dass sich dies negativ auf das Ressourcennutzungskontingent auswirken und zu Datenträgerbeschränkungen führen kann.
 
-Wenn beispielsweise die Nutzung des Dateisystems nicht unterstützt wird, sollte die Veröffentlichungsebene sicherstellen, dass alle Daten, die beibehalten werden müssen, zur längeren Datenspeicherung an einen externen Service gesendet werden.
+Wenn beispielsweise die Verwendung des Dateisystems nicht unterstützt wird, sollte die Veröffentlichungsstufe sicherstellen, dass alle Daten, die beibehalten werden müssen, für längerfristige Datenspeicherung an einen externen Dienst gesendet werden.
 
 ## Beobachrung {#observation}
 
@@ -243,9 +243,9 @@ Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in d
 
 Der SMTP-Server-Port sollte als `portDest`-Wert im portForwards-Parameter festgelegt werden, der im API-Aufruf bei der Konfiguration der erweiterten Vernetzung verwendet wird, und der `portOrig`-Wert sollte ein aussagekräftiger Wert sein, der innerhalb des erforderlichen Bereichs von 30000 bis 30999 liegt. Wenn der SMTP-Server-Port beispielsweise 465 ist, sollte der Port 30465 als `portOrig`-Wert verwendet werden.
 
-In diesem Fall und unter der Annahme, dass SSL aktiviert werden muss, in der Konfiguration des **Day CQ Mail Service OSGI**-Services:
+In diesem Fall muss SSL in der Konfiguration der **Day CQ Mail Service OSGi** -Dienst:
 
-* Setzen Sie `smtp.port` auf `30465`
+* `smtp.port` wird auf `30465` gesetzt
 * Setzen Sie `smtp.ssl` auf `true`
 
 Wenn der Ziel-Port 587 ist, sollte alternativ ein `portOrig`-Wert von 30587 verwendet werden. Und unter der Annahme, dass SSL deaktiviert sein sollte, ist die Konfiguration des Day CQ Mail Service OSGI-Services:

@@ -2,10 +2,10 @@
 title: Protokollieren für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Service verwenden können, um globale Parameter für den zentralen Protokollierungs-Dienst zu konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festzulegen oder die Datenprotokollierung anzufordern.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2757'
-ht-degree: 92%
+source-wordcount: '2753'
+ht-degree: 91%
 
 ---
 
@@ -279,7 +279,7 @@ AEM as a Cloud Service stellt drei Protokolle für die Apache-Webserver- und Dis
 * Apache HTTPD Web Server-Fehlerprotokoll
 * Dispatcher-Protokoll
 
-Beachten Sie, dass diese Protokolle nur für die Veröffentlichungsstufe verfügbar sind.
+Diese Protokolle sind nur für die Veröffentlichungsstufe verfügbar.
 
 Dieser Satz an Protokollen bietet Einblicke in HTTP-Anfragen an die Veröffentlichungsstufe von AEM as a Cloud Service, bevor diese Anfragen das AEM-Programm erreichen. Dies ist wichtig, da im Idealfall die meisten HTTP-Anfragen an die Server der Veröffentlichungsstufe von Inhalten bereitgestellt werden, die von Apache HTTPD Web Server und AEM Dispatcher zwischengespeichert werden und niemals das AEM-Programm selbst erreichen. Daher gibt es keine Protokolleinträge für diese Anfragen in Java-, Anfrage- oder Zugriffsprotokollen in AEM.
 
@@ -504,7 +504,7 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service bietet Zugriff auf CDN-Protokolle, die für Anwendungsfälle nützlich sind, einschließlich der Optimierung der Cache-Trefferquote. Das CDN-Protokollformat kann nicht angepasst werden und es gibt kein Konzept, es auf verschiedene Modi wie Info, Warn oder Fehler festzulegen.
 
-Beachten Sie, dass die Funktion Splunk-Weiterleitung CDN-Protokolle noch nicht unterstützt.
+Die Funktion Splunk-Weiterleitung unterstützt CDN-Protokolle noch nicht.
 
 **Beispiel**
 
@@ -643,7 +643,7 @@ Unten finden Sie ein Beispiel für eine Support-Anfrage:
 Programm 123, Produktionsumgebung
 
 * Splunk-HEC-Endpunktadresse: `splunk-hec-ext.acme.com`
-* Splunk-Index: acme_123prod (der Kunde kann auswählen, welche Namenskonvention er wünscht)
+* Splunk-Index: acme_123prod (der Kunde kann die gewünschte Namenskonvention auswählen)
 * Splunk-Port: 443
 * Splunk-HEC-Token: ABC123
 

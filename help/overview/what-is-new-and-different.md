@@ -2,10 +2,10 @@
 title: Unterschiede und neue Funktionen – Adobe Experience Manager as a Cloud Service
 description: Unterschiede und neue Funktionen – Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1895'
-ht-degree: 98%
+source-wordcount: '1889'
+ht-degree: 94%
 
 ---
 
@@ -36,7 +36,7 @@ Es gibt wesentliche Unterschiede zwischen diesen bisherigen Ansätzen und AEM as
 
 >[!NOTE]
 >
->Weitere Informationen zu den Versionen On-Premise und Managed Service finden Sie in der Dokumentation zu [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=de).
+>Weitere Informationen zu den Versionen On-Premise und Managed Service finden Sie in der [Dokumentation zu AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=de) .
 
 ## Architektur {#architecture}
 
@@ -87,7 +87,7 @@ Es gibt zwei Arten von AEM-Versionsaktualisierungen:
 
 >[!TIP]
 >
->Weitere Informationen finden Sie unter [AEM-Versionsaktualisierungen](/help/implementing/deploying/aem-version-updates.md).
+>Weitere Informationen finden Sie unter [AEM Versionsaktualisierungen](/help/implementing/deploying/aem-version-updates.md).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -156,7 +156,7 @@ Weitere wichtige Unterschiede sind:
 
 >[!NOTE]
 >
->Für weitere Informationen beginnen Sie mit den [Entwicklungsrichtlinien](/help/implementing/developing/introduction/development-guidelines.md) und [Entwickeln – Das WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+>Für weitere Details können Sie mit [Entwicklungsrichtlinien](/help/implementing/developing/introduction/development-guidelines.md) und [Entwickeln - das WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 Die neue Architektur, die AEM as a Cloud Service unterstützt, beinhaltet einige wichtige Änderungen am gesamten Entwicklererlebnis. Eines der Hauptziele von AEM as a Cloud Service besteht darin, erfahrenen Kunden (die AEM entweder in der On-Premise-Version oder im Kontext von Adobe Managed Services verwendet haben) die Möglichkeit zu geben, so schnell wie möglich zu AEM as a Cloud Service zu wechseln, ohne den Großteil ihres angepassten Codes neu schreiben zu müssen. Es könnten jedoch noch einige Anpassungen erforderlich sein.
 
@@ -224,7 +224,7 @@ Der Betrieb von AEM as a Cloud Service wird auch durch eine neue Überwachungs-,
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [Sicherheit – IMS-Unterstützung](/help/security/ims-support.md).
+>Siehe [Sicherheit - IMS-Unterstützung](/help/security/ims-support.md).
 
 Eine wichtige Änderung an AEM as a Cloud Service ist die vollständig integrierte Verwendung von Adobe IDs für den Zugriff auf die Autorenebene.
 
@@ -240,7 +240,7 @@ Dies kombiniert die folgenden Vorteile:
 
 >[!NOTE]
 >
->Für weitere Informationen beginnen Sie mit [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md).
+>Weitere Informationen finden Sie unter [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) ist ein guter Ausgangspunkt.
 
 Die Grundprinzipien der Authoring-Benutzeroberfläche, sowohl für Sites als auch für Assets, werden allen, die AEM in der Vergangenheit verwendet haben, sehr vertraut sein.
 
@@ -274,6 +274,6 @@ Weitere Informationen finden Sie unter:
 
 >[!TIP]
 >
->Sobald Sie einen Überblick über AEM as a Cloud Service haben, können Sie sich schnell einarbeiten, indem Sie die [Onboarding-Tour](/help/journey-onboarding/overview.md) absolvieren.
+>Wenn Sie einen Überblick über AEM as a Cloud Service haben, können Sie schnell eingebunden werden, indem Sie die [Onboarding-Journey](/help/journey-onboarding/overview.md).
 >
 >Sind Sie bereits dabei oder bereit, die Funktionen von AEM zu testen? Installieren Sie das [AEM-Referenzdemo-Add-on](/help/journey-sites/demos-add-on/overview.md), um die leistungsstarken Funktionen von AEM anhand von umfangreichen Beispielen zu erkunden.

@@ -3,10 +3,10 @@ title: CI/CD-Pipelines
 description: Erfahren Sie mehr über die CI/CD-Pipelines in Cloud Manager und wie sie zur effizienten Bereitstellung Ihres Codes verwendet werden können.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 8b8f10bfaad2d8d7d409384e01a2c65a588d77e0
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 92%
+source-wordcount: '1418'
+ht-degree: 90%
 
 ---
 
@@ -61,7 +61,7 @@ Diese Typen werden später in diesem Dokument detailliert beschrieben.
 
 ### Grundlegendes zu CI/CD-Pipelines in Cloud Manager {#understand-pipelines}
 
-In der folgenden Tabelle sind alle in Cloud Manager verfügbaren Pipelines und deren Verwendungszwecke zusammengefasst.
+In der folgenden Tabelle sind die in Cloud Manager verfügbaren Pipelines und deren Verwendung zusammengefasst.
 
 | Pipeline-Typ | Bereitstellung oder Code-Qualität | Quell-Code | Zweck | Anmerkungen |
 |--- |--- |--- |---|---|
@@ -115,7 +115,7 @@ Informationen zum Konfigurieren von Full-Stack-Pipelines finden Sie in den folge
 
 Mit einer Konfigurations-Pipeline können Sie innerhalb von Minuten Traffic-Filterregeln, einschließlich WAF-Regeln, konfigurieren und bereitstellen.
 
-Lesen Sie das Dokument . [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md) , um zu erfahren, wie Sie die Konfigurationen in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
+Siehe [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md) , um zu erfahren, wie Sie die Konfigurationen in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
 
 ### Konfigurieren von Konfigurations-Pipelines {#configure-config-deployment}
 
@@ -157,7 +157,7 @@ Wie dieser Prozess abläuft und was dabei zu beachten ist, um das volle Potenzia
 
 ## Web-Stufen-Konfigurations-Pipelines {#web-tier-config-pipelines}
 
-Web-Stufen-Konfigurations-Pipelines ermöglichen die exklusive Bereitstellung der HTTPD-/Dispatcher-Konfiguration zu AEM Runtime, indem sie sie von anderen Code-Änderungen entkoppeln. Es handelt sich um eine optimierte Pipeline, die Benutzern, die nur Änderungen an der Dispatcher-Konfiguration bereitstellen möchten, eine beschleunigte Möglichkeit bietet, dies in nur wenigen Minuten zu tun.
+Web-Stufen-Konfigurations-Pipelines ermöglichen die exklusive Bereitstellung der HTTPD-/Dispatcher-Konfiguration zu AEM Runtime, indem sie sie von anderen Code-Änderungen entkoppeln. Es handelt sich um eine optimierte Pipeline, die Benutzern, die nur Änderungen der Dispatcher-Konfiguration bereitstellen möchten, bereitstellt. Dies bedeutet, dass dies in nur wenigen Minuten geschehen kann.
 
 >[!TIP]
 >

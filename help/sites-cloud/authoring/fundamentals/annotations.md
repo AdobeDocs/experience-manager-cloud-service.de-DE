@@ -2,10 +2,10 @@
 title: Hinzufügen von Seitenanmerkungen
 description: Verwenden Sie den Anmerkungsmodus, um Anmerkungen und Skizzen auf den Seiten zu hinterlassen, so wie Sie Haftnotizen verwenden würden, um Ihren Prozess der Inhaltsüberprüfung zu unterstützen.
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 91%
+source-wordcount: '676'
+ht-degree: 74%
 
 ---
 
@@ -43,11 +43,11 @@ Anmerkungen sind nur im Anmerkungsmodus sichtbar.
 
    ![Beispiele für Anmerkungen](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
-1. Klicken oder tippen Sie auf die Anmerkung, um das Anmerkungsdialogfeld zu öffnen und dessen Details anzuzeigen.
+1. Wählen Sie die Anmerkung aus, um das Anmerkungsdialogfeld zu öffnen und dessen Details anzuzeigen.
 
    ![Anmerkungsdetails](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-1. Um den Anmerkungsmodus zu beenden und zum vorher verwendeten Modus zurückzukehren, tippen/klicken Sie auf die Schaltfläche (x-Symbol) oben rechts in der Symbolleiste.
+1. Um den Anmerkungsmodus zu beenden und zum zuvor verwendeten Modus zurückzukehren, wählen Sie rechts oben in der Symbolleiste die Schaltfläche x aus.
 
 ## Hinzufügen und Bearbeiten von Anmerkungen {#annotating-a-component}
 
@@ -55,9 +55,9 @@ Neben der Anzeige der Anmerkungen ermöglicht der Anmerkungsmodus das Erstellen,
 
 1. [Starten Sie den Anmerkungsmodus](#annotate-mode) auf der Seite.
 
-1. Klicken/tippen Sie auf das Symbol „Anmerkung hinzufügen“ (Plussymbol links in der Symbolleiste), um mit dem Hinzufügen von Anmerkungen zu beginnen.
+1. Wählen Sie das Symbol Anmerkung hinzufügen (Plussymbol links in der Symbolleiste), um mit dem Hinzufügen von Anmerkungen zu beginnen.
 
-1. Tippen oder klicken Sie auf die erforderliche Komponente (Komponenten, denen eine Anmerkung hinzugefügt werden kann, sind mit einem blauen Rand gekennzeichnet), um die Anmerkung hinzuzufügen und das Dialogfeld zu öffnen:
+1. Wählen Sie die gewünschte Komponente aus (Komponenten, die kommentiert werden können, werden mit einem blauen Rahmen markiert), um die Anmerkung hinzuzufügen und das Dialogfeld zu öffnen:
 
    ![Hinzufügen von Anmerkungen](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -80,9 +80,9 @@ Neben der Anzeige der Anmerkungen ermöglicht der Anmerkungsmodus das Erstellen,
 
 1. Wenn Sie mit dem Bearbeiten einer bestimmten Anmerkung fertig sind, können Sie Folgendes tun:
 
-   * Klicken/tippen Sie auf die Textmarkierung, um die Anmerkung zu öffnen. Sobald sie geöffnet ist, können Sie den vollständigen Text sehen, Änderungen vornehmen oder [die Anmerkung löschen.](#deleting-annotations)
+   * Wählen Sie die Textmarkierung aus, um die Anmerkung zu öffnen. Sobald sie geöffnet ist, können Sie den vollständigen Text sehen, Änderungen vornehmen oder [die Anmerkung löschen.](#deleting-annotations)
    * Positionieren Sie die Textmarkierung neu.
-   * Klicken/tippen Sie auf eine Zeichnung, um diese Zeichnung auszuwählen und sie auf die gewünschte Position zu ziehen.
+   * Wählen Sie eine Zeichnung aus, um diese Zeichnung auszuwählen und sie an die gewünschte Position zu ziehen.
    * Verschieben oder Kopieren einer Komponente
       * Alle damit verbundenen Anmerkungen und deren Zeichnungen werden ebenfalls verschoben oder kopiert, ihre Position in Relation zum Absatz bleibt gleich.
 
@@ -101,9 +101,9 @@ Anmerkungen und zugehörige Zeichnungen können gelöscht werden.
 
 1. [Starten Sie den Anmerkungsmodus](#annotate-mode) auf der Seite.
 
-1. Klicken/tippen Sie auf die Textmarkierung, um die Anmerkung zu öffnen.
+1. Wählen Sie die Textmarkierung aus, um die Anmerkung zu öffnen.
 
-1. Klicken/tippen Sie auf das Symbol „Löschen“.
+1. Wählen Sie das Symbol Löschen aus.
 
    ![Anmerkung löschen](/help/sites-cloud/authoring/assets/annotation-delete.png)
 
@@ -119,7 +119,7 @@ Sie können bei allen zugehörigen Zeichnungen nur bestimmte Zeichnungen anstell
 
 1. [Starten Sie den Anmerkungsmodus](#annotate-mode) auf der Seite.
 
-1. Klicken/tippen Sie auf die Zeichnung. AEM hebt sie mit einem dunkelblauen Rand hervor.
+1. Wählen Sie die Zeichnung aus. AEM hebt sie mit einem dunkelblauen Rand hervor.
 
    ![Zeichnung zum Löschen auswählen](/help/sites-cloud/authoring/assets/annotation-sketch-delete.png)
 

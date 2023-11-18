@@ -2,10 +2,10 @@
 title: Verwenden von CRXDE Lite
 description: CRXDE Lite ist Teil des AEM-Schnellstarts und steht Ihnen zur Verfügung, um auf das Repository in Ihren lokalen Entwicklungsumgebungen im Browser zuzugreifen und es zu ändern.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1683'
-ht-degree: 95%
+source-wordcount: '1685'
+ht-degree: 92%
 
 ---
 
@@ -32,7 +32,7 @@ Die Benutzeroberfläche von CRXDE Lite sieht in Ihrem Browser wie folgt aus:
 
 >[!TIP]
 >
->Sie können auch über das AEM-Menü auf CRXDE Lite zugreifen. Wählen Sie im Hauptmenü **Tools** > **Allgemein** > **CRXDE Lite** aus.
+>Sie können auch über das AEM-Menü auf CRXDE Lite zugreifen. Wählen Sie im Hauptmenü die Option **Instrumente** > **Allgemein** > **CRXDE Lite**.
 
 ## Überblick über die Benutzeroberfläche {#overview-of-the-user-interface}
 
@@ -163,7 +163,7 @@ Das **Anmelde-Widget** zeigt den derzeit angemeldeten Benutzer an.
 
 Klicken Sie darauf, um sich als anderer Benutzer anzumelden oder erneut anzumelden. `@crx.default` dass Sie sich im Standardarbeitsbereich (und dem einzigen) im Repository befinden.
 
-Mit der Option **Voreinstellungen** können Sie die Sprache Ihrer Benutzeroberfläche festlegen und die Tastenkombinationen für verschiedene Aktionen wie Speichern, Suchen, Erstellen von Notizen usw. anzeigen und anpassen.
+Die **Voreinstellungen** kann verwendet werden, um die Sprache der Benutzeroberfläche festzulegen und die Hotkeys für verschiedene Aktionen wie Speichern, Suchen, Erstellen von Anmerkungen usw. anzuzeigen und anzupassen.
 
 ## Erstellen eines Ordners {#creating-a-folder}
 

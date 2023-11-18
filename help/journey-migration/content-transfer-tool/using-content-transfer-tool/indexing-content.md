@@ -2,9 +2,9 @@
 title: Indizierung nach der Migration von Inhalten
 description: Erfahren Sie, wie der Migrationsprozess den aufgenommenen Cloud Service in der Zielinhaltsinstanz indiziert.
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '505'
 ht-degree: 6%
 
 ---
@@ -29,7 +29,7 @@ Gehen Sie zunächst zu Cloud Acceleration Manager. Klicken Sie auf Ihre Projektk
 und sehen Sie sich die aufgelisteten Aufträge an.
 
 >[!NOTE]
->Sie können die Indizierungsprotokolle mithilfe der Aktionen des Aufnahmeauftrags über das Dropdown-Menü ... anzeigen oder herunterladen. Die Protokolle sind im
+>Sie können die Indizierungsprotokolle mithilfe der Aktionen des Aufnahmeauftrags über die Dropdown-Liste ... anzeigen oder herunterladen. Die Protokolle sind im
 > &quot;Indizierungslog&quot;-Aktionsabschnitt, nachdem der Indizierungsauftrag abgeschlossen ist
 
 ### Ausstehend
@@ -52,7 +52,7 @@ Wenn der Indizierungsauftrag erfolgreich ausgeführt wird, kann die Instanz bei 
 
 ### Fehler
 
-Die Indizierung der Ziel-Cloud Service-Instanz wird höchstwahrscheinlich erfolgreich sein. In einigen Fällen kann sie fehlschlagen und die Zeile mit dem Aufnahmeauftrag wird wie folgt angezeigt. In allen Fällen können Sie einige Details des Fehlschlagens herausfinden, indem Sie mit dem Mauszeiger über den Fehlerstatus fahren. Außerdem können weitere Informationen bereitgestellt werden, die Ihnen bei der Ermittlung der nächsten Schritte helfen. An dieser Stelle stehen die Indizierungsauftragsprotokolle zur Ansicht oder zum Download zur Verfügung, um die Fehlerquelle zu ermitteln. Wenn der nächste Schritt nicht klar ist, wenden Sie sich an den Adobe Support mit Details zur Aufnahme und zum Indizierungsprotokoll.
+Die Indizierung der Ziel-Cloud Service-Instanz wird höchstwahrscheinlich erfolgreich sein. In einigen Fällen kann sie fehlschlagen und die Zeile mit dem Aufnahmeauftrag wird wie folgt angezeigt. In allen Fällen können Sie einige Details des Fehlschlagens herausfinden, indem Sie mit dem Mauszeiger über den Fehlerstatus fahren. Außerdem können weitere Informationen bereitgestellt werden, die Ihnen bei der Ermittlung der nächsten Schritte helfen. An dieser Stelle stehen die Indizierungsauftragsprotokolle zur Ansicht oder zum Download zur Verfügung, um die Fehlerquelle zu ermitteln. Wenn der nächste Schritt nicht klar ist, wenden Sie sich an den Adobe-Support mit Details zur Aufnahme und zum Indizierungsprotokoll.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 

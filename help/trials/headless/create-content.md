@@ -4,10 +4,10 @@ description: Nutzen Sie ihr zuvor erstelltes Inhaltsfragmentmodell, um Inhalte z
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 91%
+source-wordcount: '688'
+ht-degree: 81%
 
 ---
 
@@ -37,15 +37,15 @@ In diesem Modul erstellen Sie mithilfe der Inhaltsfragmentkonsole ein auf diesem
 
 Die Inhaltsfragmentkonsole wird verwendet, um Headless-Inhalte über Versandkanäle hinweg und unabhängig vom Kontext zu erstellen und zu bearbeiten. Dies kann in vielen Authoring-Fällen die effektivste Methode sein. In einem späteren Modul werden wir die Bearbeitung von Headless Content im Kontext und an Ort und Stelle untersuchen.
 
-1. Tippen oder klicken Sie oben rechts in der Konsole auf die Schaltfläche **Erstellen**.
+1. Wählen Sie die **Erstellen** -Schaltfläche oben rechts in der Konsole.
 
-1. Der Dialog **Neues Inhaltsfragment** wird geöffnet, in dem Sie mit der Erstellung eines neuen Inhaltsfragments beginnen können. **Speicherort** wird automatisch mit dem Speicherort des neuen Inhalts befüllt.
+1. Die **Neues Inhaltsfragment** wird geöffnet, in dem Sie mit der Erstellung eines Inhaltsfragments beginnen können. **Speicherort** wird automatisch mit dem Speicherort des neuen Inhalts befüllt.
 
 1. Wählen Sie in der Dropdown-Liste **Inhaltsfragmentmodell** das zuvor erstellte **Abenteuer**-Inhaltsfragmentmodell.
 
 1. Fügen Sie `Tuscany` als beschreibenden **Titel** für das Inhaltsfragment hinzu. Dadurch wird Ihr Fragment in der Konsole identifiziert.
 
-1. Tippen oder klicken Sie auf **Erstellen und öffnen**.
+1. Auswählen **Erstellen und öffnen**.
 
 ![Erstellen eines neuen Inhaltsfragments](assets/do-not-localize/create-content.png)
 
@@ -71,7 +71,7 @@ Wenn Sie Ihr neues Inhaltsfragment speichern und öffnen, wird der Inhaltsfragme
 
 1. Geben Sie ein **Bild** an, das für die Reise repräsentativ ist, indem Sie auf **Asset hinzufügen** im Feld **Bild** tippen oder klicken.
 
-1. Tippen oder klicken Sie im Popup-Fenster des Assets auf **Assets durchsuchen**, um ein vorhandenes Asset aus der Asset-Bibliothek auszuwählen.
+1. Wählen Sie im Popup-Fenster &quot;Asset&quot;die Option **Durchsuchen von Assets** , um aus einem vorhandenen Asset in der Asset-Bibliothek auszuwählen.
 
    ![Asset hinzufügen](assets/do-not-localize/add-asset.png)
 
@@ -79,17 +79,17 @@ Wenn Sie Ihr neues Inhaltsfragment speichern und öffnen, wird der Inhaltsfragme
 
 1. Der Inhalt des Ordners **Radfahren-Toskana** wird auf der rechten Seite angezeigt. Wählen Sie das Bild `ADOBESTOCK_141786166.JPEG` aus.
 
-1. Tippen oder klicken Sie auf **Auswählen**.
+1. Auswählen **Auswählen**.
 
    ![Asset auswählen](assets/do-not-localize/select-asset.png)
 
 1. Das ausgewählte Bild wird im Inhaltsfragment angezeigt. Der Editor speichert die Änderungen automatisch.
 
-1. Nachdem Sie den gesamten Inhalt hinzugefügt haben, tippen oder klicken Sie auf die Schaltfläche **Veröffentlichen** oben rechts im Editor. Dadurch kann Ihr Inhaltsfragment von externen Apps verwendet werden. Wählen Sie dann **Jetzt** aus der Dropdown-Liste aus. Sie können die Veröffentlichung auch zu einem späteren Zeitpunkt planen.
+1. Nachdem Sie den Inhalt hinzugefügt haben, wählen Sie die **Veröffentlichen** Schaltfläche oben rechts im Editor. Dadurch kann Ihr Inhaltsfragment von externen Apps verwendet werden. Wählen Sie dann **Jetzt** aus der Dropdown-Liste aus. Sie können die Veröffentlichung auch zu einem späteren Zeitpunkt planen.
 
    ![Inhalt veröffentlichen](assets/do-not-localize/publish.png)
 
-1. Der Dialog **Inhaltsfragmente veröffentlichen** wird angezeigt. AEM führt automatisch eine Verweisprüfung durch, um sicherzustellen, dass alle erforderlichen Ressourcen für Ihr Inhaltsfragment veröffentlicht werden. In diesem Fall müssen Sie auch das von Ihnen erstellte Modell veröffentlichen. Tippen oder klicken Sie auf **Veröffentlichen**.
+1. Der Dialog **Inhaltsfragmente veröffentlichen** wird angezeigt. AEM führt automatisch eine Verweisprüfung durch, um sicherzustellen, dass alle erforderlichen Ressourcen für Ihr Inhaltsfragment veröffentlicht werden. In diesem Fall müssen Sie auch das von Ihnen erstellte Modell veröffentlichen. Auswählen **Veröffentlichen**.
 
    ![Veröffentlichungs- und Verweisprüfung](assets/do-not-localize/publish-confirm.png)
 

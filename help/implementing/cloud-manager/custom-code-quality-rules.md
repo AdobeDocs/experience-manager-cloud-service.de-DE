@@ -2,9 +2,9 @@
 title: Qualitätsregeln für benutzerspezifischen Code
 description: Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der Code-Qualitätstests ausgeführt werden. Sie basieren auf Best Practices von Adobe Experience Manager-Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: a62312954db0631cf594a27db36bab8a2441360f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4097'
+source-wordcount: '4095'
 ht-degree: 87%
 
 ---
@@ -542,7 +542,7 @@ AEM Anwendungen erreichen häufig andere Anwendungen über das HTTP-Protokoll, u
 
 Diese Regel überprüft, ob ein solches HttpClient-Objekt in einer Methode nicht privat, sondern auf Klassenebene global ist, sodass es wiederverwendet werden kann. In diesem Fall sollte das Feld httpClient im Konstruktor der Klasse oder der `activate()` -Methode (wenn diese Klasse eine OSGi-Komponente/ein OSGi-Dienst ist).
 
-Überprüfen Sie auch die [Optimierungshandbuch](https://hc.apache.org/httpclient-legacy/performance.html) des HttpClient finden Sie einige Best Practices für die Verwendung des HttpClient.
+Überprüfen Sie die [Optimierungshandbuch](https://hc.apache.org/httpclient-legacy/performance.html) des HttpClient finden Sie einige Best Practices für die Verwendung des HttpClient.
 
 #### Nicht konformer Code {#non-compliant-code-14}
 

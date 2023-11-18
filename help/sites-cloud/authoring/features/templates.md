@@ -2,10 +2,10 @@
 title: Erstellen von Seitenvorlagen
 description: Eine Vorlage definiert die Struktur einer erstellten Seite und mit dem Vorlageneditor ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4567'
-ht-degree: 97%
+source-wordcount: '4538'
+ht-degree: 87%
 
 ---
 
@@ -40,7 +40,7 @@ Ausführliche Informationen zur Funktionsweise von bearbeitbaren Vorlagen auf te
 >
 >Ein Admin muss im **Konfigurations-Browser** einen Vorlagenordner konfigurieren und entsprechende Berechtigungen anwenden, bevor ein Vorlagenautor eine Vorlage in diesem Ordner erstellen kann.
 
-Bevor Sie anfangen, sollten Sie beachten, dass die Erstellung einer neuen Vorlage Zusammenarbeit erfordert. Aus diesem Grund wird für jede Aufgabe eine [Rolle](#roles) angezeigt. Dies hat keinen Einfluss auf die Art und Weise, wie Sie eine Seite mit einer Vorlage erstellen, sondern nur auf die Weise, wie eine Seite mit ihrer Vorlage in Beziehung steht.
+Bevor Sie beginnen, sollten Sie bedenken, dass die Erstellung einer Vorlage Zusammenarbeit erfordert. Aus diesem Grund wird für jede Aufgabe eine [Rolle](#roles) angezeigt. Dies hat keinen Einfluss auf die Art und Weise, wie Sie eine Seite mit einer Vorlage erstellen, sondern nur auf die Weise, wie eine Seite mit ihrer Vorlage in Beziehung steht.
 
 ### Rollen {#roles}
 
@@ -67,7 +67,7 @@ Die in diesem Dokument beschriebenen Aufgaben werden jeweils mit der Rolle aufge
 
 ## Erstellen und Verwalten von Vorlagen {#creating-and-managing-templates}
 
-Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
+Beim Erstellen einer bearbeitbaren Vorlage haben Sie folgende Möglichkeiten:
 
 * Verwenden Sie die **Vorlagenkonsole**, die im Bereich **Allgemein** der Konsole **Tools** verfügbar ist.
    * Oder direkt unter: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
@@ -89,7 +89,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
 >[!TIP]
 >
->Geben Sie in eine Vorlage nie Informationen ein, die internationalisiert werden müssen. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>Geben Sie in eine Vorlage nie Informationen ein, die internationalisiert werden müssen. <!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
 >Bei Vorlagenelementen wie Kopf- und Fußzeilen, die lokalisiert werden müssen, können Sie die [Lokalisierungsfunktionen der Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) nutzen.
 
@@ -161,11 +161,11 @@ So definieren Sie eine Vorlagenminiaturansicht:
 
 1. Bearbeiten Sie die Vorlageneigenschaften.
 1. Wählen Sie aus, ob Sie eine Miniaturansicht hochladen oder aus dem Vorlageninhalt generieren lassen möchten.
-   * Wenn Sie eine Miniaturansicht hochladen möchten, klicken oder tippen Sie auf **Bild hochladen**.
-   * Wenn Sie eine Miniatur erzeugen möchten, klicken oder tippen Sie auf **Vorschau generieren**
+   * Wenn Sie eine Miniaturansicht hochladen möchten, wählen Sie **Bild hochladen**
+   * Wenn Sie eine Miniaturansicht generieren möchten, wählen Sie **Vorschau generieren**
 1. Für beide Methoden wird eine Vorschau der Miniaturansicht angezeigt.
-   * Wenn Sie mit dem Ergebnis nicht zufrieden sind, klicken oder tippen Sie auf **Löschen**, um ein anderes Bild hochzuladen oder die Miniaturansicht neu zu erzeugen.
-1. Wenn Sie mit der Miniaturansicht zufrieden sind, klicken oder tippen Sie auf **Speichern und schließen**.
+   * Wenn sie nicht zufriedenstellend ist, wählen Sie **Löschen** , um ein anderes Bild hochzuladen oder die Miniaturansicht neu zu generieren.
+1. Wenn Sie mit der Miniaturansicht zufrieden sind, wählen Sie **Speichern und schließen**.
 
 ### Aktivieren und Zulassen einer Vorlage – Vorlagenautor {#enabling-and-allowing-a-template-template-author}
 
@@ -184,7 +184,7 @@ Eine Vorlage kann aktiviert oder deaktiviert werden, damit sie im Assistenten **
 
 1. Wählen Sie in der **Vorlagenkonsole** eine Vorlage aus.
 1. Wählen Sie in der Symbolleiste die Option **Aktivieren** oder **Deaktivieren** und bestätigen Sie Ihre Wahl im Bestätigungsdialogfeld.
-1. Jetzt können Sie Ihre Vorlage verwenden, wenn Sie [eine neue Seite erstellen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), bzw. [die Vorlage bearbeiten](#editing-templates-template-authors), um sie an Ihre Anforderungen anzupassen.
+1. Sie können Ihre Vorlage jetzt verwenden, wenn [Erstellen einer Seite](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), obwohl Sie wahrscheinlich [Vorlage bearbeiten](#editing-templates-template-authors) entsprechend Ihren Anforderungen.
 
 >[!NOTE]
 >
@@ -219,7 +219,7 @@ Eine Vorlage kann für bestimmte Seitenverzweigungen verfügbar oder nicht verf�
 
 ### Veröffentlichen einer Vorlage – Vorlagenautor {#publishing-a-template-template-author}
 
-Da auf die Vorlage verwiesen wird, wenn eine Seite dargestellt wird, muss die voll konfigurierte Vorlage veröffentlicht werden, damit sie in der Veröffentlichungsumgebung verfügbar ist.
+Da beim Rendern einer Seite auf die Vorlage verwiesen wird, muss die vollständig konfigurierte Vorlage veröffentlicht werden, damit sie in der Veröffentlichungsumgebung verfügbar ist.
 
 1. Wählen Sie in der **Vorlagenkonsole** eine Vorlage aus.
 1. Wählen Sie **Veröffentlichen** in der Symbolleiste, um den Assistenten zu öffnen.
@@ -293,7 +293,7 @@ Im **Strukturmodus** definieren Sie Komponenten und Inhalte für Ihre Vorlage so
 
 ![Seitenstruktur des Vorlageneditors](/help/sites-cloud/authoring/assets/templates-page-structure.png)
 
-Es gibt eine Reihe von Aktionen, die Sie im **Strukturmodus** des Vorlageneditors ausführen können, sowie eine Reihe von Funktionen, die Ihnen Unterstützung bieten:
+Es gibt mehrere Aktionen, die Sie im **Struktur** -Modus des Vorlageneditors und verschiedene Funktionen, die Ihnen helfen:
 
 #### Hinzufügen von Komponenten {#add-components}
 
@@ -360,21 +360,21 @@ Die verfügbaren Eigenschaften hängen von der ausgewählten Komponente ab. Für
 
 Die Richtlinien für Inhalt (oder Design) definieren die Entwurfseigenschaften einer Komponente. Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen. Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden).
 
-Unter **Richtlinie** können Sie eine vorhandene Richtlinie auswählen, die über das Dropdown-Menü auf die Komponente angewendet wird.
+under **Politik** Sie können über die Dropdown-Liste eine vorhandene Richtlinie auswählen, die auf die Komponente angewendet werden soll.
 
 ![Richtlinie auswählen](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-Sie können eine neue Richtlinie hinzufügen, indem Sie auf die Schaltfläche „Hinzufügen“ klicken, die sich neben dem Dropdown-Menü **Richtlinie auswählen** befindet. Dann muss ein neuer Name in das Feld **Richtlinienname** eingegeben werden.
+Sie können eine neue Richtlinie hinzufügen, indem Sie auf die Schaltfläche &quot;Hinzufügen&quot;neben dem **Richtlinie auswählen** angezeigt. Geben Sie einen neuen Titel im **Richtlinienname** -Feld.
 
 ![Schaltfläche „Richtlinie hinzufügen“](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-Die im Dropdown-Menü **Richtlinie auswählen** ausgewählte vorhandene Richtlinie kann mithilfe der Schaltfläche „Kopieren“, die sich neben dem Dropdown-Menü befindet, kopiert werden. Dann muss ein neuer Name in das Feld **Richtlinienname** eingegeben werden. Standardmäßig erhält die kopierte Richtlinie den Namen **Kopie von X**, wobei X der Name der kopierten Richtlinie ist.
+Die ausgewählte vorhandene Richtlinie im **Richtlinie auswählen** kann mithilfe der Schaltfläche Kopieren neben der Dropdown-Liste als neue Richtlinie kopiert werden. Geben Sie einen neuen Titel im **Richtlinienname** -Feld. Standardmäßig erhält die kopierte Richtlinie den Namen **Kopie von X**, wobei X der Name der kopierten Richtlinie ist.
 
 ![Schaltfläche „Richtlinie kopieren“](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 Eine Beschreibung der Richtlinie im Feld **Richtlinienbeschreibung** ist optional.
 
-Im Abschnitt **Andere Vorlagen, die ebenfalls die ausgewählte Richtlinie verwenden** ist leicht ersichtlich, welche anderen Vorlagen die Richtlinie verwenden, die in der Dropdown-Liste **Richtlinie auswählen** ausgewählt wurde.
+Im **Andere Vorlagen, die auch die ausgewählte Richtlinie verwenden** -Abschnitt anzeigen, welche anderen Vorlagen die in der **Richtlinie auswählen** Dropdown-Liste.
 
 ![Nutzung der vorhandenen Richtlinie](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
@@ -395,13 +395,13 @@ Auf der Registerkarte **Allgemein** sind die wichtigsten Einstellungen der Kompo
 
 Beispielsweise kann die zulässige Breite für eine Bildkomponente zusammen mit der Aktivierung des „Lazy Loading“ (Langsames Laden) definiert werden.
 
-Wenn eine Einstellung mehrere Konfigurationen erlaubt, klicken oder tippen Sie auf die Schaltfläche **Hinzufügen**, um eine weitere Konfiguration hinzuzufügen.
+Wenn eine Einstellung mehrere Konfigurationen zulässt, wählen Sie die **Hinzufügen** -Schaltfläche, um eine weitere Konfiguration hinzuzufügen.
 
 ![Schaltfläche „Hinzufügen“](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-Um eine Konfiguration zu entfernen, klicken oder tippen Sie auf die Schaltfläche **Löschen**, die sich rechts neben der Konfiguration befindet.
+Um eine Konfiguration zu entfernen, wählen Sie die **Löschen** -Schaltfläche rechts neben der Konfiguration.
 
-Um eine Konfiguration zu entfernen, klicken oder tippen Sie auf die Schaltfläche **Löschen**.
+Um eine Konfiguration zu entfernen, wählen Sie die **Löschen** Schaltfläche.
 
 ![Schaltfläche „Löschen“](/help/sites-cloud/authoring/assets/templates-delete-button.png)
 
@@ -461,9 +461,9 @@ Auf der Registerkarte **Zugelassene Komponenten** legen Sie fest, welche Kompone
 
 Auf der Registerkarte **Standardkomponenten** legen Sie fest, welche Komponenten automatisch mit bestimmten Medientypen verknüpft werden, damit AEM beim Ziehen eines Assets aus dem Asset-Browser weiß, mit welcher Komponente es verknüpft werden soll. Beachten Sie, dass für diese Konfiguration nur Komponenten mit Ablageflächen verfügbar sind.
 
-Klicken oder tippen Sie auf **Zuordnung hinzufügen**, um eine völlig neue Komponente und MIME-Typzuordnung hinzuzufügen.
+Auswählen **Zuordnung hinzufügen** , um eine völlig neue Komponente und MIME-Typzuordnung hinzuzufügen.
 
-Wählen Sie eine Komponente in der Liste aus und tippen/klicken Sie auf **Typ hinzufügen**, um einer bereits zugeordneten Komponente einen zusätzlichen MIME-Typ hinzuzufügen. Klicken Sie auf das Symbol **Löschen**, um einen MIME-Typ zu entfernen.
+Wählen Sie eine Komponente in der Liste aus und wählen Sie **Typ hinzufügen** , um einer bereits zugeordneten Komponente einen zusätzlichen MIME-Typ hinzuzufügen. Klicken Sie auf das Symbol **Löschen**, um einen MIME-Typ zu entfernen.
 
 ![Registerkarte „Standardkomponenten“](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -568,20 +568,20 @@ Sie können eine Inhaltsrichtlinie auf die Vorlage oder resultierende Seiten anw
 
   ![Richtlinienauswahl](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-  Sie können eine neue Richtlinie hinzufügen, indem Sie auf die Schaltfläche „Hinzufügen“ klicken, die sich neben dem Dropdown-Menü **Richtlinie auswählen** befindet. Dann muss ein neuer Name in das Feld **Richtlinienname** eingegeben werden.
+  Sie können eine neue Richtlinie hinzufügen, indem Sie auf die Schaltfläche &quot;Hinzufügen&quot;neben dem **Richtlinie auswählen** Dropdown-Liste. Geben Sie einen neuen Titel im **Richtlinienname** -Feld.
 
   ![Schaltfläche „Richtlinie hinzufügen“](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  Die im Dropdown-Menü **Richtlinie auswählen** ausgewählte vorhandene Richtlinie kann mithilfe der Schaltfläche „Kopieren“, die sich neben dem Dropdown-Menü befindet, kopiert werden. Dann muss ein neuer Name in das Feld **Richtlinienname** eingegeben werden. Standardmäßig erhält die kopierte Richtlinie den Namen **Kopie von X**, wobei X der Name der kopierten Richtlinie ist.
+  Die ausgewählte vorhandene Richtlinie im **Richtlinie auswählen** kann mithilfe der Schaltfläche Kopieren neben der Dropdown-Liste als neue Richtlinie kopiert werden. Geben Sie einen neuen Titel im **Richtlinienname** -Feld. Standardmäßig erhält die kopierte Richtlinie den Namen **Kopie von X**, wobei X der Name der kopierten Richtlinie ist.
 
   ![Schaltfläche „Richtlinie kopieren“](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
-* Geben Sie im Feld **Richtlinienname** einen Namen für die Richtlinie an. Eine Richtlinie muss einen Namen tragen, damit sie mühelos im Dropdown-Menü **Richtlinie auswählen** ausgewählt werden kann.
+* Geben Sie im Feld **Richtlinienname** einen Namen für die Richtlinie an. Eine Richtlinie muss über einen Titel verfügen, damit sie einfach im **Richtlinie auswählen** Dropdown-Liste.
 
   ![Richtlinienname](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * Eine Beschreibung der Richtlinie im Feld **Richtlinienbeschreibung** ist optional.
-* Im Abschnitt **Andere Vorlagen, die ebenfalls die ausgewählte Richtlinie verwenden** ist leicht ersichtlich, welche anderen Vorlagen die Richtlinie verwenden, die in der Dropdown-Liste **Richtlinie auswählen** ausgewählt wurde.
+* Im **Andere Vorlagen, die auch die ausgewählte Richtlinie verwenden** -Abschnitt anzeigen, welche anderen Vorlagen die in der **Richtlinie auswählen** Dropdown-Liste.
 
   ![Richtlinienverwendung](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 

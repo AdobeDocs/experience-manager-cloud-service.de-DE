@@ -2,10 +2,10 @@
 title: Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3598'
-ht-degree: 96%
+source-wordcount: '3594'
+ht-degree: 93%
 
 ---
 
@@ -196,7 +196,7 @@ Wenn die Funktion der dedizierten IP-Adresse nicht aktiviert ist, fließt der Tr
 
 Die Konfiguration der dedizierten Ausgangs-IP-Adresse ist mit dem Szenario [flexibler Port-Ausgang](#configuring-flexible-port-egress-provision) identisch.
 
-Der Hauptunterschied besteht darin, dass der Traffic immer von einer dedizierten, eindeutigen IP-Adresse ausgeht. Um diese IP zu finden, verwenden Sie einen DNS-Resolver, um die IP-Adresse zu identifizieren, die mit `p{PROGRAM_ID}.external.adobeaemcloud.com` verbunden ist. Es wird nicht erwartet, dass sich die IP-Adresse ändert. Wenn sie aber in Zukunft geändert werden muss, wird vorher eine Benachrichtigung gegeben.
+Der Hauptunterschied besteht darin, dass der Traffic immer von einer dedizierten, eindeutigen IP-Adresse ausgeht. Um diese IP zu finden, verwenden Sie einen DNS-Resolver, um die IP-Adresse zu identifizieren, die mit `p{PROGRAM_ID}.external.adobeaemcloud.com` verbunden ist. Es wird nicht erwartet, dass sich die IP-Adresse ändert. Wenn sich die IP jedoch in Zukunft ändern muss, wird eine erweiterte Benachrichtigung bereitgestellt.
 
 Zusätzlich zu den Routing-Regeln, die vom flexiblen Port-Ausgang im `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`-Endpunkt unterstützt werden, unterstützt die dedizierte Ausgangs-IP-Adresse einen `nonProxyHosts`-Parameter. Auf diese Weise können Sie eine Gruppe von Hosts deklarieren, die über einen gemeinsamen IP-Adressbereich statt über die dedizierte IP weitergeleitet werden sollen. Dies kann nützlich sein, da das Traffic-egressing über freigegebene IPs weiter optimiert werden kann. Die `nonProxyHost`-URLs können dem Muster von `example.com` oder `*.example.com` folgen, wobei der Platzhalter nur am Beginn der Domain unterstützt wird.
 
@@ -337,7 +337,7 @@ Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte I
 ## Kunden mit alten dedizierten Ausgangs-Adressen {#legacy-dedicated-egress-address-customers}
 
 Wenn Ihnen vor dem 30.09.2021 eine dedizierte Ausgangs-IP bereitgestellt wurde, unterstützt Ihre dedizierte Ausgangs-IP-Funktion nur HTTP- und HTTPS-Ports.
-Dazu gehören HTTP/1.1 und HTTP/2 bei Verschlüsselung. Darüber hinaus kann ein dedizierter Ausgangs-Endpunkt nur über HTTP/HTTPS an den Ports 80/443 mit einem beliebigen Ziel kommunizieren.
+Dazu gehören HTTP/1.1 und HTTP/2 bei Verschlüsselung. Außerdem kann ein dedizierter Ausgangs-Endpunkt nur über HTTP/HTTPS auf den Ports 80/443 mit einem beliebigen Ziel kommunizieren.
 
 ## Virtuelles privates Netzwerk (VPN) {#vpn}
 
@@ -372,7 +372,7 @@ Beachten Sie, dass `PUT /program/<program_id>/environment/<environment_id>/advan
 
 Die VPN-Konfiguration auf Programmebene kann durch Aufrufen des `PUT /api/program/<program_id>/network/<network_id>`-Endpunkts aktualisiert werden.
 
-Beachten Sie, dass der Adressraum nach der ersten VPN-Bereitstellung nicht mehr geändert werden kann. Wenden Sie sich bei Bedarf an den Support. Darüber hinaus kann der `kind`-Parameter (`flexiblePortEgress`, `dedicatedEgressIP` oder `VPN`) nicht geändert werden. Wenn Sie Unterstützung benötigen, wenden Sie sich an den Support und beschreiben Sie, was bereits erstellt wurde und warum Sie die Änderung vornehmen möchten.
+Der Adressraum kann nach der ersten VPN-Bereitstellung nicht mehr geändert werden. Wenden Sie sich bei Bedarf an den Support. Darüber hinaus kann der `kind`-Parameter (`flexiblePortEgress`, `dedicatedEgressIP` oder `VPN`) nicht geändert werden. Wenn Sie Unterstützung benötigen, wenden Sie sich an den Support und beschreiben Sie, was bereits erstellt wurde und warum Sie die Änderung vornehmen möchten.
 
 Die Routing-Regeln für die einzelnen Umgebungen können durch erneutes Aufrufen des `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`-Endpunkts aktualisiert werden, wobei darauf zu achten ist, dass der gesamte Satz an Konfigurationsparametern und nicht nur eine Teilmenge angegeben wird. Die Übernahme von Umgebungsaktualisierungen dauert in der Regel 5–10 Minuten.
 
@@ -544,7 +544,7 @@ Wenn Ausfallzeiten erhebliche geschäftliche Auswirkungen haben würden, wenden 
 
 ## Erweiterte Netzwerkkonfiguration für zusätzliche Veröffentlichungsregionen {#advanced-networking-configuration-for-additional-publish-regions}
 
-Wenn eine zusätzliche Region zu einer Umgebung hinzugefügt wird, in der bereits ein erweitertes Netzwerk konfiguriert ist, wird der Traffic aus der zusätzlichen Veröffentlichungsregion, der den erweiterten Netzwerkregeln entspricht, standardmäßig durch die primäre Region geleitet. Wenn die primäre Region jedoch nicht verfügbar ist, wird der erweiterte Netzwerk-Traffic abgebrochen, wenn in der zusätzlichen Region das erweiterte Netzwerk nicht aktiviert wurde. Wenn Sie die Latenz optimieren und die Verfügbarkeit im Fall eines Ausfalls in einer der Regionen erhöhen möchten, ist es erforderlich, für die zusätzliche(n) Veröffentlichungsregion(en) ein erweitertes Netzwerk zu aktivieren. In den folgenden Abschnitten werden zwei verschiedene Szenarien beschrieben.
+Wenn eine zusätzliche Region zu einer Umgebung hinzugefügt wird, in der bereits ein erweitertes Netzwerk konfiguriert ist, wird der Traffic aus der zusätzlichen Veröffentlichungsregion, der den erweiterten Netzwerkregeln entspricht, standardmäßig durch die primäre Region geleitet. Wenn die primäre Region jedoch nicht verfügbar ist, wird der erweiterte Netzwerk-Traffic abgebrochen, wenn in der zusätzlichen Region das erweiterte Netzwerk nicht aktiviert wurde. Wenn Sie die Latenz optimieren und die Verfügbarkeit im Fall eines Ausfalls in einer der Regionen erhöhen möchten, müssen Sie für die zusätzlichen Veröffentlichungsregionen ein erweitertes Netzwerk aktivieren. In den folgenden Abschnitten werden zwei verschiedene Szenarien beschrieben.
 
 >[!NOTE]
 >
@@ -558,7 +558,7 @@ Wenn in der primären Region bereits eine erweiterte Netzwerkkonfiguration aktiv
 
 1. Wenn Sie Ihre Infrastruktur so gesperrt haben, dass die dedizierte AEM-IP-Adresse auf der Zulassungsliste ist, wird empfohlen, alle Regeln zur Ablehnung in dieser Infrastruktur vorübergehend zu deaktivieren. Andernfalls werden Anfragen von den IP-Adressen der neuen Region für eine kurze Zeit von Ihrer eigenen Infrastruktur abgelehnt. Beachten Sie, dass dies nicht erforderlich ist, wenn Sie Ihre Infrastruktur mithilfe eines FullyQualified Domain Name (FQDN) gesperrt haben (`p1234.external.adobeaemcloud.com`, weil alle AEM Regionen erweiterten Netzwerk-Traffic aus demselben FQDN auslösen.
 1. Erstellen Sie die programmweite Netzwerkinfrastruktur für die sekundäre Region durch einen POST-Aufruf an die Cloud Manager-API zum Erstellen einer Netzwerkinfrastruktur, wie in der Dokumentation zu erweiterten Netzwerken beschrieben. Der einzige Unterschied in der JSON-Konfiguration der Payload im Verhältnis zur primären Region ist die Regionseigenschaft.
-1. Wenn Ihre Infrastruktur nach IP gesperrt werden muss, um AEM-Traffic zu ermöglichen, fügen Sie die IPs hinzu, die mit `p1234.external.adobeaemcloud.com` übereinstimmen. Pro Region sollte es eine geben.
+1. Wenn Ihre Infrastruktur nach IP gesperrt werden muss, um AEM Traffic zu ermöglichen, fügen Sie die IPs hinzu, die mit `p1234.external.adobeaemcloud.com`. Pro Region sollte es eine geben.
 
 #### Noch kein erweitertes Netzwerk in einer Region konfiguriert {#not-yet-configured}
 

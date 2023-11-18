@@ -5,10 +5,10 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1627'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
@@ -28,7 +28,7 @@ Sie können Assets auf der Asset- oder Ordnerebene veröffentlichen oder die Ver
 
 ## Veröffentlichen von Assets mit „Quick Publish“ {#quick-publish}
 
-Mit der Funktion &quot;Quick Publish&quot;können Sie Inhalte sofort an dem ausgewählten Ziel veröffentlichen. Gehen Sie in der [!DNL Experience Manager Assets]-Konsole zum übergeordneten Ordner und wählen Sie alle Assets oder Ordner aus, die Sie veröffentlichen möchten. Klicken Sie in der Symbolleiste auf die Option **[!UICONTROL Quick Publish]**, und wählen Sie in der Dropdown-Liste das Ziel aus, an dem Sie die Assets veröffentlichen möchten.
+Mit der Funktion &quot;Quick Publish&quot;können Sie Inhalte sofort an dem ausgewählten Ziel veröffentlichen. Gehen Sie in der [!DNL Experience Manager Assets]-Konsole zum übergeordneten Ordner und wählen Sie alle Assets oder Ordner aus, die Sie veröffentlichen möchten. Klicks **[!UICONTROL Quick Publish]** in der Symbolleiste und wählen Sie aus der Dropdownliste das Ziel aus, an dem Sie die Assets veröffentlichen möchten.
 
 ![Quick Publish](assets/quick-publish-to-aem.png)
 
@@ -134,7 +134,6 @@ Lassen Sie uns jetzt im oben genannten Anwendungsfall das **[!UICONTROL Ziel]** 
 >
 >Sie können die vorhandene Anpassung jedoch entfernen, um die neuen [!DNL Manager Publication]-Funktionen zu verwenden.
 
-
 ## Assets später veröffentlichen {#publish-assets-later}
 
 So planen Sie den Veröffentlichungs-Workflow für Assets für einen späteren Zeitpunkt:
@@ -179,9 +178,10 @@ Sie können Assets, Ordner und Sammlungen in der [!DNL Experience Manager Assets
 
 ## Veröffentlichung anfordern {#request-publication}
 
-Die Option `Request Publication` hilft bei der Authentifizierung des Workflows von Assets, bevor sie in der Assets-Umgebung [!DNL AEM] veröffentlicht werden. [!DNL AEM] bietet verschiedenen Benutzenden unterschiedliche Berechtigungen. Sie können eine bzw. einer der *Mitwirkenden* sein, die/der Assets hochlädt, diese aber nicht veröffentlichen kann, bevor die Uploads überprüft wurden. Zusätzlich können Sie als *Admin* die Workflows der Assets lesen und schreiben.
+Die Option `Request Publication` hilft bei der Authentifizierung des Workflows von Assets, bevor sie in der Assets-Umgebung [!DNL AEM] veröffentlicht werden. [!DNL AEM] bietet verschiedenen Benutzenden unterschiedliche Berechtigungen. Sie können eine bzw. einer der *Mitwirkenden* sein, die/der Assets hochlädt, diese aber nicht veröffentlichen kann, bevor die Uploads überprüft wurden. Außerdem können Sie *Admin* Sie können es verwalten, Workflows der Assets zu lesen und zu schreiben.
 
 Die Option „Veröffentlichung anfordern“ steht folgenden Benutzenden zur Verfügung:
+
 * **Mitwirkende:** Wenn Sie eine Benutzerin bzw. ein Benutzer sind, die/der zu [!DNL AEM]-Assets beitragen kann, dann haben Sie begrenzten Zugriff auf den Workflow von [!DNL AEM]-Assets. Die Schaltfläche `Manage publication` ist ausgeblendet. Als Mitwirkende können Sie nur Beiträge hinzufügen, indem Sie Assets hinzufügen, diese jedoch nicht veröffentlichen oder Lesezugriff auf den Workflow haben.
 
 * **Workflow-Benutzende:** Diese Person kann keine Assets veröffentlichen, hat jedoch Lesezugriff auf den Workflow. Als Workflow-Benutzende haben Sie folgende Möglichkeiten:

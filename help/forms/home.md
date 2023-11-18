@@ -3,10 +3,10 @@ title: Einführung in  [!DNL AEM Forms]  as a Cloud Service
 description: Entdecken Sie AEM Forms, um einsatzbereite Formulare zu entwerfen, Geschäftsprozess-Workflows zu erstellen und Dokumentendienste zum Erstellen und Schützen von Dokumenten zu verwenden.
 landing-page-description: Erfahren Sie, wie Sie Formulare in AEM as a Cloud Service verwenden.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 95%
+source-wordcount: '1149'
+ht-degree: 93%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] ist eine kundenorientie
 
 ## Digitalisierung und Optimierung von Anmelde- und Onboarding-Erlebnissen
 
-Mithilfe dieses Service können Sie interaktive und ansprechende digitale Formulare erstellen und bereitstellen. Beispiel: Ein Unternehmen möchte die Journey seiner Kundenanmeldung digitalisieren. Es verfügt über mehrere Datenquellen mit Kundendaten. Die Formulare sollen vorausgefüllt und elektronisch unterzeichnet und die vom Kunden ausgefüllten Formulare anschließend als PDF-Dateien archiviert werden. Darüber hinaus verfügt das Unternehmen über etliche Druckformulare (PDF-Formulare), die allesamt in digitale Formulare konvertiert werden sollen.
+Mithilfe dieses Service können Sie interaktive und ansprechende digitale Formulare erstellen und bereitstellen. Beispiel: Ein Unternehmen möchte die Journey seiner Kundenanmeldung digitalisieren. Es verfügt über mehrere Datenquellen mit Kundendaten. Die Formulare sollen vorausgefüllt und elektronisch unterzeichnet und die vom Kunden ausgefüllten Formulare anschließend als PDF-Dateien archiviert werden. Darüber hinaus verfügt das Unternehmen über mehrere Druckformulare (PDF forms), die auch ihre Druckformulare in digitale Formulare konvertieren möchten.
 
 Das Unternehmen kann mithilfe von [!DNL AEM Forms] as a Cloud Service digitale Formulare erstellen, Formulare mit vorhandenen Datenquellen verbinden, Formulare in [!DNL Adobe Sign] integrieren und elektronisch unterzeichnen sowie Datensatzdokumente (DoR) zur Archivierung gesendeter Formulare als PDF-Dateien generieren. Darüber hinaus kann das Unternehmen den Service dazu verwenden, seine bestehenden PDF-Formulare in digitale Formulare zu konvertieren.
 

@@ -2,9 +2,9 @@
 title: Testen mit Experience Audit
 description: Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die bereitgestellten Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 9f305e1127957fdba6dae978da4ac5fce4d3a776
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '589'
 ht-degree: 93%
 
 ---
@@ -35,7 +35,7 @@ Experience Audit basiert auf Google Lighthouse, einem Open-Source-Tool von Googl
 
 >[!INFO]
 >
->Mit Wirkung vom 31. August 2023 wechselt Experience Audit zur Anzeige der Ergebnisse, die für die mobile Plattform spezifisch sind. Beachten Sie, dass die Leistungsmetriken für Mobilgeräte in der Regel niedriger sind als die für Desktop. Daher sollten Sie nach dieser Änderung eine Verschiebung der gemeldeten Leistung erwarten.
+>Mit Wirkung vom 31. August 2023 wechselt Experience Audit zur Anzeige der Ergebnisse, die für die mobile Plattform spezifisch sind. Beachten Sie, dass die Leistungsmetriken für Mobilgeräte in der Regel niedriger sind als für Desktop-Computer. Daher sollten Sie eine Verschiebung der gemeldeten Leistung nach dieser Änderung erwarten.
 
 >[!TIP]
 >

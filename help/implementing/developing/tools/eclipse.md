@@ -2,10 +2,10 @@
 title: AEM Developer Tools for Eclipse
 description: Erfahren Sie, wie Sie die AEM Developer Tools für Eclipse verwenden, ein Eclipse-Plug-in, das auf dem Eclipse-Plug-in für Apache Sling basiert.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 91%
+source-wordcount: '1191'
+ht-degree: 88%
 
 ---
 
@@ -64,7 +64,7 @@ In Eclipse bestimmt eine Perspektive die innerhalb eines Fensters verfügbaren A
 
 _Experience Manager Developer Tools for Eclipse_ bieten eine AEM-Perspektive, die Ihnen volle Kontrolle über Ihre AEM-Projekte und -Instanzen bietet. So öffnen Sie die AEM-Perspektive:
 
-1. Wählen Sie in der Eclipse-Menüleiste **Fenster** -> **Perspektive** -> **Perspektive öffnen** -> **Andere**.
+1. Wählen Sie in der Eclipse-Menüleiste **Fenster** > **Perspektive** > **Offene Perspektive** > **Sonstiges**.
 1. Wählen Sie im Dialogfeld **AEM** aus und klicken Sie auf **Öffnen**.
 
 ![Die AEM-Perspektive in Eclipse](assets/eclipse-aem-perspective.png)
@@ -83,7 +83,7 @@ Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
    >[!NOTE]
    >
-   >Dieser Schritt kann einige Zeit in Anspruch nehmen, da m2eclipse die Archetypkataloge scannen muss.
+   >Dieser Schritt kann einen Moment dauern, da m2eclipse die Archetypkataloge scannen muss.
 
 1. Wählen Sie im Menü `com.adobe.granite.archetypes : sample-project-archetype : <highest-number>` aus und klicken Sie dann auf **Weiter**.
 
@@ -139,7 +139,7 @@ Mit der Funktion **Neues Projekt** können Sie die richtige Struktur für Ihre A
 1. Führen Sie dann dasselbe für `PROJECT.ui.content` aus und ersetzen Sie den Inhaltsordner durch den Ordner aus Ihren Paketen:
 
    1. Erweitern Sie im Bedienfeld „Projekt-Explorer“ `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`.
-   1. Klicken Sie mit der rechten Maustaste auf den tieferen Inhaltsordner und wählen Sie **Einblenden** -> **System Explorer**.
+   1. Klicken Sie mit der rechten Maustaste auf den tieferen Inhaltsordner und wählen Sie **Einblenden** > **System Explorer**.
    1. Löschen Sie die Inhaltsordner, der jetzt angezeigt werden sollte, und platzieren Sie hier den Inhaltsordner Ihres Inhaltspakets.
    1. Klicken Sie in Eclipse mit der rechten Maustaste auf die `PROJECT.ui.content` Projekt und wählen Sie **Aktualisieren**.
 
@@ -194,7 +194,7 @@ Mit der Funktion **Neues Projekt** können Sie die richtige Struktur für Ihre A
 
 Nach Abschluss des Vorgangs sollte das Paket auf Ihrer Instanz ausgeführt werden und beim Speichern werden alle Änderungen automatisch mit der Instanz synchronisiert.
 
-Wenn Sie ein Paket aus Ihrem Projekt neu erstellen möchten, klicken Sie mit der rechten Maustaste auf das `PROJECT.ui.apps` oder `PROJECT.ui.content` und wählen **Ausführen als** -> **Maven-Installation**.
+Wenn Sie ein Paket aus Ihrem Projekt neu erstellen möchten, klicken Sie mit der rechten Maustaste auf das `PROJECT.ui.apps` oder `PROJECT.ui.content` und wählen **Ausführen als** > **Maven-Installation**.
 
 Jetzt verfügen Sie über einen Zielordner, der Ihr Paket enthält (z. B. mit dem Namen `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
@@ -206,7 +206,7 @@ Um ungültige Abhängigkeiten und Projektdefinitionen aufzulösen, gehen Sie wie
 
 1. Wählen Sie alle erstellten Projekte.
 1. Klicken Sie mit der rechten Maustaste.
-1. Wählen Sie im Kontextmenü **Maven** > **Projekte aktualisieren** aus.
+1. Wählen Sie im Kontextmenü **Maven** > **Projekte aktualisieren**.
 1. Aktivieren Sie **Aktualisierungen von Snapshots/Releases erzwingen**.
 1. Klicken Sie auf **OK**.
 

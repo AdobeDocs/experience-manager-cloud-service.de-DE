@@ -2,9 +2,9 @@
 title: Grundlegendes zu Cloud Service-Inhaltsanforderungen
 description: Wenn Sie Lizenzen für Inhaltsanforderungen von Adobe erworben haben, erfahren Sie mehr über die Arten von Inhaltsanforderungen, die Adobe Experience Cloud as a Service misst, und über die Abweichungen mit den Analytics-Reporting-Tools eines Unternehmens.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: dc01da4c85b37f21deb169b941c0cf2a958298b8
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1162'
 ht-degree: 10%
 
 ---
@@ -33,7 +33,7 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 
 ## Grundlegendes zu Cloud Service-Inhaltsanforderungen {#about-content-request}
 
-Inhaltsanforderungen werden automatisch am Rand von Adobe Experience Manager (AEM) as a Cloud Service verfolgt, indem die Protokolldateien aus dem AEM as a Cloud Service CDN automatisiert analysiert und die Anfragen isoliert werden, die HTML- (text/html) oder JSON-- (application/json) Inhalt aus dem CDN zurückgeben, und basierend auf einer Reihe von Einschluss- und Ausschlussregeln, die nachfolgend beschrieben werden. Eine Inhaltsanforderung erfolgt unabhängig vom zurückgegebenen Inhalt, der von den CDN-Caches bereitgestellt wird oder zurück an die Herkunft des CDN (AEM Dispatcher) geht.
+Inhaltsanforderungen werden automatisch am Rand von Adobe Experience Manager (AEM) as a Cloud Service verfolgt, indem die Protokolldateien aus dem AEM as a Cloud Service CDN automatisiert analysiert und die Anforderungen isoliert werden, die HTML- (text/html) oder JSON-- (application/json) Inhalt aus dem CDN zurückgeben, und basierend auf mehreren unten beschriebenen Aufnahme- und Ausschlussregeln. Eine Inhaltsanforderung erfolgt unabhängig vom zurückgegebenen Inhalt, der von den CDN-Caches bereitgestellt wird oder zurück an die Herkunft des CDN (AEM Dispatcher) geht.
 
 Für Kunden, die ihr eigenes CDN über AEM as a Cloud Service bringen, führt dieses Tracking zu Zahlen, die nicht zum Vergleich mit den lizenzierten Inhaltsanfragen verwendet werden können und vom Kunden am Rand des äußeren CDN gemessen werden müssen.
 

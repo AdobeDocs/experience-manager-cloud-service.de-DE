@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie in der Admin Console Benutzerprofile erstelle
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 93%
+source-wordcount: '982'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ Erfahren Sie, wie Sie in der Admin Console Benutzerprofile erstellen, um den Emp
 
 ## Übersicht {#overview}
 
-Von Zeit zu Zeit muss Adobe Benutzer bezüglich ihrer AEM as a Cloud Service-Umgebung kontaktieren. Neben produktinternen Benachrichtigungen verwendet Adobe gelegentlich auch E-Mails für Benachrichtigungen. Es gibt zwei Arten von E-Mail-Benachrichtigungen:
+Von Zeit zu Zeit kontaktiert Adobe Benutzer bezüglich ihrer AEM as a Cloud Service Umgebungen. Neben produktinternen Benachrichtigungen verwendet Adobe gelegentlich auch E-Mails für Benachrichtigungen. Es gibt zwei Arten von E-Mail-Benachrichtigungen:
 
 * **Benachrichtigung bei Vorfällen**: Diese Benachrichtigungen werden während eines Vorfalls gesendet oder wenn Adobe ein potenzielles Verfügbarkeitsproblem bei Ihrer AEM as a Cloud Service-Umgebung erkannt hat.
 * **Proaktive Benachrichtigung**: Diese Benachrichtigungen werden gesendet, wenn ein Mitglied des Adobe-Support-Teams Anleitungen zu einer potenziellen Optimierung oder Empfehlung bereitstellen möchte, die für Ihre AEM as a Cloud Service-Umgebung von Vorteil sein kann.
@@ -148,4 +148,4 @@ Der eingeladene Benutzer erhält jetzt die Benachrichtigungen. Wiederholen Sie d
 
 Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt der Onboarding-Tour hinausgehen möchten.
 
-* [Aktionszentrum](/help/operations/actions-center.md) - Nutzen Sie das Aktionszentrum, um bequem Maßnahmen zu Vorfällen und anderen wichtigen Informationen zu ergreifen.
+* [Aktionszentrum](/help/operations/actions-center.md) - Nutzen Sie das Aktionszentrum, um bequem auf Zwischenfälle und andere wichtige Informationen zu reagieren.

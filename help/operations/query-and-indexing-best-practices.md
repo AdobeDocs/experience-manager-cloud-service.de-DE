@@ -3,10 +3,10 @@ title: Best Practices für Abfragen und Indizierung
 description: Erfahren Sie, wie Sie Ihre Indizes und Abfragen anhand der Best-Practice-Richtlinien von Adobe optimieren können.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3133'
-ht-degree: 49%
+source-wordcount: '3128'
+ht-degree: 47%
 
 ---
 
@@ -24,7 +24,7 @@ Bei der Erstellung der Taxonomie eines Repositorys müssen mehrere Faktoren ber�
 
 In einem Taxonomie-Design, in dem diese Punkte berücksichtigt werden, muss zudem auch die „Durchlauffähigkeit“ des Index-Designs beachtet werden. In diesem Zusammenhang ist die Durchlauffähigkeit die Fähigkeit einer Taxonomie, einen vorhersehbaren Zugriff auf Inhalte auf der Grundlage ihres Pfads zu ermöglichen. Dies ermöglicht ein effizienteres System, das einfacher zu verwalten ist als ein System, für das mehrere Abfragen ausgeführt werden müssen.
 
-Darüber hinaus muss beim Entwerfen einer Taxonomie bedacht werden, ob eine Sortierung wichtig ist. Wenn auf eine explizite Sortierung verzichtet werden kann und eine große Anzahl gleichgeordneter Knoten erwartet wird, sind unsortierte Knotentypen wie `sling:Folder` oder `oak:Unstructured` vorzuziehen. Ist eine Sortierung erforderlich, wären `nt:unstructured` und `sling:OrderedFolder` besser geeignet.
+Bei der Erstellung einer Taxonomie ist es wichtig zu überlegen, ob die Reihenfolge wichtig ist. Wenn auf eine explizite Sortierung verzichtet werden kann und eine große Anzahl gleichgeordneter Knoten erwartet wird, sind unsortierte Knotentypen wie `sling:Folder` oder `oak:Unstructured` vorzuziehen. Ist eine Sortierung erforderlich, wären `nt:unstructured` und `sling:OrderedFolder` besser geeignet.
 
 ### Abfragen in Komponenten {#queries-in-components}
 
@@ -46,7 +46,7 @@ Nahmen wir beispielsweise an, der Inhalt wird in einer Taxonomie gespeichert ist
 
 In diesem Fall lässt sich der Knoten `/content/myUnstructuredContent/parentCategory/childCategory` einfach abrufen und seine untergeordneten Elemente können analysiert und zum Rendern der Komponente verwendet werden.
 
-Wenn Sie es mit einem kleinen oder homogenen Ergebnissatz zu tun haben, kann es außerdem schneller sein, das Repository zu durchlaufen und die erforderlichen Knoten zu sammeln, anstatt eine Abfrage zu erstellen, die denselben Ergebnissatz zurückgibt. Generell gilt, dass Abfragen nach Möglichkeit vermieden werden sollten.
+Wenn Sie es mit einem kleinen oder homogenen Ergebnissatz zu tun haben, kann es auch schneller sein, das Repository zu durchlaufen und die erforderlichen Knoten zu sammeln, anstatt eine Abfrage zu erstellen, um denselben Ergebnissatz zurückzugeben. Generell gilt, dass Abfragen nach Möglichkeit vermieden werden sollten.
 
 ### Vorabruf von Ergebnissen {#prefetching-results}
 
@@ -85,7 +85,7 @@ Die primäre Beschränkung für jede Abfrage sollte eine Eigenschaftsübereinsti
 
 Die Abfrage-Engine berücksichtigt nur einen einzigen Index. Das bedeutet, dass ein vorhandener Index angepasst werden kann und sollte, indem weitere benutzerdefinierte Indexeigenschaften hinzugefügt werden.
 
-Im Abschnitt [JCR-Abfrage-Schnellübersicht](#jcr-query-cheatsheet) dieses Dokuments werden die verfügbaren Einschränkungen aufgelistet. Außerdem wird erläutert, wie eine Indexdefinition aussehen muss, damit sie aufgenommen wird. Verwenden Sie das [Abfrageleistungs-Tool](#query-performance-tool), um die Abfrage zu testen und sicherzustellen, dass der richtige Index verwendet wird und dass die Abfrage-Engine keine Begrenzungen außerhalb des Index auswerten muss.
+Die [JCR-Abfrage-Cheatsheet](#jcr-query-cheatsheet) in diesem Dokument werden die verfügbaren Einschränkungen aufgelistet und außerdem erläutert, wie eine Indexdefinition aussehen muss, damit sie aufgenommen wird. Verwenden Sie das [Abfrageleistungs-Tool](#query-performance-tool), um die Abfrage zu testen und sicherzustellen, dass der richtige Index verwendet wird und dass die Abfrage-Engine keine Begrenzungen außerhalb des Index auswerten muss.
 
 ### Reihenfolge {#ordering}
 
@@ -138,7 +138,7 @@ Mit dem Tool Abfrage erklären können Entwickler den Ausführungsplan für Abfr
 
 Gehen Sie wie folgt vor, um eine Abfrage zu erklären:
 
-* Wählen Sie die entsprechende Abfragesprache mithilfe der `Language` Dropdown.
+* Wählen Sie die entsprechende Abfragesprache mithilfe der `Language` Dropdown-Liste.
 * Geben Sie die Abfrage-Anweisung in die `Query` -Feld.
 * Wählen Sie bei Bedarf mithilfe der bereitgestellten Kontrollkästchen aus, wie die Abfrage ausgeführt werden soll.
    * Standardmäßig müssen keine JCR-Abfragen ausgeführt werden, um den Ausführungsplan für Abfragen zu identifizieren (dies ist bei QueryBuilder-Abfragen nicht der Fall).
@@ -239,7 +239,7 @@ In diesem Abschnitt des Plans heißt es:
 
 Dieser Abfrageausführungsplan führt zu jedem Asset unter `/content/dam` aus dem Index gelesen und dann weiter durch die Abfrage-Engine gefiltert werden (die nur diejenigen enthält, die mit der nicht indizierten Eigenschaftsbeschränkung im Ergebnissatz übereinstimmen).
 
-Selbst wenn nur ein kleiner Prozentsatz der Assets mit der Einschränkung übereinstimmt `jcr:content/metadata/myProperty = "My Property Value"`, muss die Abfrage eine große Anzahl von Knoten lesen, um die angeforderte &#39;Seite&#39; der Ergebnisse zu füllen. Dies kann zu einer schlecht ausgeführten Abfrage führen, bei der eine niedrige `Read Optimization` -Wert im Tool &quot;Abfrageleistung&quot;) und kann zu WARN-Meldungen führen, die darauf hinweisen, dass eine große Anzahl von Knoten durchlaufen wird (siehe [Indexdurchlauf](#index-traversal)).
+Selbst wenn nur ein kleiner Prozentsatz der Assets mit der Einschränkung übereinstimmt `jcr:content/metadata/myProperty = "My Property Value"`, muss die Abfrage eine große Anzahl von Knoten lesen, um die angeforderte &#39;Seite&#39; der Ergebnisse auszufüllen. Dies kann zu einer schlecht ausgeführten Abfrage führen, bei der eine niedrige `Read Optimization` -Wert im Tool &quot;Abfrageleistung&quot;) und kann zu WARN-Meldungen führen, die darauf hinweisen, dass eine große Anzahl von Knoten durchlaufen wird (siehe [Indexdurchlauf](#index-traversal)).
 
 Um die Leistung dieser zweiten Abfrage zu optimieren, erstellen Sie eine benutzerdefinierte Version der `damAssetLucene-9` index (`damAssetLucene-9-custom-1`) und fügen Sie die folgende Eigenschaftsdefinition hinzu -
 
@@ -309,6 +309,7 @@ Abfragen, die einen Index verwenden, aber dennoch eine große Anzahl von Knoten 
 ```
 
 Dies kann aus verschiedenen Gründen auftreten -
+
 1. Nicht alle Einschränkungen in der Abfrage können am Index verarbeitet werden.
    * In diesem Fall wird eine Obermenge der Ergebnismenge aus dem Index gelesen und anschließend in der Abfrage-Engine gefiltert.
    * Dies ist um ein Vielfaches langsamer als das Anwenden von Einschränkungen in der zugrunde liegenden Indexabfrage.

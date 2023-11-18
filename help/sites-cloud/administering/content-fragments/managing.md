@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre AEM Inhaltsfragmente über die Konsole u
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 53%
+source-wordcount: '2531'
+ht-degree: 51%
 
 ---
 
@@ -124,7 +124,7 @@ Bestimmte Aktionen sind über die Konsole verfügbar, ohne ein bestimmtes Inhalt
 
   >[!NOTE]
   >
-  >Die Konsole **Assets** wird verwendet, um auf Assets wie Bilder, Videos usw. zuzugreifen.  Auf die Konsole kann wie folgt zugegriffen werden:
+  >Die **Assets** -Konsole wird verwendet, um auf Assets wie Bilder, Videos usw. zuzugreifen.  Auf die Konsole kann wie folgt zugegriffen werden:
   >
   >* mithilfe des Links **In Assets öffnen** (in der Konsole „Inhaltsfragmente“)
   >* direkt von der globalen **Navigation** Bereich
@@ -201,7 +201,7 @@ Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angez
 
      ![Inhaltsfragmentkonsole – Sprachindikator](assets/cf-managing-console-language-indicator.png)
 
-   * Klicken/tippen Sie auf die Anzahl, um ein Dialogfeld zu öffnen, in dem alle Sprachkopien angezeigt werden. Um eine bestimmte Sprachkopie zu öffnen, klicken Sie auf das **Titel** im Dialogfeld.
+   * Wählen Sie die Anzahl aus, um ein Dialogfeld zu öffnen, das alle Sprachkopien anzeigt. Um eine bestimmte Sprachkopie zu öffnen, klicken Sie auf das **Titel** im Dialogfeld.
 
      ![Inhaltsfragmentkonsole – Dialogfeld „Sprache“](assets/cf-managing-console-languages-dialog.png)
 
@@ -300,7 +300,7 @@ Sie können Ihre Inhaltsfragmente hier veröffentlichen:
 
   >[!NOTE]
   >
-  >Weitere Informationen zu Vorschauumgebungen finden Sie unter:
+  >Weitere Informationen zu Vorschauumgebungen finden Sie unter folgenden Themen:
   >
   >* [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   >* [Konfigurieren der OSGi-Einstellungen für die Vorschauebene](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
@@ -414,7 +414,7 @@ Das Symbol zeigt das Gebietsschema des Inhaltsfragments zusammen mit der Gesamtz
 
 ![Inhaltsfragmentkonsole – Sprachindikator](assets/cfc-console-language-indicator.png)
 
-Klicken/tippen Sie auf die Anzahl, um ein Dialogfeld zu öffnen, in dem alle Sprachkopien angezeigt werden. Um eine bestimmte Sprachkopie zu öffnen, klicken Sie auf das **Titel** im Dialogfeld.
+Wählen Sie die Anzahl aus, um ein Dialogfeld zu öffnen, das alle Sprachkopien anzeigt. Um eine bestimmte Sprachkopie zu öffnen, klicken Sie auf das **Titel** im Dialogfeld.
 
 ![Inhaltsfragmentkonsole – Dialogfeld „Sprache“](assets/cf-managing-console-languages-dialog.png)
 

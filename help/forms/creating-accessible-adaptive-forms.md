@@ -1,16 +1,14 @@
 ---
 title: Wie erstelle ich barrierefreie adaptive Forms?
 description: AEM Forms bietet Tools zum Erstellen barrierefreier adaptiver Forms und hilft bei der Einhaltung von Barrierefreiheitsstandards.
-uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2025'
-ht-degree: 98%
+source-wordcount: '2023'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +16,7 @@ ht-degree: 98%
 
 ## Einführung {#introduction}
 
-Ein barrierefreies Formular ist ein Formular, das jeder verwenden kann, einschließlich Benutzer mit Behinderungen. Adaptive Formulare verfügen über eine Reihe von Merkmalen und Funktionen, die die Benutzerfreundlichkeit für Benutzer mit unterschiedlichen Fähigkeiten verbessern. Die Integration von Barrierefreiheit in adaptive Formulare macht Inhalte nicht nur für die größtmögliche Zielgruppe zugänglich, sondern stellt auch eine Anforderung dar, wenn Dokumente in Regionen bereitgestellt werden müssen, in denen die Einhaltung von Barrierefreiheitsstandards obligatorisch ist. Mit [!DNL AEM Forms] können Formularentwickler die Barrierefreiheitsstandards einhalten.
+Ein barrierefreies Formular ist ein Formular, das jeder verwenden kann, einschließlich Benutzer mit Behinderungen. Adaptive Forms umfasst verschiedene Funktionen, die die Benutzerfreundlichkeit für Benutzer mit unterschiedlichen Fähigkeiten verbessern. Die Integration von Barrierefreiheit in adaptive Formulare macht Inhalte nicht nur für die größtmögliche Zielgruppe zugänglich, sondern stellt auch eine Anforderung dar, wenn Dokumente in Regionen bereitgestellt werden müssen, in denen die Einhaltung von Barrierefreiheitsstandards obligatorisch ist. Mit [!DNL AEM Forms] können Formularentwickler die Barrierefreiheitsstandards einhalten.
 
 Beim Verfassen eines adaptiven Formulars müssen Autoren die folgenden Punkte berücksichtigen, um barrierefreie adaptive Formulare zu erstellen:
 
@@ -159,7 +157,7 @@ Die folgenden Tastaturbefehle sind in [!DNL AEM Forms] verfügbar.
 | Zurücksetzen der ausgefüllten Daten in einem Formular | Alt+R |
 | Formular senden | Alt+S |
 
-Darüber hinaus stehen verschiedene Tastaturbefehle für die Komponente **[!UICONTROL Datumsauswahl]** in adaptiven Formularen zur Verfügung. Tippen Sie zum Aktivieren der Tastenkombinationen auf die Komponente **[!UICONTROL Datumsauswahl]** und dann auf ![Konfigurieren](assets/configure-icon.svg), um die Eigenschaften zu öffnen. Wählen Sie im Abschnitt **[!UICONTROL Muster]** ein Anzeigemuster mithilfe der Dropdown-Listen **[!UICONTROL Typ]** und **[!UICONTROL Muster]** aus. Speichern Sie die Eigenschaften, um die Verwendung der Tastenkombinationen für die Komponente **[!UICONTROL Datumsauswahl]** zu aktivieren.
+Darüber hinaus stehen verschiedene Tastaturbefehle für die Komponente **[!UICONTROL Datumsauswahl]** in adaptiven Formularen zur Verfügung. Tippen Sie zum Aktivieren der Tastenkombinationen auf die Komponente **[!UICONTROL Datumsauswahl]** und dann auf ![Konfigurieren](assets/configure-icon.svg), um die Eigenschaften zu öffnen. Im **[!UICONTROL Muster]** ein Anzeigemuster mithilfe der **[!UICONTROL Typ]** und **[!UICONTROL Muster]** Dropdown-Listen. Speichern Sie die Eigenschaften, um die Verwendung der Tastenkombinationen für die Komponente **[!UICONTROL Datumsauswahl]** zu aktivieren.
 
 Für die Datumsauswahl-Komponente in adaptiven Formularen stehen die folgenden Tastaturbefehle zur Verfügung:
 

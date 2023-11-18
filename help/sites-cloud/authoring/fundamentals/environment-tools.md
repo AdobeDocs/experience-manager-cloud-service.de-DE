@@ -2,10 +2,10 @@
 title: Autorenumgebung und Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2163'
-ht-degree: 93%
+source-wordcount: '2158'
+ht-degree: 90%
 
 ---
 
@@ -90,7 +90,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
    * Komponenten nach Namen filtern
    * Mittels Dropdown-Auswahl die Anzeige auf eine bestimmte Gruppe begrenzen
 
-  Für eine detailliertere Beschreibung der Komponente können Sie im Browser **Komponenten** auf das Informationssymbol neben der Komponente tippen/klicken (falls verfügbar). Zum Beispiel für das **Inhaltsfragment**:
+  Für eine detailliertere Beschreibung der Komponente können Sie das Informationssymbol neben der Komponente im **Komponenten** Browser (sofern verfügbar). Zum Beispiel für das **Inhaltsfragment**:
 
   ![Komponenten-Browser-Informationen](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -163,13 +163,13 @@ Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den 
 
 ## Inhaltsstruktur {#content-tree}
 
-Die **Inhaltsstruktur** bietet einen Überblick über alle auf der Seite verwendeten Komponenten in einer hierarchischen Darstellung, sodass Sie direkt feststellen können, wie die Seite aufgebaut ist.
+Die **Inhaltsstruktur** gibt einen Überblick über alle Komponenten auf der Seite in einer Hierarchie, sodass Sie auf einen Blick sehen können, wie die Seite aufgebaut ist.
 
 Die Inhaltsstruktur befindet sich auf einer Registerkarte im seitlichen Bedienfeld (zusammen mit dem Asset-Browser). Um das Bedienfeld zu öffnen (oder zu schließen), verwenden Sie das Symbol links oben in der Symbolleiste:
 
 ![Schaltfläche „Inhaltsstruktur“](/help/sites-cloud/authoring/assets/content-tree-button.png)
 
-Wenn Sie das Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. Wählen Sie ggf. die Registerkarte **Inhaltsstruktur**. Mit dieser Strukturansicht Ihrer Seite oder Vorlage können Sie leicht nachvollziehen, wie die darauf verwendeten Komponenten hierarchisch strukturiert sind. Auf einer komplexer gestalteten Seite können Sie so zudem einfacher zwischen Komponenten auf der Seite wechseln.
+Wenn Sie das Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. Wählen Sie ggf. die Registerkarte **Inhaltsstruktur**. Mit dieser Strukturansicht Ihrer Seite oder Vorlage können Sie leicht nachvollziehen, wie die darauf verwendeten Komponenten hierarchisch strukturiert sind. Auf einer komplexen Seite ist es außerdem einfacher, zwischen den Komponenten der Seite zu springen.
 
 ![Inhaltsstruktur](/help/sites-cloud/authoring/assets/content-tree-editor.png)
 
@@ -315,7 +315,7 @@ Der Pfad-Browser ist wie die [Spaltenansicht](/help/sites-cloud/authoring/gettin
 
 ![Pfad-Browser](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Sobald eine Ressource ausgewählt wird, wird die Schaltfläche **Auswählen** oben rechts im Dialogfeld aktiviert. Klicken/tippen Sie darauf, um die Auswahl zu bestätigen, oder heben Sie die Auswahl über **Abbrechen** auf.
+* Sobald eine Ressource ausgewählt wird, wird die Schaltfläche **Auswählen** oben rechts im Dialogfeld aktiviert. Wählen Sie diese Option aus, um die Auswahl zu bestätigen oder **Abbrechen** abbrechen.
 * Wenn der Kontext die Auswahl mehrerer Ressourcen zulässt, wird bei Auswahl einer Ressource auch die Schaltfläche **Auswählen** aktiviert, aber auch die Anzahl der ausgewählten Ressourcen wird oben rechts im Fenster angezeigt. Klicken Sie auf das **X** neben der Zahl, um die Auswahl für alle aufzuheben.
 * Wenn Sie durch den Baum navigieren, wird Ihre Position in den Breadcrumbs am oberen Rand des Dialogfelds angezeigt. Mithilfe der Breadcrumbs können Sie innerhalb der Ressourcenhierarchie schnell von einem Punkt zu einem anderen wechseln.
 * Darüber hinaus können Sie auch jederzeit das Suchfeld oben im Dialogfeld verwenden. Klicken Sie im Suchfeld auf **X**, wenn Sie die Suche löschen möchten.

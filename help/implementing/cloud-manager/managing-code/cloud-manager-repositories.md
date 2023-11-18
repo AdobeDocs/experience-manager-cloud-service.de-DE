@@ -2,10 +2,10 @@
 title: Cloud Manager-Repositorys
 description: Erfahren Sie, wie Sie Ihre Git-Repositorys in Cloud Manager erstellen, anzeigen und löschen.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 87%
+source-wordcount: '582'
+ht-degree: 85%
 
 ---
 
@@ -24,7 +24,7 @@ Folgen Sie diesen Schritten, um Repositorys im Cloud Manager anzuzeigen und zu v
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Aus dem **Programmübersicht** Tippen oder klicken Sie auf **Repositorys** Registerkarte, um zu der **Repositorys** Seite.
+1. Aus dem **Programmübersicht** Seite, wählen Sie die **Repositorys** Registerkarte, um zu der **Repositorys** Seite.
 
 1. Klicks **Repository hinzufügen**.
 
@@ -130,5 +130,5 @@ Beachten Sie bei der Verwendung von Git-Untermodulen die folgenden Einschränkun
 * Betten Sie aus Sicherheitsgründen keine Anmeldeinformationen in Git-URLs ein.
 * Sofern nicht anders erforderlich, wird dringend empfohlen, „flache“ Untermodule zu verwenden.
    * Führen Sie dazu `git config -f .gitmodules submodule.<submodule path>.shallow true` für jedes Untermodul aus.
-* Für bestimmte Git-Commits werden Git-Untermodulverweise gespeichert. Wenn also Änderungen am Untermodul-Repository vorgenommen werden, muss der referenzierte Commit aktualisiert werden.
+* Für bestimmte Git-Commits werden Git-Untermodulverweise gespeichert. Wenn also Änderungen am Submodul-Repository vorgenommen werden, muss die referenzierte Commit aktualisiert werden.
    * Zum Beispiel mit `git submodule update --remote`

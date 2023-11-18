@@ -2,10 +2,10 @@
 title: Generieren von Zugriffs-Token für Server-seitige APIs
 description: Erfahren Sie, wie Sie durch Generieren eines sicheren JWT-Tokens die Kommunikation zwischen einem Drittanbieter-Server und AEM as a Cloud Service ermöglichen.
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: ht
-source-wordcount: '2090'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '2089'
+ht-degree: 98%
 
 ---
 
@@ -49,7 +49,7 @@ Nachdem die Anmeldeinformationen erstellt wurden, erscheinen sie unter der Regis
 
 ![Anzeigen der Anmeldeinformationen](/help/implementing/developing/introduction/assets/s2s-viewcredentials.png)
 
-Benutzende können die Anmeldeinformationen später mit der Aktion „Anzeigen“ einsehen. Darüber hinaus können Benutzende die Anmeldeinformationen für dasselbe technische Konto bearbeiten, wie weiter unten im Artikel beschrieben. Sie führen diese Bearbeitung durch Erstellen eines neuen privaten Schlüssels oder Zertifikats durch, falls das Zertifikat erneuert oder widerrufen werden muss.
+Benutzende können die Anmeldeinformationen später mit der Aktion „Anzeigen“ einsehen. Darüber hinaus können Benutzende die Anmeldeinformationen für dasselbe technische Konto bearbeiten, wie weiter unten im Artikel beschrieben. Sie führen diese Bearbeitung durch Erstellen eines privaten Schlüssels oder Zertifikats durch, falls das Zertifikat erneuert oder widerrufen werden muss.
 
 Benutzende mit der Rolle eines AEM as a Cloud Service Umgebungs-Admins können später neue Anmeldeinformationen für zusätzliche technische Konten erstellen. Diese Fähigkeit ist nützlich, wenn verschiedene APIs unterschiedliche Zugriffsanforderungen haben. Zum Beispiel Lesezugriff versus Lese- und Schreibzugriff.
 
@@ -67,7 +67,7 @@ Die Anwendung, die Aufrufe an AEM sendet, sollte in der Lage sein, auf die Anmel
 
 ### Generieren und Eintauschen eines JWT-Tokens gegen ein Zugriffs-Token {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-Verwenden Sie die Anmeldeinformationen, um ein JWT-Token in einem Aufruf an den IMS-Dienst von Adobe zu erstellen und ein Zugriffs-Token abzurufen, das 24 Stunden gültig ist.
+Verwenden Sie die Anmeldeinformationen, um ein JWT-Token in einem Aufruf an den IMS-Service von Adobe zu erstellen und ein Zugriffs-Token abzurufen, das 24 Stunden gültig ist.
 
 Die Anmeldeinformationen für den AEM CS-Service können mithilfe von zu diesem Zweck eingerichteten Client-Bibliotheken gegen ein Zugriffs-Token eingetauscht werden. Die Client-Bibliotheken sind im [öffentlichen GitHub-Repository von Adobe](https://github.com/adobe/aemcs-api-client-lib) verfügbar, das detailliertere Anleitungen und aktuelle Informationen enthält.
 
@@ -191,7 +191,7 @@ Informationen zu den erforderlichen Berechtigungen zur Verwendung der Entwickler
 >
 >Das lokale Zugriffs-Token für Entwickler ist maximal 24 Stunden lang gültig. Danach muss es mit derselben Methode neu generiert werden.
 
-Entwicklungspersonen können dieses Token verwenden, um Aufrufe von ihrem Nicht-AEM-Testprogramm an eine AEM as a Cloud Service-Umgebung zu senden. Normalerweise verwenden Entwicklungspersonen dieses Token mit der Nicht-AEM-Anwendung auf dem eigenen Laptop. Außerdem ist AEM as a Cloud Service normalerweise keine Produktionsumgebung.
+Entwicklerinnen und Entwickler können dieses Token verwenden, um Aufrufe von ihrem Nicht-AEM-Testprogramm an eine AEM as a Cloud Service-Umgebung zu senden. Normalerweise verwenden sie dieses Token mit der Nicht-AEM-Anwendung auf dem eigenen Laptop. Außerdem ist AEM as a Cloud Service normalerweise keine Produktionsumgebung.
 
 Der Entwicklungsablauf umfasst die folgenden Schritte:
 

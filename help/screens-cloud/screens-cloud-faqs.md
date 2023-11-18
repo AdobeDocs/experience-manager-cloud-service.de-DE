@@ -2,10 +2,10 @@
 title: Häufig gestellte Fragen zu Screens as a Cloud Service
 description: Auf dieser Seite werden häufig gestellte Fragen zu Screens as a Cloud Service beschrieben.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
-workflow-type: ht
-source-wordcount: '456'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 94%
 
 ---
 
@@ -38,7 +38,7 @@ scripts=[
 
 ## Welche Bildformate werden für das nahtlose Rendern von Bildern in einem Kanal von AEM Screens as a Cloud Service empfohlen?{#screens-cloud-image-format}
 
-Es wird empfohlen, in einem AEM Screens as a Cloud Service-Kanal Bilder im Format `.png` und `.jpeg` zu verwenden, um ein optimales Digital Signage-Erlebnis zu erzielen.
+Adobe empfiehlt die Verwendung von Bildern im Format `.png` und `.jpeg` in einem as a Cloud Service AEM Screens-Kanal für das beste Digital Signage-Erlebnis.
 Bilder im Format `*.tif` (Tag-Image-Dateiformat) werden in AEM Screens as a Cloud Service nicht unterstützt. Wenn ein Kanal dieses Bildformat hat, wird das Bild auf der Player-Seite nicht gerendert.
 
 ## Was sollte ich tun, wenn ein Kanal im Entwicklermodus (online) nicht auf dem AEM Screens-Player gerendert wird?{#screens-cloud-online-channel-blank-iframe}

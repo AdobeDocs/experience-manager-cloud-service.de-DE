@@ -3,10 +3,10 @@ title: Verwalten von GraphQL-Endpunkten in AEM
 description: Erfahren Sie, wie Sie GraphQL-Endpunkte in Adobe Experience Manager as a Cloud Service für die Bereitstellung von Headless-Inhalten verwalten.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 93%
+source-wordcount: '513'
+ht-degree: 91%
 
 ---
 
@@ -64,7 +64,7 @@ So aktivieren Sie den entsprechenden Endpunkt:
 1. Wählen Sie **Erstellen** aus.
 1. Die **Erstellen eines neuen GraphQL-Endpunkts** wird geöffnet. Hier können Sie Folgendes angeben:
    * **Name**: Name des Endpunkts; Sie können einen beliebigen Text eingeben.
-   * **GraphQL-Schema verwenden, das bereitgestellt wurde von**: Verwenden Sie das Dropdown-Menü, um die gewünschte Website / das gewünschte Projekt auszuwählen.
+   * **Verwenden des von bereitgestellten GraphQL-Schemas**: Wählen Sie über die Dropdownliste die gewünschte Site/das gewünschte Projekt aus.
 
    >[!NOTE]
    >

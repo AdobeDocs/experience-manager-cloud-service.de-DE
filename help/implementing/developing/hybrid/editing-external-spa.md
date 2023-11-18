@@ -2,10 +2,10 @@
 title: Bearbeiten einer externen SPA in AEM
 description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenständigen SPA in eine AEM-Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren des Authoring beschrieben.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2418'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ Die Voraussetzungen sind einfach.
 * Erstellen Sie ein AEM-SPA-Projekt mithilfe des [AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de#available-properties).
    * Forms bildet die Grundlage des AEM-Projekts, das aktualisiert wird, um die externe SPA aufzunehmen.
    * Für die Beispiele in diesem Dokument verwendet Adobe das [WKND-SPA-Projekt](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de#spa-editor) als Ausgangspunkt.
-* Halten Sie die funktionierende, externe React SPA bereit, die Sie integrieren möchten.
+* Lassen Sie die funktionierende, externe React-SPA, die Sie integrieren möchten, zur Hand.
 
 ## Hochladen der SPA in das AEM-Projekt {#upload-spa-to-aem-project}
 

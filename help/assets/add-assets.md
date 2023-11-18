@@ -4,7 +4,7 @@ description: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as 
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 5dfcf1c5484b978c1a778eb99a09421533234734
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3179'
 ht-degree: 98%
@@ -175,7 +175,7 @@ Gehen Sie wie folgt vor, um das Tool für den Massenimport zu konfigurieren:
 
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Titel für die Konfiguration des Massenimports an.
 
-1. Wählen Sie den Datenquellentyp aus der Dropdown-Liste der **[!UICONTROL Importquellen]**.
+1. Wählen Sie den Datenquellentyp aus der **[!UICONTROL Importquelle]** Dropdown-Liste.
 
 1. Geben Sie die Werte an, um eine Verbindung mit der Datenquelle herzustellen. Wenn Sie zum Beispiel **Azure Blob Storage** als Datenquelle auswählen, geben Sie die Werte für das Azure-Speicherkonto, den Azure-Blob-Container und den Azure-Zugriffsschlüssel an.
 

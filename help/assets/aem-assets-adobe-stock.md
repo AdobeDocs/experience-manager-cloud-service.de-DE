@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2490'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -124,7 +124,7 @@ Der öffentliche Schlüssel (Zertifikat) authentifiziert Ihr Produktprofil in de
 
 1. Klicken Sie auf der Seite mit den Adobe IMS-Konfigurationen auf **[!UICONTROL Erstellen]**. Die Seite **[!UICONTROL Technische Konfiguration des Adobe IMS-Kontos]** wird geöffnet.
 
-1. Wählen Sie auf der Registerkarte **[!UICONTROL Zertifikat]** die Option **[!UICONTROL Adobe Stock]** aus der Dropdown-Liste **[!UICONTROL Cloud-Lösung]**.
+1. Im **[!UICONTROL Zertifikat]** Registerkarte auswählen **[!UICONTROL Adobe Stock]** aus dem **[!UICONTROL Cloud-Lösung]** Dropdown-Liste.
 
 1. Sie können für die Konfiguration ein Zertifikat erstellen oder ein vorhandenes Zertifikat wiederverwenden.
 
@@ -151,7 +151,7 @@ So generieren Sie die Anmeldedaten für das Service-Konto und die JWT-Payload:
 1. Melden Sie sich bei der Adobe Developer Console mit Berechtigungen als Systemadministrator an. Die Standard-URL lautet [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
-   Stellen Sie sicher, dass Sie die richtige IMS-Organisation (Stock-Berechtigungen) aus der Dropdown-Liste (Organisation) ausgewählt haben.
+   Stellen Sie sicher, dass Sie die richtige IMS-Organisation (Lagerberechtigung) aus der Dropdown-Liste (Organisationsliste) ausgewählt haben.
 
 1. Klicken Sie auf **[!UICONTROL Neues Projekt erstellen]**. Für Ihre Organisation wird ein leeres Projekt mit einem systemgenerierten Namen erstellt.
 
@@ -220,7 +220,7 @@ So konfigurieren Sie den [!DNL Adobe Stock]-Cloud-Service:
 
    Wählen Sie die IMS-Konfiguration aus, die Sie beim [Konfigurieren des IMS-Kontos](#create-ims-account-configuration) erstellt haben.
 
-   Wählen Sie Ihr Gebietsschema aus der Dropdown-Liste aus.
+   Wählen Sie Ihr Gebietsschema aus der Dropdownliste aus.
 
    ![aem-stock-cloud-config](assets/aem-stock-cloud-config.png)
 
@@ -308,7 +308,7 @@ So aktivieren Sie die [!DNL Adobe Stock]-Cloud-Konfiguration:
 
 1. Klicken Sie oben rechts auf das Benutzersymbol und dann auf **[!UICONTROL Benutzereinstellungen]**. Das Fenster **[!UICONTROL Benutzereinstellungen]** wird geöffnet.
 
-1. Wählen Sie die gewünschte **[!UICONTROL Stock-Konfiguration]** aus der Dropdown-Liste aus und klicken Sie auf **[!UICONTROL Akzeptieren]**, um die Konfiguration zu aktivieren.
+1. Wählen Sie die gewünschte **[!UICONTROL Stock-Konfiguration]** aus der Dropdownliste aus und klicken Sie auf **[!UICONTROL Accept]** , um die Konfiguration zu aktivieren.
 
    ![Benutzereinstellungen](assets/aem-stock-preferences.png)
 

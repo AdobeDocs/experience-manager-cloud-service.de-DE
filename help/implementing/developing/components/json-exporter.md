@@ -2,9 +2,9 @@
 title: JSON-Exporter für Content Services
 description: Mit den AEM Content Services können die Beschreibung und Bereitstellung von Inhalten in/über AEM über einen Fokus auf Web-Seiten hinweg generalisiert werden. Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditionellen AEM-Web-Seiten sind, und nutzen standardisierte Methoden, die von allen Clients genutzt werden können.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '398'
 ht-degree: 92%
 
 ---
@@ -67,8 +67,6 @@ Ihre Seite kann entweder ein einzelnes Inhaltsfragment oder mehrere Komponenten 
 
 ### Weiterführende Informationen {#further-information}
 
-Siehe auch:
-
 * Assets-HTTP-API
    * [Assets-HTTP-API](/help/assets/developer-reference-material-apis.md)
 * Sling-Modelle:
@@ -77,8 +75,6 @@ Siehe auch:
    * [Aktivieren eines JSON-Exports für eine Komponente](enabling-json-exporter.md)
 
 ## Verwandte Dokumentation {#related-documentation}
-
-Weitere Informationen finden Sie unter:
 
 * [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

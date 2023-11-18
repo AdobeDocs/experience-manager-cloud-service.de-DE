@@ -2,10 +2,10 @@
 title: Aktivieren von PWA (Progressive Web App)-Funktionen
 description: AEM Sites ermöglicht es dem Inhaltsautor, PWA (Progressive Web App)-Funktionen für eine Website durch eine einfache Konfiguration anstelle von Kodierung zu aktivieren.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2004'
-ht-degree: 67%
+source-wordcount: '1998'
+ht-degree: 66%
 
 ---
 
@@ -102,8 +102,8 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 Mit [Voraussetzungen](#prerequisites) erfüllt, ist es für einen Inhaltsautor einfach, PWA-Funktionen für eine Site zu aktivieren. Im Folgenden finden Sie eine Übersicht über die Vorgehensweise. Die einzelnen Optionen werden im Abschnitt beschrieben. [Detaillierte Optionen.](#detailed-options)
 
 1. Melden Sie sich bei AEM an.
-1. Tippen oder klicken Sie im Hauptmenü auf **Navigation** > **Sites**.
-1. Wählen Sie Ihr Site-Projekt aus und tippen oder klicken Sie auf [**Eigenschaften**](/help/sites-cloud/authoring/fundamentals/page-properties.md) oder verwenden Sie den Hotkey `p`.
+1. Wählen Sie im Hauptmenü die Option **Navigation** > **Sites**.
+1. Wählen Sie Ihr Sites-Projekt aus und wählen Sie [**Eigenschaften**](/help/sites-cloud/authoring/fundamentals/page-properties.md) oder verwenden Sie den Hotkey `p`.
 1. Wählen Sie die Registerkarte **Progressive Web App** aus und konfigurieren Sie die entsprechenden Eigenschaften. Sie möchten mindestens:
    1. Wählen Sie die Option **PWA aktivieren** aus.
    1. Definieren Sie die **Start-URL**.
@@ -123,7 +123,7 @@ Mit [Voraussetzungen](#prerequisites) erfüllt, ist es für einen Inhaltsautor e
 
       ![PWA-Offline-Pfade definieren](../assets/pwa-offline.png)
 
-1. Tippen oder klicken Sie auf **Speichern und schließen**.
+1. Klicken Sie auf **Speichern und schließen**.
 
 Ihre Site ist jetzt konfiguriert und Sie können sie [als lokale App installieren](#using-pwa-enabled-site).
 

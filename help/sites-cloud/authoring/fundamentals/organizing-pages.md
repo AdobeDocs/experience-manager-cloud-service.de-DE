@@ -2,10 +2,10 @@
 title: Erstellen und Organisieren von Seiten
 description: Erfahren Sie, wie Sie Ihre Website organisieren können, indem Sie Seiten mit AEM erstellen und verwalten.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 96%
+source-wordcount: '2429'
+ht-degree: 86%
 
 ---
 
@@ -16,17 +16,17 @@ In diesem Dokument wird beschrieben, wie Sie mit Adobe Experience Manager Cloud 
 
 >[!NOTE]
 >
->Ihr Konto muss über die erforderlichen Zugriffsrechte und Berechtigungen verfügen, damit Sie Aktionen auf Seiten durchführen können, beispielsweise das Erstellen, Kopieren, Verschieben, Bearbeiten und Löschen.
+>Ihr Konto muss über die entsprechenden Zugriffsrechte und Berechtigungen verfügen, um auf Seiten wie Erstellen, Kopieren, Verschieben, Bearbeiten und Löschen reagieren zu können.
 >
->Wenn Sie auf Probleme stoßen, empfehlen wir Ihnen, sich an den Systemadministrator zu wenden.
+>Wenn Sie auf Probleme stoßen, empfehlen wir Ihnen, sich an die bzw. den Systemadmin zu wenden.
 
 <!--
->Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to take action on pages such as create, copy, move, edit, and delete.
+>Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to act on pages such as create, copy, move, edit, and delete.
 -->
 
 >[!TIP]
 >
->Es steht eine Reihe von [Tastaturbefehlen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) in der Websites-Konsole zur Verfügung, die eine effizientere Seitenorganisation ermöglichen.
+>Es gibt mehrere [Tastaturbefehle](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) , die Sie über die Websites-Konsole verwenden können, um die Seitenorganisation effizienter zu gestalten.
 
 {{edge-delivery-authoring}}
 
@@ -70,7 +70,7 @@ An jedem Punkt können Sie die Verzwigung nach oben in den Breadcrumbs in der Ko
 
 ### Seitenbenennungskonventionen {#page-naming-conventions}
 
-Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
+Beim Erstellen einer Seite gibt es zwei Schlüsselfelder:
 
 * **[Titel](#title)**:
 
@@ -95,7 +95,7 @@ Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind
 >
 >Denken Sie auch daran, dass einige Browser (z. B. ältere Versionen von IE) nur URLs bis zu einer bestimmten Länge akzeptieren, sodass auch technische Gründe für die Verwendung von kurzen Seitennamen bestehen.
 
-Beim Erstellen einer neuen Seite [validiert AEM den Seitennamen entsprechend den AEM- und JCR-Konventionen](/help/implementing/developing/introduction/naming-conventions.md).
+AEM beim Erstellen einer Seite [validiert den Seitennamen gemäß den Konventionen](/help/implementing/developing/introduction/naming-conventions.md) von AEM und dem JCR auferlegt.
 
 Mindestens zulässig sind die folgenden Zeichen:
 
@@ -113,7 +113,7 @@ Umfassende Informationen zu allen zulässigen Zeichen finden Sie in den [Benennu
 
 #### Titel {#title}
 
-Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen** für die Seite von dieser Zeichenfolge ab und [validiert den Namen entsprechend den Konventionen von AEM und JCR](/help/implementing/developing/introduction/naming-conventions.md).
+Wenn Sie nur eine Seite angeben **Titel** leitet AEM die Seite beim Erstellen einer Seite ab **Name** aus dieser Zeichenfolge und [den Namen gemäß den Konventionen validieren](/help/implementing/developing/introduction/naming-conventions.md) von AEM und JCR aufgezwungen.
 
 Im Feld **Titel** werden ungültige Zeichen akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
 
@@ -124,7 +124,7 @@ Im Feld **Titel** werden ungültige Zeichen akzeptiert, wobei die ungültigen Ze
 
 #### Name {#name}
 
-Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen gemäß den AEM- und JCR-Konventionen](/help/implementing/developing/introduction/naming-conventions.md). Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erläuternden Meldung hervorgehoben.
+Wenn Sie eine Seite bereitstellen **Name** beim Erstellen einer Seite AEM [validiert den Namen gemäß den Konventionen](/help/implementing/developing/introduction/naming-conventions.md) von AEM und JCR aufgezwungen. Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erläuternden Meldung hervorgehoben.
 
 ![Beispiel für die Eingabe eines ungültigen Seitennamens](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -185,7 +185,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
 
 1. Im ersten Schritt des Assistenten haben Sie folgende Möglichkeiten:
 
-   * Wählen Sie die Vorlage, die Sie zum Erstellen der neuen Seite verwenden möchten, und klicken/tippen Sie auf **Weiter**, um fortzufahren.
+   * Wählen Sie die Vorlage aus, die Sie zum Erstellen der neuen Seite verwenden möchten, und wählen Sie dann **Nächste** um fortzufahren.
 
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
 
@@ -193,7 +193,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
 
 1. Im letzten Schritt des Assistenten haben Sie folgende Möglichkeiten:
 
-   * Geben Sie auf den drei Registerkarten die [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) ein, die Sie der neuen Seite zuweisen möchten, und klicken bzw. tippen Sie dann auf **Erstellen**, um die Seite zu erstellen.
+   * Verwenden Sie die drei Tabs, um die [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) Sie der neuen Seite zuweisen möchten, wählen Sie **Erstellen** , um die Seite zu erstellen.
 
    * Verwenden Sie die **Rücktaste**, um zur Vorlagenauswahl zurückzukehren.
 
@@ -206,7 +206,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
    * **Name**:
 
       * Mit diesem Wert wird der URI generiert. Wenn kein Name angegeben ist, wird der Name vom Titel abgeleitet.
-      * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den Konventionen von AEM und JCR](/help/implementing/developing/introduction/naming-conventions.md).
+      * Wenn Sie eine Seite angeben **Name** beim Erstellen einer Seite AEM [validiert den Namen gemäß den Konventionen](/help/implementing/developing/introduction/naming-conventions.md) von AEM und JCR aufgezwungen.
       * Die **Eingabe von ungültigen Zeichen** im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die auf zu entfernende/ersetzende Zeichen verweist.
 
    >[!TIP]
@@ -269,7 +269,7 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
    ![Kopieren](/help/sites-cloud/authoring/assets/copy.png)
 
 1. Navigieren Sie zum Speicherort, an dem Sie die neue Kopie der Seite speichern möchten.
-1. Tippen oder klicken Sie auf das Symbol **Einfügen**, das verfügbar wurde.
+1. Wählen Sie die **Einfügen** -Symbol, das verfügbar wurde.
 
    ![Einfügen](/help/sites-cloud/authoring/assets/paste.png)
 
@@ -279,7 +279,7 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
 
    ![Dialogfeld „Einfügen“](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. Tippen oder klicken Sie auf die Schaltfläche **Einfügen**, um die Einfügeoperation zu bestätigen und die neue(n) Seite(n) zu erstellen.
+1. Wählen Sie die **Einfügen** -Schaltfläche, um die Einfügeoperation zu bestätigen und die neuen Seiten zu erstellen.
 
 >[!NOTE]
 >
@@ -313,7 +313,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
 1. Im **Umbenennungs**-Schritt des Assistenten haben Sie folgende Möglichkeiten:
 
-   * Geben Sie den Namen an, den die Seite nach dem Verschieben aufweisen soll, und tippen/klicken Sie dann auf **Weiter**, um den Vorgang fortzusetzen.
+   * Geben Sie den Namen an, den die Seite nach dem Verschieben aufweisen soll, und wählen Sie dann **Nächste** um fortzufahren.
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
 
    ![Verschieben und Umbenennen einer Seite](/help/sites-cloud/authoring/assets/move-page-rename.png)
@@ -383,7 +383,7 @@ Seitenverschiebungsaktionen werden immer asynchron verarbeitet, sodass der Benut
   ![Asynchronous page move](assets/asynchronous-page-move.png)
 -->
 
-Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträge**](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) unter **Globale Navigation** > **Tools** > **Vorgänge** > **Aufträge** überprüft werden.
+Der Status asynchroner Aufträge kann im [**Status asynchroner Aufträge** Dashboard](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Globale Navigation** > **Instrumente** > **Aktivitäten** > **Aufträge**
 
 >[!NOTE]
 >

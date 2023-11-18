@@ -2,10 +2,10 @@
 title: Erste Schritte mit der AEM Headless-Übersetzung
 description: Erfahren Sie, wie Sie Ihre Headless-Inhalte organisieren und wie AEM Übersetzungs-Tools funktionieren.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 96%
+source-wordcount: '1413'
+ht-degree: 93%
 
 ---
 
@@ -32,7 +32,7 @@ In diesem Dokument erfahren Sie, wie Sie mit der Übersetzung von Headless-Inhal
 
 ## Anforderungen und Vorbedingungen {#requirements-prerequisites}
 
-Bevor Sie mit der Übersetzung Ihrer Headless-AEM-Inhalte beginnen, müssen Sie eine Reihe von Anforderungen erfüllen.
+Es gibt mehrere Voraussetzungen, bevor Sie mit der Übersetzung Ihrer Headless AEM-Inhalte beginnen.
 
 ### Kenntnisse {#knowledge}
 
@@ -78,17 +78,17 @@ Der Inhaltsarchitekt wird zu Beginn des Projekts aktiv, um diese Struktur zu def
 
 Da die Inhaltsmodelle die Struktur Ihrer Inhalte definieren, müssen Sie wissen, welche Felder Ihrer Modelle übersetzt werden müssen. Im Allgemeinen arbeiten Sie mit dem Inhaltsarchitekten zusammen, um dies zu definieren. Gehen Sie wie folgt vor, um die Felder Ihrer Inhaltsmodelle durchzugehen.
 
-1. Wählen Sie **Tools** -> **Allgemein** -> **Inhaltsfragmentmodelle**.
-1. Inhaltsfragmentmodelle werden im Allgemeinen in einer Ordnerstruktur gespeichert. Tippen oder klicken Sie auf den Ordner für Ihr Projekt.
-1. Die Modelle werden aufgelistet. Tippen oder klicken Sie auf das Modell, um die Details anzuzeigen.
+1. Navigieren Sie zu **Tools** > **Allgemein** > **Inhaltsfragmentmodelle**.
+1. Inhaltsfragmentmodelle werden im Allgemeinen in einer Ordnerstruktur gespeichert. Wählen Sie den Ordner für Ihr Projekt aus.
+1. Die Modelle werden aufgelistet. Wählen Sie das Modell aus, um die Details anzuzeigen.
    ![Inhaltsfragmentmodelle](assets/content-fragment-models.png)
 1. Der **Inhaltsfragmentmodell-Editor** wird geöffnet.
    1. Die linke Spalte enthält die Felder des Modells. Diese Spalte interessiert uns.
    1. Die rechte Spalte enthält die Felder, die dem Modell hinzugefügt werden können. Diese Spalte können wir ignorieren.
       ![Inhaltsfragmentmodell-Editor](assets/content-fragment-model-editor.png)
-1. Tippen oder klicken Sie auf eines der Felder des Modells. AEM markiert es und die Details dieses Felds werden in der rechten Spalte angezeigt.
+1. Wählen Sie eines der Felder des Modells aus. AEM markiert es und die Details dieses Felds werden in der rechten Spalte angezeigt.
    ![Details des Inhaltsfragmentmodell-Editors](assets/content-fragment-model-editor-detail.png)
-1. Der Inhaltsarchitekt aktiviert das Feld **Übersetzbar** für jedes Feld des Inhaltsmodells, das übersetzt werden muss.
+1. Der Inhaltsarchitekt aktiviert die **Übersetzbar** in jedem Feld des Inhaltsmodells, das übersetzt werden muss.
 
 >[!TIP]
 >

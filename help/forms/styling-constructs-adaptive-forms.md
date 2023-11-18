@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2315'
-ht-degree: 99%
+source-wordcount: '2316'
+ht-degree: 97%
 
 ---
 
@@ -686,7 +686,7 @@ Registerkartennavigator oben:
 
 `}`
 
-Zusätzlich gibt es Klassen für Stilregisterkarten-Navigatoren (links und oben), abhängig davon, ob sie verschachtelte/untergeordnete/Unternavigatoren haben.
+Außerdem gibt es Klassen für Stilregisterkartennavigatoren (links und oben), je nachdem, ob sie verschachtelte/untergeordnete/Unter-Navigatoren haben.
 
 <table>
  <tbody>

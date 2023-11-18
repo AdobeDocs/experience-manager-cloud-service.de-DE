@@ -2,10 +2,10 @@
 title: Konfigurieren der Segmentierung mit ContextHub
 description: Erfahren Sie, wie Sie die Segmentierung mit ContextHub konfigurieren.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1682'
-ht-degree: 95%
+source-wordcount: '1652'
+ht-degree: 88%
 
 ---
 
@@ -86,13 +86,13 @@ Die folgenden Verweise sind standardmäßig verfügbar, um eine direkte Verknüp
 
 Festlegen eines neuen Segments
 
-1. Nachdem Sie [auf die Segmente zugegriffen haben](#accessing-segments), [navigieren Sie zu dem Ordner](#organizing-segments), in dem Sie das Segment erstellen möchten.
+1. Nachdem Sie [auf die Segmente zugegriffen haben](#accessing-segments), [navigieren Sie zum Ordner](#organizing-segments), in dem Sie das Segment erstellen möchten.
 
-1. Tippen oder klicken Sie auf die Schaltfläche **Erstellen** und wählen Sie **ContextHub-Segment erstellen** aus.
+1. Wählen Sie die **Erstellen** Schaltfläche und wählen Sie **Erstellen eines ContextHub-Segments**.
 
    ![Segment hinzufügen](../assets/contexthub-create-segment.png)
 
-1. Geben Sie unter **Neues ContextHub-Segment** einen Titel für das Segment sowie bei Bedarf einen Verstärkungswert ein und tippen oder klicken Sie auf **Erstellen**.
+1. Im **Neues ContextHub-Segment**, geben Sie einen Titel für das Segment und ggf. einen Verstärkungswert ein und wählen Sie dann **Erstellen**.
 
    ![Neues Segment](../assets/contexthub-new-segment.png)
 
@@ -103,7 +103,7 @@ Festlegen eines neuen Segments
 
 1. Bearbeiten Sie in der Segment-Konsole Ihr neu erstelltes Segment, um es im Segmenteditor zu öffnen.
 1. Ziehen Sie einen Vergleich oder Verweis in den Segmenteditor. Der Vergleich oder Verweis wird dann im standardmäßigen UND-Container angezeigt.
-1. Doppelklicken oder tippen Sie auf die Konfigurationsoption des neuen Verweises oder Segments, um die spezifischen Parameter zu bearbeiten. In diesem Beispiel prüfen wir auf Personen in Basel.
+1. Wählen Sie die Konfigurationsoption des neuen Verweises oder Segments doppelt aus, um die spezifischen Parameter zu bearbeiten. In diesem Beispiel prüfen wir auf Personen in Basel.
 
    ![Prüfungen für Personen in Basel](../assets/contexthub-comparing-property-value.png)
 
@@ -193,7 +193,7 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 
 ### Erstellen eines neuen Ordners {#create-folder}
 
-1. Klicken oder tippen Sie nach dem [Zugriff auf die Segmente](#accessing-segments) auf die Schaltfläche **Erstellen** und wählen Sie **Ordner** aus.
+1. Nachher [Zugriff auf Segmente](#accessing-segments), wählen Sie die **Erstellen** Schaltfläche und wählen Sie **Ordner**.
 
    ![Ordner hinzufügen](../assets/contexthub-create-segment.png)
 
@@ -205,24 +205,24 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 
    ![Ordner erstellen](../assets/contexthub-create-folder.png)
 
-1. Tippen oder klicken Sie auf **Erstellen**.
+1. Wählen Sie **Erstellen** aus.
 
    ![Ordner bestätigen](../assets/contexthub-confirm-folder.png)
 
 1. Der Ordner wird in der Liste der Segmente angezeigt.
    * Die Sortierung Ihrer Spalten beeinflusst, wo in der Liste der neue Ordner erscheint.
-   * Sie können auf die Spaltenüberschriften tippen oder klicken, um die Sortierung anzupassen.
+   * Sie können die Spaltenüberschriften auswählen, um die Sortierung anzupassen.
      ![Der neue Ordner](../assets/contexthub-folder.png)
 
 ### Ändern vorhandener Ordner {#modify-folders}
 
-1. Klicken oder tippen Sie mach dem [Zugriff auf die Segmente](#accessing-segments) auf den Ordner, den Sie ändern möchten, um ihn auszuwählen.
+1. Nachher [Zugriff auf Segmente](#accessing-segments), wählen Sie den Ordner aus, den Sie ändern möchten, um ihn auszuwählen.
 
    ![Ordner auswählen](../assets/contexthub-select-folder.png)
 
-1. Tippen oder klicken Sie auf **Umbenennen** in der Symbolleiste, um den Ordner umzubenennen.
+1. Auswählen **Umbenennen** in der Symbolleiste, um den Ordner umzubenennen.
 
-1. Geben Sie einen neuen **Ordnertitel** and und tippen oder klicken Sie auf **Speichern**.
+1. Bereitstellung eines neuen **Ordnertitel** und wählen **Speichern**.
 
    ![Ordner umbenennen](../assets/contexthub-rename-folder.png)
 
@@ -232,25 +232,25 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 
 ### Löschen eines Ordners
 
-1. Klicken oder tippen Sie mach dem [Zugriff auf die Segmente](#accessing-segments) auf den Ordner, den Sie ändern möchten, um ihn auszuwählen.
+1. Nachher [Zugriff auf Segmente](#accessing-segments), wählen Sie den Ordner aus, den Sie ändern möchten, um ihn auszuwählen.
 
    ![Ordner auswählen](../assets/contexthub-select-folder.png)
 
-1. Tippen oder klicken Sie auf **Löschen** in der Symbolleiste, um den Ordner zu löschen.
+1. Auswählen **Löschen** in der Symbolleiste, um den Ordner zu löschen.
 
 1. In einem Dialogfeld wird eine Liste der zum Löschen ausgewählten Ordner angezeigt.
 
    ![Löschen bestätigen](../assets/contexthub-confirm-segment-delete.png)
 
-   * Tippen oder klicken Sie zum Bestätigen auf **Löschen**.
-   * Tippen oder klicken Sie zum Abbrechen auf **Abbrechen**.
+   * Auswählen **Löschen** zur Bestätigung.
+   * Auswählen **Abbrechen** abbrechen.
 
 1. Wenn einer der ausgewählten Ordner Unterordner oder Segmente enthält, muss deren Löschung bestätigt werden.
 
    ![Löschen von untergeordneten Elementen bestätigen](../assets/contexthub-confirm-segment-child-delete.png)
 
-   * Tippen oder klicken Sie zum Bestätigen auf **Löschen erzwingen**.
-   * Tippen oder klicken Sie zum Abbrechen auf **Abbrechen**.
+   * Auswählen **Löschen erzwingen** zur Bestätigung.
+   * Auswählen **Abbrechen** abbrechen.
 
 >[!NOTE]
 >

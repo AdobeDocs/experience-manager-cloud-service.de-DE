@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 96%
+source-wordcount: '776'
+ht-degree: 87%
 
 ---
 
@@ -27,7 +27,7 @@ Nachdem Sie Ihren Connector eingerichtet haben, führt Sie dieser Artikel durch 
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie die Übersetzungsregeln von AEM zur Identifizierung Ihres Übersetzungsinhalts nutzen. Nach Lesen dieses Dokuments sollten Sie:
+In diesem Dokument erfahren Sie, wie Sie die Übersetzungsregeln von AEM zur Identifizierung Ihres Übersetzungsinhalts nutzen. Nach dem Lesen dieses Dokuments sollten Sie Folgendes können:
 
 * Verstehen, was die Übersetzungsregeln bewirken.
 * Eigene Übersetzungsregeln definieren können.
@@ -36,7 +36,7 @@ In diesem Dokument erfahren Sie, wie Sie die Übersetzungsregeln von AEM zur Ide
 
 AEM Sites-Seiten können viele Informationen enthalten. Je nach Ihren Projektanforderungen müssen wahrscheinlich nicht alle Informationen auf einer Seite übersetzt werden.
 
-Übersetzungsregeln iermitteln die Inhalte, die in Übersetzungsprojekten enthalten sind oder von diesen ausgeschlossen werden. Wenn Inhalte übersetzt werden, extrahiert AEM den Inhalt oder sammelt ihn anhand dieser Regeln. Auf diese Weise werden nur Inhalte an den Übersetzungs-Service gesendet, die übersetzt werden müssen.
+Übersetzungsregeln identifizieren die Inhalte, die in Übersetzungsprojekten enthalten oder von diesen ausgeschlossen sind. Wenn Inhalte übersetzt werden, extrahiert AEM den Inhalt oder sammelt ihn anhand dieser Regeln. Auf diese Weise werden nur Inhalte an den Übersetzungs-Service gesendet, die übersetzt werden müssen.
 
 Die Übersetzungsregeln umfassen die folgenden Informationen:
 
@@ -57,22 +57,22 @@ Es gibt eine **Übersetzungskonfigurations**-Konsole, die zum Konfigurieren von 
 
 So können Sie darauf zugreifen:
 
-1. Gehen Sie zu **Tools** > **Allgemein**.
-1. Tippen oder klicken Sie auf **Übersetzungskonfiguration**.
+1. Navigieren Sie zu **Instrumente** > **Allgemein**.
+1. Wählen Sie **Übersetzungskonfiguration** aus.
 
 AEM erstellt automatisch Übersetzungsregeln für alle Inhalte. So zeigen Sie diese Regeln an:
 
-1. Wählen Sie zuerst den `/content`-Kontext aus und dann die Option **Bearbeiten** in der Symbolleiste.
+1. Wählen Sie die `/content` Kontext.
+1. Wählen Sie in der Symbolleiste die **Bearbeiten**.
 1. Der Editor für Übersetzungsregeln wird mit den Regeln geöffnet, die automatisch für den Pfad `/content` erstellt wurden.
 
    ![Editor für Übersetzungsregeln](assets/translation-rules-editor.png)
 
 1. Seiteneigenschaften, die übersetzt werden, befinden sich unter dem Abschnitt **Allgemein** der Liste. Sie können bestehende Eigenschaftsnamen, die Sie explizit in die Übersetzung einbeziehen möchten, hinzufügen oder aktualisieren.
-   1. Geben Sie den Eigenschaftsnamen im Feld **Neue Eigenschaft** ein.
-   1. Die Optionen **Übersetzen** und **Übernehmen** werden automatisch aktiviert.
-   1. Tippen oder klicken Sie auf **Hinzufügen**.
+   1. Im **Neue Eigenschaft** Geben Sie den Eigenschaftsnamen ein. Die Optionen **Übersetzen** und **Übernehmen** werden automatisch aktiviert.
+   1. Klicken Sie auf **Hinzufügen**.
    1. Wiederholen Sie diese Schritte für alle Felder, die Sie übersetzen müssen.
-   1. Tippen oder klicken Sie auf **Speichern**.
+   1. Wählen Sie **Speichern** aus.
 
 Sie haben jetzt Ihre Übersetzungsregeln konfiguriert.
 
@@ -86,7 +86,7 @@ Sie haben jetzt Ihre Übersetzungsregeln konfiguriert.
 
 ## Erweiterte Verwendung {#advanced-usage}
 
-Es gibt eine Reihe weiterer Eigenschaften, die als Teil Ihrer Übersetzungsregeln konfiguriert werden können. Darüber hinaus können Sie Ihre Regeln manuell als XML spezifizieren, was mehr Spezifität und Flexibilität ermöglicht.
+Es gibt mehrere zusätzliche Eigenschaften, die als Teil Ihrer Übersetzungsregeln konfiguriert werden können. Darüber hinaus können Sie Ihre Regeln manuell als XML spezifizieren, was mehr Spezifität und Flexibilität ermöglicht.
 
 Diese Funktionen sind im Allgemeinen nicht erforderlich, um mit der Lokalisierung Ihrer Inhalte zu beginnen. Sie können sie jedoch im Abschnitt [Zusätzliche Ressourcen](#additional-resources) nachlesen, wenn Sie Interesse haben.
 

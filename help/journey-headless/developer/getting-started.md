@@ -2,9 +2,9 @@
 title: Erste Schritte mit AEM Headless as a Cloud Service
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Voraussetzungen für AEM Headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3095'
+source-wordcount: '3093'
 ht-degree: 94%
 
 ---
@@ -123,7 +123,7 @@ Mit dem SPA-Editor nutzt die SPA nicht nur Inhalte aus AEM, sondern kann auch in
 
 ## Anforderungen und Vorbedingungen {#requirements-prerequisites}
 
-Bevor Sie mit Ihrem Headless-AEM-Projekt beginnen, müssen Sie eine Reihe von Anforderungen erfüllen.
+Es gibt mehrere Anforderungen, bevor Sie Ihr Headless-AEM-Projekt starten.
 
 ### Kenntnisse {#knowledge}
 

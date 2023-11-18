@@ -3,10 +3,10 @@ title: AEM-Dokumentations-Touren
 description: Dokumentations-Touren bieten eine erzählerische Struktur innerhalb der AEM-Dokumentation, indem sie komplexe und ungleiche Funktionen miteinander verbinden, um ein Geschäftsziel auf eine bewährte Weise zu lösen. Die Touren sind für AEM-Anfänger entwickelt worden und stellen die Konzepte und Features von A bis Z vor, die geeignet sind, um ein Ziel zu erreichen.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1349'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1347'
+ht-degree: 96%
 
 ---
 
@@ -77,12 +77,12 @@ Die Dokumentations-Touren sollen in AEM bestehende technische Dokumentationen un
 |---|---|---|---|---|---|---|
 | Dokumentations-Tour | Eine Tour definiert, wie AEM ein allgemeines Geschäftsproblem mittels einer Erzählung lösen kann, die den Leser durch komplexe, miteinander verbundene Prozesse und Funktionen führt. Sie veranschaulicht, wie mehrere Funktionen zusammenarbeiten, um eine Geschäftsanforderung in bewährter Weise zu erfüllen. | Leser, die neu in AEM sind | Allgemeine Vertrautheit mit CMS | Detaillierte Optionen und Konfiguration | Text | ca. 1 Stunde |
 | Technische Dokumente | Technische Dokumente konzentrieren sich auf einzelne Funktionen, in denen die technischen Einzelheiten der Funktion und alle dem Benutzer zur Verfügung stehenden Optionen ausführlich beschrieben werden. | Erfahrene AEM-Anwender | Erfahrung mit AEM | Kontext und Hintergrund | Text | Variabel |
-| Tutorial | Ein Tutorial ist eine ausführliche Einführung in ein Thema, in der einem Entwickler oder Administrator Schritt für Schritt gezeigt wird, wie ein technisches Ziel (im Allgemeinen Programmierung oder Systemkonfiguration) erreicht werden kann, mit konkreten Beispielen und Beispielcode, wobei in der Regel eine begrenzte Anzahl von Funktionen genutzt wird. | AEM-Entwickler oder -Administratoren | Erfahrung mit AEM | Hintergrund und Theorie | Video | >1 Stunde |
+| Tutorial | In einem Tutorial erfahren Entwickler oder Administratoren ausführlich, wie sie ein technisches Ziel (im Allgemeinen Programmierung oder Systemkonfiguration) schrittweise erreichen, indem sie spezifische Beispiele und Beispielcode bereitstellen, die in der Regel eine begrenzte Anzahl von Funktionen verwenden. | AEM-Entwickler oder -Administratoren | Erfahrung mit AEM | Hintergrund und Theorie | Video | >1 Stunde |
 | Erste-Schritte-Handbuch | Ein Erste-Schritte-Handbuch ist eine blitzschnelle Einführung in eine bestimmte neue AEM-Funktion. Es bietet einen schnellen Überblick über eine einzelne Funktion, die den Benutzer durch die wichtigen (aber nicht alle) Schritte zur Konfiguration und Verwendung eines einfachen Anwendungsfalls führt. | AEM-Administratoren | Erfahrung mit AEM | Hintergrund, Theorie, detaillierte Optionen | Text | &lt;1 Stunde |
 
 ## Welche Touren gibt es? {#journeys}
 
-Es stehen Ihnen bereits eine Reihe von Dokumentations-Touren zur Verfügung. Da jede Tour als Erzählung konzipiert ist, sollten Sie mit der Einleitung beginnen und sie bis zum Ende lesen, damit Sie das Thema im Kontext von AEM vollständig verstehen können.
+Es stehen Ihnen bereits verschiedene Journey zur Dokumentation zur Verfügung. Da jede Tour als Erzählung konzipiert ist, sollten Sie mit der Einleitung beginnen und sie bis zum Ende lesen, damit Sie das Thema im Kontext von AEM vollständig verstehen können.
 
 | Tour | Beschreibung |
 |---|---|

@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 68%
+source-wordcount: '1074'
+ht-degree: 66%
 
 ---
 
@@ -73,7 +73,7 @@ Sie können die Werte von Objekten im verzögert geladenen Fragment als global m
 
 Einige der folgenden Einschränkungen, Empfehlungen und wichtigen Aspekte sind beim Arbeiten mit verzögertem Laden zu beachten:
 
-* Bei umfangreichen Formularen wird empfohlen, XSD-schemabasierte statt XFA-basierte adaptive Formulare für die Konfiguration von verzögertem Laden zu verwenden. Die Leistungsverbesserung aufgrund von verzögertem Laden ist in XFA-basierten adaptiven Formularen verhältnismäßig geringer als in XSD-basierten adaptiven Formularen.
+* Adobe empfiehlt die Verwendung von XSD-schemabasierten adaptiven Forms anstelle von XFA-basiertem adaptiven Forms zum Konfigurieren von verzögertem Laden auf großen Formularen. Die Leistungsverbesserung aufgrund von verzögertem Laden ist in XFA-basierten adaptiven Formularen verhältnismäßig geringer als in XSD-basierten adaptiven Formularen.
 * Konfigurieren Sie kein verzögertes Laden für Fragmente in einem adaptiven Formular, die das Layout **[!UICONTROL Responsive – alles auf einer Seite ohne Navigation]** für den Stammbereich verwenden. Aufgrund der Konfiguration des responsiven Layouts werden in einem adaptiven Formular alle Fragmente gleichzeitig geladen. Dies kann ebenfalls die Performance beeinträchtigen.
 * Es wird empfohlen, verzögertes Laden nicht für Fragmente im ersten Bereich, der beim Laden des adaptiven Formulars angezeigt wird, zu konfigurieren.
 * Verzögertes Laden wird für bis zu zwei Ebenen in der Fragmenthierarchie unterstützt.

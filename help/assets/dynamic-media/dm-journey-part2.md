@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '2872'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '2870'
+ht-degree: 99%
 
 ---
 
@@ -66,7 +66,7 @@ Dynamic Media verfügt über zahlreiche Bildverarbeitungsparameter, mit denen Si
 
 Versuchen Sie jetzt, dem Bild der Uhr einen Rotationsparameter hinzuzufügen. Geben Sie am Ende des URL-Pfads, unmittelbar nach `wid=1000`, `&rotate=90` ein, und drücken Sie die **[!UICONTROL Eingabetaste]**. [Jetzt ausprobieren](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target="_blank"}.
 
-Die Uhr ist immer noch leicht nach links geneigt. Ändern Sie den Drehwert von `90` nach `92`und drücken Sie dann die **[!UICONTROL Eingabetaste]**. [Probieren Sie es jetzt aus](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9).{target="_blank"}
+Die Uhr ist immer noch leicht nach links geneigt. Ändern Sie den Drehwert von `90` nach `92`und drücken Sie dann die **[!UICONTROL Eingabetaste]**. [Probieren Sie es jetzt aus](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9).{target="_blank"}.
 
 Auch hier wird in dem Moment, in dem Sie die **[!UICONTROL Eingabetaste]** drücken, fast augenblicklich eine neue Ausgabedarstellung der Uhr erzeugt. Sie können die Leistung, die Sie erhalten, nachvollziehen, wenn Sie verstehen, dass Dynamic Media an einem arbeitsreichen Wochenende oder an einem großen Feiertag mehr als 800.000 Bildanfragen _pro Sekunde_ liefern kann.
 
@@ -83,7 +83,7 @@ Stellen Sie sich vor, wie der Creative Director sich die Bilder anschaut und sag
 
 _„Bei dieser Aufnahme wollte ich unbedingt, dass der große Zeiger auf die Vier und der kleine Zeiger auf die 1 zeigt, damit das Zifferblatt besser zu erkennen ist.“_
 
-Das Kreativteam müsste all diese neuen statischen Bilder erneut aufnehmen.
+Das Kreativteam müsste alle neuen statischen Bilder erneut erstellen.
 
 Mit Dynamic Media können Sie jedoch, wenn Sie verschiedene Bildvorgaben haben, diese Bilder überall dort verwenden, wo Sie sie benötigen. Mit den Bildvorgaben werden Standards durchgesetzt.
 

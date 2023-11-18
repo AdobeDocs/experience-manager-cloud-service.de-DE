@@ -2,10 +2,10 @@
 title: Efforless Bulk PDF Creation - Master the Art with Batch Processing - Ihr Selbsthilfehandbuch zum Generieren von Millionen von PDF-Dokumenten!
 description: Wie erstelle ich markenorientierte und personalisierte Kommunikation?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1735'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -162,7 +162,7 @@ Die Antwort der Statusanfrage enthält den Statusabschnitt. Sie enthält Details
 
 Nach Abschluss des Auftrags werden die generierten Dokumente im Ordner `success` an dem in der Batch-Datenspeicherkonfiguration angegebenen Zielspeicherort gespeichert. Wenn Fehler auftreten, erstellt der Service einen Ordner `failure`. Er enthält Informationen über die Art und den Grund von Fehlern.
 
-Sehen wir uns ein Beispiel an: Angenommen, es gibt eine Eingabedatendatei `record1.xml` und zwei Ausgabetypen: `PDF` und `PCL`. Dann enthält das Zielverzeichnis zwei Unterordner, `pdf` und `pcl`, einen für jeden Ausgabetyp. Nehmen wir an, die PDF-Generierung ist erfolgreich, dann enthält der Unterordner `pdf` den Unterordner `success`, der wiederum das eigentliche generierte PDF-Dokument `record1.pdf` enthält. Nehmen wir an, dass die PCL-Generierung fehlgeschlagen ist. Anschließend enthält der Unterordner `pcl` einen Unterordner `failure`, der wiederum eine Fehlerdatei `record1.error.txt` enthält, das Details zum Fehler enthält. Darüber hinaus enthält der Zielspeicherort einen temporären Ordner mit dem Namen `__tmp__`, der bestimmte Dateien enthält, die während der Batch-Ausführung erforderlich sind. Dieser Ordner kann gelöscht werden, wenn keine aktiven Batch-Vorgänge vorhanden sind, die auf den Zielordner verweisen.
+Sehen wir uns ein Beispiel an: Angenommen, es gibt eine Eingabedatendatei `record1.xml` und zwei Ausgabetypen: `PDF` und `PCL`. Dann enthält das Zielverzeichnis zwei Unterordner, `pdf` und `pcl`, einen für jeden Ausgabetyp. Nehmen wir an, die PDF-Generierung ist erfolgreich, dann enthält der Unterordner `pdf` den Unterordner `success`, der wiederum das eigentliche generierte PDF-Dokument `record1.pdf` enthält. Nehmen wir an, dass die PCL-Generierung fehlgeschlagen ist. Anschließend enthält der Unterordner `pcl` einen Unterordner `failure`, der wiederum eine Fehlerdatei `record1.error.txt` enthält, das Details zum Fehler enthält. Außerdem enthält der Zielspeicherort einen temporären Ordner mit dem Namen `__tmp__` , der bestimmte Dateien enthält, die während der Batch-Ausführung erforderlich sind. Dieser Ordner kann gelöscht werden, wenn keine aktiven Batch-Vorgänge vorhanden sind, die auf den Zielordner verweisen.
 
 >[!NOTE]
 >

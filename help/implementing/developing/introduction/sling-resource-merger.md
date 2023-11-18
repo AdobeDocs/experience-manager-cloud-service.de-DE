@@ -2,10 +2,10 @@
 title: Verwenden des Sling Resource Merger in Adobe Experience Manager as a Cloud Service
 description: Der Sling Resource Merger bietet Dienste für den Zugriff auf Ressourcen und für das Zusammenführen von Ressourcen.
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 100%
+source-wordcount: '1157'
+ht-degree: 95%
 
 ---
 
@@ -188,7 +188,7 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
 
 * **Untergeordnete Elemente eines Knotens ausblenden (wobei die Eigenschaften des Knotens beibehalten werden)**
 
-  Der Knoten, seine Eigenschaften und seine untergeordneten Elemente sind in `/libs` definiert. Der Knoten und seine Eigenschaften sind in der `/apps`-Überlagerung/-Überschreibung erforderlich, aber einige oder alle der untergeordneten Knoten sind in der `/apps`-Überlagerung/-Überschreibung nicht erforderlich.
+  Der Knoten, seine Eigenschaften und seine untergeordneten Elemente sind in `/libs` definiert. Der Knoten und seine Eigenschaften sind in der `/apps` -Überlagerung/-Überschreibung, aber einige oder alle untergeordneten Knoten sind im `/apps` Überlagerung/Überschreibung.
 
    1. Erstellen Sie den entsprechenden Knoten unter `/apps`
    1. Erstellen Sie die Eigenschaft `sling:hideChildren`:
@@ -220,7 +220,7 @@ Der Sling Resource Merger umfasst zwei benutzerdefinierte Ressourcenanbieter �
 >
 >Beim Zugriff auf die Ressource sollten Sie den entsprechenden Einhängepunkt verwenden.
 >
->Dadurch wird sichergestellt, dass der Sling Resource Merger aufgerufen und die vollständig zusammengeführte Ressource ausgegeben wird (was das Volumen an Struktur verringert, das aus `/libs` repliziert werden muss).
+>Dadurch wird sichergestellt, dass der Sling Resource Merger aufgerufen und die vollständig zusammengeführte Ressource zurückgegeben wird (was die Struktur reduziert, die repliziert werden muss von `/libs`).
 
 * Überlagerung:
 

@@ -2,10 +2,10 @@
 title: Konfigurieren von DNS-Einstellungen
 description: Erfahren Sie, wie Sie DNS-Einstellungen für Ihre benutzerdefinierten Domänennamen konfigurieren.
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: 9fd7c17fce8c11809eabcc6387cbace0ebdc64a2
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 96%
+source-wordcount: '337'
+ht-degree: 92%
 
 ---
 
@@ -37,7 +37,7 @@ Melden Sie sich bei Ihrer Domain-Registrierungsstelle an und erstellen Sie einen
 
 Eine Apex-Domain ist eine benutzerdefinierte Domain, die keine Unter-Domain enthält, z. B. `example.com`. Eine Apex-Domain wird mit einem `A`-, `ALIAS`- oder `ANAME`-Datensatz über Ihren DNS-Anbieter konfiguriert. Die Apex-Domains müssen auf bestimmte IP-Adressen verweisen.
 
-Fügen Sie alle der folgenden `A`-Einträge über Ihren Domain-Anbieter zu den DNS-Einstellungen Ihrer Domain hinzu.
+Fügen Sie Folgendes hinzu: `A` -Einträge über Ihren Domain-Provider in die DNS-Einstellungen Ihrer Domain eintragen.
 
 * `A RECORD`
 

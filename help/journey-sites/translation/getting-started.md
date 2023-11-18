@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 95%
+source-wordcount: '1390'
+ht-degree: 89%
 
 ---
 
@@ -35,7 +35,7 @@ In diesem Dokument erfahren Sie, wie Sie mit der Übersetzung von Website-Inhalt
 
 ## Anforderungen und Vorbedingungen {#requirements-prerequisites}
 
-Bevor Sie mit der Übersetzung Ihrer AEM-Inhalte beginnen, müssen Sie eine Reihe von Anforderungen erfüllen.
+Es gibt mehrere Voraussetzungen, bevor Sie mit der Übersetzung Ihrer AEM beginnen.
 
 ### Kenntnisse {#knowledge}
 
@@ -65,7 +65,7 @@ Die Sites-Konsole bietet einen Überblick über die Struktur Ihrer Inhalte, soda
 
 So greifen Sie auf die Sites-Konsole zu:
 
-1. Klicken oder tippen Sie im globalen Navigationsmenü auf **Navigation** > **Sites**.
+1. Wählen Sie im globalen Navigationsmenü die Option **Navigation** > **Sites**.
 1. Die Sites-Konsole wird auf der obersten Ebene Ihrer Inhalte geöffnet.
 1. Stellen Sie sicher, dass die Option **Spaltenansicht** mithilfe der Ansichtsauswahl oben rechts im Fenster ausgewählt ist.
 
@@ -75,7 +75,7 @@ So greifen Sie auf die Sites-Konsole zu:
 
    ![Inhaltshierarchie](assets/sites-console-hierarchy.png)
 
-1. Durch Tippen oder Klicken auf das Kontrollkästchen eines Elements in einer Spalte wird dieses Element ausgewählt, und die Details des ausgewählten Elements werden in der Spalte rechts angezeigt. Außerdem wird in der Symbolleiste darüber eine Reihe von Aktionen angezeigt, die für das ausgewählte Element verfügbar sind.
+1. Durch Tippen oder Klicken auf das Kontrollkästchen eines Elements in einer Spalte wird dieses Element ausgewählt, die Details des ausgewählten Elements werden rechts in der Spalte angezeigt und es werden mehrere Aktionen angezeigt, die für das ausgewählte Element in der Symbolleiste oben verfügbar sind.
 
    ![Inhaltsauswahl](assets/sites-console-selection.png)
 
@@ -97,7 +97,7 @@ In der Sites-Konsole können Sie durch Ihren Inhalt navigieren und einen Überbl
 
 So bearbeiten Sie eine Seite:
 
-1. Verwenden Sie die Sites-Konsole, um eine Seite zu suchen und auszuwählen. Denken Sie daran, dass Sie auf das Kontrollkästchen einer Einzelseite tippen oder klicken müssen, um sie auszuwählen.
+1. Verwenden Sie die Sites-Konsole, um eine Seite zu suchen und auszuwählen. Beachten Sie, dass Sie das Kontrollkästchen einer einzelnen Seite aktivieren müssen, um sie auszuwählen.
 
    ![Auswahl einer zu bearbeitenden Seite](assets/sites-editor-select-page.png)
 

@@ -2,10 +2,10 @@
 title: Einführung in benutzerdefinierte Domain-Namen
 description: Mit der Benutzeroberfläche von Cloud Manager können Sie per Self-Service eine benutzerdefinierte Domain hinzufügen, um Ihre Site mit einem eindeutigen, markenspezifischen Namen zu identifizieren.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 89%
+source-wordcount: '753'
+ht-degree: 86%
 
 ---
 
@@ -46,7 +46,7 @@ In einer Umgebung können Sie beide Domänen im von AEM verwalteten CDN und in I
 
 ## Workflow {#workflow}
 
-Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktion zwischen dem DNS-Service und Cloud Manager. Aus diesem Grund ist eine Reihe von Schritten zum Installieren, Konfigurieren und Überprüfen benutzerdefinierter Domain-Namen erforderlich. In der folgenden Tabelle finden Sie einen Überblick über die erforderlichen Schritte, einschließlich der Schritte, die bei häufigen Fehlern durchgeführt werden müssen.
+Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktion zwischen dem DNS-Service und Cloud Manager. Aus diesem Grund sind mehrere Schritte erforderlich, um benutzerdefinierte Domänennamen zu installieren, zu konfigurieren und zu überprüfen. In der folgenden Tabelle finden Sie einen Überblick über die erforderlichen Schritte, einschließlich der Schritte, die bei häufigen Fehlern durchgeführt werden müssen.
 
 | Schritt | Beschreibung | Verantwortung | Weitere Informationen |
 |--- |--- |--- |---|
@@ -64,9 +64,9 @@ Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktio
 >
 >In der Regel ist das Einrichten benutzerdefinierter Domänennamen mit AEM as a Cloud Service ein einfacher Prozess. Gelegentlich kann es jedoch zu Problemen mit der Domain-Domain-Delegierung kommen, deren Behebung bis zu 1-2 Werktage dauern kann. Daher wird dringend empfohlen, die Domains rechtzeitig vor dem Tag ihrer Live-Schaltung zu installieren. Weitere Informationen finden Sie im Dokument [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
-## Beschränkungen {#limitations}
+## Einschränkungen {#limitations}
 
-Die Verwendung benutzerdefinierter Domain-Namen mit AEMaaCS unterliegt einer Reihe von Beschränkungen.
+Die Verwendung benutzerdefinierter Domänennamen mit AEMaaCS unterliegt verschiedenen Einschränkungen.
 
 * Benutzerdefinierte Domänennamen werden in Cloud Manager für Veröffentlichungs- und Vorschau-Services für Sites-Programme unterstützt. Benutzerdefinierte Domänen für Autoren-Services werden nicht unterstützt.
 * Jede Cloud Manager-Umgebung kann bis zu 500 benutzerdefinierte Domänen pro Umgebung hosten.

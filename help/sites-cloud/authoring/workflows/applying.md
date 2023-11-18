@@ -1,17 +1,17 @@
 ---
 title: Anwenden von Workflows auf Seiten
-description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Aktionen auszuführen. Es ist auch möglich, mehrere Workflows anzuwenden.
+description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten zu agieren. Es ist auch möglich, mehrere Workflows anzuwenden.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 93%
+source-wordcount: '654'
+ht-degree: 83%
 
 ---
 
 # Anwenden von Workflows auf Seiten {#applying-workflows-to-pages}
 
-Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Maßnahmen zu ergreifen. Es ist auch möglich, mehrere Workflows anzuwenden.
+Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten zu agieren. Es ist auch möglich, mehrere Workflows anzuwenden.
 
 Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
 
@@ -116,7 +116,7 @@ Details können Sie angeben wie folgt:
 
 1. Im Schritt **Umfang** können Sie Folgendes auswählen:
 
-   * **Inhalt hinzufügen**, um den [Pfad-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) zu öffnen und zusätzliche Ressourcen auszuwählen; im Browser klicken/tippen Sie auf **Auswählen**, um den Inhalt zur Workflow-Instanz hinzuzufügen.
+   * **Inhalt hinzufügen** , um die [Pfad-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) und wählen Sie zusätzliche Ressourcen aus. Wählen Sie im Browser die Option **Auswählen** , um den Inhalt zur Workflow-Instanz hinzuzufügen.
 
    * Eine vorhandene Ressource, um weitere Aktionen zu sehen:
 

@@ -2,10 +2,10 @@
 title: Implementieren eines benutzerdefinierten Prädikat-Auswerters für den Query Builder
 description: Der Query Builder in AEM bietet eine einfache, anpassbare Möglichkeit, das Inhalts-Repository abzufragen.
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '668'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '667'
+ht-degree: 97%
 
 ---
 
@@ -101,7 +101,7 @@ Das Gruppieren von Metadatenprädikaten einer Replikation mit einem benutzerdefi
 >
 >Die Einrichtung neuer AEM-Projekte, einschließlich der Verwendung von Maven, wird im [WKND-Tutorial](develop-wknd-tutorial.md) ausführlich erklärt.
 
-Sie müssen zunächst die Maven-Abhängigkeiten Ihres Projekts aktualisieren. `PredicateEvaluator` ist Teil des `cq-search`-Artefakts und muss zur POM-Datei von Maven hinzugefügt werden.
+Sie müssen zunächst die Maven-Abhängigkeiten Ihres Projekts aktualisieren. Die `PredicateEvaluator` ist Teil der `cq-search` -Artefakt, sodass es zu Ihrer Maven-Pom-Datei hinzugefügt werden muss.
 
 >[!NOTE]
 >

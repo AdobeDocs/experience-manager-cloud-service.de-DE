@@ -2,9 +2,9 @@
 title: Benutzerzuordnung und Prinzipalmigration
 description: Überblick über Benutzerzuordnung und Hauptmigration in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 2f5eeb0333cee13b12edefd0f95541a891e30960
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1004'
 ht-degree: 45%
 
 ---
@@ -34,7 +34,7 @@ Das Content Transfer Tool und Cloud Acceleration Manager migrieren alle Prinzipa
 AEM-Benutzende können entsprechenden Adobe IMS-Benutzenden mit derselben E-Mail-Adresse zugeordnet werden.  Diese Zuordnung kann automatisch in der CTT erfolgen (während des Extraktionsschritts) und ob sie abgeschlossen ist oder nicht, kann durch einen Umschalter gesteuert werden, bevor die Extraktion gestartet wird. Die Standardeinstellung des Umschalters kann von Benutzenden beim Starten der Extraktion überschrieben werden.
 
 * Wenn es sich bei dem Quellsystem um eine Authoring-Instanz handelt, ist die Zuordnungsoption standardmäßig _eingeschaltet_, da dies der empfohlene Prozess ist.
-* Wenn das Quellsystem eine Veröffentlichungsinstanz ist, können Sie die Zuordnung standardmäßig vornehmen. _off_, da Benutzer normalerweise nicht migriert oder in Veröffentlichungsinstanzen verwendet werden oder wenn sie verwendet werden, wird normalerweise ein anderes Authentifizierungssystem (d. h. nicht IMS) für sie verwendet.
+* Wenn das Quellsystem eine Veröffentlichungsinstanz ist, können Sie die Zuordnung standardmäßig vornehmen. _off_, da Benutzer normalerweise nicht migriert oder in Veröffentlichungsinstanzen verwendet werden; oder wenn sie verwendet werden, wird normalerweise ein anderes Authentifizierungssystem (d. h. nicht IMS) für sie verwendet.
 
 Unabhängig davon, ob Benutzer während der Extraktion zugeordnet werden, werden sie zusammen mit den Gruppen bei der Erfassung in das Cloud-System migriert, wenn sie mit Inhalten verknüpft sind, die migriert werden.
 

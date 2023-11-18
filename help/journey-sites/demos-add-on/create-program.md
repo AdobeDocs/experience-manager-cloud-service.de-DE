@@ -2,10 +2,10 @@
 title: Erstellen eines Programms
 description: Erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um das Add-on bereitzustellen.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 42%
+source-wordcount: '696'
+ht-degree: 39%
 
 ---
 
@@ -46,30 +46,30 @@ Nach der Anmeldung bei Cloud Manager können Sie ein Sandbox-Programm für Ihre 
 
    ![Übersicht über Cloud Manager](assets/cloud-manager.png)
 
-1. Tippen oder klicken oben rechts im Fenster Sie auf **Programm hinzufügen**.
+1. Auswählen **Programm hinzufügen** oben rechts im Fenster.
 
 1. Im **Erstellen wir Ihr Programm** dialog:
 
    1. Geben Sie einen **Programmnamen** zur Beschreibung Ihres Programms an.
-   1. Tippen oder klicken Sie auf **Sandbox einrichten** für Ihr **Programmziel**.
-   1. Tippen oder klicken Sie auf **Weiter**.
+   1. Auswählen **Sandbox einrichten** für Ihre **Programmziel**
+   1. Klicken Sie auf **Weiter**.
 
    ![Dialogfeld „Programm erstellen“](assets/create-program.png)
 
 1. Im **Sandbox einrichten** im Dialogfeld **Lösungen und Add-ons** -Tabelle, erweitern Sie die **Sites** durch Tippen oder Klicken auf einen Eintrag in der Liste und dann **Referenz-Demos**.
 
-   * Wenn Sie auch Demos für AEM Screens erstellen möchten, überprüfen Sie die **Screens** in der Liste. Tippen oder klicken Sie auf **Aktualisieren**.
+   * Wenn Sie auch Demos für AEM Screens erstellen möchten, überprüfen Sie die **Screens** in der Liste. Auswählen **Aktualisieren**.
 
    ![Auswählen des Add-ons für eine Referenzdemo bei der Programmeinrichtung](assets/select-reference-demo-add-on.png)
 
 
-1. Tippen oder klicken **Erstellen** und Cloud Manager beginnt mit der Einrichtung Ihres Sandbox-Programms. Sie gelangen zum Bildschirm mit der Programmübersicht. Eine kurze Bannerbenachrichtigung zeigt an, dass der Prozess gestartet wurde. Auf der Übersichtsseite für Ihr neues Programm wurde eine Karte hinzugefügt. Der Einrichtungsprozess dauert einige Minuten.
+1. Auswählen **Erstellen** und Cloud Manager beginnt mit der Einrichtung Ihres Sandbox-Programms. Sie gelangen zum Bildschirm mit der Programmübersicht. Eine kurze Bannerbenachrichtigung zeigt an, dass der Prozess gestartet wurde. Auf der Übersichtsseite für Ihr neues Programm wurde eine Karte hinzugefügt. Der Einrichtungsprozess dauert einige Minuten.
 
-1. Sobald die Einrichtung abgeschlossen ist, zeigt die Karte für die Umgebung auf der Übersichtsseite ihren Status als **Bereit**. Tippen oder klicken Sie auf die Karte, damit Sie die Umgebung öffnen können.
+1. Sobald die Einrichtung abgeschlossen ist, zeigt die Karte für die Umgebung auf der Übersichtsseite ihren Status als **Bereit**. Wählen Sie die Karte aus, damit Sie die Umgebung öffnen können.
 
    ![Erstellung des Programms abgeschlossen](assets/ready.png)
 
-1. Ihre Umgebung ist bereit und das Add-on ist jetzt als Option aktiviert, aber die Inhalte der Demo müssen in bereitgestellt AEM werden, damit sie verfügbar sind. Tippen oder klicken Sie dazu auf die Suchschaltfläche neben der Pipeline In der **Pipelines** Karte und wählen Sie **Ausführen**.
+1. Ihre Umgebung ist bereit und das Add-on ist jetzt als Option aktiviert, aber die Inhalte der Demo müssen in bereitgestellt AEM werden, damit sie verfügbar sind. Wählen Sie dazu die Suchschaltfläche neben der Pipeline In der **Pipelines** Karte und wählen Sie **Ausführen**.
 
    ![Starten](assets/run.png)
 

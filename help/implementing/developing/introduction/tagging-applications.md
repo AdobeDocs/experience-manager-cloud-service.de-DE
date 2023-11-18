@@ -2,10 +2,10 @@
 title: Einbinden von Tagging in AEM-Programme
 description: Programmatisch mit Tags oder erweiterten Tags innerhalb eines benutzerdefinierten AEM-Programms arbeiten
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 100%
+source-wordcount: '758'
+ht-degree: 95%
 
 ---
 
@@ -51,7 +51,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Abrufen eines Tag-Objekts {#retrieving-a-tag-object}
 
-Ein `Tag` kann über den `TagManager` abgerufen werden, indem entweder ein vorhandenes Tag aufgelöst oder ein neues erstellt wird:
+A `Tag` kann über die `TagManager`, indem Sie entweder ein vorhandenes Tag auflösen oder eines erstellen:
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -168,4 +168,4 @@ Finnisch ist jetzt im Tag-Dialogfeld der Seiteneigenschaften und im Dialogfeld *
 
 >[!NOTE]
 >
->Die neue Sprache muss eine der von AEM erkannten Sprachen sein, d. h. sie muss als Knoten unter `/libs/wcm/core/resources/languages` verfügbar sein.
+>Die neue Sprache muss eine der AEM anerkannten Sprachen sein. Das heißt, es muss als Knoten unter verfügbar sein. `/libs/wcm/core/resources/languages`.

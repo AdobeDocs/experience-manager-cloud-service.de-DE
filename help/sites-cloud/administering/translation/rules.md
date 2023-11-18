@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Übersetzungsregeln zu übersetzende Inhalte iden
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 99%
+source-wordcount: '1288'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ Die in diesem Dokument beschriebenen Übersetzungsregeln gelten nur dann für In
 
 Wenn die Option **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** aktiv ist, verwendet AEM das Feld **Übersetzbar** bei [Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties), um zu bestimmen, ob das Feld übersetzt werden soll, und um automatisch Übersetzungsregeln zu erstellen. Diese Option ersetzt ggf. von Ihnen erstellte Übersetzungsregeln und erfordert keine Eingriffe oder zusätzlichen Schritte.
 
-Wenn Sie Übersetzungsregeln für die Übersetzung Ihrer Inhaltsfragmente verwenden möchten, muss die Option **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** in der Framework-Konfiguration für die Übersetzungsintegration deaktiviert sein und Sie müssen die unten beschriebenen Schritte ausführen, um Ihre Regeln zu erstellen.
+Wenn Sie Übersetzungsregeln für die Übersetzung Ihrer Inhaltsfragmente verwenden möchten, wird die **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** -Option in der Framework-Konfiguration für die Übersetzungsintegration muss deaktiviert sein und Sie müssen die unten beschriebenen Schritte ausführen, um Ihre Regeln zu erstellen.
 
 ## Übersicht {#overview}
 
@@ -167,7 +167,7 @@ In der Benutzeroberfläche für Übersetzungsregeln können Sie:
 
    ![Übersetzungskontext hinzufügen](../assets/add-translation-context.png)
 
-1. Verwenden Sie den Pfad-Browser, um den erforderlichen Kontext auszuwählen, und tippen oder klicken Sie zum Speichern auf die Schaltfläche **Bestätigen**.
+1. Verwenden Sie den Pfad-Browser, um den erforderlichen Kontext auszuwählen und die **Bestätigen** Schaltfläche zum Speichern.
 
    ![Kontext auswählen](../assets/select-context.png)
 

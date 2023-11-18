@@ -2,10 +2,10 @@
 title: Konfigurationen und der Konfigurations-Browser
 description: Machen Sie sich mit Adobe Experience Manager-Konfigurationen (AEM) und der Verwaltung von Workspace-Einstellungen in AEM vertraut.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 60%
+source-wordcount: '1487'
+ht-degree: 55%
 
 ---
 
@@ -68,8 +68,8 @@ Mit dem Konfigurations-Browser kann ein Administrator auf einfache Weise Zugriff
 
 Es ist einfach, eine Konfiguration in AEM mithilfe des Konfigurationsbrowsers zu erstellen.
 
-1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Tools** > **Allgemein** > **Konfigurationsbrowser** aus.
-1. Tippen oder klicken Sie auf **Erstellen**.
+1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü die Option **Instrumente** > **Allgemein** > **Konfigurationsbrowser**.
+1. Wählen Sie **Erstellen** aus.
 1. Geben Sie einen **Titel** und einen **Namen** für Ihre Konfiguration an.
 
    ![Erstellen einer Konfiguration](assets/configuration-create.png)
@@ -83,7 +83,7 @@ Es ist einfach, eine Konfiguration in AEM mithilfe des Konfigurationsbrowsers zu
    * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [Bearbeitbare Vorlagen](/help/sites-cloud/authoring/features/templates.md)
    * verschiedene Cloud-Konfigurationen
-1. Tippen oder klicken Sie auf **Erstellen**.
+1. Wählen Sie **Erstellen** aus.
 
 >[!TIP]
 >
@@ -93,7 +93,7 @@ Es ist einfach, eine Konfiguration in AEM mithilfe des Konfigurationsbrowsers zu
 
 Wenn Sie Konfigurationen als Workspace betrachten, können Zugriffsrechte für diese Konfigurationen festgelegt werden, um zu erzwingen, wer auf diesen Workspace zugreifen darf und wer nicht.
 
-1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Tools** > **Allgemein** > **Konfigurationsbrowser** aus.
+1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü die Option **Instrumente** > **Allgemein** > **Konfigurationsbrowser**.
 1. Wählen Sie die Konfiguration aus, die Sie bearbeiten möchten, und klicken Sie auf **Eigenschaften** in der Symbolleiste.
 1. Wählen Sie zusätzliche Funktionen aus, die Sie der Konfiguration hinzufügen möchten.
 
@@ -110,7 +110,7 @@ Wenn Sie Konfigurationen als Workspace betrachten, können Zugriffsrechte für d
 1. Aktivieren Sie die Zugriffsoptionen, die einem oder mehreren ausgewählten Benutzern oder Rollen zugewiesen werden sollen, und klicken Sie auf **Hinzufügen**.
    ![Zugriffsrechte zu einer Konfiguration hinzufügen](assets/configuration-edit.png)
 1. Wiederholen Sie die Schritte, damit Sie Benutzer oder Rollen auswählen und bei Bedarf zusätzliche Zugriffsberechtigungen zuweisen können.
-1. Tippen oder klicken Sie auf **Speichern und schließen**, wenn Sie fertig sind.
+1. Auswählen **Speichern und schließen** wenn fertig.
 
 ## Konfigurationen als Entwickler {#configurations-developer}
 
@@ -196,9 +196,9 @@ Um dies bei der Konfigurationssuche zu unterstützen, verfügt AEM über einen V
 
 ### Verwenden von Konfigurationen {#using-configurations}
 
-Die Konfigurationen in AEM basieren auf kontextabhängigen Sling-Konfigurationen. Die Sling-Bundles bieten eine Dienst-API, mit der kontextabhängige Konfigurationen abgerufen werden können. Kontextabhängige Konfigurationen sind Konfigurationen, die sich auf eine Inhaltsressource oder einen Ressourcenbaum beziehen, wie [im vorherigen Beispiel beschrieben](#developer-example) wurde.
+Die Konfigurationen in AEM basieren auf kontextabhängigen Sling-Konfigurationen. Die Sling-Bundles bieten eine Dienst-API, mit der kontextabhängige Konfigurationen abgerufen werden können. Kontextabhängige Konfigurationen sind Konfigurationen, die sich auf eine Inhaltsressource oder eine Ressourcenstruktur beziehen, wie sie war [im vorherigen Beispiel beschrieben](#developer-example).
 
-Weitere Informationen zu kontextabhängigen Konfigurationen, Beispiele und deren Verwendung finden Sie in der [Sling-Dokumentation](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
+Weitere Informationen zu kontextsensitiven Konfigurationen, Beispielen und deren Verwendung finden Sie unter [Sling-Dokumentation.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 
 ### ConfMgr-Web-Konsole {#confmgr-web-console}
 

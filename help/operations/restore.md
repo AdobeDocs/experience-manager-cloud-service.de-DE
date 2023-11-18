@@ -2,10 +2,10 @@
 title: Wiederherstellung von Inhalten in AEM as a Cloud Service
 description: Erfahren Sie, wie Sie mithilfe von Cloud Manager AEM as a Cloud Service Inhalte aus einer Sicherungskopie wiederherstellen können.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 71%
+source-wordcount: '1158'
+ht-degree: 60%
 
 ---
 
@@ -21,7 +21,7 @@ Erfahren Sie, wie Sie mithilfe von Cloud Manager AEM as a Cloud Service Inhalte 
 >* Die Funktion ist nur in Entwicklungsumgebungen verfügbar.
 >* Die Inhaltswiederherstellung ist auf zwei pro Monat pro Programm beschränkt.
 >
->Weitere Informationen zum bestehenden Sicherungs- und Wiederherstellungssystem für AEM as a Cloud Service finden Sie im Dokument . [Sicherung und Wiederherstellung in AEM as a Cloud Service](/help/operations/backup.md)
+>Weitere Informationen zum bestehenden Sicherungs- und Wiederherstellungssystem für AEM as a Cloud Service finden Sie unter [Sicherung und Wiederherstellung in AEM as a Cloud Service](/help/operations/backup.md).
 
 ## Übersicht {#overview}
 
@@ -58,7 +58,7 @@ Bestimmen Sie zunächst den Zeitrahmen des Inhalts, den Sie wiederherstellen mö
 
    * Alternativ können Sie auch direkt zur Registerkarte **Inhalt wiederherstellen** auf der Seite mit den Umgebungsdetails einer bestimmten Umgebung navigieren.
 
-1. Wählen Sie zunächst auf der Registerkarte **Inhalt wiederherstellen** der Seite mit den Umgebungsdetails den Zeitrahmen der Wiederherstellung unter der Dropdown-Liste **Wiederherstellungszeit**.
+1. Im **Inhalt wiederherstellen** auf der Seite mit den Umgebungsdetails den Zeitrahmen der Wiederherstellung unter der **Wiederherstellungszeit** Dropdown-Liste.
 
    1. Wenn Sie **Letzte 24 Stunden** die Nachbarländer **Zeit** -Feld können Sie die genaue Zeit innerhalb der letzten 24 Stunden angeben, die wiederhergestellt werden sollen.
 
@@ -72,13 +72,13 @@ Bestimmen Sie zunächst den Zeitrahmen des Inhalts, den Sie wiederherstellen mö
 
    ![Verfügbare Sicherungskopien](assets/backup-available.png)
 
-1. Suchen Sie die Sicherungskopie, die Sie wiederherstellen möchten, indem Sie das Informationssymbol verwenden, um Informationen über die in dieser Sicherungskopie enthaltene Version des Codes und der AEM-Version anzuzeigen und die Auswirkungen einer Wiederherstellung bei der [Auswahl der Sicherungskopie](#choosing-the-right-backup) zu berücksichtigen.
+1. Suchen Sie mithilfe des Informationssymbols nach der Sicherung, die Sie wiederherstellen möchten, um Informationen zur Version des Codes und AEM Version anzuzeigen, die in dieser Sicherung enthalten sind, und berücksichtigen Sie die Auswirkungen einer Wiederherstellung, wenn [das Backup auswählen.](#choosing-the-right-backup)
 
    ![Sicherungsinformationen](assets/backup-info.png)
 
-   * Beachten Sie, dass der für die Wiederherstellungsoptionen angezeigte Zeitstempel auf der Zeitzone des Computers der Person beruht.
+   * Der für die Wiederherstellungsoptionen angezeigte Zeitstempel basiert alle auf der Zeitzone des Computers des Benutzers.
 
-1. Um den Wiederherstellungsprozess zu starten, klicken Sie auf das Symbol **Wiederherstellen** am rechten Ende der Zeile, die die wiederherzustellende Sicherungskopie darstellt.
+1. Klicken Sie auf **Wiederherstellen** -Symbol am rechten Ende der Zeile, die das Backup darstellt, das Sie wiederherstellen möchten, um den Wiederherstellungsprozess zu starten.
 
 1. Überprüfen Sie die Details im Dialogfeld **Inhalt wiederherstellen**, bevor Sie Ihre Anfrage durch Klicken auf **Wiederherstellen** bestätigen.
 

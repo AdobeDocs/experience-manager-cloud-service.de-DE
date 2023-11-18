@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die leistungsstarken Funktionen der Site-Le
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 95%
+source-wordcount: '583'
+ht-degree: 81%
 
 ---
 
@@ -38,7 +38,7 @@ Wenn die Site-Leiste in der Sites-Konsole angezeigt wird, wählen Sie das Stammv
 
 ![Herunterladen von Design-Quellen](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-Tippen oder klicken Sie auf **Design-Quellen herunterladen**, um eine lokale Kopie des Site-Designs als `.zip`-Datei zu Anpassungszwecken herunterzuladen.
+Auswählen **Themenquellen herunterladen** , um eine lokale Kopie des Site-Designs als `.zip` -Datei zu Anpassungszwecken.
 
 ## Herunterladen von Vorlagenressourcen {#downloading-template-resources}
 
@@ -48,7 +48,7 @@ Wenn Ihre Site auf einer Site-Vorlage basiert und die Site-Leiste in der Sites-K
 
 ![Herunterladen von Design-Quellen](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-Tippen oder klicken Sie auf die Schaltfläche oder die Schaltflächen unter der Überschrift **Zusätzliche Vorlagenressourcen herunterladen**, um eine lokale Kopie der verfügbaren Dateien herunterzuladen.
+Wählen Sie die Schaltfläche oder Schaltflächen unter der Überschrift aus. **Zusätzliche Vorlagenressourcen herunterladen** um eine lokale Kopie der verfügbaren Dateien herunterzuladen.
 
 ## Anzeigen und Ändern von Design-Versionen {#them-versions}
 
@@ -60,11 +60,11 @@ Wenn die Site-Leiste in der Sites-Konsole angezeigt wird, wählen Sie das Stammv
 
 Die aktuelle Version des Designs wird mit dem Commit-Hash und dem Zeitstempel der letzten Aktualisierung angezeigt.
 
-Tippen oder klicken **Version auswählen** , um frühere Versionen des Designs anzuzeigen.
+Auswählen **Version auswählen** , um frühere Versionen des Designs anzuzeigen.
 
 ![Auswahl der Design-Version](/help/sites-cloud/administering/assets/select-theme-versions.png)
 
-Tippen oder klicken Sie auf die Version, zu der Sie wechseln möchten, und tippen oder klicken Sie dann auf **Anwenden**, um den Wechsel zu vollziehen.
+Wählen Sie die Version aus, zu der Sie ändern möchten, und wählen Sie dann **Anwenden** , um die Änderung vorzunehmen.
 
 Wenn AEM erkennt, dass eine neuere Version des Designs über die Frontend-Pipeline bereitgestellt, aber nicht auf Ihre Site angewendet wurde, wird ein Benachrichtigungssymbol angezeigt.
 
@@ -78,7 +78,7 @@ Wenn Ihre Site nicht mit einer Site-Vorlage erstellt wurde, ist es nicht möglic
 
 Sie können die Frontend-Pipeline für Ihre Site jedoch über die Site-Leiste aktivieren.
 
-Wenn die Site-Leiste in der Sites-Konsole angezeigt wird, wählen Sie das Stammverzeichnis Ihrer Site aus, um Design-Informationen über die Site anzuzeigen, und tippen oder klicken Sie dann auf **Frontend-Pipeline aktivieren**.
+Wenn die Seitenleiste in der Sites-Konsole angezeigt wird, wählen Sie den Stamm Ihrer Site aus, um Designinformationen über die Site anzuzeigen, und wählen Sie dann **Front-End-Pipeline aktivieren**.
 
 ![Aktivieren der Frontend-Pipeline](/help/sites-cloud/administering/assets/enable-fep.png)
 

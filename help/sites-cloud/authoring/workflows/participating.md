@@ -2,10 +2,10 @@
 title: Teilnehmen an Workflows
 description: Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 93%
+source-wordcount: '1507'
+ht-degree: 86%
 
 ---
 
@@ -37,7 +37,7 @@ Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), w
    * Alle Aktionen, die dem momentanen Benutzer bzw. der Benutzerin für den aktuellen Workflow-Schritt zur Verfügung stehen, z. B. „Fertigstellen“, „Delegieren“ oder „Details anzeigen“.
    * Die Anzahl der Workflows, denen die Seite unterliegt. Sie haben folgende Möglichkeiten:
       * Die Pfeiltasten links/rechts verwenden, um durch die Statusinformationen der verschiedenen Workflows zu navigieren.
-      * Auf die tatsächliche Zahl klicken/tippen, um eine Dropdown-Liste aller anwendbaren Workflows zu öffnen, und dann den Workflow auswählen, der in der Statusleiste angezeigt werden soll.
+      * Wählen Sie auf der tatsächlichen Zahl aus, um eine Dropdown-Liste aller anwendbaren Workflows zu öffnen, und wählen Sie dann den Workflow aus, der in der Statusleiste angezeigt werden soll.
 
   ![Seite mit mehreren Workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
@@ -48,7 +48,7 @@ Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), w
   >
   >Aktionen werden dann angezeigt, wenn der aktuelle Benutzer bzw. die Benutzerin direkt am aktuellen Workflow-Schritt beteiligt sind.
 
-* Wenn die **Timeline** für die Ressource geöffnet ist, wird der Workflow-Schritt angezeigt. Wenn Sie auf das Warnbanner klicken/tippen, werden die verfügbaren Aktionen ebenfalls angezeigt:
+* Wenn die **Timeline** für die Ressource geöffnet ist, wird der Workflow-Schritt angezeigt. Wenn Sie im Warnungsbanner auswählen, werden auch die verfügbaren Aktionen angezeigt:
 
   ![Workflow in der Zeitleiste](/help/sites-cloud/authoring/assets/workflows-timeline.png)
 
@@ -73,7 +73,7 @@ Sie können einen Teilnehmerschritt wie folgt abschließen:
 Führen Sie die folgenden Schritte aus, um das Arbeitselement abzuschließen:
 
 1. Öffnen Sie den **[AEM-Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Wählen Sie das Workflow-Element aus, für das Sie eine Aktion ausführen möchten (tippen/klicken Sie auf die Miniatur).
+1. Wählen Sie das Workflow-Element aus, auf das Sie reagieren möchten (wählen Sie die Miniaturansicht aus).
 1. Wählen Sie in der Symbolleiste die Option **Fertig stellen** aus.
 1. Die **Arbeitselement abschließen** wird geöffnet. Wählen Sie in der Dropdown-Auswahl die Option **Nächster Schritt** und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
@@ -95,7 +95,7 @@ Sie können auch die Zeitleiste verwenden, um einen Schritt abzuschließen und z
 
    ![Fertigstellen eines Schritts](/help/sites-cloud/authoring/assets/workflows-timeline-completing.png)
 
-1. Klicken/tippen Sie auf das Warnbanner, um die verfügbaren Aktionen anzuzeigen. Wählen Sie **Voranbringen**:
+1. Wählen Sie das Warnungsbanner aus, um verfügbare Aktionen anzuzeigen. Wählen Sie **Voranbringen**:
 
    ![Schritt voranbringen](/help/sites-cloud/authoring/assets/workflows-timeline-advance.png)
 
@@ -107,7 +107,7 @@ Sie können auch die Zeitleiste verwenden, um einen Schritt abzuschließen und z
 
 ### Delegieren eines Teilnehmerschritts {#delegating-a-participant-step}
 
-Wenn Ihnen ein Schritt zugewiesen wurde, Sie jedoch aus irgendeinem Grund die Aktion nicht ausführen können, können Sie den Schritt an eine andere Person oder Gruppe delegieren.
+Wenn Ihnen ein Schritt zugewiesen wurde, Sie jedoch aus irgendeinem Grund nicht handeln können, können Sie den Schritt an einen anderen Benutzer oder eine andere Gruppe delegieren.
 
 An welche Benutzenden delegiert werden kann, hängt davon ab, wem das Arbeitselement zugewiesen wurde:
 
@@ -132,7 +132,7 @@ Das Delegieren eines Teilnehmerschritts ist möglich:
 Gehen Sie folgendermaßen vor, um ein Arbeitselement zu delegieren:
 
 1. Öffnen Sie den **[AEM-Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Wählen Sie das Workflow-Element aus, für das Sie eine Aktion ausführen möchten (tippen/klicken Sie auf die Miniatur).
+1. Wählen Sie das Workflow-Element aus, auf das Sie reagieren möchten (wählen Sie die Miniaturansicht aus).
 1. Wählen Sie in der Symbolleiste die Option **Delegieren** aus.
 1. Das Dialogfeld wird geöffnet. Wählen Sie in der Dropdown-Auswahl die **Benutzenden** aus (dabei kann es sich auch um eine Gruppe handeln) und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
@@ -151,7 +151,7 @@ Gehen Sie folgendermaßen vor, um ein Arbeitselement zu delegieren:
 Sie können auch die Zeitleiste verwenden, um einen Schritt zu delegieren und/oder zuzuweisen:
 
 1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Zeitleiste** (oder öffnen Sie die **Zeitleiste** und wählen Sie die Seite aus).
-1. Klicken/tippen Sie auf das Warnbanner, um die verfügbaren Aktionen anzuzeigen. Wählen Sie **Bevollmächtigten ändern**:
+1. Wählen Sie das Warnungsbanner aus, um verfügbare Aktionen anzuzeigen. Wählen Sie **Bevollmächtigten ändern**:
 
    ![Schritt „Delegieren“](/help/sites-cloud/authoring/assets/workflows-delegate.png)
 
@@ -163,7 +163,7 @@ Sie können auch die Zeitleiste verwenden, um einen Schritt zu delegieren und/od
 
 ### Wechseln zu einem vorherigen Teilnehmerschritt {#performing-step-back-on-a-participant-step}
 
-Wenn Sie erkennen, dass ein Schritt oder eine Reihe von Schritten wiederholt werden muss, können Sie zu einem vorherigen Schritt zurückkehren. Auf diese Weise können Sie einen Schritt zur erneuten Verarbeitung auswählen, der zuvor im Workflow aufgetreten ist. Der Workflow kehrt zu dem von Ihnen angegebenen Schritt zurück und fährt dann dort fort.
+Wenn Sie feststellen, dass ein Schritt oder eine Reihe von Schritten wiederholt werden muss, können Sie zurücktreten. Auf diese Weise können Sie einen Schritt zur erneuten Verarbeitung auswählen, der zuvor im Workflow aufgetreten ist. Der Workflow kehrt zu dem von Ihnen angegebenen Schritt zurück und fährt dann dort fort.
 
 Bei dieser Aktion können Sie Folgendes angeben:
 
@@ -182,7 +182,7 @@ Das Wechseln zu einem vorherigen Teilnehmerschritt ist folgendermaßen möglich:
 Gehen Sie dazu folgendermaßen vor:
 
 1. Öffnen Sie den **[AEM-Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Wählen Sie das Workflow-Element aus, für das Sie eine Aktion ausführen möchten (tippen/klicken Sie auf die Miniatur).
+1. Wählen Sie das Workflow-Element aus, auf das Sie reagieren möchten (wählen Sie die Miniaturansicht aus).
 1. Wählen Sie **Schritt zurück** aus, um das Dialogfeld zu öffnen.
 1. Wählen Sie **Vorheriger Schritt** aus und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
@@ -201,7 +201,7 @@ Gehen Sie dazu folgendermaßen vor:
 Sie können auch die Zeitleiste verwenden, um zu einem vorherigen Schritt zurückzukehren:
 
 1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Zeitleiste** (oder öffnen Sie die **Zeitleiste** und wählen Sie die Seite aus).
-1. Klicken/tippen Sie auf das Warnbanner, um die verfügbaren Aktionen anzuzeigen. Wählen Sie **Zurücksetzen**:
+1. Wählen Sie das Warnungsbanner aus, um verfügbare Aktionen anzuzeigen. Wählen Sie **Zurücksetzen**:
 
    ![Schritt zurücksetzen](/help/sites-cloud/authoring/assets/workflows-roll-back.png)
 
@@ -243,7 +243,7 @@ Das Öffnen der Details der Arbeitselemente ist möglich:
 Gehen Sie folgendermaßen vor, um ein Workflow-Element zu öffnen und die Details anzusehen:
 
 1. Öffnen Sie den **[AEM-Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Wählen Sie das Workflow-Element aus, für das Sie eine Aktion ausführen möchten (tippen/klicken Sie auf die Miniatur).
+1. Wählen Sie das Workflow-Element aus, auf das Sie reagieren möchten (wählen Sie die Miniaturansicht aus).
 1. Wählen Sie **Öffnen** aus, um die Informationsregisterkarten zu öffnen.
 1. Wählen Sie bei Bedarf die geeignete Aktion aus, geben Sie etwaige Details ein und bestätigen Sie mit **OK** (oder **Abbrechen**).
 1. Mit **Speichern** oder **Abbrechen** schließen Sie das Dialogfeld.
@@ -264,7 +264,7 @@ Sie können sich Details zur Payload anzeigen lassen, die mit der Workflow-Insta
 Gehen Sie folgendermaßen vor, um die Payload und Ressourcen der Workflow-Instanz anzuzeigen:
 
 1. Öffnen Sie den **[AEM-Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Wählen Sie das Workflow-Element aus, für das Sie eine Aktion ausführen möchten (tippen/klicken Sie auf die Miniatur).
+1. Wählen Sie das Workflow-Element aus, auf das Sie reagieren möchten (wählen Sie die Miniaturansicht aus).
 1. Wählen Sie in der Symbolleiste **Nutzdaten anzeigen** aus, um den Dialog zu öffnen.
    * Da ein Workflow-Paket lediglich eine Sammlung von Referenzen auf Pfade innerhalb des Repositorys ist, können Sie die Einträge hier hinzuzufügen, entfernen oder anpassen, um zu ändern, was vom Workflow-Paket referenziert werden soll. Verwenden Sie die Komponente **Ressourcendefinition**, um neue Einträge hinzuzufügen.
 1. Mit den Links können die einzelnen Seiten geöffnet werden.

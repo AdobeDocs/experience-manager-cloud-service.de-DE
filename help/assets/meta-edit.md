@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 94%
+source-wordcount: '443'
+ht-degree: 69%
 
 ---
 
@@ -24,13 +24,13 @@ So bearbeiten Sie Metadaten:
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Wählen Sie in der Benutzeroberfläche von AEM Assets das Asset aus und klicken oder tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Eigenschaften anzeigen]**.
+   * Wählen Sie in der Assets-Benutzeroberfläche das Asset aus und wählen Sie die **[!UICONTROL Eigenschaften anzeigen]** in der Symbolleiste.
    * Wählen Sie die Schnellaktion **[!UICONTROL Eigenschaften anzeigen]** aus der Miniatur des Assets aus.
-   * Klicken oder tippen Sie auf der Asset-Seite auf das Symbol **[!UICONTROL Eigenschaften anzeigen]**.
+   * Wählen Sie auf der Asset-Seite **[!UICONTROL Eigenschaften anzeigen]** aus der Symbolleiste.
 
-   Auf der Asset-Seite werden alle Metadaten des Assets angezeigt. Diese Metadaten wurden beim Hochladen (Aufnehmen) in Adobe Experience Manager Assets automatisch extrahiert.
+   Auf der Asset-Seite werden die Metadaten des Assets angezeigt. Diese Metadaten wurden beim Hochladen (Aufnehmen) in Adobe Experience Manager Assets automatisch extrahiert.
 
-1. Nehmen Sie auf den verschiedenen Registerkarten bei Bedarf Änderungen an den Metadaten vor. Klicken oder tippen Sie anschließend in der Symbolleiste auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern. Klicken oder tippen Sie auf **[!UICONTROL Schließen]**, um zur Benutzeroberfläche von AEM Assets zurückzukehren.
+1. Nehmen Sie die gewünschten Änderungen an den Metadaten auf den verschiedenen Registerkarten vor und wählen Sie nach Abschluss **[!UICONTROL Speichern]** aus der Symbolleiste, um Ihre Änderungen zu speichern. Auswählen **[!UICONTROL Schließen]** , um zur Assets-Web-Oberfläche zurückzukehren.
 
    >[!NOTE]
    >
@@ -49,10 +49,10 @@ Weitere Informationen zur Bearbeitung von Metadatenschemata finden Sie unter [Be
 Sie können eigene Namespaces in Adobe Experience Manager hinzufügen. Es gibt vordefinierte Namespaces wie cq, jcr und sling. Sie können aber auch einen Namespace für Ihre Repository-Metadaten und die XML-Verarbeitung hinzufügen.
 
 1. Wechseln Sie zur Seite für die Verwaltung des Knotentyps *https://&lt;Host>:&lt;Port>/crx/explorer/nodetypes/index.jsp*.
-1. Klicken oder tippen Sie am oberen Rand der Seite auf **[!UICONTROL Namespaces]**. Die Seite zur Namespace-Verwaltung wird in einem Fenster angezeigt.
+1. Auswählen **[!UICONTROL Namespaces]** oben auf der Seite. Die Seite zur Namespace-Verwaltung wird in einem Fenster angezeigt.
 
-1. Um einen Namespace hinzuzufügen, klicken oder tippen Sie am unteren Rand auf **[!UICONTROL Neu]**.
-1. Geben Sie einen benutzerdefinierten Namespace gemäß der XML-Namespace-Konvention ein (ID in Form einer URI und verknüpftes Präfix für die ID). Klicken oder tippen Sie auf **[!UICONTROL Speichern]**.
+1. Um einen Namespace hinzuzufügen, wählen Sie **[!UICONTROL Neu]** unten.
+1. Geben Sie einen benutzerdefinierten Namespace in der XML-Namespace-Konvention an (geben Sie die ID in Form eines URI und ein verknüpftes Präfix für die ID an) und wählen Sie **[!UICONTROL Speichern]**.
 
 **Siehe auch**
 

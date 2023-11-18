@@ -4,10 +4,10 @@ description: Erfahren Sie, wie der Inhaltsfragment-Editor Markdown-Syntax verwen
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 73%
+source-wordcount: '578'
+ht-degree: 74%
 
 ---
 

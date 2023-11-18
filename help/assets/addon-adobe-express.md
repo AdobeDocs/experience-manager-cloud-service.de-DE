@@ -1,9 +1,10 @@
 ---
 title: AEM Assets-Add-on für Adobe Expreß
 description: Mit dem AEM Assets-Add-on für Adobe Expreß können Sie über die Adobe Expreß-Benutzeroberfläche direkt auf die in AEM Assets gespeicherten Assets zugreifen.
-source-git-commit: e9ff2f2b15642288e82ac6f900dc567231bf85c7
+exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ Führen Sie die folgenden Schritte aus, um das AEM Assets-Add-on zu Adobe Expre�
 
 1. Öffnen Sie die Adobe Expreß-Webanwendung.
 
-1. Öffnen Sie eine neue leere Arbeitsfläche, indem Sie eine neue Vorlage oder ein Projekt laden oder ein neues Asset erstellen.
+1. Öffnen Sie eine neue leere Arbeitsfläche, indem Sie eine neue Vorlage oder ein Projekt laden oder ein Asset erstellen.
 
 1. Klicks **[!UICONTROL Add-ons]** im linken Navigationsbereich verfügbar.
 
@@ -64,4 +65,3 @@ Nachdem Sie entsprechende Änderungen in die Express-Arbeitsfläche eingefügt h
 1. Klicks **[!UICONTROL Hochladen]** , um das Asset in AEM Assets hochzuladen.
 
    ![Speichern von Assets in AEM](assets/aem-assets-add-on-save.png)
-

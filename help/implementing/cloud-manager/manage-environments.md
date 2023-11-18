@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen
 description: Erfahren Sie mehr über die Arten von Umgebungen, die Sie erstellen können, und wie Sie sie für ein Cloud Manager-Projekt erstellen.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 532f3ac9450d34f3e2a168c04695bafde5a44c9f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2601'
-ht-degree: 85%
+source-wordcount: '2585'
+ht-degree: 83%
 
 ---
 
@@ -87,9 +87,9 @@ Wenn Sie eine Umgebung hinzufügen, können Sie zusätzlich zur primären Region
 1. Wenn Sie die Option **Zusätzliche Veröffentlichungsregionen hinzufügen** wählen, wird eine neue Dropdown-Option **Zusätzliche Veröffentlichungsregionen** angezeigt.
 1. Wählen Sie in der Dropdown-Liste **Zusätzliche Veröffentlichungsregionen** eine zusätzliche Region aus.
 1. Die ausgewählte Region wird unter der Dropdown-Liste hinzugefügt, um ihre Auswahl anzugeben.
-   * Tippen oder klicken Sie auf `X` neben der ausgewählten Region, um sie wieder abzuwählen.
+   * Wählen Sie die `X` neben dem ausgewählten Bereich, damit Sie die Auswahl aufheben können.
 1. Wählen Sie eine andere Region aus der Dropdown-Liste **Zusätzliche Veröffentlichungsregionen**, um eine weitere Region hinzuzufügen.
-1. Tippen oder klicken Sie auf **Speichern**, wenn Sie bereit sind, Ihre Umgebung zu erstellen.
+1. Auswählen **Speichern** wenn Sie bereit sind, Ihre Umgebung zu erstellen.
 
 ![Auswählen mehrerer Regionen](assets/select-multiple-regions.png)
 
@@ -115,7 +115,7 @@ Sie können auch zusätzliche Veröffentlichungsregionen entfernen. Sie können 
 
    ![Umgebung bearbeiten](assets/edit-environment.png)
 
-1. Tippen oder klicken Sie auf **Speichern**, um die Änderungen zu speichern.
+1. Auswählen **Speichern** , um die Änderungen zu speichern.
 
 Änderungen an der Produktionsumgebung gelten sowohl für die Produktions- als auch für die Staging-Umgebung. Änderungen an mehreren Veröffentlichungsregionen können nur in der Produktionsumgebung bearbeitet werden.
 
@@ -189,7 +189,7 @@ Alternativ können Sie über die **Umgebungen** Registerkarte.
 
 1. Im **Übersicht** Seite, wählen Sie die **Umgebungen** Registerkarte.
 
-1. Im **Umgebungen** im linken Navigationsbereich die Umgebung auswählen, die Sie abfragen möchten.
+1. Im **Umgebungen** wählen Sie im linken Navigationsbereich die Umgebung aus, die Sie abfragen möchten.
 
 1. Sobald eine Umgebung ausgewählt ist:
 
@@ -200,12 +200,12 @@ Alternativ können Sie über die **Umgebungen** Registerkarte.
 
 Wenn Probleme mit zusätzlichen Veröffentlichungsregionen gemeldet werden:
 
-1. Seien Sie bitte geduldig! Cloud Manager versucht fortlaufend, die Region wiederherzustellen, und kann jederzeit verfügbar sein.
-1. Wenn das Problem nach einigen Stunden besteht, können Sie den zusätzlichen Veröffentlichungsbereich entfernen und ihn (entweder dieselbe Region oder eine andere Region) erneut hinzufügen, um eine vollständige Bereitstellung Trigger.
+1. Sei geduldig! Cloud Manager versucht kontinuierlich, die Region wiederherzustellen, und kann jederzeit verfügbar sein.
+1. Wenn das Problem nach mehreren Stunden besteht, können Sie den zusätzlichen Veröffentlichungsbereich entfernen und ihn (entweder dieselbe Region oder eine andere Region) erneut hinzufügen, um eine vollständige Bereitstellung Trigger.
 
 Wie lange Sie darauf warten, dass sich das System von selbst erholt, bevor Sie zusätzliche Maßnahmen ergreifen, hängt von den Auswirkungen ab, die der Ausfall dieser Region auf Ihre Systeme hat.
 
-Beachten Sie, dass in jedem Fall [Der Traffic wird immer in die nächstgelegene Region weitergeleitet, die online ist.](/help/operations/additional-publish-regions.md) Wenn weiterhin Probleme auftreten, wenden Sie sich an die Adobe-Kundenunterstützung.
+In jedem Fall [Traffic wird immer in die nächstgelegene Region weitergeleitet, die online ist.](/help/operations/additional-publish-regions.md) Wenn weiterhin Probleme auftreten, wenden Sie sich an die Adobe-Kundenunterstützung.
 
 ## Aktualisieren von Umgebungen {#updating-dev-environment}
 
@@ -333,7 +333,7 @@ Die IP-Zulassungsliste muss in Cloud Manager vorhanden sein, damit sie auf eine 
 **So wenden Sie eine IP-Zulassungsliste an:**
 
 1. Navigieren Sie von der Registerkarte **Umgebungen** des Bildschirms **Überblick** des Programms zu der gewünschten Umgebung und dann zur Tabelle **IP-Zulassungslisten**.
-1. Verwenden Sie die Eingabefelder oben in der Tabelle der IP-Zulassungsliste, um die IP-Zulassungsliste und den Author- oder Publish-Service auszuwählen, auf die Sie sie anwenden möchten.
+1. Verwenden Sie die Eingabefelder oben in der Tabelle der IP-Zulassungslisten-Zulassungsliste, damit Sie die IP- und den Autoren- oder Veröffentlichungsdienst auswählen können, auf den Sie sie anwenden möchten.
 1. Klicken Sie auf **Anwenden** und bestätigen Sie Ihre Übermittlung.
 
 ### Aufheben der Anwendung einer IP-Zulassungsliste {#unapply-ip-allow-list}

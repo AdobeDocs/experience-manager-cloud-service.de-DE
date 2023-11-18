@@ -2,9 +2,9 @@
 title: Single Page Applications (SPAs) und Server-seitiges Rendering
 description: Die Verwendung von Server-seitigem Rendering (SSR) in Ihrer SPA kann das anfängliche Laden der Seite beschleunigen und dann das weitere Rendering an den Client weitergeben.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: 66c9e95f96c8ce181722488a34a175c80f6f917c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1517'
 ht-degree: 97%
 
 ---
@@ -51,7 +51,7 @@ In den folgenden Abschnitten wird erläutert, wie Sie mit Adobe I/O Runtime für
 
 >[!NOTE]
 >
->Cloud Manager unterstützt keine Bereitstellung in Adobe I/O Runtime. Daher muss Ihre eigene Infrastruktur eingerichtet werden, um SSR-Code in der Adobe I/O Runtime bereitzustellen.
+>Cloud Manager unterstützt keine Bereitstellung in Adobe I/O Runtime. Daher muss Ihre eigene Infrastruktur eingerichtet sein, um SSR-Code in der Adobe I/O Runtime bereitzustellen.
 
 ## Remote Renderer-Konfiguration {#remote-content-renderer-configuration}
 

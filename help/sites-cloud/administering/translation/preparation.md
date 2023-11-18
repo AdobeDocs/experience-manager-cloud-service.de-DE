@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie bei der Entwicklung mehrsprachiger Websites I
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 98%
+source-wordcount: '751'
+ht-degree: 86%
 
 ---
 
@@ -71,20 +71,20 @@ Um den Sprachstamm zu erstellen, erstellen Sie eine Seite und verwenden Sie eine
 * `<language-code>` - Der unterstützte Sprach-Code ist ein Code mit zwei Buchstaben gemäß ISO-639-1, zum Beispiel `en`.
 * `<language-code>_<country-code>` oder `<language-code>-<country-code>` – Der unterstützte Länder-Code ist ein Code mit zwei Groß- oder zwei Kleinbuchstaben gemäß ISO 3166, zum Beispiel `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen Website. Beispielsweise verfügt die Stammseite der französischen Sprachkopie der WKND-Website über `fr` als die Eigenschaft **Name**. Beachten Sie, dass die Eigenschaft **Name** als Name des Seitenknotens im Repository verwendet wird und daher den Pfad der Seite bestimmt (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
+Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen Website. Beispielsweise verfügt die Stammseite der französischen Sprachkopie der WKND-Website über `fr` als die Eigenschaft **Name**. Die **Name** -Eigenschaft wird als Name des Seitenknotens im Repository verwendet und bestimmt daher den Pfad der Seite (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. Navigieren Sie zu „Sites“.
-1. Klicken oder tippen Sie auf die Website, für die Sie eine Sprachkopie erstellen möchten.
-1. Klicken oder tippen Sie auf **Erstellen** und anschließend auf **Seite**.
+1. Wählen Sie die Site aus, für die Sie eine Sprachkopie erstellen möchten.
+1. Auswählen **Erstellen** und wählen Sie **Seite**.
 
    ![Seite erstellen](../assets/create-page.png)
 
-1. Wählen Sie die Seitenvorlage aus und klicken oder tippen Sie auf **Weiter**.
+1. Wählen Sie die Seitenvorlage aus und wählen Sie dann **Nächste**.
 1. Geben Sie in den Feldtyp **Name** den Länder-Code im Format `<language-code>` oder `<language-code>_<country-code>` ein, z. B. `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Geben Sie einen Titel für die Seite ein.
 
    ![Sprachstammseite erstellen](../assets/create-language-root.png)
 
-1. Klicken oder tippen Sie auf **Erstellen**. Klicken oder tippen Sie im Bestätigungsdialogfeld auf **Fertig**, um zur Sites-Konsole zurückzukehren, oder auf **Öffnen**, um die Sprachkopie zu öffnen.
+1. Wählen Sie **Erstellen**. Wählen Sie im Bestätigungsdialogfeld entweder **Fertig** zur Konsole &quot;Sites&quot;zurückzukehren oder **Öffnen** , um die Sprachkopie zu öffnen.
 
 ## Anzeigen des Status der Sprachstämme {#seeing-the-status-of-language-roots}
 
@@ -94,11 +94,11 @@ AEM hat eine Leiste **Verweise**, die eine Liste der erstellten Sprachstämme an
 
 Verwenden Sie die folgende Ansicht, um die Sprachkopien für eine Seite mithilfe der [Auswahlleiste](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) anzuzeigen.
 
-1. Wählen Sie in der Sites-Konsole eine Seite der Website aus und klicken oder tippen Sie auf **Verweise**.
+1. Wählen Sie in der Sites-Konsole eine Seite der Site aus und wählen Sie dann **Verweise**.
 
    ![Offene Verweise-Leiste](../assets/opening-references-rail.png)
 
-1. Klicken oder tippen Sie in der Verweise-Leiste auf **Sprachkopien**. In der Leiste werden die Sprachkopien der Website angezeigt.
+1. Wählen Sie in der Verweisleiste **Sprachkopien**. In der Leiste werden die Sprachkopien der Website angezeigt.
 
 ## Sprachkopien auf mehreren Ebenen {#multiple-levels}
 

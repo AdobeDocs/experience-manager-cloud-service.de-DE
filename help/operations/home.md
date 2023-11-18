@@ -3,10 +3,10 @@ title: Betrieb und Wartung von Adobe Experience Manager as a Cloud Service
 description: Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, wie z. B. Indizierungs- und Wartungsaufgaben, und erhalten Sie Antworten auf Ihre Fragen.
 landing-page-description: Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, wie z. B. Indizierungs- und Wartungsaufgaben, und erhalten Sie Antworten auf Ihre Fragen.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 100%
+source-wordcount: '400'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud 
 
 | Benutzerhandbuch | Beschreibung |
 |---|---|
-| [Übersicht](/help/overview/home.md) | In diesem Handbuch erhalten Sie einen einführenden Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie, Architektur usw. |
+| [Übersicht](/help/overview/home.md) | Dieses Handbuch bietet einen Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie, Architektur usw. |
 | [Versionshinweise](/help/release-notes/home.md) | Dieses Handbuch enthält wichtige Informationen zur neuesten Version von Experience Manager as a Cloud Service, einschließlich neuer, veralteter und entfernter Funktionen und bekannter Probleme. |
 | [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu Experience Manager as a Cloud Service. |
 | [Onboarding-Tour](/help/journey-onboarding/overview.md) | Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz. |

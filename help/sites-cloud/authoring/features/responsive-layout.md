@@ -2,10 +2,10 @@
 title: Responsives Layout
 description: AEM ermöglicht die Erstellung eines responsiven Layouts für Ihre Seiten
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 86%
+source-wordcount: '1731'
+ht-degree: 83%
 
 ---
 
@@ -45,7 +45,7 @@ Mit diesen responsiven Rastermechanismen können Sie:
 * Ausblenden von Komponenten für bestimmte Gerätelayouts.
 * Realisieren einer Spaltensteuerung.
 
-Je nach Projekt kann der Layout-Container als standardmäßiges Absatzsystem für Ihre Seiten oder als Komponente verwendet werden, die über den Komponenten-Browser zu Ihrer Seite hinzugefügt werden kann (oder beides).
+Je nach Projekt kann der Layout-Container als Standard-Absatzsystem für Ihre Seiten oder als Komponente verwendet werden, die über den Komponenten-Browser zu Ihrer Seite hinzugefügt werden kann (oder beides).
 
 >[!TIP]
 >
@@ -108,7 +108,7 @@ Wenn Sie z. B. das Gerät **iPhone 6 Plus** für die Emulation und das Layout a
 1. Um ein bestimmtes zu emulierendes Gerät auszuwählen, haben Sie folgende Möglichkeiten:
 
    * Verwenden Sie das Symbol „Gerät auswählen“ und wählen Sie aus einer Dropdown-Auswahl aus.
-   * Tippen/klicken Sie in der Emulator-Symbolleiste auf die Geräteanzeige.
+   * Wählen Sie die Geräteanzeige in der Emulator-Symbolleiste aus.
 
    ![Dropdown zum Auswählen des Geräts](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
@@ -143,7 +143,7 @@ Ein **Layout-Container** ist ein Absatzsystem mit folgenden Eigenschaften:
 
 ## Auswählen und Bearbeiten eines Layout-Containers (Bearbeitungsmodus) {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
-Einen Layout-Container können Sie wie andere Komponenten im **Bearbeitungsmodus** auswählen und anschließend bearbeiten (ausschneiden, kopieren, löschen):
+Wie bei anderen Komponenten können Sie einen Layout-Container auswählen und dann bearbeiten (ausschneiden, kopieren, löschen) (wenn Sie sich in **Bearbeiten** mode):
 
 >[!CAUTION]
 >
@@ -195,14 +195,14 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster ausführen:
   >
   >Wenn Sie die Größe von Komponenten wie **Bildern** ändern, bleiben die Proportionen und Seitenverhältnisse erhalten.
 
-* Klicken/tippen Sie auf eine Inhaltskomponente. Über die Symbolleiste können Sie:
+* Wählen Sie eine Inhaltskomponente aus. Über die Symbolleiste können Sie:
    * **Übergeordnet** - Ermöglicht die Auswahl der gesamten Layout-Container-Komponente, damit Aktionen für alle ausgeführt werden können.
    * **In neue Zeile verschieben**: Die Komponente wird abhängig von dem innerhalb des Rasters verfügbaren Platz in eine neue Zeile verschoben.
    * **Komponente ausblenden**: Die Komponente wird unsichtbar (sie kann über die Symbolleiste des Layout-Containers wiederhergestellt werden).
 
   ![Komponente ausblenden](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* In **Layout** -Modus können Sie auf die **Komponenten hierher ziehen** , um die gesamte Komponente auszuwählen. Für diesen Modus wird die Symbolleiste angezeigt.
+* In **Layout** -Modus können Sie die **Komponenten hierher ziehen** , um die gesamte Komponente auszuwählen. Für diesen Modus wird die Symbolleiste angezeigt.
 
   Die Symbolleiste bietet je nach Status der Layout-Komponente und der zugehörigen Komponenten unterschiedliche Optionen. Beispiel:
 

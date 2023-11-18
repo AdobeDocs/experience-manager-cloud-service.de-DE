@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente und die GraphQL-API als Head
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 93%
+source-wordcount: '1069'
+ht-degree: 89%
 
 ---
 
@@ -119,9 +119,9 @@ Nachdem Sie nun die beiden primären Abfragetypen ausgeführt haben, können Sie
 
 1. Definieren Sie die Elemente, die die Abfrage für das ausgewählte Inhaltsfragmentmodell enthalten soll. Geben Sie erneut eine linke geschweifte Klammer `{` ein und drücken Sie dann Strg+Leertaste oder Option+Leertaste, um eine AutoVervollständigen-Liste anzuzeigen. Wählen Sie aus den Optionen `items` aus.
 
-1. Tippen oder klicken Sie auf die Schaltfläche **Pretify**, um den Code automatisch zu formatieren, sodass er leichter zu lesen ist.
+1. Wählen Sie die **Pretify** -Schaltfläche, um Ihren Code automatisch zu formatieren, sodass er leichter zu lesen ist.
 
-1. Tippen oder klicken Sie nach Abschluss des Vorgangs oben links im Editor auf die Schaltfläche **Wiedergeben**, um die Abfrage auszuführen. Der Editor vervollständigt automatisch die `items`, die kurz gelb hervorgehoben werden, und die Abfrage wird ausgeführt.
+1. Wählen Sie nach Abschluss die **Play** Schaltfläche oben links im Editor, um die Abfrage auszuführen. Der Editor vervollständigt automatisch die `items`, die kurz gelb hervorgehoben werden, und die Abfrage wird ausgeführt.
 
 1. Die Ergebnisse werden im rechten Bereich neben dem Abfrage-Editor angezeigt.
 
@@ -177,7 +177,7 @@ Sie erstellen eine persistente Abfrage mit Daten, die Sie in Ihrer Client-Applik
 
 1. Im Popup **Abfragename**, geben Sie Ihrer Abfrage den Namen `adventure-list`.
 
-1. Tippen oder klicken Sie auf **Speichern unter**.
+1. Auswählen **Speichern unter**.
 
    ![Abfrage beibehalten](assets/do-not-localize/persist-query.png)
 

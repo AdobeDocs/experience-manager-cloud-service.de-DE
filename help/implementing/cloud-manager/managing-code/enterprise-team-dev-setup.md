@@ -2,10 +2,10 @@
 title: Einrichten eines Entwicklungs-Teams für Unternehmen
 description: Erfahren Sie, wie Sie Ihr Entwicklungs-Team für Unternehmen einrichten und skalieren, und sehen Sie, wie AEM as a Cloud Service Ihren Entwicklungsprozess unterstützen kann.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1437'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ Cloud Manager unterstützt flexible Multi-Team-Setups, die an die Anforderungen 
 
 Jedes Unternehmen hat unterschiedliche Anforderungen, dazu gehören verschiedene Teams, Prozesse und Entwicklungs-Workflows. Das unten beschriebene Setup wird von Adobe für verschiedene Projekte verwendet, die Erlebnisse zusätzlich zu AEM as a Cloud Service bereitstellen.
 
-Die Adobe Creative Cloud-Programme wie Adobe Photoshop oder Adobe Illustrator enthalten beispielsweise Inhaltsressourcen wie Tutorials, Beispiele und Handbücher, die Endbenutzern zur Verfügung stehen. Diese Inhalte werden von den Client-Anwendungen unter Verwendung von AEM as a Cloud Service auf Headless-Weise genutzt, indem API-Aufrufe an die AEM Cloud-Publishing-Ebene gesendet werden, um die strukturierten Inhalte als JSON-Streams abzurufen, und indem das [Content Delivery Network (CDN) in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) genutzt wird, um sowohl strukturierte als auch unstrukturierte Inhalte mit optimaler Leistung bereitzustellen.
+Die Adobe Creative Cloud-Programme wie Adobe Photoshop oder Adobe Illustrator enthalten beispielsweise Inhaltsressourcen wie Tutorials, Beispiele und Handbücher, die Endbenutzern zur Verfügung stehen. Dieser Inhalt wird von den Clientanwendungen per Headless-AEM verwendet, indem API-Aufrufe an die AEM Cloud-Veröffentlichungsstufe gesendet werden, um den strukturierten Inhalt als JSON-Streams abzurufen, und indem die [Content Delivery Network (CDN) in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) , um strukturierte und unstrukturierte Inhalte mit optimaler Leistung bereitzustellen.
 
 Die Teams, die zu diesem Projekt beitragen, folgen dem folgenden Prozess.
 

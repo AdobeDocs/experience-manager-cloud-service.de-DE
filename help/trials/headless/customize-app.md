@@ -4,10 +4,10 @@ description: Hier erfahren Sie anhand einer React-Beispiel-App, wie Sie Inhalte 
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 97%
+source-wordcount: '1018'
+ht-degree: 88%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 97%
 
 Sie beginnen im Inhaltsfragment-Editor Ihrer bereits geladenen AEM Headless-Testversion und der darin enthaltenen Beispiel-App. Die Beispiel-App basiert auf Inhaltsfragmenten, die über GraphQL bereitgestellt werden. Machen Sie sich mit dem Inhaltsfragment-Editor vertraut, indem Sie sich eine Vorschau der Beispiel-App ansehen.
 
-1. Tippen oder klicken Sie auf die Schaltfläche **Vorschau** rechts oben im Editor-Bildschirm.
+1. Wählen Sie die **Vorschau** rechts oben im Editor-Bildschirm.
 
 1. Die Demo-App wird auf einer neuen Registerkarte geöffnet. Die App ist für die fiktive Outdoor-Lifestyle-Marke WKND vorgesehen. Scrollen Sie auf der Seite nach unten, um durch den Beispielinhalt zu navigieren.
 
@@ -45,7 +45,7 @@ Sie beginnen im Inhaltsfragment-Editor Ihrer bereits geladenen AEM Headless-Test
 
 Der Inhaltsfragment-Editor zeigt das grundlegende Layout der App als Seiteninhaltsfragment an. Die **Bedienfelder** stellen verschiedene Seiten der App dar, von denen jede ein eigenes Inhaltsfragment ist. Durch das Bearbeiten dieser Fragmente können Sie den Inhalt der App ändern.
 
-1. Tippen oder klicken Sie im Abschnitt **Bedienfelder** auf **Mtn Biker in Canyon**.
+1. Auswählen **Mtn Biker in Canyon** im **Bedienfelder** Abschnitt.
 
    ![Auswählen eines Textbedienfelds](assets/do-not-localize/edit-header-1.png)
 
@@ -57,7 +57,7 @@ Der Inhaltsfragment-Editor zeigt das grundlegende Layout der App als Seiteninhal
 
 1. Ändern Sie den Text von `Your next great adventure is calling` in `Choose your own adventure`. Die Änderung wird vom Editor automatisch gespeichert.
 
-1. Tippen oder klicken Sie oben rechts im Fenster auf **Vorschau**, um Ihre Änderungen zu sehen. Die Vorschau der Demo-App wird auf einer neuen Registerkarte geöffnet.
+1. Auswählen **Vorschau** oben rechts im Fenster, um Ihre Änderungen zu sehen. Die Vorschau der Demo-App wird auf einer neuen Registerkarte geöffnet.
 
    ![Vorschau in der Demo-App](assets/do-not-localize/edit-header-5-6.png)
 
@@ -75,19 +75,19 @@ Nachdem Sie jetzt wissen, wie eine Überschrift in der App geändert wird, versu
 
 1. Wählen Sie die Bildebene **Mtn Biking - Biker** aus. Daraufhin wird der Inhaltsfragment-Editor geöffnet.
 
-1. Tippen oder klicken Sie auf **X**, um das Bild des Radfahrers zu entfernen. Das Bild verschwindet und der Editor zeigt einen Fehler an, da das Bild für dieses Inhaltsfragmentmodell erforderlich ist.
+1. Wählen Sie die **X** , um das Biker-Bild zu entfernen. Das Bild verschwindet und der Editor zeigt einen Fehler an, da das Bild für dieses Inhaltsfragmentmodell erforderlich ist.
 
    ![Entfernen eines Bilds aus einem Fragment](assets/do-not-localize/swap-image-4.png)
 
-1. Tippen oder klicken **Asset hinzufügen** und dann **Durchsuchen von Assets** im Popup-Menü.
+1. Auswählen **Asset hinzufügen** und dann **Durchsuchen von Assets** im Popup-Menü.
 
 1. Das Dialogfeld **Asset auswählen** wird geöffnet und der Pfad **sample-wknd-app** > **en** > **image-files** wird automatisch ausgewählt.
 
-1. Wählen Sie das Bild `biker-yellow.png` aus und tippen oder klicken Sie dann auf **Auswählen**.
+1. Bild auswählen `biker-yellow.png` und wählen Sie **Auswählen**.
 
 1. Das Bild des Radfahrers wird durch das ausgewählte Bild ersetzt. Der Editor speichert die Änderungen automatisch.
 
-1. Tippen oder klicken Sie oben rechts im Fenster auf **Vorschau**, um Ihre Änderungen zu sehen. Die Vorschau der Demo-App wird auf einer neuen Registerkarte geöffnet. Klicken Sie im Browser auf „Aktualisieren“. In der App sollte nun das neue Bild eines Radfahrers mit gelben Shorts angezeigt werden.
+1. Auswählen **Vorschau** oben rechts im Fenster, um Ihre Änderungen zu sehen. Die Vorschau der Demo-App wird auf einer neuen Registerkarte geöffnet. Klicken Sie im Browser auf „Aktualisieren“. In der App sollte nun das neue Bild eines Radfahrers mit gelben Shorts angezeigt werden.
 
 So einfach ist es, Bilder und Assets in Ihren Apps mit AEM Headless-CMS zu aktualisieren.
 
@@ -99,13 +99,13 @@ Nachdem Sie jetzt das Bild des Radfahrers aktualisiert haben, erläutern wir, wi
 
 1. Kehren Sie von der Registerkarte „Vorschau“ zur Browser-Registerkarte des Inhaltsfragment-Editors zurück.
 
-1. Sie müssen zur richtigen Stelle im Inhaltsfragment-Editor zurückkehren. Die Breadcrumbs oben links im Editor zeigen an, wo Sie sich in der Inhaltshierarchie befinden. Tippen oder klicken Sie in den Breadcrumbs auf **WKND Home**, um zu dieser Seite zurückzukehren.
+1. Sie müssen zur richtigen Stelle im Inhaltsfragment-Editor zurückkehren. Die Breadcrumbs oben links im Editor zeigen an, wo Sie sich in der Inhaltshierarchie befinden. Auswählen **WKND-Homepage** in den Breadcrumbs, um zu dieser Seite zurückzukehren.
 
 1. Wählen Sie das Bedienfeld **Mtn Biker on WKND Yellow** aus.
 
 1. Wählen Sie die Ebene **Mtn Biking - Shoppable** aus.
 
-1. Um einen Abruf in diesem Bedienfeld zu erstellen, erstellen Sie einen Shop-fähigen Moment Inhaltsfragment. Tippen oder klicken Sie auf die Schaltfläche **+ Neues Fragment erstellen**.
+1. Um einen Abruf in diesem Bedienfeld zu erstellen, erstellen Sie einen Shop-fähigen Moment Inhaltsfragment. Wählen Sie die **+ Neues Fragment erstellen** Schaltfläche.
 
    ![Hinzufügen eines Elements vom Typ „Shoppable Moment“](assets/do-not-localize/add-reference-1-5.png)
 
@@ -113,7 +113,7 @@ Nachdem Sie jetzt das Bild des Radfahrers aktualisiert haben, erläutern wir, wi
 
 1. Geben Sie dem Inhaltsfragment einen Namen. Geben Sie beispielsweise `Shorts` in das Feld **Name** ein.
 
-1. Tippen oder klicken Sie auf **Erstellen und öffnen**.
+1. Auswählen **Erstellen und öffnen**.
 
    ![Benennen des „Shoppaple Moment“-Elements](assets/do-not-localize/add-reference-6-7-8.png)
 
@@ -126,7 +126,7 @@ Nachdem Sie jetzt das Bild des Radfahrers aktualisiert haben, erläutern wir, wi
    * **X**: `-5`
    * **Y**: `-10`
 
-1. Tippen oder klicken Sie oben rechts im Fenster auf **Vorschau**, um Ihre Änderungen zu sehen. Die Vorschau der Demo-App wird auf einer neuen Registerkarte geöffnet. Klicken Sie im Browser auf „Aktualisieren“, um die Positionierung zu testen, und nehmen Sie im Editor bei Bedarf Anpassungen vor.
+1. Auswählen **Vorschau** oben rechts im Fenster, um Ihre Änderungen zu sehen. Die Vorschau der Demo-App wird auf einer neuen Registerkarte geöffnet. Klicken Sie im Browser auf „Aktualisieren“, um die Positionierung zu testen, und nehmen Sie im Editor bei Bedarf Anpassungen vor.
 
    ![Vorschau](assets/do-not-localize/add-reference-10-11-12.png)
 

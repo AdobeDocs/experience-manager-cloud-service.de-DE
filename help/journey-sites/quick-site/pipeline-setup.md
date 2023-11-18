@@ -2,10 +2,10 @@
 title: Einrichten der Pipeline
 description: Erstellen Sie eine Frontend-Pipeline, um die Anpassung des Designs Ihrer Site zu verwalten.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 96%
+source-wordcount: '956'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ Auf diese Weise kann die Frontend-Entwicklung getrennt von und parallel zu jeder
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Adobe Cloud Manager an.
 
-1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Tippen oder klicken Sie auf das Element, das Sie verwalten möchten. Wenn Sie gerade erst mit AEM as a Cloud Service beginnen, haben Sie wahrscheinlich nur ein Programm zur Verfügung.
+1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Wählen Sie den zu verwaltenden Ordner aus. Wenn Sie gerade erst mit AEM as a Cloud Service beginnen, haben Sie wahrscheinlich nur ein Programm zur Verfügung.
 
    ![Auswählen eines Programms in Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -71,7 +71,7 @@ Notieren Sie den Namen des Programms, auf das Sie zugegriffen haben, oder kopier
 
 Nachdem Sie auf Cloud Manager zugegriffen haben, können Sie eine Pipeline für die Frontend-Bereitstellung erstellen.
 
-1. Tippen oder klicken Sie im Abschnitt **Pipelines** auf der Seite „Cloud Manager“ auf die Schaltfläche **Hinzufügen**.
+1. Im **Pipelines** auf der Seite &quot;Cloud Manager&quot;die **Hinzufügen** Schaltfläche.
 
    ![Pipelines](assets/pipelines-add.png)
 
@@ -83,7 +83,7 @@ Nachdem Sie auf Cloud Manager zugegriffen haben, können Sie eine Pipeline für 
 
    ![Pipeline-Konfiguration hinzufügen](assets/add-pipeline-configuration.png)
 
-1. Tippen oder klicken Sie auf **Weiter**.
+1. Klicken Sie auf **Weiter**.
 
 1. Auf der Registerkarte **Quell-Code**:
    * Wählen Sie **Code für das Frontend** als Typ des bereitzustellenden Codes aus.
@@ -94,7 +94,7 @@ Nachdem Sie auf Cloud Manager zugegriffen haben, können Sie eine Pipeline für 
 
    ![Quellcode-Informationen zum Hinzufügen einer Pipeline](assets/add-pipeline-source-code.png)
 
-1. Tippen oder klicken Sie auf **Speichern**.
+1. Wählen Sie **Speichern** aus.
 
 Die neue Pipeline wird erstellt und im Abschnitt **Pipelines** im Cloud Manager-Fenster angezeigt. Wenn Sie auf die Punkte nach dem Pipeline-Namen klicken, werden Optionen zum weiteren Bearbeiten oder Anzeigen von Details angezeigt.
 

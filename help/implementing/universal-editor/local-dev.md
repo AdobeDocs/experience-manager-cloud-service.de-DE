@@ -2,9 +2,9 @@
 title: Lokale AEM mit dem universellen Editor
 description: Erfahren Sie, wie der universelle Editor die Bearbeitung lokaler AEM-Instanzen zu Entwicklungszwecken unterstützt.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Innerhalb eines mit HTTPS gesicherten äußeren Rahmens kann kein unsicherer HTT
 
 Dazu müssen Sie AEM für die Ausführung auf HTTPS einrichten. Zu Entwicklungszwecken können Sie ein selbstsigniertes Zertifikat verwenden.
 
-In diesem Dokument erfahren Sie, wie Sie AEM unter HTTPS einrichten, einschließlich eines selbstsignierten Zertifikats, das Sie verwenden können.
+In diesem Dokument erfahren Sie, wie Sie AEM, die auf HTTPS ausgeführt werden, einrichten, einschließlich eines selbstsignierten Zertifikats, das Sie verwenden können.
 
 ## Installieren des Universal Editor-Dienstes {#install-ue-service}
 
@@ -30,7 +30,7 @@ Der universelle Editor-Dienst bindet den universellen Editor und das Backend-Sys
 
 [NodeJS, Version 16](https://nodejs.org/en/download/releases) ist erforderlich, um eine lokale Kopie des Universal Editor Service auszuführen.
 
-Der Universal Editor Service wird direkt von AEM Engineering vertrieben. Bitte wenden Sie sich an Ihren technischen Ansprechpartner im VIP Programm für eine lokale Kopie.
+Der Universal Editor Service wird direkt von AEM Engineering vertrieben. Kontaktieren Sie Ihren Ingenieur im VIP Programm für eine lokale Kopie.
 
 Das Engineering bietet Ihnen eine `universal-editor-service.cjs` -Datei. Speichern Sie diese in Ihrer lokalen Entwicklungsumgebung.
 

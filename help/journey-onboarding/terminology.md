@@ -2,10 +2,10 @@
 title: Terminologie von AEM as a Cloud Service
 description: Bevor Sie sich bei AEMaaCS anmelden, sollten Sie einige Begriffe des Systems und seine grundlegende Struktur kennen.
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 87%
+source-wordcount: '463'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ Nachdem Sie nun durch das Lesen des Dokuments [Vorbereitung auf das Onboarding](
 
 AEM as a Cloud Service ist ein leistungsstarkes, flexibles Tool. Und wie bei jedem Tool, das Sie verwenden, sollten Sie auch hier den Aufbau und die zur Beschreibung genutzte Terminologie kennen. In diesem Dokument werden die wichtigste Begriffe erläutert, die Sie verstehen sollten, bevor Sie mit der Verwendung des Systems beginnen.
 
-Nach dem Lesen dieses Dokuments werden Sie Folgendes verstehen:
+Nach dem Lesen dieses Dokuments sollten Sie
 
 * Die verschiedenen Ebenen, aus denen AEMaaCS besteht.
 * Die Grundlagen der einzelnen Ebenen.
@@ -44,9 +44,9 @@ Oft ist ein Beispiel hilfreich, um diese Hierarchie zu kontextualisieren.
    * Ein Assets-Programm für den WKND-Medienbereich
 * Die Programme WKND-Magazin und WKND-Medien verfügen beide über Entwicklungs-, Staging- und Produktions-**Umgebungen**.
 * **Repositorys** dienen der Speicherung des benutzerdefinierten Codes und der Programme für WKND-Magazin und WKND-Medien.
-* Verschiedene in Repositorys verwendete **Tools und Workflows** sorgen dafür, dass Code mithilfe von CI/CD-Pipelines bereitstellt wird, auf Protokolle und AEM zugegriffen werden kann usw.
+* Verschiedene **Tools und Workflows** In allen Repositorys können Sie Code mithilfe von CI/CD-Pipelines bereitstellen, auf Protokolle zugreifen, auf AEM zugreifen usw.
 
-## Wie geht es weiter? {#what-is-next}
+## Wie geht es weiter {#what-is-next}
 
 Nachdem Sie nun diesen Teil der AEM-Onboarding-Tour abgeschlossen haben, wissen Sie über Folgendes Bescheid:
 

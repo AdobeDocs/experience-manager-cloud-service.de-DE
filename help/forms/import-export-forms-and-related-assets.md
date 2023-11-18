@@ -1,10 +1,10 @@
 ---
 title: Importieren und Exportieren von Assets in [!DNL AEM Forms]?
 description: Erfahren Sie, wie Sie mit DocuSign mit einem adaptiven Formular E-Signaturen erfassen können.
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1325'
-ht-degree: 75%
+source-wordcount: '1322'
+ht-degree: 71%
 
 ---
 
@@ -32,10 +32,10 @@ Download von Assets für Formulare und Dokumente
 1. Wählen Sie die AEM Forms-Assets und klicken Sie auf das Symbol **[!UICONTROL Herunterladen]**.
 1. Wählen Sie unter „Asset(s) herunterladen“ eine der folgenden Optionen und tippen Sie auf **[!UICONTROL Herunterladen]**.
 
-   * **Als CRX-Paket herunterladen:** Verwenden Sie die Option zum Herunterladen und Verschieben aller ausgewählten Elemente und der zugehörigen Abhängigkeiten von einer [!DNL AEM Forms]-Instanz in eine andere. Dadurch werden alle Assets und Ordner als CRX-Paket heruntergeladen. Formular-Assets, einschließlich in AEM erstellter Formulare (adaptive Formulare und adaptive Formularfragmente), PDF-Dokumente und Ressourcen (XSDs, XFS, Bilder), können über die [!DNL AEM Forms]-Benutzeroberfläche als Paket heruntergeladen werden.
+   * **Als CRX-Paket herunterladen:** Verwenden Sie die Option zum Herunterladen und Verschieben aller ausgewählten Assets und der zugehörigen Abhängigkeiten von einer [!DNL AEM Forms]-Instanz in eine andere. Dadurch werden alle Assets und Ordner als CRX-Paket heruntergeladen. Alle Formular-Assets, einschließlich der in AEM (Adaptive Forms und adaptive Formularfragmente) erstellten Formulare, PDF-Dokumente und Ressourcen (XSDs, XFS, Bilder) können als Paket heruntergeladen werden von [!DNL AEM Forms] Benutzeroberfläche.
 Der Vorteil des Herunterladens von Assets als Paket besteht darin, dass dabei auch Assets enthalten sind, die von den ausgewählten Assets verwendet wurden. Beispiel: Sie haben ein adaptives Formular, das eine Formularvorlage, XSD und ein Bild verwendet. Wenn Sie dieses adaptive Formular auswählen und es als Paket herunterladen, enthält das heruntergeladene Paket ebenfalls die Formularvorlage, XSD und das Bild. Alle mit dem Asset verknüpften Metadateneigenschaften (einschließlich benutzerdefinierter Eigenschaften) werden ebenfalls heruntergeladen.
 
-   * **Asset(s) als Binärdateien herunterladen:** Verwenden Sie die Option nur zum Herunterladen von Formularvorlagen (XDP), PDF-Formularen (PDF), Dokumenten (PDF) und Ressourcen (Bilder, Schemas, Stylesheets). Sie können diese Assets mit externen Anwendungen bearbeiten. Es werden die Forms-Assets, die Binärdaten enthalten, wie XSDs, XDPs, Bilder, PDFs, und XDPs, als .zip-Datei heruntergeladen.
+   * **Herunterladen von Assets als Binärdateien:** Verwenden Sie die Option, um nur Formularvorlagen (XDP), PDF forms (PDF), Dokumente (PDF) und Ressourcen (Bilder, Schemata, Stylesheets) herunterzuladen. Sie können diese Assets mit externen Anwendungen bearbeiten. Es werden die Forms-Assets, die Binärdaten enthalten, wie XSDs, XDPs, Bilder, PDFs, und XDPs, als .zip-Datei heruntergeladen.
 Das Herunterladen von adaptiven Formulare, adaptiven Formularfragmenten und Designs ist mit der Option **[!UICONTROL Asset(s) als binäre Dateien herunterladen]** nicht möglich. Um diese Assets herunterzuladen, sollten Sie **[!UICONTROL Als CRX-Paket herunterladen]** -Option.
 
    Die ausgewählten Assets werden als Archiv heruntergeladen (.zip-Datei).

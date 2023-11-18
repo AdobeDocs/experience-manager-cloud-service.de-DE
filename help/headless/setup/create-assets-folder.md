@@ -2,10 +2,10 @@
 title: Erstellen eines Asset-Ordners – Headless-Einrichtung
 description: Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren – die Grundlage für Ihren Headless-Content.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 100%
+source-wordcount: '377'
+ht-degree: 89%
 
 ---
 
@@ -25,8 +25,8 @@ Asset-Ordner dienen der [Organisation traditioneller Inhalts-Assets](/help/asset
 
 Administratoren müssen nur gelegentlich Ordner erstellen, um Inhalte bei der Erstellung zu organisieren. Für die Zwecke dieser Anleitung für den Einstieg müssen wir nur einen Ordner erstellen.
 
-1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Tools > Assets > Dateien** aus.
-1. Tippen oder klicken Sie auf **Erstellen > Ordner**.
+1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü die Option **Navigation > Assets > Dateien**.
+1. Auswählen **Erstellen > Ordner**.
 1. Geben Sie einen **Titel** und einen **Namen** für Ihren Ordner an.
    * Der **Titel** sollte beschreibend sein.
    * Der **Name** wird zum Knotennamen im Repository.
@@ -38,8 +38,8 @@ Administratoren müssen nur gelegentlich Ordner erstellen, um Inhalte bei der Er
 1. Wählen Sie im Fenster **Eigenschaften** die Registerkarte **Cloud-Services** aus.
 1. Wählen Sie für die **Cloud-Konfiguration** die zuvor erstellte [Konfiguration aus.](create-configuration.md)
    ![Konfigurieren des Asset-Ordners](../assets/assets-folder-configure.png)
-1. Tippen oder klicken Sie auf **Speichern und schließen**.
-1. Tippen oder klicken Sie im Bestätigungsfenster auf **OK**.
+1. Klicken Sie auf **Speichern und schließen**.
+1. Auswählen **OK** im Bestätigungsfenster.
 
    ![Bestätigungsfenster](../assets/assets-folder-confirmation.png)
 

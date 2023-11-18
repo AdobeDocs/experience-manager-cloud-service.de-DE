@@ -4,10 +4,10 @@ description: Erfahren Sie, wie AEM-Site-Vorlagen verwendet werden können, um di
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '568'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '566'
+ht-degree: 84%
 
 ---
 
@@ -37,15 +37,15 @@ Sie können mehrere Vorlagen zu AEM hinzufügen, die dann verwendet werden, um [
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Tippen oder klicken Sie oben rechts im Bildschirm auf **Erstellen** und wählen Sie aus dem Dropdown-Menü **Site aus Vorlage**.
+1. Auswählen **Erstellen** oben rechts im Bildschirm und aus dem Dropdown-Menü wählen Sie **Site aus Vorlage**.
 
    ![Erstellen einer Site aus einer Vorlage](../assets/create-site-from-template.png)
 
-1. Tippen oder klicken Sie im Assistenten oben in der linken Spalte auf **Importieren**.
+1. Wählen Sie im Assistenten Site erstellen die Option **Import** oben in der linken Spalte.
 
    ![Assistent zur Site-Erstellung](../assets/site-creation-wizard.png)
 
-1. Finden Sie im Datei-Browser die gewünschte Vorlage und tippen oder klicken Sie auf **Hochladen**.
+1. Suchen Sie im Dateibrowser die gewünschte Vorlage und wählen Sie **Hochladen**.
 
 1. Nach dem Hochladen wird sie in der Liste der verfügbaren Vorlagen angezeigt.
 
@@ -61,8 +61,8 @@ Site-Vorlagen sind schlicht Pakete mit einer logischen Struktur, die den Zweck d
 
 * `files`: Ordner mit dem Benutzeroberflächen-Kit, einer XD-Datei und möglicherweise anderen Dateien
 * `previews`: Ordner mit Screenshots der Site-Vorlage
-* `site`: Inhaltspaket der Inhalte, die für jede aus dieser Vorlage erstellte Site kopiert werden, z. B. Seitenvorlagen, Seiten usw.
-* `theme`: Quellen des [Site-Designs](site-themes.md), um das Aussehen der Site zu ändern, einschließlich CSS, JavaScript usw.
+* `site`: Inhaltspaket des Inhalts, der für jede aus dieser Vorlage erstellte Site kopiert wird, z. B. Seitenvorlagen, Seiten usw.
+* `theme`: Quellen für die [Site-Design](site-themes.md) um zu ändern, wie die Site aussieht, einschließlich CSS, JavaScript usw.
 
 ## Standard-Site-Vorlage {#standard-site-template}
 

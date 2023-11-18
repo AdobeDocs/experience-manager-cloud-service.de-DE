@@ -3,10 +3,10 @@ title: Integrieren von AEM Forms mit Adobe Analytics
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1757'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -274,7 +274,7 @@ Nachdem Sie ein adaptives Formular zum Senden von Ereignisdaten an [!DNL Adobe A
 
 1. Tippen Sie auf **[!UICONTROL Projekt erstellen]** und wählen Sie **[!UICONTROL Leeres Projekt]** aus.
 
-1. Wählen Sie den Namen der Report Suite aus der Dropdown-Liste oben rechts im Freiformformular.
+1. Wählen Sie den Namen der Report Suite aus der Dropdownliste oben rechts auf der Freiform aus.
 
 1. Geben Sie den **Formulartitel** im Text von **[!UICONTROL Dimensionselemente durchsuchen]** an, um alle Formulartitel anzuzeigen.
 

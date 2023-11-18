@@ -2,10 +2,10 @@
 title: Aktivieren von AEM Screens für Ihren Demo-Standort
 description: Erfahren Sie mehr über die Schritte zur Aktivierung des vollständigen AEM Screens as a Cloud Service-Erlebnisses auf Ihrer Demo-Site.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2665'
-ht-degree: 98%
+ht-degree: 93%
 
 ---
 
@@ -100,9 +100,9 @@ Wenn der Assistent abgeschlossen ist, finden Sie die bereitgestellten Inhalte un
 
 ![We.Cafe-Inhalte](assets/wecafe-content.png)
 
-Nachdem Sie jetzt über Demoinhalte für We.Cafe verfügen, können Sie entscheiden, wie Sie AEM Screens testen möchten:
+Nachdem Sie jetzt über Demoinhalte von We.Cafe verfügen, können Sie entscheiden, wie Sie AEM Screens testen möchten:
 
-* Wenn Sie die Inhalte nur in der AEM Sites-Konsole erkunden möchten, können Sie einfach loslegen und mehr im Abschnitt [Zusätzliche Ressourcen](#additional-resources) entdecken! Es sind keine weiteren Maßnahmen erforderlich.
+* Wenn Sie den Inhalt nur in der AEM Sites-Konsole untersuchen möchten, sollten Sie einfach mit dem Erkunden und Erfahren Sie mehr in der [Zusätzliche Ressourcen](#additional-resources) Abschnitt! Es sind keine weiteren Maßnahmen erforderlich.
 * Wenn Sie die vollen dynamischen Funktionen von AEM Screens erleben möchten, fahren Sie mit dem nächsten Abschnitt fort: [Dynamische Änderung von Screens-Inhalten](#dynamically-change).
 
 ## Dynamisches Ändern von Screens-Inhalten {#dynamically-change}
@@ -145,7 +145,7 @@ Zunächst müssen Sie einen Google-API-Schlüssel erstellen, um den Datenaustaus
 
 Um den Austausch von Google Sheets-Daten mithilfe Ihres API-Schlüssels zu ermöglichen, müssen Sie die Google Sheets-API aktivieren.
 
-1. Kehren Sie unter `https://console.cloud.google.com` zur Google Cloud-Konsole und zu Ihrem Projekt zurück und klicken Sie dann auf das Hamburger-Menü-Symbol, um **APIs und Services > Bibliothek** auszuwählen.
+1. Kehren Sie zur Google Cloud Console zurück unter `https://console.cloud.google.com` für Ihr Projekt und wählen Sie dann über das Hamburger-Menü **APIs und Dienste > Bibliothek**.
 
    ![API-Bibliothek](assets/api-library.png)
 
@@ -223,7 +223,7 @@ Zu Demozwecken können die Werte in der Tabelle geändert werden. ContextHub erk
 
 1. Wechseln Sie in der AEMaaCS-Autoreninstanz zu **Globale Navigation > Tools > Sites > ContextHub**.
 1. Wählen Sie den Konfigurationscontainer aus, der denselben Namen trägt, den Sie dem Projekt gegeben haben, als Sie das Projekt Screens aus der **We.Cafe-Website-Vorlage** erstellt haben.
-1. Wählen Sie **Konfiguration > ContextHub-Konfiguration > Google Sheets** und klicken Sie dann oben rechts auf **Weiter**.
+1. Auswählen **Konfiguration > ContextHub-Konfiguration > Google Tabellen** Klicken Sie dann auf **Nächste** oben rechts.
 1. Die Konfiguration sollte bereits über vorkonfigurierte JSON-Daten verfügen. Es gibt zwei Werte, die geändert werden müssen:
    1. Ersetzen Sie `[your Google Sheets id]` durch die Tabellen-ID, die [Sie zuvor gespeichert haben](#create-spreadsheet).
    1. Ersetzen Sie `[your Google API Key]` durch den API-Schlüssel, den [Sie zuvor gespeichert haben](#create-api-key).
@@ -236,7 +236,7 @@ Jetzt können Sie den Temperaturwert in Ihrer Google Sheet-Tabelle ändern, und 
 Nachdem AEM Screens und ContextHub mit Ihrem Wetterdienst verbunden sind, können Sie ihn jetzt testen, um zu sehen, wie Screens Inhalte dynamisch aktualisieren kann.
 
 1. Greifen Sie auf Ihre Sandbox-Autoreninstanz zu.
-1. Gehen Sie über **Globale Navigation > Standorte** zur Standort-Konsole und wählen Sie die folgende Seite **Screens > &lt;Projektname> > Kanäle > Eingang am Morgen (Hochformat)**.
+1. Navigieren Sie zur Sites-Konsole über **Globale Navigation > Sites** und wählen Sie die folgende Seite aus **Screens > &lt;project-name> > Kanäle > Vormittag Eintritt (Hochformat)**.
 
    ![Auswahl der Demoprojektinhalte](assets/project-content.png)
 
@@ -325,7 +325,7 @@ Zunächst müssen Sie einen Registrierungs-Code erstellen, um einen Player siche
 
    ![Überprüfen der Screens-Organisation](assets/screens-org.png)
 
-1. Klicken Sie im linken Panel auf **Player-Verwaltung > Registrierungs-Codes** und klicken Sie anschließend oben rechts auf dem Bildschirm auf **Code erstellen**.
+1. Klicken Sie im linken Bereich auf **Player-Verwaltung > Registrierungscodes** und klicken Sie anschließend auf **Code erstellen** oben rechts auf dem Bildschirm.
 
 ![Registrierungs-Codes](assets/registration-codes.png)
 
@@ -360,7 +360,7 @@ Zunächst müssen Sie einen Registrierungs-Code erstellen, um einen Player siche
 
    ![Überprüfen der Screens-Organisation](assets/screens-org.png)
 
-1. Klicken Sie in der linken Leiste auf **Player-Verwaltung > Player** und Sie sehen den Player, den Sie zuvor installiert und registriert haben.
+1. Klicken Sie im linken Bereich auf **Player-Verwaltung > Player** und Sie sehen den Player, den Sie zuvor installiert und registriert haben.
 
    ![Player](assets/players.png)
 

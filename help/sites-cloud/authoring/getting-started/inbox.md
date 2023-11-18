@@ -2,10 +2,10 @@
 title: Ihr Posteingang
 description: Erfahren Sie, wie Sie mit den Benachrichtigungen, die in Ihren Posteingang eintreffen, Ihre Aufgaben verwalten können.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 97%
+source-wordcount: '910'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten (dar
       * Diese sind das Ergebnis von **Teilnehmer**-Workflow-Schritten.
    * Fehlgeschlagene Elemente, die Administratoren darauf hinweisen, einen fehlgeschlagenen Schritt erneut auszuführen.
 
-Sie erhalten diese Benachrichtigungen in Ihrem eigenen Posteingang, wo Sie sie anzeigen und dann Maßnahmen ergreifen können.
+Sie erhalten diese Benachrichtigungen in Ihrem eigenen Posteingang, in dem Sie sie anzeigen und bearbeiten können.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Po
 
 So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
 
-1. Klicken/tippen Sie auf die Anzeige in der Symbolleiste.
+1. Wählen Sie die Anzeige in der Symbolleiste aus.
 
 1. Wählen Sie **Alle anzeigen** aus. Die **AEM Posteingang** geöffnet. Im Posteingang werden Elemente aus den Bereichen Workflows, Projekte und Aufgaben angezeigt.
 1. Die Standardansicht ist die [Listenansicht](#inbox-list-view), Sie können aber auch zur [Kalenderansicht ](#inbox-calendar-view)wechseln. Dies erfolgt mit der Ansichtsauswahl (Symbolleiste oben rechts).

@@ -5,9 +5,9 @@ uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1149'
 ht-degree: 80%
 
 ---
@@ -95,7 +95,7 @@ Darüber hinaus zeigt die Registerkarte den Aufgabenverlauf für jede abgeschlos
 
 In der Aktionssymbolleiste werden alle verfügbaren Optionen für die Aufgabe angezeigt. Während &quot;Speichern&quot;, &quot;Zurücksetzen&quot;und &quot;Delegieren&quot;Standardaktionen sind, werden andere verfügbare Aktionen im [Schritt &quot;Aufgabe zuweisen&quot;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=de#extending-aem). Im obigen Beispiel sind „Genehmigen“ und „Ablehnen“ im Workflow konfiguriert.
 
-Wenn Sie die Aufgabe bearbeiten, wird sie im Workflow weiter ausgeführt.
+Während Sie mit der Aufgabe arbeiten, wird sie im Workflow weiter ausgeführt.
 
 ### Anzeigen der abgeschlossenen Aufgaben {#view-completed-tasks}
 

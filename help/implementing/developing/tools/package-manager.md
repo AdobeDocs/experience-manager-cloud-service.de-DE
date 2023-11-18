@@ -4,10 +4,10 @@ description: Lernen Sie die Grundlagen der AEM-Paketverwaltung mit Package Manag
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3769'
-ht-degree: 98%
+source-wordcount: '3771'
+ht-degree: 92%
 
 ---
 
@@ -97,7 +97,7 @@ Um Pakete erstellen, ändern, hochladen und installieren zu können, müssen Ben
 
 Sie haben drei Möglichkeiten, auf Package Manager zuzugreifen:
 
-1. Vom AEM Hauptmenü > **Tools** > **Bereitstellung** > **Pakete**
+1. Im AEM Hauptmenü > **Instrumente** > **Implementierung** > **Pakete**
 1. Von [CRXDE Lite](crxde.md) unter Verwendung der oberen Umschaltleiste
 1. Direkt durch Zugreifen auf `http://<host>:<port>/crx/packmgr/`
 
@@ -304,7 +304,7 @@ Möglicherweise müssen Sie [das Paket neu aufbauen](#building-a-package), um se
 
 ### Neuverpacken eines Pakets {#rewrapping-a-package}
 
-Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim Neuverpacken werden die Paketinformationen wie Miniaturansicht, Beschreibung usw. geändert, ohne dass der Inhalt des Pakets geändert wird.
+Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim erneuten Umbrechen werden die Paketinformationen ohne Miniaturansicht, Beschreibung usw. geändert, ohne dass der Paketinhalt geändert wird.
 
 1. [Greifen Sie auf Package Manager zu.](#accessing)
 
@@ -314,7 +314,7 @@ Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim Neuverpacken
 
 1. Klicken Sie zum Speichern auf **Speichern**.
 
-1. Wenn Sie auf **Weiter** > **Neu verpacken** klicken, erscheint ein Dialogfeld, das Sie zur Bestätigung auffordert.
+1. Klicks **Mehr** > **Rewrap** und ein Dialogfeld wird zur Bestätigung aufgerufen.
 
 ### Anzeigen anderer Paketversionen {#other-versions}
 
@@ -324,7 +324,7 @@ Da jede Version eines Pakets in der Liste ebenso wie jedes andere Paket angezeig
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Wenn Sie auf **Mehr** > **Andere Versionen** klicken, öffnet sich ein Dialogfeld mit einer Liste von anderen Versionen desselben Pakets mit Statusinformationen.
+1. Klicks **Mehr** > **Andere Versionen** und ein Dialogfeld mit einer Liste anderer Versionen desselben Pakets mit Statusinformationen geöffnet.
 
 ### Anzeigen von Paketinhalten und Testen der Installation {#viewing-package-contents-and-testing-installation}
 
@@ -334,11 +334,11 @@ Nach dem Aufbau eines Pakets können Sie dessen Inhalt anzeigen.
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Um den Inhalt anzuzeigen, klicken Sie auf **Mehr** > **Inhalt**, und der Package Manager listet den gesamten Inhalt des Pakets im Aktivitätsprotokoll auf.
+1. Klicken Sie auf die Schaltfläche **Mehr** > **Inhalt**, und der Package Manager listet den gesamten Inhalt des Pakets im Aktivitätsprotokoll auf.
 
    ![Paketinhalt](assets/package-contents.png)
 
-1. Klicken Sie auf **Mehr** > **Installation testen**, um einen Probelauf der Installation durchzuführen. Package Manager berichtet im Aktivitätsprotokoll die Ergebnisse so, als ob die Installation durchgeführt worden wäre.
+1. Klicken Sie auf , um einen Probelauf der Installation durchzuführen **Mehr** > **Testinstallation** und Package Manager-Berichte in der Aktivität protokollieren die Ergebnisse so, als ob die Installation durchgeführt würde.
 
    ![Testen der Installation](assets/test-install.png)
 
@@ -478,7 +478,7 @@ Führen Sie die Validierung stets nach dem Hochladen und vor dem Installieren ei
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Um das Paket zu validieren, klicken Sie auf **Mehr** > **Überprüfen**.
+1. Um das Paket zu validieren, klicken Sie auf **Mehr** > **Bestätigen**,
 
 1. Aktivieren Sie im angezeigten modalen Dialogfeld das Kontrollkästchen der gewünschten Validierungstypen und starten Sie die Validierung durch Klicken auf **Überprüfen**.
 
@@ -516,7 +516,7 @@ Pakete werden durch ihre Filter definiert. Sie können Package Manager anweisen,
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Klicken Sie auf **Mehr** > **Abdeckung**.
+1. Klicks **Mehr** > **Reichweite**.
 
 1. Die Details zur Abdeckung sind im Aktivitätsprotokoll aufgeführt.
 
@@ -532,7 +532,7 @@ Vor der Installation Ihres Pakets erstellt Package Manager automatisch ein Snaps
 
 1. [Greifen Sie auf Package Manager zu.](#accessing)
 
-1. Öffnen Sie in der Paketliste die Paketdetails des Pakets, das Sie installieren möchten, indem Sie auf den Paketnamen klicken.
+1. Öffnen Sie die Paketdetails des Pakets, das Sie installieren möchten, in der Paketliste, indem Sie auf den Paketnamen klicken.
 
 1. Klicken Sie entweder auf die Schaltfläche **Installieren** in den Paketdetails oder auf den Link **Installieren** im Paketstatus.
 
@@ -576,7 +576,7 @@ Durch die Deinstallation eines Pakets wird der Inhalt des Repositorys auf den Sc
 
 1. Öffnen Sie die Paketdetails des Pakets, das Sie deinstallieren möchten, indem Sie in der Paketliste auf den Paketnamen klicken.
 
-1. Klicken Sie auf **Mehr** > **Deinstallieren**, um den Inhalt dieses Pakets aus dem Repository zu entfernen.
+1. Klicks **Mehr** > **Deinstallieren**, um den Inhalt dieses Pakets aus dem Repository zu entfernen.
 
 1. Es wird ein Dialogfeld mit einer Liste aller vorgenommenen Änderungen und der Aufforderung zur Bestätigung angezeigt.
 
@@ -602,7 +602,7 @@ Replizieren Sie den Inhalt eines Pakets, um es auf der Veröffentlichungsinstanz
 
 1. Öffnen Sie die Paketdetails des Pakets, das Sie replizieren möchten, in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Klicken Sie auf **Mehr** > **Replizieren**.
+1. Klicks **Mehr** > **Replikation**.
 
 1. Das Paket wird repliziert und Details im Aktivitätsprotokoll aufgeführt.
 

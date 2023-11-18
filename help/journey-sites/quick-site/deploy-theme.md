@@ -2,10 +2,10 @@
 title: Bereitstellen eines benutzerdefinierten Designs
 description: Erfahren Sie, wie Sie das Design der Site mithilfe der Pipeline bereitstellen.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 96%
+source-wordcount: '1014'
+ht-degree: 88%
 
 ---
 
@@ -42,11 +42,11 @@ Nachdem Sie die Designanpassungsänderungen an das AEM Git-Repository vorgenomme
 
    ![Übersicht über Cloud Manager](assets/cloud-manager-overview.png)
 
-1. Tippen oder klicken Sie auf die Auslassungspunkte neben der Pipeline, die Sie starten müssen. Wählen Sie im Dropdown-Menü **Ausführen**.
+1. Wählen Sie die Auslassungspunkte neben der Pipeline aus, die Sie starten müssen. Wählen Sie im Dropdown-Menü **Ausführen**.
 
    ![Pipeline ausführen](assets/run-pipeline.png)
 
-1. Im Bestätigungsdialogfeld **Pipeline ausführen** tippen oder klicken Sie auf **Ja**.
+1. Im **Pipeline ausführen** Bestätigungsdialogfeld auswählen **Ja**.
 
    ![Pipeline-Ausführung bestätigen](assets/pipeline-confirm.png)
 
@@ -58,7 +58,7 @@ Nachdem Sie die Designanpassungsänderungen an das AEM Git-Repository vorgenomme
 
 Sie können den Status der Pipeline überprüfen, um sich über die Details des Fortschritts zu informieren.
 
-1. Tippen oder klicken Sie auf die Auslassungspunkte neben Ihrer Pipeline.
+1. Wählen Sie die Auslassungspunkte neben Ihrer Pipeline aus.
 
    ![Pipeline-Details anzeigen](assets/view-pipeline-details.png)
 
@@ -68,7 +68,7 @@ Sie können den Status der Pipeline überprüfen, um sich über die Details des 
 
 >[!TIP]
 >
->Im Fenster „Pipeline-Details“ können Sie auf **Protokolle herunterladen** tippen oder klicken, um jeden Schritt der Pipeline für die Fehlerbehebung anzuzeigen, falls einer der Schritte fehlschlagen sollte. Das Debuggen der Pipeline würde den Rahmen dieser Tour sprengen. Die technischen Dokumente für Cloud Manager finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) dieser Seite.
+>Im Fenster der Pipeline-Details können Sie **Download-Protokoll** für jeden Schritt der Pipeline zum Debugging, wenn ein Schritt fehlschlagen sollte. Das Debuggen der Pipeline würde den Rahmen dieser Tour sprengen. Die technischen Dokumente für Cloud Manager finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) dieser Seite.
 
 ## Überprüfen der bereitgestellten Anpassungen {#view-customizations}
 
@@ -111,8 +111,8 @@ Im Folgenden finden Sie einige zusätzliche Ressourcen, die näher auf einige de
 * [AEM-Standard-Site-Vorlage](https://github.com/adobe/aem-site-template-standard) – Dies ist das GitHub-Repository der AEM-Standard-Site-Vorlage.
 * [AEM-Sitedesign](https://github.com/adobe/aem-site-template-standard-theme-e2e) – Dies ist das GitHub-Repository des AEM-Sitedesigns.
 * [npm](https://www.npmjs.com) - AEM-Designs, die zum schnellen Erstellen von Sites verwendet werden, die auf nmp basieren.
-* [Webpack](https://webpack.js.org) – AEM-Designs, die zum schnellen Erstellen von Sites verwendet werden, basieren auf Webpack.
-* [Erstellen und Organisieren von Seiten](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) – In diesem Handbuch wird beschrieben, wie Sie Seiten Ihrer AEM-Site verwalten, wenn Sie sie nach der Erstellung aus der Vorlage weiter anpassen möchten.
+* [webpack](https://webpack.js.org): AEM-Designs, die zum schnellen Erstellen von Sites verwendet werden, verwenden webpack.
+* [Erstellen und Organisieren von Seiten](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - In diesem Handbuch wird beschrieben, wie Sie Seiten Ihrer AEM-Site verwalten, wenn Sie sie nach dem Erstellen aus der Vorlage weiter anpassen möchten.
 * [Arbeiten mit Paketen](/help/implementing/developing/tools/package-manager.md) – Pakete ermöglichen den Import und Export von Repository-Inhalten. In diesem Dokument wird erläutert, wie Sie mit Paketen in AEM 6.5 arbeiten. Dies gilt auch für AEMaaCS.
 * [Onboarding-Journey](/help/journey-onboarding/overview.md) – Dieses Handbuch dient als Ausgangspunkt, um sicherzustellen, dass Ihre Teams eingerichtet sind und Zugriff auf AEM as a Cloud Service haben.
 * [Dokumentation zu Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=de) – Vollständige Details zu den Funktionen finden Sie in der Dokumentation zu Cloud Manager.

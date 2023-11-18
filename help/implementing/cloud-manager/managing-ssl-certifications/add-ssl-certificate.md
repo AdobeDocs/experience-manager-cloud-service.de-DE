@@ -2,9 +2,9 @@
 title: Hinzufügen eines SSL-Zertifikats
 description: Erfahren Sie, wie Sie mithilfe der Self-Service-Tools von Cloud Manager Ihr eigenes SSL-Zertifikat hinzufügen.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '551'
 ht-degree: 82%
 
 ---
@@ -19,7 +19,7 @@ Erfahren Sie, wie Sie mithilfe der Self-Service-Tools von Cloud Manager Ihr eige
 
 ## Zertifikatanforderungen {#certificate-requirements}
 
-Lesen Sie den Abschnitt . **Zertifikatanforderungen** des Dokuments [Einführung in die Verwaltung von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) um sicherzustellen, dass das Zertifikat, das Sie hinzufügen möchten, von AEM as a Cloud Service unterstützt wird.
+Lesen Sie den Abschnitt . **Zertifikatanforderungen** des Dokuments [Einführung in die Verwaltung von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) , um sicherzustellen, dass das Zertifikat, das Sie hinzufügen möchten, von AEM as a Cloud Service unterstützt wird.
 
 ## Hinzufügen eines Zertifikats {#adding-a-cert}
 

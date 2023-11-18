@@ -2,10 +2,10 @@
 title: Live-Schalten Ihres Headless-Programms
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie ein Headless-Programm live bereitstellen, indem Sie Ihren lokalen Code in Git in das Git-Repository von Cloud Manager für die CI/CD-Pipeline verschieben.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1093'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -67,7 +67,7 @@ Nachdem Sie sichergestellt haben, dass alles getestet wurde und ordnungsgemäß 
 
 Nachdem die Aktualisierungen in Cloud Manager hochgeladen wurden, können sie mit der [CI/CD-Pipeline von Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de) in AEM as a Cloud Service bereitgestellt werden.
 
-Sie können mit der Bereitstellung Ihres Codes beginnen, indem Sie die CI/CD-Pipeline von Cloud Manager nutzen, die [hier](/help/implementing/deploying/overview.md) ausführlich erörtert wird.
+Sie können mit der Bereitstellung Ihres Codes mit der CI/CD-Pipeline von Cloud Manager beginnen, die ausführlich behandelt wird [here](/help/implementing/deploying/overview.md).
 
 ## Leistungsüberwachung {#performance-monitoring}
 

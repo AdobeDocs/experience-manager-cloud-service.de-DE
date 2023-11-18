@@ -2,10 +2,10 @@
 title: Erstellen einer Konfiguration – Einrichten von Headless
 description: Erstellen Sie als ersten Schritt eine Konfiguration, um mit Headless in AEM as a Cloud Service zu beginnen.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '327'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ Wenn Sie mit [Seitenvorlagen in einer Full-Stack-AEM-Implementierung](/help/site
 
 Ein Administrator muss eine Konfiguration nur einmal oder sehr selten erstellen, wenn für die Organisation Ihrer Inhaltsmodelle ein neuer Arbeitsbereich erforderlich ist. Für die Zwecke dieser ersten Schritte müssen wir nur eine Konfiguration erstellen.
 
-1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Tools > Allgemein > Konfigurationsbrowser** aus.
+1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü die Option **Tools > Allgemein > Konfigurationsbrowser**.
 1. Geben Sie einen **Titel** und einen **Namen** für Ihre Konfiguration an.
    * Der **Titel** sollte beschreibend sein.
    * Der **Name** wird zum Knotennamen im Repository.
@@ -37,7 +37,7 @@ Ein Administrator muss eine Konfiguration nur einmal oder sehr selten erstellen,
 
    ![Konfiguration erstellen](../assets/create-configuration.png)
 
-1. Tippen oder klicken Sie auf **Erstellen**
+1. Wählen Sie **Erstellen** aus
 
 Sie können bei Bedarf mehrere Konfigurationen erstellen. Konfigurationen können auch verschachtelt sein.
 

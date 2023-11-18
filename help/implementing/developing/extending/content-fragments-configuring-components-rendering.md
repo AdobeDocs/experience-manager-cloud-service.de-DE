@@ -2,10 +2,10 @@
 title: Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren
 description: Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 100%
+source-wordcount: '521'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ Diese Informationen sind erforderlich, wenn Sie:
 * Ihre eigene auf einem Inhaltsfragment basierende Komponente bereitstellen
 * und die erweiterten Services verwenden müssen.
 
-Es wird empfohlen, die Kernkomponenten zu verwenden.
+Adobe empfiehlt die Verwendung der Kernkomponenten.
 
 >[!CAUTION]
 >
@@ -47,7 +47,7 @@ Wenn Sie eine oder mehrere dieser Funktionen benötigen, ist es (in der Regel) e
 
 ## OSGi-Service – Konfiguration der Inhaltsfragment-Komponente {#osgi-service-content-fragment-component-configuration}
 
-Die Konfiguration muss an den OSGi-Service **Konfiguration der Inhaltsfragment-Komponente** gebunden sein:
+Die Konfiguration muss an den OSGi-Dienst gebunden sein **Konfiguration der Inhaltsfragment-Komponente**:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 

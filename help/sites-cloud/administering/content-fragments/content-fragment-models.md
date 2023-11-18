@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Inhaltsfragmentmodelle als Grundlage für Ihre In
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3060'
-ht-degree: 60%
+source-wordcount: '3058'
+ht-degree: 59%
 
 ---
 
@@ -129,7 +129,7 @@ Das Inhaltsfragmentmodell definiert die Struktur der resultierenden Inhaltsfragm
 
 1. **So entfernen Sie ein Feld**
 
-   Wählen Sie das entsprechende Feld aus und klicken/tippen Sie auf das Papierkorb-Symbol. Sie werden aufgefordert, die Aktion zu bestätigen.
+   Wählen Sie das gewünschte Feld aus und wählen Sie dann das Papierkorbsymbol aus. Sie werden aufgefordert, die Aktion zu bestätigen.
 
    ![Remove](assets/cf-cfmodels-remove-icon.png)
 
@@ -161,7 +161,7 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 * **Datum und Uhrzeit**
    * Fügen Sie ein Datum und/oder eine Uhrzeit hinzu.
 * **Aufzählung**
-   * Einen Satz von Kontrollkästchen, Optionsfeldern oder Dropdown-Feldern hinzufügen
+   * Hinzufügen von Kontrollkästchen, Optionsfeldern oder Dropdown-Listenfeldern
 * **Tags**
    * Ermöglicht Fragmentautoren den Zugriff auf und die Auswahl von Tag-Bereichen.
 * **Inhaltsreferenz**
@@ -196,7 +196,7 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
 
   >[!CAUTION]
   >
-  >Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
+  >Wenn Modelle, die in früheren Versionen von AEM erstellt wurden, unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
 * **Rendern als**
 Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Häufig können Sie damit definieren, ob der Autor eine einzelne Instanz des Felds sieht oder ob es möglich ist, mehrere Instanzen zu erstellen.
@@ -374,7 +374,7 @@ Sie können **Aktivieren** oder **Deaktivieren** Ihre Inhaltsfragmentmodelle, um
 
 Nachdem ein Modell erstellt wurde, muss es aktiviert werden, damit es:
 
-* Damit es zur Auswahl steht, wenn ein neues Inhaltsfragment erstellt wird.
+* Kann beim Erstellen eines Inhaltsfragments ausgewählt werden.
 * Damit es in einem Inhaltsfragmentmodell referenziert werden kann.
 * Damit es für GraphQL verfügbar ist, sodass das Schema generiert wird.
 

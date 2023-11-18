@@ -2,10 +2,10 @@
 title: Verwalten von Aktivitäten
 description: Mithilfe der Aktivitätskonsole können Sie die Marketing-Aktivitäten Ihrer Marken erstellen, organisieren und verwalten
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2020'
-ht-degree: 100%
+source-wordcount: '1960'
+ht-degree: 86%
 
 ---
 
@@ -58,14 +58,14 @@ Erstellen Sie eine Marke, deren Marketing-Aktivitäten Sie verwalten möchten.
 
 Wenn Sie mithilfe der Aktivitätskonsole eine Marke erstellen, erscheint diese ebenfalls in der [Angebotskonsole](/help/sites-cloud/authoring/personalization/offers.md), in der Sie Angebote für die Erlebnisse Ihrer Aktivitäten erstellen können.
 
-1. Klicken oder tippen Sie in der Navigationskonsole auf **Personalisierung**. Klicken oder tippen Sie auf **Aktivitäten**.
+1. Wählen Sie in der Navigationskonsole **Personalisierung**. Auswählen **Tätigkeiten**.
 
    ![Navigieren zu Aktivitäten](/help/sites-cloud/authoring/assets/activities-navigation.png)
 
-1. Klicken oder tippen Sie in der Aktivitätskonsole auf **Erstellen** und dann auf **Marke erstellen**.
-1. Wählen Sie die Markenvorlage aus und klicken oder tippen Sie auf **Weiter**.
+1. Wählen Sie in der Aktivitätskonsole **Erstellen** then **Marke erstellen**.
+1. Markenvorlage auswählen und auswählen **Nächste**.
 1. Geben Sie einen Titel für die Marke ein, wie er in Aktivitäts- und Angebots-Konsole angezeigt werden soll. Optional können Sie eins oder mehrere Tags eingeben oder auswählen, die mit der Marke verknüpft werden sollen.
-1. Klicken oder tippen Sie auf **Erstellen**. Ihre Marke wird in der Aktivitätskonsole angezeigt.
+1. Wählen Sie **Erstellen**. Ihre Marke wird in der Aktivitätskonsole angezeigt.
 
 ## Hinzufügen/Bearbeiten von Aktivitäten mithilfe der Aktivitätskonsole {#adding-editing-an-activity-using-the-activities-console}
 
@@ -94,32 +94,32 @@ Fügen Sie eine Aktivität hinzu oder bearbeiten Sie eine vorhandene Aktivität,
 
 So fügen Sie eine Aktivität hinzu:
 
-1. Klicken oder tippen Sie auf die Marke, für die Sie eine Aktivität erstellen möchten, klicken oder tippen Sie auf **Erstellen** und anschließend auf **Aktivität erstellen**. Wenn Sie eine Aktivität bearbeiten möchten, wählen Sie sie im Bildschirm „Primäres Gebiet“ aus und klicken oder tippen Sie auf **Aktivität bearbeiten**.
-1. Geben Sie die folgenden Informationen ein und klicken oder tippen Sie dann auf **Weiter**:
+1. Wählen Sie die Marke aus, für die Sie die Aktivität erstellen, und wählen Sie dann **Erstellen** then **Aktivität erstellen**. Wenn Sie eine Aktivität bearbeiten möchten, wählen Sie sie im Bildschirm „Primäres Gebiet“ aus und klicken oder tippen Sie auf **Aktivität bearbeiten**.
+1. Geben Sie die folgenden Informationen ein und wählen Sie dann **Nächste**:
    * Ein Name für die Aktivität.
    * Die zu verwendende Zielgruppenbestimmungs-Engine. ContextHub (AEM) ist standardmäßig ausgewählt. Wenn Sie Adobe Target verwenden müssen, erstellen Sie die Aktivität im entsprechenden Inhaltseditor.
    * Wenn Sie Adobe Target als Zielgruppenbestimmungs-Engine ausgewählt haben, wählen/bearbeiten Sie die Cloud-Konfiguration, die für die Verbindung mit Adobe Target verwendet werden soll. (Achten Sie darauf, dass Sie kein Framework auswählen, das Sie für Ihre Cloud-Konfiguration erstellt haben.)
    * (Optional) Das Ziel oder eine Beschreibung der Aktivität.
    * Wählen Sie den Aktivitätstyp aus.
-1. Fügen Sie der Aktivität mindestens ein Erlebnis hinzu. Tippen/Klicken Sie auf **Erlebnis hinzufügen**.
+1. Fügen Sie der Aktivität mindestens ein Erlebnis hinzu. Auswählen **Erlebnis hinzufügen**.
 1. Wenn Sie AEM-Targeting oder Experience Targeting in Adobe Target verwenden: 
-   1. Klicken oder tippen Sie auf **Zielgruppe wählen** und wählen Sie das Segment aus, auf das Ihr Erlebnis abgestimmt ist.
-   1. Klicken oder tippen Sie auf **Erlebnis hinzufügen**, geben Sie einen Namen ein und klicken oder tippen Sie auf **OK**.
-   1. Klicken oder tippen Sie auf **Weiter**.
+   1. Auswählen **Zielgruppe auswählen** und wählen Sie das Segment aus, auf das Ihr Erlebnis ausgerichtet ist.
+   1. Auswählen **Erlebnis hinzufügen**, geben Sie einen Namen ein und wählen Sie **OK**.
+   1. Wählen Sie **Weiter** aus.
 Wenn Sie A/B-Tests in Adobe Target verwenden:
-   1. Klicken oder tippen Sie auf den Stift im Zielgruppenfeld, um eine Zielgruppe auszuwählen.
-   1. Klicken oder tippen Sie auf **Erlebnis hinzufügen**, geben Sie einen Namen ein und klicken oder tippen Sie auf **OK**.
+   1. Wählen Sie im Feld Zielgruppen das Stiftsymbol aus, um eine Zielgruppe auszuwählen.
+   1. Auswählen **Erlebnis hinzufügen**, geben Sie einen Namen ein und wählen Sie **OK**.
    1. Geben Sie den prozentualen Anteil des Traffics ein, der auf die jeweiligen Erlebnisse umgelenkt werden soll.
-   1. Klicken oder tippen Sie auf **Weiter**.
+   1. Wählen Sie **Weiter** aus.
 1. Um den Beginn der Aktivität festzulegen, wählen Sie im Dropdown-Menü **Start** einen der folgenden Werte:
    * **Wenn aktiviert**: Beginnt die Aktivität, wenn die Seite, die den zielgerichteten Inhalt enthält, aktiviert wird.
-   * **Angegebenes Datum und Uhrzeit**: Ein bestimmter Zeitpunkt. Wenn Sie diese Option auswählen, tippen/klicken Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Zeit an, zu der die Aktivität gestartet werden soll.
+   * **Angegebenes Datum und Uhrzeit**: Ein bestimmter Zeitpunkt. Wenn Sie diese Option auswählen, wählen Sie das Kalendersymbol aus, wählen Sie ein Datum aus und geben Sie die Zeit an, zu der die Aktivität gestartet werden soll.
 1. Verwenden Sie das Dropdown-Menü „Ende“, um festzulegen, wann die Aktivität beendet werden soll. Wählen Sie einen der folgenden Werte aus:
    * **Wenn deaktiviert**: Beendet die Aktivität, wenn die Seite, die den zielgerichteten Inhalt enthält, deaktiviert wird.
-   * **Angegebenes Datum und Uhrzeit:** Ein bestimmter Zeitpunkt. Wenn Sie diese Option wählen, klicken oder tippen Sie auf das Kalendersymbol, wählen Sie ein Datum und geben Sie die Zeit für das Ende der Aktivität an.
+   * **Angegebenes Datum und Uhrzeit:** Ein bestimmter Zeitpunkt. Wenn Sie diese Option auswählen, wählen Sie das Kalendersymbol aus, wählen Sie ein Datum aus und geben Sie die Zeit zum Ende der Aktivität an.
 1. Um eine Priorität für die Aktivität festzulegen, wählen Sie mit dem Schieberegler entweder **Niedrig**, **Normal**, oder **Hoch**.
-1. Wenn Sie Adobe Target als Targeting-Engine verwenden, wählen Sie aus, was mit dieser Aktivität gemessen werden soll. Weitere Informationen zu verfügbaren Erfolgsmetriken finden Sie unter [Konfigurieren der Aktivität und Festlegen von Zielen](/help/sites-cloud/authoring/personalization/targeted-content.md). Sie müssen mindestens ein Ziel auswählen.
-1. Klicken oder tippen Sie auf **Speichern**.
+1. Wenn Sie Adobe Target als Targeting-Engine verwenden, wählen Sie aus, was mit dieser Aktivität gemessen werden soll. Weitere Informationen zu verfügbaren Erfolgsmetriken finden Sie unter [Konfigurieren der Aktivität und Festlegen von Zielen](/help/sites-cloud/authoring/personalization/targeted-content.md). Wählen Sie mindestens ein Ziel aus.
+1. Wählen Sie **Speichern** aus.
 
    >[!NOTE]
    >
@@ -135,12 +135,12 @@ Sie müssen Aktivitäten veröffentlichen, um sie verfügbar zu machen. Auf der 
 
 So veröffentlichen Sie Aktivitäten oder heben deren Veröffentlichung auf:
 
-1. Klicken oder tippen Sie auf die Marke und anschließend auf das Gebiet, das die Aktivität enthält, die veröffentlicht bzw. deren Veröffentlichung aufgehoben werden soll.
-1. Klicken oder tippen Sie auf das Symbol neben der Aktivität oder den Aktivitäten, die Sie veröffentlichen bzw. deren Veröffentlichung Sie aufheben möchten.
+1. Wählen Sie die Marke und dann den Bereich aus, der die Aktivität enthält, die Sie veröffentlichen oder deren Veröffentlichung Sie rückgängig machen möchten.
+1. Wählen Sie das Symbol neben der Aktivität bzw. den Aktivitäten aus, die Sie veröffentlichen oder deren Veröffentlichung Sie rückgängig machen möchten.
 
    ![Veröffentlichen über die Aktivitätskonsole](/help/sites-cloud/authoring/assets/activities-console.png)
 
-1. Um zu veröffentlichen, tippen oder klicken Sie auf **Veröffentlichen**. Soll die Veröffentlichung der Aktivität aufgehoben werden, klicken oder tippen Sie auf **Veröffentlichung** aufheben. Ihre Aktivitäten werden veröffentlicht bzw. ihre Veröffentlichung wird rückgängig gemacht, und ihr Status ändert sich in der Aktivitätskonsole (möglicherweise ist eine Aktualisierung erforderlich).
+1. Wählen Sie zum Veröffentlichen **Veröffentlichen**. Um die Veröffentlichung rückgängig zu machen, wählen Sie **Veröffentlichung rückgängig machen**. Ihre Aktivitäten werden veröffentlicht bzw. ihre Veröffentlichung wird rückgängig gemacht, und ihr Status ändert sich in der Aktivitätskonsole (möglicherweise ist eine Aktualisierung erforderlich).
 
 ## Aktivitäten in der Autoren- und Veröffentlichungsinstanz {#activities-on-author-and-publish-instances}
 
@@ -155,13 +155,13 @@ Sie können die Leistung jeder beliebigen Adobe Target-Aktivität (XT oder A/B) 
 
 So prüfen Sie die Leistung und konvertieren Gewinnererlebnisse:
 
-1. Klicken Sie unter **Personalisierung** auf **Aktivitäten**, um zur **Aktivitätskonsole** zu navigieren.
-1. Klicken oder tippen Sie auf die Marke, deren Aktivitäten Sie anzeigen möchten.
-1. Wählen Sie eine Aktivität aus, klicken oder tippen Sie auf **Eigenschaften anzeigen** und klicken Sie auf die Registerkarte **Berichte**, um die Aktivität auszuwählen, deren Leistung Sie prüfen/deren Gewinnererlebnisse Sie konvertieren möchten. Die Leistungsdaten werden nun angezeigt.
+1. In **Personalisierung** auswählen **Tätigkeiten** , um zur **Tätigkeiten** Konsole.
+1. Wählen Sie die Marke aus, deren Aktivitäten Sie sehen möchten.
+1. Wählen Sie die Aktivität aus und wählen Sie **Eigenschaften anzeigen** und klicken Sie auf **Berichte** und wählen Sie die Aktivität aus, für die Sie die Leistung anzeigen/die erfolgreichsten Erlebnisse konvertieren möchten. Die Leistungsdaten werden nun angezeigt.
 
    ![Überprüfen der Aktivitätsleistung](/help/sites-cloud/authoring/assets/activities-performance.png)
 
-1. Klicken oder tippen Sie auf den Link **Gewinner pushen**, um das Erlebnis als Standarderlebnis festzulegen.
+1. Wählen Sie die **Gewinner fördern** -Link, um dieses Erlebnis als Standarderlebnis zu übertragen.
 
    Durch die Konvertierung des Gewinners geschieht Folgendes:
 
@@ -172,7 +172,7 @@ So prüfen Sie die Leistung und konvertieren Gewinnererlebnisse:
 
    Ein erfolgreichstes Erlebnis ist das Erlebnis, das in den Berichten die höchste Steigerung generiert, welche auf der Konversionsrate basiert.
 
-1. Klicken oder tippen Sie auf **Ja**, um zu bestätigen, dass Sie den „Gewinner“ konvertieren möchten, wobei das aktuelle Erlebnis deaktiviert und durch den Inhalt des erfolgreichsten Erlebnisses ersetzt wird.
+1. Auswählen **Ja** um zu bestätigen, dass Sie den Gewinner konvertieren möchten, das aktuelle Erlebnis deaktivieren und durch den Inhalt des Gewinnererlebnisses ersetzen möchten.
 
 ## Synchronisieren von Aktivitäten mit Adobe Target {#synchronizing-activities-with-adobe-target}
 

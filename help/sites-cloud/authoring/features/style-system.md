@@ -2,10 +2,10 @@
 title: Stilsystem
 description: Das Stilsystem ermöglicht es einem Vorlagenautor, in der Inhaltsrichtlinie für Komponenten Stilklassen festzulegen, die ein Inhaltsautor später bei der Bearbeitung der Komponente auf einer Seite auswählen kann. Diese Stile können alternative visuelle Varianten einer Komponente sein, um das Verfahren flexibler zu gestalten.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 98%
+source-wordcount: '1317'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ Dadurch entfällt die Notwendigkeit, eine benutzerdefinierte Komponente für jed
 
 ## Nutzungsszenario {#use-case}
 
-Vorlagenautorinnen und -autoren benötigen nicht nur die Möglichkeit, die Funktionsweise von Komponenten für Inhaltsautorinnen und -autoren zu konfigurieren, sondern auch die Möglichkeit, eine Reihe alternativer visueller Varianten einer Komponente zu konfigurieren.
+Vorlagenautoren müssen nicht nur die Funktion von Komponenten für Inhaltsautoren konfigurieren, sondern auch verschiedene alternative visuelle Varianten einer Komponente konfigurieren können.
 
 Ebenso müssen Inhaltsautorinnen und -autoren nicht nur die Möglichkeit haben, ihren Inhalt zu strukturieren und anzuordnen, sondern sie müssen auch auswählen können, wie er visuell dargestellt wird.
 
@@ -63,7 +63,7 @@ In den folgenden Abschnitten [Als Inhaltsautor](#as-a-content-author) und [Als V
 Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen Sie wie folgt vor:
 
 1. Installieren Sie den CSS-Code als Client-Bibliotheken, wie im Abschnitt [Überblick](#overview) erklärt.
-1. Konfigurieren Sie die CSS-Klassen, die Sie Ihren Inhaltsautorinnen bzw. -autoren zur Verfügung stellen möchten, wie im Abschnitt [Als Vorlagenautorin bzw. -autor](#as-a-template-author) beschrieben.
+1. Konfigurieren Sie die CSS-Klassen, die Sie Ihren Inhaltsautoren zur Verfügung stellen möchten, wie im Abschnitt beschrieben [Als Vorlagenautor](#as-a-template-author).
 1. Inhaltsautorinnen bzw. -autoren können die Stile daraufhin wie im Abschnitt [Als Inhaltsautorin bzw. -autor](#as-a-content-author) beschrieben verwenden.
 
 ### Als Inhaltsautor {#as-a-content-author}
@@ -73,7 +73,7 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen 
 
    ![Stilsystem für den Autor](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
-1. Tippen oder klicken Sie auf die Schaltfläche **Stile** in der Symbolleiste der Komponente **Liste**, um das Stilmenü zu öffnen und das Erscheinungsbild der Komponente zu bearbeiten.
+1. Wählen Sie die **Stile** in der Symbolleiste der **Liste** -Komponente, um das Stilmenü zu öffnen und das Erscheinungsbild der Komponente zu ändern.
 
    ![Auswählen von Stilen](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
@@ -83,7 +83,7 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen 
 
 ### Als Vorlagenautor {#as-a-template-author}
 
-1. Bei der Bearbeitung der englischsprachigen Primär-Homepage von WKND unter `http://<host>:<port>/sites.html/content/wknd/language-masters/en` können Sie die Vorlage der Seite über **Seiteninformationen > Vorlage bearbeiten** anpassen.
+1. Beim Bearbeiten der englischsprachigen Master-Homepage von WKND unter `http://<host>:<port>/sites.html/content/wknd/language-masters/en`die Vorlage der Seite über **Seiteninformationen > Vorlage bearbeiten**.
 
    ![Vorlage bearbeiten](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
@@ -159,4 +159,4 @@ Definieren Sie keine Elementnamen für Stile, die kombiniert werden können. Wen
 
 Die Fähigkeit, Stilnamen zu definieren, ist bei generischen Komponenten wie dem Layout-Container oder der Inhaltsfragmentkomponente hilfreich, um diesen eine zusätzliche Bedeutung zu verleihen.
 
-Zum Beispiel können einem Layout-Container dadurch semantishce Elemente wie `<main>`, `<aside>`, `<nav>` usw. zugewiesen werden.
+So kann beispielsweise einem Layout-Container Semantik-Elemente wie `<main>`, `<aside>`, `<nav>`usw.

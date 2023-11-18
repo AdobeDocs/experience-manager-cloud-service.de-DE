@@ -2,10 +2,10 @@
 title: Schnelle Site-Erstellung und Frontend-Anpassung
 description: Erfahren Sie, wie das Tool Quick Site Creation Site-Vorlagen, Designs und die Frontend-Pipeline verwendet, um eine schnelle Bereitstellung neuer Sites zu ermöglichen und die Frontend-Entwicklung zu entkoppeln.
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '325'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,7 @@ Das Tool Quick Site Creation ist ein benutzerfreundliches Tool, mit dem Administ
 
 Dazu verwendet das Tool Quick Site Creation mehrere leistungsstarke Funktionen von AEM as a Cloud Service:
 
-1. **AEM-Site-Vorlagen** werden verwendet, um grundlegende Site-Inhalte und -Strukturen sowie Site-Stile zu definieren, und werden von Admins beim Erstellen einer neuen Site ausgewählt.
+1. **AEM Site-Vorlagen** werden verwendet, um grundlegende Site-Inhalte und -Struktur sowie Site-Styling zu definieren, und werden von einem Administrator beim Erstellen einer Site ausgewählt.
 1. Ein **AEM-Site-Design** ist in der Vorlage enthalten und enthält die CSS-, JavaScript- und statischen Ressourcen, die die Formatierung der Site definieren.
 1. Die **Frontend-Pipeline** kann verwendet werden, um Anpassungen unabhängig von der Backend-Entwicklung für das Site-Design bereitzustellen.
 

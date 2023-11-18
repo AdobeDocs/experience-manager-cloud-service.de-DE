@@ -2,10 +2,10 @@
 title: Konfigurieren von Suchformularen
 description: Konfigurieren von Suchformularen für Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2035'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -64,7 +64,7 @@ Die Standardkonfigurationen (alphabetisch aufgelistet) sind verfügbar:
 
 >[!NOTE]
 >
->Weitere Informationen zu Asset-bezogenen Suchformularen finden Sie unter [Assets – Suchfacetten](/help/assets/search-facets.md)
+>Weitere Informationen zu Asset-bezogenen Suchformularen finden Sie unter [Assets - Suchfacetten](/help/assets/search-facets.md).
 
 
 ## Prädikate und ihre Einstellungen {#predicates-and-their-settings}

@@ -1,13 +1,13 @@
 ---
 title: Anpassen der Ansichten von Seiteneigenschaften
 description: Erfahren Sie, wie Seiteneigenschaften von Autoren angezeigt und bearbeitet werden.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '361'
 ht-degree: 43%
 
 ---
-
 
 # Anpassen der Ansichten von Seiteneigenschaften{#customizing-views-of-page-properties}
 
@@ -70,10 +70,10 @@ Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-cloud/authoring/funda
 
 >[!NOTE]
 >
->Informationen zum Konfigurieren von Seiteneigenschaften für die Verwendung mit Live Copies finden Sie im Dokument . [Erweitern des Multi-Site-Managers](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) für weitere Details.
+>Informationen zum Konfigurieren von Seiteneigenschaften für die Verwendung mit Live Copies finden Sie unter [Erweitern des Multi-Site-Managers](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) für weitere Details.
 
 ## Beispielkonfiguration von Seiteneigenschaften {#sample-configuration-of-page-properties}
 
 In diesem Beispiel wird die Dialogfeldvergleichstechnik des [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) einschließlich der Verwendung [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). Es zeigt auch die Verwendung von `cq:showOnCreate` und `cq:hideOnEdit`.
 
-Den Code dieser Seite finden Sie unter [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
+Den Code dieser Seite finden Sie unter [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).

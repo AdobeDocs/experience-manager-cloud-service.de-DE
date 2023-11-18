@@ -2,10 +2,10 @@
 title: Erste Schritte mit CIF-Authoring
 description: Erste Schritte mit CIF-Authoring.
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 56%
+source-wordcount: '778'
+ht-degree: 55%
 
 ---
 
@@ -31,7 +31,7 @@ In diesem Dokument erfahren Sie, wie Sie CIF für das Authoring in Content and C
 
 CIF erweitert den universellen Editor um Funktionen, mit denen Sie auf die Echtzeit-Produktdaten zugreifen können, ohne den Kontext zu verlassen:
 
-Öffnen Sie das seitliche Bedienfeld und wählen Sie „Produkte“ aus der Dropdown-Liste aus.
+Öffnen Sie das seitliche Bedienfeld und wählen Sie aus der Dropdown-Liste die Option &quot;Produkte&quot;.
 ![Produkttyp auswählen](assets/asset-finder-overview.png)
 
 Sie können den Produktkatalog durchsuchen oder das Feld für die Volltextsuche verwenden, um Produkte zu finden.

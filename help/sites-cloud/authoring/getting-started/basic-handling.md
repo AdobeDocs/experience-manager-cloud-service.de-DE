@@ -2,10 +2,10 @@
 title: Grundlegende Handhabung
 description: Machen Sie sich mit der Navigation in AEM und seiner grundlegenden Verwendung vertraut
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2970'
-ht-degree: 95%
+source-wordcount: '2943'
+ht-degree: 91%
 
 ---
 
@@ -31,21 +31,21 @@ Unmittelbar nach der Anmeldung gelangen Sie zum [Navigationsfenster](#navigation
 
 ![Navigationsfenster](/help/sites-cloud/authoring/assets/navigation.png)
 
-Damit Sie ein gutes Verständnis der grundlegenden Funktionen in AEM erhalten, wurde für dieses Dokument die **Sites-Konsole** herangezogen. Klicken bzw. tippen Sie auf **Sites**, um zu beginnen.
+Damit Sie ein gutes Verständnis der grundlegenden Funktionen in AEM erhalten, wurde für dieses Dokument die **Sites-Konsole** herangezogen. Wählen Sie aus **Sites** um zu beginnen.
 
 ## Produktnavigation {#product-navigation}
 
-Wenn eine Benutzerin oder ein Benutzer zum ersten Mal auf eine Konsole zugreift, wird ein Tutorial zur Produktnavigation gestartet. Nehmen Sie sich einen Moment Zeit, um sich das Programm anzusehen und einen guten Überblick über den grundlegenden Umgang mit AEM zu erhalten.
+Wenn eine Benutzerin oder ein Benutzer zum ersten Mal auf eine Konsole zugreift, wird ein Tutorial zur Produktnavigation gestartet. Nehmen Sie sich einen Augenblick Zeit, um sich einen guten Überblick über die grundlegende Handhabung von AEM zu verschaffen.
 
 ![Navigations-Tutorial](/help/sites-cloud/authoring/assets/tutorial.png)
 
-Klicken oder tippen Sie auf **Weiter**, um zur nächsten Seite der Übersicht zu wechseln. Klicken bzw. tippen Sie auf **Schließen** oder klicken Sie außerhalb des Überblicksfensters, um es zu schließen.
+Auswählen **Nächste** um zur nächsten Seite der Übersicht zu gelangen. Auswählen **Schließen** oder wählen Sie außerhalb des Übersichtsdialogfelds aus, um es zu schließen.
 
 Die Übersicht wird bei Ihrem nächsten Zugriff auf eine Konsole wieder gestartet, sofern Sie nicht die Option **Nicht mehr anzeigen** aktivieren.
 
 ## Globale Navigation {#global-navigation}
 
-Sie können mithilfe des globalen Navigationsfensters zwischen den Konsolen navigieren. Dieses Navigationsfenster wird als Vollbild-Dropdown angezeigt, wenn Sie auf den Adobe Experience Manager-Link in der linken oberen Bildschirmecke klicken oder tippen.
+Sie können mithilfe des globalen Navigationsfensters zwischen den Konsolen navigieren. Diese wird als Vollbild-Dropdown-Liste ausgelöst, wenn Sie den Adobe Experience Manager-Link oben links im Bildschirm auswählen.
 
 Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließen** klicken oder tippen. Sie kehren dann zu Ihrer vorherigen Position zurück.
 
@@ -79,7 +79,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
 
 ## Tools-Bereich {#tools-panel}
 
-Im Tools-Bereich befindet sich ein seitliches Bedienfeld mit einem Bereich von Kategorien, in denen ähnliche Tools-Konsolen gruppiert sind. Die Tools-Konsolen bieten Zugriff auf eine Vielzahl spezialisierter Tools und Konsolen, mit denen Sie Websites, digitale Assets und andere Bereiche Ihres Inhalts-Repositorys verwalten können. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+Im Tools-Bereich befindet sich ein seitliches Bedienfeld mit einem Bereich von Kategorien, in denen ähnliche Tools-Konsolen gruppiert sind. Die Tools-Konsolen bieten Zugriff auf verschiedene spezialisierte Tools und Konsolen, mit denen Sie Websites, digitale Assets und andere Bereiche Ihres Inhalts-Repositorys verwalten können. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![Tools-Bereich](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -305,7 +305,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
    * Beim Tippen bzw. Klicken werden der Ressourcenname und der Pfeil hervorgehoben.
    * Die untergeordneten Elemente der angeklickten/angetippten Ressource werden in der Spalte rechts neben der angeklickten/angetippten Ressource angezeigt.
-   * Wenn Sie auf einen Ressourcennamen tippen oder klicken, der keine untergeordneten Elemente enthält, werden dessen Details in der letzten Spalte angezeigt.
+   * Wenn Sie einen Ressourcennamen auswählen, der keine untergeordneten Elemente enthält, werden die zugehörigen Details in der letzten Spalte angezeigt.
 
 * Durch Tippen oder Klicken auf die Miniaturansicht wird die Ressource ausgewählt.
 
@@ -332,7 +332,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
    * den Seitentitel
    * wichtige Daten (z. B. zuletzt bearbeitet, zuletzt veröffentlicht)
    * ob die Seite gesperrt, ausgeblendet oder Teil einer Live Copy ist
-   * wann Sie im Zuge eines Workflows eine Aktion ausführen müssen (sofern zutreffend)
+   * Gegebenenfalls Zeitpunkt, zu dem Sie im Rahmen eines Workflows tätig werden müssen
       * Markierungen, die die erforderlichen Aktionen angeben, können mit Einträgen in Ihrem [Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md) in Verbindung stehen.
 
 * [Schnellaktionen](#quick-actions) sind ebenfalls in dieser Ansicht verfügbar, z. B. Auswahl und allgemeine Aktionen wie Bearbeiten.
@@ -353,12 +353,12 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
    * Wenn alle Elemente in der Liste ausgewählt sind, wird dieses Kontrollkästchen aktiviert.
 
-      * Klicken oder tippen Sie auf das Kontrollkästchen, um die Auswahl für alle aufzuheben.
+      * Aktivieren Sie das Kontrollkästchen, um die Auswahl aller Optionen aufzuheben.
 
    * Wenn nur einige Elemente ausgewählt sind, wird es mit einem Minuszeichen angezeigt.
 
-      * Klicken oder tippen Sie auf das Kontrollkästchen, um alle auszuwählen.
-      * Klicken oder tippen Sie erneut auf das Kontrollkästchen, um die Auswahl für alle aufzuheben.
+      * Aktivieren Sie das Kontrollkästchen, um alle auszuwählen.
+      * Aktivieren Sie das Kontrollkästchen erneut, um die Auswahl für alle aufzuheben.
 
 * Wählen Sie mit der Option **Ansichtseinstellungen** unter der Schaltfläche „Ansichten“ die Spalten aus, die angezeigt werden sollen. Die folgenden Spalten stehen zur Anzeige zur Verfügung:
 
@@ -384,7 +384,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
   ![Spaltenreihenfolge](/help/sites-cloud/authoring/assets/column-order.png)
 
-  Klicken oder tippen Sie auf die vertikale Auswahlleiste und ziehen Sie das Element an die gewünschte Position in der Liste.
+  Wählen Sie die vertikale Auswahlleiste aus und ziehen Sie das Element an eine neue Position in der Liste.
 
   ![Bestellliste](/help/sites-cloud/authoring/assets/order-list.png)
 
@@ -472,10 +472,10 @@ Im Dokument [Verwenden der Site-Leiste zur Verwaltung des Designs Ihrer Site](/h
 
 >[!TIP]
 >
->Eine vollständige Beschreibung des Prozesses zum Erstellen einer neuen Site aus einer Vorlage und zum Anpassen ihres Designs finden Sie in der [Tour zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md).
+>Eine vollständige Beschreibung des Prozesses zum Erstellen einer Site aus einer Vorlage und zum Anpassen ihres Designs finden Sie in der [Tour zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md).
 
 ### Filter {#filter}
 
-Dadurch wird ein Bedienfeld geöffnet, das dem [suchen](/help/sites-cloud/authoring/getting-started/search.md) mit den entsprechenden Ortsfiltern, die bereits eingestellt sind, können Sie den anzuzeigenden Inhalt weiter filtern.
+Dadurch wird ein Bedienfeld geöffnet, das dem [suchen](/help/sites-cloud/authoring/getting-started/search.md) mit den entsprechenden Ortsfiltern, die bereits festgelegt wurden, können Sie den Inhalt, den Sie anzeigen möchten, weiter filtern.
 
 ![Filterbeispiel](/help/sites-cloud/authoring/assets/filter.png)

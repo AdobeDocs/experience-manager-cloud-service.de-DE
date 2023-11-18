@@ -3,9 +3,9 @@ title: Caching in AEM as a Cloud Service
 description: Erfahren Sie mehr über die Grundlagen der Zwischenspeicherung in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2874'
+source-wordcount: '2873'
 ht-degree: 95%
 
 ---
@@ -238,7 +238,7 @@ In Umgebungen, die im Oktober 2023 oder höher erstellt wurden, entfernt das CDN
 ^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
 ```
 
-Bitte senden Sie ein Support-Ticket, wenn Sie möchten, dass dieses Verhalten deaktiviert wird.
+Senden Sie ein Support-Ticket, wenn Sie möchten, dass dieses Verhalten deaktiviert wird.
 
 Für Umgebungen, die vor Oktober 2023 erstellt wurden, wird empfohlen, die `ignoreUrlParams` Eigenschaft als [hier dokumentiert](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#ignoring-url-parameters).
 

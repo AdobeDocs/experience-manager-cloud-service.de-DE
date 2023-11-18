@@ -2,10 +2,10 @@
 title: Erstellen von Inhaltsfragmentmodellen – Headless-Einrichtung
 description: Definieren Sie die Struktur des Inhalts, den Sie mithilfe von AEM Headless-Funktionen mit Inhaltsfragmentmodellen erstellen und bereitstellen möchten.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 97%
+source-wordcount: '478'
+ht-degree: 91%
 
 ---
 
@@ -24,14 +24,14 @@ Inhaltsfragmentmodelle definieren die Struktur der Daten und Inhalte, die Sie in
 Ein Informationsarchitekt würde diese Aufgaben nur sporadisch durchführen, da neue Modelle erforderlich sind. Für die Zwecke dieser Anleitung für den Einstieg müssen wir nur ein Modell erstellen.
 
 1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Werkzeuge**, **Allgemein**, **Inhaltsfragmentmodelle**.
-1. Tippen oder klicken Sie auf den Ordner, der durch die Erstellung der Konfiguration erstellt wurde.
+1. Wählen Sie den Ordner aus, der durch die Erstellung der Konfiguration erstellt wurde.
 
    ![Der Ordner „Modelle“](../assets/models-folder.png)
-1. Tippen oder klicken Sie auf **Erstellen**.
+1. Wählen Sie **Erstellen** aus.
 1. Geben Sie einen **Modell-Titel**, **Tags** und eine **Beschreibung** an. Sie können auch **Modell aktivieren** aus- oder abwählen, um zu steuern, ob das Modell unmittelbar nach der Erstellung aktiviert wird.
 
    ![Erstellen eines Modells](../assets/models-create.png)
-1. Tippen oder klicken Sie im Bestätigungsfenster auf **Öffnen**, um Ihr Modell zu konfigurieren.
+1. Wählen Sie im Bestätigungsfenster **Öffnen** um Ihr Modell zu konfigurieren.
 
    ![Bestätigungsfenster](../assets/models-confirmation.png)
 1. Erstellen Sie mit dem **Inhaltsfragmentmodell-Editor** das Inhaltsfragmentmodell, indem Sie Felder aus der Spalte **Datentypen** ziehen und ablegen.
@@ -42,14 +42,14 @@ Ein Informationsarchitekt würde diese Aufgaben nur sporadisch durchführen, da 
 
    ![Konfigurieren von Eigenschaften](../assets/models-configure-properties.png)
 
-1. Wenn Sie mit dem Erstellen des Modells fertig sind, tippen oder klicken Sie auf **Speichern**.
+1. Wenn Sie mit der Modellerstellung fertig sind, wählen Sie **Speichern**.
 
 1. Der Modus des neu erstellten Modells hängt davon ab, ob Sie beim Erstellen des Modells **Modell aktivieren** ausgewählt haben:
    * ausgewählt – das neue Modell ist bereits **aktiviert**
    * nicht ausgewählt – das neue Modell wird im Modus **Entwurf** erstellt
 
 1. Wenn nicht bereits aktiviert, muss das Modell **aktiviert** werden, um es zu verwenden.
-   1. Wählen Sie das soeben erstellte Modell aus und tippen oder klicken Sie auf **Aktivieren**.
+   1. Wählen Sie das soeben erstellte Modell aus und klicken Sie auf **Aktivieren**.
 
       ![Aktivieren des Modells](../assets/models-enable.png)
    1. Bestätigen Sie die Aktivierung des Modells, indem Sie im Bestätigungsdialogfeld auf **Aktivieren** tippen oder klicken.

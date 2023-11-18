@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie AEM verwenden, um eine Site mithilfe von Site
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 93%
+source-wordcount: '756'
+ht-degree: 77%
 
 ---
 
@@ -55,21 +55,21 @@ Die Verwendung einer Vorlage zum Erstellen einer Site ist einfach.
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Tippen oder klicken Sie oben rechts im Bildschirm auf **Erstellen** und wählen Sie aus dem Dropdown-Menü **Site aus Vorlage**.
+1. Auswählen **Erstellen** oben rechts im Bildschirm und aus dem Dropdown-Menü wählen Sie **Site aus Vorlage**.
 
    ![Erstellen einer Site aus einer Vorlage](../assets/create-site-from-template.png)
 
-1. Tippen oder klicken Sie im Assistenten Site erstellen auf eine vorhandene Vorlage im linken Bereich oder auf **Import** oben in der linken Spalte, um eine neue Vorlage zu importieren.
+1. Wählen Sie im Assistenten &quot;Site erstellen&quot;eine vorhandene Vorlage im linken Bereich oder auf **Import** oben in der linken Spalte, um eine neue Vorlage zu importieren.
 
    ![Assistent zur Site-Erstellung](../assets/site-creation-wizard.png)
 
-   1. Wenn Sie sich für den Import entschieden haben, suchen Sie im Datei-Browser die gewünschte Vorlage und tippen oder klicken Sie auf **Hochladen**.
+   1. Wenn Sie sich für den Import entschieden haben, suchen Sie im Dateibrowser die gewünschte Vorlage und wählen Sie **Hochladen**.
 
    1. Nach dem Hochladen wird sie in der Liste der verfügbaren Vorlagen angezeigt.
 
-1. Bei der Auswahl einer Vorlage werden Informationen zur Vorlage in der rechten Spalte angezeigt. Tippen oder klicken Sie bei ausgewählter Vorlage auf **Weiter**.
+1. Bei der Auswahl einer Vorlage werden Informationen zur Vorlage in der rechten Spalte angezeigt. Wählen Sie bei ausgewählter Vorlage die Option **Nächste**.
 
-   ![Vorlage auswählen](../assets/select-site-template.png)
+   ![Auswählen einer Vorlage](../assets/select-site-template.png)
 
 1. Geben Sie einen Titel für die Site ein. Der Name der Site kann angegeben oder aus dem Titel generiert werden, falls er weggelassen wird.
 
@@ -77,11 +77,11 @@ Die Verwendung einer Vorlage zum Erstellen einer Site ist einfach.
    * Der Site-Name wird Teil der URL.
    * Der Site-Name muss den [AEM-Konventionen zur Seitenbenennung](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices) entsprechen.
 
-1. Tippen oder klicken Sie auf **Erstellen**, um die Site aus der Site-Vorlage zu erstellen.
+1. Auswählen **Erstellen** und die Site aus der Site-Vorlage erstellt wird.
 
    ![Details der neuen Site](../assets/create-site-details.png)
 
-1. Tippen oder klicken Sie im angezeigten Bestätigungsdialogfeld auf **Fertig**.
+1. Wählen Sie im angezeigten Bestätigungsdialogfeld die Option **Fertig**.
 
    ![Dialogfeld „Erfolg“](../assets/success.png)
 
@@ -93,10 +93,10 @@ Inhaltsautoren können jetzt mit der Bearbeitung beginnen!
 
 ## Site-Anpassung {#site-customization}
 
-Wenn Ihre Site über die verfügbaren Vorlagen hinaus angepasst werden muss, haben Sie eine Reihe von Optionen.
+Wenn Ihre Site über die verfügbaren Vorlagen hinaus angepasst werden muss, haben Sie mehrere Möglichkeiten.
 
-* Wenn die Site-Struktur oder der anfängliche Inhalt angepasst werden muss, [kann die Site-Vorlage an Ihre Anforderungen angepasst werden](site-templates.md).
-* Wenn der Site-Stil angepasst werden muss, [kann das Site-Design heruntergeladen und angepasst werden](/help/journey-sites/quick-site/overview.md).
-* Wenn die Site-Funktionalität angepasst werden muss, [kann die Site vollständig angepasst werden](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+* Wenn die Site-Struktur oder der anfängliche Inhalt angepasst werden muss, [die Site-Vorlage kann an Ihre Anforderungen angepasst werden](site-templates.md).
+* Wenn der Site-Stil angepasst werden muss, [Das Site-Design kann heruntergeladen und angepasst werden](/help/journey-sites/quick-site/overview.md).
+* Wenn die Site-Funktionalität angepasst werden muss, [Die Site kann vollständig angepasst werden](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 Jede Anpassung sollte mit Unterstützung eines Entwicklungs-Teams vorgenommen werden.

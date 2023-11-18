@@ -2,9 +2,9 @@
 title: Wie können Designs in Adaptive Forms erstellt und verwendet werden?
 description: Sie können Designs verwenden, um ein adaptives Formular mithilfe von Kernkomponenten zu gestalten und eine visuelle Identität bereitzustellen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2677'
+source-wordcount: '2676'
 ht-degree: 18%
 
 ---
@@ -367,7 +367,7 @@ Das Design wird mithilfe der [Front-End-Pipeline.](https://experienceleague.adob
 
    ![run-a-piplein](/help/forms/assets/canvas-theme-run-pipeline.png)
 
-Sobald der Build abgeschlossen ist, wird das Design in der Autoreninstanz zur Verwendung verfügbar. Sie wird unter dem **[!UICONTROL Stil]** Registerkarte im Assistenten zur Erstellung adaptiver Formulare beim Erstellen eines neuen adaptiven Formulars.
+Sobald der Build abgeschlossen ist, wird das Design in der Autoreninstanz zur Verwendung verfügbar. Sie wird unter dem **[!UICONTROL Stil]** Registerkarte im Assistenten zur Erstellung adaptiver Formulare beim Erstellen eines adaptiven Formulars.
 
 ![Benutzerdefiniertes Design auf der Registerkarte &quot;Stil&quot;](/help/forms/assets/custom-theme-style-tab.png)
 

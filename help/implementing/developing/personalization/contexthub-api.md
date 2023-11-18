@@ -2,10 +2,10 @@
 title: Verweis auf die ContextHub-JavaScript-API
 description: Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die ContextHub-Komponente zur Seite hinzugefügt wurde.
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4620'
-ht-degree: 100%
+source-wordcount: '4612'
+ht-degree: 99%
 
 ---
 
@@ -403,7 +403,7 @@ Ein Objekt, das die unformatierte Antwort darstellt.
 
 #### getServiceDetails() {#getservicedetails}
 
-Ruft das Service-Objekt für dieses ContextHub.Store.JSONPStore-Objekt ab. Das Service-Objekt enthält alle Informationen, die zum Erstellen der Service-URL erforderlich sind.
+Ruft das Service-Objekt für dieses ContextHub.Store.JSONPStore-Objekt ab. Das Dienstobjekt enthält die Informationen, die zum Erstellen der Dienst-URL erforderlich sind.
 
 ##### Rückgabe {#returns-getservicedetails}
 
@@ -481,15 +481,15 @@ Löst den angegebenen Parameter auf.
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` erweitert [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) so, dass es alle Funktionen dieser Klasse übernimmt. Die Daten, die vom JSONP-Service abgerufen werden, bleiben jedoch gemäß der Konfiguration der ContextHub-Persistenz bestehen. (Siehe [Persistenzmodi:](adding-contexthub.md#persistence-modes))
+`ContextHub.Store.PersistedJSONPStore` erweitert [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) so erbt es alle Funktionen dieser Klasse. Die Daten, die vom JSONP-Service abgerufen werden, bleiben jedoch gemäß der Konfiguration der ContextHub-Persistenz bestehen. (Siehe [Persistenzmodi:](adding-contexthub.md#persistence-modes))
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
-`ContextHub.Store.PersistedStore` erweitert [ContextHub.Store.Core](#contexthub-store-core) so, dass es alle Funktionen dieser Klasse übernimmt. Die Daten in diesem Store werden gemäß der Konfiguration der ContextHub-Persistenz beibehalten.
+`ContextHub.Store.PersistedStore` erweitert [ContextHub.Store.Core](#contexthub-store-core) so erbt es alle Funktionen dieser Klasse. Die Daten in diesem Store werden gemäß der Konfiguration der ContextHub-Persistenz beibehalten.
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-`ContextHub.Store.SessionStore` erweitert [ContextHub.Store.Core](#contexthub-store-core) und übernimmt dadurch alle Funktionen dieser Klasse. Die Daten in diesem Store werden mithilfe der speicherinternen Persistenz beibehalten (JavaScript-Objekt).
+`ContextHub.Store.SessionStore` erweitert [ContextHub.Store.Core](#contexthub-store-core) so erbt es alle Funktionen dieser Klasse. Die Daten in diesem Store werden mithilfe der speicherinternen Persistenz beibehalten (JavaScript-Objekt).
 
 ## ContextHub.UI {#contexthub-ui}
 

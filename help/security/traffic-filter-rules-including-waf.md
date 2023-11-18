@@ -2,9 +2,9 @@
 title: Traffic-Filterregeln, einschließlich WAF-Regeln
 description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: a129c188e9ec6871c86245acb5f0bf0333fdc340
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3435'
 ht-degree: 97%
 
 ---
@@ -113,8 +113,8 @@ Der `kind`-Parameter sollte auf `CDN` gesetzt sein und die Version auf die Schem
 
 1. Erstellen Sie für andere Umgebungstypen als RDE eine zielgerichtete Bereitstellungskonfigurations-Pipeline in Cloud Manager.
 
-   * [Informationen zu Produktions-Pipelines finden Sie in diesem Dokument.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-   * [Informationen zu produktionsfremden Pipelines finden Sie in diesem Dokument.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * [Siehe Konfigurieren von Produktions-Pipelines .](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * [Siehe Konfigurieren von produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 Für RDEs wird später die Befehlszeile verwendet, RDE wird jedoch derzeit noch nicht unterstützt.
 

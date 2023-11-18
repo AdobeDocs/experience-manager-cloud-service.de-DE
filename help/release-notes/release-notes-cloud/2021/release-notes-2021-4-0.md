@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.4.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.4.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 89%
+source-wordcount: '1533'
+ht-degree: 87%
 
 ---
 
@@ -83,7 +83,7 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 * Wenn auf der Seite Eigenschaften eine Auswahl getroffen wird, um Metadaten zu aktualisieren, reagiert die Benutzeroberfläche nur langsam, wenn das Schema viele Optionen bietet. (CQ-4318538)
 
-* Beim Aktualisieren und Speichern von Metadatenwerten in einem einzeiligen Textfeld werden die Werte im Dropdown-Menü gelöscht, auch wenn die Bearbeitung im Dropdown-Menü deaktiviert ist. (CQ-4317077)
+* Beim Aktualisieren und Speichern von Metadatenwerten in einem einzeiligen Textfeld werden die Werte im Dropdown-Listenmenü gelöscht, auch wenn die Bearbeitungen im Dropdown-Listenmenü deaktiviert sind. (CQ-4317077)
 
 * Sie können die Auslassungszeichen für Anmerkungen verwenden, um Assets zu überprüfen. Wenn kleine Auslassungszeichen verwendet werden, überschneiden sie sich in der Druckversion mit der Nummer der Anmerkung. (CQ-4316792)
 

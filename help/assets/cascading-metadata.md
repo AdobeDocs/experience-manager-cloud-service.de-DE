@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 96%
+source-wordcount: '971'
+ht-degree: 84%
 
 ---
 
@@ -36,14 +36,14 @@ Stellen Sie sich ein Szenario vor, in dem kaskadierende Metadaten basierend auf 
 
 Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen als erforderliches Feld an.
 
-1. Tippen oder klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Schemas]**.
-1. Wählen Sie auf der Seite **[!UICONTROL Schemaformulare]** ein Schemaformular aus und tippen oder klicken Sie dann in der Symbolleiste auf **[!UICONTROL Bearbeiten]**, um das Schema zu bearbeiten.
+1. Wählen Sie die [!DNL Experience Manager] -Logo und navigieren Sie zu **[!UICONTROL Instrumente]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenschemata]**.
+1. Im **[!UICONTROL Schema Forms]** Seite, wählen Sie ein Schemaformular aus und wählen Sie dann **[!UICONTROL Bearbeiten]** in der Symbolleiste, um das Schema zu bearbeiten.
 
    ![Auswahlformular](assets/select_form.png)
 
 1. (Optional) Erstellen Sie im Metadatenschema-Editor ein Feld, um Bedingungen zu erstellen. Geben Sie einen Namen und einen Eigenschaftspfad auf der Registerkarte **[!UICONTROL Einstellungen]** an. 
 
-   Um eine Registerkarte zu erstellen, tippen/klicken Sie auf `+` , um eine Registerkarte hinzuzufügen und anschließend ein Metadatenfeld hinzuzufügen.
+   Um eine Registerkarte zu erstellen, wählen Sie `+` , um eine Registerkarte hinzuzufügen und anschließend ein Metadatenfeld hinzuzufügen.
 
    ![Registerkarte hinzufügen](assets/add_tab.png)
 
@@ -53,7 +53,7 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
 1. Schlüssel-Wert-Paare sind die Optionen, die einem Formularbenutzenden zur Verfügung gestellt werden. Sie können die Schlüssel-Wert-Paare entweder manuell oder aus einer JSON-Datei bereitstellen.
 
-   * Um die Werte manuell festzulegen, wählen Sie **[!UICONTROL Manuell hinzufügen]** und tippen/klicken Sie auf **[!UICONTROL Auswahl hinzufügen]** und geben Sie den Optionstext und den Wert an. Legen Sie z. B. die Asset-Typen „Video“, „PDF“, „Wort“ und „Bild“ fest.
+   * Um die Werte manuell anzugeben, wählen Sie **[!UICONTROL Manuelles Hinzufügen]** und wählen Sie **[!UICONTROL Auswahl hinzufügen]** und geben Sie den Optionstext und -wert an. Legen Sie z. B. die Asset-Typen „Video“, „PDF“, „Wort“ und „Bild“ fest.
 
    * Um die Werte dynamisch aus einer JSON-Datei abzurufen, wählen Sie **[!UICONTROL Über JSON-Pfad hinzufügen]** aus und geben Sie den Pfad einer JSON-Datei an. [!DNL Experience Manager] ruft die Schlüssel-Wert-Paare in Echtzeit ab, wenn das Formular dem Anwender angezeigt wird.
 
@@ -80,7 +80,7 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
    ![Abhängigkeitsfeld auswählen](assets/select_dependentfield.png)
 
 1. Wählen Sie unter **[!UICONTROL Anforderung]** die Option **[!UICONTROL Erforderlich, basierend auf neuer Regel]** aus.
-1. Tippen/Klicken Sie auf **[!UICONTROL Regel hinzufügen]** und wählen Sie das Feld **[!UICONTROL Asset-Typ]**, um eine Abhängigkeit zu erstellen. Wählen Sie auch den Feldwert, auf dessen Grundlage die Abhängigkeit erstellt werden soll. Wählen Sie in diesem Fall **[!UICONTROL Video]** aus. Tippen/Klicken Sie auf **[!UICONTROL Fertig]**, um die Änderungen zu speichern.
+1. Auswählen **[!UICONTROL Regel hinzufügen]** und wählen Sie **[!UICONTROL Asset-Typ]** -Feld, um eine Abhängigkeit zu erstellen. Wählen Sie auch den Feldwert aus, für den die Abhängigkeit erstellt werden soll. Wählen Sie in diesem Fall **[!UICONTROL Video]** aus. Auswählen **[!UICONTROL Fertig]** , um die Änderungen zu speichern.
 
    ![Regel festlegen](assets/define_rule.png)
 
@@ -90,13 +90,13 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
 1. Wählen Sie unter **[!UICONTROL Sichtbarkeit]** die Option **[!UICONTROL Sichtbar, basierend auf neuer Regel]** aus.
 
-1. Tippen/Klicken Sie auf **[!UICONTROL Regel hinzufügen]** und wählen Sie das Feld **[!UICONTROL Asset-Typ]**, um eine Abhängigkeit zu erstellen. Wählen Sie auch den Feldwert, auf dessen Grundlage die Abhängigkeit erstellt werden soll. Wählen Sie in diesem Fall **[!UICONTROL Video]** aus. Tippen/Klicken Sie auf **[!UICONTROL Fertig]**, um die Änderungen zu speichern.
+1. Auswählen **[!UICONTROL Regel hinzufügen]** und wählen Sie **[!UICONTROL Asset-Typ]** -Feld, um eine Abhängigkeit zu erstellen. Wählen Sie auch den Feldwert, auf dessen Grundlage die Abhängigkeit erstellt werden soll. Wählen Sie in diesem Fall **[!UICONTROL Video]** aus. Auswählen **[!UICONTROL Fertig]** , um die Änderungen zu speichern.
 
    ![Sichtbarkeitsregel festlegen](assets/define_visibilityrule.png)
 
    >[!CAUTION]
    >
-   >Um die Werte zurückzusetzen, klicken oder tippen Sie auf Leerzeichen oder auf eine beliebige Stelle in der Benutzeroberfläche, die keine Werte enthält. Nachdem die Werte zurückgesetzt wurden, wählen Sie die Werte erneut aus.
+   >Um die Werte zurückzusetzen, wählen Sie eine beliebige Stelle auf der Benutzeroberfläche aus, die nicht die Werte enthält. Nachdem die Werte zurückgesetzt wurden, wählen Sie die Werte erneut aus.
 
    >[!NOTE]
    >

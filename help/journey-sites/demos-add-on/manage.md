@@ -2,10 +2,10 @@
 title: Verwalten Ihrer Demo-Sites
 description: Erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihrer Demo-Sites helfen, und wie Sie diese entfernen können.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 94%
+source-wordcount: '936'
+ht-degree: 89%
 
 ---
 
@@ -41,7 +41,7 @@ In diesem Dokument erfahren Sie, wie Sie die von Ihnen erstellten Demo-Sites ver
 
 Da Sie nun über eigene Demo-Sites verfügen, möchten Sie wahrscheinlich wissen, wie Sie diese verwalten können. Die Pipeline hat nicht nur die Site-Vorlagen bereitgestellt, um Ihnen Inhalte für die Demo-Sites zur Verfügung zu stellen, sondern auch eine Reihe von Dienstprogrammen zur Verwaltung dieser Sites bereitgestellt.
 
-1. Wählen Sie in der globalen AEM-Navigationsleiste **Tools** -> **Referenz-Demos** -> **Referenzdemo-Dienstprogramme**.
+1. Wählen Sie in der AEM globalen Navigationsleiste die Option **Instrumente** > **Referenz-Demos** > **Referenz Demo Utilities**.
 
    ![Demo-Dienstprogramme zur Selbstbedienung](assets/demo-utilities.png)
 
@@ -49,7 +49,7 @@ Da Sie nun über eigene Demo-Sites verfügen, möchten Sie wahrscheinlich wissen
 
    ![Dashboard](assets/dashboard.png)
 
-Demo-Dienstprogramme zur Selbstbedienung bieten eine Reihe von Tools.
+Self-Service Demo Utilities bietet mehrere Tools.
 
 * **Löschen von Sites**: Wählen Sie die Site aus, die Sie in dieser Adobe Experience Manager-Instanz löschen möchten. Beachten Sie, dass es sich um eine destruktive Aktion handelt, die nicht rückgängig gemacht werden kann, sobald sie eingeleitet wurde.
 * **Löschen von Site-Vorlagen**: Wählen Sie die Site-Vorlage aus, die Sie in dieser Adobe Experience Manager-Instanz löschen möchten. Stellen Sie sicher, dass auch alle Sites, die auf die Vorlage verweisen, vor dem Löschen der Site-Vorlage gelöscht werden. Beachten Sie, dass es sich um eine destruktive Aktion handelt, die nicht rückgängig gemacht werden kann, sobald sie eingeleitet wurde.
@@ -62,11 +62,11 @@ Demo-Dienstprogramme zur Selbstbedienung bieten eine Reihe von Tools.
 
 Nachdem Sie eine Reihe von AEM-Funktionen getestet haben, benötigen Sie Ihre Demo-Site oder sogar die Vorlage, auf der sie basiert, möglicherweise nicht mehr. Es ist einfach, sowohl Demo-Sites als auch Site-Vorlagen zu löschen.
 
-1. Rufen Sie die **Referenz-Demo-Dienstprogramme** auf und tippen oder klicken Sie auf **Sites löschen**.
+1. Zugriff auf **Referenz Demo Utilities** und wählen **Sites löschen**.
 
    ![Löschen von Sites](assets/delete-sites.png)
 
-1. Die verfügbaren Sites werden in einer Liste dargestellt. Markieren Sie die Site(s), die Sie löschen möchten, und tippen oder klicken Sie auf **Löschen**.
+1. Die verfügbaren Sites werden in einer Liste dargestellt. Markieren Sie die Website(s), die Sie löschen möchten, und wählen Sie **Löschen**.
 
    >[!CAUTION]
    >

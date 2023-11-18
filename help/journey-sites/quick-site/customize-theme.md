@@ -2,10 +2,10 @@
 title: Anpassen des Site-Designs
 description: Erfahren Sie, wie das Site-Design erstellt wird, wie Sie es anpassen und wie Sie es mit AEM-Live-Inhalten testen können.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 96%
+source-wordcount: '960'
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ Sobald Sie sich mit der Struktur des Design-Projekts vertraut gemacht haben, sta
 
    ![npm run live](assets/npm-run-live.png)
 
-1. Wenn der Proxy-Server gestartet wird, wird automatisch ein Browser mit `http://localhost:7001/` geöffnet. Tippen oder klicken Sie auf **LOKAL ANMELDEN (NUR ADMINISTRATORAUFGABEN)** und melden Sie sich mit den vom AEM-Administrator für Sie bereitgestellten Anmeldeinformationen des Proxy-Benutzers an.
+1. Wenn der Proxy-Server gestartet wird, wird automatisch ein Browser mit `http://localhost:7001/` geöffnet. Auswählen **LOKAL ANMELDEN (NUR ADMINISTRATORAUFGABEN)** und melden Sie sich mit den vom AEM Administrator angegebenen Anmeldeinformationen des Proxybenutzers an.
 
    ![Lokale Anmeldung](assets/sign-in-locally.png)
 

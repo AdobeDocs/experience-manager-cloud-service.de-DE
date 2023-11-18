@@ -2,16 +2,16 @@
 title: Komponenten
 description: Komponenten sind der grundlegende Baustein für die Erstellung von Inhaltsseiten in AEM.
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 100%
+source-wordcount: '349'
+ht-degree: 94%
 
 ---
 
 # Komponenten {#components}
 
-Komponenten sind der grundlegende Baustein für die Erstellung von Inhaltsseiten in Adobe Experience Manager (AEM). Komponenten wie Bilder, Text und Titel können einfach per Drag-and-Drop verschoben werden, um Inhalte zu erstellen.
+Komponenten sind der grundlegende Baustein für die Erstellung von Inhaltsseiten in Adobe Experience Manager (AEM). Komponenten wie Bilder, Text, Titel usw. können einfach per Drag-and-Drop verschoben werden, um Inhalte zu erstellen.
 
 AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten. Diese sind beim [Bearbeiten einer Seite](/help/sites-cloud/authoring/fundamentals/editing-content.md) verfügbar und werden nach Hauptfunktionsbereich (d. h. Komponentengruppe) gruppiert, um die Filterung zu erleichtern.
 

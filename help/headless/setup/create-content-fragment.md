@@ -2,10 +2,10 @@
 title: Erstellen von Inhaltsfragmenten – Headless-Einrichtung
 description: Erfahren Sie, wie Sie mit den Inhaltsfragmenten von AEM seitenunabhängige Inhalte für die Headless-Bereitstellung entwerfen, erstellen, kuratieren und verwenden können.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 100%
+source-wordcount: '341'
+ht-degree: 87%
 
 ---
 
@@ -25,10 +25,10 @@ Inhaltsfragmente enthalten strukturierten Inhalt und können im JSON-Format bere
 
 Inhaltsautorinnen und -autoren können eine beliebige Anzahl von Inhaltsfragmenten für ihre Inhalte erstellen. Das die zentrale Aufgabe, die sie in AEM ausführen. Für die Zwecke dieses Erste-Schritte-Handbuchs brauchen wir nur eines zu erstellen.
 
-1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Navigation** -> **Inhaltsfragmente** aus.
+1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü die Option **Navigation** > **Inhaltsfragmente**.
 
-1. Tippen oder klicken Sie auf den [zuvor von Ihnen erstellten Ordner](create-assets-folder.md).
-1. Tippen oder klicken Sie auf **Erstellen**.
+1. Wählen Sie die [Ordner, den Sie zuvor erstellt haben.](create-assets-folder.md)
+1. Wählen Sie **Erstellen** aus.
 1. Die Erstellung eines Inhaltsfragments wird als Dialogfeld angezeigt.
 Wählen Sie den Speicherort und das Modell aus, die Sie zum Erstellen Ihres Inhaltsfragments verwenden möchten.
 
@@ -39,7 +39,7 @@ Wählen Sie den Speicherort und das Modell aus, die Sie zum Erstellen Ihres Inha
 
    ![Dialogfeld „Neues Inhaltsfragment erstellen“](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-1. Tippen oder klicken Sie auf **Erstellen** oder **Erstellen und öffnen**.
+1. Auswählen **Erstellen** oder  **Erstellen und öffnen**.
 
 Inhaltsfragmente können auf andere Inhaltsfragmente verweisen, was bei Bedarf eine verschachtelte Inhaltsstruktur ermöglicht.
 

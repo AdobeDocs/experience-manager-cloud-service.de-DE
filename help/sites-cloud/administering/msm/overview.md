@@ -4,10 +4,10 @@ description: Im Folgenden erhalten Sie eine Einführung in das Wiederverwenden v
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2714'
-ht-degree: 96%
+source-wordcount: '2702'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ Diese Seite bietet einen Überblick über das Wiederverwenden von Inhalten mit M
 
 >[!NOTE]
 >
->MSM kann auch für Assets, einschließlich Inhaltsfragmente, verwendet werden. Weitere Einzelheiten finden Sie unter [Wiederverwendung von Inhaltsfragmenten mit MSM für Assets](/help/assets/reuse-assets-using-msm.md) (nur über die Assets-Konsole verfügbar).
+>MSM kann auch für Assets, einschließlich Inhaltsfragmente, verwendet werden. Siehe [Wiederverwenden von Inhaltsfragmenten mit MSM für Assets](/help/assets/reuse-assets-using-msm.md) (nur über die Konsole &quot;Assets&quot;verfügbar).
 
 ## Mögliche Szenarien {#possible-scenarios}
 
@@ -106,7 +106,7 @@ MSM und Live Copies haben zahlreiche Anwendungsfälle. Szenarien können beispie
   >
   >und
   >
-  >* welcher Anteil der einzelnen Kopien angepasst werden muss
+  >* Wie viel der einzelnen Kopien angepasst werden muss.
 
 ## MSM über die Benutzeroberfläche {#msm-from-the-ui}
 
@@ -172,7 +172,7 @@ Als Einführung bietet die folgende Tabelle einen Überblick über die wichtigst
 
 >[!TIP]
 >
->Lesen Sie das Dokument . [Erweitern des Multi-Site-Managers](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) für die Objektnamen.
+>Siehe [Erweitern des Multi-Site-Managers](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) für die Objektnamen.
 
 ## Live Copies {#live-copies}
 
@@ -278,7 +278,7 @@ Ein Rollout ist die zentrale MSM-Aktion, die Live Copies mit ihrer Quelle synch
 Eine Rollout-Konfiguration definiert, wann und wie eine Live Copy mit dem Quellinhalt synchronisiert wird. Eine Rollout-Konfiguration besteht aus einem Auslöser und einer oder mehreren Synchronisierungsaktionen:
 
 * **Auslöser** – Ein Auslöser ist ein Ereignis, das die Live-Aktionssynchronisierung bewirkt, wie zum Beispiel die Aktivierung einer Quellseite. MSM definiert die Auslöser, die Sie verwenden können.
-* **Synchronisierungsaktionen** – Synchronisierungsaktionen werden auf der Live Copy durchgeführt, um sie mit der Quelle zu synchronisieren. Beispielaktionen kopieren Inhalte, sortieren untergeordnete Knoten und aktivieren die Live Copy-Seite. MSM stellt eine Reihe von Synchronisierungsaktionen bereit.
+* **Synchronisierungsaktionen** – Synchronisierungsaktionen werden auf der Live Copy durchgeführt, um sie mit der Quelle zu synchronisieren. Beispielaktionen kopieren Inhalte, sortieren untergeordnete Knoten und aktivieren die Live Copy-Seite. MSM bietet mehrere Synchronisierungsaktionen.
 
 >[!NOTE]
 >
@@ -319,7 +319,7 @@ Die folgenden Schritte beschreiben die standardmäßige Vorgehensweise für die 
 1. Entwickeln Sie die Inhalte der Quellseite.
 1. Legen Sie die zu verwendende Rollout-Konfiguration fest.
 
-   1. MSM [installiert mehrere Rollout-Konfigurationen](live-copy-sync-config.md#installed-rollout-configurations), die sich für eine Reihe von Anwendungsfällen eignen.
+   1. MSM [installiert mehrere Rollout-Konfigurationen](live-copy-sync-config.md#installed-rollout-configurations) , die mehrere Anwendungsfälle erfüllen können.
    1. Optional können Sie [eine Rollout-Konfiguration erstellen](live-copy-sync-config.md#creating-a-rollout-configuration), falls erforderlich.
 
 1. Stellen Sie fest, wo Sie [die zu verwendenden Rollout-Konfigurationen spezifizieren](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) müssen und konfigurieren Sie sie nach Bedarf.

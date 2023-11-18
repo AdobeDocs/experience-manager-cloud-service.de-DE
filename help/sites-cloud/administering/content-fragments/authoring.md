@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente erstellen 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2251'
 ht-degree: 5%
 
 ---
@@ -58,7 +58,7 @@ Beim ersten Öffnen des Inhaltsfragment-Editors werden vier Hauptbereiche angeze
    * im **Eigenschaften** Registerkarte können Sie die **Titel** und **Beschreibung** für das Fragment oder **Variante**
 * Zentralbereich: zeigt die tatsächlichen Felder und den Inhalt der ausgewählten Variante an
    * ermöglicht die Bearbeitung des Inhalts
-   * if **Registerkartenplatzhalter** -Felder werden innerhalb des Modells definiert, das hier angezeigt wird, und können für die Navigation verwendet werden. Sie werden entweder horizontal oder als Dropdown-Liste angezeigt
+   * if **Registerkartenplatzhalter** -Felder werden innerhalb des hier gezeigten Modells definiert und können für die Navigation verwendet werden. Sie werden entweder horizontal oder als Dropdown-Liste angezeigt.
 
 ![Inhaltsfragmente-Editor - Übersicht](assets/cf-authoring-overview.png)
 
@@ -345,7 +345,7 @@ Auf der Registerkarte &quot;Eigenschaften&quot;(rechtes Bedienfeld) können Sie 
 
 * **Titel**
 * **Beschreibung**
-* **Tags**: über das Dropdown-Menü oder das Auswahldialogfeld
+* **Tags**: über die Dropdownliste oder das Auswahldialogfeld
 
   ![Inhaltsfragment-Editor - Verwalten von Tags](assets/cf-authoring-edit-tags.png)
 
@@ -399,7 +399,7 @@ Der Inhaltsfragment-Editor bietet Autoren die Möglichkeit, ihre Bearbeitungen i
 Um diese Funktion verwenden zu können, müssen Sie zunächst:
 
 * Arbeiten Sie mit Ihrem IT-Team zusammen, um die externe Frontend-Anwendung einzurichten, die das Inhaltsfragment rendert, indem sie die JSON-Ausgabe nutzt.
-* Sobald die externe Frontend-Anwendung eingerichtet ist, wird die **Standard-URL-Vorschaumuster** muss als [-Eigenschaft des entsprechenden Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* Wenn die externe Frontend-Anwendung eingerichtet ist, wird die **Standard-URL-Vorschaumuster** als [-Eigenschaft des entsprechenden Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
 
 Wenn die URL definiert wurde, wird die **Vorschau** -Schaltfläche aktiv ist. Sie können diese Schaltfläche auswählen, um die externe Anwendung (in einer separaten Registerkarte) zum Rendern des Inhaltsfragments zu starten.
 
@@ -475,8 +475,6 @@ Die **Felder** enthält alle Felder im Inhaltsfragment. Das Symbol zeigt die **[
 </table>
 
 ## Wissenswertes {#good-to-know}
-
-Zusätzlich:
 
 * Zum Bearbeiten eines Inhaltsfragments benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihre Systemadmins, falls Probleme auftreten.
 

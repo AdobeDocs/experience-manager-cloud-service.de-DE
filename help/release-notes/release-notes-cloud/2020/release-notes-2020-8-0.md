@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2020.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0“
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 88%
+source-wordcount: '1036'
+ht-degree: 91%
 
 ---
 
@@ -76,13 +76,13 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 6. August 2020 veröff
 
 ### Neue Funktionen {#what-is-new-cloud-manager}
 
-* Content Audit ist eine Funktion, die in den Produktions-Pipelines von Cloud Manager Sites aktiviert ist. Die Konfiguration der Produktions-Pipeline für Programm mit Sites enthält jetzt eine dritte Registerkarte mit dem Namen **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird in der Pipeline nach benutzerdefinierten Funktionstests ein neuer Content Audit-Schritt eingefügt, der die Site anhand einer Reihe von Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet.
+* Content Audit ist eine Funktion, die in den Produktions-Pipelines von Cloud Manager Sites aktiviert ist. Die Konfiguration der Produktions-Pipeline für Programm mit Sites enthält jetzt eine dritte Registerkarte mit dem Namen **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird in der Pipeline nach benutzerdefinierten Funktionstests ein neuer Content Audit-Schritt eingefügt, der die Site anhand verschiedener Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet.
 
 
   >[!NOTE]
   >Content Audit wurde inzwischen in Experience Audit umbenannt.
 
-  Siehe [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md) für weitere Details.
+  Weitere Details finden Sie unter [Experience Audit-Tests](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 * Neu erstellte Umgebungen in Assets-Programmen werden jetzt automatisch mit Smart Content Services konfiguriert.
 
@@ -116,7 +116,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 6. August 2020 veröff
 
 * Auf der Registerkarte „Content Audit“ wird die Basis-URL unter Verwendung der Autoren-Domain anstelle der Veröffentlichungs-Domain falsch angezeigt.
 
-* Um den Schritt &quot;Content Audit&quot;zu aktivieren, müssen Benutzer die Pipeline bearbeiten und optional Seiten hinzufügen. Wenn keine Seiten hinzugefügt werden, wird die Homepage geprüft.
+* Um den Schritt „Content Audit“ zu aktivieren, müssen Benutzende die Pipeline bearbeiten und optional Seiten hinzufügen. Wenn keine Seiten hinzugefügt werden, wird das Audit auf die Homepage angewendet.
 
 ## Content Transfer Tool {#content-transfer-tool}
 

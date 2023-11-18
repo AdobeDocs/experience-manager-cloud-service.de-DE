@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die erforderlichen besonderen Aspekte, um g
 hide: true
 hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '461'
 ht-degree: 9%
 
 ---
@@ -45,5 +45,5 @@ Zusammenfassend sind dies die Schritte, um CUG nach einer Migration zu aktiviere
 1. Stellen Sie sicher, dass jede in CUG-Richtlinien verwendete Gruppe nach der Migration in der Veröffentlichungsinstanz vorhanden ist.
    - Eine Gruppe kann vorhanden sein, wenn sie in der ACL migrierter Inhalte enthalten ist.
    - Ist dies nicht der Fall, installieren Sie Pakete in der Zielinstanz (oder erstellen Sie sie dort manuell) und aktivieren Sie sie und ihre Mitglieder. Überprüfen Sie dann, ob es in der Veröffentlichungsinstanz vorhanden ist.
-1. Veröffentlichen Sie alle mit einer CUG-Richtlinie verknüpften Seiten erneut, und stellen Sie sicher, dass sie veröffentlicht werden, indem Sie beispielsweise die Seite zuerst bearbeiten. Es ist wichtig, alle erneut zu veröffentlichen.
+1. Veröffentlichen Sie alle mit einer CUG-Richtlinie verknüpften Seiten erneut, und stellen Sie sicher, dass sie veröffentlicht werden, indem Sie beispielsweise die Seite zuerst bearbeiten. Es ist wichtig, sie alle erneut zu veröffentlichen.
    - Nachdem alle Seiten erneut veröffentlicht wurden, überprüfen Sie die Funktionalität für jede CUG-geschützte Seite.

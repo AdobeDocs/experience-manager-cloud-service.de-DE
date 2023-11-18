@@ -2,10 +2,10 @@
 title: Architektur des universellen Editors
 description: Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 89%
+source-wordcount: '650'
+ht-degree: 94%
 
 ---
 
@@ -29,7 +29,7 @@ In diesem Dokument werden die einzelnen Bausteine und ihr Austausch von Daten be
 
 >[!TIP]
 >
->Informationen zum universellen Editor und seiner Architektur finden Sie im Dokument . [Erste Schritte mit dem Universal Editor in AEM](getting-started.md) , um zu erfahren, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM App beginnen, diese zu verwenden.
+>Wenn Sie den universellen Editor und dessen Architektur in Aktion sehen möchten, lesen Sie das Dokument [Erste Schritte mit dem universellen Editor in AEM](getting-started.md), um zu erfahren, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen können, um ihn zu verwenden.
 
 ### Editoren {#editors}
 
@@ -50,7 +50,7 @@ Der universelle Editor strebt ein minimales SDK an, daher liegt die Instrumentie
 ### Persistenzschicht {#persistence-layer}
 
 * **Inhaltsfragmentmodell** – Um die Leiste zum Bearbeiten von Inhaltsfragment-Eigenschaften, den Inhaltsfragment-Editor und formularbasierte Editoren zu unterstützen, sind Modelle pro Komponente und Inhaltsfragment erforderlich.
-* **Inhalt** – Der Inhalt kann an einer beliebigen Stelle gespeichert werden, z. B. in AEM, Magento usw.
+* **Inhalt** - Inhalte können überall gespeichert werden, z. B. in AEM, Magento usw.
 
 ![Persistenzschicht](assets/persistence-layer.png)
 

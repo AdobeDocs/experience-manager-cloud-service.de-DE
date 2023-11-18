@@ -2,10 +2,10 @@
 title: Abrufen von Zugriffsinformationen zum Git-Repository
 description: Erfahren Sie, wie der Front-End-Entwickler Cloud Manager verwendet, um auf Git-Repository-Informationen zuzugreifen.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 93%
+source-wordcount: '880'
+ht-degree: 83%
 
 ---
 
@@ -24,7 +24,7 @@ Wenn Sie auch in der Rolle eines Cloud Manager- oder AEM-Admins sowie einer Fron
 
 In diesem Artikel wird der nächste Schritt gemacht und gezeigt, wie der Front-End-Entwickler den Cloud Manager-Zugriff nutzt, um Anmeldeinformationen für den Zugriff auf das AEM-Git-Repository abzurufen.
 
-Da nun eine Site basierend auf einer Vorlage erstellt wurde, eine Pipeline eingerichtet ist, der Front-End-Entwickler eingebunden wurde und alle benötigten Informationen hat, wird in diesem Artikel die Perspektive weg von den Administratoren und ausschließlich hin zur Front-End-Entwicklerrolle verschoben.
+Da nun eine Site basierend auf einer Vorlage erstellt wird, eine Pipeline eingerichtet ist, der Frontend-Entwickler integriert ist und alle benötigten Informationen enthält, verschiebt dieser Artikel die Perspektive weg von den Administratoren und ausschließlich hin zur Frontend-Entwicklerrolle.
 
 ## Ziel {#objective}
 
@@ -78,7 +78,7 @@ Wenn Sie diese E-Mail nicht erhalten haben, wenden Sie sich an die Cloud Manager
 
 1. Melden Sie sich bei Adobe Experience Cloud an unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) oder klicken Sie auf den in der Begrüßungs-E-Mail angegebenen Link.
 
-1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Tippen oder klicken Sie auf das Programm, auf das Sie zugreifen müssen, wie vom Cloud Manager-Administrator angegeben. Wenn dies Ihr erstes Front-End-Projekt für AEMaaCS ist, ist wahrscheinlich nur ein Programm verfügbar.
+1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Wählen Sie den vom Cloud Manager-Administrator zur Verfügung gestellten Zugriff aus. Wenn dies Ihr erstes Front-End-Projekt für AEMaaCS ist, ist wahrscheinlich nur ein Programm verfügbar.
 
    ![Auswählen eines Programms in Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -88,7 +88,7 @@ Jetzt sehen Sie einen Überblick über Ihr Programm. Ihre Seite sieht anders aus
 
 ## Abrufen von Repository-Zugriffsinformationen {#repo-access}
 
-1. Tippen oder klicken Sie im Abschnitt **Pipelines** auf der Cloud Manager-Seite auf die Schaltfläche **Auf Repository-Informationen zugreifen**.
+1. Im **Pipelines** auf der Seite &quot;Cloud Manager&quot;die **Zugriff auf Repo Info** Schaltfläche.
 
    ![Pipelines](assets/pipelines-repo-info.png)
 
@@ -96,13 +96,13 @@ Jetzt sehen Sie einen Überblick über Ihr Programm. Ihre Seite sieht anders aus
 
    ![Repo-Info](assets/repo-info.png)
 
-1. Tippen oder klicken Sie auf die Schaltfläche **Kennwort generieren**, um ein Passwort für sich selbst zu erstellen.
+1. Wählen Sie die **Kennwort generieren** -Schaltfläche, um ein Kennwort für sich selbst zu erstellen.
 
 1. Speichern Sie das generierte Passwort in einem sicheren Passwort-Manager. Das Passwort wird nicht wieder angezeigt.
 
 1. Kopieren Sie außerdem die Felder **Benutzername** und **Git-Befehlszeile**. Sie nutzen diese Informationen später, um auf das Repository zuzugreifen.
 
-1. Tippen oder klicken Sie auf **Schließen**.
+1. Auswählen **Schließen**.
 
 ## Wie geht es weiter {#what-is-next}
 

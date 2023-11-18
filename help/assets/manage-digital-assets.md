@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4344'
-ht-degree: 96%
+source-wordcount: '4301'
+ht-degree: 84%
 
 ---
 
@@ -73,7 +73,7 @@ Gehen Sie wie folgt vor, um eine Vorschau für ein Asset anzuzeigen.
 
 1. Im Vorschaumodus ist eine Zoom-Funktion für [unterstützte Bildtypen](/help/assets/file-format-support.md) verfügbar (mit interaktiver Bearbeitung).
 
-   Um ein Asset heranzuzoomen, tippen oder klicken Sie auf `+` (oder auf das Lupensymbol auf dem Asset). Um auszuzoomen, tippen oder klicken Sie auf `-`. Beim Heranzoomen können Sie beliebige Bildbereiche durch Schwenken genauer untersuchen. Mit dem Pfeil „Zoom zurücksetzen“ gelangen Sie zurück zur Originalansicht.
+   Um in ein Asset zu zoomen, wählen Sie `+` (oder wählen Sie die Lupe des Assets aus). Zum Auszoomen wählen Sie `-`. Beim Heranzoomen können Sie beliebige Bildbereiche durch Schwenken genauer untersuchen. Mit dem Pfeil „Zoom zurücksetzen“ gelangen Sie zurück zur Originalansicht.
 
    Tippen Sie auf **[!UICONTROL Zurücksetzen]**, um die Originalgröße der Ansicht wiederherzustellen.
 
@@ -81,7 +81,7 @@ Gehen Sie wie folgt vor, um eine Vorschau für ein Asset anzuzeigen.
 
 1. Navigieren Sie zum Speicherort des Assets, dessen Metadaten Sie bearbeiten möchten.
 
-1. Wählen Sie ein Asset aus und tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**, um die Asset-Eigenschaften anzuzeigen. Wählen Sie alternativ die Schnellaktion **[!UICONTROL Eigenschaften]** auf der Asset-Karte aus.
+1. Wählen Sie das Asset aus und wählen Sie **[!UICONTROL Eigenschaften]** über die Symbolleiste, um Asset-Eigenschaften anzuzeigen. Wählen Sie alternativ die Schnellaktion **[!UICONTROL Eigenschaften]** auf der Asset-Karte aus.
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
@@ -106,7 +106,7 @@ Gehen Sie wie folgt vor, um eine Vorschau für ein Asset anzuzeigen.
    >
    > Um Tags zu erstellen, müssen Sie über eine Schreibberechtigung für den `/content/cq:tags/default`-Pfad im CRX-Repository verfügen.
 
-1. Tippen oder klicken Sie auf **[!UICONTROL Speichern und schließen]**.
+1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
 1. Navigieren Sie zur Assets-Benutzeroberfläche. Die bearbeiteten Metadateneigenschaften, darunter Titel, Beschreibung und Tags, werden auf der Asset-Karte in der Kartenansicht sowie in den relevanten Spalten der Listenansicht angezeigt.
 
@@ -138,7 +138,7 @@ Einige wenige, für eine bestimmte Kopie eines Assets eindeutige Attribute werde
 
 Die anderen Eigenschaften und Metadateninformationen werden beibehalten. Beim Kopieren eines Assets wird keine Teilkopie erstellt.
 
-1. Wählen Sie in der Assets-Benutzeroberfläche mindestens ein Asset aus und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Kopieren]**. Alternativ können Sie die Schnellaktion **[!UICONTROL Kopieren]** ![copy_icon](assets/copy_icon.png) auf der Asset-Karte auswählen.
+1. Wählen Sie in der Assets-Benutzeroberfläche ein oder mehrere Assets aus und wählen Sie dann die **[!UICONTROL Kopieren]** in der Symbolleiste. Alternativ können Sie die Schnellaktion **[!UICONTROL Kopieren]** ![copy_icon](assets/copy_icon.png) auf der Asset-Karte auswählen.
 
    >[!NOTE]
    >
@@ -162,13 +162,13 @@ Die anderen Eigenschaften und Metadateninformationen werden beibehalten. Beim Ko
 
 1. Navigieren Sie zum Speicherort des Assets, das Sie verschieben möchten.
 
-1. Wählen Sie das Asset aus und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Verschieben]** ![move_icon](assets/move_icon.png).
+1. Wählen Sie das Asset aus und wählen Sie die **[!UICONTROL Verschieben]** icon ![move_icon](assets/move_icon.png) aus der Symbolleiste.
 
 1. Führen Sie im Assistenten „Assets verschieben“ eine der folgenden Aktionen aus:
 
-   * Geben Sie nach dem Verschieben den Namen für das Asset an. Tippen oder klicken Sie anschließend auf **[!UICONTROL Weiter]**, um fortzufahren.
+   * Geben Sie nach dem Verschieben den Namen für das Asset an. Wählen Sie anschließend **[!UICONTROL Nächste]** um fortzufahren.
 
-   * Tippen oder klicken Sie auf **[!UICONTROL Abbrechen]**, um den Vorgang abzubrechen.
+   * Auswählen **[!UICONTROL Abbrechen]** , um den Prozess zu beenden.
 
    >[!NOTE]
    >
@@ -177,20 +177,20 @@ Die anderen Eigenschaften und Metadateninformationen werden beibehalten. Beim Ko
 
 1. Führen Sie im Dialogfeld **[!UICONTROL Ziel auswählen]** eine der folgenden Aktionen aus:
 
-   * Navigieren Sie zum neuen Speicherort für die Assets und tippen oder klicken Sie auf **[!UICONTROL Weiter]**, um fortzufahren.
+   * Navigieren Sie zum neuen Speicherort für die Assets und wählen Sie **[!UICONTROL Nächste]** um fortzufahren.
 
-   * Tippen oder klicken Sie auf **[!UICONTROL Zurück]**, um zum Bildschirm **[!UICONTROL Umbenennen]** zurückzukehren.
+   * Auswählen **[!UICONTROL Zurück]** , um zu **[!UICONTROL Umbenennen]** angezeigt.
 
 1. Wenn die verschobenen Assets verweisende Seiten, Assets oder Sammlungen umfassen, wird die Registerkarte **[!UICONTROL Verweise anpassen]** neben der Registerkarte **[!UICONTROL Ziel auswählen]** angezeigt.
 
    Führen Sie im Bildschirm **[!UICONTROL Verweise anpassen]** einen der folgenden Schritte aus:
 
-   * Geben Sie die Verweise an, die den neuen Details entsprechend angepasst werden sollen, und tippen oder klicken Sie anschließend auf **[!UICONTROL Verschieben]**, um fortzufahren.
+   * Geben Sie die Verweise an, die auf der Grundlage der neuen Details angepasst werden sollen, und wählen Sie dann **[!UICONTROL Verschieben]** um fortzufahren.
 
    * Aktivieren/deaktivieren Sie in der Spalte **[!UICONTROL Anpassen]** Verweise auf die Assets.
-   * Tippen oder klicken Sie auf **[!UICONTROL Zurück]**, um zum Bildschirm **[!UICONTROL Ziel auswählen]** zurückzukehren.
+   * Auswählen **[!UICONTROL Zurück]** , um zu **[!UICONTROL Ziel auswählen]** angezeigt.
 
-   * Tippen oder klicken Sie auf **[!UICONTROL Abbrechen]**, um den Verschiebungsvorgang abzubrechen.
+   * Auswählen **[!UICONTROL Abbrechen]** , um den Verschiebevorgang zu beenden.
 
    Wenn Sie die Verweise nicht aktualisieren, verweisen sie weiterhin auf den alten Asset-Pfad. Wenn Sie die Verweise aktualisieren, werden sie an den neuen Asset-Pfad angepasst.
 
@@ -198,11 +198,11 @@ Die anderen Eigenschaften und Metadateninformationen werden beibehalten. Beim Ko
 
 1. Sie können Ausgabedarstellungen für ein Asset hinzufügen oder entfernen, mit Ausnahme des Originals. Navigieren Sie zum Speicherort des Assets, für das Sie Ausgabedarstellungen hinzufügen oder entfernen möchten.
 
-1. Tippen oder klicken Sie auf das Asset, um die Asset-Seite zu öffnen.
+1. Wählen Sie das Asset aus, um seine Asset-Seite zu öffnen.
 
    <!--![chlimage_1-220](assets/chlimage_1-220.png)-->
 
-1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie in der Liste **[!UICONTROL Ausgabedarstellungen]** aus.
+1. Wählen Sie das GlobalNav-Symbol aus und wählen Sie **[!UICONTROL Ausgabeformate]** aus der Liste.
 
    ![renditions_menu](assets/renditions_menu.png)
 
@@ -218,13 +218,13 @@ Die anderen Eigenschaften und Metadateninformationen werden beibehalten. Beim Ko
 
    **Löschen einer Ausgabedarstellung**
 
-   Wählen Sie im Bereich **[!UICONTROL Ausgabedarstellungen]** eine Ausgabedarstellung aus und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Ausgabedarstellung löschen]**. Ausgabedarstellungen können nach Abschluss der Asset-Verarbeitung nicht mehr stapelweise gelöscht werden. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie [!DNL Experience Manager] so anpassen, dass entweder bestimmte Ausgabedarstellungen gelöscht oder die Assets gelöscht und die gelöschten Assets erneut hochgeladen werden.
+   Wählen Sie eine Ausgabedarstellung aus der **[!UICONTROL Ausgabeformate]** und wählen Sie dann die **[!UICONTROL Ausgabeformat löschen]** in der Symbolleiste. Ausgabedarstellungen können nach Abschluss der Asset-Verarbeitung nicht mehr stapelweise gelöscht werden. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie [!DNL Experience Manager] so anpassen, dass entweder bestimmte Ausgabedarstellungen gelöscht oder die Assets gelöscht und die gelöschten Assets erneut hochgeladen werden.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
    **Eine neue Ausgabedarstellung hochladen**
 
-   Navigieren Sie zur Seite mit Asset-Details und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Ausgabedarstellung hinzufügen]**, um eine neue Ausgabedarstellung für das Asset hochzuladen.
+   Navigieren Sie zur Asset-Detailseite für das Asset und wählen Sie die **[!UICONTROL Ausgabedarstellung hinzufügen]** in der Symbolleiste, um eine neue Ausgabedarstellung für das Asset hochzuladen.
 
    <!--![chlimage_1-221](assets/chlimage_1-221.png)-->
 
@@ -314,7 +314,7 @@ Eine geschlossene Benutzergruppe (Closed User Group, CUG) wird verwendet, um den
 
 CUGs bieten eine zusätzliche Möglichkeit, den Zugriff auf Ihre Assets zu beschränken. Sie können auch eine Anmeldeseite für den Ordner konfigurieren.
 
-1. Wählen Sie in der Assets-Benutzeroberfläche einen Ordner aus und tippen/klicken Sie in der Symbolleiste auf das Symbol „Eigenschaften“, um die Eigenschaftenseite anzuzeigen.
+1. Wählen Sie in der Assets-Benutzeroberfläche einen Ordner aus und wählen Sie in der Symbolleiste das Symbol Eigenschaften aus, um die Eigenschaftenseite anzuzeigen.
 1. Fügen Sie auf der Registerkarte **[!UICONTROL Berechtigungen]** unter **[!UICONTROL Geschlossene Benutzergruppe]** Mitglieder oder Gruppen hinzu.
 
    ![add_user](assets/add_user.png)
@@ -355,13 +355,13 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. Do one of the following to open an asset in edit mode:
 
-    * Select the asset and then click/tap the **[!UICONTROL Edit]** icon in the toolbar.
-    * Tap/click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
-    * In the asset page, tap/click the **[!UICONTROL Edit]** icon in the toolbar.
+    * Select the asset and then select the **[!UICONTROL Edit]** icon in the toolbar.
+    * Select the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
+    * In the asset page, select the **[!UICONTROL Edit]** icon in the toolbar.
 
    ![edit_icon](assets/edit_icon.png)
 
-1. To crop the image, tap/click the **Crop** icon.
+1. To crop the image, select the **Crop** icon.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
@@ -378,15 +378,15 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![chlimage_1-229](assets/chlimage_1-229.png)
 
-1. Tap/click the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
+1. Select the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
 
    ![chlimage_1-230](assets/chlimage_1-230.png)
 
-1. Tap/click the appropriate Flip icon to flip the image horizontally or vertically.
+1. Select the appropriate Flip icon to flip the image horizontally or vertically.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-1. Tap/click the **Finish** icon to save the changes.
+1. Select the **Finish** icon to save the changes.
 
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
@@ -425,7 +425,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 >Bei Inhaltsfragmenten werden [Anmerkungen im Fragmenteditor erstellt](content-fragments/content-fragments.md).
 
 1. Navigieren Sie zum Speicherort des Assets, dem Sie Anmerkungen hinzufügen möchten.
-1. Tippen oder klicken Sie in einem der folgenden Elemente auf das Symbol **[!UICONTROL Anmerken]**:
+1. Wählen Sie die **[!UICONTROL Anmerken]** -Symbol aus einem der folgenden Elemente:
 
    * [Schnellaktionen](#quick-actions)
    * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben    oder zur Asset-Seite navigiert sind
@@ -454,18 +454,18 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
    >
    >Sie können mehrere Anmerkungen hinzufügen, bevor Sie diese speichern.
 
-1. Tippen oder klicken Sie auf **[!UICONTROL Schließen]**, um den Anmerkungsmodus zu verlassen.
+1. Auswählen **[!UICONTROL Schließen]** , um den Anmerkungsmodus zu beenden.
 1. Um die Benachrichtigung zu sehen, melden Sie sich mit den Anmeldedaten von Aaron MacDonald bei Assets an und klicken Sie auf das Symbol **[!UICONTROL Benachrichtigungen]**.
 
    >[!NOTE]
    >
    >Anmerkungen können auch zu Video-Assets hinzugefügt werden. Während Videos mit Anmerkungen versehen werden, wird der Player angehalten, damit Sie einem Frame eine Anmerkung hinzufügen können. Details finden Sie unter [Verwalten von Video-Assets](manage-video-assets.md). Das MXF-Videoformat wird jedoch noch nicht mit Videoanmerkungen unterstützt.
 
-1. Wenn Sie eine andere Farbe auswählen möchten, um zwischen Benutzern zu unterscheiden, klicken/tippen Sie auf das Symbol „Profil“. Anschließend klicken/tippen Sie auf **[!UICONTROL Benutzereinstellungen]**.
+1. Um eine andere Farbe auszuwählen, sodass Sie zwischen Benutzern unterscheiden können, wählen Sie das Symbol Profil und dann **[!UICONTROL Benutzereinstellungen]**.
 
    <!--![chlimage_1-237](assets/chlimage_1-237.png)-->
 
-   Geben Sie die gewünschte Farbe im Feld **[!UICONTROL Anmerkungsfarbe]** an und klicken/tippen Sie auf **[!UICONTROL Annehmen]**.
+   Geben Sie die gewünschte Farbe im **[!UICONTROL Anmerkungsfarbe]** und wählen Sie **[!UICONTROL Accept]**.
 
 <!-- ![chlimage_1-238](assets/chlimage_1-238.png)-->
 
@@ -485,7 +485,7 @@ Sie können immer nur eine Anmerkung auf einmal anzeigen.
 
 1. Um die gespeicherten Anmerkungen zu einem Asset anzuzeigen, navigieren Sie zum Speicherort des Assets und öffnen Sie die Asset-Seite für dieses Asset.
 
-1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Zeitleiste]** aus der Liste aus.
+1. Wählen Sie das GlobalNav-Symbol aus und wählen Sie **[!UICONTROL Timeline]** aus der Liste.
 
    <!--![chlimage_1-239](assets/chlimage_1-239.png)-->
 
@@ -493,11 +493,11 @@ Sie können immer nur eine Anmerkung auf einmal anzeigen.
 
    <!--![chlimage_1-240](assets/chlimage_1-240.png)-->
 
-   Tippen oder klicken Sie im Bedienfeld **[!UICONTROL Zeitleiste]** auf einen Kommentar, um die entsprechende Anmerkung auf dem Bild anzuzeigen.
+   Wählen Sie im **[!UICONTROL Timeline]** -Bedienfeld, um die entsprechende Anmerkung auf dem Bild anzuzeigen.
 
    <!--![chlimage_1-241](assets/chlimage_1-241.png)-->
 
-   Tippen oder klicken Sie auf **[!UICONTROL Löschen]**, um einen bestimmten Kommentar zu löschen.
+   Auswählen **[!UICONTROL Löschen]**, um einen bestimmten Kommentar zu löschen.
 
 ### Drucken von Anmerkungen {#printing-annotations}
 
@@ -509,7 +509,7 @@ Sie können auch nur die Anmerkungen oder nur den Prüfungsstatus drucken.
 >
 >Beim Drucken des Assets mit Anmerkungen als PDF können Sie mehrere Anmerkungen auswählen.
 
-Zum Drucken der Anmerkungen und des Prüfungsstatus tippen/klicken Sie auf das Symbol **[!UICONTROL Drucken]** und folgen Sie den Anweisungen im Assistenten. Das Symbol **[!UICONTROL Drucken]** erscheint nur dann in der Symbolleiste, wenn dem Asset mindestens eine Anmerkung oder ein Prüfungsstatus zugewiesen ist.
+Um die Anmerkungen und den Prüfungsstatus zu drucken, wählen Sie die **[!UICONTROL Drucken]** und befolgen Sie die Anweisungen im Assistenten. Das Symbol **[!UICONTROL Drucken]** erscheint nur dann in der Symbolleiste, wenn dem Asset mindestens eine Anmerkung oder ein Prüfungsstatus zugewiesen ist.
 
 1. Öffnen Sie in der Assets-Benutzeroberfläche die Vorschauseite für ein Asset.
 1. Führen Sie einen der folgenden Schritte aus:
@@ -525,7 +525,7 @@ Zum Drucken der Anmerkungen und des Prüfungsstatus tippen/klicken Sie auf das S
 
    <!--![chlimage_1-243](assets/chlimage_1-243.png)-->
 
-1. Tippen/klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Drucken]**.
+1. Wählen Sie die **[!UICONTROL Drucken]** in der Symbolleiste.
 
    <!--![chlimage_1-244](assets/chlimage_1-244.png)-->
 
@@ -565,21 +565,21 @@ Mit der Versionierungsfunktion können Sie Folgendes tun:
 * Anzeigen der aktuellen Version eines Assets.
 * Zurücksetzen des Assets auf eine frühere Version.
 
-1. Navigieren Sie zum Speicherort des Assets, von dem Sie eine Version erstellen möchten, und klicken/tippen Sie darauf, um seine Asset-Seite zu öffnen.
+1. Navigieren Sie zum Speicherort des Assets, für das Sie eine Version erstellen möchten, und wählen Sie es aus, um die Asset-Seite zu öffnen.
 
-1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Zeitleiste]** aus dem Menü aus.
+1. Wählen Sie das GlobalNav-Symbol aus und wählen Sie **[!UICONTROL Timeline]** aus dem Menü.
 
    ![Zeitleiste](assets/timeline.png)
 
-1. Tippen oder klicken Sie unten auf das Symbol **[!UICONTROL Aktionen]** (Pfeil), um die verfügbaren Aktionen anzuzeigen, die Sie am Asset durchführen können.
+1. Wählen Sie die **[!UICONTROL Aktionen]** (Pfeil) unten, um die verfügbaren Aktionen anzuzeigen, die Sie für das Asset ausführen können.
 
    <!--![chlimage_1-249](assets/chlimage_1-249.png)-->
 
-1. Tippen oder klicken Sie auf **[!UICONTROL Als Version speichern]**, um eine Version für das Asset zu erstellen.
+1. Auswählen **[!UICONTROL Als Version speichern]** , um eine Version für das Asset zu erstellen.
 
 <!--![chlimage_1-250](assets/chlimage_1-250.png)-->
 
-1. Fügen Sie eine Beschriftung und Kommentare hinzu und klicken Sie auf **[!UICONTROL Erstellen]**, um eine Version zu erstellen. Tippen oder klicken Sie alternativ auf **Abbrechen**, um den Vorgang abzubrechen.
+1. Fügen Sie eine Beschriftung und Kommentare hinzu und klicken Sie auf **[!UICONTROL Erstellen]**, um eine Version zu erstellen. Wählen Sie alternativ **Abbrechen** , um den Vorgang zu beenden.
 
    <!--![chlimage_1-251](assets/chlimage_1-251.png)-->
 
@@ -595,9 +595,9 @@ Mit der Versionierungsfunktion können Sie Folgendes tun:
 
    ![save_version](assets/save_version.png)
 
-1. Um eine Vorschau für die Version anzuzeigen, tippen oder klicken Sie auf **[!UICONTROL Versionsvorschau]**.
+1. Um eine Vorschau für die Version zu generieren, wählen Sie **[!UICONTROL Vorschau der Version]**.
 1. Um diese Version in der Assets-Benutzeroberfläche anzuzeigen, wählen Sie **[!UICONTROL Auf diese Version zurücksetzen]**.
-1. Um zwei Versionen miteinander zu vergleichen, gehen Sie zur Asset-Seite des Assets und tippen oder klicken Sie auf die Version, die mit der aktuellen Version verglichen werden soll.
+1. Um zwischen zwei Versionen zu vergleichen, gehen Sie zur Asset-Seite des Assets und wählen Sie die Version aus, die mit der aktuellen Version verglichen werden soll.
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
 
@@ -607,16 +607,16 @@ Mit der Versionierungsfunktion können Sie Folgendes tun:
 
 ### Starten eines Workflows für ein Asset {#starting-a-workflow-on-an-asset}
 
-1. Navigieren Sie zum Speicherort des Assets, für das Sie einen Workflow beginnen möchten, und tippen/klicken Sie auf das Asset, um die Asset-Seite zu öffnen.
-1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie im Menü die Option **[!UICONTROL Zeitleiste]**, um die Zeitleiste anzuzeigen.
+1. Navigieren Sie zum Speicherort des Assets, für das Sie einen Workflow starten möchten, und wählen Sie das Asset aus, um die Asset-Seite zu öffnen.
+1. Wählen Sie das GlobalNav-Symbol aus und wählen Sie **[!UICONTROL Timeline]** aus dem Menü, um die Timeline anzuzeigen.
 
    ![timeline-1](assets/timeline-1.png)
 
-1. Tippen oder klicken Sie unten auf das Symbol **[!UICONTROL Aktionen]** (Pfeil), um die Liste der Aktionen zu öffnen, die für das Asset verfügbar sind.
+1. Wählen Sie die **[!UICONTROL Aktionen]** (Pfeil) unten, um die Liste der für das Asset verfügbaren Aktionen zu öffnen.
 
    <!--![chlimage_1-252](assets/chlimage_1-252.png)-->
 
-1. Wählen Sie **[!UICONTROL Workflow starten]** aus der Liste aus.
+1. Auswählen **[!UICONTROL Workflow starten]** aus der Liste.
 
    <!--![chlimage_1-253](assets/chlimage_1-253.png)-->
 
@@ -628,7 +628,7 @@ Mit der Versionierungsfunktion können Sie Folgendes tun:
 
    <!--![chlimage_1-255](assets/chlimage_1-255.png)-->
 
-1. Um zu bestätigen, tippen oder klicken Sie im Dialogfeld auf **[!UICONTROL Start]** und anschließend auf **[!UICONTROL Weiter]**. Jeder Schritt des Workflows wird in der Zeitleiste als ein Ereignis angezeigt.
+1. Auswählen **[!UICONTROL Starten]** und wählen Sie **[!UICONTROL Fortfahren]** im Dialogfeld, um zu bestätigen. Jeder Schritt des Workflows wird in der Zeitleiste als ein Ereignis angezeigt.
 
    <!--![chlimage_1-256](assets/chlimage_1-256.png)-->
 

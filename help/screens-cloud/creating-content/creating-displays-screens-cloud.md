@@ -2,10 +2,10 @@
 title: Erstellen und Verwalten von Displays in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Displays in Screens as a Cloud Service erstellen und verwalten.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '657'
-ht-degree: 91%
+ht-degree: 89%
 
 ---
 
@@ -118,7 +118,7 @@ Sie können Inhalte in die neuen Ordner verschieben, um Ihre Displays besser zu 
 
 ![image](/help/screens-cloud/assets/display/movetofolder.png)
 
-**Hinweis**: Der Ordner sollte in der Ordnerseitenleiste ausgewählt sein. Darüber hinaus sollte die Breadcrumb-Navigation den Namen des aktuellen Ordners neben **Displays** anzeigen.
+**Hinweis**: Der Ordner sollte in der Ordnerseitenleiste ausgewählt sein. Außerdem sollte die Breadcrumb-Navigation den aktuellen Ordnernamen neben **Anzeigen**.
 
 ## Löschen von Inhalt aus einem Ordner {#delete-folder}
 

@@ -2,10 +2,10 @@
 title: Erstellen einer Site aus einer Vorlage
 description: Erfahren Sie, wie Sie mithilfe einer Site-Vorlage schnell eine AEM erstellen.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 91%
+source-wordcount: '1474'
+ht-degree: 78%
 
 ---
 
@@ -40,8 +40,8 @@ Site-Vorlagen bieten die Möglichkeit, grundlegende Site-Inhalte in einem handli
 
 * `files`: Ordner mit dem Benutzeroberflächen-Kit, der XD-Datei und möglicherweise anderen Dateien
 * `previews`: Ordner mit Screenshots der Site-Vorlage
-* `site`: Inhaltspaket des Inhalts, der für jede aus dieser Vorlage erstellte Site kopiert wird, z. B. Seitenvorlagen und Seiten.
-* `theme`: Quellen des Vorlagen-Designs, um das Aussehen der Site zu ändern, einschließlich CSS, JavaScript usw.
+* `site`: Inhaltspaket des Inhalts, der für jede aus dieser Vorlage erstellte Site kopiert wird, z. B. Seitenvorlagen, Seiten usw.
+* `theme`: Quellen des Vorlagenthemas, um das Aussehen der Site zu ändern, einschließlich CSS, JavaScript usw.
 
 Vorlagen sind leistungsstark, da sie wiederverwendbar sind, sodass Ihre Inhaltsautoren schnell eine Site erstellen können. Und da Sie in Ihrer AEM-Installation mehrere Vorlagen zur Verfügung haben können, können Sie flexibel verschiedene geschäftliche Anforderungen erfüllen.
 
@@ -71,17 +71,17 @@ Die Verwendung einer Vorlage zum Erstellen einer Site ist einfach.
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Tippen oder klicken Sie oben rechts im Bildschirm auf **Erstellen** und wählen Sie aus dem Dropdown-Menü **Site aus Vorlage**.
+1. Auswählen **Erstellen** oben rechts im Bildschirm und aus dem Dropdown-Menü wählen Sie **Site aus Vorlage**.
 
    ![Erstellen einer neuen Site aus einer Vorlage](assets/create-site-from-template.png)
 
-1. Tippen oder klicken Sie im Assistenten oben in der linken Spalte auf **Importieren**.
+1. Wählen Sie im Assistenten Site erstellen die Option **Import** oben in der linken Spalte.
 
    ![Assistent zur Site-Erstellung](assets/site-creation-wizard.png)
 
-1. Suchen Sie im Datei-Browser nach der Vorlage, die [Sie heruntergeladen haben](#obtaining-template), und tippen oder klicken Sie auf **Hochladen**.
+1. Suchen Sie im Dateibrowser nach der Vorlage . [Sie haben zuvor](#obtaining-template) und wählen **Hochladen**.
 
-1. Nach dem Hochladen wird sie in der Liste der verfügbaren Vorlagen angezeigt. Tippen oder klicken Sie darauf, um die Vorlage auszuwählen (dadurch werden auch Informationen über die Vorlage in der rechten Spalte angezeigt) und tippen oder klicken Sie auf **Nächste**.
+1. Nach dem Hochladen wird sie in der Liste der verfügbaren Vorlagen angezeigt. Wählen Sie sie aus, um sie auszuwählen (dadurch werden auch Informationen über die Vorlage in der rechten Spalte angezeigt), und klicken Sie dann auf **Nächste**.
 
    ![Auswählen einer Vorlage](assets/select-site-template.png)
 
@@ -90,11 +90,11 @@ Die Verwendung einer Vorlage zum Erstellen einer Site ist einfach.
    * Der Titel der Site wird in der Titelleiste des Browsers angezeigt.
    * Der Site-Name wird Teil der URL.
 
-1. Tippen oder klicken Sie auf **Erstellen**. Die neue Site wird aus der Site-Vorlage erstellt.
+1. Auswählen **Erstellen** und die neue Site aus der Site-Vorlage erstellt wird.
 
    ![Details der neuen Site](assets/create-site-details.png)
 
-1. Tippen oder klicken Sie im angezeigten Bestätigungsdialogfeld auf **Fertig**.
+1. Wählen Sie im angezeigten Bestätigungsdialogfeld die Option **Fertig**.
 
    ![Dialogfeld „Erfolg“](assets/success.png)
 
@@ -115,7 +115,7 @@ Site-Vorlagen sind sehr leistungsstark und flexibel und können in beliebiger An
 
 Wenn Sie eine zusätzliche Front-End-Anpassung benötigen, sollten Sie beachten, dass der Front-End-Entwickler möglicherweise nicht mit den Details Ihres Inhalts vertraut ist. Daher ist es empfehlenswert, dem Entwickler einen Pfad zu typischen Inhalten zur Verfügung zu stellen, die als Referenz verwendet werden können, wenn das Design angepasst wird. Ein typisches Beispiel ist die Startseite für die primäre Sprache der Site.
 
-1. Navigieren Sie im Sitebrowser zur Startseite der primären Sprache der Site, tippen oder klicken Sie dann auf die Seite, um sie auszuwählen, und tippen oder klicken Sie dann in der Menüleiste auf **Bearbeiten**.
+1. Navigieren Sie im Sites-Browser zur Startseite der Mastersprache der Site, wählen Sie die gewünschte Seite aus und wählen Sie sie aus. Wählen Sie dann **Bearbeiten** in der Menüleiste.
 
    ![Typische Startseite](assets/home-page-in-console.png)
 
@@ -137,7 +137,7 @@ Nachdem die Site erstellt wurde, kann das von der Vorlage generierte Design der 
 
    ![Anzeigen der Site-Leiste](assets/show-site-rail.png)
 
-1. Tippen oder klicken Sie auf das Stammverzeichnis der neuen Site und tippen oder klicken Sie in der Site-Leiste auf **Design-Quellen herunterladen**.
+1. Wählen Sie den Stamm Ihrer neuen Site aus und wählen Sie dann **Themenquellen herunterladen** in der Site-Leiste.
 
    ![Herunterladen von Design-Quellen](assets/download-theme-sources.png)
 
@@ -147,8 +147,8 @@ Sie haben jetzt eine Kopie der Quelldateien des Designs in Ihren Download-Dateie
 
 Damit der Front-End-Entwickler die Anpassungen anhand des tatsächlichen AEM-Inhalts von Ihrer Site in der Vorschau anzeigen kann, müssen Sie einen Proxy-Benutzer einrichten.
 
-1. Navigieren Sie in AEM in der Hauptnavigation zu **Tools** -> **Sicherheit** -> **Benutzer**.
-1. Tippen oder klicken Sie in der Benutzerverwaltungskonsole auf **Erstellen**.
+1. Navigieren Sie AEM von der Hauptnavigation zu **Instrumente** > **Sicherheit** > **Benutzer**.
+1. Wählen Sie in der Benutzerverwaltungskonsole die Option **Erstellen**.
 
    ![Benutzerverwaltungskonsole](assets/user-management-console.png)
 1. Im Fenster **Neuen Benutzer erstellen** müssen Sie mindestens Folgendes angeben:
@@ -162,7 +162,7 @@ Damit der Front-End-Entwickler die Anpassungen anhand des tatsächlichen AEM-Inh
 
    ![Hinzufügen zur Gruppe](assets/add-to-group.png)
 
-1. Tippen oder klicken Sie auf **Speichern und schließen**.
+1. Klicken Sie auf **Speichern und schließen**.
 
 Sie haben die Konfiguration abgeschlossen. Inhaltsautoren können jetzt mit der Erstellung von Inhalten auf der Site beginnen. Die Vorbereitung für die Front-End-Anpassung beginnt im nächsten Schritt der Journey.
 
@@ -181,7 +181,7 @@ Fahren Sie aufbauend auf diesen Kenntnissen mit der AEM-Journey zur schnellen Si
 Es wird zwar empfohlen, mit dem nächsten Teil der Journey zur schnellen Site-Erstellung fortzufahren, indem Sie das Dokument [Einrichten der Pipeline](pipeline-setup.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Aber sie sind nicht erforderlich, um die Journey fortzusetzen.
 
 * [AEM-Standard-Site-Vorlage](https://github.com/adobe/aem-site-template-standard) – Dies ist das GitHub-Repository der AEM-Standard-Site-Vorlage.
-* [Erstellen und Organisieren von Seiten](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) – In diesem Handbuch wird beschrieben, wie Sie Seiten Ihrer AEM-Site verwalten, wenn Sie sie nach der Erstellung aus der Vorlage weiter anpassen möchten.
+* [Erstellen und Organisieren von Seiten](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - In diesem Handbuch wird beschrieben, wie Sie Seiten Ihrer AEM-Site verwalten, wenn Sie sie nach dem Erstellen aus der Vorlage weiter anpassen möchten.
 * [Arbeiten mit Paketen](/help/implementing/developing/tools/package-manager.md) – Pakete ermöglichen den Import und Export von Repository-Inhalten. In diesem Dokument wird erläutert, wie Sie mit Paketen in AEM 6.5 arbeiten. Dies gilt auch für AEMaaCS.
 * [Dokumentation zur Site-Administration](/help/sites-cloud/administering/site-creation/create-site.md) – Weitere Informationen zu den Funktionen des Tools für die schnelle Site-Erstellung finden Sie in den technischen Dokumenten zur Site-Erstellung.
 * [Erstellen oder Hinzufügen von Formularen zu einer AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): Lernen Sie Schritt für Schritt Techniken und Best Practices für die Integration von Formularen in Ihre Website kennen und optimieren Sie Ihre digitalen Erlebnisse für eine maximale Wirkung.

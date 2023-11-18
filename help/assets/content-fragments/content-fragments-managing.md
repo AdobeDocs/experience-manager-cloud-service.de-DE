@@ -2,9 +2,9 @@
 title: Verwalten von Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM-Inhaltsfragmente verwalten können, die die Grundlage für Ihren Headless-Content bilden.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1876'
 ht-degree: 89%
 
 ---
@@ -149,7 +149,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
    >[!NOTE]
    >
-   >**Speichern und schließen** ist über das Dropdown-Menü **Speichern** verfügbar.
+   >**Speichern und schließen** ist über das **Speichern** Dropdown-Liste.
 
    >[!NOTE]
    >

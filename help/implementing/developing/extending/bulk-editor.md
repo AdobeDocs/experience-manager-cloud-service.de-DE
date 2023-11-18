@@ -1,13 +1,13 @@
 ---
 title: Konfigurieren der Massenbearbeitung von Seiteneigenschaften
 description: Erfahren Sie, wie Sie die Massenbearbeitung konfigurieren, damit Sie die Eigenschaften mehrerer Seiten gleichzeitig bearbeiten können.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '250'
 ht-degree: 19%
 
 ---
-
 
 # Konfigurieren der Massenbearbeitung von Seiteneigenschaften {#configuring-bulk-editing-of-page-properties}
 
@@ -20,7 +20,7 @@ Seiteneigenschaften sind nicht standardmäßig für die Massenbearbeitung aktivi
 * Bestimmte Felder sind in der Regel eindeutig. Sie müssen entscheiden, ob es sinnvoll ist, diese Felder für die Massenbearbeitung zu aktivieren, wenn ein Wert angewendet wird.
    * Beispielsweise sind Seitentitel fast immer eindeutig.
 * Bestimmte Felder können mehrere Werte aufweisen, die beim Rendern eine aussagekräftige Darstellung erfordern.
-   * Beispielsweise eine Dropdown-Liste für den Status mit der Bezeichnung **Bereit für Veröffentlichung**. Dies kann mehrere Werte vor der Massenbearbeitung aufweisen, z. B. **ready**, **In-Review**, **in Bearbeitung**, usw.
+   * Beispielsweise eine Dropdown-Liste für den Status mit der Bezeichnung **Bereit für Veröffentlichung**. Dies kann mehrere Werte vor der Massenbearbeitung aufweisen, z. B. **ready**, **In-Review**, **in Bearbeitung** usw.
 
 Aufgrund der Möglichkeit mehrerer Werte wird empfohlen, nur die folgenden Feldtypen für die Massenbearbeitung zu aktivieren.
 

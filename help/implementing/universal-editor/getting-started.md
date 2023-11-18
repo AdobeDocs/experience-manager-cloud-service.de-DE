@@ -2,10 +2,10 @@
 title: Erste Schritte mit dem universellen Editor in AEM
 description: Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 84%
+source-wordcount: '920'
+ht-degree: 76%
 
 ---
 
@@ -22,7 +22,7 @@ Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie m
 
 Obwohl der universelle Editor Inhalte aus jeder Quelle bearbeiten kann, verwendet dieses Dokument eine AEM-App als Beispiel.
 
-Es gibt eine Reihe von Schritten, um Ihre AEM-App zu integrieren und sie für die Verwendung des universellen Editors zu instrumentieren.
+Es gibt mehrere Schritte, um Ihre AEM App zu integrieren und sie für die Verwendung des universellen Editors zu instrumentieren.
 
 1. [Fordern Sie Zugriff auf den universellen Editor an.](#request-access)
 1. [Schließen Sie die Hauptbibliothek des universellen Editors ein.](#core-library)
@@ -49,7 +49,7 @@ Bevor Ihre App für die Verwendung mit dem universellen Editor instrumentiert we
 @adobe/universal-editor-cors
 ```
 
-Um die Instrumentierung zu aktivieren, muss der folgende Import zu Ihrer `index.js` hinzugefügt werden.
+Um die Instrumentierung zu aktivieren, muss der folgende Import zu Ihrer `index.js`.
 
 ```javascript
 import "@adobe/universal-editor-cors";
@@ -103,7 +103,7 @@ Diese Eigenschaft muss in der OSGi-Konfiguration `org.apache.sling.engine.impl.S
 
 Der Service des universellen Editors erfordert einen [Uniform Resource Name (URN)](https://de.wikipedia.org/wiki/Uniform_Resource_Name), um das richtige Backend-System für den Inhalt in der bearbeiteten App zu identifizieren und zu verwenden. Daher ist ein URN-Schema erforderlich, um Inhalte wieder Inhaltsressourcen zuzuordnen.
 
-Die der Seite hinzugefügten Instrumentierungsattribute bestehen hauptsächlich aus [HTML Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata), einem Branchenstandard, der auch verwendet werden kann, um HTML semantischer zu gestalten, HTML-Dokumente zu indexieren, usw.
+Die der Seite hinzugefügten Instrumentenattribute bestehen hauptsächlich aus [HTML Microdata,](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) ein Industriestandard, der auch verwendet werden kann, um HTML semantischer zu machen, HTML-Dokumente zu indexieren und so weiter.
 
 ### Erstellen von Verbindungen {#connections}
 

@@ -4,10 +4,10 @@ description: Verwenden Sie die AEM-Zielauswahl, um Assets anzuzeigen und auszuw�
 contentOwner: Adobe
 role: Admin,User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 93%
+source-wordcount: '1904'
+ht-degree: 92%
 
 ---
 
@@ -259,7 +259,7 @@ Mit der Zielauswahl können Sie auch Daten des Repositorys Ihrer Wahl anzeigen, 
 
 Dies ist ein Beispiel für die Eigenschaft `optionsFormSetup`. Sie können sie verwenden, um die Auswahl zu bestätigen, und sie wird an das Ereignis `onConfirm` weitergegeben.
 
-### Neuen Ordner erstellen {#create-new-folder}
+### Erstellen von Ordnern {#create-new-folder}
 
 Damit können Sie einen Ordner im Zielordner Ihrer [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
@@ -274,7 +274,7 @@ Mit der Zielauswahl können Sie das Asset in vier verschiedenen Ansichten anzeig
 
 ### Info {#info}
 
-Über das Informations- oder Informationssymbol können Sie die Metadaten des ausgewählten Assets anzeigen. Sie enthalten verschiedene Details wie Dimensionen, Größe, Beschreibung, Pfad, Änderungsdatum und Erstellungsdatum. Die Metadateninformationen werden beim Hochladen, Kopieren oder Erstellen eines neuen Assets bereitgestellt.
+Über das Informations- oder Informationssymbol können Sie die Metadaten des ausgewählten Assets anzeigen. Sie enthalten verschiedene Details wie Dimensionen, Größe, Beschreibung, Pfad, Änderungsdatum und Erstellungsdatum. Die Metadateninformationen werden beim Hochladen, Kopieren oder Erstellen eines Assets bereitgestellt.
 
 ### Ordner auswählen {#select-folder}
 

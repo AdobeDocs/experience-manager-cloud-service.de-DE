@@ -4,10 +4,10 @@ description: Auf dieser Seite erfahren Sie, wie Sie Team-Mitglieder den Cloud Ma
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1528'
-ht-degree: 94%
+source-wordcount: '1527'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ Wenn Sie Benutzenden Zugriff auf eine bestimmte Adobe-Lösung gewähren, möchte
 
 Der erste Schritt besteht darin, Benutzenden Zugriff auf Cloud Manager zu gewähren. Cloud Manager unterstützt Sie bei Ihren internen Entwicklungsprojekten und durch die speziell dafür vorgesehenen CI/CD-Pipelines, mit denen Sie gründliche Tests durchführen und höchste Code-Qualität und außergewöhnliche Erlebnisse bereitstellen können.
 
-Nach dem Lesen dieses Dokuments wissen Sie Folgendes:
+Nach dem Lesen dieses Dokuments sollten Sie Folgendes können:
 
 * Überblick darüber, was Produktprofile sind.
 * Überblick darüber, was Cloud Manager ist.
@@ -33,7 +33,7 @@ Nach dem Lesen dieses Dokuments wissen Sie Folgendes:
 
 ## Voraussetzungen {#prerequisites}
 
-Um Produktprofilen Teammitglieder zuzuweisen, benötigen Sie Informationen zu Ihren Teammitgliedern, die auf AEM as a Cloud Service zugreifen müssen, darunter:
+Um Produktprofilen Teammitglieder zuzuweisen, benötigen Sie Details zu Ihren Teammitgliedern, die auf AEM as a Cloud Service zugreifen müssen, darunter:
 
 * Namen
 * E-Mail-Adressen
@@ -181,7 +181,7 @@ Sie können jetzt mit dem Onboarding-Journey fortfahren, indem Sie das Dokument 
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird empfohlen, mit der Onboarding-Tour weiterzumachen, wie zuvor beschrieben. Dies sind einige zusätzliche Ressourcen, wenn Sie einen tieferen Einblick in ein bestimmtes Thema dieser Tour wünschen.
+Es wird empfohlen, mit der Onboarding-Tour weiterzumachen, wie zuvor beschrieben. Dies sind einige zusätzliche Ressourcen, wenn Sie einen tiefen Einblick in ein bestimmtes Thema von dieser Journey haben möchten.
 
 * [Einführung in Cloud Manager](/help/onboarding/cloud-manager-introduction.md) - Erfahren Sie mehr über Cloud Manager und Cloud Manager-Programme und -Umgebungen.
 * [Cloud Manager-Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md) - Erfahren Sie mehr über ein AEM as a Cloud Service-Team und Produktprofile.

@@ -2,10 +2,10 @@
 title: Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service
 description: AEM stellt Client-seitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren Client-seitigen Code (clientlibs) im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie die einzelnen Code-Kategorien für den Client bereitgestellt werden sollen.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2552'
-ht-degree: 98%
+source-wordcount: '2551'
+ht-degree: 96%
 
 ---
 
@@ -64,7 +64,7 @@ Wenn der Client-Bibliotheksordner eine oder mehrere Quelldateien enthält, werde
 Client-Bibliotheksordner enthalten die folgenden Elemente:
 
 * Die JS- und/oder CSS-Quelldateien
-* Statische Ressourcen, die CSS-Stile unterstützen, z. B. Symbole, Webfonts usw.
+* Statische Ressourcen, die CSS-Stile unterstützen, wie Symbole, Webfonts usw.
 * Eine Datei `js.txt` und/oder `css.txt`, die die Quelldateien angibt, die in den generierten JS- und/oder CSS Dateien zusammengeführt werden sollen
 
 ![Architektur Client-seitiger Bibliotheken](assets/clientlib-architecture.drawio.png)
@@ -170,7 +170,7 @@ Die Komponente `dumplibs` enthält einen Test-Selektor, der den für `ui:include
 
 ## Zusätzliche Funktionen für Client-Bibliotheksordner {#additional-features}
 
-Es gibt eine Reihe weiterer Funktionen, die von Client-Bibliotheksordner in AEM unterstützt werden. Diese sind jedoch nicht für AEM as a Cloud Service erforderlich und werden daher nicht empfohlen. Sie werden hier der Vollständigkeit halber aufgelistet.
+Es gibt mehrere weitere Funktionen, die von Client-Bibliotheksordnern in AEM unterstützt werden. Diese sind jedoch nicht für AEM as a Cloud Service erforderlich und werden daher nicht empfohlen. Sie werden hier der Vollständigkeit halber aufgelistet.
 
 >[!WARNING]
 >
@@ -339,7 +339,7 @@ languageOut (defaults to "ECMASCRIPT5")
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-Weitere Informationen zu GCC-Optionen finden Sie in der [GCC-Dokumentation](https://developers.google.com/closure/compiler/docs/compilation_levels).
+Weitere Informationen zu GCC-Optionen finden Sie unter [GCC-Dokumentation](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
 #### Festlegen des Systemstandard-Minimierers {#set-system-default-minifier}
 

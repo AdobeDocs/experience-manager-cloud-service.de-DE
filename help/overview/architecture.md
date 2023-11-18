@@ -2,7 +2,7 @@
 title: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service
 description: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2665'
 ht-degree: 13%
@@ -174,7 +174,7 @@ Der Code und die Konfiguration für AEM Projekte werden in einem Code-Repository
    * Zum Speichern von serverseitigem Java-Code und OSGi-Konfigurationen für die AEM-Autoren- und Veröffentlichungsstufe.
 * AEM Frontend:
    * Zum Speichern von clientseitigem JS-, CSS- und HTML-Code für die AEM Autoren- und Veröffentlichungsstufe.
-Weitere Informationen zu clientlibs finden Sie unter [Verwenden Client-seitiger Bibliotheken auf AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+Weitere Informationen zu Client-seitigen Bibliotheken finden Sie unter [Verwenden Client-seitiger Bibliotheken auf AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
 * AEM Webstufe:
    * Speichert die Dispatcher-Konfigurationsdateien für die AEM Veröffentlichungsstufe.
 * AEM Konfiguration:

@@ -2,10 +2,10 @@
 title: Verwalten von Zielgruppen
 description: Die Konsole „Zielgruppen“ ermöglicht das Erstellen, Organisieren und Verwalten von Zielgruppen für Ihr Adobe Target-Konto und das Verwalten von Segmenten für ContextHub
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 97%
+source-wordcount: '932'
+ht-degree: 87%
 
 ---
 
@@ -33,8 +33,8 @@ Sie können ContextHub-Segmente entweder in der Konsole „Zielgruppen“ oder w
 
 So erstellen Sie ContextHub-Segmente in der Konsole „Zielgruppen“:
 
-1. Klicken oder tippen Sie in der Navigationskonsole auf **Personalisierung**. Klicken oder tippen Sie auf **Zielgruppen**.
-1. Klicken oder tippen Sie auf **ContextHub-Segment erstellen**.
+1. Wählen Sie in der Navigationskonsole **Personalisierung**. Auswählen **Zielgruppen**.
+1. Auswählen **Erstellen eines ContextHub-Segments**.
 
    ![Erstellen eines Segments](/help/sites-cloud/authoring/assets/audiences-create-segment.png)
 
@@ -60,20 +60,20 @@ Wenn Sie mehr als eine Regel verwenden, werden diese Regeln durch den booleschen
 
 So erstellen Sie eine Adobe Target-Zielgruppe:
 
-1. Klicken oder tippen Sie in der Navigationskonsole auf **Personalisierung**. Klicken oder tippen Sie auf **Zielgruppen**.
+1. Wählen Sie in der Navigationskonsole **Personalisierung**. Auswählen **Zielgruppen**.
 
    ![Navigieren zu Zielgruppen](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. Klicken oder tippen Sie in der Navigationskonsole auf **Erstellen** und anschließend auf **Target-Zielgruppe erstellen**.
+1. Wählen Sie in der Konsole Zielgruppen die Option **Erstellen** und dann **Target-Zielgruppe erstellen**.
 
    ![Erstellen einer Target-Zielgruppe](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
-1. Wählen Sie im Dialogfeld **Adobe Target-Konfiguration** die Zielkonfiguration aus und klicken oder tippen Sie auf **OK**.
-1. Tippen oder klicken Sie im Bereich für Regel Nr. 1 auf den Attributtyp und geben Sie in die verfügbaren Felder Attributinformationen ein. Wenn Sie fertig sind, wählen Sie das Häkchen rechts neben dem Attribut aus, um es zu speichern. Weitere Informationen zu allen Attributen finden Sie unter [Attribute und zugehörige Optionen](#attributes-and-their-options).
+1. Im **Adobe Target-Konfiguration** Dialogfeld wählen Sie die Zielkonfiguration aus und wählen Sie **OK**.
+1. Wählen Sie im Bereich Regel Nr. 1 den Attributtyp aus und geben Sie in die verfügbaren Felder Attributinformationen ein. Wenn Sie fertig sind, wählen Sie das Häkchen rechts neben dem Attribut aus, um es zu speichern. Weitere Informationen zu allen Attributen finden Sie unter [Attribute und zugehörige Optionen](#attributes-and-their-options).
 1. Klicken Sie auf **Regel hinzufügen**, um eine weitere Regel hinzuzufügen. Geben Sie so viele Regeln wie erforderlich ein. Regeln werden mit dem booleschen Operator UND kombiniert. Das bedeutet, dass die Zielgruppe alle Anforderungen jeder Regel erfüllen muss, um für eine Aktivität zugelassen zu werden.
-1. Tippen oder klicken Sie auf **Weiter**.
-1. Geben Sie einen Namen für die Zielgruppe ein und tippen oder klicken Sie auf **Speichern**.
-1. Tippen oder klicken Sie auf **Speichern**. Ihre Zielgruppe wird nun in der Zielgruppenliste angezeigt.
+1. Wählen Sie **Weiter** aus.
+1. Geben Sie einen Namen für die Zielgruppe ein und wählen Sie **Speichern**.
+1. Wählen Sie **Speichern** aus. Ihre Zielgruppe wird nun in der Zielgruppenliste angezeigt.
 
 ### Attribute und zugehörige Optionen {#attributes-and-their-options}
 
@@ -97,6 +97,6 @@ Sie können Targeting-Regeln für jedes der folgenden Attribute erstellen:
 
 ContextHub-Zielgruppen lassen sich beliebig mit der Konsole „Zielgruppen“ bearbeiten. Sie können zudem Adobe Target-Zielgruppen bearbeiten, jedoch nur diejenigen, die in AEM erstellt wurden:
 
-1. Klicken oder tippen Sie in der Navigationskonsole auf **Personalisierung**. Klicken oder tippen Sie auf **Zielgruppen**.
-1. Klicken oder tippen Sie auf das Symbol neben dem zu bearbeitenden ContextHub-Segment und tippen oder klicken Sie auf **Bearbeiten**.
+1. Wählen Sie in der Navigationskonsole **Personalisierung**. Auswählen **Zielgruppen**.
+1. Wählen Sie das Symbol neben dem zu bearbeitenden ContextHub-Segment aus und wählen Sie **Bearbeiten**.
 1. Bearbeiten Sie die gewünschten Einstellungen im Editor. Weitere Informationen finden Sie in der ContextHub-Dokumentation. <!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->

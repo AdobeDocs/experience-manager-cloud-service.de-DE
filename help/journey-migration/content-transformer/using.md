@@ -2,10 +2,10 @@
 title: Verwenden von Content Transformer
 description: Erfahren Sie, wie Sie Ihre Inhaltsstruktur bei der Vorbereitung der Migration auf AEM as a Cloud Service umwandeln.
 exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 93%
+source-wordcount: '642'
+ht-degree: 89%
 
 ---
 
@@ -63,7 +63,7 @@ Der Content Transformer ist mit dem [Content Transfer Tool](/help/journey-migrat
    >[!NOTE]
    > Jeder Vorgang, der den Quellinhalt ändern kann (`move`/`remove`/`rename`), erstellt vor der Umwandlung standardmäßig ein Backup-Paket der Quellpfade unter `/etc/packages/content-transformation`. Obwohl jedes Vorgangsdialogfeld über eine Option zum Deaktivieren/Aktivieren der Erstellung von Backup-Paketen verfügt, wird dringend empfohlen, die Erstellung von Paketen immer zu aktivieren.
 
-1. Ein Beispiel für ein Backup-Paket, das für den Verschiebevorgang der Pfade erstellt wurde, ist unten abgebildet. Klicken Sie auf „Installieren“, um die Quellpfade wiederherzustellen. Beachten Sie, dass die Installation nur die Quellpfade an ihren ursprünglichen Speicherort zurückbringt und nicht die Pfade löscht, auf die sie während der Umwandlung verschoben wurden. Um die Pfade an dem verschobenen Speicherort zu löschen, klicken Sie auf die Schaltfläche **Pfade hinzufügen**, um den Speicherort hinzuzufügen (zum Beispiel `/etc/packages/content-transformation/paths`), wählen Sie den Speicherort aus und klicken Sie auf **Entfernen**.
+1. Ein Beispiel für ein Backup-Paket, das für den Verschiebevorgang der Pfade erstellt wurde, ist unten abgebildet. Klicken Sie auf „Installieren“, um die Quellpfade wiederherzustellen. Bei der Installation werden nur die Quellpfade wieder an ihren ursprünglichen Speicherort zurückgeführt, nicht jedoch die Pfade, auf denen sie während der Transformation verschoben wurden. Um die Pfade an dem verschobenen Speicherort zu löschen, klicken Sie auf die Schaltfläche **Pfade hinzufügen**, um den Speicherort hinzuzufügen (zum Beispiel `/etc/packages/content-transformation/paths`), wählen Sie den Speicherort aus und klicken Sie auf **Entfernen**.
 
    >[!CAUTION]
    > Löschen Sie nicht `/etc/packages/content-transformation`, da dies der Speicherort ist, an dem sich die Backup-Pakete befinden. Nur wenn Sie sicher sind, dass Sie diese Pakete nicht mehr benötigen, können Sie diesen Speicherort löschen, um die Repository-Größe zu reduzieren.

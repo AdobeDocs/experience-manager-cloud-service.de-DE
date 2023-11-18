@@ -2,10 +2,10 @@
 title: Ruhezustand und Aufheben des Ruhezustands von Sandbox-Umgebungen
 description: Erfahren Sie, wie die Umgebungen eines Sandbox-Programms automatisch in den Ruhezustand übergehen und wie Sie den Ruhezustand wieder aufheben können.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 93%
+source-wordcount: '683'
+ht-degree: 85%
 
 ---
 
@@ -51,7 +51,7 @@ Wenn der Ruhezustand erfolgreich war, wird die Benachrichtigung zum Abschluss de
 
 ![Ruhezustand – Bestätigung](assets/hibernate-4.png)
 
-In der Entwicklerkonsole können Sie auch auf den Link **Umgebungen** in den Breadcrumbs über dem Dropdown-Feld **Pod** klicken, um eine Liste der Umgebungen zu erhalten, die in den Ruhezustand versetzt werden sollen.
+In der Entwicklerkonsole können Sie auch auf das **Umgebungen** -Link in den Breadcrumbs über dem **Pod** Dropdown-Liste für eine Liste der Umgebungen, die in den Ruhezustand versetzt werden sollen.
 
 ![Liste der Umgebungen, die in den Ruhezustand versetzt werden sollen](assets/hibernate-1b.png)
 
@@ -88,7 +88,7 @@ In der Entwicklerkonsole können Sie auch auf den Link **Umgebungen** in den Bre
    ![Abschluss der Aufhebung des Ruhezustands](assets/de-hibernation-img4.png)
 
 
-In der Entwicklerkonsole können Sie auch auf den Link **Umgebungen** in den Breadcrumbs über dem Dropdown-Feld **Pod** klicken, um eine Liste der Umgebungen, für die der Ruhezustand aufgehoben werden soll, zu erhalten.
+In der Entwicklerkonsole können Sie auch auf das **Umgebungen** -Link in den Breadcrumbs über dem **Pod** Dropdown-Liste für eine Liste der Umgebungen, die den Ruhezustand deaktivieren sollen.
 
 ![Liste der im Ruhezustand befindlichen Pods](assets/de-hibernate-1b.png)
 

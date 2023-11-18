@@ -2,10 +2,10 @@
 title: AEM Sites-Touren
 description: Beginnen Sie hier mit einem Überblick über die geführten Touren, die zum Verständnis der leistungsstarken Sites-Funktionen in AEM verfügbar sind.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '418'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 82%
 
 ---
 
@@ -19,7 +19,7 @@ Beginnen Sie hier mit einem Überblick über die geführten Touren, die zum Vers
 
 ## AEM-Dokumentations-Touren {#documentation-journeys}
 
-[Eine Dokumentations-Tour](/help/journey-documentation/documentation-journeys.md) verbindet viele verschiedene und möglicherweise komplizierte Themen und Funktionen durch eine Erzählung, die dem nicht mit AEM vertrauten Leser hilft, ein geschäftliches Problem von Anfang bis Ende zu verstehen und zu lösen, wobei nur minimale Vorkenntnisse zum Thema oder zu AEM vorausgesetzt werden.
+[Eine Journey der Dokumentation](/help/journey-documentation/documentation-journeys.md) verbindet viele verschiedene, komplizierte Themen und Funktionen, indem eine Erzählung bereitgestellt wird, die dem Leser hilft, der neu zu AEM sein kann, ein Geschäftsproblem von Anfang bis Ende zu verstehen und zu lösen, während er von Anfang bis Ende ein minimales vorheriges Thema oder AEM Wissen angeht.
 
 Dokumentations-Touren werden auf der Grundlage von Best-Practice-Prinzipien entwickelt, die auf Informationen aus den neuesten Forschungsergebnissen von Adobe, bewährten Implementierungserfahrungen der Adobe-Berater und dem Feedback aus Kundenprojekten basieren.
 
@@ -31,7 +31,7 @@ Sites-Touren sind für verschiedene Rollen konzipiert, die die Anforderungen, Sc
 
 Eine einzelne Tour wird für eine bestimmte Rolle oder Zielgruppe definiert, aber auch für weitere Rollen, mit denen der Leser interagiert.
 
-Die Informationen in den Touren können natürlich für mehrere Rollen nützlich sein, aber eine Tour ist auf eine bestimmte Rollen ausgerichtet und einige Informationen können für bestimmte Rollen irrelevant sein.
+Informationen in den Journey können für mehrere Rollen nützlich sein, aber eine Journey richtet sich an eine bestimmte Person, und einige Informationen können für bestimmte Rollen überflüssig sein.
 
 ## Sites-Touren {#sites-journeys}
 

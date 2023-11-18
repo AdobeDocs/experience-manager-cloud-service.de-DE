@@ -6,10 +6,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3172'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -168,13 +168,13 @@ So wählen Sie einen Cloud Service und die Signierreihenfolge aus:
 
    Wenn die Liste **[!UICONTROL Cloud-Service von Adobe Sign]** leer ist, befolgen Sie den Artikel zum [Konfigurieren von [!DNL Adobe Sign] mit [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md), um den Service zu konfigurieren.
 
-   Die Dropdown-Liste führt die Cloud Services im Ordner `global` unter Tools > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]** auf. Darüber hinaus werden in der Dropdown-Liste auch die Cloud Services aufgeführt, die in dem Ordner vorhanden sind, den Sie beim Erstellen eines adaptiven Formulars im Feld **[!UICONTROL Konfigurations-Container]** auswählen.
+   In der Dropdown-Liste werden die Cloud Service aufgelistet, die im `global` Ordner in Tools > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. Darüber hinaus werden in der Dropdownliste auch die Cloud Service aufgelistet, die in dem Ordner vorhanden sind, den Sie im **[!UICONTROL Konfigurations-Container]** beim Erstellen eines adaptiven Formulars ein.
 
 1. Wählen Sie die Signaturreihenfolge im Dialogfeld **[!UICONTROL Empfänger können]**. Die Empfänger können ein adaptives Formular **[!UICONTROL sequenziell]**, d. h. ein Empfänger nach dem anderen, oder **[!UICONTROL simultan]** in beliebiger Reihenfolge signieren.
 
    In sequenzieller Reihenfolge erhält ein Empfänger nach dem anderen die Adobe Sign-Vereinbarung. Nachdem der Empfänger die zugewiesene Aktion abgeschlossen hat, wird die Vereinbarung an den nächsten Empfänger gesendet usw.
 
-   Alle Empfänger erhalten die Adobe Sign-Vereinbarung gleichzeitig und können parallel zueinander tätig werden.
+   Alle Empfänger erhalten gleichzeitig die Adobe Sign-Vereinbarung und können parallel handeln.
 
 1. Verwenden Sie das Feld „Zustimmungs-ID“, um eine bindref zur Zustimmungs-ID (agreementId) zuzuordnen. Es fügt die Vereinbarung-ID zum Abschnitt afBoundData der Übermittlungsdaten für schemabasierte Formulare hinzu. Die Vereinbarungs-ID wird auch zum Abschnitt afSubmissionInfo in den übermittelten Daten für alle Adobe Sign-fähigen Formulare hinzugefügt. Sie können die Vereinbarungs-ID verwenden, um den Vertragsstatus mithilfe von benutzerdefiniertem Code zu verfolgen (kundenspezifische Implementierung erforderlich).
 
@@ -286,7 +286,7 @@ Optional können Sie auch eine „bindref“ mit einer Vereinbarungs-ID (agreeme
 <!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the Adaptive Form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
+>Data of the Adaptive Form is stored temporarily on Forms Portal. Adobe recommends using [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
 Damit ist der Ablauf zur Formularunterzeichnung vollständig. Sie können das Formular in der Vorschau anzeigen, um das Signiererlebnis zu überprüfen. Im veröffentlichten Formular werden [!DNL Adobe Sign]-Blockfelder angezeigt, wenn ein Empfänger das Formular per E-Mail zum Signieren erhält. Wenn die Option **[!UICONTROL Ist der Empfänger mit der Person identisch, die das Formular ausfüllt?]** mit „Ja“ gekennzeichnet und die Bedingung erfüllt ist, wird der Benutzer nach den Übermittlungen zur Adobe Sign-Vereinbarung weitergeleitet, und der Benutzer kann das Dokument sofort signieren, anstatt darauf zu warten, dass die Vereinbarung per E-Mail eintrifft.

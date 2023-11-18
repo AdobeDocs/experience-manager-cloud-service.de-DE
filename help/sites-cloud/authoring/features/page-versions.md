@@ -2,10 +2,10 @@
 title: Arbeiten mit Seitenversionen
 description: Erfahren Sie, wie Sie Versionen Ihrer Seiten in AEM erstellen, vergleichen und wiederherstellen.
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 99%
+source-wordcount: '1505'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 1. Navigieren Sie zu der Seite, für die Sie eine Version erstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Öffnen Sie die **Zeitleiste**.
-1. Klicken/tippen Sie auf die Auslassungszeichen neben dem Kommentarfeld, um die Optionen anzuzeigen:
+1. Wählen Sie die Auslassungszeichen neben dem Kommentarfeld aus, um die Optionen anzuzeigen:
 
    ![Versionen in der Zeitleiste](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
@@ -209,7 +209,7 @@ So verwenden Sie diese Funktion:
 
 Timewarp ist ein [Modus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) des Seiteneditors. Um ihn zu starten, aktivieren Sie ihn einfach wie jeden anderen Modus.
 
-1. Starten Sie den Editor für die Seite, auf der Timewarp ausgeführt werden soll, und wählen Sie in der Modusauswahl **Timewarp** aus.
+1. Starten Sie den Editor für die Seite, auf der Sie Timewarp starten möchten, und wählen Sie dann **Timewarp** in der Modusauswahl.
 
    ![Timewarp-Modus](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 

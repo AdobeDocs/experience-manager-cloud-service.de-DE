@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Collections,Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: ht
-source-wordcount: '845'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 73%
 
 ---
 
@@ -28,7 +28,7 @@ Nachdem Überprüfende die Überprüfung abgeschlossen haben (Assets genehmigt o
 ## Erstellen einer Prüfungsaufgabe für Ordner {#creating-a-review-task-for-folders}
 
 1. Wählen Sie in der Assets-Benutzeroberfläche den Ordner aus, für den Sie eine Prüfungsaufgabe erstellen möchten.
-1. Tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Prüfungsaufgabe erstellen]**, um die Seite **[!UICONTROL Prüfungsaufgabe]** zu öffnen. Wenn Sie das Symbol in der Symbolleiste nicht sehen können, tippen/klicken Sie auf **[!UICONTROL Mehr]** und wählen Sie dann das Symbol aus.
+1. Wählen Sie in der Symbolleiste die **[!UICONTROL Prüfungsaufgabe erstellen]** Symbol zum Öffnen **[!UICONTROL Prüfungsaufgabe]** Seite. Wenn das Symbol in der Symbolleiste nicht angezeigt wird, wählen Sie **[!UICONTROL Mehr]** und wählen Sie dann das Symbol aus.
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
@@ -52,17 +52,17 @@ Nachdem Überprüfende die Überprüfung abgeschlossen haben (Assets genehmigt o
 
    ![Prüfungsname](assets/review_name.png)
 
-1. Tippen/klicken Sie auf **[!UICONTROL Senden]** und dann auf **[!UICONTROL Fertig]**, um die Bestätigungsmeldung zu schließen. Eine Benachrichtigung für die neue Aufgabe wird an die genehmigende Person gesendet.
-1. Melden Sie sich bei [!DNL Experience Manager Assets] als Genehmiger an und gehen Sie zur Assets-Benutzeroberfläche. Um Assets zu genehmigen, klicken/tippen Sie auf das Symbol **[!UICONTROL Benachrichtigungen]** und wählen Sie die Prüfungsaufgabe aus der Liste aus.
+1. Auswählen **[!UICONTROL Einsenden]** und wählen Sie **[!UICONTROL Fertig]** , um die Bestätigungsnachricht zu schließen. Eine Benachrichtigung für die neue Aufgabe wird an die genehmigende Person gesendet.
+1. Melden Sie sich bei [!DNL Experience Manager Assets] als Genehmiger an und gehen Sie zur Assets-Benutzeroberfläche. Um Assets zu genehmigen, wählen Sie die **[!UICONTROL Benachrichtigungen]** und wählen Sie dann die Prüfungsaufgabe aus der Liste aus.
 
    ![Benachrichtigung](assets/notification.png)
 
-1. Überprüfen Sie auf der Seite **[!UICONTROL Prüfungsaufgabe]** die Details der Prüfungsaufgabe und tippen/klicken Sie dann auf **[!UICONTROL Überprüfen]**.
-1. Wählen Sie auf der Seite **[!UICONTROL Prüfungsaufgabe]** Assets aus und tippen/klicken Sie auf das Symbol **[!UICONTROL Genehmigen/Ablehnen]**, um die Assets je nach Bedarf zu genehmigen oder abzulehnen.
+1. Im **[!UICONTROL Prüfungsaufgabe]** Seite, überprüfen Sie die Details der Prüfungsaufgabe und wählen Sie **[!UICONTROL Überprüfen]**.
+1. Im **[!UICONTROL Prüfungsaufgabe]** , Assets auswählen und die **[!UICONTROL Genehmigen/Ablehnung]** zu aktivieren oder abzulehnen.
 
    ![Prüfungsaufgabe](assets/review_task.png)
 
-1. Tippen/klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Fertig stellen]**. Geben Sie im Dialogfeld einen Kommentar ein und tippen/klicken Sie zur Bestätigung auf **[!UICONTROL Fertig stellen]**.
+1. Wählen Sie die **[!UICONTROL Fertig]** in der Symbolleiste. Geben Sie im Dialogfeld einen Kommentar ein und wählen Sie  **[!UICONTROL Fertig]** zur Bestätigung.
 1. Navigieren Sie zur Assets-Benutzeroberfläche und öffnen Sie den Ordner. Die Symbole für den Genehmigungsstatus für die Assets werden sowohl in der Karten- als auch in der Listenansicht angezeigt.
 
    **Kartenansicht**
@@ -76,7 +76,7 @@ Nachdem Überprüfende die Überprüfung abgeschlossen haben (Assets genehmigt o
 ## Erstellen einer Prüfungsaufgabe für Sammlungen {#creating-a-review-task-for-collections}
 
 1. Wählen Sie auf der Seite „Sammlungen“ die Sammlung aus, für die Sie eine Prüfungsaufgabe erstellen möchten.
-1. Tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Prüfungsaufgabe erstellen]**, um die Seite **[!UICONTROL Prüfungsaufgabe]** zu öffnen. Wenn Sie das Symbol in der Symbolleiste nicht sehen können, tippen/klicken Sie auf **[!UICONTROL Mehr]** und wählen Sie dann das Symbol aus.
+1. Wählen Sie in der Symbolleiste die **[!UICONTROL Prüfungsaufgabe erstellen]** Symbol zum Öffnen **[!UICONTROL Prüfungsaufgabe]** Seite. Wenn das Symbol in der Symbolleiste nicht angezeigt wird, wählen Sie **[!UICONTROL Mehr]** und wählen Sie dann das Symbol aus.
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
@@ -96,14 +96,14 @@ Nachdem Überprüfende die Überprüfung abgeschlossen haben (Assets genehmigt o
 
    ![Aufgabendetails-Sammlung](assets/task_details-collection.png)
 
-1. Tippen/klicken Sie auf **[!UICONTROL Senden]** und dann auf **[!UICONTROL Fertig]**, um die Bestätigungsmeldung zu schließen. Eine Benachrichtigung für die neue Aufgabe wird an die genehmigende Person gesendet.
-1. Melden Sie sich bei [!DNL Experience Manager Assets] als Genehmiger an und gehen Sie zur Assets-Konsole. Um Assets zu genehmigen, tippen/klicken Sie auf das Symbol **[!UICONTROL Benachrichtigungen]** und wählen Sie die Prüfungsaufgabe aus der Liste aus.
-1. Überprüfen Sie auf der Seite **[!UICONTROL Prüfungsaufgabe]** die Details der Prüfungsaufgabe und tippen/klicken Sie dann auf **[!UICONTROL Überprüfen]**.
-1. Alle Assets in der Sammlung sind auf der Prüfungsseite sichtbar. Wählen Sie die Assets aus und tippen/klicken Sie auf das Symbol **[!UICONTROL Genehmigen/Ablehnen]**, um die Assets je nach Bedarf zu genehmigen bzw. abzulehnen.
+1. Auswählen **[!UICONTROL Einsenden]** und wählen Sie **[!UICONTROL Fertig]** , um die Bestätigungsnachricht zu schließen. Eine Benachrichtigung für die neue Aufgabe wird an die genehmigende Person gesendet.
+1. Melden Sie sich bei [!DNL Experience Manager Assets] als Genehmiger an und gehen Sie zur Assets-Konsole. Um Assets zu genehmigen, wählen Sie die **[!UICONTROL Benachrichtigungen]** und wählen Sie dann die Prüfungsaufgabe aus der Liste aus.
+1. Im **[!UICONTROL Prüfungsaufgabe]** Seite, überprüfen Sie die Details der Prüfungsaufgabe und wählen Sie **[!UICONTROL Überprüfen]**.
+1. Alle Assets in der Sammlung sind auf der Prüfungsseite sichtbar. Wählen Sie die Assets aus und wählen Sie die **[!UICONTROL Genehmigen/Ablehnung]** -Symbol, um Assets je nach Bedarf zu genehmigen oder abzulehnen.
 
    ![Prüfungsaufgabe-Sammlung](assets/review_task_collection.png)
 
-1. Tippen/klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Fertig stellen]**. Geben Sie im Dialogfeld einen Kommentar ein und tippen/klicken Sie zur Bestätigung auf **[!UICONTROL Fertig stellen]**.
+1. Wählen Sie die **[!UICONTROL Fertig]** in der Symbolleiste. Geben Sie im Dialogfeld einen Kommentar ein und wählen Sie **[!UICONTROL Fertig]** zur Bestätigung.
 1. Gehen Sie zur Konsole „Sammlungen“ und öffnen Sie die Sammlung. Die Symbole für den Genehmigungsstatus für die Assets werden sowohl in der Karten- als auch in der Listenansicht angezeigt.
 
    **Kartenansicht**

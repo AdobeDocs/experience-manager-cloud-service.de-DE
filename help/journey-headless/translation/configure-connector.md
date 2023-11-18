@@ -2,10 +2,10 @@
 title: Konfigurieren der Übersetzungsintegration für Headless Content
 description: Erfahren Sie, wie Sie AEM mit einem Übersetzungs-Service verbinden.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 93%
+source-wordcount: '1216'
+ht-degree: 83%
 
 ---
 
@@ -70,22 +70,22 @@ Nachdem das Connector-Paket für Ihren bevorzugten Übersetzungsdienst installie
 
 So erstellen Sie eine Übersetzungskonfiguration:
 
-1. Klicken oder tippen Sie im globalen Navigationsmenü auf **Instrumente** > **Cloud Service** > **Übersetzungs-Cloud Service**.
-1. Navigieren Sie zu der Stelle in Ihrer Inhaltsstruktur, an der Sie die Konfiguration erstellen möchten. Diese bezieht sich oft auf ein bestimmted Projekt oder kann global sein.
+1. Wählen Sie im globalen Navigationsmenü die Option **Instrumente** > **Cloud Service** > **Übersetzungs-Cloud Service**.
+1. Navigieren Sie zu der Stelle, an der Sie die Konfiguration in Ihrer Inhaltsstruktur erstellen möchten. Diese bezieht sich oft auf ein bestimmted Projekt oder kann global sein.
    * In diesem Fall kann beispielsweise eine Konfiguration global vorgenommen werden, um sie auf alle Inhalte oder nur auf das WKND-Projekt anzuwenden.
 
    ![Speicherort der Übersetzungskonfiguration](assets/translation-configuration-location.png)
 
-1. Geben Sie die folgenden Informationen in die Felder ein und klicken oder tippen Sie dann auf **Erstellen**:
+1. Geben Sie die folgenden Informationen in die Felder ein und wählen Sie dann **Erstellen**.
    1. Wählen Sie **Konfigurationstyp** in der Dropdown-Liste aus. Wählen Sie **Übersetzungsintegration** aus der Liste aus.
    1. Geben Sie einen **Titel** für Ihre Konfiguration ein. Durch den **Titel** wird die Konfiguration in der **Cloud Services**-Konsole und in Dropdown-Listen mit den Seiteneigenschaften identifiziert.
    1. Geben Sie optional einen **Namen** für den Repository-Knoten ein, auf dem die Konfiguration gespeichert wird.
 
    ![Erstellen einer Übersetzungskonfiguration](assets/create-translation-configuration.png)
 
-1. Tippen oder klicken Sie auf **Erstellen**. Daraufhin wird das Fenster **Konfiguration bearbeiten** angezeigt, in dem Sie die Konfigurationseigenschaften konfigurieren können.
+1. Auswählen **Erstellen** und **Konfiguration bearbeiten** angezeigt, in dem Sie die Konfigurationseigenschaften konfigurieren können.
 
-1. Denken Sie daran, dass Inhaltsfragmente in AEM als Assets gespeichert werden. Tippen oder klicken Sie auf die Registerkarte **Assets**.
+1. Denken Sie daran, dass Inhaltsfragmente in AEM als Assets gespeichert werden. Wählen Sie die **Assets** Registerkarte.
 
 ![Eigenschaften der Übersetzungskonfiguration](assets/translation-configuration.png)
 
@@ -102,7 +102,7 @@ So erstellen Sie eine Übersetzungskonfiguration:
    1. **Deaktivieren der Nur-Update-Übersetzung** – Wenn diese Option aktiviert ist, werden bei einer Aktualisierung des Übersetzungsprojekts alle übersetzbaren Felder zur Übersetzung übermittelt, nicht nur die, die seit der letzten Übersetzung geändert wurden. Das Aktualisieren Ihres Übersetzungsprojekts wird später in der Tour erläutert.
    1. **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** – Aktivieren Sie diese Option, damit die Übersetzungskonfiguration Felder in den Inhaltsmodellen anhand der Markierung **Übersetzbar** erkennt.
 
-1. Tippen oder klicken Sie auf **Speichern und schließen**.
+1. Klicken Sie auf **Speichern und schließen**.
 
 Sie haben jetzt den Connector für Ihren Übersetzungsdienst konfiguriert.
 
@@ -116,12 +116,12 @@ Gehen Sie dazu zum Sprachstamm Ihrer Inhalte. Für unsere Beispielzwecke ist die
 /content/dam/<your-project>/en
 ```
 
-1. Gehen Sie zur globalen Navigation und gehen Sie zu **Navigation** > **Assets** > **Dateien**.
-1. Wählen Sie in der Assets-Konsole den zu konfigurierenden Sprachstamm aus und klicken oder tippen Sie auf **Eigenschaften**.
-1. Tippen oder klicken Sie auf die Registerkarte **Cloud-Services**.
-1. Wählen Sie unter **Cloud-Service-Konfigurationen** in der Dropdown-Liste **Konfiguration hinzufügen** Ihren Connector aus. Er sollte in der Dropdown-Liste angezeigt werden, wenn Sie das Paket wie [weiter oben beschrieben](#connect-translation-provider) installiert haben.
-1. Wählen Sie unter **Cloud-Service-Konfigurationen** in der Dropdown-Liste **Konfiguration hinzufügen** auch Ihre Konfiguration aus.
-1. Tippen oder klicken Sie auf **Speichern und schließen**.
+1. Navigieren Sie zur globalen Navigation und navigieren Sie zu **Navigation** > **Assets** > **Dateien**.
+1. Wählen Sie in der Assets-Konsole den zu konfigurierenden Sprachstamm aus und wählen Sie **Eigenschaften**.
+1. Wählen Sie die Registerkarte **Cloud-Services** aus.
+1. under **Cloud Service-Konfigurationen** im **Konfiguration hinzufügen** Wählen Sie aus der Dropdown-Liste Ihren Connector aus. Sie sollte in der Dropdown-Liste angezeigt werden, wenn Sie das Paket als [weiter oben beschrieben.](#connect-translation-provider)
+1. under **Cloud Service-Konfigurationen** im **Konfiguration hinzufügen** -Dropdownliste, wählen Sie auch Ihre Konfiguration aus.
+1. Klicken Sie auf **Speichern und schließen**.
 
 ![Wählen Sie Cloud-Service-Konfigurationen aus.](assets/select-cloud-service-configurations.png)
 

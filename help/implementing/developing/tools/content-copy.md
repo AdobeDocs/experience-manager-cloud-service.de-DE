@@ -2,10 +2,10 @@
 title: Das Inhaltskopie-Tool
 description: Mit dem Inhaltskopier-Tool können Benutzende veränderbare Inhalte bei Bedarf aus ihren Produktionsumgebungen auf AEM as a Cloud Service in niedrigere Umgebungen zu Testzwecken kopieren.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 87%
+source-wordcount: '1292'
+ht-degree: 84%
 
 ---
 
@@ -41,7 +41,7 @@ Um das Inhaltskopie-Tool verwenden zu können, sind sowohl in der Quell- als auc
 | Erstellen und Ändern von [Content-Sets](#create-content-set) | Nicht erforderlich | Erforderlich |
 | Starten oder Abbrechen des [Inhaltskopie-Prozesses](#copy-content) | Erforderlich | Erforderlich |
 
-Weitere Informationen zu Berechtigungen und zum Festlegen dieser Berechtigungen finden Sie im Dokument [AEM as a Cloud Service Team und Produktprofile.](/help/onboarding/aem-cs-team-product-profiles.md)
+Weitere Informationen zu Berechtigungen und deren Festlegung finden Sie unter [AEM as a Cloud Service Team und Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Erstellen eines Content-Sets {#create-content-set}
 
@@ -57,7 +57,7 @@ Bevor Inhalt kopiert werden kann, muss ein Content-Set definiert werden. Nach de
 
    ![Content-Sets](assets/content-sets.png)
 
-1. Geben Sie auf der Registerkarte **Details** des Assistenten einen Namen und eine Beschreibung für das Content-Set ein und tippen oder klicken Sie auf **Weiter**.
+1. Im **Details** Registerkarte des Assistenten, geben Sie einen Namen und eine Beschreibung für den Inhaltssatz ein und wählen Sie **Weiter**.
 
    ![Content-Set-Details](assets/add-content-set-details.png)
 
@@ -74,8 +74,8 @@ Bevor Inhalt kopiert werden kann, muss ein Content-Set definiert werden. Nach de
 
    1. Tippen oder klicken Sie in der Liste der enthaltenen Pfade auf das Symbol **Ausschluss-Unterpfade hinzufügen** neben dem Pfad, den Sie einschränken möchten.
    1. Geben Sie den Unterpfad ein, der unterhalb des ausgewählten Pfads ausgeschlossen werden soll.
-   1. Tippen oder klicken Sie auf **Pfad ausschließen**.
-   1. Tippen oder klicken Sie erneut auf **Ausschluss-Unterpfade hinzufügen**, um bei Bedarf weitere Pfade zum Ausschluss hinzuzufügen.
+   1. Auswählen **Ausschlusspfad**.
+   1. Auswählen **Hinzufügen von Ausschlussunterpfaden** erneut hinzufügen, um bei Bedarf zusätzliche Pfade zum Ausschließen hinzuzufügen.
       * Ausgeschlossene Pfade müssen relativ zum eingeschlossenen Pfad sein.
       * Die Anzahl der ausgeschlossenen Pfade ist unbegrenzt.
 
@@ -88,7 +88,7 @@ Bevor Inhalt kopiert werden kann, muss ein Content-Set definiert werden. Nach de
 
    ![Bearbeiten der Pfadliste](assets/add-content-set-excluded-paths.png)
 
-1. Tippen oder klicken Sie auf **Erstellen**, um das Content-Set zu erstellen.
+1. Auswählen **Erstellen** , um den Inhaltssatz zu erstellen.
 
 Das Content-Set kann jetzt zum Kopieren von Inhalten zwischen Umgebungen verwendet werden.
 
@@ -136,7 +136,7 @@ Nachdem ein Content-Set erstellt wurde, können Sie ihn zum Kopieren von Inhalte
 
 1. Falls erforderlich, können Sie auch **Zugriffskontrolllisten** in Ihren Kopiervorgang einbeziehen.
 
-1. Tippen oder klicken Sie auf **Kopieren**.
+1. Klicken Sie auf **Kopieren**.
 
 Der Kopiervorgang wird gestartet. Der Status des Kopiervorgangs wird für das ausgewählte Content-Set in der Konsole angezeigt.
 

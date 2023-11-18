@@ -2,10 +2,10 @@
 title: Veröffentlichen übersetzter Headless-Inhalte
 description: Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Übersetzungen aktualisieren, wenn die Inhalte sich ändern.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1387'
-ht-degree: 97%
+source-wordcount: '1360'
+ht-degree: 83%
 
 ---
 
@@ -63,13 +63,13 @@ Die einfachste Möglichkeit, die Übersetzungen zu veröffentlichen, besteht dar
 
 Unter diesem Pfad befinden sich Unterordner für jede Übersetzungssprache und Sie können auswählen, welche veröffentlicht werden sollen.
 
-1. Gehen Sie zu **Navigation** > **Assets** > **Dateien** und öffnen Sie den Projektordner.
-1. Hier sehen Sie den Ordner für den Sprachstamm und alle anderen Sprachordner. Wählen Sie die zu veröffentlichenden lokalisierten Sprachen aus.
+1. Navigieren Sie zu **Navigation** > **Assets** > **Dateien** und öffnen Sie den Projektordner.
+1. Hier sehen Sie den Ordner für den Sprachstamm und alle anderen Sprachordner. Wählen Sie die lokalisierten Sprachen aus, die Sie veröffentlichen möchten.
    ![Sprachordner auswählen](assets/select-language-folder.png)
-1. Tippen oder klicken Sie auf **Veröffentlichung verwalten**.
-1. Vergewissern Sie sich im Fenster **Veröffentlichung verwalten**, dass unter **Aktion** automatisch **Veröffentlichen** und unter **Planung** **Jetzt** ausgewählt ist. Tippen oder klicken Sie auf **Weiter**.
+1. Auswählen **Veröffentlichung verwalten**.
+1. Vergewissern Sie sich im Fenster **Veröffentlichung verwalten**, dass unter **Aktion** automatisch **Veröffentlichen** und unter **Planung** **Jetzt** ausgewählt ist. Wählen Sie **Weiter** aus.
    ![Veröffentlichungsoptionen verwalten](assets/manage-publication-options.png)
-1. Bestätigen Sie im nächsten Fenster, **Veröffentlichung verwalten**, dass die richtigen Pfade ausgewählt sind. Tippen oder klicken Sie auf **Veröffentlichen**.
+1. Bestätigen Sie im nächsten Fenster, **Veröffentlichung verwalten**, dass die richtigen Pfade ausgewählt sind. Auswählen **Veröffentlichen**.
    ![Umfang der Veröffentlichung verwalten](assets/manage-publication-scope.png)
 1. AEM bestätigt die Veröffentlichungsaktion mit einer Popup-Meldung am unteren Bildschirmrand.
    ![Banner „Ressourcen veröffentlicht“](assets/resources-published-message.png)
@@ -92,29 +92,29 @@ Der Prozess unterscheidet sich jedoch geringfügig, je nachdem, ob Sie sich für
 
 ### Aktualisieren eines automatisch erstellten Übersetzungsprojekts {#updating-automatic-project}
 
-1. Gehen Sie zu **Navigation** > **Assets** > **Dateien**. Beachten Sie, dass Headless-Inhalte in AEM als Assets gespeichert werden. Diese werden auch als Inhaltsfragmente bezeichnet.
+1. Navigieren Sie zu **Navigation** > **Assets** > **Dateien**. Beachten Sie, dass Headless-Inhalte in AEM als Assets gespeichert werden. Diese werden auch als Inhaltsfragmente bezeichnet.
 1. Wählen Sie den Sprachstamm Ihres Projekts aus. In diesem Fall haben wir `/content/dam/wknd/en` ausgewählt.
-1. Tippen oder klicken Sie auf die Auswahlleiste und zeigen Sie den Bereich **Verweise** an.
-1. Tippen oder klicken **Sprachkopien**.
+1. Wählen Sie die Schienenauswahl aus und zeigen Sie die **Verweise** Bedienfeld.
+1. Auswählen **Sprachkopien**.
 1. Aktivieren Sie das Kontrollkästchen **Sprachkopien**.
 1. Erweitern Sie den Abschnitt **Sprachkopien aktualisieren** unten im Bereich „Verweise“.
-1. Wählen Sie in der Dropdown-Liste **Projekt** die Option **Hinzufügen zu einem vorhandenen Übersetzungsprojekt** aus.
-1. Wählen Sie in der Dropdown-Liste **Vorhandenes Übersetzungsprojekt** das Projekt aus, das für die Erstübersetzung erstellt wurde.
-1. Tippen oder klicken Sie auf **Start**.
+1. Im **Projekt** Dropdown-Liste auswählen **Hinzufügen zu einem vorhandenen Übersetzungsprojekt**.
+1. Im **Vorhandenes Übersetzungsprojekt** in der Dropdown-Liste das für die Erstübersetzung erstellte Projekt auswählen.
+1. Auswählen **Starten**.
 
 ![Hinzufügen von Elementen zu einem vorhandenen Übersetzungsprojekt](assets/add-to-existing-project.png)
 
 Die Inhalte werden zum vorhandenen Übersetzungsprojekt hinzugefügt. So zeigen Sie das Übersetzungsprojekt an:
 
-1. Gehen Sie zu **Navigation** > **Projekte**.
-1. Tippen oder klicken Sie auf das soeben aktualisierte Projekt.
-1. Tippen oder klicken Sie auf die Sprache oder eine der Sprachen, die Sie aktualisiert haben.
+1. Navigieren Sie zu **Navigation** > **Projekte**.
+1. Wählen Sie das soeben aktualisierte Projekt aus.
+1. Wählen Sie die Sprache oder eine der Sprachen aus, die Sie aktualisiert haben.
 
 Sie sehen, dass dem Projekt eine neue Auftragskarte hinzugefügt wurde. In diesem Beispiel wurde eine weitere spanische Übersetzung hinzugefügt.
 
 ![Zusätzlicher Übersetzungsauftrag hinzugefügt](assets/additional-translation-job.png)
 
-Sie werden feststellen, dass die auf der neuen Karte aufgelisteten Statistiken (Anzahl der Assets und Inhaltsfragmente) unterschiedlich sind. Dies liegt daran, dass AEM erkennt, was sich seit der letzten Übersetzung geändert hat, und nur die Inhalte einschließt, die übersetzt werden müssen. Dazu gehört die erneute Übersetzung aktualisierter Inhalte und die Erstübersetzung neuer Inhalte.
+Sie werden feststellen, dass die auf der neuen Karte aufgelisteten Statistiken (Anzahl der Assets und Inhaltsfragmente) unterschiedlich sind. Dies liegt daran, dass AEM erkennt, was sich seit der letzten Übersetzung geändert hat, und nur den Inhalt enthält, der übersetzt werden muss. Dazu gehört die erneute Übersetzung aktualisierter Inhalte und die Erstübersetzung neuer Inhalte.
 
 Von diesem Punkt an [beginnen und verwalten Sie Ihren Übersetzungsauftrag genauso wie den ursprünglichen Auftrag](translate-content.md#using-translation-project).
 
@@ -122,22 +122,22 @@ Von diesem Punkt an [beginnen und verwalten Sie Ihren Übersetzungsauftrag genau
 
 Um eine Übersetzung zu aktualisieren, können Sie Ihrem vorhandenen Projekt einen neuen Auftrag hinzufügen, der für die Übersetzung der aktualisierten Inhalte verantwortlich ist.
 
-1. Gehen Sie zu **Navigation** > **Projekte**.
-1. Tippen oder klicken Sie auf das Projekt, das Sie aktualisieren müssen.
-1. Tippen oder klicken Sie auf die Schaltfläche **Hinzufügen** am oberen Rand des Fensters.
-1. Tippen oder klicken Sie im Fenster **Kachel hinzufügen** auf **Übersetzungsauftrag** und dann auf **Absenden**.
+1. Navigieren Sie zu **Navigation** > **Projekte**.
+1. Wählen Sie das zu aktualisierende Projekt aus.
+1. Wählen Sie die **Hinzufügen** -Schaltfläche am oberen Rand des Fensters.
+1. Im **Kachel hinzufügen** auswählen **Übersetzungsauftrag** und dann **Einsenden**.
 
    ![Kachel hinzufügen](assets/add-translation-job-tile.png)
 
-1. Tippen oder klicken Sie oben auf der Karte des neuen Übersetzungsauftrags auf die Schaltfläche mit dem Pfeil und wählen Sie **Ziel aktualisieren**, um die Zielsprache des neuen Auftrags zu bestimmen.
+1. Wählen Sie auf der Karte des neuen Übersetzungsauftrags die Pfeilschaltfläche oben auf der Karte aus und wählen Sie **Target aktualisieren** , um die Zielsprache des neuen Auftrags zu definieren.
 
    ![Ziel aktualisieren](assets/update-target.png)
 
-1. Verwenden Sie im Dialogfeld **Zielsprache auswählen** die Dropdown-Liste, um die Sprache auszuwählen, und tippen oder klicken Sie auf **Fertig**.
+1. Im **Zielsprache auswählen** -Dialogfeld verwenden, wählen Sie die Sprache aus und wählen Sie **Fertig**.
 
    ![Zielsprache auswählen](assets/select-target-language.png)
 
-1. Sobald die Zielsprache Ihres neuen Übersetzungsauftrags festgelegt ist, tippen oder klicken Sie unten auf der Auftragskarte auf die Suchschaltfläche , um die Details des Auftrags anzuzeigen.
+1. Nachdem die Zielsprache des neuen Übersetzungsauftrags festgelegt wurde, wählen Sie die Suchschaltfläche unten auf der Auftragskarte aus, um die Details des Auftrags anzuzeigen.
 1. Der Auftrag ist beim ersten Erstellen leer. Fügen Sie Inhalte zum Auftrag hinzu, indem Sie auf die Schaltfläche **Hinzufügen** klicken und den Pfad-Browser verwenden, [wie Sie es bereits bei der Erstellung des Übersetzungsprojekts getan haben.](translate-content.md##manually-creating)
 
 >[!TIP]

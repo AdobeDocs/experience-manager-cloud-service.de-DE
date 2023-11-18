@@ -4,10 +4,10 @@ description: Mit Forms-zentrierten Workflows können Sie schnell auf adaptiven F
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Verwenden Sie AEM Workflows, indem Sie Aufgabenschritte zuweisen, in PDF/A-Schritt konvertieren, Dokument des aufgezeichneten Schritts generieren, Workflows verwenden, Dokumentschritt unterschreiben, Druckten Ausgabeschritt generieren, Nicht-interaktive PDF-Ausgabe generieren
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '7446'
-ht-degree: 79%
+source-wordcount: '7444'
+ht-degree: 78%
 
 ---
 
@@ -396,7 +396,7 @@ Der Schritt „Dokument signieren“ hat folgende Eigenschaften:
 * **[!UICONTROL Signaturvorgang]**: Sie können wählen, ob ein Dokument in einer sequenziellen oder parallelen Reihenfolge signiert werden soll. Bei sequenzieller Reihenfolge erhält jeweils nur ein Unterzeichner das Formular zur Unterzeichnung. Nachdem der erste Unterzeichner das Signieren des Dokuments abgeschlossen hat, wird das Dokument an den zweiten Unterzeichner gesendet usw. Bei paralleler Reihenfolge können mehrere Unterzeichner ein Formular gleichzeitig signieren.
 * **[!UICONTROL Umleitungs-URL]**: Geben Sie eine Umleitungs-URL an. Nachdem das Dokument signiert wurde, können Sie den Verantwortlichen an eine URL umleiten. Normalerweise enthält diese URL eine Dankesnachricht oder weitere Anweisungen.
 * **[!UICONTROL Workflow-Schritt]**: Ein Workflow kann mehrere Schritte umfassen. Diese werden im AEM-Posteingang angezeigt. Sie können diese Phasen in den Eigenschaften des Modells definieren (**[!UICONTROL Sidekick]** > **[!UICONTROL Seite]** > **[!UICONTROL Seiteneigenschaften]** > **[!UICONTROL Phasen]**).
-* **[!UICONTROL Empfänger auswählen]**: Geben Sie die Methode zur Auswahl der Empfänger für das Dokument an. Sie können den Workflow dynamisch einem Benutzer oder einer Gruppe zuweisen oder Details eines Empfängers manuell hinzufügen. Wenn Sie im Dropdown-Menü Manuell auswählen, fügen Sie Empfängerdetails wie E-Mail, Rolle und Authentifizierungsmethode hinzu.
+* **[!UICONTROL Empfänger auswählen]**: Geben Sie die Methode zur Auswahl der Empfänger für das Dokument an. Sie können den Workflow dynamisch einem Benutzer oder einer Gruppe zuweisen oder Details eines Empfängers manuell hinzufügen. Wenn Sie in der Dropdownliste die Option Manuell auswählen, fügen Sie Empfängerdetails wie E-Mail, Rolle und Authentifizierungsmethode hinzu.
 
   >[!NOTE]
   >
@@ -546,7 +546,7 @@ Der Schritt „Gedruckte Ausgabe generieren“ hat die folgenden Eigenschaften:
 
 * **[!UICONTROL Speicherort des Inhaltsstamms auswählen mit]**: Der Inhaltsstamm ist ein Zeichenfolgenwert, der den URI, den absoluten Verweis oder den Speicherort im Repository angibt, um relative Elemente abzurufen, die vom Formularentwurf verwendet werden. Wenn der Formularentwurf zum Beispiel auf ein Bild verweist, das relativ ist, wie `../myImage.gif`, muss `myImage.gif` auf `repository://` liegen. Der Standardwert ist `repository://`, was auf die Stammebene des Repositorys verweist.
 
-  Wenn Sie ein Asset aus Ihrer Anwendung auswählen, muss der Pfad des Inhaltsstamm-URI die richtige Struktur aufweisen. Wenn beispielsweise ein Formular aus einer Anwendung namens SampleApp ausgewählt und unter `SampleApp/1.0/forms/Test.xdp` gespeichert wird, muss der Inhaltsstamm-URI als `repository://administrator@password/Applications/SampleApp/1.0/forms/` bzw. `repository:/Applications/SampleApp/1.0/forms/` (wenn die Berechtigung „null“ ist) angegeben werden. Wenn der Inhaltsstamm-URI auf diese Weise angegeben wird, werden die Pfade aller referenzierten Elemente im Formular für diesen URI aufgelöst.
+  Wenn Sie ein Asset aus Ihrer Anwendung auswählen, muss der Pfad des Inhaltsstamm-URI die richtige Struktur aufweisen. Wenn beispielsweise ein Formular aus einer Anwendung namens SampleApp ausgewählt und unter `SampleApp/1.0/forms/Test.xdp` gespeichert wird, muss der Inhaltsstamm-URI als `repository://administrator@password/Applications/SampleApp/1.0/forms/` bzw. `repository:/Applications/SampleApp/1.0/forms/` (wenn die Berechtigung „null“ ist) angegeben werden. Wenn der Inhaltsstamm-URI auf diese Weise angegeben wird, werden die Pfade aller referenzierten Assets im Formular für diesen URI aufgelöst.
 
 * **[!UICONTROL XCI-Datei auswählen mit]**: XCI-Dateien werden verwendet, um Schriftarten und andere Eigenschaften zu beschreiben, die für Formularentwurfselemente verwendet werden. Sie können eine XCI-Datei relativ zur Payload, in einem absoluten Pfad oder mithilfe einer Variablen des Datentyps „Document“ beibehalten.
 

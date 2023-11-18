@@ -3,10 +3,10 @@ title: Überlegungen zu Berechtigungen für Headless-Inhalte
 description: Erfahren Sie mehr über verschiedene Berechtigungen und Überlegungen zu ACL für eine Headless-Implementierung mit Adobe Experience Manager. Machen Sie sich mit den verschiedenen Rollen und möglichen Berechtigungsstufen vertraut, die sowohl für die Autoren- als auch für die Veröffentlichungsumgebung erforderlich sind.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: 526520a8d9d217d0861a7283b10f7b89dffaf9d5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '841'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -64,7 +64,7 @@ Die Möglichkeit, **Inhaltsfragmentmodelle** zu ändern, sollte Administratoren 
 >
 >Änderungen an Inhaltsfragmentmodellen ändern die zugrunde liegende GraphQL-API, auf die Headless-Anwendungen angewiesen sind.
 
-Wenn Sie eine Gruppe erstellen möchten, die Inhaltsfragmentmodelle verwaltet, aber nicht den vollständigen Administratorzugriff hat, können Sie eine Gruppe mit den folgenden Einträgen für die Zugriffssteuerung erstellen:
+Wenn Sie eine Gruppe erstellen möchten, die Inhaltsfragmentmodelle verwaltet, aber nicht den vollständigen Administratorzugriff hat, können Sie eine Gruppe mit den folgenden Zugriffssteuerungseinträgen erstellen:
 
 | Pfad  | Berechtigung | Berechtigungen |
 |-----| -------------| ---------|

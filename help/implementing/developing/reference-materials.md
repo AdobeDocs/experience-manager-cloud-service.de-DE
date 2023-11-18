@@ -2,16 +2,16 @@
 title: API-Referenzmaterial
 description: AEM verfügt über umfangreiche und leistungsstarke APIs, die Sie für Ihr Digital-Experience-Projekt nutzen können.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '664'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 91%
 
 ---
 
 # API-Referenzmaterial {#api-reference-materials}
 
-Adobe Experience Manager (AEM) stellt zahlreiche APIs zum Entwickeln von Anwendungen und Erweitern von AEM bereit. AEM basiert auf einer Reihe von Open-Source-Technologien, die ebenfalls genutzt werden können.
+Adobe Experience Manager (AEM) stellt zahlreiche APIs zum Entwickeln von Anwendungen und Erweitern von AEM bereit. AEM basiert auf mehreren Open-Source-Technologien, die auch verwendet werden können.
 
 ## AEM-Kern-APIs {#core-aem-apis}
 
@@ -20,7 +20,7 @@ Die folgenden APIs sind zentraler Bestandteil von AEM.
 | API | Beschreibung |
 |---|---|
 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Produktabstraktionen wie Seiten, Assets, Workflows usw. |
-| [Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Open Web Stack von Adobe mit verschiedenen wichtigen Komponenten (Beachten Sie, dass die 6.5 Granite-Materialien für AEMaaCS gelten) |
+| [Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Adobe&#39;s Open Web Stack mit verschiedenen wesentlichen Komponenten (die 6.5 Granite-Materialien gelten für AEMaaCS) |
 | [Coral-Benutzeroberfläche](https://opensource.adobe.com/coral-spectrum/documentation/) | Der visuelle Stil von Adobe für Cloud-Benutzeroberflächen und ein konsistentes Benutzererlebnis |
 
 <!---
@@ -29,7 +29,7 @@ Die folgenden APIs sind zentraler Bestandteil von AEM.
 
 ## Weitere Frameworks {#additional-apis}
 
-AEM nutzt eine Reihe zusätzlicher Open-Source-APIs.
+AEM benötigt mehrere zusätzliche Open-Source-APIs.
 
 | API | Beschreibung |
 |---|---|

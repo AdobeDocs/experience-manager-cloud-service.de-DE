@@ -1,13 +1,13 @@
 ---
 title: Experience Audit-Dashboard
 description: Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die bereitgestellten Änderungen über eine klare, informative Dashboard-Oberfläche den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 17%
+source-wordcount: '831'
+ht-degree: 23%
 
 ---
-
 
 # Experience Audit-Dashboard {#experience-audit-dashboard}
 
@@ -18,7 +18,7 @@ Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und s
 >
 >Diese Funktion steht nur für [das Programm für den frühen Anwender.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
 >
->Weitere Informationen zur vorhandenen Funktion &quot;Experience Audit&quot;für AEM as a Cloud Service finden Sie im Dokument [Testen von Experience Audit.](/help/implementing/cloud-manager/experience-audit-testing.md)
+>Weitere Informationen zur vorhandenen Funktion &quot;Erlebnisprüfung&quot;für AEM as a Cloud Service finden Sie unter [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 ## Übersicht {#overview}
 
@@ -30,9 +30,9 @@ Experience Audit ist eine Funktion, die in Cloud Manager Sites-Produktions-Pipel
 
 Experience Audit in Cloud Manager stellt sicher, dass das Erlebnis der Endbenutzenden auf der Site höchsten Standards entspricht.
 
-Die Ergebnisse des Audits sind rein informativ und ermöglichen es dem Bereitstellungs-Manager, die Bewertungen sowie die Unterschiede zwischen aktuellen und vorherigen Bewertungen anzuzeigen. Diese Einblicke sind nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Implementierung eingeführt wurde.
+Die Ergebnisse des Audits sind rein informativ und ermöglichen es dem Bereitstellungs-Manager, die Bewertungen sowie die Unterschiede zwischen aktuellen und vorherigen Bewertungen anzuzeigen. Diese Erkenntnis ist wertvoll, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wurde.
 
-Experience Audit basiert auf [Google Lighthouse,](https://developer.chrome.com/docs/lighthouse/overview/) ein Open-Source-Tool aus Google ist und in allen Cloud Manager-Produktions-Pipelines aktiviert ist.
+Experience Audit basiert auf [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/), ein Open-Source-Tool aus Google, das in allen Cloud Manager-Produktions-Pipelines aktiviert ist.
 
 >[!TIP]
 >
@@ -40,7 +40,7 @@ Experience Audit basiert auf [Google Lighthouse,](https://developer.chrome.com/d
 
 ## Das Dashboard &quot;Erlebnisprüfung&quot; {#dashboard}
 
-Die Ergebnisse der Erlebnisprüfung werden im Abschnitt **Staging-Tests** Phase der Produktions-Pipeline über die [Ausführungsseite der Produktions-Pipeline.](/help/implementing/cloud-manager/deploy-code.md)
+Die Ergebnisse der Erlebnisprüfung werden im Abschnitt **Staging-Tests** Phase der Produktions-Pipeline über die [Ausführungsseite der Produktions-Pipeline](/help/implementing/cloud-manager/deploy-code.md).
 
 ![Dashboard in der Pipeline](assets/dashboard.png)
 
@@ -57,7 +57,7 @@ Die **Insights** -Tab enthält eine kurze Beschreibung der umsetzbaren Empfehlun
 
 ![Erkenntnisse](assets/insights.png)
 
-Tippen oder klicken Sie auf **Mehr anzeigen** -Schaltfläche, um das vollständige Dashboard zu öffnen.
+Wählen Sie die **Mehr anzeigen** -Schaltfläche, um das vollständige Dashboard zu öffnen.
 
 Im **Einblicke und Empfehlungen** finden Sie eine detaillierte Liste der umsetzbaren Empfehlungen mit einem klaren Wertindikator, der an die bei der Performance zu erwartenden Gewinne gebunden ist, sowie den betroffenen Prozentsatz der Seiten. Auf diese Weise können Sie diese Empfehlungen einfach für Ihre Teams priorisieren.
 
@@ -71,7 +71,7 @@ Die **Lighthouse-Bewertungen** tab eine Zusammenfassung der Lighthouse-Werte fü
 
 ![Lighthouse-Bewertungen](assets/lighthouse.png)
 
-Tippen oder klicken Sie auf **Mehr anzeigen** -Schaltfläche, um das vollständige Dashboard zu öffnen.
+Wählen Sie die **Mehr anzeigen** -Schaltfläche, um das vollständige Dashboard zu öffnen.
 
 Im **Lighthouse-Bewertungen** finden Sie eine Trendansicht der verschiedenen Bewertungen. Auswählen **Leistung**, **Zugänglichkeit**, **PWA** oder **SEO** um die monatliche Trendansicht für diese Werte anzuzeigen.
 
@@ -87,7 +87,7 @@ Die **Seiten** -Tab ist eine Zusammenfassung der Leistung von Seiten, die spezie
 
 ![Registerkarte &quot;Seiten&quot;](assets/pages.png)
 
-Tippen oder klicken Sie auf **Mehr anzeigen** -Schaltfläche, um das vollständige Dashboard zu öffnen.
+Wählen Sie die **Mehr anzeigen** -Schaltfläche, um das vollständige Dashboard zu öffnen.
 
 Die **Seiten** bietet eine Liste der getesteten Seiten mit den aktuellsten Lighthouse-Leistungsbewertungen und der Aufschlüsselung.
 
@@ -103,7 +103,7 @@ Die **Probleme** in diesem Tab werden alle Leistungsprobleme zusammengefasst, di
 
 ![Registerkarte &quot;Probleme&quot;](assets/issues.png)
 
-Tippen oder klicken Sie auf **Mehr anzeigen** -Schaltfläche, um das vollständige Dashboard zu öffnen.
+Wählen Sie die **Mehr anzeigen** -Schaltfläche, um das vollständige Dashboard zu öffnen.
 
 Im **Einblicke und Empfehlungen** finden Sie eine detailliertere Liste der umsetzbaren Empfehlungen mit einem klaren Wertindikator, der an die bei der Performance zu erwartenden Gewinne gebunden ist, sowie den betroffenen Prozentsatz der Seiten. Auf diese Weise können Sie diese Empfehlungen einfach für Ihre Teams priorisieren.
 
@@ -113,12 +113,12 @@ Um zur Ausführungsseite der Produktions-Pipeline zurückzukehren, wählen Sie e
 
 ### Seitendetails {#page-detail}
 
-Wenn Sie auf den Link einer Seite auf einer der Registerkarten des **Erlebnisprüfung** auf der Registerkarte &quot;Pipeline-Ausführungsseite&quot;oder im **Seiten** im vollständigen Dashboard von Experience Audit können Sie die Details einer bestimmten Seite anzeigen.
+Wenn Sie den Link einer Seite auf einer der Registerkarten **Erlebnisprüfung** auf der Registerkarte &quot;Pipeline-Ausführungsseite&quot;oder im **Seiten** im vollständigen Dashboard von Experience Audit können Sie die Details einer bestimmten Seite anzeigen.
 
 ![Seitendaten](assets/page-data.png)
 
 Sie können sehen, wie die einzelnen Seiten für den jeweiligen Test bewertet wurden, zusammen mit der Änderung im Vergleich zum vorherigen Testlauf.
 
-Wenn Sie auf die Details einer einzelnen Seite klicken, erhalten Sie Informationen zu den bewerteten Elementen der Seite sowie Anleitungen zum Beheben von Problemen, falls Verbesserungsmöglichkeiten erkannt werden.
+Wenn Sie auf die Details einer einzelnen Seite klicken, erhalten Sie Informationen zu den bewerteten Elementen der Seite sowie Anleitungen zur Problembehebung, falls Verbesserungsmöglichkeiten erkannt werden.
 
 Um zur Ausführungsseite der Produktions-Pipeline zurückzukehren, wählen Sie einfach den Pfeil nach hinten im Browser aus.

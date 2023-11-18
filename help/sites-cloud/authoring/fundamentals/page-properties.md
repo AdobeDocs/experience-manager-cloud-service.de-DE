@@ -2,10 +2,10 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Erfahren Sie, wie Sie die Eigenschaften definieren, die für die Verwaltung einer Seite in AEM erforderlich sind.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 96%
+source-wordcount: '2270'
+ht-degree: 94%
 
 ---
 
@@ -87,9 +87,9 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
   >* unterstützen keine Regex-Muster.
   >* sollten nicht auf eine vorhandene Seite eingestellt sein.
 
-   * **Hinzufügen** - Tippen oder klicken Sie, um ein Feld anzuzeigen, in dem eine Vanity-URL für die Seite definiert wird.
-      * Tippen oder klicken Sie erneut, um mehrere hinzuzufügen.
-      * Tippen oder klicken Sie auf das Symbol **Entfernen**, um die Vanity-URL zu löschen.
+   * **Hinzufügen** - Wählen Sie diese Option, um ein Feld anzuzeigen, um eine Vanity-URL für die Seite zu definieren.
+      * Wählen Sie erneut aus, um mehrere hinzuzufügen.
+      * Wählen Sie die **Entfernen** zum Löschen der Vanity-URL.
    * **Vanity-URL umleiten** - Gibt an, ob für die Seite eine Vanity-URL verwendet werden soll.
 
 ### Erweitert {#advanced}
@@ -105,7 +105,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
       * Beispiel: Wenn Sie einen Alias `private` für die Seite `/content/wknd/us/en/magazine/members-only` definieren, kann auf diese Seite über `/content/wknd/us/en/magazine/private` zugegriffen werden.
       * Durch die Erstellung eines Alias wird die Eigenschaft `sling:alias`, die sich nur auf die Ressource und nicht auf den Repository-Pfad auswirkt, auf dem Seitenknoten festgelegt.
       * Seiten, auf die Alias im Editor zugreifen, können nicht veröffentlicht werden. [Veröffentlichungsoptionen](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
-      * Weitere Informationen finden Sie in [„Lokalisierte Seitennamen“ unter „Best Practices für SEO- und URL-Verwaltung“](/help/overview/seo-and-url-management.md#localized-page-names).
+      * Siehe [Lokalisierte Seitennamen unter Best Practices für SEO und URL-Verwaltung](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Konfiguration**
 
@@ -147,7 +147,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Vorgestelltes Bild**
 
-  Wählen Sie das anzuzeigende Bild aus und konfigurieren Sie es. Dies wird in Komponenten verwendet, die auf die Seite verweisen. z. B. Teaser, Seitenlisten usw.
+  Wählen Sie das anzuzeigende Bild aus und konfigurieren Sie es. Dies wird in Komponenten verwendet, die auf die Seite verweisen, z. B. Teaser, Seitenlisten usw.
 
    * **Bild**
 
@@ -237,7 +237,7 @@ Durch eine einfache Konfiguration können Inhaltsautorinnen und -autoren jetzt P
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [Aktivieren der Funktionen progressiver Web-Apps](/help/sites-cloud/authoring/features/enable-pwa.md).
+>Siehe [Aktivieren progressiver Web-App-Funktionen](/help/sites-cloud/authoring/features/enable-pwa.md).
 
 * **Konfigurieren eines installierbaren Erlebnisses**
 

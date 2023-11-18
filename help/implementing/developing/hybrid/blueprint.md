@@ -2,10 +2,10 @@
 title: SPA-Blueprint
 description: In diesem Dokument wird der allgemeine, Framework-unabhängige Vertrag beschrieben, den jedes SPA-Framework erfüllen sollte, um in AEM bearbeitbare SPA-Komponenten zu implementieren.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2056'
-ht-degree: 100%
+source-wordcount: '2055'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Damit der Autor den AEM-Seiteneditor zum Bearbeiten der von einem SPA-Framework 
 >
 >Die folgenden Anforderungen sind Framework-unabhängig. Wenn diese Anforderungen erfüllt sind, kann eine Framework-spezifische Ebene aus Modulen, Komponenten und Diensten bereitgestellt werden.
 >
->**Für die React- und Angular-Frameworks werden diese Anforderungen in AEM bereits erfüllt.** Die Anforderungen im vorliegenden Blueprint sind nur relevant, wenn Sie ein anderes Framework zur Verwendung mit AEM implementieren möchten.
+>**Für die React- und Angular-Frameworks werden diese Anforderungen in AEM bereits erfüllt.** Die Anforderungen in diesem Blueprint sind nur relevant, wenn Sie ein anderes Framework zur Verwendung mit AEM implementieren möchten.
 
 >[!CAUTION]
 >
@@ -63,7 +63,7 @@ Das restliche Dokument beschreibt die Anforderungen dieser zwischengelagerten Fr
 
 Die Inhaltsstruktur der Seite wird in AEM gespeichert. Das Modell der Seite wird verwendet, um SPA-Komponenten zuzuordnen und zu instanziieren. Die SPA-Entwickler erstellen SPA-Komponenten, die sie den AEM-Komponenten zuordnen. Dazu verwenden sie den Ressourcentyp (oder Pfad zur AEM-Komponente) als eindeutigen Schlüssel.
 
-Die SPA-Komponenten müssen mit dem Seitenmodell synchron sein und bei Änderungen des Inhalts entsprechend aktualisiert werden. Sie müssen ein Muster verwenden, das dynamische Komponenten nutzt, um Komponenten entsprechend der vorgegebenen Seitenmodellstruktur spontan zu instanziieren.
+Die SPA-Komponenten müssen mit dem Seitenmodell synchron sein und bei Änderungen des Inhalts entsprechend aktualisiert werden. Ein Muster, das dynamische Komponenten verwendet, muss verwendet werden, um Komponenten nach der bereitgestellten Seitenmodellstruktur dynamisch zu instanziieren.
 
 ### Meta-Felder {#meta-fields}
 
@@ -259,7 +259,7 @@ Das folgende Fragment zeigt die typische HTML-Darstellung einer Seiteninhaltsstr
 
 ## Navigation und Routing {#navigation-and-routing}
 
-Die App ist für das Routing verantwortlich. Der Frontend-Entwickler muss zunächst eine Navigationskomponente (die einer AEM-Navigationskomponente zugeordnet ist) implementieren. Diese Komponente rendert URL-Links, die zusammen mit einer Reihe von Routen verwendet werden, welche Inhaltsfragmente ein- oder ausblenden.
+Die App ist für das Routing verantwortlich. Der Frontend-Entwickler muss zunächst eine Navigationskomponente implementieren (die einer AEM Navigationskomponente zugeordnet ist). Diese Komponente rendert URL-Links, die zusammen mit einer Reihe von Routen verwendet werden, welche Inhaltsfragmente ein- oder ausblenden.
 
 Die zugrunde liegende [`PageModelManager`](#pagemodelmanager)-Bibliothek und ihr (standardmäßig aktiviertes) [`ModelRouter`](routing.md)-Modul sind für den Vorababruf und das Gewähren von Zugriff auf das mit einem bestimmten Ressourcenpfad verknüpfte Modell verantwortlich.
 

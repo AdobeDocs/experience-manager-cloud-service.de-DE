@@ -2,10 +2,10 @@
 title: Zugreifen auf und Verwalten von Protokollen
 description: Erfahren Sie, wie Sie auf Protokolle zugreifen und diese verwalten können, um Ihren Entwicklungsprozess in AEM as a Cloud Service zu unterstützen.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 7272f6ebd1b9c4e67985cba0221d8cafbeb1560a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '345'
-ht-degree: 83%
+ht-degree: 78%
 
 ---
 
@@ -36,7 +36,7 @@ Gehen Sie wie folgt vor, um Protokolle herunterzuladen:
 
    ![Protokolle für weitere Veröffentlichungsregionen herunterladen](assets/download-publish-region-logs.png)
 
-1. Nachdem Sie Ihren Service ausgewählt haben, klicken Sie auf das Download-Symbol neben dem Protokoll, das Sie abrufen möchten.
+1. Nachdem Sie Ihren Dienst ausgewählt haben, klicken Sie auf das Download-Symbol neben dem Protokoll, das Sie abrufen möchten.
 
 Sie können Ihre Protokolle auch über die Seite **Umgebungen** aufrufen.
 

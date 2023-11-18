@@ -2,10 +2,10 @@
 title: Seitenvorlagen
 description: Seitenvorlagen werden beim Erstellen einer Seite verwendet, die als Basis für die neue Seite verwendet wird
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3287'
-ht-degree: 97%
+source-wordcount: '3279'
+ht-degree: 95%
 
 ---
 
@@ -40,7 +40,7 @@ Dieses Dokument:
 
 Seitenvorlagen werden von Vorlagenautoren in erster Linie mit der [Vorlagenkonsole und dem Vorlageneditor](/help/sites-cloud/authoring/features/templates.md) erstellt. In diesem Abschnitt finden Sie einen Überblick über diesen Prozess, der anschließend aus technischer Perspektive beleuchtet wird.
 
-Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
+Beim Erstellen einer bearbeitbaren Vorlage haben Sie folgende Möglichkeiten:
 
 1. Erstellen Sie einen [Ordner für die Vorlagen](#template-folders). Dieser Ordner ist nicht obligatorisch, wird jedoch als Best Practice empfohlen.
 1. Wählen Sie einen [Vorlagentyp](#template-type) aus. Dieser wird kopiert, um die [Vorlagendefinition](#template-definitions) zu erstellen.
@@ -197,7 +197,7 @@ Um einen Ordner zu erstellen, haben Sie folgende Möglichkeiten:
 
 ### Verwenden des Konfigurations-Browsers {#using-the-configuration-browser}
 
-1. Wechseln Sie zu **Globale Navigation** > **Tools** > [**Konfigurations-Browser**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+1. Navigieren Sie zu **Globale Navigation** > **Instrumente** > [**Konfigurationsbrowser**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    Die vorhandenen Ordner werden links aufgelistet, einschließlich des Ordners `global`.
 
@@ -211,7 +211,7 @@ Um einen Ordner zu erstellen, haben Sie folgende Möglichkeiten:
 
 >[!NOTE]
 >
->Im [Konfigurations-Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) können Sie den Ordner „global“ bearbeiten und die Option **Bearbeitbare Vorlagen** aktivieren, wenn Sie in diesem Ordner Vorlagen erstellen möchten. Davon ist jedoch abzuraten.
+>Im [Konfigurationsbrowser,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) Sie können den globalen Ordner bearbeiten und die **Bearbeitbare Vorlagen** -Option, wenn Sie in diesem Ordner Vorlagen erstellen möchten, wird dies jedoch nicht empfohlen.
 
 ### ACLs und Gruppen {#acls-and-groups}
 
@@ -289,9 +289,9 @@ Diese standardmäßige `template-authors`-Gruppe umfasst nur die Projekteinstell
 
 ## Vorlagentyp {#template-type}
 
-Beim Erstellen einer neuen Vorlage müssen Sie einen Vorlagentyp angeben:
+Beim Erstellen einer Vorlage müssen Sie einen Vorlagentyp angeben:
 
-* Vorlagentypen stellen effektiv Vorlagen für eine Vorlage bereit. Bei der Erstellung einer Vorlage werden Struktur und anfänglicher Inhalt des ausgewählten Vorlagentyps zum Erstellen der Vorlage verwendet.
+* Vorlagentypen stellen effektiv Vorlagen für eine Vorlage bereit. Beim Erstellen einer Vorlage werden Struktur und anfänglicher Inhalt des ausgewählten Vorlagentyps verwendet, um für die neue Vorlage zu erstellen.
 
    * Der Vorlagentyp wird kopiert, um die Vorlage zu erstellen.
    * Nach dem Kopieren besteht die einzige Verbindung zwischen der Vorlage und dem Vorlagentyp in einer statischen Referenz zu Informationszwecken.
@@ -338,7 +338,7 @@ The [device groups](/help/sites-developing/mobile.md#device-groups) used for an 
 * On the editable template type
 * On the editable template
 
-When creating a new editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
+When creating an editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
 
 >[!CAUTION]
 >
@@ -432,7 +432,7 @@ Dieser Knoten enthält Eigenschaften für die Vorlage:
 
 Definiert die Struktur der resultierenden Seite:
 
-* Sie wird beim Erstellen einer neuen Seite mit dem anfänglichen Inhalt (`/initial`) zusammengeführt.
+* Sie wird beim Erstellen einer Seite mit dem anfänglichen Inhalt (`/initial`) zusammengeführt.
 * Änderungen an der Struktur spiegeln sich in allen Seiten wider, die mit der Vorlage erstellt wurden.
 * Der Knoten `root` (`structure/jcr:content/root`) definiert die Liste der Komponenten, die auf der resultierenden Seite verfügbar sind.
    * Komponenten, die in der Vorlagenstruktur definiert sind, können auf einer resultierenden Seite nicht verschoben oder von dort gelöscht werden.
@@ -446,7 +446,7 @@ Definiert die Struktur der resultierenden Seite:
 Definiert den anfänglichen Inhalt, den eine neue Seite bei Erstellung enthält:
 
 * Er enthält einen Knoten `jcr:content`, der auf alle neue Seiten kopiert wird.
-* Er wird beim Erstellen einer neuen Seite mit der Struktur (`/structure`) zusammengeführt.
+* Er wird beim Erstellen einer Seite mit der Struktur (`/structure`) zusammengeführt.
 * Vorhandene Seiten werden nicht aktualisiert, wenn der anfängliche Inhalt nach der Erstellung geändert wird.
 * Der Knoten `root` enthält eine Liste von Komponenten, die definieren, was auf der resultierenden Seite verfügbar ist.
 * Wird einer Komponente im Strukturmodus Inhalt hinzugefügt und wird diese Komponente anschließend entsperrt (oder umgekehrt), so wird dieser Inhalt als anfänglicher Inhalt verwendet.
@@ -545,7 +545,7 @@ Beim Rendern einer Seite:
 
 ### Verfügbarkeit von Vorlagen {#template-availability}
 
-Beim Erstellen einer neuen Seite in der Website-Admin-Oberfläche hängt die Liste der verfügbaren Vorlagen vom Speicherort der neuen Seite und den in den einzelnen Vorlagen angegebenen Platzierungsbeschränkungen ab.
+Beim Erstellen einer neuen Seite in der Site-Admin-Oberfläche hängt die Liste der verfügbaren Vorlagen vom Speicherort der neuen Seite und den in den einzelnen Vorlagen angegebenen Platzierungsbeschränkungen ab.
 
 Die folgenden Eigenschaften bestimmen, ob eine Vorlage `T` für eine neue Seite verwendet werden darf, die der Seite `P` untergeordnet platziert werden kann. Jede dieser Eigenschaften ist eine mehrwertige Zeichenfolge, welche null oder mehrere reguläre Ausdrücke enthält, die für die Übereinstimmung mit Pfaden verwendet werden:
 

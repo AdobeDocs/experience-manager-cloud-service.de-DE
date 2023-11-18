@@ -2,10 +2,10 @@
 title: Inhaltsfragmentmodelle (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für Ihre Headless-Inhalte dienen und wie Sie Inhaltsfragmente mit strukturierten Inhalten erstellen.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2935'
-ht-degree: 96%
+source-wordcount: '2931'
+ht-degree: 94%
 
 ---
 
@@ -88,7 +88,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 
 1. **So entfernen Sie ein Feld**
 
-   Wählen Sie das entsprechende Feld aus und klicken/tippen Sie auf das Papierkorb-Symbol. Sie werden aufgefordert, die Aktion zu bestätigen.
+   Wählen Sie das gewünschte Feld aus und wählen Sie dann das Papierkorbsymbol aus. Sie werden aufgefordert, die Aktion zu bestätigen.
 
    ![remove](assets/cfm-models-06.png)
 
@@ -113,7 +113,7 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 * **Datum und Uhrzeit**
    * Fügen Sie ein Datum und/oder eine Uhrzeit hinzu.
 * **Aufzählung**
-   * Fügen Sie eine Reihe von Kontrollkästchen, Optionsfeldern oder Dropdown-Feldern hinzu.
+   * Hinzufügen von Kontrollkästchen, Optionsfeldern oder Dropdown-Listenfeldern
 * **Tags**
    * Ermöglicht Fragmentautoren den Zugriff auf und die Auswahl von Tag-Bereichen.
 * **Inhaltsreferenz**
@@ -331,9 +331,9 @@ Zur vollständigen Kontrolle über die Verwendung Ihrer Inhaltsfragmentmodelle k
 
 ### Aktivieren eines Inhaltsfragmentmodells {#enabling-a-content-fragment-model}
 
-Nachdem ein Modell erstellt wurde, muss es aus folgenden Gründen aktiviert werden:
+Wenn ein Modell erstellt wird, muss es aktiviert sein, damit es:
 
-* Damit es zur Auswahl steht, wenn ein neues Inhaltsfragment erstellt wird.
+* Kann beim Erstellen eines Inhaltsfragments ausgewählt werden.
 * Damit es in einem Inhaltsfragmentmodell referenziert werden kann.
 * Damit es für GraphQL verfügbar ist, sodass das Schema generiert wird.
 

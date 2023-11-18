@@ -2,10 +2,10 @@
 title: Anpassen von Konsolen
 description: Erfahren Sie mehr über die verschiedenen Optionen, die AEM bietet, um die Konsolen Ihrer Authoring-Instanz anzupassen.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 10%
+source-wordcount: '525'
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ AEM bietet Optionen zum Anpassen der Konsolen (und der [Seitenbearbeitungsfunkti
 
 Clientlibs ermöglichen es Ihnen, die Standardimplementierung zu erweitern, um neue Funktionen anzubieten und gleichzeitig Standardfunktionen, -objekte und -methoden wiederzuverwenden. Beim Anpassen mit clientlibs können Sie Ihre eigene clientlib unter erstellen. `/apps.` Beispielsweise kann er den Code enthalten, der für Ihre benutzerdefinierte Komponente erforderlich ist.
 
-Weitere Informationen zu clientlibs finden Sie im Dokument . [Verwenden Client-seitiger Bibliotheken auf AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+Siehe [Verwenden Client-seitiger Bibliotheken auf AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Überlagerungen {#overlays}
 
@@ -25,11 +25,11 @@ Weitere Informationen zu clientlibs finden Sie im Dokument . [Verwenden Client-s
 
 Überlagerungen können auf viele Arten verwendet werden, um Ihre AEM Konsolen zu erweitern. In den folgenden Abschnitten finden Sie verschiedene Beispiele.
 
-Weitere Informationen zu Überlagerungen finden Sie im Dokument [Überlagerungen für Adobe Experience Manager as a Cloud Service.](/help/implementing/developing/introduction/overlays.md)
+Siehe auch [Überlagerungen für Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 >[!TIP]
 >
->Informationen zu den Optionen zum Anpassen des Authoring-Erlebnisses finden Sie im Dokument . [Anpassen der Seitenbearbeitung.](/help/implementing/developing/extending/page-authoring.md)
+>Wenn Sie an Optionen zur Anpassung des Authoring-Erlebnisses interessiert sind, lesen Sie [Anpassen der Seitenbearbeitung](/help/implementing/developing/extending/page-authoring.md).
 
 ## Anpassen der Standardansicht für eine Konsole {#customizing-the-default-view-for-a-console}
 
@@ -117,4 +117,4 @@ Wenn Sie zusätzliche Daten einfügen möchten, müssen Sie eine [PageInfoProvid
 
 Bei Verwendung einer Konsole muss ein Benutzer häufig aus Ressourcen wie Seiten, Komponenten oder Assets auswählen. Dies kann in Form einer Liste erfolgen, aus der der Autor ein Element auswählen muss.
 
-Um die Liste in einer angemessenen Größe und auch für den Anwendungsfall relevant zu halten, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Lesen Sie das Dokument .[Anpassen der Seitenbearbeitung](/help/implementing/developing/extending/page-authoring.md#filtering-resources) für Details.
+Um die Liste in einer angemessenen Größe und auch für den Anwendungsfall relevant zu halten, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Siehe [Anpassen der Seitenbearbeitung](/help/implementing/developing/extending/page-authoring.md#filtering-resources) für Details.

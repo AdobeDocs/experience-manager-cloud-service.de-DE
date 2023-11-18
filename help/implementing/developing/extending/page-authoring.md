@@ -1,13 +1,13 @@
 ---
 title: Anpassung des Seiten-Authorings
 description: Erfahren Sie mehr über die Mechanismen, die AEM as a Cloud Service bietet, um die Seitenbearbeitungsfunktionen anzupassen.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 33%
+source-wordcount: '969'
+ht-degree: 34%
 
 ---
-
 
 # Anpassung des Seiten-Authorings {#customizing-page-authoring}
 
@@ -22,7 +22,7 @@ Bei der Anpassung können Sie unter `/apps.` Ihre eigene Clientbibliothek erstel
 * Von der Authoring-Client-Bibliothek abhängig `cq.authoring.editor.sites.page`.
 * Teil der entsprechenden `cq.authoring.editor.sites.page.hook` Kategorie.
 
-Weitere Informationen zu clientlibs finden Sie im Dokument . [Verwenden Client-seitiger Bibliotheken auf AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+Siehe [Verwenden Client-seitiger Bibliotheken auf AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Überlagerungen {#overlays}
 
@@ -30,9 +30,9 @@ Weitere Informationen zu clientlibs finden Sie im Dokument . [Verwenden Client-s
 
 Beim Erstellen einer Überlagerung ist keine 1:1-Kopie des Originals erforderlich, da die [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) ermöglicht die Vererbung.
 
-Weitere Informationen finden Sie im [JS-Dokumentationssatz](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
+Weitere Informationen finden Sie unter [JS-Dokumentationssatz](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
-Weitere Informationen zu Überlagerungen finden Sie im Dokument [Überlagerungen für Adobe Experience Manager as a Cloud Service.](/help/implementing/developing/introduction/overlays.md)
+Weitere Informationen zu Überlagerungen finden Sie unter [Überlagerungen für Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 ## Neue Ebene hinzufügen (Modus) {#add-new-layer-mode}
 
@@ -174,7 +174,7 @@ Der vorkonfigurierte Workflow, **Aktivierungsanfrage**:
 
 * Andernfalls wird nichts angezeigt, da die Replikationsrechte entfernt wurden.
 
-Um bei einer solchen Aktivierung ein benutzerdefiniertes Verhalten zu erzielen, können Sie die **Aktivierungsanfrage** workflow:
+Um bei dieser Aktivierung ein benutzerdefiniertes Verhalten zu erzielen, können Sie die **Aktivierungsanfrage** workflow:
 
 1. Überlagern Sie in `/apps` den **Sites**-Assistenten `/libs/wcm/core/content/common/managepublicationwizard`
 

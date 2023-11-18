@@ -2,10 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Erfahren Sie mehr über die Inhaltssuche und -indizierung in AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 71%
+source-wordcount: '2428'
+ht-degree: 70%
 
 ---
 
@@ -61,13 +61,13 @@ Eine Indexdefinition kann in eine der folgenden Kategorien unterteilt werden:
 
 >[!NOTE]
 >
->Neue Indizes in der `dam:Asset` Von Knotentyp (insbesondere Volltext-Indizes) wird dringend abgeraten, da diese mit OOTB-Produktfunktionen in Konflikt geraten können, was zu Funktions- und Leistungsproblemen führt. Im Allgemeinen werden der aktuellen Version zusätzliche Eigenschaften hinzugefügt `damAssetLucene-*` Die Indexversion ist die am besten geeignete Methode, Abfragen auf der `dam:Asset` Knotentyp (diese Änderungen werden automatisch zu einer neuen Produktversion des Index zusammengeführt, wenn sie später veröffentlicht werden). Im Zweifelsfall wenden Sie sich bitte an den Adobe Support um Rat.
+>Neue Indizes in der `dam:Asset` Von Knotentyp (insbesondere Volltext-Indizes) wird dringend abgeraten, da diese mit OOTB-Produktfunktionen in Konflikt geraten können, was zu Funktions- und Leistungsproblemen führt. Im Allgemeinen werden der aktuellen Version zusätzliche Eigenschaften hinzugefügt `damAssetLucene-*` Die Indexversion ist die am besten geeignete Methode, Abfragen auf der `dam:Asset` Knotentyp (diese Änderungen werden automatisch zu einer neuen Produktversion des Index zusammengeführt, wenn sie später veröffentlicht werden). Wenden Sie sich im Zweifelsfall an den Adobe Support .
 
 ## Vorbereiten der neuen Indexdefinition {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->Wenn Sie beispielsweise einen vorkonfigurierten Index anpassen, z. B. `damAssetLucene-8`, kopieren Sie bitte die neueste vorkonfigurierte Indexdefinition aus einer *Cloud Service-Umgebung* mithilfe des CRX DE Package Manager (`/crx/packmgr/`). Umbenennen in `damAssetLucene-8-custom-1` (oder höher) und fügen Sie Ihre Anpassungen in die XML-Datei ein. Dadurch wird sichergestellt, dass die erforderlichen Konfigurationen nicht versehentlich entfernt werden. Beispiel: die `tika` Knoten unter `/oak:index/damAssetLucene-8/tika` ist in dem angepassten Index erforderlich, der in einer AEM Cloud Service-Umgebung bereitgestellt wird, aber nicht im lokalen AEM SDK vorhanden ist.
+>Wenn Sie beispielsweise einen vorkonfigurierten Index anpassen, z. B. `damAssetLucene-8`, kopieren Sie die neueste vorkonfigurierte Indexdefinition aus einer *Cloud Service-Umgebung* mithilfe des CRX DE Package Manager (`/crx/packmgr/`). Umbenennen in `damAssetLucene-8-custom-1` (oder höher) und fügen Sie Ihre Anpassungen in die XML-Datei ein. Dadurch wird sichergestellt, dass die erforderlichen Konfigurationen nicht versehentlich entfernt werden. Beispiel: die `tika` Knoten unter `/oak:index/damAssetLucene-8/tika` ist in dem angepassten Index erforderlich, der in einer AEM Cloud Service-Umgebung bereitgestellt wird, aber nicht im lokalen AEM SDK vorhanden ist.
 
 Für Anpassungen eines OOTB-Index erstellen Sie ein neues Paket, das die tatsächliche Indexdefinition enthält, die diesem Namensmuster folgt:
 
@@ -240,7 +240,7 @@ Stellen Sie nach dem Hinzufügen der neuen Indexdefinition die neue Anwendung mi
 
 >[!TIP]
 >
->Weitere Informationen zur erforderlichen Paketstruktur für AEM as a Cloud Service finden Sie im Dokument [AEM-Projektstruktur](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+>Weitere Informationen zur erforderlichen Paketstruktur für AEM as a Cloud Service finden Sie unter [AEM Projektstruktur](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## Indexverwaltung unter Verwendung von rollierenden Bereitstellungen {#index-management-using-rolling-deployments}
 

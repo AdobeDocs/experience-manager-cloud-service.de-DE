@@ -3,13 +3,13 @@ title: Inhaltsfragmente – Überlegungen zum Löschen
 description: Lesen Sie diese wichtigen Überlegungen, bevor Sie Ihre Richtlinien zum Löschen von Inhaltsfragmenten in AEM definieren. Inhaltsfragmente sind ein leistungsstarkes Tool für die Bereitstellung von Headless-Inhalten. Die Auswirkungen des Löschens müssen sorgfältig berücksichtigt werden.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 47%
+source-wordcount: '450'
+ht-degree: 57%
 
 ---
-
 
 # Überlegungen zu Inhaltsfragmenten löschen {#delete-considerations-content-fragments}
 
@@ -57,7 +57,7 @@ Beispiel: ein Ordner, in dem alle Inhaltsfragmente gespeichert werden, z. B.:
 >
 >Festlegen von Berechtigungen für `/content/dam` ist auch möglich, da hier alle Inhaltsfragmente gespeichert sind.
 >
->Diese Aktion wendet jedoch dieselben Löschberechtigungen auf *all* auch andere Asset-Typen.
+>Allerdings wird die Löschberechtigung dadurch auch für *alle* anderen Asset-Typen gewährt.
 
 Die Berechtigungsvoraussetzung, die es einem bestimmten Benutzer und/oder einer bestimmten Gruppe gestattet, ein Inhaltsfragment zu bearbeiten/zu aktualisieren, ist:
 
@@ -76,4 +76,3 @@ Die Berechtigungsvoraussetzung, die es einem bestimmten Benutzer und/oder einer 
 * Für alle Knoten unter `jcr:content` aller Inhaltsfragmente:
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`, und `jcr:removeChildNodes`, `jcr:removeNode`
-

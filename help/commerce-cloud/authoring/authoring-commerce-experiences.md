@@ -2,10 +2,10 @@
 title: Authoring von Commerce-Erlebnissen
 description: Erfahren Sie, wie Sie Commerce-bezogene Erlebnisse effizient erstellen und erstellen können, indem Sie auf Produktdaten und Inhalte zugreifen können, ohne den Kontext verlassen zu müssen.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 92%
+source-wordcount: '718'
+ht-degree: 89%
 
 ---
 
@@ -77,7 +77,7 @@ Dadurch wird ein Platzhalter-Link erstellt, der beim Rendern der Seite durch ein
 
 ### Zugreifen auf zugehörige Produktinhalte {#associated-content}
 
-Wenn der universelle Editor 1:n Produkte auf einer Seite erkennt, wird im Seitenbereich automatisch die Registerkarte „Zugehörige Commerce-Inhalte“ angezeigt. Auf dieser Registerkarte können Autoren schnell auf AEM-Inhalt zugreifen, der mit dem Produkt getaggt wurde (weitere Informationen finden Sie unter [Anreichern von Produktdaten mit zugehörigem AEM-Inhalt](./enrich-product-associated-content.md)). Auf dieser Registerkarte finden Sie Dropdown-Listen, mit denen nach Inhaltstyp und bestimmten Produkten gefiltert werden kann, wenn sich mehrere Produkte auf der Seite befinden. Die Verwendung des Inhalts funktioniert wie die Verwendung von Inhalt auf der Registerkarte „Elemente“.
+Wenn der universelle Editor 1:n Produkte auf einer Seite erkennt, wird im Seitenbereich automatisch die Registerkarte „Zugehörige Commerce-Inhalte“ angezeigt. Auf dieser Registerkarte können Autoren schnell auf AEM-Inhalt zugreifen, der mit dem Produkt getaggt wurde (weitere Informationen finden Sie unter [Anreichern von Produktdaten mit zugehörigem AEM-Inhalt](./enrich-product-associated-content.md)). Auf dieser Registerkarte finden Sie Dropdown-Listen zum Filtern nach Inhaltstyp und bestimmten Produkten, wenn sich mehrere Produkte auf der Seite befinden. Die Verwendung des Inhalts funktioniert wie die Verwendung von Inhalt auf der Registerkarte „Elemente“.
 
 ![Seitenbereich für Produktdaten](../assets/authoring/associated-commerce-content-tab.png)
 

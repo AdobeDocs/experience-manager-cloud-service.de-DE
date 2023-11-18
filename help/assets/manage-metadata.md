@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: ht
-source-wordcount: '2003'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '2000'
+ht-degree: 98%
 
 ---
 
@@ -135,7 +135,7 @@ Mit Enterprise Manager Assets können Sie die Metadaten mehrerer Assets gleichze
 
 1. Navigieren Sie zum Speicherort der Assets, die Sie bearbeiten möchten.
 1. Wählen Sie die Assets aus, für die Sie gemeinsame Eigenschaften bearbeiten möchten.
-1. Tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**, um für die ausgewählten Assets die Seite [!UICONTROL Eigenschaften] zu öffnen.
+1. Wählen Sie in der Symbolleiste **[!UICONTROL Eigenschaften]** , um die [!UICONTROL Eigenschaften] Seite für die ausgewählten Assets.
 
    >[!NOTE]
    >
@@ -149,9 +149,8 @@ Mit Enterprise Manager Assets können Sie die Metadaten mehrerer Assets gleichze
    >* Auf der Seite [!UICONTROL Eigenschaften] können Sie Assets aus der Asset-Liste entfernen, indem Sie die Auswahl aufheben. In der Asset-Liste sind alle Assets standardmäßig ausgewählt. Die Metadaten für Assets, die Sie aus der Liste entfernen, werden nicht aktualisiert.
    >* Aktivieren Sie über der Asset-Liste das Kontrollkästchen neben **[!UICONTROL Titel]**, um zwischen der Auswahl von Assets und dem Deaktivieren der Liste umzuschalten.
 
-
-1. Wenn Sie ein anderes Metadatenschema für die Assets wählen möchten, tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Einstellungen]** und wählen Sie das gewünschte Schema aus. Speichern Sie die Änderungen.
-1. Um die neuen Metadaten mit den vorhandenen Metadatenfeldern, die mehrere Werte enthalten, anzuhängen, wählen Sie den **[!UICONTROL Anlagenmodus]**. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Tippen oder klicken Sie auf **[!UICONTROL Absenden]**.
+1. Um ein anderes Metadatenschema für die Assets auszuwählen, wählen Sie **[!UICONTROL Einstellungen]** und wählen Sie in der Symbolleiste das gewünschte Schema aus. Speichern Sie die Änderungen.
+1. Um die neuen Metadaten mit den vorhandenen Metadatenfeldern, die mehrere Werte enthalten, anzuhängen, wählen Sie den **[!UICONTROL Anlagenmodus]**. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Klicken Sie auf **[!UICONTROL Übermitteln]**.
 
    >[!CAUTION]
    >
@@ -266,4 +265,3 @@ Mit der Erstellung von metadatengesteuerten Workflows können Sie einige Prozess
 >
 >* [XMP-Metadaten](xmp-metadata.md)
 >* [Anleitung zum Bearbeiten oder Hinzufügen von Metadaten](meta-edit.md)
-

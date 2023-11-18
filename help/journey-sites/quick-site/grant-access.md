@@ -2,10 +2,10 @@
 title: Gewähren des Zugriffs für den Frontend-Entwickler
 description: Integrieren Sie die Frontend-Entwickler in Cloud Manager, damit sie Zugriff auf das Git-Repository und die Pipeline der AEM-Site haben.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 97%
+source-wordcount: '778'
+ht-degree: 91%
 
 ---
 
@@ -65,7 +65,7 @@ Zuerst müssen Sie den Frontend-Entwickler mithilfe der Admin Console als Benutz
 
    ![Produktprofile](assets/product-profiles.png)
 
-1. Um den Frontend-Entwickler den richtigen Profilen zuzuweisen, tippen oder klicken Sie auf die **Benutzer** und dann die **Benutzer hinzufügen** Schaltfläche.
+1. Um den Frontend-Entwickler den richtigen Profilen zuzuweisen, wählen Sie die **Benutzer** und dann die **Benutzer hinzufügen** Schaltfläche.
 
    ![Benutzer hinzufügen](assets/add-user.png)
 
@@ -73,11 +73,11 @@ Zuerst müssen Sie den Frontend-Entwickler mithilfe der Admin Console als Benutz
 
    ![Benutzer zu Team hinzufügen](assets/add-to-team.png)
 
-1. Tippen oder klicken Sie in der Auswahl **Produkt** auf das Pluszeichen und wählen Sie **Adobe Experience Manager as a Cloud Service** aus. Weisen Sie dann dem Benutzer die Produktprofile **Bereitstellungs-Manager** und **Entwickler** zu.
+1. Im **Produkt** auswählen, das Pluszeichen auswählen und dann **Adobe Experience Manager as a Cloud Service** und weisen Sie die **Bereitstellungsmanager** und **Entwickler** Produktprofile an den Benutzer.
 
    ![Teamprofile zuweisen](assets/assign-team.png)
 
-1. Tippen oder klicken Sie auf **Speichern** und eine Begrüßungs-E-Mail wird an den Frontend-Entwickler gesendet, den Sie als Benutzer hinzugefügt haben.
+1. Auswählen **Speichern** und eine Willkommens-E-Mail an den Frontend-Entwickler gesendet wird, den Sie als Benutzer hinzugefügt haben.
 
 Der eingeladene Frontend-Entwickler kann jetzt auf Cloud Manager zugreifen, indem er auf den Link in der Begrüßungs-E-Mail klickt und sich mithilfe seiner Adobe ID anmeldet.
 

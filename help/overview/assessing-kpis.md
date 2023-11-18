@@ -2,10 +2,10 @@
 title: Zugriff auf KPIs
 description: Erfahren Sie, wie Sie auf Ihre KPIs zugreifen und den Berichtsprozess definieren können.
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 97%
+source-wordcount: '544'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ Vor dem Launch des Adobe Experience Managers sollten alle Projektbeteiligten wis
 
 In einer Studie aus dem Jahr 2018 analysierte IDC den Nutzen, den mehrere große Firmen aus der Verwendung von Adobe Experience Manager zogen. Im Durchschnitt steigerten Unternehmen, die Experience Manager Sites verwendeten, die Produktivität ihrer Teams für Digital Experiences um 23 %, benötigten 64 % weniger Zeit für kleinere redaktionelle Änderungen und erhöhten die Seitenaufrufe pro Monat um 10 %. Die Firmen, die Experience Manager Assets verwendeten, steigerten die Produktivität ihrer Teams für digitale Assets um 19 %, verkürzten die Erstellungszeit für neue Assets um 47 % und senkten die Startzeit für Marketingkampagnen um 20 %.
 
-Um auch solche enormen Vorteile zu erzielen, muss Ihr Unternehmen sich klare Ziele für die Implementierung Ihres Experience Managers setzen. Sie brauchen KPIs, damit jeder diese Ziele im Auge behält.
+Um die gleichen dramatischen Vorteile zu erzielen, muss Ihr Unternehmen klare Ziele für die Implementierung Ihrer Experience Manager haben. Sie brauchen KPIs, damit jeder diese Ziele im Auge behält.
 
 ## Zugriff auf KPIs
 

@@ -2,10 +2,10 @@
 title: Exportieren von Inhaltsfragmenten nach Adobe Target
 description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente in Adobe Target exportieren, um Erlebnisse zu testen und zu personalisieren.
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2231'
-ht-degree: 99%
+source-wordcount: '2223'
+ht-degree: 96%
 
 ---
 
@@ -163,7 +163,7 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
    >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    >1. Set the property **disable** to **false**.
-   >1. Tap or click **Save All**.
+   >1. Select **Save All**.
 
    -->
 
@@ -187,7 +187,7 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
 
    * **Präzises Targeting verwenden**: Dieses Kontrollkästchen ist standardmäßig aktiviert. Wenn diese Option aktiviert ist, wartet die Cloud-Service-Konfiguration auf das Laden des Kontexts, bevor der Inhalt geladen wird. Siehe folgenden Hinweis.
 
-   * **Segmente aus Adobe Target synchronisieren**: Aktivieren Sie diese Option, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Sie müssen diese Option auswählen, wenn die Eigenschaft „API-Typ“ auf „REST“ festgelegt ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Beachten Sie, dass der AEM-Begriff „Segment“ hier dem Target-Begriff „Zielgruppe“ entspricht.)
+   * **Segmente aus Adobe Target synchronisieren**: Aktivieren Sie diese Option, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Wählen Sie diese Option aus, wenn die Eigenschaft &quot;API-Typ&quot;REST ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Der AEM-Begriff „Segment“ ist gleichbedeutend mit dem Target-Begriff „Zielgruppe“.)
 
    * **Client-Bibliothek:** dies ist standardmäßig AT.js (mbox.js wird nicht mehr unterstützt)
 
@@ -288,8 +288,8 @@ When you associate a page with the framework, the child pages inherit the associ
 1. In the **Sites** console, navigate to the site that you want to configure.
 1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
-1. Tap/click **Edit**.
-1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
+1. Select **Edit**.
+1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
   ![Cloud Service Configurations](assets/chlimage_1-165.png)
 
@@ -299,7 +299,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
-1. Tap/click **Done**.
+1. Select **Done**.
 1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
 
    >[!NOTE]
@@ -313,14 +313,14 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >Für Medien-Assets wie Bilder wird nur ein Verweis nach Target exportiert. Das Asset selbst bleibt in AEM Assets gespeichert und wird von der AEM-Veröffentlichungsinstanz bereitgestellt.
 >
->Deshalb muss das Inhaltsfragment mit allen zugehörigen Assets veröffentlicht werden, bevor es nach Target exportiert wird.
+>Daher muss das Inhaltsfragment mit allen zugehörigen Assets vor dem Export in Target veröffentlicht werden.
 
 So exportieren Sie ein Inhaltsfragment aus AEM in Target (nach Angabe der Cloud-Konfiguration):
 
 1. Navigieren Sie zu Ihrem Inhaltsfragment in der **Assets**-Konsole.
 1. Wählen Sie das Inhaltsfragment aus, das Sie in die Zielgruppe exportieren möchten.
 
-1. Tippen/klicken Sie auf **Nach Adobe Target-Angebote exportieren**.
+1. Auswählen **Exportieren in Adobe Target-Angebote**.
 
    ![Nach Adobe Target exportieren](assets/cfm-export-target-01.png)
 
@@ -334,7 +334,7 @@ So exportieren Sie ein Inhaltsfragment aus AEM in Target (nach Angabe der Cloud-
    
    -->
 
-1. Tippen/klicken Sie auf **Exportieren ohne Veröffentlichung** bzw. auf **Veröffentlichen**.
+1. Auswählen **Exportieren ohne Veröffentlichung** oder **Veröffentlichen** nach Bedarf.
 
    >[!NOTE]
    >
@@ -346,7 +346,7 @@ So exportieren Sie ein Inhaltsfragment aus AEM in Target (nach Angabe der Cloud-
    >
    >Wenn Sie **Veröffentlichen** auswählen, wird das Inhaltsfragment sofort veröffentlicht und an Target gesendet.
 
-1. Tippen/klicken Sie im Bestätigungsdialog auf **OK**.
+1. Auswählen **OK** im Bestätigungsdialogfeld.
 
    Ihr Inhaltsfragment sollte sich jetzt in Target befinden.
 

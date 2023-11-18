@@ -2,10 +2,10 @@
 title: Einführung in den universellen Editor
 description: Erfahren Sie, wie der universelle Editor die WYSIWYG-Bearbeitung (What-you-see-is-what-you-get) von Headless- und Headful-Erlebnissen ermöglicht. Erfahren Sie, wie er Autorinnen und Autoren dabei helfen kann, außergewöhnliche Inhalte zu erstellen sowie die Geschwindigkeit ihrer Inhalte zu erhöhen, und wie er Entwicklerinnen und Entwicklern ein modernes Erlebnis bietet.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 88%
+source-wordcount: '925'
+ht-degree: 81%
 
 ---
 
@@ -34,8 +34,8 @@ Benutzer glauben oft, dass eine Headless-Implementierung die Autoren daran hinde
 
 Die Anforderungen für eine Implementierung zur Nutzung des universellen Editors sind sehr einfach und unterstützen die folgenden Punkte:
 
-* **Beliebige Architektur** – Server-seitiges Rendering, Edge-seitiges Rendering, Client-seitiges Rendering usw.
-* **Jegliches Framework** – Vanilla-AEM oder Drittanbieter-Frameworks wie React, Next.js, Angular usw.
+* **Beliebige Architektur** - Server-seitiges Rendering, Edge-seitiges Rendering, Client-seitiges Rendering usw.
+* **Jegliches Framework** - Vanilla-AEM oder Drittanbieter-Frameworks wie React, Next.js, Angular usw.
 * **Beliebiges Hosting** – Kann lokal auf AEM oder auf einer Remote-Domain gehostet werden.
 
 ### Beliebiger Inhalt {#any-content}
@@ -50,7 +50,7 @@ Inhaltsautorinnen und -autoren sollten dasselbe leistungsstarke Bearbeitungserle
 
 Für Inhaltsautorinnen und -autoren geht es bei Inhalten nicht nur um die enthaltenen Informationen, sondern auch darum, wie sie gerendert und empfangen werden. Zu den Inhalten gehören zusätzliche Metadaten- und Instrumentierungsregeln, die der universelle Editor verstehen und bearbeiten kann, darunter:
 
-* **Anwendung von Layout und Stil** – Mithilfe eines Stilsystems können Marketing-Teams und Inhaltsautorinnen bzw. -autoren unterschiedliche Stile auf ihre Inhalte anwenden und unterschiedliche Layouts für die Inhalte erstellen, z. B. Spalten, Karussells, Registerkarten, Akkordeons usw.
+* **Anwenden von Layout und Stil** - Mit einem Stilsystem können Marketing-Experten und Inhaltsautoren unterschiedliche Stile auf ihren Inhalt anwenden und unterschiedliche Layouts für den Inhalt erstellen, z. B. Spalten, Karussells, Registerkarten, Akkordeons usw.
 
 ## Wert  {#value}
 
