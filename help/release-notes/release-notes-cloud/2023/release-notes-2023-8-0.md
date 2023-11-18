@@ -2,9 +2,9 @@
 title: Versionshinweise für Version 2023.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2023.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1687'
 ht-degree: 30%
 
 ---
@@ -151,6 +151,7 @@ Laden Sie CDN-Protokolle aus Cloud Manager herunter. Dies ist für die Optimieru
 ### CDN und WAF-Regeln für frühe Anwender {#waf-early-adopter}
 
 Filtern Sie den Traffic im CDN anhand von:
+
 * Anfragekopfzeilen und -eigenschaften (z. B. IP-Adresse)
 * Traffic-Muster, die bekanntermaßen mit bösartigem Traffic verknüpft sind
 

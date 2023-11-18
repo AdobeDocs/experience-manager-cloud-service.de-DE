@@ -2,10 +2,10 @@
 title: Attribute und Typen
 description: Erfahren Sie mehr über die Datenattribute und -typen, die der universelle Editor erfordert.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 85%
+source-wordcount: '682'
+ht-degree: 78%
 
 ---
 
@@ -32,7 +32,7 @@ Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss si
 | `data-editor-itemfilter` | Definiert, welche Verweise verwendet werden können |
 | `data-editor-itemlabel` | Definiert eine benutzerdefinierte Beschriftung für ein auswählbares Element, das im Editor angezeigt wird. <br>Wenn `itemmodel` festgelegt ist, wird die Beschriftung über das Modell abgerufen |
 | `data-editor-itemmodel` | Definiert ein Modell, das für die formularbasierte Bearbeitung in der Eigenschaftenleiste verwendet wird |
-| `data-editor-behavior` | Definiert das Verhalten einer Instrumentierung, z. B. kann ein eigenständiger Text oder ein Bild auch eine Komponente imitieren, um sie verschiebbar oder löschbar zu machen |
+| `data-editor-behavior` | Definiert das Verhalten einer Instrumentierung, z. B. eigenständiger Text oder Bild, kann auch eine Komponente imitieren, um sie beweglich oder lödbar zu machen |
 
 ## Elementtypen {#item-types}
 
@@ -40,10 +40,10 @@ Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss si
 |---|---|---|---|---|---|---|---|
 | `text` | Text kann innerhalb der HTML-Tags bearbeitet werden, jedoch nur im einfachen Textformat, ohne verfügbare Rich-Text-Formatierung. Dies wird häufig bei Titelkomponenten verwendet, z. B. | Optional | Erforderlich | Nicht zutreffend | Optional | Nicht zutreffend | Optional |
 | `richtext` | Der Text kann mit allen Rich-Text-Funktionen bearbeitet werden. RTE wird im rechten Bedienfeld angezeigt | Optional | Erforderlich | Nicht zutreffend | Optional | Nicht zutreffend | Optional |
-| `media` | Das bearbeitbare Element ist ein Asset, z. B. Bild oder Video | Optional | Erforderlich | Optional<br>Liste der Kriterien für Bild- oder Videofilter, die an den Asset-Selektor übergeben werden | Optional | Nicht zutreffend | Optional |
+| `media` | Die bearbeitbare Komponente ist ein Asset, z. B. Bild oder Video | Optional | Erforderlich | Optional<br>Liste der Kriterien für Bild- oder Videofilter, die an den Asset-Selektor übergeben werden | Optional | Nicht zutreffend | Optional |
 | `container` | Das bearbeitbare Element verhält sich als Container für Komponenten, auch bekannt als Absatzsystem. | Abhängig von <br>siehe unten | Abhängig von <br>siehe unten | Optional<br>eine Liste der zulässigen Komponenten | Optional | Nicht zutreffend | Nicht zutreffend |
 | `component` | Das bearbeitbare Element ist eine Komponente. Es werden keine zusätzlichen Funktionen hinzugefügt. Es ist erforderlich, bewegliche/löschbare Teile des DOM anzugeben und die Eigenschaftenleiste und ihre Felder zu öffnen | Erforderlich | Nicht zutreffend | Nicht zutreffend | Optional | Optional | Nicht zutreffend |
-| `reference` | Das bearbeitbare Element ist eine Referenz, z. B. Inhaltsfragment, Experience Fragment oder Produkt | Abhängig von <br>siehe unten | Abhängig von <br>siehe unten | Optional<br>Liste der Filterkriterien für Inhaltsfragmente, Produkte oder Experience Fragments, die an den Referenz-Selektor übergeben werden | Optional | Optional | Nicht zutreffend |
+| `reference` | Die bearbeitbare ist eine Referenz, z. B. Inhaltsfragment, Experience Fragment oder Produkt | Abhängig von <br>siehe unten | Abhängig von <br>siehe unten | Optional<br>Liste der Filterkriterien für Inhaltsfragmente, Produkte oder Experience Fragments, die an den Referenz-Selektor übergeben werden | Optional | Optional | Nicht zutreffend |
 
 Je nach Anwendungsfall kann `itemprop` oder `itemid` erforderlich sein oder nicht. Beispiel:
 

@@ -2,10 +2,10 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Erfahren Sie, wie Sie die Eigenschaften definieren, die für die Verwaltung einer Seite in AEM erforderlich sind.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2270'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -315,7 +315,7 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 * **Anzeigen**
 
    * Eine Liste der betroffenen Seiten
-      * Bei Bedarf können Sie die Auswahl auswählen/deselektieren
+      * Sie können die Auswahl bei Bedarf aufheben oder auswählen.
       * Registerkarten
          * Wie beim Anzeigen von Eigenschaften für eine einzelne Seite werden die Eigenschaften unter Registerkarten angeordnet.
    * Eine Untergruppe von Eigenschaften

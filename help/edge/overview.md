@@ -3,10 +3,10 @@ title: Erste Schritte mit Edge Delivery Services
 description: Erste Schritte mit Edge Delivery Services (EDS).
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 92%
+source-wordcount: '862'
+ht-degree: 74%
 
 ---
 
@@ -22,15 +22,15 @@ Mithilfe der Edge-Bereitstellung können Sie:
 
 ## Funktionsweise von Edge Delivery {#edge-works}
 
-Das folgende Diagramm zeigt, wie Sie Inhalte in Microsoft Word (dokumentbasierte Bearbeitung) bearbeiten und mit Edge Delivery veröffentlichen können. Es zeigt auch die herkömmliche AEM-Veröffentlichungsmethode mit den verschiedenen Editoren.
+Das folgende Diagramm zeigt, wie Sie Inhalte in Microsoft® Word (dokumentbasierte Bearbeitung) bearbeiten und in der Edge-Bereitstellung veröffentlichen können. Es zeigt auch die herkömmliche AEM-Veröffentlichungsmethode mit den verschiedenen Editoren.
 
 ![Architektur von Edge Delivery](assets/edgedelivery.png)
 
 Edge Delivery ist ein zusammenstellbarer Satz von Diensten, der eine hohe Flexibilität bei der Erstellung von Inhalten auf Ihrer Website ermöglicht. Wie bereits erwähnt, können Sie sowohl [AEM-Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=de) als auch [dokumentbasiertes Authoring](https://www.hlx.live/docs/authoring) verwenden.
 
-Sie können beispielsweise Inhalte direkt aus Microsoft Word-Dokumenten oder Google Docs verwenden. Das bedeutet, dass Dokumente aus diesen Quellen Seiten auf Ihrer Website werden können. Darüber hinaus können Überschriften, Listen, Bilder und Schriftelemente von der ursprünglichen Quelle auf die Website übertragen werden. Der neue Inhalt wird sofort und ohne Neuerstellungsprozess hinzugefügt.
+Sie können beispielsweise Inhalte direkt aus Microsoft® Word- oder Google-Dokumenten verwenden. Das bedeutet, dass Dokumente aus diesen Quellen Seiten auf Ihrer Website werden können. Darüber hinaus können Überschriften, Listen, Bilder und Schriftelemente von der ursprünglichen Quelle auf die Website übertragen werden. Der neue Inhalt wird sofort ohne Neuerstellungsprozess hinzugefügt.
 
-Edge Delivery nutzt GitHub, damit Kundinnen und Kunden Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Sie können beispielsweise Inhalte entweder in Google Docs oder Microsoft Word schreiben, und die Funktionalität Ihrer Site kann mithilfe von CSS und JavaScript in GitHub entwickelt werden. Wenn Sie bereit sind, können Sie die Sidekick-Browser-Erweiterung verwenden, um Inhaltsaktualisierungen in der Vorschau anzuzeigen und zu veröffentlichen.
+Die Edge-Bereitstellung verwendet GitHub, damit Kunden Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Sie können beispielsweise Inhalte entweder in Google Docs oder Microsoft® Word schreiben und die Funktionalität Ihrer Site kann mithilfe von CSS und JavaScript in GitHub entwickelt werden. Wenn Sie bereit sind, können Sie die Sidekick-Browser-Erweiterung verwenden, um Inhaltsaktualisierungen in der Vorschau anzuzeigen und zu veröffentlichen.
 
 Weitere Informationen:
 
@@ -40,9 +40,9 @@ Weitere Informationen:
 
 ## Edge Delivery Services und andere Adobe Experience Cloud-Produkte {#edge-other-products}
 
-Edge Delivery Services sind Teil von Adobe Experience Manager, und insofern können sowohl Edge Delivery- als auch AEM-Sites auf derselben Domain vorhanden sein. Dies ist ein häufiger Anwendungsfall für größere Websites. Darüber hinaus können Inhalte aus Edge Delivery einfach in Ihren AEM Sites-Seiten verwendet werden und umgekehrt.
+Edge Delivery Services sind Teil von Adobe Experience Manager, und insofern können sowohl Edge Delivery- als auch AEM-Sites auf derselben Domain vorhanden sein. Dies ist ein häufiger Anwendungsfall für größere Websites. Darüber hinaus können Inhalte aus der Edge-Bereitstellung einfach auf Ihren AEM Sites-Seiten verwendet werden und umgekehrt.
 
-Sie können Edge Delivery Services auch in Kombination mit Adobe Target, Analytics und Launch verwenden.
+Sie können Edge Delivery Services auch mit Adobe Target, Analytics und Launch verwenden.
 
 ## Zugriff auf Edge Delivery Services {#getting-access}
 
@@ -64,7 +64,7 @@ Adobe setzt sich dafür ein, Ihnen die bestmögliche Community-Interaktion und -
 
 ### Zugriff auf Ihren Kanal für die Produktzusammenarbeit {#collab-channel}
 
-Angesichts des Nutzens des Kanals zur direkten Kundenkommunikation richten alle AEM-Kundinnen und -Kunden beim Launch einen Slack-Kanal ein, um für eine bessere Geschwindigkeit zu sorgen sowie wichtige Aktualisierungen und skalierte Berichte zur Erlebnisqualität zu erhalten. Sie erhalten eine Einladung von Adobe, einem speziell für Ihre Organisation eingerichteten Slack-Kanal beizutreten.
+Angesichts des Nutzens des direkten Kommunikationskanals mit Kunden werden alle AEM Kunden beim Start einen Slack-Kanal für Schnelligkeit, wichtige Updates und skalierte Berichte zur Erlebnisqualität einrichten. Sie erhalten eine Einladung von Adobe, sich einem unternehmensspezifischen Slack-Kanal anzuschließen.
 
 Weitere Informationen finden Sie unter [Verwenden des Slack Bots](https://www.hlx.live/docs/slack).
 

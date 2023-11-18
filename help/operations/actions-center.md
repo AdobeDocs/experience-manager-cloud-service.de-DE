@@ -2,10 +2,10 @@
 title: Aktionszentrum
 description: Nutzung des Aktionszentrums, um bequem auf Störungen und andere wichtige Informationen reagieren zu können
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '726'
-ht-degree: 93%
+ht-degree: 79%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 93%
 
 AEM as a Cloud Service sendet Aktionszentrums-Benachrichtigungs-E-Mails bei kritischen Vorfällen, die sofortiges Handeln erfordern, sowie proaktive Empfehlungen für Optimierungen. Beispiele sind eine blockierte Warteschlange oder ein ablaufender Satz von Anmeldeinformationen. Die vollständige Liste der Aktionszentrums-Benachrichtigungstypen ist in der [Tabelle unten](#supported-notification-types) zu sehen, die im Laufe der Zeit erweitert wird.
 
-Wenn eine Aktionszentrums-Benachrichtigungs-E-Mail empfangen wird, kann darauf geklickt werden, um das Aktionszentrum von AEM as a Cloud Service mit einem Popup zu öffnen, in dem ein zusätzlicher Kontext angezeigt wird, der einer Kundin oder einem Kunden die Aktion erklärt.
+Wenn eine E-Mail-Benachrichtigung des Aktionszentrums empfangen wird, kann darauf geklickt werden, um AEM Aktionszentrum von as a Cloud Service mit einem Popup-Fenster zu öffnen, in dem ein zusätzlicher Kontext angezeigt wird, der die Aktion für einen Kunden erklärt.
 
 Zusätzlich zur Anzeige von Informationen über die gerade angeklickte Benachrichtigungs-E-Mail dient das Aktionszentrum als Drehscheibe, über den Sie den Satz aktueller und älterer Benachrichtigungen anzeigen und verwalten können. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
@@ -35,7 +35,7 @@ Um den Empfang von Aktionszentrums-Benachrichtigungs-E-Mail zu konfigurieren, er
 
 ## Detaillierter Benutzerfluss {#detailed-user-flow}
 
-Durch Klicken auf die E-Mail gelangen Sie zum Aktionszentrum mit einem Popup-Fenster, in dem der Kontext der angeklickten Benachrichtigung sowie in einigen Fällen Links zu zusätzlichen Informationen angezeigt werden, die beschreiben, wie Korrekturmaßnahmen ergriffen werden können. Sie können auch direkt auf das Aktionszentrum zugreifen unter [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), wo Sie das entsprechende Programm und die entsprechende Umgebung auswählen können.
+Durch Klicken auf die E-Mail gelangen Sie zum Aktionszentrum mit einem Popup-Fenster, in dem der Kontext der angeklickten Benachrichtigung angezeigt wird, und in einigen Fällen auch Links zu weiteren Informationen, die beschreiben, wie Korrekturmaßnahmen ergriffen werden können. Sie können auch direkt auf das Aktionszentrum zugreifen unter [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), wo Sie das entsprechende Programm und die entsprechende Umgebung auswählen können.
 
 ![Details zu Vorfällen](/help/operations/assets/incident-details.png)
 
@@ -45,7 +45,7 @@ Im Aktionszentrum wird eine Liste weiterer aktueller Benachrichtigungen angezeig
 
 ![Benachrichtigungsliste](/help/operations/assets/notification-list.png)
 
-In den meisten Fällen sollte das Popup den erforderlichen Kontext bieten, um das Problem zu beheben. Wenn jedoch Fragen für den Adobe-Support vorliegen, können Sie auf den Link **Support kontaktieren** im Popup klicken. Dadurch wird ein Formular eingeblendet, in dem Sie die Frage beschreiben und zur Erstellung eines Support-Tickets einreichen können. Das Formular enthält auch einen Verweis auf die spezifische Benachrichtigung, sodass die Kontaktperson des Adobe-Supports über den entsprechenden Kontext verfügt.
+In den meisten Fällen sollte das Popup-Fenster den erforderlichen Kontext zur Lösung des Problems bieten. Bei Fragen zur Adobe-Unterstützung können Sie jedoch auf die **Support kontaktieren** im Popup-Fenster. Dadurch wird ein Formular eingeblendet, in dem Sie die Frage beschreiben und zur Erstellung eines Support-Tickets einreichen können. Das Formular enthält auch einen Verweis auf die spezifische Benachrichtigung, sodass die Kontaktperson des Adobe-Supports über den entsprechenden Kontext verfügt.
 
 ![Support 1 kontaktieren](/help/operations/assets/contact-support1.png)
 

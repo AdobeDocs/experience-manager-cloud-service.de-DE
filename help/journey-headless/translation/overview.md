@@ -2,10 +2,10 @@
 title: AEM Headless-Übersetzungs-Tour
 description: Beginnen Sie hier mit einer geführten Tour durch die Übersetzung Ihrer Headless-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 88%
+source-wordcount: '1037'
+ht-degree: 87%
 
 ---
 
@@ -24,7 +24,7 @@ Dieser Leitfaden führt Sie durch die wichtigsten Themen der Headless-Übersetzu
 * einen Überblick darüber haben, was die Bereitstellung von Headless-Inhalten ist.
 * ein grundlegendes Verständnis der Headless-Funktionen von AEM haben.
 * die Übersetzungsfunktionen von AEM verstehen und wissen, wie sie sich auf Headless-Inhalte beziehen.
-* In der Lage sein, Ihre eigenen Headless-Inhalte zu übersetzen.
+* Kann anfangen, Ihre eigenen Headless Content zu übersetzen.
 
 Ziel ist es, Ihnen ein breites Verständnis der Headless-Technologie sowie davon, wie AEM Headless-Inhalte bereitstellt und wie Sie es übersetzen können, zu vermitteln. Wenn Sie mit keinem dieser Themen vertraut sind, ist dies Ihr idealer Ausgangspunkt.
 

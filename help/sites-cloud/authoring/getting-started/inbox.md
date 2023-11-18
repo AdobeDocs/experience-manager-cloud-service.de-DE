@@ -2,9 +2,9 @@
 title: Ihr Posteingang
 description: Erfahren Sie, wie Sie mit den Benachrichtigungen, die in Ihren Posteingang eintreffen, Ihre Aufgaben verwalten können.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '911'
 ht-degree: 94%
 
 ---
@@ -148,7 +148,7 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen festlegen:
 
    Je nachdem, ob ein Dialogfeld, ein Assistent oder eine Dokumentationsseite geöffnet wurde, können Sie Folgendes durchführen:
 
-   * Die entsprechende Aktion (z. B. „Neu zuweisen“) bestätigen.
+   * Bestätigen Sie die entsprechende Aktion, z. B. die Neuzuweisung.
    * Die Aktion abbrechen.
    * Wählen Sie den Rückwärtspfeil aus, um zum Posteingang zurückzukehren. Wenn z. B. ein Assistent oder eine Dokumentationsseite geöffnet wurde, können Sie zum Posteingang zurückkehren.
 

@@ -2,10 +2,10 @@
 title: Zusätzliche Veröffentlichungsregionen
 description: Erfahren Sie, wie AEM as a Cloud Service zusätzliche Veröffentlichungsregionen für höhere Verfügbarkeit und geringere Latenz unterstützt.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: c0c669f847c9ef64b1fa22cfc24ac693c3c8ad90
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 84%
+source-wordcount: '640'
+ht-degree: 80%
 
 ---
 
@@ -55,7 +55,7 @@ Wenn zusätzliche Veröffentlichungsbereiche aktiviert sind, werden über Cloud 
 
 Beachten Sie die folgenden Einschränkungen bei der Verwendung zusätzlicher Veröffentlichungsregionen.
 
-* Zusätzliche Veröffentlichungsregionen können nur zu AEM Sites hinzugefügt werden. Zusätzliche Veröffentlichungsregionen erstrecken sich nicht auf andere AEM oder zugehörige Funktionen, die im selben Programm bereitgestellt werden (z. B. AEM Forms oder Adobe Learning Manager).
+* Zusätzliche Veröffentlichungsregionen können nur zu AEM Sites hinzugefügt werden. Zusätzliche Veröffentlichungsbereiche erstrecken sich nicht auf andere AEM oder zugehörige Funktionen, die im selben Programm bereitgestellt werden (z. B. AEM Forms oder Adobe Learning Manager).
 * Zusätzliche Regionen können nur hinzugefügt werden, wenn verknüpfte Berechtigungen im Mandanten verfügbar und nicht verwendet sind.
 * Es können maximal drei zusätzliche Veröffentlichungsregionen zu jeder einzelnen Umgebung hinzugefügt werden.
 * Zusätzliche Regionen sind nur für Produktionsprogramme verfügbar. Die Funktion ist nicht in Sandbox-Programmen verfügbar.

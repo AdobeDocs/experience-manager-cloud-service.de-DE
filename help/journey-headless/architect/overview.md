@@ -2,10 +2,10 @@
 title: AEM Headless-Inhaltsarchitekten-Tour
 description: Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistungsstarken und flexiblen Headless-Funktionen von AEM und deren Möglichkeiten. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Projekt Inhalte modellieren können.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 87%
+source-wordcount: '793'
+ht-degree: 85%
 
 ---
 
@@ -25,7 +25,7 @@ Dieser Leitfaden führt Sie durch die wichtigsten Themen, sodass Sie nach Abschl
 
 * verstehen, was die Bereitstellung von Headless-Inhalten ist und was ihre Vorteile sind.
 * verstehen, wie Sie Ihre Inhalte für AEM Headless-Funktionen modellieren.
-* In der Lage sind, die ersten Schritte zur Implementierung Ihres ersten AEM Headless-Projekts auszuführen.
+* Führen Sie die ersten Schritte zur Modellierung Ihres Inhalts für Ihr erstes AEM Headless-Projekt aus.
 
 ## AEM-Dokumentations-Touren {#documentation-journeys}
 

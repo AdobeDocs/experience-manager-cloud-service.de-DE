@@ -2,10 +2,10 @@
 title: Erweitern des Multi-Site-Managers
 description: Erfahren Sie, wie Sie die Funktionalität des Multi-Site-Managers erweitern.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2425'
-ht-degree: 67%
+source-wordcount: '2429'
+ht-degree: 65%
 
 ---
 
@@ -565,7 +565,7 @@ AEM verwendet einen Standardsatz von Sprach- und Länder-Codes.
 * Der standardmäßige Sprach-Code ist der aus zwei Buchstaben bestehende Code in Kleinbuchstaben gemäß ISO-639-1.
 * Der standardmäßige Länder-Code ist der aus zwei Klein- oder Großbuchstaben bestehende Code gemäß ISO 3166.
 
-MSM bestimmt anhand einer gespeicherten Liste von Sprach- und Ländercodes den Namen des Landes, das mit dem Namen der Sprachversion Ihrer Seite verknüpft ist. Die folgenden Elemente der Liste können Sie bei Bedarf ändern:
+MSM bestimmt anhand einer gespeicherten Liste von Sprach- und Ländercodes den Namen des Landes, das mit dem Namen der Sprachversion Ihrer Seite verknüpft ist. Sie können bei Bedarf die folgenden Aspekte der Liste ändern:
 
 * Sprachtitel
 * Ländernamen
@@ -606,11 +606,11 @@ Beispiel: Zwei neue Seiteneigenschaften werden hinzugefügt:
 
 * Kontakt-E-Mail:
 
-   * Diese Eigenschaft muss nicht bereitgestellt werden, da sie in jedem Land (oder bei jeder Marke usw.) anders ausfällt.
+   * Diese Eigenschaft muss nicht ausgerollt werden, da sie in den einzelnen Ländern (oder Marken usw.) unterschiedlich ist.
 
 * Wichtigster visueller Stil:
 
-   * Die Projektanforderung gibt das Bereitstellen dieser Eigenschaft vor, da sie (in der Regel) in allen Ländern (oder bei allen Marken usw.) gleich ist.
+   * Die Projektanforderung besteht darin, dass diese Eigenschaft eingeführt wird, da sie (normalerweise) allen Ländern (oder Marken usw.) gemeinsam ist.
 
 Dann müssen Sie Folgendes sicherstellen:
 

@@ -3,10 +3,10 @@ title: Verwenden von Edge Delivery Services
 description: Verwenden von Edge Delivery Services (EDS)
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
-source-git-commit: 34965338015df868778a95582524df08a7c5f136
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 99%
+source-wordcount: '617'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Edge Delivery nutzt GitHub, damit Kundinnen und Kunden Code direkt über ihr Git
 
 ## Verwenden des Sidekicks {#using-sidekick}
 
-Der AEM Sidekick bietet eine Symbolleiste mit kontextabhängigen Optionen, mit denen Sie Inhalte einfach bearbeiten, in der Vorschau anzeigen und veröffentlichen können. Nach dem [Installieren](https://www.hlx.live/docs/sidekick-extension) der AEM Sidekick-Erweiterung kann diese entweder in Projektumgebungen oder beim Bearbeiten Ihres Inhalts (z. B. in Google Docs) verwendet werden. Je nach Umgebung stehen verschiedene Aktionen zur Verfügung, darunter: Vorschau, Neu laden, Bearbeiten und Veröffentlichen. Sie können auch die Umgebung wechseln, wenn Sie den Sidekick verwenden, indem Sie von der Vorschau zur Produktion und umgekehrt wechseln.
+Der AEM Sidekick bietet eine Symbolleiste mit kontextabhängigen Optionen, mit denen Sie Inhalte einfach bearbeiten, in der Vorschau anzeigen und veröffentlichen können. Nach dem [Installieren](https://www.hlx.live/docs/sidekick-extension) der AEM Sidekick-Erweiterung kann diese entweder in Projektumgebungen oder beim Bearbeiten Ihres Inhalts (z. B. in Google Docs) verwendet werden. Je nach Umgebung stehen verschiedene Aktionen zur Verfügung, darunter: Vorschau, Neu laden, Bearbeiten und Veröffentlichen. Sie können Umgebungen auch wechseln, wenn Sie den Sidekick von der Vorschau zur Produktion und umgekehrt verwenden.
 
 **Zum Veröffentlichen** öffnen Sie den Sidekick auf einer Vorschauseite und verwenden Sie die Aktion „Veröffentlichen“. Nachdem Sie auf „Veröffentlichen“ geklickt haben, ist die aktuelle Vorschauversion der Seite in Live- und Produktionsumgebungen verfügbar.
 

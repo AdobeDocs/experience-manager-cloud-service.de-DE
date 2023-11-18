@@ -2,7 +2,7 @@
 title: Versionshinweise für Version 2021.3.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0“
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 90%
@@ -55,7 +55,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 * In der PDF-Ausgabe befinden sich jetzt alle Seiten der InDesign-Vorlage. (CQ-4317305)
 * Auch wenn die Auswahl Teil eines komplexen Metadatenschemas ist, öffnet sich die Tag-Auswahl jetzt schnell. (CQ-4316426)
 * Beim Hochladen eines Assets mit demselben Dateinamen wie ein vorhandener wird jetzt das Dialogfeld für den Namenskonflikt angezeigt, um den Benutzer aufzufordern, eine Version zu erstellen. (CQ-4315424)
-* Die Eigenschaften von Ordnermetadaten können jetzt über das Popup-Menü auf der Eigenschaftsseite eines Ordners festgelegt und gespeichert werden. Während die Auswahl im Repository gespeichert wird, wird sie jetzt angezeigt, wenn die Ordnermetadaten-Eigenschaften erneut geöffnet werden. (CQ-4314429)
+* Die Eigenschaften von Ordnermetadaten können über das Popupmenü auf der Eigenschaftsseite eines Ordners festgelegt und gespeichert werden. Während die Auswahl im Repository gespeichert wird, wird sie jetzt angezeigt, wenn die Ordnermetadaten-Eigenschaften erneut geöffnet werden. (CQ-4314429)
 * Assets mit Dateinamen, die Leerzeichen oder Sonderzeichen enthalten, werden jetzt über den Browser hochgeladen. (CQ-4318381)
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -74,9 +74,9 @@ Sie können sich an Ihren Adobe-Kundenbetreuer wenden, um eine Demo zu erhalten 
 
 * Die Produktdetailkomponente kann jetzt auf jeder Inhaltsseite verwendet und konfiguriert werden.
 
-* CIF Venia Reference Site - 2021.03.25 veröffentlicht, die die neueste Version der CIF-Kernkomponenten Version 1.9.0 enthält. Siehe [CIF Venia-Referenz-Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) für weitere Details.
+* Veröffentlicht CIF Venia-Referenz-Site 2021.03.25, die die neueste Version der CIF Kernkomponenten Version 1.9.0 enthält. Siehe [Venia-Referenz-Website CIF](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) für weitere Details.
 
-* Version 1.9.0 der CIF-Kernkomponenten veröffentlicht. Siehe [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) für weitere Details.
+* Version 1.9.0 CIF Kernkomponenten veröffentlicht. Siehe [CIF Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) für weitere Details.
 
 
 ## Cloud Manager {#cloud-manager}
@@ -128,7 +128,7 @@ Die nächste Version ist für den 08. April 2021 geplant.
 
 * Gelegentlich wird dem Benutzer neben einer IP-Zulassungsliste möglicherweise ein grüner „aktiver“ Status angezeigt, auch wenn diese Konfiguration nicht bereitgestellt wurde.
 
-* Alle vorhandenen Produktions-Pipelines werden automatisch mit dem Schritt Erlebnisprüfung aktiviert.
+* Alle vorhandenen Produktions-Pipelines werden automatisch mit dem Experience Audit-Schritt aktiviert.
 
 ## Content Transfer Tool {#content-transfer-tool}
 

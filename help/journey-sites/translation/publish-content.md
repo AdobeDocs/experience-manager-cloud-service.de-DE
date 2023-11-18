@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1329'
-ht-degree: 83%
+source-wordcount: '1326'
+ht-degree: 82%
 
 ---
 
@@ -157,7 +157,7 @@ Herzlichen Glückwunsch! Sie haben die AEM Sites-Übersetzungs-Tour abgeschlosse
 
 * über ein grundlegendes Verständnis der Inhaltsverwaltungsfunktionen in AEM verfügen.
 * verstehen, wie die Übersetzungsfunktionen von AEM funktionieren und wie sie mit den Inhalten Ihrer Website zusammenhängen.
-* mit der Übersetzung Ihrer eigenen Inhalte beginnen können.
+* Beginnen Sie mit der Übersetzung Ihrer eigenen Inhalte.
 
 Jetzt können Sie Ihre eigenen Inhalte in AEM übersetzen. AEM ist ein leistungsfähiges Tool und es stehen viele zusätzliche Optionen zur Verfügung. Schauen Sie sich einige der zusätzlichen Ressourcen an, die im Abschnitt [Zusätzliche Ressourcen](#additional-resources) verfügbar sind, um mehr über die Funktionen zu erfahren, die Sie während dieser Tour gesehen haben.
 

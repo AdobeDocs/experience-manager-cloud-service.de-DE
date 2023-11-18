@@ -2,10 +2,10 @@
 title: Verwalten von Projekten
 description: In „Projekte“ können Sie ein Projekt organisieren, indem Sie Ressourcen zu einer Einheit zusammenfassen. Der Zugriff und die Verwaltung erfolgen über die Projektekonsole.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 84%
+source-wordcount: '875'
+ht-degree: 82%
 
 ---
 
@@ -38,7 +38,7 @@ Die Vorgehensweise beim Erstellen eines Projekts ist für jedes Projekt identisc
 
    ![Erstellen eines Projekts](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Definieren Sie den **Titel** und die **Beschreibung** und fügen Sie eine **Miniatur** hinzu, falls erforderlich. Hier können Sie auch Benutzer und deren Gruppenzugehörigkeit hinzufügen oder löschen. Sie können darüber hinaus auf **Erweitert** klicken, um einen Namen anzugeben, der in der URL verwendet werden soll.
+1. Definieren Sie die **Titel** und **Beschreibung** und fügen Sie eine **Miniatur** Bild, falls erforderlich. Hier können Sie auch Benutzer und deren Gruppenzugehörigkeit hinzufügen oder löschen. Sie können darüber hinaus auf **Erweitert** klicken, um einen Namen anzugeben, der in der URL verwendet werden soll.
 
    ![Hinzufügen von Projektdetails](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -138,7 +138,7 @@ So legen Sie ein Projekt als inaktiv (oder aktiv) fest:
    Möglicherweise müssen Sie diese Kachel erst noch einfügen, wenn sie nicht bereits in Ihrem Projekt enthalten ist. Weitere Informationen finden Sie unter [Hinzufügen von Kacheln](#adding-items-to-a-tile).
 
 1. Wählen Sie **Bearbeiten** aus.
-1. Ändern Sie die Auswahl von **Aktiv** in **Inaktiv** (oder umgekehrt).
+1. Ändern Sie die Auswahl aus **Aktiv** nach **Inaaktiv** (oder umgekehrt).
 
    ![Aktivieren eines Projekts](/help/sites-cloud/authoring/assets/projects-add-team.png)
 

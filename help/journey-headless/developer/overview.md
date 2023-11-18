@@ -3,10 +3,10 @@ title: Entwickler-Tour für AEM Headless CMS
 description: Erfahren Sie mehr über die Headless-Entwicklung mit Adobe Experience Manager (AEM) als Headless-CMS. Erfahren Sie, wie Sie Funktionen wie Inhaltsmodelle, Inhaltsfragmente und eine GraphQL-API verwenden können, um die Bereitstellung von Headless-Inhalten zu ermöglichen.
 landing-page-description: Gewinnen Sie ein Verständnis für die Bereitstellung und Implementierung von Headless-Inhalten. Erfahren Sie mehr über die Entwicklung einer Strategie für Ihr Unternehmen.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 97%
+source-wordcount: '1095'
+ht-degree: 95%
 
 ---
 
@@ -28,11 +28,11 @@ Erfahren Sie mehr über die leistungsstarken und flexiblen Headless-Funktionen, 
 
 Die Headless-Implementierung von AEM verwendet Inhaltsfragmentmodelle und Inhaltsfragmente, um sich auf die Erstellung von strukturierten, kanalneutralen und wiederverwendbaren Inhaltsfragmenten und deren kanalübergreifende Bereitstellung zu konzentrieren. Um dies zu erreichen, wird auf die Seiten- und Komponentenverwaltung verzichtet, wie sie bei Full-Stack-Lösungen üblich ist. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster zur Implementierung von digitalen Erlebnissen.
 
-Dieser Leitfaden führt Sie durch Themen der Headless-Implementierung in AEM, sodass Sie nach Abschluss über Folgendes verfügen:
+Dieser Leitfaden führt Sie durch Headless-Implementierungsthemen in AEM, sodass Sie nach Abschluss Folgendes tun können:
 
 * Umfassendes Verständnis davon, was die Headless-Bereitstellung von Inhalten ist und welche Vorteile sie bietet
 * Kenntnisse der Headless-Funktionen von AEM und wie sie zusammenarbeiten, um Headless-Erlebnisse bereitzustellen
-* Fähigkeit, die ersten Schritte zur Implementierung Ihres ersten AEM Headless-Projekts auszuführen
+* Führen Sie die ersten Schritte zur Implementierung Ihres ersten AEM Headless-Projekts aus.
 
 >[!TIP]
 >

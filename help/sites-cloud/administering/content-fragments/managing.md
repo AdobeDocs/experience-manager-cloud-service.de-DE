@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre AEM Inhaltsfragmente über die Konsole u
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2531'
-ht-degree: 51%
+ht-degree: 50%
 
 ---
 
@@ -226,10 +226,10 @@ So erstellen Sie ein Inhaltsfragment:
 
 1. Die **Neues Inhaltsfragment** wird geöffnet. Hier können Sie Folgendes angeben:
 
-   * **Speicherort** – wird automatisch mit dem aktuellen Speicherort ausgefüllt, Sie können jedoch bei Bedarf einen anderen Speicherort auswählen.
+   * **Standort** - wird automatisch mit dem aktuellen Speicherort ausgefüllt, Sie können jedoch bei Bedarf einen anderen Speicherort auswählen.
    * **Inhaltsfragmentmodell** – Wählen Sie aus der Dropdown-Liste das Modell aus, das als Grundlage für das Fragment verwendet werden soll.
    * **Titel**
-   * **Name** – wird basierend auf der Variablen **Titel** automatisch ausgefüllt, kann jedoch bei Bedarf bearbeitet werden
+   * **Name** - wird basierend auf der Variablen **Titel**, kann aber bei Bedarf bearbeitet werden
    * **Beschreibung**
 
    ![Dialogfeld „Neues Inhaltsfragment“](assets/cf-managing-new-cf-dialog.png)

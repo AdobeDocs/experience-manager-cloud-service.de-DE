@@ -2,7 +2,7 @@
 title: Inhaltsfragmentmodelle (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für Ihre Headless-Inhalte dienen und wie Sie Inhaltsfragmente mit strukturierten Inhalten erstellen.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2931'
 ht-degree: 94%
@@ -153,7 +153,7 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
 Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Mit dieser Eigenschaft können Sie oft festlegen, ob die Autorin bzw. der Autor nur eine einzige Instanz des Feldes sieht oder ob mehrere Instanzen erstellt werden dürfen.
 
 * **Feldbezeichnung**
-Bei Eingabe einer **Feldbezeichnung** wird automatisch ein **Eigenschaftsname** generiert, der dann bei Bedarf manuell aktualisiert werden kann.
+Eingabe einer **Feldbezeichnung** generiert automatisch eine **Eigenschaftsname**, die dann bei Bedarf manuell aktualisiert werden kann.
 
 * **Validierung**
 Die grundlegende Basic ist mittels Mechanismen wie etwa die Eigenschaft **Erforderlich** verfügbar. Einige Datentypen verfügen über zusätzliche Validierungsfelder. Weitere Informationen finden Sie unter [Validierung](#validation).

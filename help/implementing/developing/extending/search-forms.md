@@ -2,10 +2,10 @@
 title: Konfigurieren von Suchformularen
 description: Konfigurieren von Suchformularen für Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 97%
+source-wordcount: '2033'
+ht-degree: 96%
 
 ---
 
@@ -480,7 +480,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
 >Die allgemeinen Suchprädikate sind hier definiert:
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->Diese Angaben dienen nur als Referenz. Sie dürfen `/libs` nicht verändern.
+>Diese Informationen dienen nur als Referenz. Sie dürfen `/libs`.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -527,7 +527,7 @@ Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfü
 
 * **Optionspfad**
 
-  Die Benutzer können den Pfad mit dem Pfad-Browser auf der Registerkarte mit den Prädikatseinstellungen auswählen. Nach dem Auswählen können Sie mit dem Plussymbol (**+**) die Auswahl zur Liste der gültigen Optionen hinzufügen. (Entfernen lässt sich die Auswahl mit dem Minussymbol (**-**), falls erforderlich.)
+  Die Benutzer können den Pfad mit dem Pfad-Browser auf der Registerkarte mit den Prädikatseinstellungen auswählen. Nach Auswahl der **+** wird verwendet, um die Auswahl zur Liste der gültigen Optionen hinzuzufügen (dann wird die **-** -Symbol, um es bei Bedarf zu entfernen).
 
   Die Optionen sind Inhaltsknoten, die von Benutzern erstellt werden, und weisen die folgende Struktur auf:
 

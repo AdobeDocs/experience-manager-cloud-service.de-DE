@@ -2,9 +2,9 @@
 title: Veröffentlichen übersetzter Headless-Inhalte
 description: Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Übersetzungen aktualisieren, wenn die Inhalte sich ändern.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1359'
 ht-degree: 83%
 
 ---
@@ -155,7 +155,7 @@ Herzlichen Glückwunsch! Sie haben die Headless-Übersetzungs-Tour abgeschlossen
 * einen Überblick darüber haben, was die Bereitstellung von Headless-Inhalten ist.
 * ein grundlegendes Verständnis der Headless-Funktionen von AEM haben.
 * die Übersetzungsfunktionen von AEM verstehen und wissen, wie sie sich auf Headless-Inhalte beziehen.
-* In der Lage sein, Ihre eigenen Headless-Inhalte zu übersetzen.
+* Sie können Ihre eigenen Headless Content übersetzen.
 
 Jetzt sind Sie bereit, Ihre eigenen Headless-Inhalte in AEM zu übersetzen. AEM ist ein leistungsfähiges Tool und es stehen viele zusätzliche Optionen zur Verfügung. Schauen Sie sich einige der zusätzlichen Ressourcen an, die im Abschnitt [Zusätzliche Ressourcen](#additional-resources) verfügbar sind, um mehr über die Funktionen zu erfahren, die Sie während dieser Tour gesehen haben.
 

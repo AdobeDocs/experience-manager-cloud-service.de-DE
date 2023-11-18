@@ -2,10 +2,10 @@
 title: Wie erhalten Sie Referenzthemen und Vorlagen für AEM Formulare?
 description: AEM Forms bietet Beispiel-Designs, Vorlagen und Formulardatenmodelle für adaptive Formulare, die Ihnen beim schnellen Erstellen von Formularen helfen.
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 046ffed13569ca3f9c104fb4525d28361873277a
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 88%
+source-wordcount: '867'
+ht-degree: 86%
 
 ---
 
@@ -116,7 +116,7 @@ Die einfache Vorlage hilft Ihnen beim schnellen Erstellen eines Registrierungsfo
 Die adaptiven Formulare können dann mit Microsoft Dynamics 365- und Salesforce-Servern interagieren, um Geschäftsabläufe zu ermöglichen. Beispiel:
 
 * Schreiben von Daten in Microsoft Dynamics 365 und Salesforce bei der Übermittlung von adaptiven Formularen.
-* Schreiben von Daten in Microsoft Dynamics 365 und Salesforce durch benutzerdefinierte Entitäten, die im Formulardatenmodell definiert sind, und umgekehrt.
+* Schreiben Sie Daten in Microsoft Dynamics 365 und Salesforce über benutzerdefinierte Entitäten, die im Formulardatenmodell definiert sind, und umgekehrt.
 * Abfragen des Microsoft Dynamics 365- und Salesforce-Servers nach Daten und Vorausfüllen der adaptiven Formulare.
 * Lesen von Daten von Microsoft Dynamics 365- und Salesforce-Servern.
 

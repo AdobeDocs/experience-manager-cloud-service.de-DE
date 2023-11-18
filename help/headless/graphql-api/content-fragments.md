@@ -3,10 +3,10 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4921'
-ht-degree: 95%
+source-wordcount: '4923'
+ht-degree: 94%
 
 ---
 
@@ -503,7 +503,7 @@ Einige Typen ermöglichen es auch, zusätzliche Optionen anzugeben, mithilfe der
 
 | Option | Typ(en) | Beschreibung |
 |--- |--- |--- |
-| `_ignoreCase` | `String` | Ignoriert die Groß-/Kleinschreibung einer Zeichenfolge, z. B. der Wert `time` passt zu `TIME`, `time`, `tImE`, ... |
+| `_ignoreCase` | `String` | Ignoriert die Groß- und Kleinschreibung einer Zeichenkette, ein Wert von `time` entspricht z. B. `TIME`, `time`, `tImE`, ... |
 | `_sensitiveness` | `Float` | Ermöglicht eine bestimmte Spanne für `float`-Werte, die als identisch betrachtet werden (um technische Einschränkungen aufgrund der internen Darstellung von `float`-Werten zu umgehen; sollte vermieden werden, da diese Option negative Auswirkungen auf die Leistung haben kann |
 
 Ausdrücke können mithilfe eines logischen Operators (`_logOp`) zu einer Gruppe kombiniert werden:
@@ -515,7 +515,7 @@ Jedes Feld kann anhand einer eigenen Ausdrucksgruppe gefiltert werden. Die Ausdr
 
 Eine Filterdefinition (als das `filter`-Argument an eine Abfrage übergeben) enthält:
 
-* Eine Unterdefinition für jedes Feld (auf das Feld kann über seinen Namen zugegriffen werden, z. B. gibt es ein `lastName`-Feld im Filter für das `lastName`-Feld im Daten(feld)typ)
+* Eine Unterdefinition für jedes Feld (auf das Feld kann über seinen Namen zugegriffen werden, z. B. gibt es eine `lastName` im Filter für die `lastName` im Feld &quot;Datentyp&quot;(Feld)
 * Jede Unterdefinition enthält das `_expressions`-Array, das die Ausdrucksgruppe bereitstellt, und das `_logOp`-Feld, das den logischen Operator definiert, mit dem die Ausdrücke kombiniert werden sollten
 * Jeder Ausdruck wird durch den Wert (`value`-Feld) und den Operator (`_operator`-Feld) definiert, mit dem der Inhalt eines Felds verglichen werden soll
 
@@ -914,7 +914,7 @@ Die folgenden Einschränkungen gelten:
 Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der Standard-GraphQL-Spezifikation. Für GraphQL-Abfragen mit AEM gibt es einige Erweiterungen:
 
 * Wenn Sie ein einzelnes Ergebnis benötigen:
-   * Verwenden Sie den Modellnamen, z. B. „city“
+   * Verwenden Sie den Modellnamen; z. B. Stadt
 
 * Wenn Sie eine Ergebnisliste erwarten:
    * Fügen Sie `List` zum Modellnamen hinzu, z. B. `cityList`

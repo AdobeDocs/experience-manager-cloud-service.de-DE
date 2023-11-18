@@ -2,10 +2,10 @@
 title: Wie generieren Sie ein Datensatzdokument (DoR) für AEM Forms?
 description: Erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument (DoR) für adaptive Forms generieren.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4142'
-ht-degree: 96%
+source-wordcount: '4140'
+ht-degree: 95%
 
 ---
 
@@ -112,7 +112,7 @@ Sie können die Sende-Aktion „E-Mail senden, Experience Manager-Workflow“ in
 
 Adaptive Formulare und entsprechende Vorlagen für Datensatzdokumente können sich im Laufe der Zeit weiterentwickeln. So können Sie etwa Felder zu einem adaptiven Formular oder einer Datensatzdokument-Vorlage hinzufügen, entfernen oder ändern.
 
-Wenn Sie Änderungen an einer Datensatzdokument-Vorlage vornehmen und die geänderte Vorlage in AEM Forms hochladen, erkennt der Editor für adaptive Formulare automatisch die geänderten Bindungen und informiert Sie über die Komponenten des adaptiven Formulars, für die neue Bindungen erforderlich sind. Damit können Sie eine Datensatzdokumentvorlage inkrementell aktualisieren.
+Wenn Sie eine Datensatzdokumentvorlage ändern und die geänderte Datensatzdokumentvorlage in AEM Forms hochladen, erkennt der adaptive Forms-Editor automatisch die geänderten Bindungen und informiert Sie über die Komponenten des adaptiven Formulars, für die neue Bindungen erforderlich sind. Damit können Sie eine Datensatzdokumentvorlage inkrementell aktualisieren.
 
 Zum Beispiel: Beim Unternehmen *We.Retail* wird eine AcroForm-basierte Datensatzdokumentvorlage namens *we-retail-bill.pdf* verwendet. Die Vorlage sieht wie folgt aus:
 

@@ -2,10 +2,10 @@
 title: Verwenden von Bedingungen zum Ausblenden
 description: Ausblendungsbedingungen können verwendet werden, um zu bestimmen, ob eine Komponentenressource gerendert wird oder nicht.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '617'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ Beachten Sie beim Definieren Ihrer Bedingung zum Ausblenden Folgendes:
 
 * Damit sie gültig ist, sollte der Umfang, in dem sich die Eigenschaft befindet, ausgedrückt werden (beispielsweise `cqDesign.myProperty`).
 * Werte sind schreibgeschützt.
-* Funktionen (falls erforderlich) sollten auf eine bestimmte, vom Service vorgegebene Auswahl beschränkt sein.
+* Funktionen (falls erforderlich) sollten auf einen bestimmten Satz beschränkt sein, der vom Dienst bereitgestellt wird.
 
 ## Beispiel {#example}
 

@@ -2,10 +2,10 @@
 title: Seitenvorlagen
 description: Seitenvorlagen werden beim Erstellen einer Seite verwendet, die als Basis für die neue Seite verwendet wird
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '3279'
-ht-degree: 95%
+source-wordcount: '3278'
+ht-degree: 93%
 
 ---
 
@@ -47,7 +47,7 @@ Beim Erstellen einer bearbeitbaren Vorlage haben Sie folgende Möglichkeiten:
 
    >[!NOTE]
    >
-   >Eine Auswahl von Vorlagentypen ist standardmäßig verfügbar. Bei Bedarf können Sie aber auch [eigene Site-spezifische Vorlagentypen](#creating-template-types) erstellen.
+   >Eine Auswahl von Vorlagentypen ist standardmäßig verfügbar. Sie können auch [eigene Site-spezifische Vorlagentypen erstellen](#creating-template-types) falls erforderlich.
 
 1. Konfigurieren Sie die Struktur, die Inhaltsrichtlinien, den anfänglichen Inhalt und das Layout der neuen Vorlage.
 
@@ -449,7 +449,7 @@ Definiert den anfänglichen Inhalt, den eine neue Seite bei Erstellung enthält:
 * Er wird beim Erstellen einer Seite mit der Struktur (`/structure`) zusammengeführt.
 * Vorhandene Seiten werden nicht aktualisiert, wenn der anfängliche Inhalt nach der Erstellung geändert wird.
 * Der Knoten `root` enthält eine Liste von Komponenten, die definieren, was auf der resultierenden Seite verfügbar ist.
-* Wird einer Komponente im Strukturmodus Inhalt hinzugefügt und wird diese Komponente anschließend entsperrt (oder umgekehrt), so wird dieser Inhalt als anfänglicher Inhalt verwendet.
+* Wenn einer Komponente im Strukturmodus Inhalt hinzugefügt wird und diese Komponente anschließend entsperrt (oder umgekehrt) wird, wird dieser Inhalt als anfänglicher Inhalt verwendet.
 
 ### Layout {#layout}
 

@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -144,9 +144,10 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
    * Ordnen Sie alle weiteren Variablen zu, die in der Schnellansicht enthalten sind.
 
       * Aktualisieren Sie den `loadQuickView(sku,*var1*,*var2*)`-Aufruf, wenn Sie weitere Variablen hinzufügen.
+
    * Erstellen Sie auf der Seite eine einfache `loadQuickView` ()-Funktion außerhalb des Viewers.
 
-      Die folgende Funktion schreibt z. B. den SKU-Wert in die Browser-Konsole:
+     Die folgende Funktion schreibt z. B. den SKU-Wert in die Browser-Konsole:
 
    ```xml {.line-numbers}
    function loadQuickView(sku){
@@ -156,11 +157,9 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
 
    * Laden Sie eine HTML-Testseite auf einen Webserver hoch und öffnen Sie sie.
 
-      Die Variablen aus der Schnellansicht werden zugeordnet. Der Funktionsaufruf ist vorhanden. Die Browser-Konsole schreibt den Variablenwert in die Browser-Konsole. Dies erfolgt mithilfe der bereitgestellten Beispielfunktion.
+     Die Variablen aus der Schnellansicht werden zugeordnet. Der Funktionsaufruf ist vorhanden. Die Browser-Konsole schreibt den Variablenwert in die Browser-Konsole. Dies erfolgt mithilfe der bereitgestellten Beispielfunktion.
 
-
-
-1. Sie können jetzt eine Funktion verwenden, um ein einfaches Popup in der Schnellansicht aufzurufen. Im folgenden Beispiel wird ein `DIV` für ein Popup-Fenster verwendet.
+1. Sie können jetzt eine Funktion verwenden, um ein einfaches Popup in der Schnellansicht aufzurufen. Im folgenden Beispiel wird eine `DIV` für ein Popup-Fenster.
 1. Gestalten Sie das Popup-Fenster `DIV` wie folgt. Fügen Sie nach Wunsch zusätzliches Styling hinzu.
 
    ```xml {.line-numbers}
@@ -192,7 +191,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
    <script type="text/javascript">
        function loadQuickView(sku){
            document.getElementById("txtSku").setAttribute("value",sku); // write sku value
-           document.getElementById("quickview_div").style.display="block"; // show popup
+           document.getElementById("quickview_div").style.display="block"; // show pop-up
        }
    </script>
    ```

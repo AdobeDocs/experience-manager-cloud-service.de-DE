@@ -2,10 +2,10 @@
 title: Launches
 description: Launches helfen Ihnen, Inhalte für eine künftige Version effizient zu entwickeln. So sind Sie in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 93%
+source-wordcount: '898'
+ht-degree: 94%
 
 ---
 
@@ -102,7 +102,7 @@ Launches ermöglichen Folgendes:
 
 ## Die Konsole „Launches“  {#the-launches-console}
 
-Die Konsole &quot;Launches&quot;bietet einen Überblick über Ihre Launches und ermöglicht es Ihnen, Aktionen für die aufgelisteten Launches durchzuführen. Auf die Konsole kann wie folgt zugegriffen werden:
+Die Konsole &quot;Launches&quot;bietet einen Überblick über Ihre Launches und ermöglicht es Ihnen, auf die aufgelisteten Launches zu reagieren. Auf die Konsole kann wie folgt zugegriffen werden:
 
 * über die Konsole **Tools**: **Tools** > **Sites** > **Launches**.
 

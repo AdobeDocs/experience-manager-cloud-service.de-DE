@@ -2,10 +2,10 @@
 title: Verfassen zielgerichteter Inhalte im Targeting-Modus
 description: Im Targeting-Modus und in der Targeting-Komponente stehen verschiedene Werkzeuge zur Verfügung, mit deren Hilfe sich Inhalte für Erlebnisse erstellen lassen
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '5306'
-ht-degree: 88%
+source-wordcount: '5304'
+ht-degree: 87%
 
 ---
 
@@ -585,7 +585,7 @@ Verwenden Sie die folgenden Tools, um das Besuchererlebnis zu simulieren:
 
    Die Seite ändert sich, um den Inhalt anzuzeigen, der auf den aktuellen Kontext zugeschnitten ist.
 
-1. Um Änderungen an den angezeigten Angeboten vorzunehmen, wechseln Sie in den Targeting-Modus. Bearbeiten Sie bei ausgewählter Simulationsaktivität die Angebote für den Kontext, den Sie im Vorschaumodus konfiguriert haben.
+1. Um die angezeigten Angebote zu ändern, wechseln Sie in den Targeting-Modus. Bearbeiten Sie bei ausgewählter Simulationsaktivität die Angebote für den Kontext, den Sie im Vorschaumodus konfiguriert haben.
 
 ## Konfigurieren der Target-Komponentenoptionen {#configuring-target-component-options}
 

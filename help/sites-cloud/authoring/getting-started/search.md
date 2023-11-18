@@ -2,10 +2,10 @@
 title: Suchen
 description: Rasches Auffinden von Inhalten dank umfassender Suchfunktionen
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 95%
+ht-degree: 90%
 
 ---
 
@@ -41,7 +41,7 @@ So durchsuchen und filtern Sie Ressourcen:
 
    ![Suchposition](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. Bei Bedarf können Sie den Positionsfilter entfernen (wählen Sie für den zu entfernenden Filter **X** aus), um alle Konsolen-/Ressourcentypen zu durchsuchen.
+1. Bei Bedarf können Sie den Standortfilter entfernen (wählen Sie **X** auf dem Filter, den Sie entfernen möchten), um über alle Konsolen/Ressourcentypen zu suchen.
 1. Die Ergebnisse werden gemäß der Konsole und dem zugehörigen Ressourcentyp gruppiert angezeigt.
 
    Sie können entweder eine spezifische Ressource (für eine spätere Aktion) oder eine Drilldown-Suche auswählen, indem Sie den erforderlichen Ressourcentyp auswählen, z. B. **Alle Sites anzeigen**:

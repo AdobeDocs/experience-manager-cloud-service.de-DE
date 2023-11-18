@@ -2,10 +2,10 @@
 title: Vorschau von Seiten mit ContextHub-Daten
 description: In der ContextHub-Symbolleiste werden Daten aus ContextHub Stores angezeigt. Außerdem können Sie mithilfe der Leiste Store-Daten bearbeiten und Inhalte in der Vorschau ansehen.
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 84%
+ht-degree: 72%
 
 ---
 
@@ -46,13 +46,13 @@ Mit den Benutzeroberflächenmodulen können in der Symbolleiste Daten aus einem 
 
 ### Popup-Inhalt {#popup-content}
 
-Einige Benutzeroberflächenmodule zeigen ein überlagertes Popup an, wenn darauf geklickt oder getippt wird. In der Regel enthält das Popup zusätzlich zu den in der Symbolleiste verfügbaren Informationen weitere Daten.
+Einige Benutzeroberflächenmodule zeigen eine Popup-Überlagerung an, wenn darauf geklickt oder getippt wird. In der Regel enthält das Popup zusätzliche Informationen, als in der Symbolleiste angezeigt werden.
 
 ![ContextHub-Profilinformationen](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 
 ### Popup-Formulare {#popup-forms}
 
-In einigen Popup-Overlays der Benutzeroberflächenmodule befinden sich Formularelemente, mit deren Hilfe Sie Daten im ContextHub Store bearbeiten können. Wenn Seiteninhalt durch die Store-Daten bestimmt wird, können Sie das Formular verwenden und Änderungen am Seiteninhalt beobachten.
+Die Popup-Überlagerung eines Moduls kann Formularelemente enthalten, mit denen Sie die Daten im ContextHub-Store ändern können. Wenn Seiteninhalt durch die Store-Daten bestimmt wird, können Sie das Formular verwenden und Änderungen am Seiteninhalt beobachten.
 
 ### Vollbildmodus {#fullscreen-mode}
 

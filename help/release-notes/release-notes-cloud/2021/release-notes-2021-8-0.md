@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.8.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2021.8.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: f956b8379b5b93bc00e25f0eec641430c5565e34
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 55%
+ht-degree: 57%
 
 ---
 
@@ -54,7 +54,7 @@ Sehen Sie sich das Video [Versionsübersicht August 2021](https://video.tv.adobe
 ### Fehlerbehebungen in [!DNL Assets] {#assets-bugs-fixed}
 
 * Wenn ein Mitglied der Gruppe &quot;Mitarbeiter&quot;zum [!DNL Assets] Konsole, zusätzliche `POST` -Anfrage generiert, um eine Sammlung zu erstellen. Diese Anfrage ist nicht erforderlich. Sie schlägt aufgrund von Berechtigungsproblemen fehl und führt zu vielen Fehlern in den Protokollen. (CQ-4328856)
-* Wenn Benutzer ein Asset anzeigten und die [!UICONTROL Zeitleiste] im Popup-Menü im linken Bereich auswählten, wurde ein Fehler angezeigt. In den Protokollen wurden viele Warnungen aufgrund einer fehlerhaften Abfrage protokolliert. (CQ-4328919)
+* Wenn Benutzer ein Asset anzeigen und auswählen, [!UICONTROL Timeline] im Popup-Menü im linken Bereich wird ein Fehler angezeigt. In den Protokollen wurden viele Warnungen aufgrund einer fehlerhaften Abfrage protokolliert. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -116,7 +116,7 @@ Siehe [SLA-Berichte](https://experienceleague.adobe.com/docs/experience-manager-
 
 * Update Verfügbar sollte nicht angezeigt werden, wenn die neueste Version kleiner als die aktuelle Version ist.
 
-* Das anfängliche Onboarding schlug bei neuen Unternehmen mit langen Namen fehl.
+* Das anfängliche Onboarding schlägt bei neuen Organisationen mit langen Namen nicht mehr fehl.
 
 * Wenn eine Pipeline gelegentlich aus irgendeinem Grund zweimal ausgelöst wird, führt dies dazu, dass eine der Ausführungen mit einem *`cannot update pipeline execution status`* Fehler.
 

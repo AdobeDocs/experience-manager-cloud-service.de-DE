@@ -2,10 +2,10 @@
 title: Veröffentlichen von Seiten
 description: Erfahren Sie, wie Sie Ihre Seiten mithilfe verschiedener Mechanismen in AEM veröffentlichen und ihre Veröffentlichung rückgängig machen können.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 92%
+source-wordcount: '1805'
+ht-degree: 91%
 
 ---
 
@@ -66,7 +66,7 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
 
    * Die Seite wird direkt veröffentlicht, wenn keine Verweise veröffentlicht werden müssen.
    * Wenn die Seite dagegen Verweise enthält, die veröffentlicht werden müssen, werden diese im **Veröffentlichungsassistenten** aufgeführt, und Sie können eine der folgenden Aktionen ausführen:
-      * Geben Sie an, welche Assets, Tags usw. Sie mit der Seite veröffentlichen möchten, und wählen Sie **Veröffentlichen** aus, um den Vorgang abzuschließen.
+      * Geben Sie an, welche Assets, Tags usw. Sie mit der Seite veröffentlichen möchten, und verwenden Sie dann **Veröffentlichen** , um den Prozess abzuschließen.
       * Mit **Abbrechen** können Sie den Vorgang abbrechen.
 
    ![Veröffentlichen von Verweisen mit der Seite](/help/sites-cloud/authoring/assets/publishing-references.png)

@@ -2,7 +2,7 @@
 title: Erstellen von Produktionsprogrammen
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Produktionsprogramm für das Hosten von Live-Traffic erstellen.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 73%
@@ -32,7 +32,7 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen.
 
 1. Optional können Sie ein Bild zum Programm hinzufügen, indem Sie eine Bilddatei per Drag-and-Drop auf das Ziel **Programmbild hinzufügen** ziehen oder darauf klicken, um ein Bild aus einem Dateibrowser auszuwählen. Klicken Sie auf **Weiter**.
 
-1. Wenn Sie über die erforderlichen Berechtigungen verfügen, wird die **Sicherheit** angezeigt wird und die Option zum Aktivieren **HIPAA** und/oder **WAF-DDOS-Schutz** für Ihr Produktionsprogramm. Kreuzen Sie bei Bedarf die entsprechenden Optionen für das Programm an, das Sie erstellen, und wählen Sie dann **Weiter**.
+1. Wenn Sie über die erforderlichen Berechtigungen verfügen, wird die **Sicherheit** angezeigt wird und die Option zum Aktivieren **HIPAA** und/oder **WAF-DDOS-Schutz** für Ihr Produktionsprogramm. Kreuzen Sie bei Bedarf die entsprechenden Optionen des Programms an und wählen Sie die Option **Weiter**.
 
    * HIPAA kann nach der Programmerstellung nicht aktiviert oder deaktiviert werden.
       * Hier finden Sie [weitere Informationen](https://www.adobe.com/go/hipaa-ready) zur Implementierung der HIPAA-fähigen Lösung von Adobe.

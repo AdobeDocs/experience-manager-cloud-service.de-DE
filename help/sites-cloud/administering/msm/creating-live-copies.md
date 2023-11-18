@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Live Copies erstellen und synchronisieren, um
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '4270'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -417,7 +417,7 @@ Nach dem [Aussetzen](#suspending-inheritance-from-page-properties) wird die Akti
 
 ![Schaltfläche „Fortsetzen“](../assets/resume.png)
 
-Wenn diese Option ausgewählt ist, wird das Dialogfeld angezeigt. Sie können ggf. eine Synchronisierung festlegen. Bestätigen Sie anschließend die Aktion.
+Wenn diese Option ausgewählt ist, wird das Dialogfeld angezeigt. Sie können bei Bedarf eine Synchronisierung auswählen und die Aktion bestätigen.
 
 #### Fortsetzen von Live Copy-Seiten über die Live Copy-Übersicht {#resume-a-live-copy-page-from-the-live-copy-overview}
 
@@ -523,7 +523,7 @@ Wenn Sie die Vererbung abbrechen, können Sie den Eigenschaftswert ändern. Ein 
 
 ![Nicht vererbte Eigenschaften](../assets/properties-not-inherited.png)
 
-Sie können später ggf. die Vererbung für eine Eigenschaft erneut aktivieren.
+Sie können die Vererbung für eine Eigenschaft später bei Bedarf erneut aktivieren.
 
 >[!NOTE]
 >

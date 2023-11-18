@@ -3,7 +3,7 @@ title: Best Practices für Abfragen und Indizierung
 description: Erfahren Sie, wie Sie Ihre Indizes und Abfragen anhand der Best-Practice-Richtlinien von Adobe optimieren können.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3128'
 ht-degree: 47%
@@ -140,16 +140,16 @@ Gehen Sie wie folgt vor, um eine Abfrage zu erklären:
 
 * Wählen Sie die entsprechende Abfragesprache mithilfe der `Language` Dropdown-Liste.
 * Geben Sie die Abfrage-Anweisung in die `Query` -Feld.
-* Wählen Sie bei Bedarf mithilfe der bereitgestellten Kontrollkästchen aus, wie die Abfrage ausgeführt werden soll.
+* Wählen Sie bei Bedarf mithilfe der Kontrollkästchen aus, wie die Abfrage ausgeführt werden soll.
    * Standardmäßig müssen keine JCR-Abfragen ausgeführt werden, um den Ausführungsplan für Abfragen zu identifizieren (dies ist bei QueryBuilder-Abfragen nicht der Fall).
    * Zur Ausführung der Abfrage stehen drei Optionen zur Verfügung:
       * `Include Execution Time` - Führen Sie die Abfrage aus, versuchen Sie jedoch nicht, Ergebnisse zu lesen.
       * `Read first page of results` - Führen Sie die Abfrage aus und lesen Sie die erste &quot;Seite&quot;mit 20 Ergebnissen (Replikation der Best Practices für die Ausführung von Abfragen).
       * `Include Node Count` - die Abfrage ausführen und die gesamte Ergebnismenge lesen (im Allgemeinen wird dies nicht empfohlen - siehe [Indexdurchlauf](#index-traversal)).
 
-#### Popup für Abfrageerläuterung {#query-explanation-popup}
+#### Popup-Abfrage für die Abfrage-Erläuterung {#query-explanation-popup}
 
-![Popup für Abfrageerläuterung](./assets/query-explanation-popup.png)
+![Popup-Abfrage für die Abfrage-Erläuterung](./assets/query-explanation-popup.png)
 
 Nach Auswahl `Explain`, wird dem Benutzer ein Popup angezeigt, in dem das Ergebnis der Abfragebeschreibung (und der Ausführung, falls ausgewählt) beschrieben wird.
 Dieses Popup enthält Details zu -

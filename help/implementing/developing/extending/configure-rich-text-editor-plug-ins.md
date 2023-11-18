@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie den Rich-Text-Editor [!DNL Adobe Experience M
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '4298'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -402,7 +402,7 @@ Sie können den RTE aber auch so konfigurieren, dass Ihre eigene Auswahl an Zeic
 
 >[!CAUTION]
 >
-Durch das Hinzufügen eigener Sonderzeichen wird die Standardauswahl überschrieben. Definieren Sie bei Bedarf diese Zeichen in Ihrer Auswahl neu.
+Durch das Hinzufügen eigener Sonderzeichen wird die Standardauswahl überschrieben. Definieren Sie diese Zeichen bei Bedarf in Ihrer Auswahl neu.
 
 ### Definieren einzelner Zeichen {#definesinglechar}
 

@@ -2,7 +2,7 @@
 title: Exportieren von Experience Fragments nach Adobe Target
 description: Erfahren Sie, wie Sie Ihre Experience Fragments in Adobe Target exportieren, um Erlebnisse zu testen und zu personalisieren.
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 96%
@@ -102,7 +102,7 @@ Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderl
    * die passende Konfiguration
    * die Option für das erforderliche Format
    * einen Adobe Target-Arbeitsbereich
-   * falls erforderlich – die Externalizer-Domain
+   * bei Bedarf - die Externalizer-Domäne
 
    >[!CAUTION]
    >

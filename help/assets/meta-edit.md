@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 69%
+ht-degree: 65%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 69%
 
 Metadaten sind zusätzliche Informationen zum Asset, die durchsucht werden können. Beim Hochladen eines Bildes werden sie automatisch extrahiert. Sie können die vorhandenen Metadaten bearbeiten oder vorhandenen Feldern neue Metadateneigenschaften hinzufügen (etwa wenn ein Metadatenfeld leer ist).
 
-Da Unternehmen gesteuertes und zuverlässiges Metadatenvokabular benötigen, lässt [!DNL Experience Manager Assets] das Adhoc-Hinzufügen von neuen Metadateneigenschaften nicht zu. Autoren und Autorinnen können zwar keine neuen Metadatenfelder für Assets hinzufügen, Entwickler oder Entwicklerinnen können dies jedoch tun. Siehe [Erstellen neuer Metadateneigenschaften für Assets](meta-edit.md#editing-metadata-schema).
+Da Unternehmen gesteuertes und zuverlässiges Metadatenvokabular benötigen, [!DNL Experience Manager Assets] erlaubt kein On-Demand-Hinzufügen neuer Metadateneigenschaften. Autoren und Autorinnen können zwar keine neuen Metadatenfelder für Assets hinzufügen, Entwickler oder Entwicklerinnen können dies jedoch tun. Siehe [Erstellen neuer Metadateneigenschaften für Assets](meta-edit.md#editing-metadata-schema).
 
 ## Bearbeiten von Metadaten für ein Asset {#editing-metadata-for-an-asset}
 

@@ -2,9 +2,9 @@
 title: Versionshinweise für Version 2020.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0“
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1262'
 ht-degree: 91%
 
 ---
@@ -32,7 +32,7 @@ Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Assets] und [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Massenaufnahme von Assets**: Stellen Sie Kunden einen skalierbaren Cloud-nativen Erfassungsdienst zur Verfügung, der Folgendes verwendet: [!DNL Experience Manager] as a Cloud Service Architektur, einschließlich Asset-Microservices. Zu den wichtigsten Anwendungsfällen gehört die skalierte Aufnahme mit Überwachung, Reporting und Planung, während die erstmalige Übertragung von Assets in Cloud-Datenspeicher mithilfe gängiger Cloud-Upload-Tools ermöglicht wird. Weitere Informationen finden Sie unter [Tool zur Massenaufnahme von Assets](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **Massenaufnahme von Assets**: Stellen Sie Kunden einen skalierbaren, Cloud-nativen Erfassungsdienst zur Verfügung, der Folgendes verwendet: [!DNL Experience Manager] as a Cloud Service Architektur, einschließlich Asset-Microservices. Zu den wichtigsten Anwendungsfällen gehört die skalierte Aufnahme mit Überwachung, Reporting und Planung, während die erstmalige Übertragung von Assets in Cloud-Datenspeicher mithilfe gängiger Cloud-Upload-Tools ermöglicht wird. Weitere Informationen finden Sie unter [Tool zur Massenaufnahme von Assets](/help/assets/add-assets.md#asset-bulk-ingestor).
 
   Dieses Tool ist für Systemadministratoren, Berater und Implementierungspartner gedacht. Diese Funktion ermöglicht die Aufnahme in großem Umfang und wird idealerweise bei der ersten Aufnahme oder gelegentlicher großer Aufnahme verwendet. Für kleinere Aufnahmeaufträge verwenden Sie das [[!DNL Experience Manager] Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de) oder [laden Sie über die Assets-Benutzeroberfläche hoch](/help/assets/add-assets.md#upload-assets).
 
@@ -62,7 +62,7 @@ Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht.
    * Benutzer können mit der `Tab`-Taste durch das Dialogfeld „E-Mail-Link“ navigieren.
    * Der Workflow zum Erstellen von Videokodierungsprofilen ist durch die Verbesserungen bei den Bildschirmlesehilfen benutzerfreundlicher geworden.
    * Beim Navigieren mit der `Tab`-Taste wird der Fokus auf die entsprechenden Elemente der Benutzeroberfläche im Workflow verschoben, um ein interaktives Video zu erstellen.
-   * Die Seiten „Veröffentlichen“, „Asset bearbeiten“, „Smartes Zuschneiden bearbeiten“ und „Bildset-Editor“ wurden verbessert, um den Web-Standards zu entsprechen. Benutzer, die Hilfstechnologien verwenden, können jetzt problemlos durch diese Seiten navigieren und Aktionen wie das Zuschneiden von Bildern ausführen.
+   * Die Seiten „Veröffentlichen“, „Asset bearbeiten“, „Smartes Zuschneiden bearbeiten“ und „Bildset-Editor“ wurden verbessert, um den Web-Standards zu entsprechen. Benutzer von Hilfstechnologien (AT) können jetzt einfach durch diese Seiten navigieren und auf sie reagieren, z. B. Bilder zuschneiden.
    * Die Viewer wurden verbessert, sodass Benutzer mit der Tastatur navigieren können.
    * Benutzer, die Tastatur und Bildschirmlesehilfe verwenden, können die Funktion zum Zuschneiden verwenden.
    * Tastaturbenutzer können die Hotspots besser verwalten.
@@ -73,9 +73,9 @@ Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-commerce}
 
-* CIF Venia Reference Site - 2020.11.05 veröffentlicht, die die neueste Version der CIF-Kernkomponenten Version 1.5.0 enthält. Siehe [CIF Venia-Referenz-Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) für weitere Details.
+* Veröffentlicht CIF Venia-Referenz-Site 2020.11.05, die die neueste Version der CIF Kernkomponenten Version 1.5.0 enthält. Siehe [Venia-Referenz-Website CIF](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) für weitere Details.
 
-* Version 1.5.0 der CIF-Kernkomponenten veröffentlicht. Siehe [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) für weitere Details.
+* Version 1.5.0 CIF Kernkomponenten veröffentlicht. Siehe [CIF Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) für weitere Details.
 
 ### Fehlerbehebungen {#bug-fixes-commerce}
 
@@ -90,7 +90,7 @@ Die Version 2020.11.0 von Cloud Manager in AEM as a Cloud Service wurde am 12. 
 ### Neue Funktionen in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * Eine neue Menüoption **Lokale Anmeldung** steht Benutzern jetzt über die Umgebungsmenüoptionen auf der Karte **Umgebungen** und auf den Zusammenfassungsseiten **Umgebungen** zur Verfügung.
-Siehe [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#login-locally) für weitere Details.
+Weitere Einzelheiten finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#login-locally).
 
 * Die Registerkarte **Lernen** in Cloud Manager wurde mit neuen Bildern in der Benutzeroberfläche aktualisiert.
 
@@ -99,7 +99,7 @@ Siehe [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environ
 * Das Laden von Abhängigkeiten vor der Ausführung des Builds erforderte den Download eines Maven-Plug-ins.
 * Über den Link in der Fußzeile von Cloud Manager zur Sprachauswahl wird jetzt an die richtige Stelle navigiert.
 * Manchmal startete der SonarQube-Prozess während des Code-Scannens nicht. Dies wird nun automatisch erkannt und ein Neustart wird versucht.
-* Alle vorhandenen Produktions-Pipelines werden automatisch mit dem Schritt Erlebnisprüfung aktiviert.
+* Alle vorhandenen Produktions-Pipelines werden automatisch mit dem Experience Audit-Schritt aktiviert.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 

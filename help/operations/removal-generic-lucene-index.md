@@ -2,10 +2,10 @@
 title: Entfernen des generischen Lucene-Index
 description: Erfahren Sie mehr über die geplante Entfernung des generischen Lucene-Index und darüber, wie Sie betroffen sein könnten.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1335'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -42,7 +42,7 @@ Um größere Kundendatenvolumen zu unterstützen, erstellt Adobe für neue AEM a
 
 Adobe hat die Indexkosten bereits über die `costPerEntry`- und `costPerExecution`-Eigenschaften angepasst, um sicherzustellen, dass andere Indizes wie `/oak:index/pathreference` nach Möglichkeit bevorzugt werden.
 
-Kundenanwendungen, die Abfragen verwenden, die noch von diesem Index abhängig sind, sollten unverzüglich aktualisiert werden, sodass sie andere vorhandene Indizes nutzen, die bei Bedarf angepasst werden können. Alternativ können der Kundenanwendung neue benutzerdefinierte Indizes hinzugefügt werden. Eine vollständige Anleitung zur Indexverwaltung in AEM as a Cloud Service finden Sie in der [Dokumentation zur Indizierung](/help/operations/indexing.md).
+Kundenanwendungen, die Abfragen verwenden, die noch von diesem Index abhängig sind, sollten unverzüglich aktualisiert werden, um andere vorhandene Indizes zu verwenden, die bei Bedarf angepasst werden können. Alternativ können der Kundenanwendung neue benutzerdefinierte Indizes hinzugefügt werden. Eine vollständige Anleitung zur Indexverwaltung in AEM as a Cloud Service finden Sie in der [Dokumentation zur Indizierung](/help/operations/indexing.md).
 
 ## Sind Sie betroffen? {#are-you-affected}
 
@@ -129,7 +129,7 @@ Bisher wurde der generische Lucene-Index verwendet, um die Referenzsuche oder di
 
 #### Suche für Pfadfeldwähler {#picker-search}
 
-AEM enthält eine benutzerdefinierte Dialogfeldkomponente mit dem Sling-Ressourcentyp `granite/ui/components/coral/foundation/form/pathfield`, die einen Browser/einen Auswahlassistenten zum Auswählen eines anderen AEM-Pfads bietet. Der Pfadfeldwähler, der verwendet wird, wenn keine benutzerdefinierte `pickerSrc`-Eigenschaft in der Inhaltsstruktur definiert ist, rendert eine Suchleiste im Popup-Dialogfeld.
+AEM enthält eine benutzerdefinierte Dialogfeldkomponente mit dem Sling-Ressourcentyp `granite/ui/components/coral/foundation/form/pathfield`, die einen Browser/einen Auswahlassistenten zum Auswählen eines anderen AEM-Pfads bietet. Die Standardauswahl für Pfadfelder, die verwendet wird, wenn kein benutzerdefinierter `pickerSrc` -Eigenschaft in der Inhaltsstruktur definiert ist, rendert eine Suchleiste im Popup-Dialogfeld.
 
 Die Knotentypen, nach denen gesucht werden soll, können mit der Eigenschaft `nodeTypes` angegeben werden.
 

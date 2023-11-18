@@ -4,10 +4,10 @@ description: Im Folgenden erhalten Sie eine Einführung in das Wiederverwenden v
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2702'
-ht-degree: 94%
+source-wordcount: '2698'
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,7 @@ Multi Site Manager (MSM) ermöglicht Ihnen die Verwendung derselben Site-Inhalte
    * Inhalte einmalig erstellen und diese
    * Inhalte dann in anderen Bereichen derselben oder anderer Sites verwenden (über [Live Copies](#live-copies)).
 * MSM behält dann die Live-Beziehungen zwischen Ihren Quellinhalten und deren Live Copies bei, sodass:
-   * die Quelle und die Live Copies synchronisiert werden, wenn Sie Änderungen am Quellinhalt vornehmen.
+   * Wenn Sie den Quellinhalt ändern, werden die Quelle und die Live Copies synchronisiert.
    * Sie Anpassungen am Inhalt der Live Copies vornehmen können, indem Sie die Live-Beziehung zu einzelnen Unterseiten und/oder Komponenten trennen.
 
 Diese Seite bietet einen Überblick über das Wiederverwenden von Inhalten mit MSM. Auf den folgenden Seiten werden die damit zusammenhängenden Probleme ausführlich behandelt.
@@ -189,7 +189,7 @@ Im vorherigen Beispiel ist `/content/wknd/language-masters/en` die globale prim�
 
 * Der Inhalt unter `/content/wknd/language-masters/en` ist die Quelle.
 * Der Inhalt unter `/content/wknd/language-masters/en` wird unter die Knoten `/content/wknd/us/en/` und `/content/wknd/ca/en` kopiert. Dabei handelt es sich um die Live Copies.
-* Autoren nehmen an Seiten unter `/content/wknd/language-masters/en` Änderungen vor.
+* Autoren ändern Seiten unten `/content/wknd/language-masters/en`.
 * Nach der Auslösung synchronisiert MSM diese Änderungen mit den Live Copies.
 
 ### Live Copies – Komposition {#live-copies-composition}
@@ -320,10 +320,10 @@ Die folgenden Schritte beschreiben die standardmäßige Vorgehensweise für die 
 1. Legen Sie die zu verwendende Rollout-Konfiguration fest.
 
    1. MSM [installiert mehrere Rollout-Konfigurationen](live-copy-sync-config.md#installed-rollout-configurations) , die mehrere Anwendungsfälle erfüllen können.
-   1. Optional können Sie [eine Rollout-Konfiguration erstellen](live-copy-sync-config.md#creating-a-rollout-configuration), falls erforderlich.
+   1. Optional können Sie [Erstellen einer Rollout-Konfiguration](live-copy-sync-config.md#creating-a-rollout-configuration) falls erforderlich.
 
 1. Stellen Sie fest, wo Sie [die zu verwendenden Rollout-Konfigurationen spezifizieren](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) müssen und konfigurieren Sie sie nach Bedarf.
-1. [Erstellen Sie gegebenenfalls eine Blueprint-Konfiguration](creating-live-copies.md#creating-a-blueprint-configuration), die den Quellinhalt der Live Copy identifiziert.
+1. Falls erforderlich, [Erstellen einer Blueprint-Konfiguration](creating-live-copies.md#creating-a-blueprint-configuration) , der den Quellinhalt der Live Copy angibt.
 1. [Erstellen Sie eine Live Copy.](creating-live-copies.md#creating-a-live-copy)
 1. Nehmen Sie bei Bedarf Änderungen am Quellinhalt vor. Sie sollten den normalen, von Ihrer Organisation etablierten Inhaltsprüfungs- und Genehmigungsprozess anwenden.
 1. Führen Sie ein [Rollout](creating-live-copies.md#rolling-out-a-blueprint) des Blueprints durch oder [synchronisieren Sie die Live Copy](creating-live-copies.md#synchronizing-a-live-copy) mit den Änderungen.

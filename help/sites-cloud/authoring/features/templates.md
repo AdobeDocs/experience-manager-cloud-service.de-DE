@@ -2,10 +2,10 @@
 title: Erstellen von Seitenvorlagen
 description: Eine Vorlage definiert die Struktur einer erstellten Seite und mit dem Vorlageneditor ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4538'
-ht-degree: 87%
+source-wordcount: '4535'
+ht-degree: 86%
 
 ---
 
@@ -73,7 +73,7 @@ Beim Erstellen einer bearbeitbaren Vorlage haben Sie folgende Möglichkeiten:
    * Oder direkt unter: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * Erstellen Sie bei Bedarf [einen Ordner für die Vorlagen](#creating-a-template-folder-admin).
 * [Erstellen Sie eine neue Vorlage](#creating-a-new-template-template-author), die anfangs leer ist.
-* [Definieren Sie bei Bedarf weitere Eigenschaften](#defining-template-properties-template-author) für die Vorlage.
+* [Zusätzliche Eigenschaften definieren](#defining-template-properties-template-author) gegebenenfalls für die Vorlage
 * [Bearbeiten Sie die Vorlage](#editing-templates-template-authors), um Folgendes zu definieren:
    * [Struktur](#editing-a-template-structure-template-author) – vordefinierter Inhalt, der auf Seiten, die mit der Vorlage erstellt werden, nicht geändert werden kann.
    * [Anfänglicher Inhalt](#editing-a-template-initial-content-author) – vordefinierter Inhalt, der auf den Seiten geändert werden kann, die mit der Vorlage erstellt werden.
@@ -351,8 +351,8 @@ Auf diese Weise können Sie die Designdetails definieren.
 
 Das Konfigurationsfenster ist in zwei Hälften geteilt.
 
-* Auf der linken Seite des Dialogfelds können Sie unter **Richtlinie** eine vorhandene Richtlinie auswählen.
-* Auf der rechten Seite des Dialogfelds können Sie unter **Eigenschaften** die für den Komponententyp spezifischen Eigenschaften festlegen.
+* Auf der linken Seite des Dialogfelds unter **Politik** können Sie eine vorhandene Richtlinie auswählen oder eine vorhandene auswählen.
+* Rechts im Dialogfeld unter **Eigenschaften** können Sie die für den Komponententyp spezifischen Eigenschaften festlegen.
 
 Die verfügbaren Eigenschaften hängen von der ausgewählten Komponente ab. Für eine Textkomponente beispielsweise definieren die Eigenschaften unter anderem die Optionen zum Kopieren und Einfügen, die Formatierungsoptionen und den Absatzstil.
 

@@ -2,10 +2,10 @@
 title: Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten
 description: Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten für Inhalte, andere Fragmente und andere Assets (Medien). Einführung in die Notwendigkeit und die Mechanik verschachtelter Fragmente für Headless-CMS-Seitenbearbeitung.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 91%
+source-wordcount: '705'
+ht-degree: 84%
 
 ---
 
@@ -27,13 +27,13 @@ Dieser Artikel baut auf diesen auf. Sie erfahren, wie Sie Verweise verwenden kö
    * Inhaltsreferenzen
    * Asset-/Medienverweise
    * Fragmentreferenzen
-   * Ad-hoc-Verweise aus einem Textblock
+   * Verbesserte Verweise aus einem Textblock
 
 ## Was sind Verweise {#what-are-references}
 
 Verweise sind lediglich ein Mechanismus zum Verbinden Ihrer Ressourcen, sei es mit anderen Inhalten, Assets (wie in Bildern) oder anderen Fragmenten. Obwohl sie sehr ähnlich sind, gibt es einige Unterschiede.
 
-Einige Verweise verfügen über dedizierte Datentypen (z. B. Inhaltsverweise und Fragmentverweise), während andere einfach als Verweis in einem Textblock hinzugefügt werden (Asset-Verweise und Ad-hoc-Verweise).
+Einige Verweise verfügen über dedizierte Datentypen (z. B. Inhaltsverweise und Fragmentverweise), während andere einfach als Verweis in einem Textblock hinzugefügt werden (Asset-Verweise und improvisierte Verweise).
 
 ![Inhaltsfragmente – Verweise](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
@@ -96,7 +96,7 @@ Wenn Sie die Registerkarte **Baumstruktur** des Inhaltsfragment-Editors verwende
 
 ## Ad-hoc-Verweise {#adhoc-references}
 
-Ad-hoc-Verweise können als einfacher Link innerhalb eines Textblocks hinzugefügt werden:
+Verbesserte Verweise können als einfacher Link innerhalb eines Textblocks hinzugefügt werden:
 
 ![Inhaltsfragmente – Ad-hoc-Verweise](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
