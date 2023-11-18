@@ -2,10 +2,10 @@
 title: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 description: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 681d4b9f300280e5a6723bd00a9ccfde0545f401
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 97%
+source-wordcount: '1378'
+ht-degree: 95%
 
 ---
 
@@ -15,20 +15,14 @@ Im folgenden Abschnitt finden Sie allgemeine Versionshinweise zu [!DNL Workfront
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für die neueste Version 1.9.14 von [!DNL Workfront for Experience Manager enhanced connector] ist der 13. Oktober 2023.
+Das Veröffentlichungsdatum für die neueste Version 1.9.15 von [!DNL Workfront for Experience Manager enhanced connector] ist der 17. November 2023.
 
 ## Die Highlights der Version {#release-highlights}
 
 Die neueste Version von [!DNL Workfront for Experience Manager enhanced connector] enthält die folgenden Verbesserungen und Fehlerbehebungen:
 
-* Wenn Ereignisabonnements unter „Erweiterte Einstellungen“ deaktiviert sind, können Sie weiterhin die folgenden Optionen auswählen: **Dokumentaktualisierungsereignisse zur Aktualisierung von AEM-Asset-Metadaten abonnieren**, **Alle Projekt-Assets nach Abschluss des Projekts in Brand Portal veröffentlichen**, **Kommentarsynchronisierung aktivieren**.
-
-* Einige der in Experience Manager gespeicherten Assets werden bei der Vorschau in Workfront nicht ordnungsgemäß dargestellt.
-
-* Bei der Neukonfiguration der Experience Manager-Verbindung mit Workfront werden Abonnements für Ereignisse wie die Aktualisierung von Kommentaren, das Löschen und das Aktualisieren von Dokumenten nicht erfolgreich erstellt.
-
-* Wesentliche API-Leistungsverbesserungen für die Erstellung verknüpfter Ordner, Aktualisierung, Aktivierung verknüpfter Ordner, Aktivierung und Deaktivierung der Kommentarsynchronisierung, erweiterte Speicherung der Einstellungen im Connector.
-
+* Beim Anzeigen der Liste AEM Ordner dauert das Laden des Dialogfelds mehr als eine Minute.
+* Autorisiert [!DNL Workfront] Benutzer erhalten durchweg Fehlerprotokolle zu Authentifizierungsfehlern.
 
 >[!NOTE]
 >
@@ -37,7 +31,7 @@ Die neueste Version von [!DNL Workfront for Experience Manager enhanced connecto
 
 >[!IMPORTANT]
 >
->Adobe empfiehlt eine [Aktualisierung auf die neueste Version 1.9.14](/help/assets/workfront-connector-install.md) des [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe empfiehlt eine [Aktualisierung auf die neueste Version 1.9.15](/help/assets/workfront-connector-install.md) des [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekannte Probleme {#known-issues}
 
@@ -46,6 +40,16 @@ Die neueste Version von [!DNL Workfront for Experience Manager enhanced connecto
 * Wenn Sie das klassische Workfront-Erlebnis verwenden, wird die **[!UICONTROL Senden an]** -Option verfügbar im **[!UICONTROL Mehr]** in der Dropdown-Liste können Sie das Ziel nicht innerhalb von Experience Manager auswählen. Die Option **[!UICONTROL Senden an]** funktioniert korrekt über die Dropdown-Liste **[!UICONTROL Dokumentenaktionen]**. Die Option **[!UICONTROL Senden an]** funktioniert korrekt für die Dropdown-Liste **[!UICONTROL Mehr]** und die Dropdown-Liste **[!UICONTROL Dokumentenaktionen]**, die in dem neuen Workfront-Erlebnis verfügbar sind.
 
 ## Frühere Versionen {#previous-releases}
+
+### Version Oktober 2023 {#october-2023-release}
+
+* Wenn Ereignisabonnements unter „Erweiterte Einstellungen“ deaktiviert sind, können Sie weiterhin die folgenden Optionen auswählen: **Dokumentaktualisierungsereignisse zur Aktualisierung von AEM-Asset-Metadaten abonnieren**, **Alle Projekt-Assets nach Abschluss des Projekts in Brand Portal veröffentlichen**, **Kommentarsynchronisierung aktivieren**.
+
+* Einige der in Experience Manager gespeicherten Assets werden bei der Vorschau in Workfront nicht ordnungsgemäß dargestellt.
+
+* Bei der Neukonfiguration der Experience Manager-Verbindung mit Workfront werden Abonnements für Ereignisse wie die Aktualisierung von Kommentaren, das Löschen und das Aktualisieren von Dokumenten nicht erfolgreich erstellt.
+
+* Wesentliche API-Leistungsverbesserungen für die Erstellung verknüpfter Ordner, Aktualisierung, Aktivierung verknüpfter Ordner, Aktivierung und Deaktivierung der Kommentarsynchronisierung, erweiterte Speicherung der Einstellungen im Connector.
 
 ### Version September 2023 {#september-2023-release}
 
