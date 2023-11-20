@@ -2,9 +2,9 @@
 title: Benutzerdefinierte Berechtigungen
 description: Erfahren Sie, wie Sie mit benutzerdefinierten Berechtigungen neue benutzerdefinierte Berechtigungsprofile mit konfigurierbaren Berechtigungen erstellen können, um den Zugriff auf Programme, Pipelines und Umgebungen für Cloud Manager-Benutzer zu beschränken.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 33d14ac66fa46c25f1e027aa86848768fd0271ff
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1559'
 ht-degree: 2%
 
 ---
@@ -96,11 +96,6 @@ Nachdem Sie ein neues Produktprofil erstellt haben, können Sie ihm benutzerdefi
 
 1. Wählen Sie die **Alle hinzufügen** -Schaltfläche oben im **Verfügbare Berechtigungen** um alle Berechtigungen hinzuzufügen.
 
-1. Wenn das Profil immer über alle Berechtigungselemente verfügen soll, sollten Sie die **Automatisch einschließen** -Option.
-
-   * **on** - Alle aktuellen Berechtigungselemente und zukünftigen Berechtigungselemente werden nach Einbezogene Berechtigungselemente verschoben und beim Speichern gelten entsprechend.
-   * **Aus** - Alle Berechtigungselemente werden zurück zu den verfügbaren Berechtigungselementen verschoben und beim Speichern gelten entsprechend.
-
 1. Auswählen **Speichern** wenn Sie mit der Definition der Berechtigungselemente für Ihr neues Produktprofil fertig sind.
 
 Ihr neues Produktprofil wird jetzt mit den benutzerdefinierten Berechtigungen gespeichert.
@@ -129,6 +124,10 @@ Die folgenden Berechtigungen sind für das Erstellen benutzerdefinierter Profile
 | Umgebung erstellen | Benutzern erlauben, eine Umgebung zu erstellen |
 | Umgebungsbearbeitung | Benutzer können Umgebungen aktualisieren und bearbeiten |
 | Umgebungsprotokolle lesen | Lesen von Umgebungsprotokollen durch Benutzer zulassen |
+| Verwalten von Umgebungsvariablen | Benutzer können Umgebungskonfigurationen erstellen/bearbeiten/löschen |
+| Umgebungswiederherstellung erstellen | Benutzer können Umgebung wiederherstellen |
+| Schnelles Zurücksetzen der Entwicklungsumgebung | Benutzer können die schnelle Entwicklungsumgebung zurücksetzen |
+| Inhaltskopie verwalten | Benutzern erlauben, Vorgänge zum Kopieren von Inhalten zu verwalten |
 | Pipeline erstellen | Benutzer können neue Pipelines erstellen |
 | Pipeline löschen | Löschen von Pipelines durch Benutzer zulassen |
 | Pipeline bearbeiten | Bearbeiten von Pipelines durch Benutzer zulassen |
@@ -138,6 +137,15 @@ Die folgenden Berechtigungen sind für das Erstellen benutzerdefinierter Profile
 | Wichtige Metrikfehler überschreiben/ablehnen | Benutzer können wichtige Metrikfehler überschreiben/ablehnen |
 | Zeitplan für Produktionsbereitstellungen | Benutzern erlauben, einen Produktionsbereitstellungsschritt zu planen |
 | Zugriff auf Repository-Informationen | Ermöglichen Sie Benutzern den Zugriff auf Repository-Informationen und das Generieren des Zugriffs-Kennworts |
+| Repository erstellen | Benutzern das Erstellen neuer Git-Repositorys ermöglichen |
+| Repository löschen | Löschen von Git-Repositorys durch Benutzer zulassen |
+| Repository bearbeiten | Benutzern erlauben, Git-Repositorys zu bearbeiten |
+| Repository-Codegenerierung | Benutzern erlauben, ein Projekt aus einem Archetyp zu generieren |
+| Domänenname verwalten | Benutzern das Erstellen/Bearbeiten/Löschen von Domänennamen ermöglichen |
+| Verwalten von IP-Zulassungslisten | Benutzern das Erstellen/Bearbeiten/Löschen von IP-Zulassungslisten- und IP-Zulassungslisten-Bindungen ermöglichen |
+| Netzwerkinfrastruktur-Management | Benutzer können Netzwerkinfrastruktur erstellen/bearbeiten/löschen |
+| SSL-Zertifikatverwaltung | Ermöglichen Sie Benutzern das Erstellen/Bearbeiten/Löschen eines SSL-Zertifikats |
+| New Relic Sub Account User Verwalten | Benutzern das Lesen/Bearbeiten neuer relischer Unterkonten ermöglichen |
 
 ### Berechtigungen auf Organisationsebene {#organization-level}
 
