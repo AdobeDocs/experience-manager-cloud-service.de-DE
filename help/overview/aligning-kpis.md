@@ -2,10 +2,10 @@
 title: Ausrichten von KPIs
 description: Erfahren Sie, wie Sie die richtigen KPIs für Ihre AEM-Implementierung auswählen
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 97%
+source-wordcount: '497'
+ht-degree: 93%
 
 ---
 
@@ -28,7 +28,7 @@ In unserer digitalen Welt kann fast alles gemessen werden. Die Wahl der drei KPI
 
 1. **Bestimmen Sie anhand Ihrer Unternehmensziele Ihre Produktziele.** Ihre Produktziele sind die spezifischen Ergebnisse, die Sie durch die Verwendung von Experience Manager als Content-Management-Plattform erreichen möchten. Wenn Ihr Unternehmensziel darin besteht, den Online-Umsatz zu steigern, könnte Ihr Produktziel sein, eine 2-Punkt-Steigerung der Konversion für alle Seiten mit Marketing-Inhalten zu erreichen. Wenn Ihr Unternehmensziel lautet, die Betriebskosten zu senken, könnte Ihr Produktziel darin bestehen, die Produktivität von Teams, die digitale Inhalte erstellen, um 20 % zu steigern.
 
-   Idealerweise sollte jedes Produktziel eine Basiszahl haben, wie z. B. Ihre aktuelle Konversionsrate für eine bestimmte Kategorie von Seiten. Die Basiszahlen für Website-Besuche, Konversions oder Online-Einnahmen sind relativ einfach zu ermitteln. Bei Produktzielen für die Produktivität oder die Markteinführungszeit wird es wahrscheinlich einige Arbeit erfordern, um eine Basiszahl zu berechnen. Aber es lohnt sich, denn mit klaren Produktzielen können Sie mehr aus Ihrer Investition in Experience Manager herausholen.
+   Idealerweise sollte jedes Produktziel eine Basiszahl haben, wie z. B. Ihre aktuelle Konversionsrate für eine bestimmte Kategorie von Seiten. Die Basiszahlen für Website-Besuche, Konversions oder Online-Einnahmen sind relativ einfach zu ermitteln. Bei Produktzielen für die Produktivität oder die Markteinführungszeit wird es wahrscheinlich einige Arbeit erfordern, um eine Basiszahl zu berechnen. Es lohnt sich jedoch, sich zu bemühen, denn klare Ziele helfen Ihnen, mehr Wert aus Ihrer Investition in Experience Manager zu ziehen.
 
 1. **Definieren Sie für jedes Produktziel Leistungsindikatoren.** Vielleicht besteht Ihr Ziel beispielsweise darin, die mit DRM-Verstößen verbundenen rechtlichen Kosten um 100.000 € zu senken. Ein guter Leistungsindikator könnte sein: „100 % der abgelaufenen Assets werden am oder vor dem Ablaufdatum aus den digitalen Eigenschaften entfernt.“ Versuchen Sie, für jedes Produktziel mehrere Indikatoren zu definieren. Wenn Sie beispielsweise mit zwei bis drei Unternehmenszielen und drei bis fünf Produktzielen begonnen haben, haben Sie eine Liste von 15 bis 20 Leistungsindikatoren.
 

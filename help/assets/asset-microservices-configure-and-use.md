@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2928'
 ht-degree: 98%
@@ -246,7 +246,7 @@ Wenn keine Nachbearbeitung erforderlich ist, erstellen und verwenden Sie ein „
    * Titel: Deaktivieren des automatisch gestarteten Workflows
    * Name: disable-auto-start-workflow
 1. Wählen Sie __Fertig__ aus, um das Workflow-Modell zu erstellen.
-1. __Auswählen__ und __Bearbeiten__ das neu erstellte Workflow-Modell
+1. __Auswählen__ und __Bearbeiten__ das erstellte Workflow-Modell
 1. Wählen Sie im Workflow-Modell-Editor die Option __Schritt 1__ aus der Modelldefinition aus und löschen Sie sie.
 1. Öffnen Sie das __seitliche Bedienfeld__ und wählen Sie __Schritte__ aus.
 1. Ziehen Sie den Schritt __Abgeschlossener Prozess zum DAM-Workflow eines Asset-Updates__ in die Modelldefinition.

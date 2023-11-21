@@ -2,10 +2,10 @@
 title: Entfernen des generischen Lucene-Index
 description: Erfahren Sie mehr über die geplante Entfernung des generischen Lucene-Index und darüber, wie Sie betroffen sein könnten.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1335'
-ht-degree: 91%
+ht-degree: 87%
 
 ---
 
@@ -154,6 +154,7 @@ Vor dem Entfernen des generischen Lucene-Index wird die Komponente `pathfield` a
 >[!NOTE]
 >
 >Der Inhaltsfragmentmodell-Editor verwendet spezielle Pfadfelder mit dem Sling-Ressourcentyp `dam/cfm/models/editor/components/contentreference`.
+>
 > * Derzeit führen diese Abfragen ohne angegebene Knotentypen durch, was dazu führt, dass aufgrund der Verwendung des generischen Lucene-Index eine WARNUNG protokolliert wird.
 > * Instanzen dieser Komponenten werden in Kürze automatisch ohne weitere Kundenaktion standardmäßig die Knotentypen `cq:Page` und `dam:Asset` verwenden.
 > * Die `nodeTypes`-Eigenschaft kann hinzugefügt werden, um diese standardmäßigen Knotentypen zu überschreiben.
@@ -167,6 +168,6 @@ Adobe wird den generischen Lucene-Index in zwei Phasen entfernen.
 
 Adobe überwacht die oben genannten Protokollmeldungen und versucht, Kunden zu kontaktieren, die weiterhin vom generischen Lucene-Index abhängig sind.
 
-Als kurzfristige Lösung fügt Adobe bei Bedarf benutzerdefinierte Indexdefinitionen direkt zu Kundensystemen hinzu, um Funktions- oder Leistungsprobleme zu vermeiden, die durch die Entfernung des generischen Lucene-Index auftreten.
+Als kurzfristige Abmilderung fügt Adobe benutzerdefinierte Indexdefinitionen direkt zu Kundensystemen hinzu, um Funktions- oder Leistungsprobleme zu vermeiden, die durch das Entfernen des generischen Lucene-Index bei Bedarf auftreten.
 
-In solchen Fällen wird dem Kunden die aktualisierte Indexdefinition bereitgestellt und empfohlen, diese über Cloud Manager in zukünftige Versionen seines Programms aufzunehmen.
+In solchen Fällen wird dem Kunden die aktualisierte Indexdefinition bereitgestellt und empfohlen, sie in zukünftige Versionen seiner Anwendung über Cloud Manager aufzunehmen.

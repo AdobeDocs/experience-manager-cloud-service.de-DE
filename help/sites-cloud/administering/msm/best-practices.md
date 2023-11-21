@@ -4,7 +4,7 @@ description: Hier finden Sie Best Practices für die Einrichtung und Verwendung 
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 92%
@@ -113,9 +113,9 @@ Halten Sie sich beim Verschieben von Seiten in einer Live Copy an die folgende B
    * Fügen Sie dieser Konfiguration keine anderen Aktionen hinzu.
 1. Positionieren Sie die neue Konfiguration.
    * Gehen Sie wie folgt vor, um ein vollständiges Rollout der Seitenverschiebung durchzuführen und gleichzeitig die entsprechenden Seiten an ihrem alten Ort in der Live Copy zu löschen:
-      * Positionieren Sie die neu erstellte Konfiguration vor der standardmäßigen Rollout-Konfiguration. Die Löschung der Seiten an ihrem alten Ort wird durch die standardmäßige Rollout-Konfiguration übernommen.
+      * Positionieren Sie die erstellte Konfiguration vor der standardmäßigen Rollout-Konfiguration. Die Löschung der Seiten an ihrem alten Ort wird durch die standardmäßige Rollout-Konfiguration übernommen.
       * Gehen Sie wie folgt vor, um das Rollout der Seitenverschiebung durchzuführen und dabei die entsprechenden Seiten an ihrem alten Ort beizubehalten (und somit im Grunde den Inhalt zu duplizieren):
-         * Positionieren Sie die neu erstellte Konfiguration nach der standardmäßigen Rollout-Konfiguration. Dadurch wird sichergestellt, dass in der Live Copy kein Inhalt gelöscht oder für die Veröffentlichung deaktiviert wird.
+         * Positionieren Sie die erstellte Konfiguration nach der standardmäßigen Rollout-Konfiguration. Dadurch wird sichergestellt, dass in der Live Copy kein Inhalt gelöscht oder für die Veröffentlichung deaktiviert wird.
 
 ## Anpassen von Rollouts {#customizing-rollouts}
 

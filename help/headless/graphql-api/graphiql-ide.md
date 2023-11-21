@@ -3,10 +3,10 @@ title: Verwenden der GraphiQL-IDE in AEM
 description: Erfahren Sie, wie Sie die GraphiQL IDE in Adobe Experience Manager verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 94%
+source-wordcount: '1138'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ Die **GraphiQL** Mit diesem Tool können Sie Ihre GraphQL-Abfragen testen und de
 * Auswahl des **Endpunkts**, der der Sites-Konfiguration entspricht, die Sie für Ihre Abfragen verwenden möchten
 * Direkte Eingabe neuer Abfragen
 * Erstellen und Zugreifen auf **[Persistente Abfragen](/help/headless/graphql-api/persisted-queries.md)**
-* Ausführen von Abfragen mit sofortiger Anzeige der Ergebnisse
+* Führen Sie Ihre Abfragen aus, um die Ergebnisse sofort anzuzeigen
 * Verwalten von **Abfragevariablen**
 * Speichern und Verwalten von **Persistenten Abfragen**
 * **Persistierte Abfragen** entweder in Ihrem **Publish**- oder **Preview**-Service veröffentlichen bzw. die Veröffentlichung aufheben; zum Beispiel in/aus `dev-publish`
@@ -105,7 +105,7 @@ Beispiel:
 >
 >Benutzerdefinierte Neuschreibungsregeln für den Dispatcher können die Standardeinstellungen für AEM Publish überschreiben.
 >
->Falls Sie TTL-basierte Cache-Steuerungs-Header vom Dispatcher senden, die auf einem Muster für Standortübereinstimmungen basieren, sollten Sie gegebenenfalls `/graphql/execute.json/*` aus den Übereinstimmungen ausschließen.
+>Falls Sie TTL-basierte Cache-Control-Header vom Dispatcher basierend auf einem Ortsübereinstimmungsmuster senden, sollten Sie bei Bedarf diese ausschließen `/graphql/execute.json/*` aus den Treffern.
 
 Mit GraphQL können Sie die HTTP-Cache-Header konfigurieren, um diese Parameter für einzelne persistente Abfragen festzulegen.
 

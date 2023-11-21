@@ -2,7 +2,7 @@
 title: OAuth2-Unterstützung für den E-Mail-Service
 description: OAuth2-Unterstützung für den E-Mail-Service in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: ede877212de3394cbdc81e1097d3d6eaf9f390cc
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 98%
@@ -26,7 +26,7 @@ Weitere Informationen zum AEM as a Cloud Service E-Mail-Service finden Sie unter
    ![Starten des App-Registrierungsprozesses](assets/oauth-outlook1.png)
 
 1. Füllen Sie die Informationen entsprechend Ihren Anforderungen aus und klicken Sie dann auf **Registrieren**.
-1. Wechseln Sie zur neu erstellten App und wählen Sie **API-Berechtigungen**.
+1. Wechseln Sie zur erstellten App und wählen Sie **API-Berechtigungen**.
 1. Klicken Sie auf **Berechtigung hinzufügen** > **Diagrammberechtigungen** > **Delegierte Berechtigungen**.
 1. Wählen Sie die folgenden Berechtigungen für Ihre Anwendung aus und klicken Sie dann auf **Berechtigung hinzufügen**:
    * `https://outlook.office.com/SMTP.Send`

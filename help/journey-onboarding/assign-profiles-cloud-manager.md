@@ -4,10 +4,10 @@ description: Auf dieser Seite erfahren Sie, wie Sie Team-Mitglieder den Cloud Ma
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1527'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -181,7 +181,7 @@ Sie können jetzt mit dem Onboarding-Journey fortfahren, indem Sie das Dokument 
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird empfohlen, mit der Onboarding-Tour weiterzumachen, wie zuvor beschrieben. Dies sind einige zusätzliche Ressourcen, wenn Sie einen tiefen Einblick in ein bestimmtes Thema von dieser Journey haben möchten.
+Es wird empfohlen, die Onboarding-Journey wie zuvor beschrieben fortzusetzen. Dies sind einige zusätzliche Ressourcen, wenn Sie einen tiefen Einblick in ein bestimmtes Thema von dieser Journey haben möchten.
 
 * [Einführung in Cloud Manager](/help/onboarding/cloud-manager-introduction.md) - Erfahren Sie mehr über Cloud Manager und Cloud Manager-Programme und -Umgebungen.
 * [Cloud Manager-Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md) - Erfahren Sie mehr über ein AEM as a Cloud Service-Team und Produktprofile.

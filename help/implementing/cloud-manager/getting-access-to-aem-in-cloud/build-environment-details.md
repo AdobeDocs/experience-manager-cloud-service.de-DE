@@ -2,10 +2,10 @@
 title: Build-Umgebung
 description: Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie sie den Code erstellt und testet.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1004'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -157,9 +157,9 @@ Variablennamen müssen die folgenden Konventionen einhalten.
 * Variablen dürfen nur alphanumerische Zeichen und den Unterstrich (`_`) enthalten.
 * Die Namen sollten in Großbuchstaben geschrieben sein.
 * Pro Pipeline sind maximal 200 Variablen zulässig.
-* Jeder Name darf höchstens 99 Zeichen enthalten.
+* Jeder Name darf maximal 100 Zeichen lang sein.
 * Jede `string`-Variable darf höchstens 2047 Zeichen enthalten.
-* Jede Variable vom Typ `secretString` darf höchstens 499 Zeichen enthalten.
+* Jeder `secretString` Der Variablenwert type darf maximal 500 Zeichen enthalten.
 
 Bei Verwendung in einer Maven-`pom.xml`-Datei ist es in der Regel hilfreich, diese Variablen Maven-Eigenschaften mithilfe einer ähnlichen Syntax wie dieser zuzuordnen.
 

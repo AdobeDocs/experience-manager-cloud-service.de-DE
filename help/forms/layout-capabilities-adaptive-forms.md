@@ -2,10 +2,10 @@
 title: Welche Layoutfunktionen bietet Adaptive Forms?
 description: Layout und Darstellung adaptiver Formulare auf verschiedenen Geräten werden von den Layouteinstellungen geregelt. Machen Sie sich mit den verschiedenen Layouts und ihrer Anwendung vertraut.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 80%
+source-wordcount: '860'
+ht-degree: 78%
 
 ---
 
@@ -71,7 +71,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 Mit diesem Layout können Sie die Komponente **[!UICONTROL Bereich für adaptive Formulare]** in einen Bereich mit Navigation im Akkordeonstil einfügen. Mit diesem Layout können Sie außerdem wiederholbare Bereiche erstellen. Wiederholbare Bereiche ermöglichen es Ihnen, Bereiche nach Bedarf hinzuzufügen oder zu entfernen. Sie können dabei festlegen, wie oft sich ein Bereich mindestens oder maximal wiederholen darf. Außerdem kann anhand der in den Bereichselementen angegebenen Informationen der Titel des Bereichs dynamisch festgelegt werden.
 
-Ein Zusammenfassungsausdruck kann verwendet werden, um im Titel des minimierten Bereichs die vom Endbenutzer eingegebenen Werte anzuzeigen.
+Der Zusammenfassungsausdruck kann verwendet werden, um die vom Benutzer im Titel des minimierten Bedienfelds bereitgestellten Werte anzuzeigen.
 
 ![Wiederholbare Bereiche mit Akkordeonlayout in adaptiven Formularen](assets/accordion-layout.png)
 

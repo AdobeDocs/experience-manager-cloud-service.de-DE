@@ -2,10 +2,10 @@
 title: Installieren und Konfigurieren von Playern in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie man Player in Screens as a Cloud Service installiert und konfiguriert.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '582'
-ht-degree: 100%
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+workflow-type: tm+mt
+source-wordcount: '581'
+ht-degree: 98%
 
 ---
 
@@ -53,7 +53,7 @@ Eine einfache Wiedergabe-Überwachung in einem AEM Screens-Player ermöglicht Fo
 
 * Verbessern der Reaktionsfähigkeit auf leere Bildschirme oder fehlerhafte Erlebnisse im Feld.
 
-* Verringerung des Risikos, dem Endbenutzer ein fehlerhaftes Erlebnis anzuzeigen.
+* Verringert das Risiko, dem Benutzer ein fehlerhaftes Erlebnis anzuzeigen.
 
 ### Grundlegendes zu Eigenschaften {#understand-properties}
 

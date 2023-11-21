@@ -11,7 +11,7 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 43220614f567bdfad17c6ac9c8b3adcc856ff044
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 95%
@@ -57,7 +57,7 @@ Befolgen Sie die unter [AEM Projektarchetyp](https://experienceleague.adobe.com/
 ![AEM Commerce-Projekt](../assets/aep-integration/aem-project-with-commerce.png)
 
 
-Erstellen Sie das neu erstellte AEM Commerce-Projekt und stellen Sie es im lokalen AEM SDK bereit, indem Sie den folgenden Befehl im Stammverzeichnis des Projekts ausführen.
+Erstellen Sie das erstellte AEM Commerce-Projekt und stellen Sie es im lokalen AEM SDK bereit, indem Sie den folgenden Befehl im Stammverzeichnis des Projekts ausführen.
 
 ```bash
 $ mvn clean install -PautoInstallSinglePackage
@@ -403,11 +403,11 @@ Führen Sie die folgenden Schritte aus, um einen Datenstrom in Experience Platfo
 
    ![AEP – Datenströme erstellen](../assets/aep-integration/AEP-Datastream-Create.png)
 
-1. Benennen Sie Ihren Datenstrom mithilfe des erforderlichen Feldes __Name__. Unter dem __Ereignisschema__ ein, wählen Sie das neu erstellte Schema und klicken Sie auf __Speichern__.
+1. Benennen Sie Ihren Datenstrom mithilfe des erforderlichen Feldes __Name__. Unter dem __Ereignisschema__ das Feld, wählen Sie das erstellte Schema und klicken Sie auf __Speichern__.
 
    ![AEP – Datenströme definieren](../assets/aep-integration/AEP-Datastream-Define.png)
 
-1. Öffnen Sie den neu erstellten Datenspeicher und klicken Sie auf __Dienst hinzufügen__.
+1. Öffnen Sie den erstellten Datenspeicher und klicken Sie auf __Dienst hinzufügen__.
 
    ![AEP-Datenströme – Service hinzufügen](../assets/aep-integration/AEP-Datastream-Add-Service.png)
 

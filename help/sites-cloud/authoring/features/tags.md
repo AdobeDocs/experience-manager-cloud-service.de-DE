@@ -2,7 +2,7 @@
 title: Verwenden von Tags
 description: Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 93%
@@ -47,7 +47,7 @@ Um vordefinierte Tags anzuwenden, verwenden Sie im Fenster **Seiteneigenschaften
 
 * Einzelne Tags können aktiviert werden.
 
-  Genau wie bei Seiten müssen neu erstellte Tags aktiviert werden, bevor sie in der Veröffentlichungsumgebung verfügbar sind.
+  Wie bei Seiten müssen erstellte Tags aktiviert werden, bevor sie in der Veröffentlichungsumgebung verfügbar sind.
 
 >[!NOTE]
 >

@@ -3,10 +3,10 @@ title: Konfigurieren von Produktions-Pipelines
 description: Erfahren Sie, wie Sie Produktions-Pipelines konfigurieren, um Ihren Code zu erstellen und in Produktionsumgebungen bereitzustellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 79%
+source-wordcount: '1412'
+ht-degree: 77%
 
 ---
 
@@ -19,7 +19,7 @@ Ein Benutzer muss über die Rolle **[Bereitstellungs-Manager](/help/onboarding/c
 
 >[!NOTE]
 >
->Eine Produktions-Pipeline kann erst eingerichtet werden, wenn die Erstellung eines Programms abgeschlossen wurde, das Git-Repository über mindestens eine Verzweigung verfügt und ein Satz aus Produktions- und Staging-Umgebung erstellt wurde.
+>Eine Produktions-Pipeline kann erst eingerichtet werden, wenn die Programmerstellung abgeschlossen ist, ein Git-Repository über mindestens eine Verzweigung verfügt und ein Satz aus Produktions- und Staging-Umgebung erstellt wird.
 
 Bevor Sie Code bereitstellen, müssen Sie Ihre Pipeline-Einstellungen über den [!UICONTROL Cloud Manager] konfigurieren.
 

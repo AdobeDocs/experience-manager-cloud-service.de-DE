@@ -2,10 +2,10 @@
 title: Bearbeiten von Programmen
 description: Erfahren Sie, wie Sie Ihre Produktions- und Sandbox-Programme bearbeiten, um ihre Optionen nach der Erstellung anzupassen.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 44%
+source-wordcount: '506'
+ht-degree: 45%
 
 ---
 
@@ -57,7 +57,7 @@ Sie müssen Mitglied der Rolle **Geschäftsinhaber** sein, um Programme bearbeit
 
    ![Sicherheitseinstellungen bearbeiten](assets/edit-program-security.png)
 
-   * HIPAA kann nicht aktiviert oder deaktiviert werden nach [Programmerstellung.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+   * HIPAA kann nach [Programmerstellung.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
       * Hier finden Sie [weitere Informationen](https://www.adobe.com/go/hipaa-ready) zur Implementierung der HIPAA-fähigen Lösung von Adobe.
    * Nach der Aktivierung kann der WAF-DDOS-Schutz konfiguriert werden, indem eine [produktionsfremde Pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 

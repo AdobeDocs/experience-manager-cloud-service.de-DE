@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '4176'
-ht-degree: 100%
+source-wordcount: '4175'
+ht-degree: 99%
 
 ---
 
@@ -378,7 +378,7 @@ Die vorhandene Schnellansichtsimplementierung stellt normalerweise eine Kette vo
 1. Die Backend-Logik gibt dem Frontend-Code die entsprechenden Schnellansichtsdaten oder -inhalte zurück.
 1. Der Frontend-Code lädt die Schnellansichtsdaten oder -inhalte.
 1. Optional wandelt der Frontend-Code die geladenen Schnellansichtsdaten in eine HTML-Darstellung um.
-1. Der Frontend-Code zeigt ein modales Dialogfeld an und rendert den HTML-Inhalt auf dem Bildschirm für den Endbenutzer.
+1. Der Frontend-Code zeigt ein modales Dialogfeld oder Bedienfeld an und rendert den HTML-Inhalt auf dem Bildschirm für den Benutzer.
 
 Diese Aufrufe stellen möglicherweise keine unabhängigen öffentlichen API-Aufrufe dar, die durch die Website-Logik in einem beliebigen Schritt aufgerufen werden können. Vielmehr handelt es sich um einen verketteten Aufruf, in dem der jeweils nächste Schritte in der letzten Phase (Callback) des vorherigen Schritts ausgeblendet ist.
 

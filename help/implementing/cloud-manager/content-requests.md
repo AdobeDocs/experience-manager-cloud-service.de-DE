@@ -2,9 +2,9 @@
 title: Grundlegendes zu Cloud Service-Inhaltsanforderungen
 description: Wenn Sie Lizenzen für Inhaltsanforderungen von Adobe erworben haben, erfahren Sie mehr über die Arten von Inhaltsanforderungen, die Adobe Experience Cloud as a Service misst, und über die Abweichungen mit den Analytics-Reporting-Tools eines Unternehmens.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1160'
 ht-degree: 10%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 10%
 
 ## Varianzen von Inhaltsanforderungen von Cloud Services{#content-requests-variances}
 
-Inhaltsanforderungen können Abweichungen von den Analytics-Reporting-Tools eines Unternehmens aufweisen, wie in der folgenden Tabelle zusammengefasst. Im Allgemeinen können Analytics-Tools Daten mithilfe Client-seitiger Instrumentierung erfassen <b>darf nicht angewendet werden</b> um über die Anzahl der Inhaltsanfragen für eine bestimmte Site zu berichten, einfach weil sie häufig davon abhängen, dass die Endnutzerzustimmung ausgelöst wird, sodass sie bei einem erheblichen Teil des Traffics fehlen. Analytics-Tools, die Daten Server-seitig in Protokolldateien sammeln, oder CDN-Berichte für Kunden, die zusätzlich zu AEM as a Cloud Service ihr eigenes CDN hinzufügen, bieten bessere Zählungen. Für die Berichterstellung über Seitenansichten und die damit verbundene Leistung ist der Adobe RUM-Datendienst die Adobe empfohlene Option.
+Inhaltsanforderungen können Abweichungen von den Analytics-Reporting-Tools eines Unternehmens aufweisen, wie in der folgenden Tabelle zusammengefasst. Im Allgemeinen können Analytics-Tools Daten mithilfe Client-seitiger Instrumentierung erfassen <b>darf nicht angewendet werden</b> um über die Anzahl der Inhaltsanfragen für eine bestimmte Site zu berichten, einfach weil sie häufig davon abhängen, dass die Benutzerzustimmung ausgelöst wird, sodass sie bei einem erheblichen Teil des Traffics fehlen. Analytics-Tools, die Daten Server-seitig in Protokolldateien sammeln, oder CDN-Berichte für Kunden, die zusätzlich zu AEM as a Cloud Service ihr eigenes CDN hinzufügen, bieten bessere Zählungen. Für die Berichterstellung über Seitenansichten und die damit verbundene Leistung ist der Adobe RUM-Datendienst die Adobe empfohlene Option.
 
 | Grund für die Abweichung | Erklärung |
 |---|---|
-| Zustimmung des Endbenutzers | Analytics-Tools, die auf clientseitige Instrumente angewiesen sind, hängen häufig davon ab, dass die Zustimmung des Endbenutzers ausgelöst wird. Dies könnte den Großteil des Traffics ausmachen, der nicht verfolgt wird. Kunden, die Inhaltsanfragen allein messen möchten, sollten sich auf Analytics-Tools verlassen, die Daten Server-seitig oder CDN-Berichte erfassen. |
+| Zustimmung des Endbenutzers | Analytics-Tools, die auf clientseitige Instrumente angewiesen sind, hängen häufig davon ab, dass die Benutzerzustimmung ausgelöst wird. Dies könnte den Großteil des Traffics ausmachen, der nicht verfolgt wird. Kunden, die Inhaltsanfragen allein messen möchten, sollten sich auf Analytics-Tools verlassen, die Daten Server-seitig oder CDN-Berichte erfassen. |
 | Tagging | Alle Seiten oder API-Aufrufe, die als Adobe Experience Manager (AEM)-Inhaltsanfragen verfolgt werden, werden möglicherweise nicht mit Analytics-Tracking getaggt. |
 | Tag-Management-Regeln | Die Einstellungen von Tag-Management-Regeln können zu verschiedenen Datenerfassungskonfigurationen auf einer Seite führen, was zu einigen Kombinationen von Diskrepanzen beim Tracking von Inhaltsanforderungen führt. |
 | Bots | Unbekannte Bots, die nicht vorab identifiziert und von AEM entfernt wurden, können zu Tracking-Diskrepanzen führen. |

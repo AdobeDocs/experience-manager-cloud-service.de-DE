@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2022.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2022.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 59%
+source-wordcount: '623'
+ht-degree: 55%
 
 ---
 
@@ -67,7 +67,7 @@ Sehen Sie sich das Video Versionsübersicht vom August 2022 an, um eine Zusammen
 
    * Verwenden von statischen Vorlagen: Benutzende, die bereits ältere statische Vorlagen erstellt haben, können ihre Umstellung auf die Cloud fortsetzen, indem sie statische Vorlagen im Assistenten zur Erstellung adaptiver Formulare verwenden. Dadurch erhalten die Benutzenden zusätzliche Zeit, um alte statische Vorlagen in moderne bearbeitbare Vorlagen zu migrieren.
 
-* [Entfernen ausgeblendeter Felder aus einem Datensatzdokument (DoR) während der Server-seitigen Verarbeitung](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): Sie können für Endbenutzende eine PDF-Datei aus Datensatzdokumenten generieren, die nur die Felder enthält, die für sie während der Datenerfassung sichtbar waren. Bei der Formularübermittlung überprüft der Server basierend auf gesendeten Daten, welche Felder für den Endbenutzenden ausgeblendet wurden, und schließt sie aus dem Datensatzdokument aus, um Konsistenz zu gewährleisten.
+* [Entfernen ausgeblendeter Felder aus einem Datensatzdokument (DoR) während der Server-seitigen Verarbeitung](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): Sie können für Endbenutzende eine PDF-Datei aus Datensatzdokumenten generieren, die nur die Felder enthält, die für sie während der Datenerfassung sichtbar waren. Bei der Formularübermittlung überprüft der Server, welche Felder dem Benutzer basierend auf den gesendeten Daten ausgeblendet wurden, und schließt sie aus dem Datensatzdokument aus, um Konsistenz zu gewährleisten.
 
 ## CIF-Add-on {#cloud-services-cif}
 

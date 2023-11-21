@@ -2,7 +2,7 @@
 title: Entwickeln einer benutzerdefinierten Komponente für Screens as a Cloud Service
 description: Das folgende Tutorial führt Sie durch die Schritte zum Erstellen einer benutzerdefinierten Komponente für AEM Screens. AEM Screens verwendet viele vorhandene Design-Muster und Technologien anderer AEM-Produkte. Das Tutorial hebt Unterschiede und besondere Überlegungen bei der Entwicklung für AEM Screens hervor.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 97%
@@ -423,7 +423,7 @@ Die Komponente „Hello World“ ist für die Verwendung in einem Sequenzkanal v
 
    Design-Konfiguration mit Verweis auf /apps/settings/wcm/designs/we-retail-run
 
-1. Bearbeiten Sie den neu erstellten inaktiven Kanal, damit Sie ihn öffnen können.
+1. Bearbeiten Sie den erstellten inaktiven Kanal, damit Sie ihn öffnen können.
 
 1. Schalten Sie den Seitenmodus in den Modus **Design** um.
 

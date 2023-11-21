@@ -2,10 +2,10 @@
 title: Experience Audit-Dashboard
 description: Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die bereitgestellten Änderungen über eine klare, informative Dashboard-Oberfläche den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 23%
+source-wordcount: '830'
+ht-degree: 22%
 
 ---
 
@@ -16,7 +16,7 @@ Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und s
 
 >[!NOTE]
 >
->Diese Funktion steht nur für [das Programm für den frühen Anwender.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>Diese Funktion ist nur für das [Early-Adopter-Programm](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) verfügbar.
 >
 >Weitere Informationen zur vorhandenen Funktion &quot;Erlebnisprüfung&quot;für AEM as a Cloud Service finden Sie unter [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
 
@@ -28,7 +28,7 @@ Experience Audit ist eine Funktion, die in Cloud Manager Sites-Produktions-Pipel
 
 1. Führen Sie keine Regressionen ein.
 
-Experience Audit in Cloud Manager stellt sicher, dass das Erlebnis der Endbenutzenden auf der Site höchsten Standards entspricht.
+Experience Audit in Cloud Manager stellt sicher, dass das Benutzererlebnis auf der Site höchsten Standards entspricht.
 
 Die Ergebnisse des Audits sind rein informativ und ermöglichen es dem Bereitstellungs-Manager, die Bewertungen sowie die Unterschiede zwischen aktuellen und vorherigen Bewertungen anzuzeigen. Diese Erkenntnis ist wertvoll, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wurde.
 

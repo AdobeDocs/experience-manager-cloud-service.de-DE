@@ -2,10 +2,10 @@
 title: Bearbeiten einer externen SPA in AEM
 description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenständigen SPA in eine AEM-Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren des Authoring beschrieben.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2418'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -111,7 +111,7 @@ In diesem Beispiel wird `ModelManager` initialisiert und ein leerer `ModelStore`
 
    ![Eigenschaften von Textkomponenten](assets/external-spa-text-properties.png)
 
-   Diese Werte werden als Eigenschaften an die neu erstellte React-Komponente `AEMText` übergeben und können zum Rendern des Inhalts verwendet werden.
+   Diese Werte werden als Eigenschaften an die erstellte `AEMText` React-Komponente und kann zum Rendern des Inhalts verwendet werden.
 
    ```javascript
    import React from 'react';
@@ -343,7 +343,7 @@ Um die Bearbeitung in AEM für diese Beispiel-SPA zu aktivieren, sind die folgen
 
 1. Fügen Sie Helfer innerhalb des SPA-Routings hinzu.
 
-   * Die neu erstellte Seite kann den erwarteten Inhalt noch nicht in AEM rendern. Dies liegt daran, dass der Router den Pfad `/test` erwartet, während der aktive Pfad in AEM `/wknd-spa-react/us/en/test` ist. Um den AEM-spezifischen Teil der URL aufzunehmen, müssen wir einige Helfer auf der SPA Seite hinzufügen.
+   * Die erstellte Seite kann den erwarteten Inhalt noch nicht in AEM rendern. Dies liegt daran, dass der Router den Pfad `/test` erwartet, während der aktive Pfad in AEM `/wknd-spa-react/us/en/test` ist. Um den AEM-spezifischen Teil der URL aufzunehmen, müssen wir einige Helfer auf der SPA Seite hinzufügen.
 
    ![Routing-Helfer](assets/external-spa-router-helper.png)
 
@@ -356,7 +356,7 @@ Um die Bearbeitung in AEM für diese Beispiel-SPA zu aktivieren, sind die folgen
 
 1. Überprüfen Sie die Bearbeitung der Seite in AEM.
 
-   * Stellen Sie das Projekt AEM bereit und navigieren Sie zur neu erstellten `test` Seite. Der Seiteninhalt wird jetzt gerendert und die AEM-Komponenten können bearbeitet werden.
+   * Stellen Sie das Projekt zur AEM bereit und navigieren Sie zum erstellten . `test` Seite. Der Seiteninhalt wird jetzt gerendert und die AEM-Komponenten können bearbeitet werden.
 
 ## Framework-Einschränkungen {#framework-limitations}
 

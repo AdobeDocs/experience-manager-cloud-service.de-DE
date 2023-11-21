@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service – Team- und Produktprofile
 description: Erfahren Sie, wie Sie über AEM as a Cloud Service Team- und Produktprofile erstellen und den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren oder einschränken.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 85%
+source-wordcount: '847'
+ht-degree: 81%
 
 ---
 
@@ -42,7 +42,7 @@ Ihre AEM as a Cloud Service-Team-Mitglieder werden während des Onboardings übe
 
 >[!TIP]
 >
->* Weitere Informationen zu AEM-Produktprofilen finden Sie unter [Zuweisen von AEM-Produktprofilen](/help/journey-onboarding/assign-profiles-aem.md).
+>* Weitere Informationen zu AEM Produktprofilen finden Sie unter [Zuweisen AEM Produktprofilen](/help/journey-onboarding/assign-profiles-aem.md).
 >* Weitere Informationen zum Onboarding-Prozess finden Sie in der [Onboarding-Tour](/help/journey-onboarding/overview.md).
 
 ## Cloud Manager-Produktprofile {#cloud-manager-product-profiles}

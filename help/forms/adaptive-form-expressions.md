@@ -1,10 +1,10 @@
 ---
 title: Was sind adaptive Formularausdrücke?
 description: Verwenden Sie adaptive Formularausdrücke, um automatische Überprüfung und Berechnung hinzuzufügen sowie die Sichtbarkeit eines Abschnitts zu aktivieren oder zu deaktivieren.
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2698'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -121,7 +121,7 @@ Der Zusammenfassungsausdruck wird in der Regel für das Wiederholen von untergeo
 
 **Rückgabetyp**: Der Ausdruck gibt eine Zeichenfolge zurück, die zum Titel des Akkordeons wird.
 
-**Beispiel**: „Kontonummer : “ + textbox1.value
+**Beispiel:** „Kontonummer: “ + textbox1.value
 
 ### Ausdruck für die Überprüfung {#validate-expression}
 
@@ -187,7 +187,7 @@ Die Methoden zum Hinzufügen von Überprüfungen zu einem Feld sind:
 
 ### Erforderlich {#required}
 
-Um eine Komponente als obligatorisch festzulegen, können Sie im Dialogfeld **Bearbeiten** der Komponente die Option **Titel und Text > Erforderlich** auswählen. Sie können auch eine entsprechende Meldung hinzufügen, dass die jeweilige Komponente erforderlich ist (optional).
+Um eine Komponente als obligatorisch festzulegen, können Sie im Dialogfeld **Bearbeiten** der Komponente die Option **Titel und Text > Erforderlich** auswählen. Sie können auch die entsprechende erforderliche Nachricht hinzufügen (optional).
 
 ### Überprüfungsmuster {#validation-patterns}
 
@@ -205,7 +205,7 @@ Das Anzeigeformat kann verwendet werden, um die Daten in verschiedenen Formaten 
 
 ### GuideBridge – APIs und Ereignisse {#guidebridge-apis-and-events}
 
-GuideBridge ist eine Sammlung von APIs, die für die Interaktion mit adaptiven Formularen im Speichermodell eines Browsers verwendet werden können. Eine ausführliche Einführung in die API, die Klassenmethoden, und die bereitgestellten Ereignisse in Guide Bridge finden Sie in der [JavaScript™ Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/de/aem-forms/6/javascript-api/).
+GuideBridge ist eine Sammlung von APIs, die zur Interaktion mit Adaptive Forms im Speichermodell in einem Browser verwendet werden können. Eine ausführliche Einführung in die API, die Klassenmethoden, und die bereitgestellten Ereignisse in Guide Bridge finden Sie in der [JavaScript™ Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/de/aem-forms/6/javascript-api/).
 
 >[!NOTE]
 >

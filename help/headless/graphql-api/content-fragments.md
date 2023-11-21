@@ -3,7 +3,7 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '4923'
 ht-degree: 94%
@@ -499,7 +499,7 @@ Die folgenden Operatoren können verwendet werden, um Felder mit einem bestimmte
 | `AFTER` | `Calendar`, `Date`, `Time` | ... der durch den Wert angegebene Zeitpunkt nach dem durch den Feldinhalt angegebenen Zeitpunkt liegt |
 | `AT_OR_AFTER` | `Calendar`, `Date`, `Time` | ... der durch den Wert angegebene Zeitpunkt nach oder am selben durch den Feldinhalt angegebenen Zeitpunkt liegt |
 
-Einige Typen ermöglichen es auch, zusätzliche Optionen anzugeben, mithilfe derer die Auswertung eines Ausdrucks geändert werden kann:
+Bei einigen Typen können Sie auch zusätzliche Optionen angeben, mithilfe derer die Auswertung eines Ausdrucks geändert werden kann:
 
 | Option | Typ(en) | Beschreibung |
 |--- |--- |--- |

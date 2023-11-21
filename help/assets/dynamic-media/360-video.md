@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 95%
+source-wordcount: '988'
+ht-degree: 93%
 
 ---
 
@@ -59,14 +59,16 @@ Beim Hochladen in [!DNL Experience Manager] werden 360-Grad-Video-Assets wie nor
 
       * 1080p – 1920 x 1080 (Full HD- oder FHD-Auflösung) oder
       * 2160p – 3840 x 2160 (4K-, UHD- oder Ultra HD-Auflösung). Diese hohe Auflösung ist häufig auf Premium-Fernsehgeräten und Computer-Monitoren verfügbar. Die 2160p-Auflösung wird häufig als „4K“ bezeichnet, da die Breite fast 4000 Pixel beträgt. Das heißt, sie bietet viermal so viele Pixel wie 1080p.
+
    * [Erstellen Sie ein benutzerdefiniertes adaptives Videoprofil](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) mit hochwertigeren Ausgabedarstellungen. Angenommen, Sie können ein adaptives Videoprofil erstellen, das diese drei Einstellungen enthält:
 
       * Breite=automatisch; Höhe = 720; Bitrate = 2500 Kbit/s
       * Breite=automatisch; Höhe = 1080; Bitrate = 5000 Kbit/s
       * Breite=automatisch; Höhe = 1440; Bitrate = 6600 Kbit/s
+
    * Verarbeiten Sie 360-Grad-Videoinhalte in einem Ordner, der ausschließlich 360-Grad-Video-Assets enthält.
 
-   Dieser Ansatz stellt höhere Anforderungen an das Netzwerk und die CPU des Endbenutzers.
+   Dieser Ansatz stellt höhere Anforderungen an das Netzwerk und die CPU des Benutzers.
 
 1. [Laden Sie Ihr Video in den Ordner hoch](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
@@ -124,7 +126,8 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-medi
 
    * Wählen Sie in der Viewer-Liste **[!UICONTROL Video360VR]** aus.
 
-      Virtual Reality (VR)-Videos sind interaktive Videoinhalte, die über Virtual-Reality-Headsets angezeigt werden. Wie bei herkömmlichen Videos erstellen Sie VR-Videos zu Beginn, wenn ein Video aufgezeichnet wird, nur mit 360-Grad-Videokameras.
+     Virtual Reality (VR)-Videos sind interaktive Videoinhalte, die über Virtual-Reality-Headsets angezeigt werden. Wie bei herkömmlichen Videos erstellen Sie VR-Videos zu Beginn, wenn ein Video aufgezeichnet wird, nur mit 360-Grad-Videokameras.
+
    ![Benutzer-Screenshot, auf dem der Mauszeiger über der Viewer-Option für Video360VR ist.](assets/6_5_360video-preview-video360vr.png)
    *Screenshot eines 360-Grad-VR-Videos.*
 

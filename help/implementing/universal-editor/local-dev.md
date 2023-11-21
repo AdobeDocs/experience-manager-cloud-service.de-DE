@@ -2,9 +2,9 @@
 title: Lokale AEM mit dem universellen Editor
 description: Erfahren Sie, wie der universelle Editor die Bearbeitung lokaler AEM-Instanzen zu Entwicklungszwecken unterstützt.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ In diesem Dokument wird beschrieben, wie Sie AEM in HTTPS zusammen mit einer lok
 
 ## Einrichten von AEM für die Ausführung auf HTTPS {#aem-https}
 
-Innerhalb eines mit HTTPS gesicherten äußeren Rahmens kann kein unsicherer HTTP-Frame geladen werden. Der Universal Editor-Dienst wird unter HTTPS ausgeführt, weshalb AEM oder jede andere Remote-Seite auch unter HTTPS ausgeführt werden muss.
+Innerhalb eines äußeren Rahmens, der mit HTTPS gesichert ist, kann kein unsicherer HTTP-Frame geladen werden. Der Universal Editor-Dienst wird unter HTTPS ausgeführt, weshalb AEM oder jede andere Remote-Seite auch unter HTTPS ausgeführt werden muss.
 
 Dazu müssen Sie AEM für die Ausführung auf HTTPS einrichten. Zu Entwicklungszwecken können Sie ein selbstsigniertes Zertifikat verwenden.
 

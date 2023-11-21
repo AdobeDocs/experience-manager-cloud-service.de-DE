@@ -2,10 +2,10 @@
 title: Wie können Metadaten für AEM Forms verwaltet werden?
 description: Metadaten ermöglichen eine einfachere Kategorisierung und Organisation der Assets und erleichtern Benutzern die Suche nach einem bestimmten Asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1743'
-ht-degree: 96%
+source-wordcount: '1742'
+ht-degree: 94%
 
 ---
 
@@ -140,7 +140,7 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
      <li>HTML</li> 
      <li>PDF</li> 
      <li>Beide</li> 
-    </ul> <p>Mit dieser Option wird das Renderformat der Formulare nur im Formularportal eingeschränkt, wo sie für die Endbenutzenden sichtbar sind.</p> </td> 
+    </ul> <p>Mit dieser Option wird das Renderformat der Formulare nur im Forms Portal eingeschränkt, wo sie für den Benutzer sichtbar sind.</p> </td> 
   </tr> 
   <tr> 
    <td>Tags</td> 

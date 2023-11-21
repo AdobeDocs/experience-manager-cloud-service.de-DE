@@ -2,10 +2,10 @@
 title: Verweis auf die ContextHub-JavaScript-API
 description: Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die ContextHub-Komponente zur Seite hinzugefügt wurde.
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '4612'
-ht-degree: 99%
+source-wordcount: '4613'
+ht-degree: 98%
 
 ---
 
@@ -219,7 +219,7 @@ Ruft die Schlüssel aus dem Store ab. Optional können Sie die Schlüssel abrufe
 
 ##### Parameter {#parameters-getkeys}
 
-* **`includeInternals`:** Der Wert `true` umfasst intern verwendete Schlüssel in den Ergebnissen. Diese Schlüssel beginnen mit einem Unterstrich (`_`). Der Standardwert ist `false`.
+* **`includeInternals`:** Ein Wert von `true` enthält intern verwendete Schlüssel in die Ergebnisse. Diese Schlüssel beginnen mit einem Unterstrich (`_`). Der Standardwert ist `false`.
 
 ##### Rückgabe {#returns-getkeys}
 
@@ -856,7 +856,7 @@ Eine Kopie des Baums, der bereinigt wird.
 
 #### getItem() {#getitem}
 
-Ruft den Wert eines Objekts für den a-Schlüssel ab.
+Ruft den Wert aus einem Objekt für den Schlüssel ab.
 
 ##### Parameter {#parameters-getitem-2}
 

@@ -3,10 +3,10 @@ title: Wie kann ich adaptive Formularfelder vorbefüllen?
 description: Verwenden Sie vorhandene Daten, um Felder eines adaptiven Formulars vorab auszufüllen. Benutzer können grundlegende Informationen in einem Formular vorab ausfüllen, indem sie sich mit ihren sozialen Profilen anmelden.
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: ebb77adfc97c805383de660d238e04a2173122b7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 95%
+source-wordcount: '2041'
+ht-degree: 94%
 
 ---
 
@@ -261,7 +261,7 @@ Im Allgemeinen werden gebundene (Formularschema) und ungebundene Felder im selbe
 
 >[!NOTE]
 >
-> Generell sollten Sie keine gebundenen und ungebundenen Felder mischen, wenn sich diese in Daten überschneiden, die vom Benutzer in ungebundenen Feldern eingegeben werden. Wenn möglich, sollten Sie das XML-Schema oder die XFA-Formularvorlage ändern und einen Eintrag für ungebundene Felder hinzufügen, sodass diese auch gebunden werden und ihre Daten wie andere Felder in den übermittelten Daten verfügbar sind.
+> Mischen Sie grundsätzlich keine gebundenen und ungebundenen Felder, wenn sie sich in vom Benutzer in ungebundenen Feldern ausgefüllten Daten überschneiden. Wenn möglich, sollten Sie das XML-Schema oder die XFA-Formularvorlage ändern und einen Eintrag für ungebundene Felder hinzufügen, sodass diese auch gebunden werden und ihre Daten wie andere Felder in den übermittelten Daten verfügbar sind.
 
 ## Unterstützte Protokolle zum Vorbefüllen von Benutzerdaten {#supported-protocols-for-prefilling-user-data}
 

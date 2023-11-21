@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1436'
-ht-degree: 94%
+source-wordcount: '1435'
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 ### Neue Funktionen {#what-is-new-junecm}
 
-* Der Vorschau-Service wird fortlaufend für alle Programme bereitgestellt. Kunden werden im Produkt benachrichtigt, wenn ihr Programm für den Vorschaudienst aktiviert ist. Siehe [Zugriff auf den Vorschaudienst](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) für weitere Details.
+* Der Vorschau-Service wird fortlaufend für alle Programme bereitgestellt. Kundinnen und Kunden werden im Produkt benachrichtigt, wenn ihr Programm für den Vorschau-Service aktiviert ist. Weitere Informationen finden Sie unter [Zugriff auf den Vorschau-Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 * Maven-Abhängigkeiten, die während des Build-Schritts heruntergeladen wurden, werden jetzt zwischen Pipeline-Ausführungen zwischengespeichert. Diese Funktion wird in den nächsten Wochen für Kunden aktiviert.
 
@@ -60,15 +60,15 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 * Die Qualitätsregel `ImmutableMutableMixCheck` wurde aktualisiert, um `/oak:index`-Knoten als unveränderlich zu klassifizieren.
 
-* Die Qualitätsregeln `CQBP-84` und `CQBP-84--dependencies` wurden in einer einzigen Regel zusammengefasst. Im Rahmen dieser Konsolidierung werden beim Überprüfen von Abhängigkeiten Probleme in Abhängigkeiten von Drittanbietern, die zur AEM Laufzeit bereitgestellt werden, genauer identifiziert.
+* Die Qualitätsregeln `CQBP-84` und `CQBP-84--dependencies` wurden in einer einzigen Regel zusammengefasst. Im Rahmen dieser Konsolidierung werden beim Scannen von Abhängigkeiten Probleme in Abhängigkeiten von Drittanbietern, die in der AEM-Laufzeit bereitgestellt werden, genauer identifiziert.
 
 * Um Verwirrung zu vermeiden, wurden die Segmentzeilen „AEM veröffentlichen“ und „Dispatcher veröffentlichen“ auf der Seite „Umgebungsdetails“ konsolidiert.
 
   ![Dispatcher-Umgebungen](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
-* Es wurde eine neue Code-Qualitätsregel hinzugefügt, um die Struktur von `damAssetLucene` -Indizes zu überprüfen. Siehe [Benutzerdefinierte DAM Asset Lucene Oak-Indizes](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) für weitere Details.
+* Es wurde eine neue Code-Qualitätsregel hinzugefügt, um die Struktur von `damAssetLucene`-Indizes zu überprüfen. Weitere Informationen finden Sie unter [Benutzerdefinierte DAM-Asset Lucene-Oak-Indizes](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check).
 
-* Auf der Seite „Umgebungsdetails“ werden jetzt mehrere Domain-Namen für Veröffentlichungs- und Vorschau-Services angezeigt (sofern zutreffend). Siehe [Umgebungsdetails](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) für weitere Details.
+* Auf der Seite „Umgebungsdetails“ werden jetzt mehrere Domain-Namen für Publishing- und Vorschau-Services angezeigt (sofern zutreffend). Weitere Informationen finden Sie unter [Umgebungsdetails](/help/implementing/cloud-manager/manage-environments.md#viewing-environment).
 
 ### Fehlerbehebungen {#bug-fixes-junecm}
 
@@ -102,7 +102,7 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 * Die Anzeigeeinstellungen wurden verbessert, sodass Benutzer eine Standardansicht und einen standardmäßigen Sortierparameter wählen können.
 * Die Funktion für den Linkshare-Download verwendet asynchrone Downloads, die die Download-Geschwindigkeit erhöhen.
 * Benutzer können die Ordner anhand von Eigenschaftsprädikaten suchen und filtern.
-* [!DNL Experience Manager Assets] bettet den PDF-Viewer, der von [!DNL Adobe Document Cloud] bereitgestellt wird, ein, um die unterstützten Dokumente in der Vorschau anzuzeigen. Mit dieser Funktion können Benutzer eine Vorschau von PDF- und anderen mehrseitigen Dateien ohne komplexe Verarbeitung anzeigen. Dadurch wird die Funktionsparität mit [!DNL Experience Manager] 6.5 verbessert.
+* [!DNL Experience Manager Assets] bettet den PDF-Viewer ein, der von [!DNL Adobe Document Cloud] , um eine Vorschau der unterstützten Dokumente anzuzeigen. Mit dieser Funktion können Benutzer eine Vorschau von PDF- und anderen mehrseitigen Dateien ohne komplexe Verarbeitung anzeigen. Dadurch wird die Funktionsparität mit [!DNL Experience Manager] 6.5 verbessert.
 
 ### Fehlerbehebungen in [!DNL Assets] {#bugs-fixed-assets}
 

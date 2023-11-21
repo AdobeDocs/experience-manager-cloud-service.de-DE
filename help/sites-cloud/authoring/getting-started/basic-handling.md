@@ -2,10 +2,10 @@
 title: Grundlegende Handhabung
 description: Machen Sie sich mit der Navigation in AEM und seiner grundlegenden Verwendung vertraut
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2943'
-ht-degree: 91%
+source-wordcount: '2945'
+ht-degree: 90%
 
 ---
 
@@ -232,7 +232,7 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 
 In der [Kartenansicht](#card-view) sind bestimmte Aktionen sowohl als Schnellaktionssymbole als auch auf der Symbolleiste vorhanden. Schnellaktionssymbole sind jeweils nur für ein Element verfügbar, sodass Sie keine Vorauswahl treffen müssen.
 
-Die Schnellaktionen sind sichtbar, wenn Sie den Mauszeiger (auf Desktop-Geräten) über eine Ressourcenkarte bewegen. Die verfügbaren Schnellaktionen können von der Konsole und dem Kontext abhängen. Hier finden Sie beispielsweise die Schnellaktionen für eine Seite in der **Sites**-Konsole:
+Die Schnellaktionen sind sichtbar, wenn Sie mit dem Mauszeiger über eine Ressourcenkarte (Desktop-Gerät) fahren. Die verfügbaren Schnellaktionen können von der Konsole und dem Kontext abhängen. Hier finden Sie beispielsweise die Schnellaktionen für eine Seite in der **Sites**-Konsole:
 
 ![Zusätzliche Optionen](/help/sites-cloud/authoring/assets/quick-actions.png)
 
@@ -367,7 +367,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
    * **Veröffentlicht** – Veröffentlichungsstatus
    * **Vorschau** – Vorschaustatus
    * **Vorlage** – Vorlage, auf der die Seite basiert
-   * **Workflow** – Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darauf bewegen oder die Zeitleiste öffnen.
+   * **Workflow** – Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darauf bewegen oder die Timeline öffnen.
    * **Seiten-Analytik**
    * **Unique Visitors**
    * **Zeit auf Seite**

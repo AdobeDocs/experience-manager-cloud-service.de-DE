@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2535'
 ht-degree: 99%
@@ -57,7 +57,7 @@ Klonen Sie das [Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) un
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. Fügen Sie die erforderlichen OSGi-Konfigurationen hinzu, damit Sie Ihre AEM-Instanz mit einer Adobe Commerce-Instanz verbinden oder die Konfigurationen zum neu erstellten Projekt hinzufügen können.
+1. Fügen Sie die erforderlichen OSGi-Konfigurationen hinzu, damit Sie Ihre AEM-Instanz mit einer Adobe Commerce-Instanz verbinden oder die Konfigurationen zum erstellten Projekt hinzufügen können.
 
 1. An diesem Punkt sollten Sie über eine funktionierende Version einer Storefront verfügen, die mit einer Adobe Commerce-Instanz verbunden ist. Navigieren Sie zur Seite `US` > `Home` unter: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 

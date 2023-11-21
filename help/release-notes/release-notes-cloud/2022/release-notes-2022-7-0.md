@@ -2,7 +2,7 @@
 title: Versionshinweise für Version 2022.7.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2022.7.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 27%
@@ -39,7 +39,7 @@ Sehen Sie sich das Video Versionsübersicht vom Juli 2022 an, um eine Zusammenfa
 
 * Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) unterstützt jetzt [Tastaturbefehle](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
-* AEM als Cloud Service [Web-optimierte Bildbereitstellung](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=de) ermöglicht eine deutliche Verbesserung der Seitengeschwindigkeit durch die Bereitstellung von Formaten wie WebP. Dieser neue Dienst bietet außerdem flexiblere Optionen zur Größenanpassung und Umwandlung von Bildern. Alle Versionen der [Kernbildkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de) ermöglichen die Verwendung dieses Dienstes und die Bereitstellung von Bildern als WebP durch Klicken auf eine Option in der Richtlinie der Bildkomponente.
+* AEM als Cloud Service [Web-optimierte Bildbereitstellung](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=de) ermöglicht eine deutliche Verbesserung der Seitengeschwindigkeit durch die Bereitstellung von Formaten wie WebP. Dieser neue Dienst bietet außerdem flexiblere Optionen zur Größenanpassung und Umwandlung von Bildern. Alle Versionen der [Kernbildkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de) Sie können diesen Dienst verwenden und Bilder per Klick auf eine Option in der Richtlinie der Bildkomponente als WebP bereitstellen.
 
 * AEM Personalisierungsaktivitäten können jetzt Erlebnisfragmente anstelle unserer veralteten Angebote verwenden. Diese Funktion:
    * ermöglicht einen Migrationspfad, bei dem AEM Inhalt anstelle von Legacy-Bibliotheksangeboten Erlebnisfragmentangebote weiterleiten würde, um entsprechend formatierten Inhalt bereitzustellen, der künftig mit der Personalisierung skaliert übereinstimmt.

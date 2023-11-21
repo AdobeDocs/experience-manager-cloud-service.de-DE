@@ -2,10 +2,10 @@
 title: Wie generieren Sie ein Datensatzdokument für Adaptive Forms?
 description: Erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument (DoR) für adaptive Forms-Kernkomponenten generieren.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '3107'
-ht-degree: 95%
+source-wordcount: '3106'
+ht-degree: 93%
 
 ---
 
@@ -44,7 +44,7 @@ Laden Sie Ihre XFA-Vorlage (XDP-Datei) in Ihre AEM Forms-Instanz hoch. Führen S
 1. Wählen Sie auf der Registerkarte „Formularmodell“ im Abschnitt „Konfiguration der Datensatzdokument-Vorlagenkonfiguration“ die Option **Formularvorlage als Datensatzdokument-Vorlage zuordnen**. Bei Auswahl dieser Option werden alle auf Ihrem Computer verfügbaren XFA-Vorlagen (XDP-Dateien) angezeigt. Wählen Sie die entsprechende Datei aus. Stellen Sie außerdem sicher, dass dasselbe Schema (Datenschema) für das adaptive Formular und die ausgewählte XFA-Vorlage (XDP-Datei) verwendet wird.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
-Ihr adaptives Formular ist jetzt so konfiguriert, dass eine XDP-Datei als Vorlage für das Datensatzdokument verwendet wird. [Die nächsten Schritte bestehen darin, die Komponenten des adaptiven Formulars an die entsprechenden Vorlagenfelder zu binden](#bind-adaptive-form-components-with-template-fields).
+Ihr adaptives Formular ist jetzt so konfiguriert, dass eine XDP-Datei als Vorlage für das Datensatzdokument verwendet wird. Der nächste Schritt besteht darin, [binden von adaptiven Formularkomponenten mit entsprechenden Vorlagenfeldern](#bind-adaptive-form-components-with-template-fields).
 
 ## Erzeugen eines AcroForm-basierten Datensatzdokuments {#generate-an-Acroform-based-document-of-record}
 
@@ -57,7 +57,7 @@ Laden Sie Ihr Adobe Acrobat-PDF (AcroForm) in Ihre AEM Forms-Instanz hoch. Führ
 1. Wählen Sie auf der Registerkarte „Formularmodell“ im Abschnitt „Konfiguration der Datensatzdokument-Vorlagenkonfiguration“ die Option **Formularvorlage als Datensatzdokument-Vorlage zuordnen**. Bei Auswahl dieser Option werden alle auf Ihrem Gerät verfügbaren Acrobat-PDFs (AcroForm) angezeigt. Wählen Sie das AcroForm aus, das Sie verwenden möchten.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
-Ihr adaptives Formular ist jetzt so konfiguriert, dass ein AcroForm als Vorlage für das Datensatzdokument verwendet wird. [Die nächsten Schritte bestehen darin, die Komponenten des adaptiven Formulars an die entsprechenden Vorlagenfelder zu binden](#bind-adaptive-form-components-with-template-fields).
+Ihr adaptives Formular ist jetzt so konfiguriert, dass ein AcroForm als Vorlage für das Datensatzdokument verwendet wird. Der nächste Schritt besteht darin, [binden von adaptiven Formularkomponenten mit entsprechenden Vorlagenfeldern](#bind-adaptive-form-components-with-template-fields).
 
 ## Automatisches Generieren eines Datensatzdokuments {#auto-generate-a-document-of-record}
 
@@ -136,7 +136,7 @@ Bei der Übermittlung des adaptiven Formulars wird dann ein aktualisiertes Daten
 
 Beachten Sie die folgenden Hinweise und Einschränkungen beim Arbeiten mit einem Datensatzdokument für adaptive Formulare.
 
-* Datensatzdokument-Vorlagen unterstützen keinen Rich-Text. Daher wird jeglicher Rich-Text, der im statischen adaptiven Formular oder in den vom Endbenutzer ausgefüllten Informationen enthalten ist, im Datensatzdokument als unformatierter Text angezeigt.
+* Datensatzdokument-Vorlagen unterstützen keinen Rich-Text. Rich-Text im statischen adaptiven Formular oder in den vom Benutzer eingegebenen Informationen wird daher im Datensatzdokument als Nur-Text angezeigt.
 * Dokumentfragmente in einem adaptiven Formular werden im Datensatzdokument nicht angezeigt. Adaptive Formularfragmente werden jedoch unterstützt.
 * Die Inhaltsbindung wird in Datensatzdokumenten, die für auf XML-Schemata basierende adaptive Formulare generiert werden, nicht unterstützt.
 * Lokalisierte Versionen des Datensatzdokuments werden für ein Gebietsschema bedarfsgesteuert erstellt, wenn der Benutzer die Darstellung des Datensatzdokuments anfordert. Die Lokalisierung des Datensatzdokuments erfolgt zusammen mit der Lokalisierung des adaptiven Formulars. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->

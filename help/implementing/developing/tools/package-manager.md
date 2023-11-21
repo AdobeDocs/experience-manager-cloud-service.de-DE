@@ -4,9 +4,9 @@ description: Lernen Sie die Grundlagen der AEM-Paketverwaltung mit Package Manag
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '3771'
+source-wordcount: '3774'
 ht-degree: 92%
 
 ---
@@ -401,7 +401,7 @@ Package Manager kann die folgenden Validierungen durchführen:
 
 Diese Validierung prüft das Paket auf JAR-Dateien (OSGi-Bundles), extrahiert deren `manifest.xml`-Datei (die die versionierten Abhängigkeiten enthält, die für das OSGi-Bundle erforderlich sind) und stellt sicher, dass die AEM-Instanz die Abhängigkeiten mit den richtigen Versionen exportiert.
 
-**Reporting**
+**Berichterstellung**
 
 Eventuelle versionierte Abhängigkeiten, die von der AEM-Instanz nicht erfüllt werden können, werden im Aktivitätsprotokoll von Package Manager aufgeführt.
 
@@ -425,7 +425,7 @@ Diese Validierung ermittelt, ob das zu installierende Paket eine Datei enthält,
 
 Beispiel: Bei einer bestehenden Überlagerung unter `/apps/sling/servlet/errorhandler/404.jsp` ändert ein Paket, das `/libs/sling/servlet/errorhandler/404.jsp` enthält, die vorhandene Datei unter `/libs/sling/servlet/errorhandler/404.jsp`.
 
-**Reporting**
+**Berichterstellung**
 
 Solche Überlagerungen werden im Aktivitätsprotokoll von Package Manager beschrieben.
 
@@ -447,7 +447,7 @@ Zur Behebung dieses Problems muss der Verantwortliche für die Überlagerungsdat
 
 Diese Validierung prüft, welche Berechtigungen hinzugefügt werden, wie sie verarbeitet werden (zusammenführen/ersetzen) und ob die aktuellen Berechtigungen betroffen sind.
 
-**Reporting**
+**Berichterstellung**
 
 Die Berechtigungen werden im Aktivitätsprotokoll von Package Manager beschrieben.
 

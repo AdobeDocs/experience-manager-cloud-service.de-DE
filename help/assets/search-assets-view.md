@@ -3,10 +3,10 @@ title: Erfahren Sie, wie Sie Assets suchen und finden in [!DNL Assets view]?
 description: Erfahren Sie, wie Sie Assets in der AEM Assets-Ansicht suchen und finden. Mit der leistungsstarken Suchfunktion können Sie schnell das passende Asset ermitteln und die Geschwindigkeit Ihrer Inhaltserstellung steigern.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 97%
+source-wordcount: '922'
+ht-degree: 94%
 
 ---
 
@@ -123,7 +123,7 @@ Entfernen benutzerdefinierter Filter
 
 ## Gespeicherte Suchvorgänge {#saved-search}
 
-In [!DNL Assets view] ist die Suchfunktion recht einfach zu verwenden. Über das Suchfeld können Sie nicht nur ein Keyword eingeben und die Eingabetaste drücken, um die Ergebnisse zu sehen, sondern auch schnell mit einem einzigen Klick erneut nach Ihren kürzlich gesuchten Keywords suchen.
+In [!DNL Assets view] ist die Suchfunktion recht einfach zu verwenden. Über das Suchfeld können Sie einfach einen Suchbegriff eingeben und die Eingabetaste drücken, um die Ergebnisse anzuzeigen, oder Sie können schnell mit einem Klick nach Ihren kürzlich gesuchten Suchbegriffen suchen.
 
 Sie können die Suchergebnisse auch nach bestimmten Kriterien rund um Metadaten und Art der Assets filtern. Mit [!DNL Assets view] können Sie bei häufig verwendeten Filtern die Suchparameter speichern, um das Sucherlebnis zu verbessern. Um zu suchen und den Filter mit nur einem Klick anzuwenden, können Sie auch die gespeicherte Suche auswählen.
 

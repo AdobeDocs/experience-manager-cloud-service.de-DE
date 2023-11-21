@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 65%
@@ -36,7 +36,7 @@ So bearbeiten Sie Metadaten:
    >
    >Ein leeres Textfeld gibt an, dass kein Metadatenset vorhanden ist. Sie können einen Wert in das Feld eingeben und speichern, um diese Metadateneigenschaft hinzuzufügen.
 
-Alle Änderungen an den Metadaten eines Assets werden als Teil der XMP-Daten in die ursprüngliche Binärdatei zurückgeschrieben. Dies geschieht über den Writeback-Workflow der Adobe Experience Manager-Metadaten. Änderungen an den vorhandenen Eigenschaften (z. B. `dc:title`) überschrieben und neu erstellte Eigenschaften (einschließlich benutzerdefinierter Eigenschaften wie `cq:tags`) werden zusammen mit dem Schema hinzugefügt.
+Alle Änderungen an den Metadaten eines Assets werden als Teil der XMP-Daten in die ursprüngliche Binärdatei zurückgeschrieben. Dies geschieht über den Writeback-Workflow der Adobe Experience Manager-Metadaten. Änderungen an den vorhandenen Eigenschaften (z. B. `dc:title`) überschrieben und erstellte Eigenschaften (einschließlich benutzerdefinierter Eigenschaften wie `cq:tags`) werden zusammen mit dem Schema hinzugefügt.
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 

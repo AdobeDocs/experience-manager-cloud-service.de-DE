@@ -3,10 +3,10 @@ title: Versionshinweise für Cloud Manager 2023.11.0 in Adobe Experience Manager
 description: Dies sind die Versionshinweise für Cloud Manager 2023.11.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: be38ca5bf79d401fc12c1422c270a2ee84bbbad2
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 13%
+source-wordcount: '735'
+ht-degree: 25%
 
 ---
 
@@ -21,34 +21,34 @@ Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2023.11.0 in A
 
 ## Veröffentlichungsdatum {#release-date}
 
-Version 2023.11.0 von Cloud Manager in AEM as a Cloud Service wurde am 14. November 2023 veröffentlicht. Die nächste Version wurde am 7. Dezember 2023 veröffentlicht.
+Version 2023.11.0 von Cloud Manager in AEM as a Cloud Service wurde am 14. November 2023 veröffentlicht. Die nächste Version soll am 7. Dezember 2023 veröffentlicht werden.
 
 ## Neue Funktionen {#what-is-new}
 
-* Der Schutz der Web Application Firewall-DDOS (WAF-DDOS) ist jetzt im Rahmen Ihrer AEM as a Cloud Service Berechtigungen zum Kauf verfügbar. [kann auf Self-Service-Art konfiguriert werden.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+* Der Schutz der Web Application Firewall-DDOS (WAF-DDOS) ist jetzt als Teil Ihrer AEM as a Cloud Service Berechtigung zum Kauf verfügbar und [kann auf Self-Service-Art konfiguriert werden.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 * Spezialisiert [Konfigurations-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) sind jetzt verfügbar, um innerhalb von Minuten Traffic-Filterregeln, einschließlich WAF-Regeln, zu konfigurieren und bereitzustellen.
 * [Beim Kopieren von Inhalten](/help/implementing/developing/tools/content-copy.md) von einer höheren Umgebung in eine Entwicklungsumgebung zu übertragen, wird jetzt eine Meldung angezeigt, die beim Kopieren großer Inhaltssets Vorsicht weckt, da die Entwicklungsumgebungen nur über eine begrenzte Kapazität verfügen.
 * [Seite mit Details zur Pipelineausführung](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) zeigt nun alle Schritte in einer Pipeline-Ausführung an, bei denen die Schritte noch nicht ausgegraut wurden.
-* Bei beiden **[Aktivität](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** und **[Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** Seiten enthält, ist jetzt eine Zusammenfassung der Pipeline-Ausführung verfügbar, wenn auf eine Pipeline mit einem Ausführungsstatus geklickt wird.
-* Eine neue **Dauer** wurde zum Abschnitt [Pipeline-Detailseite](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) , die die durchschnittliche Dauer des Pipeline-Schritts basierend auf dem historischen Trend für dieses Programm enthält.
+* Bei beiden **[Aktivität](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** und **[Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** Seiten enthält, ist jetzt eine Zusammenfassung der Pipeline-Ausführung verfügbar, wenn Sie eine Pipeline mit einem Ausführungsstatus auswählen.
+* Ein neuer Abschnitt **Dauer** wurde zum Abschnitt [Pipeline-Detailseite](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) hinzugefügt. Er enthält die durchschnittliche Dauer des Pipeline-Schritts anhand des Verlaufs-Trends dieses Programms.
 * Im [Pipeline-Ausführungsseite,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity-window) Die abgeschlossenen Schritte zeigen nun die Dauer an.
-* Ausführungen, die [Build-Artefakte wiederverwenden](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) zeigt nun den Link zur Ausführung, die diese Artefakte ursprünglich erstellt hat.
+* Ausführungen, die [Build-Artefakte wiederverwenden](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) zeigt nun den Link zur Ausführung an, die diese Artefakte ursprünglich erstellt hat.
 * Die ausgewählte Option **Wichtige Metrikfehler** kann jetzt konfiguriert werden für [Code-Qualitäts-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) sowie.
 
 
-## Frühzeitige Annahme des Programms {#early-adoption}
+## Early-Adopter-Programm {#early-adoption}
 
-Nehmen Sie an unserem Programm teil und haben Sie die Möglichkeit, einige bevorstehende Funktionen zu testen.
+Um einige bevorstehende Funktionen testen zu können, sollten Sie Teil des frühzeitigen Adoptionsprogramms von Adobe sein.
 
-### Erstellen Sie Ihren eigenen GitHub {#byo-github}
+### Bringen Sie Ihren eigenen GitHub mit {#byo-github}
 
-Wenn Sie Ihre Repositorys mit GitHub verwalten, [Sie können jetzt Code direkt in Ihren GitHub-Repositorys über Cloud Manager validieren.](/help/implementing/cloud-manager/managing-code/byo-github.md) Durch diese Integration entfällt die Notwendigkeit, Code konsistent mit dem Adobe-Repository zu synchronisieren, und Sie können Pull-Anforderungen überprüfen, bevor Sie sie in die Hauptverzweigungen zusammenführen.
+Wenn Sie Ihre Repositorys mit GitHub verwalten, [können Sie jetzt Code direkt in Ihren GitHub-Repositorys über Cloud Manager validieren.](/help/implementing/cloud-manager/managing-code/byo-github.md) Durch diese Integration entfällt die Notwendigkeit, Code ständig mit dem Adobe-Repository zu synchronisieren, und Sie können Pull-Anfragen überprüfen, bevor Sie sie in den Hauptverzweigungen zusammenführen.
 
 Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie eine E-Mail an `Grp-CloudManager_BYOG@adobe.com` von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse aus.
 
 ### Benutzerdefinierte Berechtigungen {#custom-permissions}
 
-[Benutzerdefinierte Berechtigungen für Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) können Sie neue benutzerdefinierte Berechtigungsprofile mit konfigurierbaren Berechtigungen erstellen, um den Zugriff auf Programme, Pipelines und Umgebungen für Cloud Manager-Benutzer zu beschränken.
+[Benutzerdefinierte Berechtigungen für Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) Sie können benutzerdefinierte Berechtigungsprofile mit konfigurierbaren Berechtigungen erstellen, um den Zugriff auf Programme, Pipelines und Umgebungen für Cloud Manager-Benutzer zu beschränken.
 
 Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie eine E-Mail an `Grp-CloudManager-custom-permissions@adobe.com` von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse aus.
 
@@ -69,18 +69,18 @@ Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie
 
 [Das Dashboard &quot;Experience Audit&quot;von Cloud Manager](/help/implementing/cloud-manager/experience-audit-dashboard.md) enthält eine Trendansicht Ihrer Seitenleistungsbewertungen sowie Einblicke und Empfehlungen, die Sie bei der Verbesserung unterstützen. Experience Audit ist ein Schritt in der Produktions-Pipeline von Cloud Manager.
 
-Das Dashboard nutzt Google Lighthouse, ein Open-Source-Tool zur Verbesserung der Qualität Ihrer Web-Apps. Sie können sie für jede Web-Seite ausführen, öffentlich oder authentifizierungspflichtig. Sie enthält Prüfungen zu Leistung, Barrierefreiheit, progressiven Web-Apps, SEO und mehr.
+Das Dashboard verwendet Google Lighthouse, ein Open-Source-automatisiertes Tool zur Verbesserung der Qualität Ihrer Webanwendungen. Sie können sie für jede Webseite, jede öffentliche Seite oder jede Webseite ausführen, für die eine Authentifizierung erforderlich ist. Sie enthält Prüfungen zu Leistung, Barrierefreiheit, progressiven Web-Apps, SEO und mehr.
 
-Möchten Sie das neue Dashboard testen? E-Mail an senden `aem-lighthouse-pilot@adobe.com` von Ihrer mit Ihrer Adobe ID verknüpften E-Mail aus und wir können Ihnen den Einstieg erleichtern.
+Möchten Sie das neue Dashboard testen? Senden Sie zunächst eine E-Mail an `aem-lighthouse-pilot@adobe.com` aus Ihrer mit Ihrer Adobe ID verknüpften E-Mail.
 
 ## Bekannte Probleme {#known-issues}
 
-Es gibt einen bekannten Fehler, der verhindert [Konfigurations-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) von in die Produktion verschoben werden.
+Ein bekannter Fehler verhindert [Konfigurations-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) von in die Produktion verschoben werden.
 
 Wenn die Variable **Anhalten vor der Bereitstellung in der Produktion** -Option für eine Konfigurations-Pipeline erforderlich ist, ist die folgende empfohlene Problemumgehung, bis der Fehler behoben ist.
 
 1. Pipeline ausführen.
 1. Testen Sie den Code in der Staging-Umgebung.
 1. Wenn die Bereitstellung und Genehmigung verfügbar wird, klicken Sie auf **Ablehnen**.
-1. Bearbeiten Sie die Pipeline, um die **Anhalten vor der Bereitstellung in der Produktion** -Option.
-1. Führen Sie die Pipeline erneut aus. Es wird erneut beim Staging und dann bei der Produktion ausgeführt.
+1. Bearbeiten Sie die Pipeline, damit Sie die **Anhalten vor der Bereitstellung in der Produktion** -Option.
+1. Führen Sie die Pipeline erneut aus, damit sie beim Staging und dann bei der Produktion erneut ausgeführt werden kann.

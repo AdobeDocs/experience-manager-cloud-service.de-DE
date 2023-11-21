@@ -2,10 +2,10 @@
 title: Was sind Überlegungen, bekannte Probleme und Best Practices in AEM Forms?
 description: Überlegungen zu bekannten Problemen und Best Practices für AEM Forms Communication APIs.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 96%
+source-wordcount: '1749'
+ht-degree: 94%
 
 ---
 
@@ -80,7 +80,7 @@ Ein Formular-Design, das mit den Kommunikations-APIs verwendet wird, kann Skript
 
 Um ein Formular zu entwerfen, das druckerresidente Schriftarten verwendet, wählen Sie in Designer den Namen einer Schriftart, die mit den auf dem Drucker verfügbaren Schriftarten übereinstimmt. Eine Liste der für PCL oder PostScript unterstützten Schriftarten befindet sich in den entsprechenden Geräteprofilen (XDC-Dateien). Alternativ kann eine Schriftzuordnung erstellt werden, um nicht druckerresidente Schriftarten druckerresidenten Schriftarten mit einem anderen Schriftartennamen zuzuordnen. In einem PostScript-Szenario können beispielsweise Verweise auf die Schriftart Arial® der druckerresidenten Helvetica®-Schriftart zugeordnet werden.
 
-Wenn eine Schriftart auf einem Client-Computer installiert ist, ist sie in der Dropdown-Liste in Designer verfügbar. Wenn die Schriftart nicht installiert ist, müssen Sie den Schriftnamen manuell angeben. Die Option „Nicht verfügbare Schriften dauerhaft ersetzen“ in Designer kann deaktiviert sein. Andernfalls wird beim Speichern der XDP-Datei in Designer der Name der Ersatzschriftart in die XDP-Datei geschrieben. Dies bedeutet, dass die druckerresidente Schriftart nicht verwendet wird.
+Wenn eine Schriftart auf einem Client-Computer installiert ist, ist sie in der Dropdown-Liste in Designer verfügbar. Wenn die Schriftart nicht installiert ist, müssen Sie den Schriftnamen manuell angeben. Die Option &quot;Nicht verfügbare Schriften dauerhaft ersetzen&quot;in Designer kann deaktiviert sein. Andernfalls wird beim Speichern der XDP-Datei in Designer der Name der Ersatzschriftart in die XDP-Datei geschrieben. Dies bedeutet, dass die druckerresidente Schriftart nicht verwendet wird.
 
 Es gibt zwei Arten von OpenType®-Schriftarten. Ein Typ ist eine TrueType OpenType®-Schriftart, die von PCL unterstützt wird. Der andere ist CFF OpenType®. Die PDF- und PostScript-Ausgabe unterstützt eingebettete Type-1-, TrueType- und OpenType®-Schriftarten. Die PCL-Ausgabe unterstützt eingebettete TrueType-Schriftarten.
 
@@ -171,7 +171,7 @@ Die folgende Tabelle gibt die XCI-Optionen an.
 
 ## Best Practices
 
-* Adobe empfiehlt, Datendateien im Blob-Container-Store in der von AEM Cloud Service verwendeten Cloud-Region zu hosten.
+* Adobe empfiehlt, dass Sie Datendateien im Blob-Container-Store in der von AEM Cloud Service verwendeten Cloud-Region hosten.
 
 ## Häufig gestellte Fragen  {#faq}
 

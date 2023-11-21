@@ -2,10 +2,10 @@
 title: Query Builder-API
 description: Die Funktionalität der Query Builder-Komponente für die Asset-Freigabe wird über eine Java™-API und eine REST-API verfügbar gemacht.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2006'
-ht-degree: 98%
+source-wordcount: '2008'
+ht-degree: 100%
 
 ---
 
@@ -351,7 +351,7 @@ Sie können auch das [Javadoc für die `PredicateEvaluator`-Klassen](https://dev
 
 Das Präfix des Klassennamens (z. B. `similar` in [`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html?lang=de)) ist die *Haupteigenschaft* der Klasse. Diese Eigenschaft ist auch der Name der Eigenschaft, die in der Abfrage verwendet wird (in Kleinbuchstaben).
 
-Für diese Haupteigenschaften können Sie die Abfrage verkürzen und `similar=/content/en` anstelle der vollständig qualifizierten Variante `similar.similar=/content/en`. Das vollständig qualifizierte Formular muss für alle nicht-prinzipalen Eigenschaften einer Klasse verwendet werden.
+Für Haupteigenschaften dieser Art können Sie die Abfrage verkürzen und anstelle der vollqualifizierten Variante `similar=/content/en` die Kurzversion `similar.similar=/content/en` verwenden. Die vollqualifizierte Form muss für alle Eigenschaften einer Klasse genutzt werden, bei denen es sich nicht um die Haupteigenschaften handelt.
 
 ## Beispiel für die Nutzung der Query Builder-API {#example-query-builder-api-usage}
 

@@ -2,7 +2,7 @@
 title: Wie können Designs in Adaptive Forms erstellt und verwendet werden?
 description: Sie können Designs verwenden, um ein adaptives Formular mithilfe von Kernkomponenten zu gestalten und eine visuelle Identität bereitzustellen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2676'
 ht-degree: 18%
@@ -319,7 +319,7 @@ Sie benötigen ein Repository, um das Design bereitzustellen. Melden Sie sich be
 
 ##### 5.2. Übertragen Sie die Änderungen in das Repository {#committing-the-changes}
 
-Nun können Sie die Änderungen an das Design-Repository Ihres AEM Forms-Cloud Service übertragen. .
+Nun können Sie die Änderungen an das Design-Repository Ihres AEM Forms-Cloud Service übertragen.
 
 1. Navigieren Sie zum Stammverzeichnis des Designordners.  In diesem Fall lautet der Name des Designordners `aem-forms-theme-canvas`.
 1. Öffnen Sie die Eingabeaufforderung oder das Terminal.

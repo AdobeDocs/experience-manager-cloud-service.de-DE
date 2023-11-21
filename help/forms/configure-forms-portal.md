@@ -2,10 +2,10 @@
 title: Erstellen eines Formularportals auf einer Experience Manager Sites-Seite?
 description: Erfahren Sie, wie Sie ein Formularportal erstellen und vordefinierte Kernkomponenten auf einer Seite von AEM Sites verwenden können.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1841'
-ht-degree: 94%
+source-wordcount: '1840'
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ Die Formularportalkomponenten ermöglichen es Ihnen, die folgende Funktion hinzu
 * Aktivieren der Suche nach Formularen anhand von Titel und Beschreibung.
 * Verwenden von benutzerdefiniertem CSS, um das Erscheinungsbild des Portals anzupassen.
 * Erstellen von Links zu Formularen.
-* Auflisten von Entwürfen und Übermittlungen in Bezug auf adaptive Formulare auf, die vom Endbenutzer erstellt wurden.
+* Listet Entwürfe und Übermittlungen im Zusammenhang mit dem vom Benutzer erstellten adaptiven Forms auf.
 
 ## Komponenten einer Formularportal-Seite {#forms-portal-components}
 

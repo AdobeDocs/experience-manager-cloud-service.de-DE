@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Über
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3971'
 ht-degree: 86%
@@ -455,7 +455,7 @@ Die Best Practice für dieses Szenario ist folgendes Verfahren:
 1. Machen Sie die Veröffentlichung der Sprachkopien, die mit der zu verschiebenden Quellseite verknüpft sind, rückgängig.
 1. Löschen Sie sie.
 1. Erstellen Sie in der neu verschobenen Quellseite neue Sprachkopien.
-1. Veröffentlichen Sie die neu erstellten Sprachkopien.
+1. Veröffentlichen Sie die erstellten Sprachkopien.
 
 ## Importieren und Exportieren von Übersetzungsaufträgen {#import-export}
 
