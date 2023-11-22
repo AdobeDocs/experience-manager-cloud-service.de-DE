@@ -2,7 +2,7 @@
 title: Wie generieren Sie ein Datensatzdokument (DoR) für AEM Forms?
 description: Erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument (DoR) für adaptive Forms generieren.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 00a905a08de1c14ef0ded7475d2f95abacc50af1
 workflow-type: tm+mt
 source-wordcount: '4139'
 ht-degree: 94%
@@ -500,7 +500,7 @@ Mit einer XCI-Datei können Sie verschiedene Eigenschaften eines Dokuments festl
 ### Verwenden Sie eine benutzerdefinierte XCI-Datei in Ihrer lokalen Forms as a Cloud Service-Entwicklungsumgebung.
 
 1. Laden Sie die XCI-Datei in Ihre lokale Entwicklungsumgebung hoch.
-1. Öffnen Sie den Cloud Service SDK Configuration Manager. Die Standard-URL ist: <http://localhost:4502/system/console/configMgr>.
+1. Öffnen Sie den Cloud Service SDK-Konfigurationsmanager. Die Standard-URL ist: <http://localhost:4502/system/console/configMgr>.
 1. Suchen und öffnen Sie die Konfiguration **[!UICONTROL Web-Kanal für adaptive Formulare und Interaktive Kommunikation]**.
 1. Geben Sie den Pfad der XCI-Datei an und klicken Sie auf **[!UICONTROL Speichern]**.
 
