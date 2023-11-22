@@ -3,14 +3,14 @@ title: Best Practices für die Suche [!DNL Adobe Experience Manager] as a [!DNL 
 description: Best Practices zum Suchen, Suchen und Abrufen von Asset-Metadaten in Ihrer Anwendung.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: b3b2cc516743243fbfdcf6189bfd851a1272bf78
+source-git-commit: 47003c9aa0faefc01a9935c53a5a78938c37cf66
 workflow-type: tm+mt
-source-wordcount: '2520'
+source-wordcount: '2521'
 ht-degree: 11%
 
 ---
 
-# Best Practices für die AEM
+# Best Practices für die AEM Assets-Suche
 
 [!DNL Adobe Experience Manager Assets] bietet stabile Suchmethoden für Assets, mit denen Sie eine höhere Inhaltsgeschwindigkeit erzielen können. Manchmal kann das Auffinden des richtigen Assets mühsam und zeitaufwendig sein. Daher können Sie Assets suchen in [!DNL Adobe Experience Manager Assets] ist von zentraler Bedeutung für die Nutzung eines digitalen Asset-Managementsystems - sei es für die weitere Verwendung durch Kreative, für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren.
 

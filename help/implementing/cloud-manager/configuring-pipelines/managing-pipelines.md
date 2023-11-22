@@ -6,7 +6,7 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 45%
+ht-degree: 68%
 
 ---
 
@@ -35,37 +35,37 @@ Am Ende der Pipeline-Liste befinden sich allgemeine Optionen.
 * **Zugriff auf Repo Info**: Zeigt die Informationen an, die für den Zugriff auf das Cloud Manager-Git-Repository erforderlich sind
 * **Weitere Infos**: Navigiert zu den Dokumentationsressourcen zur CI/CD-Pipeline.
 
-## Pipelines Window {#pipelines}
+## Fenster „Pipelines“ {#pipelines}
 
-Die **Pipelines** zeigt eine vollständige Liste aller Pipelines für das ausgewählte Programm an. Dies ist nützlich, da es umfassendere Informationen enthält, als im Abschnitt [Pipeline-Karte.](#pipeline-card)
+Das Fenster **Pipelines** zeigt eine vollständige Liste aller Pipelines für das ausgewählte Programm an. Dies ist nützlich, da es umfassendere Informationen enthält, als der Abschnitt [Pipeline-Karte](#pipeline-card).
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
 1. Aus dem **Programmübersicht** Seite, wählen Sie die **Pipelines** Registerkarte, um zu der **Pipelines** Fenster.
 
-1. Hier sehen Sie eine Liste aller Pipelines für das Programm sowie die Ausführung der Pipeline wie im **Pipelines Card**.
+1. Hier können Sie eine Liste aller Pipelines für das Programm sehen und die Ausführung von Pipelines starten und stoppen, wie Sie es von der **Pipelines-Karte** kennen.
 
-Wenn eine Pipeline ausgeführt wird, bewegen Sie den Mauszeiger über die **Status** enthält Details zur Ausführung.
+Wenn Sie während der Pipeline-Ausführung mit der Maus über **Status** gehen, werden Details der Ausführung angezeigt.
 
-![Details zur Pipelineausführung](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
+![Details zur Pipeline-Ausführung](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
-Tippen oder Klicken **Details anzeigen** bringt Sie zu [Details zur Pipelineausführung.](#view-details)
+Tippen oder klicken Sie auf **Details anzeigen**, um zu den [Details zur Pipeline-Ausführung](#view-details) zu gelangen.
 
-## Aktivitätsfenster {#activity}
+## Fenster „Aktivität“ {#activity}
 
-Die **Tätigkeiten** zeigt eine vollständige Liste aller Pipelines-Ausführungen für das ausgewählte Programm an.
+Das Fenster **Aktivität** zeigt eine vollständige Liste aller Pipeline-Ausführungen für das ausgewählte Programm an.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
 1. Aus dem **Programmübersicht** Seite, wählen Sie die **Aktivität** Registerkarte, um zu der **Aktivität** Fenster.
 
-1. Hier sehen Sie eine Liste aller Pipeline-Ausführungen für das Programm, einschließlich aktueller und historischer Ausführungen.
+1. Hier sehen Sie eine Liste aller Pipeline-Ausführungen für das Programm, einschließlich aktueller und vorheriger Ausführungen.
 
-Wenn eine Pipeline ausgeführt wird, bewegen Sie den Mauszeiger über die **Status** enthält Details zur Ausführung.
+Wenn Sie während der Pipeline-Ausführung mit der Maus über **Status** gehen, werden Details der Ausführung angezeigt.
 
-![Details zur Pipelineausführung](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
+![Details zur Pipeline-Ausführung](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-Tippen oder Klicken **Details anzeigen** bringt Sie zu [Details zur Pipelineausführung.](#view-details)
+Tippen oder klicken Sie auf **Details anzeigen**, um zu den [Details zur Pipeline-Ausführung](#view-details) zu gelangen.
 
 ## Ausführen von Pipelines {#running-pipelines}
 
@@ -89,7 +89,7 @@ Je nach Pipeline-Typ können Sie die Ausführung möglicherweise abbrechen, inde
 
    * Auf den folgenden Seiten finden Sie Details zu den Feldern und Konfigurationsoptionen, die für Pipelines verfügbar sind.
       * [Konfigurieren von Produktions-Pipelines](configuring-production-pipelines.md)
-      * [Konfigurieren von produktionsfremden Pipelines](configuring-non-production-pipelines.md)
+      * [Konfigurieren produktionsfremder Pipelines](configuring-non-production-pipelines.md)
 
 1. Klicks **Aktualisieren** nachdem Sie die Pipeline bearbeitet haben.
 
@@ -121,19 +121,19 @@ Sie können die Details einer Pipeline anzeigen, um den Status und die Protokoll
 
 Von hier aus können Sie den Status der verschiedenen Schritte der Pipeline einsehen und Build-Protokolle zu Diagnosezwecken abrufen. Siehe Dokument . [Bereitstellen des Codes](/help/implementing/cloud-manager/deploy-code.md) für weitere Informationen zur Codebereitstellung und zur Ausführung von Tests.
 
-Alle Schritte in einer Pipeline-Ausführung werden angezeigt, wobei die Schritte, die noch nicht gestartet wurden, ausgegraut sind. Die abgeschlossenen Schritte zeigen ihre Dauer an.
+Es werden alle Schritte einer Pipeline-Ausführung angezeigt, wobei die Schritte, die noch nicht gestartet wurden, ausgegraut sind. Die abgeschlossenen Schritte werden mit ihrer jeweiligen Dauer angezeigt.
 
 Sobald ein Pipeline-Schritt abgeschlossen ist, wird eine Zusammenfassung angezeigt.
 
 ![Schrittzusammenfassung](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
 
-Wählen Sie die **Details anzeigen** -Link, um die **Dauer** Abschnitt. Dies umfasst die durchschnittliche Dauer der Pipeline basierend auf dem historischen Trend für dieses Programm.
+Wählen Sie die **Details anzeigen** -Link, um die **Dauer** Abschnitt. Hier ist die durchschnittliche Dauer der Pipeline basierend auf dem Verlaufs-Trend für dieses Programm aufgeführt.
 
 ![Dauer](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
 
 >[!NOTE]
 >
->Sie können nur Details einer Pipeline anzeigen, die gerade ausgeführt wird oder mindestens einmal ausgeführt worden ist.
+>Sie können nur Details einer Pipeline anzeigen, die gerade ausgeführt wird oder schon mindestens einmal ausgeführt worden ist.
 
 ## Pipelines abbrechen {#cancel}
 
