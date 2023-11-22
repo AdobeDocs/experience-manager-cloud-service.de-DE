@@ -1,9 +1,10 @@
 ---
 title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.03.0
-description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2022.03.0
+description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.03.0
 feature: Release Information
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
+exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
+source-git-commit: d7e5a14c2dfee41b4ab5af733218fe58d17871fa
+workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 100%
 
@@ -11,7 +12,7 @@ ht-degree: 100%
 
 # Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.03.0 {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2022.03.0.
+Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.03.0.
 
 ## Best Practices Analyzer {#bpa-release}
 
@@ -32,7 +33,7 @@ Best Practices Analyzer v2.1.40 wurde am 03. März 2023 veröffentlicht.
 
 ### Veröffentlichungsdatum {#release-date-ctt}
 
-Das Content Transfer Tool v2.0.16 wurde am 08. März 2022 veröffentlicht.
+Das Content Transfer Tool v2.0.16 wurde am 08. März 2023 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt}
 

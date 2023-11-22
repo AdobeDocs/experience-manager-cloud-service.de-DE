@@ -1,9 +1,9 @@
 ---
 title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.07.0
-description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2022.07.0
+description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.07.0
 feature: Release Information
 exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: 1f01408223a661c0149d959b1901293dc91ed7ee
+source-git-commit: 3e5c35136c00f6050dda56c318104a7eb04fa271
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 46%
@@ -12,7 +12,7 @@ ht-degree: 46%
 
 # Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.07.0 {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2022.07.0.
+Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.07.0.
 
 ## Best Practices Analyzer {#bpa-release}
 
