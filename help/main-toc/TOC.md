@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 219eb2544dbac8ac5104be4ef8eb1bae996d95f0
+source-git-commit: 700d07e941dafd8dadd8f7abbfc10b92cb7e8144
 workflow-type: tm+mt
-source-wordcount: '4384'
+source-wordcount: '4390'
 ht-degree: 93%
 
 ---
@@ -541,7 +541,7 @@ ht-degree: 93%
       + [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
       + [Verwalten von Tags](/help/assets/tagging-management-assets-view.md)
    + Best Practices{#best-practices}
-      + [Best Practices durchsuchen](/help/assets/search-best-practices.md)
+      + [Best Practices für die Suche](/help/assets/search-best-practices.md)
    + Integration mit Adobe Workfront {#integrations}
       + [Integrationen mit  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Konfigurieren der Asset-Metadatenzuordnung](/help/assets/configure-asset-metadata-mapping.md)
@@ -551,7 +551,7 @@ ht-degree: 93%
       + [Aktualisieren von  [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + Integration mit Adobe Expreß {#integration-adobe-express}
-      + [AEM Assets-Add-on für Adobe Expreß](/help/assets/addon-adobe-express.md)
+      + [AEM Assets-Add-on für Adobe Express](/help/assets/addon-adobe-express.md)
 
    + Integration mit Creative Cloud {#integration-creative-cloud}
       + [Verbinden von AEM Assets mit Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
@@ -581,7 +581,7 @@ ht-degree: 93%
          + [Anzeigen und Verstehen des adaptiven Forms Analytics-Berichts](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [Integrieren eines adaptiven Formulars mit Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Einbetten eines adaptiven Formulars in eine AEM Sites-Seite](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [Einbetten des adaptiven Formulars basierend auf Kernkomponenten in eine externe Webseite](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [Einbetten eines adaptiven Formulars basierend auf Kernkomponenten in eine externe Web-Seite](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [Einbetten des adaptiven Formulars basierend auf Foundation-Komponenten in eine externe Webseite](/help/forms/embed-adaptive-form-external-web-page.md)
       + Formulardatenmodell {#use-form-data-model}
          + [Verbinden von AEM Forms mit Datenbank oder Datenquelle](/help/forms/data-integration.md)
@@ -607,7 +607,7 @@ ht-degree: 93%
             + [Verwenden einer maschinellen oder menschlichen Übersetzung, um ein adaptives Formular zu übersetzen](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Konfigurieren der Umleitungsseite oder der Dankesnachricht](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Erstellen von Formularen mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
-            + [Konfigurieren der Sendeaktion für ein adaptives Formular](/help/forms/configure-submit-actions-core-components.md)
+            + [Konfigurieren der Übermittlungsaktion für ein adaptives Formular](/help/forms/configure-submit-actions-core-components.md)
             + [Verwenden von Google reCAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Hinzufügen eines benutzerdefinierten Fehler-Handlers in einem adaptiven Formular](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Gebietsschema für adaptive Forms auf Basis von Kernkomponenten hinzufügen](/help/forms/supporting-new-language-localization-core-components.md)
@@ -680,6 +680,7 @@ ht-degree: 93%
    + Überblick über Screens as a Cloud Service {#overview}
       + [Einführung](/help/screens-cloud/introduction/introduction.md)
       + [Grundlegendes zu Rollendefinitionen](/help/screens-cloud/introduction/personas-screens-cloud.md)
+      + [Adobe Analytics-Integration mit Screens Cloud](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
    + Onboarding für Screens as a Cloud Service {#onboarding-screens-cloud}
       + [Erste Anmeldung](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
       + Hinzufügen des Screens-Programms als Add-on in Cloud Manager {#adding-screens-addon}
