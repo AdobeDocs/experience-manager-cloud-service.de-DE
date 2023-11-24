@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Imageserver
-description: Erfahren Sie, wie Sie die Dynamic Media-Veröffentlichungseinstellungen für Image-Server konfigurieren und dabei unter anderem Farbmanagement, Sicherheit und Miniaturansichten behandeln.
+description: Erfahren Sie, wie Sie die Dynamic Media-Veröffentlichungseinstellungen für Image-Server konfigurieren und dabei u. a. Farbmanagement, Sicherheit und Miniaturansichten behandeln.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
 source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3493'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

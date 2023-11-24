@@ -1,6 +1,6 @@
 ---
 title: Erste Schritte mit AEM Commerce as a Cloud Service
-description: Erfahren Sie, wie Sie mit Adobe Cloud Manager, einer CI/CD-Pipeline und der Venia-Referenz-Storefront ein Adobe Experience Manager-Commerce-Projekt (AEM) bereitstellen.
+description: Erfahren Sie, wie Sie ein Adobe Experience Manager(AEM)-Commerce-Projekt mithilfe von Adobe Cloud Manager, einer CI/CD-Pipeline und der Venia-Referenz-Storefront bereitstellen.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
 version: Cloud Service
@@ -9,15 +9,15 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1104'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Erste Schritte mit AEM Commerce as a Cloud Service {#start}
 
-Um mit Adobe Experience Manager (AEM) Commerce as a Cloud Service zu beginnen, muss Ihr Experience Manager Cloud Service über das Add-on Commerce integration framework (CIF) verfügen. Das CIF-Add-on ist ein Zusatzmodul für [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html?lang=de).
+Um mit Adobe Experience Manager (AEM) Commerce as a Cloud Service beginnen zu können, muss Ihr Experience Manager Cloud Service mit dem Add-on für das Commerce Integration Framework (CIF) bereitgestellt werden. Das CIF-Add-on ist ein Zusatzmodul für [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html?lang=de).
 
 ## Einstieg {#onboarding}
 
@@ -43,7 +43,7 @@ Diese Umgebungsvariable wird an zwei Stellen verwendet:
 
 Für jede AEM as a Cloud Service-Umgebung kann eine andere GraphQL-Endpunkt-URL verwendet werden. Auf diese Weise können Projekte AEM-Staging-Umgebungen, die über Commerce-Staging-Systeme und eine AEM-Produktionsumgebung verfügen, mit einem Commerce-Produktionssystem verbinden. Der entsprechende-GraphQL-Endpunkt muss öffentlich verfügbar sein; private VPN- oder lokale Verbindungen werden nicht unterstützt. Optional kann ein Authentifizierungs-Header bereitgestellt werden, um zusätzliche CIF-Funktionen zu verwenden, die eine Authentifizierung erfordern.
 
-Optional und nur für Adobe Commerce Enterprise/Cloud unterstützt das CIF-Add-on die Verwendung von gestaffelten Katalogdaten für AEM-Autorinnen bzw. -Autoren. Für diese Daten müssen Sie einen Autorisierungs-Header konfigurieren. Diese Kopfzeile ist aus Sicherheitsgründen nur in AEM Autoreninstanzen verfügbar und wird verwendet. AEM Veröffentlichungsinstanzen können keine gestaffelten Daten anzeigen.
+Optional und nur für Adobe Commerce Enterprise/Cloud unterstützt das CIF-Add-on die Verwendung von gestaffelten Katalogdaten für AEM-Autorinnen bzw. -Autoren. Für diese Daten müssen Sie einen Autorisierungs-Header konfigurieren. Dieser Header ist aus Sicherheitsgründen nur auf AEM-Autoreninstanzen verfügbar und wird nur dort verwendet. AEM-Veröffentlichungsinstanzen können keine Staging-Daten anzeigen.
 
 Es gibt zwei Optionen zum Konfigurieren des Endpunkts:
 

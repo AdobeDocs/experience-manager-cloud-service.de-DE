@@ -1,14 +1,14 @@
 ---
-title: Wie können Sie Assets in AEM mit Wasserzeichen versehen?
-description: Erfahren Sie, wie Sie Ihren Assets in AEM ein digitales Wasserzeichen hinzufügen. Wasserzeichen können Benutzern dabei helfen, die Authentizität und das Urheberrecht von Assets zu überprüfen.
+title: Versehen von Assets in AEM mit Wasserzeichen
+description: Erfahren Sie, wie Sie Ihren Assets in AEM ein digitales Wasserzeichen hinzufügen. Wasserzeichen können Benutzerinnen und Benutzern dabei helfen, die Authentizität und das Urheberrecht von Assets zu überprüfen.
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
 source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '318'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 

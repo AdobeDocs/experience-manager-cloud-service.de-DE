@@ -1,6 +1,6 @@
 ---
 title: Einrichten von AEM mit mehreren Commerce-Systemen
-description: Erfahren Sie, wie Sie Adobe Experience Manager mit mehreren Commerce-Systemen einrichten. Dadurch können Projekte eine einzige Erlebnisverwaltungsschicht unterstützen, die mit mehreren Adobe- oder Drittanbieter-Commerce-Backends für Storefronts mit mehreren Marken und Regionen verbunden ist.
+description: Erfahren Sie, wie Sie Adobe Experience Manager mit mehreren Commerce-Systemen einrichten können. Dadurch können Projekte eine einzige Ebene für die Erlebnisverwaltung unterstützen, die eine Verbindung zu mehreren Commerce-Backends von Adobe und Drittanbietern für Storefronts mit mehreren Regionen und mehreren Marken herstellt.
 sub-product: Commerce
 version: Cloud Service
 doc-type: technical-video
@@ -13,16 +13,16 @@ kt: 10529
 thumbnail: 346811.jpeg
 exl-id: 5328fe30-79ca-4496-8ebd-f1ef51ccfccf
 source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '174'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
 # Einrichten mehrerer Commerce-Systeme
 
-Das einzelne Adobe Experience Manager-CIF (AEM) kann verwendet werden, um eine Verbindung zu mehreren Adobe- oder DrittanbieterCommerce-Systemen herzustellen, um erweiterte Bereitstellungen zu unterstützen. Dies ist im Fall von Storefronts für mehrere Regionen und mit mehreren Marken nützlich, bei denen die einzelne Experience-Management-Ebene die Erstellung und Bereitstellung von Commerce-Inhalten vereinfacht. Dies hilft Unternehmen auch, die Amortisierungszeit (Time to Value, TTV) zu beschleunigen und die Gesamtbetriebskosten (Total Cost of Ownership, TCO) zu senken.
+Das zentrale CIF-System von Adobe Experience Manager (AEM) kann verwendet werden, um eine Verbindung zu mehreren Systemen von Adobe oder Drittanbietern herzustellen und so erweiterte Bereitstellungen zu unterstützen. Dies ist im Fall von Storefronts für mehrere Regionen und mit mehreren Marken nützlich, bei denen die einzelne Experience-Management-Ebene die Erstellung und Bereitstellung von Commerce-Inhalten vereinfacht. Dies hilft Unternehmen auch, die Amortisierungszeit (Time to Value, TTV) zu beschleunigen und die Gesamtbetriebskosten (Total Cost of Ownership, TCO) zu senken.
 
-Eine Videoeinführung, in der beschrieben wird, wie AEM mit mehreren Adobe Commerce-Umgebungen eingerichtet wird. Das AEM Multi-Site Management (MSM) umfasst Funktionen wie Live Copy und Sprachkopie. Diese Funktionen werden mit der Commerce integration framework (CIF) verwendet, um eine Multiregion-Storefront zu erstellen, wobei __Storefronts in der EU__ Verbindung zu __ADOBE COMMERCE__ und __Storefront der nordamerikanischen Region (NA)__ Verbindung zu __NA ADOBE COMMERCE__ System.
+Eine Videoeinführung, in der beschrieben wird, wie AEM mit mehreren Adobe Commerce-Umgebungen eingerichtet wird. Das AEM Multi-Site Management (MSM) umfasst Funktionen wie Live Copy und Sprachkopie. Diese Funktionen werden mit dem Commerce Integration Framework (CIF) verwendet, um eine Storefront für mehrere Regionen zu erstellen. Dabei verbinden sich __Storefronts für die EU__ mit __EU Adobe Commerce__ und __Storefronts für die nordamerikanische Region (NA)__ mit __NA Adobe Commerce__.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346811/?quality=12&learn=on)

@@ -3,7 +3,7 @@ title: Mein Arbeitsbereich für die Assets-Ansicht
 description: Mein Arbeitsbereich ist eine Seite, die anpassbare visuelle Module bietet, mit denen Sie bequem auf wichtige Bereiche der Assets-Benutzeroberfläche und Informationen zugreifen können, die für den Benutzenden am relevantesten sind.
 exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
 source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '740'
 ht-degree: 100%
 

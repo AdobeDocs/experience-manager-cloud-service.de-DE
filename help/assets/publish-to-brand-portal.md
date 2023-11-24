@@ -6,9 +6,9 @@ feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
 source-git-commit: 7f806c457f7bef1c5309bbc6f69d3989af1b06d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1301'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -32,8 +32,8 @@ Spätere Änderungen am ursprünglichen Asset, Order oder an der ursprünglichen
 >[!NOTE]
 >
 >Adobe empfiehlt eine gestaffelte Veröffentlichung, vorzugsweise außerhalb der Spitzenzeiten, sodass die AEM-Autoreninstanz keine übermäßigen Ressourcen belegt.
->Assets sollten in Batches veröffentlicht werden. Die Empfehlung für die Batch-Größe beträgt 15.000.
-> Für [!DNL Experience Manager Assets] as a [!DNL Cloud Service], beträgt die Übertragungsrate unter Laborbedingungen 1000 Assets pro Stunde. Die Rate wird mit einer durchschnittlichen Größe von 10 MB Assets beobachtet.
+>Assets sollten in Stapeln veröffentlicht werden. Die Empfehlung für die Stapelgröße beträgt 15.000.
+> Für [!DNL Experience Manager Assets] as a [!DNL Cloud Service] beträgt die Übertragungsrate unter Laborbedingungen 1000 Assets pro Stunde. Die Rate wird bei einer durchschnittlichen Asset-Größe von 10 MB beobachtet.
 
 ## Veröffentlichen von Assets in Brand Portal {#publish-assets-to-bp}
 
@@ -91,8 +91,8 @@ Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um die veröffentli
 
 >[!NOTE]
 >
-> * Die vorhandenen Benutzer, die Teil der DAM-Benutzergruppe sind, haben Lesezugriff auf den Pfad &quot;/conf/global/settings/cloudconfigs/mediaportal&quot;
->* Die neuen Benutzer (oder Benutzer ohne Administratorrechte) benötigen die folgenden Berechtigungen, um auf dem Brand Portal zu veröffentlichen.
+> * Die vorhandenen Benutzenden, die Teil der DAM-Benutzergruppe sind, haben Lesezugriff auf den Pfad „/conf/global/settings/cloudconfigs/mediaportal“
+>* Die neuen Benutzenden (oder Benutzenden ohne Administratorrechte) benötigen die folgenden Berechtigungen für Veröffentlichungen auf dem Brand Portal.
 > Pfade:
 > &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; : jcr:read
 >/libs : jcr:read

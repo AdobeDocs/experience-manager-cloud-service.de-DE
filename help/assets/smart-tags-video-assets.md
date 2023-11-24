@@ -5,9 +5,9 @@ feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1212'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Bei Ihren Suchergebnissen handelt es sich um eine Kombination aus Video-Assets m
 
 ## Moderieren von Video-Smart-Tags {#moderate-video-smart-tags}
 
-[!DNL Adobe Experience Manager] ermöglicht das Kuratieren der Smart-Tags zu:
+[!DNL Adobe Experience Manager] ermöglicht es Ihnen, Smart-Tags zu folgenden Zwecken zu kuratieren:
 
 * Entfernen fehlerhafter Tags, die Ihren Markenvideos zugewiesen wurden.
 

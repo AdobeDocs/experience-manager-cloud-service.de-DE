@@ -5,15 +5,15 @@ feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '849'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # Verwalten von PDF-Dokumenten in Experience Manager Assets as a Cloud Service {#add-assets-to-experience-manager}
 
-Experience Manager Assets lässt sich nahtlos in den Document Cloud-PDF-Viewer integrieren, mit dem Sie mehrere Seiten eines PDF-Dokuments in der Vorschau anzeigen können. Darüber hinaus können Sie erweiterte PDF-Viewer-Funktionen für Document Cloud verwenden, wie z. B. Anmerkungen, das Durchsuchen von Texten, das Navigieren im PDF-Dokument mithilfe von Lesezeichen und Miniaturansichten und vieles mehr. Mit Experience Manager Assets können Sie auch Dokumente in anderen unterstützten Formaten hochladen und als PDF-Vorschau anzeigen.
+Experience Manager Assets ist nahtlos mit dem Document Cloud PDF Viewer integriert, mit dem Sie mehrere Seiten eines PDF-Dokuments in der Vorschau anzeigen können. Darüber hinaus können Sie erweiterte PDF-Viewer-Funktionen für Document Cloud verwenden, wie z. B. Anmerkungen, das Durchsuchen nach Texten, das Navigieren im PDF-Dokument mithilfe von Lesezeichen und Miniaturansichten und vieles mehr. Mit Experience Manager Assets können Sie auch Dokumente in anderen unterstützten Formaten hochladen und als PDF-Vorschau anzeigen.
 
 Document Cloud PDF Viewer bietet AEM Assets folgende Vorteile:
 * [Unterstützung von PDF Document Cloud Viewer-Komponenten](#pdf-doc-cloud)
@@ -44,7 +44,7 @@ Der native PDF Doc Cloud-Viewer verfügt in AEM Assets über die folgenden Kompo
 
 ## Unterstützung der Vorschau mehrerer Seiten und Anmerkungen für PDF-Assets {#multi-page}
 
-Mit Adobe Experience Manager Assets können Sie eine Vorschau des aus mehreren Seiten bestehenden PDF-Dokuments anzeigen. Gehen Sie wie folgt vor, um mehrere Seiten eines PDF-Dokuments in der Vorschau anzuzeigen:
+Mit Adobe Experience Manager Assets können Sie eine Vorschau eines PDF-Dokuments anzeigen, das aus mehreren Seiten besteht. Gehen Sie wie folgt vor, um mehrere Seiten eines PDF-Dokuments in der Vorschau anzuzeigen:
 
 1. Folgen Sie diesen Schritten, um [Assets in AEM hochzuladen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=de).
 1. Durchsuchen Sie das PDF-Dokument, das Sie hochladen und in der Vorschau anzeigen möchten.
@@ -114,7 +114,7 @@ Im Folgenden finden Sie die Anmerkungen, die auf ein PDF-Dokument angewendet wer
 
 >[!NOTE]
 >
->Die Anmerkungen, die Sie zum PDF-Dokument hinzufügen, sind im Vorschaumodus verfügbar. Die Anmerkungen werden jedoch nicht angezeigt, wenn Sie das PDF-Dokument herunterladen oder drucken.
+>Die Anmerkungen, die Sie zum PDF-Dokument hinzufügen, sind im Vorschaumodus verfügbar. Die Anmerkungen werden jedoch nicht angezeigt, wenn Sie das PDF-Dokument herunterladen oder ausdrucken.
 
 ## Unterstützung der Vorschau mehrerer Seiten von Dokumenten in anderen Formaten {#multi-format}
 

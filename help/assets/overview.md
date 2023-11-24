@@ -1,14 +1,14 @@
 ---
 title: Einführung in Assets as a [!DNL Cloud Service]
-description: Lernen Sie die neuen Funktionen und Vorteile von Experience Manager Assets as a kennen [!DNL Cloud Service]. Eine Cloud-native PaaS-Lösung für Unternehmen.
+description: Lernen Sie die neuen Funktionen und Vorteile von Experience Manager Assets as a  [!DNL Cloud Service] kennen. Eine Cloud-native PaaS-Lösung für Unternehmen.
 contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: a4601d95076d37ed5df79b7c9dabb8beab8353d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '825'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -55,9 +55,9 @@ Informationen zum Zugriff auf die Assets-Ansicht und einige der Vereinfachungen,
 
 ## Integration in dokumentbasiertes Authoring für Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
 
-Mit der Edge-Bereitstellung können Sie schnelle und ansprechende Websites erstellen, auf denen Autoren Inhalte schnell aktualisieren und veröffentlichen können und neue Sites schnell gestartet werden können.
+Mit der Edge-Bereitstellung können Sie schnelle und ansprechende Websites erstellen, auf denen Autorinnen und Autoren Inhalte schnell aktualisieren und veröffentlichen können und neue Sites schnell gestartet werden können.
 
-Integrieren Sie AEM Assets in dokumentbasiertes Authoring für Edge Delivery Services, damit Website-Autoren in AEM Assets-Repositorys verfügbare Bilder beim Erstellen von Dokumenten in Microsoft Word oder Google Docs verwenden können. Weitere Informationen finden Sie unter [Integrieren von AEM Assets mit dokumentbasiertem Authoring](/help/edge/using.md#integrate-assets-edge).
+Integrieren Sie AEM Assets in dokumentbasiertes Authoring für Edge Delivery Services, damit Website-Autorinnen und -Autoren in AEM Assets-Repositorys verfügbare Bilder beim Erstellen von Dokumenten in Microsoft Word oder Google Docs verwenden können. Weitere Informationen finden Sie unter [Integrieren von AEM Assets mit dokumentbasiertem Authoring](/help/edge/using.md#integrate-assets-edge).
 
 ## Neue Assets-Funktionen {#whats-new-assets}
 

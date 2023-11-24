@@ -1,11 +1,11 @@
 ---
 title: Konfigurieren von Abwesenheitseinstellungen in AEM Forms
-description: Delegieren Sie Aufgaben während der Abwesenheit oder außerhalb des Büros, um eine nahtlose Workflow-Ausführung zu ermöglichen.
+description: Delegieren Sie Aufgaben während Ihrer Abwesenheit oder wenn Sie nicht im Büro sind, um eine nahtlose Workflow-Ausführung zu ermöglichen.
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '878'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 80%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 Für geplante Abwesenheitszeiten können Sie festlegen, was während dieser Zeit mit den Ihnen zugeordneten Elementen passieren soll.
@@ -28,10 +28,10 @@ Sie können die Elementzuweisung auf der Basis der Workflow-Modelle differenzier
 
 >[!NOTE]
 >
->* Wenn Sie die Einstellung &quot;Abwesenheit&quot;aktivieren, bleiben alle in Ihrem Posteingang verfügbaren Elemente, bevor Sie die Einstellung aktivieren, in Ihrem Posteingang. Nur Elemente, die nach Aktivierung der Abwesenheitseinstellungen empfangen wurden, werden delegiert.
+>* Wenn Sie die Abwesenheitseinstellung aktivieren, bleiben alle Elemente, die bis zu diesem Zeitpunkt in Ihrem Posteingang verfügbar sind, weiterhin im Posteingang. Nur Elemente, die nach Aktivierung der Abwesenheitseinstellungen empfangen wurden, werden delegiert.
 >* Wenn Sie die Abwesenheitseinstellung deaktivieren, werden die delegierten Elemente nicht automatisch an Sie zurückverwiesen. Mithilfe der Anforderungsfunktion können Sie Elemente an sich selbst übertragen.
 >* Wenn Benutzer A Elemente an Benutzer B delegiert und Benutzer B an Benutzer C weiterdelegiert, werden die Elemente nur Benutzer C und nicht Benutzer B zugewiesen.
->* Wenn eine Schleife in der Zuweisung vorhanden ist, bleiben die Aufgaben beim ursprünglichen Benutzer. Eine solche Schleife besteht beispielsweise, wenn ein Element von Benutzer A an Benutzer B, von Benutzer B an Benutzer C, von Benutzer C an Benutzer D und schließlich von Benutzer D an Benutzer B delegiert wird. In einem solchen Fall verbleibt der Artikel beim ursprünglichen Benutzer. Benutzer A ist der ursprüngliche Benutzer im obigen Beispiel.
+>* Wenn eine Schleife im Arbeitsauftrag entsteht, bleiben die Aufgaben bei der ursprünglichen Person. Eine solche Schleife besteht beispielsweise, wenn ein Element von Person A an Person B, von Person B an Person C, von Person C an Person D und schließlich von Person D an Person B delegiert wird. In einem solchen Fall verbleibt das Element bei der ursprünglichen Person. Beim obigen Beispiel ist A die ursprüngliche Person.
 
 ## Aktivieren der Abwesenheitseinstellung für Ihr Konto {#enable-out-of-office}
 
@@ -42,7 +42,7 @@ Führen Sie folgende Schritte aus, um die Abwesenheitseinstellung für Ihr Konto
 1. Öffnen Sie im Dialogfeld „Einstellungen“ die Registerkarte **[!UICONTROL Abwesenheit]**.
 1. Tippen Sie auf die Schaltfläche **[!UICONTROL Aktivieren/Deaktivieren]**, um die Abwesenheitseinstellung zu aktivieren.
 1. Geben Sie die Zeiten für **[!UICONTROL Startzeit]** und **[!UICONTROL Endzeit]** an. Die Elemente werden nur während des angegebenen Zeitraums delegiert. Lassen Sie das Feld **[!UICONTROL Ende]** leer, um Elemente auf unbestimmte Zeit zu übertragen.
-1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Meine Aufgaben während dieser Zeit weiterleiten]**. Wenn Sie die Option nicht auswählen und keinen Verantwortlichen angeben, werden Ihre Elemente nicht an einen Benutzer weitergeleitet. Obwohl Sie abwesend sind und die Einstellung aktiviert ist, bleiben alle Elemente in Ihrem Posteingang.
+1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Meine Aufgaben während dieser Zeit weiterleiten]**. Wenn Sie die Option nicht auswählen und keine Bevollmächtigten angeben, werden Ihre Elemente nicht an andere Benutzende weitergeleitet. Obwohl Sie abwesend sind und die Einstellung aktiviert ist, bleiben alle Elemente in Ihrem Posteingang.
 1. Tippen Sie auf **[!UICONTROL Verantwortlichen hinzufügen]**. Geben Sie im Feld **[!UICONTROL Bevollmächtigter]** einen Benutzer an, an den die Elemente delegiert werden sollen. Bestimmen Sie das **[!UICONTROL Workflow-Modell]**, um Elemente an den ausgewählten Benutzer zu delegieren. Sie können mehrere Workflow-Modelle auswählen.
 
    Wenn Sie einem bestimmten Benutzer alle Elemente unabhängig vom Workflow-Modell zuweisen möchten, wählen Sie in der Dropdown-Liste des Workflow-Modells die Option **[!UICONTROL Alle Workflows]**. <br>
@@ -54,7 +54,7 @@ Führen Sie folgende Schritte aus, um die Abwesenheitseinstellung für Ihr Konto
 
    >[!NOTE]
    >
-   >Die Reihenfolge der Empfänger ist wichtig. Wenn einem Benutzer, der die Abwesenheitseinstellung aktiviert hat, ein Element zugewiesen wird, wird das Element entsprechend der erstellten Empfängerliste weitergeleitet. Dabei gilt die Reihenfolge, in der die Empfänger hinzugefügt wurden. Wenn ein Element den Kriterien entspricht, wird es dem Bevollmächtigten zugewiesen und der nächste Bevollmächtigte wird nicht überprüft.
+   >Die Reihenfolge der Empfänger ist wichtig. Wenn einem Benutzer, der die Abwesenheitseinstellung aktiviert hat, ein Element zugewiesen wird, wird das Element entsprechend der erstellten Empfängerliste weitergeleitet. Dabei gilt die Reihenfolge, in der die Empfänger hinzugefügt wurden. Erfüllt ein Element die Kriterien, wird es an die jeweilige Person weitergeleitet, ohne dass weitere Beauftragte auf der Liste geprüft werden.
 
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**. Die Einstellung wird zum angegebenen Startzeitpunkt wirksam. Selbst wenn Sie sich während Ihrer Abwesenheit am System anmelden, gelten Sie erst wieder als anwesend, wenn Sie die Einstellungen ändern.
@@ -64,8 +64,8 @@ Nun werden alle während des Abwesenheitszeitraums empfangenen Elemente automati
 
 >[!NOTE]
 >
->(Nur für Forms-zentrierte Workflow-Elemente) Aktivieren Sie die **[!UICONTROL Delegieren des Bevollmächtigten mithilfe der &quot;Abwesenheitseinstellungen&quot;-Einstellungen zulassen]** der **[!UICONTROL Aufgabe zuweisen]** in den Workflow-Arbeitsbereich. Nur Elemente, bei denen diese Option aktiviert ist, werden an andere Benutzer delegiert.
->(Nur bei Formular-zentrierten Workflow-Elementen) Aktivieren Sie die Option **[!UICONTROL Empfänger darf über Abwesenheitseinstellung delegieren]** des Schritts **[!UICONTROL Aufgabe zuweisen]**. Nur Elemente, für die die oben genannte Option aktiviert ist, werden an andere Benutzer delegiert.
+>(Nur bei Formular-zentrierten Workflow-Elementen) Aktivieren Sie die Option **[!UICONTROL Zulassen, dass der Beauftragte mithilfe von Abwesenheits-Einstellungen delegiert]** des Schritts **[!UICONTROL Aufgabe zuweisen]**. Nur Elemente, bei denen diese Option aktiviert ist, werden an andere Benutzende delegiert.
+>(Nur bei Formular-zentrierten Workflow-Elementen) Aktivieren Sie die Option **[!UICONTROL Zulassen, dass der Beauftragte mithilfe von Abwesenheits-Einstellungen delegiert]** des Schritts **[!UICONTROL Aufgabe zuweisen]**. Nur Elemente, bei denen die zuvor genannte Option aktiviert ist, werden an andere Benutzende delegiert.
 
 ## Beschränkungen {#limitations}
 

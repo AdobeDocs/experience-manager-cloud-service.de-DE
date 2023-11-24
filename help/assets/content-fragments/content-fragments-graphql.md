@@ -4,9 +4,9 @@ description: Lernen Sie die grundlegenden Konzepte zur Realisierung eines AEM He
 feature: Content Fragments, GraphQL API
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '730'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 92%
 
 Mit Inhaltsfragmenten und der GraphQL-API können Sie Adobe Experience Manager (AEM) as a Cloud Service als Headless-Content Management System (CMS) verwenden.
 
-Dies wird durch die Verwendung von Inhaltsfragmenten in Verbindung mit der AEM GraphQL-API (eine benutzerdefinierte Implementierung, die auf Standard-GraphQL basiert) erreicht, um strukturierte Inhalte für die Verwendung in Ihren Programmen ohne Probleme „headless“ bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie bestimmte Inhalte abrufen und bereitstellen, die gerendert werden sollen/müssen (als Antwort auf die einzelne API-Abfrage).
+Dies wird durch die Verwendung von Inhaltsfragmenten in Verbindung mit der AEM GraphQL-API (eine benutzerdefinierte Implementierung, die auf Standard-GraphQL basiert) erreicht, um strukturierte Inhalte für die Verwendung in Ihren Programmen ohne Probleme „headless“ bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie den spezifischen Inhalt, den Sie rendern möchten/müssen (als Antwort auf die einzelne API-Abfrage), abrufen und bereitstellen.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ GraphQL ist:
 
   Weitere Informationen finden Sie unter [GraphQL.org](https://graphql.org)
 
-Die [GraphQL-API AEM](#aem-graphql-api) ermöglicht Ihnen, (komplexe) Abfragen an Ihre [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md); wobei jede Abfrage einem bestimmten Modelltyp entspricht. Die zurückgegebenen Inhalte können dann von Ihren Programmen verwendet werden.
+Mit der [AEM-GraphQL-API](#aem-graphql-api) können Sie (komplexe) Abfragen für Ihre [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) durchführen, wobei jede Abfrage einem bestimmten Modelltyp entspricht. Die zurückgegebenen Inhalte können dann von Ihren Anwendungen verwendet werden.
 
 ## AEM-GraphQL-API {#aem-graphql-api}
 

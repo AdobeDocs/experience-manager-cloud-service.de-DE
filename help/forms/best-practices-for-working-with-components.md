@@ -1,10 +1,10 @@
 ---
-title: Best Practices und wichtige Punkte, die Sie beim Arbeiten mit AEM adaptiven Formularen beachten sollten.
+title: 'Optimale Verfahren und wichtige Hinweise zum Arbeiten adaptiven AEM-Formularen:'
 description: Einige optimale Verfahren und wichtige Hinweise zum Arbeiten mit Komponenten adaptiver Formulare.
 source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '641'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 80%
 Hier finden Sie einige optimale Verfahren und wichtige Hinweise zum Arbeiten mit Komponenten adaptiver Formulare:
 
 * Jede Komponente verfügt über zugehörige Eigenschaften, die ihre Darstellung und Funktion steuern. Tippen Sie zum Konfigurieren der Eigenschaften einer Komponente auf die Komponente und auf ![Eigenschaften](assets/Smock_Wrench_18_N.svg), um die Komponenteneigenschaften im Eigenschaftenbrowser zu öffnen.
-* Eine Komponente wird mit ihrem Elementnamen gekennzeichnet. Wenn Sie auf ![Eigenschaften](assets/Smock_Wrench_18_N.svg) tippen, können Sie den Namen der Komponente ändern, indem Sie den Wert des Felds **[!UICONTROL Elementname]** im Eigenschaftenbrowser ändern. Im Feld &quot;Elementname&quot;sind nur Buchstaben, Zahlen, Bindestriche (-) und Unterstriche (_) zulässig. Andere Sonderzeichen sind nicht zulässig und der Elementname sollte mit einem Brief beginnen.
+* Eine Komponente wird mit ihrem Elementnamen gekennzeichnet. Wenn Sie auf ![Eigenschaften](assets/Smock_Wrench_18_N.svg) tippen, können Sie den Namen der Komponente ändern, indem Sie den Wert des Felds **[!UICONTROL Elementname]** im Eigenschaftenbrowser ändern. Das Feld „Elementname“ akzeptiert nur Buchstaben, Zahlen, Bindestriche (-) und Unterstriche (_).  Andere Sonderzeichen sind nicht zulässig, und der Elementname sollte mit einem Buchstaben beginnen.
 
 * Sie können die Eigenschaft „Titel“ einer Komponente eines adaptiven Formulars inline im Formulareditor ändern, ohne den Eigenschaftenbrowser zu öffnen, solange der Titel im Formular sichtbar ist. Gehen Sie dazu wie folgt vor:
 
@@ -33,13 +33,13 @@ Hier finden Sie einige optimale Verfahren und wichtige Hinweise zum Arbeiten mit
 * Mithilfe von Textfeld-, E-Mail- und Telefonkomponenten können Sie in Feldern wie Name, Adresse, Kreditkarte, Telefon und E-Mail automatisch Werte aus den Daten übernehmen lassen, die in den Browsereinstellungen für das automatische Ausfüllen gespeichert sind. Um diese Funktion zu aktivieren, wählen Sie **[!UICONTROL Automatisches Ausfüllen aktivieren]** in den Komponenteneigenschaften und ein **[!UICONTROL Attribut für automatisches Ausfüllen]** aus. Wenn ein Benutzer ein adaptives Formular ausfüllt, werden Werte aus dem Profil für automatisches Ausfüllen im Browser oder anhand früher vom Benutzer eingegebener Werte vorgeschlagen. Beachten Sie, dass das automatische Ausfüllen nur funktioniert, wenn die Einstellungen für automatisches Ausfüllen im Browser des Benutzers aktiviert sind.
 
 * Geben Sie in den Komponenteneigenschaften Werte für Optionsfeld- und Kontrollkästchenelemente im Format `{value}={text}` an.
-* Die Dateianlagenkomponente ermöglicht es einem Benutzer standardmäßig, nur eine Datei anzuhängen. Sie können die Komponenteneigenschaften jedoch so konfigurieren, dass mehrere Anhänge unterstützt werden. Wenn ein Benutzer mehrere Dateien mit demselben Dateinamen anhängt, können die Anhänge einige Probleme verursachen. Daher wird empfohlen, bei der Formularübermittlung für jeden gesendeten Anhang eine eindeutige Kennung zu verknüpfen. Gehen Sie dazu wie folgt vor:
+* Die Dateianhangskomponente ermöglicht es Benutzenden standardmäßig, nur eine Datei anzuhängen. Sie können jedoch die Komponenteneigenschaften so konfigurieren, dass mehrere Anhänge unterstützt werden.  Darüber hinaus können Probleme auftreten, wenn mehrere Dateien mit demselben Dateinamen angehängt werden. Daher wird empfohlen, bei der Übermittlung des Formulars jedem übermittelten Anhang eine eindeutige Kennung zuzuweisen. Gehen Sie dazu wie folgt vor:
 
    1. Navigieren Sie auf Ihrem [!DNL AEM Forms]-Server zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
    1. Suchen Sie nach **[!UICONTROL Konfigurations-Service für adaptive Formulare]** und tippen Sie darauf.
    1. Aktivieren Sie im Dialog „Konfigurations-Service für adaptive Formulare“ **[!UICONTROL Dateinamen individualisieren]**. Diese Option ist standardmäßig deaktiviert.
 
-* Damit Benutzer eine PDF über den Safari-Browser anhängen können, müssen Sie sicherstellen, dass **application/pdf** wird der Eigenschaft &quot;Unterstützte Dateitypen&quot;der Komponente Dateianhang hinzugefügt. Adaptive Formulare, die mit der vorherigen [!DNL AEM Forms]-Version erstellt wurden, enthalten in der Eigenschaft „Unterstützte Dateitypen“ möglicherweise **.pdf** statt **application/pdf**.
+* Damit Benutzende eine PDF-Datei mit dem Safari-Browser anhängen können, müssen Sie sicherstellen, dass **application/pdf** zur Eigenschaft „Unterstützte Dateitypen“ der Dateianhangskomponente hinzugefügt wird. Adaptive Formulare, die mit der vorherigen [!DNL AEM Forms]-Version erstellt wurden, enthalten in der Eigenschaft „Unterstützte Dateitypen“ möglicherweise **.pdf** statt **application/pdf**.
 
 >[!NOTE]
 >

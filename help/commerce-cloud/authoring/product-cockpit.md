@@ -1,11 +1,11 @@
 ---
 title: Produkt-Cockpit
-description: Erfahren Sie, wie Sie mit dem Produkt-Cockpit arbeiten, das eine einheitliche Übersicht über verknüpfte Produktkataloge und zugehörige Inhalte bietet.
+description: Erfahren Sie, wie Sie mit dem Produkt-Cockpit arbeiten, das einen einheitlichen Überblick über verknüpfte Produktkataloge und zugehörige Inhalte bietet.
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
 source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '448'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 

@@ -3,9 +3,9 @@ title: Warten eines AEM-Connectors
 description: Erfahren Sie, wie Sie Ihren AEM-Connector nach der ersten Übermittlung verwalten und aktualisieren können.
 exl-id: 8122a8c8-6577-4907-8f6e-52711eed3970
 source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '171'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
