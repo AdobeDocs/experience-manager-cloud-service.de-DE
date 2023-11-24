@@ -5,7 +5,7 @@ exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '169'
-ht-degree: 55%
+ht-degree: 92%
 
 ---
 
@@ -15,13 +15,13 @@ Verwenden Sie die Funktion „Strukturbaum“ des Inhaltsfragment-Editors in AEM
 
 >[!NOTE]
 >
->Inhaltsfragmente sind eine Sites-Funktion, werden jedoch als **Assets**.
+>Inhaltsfragmente sind eine Sites-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
->Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor beschrieben, auf den Sie hauptsächlich über das **Assets** Konsole. Weitere Informationen finden Sie in der Sites-Dokumentation . [Inhaltsfragmente - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md)für Details zum neuen Editor (hauptsächlich über die **Inhaltsfragmente** -Konsole).
+>Es gibt zwei Editoren für die Erstellung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
 
-Im Inhaltsfragment-Editor können Sie das Strukturbaumsymbol auswählen:
+Im Inhaltsfragmenteditor können Sie das Strukturbaumsymbol auswählen:
 
-![Struktur von Inhaltsfragmenten im Seitenbereich](assets/cfm-structuretree-01.png)
+![Strukturbaum der Inhaltsfragmente im Seitenbereich](assets/cfm-structuretree-01.png)
 
 Dadurch wird eine Darstellung der Fragmentstruktur im linken Bereich geöffnet. Auf diese Weise können Sie durch referenzierte Fragmente navigieren und zu ihnen gelangen. Wenn Sie eine Referenz auswählen, wird dieses Fragment zur Bearbeitung geöffnet.
 
@@ -29,4 +29,4 @@ Dadurch wird eine Darstellung der Fragmentstruktur im linken Bereich geöffnet. 
 >
 >Mithilfe der Breadcrumbs im Hauptbedienfeld können Sie zurück zu Ihrem Ausgangspunkt gelangen.
 
-![Beispiel für eine Struktur von Inhaltsfragmenten](assets/cfm-structuretree-02.png)
+![Strukturbaum der Inhaltsfragmente](assets/cfm-structuretree-02.png)

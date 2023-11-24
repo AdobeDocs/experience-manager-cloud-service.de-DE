@@ -8,7 +8,7 @@ exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
 source-wordcount: '1939'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html#adobe-acrobat-sign-for-government) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html#adobe-acrobat-sign-for-government?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 [!DNL Adobe Acrobat Sign] ermöglicht E-Signatur-Workflows für adaptive Formulare und AEM-Workflows. E-Signaturen verbessern die Workflows bei der Verarbeitung von Dokumenten in den Bereichen Recht, Vertrieb, Gehaltsabrechnung, Personalverwaltung u. v. a..
@@ -124,7 +124,7 @@ Das Verbinden von AEM Forms mit Adobe Acrobat Sign Solutions für Behörden ist 
 * Erhalten von Anmeldedaten vom Adobe Sign-Team
 * Verwenden der erhaltenen Anmeldeinformationen, um AEM Forms mit Adobe Acrobat Sign Solutions für Behörden zu verbinden
 
-![Adobe Sign-Verwaltungs-Workflow](/help/forms/assets/adobe-acrobat-sign-govt-workflow.png)
+![Adobe Sign-Workflow für Behörden](/help/forms/assets/adobe-acrobat-sign-govt-workflow.png)
 
 
 AEM Forms as a Cloud Service bietet Entwicklungs-, Staging- und Produktionsumgebungen. Sie können damit beginnen, Ihre Entwicklungsumgebung mit Adobe Acrobat Sign Solutions für Behörden zu verbinden, und die Staging- und Produktionsumgebungen später verbinden.
@@ -217,5 +217,5 @@ Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem
 
 >[!MORELIKETHIS]
 >
->* [Formular mithilfe von Freihandsignaturen e-signieren](/help/forms/signing-forms-using-scribble.md)
+>* [E-Signieren eines Formulars mithilfe von Freihandsignaturen](/help/forms/signing-forms-using-scribble.md)
 >* [Best Practices für das Verwenden von Adobe Sign mit adaptiven Formularen](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)

@@ -1,6 +1,6 @@
 ---
-title: Was sind für adaptive Forms reservierte Schlüsselwörter?
-description: Reservierte Schlüsselwörter, die Sie nicht als Kennungen in Ihrem adaptiven Forms verwenden können.
+title: Was sind für adaptive Formulare reservierte Schlüsselwörter?
+description: Reservierte Schlüsselwörter, die Sie nicht als Kennungen in Ihren adaptiven Formularen verwenden können.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -8,7 +8,7 @@ discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ Schlüsselwörter für adaptive Formulare sind vordefinierte, reservierte Bezeic
   </tr>
   <tr>
    <td><p>validatePictureClauseMessage</p> </td>
-   <td><p>Elemente</p> </td>
+   <td><p>items</p> </td>
    <td><p>nonLocalizedTitle</p> </td>
   </tr>
   <tr>
@@ -130,7 +130,7 @@ Schlüsselwörter für adaptive Formulare sind vordefinierte, reservierte Bezeic
    <td><p>index</p> </td>
   </tr>
   <tr>
-   <td><p>Höhe</p> </td>
+   <td><p>height</p> </td>
    <td><p>showComment</p> </td>
    <td><p>visible</p> </td>
   </tr>

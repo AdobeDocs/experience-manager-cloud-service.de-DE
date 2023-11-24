@@ -9,7 +9,7 @@ exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '4301'
-ht-degree: 84%
+ht-degree: 87%
 
 ---
 
@@ -44,24 +44,24 @@ Die folgenden Zeichen (in der Liste durch Leerzeichen getrennt) werden nicht unt
 
 Siehe [Hinzufügen digitaler Assets zu Experience Manager](add-assets.md).
 
-## ZIP-Archive extrahieren {#extract-zip-archives}
+## Extrahieren von ZIP-Archiven {#extract-zip-archives}
 
-Wählen Sie im Experience Manager verwaltete ZIP-Archive aus und extrahieren Sie die Dateien direkt in den Experience Manager, ohne sie herunterzuladen.
+Wählen Sie in Experience Manager verwaltete ZIP-Archive aus und extrahieren Sie die Dateien direkt in Experience Manager, ohne sie herunterzuladen.
 
 Gehen Sie wie folgt vor, um die ZIP-Dateien zu extrahieren:
 
 1. Wählen Sie den ZIP-Dateityp aus.
-1. Klicken Sie auf **[!UICONTROL Archiv extrahieren]** in der Symbolleiste verfügbar.
-1. Wählen Sie den Ordner aus, in dem Sie die extrahierten Assets speichern müssen, die im komprimierten Ordner verfügbar sind.
+1. Klicken Sie in der Aktionsleiste auf **[!UICONTROL Archiv extrahieren]**.
+1. Wählen Sie den Ordner aus, in dem Sie die extrahierten Assets speichern möchten, die im komprimierten Ordner verfügbar sind.
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
-1. Wählen Sie das geeignete Verhalten aus, um Dateinamenkonflikte während der Extraktion zu verarbeiten. Sie können auswählen, ob Sie eine Version eines vorhandenen Assets erstellen, das Asset ersetzen, beide Assets im Zielordner belassen oder die Extraktion des neuen Assets überspringen möchten.
-1. Klicks **[!UICONTROL Extract]**. Der Zip-Extraktionsvorgang wird gestartet. Sobald der Prozess abgeschlossen ist, können Sie die extrahierten Assets im Zielordner anzeigen.
+1. Wählen Sie das geeignete Verhalten aus, um Dateinamenkonflikten während der Extraktion zu begegnen. Sie können auswählen, ob Sie eine Version eines vorhandenen Assets erstellen, das Asset ersetzen, beide Assets im Zielordner belassen oder die Extraktion des neuen Assets überspringen möchten.
+1. Klicken Sie auf **[!UICONTROL Extrahieren]**. Der ZIP-Extraktionsvorgang wird gestartet. Wenn der Prozess abgeschlossen ist, können Sie die extrahierten Assets im Zielordner anzeigen.
 
    ![ZIP-Extraktion](assets/zip-extraction.png)
 
 >[!NOTE]
 >
->* Die maximal unterstützte ZIP-Dateigröße beträgt 15 GB.
+>* Die maximal unterstützte Größe von ZIP-Dateien beträgt 15 GB.
 >* Sie können maximal drei ZIP-Dateien gleichzeitig extrahieren.
 
 ## Anzeigen einer Vorschau für Assets {#previewing-assets}
@@ -442,7 +442,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 
 >[!NOTE]
 >
->Für einen Benutzer ohne Administratorberechtigung sind Vorschläge nur dann sichtbar, wenn er über eine Leseberechtigung in `/home` in CRXDE verfügt.
+>Für Benutzende ohne Administratorberechtigung sind Vorschläge nur dann sichtbar, wenn sie über eine Leseberechtigung in `/home` in CRXDE verfügen.
 
 <!--![chlimage_1-235](assets/chlimage_1-235.png)-->
 

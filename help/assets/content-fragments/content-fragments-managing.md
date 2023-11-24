@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1876'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -34,11 +34,11 @@ Der [Inhaltsfragment-Editor](#opening-the-fragment-editor) bietet verschiedene [
 
 >[!NOTE]
 >
->Inhaltsfragmente sind eine Sites-Funktion, werden jedoch als **Assets**.
+>Inhaltsfragmente sind eine Sites-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
 >Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**-Konsole verwaltet, können jedoch weiterhin über die **Assets**-Konsole verwaltet werden. In diesem Abschnitt wird die Verwaltung über die **Assets**-Konsole beschrieben.
 >
->Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor beschrieben, auf den Sie hauptsächlich über das **Assets** Konsole. Weitere Informationen finden Sie in der Sites-Dokumentation . [Inhaltsfragmente - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md)für Details zum neuen Editor (hauptsächlich über die **Inhaltsfragmente** -Konsole). Beide Editoren verfügen in der oberen Symbolleiste über einen Umschalter, um einen schnellen Zugriff auf den anderen Editor zu ermöglichen.
+>Es gibt zwei Editoren für die Erstellung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md). Beide Editoren verfügen in der oberen Symbolleiste über einen Umschalter, um einen Schnellzugriff auf den jeweils anderen Editor zu ermöglichen.
 
 ## Erstellen von Inhaltsfragmenten {#creating-content-fragments}
 
@@ -109,11 +109,11 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 * **Checkout**
 * **Eigenschaften**
 
-   * Hiermit können Sie die Metadaten des Fragments anzeigen, bearbeiten oder beides.
+   * Ermöglicht es Ihnen, die Metadaten des Fragments anzuzeigen oder zu bearbeiten, oder beides.
 
 * **Bearbeiten**
 
-   * Ermöglicht Ihnen Folgendes [Öffnen Sie das Fragment zur Bearbeitung des Inhalts.](/help/assets/content-fragments/content-fragments-variations.md) zusammen mit den zugehörigen Elementen, Varianten, verknüpften Inhalten und Metadaten.
+   * Ermöglicht das [Öffnen des Fragments zur Bearbeitung des Inhalts](/help/assets/content-fragments/content-fragments-variations.md) zusammen mit seinen Elementen, Variationen, zugehörigen Inhalten und Metadaten.
 
 * **Quick Publish**
 * **Veröffentlichung verwalten**
@@ -171,7 +171,7 @@ Navigieren Sie mit den Symbolen im seitlichen Bedienfeld durch die vier Modi:
 * [Strukturbaum](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [Vorschau](/help/assets/content-fragments/content-fragments-json-preview.md)
 
-![Modi im Inhaltsfragment-Editor](assets/cfm-managing-04.png)
+![Modi im Inhaltsfragmenteditor](assets/cfm-managing-04.png)
 
 ### Symbolleisten-Aktionen im Inhaltsfragment-Editor {#toolbar-actions-in-the-content-fragment-editor}
 
@@ -195,11 +195,11 @@ Einige Funktionen in der oberen Symbolleiste stehen in mehreren Modi zur Verfüg
    * **Geändert**: orange
    * **Deaktiviert**: rot
 
-* Mit einer Schaltfläche können Sie **Neuen Editor testen** durch direktes Öffnen der *new* [Inhaltsfragment-Editor](/help/sites-cloud/administering/content-fragments/authoring.md) , auf die über die [Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+* Mit einer Schaltfläche können Sie den **neuen Editor testen**, indem Sie den *neuen* [Inhaltsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md) direkt öffnen. Auf ihn können Sie über die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) zugreifen.
 
   >[!WARNING]
   >
-  >Der neue Editor wird auf derselben Registerkarte geöffnet. Es wird nicht empfohlen, beide Editoren gleichzeitig zu öffnen.
+  >Der neue Editor wird auf derselben Registerkarte geöffnet. Es wird nicht empfohlen, beide Editoren gleichzeitig geöffnet zu haben.
 
 * Über **Speichern** haben Sie Zugriff auf die Option **Speichern und schließen**.
 
@@ -313,7 +313,7 @@ Anmerkungen (für Inhaltsfragmente) sind:
 
 Beispiel:
 
-![Zeitleiste](assets/cfm-managing-05.png)
+![Timeline](assets/cfm-managing-05.png)
 
 ## Vergleichen von Fragment-Versionen {#comparing-fragment-versions}
 
@@ -333,7 +333,7 @@ Sie werden nebeneinander angezeigt, wobei:
    * Eingefügter Text: Grün
    * Ersetzter Text: Blau
 
-* Über das Symbol für den Vollbildmodus können Sie jede Version einzeln öffnen und dann wieder zur parallelen Ansicht wechseln
+* Mit dem Vollbildsymbol können Sie beide Versionen einzeln öffnen und dann zur Parallelansicht zurückschalten.
 * Sie die jeweilige Version **wiederherstellen** können.
 * Sie über **Fertig** zur Konsole zurückkehren.
 
@@ -341,7 +341,7 @@ Sie werden nebeneinander angezeigt, wobei:
 >
 Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleichen.
 
-![Varianten vergleichen](assets/cfm-managing-06.png)
+![Vergleichen von Varianten](assets/cfm-managing-06.png)
 
 ## Wiederherstellen einer früheren Version  {#reverting-to-a-version}
 

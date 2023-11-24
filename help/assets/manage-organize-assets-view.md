@@ -7,7 +7,7 @@ exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -88,7 +88,7 @@ Sie können Versionen auch aus der Versions-Zeitleiste erstellen. Wählen Sie di
 
 **Erforderliche Berechtigungen:**  `Can Edit`, `Owner` oder Administratorrechte für ein Asset.
 
-Mit der Asset-Ansicht können Sie den Status für im Repository verfügbare Assets festlegen. Legen Sie einen Asset-Status fest, um die nachgelagerte Nutzung digitaler Assets besser steuern und verwalten zu können.
+In der Assets-Ansicht können Sie den Status der im Repository verfügbaren Assets festlegen. Legen Sie einen Asset-Status fest, um die nachgelagerte Nutzung digitaler Assets besser steuern und verwalten zu können.
 
 Sie können die folgenden Status für Assets festlegen:
 
@@ -111,7 +111,7 @@ Festlegen eines Asset-Status
 
 ### Festlegen des Ablaufdatums eines Assets {#set-asset-expiration-date}
 
-In der Asset-Ansicht können Sie außerdem das Ablaufdatum für die im Repository verfügbaren Assets festlegen. Sie können dann die [Suchergebnisse filtern](search-assets-view.md#refine-search-results), auf der Grundlage des Asset-Status `Expired`. Darüber hinaus können Sie einen Zeitraum für das Ablaufdatum für Assets angeben, um Ihre Suchergebnisse weiter zu filtern.
+In der Assets-Ansicht können Sie auch das Ablaufdatum für die im Repository verfügbaren Assets festlegen. Sie können dann die [Suchergebnisse filtern](search-assets-view.md#refine-search-results), auf der Grundlage des Asset-Status `Expired`. Darüber hinaus können Sie einen Zeitraum für das Ablaufdatum für Assets angeben, um Ihre Suchergebnisse weiter zu filtern.
 
 So legen Sie das Ablaufdatum eines Assets fest:
 

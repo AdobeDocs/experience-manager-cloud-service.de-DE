@@ -1,6 +1,6 @@
 ---
-title: Wie kann der Inhalt von Seite Null in Designer geändert werden?
-description: Ändern Sie die Meldung, die auf Seite Null einer XFA-PDF für Nicht-Adobe PDF-Viewer angezeigt wird.
+title: Ändern des Inhalts auf Seite Null in Designer
+description: Ändern Sie die Meldung, die auf Seite Null einer XFA-PDF für Nicht-Adobe-PDF-Viewer angezeigt wird.
 uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -9,7 +9,7 @@ docset: aem65
 source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Der Inhalt auf Seite Null wird standardmäßig angezeigt, wenn ein PDF-Viewer, d
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
-[!DNL AEM Forms] In der Designer-Version können Sie die Meldung ändern, die auf Seite 0 angezeigt wird. Zum Ändern der auf Seite Null angezeigten Meldung müssen Sie folgende Schritte ausführen:
+Mit der Version [!DNL AEM Forms] von Designer können Sie die auf Seite Null angezeigte Meldung ändern. Zum Ändern der auf Seite Null angezeigten Meldung müssen Sie folgende Schritte ausführen:
 
 1. Stellen Sie sicher, dass die Version [!DNL AEM Forms] von Designer auf Ihrem Computer installiert ist. Sie können die Version im Bildschirm „Info“ des Designers überprüfen.
 
@@ -30,8 +30,8 @@ Der Inhalt auf Seite Null wird standardmäßig angezeigt, wenn ein PDF-Viewer, d
 
 1. Klicken Sie im Dialog [!UICONTROL Formulareigenschaften] auf ![plus](assets/plus.png) (Plussymbol), um eine benutzerdefinierte Eigenschaft hinzuzufügen.
 
-1. Angeben **_pagezerocontent** als Name der Eigenschaft.
-1. Fügen Sie die neue Meldung &quot;Seite Null&quot;im Rich-Text-Format als Wert hinzu. Beispiel:
+1. Geben Sie **_pagezerocontent** als Name der Eigenschaft an.
+1. Fügen Sie die neue Meldung auf Seite Null als Wert im Rich Text-Format hinzu. Beispiel:
 
 
    `<body xmlns="https://www.w3.org/1999/xhtml" xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">You are seeing this message maybe because you are using a non Adobe PDF Viewer or an Old version of Adobe Reader. You can upgrade to the latest version of Adobe Reader for Windows, Mac, or Linux by visiting <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/reader_download.</p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">For more assistance with Adobe Reader visit <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/acrreader.</p></body>`
@@ -44,9 +44,9 @@ Der Inhalt auf Seite Null wird standardmäßig angezeigt, wenn ein PDF-Viewer, d
 
 >[!NOTE]
 >
->Die soeben erstellte benutzerdefinierte Eigenschaft wird möglicherweise nicht ordnungsgemäß im Dialogfeld &quot;Formulareigenschaften&quot;angezeigt, wenn Sie das Formular erneut öffnen. Es funktioniert jedoch einwandfrei und das Formular zeigt die aktualisierte Meldung auf Seite Null an.
+>Die gerade von Ihnen erstellte benutzerdefinierte Eigenschaft wird möglicherweise nicht korrekt im Dialogfeld „Formulareigenschaften“ angezeigt, wenn Sie das Formular erneut öffnen. Sie funktioniert jedoch einwandfrei und das Formular zeigt die aktualisierte Meldung auf Seite Null an.
 
 >[!MORELIKETHIS]
 >
->* [Herunterladen und Installieren von Forms Designer zum Erstellen von Datensatzdokumentvorlagen](/help/forms/installing-configuring-designer.md)
+>* [Herunterladen und Installieren von Forms Designer, um Vorlagen für Datensatzdokumente zu erstellen](/help/forms/installing-configuring-designer.md)
 >* [Verwenden von Forms Designer zum Erstellen von DoR-Vorlagen und Formularfragmenten?](/help/forms/use-forms-designer.md)

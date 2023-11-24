@@ -4,14 +4,14 @@ description: Verwenden Sie adaptive Formularausdrücke, um automatische Überpr�
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2698'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
 
 # Adaptive Formularausdrücke {#adaptive-form-expressions}
 
-Adaptive Formulare bieten Endbenutzern mit Kenntnissen in dynamischer Skripterstellung ein optimiertes und vereinfachtes Ausfüllen von Formularen. Sie können damit Ausdrücke schreiben, um verschiedene Verhaltensweisen hinzuzufügen, z. B. dynamische Ein-/Ausblendfelder und Bedienfelder. Außerdem können Sie auch berechnete Felder oder Überprüfungslogik hinzufügen, Felder als schreibgeschützt festlegen und vieles mehr. Das dynamische Verhalten basiert auf den vom Benutzer eingegebenen oder vorab eingetragenen Daten.
+Adaptive Formulare bieten Endbenutzenden mit Kenntnissen in dynamischer Skripterstellung ein optimiertes und vereinfachtes Ausfüllen von Formularen. Sie können so Ausdrücke zum Hinzufügen verschiedener Verhaltensweisen schreiben, wie etwa für dynamisch ein-/ausgeblendete Felder und Panels. Außerdem können Sie auch berechnete Felder oder Überprüfungslogik hinzufügen, Felder als schreibgeschützt festlegen und vieles mehr. Das dynamische Verhalten basiert auf den vom Benutzer eingegebenen oder vorab eingetragenen Daten.
 
 JavaScript™ ist die Sprache, in der Ausdrücke in adaptiven Formularen geschrieben sind. Alle Ausdrücke sind gültige JavaScript™-Ausdrücke und nutzen Skriptmodell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs für adaptive Formulare finden Sie in der [JavaScript™ Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/de/experience-manager/6-5/forms/javascript-api/index.html).
 

@@ -1,23 +1,23 @@
 ---
-title: Wie werden Überprüfungen in Formularen erstellt und verwaltet?
-description: Verwenden Sie den Überprüfungsmechanismus, um Überprüfer hinzuzufügen und es ihnen zu ermöglichen, Kommentare zu einem Formular abzugeben.
+title: Erstellen und Verwalten von Überprüfungen in Formularen
+description: Verwenden Sie den Überprüfungsmechanismus zum Hinzufügen von Prüfenden und damit Prüfende ein Formular kommentieren können.
 topic-tags: forms-manager
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
 source-wordcount: '733'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # Erstellen und Verwalten von Überprüfungen in Formularen{#creating-and-managing-reviews-to-forms}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird ein älterer Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/creating-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird ein älterer Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
 
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 ## Überprüfung {#review}
@@ -33,7 +33,7 @@ Bei einer Überprüfung handelt es sich um einen Mechanismus, mit dem ein oder m
    * **Titel**: obligatorisch, kann alphanumerische Zeichen, Bindestriche und Unterstriche enthalten.
    * **Beschreibung**: optional, Beschreibung des Zwecks/Inhalts der Überprüfung.
    * **Frist**: optional, das Datum, an dem die Überprüfung beendet sein soll. Wenn die Frist bereits abgelaufen ist, wird die Aufgabe als „überfällig“ angezeigt.
-   * **Name der Überprüfungsperson**: Es ist mindestens ein Name erforderlich. Verwenden Sie das Kombinationsfeld, um Überprüfungspersonen hinzuzufügen, indem Sie eine Namensliste mit allen übereinstimmenden Namen eingeben, einen Namen auswählen und auf **Hinzufügen** klicken. Im nächsten Abschnitt der **Überprüfer** zeigt die Namen aller validierungsverantwortlichen Benutzer an.
+   * **Name der Überprüfungsperson**: Es ist mindestens ein Name erforderlich. Verwenden Sie das Kombinationsfeld, um Überprüfungspersonen hinzuzufügen, indem Sie eine Namensliste mit allen übereinstimmenden Namen eingeben, einen Namen auswählen und auf **Hinzufügen** klicken. Im nächsten Abschnitt der Registerkarte **Prüfer** werden die Namen aller Prüfenden angezeigt.
 
 1. Klicken Sie auf **Start**, um eine Überprüfung zu starten.
 
@@ -68,7 +68,7 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 
    Klicken Sie auf das Symbol **Überprüfung verwalten** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 
-   Für andere Benutzer als Initiatoren ist das Symbol &quot;Überprüfung verwalten&quot;deaktiviert.
+   Für Benutzende, die nicht die Initiatorin bzw. der Initiator sind, ist das Symbol zum Verwalten von Überprüfungen deaktiviert.
 
 1. Es wird nun ein Bildschirm mit den folgenden Informationen angezeigt:
 

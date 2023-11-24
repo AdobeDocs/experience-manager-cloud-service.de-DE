@@ -8,15 +8,15 @@ exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
 source-wordcount: '1775'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Erstellen einer benutzerdefinierten Sende-Aktion für adaptive Formulare {#writing-custom-submit-action-for-adaptive-forms}
+# Erstellen einer benutzerdefinierten Übermittlungsaktion für adaptive Formulare {#writing-custom-submit-action-for-adaptive-forms}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 Ein adaptives Formular stellt mehrere vordefinierte Sende-Aktionen zur Verfügung. Eine Sende-Aktion gibt Details zu den Aktionen an, die mit den über das adaptive Formular erfassten Daten durchgeführt werden sollen. Beispielsweise das Senden von Daten in einer E-Mail.
@@ -393,4 +393,4 @@ Perform the following steps to create a custom Submit Action that saves the data
 
 >[!MORELIKETHIS]
 >
->* [Konfigurieren einer Sendeaktion für ein adaptives Formular](/help/forms/configure-submit-actions-core-components.md)
+>* [Konfigurieren einer Übermittlungsaktion für ein adaptives Formular](/help/forms/configure-submit-actions-core-components.md)

@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von AEM Assets as a [!DNL Cloud Service] mit Brand Portal
-description: Erfahren Sie, wie Sie AEM Assets mit Brand Portal konfigurieren. Mit der Konfiguration können Sie genehmigte Marken-Assets von einer AEM in Brand Portal veröffentlichen und an die Brand Portal-Benutzer verteilen.
+description: Erfahren Sie, wie Sie AEM Assets mit Brand Portal konfigurieren. Die Konfiguration ermöglicht es Ihnen, genehmigte Marken-Assets von einer AEM-Instanz im Brand Portal zu veröffentlichen und sie an die Benutzerinnen und Benutzer des Brand Portal zu verteilen.
 contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
@@ -8,7 +8,7 @@ exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2584'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 93%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-Durch die Konfiguration von Adobe Experience Manager Assets Brand Portal können Sie genehmigte Marken-Assets aus Adobe Experience Manager Assets as a veröffentlichen. [!DNL Cloud Service] -Instanz auf Brand Portal zu installieren und sie an die Brand Portal-Benutzer zu verteilen.
+Durch das Konfigurieren von Adobe Experience Manager Assets Brand Portal können Sie genehmigte Marken-Assets aus der Adobe Experience Manager Assets as a [!DNL Cloud Service]-Instanz in Brand Portal veröffentlichen und an die Brand Portal-Benutzerinnen und -Benutzer verteilen.
 
 ## Aktivieren von Brand Portal mit Cloud Manager {#activate-brand-portal}
 
@@ -371,7 +371,7 @@ Gehen Sie wie folgt vor, um das IMS-Konto zu konfigurieren.
 
    Klicken Sie im Dialogfeld auf **[!UICONTROL Prüfen]**. Bei erfolgreicher Konfiguration wird eine Meldung angezeigt, dass das *Token erfolgreich abgerufen* wurde.
 
-   ![Konsistenzprüfung der Adobe IMS-Konfigurationen.](assets/create-new-integration5.png)
+   ![Konsistenzprüfung für Adobe IMS-Konfigurationen.](assets/create-new-integration5.png)
 
 >[!CAUTION]
 >
@@ -395,7 +395,7 @@ Führen Sie die folgenden Schritte aus, um den Brand Portal-Cloud-Service zu kon
 
    Geben Sie im Feld **[!UICONTROL Dienst-URL]** Ihre Brand Portal-Mandanten-URL (Organisations-URL) ein.
 
-   ![Dialogfeld &quot;Brand Portal-Konfiguration&quot;.](assets/create-cloud-service.png)
+   ![Dialogfeld „Brand Portal-Konfiguration“.](assets/create-cloud-service.png)
 
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**. Die Cloud-Konfiguration wird erstellt.
 

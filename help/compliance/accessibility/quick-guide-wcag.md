@@ -1,11 +1,11 @@
 ---
 title: Kurzanleitung zu WCAG 2.1
-description: Kurzanleitung zu den Web Content Accessibility Guidelines (WCAG) Version 2.1.
+description: Kurzanleitung zu den Web Content Accessibility Guidelines (WCAG), Version 2.1.
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1782'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -66,7 +66,7 @@ Zur Erklärung:
 * Die Richtlinien sind von 1.1 bis 4.1 nummeriert, wobei die erste Zahl dem übergeordneten Prinzip entspricht.
 * Jede Richtlinie besteht aus einem oder mehreren **Erfolgskriterien**.
 * Erfolgskriterien werden als Aussagen geschrieben, die für eine bestimmte Web-Seite entweder `True` oder `False` sind.
-* Erfolgskriterien können entweder/oder Auswahlmöglichkeiten oder Ausnahmen enthalten; Situationen, in denen die Erfolgskriterien nicht erfüllt werden müssen.
+* Erfolgskriterien können Entweder/Oder-Entscheidungen enthalten oder Ausnahmen vorsehen, d. h. Situationen, in denen die Erfolgskriterien nicht erfüllt sein müssen.
 * Erfolgskriterien sind gemäß der übergeordneten Richtlinie und dem Prinzip von 1.1.1 bis 4.1.1 nummeriert. Sie haben auch einen Kurznamen, der zur besseren Orientierung die Absicht des Kriteriums zusammenfasst. Beispielsweise heißt das Erfolgskriterium [1.1.1 Nichttextlicher Inhalt](https://www.w3.org/TR/WCAG/#non-text-content).
 * Zu den Erfolgskriterien gehört eine Liste zugehöriger **Techniken** (siehe unten).
 

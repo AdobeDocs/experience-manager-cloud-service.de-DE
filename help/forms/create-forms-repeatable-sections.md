@@ -1,12 +1,12 @@
 ---
-title: Wie werden wiederholbare Bereiche in den Kernkomponenten des adaptiven Formulars erstellt?
+title: So erstellen Sie wiederholbare Bedienfelder in den Kernkomponenten des adaptiven Formulars
 description: Erfahren Sie, wie Sie wiederholbare Abschnitte oder Felder in einem adaptiven Formular erstellen.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1357'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Am Ende dieses Artikels werden Sie Folgendes gelernt haben:
 * Festlegen der Mindest- oder Höchstanzahl von Wiederholungen für adaptive Formularkomponenten
 * Verwenden des Regeleditors, um Hinzufügungs- oder Löschaktionen für wiederholbare Abschnitte zu konfigurieren
 
-Sie können die [Bedienfeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=de), [Akkordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=de), [Horizontale Registerkarten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=de)oder [Assistent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=de) Komponenten, um Abschnitte eines adaptiven Formulars wiederholbar zu machen. Sie können untergeordnete Komponenten zu den Komponenten Bedienfeld, Akkordeon, horizontalen Registerkarten oder Assistent hinzufügen, um wiederholbare Abschnitte in einem Formular zu erstellen.
+Sie können die Komponenten [Bedienfeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=de), [Akkordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=de), [horizontale Registerkarten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=de) oder [Assistent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=de) verwenden, um Abschnitte eines adaptiven Formulars wiederholbar zu machen. Sie können untergeordnete Komponenten zu den Komponenten Bedienfeld, Akkordeon, horizontalen Registerkarten oder Assistent hinzufügen, um wiederholbare Abschnitte in einem Formular zu erstellen.
 
 
 Die Beispiele in diesem Dokument basieren auf der [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=de)-Komponente. Sie können die gleichen Schritte ausführen, um die Komponenten [Akkordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=de), [horizontale Registerkarten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=de) und [Assistent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=de) wiederholbar zu machen.
@@ -176,7 +176,7 @@ Wiederholbare Teilformulare ähneln den wiederholbaren Bedienfeldern in adaptive
 
 Die angehängte ZIP-Datei enthält ein Beispiel für ein wiederholbares Teilformular.
 
-[Datei laden](/help/forms/assets/samplerepeatablesubform.zip)
+[Datei abrufen](/help/forms/assets/samplerepeatablesubform.zip)
 
 ## Verwenden der Wiederholungseinstellungen eines XML-Schemas (XSD) {#using-repeat-settings-of-an-xml-schema-xsd-br}
 

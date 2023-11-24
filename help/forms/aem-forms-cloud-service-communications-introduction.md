@@ -1,21 +1,21 @@
 ---
-title: Was sind die as a Cloud Service Kommunikations-APIs von Forms?
+title: Was sind Kommunikations-APIs für AEM Forms as a Cloud Service?
 description: Verwenden Sie Kommunikations-APIs zum Signieren, Zertifizieren oder Schützen Ihrer Dokumente, um PDF-Generierungsprozesse zu automatisieren und PDF-Dokumente in ein anderes Format zu konvertieren.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1446'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
-# Einführung in die as a Cloud Service Kommunikation mit AEM Forms {#frequently-asked-questions}
+# Einführung in die Kommunikationsfunktion von AEM Forms as a Cloud Service {#frequently-asked-questions}
 
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 Die Kommunikationsfunktion hilft Ihnen, markenorientierte, personalisierte und standardisierte Dokumente wie Geschäftskorrespondenzen, Kontoauszüge, Mahnschreiben, Leistungsbescheide, monatliche Rechnungen oder Willkommenspakete zu erstellen.
@@ -108,9 +108,9 @@ Mithilfe von APIs zur Dokumentenbearbeitung können Sie PDF-Dokumente kombiniere
 
 ### Zusammenführen von PDF-Dokumenten
 
-Mithilfe von APIs zur Dokumentbearbeitung können Sie zwei oder mehrere PDF- oder XDP-Dokumente zu einem einzigen PDF-Dokument oder PDF-Portfolio zusammenführen. Im Folgenden finden Sie einige Möglichkeiten zum Zusammenführen von PDF-Dokumenten:
+Mithilfe von APIs zur Dokumentbearbeitung können Sie zwei oder mehrere PDF- oder XDP-Dokumente zu einem einzigen PDF-Dokument oder PDF-Portfolio zusammenführen. Im Folgenden finden Sie einige Möglichkeiten, wie Sie PDF-Dokumente zusammenführen können:
 
-* Assemblieren eines einfachen PDF-Dokuments
+* Zusammenführen eines einzelnen PDF-Dokuments
 * Erstellen eines PDF-Portfolios
 * Zusammenführen von verschlüsselten Dokumenten
 * Zusammenführen von Dokumenten mithilfe der Bates-Nummerierung
@@ -121,7 +121,7 @@ Abbildung: Zusammenstellen eines einfachen PDF-Dokuments aus mehreren PDF-Dokume
 
 ### Aufteilen von PDF-Dokumenten
 
-Sie können die APIs zur Dokumentbearbeitung verwenden, um ein PDF-Dokument zu zerlegen. Die APIs können kann Seiten aus dem Quelldokument extrahieren oder ein Quelldokument basierend auf Lesezeichen aufteilen. In der Regel ist diese Aufgabe nützlich, wenn das PDF-Dokument ursprünglich aus vielen Einzeldokumenten erstellt wurde, z. B. aus einer Sammlung von Anweisungen.
+Sie können die APIs zur Dokumentbearbeitung verwenden, um ein PDF-Dokument zu zerlegen. Die APIs können kann Seiten aus dem Quelldokument extrahieren oder ein Quelldokument basierend auf Lesezeichen aufteilen. Diese Aufgabe ist normalerweise hilfreich, wenn das PDF-Dokument ursprünglich aus vielen Einzeldokumenten erstellt wurde, wie z. B. einer Sammlung von Aussagen.
 
 * Extrahieren von Seiten aus einem Quelldokument
 * Aufteilen eines Quelldokuments basierend auf Lesezeichen
@@ -131,7 +131,7 @@ Abbildung: Aufteilen eines Quelldokuments basierend auf Lesezeichen in mehrere D
 
 ### Konvertieren in PDF/A-konforme Dokumente und Validieren
 
-Sie können die APIs zur Dokumentbearbeitung verwenden, um ein PDF-Dokument in ein PDF/A-konformes Dokument zu konvertieren oder um zu ermitteln, ob ein PDF-Dokument PDF/A-konform ist. PDF/A ist ein Archivierungsformat, das für die Langzeitarchivierung des Dokumentinhalts bestimmt ist. Die Schriftarten werden in das Dokument eingebettet und die Datei ist unkomprimiert. PDF/A-Dokumente sind daher in der Regel größer als normale PDF-Dokumente. Außerdem enthalten PDF/A-Dokumente keine Audio- und Videoinhalte.
+Sie können die APIs zur Dokumentbearbeitung verwenden, um ein PDF-Dokument in ein PDF/A-konformes Dokument zu konvertieren oder um zu ermitteln, ob ein PDF-Dokument PDF/A-konform ist. PDF/A ist ein Archivierungsformat für die langfristige Speicherung von Dokumentinhalten. Die Schriftarten werden im Dokument eingebettet und die Datei bleibt unkomprimiert. PDF/A-Dokumente sind daher in der Regel größer als normale PDF-Dokumente. Außerdem enthalten PDF/A-Dokumente keine Audio- und Videoinhalte.
 
 <!-- 
 
@@ -161,27 +161,27 @@ The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-
 
 ## Document Assurance {#doc-assurance}
 
-Der DocAssurance-Dienst umfasst die Signature- und Encaption-APIs:
+Der DocAssurance-Dienst umfasst die Signature- und Verschlüsselungs-APIs:
 
 ### Signature-APIs
 
-Mit den Signature-APIs kann Ihr Unternehmen die Sicherheit und den Datenschutz von Adobe PDF-Dokumenten schützen, die es verteilt und empfängt. Dieser Service verwendet digitale Signaturen und Zertifizierung, um sicherzustellen, dass nur die Empfänger, für die dies vorgesehen ist, die Dokumente ändern können. Da Sicherheitsfunktionen auf das Dokument selbst angewendet werden, bleibt das Dokument für seinen gesamten Lebenszyklus sicher und kontrolliert. Ein Dokument bleibt außerhalb der Firewall sicher, wenn es offline heruntergeladen und an Ihr Unternehmen zurückgesendet wird. Sie können die folgenden Aufgaben mithilfe der Signature-APIs ausführen:
+Signature-APIs ermöglichten Ihrem Unternehmen, die Sicherheit und Vertraulichkeit verteilter und empfangener Adobe PDF-Dokumente zu gewährleisten. Dieser Service verwendet digitale Signaturen und Zertifizierung, um sicherzustellen, dass nur die Empfänger, für die dies vorgesehen ist, die Dokumente ändern können. Da Sicherheitsfunktionen auf das Dokument selbst angewendet werden, bleibt das Dokument für seinen gesamten Lebenszyklus sicher und kontrolliert. Ein Dokument bleibt außerhalb der Firewall sicher, wenn es offline heruntergeladen und an Ihr Unternehmen zurückgesendet wird. Sie können die folgenden Aufgaben mithilfe der Signature-APIs ausführen:
 
-* Fügen Sie einem PDF-Dokument ein Signaturfeld hinzu.
-* Signieren Sie das angegebene Signaturfeld in einem PDF-Dokument.
-* Zertifizieren eines PDF-Dokuments
+* Einem PDF-Dokument ein Signaturfeld hinzufügen.
+* Das angegebene Signaturfeld in einem PDF-Dokument signieren.
+* Ein PDF-Dokument zertifizieren
 
 ### Verschlüsselungs-APIs
 
-Mit den Verschlüsselungs-APIs können Sie Dokumente verschlüsseln und entschlüsseln. Wenn ein Dokument verschlüsselt wird, ist sein Inhalt unlesbar. Ein autorisierter Benutzer kann das Dokument entschlüsseln, um Zugriff auf den Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, muss der Benutzer das Kennwort zum Öffnen angeben, damit das Dokument in Adobe Reader oder Adobe Acrobat angezeigt werden kann. Wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, muss der Benutzer das PDF-Dokument mit dem öffentlichen Schlüssel entschlüsseln, der dem Zertifikat (privater Schlüssel) entspricht, das zum Verschlüsseln des PDF-Dokuments verwendet wurde.
+Mit Verschlüsselungs-APIs können Sie Dokumente verschlüsseln und entschlüsseln. Wird ein Dokument verschlüsselt, ist sein Inhalt nicht mehr lesbar. Eine autorisierte Person kann das Dokument entschlüsseln, um Zugriff auf den Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, muss der Benutzer das Kennwort zum Öffnen angeben, damit das Dokument in Adobe Reader oder Adobe Acrobat angezeigt werden kann. Ähnlich muss die Person, wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, das PDF-Dokument mithilfe des öffentlichen Schlüssels entschlüsseln, der dem Zertifikat (privater Schlüssel) entspricht, das zum Verschlüsseln des PDF-Dokuments verwendet wurde.
 
-Sie können diese Aufgaben mithilfe der Verschlüsselungs-APIs ausführen:
+Sie können diese Aufgaben mithilfe der Verschlüsselungs-APIs erledigen:
 
-* Verschlüsseln Sie ein PDF-Dokument mit einem Kennwort.
-* Entfernen Sie die kennwortbasierte Verschlüsselung aus einem PDF-Dokument.
-* Rufen Sie den Sicherheitstyp ab, der auf ein PDF-Dokument angewendet wird.
+* Verschlüsseln eines PDF-Dokuments mit einem Kennwort.
+* Entfernen der kennwortbasierten Verschlüsselung aus einem PDF-Dokument.
+* Abrufen des Sicherheitstyps, der zum Schützen eines PDF-Dokuments verwendet wurde.
 
-Sowohl Signature-APIs als auch Verschlüsselungs-APIs sind [Synchrone APIs](#types-of-communications-apis-types).
+Sowohl Signature-APIs als auch Verschlüsselungs-APIs sind [synchrone APIs](#types-of-communications-apis-types).
 
 
 ## Typen von Kommunikations-APIs {#types}
@@ -302,6 +302,6 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## Siehe auch {#see-also}
 
-* [Kommunikationsverarbeitung - Synchrone APIs](/help/forms/aem-forms-cloud-service-communications.md)
-* [Kommunikationsverarbeitung - Batch-APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+* [Kommunikationsverarbeitung – Synchrone APIs](/help/forms/aem-forms-cloud-service-communications.md)
+* [Kommunikationsverarbeitung – Batch-APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+* [AEM Forms as a Cloud Service-Architektur für adaptive Formulare und Kommunikations-APIs](/help/forms/aem-forms-cloud-service-architecture.md)

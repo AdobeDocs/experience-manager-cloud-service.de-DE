@@ -7,7 +7,7 @@ exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
 workflow-type: tm+mt
 source-wordcount: '1904'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -196,7 +196,7 @@ Sie können die Zielauswahl-Eigenschaften verwenden, um die Wiedergabe der Ziela
 | *hasMore* | Boolesch | Nein | | Wenn die Anwendung mehr Inhalt anzeigen muss, können Sie diese Eigenschaft verwenden, um ein Ladeprogramm hinzuzufügen, das den Inhalt lädt, damit er in der Anwendung sichtbar wird. Es handelt sich um einen Indikator, der angibt, dass gerade Inhalte geladen werden. |
 | *orgName* | Boolesch | Nein | | Es ist der Name der Organisation (wahrscheinlich orgID), die mit AEM verknüpft ist. |
 | *initRepoID* | Zeichenfolge | Nein | | Dies ist der Pfad des Assets-Repositorys, den Sie in einer standardmäßigen ersten Ansicht verwenden können. |
-| *onCreateFolder* | Zeichenfolge | Nein | | Die `onCreateFolder` -Eigenschaft können Sie ein Symbol hinzufügen, mit dem ein neuer Ordner in der Anwendung hinzugefügt wird. |
+| *onCreateFolder* | Zeichenfolge | Nein | | Mit der Eigenschaft `onCreateFolder` können Sie ein Symbol hinzufügen, mit dem ein neuer Ordner in der Anwendung hinzugefügt wird. |
 | *onConfirm* | Zeichenfolge | Nein | | Dies ist ein Rückruf, wenn Sie auf die Schaltfläche „Bestätigen“ klicken. |
 | *confirmDisabled* | Zeichenfolge | Nein | | Diese Eigenschaft steuert den Umschalter der Schaltfläche „Bestätigen“. |
 | *viewType* | Zeichenfolge | Nein | | Die Eigenschaft `viewType` wird verwendet, um die Ansichten anzugeben, die Sie zum Anzeigen von Assets verwenden. |
@@ -253,7 +253,7 @@ Sie können Assets in der Zielauswahl nach Namen, Dimension oder Größe eines A
 
 ### Assets-Repository {#assets-repo}
 
-Mit der Zielauswahl können Sie auch Daten des Repositorys Ihrer Wahl anzeigen, das in der AEM Anwendung verfügbar ist. Sie können die Eigenschaft `repositoryID` verwenden, um den Pfad des Zielordners zu initialisieren, den Sie in der ersten Instanz der Zielauswahl anzeigen möchten.
+Mit der Zielauswahl können Sie auch Daten des Repositorys Ihrer Wahl anzeigen, das in der AEM-Anwendung verfügbar ist. Sie können die Eigenschaft `repositoryID` verwenden, um den Pfad des Zielordners zu initialisieren, den Sie in der ersten Instanz der Zielauswahl anzeigen möchten.
 
 ### Suffix oder Präfix hinzufügen {#add-suffix-or-prefix}
 
@@ -274,8 +274,8 @@ Mit der Zielauswahl können Sie das Asset in vier verschiedenen Ansichten anzeig
 
 ### Info {#info}
 
-Über das Informations- oder Informationssymbol können Sie die Metadaten des ausgewählten Assets anzeigen. Sie enthalten verschiedene Details wie Dimensionen, Größe, Beschreibung, Pfad, Änderungsdatum und Erstellungsdatum. Die Metadateninformationen werden beim Hochladen, Kopieren oder Erstellen eines Assets bereitgestellt.
+Über das Informations- oder Infosymbol können Sie die Metadaten des ausgewählten Assets anzeigen. Sie enthalten verschiedene Details wie Dimensionen, Größe, Beschreibung, Pfad, Änderungsdatum und Erstellungsdatum. Die Metadateninformationen werden beim Hochladen, Kopieren oder Erstellen eines Assets bereitgestellt.
 
 ### Ordner auswählen {#select-folder}
 
-Über die Schaltfläche Ordner auswählen können Sie Assets für verschiedene Vorgänge auswählen, die mit [properties](#destination-selector-properties) in der Zielauswahl.
+Mit der Schaltfläche „Ordner auswählen“ können Sie Assets für verschiedene Vorgänge auswählen, die mit [Eigenschaften](#destination-selector-properties) in der Zielauswahl verbunden sind.

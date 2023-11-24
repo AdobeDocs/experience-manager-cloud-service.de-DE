@@ -9,7 +9,7 @@ exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '5562'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ Die Asset-Suche in AEM unterstützt die folgenden Anwendungsfälle. Dieser Artik
 | [Einschränkungen](#limitations) und [Tipps](#tips) | | |
 | [Illustrierte Beispiele](#samples) | | |
 
-Suchen Sie mithilfe des OmniSearch-Felds oben in der [!DNL Experience Manager]-Web-Oberfläche nach Assets. Gehen Sie in [!DNL Experience Manager] zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**, klicken Sie in der oberen Leiste auf ![Suchsymbol](assets/do-not-localize/search_icon.png), geben Sie den Suchbegriff ein und wählen Sie `Return` aus. Alternativ können Sie die Keyword-Tastenkombination `/` (Schrägstrich) verwenden, um das OmniSearch-Feld zu öffnen. `Location:Assets` ist vorausgewählt, um die Suche auf DAM-Assets zu begrenzen. `Path:/content/dam` wird auch angezeigt, wenn Sie die Suche auf der Stammebene innerhalb der **[!UICONTROL Dateien]** Ordner. Wenn Sie zu einem anderen Ordner navigieren, `Path:/content/dam/<folder name>` wird im OmniSearch-Feld angezeigt, um den Suchbereich auf den aktuellen Ordner zu beschränken. [!DNL Experience Manager] bietet Vorschläge beim Eingeben eines Suchbegriffs.
+Suchen Sie mithilfe des OmniSearch-Felds oben in der [!DNL Experience Manager]-Web-Oberfläche nach Assets. Gehen Sie in [!DNL Experience Manager] zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**, klicken Sie in der oberen Leiste auf ![Suchsymbol](assets/do-not-localize/search_icon.png), geben Sie den Suchbegriff ein und wählen Sie `Return` aus. Alternativ können Sie die Keyword-Tastenkombination `/` (Schrägstrich) verwenden, um das OmniSearch-Feld zu öffnen. `Location:Assets` ist vorausgewählt, um die Suche auf DAM-Assets zu begrenzen. `Path:/content/dam` wird auch angezeigt, wenn Sie eine Suche auf der Stammebene innerhalb des Ordners **[!UICONTROL Dateien]** durchführen. Wenn Sie zu einem anderen Ordner navigieren, wird `Path:/content/dam/<folder name>` im OmniSearch-Feld angezeigt, um den Suchbereich auf den aktuellen Ordner zu beschränken. [!DNL Experience Manager] liefert Vorschläge, sobald Sie mit der Eingabe eines Suchbegriffs beginnen.
 
 Verwenden Sie das Bedienfeld **[!UICONTROL Filter]**, um nach Assets, Ordnern, Tags und Metadaten zu suchen. Sie können Suchergebnisse anhand der verschiedenen Optionen (Prädikate) filtern, z. B. Dateityp, Dateigröße, Datum der letzten Änderung, Status des Assets, Einblicke und Adobe Stock-Lizenzierung. Sie können das Bedienfeld „Filter“ anpassen und Suchprädikate über [Suchfacetten](/help/assets/search-facets.md) hinzufügen oder entfernen. Der Filter [!UICONTROL Dateityp] im Bedienfeld [!UICONTROL Filter] verfügt über Kontrollkästchen für gemischte Status. Wenn Sie also nicht alle verschachtelten Prädikate (oder Formate) auswählen, werden die Kontrollkästchen der ersten Ebene teilweise markiert.
 
@@ -49,22 +49,22 @@ Machen Sie sich mit der Asset-Suchoberfläche und den verfügbaren Aktionen vert
 <!--
 ![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
 -->
-![Benutzeroberfläche für Experience Manager Assets-Suchergebnisse](assets/aem-search-interface.png)
-*Abbildung: Grundlagen [!DNL Experience Manager Assets] Suchergebnisoberfläche.*
+![Wissenswertes über die Benutzeroberfläche für Experience Manager Assets-Suchergebnisse](assets/aem-search-interface.png)
+*Abbildung: Grundlagen [!DNL Experience Manager Assets] Benutzeroberfläche für Suchergebnisse.*
 
 **A.** Suche als Smart-Sammlung speichern.
 **B.** Filter oder Prädikate zur Eingrenzung der Suchergebnisse.
 **C.** Dateien, Ordner oder beides anzeigen.
 **D.** Die Suchposition ist DAM.
 **E.** Auf gespeicherte Suchen zugreifen.
-**F.** Klicken Sie auf Filter , um die linke Leiste zu öffnen oder zu schließen.
+**F.** Klicken Sie auf „Filter“, um die linke Leiste zu öffnen oder zu schließen.
 **G.** Zeigt Assets als Standardsuche an.
 **H.** Die Suchposition ist DAM.
 **I.** Omnisearch-Feld mit benutzerdefiniertem Suchbegriff.
-**J.** Wählen Sie die geladenen Suchergebnisse aus.
-**K.** Sortieren Sie nach Erstellt, Geändert, Name, Keine.
+**J.** Geladene Suchergebnisse auswählen.
+**K.** Sortieren nach Erstellt, Geändert, Name, Keine.
 **L.** Sortieren nach aufsteigender oder absteigender Reihenfolge
-**M.** Anzahl der angezeigten Suchergebnisse aus der Gesamtzahl der Suchergebnisse. **N.** Schließen Sie die Suche.
+**M.** Anzahl der angezeigten Suchergebnisse im Verhältnis zu den gesamten Suchergebnissen. **N.** Die Suche schließen.
 **O.** Zwischen Karten- und Listenansicht wechseln.
 
 ### Dynamische Suchfacetten {#dynamicfacets}
@@ -81,13 +81,13 @@ Experience Manager Assets zeigt die Facettenanzahl für zwei Eigenschaften stand
 
 * Genehmigungsstatus (jcr:content/metadata/dam:status)
 
-Ab August 2023 enthält Experience Manager Assets eine neue Version 9 von `damAssetLucene` Index. die vorherigen Versionen, `damAssetLucene-8` und unten verwenden Sie die `statistical` -Modus, um die Zugriffskontrolle für ein Beispiel der Elemente für die einzelnen Suchfacettenzählungen zu überprüfen.
+Ab August 2023 enthält Experience Manager Assets eine neue Version 9 von Index `damAssetLucene`. Die vorherigen Versionen, `damAssetLucene-8` und niedriger, verwenden den `statistical`-Modus, um die Zugriffssteuerung für ein Beispiel der Elemente für die einzelnen Suchfacettenzählungen zu überprüfen.
 
-`damAssetLucene-9` ändert das Verhalten der Facettenzählung der Oak-Abfrage, um die Zugriffskontrolle nicht mehr auf die Facettenzahlen auszuwerten, die vom zugrunde liegenden Suchindex zurückgegeben werden, was zu schnelleren Antwortzeiten bei der Suche führt. Daher werden Benutzern möglicherweise Werte für die Facettenanzahl angezeigt, die Assets enthalten, auf die sie keinen Zugriff haben. Diese Benutzer können nicht auf andere Details dieser Assets zugreifen, diese herunterladen oder lesen, einschließlich ihrer Pfade, oder sie können keine weiteren Informationen zu ihnen erhalten.
+`damAssetLucene-9` ändert das Verhalten der Facettenzählung der Oak-Abfrage, damit die Zugriffskontrolle nicht mehr entsprechend der Facettenzahlen ausgewertet wird, die vom zugrunde liegenden Suchindex zurückgegeben werden, was zu schnelleren Antwortzeiten bei der Suche führt. Daher werden den Benutzenden möglicherweise Werte für die Facettenanzahl angezeigt, die Assets enthalten, auf die sie keinen Zugriff haben. Diese Benutzenden können nicht auf andere Details dieser Assets zugreifen oder diese herunterladen oder lesen, einschließlich ihrer Pfade, und sie können keine weiteren Informationen zu ihnen erhalten.
 
-Wenn Sie zum vorherigen Verhalten wechseln müssen (`statistical` -Modus), siehe [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=de) , um eine benutzerdefinierte Version der `damAssetLucene-9` Index. Adobe rät davon ab, zum `secure` -Modus aufgrund der Auswirkungen auf die Antwortzeiten der Suche mit großen Ergebnismengen.
+Wenn Sie zum vorherigen Verhalten (`statistical`-Modus) wechseln müssen, lesen Sie [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=de), um eine benutzerdefinierte Version des `damAssetLucene-9`-Indexes zu erstellen. Adobe rät aufgrund der Auswirkungen auf die Antwortzeiten der Suche mit großen Ergebnismengen davon ab, zum `secure`-Modus zu wechseln.
 
-Weitere Informationen zu den Facettenfunktionen von Oak, einschließlich einer detaillierten Beschreibung dieser Modi, finden Sie unter [diesem Artikel](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
+Weitere Informationen zu den Facettenfunktionen von Oak, einschließlich einer detaillierten Beschreibung dieser Modi, finden Sie in [diesem Artikel](https://jackrabbit.apache.org/oak/docs/query/lucene.html#Facetten).
 
 ## Suchvorschläge bei der Eingabe {#searchsuggestions}
 
@@ -152,15 +152,15 @@ So können Sie das Ranking bestimmter Assets in den Keywords für das jeweilige 
 
 *Video: Erfahren Sie, wie Suchergebnisse ihren Rang erhalten und wie der Rang beeinflusst werden kann.*
 
-## Konfigurieren der Asset-Stapelgröße für die Anzeige von Suchergebnissen {#configure-asset-batch-size}
+## Konfigurieren der Asset-Batch-Größe für die Anzeige von Suchergebnissen {#configure-asset-batch-size}
 
-Administratoren können jetzt die Batch-Größe von Assets konfigurieren, die bei einer Suche angezeigt werden. Die Asset-Suchergebnisse zeigen ein Vielfaches der konfigurierten Stapelgrößenanzahl an, wenn Sie weiter nach unten scrollen, um die Ergebnisse zu laden. Sie können aus den verfügbaren Batch-Größen 200, 500 und 1000 Assets auswählen. Wenn Sie eine niedrigere Stapelgrößenanzahl festlegen, werden die Antwortzeiten der Suche beschleunigt.
+Admins können jetzt die Batch-Größe von Assets konfigurieren, die bei einer Suche angezeigt werden. Die Asset-Suchergebnisse zeigen ein Vielfaches der konfigurierten Batch-Größenanzahl an, wenn Sie weiter nach unten scrollen, um die Ergebnisse zu laden. Sie können aus den verfügbaren Batch-Größen von 200, 500 oder 1000 Assets auswählen. Wenn Sie eine niedrigere Batch-Größenanzahl festlegen, werden die Antwortzeiten der Suche beschleunigt.
 
-Wenn Sie beispielsweise die Ergebnisanzahl auf eine Stapelgröße von 200 Assets festlegen, zeigt Experience Manager Assets beim Starten der Suche in den Suchergebnissen eine Stapelgröße von 200 Assets an. Wenn Sie nach unten scrollen, um durch die Suchergebnisse zu navigieren, wird der nächste Batch von 200 Assets angezeigt. Der Prozess wird fortgesetzt, bis alle Assets, die mit der Suchabfrage übereinstimmen, angezeigt werden.
+Wenn Sie beispielsweise die Ergebnisanzahl auf eine Batch-Größe von 200 Assets festlegen, zeigt Experience Manager Assets beim Starten der Suche in den Suchergebnissen eine Batch-Größe von 200 Assets an. Wenn Sie nach unten scrollen, um durch die Suchergebnisse zu navigieren, wird der nächste Batch von 200 Assets angezeigt. Der Prozess wird fortgesetzt, bis alle Assets, die der Suchabfrage entsprechen, angezeigt wurden.
 
-So konfigurieren Sie die Asset-Stapelgröße:
+So konfigurieren Sie die Asset-Batch-Größe:
 
-1. Navigieren Sie zu **[!UICONTROL Instrumente]** > **[!UICONTROL Assets]** > **[!UICONTROL Assets-Konfigurationen]** > **[!UICONTROL Assets-Omnisearch-Konfiguration]**.
+1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Asset-Konfigurationen]** > **[!UICONTROL Omnisearch-Konfiguration für Assets]**.
 
 1. Wählen Sie die Begrenzung der Ergebnisanzahl aus und klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -539,7 +539,7 @@ Navigieren Sie zum Ordnerspeicherort für Assets, die in den Suchergebnissen ang
 
 **Siehe auch**
 
-* [Best Practices durchsuchen](search-best-practices.md)
+* [Best Practices für die Suche](search-best-practices.md)
 * [Assets übersetzen](translate-assets.md)
 * [Assets-HTTP-API](mac-api-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)

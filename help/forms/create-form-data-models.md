@@ -1,5 +1,5 @@
 ---
-title: Wie erstelle ich ein Formulardatenmodell?
+title: Erstellen eines Formulardatenmodells
 description: Erfahren Sie, wie Sie ein Formulardatenmodell (FDM) erstellen und Daten mithilfe eines adaptiven Formulars oder eines AEM-Workflows an eine Datenquelle senden oder abrufen.
 feature: Form Data Model
 role: User, Developer
@@ -8,7 +8,7 @@ exl-id: b17b7441-912c-44c7-a835-809f014a8c86
 source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '1548'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Die [!DNL Experience Manager Forms]-Datenintegration bietet eine intuitive Benut
 
 * **Vorkonfigurierte Datenquellen verwenden**: Wenn Sie Datenquellen wie in [Konfigurieren von Datenquellen](configure-data-sources.md) konfiguriert haben, können Sie diese beim Erstellen eines Formulardatenmodells auswählen. Es stellt alle Datenmodellobjekte, Eigenschaften und Services aus den ausgewählten Datenquellen zur Verwendung im Formulardatenmodell zur Verfügung.
 
-* **Ohne Datenquellen**: Wenn Sie keine Datenquellen für Ihr Formulardatenmodell konfiguriert haben, können Sie es dennoch ohne Datenquellen erstellen. Sie können das Formulardatenmodell verwenden, um adaptive Formulare <!--and interactive communication--> zu verfassen und sie anhand von Beispieldaten zu testen. Wenn Datenquellen verfügbar sind, können Sie das Formulardatenmodell an Datenquellen binden, die automatisch in den zugehörigen adaptiven Formularen reflektiert werden<!--and interactive communications-->.
+* **Ohne Datenquellen**: Wenn Sie für Ihr Formulardatenmodell keine Datenquellen konfiguriert haben, können Sie es auch ohne Datenquellen erstellen. Sie können das Formulardatenmodell verwenden, um adaptive Formulare <!--and interactive communication--> zu verfassen und sie anhand von Beispieldaten zu testen. Wenn Datenquellen verfügbar sind, können Sie das Formulardatenmodell an Datenquellen binden, die automatisch in den zugehörigen adaptiven Formularen reflektiert werden<!--and interactive communications-->.
 
 >[!NOTE]
 >
@@ -38,11 +38,11 @@ Stellen Sie sicher, dass Sie die Datenquellen konfiguriert haben, die Sie im For
 
 1. Gehen Sie in der [!DNL Experience Manager]-Autorinstanz zu **[!UICONTROL Forms > Datenintegration]**.
 1. Tippen Sie auf **[!UICONTROL Erstellen > Formulardatenmodell]**.
-1. Im Dialogfeld Formulardatenmodell erstellen :
+1. Im Dialogfeld „Formulardatenmodell erstellen“:
 
-   * Geben Sie einen Namen für das Formulardatenmodell an.
+   * Geben Sie einen Namen für das Formulardatenmodell ein.
    * (**Optional**) Geben Sie Titel, Beschreibung und Tags für das Formulardatenmodell an.
-   * (**Optional und nur anwendbar, wenn Datenquellen konfiguriert sind**) Tippen Sie auf das Häkchensymbol neben dem Feld **[!UICONTROL Datenquellenkonfiguration]** und wählen Sie den Konfigurationsknoten, in dem sich die Cloud Services für die Datenquellen befinden, die Sie verwenden möchten. Das beschränkt die Liste der Datenquellen, die auf der nächsten Seite zur Auswahl stehen, auf diejenigen, die im ausgewählten Konfigurationsknoten verfügbar sind. [!DNL Experience Manager]-Benutzerprofildatenquellen werden jedoch standardmäßig aufgelistet. Wenn Sie keinen Konfigurationsknoten auswählen, werden Datenquellen aus allen Konfigurationsknoten aufgelistet.
+   * (**Optional und nur anwendbar, wenn Datenquellen konfiguriert sind**) Tippen Sie auf das Häkchensymbol neben dem Feld **[!UICONTROL Datenquellenkonfiguration]** und wählen Sie den Konfigurationsknoten, in dem sich die Cloud Services für die Datenquellen befinden, die Sie verwenden möchten. Das beschränkt die Liste der Datenquellen, die auf der nächsten Seite zur Auswahl stehen, auf diejenigen, die im ausgewählten Konfigurationsknoten verfügbar sind. [!DNL Experience Manager]-Benutzerprofildatenquellen werden jedoch standardmäßig aufgelistet. Wenn Sie keinen Konfigurationsknoten auswählen, werden Datenquellen von allen Konfigurationsknoten angezeigt.
 
 1. Tippen Sie auf **[!UICONTROL Weiter]**.
 
@@ -143,4 +143,4 @@ Weitere Informationen finden Sie unter [Arbeiten mit einem Formulardatenmodell](
 
 >[!MORELIKETHIS]
 >
->* [Verwenden von Formulardatenmodellen](/help/forms/using-form-data-model.md)
+>* [Verwenden eines Formulardatenmodells](/help/forms/using-form-data-model.md)

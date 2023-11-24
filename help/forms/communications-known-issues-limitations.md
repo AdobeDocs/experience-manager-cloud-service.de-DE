@@ -1,11 +1,11 @@
 ---
 title: Was sind Überlegungen, bekannte Probleme und Best Practices in AEM Forms?
-description: Überlegungen zu bekannten Problemen und Best Practices für AEM Forms Communication APIs.
+description: Überlegungen zu bekannten Problemen und Best Practices für Kommunikations-APIs von AEM Forms.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1749'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -206,8 +206,8 @@ Ja, Sie können mehrere Batch-Vorgänge gleichzeitig ausführen. Verwenden Sie i
 
 >[!MORELIKETHIS]
 >
->* [Einführung in die as a Cloud Service Kommunikation mit AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
->* [Kommunikationsverarbeitung - Synchrone APIs](/help/forms/aem-forms-cloud-service-communications.md)
->* [Kommunikationsverarbeitung - Batch-APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Einführung in die Kommunikationsfunktion von AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service-Architektur für adaptive Formulare und Kommunikations-APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Kommunikationsverarbeitung – synchrone APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Kommunikationsverarbeitung – Batch-APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
 

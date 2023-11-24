@@ -1,7 +1,7 @@
 ---
-title: Erstellen eines adaptiven Formulars?
-description: Erfahren Sie, wie Sie mit unserem schrittweisen Tutorial Mobile-responsive Adaptive Forms erstellen. Diese Formulare passen sich geräteübergreifend nahtlos an und sorgen so für ein reibungsloses Erlebnis.
-keywords: Adaptive Forms, Mobile Forms, Responsive Forms, HTML5 Forms
+title: Erstellen eines adaptiven Formulars
+description: Erfahren Sie mit unserem schrittweisen Tutorial, wie Sie Mobile-responsive adaptive Formulare erstellen. Diese Formulare passen sich geräteübergreifend nahtlos an und sorgen so für ein reibungsloses Erlebnis.
+keywords: Adaptive Formulare, Mobile-Formulare, responsive Formulare, HTML5-Formulare
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
@@ -11,7 +11,7 @@ exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2737'
-ht-degree: 86%
+ht-degree: 94%
 
 ---
 
@@ -19,26 +19,26 @@ ht-degree: 86%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-Mit Adaptive Forms können Sie Formulare erstellen, die ansprechend, reaktionsfähig, dynamisch und anpassungsfähig sind. AEM Forms bietet einen benutzerfreundlichen Assistenten für Unternehmen, mit dem Sie schnell Adaptive Forms erstellen können. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
+Mit adaptiven Formularen können Sie Formulare erstellen, die ansprechend, reaktionsfähig, dynamisch und anpassungsfähig sind. AEM Forms bietet eine Business-Anwender-freundliche Assistenz für die schnelle Erstellung adaptiver Formulare. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
 
 ![Assistent zum Erstellen eines adaptiven Formulars](/help/release-notes/assets/wizard.png){width="100%" align="center"}
 
 Bevor Sie beginnen, erfahren Sie mehr über die Arten der Formular-Komponenten, die Ihnen zur Verfügung stehen:
 
-* [Kernkomponenten adaptiver Formulare](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de): Dies sind standardisierte Datenerfassungskomponenten. Diese Komponenten bieten Anpassungsfunktionen, kürzere Entwicklungszeiten und niedrigere Wartungskosten für Ihre Erlebnisse bei der digitalen Registrierung. Entwickelnde können diese Komponenten einfach anpassen und gestalten. Sie können [https://aemcomponents.dev/](https://aemcomponents.dev/) Anzeigen der verfügbaren Kernkomponenten in Aktion **Adobe empfiehlt die Verwendung dieser modernen und erweiterbaren Komponenten zur Entwicklung von Adaptive Forms**.
+* [Kernkomponenten adaptiver Formulare](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de): Dies sind standardisierte Datenerfassungskomponenten. Diese Komponenten bieten Anpassungsfunktionen, kürzere Entwicklungszeiten und niedrigere Wartungskosten für Ihre Erlebnisse bei der digitalen Registrierung. Entwickelnde können diese Komponenten einfach anpassen und gestalten. Sie können unter [https://aemcomponents.dev/](https://aemcomponents.dev/) die verfügbaren Kernkomponenten in Aktion anzeigen **Adobe empfiehlt die Verwendung dieser modernen und erweiterbaren Komponenten zur Entwicklung von adaptiven Formularen**.
 
 * [Foundation-Komponenten adaptiver Formulare](creating-adaptive-form.md): Hierbei handelt es sich um klassische (alte) Datenerfassungskomponenten. Sie können diese weiterhin verwenden, um Ihre vorhandenen Foundation-Komponenten auf Grundlage des adaptiven Formulars zu bearbeiten. Wenn Sie neue Formulare erstellen, empfiehlt Adobe die Verwendung von  [Kernkomponenten von adaptiven Formularen, um ein adaptives Formular zu erstellen](#create-an-adaptive-form-core-components).
 
 >[!BEGINTABS]
 
->[!TAB Erstellen adaptiver Forms mit Kernkomponenten (empfohlen)]
+>[!TAB Erstellen adaptiver Formulare mit Kernkomponenten (empfohlen)]
 
 Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 
-* **Aktivieren der adaptiven Forms-Kernkomponenten für Ihre Umgebung**: Wenn Sie ein Programm erstellen, sind die adaptiven Forms-Kernkomponenten bereits für Ihre Umgebung aktiviert. Wenn Sie eine as a Cloud Service Forms-Umgebung basierend auf Archetyp 39 oder früher haben, [Aktivieren der adaptiven Forms-Kernkomponenten für Ihre Umgebung](enable-adaptive-forms-core-components.md). Sobald Sie die Kernkomponenten für Ihre Umgebung aktivieren, werden die Vorlage und das Arbeitsflächen-Design für **adaptive Formulare (Kernkomponente)** zu Ihrer Umgebung hinzugefügt. Wenn Ihre AEM SDK-Version älter als 2023.02.0 ist, [stellen Sie sicher, dass das `prerelease`-Flag in Ihrer Umgebung aktiviert ist](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features), da Kernkomponenten für adaptive Formulare Teil der Vorabversion vor der Version 2023.02.0 waren.
+* **Aktivieren der adaptiven Forms-Kernkomponenten für Ihre Umgebung**: Wenn Sie ein Programm erstellen, sind die adaptiven Forms-Kernkomponenten bereits für Ihre Umgebung aktiviert. Wenn Sie eine Forms as a Cloud Service-Umgebung basierend auf Archetyp 39 oder früher haben, [aktivieren Sie die Kernkomponenten von adaptiven Formularen für Ihre Umgebung](enable-adaptive-forms-core-components.md). Sobald Sie die Kernkomponenten für Ihre Umgebung aktivieren, werden die Vorlage und das Arbeitsflächen-Design für **adaptive Formulare (Kernkomponente)** zu Ihrer Umgebung hinzugefügt. Wenn Ihre AEM SDK-Version älter als 2023.02.0 ist, [stellen Sie sicher, dass das `prerelease`-Flag in Ihrer Umgebung aktiviert ist](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features), da Kernkomponenten für adaptive Formulare Teil der Vorabversion vor der Version 2023.02.0 waren.
 
 * **Eine adaptive Formularvorlage**: Eine Vorlage liefert eine Grundstruktur und definiert das Erscheinungsbild (Layouts und Stile) eines adaptiven Formulars. Es enthält vorformatierte Komponenten einschließlich bestimmter Eigenschaften und einer Struktur für Inhalte. Es bietet außerdem die Optionen zum Definieren eines Designs und einer Übermittlungsaktion. Das Design definiert den Look-and-Feel und die Übermittlungsaktion definiert die Aktion, die bei der Übermittlung eines adaptiven Formulars ausgeführt werden soll. Senden der erfassten Daten an eine Datenquelle. Der Cloud-Service bietet eine OOTB-Vorlage mit leerem Namen:
 
@@ -50,12 +50,12 @@ Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
     * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
 
-* **Berechtigungen**: Fügen Sie Ihre Benutzerinnen und Benutzer zur Gruppe [!DNL forms-users] hinzu. Die Mitglieder der [!DNL forms-users]-Gruppe sind berechtigt, ein adaptives Formular zu erstellen. Eine detaillierte Liste formularspezifischer Benutzergruppen finden Sie unter [Gruppen und Berechtigungen](forms-groups-privileges-tasks.md).
+* **Berechtigungen**: Fügen Sie Ihre Benutzerinnen und Benutzer zur Gruppe [!DNL forms-users] hinzu. Die Mitglieder der [!DNL forms-users]-Gruppe sind berechtigt, ein adaptives Formular zu erstellen. Eine detaillierte Liste der formularspezifischen Benutzergruppen finden Sie unter [Gruppen und Berechtigungen](forms-groups-privileges-tasks.md).
 
 
 ## Erstellen eines adaptiven Formulars {#create-an-adaptive-form-core-components}
 
-1. Melden Sie sich bei Ihrer [!DNL Experience Manager Forms] Autoreninstanz. Dabei kann es sich um eine Cloud-Instanz oder eine lokale Entwicklungsinstanz handeln.
+1. Melden Sie sich bei Ihrer [!DNL Experience Manager Forms]-Autoreninstanz an. Dabei kann es sich um eine Cloud-Instanz oder eine lokale Entwicklungsinstanz handeln.
 
 1. Geben Sie Ihre Anmeldedaten auf der Experience Manager-Anmeldeseite ein. Wenn Sie sich angemeldet haben, tippen Sie in der oberen linken Ecke auf **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 
@@ -100,7 +100,7 @@ Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**. Ein adaptives Formular wird erstellt und im Editor für adaptive Formulare geöffnet. Der Editor zeigt die in der Vorlage verfügbaren Inhalte an.  Je nach Typ des adaptiven Formulars werden auf der Registerkarte **[!UICONTROL Datenmodellobjekte]** des **[!UICONTROL Content-Browsers]** in der Seitenleiste die Formularelemente angezeigt, die im zugewiesenen <!--XFA form template, XML schema or -->-JSON-Schema oder Formulardatenmodell vorhanden sind.
 
-Jetzt können Sie die [Adaptive Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#components) oder Schemaelementen, um Ihr adaptives Formular zu erstellen.
+Jetzt können Sie die [Kernkomponenten für adaptive Formulare](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de#components) oder Schemaelemente per Drag-and-Drop ziehen, um Ihr adaptives Formular zu erstellen.
 
 
 ## Bearbeiten der Formularmodelleigenschaften eines adaptiven Formulars {#edit-form-model-core-components-based-adaptive-forms}
@@ -111,11 +111,11 @@ Jetzt können Sie die [Adaptive Forms-Kernkomponenten](https://experienceleague.
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, um die Eigenschaften zu speichern.
 
->[!TAB Adaptive Forms mit Foundation-Komponenten erstellen]
+>[!TAB Erstellen adaptiver Formulare mit Foundation-Komponenten]
 
 Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 
-* **Berechtigungen**: Fügen Sie Ihre Benutzer zu [!DNL forms-users] hinzu, um ihnen die notwendigen Berechtigungen zum Erstellen eines adaptiven Formulars zu erteilen. Eine detaillierte Liste formularspezifischer Benutzergruppen finden Sie unter [Gruppen und Berechtigungen](forms-groups-privileges-tasks.md).
+* **Berechtigungen**: Fügen Sie Ihre Benutzenden zu [!DNL forms-users] hinzu, um ihnen die notwendigen Berechtigungen zum Erstellen eines adaptiven Formulars zu erteilen. Eine detaillierte Liste der formularspezifischen Benutzergruppen finden Sie unter [Gruppen und Berechtigungen](forms-groups-privileges-tasks.md).
 
 * **Ein adaptives Formular**: Ein Design enthält Stildetails für die Komponenten und Bedienfelder. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, spiegeln die entsprechenden Komponenten den angegebenen Stil wider. Sie können [Erstellen eines Designs](themes.md) oder [ein vorhandenes Design importieren](import-export-forms-templates.md#uploading-a-theme). Sie können auch den [neuesten Archetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=de#create-project) für einige Beispielthemen bereitstellen.
 
@@ -257,7 +257,7 @@ Sie können die Eigenschaften des Formularmodells auch im Editor für adaptive F
 
 >[!NOTE]
 >
-> Sie können ein adaptives Formular auch als Vorlage speichern. Weitere Informationen finden Sie unter [Erstellen einer Vorlage mit einem adaptiven Formular](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).
+> Sie können auch ein adaptives Formular als Vorlage speichern. Weitere Informationen finden Sie unter [Erstellen einer Vorlage mit einem adaptiven Formular](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).
 
 >[!ENDTABS]
 
@@ -265,8 +265,8 @@ Sie können die Eigenschaften des Formularmodells auch im Editor für adaptive F
 ## Nächste Schritte
 
 * [Verwenden von Adobe Sign mit Forms](working-with-adobe-sign.md)
-* [Verwenden von Google reCaptcha in mit Forms](captcha-adaptive-forms.md)
-* [Wiederholbaren Abschnitt zu einem Formular hinzufügen](create-forms-repeatable-sections.md)
+* [Verwenden von Google reCaptcha mit Forms](captcha-adaptive-forms.md)
+* [Hinzufügen wiederholbarer Abschnitte in einem Formular](create-forms-repeatable-sections.md)
 * [Vorausfüllen von Feldern eines Formulars](prepopulate-adaptive-form-fields.md)
 
 >[!MORELIKETHIS]

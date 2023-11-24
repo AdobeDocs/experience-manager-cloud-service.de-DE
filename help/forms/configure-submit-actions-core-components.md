@@ -1,71 +1,71 @@
 ---
-title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular?
+title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen
 keywords: Anleitung zum Auswählen einer Sendeaktion für ein adaptives Formular, Verbinden eines adaptiven Formulars mit einer Sharepoint-Liste, Verbinden eines adaptiven Formulars mit einer SharePoint-Dokumentbibliothek, Verbinden eines adaptiven Formulars mit einem Formulardatenmodell
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3634'
-ht-degree: 81%
+ht-degree: 94%
 
 ---
 
 # Übermittlungsaktion für adaptive Formulare {#configuring-the-submit-action}
 
-<span class="preview"> Adobe empfiehlt die Verwendung von Kernkomponenten für [Adaptive Forms zu einer AEM Sites-Seite hinzufügen](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) oder [eigenständige adaptive Forms erstellen](/help/forms/creating-adaptive-form-core-components.md). </span>
+<span class="preview"> Adobe empfiehlt die Verwendung von Kernkomponenten, um [adaptive Formulare zu einer AEM Sites-Seite hinzuzufügen](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) oder [eigenständige adaptive Formulare zu erstellen](/help/forms/creating-adaptive-form-core-components.md). </span>
 
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
-| Gilt für | ✅ Kernkomponenten des adaptiven Formulars, ❎ [Adaptive Form Foundation-Komponenten](/help/forms/configuring-submit-actions.md) |
+| Gilt für | ✅ Kernkomponenten für adaptive Formulare ❎ [Foundation-Komponenten für adaptive Formulare](/help/forms/configuring-submit-actions.md). |
 
 
-Mit einer Übermittlungsaktion können Sie das Ziel der Daten auswählen, die über ein adaptives Formular erfasst werden. Wird ausgelöst, wenn ein Benutzer auf die **[!UICONTROL Einsenden]** auf einem adaptiven Formular. Forms as a Cloud Service bietet für &quot;Adaptive Forms&quot;, das auf Kernkomponenten basiert, eine Reihe vordefinierter Sendeaktionen. Diese vordefinierten Übermittlungsaktionen ermöglichen Ihnen Folgendes:
+Mit einer Übermittlungsaktion können Sie das Ziel der Daten auswählen, die über ein adaptives Formular erfasst werden. Eine Übermittlungsaktion wird ausgelöst, wenn jemand in einem adaptiven Formular auf die Schaltfläche **[!UICONTROL Senden]** klickt. Forms as a Cloud Service bietet eine Reihe vorkonfigurierter Übermittlungsaktionen für adaptive Formulare, die auf Kernkomponenten basieren.  Diese vorkonfigurierten Übermittlungsaktionen ermöglichen Ihnen Folgendes:
 
-* Senden Sie Formulardaten einfach per E-Mail.
-* Starten Sie Microsoft Power Automate Workflows oder AEM Workflows beim Senden der Daten.
-* Übermitteln Sie die Formulardaten direkt an Microsoft SharePoint Server, Microsoft Azure Blob Storage oder Microsoft OneDrive.
-* Senden Sie die Daten nahtlos mit dem Formulardatenmodell an eine konfigurierte Datenquelle.
-* Senden Sie die Daten bequem an einen REST-Endpunkt.
+* Müheloses Senden von Formulardaten per E-Mail.
+* Starten von Microsoft Power Automate-Abläufen oder AEM Workflows beim Senden der Daten.
+* Direktes Senden von Formulardaten an den Microsoft SharePoint Server, Microsoft Azure Blob Storage oder Microsoft OneDrive.
+* Nahtloses Senden von Daten an eine konfigurierte Datenquelle mit dem Formulardatenmodell.
+* Bequemes Senden von Daten an einen REST-Endpunkt.
 
-Sie können auch [Standardmäßige Übermittlungsaktionen erweitern](custom-submit-action-form.md) , um eine eigene Übermittlungsaktion zu erstellen.
+Sie können auch die [standardmäßigen Übermittlungsaktionen erweitern](custom-submit-action-form.md), um Ihre eigene Übermittlungsaktion zu erstellen.
 
-## Auswählen und Konfigurieren einer Sendeaktion für ein adaptives Formular {#select-and-configure-submit-action}
+## Auswählen und Konfigurieren einer Übermittlungsaktion für ein adaptives Formular {#select-and-configure-submit-action}
 
-So wählen Sie eine Übermittlungsaktion für Ihr Formular aus und konfigurieren sie:
+So wählen Sie eine Übermittlungsaktion aus und konfigurieren Sie für Ihr Formular:
 
-1. Öffnen Sie den Inhaltsbrowser und wählen Sie die **[!UICONTROL Guide Container]** -Komponente Ihres adaptiven Formulars.
-1. Klicken Sie auf die Guide Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg) Symbol. Das Dialogfeld Container für adaptive Formulare wird geöffnet.
+1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
+1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
 
-1. Klicken Sie auf  **[!UICONTROL Einsendung]** Registerkarte.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL Übermittlung]**.
 
-   ![Klicken Sie auf das Schraubenschlüsselsymbol, um das Dialogfeld Container für adaptive Formulare zu öffnen und eine Sendeaktion zu konfigurieren.](/help/forms/assets/adaptive-forms-submit-message.png)
+   ![Klicken Sie auf das Schraubenschlüsselsymbol, um das Dialogfeld „Container für ein adaptives Formular“ zu öffnen und eine Übermittlungsaktion zu konfigurieren.](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. Auswählen und Konfigurieren eines **[!UICONTROL Übermittlungsaktion]**, basierend auf Ihren Anforderungen. Detaillierte Informationen zur ausgewählten Übermittlungsaktion finden Sie unter:
+1. Wählen Sie basierend auf Ihren Anforderungen eine **[!UICONTROL Übermittlungsaktion]** aus und konfigurieren Sie sie. Detaillierte Informationen zur ausgewählten Übermittlungsaktion finden Sie unter:
 
    * [E-Mail senden](#send-email)
    * [An SharePoint senden](#submit-to-sharedrive)
-   * [Senden mit Formulardatenmodell](#submit-using-form-data-model)
-   * [Senden an Azure Blob-Speicher](#azure-blob-storage)
-   * [An REST-Endpunkt übermitteln](#submit-to-rest-endpoint)
+   * [Mit Formulardatenmodell senden](#submit-using-form-data-model)
+   * [An Azure Blob Storage senden](#azure-blob-storage)
+   * [An REST-Endpunkt senden](#submit-to-rest-endpoint)
    * [An OneDrive senden](#submit-to-onedrive)
    * [AEM-Workflow aufrufen](#invoke-an-aem-workflow)
-   * [An Power Automate übermitteln](#microsoft-power-automate)
+   * [An Power Automate senden](#microsoft-power-automate)
 
 ## E-Mail senden {#send-email}
 
-Wenn Sie nach erfolgreicher Übermittlung des Formulars eine E-Mail an einen oder mehrere Empfänger senden möchten, können Sie die Variable **[!UICONTROL E-Mail senden]** Übermittlungsaktion Mit dieser Aktion können Sie eine E-Mail erstellen, die Formulardaten in einem vordefinierten Format enthält. Betrachten Sie beispielsweise die folgende Vorlage, bei der Kundenname, Versandadresse, Statusname und Postleitzahl aus den gesendeten Formulardaten abgerufen werden:
+Wenn Sie nach erfolgreicher Übermittlung des Formulars eine E-Mail an ein oder mehrere Personen senden möchten, können Sie die Übermittlungsaktion **[!UICONTROL E-Mail senden]** verwenden. Mit dieser Aktion können Sie eine E-Mail erstellen, die Formulardaten in einem vordefinierten Format enthält. Betrachten Sie beispielsweise die folgende Vorlage, bei der Kundenname, Versandadresse, Statusname und Postleitzahl aus den übermittelten Formulardaten abgerufen werden:
 
     „
     
-    Hallo ${customer_name},
+    Hallo ${customer_Name},
     
     Ihre Standard-Versandadresse lautet:
-    ${customer_name},
+    ${customer_Name},
     ${customer_Shipping_Address},
-    ${customer_state},
+    ${customer_State},
     ${customer_ZIPCode}
     
     Mit freundlichen Grüßen
@@ -76,11 +76,11 @@ Wenn Sie nach erfolgreicher Übermittlung des Formulars eine E-Mail an einen ode
 >[!NOTE]
 >
 > * Es ist wichtig, dass alle Formularfelder eindeutige Elementnamen haben, auch wenn sie in verschiedenen Bereichen in einem adaptiven Formular platziert werden.
-> * Bei der Verwendung AEM as a Cloud Service E-Mail ist eine Verschlüsselung der ausgehenden E-Mail erforderlich. Standardmäßig ist die Funktion für ausgehende E-Mails deaktiviert. Senden Sie zum Aktivieren ein Support-Ticket an [Zugriff anfordern](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=de#sending-email).
+> * Bei der Verwendung von AEM as a Cloud Service ist eine Verschlüsselung für ausgehendene E-Mails erforderlich. Die Funktion für ausgehende E-Mails ist standardmäßig deaktiviert. Senden Sie zur Aktivierung ein Support-Ticket an [Zugriff anfordern](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=de#sending-email).
 
-Darüber hinaus **[!UICONTROL E-Mail senden]** Die Übermittlungsaktion bietet die Möglichkeit, Anlagen und ein Datensatzdokument (DoR) in die E-Mail einzuschließen.
+Darüber hinaus bietet die Übermittlungsaktion **[!UICONTROL E-Mail senden]** die Möglichkeit zum Einschließen von Anhängen und einem Datensatzdokument (DoR) an die E-Mail.
 
-So aktivieren Sie die [!UICONTROL Datensatzdokument anhängen] , siehe die Dokumentation unter [Konfigurieren des adaptiven Formulars zum Generieren eines Datensatzdokuments (DoR)](generate-document-of-record-core-components.md). Sie können diese Option in den Eigenschaften des adaptiven Formulars aktivieren.
+Um die Option [!UICONTROL Datensatzdokument anhängen] zu aktivieren, lesen Sie die Dokumentation zum [Konfigurieren des adaptiven Formulars zur Erstellung eines Datensatzdokuments (DoR)](generate-document-of-record-core-components.md). Sie können diese Option in den Eigenschaften des adaptiven Formulars aktivieren.
 
 <!-- [!NOTE]
 >
@@ -128,12 +128,12 @@ So verbinden Sie AEM Forms mit Ihrem Microsoft® Sharepoint Document Library-Spe
 1. Gehen Sie zu Ihrer **AEM Forms-Autoreninstanz** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® SharePoint]**.
 1. Sobald Sie **[!UICONTROL Microsoft® SharePoint]** auswählen, werden Sie zum **[!UICONTROL SharePoint-Browser]** weitergeleitet.
 1. Wählen Sie einen **Konfigurations-Container**. Die Konfiguration wird im ausgewählten Konfigurations-Container gespeichert.
-1. Klicks **[!UICONTROL Erstellen]** > **[!UICONTROL SharePoint Document Library]** aus der Dropdown-Liste. Der SharePoint-Konfigurationsassistent wird angezeigt.
+1. Klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL SharePoint-Dokumentenbibliothek]** in der Dropdown-Liste. Der SharePoint-Konfigurationsassistent wird angezeigt.
 
 ![SharePoint-Konfiguration](/help/forms/assets/sharepoint_configuration.png)
 1. Geben Sie **[!UICONTROL Titel]**, **[!UICONTROL Client-ID]**, **[!UICONTROL Client-Geheimnis]** und **[!UICONTROL OAuth-URL]** an. Informationen zum Abrufen der Client-ID, des Client-Geheimnisses und der Mandanten-ID für die OAuth-URL finden Sie in der [Dokumentation von Microsoft®](https://learn.microsoft.com/de-de/graph/auth-register-app-v2).
    * Sie können die `Client ID` und das `Client Secret` Ihrer App über das Microsoft® Azure-Portal abrufen.
-   * Fügen Sie im Microsoft® Azure-Portal den Umleitungs-URI als `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html` hinzu. Ersetzen Sie `[author-instance]` mit der URL Ihrer Autoreninstanz.
+   * Fügen Sie im Microsoft® Azure-Portal den Umleitungs-URI als `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html` hinzu. Ersetzen Sie `[author-instance]` durch die URL Ihrer Autoreninstanz.
    * Fügen Sie die API-Berechtigungen `offline_access` und `Sites.Manage.All` hinzu, um Lese- und Schreibberechtigungen bereitzustellen.
    * Verwenden der OAuth-URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Ersetzen Sie `<tenant-id>` durch die `tenant-id` Ihrer App aus dem Microsoft® Azure-Portal.
 
@@ -341,7 +341,7 @@ Verbinden von AEM Forms mit dem Microsoft® OneDrive-Speicher:
 
 1. Geben Sie **[!UICONTROL Titel]**, **[!UICONTROL Client-ID]**, **[!UICONTROL Client-Geheimnis]** und **[!UICONTROL OAuth-URL]** an. Informationen zum Abrufen der Client-ID, des Client-Geheimnisses und der Mandanten-ID für die OAuth-URL finden Sie in der [Dokumentation von Microsoft®](https://learn.microsoft.com/de-de/graph/auth-register-app-v2).
    * Sie können die `Client ID` und das `Client Secret` Ihrer App über das Microsoft® Azure-Portal abrufen.
-   * Fügen Sie im Microsoft® Azure-Portal den Umleitungs-URI als `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html` hinzu. Ersetzen Sie `[author-instance]` mit der URL Ihrer Autoreninstanz.
+   * Fügen Sie im Microsoft® Azure-Portal den Umleitungs-URI als `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html` hinzu. Ersetzen Sie `[author-instance]` durch die URL Ihrer Autoreninstanz.
    * Fügen Sie die API-Berechtigungen `offline_access` und `Files.ReadWrite.All` hinzu, um Lese- und Schreibberechtigungen bereitzustellen.
    * Verwenden der OAuth-URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Ersetzen Sie `<tenant-id>` durch die `tenant-id` Ihrer App aus dem Microsoft® Azure-Portal.
 
@@ -427,7 +427,7 @@ Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem
 
 
 
-## An Power Automate übermitteln {#microsoft-power-automate}
+## An Power Automate senden {#microsoft-power-automate}
 
 Sie können ein adaptives Formular so konfigurieren, dass bei der Übermittlung ein Cloud-Fluss bei Microsoft® Power Automate ausgeführt wird. Das konfigurierte adaptive Formular sendet erfasste Daten, Anhänge und das Datensatzdokument zur Verarbeitung an den Cloud-Fluss von Power Automate. Dies hilft Ihnen beim Erstellen benutzerdefinierter Datenerfassungsprozesse und nutzt gleichzeitig die Leistungsfähigkeit von Microsoft® Power Automate, um Geschäftslogiken zu erfassten Daten zu erstellen und Kunden-Workflows zu automatisieren. Im Folgenden finden Sie einige Beispiele dafür, was Sie nach der Integration eines adaptiven Formulars in Microsoft® Power Automate tun können:
 
@@ -436,9 +436,9 @@ Sie können ein adaptives Formular so konfigurieren, dass bei der Übermittlung 
 * Führen Sie komplexe Berechnungen für erfasste Daten durch
 * Speichern Sie die Daten von adaptiven Formularen in Speichersystemen nach einem vordefinierten Zeitplan
 
-Der adaptive Forms-Editor stellt die **Microsoft® Power Automate Flow aufrufen** Übermittlungsaktion zum Senden von Daten, Anlagen und Datensatzdokumenten für adaptive Formulare an Power Automate Cloud Flow. Um mithilfe der Übermittlungsaktion erfasste Daten an Microsoft® Power Automate zu senden, [verbinden Sie Ihre Instanz von Forms as a Cloud Service mit Microsoft® Power Automate](forms-microsoft-power-automate-integration.md).
+Der Editor für adaptive Formulare verfügt über die Übermittlungsaktion **Aufrufen eines Microsoft® Power Automate-Flusses** zum Senden von Daten, Anhängen und Datensatzdokumenten für adaptive Formulare an den Cloud-Fluss von Power Automate. Um mithilfe der Übermittlungsaktion erfasste Daten an Microsoft® Power Automate zu senden, [verbinden Sie Ihre Instanz von Forms as a Cloud Service mit Microsoft® Power Automate](forms-microsoft-power-automate-integration.md).
 
-Verwenden Sie nach erfolgreicher Konfiguration die [Microsoft® Power Automate Flow aufrufen](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) Übermittlungsaktion zum Senden von Daten an einen Power Automate Flow.
+Verwenden Sie nach erfolgreicher Konfiguration die Übermittlungsaktion [Microsoft® Power Automate-Fluss aufrufen](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action), um Daten an einen Power Automate-Fluss zu senden.
 
 ## Verwenden synchroner oder asynchroner Übermittlung {#use-synchronous-or-asynchronous-submission}
 

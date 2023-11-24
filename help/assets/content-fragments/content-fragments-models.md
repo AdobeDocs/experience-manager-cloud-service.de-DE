@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2931'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -30,12 +30,12 @@ So verwenden Sie Inhaltsfragmentmodelle:
    >
    >Wenn die [Verwendung von Inhaltsfragmentmodellen nicht aktiviert wurde](/help/assets/content-fragments/content-fragments-configuration-browser.md), ist die Option **Erstellen** nicht verfügbar.
 
-1. Geben Sie den **Modell-Titel** an.
+1. Geben Sie den **Modelltitel** an.
 Sie können auch verschiedene Eigenschaften definieren, beispielsweise **Tags**, a **Beschreibung** und wählen Sie **Modell aktivieren** nach [das Modell aktivieren](#enabling-disabling-a-content-fragment-model) falls erforderlich.
 
    >[!NOTE]
    >
-   >Weitere Informationen zum **Standard-URL-Vorschaumuster** see [Inhaltsfragmentmodell - Eigenschaften](#content-fragment-model-properties).
+   >Weitere Details zum **Standard-URL-Vorschaumuster** finden Sie unter [Inhaltsfragmentmodell – Eigenschaften](#content-fragment-model-properties).
 
    ![Titel und Beschreibung](assets/cfm-models-02.png)
 
@@ -241,7 +241,7 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 
 ### Inhaltsreferenz {#content-reference}
 
-Mit der Inhaltsreferenz können Sie Inhalte aus einer anderen Quelle rendern, z. B. Bild oder Inhaltsfragment.
+Mit der Inhaltsreferenz können Sie Inhalte aus einer anderen Quelle rendern, zum Beispiel ein Bild oder Inhaltsfragment.
 
 Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
@@ -256,7 +256,7 @@ Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
 ### Fragmentreferenz (verschachtelte Fragmente) {#fragment-reference-nested-fragments}
 
-Die Fragmentreferenz verweist auf mindestens ein Inhaltsfragment. Diese Funktion ist besonders beim Abrufen von Inhalten für die Verwendung in Ihrer App interessant, da sie es Ihnen ermöglicht, strukturierte Daten mit mehreren Ebenen abzurufen.
+Die Fragmentreferenz verweist auf mindestens ein Inhaltsfragment. Diese Funktion ist besonders beim Abrufen von Inhalten für die Verwendung in Ihrer Anwendung interessant, da sie Ihnen das Abrufen strukturierter Daten mit mehreren Ebenen ermöglicht.
 
 Beispiel:
 
@@ -322,7 +322,7 @@ Sie können die **Eigenschaften** eines Inhaltsfragmentmodells bearbeiten:
 
      >[!NOTE]
      >
-     >Dies wird nur von der *new* Inhaltsfragment-Editor. Siehe [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) für weitere Informationen.
+     >Dies wird nur vom *neuen* Inhaltsfragment-Editor verwendet. Weitere Informationen finden Sie unter [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties).
 
 
 ## Aktivieren oder Deaktivieren von Inhaltsfragmentmodellen {#enabling-disabling-a-content-fragment-model}

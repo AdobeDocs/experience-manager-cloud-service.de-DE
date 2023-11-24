@@ -1,13 +1,13 @@
 ---
-title: Verwalten von Metadaten in der Asset-Ansicht
-description: Erfahren Sie, wie Sie Metadaten in der Asset-Ansicht verwalten. Durch ein besseres Metadatenmanagement wird ein Asset leichter zugänglich, leichter zu verwalten und zu vervollständigen.
+title: Verwalten von Tags in der Assets-Ansicht
+description: Erfahren Sie, wie Sie Tags in der Assets-Ansicht verwalten. Durch ein besseres Metadaten-Management ist ein Asset einfacher zugänglich und leichter zu verwalten und zu vervollständigen.
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
 source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
 source-wordcount: '1556'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 

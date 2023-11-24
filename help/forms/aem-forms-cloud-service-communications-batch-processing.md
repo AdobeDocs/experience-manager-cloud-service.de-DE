@@ -1,17 +1,17 @@
 ---
-title: Efforless Bulk PDF Creation - Master the Art with Batch Processing - Ihr Selbsthilfehandbuch zum Generieren von Millionen von PDF-Dokumenten!
-description: Wie erstelle ich markenorientierte und personalisierte Kommunikation?
+title: Mühelose Massen-PDF-Erstellung – Meistern Sie die Kunst der Stapelverarbeitung – Ihr Leitfaden zur Erstellung von Millionen von PDF-Dokumenten!
+description: Wie erstelle ich markenorientierte und personalisierte Kommunikationen?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1735'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
-# Stapelverarbeitung von AEM Forms-Nachrichten für as a Cloud Service Kommunikation
+# Stapelverarbeitung von Kommunikationen in AEM Forms as a Cloud Service
 
-Mithilfe von Kommunikation können Sie markenorientierte und personalisierte Kommunikation erstellen, zusammenstellen und bereitstellen, z. B. Geschäftskorrespondenzen, Dokumente, Aussagen, Anforderungsdatenverarbeitungs-Briefe, Leistungsbenachrichtigungen, monatliche Rechnungen und Willkommenskits. Sie können Kommunikations-APIs verwenden, um eine Vorlage (XFA oder PDF) mit Kundendaten zu kombinieren und Dokumente im PDF-, PS-, PCL-, DPL-, IPL- und ZPL-Format zu generieren.
+Mit Kommunikationen können Sie markenorientierte und personalisierte Mitteilungen erstellen, zusammenstellen und versenden, z. B. Geschäftskorrespondenz, Dokumente, Auszüge, Briefe zur Bearbeitung von Ansprüchen, Leistungsmitteilungen, monatliche Rechnungen und Begrüßungspakete. Sie können Kommunikations-APIs verwenden, um eine Vorlage (XFA oder PDF) mit Kundendaten zu kombinieren und Dokumente im PDF-, PS-, PCL-, DPL-, IPL- und ZPL-Format zu generieren.
 
 Die Kommunikationsfunktion bietet APIs für die On-Demand- und geplante Dokumenterstellung. Sie können synchrone APIs für die On-Demand-Dokumenterstellung und Batch-APIs (asynchrone APIs) für die geplante Dokumenterstellung verwenden:
 
@@ -174,7 +174,7 @@ Die Dokumentation zur API-Referenz enthält detaillierte Informationen zu allen 
 
 >[!MORELIKETHIS]
 >
->* [Einführung in die as a Cloud Service Kommunikation mit AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
->* [Kommunikationsverarbeitung - Synchrone APIs](/help/forms/aem-forms-cloud-service-communications.md)
->* [Kommunikationsverarbeitung - Batch-APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Einführung in die Kommunikationsfunktion von AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service-Architektur für adaptive Formulare und Kommunikations-APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Kommunikationsverarbeitung – synchrone APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Kommunikationsverarbeitung – Batch-APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

@@ -1,11 +1,11 @@
 ---
 title: Anwenderdefinierte HTTP-Kopfzeilen
-description: Erfahren Sie, wie Sie benutzerdefinierte HTTP-Header konfigurieren, die zusammen mit den bereits von CIF gesendeten an die Commerce-Engine gesendet werden.
+description: Erfahren Sie, wie Sie benutzerdefinierte HTTP-Header konfigurieren, die zusätzlich zu den bereits von CIF gesendeten an die Commerce-Engine gesendet werden.
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 89%
+ht-degree: 97%
 
 ---
 

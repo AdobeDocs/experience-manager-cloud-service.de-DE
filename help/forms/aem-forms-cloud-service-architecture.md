@@ -1,11 +1,11 @@
 ---
-title: AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs
+title: AEM Forms as a Cloud Service-Architektur für adaptive Formulare und Kommunikations-APIs
 description: Machen Sie sich mit der Architektur von [!DNL AEM Forms] as a Cloud Service vertraut, um mehr über die Skalierbarkeit, Widerstandsfähigkeit und Leistung der Plattform zu erfahren.
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1093'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/aem-forms-architecture-deployment.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/aem-forms-architecture-deployment.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 [!DNL Adobe Experience Manager Forms] as a Cloud Service bietet eine Cloud-native-Lösung für Unternehmen zum Erstellen, Verwalten, Veröffentlichen und Aktualisieren komplexer digitaler Formulare, wobei gleichzeitig die übermittelten Daten in Back-End-Prozesse und Geschäftsregeln integriert sowie Daten in einem externen Datenspeicher gespeichert werden. Er erweitert [!DNL Adobe Experience Manager as a Cloud Service]. Weitere Informationen zu Skalierung, Bereitstellung, Umgebungen und anderer Infrastruktur finden Sie unter [Einführung in die Architektur von [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=de).
@@ -198,6 +198,6 @@ AEM as a Cloud Service wird auf einer skalierbaren Self-Service-Cloud-Infrastruk
 
 >[!MORELIKETHIS]
 >
->* [Einführung in die as a Cloud Service Kommunikation mit AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [Stapelverarbeitung von AEM Forms-Nachrichten für as a Cloud Service Kommunikation](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
->* [Kommunikationsverarbeitung - Synchrone APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Einführung in die Kommunikationsfunktion von AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Stapelverarbeitung von Kommunikationen in AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Kommunikationsverarbeitung – synchrone APIs](/help/forms/aem-forms-cloud-service-communications.md)

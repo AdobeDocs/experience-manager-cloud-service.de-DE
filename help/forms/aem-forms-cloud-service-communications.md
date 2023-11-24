@@ -1,18 +1,18 @@
 ---
-title: Wie kann Forms as a Cloud Service verwendet werden, um Daten mit XDP- und PDF-Vorlagen zusammenzuführen oder Ausgaben in PCL-, ZPL- und PostScript-Formaten zu generieren?
+title: Wie kann Forms as a Cloud Service verwendet werden, um Daten mit XDP- und PDF-Vorlagen zusammenzuführen oder Ausgaben in den Formaten PCL, ZPL und PostScript zu generieren?
 description: Automatisches Zusammenführen von Daten mit XDP- und PDF-Vorlagen oder Generieren von Ausgaben in den Formaten PCL, ZPL und PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # Verwenden der synchronen Verarbeitung {#sync-processing-introduction}
 
-Forms as a Cloud Service - Kommunikations-APIs ermöglichen Ihnen das Erstellen, Zusammenstellen und Bereitstellen markenorientierter und personalisierter Kommunikationen wie Geschäftskorrespondenzen, Dokumente, Aussagen, Anforderungsverarbeitung von Briefen, Hinweise zu Vorteilen, Verarbeitung von Briefen, monatlichen Rechnungen und Willkommenskits. Sie können Communications APIs verwenden, um eine Vorlage (XFA oder PDF) mit Kundendaten zu kombinieren und damit Dokumente im PDF-, PS-, PCL-, DPL-, IPL- und ZPL-Format zu generieren.
+Forms as a Cloud Service – Mit den Kommunikations-APIs können Sie markenorientierte und personalisierte Texte erstellen, zusammenstellen und bereitstellen, wie z. B.  Geschäftskorrespondenz, Dokumente, Kontoauszüge, Briefe zur Bearbeitung von Ansprüchen, Leistungsbescheide, monatliche Rechnungen oder Begrüßungspakete. Sie können Communications APIs verwenden, um eine Vorlage (XFA oder PDF) mit Kundendaten zu kombinieren und damit Dokumente im PDF-, PS-, PCL-, DPL-, IPL- und ZPL-Format zu generieren.
 
 Angenommen, Sie haben eine oder mehrere Vorlagen und für jede Vorlage mehrere Datensätze mit XML-Daten. Sie können Kommunikations-APIs verwenden, um für jeden Eintrag ein Print-Dokument zu generieren. <!-- You can also combine the records into a single document. --> Das Ergebnis ist ein nicht interaktives PDF-Dokument. Bei einem nicht interaktiven PDF-Dokument können Benutzer keine Daten in die Felder eingeben.
 
@@ -145,7 +145,7 @@ Die [Dokumentation zur API-Referenz](https://developer.adobe.com/experience-mana
 
 >[!MORELIKETHIS]
 >
->* [Einführung in die as a Cloud Service Kommunikation mit AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
->* [Kommunikationsverarbeitung - Synchrone APIs](/help/forms/aem-forms-cloud-service-communications.md)
->* [Kommunikationsverarbeitung - Batch-APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Einführung in die Kommunikationsfunktion von AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service-Architektur für adaptive Formulare und Kommunikations-APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Kommunikationsverarbeitung – synchrone APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Kommunikationsverarbeitung – Batch-APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

@@ -1,6 +1,6 @@
 ---
 title: Wie werden adaptive Formularfragmente erstellt und verwendet?
-description: Formularfragment ist eine modulare und wiederverwendbare Komponente eines Formulars. Erfahren Sie, wie Sie Formularfragmente erstellen und sie formularübergreifend wiederverwenden können, um eine effiziente Formularkonfiguration zu gewährleisten.
+description: Ein Formularfragment ist eine modulare und wiederverwendbare Komponente eines Formulars. Erfahren Sie, wie Sie Formularfragmente erstellen und sie formularübergreifend wiederverwenden können, um eine effiziente Formularanordnung zu gewährleisten.
 uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -10,19 +10,19 @@ exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
 source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
 workflow-type: tm+mt
 source-wordcount: '2148'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
-# Erstellen und Verwenden adaptiver Forms-Fragmente in einem adaptiven Formular  {#adaptive-form-fragments}
+# Erstellen und Verwenden adaptiver Formularfragmente in einem adaptiven Formular  {#adaptive-form-fragments}
 
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-Zwar wird jedes Formular für einen bestimmten Zweck entwickelt, doch enthalten die meisten Formularen einige gängige Elemente (z. B. für persönliche Angaben wie Name und Anschrift, Angaben zu Familienstand, Einkommen usw.). Formularentwicklerinnen und -entwickler müssen diese gängigen Segmente jedes Mal erstellen, wenn ein neues Formular erstellt wird. Adaptive Formulare bieten einen praktischen Mechanismus, mit dem Formularsegmente wie ein Bedienfeld oder eine Gruppe von Feldern nur einmal erstellt und dann in adaptiven Formularen wiederverwendet werden können. Diese wiederverwendbaren, unabhängigen Segmente werden als adaptive Formularfragmente bezeichnet.
+Zwar wird jedes Formular für einen bestimmten Zweck entwickelt, doch enthalten die meisten Formulare einige gängige Elemente (z. B. für persönliche Angaben wie Name und Anschrift, Angaben zu Familienstand, Einkommen usw.). Formularentwicklerinnen und -entwickler müssen diese gängigen Segmente jedes Mal erstellen, wenn ein neues Formular erstellt wird. Adaptive Formulare bieten einen praktischen Mechanismus, mit dem Formularsegmente wie ein Bedienfeld oder eine Gruppe von Feldern nur einmal erstellt und dann in adaptiven Formularen wiederverwendet werden können. Diese wiederverwendbaren, unabhängigen Segmente werden als adaptive Formularfragmente bezeichnet.
 
 
 ## Erstellen eines Fragments {#create-a-fragment}
@@ -69,7 +69,7 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder einen Be
 
 Im Bearbeitungsmodus können Sie eine beliebige adaptive Formularkomponente aus dem AEM Sidekick auf das Fragment ziehen. <!-- For information about Adaptive Form components, see Introduction to authoring Adaptive Forms. -->
 
-Wenn Sie außerdem ein XML-Schema oder eine XDP-Formularvorlage als Formularmodell für Ihr Fragment ausgewählt haben, wird in der Inhaltssuche eine neue Registerkarte mit der Formularmodellhierarchie angezeigt. Damit können Sie Formularmodellelemente per Drag &amp; Drop auf das Fragment ziehen. Die hinzugefügten Formularmodellelemente werden in Formularkomponenten konvertiert, während die ursprünglichen Eigenschaften aus der zugehörigen XDP oder XSD beibehalten werden.
+Wenn Sie außerdem ein XML-Schema oder eine XDP-Formularvorlage als Formularmodell für Ihr Fragment ausgewählt haben, wird in der Inhaltssuche eine neue Registerkarte mit der Formularmodellhierarchie angezeigt. Sie können dann Formularmodellelemente per Drag-and-Drop auf das Fragment ziehen. Die hinzugefügten Formularmodellelemente werden in Formularkomponenten konvertiert, während die ursprünglichen Eigenschaften aus der zugehörigen XDP oder XSD beibehalten werden.
 
 ### Bereich als Fragment speichern {#save-panel-as-a-fragment}
 

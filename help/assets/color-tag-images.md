@@ -5,7 +5,7 @@ exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1220'
-ht-degree: 73%
+ht-degree: 99%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 73%
 
 ![Farb-Tagging-Banner](assets/banner-image.png)
 
-Adobe Experience Manager (AEM) Assets verwendet Adobe Sensei AI-Funktionen, um zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden. Diese Tags ermöglichen ein verbessertes Sucherlebnis, das auf der Bildfarbkomposition basiert.
+Adobe Experience Manager (AEM) Assets verwendet KI-Funktionen von Adobe Sensei, um zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden. Diese Tags ermöglichen ein verbessertes Sucherlebnis, das auf der Farbkomposition des Bildes basiert.
 
 Sie können die Anzahl der Farben, mit denen ein Bild getaggt wird, zwischen eins und 40 konfigurieren, sodass Sie später nach Bildern suchen können, die auf diesen Farben basieren. Experience Manager Assets wendet die Tags auf Grundlage der Farbabdeckung eines Bildes an. Sie können auch das Anzeigeformat für ein Farb-Tag konfigurieren.
 
@@ -25,12 +25,12 @@ Die folgende Abbildung zeigt die Abfolge von Aufgaben zum Konfigurieren und Verw
 
 | Dateiformat | Erweiterung | MIME-Typ | Eingabe-Farbraum | Maximal unterstützte Größe der Quelldatei | Maximale unterstützte Dateigrößenauflösung |
 |---|---|---|---|---|---|
-| JPEG | .jpg und .jpeg | image/jpeg | sRGB | 15 GB | 20000 × 20000 Pixel |
-| PNG | .png | image/png | sRGB | 15 GB | 20000 × 20000 Pixel |
-| TIFF | .tif und .tiff | image/tiff | sRGB | 4 GB (begrenzt durch Formatspezifikationen) | 20000 × 20000 Pixel |
-| PSD | .psd | image/vnd.adobe.photoshop | sRGB | 2 GB (begrenzt durch Formatspezifikationen) | 20000 × 20000 Pixel |
-| GIF | .gif | image/gif | sRGB | 15 GB | 20000 × 20000 Pixel |
-| BMP | .bmp | image/bmp | sRGB | 4 GB (begrenzt durch Formatspezifikationen) | 20000 × 20000 Pixel |
+| JPEG | .jpg und .jpeg | image/jpeg | sRGB | 15 GB | 20.000 × 20.000 Pixel |
+| PNG | .png | image/png | sRGB | 15 GB | 20.000 × 20.000 Pixel |
+| TIFF | .tif und .tiff | image/tiff | sRGB | 4 GB (begrenzt durch Formatspezifikationen) | 20.000 × 20.000 Pixel |
+| PSD | .psd | image/vnd.adobe.photoshop | sRGB | 2 GB (begrenzt durch Formatspezifikationen) | 20.000 × 20.000 Pixel |
+| GIF | .gif | image/gif | sRGB | 15 GB | 20.000 × 20.000 Pixel |
+| BMP | .bmp | image/bmp | sRGB | 4 GB (begrenzt durch Formatspezifikationen) | 20.000 × 20.000 Pixel |
 
 ## Verwalten von Farb-Tagging-Eigenschaften {#manage-color-tagging-properties}
 
@@ -42,7 +42,7 @@ So verwalten Sie die Farb-Tagging-Eigenschaften für Bilder:
 
 1. Geben Sie ein Anzeigeformat für das Farb-Tag im Feld **[!UICONTROL Anzeigeformat]** an. Zu den möglichen Optionen gehören der Farbname, das RGB- oder HEX-Format.
 
-1. Geben Sie die Anzahl der Farben an, die Sie für die Bilder taggen möchten, im **[!UICONTROL Limit]** -Feld. Diese Farben werden angezeigt, wenn Sie die Eigenschaften für ein Bild anzeigen. In diesem Feld können Sie eine Zahl zwischen 1 und 40 definieren. Der Standardwert für dieses Feld ist zehn Farben.
+1. Geben Sie im Feld **[!UICONTROL Limit]** die Anzahl der Farben an, mit denen die Bilder getaggt werden können. Diese Farben werden angezeigt, wenn Sie die Eigenschaften für ein Bild anzeigen. In diesem Feld können Sie eine Zahl zwischen 1 und 40 definieren. Der Standardwert für dieses Feld ist zehn Farben.
 
 1. Geben Sie im Feld **[!UICONTROL Schwellenwert für Abdeckung/Dominanz %]** den minimalen Farbabdeckungsprozentsatz an, um ein Farb-Tag in die Suchergebnisse einzufügen. Wenn die Abdeckung der roten Farbe in einem Bild beispielsweise 10 Prozent beträgt und Sie in diesem Feld neun Prozent definieren, wird das Bild bei der Suche nach Bildern mit roter Farbe einbezogen. Wenn jedoch die rote Farbabdeckung in einem Bild 10 Prozent beträgt und Sie 11 Prozent in diesem Feld definieren, wird das Bild bei der Suche nach Bildern mit roter Farbe nicht berücksichtigt.
 
@@ -50,7 +50,7 @@ So verwalten Sie die Farb-Tagging-Eigenschaften für Bilder:
 
    >[!NOTE]
    >
-   >Adobe empfiehlt, in diesem Feld einen Wert zu verwenden, der nahe bei dem Standardwert liegt. Wenn Sie einen für dieses Feld festgelegten Wert mit hoher Zahl festlegen (z. B. größer als 25), werden möglicherweise nur wenige Suchergebnisse zurückgegeben. Auf ähnliche Weise kann die Festlegung eines niedrigen Zahlenwerts (z. B. unter 6) zu vielen Suchergebnissen führen, was möglicherweise nicht nützlich ist.
+   >Adobe empfiehlt, in diesem Feld einen Wert zu verwenden, der nahe bei dem Standardwert liegt. Wenn Sie einen hohen Zahlenwert für dieses Feld festlegen (z. B. größer als 25), kann dies zu nur sehr wenigen Suchergebnissen führen. Auf ähnliche Weise kann die Festlegung eines niedrigen Zahlenwerts (z. B. unter 6) zu vielen Suchergebnissen führen, was möglicherweise nicht nützlich ist.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -84,7 +84,7 @@ Metadaten-Schemata enthalten bestimmte Felder für bestimmte einzutragende Infor
 
 >[!NOTE]
 >
->Das Feld Smart Color Tag ist im Standard-Metadatenschema verfügbar. Wenn Sie ein benutzerdefiniertes Metadatenschema verwenden, konfigurieren Sie Ihr Schema so, dass ein Smart-Color-Tag-Feld hinzugefügt wird.
+>Das Feld „Smart-Farb-Tag“ ist im Standard-Metadatenschema verfügbar. Wenn Sie ein benutzerdefiniertes Metadatenschema verwenden, konfigurieren Sie Ihr Schema so, dass ein Feld mit einem Smart-Farb-Tag hinzugefügt wird.
 
 So fügen Sie die Smart-Farb-Tags-Komponente zum Metadatenschema-Formular-Editor hinzu:
 
@@ -104,21 +104,21 @@ So fügen Sie die Smart-Farb-Tags-Komponente zum Metadatenschema-Formular-Editor
 
 ## Farb-Tags für vorhandene Bilder in DAM {#color-tags-existing-images}
 
-Die vorhandenen Bilder in DAM werden nicht automatisch mit Farbfeldern versehen. [!UICONTROL Assets erneut verarbeiten] manuell erstellen, um Farb-Tags für sie zu generieren.
+Die bereits vorhandenen Bilder in DAM werden nicht automatisch mit Farb-Tags versehen. Sie müssen [!UICONTROL Assets neu verarbeiten], um Farb-Tags für sie zu generieren.
 
-Gehen Sie wie folgt vor, um Tag-Bilder oder Ordner (einschließlich Unterordner) von Assets zu farbig zu kennzeichnen, die im Assets-Repository vorhanden sind:
+Gehen Sie wie folgt vor, um Bilder oder Ordner (einschließlich Unterordner) mit Assets, die bereits im Assets-Repository vorhanden sind, mit Farb-Tags zu versehen:
 
 1. Klicken oder tippen Sie auf das [!DNL Adobe Experience Manager]-Logo und wählen Sie dann Assets auf der [!UICONTROL Navigationsseite] aus.
 
-1. Auswählen [!UICONTROL Dateien].
+1. Wählen Sie [!UICONTROL Dateien] aus.
 
-1. Navigieren Sie in der Assets-Benutzeroberfläche zu dem Ordner, auf den Sie Farb-Tags anwenden möchten.
+1. Navigieren Sie auf der Assets-Benutzeroberfläche zu dem Ordner, auf den Sie Farb-Tags anwenden möchten.
 
 1. Wählen Sie den gesamten Ordner oder nur bestimmte Bilder aus.
 
 1. Klicken oder tippen Sie auf das Symbol ![Assets erneut verarbeiten](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Assets erneut verarbeiten] und wählen Sie die Option [!UICONTROL Vollständiger Prozess] aus.
 
-Navigieren Sie nach Abschluss des Prozesses zum [!UICONTROL Eigenschaften] -Seite eines beliebigen Bildes im Ordner. Die automatisch hinzugefügten Tags werden im [!UICONTROL Smart Color Tags] im Abschnitt [!UICONTROL Allgemein] Registerkarte.
+Navigieren Sie nach Abschluss des Vorgangs zur Seite [!UICONTROL Eigenschaften] eines Bilds im Ordner. Die automatisch hinzugefügten Tags werden im Abschnitt [!UICONTROL Smart-Farb-Tags] der Registerkarte [!UICONTROL Allgemein] angezeigt.
 
 
 ## Anzeigen von Smart-Farb-Tags für Bilder {#view-color-tags}
@@ -133,7 +133,7 @@ So zeigen Sie Smart-Farb-Tags für Bilder an:
 
    ![Anzeigen von Farb-Tags](assets/view-color-tags.png)
 
-   Bewegen Sie die Maus über ein Farbtag, damit Sie die **[!UICONTROL Schwellenwert für Abdeckung/Dominanz %]** einer Farbe in einem Bild.
+   Bewegen Sie den Mauszeiger über ein Farb-Tag, um den **[!UICONTROL Schwellenwert für Abdeckung/Dominanz %]** einer Farbe in einem Bild anzuzeigen.
 
 ## Konfigurieren eines AEM Assets-Farbprädikats {#configure-search-predicate}
 
@@ -141,7 +141,7 @@ Sie können einen Suchfilter für Bilder konfigurieren. Anschließend können Si
 
 >[!NOTE]
 >
->Konfigurieren Sie das AEM Assets-Farbprädikat nur, wenn Sie das Standardsuchformular nicht verwenden.
+>Konfigurieren Sie das AEM Assets-Farbprädikat nur, wenn Sie nicht das Standardsuchformular verwenden.
 
 Um den Suchfilter zu konfigurieren, erstellen Sie mit der Asset-Admin-Suchschiene ein Asset-Farbprädikat.
 
@@ -163,7 +163,7 @@ So konfigurieren Sie den Suchfilter:
 
 >[!VIDEO](https://video.tv.adobe.com/v/340761)
 
-Nach dem Konfigurieren aller Farb-Tagging-Eigenschaften und [Konfigurieren des Assets-Farbprädikats](#search-images-based-on-colors)können Sie Bilder basierend auf einer Farbe als Filter suchen.
+Nach dem Konfigurieren aller Farb-Tagging-Eigenschaften und dem [Konfigurieren des Assets-Farbprädikats](#search-images-based-on-colors) können Sie Bilder basierend auf einer Farbe als Filter suchen.
 
 So suchen Sie Bilder basierend auf Farben:
 
@@ -180,7 +180,7 @@ So suchen Sie Bilder basierend auf Farben:
 
    Sie können Bilder anhand der Auswahl von nur einer Farbe filtern. Die Bilder, die die ausgewählte Farbe als eines der Smart-Farb-Tags und über dem [Schwellenwert für Abdeckung/Dominanz %](#manage-color-tagging-settings) haben, werden im rechten Bereich angezeigt.
 
-1. Löschen Sie den Filter, indem Sie in der Suchleiste auf X klicken.
+1. Löschen Sie den Filter, indem Sie in der Suchleiste auf „X“ klicken.
 
 **Siehe auch**
 

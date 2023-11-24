@@ -1,13 +1,13 @@
 ---
-title: Wie kann Hilfetext für AEM adaptive Forms-Felder hinzugefügt werden?
-description: Mit AEM Forms können Sie kontextbezogene Hilfe zu Feldern und Bereichen in adaptiven Formularen als Text oder Rich Media, einschließlich Videos, hinzufügen.
+title: Hinzufügen von Hilfetext für Felder in adaptiven AEM-Formularen
+description: Mit AEM Forms können Sie kontextbezogene Hilfe zu Feldern und Panels in adaptiven Formularen als Text oder Rich Media, einschließlich Videos, hinzufügen.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
 source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 48%
 
 ## Einführung {#introduction}
 
-Es gibt Situationen, in denen sich Endbenutzer, die ein Formular ausfüllen, nicht sicher sind, wie Informationen in ein bestimmtes Formularfeld einzugeben sind. Für solche Fälle bieten adaptive Formulare die Möglichkeit, Text oder interaktive kontextbezogene Hilfe zu einem Formularfeld hinzuzufügen. Dadurch wird das Ausfüllen des Formulars verbessert und Unklarheiten für Endbenutzer vermieden.
+Es gibt Situationen, in denen sich Endbenutzer, die ein Formular ausfüllen, nicht sicher sind, wie Informationen in ein bestimmtes Formularfeld einzugeben sind. Für solche Fälle bieten adaptive Formulare die Möglichkeit, Text oder interaktive kontextbezogene Hilfe zu einem Formularfeld hinzuzufügen. Dies erleichtert das Ausfüllen des Formulars und vermeidet potenzielle Uneindeutigkeiten für Endbenutzende.
 
-In diesem Artikel wird erläutert, wie Formularautoren kontextbezogene Hilfe beim Authoring von Adaptive Forms hinzufügen können.
+Dieser Artikel erläutert, wie Autorinnen und Autoren von Formularen kontextbezogene Hilfe beim Authoring adaptiver Formulare hinzufügen können.
 
 ## Hinzufügen kontextbezogener Hilfe {#add-in-context-help}
 
-Sie können kontextbezogene Hilfe mithilfe der folgenden Optionen im Abschnitt Hilfe-Inhalt auf der Registerkarte Eigenschaften in der Seitenleiste angeben.
+Sie können kontextbezogene Hilfe mit den folgenden Optionen im Abschnitt „Hilfe-Inhalt“ der Registerkarte „Eigenschaften“ in der Seitenleiste angeben.
 
 * [Kurzbeschreibung](authoring-in-field-help.md#p-short-description-p)
 * [Lange Beschreibung](authoring-in-field-help.md#p-long-description-p)
@@ -31,11 +31,11 @@ Sie können kontextbezogene Hilfe mithilfe der folgenden Optionen im Abschnitt H
 
 >[!NOTE]
 >
->Eine lange Beschreibung überschreibt die Kurzbeschreibung. Wenn Sie beide Optionen angegeben haben, wird nur die lange Beschreibung angezeigt.
+>Die lange Beschreibung überschreibt die Kurzbeschreibung. Wenn Sie beide Optionen angegeben haben, wird nur die lange Beschreibung angezeigt.
 
 ### Kurzbeschreibung {#short-description}
 
-Das Feld &quot;Kurzbeschreibung&quot;dient dazu, schnelle und kurze Hinweise zum Ausfüllen eines Formularfelds bereitzustellen. Der im Feld Kurzbeschreibung angegebene Text wird als QuickInfo angezeigt, wenn Sie den Mauszeiger über das Feld bewegen.
+Das Feld „Kurzbeschreibung“ ermöglicht die Angabe schneller und kurzer Hinweise zum Ausfüllen eines Formularfelds. Der im Feld „Kurzbeschreibung“ eingegebene Text wird als QuickInfo beim Bewegen der Maus über das Feld angezeigt.
 
 ![Kurzbeschreibung zum Hinzufügen von kontextbezogener Hilfe für Formularfelder](assets/tooltip.png)
 
@@ -51,7 +51,7 @@ Sie können das Feld „Lange Beschreibung“ verwenden, um langen Text anzugebe
 
 ![Hinzufügen von Rich-Media als kontextbezogene Hilfe für Formularfelder](assets/long-descriptions.png)
 
-Durch Hinzufügen einer langen Beschreibung wird eine **?** neben dem Feld. Durch Klicken auf das Symbol wird der Inhalt angezeigt, der im Abschnitt &quot;Lange Beschreibung&quot;hinzugefügt wurde.
+Wenn Sie eine lange Beschreibung hinzufügen, wird das Symbol **„?“** neben dem Feld angezeigt. Durch Klicken auf das Symbol wird der Inhalt angezeigt, der im Abschnitt „Lange Beschreibung“ hinzugefügt wurde.
 
 ![Beispiel für kontextbezogene Rich-Media-Hilfe](assets/photoshop.png)
 
@@ -61,7 +61,7 @@ Zusätzlich zur kontextbezogenen Hilfe für Formularfelder können Sie auf der R
 
 ![Hinzufügen von kontextbezogener Hilfe für einen Formularbereich](assets/panel-level-help.png)
 
-Wenn Sie Hilfe für das Bedienfeld hinzufügen, wird eine **?** neben der Bedienfeldbeschreibung. Durch Klicken auf das Symbol wird der Inhalt angezeigt, der im Abschnitt &quot;Hilfe-Inhalt&quot;des Dialogfelds zum Bearbeiten des Bedienfelds hinzugefügt wurde.
+Wenn Sie Hilfe für ein Panel hinzufügen, wird das Symbol **„?“** neben der Beschreibung des Panels angezeigt. Durch Klicken auf das Symbol wird der Inhalt angezeigt, der im Abschnitt „Hilfe-Inhalt“ des Dialogfelds zum Bearbeiten des Bereichs hinzugefügt wurde.
 
 ![Beispiel für kontextbezogene Hilfe auf Formularbereichsebene](assets/photoshop-1.png)
 

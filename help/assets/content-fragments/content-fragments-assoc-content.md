@@ -5,7 +5,7 @@ exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '230'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -38,7 +38,7 @@ Um die Verknüpfung herzustellen, müssen Sie zunächst [Hinzufügen von Medien-
 
 1. Bestätigen (mit **Auswählen**). Die Sammlung wird als zugeordnet aufgelistet.
 
-   ![Bestätigter Verein](assets/cfm-assoc-content-03.png)
+   ![Bestätigte Verknüpfung](assets/cfm-assoc-content-03.png)
 
 ## Bearbeiten zugehöriger Inhalte {#editing-associated-content}
 

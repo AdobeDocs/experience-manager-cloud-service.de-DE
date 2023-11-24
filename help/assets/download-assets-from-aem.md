@@ -8,7 +8,7 @@ exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1385'
-ht-degree: 87%
+ht-degree: 98%
 
 ---
 
@@ -88,7 +88,7 @@ Gehen Sie wie folgt vor, um Assets herunterzuladen:
 
 1. Klicken Sie im Dialogfeld auf **[!UICONTROL Herunterladen]**.
 
-   Wenn die E-Mail-Benachrichtigung für große Downloads aktiviert ist, wird in Ihrem Posteingang eine E-Mail mit einer Download-URL des archivierten ZIP-Ordners angezeigt. Klicken Sie in der E-Mail auf den Downloadlink, um das ZIP-Archiv herunterzuladen.
+   Wenn die E-Mail-Benachrichtigung für große Downloads aktiviert ist, wird in Ihrem Posteingang eine E-Mail mit einer Download-URL des archivierten ZIP-Ordners angezeigt. Klicken Sie in der E-Mail auf den Download-Link, um das ZIP-Archiv herunterzuladen.
 
    ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
 
@@ -134,12 +134,12 @@ Wenn Sie die Download-Funktion nicht benötigen, deaktivieren Sie das Servlet, u
 
 ## OnTime- oder OffTime-Ausgabedarstellung {#on-off-time-rendition}
 
-So aktivieren Sie die `OnOffTimeAssetAccessFilter` -Dienst verwenden, müssen Sie eine OSGi-Konfiguration erstellen. Dieser Dienst ermöglicht das Blockieren des Zugriffs auf Ausgabedarstellungen und Metadaten zusätzlich zum Asset selbst basierend auf den Ein-/Ausschaltzeiteinstellungen. Die OSGi-Konfiguration sollte für `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. Führen Sie dazu folgende Schritte durch:
+Zum Aktivieren des Dienstes `OnOffTimeAssetAccessFilter` müssen Sie eine OSGi-Konfiguration erstellen. Dieser Dienst ermöglicht das Blockieren des Zugriffs auf Ausgabedarstellungen und Metadaten zusätzlich zum Asset selbst, basierend auf den Zeiteinstellungen für das Ein-/Ausschalten. Die OSGi-Konfiguration sollte für `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter` sein. Führen Sie dazu folgende Schritte durch:
 
-1. Erstellen Sie in Ihrem Projektcode in Git eine Konfigurationsdatei unter `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. Die Datei sollte `{}` als Inhalt bezeichnet, was eine leere OSGi-Konfiguration für die entsprechende OSGi-Komponente bedeutet. Diese Aktion aktiviert den Dienst.
-1. Bereitstellen des Codes, einschließlich dieser neuen Konfiguration, durch [!DNL Cloud Manager].
-1. Nach der Bereitstellung sind die Ausgabedarstellungen und Metadaten gemäß den Ein-/Ausschaltzeiteinstellungen der Assets verfügbar. Wenn das aktuelle Datum bzw. die aktuelle Uhrzeit vor oder nach der Ausfallzeit liegt, wird eine Fehlermeldung angezeigt.
-Weitere Informationen zum Hinzufügen einer leeren OSGi-Konfiguration finden Sie in diesem Abschnitt [Handbuch](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=de).
+1. Erstellen Sie in Ihrem Projekt-Code in Git eine Konfigurationsdatei unter `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. Die Datei sollte `{}` als Inhalt umfassen, das heißt eine leere OSGi-Konfiguration für die entsprechende OSGi-Komponente. Diese Aktion aktiviert den Dienst.
+1. Stellen Sie Ihren Code einschließlich dieser neuen Konfiguration durch [!DNL Cloud Manager] bereit.
+1. Nach der Bereitstellung sind die Ausgabedarstellungen und Metadaten gemäß den Zeiteinstellungen für das Ein-/Ausschalten der Assets verfügbar. Wenn das aktuelle Datum bzw. die aktuelle Uhrzeit vor der Einschaltzeit oder hinter der Ausschaltzeit liegt, wird eine Fehlermeldung angezeigt.
+Weitere Informationen zum Hinzufügen einer leeren OSGi-Konfiguration finden Sie in diesem [Handbuch](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=de).
 
 ## Tipps und Einschränkungen {#tips-limitations}
 

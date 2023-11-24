@@ -6,7 +6,7 @@ exl-id: 534a8084-88f7-410e-b872-719e47e62b10
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -78,7 +78,7 @@ Um in einen Ordner zu navigieren, doppelklicken Sie auf die Miniaturansichten de
 
 Bevor Sie ein Asset verwenden, freigeben oder herunterladen, können Sie es sich genauer ansehen. Mit der Vorschaufunktion können Sie nicht nur die Bilder, sondern auch einige andere unterstützte Asset-Typen anzeigen.
 
-Um ein Asset in der Vorschau anzuzeigen, wählen Sie es aus und klicken Sie oben in der Symbolleiste auf [!UICONTROL Details] ![details icon](assets/do-not-localize/edit-in-icon.png). Sie können das Asset nicht nur anzeigen, sondern auch die detaillierten Metadaten anzeigen und andere Aktionen durchführen.
+Um ein Asset in der Vorschau anzuzeigen, wählen Sie es aus und klicken Sie oben in der Symbolleiste auf [!UICONTROL Details] ![details icon](assets/do-not-localize/edit-in-icon.png). Sie können nicht nur das Asset, sondern auch seine detaillierten Metadaten anzeigen und andere Aktionen durchführen.
 
 ![Anzeigen einer Vorschau für ein Asset](assets/preview-asset-2.png)
 

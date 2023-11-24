@@ -1,16 +1,16 @@
 ---
-title: Wie profitiert Ihnen die Ansicht von Assets in AEM?
-description: Erfahren Sie mehr über die wichtigsten Vorteile der Asset-Ansicht in AEM. Adobe, das seine Expertise in der Stärkung von Marketing- und Kreativprofis einsetzt, führt ein völlig neues Anwendererlebnis ein.
+title: Wie können Sie die Assets-Ansicht in AEM nutzen?
+description: Erfahren Sie mehr über die wichtigsten Vorteile der Assets-Ansicht in AEM.  Adobe, das seine Expertise in der Stärkung von Marketing- und Kreativprofis einsetzt, führt ein völlig neues Anwendererlebnis ein.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 83%
+ht-degree: 97%
 
 ---
 
-# Einführung in die Asset-Ansicht {#assets-view}
+# Einführung in die Assets-Ansicht {#assets-view}
 
 ![Bereitstellen von Assets Essentials](assets/banner-image.jpg)
 
@@ -47,7 +47,7 @@ Sie können wie folgt auf die Assets-Ansicht zugreifen:
 
 ## Was spricht für die Assets-Ansicht?
 
-Die Asset-Ansicht bietet die folgenden Hauptvorteile, die in der Admin-Ansicht nicht verfügbar sind:
+Die Assets-Ansicht hat gegenüber der Admin-Ansicht die folgenden wesentlichen Vorteile:
 
 * [Dashboard „Mein Arbeitsbereich“ zur Bereitstellung optimierter Erlebnisse](#my-workspace-for-streamlined-experience)
 * [Search-First-Ansatz für mehr Effizienz](#search-first)
@@ -59,7 +59,7 @@ Die Asset-Ansicht bietet die folgenden Hauptvorteile, die in der Admin-Ansicht n
 
 ### Dashboard „Mein Arbeitsbereich“ zur Bereitstellung optimierter Erlebnisse {#my-workspace-for-streamlined-experience}
 
-Freuen Sie sich auf eine Digital Asset Management-Lösung, die die unterschiedlichen Anforderungen verschiedener Unternehmensrollen berücksichtigt. Die schlanke Asset-Ansicht priorisiert Benutzerfreundlichkeit und Geschwindigkeit und berücksichtigt dabei die Vorlieben der Marketing-Experten hinsichtlich visueller Attraktivität und übersichtlicher Arbeitsbereiche. Mit dem benutzerspezifischen Dashboard „Mein Arbeitsbereich“ können Marketing-Fachleute Assets schnell finden, in der Vorschau anzeigen, bearbeiten, verwalten und bereitstellen – und das mit bemerkenswerter Effizienz. Sie brauchen nicht mehr Stunden mit der Suche nach bestimmten Assets zu verbringen, sondern erhalten ein optimiertes Erlebnis, bei dem Sie alles Nötige sofort finden.
+Freuen Sie sich auf eine Digital Asset Management-Lösung, die die unterschiedlichen Anforderungen verschiedener Unternehmensrollen berücksichtigt. Die Assets-Ansicht mit ihrem eleganten Design priorisiert Benutzerfreundlichkeit und Schnelligkeit sowie die Vorlieben von Marketing-Fachleuten, die sich eine ansprechende Ästhetik und übersichtliche Arbeitsbereiche wünschen. Mit dem benutzerspezifischen Dashboard „Mein Arbeitsbereich“ können Marketing-Fachleute Assets schnell finden, in der Vorschau anzeigen, bearbeiten, verwalten und bereitstellen – und das mit bemerkenswerter Effizienz. Sie brauchen nicht mehr Stunden mit der Suche nach bestimmten Assets zu verbringen, sondern erhalten ein optimiertes Erlebnis, bei dem Sie alles Nötige sofort finden.
 
 ![Übersicht über das Dashboard „Mein Arbeitsbereich“](assets/my-workspace-demo.gif)
 
@@ -67,7 +67,7 @@ Freuen Sie sich auf eine Digital Asset Management-Lösung, die die unterschiedli
 
 ### Insights für datenbasierte Entscheidungen {#insights-data}
 
-Um mit der Inhaltsgeschwindigkeit Schritt zu halten, sind umsetzbare Insights unerlässlich. Die Asset-Ansicht bietet erweiterte Einblicke in My Workspace und bietet wertvolle Daten zur Asset-Leistung, zur Zielgruppennutzung und zu Interaktionen. Marketing-Fachleute können datenbasierte Entscheidungen treffen, Inhaltsstrategien optimieren und die nachgelagerten Sendungen verfeinern, um optimale Ergebnisse zu erzielen. Durch den Zugriff auf aussagekräftige Insights können Unternehmen dem Wettbewerb voraus bleiben und außergewöhnliche Ergebnisse erzielen.
+Um mit der Inhaltsgeschwindigkeit Schritt zu halten, sind umsetzbare Insights unerlässlich. Die Assets-Ansicht bietet erweiterte Einblicke innerhalb des Dashboards „Mein Arbeitsbereich“ und liefert wertvolle Daten zur Asset-Leistung, zur Zielgruppennutzung und zu Interaktionen.  Marketing-Fachleute können datenbasierte Entscheidungen treffen, Inhaltsstrategien optimieren und die nachgelagerten Sendungen verfeinern, um optimale Ergebnisse zu erzielen. Durch den Zugriff auf aussagekräftige Insights können Unternehmen dem Wettbewerb voraus bleiben und außergewöhnliche Ergebnisse erzielen.
 
 ![Insights-Überblick](assets/insights-overview.gif)
 
@@ -95,13 +95,13 @@ Richten Sie mithilfe der Assets-Ansicht schnell eine Ordnerstruktur für Ihre Or
 
 ### Search-First-Ansatz für mehr Effizienz {#search-first}
 
-Erschließen Sie das Potenzial der digitalen Asset-Bibliothek Ihrer Organisation durch Suchvorgänge mit modernsten Funktionen. Sie müssen nicht mehr mühevoll unzählige Dateien und Ordner manuell durchgehen. Alle Benutzenden können sofort das perfekte Bild, Video oder Dokument für beeindruckende Marketing-Kampagnen, faszinierende Präsentationen und ansprechende Inhalte finden. Mit unserer Suchmaschine können Sie mühelos durch Asset-Typen, Metadaten, Smart-Tags und sogar den Inhalt selbst navigieren, ohne das genaue Keyword zu kennen. Nutzen Sie die Zukunft des DAM mit unserem Search-First-Ansatz und schöpfen Sie das volle Potenzial Ihrer digitalen Asset-Bibliothek aus.
+Erschließen Sie das Potenzial der digitalen Asset-Bibliothek Ihrer Organisation durch Suchvorgänge mit modernsten Funktionen. Sie müssen nicht mehr mühevoll unzählige Dateien und Ordner manuell durchgehen. Alle Benutzenden können sofort das perfekte Bild, Video oder Dokument für beeindruckende Marketing-Kampagnen, faszinierende Präsentationen und ansprechende Inhalte finden. Mit unserer Search-First-Suchmaschine können Sie mühelos durch Asset-Typen, Metadaten, Smarttags und sogar den Inhalt selbst navigieren, ohne das genaue Keyword zu kennen. Nutzen Sie die Zukunft des DAM mit unserem Search-First-Ansatz und schöpfen Sie das volle Potenzial Ihrer digitalen Asset-Bibliothek aus.
 
 ![Search-First-Ansatz](assets/search-first.gif)
 
 ### Abonnieren von Repository-Inhalten für effizientes Asset-Management {#subscribe-content}
 
-Die Ansicht &quot;Assets&quot;bietet die Möglichkeit, die Vorgänge zu überwachen, die für die im Repository verfügbaren Assets, Ordner oder Sammlungen ausgeführt werden. Sie müssen den Inhalt auswählen und abonnieren, für den die Benachrichtigungen an Sie gesendet werden. Sie können auch die Ereignistypen konfigurieren, z. B. das Löschen oder Ändern von abonnierten Inhalten. Die Benachrichtigungen werden Ihnen dann nur für diese Ereignistypen gesendet.
+Die Assets-Ansicht ermöglicht Ihnen die Überwachung der Vorgänge, die mit den im Repository verfügbaren Assets, Ordnern oder Sammlungen durchgeführt werden.  Sie müssen den Inhalt auswählen und abonnieren, für den die Benachrichtigungen an Sie gesendet werden. Sie können auch die Ereignistypen konfigurieren, z. B. das Löschen oder Ändern von abonnierten Inhalten. Die Benachrichtigungen werden Ihnen dann nur für diese Ereignistypen gesendet.
 
 ![Empfangen von Benachrichtigungen](assets/notifications.gif)
 
@@ -121,10 +121,10 @@ Zusätzlich zu diesen Funktionen können Sie mit der Assets-Ansicht auch die fol
 
 * Umbenennen der im Repository verfügbaren Assets und Ordner.
 
-Die Asset-Ansicht ist auf die Optimierung von Workflows, die Förderung der Zusammenarbeit und die Beschleunigung der Asset-Bereitstellung zugeschnitten. Durch die schnelle Bereitstellung von Inhalten können Marketing-Fachleute das gesamte Potenzial ihrer digitalen Assets ausschöpfen und eine beispiellose Kreativität freisetzen.
+Die Assets-Ansicht ist darauf zugeschnitten, Workflows zu optimieren, die Zusammenarbeit zu fördern und die Bereitstellung von Assets zu beschleunigen.  Durch die schnelle Bereitstellung von Inhalten können Marketing-Fachleute das gesamte Potenzial ihrer digitalen Assets ausschöpfen und eine beispiellose Kreativität freisetzen.
 
 
-Verwenden Sie diese Links, um schnell mit der Asset-Ansicht zu beginnen:
+Verwenden Sie diese Links, um schnell mit der Assets-Ansicht zu beginnen:
 
 * [Mein Arbeitsbereich](/help/assets/my-workspace-assets-view.md)
 * [Erste Schritte mit der Assets-Ansicht](/help/assets/get-started-assets-view.md)

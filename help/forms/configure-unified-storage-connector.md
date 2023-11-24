@@ -5,7 +5,7 @@ exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
 source-git-commit: c33f59cb56decf1e5bbbe0b5bb084e906585e702
 workflow-type: tm+mt
 source-wordcount: '641'
-ht-degree: 78%
+ht-degree: 82%
 
 ---
 
@@ -70,6 +70,6 @@ Im Folgenden finden Sie die Richtlinien für die Verwendung von AEM-Workflows un
 >[!MORELIKETHIS]
 >
 >* [Konfigurieren von Datenquellen für AEM Forms](/help/forms/configure-data-sources.md)
->* [Konfigurieren von Azure Storage für AEM Forms](/help/forms/configure-azure-storage.md)
->* [Integrieren von Microsoft Dynamics 365 und Salesforce mit Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
->  [Hinzufügen von Forms Portal zu einer AEM Sites-Seite](/help/forms/configure-forms-portal.md)
+>* [Konfigurieren von Azure Storage für AEM-Formulare](/help/forms/configure-azure-storage.md)
+>* [Integrieren von Microsoft Dynamics 365 und Salesforce mit adaptiven Formularen](/help/forms/configure-msdynamics-salesforce.md)
+>  [Hinzufügen des Formularportals zu einer AEM Sites-Seite](/help/forms/configure-forms-portal.md)

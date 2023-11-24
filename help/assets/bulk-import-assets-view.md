@@ -5,7 +5,7 @@ exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 source-git-commit: 88198e9333a7f706fc99e487d8cde84647fa111f
 workflow-type: tm+mt
 source-wordcount: '1747'
-ht-degree: 53%
+ht-degree: 56%
 
 ---
 
@@ -15,7 +15,7 @@ Der Massenimport in der AEM Assets-Ansicht bietet Admins die Möglichkeit, eine 
 
 >[!NOTE]
 >
->Das Bulk Importer für die Asset-Ansicht verwendet dasselbe Backend wie das Bulk Importer für die Admin-Ansicht. Es bietet jedoch mehr Datenquellen, aus denen importiert werden kann, und eine optimierte Benutzererfahrung.
+>Der Massenimport für die Assets-Ansicht verwendet dasselbe Backend wie der Massenimport für die Admin-Ansicht. Er bietet jedoch mehr Datenquellen, aus denen importiert werden kann, und ein optimiertes Anwendererlebnis.
 
 Sie können Assets aus den folgenden Datenquellen importieren:
 

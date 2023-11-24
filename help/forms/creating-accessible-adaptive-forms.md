@@ -1,6 +1,6 @@
 ---
-title: Wie erstelle ich barrierefreie adaptive Forms?
-description: AEM Forms bietet Tools zum Erstellen barrierefreier adaptiver Forms und hilft bei der Einhaltung von Barrierefreiheitsstandards.
+title: Erstellen von adaptiven Formularen
+description: AEM Forms bietet Tools zum Erstellen barrierefreier adaptiver Formulare und vereinfacht die Einhaltung von Standards bezüglich der Barrierefreiheit.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
@@ -8,7 +8,7 @@ exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2022'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 

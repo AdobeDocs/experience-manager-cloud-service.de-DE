@@ -1,6 +1,6 @@
 ---
-title: Wie kann ich ein adaptives Formular zur Überprüfung senden?
-description: Freigeben eines adaptiven Formulars zur Überprüfung für einen oder mehrere Überprüfer.
+title: Übermittlung eines adaptiven Formulars zur Überprüfung
+description: Freigeben eines adaptiven Formulars zur Überprüfung für ein oder mehrere Prüferinnen oder Prüfer.
 uuid: 58c8c8fb-9262-4c37-b9b2-e46fe21b77d9
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -9,16 +9,16 @@ docset: aem65
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
 source-wordcount: '499'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
 # Zuweisen von Übermittlungsprüfern mit einem Formular {#associating-submission-reviewers-with-a-form}
 
-Wenn Sie ein Formular erstellen, können Sie Benutzer angeben, die die Übermittlungen des Formulars über das Formularportal überprüfen und Feedback geben. Ihr Unternehmen kann Feedback erfassen und die gesendeten Formulare überarbeiten.
+Wenn Sie ein Formular erstellen, können Sie Benutzer angeben, die die Übermittlungen des Formulars über das Formularportal überprüfen und Feedback geben. Ihr Unternehmen kann Feedback erfassen und in die übermittelten Formulare einarbeiten.
 
-[!DNL AEM Forms] ermöglicht die Zuordnung einer Überprüfergruppe zu einem Formular. Benutzer, die einer Reviewer-Gruppe eines Formulars hinzugefügt wurden, können Übermittlungen dieses Formulars sehen und Feedback hinterlassen.
+Mit [!DNL AEM Forms] können Sie eine Prüfergruppe mit einem Formular verknüpfen. Benutzer, die einer Reviewer-Gruppe eines Formulars hinzugefügt wurden, können Übermittlungen dieses Formulars sehen und Feedback hinterlassen.
 
 Die Reviewer-Gruppen, die mit einem Formular verknüpft sind, können nur die Übermittlungen der angegebenen Formulare überprüfen.
 
@@ -28,7 +28,7 @@ Die Reviewer-Gruppen, die mit einem Formular verknüpft sind, können nur die Ü
 
 Um eine Reviewer-Gruppe mit einem Formular zu verknüpfen, bearbeiten Sie das Metadatenschema adaptiver Formulare. Standardmäßig können Sie eine Reviewer-Gruppe nicht zu einem übermittelten Formular hinzufügen.
 
-So bearbeiten Sie das Metadatenschema:
+Bearbeiten des Metadatenschemas:
 
 1. Klicken Sie im Autorenmodus unter Experience Manager auf **Extras** > **Assets** > **Metadatenschemas**.
 1. Navigieren Sie auf der Seite für die Schemaformulare zu **Formulare** > **Formularen, die in AEM verfasst wurden.**
@@ -78,4 +78,4 @@ Verknüpfen von Benutzergruppen mit einem adaptiven Formular:
 >[!MORELIKETHIS]
 >
 >* [Erstellen und Verwalten von Überprüfungen in Formularen](/help/forms/create-reviews-forms.md)
->* [Erstellen und Verwalten von Überprüfungen für ein adaptives Formular](/help/forms/review-adaptiveforms-in-sites-page.md)
+>* [Erstellen und Verwalten von Überprüfungen eines adaptiven Formulars](/help/forms/review-adaptiveforms-in-sites-page.md)

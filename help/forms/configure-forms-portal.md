@@ -1,21 +1,21 @@
 ---
 title: Erstellen eines Formularportals auf einer Experience Manager Sites-Seite?
-description: Erfahren Sie, wie Sie ein Formularportal erstellen und vordefinierte Kernkomponenten auf einer Seite von AEM Sites verwenden können.
+description: Erfahren Sie, wie Sie ein Formularportal erstellen und vordefinierte Kernkomponenten auf einer AEM Sites-Seite verwenden können.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1840'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
-# Hinzufügen von Forms Portal zu einer AEM Sites-Seite {#publish-forms-on-portal}
+# Hinzufügen des Formularportals zu einer AEM Sites-Seite {#publish-forms-on-portal}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/creating-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 In einem typischen formularzentrierten Portal-Bereitstellungsszenario sind die Formularentwicklung und die Portalentwicklung zwei getrennte Aktivitäten. Während Formular-Entwicklerinnen bzw. -Entwickler Formulare in einem Repository entwerfen und speichern, erstellen Web-Entwicklerinnen bzw. -Entwickler eine Web-Applikation, um Formulare aufzulisten und die Übermittlung von Formularen zu verarbeiten. Formulare werden in die Web-Stufe kopiert, da keine Kommunikation zwischen dem Formular-Repository und der Web-Applikation besteht.
@@ -39,11 +39,11 @@ Die Formularportalkomponenten ermöglichen es Ihnen, die folgende Funktion hinzu
 
 AEM Forms bietet standardmäßig die folgenden Portalkomponenten:
 
-* Search &amp; Lister: Mit dieser Komponente können Sie Formulare aus dem Formular-Repository auf Ihrer Portalseite auflisten und Konfigurationsoptionen bereitstellen, um Formulare basierend auf angegebenen Kriterien aufzulisten.
+* Suche und Auflister: Mit der Komponente „Suche und Auflister“ können Sie Formulare aus dem Formular-Repository auf Ihrer Portalseite auflisten. Außerdem enthält sie Konfigurationsoptionen, um Formulare basierend auf angegebenen Kriterien aufzulisten.
 
 * Drafts &amp; Submissions: Während die Komponente „Search &amp; Lister“ Formulare anzeigt, die vom Formularautor veröffentlicht wurden, zeigt die Komponente „Drafts &amp; Submissions“ Formulare, die für den späteren Abschluss als Entwurf gespeichert wurden, sowie gesendete Formulare an. Diese Komponente bietet jeder angemeldeten Person ein personalisiertes Erlebnis.
 
-* Link: Mit dieser Komponente können Sie einen Link zu einem Formular an einer beliebigen Stelle auf der Seite erstellen.
+* Link: Mit dieser Komponente können Sie einen Link zu einem Formular an beliebiger Stelle auf der Seite erstellen.
 
 Sie können [die gebrauchsfertigen Formularportal-Komponenten aus dem AEM-Projektarchetyp importieren](#import-forms-portal-components-aem-archetype). Führen Sie nach dem Import die folgenden Konfigurationen durch:
 

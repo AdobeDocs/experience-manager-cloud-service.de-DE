@@ -1,5 +1,5 @@
 ---
-title: Wie werden freigegebene Warteschlangen konfiguriert?
+title: Konfigurieren freigegebener Warteschlangen
 description: Erfahren Sie, wie Sie freigegebene Warteschlangen für Forms-zentrierte Workflows für [!DNL AEM Forms] unter OSGi verwenden.
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -7,7 +7,7 @@ docset: aem65
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '839'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ Der angemeldete Benutzer muss Mitglied der Gruppe [!DNL `workflow-users`] sein. 
 
 ## Teilen eines einzelnen oder aller Elemente Ihres Posteingangs mit einem anderen Benutzer
 
-Mit AEM Posteingang können Sie ein einzelnes oder alle Elemente in Ihrem Posteingang für einen anderen Benutzer freigeben.
+Mit dem AEM-Posteingang können Sie einzelne oder alle Elemente in Ihrem Posteingang für andere Benutzende freigeben.
 
 ### Alle Posteingangselemente freigeben
 

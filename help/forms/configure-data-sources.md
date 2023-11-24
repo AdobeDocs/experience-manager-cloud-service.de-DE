@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren von Data Sources
-description: Erfahren Sie, wie Sie RESTful-Webdienste, SOAP-basierte Webdienste und OData-Dienste als Datenquellen für ein Formulardatenmodell konfigurieren.
+title: Konfigurieren von Datenquellen
+description: Erfahren Sie, wie Sie RESTful-Webservices, SOAP-basierte Webservices und OData-Services als Datenquellen konfigurieren und diese zum Erstellen von Formulardatenmodellen verwenden.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2201'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 90%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 ![Datenintegration](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] Mit der Datenintegration können Sie unterschiedliche Datenquellen konfigurieren und eine Verbindung zu ihnen herstellen. Die folgenden Datenquellen werden standardmäßig unterstützt:
+Mit der [!DNL Experience Manager Forms]-Datenintegration können Sie unterschiedliche Datenquellen konfigurieren und Verbindungen zu ihnen herstellen. Die folgenden Datenquellen werden standardmäßig unterstützt:
 
 * Relationale Datenbanken - MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], postgreSQL und [!DNL Oracle RDBMS]
 * RESTful-Webservices
@@ -39,7 +39,7 @@ Die Datenintegration unterstützt standardmäßig die Authentifizierungstypen OA
 ### Voraussetzungen
 
 Bevor Sie relationale Datenbanken mit [!DNL Experience Manager] Web-Konsolenkonfiguration konfigurieren, müssen Sie Folgendes tun:
-* [Erweiterte Vernetzung über die Cloud Manager-API aktivieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=de), da die Ports standardmäßig deaktiviert sind.
+* [Aktivieren Sie erweiterte Netzwerkfunktionen über die Cloud Manager-API](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=de), da die Ports standardmäßig deaktiviert sind.
 * [Hinzufügen von JDBC-Treiberabhängigkeiten in Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=de#mysql-driver-dependencies).
 
 
@@ -123,7 +123,7 @@ Konfigurieren des Ordners für Cloud Service-Konfigurationen:
 
 ## Konfigurieren von RESTful-Webservices {#configure-restful-web-services}
 
-RESTful-Webdienste können mithilfe von [Swagger-Spezifikationen](https://swagger.io/specification/v2/) im JSON- oder YAML-Format in einer [!DNL Swagger] Definitionsdatei. Um den RESTful-Webservice in [!DNL Experience Manager] as a Cloud Service zu konfigurieren, benötigen Sie entweder die [!DNL Swagger]-Datei ([Swagger Version 2.0](https://swagger.io/specification/v2/)) oder [!DNL Swagger]-Datei ([Swagger Version 3.0](https://swagger.io/specification/v3/)) auf Ihrem Dateisystem oder die URL, unter der die Datei gehostet wird.
+RESTful-Webservices können mithilfe von [Swagger-Spezifikationen](https://swagger.io/specification/v2/) im JSON- oder YAML-Format in einer [!DNL Swagger]-Definitionsdatei beschrieben werden. Um den RESTful-Webservice in [!DNL Experience Manager] as a Cloud Service zu konfigurieren, benötigen Sie entweder die [!DNL Swagger]-Datei ([Swagger Version 2.0](https://swagger.io/specification/v2/)) oder [!DNL Swagger]-Datei ([Swagger Version 3.0](https://swagger.io/specification/v3/)) auf Ihrem Dateisystem oder die URL, unter der die Datei gehostet wird.
 
 ### Konfigurieren von RESTful-Services für Open API Spezifikation Version 2.0 {#configure-restful-services-open-api-2.0}
 
@@ -134,7 +134,7 @@ RESTful-Webdienste können mithilfe von [Swagger-Spezifikationen](https://swagge
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um den **[!UICONTROL Assistenten für das Erstellen von Datenquellkonfigurationen]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL RESTful-Service]** aus der Dropdown-Liste **[!UICONTROL Service-Typ]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration und tippen Sie auf **[!UICONTROL Weiter]**.
 1. Geben Sie folgende Details für den RESTful-Service an:
 
-   * Wählen Sie eine URL oder Datei aus dem [!UICONTROL Swagger Source] und geben Sie dementsprechend die [!DNL Swagger URL] der[!DNL  Swagger] Definitionsdatei oder laden Sie die [!DNL Swagger] -Datei aus Ihrem lokalen Dateisystem.
+   * Wählen Sie eine URL oder Datei aus der Dropdown-Liste [!UICONTROL Swagger-Quelle] aus und geben Sie dementsprechend die [!DNL Swagger URL] zur [!DNL  Swagger]-Definitionsdatei an oder laden Sie die [!DNL Swagger]-Datei aus Ihrem lokalen Dateisystem hoch.
    * Auf der Grundlage der [!DNL  Swagger] Quelleingabe, werden die folgenden Felder mit Werten vorausgefüllt:
 
       * Schema: Die von der REST-API verwendeten Übertragungsprotokolle. Die Anzahl der in der Dropdown-Liste angezeigten Schematypen hängt von den Schemas ab, die in der [!DNL Swagger]-Quelle definiert wurden.
@@ -159,8 +159,8 @@ RESTful-Webdienste können mithilfe von [Swagger-Spezifikationen](https://swagge
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um den **[!UICONTROL Assistenten für das Erstellen von Datenquellkonfigurationen]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL RESTful-Service]** aus der Dropdown-Liste **[!UICONTROL Service-Typ]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration und tippen Sie auf **[!UICONTROL Weiter]**.
 1. Geben Sie folgende Details für den RESTful-Service an:
 
-   * Wählen Sie eine URL oder Datei aus dem [!UICONTROL Swagger Source] und geben Sie dementsprechend die [!DNL Swagger 3.0 URL] der[!DNL  Swagger] Definitionsdatei oder laden Sie die [!DNL Swagger] -Datei aus Ihrem lokalen Dateisystem.
-   * Basierend auf den [!DNL  Swagger] Quelleingabe, werden die Verbindungsinformationen zum Zielserver angezeigt.
+   * Wählen Sie eine URL oder Datei aus der Dropdown-Liste [!UICONTROL Swagger-Quelle] aus und geben Sie dementsprechend die [!DNL Swagger 3.0 URL] zur [!DNL  Swagger]-Definitionsdatei an oder laden Sie die [!DNL Swagger]-Datei aus Ihrem lokalen Dateisystem hoch.
+   * Basierend auf der [!DNL  Swagger]-Quelleingabe werden die Verbindungsinformationen zum Ziel-Server angezeigt.
    * Wählen Sie den Authentifizierungstyp – Ohne, OAuth2.0 ([Autorisierungs-Code](https://oauth.net/2/grant-types/authorization-code/), [Client-Anmeldeinformationen](https://oauth.net/2/grant-types/client-credentials/)), Standardauthentifizierung, API-Schlüssel oder benutzerdefinierte Authentifizierung – für den Zugriff auf den RESTful-Service aus und geben Sie dementsprechend die Details für die Authentifizierung an.
 
    Wenn Sie **[!UICONTROL API-Schlüssel]** als Authentifizierungstyp auswählen, geben Sie den Wert für den API-Schlüssel an. Der API-Schlüssel kann als Anforderungskopfzeile oder als Abfrageparameter gesendet werden. Wählen Sie eine dieser Optionen aus der Dropdown-Liste **[!UICONTROL Speicherort]** und geben Sie den Namen der Kopfzeile oder des Abfrageparameters im Feld **[!UICONTROL Parametername]** entsprechend an.
@@ -180,7 +180,7 @@ Weitere Informationen finden Sie unter [OpenAPI 3.0-Spezifikation](https://swagg
 
 ### HTTP-Client-Konfiguration des Formulardatenmodells zur Leistungsoptimierung {#fdm-http-client-configuration}
 
-[!DNL Experience Manager Forms] bei der Integration mit RESTful-Webdiensten ein Datenmodell erstellen, da die Datenquelle HTTP-Client-Konfigurationen zur Leistungsoptimierung enthält.
+[!DNL Experience Manager Forms] bildet bei der Integration mit RESTful-Web-Diensten ein Formulardatenmodell, da die Datenquelle HTTP-Client-Konfigurationen zur Leistungsoptimierung enthält.
 
 Legen Sie die folgenden Eigenschaften der Konfiguration für das **[!UICONTROL Formulardatenmodell HTTP-Client-Konfiguration für REST-Datenquelle]** zum Angeben des regulären Ausdrucks fest:
 
@@ -224,7 +224,7 @@ Folgende JSON-Datei zeigt ein Beispiel:
 
 ## SOAP-Webservices konfigurieren {#configure-soap-web-services}
 
-SOAP-basierte Webservices werden mithilfe von [WSDL-Spezifikationen (Web Services Description Language)](https://www.w3.org/TR/wsdl) beschrieben. [!DNL Experience Manager Forms] unterstützen das WSDL-Modell im RPC-Stil nicht.
+SOAP-basierte Webservices werden mithilfe von [WSDL-Spezifikationen (Web Services Description Language)](https://www.w3.org/TR/wsdl) beschrieben. [!DNL Experience Manager Forms] unterstützt das WSDL-Modell im RPC-Stil nicht.
 
 Um den SOAP-basierten Webservice in [!DNL Experience Manager] as a Cloud Service zu konfigurieren, benötigen Sie die WSDL-URL für den Webservice. Gehen Sie dann wie folgt vor:
 
@@ -267,7 +267,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
 >[!NOTE]
 >
 > Das Formulardatenmodell unterstützt [OData Version 4](https://www.odata.org/documentation/).
->Eine schrittweise Anleitung zum Konfigurieren von [!DNL Microsoft®® Dynamics 365], online oder vor Ort, siehe [[!DNL Microsoft® Dynamics] OData-Konfiguration](ms-dynamics-odata-configuration.md).
+>Eine schrittweise Anleitung zum Konfigurieren von [!DNL Microsoft®® Dynamics 365], online oder lokal finden Sie unter [[!DNL Microsoft® Dynamics] OData-Konfiguration](ms-dynamics-odata-configuration.md).
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tippen Sie, um den Ordner auszuwählen, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 

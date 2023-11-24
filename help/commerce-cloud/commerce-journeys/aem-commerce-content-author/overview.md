@@ -5,7 +5,7 @@ exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 81%
+ht-degree: 86%
 
 ---
 
@@ -41,7 +41,7 @@ Informationen in dieser Journey können für andere Personen nützlich sein, ein
 
 Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folgenden Artikel vermitteln Ihnen Grundlagenwissen und verlinken auf detaillierte technische Dokumentationen.
 
-Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Wenn Sie mit Content and Commerce noch nicht vertraut sind, empfiehlt Adobe daher, dass Sie am Anfang beginnen und den Prozess sequenziell fortsetzen.
+Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Wenn Sie also neu bei AEM Content and Commerce sind, empfiehlt Adobe Ihnen, am Anfang zu beginnen und nach und nach voranzuschreiten.
 
 | Nummer | Artikel | Beschreibung |
 |---|---|---|

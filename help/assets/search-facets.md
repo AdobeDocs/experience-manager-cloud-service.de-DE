@@ -7,7 +7,7 @@ exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2504'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -134,7 +134,7 @@ Mit dem Prädikat `Multi Value Property` können Sie Assets anhand mehrerer Wert
 
 ## Hinzufügen von Tag-Prädikaten {#adding-a-tags-predicate}
 
-Die `Tags` -Prädikat ermöglicht Ihnen, Tag-basierte Suchen nach Assets durchzuführen. Standardmäßig sucht [!DNL Assets] nach Assets, die eines oder mehrere der von Ihnen angegebenen Tags enthalten. Mit anderen Worten: Die Suchanfrage führt einen ODER-Vorgang mit den angegebenen Tags durch. Sie können jedoch die Option „Übereinstimmung mit allen Tags“ verwenden, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
+Mit dem `Tags`-Prädikat können Sie anhand von Tags nach Assets suchen. Standardmäßig sucht [!DNL Assets] nach Assets, die eines oder mehrere der von Ihnen angegebenen Tags enthalten. Mit anderen Worten: Die Suchanfrage führt einen ODER-Vorgang mit den angegebenen Tags durch. Sie können jedoch die Option „Übereinstimmung mit allen Tags“ verwenden, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
 1. Klicken Sie auf das Adobe Experience Manager-Logo und gehen Sie dann zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Suchformulare]**.
 1. Wählen Sie auf der Seite „Suchformulare“ die Option **[!UICONTROL Asset-Admin-Suchschiene]** und tippen Sie dann auf **Bearbeiten** von ![aemassets_edit](assets/aemassets_edit.png).
@@ -304,9 +304,9 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
  </tbody>
 </table>
 
-## Standardsuchfacetten entfernen {#removing-default-search-facets}
+## Entfernen der Standard-Suchfacetten {#removing-default-search-facets}
 
-Adobe empfiehlt, beim Entfernen von Standardsuchfacetten vorsichtig zu sein, um Leistungsprobleme zu vermeiden. Das Entfernen von Standardsuchfacetten kann sich auch auf das Verhalten von Standardfunktionen auswirken.
+Adobe empfiehlt, beim Entfernen von Standard-Suchfacetten vorsichtig zu sein, um Leistungsprobleme zu vermeiden. Das Entfernen von Standard-Suchfacetten kann sich auch auf das Verhalten von Standardfunktionen auswirken.
 
 Entfernen Sie nicht die folgenden ausgeblendeten Felder, da dies bei OmniSearch- und Smart-Sammlungen zu einem Leistungsproblem bei der Abfrage führt:
 
@@ -342,7 +342,7 @@ Wenn Ihnen nicht die Rolle eines Administrators zugewiesen wurde, finden Sie hie
 
 **Siehe auch**
 
-* [Best Practices durchsuchen](search-best-practices.md)
+* [Best Practices für die Suche](search-best-practices.md)
 * [Assets übersetzen](translate-assets.md)
 * [Assets-HTTP-API](mac-api-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)

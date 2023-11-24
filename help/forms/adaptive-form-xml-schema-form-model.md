@@ -1,6 +1,6 @@
 ---
-title: Wie entwirft man ein XML-Schema für ein adaptives Formular?
-description: Erfahren Sie, wie Sie ein XML-Schema für ein adaptives Formular erstellen und ein adaptives Formular erstellen, das auf dem Schema basiert, um Schemafehlungsdaten zu erstellen.
+title: 'So entwerfen Sie ein XML-Schema für ein adaptives Formular:'
+description: Erfahren Sie, wie Sie ein XML-Schema für ein adaptives Formular erstellen und dann ein adaptives Formular erstellen können, das auf dem Schema basiert, um Schema-konforme Daten zu erstellen.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
@@ -8,7 +8,7 @@ exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
 source-wordcount: '959'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ Für das Authoring eines adaptiven Formulars mit einem XML-Schema als Formularmo
 
 ## Verwenden eines XML-Schemas als Formularmodell {#using-an-xml-schema-as-form-model}
 
-[!DNL Experience Manager Forms] unterstützt die Erstellung eines adaptiven Formulars mithilfe eines vorhandenen XML-Schemas als Formularmodell. Dieses XML-Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden.
+[!DNL Experience Manager Forms] unterstützt die Erstellung eines adaptiven Formulars mithilfe eines vorhandenen XML-Schemas als Formularmodell. Dieses XML-Schema stellt die Struktur dar, in der Daten vom Backend-System in Ihrem Unternehmen produziert oder genutzt werden.
 
-Die wichtigsten Funktionen bei der Verwendung eines XML-Schemas sind:
+Die Hauptfunktionen bei der Verwendung eines XML-Schemas sind die Folgenden:
 
 * Die Struktur der XSD wird als Baumstruktur in der Registerkarte für die Inhaltssuche im Authoring-Modus für ein adaptives Formular angezeigt. Sie können Elemente aus der XSD-Hierarchie in das adaptive Formular ziehen.
-* Sie können das Formular mit XML vorab ausfüllen, das mit dem zugehörigen Schema konform ist.
-* Bei der Übermittlung werden die vom Benutzer eingegebenen Daten als XML gesendet, die dem zugehörigen Schema entspricht.
+* Sie können das Formular mit XML vorausfüllen, die mit dem zugehörigen Schema konform ist.
+* Bei der Übermittlung werden die von den Benutzenden eingegebenen Daten im XML-Format gesendet, das dem zugehörigen Schema entspricht.
 
 Ein XML-Schema besteht aus einfachen und komplexen Elementtypen. Die Elemente weisen Attribute auf, die dem Element Regeln hinzufügen. Wenn diese Elemente und Attribute in ein adaptives Formular gezogen werden, werden sie automatisch der entsprechenden Komponente des adaptiven Formulars zugeordnet.
 
@@ -67,7 +67,7 @@ Diese Zuordnung von XML-Elementen zu Komponenten adaptiver Formulare sieht wie f
   <tr>
    <td><code class="code">xs:enumeration
       </code></td>
-   <td>Dropdown</td>
+   <td>Dropdown-Liste</td>
   </tr>
   <tr>
    <td>Jedes Element mit komplexem Typ</td>
@@ -78,7 +78,7 @@ Diese Zuordnung von XML-Elementen zu Komponenten adaptiver Formulare sieht wie f
 
 ## Beispiel-XML-Schema {#sample-xml-schema}
 
-Hier ist ein Beispiel für ein XML-Schema.
+Im Folgenden finden Sie ein Beispiel eines XML-Schemas.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -122,7 +122,7 @@ Hier ist ein Beispiel für ein XML-Schema.
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Ihr XML-Schema nur ein Stammelement enthält. Ein XML-Schema mit mehr als einem Stammelement wird nicht unterstützt.
+>Stellen Sie sicher, dass das XML-Schema nur ein Stammelement hat. Ein XML-Schema mit mehreren Stammelementen wird nicht unterstützt.
 
 ## Hinzufügen spezieller Eigenschaften zu Feldern mithilfe eines XML-Schemas {#adding-special-properties-to-fields-using-xml-schema}
 
@@ -147,13 +147,13 @@ Sie können folgende Attribute zu XML-Schemaelementen hinzufügen, um spezielle 
   </tr>
   <tr>
    <td><code>minOccurs="3"</code></td>
-   <td><p>Gibt minimale Vorkommen an</p> <p>(Für wiederholbare Teilformulare (komplexe Typen))</p> </td>
+   <td><p>Gibt die minimale Anzahl der Vorkommen an</p> <p>(Für wiederholbare Teilformulare (komplexe Typen))</p> </td>
    <td>Element (komplexer Typ)</td>
   </tr>
   <tr>
    <td><code class="code">maxOccurs="10"
       </code></td>
-   <td><p>Gibt maximale Vorkommen an</p> <p>(Für wiederholbare Teilformulare (komplexe Typen))</p> </td>
+   <td><p>Gibt die maximale Anzahl der Vorkommen an</p> <p>(Für wiederholbare Teilformulare (komplexe Typen))</p> </td>
    <td>Element (komplexer Typ)</td>
   </tr>
  </tbody>
@@ -164,7 +164,7 @@ Sie können folgende Attribute zu XML-Schemaelementen hinzufügen, um spezielle 
 >Wenn Sie ein Schemaelement in ein adaptives Formular ziehen, wird eine Standardbeschriftung erstellt durch:
 >
 >* Großschreibung des ersten Zeichens des Elementnamens
->* Einfügen von Leerzeichen bei Binnenmajuskeln.
+>* Einfügen eines Leerzeichens vor Binnenmajuskeln.
 >
 >Wenn Sie beispielsweise das Schemaelement `userFirstName` hinzufügen, wird `User First Name` als Beschriftung im adaptiven Formular erstellt.
 
@@ -183,7 +183,7 @@ Sie können folgende Einschränkungen zu XML-Schemaelementen hinzufügen, um die
   <tr>
    <td><p><code>totalDigits</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Gibt die maximal zulässige Anzahl von Stellen in einer Komponente an. Die angegebene Anzahl von Ziffern muss größer als null sein.</p> </td>
+   <td><p>Legt die zulässige Höchstzahl von Stellen in einer Komponente fest. Die Anzahl der Stellen muss größer als null sein.</p> </td>
    <td>
     <ul>
      <li>Numerisches Feld</li>
@@ -193,7 +193,7 @@ Sie können folgende Einschränkungen zu XML-Schemaelementen hinzufügen, um die
   <tr>
    <td><p><code>maximum</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Gibt die Obergrenze für numerische Werte und Daten an. Standardmäßig ist der Maximalwert enthalten.</p> </td>
+   <td><p>Gibt die Obergrenze für numerische Werte und Daten an.  Standardmäßig ist der Höchstwert enthalten.</p> </td>
    <td>
     <ul>
      <li>Numerisches Feld</li>
@@ -204,7 +204,7 @@ Sie können folgende Einschränkungen zu XML-Schemaelementen hinzufügen, um die
   <tr>
    <td><p><code>minimum</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Gibt die Untergrenze für numerische Werte und Daten an. Standardmäßig ist der Mindestwert enthalten.</p> </td>
+   <td><p>Gibt die Untergrenze für numerische Werte und Daten an.  Standardmäßig ist der Mindestwert enthalten.</p> </td>
    <td>
     <ul>
      <li>Numerisches Feld</li>
@@ -215,7 +215,7 @@ Sie können folgende Einschränkungen zu XML-Schemaelementen hinzufügen, um die
   <tr>
    <td><p><code>exclusiveMaximum</code></p> </td>
    <td><p>Boolesch</p> </td>
-   <td><p>Wenn "true", muss der numerische Wert oder das Datum, der bzw. das in der Komponente des Formulars angegeben wird, kleiner als der numerische Wert oder das Datum sein, der bzw. das für die Eigenschaft "maximum"angegeben ist.</p> <p>Bei "false"muss der numerische Wert oder das Datum, der bzw. das in der Komponente des Formulars angegeben wird, kleiner oder gleich dem numerischen Wert oder Datum sein, der bzw. das für die Eigenschaft "maximum"angegeben ist.</p> </td>
+   <td><p>Wenn „true“, muss der numerische Wert oder das Datum, der bzw. das in der Komponente des Formulars festgelegt ist, kleiner sein als der numerische Wert oder das Datum, der bzw. das für die Eigenschaft „maximum“ angegeben ist.</p> <p>Wenn „false“, muss der numerische Wert oder das Datum, der bzw. das in der Komponente des Formulars festgelegt ist, kleiner oder gleich dem numerischen Wert oder Datum sein, der bzw. das für die Eigenschaft „maximum“ angegeben ist.</p> </td>
    <td>
     <ul>
      <li>Numerisches Feld</li>
@@ -226,7 +226,7 @@ Sie können folgende Einschränkungen zu XML-Schemaelementen hinzufügen, um die
   <tr>
    <td><p><code>exclusiveMinimum</code></p> </td>
    <td><p>Boolesch</p> </td>
-   <td><p>Wenn "true", muss der in der Komponente des Formulars angegebene numerische Wert oder das Datum größer sein als der numerische Wert oder das Datum, der bzw. das für die Eigenschaft "minimum"angegeben wurde.</p> <p>Bei "false"muss der in der Komponente des Formulars angegebene numerische Wert oder das Datum größer oder gleich dem numerischen Wert oder Datum sein, der bzw. das für die Eigenschaft "minimum"angegeben wurde.</p> </td>
+   <td><p>Wenn „true“, muss der numerische Wert oder das Datum, der bzw. das in der Komponente des Formulars festgelegt ist, größer sein als der numerische Wert oder das Datum, der bzw. das für die Eigenschaft „minimum“ angegeben ist.</p> <p>Wenn „false“, muss der numerische Wert oder das Datum, der bzw. das in der Komponente des Formulars festgelegt ist, größer oder gleich dem numerischen Wert oder Datum sein, der bzw. das für die Eigenschaft „minimum“ angegeben ist.</p> </td>
    <td>
     <ul>
      <li>Numerisches Feld</li>
@@ -237,7 +237,7 @@ Sie können folgende Einschränkungen zu XML-Schemaelementen hinzufügen, um die
   <tr>
    <td><p><code>minLength</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Gibt die Mindestanzahl von Zeichen an, die in einer Komponente zulässig sind. Die minimale Länge muss größer oder gleich null sein.</p> </td>
+   <td><p>Legt die zulässige Mindestanzahl von Zeichen in einer Komponente fest.  Die minimale Länge muss größer oder gleich null sein.</p> </td>
    <td>
     <ul>
      <li>Textfeld</li>
@@ -246,7 +246,7 @@ Sie können folgende Einschränkungen zu XML-Schemaelementen hinzufügen, um die
   <tr>
    <td><p><code>maxLength</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Gibt die maximal zulässige Anzahl von Zeichen in einer Komponente an. Die maximale Länge muss größer als null sein.</p> </td>
+   <td><p>Legt die zulässige Höchstzahl von Zeichen in einer Komponente fest.  Der maximale Länge muss größer als null sein.</p> </td>
    <td>
     <ul>
      <li>Textfeld</li>
@@ -255,7 +255,7 @@ Sie können folgende Einschränkungen zu XML-Schemaelementen hinzufügen, um die
   <tr>
    <td><p><code>length</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Gibt die genaue Anzahl der Zeichen an, die in einer Komponente zulässig sind. Die Länge muss größer oder gleich null sein.</p> </td>
+   <td><p>Legt die genaue Anzahl von Zeichen in einer Komponente fest. Die Länge muss größer oder gleich null sein.</p> </td>
    <td>
     <ul>
      <li>Textfeld</li>
@@ -264,7 +264,7 @@ Sie können folgende Einschränkungen zu XML-Schemaelementen hinzufügen, um die
   <tr>
    <td><p><code>fractionDigits</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Gibt die maximal zulässige Anzahl von Dezimalstellen in einer Komponente an. Die fractionDigits müssen größer/gleich null sein.</p> </td>
+   <td><p>Legt die zulässige Höchstzahl von Dezimalstellen in einer Komponente fest. fractionDigits muss größer oder gleich null sein.</p> </td>
    <td>
     <ul>
      <li> Numerisches Feld mit Datentyp „Gleitkomma“ oder „Dezimal“.</li>
@@ -273,7 +273,7 @@ Sie können folgende Einschränkungen zu XML-Schemaelementen hinzufügen, um die
   <tr>
    <td><p><code>pattern</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Gibt die Reihenfolge der Zeichen an. Eine Komponente akzeptiert die Zeichen, wenn die Zeichen dem angegebenen Muster entsprechen.</p> <p>Die Eigenschaft „pattern“ ist dem Überprüfungsmuster der entsprechenden Komponente des adaptiven Formulars zugeordnet.</p> </td>
+   <td><p>Legt die Reihenfolge der Zeichen fest.  Eine Komponente akzeptiert die Zeichen, wenn sie dem angegebenen Muster entsprechen.</p> <p>Die Eigenschaft „pattern“ ist dem Überprüfungsmuster der entsprechenden Komponente des adaptiven Formulars zugeordnet.</p> </td>
    <td>
     <ul>
      <li>Alle adaptiven Formulare, die einem XSD-Schema zugeordnet sind </li>
@@ -284,9 +284,9 @@ Sie können folgende Einschränkungen zu XML-Schemaelementen hinzufügen, um die
 
 ## Häufig gestellte Fragen {#frequently-asked-questions}
 
-**Ich habe eine lange komplexe Struktur in der Inhaltssuche. Wie finde ich ein bestimmtes Element?**
+**Ich habe eine lange, komplexe Struktur in der Inhaltssuche. Wie kann ich ein bestimmtes Element suchen?**
 
-Sie haben zwei Optionen:
+Es gibt zwei Optionen:
 
 * Scrollen Sie durch die Baumstruktur
 * Verwenden Sie das Suchfeld, um ein Element zu finden
