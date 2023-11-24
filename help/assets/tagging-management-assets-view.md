@@ -5,7 +5,7 @@ exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1416'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 96%
 >[!CONTEXTUALHELP]
 >id="assets_taxonomy_management"
 >title="Tags verwalten"
->abstract="Mit Tags können Sie Assets kategorisieren, damit sie sich leichter durchsuchen und suchen lassen. Administratoren können die hierarchische Tagging-Struktur verwenden, die die Anwendung relevanter Metadaten, die Kategorisierung von Assets, die Unterstützung der Suche, die Wiederverwendung von Tags, die Verbesserung der Auffindbarkeit usw. erleichtert."
+>abstract="Mit Tags können Sie Assets kategorisieren, damit sie sich leichter durchsuchen und suchen lassen. Admins können die hierarchische Tagging-Struktur verwenden, die die Anwendung relevanter Metadaten, die Kategorisierung von Assets, die Unterstützung der Suche, die Wiederverwendung von Tags, die Verbesserung der Auffindbarkeit usw. erleichtert."
 
 Mit Tags können Sie Assets kategorisieren, damit sie sich leichter durchsuchen und suchen lassen. Tagging hilft bei der Verbreitung der entsprechenden Taxonomie an andere Benutzende und Workflows.
 
-Flache Listen mit kontrolliertem Vokabular können im Laufe der Zeit unüberschaubar werden. Administratoren können die hierarchische Tagging-Struktur verwenden, die die Anwendung relevanter Metadaten, die Kategorisierung von Assets, die Unterstützung der Suche, die Wiederverwendung von Tags, die Verbesserung der Auffindbarkeit usw. erleichtert.
+Flache Listen mit kontrolliertem Vokabular können im Laufe der Zeit unüberschaubar werden. Admins können die hierarchische Tagging-Struktur verwenden, die die Anwendung relevanter Metadaten, die Kategorisierung von Assets, die Unterstützung der Suche, die Wiederverwendung von Tags, die Verbesserung der Auffindbarkeit usw. erleichtert.
 
 Sie können einen Namespace auf Stammebene sowie eine hierarchische Struktur untergeordneter Tags innerhalb des Namespace erstellen. Beispielsweise können Sie den Namespace `Activities` auf Stammebene mit den Tags `Cycling`, `Hiking` und `Running` innerhalb des Namespace erstellen. Weitere untergeordnete Tags wie `Clothing` und `Shoes` sind unter `Running` möglich.
 

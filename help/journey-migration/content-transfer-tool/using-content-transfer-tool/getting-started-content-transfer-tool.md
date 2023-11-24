@@ -5,7 +5,7 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1424'
-ht-degree: 87%
+ht-degree: 90%
 
 ---
 
@@ -111,7 +111,7 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_populate_migrationset"
 >title="Füllen des Migrationssatzes"
->abstract="Nachdem Sie einen Migrationssatz erstellt haben, muss er mit dem Inhalt aus der Quellinstanz gefüllt werden, der in die AEM as a Cloud Service Umgebung verschoben werden muss. Dazu muss das Content Transfer Tool auf der Quellinstanz installiert sein."
+>abstract="Nach dem Erstellen eines Migrationssatzes muss er mit dem Inhalt aus der Quellinstanz gefüllt werden, die in die AEM as a Cloud Service-Umgebung verschoben werden muss. Dazu muss das Inhaltstransfer-Tool in der Quellinstanz installiert sein."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=de" text="Extrahieren von Inhalten"
 
 Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu füllen, müssen Sie die neueste Content Transfer Tool-Version auf Ihrer Adobe Experience Manager-Quellinstanz (AEM) installieren. In diesem Abschnitt erfahren Sie, wie Sie den Migrationssatz füllen.

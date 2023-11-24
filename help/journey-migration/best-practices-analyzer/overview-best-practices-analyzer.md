@@ -5,7 +5,7 @@ exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 80%
+ht-degree: 94%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 80%
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
 >title="Überblick über Best Practices Analyzer"
->abstract="Der Best Practices Analyzer bietet eine Bewertung Ihrer aktuellen AEM-Implementierung, indem er Bereiche anzeigt, die nicht den AEM Best Practices entsprechen. Er bietet auch eine Anleitung für die nächsten Schritte zur Übernahme von AEM-Best Practices. Darüber hinaus trägt sie dazu bei, die Beurteilung der Bereitschaft zu beschleunigen, von einer bestehenden Adobe Experience Manager-Bereitstellung (AEM) auf AEM as a Cloud Service umzustellen."
+>abstract="Der Best Practices Analyzer bietet eine Bewertung Ihrer aktuellen AEM-Implementierung, indem er Bereiche anzeigt, die nicht den AEM Best Practices entsprechen. Er bietet auch eine Anleitung für die nächsten Schritte zur Übernahme von AEM-Best Practices. Außerdem kann die Bereitschaft zum Wechsel von einer vorhandenen Adobe Experience Manager (AEM)-Bereitstellung zu AEM as a Cloud Service schneller bewertet werden."
 
-Der Best Practices Analyzer bietet eine Bewertung Ihrer aktuellen AEM-Implementierung, indem er Bereiche anzeigt, die nicht den AEM Best Practices entsprechen. Er bietet auch eine Anleitung für die nächsten Schritte zur Übernahme von AEM-Best Practices. Darüber hinaus trägt sie dazu bei, die Beurteilung der Bereitschaft zu beschleunigen, von einer bestehenden Adobe Experience Manager-Bereitstellung (AEM) auf AEM as a Cloud Service umzustellen.
+Der Best Practices Analyzer bietet eine Bewertung Ihrer aktuellen AEM-Implementierung, indem er Bereiche anzeigt, die nicht den AEM Best Practices entsprechen. Er bietet auch eine Anleitung für die nächsten Schritte zur Übernahme von AEM-Best Practices. Außerdem kann die Bereitschaft zum Wechsel von einer vorhandenen Adobe Experience Manager (AEM)-Bereitstellung zu AEM as a Cloud Service schneller bewertet werden.
 
 Dieses Tool generiert einen Bericht, in dem Bereiche mit potenziellen Überarbeitungen identifiziert werden. Dies ist der erste Schritt auf dem Weg zur Umstellung auf AEM as a Cloud Service.
 
