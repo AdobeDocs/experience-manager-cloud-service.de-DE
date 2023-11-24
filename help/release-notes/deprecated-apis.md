@@ -2,7 +2,7 @@
 title: Veraltete APIs
 description: Spezifische Versionshinweise zu veralteten und entfernten APIs in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d2c7e3d88b5545eee3e6f1c511088c0f6638cfe7
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 100%
@@ -14,9 +14,8 @@ ht-degree: 100%
 Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das voraussichtliche Datum ihrer Entfernung. Von den Kunden wird erwartet, dass sie die APIs bis zum Zieltermin aus ihrem Code entfernen. Jegliche Verwendung der API nach dem Datum der Entfernung führt zu Fehlern in der lokalen SDK-/Entwicklungsumgebung und dem Cloud Manager-Build-Prozess.
 
 
-<table>
-<thead>
 <table style="table-layout:auto">
+<thead>
   <tr>
     <th>Package/Klasse</th>
     <th>Kommentare</th>
