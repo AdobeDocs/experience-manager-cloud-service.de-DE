@@ -100,6 +100,7 @@ Führen Sie die folgenden Schritte aus, um einen OAuth-Client auf einem AD FS (
 
    * `Client-ID` eine Client-ID, die Sie mit einem beliebigen GUID-Generator generieren können.
    * `redirect-uri` die URL zu dem [!DNL Microsoft Dynamics]-OData-Cloud Service auf [!DNL Experience Manager Forms]. Der mit [!DNL Experience Manager Forms] installierte standardmäßige Cloud Service wird unter der folgenden URL bereitgestellt:
+
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Führen Sie den folgenden Befehl aus, um Zugriff auf den AD FS-Computer zu gewähren:

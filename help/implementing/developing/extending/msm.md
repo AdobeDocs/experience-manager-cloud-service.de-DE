@@ -181,14 +181,17 @@ So erstellen Sie eine Rollout-Konfiguration:
 1. Fügen Sie diesem Knoten die folgenden Eigenschaften hinzu:
 
    * **Name**: `jcr:title`
+
      **Typ**: `String`
      **Wert**: Ein Identifizierungstitel, der in der Benutzeroberfläche angezeigt wird
 
    * **Name**: `jcr:description`
+
      **Typ**: `String`
      **Wert**: Eine optionale Beschreibung.
 
    * **Name**: `cq:trigger`
+
      **Typ**: `String`
      **Wert**: Der zu verwendende [Rollout-Trigger](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers)
       * `rollout`
@@ -634,6 +637,7 @@ Ob für eine Seiteneigenschaft ein Rollout durchgeführt werden muss und daher b
       * **Typ**: `String`
       * **Wert**: Enthält den Namen der betreffenden Immobilie und ist mit dem Wert der Immobilie vergleichbar `name`
          * Ein Beispiel finden Sie unter
+
            `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Wenn `cq-msm-lockable` definiert wurde, interagiert das Öffnen oder Schließen der Kettenverbindung mit MSM wie folgt:

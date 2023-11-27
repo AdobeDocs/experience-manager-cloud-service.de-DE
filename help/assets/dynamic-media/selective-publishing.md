@@ -53,7 +53,7 @@ Nachdem Sie selektive Veröffentlichung in einem Ordner konfiguriert haben, habe
 1. Klicken Sie in Experience Manager auf das Experience Manager-Logo, um auf die Konsole für die globale Navigation zuzugreifen. Klicken Sie auf der linken Seite auf das Navigationssymbol (direkt über dem Werkzeugsymbol) und dann auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 1. Führen Sie einen der folgenden Schritte aus:
    * Eigenschaften eines vorhandenen Ordners bearbeiten – Navigieren Sie in der **[!UICONTROL Kartenansicht]**, der **[!UICONTROL Spaltenansicht]** oder der **[!UICONTROL Listenansicht]** zu einem Ordner, dessen Eigenschaften Sie bearbeiten möchten. Wählen Sie den Ordner aus und wählen Sie dann in der Symbolleiste **[!UICONTROL Eigenschaften]**.
-   * Eigenschaften eines neuen Ordners bearbeiten – Gehen Sie in der **[!UICONTROL Kartenansicht]**, der **[!UICONTROL Spaltenansicht]** oder der **[!UICONTROL Listenansicht]** oben rechts auf der Seite zu **[!UICONTROL Erstellen]** > ]**Ordner**[!UICONTROL . Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** einen Titel für den Ordner ein (erforderlich) und klicken Sie dann auf **[!UICONTROL Erstellen]**. Wählen Sie den Ordner aus und wählen Sie dann in der Symbolleiste **[!UICONTROL Eigenschaften]**.
+   * Eigenschaften eines neuen Ordners bearbeiten – Gehen Sie in der **[!UICONTROL Kartenansicht]**, der **[!UICONTROL Spaltenansicht]** oder der **[!UICONTROL Listenansicht]** oben rechts auf der Seite zu **[!UICONTROL Erstellen]** > **Ordner**. Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** einen Titel für den Ordner ein (erforderlich) und klicken Sie dann auf **[!UICONTROL Erstellen]**. Wählen Sie den Ordner aus und wählen Sie dann in der Symbolleiste **[!UICONTROL Eigenschaften]**.
 
 1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Synchronisationsmodus]** eine der folgenden Optionen aus:
 
@@ -266,6 +266,7 @@ Sie können in Experience Manager die **[!UICONTROL Zeitleiste]** mit der **[!UI
 Wenn Sie die **[!UICONTROL Listenansicht]** verwenden, wird eine zusätzliche Spalte für den Veröffentlichungsstatus in **[!UICONTROL Dynamic Media]** angezeigt.
    * In einem Ordner, der für die Synchronisation mit Dynamic Media konfiguriert wurde, wird die Spalte **[!UICONTROL Dynamic Media]** standardmäßig angezeigt.
    * In einem Ordner, der *nicht* für die Synchronisation mit Dynamic Media konfiguriert wurde, wird die Spalte „Dynamic Media“ nicht angezeigt.
+
       ![Listenansicht und Zeitleistensegment](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## Fehlerbehebung bei der selektiven Veröffentlichung {#selective-publish-troubleshoot}

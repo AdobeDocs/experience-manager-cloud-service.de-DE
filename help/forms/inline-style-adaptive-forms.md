@@ -27,7 +27,7 @@ Sie können das allgemeine Erscheinungsbild und Design eines adaptiven Formulars
 
 Hinzufügen von Inline-Stilen zu einer Komponente:
 
-1. Öffnen Sie das Formular im Formular-Editor und ändern Sie den Modus in den Formatierungsmodus. Um den Stilmodus zu aktivieren, tippen Sie in der Symbolleiste der Seite auf ](assets/Smock_ChevronDown.svg)Arbeitsfläche-Dropdown![ > **[!UICONTROL Stil]**.
+1. Öffnen Sie das Formular im Formular-Editor und ändern Sie den Modus in den Formatierungsmodus. Um den Stilmodus zu aktivieren, tippen Sie in der Symbolleiste der Seite auf ![&#128279;](assets/Smock_ChevronDown.svg)Arbeitsfläche-Dropdown > **[!UICONTROL Stil]**.
 1. Wählen Sie eine Komponente auf der Seite aus und tippen Sie auf die Schaltfläche „Bearbeiten“ ![Bearbeiten-Schaltfläche](assets/edit.svg). Die Stileigenschaften werden in der Seitenleiste geöffnet.
 
    Sie können auch Komponenten aus der Formularhierarchie in der Seitenleiste auswählen. Die Hierarchie des Formulars ist als Formularobjekte in der Seitenleiste verfügbar.

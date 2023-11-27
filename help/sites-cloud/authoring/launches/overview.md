@@ -65,6 +65,7 @@ Launches ermöglichen Folgendes:
       * Das Feld **Launch-Datum** (**Live**-**Datum)**: Dieses Feld kann beim Erstellen oder Bearbeiten eines Launches festgelegt werden.
       * Die Markierung **Produktionsbereit**: Dies kann nur beim Bearbeiten eines Launches festgelegt werden.
       * Wenn das Flag **Produktionsbereit** gesetzt wurde, wird der Launch automatisch am angegebenen **Launch-Datum** (**Datum der** Live-Schaltung **)** an die Produktionsseiten weitergeleitet. Nach der Promotion werden die Produktionsseiten automatisch veröffentlicht.\
+
         Wenn kein Datum ausgewählt wurde, hat die Markierung keine Auswirkungen.
 * Paralleles Aktualisieren der Quell- und Launch-Seiten:
    * Änderungen an den Quellseiten werden automatisch in der Launch-Kopie implementiert (wenn sie mit Vererbung eingerichtet wurden, d. h. in Form einer Live Copy).

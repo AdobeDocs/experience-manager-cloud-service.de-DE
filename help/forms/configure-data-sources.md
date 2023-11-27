@@ -140,6 +140,7 @@ RESTful-Webservices können mithilfe von [Swagger-Spezifikationen](https://swagg
       * Schema: Die von der REST-API verwendeten Übertragungsprotokolle. Die Anzahl der in der Dropdown-Liste angezeigten Schematypen hängt von den Schemas ab, die in der [!DNL Swagger]-Quelle definiert wurden.
       * Host: Der Domain-Name oder die IP-Adresse des Hosts, der die REST-API bereitstellt. Dies ist ein Pflichtfeld.
       * Basispfad: Das URL-Präfix für alle API-Pfade. Dies ist ein optionales Feld.\
+
         Bearbeiten Sie bei Bedarf die vorbefüllten Werte für diese Felder.
 
    * Wählen Sie den Authentifizierungstyp – Ohne, OAuth2.0 ([Autorisierungs-Code](https://oauth.net/2/grant-types/authorization-code/), [Client-Anmeldeinformationen](https://oauth.net/2/grant-types/client-credentials/)), Standardauthentifizierung, API-Schlüssel oder benutzerdefinierte Authentifizierung – für den Zugriff auf den RESTful-Service aus und geben Sie dementsprechend die Details für die Authentifizierung an.
@@ -283,7 +284,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
 
    >[!NOTE]
    >
-   Wählen Sie den OAuth 2.0-Authentifizierungstyp aus, mit dem eine Verbindung hergestellt werden soll [!DNL Microsoft®® Dynamics] Dienste, die den OData-Endpunkt als Dienststamm verwenden.
+   >Wählen Sie den OAuth 2.0-Authentifizierungstyp aus, mit dem eine Verbindung hergestellt werden soll [!DNL Microsoft®® Dynamics] Dienste, die den OData-Endpunkt als Dienststamm verwenden.
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den OData-Service zu erstellen.
 

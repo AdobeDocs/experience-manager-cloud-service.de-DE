@@ -46,6 +46,7 @@ Im Folgenden finden Sie einige allgemeine Tipps zum Erstellen Ihrer URLs für SE
    * Auf Seiten, die Selektoren verwenden, sind Selektoren, die einen semantischen Wert bieten, zu bevorzugen.
    * Wenn ein Mensch Ihre URL nicht lesen kann, kann eine Suchmaschine dies auch nicht.
    * Beispiel:
+
      `mybrand.com/products/product-detail.product-category.product-name.html`
 wird `mybrand.com/products/product-detail.1234.html` vorgezogen
 
@@ -250,6 +251,7 @@ Es gibt jedoch auch einfachere Möglichkeiten, dieses Problem zu beheben:
    Verwenden Sie die Web-Konsole (zum Beispiel localhost:4502/system/console/configMgr), um den Sling Resource Resolver zu konfigurieren:
 
    * **Apache Sling Resource Resolver Factory**
+
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    Es wird empfohlen, die zur Kürzung von URLs zu regulären Ausdrücken notwendigen Zuordnungen zu erstellen und diese Konfigurationen dann unter einem OsgiConfignode, `config.publish`, zu definieren, der im Build enthalten ist.

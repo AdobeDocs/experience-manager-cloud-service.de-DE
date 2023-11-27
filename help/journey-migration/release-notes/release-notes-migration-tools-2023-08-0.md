@@ -22,5 +22,5 @@ Die Version 2.1.44 von Best Practices Analyzer wurde am 24. August 2023 veröffe
 
 ### Fehlerbehebungen {#bug-fixes-bpa}
 
-* 
+* &#x200B;
    * Content Transformer konnte BPA-Ergebnisse nicht abrufen. Dieses Problem wurde behoben.

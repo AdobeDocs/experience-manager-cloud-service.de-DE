@@ -572,7 +572,7 @@ ht-degree: 93%
       + [Migrieren von  [!DNL AEM 6.5 Forms]  oder früher zu  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppen und Berechtigungen](/help/forms/forms-groups-privileges-tasks.md)
       + [Importieren, Exportieren und Organisieren von adaptiven Formularen, PDF-Formularen und anderen Assets](/help/forms/import-export-forms-templates.md)
-   + Integrieren von {#integrate} 
+   + Integrieren von {#integrate}
       + Dienste {#services}
          + [Integrieren von AEM Forms as a Cloud Service mit Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [Integrieren von AEM Forms as a Cloud Service mit DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)

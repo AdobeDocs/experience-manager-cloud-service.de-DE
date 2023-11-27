@@ -241,7 +241,7 @@ Verwenden Sie dieses Projekt, um adaptive Formulare zu erstellen, Konfigurations
 >[!NOTE]
 >
 > Richten Sie ein auf AEM-Archetyp Version 30 oder höher basierendes Projekt ein, um Microsoft® Dynamics 365- und Salesforce-Formulardatenmodelle mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
-Richten Sie ein auf AEM-Archetyp Version 32 oder höher basierendes Projekt ein, um Tranquil-, Urbane- und Ultramarine-Designs mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
+>Richten Sie ein auf AEM-Archetyp Version 32 oder höher basierendes Projekt ein, um Tranquil-, Urbane- und Ultramarine-Designs mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
 
 Einrichten des Projekts:
 
@@ -268,7 +268,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
      >[!WARNING]
      >
-     * Wenn Sie ein Archetyp-Projekt mit Version 45 erstellen, wird die [AEM Archetyp-Projektordner]/pom.xml legt die Forms-Kernkomponenten-Version zunächst auf 2.0.64 fest. Aktualisieren Sie vor dem Erstellen oder Bereitstellen des Archetypprojekts die Version der Formular-Kernkomponenten auf 2.0.62.
+     >* Wenn Sie ein Archetyp-Projekt mit Version 45 erstellen, wird die [AEM Archetyp-Projektordner]/pom.xml legt die Forms-Kernkomponenten-Version zunächst auf 2.0.64 fest. Aktualisieren Sie vor dem Erstellen oder Bereitstellen des Archetypprojekts die Version der Formular-Kernkomponenten auf 2.0.62.
 
 1. Stellen Sie das Projekt in Ihrer lokalen Entwicklungsumgebung bereit. Sie können folgenden Befehl verwenden, um die Bereitstellung für Ihre lokale Entwicklungsumgebung durchzuführen.
 

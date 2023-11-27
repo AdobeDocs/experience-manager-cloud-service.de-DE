@@ -58,7 +58,7 @@ Weitere Einzelheiten finden Sie unter:
 
 * [Suchen und Filtern in der Inhaltsfragmentkonsole](#filtering-fragments)
 
-* [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)In dieser Konsole stehen verschiedene Tastaturbefehle zur Verfügung
+* [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)In dieser Konsole stehen verschiedene Tastaturbefehle zur Verfügung
 
 >[!NOTE]
 >

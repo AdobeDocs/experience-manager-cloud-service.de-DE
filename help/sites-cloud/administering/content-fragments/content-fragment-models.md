@@ -269,6 +269,7 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 * **[Fragmentreferenz](#fragment-reference-nested-fragments)** (verschachtelte Fragmente)
    * Verweist auf andere Fragmente, abhängig von den angegebenen Modellen.
    * Ermöglicht das Einschließen/Abrufen strukturierter Daten.
+
      >[!NOTE]
      >
      >Diese Methode ist bei der Verwendung von [Headless-Content-Bereitstellung mit Inhaltsfragmenten mit GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).

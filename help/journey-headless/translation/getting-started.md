@@ -85,6 +85,7 @@ Da die Inhaltsmodelle die Struktur Ihrer Inhalte definieren, müssen Sie wissen,
 1. Der **Inhaltsfragmentmodell-Editor** wird geöffnet.
    1. Die linke Spalte enthält die Felder des Modells. Diese Spalte interessiert uns.
    1. Die rechte Spalte enthält die Felder, die dem Modell hinzugefügt werden können. Diese Spalte können wir ignorieren.
+
       ![Inhaltsfragmentmodell-Editor](assets/content-fragment-model-editor.png)
 1. Wählen Sie eines der Felder des Modells aus. AEM markiert es und die Details dieses Felds werden in der rechten Spalte angezeigt.
    ![Details des Inhaltsfragmentmodell-Editors](assets/content-fragment-model-editor-detail.png)

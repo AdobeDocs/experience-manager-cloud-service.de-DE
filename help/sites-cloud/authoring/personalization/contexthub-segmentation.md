@@ -212,6 +212,7 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 1. Der Ordner wird in der Liste der Segmente angezeigt.
    * Die Sortierung Ihrer Spalten beeinflusst, wo in der Liste der neue Ordner erscheint.
    * Sie können die Spaltenüberschriften auswählen, um die Sortierung anzupassen.
+
      ![Der neue Ordner](../assets/contexthub-folder.png)
 
 ### Ändern vorhandener Ordner {#modify-folders}

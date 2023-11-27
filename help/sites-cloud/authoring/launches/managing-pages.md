@@ -25,6 +25,7 @@ Von hier können durch die Struktur Ihres Launchs navigieren:
 * Dem Seiten-Editor:
 
    * Wählen Sie **Navigieren** aus, um die Struktur des Launchs in der Konsole zu öffnen:
+
      ![Navigieren zum Launch über den Seiten-Editor](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
      >[!NOTE]
