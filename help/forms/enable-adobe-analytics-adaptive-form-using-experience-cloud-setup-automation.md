@@ -3,9 +3,9 @@ title: Wie wird Adobe Analytics für ein adaptives Formular aktiviert?
 description: Experience Cloud Setup Automation hilft, Adobe Analytics mit einem adaptiven Formular zu verbinden, um Einblicke in Besucherinteraktionen und Interaktionen zu verfolgen.
 keywords: Aktivieren Sie Adobe Analytics für ein adaptives Formular mithilfe der Automatisierung des Experience Cloud-Setups, aktivieren Sie Adobe Analytics in Forms, Adobe Analytics in Adaptive Forms, Forms Analytics-Integration, Forms und Adobe Analytics
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: fa107ee89deb217ada2cfbcccb4602a7a6aff125
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1576'
 ht-degree: 7%
 
 ---
@@ -161,14 +161,13 @@ Schließen Sie die `customfooterlibs` Client-Bibliothek zur AEM Sites-Seite mith
 
 1. Hinzufügen einer `customfooterlibs.html` -Datei.
 
-       &quot;
-       // customheaderlibs.html
-       &lt;sly data-sly-use.page=&quot;com.adobe.cq.wcm.core.components.models.Page&quot;>
-       &lt;sly data-sly-test=&quot;${page.data &amp;&amp; page.dataLayerClientlibIncluded}&quot; data-sly-call=&quot;${clientlib.js @ categories=&#39;core.forms.components.commons.v1.datalayer&#39;, async=true}&quot;>&lt;/sly>
-       &lt;/sly>
-       
-       &quot;
-   
+   ```
+   // customheaderlibs.html
+   <sly data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page">
+   <sly data-sly-test="${page.data && page.dataLayerClientlibIncluded}" data-sly-call="${clientlib.js @ categories='core.forms.components.commons.v1.datalayer', async=true}"></sly>
+   </sly>
+   ```
+
    Die `customfooterlibs.html` wird für JavaScript verwendet.
 
 1. [Führen Sie die Pipeline aus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=de), um die Änderungen bereitzustellen.
