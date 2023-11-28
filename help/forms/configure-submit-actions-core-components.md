@@ -3,7 +3,7 @@ title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen
 keywords: Anleitung zum Auswählen einer Sendeaktion für ein adaptives Formular, Verbinden eines adaptiven Formulars mit einer Sharepoint-Liste, Verbinden eines adaptiven Formulars mit einer SharePoint-Dokumentbibliothek, Verbinden eines adaptiven Formulars mit einem Formulardatenmodell
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 24b0871e75280d0125c13b1605c0e8b5e555c8e7
 workflow-type: tm+mt
 source-wordcount: '3634'
 ht-degree: 94%
@@ -101,7 +101,6 @@ Um die Option [!UICONTROL Datensatzdokument anhängen] zu aktivieren, lesen Sie 
 >
 >If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
 
-
 -->
 
 ## An SharePoint senden {#submit-to-sharedrive}
@@ -111,8 +110,7 @@ Die Sendeaktion **[!UICONTROL An SharePoint senden]** verbindet ein adaptives Fo
 <!--
 Using Submit to SharePoint, you can:
 * [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
-* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list)
--->
+* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) -->
 
 ### Verbinden eines adaptiven Formulars mit der SharePoint Document Library {#connect-af-sharepoint-doc-library}
 
