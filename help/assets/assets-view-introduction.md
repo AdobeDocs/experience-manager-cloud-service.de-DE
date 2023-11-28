@@ -3,10 +3,10 @@ title: Wie können Sie die Assets-Ansicht in AEM nutzen?
 description: Erfahren Sie mehr über die wichtigsten Vorteile der Assets-Ansicht in AEM.  Adobe, das seine Expertise in der Stärkung von Marketing- und Kreativprofis einsetzt, führt ein völlig neues Anwendererlebnis ein.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 408a691de8a6fe2801a9907308db43f2050528c3
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -95,7 +95,7 @@ Richten Sie mithilfe der Assets-Ansicht schnell eine Ordnerstruktur für Ihre Or
 
 ### Search-First-Ansatz für mehr Effizienz {#search-first}
 
-Erschließen Sie das Potenzial der digitalen Asset-Bibliothek Ihrer Organisation durch Suchvorgänge mit modernsten Funktionen. Sie müssen nicht mehr mühevoll unzählige Dateien und Ordner manuell durchgehen. Alle Benutzenden können sofort das perfekte Bild, Video oder Dokument für beeindruckende Marketing-Kampagnen, faszinierende Präsentationen und ansprechende Inhalte finden. Mit unserer Search-First-Suchmaschine können Sie mühelos durch Asset-Typen, Metadaten, Smarttags und sogar den Inhalt selbst navigieren, ohne das genaue Keyword zu kennen. Nutzen Sie die Zukunft des DAM mit unserem Search-First-Ansatz und schöpfen Sie das volle Potenzial Ihrer digitalen Asset-Bibliothek aus.
+Erschließen Sie das Potenzial der digitalen Asset-Bibliothek Ihrer Organisation durch Suchvorgänge mit modernsten Funktionen. Sie können sich von der Mühe verabschieden, manuell durch unzählige Dateien und Ordner zu navigieren. Alle Benutzenden können sofort das perfekte Bild, Video oder Dokument für beeindruckende Marketing-Kampagnen, faszinierende Präsentationen und ansprechende Inhalte finden. Mit unserer Search-First-Suchmaschine können Sie mühelos durch Asset-Typen, Metadaten, Smarttags und sogar den Inhalt selbst navigieren, ohne das genaue Keyword zu kennen. Nutzen Sie die Zukunft des DAM mit unserem Search-First-Ansatz und schöpfen Sie das volle Potenzial Ihrer digitalen Asset-Bibliothek aus.
 
 ![Search-First-Ansatz](assets/search-first.gif)
 
