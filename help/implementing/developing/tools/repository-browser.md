@@ -4,10 +4,10 @@ seo-title: Repository Browser
 description: Der Repository-Browser bietet eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen in den Autoren-, Veröffentlichungs- und Vorschau-Ebenen.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: a7fa9ecc54bdee394852d765011df2ddd0a4950c
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 98%
+source-wordcount: '866'
+ht-degree: 87%
 
 ---
 
@@ -25,20 +25,20 @@ ht-degree: 98%
 
 Der Repository-Browser ist ein Entwicklungs-Tool, das eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen auf Authoring-, Publishing- und Vorschau-Ebene bereitstellt. Er soll die Anzeige der Inhaltsstruktur erleichtern, um die Anzeige oder Fehlerbehebung von Inhalten zu vereinfachen.
 
-Er ist über die Entwicklerkonsole zugänglich und kann zum Durchsuchen des Repositorys einer Autoren- oder Veröffentlichungsinstanz für eine ausgewählte Umgebung verwendet werden.
+Zugriff über das [AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console), kann es verwendet werden, um das Repository einer Autoren- oder Veröffentlichungsinstanz für eine ausgewählte Umgebung zu durchsuchen.
 
 ### Voraussetzungen für den Zugriff {#access-prerequisites}
 
-Die folgenden Bedingungen müssen erfüllt sein, damit auf die Developer Console oder den Repository-Browser zugegriffen werden kann.
+Die folgenden Bedingungen müssen erfüllt sein, um auf die AEM as a Cloud Service Developer Console oder den Repository-Browser zuzugreifen
 
-So greifen Sie auf die Developer Console zu:
+So greifen Sie auf die AEM as a Cloud Service Developer Console zu:
 
-* müssen die Benutzer für Produktionsprogramme in der Admin Console über die **Cloud Manager-Rolle „Entwickler“** verfügen
+* Für Produktionsprogramme müssen die Benutzer über die **Cloud Manager - Rolle &quot;Entwickler&quot;** in der Adobe Admin Console
 * Bei Sandbox-Programmen ist sie für jeden Benutzer verfügbar, der über ein Produktprofil verfügt, das ihm Zugriff auf AEM as a Cloud Service gewährt.
 
 So greifen Sie auf den Repository-Browser zu:
 
-* müssen die Benutzer in der Admin Console über die **Cloud Manager-Rolle„ Entwickler“** verfügen, um Autoren- und Veröffentlichungsinstanzen anzeigen zu können.
+* Die Benutzer müssen über die **Cloud Manager - Entwickler** Rolle in der AEM as a Cloud Service Developer Console zum Anzeigen von Autoren- und Veröffentlichungsinstanzen.
 * Darüber hinaus können Benutzer mit dem Produktprofil „AEM-Benutzer“ den Repository-Browser mit minimalem Lesezugriff anzeigen. Die Berechtigungen des Benutzers beim Durchsuchen des Repositorys werden dabei berücksichtigt. Benutzer mit dem Produktprofil „AEM-Administrator“ können den Repository-Browser mit vollem Lesezugriff benutzen.
 
 Weitere Informationen zum Einrichten von Benutzerberechtigungen finden Sie in der [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=de).

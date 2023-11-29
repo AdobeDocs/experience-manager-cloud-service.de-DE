@@ -2,10 +2,10 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud Service kennen und erfahren Sie, worin sich dieser Dienst von AEM vor Ort und AEM in AMS unterscheidet.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: c706757857a528a0475f659c6b38110db6f6572a
 workflow-type: tm+mt
-source-wordcount: '2733'
-ht-degree: 91%
+source-wordcount: '2791'
+ht-degree: 84%
 
 ---
 
@@ -166,7 +166,7 @@ Die Protokollebenen lauten wie folgt:
 
 Thread-Dumps in Cloud-Umgebungen werden laufend gesammelt, können aber derzeit nicht selbst heruntergeladen werden. Wenden Sie sich in der Zwischenzeit an den AEM-Support, wenn Thread-Dumps zum Debuggen eines Problems erforderlich sind, und geben Sie das genaue Zeitfenster an.
 
-## CRX/DE Lite und Developer Console {#crxde-lite-and-developer-console}
+## CRX/DE Lite und AEM as a Cloud Service Developer Console {#crxde-lite-and-developer-console}
 
 ### Lokale Entwicklung {#local-development}
 
@@ -176,15 +176,19 @@ Beachten Sie, dass bei der lokalen Entwicklung (mit dem SDK) `/apps` und `/libs`
 
 ### Entwicklungs-Tools für AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
+>[!NOTE]
+>Die AEM as a Cloud Service Developer Console sollte nicht mit der gleichnamigen [*Adobe Developer-Konsole*](https://developer.adobe.com/developer-console/).
+>
+
 Kunden können in der Entwicklungsumgebung der Autorenebene auf CRXDE Lite zugreifen, jedoch nicht in der Staging- oder Produktionsumgebung. Das unveränderliche Repository (`/libs`, `/apps`) kann zur Laufzeit nicht in beschrieben werden. Ein entsprechender Versuch führt zu Fehlern.
 
-Stattdessen kann der Repository-Browser über die Entwicklerkonsole gestartet werden und eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen auf den Ebenen „Autor“, „Veröffentlichung“ und „Vorschau“ bereitstellen. Mehr über den Repository-Browser erfahren Sie [hier](/help/implementing/developing/tools/repository-browser.md).
+Stattdessen kann der Repository-Browser über die AEM as a Cloud Service Developer Console gestartet werden, die eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen auf der Ebene der Autoren-, Veröffentlichungs- und Vorschauen bereitstellt. Mehr über den Repository-Browser erfahren Sie [hier](/help/implementing/developing/tools/repository-browser.md).
 
-Eine Reihe von Tools zum Debugging von AEM as a Cloud Service-Entwicklungsumgebungen sind in der Developer Console für Entwicklungs-, Staging- und Produktionsumgebungen verfügbar. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungs-Service-URLs wie folgt festgelegt werden:
+Eine Reihe von Tools zum Debugging AEM as a Cloud Service Entwicklungsumgebungen finden Sie in der AEM as a Cloud Service Entwicklerkonsole für RDE-, Entwicklungs-, Staging- und Produktionsumgebungen. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungs-Service-URLs wie folgt festgelegt werden:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-Als Abkürzung kann der folgende Cloud Manager-CLI-Befehl verwendet werden, um die Entwicklerkonsole auf der Grundlage eines unten beschriebenen Umgebungsparameters zu starten:
+Als Kurzbefehl kann der folgende Cloud Manager-CLI-Befehl verwendet werden, um die AEM as a Cloud Service Developer Console basierend auf einem Umgebungsparameter zu starten, der unten beschrieben wird:
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
@@ -202,11 +206,11 @@ Wie unten dargestellt, können Entwickler Paketabhängigkeiten und Servlets aufl
 
 ![Developer Console 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-Die Entwicklerkonsole ist auch für das Debugging nützlich und enthält einen Link zum Tool „Abfrage erläutern“:
+Die AEM as a Cloud Service Developer Console ist auch für das Debugging nützlich und enthält einen Link zum Tool &quot;Abfrage erläutern&quot;:
 
 ![Developer Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Bei Produktionsprogrammen wird der Zugriff auf die Entwicklerkonsole durch „Cloud Manager – Entwicklerrolle“ in der Admin Console definiert. Bei Sandbox-Programmen steht die Entwicklerkonsole jedem Benutzer mit einem Produktprofil zur Verfügung, das ihm Zugriff auf AEM as a Cloud Service gewährt. Für alle Programme ist „Cloud Manager - Entwicklerrolle“ für Status-Dumps erforderlich, und der Repository Browser und die Benutzenden müssen auch in den Produktprofilen „AEM-Benutzer“ oder „AEM-Administrator“ sowohl für die Authoring- als auch für die Publishing-Services definiert sein, um Daten von beiden Services anzeigen zu können. Weitere Informationen zum Einrichten von Anwenderberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=de).
+Bei Produktionsprogrammen wird der Zugriff auf die AEM as a Cloud Service Developer Console durch die &quot;Cloud Manager - Entwicklerrolle&quot;in Adobe Admin Console definiert, während bei Sandbox-Programmen die AEM as a Cloud Service Entwicklerkonsole für alle Benutzer mit einem Produktprofil verfügbar ist, das ihnen Zugriff auf AEM as a Cloud Service gewährt. Für alle Programme ist „Cloud Manager - Entwicklerrolle“ für Status-Dumps erforderlich, und der Repository Browser und die Benutzenden müssen auch in den Produktprofilen „AEM-Benutzer“ oder „AEM-Administrator“ sowohl für die Authoring- als auch für die Publishing-Services definiert sein, um Daten von beiden Services anzeigen zu können. Weitere Informationen zum Einrichten von Anwenderberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=de).
 
 ### Performance-Überwachung {#performance-monitoring}
 
