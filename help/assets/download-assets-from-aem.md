@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f2f81e2e3e7ff0b5bad4a5490f5cbec752c92578
 workflow-type: tm+mt
 source-wordcount: '1385'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ Sie können mit den folgenden Methoden Assets aus Experience Manager herunterlad
 
 ## Herunterladen von Assets über die [!DNL Experience Manager]-Oberfläche {#download-assets}
 
-Experience Manager optimiert das Download-Erlebnis basierend auf der Menge und Größe der Assets. Kleinere Dateien werden in Echtzeit von der Benutzeroberfläche heruntergeladen. [!DNL Experience Manager] lädt direkt einzelne Asset-Anforderungen für die Originaldatei herunter, anstatt einzelne Assets in ein ZIP-Archiv zu integrieren, um schnellere Downloads zu ermöglichen. Experience Manager unterstützt große Downloads mit asynchronen Anfragen. Download-Anfragen mit mehr als 100 GB werden in mehrere ZIP-Archive mit einer maximalen Größe von jeweils 100 GB aufgeteilt.
+Experience Manager optimiert das Download-Erlebnis basierend auf der Menge und Größe der Assets. Kleinere Dateien werden in Echtzeit von der Benutzeroberfläche heruntergeladen. [!DNL Experience Manager] lädt direkt einzelne Asset-Anforderungen für die Originaldatei herunter, anstatt einzelne Assets in ein ZIP-Archiv zu integrieren, um schnellere Downloads zu ermöglichen. Experience Manager unterstützt große Downloads mit asynchronen Anfragen. Download-Anfragen, die größer als 100 GB sind, werden in mehrere ZIP-Archive mit einer Maximalgröße von jeweils 100 MB aufgeteilt.
 
 Standardmäßig löst [!DNL Experience Manager] eine Benachrichtigung im [[!DNL Experience Manager] Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md) aus, nachdem ein Download-Archiv erstellt wurde.
 
