@@ -2,10 +2,10 @@
 title: Verwalten von Berichten in Assets-Ansicht
 description: Greifen Sie auf die Daten im Abschnitt „Berichte“ der Assets-Ansicht zu, um die Produkt- und Funktionsnutzung zu bewerten und Erkenntnisse zu wichtigen Erfolgsmetriken zu erhalten.
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
+source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 100%
+source-wordcount: '825'
+ht-degree: 97%
 
 ---
 
@@ -26,13 +26,23 @@ Alle Benutzenden, die dem Produktprofil Assets-Ansicht-Admins zugeordnet sind, k
 
 In der Assets-Ansicht können Sie mit dem Insights-Dashboard Echtzeitdaten für Ihre Assets Essentials-Umgebung anzeigen. Sie können Echtzeit-Ereignismetriken während der letzten 30 Tage oder für die letzten 12 Monate anzeigen.
 
-![Symbolleistenoptionen bei der Auswahl eines Assets](assets/assets-essentials-live-statistics.png)
+<!--![Toolbar options when you select an asset](assets/assets-essentials-live-statistics.png)-->
 
 Klicken Sie auf **[!UICONTROL Erkenntnisse]** im linken Navigationsbereich, um die folgenden automatisch generierten Diagramme anzuzeigen:
+
+![Erkenntnisse](assets/insights.png)
 
 * **Downloads**: Die Anzahl der Assets, die in den letzten 30 Tagen oder 12 Monaten aus der Assets-Ansichtsumgebung heruntergeladen wurden, dargestellt als Liniendiagramm.
 
 * **Uploads**: Die Anzahl der Assets, die in den letzten 30 Tagen oder 12 Monaten in die Assets-Ansichtsumgebung hochgeladen wurden, dargestellt als Liniendiagramm.
+
+<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+
+* **Speichernutzung**: Die Speicherverwendung in Byte für die Umgebung &quot;Assets-Ansicht&quot;, die mithilfe eines Balkendiagramms dargestellt wird.
+
+<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+
+<!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **Top-Suchvorgänge**: Zeigt die in den letzten 30 Tagen oder 12 Monaten am häufigsten gesuchten Begriffe zusammen mit der Anzahl der Suchvorgänge dieser Begriffe in Ihrer Assets-Ansichtsumgebung an, dargestellt in tabellarischem Format.
 

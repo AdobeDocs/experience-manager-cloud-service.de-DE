@@ -3,10 +3,10 @@ title: Erfahren Sie, wie man in der  [!DNL Assets view] Assets sucht und findet.
 description: Erfahren Sie, wie man in der AEM Assets-Ansicht Assets sucht und findet. Mit der leistungsstarken Suchfunktion können Sie schnell das passende Asset ermitteln und die Geschwindigkeit Ihrer Inhaltserstellung steigern.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 224529293f87b772c150dd26ce5260a9172c8b68
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 96%
+source-wordcount: '1321'
+ht-degree: 78%
 
 ---
 
@@ -141,6 +141,67 @@ What about temporarily hiding an asset (suspending search on it) from the search
 
 When userA is searching and userB add an asset that matches search results, will the asset display in search as soon as userA refreshes the page? Assuming indexing is near real-time. May not be so for bulk uploads.
 -->
+
+## Arbeiten mit Suchergebnissen {#work-with-search-results}
+
+Sie können die Assets auswählen, die in den Suchergebnissen angezeigt werden, und die folgenden Aktionen ausführen:
+
+* **Details**: Zeigen Sie Asset-Eigenschaften an und bearbeiten Sie diese.
+
+* **Zur Sammlung hinzufügen**: Fügen Sie das ausgewählte Asset zu einer Sammlung hinzu.
+
+* **Herunterladen**: Laden Sie ein Asset herunter.
+
+* **Löschen**: Löschen Sie ein Asset.
+
+* **Kopieren**: Kopieren Sie ein Asset in einen anderen Ordner.
+
+* **Verschieben**: Verschieben Sie ein Asset in einen anderen Ordner.
+
+* **Umbenennen**: Benennen Sie ein Asset um.
+
+* **Aufgaben zuweisen**: Weisen Sie Benutzenden Aufgaben für ein Asset zu.
+
+* **Link freigeben**: [Teilen Sie Links](share-links-for-assets-view.md) für ein Asset mit anderen Benutzenden, damit sie darauf zugreifen und es herunterladen können.
+
+* **Beobachten**: [Überwachen Sie Vorgänge](manage-notifications-assets-view.md), die für ein Asset durchgeführt werden.
+
+* **Dateispeicherort anzeigen**: Navigieren Sie zum Speicherort des Asset-Ordners.
+
+* **An Schnellzugriff anheften**: [Heften Sie ein Asset an](my-workspace-assets-view.md), um später im Bedarfsfall schneller darauf zugreifen zu können. Alle angehefteten Elemente werden im Dashboard „Mein Arbeitsbereich“ im Abschnitt **Schnellzugriff** angezeigt.
+
+## Konfigurieren der ersten Homepage für die Suche {#configuring-search-first-homepage}
+
+Auf der ersten Homepage suchen können Sie sofort durch verschiedene Dateien und Ordner navigieren. Damit können Sie mühelos durch Asset-Typen, Metadaten, Smart-Tags und sogar den Inhalt selbst navigieren, ohne das genaue Keyword zu kennen. [!DNL Assets view] ermöglicht es Ihnen, Ihre Startseite zu konfigurieren, indem Sie steuern, was angezeigt werden soll, wenn Sie sich bei [!DNL Assets view].
+
+Um die erste Startseite der Suche zu konfigurieren, führen Sie die folgenden Schritte aus:
+
+1. Navigieren Sie zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**.
+1. Auswählen **[!UICONTROL Suche zuerst]**. Es öffnet außerdem die Konfiguration der ersten Suchfunktion. Sie können [Ausrichtung](#setting-alignment-search-bar) oder [Festlegen von Hintergrund- und Logo-Bildern](#setting-background-image-and-logo) auf Ihrer Homepage.
+
+### Festlegen der Ausrichtung der Suchleiste {#setting-alignment-search-bar}
+
+[!DNL Assets view] ermöglicht es Ihnen, die Ausrichtung der Suchleiste zu ändern. Sie können die Suchleiste entweder in der Mitte oder oben anzeigen lassen. Wählen Sie die gewünschte Ausrichtung aus und klicken Sie auf **[!UICONTROL Speichern]**.
+
+![Suchen Sie die erste Startseitenausrichtung](assets/search-first-alignment.png)
+
+### Festlegen von Hintergrund- und Logo-Bildern für die Homepage {#setting-background-image-and-logo}
+
+Sie können Ihrer ersten Suchhomepage ein Markenlogo und ein Hintergrundbild hinzufügen. Führen Sie die folgenden Schritte aus:
+
+1. Navigieren Sie zu **[!UICONTROL Hintergrund und Logo-Bild]** Abschnitt unter **[!UICONTROL Homepage]**.
+1. Klicks **[!UICONTROL Ersetzen]** , um Bilder aus einem vorhandenen Asset-Repository zu durchsuchen.
+1. Klicken Sie auf **[!UICONTROL Speichern]**. [Vorschau](#preview-configured-homepage) die Änderungen, die über die Änderungen hinweg vorgenommen werden sollen.
+
+### Vorschau der konfigurierten Homepage {#preview-configured-homepage}
+
+Sie können eine Vorschau anzeigen, um das Layout und die Formatierung der ersten Suchhomepage zu überprüfen. Verwenden **[!UICONTROL Vorschau]** können Sie das Layout korrigieren oder Änderungen entsprechend den Anforderungen vornehmen. Führen Sie die folgenden Schritte aus, um eine Vorschau der konfigurierten Homepage anzuzeigen:
+
+1. Klicks **[!UICONTROL Allgemeine Einstellungen]** und wählen **[!UICONTROL Suche zuerst]**.
+1. Navigieren Sie zu **[!UICONTROL Anpassen der ersten Startseite der Suche]** und klicken **[!UICONTROL Vorschau]**. Umschalten **[!UICONTROL Dunkles Thema]** -Schaltfläche, um die Startseite im dunklen oder hellen Design als Vorschau anzuzeigen.
+1. Klicks **[!UICONTROL Schließen]** um den Vorschaubildschirm zu schließen.
+
+   ![Erste Homepage-Vorschau durchsuchen](assets/search-first-preview.gif)
 
 ## Nächste Schritte {#next-steps}
 
