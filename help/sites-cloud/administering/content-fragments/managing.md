@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre AEM Inhaltsfragmente über die Konsole u
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 50%
+source-wordcount: '2622'
+ht-degree: 49%
 
 ---
 
@@ -58,7 +58,7 @@ Weitere Einzelheiten finden Sie unter:
 
 * [Suchen und Filtern in der Inhaltsfragmentkonsole](#filtering-fragments)
 
-* [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)In dieser Konsole stehen verschiedene Tastaturbefehle zur Verfügung
+* [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)In dieser Konsole stehen verschiedene Tastaturbefehle zur Verfügung
 
 >[!NOTE]
 >
@@ -143,10 +143,7 @@ Wenn Sie ein bestimmtes Fragment auswählen, wird eine Symbolleiste geöffnet, d
 * **[Verschieben](/help/assets/manage-digital-assets.md)**
 * **[Umbenennen](/help/assets/manage-digital-assets.md)**
 * **[Löschen](#deleting-a-fragment)**
-
-<!--
-* **[Replace](#find-and-replace)**
--->
+* **[Ersetzen](#find-and-replace)**
 
 >[!NOTE]
 >
@@ -369,13 +366,22 @@ Wenn das entsprechende Dialogfeld geöffnet wird, können Sie den entsprechenden
 >
 >Wenn das Fragment bereits von einem anderen Fragment oder von einer Seite referenziert wird, wird eine Warnmeldung angezeigt, in der Sie zur Bestätigung des Vorgangs aufgefordert werden.
 
-<!--
-## Find and Replace {#find-and-replace}
+## Suchen und Ersetzen {#find-and-replace}
 
-The **Replace** option is available to find, and replace, specified text in your selected Content Fragment:
+Die **Ersetzen** -Aktion ist verfügbar (in der oberen Symbolleiste), um angegebenen Text in den ausgewählten Inhaltsfragmenten zu suchen und zu ersetzen.
 
-![Unpublish dialog](assets/cf-managing-find-replace.png)
--->
+![Suchen und Ersetzen](assets/cf-managing-find-replace.png)
+
+Vor der Ersetzung werden die Validierungskriterien überprüft und Sie werden über etwaige Konflikte informiert, sodass Sie die Ersatzzeichenfolge ändern oder nur die validierten Instanzen ersetzen können.
+
+>[!NOTE]
+>
+>Die Aktion &quot;Suchen und Ersetzen&quot;kann nur für maximal 20 ausgewählte Inhaltsfragmente ausgeführt werden (gleichzeitig).
+>
+>Wenn Sie mehr als 20 Inhaltsfragmente auswählen, wird die Nachricht angezeigt **Suche und Ersetzung sind nicht möglich**.
+
+![Ersetzen bestätigen](assets/cf-managing-confirm-replace.png)
+
 
 ## Löschen von Fragmenten {#deleting-a-fragment}
 

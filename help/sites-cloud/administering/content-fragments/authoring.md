@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente erstellen 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2267'
 ht-degree: 5%
 
 ---
@@ -50,7 +50,7 @@ Beim ersten Öffnen des Inhaltsfragment-Editors werden vier Hauptbereiche angeze
 
      >[!WARNING]
      >
-     >Der ursprüngliche Editor wird auf derselben Registerkarte geöffnet. Es wird nicht empfohlen, beide Editoren gleichzeitig zu öffnen.
+     >Der ursprüngliche Editor wird auf derselben Registerkarte geöffnet. Es wird nicht empfohlen, beide Editoren gleichzeitig geöffnet zu haben.
 
 * linker Bereich: zeigt die **[Varianten](#variations)** für das Inhaltsfragment und dessen **Felder**:
    * Diese Links können verwendet werden, um [Navigieren in der Inhaltsfragmentstruktur](#navigate-structure)
@@ -59,6 +59,10 @@ Beim ersten Öffnen des Inhaltsfragment-Editors werden vier Hauptbereiche angeze
 * Zentralbereich: zeigt die tatsächlichen Felder und den Inhalt der ausgewählten Variante an
    * ermöglicht die Bearbeitung des Inhalts
    * if **Registerkartenplatzhalter** -Felder werden innerhalb des hier gezeigten Modells definiert und können für die Navigation verwendet werden. Sie werden entweder horizontal oder als Dropdown-Liste angezeigt.
+
+  >[!NOTE]
+  >
+  >Abhängig von den Definitionen im zugrunde liegenden Modell können Felder bestimmten Typen von [Validierung](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ![Inhaltsfragmente-Editor - Übersicht](assets/cf-authoring-overview.png)
 

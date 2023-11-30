@@ -2,10 +2,10 @@
 title: Inhaltsfragmentmodelle (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für Ihre Headless-Inhalte dienen und wie Sie Inhaltsfragmente mit strukturierten Inhalten erstellen.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2931'
-ht-degree: 96%
+source-wordcount: '3005'
+ht-degree: 94%
 
 ---
 
@@ -150,7 +150,7 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
   >Wenn Modelle, die in früheren Versionen von AEM erstellt wurden, unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
 * **Rendern als**
-Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Mit dieser Eigenschaft können Sie oft festlegen, ob die Autorin bzw. der Autor nur eine einzige Instanz des Feldes sieht oder ob mehrere Instanzen erstellt werden dürfen.
+Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Mit dieser Eigenschaft können Sie oft festlegen, ob die Autorin bzw. der Autor nur eine einzige Instanz des Feldes sieht oder ob mehrere Instanzen erstellt werden dürfen. Wann **Mehrere Felder** verwendet wird, können Sie die Mindest- und Höchstanzahl der Elemente definieren - siehe [Validierung](#validation) für weitere Informationen.
 
 * **Feldbezeichnung**
 Eingabe einer **Feldbezeichnung** generiert automatisch eine **Eigenschaftsname**, die dann bei Bedarf manuell aktualisiert werden kann.
@@ -212,6 +212,17 @@ Verschiedene Datentypen bieten jetzt die Möglichkeit, Validierungsanforderungen
    * Es können nur Bilder in einem vordefinierten Bereich von Breite und/oder Höhe (in Pixel) referenziert werden.
 * **Fragmentreferenz**
    * Testen Sie, ob ein bestimmtes Inhaltsfragmentmodell vorhanden ist.
+* **Mindestanzahl von Elementen** / **Maximale Elementanzahl**
+
+  Felder, die als **Mehrere Felder** (festgelegt mit **Rendern als**) haben die Optionen:
+
+   * **Mindestanzahl der Elemente**
+   * **Maximale Anzahl der Elemente**
+
+  Diese werden validiert:
+
+   * Der maximale Wert wird im [ursprünglicher Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-variations.md).
+   * Beide werden im [Inhaltsfragment-Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Verwenden von Verweisen, um verschachtelten Inhalt zu bilden {#using-references-to-form-nested-content}
 
@@ -224,7 +235,6 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 * **[Fragmentreferenz](#fragment-reference-nested-fragments)** (verschachtelte Fragmente)
    * Verweist auf andere Fragmente, abhängig von den angegebenen Modellen.
    * Ermöglicht das Einschließen/Abrufen strukturierter Daten.
-
      >[!NOTE]
      >
      >Diese Methode ist in Verbindung mit der [Headless-Bereitstellung mithilfe von Inhaltsfragmenten mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md) besonders interessant.

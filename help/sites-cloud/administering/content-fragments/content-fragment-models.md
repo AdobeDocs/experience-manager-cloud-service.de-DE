@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Inhaltsfragmentmodelle als Grundlage für Ihre In
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '3058'
+source-wordcount: '3121'
 ht-degree: 59%
 
 ---
@@ -32,7 +32,7 @@ So verwenden Sie Inhaltsfragmentmodelle:
    >
    >Wenn die Variable [Verwendung von Inhaltsfragmentmodellen wurde nicht aktiviert](/help/sites-cloud/administering/content-fragments/setup.md), die **Erstellen** nicht verfügbar.
 
-1. Geben Sie den **Modell-Titel** an.
+1. Geben Sie den **Modelltitel** an.
 Sie können auch verschiedene Eigenschaften definieren, beispielsweise **Tags**, a **Beschreibung** auswählen **Modell aktivieren** nach [das Modell aktivieren](#enabling-disabling-a-content-fragment-model) bei Bedarf und definieren Sie die
    **Standardmäßige Echtzeitansicht für URL-Muster**.
 
@@ -199,7 +199,8 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
   >Wenn Modelle, die in früheren Versionen von AEM erstellt wurden, unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
 * **Rendern als**
-Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Häufig können Sie damit definieren, ob der Autor eine einzelne Instanz des Felds sieht oder ob es möglich ist, mehrere Instanzen zu erstellen.
+
+  Die verschiedenen Optionen zum Realisieren/Rendern des Felds in einem Fragment. Oft können Sie damit festlegen, ob dem Autor nur eine einzige Instanz des Feldes angezeigt wird oder ob er mehrere Instanzen erstellen darf. Wann **Mehrere Felder** verwendet wird, können Sie die Mindest- und Höchstanzahl der Elemente definieren - siehe [Validierung](#validation) für weitere Informationen.
 
 * **Feldbezeichnung**
 Eingabe einer **Feldbezeichnung** automatisch generiert eine **Eigenschaftsname**, die dann bei Bedarf manuell aktualisiert werden kann.
@@ -257,6 +258,14 @@ Verschiedene Datentypen bieten jetzt die Möglichkeit, Validierungsanforderungen
    * Es können nur Bilder in einem vordefinierten Bereich von Breite und/oder Höhe (in Pixel) referenziert werden.
 * **Fragmentreferenz**
    * Testen Sie auf ein bestimmtes Inhaltsfragmentmodell.
+* **Mindestanzahl von Elementen** / **Maximale Elementanzahl**
+
+  Felder, die als **Mehrere Felder** (festgelegt mit **Rendern als**) haben die Optionen:
+
+   * **Mindestanzahl der Elemente**
+   * **Maximale Anzahl der Elemente**
+
+  Diese werden im [Inhaltsfragment-Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Verwenden von Verweisen, um verschachtelten Inhalt zu bilden {#using-references-to-form-nested-content}
 
@@ -269,7 +278,6 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 * **[Fragmentreferenz](#fragment-reference-nested-fragments)** (verschachtelte Fragmente)
    * Verweist auf andere Fragmente, abhängig von den angegebenen Modellen.
    * Ermöglicht das Einschließen/Abrufen strukturierter Daten.
-
      >[!NOTE]
      >
      >Diese Methode ist bei der Verwendung von [Headless-Content-Bereitstellung mit Inhaltsfragmenten mit GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
