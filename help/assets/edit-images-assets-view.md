@@ -3,10 +3,10 @@ title: Bearbeiten von Bildern
 description: Bearbeiten Sie Bilder mit von  [!DNL Adobe Photoshop Express]  unterstützten Optionen und speichern Sie aktualisierte Bilder als Versionen.
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
+source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 76%
+source-wordcount: '1171'
+ht-degree: 75%
 
 ---
 
@@ -82,12 +82,12 @@ Mithilfe von Adobe Express können Sie schnell ein JPEG-Bild in ein PNG-Format k
 
 ## Bilder mit dem eingebetteten Adobe Expreß-Editor bearbeiten {#edit-using-embedded-editor}
 
-[!DNL Assets view] bietet eine umfassende Bearbeitung der Bilder direkt aus Ihrem Assets-Repository. Der eingebettete Editor ermöglicht die einfache und intuitive Bearbeitung eines Bildes mithilfe von [!DNL Adobe Express]. Sie beschleunigt die Wiederverwendbarkeit der Assets, indem Vorlagen verwendet oder die vorhandenen Assets geändert werden. Sie können vordefinierte Elemente verwenden, um Ihr Asset atemberaubend aussehen zu lassen oder durch schnelle Aktionen Ihr Bild mit nur wenigen Klicks zu bearbeiten.
+Benutzer mit Zugriff auf Express verfügen jetzt über integrierte Bildbearbeitungs- und -erstellungs-Tools von Adobe Expreß und Adobe Firefly, die direkt in AEM Assets verfügbar sind, um die Wiederverwendung von Inhalten zu verbessern und die Content-Geschwindigkeit zu beschleunigen. Sie können auch vordefinierte Elemente verwenden, um Ihr Asset atemberaubend aussehen zu lassen oder durch schnelle Aktionen Ihr Bild mit nur wenigen Klicks zu bearbeiten.
 
 So bearbeiten Sie Bilder mit [!DNL Adobe Express] Führen Sie die folgenden Schritte aus:
 
 1. Wählen Sie ein Bild aus Ihrem [!DNL Experience Manager] Assets-Repository.
-1. Klicks **[!UICONTROL In Adobe Expreß öffnen]**. [!DNL Adobe Express] angezeigt.
+1. Klicks **[!UICONTROL In Adobe Expreß öffnen]**.
 
    ![eingebetteter Adobe Expreß-Editor](assets/embedded-editor.png)
 
@@ -95,20 +95,20 @@ So bearbeiten Sie Bilder mit [!DNL Adobe Express] Führen Sie die folgenden Schr
 
 1. Nachdem Sie die Bildbearbeitung abgeschlossen haben, können Sie ein Asset als neues Asset herunterladen oder es als neue Version speichern.
 
-## Erstellen eines neuen Assets mit Adobe Expreß {#create-new-embedded-editor}
+## Erstellen neuer Assets mit Adobe Expreß {#create-new-embedded-editor}
 
-[!DNL Assets view] bietet Funktionen zum Erstellen einer neuen Vorlage mit [!DNL Adobe Express] eingebetteter Editor. So erstellen Sie ein neues Asset mit [!DNL Adobe Expresss]führen Sie die folgenden Schritte aus:
+[!DNL Assets view] bietet Funktionen zum Erstellen einer neuen Vorlage mit [!DNL Adobe Express] eingebetteter Editor. So erstellen Sie ein neues Asset mit [!DNL Adobe Express]führen Sie die folgenden Schritte aus:
 
-1. Navigieren Sie zu **[!UICONTROL Mein Arbeitsbereich]** und klicken **[!UICONTROL Erstellen]**. [!DNL Adobe Express] leere Arbeitsfläche wird in der [!DNL Assets view] -Benutzeroberfläche.
+1. Navigieren Sie zu **[!UICONTROL Mein Arbeitsbereich]** und klicken **[!UICONTROL Erstellen]** im Adobe Expreß-Banner, das über dem [!UICONTROL Schnellzugriff] Abschnitt. [!DNL Adobe Express] leere Arbeitsfläche wird in der [!DNL Assets view] -Benutzeroberfläche.
 1. Erstellen Sie Inhalt mit [Vorlagen](https://helpx.adobe.com/in/express/using/work-with-templates.html). Navigieren Sie andernfalls zu **[!UICONTROL Ihr Stuff]** , um vorhandenen Inhalt zu ändern.
 1. Klicken Sie nach Abschluss der Bearbeitung auf **[!UICONTROL Als neues Asset speichern]**.
-1. Geben Sie den Zielpfad für das erstellte Asset an.
+1. Geben Sie den Zielpfad für das erstellte Asset an und klicken Sie auf **[!UICONTROL Speichern]**.
 
 >[!NOTE]
 >
->* Sie können `JPEG` und `PNG` -Formaten.
->* Die Asset-Größe sollte kleiner als 14 MB sein.
->* Sie können ein Bild als `PDF`, `JPEG`oder `PNG` -Formaten.
+>* Sie können nur Bilder von `JPEG` und `PNG` Formattypen.
+>* Die Größe des Assets muss kleiner als 14 MB sein.
+>* Sie können ein Bild in `PDF`, `JPEG`oder `PNG` -Formaten.
 
 ## Bearbeiten von Bildern mit [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
 

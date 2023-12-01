@@ -3,9 +3,9 @@ title: Erfahren Sie, wie man in der  [!DNL Assets view] Assets sucht und findet.
 description: Erfahren Sie, wie man in der AEM Assets-Ansicht Assets sucht und findet. Mit der leistungsstarken Suchfunktion können Sie schnell das passende Asset ermitteln und die Geschwindigkeit Ihrer Inhaltserstellung steigern.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 224529293f87b772c150dd26ce5260a9172c8b68
+source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1314'
 ht-degree: 78%
 
 ---
@@ -172,7 +172,7 @@ Sie können die Assets auswählen, die in den Suchergebnissen angezeigt werden, 
 
 ## Konfigurieren der ersten Homepage für die Suche {#configuring-search-first-homepage}
 
-Auf der ersten Homepage suchen können Sie sofort durch verschiedene Dateien und Ordner navigieren. Damit können Sie mühelos durch Asset-Typen, Metadaten, Smart-Tags und sogar den Inhalt selbst navigieren, ohne das genaue Keyword zu kennen. [!DNL Assets view] ermöglicht es Ihnen, Ihre Startseite zu konfigurieren, indem Sie steuern, was angezeigt werden soll, wenn Sie sich bei [!DNL Assets view].
+Mit Experience Manager Assets können Sie die Standard-Landingpage für Ihre Organisation auswählen. Bei der Verwendung von Search First als Startseite haben Sie auch Optionen, das Branding der Seite anzupassen, indem Sie den Hintergrund und die Logo-Bilder so konfigurieren, dass sie Ihrer Marke entsprechen.
 
 Um die erste Startseite der Suche zu konfigurieren, führen Sie die folgenden Schritte aus:
 
@@ -191,7 +191,7 @@ Sie können Ihrer ersten Suchhomepage ein Markenlogo und ein Hintergrundbild hin
 
 1. Navigieren Sie zu **[!UICONTROL Hintergrund und Logo-Bild]** Abschnitt unter **[!UICONTROL Homepage]**.
 1. Klicks **[!UICONTROL Ersetzen]** , um Bilder aus einem vorhandenen Asset-Repository zu durchsuchen.
-1. Klicken Sie auf **[!UICONTROL Speichern]**. [Vorschau](#preview-configured-homepage) die Änderungen, die über die Änderungen hinweg vorgenommen werden sollen.
+1. Klicken Sie auf **[!UICONTROL Speichern]**. [Vorschau](#preview-configured-homepage) die Änderungen, um die Änderungen zu überprüfen.
 
 ### Vorschau der konfigurierten Homepage {#preview-configured-homepage}
 
