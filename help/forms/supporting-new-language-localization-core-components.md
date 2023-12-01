@@ -2,9 +2,9 @@
 title: Wie füge ich einem adaptiven Formular Unterstützung für neue Gebietsschemata hinzu, basierend auf Kernkomponenten?
 description: Erfahren Sie, wie Sie neue Gebietsschemata für ein adaptives Formular hinzufügen.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1348'
 ht-degree: 23%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 23%
 | Foundation-Komponenten | [Hier klicken](supporting-new-language-localization.md) |
 | Kernkomponenten | Dieser Artikel |
 
-AEM Forms bietet vorkonfiguriert Unterstützung für die Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (it), Deutsch (de), Japanisch (ja), brasilianisches Portugiesisch (pt-BR), Chinesisch (zh-CN), Chinesisch – Taiwan (zh-TW) und Koreanisch (ko-KR). Sie können auch Unterstützung für weitere Gebietsschemata hinzufügen, wie Hindi (hi_IN).
+AEM Forms bietet vorkonfiguriert Unterstützung für die Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (it), Deutsch (de), Japanisch (ja), brasilianisches Portugiesisch (pt-BR), Chinesisch (zh-CN), Chinesisch – Taiwan (zh-TW) und Koreanisch (ko-KR). Sie können auch Unterstützung für weitere Gebietsschemata hinzufügen, wie Hindi (hi_IN). Sie können Adaptive Forms auch in einer RTL-Sprache (Right-to-Left) wie Arabisch, Persisch und Urdu präsentieren, indem Sie diese Gebietsschemata hinzufügen.
 
 ## Wie wird das Gebietsschema für ein adaptives Formular ausgewählt?
 
