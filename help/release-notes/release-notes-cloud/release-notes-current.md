@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
+source-git-commit: 8eb087bdda335b0a33e616eb534615396b220369
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 16%
@@ -105,7 +105,7 @@ Möchten Sie die Funktion ausprobieren und Feedback teilen? E-Mail an senden **a
 
 * **Senden eines adaptiven Formulars an das Adobe Workfront Fusion-Szenario**: Forms as a Cloud Service bietet vordefinierte Optionen, um ein adaptives Formular einfach mit Adobe Workfront zu verbinden. Dadurch wird der Prozess zum Senden eines adaptiven Formulars an ein Adobe Workfront-Szenario vereinfacht, sodass Sie bei der Übermittlung eines adaptiven Formulars ein Workfront Fusion-Szenario Trigger haben.
 
-* **Unterstützung für Sprachen mit Rechts-nach-links-Schreibrichtung**: Adaptive Forms, die auf Kernkomponenten basiert, kann jetzt in einer RTL-Sprache (Right-to-Left) wie Arabisch, Persisch und Urdu angezeigt werden. Die RTL-Sprachen werden von über 2 Milliarden Menschen weltweit gesprochen. Durch die Verwendung eines Formulars in RTL-Sprache können Sie die Reichweite Ihrer adaptiven Formulare erweitern, um diese unterschiedlichen Zielgruppen zu bedienen und RTL-Märkte zu erschließen. In bestimmten Regionen ist es auch ein gesetzliches Mandat, Formulare in der Landessprache zu verfassen. Durch die Unterbringung der lokalen Sprachen öffnen Sie nicht nur den Zugang zu einem breiteren Publikum, sondern sorgen auch für die Einhaltung der einschlägigen Gesetze und Vorschriften.
+* **[Unterstützung für Sprachen mit Rechts-nach-links-Schreibrichtung](/help/forms/supporting-new-language-localization-core-components.md)**: Adaptive Forms, die auf Kernkomponenten basiert, kann jetzt in einer RTL-Sprache (Right-to-Left) wie Arabisch, Persisch und Urdu angezeigt werden. Die RTL-Sprachen werden von über 2 Milliarden Menschen weltweit gesprochen. Durch die Verwendung eines Formulars in RTL-Sprache können Sie die Reichweite Ihrer adaptiven Formulare erweitern, um diese unterschiedlichen Zielgruppen zu bedienen und RTL-Märkte zu erschließen. In bestimmten Regionen ist es auch ein gesetzliches Mandat, Formulare in der Landessprache zu verfassen. Durch die Unterbringung der lokalen Sprachen öffnen Sie nicht nur den Zugang zu einem breiteren Publikum, sondern sorgen auch für die Einhaltung der einschlägigen Gesetze und Vorschriften.
 
   ![Unterstützung von Sprachen mit Rechts-Links](/help/forms/assets/right-to-left-language-support.png)
 
