@@ -2,10 +2,10 @@
 title: Wie füge ich einem adaptiven Formular Unterstützung für neue Gebietsschemata hinzu, basierend auf Kernkomponenten?
 description: Erfahren Sie, wie Sie neue Gebietsschemata für ein adaptives Formular hinzufügen.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '1348'
-ht-degree: 23%
+source-wordcount: '1335'
+ht-degree: 18%
 
 ---
 
@@ -16,7 +16,9 @@ ht-degree: 23%
 | Foundation-Komponenten | [Hier klicken](supporting-new-language-localization.md) |
 | Kernkomponenten | Dieser Artikel |
 
-AEM Forms bietet vorkonfiguriert Unterstützung für die Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (it), Deutsch (de), Japanisch (ja), brasilianisches Portugiesisch (pt-BR), Chinesisch (zh-CN), Chinesisch – Taiwan (zh-TW) und Koreanisch (ko-KR). Sie können auch Unterstützung für weitere Gebietsschemata hinzufügen, wie Hindi (hi_IN). Sie können Adaptive Forms auch in einer RTL-Sprache (Right-to-Left) wie Arabisch, Persisch und Urdu präsentieren, indem Sie diese Gebietsschemata hinzufügen.
+<span class="preview"> Die Sprachunterstützungsfunktion von rechts nach links ist im Rahmen des Programms für frühe Anwender verfügbar. Sie können von Ihrer offiziellen E-Mail-ID aus an aem-forms-early-adopter-program@adobe.com schreiben, um dem frühen Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern. </span>
+
+AEM Forms bietet vorkonfiguriert Unterstützung für die Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (it), Deutsch (de), Japanisch (ja), brasilianisches Portugiesisch (pt-BR), Chinesisch (zh-CN), Chinesisch – Taiwan (zh-TW) und Koreanisch (ko-KR). Sie können auch Unterstützung für weitere Gebietsschemata hinzufügen, wie Hindi(hi_IN). Sie können Adaptive Forms auch in einer RTL-Sprache (Right-to-Left) wie Arabisch, Persisch und Urdu präsentieren, indem Sie diese Gebietsschemata hinzufügen.
 
 ## Wie wird das Gebietsschema für ein adaptives Formular ausgewählt?
 
@@ -171,7 +173,7 @@ Führen Sie die folgenden Schritte aus, um eine Vorschau eines adaptiven Formula
 * Adobe empfiehlt die Erstellung eines Übersetzungsprojekts nach der Erstellung eines adaptiven Formulars.
 
 * Wenn neue Felder in einem vorhandenen adaptiven Formular hinzugefügt werden:
-   * **Für maschinelle Übersetzung**[: Erstellen Sie das Wörterbuch neu und führen Sie das Übersetzungsprojekt aus](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). Felder, die einem adaptiven Formular nach dem Erstellen eines Übersetzungsprojekts hinzugefügt wurden, bleiben unübersetzt.
+   * **Für maschinelle Übersetzung**: Erstellen Sie das Wörterbuch erneut und [das Übersetzungsprojekt ausführen](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). Felder, die einem adaptiven Formular nach dem Erstellen eines Übersetzungsprojekts hinzugefügt wurden, bleiben unübersetzt.
    * **für die menschliche Übersetzung**: Exportieren Sie das Wörterbuch über die Benutzeroberfläche unter `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Aktualisieren Sie das Wörterbuch für die neu hinzugefügten Felder und laden Sie es hoch.
 
 ## Weitere Informationen

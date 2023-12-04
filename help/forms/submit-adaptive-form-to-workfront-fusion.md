@@ -3,15 +3,17 @@ title: Integration von Adobe Workfront Fusion mit AEM Forms Submission
 description: Mit Adobe Workfront Fusion können Sie sich auf neue Aufgaben konzentrieren, anstatt sich auf sich wiederholende Aufgaben zu konzentrieren. Sie können Adobe Workfront Fusion über die Formularübermittlung mit einem adaptiven Formular verbinden.
 keywords: Senden Sie ein adaptives Formular an Adobe Workfront Fusion, Integration von Adobe Workfront Fusion mit AEM Forms Submission, Adobe Workfront Fusion mit AEM Forms, Workfront Fusion mit AEM Forms, Verbinden von Workfront Fusion mit AEM Forms, AEM Forms und Workfront Fusion, Wie verbinden Sie Workfront Fusion mit AEM Forms? Verbinden Sie Workfront Fusion mit einem Formular?
 topic-tags: author, developer
-source-git-commit: b1a5c321d7b765a53c1c38fff9888eb22172edae
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1242'
 ht-degree: 4%
 
 ---
 
 
 # Senden eines adaptiven Formulars an Adobe Workfront Fusion
+
+<span class="preview"> Die Funktion ist im Rahmen des Programms für frühe Anwender verfügbar. Sie können von Ihrer offiziellen E-Mail-ID aus an aem-forms-early-adopter-program@adobe.com schreiben, um dem frühen Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern. </span>
 
 [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automatisiert die Wiederholung der gleichen Aufgaben, wie z. B. Workflows zur Dokumentenvalidierung, E-Mail-Filterung und -Sortierung, sodass Sie sich auf neue Aufgaben anstatt auf wiederkehrende Aufgaben konzentrieren können. Adobe Workfront Fusion umfasst mehrere Szenarien. Ein Szenario besteht aus einer Reihe von Modulen, die die Datenübertragung zwischen Anwendungen und Webdiensten durchführen. In einem Szenario fügen Sie verschiedene Schritte (Module) hinzu, um eine Aufgabe zu automatisieren.
 
