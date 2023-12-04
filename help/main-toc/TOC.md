@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: ba7976c192e3696b1367a4f9a5bf0c320a5f258e
 workflow-type: tm+mt
-source-wordcount: '4393'
+source-wordcount: '4420'
 ht-degree: 93%
 
 ---
@@ -77,11 +77,11 @@ ht-degree: 93%
    + Wartungsversionshinweise zu AEMaaCS {#maintenance}
       + [Neueste Wartungversionshinweise](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
-         + [Neueste Wartungversionshinweise für 2023.11.0](/help/release-notes/maintenance/2023/2023.11.0.md)
-         + [Neueste Wartungversionshinweise für 2023.10.0](/help/release-notes/maintenance/2023/2023.10.0.md)
-         + [Neueste Wartungversionshinweise für 2023.9.0](/help/release-notes/maintenance/2023/2023.9.0.md)
-         + [Neueste Wartungversionshinweise für 2023.8.0](/help/release-notes/maintenance/2023/2023.8.0.md)
-         + [Neueste Wartungversionshinweise für 2023.7.0](/help/release-notes/maintenance/2023/2023.7.0.md)
+         + [Maintenance Release Notes für 2023.11.0](/help/release-notes/maintenance/2023/2023.11.0.md)
+         + [Maintenance Release Notes für 2023.10.0](/help/release-notes/maintenance/2023/2023.10.0.md)
+         + [Versionshinweise für Maintenance 2023.9.0](/help/release-notes/maintenance/2023/2023.9.0.md)
+         + [Versionshinweise für Maintenance 2023.8.0](/help/release-notes/maintenance/2023/2023.8.0.md)
+         + [Versionshinweise für Maintenance 2023.7.0](/help/release-notes/maintenance/2023/2023.7.0.md)
          + [Neueste Wartungversionshinweise für 2023.6.0](/help/release-notes/maintenance/2023/2023.6.0.md)
          + [Neueste Wartungversionshinweise für 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
          + [Neueste Wartungversionshinweise für 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
@@ -178,7 +178,7 @@ ht-degree: 93%
 + Einstieg {#onboarding}
    + [Hier beginnen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=de)
    + Tour zum Einstieg {#journey}
-      + [Onboarding-Tour Übersicht](/help/journey-onboarding/overview.md)
+      + [Übersicht über Onboarding-Tour](/help/journey-onboarding/overview.md)
       + [Onboarding-Vorbereitung](/help/journey-onboarding/preparation.md)
       + [Terminologie von AEM as a Cloud Service](/help/journey-onboarding/terminology.md)
       + [Die Admin Console](/help/journey-onboarding/admin-console.md)
@@ -314,7 +314,7 @@ ht-degree: 93%
          + [Arbeiten mit Workflows](/help/sites-cloud/authoring/workflows/overview.md)
          + [Anwenden von Workflows auf Seiten](/help/sites-cloud/authoring/workflows/applying.md)
          + [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md)
-      + Personalisierung    {#personalization}
+      + Personalisierung {#personalization}
          + [Übersicht über die Personalisierung](/help/sites-cloud/authoring/personalization/overview.md)
          + [Vorschau von Seiten mit ContextHub-Daten](/help/sites-cloud/authoring/personalization/contexthub.md)
          + [Verfassen zielgerichteter Inhalte im Targeting-Modus](/help/sites-cloud/authoring/personalization/targeted-content.md)
@@ -385,7 +385,7 @@ ht-degree: 93%
       + [Verwalten von Workflows](/help/sites-cloud/administering/workflows-administering.md)
    + Integration mit AEM as a Cloud Service {#integrations}
       + [Integration mit Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
-      + [Integration mit Adobe Analytics    Automatisierte Einrichtung](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+      + [Integration mit dem automatisierten Adobe Analytics-Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [IMS-Konfiguration zur Verwendung bei der Integration mit Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Integration mit Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Integrieren mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
@@ -504,7 +504,7 @@ ht-degree: 93%
       + [Panoramabilder](/help/assets/dynamic-media/panoramic-images.md)
       + [Sets mit gemischten Medien](/help/assets/dynamic-media/mixed-media-sets.md)
       + [Rotationssets](/help/assets/dynamic-media/spin-sets.md)
-      + [Video  in Dynamic Media](/help/assets/dynamic-media/video.md)
+      + [Video in Dynamic Media](/help/assets/dynamic-media/video.md)
       + [Karussellbanner](/help/assets/dynamic-media/carousel-banners.md)
       + [Interaktive Bilder](/help/assets/dynamic-media/interactive-images.md)
       + [Interaktive Videos](/help/assets/dynamic-media/interactive-videos.md)
@@ -542,7 +542,7 @@ ht-degree: 93%
       + [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
       + [Verwalten von Tags](/help/assets/tagging-management-assets-view.md)
    + Best Practices{#best-practices}
-      + [Best Practices für die Suche](/help/assets/search-best-practices.md)
+      + [Best Practices durchsuchen](/help/assets/search-best-practices.md)
    + Integration mit Adobe Workfront {#integrations}
       + [Integrationen mit  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Konfigurieren der Asset-Metadatenzuordnung](/help/assets/configure-asset-metadata-mapping.md)
@@ -552,7 +552,7 @@ ht-degree: 93%
       + [Aktualisieren von  [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + Integration mit Adobe Expreß {#integration-adobe-express}
-      + [AEM Assets-Add-on für Adobe Express](/help/assets/addon-adobe-express.md)
+      + [AEM Assets-Add-on für Adobe Expreß](/help/assets/addon-adobe-express.md)
 
    + Integration mit Creative Cloud {#integration-creative-cloud}
       + [Verbinden von AEM Assets mit Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
@@ -582,9 +582,10 @@ ht-degree: 93%
          + [Anzeigen und Verstehen des adaptiven Forms Analytics-Berichts](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [Integrieren eines adaptiven Formulars mit Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Einbetten eines adaptiven Formulars in eine AEM Sites-Seite](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [Einbetten eines adaptiven Formulars basierend auf Kernkomponenten in eine externe Web-Seite](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [Einbetten des adaptiven Formulars basierend auf Kernkomponenten in eine externe Webseite](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [Einbetten des adaptiven Formulars basierend auf Foundation-Komponenten in eine externe Webseite](/help/forms/embed-adaptive-form-external-web-page.md)
       + Formulardatenmodell {#use-form-data-model}
+         + [Senden eines adaptiven Formulars an Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Verbinden von AEM Forms mit Datenbank oder Datenquelle](/help/forms/data-integration.md)
          + [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md)
          + [Konfigurieren von [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
@@ -751,7 +752,7 @@ ht-degree: 93%
    + [Migration](/help/commerce-cloud/migration.md)
    + [Häufig gestellte Fragen (FAQ)](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
-   + [Erste Schritte mit Edge Delivery](/help/edge/overview.md)
+   + [Erste Schritte mit der Edge-Bereitstellung](/help/edge/overview.md)
    + [Verwenden der Edge-Bereitstellung](/help/edge/using.md)
 + Headless {#headless}
    + [Was ist ein Headless-CMS?](/help/headless/what-is-headless.md)
@@ -788,7 +789,7 @@ ht-degree: 93%
       + [Authentifizierung](/help/headless/security/authentication.md)
    + Bereitstellung {#deployment}
       + [Architektur](/help/headless/deployment/architecture.md)
-      + [Dispatcher - Endpunkte](/help/headless/deployment/dispatcher.md)
+      + [Dispatcher - Endpoints](/help/headless/deployment/dispatcher.md)
       + [Dispatcher - Zwischenspeicherung für persistente Abfragen aktivieren](/help/headless/deployment/dispatcher-caching.md)
       + [CORS-Konfiguration](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [Referrer-Filter](/help/headless/deployment/referrer-filter.md)
@@ -968,7 +969,7 @@ ht-degree: 93%
       + [Package Manager](/help/implementing/developing/tools/package-manager.md)
       + [Externalisieren von URLs](/help/implementing/developing/tools/externalizer.md)
       + [Der Repository-Browser](/help/implementing/developing/tools/repository-browser.md)
-   + Personalisierung    {#personalization}
+   + Personalisierung {#personalization}
       + [ContextHub](/help/implementing/developing/personalization/contexthub.md)
       + [Konfigurieren von ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
       + [Hinzufügen von ContextHub zu Seiten](/help/implementing/developing/personalization/adding-contexthub.md)
