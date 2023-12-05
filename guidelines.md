@@ -1,15 +1,15 @@
 ---
-source-git-commit: 8d8e5ba548c13d3d908a549f52a8b91946b35361
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 56%
+source-wordcount: '739'
+ht-degree: 51%
 
 ---
 # Richtlinien für Beiträge zur Adobe Experience Manager-Dokumentation
 
 ## Dokumentationsphilosophie
 
-Adobe Experience Manager-Benutzer arbeiten in extrem wettbewerbsorientierten Umgebungen und streben danach, digitale Erlebnisse zu erstellen, die sie von ihren Wettbewerbern abheben. Daher ist es wichtig, dass bei der Bereitstellung erweiterter neuer Tools durch Adobe in AEM diese Tools durch genaue und klare Dokumentation ergänzt werden, damit der Kunde sofort seine AEM investieren und den ROI maximieren kann.
+Adobe Experience Manager-Benutzer arbeiten in extrem wettbewerbsorientierten Umgebungen und streben danach, digitale Erlebnisse zu erstellen, die sie von ihren Wettbewerbern abheben. Daher ist es wichtig, dass Adobe bei der Bereitstellung erweiterter neuer Tools in AEM diese mit präzisen und klaren Dokumentationen ergänzt werden, damit der Kunde sofort seine AEM investieren und den ROI maximieren kann.
 
 Das Ziel der AEM-Dokumentation besteht darin, AEM-Benutzer schnellstmöglich mit der Dokumentation vertraut zu machen. Daher priorisiert das AEM Dokumentationsteam genaue und nutzbare Dokumentation und bemüht sich, diese kontinuierlich zu aktualisieren und zu verbessern.
 
@@ -19,7 +19,7 @@ Zur stetigen Verbesserung der AEM-Dokumentation ist die gesamte Community von AE
 
 ## Dokumentationsstandards
 
-Das Dokumentationsteam des Experience Managers begrüßt zwar Beiträge zur Dokumentation der Adobe, doch sollte jeder Beitrag zur AEM - entweder in Form einer Pull-Anforderung oder eines Problems - den Beitrags- und Dokumentationsstandards des Teams entsprechen.
+Während das Experience Manager-Dokumentationsteam Beiträge zur Adobe-Dokumentation begrüßt, sollte jeder Beitrag zur AEM-Dokumentation - entweder in Form einer Pull-Anforderung oder eines Problems - den Beitrags- und Dokumentationsstandards des Teams entsprechen.
 
 Beiträge, die diesen Standards nicht entsprechen, können abgelehnt werden.
 
@@ -37,7 +37,7 @@ Ausnahmen gelten für die Versionshinweise, in denen bekannte Probleme mit mögl
 
 Alle Ideen, die Sie möglicherweise zur Verbesserung der AEM-Dokumentation haben, sind als Beiträge willkommen. Kommentare, Probleme und Pull-Anfragen sind jedoch nur für *Beiträge* vorgesehen. Sie sind nicht zur Beantwortung Ihrer Fragen über die Verwendung von AEM, Implementierung Ihres AEM-Projekts oder zur Lösung technischer Probleme gedacht.
 
-Fragen zur Verwendung von AEM oder zu technischen Fehlern, die möglicherweise bei Ihnen auftreten, sollten entsprechend dem herkömmlichen Support-Prozess über das [Support-Portal für Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=de#home) gemeldet oder in der [Experience Manager-Community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?lang=de) diskutiert werden.
+Fragen zur Verwendung von AEM oder zu technischen Fehlern, die möglicherweise bei Ihnen auftreten, sollten entsprechend dem herkömmlichen Support-Prozess über das [Support-Portal für Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=de#home) gemeldet oder in der [Experience Manager-Community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de) diskutiert werden.
 
 ***AEM Dokumentationsbeiträge sind kein Ersatz für den Adobe-Support*** und Beiträge, die Antworten auf Supportfragen suchen, werden abgelehnt.
 
@@ -79,7 +79,7 @@ Denken Sie daran, dass die Leser AEM Dokumentation weltweit sind und nicht erwar
 
 Screenshots sollten mit Bedacht und nur dann verwendet werden, wenn eine Textbeschreibung nicht ausreicht.
 
-Markierungen oder andere Anmerkungen in Screenshots (wie rote Rahmen, Pfeile oder Text) sollten nicht verwendet werden. Auf diese Weise können die Screenshots in lokalisierten Versionen der Dokumentation einfacher wiederverwendet oder repliziert werden.
+Verwenden Sie keine Markierungen oder anderen Anmerkungen in Screenshots (z. B. rote Rahmen, Pfeile oder Text). Auf diese Weise können die Screenshots in lokalisierten Versionen der Dokumentation einfacher wiederverwendet oder repliziert werden.
 
 ### Versionsspezifische Verweise
 
@@ -89,4 +89,4 @@ Versuchen Sie nach Möglichkeit direkte Verweise auf eine bestimmte Version im g
 
 Das Produkt sollte immer mit seinem vollständigen Namen aufgerufen werden **Adobe Experience Manager** zum ersten Mal in einem Artikel und kann anschließend als **AEM**.
 
-Day, Day-Software, CQ und CRX sollten nur verwendet werden, wenn dies unvermeidlich ist, z. B. in Klassennamen oder bei Verweisen auf die AEM-Historie.
+Verwenden Sie Day, Day Software, CQ und CRX nur, wenn dies unvermeidlich ist, z. B. in Klassennamen oder bei Verweisen auf die AEM.

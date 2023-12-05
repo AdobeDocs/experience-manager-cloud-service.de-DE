@@ -2,10 +2,10 @@
 title: Das Inhaltskopie-Tool
 description: Mit dem Inhaltskopier-Tool können Benutzende veränderbare Inhalte bei Bedarf aus ihren Produktionsumgebungen auf AEM as a Cloud Service in niedrigere Umgebungen zu Testzwecken kopieren.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 84%
+source-wordcount: '1290'
+ht-degree: 82%
 
 ---
 
@@ -177,7 +177,7 @@ Wählen Sie dazu auf der Seite **Inhaltsaktivität kopieren** die Aktion **Abbre
 >
 >Wenn sich Ihre Umgebung aufgrund einer Stornierung in einem solchen Zustand befindet, wenden Sie sich bitte an die Adobe-Kundenunterstützung, um Unterstützung zu erhalten.
 
-### Abrufen von Protokollen {#accessing-logs}
+### Zugreifen auf Protokolle {#accessing-logs}
 
 Sie können die Protokolle sowohl auf die Quell- als auch auf die Zielumgebung für jeden abgeschlossenen Inhaltskopierprozess überprüfen.
 
@@ -196,7 +196,7 @@ Für das Werkzeug zum Kopieren von Inhalten gelten die folgenden Einschränkunge
 * Eine programmübergreifende Inhaltskopie ist nicht möglich.
 * Die Ausführung gleichzeitiger Inhaltskopievorgänge in derselben Umgebung ist nicht möglich.
 * Pro Content-Set können bis zu 50 Pfade angegeben werden. Für ausgeschlossene Pfade gibt es keine Beschränkung.
-* Das Inhaltskopie-Tool sollte nicht als Klon- oder Spiegelwerkzeug verwendet werden, da es keine verschobenen oder gelöschten Inhalte auf der Quelle verfolgen kann.
+* Verwenden Sie das Werkzeug zum Kopieren von Inhalten nicht als Klonen oder Spiegeln-Tool, da es keine verschobenen oder gelöschten Inhalte auf der Quelle verfolgen kann.
 * Das Werkzeug zum Kopieren von Inhalten verfügt über keine Versionierungsfunktion und kann geänderten Inhalt oder erstellten Inhalt in der Quellumgebung in einem Inhaltsset seit dem letzten Vorgang zum Kopieren von Inhalten nicht automatisch erkennen.
    * Um die Zielumgebung nur mit Inhaltsänderungen zu aktualisieren, die seit dem letzten Inhaltskopiervorgang vorgenommen wurden, müssen Sie ein Content-Set erstellen. Geben Sie dann die Pfade auf der Quellinstanz an, an denen seit dem letzten Inhaltskopiervorgang Änderungen vorgenommen wurden.
 * Versionsinformationen sind in einer Inhaltskopie nicht enthalten.

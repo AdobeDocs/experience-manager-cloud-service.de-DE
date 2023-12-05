@@ -5,16 +5,16 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 89%
+source-wordcount: '1138'
+ht-degree: 76%
 
 ---
 
 # Verwenden Sie den Layout-Modus, um die Größe von Komponenten für adaptive Forms zu ändern. {#use-layout-mode-to-resize-components}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/creating-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -37,7 +37,7 @@ Wählen Sie **[!UICONTROL Layout]** aus der Dropdownliste, die oben in der Autho
 
 ## Anpassen der Größe von Komponenten {#resize-components}
 
-1. Tippen Sie im Layout-Modus auf die Komponente, deren Größe geändert werden soll. Die blauen Punkte werden am Beginn und am Ende des responsiven Rasters angezeigt.
+1. Wählen Sie im Layout -Modus die Komponente aus, deren Größe geändert werden soll. Die blauen Punkte werden am Beginn und am Ende des responsiven Rasters angezeigt.
 1. Ziehen Sie die blauen Punkte mit der Maus, um die Position der Komponente im responsiven Raster zu definieren.
 
    ![Ändern der Größe mit dem Layout-Modus](assets/layout_mode_resize_new_updated1.png)
@@ -59,7 +59,7 @@ Wählen Sie **[!UICONTROL Layout]** aus der Dropdownliste, die oben in der Autho
 **Ziel**: Eine Tabellenkomponente und eine Bildkomponente sollen eingefügt und parallel in einem adaptiven Formular positioniert werden.
 
 1. Fügen Sie die Tabellen- und Bildkomponenten mit dem Modus [!UICONTROL Bearbeiten] in das adaptiven Formular ein. Die Bildkomponente wird nach der Tabellenkomponente angezeigt.
-1. Wechseln Sie in den [!UICONTROL Layout]-Modus und tippen Sie auf die Komponente [!UICONTROL Tabelle]. Die blauen Punkte zur Größenanpassung der Komponente werden in den Spalten 1 und 12 angezeigt.
+1. Wechseln zu [!UICONTROL Layout] und wählen Sie die [!UICONTROL Verzeichnis] -Komponente. Die blauen Punkte zur Größenanpassung der Komponente werden in den Spalten 1 und 12 angezeigt.
 1. Ziehen Sie den blauen Punkt in Spalte 12 in Spalte 6 des responsiven Rasters.
 
    ![Definieren des Endpunkts der Tabelle](assets/layout_mode_end_point_table_new.png)
@@ -68,13 +68,13 @@ Wählen Sie **[!UICONTROL Layout]** aus der Dropdownliste, die oben in der Autho
 
    ![Tabelle und Bild parallel im Layout-Modus](assets/table_image_parallel_new.png)
 
-   Sie können die Bildkomponente auswählen und auf die Option **[!UICONTROL In neue Zeile gleiten lassen]** tippen, die in der Symbolleiste verfügbar ist, um die Bildkomponente zur nächsten Zeile zu verschieben.
+   Sie können die Bildkomponente auswählen und die **[!UICONTROL In neue Zeile verschieben]** -Option in der Symbolleiste verfügbar, um die Bildkomponente in die nächste Zeile zu verschieben.
 
 ## Ändern der Größe von Bereichen {#resize-panels-layout-mode}
 
 Führen Sie folgende Schritte aus, wenn Sie die Größe des gesamten Bereichs statt der Größe einzelner Komponenten ändern möchten:
 
-1. Tippen Sie auf eine der Komponenten im Bereich, dessen Größe Sie ändern möchten, wählen Sie ![Übergeordnetes Element auswählen](assets/select_parent_icon.svg) aus und dann die erste Option in der Dropdownliste, wenn der Bereich der Komponente direkt übergeordnet ist.
+1. Wählen Sie eine der Komponenten im Bereich aus, deren Größe Sie ändern möchten, und wählen Sie ![Übergeordnetes Element auswählen](assets/select_parent_icon.svg)und wählen Sie die erste Option in der Dropdown-Liste aus, wenn das Bedienfeld direkt über der Komponente liegt.
 
    Die blauen Punkte werden am Beginn und am Ende des responsiven Rasters angezeigt.
 
@@ -85,13 +85,13 @@ Sie können die Schritte 1 und 2 wiederholen und mit ![Übergeordnetes Element a
 
 Führen Sie folgende Schritte aus, um die Anzahl der Spalten für einen Bereich zu definieren:
 
-1. Tippen Sie im Modus **[!UICONTROL Bearbeiten]** auf den Bereich, wählen Sie ![Konfigurieren](assets/configure-icon.svg) aus und dann **[!UICONTROL Responsiv – alles auf der Seite ohne Navigation]** aus der Dropdownliste **[!UICONTROL Bereichs-Layout]**.
+1. In **[!UICONTROL Bearbeiten]** Modus, wählen Sie das Bedienfeld aus, wählen Sie ![Konfigurieren](assets/configure-icon.svg)und wählen Sie **[!UICONTROL Responsiv - alles auf der Seite ohne Navigation]** Option aus der **[!UICONTROL Bedienfeldlayout]** Dropdown-Liste.
 
-1. Tippen Sie auf ![Speichern](assets/save_icon.svg), um die Eigenschaften zu speichern.
+1. Auswählen ![Speichern](assets/save_icon.svg) , um die Eigenschaften zu speichern.
 
-1. Tippen Sie im Modus **[!UICONTROL Layout]** auf eine der Komponenten im Bereich, wählen Sie ![Übergeordnetes Element auswählen](assets/select_parent_icon.svg) aus und dann den Bereich.
+1. Im **[!UICONTROL Layout]** -Modus eine der Komponenten im Bedienfeld auswählen, wählen Sie ![Übergeordnetes Element auswählen](assets/select_parent_icon.svg)und wählen Sie das Bedienfeld aus.
 
-1. Tippen Sie auf ![mit mehreren Spalten](assets/multi-column.svg) und wählen Sie die Spaltenanzahl aus der Dropdownliste aus. Die Anzahl der Spalten kann zwischen 1 und 12 liegen. Der Bereich wird in ein Layout mit mehreren Spalten unterteilt.
+1. Auswählen ![mehrspaltig](assets/multi-column.svg) und wählen Sie die Anzahl der Spalten aus der Dropdown-Liste aus. Die Anzahl der Spalten kann zwischen 1 und 12 liegen. Der Bereich wird in ein Layout mit mehreren Spalten unterteilt.
 
 ![mehrere Spalten im Layout-Modus](assets/multi-column-layout.png)
 
@@ -106,7 +106,7 @@ Aktivieren Sie das neue responsive Raster für Formulare, die Sie mit [!DNL Adob
 Führen Sie folgende Schritte aus, um das neue responsive Raster zu aktivieren:
 
 1. Wählen Sie **[!UICONTROL Layout]** aus der Dropdownliste, die oben neben der Option **[!UICONTROL Vorschau]** angezeigt wird. Eine Bestätigung zur Aktivierung des Layout-Modus wird angezeigt.
-1. Tippen Sie auf **[!UICONTROL Ja]**, um den **[!UICONTROL Layout]**-Modus für das Formular zu aktivieren.
+1. Auswählen **[!UICONTROL Ja]** um die **[!UICONTROL Layout]** -Modus für das Formular.
 
 ### Einbetten eines alten Fragments in ein adaptives Formular mit neuem responsivem Layout {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
@@ -116,7 +116,7 @@ Mit dem neuen responsiven Layout für adaptive Formulare können Sie ein adaptiv
 
 Wenn Sie ein Fragment mit dem neuen responsiven Layout in ein adaptives Formular mit altem responsivem Layout einbetten, fordert das System Sie dazu auf, den Layout-Modus für das Formular zu aktivieren und das Fragment erneut einzubetten.
 
-Um den Layout-Modus zu aktivieren, wählen Sie **[!UICONTROL Layout]** aus der Dropdownliste, die oben neben der Option **[!UICONTROL Vorschau]** angezeigt wird, und tippen Sie zur Bestätigung auf **[!UICONTROL Ja]**. Wählen Sie den Modus **[!UICONTROL Bearbeiten]**, um das Fragment erneut einzubetten.
+Um den Layout -Modus zu aktivieren, wählen Sie **[!UICONTROL Layout]** aus der Dropdownliste, die oben neben dem **[!UICONTROL Vorschau]** auswählen **[!UICONTROL Ja]** zur Bestätigung. Wählen Sie den Modus **[!UICONTROL Bearbeiten]**, um das Fragment erneut einzubetten.
 
 ## Deaktivieren des Layout-Modus für Formulare mit altem responsivem Layout {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
@@ -125,12 +125,12 @@ Sie können den Layout-Modus für Formulare mit altem responsivem Layout deaktiv
 Gehen Sie wie folgt vor, um den Layout-Modus zu deaktivieren:
 
 1. Wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Vorlagen]** und öffnen Sie die Vorlage, die im Formular im Modus **[!UICONTROL Bearbeiten]** verwendet wird.
-1. Wählen Sie den Formular-Container im linken Fenster aus und tippen Sie auf **[!UICONTROL Richtlinie]**.
+1. Wählen Sie den Formularcontainer im linken Bereich aus und wählen Sie **[!UICONTROL Richtlinie.]**
 
    ![Deaktivieren des Layout-Modus](assets/policy_disable_layout_mode.png)
 
-1. Tippen Sie auf die Registerkarte **[!UICONTROL Layout-Einstellungen]** und wählen Sie **[!UICONTROL Layout-Modus deaktivieren]** aus.
-1. Tippen Sie auf ![Änderungen speichern](assets/save_icon.svg), um die Vorlageneigenschaften zu speichern.
+1. Wählen Sie die **[!UICONTROL Layout-Einstellungen]** Registerkarte und wählen Sie **[!UICONTROL Layout-Modus deaktivieren]**.
+1. Auswählen ![Änderungen speichern](assets/save_icon.svg) , um die Vorlageneigenschaften zu speichern.
 
 ## Siehe auch {#see-also}
 

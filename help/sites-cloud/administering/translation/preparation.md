@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie bei der Entwicklung mehrsprachiger Websites I
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 83%
+source-wordcount: '756'
+ht-degree: 73%
 
 ---
 
@@ -68,8 +68,8 @@ Erstellen Sie einen Sprachstamm als Stammseite einer Sprachkopie, die die Sprach
 
 Um den Sprachstamm zu erstellen, erstellen Sie eine Seite und verwenden Sie einen ISO-Sprach-Code als Wert für die Eigenschaft **Name**. Der Sprach-Code muss eines der folgenden Formate aufweisen:
 
-* `<language-code>` - Der unterstützte Sprach-Code ist ein Code mit zwei Buchstaben gemäß ISO-639-1, zum Beispiel `en`.
-* `<language-code>_<country-code>` oder `<language-code>-<country-code>` – Der unterstützte Länder-Code ist ein Code mit zwei Groß- oder zwei Kleinbuchstaben gemäß ISO 3166, zum Beispiel `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>` - Der unterstützte Sprachcode ist ein aus zwei Buchstaben bestehender Code gemäß ISO-639-1, beispielsweise `en`.
+* `<language-code>_<country-code>` oder `<language-code>-<country-code>` - Der unterstützte Ländercode ist ein aus zwei Buchstaben bestehender Code mit Kleinbuchstaben oder Großbuchstaben gemäß ISO 3166, beispielsweise `en_US`, `en_us`, `en_GB`, `en-gb`.
 
 Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen Website. Beispielsweise verfügt die Stammseite der französischen Sprachkopie der WKND-Website über `fr` als die Eigenschaft **Name**. Die **Name** -Eigenschaft wird als Name des Seitenknotens im Repository verwendet und bestimmt daher den Pfad der Seite (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
@@ -80,7 +80,7 @@ Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen 
    ![Seite erstellen](../assets/create-page.png)
 
 1. Wählen Sie die Seitenvorlage aus und wählen Sie dann **Nächste**.
-1. Geben Sie in den Feldtyp **Name** den Länder-Code im Format `<language-code>` oder `<language-code>_<country-code>` ein, z. B. `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Geben Sie einen Titel für die Seite ein.
+1. Im **Name** Feldtyp Ländercode im Format `<language-code>` oder `<language-code>_<country-code>`, beispielsweise `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Geben Sie einen Titel für die Seite ein.
 
    ![Sprachstammseite erstellen](../assets/create-language-root.png)
 
@@ -102,7 +102,7 @@ Verwenden Sie die folgende Ansicht, um die Sprachkopien für eine Seite mithilfe
 
 ## Sprachkopien auf mehreren Ebenen {#multiple-levels}
 
-Sie können Sprachstämme jetzt unter Knoten gruppieren, z. B. nach Region. Diese werden weiterhin als Stämme von Sprachkopien erkannt.
+Sprachstämme können auch unter Knoten gruppiert werden, z. B. nach Region, wobei sie weiterhin als Wurzeln von Sprachkopien erkannt werden.
 
 ```text
 /content

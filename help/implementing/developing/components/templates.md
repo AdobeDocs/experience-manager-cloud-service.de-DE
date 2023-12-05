@@ -2,10 +2,10 @@
 title: Seitenvorlagen
 description: Seitenvorlagen werden beim Erstellen einer Seite verwendet, die als Basis für die neue Seite verwendet wird
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3278'
-ht-degree: 93%
+source-wordcount: '3267'
+ht-degree: 92%
 
 ---
 
@@ -489,7 +489,6 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
    * Durch Festlegen der Statuseigenschaft des Knotens `jcr:content`
 
       * Zum Beispiel unter:
-
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Definieren Sie die Eigenschaft:
@@ -502,9 +501,8 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
 
    * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
    * Legen Sie die folgende Eigenschaft fest:
-
      `cq:allowedTemplates`
-Im `jcr:content`-Knoten der erforderlichen Verzweigung.
+Im `jcr:content` -Knoten der erforderlichen Verzweigung.
 
    Beispielsweise mit dem Wert:
 
@@ -599,4 +597,4 @@ Um zu begrenzen, welche Vorlagen zum Erstellen von untergeordneten Seiten unter 
 
 Sie können die `cq:allowedTemplates` -Eigenschaft auf der Vorlage  `jcr:content` -Knoten, damit diese Konfiguration auf alle erstellten Seiten angewendet wird, die diese Vorlage verwenden.
 
-Wenn Sie mehrere Einschränkungen hinzufügen möchten, z. B. bezüglich der Vorlagenhierarchie, können Sie die Eigenschaften `allowedParents/allowedChildren` auf der Vorlage verwenden. Sie können dann explizit angeben, dass Seiten, die aus einer Vorlage T erstellt wurden, übergeordnet/untergeordnet von Seiten sein müssen, die aus einer Vorlage T erstellt wurden.
+Wenn Sie mehrere Einschränkungen hinzufügen möchten, z. B. bezüglich der Vorlagenhierarchie, können Sie die Eigenschaften `allowedParents/allowedChildren` der Vorlage verwenden. Sie können dann explizit angeben, dass Seiten, die aus einer Vorlage T erstellt wurden, übergeordnet/untergeordnet von Seiten sein müssen, die aus einer Vorlage T erstellt wurden.

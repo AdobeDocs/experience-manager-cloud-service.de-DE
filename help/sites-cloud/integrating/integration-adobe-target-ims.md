@@ -2,9 +2,9 @@
 title: IMS-Konfiguration zur Verwendung bei der Integration mit Adobe Target
 description: Erfahren Sie mehr über die IMS-Konfiguration zur Verwendung bei der Integration mit Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '854'
 ht-degree: 93%
 
 ---
@@ -78,10 +78,8 @@ Adobe-Entwicklerkonsolen-Projekt (Integration) mit Adobe Target, das AEM verwend
 1. Alle vorhandenen Projekte werden angezeigt. Wählen Sie **Neues Projekt erstellen** aus. Position und Verwendung hängen von Folgendem ab:
 
    * Wenn Sie noch kein Projekt haben, befindet sich **Neues Projekt erstellen** unten in der Mitte.
-
      ![Neues Projekt erstellen – Erstes Projekt](assets/integration-target-ims-02.png)
    * Wenn Sie bereits über vorhandene Projekte verfügen, werden diese aufgelistet und **Neues Projekt erstellen** wird oben rechts angezeigt.
-
      ![Neues Projekt erstellen – Mehrere Projekte](assets/integration-target-ims-03.png)
 
 
@@ -285,7 +283,7 @@ When configuring the Tenant ID and Client Code fields, be aware of that for most
 >
 >For legacy purposes, you can also enter different values in the Tenant ID and the Client Code fields.
 
-In both cases, be aware that:
+In both cases, note the following:
 
 * By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field.
 * You have the option to change the default Tenant ID set.

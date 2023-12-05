@@ -3,10 +3,10 @@ title: Wie können wir ein auf Kernkomponenten basierendes adaptives Formular ü
 description: Erfahren Sie, wie Sie ein Formulardatenmodell in AEM Forms erstellen, das Modell mit Beispieldaten und -diensten testen und verschiedene Optionen für ein Modell konfigurieren.
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 93%
+source-wordcount: '884'
+ht-degree: 90%
 
 ---
 
@@ -16,9 +16,9 @@ Mit lokalisierten Formularen können Sie eine größere Zielgruppe über Länder
 
 ## Übersetzen eines adaptiven Formulars und Datensatzdokuments mithilfe maschineller Übersetzung {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
-Der Service für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adaptiven Formulare und [Datensatzdokumente](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service ist für die Verwendung einer Testversion von Microsoft Translator für die maschinelle Übersetzung vorkonfiguriert. Führen Sie zum Aktivieren des Dienstes für Ihre adaptiven Formulare und Datensatzdokumente folgende Schritte durch:
+Der Service für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adaptiven Formulare und [Datensatzdokumente](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service ist für die Verwendung einer Testversion von Microsoft Translator für die maschinelle Übersetzung vorkonfiguriert. Führen Sie zum Aktivieren des Service für Ihre adaptiven Formulare und Datensatzdokumente folgende Schritte durch:
 
-1. Wählen Sie in der Benutzeroberfläche von AEM Forms ein Formular aus und tippen Sie auf die Option **[!UICONTROL Wörterbuch hinzufügen]**.
+1. Wählen Sie auf der AEM Forms-Benutzeroberfläche ein Formular aus und wählen Sie die **[!UICONTROL Wörterbuch hinzufügen]** -Option.
 1. Auf dem Bildschirm „Wörterbuch zum Übersetzungsprojekt hinzufügen“ für die Option **[!UICONTROL Projekt]**
 
    * Wählen Sie zum Erstellen eines Übersetzungsprojekts die Option **[!UICONTROL Neues Übersetzungsprojekt erstellen]** aus und legen Sie im Feld **Projekttitel** den Titel fest. Beispiel: `Government Reference Site - German locale.`
@@ -49,7 +49,7 @@ Der Service für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adapti
    [Document of Record settings](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Customize the branding information of the document of record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) and ensure that the browser locale is set to the same language to which you have localized the Adaptive Form using machine language. The browser locale helps localize the branding information in the document of record.
-1. To view the localized document of record, tap Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
+1. To view the localized document of record, select Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
 
 -->
 
@@ -61,7 +61,7 @@ Für die Übersetzung wird den professionellen Übersetzerinnen oder Übersetzer
 
 Führen Sie die folgenden Schritte zum Lokalisieren eines Formulars und seines Datensatzdokuments mit menschlicher Übersetzung durch:
 
-1. Wählen Sie in der Benutzeroberfläche von AEM Forms ein Formular aus und tippen Sie auf die Option **[!UICONTROL Wörterbuch hinzufügen]**.
+1. Wählen Sie auf der AEM Forms-Benutzeroberfläche ein Formular aus und wählen Sie die **[!UICONTROL Wörterbuch hinzufügen]** -Option.
 1. Auf dem Bildschirm „Wörterbuch zum Übersetzungsprojekt hinzufügen“ für die Option **[!UICONTROL Projekt]**
 
    * Wählen Sie zum Erstellen eines Übersetzungsprojekts die Option **[!UICONTROL Neues Übersetzungsprojekt erstellen]** aus und legen Sie im Feld **Projekttitel** den Titel fest. Beispiel: `Government Reference Site - German locale.`

@@ -3,9 +3,9 @@ title: Konfigurieren von OSGi für Adobe Experience Manager as a Cloud Service
 description: OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen Werten
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3317'
+source-wordcount: '3265'
 ht-degree: 97%
 
 ---
@@ -176,7 +176,7 @@ OSGi-Konfigurationsdateien im JSON-Format können manuell direkt im AEM-Projekt 
 1. Öffnen Sie in Ihrer IDE das `ui.apps`-Projekt, suchen oder erstellen Sie den Konfigurationsordner (`/apps/.../config.<runmode>`), der für die Ausführungsmodi bestimmt ist, auf die die neue OSGi-Konfiguration wirken soll.
 1. Erstellen Sie in diesem Konfigurationsordner eine `<PID>.cfg.json`-Datei. Die PID ist die persistente Identität der OSGi-Komponente. Normalerweise ist dies der vollständige Klassenname der OSGi-Komponentenimplementierung. Beispiel:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-Beachten Sie, dass die Werksdateinamen der OSGi-Konfiguration die `<factoryPID>-<name>.cfg.json`-Namenskonvention verwenden.
+Die Werksdateinamen der OSGi-Konfiguration verwenden die `<factoryPID>-<name>.cfg.json` Namenskonvention
 1. Öffnen Sie die neue `.cfg.json`-Datei und definieren Sie die Schlüssel/Wert-Kombinationen für die OSGi-Eigenschafts- und -Wertpaare entsprechend dem [JSON OSGi-Konfigurationsformat](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. Speichern Sie Ihre Änderungen in der neuen `.cfg.json`-Datei
 1. Fügen Sie Ihre neue OSGi-Konfigurationsdatei hinzu und übertragen Sie sie auf Git
@@ -191,14 +191,14 @@ Die AEM Web-Konsole von AEM SDK QuickStart Jar kann verwendet werden, um OSGi-Ko
 
 1. Melden Sie sich bei der AEM-Web-Konsole von AEM SDK Quickstart Jar unter `https://<host>:<port>/system/console` als Admin-Benutzerin bzw. -Benutzer an.
 1. Navigieren Sie zu **OSGi** > **Konfiguration**
-1. Zur Konfiguration suchen Sie die OSGi-Komponente und tippen Sie zum Bearbeiten auf ihren Titel.
+1. Suchen Sie zum Konfigurieren die OSGi-Komponente und wählen Sie den Titel aus, den Sie bearbeiten möchten
    ![OSGi-Konfiguration](./assets/configuring-osgi/configuration.png)
 1. Bearbeiten Sie die OSGi-Konfigurationseigenschaftswerte nach Bedarf über die Web-Benutzeroberfläche
 1. Bewahren Sie die PID (Persistent Identity) an einem sicheren Ort auf. Diese wird später zum Generieren der OSGi-Konfigurations-JSON verwendet.
-1. Tippen Sie auf „Speichern“
+1. Speichern
 1. Gehen Sie zu „OSGi“ > „OSGi Installer-Konfigurationsdrucker“
 1. Fügen Sie die in Schritt 5 kopierte PID ein. Stellen Sie sicher, dass das Serialisierungsformat auf „OSGi Configurator JSON“ eingestellt ist
-1. Tippen Sie auf „Drucken“.
+1. Drucken auswählen
 1. Die OSGi-Konfiguration im JSON-Format wird im Abschnitt „Serialisierte Konfigurationseigenschaften“ angezeigt
    ![OSGi Installer-Konfigurationsdrucker](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. Öffnen Sie in Ihrer IDE das `ui.apps`-Projekt, suchen oder erstellen Sie den Konfigurationsordner (`/apps/.../config.<runmode>`), der für die Ausführungsmodi bestimmt ist, auf die die neue OSGi-Konfiguration wirken soll.
@@ -316,7 +316,6 @@ Wenn eine OSGi-Eigenschaft unterschiedliche Werte für Autoren- und Veröffentli
 * Es müssen getrennte `config.author`- und `config.publish`-OSGi-Ordner verwendet werden, wie im [Abschnitt zur Ausführungsmodus-Auflösung](#runmode-resolution) beschrieben.
 * Es gibt zwei Möglichkeiten, unabhängige Variablennamen zu erstellen:
    * Die erste Option, die empfohlen wird: Verwenden Sie in allen OSGi-Ordnern (z. B. `config.author` und `config.publish`), die dazu deklariert sind, unterschiedliche Werte zu definieren, denselben Variablennamen. Beispiel
-
      `$[env:ENV_VAR_NAME;default=<value>]`, wobei der Standardwert dem Standardwert für diese Ebene (Autor oder Veröffentlichung) entspricht. Beim Festlegen der Umgebungsvariablen über die [Cloud Manager-API](#cloud-manager-api-format-for-setting-properties) oder einen Client sollten Sie mithilfe des Parameters „service“ zwischen den Ebenen unterscheiden, wie in dieser [API-Referenzdokumentation](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) beschrieben. Der Parameter „service“ bindet den Wert der Variablen an die entsprechende OSGi-Ebene. Es kann „author“, „publish“ oder „preview“ sein.
    * Die zweite Option besteht darin, mithilfe eines Präfixes wie `author_<samevariablename>` und `publish_<samevariablename>` eindeutige Variablen zu deklarieren.
 
@@ -343,11 +342,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -357,11 +356,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -386,11 +385,11 @@ config.stage
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -400,11 +399,11 @@ config.prod
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val2",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -414,11 +413,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -443,11 +442,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -457,11 +456,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -484,11 +483,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -498,11 +497,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "$[env:my_var1;default=val1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>

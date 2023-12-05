@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 94%
+source-wordcount: '533'
+ht-degree: 90%
 
 ---
 
@@ -24,7 +24,7 @@ In diesem Artikel wird die Vorgehensweise zum Einsetzen des AEM-Übersetzungs-Wo
 
 Der Service für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adaptiven Formulare und Datensatzdokumente. [!DNL AEM Forms] ist für die Verwendung einer Testversion von [!DNL Microsoft Translator] für maschinelle Übersetzung vorkonfiguriert. Führen Sie zum Aktivieren des Service für Ihre adaptiven Formulare und Datensatzdokumente folgende Schritte durch:
 
-1. Wählen Sie auf der Benutzeroberfläche von [!DNL AEM Forms] ein Formular aus und tippen Sie auf die Option **Wörterbuch hinzufügen**.
+1. Im [!DNL AEM Forms] Benutzeroberfläche, wählen Sie ein Formular aus und wählen Sie die **Wörterbuch hinzufügen** -Option.
 1. Wählen Sie auf dem Bildschirm **Wörterbuch zum Übersetzungsprojekt hinzufügen** die Option **Neues Übersetzungsprojekt erstellen** oder **Zu vorhandenem Übersetzungsprojekt hinzufügen**.
 1. Geben Sie im Feld **Projekttitel** den Titel an. Beispiel: `Government Reference Site - German locale.`
 1. Geben Sie im Feld **Zielsprachen** ein Gebietsschema an (beispielsweise `German(de)`) und klicken Sie auf **Fertig**. Sie können mehrere Gebietsschemas angeben. Das Formular wird in alle im Feld **Zielsprachen** angegebenen Gebietsschemas übersetzt.
@@ -48,7 +48,7 @@ Der Service für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adapti
 [Einstellungen für Datensatzdokumente](generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Passen Sie die Branding-Informationen des Datensatzdokuments an](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) und stellen Sie sicher, dass für das Browsergebietsschema die Sprache eingestellt ist, für die Sie das adaptive Formular mithilfe maschineller Übersetzung lokalisiert haben. Das Browsergebietsschema hilft beim Lokalisieren der Branding-Informationen im Datensatzdokument.
-1. Um das lokalisierte Datensatzdokument anzuzeigen, tippen Sie auf „Vorschau generieren“. Die PDF-Datensatzdokumentdatei wird erstellt und in einem neuen Browser-Tab geöffnet.
+1. Um das lokalisierte Datensatzdokument anzuzeigen, wählen Sie Vorschau generieren aus. Die PDF-Datensatzdokumentdatei wird erstellt und in einem neuen Browser-Tab geöffnet.
 
 <!-- ## Localizing an Adaptive Form and its Document of Record using Human Translation {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 

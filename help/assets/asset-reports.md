@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 100%
+source-wordcount: '935'
+ht-degree: 96%
 
 ---
 
@@ -105,7 +105,7 @@ Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optiona
    ![Auswählen oder Aufheben der Auswahl von Berichtsspalten](assets/custom_columns.png)
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
-1. Auf der Seite [!UICONTROL Asset-Berichte] basiert der angezeigte Reporting-Status auf dem aktuellen Status des Berichtauftrags, zum Beispiel [!UICONTROL Erfolg], [!UICONTROL Fehlgeschlagen], [!UICONTROL In Warteschlange] oder [!UICONTROL Geplant]. Derselbe Status wird auch im Benachrichtigungseingang angezeigt. Klicken Sie zur Ansicht der Berichtsseite auf den Berichts-Link. Alternativ wählen Sie den Bericht aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Anzeigen]**.
+1. Im [!UICONTROL Asset-Berichte] -Seite, basiert der Berichterstellungsstatus beispielsweise auf dem aktuellen Status des Berichtauftrags, [!UICONTROL Erfolg], [!UICONTROL Fehlgeschlagen], [!UICONTROL In Warteschlange]oder [!UICONTROL Geplant]. Derselbe Status wird auch im Benachrichtigungseingang angezeigt. Klicken Sie zur Ansicht der Berichtsseite auf den Berichts-Link. Alternativ wählen Sie den Bericht aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Anzeigen]**.
 
    ![Ein generierter Bericht](assets/report_page.png)
 
@@ -115,7 +115,7 @@ Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optiona
    >
    >Sie können Berichte auf der Grundlage der Ereignisse erstellen, die in den letzten 360 Tagen generiert wurden. Experience Manager bewahrt die Benutzer-ID-Daten 30 Tage lang auf.
 
-## Hinzufügen benutzerdefinierter Spalten zu Berichten {#add-custom-columns}
+## Benutzerdefinierte Spalten zu Berichten hinzufügen {#add-custom-columns}
 
 Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre speziellen Anforderungen anzuzeigen:
 

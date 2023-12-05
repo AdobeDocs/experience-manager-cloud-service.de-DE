@@ -4,10 +4,10 @@ description: Hier erfahren Sie anhand einer React-Beispiel-App, wie Sie Inhalte 
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 87%
+source-wordcount: '1017'
+ht-degree: 85%
 
 ---
 
@@ -69,7 +69,7 @@ Nachdem Sie jetzt wissen, wie eine Überschrift in der App geändert wird, versu
 
 1. Kehren Sie von der Vorschau zur Browser-Registerkarte des Inhaltsfragment-Editors zurück.
 
-1. Sie müssen zur richtigen Stelle im Inhaltsfragment-Editor zurückkehren. Die Breadcrumbs oben links im Editor zeigen an, wo Sie sich in der Inhaltshierarchie befinden. Tippen oder klicken Sie in den Breadcrumbs auf **Mtn Biker in Canyon**, um zu dieser Seite zurückzukehren.
+1. Sie müssen zur richtigen Stelle im Inhaltsfragment-Editor zurückkehren. Die Breadcrumbs oben links im Editor zeigen an, wo Sie sich in der Inhaltshierarchie befinden. Auswählen **Mtn Biker in Canyon** in den Breadcrumbs, um zu dieser Seite zurückzukehren.
 
    ![Breadcrumbs](assets/do-not-localize/swap-image-2.png)
 

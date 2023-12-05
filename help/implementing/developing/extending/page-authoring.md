@@ -2,10 +2,10 @@
 title: Anpassung des Seiten-Authorings
 description: Erfahren Sie mehr über die Mechanismen, die AEM as a Cloud Service bietet, um die Seitenbearbeitungsfunktionen anzupassen.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 34%
+source-wordcount: '937'
+ht-degree: 24%
 
 ---
 
@@ -68,12 +68,12 @@ Den Code dieser Seite finden Sie unter [GitHub.](https://github.com/Adobe-Market
 
 Beim Erstellen von Seiten muss der Benutzer häufig aus den Ressourcen in einer Liste auswählen.
 
-Um die Liste in einer angemessenen Größe und auch für den Anwendungsfall relevant zu halten, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Wenn z. B. der Benutzer durch die `pathbrowser`-Granite-Komponente den Pfad zu einer bestimmten Ressource auswählen kann, können die gezeigten Pfade auf folgende Art gefiltert werden:
+Um die Liste in einer angemessenen Größe und auch für den Anwendungsfall relevant zu halten, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Wenn beispielsweise die Variable `pathbrowser` Die Granite-Komponente wird verwendet, um dem Benutzer die Auswahl des Pfads zu einer bestimmten Ressource zu ermöglichen. Die angezeigten Pfade können wie folgt gefiltert werden:
 
 * Implementieren Sie das benutzerdefinierte Prädikat, indem Sie die Schnittstelle [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/predicate/package-summary.html) implementieren.
 * Geben Sie einen Namen für die Eigenschaft an und verwenden Sie diesen Namen, wenn Sie `pathbrowser` verwenden.
 
-Weitere Details zum Erstellen einer benutzerdefinierten Eigenschaft finden Sie in [diesem Artikel.](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
+Weitere Informationen zum Erstellen eines benutzerdefinierten Prädikats finden Sie unter [diesen Artikel.](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
 
 ## Hinzufügen einer neuen Aktion zu einer Komponenten-Symbolleiste {#add-new-action-to-a-component-toolbar}
 
@@ -109,7 +109,7 @@ Bei der Standardinstallation von AEM:
 1. Zusätzliche Konfigurationsdetails des Editors können mit einer `config` Knoten, der Konfigurationen enthält, und ein `plugin` -Knoten, der die erforderlichen Details zur Plug-in-Konfiguration enthält.
 
 
-Das folgende Beispiel zeigt die Definition von Seitenverhältnissen für das Bildbeschneidungs-Plug-in der image-Komponente.
+Im Folgenden finden Sie ein Beispiel zum Definieren von Seitenverhältnissen für das Bildzuschnitt-Plug-in der Bildkomponente.
 
 ```xml
    <cq:inplaceEditing
@@ -176,9 +176,9 @@ Der vorkonfigurierte Workflow, **Aktivierungsanfrage**:
 
 Um bei dieser Aktivierung ein benutzerdefiniertes Verhalten zu erzielen, können Sie die **Aktivierungsanfrage** workflow:
 
-1. Überlagern Sie in `/apps` den **Sites**-Assistenten `/libs/wcm/core/content/common/managepublicationwizard`
+1. In `/apps` überlagern **Sites** Assistent `/libs/wcm/core/content/common/managepublicationwizard`
 
-   * Dadurch wird die folgende gemeinsame Instanz überlagert `/libs/cq/gui/content/common/managepublicationwizard`.
+   * Dadurch wird die allgemeine Instanz von `/libs/cq/gui/content/common/managepublicationwizard`.
 
-1. Aktualisieren Sie das Workflow-Modell und je nach Bedarf relevante Konfigurationen/Skripte.
+1. Aktualisieren Sie das Workflow-Modell und die zugehörigen Konfigurationen/Skripte nach Bedarf.
 1. Entfernen Sie die Berechtigung zum `replicate` Aktion aller entsprechenden Benutzer für alle relevanten Seiten. Damit dieser Workflow als Standardaktion ausgelöst wird, wenn ein Benutzer eine Seite veröffentlicht (oder repliziert).

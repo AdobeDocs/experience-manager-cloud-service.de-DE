@@ -2,10 +2,10 @@
 title: Entfernen des generischen Lucene-Index
 description: Erfahren Sie mehr über die geplante Entfernung des generischen Lucene-Index und darüber, wie Sie betroffen sein könnten.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 87%
+source-wordcount: '1345'
+ht-degree: 85%
 
 ---
 
@@ -22,7 +22,7 @@ In AEM sind Volltextabfragen diejenigen, die die folgenden Funktionen verwenden:
 
 Solche Abfragen können keine Ergebnisse ohne Verwendung eines Index zurückgeben. Im Gegensatz zu Abfragen, die nur Pfad- oder Eigenschaftsbeschränkungen enthalten, liefert eine Abfrage mit einer Volltextbeschränkung, für die kein Index gefunden werden kann (und daher eine Umkehrung durchgeführt wird), immer null Ergebnisse.
 
-Den generischen Lucene-Index (`/oak:index/lucene-*`) gibt es seit AEM 6.0/Oak 1.0, um eine Volltextsuche über den Großteil der Repository-Hierarchie hinweg zu ermöglichen, obwohl einige Pfade, wie z. B. `/jcr:system` und `/var` immer ausgeschlossen wurden. Dieser Index wurde jedoch weitgehend durch Indizes für spezifischere Knotentypen ersetzt (z. B. `damAssetLucene-*` für den Knotentyp `dam:Asset`), die sowohl Volltext- als auch Eigenschaftensuchen unterstützen.
+Den generischen Lucene-Index (`/oak:index/lucene-*`) gibt es seit AEM 6.0/Oak 1.0, um eine Volltextsuche über den Großteil der Repository-Hierarchie hinweg zu ermöglichen, obwohl einige Pfade, wie z. B. `/jcr:system` und `/var` immer ausgeschlossen wurden. Dieser Index wurde jedoch weitgehend durch Indizes für spezifischere Knotentypen ersetzt (z. B. `damAssetLucene-*` für die `dam:Asset` Knotentyp), die sowohl Volltext- als auch Eigenschaftensuchen unterstützen.
 
 In AEM 6.5 wurde der generische Lucene-Index als veraltet markiert, was darauf hinweist, dass er in zukünftigen Versionen entfernt wird. Seither wurde eine WARNUNG protokolliert, wenn der Index verwendet wurde, wie durch das folgende Protokoll-Snippet veranschaulicht:
 

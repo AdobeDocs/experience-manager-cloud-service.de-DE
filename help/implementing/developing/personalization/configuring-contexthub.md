@@ -2,10 +2,10 @@
 title: Konfigurieren von ContextHub
 description: Erfahren Sie, wie Sie ContextHub konfigurieren, ein Framework zum Speichern, Bearbeiten und Präsentieren von Kontextdaten.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1629'
-ht-degree: 87%
+source-wordcount: '1609'
+ht-degree: 85%
 
 ---
 
@@ -53,7 +53,7 @@ Fügen Sie einen UI-Modus hinzu, um verwandte ContextHub-Module zu gruppieren. W
 1. Geben Sie Werte für die folgenden Eigenschaften an:
 
    * UI-Modustitel: Der Titel, mit dem der UI-Modus identifiziert wird.
-   * Modussymbol: Die Auswahl für das zu verwendende [Coral-UI-Symbol](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons), z. B. `coral-Icon--user`.
+   * Modussymbol: Die Auswahl für [Coral-UI-Symbol](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) , um beispielsweise `coral-Icon--user`
    * Aktiviert: Wählen Sie diese Option aus, um den UI-Modus in der ContextHub-Symbolleiste anzuzeigen.
 
 1. Wählen Sie Speichern aus.
@@ -78,7 +78,7 @@ Die Eigenschaften des UI-Moduls enthalten eine Detailkonfiguration, in der Sie W
 
 1. Wählen Sie in der Seitenleiste &quot;Experience Manager&quot;Tools > Sites > ContextHub aus.
 1. Wählen Sie den Konfigurations-Container aus, dem Sie ein UI-Modul hinzufügen möchten.
-1. Klicken oder tippen Sie auf die ContextHub-Konfiguration, der Sie das UI-Modul hinzufügen möchten.
+1. Wählen Sie die ContextHub-Konfiguration aus oder geben Sie sie ein, der Sie das UI-Modul hinzufügen möchten.
 1. Wählen Sie den UI-Modus aus, dem Sie das UI-Modul hinzufügen.
 1. Wählen Sie die Schaltfläche Erstellen und dann ContextHub-UI-Modul (generisch).
 

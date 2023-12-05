@@ -2,10 +2,10 @@
 title: Erste Schritte mit AEM Headless as a Cloud Service
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Voraussetzungen für AEM Headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3093'
-ht-degree: 94%
+source-wordcount: '3057'
+ht-degree: 93%
 
 ---
 
@@ -82,7 +82,7 @@ Inhaltsfragmente enthalten strukturierten Inhalt und können im JSON-Format bere
 
 Um Inhalte „headless“ zu ändern, bietet AEM zwei robuste APIs.
 
-* Mit der GraphQL-API können Sie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellen.
+* Mit der GraphQL-API können Sie Anforderungen für den Zugriff auf Inhaltsfragmente und deren Bereitstellung erstellen.
 * Mit der Assets-REST-API können Sie Inhaltsfragmente (und andere Assets) erstellen und ändern.
 
 Sie erfahren mehr über diese APIs und wie Sie sie in einem späteren Teil der Journey ohne Kopfzeilenfunktion AEM. Oder siehe [Zusätzliche Ressourcen](#additional-resources) unten finden Sie weitere Dokumentationen.
@@ -181,7 +181,7 @@ Erstellen Sie einen Plan zur benötigten Übersetzung von Inhalten.
 
 Verschaffen Sie sich Klarheit über Ihren Workflow zur Aktualisierung von Inhalten. Wie sieht der Genehmigungsprozess aus, den das System unterstützen muss? Können AEM-Workflows genutzt werden, um diesen Prozess zu automatisieren?
 
-Beachten Sie, dass Ihre [Inhaltshierarchie](#content-hierarchy) genutzt werden kann, um die Übersetzung zu vereinfachen.
+Ihre [Inhaltshierarchie](#content-hierarchy) kann verwendet werden, um die Übersetzung zu erleichtern.
 
 Im Abschnitt [Zusätzliche Ressourcen](#additional-resources) finden Sie zusätzliche Dokumentation zu AEM-Workflows und Übersetzungs-Tools sowie Links zur AEM Headless-Übersetzungs-Tour.
 

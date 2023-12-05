@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie AEM sofort mit Microsoft Translator verbinden
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 84%
+source-wordcount: '487'
+ht-degree: 81%
 
 ---
 
@@ -26,7 +26,7 @@ Erstellen Sie eine Konfiguration für den [Microsoft Translator](https://www.mic
 | Eigenschaft | Beschreibung |
 |---|---|
 | Übersetzungsetikett | Der Anzeigename für den Übersetzungs-Service |
-| Übersetzungszuteilung | (Optional) Für nutzergenerierte Inhalte wird die Zuteilung neben übersetzten Texten angezeigt, beispielsweise `Translations by Microsoft`. |
+| Übersetzungszuteilung | (Optional) Bei benutzergenerierten Inhalten wird die Attribution neben übersetztem Text angezeigt, z. B. `Translations by Microsoft` |
 | Workspace-ID | (Optional) Die ID Ihrer angepassten Microsoft Translator-Engine, die verwendet werden soll |
 | Mitgliedschaftsschlüssel | Ihr Mitgliedschaftsschlüssel für Microsoft Translator |
 

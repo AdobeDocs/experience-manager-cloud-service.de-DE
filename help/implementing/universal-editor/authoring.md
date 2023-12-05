@@ -2,10 +2,10 @@
 title: Inhaltserstellung mit dem universellen Editor
 description: Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2398'
-ht-degree: 26%
+source-wordcount: '2387'
+ht-degree: 25%
 
 ---
 
@@ -232,7 +232,7 @@ Je nach ausgewähltem Komponententyp können Details in der Eigenschaftenleiste 
 
 ![Komponentendetails](assets/component-details.png)
 
-Beachten Sie, dass nicht alle Komponenten Details aufweisen, die angezeigt und/oder bearbeitet werden können.
+Nicht alle Komponenten verfügen über Details, die angezeigt und/oder bearbeitet werden können.
 
 >[!TIP]
 >
@@ -300,7 +300,7 @@ Die Bearbeitung von Inhalten ist einfach und intuitiv. In [Komponentenmodus](#co
 
 >[!TIP]
 >
->Beachten Sie, dass durch Tippen oder Klicken auf den Inhalt im Komponentenmodus der Inhalt zur Bearbeitung ausgewählt wird. Wenn Sie durch folgende Links in Ihren Inhalt navigieren möchten, wechseln Sie zu [Vorschaumodus.](#preview-mode)
+>Wenn Sie im Komponentenmodus auf den Inhalt tippen oder klicken, wird er zur Bearbeitung ausgewählt. Wenn Sie durch folgende Links in Ihren Inhalt navigieren möchten, wechseln Sie zu [Vorschaumodus.](#preview-mode)
 
 Je nach ausgewähltem Inhalt stehen Ihnen möglicherweise unterschiedliche Optionen zur Bearbeitung im Kontext zur Verfügung. Zusätzlich können Sie zusätzliche Informationen und Optionen für den Inhalt im [Eigenschaftenleiste.](#properties-rail)
 
@@ -407,7 +407,7 @@ Die Komponenten werden sowohl in der Inhaltsstruktur als auch im Editor neu ange
 
 Wenn Sie mit der Bearbeitung von Inhalten fertig sind, möchten Sie häufig durch diese navigieren, um zu sehen, wie sie im Inhalt anderer Seiten aussehen. Im [Vorschaumodus](#preview-mode) können Sie auf Links klicken, um genau wie eine Person, die Ihre Inhalte liest, durch diese zu navigieren. Der Inhalt wird im Editor so wiedergegeben, wie er veröffentlicht werden würde.
 
-Beachten Sie, dass im Vorschaumodus beim Tippen oder Klicken auf den Inhalt die gleiche Reaktion erfolgt, wie es bei einer Person, die den Inhalt liest, der Fall wäre. Wenn Sie den zu bearbeitenden Inhalt auswählen möchten, wechseln Sie zu [Komponentenmodus.](#component-mode)
+Im Vorschaumodus reagiert das Tippen oder Klicken auf den Inhalt so, wie es für einen Leser des Inhalts der Fall wäre. Wenn Sie den zu bearbeitenden Inhalt auswählen möchten, wechseln Sie zu [Komponentenmodus.](#component-mode)
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

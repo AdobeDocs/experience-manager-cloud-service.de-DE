@@ -2,10 +2,10 @@
 title: Projekt-Setup
 description: Erfahren Sie, wie AEM Projekte mit Maven erstellt werden und welche Standards Sie bei der Erstellung Ihres eigenen Projekts einhalten müssen.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1399'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -120,7 +120,7 @@ So verwenden Sie ein passwortgeschütztes Maven-Repository in Cloud Manager:
 Wenn der Build-Prozess von Cloud Manager gestartet wird:
 
 * Das `<servers>`-Element in dieser Datei wird in die von Cloud Manager bereitgestellte Standard-Datei `settings.xml` eingefügt.
-   * Server-IDs, die mit `adobe` und `cloud-manager` beginnen, gelten als reserviert und sollten nicht von kundenspezifischen Servern verwendet werden.
+   * Server-IDs, die mit `adobe` und `cloud-manager` als reserviert gelten. Verwenden Sie sie nicht auf benutzerdefinierten Servern.
    * Server-IDs, die nicht mit einem dieser Präfixe oder der Standard-ID `central` übereinstimmen, werden von Cloud Manager niemals gespiegelt.
 * Wenn diese Datei vorhanden ist, wird die Server- ID von innerhalb eines `<repository>`- und/oder `<pluginRepository>`-Elements in der `pom.xml`-Datei referenziert.
 * Im Allgemeinen wären diese `<repository>`- und/oder `<pluginRepository>`-Elemente in einem [Cloud Manager-spezifischen Profil](#activating-maven-profiles-in-cloud-manager) enthalten, auch wenn dies nicht unbedingt erforderlich ist.

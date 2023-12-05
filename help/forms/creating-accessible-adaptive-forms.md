@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2022'
-ht-degree: 97%
+source-wordcount: '2018'
+ht-degree: 94%
 
 ---
 
@@ -47,7 +47,7 @@ Das „Ultramarine-Accessible“-Design („Ultramarinblau – Barrierefreiheit�
 
 1. Laden Sie das Designpaket herunter.
 1. Navigieren Sie in Ihrer AEM-Instanz zu **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigation](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulare]**.
-1. Tippen Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Datei hochladen]**. Wählen Sie die Datei x Ultramarine-Accessible-Theme.zip aus und laden Sie sie hoch. Das Design wird in Ihre AEM Instanz hochgeladen.
+1. Auswählen **[!UICONTROL Erstellen]** > **[!UICONTROL Datei-Upload]**. Wählen Sie die Datei x Ultramarine-Accessible-Theme.zip aus und laden Sie sie hoch. Das Design wird in Ihre AEM Instanz hochgeladen.
 
 ## Gestalten eines barrierefreien adaptiven Formulars
 
@@ -58,8 +58,8 @@ Sie sollten sich auf vier wichtige Aspekte konzentrieren: Tastaturnavigation, Fa
 Wenden Sie das Design „Ultramarine-Accessible“ auf Ihr vorhandenes adaptives Formular an. So wenden Sie das Design an:
 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-1. Wählen Sie eine Komponente aus und tippen Sie auf das übergeordnete Symbol. Tippen Sie im Kontextmenü auf **[!UICONTROL Container für adaptive Formulare]** und dann auf das Symbol „Konfigurieren“.
-1. Wählen Sie im Eigenschaftenbrowser das Thema „Ultramarine-barrierefrei“ aus und klicken Sie auf das Symbol **[!UICONTROL Speichern]**.
+1. Wählen Sie eine Komponente und dann das übergeordnete Symbol aus. Wählen Sie im Kontextmenü **[!UICONTROL Container für adaptive Formulare]** und wählen Sie dann das Konfigurationssymbol aus.
+1. Wählen Sie das Thema Ultramarine-Accessible im Eigenschaftenbrowser aus und wählen Sie **[!UICONTROL Speichern]** Symbol.
 1. Aktualisieren Sie das Browserfenster. Das Design wird auf das adaptive Formular angewendet.
 
 Nachdem Sie ein barrierefreies Design angewendet haben, führen Sie die folgenden zusätzlichen Korrekturen durch. Die Korrekturen ergänzen die Barrierefreiheitskorrekturen, die anhand des barrierefreien Designs angewandt werden:
@@ -100,7 +100,7 @@ Die Beschriftung, die von Bildschirmlesehilfen wahrgenommen wird, muss nicht unb
 
 Gehen Sie wie folgt vor, um die Barrierefreiheitsoption zu verwenden:
 
-1. Wählen Sie eine Komponente aus und tippen Sie auf ![cmppr](assets/cmppr.png).
+1. Komponente auswählen und auswählen ![cmppr](assets/cmppr.png).
 1. Klicken Sie in der Seitenleiste auf **[!UICONTROL Ein-/Ausgabehilfe]**, um die gewünschte Barrierefreiheitsoption auszuwählen.
 
 ### Barrierefreiheitsoptionen in Formularkomponenten {#accessibility-options-in-form-components}
@@ -128,7 +128,7 @@ Bilder können bei einigen Benutzenden dazu beitragen, das Verständnis zu verbe
 
 Stellen Sie sicher, dass der Text das Objekt und seinen Zweck im Formular beschreibt. Eine Bildschirmlesehilfe liest diesen alternativen Text, wenn ein Bild auftritt. Für ein Bild muss immer ein alternativer Text angegeben sein.
 
-Wählen Sie eine Bildkomponente aus und tippen Sie auf ![cmppr](assets/cmppr.png). Geben Sie in der Seitenleiste unter „Eigenschaften“ einen Alternativtext für ein Bild ein.
+Wählen Sie eine Bildkomponente aus und wählen Sie ![cmppr](assets/cmppr.png). Geben Sie in der Seitenleiste unter „Eigenschaften“ einen Alternativtext für ein Bild ein.
 
 ![Alternativtext für ein Bild](assets/image-properties.png)
 
@@ -157,7 +157,7 @@ Die folgenden Tastaturbefehle sind in [!DNL AEM Forms] verfügbar.
 | Zurücksetzen der ausgefüllten Daten in einem Formular | Alt+R |
 | Formular senden | Alt+S |
 
-Darüber hinaus stehen verschiedene Tastaturbefehle für die Komponente **[!UICONTROL Datumsauswahl]** in adaptiven Formularen zur Verfügung. Tippen Sie zum Aktivieren der Tastenkombinationen auf die Komponente **[!UICONTROL Datumsauswahl]** und dann auf ![Konfigurieren](assets/configure-icon.svg), um die Eigenschaften zu öffnen. Im **[!UICONTROL Muster]** ein Anzeigemuster mithilfe der **[!UICONTROL Typ]** und **[!UICONTROL Muster]** Dropdown-Listen. Speichern Sie die Eigenschaften, um die Verwendung der Tastenkombinationen für die Komponente **[!UICONTROL Datumsauswahl]** zu aktivieren.
+Darüber hinaus stehen verschiedene Tastaturbefehle für die Komponente **[!UICONTROL Datumsauswahl]** in adaptiven Formularen zur Verfügung. Um die Tastaturbefehle zu aktivieren, wählen Sie die **[!UICONTROL Datumsauswahl]** Komponente und wählen Sie ![Konfigurieren](assets/configure-icon.svg) , um die Eigenschaften zu öffnen. Im **[!UICONTROL Muster]** ein Anzeigemuster mithilfe der **[!UICONTROL Typ]** und **[!UICONTROL Muster]** Dropdown-Listen. Speichern Sie die Eigenschaften, um die Verwendung der Tastenkombinationen für die Komponente **[!UICONTROL Datumsauswahl]** zu aktivieren.
 
 Für die Datumsauswahl-Komponente in adaptiven Formularen stehen die folgenden Tastaturbefehle zur Verfügung:
 

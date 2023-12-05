@@ -2,10 +2,10 @@
 title: Implementieren von AEM-Connectoren
 description: Erfahren Sie, wie Sie einen AEM Connector erstellen, testen und implementieren. Außerdem erfahren Sie mehr über gängige Integrationsmuster.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 95%
+source-wordcount: '935'
+ht-degree: 94%
 
 ---
 
@@ -14,7 +14,7 @@ Implementieren von AEM-Connectoren
 
 Im Folgenden finden Sie nützliche Hinweise zum Erstellen von [AEM-Connectoren](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html). Sie sollten zusammen mit Anleitungen zum [Senden](submit.md) und [Warten](maintain.md) von Connectoren gelesen werden.
 
-Beachten Sie, dass eine Entwicklerlizenz für AEM über das [Adobe Exchange-Programm](https://partners.adobe.com/exchangeprogram/experiencecloud) erhältlich ist.
+Eine Entwicklerlizenz für AEM kann über das [Adobe Exchange-Programm](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
 Gängige Integrationsmuster
 ---------------------------

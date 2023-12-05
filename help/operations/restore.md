@@ -2,10 +2,10 @@
 title: Wiederherstellung von Inhalten in AEM as a Cloud Service
 description: Erfahren Sie, wie Sie mithilfe von Cloud Manager AEM as a Cloud Service Inhalte aus einer Sicherungskopie wiederherstellen können.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 60%
+source-wordcount: '1157'
+ht-degree: 57%
 
 ---
 
@@ -111,7 +111,7 @@ Die **Aktivität wiederherstellen** zeigt den Status der zehn letzten Wiederhers
 
 ![Wiederherstellungsaktivität](assets/backup-activity.png)
 
-Wenn Sie auf das Informationssymbol für ein Backup klicken, können Sie Protokolle für dieses Backup herunterladen und die Code-Details einschließlich der Unterschiede zwischen dem Snapshot und den Daten zum Zeitpunkt der Wiederherstellung überprüfen.
+Durch Klicken auf das Informationssymbol für eine Sicherung können Sie Protokolle für diese Sicherung herunterladen und die Codedetails einschließlich der Unterschiede zwischen der Momentaufnahme und den Daten zum Zeitpunkt der Wiederherstellung überprüfen.
 
 ## Offsite-Sicherung {#offsite-backup}
 

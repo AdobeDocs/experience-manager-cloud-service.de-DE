@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3629'
-ht-degree: 89%
+source-wordcount: '3587'
+ht-degree: 88%
 
 ---
 
@@ -88,7 +88,7 @@ Um Dynamic Media zu verwenden und dynamische Ausgabedarstellungen für AI-, EPS-
 
 Sie können `Rasterize PDF/AI Image Preview Rendition`-Prozesskomponentenoptionen über den Workflow `DAM Update Asset` aufrufen.
 
-Klicken Sie links oben auf Adobe Experience Manager, gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**. Wählen Sie auf der Seite „Workflow-Modelle“ **[!UICONTROL DAM-Update-Asset]** aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. Doppeltippen Sie auf der Seite „Workflow DAM-Update-Asset“ auf die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition`, um das Dialogfeld „Schritteigenschaften“ zu öffnen.
+Klicken Sie links oben auf Adobe Experience Manager, gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**. Wählen Sie auf der Seite „Workflow-Modelle“ **[!UICONTROL DAM-Update-Asset]** aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. Wählen Sie auf der Workflow-Seite &quot;DAM-Update-Asset&quot;die `Rasterize PDF/AI Image Preview Rendition` Prozesskomponente , um das Dialogfeld &quot;Schritteigenschaften&quot;zu öffnen.
 
 #### PDF-/AI-Bildvorschau-Ausgabedarstellung rastern – Optionen {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -103,7 +103,7 @@ Argumente zum Rastern von PDF- oder AI-Workflows
 | Max. Höhe | 2048 | Maximale Höhe der generierten Vorschaudarstellung in Pixel. |
 | Auflösung | 72 | Auflösung zum Rastern der ersten Seite in ppi (Pixel pro Zoll). |
 
-Bei Verwendung der standardmäßigen Prozessargumente wird die erste Seite eines PDF/AI-Dokuments mit 72 ppi gerastert und das generierte Vorschaubild hat eine Größe von 2048 x 2048 Pixel. Für eine typische Implementierung können Sie die Auflösung auf einen Mindestwert von 150 ppi oder mehr erhöhen. Für ein US Letter-Dokument ist z. B. für 300 ppi eine maximale Breite und Höhe von 2550 x 3300 Pixel erforderlich.
+Bei Verwendung der standardmäßigen Prozessargumente wird die erste Seite eines PDF/AI-Dokuments mit 72 ppi gerastert und das generierte Vorschaubild hat eine Größe von 2048 x 2048 Pixel. Für eine typische Bereitstellung können Sie die Auflösung auf einen Mindestwert von 150 ppi oder mehr erhöhen. Für ein US Letter-Dokument ist z. B. für 300 ppi eine maximale Breite und Höhe von 2550 x 3300 Pixel erforderlich.
 
 Die max. Breite und die max. Höhe beschränken die Auflösung, in der die Rasterung erfolgt. Wenn beispielsweise die Maximalwerte unverändert bleiben und die Auflösung auf 300 ppi eingestellt ist, wird ein US-Briefdokument mit 186 ppi gerastert. Das heißt, das Dokument ist 1581 x 2046 Pixel.
 
@@ -138,7 +138,7 @@ Sie können die Größe von Miniaturen über die Einstellungen im Workflow **[!U
 
 Im Schritt **[!UICONTROL Bild-Assets-Prozess für Dynamic Media]** werden vom Bild-Server Miniaturen generiert. Diese Konfiguration ist unabhängig von der Konfiguration, die auf den Schritt **[!UICONTROL Prozessminiaturen]** angewendet wird. Das Generieren von Miniaturen mit dem Schritt **[!UICONTROL Miniaturen verarbeiten]** ist das langsamste und speicherintensivste Verfahren zum Erstellen von Miniaturen.
 
-Die Größe der Miniaturen wird im folgenden Format definiert: **[!UICONTROL width:height:center]**, z. B. `80:80:false`. Die Breite und die Höhe legen die Größe der Miniatur in Pixel fest. Für den center-Wert ist entweder false oder true festgelegt. Wenn true festgelegt ist, hat das Miniaturbild exakt die in der Konfiguration festgelegte Größe. Wenn das in der Größe angepasste Bild kleiner ist, wird es im Miniaturbildfenster zentriert.
+Die Größe der Miniaturansichten wird im folgenden Format definiert: **[!UICONTROL width:height:center]**, beispielsweise `80:80:false`. Die Breite und die Höhe legen die Größe der Miniatur in Pixel fest. Für den center-Wert ist entweder false oder true festgelegt. Wenn true festgelegt ist, hat das Miniaturbild exakt die in der Konfiguration festgelegte Größe. Wenn das in der Größe angepasste Bild kleiner ist, wird es im Miniaturbildfenster zentriert.
 
 >[!NOTE]
 >
@@ -146,7 +146,6 @@ Die Größe der Miniaturen wird im folgenden Format definiert: **[!UICONTROL wid
 >
 >* Die Größe der Miniaturen für Videos wird im Schritt **[!UICONTROL FFmpeg-Miniaturen]** auf der Registerkarte **[!UICONTROL Prozess]** unter **[!UICONTROL Argumente]** konfiguriert.
 >
-
 
 **So konfigurieren Sie die Größe von Miniaturen:**
 
@@ -179,7 +178,7 @@ Erstellte Bildvorgaben sind auch als dynamische Ausgabedarstellungen verfügbar,
 
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
-1. Ändern Sie in der Eigenschaft „limit“ den Wert auf die gewünschte Zahl, z. B. `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`.
+1. Ändern Sie in der Eigenschaft limit die Zahl auf die gewünschte Zahl, z. B. `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Wählen Sie **[!UICONTROL Alle speichern]** aus.
 
 ### Erstellen von Bildvorgaben {#creating-image-presets}
@@ -268,7 +267,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
    <td><strong>Rendering-Intent</strong></td>
    <td>Sie können den standardmäßigen Rendering-Intent überschreiben. Die Rendering-Absicht bestimmt, was mit Farben passiert, die im Zielfarbprofil nicht reproduziert werden können (außerhalb der Farbskala). Der Render-Intent wird ignoriert, wenn er nicht mit dem ICC-Profil kompatibel ist.
     <ul>
-     <li>Auswählen <strong>Wahrnehmungsorientiert</strong> , um die Gesamtbreite von einem Farbraum in einen anderen Farbraum zu komprimieren, wenn eine oder mehrere Farben im Originalbild außerhalb der Farbskala des Zielfarbraums liegen.</li>
+     <li>Auswählen <strong>Perzeptiv</strong> , um die Gesamtbreite von einem Farbraum in einen anderen Farbraum zu komprimieren, wenn eine oder mehrere Farben im Originalbild außerhalb der Farbskala des Zielfarbraums liegen.</li>
      <li>Wählen Sie <strong>Relativ farbmetrisch</strong> aus, wenn eine Farbe des aktuellen Farbraums im Zielfarbraum außerhalb der Farbskala liegt und auf die nächstmögliche Farbe der Farbskala des Zielfarbraums abgebildet werden soll, ohne dass andere Farben betroffen sind. </li>
      <li>Wählen Sie <strong>Sättigung</strong> aus, um die Sättigung des Originalbilds beim Konvertieren in den Zielfarbraum zu übernehmen. </li>
      <li>Wählen Sie <strong>Absolut farbmetrisch</strong> aus, um Farben exakt und ohne Weißpunkt- oder Schwarzpunktanpassung abzubilden, wodurch die Helligkeit verändert würde.</li>
@@ -345,43 +344,43 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html?lang=de): Invertiert jede Farbkomponente für einen negativen Bildeffekt.
 
-   ```xml {.line-numbers}
-   &op_invert=1
-   ```
+  ```xml {.line-numbers}
+  &op_invert=1
+  ```
 
-   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
+  ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
 * [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html?lang=de): Wendet einen Weichzeichenfilter auf das Bild an.
 
-   ```xml {.line-numbers}
-   &op_blur=7
-   ```
+  ```xml {.line-numbers}
+  &op_blur=7
+  ```
 
-   ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
+  ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
 
 * Kombinierte Befehle - op_blur und op-invert
 
-   ```xml {.line-numbers}
-   &op_invert=1&op_blur=7
-   ```
+  ```xml {.line-numbers}
+  &op_invert=1&op_blur=7
+  ```
 
-   ![chlimage_1-80](assets/chlimage_1-501.png)
+  ![chlimage_1-80](assets/chlimage_1-501.png)
 
 * [Op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html?lang=de): Verringert oder erhöht die Helligkeit.
 
-   ```xml {.line-numbers}
-   &op_brightness=58
-   ```
+  ```xml {.line-numbers}
+  &op_brightness=58
+  ```
 
-   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
+  ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
 * [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html?lang=de): Passt die Bilddeckkraft an. Ermöglicht das Reduzieren der Vordergrunddeckkraft.
 
-   ```xml {.line-numbers}
-   opac=29
-   ```
+  ```xml {.line-numbers}
+  opac=29
+  ```
 
-   ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
+  ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
 ### Bearbeiten von Bildvorgaben {#modifying-image-presets}
 

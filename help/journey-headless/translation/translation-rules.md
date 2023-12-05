@@ -2,9 +2,9 @@
 title: Konfigurieren von Übersetzungsregeln für Headless-Inhalte
 description: Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '912'
 ht-degree: 73%
 
 ---
@@ -73,7 +73,7 @@ Im **Übersetzungskonfiguration** -Benutzeroberfläche gibt es mehrere Optionen 
    ![Kontext hinzufügen](assets/add-translation-context.png)
 1. Verwenden Sie den Pfad-Browser, um den erforderlichen Pfad auszuwählen und **Bestätigen** speichern. Denken Sie daran, dass Inhaltsfragmente, die Headless-Inhalte enthalten, sich im Allgemeinen unter `/content/dam/<your-project>` befinden.
    ![Pfad auswählen](assets/select-context.png)
-1. Wählen Sie den soeben erstellten Kontext aus und klicken Sie auf **Bearbeiten**. Dadurch wird der **Editor für Übersetzungsregeln** geöffnet, in dem die Eigenschaften konfiguriert werden können.
+1. Wählen Sie den von Ihnen erstellten Kontext aus und wählen Sie dann **Bearbeiten**. Dadurch wird der **Editor für Übersetzungsregeln** geöffnet, in dem die Eigenschaften konfiguriert werden können.
    ![Editor für Übersetzungsregeln](assets/translation-rules-editor.png)
 1. Standardmäßig werden alle Konfigurationen vom übergeordneten Pfad übernommen, in diesem Fall `/content/dam`. Deaktivieren Sie die Option **Übernehmen von`/content/dam`**, um der Konfiguration zusätzliche Felder hinzuzufügen.
 1. Wenn diese Option deaktiviert ist, finden Sie unter der **Allgemein** Fügen Sie die Eigenschaftsnamen der von Ihnen erstellten Inhaltsfragmentmodelle hinzu. [zuvor als zu übersetzende Felder identifiziert.](getting-started.md#content-models)
@@ -81,7 +81,6 @@ Im **Übersetzungskonfiguration** -Benutzeroberfläche gibt es mehrere Optionen 
    1. Klicken Sie auf **Hinzufügen**.
    1. Wiederholen Sie diese Schritte für alle Felder, die Sie übersetzen müssen.
    1. Wählen Sie **Speichern** aus.
-
       ![Eigenschaft hinzufügen](assets/add-property.png)
 
 Sie haben jetzt Ihre Übersetzungsregeln konfiguriert.

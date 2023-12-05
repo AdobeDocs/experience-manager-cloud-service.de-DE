@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die leistungsstarken Live Copy-Synchronisie
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2414'
-ht-degree: 93%
+ht-degree: 90%
 
 ---
 
@@ -60,7 +60,7 @@ Wenn die installierten Rollout-Konfigurationsaktionen Ihre Anforderungen nicht e
 
 In der folgenden Tabelle sind Synchronisierungsaktionen aufgeführt, die standardmäßig mit AEM bereitgestellt werden.
 
-Wenn die installierten Aktionen Ihre Anforderungen nicht erfüllen, können Sie [eine neue Synchronisierungsaktion erstellen.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
+Wenn die installierten Aktionen Ihre Anforderungen nicht erfüllen, können Sie [Erstellen Sie eine neue Synchronisierungsaktion.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
 
 | Aktionsname | Beschreibung | Eigenschaften |
 |---|---|---|
@@ -86,7 +86,7 @@ Wenn die installierten Aktionen Ihre Anforderungen nicht erfüllen, können Sie 
 
 Sie können [Erstellen einer Rollout-Konfiguration](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) wenn die installierten Rollout-Konfigurationen Ihre Anwendungsanforderungen nicht erfüllen, indem Sie die folgenden Schritte ausführen.
 
-1. [Erstellen Sie die Rollout-Konfiguration-](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
+1. [Erstellen der Rollout-Konfiguration -](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
 1. [Fügen Sie Synchronisierungsaktionen zur Rollout-Konfiguration hinzu.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
 
 Die neue Rollout-Konfiguration steht Ihnen dann zur Verfügung, wenn Sie Rollout-Konfigurationen auf einer Blueprint- oder Live Copy-Seite konfigurieren.
@@ -95,7 +95,7 @@ Die neue Rollout-Konfiguration steht Ihnen dann zur Verfügung, wenn Sie Rollout
 
 Sie können mehrere OSGi-Services konfigurieren, die die entsprechenden Synchronisierungsaktionen unterstützen, sodass sie sich nicht auf bestimmte Knotentypen und Eigenschaften auswirken. So sollten beispielsweise viele Eigenschaften und Unterknoten, die mit der internen Funktionstüchtigkeit von AEM zusammenhängen, nicht in einer Live Copy enthalten sein. Nur Inhalte, die für Benutzer der Seite relevant sind, sollten kopiert werden.
 
-Bei der Arbeit mit AEM gibt es verschiedene Methoden, die Konfigurationseinstellungen für solche Services zu verwalten. Weitere Informationen und empfohlene Vorgehensweisen finden Sie unter [Konfigurieren von OSGi](/help/implementing/deploying/configuring-osgi.md).
+Beim Arbeiten mit AEM gibt es mehrere Methoden zum Verwalten der Konfigurationseinstellungen für diese Dienste. Siehe [Konfigurieren von OSGi](/help/implementing/deploying/configuring-osgi.md) für weitere Details und empfohlene Vorgehensweisen.
 
 In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, von denen Sie Knoten ausschließen können. Die Tabelle enthält die Namen der Dienste, die mit der Web-Konsole konfiguriert werden sollen, und die PID für die Konfiguration mit einem Repository-Knoten.
 
@@ -134,7 +134,7 @@ Wenn Sie beispielsweise möchten, dass die Seite **Title** bei den Änderungen e
 
 Sie können mehrere OSGi-Services konfigurieren, die die entsprechenden Synchronisierungsaktionen im Zusammenhang mit der Aktualisierung von Verweisen unterstützen.
 
-Bei der Arbeit mit AEM gibt es verschiedene Methoden, die Konfigurationseinstellungen für solche Services zu verwalten. Weitere Informationen und empfohlene Vorgehensweisen finden Sie unter [Konfigurieren von OSGi](/help/implementing/deploying/configuring-osgi.md).
+Beim Arbeiten mit AEM gibt es mehrere Methoden zum Verwalten der Konfigurationseinstellungen für diese Dienste. Siehe [Konfigurieren von OSGi](/help/implementing/deploying/configuring-osgi.md) für weitere Details und empfohlene Vorgehensweisen.
 
 In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, für die Sie die Referenz-Aktualisierung angeben können. Die Tabelle enthält die Namen der Dienste, die mit der Web-Konsole konfiguriert werden sollen, und die PID für die Konfiguration mit einem Repository-Knoten.
 

@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.3.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0“
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 90%
+source-wordcount: '1271'
+ht-degree: 87%
 
 ---
 
@@ -62,7 +62,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 AEM Forms hat im Laufe der Jahre vielen Unternehmen dabei geholfen, großartige Onboarding- und Registrierungserlebnisse zu bieten. Diese Erlebnisse haben Unternehmen dabei geholfen, Leads in Käufe umzuwandeln, erfasste Kundendaten zu verarbeiten, responsive Erlebnisse basierend auf dem Zielgruppenprofil bereitzustellen und vieles mehr. AEM Forms ist jetzt as a Cloud Service verfügbar.
 
-Sie können [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html?lang=de) verwenden, um digitale Formulare zu erstellen, Formulare mit vorhandenen Datenquellen zu verbinden, Formulare mit Adobe Sign zu integrieren, E-Signaturen zu Formularen hinzuzufügen und um Datensatzdokumente (DoR) zu generieren, um gesendete Formulare als PDF-Dateien zu archivieren. Der Service kann auch Ihre bestehenden PDF-Formulare in digitale Formulare konvertieren. Neben den standardmäßigen AEM Forms-Funktionen bietet der Service mehrere Cloud-native Funktionen wie automatische Skalierung, null Ausfallzeiten bei Upgrades und Cloud-native Entwicklungsumgebungen.
+Sie können [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html?lang=de) verwenden, um digitale Formulare zu erstellen, Formulare mit vorhandenen Datenquellen zu verbinden, Formulare mit Adobe Sign zu integrieren, E-Signaturen zu Formularen hinzuzufügen und um Datensatzdokumente (DoR) zu generieren, um gesendete Formulare als PDF-Dateien zu archivieren. Der Service kann auch Ihre bestehenden PDF-Formulare in digitale Formulare konvertieren. Neben den standardmäßigen AEM Forms-Funktionen bietet der Dienst mehrere Cloud-native Funktionen wie automatische Skalierung, Ausfallzeiten bei Upgrades und Cloud-native Entwicklungsumgebungen.
 
 Sie können sich an Ihren Adobe-Kundenbetreuer wenden, um eine Demo zu erhalten oder sich für den Service anzumelden.
 
@@ -94,7 +94,7 @@ Die nächste Version ist für den 08. April 2021 geplant.
 
 * Benutzer mit den erforderlichen Berechtigungen können jetzt ein Programm bearbeiten, sodass sie Folgendes selbstständig ausführen können:
 
-   * Hinzufügen der Sites-Lösung zu einem vorhandenen Programm mit Assets oder umgekehrt.
+   * Fügen Sie Sites-Lösungen zu einem vorhandenen Programm mit Assets oder umgekehrt hinzu.
    * Entfernen von Sites oder Assets aus einem vorhandenen Programm, das sowohl Sites als auch Assets umfasst.
    * Hinzufügen einer zweiten, nicht verwendeten Lösungsberechtigung entweder für ein vorhandenes Programm oder als neues Programm.
 

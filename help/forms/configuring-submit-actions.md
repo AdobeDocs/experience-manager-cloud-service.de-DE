@@ -2,10 +2,10 @@
 title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 0e6c4e6745a03e0d48c535e2e113d2a7e5ff4e78
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3859'
-ht-degree: 92%
+source-wordcount: '3805'
+ht-degree: 91%
 
 ---
 
@@ -170,7 +170,7 @@ Bevor Sie die Übermittlungsaktion **[!UICONTROL AEM-Workflow aufrufen]** verwen
 
 ## An SharePoint senden {#submit-to-sharedrive}
 
-Die Sendeaktion **[!UICONTROL An SharePoint senden]** verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint-Speicher senden.
+Die Sendeaktion **[!UICONTROL An SharePoint senden]** verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint Storage senden.
 
 Mit Senden an SharePoint haben Sie folgende Möglichkeiten:
 * [Verbinden eines adaptiven Formulars mit der SharePoint Document Library](#connect-af-sharepoint-doc-library)
@@ -264,7 +264,7 @@ So verbinden Sie AEM Forms mit Ihrer Microsoft® Sharepoint List:
 
 1. Klicken Sie auf **[!UICONTROL Verbinden]**. Bei erfolgreicher Verbindung erscheint die Meldung `Connection Successful`.
 1. Wählen Sie **[!UICONTROL SharePoint-Site]** und **[!UICONTROL SharePoint-Liste]** aus der Dropdown-Liste.
-1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für die Microsoft® SharePoint-Liste zu erstellen.
+1. Auswählen **[!UICONTROL Erstellen]** , um die Cloud-Konfiguration für die Microsoft® SharePointList zu erstellen.
 
 
 #### Verwenden des Sendevorgangs mit dem Formulardatenmodell in einem adaptiven Formular {#use-submit-using-fdm}

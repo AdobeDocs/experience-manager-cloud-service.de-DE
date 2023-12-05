@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 100%
+source-wordcount: '1333'
+ht-degree: 99%
 
 ---
 
@@ -738,7 +738,7 @@ Gehen Sie wie folgt vor, um alle JSON-Schema-basierten adaptiven Formulare zu ak
 
 1. Navigieren Sie zur Experience Manager-Web-Konsole unter `https://server:host/system/console/configMgr`.
 1. Suchen Sie **[!UICONTROL Web-Kanal-Konfiguration für adaptive Formulare und interaktive Kommunikation]**
-1. Tippen Sie auf die Konfiguration, um sie im Bearbeitungsmodus zu öffnen.
+1. Wählen Sie diese Option aus, um die Konfiguration im Bearbeitungsmodus zu öffnen.
 1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Schema-kompatible Daten generieren]**.
 1. Speichern Sie die Einstellungen.
 

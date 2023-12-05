@@ -2,10 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Erfahren Sie mehr über die Inhaltssuche und -indizierung in AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2427'
-ht-degree: 68%
+source-wordcount: '2442'
+ht-degree: 65%
 
 ---
 
@@ -67,7 +67,7 @@ Eine Indexdefinition kann in eine der folgenden Kategorien unterteilt werden:
 
 >[!NOTE]
 >
->Wenn Sie beispielsweise einen vorkonfigurierten Index anpassen, z. B. `damAssetLucene-8`, kopieren Sie die neueste vorkonfigurierte Indexdefinition aus einer *Cloud Service-Umgebung* mithilfe des CRX DE Package Manager (`/crx/packmgr/`). Umbenennen in `damAssetLucene-8-custom-1` (oder höher) und fügen Sie Ihre Anpassungen in die XML-Datei ein. Dadurch wird sichergestellt, dass die erforderlichen Konfigurationen nicht versehentlich entfernt werden. Beispiel: die `tika` Knoten unter `/oak:index/damAssetLucene-8/tika` ist in dem angepassten Index erforderlich, der in einer AEM Cloud Service-Umgebung bereitgestellt wird, aber nicht im lokalen AEM SDK vorhanden ist.
+>Wenn Sie beispielsweise einen vordefinierten Index anpassen, `damAssetLucene-8`, kopieren Sie die neueste vordefinierte Indexdefinition aus einem *Cloud Service-Umgebung* mit dem CRX DE Package Manager (`/crx/packmgr/`) . Umbenennen in `damAssetLucene-8-custom-1` (oder höher) und fügen Sie Ihre Anpassungen in die XML-Datei ein. Dadurch wird sichergestellt, dass die erforderlichen Konfigurationen nicht versehentlich entfernt werden. Beispiel: die `tika` Knoten unter `/oak:index/damAssetLucene-8/tika` ist in dem angepassten Index erforderlich, der in einer AEM Cloud Service-Umgebung bereitgestellt wird, aber nicht im lokalen AEM SDK vorhanden ist.
 
 Für Anpassungen eines OOTB-Index erstellen Sie ein neues Paket, das die tatsächliche Indexdefinition enthält, die diesem Namensmuster folgt:
 
@@ -274,7 +274,7 @@ Bei der Entwicklung oder bei Verwendung von lokalen Installationen können Indiz
 
 ### Indexverwaltung mit rollierenden Bereitstellungen {#index-management-with-rolling-deployments}
 
-Bei rollierenden Bereitstellungen gibt es keine Ausfallzeiten. Während einer Aktualisierung werden sowohl die alte Version (z. B. Version 1) der Anwendung als auch die neue Version (Version 2) gleichzeitig für dasselbe Repository ausgeführt. Wenn für Version 1 ein bestimmter Index verfügbar sein muss, darf dieser Index in Version 2 nicht entfernt werden: Der Index sollte später entfernt werden, z. B. in Version 3. Ab diesem Zeitpunkt wird garantiert, dass Version 1 der Anwendung nicht mehr ausgeführt wird. Außerdem sollten Programme so geschrieben werden, dass Version 1 gut funktioniert, auch wenn Version 2 ausgeführt wird und Indizes von Version 2 verfügbar sind.
+Bei rollierenden Bereitstellungen gibt es keine Ausfallzeiten. Während einer Aktualisierung werden sowohl die alte Version (z. B. Version 1) der Anwendung als auch die neue Version (Version 2) gleichzeitig für dasselbe Repository ausgeführt. Wenn für Version 1 ein bestimmter Index verfügbar sein muss, darf dieser Index in Version 2 nicht entfernt werden. Der Index sollte später entfernt werden, z. B. in Version 3. Ab diesem Zeitpunkt ist garantiert, dass Version 1 der Anwendung nicht mehr ausgeführt wird. Außerdem sollten Programme so geschrieben werden, dass Version 1 gut funktioniert, auch wenn Version 2 ausgeführt wird und Indizes von Version 2 verfügbar sind.
 
 Nach Abschluss der Aktualisierung auf die neue Version können alte Indizes vom System entfernt werden. Die alten Indizes können möglicherweise noch einige Zeit bleiben, um Rollbacks zu beschleunigen (falls ein Rollback erforderlich sein sollte).
 
@@ -307,7 +307,7 @@ Nachdem Adobe einen vordefinierten Index wie „damAssetLucene“ oder „cqPage
 
 ### Aktuelle Einschränkungen {#current-limitations}
 
-Die Indexverwaltung wird derzeit nur für Indizes des Typs `lucene` unterstützt, wobei `compatVersion` auf `2` gesetzt ist. Intern können andere Indizes konfiguriert und für Abfragen verwendet werden, z. B. Elasticsearch-Indizes. Abfragen, die gegen die `damAssetLucene` -Index könnte auf AEM as a Cloud Service tatsächlich mit einer Elasticsearch-Version dieses Index ausgeführt werden. Dieser Unterschied ist für den Anwendungsbenutzer nicht sichtbar, jedoch sind bestimmte Tools wie die `explain` -Funktion einen anderen Index meldet. Unterschiede zwischen Lucene- und Elasticsearch-Indizes finden Sie in der [Elasticsearch-Dokumentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Elasticsearch-Indizes können und müssen nicht direkt konfiguriert werden.
+Die Indexverwaltung wird derzeit nur für Indizes des Typs `lucene` unterstützt, wobei `compatVersion` auf `2` gesetzt ist. Intern können andere Indizes konfiguriert und für Abfragen verwendet werden, z. B. Elasticsearch-Indizes. Abfragen, die gegen die `damAssetLucene` -Index könnte auf AEM as a Cloud Service tatsächlich mit einer Elasticsearch-Version dieses Index ausgeführt werden. Dieser Unterschied ist für den Anwendungsbenutzer nicht sichtbar, jedoch sind bestimmte Tools wie die `explain` -Funktion einen anderen Index meldet. Unterschiede zwischen Lucene- und Elasticsearch-Indizes finden Sie in der [Elasticsearch-Dokumentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Elasticsearch-Indizes können und müssen nicht direkt konfiguriert werden.
 
 Es werden nur integrierte Analyzer unterstützt (d. h. diejenigen, die mit dem Produkt geliefert werden). Benutzerdefinierte Analyzer werden nicht unterstützt.
 

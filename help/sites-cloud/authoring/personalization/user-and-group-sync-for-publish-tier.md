@@ -2,10 +2,10 @@
 title: Registrierung, Anmeldung und Anwenderprofil
 description: In diesem Abschnitt erfahren Sie mehr über Registrierung, Anmeldung, Anwenderdaten und Gruppensynchronisierung für AEM as a Cloud Service.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 93%
+source-wordcount: '1132'
+ht-degree: 90%
 
 ---
 
@@ -113,7 +113,7 @@ Unabhängig von der Anmeldung kann benutzerdefinierter Code auch die Gruppenmitg
 
 ## Datensynchronisierung {#data-synchronization}
 
-Website-Endanwender erwarten bei jeder Website-Anfrage ein konsistentes Erlebnis. Das gilt auch dann, wenn sie sich mit einem anderen Browser anmelden, selbst wenn sie ihnen nicht bekannt sind, werden sie an verschiedene Server-Knoten der Infrastruktur auf Veröffentlichungsebene weitergeleitet. AEM as a Cloud Service erreicht dies durch eine schnelle Synchronisierung der `/home`-Ordnerhierarchie (Anwenderinformationen, Gruppenmitgliedschaft usw.) für alle Knoten der Veröffentlichungsebene.
+Website-Endanwender erwarten bei jeder Website-Anfrage ein konsistentes Erlebnis. Das gilt auch dann, wenn sie sich mit einem anderen Browser anmelden, selbst wenn sie ihnen nicht bekannt sind, werden sie an verschiedene Server-Knoten der Infrastruktur auf Veröffentlichungsebene weitergeleitet. AEM as a Cloud Service erreicht dies durch die schnelle Synchronisierung der `/home` Ordnerhierarchie (Benutzerprofilinformationen, Gruppenmitgliedschaft usw.) über alle Knoten der Veröffentlichungsstufe hinweg.
 
 Anders als bei anderen AEM-Lösungen verfolgt die Anwender- und Gruppenmitgliedssynchronisierung in AEM as a Cloud Service keinen Point-to-Point-Messaging-Ansatz, sondern einen Ansatz, der auf Veröffentlichen/Abonnieren ausgelegt ist und keine Konfiguration durch den Kunden erfordert.
 

@@ -2,9 +2,9 @@
 title: Benutzerdefinierte Berechtigungen
 description: Erfahren Sie, wie Sie mit benutzerdefinierten Berechtigungen benutzerdefinierte Berechtigungsprofile mit konfigurierbaren Berechtigungen erstellen können, um den Zugriff auf Programme, Pipelines und Umgebungen für Cloud Manager-Benutzer zu beschränken.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: be38ca5bf79d401fc12c1422c270a2ee84bbbad2
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1525'
 ht-degree: 38%
 
 ---
@@ -40,7 +40,7 @@ Um eigene benutzerdefinierte Berechtigungen zu erstellen und zu verwenden, sind 
 1. [Weisen Sie dem Produktprofil benutzerdefinierte Berechtigungen zu.](#assign-permissions)
 1. [Weisen Sie dem Produktprofil Benutzer zu.](#assign-users)
 
-In diesem Abschnitt werden diese Schritte beschrieben. Möglicherweise helfen Ihnen die Informationen unter [Begriffe](#terms) und [Konfigurierbare Berechtigungen](#configurable-permissions) bei der Erstellung Ihrer eigenen benutzerdefinierten Berechtigungen.
+In diesem Abschnitt werden diese Schritte beschrieben. Es kann nützlich sein, [Begriffe](#terms) und [Konfigurierbare Berechtigungen](#configurable-permissions) -Abschnitte, während Sie Ihre eigenen benutzerdefinierten Berechtigungen erstellen.
 
 >[!NOTE]
 >
@@ -127,7 +127,7 @@ Zum Erstellen benutzerdefinierter Profile stehen folgende Berechtigungen zur Ver
 | Verwalten von Umgebungsvariablen | Benutzer können Umgebungskonfigurationen erstellen/bearbeiten/löschen |
 | Umgebungswiederherstellung erstellen | Benutzer können Umgebung wiederherstellen |
 | Schnelles Zurücksetzen der Entwicklungsumgebung | Benutzer können die schnelle Entwicklungsumgebung zurücksetzen |
-| Inhaltskopie verwalten | Benutzern erlauben, Vorgänge zum Kopieren von Inhalten zu verwalten |
+| Inhaltskopien – Verwalten | Benutzenden erlauben, Inhaltskopiervorgänge zu verwalten |
 | Pipeline erstellen | Erstellen von Pipelines durch Benutzer zulassen |
 | Pipeline löschen | Benutzenden erlauben, Pipelines zu löschen |
 | Pipeline-Bearbeitung | Benutzenden erlauben, Pipelines zu bearbeiten |
@@ -137,10 +137,10 @@ Zum Erstellen benutzerdefinierter Profile stehen folgende Berechtigungen zur Ver
 | Wichtige Metrikfehler überschreiben/ablehnen | Benutzenden erlauben, wichtige Metrikfehler zu überschreiben/abzulehnen |
 | Produktionsbereitstellungs-Zeitplan | Benutzenden erlauben, einen Produktionsbereitstellungsschritt zu planen |
 | Zugriff auf Repository-Informationen | Benutzenden erlauben, auf Repository-Informationen zuzugreifen und ein Passwort für den Zugriff zu erstellen |
-| Repository erstellen | Benutzern erlauben, Git-Repositorys zu erstellen |
-| Repository löschen | Löschen von Git-Repositorys durch Benutzer zulassen |
-| Repository bearbeiten | Benutzern erlauben, Git-Repositorys zu bearbeiten |
-| Repository-Codegenerierung | Benutzer können Projekte aus dem Archetyp generieren |
+| Repository – Erstellen | Benutzern erlauben, Git-Repositorys zu erstellen |
+| Repository – Löschen | Benutzenden erlauben, Git-Repositorys zu löschen |
+| Repository – Bearbeiten | Benutzenden erlauben, Git-Repositorys zu bearbeiten |
+| Repository – Code generieren | Benutzer können Projekte aus dem Archetyp generieren |
 | Domänenname verwalten | Benutzern das Erstellen/Bearbeiten/Löschen von Domänennamen ermöglichen |
 | Verwalten von IP-Zulassungslisten | Benutzern das Erstellen/Bearbeiten/Löschen von IP-Zulassungslisten- und IP-Zulassungslisten-Bindungen ermöglichen |
 | Netzwerkinfrastruktur-Management | Benutzer können Netzwerkinfrastruktur erstellen/bearbeiten/löschen |

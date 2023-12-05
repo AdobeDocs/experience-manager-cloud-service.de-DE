@@ -2,10 +2,10 @@
 title: Wie richte ich eine lokale Entwicklungsumgebung für AEM Forms ein?
 description: Einrichten einer lokalen Entwicklungsumgebung für Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2846'
-ht-degree: 94%
+source-wordcount: '2682'
+ht-degree: 95%
 
 ---
 
@@ -89,7 +89,7 @@ Herunterladen der neuesten Version von Adobe Experience Manager as a Cloud Servi
 1. Navigieren Sie zur Registerkarte **[!UICONTROL AEM as a Cloud Service]**.
 1. Sortieren Sie in absteigender Reihenfolge nach dem Veröffentlichungsdatum.
 1. Klicken Sie auf das neueste Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms Feature Archiv (AEM Forms-Add-on), die Formularverweis-Assets oder Forms Designer.
-1. Lesen und akzeptieren Sie den Endbenutzer-Lizenzvertrag. Tippen Sie auf die Schaltfläche **[!UICONTROL Herunterladen]**.
+1. Lesen und akzeptieren Sie den Endbenutzer-Lizenzvertrag. Klicken Sie auf die Schaltfläche **[!UICONTROL Herunterladen]**.
 
 ## Einrichten von Entwicklungs-Tools für AEM-Projekte {#setup-development-tools-for-AEM-projects}
 
@@ -241,7 +241,7 @@ Verwenden Sie dieses Projekt, um adaptive Formulare zu erstellen, Konfigurations
 >[!NOTE]
 >
 > Richten Sie ein auf AEM-Archetyp Version 30 oder höher basierendes Projekt ein, um Microsoft® Dynamics 365- und Salesforce-Formulardatenmodelle mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
->Richten Sie ein auf AEM-Archetyp Version 32 oder höher basierendes Projekt ein, um Tranquil-, Urbane- und Ultramarine-Designs mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
+Richten Sie ein auf AEM-Archetyp Version 32 oder höher basierendes Projekt ein, um Tranquil-, Urbane- und Ultramarine-Designs mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
 
 Einrichten des Projekts:
 
@@ -268,7 +268,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
      >[!WARNING]
      >
-     >* Wenn Sie ein Archetyp-Projekt mit Version 45 erstellen, wird die [AEM Archetyp-Projektordner]/pom.xml legt die Forms-Kernkomponenten-Version zunächst auf 2.0.64 fest. Aktualisieren Sie vor dem Erstellen oder Bereitstellen des Archetypprojekts die Version der Formular-Kernkomponenten auf 2.0.62.
+     * Wenn Sie ein Archetyp-Projekt mit Version 45 erstellen, wird die [AEM Archetyp-Projektordner]/pom.xml legt die Forms-Kernkomponenten-Version zunächst auf 2.0.64 fest. Aktualisieren Sie vor dem Erstellen oder Bereitstellen des Archetypprojekts die Version der Formular-Kernkomponenten auf 2.0.62.
 
 1. Stellen Sie das Projekt in Ihrer lokalen Entwicklungsumgebung bereit. Sie können folgenden Befehl verwenden, um die Bereitstellung für Ihre lokale Entwicklungsumgebung durchzuführen.
 
@@ -335,7 +335,7 @@ Ihre lokale Entwicklungsumgebung ist bereit.
 
 ## Aktivieren der Kernkomponenten für adaptive Formulare in AEM Forms as a Cloud Service und lokaler Entwicklungsumgebung
 
-Durch die Aktivierung der adaptiven Forms-Kernkomponenten in AEM Forms as a Cloud Service können Sie mit der Erstellung, Veröffentlichung und Bereitstellung von Kernkomponenten auf Basis von Adaptive Forms und Headless Forms beginnen, indem Sie Ihre AEM Forms-Cloud Service-Instanzen für mehrere Kanäle verwenden. Sie benötigen eine Umgebung mit aktivierten Kernkomponenten für adaptive Formulare, um adaptive Headless-Formulare zu verwenden.
+Durch die Aktivierung der Kernkomponenten für adaptive Formulare in AEM Forms as a Cloud Service können Sie mit der Erstellung, Veröffentlichung und Bereitstellung von auf Kernkomponenten basierenden adaptiven Formularen und Headless-Formularen beginnen, und das mithilfe Ihrer Instanzen von AEM Forms as a Cloud Service für mehrere Kanäle. Sie benötigen eine Umgebung mit aktivierten Kernkomponenten für adaptive Formulare, um adaptive Headless-Formulare zu verwenden.
 
 Anweisungen finden Sie unter [Aktivieren der Kernkomponenten für adaptive Formulare in AEM Forms as a Cloud Service und lokaler Entwicklungsumgebung](/help/forms/enable-adaptive-forms-core-components.md)
 

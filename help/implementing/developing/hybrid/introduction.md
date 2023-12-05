@@ -2,9 +2,9 @@
 title: Einführung in SPAs und exemplarische Anleitung
 description: In diesem Artikel werden die Konzepte einer SPA vorgestellt und die Nutzung einer einfachen SPA zur Inhaltserstellung erläutert. Außerdem wird gezeigt, wie eine SPA mit dem zugrunde liegenden AEM-SPA-Editor in Beziehung steht.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2045'
 ht-degree: 93%
 
 ---
@@ -38,7 +38,7 @@ Die exemplarische Anleitung basiert auf AEM-Standardfunktionen und der beispielh
 
 >[!CAUTION]
 >
->In diesem Dokument dient die [WKND-SPA-Projekt-App](https://github.com/adobe/aem-guides-wknd-spa) ausschließlich zu Demonstrationszwecken. Sie sollte nicht für Projektaufgaben verwendet werden.
+>In diesem Dokument dient die [WKND-SPA-Projekt-App](https://github.com/adobe/aem-guides-wknd-spa) ausschließlich zu Demonstrationszwecken. Verwenden Sie es nicht für Projektarbeiten.
 
 >[!TIP]
 >

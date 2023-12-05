@@ -4,10 +4,10 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: 'Verwenden Sie AEM Forms Workflow, um Geschäftsprozessabläufe zu automatisieren und schnell zu erstellen. Beispiele sind: Überprüfung und Genehmigung, PDF-Generierung, Adobe Sign-Workflows.'
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2392'
-ht-degree: 99%
+source-wordcount: '2373'
+ht-degree: 95%
 
 ---
 
@@ -65,8 +65,8 @@ Im Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt, der v
 
 1. Öffnen Sie die Workflow-Modell-Konsole für Arbeitsablaufmodelle. Die Standardeinstellung ist `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Wählen Sie **Erstellen** und dann **Modell erstellen** aus. Das Dialogfeld „Workflow-Modell hinzufügen“ wird angezeigt.
-1. Geben Sie den **Titel** und den **Namen** ein (optional). Beispiel: Hypothekenantrag. Tippen Sie auf **Fertig**.
-1. Wählen Sie das erstellte Workflow-Modell aus und tippen Sie auf **Bearbeiten**. Jetzt können Sie Workflow-Schritte hinzufügen, um Geschäftslogik zu erstellen. Wenn Sie ein Workflow-Modell neu erstellen, enthält es zunächst:
+1. Geben Sie den **Titel** und den **Namen** ein (optional). Beispiel: Hypothekenantrag. Klicken Sie auf **Fertig**.
+1. Wählen Sie das erstellte Workflow-Modell aus und wählen Sie **Bearbeiten**. Jetzt können Sie Workflow-Schritte hinzufügen, um Geschäftslogik zu erstellen. Wenn Sie ein Workflow-Modell neu erstellen, enthält es zunächst:
 
    * Die Schritte Fluss-Start und Fluss-Ende. Diese stellen den Anfang und das Ende des Workflows dar. Diese Schritte sind erforderlich und können nicht bearbeitet oder entfernt werden.
    * Einen Teilnehmer-Beispielschritt mit der Bezeichnung „Schritt 1“. Dieser Schritt ist so konfiguriert, dass er dem Admin-Benutzer ein Arbeitselement zuordnet. Entfernen Sie diesen Schritt.
@@ -79,7 +79,7 @@ Im Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt, der v
 
 1. Erstellen Sie Workflow-Phasen. Ein Workflow kann mehrere Phasen haben. Diese Phasen werden im AEM-Posteingang angezeigt und informieren über den Fortschritt des Workflows.
 
-   Um einen Schritt zu definieren, tippen Sie auf das Symbol ![info-circle](assets/info-circle.png), um die Eigenschaften des Workflow-Modells zu öffnen. Öffnen Sie die Registerkarte **Schritte**, fügen Sie Schritte für das Workflow-Modell hinzu und tippen Sie auf **Speichern und Schließen**. Für einen Hypothekenantrag könnten Sie beispielsweise die folgenden Schritte erstellen: Darlehensantrag, Status des Darlehensantrags, zu signierende Dokumente und signiertes Antragsdokument.
+   Um eine Phase zu definieren, wählen Sie die ![info-circle](assets/info-circle.png) -Symbol, um die Eigenschaften des Workflow-Modells zu öffnen, öffnen Sie die **Phasen** Registerkarte, Hinzufügen von Bühnen für das Workflow-Modell und Auswählen **Speichern und schließen**. Für einen Hypothekenantrag könnten Sie beispielsweise die folgenden Schritte erstellen: Darlehensantrag, Status des Darlehensantrags, zu signierende Dokumente und signiertes Antragsdokument.
 
 1. Ziehen Sie den Workflow **Aufgaben zuweisen** per Drag-and-Drop in das Workflow-Modell. Definieren Sie ihn als ersten Schritt im Modell.
 
@@ -91,7 +91,7 @@ Im Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt, der v
 
    Für das Beispiel mit dem Hypothekenantrag konfigurieren Sie den Schritt „Aufgabe zuweisen“ so, dass ein schreibgeschütztes adaptives Formular verwendet und das PDF-Dokument angezeigt werden soll, sobald die Aufgabe abgeschlossen ist. Wählen Sie auch die Benutzergruppe aus, die zum Genehmigen des Darlehensantrags berechtigt ist. Deaktivieren Sie auf der Registerkarte **Aktionen** die Option **Senden**. Erstellen Sie eine **actionTaken**-Variable vom Datentyp „String“ (Zeichenfolge) und geben Sie die Variable als **Route-Variable** an. Ein Beispiel: actionTaken. Fügen Sie außerdem die Routen zu „Genehmigen“ und „Ablehnen“ hinzu. Die Routen werden als separate Aktionen (Schaltflächen) im AEM-Posteingang angezeigt. Der Workflow wählt eine Verzweigung basierend auf der Aktion (Schaltfläche) aus, auf die Benutzende tippen.
 
-   Sie können das Beispielpaket importieren, das am Anfang des Abschnitts zum Download zur Verfügung steht, um sämtliche Werte aller Felder im Schritt „Aufgabe zuweisen“ zu erhalten, der für das Beispiel des Hypothekenantrags konfiguriert wurde.
+   Sie können das Beispielpaket, das zu Beginn des Abschnitts heruntergeladen werden kann, für den vollständigen Wertesatz aller Felder des Schritts &quot;Aufgabe zuweisen&quot;importieren, der beispielsweise für den Hypothekenantrag konfiguriert ist.
 
 1. Ziehen Sie die Komponente „ODER-Teilung“ per Drag-and-Drop aus der Seitenleiste in das Workflow-Modell. Die ODER-Teilung erstellt eine Verzweigung im Workflow, nach der nur einer der beiden Zweige aktiv bleibt. Mit diesem Schritt können Sie bedingte Verarbeitungspfade in einem Workflow einrichten. Sie fügen jeder Verzweigung nach Bedarf Workflow-Schritte hinzu.
 
@@ -117,7 +117,7 @@ Im Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt, der v
 
    Fügen Sie für das Hypothekenbeispiel einen Schritt zum Generieren des Datensatzdokuments, zwei Schritte zum Zuweisen einer Aufgabe und einen Schritt zum Signieren des Dokuments zur Verzweigung 1 des Modells hinzu, wie in der Abbildung unten gezeigt. Ein Schritt „Aufgabe zuweisen“ dient zum Anzeigen und Senden **zu unterzeichnender Darlehensdokumente an den Antragsteller** und der zweite Schritt „Aufgabe zuweisen“ dient zum **Anzeigen der unterzeichneten Dokumente**. Fügen Sie der Verzweigung 2 eine Komponente „Aufgabe zuweisen“ hinzu. Diese Verzweigung wird aktiviert, wenn ein Benutzer im AEM-Posteingang auf „Ablehnen“ klickt.
 
-   Um den vollständigen Satz der Werte aller Felder für die Schritte „Aufgabe zuweisen“ sowie die Schritte für das Datensatzdokument und zum Unterzeichnen des Dokuments zu erhalten, die für den Beispielhypothekenantrag konfiguriert sind, importieren Sie das Beispielpaket, das am Anfang dieses Abschnitts zur Verfügung steht.
+   Für den vollständigen Satz von Werten aller Felder der Schritte &quot;Aufgabe zuweisen&quot;, &quot;Schritt des Datensatzdokuments&quot;und &quot;Schritt des Dokuments signieren&quot;, die wie z. B. Hypothekenanwendung konfiguriert sind, importieren Sie das Beispielpaket, das zu Beginn dieses Abschnitts heruntergeladen werden kann.
 
    Das Workflow-Modell ist einsatzbereit. Sie können den Workflow mit verschiedenen Methoden starten. Weitere Informationen finden Sie unter [Starten eines formularzentrierten Workflows in OSGi](#launch).
 
@@ -214,7 +214,7 @@ Sie können die Übermittlungsaktionen eines adaptiven Formulars so konfiguriere
 An administrator (a member of fd-administrators group) can configure a network folder to run a pre-configured workflow when a user places a file (such as a PDF file) in the folder. After the workflow completes, it can save the result file to a specified output folder. Such a folder is known as [Watched Folder](watched-folder-in-aem-forms.md). Perform the following procedure to configure a watched folder to launch a workflow:
 
 1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. A list of already configured watched folders is displayed.
-1. Tap **[!UICONTROL New]**. A list of fields is displayed. Specify a value for the following fields to configure a Watched Folder for a workflow:
+1. Select **[!UICONTROL New]**. A list of fields is displayed. Specify a value for the following fields to configure a Watched Folder for a workflow:
 
 <table>
  <tbody>
@@ -245,7 +245,7 @@ An administrator (a member of fd-administrators group) can configure a network f
  </tbody>
 </table>
 
-1. Tap **Advanced**. Specify a value for the following field and taps **Create**. The Watched Folder is configured to launch a workflow. Now, whenever a file is placed in the input directory of the Watched Folder, the specified workflow is triggered.
+1. Select **Advanced**. Specify a value for the following field and taps **Create**. The Watched Folder is configured to launch a workflow. Now, whenever a file is placed in the input directory of the Watched Folder, the specified workflow is triggered.
 
    | Field |Description |
    |---|---|

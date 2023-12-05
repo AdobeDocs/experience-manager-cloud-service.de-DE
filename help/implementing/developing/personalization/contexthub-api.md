@@ -2,9 +2,9 @@
 title: Verweis auf die ContextHub-JavaScript-API
 description: Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die ContextHub-Komponente zur Seite hinzugefügt wurde.
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4613'
+source-wordcount: '4602'
 ht-degree: 98%
 
 ---
@@ -162,7 +162,7 @@ Führt ein Datenobjekt oder ein Array mit den Store-Daten zusammen. Jedes Schlü
 * **Objekt:** Schlüssel sind die Eigenschaftsnamen.
 * **Array:** Schlüssel sind die Array-Indizes.
 
-Beachten Sie, dass Werte Objekte sein können.
+Werte können Objekte sein.
 
 ##### Parameter {#parameters-addallitems}
 

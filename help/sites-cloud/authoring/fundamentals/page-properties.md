@@ -2,10 +2,10 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Erfahren Sie, wie Sie die Eigenschaften definieren, die für die Verwaltung einer Seite in AEM erforderlich sind.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2270'
-ht-degree: 93%
+source-wordcount: '2268'
+ht-degree: 90%
 
 ---
 
@@ -98,7 +98,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    * **Sprache** – Die Seitensprache
    * **Sprachstamm** – Muss aktiviert werden, wenn die Seite als Stamm einer Sprachkopie fungiert.
-   * **Umleiten** – Gibt die Seite an, zu der diese Seite automatisch umgeleitet werden soll. mit HTML-Status `302 Found`.
+   * **Umleiten** - Gibt die Seite an, zu der diese Seite automatisch mit einer HTML umgeleitet werden soll `302 Found` -Status.
       * **Ständige Umleitung** – Wenn diese Option aktiviert ist, wird die Seite zum Zielpfad weitergeleitet, der zusammen mit dem HTML-Status `301 Moved Permanently` bereitgestellt wird.
    * **Design** – Gibt an, ob die Seite in der Seitennavigation der resultierenden Seite ein- oder ausgeblendet sein soll.
    * **Alias** – Gibt einen Alias an, der für diese Seite verwendet werden soll.
@@ -323,12 +323,12 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
       * Wenn Sie die Seitenauswahl auf eine Seite reduzieren, sind alle Eigenschaften sichtbar.
    * Gemeinsame Eigenschaften mit einem gemeinsamen Wert
       * Nur Eigenschaften mit einem gemeinsamen Wert werden im Ansichtsmodus angezeigt.
-      * Wenn das Feld mehrwertig ist (z. B. Tags), werden nur Werte angezeigt, die *alle* gleich sind. Wenn nur einige gleich sind, werden diese nur bei der Bearbeitung angezeigt.
+      * Wenn das Feld mehrwertig ist (z. B. Tags), werden Werte nur angezeigt, wenn *all* sind häufig. Wenn nur einige häufig vorkommen, werden sie nur bei der Bearbeitung angezeigt.
       * Wenn keine Eigenschaften mit einem gemeinsamen Wert vorhanden sind, wird eine Meldung angezeigt.
 
 * **Bearbeiten**
 
    * Sie können die Werte in den verfügbaren Feldern aktualisieren.
       * Die neuen Werte werden auf alle gewählten Seiten angewendet, wenn Sie **Fertig** wählen.
-      * Wenn es sich um ein mehrwertiges Feld handelt (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
+      * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
    * Felder, die häufig vorkommen, aber auf den verschiedenen Seiten unterschiedliche Werte haben, werden durch einen speziellen Wert angegeben, beispielsweise `<Mixed Entries>`.

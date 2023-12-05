@@ -2,10 +2,10 @@
 title: Teilnehmen an Workflows
 description: Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1507'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
@@ -33,7 +33,7 @@ Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), w
   ![Benachrichtigungen im Posteingang](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * Wenn Sie den Seiteneditor verwenden, wird in der Statusleiste Folgendes angezeigt:
-   * Der Name des Workflows, der auf die Seite angewendet wird; z. B. „Aktivierungsanfrage“.
+   * Der Name des Workflows, der auf die Seite angewendet wird (z. B. Aktivierungsanfrage).
    * Alle Aktionen, die dem momentanen Benutzer bzw. der Benutzerin für den aktuellen Workflow-Schritt zur Verfügung stehen, z. B. „Fertigstellen“, „Delegieren“ oder „Details anzeigen“.
    * Die Anzahl der Workflows, denen die Seite unterliegt. Sie haben folgende Möglichkeiten:
       * Die Pfeiltasten links/rechts verwenden, um durch die Statusinformationen der verschiedenen Workflows zu navigieren.

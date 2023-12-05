@@ -5,10 +5,10 @@ uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 95%
+source-wordcount: '1109'
+ht-degree: 92%
 
 ---
 
@@ -23,7 +23,7 @@ Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
 
 ## Verwenden des Instanzmanagers über Skripte  {#using-instance-manager-via-scripts-nbsp}
 
-1. Wählen Sie im Bearbeitungsmodus einen Bereich und tippen Sie dann auf ![cmppr](assets/cmppr.png). Aktivieren Sie in der Randleiste unter „Eigenschaften“ **[!UICONTROL Bereich wiederholbar machen]**. Geben Sie Werte für die Felder **[!UICONTROL Maximum]** und **[!UICONTROL Minimum]** an.
+1. Wählen Sie im Bearbeitungsmodus einen Bereich aus und wählen Sie dann ![cmppr](assets/cmppr.png). Aktivieren Sie in der Randleiste unter „Eigenschaften“ **[!UICONTROL Bereich wiederholbar machen]**. Geben Sie Werte für die Felder **[!UICONTROL Maximum]** und **[!UICONTROL Minimum]** an.
 
    Das Feld „Maximum“ gibt an, wie oft ein Panel maximal auf der Seite angezeigt werden kann. Sie können „-1“ im Feld „Maximale Anzahl“ angeben, damit das Panel beliebig oft angezeigt werden kann.
 
@@ -35,7 +35,7 @@ Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
 
 1. Der übergeordnete Bereich, der wiederholt werden soll, sollte Schaltflächen zum Hinzufügen und Löschen enthalten, um Instanzen der wiederholbaren Bereiche zu verwalten. Führen Sie die folgenden Schritte aus, um Schaltflächen in das übergeordnete Element einzufügen und Skripte auf den Schaltflächen zu aktivieren:
 
-   1. Ziehen Sie eine Schaltflächenkomponente per Drag-and-Drop aus der Randleiste in das übergeordnete Element des Bereichs. Wählen Sie die Komponente aus und tippen Sie auf ![edit-rules](assets/edit-rules.png). Die Regeln der Schaltfläche werden im Regeleditor geöffnet.
+   1. Ziehen Sie eine Schaltflächenkomponente per Drag-and-Drop aus der Randleiste in das übergeordnete Element des Bereichs. Wählen Sie die Komponente aus und wählen Sie ![edit-rules](assets/edit-rules.png). Die Regeln der Schaltfläche werden im Regeleditor geöffnet.
    1. Klicken Sie im Fenster des Regeleditors auf **Erstellen**.
 
       Wählen Sie in der Zeile „Formularobjekte“ und „Funktionen“ **Visual Editor.**
@@ -95,8 +95,8 @@ Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
 
 Ein Panel verfügt über verschiedene Layout-Optionen. Die Option zum Layout für das Akkordeon-Design bietet standardmäßig Unterstützung für wiederholbare Bereiche. Führen Sie die folgenden Schritte aus, um einen wiederholbaren Bereich mit der Option zum Layout für das Akkordeon-Design zu erstellen:
 
-1. Klicken Sie im übergeordneten Element des zu wiederholenden Bereichs auf ![cmppr](assets/cmppr.png). Sie können die Eigenschaften in der Randleiste einsehen. Wählen Sie in der Dropdown-Liste **Layout** die Option **Akkordeon**.
-1. Tippen Sie in einem Bereich, der wiederholt werden soll, auf ![cmppr](assets/cmppr.png). Sie können die Eigenschaften des Bereichs in der Randleiste anzeigen. Aktivieren Sie die Registerkarte **Bereich wiederholbar machen** und geben Sie Werte für die Felder **Maximum** und **Minimum** ein.
+1. Wählen Sie im übergeordneten Element des zu wiederholenden Bereichs die Option ![cmppr](assets/cmppr.png). Sie können die Eigenschaften in der Randleiste einsehen. Wählen Sie in der Dropdown-Liste **Layout** die Option **Akkordeon**.
+1. Wählen Sie in einem Bereich, der wiederholt werden soll, ![cmppr](assets/cmppr.png). Sie können die Eigenschaften des Bereichs in der Randleiste anzeigen. Aktivieren Sie die Registerkarte **Bereich wiederholbar machen** und geben Sie Werte für die Felder **Maximum** und **Minimum** ein.
 
    Jetzt können Sie die Schaltflächen Plus (+) und Löschen (![delete-panel](assets/delete-panel.png)) verwenden, um Bereiche hinzuzufügen und zu entfernen.
 

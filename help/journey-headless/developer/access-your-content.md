@@ -2,10 +2,10 @@
 title: Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs
 description: In diesem Teil der AEM Headless-Entwickler-Tour lernen Sie, wie Sie GraphQL-Abfragen verwenden, um auf den Inhalt Ihrer Inhaltsfragmente zuzugreifen.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1366'
-ht-degree: 98%
+source-wordcount: '1335'
+ht-degree: 97%
 
 ---
 
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Bevor Sie mit Abfragen zu Ihren Inhalten beginnen, müssen Sie Folgendes tun:
 
 * Aktivieren des Endpunkts
-   * Verwenden von „Tools“ > „Allgemein“ > „GraphQL“
+   * Tools > Allgemein > GraphQL verwenden
    * [Aktivieren des GraphQL-Endpunkts](/help/headless/graphql-api/graphql-endpoint.md)
       * Dadurch wird auch die GraphiQL-IDE aktiviert.
 
@@ -269,7 +269,7 @@ Die Fragmentmodelle werden verwendet:
 
 Die Abfragen können in der GraphiQL-Benutzeroberfläche eingegeben werden. Sie können auf den Abfrage-Editor wie folgt zugreifen:
 
-* **Tools** > **Allgemein** > **GraphQL-Abfrage-Editor**
+* **Instrumente** > **Allgemein** > **GraphQL Query Editor**
 * Direkt, zum Beispiel: `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL-Oberfläche](assets/graphiql-interface.png "GraphiQL-Oberfläche")

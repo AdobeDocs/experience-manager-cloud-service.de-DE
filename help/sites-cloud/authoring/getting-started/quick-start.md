@@ -2,10 +2,10 @@
 title: Schnellstartanleitung zum Verfassen von Seiten (Authoring)
 description: Ein kurzer, allgemeiner Leitfaden mit den ersten Schritten zur Seitenbearbeitung
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1541'
-ht-degree: 84%
+ht-degree: 79%
 
 ---
 
@@ -47,7 +47,7 @@ Bevor Sie mit der Schnellstartanleitung beginnen, hier eine kleine Sammlung von 
       * [Vorschaumodus](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [Als veröffentlicht anzeigen](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
-* Versionen werden nicht im Seiten-Editor gestartet/erstellt. Dies erfolgt jetzt über die Konsole **Sites** (über **Erstellen** oder [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) für die jeweilige Ressource).
+* Versionen werden nicht über den Seiteneditor gestartet/erstellt. Dies erfolgt nun über die **Sites** Konsole (über **Erstellen** oder [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) für eine ausgewählte Ressource).
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Es gibt verschiedene Möglichkeiten, eine Seite zu finden: Sie können navigiere
 
 1. Öffnen Sie die **Sites-Konsole** (über die Option **Sites** in der [Globalen Navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) – dies wird ausgelöst (Dropdown), wenn Sie auf den Link „Adobe Experience Manager“ klicken.
 
-1. Navigieren Sie durch Tippen/Klicken auf die entsprechende Seite in der Baumstruktur nach unten. Die Darstellung der Seitenressourcen ist von der verwendeten Ansicht abhängig: [Karte, Liste oder Spalte](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
+1. Navigieren Sie in der Struktur nach unten, indem Sie auf die entsprechende Seite tippen/klicken. Wie die Seitenressourcen dargestellt werden, hängt von der verwendeten Ansicht ab - [Karte, Liste oder Spalte](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
 
    ![Anzeigen der Auswahl-Dropdown-Liste](/help/sites-cloud/authoring/assets/views.png)
 
@@ -103,7 +103,7 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
 
    * Wechseln Sie in den Auswahlmodus, indem Sie [die gewünschte Ressource auswählen](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources). Wie Sie dies durchführen, hängt von Ihrem Gerät ab:
 
-      * Auf einem Mobilgerät: Tippen und halten Sie die Karte
+      * Auf einem Mobilgerät: Karte auswählen und halten
       * Auf einem Desktop-Gerät: Verwenden Sie den durch das Häkchen-Symbol dargestellten [Schnellzugriff](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions):
 
    * Auf der Karte wird die ausgewählte Seite durch ein Häkchen gekennzeichnet.
@@ -148,7 +148,7 @@ So bearbeiten Sie Ihre Seite:
    * [Den Inhalt einer vorhandenen Komponente](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) auf der Seite bearbeiten:
 
       * Öffnen Sie die Komponenten-Symbolleiste mit einer der beiden Optionen. Öffnen Sie das Dialogfeld über das Symbol **Bearbeiten** (Bleistift).
-      * Öffnen Sie den Editor für Bearbeitung in Kontext durch langes Tippen oder langsamen Doppelklick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine begrenzte Auswahl).
+      * Öffnen Sie den Editor für die Bearbeitung an Ort und Stelle für die Komponente durch Auswählen und Halten oder durch einen doppelten langsamen Klick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine begrenzte Auswahl).
       * Um alle verfügbaren Aktionen anzuzeigen, gehen Sie wie folgt in den Vollbildmodus:
 
         ![Schaltfläche „Vollbild“](/help/sites-cloud/authoring/assets/full-screen.png)

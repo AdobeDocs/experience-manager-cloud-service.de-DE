@@ -4,10 +4,10 @@ description: Verwenden Sie die Tabellenkomponente, um einem adaptiven Formular T
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2494'
-ht-degree: 97%
+source-wordcount: '2476'
+ht-degree: 94%
 
 ---
 
@@ -89,7 +89,7 @@ Um eine Spalte hinzuzufügen oder zu löschen, klicken Sie auf die Textzelle im 
 
 Sie können der Tabelle eine Beschreibung hinzufügen, die erklärt, wie die Daten aufgebaut sind, damit sie von Bildschirmlesehilfen interpretiert und ausgelesen werden können. Hinzufügen der Beschreibung:
 
-1. Wählen Sie die Tabelle aus und tippen Sie auf ![cmppr](assets/cmppr.png), damit ihre Eigenschaften in der Seitenleiste angezeigt werden.
+1. Wählen Sie die Tabelle aus und wählen Sie ![cmppr](assets/cmppr.png) , um die Eigenschaften in der Seitenleiste anzuzeigen.
 1. Geben Sie in der Registerkarte „Barrierefreiheit“ eine Zusammenfassung an.
 1. Klicken Sie auf **Fertig**.
 
@@ -107,9 +107,9 @@ Um eine Sortierung auf Tabellenspalten anzuwenden, müssen die Zellen der Tabell
 
 So aktivieren Sie die Sortierung:
 
-1. Wählen Sie die Tabelle aus und tippen Sie auf ![configure_icon](assets/configure_icon.png) (Konfigurieren). Sie können die Tabelle auch mithilfe des **Inhalt**-Browsers in der Seitenleiste der interaktiven Kommunikation auswählen.
+1. Wählen Sie die Tabelle aus und wählen Sie ![configure_icon](assets/configure_icon.png) (Konfigurieren). Sie können die Tabelle auch mithilfe des **Inhalt**-Browsers in der Seitenleiste der interaktiven Kommunikation auswählen.
 1. Wählen Sie **Sortierung aktivieren** aus.
-1. Tippen Sie auf ![done_icon](assets/done_icon.png), um die Tabelleneigenschaften zu speichern. Die Sortiersymbole (Auf- und Ab-Pfeile) in Spaltenüberschriften zeigen an, dass die Sortierung aktiviert wurde.
+1. Auswählen ![done_icon](assets/done_icon.png) , um die Tabelleneigenschaften zu speichern. Die Sortiersymbole (Auf- und Ab-Pfeile) in Spaltenüberschriften zeigen an, dass die Sortierung aktiviert wurde.
 
    ![Sortieren aktivieren](assets/enable_sorting_new.png)
 
@@ -128,7 +128,7 @@ So aktivieren Sie die Sortierung:
 
 Führen Sie die folgenden Schritte aus, um die Spaltenbreite für eine Tabelle festzulegen:
 
-1. Tippen Sie auf der **[!UICONTROL Inhalt]**-Registerkarte auf die Komponente **[!UICONTROL Tabelle]** und tippen Sie auf das Konfigurieren-Symbol (![Konfigurieren](assets/configure-icon.svg)).
+1. Im **[!UICONTROL Inhalt]** auswählen, wählen Sie die **[!UICONTROL Verzeichnis]** und wählen Sie die Komponente Konfigurieren (![Konfigurieren](assets/configure-icon.svg)).
 
 1. Um die Proportionalbreite jeder Spalte der Tabelle festzulegen, müssen die jeweiligen Werte als durch Kommas getrennte Liste in das Feld **[!UICONTROL Spaltenbreite]** eingetragen werden. Beispiel: Für eine Tabelle mit 3 Spalten führt die Eingabe des Werts „2,4,6“ in das **[!UICONTROL Spaltenbreite]**-Feld dazu, dass die Spaltenbreite für die erste Spalte auf 2/12, für die zweite auf 4/12 und für die dritte auf 6/12 eingestellt wird. 2/12 als Spaltenbreite für die erste Spalte entspricht einem Sechstel der Tabellenbreite. Parallel dazu wird mit dem Wert 4/12 die Breite der zweiten Spalte auf ein Drittel der Tabellenbreite und mit 6/12 die Breite der dritten Spalte auf die Hälfte der Tabellenbreite eingestellt.
 
@@ -136,9 +136,9 @@ Führen Sie die folgenden Schritte aus, um die Spaltenbreite für eine Tabelle f
 
 Sie können den Stil für eine Tabelle definieren, indem Sie den Stilmodus in der Seitensymbolleiste verwenden. Führen Sie die folgenden Schritte aus, um in den Stilmodus zu wechseln und den Tabellenstil zu bearbeiten
 
-1. Tippen Sie in der Symbolleiste „Seite“ vor „Vorschau“ auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Stil**.
+1. Wählen Sie in der Seitensymbolleiste vor der Vorschau die Option ![Arbeitsfläche-Dropdown](assets/canvas-drop-down.png) > **Stil**.
 
-1. Wählen Sie in der Seitenleiste die Tabelle aus und tippen Sie auf die Schaltfläche zum Bearbeiten ![edit_button](assets/edit-button.png).
+1. Wählen Sie in der Seitenleiste die Tabelle aus und klicken Sie auf die Schaltfläche &quot;Bearbeiten&quot; ![edit-button](assets/edit-button.png).
 Die Stileigenschaften werden in der Seitenleiste angezeigt.
 
 ![Anpassen der Stileigenschaften einer Tabelle](assets/style-table.png)
@@ -151,7 +151,7 @@ Die Stileigenschaften werden in der Seitenleiste angezeigt.
 
 Tabellen unterstützen standardmäßig das dynamische Hinzufügen oder Löschen von Zeilen zur Laufzeit.
 
-1. Wählen Sie eine Tabellenzeile aus und tippen Sie auf ![cmppr](assets/cmppr.png).
+1. Tabellenzeile auswählen und ![cmppr](assets/cmppr.png).
 1. Geben Sie auf der Registerkarte „Wiederholungseinstellungen“ die Mindest- und Höchstanzahl der Zeilen in der Tabelle an.
 1. Klicken Sie auf **Fertig**.
 
@@ -328,7 +328,7 @@ Darüber hinaus können Sie eine Gruppe von komplexen XSD-Typelementen ablegen, 
 * Wenn Sie beim Erstellen einer XSD-basierten Tabelle Zeilen nach oben und unten verschieben, kommt es zu einem gewissen Datenverlust in der Daten-XML, die beim Absenden des Formulars erzeugt wird.
 * Jeder Textzelle in einer Standardtabelle ist ein vordefinierter Elementname zugeordnet. Wenn Sie eine weitere Tabelle in dem adaptiven Formular hinzufügen, erhalten die Standardtextzellen in der neuen Tabelle denselben Elementnamen wie in der ersten Tabelle. In diesem Fall enthalten die Daten, die beim Übermitteln des Formulars generiert werden, nur Daten in den Standardtextzellen einer der Tabellen. Stellen Sie daher sicher, dass Sie die Elementnamen für Standardtextzellen umbenennen, um sie in allen Tabellen eindeutig zu halten und Datenverlust zu vermeiden.
 
-  Beachten Sie, dass dies lediglich für die standardmäßigen Textzellen gilt. Wenn Sie einer Tabelle weitere Zeilen oder Spalten hinzufügen, werden automatisch eindeutige Elementnamen für nicht standardmäßige Textzellen generiert.
+  Gilt nur für die Standardtextzellen. Wenn Sie einer Tabelle weitere Zeilen oder Spalten hinzufügen, werden automatisch eindeutige Elementnamen für nicht standardmäßige Textzellen generiert.
 
 ## Siehe auch {#see-also}
 

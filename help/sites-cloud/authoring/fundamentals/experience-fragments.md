@@ -2,10 +2,10 @@
 title: Experience Fragments
 description: Verwenden Sie Experience Fragments von Adobe Experience Manager as a Cloud Service, um Ihre Erlebnisse wiederverwendbar und flexibel zu gestalten.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 98%
+source-wordcount: '2035'
+ht-degree: 97%
 
 ---
 
@@ -68,7 +68,7 @@ Experience Fragments sollten in folgenden Fällen verwendet werden:
    * Beim Einbetten von Inhalten in Touchpoints von Drittanbietern.
 * Wenn Sie über ein Erlebnis mit unterschiedlichen Varianten oder Ausgabedarstellungen verfügen.
    * Kanal- oder kontextspezifische Varianten.
-   * Erlebnisse, die als Gruppe sinnvoll eingesetzt werden können (z. B. eine Kampagne, die abhängig vom jeweiligen Kanal unterschiedliche Erlebnisse liefert).
+   * Erlebnisse, die eine Gruppierung sinnvoll sind, z. B. eine Kampagne mit unterschiedlichen Erlebnissen über verschiedene Kanäle hinweg.
 * Wenn Sie Omni-Channel-Commerce betreiben.
    * Ermöglichen von Transaktionen an Touchpoints.
 
@@ -361,7 +361,7 @@ So personalisieren Sie Ihr Fragment:
    >
    >* ein Pfad, der eine Untergruppe der Stores enthält, die im für die Seite konfigurierten ContextHub definiert sind
    >
-   >Der ausgewählte **Segmentpfad** in der Registerkarte **Personalisierung** muss entweder:
+   >Die **Segmentpfad** in der **Personalisierung** muss entweder:
    >
    >* der gleiche Pfad wie der Pfad, der für die Seite konfiguriert wurde, auf der das Fragment gerendert wird
    >

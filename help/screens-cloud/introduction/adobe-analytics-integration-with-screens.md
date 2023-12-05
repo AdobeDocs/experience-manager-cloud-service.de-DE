@@ -1,22 +1,18 @@
 ---
 title: Adobe Analytics-Integration mit AEM Screens Cloud
-seo-title: Adobe Analytics Integration with AEM Screens
 description: Folgen Sie dieser Seite, um mehr über die vorkonfigurierte Integration von AEM Screens mit Adobe Analytics zu erfahren und einen Wiedergabenachweis zu erhalten.
-seo-description: Follow this page to learn about out of the box integration of AEM Screens with Adobe Analytics and provides you with a proof of play.
-uuid: 80d61af7-bf4d-46ca-a026-99a666c2e1a0
 contentOwner: trushton
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Cloud/SCREENS
 topic-tags: administering
-discoiquuid: b1a0e00e-0368-42c9-8bcd-5f00b4d0990c
 docset: aem65
 role: Admin, Developer
 level: Intermediate
 exl-id: e22242ce-e5ce-4486-bba4-e6a89ac4fb5e
-source-git-commit: 75d147886c8151f8b8ac41af907e17b5deff5a9c
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 82%
+source-wordcount: '408'
+ht-degree: 75%
 
 ---
 
@@ -49,7 +45,7 @@ Eine Integration von Adobe Analytics mit AEM Screens hat somit folgende *Ziele*:
 
 ## Architekturdetails {#architectural-details}
 
-Ein AEM Screens-Kunde möchte wissen, welche Inhalte wann wie lange angezeigt wurden (aggregiert). Dies ist eine gebräuchliche Funktion einer Signage-Lösung. Statt eigene Analysen zu erstellen, nutzt AEM Screens Adobe Analytics, um etwas branchenweit Einzigartiges zu ermöglichen: kanalübergreifende Analysen, die dabei helfen, lokale angezeigte Inhalte mit anderen Datenquellen zu korrelieren.
+Ein AEM Screens-Kunde möchte wissen, welche Inhalte wann wie lange angezeigt wurden (aggregiert). Dies ist eine gebräuchliche Funktion einer Signage-Lösung. Anstatt eigene Analysen zu erstellen, verwendet AEM Screens Adobe Analytics, und damit können Sie etwas Einzigartiges auf dem Markt erreichen - kanalübergreifende Analysen, die die Korrelation von lokal angezeigten Inhalten mit anderen Datenquellen ermöglichen.
 
 Im folgenden Architekturdiagramm wird die Integration von Adobe Analytics mit AEM Screens veranschaulicht:
 

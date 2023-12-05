@@ -2,16 +2,16 @@
 title: Wie können Designs erstellt und verwendet werden, um ein adaptives Formular zu gestalten?
 description: Verwenden Sie Designs für adaptive Formulare, um ein adaptives Formular zu gestalten und eine visuelle Identität bereitzustellen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '5578'
+source-wordcount: '5558'
 ht-degree: 98%
 
 ---
 
 # Erstellen und Verwenden von Designs {#creating-and-using-themes}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/creating-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -363,7 +363,7 @@ Wenn Sie eine Komponente auf der Arbeitsfläche auswählen, wird die Komponenten
 * **[!UICONTROL Widget „Numerisches Feld“]**: Ermöglicht Ihnen die Auswahl der Komponente, um ihr Erscheinungsbild in der Seitenleiste anzupassen.
 * **[!UICONTROL Widget „Feld“]**: Ermöglicht die Auswahl der allgemeinen Komponente für die Gestaltung. In diesem Beispiel werden alle Texteingabekomponenten (Textfeld/numerisches Feld/numerische Schritte/Datumseingabe) für die Formatierung ausgewählt.
 
-* ![Feldebene](assets/select_parent_icon.svg): Hiermit können Sie die übergeordnete Komponente für die Formatierung auswählen. Wenn Sie „Numerisches Feld“ auswählen und auf dieses Symbol tippen, wird die Feldkomponente ausgewählt. Wenn Sie die Feldkomponente auswählen und auf dieses Symbol tippen, wird das Bedienfeld ausgewählt. Wenn Sie mehrfach zur Auswahl auf dieses Symbol tippen, wählen Sie das Formularlayout für die Formatierung aus.
+* ![Feldebene](assets/select_parent_icon.svg): Hiermit können Sie die übergeordnete Komponente für die Formatierung auswählen. Wenn Sie numerisches Feld auswählen und dieses Symbol auswählen, wird die Feldkomponente ausgewählt. Wenn Sie die Feldkomponente auswählen und dieses Symbol auswählen, wird der Bereich ausgewählt. Wenn Sie mehrfach zur Auswahl auf dieses Symbol tippen, wählen Sie das Formularlayout für die Formatierung aus.
 
 >[!NOTE]
 >
@@ -589,7 +589,7 @@ Gehen Sie wie folgt vor, um ein Design zu kopieren:
 
 1. Navigieren Sie in der Author-Instanz zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Designs]**.
 1. Öffnen Sie den Ordner für die Designbibliothek.
-1. Setzen Sie im Ordner für die Designbibliothek den Mauszeiger auf das entsprechende vordefinierte Design und tippen Sie auf **[!UICONTROL Kopieren]**.
+1. Bewegen Sie im Ordner &quot;Designbibliothek&quot;den Mauszeiger über das entsprechende vordefinierte Design und wählen Sie **[!UICONTROL Kopieren]**.
 1. Fügen Sie das kopierte Design aus dem Design-Bibliotheks-Ordner ein.
 1. Passen Sie das kopierte Design an.
 

@@ -2,10 +2,10 @@
 title: Protokollieren für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Service verwenden können, um globale Parameter für den zentralen Protokollierungs-Dienst zu konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festzulegen oder die Datenprotokollierung anzufordern.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2753'
-ht-degree: 91%
+source-wordcount: '2720'
+ht-degree: 90%
 
 ---
 
@@ -190,14 +190,14 @@ Im Folgenden finden Sie Beispiele für die empfohlenen Protokollierungskonfigura
 
 Die HTTP-Anfrageprotokollierung von AEM as a Cloud Service bietet Einblick in die an AEM gesendeten HTTP-Anfragen und deren HTTP-Antworten in zeitlicher Reihenfolge. Dieses Protokoll ist hilfreich, um die HTTP-Anfragen an AEM und die Reihenfolge zu verstehen, in der sie verarbeitet und beantwortet werden.
 
-Der Schlüssel zum Verständnis dieses Protokolls liegt in der Zuordnung der HTTP-Anfrage- und Antwortpaare anhand ihrer Kennungen, die durch den numerischen Wert in den Klammern angegeben werden. Beachten Sie, dass zwischen Anfragen und den zugehörigen Antworten häufig andere HTTP-Anfragen und -Antworten im Protokoll stehen.
+Der Schlüssel zum Verständnis dieses Protokolls liegt in der Zuordnung der HTTP-Anfrage- und Antwortpaare anhand ihrer Kennungen, die durch den numerischen Wert in den Klammern angegeben werden. Häufig werden bei Anfragen und den zugehörigen Antworten andere HTTP-Anforderungen und -Antworten im Protokoll angezeigt.
 
 **Beispielprotokoll**
 
 ```
-29/Apr/2020:19:14:21 +0000 [137] -> POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:21 +0000 [137] > POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
-29/Apr/2020:19:14:22 +0000 [139] -> GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:22 +0000 [139] > GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
 29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
@@ -285,7 +285,7 @@ Dieser Satz an Protokollen bietet Einblicke in HTTP-Anfragen an die Veröffentli
 
 ### Apache HTTPD Web Server-Zugriffsprotokoll {#apache-httpd-web-server-access-log}
 
-Das Apache HTTP Web Server-Zugriffsprotokoll enthält Einträge für jede HTTP-Anfrage, die den Webserver/Dispatcher der Veröffentlichungsstufe erreicht. Beachten Sie, dass Anfragen, die von einem vorgelagerten CDN bereitgestellt werden, in diesen Protokollen nicht berücksichtigt werden.
+Das Apache HTTP Web Server-Zugriffsprotokoll enthält Einträge für jede HTTP-Anfrage, die den Webserver/Dispatcher der Veröffentlichungsstufe erreicht. Anforderungen, die von einem vorgelagerten CDN bereitgestellt werden, werden nicht in diesen Protokollen angezeigt.
 
 Informationen zum Fehlerprotokollformat finden Sie in der [offiziellen Dokumentation von Apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -534,7 +534,7 @@ Die CDN-Protokolle unterscheiden sich von den anderen Protokollen insofern, als 
 
 | **Feldname** | **Beschreibung** |
 |---|---|
-| *timestamp* | Der Zeitpunkt, zu dem die Anfrage nach der TLS-Beendigung gestartet wurde |
+| *timestamp* | Der Zeitpunkt, zu dem die Anfrage nach TLS-Beendigung gestartet wurde |
 | *ttfb* | Abkürzung für *Time To First Byte*. Das Zeitintervall vom Start der Anfrage bis zu dem Punkt, an dem das Streamen des Antworttexts begann. |
 | *cli_ip* | Die Client-IP-Adresse. |
 | *cli_country* | Der Alpha-2-Ländercode gemäß [ISO 3166-1](https://de.wikipedia.org/wiki/ISO_3166-1) mit zwei Buchstaben für das Client-Land. |
@@ -611,7 +611,7 @@ Kundinnen und Kunden mit Splunk-Konten können über das Kunden-Support-Ticket a
 
 Die Netzwerkbandbreite, die mit an Splunk gesendeten Protokollen verknüpft ist, wird als Teil der kundenseitigen Netzwerk-E/A-Nutzung betrachtet.
 
-Beachten Sie, dass die Splunk-Weiterleitung CDN-Protokolle noch nicht unterstützt.
+Die Splunk-Weiterleitung unterstützt CDN-Protokolle noch nicht.
 
 ### Aktivieren der Splunk-Weiterleitung {#enabling-splunk-forwarding}
 

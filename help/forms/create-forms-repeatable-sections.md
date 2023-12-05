@@ -3,10 +3,10 @@ title: So erstellen Sie wiederholbare Bedienfelder in den Kernkomponenten des ad
 description: Erfahren Sie, wie Sie wiederholbare Abschnitte oder Felder in einem adaptiven Formular erstellen.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 96%
+source-wordcount: '1256'
+ht-degree: 94%
 
 ---
 
@@ -48,7 +48,7 @@ Um ein Panel im Formular zu wiederholen oder wiederholbare Panels zu entfernen, 
 ![Registerkarte „Barrierefreiheit“](/help/forms/assets/repeat-panel.png)
 
 Um ein Panel wiederholbar zu machen, führen Sie die folgenden Schritte aus:
-1. Wählen Sie einen Panel-Container aus und tippen Sie auf ![cmppr](/help/forms/assets/cmppr.png).
+1. Wählen Sie einen Bereichscontainer aus und wählen Sie ![cmppr](/help/forms/assets/cmppr.png).
 1. Klicken Sie auf **Panel wiederholen** und schalten Sie den Umschalter auf **Panel wiederholbar machen** um.
 1. Legen Sie die **minimalen Wiederholungen** wie für die Mindestanzahl an wiederholbaren Abschnitten erforderlich fest. Sie können **Mindestwiederholungen** für nicht zu wiederholende Panels auf null setzen oder die wiederholten Panels entfernen. Standardmäßig ist der minimale Wert der Wiederholungen null.
 1. Legen Sie die **maximalen Wiederholungen** auf die erforderliche Anzahl von Wiederholungen fest. Der Wert ist standardmäßig unbegrenzt.
@@ -63,7 +63,7 @@ Um ein Panel wiederholbar zu machen, führen Sie die folgenden Schritte aus:
 
 Das übergeordnete Element des Panels, das wiederholt werden soll, muss Schaltflächen zum Hinzufügen enthalten, um eine wiederholbare Instanz des Panels zu verwalten. Führen Sie die folgenden Schritte aus, um Schaltflächen in das übergeordnete Element einzufügen und Skripte auf den Schaltflächen zu aktivieren:
 
-1. Fügen Sie eine **Schaltflächenkomponente** zum übergeordneten Element des Panels hinzu. Im Beispielvideo unten wird eine Schaltflächenkomponente mit dem Bezeichnungsnamen **Hinzufügen** und Feldnamen **AddPanel** verwendet. Wählen Sie die Komponente aus und tippen Sie auf ![edit-rules](/help/forms/assets/edit-rules.png). Die Regeln der Schaltflächenkomponente werden im Regeleditor geöffnet.
+1. Fügen Sie eine **Schaltflächenkomponente** zum übergeordneten Element des Panels hinzu. Im Beispielvideo unten wird eine Schaltflächenkomponente mit dem Bezeichnungsnamen **Hinzufügen** und Feldnamen **AddPanel** verwendet. Wählen Sie die Komponente aus und wählen Sie ![edit-rules](/help/forms/assets/edit-rules.png). Die Regeln der Schaltflächenkomponente werden im Regeleditor geöffnet.
 1. Klicken Sie im Fenster des Regeleditors auf **Erstellen**.
 
    Wählen Sie in der Zeile „Formularobjekte“ und „Funktionen“ **Visual Editor.**
@@ -84,7 +84,7 @@ Das übergeordnete Element des Panels, das wiederholt werden soll, muss Schaltfl
 
 Das übergeordnete Element des Panels sollte Schaltflächen zum Hinzufügen und Löschen enthalten, um Instanzen der wiederholbaren Panels zu löschen. Führen Sie die folgenden Schritte aus, um Schaltflächen in das übergeordnete Element einzufügen und Skripte auf den Schaltflächen zum Löschen der wiederholbaren Panels zu aktivieren:
 
-1. Fügen Sie eine **Schaltflächenkomponente** zum übergeordneten Element des Panels hinzu. Im Video unten wird eine Schaltflächenkomponente mit dem Bezeichnungsnamen **delete** und dem Feldnamen **DeletePanel** verwendet. Wählen Sie die Komponente aus und tippen Sie auf ![edit-rules](/help/forms/assets/edit-rules.png). Die Regeln der Schaltflächenkomponente werden im Regeleditor geöffnet.
+1. Fügen Sie eine **Schaltflächenkomponente** zum übergeordneten Element des Panels hinzu. Im Video unten wird eine Schaltflächenkomponente mit dem Bezeichnungsnamen **delete** und dem Feldnamen **DeletePanel** verwendet. Wählen Sie die Komponente aus und wählen Sie ![edit-rules](/help/forms/assets/edit-rules.png). Die Regeln der Schaltflächenkomponente werden im Regeleditor geöffnet.
 1. Klicken Sie im Fenster des Regeleditors auf **Erstellen**.
 
    Wählen Sie in der Zeile „Formularobjekte“ und „Funktionen“ **Visual Editor.**
@@ -151,8 +151,8 @@ Das übergeordnete Element des Panels sollte Schaltflächen zum Hinzufügen und 
 
 A panel has various layouts options. The Layout for accordian design option has out of the box support for repeatable panels. Perform the following steps to repeatable panel with Layout for accordian design option:
 
-1. On the parent of panel to be repeated, tap ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
-1. On a panel, which is to be repeated, tap ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
+1. On the parent of panel to be repeated, select ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
+1. On a panel, which is to be repeated, select ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
 
    Now, you can use the plus (+) and delete ( ![delete-panel](assets/delete-panel.png)) buttons to add and remove the panels.
 

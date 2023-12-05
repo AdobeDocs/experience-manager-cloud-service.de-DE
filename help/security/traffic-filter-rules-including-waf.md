@@ -2,10 +2,10 @@
 title: Traffic-Filterregeln, einschließlich WAF-Regeln
 description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 8407f3142de78ee792bdece327734dd02a4f234b
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3357'
+ht-degree: 92%
 
 ---
 
@@ -33,7 +33,7 @@ Dieser Artikel ist in die folgenden Abschnitte unterteilt:
 * **Traffic-Schutz – Übersicht:** Erfahren Sie, wie Sie vor schädlichem Traffic geschützt werden.
 * **Empfohlener Prozess zum Konfigurieren von Regeln:** Erfahren Sie mehr über eine allgemeine Methode zum Schutz Ihrer Website.
 * **Setup:** Erfahren Sie, wie Sie Traffic-Filterregeln einrichten, konfigurieren und bereitstellen, einschließlich der erweiterten WAF-Regeln.
-* **Regelsyntax:** Erfahren Sie, wie Sie Traffic-Filterregeln in der Konfigurationsdatei von `cdn.yaml` deklarieren. Dazu gehören sowohl die Traffic-Filterregeln, die für alle Kundinnen und Kunden von Sites und Forms verfügbar sind, als auch die Unterkategorie der WAF-Regeln für diejenigen, die diese Funktion lizenzieren.
+* **Regelsyntax:** Erfahren Sie, wie Sie Traffic-Filterregeln in der Konfigurationsdatei von `cdn.yaml` deklarieren. Dazu gehören sowohl die Traffic-Filterregeln, die für alle Sites- und Forms-Kunden verfügbar sind, als auch die Unterkategorie der WAF-Regeln für diejenigen, die diese Funktion lizenzieren.
 * **Regelbeispiele:** Sehen Sie sich zu Beginn Beispiele für deklarierte Regeln an.
 * **Ratenbegrenzungsregeln:** Erfahren Sie, wie Sie Regeln zur Ratenbegrenzung verwenden, um Ihre Site vor Angriffen mit hohem Volumen zu schützen.
 * **CDN-Protokolle:** Erfahren Sie, welche deklarierten Regeln und WAF-Flags mit Ihrem Traffic übereinstimmen.
@@ -79,7 +79,7 @@ Im Folgenden finden Sie einen allgemein empfohlenen End-to-End-Prozess für die 
         cdn.yaml
    ```
 
-1. `cdn.yaml` sollte Metadaten sowie eine Liste von Traffic-Filterregeln und WAF-Regeln enthalten.
+1. `cdn.yaml` sollte Metadaten und eine Liste von Traffic-Filterregeln und WAF-Regeln enthalten.
 
    ```
    kind: "CDN"
@@ -149,7 +149,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-Das Format der Traffic-Filterregeln in der Datei `cdn.yaml` wird im Folgenden beschrieben. Siehe einige [andere Beispiele](#examples) in einem späteren Abschnitt sowie in einem separaten Abschnitt zu [Ratenbegrenzungsregeln](#rate-limit-rules).
+Das Format der Traffic-Filterregeln in der Datei `cdn.yaml` wird im Folgenden beschrieben. Siehe einige [andere Beispiele](#examples) in einem späteren Abschnitt und einem separaten Abschnitt zu [Regeln für Ratenbegrenzungen](#rate-limit-rules).
 
 
 | **Eigenschaft** | **Die meisten Traffic-Filterregeln** | **WAF-Traffic-Filterregeln** | **Typ** | **Standardwert** | **Beschreibung** |
@@ -418,7 +418,7 @@ Die Ratenbegrenzungen werden pro CDN-POP berechnet. Nehmen wir beispielsweise an
 | limit | Ganzzahl von 10 bis 10.000 | erforderlich | Anfragerate (pro CDN-POP) in Anfragen pro Sekunde, für die die Regel ausgelöst wird. |
 | window | Ganzzahl: 1, 10 oder 60 | 10 | Stichprobenfenster in Sekunden, für das die Anfragerate berechnet wird. Die Genauigkeit der Zähler hängt von der Größe des Fensters ab (ein größeres Fenster liefert höhere Genauigkeit). Beispielsweise kann man eine Genauigkeit von 50 % für das 1-Sekunden-Fenster und eine Genauigkeit von 90 % für das 60-Sekunden-Fenster erwarten. |
 | penalty | Ganzzahl von 60 bis 3600 | 300 (5 Minuten) | Ein Zeitraum in Sekunden, für den übereinstimmende Anfragen blockiert werden (auf die nächste Minute gerundet). |
-| groupBy | array[Getter] | keine | Der Zähler der Ratenbegrenzer wird durch eine Reihe von Anfrageeigenschaften aggregiert (z. B. clientIp). |
+| groupBy | array[Getter] | keine | Der Zähler der Ratenbegrenzer wird durch eine Reihe von Anforderungseigenschaften aggregiert (z. B. clientIp). |
 
 
 ### Beispiele {#ratelimiting-examples}
@@ -471,7 +471,7 @@ data:
 
 AEM as a Cloud Service bietet Zugriff auf CDN-Protokolle, die für Anwendungsfälle nützlich sind, einschließlich der Optimierung der Cache-Trefferquote und der Konfiguration von Traffic-Filterregeln. CDN-Protokolle werden im Cloud Manager-Dialog **Protokolle herunterladen** angezeigt, wenn Sie den Author- oder Publish-Service auswählen.
 
-Beachten Sie, dass sich CDN-Protokolle möglicherweise um bis zu 5 Minuten verzögern.
+CDN-Protokolle können bis zu fünf Minuten verspätet sein.
 
 Die Eigenschaft `rules` beschreibt, welche Traffic-Filterregeln übereinstimmen, und weist folgendes Muster auf:
 

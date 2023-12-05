@@ -2,10 +2,10 @@
 title: Konfigurieren von vorkonfigurierten Microsoft Dynamics 365- und Salesforce-Formulardatenmodellen für adaptive Formulare
 description: Erfahren Sie, wie Sie Microsoft Dynamics 365 und Salesforce mit adaptiven Formularen integrieren.
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 100%
+source-wordcount: '952'
+ht-degree: 90%
 
 ---
 
@@ -48,20 +48,20 @@ Stellen Sie vor dem Konfigurieren von [!DNL Salesforce]-Cloud-Services sicher, d
 Führen Sie die folgenden Schritte aus, um den [!DNL Salesforce]-Cloud-Service zu konfigurieren:
 
 1. Gehen Sie in der [!DNL AEM Forms]-Autoreninstanz zu **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Cloud-Services]** > **[!UICONTROL Data Sources]**. Die Liste der verfügbaren Wrapper-Ordner enthält einen Ordner mit dem Titel, der beim [Erstellen des AEM-Archetyp-Projekts](setup-local-development-environment.md#forms-cloud-service-local-development-environment) für `DappTitle` angegeben wurde.
-1. Tippen Sie auf den Ordnernamen, wählen Sie **[!UICONTROL Salesforce Cloud Config]** aus, und tippen Sie auf **[!UICONTROL Eigenschaften]**.
+1. Wählen Sie den Ordnernamen und wählen Sie **[!UICONTROL Salesforce Cloud-Konfiguration]** und wählen Sie **[!UICONTROL Eigenschaften]**.
 1. Auf der Registerkarte **[!UICONTROL Authentifizierungseinstellungen]**:
    1. Geben Sie die [!DNL Salesforce]-Domain-URL im Feld **[!UICONTROL Host]** an. Beispiel: [Domain-name].my.salesforce.com.
    1. Geben Sie die Client-ID (als Consumer Key bezeichnet) und das Client-Geheimnis (als Consumer Secret bezeichnet) für die verbundene Anwendung an.
    1. Geben Sie **full offline_access** (`full`- und `offine_access` -Werte, durch ein Leerzeichen getrennt) im Feld **[!UICONTROL Autorisierungsumfang]** an.
-   1. Tippen Sie auf **[!UICONTROL Verbindung zu OAuth herstellen]**. Sie werden zur Anmeldungsseite von [!DNL Microsoft® Dynamics] umgeleitet.
+   1. Auswählen **[!UICONTROL Mit OAuth verbinden]**. Sie werden zur Anmeldungsseite von [!DNL Microsoft® Dynamics] umgeleitet.
    1. Melden Sie sich mit Ihren [!DNL Salesforce]-Anmeldeinformationen an und lassen Sie zu, dass die Cloud-Service-Konfiguration eine Verbindung zum [!DNL Salesforce]-Service herstellt. Wenn die Verbindung erfolgreich hergestellt wurde, werden Sie zur Seite „[!DNL Salesforce]-Cloud-Service-Konfiguration“ weitergeleitet, auf der eine Erfolgsmeldung angezeigt wird.
-1. Tippen Sie auf **[!UICONTROL Speichern und schließen]**, um die Konfiguration abzuschließen.
+1. Auswählen **[!UICONTROL Speichern und schließen]** , um die Konfiguration abzuschließen.
 
 ### Zugreifen auf das vorkonfigurierte [!DNL Salesforce]-Formulardatenmodell
 
 Ein vorkonfiguriertes [!DNL Salesforce]-Formulardatenmodell ist auf dem [!DNL AEM Forms]-Server verfügbar, nachdem Sie [ein Entwicklungsprojekt für Forms basierend auf dem Experience Manager-Archetyp eingerichtet haben](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
-Um auf das Formulardatenmodell zuzugreifen, gehen Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Datenintegrationen]**. Die Liste der verfügbaren Ordner enthält einen Ordner mit dem Titel, der beim [Erstellen des AEM-Archetyp-Projekts](setup-local-development-environment.md#forms-cloud-service-local-development-environment) für `DappTitle` angegeben wurde. Tippen Sie auf den Ordnernamen, wählen Sie das **[!UICONTROL Salesforce-Datenmodell]** aus, und tippen Sie auf das Symbol „Bearbeiten“ ![Bearbeiten](assets/edit.png), um das Formulardatenmodell anzuzeigen.
+Um auf das Formulardatenmodell zuzugreifen, gehen Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Datenintegrationen]**. Die Liste der verfügbaren Ordner enthält einen Ordner mit dem Titel, der beim [Erstellen des AEM-Archetyp-Projekts](setup-local-development-environment.md#forms-cloud-service-local-development-environment) für `DappTitle` angegeben wurde. Wählen Sie den Ordnernamen aus und wählen Sie die **[!UICONTROL Salesforce-Datenmodell]** und wählen Sie die Option Bearbeiten ![Bearbeiten](assets/edit.png) -Symbol, um das Formulardatenmodell anzuzeigen.
 
 Nach der Konfiguration des [[!DNL Salesforce] Cloud Config-Services](#configure-salesforce-cloud-service) können Sie adaptive Formulare mit dem vordefinierten [!DNL Salesforce]-Datenmodell integrieren.
 
@@ -82,7 +82,7 @@ Stellen Sie vor dem Konfigurieren des [!DNL Microsoft® Dynamics 365]-Cloud-Serv
 Führen Sie die folgenden Schritte aus, um den [!DNL Microsoft® Dynamics 365]-Cloud-Service zu konfigurieren:
 
 1. Gehen Sie in der [!DNL AEM Forms]-Autoreninstanz zu **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Cloud-Services]** > **[!UICONTROL Data Sources]**. Die Liste der verfügbaren Wrapper-Ordner enthält einen Ordner mit dem Titel, der beim [Erstellen des AEM-Archetyp-Projekts](setup-local-development-environment.md#forms-cloud-service-local-development-environment) für `DappTitle` angegeben wurde.
-1. Tippen Sie auf den Ordnernamen, wählen Sie **[!UICONTROL Microsoft® Dynamics 365 Cloud Config]** aus, und tippen Sie auf **[!UICONTROL Eigenschaften]**.
+1. Wählen Sie den Ordnernamen und wählen Sie **[!UICONTROL Cloud-Konfiguration für Microsoft® Dynamics 365]** und wählen Sie **[!UICONTROL Eigenschaften]**.
 1. Auf der Registerkarte **[!UICONTROL Authentifizierungseinstellungen]**:
    1. Geben Sie den Wert für das Feld **[!UICONTROL Service-Stamm]** ein. Wechseln Sie zur Dynamics-Instanz und navigieren Sie zu [Entwickler-Ressourcen](https://docs.microsoft.com/de-de/powerapps/developer/data-platform/view-download-developer-resources), um den Wert für das Feld „Service-Stamm“ anzuzeigen. Zum Beispiel: `https://<tenant-name>.dynamics.com/api/data/v9.1/`
    1. Geben Sie die Client-ID (als Anwendungs-ID bezeichnet) und das Client-Geheimnis für die verbundene Anwendung an.
@@ -91,18 +91,18 @@ Führen Sie die folgenden Schritte aus, um den [!DNL Microsoft® Dynamics 365]-C
 
    1. Geben Sie die `openid` im Feld **[!UICONTROL Autorisierungsumfang]** für den Autorisierungsprozess in [!DNL Microsoft® Dynamics 365] an.
    1. Melden Sie sich mit Ihren [!DNL Microsoft® Dynamics 365]-Anmeldeinformationen an und lassen Sie zu, dass die Cloud-Service-Konfiguration eine Verbindung zum [!DNL Microsoft® Dynamics 365]-Service herstellt. Wenn die Verbindung erfolgreich hergestellt wurde, werden Sie zur Seite „[!DNL Microsoft® Dynamics 365]-Cloud-Service-Konfiguration“ weitergeleitet, auf der eine Erfolgsmeldung angezeigt wird.
-1. Tippen Sie auf **[!UICONTROL Speichern und schließen]**, um die Konfiguration abzuschließen.
+1. Auswählen **[!UICONTROL Speichern und schließen]** , um die Konfiguration abzuschließen.
 
 ### Zugreifen auf das vorkonfigurierte [!DNL Microsoft® Dynamics 365]-Formulardatenmodell
 
 Ein vorkonfiguriertes [!DNL Microsoft® Dynamics 365]-Formulardatenmodell ist auf dem [!DNL AEM Forms]-Server verfügbar, nachdem Sie [ein Entwicklungsprojekt für Forms basierend auf dem Experience Manager-Archetyp eingerichtet haben](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 
-Um auf das Formulardatenmodell zuzugreifen, gehen Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Datenintegrationen]**. Die Liste der verfügbaren Ordner enthält einen Ordner mit dem Titel, der beim [Erstellen des AEM-Archetyp-Projekts](setup-local-development-environment.md#forms-cloud-service-local-development-environment) für `DappTitle` angegeben wurde. Tippen Sie auf den Ordnernamen, wählen Sie das **[!UICONTROL Microsoft® Dynamics 365-Datenmodell]** aus und tippen Sie auf das Symbol ![Bearbeiten](assets/edit.png), um das Formulardatenmodell anzuzeigen.
+Um auf das Formulardatenmodell zuzugreifen, gehen Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Datenintegrationen]**. Die Liste der verfügbaren Ordner enthält einen Ordner mit dem Titel, der beim [Erstellen des AEM-Archetyp-Projekts](setup-local-development-environment.md#forms-cloud-service-local-development-environment) für `DappTitle` angegeben wurde. Wählen Sie den Ordnernamen aus und wählen Sie die **[!UICONTROL Microsoft® Dynamics 365-Datenmodell]** und wählen Sie die Option Bearbeiten ![Bearbeiten](assets/edit.png) -Symbol, um das Formulardatenmodell anzuzeigen.
 
 Nach der Konfiguration des [[!DNL Microsoft® Dynamics 365] Cloud Config-Services](#configure-dynamics-cloud-service) können Sie adaptive Formulare mit dem vordefinierten [!DNL Microsoft® Dynamics 365]-Datenmodell integrieren.
 
 >[!MORELIKETHIS]
 >
->* [Konfigurieren von Datenquellen für AEM Forms](/help/forms/configure-data-sources.md)
->* [Konfigurieren von Azure Storage für AEM Forms](/help/forms/configure-azure-storage.md)
->[Hinzufügen des Formularportals zu einer AEM Sites-Seite](/help/forms/configure-forms-portal.md)
+* [Konfigurieren von Datenquellen für AEM Forms](/help/forms/configure-data-sources.md)
+* [Konfigurieren von Azure Storage für AEM Forms](/help/forms/configure-azure-storage.md)
+[Hinzufügen des Formularportals zu einer AEM Sites-Seite](/help/forms/configure-forms-portal.md)

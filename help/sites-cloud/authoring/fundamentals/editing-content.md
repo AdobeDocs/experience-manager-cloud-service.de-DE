@@ -2,10 +2,10 @@
 title: Bearbeiten des Seiteninhalts
 description: Nachdem die Seite erstellt wurde, können Sie den Inhalt bearbeiten, um die erforderlichen Aktualisierungen vorzunehmen
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2973'
-ht-degree: 93%
+source-wordcount: '2974'
+ht-degree: 91%
 
 ---
 
@@ -276,7 +276,7 @@ Für das Hinzufügen und/oder Bearbeiten von Inhalten in Komponenten sind zwei V
 
 Sie können eine Komponente öffnen, um den Inhalt zu bearbeiten, indem Sie das Symbol [„Bearbeiten“ (Stiftsymbol) in der Komponenten-Symbolleiste](#component-toolbar) verwenden.
 
-Welche Bearbeitungsoptionen verfügbar sind, hängt von der Komponente ab (und für einige Komponenten sind [alle Aktionen nur im Vollbildmodus verfügbar)](#edit-content-full-screen-mode). Beispiel:
+Die genauen Bearbeitungsoptionen hängen von der Komponente ab. Für einige Komponenten [Alle Aktionen sind nur im Vollbildmodus verfügbar.](#edit-content-full-screen-mode). Beispiel:
 
 * Textkomponente
 
@@ -322,7 +322,7 @@ Z. B. die Komponente **Text**:
 
 So verschieben Sie eine Absatzkomponente:
 
-1. Wählen Sie durch Tippen und Halten bzw. Klicken und Halten den Absatz aus, der verschoben werden soll.
+1. Wählen Sie den zu verschiebenden Absatz aus, indem Sie ihn drücken und halten oder klicken und halten.
 1. Ziehen Sie den Absatz an die neue Position. AEM zeigt an, wo der Absatz abgelegt werden kann. Legen Sie ihn an der gewünschten Position ab.
 
    ![Verschieben einer Komponente](/help/sites-cloud/authoring/assets/editing-moving-component.png)
@@ -541,5 +541,5 @@ Sie können die folgenden Arten von Seitenänderungen rückgängig machen und wi
 >
 >* Spezielle Berechtigungen sind erforderlich, um Änderungen rückgängig zu machen bzw. wiederherzustellen, die an Dateien und Bildern vorgenommen wurden.
 >* Änderungen an Dateien und Bildern können für einen Verlauf von mindestens zehn Stunden rückgängig gemacht werden. Bei länger zurückliegenden Änderungen ist dies unter Umständen nicht mehr möglich. Ihre Admins können die Standardzeit von zehn Stunden ändern.
->* Ihr Systemadministrator kann verschiedene Aspekte der Funktionen „Rückgängig“ und „Wiederholen“ den Anforderungen Ihrer Instanz entsprechend konfigurieren.
+>* Ihr Systemadministrator kann verschiedene Aspekte der Funktionen &quot;Rückgängig/Wiederholen&quot;entsprechend den Anforderungen für Ihre Instanz konfigurieren.
 <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

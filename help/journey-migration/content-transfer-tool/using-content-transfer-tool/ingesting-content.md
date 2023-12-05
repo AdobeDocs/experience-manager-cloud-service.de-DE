@@ -2,10 +2,10 @@
 title: Erfassen von Inhalten in Cloud Service
 description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ihrem Migrationssatz in eine Ziel-Cloud Service-Instanz aufnehmen können.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2326'
-ht-degree: 48%
+source-wordcount: '2275'
+ht-degree: 45%
 
 ---
 
@@ -37,7 +37,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager zu
    >[!TIP]
    > Wenn die Extraktion derzeit ausgeführt wird, wird sie im Dialogfeld angezeigt. Nach erfolgreichem Abschluss der Extraktion wird die Aufnahme automatisch gestartet. Wenn die Extraktion fehlschlägt oder angehalten wird, wird der Aufnahmevorgang zurückgesetzt.
 
-   * **Ziel:** Wählen Sie die Zielumgebung aus. In dieser Umgebung werden die Inhalte des Migrationssatzes aufgenommen.
+   * **Ziel:** Wählen Sie die Zielumgebung aus. In dieser Umgebung wird der Inhalt des Migrationssatzes erfasst.
       * Einstiege unterstützen kein RDE-Ziel (Rapid Development Environment) und erscheinen nicht als mögliche Zielauswahl, selbst wenn der Benutzer Zugriff darauf hat.
       * Während ein Migrationssatz gleichzeitig in mehrere Ziele aufgenommen werden kann, kann ein Ziel nur das Ziel einer gleichzeitig ausgeführten oder wartenden Aufnahme sein.
 
@@ -49,7 +49,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager zu
 
    * **Wischen:** Wählen Sie die `Wipe` value
       * Die **Wischen** -Option legt den Startpunkt des Ziels für die Aufnahme fest. Wenn **Wischen** aktiviert ist, wird das Ziel, einschließlich des gesamten Inhalts, auf die in Cloud Manager angegebene AEM zurückgesetzt. Wenn diese Option nicht aktiviert ist, behält das Ziel seinen aktuellen Inhalt als Ausgangspunkt bei.
-      * Beachten Sie, dass diese Option **NOT** beeinflussen, wie die Inhaltsaufnahme durchgeführt wird. Die Aufnahme verwendet immer eine Inhaltsersetzungsstrategie und _not_ eine Inhaltszusammenführungsstrategie, sodass in beiden **Wischen** und **Nicht wischen** In Fällen überschreibt die Aufnahme eines Migrationssatzes Inhalte im selben Pfad auf dem Ziel. Wenn der Migrationssatz beispielsweise Folgendes enthält: `/content/page1` und das Ziel bereits enthält `/content/page1/product1`, entfernt die Aufnahme die gesamte `page1` Pfad und zugehörige Unterseiten, einschließlich `product1`und ersetzen Sie sie durch den Inhalt im Migrationssatz. Dies bedeutet, dass bei der Durchführung einer **Nicht wischen** Aufnahme in ein Ziel, das alle Inhalte enthält, die gepflegt werden sollen.
+      * Diese Option **NOT** beeinflussen, wie die Inhaltsaufnahme durchgeführt wird. Die Aufnahme verwendet immer eine Inhaltsersetzungsstrategie und _not_ eine Inhaltszusammenführungsstrategie, sodass in beiden **Wischen** und **Nicht wischen** In Fällen überschreibt die Aufnahme eines Migrationssatzes Inhalte im selben Pfad auf dem Ziel. Wenn der Migrationssatz beispielsweise Folgendes enthält: `/content/page1` und das Ziel bereits enthält `/content/page1/product1`, entfernt die Aufnahme die gesamte `page1` Pfad und zugehörige Unterseiten, einschließlich `product1`und ersetzen Sie sie durch den Inhalt im Migrationssatz. Dies bedeutet, dass bei der Durchführung einer **Nicht wischen** Aufnahme in ein Ziel, das alle Inhalte enthält, die gepflegt werden sollen.
 
    >[!IMPORTANT]
    > Wenn die Einstellung **Wischen** für die Aufnahme aktiviert ist, wird das gesamte bestehende Repository zurückgesetzt, einschließlich der Benutzerberechtigungen für die Ziel-Cloud Service-Instanz. Diese Zurücksetzung gilt auch für einen Administrator, der zum **Administratoren** und dieser Benutzer der Administratorgruppe erneut hinzugefügt werden, um eine Aufnahme zu starten.
@@ -131,7 +131,7 @@ Diese Meldung weist darauf hin, dass Cloud Acceleration Manager nicht in der Lag
 
 ### AEM-Versionsaktualisierungen und -verschreibungen
 
-[AEM Versionsaktualisierungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=de) werden automatisch auf Umgebungen angewendet, um sie mit der neuesten AEM as a Cloud Service Version auf dem neuesten Stand zu halten. Wenn während eines Aufnahmevorgangs eine Aktualisierung ausgelöst wird, kann dies zu unvorhersehbaren Ergebnissen führen, einschließlich der Beschädigung der Umgebung.
+[AEM Versionsaktualisierungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=de) werden automatisch auf Umgebungen angewendet, um sie mit der neuesten AEM as a Cloud Service Version auf dem neuesten Stand zu halten. Wenn die Aktualisierung bei der Ausführung einer Aufnahme ausgelöst wird, kann dies zu unvorhersehbaren Ergebnissen führen, einschließlich der Beschädigung der Umgebung.
 
 Wenn die &quot;AEM Versionsaktualisierungen&quot;im Zielprogramm integriert ist, versucht der Aufnahmevorgang, die Warteschlange zu deaktivieren, bevor sie gestartet wird. Wenn die Aufnahme abgeschlossen ist, wird der Status des Versionsaktualisierers so zurückgegeben, wie er vor dem Start der Aufnahme(en) war.
 
@@ -147,7 +147,7 @@ Wenn &quot;AEM Versionsaktualisierungen&quot;aktiv ist (d. h. Aktualisierungen w
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### Fehler bei Auffüllaufnahme Aufgrund der Eindeutigkeitsbeschränkung
+### Auffüllungsfehler aufgrund von Eindeutigkeitsbegrenzung
 
 Eine häufige Ursache für einen [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)-Fehler ist ein Konflikt bei Knoten-IDs. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
 
@@ -167,7 +167,7 @@ Eine weitere häufige Ursache für eine [Auffüllaufnahme](/help/journey-migrati
 
 Dies kann vorkommen, wenn ein Knoten im Ziel zwischen einer Aufnahme und einer nachfolgenden **Nicht wischen** -Aufnahme, sodass eine neue Version erstellt wurde. Wenn der Migrationssatz mit aktivierten &quot;Include-Versionen&quot;extrahiert wurde, kann es zu einem Konflikt kommen, da das Ziel jetzt über eine neuere Version verfügt, auf die der Versionsverlauf und andere Inhalte verweisen. Der Aufnahmevorgang kann den fehlerhaften Versionsknoten nicht löschen, da darauf verwiesen wird.
 
-Zur Lösung des Problems kann es erforderlich sein, dass die Auffüllextraktion ohne den fehlerhaften Knoten wiederholt wird. Oder erstellen Sie einen kleinen Migrationssatz des fehlerhaften Knotens, wobei &quot;Include versions&quot;deaktiviert ist.
+Die Lösung kann erfordern, dass die Auffüllextraktion erneut durchgeführt wird, ohne dass der verletzende Knoten vorhanden ist. Oder erstellen Sie einen kleinen Migrationssatz des fehlerhaften Knotens, wobei &quot;Include versions&quot;deaktiviert ist.
 
 Best Practices weisen darauf hin, dass **Nicht wischen** Die Aufnahme muss mit einem Migrationssatz durchgeführt werden, der Versionen enthält (d. h. mit &quot;Include versions&quot;=true extrahiert). Es ist wichtig, dass der Zielinhalt so wenig wie möglich geändert wird, bis die Migration-Journey abgeschlossen ist. Andernfalls können diese Konflikte auftreten.
 

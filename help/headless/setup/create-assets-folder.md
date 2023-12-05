@@ -2,10 +2,10 @@
 title: Erstellen eines Asset-Ordners – Headless-Einrichtung
 description: Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren – die Grundlage für Ihren Headless-Content.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 89%
+source-wordcount: '375'
+ht-degree: 83%
 
 ---
 
@@ -34,7 +34,7 @@ Administratoren müssen nur gelegentlich Ordner erstellen, um Inhalte bei der Er
       * Er kann bei Bedarf angepasst werden.
 
    ![Ordner erstellen](../assets/assets-folder-create.png)
-1. Wählen Sie den soeben erstellten Ordner aus, indem Sie den Mauszeiger über das Häkchen bewegen und darauf tippen. Wählen Sie anschließend **Eigenschaften** in der Symbolleiste (oder verwenden Sie den [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `p`).
+1. Wählen Sie den erstellten Ordner aus, indem Sie den Mauszeiger über den Ordner halten und auf das Häkchen tippen. Wählen Sie anschließend **Eigenschaften** in der Symbolleiste (oder verwenden Sie den [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `p`).
 1. Wählen Sie im Fenster **Eigenschaften** die Registerkarte **Cloud-Services** aus.
 1. Wählen Sie für die **Cloud-Konfiguration** die zuvor erstellte [Konfiguration aus.](create-configuration.md)
    ![Konfigurieren des Asset-Ordners](../assets/assets-folder-configure.png)
@@ -43,7 +43,7 @@ Administratoren müssen nur gelegentlich Ordner erstellen, um Inhalte bei der Er
 
    ![Bestätigungsfenster](../assets/assets-folder-confirmation.png)
 
-Sie können im soeben erstellten Ordner weitere Unterordner erstellen. Die Unterordner übernehmen die **Cloud-Konfiguration** des übergeordneten Ordners. Dies kann jedoch überschrieben werden, wenn Sie Modelle aus einer anderen Konfiguration verwenden möchten.
+Sie können weitere Unterordner im von Ihnen erstellten Ordner erstellen. Die Unterordner übernehmen die **Cloud-Konfiguration** des übergeordneten Ordners. Dies kann jedoch überschrieben werden, wenn Sie Modelle aus einer anderen Konfiguration verwenden möchten.
 
 Wenn Sie eine lokalisierte Site-Struktur verwenden, können Sie unter Ihrem neuen Ordner [einen Sprach-Stamm](/help/assets/translate-assets.md) erstellen.
 

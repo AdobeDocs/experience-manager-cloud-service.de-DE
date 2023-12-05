@@ -4,10 +4,10 @@ description: Hier erfahren Sie, wie Sie ein adaptives Formular erstellen oder zu
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3208'
-ht-degree: 97%
+source-wordcount: '3177'
+ht-degree: 96%
 
 ---
 
@@ -53,7 +53,7 @@ Sie können diese Funktion bestmöglich nutzen, indem Sie die folgenden Optionen
 
 * **[Konvertieren eines adaptiven Formulars in ein Experience Fragment](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** Konvertieren Sie ein adaptives Formular, das zu einer AEM Sites-Seite hinzugefügt wurde, in ein Experience Fragment, um das Formular auf mehreren AEM Sites-Seiten wiederverwenden zu können.
 
-* **[Erstellen von Formularen basierend auf genehmigten Vorlagen und Hinzufügen zu einer AEM Sites-Seite:](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** Sie können vorab genehmigte Vorlagen nutzen, um schnell adaptive Formulare zu erstellen, die den Branding-Richtlinien und Design-Standards Ihres Unternehmens entsprechen. Die Option ist nur für adaptive Formulare verfügbar, die mit dem Editor oder der Einbettungskomponente für adaptive Formulare erstellt wurde.
+* **[Erstellen Sie Formulare basierend auf genehmigten Vorlagen und fügen Sie sie einer AEM Sites-Seite hinzu:](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** Sie können vorab genehmigte Vorlagen verwenden, um schnell Adaptive Forms zu erstellen, die den Branding-Richtlinien und Designstandards Ihres Unternehmens entsprechen. Die Option ist nur für adaptive Formulare verfügbar, die mit dem Editor oder der Einbettungskomponente für adaptive Formulare erstellt wurde.
 
 * **[Hinzufügen von vorhandenen Formularen zu einer AEM Sites-Seite:](/help/forms/embed-adaptive-form-aem-sites.md#embed-an-adaptive-form-in-sites-editor)** Sie können bereits erstellte Formulare einfach in Ihre Websites integrieren, sodass Besucherinnen und Besucher direkt mit ihnen interagieren können. Die Option ist nur für adaptive Formulare verfügbar, die mit dem Editor oder der Einbettungskomponente für adaptive Formulare erstellt wurde.
 

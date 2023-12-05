@@ -8,10 +8,10 @@ content-type: reference
 feature: 3D Assets
 role: User
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: 347da5edf4c8ad2ae72284f4e1a4003493596194
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2260'
-ht-degree: 100%
+source-wordcount: '2252'
+ht-degree: 99%
 
 ---
 
@@ -63,16 +63,16 @@ Siehe [Konfigurieren von Dynamic Media Cloud Services](/help/assets/dynamic-medi
 
       * [Organisieren digitaler Assets](/help/assets/organize-assets.md)
       * [Suchen von 3D-Assets](/help/assets/search-assets.md)
+
    * Anzeigen von 3D-Assets
 
       * [Anzeigen von und Interagieren mit 3D-Assets](#viewing-three-d-assets)
       * [Verwalten der Dimensional-Viewer-Vorgabe](/help/assets/dynamic-media/managing-viewer-presets.md)
+
    * Arbeiten mit 3D-Asset-Metadaten
 
       * [Verwalten von Metadaten für digitale Assets](/help/assets/manage-digital-assets.md#editing-properties)
       * [Metadatenschemata](/help/assets/metadata-schemas.md)
-
-
 
 1. **Veröffentlichen von 3D-Assets**
 
@@ -120,9 +120,9 @@ Siehe auch [Vorschau von Assets über die Software-Schnittstelle](/help/assets/d
    | **Kamera drehen** | Drehen Sie die Ansicht um die 3D-Szene und Objekte. | Klicken und ziehen Sie mit der linken Maustaste. | Drücken und ziehen Sie mit einem Finger. |
    | **Kamera schwenken** | Schwenken Sie nach links, rechts, oben oder unten. | Klicken und ziehen Sie mit der rechten Maustaste. | Drücken und ziehen Sie mit zwei Fingern. |
    | **Kamera zoomen** | Zoomen Sie mit der Kamera in Bereiche der 3D-Szene bzw. aus diesen Bereichen heraus. | Scrollen Sie mit dem Mausrad. | Ziehen Sie per Pinch mit zwei Fingern. |
-   | **Kamera neu zentrieren** | Zentrieren Sie die Kamera neu auf einen Punkt an einem Objekt in der 3D-Szene. | Doppelklicken. | Doppeltippen. |
-   | **Zurücksetzen** | Wählen Sie in der unteren rechten Ecke der Seite das Symbol „Zurücksetzen“, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |  |  |
-   | **Vollbildmodus** | Um in den Vollbildmodus zu gelangen, wählen Sie in der unteren rechten Ecke der Seite das Symbol „Vollbild“. |  |  |
+   | **Kamera neu zentrieren** | Zentrieren Sie die Kamera neu auf einen Punkt an einem Objekt in der 3D-Szene. | Doppelklicken. | Doppelklicken Sie. |
+   | **Zurücksetzen** | Wählen Sie in der unteren rechten Ecke der Seite das Symbol „Zurücksetzen“, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |   |   |
+   | **Vollbildmodus** | Um in den Vollbildmodus zu gelangen, wählen Sie in der unteren rechten Ecke der Seite das Symbol „Vollbild“. |   |   |
 
 1. Wählen Sie in der oberen rechten Ecke der Seite **[!UICONTROL Schließen]**, um zur Seite „Assets“ zurückzukehren.
 
@@ -143,7 +143,7 @@ Siehe auch [Vorschau von Assets über die Software-Schnittstelle](/help/assets/d
    * Klicken Sie rechts oben auf der Seite auf **[!UICONTROL Vorschau]**, um in den **[!UICONTROL Vorschaumodus]** zu wechseln.
    * Löschen Sie `/editor.html` aus der Seiten-URL im Browser.
 
-Ein vollständig interaktives 3D-Asset, wie im    ![3D-Asset, das innerhalb der 3D-Medien-Komponente angezeigt wird](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)
+   ![3D-Asset, das innerhalb der 3D-Medien-Komponente angezeigt wird](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)
 Ein vollständig interaktives 3D-Asset, wie im **[!UICONTROL Vorschaumodus]** angezeigt.
 
 1. Führen Sie im **[!UICONTROL Vorschaumodus]** einen der folgenden Schritte aus:
@@ -153,9 +153,9 @@ Ein vollständig interaktives 3D-Asset, wie im **[!UICONTROL Vorschaumodus]** an
    | **Kamera drehen** | Drehen Sie die Ansicht um die 3D-Szene und Objekte. | Klicken und ziehen Sie mit der linken Maustaste. | Drücken und ziehen Sie mit einem Finger. |
    | **Kamera schwenken** | Schwenken Sie nach links, rechts, oben oder unten. | Klicken und ziehen Sie mit der rechten Maustaste. | Drücken und ziehen Sie mit zwei Fingern. |
    | **Kamera zoomen** | Zoomen Sie mit der Kamera in Bereiche der 3D-Szene bzw. aus diesen Bereichen heraus. | Scrollen Sie mit dem Mausrad. | Ziehen Sie per Pinch mit zwei Fingern. |
-   | **Kamera neu zentrieren** | Zentrieren Sie die Kamera neu auf einen Punkt an einem Objekt in der 3D-Szene. | Doppelklicken. | Doppeltippen. |
-   | **Zurücksetzen** | Wählen Sie in der unteren rechten Ecke der Seite das Symbol „Zurücksetzen“, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |  |  |
-   | **Vollbildmodus** | Um in den Vollbildmodus zu gelangen, wählen Sie in der unteren rechten Ecke der Seite das Symbol „Vollbild“. |  |  |
+   | **Kamera neu zentrieren** | Zentrieren Sie die Kamera neu auf einen Punkt an einem Objekt in der 3D-Szene. | Doppelklicken. | Doppelklicken Sie. |
+   | **Zurücksetzen** | Wählen Sie in der unteren rechten Ecke der Seite das Symbol „Zurücksetzen“, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |   |   |
+   | **Vollbildmodus** | Um in den Vollbildmodus zu gelangen, wählen Sie in der unteren rechten Ecke der Seite das Symbol „Vollbild“. |   |   |
 
 ## Wissenswertes über die Arbeit mit der 3D-Medien-Komponente {#working-with-three-d-media-component}
 
@@ -256,12 +256,12 @@ Siehe auch [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamental
 
    ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publisha.png)
 
-1. Tippen Sie auf **[!UICONTROL Schließen]**, um das Dialogfeld zu verlassen und zur Seite „Asset-Details“ zurückzukehren.
+1. Wählen Sie **[!UICONTROL Schließen]** aus, um das Dialogfeld zu verlassen und zur Seite „Asset-Details“ zurückzukehren.
 1. Wählen Sie in der Dropdown-Liste links neben dem Dateinamen des 3D-Assets die Option **[!UICONTROL Ausgabedarstellungen]** aus.
 
    ![3d-asset-renditions](/help/assets/dynamic-media/assets/3d-asset-renditionsa.png)
 
-1. Tippen Sie auf **[!UICONTROL Original]**. Wenn ein 3D-Asset veröffentlicht (oder „aktiviert“) wird, wird die Schaltfläche **[!UICONTROL URL]** unten links auf der Seite angezeigt, wenn die folgenden Bedingungen für 3D-Assets erfüllt sind:
+1. Wählen Sie **[!UICONTROL original]** aus. Wenn ein 3D-Asset veröffentlicht (oder „aktiviert“) wird, wird die Schaltfläche **[!UICONTROL URL]** unten links auf der Seite angezeigt, wenn die folgenden Bedingungen für 3D-Assets erfüllt sind:
    * Das 3D-Asset ist ein unterstütztes Format (GLB, OBJ, STL und USDZ).
    * Das 3D-Asset wurde in das Dynamic Media Image Production System (IPS) erfasst.
    * Das 3D-Asset ist veröffentlicht.
@@ -276,8 +276,8 @@ Verwenden Sie die folgenden beiden Methoden zum Veröffentlichen von Dynamic Med
 
 * **[!UICONTROL URL]** – Verwenden Sie **[!UICONTROL URL]**, wenn Sie ein Drittanbieter-Web-Content-Management-System verwenden und mit dem Dimensional-Viewer Dynamic Media-3D-Assets mit Ihren Web-Seiten verknüpfen möchten.
 
-   Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
+  Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 
 * **[!UICONTROL Einbetten]** – Verwenden Sie **[!UICONTROL Einbetten]**, wenn Sie ein in eine Web-Seite eingebettetes Dynamic Media-3D-Asset mit dem Dimensional-Viewer anzeigen möchten. Kopieren Sie den Einbettungs-Code in die Zwischenablage, damit Sie ihn in Ihre Web-Seiten einfügen können. Die Bearbeitung des Codes ist im Dialogfeld **[!UICONTROL Eingebettet]** nicht zulässig.
 
-   Siehe [Einbetten von Dynamic Media-Videos, Bild-Viewern oder Dimensional-Viewern auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).
+  Siehe [Einbetten von Dynamic Media-Videos, Bild-Viewern oder Dimensional-Viewern auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).

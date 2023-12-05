@@ -2,10 +2,10 @@
 title: Grundlegende Handhabung
 description: Machen Sie sich mit der Navigation in AEM und seiner grundlegenden Verwendung vertraut
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2945'
-ht-degree: 90%
+source-wordcount: '2943'
+ht-degree: 88%
 
 ---
 
@@ -17,13 +17,13 @@ Dieses Dokument soll einen Überblick über die grundlegende Handhabung der AEM-
 >[!NOTE]
 >
 >* Einige Funktionen stehen nicht in allen Konsolen zur Verfügung und in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Detaillierte Informationen zu den einzelnen Konsolen und ihren jeweiligen Funktionen finden Sie auf den anderen Seiten.
->* In AEM stehen verschiedene Tastaturbefehle zur Verfügung, insbesondere beim [Verwenden von Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) und beim [Bearbeiten von Seiten](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md). 
+>* In AEM sind Tastaturbefehle verfügbar. Insbesondere wenn [Verwenden von Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) und [Seiten bearbeiten](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 {{edge-delivery-authoring}}
 
 ## Touch-optimierte Benutzeroberfläche {#a-touch-enabled-ui}
 
-Die Benutzeroberfläche für AEM wurde für Touchscreens optimiert. Eine Touch-optimierte Benutzeroberfläche ermöglicht es Ihnen, mithilfe von Gesten wie Tippen, Berühren und Halten und Wischen mit der Software zu interagieren. Da die AEM-Benutzeroberfläche Touch-optimiert ist, können Sie Berührungsgesten auf Ihren Touch-Geräten wie auf Ihrem Handy oder Tablet verwenden. Es sind jedoch auch Mausaktionen auf einem herkömmlichen Desktop-Gerät möglich, sodass Sie flexibel entscheiden können, wie Sie Ihre Inhalte erstellen möchten.
+Die Benutzeroberfläche für AEM wurde für Touchscreens optimiert. Eine Touch-optimierte Benutzeroberfläche ermöglicht es Ihnen, mithilfe von Gesten wie &quot;Auswählen&quot;, &quot;Berühren und Halten&quot;und &quot;Wischen&quot;mit der Software zu interagieren. Da die AEM-Benutzeroberfläche Touch-optimiert ist, können Sie Berührungsgesten auf Ihren Touch-Geräten wie auf Ihrem Handy oder Tablet verwenden. Es sind jedoch auch Mausaktionen auf einem herkömmlichen Desktop-Gerät möglich, sodass Sie flexibel entscheiden können, wie Sie Ihre Inhalte erstellen möchten.
 
 ## Erste Schritte {#first-steps}
 
@@ -53,7 +53,7 @@ Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließe
 
 Die globale Navigation verfügt über zwei Fenster, die am linken Bildschirmrand durch Symbole dargestellt werden:
 
-* **[Navigation](#navigation-panel)** – dargestellt durch einen Kompass  und das Standardfenster bei der Anmeldung in AEM
+* **[Navigation](#navigation-panel)** - Wird durch einen Kompass und das Standardbedienfeld bei der Anmeldung bei AEM dargestellt
 * **[Tools](#tools-panel)** – dargestellt durch einen Hammer
 
 Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
@@ -256,9 +256,9 @@ Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht un
 
 | Anzeigen | Touch aktivieren | Desktop aktivieren | Touch deaktivieren | Desktop deaktivieren |
 |---|---|---|---|---|
-| Spalte | Tippen Sie auf die Miniatur | Klicken Sie auf die Miniatur | Tippen Sie auf die Miniatur | Klicken Sie auf die Miniatur |
-| Karte | Tippen und halten Sie die Karte | Fahren Sie mit dem Mauszeiger darüber und verwenden Sie dann die Schnellaktion mit Häkchen | Tippen Sie auf die Karte | Klicken Sie auf die Karte |
-| Liste | Tippen Sie auf die Miniatur | Klicken Sie auf die Miniatur | Tippen Sie auf die Miniatur | Klicken Sie auf die Miniatur |
+| Spalte | Auswählen der Miniaturansicht | Klicken Sie auf die Miniatur | Auswählen der Miniaturansicht | Klicken Sie auf die Miniatur |
+| Karte | Karte auswählen und halten | Fahren Sie mit dem Mauszeiger darüber und verwenden Sie dann die Schnellaktion mit Häkchen | Auswählen der Karte | Klicken Sie auf die Karte |
+| Liste | Auswählen der Miniaturansicht | Klicken Sie auf die Miniatur | Auswählen der Miniaturansicht | Klicken Sie auf die Miniatur |
 
 #### Alle auswählen {#select-all}
 
@@ -437,7 +437,7 @@ In der Timeline-Spalte können Sie:
          * mit Ausnahme von Übergangs-Workflows, da keine Verlaufsinformationen für diese gespeichert werden <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
       * Alles anzeigen
 
-* Hinzufügen/Anzeigen von Kommentaren zum gewählten Element Das Feld **Kommentare** wird unten in der Ereignisliste angezeigt. Wenn Sie einen Kommentar eingeben (und anschließend die Eingabetaste drücken), wird der Kommentar registriert. Er wird angezeigt, wenn **Kommentare** oder **Alle anzeigen** ausgewählt wird.
+* Hinzufügen/Anzeigen von Kommentaren zum gewählten Element Das Feld **Kommentare** wird unten in der Ereignisliste angezeigt. Wenn Sie einen Kommentar gefolgt von der Eingabetaste eingeben, wird der Kommentar registriert. Es wird angezeigt, wenn **Kommentare** oder **Alle anzeigen** ausgewählt ist.
 
 * Einige Konsolen weisen weitere Funktionalitäten auf. So können Sie z. B. in der Sites-Konsole
 

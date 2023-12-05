@@ -10,14 +10,14 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
-workflow-type: ht
-source-wordcount: '378'
-ht-degree: 100%
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 93%
 
 ---
 
-# Commerce    Multi-Store-Setup {#multi-store}
+# Multi-Store-Einrichtung in Commerce {#multi-store}
 
 Die CIF-Kernkomponenten von Adobe Experience Manager (AEM) können auf mehreren AEM Site-Strukturen verwendet werden, und die zugrunde liegende GraphQL-Client-Implementierung kann mit verschiedenen Adobe Commerce-Stores/Store-Ansichten verbunden werden. Dadurch können Projekte komplexe Multi-Store-/Multi-Site-Setups implementieren.
 
@@ -39,11 +39,11 @@ Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu ein
 
 3. Erstellen Sie eine untergeordnete Konfiguration der CIF-Cloud Service-Konfiguration wie folgt:
 
-   * Wechseln Sie in AEM zu „Tools“ > „Allgemein“ > [Konfigurations-Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+   * Navigieren Sie AEM zu Tools > Allgemein > [Konfigurationsbrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Wählen Sie die von Ihnen erstellte Basiskonfiguration aus.
    * Erstellen Sie eine Konfiguration mithilfe der oben unter Punkt 2 beschriebenen Schritte.
 
-   Diese neue Konfiguration wird als untergeordnete Konfiguration der Basiskonfiguration erstellt. Sie können nun die Konfigurationseinstellungen unter „Tools“ > „Allgemein“ > „Konfigurationsbrowser“ erstellen.
+   Diese neue Konfiguration wird als untergeordnete Konfiguration der Basiskonfiguration erstellt. Sie können jetzt unter Tools > Allgemein > Konfigurationsbrowser die Konfigurationseinstellungen erstellen.
 
    >[!TIP]
    >

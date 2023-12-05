@@ -2,10 +2,10 @@
 title: Entwicklung und Seitenvergleich
 description: Verstehen Sie, wie die Seitenvergleichsfunktion funktioniert und wie sie sich auf einen Entwickler auswirken kann.
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
-workflow-type: ht
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ Der Seitenvergleich ermöglicht es Benutzenden, die aktuelle Seite mit Launches,
 
 Beim Vergleichen von Versionen einer Seite wird die vorherige Version, die jemand vergleichen möchte, von AEM im Hintergrund neu erstellt, um den Vergleich zu erleichtern. Diese frühere Version ist notwendig, um den Inhalt [für den Vergleich nebeneinander zu rendern](/help/sites-cloud/authoring/features/page-diff.md).
 
-Dieser Wiederherstellungsvorgang wird intern von AEM durchgeführt und ist für die Benutzenden transparent, ohne dass sie eingreifen müssen. Admins, die das Repository beispielsweise in CRXDE Lite anzeigen, sehen diese neu erstellten Versionen jedoch in der Inhaltsstruktur.
+Dieser Wiederherstellungsvorgang wird intern von AEM durchgeführt und ist für die Benutzenden transparent, ohne dass sie eingreifen müssen. Ein Administrator, der das Repository beispielsweise im CRXDE Lite ansieht, würde diese neu erstellten Versionen jedoch innerhalb der Inhaltsstruktur sehen.
 
 Beim Vergleich von Inhalten wird die gesamte Baumstruktur bis zur zu vergleichenden Seite an der folgenden Stelle neu erstellt:
 

@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 100%
+source-wordcount: '746'
+ht-degree: 92%
 
 ---
 
@@ -31,14 +31,14 @@ Im Folgenden finden Sie weiterführende Informationen zur asynchronen Übermittl
 
 So konfigurieren Sie die asynchrone Übermittlung für ein adaptives Formular:
 
-1. Wählen Sie im Authoring-Modus des adaptiven Formulars den Formular-Container aus und tippen Sie auf ![cmppr1](assets/configure-icon.svg), um dessen Eigenschaften anzuzeigen.
+1. Wählen Sie im Authoring-Modus für adaptive Formulare das Formularcontainer-Objekt aus und wählen Sie ![cmppr1](assets/configure-icon.svg) , um seine Eigenschaften zu öffnen.
 1. Aktivieren Sie im Eigenschaftenbereich **[!UICONTROL Übermittlung]** die Option **[!UICONTROL Asynchrone Übermittlung verwenden]**.
 1. Wählen Sie im Abschnitt **[!UICONTROL Beim Absenden]** eine der folgenden Optionen aus, die bei der erfolgreichen Übermittlung des Formulars ausgeführt werden soll.
 
    * **[!UICONTROL Zu URL umleiten]**: Leitet beim Senden des Formulars zur angegebenen URL oder Seite um. Sie können eine URL angeben oder mit der Funktion zum Durchsuchen den Pfad zu einer Seite im Feld **[!UICONTROL Umleitungs-URL/Pfad]** wählen.
    * **[!UICONTROL Nachricht anzeigen]**: Zeigt eine Meldung beim Senden des Formulars an. Sie können eine Nachricht in das Textfeld unterhalb der Option **[!UICONTROL Nachricht anzeigen]** eingeben. Das Textfeld unterstützt Rich-Text-Formatierung.
 
-1. Tippen Sie auf ![check-button1](assets/save_icon.svg), um die Eigenschaften zu speichern.
+1. Auswählen ![check-button1](assets/save_icon.svg) , um die Eigenschaften zu speichern.
 
 ## Funktionsweise der asynchronen Übermittlung {#how-asynchronous-submission-works}
 
@@ -108,11 +108,11 @@ Formularautoren und -entwickler können im Code-Editor formularspezifische Regel
 
 Führen Sie die folgenden Schritte aus, um im Code-Editor Regeln für die Verarbeitung von Erfolgs- und Fehlerereignissen zu schreiben.
 
-1. Öffnen Sie das adaptive Formular im Authoring-Modus, wählen Sie ein Formularobjekt aus und tippen Sie auf ![edit-rules1](assets/edit-rules-icon.svg), um den Regel-Editor zu öffnen.
-1. Wählen Sie **[!UICONTROL Formular]** in der Struktur „Formularobjekte“ und tippen Sie auf **[!UICONTROL Erstellen]**.
+1. Öffnen Sie das adaptive Formular im Authoring-Modus, wählen Sie ein beliebiges Formularobjekt aus und wählen Sie ![edit-rules1](assets/edit-rules-icon.svg) , um den Regeleditor zu öffnen.
+1. Auswählen **[!UICONTROL Formular]** Wählen Sie in der Formularobjektstruktur die Option **[!UICONTROL Erstellen]**.
 1. Aus der Dropdown-Liste **[!UICONTROL Status auswählen]** wählen Sie **[!UICONTROL ist erfolgreich gesendet]** oder **[!UICONTROL Übermittlung schlägt fehl]**.
 1. Definieren Sie eine **[!UICONTROL Dann]**-Aktion für den ausgewählten Status. Beispiel: Wählen Sie **[!UICONTROL Navigieren Sie zu]** und geben Sie dann eine URL ein – manuell oder durch Kopieren und Einfügen. Sie können auch über die Registerkarte **[!UICONTROL Funktionen]** beliebige Funktionen in die Regel ziehen.
 
    ![successful submission handler](assets/form-submission-handler.png)
 
-1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Regel zu speichern.
+1. Auswählen **[!UICONTROL Fertig]** , um die Regel zu speichern.

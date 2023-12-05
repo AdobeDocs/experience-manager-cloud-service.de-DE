@@ -2,10 +2,10 @@
 title: Erweitern von ContextHub
 description: Definieren Sie neue Typen von ContextHub-Stores und -Modulen, wenn die bereitgestellten Typen nicht Ihren Lösungsanforderungen entsprechen
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 84%
+source-wordcount: '625'
+ht-degree: 83%
 
 ---
 
@@ -34,7 +34,7 @@ Verwenden Sie zum Erstellen eines Store-Kandidaten die Funktion [`ContextHub.Uti
 * [`ContextHub.Store.JSONPStore`](contexthub-api.md#contexthub-store-jsonpstore)
 * [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)
 
-Beachten Sie, dass jeder grundlegende Store den Store [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) erweitert.
+Jeder Basisspeicher erweitert die [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) speichern.
 
 Im folgenden Beispiel wird erst die einfachste Erweiterung des Store-Kandidaten `ContextHub.Store.PersistedStore` erstellt:
 

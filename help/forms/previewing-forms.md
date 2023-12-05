@@ -1,14 +1,13 @@
 ---
 title: Wie kann ich ein adaptives Formular in der Vorschau anzeigen?
 description: Benutzer können Formulare vor der Veröffentlichung oder Aktivierung in der Vorschau anzeigen, um sicherzustellen, dass sie die Erwartungen erfüllen. Die Vorschauoptionen können je nach unterstützten Formulartypen variieren.
-uuid: 9ec359ea-f518-441c-9c3d-e3c1ea07a532
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 33%
+source-wordcount: '359'
+ht-degree: 32%
 
 ---
 
@@ -19,7 +18,7 @@ ht-degree: 33%
 
 In [!DNL AEM Forms] können Sie die Formulare und Dokumente im Repository in der Vorschau anzeigen. Die Vorschau zeigt genau, wie die Formulare aussehen und sich verhalten, wenn sie für die Endbenutzer freigegeben werden.
 
-Bei der Vorschau von Formularen werden diese in der interaktiven Benutzeroberfläche wiedergegeben und der Benutzer kann die Formulare mit Daten ausfüllen. Bei der Vorschau von Dokumenten werden diese im nicht interaktiven Modus gerendert und der Benutzer kann nur das Dokument anzeigen. Für Formulare ist eine zusätzliche Option der benutzerdefinierten Vorschau verfügbar. Mit dieser Option können Sie eine Vorschau des Formulars mit Daten aus einer XML-Datei anzeigen. Die Daten füllen einige oder alle Felder des Formulars aus, das in der Vorschau angezeigt wird.
+Bei der Vorschau von Formularen werden diese in der interaktiven Benutzeroberfläche wiedergegeben und der Benutzer kann die Formulare mit Daten ausfüllen. Bei der Vorschau von Dokumenten werden diese im nicht interaktiven Modus gerendert und der Benutzer kann nur das Dokument anzeigen. Für Formulare ist eine zusätzliche Option der benutzerdefinierten Vorschau verfügbar. Mit dieser Option können Sie eine Vorschau des Formulars mit Daten aus einer XML-Datei anzeigen. Die Daten füllen einige der Felder oder alle Felder des Formulars aus, das in der Vorschau angezeigt wird.
 
 In der folgenden Tabelle sind die Vorschauoptionen aufgeführt, die für verschiedene Typen unterstützter Formulare verfügbar sind:
 
@@ -60,7 +59,7 @@ In der folgenden Tabelle sind die Vorschauoptionen aufgeführt, die für verschi
 
    Ihre Optionen sind:
 
-   * Vorschau als HTML
+   * Anzeigen als HTML-Vorschau
    * Vorschau mit Daten
    * Vorschau als PDF (verfügbar für Formularvorlagen)
 

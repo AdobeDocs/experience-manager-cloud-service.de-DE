@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '9461'
-ht-degree: 99%
+source-wordcount: '9454'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
 
 1. **Konfigurieren Sie Videos in Dynamic Media** anhand der folgenden Schritte:
 
-   * Erstellen Sie ein eigenes Videokodierungsprofil. Alternativ Sie können einfach das vordefinierte Profil für _adaptive Videoverschlüsselung_ verwenden, das mit Dynamic Media geliefert wird.
+   * Erstellen Sie Ihr eigenes Videokodierungsprofil. Oder Sie können einfach die vordefinierte _Adaptive Videokodierung_ Profil, das mit Dynamic Media geliefert wird.
 
       * [Erstellen eines Videokodierungsprofils](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * Erfahren Sie mehr über die [Best Practices für Videokodierung](#best-practices-for-encoding-videos).
@@ -58,7 +58,6 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
    * Video-Assets vorab anzeigen und veröffentlichen
 
       * Zeigen Sie das Quellvideo und die kodierten Ausgabedarstellungen des Videos zusammen mit den zugehörigen Miniaturen an:
-
         [Vorschau von Videos anzeigen](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) oder [Vorschau von Assets anzeigen](/help/assets/dynamic-media/previewing-assets.md)
         [Verwalten von Videoausgabedarstellungen](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -68,7 +67,6 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
    * Arbeiten mit Videometadaten
 
       * Bearbeiten Sie die Eigenschaften von Videos, beispielsweise Titel, Beschreibung, Tags und benutzerdefinierte Metadatenfelder:
-
         [Bearbeiten von Videoeigenschaften](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [Verwalten von Metadaten für digitale Assets](/help/assets/manage-metadata.md)
@@ -93,11 +91,9 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
    * Wenn Sie das Web-Content-Management-System eines Drittanbieters verwenden, können Sie Videos mit Web-Seiten verknüpfen oder darin einbetten.
 
       * Integrieren von Videos mithilfe der URL:
-
         [Verknüpfen von URLs mit Ihrer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Integrieren von Videos mithilfe von Einbettungs-Code auf der Web-Seite:
-
         [Einbetten des Video-Viewer auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md).
 
    * [Erzeugen von Videoberichten](#viewing-video-reports).
@@ -212,17 +208,17 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr>
    <td>Desktop</td>
    <td>Firefox 45 oder höher</td>
-   <td>HLS oder DASH*-Streaming mit adaptiver Bit-Rate</td>
+   <td>HLS- oder DASH*-Streaming mit adaptiver Bitrate</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Chrome</td>
-   <td>HLS oder DASH*-Streaming mit adaptiver Bit-Rate</td>
+   <td>HLS- oder DASH*-Streaming mit adaptiver Bitrate</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Safari (Mac)</td>
-   <td>HLS adaptives Bit-Rate-Streaming</td>
+   <td>HLS-Streaming mit adaptiver Bitrate</td>
   </tr>
   <tr>
    <td>Mobilgerät</td>
@@ -232,7 +228,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr>
    <td>Mobilgerät</td>
    <td>Chrome (Android 7™ oder neuer)</td>
-   <td>HLS oder DASH*-Streaming mit adaptiver Bit-Rate/td&gt;
+   <td>HLS- oder DASH*-Streaming mit adaptiver Bitrate/td&gt;
   </tr>
   <tr>
    <td>Mobilgerät</td>
@@ -242,12 +238,12 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr>
    <td>Mobilgerät</td>
    <td>Safari (iOS)</td>
-   <td>HLS adaptives Bit-Rate-Streaming</td>
+   <td>HLS-Streaming mit adaptiver Bitrate</td>
   </tr>
   <tr>
    <td>Mobilgerät</td>
    <td>Chrome (iOS)</td>
-   <td>HLS adaptives Bit-Rate-Streaming</td>
+   <td>HLS-Streaming mit adaptiver Bitrate</td>
   </tr>
  </tbody>
 </table>
@@ -721,7 +717,7 @@ Es kann jedoch jede hochgeladene Audiospurdatei als Standardaudio festgelegt wer
 >Die Wiedergabe des Standardaudios kann auch davon abhängen, was in den folgenden Browsern festgelegt ist:
 >
 >* Chrome – Es wird das im Video festgelegte Standardaudio wiedergegeben.
->* Safari – Wenn die Standardsprache in Safari festgelegt ist, wird Audio mit der festgelegten Standardsprache wiedergegeben, sofern mit dem Manifest des Videos verfügbar. Andernfalls wird das Standardaudio abgespielt, das als Teil der Eigenschaften eines Videos festgelegt ist.
+* Safari – Wenn die Standardsprache in Safari festgelegt ist, wird Audio mit der festgelegten Standardsprache wiedergegeben, sofern mit dem Manifest des Videos verfügbar. Andernfalls wird das Standardaudio abgespielt, das als Teil der Eigenschaften eines Videos festgelegt ist.
 
 **Festlegen des Standardaudios für ein Video mit mehreren Audiospuren:**
 
@@ -750,7 +746,7 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-medi
 
 >[!NOTE]
 >
->Auf der Standardregisterkarte für die Vorschau von Experience Manager werden nicht mehr als eine Untertitel- und Audiospur angezeigt. Der Grund dafür ist, dass diese Spuren mit Dynamic Media verknüpft sind und nur mit der Dynamic Media-Viewer-Vorschau angezeigt werden können.
+Auf der Standardregisterkarte für die Vorschau von Experience Manager werden nicht mehr als eine Untertitel- und Audiospur angezeigt. Der Grund dafür ist, dass diese Spuren mit Dynamic Media verknüpft sind und nur mit der Dynamic Media-Viewer-Vorschau angezeigt werden können.
 
 **So zeigen Sie die Vorschau eines Videos an, das mehrere Untertitel und Audiospuren aufweist:**
 
@@ -829,7 +825,7 @@ Die ursprüngliche Audiospur, die aus einer Primärdatei extrahiert wurde, kann 
 
 >[!IMPORTANT]
 >
->Adobe empfiehlt, dass Sie in Ihrem Dynamic Media-Konto die [Multiuntertitel- und Multiaudiospur-Funktion aktivieren](#enable-dash). Auf diese Weise können Sie die neueste Dynamic Media-Backend-Architektur und einen vereinfachten Workflow zum Hinzufügen von Untertiteln, Beschriftungen und Audiospuren zu Ihren Videos nutzen.
+Adobe empfiehlt, dass Sie in Ihrem Dynamic Media-Konto die [Multiuntertitel- und Multiaudiospur-Funktion aktivieren](#enable-dash). Auf diese Weise können Sie die neueste Dynamic Media-Backend-Architektur und einen vereinfachten Workflow zum Hinzufügen von Untertiteln, Beschriftungen und Audiospuren zu Ihren Videos nutzen.
 
 Sorgen Sie dafür, dass Ihre Videos Märkte auf der ganzen Welt erreichen, indem Sie Untertitel zu einzelnen Videos oder adaptiven Videosets hinzufügen. Wenn Sie verdeckte Untertitel hinzufügen, müssen Sie die Audiodaten nicht synchronisieren oder Muttersprachler bzw. Muttersprachlerinnen damit beauftragen, das Audio in einer anderen Sprache neu aufzuzeichnen. Das Video wird in der Sprache, in der es aufgenommen wurde, wiedergegeben. Fremdsprachliche Untertitel werden angezeigt, sodass auch Nutzer anderer Sprachen den Audioteil verstehen können.
 
@@ -837,7 +833,7 @@ Geschlossene Untertitel ermöglichen auch einen besseren Zugang für Personen, d
 
 >[!NOTE]
 >
->Der verwendete Video-Player muss die Anzeige von Untertiteln unterstützen.
+Der verwendete Video-Player muss die Anzeige von Untertiteln unterstützen.
 
 Weitere Informationen finden Sie unter [Barrierefreiheit in Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md).
 
@@ -865,7 +861,7 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
 
    >[!NOTE]
    >
-   >Für globale Unterstützung von Videountertiteln in verschiedenen Sprachen ist zu beachten, dass der WebVTT-Standard separate .vtt-Dateien und Abrufe für jede Sprache benötigt, die Sie unterstützen möchten.
+   Für globale Unterstützung von Videountertiteln in verschiedenen Sprachen ist zu beachten, dass der WebVTT-Standard separate .vtt-Dateien und Abrufe für jede Sprache benötigt, die Sie unterstützen möchten.
 
    Im Allgemeinen sollte die VTT-Untertiteldatei denselben Namen haben wie die Videodatei, an den jedoch ein Kürzel für die Sprache wie -EN, -FR oder -DE angehängt ist. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen Web-Content-Management-System zu automatisieren.
 
@@ -878,7 +874,7 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Zur Wiedergabe des Videos in einem Popup-Fensterwählen Sie **[!UICONTROL URL]** aus. Wählen Sie im Dialogfeld „URL“ die URL aus, kopieren Sie sie in die Zwischenablage und fügen Sie sie dann in einen einfachen Texteditor ein. Hängen Sie die kopierte URL des Videos mit der folgenden Syntax an:
+   * Wählen Sie für ein Popup-Video-Viewer-Erlebnis **[!UICONTROL URL]**. Wählen Sie im Dialogfeld „URL“ die URL aus, kopieren Sie sie in die Zwischenablage und fügen Sie sie dann in einen einfachen Texteditor ein. Hängen Sie die kopierte URL des Videos mit der folgenden Syntax an:
 
      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
@@ -896,7 +892,7 @@ Um das Ansehen von und Navigieren in langformatigen Videos zu vereinfachen, kön
 
 >[!NOTE]
 >
->Der verwendete Video-Player muss die Verwendung von Kapitelmarken unterstützen. Dynamic Media-Video-Player unterstützten Kapitelmarken, Video-Player von Drittanbietern jedoch möglicherweise nicht.
+Der verwendete Video-Player muss die Verwendung von Kapitelmarken unterstützen. Dynamic Media-Video-Player unterstützten Kapitelmarken, Video-Player von Drittanbietern jedoch möglicherweise nicht.
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -1067,7 +1063,7 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
    if the directory panel is not visible, you may need to select the >> icon to the left of the Home tab.
 
-1. On the lower-right panel, in the Properties tab, double-tap `thumbnailtime`.
+1. On the lower-right panel, in the Properties tab, double-select `thumbnailtime`.
 1. In the Edit thumbnailtime dialog box, use the text fields to enter interval values as percentages.
 
     * Select the plus sign (+) icon to add one or more interval value fields. You may need to scroll to the bottom of the dialog box to see the icon.

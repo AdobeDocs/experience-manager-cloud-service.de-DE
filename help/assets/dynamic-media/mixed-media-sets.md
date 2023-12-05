@@ -1,14 +1,14 @@
 ---
 title: Gemischte Mediensets
-description: In diesem Abschnitt erfahren Sie, wie Sie gemischte Mediensets in Dynamic Media verwenden..
+description: Erfahren Sie, wie Sie mit gemischten Mediensets in Dynamic Media arbeiten.
 contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 99%
+source-wordcount: '1507'
+ht-degree: 97%
 
 ---
 
@@ -158,7 +158,7 @@ Sie können direkt auf der Benutzeroberfläche verschiedene Bearbeitungsaufgaben
 
    >[!NOTE]
    >
-   >* Um die Assets in einem gemischten Medienset zu bearbeiten, navigieren Sie zum gemischten Medienset. Tippen Sie auf das Set (nicht auswählen), um es auf der Seite „Experience Manager-Set-Vorschau“ zu öffnen. Klicken Sie in der linken Leiste auf das Caret-Zeichen nach unten, um die Dropdown-Liste zu öffnen, und klicken Sie dann auf **[!UICONTROL Set-Mitglieder]**. Bewegen Sie den Mauszeiger auf der Seite „Set-Mitglieder“ über ein Asset und klicken Sie dann auf **[!UICONTROL Bearbeiten]** (Stiftsymbol), um die Bearbeitungsseite zu öffnen.
+   >* Um die Assets in einem gemischten Medienset zu bearbeiten, navigieren Sie zum gemischten Medienset. Wählen Sie das Set aus (wählen Sie es nicht aus), damit Sie es auf der Seite &quot;Experience Manager-Set-Vorschau&quot;öffnen können. Klicken Sie in der linken Leiste auf das Caret-Zeichen nach unten, um die Dropdown-Liste zu öffnen, und klicken Sie dann auf **[!UICONTROL Set-Mitglieder]**. Bewegen Sie den Mauszeiger auf der Seite „Set-Mitglieder“ über ein Asset und klicken Sie dann auf **[!UICONTROL Bearbeiten]** (Stiftsymbol), um die Bearbeitungsseite zu öffnen.
    >
    >* Um ein komplettes gemischtes Medienset aus einem Anzeigemodus zu löschen (z. B. Karten- oder Spaltenansicht), navigieren Sie zum gemischten Medienset. Bewegen Sie den Mauszeiger über das Set und klicken Sie dann auf **[!UICONTROL Auswählen]** (Häkchensymbol). Drücken Sie die **[!UICONTROL Rücktaste]** oder klicken Sie auf **[!UICONTROL Mehr]** (Reihe von drei Punkten) und dann auf **[!UICONTROL Löschen]**.
 

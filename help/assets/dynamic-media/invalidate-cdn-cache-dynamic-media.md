@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1397'
 ht-degree: 100%
 
 ---
@@ -55,7 +55,6 @@ Diese Invalidierung ist jedoch nicht bei generischen Domains möglich, die die i
    >Die Vorlage für CDN-Invalidierung kann Text mit bis zu 2500 Zeichen speichern.
 
 1. Klicken Sie in der rechten oberen Ecke der Seite **[!UICONTROL Vorlage für CDN-Invalidierung]** auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL OK]**.<br>
-
    *Teil 2 von 2: Einrichten von CDN-Invalidierunsoptionen*
    <br>
 
@@ -102,4 +101,4 @@ In jedem Fall wird entweder der gesamte Batch zur Invalidierung verarbeitet oder
 | *Keine URLs eingegeben, die ungültig gemacht werden sollen.* | Tritt auf, wenn auf der Seite **[!UICONTROL CDN-Invalidierung]** – **[!UICONTROL Bestätigen]** keine URLs vorhanden sind und Sie **[!UICONTROL Absenden]** wählen. |
 
 
-<!--  | I do not want to create a template. | Near the upper-right corner of the page, select **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. Note that while you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->
+<!--  | I do not want to create a template. | Near the upper-right corner of the page, select **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. While you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->

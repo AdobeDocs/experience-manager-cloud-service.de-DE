@@ -2,10 +2,10 @@
 title: Autorenumgebung und Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2161'
-ht-degree: 87%
+ht-degree: 84%
 
 ---
 
@@ -108,7 +108,7 @@ Der Asset-Browser befindet sich auf einer Registerkarte im seitlichen Bedienfeld
 
 ![Seitliches Bedienfeld ein/aus](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-Wenn Sie das Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. Wählen Sie hier ggf. die Registerkarte **Assets**.
+Wenn Sie den Seitenbereich öffnen, wird er von der linken Seite aus eingeblendet. Wählen Sie die **Assets** bei Bedarf.
 
 ![Schaltfläche „Asset-Browser“](/help/sites-cloud/authoring/assets/assets-browser-button.png)
 
@@ -224,7 +224,7 @@ Wenn Ihre Seite Inhaltsfragmente enthält, haben Sie auch Zugriff auf den [Brows
 
 Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen: In bestimmten Situationen sind weitere Aktionen verfügbar, wenn Sie einen bestimmten Verweis auswählen:
 
-* **Eingehende Links** enthält eine Liste der Seiten, die auf die Seite verweisen, und bietet direkten Zugriff zum **Bearbeiten** einer dieser Seiten, wenn Sie einen bestimmten Link auswählen..
+* **Eingehende Links** bietet eine Liste der Seiten, die auf die Seite verweisen, sowie direkten Zugriff auf **Bearbeiten** eine dieser Seiten, wenn Sie einen bestimmten Link auswählen.
 
    * Dies kann nur statische Links anzeigen, nicht dynamisch generierte Links, z. B. aus der Listenkomponente.
 

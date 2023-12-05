@@ -2,10 +2,10 @@
 title: Grundlegendes zu Cloud Service-Inhaltsanforderungen
 description: Wenn Sie Lizenzen für Inhaltsanforderungen von Adobe erworben haben, erfahren Sie mehr über die Arten von Inhaltsanforderungen, die Adobe Experience Cloud as a Service misst, und über die Abweichungen mit den Analytics-Reporting-Tools eines Unternehmens.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 10%
+source-wordcount: '1165'
+ht-degree: 9%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 ## Varianzen von Inhaltsanforderungen von Cloud Services{#content-requests-variances}
 
-Inhaltsanforderungen können Abweichungen von den Analytics-Reporting-Tools eines Unternehmens aufweisen, wie in der folgenden Tabelle zusammengefasst. Im Allgemeinen können Analytics-Tools Daten mithilfe Client-seitiger Instrumentierung erfassen <b>darf nicht angewendet werden</b> um über die Anzahl der Inhaltsanfragen für eine bestimmte Site zu berichten, einfach weil sie häufig davon abhängen, dass die Benutzerzustimmung ausgelöst wird, sodass sie bei einem erheblichen Teil des Traffics fehlen. Analytics-Tools, die Daten Server-seitig in Protokolldateien sammeln, oder CDN-Berichte für Kunden, die zusätzlich zu AEM as a Cloud Service ihr eigenes CDN hinzufügen, bieten bessere Zählungen. Für die Berichterstellung über Seitenansichten und die damit verbundene Leistung ist der Adobe RUM-Datendienst die Adobe empfohlene Option.
+Inhaltsanforderungen können Abweichungen von den Analytics-Reporting-Tools eines Unternehmens aufweisen, wie in der folgenden Tabelle zusammengefasst. Im Allgemeinen *nicht* Verwenden Sie Analysetools, die Daten mithilfe Client-seitiger Instrumentierung erfassen, um über die Anzahl der Inhaltsanforderungen für eine bestimmte Site zu berichten, einfach weil sie häufig davon abhängen, dass die Benutzerzustimmung ausgelöst wird, und daher bei einem erheblichen Teil des Traffics fehlen. Analytics-Tools, die Daten Server-seitig in Protokolldateien sammeln, oder CDN-Berichte für Kunden, die zusätzlich zu AEM as a Cloud Service ihr eigenes CDN hinzufügen, bieten bessere Zählungen. Für Berichte zu Seitenansichten und der zugehörigen Leistung ist der Adobe RUM-Datendienst die Adobe empfohlene Option.
 
 | Grund für die Abweichung | Erklärung |
 |---|---|
@@ -43,11 +43,11 @@ Es gibt Regeln, um bekannte Bots auszuschließen, einschließlich bekannter Dien
 
 | Anfragetyp | Inhaltsanforderung | Beschreibung |
 | --- | --- | --- |
-| HTTP-Code 100-299 | Einschließlich | Hierbei handelt es sich um reguläre Anfragen, die alle oder nur teilweise Inhalte bereitstellen. |
-| HTTP-Bibliotheken für Automatisierung | Einschließlich | Beispiele:<br>・ Amazon CloudFront<br>・ Apache Http Client<br>・ Asynchroner HTTP-Client<br>・ Axios<br>Azureus<br>・ Curl<br>・ GitHub-Knotenabruf<br>・ Guzzle<br>・ Gohttp-client<br>・ Headless-Chrome<br>・ Java™ Client<br>Jersey<br>・ Knoteneinbettung<br>・ okhttp<br>Python-Anfragen<br>・ Reactor Netty<br>・ Wget<br>・ WinHTTP |
-| Tools zur Überwachung und Konsistenzprüfung | Einschließlich | Diese werden vom Kunden eingerichtet, um einen bestimmten Aspekt der Site zu überwachen. Beispielsweise Verfügbarkeit oder reale Benutzerleistung. Verwendung `/system/probes/health` -Endpunkt und nicht die eigentlichen HTML-Seiten von der Site.<br>Beispiele:<br>・ Amazon-Route53-Health-Check-Service<br>・ EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br>・ Investis-Site24x7<br>・ Mozilla/5.0+(kompatibel; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>ThousandEyes-Dragonfly-x1<br>OmtrBot/1.0<br>・ WebMon/2.0.0 |
-| `<link rel="prefetch">` requests | Einschließlich | Um das Laden der nächsten Seite zu beschleunigen, können Kunden vom Browser eine Reihe von Seiten laden lassen, bevor der Benutzer auf den Link klickt, sodass sie sich bereits im Cache befinden. *Denken: Dadurch wird der Traffic deutlich erhöht*- abhängig davon, wie viele dieser Seiten vorabgerufen werden. |
-| Traffic, der die Berichterstellung für Adobe Analytics oder Google Analytics blockiert | Einschließlich | Es kommt häufiger vor, dass für Besucher von Websites Datenschutzsoftware installiert ist (Anzeigenblocker usw.), die die Genauigkeit von Google Analytics oder Adobe Analytics beeinträchtigt. AEM as a Cloud Service zählt Anforderungen beim ersten Einstiegspunkt in die von der Adobe betriebene Infrastruktur und nicht auf der Clientseite. |
+| HTTP-Code 100-299 | Enthalten | Hierbei handelt es sich um reguläre Anfragen, die alle oder nur teilweise Inhalte bereitstellen. |
+| HTTP-Bibliotheken für Automatisierung | Enthalten | Beispiele:<br>・ Amazon CloudFront<br>・ Apache Http Client<br>・ Asynchroner HTTP-Client<br>・ Axios<br>Azureus<br>・ Curl<br>・ GitHub-Knotenabruf<br>・ Guzzle<br>・ Gohttp-client<br>・ Headless-Chrome<br>・ Java™ Client<br>Jersey<br>・ Knoteneinbettung<br>・ okhttp<br>Python-Anfragen<br>・ Reactor Netty<br>・ Wget<br>・ WinHTTP |
+| Tools zur Überwachung und Konsistenzprüfung | Enthalten | Diese werden vom Kunden eingerichtet, um einen bestimmten Aspekt der Site zu überwachen. Beispielsweise Verfügbarkeit oder reale Benutzerleistung. Verwendung `/system/probes/health` -Endpunkt und nicht die eigentlichen HTML-Seiten von der Site.<br>Beispiele:<br>・ Amazon-Route53-Health-Check-Service<br>・ EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br>・ Investis-Site24x7<br>・ Mozilla/5.0+(kompatibel; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>ThousandEyes-Dragonfly-x1<br>OmtrBot/1.0<br>・ WebMon/2.0.0 |
+| `<link rel="prefetch">` requests | Enthalten | Um das Laden der nächsten Seite zu beschleunigen, können Kunden vom Browser eine Reihe von Seiten laden lassen, bevor der Benutzer auf den Link klickt, sodass sie sich bereits im Cache befinden. *Denken: Dadurch wird der Traffic deutlich erhöht*- abhängig davon, wie viele dieser Seiten vorabgerufen werden. |
+| Traffic, der die Berichterstellung für Adobe Analytics oder Google Analytics blockiert | Enthalten | Es kommt häufiger vor, dass für Besucher von Websites Datenschutzsoftware installiert ist (Anzeigenblocker usw.), die die Genauigkeit von Google Analytics oder Adobe Analytics beeinträchtigt. AEM as a Cloud Service zählt Anforderungen beim ersten Einstiegspunkt in die von der Adobe betriebene Infrastruktur und nicht auf der Clientseite. |
 
 Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
 

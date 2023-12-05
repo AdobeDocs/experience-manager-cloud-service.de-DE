@@ -2,10 +2,10 @@
 title: Ihr Posteingang
 description: Erfahren Sie, wie Sie mit den Benachrichtigungen, die in Ihren Posteingang eintreffen, Ihre Aufgaben verwalten können.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 94%
+source-wordcount: '910'
+ht-degree: 88%
 
 ---
 
@@ -33,7 +33,7 @@ Sie erhalten diese Benachrichtigungen in Ihrem eigenen Posteingang, in dem Sie s
 
 ## Posteingang in der Kopfzeile {#inbox-in-the-header}
 
-In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Posteingang vorhandenen Elemente angezeigt. Sie können diese Anzeige auch öffnen, um schnell auf die Seiten zuzugreifen, auf denen Aktionen nötig sind, oder um den Posteingang aufzurufen.
+In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Posteingang vorhandenen Elemente angezeigt. Die Anzeige kann auch geöffnet werden, um einen schnellen Zugriff auf die Seiten zu ermöglichen, für die Aktionen erforderlich sind, oder um auf den Posteingang zuzugreifen:
 
 ![Übersicht über Posteingang in der Kopfzeile](/help/sites-cloud/authoring/assets/inbox-header.png)
 
@@ -150,7 +150,7 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen festlegen:
 
    * Bestätigen Sie die entsprechende Aktion, z. B. die Neuzuweisung.
    * Die Aktion abbrechen.
-   * Wählen Sie den Rückwärtspfeil aus, um zum Posteingang zurückzukehren. Wenn z. B. ein Assistent oder eine Dokumentationsseite geöffnet wurde, können Sie zum Posteingang zurückkehren.
+   * Wählen Sie den Rückwärtspfeil aus, um zum Posteingang zurückzukehren. Wenn beispielsweise ein Aktionsassistent oder eine Dokumentationsseite geöffnet wurde, können Sie zum Posteingang zurückkehren.
 
 ## Erstellen einer Aufgabe {#creating-a-task}
 

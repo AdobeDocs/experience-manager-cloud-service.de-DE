@@ -2,10 +2,10 @@
 title: Erstellen von Seitenvorlagen
 description: Eine Vorlage definiert die Struktur einer erstellten Seite und mit dem Vorlageneditor ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4535'
-ht-degree: 86%
+source-wordcount: '4523'
+ht-degree: 84%
 
 ---
 
@@ -69,7 +69,7 @@ Die in diesem Dokument beschriebenen Aufgaben werden jeweils mit der Rolle aufge
 
 Beim Erstellen einer bearbeitbaren Vorlage haben Sie folgende Möglichkeiten:
 
-* Verwenden Sie die **Vorlagenkonsole**, die im Bereich **Allgemein** der Konsole **Tools** verfügbar ist.
+* Verwenden Sie die **Vorlage** Konsole. Dies ist im Abschnitt **Allgemein** Abschnitt **Instrumente** Konsole.
    * Oder direkt unter: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * Erstellen Sie bei Bedarf [einen Ordner für die Vorlagen](#creating-a-template-folder-admin).
 * [Erstellen Sie eine neue Vorlage](#creating-a-new-template-template-author), die anfangs leer ist.
@@ -95,11 +95,11 @@ Beim Erstellen einer bearbeitbaren Vorlage haben Sie folgende Möglichkeiten:
 
 ### Erstellen eines Vorlagenordners – Administrator {#creating-a-template-folder-admin}
 
-Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlagen erstellt werden. Dies ist eine Administratoraufgabe, die im Dokument [Seitenvorlagen](/help/implementing/developing/components/templates.md#template-folders) beschrieben wird.-->
+Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlagen erstellt werden. Dies ist eine Administratoraufgabe, die im Dokument beschrieben wird [Seitenvorlagen](/help/implementing/developing/components/templates.md#template-folders).
 
 ### Erstellen einer neuen Vorlage – Vorlagenautor {#creating-a-new-template-template-author}
 
-1. Öffnen Sie die **Vorlagenkonsole** (über **Tools >** **Allgemein**) und navigieren Sie zum gewünschten Ordner.
+1. Öffnen Sie die **Vorlagenkonsole** (durch **Tools >** **Allgemein**) und navigieren Sie dann zum gewünschten Ordner.
 
    >[!NOTE]
    >
@@ -143,7 +143,7 @@ Eine Vorlage kann die folgenden Eigenschaften aufweisen:
 * Titel
    * Ein Titel, der zur Identifizierung der Vorlage verwendet wird, z. B. im Assistenten **Seite erstellen**.
 * Beschreibung
-   * Eine optionale Beschreibung mit weiteren Informationen zur Vorlage und deren Verwendung, die beispielsweise im **Seitenerstellungsassistenten** angezeigt werden können.
+   * Eine optionale Beschreibung, die weitere Informationen über die Vorlage und ihre Verwendung bereitstellt, die beispielsweise im **Seite erstellen** Assistent.
 
 So zeigen Sie die Eigenschaften an bzw. bearbeiten sie:
 
@@ -226,7 +226,7 @@ Da beim Rendern einer Seite auf die Vorlage verwiesen wird, muss die vollständi
 1. Wählen Sie die **Inhaltsrichtlinien**, die mit veröffentlicht werden sollen.
 1. Wählen Sie **Veröffentlichen** in der Symbolleiste, um den Vorgang abzuschließen.
 
-## Bearbeiten von Vorlagen   – Vorlagenautoren {#editing-templates-template-authors}
+## Bearbeiten von Vorlagen - Vorlagenautoren {#editing-templates-template-authors}
 
 Beim Erstellen oder Bearbeiten einer Vorlage können verschiedene Aspekte definiert werden. Das Bearbeiten von Vorlagen ähnelt dem Erstellen von Seiten.
 
@@ -415,7 +415,7 @@ Beispielsweise können Sie für eine Bildkomponente die Zuschneideproportionen, 
 
 >[!CAUTION]
 >
->Beachten Sie, dass in AEM die Beschneidungsverhältnisse als **Höhe/Breite** definiert sind. Dies unterscheidet sich von der herkömmlichen Definition als Breite/Höhe und erfolgt aus Gründen der Legacy-Kompatibilität. Benutzer, die Seiten erstellen, bemerken keinen Unterschied, vorausgesetzt, dass Sie den **Namen** klar definieren, da dieser auf der Benutzeroberfläche angezeigt wird.
+>In AEM werden die Zuschnittverhältnisse als **height/width**. Dies unterscheidet sich von der herkömmlichen Definition als Breite/Höhe und erfolgt aus Gründen der Legacy-Kompatibilität. Benutzer, die Seiten erstellen, bemerken keinen Unterschied, vorausgesetzt, dass Sie den **Namen** klar definieren, da dieser auf der Benutzeroberfläche angezeigt wird.
 
 >[!NOTE]
 >
@@ -459,7 +459,7 @@ Auf der Registerkarte **Zugelassene Komponenten** legen Sie fest, welche Kompone
 
 ###### Standardkomponenten {#default-components}
 
-Auf der Registerkarte **Standardkomponenten** legen Sie fest, welche Komponenten automatisch mit bestimmten Medientypen verknüpft werden, damit AEM beim Ziehen eines Assets aus dem Asset-Browser weiß, mit welcher Komponente es verknüpft werden soll. Beachten Sie, dass für diese Konfiguration nur Komponenten mit Ablageflächen verfügbar sind.
+Auf der Registerkarte **Standardkomponenten** legen Sie fest, welche Komponenten automatisch mit bestimmten Medientypen verknüpft werden, damit AEM beim Ziehen eines Assets aus dem Asset-Browser weiß, mit welcher Komponente es verknüpft werden soll. Für diese Konfiguration sind nur Komponenten mit Ablageflächen verfügbar.
 
 Auswählen **Zuordnung hinzufügen** , um eine völlig neue Komponente und MIME-Typzuordnung hinzuzufügen.
 

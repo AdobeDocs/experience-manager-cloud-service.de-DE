@@ -2,10 +2,10 @@
 title: Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren
 description: Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 96%
+source-wordcount: '519'
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ Dies erfolgt durch die Konfiguration von [OSGi-Service – Konfiguration der Inh
 Diese Informationen sind erforderlich, wenn Sie:
 
 * Ihre eigene auf einem Inhaltsfragment basierende Komponente bereitstellen
-* und die erweiterten Services verwenden müssen.
+* Außerdem müssen die erweiterten Dienste genutzt werden.
 
 Adobe empfiehlt die Verwendung der Kernkomponenten.
 

@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '5562'
-ht-degree: 99%
+source-wordcount: '5496'
+ht-degree: 98%
 
 ---
 
@@ -87,7 +87,7 @@ Ab August 2023 enthält Experience Manager Assets eine neue Version 9 von Index 
 
 Wenn Sie zum vorherigen Verhalten (`statistical`-Modus) wechseln müssen, lesen Sie [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=de), um eine benutzerdefinierte Version des `damAssetLucene-9`-Indexes zu erstellen. Adobe rät aufgrund der Auswirkungen auf die Antwortzeiten der Suche mit großen Ergebnismengen davon ab, zum `secure`-Modus zu wechseln.
 
-Weitere Informationen zu den Facettenfunktionen von Oak, einschließlich einer detaillierten Beschreibung dieser Modi, finden Sie in [diesem Artikel](https://jackrabbit.apache.org/oak/docs/query/lucene.html#Facetten).
+Weitere Informationen zu den Facettenfunktionen von Oak, einschließlich einer detaillierten Beschreibung dieser Modi, finden Sie in [diesem Artikel](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
 ## Suchvorschläge bei der Eingabe {#searchsuggestions}
 
@@ -234,7 +234,7 @@ Das Keyword für eine von einem Benutzer erstellte Eigenschaft ist ihre Feldbesc
 
 Im Folgenden finden Sie einige Beispiele für Suchformate für komplexe Abfragen:
 
-* So zeigen Sie alle Assets mit mehreren Facettenfeldern an (wie: title=John Doe und creator tool = Adobe Photoshop):   `title:"John Doe" creatortool:Adobe*`
+* So zeigen Sie alle Assets mit mehreren Facettenfeldern an (z. B.: title=John Doe und creator tool = Adobe Photoshop): `title:"John Doe" creatortool:Adobe*`
 * So zeigen Sie alle Assets an, wenn der Facettenwert nicht ein einzelnes Wort, sondern ein Satz ist (wie: title=Scott Reynolds): `title:"Scott Reynolds"`
 * So zeigen Sie alle Assets mit mehreren Werten für eine einzelne Eigenschaft an (wie: title=Scott Reynolds oder John Doe): `title:"Scott Reynolds" OR "John Doe"`
 * So zeigen Sie Assets an, deren Eigenschaftswerte mit einer bestimmten Zeichenfolge beginnen (wie: title ist Scott Reynolds): `title:Scott*`
@@ -284,7 +284,7 @@ Sie können die folgenden Anfrageparameter in einer URL übergeben, um den Asset
 
 | Name | Werte | Beispiel | Zweck |
 |---|---|---|---|
-| resource suffix (B) | Ordnerpfad als Ressourcensuffix in der URL:   [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Zum Starten des Asset-Wählers mit einem bestimmten Ordner, z. B. mit ausgewähltem Ordner `/content/dam/we-retail/en/activities`, sollte die URL wie folgt aussehen: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Wenn beim Starten des Asset-Wählers ein bestimmter Ordner ausgewählt sein soll, können Sie ihn als Ressourcensuffix übergeben. |
+| resource suffix (B) | Ordnerpfad als Ressourcensuffix in der URL: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | So starten Sie die Asset-Auswahl mit einem bestimmten Ordner, beispielsweise mit dem Ordner `/content/dam/we-retail/en/activities` ausgewählt ist, sollte die URL wie folgt aussehen: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Wenn beim Starten des Asset-Wählers ein bestimmter Ordner ausgewählt sein soll, können Sie ihn als Ressourcensuffix übergeben. |
 | `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | Im Modus „multiple“ können Sie mit dem Asset-Wähler mehrere Assets gleichzeitig auswählen. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Verwenden Sie diese Parameter, um den Asset-Wähler als Granite-Dialogfeld zu öffnen. Diese Option ist nur relevant, wenn Sie den Asset-Wähler per Granite-Pfadfeld starten und als pickerSrc-URL konfigurieren. |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Verwenden Sie diese Option, um den Stammordner für den Asset-Wähler anzugeben. In diesem Fall können Sie mit dem Asset-Wähler nur untergeordnete Assets (direkt/indirekt) unter dem Stammordner auswählen. |

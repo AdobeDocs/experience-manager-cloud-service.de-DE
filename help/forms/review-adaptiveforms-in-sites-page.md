@@ -4,10 +4,10 @@ description: '"Überprüfen"ist ein Mechanismus, mit dem der Überprüfer mithil
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 88%
+source-wordcount: '338'
+ht-degree: 83%
 
 ---
 
@@ -25,7 +25,7 @@ Unter Verwendung von [Schritt zuweisen](https://experienceleague.adobe.com/docs/
 1. Öffnen Sie Ihre Autoreninstanz im Bearbeitungsmodus.
 1. Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]** > **[!UICONTROL Erstellen]** > **[!UICONTROL Modell erstellen]**
 1. Geben Sie den Titel des Workflows an und fügen Sie den Schritt **[Aufgabe zuweisen]** hinzu
-1. Tippen Sie auf ![settings_icon](assets/settings_icon.png) in der Aktionsleiste. Das Dialogfeld **[!UICONTROL Aufgabe zuweisen]** wird geöffnet.
+1. Auswählen ![settings_icon](assets/settings_icon.png) in der Aktionsleiste. Das Dialogfeld **[!UICONTROL Aufgabe zuweisen]** wird geöffnet.
 1. Öffnen Sie die Registerkarte [!UICONTROL Formular und Dokument] und öffnen Sie das Dropdown-Menü [!UICONTROL Vorausgefüllt] und geben Sie Folgendes an:
 
    * Eingabedatei auswählen mit
@@ -44,7 +44,7 @@ Unter Verwendung von [Schritt zuweisen](https://experienceleague.adobe.com/docs/
 Konfigurieren Sie nun die Übermittlungsaktion einer Container-Komponente für adaptive Formulare auf der Sites-Seite:
 
 1. Navigieren Sie zur Sites-Seite.
-1. Tippen Sie auf ![settings_icon](assets/settings_icon.png) eines Containers für adaptive Formulare. Das Dialogfeld **[!UICONTROL Container für adaptive Formulare]** wird geöffnet.
+1. Auswählen ![settings_icon](assets/settings_icon.png) eines Containers für adaptive Formulare. Das Dialogfeld **[!UICONTROL Container für adaptive Formulare]** wird geöffnet.
 1. Öffnen Sie die Registerkarte **[!UICONTROL Übermittlung]** und geben Sie **[!UICONTROL Übermittlungsaktion]** an, um [einen AEM-Workflow auszulösen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=de#invoke-an-aem-workflow)
 
 1. Klicken Sie auf [Fertig], um die Einstellungen zu speichern.

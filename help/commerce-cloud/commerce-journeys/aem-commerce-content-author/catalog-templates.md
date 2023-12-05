@@ -2,10 +2,10 @@
 title: Verwalten von Produktkatalogseiten und -vorlagen
 description: Erfahren Sie, wie Sie Produktkatalogseiten und -vorlagen verwalten
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 85%
+ht-degree: 83%
 
 ---
 
@@ -89,7 +89,7 @@ Die Vorlage kann mit jeder Kategorie/jedem Produkt in der Vorschau angezeigt wer
 
 ![Vorlage erstellen ](assets/create-template-picker.png)
 
-Nun müssen wir diese Vorlage der jeweiligen Kategorie zuweisen. Öffnen Sie „Eigenschaften“ im Menü **Seiteninformationen** und wechseln Sie zur Registerkarte „Commerce“. Klicken Sie auf das Ordnersymbol, um die **Look kaufen** aus der Kategorieauswahl. Es ist möglich, einer Vorlage mehrere Kategorien und auch Unterkategorien zuzuweisen, indem Sie das Kontrollkästchen aktivieren.
+Nun müssen Sie diese Vorlage der jeweiligen Kategorie zuweisen. Öffnen Sie „Eigenschaften“ im Menü **Seiteninformationen** und wechseln Sie zur Registerkarte „Commerce“. Klicken Sie auf das Ordnersymbol, um die **Look kaufen** aus der Kategorieauswahl. Es ist möglich, einer Vorlage mehrere Kategorien und auch Unterkategorien zuzuweisen, indem Sie das Kontrollkästchen aktivieren.
 
 ![Vorlagenzuordnung erstellen](assets/create-template-associate.png)
 

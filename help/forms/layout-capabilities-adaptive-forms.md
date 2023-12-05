@@ -2,16 +2,16 @@
 title: Welche Layoutfunktionen bietet Adaptive Forms?
 description: Layout und Darstellung adaptiver Formulare auf verschiedenen Geräten werden von den Layouteinstellungen geregelt. Machen Sie sich mit den verschiedenen Layouts und ihrer Anwendung vertraut.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 78%
+source-wordcount: '847'
+ht-degree: 81%
 
 ---
 
 # Layout-Möglichkeiten für adaptive Formulare {#layout-capabilities-of-adaptive-forms}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/creating-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
 
 
 | Version | Artikel-Link |
@@ -43,7 +43,7 @@ Um das Layout eines adaptiven Formulars zu ändern, verwenden Sie den Autorenmod
 
 Formularersteller können jedem Bereich eines adaptiven Formulars ein Layout zuordnen, einschließlich des Stammbereichs.
 
-Die Bereichslayouts stehen unter `/libs/fd/af/layouts/panel` zur Verfügung. Tippen Sie auf den Bereich und wählen Sie ![cmppr1](assets/configure-icon.svg), um die Bereichseigenschaften anzuzeigen.
+Die Bereichslayouts stehen unter `/libs/fd/af/layouts/panel` zur Verfügung. Wählen Sie das Bedienfeld aus und wählen Sie ![cmppr1](assets/configure-icon.svg) , um die Bereichseigenschaften anzuzeigen.
 
 ![Liste der Bereichslayouts für den Stammbereich eines adaptiven Formulars](assets/layouts.png)
 
@@ -75,7 +75,7 @@ Der Zusammenfassungsausdruck kann verwendet werden, um die vom Benutzer im Titel
 
 ![Wiederholbare Bereiche mit Akkordeonlayout in adaptiven Formularen](assets/accordion-layout.png)
 
-### [!UICONTROL Layout mit Registerkarten – Registerkarten werden auf der linken Seite angezeigt ] {#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL Layout mit Registerkarten - Registerkarten werden links angezeigt]{#tabbed-layout-tabs-appear-on-the-left}
 
 Mithilfe dieses Layouts können Sie die Komponente **[!UICONTROL Bereich für adaptive Formulare]** in einen Bereich mit Registerkartennavigation einfügen. Die Registerkarten befinden sich auf der linken Seite der Bereichsinhalte.
 
@@ -109,7 +109,7 @@ Wie der Name schon sagt, werden bei diesem Layout neben dem Navigationsmenü und
 
 ![Layouts für Mobilgeräte mit Bereichstiteln in den Formularkopfzeilen](assets/mobile-layout1.png)
 
-### [!UICONTROL Layout ohne Bereichstitel in der Formularkopfzeile ] {#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL Layout ohne Bedienfeldtitel in der Formularkopfzeile]{#layout-without-panel-titles-in-the-form-header}
 
 Wie der Name schon sagt, werden bei diesem Layout nur das Navigationsmenü und die Navigationsleiste ohne Bedienfeldtitel angezeigt. Dieses Layout enthält auch die Symbole Weiter und Zurück zur Navigation.
 

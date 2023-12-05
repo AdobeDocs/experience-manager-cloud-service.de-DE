@@ -2,10 +2,10 @@
 title: Stilsystem
 description: Das Stilsystem ermöglicht es einem Vorlagenautor, in der Inhaltsrichtlinie für Komponenten Stilklassen festzulegen, die ein Inhaltsautor später bei der Bearbeitung der Komponente auf einer Seite auswählen kann. Diese Stile können alternative visuelle Varianten einer Komponente sein, um das Verfahren flexibler zu gestalten.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 88%
+source-wordcount: '1305'
+ht-degree: 87%
 
 ---
 
@@ -46,7 +46,7 @@ Die allgemeine Verwendung des Stilsystems sieht wie folgt aus.
 
 1. Der AEM-Seitenautor kann die entworfenen Stile daraufhin über das Stilmenü in der Symbolleiste einer Komponente im Seiteneditor auswählen.
 
-Beachten Sie, dass nur die letzten drei Schritte in AEM ausgeführt werden. Dies bedeutet, dass die gesamte Entwicklung des erforderlichen CSS und JavaScript ohne AEM durchgeführt werden kann.
+Nur die letzten drei Schritte werden in AEM ausgeführt. Dies bedeutet, dass die gesamte Entwicklung des erforderlichen CSS und JavaScript ohne AEM durchgeführt werden kann.
 
 Für die eigentliche Bereitstellung der Stile ist nur die Bereitstellung in AEM sowie die Auswahl innerhalb der Komponenten der gewünschten Vorlagen erforderlich.
 
@@ -120,7 +120,7 @@ Damit eine Komponente mit dem Stilsystem von AEM zusammenarbeitet und die Regist
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Dabei werden [Überlagerungen](/help/implementing/developing/introduction/overlays.md) über den [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) verwendet.
+Dabei werden [Überlagerungen](/help/implementing/developing/introduction/overlays.md) über den [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) verwendet.
 
 Ist die Komponente entsprechend konfiguriert, fügt AEM die von den Seitenautorinnen bzw. -autoren festgelegten Stile automatisch in das Dekorationselement ein, das AEM automatisch für jede bearbeitbare Komponente als Wrapper verwendet. Dafür ist keine weitere Aktion der Komponente erforderlich.
 
@@ -134,11 +134,11 @@ Die Registerkarte für das Dialogfeld „Bearbeiten“ kann auf ähnliche Weise 
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Dabei werden [Überlagerungen](/help/implementing/developing/introduction/overlays.md) über den [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) verwendet.
+Dabei werden [Überlagerungen](/help/implementing/developing/introduction/overlays.md) über den [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) verwendet.
 
 >[!NOTE]
 >
->Die Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ ist standardmäßig nicht aktiviert.
+Die Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ ist standardmäßig nicht aktiviert.
 
 ### Stile mit Elementnamen {#styles-with-element-names}
 
@@ -150,11 +150,11 @@ Diese Eigenschaft wird auf dem Knoten `cq:Component` festgelegt. Beispiel:
 
 >[!CAUTION]
 >
->Definieren Sie keine Elementnamen für Stile, die kombiniert werden können. Wenn mehrere Elementnamen definiert werden, gilt die folgende Prioritätsreihenfolge:
+Definieren Sie keine Elementnamen für Stile, die kombiniert werden können. Wenn mehrere Elementnamen definiert werden, gilt die folgende Prioritätsreihenfolge:
 >
->1. HTL hat stets den Vorrang: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
->1. Danach wird unter mehreren aktiven Stilen der erste Stil in der Liste der in der Komponentenrichtlinie konfigurierten Stile ausgewählt.
->1. Die Werte `cq:htmlTag`/`cq:tagName` der Komponente werden schließlich als Ausweichwert verwendet.
+1. HTL hat stets den Vorrang: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
+1. Danach wird unter mehreren aktiven Stilen der erste Stil in der Liste der in der Komponentenrichtlinie konfigurierten Stile ausgewählt.
+1. Die Werte `cq:htmlTag`/`cq:tagName` der Komponente werden schließlich als Ausweichwert verwendet.
 >
 
 Die Fähigkeit, Stilnamen zu definieren, ist bei generischen Komponenten wie dem Layout-Container oder der Inhaltsfragmentkomponente hilfreich, um diesen eine zusätzliche Bedeutung zu verleihen.

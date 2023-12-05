@@ -2,10 +2,10 @@
 title: Wesentliche Änderungen an AEM Sites in AEM Cloud Service
 description: Weitere Informationen zu wesentlichen Änderungen an AEM Sites in AEM Cloud Service
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 91%
+source-wordcount: '513'
+ht-degree: 88%
 
 ---
 
@@ -41,7 +41,7 @@ Der Initiator solcher Aktionen kann ihren Status in einer neuen Benutzeroberflä
 
 >[!NOTE]
 >
->Der Benutzer muss keine Änderungen am System vornehmen, um diese neue Funktion zu nutzen. Dies wird hier lediglich als eine Abweichung vom Verhalten vorheriger lokal bereitgestellten Versionen von AEM aufgeführt.
+>Der Benutzer des Systems muss diese neue Funktion nicht ändern. Dies wird hier lediglich als eine Abweichung vom Verhalten vorheriger lokal bereitgestellten Versionen von AEM aufgeführt.
 
 ## Neue Referenz-Website und Tutorial {#new-reference-site-and-tutorial}
 

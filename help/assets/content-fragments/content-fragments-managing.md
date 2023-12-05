@@ -1,11 +1,11 @@
 ---
-title: Verwalten von Inhaltsfragmenten (Assets – Inhaltsfragmente)
+title: Verwalten von Inhaltsfragmenten (Assets - Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM-Inhaltsfragmente verwalten können, die die Grundlage für Ihren Headless-Content bilden.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 98%
+source-wordcount: '1873'
+ht-degree: 96%
 
 ---
 
@@ -54,7 +54,7 @@ Die Methode zum Erstellen eines Inhaltsfragments ist folgende:
 1. Wählen Sie **Erstellen** und danach **Inhaltsfragment** aus, um den Assistenten zu öffnen.
 1. Im ersten Schritt des Assistenten müssen Sie die Grundlage des neuen Fragments angeben.
 
-   * [Modell](/help/assets/content-fragments/content-fragments-models.md) – wird verwendet, um ein Fragment zu erstellen, für das strukturierte Inhalte erforderlich sind; beispielsweise das **Abenteuer**-Modell
+   * [Modell](/help/assets/content-fragments/content-fragments-models.md) - wird verwendet, um ein Fragment zu erstellen, für das strukturierte Inhalte erforderlich sind, z. B. die **Abenteuer** model
 
       * Alle verfügbaren Modelle werden angezeigt.
 
@@ -299,16 +299,16 @@ Neben den Standardoptionen enthält die [Zeitleiste](/help/assets/manage-digital
 
 >[!NOTE]
 >
->Kommentare sind:
+Kommentare sind:
 >
->* Standardfunktionen für alle Assets
->* In der Zeitleiste erstellt worden
->* mit dem Fragment-Asset verbunden
+* Standardfunktionen für alle Assets
+* In der Zeitleiste erstellt worden
+* mit dem Fragment-Asset verbunden
 >
->Anmerkungen (für Inhaltsfragmente) sind:
+Anmerkungen (für Inhaltsfragmente) sind:
 >
->* Im Fragmenteditor eingegeben worden
->* spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
+* Im Fragmenteditor eingegeben worden
+* spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
 >
 
 Beispiel:
@@ -339,7 +339,7 @@ Sie werden nebeneinander angezeigt, wobei:
 
 >[!NOTE]
 >
->Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleichen.
+Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleichen.
 
 ![Vergleichen von Varianten](assets/cfm-managing-06.png)
 
@@ -357,9 +357,9 @@ Sie können eine frühere Version Ihres Fragments wiederherstellen.
 
 >[!CAUTION]
 >
->Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
->Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
 Inhaltsfragmente müssen veröffentlicht werden, um in der Publishing-Umgebung genutzt werden zu können. Dies geschieht mithilfe der standardmäßigen Assets-Funktionen:
 
@@ -375,7 +375,7 @@ Wenn Sie [eine Seite veröffentlichen, in der das Fragment verwendet wird](/help
 
 >[!CAUTION]
 >
->Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
+Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
 
 ## Löschen von Fragmenten {#deleting-a-fragment}
 
@@ -386,11 +386,11 @@ So löschen Sie ein Fragment:
 
    >[!NOTE]
    >
-   >Die **Löschaktion** ist nicht als Schnellzugriff verfügbar.
+   Die **Löschaktion** ist nicht als Schnellzugriff verfügbar.
 
 3. Wählen Sie **Löschen** in der Symbolleiste aus.
 4. Bestätigen Sie die **Löschaktion**.
 
    >[!CAUTION]
    >
-   >Wenn das Fragment bereits in einer Seite referenziert wird, werden Sie in einer Warnung zur Bestätigung des **erzwungenen Löschens** aufgefordert. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.
+   Wenn das Fragment bereits in einer Seite referenziert wird, werden Sie in einer Warnung zur Bestätigung des **erzwungenen Löschens** aufgefordert. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.

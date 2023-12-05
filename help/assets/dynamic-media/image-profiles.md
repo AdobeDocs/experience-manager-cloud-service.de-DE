@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3528'
+source-wordcount: '3555'
 ht-degree: 99%
 
 ---
@@ -178,7 +178,7 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 #### Anwenden von Dynamic Media-Bildprofilen auf Ordner über „Eigenschaften“ {#applying-image-profiles-to-folders-from-properties}
 
-1. Tippen Sie auf das Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Assets]**.
+1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Assets]**.
 1. Navigieren Sie zu einem *Ordner* (kein Asset), auf den Sie ein Bildprofil anwenden möchten.
 1. Führen Sie je nach gewählter Ansicht eine der folgenden Aktionen aus:
    * Bewegen Sie in der Kartenansicht den Mauszeiger auf den Ordner und wählen Sie dann das Häkchen, um ihn auszuwählen.

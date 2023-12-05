@@ -2,10 +2,10 @@
 title: Verwenden von CRXDE Lite
 description: CRXDE Lite ist Teil des AEM-Schnellstarts und steht Ihnen zur Verfügung, um auf das Repository in Ihren lokalen Entwicklungsumgebungen im Browser zuzugreifen und es zu ändern.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1683'
-ht-degree: 91%
+source-wordcount: '1678'
+ht-degree: 90%
 
 ---
 
@@ -48,7 +48,7 @@ Das Knotenpfad-Widget zeigt den Pfad zum aktuell ausgewählten Knoten an.
 
 Sie können es auch verwenden, um zu einem Knoten zu springen, indem Sie den Pfad von Hand eingeben oder ihn von woanders einfügen und die Eingabetaste drücken.
 
-Es bietet auch Unterstützung für die Suche nach Knoten mit bestimmtem Knotennamen. Geben Sie den Namen des Knotens, den Sie suchen möchten, ein, und warten Sie (oder wählen Sie das Suchsymbol auf der rechten Seite aus). Wenn ein oder mehrere bestimmte Knoten in das Explorer-Fenster geladen werden, wird die Liste angezeigt, in der Sie einen Pfad auswählen und die Eingabetaste drücken können, um dorthin zu navigieren. Beachten Sie, dass dies nur für die Knoten funktioniert, die derzeit im CRXDE-Client-Programm im Browser geladen sind. Wenn Sie das gesamte Repository durchsuchen möchten, verwenden Sie **Tools** > **Abfrage**.
+Es bietet auch Unterstützung für die Suche nach Knoten mit bestimmtem Knotennamen. Geben Sie den Namen des Knotens, den Sie suchen möchten, ein, und warten Sie (oder wählen Sie das Suchsymbol auf der rechten Seite aus). Wenn ein oder mehrere bestimmte Knoten in das Explorer-Fenster geladen werden, wird die Liste angezeigt, in der Sie einen Pfad auswählen und die Eingabetaste drücken können, um dorthin zu navigieren. Dies funktioniert nur für die Knoten, die derzeit im Browser in die CRXDE-Clientanwendung geladen werden. Wenn Sie das gesamte Repository durchsuchen möchten, verwenden Sie **Tools** > **Abfrage**.
 
 ### Explorer-Fenster {#explorer-pane}
 
@@ -89,7 +89,7 @@ Die Berechtigungen sind in die folgenden Kategorien unterteilt.
 
 >[!NOTE]
 >
->Um die Zugriffssteuerungsinformationen anzuzeigen, muss der Benutzer, der sich bei CRXDE Lite angemeldet hat, über Berechtigungen zum Lesen von ACL-Einträgen verfügen.
+Um die Zugriffssteuerungsinformationen anzuzeigen, muss der Benutzer, der sich bei CRXDE Lite angemeldet hat, über Berechtigungen zum Lesen von ACL-Einträgen verfügen.
 
 ### Registerkarte „Replikation“ {#replication-tab}
 
@@ -190,9 +190,9 @@ Jetzt können Sie den Knoten an Ihre Anforderungen anpassen, indem Sie die Eigen
 
 >[!NOTE]
 >
->Die meisten Bearbeitungsvorgänge, einschließlich **Knoten erstellen**, behalten alle Änderungen im Speicher und speichern sie erst beim Speichern im Repository (über die [**Schaltfläche „Alle speichern“**](#save-all-button)). Einige Vorgänge wie das Verschieben werden jedoch automatisch beibehalten.
+Die meisten Bearbeitungsvorgänge, einschließlich **Knoten erstellen**, behalten alle Änderungen im Speicher und speichern sie erst beim Speichern im Repository (über die [**Schaltfläche „Alle speichern“**](#save-all-button)). Einige Vorgänge wie das Verschieben werden jedoch automatisch beibehalten.
 >
->Die Überprüfung, ob der erstellte Knoten vom Knotentyp des übergeordneten Knotens zugelassen ist, wird auch vom Repository beim Speichern von Änderungen durchgeführt. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (Sie können z. B. keinen `nt:unstructured`-Knoten als untergeordneten Knoten eines `nt:folder`-Knotens erstellen).
+Die Überprüfung, ob der erstellte Knoten vom Knotentyp des übergeordneten Knotens zugelassen ist, wird auch vom Repository beim Speichern von Änderungen durchgeführt. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (Sie können z. B. keinen `nt:unstructured`-Knoten als untergeordneten Knoten eines `nt:folder`-Knotens erstellen).
 
 ## Erstellen einer Eigenschaft {#creating-a-property}
 

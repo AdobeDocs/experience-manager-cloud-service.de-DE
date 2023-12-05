@@ -2,10 +2,10 @@
 title: Live-Schalten Ihres Headless-Programms
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie ein Headless-Programm live bereitstellen, indem Sie Ihren lokalen Code in Git in das Git-Repository von Cloud Manager für die CI/CD-Pipeline verschieben.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 97%
+source-wordcount: '1060'
+ht-degree: 91%
 
 ---
 
@@ -83,7 +83,7 @@ Damit Benutzerinnen und Benutzern bei der Nutzung des AEM Headless-Programms das
       * Überprüfen der Anzahl der Anwender, Anfragen sowie der Auslastung
 * Abrufen programm- und speicherplatzspezifischer Performance-Berichte
    * Prüfen, ob die allgemeinen Metriken grün/orange/rot gekennzeichnet sind, sobald der Server hochgefahren ist, um anschließend spezifische Programmprobleme zu identifizieren
-   * Öffnen der oben genannten Berichte, jedoch gefiltert nach Programm oder Speicherplatz. (z. B. Desktop-Version von Photoshop, Paywall)
+   * Öffnen Sie dieselben Berichte, die oben nach App oder Leerzeichen gefiltert wurden (z. B. Photoshop-Desktop, Paywall)
    * Verwenden von Splunk-Protokoll-APIs, um Performance-Berichte zu Services und Programmen abzurufen
    * Wenden Sie sich an den Support, falls weitere Probleme auftreten.
 
@@ -124,7 +124,7 @@ Sie haben entweder bereits Ihr erstes AEM Headless-Projekt gestartet oder verfü
 
 ### Erkunden von Single Page Applications {#explore-spa}
 
-Die Headless-Stores in AEM müssen hier jedoch nicht enden. Im Abschnitt mit den [ersten Schritten der AEM Headless-Entwickler-Tour](getting-started.md#integration-levels) haben wir kurz gestreift, wie AEM nicht nur Headless-Bereitstellungen und herkömmliche Full-Stack-Modelle unterstützt, sondern auch Hybridmodelle unterstützen kann, die die Vorteile beider Modelle kombinieren.
+Die Headless-Stores in AEM müssen hier jedoch nicht enden. Sie können sich an die [Erste Schritte im Journey](getting-started.md#integration-levels) Wir haben kurz besprochen, wie AEM nicht nur Headless-Versand und herkömmliche Full-Stack-Modelle unterstützt, sondern auch Hybridmodelle unterstützen kann, die die Vorteile beider Modelle kombinieren.
 
 Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem optionalen, zusätzlichen Teil der AEM Headless-Entwickler-Tour fort: [Erstellen von Single Page Applications (SPAs) mit AEM](create-spa.md).
 
@@ -132,7 +132,7 @@ Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem opt
 
 * [Einführung in AEM als Headless-CMS](/help/headless/introduction.md)
 * [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
-* [Headless-Tutorials für AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)
+* [Tutorials für Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)
 * [Ein Überblick über das Bereitstellen für AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Verwenden von Cloud Manager zur Bereitstellung von Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de)
 * [Integrieren des Cloud Manager-Git-Repositorys mit einem externen Git-Repository und Bereitstellen eines Projekts in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=de)

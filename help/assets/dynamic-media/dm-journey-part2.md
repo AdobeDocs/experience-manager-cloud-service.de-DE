@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2872'
-ht-degree: 98%
+source-wordcount: '2677'
+ht-degree: 97%
 
 ---
 
@@ -66,7 +66,7 @@ Dynamic Media verfügt über zahlreiche Bildverarbeitungsparameter, mit denen Si
 
 Versuchen Sie jetzt, dem Bild der Uhr einen Rotationsparameter hinzuzufügen. Geben Sie am Ende des URL-Pfads, unmittelbar nach `wid=1000`, `&rotate=90` ein, und drücken Sie die **[!UICONTROL Eingabetaste]**. [Jetzt ausprobieren](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target="_blank"}.
 
-Die Uhr ist immer noch leicht nach links geneigt. Ändern Sie den Drehwert von `90` nach `92`und drücken Sie dann die **[!UICONTROL Eingabetaste]**. [Probieren Sie es jetzt aus](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9).{target="_blank"}.
+Die Uhr ist immer noch leicht nach links geneigt. Ändern Sie den Drehwert von `90` nach `92`und drücken Sie dann die **[!UICONTROL Eingabetaste]**. [Jetzt probieren](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}.
 
 Auch hier wird in dem Moment, in dem Sie die **[!UICONTROL Eingabetaste]** drücken, fast augenblicklich eine neue Ausgabedarstellung der Uhr erzeugt. Sie können die Leistung, die Sie erhalten, nachvollziehen, wenn Sie verstehen, dass Dynamic Media an einem arbeitsreichen Wochenende oder an einem großen Feiertag mehr als 800.000 Bildanfragen _pro Sekunde_ liefern kann.
 
@@ -123,7 +123,7 @@ Sie erinnern sich, dass Sie in [Anatomie einer Dynamic Media URL](#dm-journey-d)
 
 Sie können sich eine Bildvorgabe als Rezept für Ihre Bilder vorstellen. Es werden alle Bilder bereitgestellt, die die Vorgabe konsistent und jedes Mal verwenden. Es wird gleich sein. Der Parameter `&op_brightness=+10` wurde hinzugefügt, um die Helligkeit etwas zu erhöhen.
 
-Wenn Sie fertig sind, speichern Sie die Vorgabe. Jetzt ist sie für alle Bilder verfügbar, die Sie haben. In diesem Fall möchten wir die Bildvorgabe _Medium_ auf ein Bild einer Schüssel mit flüssiger Schokolade anwenden.
+Wenn Sie fertig sind, speichern Sie die Vorgabe. Jetzt ist sie für alle Bilder verfügbar, die Sie haben. In diesem Fall sollten Sie die _Mittel_ Bildvorgabe auf ein Bild einer Schüssel mit flüssiger Schokolade.
 
 ![Anwenden der Bildvorgabe *Medium*, um eine Ausgabedarstellung eines Bildes zu erzeugen](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Anwenden der Bildvorgabe „Medium“, um eine Ausgabedarstellung eines Bildes zu erzeugen._

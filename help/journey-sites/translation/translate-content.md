@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2529'
-ht-degree: 75%
+source-wordcount: '2526'
+ht-degree: 73%
 
 ---
 
@@ -57,7 +57,7 @@ Für Inhaltsverantwortliche, die auch für die Übersetzung verantwortlich ist, 
 
 1. Navigieren Sie zu **Navigation** > **Sites** und wählen Sie Ihr Projekt aus.
 1. Suchen Sie den Sprachstamm Ihres Projekts. Wenn Ihr Sprachstamm beispielsweise Englisch ist, `/content/<your-project>/en`.
-   * Beachten Sie, dass vor der ersten Übersetzung die anderen Sprachordner leere Platzhalter sind. Diese werden normalerweise vom Inhaltsarchitekten erstellt.
+   * Vor der ersten Übersetzung, dass die anderen Sprachordner leere Platzhalter sind. Diese werden normalerweise vom Inhaltsarchitekten erstellt.
 1. Suchen Sie den Sprachstamm Ihres Projekts.
 1. Wählen Sie die Schienenauswahl aus und zeigen Sie die **Verweise** Bedienfeld.
 1. Auswählen **Sprachkopien**.
@@ -122,8 +122,8 @@ So zeigen Sie das Übersetzungsprojekt an:
 Das Projekt ist in mehrere Karten unterteilt.
 
 * **Zusammenfassung**: Diese Karte zeigt die grundlegenden Kopfzeileninformationen des Projekts, einschließlich des Verantwortlichen, der Sprache und des Übersetzungsdienstleisters.
-* **Übersetzungsauftrag** - Diese Karte bzw. diese Karten bieten einen Überblick über den tatsächlichen Übersetzungsauftrag, einschließlich Status, Anzahl der Assets usw. Im Allgemeinen gibt es pro Sprache einen Auftrag, wobei der ISO-2-Sprachcode an den Auftragsnamen angehängt wird.
-   * Beachten Sie, dass AEM bei der [automatischen Erstellung von Übersetzungsaufträgen](#automatically-creating) die Aufträge asynchron erstellt und sie möglicherweise nicht sofort im Projekt erscheinen.
+* **Übersetzungsauftrag** - Diese Karte bzw. diese Karten bieten einen Überblick über den tatsächlichen Übersetzungsauftrag, einschließlich Status, Anzahl der Assets usw. Im Allgemeinen gibt es pro Sprache einen Auftrag, wobei der ISO-2-Sprach-Code an den Auftragsnamen angehängt wird.
+   * Wann [automatische Erstellung von Übersetzungsaufträgen,](#automatically-creating) AEM erstellt die Aufträge asynchron und sie werden möglicherweise nicht sofort im Projekt angezeigt.
 * **Team**: Auf dieser Karte werden die Benutzer angezeigt, die an diesem Übersetzungsprojekt mitarbeiten. Diese Tour behandelt dieses Thema nicht.
 * **Aufgaben**: Zusätzliche Aufgaben im Zusammenhang mit der Übersetzung der Inhalte, z. B. zum Erstellen von Elementen oder Workflow-Elementen. Diese Tour behandelt dieses Thema nicht.
 

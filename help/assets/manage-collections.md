@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collections,Asset Management
 role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2400'
-ht-degree: 81%
+source-wordcount: '2391'
+ht-degree: 80%
 
 ---
 
@@ -44,7 +44,7 @@ Sie können eine Sammlung mit [statischen Referenzen](#create-a-collection-with
 
 ### Erstellen von Sammlungen mit statischen Referenzen {#create-a-collection-with-static-references}
 
-Sie können eine Sammlung mit statischen Referenzen erstellen, z. B. eine Sammlung mit Referenzen zu Assets, Ordnern, Sammlungen, Rotationssets und Bildsets.
+Sie können eine Sammlung mit statischen Referenzen erstellen, z. B. eine Sammlung mit Referenzen zu Assets, Ordnern, Sammlungen, Rotationssets und Bildsets.
 
 1. Navigieren Sie zur Konsole **[!UICONTROL Sammlungen]**.
 1. Wählen Sie in der Symbolleiste **[!UICONTROL Erstellen]**.
@@ -221,7 +221,7 @@ Sie können eine Sammlung zu einer anderen Sammlung hinzufügen und so eine vers
    >
    >Die zuletzt aktualisierte Sammlung wird standardmäßig auf der Seite **[!UICONTROL Zu Sammlung hinzufügen]** ausgewählt.
 
-1. Klicken Sie auf **[!UICONTROL Hinzufügen]**. Eine Meldung bestätigt, dass die Sammlung zur Zielsammlung auf der Seite **[!UICONTROL Ziel auswählen]** hinzugefügt wird. Schließen Sie die Meldung, um den Vorgang abzuschließen.
+1. Auswählen **[!UICONTROL Hinzufügen]**. Eine Meldung bestätigt, dass die Sammlung zur Zielsammlung auf der Seite **[!UICONTROL Ziel auswählen]** hinzugefügt wird. Schließen Sie die Meldung, um den Vorgang abzuschließen.
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Sie können einen Workflow für die Assets in einer Sammlung ausführen. Wenn di
 
 1. Wählen Sie in der Konsole „Sammlungen“ eine Sammlung aus, für die Sie einen Workflow ausführen möchten.
 1. Wählen Sie das GlobalNav-Symbol aus und wählen Sie **[!UICONTROL Timeline]** aus der Liste.
-1. Wählen Sie in der Timeline das Caret-Symbol unten aus oder tippen Sie darauf und wählen Sie **[!UICONTROL Workflow starten]**.
+1. Wählen Sie in der Timeline unten das Caret-Symbol und dann **[!UICONTROL Workflow starten]**.
 1. Wählen Sie im Abschnitt **[!UICONTROL Workflow starten]** ein Workflow-Modell aus der Liste aus. Wählen Sie beispielsweise das **[!UICONTROL DAM Update Asset]**-Modell aus.
 1. Geben Sie einen Titel für den Workflow ein und wählen Sie **[!UICONTROL Starten]**.
 1. Wählen Sie im Dialogfeld **[!UICONTROL Fortfahren]**. Der Workflow wird für alle Assets in der Sammlung ausgeführt.

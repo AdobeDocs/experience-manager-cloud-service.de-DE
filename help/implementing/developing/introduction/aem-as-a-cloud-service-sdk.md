@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service-SDK
 description: Überblick über das AEM as a Cloud Service Software Development Kit
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 94%
+source-wordcount: '1213'
+ht-degree: 89%
 
 ---
 
@@ -69,7 +69,7 @@ Es ist *optional*, nach jeder täglichen Wartungsversion zu aktualisieren. Kundi
 
 Nachfolgend finden Sie die empfohlene Vorgehensweise zum Aktualisieren einer lokalen Umgebung:
 
-1. Vergewissern Sie sich, dass alle nützlichen Inhalte entweder in die Quell-Code-Verwaltung für das Projekt übertragen wurden oder in einem veränderlichen Inhaltspaket für den späteren Import verfügbar sind..
+1. Stellen Sie sicher, dass alle nützlichen Inhalte entweder in der Quell-Code-Verwaltung an das Projekt übertragen oder in einem veränderlichen Inhaltspaket für den späteren Import verfügbar sind.
 1. Inhalte lokaler Entwicklungstests müssen separat gespeichert werden, damit sie nicht im Rahmen des Cloud Manager-Pipeline-Build bereitgestellt werden. Der Grund dafür ist, dass sie nur für die lokale Entwicklung verwendet werden.
 1. Beenden Sie den derzeit laufenden Schnellstart.
 1. Verschieben Sie den Ordner `crx-quickstart` zur sicheren Aufbewahrung in einen anderen Ordner.
@@ -78,14 +78,14 @@ Nachfolgend finden Sie die empfohlene Vorgehensweise zum Aktualisieren einer lok
 1. Erstellen Sie einen ganz neuen Ordner und platzieren Sie darin die neue Schnellstart-JAR.
 1. Starten Sie den neuen Schnellstart mit den gewünschten Ausführungsmodi (entweder durch Umbenennen der Datei oder Übergabe der Ausführungsmodi über `-r`).
    * Sorgen Sie dafür, dass keine Reste des alten Schnellstarts im Ordner verbleiben.
-1. Erstellen Sie das AEM-Programm..
+1. Erstellen Sie Ihre AEM.
 1. Stellen Sie Ihre AEM-Anwendung mithilfe von Package Manager auf lokalem AEM bereit.
 1. Installieren Sie über Package Manager alle Pakete mit veränderlichen Inhalten, die für lokale Umgebungstests benötigt werden.
 1. Entwickeln Sie nach Bedarf weiter und stellen Sie Änderungen bereit.
 
 Wenn es Inhalte gibt, die mit jeder neuen AEM-Schnellstartversion installiert werden sollen, fügen Sie sie in einem Inhaltspaket und der Quell-Code-Verwaltung des Projekts hinzu. Installieren Sie sie dann jedes Mal.
 
-Sie sollten das SDK häufig aktualisieren (z. B. alle zwei Wochen) und täglich den ganzen lokalen Status verwerfen, um im Programm nicht versehentlich von Stateful-Daten abzuhängen.
+Es wird empfohlen, das SDK häufig zu aktualisieren (z. B. alle zwei Wochen) und den gesamten lokalen Status täglich zu verwerfen, um nicht versehentlich von den Stateful-Daten in der Anwendung abhängig zu sein.
 
 Wenn Sie von CryptoSupport abhängig sind ([entweder durch Konfiguration der Anmeldeinformationen von Cloud-Services oder des SMTP-Mail-Dienstes in AEM oder durch Verwendung der CryptoSupport-API in Ihrer Anwendung](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), werden die verschlüsselten Eigenschaften durch einen Schlüssel verschlüsselt. Dieser Schlüssel wird beim ersten Start einer AEM-Umgebung automatisch generiert. Während die Cloud-Implementierung dafür sorgt, dass der umgebungsspezifische CryptoKey automatisch wiederverwendet wird, muss der CryptoKey in die lokale Entwicklungsumgebung injiziert werden.
 

@@ -3,10 +3,10 @@ title: Migrieren der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service
 description: Migrieren der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 97%
+source-wordcount: '1459'
+ht-degree: 96%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 Die Apache- und Dispatcher-Konfiguration in AEM as a Cloud Service ähnelt der AMS-Konfiguration. Die Hauptunterschiede sind:
 
-* In AEM as a Cloud Service können einige Apache-Direktiven nicht verwendet werden (z. B. `Listen` oder `LogLevel`).
+* In AEM as a Cloud Service werden einige Apache-Direktiven möglicherweise nicht verwendet (z. B. `Listen` oder `LogLevel`)
 * In AEM as a Cloud Service können nur einige Teile der Dispatcher-Konfiguration in include-Dateien eingefügt werden, und ihre Benennung ist wichtig. Beispielsweise müssen Filterregeln, die Sie über verschiedene Hosts hinweg wiederverwenden möchten, in einer Datei namens `filters/filters.any` abgelegt werden. Weitere Informationen finden Sie auf der Referenzseite.
 * In AEM as a Cloud Service gibt es eine zusätzliche Validierung, um Filterregeln zu deaktivieren, die mit `/glob` geschrieben wurden. Dies dient der Vermeidung von Sicherheitsproblemen. Da `deny *` verwendet wird anstelle von `allow *` (was nicht verwendet werden kann), profitieren Kundinnen und Kunden von einer lokalen Ausführung von Dispatcher und der Möglichkeit zum Ausprobieren: Sie können sich die Protokolle ansehen, um genau zu erfahren, welche Pfade die Dispatcher-Filter blockieren, damit sich diese hinzufügen lassen.
 

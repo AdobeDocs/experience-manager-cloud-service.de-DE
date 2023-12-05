@@ -2,10 +2,10 @@
 title: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service
 description: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 13%
+source-wordcount: '2658'
+ht-degree: 11%
 
 ---
 
@@ -133,7 +133,7 @@ Es gibt weitere benachbarte Dienstleistungen:
    * ist für die Anzeige von Kundendaten wie Lizenzierungsmetriken (z. B. Inhaltsanforderungen, Speicher, Benutzer) oder Nutzungsberichten (z. B. die Anzahl der Uploads und Downloads) verantwortlich.
    * Die Kundendaten können über APIs und über Produktbenutzeroberflächen (z. B. Cloud Manager) bereitgestellt werden.
 * Der RUM-Dienst (Real-User Metric):
-   * ist für die Erfassung von Schlüsselmetriken aus einem Kundenerlebnis (z. B. Seitenansichten, Web-Lebenszyklen, Konversionsereignisse) sowie für die Beantwortung verknüpfter Abfragen zuständig (z. B. Top-Seitenansichten für eine bestimmte Domäne in den letzten 7 Tagen).
+   * ist für die Erfassung von Schlüsselmetriken aus einem Kundenerlebnis (z. B. Seitenansichten, Web-Lebenszyklen, Konversionsereignisse) und die Beantwortung von zugehörigen Abfragen (z. B. Top-Seitenansichten für eine bestimmte Domäne in den letzten 7 Tagen) zuständig.
 * Der Assets Compute-Dienst:
    * ist für die Verarbeitung hochgeladener Bilder, Videos und Dokumente zuständig, z. B. PDF- und Adobe Photoshop-Dateien. Die Verarbeitung kann Adobe Sensei verwenden, um Bild- und Videometadaten (wie beschreibende Tags oder primäre Farbtöne) zu extrahieren und dann Ausgabedarstellungen (wie unterschiedliche Größen oder Formate) mit Zugriff auf APIs wie die Adobe Photoshop- und Adobe Lightroom-APIs zu generieren.
 * Der Identity Management-Dienst (IMS):
@@ -190,7 +190,7 @@ Entwickler und Administratoren verwalten die AEM as a Cloud Service Anwendung mi
 
 Cloud Manager verwaltet alle Aktualisierungen Ihrer Instanzen des AEM as a Cloud Service. Dies ist die einzige Möglichkeit, die Kundenanwendung zu erstellen, zu testen und für die Autoren-, Vorschau- und Veröffentlichungsschicht bereitzustellen. Diese Aktualisierungen können durch Adobe ausgelöst werden, wenn eine neue Version der AEM Cloud Service fertig ist, oder durch Sie selbst, wenn eine neue Version Ihrer Anwendung bereit ist.
 
-Dies wird durch eine Bereitstellungs-Pipeline implementiert, die an jede Umgebung innerhalb eines Programms gekoppelt ist. Wenn eine Cloud Manager-Pipeline ausgeführt wird, wird eine neue Version der Kundenanwendung erstellt, sowohl für die Autorenstufe als auch für die Veröffentlichungsstufe. Dies wird erreicht, indem die neuesten Kundenpakete mit dem neuesten Adobe-Grundbild kombiniert werden.
+Dies wird durch eine Bereitstellungs-Pipeline implementiert, die an jede Umgebung innerhalb eines Programms gekoppelt ist. Wenn eine Cloud Manager-Pipeline ausgeführt wird, wird eine neue Version der Kundenanwendung erstellt, sowohl für die Autorenstufe als auch für die Veröffentlichungsstufe. Dies wird erreicht, indem die neuesten Kundenpakete mit dem neuesten Grundlinien-Adobe-Image kombiniert werden.
 
 Die Bereitstellungs-Pipeline wird ausgelöst, wenn Kunden Code-Änderungen vornehmen oder wenn Adobe eine neue Wartungsversion bereitstellt.
 
@@ -229,4 +229,4 @@ Siehe auch:
 
    * [AEM as a Cloud Service Übersicht - mit Edge Delivery Services](/help/edge/overview.md)
    * [Verwenden von Edge Delivery Services](/help/edge/using.md)
-   * [Untersuchen Sie die zugrunde liegende Architektur und wichtige Teile von AEM as a Cloud Service mithilfe der Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=de)
+   * [Erkunden Sie die zugrunde liegende Architektur und wichtige AEM, die mit Edge Delivery Services as a Cloud Service sind.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=de)

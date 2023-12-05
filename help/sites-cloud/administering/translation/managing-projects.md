@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Über
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3971'
-ht-degree: 86%
+source-wordcount: '3960'
+ht-degree: 85%
 
 ---
 
@@ -463,7 +463,7 @@ Obwohl AEM mehrere Übersetzungslösungen und -schnittstellen anbietet, ist es a
 
 ### Exportieren von Übersetzungsaufträgen {#exporting-a-translation-job}
 
-Sie können die Inhalte eines Übersetzungsauftrags herunterladen, um sie z. B. an einen Übersetzungsanbieter zu senden, der nicht über einen Connector in AEM integriert ist, oder um die Inhalte zu überprüfen.
+Sie können den Inhalt eines Übersetzungsauftrags herunterladen, um ihn beispielsweise an einen Übersetzungsanbieter zu senden, der nicht über einen Connector mit AEM integriert ist, oder um den Inhalt zu überprüfen.
 
 1. Wählen Sie aus dem Dropdown-Menü der Kachel Übersetzungsauftrag die Option **Export**.
 1. Wählen Sie im Dialogfeld **Exportierte Datei herunterladen** und speichern Sie die Datei gegebenenfalls im Webbrowser-Dialogfeld.
@@ -471,7 +471,7 @@ Sie können die Inhalte eines Übersetzungsauftrags herunterladen, um sie z. B.
 
 ### Importieren von Übersetzungsaufträgen {#importing-a-translation-job}
 
-Sie können übersetzte Inhalte in AEM importieren, zum Beispiel wenn Ihr Übersetzungsanbieter die Inhalte an Sie sendet, da er nicht über einen Connector in AEM integriert ist.
+Sie können übersetzte Inhalte beispielsweise in AEM importieren, wenn Ihr Übersetzungsanbieter sie an Sie sendet, da sie nicht über einen Connector mit AEM integriert sind.
 
 1. Wählen Sie aus dem Dropdown-Menü der Kachel Übersetzungsauftrag die Option **Import**.
 1. Wählen Sie im Dialogfeld des Webbrowsers die zu importierende Datei aus.

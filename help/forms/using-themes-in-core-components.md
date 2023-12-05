@@ -2,10 +2,10 @@
 title: Wie können Designs in Adaptive Forms erstellt und verwendet werden?
 description: Sie können Designs verwenden, um ein adaptives Formular mithilfe von Kernkomponenten zu gestalten und eine visuelle Identität bereitzustellen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2676'
-ht-degree: 18%
+source-wordcount: '2610'
+ht-degree: 17%
 
 ---
 
@@ -167,7 +167,7 @@ Auf ähnliche Weise können Sie die `variable.scss` -Datei, um Schriftfamilie un
 
 ##### Festlegen von Stilen auf Komponentenebene {#component-based-customization}
 
-Sie können auch Schriftart, Farbe, Größe und andere CSS-Eigenschaften einer bestimmten Kernkomponente des adaptiven Formulars ändern. Beispiel: Schaltfläche, Kontrollkästchen, Container, Fußzeile usw. Sie können die Schaltfläche oder das Kontrollkästchen formatieren, indem Sie die CSS-Datei der jeweiligen Komponente bearbeiten und sie an den Stil Ihres Unternehmens anpassen. So passen Sie einen Stil einer Komponente an:
+Sie können auch Schriftart, Farbe, Größe und andere CSS-Eigenschaften einer bestimmten Kernkomponente des adaptiven Formulars ändern. Beispiel: Schaltfläche, Kontrollkästchen, Container, Fußzeile und mehr. Sie können die Schaltfläche oder das Kontrollkästchen formatieren, indem Sie die CSS-Datei der jeweiligen Komponente bearbeiten und sie an den Stil Ihres Unternehmens anpassen. So passen Sie einen Stil einer Komponente an:
 
 1. Öffnen Sie die Datei `<your-theme-sources>/src/components/<component>/<component.scss>` zur Bearbeitung. Um beispielsweise die Schriftfarbe der Schaltflächenkomponente zu ändern, öffnen Sie die `<your-theme-sources>/src/components/button/button.scss`, Datei .
 1. Ändern Sie den Wert von beliebig gemäß Ihren Anforderungen. So ändern Sie beispielsweise die Farbe der Schaltflächenkomponente beim Maushover auf `green`, ändern Sie den Wert der `color: $white` -Eigenschaft in der `cmp-adaptiveform-button__widget:hover` -Klasse in Hex-Code `#12B453` oder anderen Schatten von `green`. Der endgültige Code sieht wie folgt aus:
@@ -363,7 +363,7 @@ Das Design wird mithilfe der [Front-End-Pipeline.](https://experienceleague.adob
    Nachdem die Pipelineeinrichtung abgeschlossen ist, wird die Aktionsaufruf-Karte aktualisiert.
 
 1. Klicken Sie mit der rechten Maustaste auf die erstellte Pipeline.
-1. Klicken Sie auf **[!UICONTROL Ausführen]** .
+1. Klicks **[!UICONTROL Ausführen]** .
 
    ![run-a-piplein](/help/forms/assets/canvas-theme-run-pipeline.png)
 
@@ -377,7 +377,7 @@ Schritte zum Anwenden eines Designs auf ein adaptives Formular:
 
 1. Melden Sie sich bei Ihrer AEM Forms-Autoreninstanz an.
 
-1. Tippen Sie auf **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**. 
+1. Auswählen **Adobe Experience Manager** > **Forms** > **Forms und Dokumente**.
 
 1. Klicken Sie auf **Erstellen** > **Adaptive Formulare**. Der Assistent zum Erstellen des adaptiven Formulars wird geöffnet.
 
@@ -433,5 +433,5 @@ Wenn Sie Informationen wie ein Logo, einen Firmennamen in der Kopfzeile und Copy
 * [Festlegen des Layouts von Formularen für verschiedene Bildschirmgrößen und Gerätetypen](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [Generieren des Datensatzdokuments für adaptive Forms (Kernkomponenten)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Erstellen einer adaptiven Forms mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
-* [Vorlagen für Musterdesigns und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [Beispielthemenvorlagen und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)
 * [Aktivieren der Kernkomponenten für adaptive Formulare in AEM Forms as a Cloud Service und lokaler Entwicklungsumgebung](/help/forms/enable-adaptive-forms-core-components.md)

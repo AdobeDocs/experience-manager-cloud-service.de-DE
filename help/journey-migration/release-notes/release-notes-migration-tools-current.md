@@ -3,10 +3,10 @@ title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 
 description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.11.0
 feature: Release Information
 exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
-source-git-commit: e2ab119315e18bbef40efb712bdf6397cfa8adfc
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 44%
+source-wordcount: '143'
+ht-degree: 50%
 
 ---
 
@@ -22,7 +22,7 @@ Die Version 3.0.6 des Content Transfer Tool wurde am 21. November 2023 veröffen
 
 ### Neue Funktionen {#what-is-new-ctt}
 
-* Cloud Acceleration Manager (CAM) wurde aktualisiert, um eine Aufnahme automatisch zu starten, sobald die Extraktion eines Migrationssatzes erfolgreich abgeschlossen wurde.  Der Benutzer muss nicht mehr warten, bis die Extraktion abgeschlossen ist, um eine Aufnahme manuell zu starten. Weitere Informationen zur Erfassung von Inhalten in CAM finden Sie unter [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#ingestion-process)
+* Cloud Acceleration Manager (CAM) wurde aktualisiert, um eine Aufnahme automatisch zu starten, sobald die Extraktion eines Migrationssatzes erfolgreich abgeschlossen wurde. Der Benutzer muss nicht mehr warten, bis die Extraktion abgeschlossen ist, um eine Aufnahme manuell zu starten. Weitere Informationen zur Erfassung von Inhalten in CAM finden Sie unter [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#ingestion-process).
 
 ### Fehlerbehebungen {#bug-fixes-ctt}
 

@@ -2,10 +2,10 @@
 title: IMS-Unterstützung für Adobe Experience Manager as a Cloud Service
 description: Unterstützung von Bildverwaltungssystemen für Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 100%
+source-wordcount: '1917'
+ht-degree: 99%
 
 ---
 
@@ -55,7 +55,7 @@ Sobald die Kundschaft als IMS-Organisation existiert, muss sie ihr System wie fo
 ![IMS-Onboarding](/help/security/assets/ims2.png)
 
 1. Der festgelegte Systemadministrator erhält eine Einladung zur Anmeldung bei Cloud Manager. Nach der Anmeldung bei Cloud Manager können die Systemadministratoren entweder AEM-Programme und -Umgebungen bereitstellen oder für Verwaltungsaufgaben zur Admin Console navigieren.
-1. Der Systemadministrator beansprucht eine Domain, um die Eigentümerschaft der Domain zu bestätigen (beispielsweise acme.com).
+1. Der Systemadministrator beansprucht eine Domäne, um das Eigentum an der entsprechenden Domäne zu bestätigen (z. B. acme.com).
 1. Der Systemadministrator richtet die Benutzerverzeichnisse ein.
 1. Der Systemadministrator führt die IDP-Konfiguration in der Admin Console aus, um Single-Sign-On einzurichten.
 1. Der AEM-Administrator verwaltet die lokalen Gruppen, Berechtigungen und Zugriffsrechte wie gewohnt.

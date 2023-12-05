@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4301'
-ht-degree: 87%
+source-wordcount: '4270'
+ht-degree: 84%
 
 ---
 
@@ -69,13 +69,13 @@ Gehen Sie wie folgt vor, um die ZIP-Dateien zu extrahieren:
 Gehen Sie wie folgt vor, um eine Vorschau für ein Asset anzuzeigen.
 
 1. Navigieren Sie auf der Assets-Benutzeroberfläche zum Speicherort des Assets, für das Sie eine Vorschau anzeigen möchten.
-1. Tippen Sie auf das gewünschte Asset, um es zu öffnen.
+1. Wählen Sie das gewünschte Asset aus, um es zu öffnen.
 
 1. Im Vorschaumodus ist eine Zoom-Funktion für [unterstützte Bildtypen](/help/assets/file-format-support.md) verfügbar (mit interaktiver Bearbeitung).
 
    Um in ein Asset zu zoomen, wählen Sie `+` (oder wählen Sie die Lupe des Assets aus). Zum Auszoomen wählen Sie `-`. Beim Heranzoomen können Sie beliebige Bildbereiche durch Schwenken genauer untersuchen. Mit dem Pfeil „Zoom zurücksetzen“ gelangen Sie zurück zur Originalansicht.
 
-   Tippen Sie auf **[!UICONTROL Zurücksetzen]**, um die Originalgröße der Ansicht wiederherzustellen.
+   Auswählen **[!UICONTROL Zurücksetzen]** , um die Ansicht auf die Originalgröße zurückzusetzen.
 
 ## Bearbeiten von Eigenschaften {#editing-properties}
 
@@ -270,7 +270,7 @@ Deaktivieren Sie außerdem die Schaltfläche „Löschen erzwingen“ mithilfe e
    * Mit **[!UICONTROL Löschen]** bestätigen Sie die Aktion.
 
       * Wenn das Asset keine Referenzen aufweist, wird es gelöscht.
-      * Wenn das Asset Referenzen aufweist, wird eine Fehlermeldung angezeigt mit dem Hinweis **[!UICONTROL Es wird auf ein oder mehrere Asset(s) verwiesen.]** Sie können **[!UICONTROL Löschen erzwingen]** oder **[!UICONTROL Abbrechen]** auswählen.
+      * Wenn das Asset Verweise enthält, werden Sie durch eine Fehlermeldung darüber informiert, dass **[!UICONTROL Ein oder mehrere Assets werden referenziert]**. Sie können **[!UICONTROL Löschen erzwingen]** oder **[!UICONTROL Abbrechen]**.
 
    >[!NOTE]
    >
@@ -340,7 +340,7 @@ Einfache, erweiterte und benutzerdefinierte Suchen zur Erkennung und Verwendung 
 
 Schnellaktion-Symbole sind jeweils nur für ein Asset verfügbar. Führen Sie je nach Gerät folgende Aktionen durch, um die Symbole der Schnellaktionen anzuzeigen:
 
-* Touch-Geräte: Tippen und halten. Mit einem Touch-Gerät, wie z. B. einem iPad, können Sie länger auf ein Asset tippen, damit die Schnellaktionen angezeigt werden.
+* Touch-Geräte: Tippen und halten. Beispielsweise können Sie in einem iPad ein Asset auswählen und halten, damit die Schnellaktionen angezeigt werden.
 * Nicht-Touch-Geräte: Mit Mauszeiger darüberfahren. Auf einem Desktop-Gerät wird beispielsweise eine Schnellzugriffsleiste angezeigt, wenn Sie mit dem Mauszeiger über die Miniatur des Assets fahren.
 
 <!-- Hiding this topic via cqdoc-18707
@@ -428,7 +428,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 1. Wählen Sie die **[!UICONTROL Anmerken]** -Symbol aus einem der folgenden Elemente:
 
    * [Schnellaktionen](#quick-actions)
-   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben    oder zur Asset-Seite navigiert sind
+   * Wählen Sie in der Symbolleiste das Asset aus oder navigieren Sie zur Asset-Seite
 
    <!--![chlimage_1-233](assets/chlimage_1-233.png)-->
 
@@ -543,7 +543,7 @@ Um die Anmerkungen und den Prüfungsstatus zu drucken, wählen Sie die **[!UICON
 
    <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
-   Um das Erscheinungsbild der gerenderten PDF-Datei zu ändern (z. B. Schriftfarbe, Größe, Stil und Hintergrundfarbe der Kommentare und Status), öffnen Sie in Configuration Manager die **[!UICONTROL Konfiguration für PDF-Anmerkungen]** und ändern Sie die gewünschten Optionen. Um beispielsweise die Anzeigefarbe des Status „Bestätigt“ zu ändern, modifizieren Sie im entsprechenden Feld den Farb-Code. Informationen zum Ändern der Schriftfarbe von Anmerkungen finden Sie unter [Anmerkungen](/help/assets/manage-digital-assets.md#annotating).
+   Um das Erscheinungsbild der gerenderten PDF-Datei zu ändern, z. B. Schriftfarbe, -größe und -stil, Hintergrundfarbe der Kommentare und Status, öffnen Sie die **[!UICONTROL PDF-Konfiguration von Anmerkungen]** und ändern Sie die gewünschten Optionen. Um beispielsweise die Anzeigefarbe des Status „Bestätigt“ zu ändern, modifizieren Sie im entsprechenden Feld den Farb-Code. Informationen zum Ändern der Schriftfarbe von Anmerkungen finden Sie unter [Anmerkungen](/help/assets/manage-digital-assets.md#annotating).
 
    Kehren Sie zur gerenderten PDF-Datei zurück und aktualisieren Sie sie. Das aktualisierte PDF spiegelt die von Ihnen vorgenommenen Änderungen wider.
 

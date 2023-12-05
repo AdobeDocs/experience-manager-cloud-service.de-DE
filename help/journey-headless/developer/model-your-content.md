@@ -2,10 +2,10 @@
 title: Erfahren Sie, wie Sie Ihre Inhalte modellieren
 description: In diesem Teil der Adobe Experience Manager (AEM) Headless-Entwickler-Journey erfahren Sie, wie Sie Ihre Inhalte für AEM Headless-Bereitstellung mithilfe der Inhaltsmodellierung mit Inhaltsfragmentmodellen und Inhaltsfragmenten modellieren.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1827'
-ht-degree: 68%
+source-wordcount: '1814'
+ht-degree: 66%
 
 ---
 
@@ -210,7 +210,7 @@ Am Anfang müssen Sie Inhaltsfragmentmodelle für Ihre Site aktivieren. Dies erf
 >
 >Siehe „Zusätzliche Ressourcen – Inhaltsfragmente im Konfigurations-Browser“
 
-Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur definiert werden. Dies kann unter **Tools** -> **Allgemein** -> **Inhaltsfragmentmodelle** erfolgen. Beispiel:
+Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur definiert werden. Dies kann unter **Instrumente** > **Allgemein** > **Inhaltsfragmentmodelle**. Beispiel:
 
 ![Inhaltsfragmentmodell](assets/cfm-model.png)
 
@@ -224,7 +224,7 @@ Inhaltsfragmente basieren immer auf einem Inhaltsfragmentmodell. Das Modell stel
 
 ### Auswählen des entsprechenden Modells {#select-model}
 
-Der erste Schritt zur tatsächlichen Erstellung Ihrer Inhalte besteht darin, ein Inhaltsfragment zu erstellen. Dazu verwenden Sie „Erstellen“ > „Inhaltsfragment“ unter „Assets“ > „Dateien“ im erforderlichen Ordner. Der Assistent führt Sie durch die Schritte.
+Der erste Schritt zur tatsächlichen Erstellung Ihrer Inhalte besteht darin, ein Inhaltsfragment zu erstellen. Dazu verwenden Sie Erstellen > Inhaltsfragment im erforderlichen Ordner unter Assets > Dateien . Der Assistent führt Sie durch die Schritte.
 
 Ein Inhaltsfragment basiert auf einem bestimmten Inhaltsfragmentmodell, das Sie als ersten Schritt des Erstellungsprozesses auswählen.
 

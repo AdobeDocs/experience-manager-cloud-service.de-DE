@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '3706'
-ht-degree: 99%
+source-wordcount: '3685'
+ht-degree: 97%
 
 ---
 
@@ -182,7 +182,7 @@ Ein weiterer Anwendungsfall, den Dynamic Media löst, ist Video. Video ist kompl
 
 Kunden wenden sich mit folgendem Problem, das sie zu lösen hoffen, an Dynamic Media:
 
-„_Wir haben das Video, und wir haben viel Geld ausgegeben, um es zu erstellen. Aber wir haben uns davor gescheut, es auf Seiten zu platzieren oder bereitzustellen, weil wir nach unseren Tests nicht für die Qualität des Videos garantieren können oder dafür, dass es wirklich abgespielt wird. Und das wirkt sich letztlich auf unsere Marken und möglicherweise auch auf unsere Rolle bei der Konversion aus_.“
+&quot;_Mein Unternehmen hat das Video, und unsere Abteilung hat viel Geld ausgegeben, um es zu erstellen, aber es wurde davon abgehalten, es auf Seiten zu platzieren oder zu liefern. Der Grund dafür war, dass durch unsere Tests die Qualität des Videos nicht garantiert werden konnte, oder auch, wenn es wirklich spielen würde. Und das wirkt sich letztlich auf unsere Marken und möglicherweise auch auf unsere Rolle bei der Konversion aus_.“
 
 Die Lösung von Dynamic Media besteht darin, diese eine primäre Videodatei zu nehmen und Dynamic Media alle Größen durch seinen Transkodierungsprozess bestimmen zu lassen. Kombinieren Sie dies dann mit dem intelligenten Videoplayer von Dynamic Media. Dieser Workflow gewährleistet, dass das Video auf Ihrer Haupt-Landingpage oder auf einer Kategorie- oder Produktdetailseite konsistent ist und in hoher Qualität bereitgestellt wird.
 

@@ -2,10 +2,10 @@
 title: Verwalten von Tags
 description: Erfahren Sie, wie Sie Tags in AEM verwalten, um Ihre Inhalte zu organisieren.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2210'
-ht-degree: 5%
+source-wordcount: '2200'
+ht-degree: 4%
 
 ---
 
@@ -62,7 +62,7 @@ Die Tagging-Konsole wird zum Erstellen und Verwalten von Tags und deren Taxonomi
 So greifen Sie auf die Tagging-Konsole zu:
 
 1. Melden Sie sich in einer Authoring-Umgebung mit Administratorrechten an.
-1. Wählen Sie im globalen Navigationsmenü die Option **`Tools`** > **`General`** ->
+1. Wählen Sie im globalen Navigationsmenü die Option **`Tools`** > **`General`** >
    **`Tagging`**.
 
 ![Die Tagging-Konsole in AEM](/help/sites-cloud/administering/assets/tagging-console.png)
@@ -91,7 +91,7 @@ Zum Organisieren anderer Tags wird ein Namespace verwendet. Sie kann als Tag der
 
 1. Wählen Sie nach Eingabe der erforderlichen Informationen die Option **Erstellen**.
 
-Der Namespace wird erstellt. Beachten Sie, dass sich die Namespaces in der Tagging-Konsole auf der niedrigsten Ebene befinden (in der Spalte ganz links in der Konsole) und durch Ordnersymbole dargestellt werden, die ihre Art als &quot;Container&quot;oder Gruppierung anderer Tags widerspiegeln.
+Der Namespace wird erstellt. In der Tagging-Konsole befinden sich die Namespaces auf der untersten Ebene (in der Spalte ganz links in der Konsole) und werden durch Ordnersymbole dargestellt, die ihre Art als &quot;Container&quot;oder Gruppierung anderer Tags widerspiegeln.
 
 Sie können jetzt [Erstellen neuer Tags](#creating-tags) in diesem Namespace oder [vorhandene Tags verwalten.](#managing-tags)
 
@@ -163,7 +163,7 @@ Es gibt verschiedene Aktionen, die Sie zum Verwalten und Organisieren vorhandene
 * [Zusammenführen](#merging-tags)
 * [Löschen](#deleting-tags)
 
-Beachten Sie, dass zusätzliche Optionen hinter dem Auslassungssymbol verfügbar sind, wenn in der Symbolleiste genügend Platz zur Verfügung steht.
+Wenn in der Symbolleiste ausreichend Speicherplatz zur Verfügung steht, sind zusätzliche Optionen hinter dem Auslassungssymbol verfügbar.
 
 ### Anzeigen der Tag-Eigenschaften {#viewing-tag-properties}
 
@@ -243,7 +243,7 @@ Es kann nützlich sein, zu sehen, auf welchen Inhalt ein bestimmtes Tag angewend
 
    ![Anzeigen der Details der Verweise des Tags](assets/tag-references-detail.png)
 
-Bewegen Sie die Maus oder tippen Sie auf einen verweisenden Inhalt in der Liste, um den vollständigen Pfad des Inhalts anzuzeigen.
+Bewegen Sie die Maus oder wählen Sie einen verweisenden Inhalt in der Liste aus, um den vollständigen Pfad des Inhalts anzuzeigen.
 
 Weitere Informationen zum Auswählen von Anzeigemodi und der Leiste finden Sie unter [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
@@ -304,7 +304,7 @@ Wenn sich Ihre Tagging-Taxonomie ändert und ein Tag oder Namespace überflüssi
 
 1. AEM überprüft, ob der Verweis auf das Tag nicht erfolgt.
 
-   1. Wenn keine Verweise gefunden werden, bittet AEM um eine endgültige Bestätigung zum Löschen. Wählen Sie **Löschen** aus
+   1. Wenn keine Verweise gefunden werden, bittet AEM um eine endgültige Bestätigung zum Löschen. Auswählen **Löschen**
 
       ![Keine Verweise gefunden](assets/no-references-found.png)
 
@@ -351,7 +351,7 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 ## Verwalten von Tags in verschiedenen Sprachen {#managing-tags-in-different-languages}
 
-Die Eigenschaft `title` eines Tags kann in verschiedene Sprachen übersetzt werden. Nach der Übersetzung kann der entsprechende Tag-Titel entsprechend der Benutzer- oder Inhaltssprache angezeigt werden.
+Die `title` -Eigenschaft eines Tags in mehrere Sprachen übersetzt werden. Nach der Übersetzung kann der entsprechende Tag-Titel entsprechend der Benutzer- oder Inhaltssprache angezeigt werden.
 
 Nehmen wir an, wir haben ein Tag namens `Animals` dass wir ins Deutsche und Französisch übersetzen wollen.
 

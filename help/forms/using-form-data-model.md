@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1231'
-ht-degree: 59%
+source-wordcount: '1213'
+ht-degree: 56%
 
 ---
 
@@ -46,13 +46,13 @@ Sie können [adaptive Formulare](creating-adaptive-form.md) und adaptive Formula
 
    ![Create-af-1-1](assets/create-af-1-1.png)
 
-1. Tippen Sie auf **[!UICONTROL Formulardatenmodell auswählen]**, um es zu erweitern. Alle verfügbaren Formulardatenmodelle werden aufgelistet.
+1. Zum Erweitern auswählen **[!UICONTROL Formulardatenmodell auswählen]**. Alle verfügbaren Formulardatenmodelle werden aufgelistet.
 
    Wählen Sie ein Formulardatenmodell aus.
 
    ![Create-af-2-1](assets/create-af-2-1.png)
 
-1. (**Nur adaptive Formularfragmente**) Sie können ein adaptives Formularfragment auf Grundlage eines einzelnen Datenmodellobjekts in einem Formulardatenmodell erstellen. Erweitern **[!UICONTROL Definitionen des Formulardatenmodells]** angezeigt. Es listet alle Datenmodellobjekte im angegebenen Formulardatenmodell auf. Wählen Sie ein Datenmodellobjekt aus der Liste aus.
+1. (**Nur adaptive Formularfragmente**) Sie können ein adaptives Formularfragment auf Grundlage eines einzelnen Datenmodellobjekts in einem Formulardatenmodell erstellen. Erweitern **[!UICONTROL Definitionen des Formulardatenmodells]** angezeigt. Hier sind sämtliche Datenmodellobjekte im angegebenen Formulardatenmodell aufgelistet. Wählen Sie ein Datenmodellobjekt aus der Liste aus.
 
    ![create-af-3](assets/create-af-3.png)
 
@@ -93,14 +93,14 @@ Mit dem Formulardatenmodell-Editor können Sie Beispieldaten für Datenmodellobj
 <!--To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
-1. Select an interactive communication and tap **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
-1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and tap **[!UICONTROL Preview]**.
+1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
+1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and select **[!UICONTROL Preview]**.
 
 The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)-->
 
-Um ein adaptives Formular mit Beispieldaten in der Vorschau anzuzeigen, öffnen Sie das Formular im Autorenmodus und tippen Sie auf **[!UICONTROL Vorschau]**.
+Um ein adaptives Formular mit Beispieldaten in der Vorschau anzuzeigen, öffnen Sie das adaptive Formular im Autorenmodus und wählen Sie **[!UICONTROL Vorschau]**.
 
 ## Vorbefüllen mit dem Formulardatenmodell-Service {#prefill}
 
@@ -130,10 +130,10 @@ Sie können auch Formularanhänge mit der Objekteigenschaft des binären Datenmo
 
 1. Fügen Sie dem Formulardatenmodell ein Datenmodellobjekt hinzu, das eine binäre Eigenschaft enthält.
 1. Ziehen Sie im adaptiven Formular die Komponente **[!UICONTROL Dateianhang]** aus dem Komponentenbrowser auf das adaptive Formular.
-1. Tippen Sie auf die hinzugefügte Komponente, um sie auszuwählen, und tippen Sie dann auf ![settings_icon](assets/configure-icon.svg), um den Eigenschaftenbrowser für die Komponente zu öffnen.
-1. Tippen Sie im Feld „Bindungsverweis“ auf ![foldersearch_18](assets/folder-search-icon.svg), navigieren Sie zur binären Eigenschaft, die Sie im Formulardatenmodell hinzugefügt haben, und wählen Sie sie aus. Konfigurieren Sie weitere Eigenschaften entsprechend.
+1. Wählen Sie aus, um die hinzugefügte Komponente auszuwählen, und wählen Sie ![settings_icon](assets/configure-icon.svg) , um den Eigenschaftenbrowser für die Komponente zu öffnen.
+1. Wählen Sie im Feld &quot;Bindungsverweis&quot;die Option ![folderSearch_18](assets/folder-search-icon.svg) und navigieren Sie zur Auswahl der binären Eigenschaft, die Sie im Formulardatenmodell hinzugefügt haben. Konfigurieren Sie weitere Eigenschaften entsprechend.
 
-   Tippen Sie auf ![check-button](assets/save_icon.svg), um die Eigenschaften zu speichern. Das Anlagenfeld ist jetzt an die binäre Eigenschaft des Formulardatenmodells gebunden.
+   Auswählen ![check-button](assets/save_icon.svg) , um die Eigenschaften zu speichern. Das Anlagenfeld ist jetzt an die binäre Eigenschaft des Formulardatenmodells gebunden.
 
 1. Aktivieren Sie im Abschnitt Übermittlung der Eigenschaften des Containers für adaptive Formulare die Option **[!UICONTROL Übermitteln von Formularanlagen]**. Er sendet den Anhang im Feld der binären Eigenschaft bei der Formularübermittlung an die Datenquelle.
 
@@ -151,7 +151,7 @@ Darüber hinaus können Sie mithilfe der `guidelib.dataIntegrationUtils.executeO
 
 Sie können [Aufrufen eines Formulardatenmodells aus dem Regeleditor mithilfe benutzerdefinierter Funktionen](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). Um das Formulardatenmodell aufzurufen, fügen Sie der Zulassungsliste ein Formulardatenmodell hinzu. So fügen Sie ein Formulardatenmodell zu einer Zulassungsliste hinzu:
 
-1. Navigieren Sie zur Experience Manager-Webkonsole unter `https://server:host/system/console/configMgr`.
+1. Navigieren Sie zur Experience Manager-Web-Konsole unter `https://server:host/system/console/configMgr`.
 1. Suchen **[!UICONTROL Whitelisting auf adaptiver Formularebene des Formulardatenmodells für den Dienstaufruf - Konfigurationsfactory]**.
 1. Klicks ![Plus-Symbol](/help/forms/assets/Smock_Add_18_N.svg) -Symbol, um die Konfiguration hinzuzufügen.
 1. Hinzufügen **[!UICONTROL Inhaltspfadmuster]** um den Speicherort Ihrer adaptiven Forms anzugeben.  Standardmäßig lautet der Wert `/content/forms/af/(.*)` , das alle adaptiven Forms umfasst. Sie können auch den Pfad für ein bestimmtes adaptives Formular angeben.

@@ -2,10 +2,10 @@
 title: Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3594'
-ht-degree: 93%
+source-wordcount: '3526'
+ht-degree: 92%
 
 ---
 
@@ -366,7 +366,7 @@ Regeln für die Port-Weiterleitung sollten für jeden TCP-Traffic, der nicht HTT
 
 Die API sollte innerhalb weniger Sekunden mit dem Status `updating` antworten, und nach etwa 10 Minuten würde ein Aufruf des GET-Endpunkts für die Umgebung des Cloud Managers den Status `ready` anzeigen, was bedeutet, dass die Aktualisierung der Umgebung durchgeführt wurde.
 
-Beachten Sie, dass `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` auch dann aufgerufen werden muss, wenn es keine Regeln für die Weiterleitung des Umgebungs-Traffics (Hosts oder Bypässe) gibt, nur mit einer leeren Payload.
+Auch wenn es keine Regeln für das Traffic-Routing der Umgebung (Hosts oder Umgehungen) gibt, `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` muss weiterhin aufgerufen werden, nur mit einer leeren Payload.
 
 ### VPN aktualisieren {#updating-the-vpn}
 
@@ -556,7 +556,7 @@ Wenn eine zusätzliche Region zu einer Umgebung hinzugefügt wird, in der bereit
 
 Wenn in der primären Region bereits eine erweiterte Netzwerkkonfiguration aktiviert ist, führen Sie die folgenden Schritte aus:
 
-1. Wenn Sie Ihre Infrastruktur so gesperrt haben, dass die dedizierte AEM-IP-Adresse auf der Zulassungsliste ist, wird empfohlen, alle Regeln zur Ablehnung in dieser Infrastruktur vorübergehend zu deaktivieren. Andernfalls werden Anfragen von den IP-Adressen der neuen Region für eine kurze Zeit von Ihrer eigenen Infrastruktur abgelehnt. Beachten Sie, dass dies nicht erforderlich ist, wenn Sie Ihre Infrastruktur mithilfe eines FullyQualified Domain Name (FQDN) gesperrt haben (`p1234.external.adobeaemcloud.com`, weil alle AEM Regionen erweiterten Netzwerk-Traffic aus demselben FQDN auslösen.
+1. Wenn Sie Ihre Infrastruktur so gesperrt haben, dass die dedizierte AEM-IP-Adresse auf der Zulassungsliste ist, wird empfohlen, alle Regeln zur Ablehnung in dieser Infrastruktur vorübergehend zu deaktivieren. Andernfalls werden Anfragen von den IP-Adressen der neuen Region für eine kurze Zeit von Ihrer eigenen Infrastruktur abgelehnt. Dies ist nicht erforderlich, wenn Sie Ihre Infrastruktur mithilfe eines FullyQualified Domain Name (FQDN) (`p1234.external.adobeaemcloud.com`, weil alle AEM Regionen erweiterten Netzwerk-Traffic aus demselben FQDN auslösen.
 1. Erstellen Sie die programmweite Netzwerkinfrastruktur für die sekundäre Region durch einen POST-Aufruf an die Cloud Manager-API zum Erstellen einer Netzwerkinfrastruktur, wie in der Dokumentation zu erweiterten Netzwerken beschrieben. Der einzige Unterschied in der JSON-Konfiguration der Payload im Verhältnis zur primären Region ist die Regionseigenschaft.
 1. Wenn Ihre Infrastruktur nach IP gesperrt werden muss, um AEM Traffic zu ermöglichen, fügen Sie die IPs hinzu, die mit `p1234.external.adobeaemcloud.com`. Pro Region sollte es eine geben.
 
@@ -566,7 +566,7 @@ Das Verfahren ähnelt größtenteils den vorherigen Anweisungen. Wenn die Produk
 
 1. Erstellen Sie eine Netzwerkinfrastruktur für alle Regionen durch einen POST-Aufruf an die [Cloud Manager-API zum Erstellen einer Netzwerkinfrastruktur](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). Der einzige Unterschied in der JSON-Konfiguration der Payload im Verhältnis zur primären Region ist die Regionseigenschaft.
 1. Aktivieren und konfigurieren Sie für die Staging-Umgebung das erweiterte Netzwerk, das im Umgebungsumfang verfügbar ist, indem Sie `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` ausführen. Weitere Informationen finden Sie in der API-Dokumentation [hier](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
-1. Sperren Sie ggf. die externe Infrastruktur, vorzugsweise nach FQDN (z. B. `p1234.external.adobeaemcloud.com`). Andernfalls können Sie auch die IP-Adresse verwenden.
+1. Sperren Sie ggf. die externe Infrastruktur, vorzugsweise durch FQDN (z. B. `p1234.external.adobeaemcloud.com`). Andernfalls können Sie auch die IP-Adresse verwenden.
 1. Wenn die Staging-Umgebung erwartungsgemäß funktioniert, aktivieren und konfigurieren Sie die erweiterte Netzwerkkonfiguration der Umgebung für die Produktion.
 
 #### VPN {#vpn-regions}

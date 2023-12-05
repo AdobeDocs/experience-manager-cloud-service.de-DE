@@ -1,11 +1,11 @@
 ---
 title: Bearbeiten von Launches
-description: Nachdem Sie einen Launch für Ihre Seite (oder eine Reihe von Seiten) erstellt haben, können Sie den Inhalt in der „Launch-Kopie“ der Seite(n) bearbeiten.
+description: Nachdem Sie einen Launch für Ihre Seite (oder eine Reihe von Seiten) erstellt haben, können Sie den Inhalt in der „Launch Copy“ der Seiten bearbeiten.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 96%
+source-wordcount: '551'
+ht-degree: 91%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 ## Bearbeiten von Launch-Seiten {#editing-launch-pages}
 
-Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, können Sie den Inhalt in der Launch Copy der Seiten bearbeiten.
+Wenn ein Launch für eine Seite (oder mehrere Seiten) erstellt wurde, können Sie den Inhalt in der Launch Copy der Seiten bearbeiten.
 
 1. Rufen Sie [Launches aus Verweisen (Konsole „Sites“)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) auf, um die verfügbaren Aktionen anzuzeigen.
 1. Klicken Sie auf **Zur Seite gehen**, um die Seite zur Bearbeitung zu öffnen.

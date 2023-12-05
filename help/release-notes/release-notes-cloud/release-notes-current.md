@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1278'
 ht-degree: 16%
 
 ---
@@ -93,7 +93,7 @@ Möchten Sie die Funktion ausprobieren und Feedback teilen? E-Mail an senden **a
 
 ### Neue Funktionen in der Vorabversion von [!DNL Forms] {#prerelease-features-forms}
 
-* **[Verbinden einer adaptiven Forms-Liste mit Microsoft® SharePoint-Liste](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms bietet eine OOTB-Integration, um Formulardaten direkt an die SharePoint-Liste zu senden, sodass Sie die Funktionen der SharePoint-Listen nutzen können. Sie können die Microsoft SharePoint-Liste als Datenquelle für ein Formulardatenmodell konfigurieren und die **Senden mit Formulardatenmodell** Übermittlungsaktion zum Verbinden eines adaptiven Formulars mit einer SharePoint-Liste.
+* **[Verbinden einer adaptiven Forms-Liste mit Microsoft® SharePoint-Liste](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms bietet eine OOTB-Integration zum Senden von Formulardaten direkt an die SharePoint-Liste, sodass Sie die SharePoint-Funktionen &quot;Listen&quot;verwenden können. Sie können die Microsoft SharePoint-Liste als Datenquelle für ein Formulardatenmodell konfigurieren und die **Senden mit Formulardatenmodell** Übermittlungsaktion zum Verbinden eines adaptiven Formulars mit einer SharePoint-Liste.
 
 <!-- 
 
@@ -105,7 +105,7 @@ Möchten Sie die Funktion ausprobieren und Feedback teilen? E-Mail an senden **a
 
 * **[Senden eines adaptiven Formulars an das Adobe Workfront Fusion-Szenario](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service bietet vordefinierte Optionen, um ein adaptives Formular einfach mit Adobe Workfront zu verbinden. Dadurch wird der Prozess zum Senden eines adaptiven Formulars an ein Adobe Workfront-Szenario vereinfacht, sodass Sie bei der Übermittlung eines adaptiven Formulars ein Workfront Fusion-Szenario Trigger haben.
 
-* **[Unterstützung für Sprachen mit Rechts-nach-links-Schreibrichtung](/help/forms/supporting-new-language-localization-core-components.md)**: Adaptive Forms, die auf Kernkomponenten basiert, kann jetzt in einer RTL-Sprache (Right-to-Left) wie Arabisch, Persisch und Urdu angezeigt werden. Die RTL-Sprachen werden von über 2 Milliarden Menschen weltweit gesprochen. Durch die Verwendung eines Formulars in RTL-Sprache können Sie die Reichweite Ihrer adaptiven Formulare erweitern, um diese unterschiedlichen Zielgruppen zu bedienen und RTL-Märkte zu erschließen. In bestimmten Regionen ist es auch ein gesetzliches Mandat, Formulare in der Landessprache zu verfassen. Durch die Unterbringung der lokalen Sprachen öffnen Sie nicht nur den Zugang zu einem breiteren Publikum, sondern sorgen auch für die Einhaltung der einschlägigen Gesetze und Vorschriften.
+* **[Unterstützung für Sprachen mit Rechts-nach-links-Schreibrichtung](/help/forms/supporting-new-language-localization-core-components.md)**: Adaptive Forms, die auf Kernkomponenten basiert, kann jetzt in einer RTL-Sprache (Right-to-Left) wie Arabisch, Persisch und Urdu angezeigt werden. Die RTL-Sprachen werden von über 2 Milliarden Menschen weltweit gesprochen. Durch die Verwendung eines Formulars in RTL-Sprache können Sie die Reichweite Ihrer adaptiven Formulare erweitern, um diese unterschiedlichen Zielgruppen zu bedienen und auf RTL-Märkten auszuwählen. In bestimmten Regionen ist es auch ein gesetzliches Mandat, Formulare in der Landessprache zu verfassen. Durch die Unterbringung der lokalen Sprachen öffnen Sie nicht nur den Zugang zu einem breiteren Publikum, sondern sorgen auch für die Einhaltung der einschlägigen Gesetze und Vorschriften.
 
   ![Unterstützung von Sprachen mit Rechts-Links](/help/forms/assets/right-to-left-language-support.png)
 

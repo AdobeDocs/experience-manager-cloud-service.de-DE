@@ -2,10 +2,10 @@
 title: Bereitstellen des Codes
 description: Erfahren Sie, wie Sie Ihren Code mithilfe von Cloud Manager-Pipelines in AEM as a Cloud Service bereitstellen.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 91%
+source-wordcount: '1190'
+ht-degree: 80%
 
 ---
 
@@ -131,9 +131,9 @@ Alle Cloud-Dienste werden in einem fortlaufenden Prozess bereitgestellt, um zu g
 
 In seltenen Fällen kann es vorkommen, dass Schritte der Produktionsbereitstellung aus vorübergehenden Gründen fehlschlagen. In solchen Fällen wird die erneute Ausführung des Produktionsbereitstellungsschritts unterstützt, solange der Produktionsbereitstellungsschritt abgeschlossen ist, unabhängig vom Fertigstellungstyp (z. B. abgebrochen oder nicht erfolgreich). Bei der erneuten Ausführung wird eine neue Ausführung mit derselben Pipeline erstellt, die aus drei Schritten besteht.
 
-1. Der Validierungsschritt – Dies ist im Wesentlichen dieselbe Validierung wie bei einer normalen Pipeline-Ausführung.
-1. Der Build-Schritt – Im Rahmen einer erneuten Ausführung kopiert der Build-Schritt Artefakte und führt keinen wirklich neuen Build-Prozess aus.
-1. Der Produktionsbereitstellungsschritt – Dieser Schritt verwendet dieselbe Konfiguration und dieselben Optionen wie der Produktionsbereitstellungsschritt bei einer normalen Pipeline-Ausführung.
+1. Der Validierungsschritt - Dies ist im Wesentlichen dieselbe Validierung, die während einer normalen Pipeline-Ausführung erfolgt.
+1. Der Build-Schritt - Im Kontext einer erneuten Ausführung kopiert der Build-Schritt Artefakte und führt keinen neuen Build-Prozess aus.
+1. Der Schritt zur Produktionsbereitstellung : Hierbei werden dieselben Konfigurationen und Optionen wie beim Schritt zur Produktionsbereitstellung bei einer normalen Pipeline-Ausführung verwendet.
 
 In solchen Fällen, in denen eine erneute Ausführung möglich ist, bietet die Statusseite der Produktions-Pipeline neben der üblichen Option **Build-Protokoll herunterladen** auch die Option **Erneut ausführen**.
 
@@ -146,13 +146,13 @@ In solchen Fällen, in denen eine erneute Ausführung möglich ist, bietet die S
 ### Einschränkungen {#limitations}
 
 * Die erneute Ausführung des Produktionsbereitstellungsschritts ist nur für die letzte Ausführung verfügbar.
-* Eine erneute Ausführung ist für Push-Update-Ausführungen nicht verfügbar.
+* Die Neuausführung ist nicht für Push-Update-Ausführungen verfügbar.
    * Wenn die letzte Ausführung eine Push-Update-Ausführung war, ist eine erneute Ausführung nicht möglich.
 * Wenn die letzte Ausführung zu irgendeinem Zeitpunkt vor dem Schritt der Produktionsbereitstellung fehlgeschlagen ist, ist eine erneute Ausführung nicht möglich.
 
 ### Erneutes Ausführen der API {#reexecute-API}
 
-Zusätzlich zur Verfügbarkeit in der Benutzeroberfläche können Sie [die Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) verwenden, um erneute Ausführungen auszulösen und Ausführungen zu identifizieren, die als erneute Ausführungen ausgelöst wurden.
+Zusätzlich zur Verfügbarkeit in der Benutzeroberfläche können Sie [Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) zum Trigger von Wiederausführungen und zur Identifizierung von Ausführungen, die als Wiederausführungen ausgelöst wurden.
 
 #### Auslösen einer erneuten Ausführung {#reexecute-deployment-api}
 
@@ -200,7 +200,7 @@ Dieser Link ist nur für den Schritt zur Produktionsbereitstellung verfügbar.
 
 Die Syntax des href-Werts des HAL-Links ist nur ein Beispiel. Der tatsächliche Wert sollte immer aus dem HAL-Link gelesen und nicht generiert werden.
 
-Das Senden einer PUT-Anfrage an diesen Endpunkt führt zu einer 201-Antwort bei Erfolg, wobei der Antworttext die Darstellung der neuen Ausführung ist. Dies ähnelt dem Starten einer regulären Ausführung über die API.
+Die Übermittlung einer PUT-Anfrage an diesen Endpunkt führt bei Erfolg zu einer 201-Antwort und der Antworttext stellt die Darstellung der neuen Ausführung dar. Dies ähnelt dem Starten einer regulären Ausführung über die API.
 
 #### Identifizieren einer erneut ausgeführten Ausführung {#identify-reexecution}
 

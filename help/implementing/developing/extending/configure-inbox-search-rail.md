@@ -2,10 +2,10 @@
 title: Wie werden Suchfilter für den Posteingang konfiguriert?
 description: Erfahren Sie, wie Sie Suchfilter für Elemente im Posteingang konfigurieren.
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '1000'
-ht-degree: 100%
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+workflow-type: tm+mt
+source-wordcount: '1010'
+ht-degree: 86%
 
 ---
 
@@ -33,7 +33,7 @@ Im Folgenden finden Sie die verfügbaren Eigenschaftstypen für den Posteingang:
 
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Suchformulare]**.
 
-1. Wählen Sie die Konfiguration **[!UICONTROL Suchleiste für Posteingang]** aus und tippen Sie auf **[!UICONTROL Bearbeiten]**.
+1. Wählen Sie die **[!UICONTROL Posteingang - Suchleiste]** Konfiguration und wählen Sie **[!UICONTROL Bearbeiten]**.
 1. Integrieren Sie die Änderungen der Eigenschaftskonfiguration mithilfe von **[!UICONTROL Suchformulare bearbeiten]**.
 1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Konfiguration zu speichern.
 
@@ -43,7 +43,7 @@ So löschen Sie eine anwenderdefinierte Konfiguration:
 
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Suchformulare]**.
 
-1. Wählen Sie die Konfiguration **[!UICONTROL Suchleiste für Posteingang]** aus und tippen Sie auf **[!UICONTROL Löschen]**.
+1. Wählen Sie die **[!UICONTROL Posteingang - Suchleiste]** Konfiguration und wählen Sie **[!UICONTROL Löschen]**.
 
 ## Konfigurieren der Bereichseigenschaft {#range-predicate}
 
@@ -52,10 +52,10 @@ Sie können Elemente im Posteingang filtern, um mithilfe der Bereichseigenschaft
 So konfigurieren Sie eine Bereichseigenschaft:
 
 1. Öffnen Sie das [Formular für die Konfiguration](#creating-opening-customized-configuration).
-1. Tippen Sie auf die Registerkarte **[!UICONTROL Eigenschaft auswählen]** und ziehen Sie **[!UICONTROL Eigenschaft für Bereich]** in das Formular.
+1. Wählen Sie die **[!UICONTROL Eigenschaft auswählen]** Registerkarte und ziehen **[!UICONTROL Bereichsprädikat]** in das Formular ein.
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** im Feld **[!UICONTROL Spaltenname]** den Namen der Spalte des Posteingangs aus, auf dem die Suche basieren soll.
 1. Geben Sie im Feld **[!UICONTROL Filterbezeichnung]** die Bezeichnung des Filters an. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Dezimalwerte aktivieren]**, um Dezimalwerte für Zahlen zuzulassen, während Sie den Bereich definieren.
-1. Geben Sie eine optionale Beschreibung für die Konfiguration ein und tippen Sie auf **[!UICONTROL Fertig]**, um die Änderungen zu speichern.
+1. Geben Sie eine optionale Beschreibung für die Konfiguration an und wählen Sie **[!UICONTROL Fertig]** , um es zu speichern.
 
 Die Konfigurationsänderungen werden beim Öffnen der Seite „Filter“ übernommen. Die in Schritt 4 angegebene Filterbezeichnung wird als Bezeichnung mit einer Option zum Definieren der Mindest- und Höchstwerte angezeigt. Wenn Sie die Eingabetaste drücken, wendet [!DNL Experience Manager] die Suchkriterien auf den in Schritt 3 angegebenen Spaltennamen an und gibt die entsprechenden Elemente im Posteingang zurück.
 
@@ -70,10 +70,10 @@ Filtern Sie die Elemente im Posteingang, um mithilfe der Texteigenschaft innerha
 So konfigurieren Sie eine Texteigenschaft:
 
 1. Öffnen Sie das [Formular für die Konfiguration](#creating-opening-customized-configuration).
-1. Tippen Sie auf die Registerkarte **[!UICONTROL Eigenschaft auswählen]** und ziehen Sie **[!UICONTROL Texteigenschaft]** in das Formular.
+1. Wählen Sie die **[!UICONTROL Eigenschaft auswählen]** Registerkarte und ziehen **[!UICONTROL Texteigenschaft]** in das Formular ein.
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** im Feld **[!UICONTROL Spaltenname]** den Namen der Spalte des Posteingangs aus, auf dem die Suche basieren soll.
 1. Geben Sie den Text an, der im Textfeld Suchen als Platzhaltertext im Feld **[!UICONTROL Suchtextfeld-Platzhalter]** angezeigt wird.
-1. Geben Sie eine optionale Beschreibung für die Konfiguration ein und tippen Sie auf **[!UICONTROL Fertig]**, um die Änderungen zu speichern.
+1. Geben Sie eine optionale Beschreibung für die Konfiguration an und wählen Sie **[!UICONTROL Fertig]** , um es zu speichern.
 
 Die Konfigurationsänderungen werden beim Öffnen der Seite „Filter“ übernommen. Wenn Sie die Eingabetaste drücken, wendet [!DNL Experience Manager] den in Schritt 4 angegebenen Suchtext auf den in Schritt 3 angegebenen Spaltennamen an und gibt die entsprechenden Elemente im Posteingang zurück.
 
@@ -84,11 +84,11 @@ Sie können Elemente im Posteingang filtern, um mithilfe der Datumsbereich-Eigen
 So konfigurieren Sie eine Datumsbereich-Eigenschaft:
 
 1. Öffnen Sie das [Formular für die Konfiguration](#creating-opening-customized-configuration).
-1. Tippen Sie auf die Registerkarte **[!UICONTROL Eigenschaft auswählen]** und ziehen Sie **[!UICONTROL Datumsbereich-Eigenschaft]** in das Formular.
+1. Wählen Sie die **[!UICONTROL Eigenschaft auswählen]** Registerkarte und ziehen **[!UICONTROL Datumsbereichseigenschaft]** in das Formular ein.
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** im Feld **[!UICONTROL Spaltenname]** den Namen der Spalte des Posteingangs aus, auf dem die Suche basieren soll.
 1. Geben Sie im Feld **[!UICONTROL Filterbezeichnung]** die Bezeichnung des Filters für die Datumsbereich-Eigenschaft an.
 1. Geben Sie die Bezeichnungen für das Start- und Enddatum für den Filter an.
-1. Geben Sie eine optionale Beschreibung für die Konfiguration ein und tippen Sie auf **[!UICONTROL Fertig]**, um die Änderungen zu speichern.
+1. Geben Sie eine optionale Beschreibung für die Konfiguration an und wählen Sie **[!UICONTROL Fertig]** , um es zu speichern.
 
 Die Konfigurationsänderungen werden beim Öffnen der Seite „Filter“ übernommen. Die in Schritt 4 angegebene Filterbezeichnung wird zusammen mit den in Schritt 5 angegebenen Bezeichnungen für das Start- und Enddatum für den Datumsbereichs-Filter angezeigt. [!DNL Experience Manager] wendet die Suchkriterien auf den in Schritt 3 angegebenen Spaltennamen an und gibt die entsprechenden Elemente im Posteingang zurück.
 
@@ -99,12 +99,12 @@ Sie können Elemente im Posteingang filtern, um mithilfe der Eigenschaft für an
 So konfigurieren Sie eine Eigenschaft für anwenderdefinierte Spaltenoptionen:
 
 1. Öffnen Sie das [Formular für die Konfiguration](#creating-opening-customized-configuration).
-1. Tippen Sie auf die Registerkarte **[!UICONTROL Eigenschaft auswählen]** und ziehen Sie **[!UICONTROL Eigenschaft für anwenderdefinierte Spaltenoptionen]** in das Formular.
+1. Wählen Sie die **[!UICONTROL Eigenschaft auswählen]** Registerkarte und ziehen **[!UICONTROL Eigenschaft für benutzerdefinierte Spaltenoptionen]** in das Formular ein.
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** im Feld **[!UICONTROL Spaltenname]** den Namen der Spalte des Posteingangs aus, auf dem die Suche basieren soll.
 1. Geben Sie im Feld **[!UICONTROL Filterbezeichnung]** die Bezeichnung des Filters für die Eigenschaft für anwenderdefinierte Spaltenoptionen an.
 1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Einzelauswahl]**, um die Auswahl nur einer Option zu aktivieren, während Sie den Filter auf eine Spalte im Posteingang anwenden.
 1. Gehen Sie im Abschnitt **[!UICONTROL Optionen hinzufügen]** folgendermaßen vor:
-   1. Wählen Sie **[!UICONTROL Manuell]** aus, um die Filtersuchoptionen manuell zu definieren. Tippen Sie auf **[!UICONTROL Filteroptionen hinzufügen]**, um die erste Option zu definieren. Geben Sie die Bezeichnung für die Spaltenoption und den Text für den Optionswert an, nach dem gesucht werden soll. Wenn Sie beispielsweise **Female** als Wert in einer Spalte im Posteingang suchen möchten, können Sie **F** als Bezeichnung für die Spaltenoption angeben und **Female** als Text für den Optionswert hinzufügen. Ebenso können Sie weitere Filteroptionen hinzufügen.
+   1. Wählen Sie **[!UICONTROL Manuell]** aus, um die Filtersuchoptionen manuell zu definieren. Auswählen **[!UICONTROL Filteroptionen hinzufügen]** , um die erste Option zu definieren. Geben Sie die Bezeichnung für die Spaltenoption und den Text für den Optionswert an, nach dem gesucht werden soll. Wenn Sie beispielsweise **Female** als Wert in einer Spalte im Posteingang suchen möchten, können Sie **F** als Bezeichnung für die Spaltenoption angeben und **Female** als Text für den Optionswert hinzufügen. Ebenso können Sie weitere Filteroptionen hinzufügen.
    1. Wählen Sie **[!UICONTROL JSON-Pfad]** aus, um Optionen mithilfe eines JSON-Dateipfads zu definieren. Im Folgenden finden Sie eine JSON-Beispieldatei zum Definieren von Filteroptionen:
 
       ```JSON
@@ -122,7 +122,7 @@ So konfigurieren Sie eine Eigenschaft für anwenderdefinierte Spaltenoptionen:
         }
       ```
 
-   1. Wählen Sie **[!UICONTROL CRX-Options-Pfad]** aus, um Optionen mithilfe der CRX-Repository-Pfade zu definieren. Tippen Sie auf **[!UICONTROL Optionspfade hinzufügen]**, um mehrere Pfade hinzuzufügen. Im Folgenden finden Sie eine JSON-Beispieldatei zum Definieren von `Male`- und `Female`-Filteroptionen:
+   1. Wählen Sie **[!UICONTROL CRX-Options-Pfad]** aus, um Optionen mithilfe der CRX-Repository-Pfade zu definieren. Auswählen **[!UICONTROL Hinzufügen von Optionspfaden]** , um mehrere Pfade hinzuzufügen. Im Folgenden finden Sie eine JSON-Beispieldatei zum Definieren von `Male`- und `Female`-Filteroptionen:
 
       ```JSON
          <gender jcr:primaryType="sling:OrderedFolder">
@@ -137,7 +137,7 @@ So konfigurieren Sie eine Eigenschaft für anwenderdefinierte Spaltenoptionen:
                     </gender>
       ```
 
-1. Geben Sie eine optionale Beschreibung für die Konfiguration ein und tippen Sie auf **[!UICONTROL Fertig]**, um die Änderungen zu speichern.
+1. Geben Sie eine optionale Beschreibung für die Konfiguration an und wählen Sie **[!UICONTROL Fertig]** , um es zu speichern.
 
 Die Konfigurationsänderungen werden beim Öffnen der Seite „Filter“ übernommen. Die in Schritt 4 angegebene Filterbezeichnung wird als Bezeichnung für die Eigenschaft für anwenderdefinierte Spaltenoptionen angezeigt. [!DNL Experience Manager] wendet die in Schritt 6 angegebenen Suchkriterien auf den in Schritt 3 angegebenen Spaltennamen an und gibt die entsprechenden Elemente im Posteingang zurück.
 

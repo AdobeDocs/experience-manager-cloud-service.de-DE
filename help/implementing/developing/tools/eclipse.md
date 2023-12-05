@@ -2,10 +2,10 @@
 title: AEM Developer Tools for Eclipse
 description: Erfahren Sie, wie Sie die AEM Developer Tools für Eclipse verwenden, ein Eclipse-Plug-in, das auf dem Eclipse-Plug-in für Apache Sling basiert.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1191'
-ht-degree: 88%
+source-wordcount: '1138'
+ht-degree: 86%
 
 ---
 
@@ -40,7 +40,7 @@ Bevor Sie die AEM Developer Tools verwenden, müssen Sie Folgendes tun:
 
 Sobald die oben genannten [Voraussetzungen](#requirements) erfüllt sind, können Sie das Plug-in wie folgt installieren:
 
-1. Durchsuchen Sie die [AEM Developer Tools-Website](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
+1. Öffnen Sie die [Website AEM Entwicklertools](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. Kopieren Sie den **Installations-Link**.
 
@@ -196,7 +196,7 @@ Nach Abschluss des Vorgangs sollte das Paket auf Ihrer Instanz ausgeführt werde
 
 Wenn Sie ein Paket aus Ihrem Projekt neu erstellen möchten, klicken Sie mit der rechten Maustaste auf das `PROJECT.ui.apps` oder `PROJECT.ui.content` und wählen **Ausführen als** > **Maven-Installation**.
 
-Jetzt verfügen Sie über einen Zielordner, der Ihr Paket enthält (z. B. mit dem Namen `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+Sie haben jetzt einen Zielordner erstellt, in dem sich Ihr Paket befindet (z. B. `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
 ## Fehlerbehebung {#troubleshooting}
 
@@ -216,7 +216,7 @@ Eclipse lädt die erforderlichen Abhängigkeiten herunter. Das kann einen Moment
 
 Die offizielle Website „Apache Sling IDE tooling for Eclipse“ bietet Ihnen nützliche Informationen:
 
-* Das Benutzerhandbuch[&#128279;](https://sling.apache.org/documentation/development/ide-tooling.html) zu **Apache Sling IDE-Tooling für Eclipse** führt Sie durch die allgemeinen Konzepte, Server-Integrationen und Bereitstellungsfunktionen, die von AEM Developer Tools unterstützt werden.
+* Das Benutzerhandbuch](https://sling.apache.org/documentation/development/ide-tooling.html) zu [**Apache Sling IDE-Tooling für Eclipse** führt Sie durch die allgemeinen Konzepte, Server-Integrationen und Bereitstellungsfunktionen, die von AEM Developer Tools unterstützt werden.
 * Der [Abschnitt zur Fehlerbehebung](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * Die [Liste der bekannten Probleme](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 

@@ -2,10 +2,10 @@
 title: Responsives Layout
 description: AEM ermöglicht die Erstellung eines responsiven Layouts für Ihre Seiten
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1732'
-ht-degree: 82%
+source-wordcount: '1737'
+ht-degree: 79%
 
 ---
 
@@ -49,7 +49,7 @@ Je nach Projekt kann der Layout-Container als Standard-Absatzsystem für Ihre Se
 
 >[!TIP]
 >
->Adobe stellt eine [GitHub-Dokumentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) zum responsiven Layout als Referenz bereit. Diese kann Frontend-Entwicklern zur Verfügung gestellt werden, damit sie das AEM-Raster außerhalb von AEM verwenden können, um beispielsweise statische HTML-Modelle für künftige AEM Sites zu erstellen.
+>Adobe bietet [GitHub-Dokumentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) des responsiven Layouts als Referenz, der Frontend-Entwicklern zur Verfügung gestellt werden kann, damit sie das AEM Raster außerhalb von AEM verwenden können, z. B. bei der Erstellung statischer HTML-Modelle für eine zukünftige AEM Site.
 
 >[!NOTE]
 >
@@ -149,7 +149,7 @@ Wie bei anderen Komponenten können Sie einen Layout-Container auswählen und da
 >
 >Da ein Layout-Container ein Absatzsystem ist, werden beim Löschen der Komponente sowohl das Layout-Raster als auch alle Komponenten (und deren Inhalt) gelöscht, die sich im Container befinden.
 
-1. Wenn Sie den Mauszeiger über den Rasterplatzhalter halten oder darauf tippen, wird das Aktionsmenü angezeigt.
+1. Wenn Sie mit der Maus auf den Rasterplatzhalter zeigen oder diesen auswählen, wird das Aktionsmenü angezeigt.
 
    ![Zum Layout-Container hinzufügen](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 
@@ -210,7 +210,7 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster ausführen:
 
      ![Schaltfläche „Übergeordnet“](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-   * **Verborgene Komponenten einblenden**: Ermöglicht das Einblenden aller oder einzelner Komponenten. Die Zahl gibt an, wie viele verborgene Komponenten es jeweils gibt. Der Zähler zeigt an, wie viele Komponenten ausgeblendet sind.
+   * **Ausgeblendete Komponenten anzeigen**: Blendet alle oder einzelne Komponenten ein. Die Zahl gibt an, wie viele ausgeblendete Komponenten es derzeit gibt. Der Zähler zeigt an, wie viele Komponenten ausgeblendet sind.
 
      ![Schaltfläche „Verborgene Komponenten einblenden“](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 

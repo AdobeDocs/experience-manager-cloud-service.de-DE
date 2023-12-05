@@ -3,10 +3,10 @@ title: Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: 667cac9153947d1c236ff1117fc7200883416d8d
 workflow-type: tm+mt
-source-wordcount: '1752'
-ht-degree: 100%
+source-wordcount: '1754'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ In diesen Beispielabfragen wird das Erstellen von Abfragen zusammen mit Beispiel
 >
 >Sie können auf den Abfrage-Editor wie folgt zugreifen:
 >
->* **Tools** > **Allgemein** > **GraphQL-Abfrage-Editor**
+>* **Instrumente** > **Allgemein** > **GraphQL Query Editor**
 >* direkt, zum Beispiel: `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
@@ -362,7 +362,7 @@ Wenn Sie eine Variante mit dem Namen „Berlin Centre“ (`berlin_centre`) für 
 }
 ```
 
-### Beispielabfrage – Namen aller Städte Als Städtereisen markiert {#sample-names-all-cities-tagged-city-breaks}
+### Beispielabfrage - Namen aller Städte, die als Stadtumbrüche gekennzeichnet sind {#sample-names-all-cities-tagged-city-breaks}
 
 Wenn Sie:
 

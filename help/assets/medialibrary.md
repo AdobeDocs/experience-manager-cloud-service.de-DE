@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '594'
-ht-degree: 100%
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+workflow-type: tm+mt
+source-wordcount: '578'
+ht-degree: 95%
 
 ---
 
@@ -94,7 +94,7 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 >
 >Viele erweiterte DAM-Nutzungsszenarien werden von [!DNL Experience Manager Assets] erfüllt. Die Media Library-Lizenz berechtigt Sie nur dazu, die aufgelisteten Nutzungsszenarien mit Media Library zu erfüllen. Wenn ein Anwendungsfall nicht aufgeführt ist, wenden Sie ihn nicht mit der Media Library-Lizenz an. Wenn Sie Fragen haben, wenden Sie sich bitte an den Support.
 
-Beachten Sie, dass Sie ohne [!DNL Assets]-Lizenz keine Smart Tags, [!DNL Asset]-Link, [!DNL Asset]-Auswahl, Bulk-Tagging, modifizierte Asset-Workflows oder die Standard-[!DNL Adobe Experience Manager]-Benutzeroberfläche verwenden können, um auf die Medienbibliothek zuzugreifen.
+Sie können keine Smart-Tags verwenden. [!DNL Asset] -Link, [!DNL Asset] Auswahl, Massen-Tagging, Ändern von Asset-Workflows oder Standard [!DNL Adobe Experience Manager] Benutzeroberfläche für den Zugriff auf Media Library ohne [!DNL Assets] -Lizenz.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

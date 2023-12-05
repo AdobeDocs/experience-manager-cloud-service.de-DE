@@ -3,10 +3,10 @@ title: Persistente GraphQL-Abfragen
 description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service persistieren, um die Leistung zu optimieren. Persistente Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Client-Programme verbessert wird.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 98%
+source-wordcount: '1656'
+ht-degree: 97%
 
 ---
 
@@ -257,7 +257,7 @@ Aus dieser Abfrage kann unter einem Pfad `wknd/adventures-by-activity` eine pers
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-Beachten Sie Folgendes: `%3B` ist die UTF-8-Codierung für `;`, und `%3D` ist die Codierung für `=`. Die Abfragevariablen und alle Sonderzeichen müssen [ordnungsgemäß codiert sein](#encoding-query-url), damit die persistente Abfrage ausgeführt wird.
+UTF-8-Kodierung `%3B` ist für `;` und `%3D` ist die Kodierung für `=`. Die Abfragevariablen und alle Sonderzeichen müssen [ordnungsgemäß codiert sein](#encoding-query-url), damit die persistente Abfrage ausgeführt wird.
 
 ## Caching persistenter Abfragen {#caching-persisted-queries}
 
@@ -443,8 +443,8 @@ So erstellen Sie ein Paket:
 1. Geben Sie im Dialogfeld zur Paketdefinition unter **Allgemein** einen **Namen** wie „wknd-persistent-queries“ ein.
 1. Geben Sie eine Versionsnummer wie „1.0“ ein.
 1. Fügen Sie unter **Filter** einen neuen **Filter** hinzu. Wählen Sie über die Pfadsuche den Ordner `persistentQueries` unterhalb der Konfiguration aus. Für die Konfiguration von `wknd` lautet der vollständige Pfad beispielsweise `/conf/wknd/settings/graphql/persistentQueries`.
-1. Tippen Sie auf **Speichern**, um die neue Paketdefinition zu speichern und das Dialogfeld zu schließen.
-1. Tippen Sie auf **Build** in der erstellten Package-Definition.
+1. Auswählen **Speichern** , um die neue Paketdefinition zu speichern und das Dialogfeld zu schließen.
+1. Wählen Sie die **Build** in der erstellten Package-Definition.
 
 Nachdem das Paket erstellt wurde, können Sie Folgendes tun:
 

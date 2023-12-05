@@ -1,14 +1,14 @@
 ---
 title: Rotationssets
-description: Erfahren Sie, wie Sie in Dynamic Media mit Rotationssets arbeiten..
+description: Erfahren Sie, wie Sie mit Rotationssets in Dynamic Media arbeiten.
 contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 99%
+source-wordcount: '1956'
+ht-degree: 98%
 
 ---
 
@@ -144,7 +144,7 @@ Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/dynamic-media/limit
 
    * Wählen Sie oben links auf der Seite des Rotationsset-Editors **[!UICONTROL Asset hinzufügen]** aus.
 
-   * Wählen Sie in der Mitte des Rotationsset-Editors **[!UICONTROL Tippen, um die Asset-Auswahl zu öffnen]** aus.
+   * Wählen Sie in der Mitte des Rotationsset-Editors die Option **[!UICONTROL Auswählen zum Öffnen der Asset-Auswahl]**.
 
    Wählen Sie die gewünschten Assets, die Sie in Ihr Rotationsset aufnehmen möchten. Die ausgewählten Assets sind mit einem Häkchen versehen. Wenn Sie fertig sind, wählen Sie in der oberen rechten Ecke der Seite **[!UICONTROL Auswählen]**.
 
@@ -222,7 +222,6 @@ Wenn Sie das in Experience Manager als Miniatur verwendete Bild löschen und dur
    * Um ein Asset zu löschen, wählen Sie es aus und wählen Sie **[!UICONTROL Asset löschen]**.
    * Um eine Vorgabe anzuwenden, klicken Sie auf das Symbol „Vorgabe“ und wählen Sie eine Vorgabe aus.
    * Navigieren Sie zum Löschen eines ganzen Rotationssets zu diesem Rotationsset, wählen Sie es aus und wählen Sie **[!UICONTROL Löschen]**.
-
    >[!NOTE]
    >
    >Sie können die Bilder in einem Rotationsset bearbeiten, indem Sie zu diesem Set gehen, in der linken Seitenleiste **[!UICONTROL Mitglieder des Sets]** auswählen und dann auf das Stiftsymbol eines einzelnen Assets klicken, um das Bearbeitungsfenster zu öffnen.

@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente erstellen 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2266'
 ht-degree: 5%
 
 ---
@@ -92,7 +92,7 @@ Im linken Bereich können Sie Folgendes sehen:
 
 ### Links folgen {#follow-links}
 
-In verschiedenen Bereichen des Editors wird das Link-Symbol angezeigt. Dies kann verwendet werden, um das angezeigte Element zu öffnen, z. B. ein Inhaltsfragmentmodell, eine übergeordnete Referenz oder ein Fragment, auf das verwiesen wird:
+In verschiedenen Bereichen des Editors wird das Link-Symbol angezeigt. Dies kann zum Öffnen des angezeigten Elements verwendet werden, z. B. ein Inhaltsfragmentmodell, eine übergeordnete Referenz oder ein Fragment, auf das verwiesen wird:
 
 ![Inhaltsfragment-Editor - Link-Symbol](assets/cf-authoring-link-icon.png)
 
@@ -190,7 +190,7 @@ Felder, die als Nur-Text- oder Markdown-Felder definiert sind, haben ein einfach
 Für **[Mehrzeiliger Text](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** Felder, die als **Rich-Text**, stehen verschiedene Funktionen zur Verfügung:
 
 * Bearbeiten Sie den Inhalt:
-   * Rückgängig/Wiederholen
+   * Rückgängig/Wiederherstellen
    * Als Text einfügen/einfügen
    * Kopieren
    * Absatzformat auswählen
@@ -241,7 +241,7 @@ Dadurch wird das mehrzeilige Feld im Vollbildmodus geöffnet und:
 
 * Unterschiede sind farblich gekennzeichnet:
 
-   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt wurde
+   * Grün kennzeichnet hinzugefügten Inhalt (zur Variante)
    * Rot zeigt an, dass Inhalt entfernt wurde (aus der Variante)
    * Blau zeigt an, dass Text ersetzt wurde
 

@@ -2,10 +2,10 @@
 title: Testen mit Experience Audit
 description: Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die bereitgestellten Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 90%
+source-wordcount: '585'
+ht-degree: 82%
 
 ---
 
@@ -35,7 +35,7 @@ Experience Audit basiert auf Google Lighthouse, einem Open-Source-Tool von Googl
 
 >[!INFO]
 >
->Mit Wirkung vom 31. August 2023 wechselt Experience Audit zur Anzeige der Ergebnisse, die für die mobile Plattform spezifisch sind. Beachten Sie, dass die Leistungsmetriken für Mobilgeräte in der Regel niedriger sind als für Desktop-Computer. Daher sollten Sie eine Verschiebung der gemeldeten Leistung nach dieser Änderung erwarten.
+>Mit Wirkung vom 31. August 2023 wechselt Experience Audit zur Anzeige der Ergebnisse, die für die mobile Plattform spezifisch sind. Die Leistungsmetriken für Mobilgeräte werden in der Regel niedriger registriert als die für Desktopgeräte. Daher sollten Sie eine Verschiebung der gemeldeten Leistung nach dieser Änderung erwarten.
 
 >[!TIP]
 >
@@ -58,11 +58,11 @@ Für jeden Testtyp wie Leistung, Barrierefreiheit, SEO und Best Practices gibt e
 
 Die Änderungsmetrik kann einen der folgenden Werte haben.
 
-* **Positiver Wert** – Die Seite(n) hat sich seit der letzten Ausführung der Produktions-Pipeline beim ausgewählten Test verbessert.
+* **Positiver Wert** - Die Seiten wurden beim ausgewählten Test seit der letzten Ausführung der Produktions-Pipeline verbessert.
 
-* **Negative Werte** – Die Seite(n) hat sich seit seit der letzten Ausführung der Produktions-Pipeline beim ausgewählten Test verschlechtert.
+* **Negativer Wert** - die Seiten beim ausgewählten Test seit der letzten Ausführung der Produktions-Pipeline regressiv sind.
 
-* **Keine Änderung** – Die Seite(n) hat seit der letzten Ausführung der Produktions-Pipeline denselben Wert erreicht.
+* **Keine Änderung** - Die Seiten haben seit der letzten Ausführung der Produktions-Pipeline denselben Wert erreicht.
 
 * **K/A** – Es gab keinen vorherigen Wert zum Vergleich.
 

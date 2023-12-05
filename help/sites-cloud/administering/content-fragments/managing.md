@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre AEM Inhaltsfragmente über die Konsole u
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2622'
-ht-degree: 49%
+source-wordcount: '2617'
+ht-degree: 44%
 
 ---
 
@@ -31,7 +31,7 @@ Nach der Definition von [Inhaltsfragmentmodelle](#creating-a-content-model) Sie 
 >
 >Inhaltsfragmente können in folgenden Fällen verwendet werden:
 >
->* Für [Headless-Bereitstellung mithilfe von Inhaltsfragmenten mit GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md),
+>* für [Headless-Content-Bereitstellung mit Inhaltsfragmenten mit GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md),
 >* Beim Erstellung von Seiten. Siehe [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!NOTE]
@@ -58,7 +58,7 @@ Weitere Einzelheiten finden Sie unter:
 
 * [Suchen und Filtern in der Inhaltsfragmentkonsole](#filtering-fragments)
 
-* [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)In dieser Konsole stehen verschiedene Tastaturbefehle zur Verfügung
+* Auswahl von [Tastaturbefehle](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) sind in dieser Konsole verfügbar
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
    * Sie können einen bestimmten Zweig des Baums auswählen
    * Die Größe kann geändert werden, um verschachtelte Ordner anzuzeigen
 * Das Haupt-/rechte Bedienfeld – von hier aus können Sie:
-   * Eine Liste aller Inhaltsfragmente im ausgewählten Zweig des Baums anzeigen:
+   * Anzeigen der Liste aller Inhaltsfragmente im ausgewählten Zweig des Baums:
       * Inhaltsfragmente aus dem ausgewählten Ordner und alle untergeordneten Ordner werden angezeigt:
          * Der Speicherort wird durch die Breadcrumbs angegeben. Diese können auch verwendet werden, um den Speicherort zu ändern:
       * [Informationen zu den einzelnen Fragmenten werden angezeigt](#information-content-fragments)
@@ -223,10 +223,10 @@ So erstellen Sie ein Inhaltsfragment:
 
 1. Die **Neues Inhaltsfragment** wird geöffnet. Hier können Sie Folgendes angeben:
 
-   * **Standort** - wird automatisch mit dem aktuellen Speicherort ausgefüllt, Sie können jedoch bei Bedarf einen anderen Speicherort auswählen.
-   * **Inhaltsfragmentmodell** – Wählen Sie aus der Dropdown-Liste das Modell aus, das als Grundlage für das Fragment verwendet werden soll.
+   * **Standort** - Automatisch mit dem aktuellen Standort ausgefüllt, Sie können jedoch bei Bedarf einen anderen Ort auswählen.
+   * **Inhaltsfragmentmodell** - Wählen Sie aus der Dropdown-Liste das Modell aus, das als Grundlage für das Fragment verwendet werden soll.
    * **Titel**
-   * **Name** - wird basierend auf der Variablen **Titel**, kann aber bei Bedarf bearbeitet werden
+   * **Name** - basierend auf der Variablen **Titel**, Sie können sie jedoch bei Bedarf bearbeiten.
    * **Beschreibung**
 
    ![Dialogfeld „Neues Inhaltsfragment“](assets/cf-managing-new-cf-dialog.png)
@@ -293,7 +293,7 @@ Sie können Ihre Inhaltsfragmente hier veröffentlichen:
 
   >[!CAUTION]
   >
-  >Das Veröffentlichen von Inhaltsfragmenten im **Vorschau-Service** ist nur über die Inhaltsfragmentkonsole mithilfe der Aktion **Veröffentlichen** verfügbar.
+  >Veröffentlichen von Inhaltsfragmenten in der **Vorschaufunktion** ist nur über die Konsole &quot;Inhaltsfragmente&quot;verfügbar. Verwenden Sie die **Veröffentlichen** Aktion.
 
   >[!NOTE]
   >
@@ -332,7 +332,7 @@ Nach Auswahl der **Veröffentlichen** Aktion:
 
    >[!NOTE]
    >
-   >Bei Bedarf müssen Sie die Verweise auf die Veröffentlichung angeben. Standardmäßig werden Verweise auch im Vorschau-Service veröffentlicht, um sicherzustellen, dass keine Brüche im Inhalt vorhanden sind.
+   >Bei Bedarf müssen Sie die Verweise auf die Veröffentlichung angeben. Standardmäßig werden Verweise auch im Vorschaudienst veröffentlicht, um sicherzustellen, dass der Inhalt nicht umbrochen wird.
 
 1. Bestätigen Sie die Veröffentlichungsaktion.
 

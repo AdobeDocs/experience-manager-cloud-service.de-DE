@@ -5,16 +5,16 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 64%
+source-wordcount: '761'
+ht-degree: 54%
 
 ---
 
 # Inline-Formatierung von Komponenten adaptiver Formulare {#inline-styling-of-adaptive-form-components}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/creating-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -27,8 +27,8 @@ Sie können das allgemeine Erscheinungsbild und Design eines adaptiven Formulars
 
 Hinzufügen von Inline-Stilen zu einer Komponente:
 
-1. Öffnen Sie das Formular im Formular-Editor und ändern Sie den Modus in den Formatierungsmodus. Um den Stilmodus zu aktivieren, tippen Sie in der Symbolleiste der Seite auf ![&#128279;](assets/Smock_ChevronDown.svg)Arbeitsfläche-Dropdown > **[!UICONTROL Stil]**.
-1. Wählen Sie eine Komponente auf der Seite aus und tippen Sie auf die Schaltfläche „Bearbeiten“ ![Bearbeiten-Schaltfläche](assets/edit.svg). Die Stileigenschaften werden in der Seitenleiste geöffnet.
+1. Öffnen Sie das Formular im Formular-Editor und ändern Sie den Modus in den Formatierungsmodus. Um den Stilmodus zu ändern, wählen Sie in der Seitensymbolleiste die Option ![Arbeitsfläche-Dropdown](assets/Smock_ChevronDown.svg) > **[!UICONTROL Stil]**.
+1. Wählen Sie eine Komponente auf der Seite aus und klicken Sie auf die Schaltfläche &quot;Bearbeiten&quot; ![edit-button](assets/edit.svg). Die Stileigenschaften werden in der Seitenleiste geöffnet.
 
    Sie können auch Komponenten aus der Formularhierarchie in der Seitenleiste auswählen. Die Hierarchie des Formulars ist als Formularobjekte in der Seitenleiste verfügbar.
 
@@ -46,7 +46,7 @@ Hinzufügen von Inline-Stilen zu einer Komponente:
    * [!UICONTROL Erweitert] (Ermöglicht das Schreiben benutzerdefinierten CSS für die Komponente)
 
 1. Ebenso können Sie Stile auf andere Teile einer Komponente wie [!UICONTROL Widget], [!UICONTROL Beschriftung] und [!UICONTROL Hilfe] anwenden.
-1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Änderungen zu bestätigen, oder auf **[!UICONTROL Abbrechen]**, um die Änderungen zu verwerfen.
+1. Auswählen **[!UICONTROL Fertig]** zur Bestätigung der Änderungen oder **[!UICONTROL Abbrechen]** , um die Änderungen zu verwerfen.
 
 ## Beispiel: Inline-Formatvorlagen für eine Feldkomponente {#example-inline-styles-for-a-field-component}
 
@@ -111,9 +111,9 @@ Mit den oben beschriebenen Schritten können Sie andere Komponenten wie Bedienfe
 
 ## Kopieren und Einfügen von Stilen {#copy-paste-styles}
 
-Sie können einen Stil auch von einer Komponente kopieren und in eine andere Komponente in einem adaptiven Formular einfügen. Tippen Sie im Modus **[!UICONTROL Stil]** auf die Komponente und dann auf das Symbol „Kopieren“ ![Kopieren](assets/property-copy-icon.svg).
+Sie können einen Stil auch von einer Komponente kopieren und in eine andere Komponente in einem adaptiven Formular einfügen. Im **[!UICONTROL Stil]** -Modus wählen Sie die Komponente aus und klicken Sie auf das Symbol Kopieren . ![Kopieren](assets/property-copy-icon.svg).
 
-Tippen Sie auf die andere Komponente desselben Typs und dann auf das Symbol „Einfügen“ ![Einfügen](assets/Smock_Paste_18_N.svg), um den kopierten Stil einzufügen. Sie können auch auf das Symbol „Stil entfernen“ ![Stil entfernen](assets/clear-style-icon.svg) tippen, um den angewendeten Stil zu entfernen.
+Wählen Sie die andere Komponente desselben Typs aus und klicken Sie auf das Symbol Einfügen . ![Kopieren](assets/Smock_Paste_18_N.svg) , um den kopierten Stil einzufügen. Sie können auch das Symbol Stil löschen auswählen ![Kopieren](assets/clear-style-icon.svg) , um den angewendeten Stil zu löschen.
 
 ## Stile für verschiedene Zustände einer Komponente festlegen {#set-styles-for-states}
 
@@ -121,15 +121,15 @@ Sie können Stile für verschiedene Statuszustände eines Komponententyps festle
 
 So definieren Sie die Formatierung für einen Status einer Komponente:
 
-1. Tippen Sie im Modus **[!UICONTROL Stil]** auf die Komponente und dann auf das Symbol „Bearbeiten“ ![Bearbeiten](assets/Smock_Edit_18_N.svg).
+1. Im **[!UICONTROL Stil]** -Modus wählen Sie die Komponente aus und klicken Sie auf das Symbol Bearbeiten . ![Bearbeiten](assets/Smock_Edit_18_N.svg).
 
 1. Wählen Sie mit der Dropdownliste **[!UICONTROL Status]** den Status der Komponente aus.
 
    ![Status auswählen](assets/select-state.png)
 
-1. Definieren Sie die Formatierung für den ausgewählten Status der Komponente und tippen Sie auf ![Speichern](assets/save_icon.svg), um die Eigenschaften zu speichern.
+1. Definieren Sie den Stil für den ausgewählten Status der Komponente und wählen Sie ![Speichern](assets/save_icon.svg) , um die Eigenschaften zu speichern.
 
-Sie können die Statuszustände „Erfolg“ und „Fehler“ auch simulieren. Tippen Sie auf das Symbol „Erweitern“, um die Optionen **[!UICONTROL Erfolg simulieren]** und **[!UICONTROL Fehler simulieren]** anzuzeigen.
+Sie können die Statuszustände „Erfolg“ und „Fehler“ auch simulieren. Wählen Sie das Symbol Erweitern aus, um die **[!UICONTROL Erfolg simulieren]** und **[!UICONTROL Fehler simulieren]** Optionen.
 
 ![Status simulieren](assets/simulate-states.png)
 

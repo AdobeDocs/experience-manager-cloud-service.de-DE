@@ -1,14 +1,14 @@
 ---
 title: Bildsets
-description: Erfahren Sie, wie Sie in Dynamic Media mit Bildsets arbeiten..
+description: Erfahren Sie, wie Sie mit Bildsets in Dynamic Media arbeiten.
 contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 99%
+source-wordcount: '2145'
+ht-degree: 97%
 
 ---
 
@@ -148,7 +148,7 @@ Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/dynamic-media/limit
 **So erstellen Sie Bildsets:**
 
 1. Klicken Sie in Adobe Experience Manager auf das Experience Manager-Logo, um auf die Konsole für die globale Navigation zuzugreifen.
-1. Tippen Sie auf **[!UICONTROL Navigation]** > **[!UICONTROL Assets]**. Gehen Sie zu dem Verzeichnis, in dem Sie ein Bildset erstellen möchten, und gehen Sie dann zu **[!UICONTROL Erstellen]** > **[!UICONTROL Bildset]**, um die Seite mit dem Bildset-Editor zu öffnen.
+1. Auswählen **[!UICONTROL Navigation]** > **[!UICONTROL Assets]**. Gehen Sie zu dem Verzeichnis, in dem Sie ein Bildset erstellen möchten, und gehen Sie dann zu **[!UICONTROL Erstellen]** > **[!UICONTROL Bildset]**, um die Seite mit dem Bildset-Editor zu öffnen.
 
    Sie können das Set auch in einem Ordner erstellen, der die gewünschten Assets enthält.
 
@@ -164,7 +164,7 @@ Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/dynamic-media/limit
 
    * Klicken Sie in der Mitte des Bildset-Editors auf **[!UICONTROL Hier tippen, um die Asset-Auswahl zu öffnen]**.
 
-   Tippen Sie, um die gewünschten Assets für das Bildset auszuwählen. Die ausgewählten Assets sind mit einem Häkchen versehen. Wenn Sie die Assets ausgewählt haben, klicken Sie oben rechts auf **[!UICONTROL Auswählen]**.
+   Wählen Sie diese Option, um Assets auszuwählen, die Sie in das Bildset aufnehmen möchten. Die ausgewählten Assets sind mit einem Häkchen versehen. Wenn Sie die Assets ausgewählt haben, klicken Sie oben rechts auf **[!UICONTROL Auswählen]**.
 
    Mit der Asset-Auswahl können Sie nach Assets suchen, indem Sie einen Suchbegriff eingeben und die **[!UICONTROL Eingabetaste]** drücken. Sie können auch Filter anwenden, um Ihre Suchergebnisse genauer abzustimmen. Sie können nach Pfad, Sammlung, Dateityp und Tag filtern. Wählen Sie den Filter und klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Filter]**. Ändern Sie die Ansicht, indem Sie auf das Symbol „Ansicht“ klicken und dann **[!UICONTROL Spaltenansicht]**, **[!UICONTROL Kartenansicht]** oder **[!UICONTROL Listenansicht]** wählen.
 
@@ -236,14 +236,13 @@ Sie können mehrere Bearbeitungsaufgaben für Bildsets ausführen, z. B. die fo
 
    * Zeigen Sie mit der Maus auf ein Bildset-Asset und klicken Sie auf **[!UICONTROL Bearbeiten]** (Stiftsymbol).
    * Zeigen Sie mit der Maus auf ein Bildset-Asset und klicken Sie auf **[!UICONTROL Auswählen]** (Häkchensymbol) und dann auf **[!UICONTROL Bearbeiten]** in der Symbolleiste.
-   * Tippen Sie auf ein Bildset-Asset und dann auf **[!UICONTROL Bearbeiten]** (Stiftsymbol) in der Symbolleiste.
+   * Wählen Sie ein Bildset-Asset aus und wählen Sie dann **[!UICONTROL Bearbeiten]** (Bleistiftsymbol) in der Symbolleiste.
 
 1. Führen Sie eine der folgenden Aktionen aus, um die Bilder im Bildset zu bearbeiten:
 
    * Um Assets neu zu ordnen, ziehen Sie ein Bild an eine neue Position (wählen Sie zum Verschieben von Elementen das Symbol zum Neuanordnen aus).
    * Um Elemente in auf- oder absteigender Reihenfolge zu sortieren, klicken Sie auf die Spaltenüberschrift.
    * Um ein Asset hinzuzufügen oder ein vorhandenes Asset zu aktualisieren, klicken Sie auf **[!UICONTROL Asset hinzufügen]**. Gehen Sie zu einem Asset, wählen Sie es aus und klicken Sie oben rechts auf **[!UICONTROL Auswählen]**.
-
      >[!NOTE]
      >
      >Wenn Sie das in Experience Manager als Miniatur verwendete Bild löschen und durch ein anderes ersetzen, wird das Original-Asset weiterhin angezeigt.
@@ -256,7 +255,7 @@ Sie können mehrere Bearbeitungsaufgaben für Bildsets ausführen, z. B. die fo
    >
    >Sie können die Bilder in einem Bildset bearbeiten. Gehen Sie zum Bildset und klicken Sie in der linken Leiste auf **[!UICONTROL Mitglieder des Sets]**. Um das Bearbeitungsfenster zu öffnen, klicken Sie auf das Stiftsymbol eines Assets.
 
-1. Tippen Sie auf **[!UICONTROL Speichern]**, wenn Sie die Bearbeitung abgeschlossen haben.
+1. Klicken Sie auf **[!UICONTROL Speichern]**, wenn Sie mit der Bearbeitung fertig sind.
 
 ## Zeigen Sie Bildsets in einer Vorschau an {#previewing-image-sets}
 

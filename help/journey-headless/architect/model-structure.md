@@ -2,10 +2,10 @@
 title: Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM
 description: Erfahren Sie mehr über die Konzepte und Methoden der Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmentmodellen.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -28,7 +28,7 @@ Dieser Artikel baut auf diesen auf, damit Sie verstehen, wie Sie Ihre eigenen In
 <!--
 ## Enabling Content Fragment Models {#enabling-content-fragment-models}
 
-At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
+At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools > General > Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
 
 ![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cfm-conf-01.png)
 
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Erstellen von Inhaltsfragmentmodellen {#creating-content-fragment-models}
 
-Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur definiert werden. Dies ist unter **Tools** -> **Allgemein** -> **Inhaltsfragmenmodelle** möglich.
+Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur definiert werden. Dies kann unter **Instrumente** > **Allgemein** > **Inhaltsfragmentmodelle**.
 
 ![Inhaltsfragmentmodelle in Tools](assets/cfm-tools.png)
 

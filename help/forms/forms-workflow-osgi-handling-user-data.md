@@ -5,10 +5,10 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 96%
+source-wordcount: '994'
+ht-degree: 95%
 
 ---
 
@@ -137,7 +137,7 @@ Wenn Sie AEM-Admin sind, können Sie Benutzerdaten aus Workflow-Instanzen lösch
 
    1. Navigieren Sie zu `https://'[server]:[port]'/aem/start.html` und melden Sie sich als Administrator an.
    1. Navigieren Sie zu **[!UICONTROL Tools > Workflow > Instanzen]**.
-   1. Wählen Sie relevante Workflow-Instanzen für die Benutzerin bzw. den Benutzer aus und tippen Sie auf **[!UICONTROL Beenden]**, um laufende Instanzen zu beenden.
+   1. Wählen Sie relevante Workflow-Instanzen für den Benutzer aus und wählen Sie **[!UICONTROL Beenden]** , um laufende Instanzen zu beenden.
 
       Weitere Informationen zum Arbeiten mit Workflow-Instanzen finden Sie unter [Verwalten von Workflow-Instanzen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html?lang=de#authoring).
 
@@ -161,4 +161,4 @@ Sie können APIs auch verwenden, um auf Knoten und Eigenschaften zuzugreifen und
 
 >[!MORELIKETHIS]
 >
->* [AEM Forms-Workflow für die Automatisierung von Geschäftsprozessen verwenden](/help/forms/aem-forms-workflow.md)
+>* [Verwenden eines AEM Forms-Workflows für die Automatisierung von Geschäftsprozessen](/help/forms/aem-forms-workflow.md)

@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 93%
+source-wordcount: '957'
+ht-degree: 87%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 93%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html?lang=de) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 ![data-integeration](assets/data-integeration.png)
@@ -100,7 +100,6 @@ Führen Sie die folgenden Schritte aus, um einen OAuth-Client auf einem AD FS (
 
    * `Client-ID` eine Client-ID, die Sie mit einem beliebigen GUID-Generator generieren können.
    * `redirect-uri` die URL zu dem [!DNL Microsoft Dynamics]-OData-Cloud Service auf [!DNL Experience Manager Forms]. Der mit [!DNL Experience Manager Forms] installierte standardmäßige Cloud Service wird unter der folgenden URL bereitgestellt:
-
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Führen Sie den folgenden Befehl aus, um Zugriff auf den AD FS-Computer zu gewähren:
@@ -123,11 +122,11 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
 >
 >Eine schrittweise Anleitung zum Konfigurieren von [!DNL Microsoft Dynamics 365], online oder On-Premise, finden Sie unter [[!DNL Microsoft Dynamics] OData-Konfiguration](ms-dynamics-odata-configuration.md).
 
-1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tippen Sie, um den Ordner auszuwählen, in dem Sie eine Cloud-Konfiguration erstellen möchten.
+1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Data Sources]**. Wählen Sie aus, um den Ordner auszuwählen, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
    Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](#cloud-folder).
 
-1. Tippen Sie auf **[!UICONTROL Erstellen]**, um den **[!UICONTROL Assistenten zum Erstellen der Datenquellkonfiguration]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL OData-Service]** aus der **[!UICONTROL Dropdown-Liste „Service-Typ“]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration und tippen Sie auf **[!UICONTROL Weiter]**.
+1. Auswählen **[!UICONTROL Erstellen]** , um die **[!UICONTROL Assistent zum Erstellen der Datenquellenkonfiguration]**. Geben Sie einen Namen und optional einen Titel für die Konfiguration an, wählen Sie **[!UICONTROL OData-Dienst]** aus dem **[!UICONTROL Diensttyp]** in der Dropdown-Liste, optional ein Miniaturbild für die Konfiguration durchsuchen und auswählen und **[!UICONTROL Nächste]**.
 Auf der Registerkarte **[!UICONTROL Authentifizierungseinstellungen]**:
 
    1. Geben Sie den Wert für das Feld **[!UICONTROL Service-Stamm]** ein. Wechseln Sie zur Dynamics-Instanz und navigieren Sie zu **[!UICONTROL Entwickler-Ressourcen]**, um den Wert für das Feld „Service-Stamm“ anzuzeigen. Beispiel: https://&lt;tenant-name>/api/data/v9.1/

@@ -3,10 +3,10 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4923'
-ht-degree: 94%
+source-wordcount: '4863'
+ht-degree: 92%
 
 ---
 
@@ -115,7 +115,7 @@ Die [persistenten Abfragen](/help/headless/graphql-api/persisted-queries.md) sin
 
 GraphQL-Abfragen über POST werden nicht empfohlen, da sie nicht zwischengespeichert werden. Daher ist der Dispatcher auf einer Standardinstanz so konfiguriert, dass er solche Abfragen blockiert.
 
-GraphQL unterstützt zwar auch GET-Anfragen, diese können jedoch Einschränkungen unterliegen (z. B. die Länge der URL), die durch die Verwendung persistenter Abfragen vermieden werden können.
+GraphQL unterstützt zwar auch GET-Anfragen, diese können jedoch Einschränkungen (z. B. die Länge der URL) erreichen, die durch die Verwendung persistenter Abfragen vermieden werden können.
 
 Siehe [Zwischenspeichern persistenter Abfragen aktivieren](/help/headless/deployment/dispatcher-caching.md) für weitere Informationen.
 
@@ -253,7 +253,7 @@ GraphQL für AEM unterstützt eine Liste von Typen. Alle unterstützten Datentyp
 | Aufzählung | `String` | Wird verwendet, um eine Option aus einer Liste von Optionen anzuzeigen, die bei der Modellerstellung definiert wurde |
 | Tags | `[String]` | Wird verwendet, um eine Liste von Zeichenfolgen anzuzeigen, die in AEM verwendete Tags darstellen |
 | Inhaltsreferenz | `String`, `[String]` | Wird verwendet, um den Pfad zu einem anderen Asset in AEM anzuzeigen |
-| Fragmentreferenz |  *Ein Modelltyp* <br><br>Einzelnes Feld: `Model`: Modelltyp, direkt referenziert <br><br>Multifeld, mit einem referenzierten Typ: `[Model]`: Array vom Typ `Model`, direkt referenziert von Array <br><br>Multifeld, mit mehreren referenzierten Typen: `[AllFragmentModels]`: Array aller Modelltypen, referenziert von Array mit Vereinigungstyp  |  Wird verwendet, um auf ein oder mehrere Inhaltsfragmente bestimmter Modelltypen zu verweisen, die beim Erstellen des Modells definiert wurden |
+| Fragmentreferenz |  *Ein Modelltyp* <br><br>Einzelnes Feld: `Model` - Modelltyp, direkt referenziert <br><br>Multifield mit einem referenzierten Typ: `[Model]` - Array des Typs `Model`, die direkt aus dem Array referenziert wird <br><br>Multifield mit mehreren referenzierten Typen: `[AllFragmentModels]` - Array aller Modelltypen, referenziert aus Array mit Vereinigungstyp |  Wird verwendet, um auf ein oder mehrere Inhaltsfragmente bestimmter Modelltypen zu verweisen, die beim Erstellen des Modells definiert wurden |
 
 {style="table-layout:auto"}
 
@@ -519,7 +519,7 @@ Eine Filterdefinition (als das `filter`-Argument an eine Abfrage übergeben) ent
 * Jede Unterdefinition enthält das `_expressions`-Array, das die Ausdrucksgruppe bereitstellt, und das `_logOp`-Feld, das den logischen Operator definiert, mit dem die Ausdrücke kombiniert werden sollten
 * Jeder Ausdruck wird durch den Wert (`value`-Feld) und den Operator (`_operator`-Feld) definiert, mit dem der Inhalt eines Felds verglichen werden soll
 
-Beachten Sie, dass Sie `_logOp` auslassen können, falls Sie Elemente mit `AND` und `_operator` verbinden möchten, um auf Gleichheit zu prüfen, da dies die Standardwerte sind.
+Sie können es weglassen `_logOp` , wenn Sie Elemente mit `AND` und `_operator` , wenn Sie nach Gleichheit suchen möchten, da dies die Standardwerte sind.
 
 Das folgende Beispiel zeigt eine vollständige Abfrage, die alle Personen filtert, die über eine `lastName` von `Provo` verfügen oder `sjö` enthalten, ohne die Groß-/Kleinschreibung zu beachten:
 
@@ -1006,7 +1006,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
    * Und Operationen:
 
-      * `_operator`: bestimmte Operatoren anwenden; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
+      * `_operator` : Anwendung spezifischer Operatoren; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
          * Siehe [Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)
          * Siehe [Beispielabfrage – Alle Abenteuer, bei denen `_path` mit einem bestimmten Präfix beginnt](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
 

@@ -2,16 +2,16 @@
 title: Wie kann man einem adaptiven Formular Fußnote hinzufügen?
 description: Verwenden Sie den Rich-Text-Editor (RTE) für Fußnoten in einem adaptiven Formular.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 78%
+source-wordcount: '429'
+ht-degree: 89%
 
 ---
 
 # Fußzeilenkomponente {#footnotecomponent}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/creating-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
 
 Eine **[!UICONTROL Fußnote]** ist eine zusätzliche Information oder Anmerkung, die am Ende der Seite erscheint. Eine [!UICONTROL Fußnote] umfasst die Anmerkungen, auf die in Ihrem Text durch hochgestellte Zahlen verwiesen wird.
 
@@ -33,7 +33,7 @@ In adaptiven Formularen wird eine [!UICONTROL Fußnote] verwendet, um Informatio
 Gehen Sie wie folgt vor, um Fußnoten in adaptiven Formularen hinzuzufügen:
 1. Öffnen Sie ein adaptives Formular im **Bearbeitungsmodus**.
 1. Ziehen Sie im Komponenten-Browser per Drag &amp; Drop die Komponente **[!UICONTROL Text]** auf das adaptive Formular.
-1. Wählen Sie die **[!UICONTROL Text]** Komponente, die Sie hinzugefügt haben, und tippen Sie ![cmppr](assets/configure-icon.svg) , um die Eigenschaften zu bearbeiten.
+1. Wählen Sie die **[!UICONTROL Text]** Komponente, die Sie hinzugefügt haben und auswählen ![cmppr](assets/configure-icon.svg) , um die Eigenschaften zu bearbeiten.
 
    ![Fußnote in adaptiven Formularen](/help/forms/assets/footnote_rte.png)
 

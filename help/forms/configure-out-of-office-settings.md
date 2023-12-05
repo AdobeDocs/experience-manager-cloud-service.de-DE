@@ -2,10 +2,10 @@
 title: Konfigurieren von Abwesenheitseinstellungen in AEM Forms
 description: Delegieren Sie Aufgaben während Ihrer Abwesenheit oder wenn Sie nicht im Büro sind, um eine nahtlose Workflow-Ausführung zu ermöglichen.
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
-workflow-type: ht
-source-wordcount: '878'
-ht-degree: 100%
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+workflow-type: tm+mt
+source-wordcount: '873'
+ht-degree: 91%
 
 ---
 
@@ -37,17 +37,17 @@ Sie können die Elementzuweisung auf der Basis der Workflow-Modelle differenzier
 
 Führen Sie folgende Schritte aus, um die Abwesenheitseinstellung für Ihr Konto zu aktivieren und Ihre Posteingangselemente an einen anderen Benutzer zu delegieren:
 
-1. Melden Sie sich bei Ihrer AEM-Instanz an. Tippen Sie auf das Symbol ![Posteingang](assets/bell.svg) und dann auf **[!UICONTROL Alle anzeigen]**. Eine Liste Ihrer Posteingangselemente wird angezeigt.
-1. Tippen Sie auf das Symbol ![Listenansicht](assets/viewlist.svg) oder ![Kalender](assets/calendar.svg) neben der Schaltfläche **[!UICONTROL Erstellen]** und dann auf **[!UICONTROL Einstellungen]**. Das Dialogfeld „Einstellungen“ wird angezeigt.
+1. Melden Sie sich bei Ihrer AEM-Instanz an. Wählen Sie die ![Posteingang](assets/bell.svg) Symbol und wählen Sie **[!UICONTROL Alle anzeigen]**. Eine Liste Ihrer Posteingangselemente wird angezeigt.
+1. Wählen Sie die ![Ansichtauswahl](assets/viewlist.svg) oder ![Ansichtauswahl](assets/calendar.svg) Symbol neben **[!UICONTROL Erstellen]** Schaltfläche und wählen Sie **[!UICONTROL Einstellungen]**. Das Dialogfeld „Einstellungen“ wird angezeigt.
 1. Öffnen Sie im Dialogfeld „Einstellungen“ die Registerkarte **[!UICONTROL Abwesenheit]**.
-1. Tippen Sie auf die Schaltfläche **[!UICONTROL Aktivieren/Deaktivieren]**, um die Abwesenheitseinstellung zu aktivieren.
+1. Wählen Sie die **[!UICONTROL Aktivieren/Deaktivieren]** -Schaltfläche, um die Abwesenheitseinstellung zu aktivieren.
 1. Geben Sie die Zeiten für **[!UICONTROL Startzeit]** und **[!UICONTROL Endzeit]** an. Die Elemente werden nur während des angegebenen Zeitraums delegiert. Lassen Sie das Feld **[!UICONTROL Ende]** leer, um Elemente auf unbestimmte Zeit zu übertragen.
 1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Meine Aufgaben während dieser Zeit weiterleiten]**. Wenn Sie die Option nicht auswählen und keine Bevollmächtigten angeben, werden Ihre Elemente nicht an andere Benutzende weitergeleitet. Obwohl Sie abwesend sind und die Einstellung aktiviert ist, bleiben alle Elemente in Ihrem Posteingang.
-1. Tippen Sie auf **[!UICONTROL Verantwortlichen hinzufügen]**. Geben Sie im Feld **[!UICONTROL Bevollmächtigter]** einen Benutzer an, an den die Elemente delegiert werden sollen. Bestimmen Sie das **[!UICONTROL Workflow-Modell]**, um Elemente an den ausgewählten Benutzer zu delegieren. Sie können mehrere Workflow-Modelle auswählen.
+1. Auswählen **[!UICONTROL Bevollmächtigten hinzufügen]**. Geben Sie im Feld **[!UICONTROL Bevollmächtigter]** einen Benutzer an, an den die Elemente delegiert werden sollen. Bestimmen Sie das **[!UICONTROL Workflow-Modell]**, um Elemente an den ausgewählten Benutzer zu delegieren. Sie können mehrere Workflow-Modelle auswählen.
 
    Wenn Sie einem bestimmten Benutzer alle Elemente unabhängig vom Workflow-Modell zuweisen möchten, wählen Sie in der Dropdown-Liste des Workflow-Modells die Option **[!UICONTROL Alle Workflows]**. <br>
 
-   Um einem bestimmten Benutzer Elemente für alle Workflow-Modelle mit Ausnahme einiger weniger zuzuweisen, wählen Sie **[!UICONTROL Alle Workflows]** in der Dropdown-Liste Workflow-Modell aus, tippen Sie auf **[!UICONTROL + Ausnahmen hinzufügen]** und geben Sie die Workflow-Modelle an, die ausgeschlossen werden sollen.
+   Um einem bestimmten Benutzer Elemente für alle Workflow-Modelle außer einigen zuzuweisen, wählen Sie **[!UICONTROL Alle Workflows]** Wählen Sie in der Dropdown-Liste Workflow-Modell die Option **[!UICONTROL + Ausnahmen hinzufügen]**und geben Sie die Workflow-Modelle an, die ausgeschlossen werden sollen.
    <br>
 
    Wiederholen Sie den Schritt, um weitere Empfänger hinzuzufügen. <br>
@@ -57,7 +57,7 @@ Führen Sie folgende Schritte aus, um die Abwesenheitseinstellung für Ihr Konto
    >Die Reihenfolge der Empfänger ist wichtig. Wenn einem Benutzer, der die Abwesenheitseinstellung aktiviert hat, ein Element zugewiesen wird, wird das Element entsprechend der erstellten Empfängerliste weitergeleitet. Dabei gilt die Reihenfolge, in der die Empfänger hinzugefügt wurden. Erfüllt ein Element die Kriterien, wird es an die jeweilige Person weitergeleitet, ohne dass weitere Beauftragte auf der Liste geprüft werden.
 
 
-1. Tippen Sie auf **[!UICONTROL Speichern]**. Die Einstellung wird zum angegebenen Startzeitpunkt wirksam. Selbst wenn Sie sich während Ihrer Abwesenheit am System anmelden, gelten Sie erst wieder als anwesend, wenn Sie die Einstellungen ändern.
+1. Wählen Sie **[!UICONTROL Speichern]** aus. Die Einstellung wird zum angegebenen Startzeitpunkt wirksam. Selbst wenn Sie sich während Ihrer Abwesenheit am System anmelden, gelten Sie erst wieder als anwesend, wenn Sie die Einstellungen ändern.
 
 Nun werden alle während des Abwesenheitszeitraums empfangenen Elemente automatisch dem ausgewählten Empfänger zugewiesen.
 ![Abwesenheit](assets/out-of-office.png)

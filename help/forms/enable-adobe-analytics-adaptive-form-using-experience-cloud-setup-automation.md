@@ -3,10 +3,10 @@ title: Wie wird Adobe Analytics für ein adaptives Formular aktiviert?
 description: Experience Cloud Setup Automation hilft, Adobe Analytics mit einem adaptiven Formular zu verbinden, um Einblicke in Besucherinteraktionen und Interaktionen zu verfolgen.
 keywords: Aktivieren Sie Adobe Analytics für ein adaptives Formular mithilfe der Automatisierung des Experience Cloud-Setups, aktivieren Sie Adobe Analytics in Forms, Adobe Analytics in Adaptive Forms, Forms Analytics-Integration, Forms und Adobe Analytics
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: fa107ee89deb217ada2cfbcccb4602a7a6aff125
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 7%
+source-wordcount: '1555'
+ht-degree: 6%
 
 ---
 
@@ -93,7 +93,7 @@ Führen Sie die folgenden Schritte aus, um Adobe Analytics für Ihre adaptive Fo
 1. Erstellen Sie einen Konfigurationscontainer für Cloud Services:
    1. Wählen Sie **[!UICONTROL Tools > Allgemein > Konfigurationsbrowser]**.
    1. Wählen oder erstellen Sie einen Konfigurations-Container aus und aktivieren Sie den Ordner für **[!UICONTROL Cloud-Konfigurationen]**.
-   1. Tippen Sie auf **[!UICONTROL Speichern und schließen]**, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
+   1. Auswählen **[!UICONTROL Speichern und schließen]** , um die Konfiguration zu speichern und das Dialogfeld zu schließen.
 1. Wechseln Sie in Ihrer AEM-Instanz zu **[Forms]** >> **[Forms und Dokument]**.
 1. Wählen Sie **[!UICONTROL Formular]** >> **[!UICONTROL Eigenschaften]**, im **[!UICONTROL Konfigurations-Container]**, wählen Sie den Konfigurationscontainer aus, den Sie erstellt oder in der **[!UICONTROL Konfigurationsbrowser]** in Schritt 1.
 1. Wählen Sie das Aufgabenbedienfeld in der linken Leiste aus und klicken Sie auf **Einrichten von Analytics** und **Aktivieren von Adobe Analytics**.
@@ -210,7 +210,7 @@ Nachdem Sie Ihre Formular- und Sites-Regeln durch die oben genannten Schritte ge
 
 1. Klicks **Veröffentlichungsfluss** auf der linken Seite.
 1. Klicks **Bibliothek hinzufügen** und geben Sie den gewünschten Namen ein.
-1. Im **Umgebung** rechts in der Dropdown-Liste **development**.
+1. Im **Umgebung** rechts in der Dropdown-Liste auswählen **development**.
 1. Klicken Sie auf **Alle geänderten Ressourcen**.
 1. Klicks **Speichern und in Entwicklung erstellen**.
 
