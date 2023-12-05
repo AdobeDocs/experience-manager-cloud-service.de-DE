@@ -3,10 +3,10 @@ title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene
 keywords: Anleitung zum Auswählen einer Sendeaktion für ein adaptives Formular, Verbinden eines adaptiven Formulars mit einer Sharepoint-Liste, Verbinden eines adaptiven Formulars mit einer SharePoint-Dokumentbibliothek, Verbinden eines adaptiven Formulars mit einem Formulardatenmodell
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 4e5a730f59a7594085319435bfe1ea3a7368bfc2
 workflow-type: tm+mt
-source-wordcount: '4006'
-ht-degree: 90%
+source-wordcount: '4114'
+ht-degree: 87%
 
 ---
 
@@ -53,6 +53,7 @@ So wählen Sie eine Übermittlungsaktion aus und konfigurieren Sie für Ihr Form
    * [An OneDrive senden](#submit-to-onedrive)
    * [AEM-Workflow aufrufen](#invoke-an-aem-workflow)
    * [An Power Automate senden](#microsoft-power-automate)
+   * [Submit to Workfront Fusion](#workfront-fusion)
 
 ## E-Mail senden {#send-email}
 
@@ -432,6 +433,12 @@ Sie können ein adaptives Formular so konfigurieren, dass bei der Übermittlung 
 Der Editor für adaptive Formulare verfügt über die Übermittlungsaktion **Aufrufen eines Microsoft® Power Automate-Flusses** zum Senden von Daten, Anhängen und Datensatzdokumenten für adaptive Formulare an den Cloud-Fluss von Power Automate. Um mithilfe der Übermittlungsaktion erfasste Daten an Microsoft® Power Automate zu senden, [verbinden Sie Ihre Instanz von Forms as a Cloud Service mit Microsoft® Power Automate](forms-microsoft-power-automate-integration.md).
 
 Verwenden Sie nach erfolgreicher Konfiguration die Übermittlungsaktion [Microsoft® Power Automate-Fluss aufrufen](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action), um Daten an einen Power Automate-Fluss zu senden.
+
+## Submit to Workfront Fusion {#workfront-fusion}
+
+Sie können ein adaptives Formular so konfigurieren, dass bei der Übermittlung Daten an Workfront Fusion gesendet werden. Workfront Fusion ermöglicht die Automatisierung von Prozessen, sodass Benutzer sich auf neue Aufgaben konzentrieren können, anstatt dieselben Aufgaben immer wieder zu wiederholen. Es automatisiert sowohl einfache als auch komplexe Aufgaben, spart Zeit und gewährleistet eine konsistente Prozessausführung.
+
+Der adaptive Forms-Editor stellt die **Aufrufen eines Workfront Fusion-Szenarios** Übermittlungsaktion zum Senden von adaptiven Forms-Daten oder -Anhängen an ein Workfront Fusion-Szenario. Informationen zum Verwenden der Sendeaktion zum Senden erfasster Daten an ein Workfront Fusion-Szenario finden Sie unter [Senden eines adaptiven Formulars an Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
 
 ## Verwenden synchroner oder asynchroner Übermittlung {#use-synchronous-or-asynchronous-submission}
 
