@@ -1,7 +1,7 @@
 ---
-source-git-commit: c20f59770f4eb722d49a96952126993577bfd65e
+source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '205'
 ht-degree: 100%
 
 ---
@@ -14,12 +14,6 @@ ht-degree: 100%
 ## Erstellen von Edge Delivery Services {#edge-delivery-authoring}
 
 [!BADGE Klicken Sie hier, um AEM-Inhalte für Edge Delivery Services zu erstellen.]{type=Positive url="/help/edge/overview.md" tooltip="Erstellen von AEM-Inhalten für Edge Delivery Services"}
-
-## IMS-Unterstützung für das Zuweisen von Gruppen zu Profilen {#ims-group-profiles}
-
->[!NOTE]
->
->AEM unterstützt derzeit nicht die Zuweisung von Gruppen zu Profilen. Benutzer sollten stattdessen einzeln hinzugefügt werden.
 
 ## WAF Config – eingeschränkte Freigabe {#waf-limited-release}
 
