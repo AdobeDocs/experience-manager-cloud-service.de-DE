@@ -3,10 +3,10 @@ title: Integration von AEM und Adobe Commerce mithilfe des Commerce Integration 
 description: AEM und Adobe Commerce werden über das Commerce Integration Framework (CIF) nahtlos integriert. CIF ermöglicht AEM den Zugriff auf eine Adobe Commerce-Instanz und die Kommunikation mit Adobe Commerce über GraphQL. Darüber hinaus können AEM-Autoren Produkt- und Kategorieauswahlen sowie die Produktkonsole verwenden, um Produkt- und Kategoriedaten zu durchsuchen, die bei Bedarf aus Adobe Commerce abgerufen werden. Darüber hinaus bietet CIF eine vordefinierte Storefront, die Geschäftsprojekte beschleunigen kann.
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6d63328ca17a00e0369c57714409f3f448cb311f
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 97%
+source-wordcount: '439'
+ht-degree: 87%
 
 ---
 
@@ -49,3 +49,8 @@ Die Geschäftslogik und Backend-Kommunikation mit Adobe Commerce für die AEM CI
 >Die Seite [Anpassen von AEM CIF-Kernkomponenten](../customizing/customize-cif-components.md) enthält ein detailliertes Beispiel und Best Practices zur Anpassung von CIF-Kernkomponenten.
 
 Innerhalb von Projekten können AEM CIF-Kernkomponenten und benutzerdefinierte Projektkomponenten den konfigurierten Client für einen mit einer AEM-Seite verknüpften Adobe Commerce-Store über eine Sling-kontextsensible Konfiguration abrufen.
+
+## Suchen {#search}
+
+CIF bietet eine vordefinierte [Kernkomponente der Suche](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) , das ein Server-seitiges gerendertes Sucherlebnis basierend auf [Commerce GraphQL-API](https://developer.adobe.com/commerce/webapi/graphql/). Commerce-Kunden haben die Möglichkeit, [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) anstatt. Folgen Sie diesen [link](/help/commerce-cloud/integrating/live-search-plp.md) , um mehr über die Integration CIF - Live-Suche zu erfahren.
+
