@@ -3,9 +3,9 @@ title: Integration von Adobe Workfront Fusion mit AEM Forms Submission
 description: Mit Adobe Workfront Fusion können Sie sich auf neue Aufgaben konzentrieren, anstatt sich auf sich wiederholende Aufgaben zu konzentrieren. Sie können Adobe Workfront Fusion über die Formularübermittlung mit einem adaptiven Formular verbinden.
 keywords: Senden Sie ein adaptives Formular an Adobe Workfront Fusion, Integration von Adobe Workfront Fusion mit AEM Forms Submission, Adobe Workfront Fusion mit AEM Forms, Workfront Fusion mit AEM Forms, Verbinden von Workfront Fusion mit AEM Forms, AEM Forms und Workfront Fusion, Wie verbinden Sie Workfront Fusion mit AEM Forms? Verbinden Sie Workfront Fusion mit einem Formular?
 topic-tags: author, developer
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: cebdd5c4b1ad9531f2cc2893c2e7900658e451ed
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1240'
 ht-degree: 4%
 
 ---
@@ -144,7 +144,7 @@ Sie können die Übermittlungsaktion für Workfont Fusion konfigurieren für:
 - [Neue adaptive Forms](#new-af-submit-action)
 - [Vorhandene adaptive Formulare](#existing-af-submit-action)
 
-#### 2.1 Konfigurieren der Sendeaktion für das neue adaptive Formular für Workfront Fusion {#new-af-submit-action}
+#### Konfigurieren der Sendeaktion für das neue adaptive Formular für Workfront Fusion {#new-af-submit-action}
 
 So konfigurieren Sie die Sendeaktion des neuen adaptiven Formulars für Workfront Fusion:
 
@@ -165,7 +165,7 @@ So konfigurieren Sie die Sendeaktion des neuen adaptiven Formulars für Workfron
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 1. Geben Sie den Namen für das neue adaptive Formular an und klicken Sie auf **[!UICONTROL Erstellen]**.
 
-#### 2.2 Konfigurieren der Sendeaktion des vorhandenen adaptiven Formulars für Workfront Fusion {#existing-af-submit-action}
+#### Konfigurieren der Sendeaktion des vorhandenen adaptiven Formulars für Workfront Fusion {#existing-af-submit-action}
 
 So konfigurieren Sie die Sendeaktion des vorhandenen adaptiven Formulars für Workfront Fusion:
 
@@ -178,7 +178,7 @@ So konfigurieren Sie die Sendeaktion des vorhandenen adaptiven Formulars für Wo
    ![Übermittlungsaktion für Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
 
 1. Öffnen Sie die Registerkarte **[!UICONTROL Übermittlung]**.
-1. Wählen Sie die **[Übermittlungsaktion]** as **[!UICONTROL Aufrufen eines Workfront Fusion-Szenarios]**
+1. Wählen Sie die **[!UICONTROL Übermittlungsaktion]** as **[!UICONTROL Aufrufen eines Workfront Fusion-Szenarios]**
 1. Auswählen **[!UICONTROL Workfront Fusion-Szenario]** aus der Dropdown-Liste.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 

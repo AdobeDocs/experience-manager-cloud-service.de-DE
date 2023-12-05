@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ce98053371c8a40db3935c47356213e712a4e39e
+source-git-commit: 54ab961b9689075f6a34ff51ecf92bf1ae68ebf1
 workflow-type: tm+mt
 source-wordcount: '4429'
 ht-degree: 93%
@@ -581,11 +581,11 @@ ht-degree: 93%
          + [Integrieren von Adaptive Forms in Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [Anzeigen und Verstehen des adaptiven Forms Analytics-Berichts](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [Integrieren eines adaptiven Formulars mit Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+         + [Senden eines adaptiven Formulars an Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Einbetten eines adaptiven Formulars in eine AEM Sites-Seite](/help/forms/embed-adaptive-form-aem-sites.md)
          + [Einbetten des adaptiven Formulars basierend auf Kernkomponenten in eine externe Webseite](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [Einbetten des adaptiven Formulars basierend auf Foundation-Komponenten in eine externe Webseite](/help/forms/embed-adaptive-form-external-web-page.md)
       + Formulardatenmodell {#use-form-data-model}
-         + [Senden eines adaptiven Formulars an Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Verbinden von AEM Forms mit Datenbank oder Datenquelle](/help/forms/data-integration.md)
          + [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md)
          + [Konfigurieren von [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
