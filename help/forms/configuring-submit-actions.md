@@ -2,7 +2,7 @@
 title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 4e5a730f59a7594085319435bfe1ea3a7368bfc2
+source-git-commit: 738a0ceeb0a8cc9b08a1871ef3b2939cbcf2f80a
 workflow-type: tm+mt
 source-wordcount: '3913'
 ht-degree: 88%
@@ -410,7 +410,6 @@ Verwenden Sie nach erfolgreicher Konfiguration die Übermittlungsaktion [Microso
 Sie können ein adaptives Formular so konfigurieren, dass bei der Übermittlung Daten an Workfront Fusion gesendet werden. Workfront Fusion ermöglicht die Automatisierung von Prozessen, sodass Benutzer sich auf neue Aufgaben konzentrieren können, anstatt dieselben Aufgaben immer wieder zu wiederholen. Es automatisiert sowohl einfache als auch komplexe Aufgaben, spart Zeit und gewährleistet eine konsistente Prozessausführung.
 
 Der adaptive Forms-Editor stellt die **Aufrufen eines Workfront Fusion-Szenarios** Übermittlungsaktion zum Senden von adaptiven Forms-Daten oder -Anhängen an ein Workfront Fusion-Szenario. Informationen zum Verwenden der Sendeaktion zum Senden erfasster Daten an ein Workfront Fusion-Szenario finden Sie unter [Senden eines adaptiven Formulars an Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
-
 
 ## Verwenden synchroner oder asynchroner Übermittlung {#use-synchronous-or-asynchronous-submission}
 
