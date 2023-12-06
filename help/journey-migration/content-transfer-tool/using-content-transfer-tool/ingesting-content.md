@@ -2,10 +2,10 @@
 title: Erfassen von Inhalten in Cloud Service
 description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ihrem Migrationssatz in eine Ziel-Cloud Service-Instanz aufnehmen können.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 250682b96e2eaa2ed872e6f626c0a13dc19720f2
 workflow-type: tm+mt
-source-wordcount: '2275'
-ht-degree: 45%
+source-wordcount: '2313'
+ht-degree: 44%
 
 ---
 
@@ -78,7 +78,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager zu
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Auffüllaufnahme"
->abstract="Verwenden Sie die Auffüllfunktion, um Inhalte zu verschieben, die seit der vorherigen Inhaltsübertragungsaktivität geändert wurden. Überprüfen Sie nach Abschluss der Aufnahme die Protokolle auf Fehler/Warnungen. Alle Fehler sollten sofort behoben werden, indem Sie sich entweder mit den gemeldeten Problemen befassen oder die Adobe-Kundenunterstützung kontaktieren."
+>abstract="Verwenden Sie die Auffüllfunktion, um Inhalte zu verschieben, die seit der vorherigen Aktivität zur Inhaltstransfer geändert wurden. Überprüfen Sie nach Abschluss der Aufnahme die Protokolle auf Fehler/Warnungen. Alle Fehler sollten sofort behoben werden, indem Sie sich entweder mit den gemeldeten Problemen befassen oder die Adobe-Kundenunterstützung kontaktieren."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=de" text="Anzeigen von Protokollen"
 
 Das Content Transfer Tool verfügt über eine Funktion, die die Extraktion von differenziellen Inhalten ermöglicht, indem eine *top-up* des Migrationssatzes. Dadurch kann der Migrationssatz so geändert werden, dass nur der Inhalt einbezogen wird, der seit der vorherigen Extraktion geändert wurde, ohne dass der gesamte Inhalt erneut extrahiert werden muss.
@@ -93,6 +93,12 @@ Erstellen Sie zunächst einen Aufnahmeauftrag und stellen Sie sicher, dass **Wis
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
 ## Fehlerbehebung {#troubleshooting}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion_troubleshooting"
+>title="Fehlerbehebung bei der Inhaltsaufnahme"
+>abstract="In den Aufnahmeprotokollen und der Dokumentation finden Sie Lösungen für häufige Gründe, warum eine Aufnahme fehlschlagen kann, finden Sie die Möglichkeit, das Problem zu beheben und führen die Aufnahme erneut aus."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=de" text="Validieren von Inhaltsübertragungen  "
 
 ### CAM kann das Migrations-Token nicht abrufen {#cam-unable-to-retrieve-the-migration-token}
 
