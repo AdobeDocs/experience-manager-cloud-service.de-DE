@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Paketstrukturen für die Bereitstellung in Ad
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: ht
-source-wordcount: '2918'
+source-wordcount: '2859'
 ht-degree: 100%
 
 ---
