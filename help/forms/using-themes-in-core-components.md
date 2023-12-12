@@ -1,11 +1,12 @@
 ---
 title: Wie können Designs in Adaptive Forms erstellt und verwendet werden?
 description: Sie können Designs verwenden, um ein adaptives Formular mithilfe von Kernkomponenten zu gestalten und eine visuelle Identität bereitzustellen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
+feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2610'
-ht-degree: 17%
+ht-degree: 39%
 
 ---
 
@@ -16,37 +17,37 @@ ht-degree: 17%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-Sie können Designs erstellen und anwenden, um ein adaptives Formular zu formatieren. Zu einem Design gehören Stildetails für die Komponenten und Bedienfelder. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, spiegeln die entsprechenden Komponenten den angegebenen Stil wider. Ein Design wird unabhängig voneinander ohne Verweis auf ein adaptives Formular verwaltet und kann über mehrere adaptive Forms hinweg wiederverwendet werden.
+Sie können Designs erstellen und anwenden, um ein adaptives Formular zu formatieren. Zu einem Design gehören Stildetails für die Komponenten und Bedienfelder. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, spiegeln die entsprechenden Komponenten den angegebenen Stil wider. Ein Design wird ohne Verweis auf ein adaptives Formular unabhängig verwaltet und kann über mehrere adaptive Formulare hinweg wiederverwendet werden.
 
 ## Verfügbare Designs
 
 Forms as Cloud Service bietet die folgenden aufgelisteten Designs für Kernkomponenten-basiertes adaptives Forms:
 
-* [Design „Canvas“](https://github.com/adobe/aem-forms-theme-canvas)
+* [Canvas-Design](https://github.com/adobe/aem-forms-theme-canvas)
 * [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
-* [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
+* [Design „EASEL“](https://github.com/adobe/aem-forms-theme-easel)
 
-## Grundlegendes zur Struktur der Themen
+## Grundlegendes zur Struktur der Designs
 
-Ein Design ist ein Paket, das die CSS-Datei, JavaScript-Dateien und Ressourcen (wie Symbole) umfasst, die den Stil Ihres adaptiven Forms definieren. Ein Design für adaptives Formular folgt einer bestimmten Organisation, die aus den folgenden Komponenten besteht:
+Ein Design ist ein Paket, das die CSS-Datei, JavaScript-Dateien und Ressourcen (wie etwa Symbole) umfasst, die den Stil Ihrer adaptiven Formulare definieren. Ein Design für ein adaptives Formular folgt einer bestimmten Organisation, die aus den folgenden Komponenten besteht:
 
-* `src/theme.scss`: Dieser Ordner enthält die CSS-Datei, die einen breiten Einfluss auf das gesamte Design hat. Es dient als zentralisierter Ort zur Definition und Verwaltung des Stils und Verhaltens Ihres Designs. Durch Bearbeitung dieser Datei können Sie Änderungen vornehmen, die im gesamten Design allgemein angewendet werden und das Erscheinungsbild und die Funktionalität Ihrer adaptiven Forms- und AEM Sites-Seiten beeinflussen.
+* `src/theme.scss`: Dieser Ordner enthält die CSS-Datei, die einen großen Einfluss auf das gesamte Thema hat. Sie dient als zentralisierter Speicherort zur Definition und Verwaltung des Stils und Verhaltens Ihres Designs. Durch Bearbeitung dieser Datei können Sie Änderungen vornehmen, die im gesamten Design allgemein angewendet werden und das Erscheinungsbild und die Funktionalität Ihrer adaptiven Formular- und AEM Sites-Seiten beeinflussen.
 
-* `src/site`: Dieser Ordner enthält CSS-Dateien, die auf die Seite einer gesamten AEM Site angewendet werden. Diese Dateien bestehen aus Code und Stilen, die sich auf die Funktionalität und das Layout der Seite Ihrer AEM auswirken. Alle hier vorgenommenen Änderungen werden auf allen Seiten Ihrer Site übernommen. [Wann sollte es verwendet werden?]
+* `src/site`: Dieser Ordner enthält CSS-Dateien, die auf die gesamte Seite einer AEM-Site angewendet werden. Diese Dateien bestehen aus Code und Stilen, die die Gesamtfunktionalität und das Layout der Seite Ihrer AEM-Site beeinflussen. Alle hier vorgenommenen Änderungen werden auf allen Seiten Ihrer Site übernommen. [Wann sollte es verwendet werden?]
 
-* `src/components`: Die CSS-Dateien in diesem Ordner sind für einzelne AEM Kernkomponenten entwickelt. Jeder dedizierte Ordner für eine Komponente enthält `.scss` -Datei, die diese bestimmte Komponente in einem adaptiven Formular formatiert. Beispielsweise enthält die Datei /src/components/accordion/_accordion.scss Stilinformationen für die Adaptive Forms Accordion-Komponente.
+* `src/components`: Die CSS-Dateien in diesem Ordner wurden für einzelne AEM-Kernkomponenten entwickelt. Jeder spezielle Ordner für eine Komponente enthält eine `.scss`-Datei, die die jeweilige Komponente in einem adaptiven Formular formatiert. Beispielsweise enthält die Datei /src/components/accordion/_accordion.scss Stilinformationen für die Adaptive Forms Accordion-Komponente.
 
   ![Designstruktur für adaptives Formular](/help/forms/assets/theme_structure.png)
 
-* `src/resources`: Dieser Ordner enthält statische Dateien wie Symbole, Logos und Schriftarten. Diese Ressourcen werden verwendet, um die visuellen Elemente und das Gesamtdesign Ihres Designs zu verbessern.
+* `src/resources`: Dieser Ordner enthält statische Dateien wie Symbole, Logos und Schriftarten. Diese Ressourcen werden verwendet, um die visuellen Elemente und das gesamte Erscheinungsbild Ihres Designs zu verbessern.
 
-## Erstellen von Designs
+## Erstellen eines Designs
 
 Forms bietet die folgenden aufgelisteten Designs für die auf Kernkomponenten basierende adaptive Forms.
 
-* [Design „Canvas“](https://github.com/adobe/aem-forms-theme-canvas)
+* [Canvas-Design](https://github.com/adobe/aem-forms-theme-canvas)
 * [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
-* [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
+* [Design „EASEL“](https://github.com/adobe/aem-forms-theme-easel)
 
 Sie können [Anpassen dieser Designs, um ein neues Design zu erstellen](#customize-a-theme-core-components).
 
@@ -60,8 +61,8 @@ Das Anpassen eines Designs bezieht sich auf den Prozess der Änderung und Person
 
 * Machen Sie sich mit [Einrichten einer Pipeline in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#setup-pipeline) und über grundlegende Kenntnisse zum Einrichten einer Pipeline verfügen, können Sie Ihre Designanpassungen effizient verwalten und bereitstellen.
 * Erfahren Sie, wie [Konfigurieren eines Benutzers mit der Rolle &quot;Mitarbeiter&quot;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=de). Wenn Sie verstehen, wie Sie einen Benutzer mit der Rolle &quot;contributor&quot;konfigurieren, können Sie die erforderlichen Berechtigungen für die Designanpassung erteilen.
-* Installieren Sie die neueste Version von [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven ist ein Werkzeug zur Automatisierung von Builds, das häufig für Java™-Projekte verwendet wird. Durch die Installation der neuesten Version stellen Sie sicher, dass Sie über die erforderlichen Abhängigkeiten für die Designanpassung verfügen.
-* Installieren Sie einen Nur-Text-Editor. Beispielsweise Microsoft® Visual Studio-Code. Die Verwendung eines Texteditors wie Microsoft® Visual Studio Code bietet eine benutzerfreundliche Umgebung zum Bearbeiten und Ändern von Designdateien.
+* Installieren Sie die neueste Version von [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven ist ein Tool zur Automatisierung von Builds, das häufig für Java™-Projekte verwendet wird. Durch die Installation der neuesten Version stellen Sie sicher, dass Sie über die erforderlichen Abhängigkeiten für die Design-Anpassung verfügen.
+* Installieren Sie einen Nur-Text-Editor. Beispielsweise Microsoft® Visual Studio Code. Die Verwendung eines Texteditors wie Microsoft® Visual Studio Code bietet eine benutzerfreundliche Umgebung zum Bearbeiten und Ändern von Design-Dateien.
 
 ### Einrichten Ihrer Arbeitsumgebung
 
@@ -87,27 +88,27 @@ Das Anpassen eines Designs ist ein mehrstufiger Prozess. Um das Design anzupasse
 1. [Testen eines Designs](#test-the-theme)
 1. [Bereitstellen eines Designs](#deploy-the-theme)
 
-Die im Dokument bereitgestellten Beispiele basieren auf dem **Arbeitsfläche** -Design, aber es ist wichtig zu beachten, dass Sie jedes Thema klonen und es mit denselben Anweisungen anpassen können. Diese Anweisungen gelten für jedes Thema, sodass Sie Designs entsprechend Ihren spezifischen Anforderungen ändern können.
+Die im Dokument bereitgestellten Beispiele basieren auf dem **Arbeitsfläche** -Design, aber es ist wichtig zu beachten, dass Sie jedes Thema klonen und es mit denselben Anweisungen anpassen können. Diese Anweisungen gelten für jedes Design, sodass Sie Designs entsprechend Ihren spezifischen Anforderungen ändern können.
 
 #### 1. Ein Design klonen {#download-a-theme-core-components}
 
-Um ein Design für die auf Kernkomponenten basierende adaptive Forms zu klonen, wählen Sie eines der folgenden Designs:
+Um ein Design für die auf Kernkomponenten-basierten adaptiven Formulare zu klonen, wählen Sie eines der folgenden Designs:
 
-* [Design „Canvas“](https://github.com/adobe/aem-forms-theme-canvas)
+* [Canvas-Design](https://github.com/adobe/aem-forms-theme-canvas)
 * [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
-* [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
+* [Design „EASEL“](https://github.com/adobe/aem-forms-theme-easel)
 
 Um ein Design zu klonen, führen Sie die folgenden Anweisungen aus:
 
 1. Öffnen Sie die Eingabeaufforderung oder das Terminal-Fenster in Ihrer lokalen Entwicklungsumgebung.
 
-1. Führen Sie die `git clone` -Befehl zum Klonen eines Designs.
+1. Führen Sie den Befehl `git clone` aus, um ein Design zu klonen.
 
    ```
       git clone [Path of Git Repository of the theme]
    ```
 
-   Ersetzen Sie die [Pfad des Git-Repositorys des Designs] mit der tatsächlichen URL des entsprechenden Git-Repositorys des Designs
+   Ersetzen Sie den [Pfad des Git-Repositorys des Designs] durch die tatsächliche URL des entsprechenden Git-Repositorys des Designs.
 
    Um beispielsweise das Canvas-Design zu klonen, führen Sie den folgenden Befehl aus:
 
@@ -115,7 +116,7 @@ Um ein Design zu klonen, führen Sie die folgenden Anweisungen aus:
       git clone https://github.com/adobe/aem-forms-theme-canvas
    ```
 
-   Nachdem Sie den Befehl erfolgreich ausgeführt haben, steht auf Ihrem Computer eine lokale Kopie des Designs im  `aem-forms-theme-canvas` Ordner.
+   Nach erfolgreicher Ausführung des Befehls haben Sie eine lokale Kopie des Designs auf Ihrem Rechner im Ordner `aem-forms-theme-canvas` zur Verfügung.
 
 
 #### 2. Namen eines Designs festlegen {#set-name-of-theme}
@@ -149,13 +150,13 @@ Um ein Design zu klonen, führen Sie die folgenden Anweisungen aus:
 
 Sie können einzelne Komponenten anpassen oder Änderungen auf Designebene mithilfe globaler Variablen eines Designs vornehmen. Änderungen an globalen Variablen wirken sich auf alle einzelnen Komponenten aus. Sie können beispielsweise globale Variablen verwenden, um die Rahmenfarbe aller Komponenten eines adaptiven Formulars und eine helle Füllfarbe zu ändern, um CTA (Aktionsaufruf) mithilfe der Schaltflächenkomponente festzulegen:
 
-* [Festlegen von Stilen auf Designebene](#theme-customization-global-level)
+* [Festlegen von Stilen auf Design-Ebene](#theme-customization-global-level)
 
 * [Festlegen von Stilen auf Komponentenebene](#component-based-customization)
 
-##### Festlegen von Stilen auf Designebene{#theme-customization-global-level}
+##### Festlegen von Stilen auf Design-Ebene{#theme-customization-global-level}
 
-Die `variable.scss` -Datei enthält die globalen Variablen des Designs. Durch Aktualisierung dieser Variablen können Sie stilistisch relevante Änderungen auf der Designebene vornehmen. Gehen Sie wie folgt vor, um Stile auf Designebene anzuwenden:
+Die `variable.scss` -Datei enthält die globalen Variablen des Designs. Durch Aktualisierung dieser Variablen können Sie stilistisch relevante Änderungen auf der Design-Ebene vornehmen. Gehen Sie wie folgt vor, um Stile auf Design-Ebene anzuwenden:
 
 1. Öffnen Sie die Datei `<your-theme-sources>/src/site/_variables.scss`, um sie zu bearbeiten.
 1. Ändern Sie den Wert einer beliebigen Eigenschaft. Die standardmäßige Fehlerfarbe lautet beispielsweise `red`. So ändern Sie die Fehlerfarbe von `red` nach `blue`ändern Sie den Farb-Hex-Code des `$errorvariable`. Zum Beispiel: `$error: #196ee5`.
@@ -163,14 +164,14 @@ Die `variable.scss` -Datei enthält die globalen Variablen des Designs. Durch Ak
 
    ![Bearbeiten eines Designs](/help/forms/assets/edit_theme.png)
 
-Auf ähnliche Weise können Sie die `variable.scss` -Datei, um Schriftfamilie und -typ, Design- und Schriftfarben, Schriftgröße, Designabstand, Fehlersymbol, Designrahmenstile und mehr Variablen festzulegen, die sich auf mehrere adaptive Formularkomponenten auswirken.
+In ähnlicher Weise können Sie die Datei `variable.scss` verwenden, um Schriftfamilie und -typ, Design- und Schriftfarben, Schriftgröße, Design-Abstände, Fehlersymbole, Rahmenstile des Designs und weitere Variablen festzulegen, die sich auf mehrere adaptive Formularkomponenten auswirken.
 
 ##### Festlegen von Stilen auf Komponentenebene {#component-based-customization}
 
 Sie können auch Schriftart, Farbe, Größe und andere CSS-Eigenschaften einer bestimmten Kernkomponente des adaptiven Formulars ändern. Beispiel: Schaltfläche, Kontrollkästchen, Container, Fußzeile und mehr. Sie können die Schaltfläche oder das Kontrollkästchen formatieren, indem Sie die CSS-Datei der jeweiligen Komponente bearbeiten und sie an den Stil Ihres Unternehmens anpassen. So passen Sie einen Stil einer Komponente an:
 
-1. Öffnen Sie die Datei `<your-theme-sources>/src/components/<component>/<component.scss>` zur Bearbeitung. Um beispielsweise die Schriftfarbe der Schaltflächenkomponente zu ändern, öffnen Sie die `<your-theme-sources>/src/components/button/button.scss`, Datei .
-1. Ändern Sie den Wert von beliebig gemäß Ihren Anforderungen. So ändern Sie beispielsweise die Farbe der Schaltflächenkomponente beim Maushover auf `green`, ändern Sie den Wert der `color: $white` -Eigenschaft in der `cmp-adaptiveform-button__widget:hover` -Klasse in Hex-Code `#12B453` oder anderen Schatten von `green`. Der endgültige Code sieht wie folgt aus:
+1. Öffnen Sie die Datei `<your-theme-sources>/src/components/<component>/<component.scss>` zur Bearbeitung. Um zum Beispiel die Schriftfarbe der Schaltflächenkomponente zu ändern, öffnen Sie die Datei `<your-theme-sources>/src/components/button/button.scss`.
+1. Ändern Sie die Werte entsprechend Ihren Anforderungen. So ändern Sie beispielsweise die Farbe der Schaltflächenkomponente beim Maushover auf `green`, ändern Sie den Wert der `color: $white` -Eigenschaft in der `cmp-adaptiveform-button__widget:hover` -Klasse in Hex-Code `#12B453` oder anderen Schatten von `green`. Der endgültige Code sieht wie folgt aus:
 
    ```
    .cmp-adaptiveform-button__widget:hover {
@@ -217,7 +218,7 @@ Um die Änderungen in der lokalen Umgebung in der Vorschau anzuzeigen und zu tes
 
 1. Speichern Sie die Datei.
 
-   ![Canvas-Design-Struktur](/help/forms/assets/env-file-canvas-theme.png)
+   ![Struktur des Canvas-Designs](/help/forms/assets/env-file-canvas-theme.png)
 
 ##### 4.2 Thema mithilfe einer lokalen Umgebung testen {#start-a-local-proxy-server}
 
@@ -241,7 +242,7 @@ Nach den Beispielen, die sowohl auf Design- als auch auf Komponentenebene für D
 
 **Vorschau des Designstufenstils**
 
-![Beispiel: Fehlerfarbe auf blau eingestellt](/help/forms/assets/theme-level-changes.png)
+![Beispiel: Fehlerfarbe auf Blau gesetzt](/help/forms/assets/theme-level-changes.png)
 
 **Vorschau des Stils auf Komponentenebene**
 
@@ -332,7 +333,7 @@ Nun können Sie die Änderungen an das Design-Repository Ihres AEM Forms-Cloud S
    git push [name-for-createdrepository]
    ```
 
-   Beispiel:
+   Zum Beispiel:
 
    ```
    git remote add canvascloudthemerepo https://git.cloudmanager.adobe.com/stage-aemformsdev/customcanvastheme/
@@ -406,7 +407,7 @@ Wenn Sie Informationen wie ein Logo, einen Firmennamen in der Kopfzeile und Copy
 
 ## Häufig gestellte Fragen  {#faq}
 
-**F:** Welche Anpassung hat bei der Anpassung in einem Designordner sowohl auf globaler Ebene als auch auf Komponentenebene Priorität?
+**F:** Welche Anpassung hat Vorrang, wenn Anpassungen in einem Design-Ordner sowohl auf der globalen Ebene als auch auf der Komponentenebene vorgenommen werden?
 
 **Ans:** Wenn Anpassungen sowohl auf globaler als auch auf Komponentenebene vorgenommen werden, hat die Anpassung auf Komponentenebene Priorität.
 

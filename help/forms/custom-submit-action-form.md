@@ -1,13 +1,13 @@
 ---
 title: Wie wird eine benutzerdefinierte Sende-Aktion für ein adaptives Formular erstellt?
 description: Erfahren Sie, wie Sie eine benutzerdefinierte Sende-Aktion für ein adaptives Formular erstellen, um die Übermittlung von Daten zu verzögern und sie zu verarbeiten, bevor sie an einen Rest-Endpunkt gesendet, in einem Datenspeicher gespeichert und andere benutzerdefinierte Funktionen ausgeführt werden.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1670'
 ht-degree: 100%
 
 ---

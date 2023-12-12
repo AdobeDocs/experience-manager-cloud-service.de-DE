@@ -1,8 +1,9 @@
 ---
 title: Wie erstelle ich ein Forms-Portal auf einer Experience Manager Sites-Seite?
 description: Erfahren Sie, wie Sie ein Formularportal erstellen und vordefinierte Kernkomponenten auf einer AEM Sites-Seite verwenden können.
+feature: Adaptive Forms, Foundation Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1785'
 ht-degree: 87%
@@ -11,16 +12,16 @@ ht-degree: 87%
 
 # Hinzufügen des Formularportals zu einer AEM Sites-Seite {#publish-forms-on-portal}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/creating-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/creating-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-In einem typischen formularzentrierten Portal-Bereitstellungsszenario sind die Formularentwicklung und die Portalentwicklung zwei getrennte Aktivitäten. Während Formular-Entwicklerinnen bzw. -Entwickler Formulare in einem Repository entwerfen und speichern, erstellen Web-Entwicklerinnen bzw. -Entwickler eine Web-Applikation, um Formulare aufzulisten und die Übermittlung von Formularen zu verarbeiten. Formulare werden in die Web-Stufe kopiert, da keine Kommunikation zwischen dem Formular-Repository und der Web-Applikation besteht.
+Bei einer typischen formularzentrierten Portal-Bereitstellung erfolgen Formular- und Portalentwicklung getrennt voneinander. Während Formular-Designerinnen und -Designer Formulare in einem Repository entwerfen und speichern, erstellen Web-Entwicklerinnen und -Entwickler eine Web-Anwendung, um Formulare aufzulisten und die Übermittlung von Formularen zu verarbeiten. Formulare werden in die Web-Stufe kopiert, da keine Kommunikation zwischen Formular-Repository und Web-Anwendung vorhanden ist.
 
-Solche Szenarien führen oft zu Managementproblemen und Produktionsverzögerungen. Wenn beispielsweise eine neuere Version eines Formulars im Repository verfügbar ist, müssen Sie das Formular auf der Web-Stufe ersetzen, die Web-Applikation ändern und das Formular erneut auf der öffentlichen Website bereitstellen. Die erneute Bereitstellung der Web-Applikation kann zu Server-Ausfällen führen. In der Regel handelt es sich bei dem Server-Ausfall um eine geplante Aktivität, weshalb die Änderungen nicht sofort an die öffentliche Site gesendet werden können.
+Solche Szenarien führen oft zu Managementproblemen und Produktionsverzögerungen. Wenn beispielsweise eine neuere Version eines Formulars im Repository verfügbar ist, müssen Sie das Formular auf der Web-Stufe ersetzen, die Web-Applikation ändern und das Formular erneut auf der öffentlichen Website bereitstellen. Die erneute Bereitstellung der Web-Applikation kann zu Server-Ausfällen führen. In der Regel handelt es sich bei Server-Downtime um eine geplante Aktivität, weshalb die Änderungen nicht sofort an die öffentliche Site gesendet werden können.
 
 AEM Forms bietet Portalkomponenten, die den Verwaltungsaufwand und Produktionsverzögerungen reduzieren. Mit den Komponenten können Web-Entwickler Formularportale auf mit Adobe Experience Manager (AEM) erstellten Websites erstellen und anpassen. 
 

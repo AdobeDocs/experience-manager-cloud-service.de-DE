@@ -1,11 +1,11 @@
 ---
 title: Entwerfen eines JSON-Schemas für ein adaptives Formular
 description: Erfahren Sie, wie Sie ein JSON-Schema für ein adaptives Formular erstellen und basierend auf dem Schema ein adaptives Formular erstellen, um Schema-konforme Daten zu erstellen.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1333'
 ht-degree: 99%
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 # Entwerfen eines JSON-Schemas für ein adaptives Formular {#creating-adaptive-forms-using-json-schema}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/creating-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/creating-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -37,7 +37,7 @@ Die wichtigsten Funktionen bei Verwendung eines JSON-Schemas sind wie folgt:
 
 * Die Struktur der JSON-Datei wird als Baumstruktur in der Registerkarte für die Content-Suche im Authoring-Modus für ein adaptives Formular angezeigt. Sie können Elemente aus der JSON-Hierarchie in das adaptive Formular ziehen.
 * Sie können das Formular mithilfe von JSON, das mit dem zugehörigen Schema konform ist, vorbefüllen.
-* Bei der Übermittlung werden die vom Benutzenden eingegebenen Daten in einem JSON-Format gesendet, das dem zugehörigen Schema entspricht.
+* Bei der Übermittlung werden die benutzerseitig eingegebenen Daten in einem JSON-Format gesendet, das dem zugehörigen Schema entspricht.
 
 Ein JSON-Schema besteht aus einfachen und komplexen Elementtypen. Die Elemente weisen Attribute auf, die dem Element Regeln hinzufügen. Wenn diese Elemente und Attribute in ein adaptives Formular gezogen werden, werden sie automatisch der entsprechenden Komponente des adaptiven Formulars zugeordnet.
 
@@ -72,16 +72,16 @@ Diese Zuordnung von JSON-Elementen zu Komponenten adaptiver Formulare ist wie fo
    <td><p>Zeichenfolgen-Eigenschaften mit enum- und enumNames-Beschränkung.</p> <p>Syntax,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td>
    <td><p>Dropdown-Komponente:</p>
     <ul>
-     <li>Die in enumNames aufgeführten Werte werden in der Dropbox angezeigt.</li>
-     <li>Die in enum aufgeführten Werte werden für die Berechnung verwendet.</li>
+     <li>Die in „enumNames“ aufgeführten Werte werden in der Dropbox angezeigt.</li>
+     <li>Die in „enum“ aufgeführten Werte werden zur Berechnung verwendet.</li>
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Zeichenfolgen-Eigenschaft mit Formatbeschränkung.  Zum Beispiel E-Mail und Datum.</p> <p>Syntax,</p> <p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"format" : "email"</code></p> <p><code>}</code></p> <p> </p> </td>
+   <td><p>Zeichenfolgen-Eigenschaft mit format-Beschränkung, Zum Beispiel „email“ oder „date“.</p> <p>Syntax,</p> <p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"format" : "email"</code></p> <p><code>}</code></p> <p> </p> </td>
    <td>
     <ul>
-     <li>E-Mail-Komponente wird zugeordnet, wenn der Typ „Zeichenfolge“ und das Format „E-Mail“ lautet.</li>
-     <li>Textfeld-Komponente mit Validierung wird zugeordnet, wenn der Typ „Zeichenfolge“ und das Format „Hostname“ lautet.</li>
+     <li>E-Mail-Komponente wird zugeordnet, wenn der Typ „string“ lautet und das Format „email“.</li>
+     <li>Textfeld-Komponente mit Validierung wird zugeordnet, wenn der Typ „string“ lautet und das Format „hostname“.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -89,31 +89,31 @@ Diese Zuordnung von JSON-Elementen zu Komponenten adaptiver Formulare ist wie fo
    <td><br /> <br /> Textfeld<br /> <br /> <br /> </td>
   </tr>
   <tr>
-   <td>Nummern-Eigenschaft<br /> </td>
-   <td>Numerisches Feld, Untertyp auf „Fließkommazahl“ eingestellt<br /> </td>
+   <td>Zahleneigenschaft<br /> </td>
+   <td>Numerisches Feld mit Subtyp „float“.<br /> </td>
   </tr>
   <tr>
    <td>Ganzzahl-Eigenschaft<br /> </td>
-   <td>Numerisches Feld, Untertyp auf „Ganzzahl“ eingestellt<br /> </td>
+   <td>Numerisches Feld mit Subtyp „integer“.<br /> </td>
   </tr>
   <tr>
    <td>Boolesche Eigenschaft<br /> </td>
    <td>Schalter<br /> </td>
   </tr>
   <tr>
-   <td>Objekt-Eigenschaft<br /> </td>
+   <td>Objekteigenschaft<br /> </td>
    <td>Bedienfeld<br /> </td>
   </tr>
   <tr>
    <td>Array-Eigenschaft</td>
-   <td>Wiederholbares Bedienfeld mit „min.“ und „max.“ gleich „minItems“ und „maxItems“.  Nur homogene Arrays werden unterstützt. Daher muss die Elementbeschränkung ein Objekt sein, kein Array.<br /> </td>
+   <td>Wiederholbares Bedienfeld mit „min“ und „max“ gleich „minItems“ und „maxItems“. Nur homogene Arrays werden unterstützt. Daher muss die Elementbeschränkung ein Objekt sein, kein Array.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ### Allgemeine Schema-Eigenschaften {#common-schema-properties}
 
-Bei einem adaptiven Formular werden jedem generierten Feld im JSON-Schema verfügbare Informationen zugeordnet.  Führen Sie insbesondere die folgenden Aufgaben aus:
+Das adaptive Formular verwendet die im JSON-Schema verfügbaren Informationen, um jedes generierte Feld zuzuordnen. Führen Sie insbesondere die folgenden Aufgaben aus:
 
 * Die `title`-Eigenschaft dient als Bezeichnung für die Komponenten des adaptiven Formulars.
 * Die `description`-Eigenschaft ist als lange Beschreibung für Komponenten von adaptiven Formularen festgelegt.
@@ -338,7 +338,7 @@ Definitionsschlüssel kennzeichnen wiederverwendbare Schemas. Die wiederverwendb
 }
 ```
 
-Das obige Beispiel definiert einen Kundendatensatz, bei dem jede Kundin und jeder Kunde über eine Versand- und eine Rechnungsadresse verfügt. Die Struktur der beiden Adressen ist gleich: Straße, Stadt und Land. Daher sollten Sie die Adressen nicht duplizieren.  Das erleichtert auch das Hinzufügen und Löschen von Feldern, wodurch zukünftige Änderungen einfach sind.
+Das obige Beispiel definiert einen Kundendatensatz, bei dem jede Kundin und jeder Kunde über eine Versand- und eine Rechnungsadresse verfügt. Die Struktur der beiden Adressen ist gleich: Straße, Ort und Land. Daher sollten Sie die Adressen nicht duplizieren. Das erleichtert auch das Hinzufügen und Löschen von Feldern, wodurch zukünftige Änderungen einfach sind.
 
 ## Vorkonfigurieren von Feldern in JSON-Schemadefinitionen {#pre-configuring-fields-in-json-schema-definition}
 
@@ -648,7 +648,7 @@ Sie können folgende Einschränkungen zu JSON-Schemaelementen hinzufügen, um de
   <tr>
    <td><p><code>maximum</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Gibt die Obergrenze für numerische Werte und Daten an.  Standardmäßig ist der Höchstwert enthalten.</p> </td>
+   <td><p>Legt die Obergrenze für numerische Werte und Daten fest. Standardmäßig ist der Höchstwert enthalten.</p> </td>
    <td>
     <ul>
      <li>Numerisches Feld</li>
@@ -659,7 +659,7 @@ Sie können folgende Einschränkungen zu JSON-Schemaelementen hinzufügen, um de
   <tr>
    <td><p><code>minimum</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Gibt die Untergrenze für numerische Werte und Daten an.  Standardmäßig ist der Mindestwert enthalten.</p> </td>
+   <td><p>Legt die Untergrenze für numerische Werte und Daten fest. Standardmäßig ist der Mindestwert enthalten.</p> </td>
    <td>
     <ul>
      <li>Numerisches Feld</li>
@@ -692,7 +692,7 @@ Sie können folgende Einschränkungen zu JSON-Schemaelementen hinzufügen, um de
   <tr>
    <td><p><code>minLength</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Legt die zulässige Mindestanzahl von Zeichen in einer Komponente fest.  Die minimale Länge muss größer oder gleich null sein.</p> </td>
+   <td><p>Legt die zulässige Mindestanzahl von Zeichen in einer Komponente fest. Die minimale Länge muss größer oder gleich null sein.</p> </td>
    <td>
     <ul>
      <li>Textfeld</li>
@@ -701,7 +701,7 @@ Sie können folgende Einschränkungen zu JSON-Schemaelementen hinzufügen, um de
   <tr>
    <td><code>maxLength</code></td>
    <td>Zeichenfolge</td>
-   <td>Legt die zulässige Höchstzahl von Zeichen in einer Komponente fest.  Die maximale Länge muss größer oder gleich null sein.</td>
+   <td>Legt die zulässige Höchstzahl von Zeichen in einer Komponente fest. Die maximale Länge muss größer oder gleich null sein.</td>
    <td>
     <ul>
      <li>Textfeld</li>
@@ -710,7 +710,7 @@ Sie können folgende Einschränkungen zu JSON-Schemaelementen hinzufügen, um de
   <tr>
    <td><p><code>pattern</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Legt die Reihenfolge der Zeichen fest.  Eine Komponente akzeptiert die Zeichen, wenn sie dem angegebenen Muster entsprechen.</p> <p>Die Eigenschaft „pattern“ ist dem Überprüfungsmuster der entsprechenden Komponente des adaptiven Formulars zugeordnet.</p> </td>
+   <td><p>Legt die Reihenfolge der Zeichen fest. Eine Komponente akzeptiert die Zeichen, wenn sie dem angegebenen Muster entsprechen.</p> <p>Die Eigenschaft „pattern“ ist dem Überprüfungsmuster der entsprechenden Komponente des adaptiven Formulars zugeordnet.</p> </td>
    <td>
     <ul>
      <li>Alle adaptiven Formulare, die einem XSD-Schema zugeordnet sind </li>
@@ -732,14 +732,14 @@ Sie können folgende Einschränkungen zu JSON-Schemaelementen hinzufügen, um de
 </table>
 
 
-## Aktivieren von Schema-kompatiblen Daten {#enablig-schema-compliant-data}
+## Aktivieren von schemakonformen Daten {#enablig-schema-compliant-data}
 
-Gehen Sie wie folgt vor, um alle JSON-Schema-basierten adaptiven Formulare zu aktivieren, damit sie bei der Formularübermittlung schemakonforme Daten generieren:
+Gehen Sie wie folgt vor, damit alle auf einem JSON-Schema basierenden adaptiven Formulare bei der Formularübermittlung schemakonforme Daten generieren können:
 
 1. Navigieren Sie zur Experience Manager-Web-Konsole unter `https://server:host/system/console/configMgr`.
-1. Suchen Sie **[!UICONTROL Web-Kanal-Konfiguration für adaptive Formulare und interaktive Kommunikation]**
+1. Suchen Sie nach der **[!UICONTROL Web-Kanal-Konfiguration für adaptive Formulare und interaktive Kommunikation]**.
 1. Wählen Sie diese Option aus, um die Konfiguration im Bearbeitungsmodus zu öffnen.
-1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Schema-kompatible Daten generieren]**.
+1. Aktivieren Sie das Kontrollkästchen zum **[!UICONTROL Generieren schemakonformer Daten]**.
 1. Speichern Sie die Einstellungen.
 
 ![Web-Kanal-Konfiguration für adaptive Formulare und interaktive Kommunikation](/help/forms/assets/af-ic-web-channel-configuration.png)
@@ -750,8 +750,8 @@ Gehen Sie wie folgt vor, um alle JSON-Schema-basierten adaptiven Formulare zu ak
 Adaptive Formulare bieten keine Unterstützung für folgende JSON-Schemakonstrukte:
 
 * Null-Typ
-* Union-Typen wie „any“, „and“
-* OneOf, AnyOf, AllOf und NOT
+* Union-Typen wie „any“ und „and“
+* „OneOf“, „AnyOf“, „AllOf“ und „NOT“;
 * Nur homogene Arrays werden unterstützt. Daher muss die Elementbeschränkung ein Objekt sein, kein Array.
 
 ## Häufig gestellte Fragen {#frequently-asked-questions}
@@ -760,7 +760,7 @@ Adaptive Formulare bieten keine Unterstützung für folgende JSON-Schemakonstruk
 
 In einem wiederholbaren Teilformular müssen Sie das gesamte Teilformular verwenden. Wenn Sie nur einzelne Felder nutzen möchten, verwenden Sie die gesamte Struktur und löschen Sie unerwünschte Felder.
 
-**Ich habe eine lange, komplexe Struktur in der Inhaltssuche.  Wie kann ich ein bestimmtes Element suchen?**
+**Ich habe eine lange komplexe Struktur in der Inhaltssuche. Wie kann ich ein bestimmtes Element suchen?**
 
 Es gibt zwei Optionen:
 

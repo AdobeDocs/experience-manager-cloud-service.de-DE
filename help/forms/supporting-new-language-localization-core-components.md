@@ -1,8 +1,9 @@
 ---
 title: Wie füge ich einem adaptiven Formular Unterstützung für neue Gebietsschemata hinzu, basierend auf Kernkomponenten?
 description: Erfahren Sie, wie Sie neue Gebietsschemata für ein adaptives Formular hinzufügen.
+feature: Adaptive Forms, Core Components
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1333'
 ht-degree: 18%
@@ -46,7 +47,7 @@ Bevor Sie mit dem Hinzufügen eines Gebietsschemas beginnen:
 * Installieren Sie einen Nur-Text-Editor (IDE) für eine einfachere Bearbeitung. Die Beispiele in diesem Dokument basieren auf [Microsoft® Visual Studio Code](https://code.visualstudio.com/download).
 * Installieren Sie eine Version von [Git](https://git-scm.com), falls auf Ihrem Computer nicht verfügbar.
 * Klonen Sie die [Adaptive Forms-Kernkomponenten](https://github.com/adobe/aem-core-forms-components) Repository. So klonen Sie das Repository:
-   1. Öffnen Sie die Befehlszeile oder das Terminal-Fenster und navigieren Sie zu einem Speicherort für das Repository. Beispiel: `/adaptive-forms-core-components`
+   1. Öffnen Sie die Befehlszeile oder das Terminal-Fenster und navigieren Sie zu einem Speicherort für das Repository. Zum Beispiel: `/adaptive-forms-core-components`
    1. Führen Sie den folgenden Befehl aus, um das Repository zu klonen:
 
       ```SHELL

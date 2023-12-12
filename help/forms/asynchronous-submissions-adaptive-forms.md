@@ -1,11 +1,11 @@
 ---
 title: Konfigurieren der asynchronen Übermittlung adaptiver Formulare in AEM
 description: Erfahren Sie, wie die asynchrone Übermittlung adaptiver Formulare konfiguriert wird. Vertiefen Sie Ihre Kenntnisse über die Funktionsweise der asynchronen Übermittlung für adaptive Formulare.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 92%
@@ -35,7 +35,7 @@ So konfigurieren Sie die asynchrone Übermittlung für ein adaptives Formular:
 1. Aktivieren Sie im Eigenschaftenbereich **[!UICONTROL Übermittlung]** die Option **[!UICONTROL Asynchrone Übermittlung verwenden]**.
 1. Wählen Sie im Abschnitt **[!UICONTROL Beim Absenden]** eine der folgenden Optionen aus, die bei der erfolgreichen Übermittlung des Formulars ausgeführt werden soll.
 
-   * **[!UICONTROL Zu URL umleiten]**: Leitet beim Senden des Formulars zur angegebenen URL oder Seite um. Sie können eine URL angeben oder mit der Funktion zum Durchsuchen den Pfad zu einer Seite im Feld **[!UICONTROL Umleitungs-URL/Pfad]** wählen.
+   *  **[!UICONTROL Zu URL umleiten]**: Leitet bei Übermittlung des Formulars an die angegebene URL bzw. auf die angegebene Seite um.  Sie können eine URL angeben oder mit der Funktion zum Durchsuchen den Pfad zu einer Seite im Feld **[!UICONTROL Umleitungs-URL/Pfad]** wählen.
    * **[!UICONTROL Nachricht anzeigen]**: Zeigt eine Meldung beim Senden des Formulars an. Sie können eine Nachricht in das Textfeld unterhalb der Option **[!UICONTROL Nachricht anzeigen]** eingeben. Das Textfeld unterstützt Rich-Text-Formatierung.
 
 1. Auswählen ![check-button1](assets/save_icon.svg) , um die Eigenschaften zu speichern.
@@ -46,7 +46,7 @@ So konfigurieren Sie die asynchrone Übermittlung für ein adaptives Formular:
 
 Darüber hinaus können Formularautoren und -entwickler formularspezifische Regeln schreiben, die die Standard-Handler überschreiben. Weitere Informationen finden Sie unter [Standard-Handler mithilfe von Regeln außer Kraft setzen](#custom).
 
-Im Folgenden wird zunächst die Server-Antwort auf Erfolgs- und Fehlerereignisse beschrieben.
+Im Folgenden wird zunächst die Server-Antwort für Erfolgs- und Fehlerereignisse beschrieben.
 
 ### Server-Antwort für Erfolgsereignis bei Übermittlung {#server-response-for-submission-success-event}
 
@@ -69,14 +69,14 @@ Die Server-Antwort für Erfolgsereignis bei Übermittlung weist folgende Struktu
 }
 ```
 
-Die Antwort des Servers bei erfolgreicher Übermittlung eines Formulars enthält:
+Die Antwort des Servers für die erfolgreiche Übermittlung eines Formulars enthält:
 
 * Formattyp der Formulardaten: XML oder JSON
 * Formulardaten im XML- oder JSON-Format
-* Ausgewählte Option zum Umleiten auf eine Seite oder zum Anzeigen einer Nachricht wie im Formular konfiguriert
-* Seiten-URL oder Nachrichteninhalt wie im Formular konfiguriert
+* Ausgewählte Option zum Umleiten auf eine Seite oder zum Anzeigen einer Meldung wie im Formular konfiguriert
+* Seiten-URL oder Meldungsinhalt wie im Formular konfiguriert
 
-Der Erfolgs-Handler liest die Server-Antwort und leitet entsprechend zur konfigurierten Seiten-URL weiter oder zeigt eine Nachricht an.
+Der Erfolgs-Handler liest die Server-Antwort und leitet dementsprechend zur konfigurierten Seiten-URL weiter oder zeigt eine Meldung an.
 
 ### Serverantwort für Fehlerereignis bei Übermittlung {#server-response-for-submission-error-event}
 
@@ -95,12 +95,12 @@ Die Server-Antwort für ein Fehlerereignis bei Übermittlung weist folgende Stru
  }
 ```
 
-Die Server-Antwort im Fall eines Fehlers bei der Formularübermittlung umfasst Folgendes:
+Die Antwort des Servers für eine fehlgeschlagene Übermittlung eines Formulars enthält:
 
 * Grund für den Fehler, falsche Antwort in CAPTCHA oder fehlgeschlagene Server-seitige Validierung
 * Liste der Fehlerobjekte einschließlich SOM-Ausdruck des Felds mit der fehlgeschlagenen Validierung und zugehörige Fehlermeldung
 
-Der Fehler-Handler liest die Antwort des Servers und zeigt die entsprechende Fehlermeldung im Formular an.
+Der Fehler-Handler liest die Server-Antwort und zeigt die entsprechende Fehlermeldung im Formular an.
 
 ## Standard-Handler mithilfe von Regeln außer Kraft setzen {#custom}
 

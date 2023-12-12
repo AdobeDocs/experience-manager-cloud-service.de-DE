@@ -3,8 +3,9 @@ title: Verwenden von Google reCAPTCHA in einem adaptiven AEM-Formular
 description: Mit dem Google reCAPTCHA-Dienst können Sie die Formularsicherheit verbessern. Schrittweise Anleitung enthalten!
 topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA-Dienst, adaptive Formulare, CAPTCHA-Herausforderung, Bot-Prävention, Kernkomponenten, Formularübermittlungssicherheit, Spam-Prävention für Formulare
+feature: Adaptive Forms, Core Components
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 90%
@@ -77,7 +78,7 @@ Verwenden von reCAPTCHA in adaptiven Formularen:
    * **[!UICONTROL CAPTCHA-Konfiguration]:** Wählen Sie eine Cloud-Konfiguration aus, die zur Anzeige des Google reCAPTCHA-Dialogfelds für das Formular konfiguriert ist. Es kann sein, dass Sie für ähnliche Zwecke über mehrere Cloud-Konfigurationen in Ihrer Umgebung verfügen. Wählen Sie den Dienst daher sorgfältig aus. Wenn kein Dienst aufgeführt ist, lesen Sie [Verbinden Ihrer AEM Forms-Umgebung mit dem reCAPTCHA-Dienst von Google](#connect-your-forms-environment-with-recaptcha-service-by-google), um zu erfahren, wie Sie einen Cloud Service erstellen, der Ihre AEM Forms-Umgebung mit dem reCAPTCHA-Dienst von Google verbindet.
    * **Captcha-Größe:** Sie können die Anzeigegröße des Dialogfelds für die Google reCAPTCHA-Herausforderung auswählen. Verwenden Sie die Option **[!UICONTROL Kompakt]** zur Anzeige eines kleinen und die Option **[!UICONTROL Normal]**  zur Anzeige eines relativ großen Dialogfelds für die Google reCAPTCHA-Herausforderung.
 
-1. Klicken Sie auf **[!UICONTROL Fertig]**.
+1. Wählen Sie **[!UICONTROL Fertig]**.
 
    Jetzt wird **geschützt durch reCAPTCHA** in Ihrem adaptiven Formular angezeigt. Dies wird in allen adaptiven Formularen angezeigt, die für die Verwendung des Google reCAPTCHA-Dienstes konfiguriert sind.
 

@@ -4,10 +4,10 @@ description: Ein Formularfragment ist eine modulare und wiederverwendbare Kompon
 uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
+feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2137'
 ht-degree: 91%
@@ -33,7 +33,7 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder einen Be
 
 1. Melden Sie sich bei der Autoreninstanz von [!DNL AEM Forms] unter https://[*Hostname*]:[*Port*]/aem/forms.html an.
 1. Klicken Sie auf **Erstellen > Adaptives Formularfragment**.
-1. Geben Sie Titel, Namen, Beschreibung und Tags für das Fragment an.
+1. Geben Sie Titel, Name, Beschreibung und Tags für das Fragment an.
 
    >[!NOTE]
    >
@@ -41,7 +41,7 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder einen Be
 
 1. Klicken Sie, um die Registerkarte **Formularmodell** zu öffnen. Wählen Sie dann aus der Dropdown-Liste **Auswählen** eines der folgenden Fragmentmodelle:
 
-   * **Keins**: Gibt an, dass das Fragment von Grund auf ohne Formularmodell erstellt werden soll.
+   * **Keine**: Gibt an, dass das Fragment von Grund auf ohne Formularmodell erstellt werden soll.
 
      >[!NOTE]
      >
@@ -69,7 +69,7 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder einen Be
 
 Im Bearbeitungsmodus können Sie eine beliebige adaptive Formularkomponente aus dem AEM Sidekick auf das Fragment ziehen. <!-- For information about Adaptive Form components, see Introduction to authoring Adaptive Forms. -->
 
-Wenn Sie außerdem ein XML-Schema oder eine XDP-Formularvorlage als Formularmodell für Ihr Fragment ausgewählt haben, wird in der Inhaltssuche eine neue Registerkarte mit der Formularmodellhierarchie angezeigt. Sie können dann Formularmodellelemente per Drag-and-Drop auf das Fragment ziehen. Die hinzugefügten Formularmodellelemente werden in Formularkomponenten konvertiert, während die ursprünglichen Eigenschaften aus der zugehörigen XDP oder XSD beibehalten werden.
+Wenn Sie außerdem ein XML-Schema oder eine XDP-Formularvorlage als Formularmodell für Ihr Fragment ausgewählt haben, wird in der Inhaltssuche eine neue Registerkarte mit der Formularmodellhierarchie angezeigt. Sie können dann Formularmodellelemente auf das Fragment ziehen. Die hinzugefügten Formularmodellelemente werden in Formularkomponenten konvertiert, wobei die ursprünglichen Eigenschaften des verbundenen XDP oder XSD beibehalten werden.
 
 ### Bereich als Fragment speichern {#save-panel-as-a-fragment}
 
@@ -78,11 +78,11 @@ Wenn Sie außerdem ein XML-Schema oder eine XDP-Formularvorlage als Formularmode
 
    >[!NOTE]
    >
-   >Wenn das Bedienfeld, das Sie gerade speichern, ein untergeordnetes Bedienfeld enthält, wird dieses auch im resultierenden Fragment enthalten sein.
+   >Wenn das Panel, das Sie gerade als Fragment speichern, untergeordnete Panels umfasst, sind diese auch Teil des resultierenden Fragments.
 
-1. Geben Sie im Dialogfeld „Fragmenterstellung“ die folgenden Informationen an:
+1. Geben Sie im Dialogfeld für die Fragmenterstellung die folgenden Informationen an:
 
-   * **Name**: Name des Fragments. Der Standardwert ist der Elementname des Bedienfelds. Dies ist ein Pflichtfeld.
+   * **Name**: Name des Fragments. Der Standardwert ist der Elementname des Panels. Dies ist ein Pflichtfeld.
 
      >[!NOTE]
      >
@@ -107,13 +107,13 @@ Wenn Sie **/** als Fragmentmodellstamm auswählen, wird die vollständige XSD-St
 
    ![save-fragment](assets/save-fragment.png)
 
-   Dialogfeld „Als Fragment speichern“
+   Dialogfeld „Als Fragment speichern“.
 
 1. Klicken Sie auf **OK**.
 
    Das Bedienfeld wird am angegebenen oder am Standardspeicherort im Repository gespeichert. In einem adaptiven Formular wird das Fenster durch einen Schnappschuss des Fragments ersetzt. Wie unten gezeigt, werden das Bedienfeld „Allgemeine Informationen“ und seine untergeordneten Bedienfelder, „Persönliche Informationen“ und „Adresse“, als Fragment gespeichert.
 
-   Um das Fragment zu bearbeiten, klicken Sie in der Symbolleiste des Bedienfelds auf das Symbol **[!UICONTROL Element bearbeiten]**. Das Fragment wird in einer neuen Registerkarte oder einem neuen Fenster im Bearbeitungsmodus geöffnet.
+   Um das Fragment zu bearbeiten, klicken Sie in der Symbolleiste des Bedienfelds auf das Symbol **[!UICONTROL Element bearbeiten]**. Das Fragment wird auf einer neuen Registerkarte oder in einem neuen Fenster im Bearbeitungsmodus geöffnet.
 
    ![Bearbeiten von Fragmenten](assets/edit-fragment.png)
 
@@ -209,7 +209,7 @@ Sie können über die Benutzeroberfläche von [!DNL AEM Forms] mehrere Vorgänge
   </tr>
   <tr>
    <td><p>Kopieren</p> </td>
-   <td><p>Kopiert das ausgewählte Fragment. Das Symbol „Einfügen“ wird in der Symbolleiste angezeigt.<br /> <br /> </p> </td>
+   <td><p>Kopiert das ausgewählte Fragment. Die Schaltfläche „Einfügen“ wird in der Symbolleiste angezeigt.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Download</p> </td>
