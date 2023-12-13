@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ac7af61751c3cf751a7370b454855c5361fabe02
+source-git-commit: acaf2371886b161ce5e8b9f9a9771267703bb32d
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 30%
+source-wordcount: '1278'
+ht-degree: 34%
 
 ---
 
@@ -41,12 +41,6 @@ Sehen Sie sich das Video Versionsübersicht von November 2023 an, um eine Zusamm
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Programm für frühe Anwender {#sites-early-adopter}
-
-**Sie können die [Datendienst für die Echtzeit-Benutzerüberwachung (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** , um die clientseitige Erfassung für AEM as a Cloud Service zu aktivieren.
-
-Der Real User Monitoring (RUM) Data Service bietet eine präzisere Darstellung der Benutzerinteraktionen und stellt so eine zuverlässige Messung der Website-Interaktion sicher. Dies ist eine großartige Gelegenheit, erweiterte Einblicke in Ihre Seitenleistung zu erhalten. Dies ist zwar für Kunden von Vorteil, die entweder Adobe-verwaltetes CDN oder nicht-Adobe-verwaltetes CDN verwenden. Darüber hinaus kann für Kunden, die ein nicht von Adobe verwaltetes CDN verwenden, die automatisierte Traffic-Berichterstellung jetzt für sie aktiviert werden, sodass die Freigabe von Traffic-Berichten für Adobe entfällt.
-
-Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte eine E-Mail an `aemcs-rum-adopter@adobe.com`zusammen mit Ihrem Domänennamen für die Produktions-, Staging- und Entwicklungsumgebung von Ihrer E-Mail-Adresse aus, die mit Ihrer Adobe ID verknüpft ist. Das Produktteam von Adobe aktiviert dann den Datendienst für die Echtzeit-Benutzerüberwachung (RUM) für Sie.
 
 **[Strings in Inhaltsfragmenten suchen und ersetzen](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**: Die Inhaltsfragmentkonsole bietet Benutzern eine einfache und intuitive Möglichkeit, eine Zeichenfolge zu ersetzen, die in mehreren Inhaltsfragmenten gleichzeitig angezeigt wird, um die Content Velocity zu beschleunigen.
 

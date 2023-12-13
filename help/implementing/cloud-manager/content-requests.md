@@ -2,7 +2,7 @@
 title: Grundlegendes zu Cloud Service-Inhaltsanforderungen
 description: Wenn Sie Lizenzen für Inhaltsanforderungen von Adobe erworben haben, erfahren Sie mehr über die Arten von Inhaltsanforderungen, die Adobe Experience Cloud as a Service misst, und über die Abweichungen mit den Analytics-Reporting-Tools eines Unternehmens.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 949f0ec1aa89fd05813bc9ffb02a75fb0ad84a32
+source-git-commit: e31b05f0cef6c5ca3a1c00b757eac013aa43bb90
 workflow-type: tm+mt
 source-wordcount: '2690'
 ht-degree: 4%
@@ -81,7 +81,7 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 
 ## Clientseitige Sammlung {#cliendside-collection}
 
-## Echtzeit-Benutzerüberwachung (RUM) für AEM as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
+### Echtzeit-Benutzerüberwachung (RUM) für AEM as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
