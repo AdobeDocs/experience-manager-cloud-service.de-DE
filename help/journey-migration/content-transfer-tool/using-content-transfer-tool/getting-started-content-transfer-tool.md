@@ -2,10 +2,10 @@
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erfahren Sie mehr über die ersten Schritte mit dem Content Transfer Tool
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 0161477e5248267224fe6d637a192f409161f6d3
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 90%
+source-wordcount: '1362'
+ht-degree: 76%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 90%
 >id="aemcloud_ctt_download"
 >title="Download"
 >abstract="Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Portal heruntergeladen werden. Sie können das Paket über Package Manager in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren. Laden Sie unbedingt die neueste Version herunter."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de" text="Versionshinweise"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=de" text="Versionshinweise"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution-Portal"
 
-Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Portal heruntergeladen werden. Sie können das Paket über [Package Manager](/help/implementing/developing/tools/package-manager.md) in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren. Laden Sie unbedingt die neueste Version herunter. Weitere Informationen zur neuesten Version finden Sie in den [Versionshinweisen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de).
+Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Portal heruntergeladen werden. Sie können das Paket über [Package Manager](/help/implementing/developing/tools/package-manager.md) in Ihrer Adobe Experience Manager-Quellinstanz (AEM). Laden Sie unbedingt die neueste Version herunter. Weitere Informationen zur neuesten Version finden Sie in den [Versionshinweisen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=de).
 
 Nur Version 2.0.0 und höher wird unterstützt, und es wird empfohlen, die neueste Version zu verwenden.
 
 >[!NOTE]
->Laden Sie das Content Transfer Tool vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) herunter.
+>Laden Sie das Content Transfer Tool vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html) herunter.
 
 ## Konnektivität der Quellumgebung {#source-environment-connectivity}
 
@@ -45,7 +45,7 @@ Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo
 
 SSL-/TLS-Verbindungsprobleme zu verstehen kann manchmal schwierig sein. Um Verbindungsprobleme während eines Extraktionsprozesses zu beheben, können Sie die SSL-Protokollierung über die Systemkonsole der AEM-Quellumgebung aktivieren, indem Sie die folgenden Schritte ausführen:
 
-1. Sie gelangen zur Adobe Experience Manager Web-Konsole in Ihrer Quellinstanz, indem Sie zu **Tools – Vorgänge – Web-Konsole** gehen oder direkt zur URL unter *https://serveraddress:serverport/system/console/configMgr*
+1. Navigieren Sie zur Adobe Experience Manager Web Console in Ihrer Quellinstanz, indem Sie zu **Tools > Vorgänge > Web-Konsole** oder direkt auf die URL unter *https://serveraddress:serverport/system/console/configMgr*
 1. Suchen Sie nach **Konfiguration des Content Transfer Tool-Extrahierungs-Service**
 1. Über die Schaltfläche mit dem Stiftsymbol können Sie die Konfigurationswerte bearbeiten
 1. Aktivieren Sie die **SSL-Protokollierung für Extraktion aktivieren** Einstellung festlegen, und drücken Sie dann **Speichern**:
@@ -78,19 +78,19 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
 
 1. Melden Sie sich bei Cloud Acceleration Manager (CAM) an und klicken Sie auf das zuvor erstellte CAM-Projekt, um Ihre Bereitschaft zur Umstellung auf AEM as a Cloud Service zu beurteilen. Wenn Sie kein CAM-Projekt erstellt haben, lesen Sie den Abschnitt über das Erstellen und Verwalten eines Projekts in CAM.
 
-1. Klicken Sie auf **Content Transfer** Karte. Dadurch gelangen Sie zur Listenansicht der Migrationssätze.
+1. Klicken Sie auf **Content Transfer** -Karte, um die Ansicht &quot;Migrationssatzliste&quot;zu öffnen.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
+   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
-1. Erstellen Sie einen Migrationssatz, indem Sie auf **Migrationssatz erstellen** klicken.
+1. Erstellen Sie einen Migrationssatz durch Klicken auf **Migrationssatz erstellen**.
 
    >[!NOTE]
    >
-   >In Cloud Acceleration Manager können maximal zwanzig Migrationssätze, einschließlich abgelaufener Sets, pro Projekt erstellt werden.
+   >In Cloud Acceleration Manager können maximal 20 Migrationssätze, einschließlich abgelaufener Sets, pro Projekt erstellt werden.
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   Das folgende Dialogfeld wird angezeigt. Beachten Sie, dass ein Migrationssatz nach einer längeren Inaktivitätsdauer abläuft. Nachdem entsprechende Warnungen auf der Projektkarte und in den Tabellenzeilen für den Migrationsvorgang über einen bestimmten Zeitraum angezeigt wurden, läuft der Migrationssatz ab, und die zugehörigen Daten sind nicht mehr verfügbar. Lesen Sie [Ablauf von Migrationssätzen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry), um mehr darüber zu erfahren.
+   Das folgende Dialogfeld wird angezeigt. Beachten Sie, dass ein Migrationssatz nach einer längeren Inaktivitätsdauer abläuft. Nachdem Warnungen auf der Projektkarte und die Tabellenzeilen für den Migrationsauftrag für einen Zeitraum angezeigt wurden, läuft der Migrationssatz ab und die zugehörigen Daten sind nicht mehr verfügbar. Lesen Sie [Ablauf von Migrationssätzen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry), um mehr darüber zu erfahren.
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
@@ -114,11 +114,11 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
 >abstract="Nach dem Erstellen eines Migrationssatzes muss er mit dem Inhalt aus der Quellinstanz gefüllt werden, die in die AEM as a Cloud Service-Umgebung verschoben werden muss. Dazu muss das Inhaltstransfer-Tool in der Quellinstanz installiert sein."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=de" text="Extrahieren von Inhalten"
 
-Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu füllen, müssen Sie die neueste Content Transfer Tool-Version auf Ihrer Adobe Experience Manager-Quellinstanz (AEM) installieren. In diesem Abschnitt erfahren Sie, wie Sie den Migrationssatz füllen.
+Um den von Ihnen im Cloud Acceleration Manager erstellten Migrationssatz zu füllen, installieren Sie die neueste Version des Content Transfer Tool auf Ihrer Adobe Experience Manager (AEM)-Quellinstanz. In diesem Abschnitt erfahren Sie, wie Sie den Migrationssatz füllen.
 
 1. Nachdem Sie die neueste Version des Content Transfer Tools auf Ihrer Quellinstanz für Adobe Experience Manager installiert haben, navigieren Sie zu **Vorgänge – Inhaltsmigration**
 
-1. Klicks **Migrationssatz erstellen**
+1. Klicks **Migrationssatz erstellen**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
@@ -126,7 +126,7 @@ Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu fül
 
    >[!NOTE]
    >
-   >Vergewissern Sie sich, dass der Extraktionsschlüssel gültig ist und nicht kurz vor seinem Ablaufdatum ist. Diese Informationen finden Sie im Dialogfeld **Migrationssatz erstellen**, nachdem Sie den Extraktionsschlüssel eingefügt haben. Wenn Sie einen Verbindungsfehler erhalten, finden Sie unter [Konnektivität der Quellumgebung](#source-environment-connectivity) weitere Informationen.
+   >Stellen Sie sicher, dass der Extraktionsschlüssel gültig ist und nicht in der Nähe seines Ablaufs liegt. Diese Informationen finden Sie im Dialogfeld **Migrationssatz erstellen**, nachdem Sie den Extraktionsschlüssel eingefügt haben. Wenn Sie einen Verbindungsfehler erhalten, finden Sie unter [Konnektivität der Quellumgebung](#source-environment-connectivity) weitere Informationen.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 
@@ -202,4 +202,4 @@ Gehen Sie wie folgt vor, um eine Größenüberprüfung durchzuführen:
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie gelernt haben, wie Sie einen Migrationssatz erstellen, können Sie im Content Transfer Tool jetzt mehr über Extraktions- und Aufnahmeprozesse erfahren. Bevor Sie diese Prozesse erlernen, müssen Sie sich mit dem [Umgang mit großen Inhalts-Repositorys](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) befassen, um die Extraktions- und Aufnahmephasen der Inhaltsübertragungsaktivität zum Verschieben von Inhalten zu AEM as a Cloud Service erheblich zu beschleunigen.
+Nachdem Sie gelernt haben, wie Sie einen Migrationssatz erstellen, können Sie im Content Transfer Tool jetzt mehr über Extraktions- und Aufnahmeprozesse erfahren. Bevor Sie diese Prozesse kennenlernen, müssen Sie [Umgang mit großen Inhaltsverzeichnissen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) , um die Extraktions- und Aufnahmephasen der Inhaltstransferaktivität erheblich zu beschleunigen und Inhalte auf AEM as a Cloud Service zu verschieben.
