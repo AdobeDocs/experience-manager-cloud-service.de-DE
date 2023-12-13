@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 46575e36a7037bee7c33c94748fc0fc92880ea87
+source-git-commit: 97f08d3474ad395d3228fb848a546927e6431050
 workflow-type: tm+mt
-source-wordcount: '4437'
-ht-degree: 93%
+source-wordcount: '4456'
+ht-degree: 92%
 
 ---
 
@@ -755,8 +755,12 @@ ht-degree: 93%
    + [Migration](/help/commerce-cloud/migration.md)
    + [Häufig gestellte Fragen (FAQ)](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
-   + [Erste Schritte mit der Edge-Bereitstellung](/help/edge/overview.md)
+   + [AEM und Edge Delivery Services](/help/edge/overview.md)
    + [Verwenden der Edge-Bereitstellung](/help/edge/using.md)
+   + [Authoring von Inhalten für die Edge-Bereitstellung](/help/edge/authoring.md)
+   + [Veröffentlichen von Inhalten für die Edge-Bereitstellung](/help/edge/publishing.md)
+   + [Entwickeln für die Edge-Bereitstellung](/help/edge/developing.md)
+   + [Vorhandene Projekte und Edge-Bereitstellung](/help/edge/existing-projects.md)
 + Headless {#headless}
    + [Was ist ein Headless-CMS?](/help/headless/what-is-headless.md)
    + [Einführung in AEM Headless](/help/headless/introduction.md)
