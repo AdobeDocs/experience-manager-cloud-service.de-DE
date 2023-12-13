@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 821c243ab2d8ce1468c80c36d01b5c4c8f2bec76
 workflow-type: tm+mt
-source-wordcount: '2001'
-ht-degree: 84%
+source-wordcount: '2033'
+ht-degree: 80%
 
 ---
 
@@ -231,9 +231,12 @@ Die Kontaktperson generiert Anmeldeinformationen und teilt Ihnen diese mit. Im n
 
 Sie können jetzt Adobe Acrobat Sign-Felder [in einem adaptiven Formular](working-with-adobe-sign.md) oder einem [AEM-Workflow](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step) hinzufügen. Stellen Sie sicher, dass Sie den für die Cloud-Service-Konfiguration verwendeten Konfigurations-Container zu allen adaptiven Formularen hinzufügen, die für [!DNL Adobe Acrobat Sign] aktiviert sind. Sie können einen Konfigurations-Container in den Eigenschaften eines adaptiven Formulars angeben.
 
-## (Nur für AEM-Workflows) Konfigurieren der [!DNL Adobe Acrobat Sign]-Planung, um den Unterzeichnungsstatus zu synchronisieren {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
+## Konfigurieren des [!DNL Adobe Acrobat Sign]-Scheduler-Service, um den Signaturstatus zu synchronisieren {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
-Wenn Sie zum Unterzeichnen eines adaptiven Formulars den [!DNL Adobe Acrobat Sign]-Workflow-Schritt verwenden, kann das Formular je nach Konfiguration des Workflow-Schritts nacheinander an jeweils einen Unterzeichner oder gleichzeitig an alle Unterzeichner gesendet werden. Adaptive Formulare für [!DNL Adobe Acrobat Sign] werden erst dann an den Experience Manager-Formular-Server weitergeleitet, nachdem alle Unterzeichner den Unterzeichnungsvorgang abgeschlossen haben.
+AEM Forms as a Cloud Service bietet einen Scheduler-Dienst, der den Status von Signierern in definierten Intervallen überprüft. Die Szenarien, in denen Sie den Planungsdienst konfigurieren:
+
+* Wenn Sie [Senden Sie das Formular (nachdem jeder Empfänger die Unterzeichnungszeremonie abgeschlossen hat)](/help/forms/working-with-adobe-sign.md#select-adobe-sign-cloud-service-and-signing-order) zum Signieren eines Dokuments wird das Formular erst gesendet, nachdem alle Unterzeichner das Formular signiert haben.
+* Wenn Sie die [Signieren von Schritten in einem AEM-Workflow](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step) um ein Dokument zu signieren, wartet der Schritt zum Signieren, bis alle Unterzeichner das Dokument signieren, bevor sie mit dem nächsten Schritt des Workflows fortfahren.
 
 Standardmäßig überprüfen die [!DNL Adobe Acrobat Sign]-Planungs-Services die Unterzeichnerreaktionen alle 24 Stunden. Sie können das Standardintervall für Ihre Umgebung ändern.
 

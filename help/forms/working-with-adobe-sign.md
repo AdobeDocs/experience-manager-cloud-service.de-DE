@@ -6,10 +6,10 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: e81da7414335e00411942adeb41978d39f172b52
 workflow-type: tm+mt
-source-wordcount: '3131'
-ht-degree: 90%
+source-wordcount: '3242'
+ht-degree: 87%
 
 ---
 
@@ -160,7 +160,7 @@ Ein Dokument kann auch mehrere Empfänger haben. Beispielsweise können bei eine
 
 So wählen Sie einen Cloud Service und die Signierreihenfolge aus:
 
-![Cloud-service](assets/cloud-service.png)
+![Cloud-service](/help/forms/assets/adobe-sign-cloud-service.png)
 
 1. Wählen Sie im Inhaltsbrowser die Option **[!UICONTROL Formular-Container]** und wählen Sie die **[!UICONTROL Konfigurieren]** ![konfigurieren](assets/Smock_Wrench_18_N.svg) Symbol. Dadurch wird der Eigenschaftenbrowser geöffnet, der die Eigenschaften des Containers für adaptive Formulare anzeigt.
 1. Erweitern Sie im Eigenschaftenbrowser das Akkordeon **[!UICONTROL Elektronische Signatur]** und wählen Sie die Option **[!UICONTROL Adobe Sign aktivieren]**. Dadurch wird [!DNL Adobe Sign] für ein adaptives Formular aktiviert.
@@ -170,6 +170,10 @@ So wählen Sie einen Cloud Service und die Signierreihenfolge aus:
 
    In der Dropdown-Liste werden die Cloud Service aufgelistet, die im `global` Ordner in Tools > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. Darüber hinaus werden in der Dropdownliste auch die Cloud Service aufgelistet, die in dem Ordner vorhanden sind, den Sie im **[!UICONTROL Konfigurations-Container]** beim Erstellen eines adaptiven Formulars ein.
 
+1. Wählen Sie die Option zum Konfigurieren der Sendeaktion mit **[!UICONTROL Formular senden]**. Sie können eine der beiden folgenden Optionen auswählen:
+   * **Senden Sie das Formular (und senden Sie die Vereinbarung zur Unterzeichnung)**: Mit dieser Option wird das Formular sofort gesendet und anschließend zur Unterzeichnung an die Empfänger gesendet.
+   * **Senden Sie das Formular (nachdem jeder Empfänger die Unterzeichnungszeremonie abgeschlossen hat)**: Mit dieser Option wird Adaptive Forms erst gesendet, nachdem alle Unterzeichner den Signiervorgang abgeschlossen haben. Sie können das Intervall konfigurieren, um den Signaturstatus für alle Unterzeichner zu überprüfen. Weitere Informationen finden Sie unter  [Konfigurieren [!DNL Adobe Acrobat Sign] Planung](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status).
+
 1. Wählen Sie die Signaturreihenfolge im Dialogfeld **[!UICONTROL Empfänger können]**. Die Empfänger können ein adaptives Formular **[!UICONTROL sequenziell]**, d. h. ein Empfänger nach dem anderen, oder **[!UICONTROL simultan]** in beliebiger Reihenfolge signieren.
 
    In sequenzieller Reihenfolge erhält ein Empfänger nach dem anderen die Adobe Sign-Vereinbarung. Nachdem der Empfänger die zugewiesene Aktion abgeschlossen hat, wird die Vereinbarung an den nächsten Empfänger gesendet usw.
@@ -177,6 +181,10 @@ So wählen Sie einen Cloud Service und die Signierreihenfolge aus:
    Alle Empfänger erhalten gleichzeitig die Adobe Sign-Vereinbarung und können parallel handeln.
 
 1. Verwenden Sie das Feld „Zustimmungs-ID“, um eine bindref zur Zustimmungs-ID (agreementId) zuzuordnen. Es fügt die Vereinbarung-ID zum Abschnitt afBoundData der Übermittlungsdaten für schemabasierte Formulare hinzu. Die Vereinbarungs-ID wird auch zum Abschnitt afSubmissionInfo in den übermittelten Daten für alle Adobe Sign-fähigen Formulare hinzugefügt. Sie können die Vereinbarungs-ID verwenden, um den Vertragsstatus mithilfe von benutzerdefiniertem Code zu verfolgen (kundenspezifische Implementierung erforderlich).
+
+   >[!NOTE]
+   >
+   > Wenn ein adaptives Formular mithilfe eines Formulardatenmodells erstellt wird, wird das Feld &quot;Vereinbarung-ID&quot;im Dialogfeld angezeigt.
 
 1. [Hinzufügen von Empfängern zu einem adaptiven Formular](working-with-adobe-sign.md#addsignerstoanadaptiveform) und wählen Sie Fertig aus ![Speichern](assets/save_icon.svg) -Symbol, um die Änderungen zu speichern.
 
