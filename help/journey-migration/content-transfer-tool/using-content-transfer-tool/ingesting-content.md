@@ -2,10 +2,10 @@
 title: Erfassen von Inhalten in Cloud Service
 description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ihrem Migrationssatz in eine Ziel-Cloud Service-Instanz aufnehmen können.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: a66724cf76e4562710e458aeeea0d54ea9efb9aa
+source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
 workflow-type: tm+mt
-source-wordcount: '2315'
-ht-degree: 42%
+source-wordcount: '2392'
+ht-degree: 40%
 
 ---
 
@@ -35,7 +35,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager zu
       * Migrationssätze laufen nach längerer Inaktivität ab. Daher wird erwartet, dass die Aufnahme relativ bald nach der Extraktion erfolgt. Lesen Sie [Ablauf von Migrationssätzen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry), um mehr darüber zu erfahren.
 
    >[!TIP]
-   > Wenn die Extraktion derzeit ausgeführt wird, wird sie im Dialogfeld angezeigt. Nach erfolgreichem Abschluss der Extraktion wird die Aufnahme automatisch gestartet. Wenn die Extraktion fehlschlägt oder angehalten wird, wird der Aufnahmevorgang zurückgesetzt.
+   > Wenn die Extraktion ausgeführt wird, wird sie im Dialogfeld angezeigt. Nach erfolgreichem Abschluss der Extraktion wird die Aufnahme automatisch gestartet. Wenn die Extraktion fehlschlägt oder angehalten wird, wird der Aufnahmevorgang zurückgesetzt.
 
    * **Ziel:** Wählen Sie die Zielumgebung aus. In dieser Umgebung wird der Inhalt des Migrationssatzes erfasst.
       * Einstiege unterstützen kein RDE-Ziel (Rapid Development Environment) und erscheinen nicht als mögliche Zielauswahl, selbst wenn der Benutzer Zugriff darauf hat.
@@ -45,7 +45,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager zu
       * Wenn die Quelle `Author`wird empfohlen, sie in die `Author` Ebene auf dem Ziel. Wenn die Quelle `Publish`, sollte die Zielgruppe `Publish` sowie.
 
    >[!NOTE]
-   > Wenn es sich bei `Author` um die Zielebene handelt, wird die Authoring-Instanz während der Aufnahmedauer heruntergefahren, sodass sie Benutzenden (wie beispielsweise Autorinnen und Autoren oder anderen, die Wartungsarbeiten durchführen) nicht zur Verfügung steht. Dadurch soll das System geschützt werden, und es sollen Änderungen verhindert werden, die verloren gehen oder einen Aufnahmekonflikt verursachen könnten. Stellen Sie sicher, dass Ihr Team sich dieser Tatsache bewusst ist. Beachten Sie außerdem, dass sich die Umgebung während der Author-Aufnahme im Ruhezustand befindet.
+   > Wenn es sich bei `Author` um die Zielebene handelt, wird die Authoring-Instanz während der Aufnahmedauer heruntergefahren, sodass sie Benutzenden (wie beispielsweise Autorinnen und Autoren oder anderen, die Wartungsarbeiten durchführen) nicht zur Verfügung steht. Der Grund besteht darin, das System zu schützen und alle Änderungen zu verhindern, die entweder verloren gehen oder einen Aufnahmekonflikt verursachen könnten. Stellen Sie sicher, dass Ihr Team sich dieser Tatsache bewusst ist. Beachten Sie außerdem, dass sich die Umgebung während der Author-Aufnahme im Ruhezustand befindet.
 
    * **Wischen:** Wählen Sie die `Wipe` value
       * Die **Wischen** -Option legt den Startpunkt des Ziels für die Aufnahme fest. Wenn **Wischen** aktiviert ist, wird das Ziel, einschließlich des gesamten Inhalts, auf die in Cloud Manager angegebene AEM zurückgesetzt. Wenn diese Option nicht aktiviert ist, behält das Ziel seinen aktuellen Inhalt als Ausgangspunkt bei.
@@ -78,7 +78,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager zu
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Auffüllaufnahme"
->abstract="Verwenden Sie die Auffüllfunktion, um Inhalte zu verschieben, die seit der vorherigen Aktivität zur Inhaltstransfer geändert wurden. Überprüfen Sie nach Abschluss der Aufnahme die Protokolle auf Fehler/Warnungen. Alle Fehler sollten sofort behoben werden, indem Sie sich entweder mit den gemeldeten Problemen befassen oder die Adobe-Kundenunterstützung kontaktieren."
+>abstract="Verwenden Sie die Auffüllfunktion, um Inhalte zu verschieben, die seit der vorherigen Aktivität zur Inhaltstransfer geändert wurden. Überprüfen Sie nach Abschluss der Aufnahme die Protokolle auf Fehler oder Warnungen. Alle Fehler sollten sofort behoben werden, indem Sie sich entweder mit den gemeldeten Problemen befassen oder die Adobe-Kundenunterstützung kontaktieren."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=de" text="Anzeigen von Protokollen"
 
 Das Content Transfer Tool verfügt über eine Funktion, die die Extraktion von differenziellen Inhalten ermöglicht, indem eine *top-up* des Migrationssatzes. Dadurch kann der Migrationssatz so geändert werden, dass nur der Inhalt einbezogen wird, der seit der vorherigen Extraktion geändert wurde, ohne dass der gesamte Inhalt erneut extrahiert werden muss.
@@ -97,7 +97,7 @@ Erstellen Sie zunächst einen Aufnahmeauftrag und stellen Sie sicher, dass **Wis
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Fehlerbehebung bei der Inhaltsaufnahme"
->abstract="In den Aufnahmeprotokollen und der Dokumentation finden Sie Lösungen für häufige Gründe, warum eine Aufnahme fehlschlagen kann, finden Sie die Möglichkeit, das Problem zu beheben und führen die Aufnahme erneut aus."
+>abstract="In den Aufnahmeprotokollen und der Dokumentation finden Sie Lösungen für häufige Gründe, aus denen eine Aufnahme fehlschlagen kann, und eine Möglichkeit, das Problem zu beheben. Nach der Korrektur kann die Aufnahme erneut ausgeführt werden."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=de" text="Validieren von Inhaltsübertragungen  "
 
 ### CAM kann das Migrations-Token nicht abrufen {#cam-unable-to-retrieve-the-migration-token}
@@ -132,14 +132,14 @@ Diese Meldung weist darauf hin, dass Cloud Acceleration Manager nicht in der Lag
 
 * AEM as a Cloud Service verwaltet den Umgebungsstatus und muss den Migrations-Service gelegentlich aus einer Reihe normaler Gründe neu starten. Wenn der Service gerade neu gestartet wird, ist er nicht erreichbar, wird aber bald wieder verfügbar sein.
 * Möglicherweise wird ein anderer Prozess in der Instanz ausgeführt. Wenn beispielsweise [AEM Versionsaktualisierungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=de) eine Aktualisierung ausführt, das System möglicherweise ausgelastet ist und der Migrationsdienst regelmäßig nicht verfügbar ist. Sobald dieser Vorgang abgeschlossen ist, kann der Beginn der Aufnahme erneut versucht werden.
-* Wenn eine [IP-Zulassungsliste über Cloud Manager angewendet wurde](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md), hindert sie Cloud Acceleration Manager daran, den Migrations-Service zu erreichen. Eine IP-Adresse kann nicht für Aufnahmen hinzugefügt werden, da diese Adresse dynamisch ist. Derzeit besteht die einzige Lösung darin, die IP-Zulassungsliste während der Aufnahme und Indizierung zu deaktivieren.
+* Wenn eine [IP-Zulassungsliste über Cloud Manager angewendet wurde](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md), hindert sie Cloud Acceleration Manager daran, den Migrations-Service zu erreichen. Eine IP-Adresse kann nicht für Aufnahmen hinzugefügt werden, da diese Adresse dynamisch ist. Derzeit besteht die einzige Lösung darin, die IP-Zulassungsliste während des Aufnahme- und Indizierungsprozesses zu deaktivieren.
 * Es kann andere Gründe geben, die untersucht werden müssen. Wenn die Aufnahme oder Indizierung weiterhin fehlschlägt, wenden Sie sich an die Adobe-Kundenunterstützung.
 
-### AEM-Versionsaktualisierungen und -verschreibungen
+### AEM-Versionsaktualisierungen und -verschreibungen {#aem-version-updates-and-ingestions}
 
 [AEM Versionsaktualisierungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=de) werden automatisch auf Umgebungen angewendet, um sie mit der neuesten AEM as a Cloud Service Version auf dem neuesten Stand zu halten. Wenn die Aktualisierung bei der Ausführung einer Aufnahme ausgelöst wird, kann dies zu unvorhersehbaren Ergebnissen führen, einschließlich der Beschädigung der Umgebung.
 
-Wenn die &quot;AEM Versionsaktualisierungen&quot;im Zielprogramm integriert ist, versucht der Aufnahmevorgang, die Warteschlange zu deaktivieren, bevor sie gestartet wird. Wenn die Aufnahme abgeschlossen ist, wird der Status des Versionsaktualisierers so zurückgegeben, wie er vor dem Start der Aufnahme(en) war.
+Wenn die &quot;AEM-Versionsaktualisierungen&quot;im Zielprogramm integriert sind, versucht der Aufnahmeprozess, die Warteschlange zu deaktivieren, bevor sie gestartet wird. Wenn die Aufnahme abgeschlossen ist, wird der Status des Versionsaktualisierers so zurückgegeben, wie er vor dem Start der Aufnahme war.
 
 >[!NOTE]
 >
@@ -149,11 +149,11 @@ Wenn &quot;AEM Versionsaktualisierungen&quot;aktiv ist (d. h. Aktualisierungen w
 
 >[!NOTE]
 >
-> &quot;AEM Versionsaktualisierungen&quot;wird in der Pipeline der Umgebung ausgeführt und wartet, bis die Pipeline gelöscht ist. Wenn Updates länger als erwartet in die Warteschlange gestellt werden, stellen Sie sicher, dass die Pipeline in einem benutzerdefinierten Workflow nicht unbeabsichtigt gesperrt wird.
+> &quot;AEM Versionsaktualisierungen&quot;wird in der Pipeline der Umgebung ausgeführt und wartet, bis die Pipeline gelöscht ist. Wenn Aktualisierungen länger als erwartet in die Warteschlange gestellt werden, stellen Sie sicher, dass die Pipeline in einem benutzerdefinierten Workflow nicht unbeabsichtigt gesperrt wird.
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### Auffüllungsfehler aufgrund von Eindeutigkeitsbegrenzung
+### Auffüllungsfehler aufgrund von Eindeutigkeitsbegrenzung {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 Eine häufige Ursache für einen [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)-Fehler ist ein Konflikt bei Knoten-IDs. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
 
@@ -165,7 +165,7 @@ Dies kann auch vorkommen, wenn ein Knoten auf dem Ziel zwischen einer Aufnahme u
 
 Dieser Konflikt muss manuell behoben werden. Dabei muss eine Person, die mit dem Inhalt vertraut ist, entscheiden, welche der beiden Knoten gelöscht werden muss, wobei andere Inhalte, die darauf verweisen, zu berücksichtigen sind. Zur Lösung des Problems kann es erforderlich sein, dass die Auffüllextraktion ohne den fehlerhaften Knoten wiederholt wird.
 
-### Fehler bei der Auffüllaufnahme aufgrund der nicht zu löschenden referenzierten Knotens
+### Fehler bei der Auffüllaufnahme aufgrund der nicht zu löschenden referenzierten Knotens {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
 Eine weitere häufige Ursache für eine [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) Fehler ist ein Versionskonflikt für einen bestimmten Knoten in der Zielinstanz. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
 
@@ -175,11 +175,17 @@ Dies kann vorkommen, wenn ein Knoten im Ziel zwischen einer Aufnahme und einer n
 
 Die Lösung kann erfordern, dass die Auffüllextraktion erneut durchgeführt wird, ohne dass der verletzende Knoten vorhanden ist. Oder erstellen Sie einen kleinen Migrationssatz des fehlerhaften Knotens, wobei &quot;Include versions&quot;deaktiviert ist.
 
-Best Practices weisen darauf hin, dass **Nicht wischen** Die Aufnahme muss mit einem Migrationssatz durchgeführt werden, der Versionen enthält (d. h. mit &quot;Include versions&quot;=true extrahiert). Es ist wichtig, dass der Zielinhalt so wenig wie möglich geändert wird, bis die Migration-Journey abgeschlossen ist. Andernfalls können diese Konflikte auftreten.
+Best Practices weisen darauf hin, dass **Nicht wischen** Die Aufnahme muss mit einem Migrationssatz durchgeführt werden, der Versionen enthält. Es ist wichtig, dass der Zielinhalt so wenig wie möglich geändert wird, bis die Migration-Journey abgeschlossen ist. Andernfalls können diese Konflikte auftreten.
 
-### Aufnahme zurückgesetzt
+### Aufnahmefehler aufgrund von Eigenschaftswerten für große Knoten {#ingestion-failure-due-to-large-node-property-values}
 
-Eine Aufnahme, die mit einer laufenden Extraktion als Migrationssatz für die Quelle erstellt wurde, wartet geduldig, bis diese Extraktion erfolgreich ist, und beginnt zu diesem Zeitpunkt normal. Wenn die Extraktion fehlschlägt oder angehalten wird, werden die Aufnahme und der zugehörige Indizierungsauftrag nicht gestartet, aber zurückgesetzt. Überprüfen Sie in diesem Fall die Extraktion, um festzustellen, warum sie fehlgeschlagen ist, beheben Sie das Problem und beginnen Sie erneut mit dem Extrahieren. Sobald die feste Extraktion ausgeführt wird, kann eine neue Aufnahme geplant werden.
+Die in MongoDB gespeicherten Knoteneigenschaftswerte dürfen 16 MB nicht überschreiten. Wenn ein Knotenwert die unterstützte Größe überschreitet, schlägt die Aufnahme fehl und das Protokoll enthält eine `BSONObjectTooLarge` und geben Sie an, welcher Knoten den Maximalwert überschritten hat. Beachten Sie, dass dies eine MongoDB-Beschränkung ist.
+
+Siehe `Node property value in MongoDB` Hinweis in [Voraussetzungen für das Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) für weitere Informationen und einen Link zu einem Oak-Tool, mit dem alle großen Knoten gefunden werden können. Nachdem alle Knoten mit großen Größen behoben wurden, führen Sie die Extraktion und Aufnahme erneut aus.
+
+### Aufnahme zurückgesetzt {#ingestion-rescinded}
+
+Eine Aufnahme, die mit einer laufenden Extraktion erstellt wurde, während die Quellmigration festgelegt wurde, wartet geduldig, bis diese Extraktion erfolgreich ist, und beginnt an diesem Punkt normal. Wenn die Extraktion fehlschlägt oder angehalten wird, werden die Aufnahme und der zugehörige Indizierungsauftrag nicht gestartet, aber zurückgesetzt. Überprüfen Sie in diesem Fall die Extraktion, um festzustellen, warum sie fehlgeschlagen ist, beheben Sie das Problem und beginnen Sie erneut mit dem Extrahieren. Sobald die feste Extraktion ausgeführt wird, kann eine neue Aufnahme geplant werden.
 
 ## Wie geht es weiter {#whats-next}
 
