@@ -2,9 +2,9 @@
 title: Inhaltserstellung für Edge Delivery Services
 description: Erfahren Sie, wie Content Authoring mit Edge Delivery Services funktioniert und wie Sie AEM Inhalte mit Edge Delivery Services erstellen.
 feature: Edge Delivery Services
-source-git-commit: f6e1c5de57ee0297abdf6b03faf550a266dfac32
+source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '461'
 ht-degree: 14%
 
 ---
@@ -21,7 +21,7 @@ Mit Edge Delivery Services ist das Authoring einfach, schnell und flexibel. Sie 
 
 Beim dokumentbasierten Authoring können Sie mit verschiedenen Quellen wie Microsoft Word und Google Docs arbeiten. Dokumente aus diesen Quellen werden zu Seiten auf Ihrer Website. Überschriften, Listen, Bilder, Schriftelemente und Videos können von der ursprünglichen Quelle auf Ihre Website übertragen werden. Sie können Metadaten für SEO-Zwecke hinzufügen oder Blöcke verwenden, um mit strukturierten Inhalten zu arbeiten und Funktionen hinzuzufügen.
 
-Weitere Informationen zum dokumentbasierten Authoring finden Sie unter [Dieses Dokument finden Sie in der Edge Delivery Services-Dokumentation.](https://www.aem.live/docs/authoring)
+Weitere Informationen zum dokumentbasierten Authoring finden Sie unter [Dieses Dokument finden Sie in der Edge Delivery Services-Dokumentation.](/help/edge/docs/authoring.md)
 
 ## Authoring mit universellen Editoren {#universal-editor}
 
@@ -40,7 +40,7 @@ Bei der Verwendung von Edge Delivery Services mit AEM as a Cloud Service ist es 
    * Der Inhalt bleibt in AEM gespeichert.
    * AEM rendert semantische HTML, die für die Aufnahme benötigt wird.
    * Inhalte werden in Edge Delivery Services veröffentlicht.
-1. [Edge-Bereitstellungsdienste](https://www.aem.live/home) 100% Lighthouse-Wert sicherstellen.
+1. [Edge-Bereitstellungsdienste](/help/edge/developer/keeping-it-100.md) 100% Lighthouse-Wert sicherstellen.
 
 Blöcke sind grundlegende Komponenten einer Seite, die von Edge Delivery Services bereitgestellt wird. Autoren können aus Standardblöcken wählen, die standardmäßig von Adobe bereitgestellt werden, oder aus Bausteinen, die von Ihren Entwicklern für Ihr Projekt angepasst wurden.
 

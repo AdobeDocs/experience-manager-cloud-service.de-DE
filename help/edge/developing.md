@@ -2,9 +2,9 @@
 title: Entwickeln für Edge Delivery Services
 description: Erfahren Sie, wie Sie Bausteine entwickeln und Ihr AEM für die Arbeit mit Edge Delivery Services anpassen können.
 feature: Edge Delivery Services
-source-git-commit: eca5126ca46a9b3b837739c31a6891471a16cfe3
+source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '257'
 ht-degree: 14%
 
 ---
@@ -20,7 +20,7 @@ Blöcke sind der grundlegendste Teil einer Seite, die von Edge Delivery Services
 
 AEM stellt Standardblöcke als Teil des Produkts in der Projektvorlage bereit. Zu diesen Bausteinen gehören Überschrift, Text, Bilder, Links, Listen usw.
 
-Lesen Sie hierzu die [Build-Abschnitt](https://www.aem.live/docs/#build) Weitere Informationen zu Bausteinen und zur Entwicklung für Edge-Bereitstellungsdienste finden Sie in der Edge Delivery Services-Dokumentation .
+Lesen Sie hierzu die [Build-Abschnitt](/help/edge/developer/block-collection.md) Weitere Informationen zu Bausteinen und zur Entwicklung für Edge-Bereitstellungsdienste finden Sie in der Edge Delivery Services-Dokumentation .
 
 ## Edge Delivery Services und GitHub {#github-edge}
 
@@ -30,4 +30,4 @@ Ihre Autoren können Inhalte entweder mit dokumentbasiertem Authoring oder mit I
 
 Websites werden automatisch für jede Ihrer Verzweigungen erstellt, von der Inhaltsvorschau bis zur Produktion. Jede Ressource, die Sie in Ihr GitHub-Repository einfügen, steht auf Ihrer Website ohne Erstellungsprozess zur Verfügung.
 
-Lesen Sie hierzu die [Build-Abschnitt](https://www.aem.live/docs/#build) Weitere Informationen zu Bausteinen und zur Entwicklung für Edge-Bereitstellungsdienste finden Sie in der Edge Delivery Services-Dokumentation .
+Lesen Sie hierzu die [Build-Abschnitt](/help/edge/developer/block-collection.md) Weitere Informationen zu Bausteinen und zur Entwicklung für Edge-Bereitstellungsdienste finden Sie in der Edge Delivery Services-Dokumentation .
