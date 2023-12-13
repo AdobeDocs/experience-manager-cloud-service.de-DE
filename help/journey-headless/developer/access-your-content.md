@@ -2,10 +2,10 @@
 title: Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs
 description: In diesem Teil der AEM Headless-Entwickler-Tour lernen Sie, wie Sie GraphQL-Abfragen verwenden, um auf den Inhalt Ihrer Inhaltsfragmente zuzugreifen.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 0d0b91551582040c39d57b29c8f2141c2ff6d553
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 97%
+source-wordcount: '1344'
+ht-degree: 98%
 
 ---
 
@@ -133,7 +133,7 @@ Die **Fragmentreferenz**:
 
 * ist ein bestimmter Datentyp, der beim Definieren eines Inhaltsfragmentmodells verfügbar ist,
 * verweist auf ein anderes Fragment, abhängig von einem bestimmten Inhaltsfragmentmodell,
-* Ermöglicht das Erstellen und anschließende Abrufen strukturierter Daten.
+* Ermöglicht es Ihnen, strukturierte Daten zu erstellen und dann abzurufen.
 
    * Wenn als **multifeed** definiert, können mehrere Unterfragmente vom primären Fragment referenziert (abgerufen) werden.
 
@@ -356,6 +356,7 @@ Nachdem Sie nun erfahren haben, wie Sie mit der AEM-GraphQL-API auf Ihren Headle
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
+* [Adobe Experience Manager as a Cloud Service-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [GraphQL.org](https://graphql.org)
    * [Schemata](https://graphql.org/learn/schema/)
    * [Variablen](https://graphql.org/learn/queries/#variables)
@@ -374,6 +375,6 @@ Nachdem Sie nun erfahren haben, wie Sie mit der AEM-GraphQL-API auf Ihren Headle
    * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [JSON-Ausgabe](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [Verstehen von Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=de#understand-cross-origin-resource-sharing-(cors))
-* [Persistente GraphQL-Abfragen - Aktivierung der Zwischenspeicherung im Dispatcher](/help/headless/deployment/dispatcher-caching.md)
+* [Persistierte GraphQL-Abfragen – Aktivieren der Caching-Funktion im Dispatcher](/help/headless/deployment/dispatcher-caching.md)
 * [Erstellen von Zugriffs-Tokens für Server-seitige APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
 * [Erste Schritte mit AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) – eine kurze Video-Tutorial-Reihe, die einen Überblick über die Verwendung AEM Headless-Funktionen bietet, einschließlich Inhaltsmodellierung und GraphQL.

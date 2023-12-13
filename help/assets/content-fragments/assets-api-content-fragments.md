@@ -3,10 +3,10 @@ title: Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfra
 description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einem wichtigen Teil der Headless-Bereitstellungs-Funktion in Adobe Experience Manager.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 38cb2605e2133e858c60644084cf515a03b54f60
 workflow-type: tm+mt
-source-wordcount: '1788'
-ht-degree: 98%
+source-wordcount: '1747'
+ht-degree: 97%
 
 ---
 
@@ -29,6 +29,10 @@ Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-H
 >* einschließlich Unterstützung für Inhaltsfragmente
 >
 >Die aktuelle Implementierung der Assets-HTTP API basiert auf dem [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer)-Architekturstil.
+
+>[!NOTE]
+>
+>Aktuelle Informationen zu Experience Manager-APIs finden Sie unter [Adobe Experience Manager as a Cloud Service-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 Die [Assets-REST-API](/help/assets/mac-api-assets.md) ermöglicht Entwicklungspersonen von Adobe Experience Manager as a Cloud Service den direkten Zugriff auf (in AEM gespeicherte) Inhalte über die HTTP-API mit CRUD-Vorgängen (Erstellen, Lesen, Aktualisieren, Löschen).
 
@@ -149,7 +153,7 @@ Wenn die Assets-REST-API in einer Umgebung ohne spezifische Authentifizierungsan
 >
 >Weitere Informationen finden Sie unter:
 >
->* [Erklärung von CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=de?lang=de)
+>* [Erklärung von CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en)
 >* [Video: Entwickeln für CORS mit AEM (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=de)
 >
 

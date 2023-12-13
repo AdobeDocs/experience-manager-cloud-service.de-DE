@@ -3,10 +3,10 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 7aeab6ab7dcd933a1d02514b6eea752527055c77
+source-git-commit: 1b93cc01c602114d2a1822bc90e0efb5a6e40d6d
 workflow-type: tm+mt
-source-wordcount: '4910'
-ht-degree: 91%
+source-wordcount: '4930'
+ht-degree: 92%
 
 ---
 
@@ -29,6 +29,10 @@ Die Verwendung der GraphQL-API in AEM ermöglicht die effiziente Bereitstellung 
 >
 >* [AEM Commerce nutzt Daten von einer Commerce-Plattform über GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* AEM-Inhaltsfragmente stellen in Kombination mit der AEM-GraphQL-API (einer auf GraphQL basierenden benutzerdefinierten Implementierung) strukturierte Inhalte für die Verwendung in Ihren Programmen bereit.
+
+>[!NOTE]
+>
+>Aktuelle Informationen zu Experience Manager-APIs finden Sie unter [Adobe Experience Manager as a Cloud Service-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 ## Die GraphQL-API {#graphql-api}
 
@@ -117,7 +121,7 @@ GraphQL-Abfragen über POST werden nicht empfohlen, da sie nicht zwischengespeic
 
 GraphQL unterstützt zwar auch GET-Anfragen, diese können jedoch Einschränkungen (z. B. die Länge der URL) erreichen, die durch die Verwendung persistenter Abfragen vermieden werden können.
 
-Siehe [Zwischenspeichern persistenter Abfragen aktivieren](/help/headless/deployment/dispatcher-caching.md) für weitere Informationen.
+Weitere Informationen finden Sie unter [Aktivieren der Caching-Funktion für persistierte Abfragen](/help/headless/deployment/dispatcher-caching.md).
 
 >[!NOTE]
 >
@@ -566,7 +570,7 @@ Weitere Beispiele finden Sie unter:
 >
 >Für optimale Leistung sollten Sie [Ihre Inhaltsfragmente für Paging und Sortierung in der GraphQL-Filterung](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md) aktualisieren.
 
-Mit dieser Funktion können Sie die Abfrageergebnisse nach einem bestimmten Feld sortieren.
+Mit dieser Funktion können Sie die Abfrageergebnisse entsprechend einem bestimmten Feld sortieren.
 
 Die Sortierkriterien:
 
@@ -633,7 +637,7 @@ query {
 >
 >Für optimale Leistung sollten Sie [Ihre Inhaltsfragmente für Paging und Sortierung in der GraphQL-Filterung](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md) aktualisieren.
 
-Mit dieser Funktion können Sie Paging für Abfragetypen durchführen, die eine Liste zurückgeben. Es werden zwei Methoden bereitgestellt:
+Mit dieser Funktion können Sie Paging für Abfragetypen durchführen, was eine Liste zurückgibt. Es werden zwei Methoden bereitgestellt:
 
 * `offset` und `limit` in einer `List`-Abfrage
 * `first` und `after` in einer `Paginated`-Abfrage

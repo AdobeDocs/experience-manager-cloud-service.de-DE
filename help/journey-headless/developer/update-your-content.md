@@ -2,10 +2,10 @@
 title: Aktualisieren Ihres Inhalts über AEM Assets-APIs
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie mit der REST-API auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese aktualisieren können.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 31b0eecd01ee319aaf700505293530fec129b00f
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 89%
+source-wordcount: '1061'
+ht-degree: 90%
 
 ---
 
@@ -321,6 +321,7 @@ Sie sollten Ihre AEM-Headless-Tour fortsetzen, indem Sie als Nächstes das Dokum
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
+* [Adobe Experience Manager as a Cloud Service-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [Assets-HTTP-API](/help/assets/mac-api-assets.md)
 * [Inhaltsfragment-REST-API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API-Referenz](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
@@ -330,5 +331,5 @@ Sie sollten Ihre AEM-Headless-Tour fortsetzen, indem Sie als Nächstes das Dokum
 * [Erklärung: CORS/AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [Video: Entwicklung für CORS mit AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 * [Einführung in AEM als Headless-CMS](/help/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
-* [Tutorials für Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)
+* [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* [Headless-Tutorials für AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)
