@@ -3,9 +3,9 @@ title: Versionshinweise für Cloud Manager 2023.12.0 in Adobe Experience Manager
 description: Dies sind die Versionshinweise für Cloud Manager 2023.12.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
+source-git-commit: b3a338f469ea04d2c31204149d619931a55f2b24
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '766'
 ht-degree: 17%
 
 ---
@@ -36,7 +36,6 @@ Die Cloud Manager -Version 2023.12.0 in AEM as a Cloud Service wurde am 14. Deze
    * Unterstützung für Node 18 wurde für Frontend- und vollständige Stapel-Pipelines hinzugefügt.
    * Die untergeordnete Java 8-Version wurde aktualisiert auf `jdk1.8.0_371`.
    * Die untergeordnete Java 11-Version wurde auf `jdk-11.0.20`.
-   * Unterstützung für Java 17 wurde hinzugefügt.
    * Maven wurde auf Version 3.8.8 aktualisiert.
    * Das Basisbild des Build-Containers wurde auf Ubuntu 22.04 aktualisiert.
 
