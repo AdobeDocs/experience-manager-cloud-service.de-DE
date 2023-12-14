@@ -1,15 +1,21 @@
 ---
 title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud Service]
 description: Verwenden Sie den Asset-Selektor, um die Metadaten und Ausgabeformate von Assets in Ihrer Applikation zu suchen, zu finden und abzurufen.
-contentOwner: Adobe
+contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
-workflow-type: ht
-source-wordcount: '2373'
-ht-degree: 100%
+source-git-commit: f18b8cf1922f05c0d7da2c58fb0a57bc5ff3d3b7
+workflow-type: tm+mt
+source-wordcount: '2371'
+ht-degree: 99%
 
 ---
+
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | Dieser Artikel |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-selector.html?lang=en) |
 
 # Micro-Front-End-Asset-Selektor {#Overview}
 
