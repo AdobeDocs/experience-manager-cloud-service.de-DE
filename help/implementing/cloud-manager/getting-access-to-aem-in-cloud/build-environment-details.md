@@ -2,10 +2,10 @@
 title: Build-Umgebung
 description: Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie sie den Code erstellt und testet.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 93%
+source-wordcount: '1029'
+ht-degree: 89%
 
 ---
 
@@ -18,10 +18,10 @@ Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie s
 
 Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellungsumgebung.
 
-* Die Erstellungsumgebung ist Linux-basiert und von Ubuntu 18.04 abgeleitet.
+* Die Build-Umgebung ist Linux-basiert und von Ubuntu 22.04 abgeleitet.
 * Apache Maven 3.8.8 ist installiert.
 * Die installierten Java-Versionen sind Oracle JDK 8u371 und Oracle JDK 11.0.20.
-* Standardmäßig wird die Umgebungsvariable `JAVA_HOME` auf `/usr/lib/jvm/jdk1.8.0_371` festgelegt, was Oracle JDK 8u371 enthält. Siehe [JDK-Version der alternativen Maven-Ausführung](#alternate-maven-jdk-version) für weitere Details.
+* Standardmäßig wird die Variable `JAVA_HOME` Umgebungsvariable auf `/usr/lib/jvm/jdk1.8.0_371` enthält Oracle JDK 8u371. Siehe [JDK-Version der alternativen Maven-Ausführung](#alternate-maven-jdk-version) für weitere Details.
 * Es sind einige zusätzliche erforderliche Systempakete installiert.
    * `bzip2`
    * `unzip`
@@ -35,6 +35,7 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven wird auf Systemebene mit einer `settings.xml`-Datei konfiguriert, die automatisch das öffentliche Adobe-Artefakt-Repository enthält und ein Profil namens `adobe-public` verwendet. (Weitere Informationen dazu finden Sie im [Adobe Public Maven Repository](https://repo1.maven.org/)).
+* Node.js 18 ist für [Front-End- und vollständige Stapel-Pipelines.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
 
 >[!NOTE]
 >
