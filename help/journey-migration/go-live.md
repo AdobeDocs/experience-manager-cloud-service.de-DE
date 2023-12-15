@@ -2,10 +2,10 @@
 title: Live-Schaltung
 description: Erfahren Sie, wie Sie die Migration durchführen, sobald der Code und der Inhalt Cloud-fähig sind.
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 75d702cf45e38da4b7259907e7f707b6f18bd428
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 94%
+source-wordcount: '1721'
+ht-degree: 93%
 
 ---
 
@@ -152,6 +152,8 @@ Die beiden oben genannten Punkte werden im Bericht von [Best Practice Analyzer](
       * Die TTL ist die Zeit, die ein DNS-Eintrag in einem Cache verbleibt, bevor der Server um eine Aktualisierung gebeten wird.
       * Wenn Sie eine sehr hohe TTL haben, dauert die Aktualisierung Ihres DNS-Eintrags länger.
 * Führen Sie Leistungs- und Sicherheitstests durch, die Ihren Geschäftsanforderungen und -zielen entsprechen.
+   * Führen Sie Tests in der Staging-Umgebung durch.  Sie hat dieselbe Größe wie die Produktion.
+   * Entwicklungsumgebungen haben nicht die gleiche Größe wie Staging und Produktion.
 * Stellen Sie um und gehen Sie sicher, dass die tatsächliche Live-Schaltung ohne neue Bereitstellung oder Inhaltsaktualisierung durchgeführt wird.
 * Erstellen Sie Benachrichtigungsprofile für die Benutzenden der Admin Console. Siehe [Benachrichtigungsprofile](/help/journey-onboarding/notification-profiles.md)
 
