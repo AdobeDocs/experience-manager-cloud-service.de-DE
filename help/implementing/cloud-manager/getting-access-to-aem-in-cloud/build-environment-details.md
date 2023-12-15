@@ -2,10 +2,10 @@
 title: Build-Umgebung
 description: Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie sie den Code erstellt und testet.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
+source-git-commit: f59959bc10e502d85d3f4797dcf4ad0490d233f4
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 89%
+source-wordcount: '1177'
+ht-degree: 78%
 
 ---
 
@@ -20,6 +20,7 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
 
 * Die Build-Umgebung ist Linux-basiert und von Ubuntu 22.04 abgeleitet.
 * Apache Maven 3.8.8 ist installiert.
+   * Adobe empfiehlt Benutzern [Aktualisieren Sie ihre Maven-Repositorys, um HTTPS anstelle von HTTP zu verwenden.](#https-maven)
 * Die installierten Java-Versionen sind Oracle JDK 8u371 und Oracle JDK 11.0.20.
 * Standardmäßig wird die Variable `JAVA_HOME` Umgebungsvariable auf `/usr/lib/jvm/jdk1.8.0_371` enthält Oracle JDK 8u371. Siehe [JDK-Version der alternativen Maven-Ausführung](#alternate-maven-jdk-version) für weitere Details.
 * Es sind einige zusätzliche erforderliche Systempakete installiert.
@@ -40,6 +41,14 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
 >[!NOTE]
 >
 >Obwohl Cloud Manager keine bestimmte Version des Programms des `jacoco-maven-plugin` definiert, muss mindestens die Version `0.7.5.201505241946` verwendet werden.
+
+## HTTPS-Maven-Repositorys {#https-maven}
+
+Cloud Manager [Version 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) hat eine rollierende Aktualisierung der Build-Umgebung gestartet (mit Version 2023.12.0 abgeschlossen), die eine Aktualisierung auf Maven 3.8.8 enthielt. Eine wesentliche Änderung, die in Maven 3.8.1 eingeführt wurde, war eine Sicherheitsverbesserung, die darauf abzielte, potenzielle Schwachstellen zu minimieren. Insbesondere deaktiviert Maven jetzt alle unsicheren `http://*` Spiegeln standardmäßig, wie im Abschnitt [Maven-Versionshinweise.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+
+Aufgrund dieser Sicherheitsverbesserung können einige Benutzer während des Build-Schritts mit Problemen konfrontiert sein, insbesondere beim Herunterladen von Artefakten aus Maven-Repositorys, die unsichere HTTP-Verbindungen verwenden.
+
+Um ein reibungsloses Erlebnis mit der aktualisierten Version zu gewährleisten, empfiehlt Adobe, dass Benutzer ihre Maven-Repositorys so aktualisieren, dass sie HTTPS anstelle von HTTP verwenden. Diese Anpassung steht im Einklang mit dem wachsenden Trend der Branche hin zu sicheren Kommunikationsprotokollen und trägt zur Aufrechterhaltung eines sicheren und zuverlässigen Build-Prozesses bei.
 
 ### Verwenden einer bestimmten Java-Version {#using-java-support}
 
