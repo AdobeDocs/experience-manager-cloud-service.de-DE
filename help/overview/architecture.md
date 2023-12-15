@@ -2,9 +2,9 @@
 title: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service
 description: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 3e40832ee4351c92ffc4eb22540223e331323821
 workflow-type: tm+mt
-source-wordcount: '2658'
+source-wordcount: '2696'
 ht-degree: 11%
 
 ---
@@ -56,9 +56,11 @@ Es gibt vier Arten von [Umgebung](/help/implementing/cloud-manager/manage-enviro
       * Dies ist unabhängig von den Änderungen, die entweder von Adobe im Rahmen eines Wartungsupdates oder von Ihren Code-Bereitstellungen initiiert werden.
       * Im Falle einer Code-Implementierung können Sie auch manuelle Tests durchführen.
    * Der Inhalt der Staging-Umgebung wird in der Regel mithilfe der Self-Service-Funktion zum Kopieren von Inhalten mit dem Produktionsinhalt synchronisiert.
+   * Führen Sie Leistungs- und Sicherheitstests in der Staging-Umgebung durch.  Sie hat dieselbe Größe wie die Produktion.
 * Entwicklungsumgebung:
    * Mit einer Entwicklungsumgebung können Entwickler AEM Anwendungen unter denselben Laufzeitbedingungen wie die Staging- und Produktionsumgebungen implementieren und testen.
    * Die Änderungen durchlaufen eine Bereitstellungs-Pipeline, die für dieselben Code-Qualitäts- und Sicherheitstests wie in Produktions-Bereitstellungs-Pipelines sorgt.
+   * Entwicklungsumgebungen haben nicht dieselbe Größe wie Staging- und Produktionsumgebungen und sollten nicht für Leistungs- und Sicherheitstests verwendet werden.
 * Rapid Development Environment (RDE):
    * Eine RDE-Umgebung ermöglicht eine schnelle Entwicklung von Iterationen bei der Bereitstellung von neuem oder vorhandenem Code in den RDE-Instanzen, ohne dass eine formale Bereitstellungs-Pipeline wie in regulären Entwicklungsumgebungen durchlaufen wird.
 
