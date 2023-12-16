@@ -3,9 +3,9 @@ title: Versionshinweise für Cloud Manager 2023.12.0 in Adobe Experience Manager
 description: Dies sind die Versionshinweise für Cloud Manager 2023.12.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 71ce915413cd968a78a33b7a52d02e09841e1707
+source-git-commit: c0fc4b2ced046a1e975aca99463cdfa03462f2f4
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '784'
 ht-degree: 17%
 
 ---
@@ -32,8 +32,8 @@ Die Cloud Manager -Version 2023.12.0 in AEM as a Cloud Service wurde am 14. Deze
 * Für neu erstellte Cloud Manager-Programme: [das zugehörige New Relic-Unterkonto](/help/implementing/cloud-manager/user-access-new-relic.md) ist nicht standardmäßig aktiviert.
    * Bei bestehenden Programmen, bei denen der Zugriff auf das New Relic-Unterkonto nicht länger als 90 Tage dauert, wird es deaktiviert.
    * Wenn Sie das New Relic-Unterkonto verwenden möchten, müssen Sie sich über Cloud Manager anmelden.
-* Die Rollouts von Nebenversionen für Java 8 und 11 und Updates für Maven [bekannt gegeben und mit der Oktober-Version von Cloud Manager begonnen](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) wurden abgeschlossen.
-   * Unterstützung für Node 18 wurde für Frontend- und vollständige Stapel-Pipelines hinzugefügt.
+* Die Rollouts der Aktualisierungen für die [Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) die [bekannt gegeben und mit der Oktober-Version von Cloud Manager begonnen](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) wurden abgeschlossen.
+   * Unterstützung für Node 18 wurde hinzugefügt für [Front-End- und vollständige Stapel-Pipelines.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
    * Die untergeordnete Java 8-Version wurde aktualisiert auf `jdk1.8.0_371`.
    * Die untergeordnete Java 11-Version wurde auf `jdk-11.0.20`.
    * Maven wurde auf Version 3.8.8 aktualisiert.
