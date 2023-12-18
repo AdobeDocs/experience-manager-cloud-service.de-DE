@@ -2,10 +2,10 @@
 title: Erfassen von Inhalten in Cloud Service
 description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ihrem Migrationssatz in eine Ziel-Cloud Service-Instanz aufnehmen können.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
+source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
 workflow-type: tm+mt
-source-wordcount: '2392'
-ht-degree: 40%
+source-wordcount: '2407'
+ht-degree: 39%
 
 ---
 
@@ -159,9 +159,11 @@ Eine häufige Ursache für einen [Auffüllaufnahme](/help/journey-migration/cont
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-Jeder Knoten in AEM muss über eine eindeutige UUID verfügen. Dieser Fehler zeigt an, dass ein aufgenommener Knoten dieselbe uuid wie ein Knoten hat, der an anderer Stelle in einem anderen Pfad der Zielinstanz vorhanden ist.
-Hierzu kann es kommen, wenn ein Knoten quellseitig zwischen einer Extraktion und einer nachfolgenden [Auffüllextraktion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) verschoben wird.
-Dies kann auch vorkommen, wenn ein Knoten auf dem Ziel zwischen einer Aufnahme und einer nachfolgenden Auffüllaufnahme verschoben wird.
+Jeder Knoten in AEM muss über eine eindeutige UUID verfügen. Dieser Fehler zeigt an, dass ein aufgenommener Knoten dieselbe uuid wie ein Knoten hat, der sich an einem anderen Pfad in der Zielinstanz befindet. Diese Situation kann aus zwei Gründen eintreten:
+
+* Ein Knoten wird auf der Quelle zwischen einer Extraktion und einer nachfolgenden [Auffüllextraktion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
+   * _ERINNERN_: Bei Auffüllextraktionen ist der Knoten weiterhin im Migrationssatz vorhanden, auch wenn er nicht mehr in der Quelle vorhanden ist.
+* Ein Knoten am Ziel wird zwischen einer Aufnahme und einer nachfolgenden Auffüllaufnahme verschoben.
 
 Dieser Konflikt muss manuell behoben werden. Dabei muss eine Person, die mit dem Inhalt vertraut ist, entscheiden, welche der beiden Knoten gelöscht werden muss, wobei andere Inhalte, die darauf verweisen, zu berücksichtigen sind. Zur Lösung des Problems kann es erforderlich sein, dass die Auffüllextraktion ohne den fehlerhaften Knoten wiederholt wird.
 
@@ -179,7 +181,7 @@ Best Practices weisen darauf hin, dass **Nicht wischen** Die Aufnahme muss mit e
 
 ### Aufnahmefehler aufgrund von Eigenschaftswerten für große Knoten {#ingestion-failure-due-to-large-node-property-values}
 
-Die in MongoDB gespeicherten Knoteneigenschaftswerte dürfen 16 MB nicht überschreiten. Wenn ein Knotenwert die unterstützte Größe überschreitet, schlägt die Aufnahme fehl und das Protokoll enthält eine `BSONObjectTooLarge` und geben Sie an, welcher Knoten den Maximalwert überschritten hat. Beachten Sie, dass dies eine MongoDB-Beschränkung ist.
+Die in MongoDB gespeicherten Knoteneigenschaftswerte dürfen 16 MB nicht überschreiten. Wenn ein Knotenwert die unterstützte Größe überschreitet, schlägt die Aufnahme fehl und das Protokoll enthält eine `BSONObjectTooLarge` und geben Sie an, welcher Knoten den Maximalwert überschritten hat. Dies ist eine MongoDB-Beschränkung.
 
 Siehe `Node property value in MongoDB` Hinweis in [Voraussetzungen für das Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) für weitere Informationen und einen Link zu einem Oak-Tool, mit dem alle großen Knoten gefunden werden können. Nachdem alle Knoten mit großen Größen behoben wurden, führen Sie die Extraktion und Aufnahme erneut aus.
 
