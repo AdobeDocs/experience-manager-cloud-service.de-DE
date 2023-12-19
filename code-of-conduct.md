@@ -1,13 +1,13 @@
 ---
 source-git-commit: 8d8e5ba548c13d3d908a549f52a8b91946b35361
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '433'
 ht-degree: 80%
 
 ---
 # Adobe-Verhaltenskodex
 
-## Zusage zur Adobe
+## Adobe Pledge
 
 Um eine offene und einladende Umgebung zu fördern, verpflichtet sich das Dokumentationsteam der Adobe als Mitwirkende und Betreuer, die Teilnahme an diesem Projekt und an der Community zu einem belästigungsfreien Erlebnis für alle zu machen, unabhängig von Alter, Körpergröße, Behinderung, ethnischer Zugehörigkeit, Geschlechtsidentität und -ausdruck, Erfahrungsniveau, Nationalität, persönlichem Erscheinungsbild, Rasse, Religion oder sexueller Identität und Orientierung.
 
@@ -29,7 +29,7 @@ Zu Beispielen für inakzeptables Verhalten von Teilnehmern gehören:
 * Veröffentlichung privater Informationen anderer Benutzer, wie z. B. einer physischen oder elektronischen Adresse, ohne ausdrückliche Zustimmung
 * Andere Verhaltensweisen, die in einem professionellen Umfeld als unangemessen betrachtet werden könnten
 
-## Zuständigkeiten der Adobe
+## Adobe Verantwortlichkeiten
 
 Projektverantwortliche haben die Aufgabe, die Standards des akzeptablen Verhaltens zu verdeutlichen, und es wird erwartet, dass sie als Reaktion auf Fälle von inakzeptablem Verhalten geeignete und angemessene Gegenmaßnahmen ergreifen.
 
