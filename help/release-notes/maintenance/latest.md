@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: db0f60537a65c426dae88b5440622c9034c736e2
+source-git-commit: 4fc676bd975e44234b478ba57f12cbf0f4f5ba45
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 29%
+source-wordcount: '371'
+ht-degree: 28%
 
 ---
 
@@ -39,6 +39,7 @@ Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsver
 * ASSETS-31297: Verhindern des Löschens kopierter Assets aus dynamischen Medien.
 * ASSETS-30811: Referenzaktualisierungen für &quot;Blocktag-Dienst&quot;gebunden.
 * GRANITE-46418: Sling-Ereignisse in AEM aktualisieren: GaugeSupport hat unendliche Rekursion in registerWithSuffix (SLING-11918).
+* GRANITE-48937: Regression aus Maintenance Release 14538 behoben, bei dem Omnisearch nicht auf der Seite aem/start.html funktioniert.
 
 ### Bekannte Probleme {#known-issues-14697}
 
