@@ -1,8 +1,14 @@
 ---
-description: To design websites and create functionality, developers use the markup and DOM that is rendered dynamically from the content. The markup and DOM are constructed in a way that allows flexible manipulation and styling. At the same time it provides out-of-the-box functionality so the developer does not have to worry about some of the aspects of modern websites.
-title: Markup, Sections, Blocks, and Auto Blocking
+description: Um Websites zu entwerfen und Funktionen zu erstellen, verwenden Entwickler das Markup und DOM, die dynamisch aus dem Inhalt gerendert werden. Markup und DOM sind so konstruiert, dass flexible Manipulationen und Stile möglich sind. Gleichzeitig bietet es vordefinierte Funktionen, sodass der Entwickler sich über einige Aspekte moderner Websites keine Gedanken machen muss.
+title: Markup, Abschnitte, Blöcke und automatisches Blockieren
 feature: Edge Delivery Services
+source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
+workflow-type: tm+mt
+source-wordcount: '70'
+ht-degree: 0%
+
 ---
-# Markup, Sections, Blocks, and Auto Blocking
+
+# Markup, Abschnitte, Blöcke und automatisches Blockieren
 
 {{$include 22a1fc6f-1cd6-416f-a8e7-70ce9600e04e}}

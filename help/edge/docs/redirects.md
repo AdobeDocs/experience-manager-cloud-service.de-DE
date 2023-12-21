@@ -1,8 +1,14 @@
 ---
-description: Every website has the need for redirects. For example if you relocate or delete content, you want your users to still be able to find it or the next best thing. See the document Authoring and Publishing Content for more information on deleting content.
-title: Redirects
+description: Jede Website muss umgeleitet werden. Wenn Sie z. B. Inhalte verschieben oder löschen, möchten Sie, dass Ihre Benutzer diese oder die nächste beste Lösung finden können. Weitere Informationen zum Löschen von Inhalten finden Sie im Dokument Inhaltserstellung und -veröffentlichung .
+title: Umleitungen
 feature: Edge Delivery Services
+source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
+workflow-type: tm+mt
+source-wordcount: '46'
+ht-degree: 0%
+
 ---
-# Redirects
+
+# Umleitungen
 
 {{$include ce6f6a65-19e8-41eb-96e8-264133681e88}}
