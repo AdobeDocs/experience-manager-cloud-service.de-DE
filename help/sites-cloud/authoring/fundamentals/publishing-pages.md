@@ -2,10 +2,10 @@
 title: Veröffentlichen von Seiten
 description: Erfahren Sie, wie Sie Ihre Seiten mithilfe verschiedener Mechanismen in AEM veröffentlichen und ihre Veröffentlichung rückgängig machen können.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 410c585dbe9eddaab4e424eb70ce060447db1990
 workflow-type: tm+mt
-source-wordcount: '1805'
-ht-degree: 91%
+source-wordcount: '1847'
+ht-degree: 89%
 
 ---
 
@@ -49,6 +49,12 @@ Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen fo
 >* Ein Workflow wird ausgelöst, um die zuständige Person über Ihren Antrag auf Veröffentlichung zu informieren.
 >* Dieser Workflow wurde möglicherweise von Ihrem Entwickler-Team angepasst.
 >* Sie werden in einer Mitteilung darüber informiert, dass der Workflow ausgelöst wurde.
+
+>[!NOTE]
+>
+>Wenn Sie die Seitenreihenfolge beibehalten möchten, müssen Sie die übergeordnete Seite veröffentlichen, wenn Sie untergeordnete Seiten veröffentlichen.
+>
+>Die Seitenreihenfolge ist nicht garantiert, wenn nur untergeordnete Seiten zur Veröffentlichung ausgewählt sind (da die Bestellinformationen auf der übergeordneten Seite gespeichert werden).
 
 >[!NOTE]
 >
@@ -124,7 +130,7 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
    ![Auswählen von Seiten zur Veröffentlichung](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. Der Assistent **Veröffentlichung verwalten** wird geöffnet. Der erste Schritt, **Optionen** ermöglicht Folgendes:
+1. Der Assistent **Veröffentlichung verwalten** wird geöffnet. Im ersten Schritt, **Optionen**, haben Sie folgende Möglichkeiten:
 
    * **Aktion**
 
