@@ -1,9 +1,9 @@
 ---
 title: Dynatrace OneAgent
 description: Erfahren Sie, wie Sie Dynatracs OneAgent mit AEM as a Cloud Service verwenden.
-source-git-commit: 2e70c8be73915bea860b98e02c08772bb4f5dcd2
+source-git-commit: 9379e6a1ec323ff4f05e994e9265da1363b4a3df
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ Die für Verbindungsanfragen erforderlichen Details werden nachfolgend beschrieb
 
 | **Feld** | **Beschreibung** |
 |---|---|
-| URL der dynamischen Umgebung | Ihre URL der dynamischen Umgebung.<br><br>Für Dynatrace SaaS-Kunden lautet das Format `https://<environment>.live.dynatrace.com`.<br><br>Für Dynatrace Managed -Kunden lautet das Format `https://<your-managed-url>/e/<environmentId>` |
+| URL der dynamischen Umgebung | Ihre URL der dynamischen Umgebung.<br><br>Für Dynatrace SaaS-Kunden lautet das Format `https://<you-environment-id>.live.dynatrace.com`.<br><br>Für Dynatrace Managed -Kunden lautet das Format `https://<your-managed-url>/e/<environmentId>` |
 | Dynamic Environment ID | Ihre Dynamic Environment ID, die Sie in der Umgebungs-URL finden. |
 | Dynatraktische Umgebungstoken | Ihr OneAgent-Umgebungstoken. Weitere Informationen zur Erstellung finden Sie in der Dokumentation zu Dynatrakien .<br><br>Dies sollte als geheim betrachtet werden. Verwenden Sie daher geeignete Sicherheitspraktiken. Zum Beispiel schützen Passwörter sie auf einer Website wie **zerobin.net**, auf die das Kundensupport-Ticket zusammen mit dem Kennwort verweisen kann. |
 | Dynatraktions-API-Zugriffstoken | Das API-Zugriffstoken Ihrer Dynatraktionsumgebung. Weitere Informationen zur Erstellung finden Sie in der Dokumentation zu Dynatrakien .<br><br>Dies sollte als geheim betrachtet werden, sodass geeignete Sicherheitspraktiken zum Einsatz kommen. Zum Beispiel schützen Passwörter sie auf einer Website wie **zerobin.net**, auf die das Kundensupport-Ticket zusammen mit dem Kennwort verweisen kann.<br><br>Hinweis: Dies ist nur für Dynatrace Managed erforderlich. |
-| Zielhafen für Dynatrakien | Der Zielanschluss von Dynatrace.<br><br>Hinweis: Dies ist nur für Dynatrace Managed erforderlich. |
+| Dynatrace ActiveGate Port | Ihr ActiveGate-Port von Dynatrace, mit dem OneAgent eine Verbindung herstellen soll.<br><br>Hinweis: Dies ist nur für Dynatrace Managed erforderlich. |
 | AEM Umgebungs-ID(s) | Die AEM Umgebungs-ID(s) für die Überwachung durch Dynatraktion. |
 
 
