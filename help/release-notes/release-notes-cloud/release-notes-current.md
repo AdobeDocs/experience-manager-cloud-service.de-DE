@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: a5121436b2e48302fcf14478764aede1495e089c
+source-git-commit: 17903c6e44afd1742d21b7fc7dbe4d7c63fe8b6b
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 27%
+source-wordcount: '828'
+ht-degree: 26%
 
 ---
 
@@ -53,13 +53,21 @@ Der Real User Monitoring (RUM) Data Service bietet eine präzisere Darstellung d
 Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte eine E-Mail an `aemcs-rum-adopter@adobe.com`zusammen mit Ihrem Domänennamen für die Produktions-, Staging- und Entwicklungsumgebung von Ihrer E-Mail-Adresse aus, die mit Ihrer Adobe ID verknüpft ist. Das Produktteam von Adobe aktiviert dann den Datendienst für die Echtzeit-Benutzerüberwachung (RUM) für Sie.
 
 
-<!--
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New Features in Admin View {#admin-view-features}
+### Neue Funktionen in der Asset-Ansicht {#assets-view-features}
 
+**GenAI-Bilder mit Adobe Firefly erstellen**
 
+Erstellen Sie neue Bilder auf der Basis von Suchabfragen mit einer Adobe Firefly-Text-zu-Bild-Funktion (Adobe Firefly-Lizenz erforderlich).
+
+![Firefly-Integration für Assets](/help/assets/assets/assets-firefly-integration.png)
+
+**Ähnliche Bilder suchen**
+
+Sie können jetzt Inhalte einfach finden, indem Sie ein Bild auswählen und ähnliche Bilder im Experience Manager Assets-Repository anzeigen.
+
+<!--
 
 * **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
 
