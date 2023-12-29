@@ -2,11 +2,12 @@
 title: Wie wird Forms Designer heruntergeladen und installiert, um Vorlagen für Datensatzdokumente zu erstellen?
 description: Verwenden Sie Forms Designer, um XDP- und PDF-Formularvorlagen zu erstellen, die als Vorlage für ein Datensatzdokument dienen.
 keywords: Installieren von Designer, Installieren von Forms Designer, Anforderungen für die Installation von Forms Designer
+feature: Forms Designer
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: b2769134c2e744f41cbb7e8a3cf08c622cdc07ca
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 62%
+source-wordcount: '409'
+ht-degree: 68%
 
 ---
 
@@ -49,7 +50,7 @@ Um die neueste Version von AEM Forms Designer 64-Bit oder 32-Bit zu installieren
 * Beschleuniger für Video-Hardware (optional)
 * Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC.
 * Administratorrechte für die Installation von Designer.
-* Microsoft® Visual C++ 2019 (VC 14.28 oder höher) 32-Bit-Laufzeit
+* Microsoft® Visual C++ 2019 (VC 14.28 oder höher) 32-Bit-Runtime
 
 +++
 
