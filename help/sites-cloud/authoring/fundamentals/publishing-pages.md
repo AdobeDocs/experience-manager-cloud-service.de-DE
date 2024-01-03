@@ -2,9 +2,9 @@
 title: Veröffentlichen von Seiten
 description: Erfahren Sie, wie Sie Ihre Seiten mithilfe verschiedener Mechanismen in AEM veröffentlichen und ihre Veröffentlichung rückgängig machen können.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: c05cf17749f63e713e4fb3fbf2a840a9f82877b3
+source-git-commit: 00520bff0f3b0d36610d8601077198856c8b71dd
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1927'
 ht-degree: 85%
 
 ---
@@ -52,7 +52,7 @@ Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen fo
 
 >[!NOTE]
 >
->Wenn Sie die Seitenreihenfolge beibehalten möchten, verwenden Sie [Veröffentlichung verwalten](#manage-publication) , um die übergeordnete Seite zusammen mit allen untergeordneten Seiten in einer einzigen Aktion zu veröffentlichen.
+>Wenn Sie die Seitenreihenfolge beibehalten möchten, müssen Sie [Veröffentlichung verwalten](#manage-publication) , um die übergeordnete Seite zusammen mit allen untergeordneten Seiten in einer einzigen Aktion zu veröffentlichen.
 >
 >Die Seitenreihenfolge ist nicht garantiert:
 >* wenn nur untergeordnete Seiten zur Veröffentlichung ausgewählt sind (da die Bestellinformationen auf der übergeordneten Seite gespeichert werden)
@@ -128,7 +128,7 @@ So veröffentlichen Sie eine Seite mit der Funktion „Quick Publish“:
 
 >[!NOTE]
 >
->Wenn Sie die Seitenreihenfolge beibehalten möchten, verwenden Sie **Veröffentlichung verwalten** , um die übergeordnete Seite zusammen mit allen untergeordneten Seiten in einer einzigen Aktion zu veröffentlichen.
+>Wenn Sie die Seitenreihenfolge beibehalten möchten, müssen Sie **Veröffentlichung verwalten** , um die übergeordnete Seite zusammen mit allen untergeordneten Seiten in einer einzigen Aktion zu veröffentlichen.
 >
 >Die Seitenreihenfolge ist nicht garantiert:
 >* wenn nur untergeordnete Seiten zur Veröffentlichung ausgewählt sind (da die Bestellinformationen auf der übergeordneten Seite gespeichert werden)
