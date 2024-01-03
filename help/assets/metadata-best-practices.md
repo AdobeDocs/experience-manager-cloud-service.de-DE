@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Best Practices für Metadaten zur effek
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 8434cb580ba8afc018a5a4357a4d249a06c566c2
+source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
 workflow-type: tm+mt
 source-wordcount: '1287'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -97,25 +97,25 @@ Die Governance-Strategie kann Folgendes umfassen:
 
 Ermitteln Sie, woher die Informationen stammen, und untersuchen Sie die Details der Metadatenstrategie, einschließlich der Eigenschaften und deren Quellen. Die Skalierung hängt von der Komplexität der Strategie ab. In größeren Unternehmen gibt es ein Master-Metadatenverwaltungssystem, das mehrere Systeme im Master-Stapel überwacht.
 
-<br>
-
 >[!NOTE]
 >
 >Erfahren Sie, wie [Verwalten von Metadaten für digitale Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
 
 ### Konsistent mit der Metadatenstrategie sein
 
-Eine konsistente Metadatenstrategie gewährleistet eine effektive Organisation und den Abruf digitaler Assets. Nehmen Sie einen strategischen Ansatz zur Erfassung und Implementierung von Metadatenwerten an, der die Flexibilität der Evolution ohne unnötige Änderungen ermöglicht. <br>
-Bei der unternehmensweiten Metadatenverwaltung ist Konsistenz beim Benennen und Referenzieren von Assets wichtig. Wenn Sie beispielsweise mehrere Assets gleichzeitig verwalten, sollten Sie Massenmetadaten hinzufügen. <br>
+Eine konsistente Metadatenstrategie gewährleistet eine effektive Organisation und den Abruf digitaler Assets. Nehmen Sie einen strategischen Ansatz zur Erfassung und Implementierung von Metadatenwerten an, der die Flexibilität der Evolution ohne unnötige Änderungen ermöglicht.
+
+Bei der unternehmensweiten Metadatenverwaltung ist Konsistenz beim Benennen und Referenzieren von Assets wichtig. Wenn Sie beispielsweise mehrere Assets gleichzeitig verwalten, sollten Sie Massenmetadaten hinzufügen.
+
 Im Folgenden finden Sie einige Best Practices, die Sie befolgen sollten:
 
-* **Vermeiden Sie doppelte Werte:** Wenn Sie über eine Sammlung von Bildern aus einer Marketing-Kampagne verfügen, verwenden Sie konsistente Namen und vermeiden Sie Duplikate.<br>
+* **Vermeiden Sie doppelte Werte:** Wenn Sie über eine Sammlung von Bildern aus einer Marketing-Kampagne verfügen, verwenden Sie konsistente Namen und vermeiden Sie Duplikate.
 Anstatt beispielsweise doppelte Namen wie *campaign_image_001* und *campaign_image_002*, implementieren Sie eine systematische Benennungskonvention wie *product_launch_001* und *product_launch_002*, um eine eindeutige und geordnete Identifizierung zu gewährleisten.
 
-* **Verwenden Sie gesteuertes Vokabular effektiv:** Implementieren Sie gesteuerte Vokabular durch Verwendung standardisierter Begriffe für Tags. <br>
+* **Verwenden Sie gesteuertes Vokabular effektiv:** Implementieren Sie gesteuerte Vokabular durch Verwendung standardisierter Begriffe für Tags.
 Zum Beispiel konsistente Verwendung von Begriffen wie *product_launch* oder *event_promotion* beim Taggen von Bildern mit Designs, um eine systematische Sequenz zu gewährleisten.
 
-* **Genauigkeit und Vollständigkeit beibehalten:** Um Metadaten konsistent zu halten, sind Genauigkeit, Vollständigkeit und Ausrichtung über verschiedene Quellen hinweg von entscheidender Bedeutung.<br>
+* **Genauigkeit und Vollständigkeit beibehalten:** Um Metadaten konsistent zu halten, sind Genauigkeit, Vollständigkeit und Ausrichtung über verschiedene Quellen hinweg von entscheidender Bedeutung.
 Überprüfen Sie beispielsweise beim Hinzufügen von Metadaten zu einem PDF-Dokument, ob Details wie Autorennamen und Keywords korrekt und vollständig sind.
 
 #### Video: Hinzufügen von Massenmetadaten zu Assets
@@ -124,7 +124,8 @@ Zum Beispiel konsistente Verwendung von Begriffen wie *product_launch* oder *eve
 
 ### Prüfen und Verbessern der Suchbarkeit von Metadaten
 
-Bewertung Ihrer Metadatenstrategie zur Verbesserung der Suchbarkeit von Metadaten. Vereinfachung von Workflows und Verbesserung der Suchfunktionen für eine effiziente Wiederverwendung. Vermeiden Sie den Umgang mit Metadaten, denen ein eindeutiger Zweck fehlt.<br>
+Bewertung Ihrer Metadatenstrategie zur Verbesserung der Suchbarkeit von Metadaten. Vereinfachung von Workflows und Verbesserung der Suchfunktionen für eine effiziente Wiederverwendung. Vermeiden Sie den Umgang mit Metadaten, denen ein eindeutiger Zweck fehlt.
+
 Sie können die folgenden Best Practices zur Optimierung der Suchbarkeit Ihrer Metadaten berücksichtigen:
 
 * **Suchbegriffoptimierung:** Verbessern Sie die Durchsuchbarkeit von Metadaten, indem Sie Suchbegriffe für Assets optimieren. Sie können die Relevanz von Suchbegriffen für bestimmte Assets im Assets Manager verbessern, indem Sie die folgenden Schritte ausführen:
@@ -132,9 +133,9 @@ Sie können die folgenden Best Practices zur Optimierung der Suchbarkeit Ihrer M
    1. Navigieren Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Datei]** > **[!UICONTROL [Asset-Ordner]]**.
    1. Wählen Sie das Asset aus, für das Sie die Metadaten aktualisieren möchten, und klicken Sie dann auf **[!UICONTROL Eigenschaften]**.
    1. Navigieren Sie zum **[!UICONTROL Erweitert]** und klicken Sie auf **[!UICONTROL Hinzufügen]** unter **[!UICONTROL Für Suchbegriffe erhöhen]**.
-   1. Geben Sie den Suchbegriff ein, für den Sie die Suche optimieren möchten, und klicken Sie auf **[!UICONTROL Hinzufügen]**.<br>
+   1. Geben Sie den Suchbegriff ein, für den Sie die Suche optimieren möchten, und klicken Sie auf **[!UICONTROL Hinzufügen]**.
 Sie können mehrere Suchbegriffe hinzufügen und diese gemäß Ihrer Priorität anordnen.
-   1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.<br>
+   1. Klicks **[!UICONTROL Speichern und schließen]**.
 Suchen Sie das Asset mithilfe der von Ihnen hinzugefügten Suchbegriffe. Das Asset wird unter den obersten Suchergebnissen angezeigt.
 
   Erfahren Sie, wie [Suche in Adobe Experience Manager optimieren](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=de).
@@ -151,7 +152,7 @@ Suchen Sie das Asset mithilfe der von Ihnen hinzugefügten Suchbegriffe. Das Ass
 
 ### Einfache und leicht verständliche Metadaten
 
-Vereinfachen Sie Metadaten für eine bessere Verwaltung und Benutzerakzeptanz. Halten Sie es einfach und leicht zu verstehen und ermutigen Sie die Benutzer, wichtige Informationen hinzuzufügen. <br>
+Vereinfachen Sie Metadaten für eine bessere Verwaltung und Benutzerakzeptanz. Halten Sie es einfach und leicht zu verstehen und ermutigen Sie die Benutzer, wichtige Informationen hinzuzufügen.
 Versuchen Sie die folgenden Best Practices, um die Metadaten zu vereinfachen:
 
 * **Optimieren Sie die Eigenschaftsoptionen:** Konzentrieren Sie sich auf die Hervorhebung wichtiger Eigenschaften, ohne die Benutzer mit zu vielen Metadatenfeldern zu belasten. Fügen Sie beispielsweise beim Hinzufügen von Metadaten für ein Bild nur Schlüsselfelder wie Titel, Beschreibung und Tags ein, um eine effektive Kategorisierung zu ermöglichen.

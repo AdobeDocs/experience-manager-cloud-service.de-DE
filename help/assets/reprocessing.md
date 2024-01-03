@@ -2,10 +2,10 @@
 title: Erneute Verarbeitung digitaler Assets
 description: Erfahren Sie mehr über verschiedene Methoden zur Neuverarbeitung digitaler Assets
 contentOwner: KK
-source-git-commit: 3fb72e0768c44506b0f20f99a48cea837d722387
+source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 49%
+source-wordcount: '685'
+ht-degree: 43%
 
 ---
 
@@ -20,7 +20,7 @@ Verarbeiten Sie Assets in einem Ordner neu, wenn eines der folgenden beiden Szen
 
 ## Erneutes Verarbeiten von Assets {#reprocessing-steps}
 
-Neuverarbeitung von Assets in einem Ordner:
+So verarbeiten Sie Assets in einem Ordner erneut:
 
 1. In [!DNL Experience Manager]Wählen Sie auf der Seite &quot;Assets&quot;die neu hinzugefügten Assets oder die Assets aus, die Sie erneut verarbeiten möchten.
 Wenn Sie einen Ordner auswählen:
@@ -33,21 +33,21 @@ Wenn Sie einen Ordner auswählen:
 
    ![Optionen zur Neuverarbeitung von Assets](assets/reprocessing-assets-options.png)
 
-* **[!UICONTROL Vollständiger Prozess]:** Wählen Sie diese Option, wenn Sie den gesamten Prozess ausführen möchten, einschließlich Standardprofil, benutzerdefiniertes Profil, dynamischer Verarbeitung (sofern konfiguriert) und Nachbearbeitungs-Workflows.
-* **[!UICONTROL Erweitert]:** Wählen Sie diese Option, um die erweiterte Neuverarbeitung auszuwählen.
+   * **[!UICONTROL Vollständiger Prozess]:** Wählen Sie diese Option, wenn Sie den gesamten Prozess ausführen möchten, einschließlich Standardprofil, benutzerdefiniertes Profil, dynamischer Verarbeitung (sofern konfiguriert) und Nachbearbeitungs-Workflows.
+   * **[!UICONTROL Erweitert]:** Wählen Sie diese Option, um die erweiterte Neuverarbeitung auszuwählen.
 
-  ![Erweiterte Optionen für die Neuverarbeitung von Assets](assets/reprocessing-assets-options-advanced.png)
+     ![Erweiterte Optionen für die Neuverarbeitung von Assets](assets/reprocessing-assets-options-advanced.png)
 
-Wählen Sie unter den folgenden erweiterten Optionen aus:
+     Wählen Sie unter den folgenden erweiterten Optionen aus:
 
-* **[!UICONTROL Standard-Ausgabeformate für die Vorschau]:** Wählen Sie diese Option, wenn Sie die standardmäßig in der Vorschau angezeigten Ausgabedarstellungen erneut verarbeiten möchten.
+      * **[!UICONTROL Standard-Ausgabeformate für die Vorschau]:** Wählen Sie diese Option, wenn Sie die standardmäßig in der Vorschau angezeigten Ausgabedarstellungen erneut verarbeiten möchten.
 
-* **[!UICONTROL Metadaten]:** Wählen Sie diese Option, wenn Sie Metadateninformationen und Smart-Tags für die ausgewählten Assets extrahieren möchten.
+      * **[!UICONTROL Metadaten]:** Wählen Sie diese Option, wenn Sie Metadateninformationen und Smart-Tags für die ausgewählten Assets extrahieren möchten.
 
-* **[!UICONTROL Verarbeitungsprofile]:** Wählen Sie diese Option, wenn Sie ein ausgewähltes Profil erneut verarbeiten möchten. Sie können **[!UICONTROL Vollständiger Prozess]** -Option, um die Standardverarbeitung und das benutzerdefinierte Profil einzuschließen, die auf der Ordnerebene zugewiesen sind.
-  <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
+      * **[!UICONTROL Verarbeitungsprofile]:** Wählen Sie diese Option, wenn Sie ein ausgewähltes Profil erneut verarbeiten möchten. Sie können **[!UICONTROL Vollständiger Prozess]** -Option, um die Standardverarbeitung und das benutzerdefinierte Profil einzuschließen, die auf der Ordnerebene zugewiesen sind.
+        <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-* **[!UICONTROL Nachbearbeitungs-Workflow]:** Wählen Sie diese Option, bei der eine zusätzliche Verarbeitung von Assets erforderlich ist, die mit den Verarbeitungsprofilen nicht erreicht werden kann. Der Konfiguration können weitere Nachbearbeitungs-Workflows hinzugefügt werden. Mit der Nachbearbeitung können Sie zusätzlich zur konfigurierbaren Verarbeitung mithilfe von Asset-Microservices eine vollständig angepasste Verarbeitung hinzufügen.
+      * **[!UICONTROL Nachbearbeitungs-Workflow]:** Wählen Sie diese Option, bei der eine zusätzliche Verarbeitung von Assets erforderlich ist, die mit den Verarbeitungsprofilen nicht erreicht werden kann. Der Konfiguration können weitere Nachbearbeitungs-Workflows hinzugefügt werden. Mit der Nachbearbeitung können Sie zusätzlich zur konfigurierbaren Verarbeitung mithilfe von Asset-Microservices eine vollständig angepasste Verarbeitung hinzufügen.
 
 Siehe [Asset-Microservices und Verarbeitungsprofile verwenden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=de) , um mehr über Verarbeitungsprofile und Nachbearbeitungs-Workflow zu erfahren.
 
@@ -71,7 +71,7 @@ Mehr dazu [Erneutes Verarbeiten von Farb-Tags für vorhandene Bilder in DAM](htt
 
 ### Smartes Zuschneiden {#reprocessing-smart-crop}
 
-Mehr dazu [Smartes Zuschneiden von Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=de) , mit dem Sie bestimmte Zuschnitte (**[!UICONTROL Smartes Zuschneiden]** und Pixelzuschnitt) sowie die Scharfzeichnungskonfiguration für die hochgeladenen Assets.
+Mehr dazu [Smartes Zuschneiden von Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) , mit dem Sie bestimmte Zuschnitte (**[!UICONTROL Smartes Zuschneiden]** und Pixelzuschnitt) sowie die Scharfzeichnungskonfiguration für die hochgeladenen Assets.
 
 ### Metadaten {#reprocessing-metadata}
 
@@ -81,7 +81,7 @@ Mehr dazu [Erneutes Verarbeiten von Metadatenprofilen](https://experienceleague.
 
 ### Dynamic Media-Assets in einem Ordner erneut verarbeiten {#reprocessing-dynamic-media}
 
-Sie können Assets in einem Ordner, der bereits über ein später von Ihnen geändertes Dynamic Media-Bildprofil oder ein Dynamic Media-Videoprofil verfügt, neu verarbeiten. Weitere Informationen finden Sie unter [Dynamic Media-Assets in einem Ordner erneut verarbeiten.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
+Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein Dynamic Media-Bildprofil oder ein Dynamic Media-Videoprofil verfügt, das Sie nachträglich geändert haben. Weitere Informationen finden Sie unter [Dynamic Media-Assets in einem Ordner erneut verarbeiten.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
 
 >[!NOTE]
 >
