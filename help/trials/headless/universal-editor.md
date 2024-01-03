@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit dem universellen Editor beliebige Aspekte
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 46456903ee947c61d63508dc86cc5f72dc50ed82
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '886'
 ht-degree: 6%
 
 ---
@@ -39,9 +39,7 @@ Die Bearbeitung an Ort und Stelle und im Kontext kann häufig von Vorteil gegen�
 
 Mit dem universellen Editor können Sie Ihren Text im Kontext und an Ort und Stelle flexibel bearbeiten und so einfache und intuitive Inhaltserstellung ermöglichen.
 
-1. Der Editor sollte standardmäßig in **Komponenten** -Modus. Wenn nicht, wählen Sie die **Komponenten** in der Modusleiste auf der linken Seite des Editors.
-
-1. Wählen Sie doppelt den Titel des neuesten Artikels aus, um ihn zu bearbeiten.
+1. Doppelklicken Sie auf , um den Titel des neuesten Artikels auszuwählen und ihn zu bearbeiten.
 
    ![Der Universal Editor](assets/do-not-localize/ue-component-mode.png)
 
@@ -49,7 +47,7 @@ Mit dem universellen Editor können Sie Ihren Text im Kontext und an Ort und Ste
 
    ![Bearbeiten von Text im universellen Editor](assets/do-not-localize/ue-edit-text-2.png)
 
-1. Drücken Sie die Eingabetaste oder wählen Sie außerhalb der Textkomponente aus, damit Ihre Änderungen automatisch gespeichert werden.
+1. Wählen Sie außerhalb der Textkomponente aus und Ihre Änderungen werden automatisch gespeichert.
 
 Der Universal Editor speichert Ihre Änderungen automatisch in der Authoring-Umgebung. Sie müssen sie noch veröffentlichen, damit Ihre Leser sie sehen können, was wir in einem späteren Schritt tun werden.
 
@@ -57,7 +55,7 @@ Der Universal Editor speichert Ihre Änderungen automatisch in der Authoring-Umg
 
 Sie können auch Bilder austauschen, während sie im Kontext Ihres Inhalts verbleiben, indem Sie den universellen Editor verwenden.
 
-1. Verbleibend in **Komponenten** -Modus, wählen Sie das Bild des Surfers aus, um es auszuwählen.
+1. Wählen Sie das Bild des Surfers aus, um es auszuwählen.
 
 1. In der Komponentenleiste können Sie die Details des Assets sehen. Wählen Sie die **Vorgestelltes Bild** Miniaturansicht.
 
@@ -75,7 +73,7 @@ Das Bild wird durch das von Ihnen ausgewählte ersetzt.
 
 Mit dem universellen Editor können Sie mit Ihren Inhalten in ihrem Kontext interagieren und sehen, wie die Inhalte auf den Geräten Ihrer Benutzer bereitgestellt werden.
 
-1. Standardmäßig rendert der Editor die Desktop-Version Ihres Inhalts. Wählen Sie die Schaltfläche Emulator oben rechts im Editor aus, um das Zielgerät zu ändern.
+1. Standardmäßig rendert der Editor die Desktop-Version Ihres Inhalts. Wählen Sie die Schaltfläche Emulator oben rechts in der Symbolleiste des universellen Editors aus, um das Zielgerät zu ändern.
 
    ![Menüelement &quot;Emulator&quot;](assets/do-not-localize/ue-emulator-1.png)
 
@@ -91,9 +89,9 @@ Sie können auch genaue Abmessungen für den Emulator angeben und das emulierte 
 
 ## Vorschau und Veröffentlichung {#preview}
 
-Da Sie den Inhalt auswählen müssen, um ihn im Editor auszuwählen, können Sie im Editor keine Links folgen oder mit Ihrem Inhalt interagieren, indem Sie auf tippen oder klicken, während er sich im Bearbeitungsmodus befindet. Im Vorschaumodus können Sie den Links in Ihrem Inhalt folgen und ihn so erleben, wie es Ihre Benutzer vor der Veröffentlichung tun würden.
+Da Sie den Inhalt auswählen müssen, um ihn im Editor zu ändern, ist es im Editor nicht möglich, Links zu folgen oder mit Ihrem Inhalt zu interagieren, indem Sie auf tippen oder klicken. Im Vorschaumodus können Sie den Links in Ihrem Inhalt folgen und ihn so erleben, wie es Ihre Benutzer vor der Veröffentlichung tun würden.
 
-1. Wählen Sie in der Modusleiste links im Editor die Option **Vorschau**.
+1. Wählen Sie in der Symbolleiste des universellen Editors die Option **Vorschau**.
 
 1. Wählen Sie nun die **Mehr dazu** -Link für den Hauptartikel.
 
@@ -113,9 +111,11 @@ Ihr Inhalt wird veröffentlicht.
 
 Um das Authoring-Erlebnis für Inhalte zu beschleunigen, wenn die strukturierte Bearbeitung von Headless-Inhalten günstiger ist als die Bearbeitung im Kontext, bietet Ihnen der universelle Editor auch schnellen Zugriff auf den Inhaltsfragment-Editor.
 
-1. Scrollen Sie weiter unten auf der Seite zum **Abenteuer** Abschnitt.
+1. Deaktivieren Sie den Vorschaumodus, indem Sie auf **Vorschau** in der Symbolleiste des universellen Editors.
 
-1. Wählen Sie in der Modusleiste links im Editor die Option **Komponenten**. Auf diese Weise können Sie Seitenkomponenten im Editor auswählen.
+   ![Vorschaumodus deaktivieren](assets/do-not-localize/ue-toggle-off-preview.png)
+
+1. Scrollen Sie weiter unten auf der Seite zum **Abenteuer** Abschnitt.
 
 1. Wählen Sie eines der Abenteuer aus, z. B. **Bali Surf Camp** , um sie auszuwählen.
 
