@@ -2,10 +2,10 @@
 title: Aktionszentrum
 description: Nutzung des Aktionszentrums, um bequem auf Störungen und andere wichtige Informationen reagieren zu können
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: dca00a8913fb8fd159a69675b8f4ffa67441faa4
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 79%
+source-wordcount: '734'
+ht-degree: 73%
 
 ---
 
@@ -63,14 +63,14 @@ AEM as a Cloud Service verfügt über mehrere Arten von Benachrichtigungen, aber
 |---|---|---|---|
 | Operative Vorfälle | Kritische Vorfälle, die sofortiges Handeln erfordern | Benutzerin bzw. Benutzer, die/der dem Produktprofil „Benachrichtigung bei Vorfällen – Cloud Service“ zugewiesen ist | X |
 | Proaktive Empfehlungen | Zu planende Optimierungen | Benutzerin bzw. Benutzer, die/der dem Produktprofil „proaktive Benachrichtigung – Cloud Service“ zugewiesen ist | X |
-| Cloud Manager-Pipeline-Status | Informationen zum Zustand Ihrer Pipelines | Benutzende mit den Rollen „Geschäftsinhaber“, „Programm-Manager“ oder „Bereitstellungs-Manager“ und aktiviertem Kontrollkästchen „Sonstige“ in den [Experience Cloud-Voreinstellungen](https://experience.adobe.com/preferences), wie [hier beschrieben](/help/implementing/cloud-manager/notifications.md). |   |
+| Cloud Manager-Pipeline-Status | Informationen zum Zustand Ihrer Pipelines | Benutzer mit den Rollen Business Owner, Programm-Manager oder Deployment Manager, Kontrollkästchen &quot;Sonstige&quot;in [Experience Cloud-Voreinstellungen](https://experience.adobe.com/preferences), als [hier beschrieben](/help/implementing/cloud-manager/notifications.md). |   |
 
 ## Unterstützte Benachrichtigungstypen {#supported-notification-types}
 
-In der folgenden Tabelle sind die Benachrichtigungsarten aufgeführt, die derzeit im Aktionszentrum unterstützt werden. Benachrichtigungen sind derzeit auf Produktionsumgebungen beschränkt.
+In der folgenden Tabelle sind die Benachrichtigungstypen aufgeführt, die derzeit im Aktionszentrum unterstützt werden. Benachrichtigungen sind derzeit auf Produktionsumgebungen beschränkt.
 
 | Benachrichtigungstyp | Verwandtes Produktprofil | Korrekturmaßnahmen |
-|---|---|---|
+|---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Blockierte Replikations-Warteschlange | Vorfall | Heben Sie die Blockierung der Warteschlange auf, indem Sie den Anweisungen in der [Replikations-Dokumentation](/help/operations/replication.md#troubleshooting) folgen |
+| Ungültige bestehende GraphQL-Abfrage | Vorfall | Korrigieren Sie die ungültige GraphQL-Abfrage, indem Sie auf die [Dokumentation zur Fehlerbehebung bei persistenten GraphQL-Abfragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=en) |
 | Ablaufendes S2S-Zertifikat | Proaktiv | Erfahren Sie in der Dokumentation [Erstellen von Zugriffstoken für Server-seitige APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials), wie Sie eine Berechtigung aktualisieren können. |
-
