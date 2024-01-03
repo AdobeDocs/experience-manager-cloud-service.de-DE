@@ -2,9 +2,9 @@
 title: Inhaltserstellung mit dem universellen Editor
 description: Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: e33cdaf9147fc0276920fad974984d5703dba530
 workflow-type: tm+mt
-source-wordcount: '2387'
+source-wordcount: '2179'
 ht-degree: 25%
 
 ---
@@ -44,11 +44,10 @@ Geben Sie nach der Anmeldung die URL der Seite ein, die Sie bearbeiten möchten,
 
 ## Grundlegendes zur Benutzeroberfläche {#ui}
 
-Die Benutzeroberfläche ist in fünf Hauptbereiche unterteilt.
+Die Benutzeroberfläche ist in diese Hauptbereiche unterteilt.
 
 * [Die Kopfzeile von Experience Cloud](#experience-cloud-header)
-* [Die Kopfzeile des universellen Editors](#universal-editor-header)
-* [Die Modusleiste](#mode-rail)
+* [Symbolleiste des universellen Editors](#universal-editor-toolbar)
 * [Der Editor](#editor)
 * [Die Eigenschaftenleiste](#properties-rail)
 
@@ -96,11 +95,11 @@ Wählen Sie das Symbol für Ihren Benutzer aus, um auf Ihre Benutzereinstellunge
 
 ![Benutzereigenschaften](assets/user-properties.png)
 
-### Die Kopfzeile des universellen Editors {#universal-editor-header}
+### Die Symbolleiste des universellen Editors {#universal-editor-toolbar}
 
-Die Kopfzeile des universellen Editors befindet sich immer oben im Bildschirm direkt unter [der Kopfzeile von Experience Cloud.](#experience-cloud-header) Dadurch erhalten Sie schnellen Zugriff auf die Navigation zu einer anderen Seite, die Sie bearbeiten können, sowie auf die Veröffentlichung der aktuellen Seite.
+Die Symbolleiste des universellen Editors befindet sich immer oben im Bildschirm direkt darunter [die Experience Cloud-Kopfzeile.](#experience-cloud-header) Dadurch erhalten Sie schnellen Zugriff auf die Navigation zu einer anderen Seite, die Sie bearbeiten können, sowie auf die Veröffentlichung der aktuellen Seite.
 
-![Die Kopfzeile des universellen Editors](assets/universal-editor-header.png)
+![Symbolleiste des universellen Editors](assets/universal-editor-toolbar.png)
 
 #### Die Schaltfläche &quot;Startseite&quot; {#home-button}
 
@@ -132,7 +131,7 @@ Die Speicherortleiste zeigt die Adresse der Seite an, die Sie bearbeiten. Wähle
 
 #### Einstellungen für Authentifizierungs-Header {#authentication-settings}
 
-Wählen Sie das Symbol Authentifizierungs-Header-Einstellungen aus, wenn Sie ein Authentifizierungsgeheimnis festlegen müssen.
+Wählen Sie bei Bedarf das Symbol für die Authentifizierungs-Kopfzeileneinstellungen aus. [Legen Sie einen benutzerdefinierten Authentifizierungs-Header für lokale Entwicklungszwecke fest.](/help/implementing/universal-editor/developer-overview.md#auth-header)
 
 ![Schaltfläche &quot;Authentifizierungs-Header-Einstellungen&quot;](assets/authentication-header-settings.png)
 
@@ -154,6 +153,16 @@ Sie können auch ein Mobilgerät und im universellen Editor emulieren:
 * Breite und Höhe definieren
 * Ausrichtung ändern
 
+#### Vorschaumodus {#preview-mode}
+
+Im Vorschaumodus wird die Seite im Editor so gerendert, wie sie in Ihrem veröffentlichten Dienst angezeigt werden würde. Dadurch kann der Inhaltsautor durch Klicken auf Links zum Inhalt navigieren usw.
+
+![Vorschaumodus](assets/preview-mode.png)
+
+>[!TIP]
+>
+>Verwenden des Hotkeys `P` , um in den und aus dem Vorschaumodus zu wechseln.
+
 #### App-Vorschau öffnen {#open-app-preview}
 
 Klicken Sie auf das Symbol &quot;Vorschau der App öffnen&quot;, um die Seite zu öffnen, die Sie gerade bearbeiten, und zwar auf der eigenen Registerkarte des Browsers, die nicht vom Editor zur Vorschau Ihres Inhalts genutzt werden kann.
@@ -174,47 +183,13 @@ Wählen Sie die Veröffentlichungsschaltfläche aus, damit Sie die Änderungen a
 >
 >Siehe Dokument . [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md) für weitere Informationen zur Veröffentlichung mit dem universellen Editor.
 
-### Die Modusleiste {#rail}
-
-Die Modusleiste befindet sich direkt unter der Schaltfläche &quot;Startseite&quot;und befindet sich immer auf der linken Seite des Editors. Dadurch können Sie den Editor einfach zwischen verschiedenen Nutzungsmodi wechseln.
-
-![Die Modusleiste](assets/mode-rail.png)
-
-#### Vorschaumodus {#preview-mode}
-
-Im Vorschaumodus wird die Seite im Editor so gerendert, wie sie in Ihrem veröffentlichten Dienst angezeigt werden würde. Dadurch kann der Inhaltsautor durch Klicken auf Links zum Inhalt navigieren usw.
-
-![Vorschaumodus](assets/preview-mode.png)
-
->[!TIP]
->
->Verwenden Sie den Hotkey `P`, um in den Vorschaumodus zu wechseln.
-
-#### Komponentenmodus {#component-mode}
-
-Im Komponentenmodus kann der Inhaltsautor Komponenten zur Bearbeitung auswählen, darunter:
-
-* [Bearbeiten von Normaltext](#editing-content) vorhanden sind.
-* [Rich-Text bearbeiten](#editing-rich-text) mit zusätzlichen Formatierungsoptionen, die in der Eigenschaftenleiste angezeigt werden.
-* [Bearbeiten von Medieninhalten](#editing-media)
-* [Bearbeiten von Inhaltsfragmenten](#edit-content-fragment)
-
-![Komponentenmodus](assets/component-mode.png)
-
-Wenn Sie eine Komponente auswählen, werden die Details ihres Inhalts im [Eigenschaftenleiste.](#properties-rail) Je nach Inhaltstyp können Sie entweder direkt oder in der Eigenschaftenleiste bearbeiten.
-
->[!TIP]
->
->Verwenden des Hotkeys `C` , um in den Komponentenmodus zu wechseln.
-
 ### Der Editor {#editor}
 
 Der Editor belegt den Großteil des Fensters und ist dort, wo die Seite angegeben ist in [die Standortleiste](#location-bar) wird gerendert.
 
-* Wenn sich der Editor in [Komponentenmodus,](#component-mode) der Inhalt kann bearbeitet werden, Sie können jedoch nicht auf Links folgen.
-* Wenn sich der Editor in [Vorschaumodus](#preview-mode) Der Inhalt kann navigiert werden und Sie können Links folgen, den Inhalt kann jedoch nicht bearbeitet werden.
-
 ![Bearbeiter](assets/editor.png)
+
+Wenn sich der Editor in [Vorschaumodus](#preview-mode) Der Inhalt kann navigiert werden und Sie können Links folgen, den Inhalt kann jedoch nicht bearbeitet werden.
 
 ### Eigenschaftenleiste {#properties-rail}
 
@@ -254,7 +229,7 @@ Bei der Auswahl eines Elements in der Inhaltsstruktur scrollt der Editor zu dies
 
 ##### Bearbeiten {#edit}
 
-Wann [Komponentenmodus,](#component-mode) Die Bearbeitungsoptionen für die ausgewählte Komponente werden in der Eigenschaftenleiste angezeigt. In der Eigenschaftenleiste können Sie die ausgewählte Komponente bearbeiten. Wenn es sich bei der ausgewählten Komponente um ein Inhaltsfragment handelt, können Sie auch die Schaltfläche &quot;Bearbeiten&quot;auswählen.
+Bei der Bearbeitung werden die Optionen für die ausgewählte Komponente in der Eigenschaftenleiste angezeigt, in der Sie die ausgewählte Komponente bearbeiten können. Wenn es sich bei der ausgewählten Komponente um ein Inhaltsfragment handelt, können Sie auch die Schaltfläche &quot;Bearbeiten&quot;auswählen.
 
 ![Symbol Bearbeiten](assets/edit.png)
 
@@ -294,19 +269,19 @@ Tippen oder Klicken auf die Schaltfläche zum Löschen [löscht die Komponente.]
 
 ## Bearbeiten von Inhalten {#editing-content}
 
-Die Bearbeitung von Inhalten ist einfach und intuitiv. In [Komponentenmodus](#component-mode)Wenn Sie den Mauszeiger über den Inhalt im Editor bewegen, wird der bearbeitbare Inhalt durch ein blaues Feld markiert.
+Die Bearbeitung von Inhalten ist einfach und intuitiv. Wenn Sie den Mauszeiger über den Inhalt im Editor bewegen, wird der bearbeitbare Inhalt durch ein blaues Feld markiert.
 
 ![Bearbeitbare Inhalte werden durch ein blaues Feld hervorgehoben](assets/editable-content.png)
 
 >[!TIP]
 >
->Wenn Sie im Komponentenmodus auf den Inhalt tippen oder klicken, wird er zur Bearbeitung ausgewählt. Wenn Sie durch folgende Links in Ihren Inhalt navigieren möchten, wechseln Sie zu [Vorschaumodus.](#preview-mode)
+>Durch Tippen oder Klicken auf den Inhalt wird er standardmäßig zur Bearbeitung ausgewählt. Wenn Sie durch folgende Links in Ihren Inhalt navigieren möchten, wechseln Sie zu [Vorschaumodus.](#preview-mode)
 
 Je nach ausgewähltem Inhalt stehen Ihnen möglicherweise unterschiedliche Optionen zur Bearbeitung im Kontext zur Verfügung. Zusätzlich können Sie zusätzliche Informationen und Optionen für den Inhalt im [Eigenschaftenleiste.](#properties-rail)
 
 ### Nur Text bearbeiten {#edit-plain-text}
 
-Wenn Sie [Komponentenmodus](#component-mode) und eine Textkomponente auswählen, können Sie den Text an Ort und Stelle bearbeiten, indem Sie auf die Komponente doppelklicken oder doppeltippen.
+Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklicken oder doppeltippen.
 
 ![Bearbeiten von Inhalten](assets/editing-content.png)
 
@@ -320,7 +295,7 @@ Außerdem sind Details zu Ihrem Text in der Eigenschaftenleiste verfügbar. Änd
 
 ### Bearbeiten von Rich-Text {#edit-rich-text}
 
-Wenn Sie [Komponentenmodus](#component-mode) und eine Rich-Text-Komponente auswählen, können Sie den Text an Ort und Stelle bearbeiten, indem Sie auf die Komponente doppelklicken oder doppeltippen.
+Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklicken oder doppeltippen.
 
 Drücken Sie die Eingabetaste/die Eingabetaste oder wählen Sie außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
 
@@ -330,25 +305,20 @@ Außerdem sind Formatierungsoptionen und Details zu Ihrem Text in der Eigenschaf
 
 ### Bearbeiten von Medien {#edit-media}
 
-Wenn Sie [Komponentenmodus](#component-mode) und Sie ein Bild auswählen, können Sie dessen Details in der Eigenschaftenleiste anzeigen.
+Sie können die Details in der Eigenschaftenleiste anzeigen.
 
 ![Medien bearbeiten](assets/ue-edit-media.png)
 
-Wählen Sie die **Ersetzen** Schaltfläche unter der Vorschau des ausgewählten Bildes in der Eigenschaftenleiste, um das Bild durch ein anderes aus Ihrer Asset-Bibliothek zu ersetzen.
-
+1. Tippen oder klicken Sie in der Eigenschaftenleiste auf die Vorschau des ausgewählten Bildes.
 1. Die [Asset-Wähler](/help/assets/asset-selector.md#using-asset-selector) -Fenster geöffnet, in dem Sie ein Asset auswählen können.
 1. Wählen Sie diese Option, um ein neues Asset auszuwählen.
 1. Auswählen **Auswählen** , um zur Eigenschaftenleiste zurückzukehren, in der das Asset ersetzt wurde.
 
 Änderungen werden automatisch in Ihrem Inhalt gespeichert.
 
->[!TIP]
->
->Verwenden des Hotkeys `R` , um die Asset-Auswahl zu öffnen und das ausgewählte Bild zu ersetzen.
-
 ### Bearbeiten von Inhaltsfragmenten {#edit-content-fragment}
 
-Wenn Sie [Komponentenmodus](#component-mode) und wählen Sie eine [Inhaltsfragment,](/help/sites-cloud/administering/content-fragments/overview.md) Sie können die Details in der Eigenschaftenleiste bearbeiten.
+Wenn Sie eine [Inhaltsfragment,](/help/sites-cloud/administering/content-fragments/overview.md) Sie können die Details in der Eigenschaftenleiste bearbeiten.
 
 ![Bearbeiten von Inhaltsfragmenten](assets/ue-edit-cf.png)
 
@@ -407,7 +377,7 @@ Die Komponenten werden sowohl in der Inhaltsstruktur als auch im Editor neu ange
 
 Wenn Sie mit der Bearbeitung von Inhalten fertig sind, möchten Sie häufig durch diese navigieren, um zu sehen, wie sie im Inhalt anderer Seiten aussehen. Im [Vorschaumodus](#preview-mode) können Sie auf Links klicken, um genau wie eine Person, die Ihre Inhalte liest, durch diese zu navigieren. Der Inhalt wird im Editor so wiedergegeben, wie er veröffentlicht werden würde.
 
-Im Vorschaumodus reagiert das Tippen oder Klicken auf den Inhalt so, wie es für einen Leser des Inhalts der Fall wäre. Wenn Sie den zu bearbeitenden Inhalt auswählen möchten, wechseln Sie zu [Komponentenmodus.](#component-mode)
+Im Vorschaumodus reagiert das Tippen oder Klicken auf den Inhalt so, wie es für einen Leser des Inhalts der Fall wäre. Wenn Sie den zu bearbeitenden Inhalt auswählen möchten, können Sie [Vorschaumodus.](#preview-mode)
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
