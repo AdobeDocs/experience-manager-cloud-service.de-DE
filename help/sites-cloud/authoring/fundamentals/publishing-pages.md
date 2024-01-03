@@ -2,10 +2,10 @@
 title: Veröffentlichen von Seiten
 description: Erfahren Sie, wie Sie Ihre Seiten mithilfe verschiedener Mechanismen in AEM veröffentlichen und ihre Veröffentlichung rückgängig machen können.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 410c585dbe9eddaab4e424eb70ce060447db1990
+source-git-commit: c05cf17749f63e713e4fb3fbf2a840a9f82877b3
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 89%
+source-wordcount: '1925'
+ht-degree: 85%
 
 ---
 
@@ -52,9 +52,11 @@ Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen fo
 
 >[!NOTE]
 >
->Wenn Sie die Seitenreihenfolge beibehalten möchten, müssen Sie die übergeordnete Seite veröffentlichen, wenn Sie untergeordnete Seiten veröffentlichen.
+>Wenn Sie die Seitenreihenfolge beibehalten möchten, verwenden Sie [Veröffentlichung verwalten](#manage-publication) , um die übergeordnete Seite zusammen mit allen untergeordneten Seiten in einer einzigen Aktion zu veröffentlichen.
 >
->Die Seitenreihenfolge ist nicht garantiert, wenn nur untergeordnete Seiten zur Veröffentlichung ausgewählt sind (da die Bestellinformationen auf der übergeordneten Seite gespeichert werden).
+>Die Seitenreihenfolge ist nicht garantiert:
+>* wenn nur untergeordnete Seiten zur Veröffentlichung ausgewählt sind (da die Bestellinformationen auf der übergeordneten Seite gespeichert werden)
+>* wenn die übergeordneten und untergeordneten Seiten in separaten Aktionen veröffentlicht werden
 
 >[!NOTE]
 >
@@ -123,6 +125,14 @@ So veröffentlichen Sie eine Seite mit der Funktion „Quick Publish“:
 #### Veröffentlichung verwalten {#manage-publication}
 
 **Veröffentlichung verwalten** bietet mehr Optionen als **Schnell veröffentlichen**. Mit diesen können Sie auch untergeordnete Seiten einschließen, Verweise anpassen, alle nötigen Workflows starten und bei Bedarf zu einem späteren Zeitpunkt veröffentlichen.
+
+>[!NOTE]
+>
+>Wenn Sie die Seitenreihenfolge beibehalten möchten, verwenden Sie **Veröffentlichung verwalten** , um die übergeordnete Seite zusammen mit allen untergeordneten Seiten in einer einzigen Aktion zu veröffentlichen.
+>
+>Die Seitenreihenfolge ist nicht garantiert:
+>* wenn nur untergeordnete Seiten zur Veröffentlichung ausgewählt sind (da die Bestellinformationen auf der übergeordneten Seite gespeichert werden)
+>* wenn die übergeordneten und untergeordneten Seiten in separaten Aktionen veröffentlicht werden
 
 So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgängig mit „Veröffentlichung verwalten“:
 
