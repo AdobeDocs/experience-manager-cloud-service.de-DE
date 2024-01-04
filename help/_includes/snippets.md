@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
+source-git-commit: 6a370269317621f09f0dcdc7f701d7c8a4891ea4
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 100%
+source-wordcount: '236'
+ht-degree: 80%
 
 ---
 # Snippets {#snippets}
@@ -18,6 +18,12 @@ ht-degree: 100%
 ## WAF Config – eingeschränkte Freigabe {#waf-limited-release}
 
 [!BADGE Der WAF-DDOS-Schutz wird Ende 2023 verfügbar sein.]{type=Caution tooltip="Der WAF-DDOS-Schutz wird Ende 2023 verfügbar sein."}
+
+## Status des universellen Editors {#universal-editor-status}
+
+>[!NOTE]
+>
+>Der universelle Editor befindet sich noch in der Entwicklung und seine Funktionen können sich ändern und von den in diesem Dokument beschriebenen unterscheiden.
 
 ## Siehe auch {#see-also}
 

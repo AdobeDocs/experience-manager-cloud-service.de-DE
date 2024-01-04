@@ -2,7 +2,7 @@
 title: Architektur des universellen Editors
 description: Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 90%
@@ -13,6 +13,8 @@ ht-degree: 90%
 # Architektur des universellen Editors {#architecture}
 
 Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.
+
+{{universal-editor-status}}
 
 ## Bausteine für Architekturen {#building-blocks}
 

@@ -2,7 +2,7 @@
 title: Veröffentlichen von Inhalten mit dem universellen Editor
 description: Erfahren Sie, wie der Universal Editor Inhalte veröffentlicht und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 55%
@@ -13,6 +13,8 @@ ht-degree: 55%
 # Veröffentlichen von Inhalten mit dem universellen Editor {#publishing}
 
 Erfahren Sie, wie der Universal Editor Inhalte veröffentlicht und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
+
+{{universal-editor-status}}
 
 ## Ähnlichkeiten mit AEM {#similarities}
 

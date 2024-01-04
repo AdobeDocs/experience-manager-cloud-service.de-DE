@@ -2,7 +2,7 @@
 title: Lokale AEM mit dem universellen Editor
 description: Erfahren Sie, wie der universelle Editor die Bearbeitung lokaler AEM-Instanzen zu Entwicklungszwecken unterstützt.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 0546f3cee8df3d7134021e32670b40030d56cd84
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
@@ -13,6 +13,10 @@ ht-degree: 0%
 # Lokale AEM mit dem universellen Editor {#local-dev-ue}
 
 Erfahren Sie, wie der universelle Editor die Bearbeitung lokaler AEM-Instanzen zu Entwicklungszwecken unterstützt.
+
+{{universal-editor-status}}
+
+## Übersicht {#overview}
 
 In diesem Dokument wird beschrieben, wie Sie AEM in HTTPS zusammen mit einer lokalen Kopie des Universal Editor-Dienstes ausführen, damit Sie mit dem universellen Editor lokal AEM entwickeln können.
 

@@ -2,10 +2,10 @@
 title: Inhaltserstellung mit dem universellen Editor
 description: Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: e33cdaf9147fc0276920fad974984d5703dba530
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
-source-wordcount: '2179'
-ht-degree: 25%
+source-wordcount: '2165'
+ht-degree: 26%
 
 ---
 
@@ -13,6 +13,8 @@ ht-degree: 25%
 # Inhaltserstellung mit dem universellen Editor {#authoring}
 
 Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
+
+{{universal-editor-status}}
 
 ## Einführung {#introduction}
 
@@ -23,10 +25,6 @@ Dazu bietet der universelle Editor Autoren von Inhalten eine intuitive Benutzero
 >[!TIP]
 >
 >Eine detailliertere Einführung in den universellen Editor finden Sie im Dokument [Einführung in den universellen Editor](introduction.md).
-
->[!NOTE]
->
->Der Universal Editor befindet sich noch in der Entwicklung. Es kann derzeit nicht alle Inhaltstypen bearbeitet werden.
 
 ## Vorbereiten der App {#prepare-app}
 
