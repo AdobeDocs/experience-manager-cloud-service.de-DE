@@ -1,10 +1,10 @@
 ---
 title: Erstellung von Inhaltsfragmenten
-description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente erstellen und dann Varianten dieses Inhalts entsprechend dem Zweck erstellen. Dies bietet mehr Flexibilität für die Headless-Bereitstellung und das Seiten-Authoring.
+description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente erstellen und Varianten dieses Inhalts entsprechend dem Zweck erstellen. Dies bietet mehr Flexibilität für die Headless-Bereitstellung und das Seiten-Authoring.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
 source-wordcount: '2266'
 ht-degree: 5%
@@ -207,7 +207,7 @@ Für **[Mehrzeiliger Text](/help/sites-cloud/administering/content-fragments/con
 * [Statistiken](#statistics-rich-text)
 * [Vergleichen und Synchronisieren](#compare-and-synchronize-rich-text)
 
-Beispiel:
+Zum Beispiel:
 
 ![Inhaltsfragmente-Editor - Mehrzeiliger Text - Umschalter im Vollbildmodus](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
@@ -219,7 +219,7 @@ Beispiel:
 
 Der Vollbild-Editor bietet dieselben Bearbeitungsoptionen wie im Textfluss - bietet jedoch mehr Platz für den Text.
 
-Beispiel:
+Zum Beispiel:
 
 ![Inhaltsfragment-Editor - Mehrzeiliger Text - Vollbild](assets/cf-authoring-multilinetext-fullscreen.png)
 
@@ -227,7 +227,7 @@ Beispiel:
 
 Die Aktion **Statistik** zeigt eine Reihe von Informationen zum Text in einem mehrzeiligen Feld an.
 
-Beispiel:
+Zum Beispiel:
 
 ![Inhaltsfragmente-Editor - Statistiken](assets/cf-authoring-multilinetext-statistics.png)
 
@@ -324,13 +324,13 @@ So fügen Sie Verweise auf AEM Seiten, Experience Fragments oder andere Content-
 
 Durch Auswahl des Link-Symbols in der oberen Symbolleiste wird eine Liste aller übergeordneten Verweise geöffnet.
 
-Beispiel:
+Zum Beispiel:
 
 ![Inhaltsfragmente-Editor - Verweise anzeigen](assets/cf-authoring-show-references-link.png)
 
 Ein Fenster mit allen zugehörigen Verweisen wird geöffnet. Um einen Verweis zu öffnen, wählen Sie den Namen, den Titel oder das Link-Symbol aus.
 
-Beispiel:
+Zum Beispiel:
 
 ![Inhaltsfragmente-Editor - Verweise anzeigen](assets/cf-authoring-show-references.png)
 
@@ -357,7 +357,7 @@ Auf der Registerkarte &quot;Eigenschaften&quot;(rechtes Bedienfeld) können Sie 
 
 Wenn Sie **Main** ausgewählt ist, wird der Name des zugrunde liegenden Inhaltsfragmentmodells im Abschnitt &quot;Eigenschaften&quot;angezeigt. Wenn Sie das Link-Symbol auswählen, wird das Modell in einer separaten Registerkarte geöffnet.
 
-Beispiel:
+Zum Beispiel:
 
 ![Inhaltsfragmente-Editor - Inhaltsfragmentmodell öffnen](assets/cf-authoring-open-model.png)
 
@@ -387,7 +387,7 @@ So stellen Sie eine bestimmte Version wieder her:
 
 Im **Spracheigenschaften** -Tab-Details verwandter Sprachkopien werden angezeigt. Wenn Sie ein Link-Symbol auswählen, wird die Kopie auf einer separaten Registerkarte geöffnet.
 
-Beispiel:
+Zum Beispiel:
 
 ![Inhaltsfragmente-Editor - Sprachkopie öffnen](assets/cf-authoring-open-language-copies.png)
 

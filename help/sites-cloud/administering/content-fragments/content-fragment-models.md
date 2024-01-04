@@ -1,13 +1,13 @@
 ---
 title: Inhaltsfragmentmodelle
-description: Erfahren Sie, wie Inhaltsfragmentmodelle als Grundlage für Ihre Inhaltsfragmente in AEM verwendet werden. Mit diesen Fragmenten können Sie strukturierte Inhalte erstellen, die für die Headless-Bereitstellung oder die Seitenbearbeitung verwendet werden können.
+description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für Ihre Inhaltsfragmente dienen. So können Sie strukturierte Inhalte für die Headless-Bereitstellung oder für die Seitenbearbeitung erstellen.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '3121'
-ht-degree: 59%
+source-wordcount: '3125'
+ht-degree: 60%
 
 ---
 
@@ -34,7 +34,7 @@ So verwenden Sie Inhaltsfragmentmodelle:
 
 1. Geben Sie den **Modelltitel** an.
 Sie können auch verschiedene Eigenschaften definieren, beispielsweise **Tags**, a **Beschreibung** auswählen **Modell aktivieren** nach [das Modell aktivieren](#enabling-disabling-a-content-fragment-model) bei Bedarf und definieren Sie die
-   **Standardmäßige Echtzeitansicht für URL-Muster**.
+   **Standard-URL-Vorschaumuster**.
 
    >[!NOTE]
    >
@@ -42,7 +42,7 @@ Sie können auch verschiedene Eigenschaften definieren, beispielsweise **Tags**,
 
    ![Titel und Beschreibung](assets/cf-cfmodels-create.png)
 
-1. Verwenden Sie **Erstellen**, um das leere Modell zu speichern. Eine Meldung weist auf den Erfolg der Aktion hin. Sie können **Öffnen** das Modell sofort bearbeiten oder **Fertig** , um zur Konsole zurückzukehren.
+1. Verwenden Sie **Erstellen**, um das leere Modell zu speichern. Eine Meldung zeigt den Erfolg der Aktion an. Sie können **Öffnen** auswählen, um das Modell sofort zu bearbeiten, oder **Fertig**, um zur Konsole zurückzukehren.
 
 ### Inhaltsfragmentmodell – Eigenschaften {#content-fragment-model-properties}
 
@@ -97,7 +97,7 @@ Das Inhaltsfragmentmodell definiert die Struktur der resultierenden Inhaltsfragm
 
    Nach dem Öffnen zeigt der Modell-Editor Folgendes an:
 
-   * Links: bereits definierte Felder
+   * Links: Felder bereits definiert
    * Rechts: verfügbare **Datentypen** für das Erstellen von Feldern (und **Eigenschaften**, die für erstellte Felder verwendet werden können)
 
    >[!NOTE]
@@ -112,28 +112,28 @@ Das Inhaltsfragmentmodell definiert die Struktur der resultierenden Inhaltsfragm
 
      ![Datentyp zum Erstellen eines Felds ziehen](assets/cf-cfmodels-create-field.png)
 
-   * Nachdem dem Modell ein Feld hinzugefügt wurde, zeigt das rechte Bedienfeld die **Eigenschaften** , die für diesen Datentyp definiert werden können. Hier können Sie festlegen, was für dieses Feld erforderlich ist.
+   * Wenn ein Feld zum Modell hinzugefügt wurde, werden im rechten Bereich die **Eigenschaften** angezeigt, die für diesen speziellen Datentyp definiert werden können. Hier können Sie festlegen, was für dieses Feld erforderlich ist.
 
       * Viele Eigenschaften sind selbsterklärend. Weitere Informationen finden Sie unter [Eigenschaften](#properties).
-      * Typisierung **Feldbezeichnung** schließt automatisch die **Eigenschaftsname**  - wenn leer, und kann danach manuell aktualisiert werden.
+      * Wenn Sie eine **Feldbeschriftung** eingeben, wird der **Eigenschaftsname** automatisch ausgefüllt, falls das Feld leer ist, und kann anschließend manuell aktualisiert werden.
 
         >[!CAUTION]
         >
         >Beim manuellen Aktualisieren der Eigenschaft **Eigenschaftsname** für einen Datentyp müssen Namen *only* A-Z, a-z, 0-9 und Unterstrich &quot;_&quot;als Sonderzeichen.
         >
-        >Wenn Modelle, die in früheren Versionen von AEM erstellt wurden, unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
+        >Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
-     Beispiel:
+     Zum Beispiel:
 
      ![Feldeigenschaften](assets/cf-cfmodels-field-properties.png)
 
-1. **So entfernen Sie ein Feld**
+1. **Entfernen eines Feldes**
 
    Wählen Sie das gewünschte Feld aus und wählen Sie dann das Papierkorbsymbol aus. Sie werden aufgefordert, die Aktion zu bestätigen.
 
-   ![Remove](assets/cf-cfmodels-remove-icon.png)
+   ![Entfernen](assets/cf-cfmodels-remove-icon.png)
 
-1. Fügen Sie alle erforderlichen Felder hinzu und legen Sie bei Bedarf die zugehörigen Eigenschaften fest. Beispiel:
+1. Fügen Sie alle erforderlichen Felder hinzu und legen Sie bei Bedarf die zugehörigen Eigenschaften fest. Zum Beispiel:
 
    ![Speichern](assets/cf-cfmodels-save.png)
 
@@ -146,7 +146,7 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 * **Einzeilentext**
    * Fügen Sie ein oder mehrere Felder mit einer einzelnen Textzeile hinzu. Die maximale Länge kann festgelegt werden.
 * **Mehrzeilentext**
-   * Ein Textbereich, der Rich-Text, Klartext oder Markdown sein kann
+   * Ein Textbereich, der Rich Text, Plain Text oder Markdown sein kann
 
   >[!NOTE]
   >
@@ -178,7 +178,7 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
       * Das JSON wird weitergegeben und als JSON in GraphQL ausgegeben.
       * Enthält JSON-Syntaxhervorhebung, automatische Vervollständigung und Fehlerhervorhebung im Inhaltsfragment-Editor.
 * **Registerkarten-Platzhalter**
-   * Ermöglicht die Einführung von Registerkarten zur Bearbeitung des Inhalts von Inhaltsfragmenten.
+   * Ermöglicht die Einführung von Registerkarten zur Bearbeitung des Inhaltsfragmentinhalts.
       * Diese werden als Trennzeichen im Modell-Editor angezeigt, wobei Abschnitte der Liste der Inhaltsdatentypen getrennt werden. Jede Instanz stellt den Beginn einer neuen Registerkarte dar.
       * Im Fragment-Editor wird jede Instanz als Registerkarte angezeigt.
 
@@ -196,11 +196,11 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
 
   >[!CAUTION]
   >
-  >Wenn Modelle, die in früheren Versionen von AEM erstellt wurden, unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
+  >Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
 * **Rendern als**
 
-  Die verschiedenen Optionen zum Realisieren/Rendern des Felds in einem Fragment. Oft können Sie damit festlegen, ob dem Autor nur eine einzige Instanz des Feldes angezeigt wird oder ob er mehrere Instanzen erstellen darf. Wann **Mehrere Felder** verwendet wird, können Sie die Mindest- und Höchstanzahl der Elemente definieren - siehe [Validierung](#validation) für weitere Informationen.
+  Die verschiedenen Optionen zum Realisieren/Rendern des Felds in einem Fragment. Häufig können Sie damit definieren, ob dem Autor eine einzelne Instanz des Felds angezeigt wird oder ob er mehrere Instanzen erstellen darf. Wann **Mehrere Felder** verwendet wird, können Sie die Mindest- und Höchstanzahl der Elemente definieren - siehe [Validierung](#validation) für weitere Informationen.
 
 * **Feldbezeichnung**
 Eingabe einer **Feldbezeichnung** automatisch generiert eine **Eigenschaftsname**, die dann bei Bedarf manuell aktualisiert werden kann.
@@ -262,8 +262,8 @@ Verschiedene Datentypen bieten jetzt die Möglichkeit, Validierungsanforderungen
 
   Felder, die als **Mehrere Felder** (festgelegt mit **Rendern als**) haben die Optionen:
 
-   * **Mindestanzahl der Elemente**
-   * **Maximale Anzahl der Elemente**
+   * **Mindestanzahl von Elementen**
+   * **Maximale Elementanzahl**
 
   Diese werden im [Inhaltsfragment-Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
 
@@ -324,7 +324,7 @@ Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
 Die Fragmentreferenz verweist auf ein oder mehrere Inhaltsfragmente. Diese Funktion ist besonders beim Abrufen von Inhalten für die Verwendung in Ihrer App interessant, da Sie damit strukturierte Daten mit mehreren Ebenen abrufen können.
 
-Beispiel:
+Zum Beispiel:
 
 * Ein Modell, das Details für einen Mitarbeiter definiert, einschließlich:
    * Ein Verweis auf das Modell, das den Arbeitgeber definiert (Firma)
@@ -363,7 +363,7 @@ Gibt einen Stammpfad für referenzierte Fragmente an.
 
 * **Fragmenterstellung zulassen**
 
-  Dadurch kann der Fragmentautor ein Fragment basierend auf dem entsprechenden Modell erstellen.
+  Auf diese Weise kann die Autorin oder der Autor des Fragments ein Fragment auf der Grundlage des entsprechenden Modells erstellen.
 
    * **fragmentreferencecomposite**: Ermöglicht dem Fragmentautor das Erstellen einer Composite-Datei durch Auswahl mehrerer Fragmente.
 
@@ -373,7 +373,7 @@ Gibt einen Stammpfad für referenzierte Fragmente an.
 >
 >Es gibt einen Mechanismus zum Wiederholungsschutz. Es untersagt dem Benutzer, das aktuelle Inhaltsfragment in der Fragmentreferenz auszuwählen, und kann zu einem leeren Dialogfeld für die Auswahl von Fragmentverweisen führen.
 >
->Es gibt auch Wiederholungsschutz für Fragmentverweise in GraphQL. Wenn Sie eine tiefe Abfrage über zwei Inhaltsfragmente erstellen, die sich gegenseitig referenzieren, wird null zurückgegeben.
+>Es gibt auch Wiederholungsschutz für Fragmentverweise in GraphQL. Wenn Sie eine tiefe Abfrage über zwei Inhaltsfragmente erstellen, die gegenseitig aufeinander verweisen, wird null zurückgegeben.
 
 ## Aktivieren oder Deaktivieren von Inhaltsfragmentmodellen {#enabling-disabling-a-content-fragment-model}
 
@@ -409,7 +409,7 @@ Ein Modell lässt sich auch aus folgenden Gründen deaktivieren:
    * Inhaltsfragmente, die auf dem Modell basieren, können weiterhin abgefragt und vom GraphQL-Endpunkt zurückgegeben werden.
 * Das Modell kann nicht mehr referenziert werden. Vorhandene Referenzen bleiben jedoch unverändert und können weiterhin abgefragt und vom GraphQL-Endpunkt zurückgegeben werden.
 
-So deaktivieren Sie ein Modell, das als **Aktiviert**, verwenden Sie die **Deaktivieren** -Option entweder:
+Um ein Modell zu deaktivieren, das als **Aktiviert** gekennzeichnet ist, verwenden Sie die Option **Deaktivieren** aus einem der folgenden Bereiche:
 
 * Die obere Symbolleiste, wenn das erforderliche Modell ausgewählt ist.
 * Die entsprechende Schnellaktion (bewegen Sie den Mauszeiger über das entsprechende Modell).
@@ -497,7 +497,7 @@ So machen Sie die Veröffentlichung eines Inhaltsfragmentmodells rückgängig:
 1. Wählen Sie Ihr Modell und anschließen die Option **Veröffentlichung aufheben** aus der Symbolleiste aus.
 Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
 
-Wenn Sie versuchen, die Veröffentlichung eines Modells aufzuheben, das derzeit von einem oder mehreren Fragmenten verwendet wird, wird eine Fehlerwarnung angezeigt. Beispiel:
+Wenn Sie versuchen, die Veröffentlichung eines Modells aufzuheben, das derzeit von einem oder mehreren Fragmenten verwendet wird, wird eine Fehlerwarnung angezeigt. Zum Beispiel:
 
 ![Fehlermeldung zum Inhaltsfragmentmodell beim Rückgängigmachen der Veröffentlichung eines verwendeten Modells](assets/cf-cfmodels-unpublish-error.png)
 

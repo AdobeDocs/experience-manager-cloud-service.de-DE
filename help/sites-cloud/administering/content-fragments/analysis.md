@@ -1,15 +1,15 @@
 ---
 title: Analysieren von Inhaltsfragmenten
-description: Machen Sie sich mit der Struktur und Inhaltsbereitstellung Ihrer Inhaltsfragmente vertraut. Dies bietet sowohl Headless-Bereitstellung als auch Seitenbearbeitung.
+description: Machen Sie sich mit der Struktur Ihrer Inhaltsfragmente vertraut, die für die Inhaltsbereitstellung verwendet werden. Dies bietet Informationen, die sowohl für die Headless-Bereitstellung als auch für die Seitenbearbeitung relevant sind.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '132'
 ht-degree: 2%
 
 ---
-
 
 # Analysieren der Struktur von Inhaltsfragmenten {#analyzing-content-fragments-structure}
 
@@ -19,7 +19,7 @@ Experience Manager (AEM) bietet verschiedene Methoden zum Anzeigen und Analysier
 
 ## Verweise {#references}
 
-Die Struktur wird mithilfe von Verweisen aufgebaut:
+Die mehrschichtige Struktur wird mithilfe von Verweisen aufgebaut:
 
 * [Datentypen für Verweise werden im Inhaltsfragmentmodell definiert](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content)
 * Beim Authoring haben Sie folgende Möglichkeiten:

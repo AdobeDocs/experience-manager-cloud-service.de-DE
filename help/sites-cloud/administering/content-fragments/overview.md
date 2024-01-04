@@ -1,15 +1,15 @@
 ---
 title: Eine Übersicht über die Arbeit mit Inhaltsfragmenten
-description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service Seiteninhalte entwerfen, erstellen, kuratieren und verwenden können, die seitenunabhängig sind und sich ideal für Headless-Bereitstellung und Seitenbearbeitung eignen.
+description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in AEM as a Cloud Service Inhalte erstellen und verwenden können - ideal für Headless-Bereitstellung und Seitenbearbeitung.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '1823'
-ht-degree: 40%
+source-wordcount: '1792'
+ht-degree: 42%
 
 ---
-
 
 # Eine Übersicht über die Arbeit mit Inhaltsfragmenten {#overview-working-with-content-fragments}
 
@@ -75,7 +75,7 @@ Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über
 >[!NOTE]
 >
 >**Inhaltsfragmente** und **[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** sind unterschiedliche Funktionen in AEM:
->* **Inhaltsfragmente** sind redaktionelle Inhalte mit Definition und Struktur, aber ohne zusätzliches visuelles Design und/oder Layout. Sie können für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet werden.
+>* **Inhaltsfragmente** sind redaktionelle Inhalte mit Definition und Struktur, aber ohne zusätzliches visuelles Design und/oder Layout. Sie können unter anderem für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Datumsangaben verwendet werden.
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
@@ -85,7 +85,7 @@ Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über
 Diese und die folgenden Seiten behandeln die Aufgaben zum Erstellen, Konfigurieren, Warten und Verwenden Ihrer Inhaltsfragmente:
 
 * [Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz](/help/sites-cloud/administering/content-fragments/setup.md)
-* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - Aktivieren, Erstellen und Definieren Ihrer Modelle
+* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md): Aktivieren, Erstellen und Definieren Ihrer Modelle
 * [Erstellen von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment) (mithilfe der Inhaltsfragmentkonsole)
 
 Nachdem die Fragmente erstellt wurden, haben Sie folgende Möglichkeiten:
@@ -234,8 +234,8 @@ Zum Erstellen von Inhaltsfragmenten benötigen Sie Folgendes:
 
 * **Inhaltsmodelle**
 
-   * werden [mithilfe des Konfigurations-Browsers aktiviert](/help/sites-cloud/administering/content-fragments/setup.md).
-   * werden [mithilfe von Tools erstellt](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).
+   * Werden [mithilfe des Konfigurations-Browsers aktiviert](/help/sites-cloud/administering/content-fragments/setup.md).
+   * Werden [mithilfe von Tools erstellt](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).
    * Erforderlich zum [Erstellen eines Fragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments).
    * Definiert die Struktur eines Fragments (Titel, Inhaltselemente, Tag-Definitionen).
    * Für Definitionen des Inhaltsfragmentmodells sind ein Titel und ein Datenelement erforderlich. Alle anderen Elemente sind optional.
@@ -260,7 +260,7 @@ Um Ihre Inhaltsfragmente zum Erstellen von Seiten zu verwenden, benötigen Sie a
    * Erforderlich zum [Referenzieren des Fragments auf einer Seite](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
    * Zuständig für das Layout und die Bereitstellung eines Fragments, z. B. Kanäle.
    * Fragmente benötigen eine oder mehrere dedizierte Komponenten zur Definition des Layouts sowie zur Bereitstellung einiger oder aller Elemente/Varianten und zugehörigen Inhalte.
-   * Wenn Sie ein Fragment bei der Bearbeitung auf eine Seite ziehen, wird die erforderliche Komponente automatisch zugewiesen.
+   * Durch Ziehen eines Fragments auf eine Seite während der Bearbeitung wird die erforderliche Komponente automatisch zugewiesen.
    * Siehe [Inhaltsfragment-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de).
 
 ## Anwendungsbeispiel {#example-usage}

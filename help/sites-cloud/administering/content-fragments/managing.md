@@ -1,12 +1,12 @@
 ---
 title: Verwalten von Inhaltsfragmenten
-description: Erfahren Sie, wie Sie Ihre AEM Inhaltsfragmente über die Konsole und den Editor als Grundlage für Ihren Headless Content oder für die Seitenbearbeitung verwalten.
+description: Erfahren Sie, wie Sie Ihre AEM Inhaltsfragmente über die Konsole und den Editor verwalten, um Inhalte als Grundlage für Headless-Inhalte zu erstellen oder um Seiten zu erstellen.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '2617'
+source-wordcount: '2620'
 ht-degree: 44%
 
 ---
@@ -405,7 +405,7 @@ Details der übergeordneten Verweise können über das
 
 Beide bieten einen Link, der ein Dialogfeld öffnet, in dem alle übergeordneten Verweise dieses Fragments aufgelistet werden, einschließlich Verweisen auf Inhaltsfragmente, Experience Fragments und Seiten. Um eine bestimmte Referenz zu öffnen, klicken Sie auf die **Titel** oder das Verknüpfungssymbol im Dialogfeld.
 
-Beispiel:
+Zum Beispiel:
 
 ![Inhaltsfragmentkonsole – Dialogfeld „Verweise“](assets/cf-managing-console-references-dialog.png)
 
@@ -444,7 +444,7 @@ Der Filterbereich bietet folgende Optionen:
 * die Möglichkeit, Ihre Konfiguration zu **speichern**
 * die Option zum Abrufen eines gespeicherten Suchfilters für die Wiederverwendung
 
-Nach der Auswahl wird die **Filtern nach** -Optionen angezeigt werden (unter dem Suchfeld). Sie können von dort aus abgewählt werden. Beispiel:
+Nach der Auswahl wird die **Filtern nach** -Optionen angezeigt werden (unter dem Suchfeld). Sie können von dort aus abgewählt werden. Zum Beispiel:
 
 ![Inhaltsfragmentkonsole – Filtern](assets/cf-managing-console-filter.png)
 

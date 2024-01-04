@@ -1,15 +1,15 @@
 ---
 title: Inhaltsfragmente - Einrichtung
-description: Erfahren Sie, wie Sie Inhaltsfragmente und GraphQL-Funktionen aktivieren, um AEM Headless-Bereitstellungsfunktionen zu verwenden.
+description: Erfahren Sie, wie Sie Inhaltsfragmente und GraphQL für die Verwendung mit AEM Headless-Bereitstellungsfunktionen und Seitenbearbeitung aktivieren.
 feature: Content Fragments
 role: Developer, Architect
-source-git-commit: 676173813b6ea4defeafe25c95be9668d32aac38
+exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 27%
+source-wordcount: '392'
+ht-degree: 39%
 
 ---
-
 
 # Inhaltsfragmente - Einrichtung {#content-fragments-setup}
 
@@ -23,7 +23,7 @@ Um Ihre Instanz für die Inhaltsfragmentfunktionalität zu aktivieren, müssen S
   >
   >Wenn Sie **Inhaltsfragmentmodelle** nicht aktivieren:
   >
-  >* die **Erstellen** nicht zum Erstellen von Modellen verfügbar.
+  >* ist die Option **Erstellen** für das Erstellen von Modellen nicht verfügbar.
   >* können Sie die [Sites-Konfiguration nicht auswählen, um den entsprechenden Endpunkt zu erstellen](/help/headless/graphql-api/graphql-endpoint.md).
 
 * **GraphQL: Beständige Abfragen** – optional
@@ -43,7 +43,7 @@ Um die Funktion &quot;Inhaltsfragment&quot;von Inhaltsfragmentmodellen und von G
 
 >[!NOTE]
 >
->[Unterkonfigurationen](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (eine in einer anderen Konfiguration verschachtelte Konfiguration) werden vollständig für die Verwendung mit Inhaltsfragmenten, Inhaltsfragmentmodellen und GraphQL-Abfragen unterstützt.
+>[Unterkonfigurationen](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (eine Konfiguration, die in einer anderen Konfiguration verschachtelt ist) werden vollständig zur Verwendung mit Inhaltsfragmenten, Inhaltsfragmentmodellen und GraphQL-Abfragen unterstützt.
 >
 >Beachten Sie Folgendes:
 >
