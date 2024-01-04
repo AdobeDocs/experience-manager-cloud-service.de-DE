@@ -7,7 +7,7 @@ exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 46456903ee947c61d63508dc86cc5f72dc50ed82
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 6%
+ht-degree: 12%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
 >title="Bearbeiten im Kontext mit dem universellen Editor"
->abstract="Erfahren Sie, wie Ihre Headless-Apps den Universal Editor verwenden können, um bei der Kontextbearbeitung die Fingerspitzen Ihrer Autoren zu optimieren."
+>abstract="Erfahren Sie, wie Ihre Headless-Apps den universellen Editor nutzen können, um Ihren Autorinnen und Autoren eine reibungslose, kontextbezogene Bearbeitung zu ermöglichen."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
 >title="Starten des universellen Editors"
->abstract="In diesem Handbuch erfahren Sie, wie der universelle Editor jedem ermöglicht, jeden Aspekt Ihres Inhalts in jeder Implementierung zu bearbeiten, wodurch Inhalte schneller bearbeitet werden.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie unten klicken und dieser Anleitung folgen."
+>abstract="In diesem Handbuch erfahren Sie mehr über den universellen Editor und wie dieser allen ermöglicht, alle Inhaltsaspekte in jeder Implementierung zu bearbeiten, was zu höherer Content Velocity führen kann.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie unten klicken und dieser Anleitung folgen."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
