@@ -2,7 +2,9 @@
 description: Wir sind auf Slack auf dedizierten Slack-Kanälen verfügbar und sowohl das Adobe-Team als auch der Slack-Bot stehen zur Beantwortung Ihrer Fragen zur Verfügung.
 title: Slack Bot
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
+hide: true
+hidefromtoc: true
+source-git-commit: c04b9391059e66b343fe2ecab90e26179b2172ac
 workflow-type: tm+mt
 source-wordcount: '28'
 ht-degree: 0%
