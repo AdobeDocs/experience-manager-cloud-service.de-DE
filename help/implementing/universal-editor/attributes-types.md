@@ -1,24 +1,24 @@
 ---
-title: Attribute und Typen
-description: Erfahren Sie mehr über die Datenattribute und -typen, die der universelle Editor erfordert.
+title: Attribute und Elementtypen
+description: Erfahren Sie mehr über die Datenattribute und Elementtypen, die der universelle Editor erfordert.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: 7550491de94f1e2cbb28b07f8abbdaded5aa04ea
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 78%
+source-wordcount: '686'
+ht-degree: 72%
 
 ---
 
 
 # Attribute und Typen {#attributes-types}
 
-Erfahren Sie mehr über die Datenattribute und -typen, die der universelle Editor erfordert.
+Erfahren Sie mehr über die Datenattribute und Elementtypen, die der universelle Editor erfordert.
 
 {{universal-editor-status}}
 
 ## Einführung {#introduction}
 
-Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss sie ordnungsgemäß instrumentiert sein. Dazu gehören auch die korrekten Metadaten, damit der Editor den Inhalt der Anwendung bearbeiten kann. In diesem Dokument werden die Attribute und Typen dieser Metadaten beschrieben.
+Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss sie ordnungsgemäß instrumentiert sein. Dazu gehören auch die korrekten Metadaten, damit der Editor den Inhalt der Anwendung bearbeiten kann. In diesem Dokument werden die Attribute und Elementtypen dieser Metadaten beschrieben.
 
 >[!NOTE]
 >

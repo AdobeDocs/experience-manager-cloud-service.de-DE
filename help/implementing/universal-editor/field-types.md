@@ -1,29 +1,29 @@
 ---
-title: Feldtypen für den universellen Editor
-description: Erfahren Sie mehr über die verschiedenen Feldtypen, die der universelle Editor unterstützt, und darüber, was Sie für Ihre eigenen Apps instrumentieren können.
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+title: Feldtypen
+description: Erfahren Sie mehr über die verschiedenen Feldtypen, die der universelle Editor in der Komponentenleiste bearbeiten kann, mit Beispielen dafür, wie Sie Ihre eigene App instrumentieren können.
+source-git-commit: b1a188d01371665b4375087847625d89e47d8927
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 7%
+source-wordcount: '278'
+ht-degree: 8%
 
 ---
 
 
-# Feldtypen für den universellen Editor {#field-types}
+# Feldtypen {#field-types}
 
-Erfahren Sie mehr über die verschiedenen Feldtypen, die der universelle Editor unterstützt, und darüber, was Sie für Ihre eigenen Apps instrumentieren können.
+Erfahren Sie mehr über die verschiedenen Feldtypen, die der universelle Editor in der Komponentenleiste bearbeiten kann, mit Beispielen dafür, wie Sie Ihre eigene App instrumentieren können.
 
 {{universal-editor-status}}
 
 ## Übersicht {#overview}
 
-Wenn Sie Ihre eigenen Apps für die Verwendung mit dem universellen Editor anpassen, müssen Sie die Komponenten instrumentieren und definieren, welche Datentypen im Editor bearbeitet werden können.
+Wenn Sie Ihre eigenen Apps für die Verwendung mit dem universellen Editor anpassen, müssen Sie die Komponenten instrumentieren und definieren, welche Datentypen sie in der Komponentenleiste des Editors bearbeiten können.
 
-Dieses Dokument bietet einen Überblick über die Feldtypen, die Ihnen im Editor zur Verfügung stehen.
+Dieses Dokument bietet einen Überblick über die verfügbaren Feldtypen sowie Beispielkonfigurationen.
 
 >[!TIP]
 >
->Wenn Sie nicht genau wissen, wie Sie Ihre App für den universellen Editor instruieren können, lesen Sie das Dokument . [Übersicht über den universellen Editor für AEM Entwickler.](help/implementing/universal-editor/developer-overview.md)
+>Wenn Sie nicht genau wissen, wie Sie Ihre App für den universellen Editor instruieren können, lesen Sie das Dokument . [Übersicht über den universellen Editor für AEM Entwickler.](/help/implementing/universal-editor/developer-overview.md)
 
 ## Boolesch {#boolean}
 
