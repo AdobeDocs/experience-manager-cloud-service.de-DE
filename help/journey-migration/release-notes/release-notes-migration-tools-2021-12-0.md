@@ -3,10 +3,10 @@ title: Versionshinweise für Migration-Tools in AEM as a Cloud Service 2021.12.0
 description: Versionshinweise für Migration-Tools in AEM as a Cloud Service 2021.12.0
 feature: Release Information
 exl-id: 4155e1c0-cd40-4cbc-9d6c-b106d68a2db5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 100%
+source-wordcount: '251'
+ht-degree: 99%
 
 ---
 
@@ -43,5 +43,5 @@ Das Content Transfer Tool 1.7.10 wurde am 08. Dezember 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt}
 
-* Ein Umschalter wurde zur Aufnahmephase im Content Transfer Tool hinzugefügt, damit Benutzer [Vorkopie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=de) während der Aufnahme deaktivieren können. Für optimale Aufnahmegeschwindigkeiten sollte die Vorkopie während der Aufnahme bei kleinen Migrationssätzen deaktiviert werden oder wenn seit der letzten Aufnahme nur wenige Blobs hinzugefügt wurden.
+* Ein Umschalter wurde zur Aufnahmephase im Content Transfer Tool hinzugefügt, damit Benutzer [Vorkopie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) während der Aufnahme deaktivieren können. Für optimale Aufnahmegeschwindigkeiten sollte die Vorkopie während der Aufnahme bei kleinen Migrationssätzen deaktiviert werden oder wenn seit der letzten Aufnahme nur wenige Blobs hinzugefügt wurden.
 * Die Benutzerzuordnung wurde aktualisiert, um eine verbesserte User Management-API zu verwenden, mit der 2000 Benutzer gleichzeitig abgerufen werden können, was die Leistung erheblich verbessert.

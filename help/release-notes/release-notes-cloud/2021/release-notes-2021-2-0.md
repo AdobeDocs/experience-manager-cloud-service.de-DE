@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.2.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0“
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 90%
+source-wordcount: '1185'
+ht-degree: 92%
 
 ---
 
@@ -78,9 +78,9 @@ Die folgende Version (2021.3.0) wird am 25. März 2021 veröffentlicht.
 
 * Erweiterte Eigenschaften der Produktkonsole zum Anzeigen verknüpfter Assets und Experience Fragments, einschließlich Aktionen zum schnellen Navigieren zum zugehörigen Inhalt.
 
-* CIF Venia Reference Site - 2021.02.24 veröffentlicht, die die neueste Version der CIF-Kernkomponenten Version 1.8.0 enthält. Siehe [CIF Venia-Referenz-Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) für weitere Details.
+* Veröffentlicht CIF Venia-Referenz-Site 2021.02.24, die die neueste Version der CIF Kernkomponenten Version 1.8.0 enthält. Siehe [Venia-Referenz-Website CIF](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) für weitere Details.
 
-* Version 1.8.0 der CIF-Kernkomponenten veröffentlicht. Siehe [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) für weitere Details.
+* Version 1.8.0 CIF Kernkomponenten veröffentlicht. Siehe [CIF Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) für weitere Details.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -91,7 +91,7 @@ Die Version 2021.2.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. F
 ### Neue Funktionen {#what-is-new-cloud-manager}
 
 
-* Assets-Kunden können jetzt selbst entscheiden, wann und wo sie ihre Brand Portal-Instanz über die Cloud Manager-Benutzeroberfläche bereitstellen möchten. Für ein reguläres (Nicht-Sandbox-)Programm mit Assets-Lösung kann Brand Portal jetzt in der Produktionsumgebung bereitgestellt werden. Die Bereitstellung kann nur einmal in der Produktionsumgebung durchgeführt werden.
+* Assets-Kunden können jetzt selbst entscheiden, wann und wo sie ihre Brand Portal-Instanz über die Cloud Manager-Benutzeroberfläche bereitstellen möchten. Für ein reguläres (nicht Sandbox-) Programm mit Assets-Lösung kann Brand Portal jetzt in der Produktionsumgebung bereitgestellt werden. Die Bereitstellung kann nur einmal in der Produktionsumgebung durchgeführt werden.
 
 * Der AEM-Projektarchetyp, der bei der Projekt- und Sandbox-Erstellung verwendet wird, wurde auf Version 25 aktualisiert.
 
@@ -101,7 +101,7 @@ Die Version 2021.2.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. F
 
 * Die Cloud Manager-Benutzeroberfläche informiert den Benutzer, der möglicherweise vorübergehend keinen Domain-Namen hinzufügen/aktualisieren kann, weil der zugehörigen Umgebung entweder eine laufende Pipeline angehängt ist oder sie sich derzeit im Schritt „Warten auf die Genehmigung“ befindet.
 
-* Festlegen von Eigenschaften in Kunden `pom.xml` -Dateien mit dem Sonar-Präfix werden jetzt dynamisch entfernt, um Fehler beim Erstellen und Prüfen zu vermeiden.
+* Eigenschaften, die in `pom.xml`-Kundendateien mit dem Präfix „sonar“ festgelegt wurden, werden nun dynamisch entfernt, um Build- und Qualitätsprüfungsfehler zu vermeiden.
 
 * Die Cloud Manager-Benutzeroberfläche informiert den Benutzer, der möglicherweise vorübergehend ein SSL-Zertifikat nicht auswählen kann, wenn es von einem Domain-Namen verwendet wird, der gerade bereitgestellt wird.
 
@@ -159,7 +159,7 @@ Best Practices Analyzer 2.1.2 wurde am 18. Februar 2021 veröffentlicht.
 ### Neue Funktionen in den Code-Refaktorierungs-Tools {#what-is-new-crt}
 
 * Neue Version des AIO-CLI-Plug-ins veröffentlicht. Die neueste Version dieses Plug-ins enthält mehrere Fehlerbehebungen für den Repository Modernizer.
-Siehe [Einheitliches Erlebnis](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=de#benefits) , um mehr über dieses Plugin zu erfahren.
+Siehe [Einheitliches Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) , um mehr über dieses Plugin zu erfahren.
 
 ### Fehlerbehebungen {#bug-fixes-crt}
 

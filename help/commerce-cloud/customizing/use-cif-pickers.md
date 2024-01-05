@@ -8,10 +8,10 @@ activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
-workflow-type: ht
-source-wordcount: '620'
-ht-degree: 100%
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Experience Manager Content and Commerce Authoring bietet eine Reihe von Au
 
 ## Produktauswahl {#product-picker}
 
-Um die Produktauswahl in einer Projektkomponente zu verwenden, müssen Entwicklungspersonen `commerce/gui/components/common/cifproductfield` zu einem Komponentendialogfeld hinzufügen. Verwenden Sie beispielsweise Folgendes für cq:dialog:
+Um die Produktauswahl in einer Projektkomponente zu verwenden, müssen Entwickelnde `commerce/gui/components/common/cifproductfield` zu einem Komponentendialogfeld hinzufügen. Verwenden Sie beispielsweise Folgendes für cq:dialog:
 
 ```xml
 <product jcr:primaryType="nt:unstructured"
@@ -38,7 +38,7 @@ Im Produktfeld können Sie über die verschiedenen Ansichten zu dem Produkt navi
 Das Produktauswahlfeld unterstützt die folgenden optionalen Eigenschaften:
 
 - „selectionId“ („id“, „uid“, „SKU“, „slug“, „combinedSlug“, „combinedSku“) – ermöglicht die Auswahl des Produktattributs, das von der Auswahl zurückgegeben werden soll (Standard = „id“). Bei Verwendung von „SKU“ wird die SKU des ausgewählten Produkts zurückgegeben. Bei Verwendung von „combinedSku“ wird eine Zeichenfolge wie „base#variant“ mit den SKUs des Basisprodukts und der ausgewählten Variante oder eine einzelne SKU zurückgegeben, wenn ein Basisprodukt ausgewählt wurde.
-- „filter“ („folderOrProduct“, „folderOrProductOrVariant“) – filtert die Inhalte, die von der Auswahl während der Navigation in der Produktstruktur gerendert werden sollen. „folderOrProduct“ – rendert Ordner und Produkte. „folderOrProductOrVariant“ – rendert Ordner, Produkte und Produktvarianten. Wenn Produkte oder Produktvarianten gerendert werden, können sie auch in der Auswahl ausgewählt werden. (Standard = „folderOrProduct“)
+- „filter“ („folderOrProduct“, „folderOrProductOrVariant“) – filtert die Inhalte, die von der Auswahl während der Navigation in der Produktstruktur gerendert werden sollen. „folderOrProduct“ – rendert Ordner und Produkte. folderOrProductOrVariant: Rendert Ordner, Produkte und Produktvarianten. Wenn Produkte oder Produktvarianten gerendert werden, können sie auch in der Auswahl ausgewählt werden. (Standard = „folderOrProduct“)
 - „multiple“ („true“, „false“) – zum Aktivieren der Auswahl eines oder mehrerer Produkte (Standard = „false“).
 - „emptyText“ – zum Konfigurieren des leeren Textwerts des Auswahlfelds.
 
@@ -51,7 +51,7 @@ Außerdem werden die Standardeigenschaften von Dialogfeldern wie `name`, `fieldL
 >
 >Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Adobe empfiehlt die Verwendung von `sku` oder `slug` als Produktkennung. Adobe unterstützt `id` weiterhin nur für Projekte, die CIF-Kernkomponenten Version 1.x verwenden.
 
-Ein umfassendes praktisches Beispiel für `cifproductfield` finden Sie im Projekt [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Siehe auch [Anpassen von Dialogen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=de#customizing-dialogs) in der Dokumentation zu AEM-Kernkomponenten.
+Ein umfassendes praktisches Beispiel für `cifproductfield` finden Sie im Projekt [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Siehe auch [Anpassen von Dialogen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) in der Dokumentation zu AEM-Kernkomponenten.
 
 ## Kategorieauswahl {#category-picker}
 
@@ -69,14 +69,14 @@ Das folgende Snippet kann in einer cq:dialog-Konfiguration verwendet werden:
 
 Das Kategorieauswahlfeld unterstützt die folgenden optionalen Eigenschaften:
 
-- selectionId(id, uid, slug, urlPath, idAndUrlPath _(veraltet)_, uidAndUrlPath _(veraltet)_) – ermöglicht die Auswahl des Kategorieattributs, das von der Auswahl zurückgegeben wird (Standard = id).
+- selectionId („id“, „uid“, „slug“, „idAndUrlPath“ _(veraltet)_, „uidAndUrlPath“ _(veraltet)_): Ermöglicht die Auswahl des Kategorieattributs, das von der Auswahl zurückgegeben werden soll (Standard = „id“).
 - „multiple“ („true“, „false“) – zum Aktivieren der Auswahl einer oder mehrerer Kategorien (Standard = „false“).
 
 Außerdem werden die Standardeigenschaften von Dialogfeldern wie `name`, `fieldLabel` oder `fieldDescription` unterstützt.
 
 >[!CAUTION]
 >
->Wie für die Komponente `cifproductfield` ist für die Komponente `cifcategoryfield` ebenfalls die Client-Bibliothek `cif.shell.picker` erforderlich. Um einem Dialogfeld eine Client-Bibliothek hinzuzufügen, können Sie die Eigenschaft `extraClientlibs` verwenden. Siehe [Anpassen von Dialogen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=de#customizing-dialogs) in der Dokumentation zu AEM-Kernkomponenten.
+>Wie für die Komponente `cifproductfield` ist für die Komponente `cifcategoryfield` ebenfalls die Client-Bibliothek `cif.shell.picker` erforderlich. Um einem Dialogfeld eine Client-Bibliothek hinzuzufügen, können Sie die Eigenschaft `extraClientlibs` verwenden. Siehe [Anpassen von Dialogen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) in der Dokumentation zu AEM-Kernkomponenten.
 >[!CAUTION]
 >
 >Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Adobe empfiehlt die Verwendung von `uid` oder `urlPath` als Kategoriekennung. Adobe unterstützt `id` und `idAndUrlPath` weiterhin nur für Projekte, die CIF-Kernkomponenten Version 1.x verwenden.

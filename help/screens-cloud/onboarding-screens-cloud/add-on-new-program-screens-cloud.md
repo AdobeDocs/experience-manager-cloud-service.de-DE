@@ -2,9 +2,9 @@
 title: Hinzufügen des Screens-Add-ons zu einem neuen Programm in Cloud Manager
 description: Erfahren Sie mehr über das Hinzufügen eines Screens-Add-ons zu einem neuen Programm in Cloud Manager für Screens as a Cloud Service.
 exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '288'
 ht-degree: 48%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 48%
 In diesem Abschnitt wird beschrieben, wie man Screens as an Add-on zu einem neuen Programm in Cloud Manager hinzufügt.
 
 >[!NOTE]
->Weitere Informationen zu Cloud Manager-Programmen finden Sie unter [Grundlegendes zu Programmen und Programmtypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=en).
+>Weitere Informationen zu Cloud Manager-Programmen finden Sie unter [Grundlegendes zu Programmen und Programmtypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=de).
 
 ## Ziel {#objective}
 

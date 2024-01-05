@@ -2,9 +2,9 @@
 title: Bereitschaftsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '944'
 ht-degree: 55%
 
 ---
@@ -45,7 +45,7 @@ Führen Sie die folgenden Schritte aus, um in die Bereitschaftsphase zu gelangen
    1. Navigieren Sie zum [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html) und laden Sie den Best Practices Analyzer als ZIP-Datei herunter.
 
       >[!NOTE]
-      >Lesen Sie [Verwenden von Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations), um zu erfahren, wie Sie BPA ausführen.
+      >Lesen Sie [Verwenden von Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations), um zu erfahren, wie Sie BPA ausführen.
 
    1. Exportieren des Berichts im CSV-Format
 
@@ -97,7 +97,7 @@ Gehen Sie wie folgt vor, um Berichte über die Trendlinienoption anzuzeigen:
 
    ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. Klicken Sie auf **...**.
+1. Klicks **...**.
 
    ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
@@ -159,7 +159,7 @@ Sie können den Bericht nach Wichtigkeit, Untertyp oder Anzahl filtern.
 ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Unter [Interpretieren des Best Practices Analyzer-Berichts](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=de) erfahren Sie mehr über die Ergebniskategorien und Wichtigkeitsstufen.
+>Unter [Interpretieren des Best Practices Analyzer-Berichts](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html) erfahren Sie mehr über die Ergebniskategorien und Wichtigkeitsstufen.
 
 #### Best-Practices-Bewertung {#best-practices-assessment}
 
@@ -193,7 +193,7 @@ Auf dieser Registerkarte können Sie die folgenden Informationen überprüfen:
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
-### Löschen eines Best-Practices-Analyseberichts aus der Trendline-Ansicht {#delete-trendline}
+### Löschen eines Best Practices-Analyseberichts aus der Trendzeilenansicht {#delete-trendline}
 
 >[!IMPORTANT]
 >Ein Bericht kann nur gelöscht werden, wenn mehr als ein Bericht in ein Projekt hochgeladen wurde.
@@ -202,7 +202,7 @@ Auf dieser Registerkarte können Sie die folgenden Informationen überprüfen:
 
    ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. Klicken Sie auf **...**.
+1. Klicks **...**.
 
    ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
@@ -220,4 +220,4 @@ Auf dieser Registerkarte können Sie die folgenden Informationen überprüfen:
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie gelernt haben, wie Sie sich bei Cloud Acceleration Manager anmelden und ein Projekt erstellen, können Sie jetzt den nächsten Schritt im [Implementierungsphase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
+Nachdem Sie gelernt haben, wie Sie sich bei Cloud Acceleration Manager anmelden und ein Projekt erstellen, können Sie jetzt den nächsten Schritt im [Implementierungsphase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html).

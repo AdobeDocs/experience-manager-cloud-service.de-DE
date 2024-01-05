@@ -2,9 +2,9 @@
 title: Implementierungsphase
 description: Sicherstellen, dass Ihr Code und die Inhalte für die Migration in die Cloud bereit sind
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2339'
+source-wordcount: '2282'
 ht-degree: 96%
 
 ---
@@ -71,7 +71,7 @@ Sehen Sie sich zunächst die Dokumentation zu den grundlegenden Tools an und beg
 
 
 * Bei der Planung empfiehlt es sich, eine Liste von Bereichen zu erstellen, die überarbeitet werden müssen, damit sie mit AEM as a Cloud Service kompatibel sind. Weitere Informationen zur Refaktorierung und Optimierung von Code für Cloud Service finden Sie in den [Entwicklungsrichtlinien](/help/implementing/developing/introduction/development-guidelines.md).
-* Lesen Sie mehr darüber, wie Sie [Konfigurationen in AEM as a Cloud Service verwalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=de#what-is-a-configuration).
+* Lesen Sie mehr darüber, wie Sie [Konfigurationen in AEM as a Cloud Service verwalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration).
 * Erfahren Sie, wie Sie eine lokale Entwicklungsumgebung einrichten, indem Sie das [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=de) herunterladen
 * Machen Sie sich abschließend mit der [AEM as a Cloud Service Java-API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) vertraut.
 
@@ -104,8 +104,8 @@ Adobe bietet mehrere Tools, die Ihnen helfen, einige Ihrer Code-Refaktorierungsa
 
 * [Asset Workflow Migration](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md), ein Tool zur automatischen Migration von Asset-Verarbeitungs-Workflows
 * [Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md), ein Tool, das Ihre bestehenden Dispatcher-Konfigurationen in ein Format konvertiert, das für AEM as a Cloud Service-Formate geeignet ist.
-* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=de), ein Tool, das ein AEM Multimode-Projekt als Eingabe verwendet und es in ein AEM as a Cloud Service-Projekt konvertiert
-* [Index Converter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=de), ein Tool, das Indizes in ein Formular konvertiert, das mit AEM as a Cloud Service kompatibel ist
+* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html), ein Tool, das ein AEM Multimode-Projekt als Eingabe verwendet und es in ein AEM as a Cloud Service-Projekt konvertiert
+* [Index Converter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html), ein Tool, das Indizes in ein Formular konvertiert, das mit AEM as a Cloud Service kompatibel ist
 * [Modernization Tools](/help/journey-migration/refactoring-tools/aem-modernization-tools.md), eine Sammlung von Dienstprogrammen, mit denen ältere AEM-Funktionen in die modernen und unterstützten Funktionen von AEM as a Cloud Service umgewandelt werden können.
 
 Sobald Sie die lokale Entwicklungsumgebung eingerichtet haben, sollten Sie sich mit dem AEM as a Cloud Service SDK vertraut machen, indem Sie die [Dokumentation](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) konsultieren.

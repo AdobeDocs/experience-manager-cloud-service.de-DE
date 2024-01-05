@@ -2,9 +2,9 @@
 title: Übermitteln eines AEM-Connectors
 description: Erfahren Sie, wie Sie Connectoren in Adobe Experience Manager (AEM) as a Cloud Service richtig referenzieren und bereitstellen.
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
-workflow-type: ht
-source-wordcount: '310'
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+workflow-type: tm+mt
+source-wordcount: '296'
 ht-degree: 100%
 
 ---

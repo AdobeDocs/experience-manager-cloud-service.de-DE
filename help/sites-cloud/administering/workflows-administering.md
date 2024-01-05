@@ -1,13 +1,13 @@
 ---
 title: Verwalten der Workflow-Instanzen
-description: Erfahren Sie, wie Workflow-Instanzen verwaltet werden mithilfe der Workflow-Konsole
+description: Erfahren Sie, wie Sie Workflow-Instanzen mithilfe der Workflow-Konsole verwalten
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 99%
+source-wordcount: '1286'
+ht-degree: 98%
 
 ---
 
@@ -32,26 +32,22 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
 1. **Laufende Workflows** zeigt die Anzahl der aktuell ausgeführten Workflows und ihren Status an. In den angegebenen Bildern ist beispielsweise die Anzahl der **laufenden Workflows** sowie der **Status** der AEM-Instanz zu sehen:
 
    * **Status: Gesund**
-
      ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **Status: Ungesund**
-
      ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. Klicken Sie für **Statusdetails** von Workflow-Instanzen auf **Details**, um die **Anzahl der laufenden Workflows**, **abgeschlossenen Workflow-Instanzen**, **abgebrochenen Workflow-Instanzen**, **fehlgeschlagenen Workflow-Instanzen** usw. anzuzeigen. Beispielsweise sind unten die jeweiligen Bilder aufgeführt, die **Statusdetails** wie folgt anzeigen:
 
    * **Statusdetails: Gesund**
-
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **Statusdetails: Ungesund**
-
      ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
-   > Um eine gesunde Workflow-Instanz zu erhalten, befolgen Sie die Best Practices unter [Regelmäßige Bereinigung der Workflow-Instanzen](#regular-purging-of-workflow-instances) oder [Best Practices für Workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=de).
+   > Um eine gesunde Workflow-Instanz zu erhalten, befolgen Sie die Best Practices unter [Regelmäßige Bereinigung der Workflow-Instanzen](#regular-purging-of-workflow-instances) oder [Best Practices für Workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
 
 ## Durchsuchen von Workflow-Instanzen {#search-workflow-instances}
 
@@ -115,7 +111,7 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
 Schlägt ein Workflow fehl, ermöglicht Ihnen AEM mit der **Fehler-Konsole** die Untersuchung und das Ergreifen entsprechender Maßnahmen, sobald die ursprüngliche Ursache behoben wurde:
 
 * **Fehlerdetails**
-Öffnet ein Fenster zum Anzeigen von **Fehlermeldung**, **Schritt und &#x200B;** Fehlerstapel**.
+Öffnet ein Fenster zum Anzeigen der **Fehlermeldung**, **Schritt und **Fehlerstapel**.
 
 * **Offener Verlauf** Die Details des Workflow-Verlaufs werden angezeigt.
 

@@ -2,9 +2,9 @@
 title: Versionshinweise für Version 2021.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1432'
 ht-degree: 97%
 
 ---
@@ -182,7 +182,7 @@ Das Content Transfer Tool 1.5.4 wurde am 28. Juni 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt-latest}
 
-* Unterstützung für einen optionalen Schritt [Vorab-Kopie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=de) zur Verwendung mit CTT wurde hinzugefügt. Der Schritt „Vorab-Kopie“ kann verwendet werden, um die Extraktions- und Aufnahmephasen der Inhaltstransferaktivität erheblich zu beschleunigen, wenn die Quell-AEM-Instanz für die Verwendung eines Amazon S3- oder Azure Blob Storage-Datenspeichers konfiguriert ist.
+* Unterstützung für einen optionalen Schritt [Vorab-Kopie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) zur Verwendung mit CTT wurde hinzugefügt. Der Schritt „Vorab-Kopie“ kann verwendet werden, um die Extraktions- und Aufnahmephasen der Inhaltstransferaktivität erheblich zu beschleunigen, wenn die Quell-AEM-Instanz für die Verwendung eines Amazon S3- oder Azure Blob Storage-Datenspeichers konfiguriert ist.
 
 * Eine Schutzmaßnahme wurde zu CTT hinzugefügt, um zu verhindern, dass Benutzer die Aufnahme stoppen und möglicherweise Daten beschädigen, sobald sie während der Aufnahmephase den kritischen Punkt erreicht hat.
 

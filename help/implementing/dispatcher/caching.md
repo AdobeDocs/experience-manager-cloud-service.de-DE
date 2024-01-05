@@ -3,10 +3,10 @@ title: Caching in AEM as a Cloud Service
 description: Erfahren Sie mehr über die Grundlagen der Zwischenspeicherung in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2873'
-ht-degree: 95%
+source-wordcount: '2775'
+ht-degree: 93%
 
 ---
 
@@ -42,7 +42,7 @@ Diese Methode kann beispielsweise nützlich sein, wenn die Geschäftslogik eine 
   ```
 
   >[!NOTE]
-  >Die Surrogate-Control-Kopfzeile gilt für das von Adobe verwaltete CDN. Wenn ein [kundenseitig verwaltetes CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=de#point-to-point-CDN) verwendet wird, kann je nach CDN-Provider eine andere Kopfzeile erforderlich sein.
+  >Die Surrogate-Control-Kopfzeile gilt für das von Adobe verwaltete CDN. Wenn ein [kundenseitig verwaltetes CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN) verwendet wird, kann je nach CDN-Provider eine andere Kopfzeile erforderlich sein.
 
   Gehen Sie beim Festlegen von globalen Kopfzeilen zur Cache-Steuerung oder ähnlichen Cache-Kopfzeilen, die einem weit gefassten regulären Ausdruck entsprechen, umsichtig vor, damit sie nicht auf private Inhalte angewendet werden, die andere nicht einsehen sollen. Erwägen Sie, mehrere Anweisungen zu verwenden, um sicherzustellen, dass die Regeln detailliert angewendet werden. AEM as a Cloud Service entfernt die Cache-Kopfzeile, wenn festgestellt wird, dass sie auf ein Objekt angewendet wurde, welches der Dispatcher als nicht zwischenspeicherbar eingestuft hat, wie in der Dispatcher-Dokumentation beschrieben. Um AEM zu zwingen, die Caching-Kopfzeilen immer anzuwenden, können Sie folgendermaßen die Option **`always`** hinzufügen:
 
@@ -87,7 +87,7 @@ Diese Methode kann beispielsweise nützlich sein, wenn die Geschäftslogik eine 
 
 ### Bilder und alle Inhalte, die groß genug sind, um im Blob-Speicher gespeichert zu werden {#images}
 
-Das Standardverhalten von Programmen, die nach Mitte Mai 2022 erstellt wurden (insbesondere bei Programm-IDs über 65000), besteht darin, standardmäßig zwischenzuspeichern. Dabei wird auch der Authentifizierungskontext der Anfrage berücksichtigt. Ältere Programme (Programm-IDs kleiner/gleich 65000) speichern Blob-Inhalte nicht standardmäßig.
+Das Standardverhalten von Programmen, die nach Mitte Mai 2022 erstellt wurden (insbesondere bei Programm-IDs über 65000), besteht darin, standardmäßig den Cache zu speichern, wobei auch der Authentifizierungskontext der Anfrage berücksichtigt wird. Ältere Programme (Programm-IDs kleiner/gleich 65000) speichern Blob-Inhalte nicht standardmäßig.
 
 In beiden Fällen können die Caching-Kopfzeilen auf einer detaillierteren Ebene auf Apache-/Dispatcher-Ebene überschrieben werden, indem die `mod_headers`-Anweisungen von Apache verwendet werden, Beispiel: 
 
@@ -230,7 +230,7 @@ Wenn eine HEAD-Anfrage im Adobe-CDN für eine Ressource empfangen wird, die **ni
 
 ### Parameter von Marketing-Kampagnen {#marketing-parameters}
 
-Website-URLs enthalten häufig Marketing-Kampagnenparameter, mit denen der Erfolg einer Kampagne verfolgt werden kann.
+Website-URLs enthalten häufig Marketing-Kampagnenparameter, mit denen der Erfolg einer Kampagne verfolgt wird.
 
 In Umgebungen, die im Oktober 2023 oder höher erstellt wurden, entfernt das CDN gängige Marketing-bezogene Abfrageparameter, insbesondere diejenigen, die dem folgenden Regex-Muster entsprechen, um Cache-Anforderungen zu verbessern:
 

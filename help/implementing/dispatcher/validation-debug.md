@@ -3,10 +3,10 @@ title: Validieren und Debuggen mit den Dispatcher Tools
 description: Erfahren Sie mehr über die lokale Validierung, das Debugging, die Dateistruktur mit flexiblem Modus und die Migration vom alten Modus zum flexiblen Modus.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '2990'
-ht-degree: 94%
+source-wordcount: '2971'
+ht-degree: 95%
 
 ---
 
@@ -300,7 +300,7 @@ Während einer Cloud Manager-Bereitstellung wird auch die `httpd -t`-Syntaxprüf
 
 >[!NOTE]
 >
->Im Abschnitt [Automatisches Laden und Validieren](#automatic-loading) finden Sie eine effiziente Alternative zum Ausführen von `validate.sh` nach jeder Konfigurationsänderung.
+Im Abschnitt [Automatisches Laden und Validieren](#automatic-loading) finden Sie eine effiziente Alternative zum Ausführen von `validate.sh` nach jeder Konfigurationsänderung.
 
 ### Phase 1 {#first-phase}
 
@@ -440,8 +440,8 @@ In dieser Phase wird die Apache-Syntax überprüft, indem Apache HTTPD in einem 
 
 >[!NOTE]
 >
->Windows-Benutzerinnen und -Benutzer müssen Windows 10 Professional oder andere Distributionen verwenden, die Docker unterstützen. Dies ist eine Voraussetzung für das Ausführen und Debuggen von Dispatcher auf einem lokalen Computer.
->Sowohl für Windows als auch für macOS empfiehlt Adobe die Verwendung von Docker Desktop.
+Windows-Benutzerinnen und -Benutzer müssen Windows 10 Professional oder andere Distributionen verwenden, die Docker unterstützen. Dies ist eine Voraussetzung für das Ausführen und Debuggen von Dispatcher auf einem lokalen Computer.
+Sowohl für Windows als auch für macOS empfiehlt Adobe die Verwendung von Docker Desktop.
 
 Diese Phase kann auch unabhängig über `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080` initiiert werden.
 
@@ -510,13 +510,13 @@ Protokolle für Cloud-Umgebungen werden über den Protokoll-Serivice bereitgeste
 
 >[!NOTE]
 >
->Für Umgebungen auf AEM as a Cloud Service ist „debug“ die maximale Ausführlichkeitsstufe. Die Trace-Protokollebene wird nicht unterstützt. Daher sollten Sie beim Arbeiten in Cloud-Umgebungen vermeiden, sie festzulegen.
+Für Umgebungen auf AEM as a Cloud Service ist „debug“ die maximale Ausführlichkeitsstufe. Die Trace-Protokollebene wird nicht unterstützt. Daher sollten Sie beim Arbeiten in Cloud-Umgebungen vermeiden, sie festzulegen.
 
 ### Automatisches erneutes Laden und Validieren {#automatic-reloading}
 
 >[!NOTE]
 >
->Aufgrund einer Beschränkung des Windows-Betriebssystems ist diese Funktion nur für Benutzerinnen und Benutzer von macOS und Linux® verfügbar.
+Aufgrund einer Beschränkung des Windows-Betriebssystems ist diese Funktion nur für Benutzerinnen und Benutzer von macOS und Linux® verfügbar.
 
 Anstatt die lokale Validierung (`validate.sh`) auszuführen und den Docker-Container (`docker_run.sh`) jedes Mal zu starten, wenn die Konfiguration geändert wird, können Sie alternativ das Skript `docker_run_hot_reload.sh` ausführen. Das Skript überwacht alle Änderungen an der Konfiguration, lädt sie automatisch neu und führt die Überprüfung erneut aus. Durch die Verwendung dieser Option können Sie beim Debuggen erheblich Zeit sparen.
 
@@ -621,7 +621,7 @@ Mit der Cloud Manager-Version 2021.7.0 generieren neue Cloud Manager-Programme M
 
    >[!NOTE]
    >
-   >Im flexiblen Modus sollten Sie relative Pfade anstelle von absoluten Pfaden verwenden.
+   Im flexiblen Modus sollten Sie relative Pfade anstelle von absoluten Pfaden verwenden.
 1. **Bereitstellung für Produktion:**
    * Übertragen Sie die Datei `opt-in/USE_SOURCES_DIRECTLY` in eine Git-Verzweigung, die von der Produktions-Pipeline in die Staging- und Produktionsumgebungen der Cloud bereitgestellt wird.
    * Verwenden Sie Cloud Manager, um für die Staging-Umgebung bereitzustellen.

@@ -2,10 +2,10 @@
 title: Erstellen eines Projekts in Screens as a Cloud Service
 description: Erfahren Sie, wie Sie ein Projekt in Screens as a Cloud Service erstellen.
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 100%
+source-wordcount: '326'
+ht-degree: 93%
 
 ---
 
@@ -24,13 +24,13 @@ Gehen Sie wie folgt vor, um ein Projekt in Screens as a Cloud Service zu erstell
 1. Navigieren Sie zu Screens Content Provider.
 
    >[!NOTE]
-   >Unter [Verwenden von Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=de) erfahren Sie, wie Sie zum Erstellen Ihres Projekts auf Screens Content Provider zugreifen.
+   >Unter [Verwenden von Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html) erfahren Sie, wie Sie zum Erstellen Ihres Projekts auf Screens Content Provider zugreifen.
 
 1. Klicken Sie in der rechten oberen Ecke der Aktionsleiste auf **Screens-Projekt erstellen**.
 
    ![create-screens-project1](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
-1. Geben Sie den **Titel** Ihres Projekts im Dialogfeld **Screens-Projekt erstellen** ein. Zum Beispiel *ErstesDigitalesErlebnis*.
+1. Geben Sie die **Titel** des Projekts in **Screens-Projekt erstellen** Dialogfeld. Beispiel: *FirstDigitalExperience*.
 
    ![create-screens-project2](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 

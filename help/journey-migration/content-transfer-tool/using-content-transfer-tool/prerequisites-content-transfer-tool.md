@@ -2,9 +2,9 @@
 title: Voraussetzungen für die Verwendung des Content Transfer Tools
 description: Machen Sie sich mit den Voraussetzungen für das Content Transfer Tool vertraut.
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: 5964801192fc4a50b7f04852e3128f8218ca4cc5
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '500'
 ht-degree: 98%
 
 ---
@@ -15,8 +15,8 @@ ht-degree: 98%
 >id="aemcloud_ctt_prereqs"
 >title="Wichtige Überlegungen zur Verwendung des Content Transfer Tools"
 >abstract="Lesen Sie die wichtigen Überlegungen zur Verwendung des Content Transfer Tools, einschließlich Java™- und AEM-Versionen, unterstützten Datenspeichertypen, Überlegungen zu Benutzergruppen und mehr."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=de" text="Wichtige Überlegungen zur Verwendung des Content Transfer Tools"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=de#best-practices" text="Best Practices und Richtlinien"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=de" text="Wichtige Überlegungen zur Verwendung des Content Transfer Tools"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#best-practices" text="Best Practices und Richtlinien"
 
 In der folgenden Tabelle sind die Voraussetzungen für die Verwendung des Content Transfer Tool zusammengefasst.
 

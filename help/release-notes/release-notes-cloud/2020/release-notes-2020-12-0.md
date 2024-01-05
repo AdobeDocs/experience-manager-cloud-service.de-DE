@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2020.12.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2020.12.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 51%
+source-wordcount: '652'
+ht-degree: 50%
 
 ---
 
@@ -48,9 +48,9 @@ Die Version 2020.12.0 von Cloud Manager in Adobe Experience Manager (AEM) wurde 
 
 ### Neue Funktionen in [!DNL Cloud Manager] {#what-is-new-cm}
 
-* Self-Service-Management von [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) und [Benutzerdefinierte Domänennamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+* Self-Service-Verwaltung von [SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) und [benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* Self-Service-Management von [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Self-Service-Verwaltung von [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 * Die aktualisierten **Umgebung** Auf der Detailseite können Benutzer jetzt benutzerdefinierte Domänennamen und IP-Zulassungslisten in ihren Umgebungen verwalten.
 
@@ -64,7 +64,7 @@ Die Version 2020.12.0 von Cloud Manager in Adobe Experience Manager (AEM) wurde 
 
 ### Neue Funktionen in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Neue Version des AIO-CLI-Plug-ins veröffentlicht. Die neueste Version dieses Plug-ins enthält Fehlerbehebungen für den AEM Dispatcher Converter und den Repository Modernizer und unterstützt auch ein neues Dienstprogramm - Index Converter. Siehe [Einheitliches Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html?lang=en#benefits) wo Sie mehr über dieses Plug-in erfahren können.
+* Neue Version des AIO-CLI-Plug-ins veröffentlicht. Die neueste Version dieses Plug-ins enthält Fehlerbehebungen für den AEM Dispatcher Converter und den Repository Modernizer und unterstützt auch ein neues Dienstprogramm - Index Converter. Siehe [Einheitliches Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) wo Sie mehr über dieses Plug-in erfahren können.
 
 * Index Converter ist ein Dienstprogramm, mit dem die benutzerdefinierten Oak-Indexdefinitionen eines Kunden in AEM as a Cloud Service kompatible Oak-Indexdefinitionen umgewandelt werden können. Siehe [Index Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) für weitere Details.
 
