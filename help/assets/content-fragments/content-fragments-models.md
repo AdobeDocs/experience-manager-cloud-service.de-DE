@@ -1,11 +1,11 @@
 ---
 title: Inhaltsfragmentmodelle (Assets – Inhaltsfragmente)
-description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für Ihre Headless-Inhalte dienen und wie Sie Inhaltsfragmente mit strukturierten Inhalten erstellen.
+description: Erfahren Sie, wie Inhaltsfragmentmodelle als Grundlage für Ihren Headless Content in AEM dienen, sodass Sie Inhaltsfragmente mit strukturierten Inhalten erstellen können.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '3005'
-ht-degree: 94%
+source-wordcount: '3011'
+ht-degree: 93%
 
 ---
 
@@ -56,7 +56,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 
    Nach dem Öffnen zeigt der Modell-Editor Folgendes an:
 
-   * Links: bereits definierte Felder
+   * Links: Felder bereits definiert
    * Rechts: verfügbare **Datentypen** für das Erstellen von Feldern (und **Eigenschaften**, die für erstellte Felder verwendet werden können)
 
    >[!NOTE]
@@ -86,7 +86,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 
      ![Feldeigenschaften](assets/cfm-models-05.png)
 
-1. **So entfernen Sie ein Feld**
+1. **Entfernen eines Feldes**
 
    Wählen Sie das gewünschte Feld aus und wählen Sie dann das Papierkorbsymbol aus. Sie werden aufgefordert, die Aktion zu bestätigen.
 
@@ -131,7 +131,7 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
       * Umfasst JSON-Syntaxhervorhebung, automatische Vervollständigung und Fehlerhervorhebung im Inhaltsfragmenteditor.
 * **Registerkarten-Platzhalter**
    * Ermöglicht die Einführung von Registerkarten zur Bearbeitung des Inhalts von Inhaltsfragmenten.
-Dies wird im Modelleditor als Trennlinie dargestellt, welche Abschnitte der Liste der Inhaltsdatentypen voneinander trennt. Jede Instanz stellt den Beginn einer neuen Registerkarte dar.
+Dies wird als Trennzeichen im Modell-Editor angezeigt, das Abschnitte der Liste der Inhaltsdatentypen trennt. Jede Instanz stellt den Beginn einer neuen Registerkarte dar.
 Im Fragment-Editor wird jede Instanz als Registerkarte angezeigt.
      >[!NOTE]
      >
@@ -150,7 +150,7 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
   >Wenn Modelle, die in früheren Versionen von AEM erstellt wurden, unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
 * **Rendern als**
-Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Mit dieser Eigenschaft können Sie oft festlegen, ob die Autorin bzw. der Autor nur eine einzige Instanz des Feldes sieht oder ob mehrere Instanzen erstellt werden dürfen. Wann **Mehrere Felder** verwendet wird, können Sie die Mindest- und Höchstanzahl der Elemente definieren - siehe [Validierung](#validation) für weitere Informationen.
+Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Häufig können Sie mit dieser Eigenschaft definieren, ob der Autor eine einzelne Instanz des Felds sieht oder ob es möglich ist, mehrere Instanzen zu erstellen. Wann **Mehrere Felder** verwendet wird, können Sie die Mindest- und Höchstanzahl der Elemente definieren - siehe [Validierung](#validation) für weitere Informationen.
 
 * **Feldbezeichnung**
 Eingabe einer **Feldbezeichnung** generiert automatisch eine **Eigenschaftsname**, die dann bei Bedarf manuell aktualisiert werden kann.
@@ -216,8 +216,8 @@ Verschiedene Datentypen bieten jetzt die Möglichkeit, Validierungsanforderungen
 
   Felder, die als **Mehrere Felder** (festgelegt mit **Rendern als**) haben die Optionen:
 
-   * **Mindestanzahl der Elemente**
-   * **Maximale Anzahl der Elemente**
+   * **Mindestanzahl von Elementen**
+   * **Maximale Elementanzahl**
 
   Diese werden validiert:
 
@@ -308,7 +308,7 @@ Gibt einen Stammpfad für referenzierte Fragmente an.
 
 * **Fragmenterstellung zulassen**
 
-  Dadurch kann der Fragmentautor ein Fragment basierend auf dem entsprechenden Modell erstellen.
+  Auf diese Weise kann die Autorin oder der Autor des Fragments ein Fragment auf der Grundlage des entsprechenden Modells erstellen.
 
    * **fragmentreferencecomposite**: Ermöglicht dem Fragmentautor das Erstellen einer Composite-Datei durch Auswahl mehrerer Fragmente.
 
@@ -417,7 +417,7 @@ Die für einen Ordner zulässigen Inhaltsfragmentmodelle werden wie folgt aufgel
 
 >[!CAUTION]
 >
->Das Löschen eines Inhaltsfragmentmodells kann sich auf abhängige Fragmente auswirken.
+>Das Löschen eines Inhaltsfragment-Modells kann sich auf abhängige Fragmente auswirken.
 
 So löschen Sie ein Inhaltsfragmentmodell:
 
@@ -444,7 +444,7 @@ Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
 
    >[!NOTE]
    >
-   >Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+   >Wenn Sie ein Inhaltsfragment veröffentlichen, dessen Modell noch nicht veröffentlicht wurde, wird dies in einer Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
 ## Rückgängigmachen der Veröffentlichung eines Inhaltsfragmentmodells {#unpublishing-a-content-fragment-model}
 

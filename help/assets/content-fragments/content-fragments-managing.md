@@ -1,17 +1,17 @@
 ---
 title: Verwalten von Inhaltsfragmenten (Assets - Inhaltsfragmente)
-description: Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM-Inhaltsfragmente verwalten können, die die Grundlage für Ihren Headless-Content bilden.
+description: Erfahren Sie, wie Sie mit der Konsole "Assets"Ihre AEM Inhaltsfragmente verwalten können, entweder als Grundlage für Headless-Inhalte oder für die Seitenbearbeitung.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '1873'
-ht-degree: 96%
+source-wordcount: '1885'
+ht-degree: 94%
 
 ---
 
 # Verwalten von Inhaltsfragmenten {#managing-content-fragments}
 
-Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM-Inhaltsfragmente verwalten können, die die Grundlage für Ihren Headless-Content bilden.
+Erfahren Sie, wie Sie mit der Konsole &quot;Assets&quot;Ihre AEM Inhaltsfragmente verwalten können, entweder als Grundlage für Headless-Inhalte oder für die Seitenbearbeitung.
 
 Nachdem Sie Ihre [Inhaltsfragmentmodelle](#creating-a-content-model) definiert haben, können Sie diese verwenden, um [Ihre Inhaltsfragmente](#creating-a-content-fragment) zu erstellen.
 
@@ -333,7 +333,7 @@ Sie werden nebeneinander angezeigt, wobei:
    * Eingefügter Text: Grün
    * Ersetzter Text: Blau
 
-* Mit dem Vollbildsymbol können Sie beide Versionen einzeln öffnen und dann zur Parallelansicht zurückschalten.
+* Über das Vollbildsymbol können Sie jede Version separat öffnen und dann wieder zur parallelen Ansicht wechseln.
 * Sie die jeweilige Version **wiederherstellen** können.
 * Sie über **Fertig** zur Konsole zurückkehren.
 

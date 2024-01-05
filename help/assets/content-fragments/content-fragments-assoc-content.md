@@ -1,17 +1,23 @@
 ---
 title: Zugehörige Inhalte (Assets – Inhaltsfragmente)
-description: Erfahren Sie, wie die AEM-Funktion für zugehörige Inhalte die Verbindung bereitstellt, damit Assets optional mit dem Fragment verwendet werden können.
+description: Erfahren Sie, wie die zugehörige Inhaltsfunktion für AEM Inhaltsfragmente die Verbindung bereitstellt, damit Assets optional mit dem Fragment verwendet werden können.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 93%
+source-wordcount: '281'
+ht-degree: 54%
 
 ---
 
 # Zugehörige Inhalte{#associated-content}
 
-Die AEM-Funktion für zugehörige Inhalte stellt die Verbindung bereit, mit der Assets optional für ein Fragment verwendet werden können, wenn es zu einer Inhaltsseite hinzugefügt wird. Dies bietet Ihnen Flexibilität bei der Headless-Bereitstellung von Inhalten, [da Sie eine Reihe von Assets zur Verfügung haben, auf die Sie zugreifen können, wenn Sie das Inhaltsfragment auf einer Seite verwenden.](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) Darüber hinaus wird so der Zeitaufwand für die Suche nach dem passenden Asset reduziert.
+Für as a Cloud Service Inhaltsfragmente von Adobe Experience Manager (AEM) stellt die zugehörige Inhaltsfunktion (verfügbar im Original-Editor) die Verbindung bereit, damit Assets optional mit dem Fragment verwendet werden können. Dies bietet Flexibilität durch [Bereitstellung einer Reihe von Assets, auf die bei Verwendung des Inhaltsfragments zugegriffen werden kann](/help/assets/content-fragments/content-fragments.md#using-associated-content), während gleichzeitig dazu beiträgt, die für die Suche nach dem entsprechenden Asset erforderliche Zeit zu reduzieren. Diese Funktion kann sowohl für Ihre Headless Content-Bereitstellung als auch für die Seitenbearbeitung verwendet werden.
+
+>[!NOTE]
+>
+>Inhaltsfragmente sind eine Sites-Eigenschaft, werden jedoch als **Assets** gespeichert.
+>
+>Es gibt zwei Editoren für die Erstellung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor beschrieben, auf den Sie hauptsächlich über das **Assets** Konsole.
 
 ## Hinzufügen von zugehörigen Inhalten {#adding-associated-content}
 
@@ -44,7 +50,7 @@ Um die Verknüpfung herzustellen, müssen Sie zunächst [Hinzufügen von Medien-
 
 Nachdem Sie eine Sammlung zugewiesen haben, können Sie Folgendes tun:
 
-* Die Zuordnung **entfernen**.
-* Assets zu einer Sammlung **hinzufügen**.
+* Die Verknüpfung **aufheben**.
+* **Assets zur Sammlung hinzufügen**.
 * Ein Asset für weitere Aktionen auswählen.
 * Das ausgewählte Asset bearbeiten.

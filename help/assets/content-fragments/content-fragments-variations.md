@@ -1,17 +1,17 @@
 ---
-title: Varianten – Erstellen von Fragmentinhalten (Assets – Inhaltsfragmente)
-description: Erfahren Sie, wie Sie mit Varianten Ihre Headless-Inhalte in AEM noch flexibler gestalten können. Sie können damit Inhalte für ein Fragment und dann entsprechend dem jeweiligen Verwendungszweck Varianten dieses Inhalts erstellen.
+title: Varianten - Erstellen von Fragmentinhalten (Assets - Inhaltsfragmente)
+description: Erfahren Sie, wie Inhaltsfragmentvarianten es Ihnen ermöglichen, Inhalte für das Fragment zu erstellen, dann Varianten dieses Inhalts entsprechend dem Zweck zu erstellen und so die Flexibilität zu erhöhen.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '2546'
-ht-degree: 98%
+source-wordcount: '2474'
+ht-degree: 95%
 
 ---
 
 # Varianten – Erstellen von Fragmentinhalten{#variations-authoring-fragment-content}
 
-[Varianten](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion von AEM-Inhaltsfragmenten. Der Grund dafür ist, dass Sie damit Kopien des primären Inhalts erstellen und bearbeiten können, um sie in bestimmten Kanälen und Szenarien zu verwenden. Dadurch wird die Bereitstellung von Headless-Inhalten noch flexibler.
+[Varianten](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion von Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service. Dies liegt daran, dass Sie damit Kopien der **Master** Inhalte für die Verwendung in bestimmten Kanälen und Szenarien. Insbesondere wird dadurch die Bereitstellung von Headless Content noch flexibler.
 
 >[!NOTE]
 >
@@ -21,14 +21,14 @@ ht-degree: 98%
 
 Auf der Registerkarte **Varianten** haben Sie folgende Optionen:
 
-* [Eingeben von Inhalt](#authoring-your-content) für Ihr Fragment,
+* [Eingeben des Inhalts](#authoring-your-content) für Ihr Fragment,
 * [Erstellen und Verwalten von Varianten](#managing-variations) des **primären** Inhalts,
 
 Führen Sie eine Vielzahl weiterer Aktionen abhängig vom bearbeiteten Datentyp aus, z. B.:
 
 * [Einfügen von visuellen Assets in Ihr Fragment](#inserting-assets-into-your-fragment) (Bilder)
 
-* Auswählen zwischen [Rich-Text](#rich-text), [Nur Text](#plain-text) und [Markdown](#markdown) zur Bearbeitung
+* Wählen zwischen [Rich-Text](#rich-text), [Nur Text](#plain-text) und [Markdown](#markdown) für die Bearbeitung
 
 * [Inhalt hochladen](#uploading-content)
 
@@ -40,7 +40,7 @@ Führen Sie eine Vielzahl weiterer Aktionen abhängig vom bearbeiteten Datentyp 
 
 >[!CAUTION]
 >
->Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn eine Autorin oder ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
+>Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn eine Autorin bzw. ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
 
 ## Verfassen Ihres Inhalts {#authoring-your-content}
 
@@ -68,7 +68,7 @@ Sie haben folgende Möglichkeiten:
 
    * [Tags](/help/sites-cloud/authoring/features/tags.md) sind leistungsstark bei der Organisation Ihrer Fragmente, da sie für die Inhaltsklassifizierung und -taxonomie verwendet werden können. Tags können zum Suchen von Inhalten (nach Tags) und zum Anwenden von Massenvorgängen verwendet werden.
 
-      * Bei der Suche nach einem Tag wird das Fragment zurückgegeben, wobei die Tag-Variante hervorgehoben ist.
+      * Bei der Suche nach einem Tag wird das Fragment zurückgegeben, wobei die getaggte Variante hervorgehoben ist.
       * Varianten-Tags können auch verwendet werden, um Varianten für ein bestimmtes CDN-Profil (Content Delivery Network) (für CDN-Caching) zu gruppieren, anstatt den Variantennamen zu verwenden.
 
      Beispielsweise können Sie relevante Fragmente als „Weihnachts-Launch“ taggen, um nur diese als Teilmenge zu durchsuchen oder sie für einen anderen zukünftigen Launch in einen neuen Ordner zu kopieren.
@@ -96,7 +96,7 @@ Dadurch wird der Vollbild-Texteditor geöffnet:
 Der Vollbild-Texteditor bietet Folgendes:
 
 * Zugriff auf verschiedene [Aktionen](#actions)
-* Zusätzliche Formatierungsoptionen ([Rich-Text](#rich-text)), je nach [Format](#formats)
+* Je nach [Format](#formats) zusätzliche Formatierungsoptionen ([Rich-Text](#rich-text))
 
 ### Aktionen {#actions}
 
@@ -130,12 +130,12 @@ Die Rich-Text-Bearbeitung ermöglicht folgende Formatierungen:
 * Kursiv
 * Unterstrichen
 * Ausrichtung: links, zentriert, rechts
-* Stichpunktliste
+* Aufzählungsliste
 * Nummerierte Liste
-* Einzug: vergrößern, verringern
-* Erstellen/Aufheben von Hyperlinks
-* Einfügen von Text aus Word
-* Einfügen einer Tabelle
+* Einzug: erhöhen, verringern
+* Hyperlinks erstellen/unterbrechen
+* Text aus Word einfügen
+* Tabelle einfügen
 * Absatzformat: Absatz, Überschrift 1/2/3
 * [Asset einfügen](#inserting-assets-into-your-fragment)
 * Öffnen Sie den Vollbild-Editor, in dem die folgenden Formatierungsoptionen zur Verfügung stehen:
@@ -161,7 +161,7 @@ Nur Text ermöglicht die schnelle Eingabe von Inhalt ohne Formatierungs- oder Ma
 >
 >Umfassende Informationen finden Sie in der [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)-Dokumentation.
 
-Auf diese Weise können Sie Ihren Text mithilfe von Markdowns formatieren. Sie können Folgendes definieren:
+Auf diese Weise können Sie Ihren Text mithilfe von Markdown formatieren. Sie können Folgendes definieren:
 
 * Überschriften
 * Absätze und Zeilenumbrüche
@@ -204,7 +204,7 @@ Mit der Option **Neues Inhaltsfragment** können Sie ein Fragment erstellen. Daz
 
 1. Navigieren Sie zum gewünschten Ordner und wählen Sie ihn aus.
 1. Wählen Sie **Weiter** aus.
-1. Legen Sie Eigenschaften fest. Beispiel: **Titel**.
+1. Legen Sie Eigenschaften fest, z. B. **Titel**.
 1. Wählen Sie **Erstellen** aus.
 1. Abschließend:
    1. **Fertig**:
@@ -228,7 +228,7 @@ Um die Erstellung von Inhaltsfragmenten zu vereinfachen, können Sie Text hochla
 
 ### Zusammenfassung von Text {#summarizing-text}
 
-Mithilfe der Zusammenfassung von Text können Benutzende die Länge des Textes auf eine vordefinierte Anzahl von Wörtern verringern, während die wichtigen Punkte und die allgemeine Bedeutung beibehalten werden.
+Mithilfe der Zusammenfassung von Text können Benutzende die Länge des Textes auf eine vordefinierte Anzahl von Wörtern verringern, während die wichtigsten Punkte und die allgemeine Bedeutung beibehalten werden.
 
 >[!NOTE]
 >
@@ -262,7 +262,7 @@ Andere Sprachen sind als Sprachmodellpakete über Software Distribution verfügb
    ![Zusammenfassung](assets/cfm-variations-05.png)
 
 1. Geben Sie den Zielwert der Wörter an und wählen Sie **Starten**:
-1. Der ursprüngliche Text wird nebeneinander mit der vorgeschlagenen Zusammenfassung angezeigt:
+1. Der ursprüngliche Text wird neben der vorgeschlagenen Zusammenfassung angezeigt:
 
    * Alle zu löschenden Sätze sind rot hervorgehoben und durchgestrichen.
    * Klicken Sie auf einen beliebigen markierten Satz, damit Sie ihn im zusammengefassten Inhalt beibehalten können.
@@ -270,7 +270,7 @@ Andere Sprachen sind als Sprachmodellpakete über Software Distribution verfügb
 
 1. Wählen Sie **Zusammenfassen** aus, um die Änderungen zu bestätigen.
 
-1. Der ursprüngliche Text wird nebeneinander mit der vorgeschlagenen Zusammenfassung angezeigt:
+1. Der ursprüngliche Text wird neben der vorgeschlagenen Zusammenfassung angezeigt:
 
    * Alle zu löschenden Sätze sind rot hervorgehoben und durchgestrichen.
    * Klicken Sie auf einen beliebigen markierten Satz, damit Sie ihn im zusammengefassten Inhalt beibehalten können.
@@ -282,7 +282,7 @@ Andere Sprachen sind als Sprachmodellpakete über Software Distribution verfügb
 
 ### Anmerkungen zu Inhaltsfragmenten {#annotating-a-content-fragment}
 
-So fügen Sie Anmerkungen zu Fragmenten hinzu:
+So fügen Sie eine Anmerkung zu einem Fragment hinzu:
 
 1. Wählen Sie **Primäre Version** oder die erforderliche Variante aus.
 
@@ -304,11 +304,11 @@ So fügen Sie Anmerkungen zu Fragmenten hinzu:
 
    ![Anmerken](assets/cfm-variations-07b.png)
 
-1. Schließen Sie den Editor für den Vollbildmodus. Die Anmerkungen sind weiterhin hervorgehoben. Wenn diese Option aktiviert ist, wird ein Dialogfeld geöffnet, in dem Sie die Anmerkung weiter bearbeiten können.
+1. Schließen Sie den Vollbild-Editor. Die Anmerkungen sind weiterhin hervorgehoben. Wenn diese Option aktiviert ist, wird ein Dialogfeld geöffnet, in dem Sie die Anmerkung weiter bearbeiten können.
 
 1. Klicken Sie auf **Speichern**.
 
-1. Schließen Sie den Editor für den Vollbildmodus. Die Anmerkungen sind weiterhin hervorgehoben. Wenn diese Option aktiviert ist, wird ein Dialogfeld geöffnet, in dem Sie die Anmerkung weiter bearbeiten können.
+1. Schließen Sie den Vollbild-Editor. Die Anmerkungen sind weiterhin hervorgehoben. Wenn diese Option aktiviert ist, wird ein Dialogfeld geöffnet, in dem Sie die Anmerkung weiter bearbeiten können.
 
    ![Anmerken](assets/cfm-variations-07c.png)
 
@@ -334,7 +334,7 @@ Anmerkungen:
 
 Um die Erstellung von Inhaltsfragmenten zu vereinfachen, können Sie [Assets](/help/assets/manage-digital-assets.md) (Bilder) direkt zum Fragment hinzufügen.
 
-Sie werden der Absatzsequenz des Fragments ohne Formatierung hinzugefügt. Die Formatierung kann vorgenommen werden, wenn das [Fragment auf einer Seite verwendet/referenziert wird](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+Sie werden der Absatzsequenz des Fragments ohne Formatierung hinzugefügt. Formatierungen können vorgenommen werden, wenn das [Fragment auf einer Seite verwendet/referenziert wird](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -452,8 +452,8 @@ Varianten ermöglichen die Abänderung von **primärem** Inhalt für einen besti
 
 Sie können nach einer der folgenden Aktionen den Inhalt der Variante ändern:
 
-* [Erstellen einer Variante](#creating-a-variation).
-* Öffnen eines vorhandenen Fragments und Auswahl der gewünschten Variante aus dem seitlichen Bedienfeld.
+* [Erstellen einer Variante](#creating-a-variation)
+* Öffnen eines vorhandenen Fragments und Auswahl der gewünschten Variante über das seitliche Bedienfeld
 
 ![Bearbeiten einer Variante](assets/cfm-variations-10.png)
 
@@ -465,7 +465,7 @@ Sie können nach einer der folgenden Aktionen den Inhalt der Variante ändern:
 
 1. Geben Sie im Dialogfeld den neuen **Titel** und/oder die **Beschreibung** ein.
 
-1. Bestätigen Sie das **Umbenennen**.
+1. Bestätigen Sie die Aktion **Umbenennen**.
 
 >[!NOTE]
 >
@@ -487,13 +487,13 @@ Dies betrifft nur den **Titel** der Variante.
 
 Die **primäre Version** ist Teil eines Inhaltsfragments und enthält definitionsgemäß die primäre Kopie des Inhalts. Im Gegensatz dazu enthalten Varianten die einzelnen aktualisierten und maßgeschneiderten Versionen dieses Inhalts. Wenn die primäre Version aktualisiert wird, sind diese Änderungen möglicherweise auch für die Varianten relevant sein und müssen dementsprechend auf diese übertragen werden.
 
-Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisierung des aktuellen Elements der Variante mit der primären Version. Dadurch können Sie an der primären Version vorgenommene Änderungen automatisch in die entsprechende Variante kopieren.
+Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisierung des aktuellen Elements der Variante mit der primären Version. Dadurch können Sie die an der primären Version vorgenommenen Änderungen automatisch in die entsprechende Variante kopieren.
 
 >[!CAUTION]
 >
 Die Synchronisierung ist nur verfügbar, um Änderungen *von der **primären Version**in die Variante* zu kopieren.
 >
-Es wird nur das aktuelle Element der Variante synchronisiert.
+Nur das aktuelle Element der Variante wird synchronisiert.
 >
 Die Synchronisierung funktioniert nur mit dem Datentyp **Mehrzeiliger Text**.
 >
@@ -519,4 +519,4 @@ Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Versio
 
    ![Mit primärer Version synchronisieren](assets/cfm-variations-11c.png)
 
-1. Wählen Sie **Synchronisieren** aus. Die Variante wird dann aktualisiert und angezeigt.
+1. Wählen Sie **Synchronisieren**. Die Variante wird dann aktualisiert und angezeigt.
