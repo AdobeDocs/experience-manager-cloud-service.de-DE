@@ -2,7 +2,7 @@
 title: Bereitschaftsphase
 description: Erfahren Sie mehr über die Schritte, die Sie ausführen müssen, um sicherzustellen, dass Ihre AEM-Installation bereit zum Verschieben in die Cloud ist.
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '1900'
 ht-degree: 95%
@@ -49,7 +49,7 @@ Die Liste der Elemente in der folgenden Tabelle ist die Teilmenge der Änderunge
 <tbody>
   <tr>
     <td>Trennen veränderlicher und unveränderlicher Filter in entsprechende Pakete</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=de">Wesentliche Änderungen in AEM as a Cloud Service</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=de#mutable-vs-immutable">AEM-Projektstruktur für AEM as a Cloud Service</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html">Wesentliche Änderungen in AEM as a Cloud Service</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=de#mutable-vs-immutable">AEM-Projektstruktur für AEM as a Cloud Service</a></td>
     <td>Ein einzelnes Paket, das in AEM as a Cloud Service bereitgestellt werden kann, kann Unterpakete enthalten, die in erster Linie veränderliche und unveränderliche Inhalte enthalten, die in eigene Pakete unterteilt sind.</td>
   </tr>
   <tr>
@@ -119,7 +119,7 @@ Die Liste der Elemente in der folgenden Tabelle ist die Teilmenge der Änderunge
   </tr>
   <tr>
     <td>Schritte für benutzerdefinierte Ausgabedarstellungen</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=de">Verarbeitungsprofile</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html">Verarbeitungsprofile</a></td>
     <td>Jede benutzerdefinierte Ausgabegenerierung, Bildkonvertierung oder Videocodierung muss durch Erstellen entsprechender Verarbeitungsprofile in den Asset Processing Service ausgelagert werden.</td>
   </tr>
   <tr>
@@ -129,7 +129,7 @@ Die Liste der Elemente in der folgenden Tabelle ist die Teilmenge der Änderunge
   </tr>
   <tr>
     <td>Nicht alle Wartungsaufgaben sind konfigurierbar</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html?lang=de">Wartungsaufgaben in AEM as a Cloud Service</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html">Wartungsaufgaben in AEM as a Cloud Service</a></td>
     <td>Sie können nur bestimmte Wartungsaufgaben mit AEM as a Cloud Service konfigurieren.</td>
   </tr>
   <tr>
@@ -144,7 +144,7 @@ Die Liste der Elemente in der folgenden Tabelle ist die Teilmenge der Änderunge
   </tr>
   <tr>
     <td>Sichern und Wiederherstellen</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html?lang=de">AEM as a Cloud Service – Sichern und Wiederherstellen</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html">AEM as a Cloud Service – Sichern und Wiederherstellen</a></td>
     <td></td>
   </tr>
   <tr>
