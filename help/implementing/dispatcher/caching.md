@@ -3,10 +3,10 @@ title: Caching in AEM as a Cloud Service
 description: Erfahren Sie mehr über die Grundlagen der Zwischenspeicherung in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
 workflow-type: tm+mt
-source-wordcount: '2775'
-ht-degree: 93%
+source-wordcount: '2865'
+ht-degree: 90%
 
 ---
 
@@ -241,6 +241,28 @@ In Umgebungen, die im Oktober 2023 oder höher erstellt wurden, entfernt das CDN
 Senden Sie ein Support-Ticket, wenn Sie möchten, dass dieses Verhalten deaktiviert wird.
 
 Für Umgebungen, die vor Oktober 2023 erstellt wurden, wird empfohlen, die `ignoreUrlParams` Eigenschaft als [hier dokumentiert](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#ignoring-url-parameters).
+
+Es gibt zwei Möglichkeiten, Marketing-Parameter zu ignorieren. (Dabei wird das Cache-Busting über Abfrageparameter bevorzugt ignoriert):
+
+1. Ignorieren Sie alle Parameter und erlauben Sie selektiv verwendete Parameter.
+Nur im folgenden Beispiel `page` und `product` -Parameter werden nicht ignoriert und die Anforderungen werden an den Publisher weitergeleitet.
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "allow" }
+   /0002 { /glob "page" /type "deny" }
+   /0003 { /glob "product" /type "deny" }
+}
+```
+
+1. Alle Parameter mit Ausnahme der Marketing-Parameter zulassen. Die Datei [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) definiert eine Liste häufig verwendeter Marketing-Parameter, die ignoriert werden. Adobe aktualisiert diese Datei nicht. Sie kann von Benutzern je nach ihren Marketing-Anbietern erweitert werden.
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "deny" }
+   $include "../cache/marketing_query_parameters.any"
+}
+```
 
 
 ## Dispatcher-Cache-Invalidierung {#disp}
