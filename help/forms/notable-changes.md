@@ -3,10 +3,10 @@ title: Was sind die Unterschiede zwischen AEM 6.5 Forms und AEM Cloud Services?
 description: Vergleichen Sie AEM 6.5 Forms und AEM Cloud Services und lernen Sie die wichtigsten Änderungen kennen, bevor Sie ein Upgrade durchführen oder zu Cloud Service migrieren.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 0acaea02ad4ba647373eedecb444e9a7911d108d
 workflow-type: tm+mt
-source-wordcount: '1348'
-ht-degree: 69%
+source-wordcount: '1317'
+ht-degree: 64%
 
 ---
 
@@ -52,7 +52,9 @@ Adobe Experience Manager Forms as a Cloud Service enthält einige wichtige Ände
 
   Die [Migrationsdienstprogramm](/help/forms/migrate-to-forms-as-a-cloud-service.md) migriert Ihre Formulare mit benutzerdefinierten Regeln (die im Code-Editor erstellt werden). Das Dienstprogramm konvertiert solche Regeln in benutzerdefinierte Funktionen, die von Forms as a Cloud Service unterstützt werden. Sie können die wiederverwendbaren Funktionen mit dem Regeleditor verwenden, um weiterhin Ergebnisse zu erhalten, die mit Regelskripten erzielt wurden. Die Funktionen `onSubmitError` oder `onSubmitSuccess` sind jetzt als Aktionen im Regeleditor verfügbar.
 
-* **Vorbefüllungs-Service:** Standardmäßig führt der Vorbefüllungs-Service Daten mit einem adaptiven Formular auf dem Client zusammen anstatt auf dem Server in AEM 6.5 Forms. Der Zeitaufwand für das Vorbefüllen eines adaptiven Formulars wird dadurch verringert. Sie können jederzeit konfigurieren, dass die Zusammenführung auf dem Adobe Experience Manager Forms-Server ausgeführt wird.
+<!--* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server.-->
+
+* **Vorbefüllungsdienst:** Der Vorbefüllungs-Dienst ruft Daten vom Server ab und führt Zusammenführungen durch, um die Adaptive Forms auf der Clientseite vorab auszufüllen. Diese Funktion hilft, die zum Ausfüllen eines adaptiven Formulars erforderliche Zeit zu verbessern. Sie können die [Vorbefüllungs-Dienst](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html) , um die Zusammenführungsaktion auf dem Adobe Experience Manager Forms-Server auszuführen.
 
 * **Übermittlungsaktionen**: Die **E-Mail**-Übermittlungsaktion bietet Optionen zum Senden von Anhängen und zum Anhängen von Datensatzdokumenten (Document of Record, DoR) per E-Mail. Sie können sie anstelle der **E-Mail als PDF** Aktion verfügbar in AEM 6.5 Forms.
 
