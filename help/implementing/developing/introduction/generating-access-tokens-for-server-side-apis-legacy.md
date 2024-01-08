@@ -123,7 +123,7 @@ Informationen zu den erforderlichen Berechtigungen zur Verwendung der Entwickler
 
 >[!NOTE]
 >
-Das lokale Zugriffs-Token für Entwickler ist maximal 24 Stunden lang gültig. Danach muss es mit derselben Methode neu generiert werden.
+>Das lokale Zugriffs-Token für Entwickler ist maximal 24 Stunden lang gültig. Danach muss es mit derselben Methode neu generiert werden.
 
 Entwicklerinnen und Entwickler können dieses Token verwenden, um Aufrufe von ihrem Nicht-AEM-Testprogramm an eine AEM as a Cloud Service-Umgebung zu senden. Normalerweise verwenden sie dieses Token mit der Nicht-AEM-Anwendung auf dem eigenen Laptop. Außerdem ist AEM as a Cloud Service normalerweise keine Produktionsumgebung.
 
@@ -152,7 +152,7 @@ Nach dem Klicken auf die Schaltfläche wird ein neuer Satz von Anmeldeinformatio
 
 >[!NOTE]
 >
-Nachdem Sie auf die Schaltfläche **Service-Anmeldeinformationen aktualisieren** geklickt haben, bleiben die alten Anmeldeinformationen bis zu ihrem Ablauf registriert. Es steht jedoch immer nur der neueste Satz zur Anzeige in der Entwicklerkonsole zur Verfügung.
+>Nachdem Sie auf die Schaltfläche **Service-Anmeldeinformationen aktualisieren** geklickt haben, bleiben die alten Anmeldeinformationen bis zu ihrem Ablauf registriert. Es steht jedoch immer nur der neueste Satz zur Anzeige in der Entwicklerkonsole zur Verfügung.
 
 ## Widerruf der Service-Anmeldeinformationen {#service-credentials-revocation}
 
