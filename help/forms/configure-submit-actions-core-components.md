@@ -4,9 +4,9 @@ description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. 
 keywords: Anleitung zum Auswählen einer Sendeaktion für ein adaptives Formular, Verbinden eines adaptiven Formulars mit einer Sharepoint-Liste, Verbinden eines adaptiven Formulars mit einer SharePoint-Dokumentbibliothek, Verbinden eines adaptiven Formulars mit einem Formulardatenmodell
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: c2bf362a9949b3d6d427a28821056a0cc9edfa85
+source-git-commit: 3cd10760fa48f4aa1810877f79476be744f048d1
 workflow-type: tm+mt
-source-wordcount: '4102'
+source-wordcount: '4090'
 ht-degree: 87%
 
 ---
@@ -20,7 +20,8 @@ ht-degree: 87%
 | -------- | ---------------------------- |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
-| Gilt für | ✅ Kernkomponenten für adaptive Formulare ❎ [Foundation-Komponenten für adaptive Formulare](/help/forms/configuring-submit-actions.md). |
+
+<!--| Applies to     | ✅ Adaptive Form Core Components, ❎ [Adaptive Form Foundation Components](/help/forms/configuring-submit-actions.md)          |-->
 
 
 Mit einer Übermittlungsaktion können Sie das Ziel der Daten auswählen, die über ein adaptives Formular erfasst werden. Eine Übermittlungsaktion wird ausgelöst, wenn jemand in einem adaptiven Formular auf die Schaltfläche **[!UICONTROL Senden]** klickt. Forms as a Cloud Service bietet eine Reihe vorkonfigurierter Übermittlungsaktionen für adaptive Formulare, die auf Kernkomponenten basieren.  Diese vorkonfigurierten Übermittlungsaktionen ermöglichen Ihnen Folgendes:
