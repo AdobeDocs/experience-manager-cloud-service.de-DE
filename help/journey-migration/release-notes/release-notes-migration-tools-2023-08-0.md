@@ -3,10 +3,10 @@ title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 
 description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.08.0
 feature: Release Information
 exl-id: 1c822ece-620a-4866-be5a-065cb6a90204
-source-git-commit: b2322ff4ce27265b7eac37fcc0ea8235cd015ae0
+source-git-commit: f117ad2965897b78a1e90d0c6e22568307555d4c
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 77%
+source-wordcount: '88'
+ht-degree: 79%
 
 ---
 
@@ -22,5 +22,4 @@ Die Version 2.1.44 von Best Practices Analyzer wurde am 24. August 2023 veröffe
 
 ### Fehlerbehebungen {#bug-fixes-bpa}
 
-* &#x200B;
-   * Content Transformer konnte BPA-Ergebnisse nicht abrufen. Dieses Problem wurde behoben.
+* Content Transformer konnte BPA-Ergebnisse nicht abrufen. Dieses Problem wurde behoben.
