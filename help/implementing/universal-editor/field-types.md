@@ -1,10 +1,10 @@
 ---
 title: Feldtypen
 description: Erfahren Sie mehr über die verschiedenen Feldtypen, die der universelle Editor in der Komponentenleiste bearbeiten kann, mit Beispielen dafür, wie Sie Ihre eigene App instrumentieren können.
-source-git-commit: b1a188d01371665b4375087847625d89e47d8927
+source-git-commit: 44073e27ce7eb35bc0d71cb963c1bd0f14183f00
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 8%
+source-wordcount: '358'
+ht-degree: 7%
 
 ---
 
@@ -281,3 +281,58 @@ Eine Texteingabe ermöglicht eine einzelne Textzeile.
 }
 ```
 
+## Registerkarte {#tab}
+
+Auf einer Registerkarte können Sie andere Eingabefelder auf mehreren Registerkarten gruppieren, um die Layout-Organisation für Autoren zu verbessern.
+
+A `tab` -Definition kann als Trennzeichen im Array von `fields`. Alles, was hinter einer `tab` wird auf dieser Registerkarte platziert, bis eine neue `tab` gefunden wird, wobei die folgenden Elemente auf der neuen Registerkarte platziert werden.
+
+Wenn Sie Elemente haben möchten, die über allen Registerkarten angezeigt werden, müssen diese vor allen Registerkarten definiert werden.
+
+### Beispiel {#sample-tab}
+
+```json
+{
+  "id": "title",
+  "fields": [
+    {
+      "component": "tab",
+      "label": "Tab",
+      "name": "tab1"
+    },
+    {
+      "component": "text-input",
+      "name": "tab-response",
+      "value": "",
+      "placeholder": "Tab? I can't give you a tab unless you order something.",
+      "label": "Lou",
+      "valueType": "string"
+    },
+    {
+      "component": "tab",
+      "label": "Pepsi Free",
+      "name": "tab2"
+    },
+    {
+      "component": "text-input",
+      "name": "pepsi-free-response",
+      "value": "",
+      "placeholder": "You want a Pepsi, pal, you're gonna pay for it.",
+      "label": "Mr. Carruthers",
+      "valueType": "string"
+    },
+    {
+      "component": "select",
+      "name": "without-sugar",
+      "value": "coffee",
+      "label": "Something without sugar",
+      "valueType": "string",
+      "options": [
+        { "name": "Coffee", "value": "coffee" },
+        { "name": "Hot Coffee", "value": "hot-coffee" },
+        { "name": "Hotter Coffee", "value": "hotter-coffee" }
+      ]
+    }
+  ]
+}
+```
