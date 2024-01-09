@@ -3,10 +3,10 @@ title: Erfahren Sie, wie man in der  [!DNL Assets view] Assets sucht und findet.
 description: Erfahren Sie, wie man in der AEM Assets-Ansicht Assets sucht und findet. Mit der leistungsstarken Suchfunktion können Sie schnell das passende Asset ermitteln und die Geschwindigkeit Ihrer Inhaltserstellung steigern.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
+source-git-commit: 6fb2701fc2a4dc1cb9e8ea31134f0b3f2bb6bdf9
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 78%
+source-wordcount: '1470'
+ht-degree: 68%
 
 ---
 
@@ -29,6 +29,20 @@ Um nach Assets zu suchen,
    * Suchen Sie mithilfe eines Keywords und ändern Sie optional den Ordner. Drücken Sie die Eingabetaste.
 
    * Beginnen Sie die Arbeit mit einem kürzlich angezeigten Asset, indem Sie direkt danach suchen. Klicken Sie in das Suchfeld und wählen Sie aus den Vorschlägen ein kürzlich angezeigtes Asset aus.
+
+## Suchen von Assets mithilfe von Adobe Firefly
+
+Wenn Sie nach einem Asset suchen, das in keinem der Ordner &quot;Assets&quot;verfügbar ist, verwenden Sie die [!UICONTROL Adobe Firefly] Asset-Suchfunktion in [!UICONTROL Adobe Experience Manager Assets]. Damit können Sie effizient nach Assets suchen, die möglicherweise nicht in den angegebenen Ordnern gespeichert sind. Diese Funktion ist derzeit nur für Benutzer mit Express-Berechtigung verfügbar. <br> Sie können beispielsweise ein Asset mit dem Keyword `Bugatti Type 57`. Bei der Suche nach `Bugatti Type 57`, werden keine Ergebnisse gefunden.
+
+![Firefly-Integration](assets/firefly-integration.jpg)
+*Abbildung: Keine Ergebnisse für Bugatti Typ 57 im Asset-Ordner gefunden.*
+
+Geben Sie in der Suchleiste den Asset-Namen ein und klicken Sie auf **[!UICONTROL Erzeugen]**.
+
+![Firefly-Integration](assets/bugatti-type-57.jpg)
+*Abbildung: Referenzieren von Assets, die mit der Adobe Firefly-Asset-Suchfunktion durchsucht wurden.*
+
+Die Beispiel-Assets werden auf dem Bildschirm angezeigt. Sie können diese Assets für den einfachen Zugriff in Ihren gewünschten Ordner hochladen.
 
 ## Filtern von Suchergebnissen {#refine-search-results}
 
@@ -120,7 +134,6 @@ Entfernen benutzerdefinierter Filter
 
 1. Klicken Sie auf **[!UICONTROL Bestätigen]**, um die Filter aus der Benutzeroberfläche zu entfernen.
 
-
 ## Gespeicherte Suchvorgänge {#saved-search}
 
 In [!DNL Assets view] ist die Suchfunktion recht einfach zu verwenden. Über das Suchfeld können Sie einfach einen Suchbegriff eingeben und die Eingabetaste drücken, um die Ergebnisse anzuzeigen, oder Sie können schnell mit einem Klick nach Ihren kürzlich gesuchten Suchbegriffen suchen.
@@ -146,11 +159,21 @@ When userA is searching and userB add an asset that matches search results, will
 
 Sie können die Assets auswählen, die in den Suchergebnissen angezeigt werden, und die folgenden Aktionen ausführen:
 
+* **Ähnliches Bild suchen**: Suchen Sie ähnliche Bild-Assets in der Assets-Benutzeroberfläche basierend auf den Metadaten und Smart-Tags.
+
 * **Details**: Zeigen Sie Asset-Eigenschaften an und bearbeiten Sie diese.
+
+* **Herunterladen**: Laden Sie ein Asset herunter.
 
 * **Zur Sammlung hinzufügen**: Fügen Sie das ausgewählte Asset zu einer Sammlung hinzu.
 
-* **Herunterladen**: Laden Sie ein Asset herunter.
+* **An Schnellzugriff anheften**: [Heften Sie ein Asset an](my-workspace-assets-view.md), um später im Bedarfsfall schneller darauf zugreifen zu können. Alle angehefteten Elemente werden im Dashboard „Mein Arbeitsbereich“ im Abschnitt **Schnellzugriff** angezeigt.
+
+* **In Adobe Expreß öffnen**: Bearbeiten Sie ein Bild im integrierten Adobe Expreß auf dem Adobe Experience Manager Assets-Bildschirm.
+
+* **Bearbeiten**: Bearbeiten Sie das Bild mit Adobe Expreß.
+
+* **Link freigeben**: [Teilen Sie Links](share-links-for-assets-view.md) für ein Asset mit anderen Benutzenden, damit sie darauf zugreifen und es herunterladen können.
 
 * **Löschen**: Löschen Sie ein Asset.
 
@@ -160,15 +183,11 @@ Sie können die Assets auswählen, die in den Suchergebnissen angezeigt werden, 
 
 * **Umbenennen**: Benennen Sie ein Asset um.
 
+* **In Bibliotheken kopieren**: Fügen Sie ein Asset zur Bibliothek hinzu.
+
 * **Aufgaben zuweisen**: Weisen Sie Benutzenden Aufgaben für ein Asset zu.
 
-* **Link freigeben**: [Teilen Sie Links](share-links-for-assets-view.md) für ein Asset mit anderen Benutzenden, damit sie darauf zugreifen und es herunterladen können.
-
 * **Beobachten**: [Überwachen Sie Vorgänge](manage-notifications-assets-view.md), die für ein Asset durchgeführt werden.
-
-* **Dateispeicherort anzeigen**: Navigieren Sie zum Speicherort des Asset-Ordners.
-
-* **An Schnellzugriff anheften**: [Heften Sie ein Asset an](my-workspace-assets-view.md), um später im Bedarfsfall schneller darauf zugreifen zu können. Alle angehefteten Elemente werden im Dashboard „Mein Arbeitsbereich“ im Abschnitt **Schnellzugriff** angezeigt.
 
 ## Konfigurieren der ersten Homepage für die Suche {#configuring-search-first-homepage}
 
