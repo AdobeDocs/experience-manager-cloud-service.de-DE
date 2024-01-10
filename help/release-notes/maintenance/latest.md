@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 4fc676bd975e44234b478ba57f12cbf0f4f5ba45
+source-git-commit: 0b4c820159f918cb9b3a93d9ab36dc26b1d8da47
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 28%
+source-wordcount: '381'
+ht-degree: 27%
 
 ---
 
@@ -43,7 +43,7 @@ Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsver
 
 ### Bekannte Probleme {#known-issues-14697}
 
-Keine
+* GRANITE-49031: Regression zur Folge `@JsonIgnore` -Anmerkung in transienten Feldern ignoriert werden.
 
 ### Eingebettete Technologien {#embedded-tech-14697}
 
