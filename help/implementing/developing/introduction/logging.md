@@ -2,10 +2,10 @@
 title: Protokollieren für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Service verwenden können, um globale Parameter für den zentralen Protokollierungs-Dienst zu konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festzulegen oder die Datenprotokollierung anzufordern.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 3d53f81bfe9b180f19590a70d72b6bf62a7ab732
 workflow-type: tm+mt
-source-wordcount: '2720'
-ht-degree: 90%
+source-wordcount: '2755'
+ht-degree: 88%
 
 ---
 
@@ -397,7 +397,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 Die Protokollierungsebenen „mod_rewrite“ werden durch die Variable „REWRITE_LOG_LEVEL“ in der Datei `conf.d/variables/global.var` definiert.
 
-Sie kann auf „Error“, „Warn“, „Info“, „Debug“ und „Trace1“ bis „Trace8“ eingestellt werden, wobei der Standardwert „Warn“ ist. Zum Debugging Ihrer „RewriteRules“ wird empfohlen, die Protokollebene auf „Trace2“ zu erhöhen.
+Sie kann auf „Error“, „Warn“, „Info“, „Debug“ und „Trace1“ bis „Trace8“ eingestellt werden, wobei der Standardwert „Warn“ ist. Um Ihre RewriteRules zu debuggen, wird empfohlen, die Protokollebene auf trace2 zu erhöhen. Es wird empfohlen, Neuschreibungsregeln mit dem [Dispatcher SDK](../../dispatcher/validation-debug.md). Die maximale Protokollebene für AEM as a Cloud Service ist `debug`. Daher ist es derzeit nicht effektiv möglich, Neuschreibungsregeln in der Cloud zu debuggen.
 
 Weitere Informationen finden Sie in der [Dokumentation zum mod_rewrite-Modul](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging).
 
