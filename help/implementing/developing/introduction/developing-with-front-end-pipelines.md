@@ -2,10 +2,10 @@
 title: Entwickeln von Sites mit der Frontend-Pipeline
 description: Mit der Frontend-Pipeline erhalten Frontend-Entwickler mehr Unabhängigkeit und der Entwicklungsprozess wird erheblich beschleunigt. In diesem Dokument werden einige besondere Überlegungen zum Frontend-Build-Prozess beschrieben, die berücksichtigt werden sein sollten.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 36e40976c43826efd7921cd9429373fe97a20426
+source-git-commit: de2d4355894d166d47f49a22af773b9e2c19e67b
 workflow-type: tm+mt
-source-wordcount: '1155'
-ht-degree: 100%
+source-wordcount: '1156'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Der Inhalt des Ordners `dist` wird schließlich für AEM as a Cloud Service von 
 
 ### Knotenversionen {#node-versions}
 
-Standardmäßig verwendet die Frontend-Pipeline den Knoten 14, aber auch 12 und 16 sind verfügbar.
+Standardmäßig verwendet die Front-End-Pipeline Node 14, aber auch 12, 16 und 18 sind verfügbar.
 
 Mithilfe der Umgebungsvariable `NODE_VERSION` können Sie die gewünschte Version festlegen.
 
