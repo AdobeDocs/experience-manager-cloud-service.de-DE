@@ -1,10 +1,10 @@
 ---
 title: Einführung zu Adobe Experience Manager as a Cloud Service
-description: Einführung zu Adobe Experience Manager (AEM) as a Cloud Service
+description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '624'
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
+workflow-type: tm+mt
+source-wordcount: '631'
 ht-degree: 100%
 
 ---
