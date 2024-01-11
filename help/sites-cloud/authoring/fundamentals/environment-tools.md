@@ -2,10 +2,10 @@
 title: Autorenumgebung und Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
 source-wordcount: '2161'
-ht-degree: 84%
+ht-degree: 87%
 
 ---
 
@@ -63,7 +63,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
 * **Mobilgerät (z. B. iPad)**
 
-  Der Komponenten-Browser deckt die gesamte bearbeitete Seite ab.
+  Der Komponenten-Browser deckt die gesamte Seite ab, die bearbeitet wird.
 
   Um der Seite eine Komponente hinzuzufügen, berühren und halten Sie die gewünschte Komponente und verschieben Sie sie nach rechts. Der Komponenten-Browser wird geschlossen und die Seite wird erneut angezeigt. Sie können die Komponente jetzt dort platzieren.
 
@@ -102,13 +102,13 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
 ## Asset-Browser {#assets-browser}
 
-Der Asset-Browser enthält alle [Assets](/help/assets/home.md), die auf Ihrer aktuellen Seite direkt verwendet werden können.
+Der Asset-Browser enthält alle [Assets](/help/assets/overview.md), die auf Ihrer aktuellen Seite direkt verwendet werden können.
 
 Der Asset-Browser befindet sich auf einer Registerkarte im seitlichen Bedienfeld (zusammen mit dem [Komponenten-Browser](#components-browser) und der [Inhaltsstruktur](#content-tree)). Um das Bedienfeld zu öffnen (oder zu schließen), verwenden Sie das Symbol links oben in der Symbolleiste:
 
 ![Seitliches Bedienfeld ein/aus](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-Wenn Sie den Seitenbereich öffnen, wird er von der linken Seite aus eingeblendet. Wählen Sie die **Assets** bei Bedarf.
+Wenn Sie den Seitenbereich öffnen, wird er von der linken Seite aus eingeblendet. Wählen Sie ggf. die Registerkarte **Assets**.
 
 ![Schaltfläche „Asset-Browser“](/help/sites-cloud/authoring/assets/assets-browser-button.png)
 
@@ -120,7 +120,7 @@ Um ein Asset zu der Seite hinzuzufügen, wählen Sie es aus und ziehen Sie es an
 
 * Eine vorhandene Komponente des entsprechenden Typs.
    * Sie können beispielsweise ein Asset des Typs „Bild“ auf eine Bildkomponente ziehen.
-* A [Platzhalter](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) im Absatzsystem, um eine Komponente des entsprechenden Typs zu erstellen.
+* Ein [Platzhalter](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) im Absatzsystem zum Erstellen einer Komponente des entsprechenden Typs.
    * Sie können beispielsweise ein Asset des Typs „Bild“ in das Absatzsystem ziehen, um eine Bildkomponente zu erstellen.
 
 >[!NOTE]
@@ -169,7 +169,7 @@ Die Inhaltsstruktur befindet sich auf einer Registerkarte im seitlichen Bedienfe
 
 ![Schaltfläche „Inhaltsstruktur“](/help/sites-cloud/authoring/assets/content-tree-button.png)
 
-Wenn Sie das Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. Wählen Sie ggf. die Registerkarte **Inhaltsstruktur**. Mit dieser Strukturansicht Ihrer Seite oder Vorlage können Sie leicht nachvollziehen, wie die darauf verwendeten Komponenten hierarchisch strukturiert sind. Auf einer komplexen Seite ist es außerdem einfacher, zwischen den Komponenten der Seite zu springen.
+Wenn Sie das Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. Wählen Sie ggf. die Registerkarte **Inhaltsstruktur**. Mit dieser Strukturansicht Ihrer Seite oder Vorlage können Sie leicht nachvollziehen, wie die darauf verwendeten Komponenten hierarchisch strukturiert sind. Auf einer komplexer gestalteten Seite können Sie so zudem einfacher zwischen Komponenten auf der Seite wechseln.
 
 ![Inhaltsstruktur](/help/sites-cloud/authoring/assets/content-tree-editor.png)
 
@@ -234,11 +234,11 @@ Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen: In
 * [Blueprint](/help/sites-cloud/administering/msm/best-practices.md) bietet Details und verschiedene Aktionen.
 * [Sprachenkopien](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel) bietet Details und verschiedene Aktionen
 
-## Ereignisse: Zeitleiste {#events-timeline}
+## Ereignisse: Timeline {#events-timeline}
 
 Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites**-Konsole oder Assets aus der **Asset**-Konsole) kann die [Timeline dazu verwendet werden, die zuletzt durchgeführten Aktivitäten für ausgewählte Elemente anzuzeigen](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
 
-Öffnen Sie die gewünschte Konsole, navigieren Sie zur gewünschten Ressource und öffnen Sie die **Zeitleiste** wie folgt:
+Öffnen Sie die gewünschte Konsole, navigieren Sie zur gewünschten Ressource und öffnen Sie die **Timeline** wie folgt:
 
 ![Option „Zeitleiste“](/help/sites-cloud/authoring/assets/timeline.png)
 
@@ -273,8 +273,8 @@ Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über d
 * [Bearbeiten:](/help/sites-cloud/authoring/fundamentals/editing-content.md) Der Modus zum Bearbeiten des Seiteninhalts.
 * [Layout](/help/sites-cloud/authoring/features/responsive-layout.md) - ermöglicht das Erstellen und Bearbeiten eines responsiven Layouts abhängig vom Gerät (wenn die Seite auf einem Layout-Container basiert)
 * [Zielsetzung:](/help/sites-cloud/authoring/personalization/targeted-content.md) Steigerung der Inhaltsrelevanz durch Zielsetzung und Messung über alle Kanäle hinweg.
-* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - ermöglicht die Anzeige des Seitenstatus zu einem bestimmten Zeitpunkt.
-* [Live Copy-Status:](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) Für einen schnellen Überblick über den Live Copy-Status und darüber, welche Komponenten übernommen oder nicht übernommen wurden.
+* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp): Ermöglicht es, eine Seite in dem Zustand anzuzeigen, den sie zu einem bestimmten früheren Zeitpunkt aufgewiesen hat.
+* [Live Copy-Status:](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status): Für einen schnellen Überblick über den Live Copy-Status und darüber, welche Komponenten übernommen oder nicht übernommen wurden.
 * [Entwicklermodus](/help/implementing/developing/tools/developer-mode.md)
 * [Vorschau](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages): Dient zur Anzeige der Darstellung der Seite in der Publishing-Umgebung oder zur Navigation anhand der Links im Inhalt.
 * [Anmerken](/help/sites-cloud/authoring/fundamentals/annotations.md): In diesem Modus können Sie Anmerkungen auf der Seite hinzufügen oder anzeigen.
