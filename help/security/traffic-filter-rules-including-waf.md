@@ -2,10 +2,10 @@
 title: Traffic-Filterregeln, einschließlich WAF-Regeln
 description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
 workflow-type: tm+mt
-source-wordcount: '3357'
-ht-degree: 92%
+source-wordcount: '3350'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ Traffic-Filterregeln können verwendet werden, um Anforderungen auf der CDN-Eben
 
 Die meisten dieser Traffic-Filterregeln stehen allen Kundinnen und Kunden von AEM as a Cloud Service Sites und Forms zur Verfügung.  Sie arbeiten hauptsächlich mit den Eigenschaften und Kopfzeilen von Anfragen, einschließlich IP, Host-Name, Pfad und Benutzeragent.
 
-Eine Unterkategorie von Traffic-Filterregeln erfordert entweder eine Lizenz für Enhanced Security oder eine WAF-DDoS Protection-Lizenz, was später in diesem Jahr verfügbar sein wird. Diese leistungsstarken Regeln werden als Traffic-Filterregeln für WAF (Web Application Firewall, kurz: WAF-Regeln) bezeichnet und haben Zugriff auf die [WAF-Flags](#waf-flags-list), die weiter unten in diesem Artikel beschrieben werden.
+Eine Unterkategorie von Traffic-Filterregeln erfordert entweder eine Lizenz für erweiterte Sicherheit oder eine Lizenz für WAF-DDoS-Schutz. Diese leistungsstarken Regeln werden als Traffic-Filterregeln für WAF (Web Application Firewall, kurz: WAF-Regeln) bezeichnet und haben Zugriff auf die [WAF-Flags](#waf-flags-list), die weiter unten in diesem Artikel beschrieben werden.
 
 Traffic-Filterregeln können über Cloud Manager-Konfigurations-Pipelines bereitgestellt werden, um Typen von Entwicklungs-, Staging- und Produktionsumgebungen in Produktionsprogrammen (ohne Sandbox) bereitzustellen. Die Unterstützung von RDEs wird in Zukunft verfügbar sein.
 
