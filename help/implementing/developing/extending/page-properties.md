@@ -1,32 +1,32 @@
 ---
 title: Anpassen der Ansichten von Seiteneigenschaften
-description: Erfahren Sie, wie Seiteneigenschaften von Autoren angezeigt und bearbeitet werden.
+description: Erfahren Sie, wie Seiteneigenschaften von Autorinnen und Autoren angezeigt und bearbeitet werden können.
 exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
 # Anpassen der Ansichten von Seiteneigenschaften{#customizing-views-of-page-properties}
 
-Jede Seite verfügt über einen Satz von [properties](/help/sites-cloud/authoring/fundamentals/page-properties.md) die von Benutzern angezeigt und bearbeitet werden können. Einige sind beim Erstellen der Seite erforderlich (Ansicht erstellen), andere können später angezeigt und bearbeitet (Ansicht bearbeiten) werden. Diese Seiteneigenschaften werden über das Dialogfeld (`cq:dialog`) der entsprechenden Seitenkomponente definiert und bereitgestellt.
+Jede Seite verfügt über einen Satz von [Eigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md), die von Benutzenden angezeigt und bearbeitet werden können. Einige sind beim Erstellen der Seite erforderlich (Ansicht erstellen), andere können später angezeigt und bearbeitet werden (Ansicht bearbeiten). Diese Seiteneigenschaften werden über das Dialogfeld (`cq:dialog`) der entsprechenden Seitenkomponente definiert und bereitgestellt.
 
 Der Standardstatus für jede Seiteneigenschaft ist wie folgt:
 
-* In der Erstellungsansicht ausgeblendet (z. B. **Seite erstellen** wizard)
+* In der Erstellungsansicht ausgeblendet (z. B. im **Seitenerstellungsassistenten**)
 
-* In der Bearbeitungsansicht verfügbar (z. B. **Eigenschaften anzeigen**)
+* In der Bearbeitungsansicht verfügbar (z. B. unter **Eigenschaften anzeigen**)
 
-Felder müssen bei Bedarf spezifisch konfiguriert werden. Dies geschieht mithilfe der entsprechenden Knoteneigenschaften:
+Felder müssen einzeln konfiguriert werden, wenn eine Änderung erforderlich ist. Dies erfolgt mithilfe der entsprechenden Knoteneigenschaften:
 
-* Seiteneigenschaft, die in der Erstellungsansicht verfügbar sein soll (z. B. **Seite erstellen** Assistent):
+* Seiteneigenschaft, die in der Erstellungsansicht verfügbar sein soll (z. B. im **Seitenerstellungsassistenten**):
 
    * Name: `cq:showOnCreate`
    * Typ: `Boolean`
 
-* Seiteneigenschaft, die in der Bearbeitungsansicht verfügbar sein soll, z. B. **Ansicht**/**Bearbeiten**  **Eigenschaften** Option:
+* Seiteneigenschaft, die in der Bearbeitungsansicht verfügbar sein soll (z. B. die Option **Anzeigen**/**Bearbeiten**) **Eigenschaften**:
 
    * Name: `cq:hideOnEdit`
    * Typ: `Boolean`
@@ -35,9 +35,9 @@ Felder müssen bei Bedarf spezifisch konfiguriert werden. Dies geschieht mithilf
 >
 >Eine Anleitung zum Anpassen der Seiteneigenschaften finden Sie im [Tutorial zum Erweitern der Seiteneigenschaften](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html?lang=de).
 
-## Konfigurieren der Seiteneigenschaften {#configuring-your-page-properties}
+## Konfigurieren von Seiteneigenschaften {#configuring-your-page-properties}
 
-Sie können auch die verfügbaren Felder konfigurieren, indem Sie das Dialogfeld Ihrer Seitenkomponente konfigurieren und die entsprechenden Knoteneigenschaften anwenden.
+Sie können diese Felder auch konfigurieren, indem Sie das Dialogfeld Ihrer Seitenkomponente konfigurieren und die entsprechenden Knoteneigenschaften anwenden.
 
 Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) zeigt standardmäßig die Felder an, die unter **Weitere Titel und Beschreibungen** gruppiert sind. Um diese auszublenden, nehmen Sie folgende Konfiguration vor:
 
@@ -66,14 +66,14 @@ Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-cloud/authoring/funda
    * **Typ**: `Boolean`
    * **Wert**: `false`
 
-   Die **Weitere Titel und Beschreibungen** wird nicht mehr im Abschnitt **Seite erstellen** Assistent.
+   Der Abschnitt **Weitere Titel und Beschreibungen** wird nicht mehr im **Seitenerstellungsassistenten** angezeigt.
 
 >[!NOTE]
 >
->Informationen zum Konfigurieren von Seiteneigenschaften für die Verwendung mit Live Copies finden Sie unter [Erweitern des Multi-Site-Managers](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) für weitere Details.
+>Wenn Sie Seiteneigenschaften für die Verwendung mit Live Copies konfigurieren, finden Sie weitere Details unter [Erweitern des Multi Site Managers](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties).
 
 ## Beispielkonfiguration von Seiteneigenschaften {#sample-configuration-of-page-properties}
 
-In diesem Beispiel wird die Dialogfeldvergleichstechnik des [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) einschließlich der Verwendung [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). Es zeigt auch die Verwendung von `cq:showOnCreate` und `cq:hideOnEdit`.
+Dieses Beispiel zeigt die „dialog diff“-Technik von [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md), einschließlich der Verwendung von [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). Es zeigt auch die Verwendung von `cq:showOnCreate` und `cq:hideOnEdit`.
 
-Den Code dieser Seite finden Sie unter [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).
+Den Code dieser Seite finden Sie auf [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).

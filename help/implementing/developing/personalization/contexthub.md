@@ -3,15 +3,15 @@ title: ContextHub
 description: ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextdaten
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '289'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # ContextHub {#contexthub}
 
-ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextdaten. Seine Hauptfunktion ist die Möglichkeit, [Anzeigen von Kontextdaten bei der Simulation und Wechseln zwischen verschiedenen Rollen](/help/sites-cloud/authoring/personalization/contexthub.md).
+ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextdaten. Seine Hauptfunktion ist die Möglichkeit, [Kontextdaten anzuzeigen, während die Simulation verschiedener Rollen und das Wechseln zwischen ihnen ermöglicht wird](/help/sites-cloud/authoring/personalization/contexthub.md).
 
 ContextHub ermöglicht Ihnen Folgendes:
 

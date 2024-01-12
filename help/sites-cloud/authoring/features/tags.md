@@ -3,9 +3,9 @@ title: Verwenden von Tags
 description: Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '560'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 93%
 
 Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website. Tags können als Keywords oder Beschriftungen betrachtet werden, die an eine Seite, ein Asset oder andere Inhalte angehängt werden können, um Suchen zu ermöglichen, mit denen diese und zugehörige Inhalte gefunden werden können.
 
-* Siehe [Verwalten von Tags](/help/sites-cloud/administering/tags.md) für Informationen zum Erstellen und Verwalten von Tags und darüber, auf welche Inhalts-Tags angewendet wurden.
+* Informationen zum Erstellen und Verwalten von Tags sowie dazu, welchen Inhalten Tags zugewiesen wurden, finden Sie unter [Verwalten von Tags](/help/sites-cloud/administering/tags.md).
 * Unter [Tagging für Entwicklerpersonen](/help/implementing/developing/introduction/tagging-framework.md) finden Sie Informationen über das Tagging-Framework sowie die Einbeziehung und Erweiterung von Tags in benutzerdefinierten Applikationen.
 
 ## Zehn Gründe für das Verwenden von Tags {#ten-reasons-to-use-tagging}
@@ -47,7 +47,7 @@ Um vordefinierte Tags anzuwenden, verwenden Sie im Fenster **Seiteneigenschaften
 
 * Einzelne Tags können aktiviert werden.
 
-  Wie bei Seiten müssen erstellte Tags aktiviert werden, bevor sie in der Veröffentlichungsumgebung verfügbar sind.
+  Genau wie Seiten müssen erstellte Tags zuerst aktiviert werden, bevor sie in einer Veröffentlichungsumgebung verfügbar sind.
 
 >[!NOTE]
 >

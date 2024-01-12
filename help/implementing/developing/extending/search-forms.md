@@ -3,9 +3,9 @@ title: Konfigurieren von Suchformularen
 description: Konfigurieren von Suchformularen für Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2033'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Die Standardkonfigurationen (alphabetisch aufgelistet) sind verfügbar:
 
 >[!NOTE]
 >
->Weitere Informationen zu Asset-bezogenen Suchformularen finden Sie unter [Assets - Suchfacetten](/help/assets/search-facets.md).
+>Weitere Informationen zu Asset-bezogenen Suchformularen finden Sie unter [Assets – Suchfacetten](/help/assets/search-facets.md).
 
 
 ## Prädikate und ihre Einstellungen {#predicates-and-their-settings}
@@ -480,7 +480,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
 >Die allgemeinen Suchprädikate sind hier definiert:
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->Diese Informationen dienen nur als Referenz. Sie dürfen `/libs`.
+>Diese Angaben dienen nur als Referenz. Sie dürfen `/libs` nicht verändern.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -527,7 +527,7 @@ Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfü
 
 * **Optionspfad**
 
-  Die Benutzer können den Pfad mit dem Pfad-Browser auf der Registerkarte mit den Prädikatseinstellungen auswählen. Nach Auswahl der **+** wird verwendet, um die Auswahl zur Liste der gültigen Optionen hinzuzufügen (dann wird die **-** -Symbol, um es bei Bedarf zu entfernen).
+  Die Benutzer können den Pfad mit dem Pfad-Browser auf der Registerkarte mit den Prädikatseinstellungen auswählen. Nach dem Auswählen können Sie mit dem Plussymbol (**+**) die Auswahl zur Liste der gültigen Optionen hinzufügen. Entfernen lässt sich eine Auswahl mit dem Minussymbol (**-**), falls erforderlich.
 
   Die Optionen sind Inhaltsknoten, die von Benutzern erstellt werden, und weisen die folgende Struktur auf:
 
@@ -572,7 +572,7 @@ Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definiere
 
    * Sie fügen ein neues Feld hinzu:
 
-     Nach dem Hinzufügen des Prädikats wird die **Einstellungen** wird geöffnet und zeigt die Eigenschaften an, die definiert werden können.
+     Nach dem Hinzufügen des Prädikats öffnet sich die Registerkarte **Einstellungen**. Dort werden die Eigenschaften angezeigt, die definiert werden können.
 
    * Sie aktualisieren ein vorhandenes Prädikat:
 
@@ -631,7 +631,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
 
 1. Erstellen Sie den Knoten, der die zu suchende Eigenschaft enthält.
 
-   Sie benötigen einen Stammknoten, der Definitionen der einzelnen Optionen enthält, die dem Benutzer zur Verfügung stehen sollen.
+   Sie benötigen einen Stammknoten, der die Definitionen der einzelnen Optionen umfasst, die für Benutzende verfügbar sein sollen.
 
    Die Knoten für die einzelnen Optionen müssen die folgenden Eigenschaften aufweisen:
 

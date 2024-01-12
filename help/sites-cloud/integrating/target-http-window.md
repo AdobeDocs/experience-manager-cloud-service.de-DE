@@ -2,9 +2,9 @@
 title: Adobe AEM Target-HTTP-Fenster
 description: Adobe AEM Target-HTTP-Fenster
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '194'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 

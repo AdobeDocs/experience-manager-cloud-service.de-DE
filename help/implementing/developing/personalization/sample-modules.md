@@ -3,9 +3,9 @@ title: Mustertypen von ContextHub-UI-Modulen
 description: ContextHub bietet mehrere Muster-UI-Module, die Sie in Ihren Lösungen verwenden können
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1124'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -170,7 +170,7 @@ Die Quelle des UI-Moduls befindet sich unter `/libs/granite/contexthub/component
 
 ### Konfiguration {#configuration-5}
 
-Instanzen des UI-Moduls `contexthub.screen-orientation` benötigen keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls. Die `clickable` Eigenschaft ist `false` Standardmäßig. Wenn Sie die Standardkonfiguration überschreiben, um `clickable` nach `true`Wenn Sie auf das Modul klicken, wird ein Popup angezeigt, in dem Sie die Ausrichtung auswählen können.
+Instanzen des UI-Moduls `contexthub.screen-orientation` benötigen keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls. Die `clickable`-Eigenschaft ist standardmäßig `false`. Wenn Sie die Standardkonfiguration überschreiben, um `clickable` auf `true` zu setzen, wird beim Klicken auf das Modul ein Popup angezeigt, in dem Sie die Ausrichtung auswählen können.
 
 ```javascript
 {
@@ -186,7 +186,7 @@ Instanzen des UI-Moduls `contexthub.screen-orientation` benötigen keinen Wert f
 
 ## Benutzeroberflächenmodultyp contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
-Das UI-Modul `contexthub.tagcloud` zeigt Informationen zu Tags an. Auf der Symbolleiste zeigt das UI-Modul die Anzahl der Tags an. Das Popup-Fenster zeigt eine Tag-Cloud und eine Texbox zum Hinzufügen neuer Tags an. Das UI-Modul ruft Informationen aus einem ContextHub-Store namens „tagcloud“ ab, der auf dem Store-Kandidaten `contexthub.tagcloud` basiert.
+Das UI-Modul `contexthub.tagcloud` zeigt Informationen zu Tags an. Auf der Symbolleiste zeigt das UI-Modul die Anzahl der Tags an. Das Popup zeigt eine Tagcloud und ein Textfeld zum Hinzufügen neuer Tags an. Das UI-Modul ruft Informationen aus einem ContextHub-Store namens „tagcloud“ ab, der auf dem Store-Kandidaten `contexthub.tagcloud` basiert.
 
 ![contexthub.tagcloud-Modul](assets/tagcloud-module.png)
 
@@ -210,7 +210,7 @@ Instanzen des UI-Moduls `contexthub.tagcloud` benötigen keinen Wert für die De
 
 ## UI-Modultyp granite.profile {#granite-profile-ui-module-type}
 
-Das ContextHub-UI-Modul `granite.profile` zeigt den Anzeigenamen des aktuellen Benutzers an. Das Popup-Fenster zeigt den Anmeldenamen des Benutzers an und ermöglicht es Ihnen, den Wert des Anzeigenamens zu ändern. Das UI-Modul erhält Informationen von einem ContextHub-Store namens Profile, der auf dem Store-Kandidaten [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) basiert.
+Das ContextHub-UI-Modul `granite.profile` zeigt den Anzeigenamen der aktuellen Person an. Das Popup-Fenster zeigt den Anmeldenamen der Person an und ermöglicht es Ihnen, den Wert des Anzeigenamens zu ändern. Das UI-Modul erhält Informationen von einem ContextHub-Store namens Profile, der auf dem Store-Kandidaten [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) basiert.
 
 ![granite.profile-Modul](assets/profile-module.png)
 

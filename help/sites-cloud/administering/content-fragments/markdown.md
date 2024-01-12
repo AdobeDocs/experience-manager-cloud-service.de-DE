@@ -5,17 +5,17 @@ feature: Content Fragments
 role: User
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '559'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 # Markdown {#markdown}
 
-Wann Sie [Authoring](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) Ihre Inhaltsfragmente, über die Sie möglicherweise verfügen [Mehrzeilige Textfelder](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) definiert mit der **Standardtyp** von **Markdown**. Der Inhaltsfragment-Editor verwendet *Markdown* -Syntax verwenden, damit Sie mühelos Inhalte für die Seitenbearbeitung und die Headless-Bereitstellung schreiben können:
+Beim [Bearbeiten](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) Ihrer Inhaltsfragmente haben Sie möglicherweise [mehrzeilige Textfelder](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) mit **Markdown** als dem **Standardtyp** definiert. Der Inhaltsfragmenteditor verwendet eine *Markdown*-Syntax, mit der Sie Inhalte für die Seitenbearbeitung und die Headless-Bereitstellung einfach erstellen können:
 
-![Markdown Mehrzeiliges Textfeld im Editor](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
+![Mehrzeiliges Markdown-Textfeld im Editor](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
 Sie können Folgendes definieren:
 
@@ -31,7 +31,7 @@ Sie können Folgendes definieren:
 
 ## Überschriftsnotation {#heading-notation}
 
-Zum Erstellen einer Kopfzeile durch Platzieren eines Rautezeichens (#) vor der Überschrift. Ein Hash-Tag (#) wird für ein H1-Tag, zwei Hash-Tags (##) für ein H2 usw. verwendet. Sie können bis zu 6 Hash-Tags verwenden. Beispiel:
+Zum Erstellen einer Kopfzeile durch Platzieren eines Hashtags (#) vor der Überschrift. Ein Hashtag (#) wird für eine H1 verwendet, zwei Hashtags (##) für eine H2 usw. Sie können bis zu 6 Hashtags verwenden. Beispiel:
 
     `## This is an H2`
 
@@ -51,7 +51,7 @@ Optional können Sie eine Ü1 erstellen, indem Sie den Text mit Gleichheitszeich
 
 ## Absätze und Zeilenumbrüche {#paragraphs-and-line-breaks}
 
-Ein Absatz ist einfach eine oder mehrere aufeinander folgende Textzeilen, die durch eine oder mehrere leere Zeilen getrennt sind. Eine leere Zeile ist eine Zeile, die nur Leerzeichen oder Tabulatoren enthält. Normale Absätze sollten nicht mit Leerzeichen oder Tabulatoren eingerückt werden.
+Ein Absatz ist einfach eine oder mehrere aufeinanderfolgende Textzeilen, die durch eine oder mehrere Leerzeilen getrennt sind. Eine Leerzeile ist eine Zeile, die nur Leerzeichen oder Tabulatoren enthält. Normale Absätze sollten nicht mit Leerzeichen oder Tabulatoren eingerückt werden.
 
 Ein Zeilenumbruch wird durch Beenden einer Zeile mit zwei oder mehr Leerzeichen und Zeilenschalter erstellt.
 
@@ -105,7 +105,7 @@ Wobei „id“ der Name eines definierten Bildverweises ist. Bildverweise werden
 
 ## Blockzitate {#block-quotes}
 
-Sie können Text zitieren, indem Sie das Symbol > vor dem Text einfügen. Beispiel:
+Sie können Text zitieren, indem Sie das Symbol „>“ vor dem Text einfügen. Beispiel:
 
     `>This is block quotes`
 
@@ -137,7 +137,7 @@ Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den
 
     `* item in list`
 
-Um eine sortierte Liste zu erstellen, fügen Sie vor jedem Element in der Liste die Zahlen und danach einen Punkt hinzu. Beispiel:
+Um eine sortierte Liste zu erstellen, fügen Sie vor jedem Element in der Liste die Nummern und danach jeweils einen Punkt hinzu. Beispiel:
 
     `1. First item in list.`
 
@@ -165,7 +165,7 @@ Sie können Text wie folgt fett formatieren:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Um einen Codebereich anzugeben, schließen Sie ihn in einfache Anführungszeichen (&#39;) ein. Im Gegensatz zu vorformatierten Codeblöcken zeigt ein Codebereich Code innerhalb eines normalen Absatzes an.
+Um einen Codebereich anzugeben, schließen Sie ihn in einfache Anführungszeichen (&#39;) ein. Im Gegensatz zu vorformatierten Code-Blöcken zeigt ein Code-Bereich Code innerhalb eines normalen Absatzes an.
 
 Beispiel:
 

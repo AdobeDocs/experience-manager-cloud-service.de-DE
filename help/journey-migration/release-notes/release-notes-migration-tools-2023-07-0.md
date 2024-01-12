@@ -4,9 +4,9 @@ description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Ve
 feature: Release Information
 exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
 source-git-commit: 3e5c35136c00f6050dda56c318104a7eb04fa271
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '156'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
@@ -22,14 +22,14 @@ Best Practices Analyzer v2.1.42 wurde am 06. Juli 2023 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-bpa}
 
-* In dieser Version von Best Practices Analyzer wurden mehrere Best Practices-Muster hinzugefügt. Dazu gehören:
-   * Ermitteln der Mindestkonfiguration für Wartungsaufgaben
-   * Erkennung langwieriger/schwerer Abfragen
-   * Erkennen einer hohen Anzahl von Autoren-Workflows im ausgeführten oder veralteten Zustand
-   * Erkennen der OSGI-Apache Sling-Auftragskonfiguration
-   * Erkennung benutzerdefinierter Guava-Caches
+* Dieser Version von Best Practices Analyzer wurden mehrere Best Practices-Muster hinzugefügt. Dazu gehören:
+   * Ermitteln von Mindestkonfigurationen für Wartungsaufgaben
+   * Erkennen langwieriger/umfangreicher Abfragen
+   * Erkennen einer hohen Anzahl der laufenden und veralteten Autoren-Workflows.
+   * Erkennen der OSGI-Apache Sling-Vorgangskonfiguration
+   * Erkennen benutzerdefinierter Guava-Caches
 
 ### Fehlerbehebungen {#bug-fixes-bpa}
 
-* BPA wurde verbessert, um Fehler bei der Generierung von Berichten mit hoher Anzahl von Ergebnissen zu vermeiden.
+* BPA wurde verbessert, um Fehler bei der Generierung von Speicherberichten mit einer hohen Anzahl von Ergebnissen zu vermeiden.
 * BPA wurde verbessert, um Escape-Zeichen in Pfaden zu erkennen, um Inhaltsaufnahmefehler bei der Migration von Inhalten auf AEM as a Cloud Service zu verhindern.

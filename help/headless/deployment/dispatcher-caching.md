@@ -1,26 +1,26 @@
 ---
-title: Persistente GraphQL-Abfragen - Aktivierung der Zwischenspeicherung im Dispatcher
-description: Der Dispatcher ist eine Caching- und Sicherheitsebene vor den Adobe Experience Manager-Veröffentlichungsumgebungen. Sie können die Zwischenspeicherung für persistente Abfragen in AEM Headless aktivieren.
+title: Persistierte GraphQL-Abfragen – Aktivieren der Caching-Funktion im Dispatcher
+description: Der Dispatcher ist eine Caching- und Sicherheitsebene vor den Adobe Experience Manager-Veröffentlichungsumgebungen. Sie können das Caching für persistierte Abfragen in AEM Headless aktivieren.
 feature: Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
 source-git-commit: ea5b404e83c11f0057342bff22ba45e6b0ead124
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '391'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
-# Persistente GraphQL-Abfragen - Aktivierung der Zwischenspeicherung im Dispatcher {#graphql-persisted-queries-enabling-caching-dispatcher}
+# Persistierte GraphQL-Abfragen – Aktivieren der Caching-Funktion im Dispatcher {#graphql-persisted-queries-enabling-caching-dispatcher}
 
 >[!CAUTION]
 >
->Wenn die Zwischenspeicherung im Dispatcher aktiviert ist, wird die [CORS-Filter](/help/headless/deployment/cross-origin-resource-sharing.md) ist nicht erforderlich, sodass dieser Abschnitt ignoriert werden kann.
+>Wenn die Caching-Funktion im Dispatcher aktiviert ist, wird der [CORS-Filter](/help/headless/deployment/cross-origin-resource-sharing.md) nicht benötigt, sodass dieser Abschnitt ignoriert werden kann.
 
-Die Zwischenspeicherung persistenter Abfragen ist im Dispatcher standardmäßig nicht aktiviert. Die Standardumaktivierung ist nicht möglich, da Kunden, die CORS (Cross-Origin Resource Sharing) mit mehreren Ursprüngen verwenden, ihre Dispatcher-Konfiguration überprüfen und möglicherweise aktualisieren müssen.
+Das Caching persistierter Abfragen ist im Dispatcher standardmäßig nicht aktiviert. Eine Standardaktivierung ist nicht möglich, da Kundinnen und Kunden, die CORS (Cross-Origin Resource Sharing) mit mehreren Ursprüngen verwenden, ihre Dispatcher-Konfiguration überprüfen und möglicherweise aktualisieren müssen.
 
 >[!NOTE]
 >
->Der Dispatcher speichert die `Vary` -Kopfzeile.
+>Der Dispatcher speichert den `Vary`-Header nicht zwischen.
 >
 >Das Caching anderer CORS-bezogener Header kann im Dispatcher aktiviert werden, reicht jedoch möglicherweise nicht aus, wenn mehrere CORS-Quellen vorhanden sind.
 
@@ -28,11 +28,11 @@ Die Zwischenspeicherung persistenter Abfragen ist im Dispatcher standardmäßig 
 >
 >Eine ausführliche Dokumentation zum Dispatcher finden Sie im [Handbuch zum Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de).
 
-## Zwischenspeichern persistenter Abfragen aktivieren {#enable-caching-persisted-queries}
+## Aktivieren des Cachings persistierter Abfragen {#enable-caching-persisted-queries}
 
-Um das Zwischenspeichern persistenter Abfragen zu aktivieren, definieren Sie die Dispatcher-Variable `CACHE_GRAPHQL_PERSISTED_QUERIES`:
+Um das Caching persistierter Abfragen zu aktivieren, definieren Sie die Dispatcher-Variable `CACHE_GRAPHQL_PERSISTED_QUERIES`:
 
-1. Variable zur Dispatcher-Datei hinzufügen `global.vars`:
+1. Fügen Sie die Variable zur Dispatcher-Datei `global.vars` hinzu:
 
    ```xml
    Define CACHE_GRAPHQL_PERSISTED_QUERIES
@@ -40,17 +40,17 @@ Um das Zwischenspeichern persistenter Abfragen zu aktivieren, definieren Sie die
 
 >[!NOTE]
 >
->Wenn die Dispatcher-Zwischenspeicherung für persistente Abfragen aktiviert wird, indem `Define CACHE_GRAPHQL_PERSISTED_QUERIES` ein `ETag` -Kopfzeile wird der Antwort vom Dispatcher hinzugefügt.
+>Wenn das Dispatcher-Caching für persistierte Abfragen durch die Verwendung von `Define CACHE_GRAPHQL_PERSISTED_QUERIES` aktiviert wird, fügt der Dispatcher eine `ETag`-Kopfzeile zu der Antwort hinzu.
 >
->Standardmäßig wird die `ETag` -Kopfzeile wird mit der folgenden Anweisung konfiguriert:
+>Standardmäßig ist die `ETag`-Kopfzeile mit der folgenden Direktive konfiguriert:
 >
 >```
 >FileETag MTime Size 
 >```
 >
->Diese Einstellung kann jedoch zu Problemen führen, wenn sie in den persistenten Abfrageantworten verwendet wird, da sie kleine Änderungen in der Antwort nicht berücksichtigt.
+>Diese Einstellung kann jedoch zu Problemen führen, wenn sie in den persistierten Abfrageantworten verwendet wird, da sie kleine Änderungen in der Antwort nicht berücksichtigt.
 >
->Individuelle Ergebnisse `ETag` Berechnungen *each* Antwort, die eindeutig ist. `FileETag Digest` muss in der Dispatcher-Konfiguration verwendet werden:
+>Um individuelle `ETag`-Berechnungen für *jede* Antwort zu erzielen, die eindeutig ist, muss die Einstellung `FileETag Digest` in der Dispatcher-Konfiguration verwendet werden:
 >
 >```xml
 ><Directory />    
@@ -61,18 +61,18 @@ Um das Zwischenspeichern persistenter Abfragen zu aktivieren, definieren Sie die
 
 >[!NOTE]
 >
->Übereinstimmung mit dem [Anforderungen des Dispatchers für Dokumente, die zwischengespeichert werden können](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), fügt der Dispatcher das Suffix hinzu. `.json` an alle gespeicherten Abfrage-URLs, damit das Ergebnis zwischengespeichert werden kann.
+>Um den [Anforderungen des Dispatchers für zwischenspeicherbare Dokumente](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=de#how-does-the-dispatcher-return-documents%3F) zu entsprechen, fügt der Dispatcher allen persistierten Abfrage-URLs das Suffix `.json` hinzu, damit das Ergebnis zwischengespeichert werden kann.
 >
->Dieses Suffix wird durch eine Neuschreibungsregel hinzugefügt, sobald die beibehaltene Abfrage-Zwischenspeicherung aktiviert ist.
+>Dieses Suffix wird durch eine Neuschreibungsregel hinzugefügt, sobald die Caching-Funktion für persistierte Abfragen aktiviert ist.
 
 ## CORS-Konfiguration im Dispatcher {#cors-configuration-in-dispatcher}
 
-Kunden, die CORS-Anforderungen verwenden, müssen möglicherweise ihre CORS-Konfiguration im Dispatcher überprüfen und aktualisieren.
+Kundinnen und Kunden, die CORS-Anfragen verwenden, müssen möglicherweise ihre CORS-Konfiguration im Dispatcher überprüfen und aktualisieren.
 
-* Die `Origin` -Kopfzeile darf nicht an AEM Veröffentlichungsinstanz über den Dispatcher übergeben werden:
-   * Überprüfen Sie die `clientheaders.any` -Datei.
-* Stattdessen müssen CORS-Anforderungen auf Dispatcher-Ebene auf zulässige Ursprünge hin bewertet werden. Dieser Ansatz stellt außerdem sicher, dass CORS-bezogene Kopfzeilen in allen Fällen korrekt an einem Ort festgelegt werden.
-   * Eine solche Konfiguration sollte der `vhost` -Datei. Nachfolgend finden Sie eine Beispielkonfiguration. Zur Vereinfachung wurde nur der CORS-bezogene Teil bereitgestellt. Sie können sie für Ihre spezifischen Anwendungsfälle anpassen.
+* Die `Origin`-Kopfzeile darf nicht über den Dispatcher an AEM Publish weitergeben werden:
+   * Überprüfen Sie die `clientheaders.any`-Datei.
+* Stattdessen müssen CORS-Anfragen auf Dispatcher-Ebene im Hinblick auf zulässige Ursprünge ausgewertet werden. Dieser Ansatz stellt außerdem sicher, dass CORS-bezogene Kopfzeilen in allen Fällen korrekt an einem Ort festgelegt werden.
+   * Eine solche Konfiguration sollte der `vhost`-Datei hinzugefügt werden. Nachfolgend finden Sie eine Beispielkonfiguration. Zur Vereinfachung ist nur der CORS-bezogene Teil angegeben. Sie können sie an Ihre spezifischen Anwendungsfälle anpassen.
 
   ```xml
   <VirtualHost *:80>

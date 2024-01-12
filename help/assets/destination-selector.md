@@ -5,9 +5,9 @@ contentOwner: Adobe
 role: Admin,User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1904'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -212,7 +212,7 @@ Sie können die [Eigenschaften](#destination-selector-properties) der Zielauswah
 
 ### Beispiel 1: Erstellen eines Ordners in der Zielauswahl
 
-Mit der Zielauswahl können Sie einen Ordner zum Hochladen, Verschieben oder Kopieren von Assets an einem bestimmten Speicherort erstellen.
+Mit der Zielauswahl können Sie einen Ordner erstellen, in den Sie Assets an einem bestimmten Speicherort hochladen, verschieben oder kopieren können.
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -259,9 +259,9 @@ Mit der Zielauswahl können Sie auch Daten des Repositorys Ihrer Wahl anzeigen, 
 
 Dies ist ein Beispiel für die Eigenschaft `optionsFormSetup`. Sie können sie verwenden, um die Auswahl zu bestätigen, und sie wird an das Ereignis `onConfirm` weitergegeben.
 
-### Erstellen von Ordnern {#create-new-folder}
+### Einee Ordner erstellen {#create-new-folder}
 
-Damit können Sie einen Ordner im Zielordner Ihrer [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+Damit können Sie einen Ordner im Zielordner Ihrer Anwendung [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] erstellen.
 
 ### Ansichtstypen {#types-of-view}
 

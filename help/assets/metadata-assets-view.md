@@ -5,9 +5,9 @@ role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
 source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1556'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -109,9 +109,9 @@ In diesem Video finden Sie die Reihenfolge der Schritte:
 
 >[!VIDEO](https://video.tv.adobe.com/v/341275)
 
-Nachdem ein Formular erstellt wurde, wird es automatisch angewendet, wenn Benutzer ein Asset des entsprechenden MIME-Typs hochladen.
+Nachdem ein Formular erstellt wurde, wird es automatisch angewendet, wenn Benutzende ein Asset des entsprechenden MIME-Typs hochladen.
 
-Wenn Sie ein vorhandenes Formular wiederverwenden möchten, um ein Formular zu erstellen, wählen Sie ein Metadatenformular aus und klicken Sie auf **[!UICONTROL Kopieren]** Geben Sie in der Symbolleiste einen Namen ein und klicken Sie auf **[!UICONTROL Bestätigen]**. Sie können ein Metadatenformular bearbeiten, um es zu ändern. Wenn Sie ein Formular ändern, wird es für Assets verwendet, die nach der Änderung hochgeladen wurden. Die vorhandenen Assets werden nicht geändert.
+Wenn Sie ein vorhandenes Formular wiederverwenden wollen, um ein Formular zu erstellen, wählen Sie ein Metadatenformular aus, klicken Sie in der Symbolleiste auf **[!UICONTROL Kopieren]**, geben Sie einen Namen ein und klicken Sie auf **[!UICONTROL Bestätigen]**. Sie können ein Metadatenformular bearbeiten, um es zu ändern. Wenn Sie ein Formular ändern, wird es für Assets verwendet, die nach der Änderung hochgeladen wurden. Die vorhandenen Assets werden nicht geändert.
 
 ## Eigenschaftskomponenten {#property-components}
 

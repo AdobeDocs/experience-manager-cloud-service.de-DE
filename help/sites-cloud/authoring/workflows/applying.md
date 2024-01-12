@@ -1,17 +1,17 @@
 ---
 title: Anwenden von Workflows auf Seiten
-description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten zu agieren. Es ist auch möglich, mehrere Workflows anzuwenden.
+description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Aktionen auszuführen. Es ist auch möglich, mehrere Workflows anzuwenden.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '654'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Anwenden von Workflows auf Seiten {#applying-workflows-to-pages}
 
-Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten zu agieren. Es ist auch möglich, mehrere Workflows anzuwenden.
+Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Aktionen auszuführen. Es ist auch möglich, mehrere Workflows anzuwenden.
 
 Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
 
@@ -52,7 +52,7 @@ Sie können einen Workflow wie folgt starten:
 * [die Option Erstellen der Sites-Symbolleiste.](#starting-a-workflow-from-the-sites-toolbar)
 * [die Zeitleiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
 
-In beiden Fällen müssen Sie [Geben Sie die Workflow-Details im Assistenten &quot;Workflow erstellen&quot;an](#specifying-workflow-details-in-the-create-workflow-wizard).
+In beiden Fällen müssen Sie [die Workflow-Details im Assistenten „Workflow erstellen“ angeben](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Starten eines Workflows von der Sites-Symbolleiste aus {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -116,7 +116,7 @@ Details können Sie angeben wie folgt:
 
 1. Im Schritt **Umfang** können Sie Folgendes auswählen:
 
-   * **Inhalt hinzufügen** , um die [Pfad-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) und wählen Sie zusätzliche Ressourcen aus. Wählen Sie im Browser die Option **Auswählen** , um den Inhalt zur Workflow-Instanz hinzuzufügen.
+   * Wählen Sie **Inhalt hinzufügen** aus, um den [Pfad-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) zu öffnen und zusätzliche Ressourcen auszuwählen. Wählen Sie im Browser die Option **Auswählen** aus, um den Inhalt zur Workflow-Instanz hinzuzufügen.
 
    * Eine vorhandene Ressource, um weitere Aktionen zu sehen:
 
@@ -141,6 +141,6 @@ Ein Dialogfeld wird geöffnet, in dem Sie die Auswahl wie folgt verfeinern könn
 
 ## Starten eines Workflows aus dem Seiten-Editor {#starting-a-workflow-from-the-page-editor}
 
-Wenn Sie eine Seite bearbeiten, können Sie die **Seiteninformationen** von der Symbolleiste aus aufrufen. Das Dropdown-Menü enthält die Option **In Workflow starten**. Dadurch wird ein Dialogfeld geöffnet, in dem Sie den erforderlichen Workflow ggf. zusammen mit einem Titel angeben können:
+Wenn Sie eine Seite bearbeiten, können Sie die **Seiteninformationen** von der Symbolleiste aus aufrufen. Das Dropdown-Menü enthält die Option **In Workflow starten**. Ein Dialogfeld wird geöffnet, in dem Sie den gewünschten Workflow bei Bedarf zusammen mit einem Titel angeben können:
 
 ![Starten eines Workflows aus dem Seiten-Editor](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

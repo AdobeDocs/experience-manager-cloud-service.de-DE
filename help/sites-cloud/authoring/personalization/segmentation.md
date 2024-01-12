@@ -3,15 +3,15 @@ title: Grundlegendes zur Segmentierung
 description: Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung
 exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Grundlegendes zur Segmentierung {#understanding-segmentation}
 
-Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. In den meisten Fällen müssen Segmente bereits definiert sein, bevor Sie mit der Kampagne beginnen.
+Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. In den meisten Fällen müssen vor dem Start einer Kampagne bereits Segmente definiert sein.
 
 Besucher von Websites haben unterschiedliche Interessen und Ziele, wenn sie eine Site besuchen. Diese Ziele zu verstehen und die Erwartungen zu erfüllen, ist ein wichtiger Erfolgsfaktor für das Online-Marketing.
 

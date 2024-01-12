@@ -3,7 +3,7 @@ title: Verwalten von Tags in der Assets-Ansicht
 description: Erfahren Sie, wie Sie Tags in der Assets-Ansicht verwalten. Mit Tags können Sie Assets kategorisieren, damit sie sich leichter durchsuchen und suchen lassen.
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1416'
 ht-degree: 100%
 

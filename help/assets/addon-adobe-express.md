@@ -3,9 +3,9 @@ title: AEM Assets-Add-on für Adobe Express
 description: Mit dem AEM Assets-Add-on für Adobe Express können Sie über die Adobe Express-Benutzeroberfläche direkt auf die in AEM Assets gespeicherten Assets zugreifen.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '484'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 

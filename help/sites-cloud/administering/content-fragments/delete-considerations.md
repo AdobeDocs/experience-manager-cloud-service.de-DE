@@ -5,13 +5,13 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '450'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
-# Überlegungen zu Inhaltsfragmenten löschen {#delete-considerations-content-fragments}
+# Überlegungen zum Löschen von Inhaltsfragmenten {#delete-considerations-content-fragments}
 
 Lesen Sie diese wichtigen Überlegungen, bevor Sie Ihre Löschrichtlinien für Inhaltsfragmente in AEM definieren. Inhaltsfragmente sind ein leistungsstarkes Tool für die Bereitstellung von Headless-Inhalten. Die Auswirkungen des Löschens müssen sorgfältig berücksichtigt werden.
 
@@ -23,15 +23,15 @@ In Bezug auf die Berechtigung zum Löschen müssen Inhaltsfragmente aus zwei Per
 
 1. **Das Inhaltsfragment als einzelne Entität.**
 
-   * **Anwendungsfall**: Ein Benutzer, der ein Inhaltsfragment bearbeiten/aktualisieren muss - **und Löschen eines ganzen Fragments**.
+   * **Nutzungsszenario:** Benutzende, die ein Inhaltsfragment bearbeiten oder aktualisieren müssen **und ein ganzes Fragment löschen müssen**.
    * **Berechtigungen**: Die Berechtigung zum Löschen kann über die Benutzer- und/oder Gruppenverwaltung zugewiesen werden.
 
-2. **Die mehreren Unterentitäten, aus denen ein Inhaltsfragment besteht, z. B. Varianten, Unterknoten.**
+2. **Die verschiedenen Unterentitäten, die ein Inhaltsfragment bilden, z. B. Varianten, Unterknoten.**
 
-   Für den grundlegenden Vorgang des Inhaltsfragmente-Editors müssen diese temporären Unterelemente gelöscht werden können. Beispielsweise wenn Varianten bearbeitet oder Metadaten oder verknüpfte Inhalte verwaltet werden.
+   Die grundlegende Funktionsweise des Inhaltsfragmenteditors erfordert, dass solche temporären Unterelemente gelöscht werden können. Beispielsweise, wenn Varianten bearbeitet oder Metadaten oder verknüpfte Inhalte verwaltet werden.
 
-   * **Anwendungsfall**: Ein Benutzer, der ein Inhaltsfragment bearbeiten/aktualisieren muss - **ohne Berechtigung zum Löschen eines ganzen Fragments**.
-   * **Berechtigungen:** Siehe [Nur für Editor-Funktionen erforderliche Berechtigungen](#permissions-required-for-editor-functionality-only).
+   * **Nutzungsszenario**: Benutzende, die ein Inhaltsfragment bearbeiten oder aktualisieren müssen, **aber kein ganzes Fragment löschen können**.
+   * **Berechtigungen**: Siehe [Nur für Editor-Funktionen erforderliche Berechtigungen](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
 >
@@ -39,27 +39,27 @@ In Bezug auf die Berechtigung zum Löschen müssen Inhaltsfragmente aus zwei Per
 
 ## Nur für Editor-Funktionen erforderliche Berechtigungen {#permissions-required-for-editor-functionality-only}
 
-Für Benutzer, die ein Inhaltsfragment bearbeiten/aktualisieren müssen, gilt Folgendes: **ohne dass sie ein ganzes Fragment löschen können** müssen spezifische Berechtigungen zugewiesen werden, da für die grundlegende Funktionsweise des Inhaltsfragment-Editors das Löschen von temporären Unterelementen erforderlich ist.
+Benutzenden, die ein Inhaltsfragment bearbeiten/aktualisieren müssen, **ohne dass sie ein ganzes Fragment löschen können**, müssen spezifische Berechtigungen zugewiesen werden, da für den grundlegenden Vorgang des Inhaltsfragmenteditors das Löschen von Übergangsunterelementen erforderlich ist.
 
-Beispielsweise wenn Varianten bearbeitet oder Metadaten oder verknüpfte Inhalte verwaltet werden.
+Beispielsweise, wenn Varianten bearbeitet oder Metadaten oder verknüpfte Inhalte verwaltet werden.
 
 >[!NOTE]
 >
->Die zum Bearbeiten oder Aktualisieren eines Inhaltsfragments benötigten Rechte zum Löschen erhalten sie mit der Löschberechtigung, die über die Benutzer- und/oder Gruppenverwaltung zugewiesen wird.
+>Die zum Bearbeiten oder Aktualisieren eines Inhaltsfragments benötigten Rechte zum Löschen sind Teil der Löschberechtigung, die über die Benutzer- und/oder Gruppenverwaltung zugewiesen wird.
 
-Die zum Bearbeiten/Aktualisieren eines Fragments erforderlichen Berechtigungen müssen entweder auf den Knoten, der das Inhaltsfragment enthält, oder auf einen entsprechenden übergeordneten Knoten angewendet werden (auf jeder Ebene unter `/content/dam`). Wenn sie einem übergeordneten Knoten zugewiesen sind, werden die Berechtigungen auf alle Knoten in diesem Zweig angewendet.
+Die zum Bearbeiten oder Aktualisieren eines Fragments benötigten Rechte müssen auf den Knoten, der das Fragment enthält, oder einen entsprechenden übergeordneten Knoten angewendet werden (auf allen Ebenen unter `/content/dam`). Wenn sie einem übergeordneten Knoten zugewiesen sind, werden die Berechtigungen auf alle Knoten in diesem Zweig angewendet.
 
-Beispiel: ein Ordner, in dem alle Inhaltsfragmente gespeichert werden, z. B.:
+Beispiel: Ein Ordner, der alle Inhaltsfragmente enthält, z. B.:
 
 * `/content/dam/contentfragments`
 
 >[!CAUTION]
 >
->Festlegen von Berechtigungen für `/content/dam` ist auch möglich, da hier alle Inhaltsfragmente gespeichert sind.
+>Die Berechtigungen können auch auf `/content/dam` festgelegt werden, weil hier alle Inhaltsfragmente gespeichert werden.
 >
 >Allerdings wird die Löschberechtigung dadurch auch für *alle* anderen Asset-Typen gewährt.
 
-Die Berechtigungsvoraussetzung, die es einem bestimmten Benutzer und/oder einer bestimmten Gruppe gestattet, ein Inhaltsfragment zu bearbeiten/zu aktualisieren, ist:
+Die Berechtigungsvoraussetzungen, die es bestimmten Benutzenden und/oder einer bestimmten Gruppe gestattet, ein Inhaltsfragment zu bearbeiten/zu aktualisieren, sind:
 
 >[!NOTE]
 >
@@ -75,4 +75,4 @@ Die Berechtigungsvoraussetzung, die es einem bestimmten Benutzer und/oder einer 
 
 * Für alle Knoten unter `jcr:content` aller Inhaltsfragmente:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties`, und `jcr:removeChildNodes`, `jcr:removeNode`
+   * `jcr:addChildNodes`, `jcr:modifyProperties`, `jcr:removeChildNodes` und `jcr:removeNode`

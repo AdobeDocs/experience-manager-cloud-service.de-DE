@@ -4,9 +4,9 @@ description: Wie Sie auf  [!DNL Assets View] zugreifen können, wie Sie sich anm
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Siehe [Zugriff auf die Asset-Ansicht](/help/assets/assets-view-introduction.md#h
 
 ## Konfigurieren von [!DNL Assets View] {#configuration}
 
-Um die Voreinstellungen zu öffnen, klicken Sie auf den Avatar in der oberen rechten Ecke der Benutzeroberfläche. Sie können in den Lösungsvoreinstellungen zwischen den hellen und den dunklen Themen wechseln.
+Um die Voreinstellungen zu öffnen, klicken Sie auf den Avatar in der rechten oberen Ecke der Benutzeroberfläche. Sie können in den Lösungsvoreinstellungen zwischen den hellen und den dunklen Themen wechseln.
 
 Wenn Sie Mitglied verschiedener Organisationen sind, können Sie auch die Organisation ändern und unternehmensübergreifend auf Ihre Konten zugreifen.
 
