@@ -3,10 +3,10 @@ title: Erfahren Sie, wie man in der  [!DNL Assets view] Assets sucht und findet.
 description: Erfahren Sie, wie man in der AEM Assets-Ansicht Assets sucht und findet. Mit der leistungsstarken Suchfunktion können Sie schnell das passende Asset ermitteln und die Geschwindigkeit Ihrer Inhaltserstellung steigern.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 6fb2701fc2a4dc1cb9e8ea31134f0b3f2bb6bdf9
+source-git-commit: 7b815a83e4e93c024403fab02f9a9b4ba8685007
 workflow-type: tm+mt
-source-wordcount: '1470'
-ht-degree: 68%
+source-wordcount: '1543'
+ht-degree: 67%
 
 ---
 
@@ -29,20 +29,6 @@ Um nach Assets zu suchen,
    * Suchen Sie mithilfe eines Keywords und ändern Sie optional den Ordner. Drücken Sie die Eingabetaste.
 
    * Beginnen Sie die Arbeit mit einem kürzlich angezeigten Asset, indem Sie direkt danach suchen. Klicken Sie in das Suchfeld und wählen Sie aus den Vorschlägen ein kürzlich angezeigtes Asset aus.
-
-## Suchen von Assets mithilfe von Adobe Firefly
-
-Wenn Sie nach einem Asset suchen, das in keinem der Ordner &quot;Assets&quot;verfügbar ist, verwenden Sie die [!UICONTROL Adobe Firefly] Asset-Suchfunktion in [!UICONTROL Adobe Experience Manager Assets]. Damit können Sie effizient nach Assets suchen, die möglicherweise nicht in den angegebenen Ordnern gespeichert sind. Diese Funktion ist derzeit nur für Benutzer mit Express-Berechtigung verfügbar. <br> Sie können beispielsweise ein Asset mit dem Keyword `Bugatti Type 57`. Bei der Suche nach `Bugatti Type 57`, werden keine Ergebnisse gefunden.
-
-![Firefly-Integration](assets/firefly-integration.jpg)
-*Abbildung: Keine Ergebnisse für Bugatti Typ 57 im Asset-Ordner gefunden.*
-
-Geben Sie in der Suchleiste den Asset-Namen ein und klicken Sie auf **[!UICONTROL Erzeugen]**.
-
-![Firefly-Integration](assets/bugatti-type-57.jpg)
-*Abbildung: Referenzieren von Assets, die mit der Adobe Firefly-Asset-Suchfunktion durchsucht wurden.*
-
-Die Beispiel-Assets werden auf dem Bildschirm angezeigt. Sie können diese Assets für den einfachen Zugriff in Ihren gewünschten Ordner hochladen.
 
 ## Filtern von Suchergebnissen {#refine-search-results}
 
@@ -134,9 +120,41 @@ Entfernen benutzerdefinierter Filter
 
 1. Klicken Sie auf **[!UICONTROL Bestätigen]**, um die Filter aus der Benutzeroberfläche zu entfernen.
 
+## Suchen nach Assets mithilfe von [!DNL Adobe Firefly] {#search-firefly}
+
+Sie können nach einem Asset suchen, das in keinem der Asset-Ordner verfügbar ist, indem Sie die [!DNL Adobe Firefly] Asset-Suchfunktion in [!DNL Experience Manager Assets]. Auf diese Weise können Sie effizient Assets in Echtzeit generieren, die nicht in den Asset-Ordnern gespeichert sind.
+
+### Vorbereitung
+
+Sie müssen über eine aktive [!DNL Adobe Express] Abonnement.
+
+### Generieren von Assets
+
+So generieren Sie neue Assets mit [!DNL Adobe Firefly]:
+
+1. Navigieren Sie zum [!DNL AEM Assets] Arbeitsbereich.
+1. Geben Sie den Asset-Namen in die Suchleiste oben auf der Seite ein.<br>
+Sie können beispielsweise ein Asset mit dem Keyword `Bugatti Type 57`. Bei der Suche nach dem Asset werden keine Ergebnisse gefunden, da das Asset in keinem der Asset-Ordner vorhanden ist.
+1. Geben Sie den Asset-Namen in die Suchleiste in der Mitte der Seite ein und klicken Sie auf **[!UICONTROL Erzeugen]**.
+   ![Firefly-Integration](assets/firefly-integration.jpg)
+   *Abbildung: Keine Ergebnisse für Bugatti Typ 57 im Asset-Ordner gefunden.* <br>
+Die neuen Assets wurden erfolgreich generiert.
+   ![Firefly-Integration](assets/bugatti-type-57.jpg)
+   *Abbildung: Referenzieren von Assets, die mithilfe von [!DNL Adobe Firefly] Asset-Suchfunktion.* <br>
+Sie können diese Assets für den einfachen Zugriff in Ihren gewünschten Ordner hochladen.
+
+### Hochladen von Assets
+
+So laden Sie das generierte Asset in das Asset-Repository hoch:
+
+1. Klicken Sie auf **[!UICONTROL Hochladen]**.
+1. Wählen Sie den Asset-Ordner aus, in den Sie das Asset hochladen müssen, und klicken Sie auf **[!UICONTROL Ordner auswählen]**.
+   ![Hochladen des Assets](assets/upload-asset-firefly.jpg)
+   *Abbildung: Wählen Sie den Ordner aus, in den das Asset hochgeladen werden soll.*
+
 ## Gespeicherte Suchvorgänge {#saved-search}
 
-In [!DNL Assets view] ist die Suchfunktion recht einfach zu verwenden. Über das Suchfeld können Sie einfach einen Suchbegriff eingeben und die Eingabetaste drücken, um die Ergebnisse anzuzeigen, oder Sie können schnell mit einem Klick nach Ihren kürzlich gesuchten Suchbegriffen suchen.
+In [!DNL Assets view] ist die Suchfunktion recht einfach zu verwenden. Über das Suchfeld können Sie einfach ein Keyword eingeben und die Eingabetaste drücken, um die Ergebnisse zu sehen, oder schnell mit einem einzigen Klick erneut nach Ihren kürzlich gesuchten Keywords suchen.
 
 Sie können die Suchergebnisse auch nach bestimmten Kriterien rund um Metadaten und Art der Assets filtern. Mit [!DNL Assets view] können Sie bei häufig verwendeten Filtern die Suchparameter speichern, um das Sucherlebnis zu verbessern. Um zu suchen und den Filter mit nur einem Klick anzuwenden, können Sie auch die gespeicherte Suche auswählen.
 
@@ -169,7 +187,7 @@ Sie können die Assets auswählen, die in den Suchergebnissen angezeigt werden, 
 
 * **An Schnellzugriff anheften**: [Heften Sie ein Asset an](my-workspace-assets-view.md), um später im Bedarfsfall schneller darauf zugreifen zu können. Alle angehefteten Elemente werden im Dashboard „Mein Arbeitsbereich“ im Abschnitt **Schnellzugriff** angezeigt.
 
-* **In Adobe Expreß öffnen**: Bearbeiten Sie ein Bild im integrierten Adobe Expreß auf dem Adobe Experience Manager Assets-Bildschirm.
+* **In Adobe Expreß öffnen**: Bearbeiten Sie ein Bild im integrierten Adobe Expreß auf dem Experience Manager Assets-Bildschirm.
 
 * **Bearbeiten**: Bearbeiten Sie das Bild mit Adobe Expreß.
 

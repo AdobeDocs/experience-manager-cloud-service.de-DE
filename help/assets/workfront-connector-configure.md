@@ -4,10 +4,10 @@ description: Konfigurieren von [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: e49d536dc918861604f3e5d19608eb69d038c49a
+source-git-commit: 4bda798113d85b800cb088d150f8c9d453c9ec3e
 workflow-type: tm+mt
-source-wordcount: '1760'
-ht-degree: 88%
+source-wordcount: '1767'
+ht-degree: 99%
 
 ---
 
@@ -69,7 +69,8 @@ Gehen Sie wie folgt vor, um die Ereignisse zu abonnieren:
 1. Projektstatus: Wählen Sie den Status aus, für den das Projekt festgelegt werden muss, um den verknüpften Ordner zu erstellen.
 1. Erstellen eines verknüpften Ordners in Projekten mit Portfolio: Liste der Portfolios, denen das Projekt angehören muss, um den verknüpften Ordner erstellen zu können. Lassen Sie diese Liste leer, wenn der verknüpfte Ordner für alle Projektportfolios erstellt werden soll.
 1. Verknüpften Ordner in Projekten mit benutzerdefiniertem Formularfeld erstellen: Benutzerdefiniertes Formularfeld und sein entsprechender Wert, den das Projekt haben muss, damit Sie den verknüpften Ordner erstellen können. Diese Konfiguration wird ignoriert, wenn sie leer gelassen wird. Wählen Sie `CUSTOM FORMS: Create DAM Linked Folder` als Feld und geben Sie `Yes` als Wert ein.
-1. Klicken Sie auf Automatische Erstellung verknüpfter Ordner aktivieren . Wenn Sie zur Registerkarte „Ereignisabonnements“ zurückkehren, sehen Sie, dass es jetzt ein Erstellungsereignis gibt.
+1. Berechtigung konfigurieren: Konfigurieren Sie diese Berechtigungen. `jcr:all permissions for /conf/workfront-tools/settings/cloudconfigs` für die `wf-workfront-users group`.
+1. Klicken Sie auf „Automatische Erstellung verknüpfter Ordner aktivieren“. Wenn Sie zur Registerkarte „Ereignisabonnements“ zurückkehren, sehen Sie, dass es jetzt ein Erstellungsereignis gibt.
 
 ![Konfiguration verknüpfter Ordner](/help/assets/assets/wf-linked-folder-config.png)
 
@@ -77,15 +78,15 @@ Gehen Sie wie folgt vor, um die Ereignisse zu abonnieren:
 
 ### Konfigurieren der Ordner-Metadatenzuordnung {#folder-metadata-mapping}
 
-Die Metadaten-Zuordnung zwischen Workfront-Projekten und AEM-Ordnern wird in AEM-Ordner-Metadatenschemata definiert. Ordner-Metadatenschemata sollten wie gewohnt in AEM erstellt und konfiguriert werden. Workfront Tools fügt der Registerkarte Einstellungen für die Konfiguration jedes Ordner-Metadatenschema-Formularfelds eine Dropdown-Liste zum automatischen Ausfüllen hinzu. In diesem Dropdown-Menü mit automatischer Vervollständigung können Sie angeben, welchem Workfront-Feld jede AEM-Ordnereigenschaft zugeordnet werden soll.
+Die Metadaten-Zuordnung zwischen Workfront-Projekten und AEM-Ordnern wird in AEM-Ordner-Metadatenschemata definiert. Ordner-Metadatenschemata sollten wie gewohnt in AEM erstellt und konfiguriert werden. Workfront Tools fügt für jedes Metadatenschema-Formularfeld ein Dropdown-Menü mit automatischer Vervollständigung zu dessen Registerkarte „Einstellungen“ hinzu. In diesem Dropdown-Menü mit automatischer Vervollständigung können Sie angeben, welchem Workfront-Feld jede AEM-Ordnereigenschaft zugeordnet werden soll.
 
 Gehen Sie wie folgt vor, um die Zuordnungen zu konfigurieren:
 
-1. Hinzufügen `jcr:read` Berechtigungen für `/conf/global/settings/dam/adminui-extension/foldermetadataschema` für `wf-workfront-users` hinzugefügt.
+1. Fügen Sie `jcr:read`-Berechtigungen zu `/conf/global/settings/dam/adminui-extension/foldermetadataschema` für die Gruppe `wf-workfront-users` hinzu.
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Ordner-Metadatenschemata]**.
-1. Wählen Sie das Ordner-Metadatenschema-Formular aus, das Sie bearbeiten möchten, und klicken Sie auf Bearbeiten.
-1. Wählen Sie das zu bearbeitende Ordner-Metadatenschema-Formularfeld aus und klicken Sie im rechten Bereich auf die Registerkarte Einstellungen .
-1. In [!UICONTROL Aus Workfront-Feld zugeordnet] wählen Sie den Namen des Workfront-Felds aus, das Sie der ausgewählten AEM Ordnereigenschaft zuordnen möchten. Verfügbare Optionen sind:
+1. Wählen Sie das Formular für das Ordner-Metadatenschema aus, das Sie bearbeiten möchten, und klicken Sie auf „Bearbeiten“.
+1. Wählen Sie das Formularfeld des Ordner-Metadatenschemas aus, das Sie bearbeiten möchten, und wählen Sie im rechten Bereich die Registerkarte „Einstellungen“ aus.
+1. Wählen Sie im Feld [!UICONTROL Aus Workfront-Feld zugeordnet] den Namen des Workfront-Felds aus, das Sie der ausgewählten AEM-Ordnereigenschaft zuordnen möchten. Verfügbare Optionen sind:
 
    * Benutzerdefinierte Formularfelder für Projekte
    * Felder mit Projektübersicht (ID, Name, Beschreibung, Referenznummer, Geplantes Abschlussdatum, Projektinhaber, Projekt-Sponsor, Portfolio oder Programm)
@@ -99,9 +100,9 @@ Die Zuordnung von Metadaten zwischen Adobe Workfront-Dokumenten und Assets wird 
 Gehen Sie wie folgt vor, um die Zuordnungen zu konfigurieren:
 
 1. Navigieren Sie zu **Tools** > **Assets** > **Metadatenschemata**.
-1. Wählen Sie das Metadatenschema-Formular aus, das Sie bearbeiten möchten, und klicken Sie auf **Bearbeiten** oder erstellen Sie ein Metadatenschema von Grund auf neu.
-1. Wählen Sie das Metadatenschema-Formularfeld aus, das Sie bearbeiten möchten, und wählen Sie **Einstellungen** im rechten Bereich.
-1. In [!DNL Workfront] Benutzerdefiniertes Formularfeld: Wählen Sie den Namen der [!DNL Workfront] -Feld, das Sie der ausgewählten AEM-Eigenschaft zuordnen möchten. Verfügbare Optionen sind:
+1. Wählen Sie das Metadatenschema-Formular aus, das Sie bearbeiten möchten, und klicken Sie auf **Bearbeiten** oder erstellen Sie von Grund auf ein neues Metadatenschema.
+1. Wählen Sie das Metadatenschema-Formularfeld aus, das Sie bearbeiten möchten, und wählen Sie die Registerkarte **Einstellungen** im rechten Bereich aus.
+1. Wählen Sie in [!DNL Workfront] unter „Benutzerdefiniertes Formularfeld“ den Namen des [!DNL Workfront]-Feldes aus, das Sie der ausgewählten AEM-Eigenschaft zuordnen möchten. Verfügbare Optionen sind:
 
    * Benutzerdefinierte Formularfelder für Dokumente
    * Benutzerdefinierte Formularfelder für Projekte
@@ -109,7 +110,7 @@ Gehen Sie wie folgt vor, um die Zuordnungen zu konfigurieren:
    * Benutzerdefinierte Formularfelder für Aufgaben
    * Felder zur Projektübersicht (ID, Name, Beschreibung oder Referenznummer)
 
-1. In dem Fall, in dem [!DNL Workfront] Feld ausgewählt in [!UICONTROL Workfront Custom Form Field] ist ein Workfront-Benutzertyp-Ahead-Feld. Es muss angegeben werden, welches Workfront-Benutzerfeld Sie zuordnen möchten. Aktivieren Sie dazu die Option „Wert aus dem von Workfront referenzierten Objektfeld abrufen“ und geben Sie dann den Namen des [!UICONTROL benutzerdefinierten Workfront-Formularfelds] an, von dem der zuzuordnende Wert abgerufen werden soll.
+1. Wenn das als [!UICONTROL Benutzerdefiniertes Workfront-Formularfeld] ausgewählte [!DNL Workfront]-Feld ein Workfront-Benutzerfeld mit Eingabepuffer ist, müssen Sie angeben, welches Workfront-Benutzerfeld Sie zuordnen möchten. Aktivieren Sie dazu die Option „Wert aus dem von Workfront referenzierten Objektfeld abrufen“ und geben Sie dann den Namen des [!UICONTROL benutzerdefinierten Workfront-Formularfelds] an, von dem der zuzuordnende Wert abgerufen werden soll.
 
    ![Konfiguration der Metadatenzuordnung](/help/assets/assets/wf-metadata-mapping-config1.png)
 
