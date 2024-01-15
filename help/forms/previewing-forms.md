@@ -1,13 +1,13 @@
 ---
 title: Wie kann ich ein adaptives Formular in der Vorschau anzeigen?
-description: Benutzer können Formulare vor der Veröffentlichung oder Aktivierung in der Vorschau anzeigen, um sicherzustellen, dass sie die Erwartungen erfüllen. Die Vorschauoptionen können je nach unterstützten Formulartypen variieren.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+description: Benutzer können eine Vorschau des Formulars anzeigen, bevor es veröffentlicht oder aktiviert wird, um sicherzustellen, dass es den Erwartungen entspricht. Die Vorschauoptionen können je nach unterstützten Formulartypen variieren.
 topic-tags: author
-discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 6511c4273ca3d394d98a61e8acb4d3cb03c243d5
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 32%
+source-wordcount: '336'
+ht-degree: 25%
 
 ---
 
@@ -28,10 +28,10 @@ In der folgenden Tabelle sind die Vorschauoptionen aufgeführt, die für verschi
    <td><strong>Asset-Typ</strong><br /> </td>
    <td><strong>Verfügbare Vorschauoptionen</strong><br /> </td>
   </tr>
-  <tr>
-   <td>Dokument</td>
-   <td>PDF-Vorschau</td>
-  </tr>
+  <!--<tr>
+   <td>Document</td>
+   <td>PDF preview</td>
+  </tr>-->
   <tr>
    <td>PDF-Formular</td>
    <td>PDF-Vorschau und Vorschau mit Daten<br /> </td>
@@ -40,16 +40,16 @@ In der folgenden Tabelle sind die Vorschauoptionen aufgeführt, die für verschi
    <td>Adaptives Formular</td>
    <td>HTML-Vorschau und HTML-Vorschau mit Daten</td>
   </tr>
-  <tr>
-   <td>Formularvorlage</td>
-   <td>PDF-Vorschau, PDF-Vorschau mit Daten HTML-Vorschau, HTML-Vorschau mit Daten<br /> </td>
-  </tr>
+  <!--<tr>
+   <td>Form Template</td>
+   <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td>
+  </tr>-->
  </tbody>
 </table>
 
 ## Formularvorschau {#previewing-a-form-1}
 
-1. Wählen Sie ein Asset aus, das Sie in der Vorschau anzeigen möchten, und klicken Sie in der Symbolleiste „Aktionen“ auf „Vorschau“ ![aem6forms_preview](assets/aem6forms_preview.png).
+1. Wählen Sie ein Asset aus, das Sie in der Vorschau anzeigen möchten, und klicken Sie auf Vorschau ![aem6forms_preview](assets/aem6forms_preview.png) in der Aktionssymbolleiste.
 
    >[!NOTE]
    >
@@ -61,7 +61,7 @@ In der folgenden Tabelle sind die Vorschauoptionen aufgeführt, die für verschi
 
    * Anzeigen als HTML-Vorschau
    * Vorschau mit Daten
-   * Vorschau als PDF (verfügbar für Formularvorlagen)
+     <!--* Preview as PDF (available for form templates)-->
 
 ## Vorschau mit Daten {#preview-with-data}
 
