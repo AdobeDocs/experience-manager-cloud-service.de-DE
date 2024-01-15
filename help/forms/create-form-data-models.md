@@ -1,11 +1,11 @@
 ---
 title: Erstellen eines Formulardatenmodells
 description: Erfahren Sie, wie Sie ein Formulardatenmodell (FDM) erstellen und Daten mithilfe eines adaptiven Formulars oder eines AEM-Workflows an eine Datenquelle senden oder abrufen.
-feature: Form Data Model
+feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '1512'
 ht-degree: 83%
@@ -40,7 +40,7 @@ Stellen Sie sicher, dass Sie die Datenquellen konfiguriert haben, die Sie im For
 1. Auswählen **[!UICONTROL Erstellen > Formulardatenmodell]**.
 1. Im Dialogfeld „Formulardatenmodell erstellen“:
 
-   * Geben Sie einen Namen für das Formulardatenmodell ein.
+   * Geben Sie einen Namen für das Formulardatenmodell an.
    * (**Optional**) Geben Sie Titel, Beschreibung und Tags für das Formulardatenmodell an.
    * (**Optional und nur anwendbar, wenn Datenquellen konfiguriert sind**) Wählen Sie das Häkchen-Symbol neben dem **[!UICONTROL Datenquellenkonfiguration]** und wählen Sie den Konfigurationsknoten aus, in dem sich die Cloud-Dienste für die Datenquellen befinden, die Sie verwenden möchten. Das beschränkt die Liste der Datenquellen, die auf der nächsten Seite zur Auswahl stehen, auf diejenigen, die im ausgewählten Konfigurationsknoten verfügbar sind. [!DNL Experience Manager]-Benutzerprofildatenquellen werden jedoch standardmäßig aufgelistet. Wenn Sie keinen Konfigurationsknoten auswählen, werden Datenquellen von allen Konfigurationsknoten angezeigt.
 

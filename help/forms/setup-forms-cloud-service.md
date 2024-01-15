@@ -1,15 +1,16 @@
 ---
-title: Wie richte ich eine [!DNL AEM Forms] als Cloud Service-Umgebung?
-description: Erfahren Sie, wie Sie eine [!DNL AEM Forms] as a Cloud Service-Umgebung einrichten und konfigurieren.
-exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+title: Wie richte ich eine  [!DNL AEM Forms]  as a Cloud Service-Umgebung ein?
+description: Erfahren Sie, wie Sie eine  [!DNL AEM Forms]  as a Cloud Service-Umgebung einrichten und konfigurieren.
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 66%
+source-wordcount: '602'
+ht-degree: 100%
 
 ---
 
-# Einführung in [!DNL AEM Forms] as a Cloud Service {#overview}
+# Einstieg in [!DNL AEM Forms] as a Cloud Service {#overview}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -19,17 +20,17 @@ ht-degree: 66%
 
 ## Bestimmung von Benutzertypen {#personas-aem-forms-project}
 
-<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Entscheiden Sie vor dem Einstieg in eine as a Cloud Service Adobe Experience Manager-Umgebung (AEM) mit Forms die Rollen und strukturieren Sie ein Team für Ihr Projekt. Eine typisches [!DNL AEM Forms]-Projekt-Team verfügt über die folgenden Rollen:
+<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Legen Sie vor dem Einstieg in eine Adobe Experience Manager (AEM) Forms as a Cloud Service-Umgebung Rollen fest und strukturieren Sie ein Team für Ihr Projekt. Eine typisches Projekt-Team in [!DNL AEM Forms] verfügt über die folgenden Rollen:
 
-* **User Experience (UX) Designer**: Ein User Experience (UX)-Designer definiert Stil, Layout und Branding für [!DNL AEM Forms] Assets.
+* **Anwendererlebnis(UX)-Designer**: Designerinnen und Designer für das Anwendererlebnis (UX) definieren Stil, Layout und Branding für [!DNL AEM Forms]-Assets.
 
-* **Forms-Praktikanten**: Ein Forms-Anwender erstellt Adaptive Forms, Designs und Vorlagen gemäß Stil, Layout und Branding, die von UX Designer bereitgestellt werden. Außerdem erstellt und integriert der Anwender adaptive Formulare mit einem Formulardatenmodell und AEM-Workflows. Ein Formularanwender führt in der Regel Front-End-Aufgaben aus.
+* **Formular-Fachkraft**: Eine Formular-Fachkraft erstellt adaptive Formulare, Designs und Vorlagen gemäß den Stil-, Layout- und Branding-Definitionen der UX-Designerin bzw. des UX-Designers. Außerdem erstellt und integriert der Anwender adaptive Formulare mit einem Formulardatenmodell und AEM-Workflows. Ein Formularanwender führt in der Regel Front-End-Aufgaben aus.
 
-* **Formularentwickler**: Ein Formularentwickler erstellt eine benutzerdefinierte Formularlösung. Ein Forms-Entwickler führt in der Regel Backend-Entwicklung durch, z. B. die Entwicklung von benutzerdefinierten Komponenten, AEM Workflows, Vorbefüllungs-Services und mehr.
+* **Formularentwickelnde**: Formularentwickelnde erstellen eine benutzerdefinierte Formularlösung. Eine Formularentwicklerin bzw. ein Formularentwickler entwickelt in der Regel Backend-Anwendungen wie benutzerdefinierte Komponenten, AEM-Workflows, Vorbefüllungs-Services und mehr.
 
-* **AEM-Administrator**: Der AEM-Administrator unterstützt bei der Konfiguration insgesamt, z. B. beim Einrichten von Benutzerinnen und Benutzern, beim Härten der Umgebung, beim Konfigurieren von Datenquellen, beim Konfigurieren von E-Mail-Nachrichten und bei Software von Drittanbietern. Der AEM-Administrator unterstützt auch die Integration von Lösungen wie Adobe Analytics, Adobe Target und Adobe Sign.
+* **AEM-Administrator**: Der AEM-Administrator unterstützt bei der Konfiguration insgesamt, z. B. beim Einrichten von Benutzerinnen und Benutzern, beim Härten der Umgebung, beim Konfigurieren von Datenquellen, beim Konfigurieren von E-Mail-Nachrichten und bei Software von Drittanbietern. AEM-Admins unterstützen auch die Integration von Lösungen wie Adobe Analytics, Adobe Target und Adobe Sign.
 
-* **Endbenutzer**: Ein Benutzer interagiert mit dem veröffentlichten Formular und sendet es, signiert gesendete Formulare, verfolgt gesendete Anwendungen über ein Webportal und erhält personalisierte Nachrichten.
+* **Endbenutzende**: Endbenutzende interagieren mit dem veröffentlichten Formular und senden es ab, unterzeichnen gesendete Formulare, verfolgen gesendete Anträge über ein Web-Portal und empfangen personalisierte Mitteilungen.
 
 <!-- While onboarding to the service, assign the following AEM groups to [!DNL AEM Forms] as a Cloud Service based on their role:
 
@@ -43,7 +44,7 @@ ht-degree: 66%
 
 * [Lernen Sie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=de) [!DNL Adobe Experience Manager] as a Cloud Service kennen.
 
-* (Nur für Sandboxes) Nach der Einführung in den Service [erstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en) und [nutzen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=de) Sie Produktions- und Nicht-Produktions-Pipelines. Sie ermöglicht und bringt die neuesten Funktionen von [!DNL AEM Forms] as a Cloud Service für Ihre Umgebung.
+* (Nur für Sandboxes) Nach der Einführung in den Service [erstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en) und [nutzen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=de) Sie Produktions- und Nicht-Produktions-Pipelines. Dadurch wird Ihre Umgebung um die neuesten Funktionen von [!DNL AEM Forms] as a Cloud Service erweitert.
 
 Sie können Forms as a Cloud Service verwenden, um ein adaptives Formular (digitale Registrierung) zu erstellen oder Kundenkommunikation zu generieren. Führen Sie nach Abschluss des [Onboardings](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=de) bei [!DNL Adobe Experience Manager] as a Cloud Service eine der folgenden Aktionen aus, um die Funktionen für die digitale Registrierung oder die Kundenkommunikation zu aktivieren. Sie können auch beide Funktionen aktivieren:
 
@@ -63,7 +64,7 @@ Sie können Forms as a Cloud Service verwenden, um ein adaptives Formular (digit
 
 >[!NOTE]
 >
-> Um Dokumentbearbeitungs-APIs zu aktivieren und zu konfigurieren, fügen Sie die folgende Regel zum [Dispatcher-Konfiguration](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+> Um APIs zur Dokumentbearbeitung zu aktivieren und zu konfigurieren, fügen Sie die folgende Regel zur [Dispatcher-Konfiguration](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) hinzu:
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
@@ -75,9 +76,9 @@ Nach Abschluss der Einführung melden Sie sich bei Ihrer [!DNL AEM Forms] as a C
 | Benutzertypen (Personas) | Benutzergruppen | AEM-Instanz |
 |---|---|---|
 | Formularanwender/Formularentwickler | <ul> <li> [!DNL forms-users] </li><li> [!DNL template-author] </li><li> [!DNL workflow-users] </li><li> [!DNL workflow-editors] </li><li> [!DNL fdm-authors] </li></ul> | Autoreninstanz |
-| User Experience (UX) Designer | <ul> <li> [!DNL forms-users]</li><li> [!DNL template-author] </li></ul> | Autoreninstanz |
+| User Experience(UX)-Designer | <ul> <li> [!DNL forms-users]</li><li> [!DNL template-author] </li></ul> | Autoreninstanz |
 | AEM-Administrator | <ul> <li>[!DNL aem-administrators],</li> <li>[!DNL fd-administrators] </li> </ul> | Autoren- und Veröffentlichungsinstanz |
-| Endanwender | <ul> <li>Wenn sich ein Benutzer anmelden muss, um ein adaptives Formular anzuzeigen und zu senden, fügen Sie diese Benutzer zum [!DNL forms-users] hinzugefügt. </li> <li>Wenn für den Zugriff auf adaptive Formulare keine Benutzerauthentifizierung erforderlich ist, weisen Sie diesen Benutzern keine Gruppe zu. </li> </ul> | Autoren- und Veröffentlichungsinstanz |
+| Endanwender | <ul> <li>Wenn das Anzeigen und Übermitteln eines adaptiven Formulars nur für angemeldete Benutzende möglich sein soll, fügen Sie diese Benutzenden der Gruppe [!DNL forms-users] hinzu. </li> <li>Wenn für den Zugriff auf adaptive Formulare keine Benutzerauthentifizierung erforderlich ist, weisen Sie diesen Benutzern keine Gruppe zu. </li> </ul> | Autoren- und Veröffentlichungsinstanz |
 
 Weitere Informationen zu formularspezifischen AEM-Gruppen und entsprechenden Berechtigungen finden Sie unter [Gruppen und Berechtigungen](forms-groups-privileges-tasks.md).
 
@@ -85,7 +86,7 @@ Weitere Informationen zu formularspezifischen AEM-Gruppen und entsprechenden Ber
 
 ## Nächster Schritt {#next-steps}
 
-[Einrichten einer lokalen AEM-Entwicklungsumgebung](setup-local-development-environment.md). Sie können eine lokale Entwicklungsumgebung verwenden, um ein adaptives Formular und zugehörige Assets (Designs, Vorlagen, benutzerdefinierte Sendeaktionen, Vorbefüllungs-Dienst usw.) zu erstellen. Und [Konvertieren von PDF forms in adaptive Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de) ohne sich bei einer Cloud-Entwicklungsumgebung anzumelden.
+[Einrichten einer lokalen AEM-Entwicklungsumgebung](setup-local-development-environment.md). Sie können eine lokale Entwicklungsumgebung verwenden, um ein adaptives Formular und zugehörige Assets (Designs, Vorlagen, benutzerdefinierte Sendeaktionen, Vorbefüllungs-Service usw.) zu erstellen. Und Sie können [PDF-Formulare in adaptive Formulare](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de) konvertieren, ohne sich bei einer Cloud-Entwicklungsumgebung anzumelden.
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
 

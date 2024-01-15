@@ -3,11 +3,12 @@ title: Einbetten anpassungsfähiger Formulare in externe Web-Seiten
 description: Erfahren Sie, wie Sie ein adaptives Formular in eine externe Web-Seite einbetten
 contentOwner: Khushwant Singh
 docset: CloudService
-role: Developer
+role: Admin, Developer, User
+feature: Adaptive Forms, Core Components
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
-workflow-type: ht
-source-wordcount: '982'
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+workflow-type: tm+mt
+source-wordcount: '972'
 ht-degree: 100%
 
 ---
@@ -97,7 +98,7 @@ Einbetten des adaptiven Formulars:
    * Ersetzen Sie den Wert der Variablen *options.path* durch die Veröffentlichungs-URL des adaptiven Formulars. Wenn der AEM-Server in einem Kontextpfad ausgeführt wird, stellen Sie sicher, dass die URL diesen Pfad enthält. Geben Sie immer den vollständigen Namen des adaptiven Formulars einschließlich der Erweiterung an. Beispielsweise befinden sich der Code und das adaptive Formular im Beispiel oben auf demselben AEM Forms-Server, daher wird im Kontextpfad dieses Beispiels der Pfad „/content/forms/af/locbasic.html“ für das adaptive Formular verwendet.
    * CSS_Selector ist der CSS-Selektor des Formularcontainers, in den das adaptive Formular eingebettet ist. Im obigen Beispiel ist die CSS-Klasse „.customafsection“ der CSS-Selektor.
 
-Das adaptive Formular wird in die Web-Seite eingebettet.  Beobachten Sie Folgendes im eingebetteten adaptiven Formular:
+Das adaptive Formular wird in die Web-Seite eingebettet. Beobachten Sie Folgendes im eingebetteten adaptiven Formular:
 
 * Entwürfe und übermittelte Formulare sind auf der entsprechenden Registerkarte im Forms Portal verfügbar.
 * Die im adaptiven Originalformular konfigurierte Übermittlungsaktion wird im eingebetteten Formular beibehalten.
@@ -108,7 +109,7 @@ Das adaptive Formular wird in die Web-Seite eingebettet.  Beobachten Sie Folgen
 
 ## Beispieltopologie {#sample-topology}
 
-Die externe Web-Seite, in die das adaptive Formular eingebettet wird, sendet Anforderungen an den AEM-Server, der sich in der Regel hinter der Firewall in einem privaten Netzwerk befindet. Um sicherzustellen, dass die Anforderungen sicher auf den AEM-Server geleitet werden, wird empfohlen, einen Reverse-Proxy-Server einzurichten.
+Die externe Web-Seite, in die das adaptive Formular eingebettet wird, sendet Anfragen an den AEM-Server, der sich in der Regel hinter der Firewall in einem privaten Netzwerk befindet. Um sicherzustellen, dass die Anforderungen sicher auf den AEM-Server geleitet werden, wird empfohlen, einen Reverse-Proxy-Server einzurichten.
 
 Schauen wir uns ein Beispiel an, wie Sie einen Apache 2.4-Reverse-Proxy-Server ohne Dispatcher einrichten können.  In diesem Beispiel hosten Sie den AEM-Server mit dem Kontextpfad `/forms` und weisen `/forms` für den Reverse-Proxy zu. Dadurch wird sichergestellt, dass alle Anforderungen für `/forms` auf dem Apache-Server an die AEM-Instanz geleitet werden. Diese Topologie hilft dabei, die Anzahl der Regeln auf der Dispatcher-Ebene zu reduzieren, da alle Anforderungen mit dem Präfix `/forms` an den AEM-Server weitergeleitet werden.
 
@@ -149,7 +150,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 ## Best Practices {#best-practices}
 
-Berücksichtigen Sie beim Einbetten eines adaptiven Formulars in eine Web-Seite die folgenden Richtlinien:
+Berücksichtigen Sie beim Einbetten eines adaptiven Formulars in eine Web-Seite die folgenden Best Practices:
 
 * Stellen Sie sicher, dass die in den CSS der Web-Seite definierten Formatierungsregeln nicht mit den CSS des Formularobjekts in Konflikt stehen.  Um dies zu vermeiden, können Sie die CSS der Web-Seite im Design für das adaptive Formular mithilfe der AEM-Client-Bibliothek wiederverwenden.  Weitere Informationen zur Verwendung der Client-Bibliothek in den Designs für adaptive Formulare finden Sie unter [Designs in AEM Forms](/help/forms/using-themes-in-core-components.md).
 * Stellen Sie sicher, dass der Formular-Container auf der Web-Seite die gesamte Fensterbreite verwendet. So wird sichergestellt, dass die für mobile Geräte konfigurierten CSS-Regeln ohne Änderungen funktionieren.  Wenn der Formular-Container nicht die gesamte Fensterbreite einnimmt, müssen Sie benutzerdefinierte CSS schreiben, damit sich das Formular an verschiedene mobile Geräte anpasst.

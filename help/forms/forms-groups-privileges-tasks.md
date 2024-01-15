@@ -1,11 +1,12 @@
 ---
-title: Welche Benutzergruppen sind in AEM Forms as a Cloud Service standardmäßig verfügbar?
+title: Welche Benutzergruppen sind in AEM Forms as a Cloud Service vorkonfiguriert verfügbar?
 description: Liste der vorkonfigurierten Benutzergruppen und der jeder Gruppe zugewiesenen Berechtigungen
-exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 80%
+source-wordcount: '167'
+ht-degree: 100%
 
 ---
 
@@ -108,11 +109,11 @@ Nachdem Sie [!DNL AEM Forms] as a Cloud Service eingerichtet haben, stehen die i
 
 ## Siehe auch
 
-* [In einer Cloud Service-Umgebung integriert](/help/forms/setup-forms-cloud-service.md)
+* [Einstieg in eine Cloud Service-Umgebung](/help/forms/setup-forms-cloud-service.md)
 * [Einrichten einer lokalen Entwicklungsumgebung](/help/forms/setup-local-development-environment.md)
-* [Migration von AEM 6.5 Forms zu Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+* [Migrieren von AEM 6.5 Forms zu Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [Erstellen eines eigenständigen adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)
-* [Hinzufügen eines adaptiven AEM-Formulars zu einer Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Hinzufügen eines adaptiven Formulars zu einer Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 <!--
 

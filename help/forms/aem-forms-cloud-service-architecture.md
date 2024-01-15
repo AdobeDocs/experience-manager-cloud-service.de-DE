@@ -1,10 +1,12 @@
 ---
 title: AEM Forms as a Cloud Service-Architektur für adaptive Formulare und Kommunikations-APIs
 description: Machen Sie sich mit der Architektur von [!DNL AEM Forms] as a Cloud Service vertraut, um mehr über die Skalierbarkeit, Widerstandsfähigkeit und Leistung der Plattform zu erfahren.
+role: Admin, Developer, User
+feature: Adaptive Forms
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1033'
 ht-degree: 100%
 
 ---

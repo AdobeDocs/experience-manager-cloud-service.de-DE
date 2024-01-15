@@ -1,8 +1,9 @@
 ---
 title: Wie können wir mit Forms Designer Datensatzdokumentvorlagen und Formularfragmente erstellen?
 description: Verwendung [!DNL AEM Forms] Designer zum Erstellen von Datensatzdokumentvorlagen und Formularfragmenten.
-feature: Forms Designer
-source-git-commit: b2769134c2e744f41cbb7e8a3cf08c622cdc07ca
+feature: Adaptive Forms, Forms Designer
+role: Admin, Developer, User
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 49%

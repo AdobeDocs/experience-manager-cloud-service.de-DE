@@ -2,8 +2,10 @@
 title: Wie wird Adobe Analytics für ein adaptives Formular aktiviert?
 description: Experience Cloud Setup Automation hilft, Adobe Analytics mit einem adaptiven Formular zu verbinden, um Einblicke in Besucherinteraktionen und Interaktionen zu verfolgen.
 keywords: Aktivieren Sie Adobe Analytics für ein adaptives Formular mithilfe der Automatisierung des Experience Cloud-Setups, aktivieren Sie Adobe Analytics in Forms, Adobe Analytics in Adaptive Forms, Forms Analytics-Integration, Forms und Adobe Analytics
+feature: Adaptive Forms
+role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 6%
@@ -15,7 +17,7 @@ ht-degree: 6%
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Dieser Artikel |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html?lang=de) |
 
 Mit der Automatisierung der Experience Cloud-Einrichtung können Sie Adobe Analytics mit Adaptive Forms verbinden, wodurch Benutzerinteraktionen mit Ihren Formularen verfolgt und analysiert und Einblicke in Besucherinteraktionen und Interaktionen geboten werden können. Experience Cloud Setup Automation hilft auch bei der Überwachung der Formularleistung, bei der Metriken wie Abschlusszeiten und Abbruchpunkte bewertet werden. Diese Analyse hilft, Formulare für ein besseres Benutzererlebnis zu optimieren und dabei das Benutzerverhalten anhand des Anmeldestatus (z. B. anonyme Benutzer) zu unterscheiden, um allgemeine Trends und Muster zu identifizieren.
 

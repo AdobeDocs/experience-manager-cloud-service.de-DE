@@ -2,11 +2,12 @@
 title: Häufig gestellte Fragen zu AEM Forms as a Cloud Service
 description: Häufig gestellte Fragen zu Forms as a Cloud Service
 contentOwner: khsingh
-exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
+role: User
+feature: Adaptive Forms, FAQ
 index: false
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '986'
 ht-degree: 98%
 
 ---
@@ -37,7 +38,7 @@ Sie können die Referenzdokumentation zur Java™-API von [!DNL Maven Central R
    1. Öffnen Sie die Datei „index.html“, um die API-Referenzdokumentation aufzurufen.
 
 * **Wo erhalte ich die [!DNL JavaScript™]-API-Referenzdokumentation für adaptive Formulare?**
-Sie können die [!DNL JavaScript™]-API-Referenzdokumentation vom [!DNL &#x200B; Maven Central Repository] herunterladen. Zum Herunterladen:
+Sie können die [!DNL JavaScript™]-API-Referenzdokumentation vom [!DNL  Maven Central Repository] herunterladen. Zum Herunterladen:
    1. Öffnen Sie [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
    1. Suchen und öffnen Sie die Seite mit der neuesten SDK-Version für [!DNL Experience Manager Forms].
    1. Klicken Sie auf die Option „Alle anzeigen“, um alle Dateien anzuzeigen.

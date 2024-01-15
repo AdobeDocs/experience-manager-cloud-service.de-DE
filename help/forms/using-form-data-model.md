@@ -1,11 +1,11 @@
 ---
 title: Wie können wir ein Formulardatenmodell für ein adaptives Formular erstellen?
 description: Erfahren Sie, wie Sie adaptive Formulare und adaptive Formularfragmente auf Grundlage eines Formulardatenmodells (FDM) erstellen. Erstellen und bearbeiten Sie Beispieldaten für Datenmodellobjekte im FDM.
-feature: Form Data Model
-role: User
+feature: Adaptive Forms, Form Data Model
+role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '1213'
 ht-degree: 94%

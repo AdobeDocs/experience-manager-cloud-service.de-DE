@@ -2,9 +2,10 @@
 title: Wie wird Forms Designer heruntergeladen und installiert, um Vorlagen für Datensatzdokumente zu erstellen?
 description: Verwenden Sie Forms Designer zum Erstellen von XDP- und PDF-Formularvorlagen, die als Vorlage für ein Datensatzdokument dienen.
 keywords: Installieren von Designer, Installieren von Forms Designer, Anforderungen für die Installation von Forms Designer
-feature: Forms Designer
+feature: Adaptive Forms, Forms Designer
+role: Admin, Developer, User
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: b2769134c2e744f41cbb7e8a3cf08c622cdc07ca
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 100%

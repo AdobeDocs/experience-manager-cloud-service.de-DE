@@ -2,7 +2,9 @@
 title: Konfigurieren von Abwesenheitseinstellungen in AEM Forms
 description: Delegieren Sie Aufgaben während Ihrer Abwesenheit oder wenn Sie nicht im Büro sind, um eine nahtlose Workflow-Ausführung zu ermöglichen.
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, Workflow
+role: Admin, User
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 91%
