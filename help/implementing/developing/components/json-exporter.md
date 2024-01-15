@@ -5,7 +5,7 @@ exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditio
 
 ## JSON Exporter mit Inhaltsfragment-Kernkomponenten {#json-exporter-with-content-fragment-core-components}
 
-Mit dem AEM JSON Exporter können Sie den Inhalt einer (y) AEM Seite im JSON-Datenmodellformat bereitstellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
+Mit dem AEM JSON-Exporter können Sie die Inhalte auf einer (beliebigen) AEM-Seite im JSON-Datenmodellformat bereitstellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
 
 In AEM erfolgt die Bereitstellung mit dem `model`-Selektor und der `.json`-Erweiterung.
 
@@ -35,7 +35,7 @@ In AEM erfolgt die Bereitstellung mit dem `model`-Selektor und der `.json`-Erwei
    http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks.model.json
    ```
 
-1. liefert Inhalte wie:
+1. Inhalte der folgenden Art bereitgestellt:
 
    ![JSON-Modell für WKND-Inhalt](assets/json-model-wknd.png)
 
@@ -53,7 +53,7 @@ Ihre Seite kann entweder ein einzelnes Inhaltsfragment oder mehrere Komponenten 
   http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/container/container/contentfragment.model.json
   ```
 
-* liefert Inhalte wie:
+* Inhalte der folgenden Art bereitgestellt:
 
   ![JSON-Modell für WKND-Inhaltsfragmente](assets/json-model-wknd-content-fragment.png)
 

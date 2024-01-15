@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
 source-wordcount: '1885'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -149,7 +149,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
    >[!NOTE]
    >
-   >**Speichern und schließen** ist über das **Speichern** Dropdown-Liste.
+   >**Speichern und schließen** ist über die Dropdown-Liste **Speichern** verfügbar.
 
    >[!NOTE]
    >
@@ -317,7 +317,7 @@ Beispiel:
 
 ## Vergleichen von Fragment-Versionen {#comparing-fragment-versions}
 
-Die Aktion **Mit aktueller Version vergleichen** ist in der [Zeitleiste](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) verfügbar, sobald Sie eine bestimmte Version ausgewählt haben.
+Die Aktion **Mit aktueller Version vergleichen** ist in der [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) verfügbar, sobald Sie eine bestimmte Version ausgewählt haben.
 
 Dadurch wird Folgendes geöffnet:
 

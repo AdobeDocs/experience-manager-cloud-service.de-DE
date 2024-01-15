@@ -5,7 +5,7 @@ exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 83%
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ Definieren Sie neue Typen von ContextHub-Stores und -Modulen, wenn die bereitges
 
 ContextHub-Stores werden aus registrierten Store-Kandidaten erstellt. Um einen benutzerdefinierten Store zu erstellen, müssen Sie einen Store-Kandidaten erstellen und registrieren.
 
-Die JavaScript-Datei, die den Code enthält, der den Store-Kandidaten erstellt und registriert, muss in einer [Client-Bibliotheksordner](/help/implementing/developing/introduction/clientlibs.md). Die Ordnerkategorie muss dem folgenden Muster entsprechen:
+Die JavaScript-Datei mit dem Code zum Erstellen und Registrieren des Store-Kandidaten muss in einem [Client-Bibliotheksordner](/help/implementing/developing/introduction/clientlibs.md) enthalten sein. Die Ordnerkategorie muss dem folgenden Muster entsprechen:
 
 ```xml
 contexthub.store.[storeType]
@@ -62,14 +62,14 @@ In den meisten Fällen ist nur ein Kandidat erforderlich und die Priorität kann
 
 ## Erstellen von Typen von ContextHub-Benutzeroberflächenmodulen {#creating-contexthub-ui-module-types}
 
-Erstellen Sie benutzerdefinierte Typen eines Benutzeroberflächenmoduls, wenn die [mit ContextHub installierten Typen](sample-modules.md) nicht Ihren Anforderungen entsprechen. Um einen UI-Modultyp zu erstellen, erstellen Sie einen Benutzeroberflächenmodul-Renderer, indem Sie die `ContextHub.UI.BaseModuleRenderer` und dann mit `ContextHub.UI`.
+Erstellen Sie benutzerdefinierte Typen eines Benutzeroberflächenmoduls, wenn die [mit ContextHub installierten Typen](sample-modules.md) nicht Ihren Anforderungen entsprechen. Erstellen Sie dazu einen Benutzeroberflächenmodul-Renderer, indem Sie die Klasse `ContextHub.UI.BaseModuleRenderer` erweitern und sie dann mit `ContextHub.UI` registrieren.
 
 Erstellen Sie zum Erstellen eines Benutzeroberflächenmodul-Renderers ein `Class`-Objekt, das die Logik enthält, die das Benutzeroberflächenmodul rendert. Ihre Klasse muss mindestens die folgenden Aktionen durchführen:
 
 * Erweitern der `ContextHub.UI.BaseModuleRenderer`-Klasse. Bei dieser Klasse handelt es sich um die Basisimplementierung für alle Benutzeroberflächenmodul-Renderer. Das `Class`-Objekt definiert eine Eigenschaft namens `extend`, mit der Sie diese Klasse als diejenige benennen, die erweitert wird.
 * Bereitstellen einer Standardkonfiguration. Erstellen Sie eine Eigenschaft `defaultConfig`. Diese Eigenschaft ist ein Objekt, das die Eigenschaften enthält, die für das Benutzeroberflächenmodul [`contexthub.base`](sample-modules.md#contexthub-base-ui-module-type) definiert sind, sowie alle anderen Eigenschaften, die Sie benötigen.
 
-Die Quelle für `ContextHub.UI.BaseModuleRenderer` befindet sich unter `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`.  Verwenden Sie zum Registrieren des Renderers die Methode [`registerRenderer`](contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) der `ContextHub.UI`-Klasse. Sie müssen einen Namen für den Modultyp angeben. Wenn Administratoren ein Benutzeroberflächenmodul auf Grundlage dieses Renderers erstellen, geben sie diesen Namen an.
+Die Quelle für `ContextHub.UI.BaseModuleRenderer` befindet sich unter `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`.  Verwenden Sie zum Registrieren des Renderers die Methode [`registerRenderer`](contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) der `ContextHub.UI`-Klasse. Sie müssen einen Namen für den Modultyp angeben. Wenn Admins ein Benutzeroberflächenmodul auf Grundlage dieses Renderers anlegen, geben sie diesen Namen an.
 
 Erstellen und registrieren Sie die Renderer-Klasse in einer selbstausführenden anonymen Funktion. Das folgende Beispiel basiert auf dem Quell-Code des Benutzeroberflächenmoduls `contexthub.browserinfo`. Dieses Benutzeroberflächenmodul ist eine einfache Erweiterung der `ContextHub.UI.BaseModuleRenderer`-Klasse.
 

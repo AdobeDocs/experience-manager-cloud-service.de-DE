@@ -5,7 +5,7 @@ exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '778'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -31,7 +31,7 @@ In diesem Dokument erfahren Sie, wie Sie CIF für das Authoring in Content and C
 
 CIF erweitert den universellen Editor mit Funktionen, um auf die Echtzeit-Produktdaten zuzugreifen, ohne den Kontext zu verlassen:
 
-Öffnen Sie das seitliche Bedienfeld und wählen Sie aus der Dropdown-Liste die Option &quot;Produkte&quot;.
+Öffnen Sie das seitliche Bedienfeld und wählen Sie „Produkte“ aus der Dropdown-Liste aus.
 ![Produkttyp auswählen](assets/asset-finder-overview.png)
 
 Sie können den Produktkatalog durchsuchen oder das Feld für die Volltextsuche verwenden, um Produkte zu finden.

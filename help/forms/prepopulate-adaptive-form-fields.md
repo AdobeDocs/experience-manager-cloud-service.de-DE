@@ -1,13 +1,13 @@
 ---
-title: Wie kann ich adaptive Formularfelder vorbefüllen?
-description: Verwenden Sie vorhandene Daten, um Felder eines adaptiven Formulars vorab auszufüllen. Benutzer können grundlegende Informationen in einem Formular vorab ausfüllen, indem sie sich mit ihren sozialen Profilen anmelden.
+title: Vorausfüllen von Feldern in adaptiven Formularen?
+description: Verwenden Sie vorhandene Daten, um Felder eines adaptiven Formulars vorab auszufüllen. Benutzende können grundlegende Informationen in einem Formular vorab ausfüllen, indem sie sich mit ihren Social-Media-Profilen anmelden.
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 ## Einführung {#introduction}
@@ -262,7 +262,7 @@ Im Allgemeinen werden gebundene (Formularschema) und ungebundene Felder im selbe
 
 >[!NOTE]
 >
-> Mischen Sie grundsätzlich keine gebundenen und ungebundenen Felder, wenn sie sich in vom Benutzer in ungebundenen Feldern ausgefüllten Daten überschneiden. Wenn möglich, sollten Sie das XML-Schema oder die XFA-Formularvorlage ändern und einen Eintrag für ungebundene Felder hinzufügen, sodass diese auch gebunden werden und ihre Daten wie andere Felder in den übermittelten Daten verfügbar sind.
+> Generell sollten Sie keine gebundenen und ungebundenen Felder mischen, wenn sich diese in Daten überschneiden, die von Benutzenden in ungebundenen Feldern eingegeben werden. Wenn möglich, sollten Sie das XML-Schema oder die XFA-Formularvorlage ändern und einen Eintrag für ungebundene Felder hinzufügen, sodass diese auch gebunden werden und ihre Daten wie andere Felder in den übermittelten Daten verfügbar sind.
 
 ## Unterstützte Protokolle zum Vorbefüllen von Benutzerdaten {#supported-protocols-for-prefilling-user-data}
 

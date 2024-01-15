@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1190'
-ht-degree: 80%
+ht-degree: 97%
 
 ---
 
@@ -129,11 +129,11 @@ Alle Cloud-Dienste werden in einem fortlaufenden Prozess bereitgestellt, um zu g
 
 ## Erneutes Ausführen einer Produktionsbereitstellung {#reexecute-deployment}
 
-In seltenen Fällen kann es vorkommen, dass Schritte der Produktionsbereitstellung aus vorübergehenden Gründen fehlschlagen. In solchen Fällen wird die erneute Ausführung des Produktionsbereitstellungsschritts unterstützt, solange der Produktionsbereitstellungsschritt abgeschlossen ist, unabhängig vom Fertigstellungstyp (z. B. abgebrochen oder nicht erfolgreich). Bei der erneuten Ausführung wird eine neue Ausführung mit derselben Pipeline erstellt, die aus drei Schritten besteht.
+In seltenen Fällen kann es vorkommen, dass Schritte der Produktionsbereitstellung aus vorübergehenden Gründen fehlschlagen. In solchen Fällen wird die erneute Ausführung des Schritts der Produktionsbereitstellung unterstützt, solange der Schritt der Produktionsbereitstellung abgeschlossen ist, unabhängig von der Art des Abschlusses (wie zum Beispiel erfolgreich, abgebrochen oder fehlgeschlagen). Bei der erneuten Ausführung wird eine neue Ausführung mit derselben Pipeline erstellt, die aus drei Schritten besteht.
 
-1. Der Validierungsschritt - Dies ist im Wesentlichen dieselbe Validierung, die während einer normalen Pipeline-Ausführung erfolgt.
-1. Der Build-Schritt - Im Kontext einer erneuten Ausführung kopiert der Build-Schritt Artefakte und führt keinen neuen Build-Prozess aus.
-1. Der Schritt zur Produktionsbereitstellung : Hierbei werden dieselben Konfigurationen und Optionen wie beim Schritt zur Produktionsbereitstellung bei einer normalen Pipeline-Ausführung verwendet.
+1. Der Validierungsschritt – Dies ist im Wesentlichen dieselbe Validierung wie bei einer normalen Pipeline-Ausführung.
+1. Der Build-Schritt – Im Rahmen einer erneuten Ausführung kopiert der Build-Schritt Artefakte und führt keinen wirklich neuen Build-Prozess aus.
+1. Der Produktionsbereitstellungsschritt – Dieser Schritt verwendet dieselbe Konfiguration und dieselben Optionen wie der Produktionsbereitstellungsschritt bei einer normalen Pipeline-Ausführung.
 
 In solchen Fällen, in denen eine erneute Ausführung möglich ist, bietet die Statusseite der Produktions-Pipeline neben der üblichen Option **Build-Protokoll herunterladen** auch die Option **Erneut ausführen**.
 
@@ -145,8 +145,8 @@ In solchen Fällen, in denen eine erneute Ausführung möglich ist, bietet die S
 
 ### Einschränkungen {#limitations}
 
-* Die erneute Ausführung des Produktionsbereitstellungsschritts ist nur für die letzte Ausführung verfügbar.
-* Die Neuausführung ist nicht für Push-Update-Ausführungen verfügbar.
+* Die erneute Ausführung des Schritts der Produktionsbereitstellung ist nur bei der letzten Ausführung verfügbar.
+* Eine erneute Ausführung ist für Push-Update-Ausführungen nicht verfügbar.
    * Wenn die letzte Ausführung eine Push-Update-Ausführung war, ist eine erneute Ausführung nicht möglich.
 * Wenn die letzte Ausführung zu irgendeinem Zeitpunkt vor dem Schritt der Produktionsbereitstellung fehlgeschlagen ist, ist eine erneute Ausführung nicht möglich.
 
@@ -156,12 +156,12 @@ Zusätzlich zur Verfügbarkeit in der Benutzeroberfläche können Sie [Cloud Man
 
 #### Auslösen einer erneuten Ausführung {#reexecute-deployment-api}
 
-Um eine Neuausführung Trigger, stellen Sie eine PUT-Anfrage an den HAL-Link `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` im Status der Produktionsbereitstellungs-Schritte.
+Um eine erneute Ausführung auszulösen, muss eine PUT-Anfrage an den HAL-Link `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` im Status des Produktionsbereitstellungsschritts erfolgen.
 
 * Wenn diese Verknüpfung vorhanden ist, kann die Ausführung von diesem Schritt aus neu gestartet werden.
 * Wenn dies nicht der Fall ist, kann die Ausführung von diesem Schritt an nicht erneut gestartet werden.
 
-Dieser Link ist nur für den Schritt zur Produktionsbereitstellung verfügbar.
+Diese Verknüpfung ist immer nur für den Schritt der Produktionsbereitstellung verfügbar.
 
 ```JavaScript
  {
@@ -200,8 +200,8 @@ Dieser Link ist nur für den Schritt zur Produktionsbereitstellung verfügbar.
 
 Die Syntax des href-Werts des HAL-Links ist nur ein Beispiel. Der tatsächliche Wert sollte immer aus dem HAL-Link gelesen und nicht generiert werden.
 
-Die Übermittlung einer PUT-Anfrage an diesen Endpunkt führt bei Erfolg zu einer 201-Antwort und der Antworttext stellt die Darstellung der neuen Ausführung dar. Dies ähnelt dem Starten einer regulären Ausführung über die API.
+Das Senden einer PUT-Anfrage an diesen Endpunkt führt zu einer 201-Antwort bei Erfolg, wobei der Antworttext die Darstellung der neuen Ausführung ist. Dies ähnelt dem Starten einer regulären Ausführung über die API.
 
-#### Identifizieren einer erneut ausgeführten Ausführung {#identify-reexecution}
+#### Identifizieren einer Ausführung mit erneuter Ausführung {#identify-reexecution}
 
 Erneute Ausführungen können durch den Wert `RE_EXECUTE` im Feld `trigger` identifiziert werden.

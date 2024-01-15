@@ -5,7 +5,7 @@ exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 83%
+ht-degree: 93%
 
 ---
 
@@ -22,7 +22,7 @@ Die Suchfunktion ist über die obere Symbolleiste verfügbar:
 Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
 * Suchen Sie nach einem bestimmten Keyword, Pfad oder Tag
-* Filtern nach ressourcenspezifischen Kriterien, wie Änderungsdatum, Seitenstatus, Dateigröße usw.
+* Filtern Sie nach ressourcenspezifischen Kriterien, wie Änderungsdatumsangaben, Seitenstatus und Dateigröße.
 * Definieren und Verwenden einer [gespeicherten Suche](#saved-searches), die auf den oben genannten Kriterien basiert
 
 >[!NOTE]
@@ -41,7 +41,7 @@ So durchsuchen und filtern Sie Ressourcen:
 
    ![Suchposition](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. Bei Bedarf können Sie den Standortfilter entfernen (wählen Sie **X** auf dem Filter, den Sie entfernen möchten), um über alle Konsolen/Ressourcentypen zu suchen.
+1. Bei Bedarf können Sie den Positionsfilter entfernen (wählen Sie für den zu entfernenden Filter das **X** aus), um alle Konsolen-/Ressourcentypen zu durchsuchen.
 1. Die Ergebnisse werden gemäß der Konsole und dem zugehörigen Ressourcentyp gruppiert angezeigt.
 
    Sie können entweder eine bestimmte Ressource auswählen (für weitere Aktionen) oder einen Drilldown durchführen, indem Sie den erforderlichen Ressourcentyp auswählen, z. B. **Alle Sites anzeigen**:

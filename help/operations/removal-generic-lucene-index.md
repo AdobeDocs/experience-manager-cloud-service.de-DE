@@ -5,7 +5,7 @@ exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1345'
-ht-degree: 85%
+ht-degree: 97%
 
 ---
 
@@ -38,11 +38,11 @@ Beispielsweise sollten Referenz-Lookup-Abfragen, wie im folgenden Beispiel, nun 
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-Um größere Kundendatenvolumen zu unterstützen, erstellt Adobe für neue AEM as a Cloud Service-Umgebungen den generischen Lucene-Index nicht mehr. Außerdem entfernt Adobe den Index aus vorhandenen Repositorys. Weitere Einzelheiten finden Sie [in der Timeline](#timeline) am Ende dieses Dokuments.
+Um größere Kundendatenvolumen zu unterstützen, erstellt Adobe für neue AEM as a Cloud Service-Umgebungen den generischen Lucene-Index nicht mehr. Darüber hinaus entfernt Adobe den Index aus vorhandenen Repositorys. Weitere Einzelheiten finden Sie [in der Timeline](#timeline) am Ende dieses Dokuments.
 
 Adobe hat die Indexkosten bereits über die `costPerEntry`- und `costPerExecution`-Eigenschaften angepasst, um sicherzustellen, dass andere Indizes wie `/oak:index/pathreference` nach Möglichkeit bevorzugt werden.
 
-Kundenanwendungen, die Abfragen verwenden, die noch von diesem Index abhängig sind, sollten unverzüglich aktualisiert werden, um andere vorhandene Indizes zu verwenden, die bei Bedarf angepasst werden können. Alternativ können der Kundenanwendung neue benutzerdefinierte Indizes hinzugefügt werden. Eine vollständige Anleitung zur Indexverwaltung in AEM as a Cloud Service finden Sie in der [Dokumentation zur Indizierung](/help/operations/indexing.md).
+Kundenanwendungen, die Abfragen verwenden, die noch von diesem Index abhängig sind, sollten unverzüglich so aktualisiert werden, dass sie andere vorhandene Indizes nutzen, die ggf. angepasst werden können. Alternativ können der Kundenanwendung neue benutzerdefinierte Indizes hinzugefügt werden. Eine vollständige Anleitung zur Indexverwaltung in AEM as a Cloud Service finden Sie in der [Dokumentation zur Indizierung](/help/operations/indexing.md).
 
 ## Sind Sie betroffen? {#are-you-affected}
 
@@ -74,7 +74,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 ## Potenzielle Abhängigkeiten von generischen Lucene-Indizes {#potential-dependencies}
 
-Es gibt mehrere Bereiche, in denen Ihre Anwendungen und AEM Installationen von generischen Lucene-Indizes sowohl auf Autoren- als auch auf Veröffentlichungsinstanzen abhängig sein können.
+Es gibt verschiedene Bereiche, in denen Ihre Anwendungen und AEM-Installationen sowohl für Autoren- als auch Veröffentlichungsinstanzen von generischen Lucene-Indizes abhängig sein können.
 
 ### Veröffentlichungsinstanz {#publish-instance}
 
@@ -121,7 +121,7 @@ Deshalb greift die Abfrage auf den allgemeinen Volltextindex zurück, in dem all
 
 ### Autoreninstanz {#author-instance}
 
-Zusätzlich zu Abfragen in Kundenanwendungs-Servlets, OSGi-Komponenten und Rendering-Skripten kann es mehrere author-spezifische Verwendungen des generischen Lucene-Index geben.
+Zusätzlich zu Abfragen in Kundenanwendungs-Servlets, OSGi-Komponenten und Render-Skripten gibt es verschiedene autorenspezifische Verwendungsmöglichkeiten für den generischen Lucene-Index.
 
 #### Referenzsuche {#reference-search}
 
@@ -129,7 +129,7 @@ Bisher wurde der generische Lucene-Index verwendet, um die Referenzsuche oder di
 
 #### Suche für Pfadfeldwähler {#picker-search}
 
-AEM enthält eine benutzerdefinierte Dialogfeldkomponente mit dem Sling-Ressourcentyp `granite/ui/components/coral/foundation/form/pathfield`, die einen Browser/einen Auswahlassistenten zum Auswählen eines anderen AEM-Pfads bietet. Die Standardauswahl für Pfadfelder, die verwendet wird, wenn kein benutzerdefinierter `pickerSrc` -Eigenschaft in der Inhaltsstruktur definiert ist, rendert eine Suchleiste im Popup-Dialogfeld.
+AEM enthält eine benutzerdefinierte Dialogfeldkomponente mit dem Sling-Ressourcentyp `granite/ui/components/coral/foundation/form/pathfield`, die einen Browser/einen Auswahlassistenten zum Auswählen eines anderen AEM-Pfads bietet. Der standardmäßige Pfadfeldwähler, der verwendet wird, wenn keine benutzerdefinierte `pickerSrc`-Eigenschaft in der Inhaltsstruktur definiert ist, rendert eine Suchleiste im Popup-Dialogfeld.
 
 Die Knotentypen, nach denen gesucht werden soll, können mit der Eigenschaft `nodeTypes` angegeben werden.
 
@@ -168,6 +168,6 @@ Adobe wird den generischen Lucene-Index in zwei Phasen entfernen.
 
 Adobe überwacht die oben genannten Protokollmeldungen und versucht, Kunden zu kontaktieren, die weiterhin vom generischen Lucene-Index abhängig sind.
 
-Als kurzfristige Abmilderung fügt Adobe benutzerdefinierte Indexdefinitionen direkt zu Kundensystemen hinzu, um Funktions- oder Leistungsprobleme zu vermeiden, die durch das Entfernen des generischen Lucene-Index bei Bedarf auftreten.
+Als kurzfristige Lösung fügt Adobe bei Bedarf benutzerdefinierte Indexdefinitionen direkt zu Kundensystemen hinzu, um Funktions- oder Leistungsprobleme aufgrund der Entfernung des generischen Lucene-Index zu vermeiden.
 
-In solchen Fällen wird dem Kunden die aktualisierte Indexdefinition bereitgestellt und empfohlen, sie in zukünftige Versionen seiner Anwendung über Cloud Manager aufzunehmen.
+In solchen Fällen wird Kundinnen und Kunden die aktualisierte Indexdefinition bereitgestellt und empfohlen, diese über Cloud Manager in zukünftige Versionen ihrer Anwendung aufzunehmen.

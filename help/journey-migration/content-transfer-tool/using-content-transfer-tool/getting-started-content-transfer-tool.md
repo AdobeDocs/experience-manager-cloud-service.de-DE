@@ -5,7 +5,7 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: 0161477e5248267224fe6d637a192f409161f6d3
 workflow-type: tm+mt
 source-wordcount: '1362'
-ht-degree: 76%
+ht-degree: 84%
 
 ---
 
@@ -34,7 +34,7 @@ Nur Version 2.0.0 und höher wird unterstützt, und es wird empfohlen, die neues
 >
 >Ein Verbindungsfehler kann auch auftreten, wenn ein Migrationssatz aus Cloud Acceleration Manager gelöscht wurde.
 
-Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo sie nur bestimmte Hosts erreichen kann, die zu einer Zulassungsliste hinzugefügt wurden. Um eine Extraktion erfolgreich ausführen zu können, müssen die folgenden Endpunkte von der AEM ausgeführten Instanz aus zugänglich sein:
+Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo sie nur bestimmte Hosts erreichen kann, die zu einer Zulassungsliste hinzugefügt wurden. Damit eine Extraktion erfolgreich durchgeführt werden kann, muss von der Instanz, auf der AEM ausgeführt wird, auf die folgenden Endpunkte zugegriffen werden können:
 
 * Der Azure Blob Storage-Service: `casstorageprod.blob.core.windows.net`
 
@@ -76,7 +76,7 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" must be added here -->
 
-1. Melden Sie sich bei Cloud Acceleration Manager (CAM) an und klicken Sie auf das zuvor erstellte CAM-Projekt, um Ihre Bereitschaft zur Umstellung auf AEM as a Cloud Service zu beurteilen. Wenn Sie kein CAM-Projekt erstellt haben, lesen Sie den Abschnitt über das Erstellen und Verwalten eines Projekts in CAM.
+1. Melden Sie sich bei Cloud Acceleration Manager (CAM) an und klicken Sie auf das zuvor erstellte CAM-Projekt, um zu beurteilen, ob Sie für den Wechsel zu AEM as a Cloud Service bereit sind. Wenn Sie kein CAM-Projekt erstellt haben, lesen Sie den Abschnitt über das Erstellen und Verwalten eines Projekts in CAM.
 
 1. Klicken Sie auf **Content Transfer** -Karte, um die Ansicht &quot;Migrationssatzliste&quot;zu öffnen.
 
@@ -98,7 +98,7 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
    >
    >Der Name muss denselben Konventionen wie bei einem AEM-Knoten entsprechen, d. h., er darf keines der folgenden Zeichen enthalten: . / : [ ] | *
 
-1. Ihre Migrationsliste sollte jetzt in der Listenansicht angezeigt werden. Wählen Sie das Drei-Punkte-Symbol (**...**), um die Dropdown-Liste zu öffnen und **Extraktionsschlüssel kopieren**. Sie benötigen diesen Schlüssel während der Extraktionsphase. Kopieren Sie diesen Extraktionsschlüssel.
+1. Ihre Migrationsliste sollte jetzt in der Listenansicht angezeigt werden. Klicken Sie auf Drei-Punkte-Symbol (**…**), um die Dropdown-Liste zu öffnen, und wählen Sie **Extraktionsschlüssel kopieren** aus. Sie benötigen diesen Schlüssel während der Extraktionsphase. Kopieren Sie diesen Extraktionsschlüssel.
 
    >[!NOTE]
    >
@@ -179,15 +179,15 @@ Gehen Sie wie folgt vor, um eine Größenüberprüfung durchzuführen:
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
-1. Dadurch öffnet sich die **Größe überprüfen** angezeigt.
+1. Dadurch wird das Dialogfeld **Größe überprüfen** angezeigt.
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Klicks **Größe überprüfen** , um den Prozess zu starten. Sie kehren dann zur Listenansicht des Migrationssatzes zurück und sollten eine Meldung sehen, die besagt, dass eine **Größenprüfung** ausgeführt wird.
+1. Klicken Sie auf **Größe überprüfen**, um den Prozess zu starten. Sie kehren dann zur Listenansicht des Migrationssatzes zurück und sollten eine Meldung sehen, die besagt, dass eine **Größenprüfung** ausgeführt wird.
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. Sobald der Prozess **Größe überprüfen** abgeschlossen ist, ändert sich der Status in **BEENDET**. Wählen Sie denselben Migrationssatz aus und klicken Sie auf **Größe überprüfen** , um Ergebnisse anzuzeigen. Nachfolgend finden Sie ein Beispiel für Ergebnisse des Prozesses **Größe überprüfen** ohne Warnungen.
+1. Sobald der Prozess **Größe überprüfen** abgeschlossen ist, ändert sich der Status in **BEENDET**. Wählen Sie denselben Migrationssatz aus und klicken Sie auf **Größe überprüfen**, um die Ergebnisse anzuzeigen. Nachfolgend finden Sie ein Beispiel für Ergebnisse des Prozesses **Größe überprüfen** ohne Warnungen.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 

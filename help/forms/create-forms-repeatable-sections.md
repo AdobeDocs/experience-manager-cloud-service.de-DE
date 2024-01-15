@@ -7,7 +7,7 @@ exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1256'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -140,7 +140,7 @@ Das übergeordnete Element des Panels sollte Schaltflächen zum Hinzufügen und 
 
 >[!NOTE]
 >
-> Wenn alle Instanzen eines Bedienfelds aus einem adaptiven Formular entfernt werden, verwenden Sie zum Hinzufügen einer Instanz des entfernten Bedienfelds die Syntax _panelName , um den Instanzmanager des Bedienfelds zu erfassen, und verwenden Sie die API addInstance des Instanzmanagers, um die gelöschte Instanz hinzuzufügen. Beispiel: _panelName.addInstance(). Dies fügt eine Instanz der entfernten Bereichs hinzu.
+> Wenn alle Instanzen eines Bereichs aus einem adaptiven Formular entfernt wurden, können Sie eine Instanz des entfernten Bereichs mithilfe der Syntax _panelName erfassen, um den Instanz-Manager des Bereichs zu erfassen, und die gelöschte Instanz mit der addInstance-API des Instanz-Managers hinzufügen. Beispiel: _panelName.addInstance(). Dies fügt eine Instanz der entfernten Bereichs hinzu.
 
 <!--
 ![panel-repeatability-video](/help/adaptive-forms/assets/panel-repeatability-video.mp4)

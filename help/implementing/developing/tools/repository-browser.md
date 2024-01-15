@@ -6,8 +6,8 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 source-git-commit: a7fa9ecc54bdee394852d765011df2ddd0a4950c
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 87%
+source-wordcount: '854'
+ht-degree: 88%
 
 ---
 
@@ -52,7 +52,7 @@ Gehen Sie wie folgt vor, um den Repository-Browser zu starten:
    ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
 1. Klicken Sie anschließend auf die Registerkarte **Repository-Browser**.
-1. Wählen Sie einen der Autoren-, Veröffentlichungs- oder Vorschau entsprechenden Pod aus, indem Sie auf die **Pod** Dropdown-Liste.
+1. Wählen Sie einen Pod aus, der Author, Publish oder einer Vorschau entspricht, indem Sie auf die Dropdown-Liste **Pod** klicken.
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 

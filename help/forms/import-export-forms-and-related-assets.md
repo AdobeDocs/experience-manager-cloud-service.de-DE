@@ -1,10 +1,10 @@
 ---
-title: Importieren und Exportieren von Assets in [!DNL AEM Forms]?
-description: Erfahren Sie, wie Sie mit DocuSign mit einem adaptiven Formular E-Signaturen erfassen können.
+title: Wie importiert und exportiert man Assets in  [!DNL AEM Forms]?
+description: Erfahren Sie, wie Sie DocuSign mit einem adaptiven Formular verwenden können, um E-Signaturen einzuholen.
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1313'
-ht-degree: 63%
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ Für die Assets, für die das Hochladen und Importieren über die [!DNL AEM Form
 
 ## Download und Upload von Assets für Formulare und Dokumente {#download-or-upload-forms-amp-documents-assets}
 
-[!DNL AEM Forms] Mit der -Benutzeroberfläche können Sie Assets aus einer AEM exportieren, indem Sie sie als AEM CRX-Paket oder Binärdateien herunterladen. Sie können dann das heruntergeladene AEM CRX-Paket oder die Binärdatei in eine andere AEM-Instanz importieren.
+Mithilfe der [!DNL AEM Forms]-Benutzeroberfläche können Sie Assets aus einer AEM-Instanz exportieren, indem Sie sie als CRX-Paket oder Binärdateien herunterladen. Sie können dann das heruntergeladene AEM CRX-Paket oder die Binärdatei in eine andere AEM-Instanz importieren.
 
 Der Export und Import über die Benutzeroberfläche von [!DNL AEM Forms] wird für alle Assets mit Ausnahme von adaptiven Formularvorlagen und adaptiven Formularinhaltsrichtlinien unterstützt. Deshalb werden beim Exportieren eines adaptiven Formulars von der [!DNL AEM Forms]-Benutzeroberfläche die verknüpfte adaptive Formularvorlage und die Inhaltsrichtlinien nicht wie andere verknüpfte Assets automatisch exportiert.
 
@@ -32,13 +32,13 @@ Download von Assets für Formulare und Dokumente
 1. Wählen Sie die Formular-Assets aus und wählen Sie die **[!UICONTROL Herunterladen]** Symbol.
 1. Wählen Sie unter Asset(s) herunterladen eine der folgenden Optionen aus und wählen Sie **[!UICONTROL Herunterladen]**.
 
-   * **Als CRX-Paket herunterladen:** Verwenden Sie die Option zum Herunterladen und Verschieben aller ausgewählten Assets und der zugehörigen Abhängigkeiten von einer [!DNL AEM Forms]-Instanz in eine andere. Dadurch werden alle Assets und Ordner als CRX-Paket heruntergeladen. Alle Formular-Assets, einschließlich der in AEM (Adaptive Forms und adaptive Formularfragmente) erstellten Formulare, PDF-Dokumente und Ressourcen (XSDs, XFS, Bilder) können als Paket heruntergeladen werden von [!DNL AEM Forms] Benutzeroberfläche.
+   * **Als CRX-Paket herunterladen:** Verwenden Sie die Option zum Herunterladen und Verschieben aller ausgewählten Assets und der zugehörigen Abhängigkeiten von einer [!DNL AEM Forms]-Instanz in eine andere. Dadurch werden alle Assets und Ordner als CRX-Paket heruntergeladen. Alle Formular-Assets, einschließlich in AEM erstellter Formulare (adaptive Formulare und adaptive Formularfragmente), PDF-Dokumente und Ressourcen (XSDs, XFS, Bilder), können über die [!DNL AEM Forms]-Benutzeroberfläche als Paket heruntergeladen werden.
 Der Vorteil des Herunterladens von Assets als Paket besteht darin, dass dabei auch Assets enthalten sind, die von den ausgewählten Assets verwendet wurden. Beispiel: Sie haben ein adaptives Formular, das eine Formularvorlage, XSD und ein Bild verwendet. Wenn Sie dieses adaptive Formular auswählen und es als Paket herunterladen, enthält das heruntergeladene Paket ebenfalls die Formularvorlage, XSD und das Bild. Alle mit dem Asset verknüpften Metadateneigenschaften (einschließlich benutzerdefinierter Eigenschaften) werden ebenfalls heruntergeladen.
 
-   * **Herunterladen von Assets als Binärdateien:** Verwenden Sie die Option, um nur Formularvorlagen (XDP), PDF forms (PDF), Dokumente (PDF) und Ressourcen (Bilder, Schemata, Stylesheets) herunterzuladen. Sie können diese Assets mit externen Anwendungen bearbeiten. Es werden die Forms-Assets, die Binärdaten enthalten, wie XSDs, XDPs, Bilder, PDFs, und XDPs, als .zip-Datei heruntergeladen.
-Sie können Adaptive Forms, adaptive Formularfragmente und Designs nicht herunterladen mit **[!UICONTROL Herunterladen von Assets als Binärdateien]** -Option. Um diese Assets herunterzuladen, sollten Sie **[!UICONTROL Als CRX-Paket herunterladen]** -Option.
+   * **Assets als Binärdateien herunterladen:** Verwenden Sie diese Option nur zum Herunterladen von Formularvorlagen (XDP), PDF-Formularen (PDF), Dokumenten (PDF) und Ressourcen (Bilder, Schemata, Stylesheets). Sie können diese Assets mit externen Anwendungen bearbeiten. Es werden die Forms-Assets, die Binärdaten enthalten, wie XSDs, XDPs, Bilder, PDFs, und XDPs, als .zip-Datei heruntergeladen.
+Sie können Adaptive Forms, adaptive Formularfragmente und Designs nicht herunterladen mit **[!UICONTROL Herunterladen von Assets als Binärdateien]** -Option. Um diese Assets herunterzuladen, sollten Sie die Option **[!UICONTROL Als CRX-Paket herunterladen]** nutzen.
 
-   Die ausgewählten Assets werden als Archiv heruntergeladen (.zip-Datei).
+   Die ausgewählten Assets werden als Archiv (.zip-Datei) heruntergeladen.
 
    >[!NOTE]
    >
@@ -63,7 +63,7 @@ Upload von Assets für Formulare und Dokumente
 
 ## Download oder Upload eines Designs {#downloading-or-uploading-a-theme}
 
-Mit [!DNL AEM Forms] können Sie Designs erstellen, herunterladen und hochladen. Ein Design wird wie andere Assets wie Formulare, Dokumente und Briefe erstellt. Sie können ein Design erstellen, es herunterladen und auf eine andere Instanz hochladen, um es wiederzuverwenden. Weitere Informationen zu Designs finden Sie unter [Designs](themes.md) in [!DNL AEM Forms].
+Mit [!DNL AEM Forms] können Sie Designs erstellen, herunterladen und hochladen. Ein Design wird wie andere Assets (wie etwa Formulare, Dokumente und Briefe) erstellt. Sie können ein Design erstellen, herunterladen und auf eine andere Instanz hochladen, um es wiederzuverwenden. Weitere Informationen zu Designs finden Sie unter [Designs](themes.md) in [!DNL AEM Forms].
 
 ### Download eines Designs {#downloading-a-theme}
 
@@ -165,7 +165,7 @@ Sie können den AEM-Paket-Manager verwenden, um Workflow-Programme zu exportiere
 1. Öffnen Sie den [!DNL AEM Forms]-Paket-Manager.
 1. Klicken Sie auf **[!UICONTROL Paket erstellen]**. Das Dialogfeld **[!UICONTROL Neues Paket]** wird angezeigt.
 1. Geben Sie den Namen, die Version und die Gruppe für das Paket an. Klicken Sie auf **[!UICONTROL OK]**.
-1. Klicken Sie auf **[!UICONTROL Bearbeiten]** und öffnen Sie die Registerkarte **[!UICONTROL Filter]**. Klicks **[!UICONTROL Filter hinzufügen]**. Geben Sie den Pfad der Workflow-Anwendung an. Beispiel: /etc/fd/dashboard/startpoints/homemortgage. Klicken Sie auf **[!UICONTROL Regel hinzufügen]**.
+1. Klicken Sie auf **[!UICONTROL Bearbeiten]** und öffnen Sie die Registerkarte **[!UICONTROL Filter]**. Klicken Sie auf **[!UICONTROL Filter hinzufügen]**. Geben Sie den Pfad der Workflow-Anwendung an. Beispiel: /etc/fd/dashboard/startpoints/homemortgage. Klicken Sie auf **[!UICONTROL Regel hinzufügen]**.
 
 1. Öffnen Sie die Registerkarte **[!UICONTROL Erweitert]**. Wählen Sie **[!UICONTROL Zusammenführen]** oder **[!UICONTROL Überschreiben]** im Feld „ACL-Bearbeitung“. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**, um das Paket zu erstellen.
@@ -178,7 +178,7 @@ Sie können den AEM-Paket-Manager verwenden, um Workflow-Programme zu exportiere
 
 ## Ordner und Organisieren von Assets {#folders-and-organizing-assets}
 
-Die Benutzeroberfläche von [!DNL AEM Forms] verwendet Ordner zum Anordnen von Assets. Diese Ordner werden für Elemente verwendet, die in der Benutzeroberfläche von [!DNL AEM Forms] erstellt werden. Sie können Assets und Dokumente in diesen Ordnern umbenennen, Unterordner erstellen und speichern. Durch die Organisation von Dokumenten und Assets in einem Ordner können Sie die Dateien zur einfachen Verwaltung gruppieren. Sie können einen Ordner auswählen und ihn herunterladen oder löschen.
+Die Benutzeroberfläche von [!DNL AEM Forms] verwendet Ordner zum Anordnen von Assets. Diese Ordner werden für Elemente verwendet, die in der Benutzeroberfläche von [!DNL AEM Forms] erstellt werden. Sie können Assets und Dokumente in diesen Ordnern speichern sowie Unterordner erstellen und umbenennen. Wenn Sie Dokumente und Assets in einem Ordner organisieren, können Sie die Dateien gruppieren und somit die Verwaltung vereinfachen. Sie können einen Ordner auswählen und ihn herunterladen oder löschen.
 
 Um einen Ordner zu erstellen, führen Sie die folgenden Schritte aus:
 
@@ -194,13 +194,13 @@ Um einen Ordner zu erstellen, führen Sie die folgenden Schritte aus:
 
    >[!NOTE]
    >
-   >Standardmäßig wird der Wert des Namensfelds automatisch mit dem Titel ausgefüllt. Der Name darf nur alphanumerische Zeichen oder die Sonderzeichen Bindestrich (-) und Unterstrich (_) enthalten. Alle anderen Sonderzeichen, die im Titel eingegeben werden, werden automatisch durch einen Bindestrich ersetzt und Sie werden aufgefordert, den neuen Namen zu bestätigen. Sie können mit dem vorgeschlagenen Namen fortfahren oder ihn weiter bearbeiten.
+   >Standardmäßig wird der Wert des Namensfelds automatisch mit dem Titel ausgefüllt. Der Name darf nur alphanumerische Zeichen oder die Sonderzeichen Bindestrich (-) und Unterstrich (_) enthalten. Alle anderen Sonderzeichen, die im Titel eingegeben werden, werden automatisch durch einen Bindestrich ersetzt und Sie werden aufgefordert, den neuen Namen zu bestätigen. Sie können den vorgeschlagenen Namen verwenden oder ihn weiter bearbeiten.
 
 1. Ein neuer Ordner mit dem definierten Titel wird an der aktuellen Position in der Asset-Liste angezeigt.
 
    Wenn ein Ordner mit dem angegebenen Namen vorhanden ist, schlägt das Senden mit einem Fehler fehl. Sie können die Fehlermeldung anzeigen, indem Sie die Maus über das Fehlersymbol ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) bewegen, das neben dem Namensfeld angezeigt wird.
 
-   Sie können den erstellten Ordner auswählen, um in den Ordner zu wechseln und Assets oder Ordner im Ordner zu erstellen. Außerdem können Sie einen Ordner auswählen und ihn zum Herunterladen in die Warteschlange stellen, löschen oder seinen Namen bearbeiten.
+   Sie können den erstellten Ordner auswählen, um in den Ordner zu wechseln und Assets oder Ordner im Ordner zu erstellen. Außerdem können Sie einen Ordner auswählen und ihn zum Herunterladen in die Warteschlange stellen, ihn löschen oder seinen Namen bearbeiten.
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
 

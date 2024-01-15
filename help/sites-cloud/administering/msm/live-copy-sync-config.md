@@ -7,7 +7,7 @@ exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2414'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Experience Manager bietet standardmäßig mehrere Synchronisierungskonfigu
 
 ## Installierte und benutzerdefinierte Rollout-Konfigurationen {#installed-and-custom-rollout-configurations}
 
-In diesem Abschnitt finden Sie Informationen zu den installierten Rollout-Konfigurationen und den von ihnen verwendeten Synchronisierungsaktionen sowie dazu, wie Sie bei Bedarf benutzerdefinierte Konfigurationen erstellen.
+In diesem Abschnitt finden Sie Informationen zu den installierten Rollout-Konfigurationen und den von ihnen verwendeten Synchronisierungsaktionen. Außerdem erfahren Sie, wie Sie ggf. benutzerdefinierte Konfigurationen erstellen.
 
 >[!CAUTION]
 >
@@ -45,7 +45,7 @@ Jede Rollout-Konfiguration nutzt einen Rollout-Trigger, der den Rollout auslöst
 
 In der folgenden Tabelle sind die Rollout-Konfigurationen aufgeführt, die standardmäßig mit AEM bereitgestellt werden. Auslöser und Synchronisierungsaktionen jeder Rollout-Konfigurationen werden ebenfalls angegeben.
 
-Wenn die installierten Rollout-Konfigurationsaktionen Ihre Anforderungen nicht erfüllen, können Sie [eine Rollout-Konfiguration erstellen.](#creating-a-rollout-configuration)
+Wenn die Aktionen der installierten Rollout-Konfigurationen Ihre Anforderungen nicht erfüllen, können Sie [eine Rollout-Konfiguration erstellen](#creating-a-rollout-configuration).
 
 | Name | Beschreibung | Auslöser | [Synchronisierungsaktionen](#synchronization-actions) |
 |---|---|---|---|
@@ -60,7 +60,7 @@ Wenn die installierten Rollout-Konfigurationsaktionen Ihre Anforderungen nicht e
 
 In der folgenden Tabelle sind Synchronisierungsaktionen aufgeführt, die standardmäßig mit AEM bereitgestellt werden.
 
-Wenn die installierten Aktionen Ihre Anforderungen nicht erfüllen, können Sie [Erstellen Sie eine neue Synchronisierungsaktion.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
+Wenn die installierten Aktionen Ihre Anforderungen nicht erfüllen, können Sie [eine neue Synchronisierungsaktion erstellen.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
 
 | Aktionsname | Beschreibung | Eigenschaften |
 |---|---|---|
@@ -68,7 +68,7 @@ Wenn die installierten Aktionen Ihre Anforderungen nicht erfüllen, können Sie 
 | `contentDelete` | Diese Aktion löscht Knoten der Live Copy, die in der Quelle nicht vorhanden sind. [Konfigurieren Sie den Service **CQ MSM Content Delete Action**](#excluding-properties-and-node-types-from-synchronization), um die Knotentypen, Absatzelemente und Seiteneigenschaften zu definieren, die ausgeschlossen werden sollen. |  |
 | `contentUpdate` | Diese Aktion aktualisiert den Live Copy-Inhalt mit den Änderungen in der Quelle. [Konfigurieren Sie den Service **CQ MSM Content Update Action**](#excluding-properties-and-node-types-from-synchronization), um die Knotentypen, Absatzelemente und Seiteneigenschaften zu definieren, die ausgeschlossen werden sollen. |  |
 | `editProperties` | Diese Aktion bearbeitet die Eigenschaften der Live Copy. Die `editMap`-Eigenschaft bestimmt, welche Eigenschaften bearbeitet werden, und legt ihren Wert fest. Der Wert der Eigenschaft `editMap` muss das folgende Format verwenden:<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` und `new_value` sind reguläre Ausdrücke und `n` ist eine inkrementierte Ganzzahl.<br>Betrachten Sie zum Beispiel den folgenden Wert für `editMap`:<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>Dieser Wert bearbeitet die Eigenschaften der Live Copy-Knoten wie folgt: <br>Die `sling:resourceType`-Eigenschaften, die entweder auf `contentpage` oder auf `homepage` festgelegt sind, werden auf `mobilecontentpage` gesetzt.<br>Die `cq:template`-Eigenschaften, die auf `contentpage` eingestellt sind, werden auf `mobilecontentpage` eingestellt. | `editMap: (String)` identifiziert die Eigenschaft, den aktuellen Wert und den neuen Wert. Weitere Informationen finden Sie in der Beschreibung. |
-| `notify` | Diese Aktion sendet ein Seitenereignis, dass das Rollout der Seite erfolgt ist. Um benachrichtigt zu werden, muss man sich zunächst für Rollout-Ereignisse anmelden. |  |
+| `notify` | Diese Aktion sendet ein Seitenereignis, dass das Rollout der Seite erfolgt ist. Um Benachrichtigungen zu erhalten, müssen Benutzende zunächst Rollout-Ereignisse abonnieren. |  |
 | `orderChildren` | Diese Aktion ordnet die untergeordneten Knoten basierend auf der Reihenfolge auf dem Blueprint an. |  |
 | `referencesUpdate` | Durch diese Synchronisierungsaktion werden die Verweise der Live Copy aktualisiert.<br>Sie sucht in den Live Copy-Seiten Pfade, die auf eine Ressource im Blueprint verweisen. Wenn sie solch einen Pfad gefunden hat, wird er so aktualisiert, dass er auf die zugehörige Ressource in der Live Copy verweist. Verweise, die Ziele außerhalb des Blueprints aufweisen, werden nicht geändert. <br>[Konfigurieren Sie den Service **CQ MSM References Update Action**](#excluding-properties-and-node-types-from-synchronization), um die Knotentypen, Absatzelemente und Seiteneigenschaften zu definieren, die ausgeschlossen werden sollen. |  |
 | `targetVersion` | Diese Aktion erstellt eine Version der Live Copy.<br>Diese Aktion muss die einzige Synchronisierungsaktion in einer Rollout-Konfiguration sein. |  |
@@ -84,12 +84,12 @@ Wenn die installierten Aktionen Ihre Anforderungen nicht erfüllen, können Sie 
 
 ### Erstellen einer Rollout-Konfiguration {#creating-a-rollout-configuration}
 
-Sie können [Erstellen einer Rollout-Konfiguration](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) wenn die installierten Rollout-Konfigurationen Ihre Anwendungsanforderungen nicht erfüllen, indem Sie die folgenden Schritte ausführen.
+Sie können [eine Rollout-Konfiguration erstellen](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration), wenn die installierten Rollout-Konfigurationen Ihre Anwendungsanforderungen nicht erfüllen, indem Sie die folgenden Schritte ausführen.
 
-1. [Erstellen der Rollout-Konfiguration -](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
+1. [Erstellen Sie die Rollout-Konfiguration-](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
 1. [Fügen Sie Synchronisierungsaktionen zur Rollout-Konfiguration hinzu.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
 
-Die neue Rollout-Konfiguration steht Ihnen dann zur Verfügung, wenn Sie Rollout-Konfigurationen auf einer Blueprint- oder Live Copy-Seite konfigurieren.
+Die neue Rollout-Konfiguration steht dann zur Verfügung, sobald Sie die Rollout-Konfigurationen auf einer Blueprint- oder einer Live Copy-Seite festlegen.
 
 ### Ausschließen von Eigenschaften und Knotentypen von der Synchronisierung {#excluding-properties-and-node-types-from-synchronization}
 
@@ -156,8 +156,8 @@ Die folgende Liste der Orte, unter denen Sie die zu verwendenden Rollout-Konfigu
 
 Beispielsweise nutzt ein Blueprint die Seite [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) als Quellinhalt. Aus der Blueprint wird eine Website erstellt. Jedes Element in der folgenden Liste beschreibt ein anderes Szenario in Bezug auf die Verwendung von Rollout-Konfigurationen:
 
-* Keine Blueprint-Seiten oder Live Copy-Seiten sind für eine Rollout-Konfiguration konfiguriert. MSM verwendet die standardmäßige Rollout-Konfiguration des Systems für alle Live Copy-Seiten.
-* Die Stammseite der WKND-Site ist für mehrere Rollout-Konfigurationen konfiguriert. MSM verwendet diese Rollout-Konfigurationen für alle Live Copy-Seiten.
+* Keine Blueprint-Seiten oder Live Copy-Seiten sind für eine Rollout-Konfiguration konfiguriert. MSM nutzt die standardmäßige Rollout-Konfiguration des Systems für alle Live Copy-Seiten.
+* Die Stammseite der WKND-Site ist für mehrere Rollout-Konfigurationen konfiguriert. MSM nutzt diese Rollout-Konfigurationen für alle Live Copy-Seiten.
 * Die Stammseite der WKND-Site ist für mehrere Rollout-Konfigurationen konfiguriert und die Stammseite der Live Copy-Website ist für einen anderen Satz an Rollout-Konfigurationen konfiguriert. MSM nutzt die Rollout-Konfigurationen, die auf der Stammseite der Live Copy-Website konfiguriert sind.
 
 ### Festlegen der Rollout-Konfigurationen für eine Live Copy-Seite {#setting-the-rollout-configurations-for-a-live-copy-page}
@@ -174,7 +174,7 @@ Sie können die Rollout-Konfigurationen für eine Live Copy-Seite auch konfiguri
 
    ![Live Copy-Vererbung von übergeordneter Seite](../assets/live-copy-inherit.png)
 
-1. Passen Sie bei Bedarf die **Live Copy-Vererbung** Markierung. Bei Auswahl dieser Option gilt die Life Copy-Konfiguration für alle untergeordneten Elemente.
+1. Passen Sie ggf. das Flag **Live Copy-Vererbung** an. Bei Auswahl dieser Option gilt die Life Copy-Konfiguration für alle untergeordneten Elemente.
 
 1. Deaktivieren Sie die Eigenschaft **Rollout-Konfiguration aus übergeordnetem Element übernehmen** und wählen Sie dann eine oder mehrere Rollout-Konfigurationen aus der Liste aus.
 
@@ -182,7 +182,7 @@ Sie können die Rollout-Konfigurationen für eine Live Copy-Seite auch konfiguri
 
    ![Überschreiben der Live Copy-Konfigurationsvererbung](../assets/live-copy-inherit-override.png)
 
-1. Klicken Sie auf **Speichern und schließen**.
+1. Wählen Sie **Speichern und schließen**.
 
 ### Festlegen der Rollout-Konfiguration für eine Blueprint-Seite {#setting-the-rollout-configuration-for-a-blueprint-page}
 

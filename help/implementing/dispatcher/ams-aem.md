@@ -6,7 +6,7 @@ exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1459'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -93,7 +93,8 @@ Führen Sie mit dem Unterbefehl `httpd` den Dispatcher-Validator in Ihrem Verzei
 $ validator httpd .
 ```
 
-Wenn Fehler wegen fehlender Include-Dateien auftreten, überprüfen Sie, ob diese Dateien korrekt umbenannt wurden.
+Wenn Fehler wegen fehlender include-Dateien auftreten, überprüfen Sie, ob Sie diese
+Dateien korrekt umbenannt haben.
 
 Wenn Sie Apache-Anweisungen sehen, die nicht in der Zulassungsliste enthalten sind, entfernen Sie sie.
 
@@ -232,7 +233,8 @@ Führen Sie mit dem `dispatcher`-Unterbefehl den AEM as a Cloud Service-Dispatch
 $ validator dispatcher .
 ```
 
-Wenn Fehler wegen fehlender Include-Dateien auftreten, überprüfen Sie, ob diese Dateien korrekt umbenannt wurden.
+Wenn Fehler wegen fehlender include-Dateien auftreten, überprüfen Sie, ob Sie diese
+Dateien korrekt umbenannt haben.
 
 Wenn Fehler wegen einer nicht definierten Variable `PUBLISH_DOCROOT` auftreten, benennen Sie diese in `DOCROOT` um.
 

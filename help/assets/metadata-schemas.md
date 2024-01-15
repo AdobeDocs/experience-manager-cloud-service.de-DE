@@ -229,7 +229,7 @@ Die Metadatenübernahme durch Assets richtet sich nach dem Schema, das auf den O
 1. Fügen Sie auf der Seite **[!UICONTROL Metadatenschema-Editor]** ein Textfeld in das Schemaformular ein. Fügen Sie beispielsweise ein Feld mit der Bezeichnung **[!UICONTROL Kategorie]** hinzu.
 1. Klicken Sie auf **[!UICONTROL Speichern]**. Das geänderte Formular wird auf der Seite **[!UICONTROL Metadatenschema-Formulare]** aufgeführt.
 1. Auswählen **[!UICONTROL Auf Ordner anwenden]** aus der Symbolleiste, um die benutzerdefinierten Metadaten auf einen Ordner anzuwenden.
-1. Wählen Sie den Ordner aus, auf den das geänderte Schema angewendet werden soll, und wählen Sie dann **[!UICONTROL Anwenden]**.
+1. Wählen Sie den Ordner aus, auf den Sie das geänderte Schema anwenden möchten, und wählen Sie anschließend **[!UICONTROL Anwenden]** aus.
 1. Wurde das andere Metadatenschema auf den Ordner angewendet, erhalten Sie eine Meldung mit der Warnung, dass Sie im Begriff sind, das vorhandene Metadatenschema zu überschreiben. Klicken Sie auf **Überschreiben**.
 1. Klicken Sie auf **OK**, um die Erfolgsmeldung zu schließen.
 1. Navigieren Sie zu dem Ordner, auf den Sie das geänderte Metadatenschema angewendet haben.

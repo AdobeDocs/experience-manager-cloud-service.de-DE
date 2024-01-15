@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
 source-wordcount: '3011'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -31,7 +31,7 @@ So verwenden Sie Inhaltsfragmentmodelle:
    >Wenn die [Verwendung von Inhaltsfragmentmodellen nicht aktiviert wurde](/help/assets/content-fragments/content-fragments-configuration-browser.md), ist die Option **Erstellen** nicht verfügbar.
 
 1. Geben Sie den **Modelltitel** an.
-Sie können auch verschiedene Eigenschaften definieren, beispielsweise **Tags**, a **Beschreibung** und wählen Sie **Modell aktivieren** nach [das Modell aktivieren](#enabling-disabling-a-content-fragment-model) falls erforderlich.
+Sie können auch verschiedene Eigenschaften definieren, zum Beispiel: **Tags**, und eine **Beschreibung** hinzufügen sowie **Modell aktivieren** auswählen, um ggf. [das Modell zu aktivieren](#enabling-disabling-a-content-fragment-model).
 
    >[!NOTE]
    >
@@ -82,17 +82,17 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
         >
         >Wenn Modelle, die in früheren Versionen von AEM erstellt wurden, unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
-     Beispiel:
+     Zum Beispiel:
 
      ![Feldeigenschaften](assets/cfm-models-05.png)
 
-1. **Entfernen eines Feldes**
+1. **So entfernen Sie ein Feld**
 
-   Wählen Sie das gewünschte Feld aus und wählen Sie dann das Papierkorbsymbol aus. Sie werden aufgefordert, die Aktion zu bestätigen.
+   Wählen Sie das entsprechende Feld aus und wählen Sie das Papierkorb-Symbol aus. Sie werden aufgefordert, die Aktion zu bestätigen.
 
    ![remove](assets/cfm-models-06.png)
 
-1. Fügen Sie alle erforderlichen Felder hinzu und legen Sie bei Bedarf die zugehörigen Eigenschaften fest. Beispiel:
+1. Fügen Sie alle erforderlichen Felder hinzu und legen Sie bei Bedarf die zugehörigen Eigenschaften fest. Zum Beispiel:
 
    ![Speichern](assets/cfm-models-07.png)
 
@@ -113,7 +113,7 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 * **Datum und Uhrzeit**
    * Fügen Sie ein Datum und/oder eine Uhrzeit hinzu.
 * **Aufzählung**
-   * Hinzufügen von Kontrollkästchen, Optionsfeldern oder Dropdown-Listenfeldern
+   * Hinzufügen einer Reihe von Kontrollkästchen, Optionsfeldern oder Dropdown-Listenfeldern
 * **Tags**
    * Ermöglicht Fragmentautoren den Zugriff auf und die Auswahl von Tag-Bereichen.
 * **Inhaltsreferenz**
@@ -152,8 +152,8 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
 * **Rendern als**
 Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Häufig können Sie mit dieser Eigenschaft definieren, ob der Autor eine einzelne Instanz des Felds sieht oder ob es möglich ist, mehrere Instanzen zu erstellen. Wann **Mehrere Felder** verwendet wird, können Sie die Mindest- und Höchstanzahl der Elemente definieren - siehe [Validierung](#validation) für weitere Informationen.
 
-* **Feldbezeichnung**
-Eingabe einer **Feldbezeichnung** generiert automatisch eine **Eigenschaftsname**, die dann bei Bedarf manuell aktualisiert werden kann.
+* **Feldtitel**
+Bei Eingabe eines **Feldtitels** wird automatisch ein **Eigenschaftsname** generiert, der dann ggf. manuell aktualisiert werden kann.
 
 * **Validierung**
 Die grundlegende Basic ist mittels Mechanismen wie etwa die Eigenschaft **Erforderlich** verfügbar. Einige Datentypen verfügen über zusätzliche Validierungsfelder. Weitere Informationen finden Sie unter [Validierung](#validation).
@@ -342,9 +342,9 @@ Zur vollständigen Kontrolle über die Verwendung Ihrer Inhaltsfragmentmodelle k
 
 ### Aktivieren eines Inhaltsfragmentmodells {#enabling-a-content-fragment-model}
 
-Wenn ein Modell erstellt wird, muss es aktiviert sein, damit es:
+Wenn ein Modell erstellt wird, muss es aus folgenden Gründen aktiviert werden:
 
-* Kann beim Erstellen eines Inhaltsfragments ausgewählt werden.
+* Damit es zur Auswahl steht, wenn ein neues Inhaltsfragment erstellt wird.
 * Damit es in einem Inhaltsfragmentmodell referenziert werden kann.
 * Damit es für GraphQL verfügbar ist, sodass das Schema generiert wird.
 

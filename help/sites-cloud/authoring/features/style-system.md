@@ -5,7 +5,7 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1305'
-ht-degree: 87%
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ Dadurch entfällt die Notwendigkeit, eine benutzerdefinierte Komponente für jed
 
 ## Nutzungsszenario {#use-case}
 
-Vorlagenautoren müssen nicht nur die Funktion von Komponenten für Inhaltsautoren konfigurieren, sondern auch verschiedene alternative visuelle Varianten einer Komponente konfigurieren können.
+Vorlagenautorinnen und -autoren benötigen nicht nur die Möglichkeit, die Funktionsweise von Komponenten für Inhaltsautorinnen und -autoren zu konfigurieren, sondern müssen auch in der Lage sein, eine Reihe alternativer visueller Varianten einer Komponente zu konfigurieren.
 
 Ebenso müssen Inhaltsautorinnen und -autoren nicht nur die Möglichkeit haben, ihren Inhalt zu strukturieren und anzuordnen, sondern sie müssen auch auswählen können, wie er visuell dargestellt wird.
 
@@ -62,8 +62,8 @@ In den folgenden Abschnitten [Als Inhaltsautor](#as-a-content-author) und [Als V
 
 Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen Sie wie folgt vor:
 
-1. Installieren Sie den CSS-Code als Client-Bibliotheken, wie im Abschnitt [Überblick](#overview) erklärt.
-1. Konfigurieren Sie die CSS-Klassen, die Sie Ihren Inhaltsautoren zur Verfügung stellen möchten, wie im Abschnitt beschrieben [Als Vorlagenautor](#as-a-template-author).
+1. Installieren Sie das CSS als Client-Bibliotheken, wie im Abschnitt [Überblick](#overview) erklärt.
+1. Konfigurieren Sie die CSS-Klassen, die Sie Ihren Inhaltsautorinnen und Inhaltsautoren zur Verfügung stellen möchten, wie im Abschnitt [Als Vorlagenautorin bzw. -autor](#as-a-template-author) beschrieben.
 1. Inhaltsautorinnen bzw. -autoren können die Stile daraufhin wie im Abschnitt [Als Inhaltsautorin bzw. -autor](#as-a-content-author) beschrieben verwenden.
 
 ### Als Inhaltsautor {#as-a-content-author}
@@ -73,7 +73,7 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen 
 
    ![Stilsystem für den Autor](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
-1. Wählen Sie die **Stile** in der Symbolleiste der **Liste** -Komponente, um das Stilmenü zu öffnen und das Erscheinungsbild der Komponente zu ändern.
+1. Wählen Sie die Schaltfläche **Stile** in der Symbolleiste der Komponente **Liste** aus, um das Stilmenü zu öffnen und das Erscheinungsbild der Komponente zu ändern.
 
    ![Auswählen von Stilen](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
@@ -83,7 +83,7 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen 
 
 ### Als Vorlagenautor {#as-a-template-author}
 
-1. Beim Bearbeiten der englischsprachigen Master-Homepage von WKND unter `http://<host>:<port>/sites.html/content/wknd/language-masters/en`die Vorlage der Seite über **Seiteninformationen > Vorlage bearbeiten**.
+1. Bei der Bearbeitung der englischsprachigen Primär-Homepage von WKND unter `http://<host>:<port>/sites.html/content/wknd/language-masters/en` können Sie die Vorlage der Seite über **Seiteninformationen > Vorlage bearbeiten** anpassen.
 
    ![Vorlage bearbeiten](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
@@ -95,7 +95,7 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen 
 
    ![Eigenschaften bearbeiten](/help/sites-cloud/authoring/assets/style-system-properties.png)
 
-   * **Gruppenname:** Stile können innerhalb des Stilmenüs gruppiert werden, das dem Inhaltsautor beim Konfigurieren des Komponentenstils angezeigt wird.
+   * **Gruppenname**: Stile können im Stilmenü gruppiert werden, das den Inhaltsautorinnen und Inhaltsautoren angezeigt wird, während sie den Stil einer Komponente konfigurieren.
    * **Stile können kombiniert werden:** Ermöglicht die gleichzeitige Auswahl mehrerer Stile innerhalb dieser Gruppe.
    * **Stilname:** Die Beschreibung des Stils, der den Inhaltsautorinnen bzw. -autoren beim Konfigurieren des Komponentenstils angezeigt wird.
    * **CSS-Klassen:** Der tatsächliche Name der CSS-Klasse, die dem Stil zugeordnet ist.
@@ -159,4 +159,4 @@ Definieren Sie keine Elementnamen für Stile, die kombiniert werden können. Wen
 
 Die Fähigkeit, Stilnamen zu definieren, ist bei generischen Komponenten wie dem Layout-Container oder der Inhaltsfragmentkomponente hilfreich, um diesen eine zusätzliche Bedeutung zu verleihen.
 
-So kann beispielsweise einem Layout-Container Semantik-Elemente wie `<main>`, `<aside>`, `<nav>`usw.
+Zum Beispiel können einem Layout-Container dadurch semantische Elemente wie `<main>`, `<aside>`, `<nav>` usw. zugewiesen werden.

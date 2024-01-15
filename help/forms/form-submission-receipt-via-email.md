@@ -1,6 +1,6 @@
 ---
 title: Wie kann ich in AEM Forms eine Bestätigung der Formularübermittlung per E-Mail senden?
-description: Mit AEM Forms können Sie die E-Mail-Übermittlungsaktion konfigurieren, die eine Bestätigung an einen Benutzer beim Senden des Formulars sendet.
+description: Mit AEM Forms können Sie die E-Mail-Übermittlungsaktion so konfigurieren, dass bei der Formularübermittlung eine Bestätigung an eine Benutzerin bzw. einen Benutzer gesendet wird.
 uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,7 +9,7 @@ docset: aem65
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 

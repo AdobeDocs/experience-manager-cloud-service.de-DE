@@ -9,7 +9,7 @@ exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '3431'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ Lesen Sie weiter, um mehr darüber zu erfahren, welche Integration Sie zwischen 
 | Vereinfachtes Desktop-Erlebnis für Kreative | Für Kreativprofis oder allgemein für Desktop-Benutzer, die mit nativen Anwendungen zur Asset-Erstellung arbeiten, soll der Zugriff auf Assets von einem DAM-System ([!DNL Assets]) optimiert werden. Sie benötigen eine einfache und unkomplizierte Möglichkeit zum Entdecken, Verwenden (Öffnen), Bearbeiten und Speichern von Änderungen in Experience Manager sowie zum Hochladen neuer Dateien. | Windows- oder Mac-Desktop, Creative Cloud-Programme |
 | Bereitstellen von hochwertigen, gebrauchsfertigen Assets aus [!DNL Adobe Stock] | Marketer tragen zu einer schnelleren Inhaltserstellung bei, indem sie beim Beschaffen von und Suchen nach Assets helfen. Kreativprofis verwenden die genehmigten Assets direkt in ihren Kreativ-Tools. | [!DNL Assets]; Marktplatz [!DNL Adobe Stock]; Metadatenfelder |
 | Verteilen und Freigeben von Assets nach Organisationen | Interne Abteilungen/lokale Zweigstellen und externe Partner, Distributoren und Agenturen verwenden die genehmigten Assets, die von der übergeordneten Organisation gemeinsam genutzt werden. Die Organisation möchte die erstellten Assets sicher und nahtlos für eine größere Wiederverwendung freigeben. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
-| Automatisches Generieren vordefinierter Varianten hochgeladener Assets | Automatische Verarbeitung von Assets mithilfe der einzigartigen Adobe-Medien-Handling- und Transformationstechnologie für vordefinierte Aktionen. Erstellen Sie benutzerdefinierte Logik, um eigene Aktionen mithilfe von APIs und Asset-Microservices zu definieren. | Benutzeroberfläche von [!DNL Assets] |
+| Automatisches Generieren vordefinierter Varianten hochgeladener Assets | Verarbeiten Sie Assets automatisch mithilfe der einzigartigen Medien-Handling- und Transformationstechnologie von Adobe für vordefinierte Aktionen. Erstellen Sie benutzerdefinierte Logik, um eigene Aktionen mithilfe von APIs und Asset-Microservices zu definieren. | Benutzeroberfläche von [!DNL Assets] |
 
 ## Adobe-Angebote zur Unterstützung von Kooperationsbedarf {#adobe-offerings-to-support-the-collaboration-need}
 
@@ -82,7 +82,7 @@ Zur Unterstützung von Nutzungsszenarien für die Asset-Verteilung haben Sie die
 * [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=de) als konfigurierbares Add-on für Assets, um Assets zu veröffentlichen.
 
 * Benutzerdefinierte Lösungen auf Grundlage der [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/)-Code-Basis.
-* Experience Manager [Linkfreigabe](/help/assets/share-assets.md) , um Assets bei Bedarf über Links freizugeben.
+* [Link-Freigabe](/help/assets/share-assets.md) in Experience Manager, um Assets nach Bedarf mithilfe von Links freizugeben.
 * [Assets-Web-Oberfläche](/help/assets/manage-digital-assets.md) mit Bereichen für externe Parteien, die über die Experience Manager-Zugriffssteuerung und mit notwendigen IT-/Netzwerkkonfigurationsanpassungen abgesichert sind, sodass diese externen Benutzer Zugriff auf Experience Manager erhalten.
 
 ## Grundlegende Konzepte und Nutzungsszenarien {#key-concepts-and-use-cases}
@@ -205,12 +205,12 @@ Adobe Asset Link bietet eine gute Unterstützung für diesen Anwendungsfall:
 * Wenn Benutzende in Photoshop, InDesign oder Illustrator eine Datei bearbeiten möchten, checken sie das jeweilige Asset aus.
 * Das Asset wird im Hintergrund heruntergeladen und in die vom Creative Cloud-Desktop-Programm mit der Festplatte synchronisierten Creative Cloud-Konten der Benutzer platziert. In Experience Manager wird die Checkout-Markierung auf dem Asset umgeschaltet, um Bearbeitungskonflikte zu minimieren.
 * Von dort aus arbeiten die Benutzenden in einer Datei, die lokal am synchronisierten Speicherort gespeichert ist, und können in beliebiger Häufigkeit weiterarbeiten und notwendige Änderungen speichern
-* Da sich das Asset im Creative Cloud-Konto befindet, ist es auch auf anderen Geräten verfügbar, über die der Benutzer verfügt (z. B. kann in einer dedizierten mobilen Creative Cloud-App geöffnet oder bearbeitet werden), und kann für andere Creative Cloud-Benutzer freigegeben werden.
-* Wenn kreative Benutzer keine weiteren Änderungen vornehmen möchten, können sie diese Datei in ihrem Creative Cloud-Programm mit einem optionalen Kommentar einchecken. Das entsprechende Asset in Experience Manager wird versioniert und mit der neuen Binärdatei aktualisiert. Experience Manager-Benutzer wie Marketer oder Branchenbenutzer haben über die Asset-Zeitleiste von Experience Manager Zugriff auf wichtige Asset-Änderungen oder Meilensteine.
+* Da sich das Asset im Creative Cloud-Konto befindet, ist es auch auf etwaigen anderen Benutzergeräten verfügbar (z. B. zum Öffnen oder Bearbeiten in einer dedizierten Creative Cloud-Mobile-App). Außerdem kann es für andere Creative Cloud-Benutzende für die Zusammenarbeit freigegeben werden.
+* Wenn kreative Benutzende keine weiteren Änderungen vornehmen möchten, können sie diese Datei in ihrem Creative Cloud-Programm mit einem optionalen Kommentar einchecken. Das entsprechende Asset in Experience Manager wird versioniert und mit der neuen Binärdatei aktualisiert. Experience Manager-Benutzer wie Marketer oder Branchenbenutzer haben über die Asset-Zeitleiste von Experience Manager Zugriff auf wichtige Asset-Änderungen oder Meilensteine.
 
 Das Experience Manager-Desktop-Programm bietet eine Netzwerkfreigabe für in der nativen App geöffnete Assets. Standardmäßig werden alle lokalen Änderungen nach kurzer Zeit automatisch in Experience Manager hochgeladen. Mit einer solchen Konfiguration würden alle häufig gespeicherten Inhalte während der laufenden Arbeitsphase in Experience Manager hochgeladen und versioniert, sodass beträchtlicher Netzwerk-Traffic und potenzielle Herausforderungen bezüglich der Skalierbarkeit entstünden – ganz zu schweigen von unnötigen Versionen in Experience Manager.
 
-Es wird empfohlen, hier eine Option im Experience Manager-Desktop-Programm zu verwenden, um automatisierte Aktualisierungen zu deaktivieren und Asset-Änderungen manuell in den Experience Manager hochzuladen. Verwenden Sie dazu die Aktion zum Hochladen von Änderungen in der Asset-Status-Benutzeroberfläche des Programms.
+In diesem Fall wird empfohlen, die Experience Manager-Desktop-Anwendung zum Deaktivieren automatischer Aktualisierungen zu verwenden und Asset-Änderungen manuell in Experience Manager hochzuladen. Dabei wird die Aktion zum Hochladen von Assets in der Asset-Status-Benutzeroberfläche der Anwendung genutzt.
 
 #### Massen-Upload in DAM {#bulk-upload-to-dam}
 

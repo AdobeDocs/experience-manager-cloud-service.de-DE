@@ -1,17 +1,17 @@
 ---
 title: Erste Schritte mit SPAs in AEM unter Verwendung von Angular
-description: In diesem Artikel wird ein Beispiel für SPA Anwendung vorgestellt, erläutert, wie es zusammengestellt wird, und ermöglicht Ihnen, mithilfe des Angular-Frameworks schnell mit Ihren eigenen SPA zu arbeiten.
+description: Dieser Artikel beschreibt eine Beispiel-SPA, erläutert, wie sie zusammengestellt wird, und ermöglicht es Ihnen, unter Verwendung des Angular-Frameworks schnell mit Ihrer eigenen SPA zu arbeiten.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
 # Erste Schritte mit SPAs in AEM unter Verwendung von Angular {#getting-started-with-spas-in-aem-using-angular}
 
-Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickelnde möchten Sites mit SPA-Frameworks erstellen und Autorinnen sowie Autoren möchten Inhalte in AEM nahtlos für eine Site bearbeiten, die durch SPA-Frankeworks erstellt wurde.
+Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwicklerinnen und Entwickler möchten Sites mithilfe von SPA-Frameworks erstellen können, während Autorinnen und Autoren in der Lage sein wollen, Inhalte innerhalb von AEM für eine mit SPA-Frameworks erstellte Site nahtlos zu bearbeiten.
 
 Die SPA-Autorenfunktion bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM. Dieser Artikel beschreibt eine vereinfachte SPA-Anwendung im Angular-Framework, erläutert, wie sie zusammengestellt wird, und ermöglicht es Ihnen, rasch mit Ihrer eigenen SPA zu arbeiten.
 
@@ -239,7 +239,7 @@ export class ImageComponent {
 MapTo('my-angular-app/components/image')(ImageComponent, ImageEditConfig);
 ```
 
-Die zentrale Idee von SPA in AEM ist die Idee, SPA Komponenten AEM Komponenten zuzuordnen und die Komponente zu aktualisieren, wenn der Inhalt geändert wird (und umgekehrt). Eine Zusammenfassung dieses Kommunikationsmodells finden Sie im Dokument [SPA-Editor – Überblick](editor-overview.md).
+Die zentrale Idee von SPAs in AEM besteht darin, SPA-Komponenten zu AEM-Komponenten zuzuordnen und die Komponente zu aktualisieren, wenn der Inhalt geändert wird (und umgekehrt). Eine Zusammenfassung dieses Kommunikationsmodells finden Sie im Dokument [SPA-Editor – Überblick](editor-overview.md).
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 
@@ -276,4 +276,4 @@ Regelmäßig müssen Komponenten in einer SPA Daten austauschen. Es gibt mehrere
 * [SPA-Editor – Überblick](editor-overview.md) vertieft das Kommunikationsmodell zwischen AEM und der SPA.
 * [WKND-SPA-Projekt](wknd-tutorial.md) ist ein Schritt-für-Schritt-Tutorial zur Implementierung eines einfachen SPA-Projekts in AEM.
 * [Dynamisches Modell zur Komponentenzuordnung für SPAs](model-to-component-mapping.md) erläutert das dynamische Modell für die Komponentenzuordnung und dessen Funktionsweise innerhalb von SPAs in AEM.
-* [SPA Blueprint](blueprint.md) bietet einen tiefen Einblick in die Funktionsweise des SPA SDK für AEM, falls Sie SPA in AEM für ein anderes Framework als React oder Angular implementieren möchten oder einfach ein tieferes Verständnis wünschen.
+* [SPA-Blueprint](blueprint.md) liefert gründlichere Informationen zur Funktionsweise des SPA SDK für AEM, falls Sie SPAs für ein anderes Framework als React oder Angular in AEM implementieren möchten oder einfach ein genaueres Verständnis wünschen.

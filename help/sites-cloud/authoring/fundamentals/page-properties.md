@@ -5,7 +5,7 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2268'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    * **Marken-Slug**
 
       * **Überschreiben**: Aktivieren Sie diese Option, um den Marken-Slug auf dieser Seite zu definieren.
-         * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, deren Werte für **Überschreiben** sind auch eingestellt.
+         * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, deren Werte zum **Überschreiben** sind ebenfalls festgelegt.
       * **Überschreibungswert** – Der Text des Marken-Slugs, der an den Seitentitel angehängt werden soll.
          * Der Wert wird nach einem Pipe-Zeichen an den Seitentitel angehängt, z. B. „Cycling Tuscany | Always ready for the WKND“.
 
@@ -76,7 +76,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Vanity-URL**
 
-   * Ermöglicht die Eingabe einer Vanity-URL für diese Seite, die es Ihnen ermöglicht, eine kürzere und/oder ausdrucksstärkere URL zu verwenden.
+   * Ermöglicht die Eingabe einer Vanity-URL für diese Seite, was es Ihnen ermöglicht, eine kürzere bzw. aussagekräftigere URL zu verwenden.
    * Beispiel: Wenn die Vanity-URL `welcome` für die Seite mit dem Pfad `/v1.0/startpage` auf der Website `http://example.com` verwendet wird, wäre `http://example.com/welcome` die Vanity-URL von `http://example.com/content/v1.0/startpage`
 
   >[!CAUTION]
@@ -87,10 +87,10 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
   >* unterstützen keine Regex-Muster.
   >* sollten nicht auf eine vorhandene Seite eingestellt sein.
 
-   * **Hinzufügen** - Wählen Sie diese Option, um ein Feld anzuzeigen, um eine Vanity-URL für die Seite zu definieren.
-      * Wählen Sie erneut aus, um mehrere hinzuzufügen.
-      * Wählen Sie die **Entfernen** zum Löschen der Vanity-URL.
-   * **Vanity-URL umleiten** - Gibt an, ob für die Seite eine Vanity-URL verwendet werden soll.
+   * **Hinzufügen** – Wählen Sie dies aus, um ein Feld anzuzeigen, in dem eine Vanity-URL für die Seite definiert wird.
+      * Wählen Sie es erneut aus, um mehrere hinzuzufügen.
+      * Wählen Sie das Symbol **Entfernen** aus, um die Vanity-URL zu löschen.
+   * **Vanity-URL umleiten** – Gibt an, ob für die Seite eine Vanity-URL verwendet werden soll.
 
 ### Erweitert {#advanced}
 
@@ -104,8 +104,8 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    * **Alias** – Gibt einen Alias an, der für diese Seite verwendet werden soll.
       * Beispiel: Wenn Sie einen Alias `private` für die Seite `/content/wknd/us/en/magazine/members-only` definieren, kann auf diese Seite über `/content/wknd/us/en/magazine/private` zugegriffen werden.
       * Durch die Erstellung eines Alias wird die Eigenschaft `sling:alias`, die sich nur auf die Ressource und nicht auf den Repository-Pfad auswirkt, auf dem Seitenknoten festgelegt.
-      * Seiten, auf die Alias im Editor zugreifen, können nicht veröffentlicht werden. [Veröffentlichungsoptionen](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
-      * Siehe [Lokalisierte Seitennamen unter Best Practices für SEO und URL-Verwaltung](/help/overview/seo-and-url-management.md#localized-page-names).
+      * Seiten, auf die im Editor über Aliasnamen zugegriffen wird, können nicht veröffentlicht werden. [Veröffentlichungsoptionen](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
+      * Siehe [„Lokalisierte Seitennamen“ unter „Best Practices für SEO- und URL-Verwaltung“](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Konfiguration**
 
@@ -147,7 +147,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Vorgestelltes Bild**
 
-  Wählen Sie das anzuzeigende Bild aus und konfigurieren Sie es. Dies wird in Komponenten verwendet, die auf die Seite verweisen, z. B. Teaser, Seitenlisten usw.
+  Wählen Sie das anzuzeigende Bild aus und konfigurieren Sie es. Dies wird in Komponenten verwendet, die auf die Seite verweisen. z. B. Teaser, Seitenlisten usw.
 
    * **Bild**
 
@@ -237,7 +237,7 @@ Durch eine einfache Konfiguration können Inhaltsautorinnen und -autoren jetzt P
 
 >[!NOTE]
 >
->Siehe [Aktivieren progressiver Web-App-Funktionen](/help/sites-cloud/authoring/features/enable-pwa.md).
+>Siehe [Aktivieren der Progressive Web App-Funktionen](/help/sites-cloud/authoring/features/enable-pwa.md).
 
 * **Konfigurieren eines installierbaren Erlebnisses**
 
@@ -286,7 +286,7 @@ Beim Bearbeiten einer Seite können Sie mithilfe von **Seiteninformationen** die
 
 1. Öffnen Sie die Seite, für die Sie Eigenschaften bearbeiten möchten.
 1. Wählen Sie das Symbol **Seiteninformationen** aus, um das Auswahlmenü zu öffnen:
-1. Auswählen **Eigenschaften öffnen** und ein Dialogfeld wird geöffnet, in dem Sie die Eigenschaften bearbeiten können, sortiert nach der entsprechenden Registerkarte. Die folgenden Schaltflächen stehen rechts in der Symbolleiste zur Verfügung:
+1. Wählen Sie **Eigenschaften öffnen**. Daraufhin wird ein Dialogfeld geöffnet, in dem Sie die Eigenschaften bearbeiten können. Die Eigenschaften werden nach der entsprechenden Registerkarte sortiert. Die folgenden Schaltflächen stehen rechts in der Symbolleiste zur Verfügung:
    * **Abbrechen**
    * **Speichern und schließen**
 1. Mit der Schaltfläche **Speichern und schließen** können Sie Änderungen speichern.
@@ -314,8 +314,8 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 
 * **Anzeigen**
 
-   * Eine Liste der betroffenen Seiten
-      * Sie können die Auswahl bei Bedarf aufheben oder auswählen.
+   * eine Liste der betroffenen Seiten
+      * Bei Bedarf können Sie Seiten auswählen oder ihre Auswahl aufheben
       * Registerkarten
          * Wie beim Anzeigen von Eigenschaften für eine einzelne Seite werden die Eigenschaften unter Registerkarten angeordnet.
    * Eine Untergruppe von Eigenschaften

@@ -6,7 +6,7 @@ exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '811'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -64,7 +64,7 @@ Die Möglichkeit, **Inhaltsfragmentmodelle** zu ändern, sollte Administratoren 
 >
 >Änderungen an Inhaltsfragmentmodellen ändern die zugrunde liegende GraphQL-API, auf die Headless-Anwendungen angewiesen sind.
 
-Wenn Sie eine Gruppe erstellen möchten, die Inhaltsfragmentmodelle verwaltet, aber nicht den vollständigen Administratorzugriff hat, können Sie eine Gruppe mit den folgenden Zugriffssteuerungseinträgen erstellen:
+Wenn Sie eine Gruppe erstellen möchten, die Inhaltsfragmentmodelle verwalten kann, aber keinen vollständigen Administratorzugriff hat, können Sie eine Gruppe mit den folgenden Einträgen für die Zugriffssteuerung erstellen:
 
 | Pfad  | Berechtigung | Berechtigungen |
 |-----| -------------| ---------|

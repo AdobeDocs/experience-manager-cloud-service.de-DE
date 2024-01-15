@@ -6,7 +6,7 @@ exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1136'
-ht-degree: 76%
+ht-degree: 77%
 
 ---
 
@@ -36,7 +36,7 @@ Ein beliebtes Anwendungsbeispiel ist die Größenanpassung eines Bildes auf eine
 1. Wählen Sie ein Bild aus und klicken Sie auf **Bearbeiten**.
 2. Klicken Sie in den Schnellaktionen im linken Bereich auf **[!DNL Resize Image]**.
 3. Wählen Sie die entsprechende Social-Media-Plattform aus der Dropdown-Liste **[!UICONTROL Größe ändern für]** aus und wählen Sie die Bildgröße aus den angezeigten Optionen aus.
-4. Skalieren Sie das Bild bei Bedarf mithilfe des **[!UICONTROL Bildskala]** -Feld.
+4. Falls erforderlich, skalieren Sie das Bild mithilfe des Feldes **[!UICONTROL Bildskala]**.
 5. Klicken Sie auf **[!DNL Apply]**, um Ihre Änderungen anzuwenden.
    ![Bildbearbeitung mit Adobe Express](assets/adobe-express-resize-image.png)
 

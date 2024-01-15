@@ -1,11 +1,11 @@
 ---
 title: Verwenden von Best Practices Analyzer
-description: Erfahren Sie, wie Sie mit Best Practices Analyzer die Upgrade-Bereitschaft verstehen können.
+description: Erfahren Sie, wie Sie mit Best Practices Analyzer die Bereitschaft zu einem Upgrade erkennen können.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '2418'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
 
    ![Bild](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. Klicks **Bericht erstellen** , um Best Practices Analyzer auszuführen.
+1. Klicken Sie auf **Bericht generieren**, um Best Practices Analyzer auszuführen.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -69,7 +69,7 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-1. Nach Erstellung des BPA-Berichts werden eine Zusammenfassung und die Anzahl der Ergebnisse in tabellarischer Form angezeigt, die nach Art der Ergebnisse und Wichtigkeitsstufe geordnet sind. Um weitere Details zu einem bestimmten Ergebnis zu erhalten, können Sie auf die Zahl klicken, die dem Ergebnistyp in der Tabelle entspricht.
+1. Sobald der BPA-Bericht erstellt wurde, werden eine Zusammenfassung sowie die Anzahl der Ergebnisse in tabellarischer Form angezeigt, die nach Ergebnistyp und Wichtigkeitsstufe geordnet sind. Um weitere Details zu einem bestimmten Ergebnis zu erhalten, können Sie die Zahl anklicken, die dem Typ des Ergebnisses in der Tabelle entspricht.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 
@@ -95,7 +95,7 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
 
 Gehen Sie wie folgt vor, um Ergebnisse zu [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) herauszufiltern:
 
-1. Klicken Sie auf das linke Leistensymbol auf der linken Seite der Seite. Dadurch wird der **ACS Commons-Filter** angezeigt. Klicken Sie auf **ACS Commons-Filter** , um das interaktive Kontrollkästchen anzuzeigen, wie in der Abbildung unten dargestellt.
+1. Klicken Sie links auf der Seite auf das Symbol in der linken Leiste. Dadurch wird der **ACS Commons-Filter** angezeigt. Klicken Sie auf den **ACS Commons-Filter**, um das interaktive Kontrollkästchen anzuzeigen, wie in der nachfolgenden Abbildung dargestellt.
 
    ![Bild](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
@@ -161,7 +161,7 @@ Wenn Sie in Ihrer AEM-Instanz auf die Option **CSV** klicken, wird das CSV-Forma
 
 Wenn der Cache abgelaufen ist, wird der Bericht erneut generiert, bevor die CSV-Datei erstellt und heruntergeladen wird.
 
-Das CSV-Format des Berichts enthält Informationen, die aus der Mustererkennungsausgabe generiert wurden und nach Kategorie, Untertyp und Wichtigkeitsstufe sortiert und organisiert sind. Sein Format eignet sich zum Anzeigen und Bearbeiten in einem Programm wie Microsoft Excel. Sie sollen alle Suchinformationen in einem wiederholbaren Format bereitstellen, das beim Vergleich von Berichten im Zeitverlauf zur Messung des Fortschritts hilfreich sein kann.
+Das CSV-Format des Berichts enthält Informationen, die aus der Mustererkennungsausgabe generiert wurden und nach Kategorie, Untertyp und Wichtigkeitsstufe sortiert und organisiert sind. Sein Format eignet sich zum Anzeigen und Bearbeiten in einem Programm wie Microsoft Excel. Alle Ergebnisinformationen werden in einem wiederholbaren Format bereitgestellt, das beim Vergleich von Berichten im Zeitverlauf zur Messung des Fortschritts hilfreich sein kann.
 
 Die Spalten des Berichts im CSV-Format sind:
 

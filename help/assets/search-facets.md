@@ -7,7 +7,7 @@ exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2498'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -108,7 +108,7 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Geben Sie im Feld **[!UICONTROL Eigenschaftsname]** den Pfad der JSON-Datei an, in der Sie die Knoten für die Optionen und entsprechende Schlüssel-Wert-Paare definiert haben.
-   * Auswählen ![Symbol &quot;Assets hinzufügen&quot;](assets/do-not-localize/aem_assets_add_icon.png) neben dem Feld Optionen , um den Anzeigetext und den Wert für die Optionen anzugeben, die Sie im Bedienfeld Filter bereitstellen möchten. Um eine weitere Option hinzuzufügen, wählen Sie ![Symbol &quot;Assets hinzufügen&quot;](assets/do-not-localize/aem_assets_add_icon.png) und wiederholen Sie den Schritt.
+   * Auswählen ![Symbol &quot;Assets hinzufügen&quot;](assets/do-not-localize/aem_assets_add_icon.png) neben dem Feld Optionen , um den Anzeigetext und den Wert für die Optionen anzugeben, die Sie im Bedienfeld Filter bereitstellen möchten. Um eine weitere Option hinzuzufügen, wählen Sie das Symbol ![Assets hinzufügen](assets/do-not-localize/aem_assets_add_icon.png) aus und wiederholen Sie diesen Schritt.
 
 1. Stellen Sie sicher, dass **[!UICONTROL Einzelauswahl]** deaktiviert ist, damit Benutzer mehrere Optionen für Dateitypen gleichzeitig auswählen können (z. B. Bilder, Dokumente, Multimedia und Archive). Wenn Sie **[!UICONTROL Einzelauswahl]** aktivieren, können Benutzer jeweils nur eine Option für Dateitypen auswählen.
 
@@ -128,7 +128,7 @@ Mit dem Prädikat `Multi Value Property` können Sie Assets anhand mehrerer Wert
 1. Ziehen Sie auf der Seite „Suchformular bearbeiten“ den Eintrag **[!UICONTROL Mehrwert-Eigenschaftsprädikat]** von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich.
 1. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** eine Beschriftung und einen Platzhaltertext für die Eigenschaft ein. Geben Sie den Eigenschaftsnamen, anhand dessen die Suche durchgeführt werden soll, im Eigenschaftsfeld an, z. B. `jcr:content/metadata/dc:value`. Sie können auch das Auswahldialogfeld verwenden, um einen Knoten auszuwählen.
 1. Stellen Sie sicher, dass die **[!UICONTROL Trennzeichen-Unterstützung]** aktiviert ist. Geben Sie im Feld **[!UICONTROL Eingabe-Trennzeichen]** bestimmte Trennzeichen an, um einzelne Werte voneinander zu trennen. Standardmäßig sind Kommata als Trennzeichen angegeben. Sie können auch ein anderes Trennzeichen festlegen.
-1. Im **Beschreibung** eine optionale Beschreibung eingeben und dann **[!UICONTROL Fertig]**.
+1. Geben Sie eine optionale Beschreibung in das Feld **Beschreibung** ein und wählen Sie **[!UICONTROL Fertig]** aus.
 1. Navigieren Sie in der Assets-Benutzeroberfläche zum Bedienfeld „Filter“. Das Prädikat **[!UICONTROL Mehrwert-Eigenschaft]** wird zum Bereich hinzugefügt.
 1. Geben Sie im Mehrwertfeld mehrere Werte getrennt durch die Trennzeichen an und führen Sie die Suche durch. Das Prädikat ruft eine exakte Textübereinstimmung für die angegebenen Werte ab.
 
@@ -145,7 +145,7 @@ Mit dem `Tags`-Prädikat können Sie anhand von Tags nach Assets suchen. Standar
 
    ![Typische Einstellungen des Tag-Prädikats](assets/tags_predicate.png)
 
-1. Im **[!UICONTROL Beschreibung]** eine optionale Beschreibung eingeben und dann **[!UICONTROL Fertig]**.
+1. Geben Sie eine optionale Beschreibung in das Feld **[!UICONTROL Beschreibung]** ein und wählen Sie **[!UICONTROL Fertig]** aus.
 1. Navigieren Sie zum Bereich „Suchen“. Das Prädikat **[!UICONTROL Tags]** wird zum Bereich „Suchen“ hinzugefügt.
 1. Geben Sie Tags an, anhand derer Sie nach Assets suchen möchten, oder wählen Sie aus der Liste mit Vorschlägen aus.
 1. Wählen Sie **[!UICONTROL Übereinstimmung mit allen Tags]**, um nach Übereinstimmungen zu suchen, die alle von Ihnen angegebenen Tags enthalten.

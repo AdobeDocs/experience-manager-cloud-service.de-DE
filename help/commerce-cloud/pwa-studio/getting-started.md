@@ -8,7 +8,7 @@ exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 89%
+ht-degree: 97%
 
 ---
 
@@ -62,7 +62,8 @@ Um PWA Studio mit dem GraphQL-Endpunkt von AEM zu verbinden, können Sie die [AE
 
    Weitere Informationen zur Anpassung der Navigationskomponente finden Sie in [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) und in der Dokumentation zum [Erweiterbarkeits-Framework](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) von PWA Studio.
 
-1. Der Apollo-Client erwartet den AEM GraphQL-Endpunkt auf `<https://pwa-studio/endpoint.js>`. Um den Endpunkt diesem Speicherort zuzuordnen, passen Sie die UPWARD-Konfiguration Ihrer PWA Studio App an: a. Fügen Sie die Variable AEM_CFM_GRAPHQL zu pwa-root/.env hinzu und passen Sie sie an, um auf Ihren GraphQL-Endpunkt für AEM Inhaltsfragmente zu verweisen.
+1. Der Apollo-Client erwartet den AEM GraphQL-Endpunkt auf `<https://pwa-studio/endpoint.js>`. Um den Endpunkt diesem Speicherort zuzuordnen, müssen Sie die UPWARD-Konfiguration Ihrer PWA Studio-Anwendung anpassen:
+a. Fügen Sie die Variable AEM_CFM_GRAPHQL zu pwa-root/.env hinzu und passen Sie sie an, sodass sie auf Ihren GraphQL-Endpunkt für AEM-Inhaltsfragmente verweist.
 
    Beispiel: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
@@ -117,7 +118,7 @@ Produktions-Setups können verschiedene Aspekte aufweisen.
 
 * Sie können über einen einzigen zusammengeführten GraphQL-Endpunkt verfügen, der AEM- und Adobe Commerce-GraphQL-Daten kombiniert, anstatt den Apollo-Client anzupassen.
 * Ihre PWA Studio-Anwendung könnte die AEM GraphQL-Endpunkt-URL direkt verwenden, ohne dass ein Proxy mit UPWARD vorhanden ist. Der Proxy kann auch in eine andere Ebene verschoben werden (z. B. CDN).
-* Welcher Ansatz für Sie am besten geeignet ist, hängt auch stark davon ab, wie Sie die PWA Studio-App an den Benutzer übermitteln.
+* Welcher Ansatz für Sie am besten geeignet ist, hängt auch stark davon ab, wie Sie den Benutzenden die PWA Studio-Anwendung bereitstellen.
 
 Diese Erweiterung enthält zwei Beispiele.
 

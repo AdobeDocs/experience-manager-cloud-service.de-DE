@@ -5,7 +5,7 @@ exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -52,7 +52,7 @@ Im folgenden Abschnitt wird beschrieben, wie Sie die CI/CD-Pipeline konfiguriere
 
    ![Bild](/help/screens-cloud/assets/onboarding/run-pipeline4.png)
 
-1. Nachdem der Build-Prozess abgeschlossen ist, können Sie einen Autor-Link aus dem **Umgebungen** Karte aus dem Cloud Manager **Übersicht** Seite.
+1. Sobald der Build-Prozess abgeschlossen ist, wird ein Autoren-Link von der Karte **Umgebungen** auf der Seite **Überblick** von Cloud Manager angezeigt.
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 

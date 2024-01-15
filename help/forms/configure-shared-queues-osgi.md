@@ -7,14 +7,14 @@ docset: aem65
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '839'
-ht-degree: 74%
+ht-degree: 76%
 
 ---
 
 
 # Freigeben und Anfordern des Zugriffs auf Posteingangselemente eines Benutzers {#share-and-request-access}
 
-Eine Warteschlange ist eine Liste von Elementen im AEM-Posteingang eines Benutzers. Dabei kann es sich um Elemente handeln, die einem Benutzer zugewiesen sind, oder um Elemente, die für die Gruppe freigegeben sind, der ein Benutzer angehört. Sie können auf Ihren Posteingang zugreifen, um das Element &quot;Posteingang&quot;anzuzeigen und zu bearbeiten. Geben Sie beispielsweise ein Element für einen anderen Benutzer frei.
+Eine Warteschlange ist eine Liste von Elementen im AEM-Posteingang eines Benutzers. Dabei kann es sich um Elemente handeln, die einem Benutzer zugewiesen sind, oder um Elemente, die für die Gruppe freigegeben sind, der ein Benutzer angehört. Sie können auf Ihren Posteingang zugreifen, um das Posteingangselement anzuzeigen und eine Aktion dafür auszuführen. Geben Sie beispielsweise ein Element für einen anderen Benutzer frei.
 
 Sie können Ihre Posteingangselemente auch für einen anderen Benutzer freigeben. Sobald ein anderer Benutzer Zugriff auf Ihre Posteingangselemente hat, kann er sie beanspruchen und entsprechende Aktionen durchführen. Ebenso können Sie von anderen Benutzern Zugriff auf Posteingangselemente anfordern.
 
@@ -24,7 +24,7 @@ Der angemeldete Benutzer muss Mitglied der Gruppe [!DNL `workflow-users`] sein. 
 
 ## Teilen eines einzelnen oder aller Elemente Ihres Posteingangs mit einem anderen Benutzer
 
-Mit dem AEM-Posteingang können Sie einzelne oder alle Elemente in Ihrem Posteingang für andere Benutzende freigeben.
+Beim AEM-Posteingang können Sie einzelne oder alle Elemente in Ihrem Posteingang für andere Benutzende freigeben.
 
 ### Alle Posteingangselemente freigeben
 

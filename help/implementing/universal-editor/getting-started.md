@@ -5,7 +5,7 @@ exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie m
 
 Obwohl der universelle Editor Inhalte aus jeder Quelle bearbeiten kann, verwendet dieses Dokument eine AEM-App als Beispiel.
 
-Es gibt mehrere Schritte, um Ihre AEM App zu integrieren und sie für die Verwendung des universellen Editors zu instrumentieren.
+Es gibt verschiedene Schritte für das Onboarding Ihrer AEM-App und ihre Instrumentierung für die Verwendung des universellen Editors.
 
 1. [Fordern Sie Zugriff auf den universellen Editor an.](#request-access)
 1. [Schließen Sie die Hauptbibliothek des universellen Editors ein.](#core-library)
@@ -51,7 +51,7 @@ Bevor Ihre App für die Verwendung mit dem universellen Editor instrumentiert we
 @adobe/universal-editor-cors
 ```
 
-Um die Instrumentierung zu aktivieren, muss der folgende Import zu Ihrer `index.js`.
+Um die Instrumentierung zu aktivieren, muss der folgende Import zu Ihrer `index.js` hinzugefügt werden.
 
 ```javascript
 import "@adobe/universal-editor-cors";
@@ -105,7 +105,7 @@ Diese Eigenschaft muss in der OSGi-Konfiguration `org.apache.sling.engine.impl.S
 
 Der Service des universellen Editors erfordert einen [Uniform Resource Name (URN)](https://de.wikipedia.org/wiki/Uniform_Resource_Name), um das richtige Backend-System für den Inhalt in der bearbeiteten App zu identifizieren und zu verwenden. Daher ist ein URN-Schema erforderlich, um Inhalte wieder Inhaltsressourcen zuzuordnen.
 
-Die der Seite hinzugefügten Instrumentenattribute bestehen hauptsächlich aus [HTML Microdata,](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) ein Industriestandard, der auch verwendet werden kann, um HTML semantischer zu machen, HTML-Dokumente zu indexieren und so weiter.
+Die der Seite hinzugefügten Instrumentierungsattribute bestehen hauptsächlich aus [HTML Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata), einem Branchenstandard, der auch verwendet werden kann, um HTML semantischer zu gestalten und HTML-Dokumente zu indexieren.
 
 ### Erstellen von Verbindungen {#connections}
 
@@ -115,9 +115,9 @@ Verbindungen, die in der App verwendet werden, werden als `<meta>`-Tags im `<hea
 <meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
-* `<category>` - Dies ist eine Klassifizierung der Verbindung mit zwei Optionen.
-   * `system` - Für Verbindungsendpunkte
-   * `config` - für [Definieren optionaler Konfigurationseinstellungen](#configuration-settings)
+* `<category>` – Dies ist eine Klassifizierung der Verbindung mit zwei Optionen.
+   * `system` – Für Verbindungsendpunkte
+   * `config` – Zum [Definieren optionaler Konfigurationseinstellungen](#configuration-settings).
 * `<referenceName>` – Dies ist ein Kurzname, der im Dokument zur Identifizierung der Verbindung wiederverwendet wird. Z. B. `aemconnection`
 * `<protocol>` – Dies gibt an, welches Persistenz-Plug-in des Universal Editor Persistence Service verwendet werden soll. Z. B. `aem`
 * `<url>` – Dies ist die URL zum System, in dem die Änderungen persistiert werden sollen. Z. B. `http://localhost:4502`
@@ -171,21 +171,21 @@ itemid="urn:<referenceName>:<resource>"
 
 ### Konfigurationseinstellungen {#configuration-settings}
 
-Sie können die `config` -Präfix in Ihrer Verbindungs-URL verwenden, um bei Bedarf Service- und Erweiterungs-Endpunkte festzulegen.
+Sie können das Präfix `config` in Ihrem Verbindungs-URN verwenden, um bei Bedarf Service- und Erweiterungsendpunkte festzulegen.
 
-Wenn Sie den Universal Editor-Dienst, der von Adobe gehostet wird, aber Ihre eigene gehostete Version nicht verwenden möchten, können Sie dies in einem Meta-Tag festlegen. Um den vom universellen Editor bereitgestellten Standard-Service-Endpunkt zu überschreiben, legen Sie Ihren eigenen Service-Endpunkt fest:
+Wenn Sie nicht den von Adobe gehosteten Service „Universeller Editor“, sondern Ihre eigene gehostete Version verwenden möchten, können Sie dies in einem Meta-Tag festlegen. Um den vom universellen Editor bereitgestellten Standard-Service-Endpunkt zu überschreiben, legen Sie Ihren eigenen Service-Endpunkt fest:
 
-* Metaname - `urn:adobe:aue:config:service`
-* Metadateninhalt - `content="https://adobe.com"` (Beispiel)
+* Metaname: `urn:adobe:aue:config:service`
+* Metainhalt: `content="https://adobe.com"` (Beispiel)
 
 ```html
 <meta name="urn:adobe:aue:config:service" content="<url>">
 ```
 
-Wenn Sie nur bestimmte Erweiterungen für eine Seite aktivieren möchten, können Sie dies in einem Meta-Tag festlegen. Um Erweiterungen abzurufen, legen Sie die Erweiterungs-Endpunkte fest:
+Wenn Sie nur bestimmte Erweiterungen für eine Seite aktivieren möchten, können Sie dies in einem Meta-Tag festlegen. Um Erweiterungen abzurufen, legen Sie die Erweiterungsendpunkte fest:
 
 * Metaname: `urn:adobe:aue:config:extensions`
-* Metadateninhalt: `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (Beispiel)
+* Metainhalt: `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (Beispiel)
 
 ```html
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
@@ -202,8 +202,8 @@ Unter [Inhaltserstellung mit dem universellen Editor](authoring.md) erfahren Sie
 Weitere Informationen zum universellen Editor finden Sie in diesen Dokumenten.
 
 * [Einführung in den universellen Editor](introduction.md) – Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
-* [Inhaltserstellung mit dem universellen Editor](authoring.md) – Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
-* [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md) - Erfahren Sie, wie der Universal Editor Inhalte veröffentlicht und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
+* [Inhaltserstellung mit dem universellen Editor](authoring.md) – Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und Inhaltsautoren ist, Inhalte mit dem universellen Editor zu erstellen.
+* [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md) – Erfahren Sie, wie der universelle Editor Inhalte veröffentlicht und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
 * [Architektur des universellen Editors](architecture.md) – Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.
 * [Attribute und Typen](attributes-types.md) – Erfahren Sie mehr über die Datenattribute und -typen, die der universelle Editor erfordert.
 * [Authentifizierung beim universellen Editor](authentication.md) – Erfahren Sie, wie beim universellen Editor authentifiziert wird.

@@ -7,7 +7,7 @@ exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1288'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ Die in diesem Dokument beschriebenen Übersetzungsregeln gelten nur dann für In
 
 Wenn die Option **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** aktiv ist, verwendet AEM das Feld **Übersetzbar** bei [Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties), um zu bestimmen, ob das Feld übersetzt werden soll, und um automatisch Übersetzungsregeln zu erstellen. Diese Option ersetzt ggf. von Ihnen erstellte Übersetzungsregeln und erfordert keine Eingriffe oder zusätzlichen Schritte.
 
-Wenn Sie Übersetzungsregeln für die Übersetzung Ihrer Inhaltsfragmente verwenden möchten, wird die **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** -Option in der Framework-Konfiguration für die Übersetzungsintegration muss deaktiviert sein und Sie müssen die unten beschriebenen Schritte ausführen, um Ihre Regeln zu erstellen.
+Wenn Sie Übersetzungsregeln für die Übersetzung Ihrer Inhaltsfragmente verwenden möchten, muss die Option **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** in der Framework-Konfiguration für die Übersetzungsintegration deaktiviert sein und Sie müssen die unten beschriebenen Schritte ausführen, um Ihre Regeln zu erstellen.
 
 ## Übersicht {#overview}
 
@@ -167,11 +167,11 @@ In der Benutzeroberfläche für Übersetzungsregeln können Sie:
 
    ![Übersetzungskontext hinzufügen](../assets/add-translation-context.png)
 
-1. Verwenden Sie den Pfad-Browser, um den erforderlichen Kontext auszuwählen und die **Bestätigen** Schaltfläche zum Speichern.
+1. Verwenden Sie den Pfad-Browser, um den erforderlichen Kontext auszuwählen, und wählen Sie zum Speichern die Schaltfläche **Bestätigen** aus.
 
    ![Kontext auswählen](../assets/select-context.png)
 
-1. Anschließend müssen Sie Ihren Kontext auswählen und dann auf **Bearbeiten** klicken. Dadurch wird der Editor für Übersetzungsregeln geöffnet.
+1. Anschließend müssen Sie Ihren Kontext auswählen und dann auf **Bearbeiten** klicken. Hierdurch wird der Editor für Übersetzungsregeln geöffnet.
 
    ![Editor für Übersetzungsregeln](../assets/translation-rules-editor.png)
 

@@ -7,7 +7,7 @@ exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '3811'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -84,7 +84,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    Das neue Kennwort wird gespeichert, wenn Sie oben rechts auf der Seite **[!UICONTROL Dynamic Media-Konfiguration erstellen]** die Option **[!UICONTROL Speichern]** auswählen.
 
-   Wenn Sie **[!UICONTROL Abbrechen]** im **[!UICONTROL Kennwort ändern]** eingeben, müssen Sie beim Speichern der erstellten Dynamic Media-Konfiguration weiterhin ein neues Kennwort eingeben.
+   Wenn Sie im Dialogfeld **[!UICONTROL Kennwort ändern]** die Option **[!UICONTROL Abbrechen]** ausgewählt haben, müssen Sie dennoch ein neues Kennwort eingeben, wenn Sie die erstellte Dynamic Media-Konfiguration speichern.
 
    Weitere Informationen finden Sie unter [Ändern des Kennworts für Dynamic Media](#change-dm-password).
 

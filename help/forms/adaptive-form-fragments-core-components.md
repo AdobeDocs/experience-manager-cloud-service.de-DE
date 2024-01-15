@@ -8,7 +8,7 @@ exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1768'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
@@ -49,7 +49,7 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder ein Pane
 
      >[!NOTE]
      >
-     > In Adaptive Forms können Sie ein einzelnes Formularfragment (basierend auf Kernkomponenten) mehrmals verwenden. Es unterstützt nicht-basierte und schemabasierte Formularfragmente.
+     > In adaptiven Formularen können Sie ein einzelnes Formularfragment (basierend auf Kernkomponenten) mehrmals verwenden. Es unterstützt sowohl auf nichts basierende als auch schemabasierte Formularfragmente.
 
    * **Schema**: Das Fragment wird mithilfe eines XML- oder JSON-Schemas erstellt, das auf AEM Forms hochgeladen wurde. Sie können ein XML- oder JSON-Schema als Formularmodell hochladen oder aus den verfügbaren Schemata wählen. Wenn Sie ein XML-Schema auswählen, können Sie auch ein adaptives Formularfragment erstellen, indem Sie einen „complexType“ im ausgewählten Schema aus der Dropdown-Liste **[!UICONTROL XML-Schema – komplexer Typ]** auswählen. Wenn Sie ein JSON-Schema auswählen, können Sie auch ein adaptives Formularfragment erstellen, indem Sie eine Schemadefinition im ausgewählten Schema aus der Dropdown-Liste **[!UICONTROL JSON-Schemadefinitionen]** auswählen.
    * **Formulardatenmodell**: Gibt an, dass das Fragment mit einem Formulardatenmodell erstellt werden soll. Sie können ein adaptives Formularfragment auf Grundlage eines einzelnen Datenmodellobjekts in einem Formulardatenmodell erstellen. Erweitern Sie die Dropdown-Liste mit Definitionen für Formulardatenmodelle. Hier sind sämtliche Datenmodellobjekte im angegebenen Formulardatenmodell aufgelistet. Wählen Sie ein Datenmodellobjekt aus der Liste aus.
@@ -107,9 +107,9 @@ Perform the following steps to show complete fragments in forms:
 
 Sie können verschachtelte adaptive Formularfragmente erstellen, d. h. ein Fragment in ein anderes Fragment ziehen, um eine verschachtelte Fragmentstruktur zu erstellen.
 
-### Verwenden eines Formularfragments mehrmals in einem adaptiven Formular {#using-form-fragment-mutiple-times-in-af}
+### Mehrfaches Verwenden eines Formularfragments in einem adaptiven Formular {#using-form-fragment-mutiple-times-in-af}
 
-Sie können ein nicht-basiertes und schemabasiertes Formularfragment mehrmals in einem adaptiven Formular verwenden, um Daten für jedes Formularfragmentfeld eindeutig zu speichern. Sie können beispielsweise ein Adressformularfragment verwenden, um Adressdetails für permanente Kommunikation und die Darstellung lebender Adressen in einem Kreditantragsformular zu erfassen.
+Sie können ein nicht-basiertes und schemabasiertes Formularfragment mehrmals in einem adaptiven Formular verwenden, um Daten für jedes Formularfragmentfeld eindeutig zu speichern. Sie können beispielsweise ein Adressformularfragment verwenden, um Adressdetails permanent für die Kommunikation zu erfassen und aktive Adressen in einem Kreditantragsformular darzustellen.
 
 ![Verwenden mehrerer Fragmente im adaptiven Formular](/help/forms/assets/using-multiple-fragment-af.gif)
 

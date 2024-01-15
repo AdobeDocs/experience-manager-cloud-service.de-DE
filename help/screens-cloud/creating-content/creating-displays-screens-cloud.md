@@ -5,7 +5,7 @@ exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -27,7 +27,7 @@ In diesem Dokument erfahren Sie, wie Sie in Screens Services Provider Displays e
 Gehen Sie wie folgt vor, um das Display über Screens Services Provider zu erstellen:
 
 1. Gehen Sie von Ihrer AEM Cloud Service-Instanz zu Screens Services Provider.
-1. Auswählen **Anzeigen** Klicken Sie im linken Navigationsbereich auf **Erstellen** oben rechts im Bildschirm.
+1. Wählen Sie **Displays** aus dem linken Navigationsbereich und klicken Sie oben rechts im Bildschirm auf **Erstellen**.
 
    ![image](/help/screens-cloud/assets/display/disp-1.png)
 
@@ -35,7 +35,7 @@ Gehen Sie wie folgt vor, um das Display über Screens Services Provider zu erste
 
    ![image](/help/screens-cloud/assets/display/disp-2.png)
 
-1. Geben Sie den Titel als **LoopingChannelDisplay** in **Anzeigename** und klicken **Erstellen**.
+1. Geben Sie den Titel als **LoopingChannelDisplay** in **Display-Name** ein und klicken Sie auf **Erstellen**.
 
    ![image](/help/screens-cloud/assets/display/disp3.png)
 
@@ -47,7 +47,7 @@ Gehen Sie wie folgt vor, um das Display über Screens Services Provider zu erste
 
 Sie können ein Display über Screens Services Provider löschen.
 
-Wählen Sie die Anzeige aus und klicken Sie auf **Löschen** aus dem unteren Bereich des Bedienfelds, wie in der folgenden Abbildung dargestellt.
+Wählen Sie das Display aus und klicken Sie im unteren Bereich auf **Löschen**, wie in der folgenden Abbildung dargestellt.
 
 ![Bild](/help/screens-cloud/assets/display/disp-5.png)
 
@@ -118,7 +118,7 @@ Sie können Inhalte in die neuen Ordner verschieben, um Ihre Displays besser zu 
 
 ![image](/help/screens-cloud/assets/display/movetofolder.png)
 
-**Hinweis**: Der Ordner sollte in der Ordnerseitenleiste ausgewählt sein. Außerdem sollte die Breadcrumb-Navigation den aktuellen Ordnernamen neben **Anzeigen**.
+**Hinweis**: Der Ordner sollte in der Ordnerseitenleiste ausgewählt sein. Darüber hinaus sollte die Breadcrumb-Navigation den Namen des aktuellen Ordners neben **Displays** anzeigen.
 
 ## Löschen von Inhalt aus einem Ordner {#delete-folder}
 

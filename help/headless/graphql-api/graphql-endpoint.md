@@ -6,7 +6,7 @@ exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -62,9 +62,9 @@ So aktivieren Sie den entsprechenden Endpunkt:
 
 1. Gehen Sie zu **Tools**, **Allgemein** und wählen Sie **GraphQL** aus.
 1. Wählen Sie **Erstellen** aus.
-1. Die **Erstellen eines neuen GraphQL-Endpunkts** wird geöffnet. Hier können Sie Folgendes angeben:
+1. Das Dialogfeld **Neuen GraphQL-Endpunkt erstellen** wird geöffnet. Hier können Sie Folgendes angeben:
    * **Name**: Name des Endpunkts; Sie können einen beliebigen Text eingeben.
-   * **Verwenden des von bereitgestellten GraphQL-Schemas**: Wählen Sie über die Dropdownliste die gewünschte Site/das gewünschte Projekt aus.
+   * **GraphQL-Schema verwenden, das bereitgestellt wurde von**: Verwenden Sie das Dropdown-Menü, um die gewünschte Website/das gewünschte Projekt auszuwählen.
 
    >[!NOTE]
    >
@@ -73,7 +73,7 @@ So aktivieren Sie den entsprechenden Endpunkt:
    >* *GraphQL-Endpunkte können Probleme mit der Datensicherheit und Leistung verursachen, wenn sie nicht sorgfältig verwaltet werden. Stellen Sie sicher, dass die entsprechenden Berechtigungen festgelegt werden, nachdem Sie einen Endpunkt erstellt haben.*
 
 1. Bestätigen Sie mit **Erstellen**.
-1. Die **Nächste Schritte** -Dialogfeld bietet einen direkten Link zur Sicherheitskonsole, damit Sie sicherstellen können, dass der erstellte Endpunkt über geeignete Berechtigungen verfügt.
+1. Das Dialogfeld **Nächste Schritte** stellt einen direkten Link zur Sicherheitskonsole bereit, sodass Sie sicherstellen können, dass der neu erstellte Endpunkt über geeignete Berechtigungen verfügt.
 
    >[!CAUTION]
    >

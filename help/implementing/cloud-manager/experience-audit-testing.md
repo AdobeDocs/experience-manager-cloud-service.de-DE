@@ -5,7 +5,7 @@ exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '585'
-ht-degree: 82%
+ht-degree: 88%
 
 ---
 
@@ -27,7 +27,7 @@ Experience Audit ist eine Funktion, die in Cloud Manager Sites-Produktions-Pipel
 
 1. Führen Sie keine Regressionen ein.
 
-Experience Audit in Cloud Manager stellt sicher, dass das Benutzererlebnis auf der Site höchsten Standards entspricht.
+Experience Audit in Cloud Manager stellt sicher, dass das Erlebnis der Benutzenden auf der Site höchsten Standards entspricht.
 
 Die Ergebnisse des Audits sind rein informativ und ermöglichen es dem Bereitstellungs-Manager, die Bewertungen sowie die Unterschiede zwischen aktuellen und vorherigen Bewertungen anzuzeigen. Diese Erkenntnis ist wertvoll, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wurde.
 

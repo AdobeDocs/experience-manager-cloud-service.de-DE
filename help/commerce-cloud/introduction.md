@@ -6,7 +6,7 @@ exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
 source-wordcount: '853'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Marken können Experience Manager mit Adobe Commerce, das Teil von Adobe Experie
 Diese Projekte müssen die Komplexität der Integration einer Commerce-Lösung bewältigen. Eine Commerce-Lösung kann eine beliebige Lösung sein, von einer Lösung für den Handel wie Adobe Commerce Cloud bis hin zu einer Reihe anwenderdefinierter Commerce-Services. Die Integration hängt in hohem Maße von den Nutzungsszenarios und dem Ökosystem ab. Sie wirkt sich in der Regel auf verschiedene Bereiche aus und kann in unterschiedlichster Formen erfolgen:
 
 * Integration eines komplexen und dynamischen Ökosystems (Beispiel: Produktkataloge)
-* Unternehmen müssen Produktinhalte mit ihrem eigenen Lebenszyklus effizient und kanalübergreifend verwalten
+* Notwendigkeit für Unternehmen, Produktinhalte mit eigenem Lebenszyklus effizient und kanalübergreifend zu verwalten
 * Erstellung komplexer und personalisierter Customer Journeys für verschiedene Leads
 * Fähigkeit, sich schnell anzupassen und Innovationen am Back- und Frontend zu entwickeln
 * Betrieb einer skalierbaren und stabilen E2E-Infrastruktur, die für Spitzenleistung entwickelt wurde (Flash Sale, Black Friday, ...), darunter eine einheitliche Such- und Cache-Verwaltung

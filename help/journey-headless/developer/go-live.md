@@ -5,7 +5,7 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -67,7 +67,7 @@ Nachdem Sie sichergestellt haben, dass alles getestet wurde und ordnungsgemäß 
 
 Nachdem die Aktualisierungen in Cloud Manager hochgeladen wurden, können sie mit der [CI/CD-Pipeline von Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de) in AEM as a Cloud Service bereitgestellt werden.
 
-Sie können mit der Bereitstellung Ihres Codes mit der CI/CD-Pipeline von Cloud Manager beginnen, die ausführlich behandelt wird [here](/help/implementing/deploying/overview.md).
+Sie können mit der Bereitstellung Ihres Codes beginnen, indem Sie die CI/CD-Pipeline von Cloud Manager nutzen, die [hier](/help/implementing/deploying/overview.md) ausführlich erörtert wird.
 
 ## Leistungsüberwachung {#performance-monitoring}
 
@@ -131,8 +131,8 @@ Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem opt
 ## Zusätzliche Ressourcen {#additional-resources}
 
 * [Einführung in AEM als Headless-CMS](/help/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
-* [Tutorials für Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)
+* [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* [Headless-Tutorials für AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)
 * [Ein Überblick über das Bereitstellen für AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Verwenden von Cloud Manager zur Bereitstellung von Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de)
 * [Integrieren des Cloud Manager-Git-Repositorys mit einem externen Git-Repository und Bereitstellen eines Projekts in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=de)

@@ -7,13 +7,13 @@ exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
 source-wordcount: '3125'
-ht-degree: 60%
+ht-degree: 95%
 
 ---
 
 # Inhaltsfragmentmodelle {#content-fragment-models}
 
-Inhaltsfragmentmodelle in Adobe Experience Manager (AEM) as a Cloud Service definieren die Inhaltsstruktur Ihrer [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md). Diese Fragmente können dann für die Seitenbearbeitung oder als Grundlage für Ihren Headless Content verwendet werden.
+In Inhaltsfragmentmodellen in Adobe Experience Manager (AEM) as a Cloud Service wird die Struktur des Inhalts Ihrer [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) definiert. Diese Fragmente können dann für die Seitenbearbeitung oder als Grundlage für Ihre Headless-Inhalte verwendet werden.
 
 So verwenden Sie Inhaltsfragmentmodelle:
 
@@ -25,20 +25,20 @@ So verwenden Sie Inhaltsfragmentmodelle:
 ## Erstellen eines Inhaltsfragmentmodells {#creating-a-content-fragment-model}
 
 1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann **Inhaltsfragmentmodelle**.
-1. Navigieren Sie zu dem Ordner, der Ihrer [Konfiguration oder Unterkonfiguration](/help/sites-cloud/administering/content-fragments/setup.md).
+1. Navigieren Sie zu dem Ordner, der Ihrer [Konfiguration oder Unterkonfiguration](/help/sites-cloud/administering/content-fragments/setup.md) entspricht.
 1. Verwenden Sie **Erstellen**, um den Assistenten zu öffnen.
 
    >[!CAUTION]
    >
-   >Wenn die Variable [Verwendung von Inhaltsfragmentmodellen wurde nicht aktiviert](/help/sites-cloud/administering/content-fragments/setup.md), die **Erstellen** nicht verfügbar.
+   >Wenn die [Verwendung von Inhaltsfragmentmodellen nicht aktiviert wurde](/help/sites-cloud/administering/content-fragments/setup.md), ist die Option **Erstellen** nicht verfügbar.
 
 1. Geben Sie den **Modelltitel** an.
-Sie können auch verschiedene Eigenschaften definieren, beispielsweise **Tags**, a **Beschreibung** auswählen **Modell aktivieren** nach [das Modell aktivieren](#enabling-disabling-a-content-fragment-model) bei Bedarf und definieren Sie die
-   **Standard-URL-Vorschaumuster**.
+Sie können auch verschiedene Eigenschaften definieren, zum Beispiel: **Tags**, und eine **Beschreibung** hinzufügen sowie **Modell aktivieren** auswählen, um bei Bedarf das [Modell zu aktivieren](#enabling-disabling-a-content-fragment-model) und die.
+   **standardmäßige Echtzeitansicht für URL-Muster** zu definieren.
 
    >[!NOTE]
    >
-   >Siehe [Inhaltsfragmentmodell - Eigenschaften](#content-fragment-model-properties) für ausführliche Informationen.
+   >Weitere Informationen finden Sie unter [Inhaltsfragmentmodell – Eigenschaften](#content-fragment-model-properties).
 
    ![Titel und Beschreibung](assets/cf-cfmodels-create.png)
 
@@ -46,18 +46,18 @@ Sie können auch verschiedene Eigenschaften definieren, beispielsweise **Tags**,
 
 ### Inhaltsfragmentmodell – Eigenschaften {#content-fragment-model-properties}
 
-Diese Eigenschaften werden beim Erstellen eines Modells definiert und können später mit der **Eigenschaften** -Option für das Inhaltsfragmentmodell:
+Diese Eigenschaften werden beim Erstellen eines Modells definiert und können später mit der Option **Eigenschaften** für das Inhaltsfragmentmodell definiert werden:
 
 * **Allgemein**
    * **Modell-Titel**
    * **Tags**
    * **Beschreibung**
    * **Modell aktivieren**
-   * **Standard-URL-Vorschaumuster**
-Der Inhaltsfragment-Editor ermöglicht es Autoren, **Vorschau** ihren Inhalt in einer externen Frontend-Anwendung. Einmal die **Vorschaufunktion** konfiguriert ist, fügen Sie die URL für die Frontend-Anwendung hinzu.
+   * **Standardmäßige Echtzeitansicht für URL-Muster**
+Der Inhaltsfragmenteditor ermöglicht es Autorinnen und Autoren, ihren Inhalt in einer externen Frontend-Anwendung in der **Vorschau** anzuzeigen. Sobald der **Vorschau-Service** konfiguriert ist, können Sie die URL für die Frontend-Anwendung hinzufügen.
 
      Die Vorschau-URL sollte diesem Muster entsprechen:
-    `https://<preview_url>?param=${expression}`
+`https://<preview_url>?param=${expression}`
 
      Verfügbare Ausdrücke sind:
 
@@ -84,7 +84,7 @@ Der Inhaltsfragment-Editor ermöglicht es Autoren, **Vorschau** ihren Inhalt in 
 
 ## Definieren des Inhaltsfragmentmodells {#defining-your-content-fragment-model}
 
-Das Inhaltsfragmentmodell definiert die Struktur der resultierenden Inhaltsfragmente mithilfe einer Auswahl von **[Datentypen](#data-types)**. Mithilfe des Modell-Editors können Sie Instanzen der Datentypen hinzufügen und diese dann so konfigurieren, dass die erforderlichen Felder erstellt werden:
+Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inhaltsfragmente unter Verwendung unterschiedlicher **[Datentypen](#data-types)**. Mithilfe des Modell-Editors können Sie Instanzen der Datentypen hinzufügen und diese dann so konfigurieren, dass die erforderlichen Felder erstellt werden:
 
 >[!CAUTION]
 >
@@ -92,7 +92,7 @@ Das Inhaltsfragmentmodell definiert die Struktur der resultierenden Inhaltsfragm
 
 1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann **Inhaltsfragmentmodelle**.
 
-1. Navigieren Sie zum Ordner mit Ihrem Inhaltsfragmentmodell.
+1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
 1. Öffnen Sie das zu **bearbeitende** Modell; nutzen Sie dazu entweder die entsprechende Schnellaktion oder wählen Sie das Modell und anschließend die Aktion aus der Symbolleiste aus.
 
    Nach dem Öffnen zeigt der Modell-Editor Folgendes an:
@@ -102,7 +102,7 @@ Das Inhaltsfragmentmodell definiert die Struktur der resultierenden Inhaltsfragm
 
    >[!NOTE]
    >
-   >Wenn ein Feld als **Erforderlich**, die **Titel** im linken Bereich mit einem Sternchen (**&#42;**).
+   >Wenn ein Feld als **Pflichtfeld** definiert ist, wird die **Bezeichnung** im linken Bereich mit einem Stern (**&#42;**) markiert.
 
 ![Eigenschaften](assets/cf-cfmodels-empty-model.png)
 
@@ -119,7 +119,7 @@ Das Inhaltsfragmentmodell definiert die Struktur der resultierenden Inhaltsfragm
 
         >[!CAUTION]
         >
-        >Beim manuellen Aktualisieren der Eigenschaft **Eigenschaftsname** für einen Datentyp müssen Namen *only* A-Z, a-z, 0-9 und Unterstrich &quot;_&quot;als Sonderzeichen.
+        >Wenn Sie die Eigenschaft **Eigenschaftsname** für einen Datentyp manuell aktualisieren, dürfen die Namen *nur* A–Z, a–z, 0–9 und den Unterstrich „_“ als Sonderzeichen enthalten.
         >
         >Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
@@ -127,9 +127,9 @@ Das Inhaltsfragmentmodell definiert die Struktur der resultierenden Inhaltsfragm
 
      ![Feldeigenschaften](assets/cf-cfmodels-field-properties.png)
 
-1. **Entfernen eines Feldes**
+1. **So entfernen Sie ein Feld**
 
-   Wählen Sie das gewünschte Feld aus und wählen Sie dann das Papierkorbsymbol aus. Sie werden aufgefordert, die Aktion zu bestätigen.
+   Wählen Sie das entsprechende Feld aus und wählen Sie das Papierkorb-Symbol aus. Sie werden aufgefordert, die Aktion zu bestätigen.
 
    ![Entfernen](assets/cf-cfmodels-remove-icon.png)
 
@@ -146,13 +146,13 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 * **Einzeilentext**
    * Fügen Sie ein oder mehrere Felder mit einer einzelnen Textzeile hinzu. Die maximale Länge kann festgelegt werden.
 * **Mehrzeilentext**
-   * Ein Textbereich, der Rich Text, Plain Text oder Markdown sein kann
+   * Ein Textbereich, der Rich Text, Nur Text oder Markdown sein kann
 
   >[!NOTE]
   >
-  >Ob der Textbereich Rich Text, Nur Text oder Markdown ist, wird im Modell durch die Eigenschaft definiert **Standardtyp**.
+  >Ob es sich bei dem Textbereich um Rich Text, Nur Text oder Markdown handelt, wird im Modell durch die Eigenschaft **Standardtyp** definiert.
   >
-  >Dieses Format kann nicht über die [Inhaltsfragmente-Editor](/help/sites-cloud/administering/content-fragments/authoring.md), aber nur vom Modell.
+  >Dieses Format kann nicht über den [Inhaltsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md), sondern nur vom Modell aus geändert werden.
 
 * **Zahl**
    * Fügen Sie ein oder mehrere numerische Felder hinzu.
@@ -161,25 +161,25 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 * **Datum und Uhrzeit**
    * Fügen Sie ein Datum und/oder eine Uhrzeit hinzu.
 * **Aufzählung**
-   * Hinzufügen von Kontrollkästchen, Optionsfeldern oder Dropdown-Listenfeldern
+   * Hinzufügen einer Reihe von Kontrollkästchen, Optionsfeldern oder Dropdown-Feldern
 * **Tags**
    * Ermöglicht Fragmentautoren den Zugriff auf und die Auswahl von Tag-Bereichen.
 * **Inhaltsreferenz**
    * Verweist auf andere Inhalte jeden Typs. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
    * Wenn ein Bild referenziert wird, kann wahlweise eine Miniatur angezeigt werden.
 * **Fragmentreferenz**
-   * Verweise auf andere Inhaltsfragmente; kann verwendet werden für [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content)
+   * Verweist auf andere Inhaltsfragmente. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
    * Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
       * Direktes Bearbeiten des referenzierten Fragments
-      * Erstellen Sie ein neues Inhaltsfragment basierend auf dem entsprechenden Modell
+      * Erstellen eines neuen Inhaltsfragments basierend auf dem entsprechenden Modell
 * **JSON-Objekt**
-   * Ermöglicht dem Inhaltsfragmentautor die Eingabe der JSON-Syntax in die entsprechenden Elemente eines Fragments.
+   * Ermöglicht es der Autorin bzw. dem Autor des Inhaltsfragments, JSON-Syntax in die entsprechenden Elemente eines Fragments einzugeben.
       * Damit AEM direktes JSON speichern kann, das Sie von einem anderen Service kopiert/eingefügt haben.
       * Das JSON wird weitergegeben und als JSON in GraphQL ausgegeben.
-      * Enthält JSON-Syntaxhervorhebung, automatische Vervollständigung und Fehlerhervorhebung im Inhaltsfragment-Editor.
+      * Umfasst JSON-Syntaxhervorhebung, automatische Vervollständigung und Fehlerhervorhebung im Inhaltsfragmenteditor.
 * **Registerkarten-Platzhalter**
-   * Ermöglicht die Einführung von Registerkarten zur Bearbeitung des Inhaltsfragmentinhalts.
-      * Diese werden als Trennzeichen im Modell-Editor angezeigt, wobei Abschnitte der Liste der Inhaltsdatentypen getrennt werden. Jede Instanz stellt den Beginn einer neuen Registerkarte dar.
+   * Ermöglicht die Einführung von Registerkarten zur Bearbeitung des Inhalts von Inhaltsfragmenten.
+      * Dies wird als Trennzeichen im Modell-Editor angezeigt, das Abschnitte der Liste der Inhaltsdatentypen trennt. Jede Instanz stellt den Beginn einer neuen Registerkarte dar.
       * Im Fragment-Editor wird jede Instanz als Registerkarte angezeigt.
 
      >[!NOTE]
@@ -192,7 +192,7 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
 
 * **Eigenschaftsname**
 
-  Beim manuellen Aktualisieren dieser Eigenschaft für einen Datentyp werden Namen **must** contain *only* A-Z, a-z, 0-9 und Unterstrich &quot;_&quot;als Sonderzeichen.
+  Wenn Sie diese Eigenschaft für einen Datentyp manuell aktualisieren, **dürfen** die Namen *nur* A–Z, a–z, 0–9 und den Unterstrich „_“ als Sonderzeichen enthalten.
 
   >[!CAUTION]
   >
@@ -203,7 +203,7 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
   Die verschiedenen Optionen zum Realisieren/Rendern des Felds in einem Fragment. Häufig können Sie damit definieren, ob dem Autor eine einzelne Instanz des Felds angezeigt wird oder ob er mehrere Instanzen erstellen darf. Wann **Mehrere Felder** verwendet wird, können Sie die Mindest- und Höchstanzahl der Elemente definieren - siehe [Validierung](#validation) für weitere Informationen.
 
 * **Feldbezeichnung**
-Eingabe einer **Feldbezeichnung** automatisch generiert eine **Eigenschaftsname**, die dann bei Bedarf manuell aktualisiert werden kann.
+Das Eingeben einer **Feldbezeichnung** generiert automatisch einen **Eigenschaftsnamen**, der dann bei Bedarf manuell aktualisiert werden kann.
 
 * **Validierung**
 Die grundlegende Basic ist mittels Mechanismen wie etwa die Eigenschaft **Erforderlich** verfügbar. Einige Datentypen verfügen über zusätzliche Validierungsfelder. Weitere Informationen finden Sie unter [Validierung](#validation).
@@ -216,10 +216,10 @@ Die grundlegende Basic ist mittels Mechanismen wie etwa die Eigenschaft **Erford
 
   Wenn Sie keinen Typ angeben, wird der Standardwert **Rich-Text** in diesem Feld verwendet.
 
-  Ändern der **Standardtyp** in einem Inhaltsfragmentmodell wird nur auf ein vorhandenes, zugehöriges Inhaltsfragment wirksam, nachdem dieses Fragment im Editor geöffnet und gespeichert wurde.
+  Änderungen am **Standardtyp** in einem Fragmentmodell werden erst dann auf vorhandene, zugehörige Inhaltsfragmente angewendet, wenn das Fragment im Editor geöffnet und gespeichert wurde.
 
 * **Eindeutig**
-Der Inhalt (für das spezifische Feld) muss für alle Inhaltsfragmente eindeutig sein, die vom aktuellen Modell erstellt werden.
+Der Inhalt (für das spezifische Feld) muss für alle Inhaltsfragmente, die anhand des aktuellen Modells erstellt werden, eindeutig sein.
 
   Dadurch wird sichergestellt, dass Inhaltsersteller Content, der bereits einem anderen Fragment desselben Modells hinzugefügt wurde, nicht wiederholen können.
 
@@ -257,7 +257,7 @@ Verschiedene Datentypen bieten jetzt die Möglichkeit, Validierungsanforderungen
    * Es können nur Assets bis zur angegebenen maximalen Dateigröße referenziert werden.
    * Es können nur Bilder in einem vordefinierten Bereich von Breite und/oder Höhe (in Pixel) referenziert werden.
 * **Fragmentreferenz**
-   * Testen Sie auf ein bestimmtes Inhaltsfragmentmodell.
+   * Testen Sie, ob ein bestimmtes Inhaltsfragmentmodell vorhanden ist.
 * **Mindestanzahl von Elementen** / **Maximale Elementanzahl**
 
   Felder, die als **Mehrere Felder** (festgelegt mit **Rendern als**) haben die Optionen:
@@ -280,38 +280,38 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
    * Ermöglicht das Einschließen/Abrufen strukturierter Daten.
      >[!NOTE]
      >
-     >Diese Methode ist bei der Verwendung von [Headless-Content-Bereitstellung mit Inhaltsfragmenten mit GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
-   * Kann für eine oder mehrere Verweise (im resultierenden Fragment) konfiguriert werden.
+     >Diese Methode ist vor allem bei der Verwendung in Verbindung mit der [Headless-Inhaltsbereitstellung mittels Inhaltsfragmenten mit GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) interessant.
+   * Kann für einen oder mehrere Verweise konfiguriert werden (im resultierenden Fragment).
 
 >[!NOTE]
 >
->AEM bietet Wiederholungsschutz für:
+>AEM bietet Schutz vor Wiederholungen für:
 >
->* Inhaltsreferenzen
->  Dies verhindert, dass der Benutzer einen Verweis zum aktuellen Fragment hinzufügt, und kann zu einem leeren Dialogfeld für die Auswahl der Fragmentverweise führen.
+>* Inhaltsverweise
+>  Dies verhindert, dass Benutzende einen Verweis zum aktuellen Fragment hinzufügen, und kann zu einem leeren Auswahldialogfeld der Fragmentreferenzen führen.
 >
->* Fragmentverweise in GraphQL
->  Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, auf die sich gegenseitig verweisen, wird beim ersten Auftreten null zurückgegeben.
+>* Fragmentreferenzen in GraphQL
+>  Wenn Sie eine tiefe Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten null zurück.
 
 ### Inhaltsreferenz {#content-reference}
 
-Mit der Inhaltsreferenz können Sie Inhalte aus einer anderen Quelle rendern, z. B. Bild, Seite oder Experience Fragment.
+Mit der Inhaltsreferenz können Sie Inhalte aus einer anderen Quelle rendern, zum Beispiel ein Bild, eine Seite oder ein Inhaltsfragment.
 
 Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
-* Die **Stammverzeichnis**, der angibt, wo referenzierte Inhalte gespeichert werden sollen
+* Das **Stammverzeichnis**, das angibt, wo referenzierte Inhalte gespeichert werden sollen
   >[!NOTE]
   >
-  >Dies ist erforderlich, wenn Sie Bilder in diesem Feld bei Verwendung des Inhaltsfragment-Editors direkt hochladen und referenzieren möchten.
+  >Dies ist erforderlich, wenn Sie mit dem Inhaltsfragmenteditor Bilder in diesem Feld direkt hochladen und referenzieren möchten.
   >
-  >Siehe [Referenzbilder](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) für weitere Informationen.
+  >Siehe [Bilder referenzieren](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) für weitere Informationen.
 
 * Die Inhaltstypen, auf die verwiesen werden kann
   >[!NOTE]
   >
-  >Diese müssen **Bild** , wenn Sie Bilder in diesem Feld bei Verwendung des Inhaltsfragment-Editors direkt hochladen und referenzieren möchten.
+  >Dazu gehören **Bilder**, wenn Sie mit dem Inhaltsfragmenteditor Bilder in diesem Feld direkt hochladen und referenzieren möchten.
   >
-  >Siehe [Referenzbilder](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) für weitere Informationen.
+  >Siehe [Bilder referenzieren](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) für weitere Informationen.
 
 * Einschränkungen bezüglich der Dateigrößen
 * Wenn ein Bild referenziert wird:
@@ -322,12 +322,12 @@ Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
 ### Fragmentreferenz (verschachtelte Fragmente) {#fragment-reference-nested-fragments}
 
-Die Fragmentreferenz verweist auf ein oder mehrere Inhaltsfragmente. Diese Funktion ist besonders beim Abrufen von Inhalten für die Verwendung in Ihrer App interessant, da Sie damit strukturierte Daten mit mehreren Ebenen abrufen können.
+Die Fragmentreferenz verweist auf ein oder mehrere Inhaltsfragmente. Diese Funktion ist besonders beim Abrufen von Inhalten für die Verwendung in Ihrem Programm interessant, da sie es Ihnen ermöglicht, strukturierte Daten mit mehreren Ebenen abzurufen.
 
 Zum Beispiel:
 
-* Ein Modell, das Details für einen Mitarbeiter definiert, einschließlich:
-   * Ein Verweis auf das Modell, das den Arbeitgeber definiert (Firma)
+* Ein Modell, das Details für eine Mitarbeiterin oder einen Mitarbeiter definiert, beispielsweise:
+   * Ein Verweis auf das Modell, das den Arbeitgeber (Firma) definiert
 
 ```xml
 type EmployeeModel {
@@ -345,7 +345,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->Fragmentverweise sind für [Headless-Content-Bereitstellung mit Inhaltsfragmenten mit GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+>Fragmentreferenzen sind für die [Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) besonders interessant.
 
 Zusätzlich zu den Standardeigenschaften können Sie Folgendes definieren:
 
@@ -356,7 +356,7 @@ Zusätzlich zu den Standardeigenschaften können Sie Folgendes definieren:
    * **fragmentreference**: Der Fragmentautor kann einen einzelnen Verweis auf ein Fragment auswählen.
 
 * **Modelltyp**
-Es können mehrere Modelle ausgewählt werden. Beim Hinzufügen von Verweisen zu einem Inhaltsfragment müssen alle referenzierten Fragmente mit diesen Modellen erstellt worden sein.
+Es können mehrere Modelle ausgewählt werden. Beim Hinzufügen von Referenzen zu einem Inhaltsfragment müssen alle referenzierten Fragmente mit diesen Modellen erstellt worden sein.
 
 * **Stammpfad**
 Gibt einen Stammpfad für referenzierte Fragmente an.
@@ -371,25 +371,25 @@ Gibt einen Stammpfad für referenzierte Fragmente an.
 
 >[!NOTE]
 >
->Es gibt einen Mechanismus zum Wiederholungsschutz. Es untersagt dem Benutzer, das aktuelle Inhaltsfragment in der Fragmentreferenz auszuwählen, und kann zu einem leeren Dialogfeld für die Auswahl von Fragmentverweisen führen.
+>Es gibt einen Mechanismus zum Wiederholungsschutz. Er hindert Benutzende daran, das aktuelle Inhaltsfragment in der Fragmentreferenz auszuwählen, und kann zu einem leeren Auswahldialogfeld der Fragmentreferenzen führen.
 >
->Es gibt auch Wiederholungsschutz für Fragmentverweise in GraphQL. Wenn Sie eine tiefe Abfrage über zwei Inhaltsfragmente erstellen, die gegenseitig aufeinander verweisen, wird null zurückgegeben.
+>Es gibt auch einen Wiederholungsschutz für Fragmentreferenzen in GraphQL. Wenn Sie eine tiefe Abfrage über zwei Inhaltsfragmente hinweg erstellen, die gegenseitig aufeinander verweisen, wird null zurückgegeben.
 
 ## Aktivieren oder Deaktivieren von Inhaltsfragmentmodellen {#enabling-disabling-a-content-fragment-model}
 
-Sie können **Aktivieren** oder **Deaktivieren** Ihre Inhaltsfragmentmodelle, um deren Verwendung vollständig zu kontrollieren.
+Sie können Ihre Inhaltsfragmentmodelle **aktivieren** oder **deaktivieren**, um deren Verwendung vollständig zu kontrollieren.
 
 ### Aktivieren eines Inhaltsfragmentmodells {#enabling-a-content-fragment-model}
 
-Nachdem ein Modell erstellt wurde, muss es aktiviert werden, damit es:
+Nachdem ein Modell erstellt wurde, muss es aus folgenden Gründen aktiviert werden:
 
-* Kann beim Erstellen eines Inhaltsfragments ausgewählt werden.
+* Damit es zur Auswahl steht, wenn ein neues Inhaltsfragment erstellt wird.
 * Damit es in einem Inhaltsfragmentmodell referenziert werden kann.
 * Damit es für GraphQL verfügbar ist, sodass das Schema generiert wird.
 
 So aktivieren Sie ein Modell, das folgendermaßen gekennzeichnet ist:
 
-* **Entwurf** : neu (nie aktiviert).
+* **Entwurf**: neu (noch nie aktiviert).
 * **Deaktiviert**: wurde eigens deaktiviert.
 
 Sie verwenden die Option **Aktivieren** aus einem der folgenden Bereiche:
@@ -432,7 +432,7 @@ So konfigurieren Sie die **Richtlinien** für **Zulässige Inhaltsfragmentmodell
 
    * **Vererbt von`<folder>`**
 
-     Richtlinien werden beim Erstellen neuer untergeordneter Ordner automatisch vererbt. Die Richtlinie kann neu konfiguriert werden (und die Vererbung ist unterbrochen), wenn Unterordner Modelle zulassen müssen, die sich vom übergeordneten Ordner unterscheiden.
+     Richtlinien werden beim Erstellen untergeordneter Ordner automatisch übernommen. Die Richtlinie kann neu konfiguriert (und die Vererbung aufgehoben) werden, wenn für Unterordner Modelle zugelassen werden müssen, die vom übergeordneten Ordner abweichen.
 
    * **Zugelassene Inhaltsfragmentmodelle nach Pfad**
 
@@ -462,7 +462,7 @@ So löschen Sie ein Inhaltsfragmentmodell:
 
 1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann **Inhaltsfragmentmodelle**.
 
-1. Navigieren Sie zum Ordner mit Ihrem Inhaltsfragmentmodell.
+1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
 1. Wählen Sie Ihr Modell und anschließend die Option **Löschen** aus der Symbolleiste aus.
 
    >[!NOTE]
@@ -471,37 +471,37 @@ So löschen Sie ein Inhaltsfragmentmodell:
 
 ## Veröffentlichen eines Inhaltsfragmentmodells {#publishing-a-content-fragment-model}
 
-Inhaltsfragmentmodelle müssen veröffentlicht werden, wenn/bevor abhängige Inhaltsfragmente veröffentlicht werden.
+Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlichung abhängiger Inhaltsfragmente veröffentlicht werden.
 
 So veröffentlichen Sie ein Inhaltsfragmentmodell:
 
 1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann **Inhaltsfragmentmodelle**.
 
-1. Navigieren Sie zum Ordner mit Ihrem Inhaltsfragmentmodell.
-1. Wählen Sie Ihr Modell und anschließen die Option **Veröffentlichen** aus der Symbolleiste aus.
-Der veröffentlichte Status wird in der Konsole angezeigt.
+1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
+1. Wählen Sie Ihr Modell und anschließend die Option **Veröffentlichen** aus der Symbolleiste aus.
+Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
 
    >[!NOTE]
    >
-   >Wenn Sie ein Inhaltsfragment veröffentlichen, für das das Modell noch nicht veröffentlicht wurde, wird dies in einer Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+   >Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell mit dem Fragment veröffentlicht.
 
 ## Rückgängigmachen der Veröffentlichung eines Inhaltsfragmentmodells {#unpublishing-a-content-fragment-model}
 
-Die Veröffentlichung von Inhaltsfragmentmodellen kann aufgehoben werden, wenn sie nicht von Fragmenten referenziert werden.
+Die Veröffentlichung von Inhaltsfragmentmodellen kann rückgängig gemacht werden, sofern sie nicht von Fragmenten referenziert werden.
 
 So machen Sie die Veröffentlichung eines Inhaltsfragmentmodells rückgängig:
 
 1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann **Inhaltsfragmentmodelle**.
 
-1. Navigieren Sie zum Ordner mit Ihrem Inhaltsfragmentmodell.
+1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
 1. Wählen Sie Ihr Modell und anschließen die Option **Veröffentlichung aufheben** aus der Symbolleiste aus.
 Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
 
-Wenn Sie versuchen, die Veröffentlichung eines Modells aufzuheben, das derzeit von einem oder mehreren Fragmenten verwendet wird, wird eine Fehlerwarnung angezeigt. Zum Beispiel:
+Wenn Sie versuchen, die Veröffentlichung eines Modells aufzuheben, das aktuell von einem oder mehreren Fragmenten verwendet wird, dann wird Ihnen eine Fehlermeldung angezeigt. Zum Beispiel:
 
 ![Fehlermeldung zum Inhaltsfragmentmodell beim Rückgängigmachen der Veröffentlichung eines verwendeten Modells](assets/cf-cfmodels-unpublish-error.png)
 
-Die Nachricht weist darauf hin, dass Sie die [Verweise](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) -Gremium weiter zu untersuchen:
+In der Meldung wird vorgeschlagen, dass Sie das Bedienfeld [Verweise](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) überprüfen, um weitere Nachforschungen anzustellen:
 
 ![Inhaltsfragmentmodell in Verweisen](assets/cf-cfmodels-references.png)
 
@@ -527,11 +527,11 @@ Diese Funktion bietet Governance für Inhaltsfragmentmodelle, die veröffentlich
 
 * Außerdem die Vermeidung von unbeabsichtigten Änderungen.
 
-Jedes dieser Kriterien kann Abfragen unterbrechen, wenn die geänderten Modelle erneut veröffentlicht werden.
+In beiden Fällen können Abfragen beschädigt werden, wenn die geänderten Modelle erneut veröffentlicht werden.
 
 ### Die Lösung {#the-solution}
 
-Um diese Probleme zu lösen, werden die Inhaltsfragmentmodelle in der Autorenumgebung durch einen SCHREIBGESCHÜTZTEN Modus *gesperrt*, sobald sie veröffentlicht wurden. Dieser Status wird durch **Gesperrt**:
+Um diese Probleme zu lösen, werden die Inhaltsfragmentmodelle in der Autorenumgebung durch einen SCHREIBGESCHÜTZTEN Modus *gesperrt*, sobald sie veröffentlicht wurden. Dieser Status wird durch **Gesperrt** angezeigt:
 
 ![Karte des gesperrten Inhaltsfragmentmodells](assets/cf-cfmodels-locked.png)
 
@@ -547,13 +547,13 @@ Sie können **Gesperrte** Modelle entweder aus der Konsole heraus oder im Modell
 
    * Sie können ein Modell zum Aktivieren von Bearbeitungen **Entsperren**.
 
-     Wenn Sie **Entsperren** ein Warnhinweis angezeigt wird, und Sie müssen die **Entsperren** Aktion:
+     Wenn Sie **Entsperren** wählen, wird eine Warnung angezeigt, und Sie müssen die **Entsperren**-Aktion bestätigen:
      ![Meldung beim Entsperren des Inhaltsfragmentmodells](assets/cf-cfmodels-unlock-message.png)
 
      Anschließend können Sie das Modell zum Bearbeiten öffnen.
 
    * Sie können das Modell anschließend auch wieder **Sperren**.
-   * Wenn Sie das Modell erneut veröffentlichen, wird es sofort an **Gesperrt** (SCHREIBGESCHÜTZT).
+   * Wenn Sie das Modell erneut veröffentlichen, wird es sofort wieder in den Modus **Gesperrt** (SCHREIBGESCHÜTZT) zurückgesetzt.
 
 * Modell-Editor
 
@@ -561,11 +561,11 @@ Sie können **Gesperrte** Modelle entweder aus der Konsole heraus oder im Modell
 
      ![Meldung beim Anzeigen eines gesperrten Inhaltsfragmentmodells](assets/cf-cfmodels-editor-lock-message.png)
 
-   * Wenn Sie **Schreibgeschützt anzeigen**, können Sie den Inhalt und die Struktur des Modells sehen:
+   * Wenn Sie **Schreibgeschützt anzeigen** auswählen, können Sie den Inhalt und die Struktur des Modells sehen:
 
      ![Schreibgeschützt anzeigen – gesperrtes Inhaltsfragmentmodell](assets/cf-cfmodels-editor-locked-view-only.png)
 
-   * Wenn Sie **Bearbeiten** können Sie Ihre Aktualisierungen bearbeiten und speichern:
+   * Wenn Sie **Bearbeiten** auswählen, können Sie Ihre Änderungen bearbeiten und speichern:
 
      ![Bearbeiten – gesperrtes Inhaltsfragmentmodell](assets/cf-cfmodels-editor-locked-edit.png)
 
@@ -573,4 +573,4 @@ Sie können **Gesperrte** Modelle entweder aus der Konsole heraus oder im Modell
      >
      >Oben kann noch eine Warnung angezeigt werden. In diesem Fall wird das Modell jedoch bereits von vorhandenen Inhaltsfragmenten verwendet.
 
-   * **Abbrechen** kehrt Sie zur Konsole zurück.
+   * Mit **Abbrechen** kehren Sie zur Konsole zurück.

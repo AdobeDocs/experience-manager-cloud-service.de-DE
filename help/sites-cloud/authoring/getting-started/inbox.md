@@ -1,11 +1,11 @@
 ---
 title: Ihr Posteingang
-description: Erfahren Sie, wie Sie mit den Benachrichtigungen, die in Ihren Posteingang eintreffen, Ihre Aufgaben verwalten können.
+description: Erfahren Sie, wie Sie Ihre Aufgaben mit den Benachrichtigungen verwalten können, die in Ihrem Posteingang eintreffen.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 88%
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten (dar
       * Diese sind das Ergebnis von **Teilnehmer**-Workflow-Schritten.
    * Fehlgeschlagene Elemente, die Administratoren darauf hinweisen, einen fehlgeschlagenen Schritt erneut auszuführen.
 
-Sie erhalten diese Benachrichtigungen in Ihrem eigenen Posteingang, in dem Sie sie anzeigen und bearbeiten können.
+Sie erhalten diese Benachrichtigung in Ihrem eigenen Posteingang, in dem Sie diese anzeigen und darauf reagieren können.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
 
 1. Wählen Sie die Anzeige in der Symbolleiste aus.
 
-1. Wählen Sie **Alle anzeigen** aus. Die **AEM Posteingang** geöffnet. Im Posteingang werden Elemente aus den Bereichen Workflows, Projekte und Aufgaben angezeigt.
+1. Wählen Sie **Alle anzeigen** aus. Der **AEM-Posteingang** wird geöffnet. Im Posteingang werden Elemente aus den Bereichen Workflows, Projekte und Aufgaben angezeigt.
 1. Die Standardansicht ist die [Listenansicht](#inbox-list-view), Sie können aber auch zur [Kalenderansicht ](#inbox-calendar-view)wechseln. Dies erfolgt mit der Ansichtsauswahl (Symbolleiste oben rechts).
 
    Für beide Ansichten können Sie die [Anzeigeeinstellungen](#inbox-view-settings) festlegen. Die verfügbaren Optionen hängen dabei von der aktuellen Ansicht ab.
@@ -148,7 +148,7 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen festlegen:
 
    Je nachdem, ob ein Dialogfeld, ein Assistent oder eine Dokumentationsseite geöffnet wurde, können Sie Folgendes durchführen:
 
-   * Bestätigen Sie die entsprechende Aktion, z. B. die Neuzuweisung.
+   * Bestätigen Sie die entsprechende Aktion, z. B. „Neu zuweisen“.
    * Die Aktion abbrechen.
    * Wählen Sie den Rückwärtspfeil aus, um zum Posteingang zurückzukehren. Wenn beispielsweise ein Aktionsassistent oder eine Dokumentationsseite geöffnet wurde, können Sie zum Posteingang zurückkehren.
 

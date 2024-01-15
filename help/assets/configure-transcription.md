@@ -12,7 +12,7 @@ exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1663'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -55,15 +55,15 @@ Die folgenden Konfigurationen sind erforderlich, um die Transkriptionsfunktion i
 
 ![configure-transcription-service](assets/configure-transcription-service.png)
 
-Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure Media Services-Konfiguration]**. Wählen Sie in der linken Leiste einen Ordner (Speicherort) aus und klicken Sie auf die [!UICONTROL Erstellen] Schaltfläche zum Konfigurieren der Verbindung mit Ihrer [!DNL Azure] -Konto. Dieser Ordner ist der Speicherort, an dem Ihre [!DNL Azure] Cloud-Konfiguration in Experience Manager Assets gespeichert wird. Geben Sie die [!DNL Azure] Anmeldedaten ein und klicken Sie auf **[!UICONTROL Speichern und schließen]**.
+Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure Media Services-Konfiguration]**. Wählen Sie in der linken Leiste einen Ordner (Speicherort) aus und klicken Sie zum Konfigurieren der Verbindung mit dem [!DNL Azure]-Konto auf die Schaltfläche [!UICONTROL Erstellen]. Dieser Ordner ist der Speicherort, an dem Ihre [!DNL Azure] Cloud-Konfiguration in Experience Manager Assets gespeichert wird. Geben Sie die [!DNL Azure] Anmeldedaten ein und klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
 ### Konfigurieren des Verarbeitungsprofils für die Transkription {#configure-processing-profile}
 
 Sobald die [!DNL Azure Media Services] in Experience Manager Assets konfiguriert sind, besteht der nächste Schritt darin, ein Asset-Verarbeitungsprofil zu erstellen, um eine KI-basierte Transkription der Audio- und Video-Assets zu erzeugen. Das KI-basierte Verarbeitungsprofil erzeugt Transkripte der [unterstützten Audio- oder Video-Assets](#supported-file-formats-for-transcription) als Ausgabedarstellung in Experience Manager Assets und speichert das Transkript (.vtt-Datei) in demselben Ordner, in dem sich das Original-Asset befindet. Somit ist es für die Benutzerinnen und Benutzer einfacher, das Asset und seine Transkriptausgabedarstellung zu suchen und zu finden.
 
-Navigieren Sie zu **[!UICONTROL Instrumente]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]** und klicken Sie auf **[!UICONTROL Erstellen]** -Schaltfläche, um ein KI-basiertes Verarbeitungsprofil zur Generierung der Transkription Ihrer Audio- und Videodateien zu erstellen. Standardmäßig zeigt die Seite mit dem Verarbeitungsprofil nur drei Registerkarten an (Bild, Video und Benutzerdefiniert). Eine Registerkarte **[!UICONTROL Content-KI]** ist jedoch sichtbar, wenn Sie [!DNL Azure Media Services] in Ihrer [!DNL Experience Manager Assets]-Instanz konfiguriert haben. Überprüfen Sie Ihre [!DNL Azure]-Anmeldedaten, wenn Sie die Registerkarte **[!UICONTROL Content-KI]** beim Erstellen eines Verarbeitungsprofils nicht angezeigt bekommen.
+Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]** und klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**, um ein KI-basiertes Verarbeitungsprofil zur Generierung einer Transkription Ihrer Audio- und Videodateien zu erstellen. Standardmäßig zeigt die Seite mit dem Verarbeitungsprofil nur drei Registerkarten an (Bild, Video und Benutzerdefiniert). Eine Registerkarte **[!UICONTROL Content-KI]** ist jedoch sichtbar, wenn Sie [!DNL Azure Media Services] in Ihrer [!DNL Experience Manager Assets]-Instanz konfiguriert haben. Überprüfen Sie Ihre [!DNL Azure]-Anmeldedaten, wenn Sie die Registerkarte **[!UICONTROL Content-KI]** beim Erstellen eines Verarbeitungsprofils nicht angezeigt bekommen.
 
-Im **[!UICONTROL Content-KI]** klicken Sie auf die **[!UICONTROL Neu hinzufügen]** Schaltfläche zum Konfigurieren der Transkription. Hier können Sie die Dateiformate (MIME-Typen) zum Generieren von Transkripten ein- und ausschließen, indem Sie Dateitypen aus der Dropdown-Liste auswählen. In der folgenden Abbildung werden alle unterstützten Audio- und Videodateien eingeschlossen und die Textdateien ausgeschlossen.
+Klicken Sie auf der Registerkarte **[!UICONTROL Content-KI]** zum Konfigurieren der Transkription auf die Schaltfläche **[!UICONTROL Neue hinzufügen]**. Hier können Sie die Dateiformate (MIME-Typen) zum Generieren von Transkripten ein- und ausschließen, indem Sie Dateitypen aus der Dropdown-Liste auswählen. In der folgenden Abbildung werden alle unterstützten Audio- und Videodateien eingeschlossen und die Textdateien ausgeschlossen.
 
 Aktivieren Sie den Umschalter **[!UICONTROL VTT-Transkript im selben Verzeichnis erstellen]**, um die Transkript-Ausgabedarstellung (.vtt-Datei) in demselben Ordner zu erstellen und zu speichern, in dem sich das Original-Asset befindet. Die anderen Ausgabedarstellungen werden auch vom standardmäßigen DAM-Asset-Verarbeitungs-Workflow erzeugt, unabhängig von dieser Einstellung.
 
@@ -77,7 +77,7 @@ Das Videoprofil enthält außerdem die folgenden benutzerdefinierten Konfigurati
 
 ![configure-transcription-service](assets/video-processing-profile2.png)
 
-Konfigurieren wir nun die Transkription in diesem Videoprofil. Navigieren Sie zum **[!UICONTROL Content-KI]** und klicken Sie auf **[!UICONTROL Neu hinzufügen]** Schaltfläche. Schließen Sie alle Audio- und Videodateien ein und schließen Sie die Bild- und Anwendungsdateien aus. Aktivieren Sie den Umschalter **[!UICONTROL VTT-Transkript im selben Verzeichnis erstellen]** und speichern Sie die Konfiguration.
+Konfigurieren wir nun die Transkription in diesem Videoprofil. Gehen Sie zur Registerkarte **[!UICONTROL Content-KI]** und klicken Sie auf die Schaltfläche **[!UICONTROL Neue hinzufügen]**. Schließen Sie alle Audio- und Videodateien ein und schließen Sie die Bild- und Anwendungsdateien aus. Aktivieren Sie den Umschalter **[!UICONTROL VTT-Transkript im selben Verzeichnis erstellen]** und speichern Sie die Konfiguration.
 
 ![configure-transcription-service](assets/video-processing-profile1.png)
 

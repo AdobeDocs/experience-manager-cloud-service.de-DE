@@ -1,6 +1,6 @@
 ---
-title: Wie können Sie mit dem Regeleditor Regeln zu Formularfeldern hinzufügen, um dynamisches Verhalten hinzuzufügen und eine komplexe Logik zu einem adaptiven Formular zu erstellen?
-description: Mit dem Regeleditor für adaptive Forms können Sie dynamische Verhaltensweisen hinzufügen und komplexe Logiken in Formularen ohne Programmierung oder Skripterstellung erstellen.
+title: Verwenden des Regeleditors zum Hinzufügen von Regeln zu Formularfeldern, um dynamisches Verhalten hinzuzufügen und eine komplexe Logik zu einem adaptiven Formular zu erstellen?
+description: Der Regeleditor für adaptive Formulare ermöglicht es Ihnen, ohne Programmierung oder Skripterstellung dynamisches Verhalten und komplexe Logik in Ihre Formulare zu integrieren.
 feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
@@ -8,7 +8,7 @@ exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '6457'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 92%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 ## Übersicht {#overview}
@@ -93,7 +93,7 @@ Der Regeleditor bietet die folgenden logischen Operatoren und Ereignisse, mit de
 * **Hat ausgewählt:** Gibt „true“ zurück, wenn der Benutzer eine bestimmte Option für ein Kontrollkästchen, ein Dropdown-Element oder ein Optionsfeld auswählt.
 * **Ist initialisiert (Ereignis):** Gibt „true“ zurück, wenn ein Formularobjekt im Browser dargestellt wird.
 * **Wird geändert (Ereignis):** Gibt „true“ zurück, wenn der Benutzer den eingegebenen Wert oder die ausgewählte Option für ein Formularobjekt ändert.
-* **Navigation(Ereignis):** Gibt true zurück, wenn der Benutzer auf ein Navigationsobjekt klickt. Navigationsobjekte werden verwendet, um zwischen Bereichen zu wechseln.
+* **Navigation (Ereignis):** Gibt „true“ zurück, wenn auf ein Navigationsobjekt geklickt wird. Navigationsobjekte werden verwendet, um zwischen Bereichen zu wechseln.
 * **Schritt abgeschlossen (Ereignis):** Gibt „true“ zurück, wenn ein Regelschritt abgeschlossen ist.
 * **Erfolgreiche Übermittlung (Ereignis):** Gibt „true“ zurück, wenn Daten erfolgreich an ein Formulardatenmodell gesendet wurden.
 * **Fehler bei der Übermittlung (Ereignis):** Gibt „true“ zurück, wenn die Daten nicht erfolgreich an ein Formulardatenmodell gesendet wurden.
@@ -150,21 +150,21 @@ Weitere Informationen zum Konfigurieren von Services im Formulardatenmodell find
 
 Weitere Informationen zum Konfigurieren von Services im Formulardatenmodell finden Sie unter [[!DNL Experience Manager Forms] Datenintegration](data-integration.md).
 
-Mit dem Regeltyp **[!UICONTROL Eigenschaft festlegen]** können Sie den Wert einer Eigenschaft des angegebenen Objekts basierend auf einer Bedingungsaktion festlegen. Sie können die Eigenschaft auf einen der folgenden Werte festlegen:
-* visible (boolesch)
-* dorExclusion (boolesch)
+Mit dem Regeltyp **[!UICONTROL Eigenschaft festlegen]** können Sie den Wert einer Eigenschaft des angegebenen Objekts basierend auf einer Bedingungsaktion festlegen. Sie können die Eigenschaft für eines der folgenden Elemente festlegen:
+* visible (Boolescher Wert)
+* dorExclusion (Boolescher Wert)
 * chartType (Zeichenfolge)
 * title (Zeichenfolge)
-* enabled (boolesch)
-* mandatory (boolesch)
-* validationsDisabled (boolesch)
+* aktiviert (Boolescher Wert)
+* mandatory (Boolescher Wert)
+* validationsDisabled (Boolescher Wert)
 * validateExpMessage (Zeichenfolge)
 * value (Zahl, Zeichenfolge, Datum)
 * items (Liste)
-* valid (boolesch)
+* valid (Boolescher Wert)
 * errorMessage (Zeichenfolge)
 
-So können Sie beispielsweise Regeln definieren, um Kontrollkästchen dynamisch zum adaptiven Formular hinzuzufügen. Sie können benutzerdefinierte Funktionen, Formularobjekte oder eine Objekteigenschaft verwenden, um eine Regel zu definieren.
+Damit können Sie bespielsweise Regeln definieren, um Kontrollkästchen dynamisch zum adaptiven Formular hinzuzufügen. Sie können benutzerdefinierte Funktionen, Formularobjekte oder eine Objekteigenschaft verwenden, um eine Regel zu definieren.
 
 ![Eigenschaft festlegen](assets/set_property_rule_new.png)
 
@@ -172,7 +172,7 @@ Um eine Regel basierend auf einer benutzerdefinierten Funktion zu definieren, w�
 
 Um eine auf einem Formularobjekt basierende Regel zu definieren, wählen Sie **[!UICONTROL Formularobjekt]** in der Dropdown-Liste aus und ziehen Sie ein Formularobjekt mittels Drag-and-Drop aus der Registerkarte **[!UICONTROL Formularobjekte]**. Wenn die Bedingungsaktion erfüllt ist, wird die Anzahl der im Formularobjekt definierten Kontrollkästchen dem adaptiven Formular hinzugefügt.
 
-Mit einer auf einer Objekteigenschaft basierenden Regel Eigenschaft festlegen können Sie die Anzahl der Kontrollkästchen in einem adaptiven Formular hinzufügen, basierend auf einer anderen Objekteigenschaft, die im adaptiven Formular enthalten ist.
+Mit einer Regel vom Typ „Eigenschaft festlegen“, die auf einer Objekteigenschaft basiert, können Sie die Anzahl der Kontrollkästchen in einem adaptiven Formular auf der Grundlage einer anderen Objekteigenschaft hinzufügen, die im adaptiven Formular enthalten ist.
 
 Die folgende Abbildung zeigt ein Beispiel für das dynamische Hinzufügen von Kontrollkästchen auf der Grundlage der Anzahl der Dropdown-Listen im adaptiven Formular:
 
@@ -198,7 +198,7 @@ Die folgende Abbildung zeigt ein Beispiel für das dynamische Hinzufügen von Ko
 
 ### [!UICONTROL Wert festlegen] {#set-value-of}
 
-Regeln vom Typ **[!UICONTROL Wert einstellen von]** ermöglichen es, den Wert eines Formularobjekts abhängig davon festzulegen, ob die angegebene Bedingung erfüllt ist oder nicht. Der Wert kann auf den Wert eines anderen Objekts, eine Literal-Zeichenfolge, einen von einem mathematischen Ausdruck oder einer Funktion abgeleiteten Wert, den Wert einer Eigenschaft eines anderen Objekts oder die Ausgabe eines Formulardatenmodell-Service festgelegt werden. In ähnlicher Weise können Sie auf eine Bedingung bei Komponenten, Zeichenfolgen, Eigenschaften oder Werten, die von Funktionen oder mathematischen Ausdrücken abgeleitet wurden, prüfen.
+Regeln vom Typ **[!UICONTROL Wert festlegen]** ermöglichen es, den Wert eines Formularobjekts abhängig davon festzulegen, ob die angegebene Bedingung erfüllt ist oder nicht. Der Wert kann auf den Wert eines anderen Objekts, eine Literal-Zeichenfolge, einen von einem mathematischen Ausdruck oder einer Funktion abgeleiteten Wert, den Wert einer Eigenschaft eines anderen Objekts oder die Ausgabe eines Formulardatenmodell-Service festgelegt werden. In ähnlicher Weise können Sie auf eine Bedingung bei Komponenten, Zeichenfolgen, Eigenschaften oder Werten, die von Funktionen oder mathematischen Ausdrücken abgeleitet wurden, prüfen.
 
 Der Regeltyp **Wert festlegen** steht für manche Formularobjekte nicht zur Verfügung (z. B. nicht für Bereiche und Schaltflächen von Symbolleisten). Eine standardmäßige Regel vom Typ „Wert festlegen“ hat die folgende Struktur:
 
@@ -274,7 +274,7 @@ Eine typische Regel vom Typ „Aktivieren“ ist wie folgt strukturiert:
 
 ### [!UICONTROL Deaktivieren] {#disable}
 
-Mit Regeln vom Typ **[!UICONTROL Deaktivieren]** können Sie ähnlich wie mit Regeln vom Typ „Aktivieren“ Formularobjekte in Abhängigkeit davon, ob eine Bedingung erfüllt ist oder nicht, aktivieren oder deaktivieren. Der Regeltyp „Deaktivieren“ löst auch die Aktion „Aktivieren“ aus, falls die Bedingung nicht erfüllt ist oder `False` zurückgibt.
+Regeln vom Typ **[!UICONTROL Deaktivieren]** können ähnlich wie Regeln vom Typ „Aktivieren“ dazu verwendet werden, Formularobjekte in Abhängigkeit davon, ob eine Bedingung erfüllt ist oder nicht, zu aktivieren oder zu deaktivieren. Der Regeltyp „Deaktivieren“ löst auch die Aktion „Aktivieren“ aus, falls die Bedingung nicht erfüllt ist oder `False` zurückgibt.
 
 Eine typische Regel vom Typ „Deaktivieren“ ist wie folgt strukturiert:
 
@@ -659,7 +659,7 @@ Um ein Formular im Bearbeitungsmodus zu öffnen, wählen Sie ein Formular aus un
 
    >[!NOTE]
    >
-   > So rufen Sie ein Formulardatenmodell mithilfe benutzerdefinierter Funktionen aus dem Regeleditor auf: [hier sehen](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
+   > Informationen zum Aufrufen eines Formulardatenmodells aus dem Regeleditor mithilfe benutzerdefinierter Funktionen [finden Sie hier ](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
 
 #### Unterstützte Typen von Funktionsdeklarationen {#function-declaration-supported-types}
 
@@ -726,7 +726,7 @@ var c = {
 
 ## Verwalten von Regeln {#manage-rules}
 
-Alle vorhandenen Regeln für ein Formularobjekt werden aufgelistet, wenn Sie das Objekt auswählen und ![edit-rules1](assets/edit-rules-icon.svg). Sie können den Titel und eine Vorschau der Regelzusammenfassung anzeigen. Darüber hinaus können Sie in der Benutzeroberfläche die vollständige Regelzusammenfassung erweitern und anzeigen, die Reihenfolge der Regeln ändern, Regeln bearbeiten und Regeln löschen.
+Alle vorhandenen Regeln für ein Formularobjekt werden aufgelistet, wenn Sie das Objekt auswählen und ![edit-rules1](assets/edit-rules-icon.svg). Sie können den Titel und eine Vorschau der Regelzusammenfassung anzeigen. Darüber hinaus können Sie in der Benutzeroberfläche die vollständige Regelübersicht erweitern und anzeigen, die Reihenfolge der Regeln ändern, Regeln bearbeiten und Regeln löschen.
 
 ![List-rules](assets/list-rules.png)
 
@@ -757,7 +757,7 @@ Gehen Sie wie folgt vor, um Regeln zu kopieren und einzufügen:
 
    Weitere Informationen zum Verwalten vorhandener Regeln finden Sie unter [Verwalten von Regeln](rule-editor.md#p-manage-rules-p).
 
-1. Aktivieren Sie das Kontrollkästchen neben dem Titel der Regel. Es werden Optionen für das Verwalten der Regel angezeigt. Klicken Sie auf **[!UICONTROL Kopieren]**.
+1. Aktivieren Sie das Kontrollkästchen neben dem Titel der Regel. Es werden Optionen für das Verwalten der Regel angezeigt. Wählen Sie **[!UICONTROL Kopieren]**.
 
    ![copyrule2](assets/copyrule2.png)
 
@@ -797,7 +797,7 @@ Wenn das eingetragene Datum vor dem aktuellen Datum liegt, zeigt das Formular di
 
 ## Bedingungen für den Vergleich von Zahlen {#number-comparison-conditions}
 
-Im Regeleditor können Sie Bedingungen erstellen, mit denen zwei Zahlen verglichen werden.
+Im Regeleditor können Sie Bedingungen erstellen, die zwei Zahlen vergleichen.
 
 Nachfolgend ist eine Beispielbedingung dargestellt, die ein statisches Textobjekt anzeigt, wenn die Anzahl der Monate, die ein aktueller Benutzer schon an seiner gegenwärtigen Adresse wohnt, kleiner als 36 ist.
 

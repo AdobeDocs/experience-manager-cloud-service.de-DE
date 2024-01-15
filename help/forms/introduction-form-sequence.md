@@ -1,6 +1,6 @@
 ---
-title: Wie erstelle ich eine mehrstufige Formularsequenz?
-description: Mit [!DNL Experience Manager Forms]können Sie eine Sequenz von Formularfeldern definieren, damit Benutzer in einem adaptiven Formular navigieren und es ausfüllen können.
+title: Erstellen einer mehrstufigen Formularsequenz?
+description: Mit  [!DNL Experience Manager Forms] können Sie eine Sequenz von Formularbereichen definieren, damit die Benutzenden durch ein adaptives Formular navigieren und es ausfüllen können.
 role: User
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
@@ -8,7 +8,7 @@ exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
 source-git-commit: 0eac90a8f120a9c7655e68533d4b0a32292621e1
 workflow-type: tm+mt
 source-wordcount: '537'
-ht-degree: 75%
+ht-degree: 98%
 
 ---
 
@@ -18,12 +18,12 @@ ht-degree: 75%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/introduction-form-sequence.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/introduction-form-sequence.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-Mit adaptiven Formularen können Formularautoren ein müheloses mehrstufiges Datenerfassungserlebnis schaffen. Es bietet integrierte Unterstützung für das Erstellen mehrerer Panels und das Verknüpfen jedes Panels mit verschiedenen Navigationsmustern. Formularautorinnen und -autoren können Formularfelder in logischen Abschnitten gruppieren und eine Gruppe als Panel darstellen. Die gesamte Navigation zwischen den Bedienfeldern wird mithilfe des Bedienfeldlayouts gesteuert. Autoren können die Bedienfelder in verschiedenen Layouts anordnen, z. B. durch sequenzielles Platzieren mit dem Assistentenlayout oder durch Importieren mit dem Registerkartenlayout. Informationen zu Bedienfeld-Layouts finden Sie unter [Layout-Möglichkeiten für adaptive Formulare](layout-capabilities-adaptive-forms.md).
+Mit adaptiven Formularen können Formularautoren ein müheloses mehrstufiges Datenerfassungserlebnis schaffen. Es bietet integrierte Unterstützung für das Erstellen mehrerer Bedienfelder und das Verknüpfen jedes Bedienfelds mit verschiedenen Navigationsmustern. Formularautorinnen und -autoren können Formularfelder in logischen Abschnitten gruppieren und eine Gruppe als Bedienfeld darstellen. Die gesamte Navigation zwischen den Bedienfeldern wird mithilfe des Bedienfeldlayouts gesteuert. Autorinnen und Autoren können die Bedienfelder in unterschiedlichen Layouts anordnen, beispielsweise nacheinander mithilfe des Assistenten-Layouts, oder improvisiert mithilfe des Registerkarten-Layouts. Informationen zu Bedienfeld-Layouts finden Sie unter [Layout-Möglichkeiten für adaptive Formulare](layout-capabilities-adaptive-forms.md).
 
-In einer typischen Form beim Ausfüllen sind mehr Schritte erforderlich als nur das Erfassen von Daten. Eine vollständige Formularübermittlung kann andere Schritte umfassen, z. B. das digitale Signieren des Formulars, das Überprüfen der im Formular eingegebenen Informationen, das Verarbeiten von Zahlungen usw. Sie unterscheidet sich von Fall zu Fall.
+Normalerweise umfasst das Ausfüllen von Formularen mehr Schritte als die reine Datenerfassung. Die Übermittlung eines vollständigen Formulars kann andere Schritte enthalten, z. B. das digitale Signieren des Formulars, das Überprüfen der eingetragenen Informationen, das Verarbeiten von Zahlungen usw. Dies unterscheidet sich von Fall zu Fall.
 
 Wenn in Ihrem Fall bestimmte Schritte für die Datenerfassung ausgeführt werden müssen oder aufgrund von Bestimmungen vorgeschrieben sind, bietet [!DNL Experience Manager Forms] die Möglichkeit, diese allgemeine Struktur bei allen Formularen zu erzwingen. Mit der Implementierung der vorher festgelegten Formularstruktur wird die Sequenz für ein Formular definiert. ![Beispiel für eine mehrstufige Formularsequenz](assets/formpipeline.png)
 
@@ -31,9 +31,9 @@ Beispiel für eine mehrstufige Formularsequenz
 
 Nehmen wir ein Fallbeispiel, in dem Sie für ein Formular eine Sequenz der Schritte „Ausfüllen“, „Überprüfen“, „Signieren“ und „Bestätigen“ erstellen müssen. Die Schritte zum Erstellen einer solchen Sequenz lauten wie folgt:
 
-1. Definieren Sie eine Formularvorlage und fügen Sie ihr den erforderlichen Bereich hinzu. Für jeden Schritt der Sequenz sollte ein Bedienfeld vorhanden sein. Sie können jedoch untergeordnete Bedienfelder in ein Bedienfeld einbinden.
+1. Definieren Sie eine Formularvorlage und fügen Sie ihr das erforderliche Bedienfeld hinzu. Für jeden Schritt der Sequenz sollte ein Bedienfeld vorhanden sein. Sie können jedoch untergeordnete Bedienfelder in ein Bedienfeld einbinden.
 
-   In diesem Beispiel können wir die folgenden Bedienfelder hinzufügen:
+   In diesem Beispiel werden die folgenden Bedienfelder hinzugefügt:
 
    * **[!UICONTROL Ausfüllen]**: Enthält Formularfelder zum Erfassen von Daten. Hier können Sie verschachtelte untergeordnete Bedienfelder einfügen, um Abschnitte für verschiedene Arten von Informationen zu erstellen, z. B. persönlicher, familiärer, finanzieller Art usw.
 

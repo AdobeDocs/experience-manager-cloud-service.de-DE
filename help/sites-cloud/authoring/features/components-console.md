@@ -1,17 +1,17 @@
 ---
 title: Komponentenkonsole
-description: Mit der Komponentenkonsole können Sie alle für Ihre Instanz definierten Komponenten durchsuchen
+description: Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind.
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 66%
+ht-degree: 97%
 
 ---
 
 # Komponentenkonsole {#components-console}
 
-Mit der Komponentenkonsole können Sie alle für Ihre Instanz definierten Komponenten durchsuchen und wichtige Informationen zu den einzelnen Komponenten anzeigen.
+Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind, und wichtige Informationen für jede Komponente anzuzeigen.
 
 Der Zugriff erfolgt über **Tools >** **Allgemein >** **Komponenten**. Da es keine Baumstruktur für Komponenten gibt, ist nur die Listenansicht verfügbar.
 
@@ -29,7 +29,7 @@ Mit dem Symbol **Nur Inhalt** (oben links) können Sie den **Suchbereich** öffn
 
 ### Komponentendetails {#component-details}
 
-Um Details zu einer bestimmten Komponente anzuzeigen, wählen Sie die gewünschte Ressource aus. Drei Registerkarten bieten:
+Um Details zu einer bestimmten Komponente anzuzeigen, wählen Sie die gewünschte Ressource aus. Drei Registerkarten bieten Folgendes:
 
 * **Eigenschaften**
 
@@ -39,9 +39,9 @@ Um Details zu einer bestimmten Komponente anzuzeigen, wählen Sie die gewünscht
 
    * Ansehen der allgemeinen Eigenschaften der Komponente
       * Sehen Sie sich an, wie das Symbol oder die Abkürzung für die Komponente definiert wurde. <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
-      * Wenn Sie auf die Quelle des Symbols klicken, gelangen Sie zu dieser Komponente.
-   * Anzeigen der **Ressourcentyp** und **Resource Super Type** (sofern definiert) für die Komponente.
-      * Wenn Sie auf den Ressourcen-Supertyp klicken, gelangen Sie zu dieser Komponente.
+      * Durch Klicken auf die Symbolquelle gelangen Sie zu dieser Komponente.
+   * Zeigen Sie den **Ressourcentyp** und **Ressourcen-Supertyp** (sofern definiert) für die Komponente an.
+      * Durch Klicken auf den Ressourcen-Supertyp gelangen Sie zu dieser Komponente.
 
   >[!NOTE]
   >

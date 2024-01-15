@@ -5,7 +5,7 @@ exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1800'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -192,7 +192,7 @@ Bei einem Prolem mit AzCopy schlägt die Extraktion sofort fehl. Die Extraktions
 Blobs, die vor Auftreten des Fehlers kopiert wurden, werden von AzCopy bei nachfolgenden Ausführungen automatisch übersprungen und müssen nicht erneut kopiert werden.
 
 >[!TIP]
->Eine Aufnahme kann nun so geplant werden, dass sie unmittelbar nach erfolgreichem Abschluss einer Extraktion automatisch startet. Siehe [Erfassen von Inhalten in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) für weitere Informationen.
+>Eine Aufnahme kann nun so geplant werden, dass sie unmittelbar nach erfolgreichem Abschluss einer Extraktion automatisch startet. Siehe [Aufnehmen von Inhalten in das Ziel](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) für weitere Informationen.
 
 #### Für Dateidatenspeicher {#file-data-store-extract}
 
@@ -201,7 +201,7 @@ Wenn AzCopy für „dataStore“ der Quelldatei benutzt wird, sollten Meldungen 
 
 ### 5. Aufnehmen mit AzCopy {#ingesting-azcopy}
 
-Siehe [Erfassen von Inhalten in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) allgemeine Informationen zur Aufnahme von Inhalten in das Ziel vom Cloud Acceleration Manager (CAM), einschließlich Anweisungen zur Verwendung von AzCopy (Pre-Copy) oder nicht im Dialogfeld &quot;Neue Aufnahme&quot;.
+Unter [Aufnehmen von Inhalten in das Ziel](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) finden Sie allgemeine Informationen zum Aufnehmen von Inhalten in das Ziel über das Dialogfeld „Neue Aufnahme“ in Cloud Acceleration Manager (CAM), darunter Anweisungen zum Verwenden von AzCopy (Vorabkopie).
 
 Um AzCopy während der Aufnahme nutzen zu können, müssen Sie gemäß Adobe-Anforderungen mindestens Version 2021.6.5561 von AEM as a Cloud Service verwenden.
 

@@ -1,12 +1,12 @@
 ---
 title: Wie können Sie die Assets-Ansicht in AEM nutzen?
-description: Erfahren Sie mehr über die wichtigsten Vorteile der Assets-Ansicht in AEM.  Adobe, das seine Expertise in der Stärkung von Marketing- und Kreativprofis einsetzt, führt ein völlig neues Anwendererlebnis ein.
+description: Erfahren Sie mehr über die wichtigsten Vorteile der Assets-Ansicht in AEM.  Adobe nutzt sein Know-how bei der Unterstützung von Marketing- und Kreativ-Profis und bietet damit ein völlig neues Anwendungserlebnis.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 source-git-commit: 408a691de8a6fe2801a9907308db43f2050528c3
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 95%
+source-wordcount: '972'
+ht-degree: 98%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 95%
 
 ![Bereitstellen von Assets Essentials](assets/banner-image.jpg)
 
-In der heutigen schnelllebigen digitalen Welt, in der die Erstellung und Bereitstellung von Inhalten in Echtzeit von entscheidender Bedeutung ist, sollten Sie Digital Asset Management (DAM) erleben, das für die Geschwindigkeit des Downstream-Marketing entwickelt wurde. Adobe, das seine Expertise in der Stärkung von Marketing- und Kreativprofis einsetzt, führt ein völlig neues Anwendererlebnis ein. Dieser Workflow-orientierte Ansatz revolutioniert die Art und Weise, wie Unternehmen mit ihren dynamischen digitalen Assets umgehen, und ermöglicht es Marketing-Fachleuten, die Effizienz beim Auffinden, Zusammenarbeiten, Personalisieren und Bereitstellen von Assets zu maximieren. Diese optimierten Workflows erhöhen die Geschwindigkeit von Inhalten und verhelfen Ihren Marketing-Maßnahmen zu neuen Höhenflügen.
+In der heutigen schnelllebigen digitalen Welt, in der die Erstellung und Bereitstellung von Inhalten in Echtzeit von entscheidender Bedeutung ist, sollten Sie Digital Asset Management (DAM) erleben, das für die Geschwindigkeit des Downstream-Marketing entwickelt wurde. Adobe nutzt sein Know-how bei der Unterstützung von Marketing- und Kreativ-Profis und bietet damit ein völlig neues Anwendungserlebnis. Dieser Workflow-orientierte Ansatz revolutioniert die Art und Weise, wie Unternehmen mit ihren dynamischen digitalen Assets umgehen, und ermöglicht es Marketing-Fachleuten, die Effizienz beim Auffinden, Zusammenarbeiten, Personalisieren und Bereitstellen von Assets zu maximieren. Diese optimierten Workflows erhöhen die Geschwindigkeit von Inhalten und verhelfen Ihren Marketing-Maßnahmen zu neuen Höhenflügen.
 
 Weitere Informationen zu den verfügbaren Persona-basierten Erlebnissen für Assets as a Cloud Service finden Sie unter [Einführung in Assets as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
 

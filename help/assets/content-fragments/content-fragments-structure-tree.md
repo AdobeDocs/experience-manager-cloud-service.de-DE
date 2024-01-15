@@ -5,7 +5,7 @@ exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
 source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 80%
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,7 @@ Im Inhaltsfragmenteditor können Sie das Strukturbaumsymbol auswählen:
 
 ![Strukturbaum der Inhaltsfragmente im Seitenbereich](assets/cfm-structuretree-01.png)
 
-Dadurch wird eine Darstellung der Fragmentstruktur im linken Bereich geöffnet. Auf diese Weise können Sie durch referenzierte Fragmente navigieren und zu ihnen gelangen. Wenn Sie eine Referenz auswählen, wird dieses Fragment zur Bearbeitung geöffnet.
+Dadurch wird eine Darstellung der Fragmentstruktur im linken Fensterbereich geöffnet. Auf diese Weise können Sie durch referenzierte Fragmente navigieren und zu ihnen gelangen. Wenn Sie eine Referenz auswählen, wird dieses Fragment zur Bearbeitung geöffnet.
 
 >[!NOTE]
 >

@@ -5,7 +5,7 @@ exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1678'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ Die Benutzeroberfläche von CRXDE Lite sieht in Ihrem Browser wie folgt aus:
 
 >[!TIP]
 >
->Sie können auch über das AEM-Menü auf CRXDE Lite zugreifen. Wählen Sie im Hauptmenü die Option **Instrumente** > **Allgemein** > **CRXDE Lite**.
+>Sie können auch über das AEM-Menü auf CRXDE Lite zugreifen. Wählen Sie im Hauptmenü **Tools** > **Allgemein** > **CRXDE Lite** aus.
 
 ## Überblick über die Benutzeroberfläche {#overview-of-the-user-interface}
 
@@ -40,7 +40,7 @@ Die Benutzeroberfläche von CRXDE Lite besteht aus vielen Teilen und Funktionen.
 
 ### Obere Wechselleiste {#top-switcher-bar}
 
-Die obere Switcher-Leiste ermöglicht einen schnellen Wechsel zwischen CRXDE Lite und [Package Manager.](package-manager.md)
+Mit der oberen Umschaltleiste können Sie schnell zwischen CRXDE Lite und dem [Package Manager](package-manager.md) umschalten.
 
 ### Knotenpfad-Widget {#node-path-widget}
 
@@ -71,7 +71,7 @@ Sobald eine Datei im **Bearbeitungsfenster** bearbeitet wurde, sind die folgende
 * **In Baum anzeigen**: Zeigt die Datei in der Repository-Baumstruktur an.
 * **Suchen/Ersetzen**: - Führt Such- und Ersetzungsvorgänge durch.
 
-Doppelklicken Sie auf die Statuszeile des **Bedienfeld bearbeiten** öffnet die **Gehe zu Zeile** angezeigt, damit Sie eine bestimmte Zeilennummer eingeben können.
+Durch einen Doppelklick auf die Statuszeile des **Bearbeitungsfensters** öffnen Sie das Dialogfeld **Zu Zeile wechseln**, in dem Sie eine bestimmte Zeilennummer eingeben können, um dorthin zu gelangen.
 
 ### Registerkarte „Eigenschaften“ {#properties-tab}
 
@@ -144,7 +144,7 @@ Mit der Schaltfläche **Umbenennen** wird der ausgewählte Knoten umbenannt.
 
 ### Mixins {#mixins-button}
 
-Die **Schaltfläche &quot;Mixins&quot;** ermöglicht das Hinzufügen von Mixin-Typen zum Knotentyp. Die Mixin-Typen werden meist verwendet, um fortgeschrittene Funktionen hinzuzufügen.
+Mit der Schaltfläche **Mixins** können Sie dem Knotentyp Mixin-Typen hinzufügen. Die Mixin-Typen werden meist verwendet, um fortgeschrittene Funktionen hinzuzufügen.
 
 ### Tools {#tools-button}
 
@@ -163,7 +163,7 @@ Das **Anmelde-Widget** zeigt den derzeit angemeldeten Benutzer an.
 
 Klicken Sie darauf, um sich als anderer Benutzer anzumelden oder erneut anzumelden. `@crx.default` dass Sie sich im Standardarbeitsbereich (und dem einzigen) im Repository befinden.
 
-Die **Voreinstellungen** kann verwendet werden, um die Sprache der Benutzeroberfläche festzulegen und die Hotkeys für verschiedene Aktionen wie Speichern, Suchen, Erstellen von Anmerkungen usw. anzuzeigen und anzupassen.
+Mit der Option **Voreinstellungen** können Sie die Sprache Ihrer Benutzeroberfläche festlegen und die Tastenkombinationen für verschiedene Aktionen wie Speichern, Suchen, Erstellen von Notizen usw. anzeigen und anpassen.
 
 ## Erstellen eines Ordners {#creating-a-folder}
 
@@ -192,7 +192,7 @@ Jetzt können Sie den Knoten an Ihre Anforderungen anpassen, indem Sie die Eigen
 >
 Die meisten Bearbeitungsvorgänge, einschließlich **Knoten erstellen**, behalten alle Änderungen im Speicher und speichern sie erst beim Speichern im Repository (über die [**Schaltfläche „Alle speichern“**](#save-all-button)). Einige Vorgänge wie das Verschieben werden jedoch automatisch beibehalten.
 >
-Die Überprüfung, ob der erstellte Knoten vom Knotentyp des übergeordneten Knotens zugelassen ist, wird auch vom Repository beim Speichern von Änderungen durchgeführt. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (Sie können z. B. keinen `nt:unstructured`-Knoten als untergeordneten Knoten eines `nt:folder`-Knotens erstellen).
+Die Prüfung, ob der erstellte Knoten vom Knotentyp des übergeordneten Knotens zugelassen ist, wird auch vom Repository ausgeführt, wenn Änderungen gespeichert werden sollen. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (Sie können z. B. keinen `nt:unstructured`-Knoten als untergeordneten Knoten eines `nt:folder`-Knotens erstellen).
 
 ## Erstellen einer Eigenschaft {#creating-a-property}
 
@@ -206,7 +206,7 @@ So erstellen Sie eine Eigenschaft mit CRXDE Lite:
 
 ## Erstellen einer Datei {#creating-a-file}
 
-So erstellen Sie eine Datei mit CRXDE Lite:
+So wird eine neue Datei mit CRXDE Lite erstellt:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
 1. Klicken Sie im [**Explorer-Fenster**,](#explorer-pane) mit der rechten Maustaste auf die Komponente, für die Sie die Datei erstellen möchten, wählen Sie **Erstellen** und dann **Datei erstellen** aus.
@@ -223,10 +223,10 @@ Mit CRXDE Lite können Sie Knotentypdefinitionen in [CND-Notation (Compact Names
 Exportieren einer Knotentypdefinition in CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. Wählen Sie Ihren gewünschten Knoten aus.
+1. Wählen Sie den gewünschten Knoten aus.
 1. Wählen Sie **Tools** und dann **Knotentyp exportieren** aus.
 1. Die Definition wird in CND-Notation auf einer neuen Registerkarte in Ihrem Browser angezeigt.
-1. Speichern Sie die Informationen bei Bedarf.
+1. Speichern Sie die Informationen (falls erforderlich).
 
 So importieren Sie eine Knotentypdefinition:
 
@@ -242,7 +242,7 @@ So importieren Sie eine Knotentypdefinition:
 Mit CRXDE Lite können Sie die Datei `error.log` anzeigen, die sich im Dateisystem unter `<aem-install-dir>/crx-quickstart/logs` befindet, und sie mit der entsprechenden Protokollebene filtern. Gehen Sie wie folgt vor:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. Im Dropdown-Menü rechts neben dem [**Registerkarte &quot;Konsole&quot;**](#console-tab) Wählen Sie unten im Fenster die Option **Serverprotokolle**.
+1. Wählen Sie im Dropdown-Menü auf der rechten Seite der [**Registerkarte „Konsole“**](#console-tab) unten im Fenster die Option **Server-Protokolle** aus.
 1. Klicken Sie auf das **Stopp-Symbol**, um die Nachrichten anzuzeigen.
 
 Sie haben folgende Möglichkeiten:

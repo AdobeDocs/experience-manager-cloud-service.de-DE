@@ -1,11 +1,11 @@
 ---
 title: Query Builder-Prädikatsreferenz
-description: Prädikatreferenz für die Query Builder-API in AEM as a Cloud Service.
+description: Prädikatsreferenz für die Query Builder-API in AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2270'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 
@@ -25,8 +25,8 @@ Der Name „root“ wird in Abfragen nie verwendet, er ist implizit.
 * **`p.limit`**: Zahl, die die Seitengröße anzeigt.
 * **`p.guessTotal`** - empfohlen: Vermeidung der Berechnung der vollständigen Ergebnissumme, was kostspielig sein kann. Entweder eine Zahl, die die maximal zu zählende Summe angibt (z. B. 1000, eine Zahl, die Benutzern genügend Feedback zur groben Größe und exakten Zahlen für kleinere Ergebnisse gibt). Oder `true` nur bis zum erforderlichen Minimum zählen `p.offset` + `p.limit`.
 * **`p.excerpt`**: Wenn auf `true` gesetzt, wird der vollständige Textauszug in das Ergebnis aufgenommen.
-* **`p.indexTag`** - Wenn festgelegt, enthält die Abfrage eine Index-Tag-Option (siehe [Index-Tag der Abfrageoption](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)).
-* **`p.facetStrategy`** - wenn auf `oak`, delegiert Query Builder die Facettenextraktion an Oak (siehe [Facets](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)).
+* **`p.indexTag`**: Wenn festgelegt, enthält die Abfrage eine Index-Tag-Option (siehe [Index-Tag der Abfrageoption](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)).
+* **`p.facetStrategy`**: wenn auf `oak` gesetzt, delegiert Query Builder die Facettenextraktion an Oak (siehe [Facetten](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)).
 * **`p.hits`** (nur für das JSON-Servlet): Legt mit diesen Standardwerten fest, wie Treffer als JSON geschrieben werden (erweiterbar über den Dienst „ResultHitWriter“).
    * **`simple`**: Minimale Elemente wie `path`, `title`, `lastmodified`, `excerpt` (falls festgelegt).
    * **`full`** - Sling JSON-Rendering des Knotens mit `jcr:path` gibt den Pfad des Treffers an. Standardmäßig werden nur die direkten Eigenschaften des Knotens aufgelistet und eine tiefere Struktur mit `p.nodedepth=N`, wobei 0 die gesamte, unendliche Unterstruktur bedeutet. Hinzufügen `p.acls=true` , um die JCR-Berechtigungen der aktuellen Sitzung für das angegebene Ergebniselement (Zuordnungen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).

@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2035'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ Experience Fragments können in folgenden Fällen verwendet werden:
 Ohne Experience Fragments müsste der Autor dieses Fragment kopieren und einfügen. Das Erstellen und Verwalten dieser zum Kopieren/Einfügen vorgesehenen Erlebnisse sind zeitaufwendige und fehleranfällige Verfahren.
 Mit Experience Fragments ersparen Sie sich das Kopieren/Einfügen.
 * Zur Unterstützung des Nutzungsszenarios mit Headless-Content-Management-Systemen.
-Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kunden. Ein Drittanbietersystem/Touchpoint würde dieses Erlebnis nutzen und dann an den Benutzer übermitteln.
+Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kunden. In diesem Fall würde das Erlebnis über ein System/einen Touchpoint eines Drittanbieters aufgenommen und dann an die Benutzerin bzw. den Benutzer weitergeben werden.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Folgendes wird empfohlen:
 
 * [Konfigurieren der zulässigen Vorlagen für diese Ordner](#configure-allowed-templates-folder).
 
-Wenn Sie Ordner erstellen, können Sie:
+Beim Erstellen von Ordnern können Sie:
 
 * eine aussagekräftige Struktur für Ihre Experience Fragments erstellen; zum Beispiel nach Klassifizierung
 
@@ -232,7 +232,7 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragments ers
 
    ![Erstellen einer Experience Fragment-Variante](/help/sites-cloud/authoring/assets/xf-06.png)
 
-1. **Erstellen** ermöglicht die Erstellung:
+1. Mit **Erstellen** können Sie Folgendes erstellen:
 
    * **Variante**
    * **Variante als Live Copy**
@@ -361,11 +361,11 @@ So personalisieren Sie Ihr Fragment:
    >
    >* ein Pfad, der eine Untergruppe der Stores enthält, die im für die Seite konfigurierten ContextHub definiert sind
    >
-   >Die **Segmentpfad** in der **Personalisierung** muss entweder:
+   >Der ausgewählte **Segmentpfad** in der Registerkarte **Personalisierung** muss entweder:
    >
-   >* der gleiche Pfad wie der Pfad, der für die Seite konfiguriert wurde, auf der das Fragment gerendert wird
+   >* der gleiche Pfad sein wie der Pfad, der für die Seite konfiguriert wurde, auf der das Fragment gerendert wird
    >
-   >  Oder
+   >  oder
    >
    >* ein Pfad sein, der eine Untergruppe der für die Seite konfigurierten Segmente enthält
 

@@ -5,7 +5,7 @@ exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 54%
+ht-degree: 59%
 
 ---
 
@@ -25,7 +25,7 @@ Für as a Cloud Service Inhaltsfragmente von Adobe Experience Manager (AEM) stel
 >
 >Es gibt diverse Methoden, um [visuelle Assets (zum Beispiel Fotos)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zum Fragment und/oder der Seite hinzuzufügen.
 
-Um die Verknüpfung herzustellen, müssen Sie zunächst [Hinzufügen von Medien-Assets zu einer Sammlung](/help/assets/manage-collections.md). Danach können Sie Folgendes tun:
+Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer Sammlung hinzugefügt werden](/help/assets/manage-collections.md). Danach können Sie Folgendes tun:
 
 1. Öffnen Sie das Fragment und wählen Sie im seitlichen Bedienfeld **Zugehörige Inhalte** aus.
 

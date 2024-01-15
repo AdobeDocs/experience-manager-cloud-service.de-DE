@@ -5,7 +5,7 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1132'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Zur Implementierung der Registrierung gibt es zwei Ansätze, wie nachfolgend bes
 
 ### Von AEM verwaltet {#aem-managed-registration}
 
-Benutzerdefinierter Registrierungs-Code kann geschrieben werden, der zumindest den Benutzernamen und das Kennwort des Benutzers verwendet und einen Benutzerdatensatz in AEM erstellt, der dann zur Authentifizierung bei der Anmeldung verwendet werden kann. Normalerweise werden die folgenden Schritte zum Aufbau dieses Registrierungsmechanismus verwendet:
+Es kann benutzerdefinierter Registrierungs-Code geschrieben werden, der mindestens den Benutzernamen und das Kennwort der Benutzenden benötigt und einen Benutzereintrag in AEM erstellt, der dann bei der Anmeldung zur Authentifizierung verwendet werden kann. Normalerweise werden die folgenden Schritte zum Aufbau dieses Registrierungsmechanismus verwendet:
 
 1. Anzeigen einer benutzerdefinierten AEM-Komponente, die Registrierungsinformationen erfasst
 1. Verwenden eines ordnungsgemäß bereitgestellten Service-Anwenders bei der Übermittlung, um Folgendes zu erreichen:
@@ -67,7 +67,7 @@ Kunden können sich mit Identitätsanbieter zusammenarbeiten, der die Anwender a
 
 **SAML-basiert**
 
-Kunden können über ihren bevorzugten SAML-Identitätsanbieter die SAML-basierte Authentifizierung nutzen. Bei Verwendung eines IdP mit AEM ist der IdP für die Authentifizierung der Benutzeranmeldeinformationen und die Vermittlung der Benutzerauthentifizierung mit AEM, die Erstellung des Benutzerdatensatzes in AEM nach Bedarf und die Verwaltung der Gruppenmitgliedschaft des Benutzers in AEM, wie in der SAML-Bestätigung beschrieben.
+Kunden können über ihren bevorzugten SAML-Identitätsanbieter die SAML-basierte Authentifizierung nutzen. Bei Inanspruchnahme eines IDP in Verbindung mit AEM ist der IDP dafür verantwortlich, die Anmeldeinformationen der Benutzenden zu authentifizieren und die Authentifizierung der Benutzenden mit AEM zu vermitteln, die Benutzerdatensätze nach Bedarf in AEM zu erstellen und die Gruppenmitgliedschaft der Benutzenden in AEM zu verwalten, wie durch die SAML-Assertion beschrieben.
 
 >[!NOTE]
 >

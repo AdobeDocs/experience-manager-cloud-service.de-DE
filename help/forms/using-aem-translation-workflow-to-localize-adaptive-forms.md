@@ -1,5 +1,5 @@
 ---
-title: Wie können wir AEM Übersetzungs-Workflow verwenden, um Adaptive Forms und Datensatzdokument zu lokalisieren?
+title: Verwenden von AEM-Übersetzungs-Workflows zum Lokalisieren von adaptiven Formularen und Datensatzdokumenten?
 description: Hier erfahren Sie, wie Sie AEM-Übersetzungs-Workflows zum Lokalisieren von adaptiven Formularen und Datensatzdokumenten verwenden.
 uuid: 6c87a283-0203-4cf7-989a-3770ddbbbd6e
 content-type: reference
@@ -9,12 +9,12 @@ noindex: true
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
 
-# Lokalisieren des adaptiven Forms und Datensatzdokuments{#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
+# Lokalisieren von adaptiven Formularen und Datensatzdokumenten{#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
 Mit lokalisierten Formularen können Sie eine größere Zielgruppe über Ländergrenzen hinweg ansprechen. Mit den Adobe Experience Manager-Übersetzungs-Workflows können Sie adaptive Formulare und die entsprechenden Datensatzdokumente lokalisieren. Sie können zum Lokalisieren adaptiver Formulare **maschinelle Übersetzung** nutzen oder **Übersetzer** beauftragen.
 
@@ -28,7 +28,7 @@ Der Service für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adapti
 1. Wählen Sie auf dem Bildschirm **Wörterbuch zum Übersetzungsprojekt hinzufügen** die Option **Neues Übersetzungsprojekt erstellen** oder **Zu vorhandenem Übersetzungsprojekt hinzufügen**.
 1. Geben Sie im Feld **Projekttitel** den Titel an. Beispiel: `Government Reference Site - German locale.`
 1. Geben Sie im Feld **Zielsprachen** ein Gebietsschema an (beispielsweise `German(de)`) und klicken Sie auf **Fertig**. Sie können mehrere Gebietsschemas angeben. Das Formular wird in alle im Feld **Zielsprachen** angegebenen Gebietsschemas übersetzt.
-1. Klicken Sie im Dialogfeld „Wörterbuch hinzugefügt“ auf **Projekte öffnen**. Öffnen Sie im Bildschirm &quot;Projekte&quot;das erstellte Projekt.
+1. Klicken Sie im Dialogfeld „Wörterbuch hinzugefügt“ auf **Projekte öffnen**. Öffnen Sie auf dem Bildschirm „Projekte“ das erstellte Projekt.
 1. Klicken Sie auf die **Auslassungspunkte** am unteren Rand der Kachel **Übersetzungsübersicht**. Der Bildschirm „Übersetzungszusammenfassung“ wird geöffnet.
 1. Klicken Sie auf das Symbol **Bearbeiten** oben auf dem Bildschirm **Übersetzungsübersicht**. Öffnen Sie die Registerkarte **Übersetzung** und wählen Sie auf dem Bildschirm **Übersetzungsmethode** die Option „Maschinelle Übersetzung“. Wählen Sie den entsprechenden **Übersetzungsanbieter** und die entsprechende **Cloudkonfiguration**. Klicken Sie am oberen Rand des Bildschirms auf das Symbol **Fertig**.
 1. Klicken Sie auf der Kachel **Übersetzungsauftrag** auf das Symbol ![aem62forms_downarrow](assets/aem62forms_downarrow.png) und dann auf **Start**. Der Status der Kachel ändert sich in „Entwurf“. Bei Fertigstellung der Übersetzung ändert sich der Status in **Bereit für Überprüfung**. Aktualisieren Sie die Seite nach einigen Minuten und überprüfen Sie den Status.

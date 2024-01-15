@@ -1,13 +1,13 @@
 ---
 title: Wie wird Forms Designer heruntergeladen und installiert, um Vorlagen für Datensatzdokumente zu erstellen?
-description: Verwenden Sie Forms Designer, um XDP- und PDF-Formularvorlagen zu erstellen, die als Vorlage für ein Datensatzdokument dienen.
+description: Verwenden Sie Forms Designer zum Erstellen von XDP- und PDF-Formularvorlagen, die als Vorlage für ein Datensatzdokument dienen.
 keywords: Installieren von Designer, Installieren von Forms Designer, Anforderungen für die Installation von Forms Designer
 feature: Forms Designer
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
 source-git-commit: b2769134c2e744f41cbb7e8a3cf08c622cdc07ca
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -22,28 +22,28 @@ Designer ist ein benutzerfreundliches grafisches Programm für die Formulargesta
 
 ## Voraussetzungen {#pre-requisites}
 
-Um die neueste Version von AEM Forms Designer 64-Bit oder 32-Bit zu installieren, benötigen Sie die folgende Software und die erforderliche Mindesthardware für die Installation und Konfiguration von Designer:
+Für die Installation der neuesten Version von AEM Forms Designer 64-Bit oder 32-Bit benötigen Sie die folgende Software und die erforderliche Mindest-Hardware für das Installieren und Konfigurieren von Designer:
 
 +++ 64-Bit-Designer (empfohlen)
 
-* [!DNL Microsoft® Windows® 2016 Server] oder [!DNL Microsoft® Windows® 2019 Server], und [!DNL Microsoft® Windows® 10]
-* Mindestens 2 GB RAM
-* 20 GB Festplattenspeicher
-* Grafikspeicher - 128 MB GPU (256 MB wird empfohlen)
+* [!DNL Microsoft® Windows® 2016 Server] oder [!DNL Microsoft® Windows® 2019 Server] und [!DNL Microsoft® Windows® 10]
+* Mindestens 2 GB RAM
+* 20 GB Festplattenspeicher
+* Grafikspeicher – 128 MB GPU (256 MB werden empfohlen)
 * 2,35 GB verfügbarer Festplattenspeicher
 * Bildschirmauflösung 1024 x 768 Pixel oder höher
 * Beschleuniger für Video-Hardware (optional)
 * Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC.
 * Administratorrechte für die Installation von Designer.
-* [!DNL Microsoft® Visual C++ 2019] (VC 14.28 oder höher) 64-Bit-Laufzeit
+* [!DNL Microsoft® Visual C++ 2019] (VC 14.28 oder höher) 64-Bit-Runtime
 
 +++
 
 +++ 32-Bit-Designer
 
 * [!DNL Microsoft® Windows® 2016 Server], [!DNL Microsoft® Windows® 2019 Server], oder [!DNL Microsoft® Windows® 10]
-* 1 GB RAM für 32-Bit-Betriebssysteme oder 2 GB RAM für 64-Bit-Betriebssysteme
-* 16 GB Speicherplatz für 32-Bit-Betriebssysteme oder 20 GB Speicherplatz für 64-Bit-Betriebssysteme
+* 1 GB RAM für 32-Bit-Betriebssysteme oder 2 GB RAM für 64-Bit-Betriebssysteme
+* 16 GB Speicherplatz für 32-Bit-Betriebssysteme oder 20 GB Speicherplatz für 64-Bit-Betriebssysteme
 * Grafikspeicher – 128 MB GPU (256 MB empfohlen)
 * 2,35 GB verfügbarer Festplattenspeicher
 * Bildschirmauflösung 1024 x 768 Pixel oder höher
@@ -74,7 +74,7 @@ So installieren Sie Designer:
 
 * [Verwenden benutzerdefinierter Schriftarten](/help/forms/use-custom-fonts.md)
 * [Erstellen eines eigenständigen, auf Kernkomponenten basierenden adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)
-* [Erstellen oder Hinzufügen eines adaptiven Formulars zur AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Erstellen oder Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Verwenden von Forms Designer zum Erstellen von DoR-Vorlagen und Formularfragmenten](/help/forms/use-forms-designer.md)
 
 

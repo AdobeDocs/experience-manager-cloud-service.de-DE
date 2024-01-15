@@ -5,7 +5,7 @@ exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 47%
+ht-degree: 97%
 
 ---
 
@@ -25,11 +25,11 @@ Im folgenden Abschnitt werden die Versionshinweise zu den neuen Funktionen der V
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.7.0) war der Freitag, 27. Juli 2023. Die nächste Version (2023.8.0) ist für den Freitag, 31. August 2023 geplant.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.4.0) war der 27. Juli 2023. Die nächste Version (2023.8.0) ist für den 31. August 2023 geplant.
 
 ## Video zur Version {#release-video}
 
-Sehen Sie sich das Video Versionsübersicht vom Juli 2023 an, um eine Zusammenfassung der Funktionen zu erhalten, die in der Version 2023.7.0 hinzugefügt wurden:
+Eine Zusammenfassung der in der Version 2023.7.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version Juli 2023:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422016/?quality=12)
 
@@ -37,11 +37,11 @@ Sehen Sie sich das Video Versionsübersicht vom Juli 2023 an, um eine Zusammenfa
 
 ### Neue Funktionen in [!DNL Experience Manager Sites] {#sites-features}
 
-* MSM für Inhaltsfragmente. AEM Multisite-Manager ist jetzt für Inhaltsfragmente verfügbar, sodass Inhaltsfragmente in Live Copies für die Massenverteilung von Inhalten erstellt werden können. Die detaillierten Vererbungssteuerelemente sind bis zur Ebene der Inhaltsfragmente und Varianten verfügbar.
+* MSM für Inhaltsfragmente. AEM Multisite Manager ist jetzt für Inhaltsfragmente verfügbar, sodass Inhaltsfragmente in Live Copies für die Massenverteilung von Inhalten erstellt werden können. Die detaillierten Vererbungssteuerelemente sind bis zur Ebene der Inhaltsfragmente und Varianten verfügbar.
 
 ### Neue Funktionen in der Vorabversion von [!DNL Experience Manager Sites] {#prerelease-sites}
 
-* Die [Inhaltsfragmentkonsole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=de) ermöglicht es Benutzern nun, Tags anzuzeigen und nach Tags zu suchen, die als Metadaten auf Inhaltsfragmente angewendet werden. Benutzer müssen nicht mehr zur Assets-Benutzeroberfläche wechseln, um diese Funktion zu nutzen, wodurch der Kontextwechsel reduziert und die Effizienz verbessert wird.
+* Über die [Inhaltsfragmentkonsole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=de) können Benutzende nun Tags anzeigen und nach Tags suchen, die als Metadaten auf Inhaltsfragmente angewendet werden. Benutzende müssen nicht mehr zur Assets-Benutzeroberfläche wechseln, um diese Funktion zu nutzen. Dadurch werden Kontextwechsel reduziert und die Effizienz verbessert.
 
 ![Tagging in der Inhaltsfragmentkonsole](/help/assets/content-fragments-console-tags.png)
 
@@ -78,16 +78,16 @@ Assets Essentials sortiert die Suchergebnisse nun standardmäßig nach Relevanz.
 
 ### Neue Funktionen in [!DNL Forms] {#new-features-available-in-forms-channel}
 
-* [**Vorkonfigurierte Designs**](/help/forms/using-themes-in-core-components.md) **und Vorlagen**: Starten Sie Ihren Formularerstellungsprozess mit unseren einsatzbereiten OOTB-Designs und -Vorlagen, die auf erfahrene Profis und neue Formularautoren zugeschnitten sind. Nahtlos mit den Kernkomponenten von Adaptive Forms erstellt, ermöglichen Ihnen diese sorgfältig kuratierten Designs und Vorlagen die rasche Erstellung von Formularen für gängige Anwendungsfälle.
+* [**Vorkonfigurierte Designs**](/help/forms/using-themes-in-core-components.md) **und Vorlagen**: Starten Sie Ihren Formularerstellungsprozess mit unseren neuen, gebrauchsfertig vorkonfigurierten Designs und Vorlagen, die sowohl auf erfahrene Profis als auch auf neue Formularautorinnen und -autoren zugeschnitten sind. Diese sorgfältig kuratierten Designs und Vorlagen wurden mit den Kernkomponenten für adaptive Formulare nahtlos erstellt und ermöglichen Ihnen die rasche Erstellung von Formularen für gängige Anwendungsfälle.
 
-* **[React-Komponenten für Headless Forms](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: Sie können jetzt Headless-Adaptive Formularwiedergaben mit den vordefinierten React-Komponenten in der Vorschau anzeigen und anpassen. Diese Komponenten verwenden BEM-Klassen aus den adaptiven Forms-Kernkomponenten für die Formatierung, sodass Sie das Erscheinungsbild mühelos an Ihre spezifischen Anforderungen anpassen können.
+* **[React-Komponenten für Headless-Formulare](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: Sie können jetzt Ausgabedarstellungen adaptiver Headless-Formulare mit den bereitgestellten vordefinierten React-Komponenten in der Vorschau anzeigen und anpassen. Diese Komponenten verwenden BEM-Klassen aus den adaptiven Forms-Kernkomponenten für die Formatierung, sodass Sie das Erscheinungsbild mühelos an Ihre spezifischen Anforderungen anpassen können.
 
-* [**Adaptive Forms mit wiederholbaren Abschnitten erstellen**](/help/forms/create-forms-repeatable-sections.md): Jetzt können Sie [Akkordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=de), [Assistent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=de), [Bedienfeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=de), und [Horizontale Registerkarten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=de) Komponenten, die auf dem adaptiven Formular basieren, wiederholbar für die Erfassung mehrerer Datensätze.  Mit diesen wiederholbaren Abschnitten können Sie mehrere Dateneinträge einfach bereitstellen. Dies ist nützlich, wenn die erforderlichen Dateninstanzen im Voraus unbekannt sind. Ein Formularbenutzer kann problemlos Abschnitte hinzufügen oder entfernen, sodass Formulare an verschiedene Dateneingabeszenarien angepasst werden können und die Erfassung mehrerer Vorkommen desselben Datensatzes vereinfacht wird.
+* [**Adaptive Formulare mit wiederholbaren Abschnitten erstellen**](/help/forms/create-forms-repeatable-sections.md): Sie können jetzt die Komponenten [Akkordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=de), [Assistent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=de), [Bedienfeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=de) und [horizontale Registerkarten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=de) in einem auf Kernkomponenten basierenden adaptiven Formular verwenden, um mehrere Datensätze zu erfassen. Mit diesen wiederholbaren Abschnitten können Sie problemlos mehrere Dateneinträge bereitstellen. Dies ist nützlich, wenn die erforderlichen Dateninstanzen im Voraus unbekannt sind. Ein Formularbefüller kann problemlos Abschnitte hinzufügen oder entfernen, Formulare an verschiedene Dateneingabeszenarien anpassen und die Erfassung mehrfacher Vorkommen desselben Datensatzes vereinfachen.
 
 
-### Funktionen zur Vorabversion sind verfügbar in [!DNL Forms] {#pre-release-features-available-in-forms-channel}
+### Vorab veröffentlichte Funktionen, die in [!DNL Forms] verfügbar sind {#pre-release-features-available-in-forms-channel}
 
-* [**Enterprise-Unterstützung für Google reCAPTCHA**](/help/forms/captcha-adaptive-forms.md): Verwenden Sie Google reCAPTCHA Enterprise in einem adaptiven Formular, um einen verbesserten Schutz vor betrügerischer Aktivität und Spam zu bieten und so eine sicherere Benutzererfahrung zu bieten. Dank der erweiterten Risikoanalyse und nahtloser Integration können echte Benutzer problemlos Formulare senden, während Bots effektiv blockiert werden.
+* [**Unterstützung für Google reCAPTCHA Enterprise**](/help/forms/captcha-adaptive-forms.md): Verwenden Sie Google reCAPTCHA Enterprise in einem adaptiven Formular, um einen besseren Schutz vor betrügerischen Aktivitäten und Spam zu bieten und so ein sichereres Anwendererlebnis zu ermöglichen. Dank erweiterter Risikoanalyse und nahtloser Integration können echte Benutzende problemlos Formulare absenden, während Bots effektiv blockiert werden.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
 
@@ -102,27 +102,27 @@ Die Benutzung von [adaptiven Headless-Formularen](https://experienceleague.adobe
 
 Sie können von Ihrer offiziellen E-Mail-ID eine E-Mail an `aem-forms-headless@adobe.com` senden, um am Early-Adopter-Programm teilzunehmen.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
 
 ### Aktionszentrum {#actions-center}
 
-Abonnieren Sie E-Mail-Benachrichtigungen, die Sie warnen, wenn kritische Vorfälle auftreten, die sofortiges Handeln erfordern, und auch mit personalisierten Empfehlungen zur Optimierung Ihrer Site. [Aktionszentrum](/help/operations/actions-center.md) dient als zentrale Anlaufstelle, an der Sie diese Warnhinweise überprüfen können, z. B. blockierte Replikationswarteschlangen oder ablaufende Anmeldeinformationen, und sie als aufgelöst markieren können.
+Abonnieren Sie E-Mail-Benachrichtigungen, die Sie warnen, wenn kritische Vorfälle auftreten, die sofortiges Handeln erfordern, und außerdem personalisierte Empfehlungen zur Optimierung Ihrer Site enthalten. Das [Aktionszentrum](/help/operations/actions-center.md) dient als zentrale Anlaufstelle, an der Sie diese Warnhinweise überprüfen können, z. B. blockierte Replikationswarteschlangen oder ablaufende Anmeldeinformationen, und sie als aufgelöst markieren können.
 
 ![Screenshot des Aktionszentrums](/help/assets/assets/actions-center.png)
 
-### CDN und WAF-Regeln für frühe Anwender {#waf-early-adopter}
+### CDN und WAF-Regeln – Early-Adopter-Programm {#waf-early-adopter}
 
 Filtern Sie den Traffic im CDN anhand von:
 * Anfragekopfzeilen und -eigenschaften (z. B. IP-Adresse)
 * Traffic-Muster, die bekanntermaßen mit bösartigem Traffic verknüpft sind
 
-Möchten Sie die Funktion ausprobieren und Feedback teilen? E-Mail an senden **aemcs-waf-adopter@adobe.com** von Ihrer offiziellen E-Mail-ID, um mehr über das Programm für frühe Anwender zu erfahren. Der Platz ist begrenzt.
+Möchten Sie die Funktion ausprobieren und Feedback geben? Sie können von Ihrer offiziellen E-Mail-ID eine E-Mail an **aemcs-waf-adopter@adobe.com** senden, um am Early-Adopter-Programm teilzunehmen. Die Plätze sind begrenzt.
 
-Weitere Informationen zur Funktion finden Sie im Artikel . [here](/help/security/traffic-filter-rules-including-waf.md).
+Weitere Informationen zur Funktion finden Sie im Artikel [hier](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Sonstige Foundation-Änderungen {#other-foundation-changes}
 
-* In der Woche vom 7. August gibt AEM den Fehlercode 429 anstelle des Fehlercodes 503 zurück, wenn Anforderungen an AEM Instanzen eine gesunde Stufe überschreiten. [Weitere Informationen](/help/implementing/developing/introduction/development-guidelines.md)
+* In der Woche vom 7. August gibt AEM den Fehlercode 429 anstelle des Fehlercodes 503 zurück, wenn Anforderungen an AEM Instanzen ein gesundes Maß überschreiten. [Weitere Informationen](/help/implementing/developing/introduction/development-guidelines.md)
 
 ## Wartungsversionshinweise {#maintenance}
 

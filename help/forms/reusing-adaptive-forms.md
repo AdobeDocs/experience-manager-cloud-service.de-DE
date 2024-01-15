@@ -7,7 +7,7 @@ exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
 source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
 workflow-type: tm+mt
 source-wordcount: '601'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 92%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/reusing-adaptive-forms.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/reusing-adaptive-forms.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 Wenn Sie für ein neues adaptives Formular einige der Eigenschaften eines vorhandenen adaptiven Formulars verwenden möchten, können Sie einfach die Funktion zum Kopieren/Einfügen verwenden. Darüber hinaus können Sie das neue adaptive Formular in den gewünschten Ordnerpfad einfügen. Alle Metadateneigenschaften werden repliziert und die XFAs und XSDs für XFA- und XSD-basierte adaptive Formulare werden ebenfalls kopiert.
@@ -71,7 +71,7 @@ Wenn Sie eingefügte adaptive Formulare anders als das kopierte Formular gestalt
 
 1. **Neu veröffentlichen:**
 
-   Das eingefügte Asset unterscheidet sich vom kopierten. Sie können es als neues Asset veröffentlichen, um es für Endbenutzer verfügbar zu machen. Unter <!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) --> erfahren Sie, wie ein Asset veröffentlicht wird,
+   Das eingefügte Asset unterscheidet sich vom kopierten Asset. Sie können es als neues Asset veröffentlichen, um es für Endbenutzende verfügbar zu machen. Unter <!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) --> erfahren Sie, wie ein Asset veröffentlicht wird,
 
 
 ## Siehe auch {#see-also}

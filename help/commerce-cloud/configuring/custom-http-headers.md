@@ -5,7 +5,7 @@ exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '279'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -27,7 +27,7 @@ Um die benutzerdefinierten HTTP-Kopfzeilen zu konfigurieren, müssen Sie sie zue
 Sie können die Werte der HTTP-Kopfzeilen auf der Seite „Cloud Service-Konfiguration“ für Ihr Projekt konfigurieren:
 
 1. Navigieren Sie zur Konfigurationsseite des Cloud Service unter Tools > Cloud Services > CIF.
-1. Öffnen einer vorhandenen Konfiguration oder Erstellen einer
+1. Öffnen Sie eine vorhandene Konfiguration oder erstellen Sie eine neue.
 1. Wechseln Sie zur Registerkarte „Erweitert“ und suchen Sie das Multi-Feld „Anwenderdefinierte HTTP-Kopfzeilen“. Sie können die zuvor definierten Kopfzeilen auswählen und ihnen Werte zuweisen.
 
 Die Komponenten, die die obige Cloud Service-Konfiguration verwenden, senden diese HTTP-Kopfzeilen mit jeder GraphQL-Anfrage.

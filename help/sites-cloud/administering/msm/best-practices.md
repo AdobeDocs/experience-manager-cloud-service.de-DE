@@ -7,7 +7,7 @@ exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1413'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 ## Allgemein {#general}
 
-MSM ist ein konfigurierbares Framework zur Automatisierung der Inhaltsbereitstellung. Implementierungen umfassen häufig große Teile einer Website und umspannen Organisationen und geografische Standorte. Daher wird dringend empfohlen, MSM-Implementierungen so sorgfältig zu planen, wie Sie Ihre Website planen:
+MSM ist ein konfigurierbares Framework zur Automatisierung der Inhaltsbereitstellung. Implementierungen umfassen häufig große Teile einer Website und umspannen Organisationen und geografische Regionen. Es wird daher dringend empfohlen, MSM-Implementierungen mit der gleichen Sorgfalt zu planen wie Ihre Website:
 
 * **Planen Sie zunächst sorgfältig die Struktur und den Inhaltsfluss**, bevor Sie mit der Implementierung beginnen.
 * **Beschränken Sie Anpassungen auf das Nötigste.** MSM unterstützt zwar ein hohes Maß an Anpassungen (beispielsweise Rollout-Konfigurationen). Es empfiehlt sich jedoch, möglichst wenige Anpassungen vorzunehmen, um die Leistung und Zuverlässigkeit Ihrer Website nicht zu beeinträchtigen und Website-Upgrades durchführen zu können.
@@ -35,7 +35,7 @@ Eine Blueprint-Konfiguration hat die folgenden zusätzlichen Vorteile:
 
 Ohne Verweis auf eine Blueprint-Konfiguration können Rollouts nur von Live Copies selbst initiiert werden, wobei im Wesentlichen Inhalt aus der Quelle abgerufen wird.
 
-Bei der Erstellung einer Site mit Live Copy ist es von Vorteil, Blueprint-Konfigurationen zu erstellen, um die Verfügbarkeit des vollständigen MSM-Funktionssatzes sicherzustellen.
+Wenn Sie eine Website mit Live Copy erstellen, empfiehlt es sich, Blueprint-Konfigurationen zu erstellen, um die Verfügbarkeit sämtlicher MSM-Features sicherzustellen.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Bei der Erstellung einer Site mit Live Copy ist es von Vorteil, Blueprint-Konfig
 
 ## Komponenten- und Container-Synchronisierung {#components-and-container-synchronization}
 
-Generell gilt in MSM die Rollout-Regel, dass die Komponenten synchronisiert werden müssen:
+Für die Synchronisierung von Komponenten gilt in MSM im Allgemeinen folgende Rollout-Regel:
 
 * Beim Rollout der Komponenten werden alle in der Blueprint enthaltenen Ressourcen synchronisiert.
 * Container synchronisieren nur die aktuelle Ressource.
@@ -66,7 +66,7 @@ Live Copies können mit AEM auf zwei Arten erstellt werden:
 
 Berücksichtigen Sie beim Erstellen einer Website folgende Punkte:
 
-* Um eine Site zu erstellen, benötigen Sie eine [Blueprint-Konfiguration](creating-live-copies.md#managing-blueprint-configurations).
+* Für die Erstellung einer Site benötigen Sie eine [Blueprint-Konfiguration](creating-live-copies.md#managing-blueprint-configurations).
 * Um das Auswählen von Sprachpfaden zu ermöglichen, die für eine neue Website erstellt werden sollen, muss der Blueprint (Quelle) die entsprechenden Sprachstämme enthalten.
 * Nach der [Erstellung einer neuen Website als Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (mithilfe von **Erstellen** > **Website**) sind die ersten beiden Ebenen dieser Live Copy *flach*. Untergeordnete Elemente der Seite sind nicht Teil der Live-Beziehung, werden bei einem Rollout aber trotzdem berücksichtigt, wenn eine dem Auslöser entsprechende Live-Beziehung gefunden wird.
 
@@ -82,7 +82,7 @@ MSM kann Sie auf zwei Arten beim Erstellen mehrsprachiger Websites unterstützen
 Beachten Sie beim Erstellen von Sprachstämmen Folgendes:
 
 * Während MSM selbst **keine Inhaltsübersetzung** anbietet, kann es mit Übersetzungs-Connectoren von Drittanbietern integriert werden, die dies tun. Beachten Sie Folgendes:
-   * Mit MSM können Sie die Vererbung auf Seiten- und/oder Komponentenebene abbrechen. So verhindern Sie, dass übersetzter Inhalt aus einer Live Copy beim nächsten Rollout durch noch nicht übersetzten Inhalt aus einem Blueprint überschrieben wird.
+   * Mit MSM können Sie die Vererbung auf Seiten- und/oder Komponentenebene unterbinden. So verhindern Sie, dass übersetzter Inhalt aus einer Live Copy beim nächsten Rollout durch noch nicht übersetzten Inhalt aus einem Blueprint überschrieben wird.
       * Einige Übersetzungs-Connectoren von Dritten bieten eine automatisierte Verwaltung der MSM-Vererbung.
       * Weitere Informationen erhalten Sie von Ihrem Übersetzungsdienstleister.
       * Eine Alternative für die Erstellung und Übersetzung von Sprachstämmen ist die Verwendung von Sprachkopien in Verbindung mit dem vorgefertigten AEM-Framework für die Übersetzungsintegration.
@@ -140,7 +140,7 @@ Auslöser vom Typ `onModify` sollten daher nur verwendet werden, wenn die Vortei
 
 ### Knotentypen/-eigenschaften {#node-types-properties}
 
-Neben der Anpassung von Rollout-Aktionen können Sie mit MSM auch die Knoteneigenschaften anpassen, für die ein Rollout durchgeführt wird. Die [Mit der MSM-OSGi-Konfiguration können Sie Knotentypen ausschließen](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) aus der Quelle in die Live Copy kopiert werden.
+Neben der Anpassung von Rollout-Aktionen ermöglicht MSM auch die Anpassung von Knoteneigenschaften, für die ein Rollout durchgeführt wird. Die [MSM-OSGi-Konfiguration ermöglicht das Ausschließen von Knotentypen](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization), sodass diese nicht aus der Quelle in die Live Copy kopiert werden.
 
 ## Weiterführende Informationen {#further-information}
 

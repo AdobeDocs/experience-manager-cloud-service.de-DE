@@ -5,7 +5,7 @@ exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 83%
+ht-degree: 94%
 
 ---
 
@@ -25,8 +25,8 @@ Asset-Ordner dienen der [Organisation traditioneller Inhalts-Assets](/help/asset
 
 Administratoren müssen nur gelegentlich Ordner erstellen, um Inhalte bei der Erstellung zu organisieren. Für die Zwecke dieser Anleitung für den Einstieg müssen wir nur einen Ordner erstellen.
 
-1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü die Option **Navigation > Assets > Dateien**.
-1. Auswählen **Erstellen > Ordner**.
+1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Navigation > Assets > Dateien** aus.
+1. Wählen Sie **Erstellen > Ordner** aus.
 1. Geben Sie einen **Titel** und einen **Namen** für Ihren Ordner an.
    * Der **Titel** sollte beschreibend sein.
    * Der **Name** wird zum Knotennamen im Repository.
@@ -38,14 +38,14 @@ Administratoren müssen nur gelegentlich Ordner erstellen, um Inhalte bei der Er
 1. Wählen Sie im Fenster **Eigenschaften** die Registerkarte **Cloud-Services** aus.
 1. Wählen Sie für die **Cloud-Konfiguration** die zuvor erstellte [Konfiguration aus.](create-configuration.md)
    ![Konfigurieren des Asset-Ordners](../assets/assets-folder-configure.png)
-1. Klicken Sie auf **Speichern und schließen**.
-1. Auswählen **OK** im Bestätigungsfenster.
+1. Wählen Sie **Speichern und schließen**.
+1. Wählen Sie **OK** im Bestätigungsfenster aus.
 
    ![Bestätigungsfenster](../assets/assets-folder-confirmation.png)
 
 Sie können weitere Unterordner im von Ihnen erstellten Ordner erstellen. Die Unterordner übernehmen die **Cloud-Konfiguration** des übergeordneten Ordners. Dies kann jedoch überschrieben werden, wenn Sie Modelle aus einer anderen Konfiguration verwenden möchten.
 
-Wenn Sie eine lokalisierte Site-Struktur verwenden, können Sie unter Ihrem neuen Ordner [einen Sprach-Stamm](/help/assets/translate-assets.md) erstellen.
+Wenn Sie eine lokalisierte Site-Struktur verwenden, können Sie unter Ihrem neuen Ordner [einen Sprachstamm](/help/assets/translate-assets.md) erstellen.
 
 ## Nächste Schritte {#next-steps}
 

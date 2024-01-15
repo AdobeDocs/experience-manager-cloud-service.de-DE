@@ -8,7 +8,7 @@ exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -31,7 +31,7 @@ Sie können in der Benutzeroberfläche von [!DNL Adobe Experience Manager Assets
 
 So erstellen Sie einen privaten Ordner und geben ihn frei:
 
-1. Im [!DNL Assets] klicken Sie auf die **[!UICONTROL Erstellen]** in der Symbolleiste und wählen Sie **[!UICONTROL Ordner]** aus dem Menü.
+1. Klicken Sie in der [!DNL Assets]-Konsole in der Symbolleiste auf die Schaltfläche **[!UICONTROL Erstellen]** und wählen Sie dann **[!UICONTROL Ordner]** aus dem Menü aus.
 
    ![Asset-Ordner erstellen](assets/create-folder.png)
 

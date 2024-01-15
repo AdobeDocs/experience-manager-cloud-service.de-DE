@@ -7,20 +7,20 @@ level: Intermediate
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '693'
-ht-degree: 46%
+ht-degree: 95%
 
 ---
 
 
-# Hinzufügen von Informationen aus Benutzerdaten zu Metadaten für die Formularübermittlung {#adding-information-from-user-data-to-form-submission-metadata}
+# Hinzufügen von Informationen aus Benutzerdaten zu Formularübermittlungsmetadaten {#adding-information-from-user-data-to-form-submission-metadata}
 
-Sie können die in ein Element Ihres Formulars eingegebenen Werte verwenden, um Metadatenfelder eines Entwurfs oder einer Formularübermittlung zu berechnen. Mit Metadaten können Sie Inhalte auf der Grundlage von Benutzerdaten filtern. Beispiel: Ein Benutzer gibt John Doe in das Namensfeld Ihres Formulars ein. Sie können diese Informationen verwenden, um Metadaten zu berechnen, die diese Übermittlung unter der JD der Initialen kategorisieren können.
+Sie können Werte verwenden, die in ein Element Ihres Formulars eingegeben wurden, um Metadatenfelder eines Entwurfs oder einer Formularübermittlung zu berechnen. Mit Metadaten können Sie Inhalte auf der Grundlage von Benutzerdaten filtern. Beispiel: Ein Benutzer gibt „Hans Mustermann“ in das Namensfeld Ihres Formulars ein. Sie können diese Informationen verwenden, um Metadaten zu berechnen, die diese Übermittlung unter den Initialen „HM“ kategorisieren können.
 
 Um die Metadatenfelder mit den vom Benutzer eingegebenen Werten zu berechnen, müssen Sie Elemente Ihres Formulars in den Metadaten hinzufügen. Wenn ein Benutzer einen Wert in diesem Element eingibt, verwendet ein Skript den Wert, um diese Informationen zu berechnen. Diese Informationen werden den Metadaten hinzugefügt. Wenn Sie ein Element als Metadatenfeld hinzufügen, stellen Sie einen Schlüssel dafür bereit. Der Schlüssel wird als Feld in den Metadaten hinzugefügt und die berechneten Informationen werden damit protokolliert.
 
-Beispielsweise veröffentlicht eine Krankenversicherung ein Formular. In diesem Formular erfasst ein Feld das Alter der Endbenutzer. Der Kunde möchte alle Übermittlungen in einer bestimmten Altersgruppe überprüfen, nachdem mehrere Benutzer das Formular übermittelt haben. Statt alle Daten einzeln zu überprüfen, was mit zunehmender Anzahl an Formularen schwieriger wird, helfen zusätzliche Metadaten dem Kunden. Der Formularautor kann konfigurieren, welche Eigenschaften/Daten vom Benutzer auf der obersten Ebene gespeichert werden, damit die Suche am einfachsten ist. Zusätzliche Metadaten sind vom Benutzer ausgefüllte Informationen, die auf der obersten Ebene des Metadatenknotens gespeichert werden, wie vom Autor konfiguriert.
+Beispielsweise veröffentlicht eine Krankenversicherung ein Formular. In diesem Formular erfasst ein Feld das Alter der Endbenutzenden. Die Kundin bzw. der Kunde möchte alle Übermittlungen in einer bestimmten Altersgruppe überprüfen, nachdem mehrere Benutzende das Formular übermittelt haben. Statt alle Daten einzeln zu überprüfen, was mit zunehmender Anzahl an Formularen schwieriger wird, helfen zusätzliche Metadaten dabei. Die Autorin bzw. der Autor des Formulars kann konfigurieren, welche Eigenschaften/Daten, die von der Benutzerin bzw. dem Benutzer angegeben wurden, auf der obersten Ebene gespeichert werden, damit die Suche möglichst einfach ist. Zusätzliche Metadaten sind von Benutzenden ausgefüllte Informationen, die auf der obersten Ebene des Metadatenknotens gespeichert werden, wie von der Autorin bzw. dem Autor konfiguriert.
 
-Ein weiteres Beispiel ist ein Formular, das E-Mail-IDs und Telefonnummern erfasst. Wenn ein Benutzer dieses Formular anonym besucht und das Formular verlässt, kann der Autor das Formular so konfigurieren, dass die E-Mail-Adresse und Telefonnummer automatisch gespeichert werden. Dieses Formular wird automatisch gespeichert und die Telefonnummer und E-Mail-Adresse werden im Metadatenknoten des Entwurfs gespeichert. Ein Anwendungsfall dieser Konfiguration ist das Lead-Management-Dashboard.
+Ein weiteres Beispiel ist ein Formular, das E-Mail-IDs und Telefonnummern erfasst. Wenn eine Benutzerin bzw. ein Benutzer dieses Formular anonym besucht und das Formular verlässt, kann die Autorin bzw. der Autor das Formular so konfigurieren, dass die E-Mail-Adresse und die Telefonnummer automatisch gespeichert werden. Dieses Formular wird automatisch gespeichert und die Telefonnummer und die E-Mail-Adresse werden im Metadatenknoten des Entwurfs gespeichert. Ein Anwendungsfall dieser Konfiguration ist das Lead-Management-Dashboard.
 
 ## Hinzufügen von Formularelementen zu Metadaten {#adding-form-elements-to-metadata}
 
@@ -31,7 +31,7 @@ Führen Sie die folgenden Schritte aus, um den Metadaten ein Element hinzuzufüg
 1. Wählen Sie im Bearbeitungsmodus eine Komponente aus und wählen Sie ![Feldebene](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]** und wählen Sie ![cmppr](assets/configure-icon.svg).
 1. Klicken Sie in der Seitenleiste auf **[!DNL Metadata]**.
 1. Klicken Sie im Abschnitt „Metadaten“ auf **[!DNL Add]**.
-1. Verwenden Sie das Feld Wert auf der Registerkarte Metadaten , um Skripte hinzuzufügen. Die Skripte, die Sie hinzufügen, erfassen Daten aus Elementen im Formular und berechnen Werte, die an die Metadaten übergeben werden.
+1. Verwenden Sie das Feld „Wert“ auf der Registerkarte „Metadaten“, um Skripte hinzuzufügen. Die Skripte, die Sie hinzufügen, erfassen Daten aus Elementen im Formular und berechnen Werte, die an die Metadaten übergeben werden.
 
    Zum Beispiel wird **[!DNL true]** den Metadaten hinzugefügt, wenn der eingegebene Wert für Alter größer als 21 ist, und **[!DNL false]** wird eingefügt, wenn er kleiner als 21 ist. Sie können das folgende Skript auf der Registerkarte „Metadaten“ eingeben:
 
@@ -43,7 +43,7 @@ Führen Sie die folgenden Schritte aus, um den Metadaten ein Element hinzuzufüg
 
 1. Klicken Sie auf **[!DNL OK]**.
 
-Nachdem ein Benutzer Daten in das als Metadatenfeld ausgewählte Element eingegeben hat, werden die berechneten Informationen in den Metadaten protokolliert. Sie können die Metadaten im Repository sehen, das Sie zum Speichern von Metadaten konfiguriert haben.
+Nachdem eine Benutzerin bzw. ein Benutzer Daten in das als Metadatenfeld ausgewählte Element eingegeben hat, werden die berechneten Informationen in den Metadaten protokolliert. Sie können die Metadaten im Repository sehen, das Sie zum Speichern von Metadaten konfiguriert haben.
 
 ## Anzeigen der aktualisierten Formularübermittlungsmetadaten: {#seeing-updated-form-nbsp-submission-metadata}
 
@@ -55,7 +55,7 @@ Wenn Sie den Metadaten ein Kontrollkästchenelement hinzufügen, werden die ausg
 
 ![Speichern mehrerer Werte aus einem Kontrollkästchen](assets/checkbox-metadata.png)
 
-Sie wählen einen Container für das adaptive Formular aus, und in den Formulareigenschaften fügen Sie den Metadatenschlüssel `cb1` hinzu, in dem `checkbox1.value` gespeichert wird, und dann veröffentlichen Sie das Formular. Wenn ein Kunde das Formular ausfüllt, wählt der Kunde im Kontrollkästchen die Optionen &quot;Pass&quot;und &quot;Sozialversicherungsnummer&quot;aus. Die Werte 1 und 2 werden als 1, 2 im Feld „cb1“ der Übermittlungsmetadaten gespeichert.
+Sie wählen einen Container für das adaptive Formular aus, und in den Formulareigenschaften fügen Sie den Metadatenschlüssel `cb1` hinzu, in dem `checkbox1.value` gespeichert wird, und dann veröffentlichen Sie das Formular. Wenn eine Kundin oder ein Kunde das Formular ausfüllt, wählt sie bzw. er im Kontrollkästchen die Optionen „Pass“ und „Sozialversicherungsnummer“ aus. Die Werte 1 und 2 werden als 1, 2 im Feld „cb1“ der Übermittlungsmetadaten gespeichert.
 
 ![Metadatenelement für mehrere Werte, ausgewählt in einem Kontrollkästchenfeld](assets/metadata-entry.png)
 

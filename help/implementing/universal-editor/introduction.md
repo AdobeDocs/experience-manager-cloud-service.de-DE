@@ -1,18 +1,18 @@
 ---
 title: Einführung in den universellen Editor
-description: Erfahren Sie, wie der universelle Editor die WYSIWYG-Bearbeitung (What-you-see-is-what-you-get) von Headless- und Headful-Erlebnissen ermöglicht. Erfahren Sie, wie er Autorinnen und Autoren dabei helfen kann, außergewöhnliche Inhalte zu erstellen sowie die Geschwindigkeit ihrer Inhalte zu erhöhen, und wie er Entwicklerinnen und Entwicklern ein modernes Erlebnis bietet.
+description: Erfahren Sie, wie der universelle Editor die WYSIWYG-Bearbeitung (What you see is what you get) von beliebigen Headless- und Headful-Erlebnissen ermöglicht. Erfahren Sie, wie er Autorinnen und Autoren dabei helfen kann, außergewöhnliche Inhalte zu erstellen sowie die Geschwindigkeit ihrer Inhalte zu erhöhen, und inwiefern er Entwickelnden ein modernes Erlebnis bietet.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '925'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 
 # Einführung in den universellen Editor {#introduction}
 
-Erfahren Sie, wie der universelle Editor die WYSIWYG-Bearbeitung (What-you-see-is-what-you-get) von Headless- und Headful-Erlebnissen ermöglicht. Erfahren Sie, wie er Autorinnen und Autoren dabei helfen kann, außergewöhnliche Inhalte zu erstellen sowie die Geschwindigkeit ihrer Inhalte zu erhöhen, und wie er Entwicklerinnen und Entwicklern ein modernes Erlebnis bietet.
+Erfahren Sie, wie der universelle Editor die WYSIWYG-Bearbeitung (What you see is what you get) von beliebigen Headless- und Headful-Erlebnissen ermöglicht. Erfahren Sie, wie er Autorinnen und Autoren dabei helfen kann, außergewöhnliche Inhalte zu erstellen sowie die Geschwindigkeit ihrer Inhalte zu erhöhen, und inwiefern er Entwickelnden ein modernes Erlebnis bietet.
 
 {{universal-editor-status}}
 
@@ -32,12 +32,12 @@ Der universelle Editor kann für jede Implementierung, für jeden Inhalt und fü
 
 Da Erlebnisse auf viele verschiedene Arten erstellt werden können, kann jede Implementierung den universellen Editor nutzen, damit Autorinnen und Autoren Bearbeitungen direkt im Kontext durchführen können.
 
-Benutzer glauben oft, dass eine Headless-Implementierung die Autoren daran hindert, alle Inhalte in einer formularbasierten Benutzeroberfläche zu bearbeiten. Dies ist jedoch beim universellen Editor nicht der Fall.
+Benutzende glauben oft, dass eine Headless-Implementierung die Autorinnen und Autoren darauf beschränkt, alle Inhalte in einer formularbasierten Benutzeroberfläche zu bearbeiten, aber das ist beim universellen Editor nicht der Fall
 
 Die Anforderungen für eine Implementierung zur Nutzung des universellen Editors sind sehr einfach und unterstützen die folgenden Punkte:
 
-* **Beliebige Architektur** - Server-seitiges Rendering, Edge-seitiges Rendering, Client-seitiges Rendering usw.
-* **Jegliches Framework** - Vanilla-AEM oder Drittanbieter-Frameworks wie React, Next.js, Angular usw.
+* **Jegliche Architektur** – Server-seitiges Rendering, Edge-seitiges Rendering, Client-seitiges Rendering usw.
+* **Jegliches Framework** – Vanilla AEM oder Drittanbieter-Frameworks wie React, Next.js, Angular usw.
 * **Beliebiges Hosting** – Kann lokal auf AEM oder auf einer Remote-Domain gehostet werden.
 
 ### Beliebiger Inhalt {#any-content}
@@ -52,7 +52,7 @@ Inhaltsautorinnen und -autoren sollten dasselbe leistungsstarke Bearbeitungserle
 
 Für Inhaltsautorinnen und -autoren geht es bei Inhalten nicht nur um die enthaltenen Informationen, sondern auch darum, wie sie gerendert und empfangen werden. Zu den Inhalten gehören zusätzliche Metadaten- und Instrumentierungsregeln, die der universelle Editor verstehen und bearbeiten kann, darunter:
 
-* **Anwenden von Layout und Stil** - Mit einem Stilsystem können Marketing-Experten und Inhaltsautoren unterschiedliche Stile auf ihren Inhalt anwenden und unterschiedliche Layouts für den Inhalt erstellen, z. B. Spalten, Karussells, Registerkarten, Akkordeons usw.
+* **Anwendung von Layout und Stil** – Mithilfe eines Stilsystems können Marketing-Teams und Inhaltsautorinnen bzw. Inhaltsautoren unterschiedliche Stile auf ihre Inhalte anwenden und unterschiedliche Layouts für die Inhalte erstellen, z. B. Spalten, Karussells, Registerkarten, Akkordeons usw.
 
 ## Wert  {#value}
 
@@ -64,9 +64,9 @@ Durch die Entkopplung des Inhaltserstellungserlebnisses von einem bestimmten Inh
 * **Inhaltsgeschwindigkeit erhöhen** – Um den Verwaltungs-Workflow für technische Fachkräfte zu optimieren, ermöglicht der universelle Editor die Bearbeitung von Inhalten in der Vorschau, um sie zu leiten, indem nur die Optionen angezeigt werden, die für diesen Kontext relevant sind, und der Workflow von den Inhaltsquellen unabhängig wird.
 * **Modernstes Entwicklererlebnis** – Zur Unterstützung der heterogenen Anwendungslandschaft in der realen Welt ist der universelle Editor vollständig entkoppelt und technologieunabhängig, sodass Entwicklerinnen und Entwickler ihren bevorzugten Technologiestapel zur Implementierung des Erlebnisses nutzen können.
 
-## Universal Editor und der Inhaltsfragment-Editor {#universal-editor-content-fragment-editor}
+## Universeller Editor und der Inhaltsfragmenteditor {#universal-editor-content-fragment-editor}
 
-Auf den ersten Blick sieht es so aus, als ob der Universal Editor und der Inhaltsfragment-Editor ähnliche Bearbeitungsfunktionen bieten. Die beiden Editoren bieten jedoch sehr unterschiedliche Funktionen und erledigen unterschiedliche Aufgaben für Marketing-Fachleute.
+Auf den ersten Blick sieht es so aus, als ob der universelle Editor und der Inhaltsfragmenteditor ähnliche Bearbeitungsfunktionen bieten. Die beiden Editoren bieten jedoch sehr unterschiedliche Funktionen und erledigen unterschiedliche Aufgaben für Marketing-Fachleute.
 
 ### Inhaltsfragment-Editor {#content-fragment-editor}
 
@@ -90,8 +90,8 @@ Wenden Sie sich an Ihre Ansprechperson bei Adobe, um mehr über die für den uni
 
 Weitere Informationen zum universellen Editor finden Sie in diesen Dokumenten.
 
-* [Inhaltserstellung mit dem universellen Editor](authoring.md) – Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
-* [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md) - Erfahren Sie, wie der Universal Editor Inhalte veröffentlicht und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
+* [Inhaltserstellung mit dem universellen Editor](authoring.md) – Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und Inhaltsautoren ist, Inhalte mit dem universellen Editor zu erstellen.
+* [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md) – Erfahren Sie, wie mit dem universellen Editor Inhalte veröffentlicht werden und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
 * [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) – Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.
 * [Architektur des universellen Editors](architecture.md) – Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.
 * [Attribute und Typen](attributes-types.md) – Erfahren Sie mehr über die Datenattribute und -typen, die der universelle Editor erfordert.

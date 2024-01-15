@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '2165'
-ht-degree: 26%
+ht-degree: 89%
 
 ---
 
@@ -20,7 +20,7 @@ Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren is
 
 Der universelle Editor ermöglicht die Bearbeitung beliebiger Inhalte in jeder Implementierung, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
 
-Dazu bietet der universelle Editor Autoren von Inhalten eine intuitive Benutzeroberfläche, für die eine minimale Schulung erforderlich ist, um einfach in die Lage zu wechseln und mit der Bearbeitung von Inhalten zu beginnen. In diesem Dokument wird das Authoring-Erlebnis des universellen Editors beschrieben.
+Zu diesem Zweck bietet der universelle Editor Inhaltsautorinnen und Inhaltsautoren eine intuitive Benutzeroberfläche, die nur eine minimale Schulung erfordert, damit sie gleich loslegen und mit der Bearbeitung von Inhalten beginnen können. In diesem Dokument wird das Authoring-Erlebnis mit dem universellen Editor beschrieben.
 
 >[!TIP]
 >
@@ -36,9 +36,9 @@ Um Inhalte für eine App mit dem universellen Editor erstellen zu können, muss 
 
 ## Anmelden {#sign-in}
 
-Nachdem die App für die Verwendung mit dem universellen Editor konfiguriert wurde, melden Sie sich beim universellen Editor an. Sie benötigen eine Adobe ID, um sich anzumelden und [haben Zugriff auf den universellen Editor.](getting-started.md#request-access)
+Nachdem die App für die Verwendung mit dem universellen Editor konfiguriert wurde, melden Sie sich beim universellen Editor an. Sie benötigen eine Adobe ID, um sich anzumelden und [Zugang zum universellen Editor zu erhalten.](getting-started.md#request-access)
 
-Geben Sie nach der Anmeldung die URL der Seite ein, die Sie bearbeiten möchten, im [Standortleiste.](#location-bar) damit Sie mit der Bearbeitung von Inhalten beginnen können, z. B. [Textinhalt](#text-mode) oder [Medieninhalte.](#media-mode)
+Nachdem Sie sich angemeldet haben, geben Sie die URL der Seite, die Sie bearbeiten möchten, in die [Speicherortleiste ein.](#location-bar) Dann können Sie mit der Bearbeitung von Inhalten beginnen, z. B. [Textinhalt](#text-mode) oder [Medieninhalte](#media-mode).
 
 ## Grundlegendes zur Benutzeroberfläche {#ui}
 
@@ -71,7 +71,7 @@ Dadurch wird die Organisation angezeigt, bei der Sie sich derzeit angemeldet hab
 
 #### Lösungen {#solutions}
 
-Durch Tippen oder Klicken auf den Lösungsschalter können Sie schnell zu anderen Experience Cloud-Lösungen wechseln.
+Durch Tippen oder Klicken auf den Lösungsumschalter können Sie schnell zu anderen Experience Cloud-Lösungen wechseln.
 
 ![Lösungsumschalter](assets/solutions.png)
 
@@ -83,13 +83,13 @@ Das Hilfesymbol bietet schnellen Zugriff auf Lern- und Support-Ressourcen.
 
 #### Benachrichtigungen {#notifications}
 
-Dieses Symbol ist mit der Anzahl der aktuell zugewiesenen unvollständigen Zeichen gekennzeichnet [Benachrichtigungen.](/help/implementing/cloud-manager/notifications.md)
+Dieses Symbol wird mit der Anzahl der aktuell zugewiesenen unvollständigen [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md) gekennzeichnet.
 
 ![Benachrichtigungen](assets/notifications.png)
 
 #### Benutzereigenschaften {#user-properties}
 
-Wählen Sie das Symbol für Ihren Benutzer aus, um auf Ihre Benutzereinstellungen zuzugreifen. Wenn Sie kein Benutzerbild konfiguriert haben, wird ein zufälliges Symbol zugewiesen.
+Wählen Sie das Symbol für Ihre Benutzerin bzw. Ihren Benutzer aus, um auf Ihre Benutzereinstellungen zuzugreifen. Wenn Sie kein Benutzerbild konfiguriert haben, wird ein zufälliges Symbol zugewiesen.
 
 ![Benutzereigenschaften](assets/user-properties.png)
 
@@ -99,11 +99,11 @@ Die Symbolleiste des universellen Editors befindet sich immer oben im Bildschirm
 
 ![Symbolleiste des universellen Editors](assets/universal-editor-toolbar.png)
 
-#### Die Schaltfläche &quot;Startseite&quot; {#home-button}
+#### Die Schaltfläche „Startseite“ {#home-button}
 
-Über die Schaltfläche &quot;Startseite&quot;gelangen Sie wieder zur Startseite des universellen Editors
+Über die Schaltfläche „Startseite“ gelangen Sie wieder zur Startseite des universellen Editors
 
-![Hamburger Menü](assets/home-button.png)
+![Hamburger-Menü](assets/home-button.png)
 
 Auf der Startseite können Sie die URL der Site eingeben, die Sie mit dem universellen Editor bearbeiten möchten.
 
@@ -111,11 +111,11 @@ Auf der Startseite können Sie die URL der Site eingeben, die Sie mit dem univer
 
 >[!NOTE]
 >
->Jede Seite, die Sie mit dem universellen Editor bearbeiten möchten, muss [instrumentiert, um den universellen Editor zu unterstützen.](getting-started.md)
+>Jede Seite, die Sie mit dem universellen Editor bearbeiten möchten, muss [für die Unterstützung des universellen Editors instrumentiert sein](getting-started.md).
 
 #### Speicherortleiste {#location-bar}
 
-Die Speicherortleiste zeigt die Adresse der Seite an, die Sie bearbeiten. Wählen Sie diese Option aus, um die Adresse einer anderen zu bearbeitenden Seite einzugeben.
+Die Speicherortleiste zeigt die Adresse der Seite an, die Sie bearbeiten. Wählen Sie sie aus, um die Adresse einer anderen Seite einzugeben, die bearbeitet werden soll.
 
 ![Speicherortleiste](assets/location-bar.png)
 
@@ -125,27 +125,27 @@ Die Speicherortleiste zeigt die Adresse der Seite an, die Sie bearbeiten. Wähle
 
 >[!NOTE]
 >
->Jede Seite, die Sie mit dem universellen Editor bearbeiten möchten, muss [instrumentiert, um den universellen Editor zu unterstützen.](getting-started.md)
+>Jede Seite, die Sie mit dem universellen Editor bearbeiten möchten, muss [für die Unterstützung des universellen Editors instrumentiert sein](getting-started.md).
 
-#### Einstellungen für Authentifizierungs-Header {#authentication-settings}
+#### Authentifizierungs-Header-Einstellungen {#authentication-settings}
 
 Wählen Sie bei Bedarf das Symbol für die Authentifizierungs-Kopfzeileneinstellungen aus. [Legen Sie einen benutzerdefinierten Authentifizierungs-Header für lokale Entwicklungszwecke fest.](/help/implementing/universal-editor/developer-overview.md#auth-header)
 
-![Schaltfläche &quot;Authentifizierungs-Header-Einstellungen&quot;](assets/authentication-header-settings.png)
+![Schaltfläche „Authentifizierungs-Header-Einstellungen“](assets/authentication-header-settings.png)
 
 #### Emulator-Einstellungen {#emulator}
 
-Wählen Sie das Emulationssymbol aus, um festzulegen, wie der Universal Editor die Seite rendert.
+Wählen Sie das Emulationssymbol aus, um festzulegen, wie der universelle Editor die Seite rendert.
 
 ![Emulator-Symbol](assets/emulator.png)
 
 Durch Tippen oder Klicken auf das Emulationssymbol werden die Optionen angezeigt.
 
-![Emulierungsoptionen](assets/emulation-options.png)
+![Emulationsoptionen](assets/emulation-options.png)
 
 Standardmäßig wird der Editor im Desktop-Layout geöffnet, wobei Höhe und Breite automatisch vom Browser definiert werden.
 
-Sie können auch ein Mobilgerät und im universellen Editor emulieren:
+Sie können auch ein Mobilgerät im universellen Editor emulieren:
 
 * Ausrichtung definieren
 * Breite und Höhe definieren
@@ -153,7 +153,7 @@ Sie können auch ein Mobilgerät und im universellen Editor emulieren:
 
 #### Vorschaumodus {#preview-mode}
 
-Im Vorschaumodus wird die Seite im Editor so gerendert, wie sie in Ihrem veröffentlichten Dienst angezeigt werden würde. Dadurch kann der Inhaltsautor durch Klicken auf Links zum Inhalt navigieren usw.
+Im Vorschaumodus wird die Seite im Editor so gerendert, wie sie in Ihrem veröffentlichten Dienst angezeigt werden würde. Damit können Inhaltsautorinnen und Inhaltsautoren durch Klicken auf Links usw. durch den Inhalt navigieren.
 
 ![Vorschaumodus](assets/preview-mode.png)
 
@@ -163,41 +163,41 @@ Im Vorschaumodus wird die Seite im Editor so gerendert, wie sie in Ihrem veröff
 
 #### App-Vorschau öffnen {#open-app-preview}
 
-Klicken Sie auf das Symbol &quot;Vorschau der App öffnen&quot;, um die Seite zu öffnen, die Sie gerade bearbeiten, und zwar auf der eigenen Registerkarte des Browsers, die nicht vom Editor zur Vorschau Ihres Inhalts genutzt werden kann.
+Wählen Sie das Symbol „App-Vorschau öffnen“ aus, um die Seite, die Sie gerade bearbeiten, auf einer eigenen Browser-Registerkarte zu öffnen (unabhängig vom Editor), um eine Vorschau der Änderungen anzuzeigen.
 
 ![App-Vorschau öffnen](assets/open-app-preview.png)
 
 >[!TIP]
 >
->Verwenden des Hotkeys `O` (Buchstabe O), um die App-Vorschau zu öffnen.
+>Verwenden Sie den Hotkey `O` (Buchstabe O), um die App-Vorschau zu öffnen.
 
-#### Veröffentlichen {#publish}
+#### Publish {#publish}
 
-Wählen Sie die Veröffentlichungsschaltfläche aus, damit Sie die Änderungen am Inhalt live für Ihre Leser veröffentlichen können.
+Wählen Sie die Schaltfläche „Veröffentlichen“ aus, um die Änderungen am Inhalt für Ihre Leserinnen und Leser live zu veröffentlichen.
 
 ![Schaltfläche „Veröffentlichen“](assets/publish.png)
 
 >[!TIP]
 >
->Siehe Dokument . [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md) für weitere Informationen zur Veröffentlichung mit dem universellen Editor.
+>Weitere Informationen zur Veröffentlichung mit dem universellen Editor finden Sie im Dokument [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md).
 
 ### Der Editor {#editor}
 
-Der Editor belegt den Großteil des Fensters und ist dort, wo die Seite angegeben ist in [die Standortleiste](#location-bar) wird gerendert.
+Der Editor nimmt den größten Teil des Fensters ein und ist der Ort, an dem die in der [Speicherortleiste](#location-bar) angegebene Seite gerendert wird.
 
 ![Bearbeiter](assets/editor.png)
 
-Wenn sich der Editor in [Vorschaumodus](#preview-mode) Der Inhalt kann navigiert werden und Sie können Links folgen, den Inhalt kann jedoch nicht bearbeitet werden.
+Wenn sich der Editor im [Vorschaumodus](#preview-mode) befindet, kann durch den Inhalt navigiert werden und Sie können Links folgen, aber den Inhalt nicht bearbeiten.
 
 ### Eigenschaftenleiste {#properties-rail}
 
-Die Eigenschaftenleiste befindet sich immer rechts im Editor. Je nach Modus können Details zu einer im Inhalt ausgewählten Komponente oder die Hierarchie der Seiteninhalte angezeigt werden.
+Die Eigenschaftenleiste befindet sich immer auf der rechten Seite des Editors. Je nach Modus können Details zu einer im Inhalt ausgewählten Komponente oder die Hierarchie der Seiteninhalte angezeigt werden.
 
 ![Die Eigenschaftenleiste](assets/component-rail.png)
 
 #### Eigenschaftenmodus {#properties-mode}
 
-Im Eigenschaftenmodus zeigt die Leiste die Eigenschaften der Komponente an, die derzeit im Editor ausgewählt sind. Dies ist der Standardmodus der Eigenschaftenleiste beim Laden einer Seite.
+Im Eigenschaftenmodus zeigt die Leiste die Eigenschaften der Komponente an, die aktuell im Editor ausgewählt ist. Dies ist der Standardmodus der Eigenschaftenleiste beim Laden einer Seite.
 
 ![Eigenschaftenmodus](assets/properties-mode.png)
 
@@ -209,13 +209,13 @@ Nicht alle Komponenten verfügen über Details, die angezeigt und/oder bearbeite
 
 >[!TIP]
 >
->Verwenden des Hotkeys `D` , um in den Eigenschaftenmodus zu wechseln.
+>Verwenden Sie den Hotkey `D`, um in den Eigenschaftenmodus zu wechseln.
 
-#### Inhaltsbaum-Modus {#content-tree-mode}
+#### Inhaltsstruktur-Modus {#content-tree-mode}
 
-Im Inhaltsstrukturmodus zeigt die Leiste die Hierarchie des Seiteninhalts an.
+Im Inhaltsstruktur-Modus zeigt die Leiste die Hierarchie des Seiteninhalts an.
 
-![Inhaltsbaum-Modus](assets/content-tree-mode.png)
+![Inhaltsstruktur-Modus](assets/content-tree-mode.png)
 
 Bei der Auswahl eines Elements in der Inhaltsstruktur scrollt der Editor zu diesem Inhalt und wählt ihn aus.
 
@@ -223,47 +223,47 @@ Bei der Auswahl eines Elements in der Inhaltsstruktur scrollt der Editor zu dies
 
 >[!TIP]
 >
->Verwenden des Hotkeys `F` , um in den Inhaltsbaummodus zu wechseln.
+>Verwenden Sie den Hotkey `F`, um in den Inhaltsstruktur-Modus zu wechseln.
 
 ##### Bearbeiten {#edit}
 
-Bei der Bearbeitung werden die Optionen für die ausgewählte Komponente in der Eigenschaftenleiste angezeigt, in der Sie die ausgewählte Komponente bearbeiten können. Wenn es sich bei der ausgewählten Komponente um ein Inhaltsfragment handelt, können Sie auch die Schaltfläche &quot;Bearbeiten&quot;auswählen.
+Bei der Bearbeitung werden die Optionen für die ausgewählte Komponente in der Eigenschaftenleiste angezeigt, in der Sie die ausgewählte Komponente bearbeiten können. Wenn es sich bei der ausgewählten Komponente um ein Inhaltsfragment handelt, können Sie auch die Schaltfläche „Bearbeiten“ auswählen.
 
-![Symbol Bearbeiten](assets/edit.png)
+![Symbol „Bearbeiten“](assets/edit.png)
 
-Durch Tippen oder Klicken auf die Schaltfläche &quot;Bearbeiten&quot;wird das [Inhaltsfragmente-Editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in einer neuen Registerkarte. Dadurch können Sie auf die volle Leistungsfähigkeit des Inhaltsfragment-Editors zugreifen, um das zugehörige Inhaltsfragment zu bearbeiten.
+Durch Tippen oder Klicken auf die Schaltfläche „Bearbeiten“ wird der [Inhaltsfragmenteditor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in einer neuen Registerkarte geöffnet. Dadurch können Sie auf die volle Leistungsfähigkeit des Inhaltsfragmenteditors zugreifen, um das zugehörige Inhaltsfragment zu bearbeiten.
 
-Abhängig von den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im universellen Editor oder direkt im Inhaltsfragment-Editor bearbeiten.
+Abhängig von den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im universellen Editor oder direkt im Inhaltsfragmenteditor bearbeiten.
 
 >[!TIP]
 >
->Verwenden des Hotkeys `E` , um eine ausgewählte Komponente zu bearbeiten.
+>Verwenden Sie den Hotkey `E`, um eine ausgewählte Komponente zu bearbeiten.
 
 ##### Hinzufügen {#add}
 
-Wenn Sie eine Container-Komponente entweder in der Inhaltsstruktur oder im Editor auswählen, wird die Option zum Hinzufügen in der Eigenschaftenleiste angezeigt.
+Wenn Sie eine Container-Komponente in der Inhaltsstruktur oder im Editor auswählen, wird die Option zum Hinzufügen in der Eigenschaftenleiste angezeigt.
 
-![Symbol &quot;Hinzufügen&quot;](assets/ue-add-component-icon.png)
+![Symbol „Hinzufügen“](assets/ue-add-component-icon.png)
 
-Durch Tippen oder Klicken auf die Schaltfläche zum Hinzufügen wird ein Dropdown-Menü mit Komponenten geöffnet, die für [zum ausgewählten Container hinzufügen.](#adding-components)
+Durch Tippen oder Klicken auf die Schaltfläche „Hinzufügen“ wird ein Dropdown-Menü mit Komponenten geöffnet, die [zum ausgewählten Container hinzugefügt werden können.](#adding-components)
 
 ![Kontextmenü hinzufügen](assets/add-context-menu.png)
 
 >[!TIP]
 >
->Verwenden des Hotkeys `A` , um eine Komponente zu einer ausgewählten Container-Komponente hinzuzufügen.
+>Verwenden Sie den Hotkey `A`, um eine Komponente zu einer ausgewählten Container-Komponente hinzuzufügen.
 
 ##### Löschen {#delete}
 
-Wenn Sie eine Komponente innerhalb einer Container-Komponente entweder in der Inhaltsstruktur oder im Editor auswählen, wird die Löschoption in der Eigenschaftenleiste angezeigt.
+Wenn Sie eine Komponente innerhalb einer Container-Komponente in der Inhaltsstruktur oder im Editor auswählen, wird die Löschoption in der Eigenschaftenleiste angezeigt.
 
-![Löschsymbol](assets/ue-delete-component-icon.png)
+![Symbol „Löschen“](assets/ue-delete-component-icon.png)
 
-Tippen oder Klicken auf die Schaltfläche zum Löschen [löscht die Komponente.](#deleting-components)
+Durch Tippen oder Klicken auf die Schaltfläche „Löschen“ [wird die Komponente gelöscht.](#deleting-components)
 
 >[!TIP]
 >
->Verwenden des Hotkeys `Shift+Backspace` , um eine ausgewählte Komponente aus einem Container zu löschen.
+>Verwenden Sie den Hotkey `Shift+Backspace`, um eine ausgewählte Komponente aus einem Container zu löschen.
 
 ## Bearbeiten von Inhalten {#editing-content}
 
@@ -273,46 +273,46 @@ Die Bearbeitung von Inhalten ist einfach und intuitiv. Wenn Sie den Mauszeiger �
 
 >[!TIP]
 >
->Durch Tippen oder Klicken auf den Inhalt wird er standardmäßig zur Bearbeitung ausgewählt. Wenn Sie durch folgende Links in Ihren Inhalt navigieren möchten, wechseln Sie zu [Vorschaumodus.](#preview-mode)
+>Durch Tippen oder Klicken auf den Inhalt wird er standardmäßig zur Bearbeitung ausgewählt. Wenn Sie durch das Folgen von Links in Ihren Inhalten navigieren möchten, wechseln Sie zum [Vorschaumodus.](#preview-mode)
 
-Je nach ausgewähltem Inhalt stehen Ihnen möglicherweise unterschiedliche Optionen zur Bearbeitung im Kontext zur Verfügung. Zusätzlich können Sie zusätzliche Informationen und Optionen für den Inhalt im [Eigenschaftenleiste.](#properties-rail)
+Je nach ausgewähltem Inhalt können Ihnen unterschiedliche Optionen zur Bearbeitung im Kontext zur Verfügung stehen. Außerdem sehen Sie möglicherweise zusätzliche Informationen und Optionen für den Inhalt in der [Eigenschaftenleiste](#properties-rail).
 
-### Nur Text bearbeiten {#edit-plain-text}
+### Bearbeiten von einfachem Text {#edit-plain-text}
 
 Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklicken oder doppeltippen.
 
 ![Bearbeiten von Inhalten](assets/editing-content.png)
 
-Drücken Sie die Eingabetaste/die Eingabetaste oder wählen Sie außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
+Drücken Sie die Eingabetaste oder wählen Sie etwas außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
 
-Wenn Sie die Textkomponente auswählen, werden deren Details in der Eigenschaftenleiste angezeigt. Sie können den Text auch in der Leiste bearbeiten.
+Wenn Sie die Textkomponente auswählen, werden ihre Details in der Eigenschaftenleiste angezeigt. Sie können den Text auch in der Leiste bearbeiten.
 
 ![Bearbeiten von Text in der Eigenschaftenleiste](assets/ue-editing-text-component-rail.png)
 
-Außerdem sind Details zu Ihrem Text in der Eigenschaftenleiste verfügbar. Änderungen werden automatisch gespeichert, sobald der Fokus das bearbeitete Feld in der Eigenschaftenleiste verlässt.
+Details zu Ihrem Text sind auch in der Eigenschaftenleiste verfügbar. Änderungen werden automatisch gespeichert, sobald das bearbeitete Feld in der Eigenschaftenleiste nicht mehr im Fokus ist.
 
 ### Bearbeiten von Rich-Text {#edit-rich-text}
 
 Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklicken oder doppeltippen.
 
-Drücken Sie die Eingabetaste/die Eingabetaste oder wählen Sie außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
+Drücken Sie die Eingabetaste oder wählen Sie etwas außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
 
 ![Bearbeiten einer Rich-Text-Komponente](assets/rich-text-editing.png)
 
-Außerdem sind Formatierungsoptionen und Details zu Ihrem Text in der Eigenschaftenleiste verfügbar. Änderungen werden automatisch gespeichert, sobald der Fokus das bearbeitete Feld in der Eigenschaftenleiste verlässt.
+Außerdem sind Formatierungsoptionen und Details zu Ihrem Text in der Eigenschaftenleiste verfügbar. Änderungen werden automatisch gespeichert, sobald das bearbeitete Feld in der Eigenschaftenleiste nicht mehr im Fokus ist.
 
 ### Bearbeiten von Medien {#edit-media}
 
 Sie können die Details in der Eigenschaftenleiste anzeigen.
 
-![Medien bearbeiten](assets/ue-edit-media.png)
+![Bearbeiten von Medien](assets/ue-edit-media.png)
 
 1. Tippen oder klicken Sie in der Eigenschaftenleiste auf die Vorschau des ausgewählten Bildes.
-1. Die [Asset-Wähler](/help/assets/asset-selector.md#using-asset-selector) -Fenster geöffnet, in dem Sie ein Asset auswählen können.
+1. Das Fenster [Asset-Selektor](/help/assets/asset-selector.md#using-asset-selector) wird geöffnet, in dem Sie ein Asset auswählen können.
 1. Wählen Sie diese Option, um ein neues Asset auszuwählen.
-1. Auswählen **Auswählen** , um zur Eigenschaftenleiste zurückzukehren, in der das Asset ersetzt wurde.
+1. Wählen Sie die Option **Auswählen** aus, um zur Eigenschaftenleiste zurückzukehren, in der das Asset ersetzt wurde.
 
-Änderungen werden automatisch in Ihrem Inhalt gespeichert.
+Änderungen an Ihrem Inhalt werden automatisch gespeichert.
 
 ### Bearbeiten von Inhaltsfragmenten {#edit-content-fragment}
 
@@ -322,18 +322,18 @@ Wenn Sie eine [Inhaltsfragment,](/help/sites-cloud/administering/content-fragmen
 
 Die im Inhaltsmodell des ausgewählten Inhaltsfragments definierten Felder werden in der Eigenschaftenleiste angezeigt und können bearbeitet werden.
 
-Wenn Sie ein Feld auswählen, das sich auf ein Inhaltsfragment bezieht, wird das Inhaltsfragment in der Komponentenleiste geladen und zu dem Feld wird automatisch ein Bildlauf durchgeführt.
+Wenn Sie ein Feld auswählen, das sich auf ein Inhaltsfragment bezieht, wird das Inhaltsfragment in der Komponentenleiste geladen und automatisch zu diesem Feld gescrollt.
 
-Änderungen werden automatisch gespeichert, sobald der Fokus das bearbeitete Feld in der Eigenschaftenleiste verlässt.
+Änderungen werden automatisch gespeichert, sobald das bearbeitete Feld in der Eigenschaftenleiste nicht mehr im Fokus ist.
 
-Wenn Sie Ihr Inhaltsfragment im [Inhaltsfragmente-Editor](/help/sites-cloud/administering/content-fragments/authoring.md) Klicken Sie stattdessen auf die [Schaltfläche &quot;Bearbeiten&quot;](#edit) in der Modusleiste.
+Wenn Sie Ihr Inhaltsfragment im [Inhaltsfragmente-Editor](/help/sites-cloud/administering/content-fragments/authoring.md) bearbeiten möchten, klicken Sie stattdessen auf die [Schaltfläche „Bearbeiten“](#edit) in der Modusleiste.
 
-Abhängig von den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im universellen Editor oder direkt im Inhaltsfragment-Editor bearbeiten.
+Abhängig von den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im universellen Editor oder direkt im Inhaltsfragmenteditor bearbeiten.
 
 ### Hinzufügen von Komponenten zu Containern {#adding-components}
 
 1. Wählen Sie eine Container-Komponente in der Inhaltsstruktur oder im Editor aus.
-1. Wählen Sie dann das Symbol zum Hinzufügen in der Eigenschaftenleiste aus.
+1. Wählen Sie dann das Symbol „Hinzufügen“ in der Eigenschaftenleiste aus.
 
    ![Auswählen einer Komponente zum Hinzufügen zu einem Container](assets/ue-add-component.png)
 
@@ -341,35 +341,35 @@ Die Komponente wird in den Container eingefügt und kann im Editor bearbeitet we
 
 >[!TIP]
 >
->Verwenden des Hotkeys `A` , um dem ausgewählten Container eine Komponente hinzuzufügen.
+>Verwenden Sie den Hotkey `A`, um dem ausgewählten Container eine Komponente hinzuzufügen.
 
 ### Löschen von Komponenten aus Containern {#deleting-components}
 
 1. Wählen Sie eine Container-Komponente in der Inhaltsstruktur oder im Editor aus.
 1. Wählen Sie das Pfeilsymbol des Containers aus, um seinen Inhalt in der Inhaltsstruktur zu erweitern.
 1. Wählen Sie dann in der Inhaltsstruktur eine Komponente im Container aus.
-1. Wählen Sie in der Eigenschaftenleiste das Löschsymbol aus.
+1. Wählen Sie das Symbol „Löschen“ in der Eigenschaftenleiste aus.
 
    ![Löschen einer Komponente](assets/ue-delete-component.png)
 
-Die ausgewählte Komponente wurde gelöscht.
+Die ausgewählte Komponente wird gelöscht.
 
 >[!TIP]
 >
->Verwenden des Hotkeys `Shift+Backspace` , um die ausgewählte Komponente aus ihrem Container zu löschen.
+>Verwenden Sie den Hotkey `Shift+Backspace`, um die ausgewählte Komponente aus ihrem Container zu löschen.
 
 ### Neuanordnen von Komponenten in Containern {#reordering-components}
 
 1. Wählen Sie eine Container-Komponente in der Inhaltsstruktur oder im Editor aus.
-1. Wenn nicht bereits in [Inhaltsbaum-Modus,](#content-tree-mode) darauf umschalten.
+1. Wechseln Sie in den [Inhaltsstruktur-Modus](#content-tree-mode), wenn dieser nicht bereits aktiviert ist.
 1. Wählen Sie das Pfeilsymbol des Containers aus, um seinen Inhalt in der Inhaltsstruktur zu erweitern.
 1. Ziehpunkte neben den Komponenten im Container zeigen, dass Sie sie neu anordnen können. Ziehen Sie die Komponenten, um sie innerhalb des Containers neu anzuordnen.
 
    ![Neuanordnen von Komponenten](assets/ue-reordering-components.png)
 
-1. Die gezogene Komponente wird in der Komponentenstruktur grau dargestellt, während der Einfügepunkt durch eine blaue Linie dargestellt wird. Lassen Sie die Komponente frei, um sie an ihrer neuen Position zu platzieren.
+1. Die gezogene Komponente wechselt in der Komponentenstruktur zu Grau, während der Einfügepunkt durch eine blaue Linie dargestellt wird. Lassen Sie die Komponente los, um sie an ihrer neuen Position zu platzieren.
 
-Die Komponenten werden sowohl in der Inhaltsstruktur als auch im Editor neu angeordnet
+Die Komponenten werden sowohl in der Inhaltsstruktur als auch im Editor neu angeordnet.
 
 ## Vorschau von Inhalten {#previewing-content}
 
@@ -382,7 +382,7 @@ Im Vorschaumodus reagiert das Tippen oder Klicken auf den Inhalt so, wie es für
 Weitere Informationen zum universellen Editor finden Sie in diesen Dokumenten.
 
 * [Einführung in den universellen Editor](introduction.md) – Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
-* [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md) - Erfahren Sie, wie der Universal Editor Inhalte veröffentlicht und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
+* [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md) – Erfahren Sie, wie mit dem universellen Editor Inhalte veröffentlicht werden und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
 * [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) – Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.
 * [Architektur des universellen Editors](architecture.md) – Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.
 * [Attribute und Typen](attributes-types.md) – Erfahren Sie mehr über die Datenattribute und -typen, die der universelle Editor erfordert.

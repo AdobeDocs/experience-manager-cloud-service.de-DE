@@ -5,7 +5,7 @@ exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1399'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -110,7 +110,7 @@ Wenn zum Beispiel eine einfache Nachricht nur dann ausgegeben werden soll, wenn 
 
 >[!NOTE]
 >
->Artefakte aus einem kennwortgeschützten Maven-Repository sollten mit Vorsicht verwendet werden, da Code, der über diesen Mechanismus bereitgestellt wird, derzeit nicht ausgeführt wird [Code-Qualitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementiert in die Quality Gates von Cloud Manager. Daher sollten sie nur in seltenen Fällen und nur für Code verwendet werden, der nicht an AEM gebunden ist. Es wird empfohlen, neben der Binärdatei auch die Java-Quellen sowie den gesamten Quell-Code des Projekts bereitzustellen.
+>Artefakte aus einem passwortgeschützten Maven-Repository sollten mit Vorsicht verwendet werden, da Code, der über diesen Mechanismus bereitgestellt wird, derzeit nicht alle [Code-Qualitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md) durchläuft, die in den Qualitätstests von Cloud Manager implementiert sind. Daher sollten sie nur in seltenen Fällen und nur für Code verwendet werden, der nicht an AEM gebunden ist. Es wird empfohlen, neben der Binärdatei auch die Java-Quellen sowie den gesamten Quell-Code des Projekts bereitzustellen.
 
 So verwenden Sie ein passwortgeschütztes Maven-Repository in Cloud Manager:
 

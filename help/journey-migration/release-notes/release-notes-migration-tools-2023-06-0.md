@@ -6,7 +6,7 @@ exl-id: 021b7472-d1e4-4ef6-a040-c612fed8d3c3
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '231'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -26,4 +26,4 @@ Das Content Transfer Tool Version 2.0.20 wurde am 08. Juni 2023 veröffentlicht
 Der Content Transformer bietet folgende Vorteile:
    * Ausfallsicher: Es wird vom Content Transformer jedes Mal ein Paket erstellt, wenn er Änderungen am Repository vornimmt, um Probleme zu beheben. Bei Bedarf können Sie den vorherigen Status wiederherstellen, indem Sie das Paket installieren.
    * Benutzerfreundlich: Der Content Transformer wurde in das Content Transfer Tool integriert und verfügt über eine einfache, intuitive Benutzeroberfläche.
-   * Zeit sparen: Wenn Sie eine große Anzahl von Inhaltsproblemen haben, die unter eine Musterkategorie fallen, können Sie diese mit dem Content Transformer mit mehreren Klicks beheben, wodurch Zeit und Migrationsprobleme erheblich reduziert werden.
+   * Zeitsparend: Wenn Sie eine große Anzahl von Inhaltsproblemen haben, die unter eine Musterkategorie fallen, können Sie sie alle mit dem Content Transformer mit nur wenigen Klicks lösen, was den Zeitaufwand und die Komplexität der Migration erheblich reduziert.

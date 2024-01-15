@@ -14,7 +14,7 @@ exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '2677'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -83,7 +83,7 @@ Stellen Sie sich vor, wie der Creative Director sich die Bilder anschaut und sag
 
 _„Bei dieser Aufnahme wollte ich unbedingt, dass der große Zeiger auf die Vier und der kleine Zeiger auf die 1 zeigt, damit das Zifferblatt besser zu erkennen ist.“_
 
-Das Kreativteam müsste alle neuen statischen Bilder erneut erstellen.
+Das Kreativ-Team müsste alle neuen statischen Bilder erneut aufnehmen.
 
 Mit Dynamic Media können Sie jedoch, wenn Sie verschiedene Bildvorgaben haben, diese Bilder überall dort verwenden, wo Sie sie benötigen. Mit den Bildvorgaben werden Standards durchgesetzt.
 
@@ -121,7 +121,7 @@ _Erstellen einer Bildvorgabe durch Auswahl von Optionen auf der Registerkarte �
 
 Sie erinnern sich, dass Sie in [Anatomie einer Dynamic Media URL](#dm-journey-d) bereits über die Dynamic Media URL gelesen haben und darüber, wie diese aufgebaut ist. In das Textfeld **[!UICONTROL Bildmodifikator]** können Sie alle gewünschten zusätzlichen Bildverarbeitungsparameter eingeben. Wenn Ihre Bilder bereitgestellt werden, werden die Parameter unter Verwendung der Vorgabe in den Vorgabenamen der URL aufgenommen. Im obigen Screenshot wurde der Parameter `bgc=451B15` hinzugefügt. Das heißt, es wurde eine dunkelbraune Hintergrundfarbe hinzugefügt.
 
-Sie können sich eine Bildvorgabe als Rezept für Ihre Bilder vorstellen. Es werden alle Bilder bereitgestellt, die die Vorgabe konsistent und jedes Mal verwenden. Es wird gleich sein. Der Parameter `&op_brightness=+10` wurde hinzugefügt, um die Helligkeit etwas zu erhöhen.
+Sie können sich eine Bildvorgabe als Rezept für Ihre Bilder vorstellen. Alle Bilder, die diese Vorgabe verwenden, werden konsistent und jedes Mal gleich aussehen. Der Parameter `&op_brightness=+10` wurde hinzugefügt, um die Helligkeit etwas zu erhöhen.
 
 Wenn Sie fertig sind, speichern Sie die Vorgabe. Jetzt ist sie für alle Bilder verfügbar, die Sie haben. In diesem Fall sollten Sie die _Mittel_ Bildvorgabe auf ein Bild einer Schüssel mit flüssiger Schokolade.
 
@@ -154,7 +154,7 @@ Zu den beliebtesten Einsatzbereichen von Dynamic Media gehört die Möglichkeit,
 
 Bildsets bestehen normalerweise aus einer Reihe von Bild-Assets, die als einzelne Entität dargestellt werden. Diese Art von Sets bietet Benutzerinnen und Benutzern ein integriertes Betrachtungserlebnis, bei dem die Benutzerinnen und Benutzer durch Klicken auf ein Miniaturbild verschiedene Ansichten eines Elements sehen können. Mit Bildsets können Sie alternative Ansichten eines Elements darstellen. Dabei bietet der Viewer Zoomtools, mit denen Bilder genauer betrachtet werden können. [Anzeigen eines Bildsets namens „Laufen“, das den Flyout-Viewer verwendet](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running).
 
-Hier in Dynamic Media können Sie mehrere Bilder von Laufschuhen sehen. Es handelt sich dabei um eine Produktreihen, die Kunden für Vertrieb und Marketing als eine einzige Präsentation, ein Bildset, ansehen sollen.
+Hier in Dynamic Media können Sie mehrere Bilder von Laufschuhen sehen. Es handelt sich um eine Produktserie, von der Vertrieb und Marketing wollen, dass die Kundinnen und Kunden sie als eine einzige Präsentation sehen, als ein Bildset.
 
 ![Erstellen eines Bildsets](/help/assets/dynamic-media/assets/dm-create-image-set.png)
 _Der Beginn der Erstellung eines Bildsets._

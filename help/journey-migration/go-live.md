@@ -5,7 +5,7 @@ exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1721'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 93%
 >title="Vorbereiten der Live-Schaltung"
 >abstract="Um eine reibungslose und erfolgreiche Live-Schaltung von AEM as a Cloud Service sicherzustellen, sollten Sie u. a. Freeze-Perioden von Code und Inhalt, Testdurchläufe, Auffüllungen des Inhalts, Leistungstests und Sicherheitstests planen."
 
-In diesem Teil der Journey erfahren Sie, wie Sie die Migration planen und durchführen können, sobald sowohl der Code als auch der Inhalt bereit sind, auf AEM as a Cloud Service übertragen zu werden. Außerdem lernen Sie die Best Practices und bekannten Einschränkungen bei der Durchführung der Migration kennen.
+In diesem Teil der Journey erfahren Sie, wie Sie die Migration planen und durchführen können, sobald sowohl der Code als auch der Inhalt bereit sind, auf AEM as a Cloud Service übertragen zu werden. Außerem erfahren Sie, welche Best Practices und bekannten Einschränkungen bei der Durchführung der Migration gelten.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
@@ -61,7 +61,7 @@ Wie bereits erwähnt, müssen Sie einen Einfrierzeitraum für Code und Inhalte p
 
 Um die erste Frage zu beantworten, sollten Sie die Zeit in Betracht ziehen, die für die Durchführung von Testläufen in Nicht-Produktionsumgebungen benötigt wurde. Um die zweite Frage zu beantworten, benötigen Sie eine enge Zusammenarbeit zwischen dem Team, das neue Funktionen hinzufügt, und dem Team, das den Code überarbeitet. Das Ziel sollte darin bestehen sicherzustellen, dass der gesamte Code, der zur vorhandenen Implementierung hinzugefügt wird, auch zur Cloud Services-Verzweigung hinzugefügt, getestet und bereitgestellt wird. Im Allgemeinen bedeutet dies, dass weniger Code einfriert.
 
-Außerdem müssen Sie planen, dass der Inhalt beim Planen der endgültigen Inhaltsauffüllung friert.
+Außerdem müssen Sie ein Einfrieren von Inhalten einplanen, wenn die endgültige Auffüllung der Inhalte geplant ist.
 
 ## Best Practices {#best-practices}
 
@@ -138,7 +138,7 @@ Die beiden oben genannten Punkte werden im Bericht von [Best Practice Analyzer](
 * Konfigurieren Sie CDN, SSL und DNS.
    * Wenn Sie Ihr eigenes CDN verwenden, geben Sie ein Support-Ticket ein, um das entsprechende Routing zu konfigurieren.
       * Weitere Einzelheiten finden Sie im Abschnitt [Kunden-CDN verweist auf von AEM verwaltetes CDN](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) in der CDN-Dokumentation.
-      * Konfigurieren Sie SSL und DNS gemäß der Dokumentation Ihres CDN-Anbieters.
+      * Konfigurieren Sie SSL und DNS gemäß der Dokumentation des CDN-Anbieters.
    * Wenn Sie kein zusätzliches CDN verwenden, verwalten Sie SSL und DNS gemäß der folgenden Dokumentation:
       * Verwalten von SSL-Zertifikaten
          * [Einführung – Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)

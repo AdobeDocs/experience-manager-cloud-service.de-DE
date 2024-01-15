@@ -669,9 +669,9 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.1.2 erfüllen](https://ww
 
 ### Ausreichend Zeit (2.2) {#enough-time}
 
-[Richtlinie 2.2 Ausreichend Zeit: Geben Sie den Benutzern ausreichend Zeit, Inhalte zu lesen und zu benutzen.](https://www.w3.org/TR/WCAG/#enough-time)
+[Richtlinie 2.2 Ausreichend Zeit: Geben Sie den Benutzenden ausreichend Zeit, Inhalte zu lesen und zu benutzen.](https://www.w3.org/TR/WCAG/#enough-time)
 
-Dadurch wird sichergestellt, dass Benutzer genügend Zeit zum Lesen und Handeln haben.
+Dadurch wird sichergestellt, dass die Benutzenden genügend Zeit zum Lesen und Handeln haben.
 
 ### Zeiteinteilung anpassbar (2.2.1)  {#timing-adjustable}
 

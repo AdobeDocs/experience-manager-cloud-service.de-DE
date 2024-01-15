@@ -5,7 +5,7 @@ exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '1691'
-ht-degree: 34%
+ht-degree: 95%
 
 ---
 
@@ -15,11 +15,11 @@ Im folgenden Abschnitt werden die Versionshinweise zu den neuen Funktionen der V
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.8.0) war der Freitag, 31. August 2023. Die nächste Version (2023.9.0) ist für den Freitag, 28. September 2023 geplant.
+Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.8.0) ist der 31. August 2023. Die nächste Version mit neuen Funktionen (2023.9.0) ist für den 28. September 2023 geplant.
 
 ## Video zur Version {#release-video}
 
-Sehen Sie sich das Video Versionsübersicht vom August 2023 an, um eine Zusammenfassung der Funktionen zu erhalten, die in der Version 2023.8.0 hinzugefügt wurden:
+Eine Zusammenfassung der in der Version 2023.8.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version vom August 2023:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423535/?quality=12)
 
@@ -27,30 +27,30 @@ Sehen Sie sich das Video Versionsübersicht vom August 2023 an, um eine Zusammen
 
 ### Neue Funktionen in [!DNL Experience Manager Sites] {#sites-features}
 
-* Die [Inhaltsfragmentkonsole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=de) ermöglicht es Benutzern nun, Tags anzuzeigen und nach Tags zu suchen, die als Metadaten auf Inhaltsfragmente angewendet werden. Benutzer müssen nicht mehr zur Assets-Benutzeroberfläche wechseln, um diese Funktion zu nutzen, wodurch der Kontextwechsel reduziert und die Effizienz verbessert wird.
+* Über die [Inhaltsfragmentkonsole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=de) können Benutzende nun Tags anzeigen und nach Tags suchen, die als Metadaten auf Inhaltsfragmente angewendet werden. Benutzende müssen nicht mehr zur Assets-Benutzeroberfläche wechseln, um diese Funktion zu nutzen. Dadurch werden Kontextwechsel reduziert und die Effizienz verbessert.
 
   ![Tagging in der Inhaltsfragmentkonsole](/help/assets/content-fragments-console-tags.png)
-* Der neue Inhaltsfragment-Editor ist jetzt auf AEM as a Cloud Service verfügbar. Sie ermöglicht es Autoren von Inhalten, produktiver zu sein, indem sie ihre Authoring-Aufgaben optimieren und das Wechseln zwischen verschiedenen Apps bei der Bearbeitung von Inhalten reduzieren.
-  ![Neuer Inhaltsfragment-Editor](/help/release-notes/assets/newCFEditor.png)
+* Der neue Inhaltsfragmenteditor ist jetzt in AEM as a Cloud Service verfügbar. Er ermöglicht es Autorinnen und Autoren von Inhalten, produktiver zu sein, indem deren Authoring-Aufgaben optimiert und nötige Wechsel zwischen verschiedenen Apps bei der Bearbeitung von Inhalten reduziert werden.
+  ![Neuer Inhaltsfragmenteditor](/help/release-notes/assets/newCFEditor.png)
 
-Der neue Inhaltsfragment-Editor bietet die folgenden Vorteile, die im ursprünglichen Editor nicht verfügbar sind:
-* Automatisches Speichern zur Verbesserung der Authoring-Effizienz und zur Vermeidung des versehentlichen Verlusts von Bearbeitungen.
-* Hierarchische Ansicht eines Inhaltsfragments und seiner Verweise mithilfe der Struktur für die schnelle Navigation innerhalb eines tief strukturierten Fragments.
-  ![Strukturstruktur im Inhaltsfragment-Editor](/help/release-notes/assets/newCFEditor_StructureTree.png)
+Der neue Inhaltsfragmenteditor hat gegenüber dem ursprünglichen Editor folgende Vorteile:
+* automatisches Speichern für eine höhere Authoring-Effizienz und zur Vermeidung versehentlicher Bearbeitungsverluste.
+* hierarchische Ansicht eines Inhaltsfragments und seiner Verweise mithilfe der Baumstruktur zur schnellen Navigation innerhalb eines tief strukturierten Fragments.
+  ![Baumstruktur im Inhaltsfragmenteditor](/help/release-notes/assets/newCFEditor_StructureTree.png)
 
-* Online-Upload von Assets als Inhaltsverweise, ohne sie zuerst in Asset DAM hochladen zu müssen
-* Ad-hoc-Vorschau des gerenderten Erlebnisses, das vom Inhaltsfragment bereitgestellt wird, um Autoren bei der Visualisierung des Erscheinungsbilds des Inhalts in der Frontend-App zu unterstützen
-* 1-Klick-Veröffentlichung und Rückgängigmachen der Veröffentlichung des Inhaltsfragments im Editor
-* Anzeigen von und Navigieren zu Sprachkopien während der Bearbeitung eines Inhaltsfragments
-  ![Sprachkopien im Inhaltsfragment-Editor](/help/release-notes/assets/newCFEditor_LanguageCopies.PNG)
+* Inline-Upload von Assets als Inhaltsverweise, ohne sie zuerst in das Asset-DAM-System hochladen zu müssen
+* Ad-hoc-Vorschau des gerenderten Erlebnisses, das vom Inhaltsfragment bereitgestellt wird, um Autorinnen und Autoren bei der Look-and-Feel-Visualisierung der Inhalte in der Frontend-App zu unterstützen
+* Veröffentlichen und Aufheben der Veröffentlichung des Inhaltsfragments im Editor mit einem Klick
+* Anzeigen von und Navigieren zu Sprachkopien beim Bearbeiten eines Inhaltsfragments
+  ![Sprachkopien im Inhaltsfragmenteditor](/help/release-notes/assets/newCFEditor_LanguageCopies.PNG)
 
-* Anzeigen von Versionen, um die Zeitleiste eines Inhaltsfragments zu verfolgen
+* Anzeigen von Versionen, um die Timeline eines Inhaltsfragments nachzuverfolgen
 
-  ![Versionen im Inhaltsfragment-Editor](/help/release-notes/assets/newCFEditor_Versionhistory.PNG)
+  ![Versionen im Inhaltsfragmenteditor](/help/release-notes/assets/newCFEditor_Versionhistory.PNG)
 
-* Anzeigen übergeordneter Verweise, um Autoren dabei zu unterstützen, die Auswirkungen ihrer Änderungen zu verstehen
+* Anzeigen übergeordneter Verweise, um Autorinnen und Autoren dabei zu unterstützen, die Wirkung ihrer Änderungen zu verstehen
 
-  ![Übergeordnete Verweise im Inhaltsfragment-Editor](/help/release-notes/assets/newCFEditor_Parentreferences.PNG)
+  ![Übergeordnete Verweise im Inhaltsfragmenteditor](/help/release-notes/assets/newCFEditor_Parentreferences.PNG)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -66,7 +66,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 -->
 
-* **Massenimport von Assets aus Datenquellen**: Administratoren verfügen jetzt über die [Möglichkeit zum Importieren einer großen Anzahl von Assets](/help/assets/bulk-import-assets-view.md) von einer Datenquelle zu AEM Assets. Die Admins müssen keine einzelnen Assets oder Ordner mehr in AEM Assets hochladen. Zu den unterstützten Datenquellen für den Massenimport gehören Azure, AWS, Google Cloud und Dropbox.
+* **Massenimport von Assets aus Datenquellen**: Admins [können nun eine große Anzahl von Assets aus einer Datenquelle in AEM Assets importieren](/help/assets/bulk-import-assets-view.md). Die Admins müssen keine einzelnen Assets oder Ordner mehr in AEM Assets hochladen. Zu den unterstützten Datenquellen für den Massenimport gehören Azure, AWS, Google Cloud und Dropbox.
 
   ![Massenimport von Assets aus einer Datenquelle](/help/release-notes/assets/bulk-import.png)
 
@@ -78,23 +78,23 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![Anheften von Elementen für Gruppen](/help/release-notes/assets/pin-items-for-groups.png)
 
-### Neue Funktionen in der Administratoransicht {#admin-view-features}
+### Neue Funktionen in der Admin-Ansicht {#admin-view-features}
 
-**Verbesserungen der Suche**
+**Verbesserungen bei der Suche**
 
-* Administratoren können jetzt [Konfigurieren der Stapelgröße von Assets](/help/assets/search-assets.md#configure-asset-batch-size) die bei der Durchführung einer Suche angezeigt werden. Die Asset-Suchergebnisse zeigen ein Vielfaches der konfigurierten Batch-Größenanzahl an, wenn Sie weiter nach unten scrollen, um die Ergebnisse zu laden. Sie können aus den verfügbaren Batch-Größen von 200, 500 oder 1000 Assets auswählen. Wenn Sie eine niedrigere Batch-Größenanzahl festlegen, werden die Antwortzeiten der Suche beschleunigt.
+* Admins können nun die [Batch-Größe von Assets konfigurieren](/help/assets/search-assets.md#configure-asset-batch-size), die bei einer Suche angezeigt werden. Die Asset-Suchergebnisse zeigen ein Vielfaches der konfigurierten Batch-Größenanzahl an, wenn Sie weiter nach unten scrollen, um die Ergebnisse zu laden. Sie können aus den verfügbaren Batch-Größen von 200, 500 oder 1000 Assets auswählen. Wenn Sie eine niedrigere Batch-Größenanzahl festlegen, werden die Antwortzeiten der Suche beschleunigt.
 
   ![Konfiguration der Batch-Größe von Assets](/help/release-notes/assets/assets-batch-size-configuration.png)
 
-* Experience Manager Assets enthält jetzt die neue Version 9 von `damAssetLucene` Index. `damAssetLucene-9` ändert das Verhalten der Facette Oak Query in [Zugriffskontrolle auf Facettenzählungen wird nicht mehr ausgewertet](/help/assets/search-assets.md) vom zugrunde liegenden Suchindex zurückgegeben, was zu schnelleren Suchantwortzeiten führt.
+* Experience Manager Assets enthält nun die neue Version 9 des `damAssetLucene`-Index. `damAssetLucene-9`[ ändert das Verhalten der Facettenzählung der Oak-Abfrage, damit die Zugriffskontrolle nicht mehr entsprechend der Facettenzahlen ausgewertet wird, die vom zugrunde liegenden Suchindex zurückgegeben werden, was zu schnelleren Antwortzeiten bei der Suche führt.](/help/assets/search-assets.md)
 
-### Funktionen zur Vorabversion sind verfügbar in [!DNL Experience Manager Assets] {#prerelease-features-assets}
+### Vorab veröffentlichte Funktionen, die in [!DNL Experience Manager Assets] verfügbar sind {#prerelease-features-assets}
 
-* **Dynamic Media**: [Unterstützung für mehrere Untertitel und mehrere Audiospuren für Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma)—Sie können jetzt einfach mehrere Untertitel und mehrere Audiospuren zu einem Hauptvideo hinzufügen. Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autorinnen und Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
+* **Dynamic Media**: [Unterstützung für mehrere Untertitel und mehrere Audiospuren für Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) – Sie können jetzt ganz einfach mehrere Untertitel und mehrere Audiospuren zu einem primären Video hinzufügen. Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autorinnen und Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
 
-  ![Registerkarte &quot;Untertitel und Audiospuren&quot;auf der Seite &quot;Eigenschaften&quot;eines ausgewählten Video-Assets.](/help/release-notes/assets/msma-aem-cs.png)*Registerkarte &quot;Untertitel und Audiospuren&quot;auf der Seite &quot;Eigenschaften&quot;eines ausgewählten Video-Assets.*
+  ![Registerkarte „Untertitel und Audiospuren“ auf der Seite „Eigenschaften“ eines ausgewählten Video-Assets.](/help/release-notes/assets/msma-aem-cs.png)*Registerkarte „Untertitel und Audiospuren“ auf der Seite „Eigenschaften“ eines ausgewählten Video-Assets.*
 
-* **Assets**: Möglichkeit zur Auswahl von ZIP-Archiven, die in Experience Manager verwaltet werden, und [Extrahieren der Dateien direkt in Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) , ohne sie herunterzuladen.
+* **Assets**: Sie können in Experience Manager verwaltete ZIP-Archive auswählen und [die Dateien direkt in Experience Manager extrahieren](/help/assets/manage-digital-assets.md#extract-zip-archives), ohne sie herunterzuladen.
 
   ![Anheften von Elementen für Gruppen](/help/release-notes/assets/extract-archive.png)
 
@@ -103,31 +103,31 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ### Neue Funktionen in [!DNL Forms] {#new-features-available-in-forms-channel}
 
-* [**Enterprise-Unterstützung für Google reCAPTCHA**](/help/forms/captcha-adaptive-forms.md): Verwenden Sie Google reCAPTCHA Enterprise in einem adaptiven Formular, um einen verbesserten Schutz vor betrügerischer Aktivität und Spam zu bieten und so eine sicherere Benutzererfahrung zu bieten. Dank der erweiterten Risikoanalyse und nahtloser Integration können echte Benutzer problemlos Formulare senden, während Bots effektiv blockiert werden.
+* [**Unterstützung für Google reCAPTCHA Enterprise**](/help/forms/captcha-adaptive-forms.md): Verwenden Sie Google reCAPTCHA Enterprise in einem adaptiven Formular, um einen besseren Schutz vor betrügerischen Aktivitäten und Spam zu bieten und so ein sichereres Anwendererlebnis zu ermöglichen. Dank erweiterter Risikoanalyse und nahtloser Integration können echte Benutzende problemlos Formulare absenden, während Bots effektiv blockiert werden.
 
 
-### Funktionen zur Vorabversion sind verfügbar in [!DNL Forms] {#pre-release-features-available-in-forms-channel}
+### Vorab veröffentlichte Funktionen, die in [!DNL Forms] verfügbar sind {#pre-release-features-available-in-forms-channel}
 
-* **Adobe Analytics mit Experience Cloud-Setup-Automatisierung für Forms**: Sie können Adobe Analytics jetzt mit Experience Cloud Setup Automation mit mehreren Schaltflächen aktivieren. Dadurch können Sie AEM Forms as a Cloud Service mit Experience Platform-Tags und Adobe Analytics verbinden, um Leistungsmetriken für Ihre veröffentlichten Formulare zu erfassen und zu verfolgen.
+* **Adobe Analytics mit Experience Cloud-Setup-Automatisierung für Formulare**: Sie können nun Adobe Analytics dank Experience Cloud-Setup-Automatisierung mit wenigen Klicks aktivieren. So können Sie AEM Forms as a Cloud Service mit Experience Platform-Tags und Adobe Analytics verbinden, um Leistungsmetriken für Ihre veröffentlichten Formulare zu erfassen und nachzuverfolgen.
 
-* **Adobe Analytics-Berichtsvorlage für Adaptive Forms**: Forms as a Cloud Service bietet jetzt einen Adobe Analytics-Bericht OOTB. Dies hilft Ihnen, die Leistung Ihrer Formulare einfach zu verstehen. Die Metriken auf Formularebene bieten Ihnen einen Einblick in die Leistung des Formulars bei mehreren wichtigen Leistungsindikatoren (KPIs) wie Ausgabeformaten, Besuchern, Übermittlungen, durchschnittlicher Füllzeit. Durch die Verfolgung des Benutzerverhaltens und des Feedbacks können Sie Bereiche des Formulars identifizieren, die Verwirrung verursachen, und Orientierungsverbesserungen am Formularentwurf und der Funktionalität vornehmen.
+* **Adobe Analytics-Berichtsvorlage für adaptive Formulare**: Forms as a Cloud Service bietet nun einen vorkonfigurierten Adobe Analytics-Bericht. Dies hilft Ihnen, die Leistung Ihrer Formulare einfach zu verstehen. Die Metriken auf Formularebene bieten Ihnen einen Einblick in die Leistung des Formulars in Bezug auf mehrere wichtige Leistungsindikatoren (KPIs) wie Ausgabedarstellungen, Besuchende, Übermittlungen, durchschnittliche Ausfüllzeit. Durch Nachverfolgung von Benutzerverhalten und -Feedback können Sie Formularbereiche identifizieren, die Verwirrung verursachen, und so Verbesserungen am Formular-Design und an der Formularfunktionalität erwirken.
 
   ![Adobe Analytics-Bericht zur Benutzerinteraktion im adaptiven Formular](/help/forms/assets/forms-analytics-report.png)
 
-* **[Formularfragment in Adaptive Forms basierend auf Kernkomponenten](/help/forms/adaptive-form-fragments-core-components.md)**: Verabschieden Sie sich von Duplizierung, optimieren Sie Ihren digitalen Bestand und verbessern Sie die Zusammenarbeit bei der Steigerung Ihrer Formularerstellungserfahrung mit Formularfragmenten. Diese wiederverwendbaren Komponenten lassen sich nahtlos in mehrere Formulare integrieren, wodurch die Erstellung konsistenter und professionell aussehender Formulare optimiert wird. Formularfragmente sorgen für Wiederverwendbarkeit, Standardisierung und Markenkonsistenz durch die Funktion „Einmal ändern und überall widerspiegeln“. Erleben Sie mehr Wartbarkeit und Effizienz, da Aktualisierungen an einem Ort automatisch über alle Formulare hinweg übernommen werden, die diese Fragmente verwenden.
+* **[Formularfragment in adaptiven Formularen auf Basis auf Kernkomponenten](/help/forms/adaptive-form-fragments-core-components.md)**: Keine Duplizierung mehr! Außerdem können Sie Ihre digitalen Bestände und die Zusammenarbeit optimieren, während Sie das Anwendererlebnis bei der Formularerstellung mit Formularfragmenten verbessern. Diese wiederverwendbaren Komponenten lassen sich nahtlos in mehrere Formulare integrieren, was die Erstellung konsistenter und professionell aussehender Formulare optimiert. Formularfragmente sorgen für Wiederverwendbarkeit, Standardisierung und Markenkonsistenz durch die Funktion „Einmal ändern und überall widerspiegeln“. Erleben Sie mehr Wartbarkeit und Effizienz, da Aktualisierungen an einem Ort automatisch über alle Formulare hinweg übernommen werden, die diese Fragmente verwenden.
 
-* **[Verbesserter Workflow-Schritt in Adobe Sign](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: Der Schritt &quot;Adobe Sign-Workflow&quot;wurde um Folgendes erweitert:
-   * **ID-basierte Authentifizierung für Adobe Sign**: Die Adobe Acrobat Sign-Authentifizierung mit ID-basierter Regierungsauthentifizierung bietet eine zusätzliche Überprüfungsebene, indem sie es Benutzern ermöglicht, ihre Identität mit staatlich ausgestellten Kennungen (Führerschein, nationale Kennung, Pass) zu authentifizieren. Durch die Nutzung von vertrauenswürdigen Identifikationsdokumenten verleiht diese Erweiterung dem Unterzeichnungsprozess ein zusätzliches Maß an Vertrauen und ist somit ideal für Szenarien, die erhöhte Sicherheit, Compliance und Benutzervalidierung erfordern.
+* **[Verbesserter Workflow-Schritt in Adobe Sign](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: Der Workflow-Schritt in Adobe Sign enthält die folgenden Verbesserungen:
+   * **Authentifizierung mit amtlichem Lichtbildausweis für Adobe Sign**: Die Authentifizierung mit amtlichem Lichtbildausweis von Adobe Acrobat Sign bietet eine zusätzliche Verifizierungsebene, indem Benutzenden ermöglicht wird, ihre Identität anhand von amtlichen Lichtbildausweisen (Führerschein, Personalausweis, Reisepass) zu authentifizieren. Durch die Nutzung von vertrauenswürdigen Identifikationsdokumenten verleiht diese Erweiterung dem Unterzeichnungsprozess ein zusätzliches Maß an Vertrauen und ist somit ideal für Szenarien, die erhöhte Sicherheit, Compliance und Benutzervalidierung erfordern.
 
-   * **Audit-Protokoll für Adobe Sign-Dokumente**: Verwenden Sie die Funktion &quot;Audit-Protokoll&quot;, um detaillierte Einblicke in den Lebenszyklus Ihrer Adobe Sign-Dokumente zu erhalten. Mit dem Audit-Protokoll können Sie jetzt eine umfassende Aufzeichnung aller Aktionen und Interaktionen führen, die mit Ihren Dokumenten verbunden sind. Dazu gehören Details wie etwa die Personen, die das Dokument angesehen, bearbeitet oder unterschrieben haben, sowie Zeitstempel für jedes Ereignis. Diese Verbesserung ist entscheidend für die Einhaltung von Vorschriften, die Beilegung von Streitigkeiten und die Gewährleistung der Integrität Ihrer digitalen Vereinbarungen.
+   * **Audit-Protokoll für Adobe Sign-Dokumente**: Verwenden Sie die Audit-Protokoll-Funktion, um ausführliche Erkenntnisse zum Lebenszyklus Ihrer Adobe Sign-Dokumente zu erhalten. Mit dem Audit-Protokoll können Sie jetzt eine umfassende Aufzeichnung aller Aktionen und Interaktionen führen, die mit Ihren Dokumenten verbunden sind. Dazu gehören Details wie etwa die Personen, die das Dokument angesehen, bearbeitet oder unterschrieben haben, sowie Zeitstempel für jedes Ereignis. Diese Verbesserung ist entscheidend für die Einhaltung von Vorschriften, die Beilegung von Streitigkeiten und die Gewährleistung der Integrität Ihrer digitalen Vereinbarungen.
 
-   * **Neue Rollen für Empfänger von Vereinbarungen, die über den Unterzeichner hinausgehen**: Adobe Acrobat Sign hat die Möglichkeit, die Rollen für Vertragsempfänger über den Unterzeichner hinaus zu erweitern, um die Anforderungen an den Workflow besser zu erfüllen. Wenn diese Option aktiviert ist, kann die Rolle jeder Empfängerin und jedes Empfängers in einem Vertrag einzeln konfiguriert werden, wobei die Unterzeichnerin bzw. der Unterzeichner die Standardeinstellung ist.
+   * **Neue Rollen für Empfängerinnen und Empfänger von Vereinbarungen über die Unterzeichnerinnen bzw. Unterzeichner hinaus**: Adobe Acrobat Sign bietet die Möglichkeit, die Rollen für Empfängerinnen und Empfänger von Vereinbarungen über die Personen hinaus zu erweitern, die unterzeichnet haben, um Workflow-Anforderungen besser zu erfüllen. Wenn diese Option aktiviert ist, kann die Rolle jeder Empfängerin und jedes Empfängers in einem Vertrag einzeln konfiguriert werden, wobei die Person, die unterzeichnet hat, die Standardeinstellung ist.
 
-* **[Protect Ihrer Dokumente mit Document Assurance-APIs (Teil der Kommunikations-APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: Mit den Document Assurance-APIs können Sie vertrauliche Informationen schützen, indem Sie die Dokumente signieren und verschlüsseln. Durch Verschlüsselung werden die Inhalte eines Dokuments in ein unlesbares Format umgewandelt, sodass nur autorisierte Benutzer Zugriff erhalten. Diese befestigte Schutzschicht schützt nicht nur wertvolle Daten vor unbefugten Augen, sondern bietet auch Seelenfrieden. Signature-APIs ermöglichten Ihrem Unternehmen, die Sicherheit und Vertraulichkeit verteilter und empfangener Adobe PDF-Dokumente zu gewährleisten. Dieser Dienst verwendet digitale Signaturen und Zertifizierung, um sicherzustellen, dass nur beabsichtigte Empfänger Dokumente ändern können.
+* **[Schutz Ihrer Dokumente mit Document Assurance-APIs (Teil der Kommunikations-APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: Mit den Document Assurance-APIs können Sie vertrauliche Informationen schützen, indem Sie die Dokumente signieren und verschlüsseln. Durch die Verschlüsselung werden die Inhalte eines Dokuments in ein unlesbares Format umgewandelt, sodass nur autorisierte Benutzende Zugriff erhalten. Diese verstärkte Schutzschicht schützt nicht nur wertvolle Daten vor unbefugten Blicken, sorgt auch für ein beruhigendes Gefühl. Signature-APIs ermöglichten Ihrem Unternehmen, die Sicherheit und Vertraulichkeit verteilter und empfangener Adobe PDF-Dokumente zu gewährleisten. Dieser Service verwendet digitale Signaturen und Zertifizierung, um sicherzustellen, dass nur die Empfängerinnen und Empfänger, für die dies vorgesehen ist, die Dokumente ändern können.
 
-* **Unterstützung der Seitenzahl in Kommunikations-APIs**: Jetzt können Sie neben dem Abrufen Ihres Dokuments über die Kommunikations-APIs auch die wertvollen Informationen über die Anzahl der im Dokument enthaltenen Seiten erhalten.
+* **Unterstützung der Seitenzahl in Kommunikations-APIs**: Sie können nun neben dem Abruf Ihres Dokuments über die Kommunikations-APIs auch wertvolle Informationen über die Anzahl der im Dokument enthaltenen Seiten beziehen.
 
-* **[Umgang mit Fehlern mit benutzerdefinierten Fehler-Handlern im Regeleditor](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: Sie können jetzt eine benutzerdefinierte Funktion aufrufen, wenn ein von einem externen Dienst zurückgegebener Fehler auftritt, und eine angepasste Antwort für Endbenutzer bereitstellen. Sie können beispielsweise einen benutzerdefinierten Workflow im Back-End für bestimmte Fehler-Codes aufrufen oder die Kundin bzw. den Kunden darüber informieren, dass der Dienst nicht verfügbar ist.
+* **[Fehlerhandhabung mit benutzerdefinierten Fehler-Handlern im Regeleditor](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: Sie können nun eine benutzerdefinierte Funktion aufrufen, wenn ein von einem externen Dienst zurückgegebener Fehler auftritt, und eine maßgeschneiderte Antwort für Endbenutzerinnen und -benutzer bereitstellen. Sie können beispielsweise einen benutzerdefinierten Workflow im Backend für bestimmte Fehler-Codes aufrufen oder die Kundin bzw. den Kunden darüber informieren, dass der Dienst nicht verfügbar ist.
 
 
 ### Early-Adopter-Programm für adaptive Headless-Formulare {#forms-early-adopter}
@@ -142,22 +142,22 @@ Die Benutzung von [adaptiven Headless-Formularen](https://experienceleague.adobe
 Sie können von Ihrer offiziellen E-Mail-ID eine E-Mail an `aem-forms-headless@adobe.com` senden, um am Early-Adopter-Programm teilzunehmen.
 
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
 
 ### CDN-Protokolle {#cdn-logs}
 
-Laden Sie CDN-Protokolle aus Cloud Manager herunter. Dies ist für die Optimierung des Cache-Trefferverhältnisses und eine bessere Sichtbarkeit des Inhaltsbereitstellungsflusses nützlich. [Informationen zu](/help/implementing/developing/introduction/logging.md#cdn-log) das CDN-Protokollformat. Diese Funktion wird Anfang September schrittweise für Kunden eingeführt.
+Laden Sie CDN-Protokolle aus Cloud Manager herunter. Dies ist nützlich für die Optimierung des Cache-Treffer-Verhältnisses und eine bessere Sichtbarkeit des Inhaltsbereitstellungsflusses. [Erfahren Sie mehr](/help/implementing/developing/introduction/logging.md#cdn-log) über das CDN-Protokollformat. Diese Funktion wird Anfang September schrittweise für Kundinnen und Kunden eingeführt.
 
-### CDN und WAF-Regeln für frühe Anwender {#waf-early-adopter}
+### CDN und WAF-Regeln – Early-Adopter-Programm {#waf-early-adopter}
 
 Filtern Sie den Traffic im CDN anhand von:
 
 * Anfragekopfzeilen und -eigenschaften (z. B. IP-Adresse)
 * Traffic-Muster, die bekanntermaßen mit bösartigem Traffic verknüpft sind
 
-Möchten Sie die Funktion ausprobieren und Feedback teilen? E-Mail an senden **aemcs-waf-adopter@adobe.com** von Ihrer offiziellen E-Mail-ID, um mehr über das Programm für frühe Anwender zu erfahren. Der Platz ist begrenzt.
+Möchten Sie die Funktion ausprobieren und Feedback geben? Sie können von Ihrer offiziellen E-Mail-ID eine E-Mail an **aemcs-waf-adopter@adobe.com** senden, um am Early-Adopter-Programm teilzunehmen. Die Plätze sind begrenzt.
 
-Weitere Informationen zur Funktion finden Sie im Artikel . [here](/help/security/traffic-filter-rules-including-waf.md).
+Weitere Informationen zur Funktion finden Sie im Artikel [hier](/help/security/traffic-filter-rules-including-waf.md).
 
 
 ## Wartungsversionshinweise {#maintenance}

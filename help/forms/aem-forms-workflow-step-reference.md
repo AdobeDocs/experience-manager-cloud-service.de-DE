@@ -7,7 +7,7 @@ keywords: Verwendung von AEM-Workflows, Verwendung von Schritten zur Aufgabenzuw
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '7367'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -55,8 +55,8 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 * **[!UICONTROL Priorität]**: Die ausgewählte Priorität wird im AEM-Posteingang angezeigt. Die verfügbaren Optionen sind „Hoch“, „Mittel“ und „Niedrig“. Der Standardwert ist „Mittel“.
 * **[!UICONTROL Fälligkeitsdatum]**: Geben Sie die Anzahl der Tage oder Stunden an, nach denen die Aufgabe als „überfällig“ markiert wird. Wenn Sie **[!UICONTROL Aus]** wählen, wird die Aufgabe niemals als überfällig markiert. Sie können auch einen Zeitüberschreitungs-Handler angeben, um bestimmte Aufgaben nach Überschreitung der Frist auszuführen.
 
-* **[!UICONTROL Tage]**: Die Anzahl der Tage, innerhalb derer die Aufgabe abgeschlossen werden soll. Die Tage werden ab dem Zeitpunkt gezählt, zu dem die Aufgabe einer Person zugewiesen wird. Wenn eine Aufgabe nicht abgeschlossen ist und die im Feld Tage angegebene Anzahl von Tagen überschreitet, wird bei Auswahl dieser Aufgabe nach dem Fälligkeitsdatum ein Timeout-Handler ausgelöst.
-* **[!UICONTROL Stunden]**: Die Anzahl der Stunden, innerhalb derer die Aufgabe abgeschlossen werden soll. Die Stunden werden ab dem Zeitpunkt gezählt, zu dem die Aufgabe einer Person zugewiesen wird. Wenn eine Aufgabe nicht abgeschlossen ist und die im Feld Stunden angegebene Anzahl von Stunden überschreitet, wird bei Auswahl dieser Aufgabe nach den fälligen Stunden ein Timeout-Handler ausgelöst.
+* **[!UICONTROL Tage]**: Die Anzahl der Tage, innerhalb derer die Aufgabe abgeschlossen werden soll. Die Tage werden ab dem Zeitpunkt gezählt, zu dem die Aufgabe einer Person zugewiesen wird. Wenn eine Aufgabe nicht abgeschlossen wurde und die Anzahl der Tage im Feld „Tage“ überschreitet, wird bei Auswahl dieser Option nach den fälligen Tagen ein Zeitüberschreitungs-Handler ausgelöst.
+* **[!UICONTROL Stunden]**: Die Anzahl der Stunden, innerhalb derer die Aufgabe abgeschlossen werden soll. Die Stunden werden ab dem Zeitpunkt gezählt, zu dem die Aufgabe einer Person zugewiesen wird. Wenn eine Aufgabe nicht abgeschlossen wurde und die Anzahl der Stunden im Feld „Stunden“ überschreitet, wird bei Auswahl dieser Option nach den fälligen Stunden ein Zeitüberschreitungs-Handler ausgelöst.
 * **[!UICONTROL Zeitüberschreitung nach Fälligkeitsdatum]**: Wählen Sie diese Option aus, um das Auswahlfeld „Zeitüberschreitungshandler“ zu aktivieren.
 * **[!UICONTROL Zeitüberschreitungshandler]**: Wählen Sie das Skript aus, das ausgeführt werden soll, wenn der Schritt „Aufgabe zuweisen“ das Fälligkeitsdatum überschreitet. Skripte, die im CRX-Repository unter [apps]/fd/dashboard/scripts/timeoutHandler abgelegt werden, stehen zur Auswahl. Der angegebene Pfad existiert nicht im CRX-Repository. Ein Admin erstellt den Pfad, bevor dieser verwendet wird.
 * **[!UICONTROL Markieren Sie die Aktion und den Kommentar aus der letzten Aufgabe in „Aufgabendetails“]**: Wählen Sie diese Option aus, um die letzte ausgeführte Aktion und den Kommentar im Abschnitt „Aufgabendetail“ einer Aufgabe anzuzeigen.
@@ -396,7 +396,7 @@ Der Schritt „Dokument signieren“ hat folgende Eigenschaften:
 * **[!UICONTROL Signaturvorgang]**: Sie können wählen, ob ein Dokument in einer sequenziellen oder parallelen Reihenfolge signiert werden soll. Bei sequenzieller Reihenfolge erhält jeweils nur ein Unterzeichner das Formular zur Unterzeichnung. Nachdem die erste Unterzeichnungsperson das Signieren des Dokuments abgeschlossen hat, wird das Dokument an die zweite gesendet usw. Bei paralleler Reihenfolge können mehrere Unterzeichner ein Formular gleichzeitig signieren.
 * **[!UICONTROL Umleitungs-URL]**: Geben Sie eine Umleitungs-URL an. Nachdem das Dokument signiert wurde, können Sie den Verantwortlichen an eine URL umleiten. Normalerweise enthält diese URL eine Dankesnachricht oder weitere Anweisungen.
 * **[!UICONTROL Workflow-Schritt]**: Ein Workflow kann mehrere Schritte umfassen. Diese werden im AEM-Posteingang angezeigt. Sie können diese Phasen in den Eigenschaften des Modells definieren (**[!UICONTROL Sidekick]** > **[!UICONTROL Seite]** > **[!UICONTROL Seiteneigenschaften]** > **[!UICONTROL Phasen]**).
-* **[!UICONTROL Empfänger auswählen]**: Geben Sie die Methode zum Auswählen von Empfängerinnen und Empfängern für das Dokument an. Sie können den Workflow Benutzenden oder Gruppen dynamisch zuweisen oder manuell Details zu Empfängerinnen oder Empfängern hinzufügen. Wenn Sie in der Dropdownliste die Option Manuell auswählen, fügen Sie Empfängerdetails wie E-Mail, Rolle und Authentifizierungsmethode hinzu.
+* **[!UICONTROL Empfänger auswählen]**: Geben Sie die Methode zum Auswählen von Empfängerinnen und Empfängern für das Dokument an. Sie können den Workflow Benutzenden oder Gruppen dynamisch zuweisen oder manuell Details zu Empfängerinnen oder Empfängern hinzufügen. Wenn Sie in der Dropdown-Liste „Manuell“ auswählen, fügen Sie Empfängerdetails wie E-Mail, Rolle und Authentifizierungsmethode hinzu.
 
   >[!NOTE]
   >
@@ -546,7 +546,7 @@ Der Schritt „Gedruckte Ausgabe generieren“ hat die folgenden Eigenschaften:
 
 * **[!UICONTROL Speicherort des Inhaltsstamms auswählen mit]**: Der Inhaltsstamm ist ein Zeichenfolgenwert, der den URI, den absoluten Verweis oder den Speicherort im Repository angibt, um relative Elemente abzurufen, die vom Formularentwurf verwendet werden. Wenn der Formularentwurf zum Beispiel auf ein Bild verweist, das relativ ist, wie `../myImage.gif`, muss `myImage.gif` auf `repository://` liegen. Der Standardwert ist `repository://`, was auf die Stammebene des Repositorys verweist.
 
-  Wenn Sie ein Asset aus Ihrer Anwendung auswählen, muss der Pfad des Inhaltsstamm-URI die richtige Struktur aufweisen. Wenn beispielsweise ein Formular aus einer Anwendung namens SampleApp ausgewählt und unter `SampleApp/1.0/forms/Test.xdp` gespeichert wird, muss der Inhaltsstamm-URI als `repository://administrator@password/Applications/SampleApp/1.0/forms/` bzw. `repository:/Applications/SampleApp/1.0/forms/` (wenn die Berechtigung „null“ ist) angegeben werden. Wenn der Inhaltsstamm-URI auf diese Weise angegeben wird, werden die Pfade aller referenzierten Assets im Formular für diesen URI aufgelöst.
+  Wenn Sie ein Asset aus Ihrer Anwendung auswählen, muss der Pfad des Inhaltsstamm-URI die richtige Struktur aufweisen. Wenn beispielsweise ein Formular aus einer Anwendung namens SampleApp ausgewählt und unter `SampleApp/1.0/forms/Test.xdp` gespeichert wird, muss der Inhaltsstamm-URI als `repository://administrator@password/Applications/SampleApp/1.0/forms/` bzw. `repository:/Applications/SampleApp/1.0/forms/` (wenn die Berechtigung „null“ ist) angegeben werden. Wenn der Inhaltsstamm-URI auf diese Weise angegeben wird, werden die Pfade aller referenzierten Elemente im Formular für diesen URI aufgelöst.
 
 * **[!UICONTROL XCI-Datei auswählen mit]**: XCI-Dateien werden verwendet, um Schriftarten und andere Eigenschaften zu beschreiben, die für Formularentwurfselemente verwendet werden. Sie können eine XCI-Datei relativ zur Payload, in einem absoluten Pfad oder mithilfe einer Variablen des Datentyps „Document“ beibehalten.
 

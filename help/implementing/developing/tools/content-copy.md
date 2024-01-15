@@ -5,7 +5,7 @@ exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 82%
+ht-degree: 98%
 
 ---
 
@@ -15,7 +15,7 @@ Mit dem Inhaltskopier-Tool können Benutzende veränderbare Inhalte bei Bedarf a
 
 ## Einführung {#introduction}
 
-Aktuelle, echte Daten sind für Tests, Validierung und Benutzerakzeptanz nützlich. Mit dem Content Copy-Tool können Sie Inhalte aus einer Produktionsumgebung AEM as a Cloud Service Umgebung in eine Staging-, Entwicklungs- oder [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) -Umgebung für solche Tests.
+Aktuelle, echte Daten sind für Tests, Validierung und Benutzerakzeptanz nützlich. Mit dem Inhaltskopie-Tool können Sie Inhalte aus einer AEM as a Cloud Service-Produktionsumgebung in eine Staging-, Entwicklungs- oder [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md)-Umgebung für solche Tests kopieren.
 
 Der zu kopierende Inhalt wird durch ein Content-Set definiert. Ein Content-Set besteht aus einer Liste von JCR-Pfaden, die den veränderlichen Inhalt enthalten, der aus einer Quell-Authoring-Service-Umgebung in eine Ziel-Authoring-Service-Umgebung innerhalb desselben Cloud Manager-Programms kopiert werden soll. Die folgenden Pfade sind in einem Content-Set zulässig.
 
@@ -41,7 +41,7 @@ Um das Inhaltskopie-Tool verwenden zu können, sind sowohl in der Quell- als auc
 | Erstellen und Ändern von [Content-Sets](#create-content-set) | Nicht erforderlich | Erforderlich |
 | Starten oder Abbrechen des [Inhaltskopie-Prozesses](#copy-content) | Erforderlich | Erforderlich |
 
-Weitere Informationen zu Berechtigungen und deren Festlegung finden Sie unter [AEM as a Cloud Service Team und Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md).
+Weitere Informationen zu Berechtigungen und dazu, wie sie festgelegt werden, finden Sie unter [AEM as a Cloud Service – Team- und Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Erstellen eines Content-Sets {#create-content-set}
 
@@ -57,7 +57,7 @@ Bevor Inhalt kopiert werden kann, muss ein Content-Set definiert werden. Nach de
 
    ![Content-Sets](assets/content-sets.png)
 
-1. Im **Details** Registerkarte des Assistenten, geben Sie einen Namen und eine Beschreibung für den Inhaltssatz ein und wählen Sie **Weiter**.
+1. Geben Sie auf der Registerkarte **Details** des Assistenten einen Namen und eine Beschreibung für das Content-Set ein und wählen Sie auf **Weiter** aus.
 
    ![Content-Set-Details](assets/add-content-set-details.png)
 
@@ -74,8 +74,8 @@ Bevor Inhalt kopiert werden kann, muss ein Content-Set definiert werden. Nach de
 
    1. Tippen oder klicken Sie in der Liste der enthaltenen Pfade auf das Symbol **Ausschluss-Unterpfade hinzufügen** neben dem Pfad, den Sie einschränken möchten.
    1. Geben Sie den Unterpfad ein, der unterhalb des ausgewählten Pfads ausgeschlossen werden soll.
-   1. Auswählen **Ausschlusspfad**.
-   1. Auswählen **Hinzufügen von Ausschlussunterpfaden** erneut hinzufügen, um bei Bedarf zusätzliche Pfade zum Ausschließen hinzuzufügen.
+   1. Wählen Sie den **Auschlusspfad** aus.
+   1. Wählen Sie erneut **Ausschluss-Unterpfade hinzufügen** aus, um bei Bedarf weitere Pfade zum Ausschluss hinzuzufügen.
       * Ausgeschlossene Pfade müssen relativ zum eingeschlossenen Pfad sein.
       * Die Anzahl der ausgeschlossenen Pfade ist unbegrenzt.
 
@@ -88,7 +88,7 @@ Bevor Inhalt kopiert werden kann, muss ein Content-Set definiert werden. Nach de
 
    ![Bearbeiten der Pfadliste](assets/add-content-set-excluded-paths.png)
 
-1. Auswählen **Erstellen** , um den Inhaltssatz zu erstellen.
+1. Wählen Sie **Erstellen**, um das Content-Set zu erstellen.
 
 Das Content-Set kann jetzt zum Kopieren von Inhalten zwischen Umgebungen verwendet werden.
 
@@ -136,7 +136,7 @@ Nachdem ein Content-Set erstellt wurde, können Sie ihn zum Kopieren von Inhalte
 
 1. Falls erforderlich, können Sie auch **Zugriffskontrolllisten** in Ihren Kopiervorgang einbeziehen.
 
-1. Klicken Sie auf **Kopieren**.
+1. Wählen Sie **Kopieren**.
 
 Der Kopiervorgang wird gestartet. Der Status des Kopiervorgangs wird für das ausgewählte Content-Set in der Konsole angezeigt.
 
@@ -177,13 +177,13 @@ Wählen Sie dazu auf der Seite **Inhaltsaktivität kopieren** die Aktion **Abbre
 >
 >Wenn sich Ihre Umgebung aufgrund einer Stornierung in einem solchen Zustand befindet, wenden Sie sich bitte an die Adobe-Kundenunterstützung, um Unterstützung zu erhalten.
 
-### Zugreifen auf Protokolle {#accessing-logs}
+### Abrufen von Protokollen {#accessing-logs}
 
 Sie können die Protokolle sowohl auf die Quell- als auch auf die Zielumgebung für jeden abgeschlossenen Inhaltskopierprozess überprüfen.
 
-Gehen Sie dazu im **Aktivität &quot;Inhalt kopieren&quot;** Seite, wählen Sie die **Protokolle** Aktion aus dem Auslassungsmenü des Kopierprozesses, für den Sie die Protokolle überprüfen und dann auswählen möchten, für welche Umgebung.
+Wählen Sie dazu auf der Seite **Aktivität „Inhalt kopieren“** die Aktion **Protokolle** aus dem Menü mit den Auslassungspunkten des Kopierprozesses aus, für den Sie die Protokolle überprüfen möchten, und wählen Sie dann aus, für welche Umgebung.
 
-![Zugriff auf Protokolle zum Kopieren von Inhalten](assets/copy-content-logs.png)
+![Zugreifen auf Protokolle zum Kopieren von Inhalten](assets/copy-content-logs.png)
 
 Die Protokolle werden auf Ihren lokalen Computer heruntergeladen. Wenn der Download nicht gestartet wird, überprüfen Sie Ihre Popup-Blocker-Einstellungen.
 
@@ -197,6 +197,6 @@ Für das Werkzeug zum Kopieren von Inhalten gelten die folgenden Einschränkunge
 * Die Ausführung gleichzeitiger Inhaltskopievorgänge in derselben Umgebung ist nicht möglich.
 * Pro Content-Set können bis zu 50 Pfade angegeben werden. Für ausgeschlossene Pfade gibt es keine Beschränkung.
 * Verwenden Sie das Werkzeug zum Kopieren von Inhalten nicht als Klonen oder Spiegeln-Tool, da es keine verschobenen oder gelöschten Inhalte auf der Quelle verfolgen kann.
-* Das Werkzeug zum Kopieren von Inhalten verfügt über keine Versionierungsfunktion und kann geänderten Inhalt oder erstellten Inhalt in der Quellumgebung in einem Inhaltsset seit dem letzten Vorgang zum Kopieren von Inhalten nicht automatisch erkennen.
+* Das Inhaltskopie-Tool verfügt über keine Versionierungsfunktion und kann geänderte oder erstellte Inhalte in der Quellumgebung in einem Inhaltssatz seit dem letzten Inhaltskopievorgang nicht automatisch erkennen.
    * Um die Zielumgebung nur mit Inhaltsänderungen zu aktualisieren, die seit dem letzten Inhaltskopiervorgang vorgenommen wurden, müssen Sie ein Content-Set erstellen. Geben Sie dann die Pfade auf der Quellinstanz an, an denen seit dem letzten Inhaltskopiervorgang Änderungen vorgenommen wurden.
 * Versionsinformationen sind in einer Inhaltskopie nicht enthalten.

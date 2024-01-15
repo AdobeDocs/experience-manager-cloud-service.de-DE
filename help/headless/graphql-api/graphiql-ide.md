@@ -6,7 +6,7 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1136'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -21,13 +21,13 @@ Eine Implementierung der standardmäßigen [GraphQL](https://graphql.org/learn/s
 >In früheren Versionen war ein Paket erforderlich, um die GraphiQL-IDE zu installieren. Sollten Sie ein solches Paket installiert haben, kann es jetzt entfernt werden.
 
 >[!NOTE]
->Sie müssen [Ihre Endpunkte](/help/headless/graphql-api/graphql-endpoint.md) im [Konfigurationsbrowser konfiguriert](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) haben, bevor Sie die GraphiQL-IDE verwenden.
+>Sie müssen [Ihre Endpunkte](/help/headless/graphql-api/graphql-endpoint.md) im [Konfigurations-Browser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) konfiguriert haben, bevor Sie die GraphiQL-IDE verwenden.
 
-Die **GraphiQL** Mit diesem Tool können Sie Ihre GraphQL-Abfragen testen und debuggen, indem Sie:
+Das **GraphiQL**-Tool erlaubt es Ihnen, Ihre GraphQL-Abfragen zu testen und zu debuggen, indem es Ihnen folgendes ermöglicht:
 * Auswahl des **Endpunkts**, der der Sites-Konfiguration entspricht, die Sie für Ihre Abfragen verwenden möchten
 * Direkte Eingabe neuer Abfragen
 * Erstellen und Zugreifen auf **[Persistente Abfragen](/help/headless/graphql-api/persisted-queries.md)**
-* Führen Sie Ihre Abfragen aus, um die Ergebnisse sofort anzuzeigen
+* Ausführen von Abfragen mit sofortiger Anzeige der Ergebnisse
 * Verwalten von **Abfragevariablen**
 * Speichern und Verwalten von **Persistenten Abfragen**
 * **Persistierte Abfragen** entweder in Ihrem **Publish**- oder **Preview**-Service veröffentlichen bzw. die Veröffentlichung aufheben; zum Beispiel in/aus `dev-publish`
@@ -82,12 +82,12 @@ Sie können eine neue Abfrage sofort ausführen oder eine persistente Abfrage la
 
 In beiden Fällen ist die Abfrage, die im Editor-Panel angezeigt wird, die Abfrage, die ausgeführt wird, wenn Sie entweder:
 
-* auf der **Ausführen der Abfrage** icon
+* das Symbol **Abfrage ausführen** auswählen, oder
 * die Tastaturkombination `Control-Enter` verwenden.
 
 ## Abfragevariablen {#query-variables}
 
-Mit der GraphiQL-IDE können Sie auch Ihre [Abfragevariablen](/help/headless/graphql-api/content-fragments.md#graphql-variables).
+Mit der GraphiQL-IDE können Sie auch Ihre [Abfragevariablen](/help/headless/graphql-api/content-fragments.md#graphql-variables) verwalten.
 
 Beispiel:
 
@@ -99,13 +99,13 @@ Beispiel:
 
 >[!NOTE]
 >
->Siehe [Zwischenspeichern persistenter Abfragen](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>Siehe [Caching persistenter Abfragen](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >
 >Benutzerdefinierte Neuschreibungsregeln für den Dispatcher können die Standardeinstellungen für AEM Publish überschreiben.
 >
->Falls Sie TTL-basierte Cache-Control-Header vom Dispatcher basierend auf einem Ortsübereinstimmungsmuster senden, sollten Sie bei Bedarf diese ausschließen `/graphql/execute.json/*` aus den Treffern.
+>Falls Sie TTL-basierte Cache-Steuerungs-Header vom Dispatcher senden, die auf einem Muster für Standortübereinstimmungen basieren, sollten Sie gegebenenfalls `/graphql/execute.json/*` aus den Übereinstimmungen ausschließen.
 
 Mit GraphQL können Sie die HTTP-Cache-Header konfigurieren, um diese Parameter für einzelne persistente Abfragen festzulegen.
 
@@ -113,7 +113,7 @@ Mit GraphQL können Sie die HTTP-Cache-Header konfigurieren, um diese Parameter 
 
    ![HTTP-Cache-Header von persistenten Abfragen](assets/cfm-graphqlapi-headers-01.png "HTTP-Cache-Header von persistenten Abfragen")
 
-1. Wenn Sie diese Option auswählen, wird das **Cachekonfiguration** Dialogfeld:
+1. Wenn Sie dies auswählen, öffnet sich der Dialog **Cache-Konfiguration**:
 
    ![Einstellungen der HTTP-Cache-Header von persistenten Abfragen](assets/cfm-graphqlapi-headers-02.png "Einstellungen der HTTP-Cache-Header von persistenten Abfragen")
 
@@ -154,7 +154,7 @@ Dadurch wird die Abfrage in der von Ihnen gewählten Umgebung deaktiviert; entwe
 
 ## Kopieren der URL, um direkt auf die Abfrage zuzugreifen {#copy-url}
 
-Die **URL kopieren** -Option können Sie eine Abfrage simulieren, indem Sie die URL kopieren, die zum direkten Zugriff auf die beibehaltene Abfrage verwendet wird, und die Ergebnisse anzeigen. Diese kann dann zu Testzwecken verwendet werden, z. B. durch Zugriff in einem Browser:
+Mit der Option **URL kopieren** können Sie eine Abfrage simulieren, indem Sie die URL kopieren, mit der Sie direkt auf die persistente Abfrage zugreifen und die Ergebnisse sehen. Diese kann dann zu Testzwecken verwendet werden, z. B. durch Zugriff in einem Browser:
 
 <!--
   >[!NOTE]

@@ -1,15 +1,15 @@
 ---
-title: Wie richte ich eine lokale Entwicklungsumgebung für AEM Forms ein?
+title: Einrichten einer lokalen Entwicklungsumgebung für AEM Forms?
 description: Einrichten einer lokalen Entwicklungsumgebung für Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2682'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Lokale Entwicklungsumgebung für AEM Forms einrichten {#overview}
+# Einrichten einer lokalen Entwicklungsumgebung für AEM Forms {#overview}
 
 Wenn Sie eine [!DNL  Adobe Experience Manager Forms]-as-a-[!DNL  Cloud Service]-Umgebung einrichten und konfigurieren, richten Sie Entwicklungs-, Staging- und Produktionsumgebungen in der Cloud ein. Darüber hinaus können Sie auch eine lokale Entwicklungsumgebung einrichten und konfigurieren.
 
@@ -88,7 +88,7 @@ Herunterladen der neuesten Version von Adobe Experience Manager as a Cloud Servi
 
 1. Navigieren Sie zur Registerkarte **[!UICONTROL AEM as a Cloud Service]**.
 1. Sortieren Sie in absteigender Reihenfolge nach dem Veröffentlichungsdatum.
-1. Klicken Sie auf das neueste Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms Feature Archiv (AEM Forms-Add-on), die Formularverweis-Assets oder Forms Designer.
+1. Klicken Sie auf die neueste Version von Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms-Funktionsarchiv (AEM Forms-Add-on), Forms-Referenz-Assets oder Forms Designer.
 1. Lesen und akzeptieren Sie den Endbenutzer-Lizenzvertrag. Klicken Sie auf die Schaltfläche **[!UICONTROL Herunterladen]**.
 
 ## Einrichten von Entwicklungs-Tools für AEM-Projekte {#setup-development-tools-for-AEM-projects}
@@ -268,7 +268,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
      >[!WARNING]
      >
-     * Wenn Sie ein Archetyp-Projekt mit Version 45 erstellen, wird die [AEM Archetyp-Projektordner]/pom.xml legt die Forms-Kernkomponenten-Version zunächst auf 2.0.64 fest. Aktualisieren Sie vor dem Erstellen oder Bereitstellen des Archetypprojekts die Version der Formular-Kernkomponenten auf 2.0.62.
+     * Wenn Sie ein Archetyp-Projekt mit Version 45 erstellen, legt die Dateil /pom.xml im [AEM Archetyp-Projektordner] die Formular-Kernkomponenten-Version zunächst auf 2.0.64 fest. Aktualisieren Sie vor dem Erstellen oder Bereitstellen des Archetyp-Projekts die Version der Formular-Kernkomponenten auf 2.0.62.
 
 1. Stellen Sie das Projekt in Ihrer lokalen Entwicklungsumgebung bereit. Sie können folgenden Befehl verwenden, um die Bereitstellung für Ihre lokale Entwicklungsumgebung durchzuführen.
 
@@ -286,7 +286,7 @@ Führen Sie folgende Schritte aus, um den lokalen Dispatcher zu konfigurieren un
 
 ### Einrichten des lokalen Dispatchers {#setup-local-dispatcher}
 
-Die [!DNL Experience Manager] Das as a Cloud Service SDK enthält die empfohlene Dispatcher Tools-Version, die die lokale Konfiguration, Validierung und Simulation des Dispatchers erleichtert. Dispatcher-Tools sind Docker-basiert und bieten Befehlszeilen-Tools, um Apache HTTP-Webserver- und Dispatcher-Konfigurationsdateien in ein kompatibles Format zu übertragen und sie in Dispatcher bereitzustellen, der im Docker-Container ausgeführt wird.
+Das [!DNL Experience Manager] as a Cloud Service SDK enthält die empfohlene Version der Dispatcher-Tools, die die lokale Konfiguration, Validierung und Simulation von Dispatcher erleichtern. Dispatcher-Tools sind Docker-basiert und bieten Befehlszeilen-Tools, um Apache HTTP-Webserver- und Dispatcher-Konfigurationsdateien in ein kompatibles Format zu übertragen und sie in Dispatcher bereitzustellen, der im Docker-Container ausgeführt wird.
 
 Durch das Caching auf Dispatcher kann [!DNL AEM Forms] adaptive Formulare auf einem Client vorbefüllen. Dadurch wird die Rendering-Geschwindigkeit vorbefüllter Formulare verbessert.
 
@@ -298,7 +298,7 @@ Führen Sie folgende Schritte aus, um den Dispatcher-Cache für Experience Manag
 
 1. Öffnen Sie Ihr AEM-Projekt und navigieren Sie zu `\src\conf.dispatcher.d\available_farms`
 1. Erstellen Sie eine Kopie der `default.farm`-Datei. Zum Beispiel `forms.farm`.
-1. Öffnen Sie die erstellte `forms.farm` -Datei zur Bearbeitung und ersetzen Sie den folgenden Code:
+1. Öffnen Sie die neu erstellte `forms.farm`-Datei zur Bearbeitung und ersetzen Sie folgenden Code:
 
    ```json
    #/ignoreUrlParams {

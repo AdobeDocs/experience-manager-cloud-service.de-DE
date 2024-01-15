@@ -1,17 +1,17 @@
 ---
 title: Erste Schritte mit SPAs in AEM unter Verwendung von React
-description: In diesem Artikel wird eine SPA-Beispielanwendung vorgestellt, erläutert, wie sie zusammengestellt wird, und ermöglicht Ihnen, mithilfe des React-Frameworks schnell mit Ihren eigenen SPA zu arbeiten.
+description: Dieser Artikel beschreibt eine Beispiel-SPA, erläutert, wie diese zusammengestellt wird, und ermöglicht es Ihnen, unter Verwendung des React-Frameworks schnell mit Ihrer eigenen SPA zu arbeiten.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1130'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
 # Erste Schritte mit SPAs in AEM unter Verwendung von React {#getting-started-with-spas-in-aem-using-react}
 
-Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickelnde möchten Sites mit SPA-Frameworks erstellen und Autorinnen sowie Autoren möchten Inhalte in AEM nahtlos für eine Site bearbeiten, die durch SPA-Frankeworks erstellt wurde.
+Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwicklerinnen und Entwickler möchten Sites mithilfe von SPA-Frameworks erstellen können, während Autorinnen und Autoren in der Lage sein wollen, Inhalte innerhalb von AEM für eine mit SPA-Frameworks erstellte Site nahtlos zu bearbeiten.
 
 Die SPA-Autorenfunktion bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM. Dieser Artikel beschreibt eine vereinfachte SPA-Anwendung im React-Framework, erläutert, wie sie zusammengestellt wird, und ermöglicht es Ihnen, rasch mit Ihrer eigenen SPA zu arbeiten.
 
@@ -117,7 +117,7 @@ Eine vereinfachte Bildkomponente wird als Beispiel verwendet, aber alle Komponen
 
 ### index.js {#index-js}
 
-Der Einstiegspunkt in die SPA ist die hier gezeigte Datei `index.js`, die sich auf den wichtigen Inhalt konzentriert.
+Der Einstiegspunkt in die SPA ist die hier gezeigte Datei `index.js`, die hier vereinfacht dargestellt ist, um sich auf den wichtigen Inhalt zu konzentrieren.
 
 ```
 import ReactDOM from 'react-dom';
@@ -209,7 +209,7 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-Die zentrale Idee von SPA in AEM ist die Idee, SPA Komponenten AEM Komponenten zuzuordnen und die Komponente zu aktualisieren, wenn der Inhalt geändert wird (und umgekehrt). Eine Zusammenfassung dieses Kommunikationsmodells finden Sie im Dokument [SPA-Editor – Überblick](editor-overview.md).
+Die zentrale Idee von SPAs in AEM besteht darin, SPA-Komponenten zu AEM-Komponenten zuzuordnen und die Komponente zu aktualisieren, wenn der Inhalt geändert wird (und umgekehrt). Eine Zusammenfassung dieses Kommunikationsmodells finden Sie im Dokument [SPA-Editor – Überblick](editor-overview.md).
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 
@@ -266,4 +266,4 @@ Regelmäßig müssen Komponenten in einer SPA Daten austauschen. Es gibt mehrere
 * [SPA-Editor – Überblick](editor-overview.md) vertieft das Kommunikationsmodell zwischen AEM und der SPA.
 * [WKND-SPA-Projekt](wknd-tutorial.md) ist ein Schritt-für-Schritt-Tutorial zur Implementierung eines einfachen SPA-Projekts in AEM.
 * [Dynamisches Modell zur Komponentenzuordnung für SPAs](model-to-component-mapping.md) erläutert das dynamische Modell für die Komponentenzuordnung und dessen Funktionsweise innerhalb von SPAs in AEM.
-* [SPA Blueprint](blueprint.md) bietet einen tiefen Einblick in die Funktionsweise des SPA SDK für AEM, falls Sie SPA in AEM für ein anderes Framework als React oder Angular implementieren möchten oder einfach ein tieferes Verständnis wünschen.
+* [SPA-Blueprint](blueprint.md) liefert gründlichere Informationen zur Funktionsweise des SPA SDK für AEM, falls Sie SPAs für ein anderes Framework als React oder Angular in AEM implementieren möchten oder einfach ein genaueres Verständnis wünschen.

@@ -8,7 +8,7 @@ exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '922'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -87,7 +87,7 @@ Im Folgenden werden die Schritte zum Hinzufügen von Tags zu einem Asset beschri
 
 1. Melden Sie sich bei [!DNL Experience Manager Assets] an.
 1. Klicken Sie auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**, wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Eigenschaften]**, um die Asset-Eigenschaften zu öffnen.
-1. Im **[!UICONTROL Allgemein]** auf das Ordnersymbol in **[!UICONTROL Tags]** Metadaten. Ein Popup-Fenster wird geöffnet.
+1. Klicken Sie auf der Registerkarte **[!UICONTROL Allgemein]** auf das Ordnersymbol in den Metadaten von **[!UICONTROL Tags]**. Ein Popup-Fenster wird geöffnet.
 1. Suchen Sie die entsprechenden Tags in den vorhandenen Tags in `cq-tags` oder wählen Sie sie aus. Sie können dem Asset mehrere Tags zuweisen.
 
    Sie können die Tag-Struktur anhand der Variablen **[!UICONTROL Name]** (alphabetische Reihenfolge), **[!UICONTROL Erstellt]**-Datum oder **[!UICONTROL Geändert]**-Datum aufsteigend oder absteigend sortieren. In der folgenden Abbildung wird die Tag-Struktur alphabetisch nach dem **[!UICONTROL Namen]** sortiert.

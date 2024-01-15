@@ -5,7 +5,7 @@ exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1157'
-ht-degree: 57%
+ht-degree: 96%
 
 ---
 
@@ -16,7 +16,7 @@ Erfahren Sie, wie Sie mithilfe von Cloud Manager AEM as a Cloud Service Inhalte 
 
 >[!NOTE]
 >
->Diese Funktion steht nur für [frühzeitiges Adoptionsprogramm](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) und hat einige Einschränkungen, die über die im Artikel dokumentierten hinausgehen. In der frühen Annahmephase:
+>Diese Funktion steht nur für das [Early-Adopter-Programm](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) zur Verfügung und hat einige Einschränkungen, die über die im Artikel dokumentierten hinausgehen. In der Early-Adoption-Phase:
 >
 >* Die Funktion ist nur in Entwicklungsumgebungen verfügbar.
 >* Die Inhaltswiederherstellung ist auf zwei pro Monat pro Programm beschränkt.
@@ -25,16 +25,16 @@ Erfahren Sie, wie Sie mithilfe von Cloud Manager AEM as a Cloud Service Inhalte 
 
 ## Übersicht {#overview}
 
-Der Self-Service-Wiederherstellungsprozess von Cloud Manager kopiert Daten aus Adobe-Systemsicherungen und stellt sie in der Originalumgebung wieder her. Es wird eine Wiederherstellung durchgeführt, um verlorene, beschädigte oder versehentlich gelöschte Daten in den ursprünglichen Zustand zurückzugeben.
+Der Self-Service-Wiederherstellungsprozess von Cloud Manager kopiert Daten aus Adobe-Systemsicherungen und stellt sie in der Originalumgebung wieder her. Eine Wiederherstellung wird durchgeführt, um Daten, die verloren gegangen, beschädigt oder versehentlich gelöscht wurden, in ihren ursprünglichen Zustand zurückzuversetzen.
 
 Der Wiederherstellungsprozess wirkt sich nur auf die Inhalte aus, sodass Ihr Code und Ihre Version von AEM unverändert bleiben. Sie können jederzeit einen Wiederherstellungsvorgang für einzelne Umgebungen starten.
 
 Cloud Manager bietet zwei Arten von Sicherungskopien, mit denen Sie Inhalte wiederherstellen können.
 
-* **Point-in-Time (PIT):** Dieser Typ wird aus kontinuierlichen Systemsicherungen der letzten 24 Stunden ab der aktuellen Zeit wiederhergestellt.
-* **Letzte Woche**: Dieser Typ wird aus den Systemsicherungen der letzten sieben Tage vor den letzten 24 Stunden wiederhergestellt.
+* **Point-in-Time (PIT)**: Bei diesem Typ wird aus kontinuierlichen Systemsicherungen der letzten 24 Stunden vor der aktuellen Zeit wiederhergestellt.
+* **Letzte Woche**: Bei diesem Typ wird aus den Systemsicherungen der letzten sieben Tage vor den letzten 24 Stunden wiederhergestellt.
 
-In beiden Fällen bleiben die Version Ihres benutzerspezifischen Codes und die AEM unverändert.
+In beiden Fällen bleiben die Version Ihres benutzerspezifischen Codes und Ihre Version von AEM unverändert.
 
 >[!TIP]
 >
@@ -42,29 +42,29 @@ In beiden Fällen bleiben die Version Ihres benutzerspezifischen Codes und die A
 
 ## Wiederherstellen von Inhalten {#restoring-content}
 
-Bestimmen Sie zunächst den Zeitrahmen des Inhalts, den Sie wiederherstellen möchten. Führen Sie diese Schritte aus, um den Inhalt Ihrer Umgebung aus einer Sicherungskopie wiederherzustellen.
+Bestimmen Sie zunächst den Zeitrahmen der Inhalte, die Sie wiederherstellen möchten. Führen Sie die folgenden Schritte aus, um den Inhalt Ihrer Umgebung aus einer Sicherungskopie wiederherzustellen.
 
 >[!NOTE]
 >
->Ein Benutzer mit der **Business Owner** oder **Bereitstellungsmanager** -Rolle muss angemeldet sein, um einen Wiederherstellungsvorgang zu starten.
+>Eine Person mit der Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** muss angemeldet sein, um einen Wiederherstellungsvorgang zu starten.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Klicken Sie auf das Programm, für das Sie eine Wiederherstellung starten möchten.
+1. Klicken Sie auf das Programm, für das Sie eine Wiederherstellung einleiten möchten.
 
-1. Aus dem **Programmübersicht** in der **Umgebungen** -Karte, klicken Sie auf die Schaltfläche mit Auslassungspunkten neben der Umgebung, für die Sie eine Wiederherstellung starten möchten, und wählen Sie **Inhalt wiederherstellen**.
+1. Klicken Sie auf der Seite **Programmübersicht** in der Karte **Umgebungen** auf die Schaltfläche mit den Auslassungspunkten neben der Umgebung, für die Sie eine Wiederherstellung einleiten möchten, und wählen Sie **Inhalt wiederherstellen**.
 
    ![Option zum Wiederherstellen](assets/backup-option.png)
 
    * Alternativ können Sie auch direkt zur Registerkarte **Inhalt wiederherstellen** auf der Seite mit den Umgebungsdetails einer bestimmten Umgebung navigieren.
 
-1. Im **Inhalt wiederherstellen** auf der Seite mit den Umgebungsdetails den Zeitrahmen der Wiederherstellung unter der **Wiederherstellungszeit** Dropdown-Liste.
+1. Wählen Sie zunächst auf der Registerkarte **Inhalt wiederherstellen** der Seite mit den Umgebungsdetails den Zeitrahmen der Wiederherstellung unter der Dropdown-Liste **Wiederherstellungszeit**.
 
-   1. Wenn Sie **Letzte 24 Stunden** die Nachbarländer **Zeit** -Feld können Sie die genaue Zeit innerhalb der letzten 24 Stunden angeben, die wiederhergestellt werden sollen.
+   1. Wenn Sie **Letzte 24 Stunden** auswählen, können Sie im benachbarten Feld **Zeit** den genauen Zeitpunkt innerhalb der letzten 24 Stunden für die Wiederherstellung angeben.
 
       ![Letzte 24 Stunden](assets/backup-time.png)
 
-   1. Wenn Sie **Letzte Woche** die Nachbarländer **Tag** -Feld können Sie ein Datum aus den letzten sieben Tagen auswählen, mit Ausnahme der letzten 24 Stunden.
+   1. Wenn Sie **Letzte Woche** wählen, können Sie im benachbarten Feld **Tag** ein Datum innerhalb der letzten sieben Tage auswählen, wobei die vergangenen 24 Stunden ausgeschlossen sind.
 
       ![Letzte Woche](assets/backup-date.png)
 
@@ -72,19 +72,19 @@ Bestimmen Sie zunächst den Zeitrahmen des Inhalts, den Sie wiederherstellen mö
 
    ![Verfügbare Sicherungskopien](assets/backup-available.png)
 
-1. Suchen Sie mithilfe des Informationssymbols nach der Sicherung, die Sie wiederherstellen möchten, um Informationen zur Version des Codes und AEM Version anzuzeigen, die in dieser Sicherung enthalten sind, und berücksichtigen Sie die Auswirkungen einer Wiederherstellung, wenn [das Backup auswählen.](#choosing-the-right-backup)
+1. Suchen Sie die Sicherungskopie, die Sie wiederherstellen möchten, indem Sie das Informationssymbol verwenden, um Informationen über die in dieser Sicherungskopie enthaltene Version des Codes und der AEM-Version anzuzeigen und die Auswirkungen einer Wiederherstellung bei der [Auswahl der Sicherungskopie](#choosing-the-right-backup) zu berücksichtigen.
 
    ![Sicherungsinformationen](assets/backup-info.png)
 
-   * Der für die Wiederherstellungsoptionen angezeigte Zeitstempel basiert alle auf der Zeitzone des Computers des Benutzers.
+   * Der für die Wiederherstellungsoptionen angezeigte Zeitstempel beruht auf der Zeitzone des Computers der Person.
 
-1. Klicken Sie auf **Wiederherstellen** -Symbol am rechten Ende der Zeile, die das Backup darstellt, das Sie wiederherstellen möchten, um den Wiederherstellungsprozess zu starten.
+1. Um den Wiederherstellungsprozess zu starten, klicken Sie auf das Symbol **Wiederherstellen** am rechten Ende der Zeile, die die wiederherzustellende Sicherungskopie darstellt.
 
 1. Überprüfen Sie die Details im Dialogfeld **Inhalt wiederherstellen**, bevor Sie Ihre Anfrage durch Klicken auf **Wiederherstellen** bestätigen.
 
    ![Wiederherstellen bestätigen](assets/backup-restore.png)
 
-Der Backup-Prozess wird initiiert und Sie können seinen Status im **[Aktivität wiederherstellen](#restore-activity)** Liste. Die Dauer des Wiederherstellungsvorgangs hängt von der Größe und dem Profil des wiederherzustellenden Inhalts ab.
+Der Sicherungsprozess wird eingeleitet und Sie können den Status in der Tabelle **[Wiederherstellungsaktivität](#restore-activity)** einsehen. Die Dauer des Wiederherstellungsvorgangs hängt von der Größe und dem Profil des wiederherzustellenden Inhalts ab.
 
 Wenn die Wiederherstellung erfolgreich abgeschlossen wurde, wird die Umgebung wie folgt aussehen:
 
@@ -93,7 +93,7 @@ Wenn die Wiederherstellung erfolgreich abgeschlossen wurde, wird die Umgebung wi
 
 ## Auswahl der richtigen Sicherungskopie {#choosing-backup}
 
-Der Self-Service-Wiederherstellungsprozess von Cloud Manager stellt nur Inhalte wieder AEM. Aus diesem Grund müssen Sie Codeänderungen sorgfältig berücksichtigen, die zwischen dem gewünschten Wiederherstellungspunkt und der aktuellen Zeit vorgenommen wurden, indem Sie den Commitverlauf zwischen der aktuellen Commit-ID und der wiederhergestellten überprüfen.
+Der Self-Service-Wiederherstellungsprozess von Cloud Manager stellt nur Inhalte in AEM wieder her. Aus diesem Grund müssen Sie Code-Änderungen, die zwischen dem gewünschten Wiederherstellungspunkt und der aktuellen Zeit vorgenommen wurden, sorgfältig prüfen, indem Sie das Protokoll zwischen der aktuellen und der wiederhergestellten Commit-ID überprüfen.
 
 Es gibt verschiedene Szenarien.
 
@@ -107,7 +107,7 @@ Beachten Sie außerdem, dass eine Wiederherstellung dazu führen kann, dass Ihre
 
 ## Wiederherstellungsaktivität {#restore-activity}
 
-Die **Aktivität wiederherstellen** zeigt den Status der zehn letzten Wiederherstellungsanfragen einschließlich aller aktiven Wiederherstellungsvorgänge an.
+Die Tabelle **Wiederherstellungsaktivität** zeigt den Status der zehn letzten Wiederherstellungsanfragen einschließlich aller aktiven Wiederherstellungsvorgänge an.
 
 ![Wiederherstellungsaktivität](assets/backup-activity.png)
 

@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '2745'
-ht-degree: 82%
+ht-degree: 90%
 
 ---
 
@@ -35,7 +35,7 @@ Der Status darf nicht im Speicher gehalten werden, sondern muss im Repository ve
 
 Verwenden Sie AEM as a Cloud Service nicht das Dateisystem der Instanz. Der Datenträger ist temporär und wird verworfen, wenn Instanzen recycelt werden. Eine beschränkte Nutzung des Dateisystems für die temporäre Datenspeicherung im Zusammenhang mit der Verarbeitung einzelner Anfragen ist möglich, sollte aber nicht für riesige Dateien missbraucht werden. Dies liegt daran, dass sich dies negativ auf das Ressourcennutzungskontingent auswirken und zu Datenträgerbeschränkungen führen kann.
 
-Wenn beispielsweise die Verwendung des Dateisystems nicht unterstützt wird, sollte die Veröffentlichungsstufe sicherstellen, dass alle Daten, die beibehalten werden müssen, für längerfristige Datenspeicherung an einen externen Dienst gesendet werden.
+Wenn beispielsweise die Nutzung des Dateisystems nicht unterstützt wird, sollte die Veröffentlichungsebene sicherstellen, dass alle Daten, die beibehalten werden müssen, zur längeren Datenspeicherung an einen externen Dienst gesendet werden.
 
 ## Beobachrung {#observation}
 
@@ -67,9 +67,9 @@ Alternativen, von denen bekannt ist, dass sie funktionieren, für die Sie jedoch
 
 Neben der Bereitstellung von Zeitüberschreitungen sollte auch eine ordnungsgemäße Verarbeitung solcher Zeitüberschreitungen sowie unerwarteter HTTP-Status-Codes implementiert werden.
 
-## Umgang mit Anforderungsratenbeschränkungen {#rate-limit-handling}
+## Umgang mit Beschränkungen von Anfrageraten {#rate-limit-handling}
 
-Wenn die Rate eingehender Anfragen an AEM gesunde Ebenen überschreitet, antwortet AEM auf neue Anfragen mit dem HTTP-Fehlercode 429. Anwendungen, die programmatische Aufrufe an AEM durchführen, können eine defensive Programmierung in Erwägung ziehen und es nach einigen Sekunden mit einer exponentiellen Backoff-Strategie erneut versuchen. Vor Mitte August 2023 reagierte AEM auf dieselbe Bedingung mit dem HTTP-Fehlercode 503.
+Wenn die Rate eingehender Anfragen an AEM ein gesundes Maß überschreitet, antwortet AEM auf neue Anfragen mit dem HTTP-Fehler-Code 429. Anwendungen, die programmatische Aufrufe an AEM durchführen, können eine defensive Programmierung in Erwägung ziehen und es nach einigen Sekunden mit einer exponentiellen Backoff-Strategie erneut versuchen. Vor Mitte August 2023 reagierte AEM auf dieselbe Bedingung mit dem HTTP-Fehler-Code 503.
 
 ## Keine Anpassungen der klassischen Benutzeroberfläche {#no-classic-ui-customizations}
 
@@ -79,7 +79,7 @@ AEM as a Cloud Service unterstützt die Touch-Benutzeroberfläche nur für Kunde
 
 Native Binärdateien und Bibliotheken dürfen nicht in Cloud-Umgebungen bereitgestellt oder installiert werden.
 
-Darüber hinaus sollte der Code nicht versuchen, native Binärdateien oder native Java-Erweiterungen (z. B. JNI) zur Laufzeit herunterzuladen.
+Darüber hinaus sollte der Code nicht versuchen, native Binärdateien oder native Java-Erweiterungen (z. B. JNI) zur Laufzeit herunterzuladen.
 
 ## Keine Streaming-Binärdateien über AEM as a Cloud Service {#no-streaming-binaries}
 
@@ -95,13 +95,13 @@ Die Rückwärtsreplikation von der Veröffentlichungs- auf die Autoreninstanz wi
 
 Inhalte werden über einen Herausgeber-Abonnenten-Mechanismus von der Autoren- auf die Veröffentlichungsinstanz repliziert. Benutzerdefinierte Replikationsagenten werden nicht unterstützt.
 
-## Keine Entwicklungsumgebungen überladen {#overloading-dev-envs}
+## Kein Überladen von Entwicklungsumgebungen {#overloading-dev-envs}
 
 Die Größe von Produktionsumgebungen ist höher, um einen stabilen Betrieb sicherzustellen, während Staging-Umgebungen wie Produktionsumgebungen skaliert werden, um realistische Tests unter Produktionsbedingungen sicherzustellen.
 
-Entwicklungsumgebungen und Rapid Dev-Umgebungen sollten sich auf Entwicklungs-, Fehleranalyse- und Funktionstests beschränken und sind nicht für die Verarbeitung hoher Arbeitslasten oder großer Inhaltsmengen konzipiert.
+Entwicklungsumgebungen und schnelle Entwicklungsumgebungen sollten auf Entwicklungs-, Fehleranalyse- und Funktionstests beschränkt werden und sind nicht für die Verarbeitung hoher Arbeitslasten oder großer Inhaltsmengen konzipiert.
 
-Beispielsweise kann das Ändern einer Indexdefinition in einem großen Inhalts-Repository in einer Entwicklungsumgebung zu einer Neuindizierung führen, was zu einer zu hohen Verarbeitungsrate führt. Tests, die umfangreiche Inhalte erfordern, sollten in Staging-Umgebungen durchgeführt werden.
+Beispielsweise kann das Ändern einer Indexdefinition in einem großen Content-Repository in einer Entwicklungsumgebung eine Neuindizierung verursachen, was zu einer zu hohen Verarbeitungsrate führt. Tests, die umfangreiche Inhalte erfordern, sollten in Staging-Umgebungen durchgeführt werden.
 
 ## Überwachung und Debugging {#monitoring-and-debugging}
 
@@ -214,7 +214,7 @@ Bei Produktionsprogrammen wird der Zugriff auf die AEM as a Cloud Service Develo
 
 ### Performance-Überwachung {#performance-monitoring}
 
-Adobe überwacht die Programmleistung und ergreift Maßnahmen, wenn eine Verschlechterung beobachtet wird. Derzeit können Anwendungsmetriken nicht überwacht werden.
+Adobe überwacht die Programmleistung und ergreift Maßnahmen, wenn eine Verschlechterung beobachtet wird. Anwendungsmetriken können derzeit nicht überwacht werden.
 
 ## Senden von E-Mails {#sending-email}
 
@@ -247,7 +247,7 @@ Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in d
 
 Der SMTP-Server-Port sollte als `portDest`-Wert im portForwards-Parameter festgelegt werden, der im API-Aufruf bei der Konfiguration der erweiterten Vernetzung verwendet wird, und der `portOrig`-Wert sollte ein aussagekräftiger Wert sein, der innerhalb des erforderlichen Bereichs von 30000 bis 30999 liegt. Wenn der SMTP-Server-Port beispielsweise 465 ist, sollte der Port 30465 als `portOrig`-Wert verwendet werden.
 
-In diesem Fall muss SSL in der Konfiguration der **Day CQ Mail Service OSGi** -Dienst:
+In diesem Fall und unter der Annahme, dass SSL aktiviert werden muss, in der Konfiguration des **Day CQ Mail Service OSGi**-Services:
 
 * `smtp.port` wird auf `30465` gesetzt
 * Setzen Sie `smtp.ssl` auf `true`

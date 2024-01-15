@@ -8,7 +8,7 @@ exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2526'
-ht-degree: 73%
+ht-degree: 98%
 
 ---
 
@@ -55,17 +55,17 @@ Auf beide Ansätze wird in den folgenden Abschnitten eingegangen.
 
 Für Inhaltsverantwortliche, die auch für die Übersetzung verantwortlich ist, ist es oft einfacher, das Projekt anhand des ausgewählten Inhaltspfads automatisch von AEM erstellen zu lassen. Gehen Sie wie folgt vor, um von AEM automatisch ein Übersetzungsprojekt auf der Grundlage Ihres Inhaltspfads erstellen zu lassen:
 
-1. Navigieren Sie zu **Navigation** > **Sites** und wählen Sie Ihr Projekt aus.
+1. Gehen Sie zu **Navigation** > **Sites** und wählen Sie Ihr Projekt aus.
 1. Suchen Sie den Sprachstamm Ihres Projekts. Wenn Ihr Sprachstamm beispielsweise Englisch ist, `/content/<your-project>/en`.
    * Vor der ersten Übersetzung, dass die anderen Sprachordner leere Platzhalter sind. Diese werden normalerweise vom Inhaltsarchitekten erstellt.
 1. Suchen Sie den Sprachstamm Ihres Projekts.
-1. Wählen Sie die Schienenauswahl aus und zeigen Sie die **Verweise** Bedienfeld.
-1. Auswählen **Sprachkopien**.
+1. Wählen Sie die Leistenauswahl aus und zeigen Sie das Bedienfeld **Verweise** an.
+1. Wählen Sie **Sprachkopien** aus.
 1. Aktivieren Sie das Kontrollkästchen **Sprachkopien**.
 1. Erweitern Sie den Abschnitt **Sprachkopien aktualisieren** unten im Bereich „Verweise“.
-1. Im **Projekt** Dropdown-Liste auswählen **Übersetzungsprojekt(e) erstellen**.
+1. Wählen Sie in der Dropdown-Liste **Projekt** die Option **Übersetzungsprojekt(e) erstellen** aus.
 1. Geben Sie einen passenden Titel für Ihr Übersetzungsprojekt an.
-1. Auswählen **Aktualisieren**.
+1. Wählen Sie **Aktualisieren** aus.
 
 ![Erstellen eines Übersetzungsprojekts](assets/create-translation-project.png)
 
@@ -81,16 +81,16 @@ Sie erhalten eine Nachricht, dass das Projekt erstellt wurde.
 
 Für Übersetzungsprojekt-Manager ist es oft erforderlich, bestimmte Inhalte, die in ein Übersetzungsprojekt aufgenommen werden sollen, manuell auszuwählen. Um ein solches manuelles Übersetzungsprojekt zu erstellen, müssen Sie zunächst ein leeres Projekt erstellen und dann die hinzuzufügenden Inhalte auswählen.
 
-1. Navigieren Sie zu **Navigation** > **Projekte**.
-1. Auswählen **Erstellen** > **Ordner** , um einen Ordner für Ihre Projekte zu erstellen.
+1. Gehen Sie zu **Navigation** > **Projekte**.
+1. Wählen Sie **Erstellen** > **Ordner** aus, um einen Ordner für Ihre Projekte zu erstellen.
    * Dies ist optional, aber hilfreich, um Ihre Übersetzungsarbeit zu organisieren.
-1. Im **Projekt erstellen** ein Fenster, fügen Sie eine **Titel** für den Ordner und wählen Sie dann **Erstellen**.
+1. Fügen Sie im Fenster **Projekt erstellen** einen **Titel** für den Ordner hinzu und wählen Sie dann **Erstellen** aus.
 
    ![Erstellen von Projektordnern](assets/create-project-folder.png)
 
 1. Wählen Sie den Ordner aus, um den Ordner zu öffnen.
-1. Wählen Sie in Ihrem neuen Projektordner die Option **Erstellen** > **Projekt**.
-1. Projekte basieren auf Vorlagen. Wählen Sie die **Übersetzungsprojekt** Vorlage zur Auswahl und zur Auswahl **Nächste**.
+1. Wählen Sie in Ihrem neuen Projektordner die Option **Erstellen** > **Projekt** aus.
+1. Projekte basieren auf Vorlagen. Wählen Sie die Vorlage **Übersetzungsprojekt** aus und anschließend **Weiter**.
 
    ![Übersetzungsprojektvorlage auswählen](assets/select-translation-project-template.png)
 
@@ -98,11 +98,11 @@ Für Übersetzungsprojekt-Manager ist es oft erforderlich, bestimmte Inhalte, di
 
    ![Registerkarte „Allgemein“ des Projekts](assets/project-basic-tab.png)
 
-1. Im **Erweitert** Registerkarte, verwenden Sie die **Zielsprache** Dropdown-Liste, um die Sprachen auszuwählen, in die Ihre Inhalte übersetzt werden sollen. Wählen Sie **Erstellen** aus.
+1. Verwenden Sie auf der Registerkarte **Erweitert** die Dropdown-Liste **Zielsprache**, um die Sprachen auszuwählen, in die die Inhalte übersetzt werden sollen. Wählen Sie **Erstellen** aus.
 
    ![Registerkarte „Erweitert“ des Projekts](assets/project-advanced-tab.png)
 
-1. Auswählen **Öffnen** im Bestätigungsdialogfeld.
+1. Wählen Sie im Bestätigungsdialogfeld die Option **Öffnen** aus.
 
    ![Bestätigungsdialogfeld für das Projekt](assets/project-confirmation-dialog.png)
 
@@ -110,31 +110,31 @@ Das Projekt wurde erstellt, enthält jedoch keine zu übersetzenden Inhalte. Im 
 
 ## Verwenden eines Übersetzungsprojekts {#using-translation-project}
 
-Übersetzungsprojekte dienen dazu, alle Inhalte und Aufgaben im Zusammenhang mit einem Übersetzungsprozess an einem Ort zusammenzustellen, um Ihre Übersetzung einfach und einfach zu verwalten.
+Übersetzungsprojekte dienen dazu, alle Inhalte und Aufgaben im Zusammenhang mit einem Übersetzungsangebot an einem Ort zu erfassen, damit die Übersetzung einfach verwaltet werden kann.
 
 So zeigen Sie das Übersetzungsprojekt an:
 
-1. Navigieren Sie zu **Navigation** > **Projekte**.
-1. Wählen Sie das Projekt aus, das im vorherigen Abschnitt erstellt wurde (entweder [Automatisches Erstellen eines Übersetzungsprojekts basierend auf dem Inhaltspfad](#automatically-creating) oder [Manuelles Erstellen eines Übersetzungsprojekts durch Auswahl des Inhalts](#manually-creating) abhängig von Ihrer Situation).
+1. Gehen Sie zu **Navigation** > **Projekte**.
+1. Wählen Sie das Projekt aus, das im vorherigen Abschnitt erstellt wurde (entweder [Automatisches Erstellen eines Übersetzungsprojekts basierend auf dem Inhaltspfad](#automatically-creating) oder [Manuelles Erstellen eines Übersetzungsprojekts durch Auswahl der Inhalte](#manually-creating), je nach Ihrer Situation).
 
 ![Übersetzungsprojekt](assets/translation-project.png)
 
 Das Projekt ist in mehrere Karten unterteilt.
 
 * **Zusammenfassung**: Diese Karte zeigt die grundlegenden Kopfzeileninformationen des Projekts, einschließlich des Verantwortlichen, der Sprache und des Übersetzungsdienstleisters.
-* **Übersetzungsauftrag** - Diese Karte bzw. diese Karten bieten einen Überblick über den tatsächlichen Übersetzungsauftrag, einschließlich Status, Anzahl der Assets usw. Im Allgemeinen gibt es pro Sprache einen Auftrag, wobei der ISO-2-Sprach-Code an den Auftragsnamen angehängt wird.
+* **Übersetzungsauftrag**: Diese Karten bieten einen Überblick über den tatsächlichen Übersetzungsauftrag, einschließlich Status, Anzahl der Assets usw. Im Allgemeinen gibt es pro Sprache einen Auftrag, wobei der ISO-2-Sprach-Code an den Auftragsnamen angehängt wird.
    * Wann [automatische Erstellung von Übersetzungsaufträgen,](#automatically-creating) AEM erstellt die Aufträge asynchron und sie werden möglicherweise nicht sofort im Projekt angezeigt.
 * **Team**: Auf dieser Karte werden die Benutzer angezeigt, die an diesem Übersetzungsprojekt mitarbeiten. Diese Tour behandelt dieses Thema nicht.
 * **Aufgaben**: Zusätzliche Aufgaben im Zusammenhang mit der Übersetzung der Inhalte, z. B. zum Erstellen von Elementen oder Workflow-Elementen. Diese Tour behandelt dieses Thema nicht.
 
 Um den Übersetzungsfluss in AEM besser zu verstehen, ist eine Änderung an den Projekteinstellungen nützlich. Dieser Schritt ist nicht für Produktionsübersetzungen erforderlich, sondern hilft beim Verständnis des Prozesses.
 
-1. Im **Zusammenfassung** und wählen Sie unten auf der Karte die Schaltfläche mit den Auslassungspunkten aus.
+1. Wählen Sie unten auf der Karte **Zusammenfassung** die Schaltfläche mit den Auslassungspunkten aus.
 1. Deaktivieren Sie auf der Registerkarte **Erweitert** die Option **Launch nach Weiterleitung löschen**.
 
    ![Launch nach der Weiterleitung löschen](assets/delete-launch-option.png)
 
-1. Klicken Sie auf **Speichern und schließen**.
+1. Wählen Sie **Speichern und schließen**.
 
 Jetzt können Sie Ihr Übersetzungsprojekt verwenden. Wie Sie ein Übersetzungsprojekt verwenden, hängt davon ab, wie es erstellt wurde: entweder automatisch durch AEM oder manuell.
 
@@ -144,19 +144,19 @@ Beim automatischen Erstellen des Übersetzungsprojekts bewertet AEM die Inhalte 
 
 So sehen Sie die Details der in diesem Projekt enthaltenen Inhalte:
 
-1. Wählen Sie die Suchschaltfläche unten im **Übersetzungsauftrag** Karte.
+1. Wählen Sie unten auf der Karte **Übersetzungsauftrag** die Schaltfläche mit den Auslassungspunkten aus.
 1. Im Fenster **Übersetzungsauftrag** werden alle Elemente des Auftrags aufgelistet.
 
    ![Detail des Übersetzungsauftrags](assets/translation-job-detail.png)
 
-1. Wählen Sie eine Zeile aus, um die Details dieser Zeile anzuzeigen, wobei zu beachten ist, dass eine Zeile mehrere zu übersetzende Inhaltselemente darstellen kann.
-1. Aktivieren Sie das Auswahlkästchen für ein Zeilenelement, um weitere Optionen anzuzeigen, z. B. die Option, es aus dem Auftrag zu löschen oder es in der Sites-Konsole anzuzeigen.
+1. Wählen Sie eine Zeile aus, um ihre Details anzuzeigen. Dabei ist zu beachten, dass eine Zeile mehrere zu übersetzende Inhaltselemente darstellen kann.
+1. Wählen Sie das Auswahl-Kontrollkästchen für ein Zeilenelement aus, um weitere Optionen anzuzeigen, z. B. die Option, es aus dem Auftrag zu löschen oder es in der Sites-Konsole anzuzeigen.
 
    ![Optionen für Übersetzungsaufträge](assets/translation-job-options.png)
 
 Normalerweise beginnt der Inhalt des Übersetzungsauftrags im Status **Entwurf**, wie in der Spalte **Status** im Fenster **Übersetzungsauftrag** angegeben.
 
-Um den Übersetzungsauftrag zu starten, kehren Sie zur Übersichtsübersicht des Übersetzungsprojekts zurück und wählen Sie oben in der **Übersetzungsauftrag** Karte und wählen Sie **Starten**.
+Um den Übersetzungsauftrag zu starten, kehren Sie zur Übersicht des Übersetzungsprojekts zurück und wählen Sie die Pfeil-Schaltfläche oben in der Karte **Übersetzungsauftrag** und dann **Starten** aus.
 
 ![Übersetzungsauftrag starten](assets/start-translation-job.png)
 
@@ -174,7 +174,7 @@ Maschinelle Übersetzungen werden automatisch mit dem Status **Genehmigt** zurü
 >
 >Wenn Sie die Projektoption **Launch nach Weiterleitung löschen** nicht deaktiviert haben, wie [im vorherigen Abschnitt beschrieben,](#using-translation-project) erscheinen übersetzte Elemente mit dem Status **Gelöscht**. Dies ist normal, da AEM die Übersetzungseinträge automatisch verwirft, sobald die übersetzten Elemente eintreffen. Die übersetzten Elemente wurden als Sprachkopien importiert, nur die Übersetzungseinträge wurden gelöscht, da sie nicht mehr benötigt werden.
 >
->Machen Sie sich keine Gedanken, wenn das unklar ist. Dies sind ausführliche Details, wie AEM funktioniert und beeinflussen nicht Ihr Verständnis der Tour. Wenn Sie genauer erfahren möchten, wie AEM Übersetzungen verarbeitet, lesen Sie [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Artikels.
+>Machen Sie sich keine Gedanken, wenn das unklar ist. Dies sind ausführliche Details, wie AEM funktioniert und beeinflussen nicht Ihr Verständnis der Tour. Wenn Sie mehr darüber erfahren möchten, wie AEM Übersetzungen verarbeitet, lesen Sie den Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Artikels.
 
 ### Verwenden eines manuell erstellten Übersetzungsprojekts {#using-manual-project}
 
@@ -182,8 +182,8 @@ Beim manuellen Erstellen eines Übersetzungsprojekts erstellt AEM die erforderli
 
 So fügen Sie einem Übersetzungsauftrag Inhalte hinzu:
 
-1. Wählen Sie die Suchschaltfläche unten in einem der **Übersetzungsauftrag** Karten.
-1. Stellen Sie sicher, dass der Auftrag keinen Inhalt enthält. Wählen Sie die **Hinzufügen** Schaltfläche oben im Fenster und **Assets/Seiten** aus der Dropdown-Liste aus.
+1. Wählen Sie die Schaltfläche mit den Auslassungszeichen unten auf einer der Karten **Übersetzungsauftrag** aus.
+1. Stellen Sie sicher, dass der Auftrag keinen Inhalt enthält. Wählen Sie die Schaltfläche **Hinzufügen** oben im Fenster aus und wählen Sie dann aus der Dropdown-Liste **Assets/Seiten** aus.
 
    ![Leerer Übersetzungsauftrag](assets/empty-translation-job.png)
 
@@ -191,8 +191,8 @@ So fügen Sie einem Übersetzungsauftrag Inhalte hinzu:
 
    ![Pfad-Browser](assets/path-browser.png)
 
-1. Auswählen **Auswählen** , um den ausgewählten Inhalt zum Auftrag hinzuzufügen.
-1. Im **Übersetzen** Dialogfeld angeben, dass Sie **Sprachkopie erstellen**.
+1. Wählen Sie **Auswählen** aus, um die ausgewählten Inhalte zum Auftrag hinzuzufügen.
+1. Geben Sie im Dialogfeld **Übersetzen** an, dass Sie eine **Sprachkopie erstellen** möchten.
 
    ![Sprachkopie erstellen](assets/translate-copy-master.png)
 
@@ -200,7 +200,7 @@ So fügen Sie einem Übersetzungsauftrag Inhalte hinzu:
 
    ![Zum Übersetzungsauftrag hinzugefügte Inhalte](assets/content-added.png)
 
-1. Aktivieren Sie das Auswahlkästchen für ein Zeilenelement, um weitere Optionen anzuzeigen, z. B. die Option, es aus dem Auftrag zu löschen oder es in der Sites-Konsole anzuzeigen.
+1. Wählen Sie das Auswahl-Kontrollkästchen für ein Zeilenelement aus, um weitere Optionen anzuzeigen, z. B. die Option, es aus dem Auftrag zu löschen oder es in der Sites-Konsole anzuzeigen.
 
    ![Optionen für Übersetzungsaufträge](assets/translation-job-options.png)
 
@@ -208,15 +208,15 @@ So fügen Sie einem Übersetzungsauftrag Inhalte hinzu:
 
 >[!TIP]
 >
->Der Pfad-Browser ist ein leistungsstarkes Tool, mit dem Sie Inhalte suchen, filtern und darin navigieren können. Wählen Sie die **Nur Inhalt/Filter** Schaltfläche zum Umschalten des Seitenbereichs und Einblenden erweiterter Filter wie **Änderungsdatum** oder **Übersetzungsstatus**.
+>Der Pfad-Browser ist ein leistungsstarkes Tool, mit dem Sie Inhalte suchen, filtern und darin navigieren können. Wählen Sie die Schaltfläche **Nur Inhalt/Filter** zum Umschalten des Seitenbereichs und zum Einblenden erweiterter Filter wie **Änderungsdatum** oder **Übersetzungsstatus**.
 >
 >Weitere Informationen zum Pfad-Browser finden Sie im [Abschnitt mit zusätzlichen Ressourcen](#additional-resources).
 
-Sie können die vorherigen Schritte verwenden, um den erforderlichen Inhalt zu allen Sprachen (Aufträgen) für das Projekt hinzuzufügen. Nachdem Sie den gesamten Inhalt ausgewählt haben, können Sie mit der Übersetzung beginnen.
+Sie können die vorherigen Schritte verwenden, um die erforderlichen Inhalte zu allen Sprachen (Aufträgen) für das Projekt hinzuzufügen. Nachdem Sie alle Inhalte ausgewählt haben, können Sie mit der Übersetzung beginnen.
 
 Normalerweise beginnt der Inhalt des Übersetzungsauftrags im Status **Entwurf**, wie in der Spalte **Status** im Fenster **Übersetzungsauftrag** angegeben.
 
-Um den Übersetzungsauftrag zu starten, kehren Sie zur Übersichtsübersicht des Übersetzungsprojekts zurück und wählen Sie oben in der **Übersetzungsauftrag** Karte und wählen Sie **Starten**.
+Um den Übersetzungsauftrag zu starten, kehren Sie zur Übersicht des Übersetzungsprojekts zurück und wählen Sie die Pfeil-Schaltfläche oben in der Karte **Übersetzungsauftrag** und dann **Starten** aus.
 
 ![Übersetzungsauftrag starten](assets/start-translation-job.png)
 
@@ -234,17 +234,17 @@ Maschinelle Übersetzungen werden automatisch mit dem Status **Genehmigt** zurü
 >
 >Wenn Sie die Projektoption **Launch nach Weiterleitung löschen** nicht deaktiviert haben, wie [im vorherigen Abschnitt beschrieben,](#using-translation-project) erscheinen übersetzte Elemente mit dem Status **Gelöscht**. Dies ist normal, da AEM die Übersetzungseinträge automatisch verwirft, sobald die übersetzten Elemente eintreffen. Die übersetzten Elemente wurden als Sprachkopien importiert, nur die Übersetzungseinträge wurden gelöscht, da sie nicht mehr benötigt werden.
 >
->Machen Sie sich keine Gedanken, wenn das unklar ist. Dies sind ausführliche Details, wie AEM funktioniert und beeinflussen nicht Ihr Verständnis der Tour. Wenn Sie genauer erfahren möchten, wie AEM Übersetzungen verarbeitet, lesen Sie [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Artikels.
+>Machen Sie sich keine Gedanken, wenn das unklar ist. Dies sind ausführliche Details, wie AEM funktioniert und beeinflussen nicht Ihr Verständnis der Tour. Wenn Sie mehr darüber erfahren möchten, wie AEM Übersetzungen verarbeitet, lesen Sie den Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Artikels.
 
 ## Überprüfen übersetzter Inhalte {#reviewing}
 
-[Wie bereits erwähnt,](#using-translation-project) fließen maschinell übersetzte Inhalte mit dem Status **Genehmigt** zurück in AEM, da davon ausgegangen wird, dass aufgrund der maschinellen Übersetzung kein menschliches Eingreifen erforderlich ist. Es ist jedoch weiterhin möglich, den übersetzten Inhalt zu überprüfen.
+[Wie bereits erwähnt,](#using-translation-project) fließen maschinell übersetzte Inhalte mit dem Status **Genehmigt** zurück in AEM, da davon ausgegangen wird, dass aufgrund der maschinellen Übersetzung kein menschliches Eingreifen erforderlich ist. Es ist jedoch noch möglich, die übersetzten Inhalte zu überprüfen.
 
 Wechseln Sie einfach zum abgeschlossenen Übersetzungsauftrag und wählen Sie ein Zeilenelement aus, indem Sie auf das Kontrollkästchen tippen oder klicken. Das Symbol **Vorschau in Sites** wird in der Symbolleiste angezeigt.
 
 ![In Sites einblenden](assets/reveal-in-sites.png)
 
-Wählen Sie dieses Symbol aus, um den übersetzten Inhalt in der Konsole zu öffnen und die Details des übersetzten Inhalts anzuzeigen.
+Wählen Sie dieses Symbol, um die übersetzten Inhalte in der Konsole zu öffnen und die Details der übersetzten Inhalte anzuzeigen.
 
 ![Eine übersetzte Seite](assets/translated-page.png)
 
@@ -256,13 +256,13 @@ Ziel des Projekts ist es, alle Ressourcen, die mit einer Übersetzung verbunden 
 /content/<your-project>/es
 ```
 
-Wenn Sie über zu diesem Ordner navigieren **Navigation** > **Sites**, sehen Sie den übersetzten Inhalt.
+Wenn Sie über **Navigation** > **Sites** zu diesem Ordner wechseln, sehen Sie die übersetzten Inhalte.
 
 ![Struktur von Ordnern mit übersetzten Inhalten](assets/translated-sites-content.png)
 
 Das AEM-Übersetzungs-Framework erhält die Übersetzungen vom Übersetzungs-Connector und erstellt dann automatisch die Inhaltsstruktur basierend auf dem Sprachstamm und unter Verwendung der vom Connector bereitgestellten Übersetzungen.
 
-Es ist wichtig zu verstehen, dass diese Inhalte nicht veröffentlicht werden und daher nicht für den Verbrauch verfügbar sind. Sie erfahren mehr über diese Autoren- und Veröffentlichungsstruktur und erfahren, wie Sie unsere übersetzten Inhalte im nächsten Schritt der Übersetzungs-Journey veröffentlichen.
+Es ist wichtig zu verstehen, dass diese Inhalte nicht veröffentlicht werden und daher nicht für den Verbrauch verfügbar sind. Im nächsten Schritt der Übersetzungs-Journey lernen Sie diese Author-/Publish-Struktur kennen und erfahren, wie Sie die übersetzten Inhalte veröffentlichen.
 
 ## Menschliche Übersetzung {#human-translation}
 
@@ -278,7 +278,7 @@ Nachdem Sie nun diesen Teil der AEM Sites-Übersetzungs-Tour abgeschlossen haben
 * Neue Übersetzungsprojekte erstellen können.
 * Ihre Inhalte mithilfe von Übersetzungsprojekten übersetzen können.
 
-Machen Sie sich mit diesem Wissen vertraut und fahren Sie mit Ihrer AEM Sites-Übersetzungs-Journey fort, indem Sie das Dokument erneut überprüfen. [Übersetzten Inhalt veröffentlichen](publish-content.md) Hier erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und diese Übersetzungen aktualisieren können, wenn sich Ihr Sprachstamm ändert.
+Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Sites-Übersetzungs-Journey fort, indem Sie als Nächstes das Dokument [Veröffentlichen von übersetzten Inhalten](publish-content.md) lesen, in dem Sie lernen, wie Sie Ihre übersetzten Inhalte veröffentlichen und wie Sie diese Übersetzungen aktualisieren, wenn sich Ihr Sprachstamminhalt ändert.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

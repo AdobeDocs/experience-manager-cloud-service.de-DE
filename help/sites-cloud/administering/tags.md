@@ -5,63 +5,63 @@ exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2200'
-ht-degree: 4%
+ht-degree: 95%
 
 ---
 
 # Verwalten von Tags {#administering-tags}
 
-Tags sind eine intuitive Methode zur Klassifizierung Ihres Inhalts. Sie können als Keywords oder Beschriftungen (Metadaten) betrachtet werden, mit denen Inhalte schneller gefunden werden können.
+Tags sind eine intuitive Methode zur Klassifizierung Ihrer Inhalte. Sie fungieren wie Schlüsselwörter oder Beschriftungen (Metadaten), mit denen Inhalte schneller gefunden werden können.
 
-In Adobe Experience Manager (AEM) kann ein Tag eine Eigenschaft von sein:
+Bei Adobe Experience Manager (AEM) kann ein Tag die Eigenschaft sein von:
 
-* Ein Inhaltsknoten für eine Seite
-   * Siehe Dokument . [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md) für weitere Informationen.
-* Ein Metadatenknoten für ein Asset
-   * Siehe Dokument . [Verwalten von Metadaten für digitale Assets](/help/assets/manage-metadata.md) für weitere Informationen.
+* Einem Inhaltsknoten für eine Seite
+   * Weitere Informationen finden Sie im Dokument . [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md).
+* Einem Metadatenknoten für ein Asset
+   * Weitere Informationen finden Sie im Dokument . [Verwalten von Metadaten für digitale Assets](/help/assets/manage-metadata.md).
 
 >[!TIP]
 >
->Es empfiehlt sich, die Anzahl der Tags zu minimieren, die sich auf dieselben Ideen beziehen. Wenn Sie z. B. Inhalte für einen Outdoor-Speicher verwalten, benötigen Sie wahrscheinlich kein -Tag für **Schuhe** und **Schuhe**.
+>Es empfiehlt sich, die Anzahl der Tags zu minimieren, die sich auf dieselben Ideen beziehen. Beispielsweise benötigen Sie zur Verwaltung des Inhalts eines Lagers mit Outdoor-Produkten wahrscheinlich kein Tag für **Fußbekleidung** und ein anderes für **Schuhe**.
 
 ## Tag-Funktionen {#tag-features}
 
-Tags bieten zuverlässige Funktionen für die Organisation und Verwaltung von Inhalten.
+Tags bieten zuverlässige Funktionen zur Organisation und Verwaltung von Inhalten.
 
 * Tags können in verschiedene Namespaces gruppiert werden.
-   * Namespaces können als Hierarchien betrachtet werden, die die Erstellung von Taxonomien ermöglichen.
-   * Diese Taxonomien sind AEM global.
-* Tags können von Autoren angewendet und von Site-Besuchern verwendet werden.
-* Unabhängig vom Ersteller werden alle Arten von Tags zur Auswahl bereitgestellt, sowohl bei der Zuweisung zu einer Seite als auch bei der Suche.
-* Tags werden von der [Listenkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=de) um dynamische Listen basierend auf den ausgewählten Tags zu generieren.
+   * Namespaces können als Hierarchien zur Erstellung von Taxonomien betrachtet werden.
+   * Diese Taxonomien gelten für das gesamte AEM-System.
+* Tags können von Autorinnen bzw. Autoren und Website-Besuchern verwendet werden.
+* Unabhängig davon, wer die Tags erstellt hat, stehen alle Arten von Tags zur Verfügung, um sie einer Seite hinzuzufügen oder wenn man die Tags durchsucht.
+* Tags werden von der [Listenkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=de) zum Generieren dynamischer Listen basierend auf den ausgewählten Tags verwendet.
 
-## Tag-Anforderungen {#requirements}
+## Tag-Voraussetzungen {#requirements}
 
 Beim Erstellen und Verwalten von Tags sind einige technische Details zu beachten.
 
 * Tags müssen innerhalb eines bestimmten Namespace eindeutig sein.
 * Der Name eines Tags darf keine Tag-Trennzeichen enthalten:
-   * Doppelpunkt (`:`) - Trennt das Namespace-Tag
-   * Schrägstrich (`/`) - Trennt Untertags
-* Wenn der Titel eines Tags Tag-Trennzeichen enthält, werden diese in der Benutzeroberfläche unterdrückt.
-* Tags können erstellt und ihre Taxonomie kann von Mitgliedern der `tag-administrators` -Gruppe und -Mitgliedern mit Änderungsrechten für `/content/cq:tags`.
-   * Ein Tag, das untergeordnete Tags enthält, wird als Container-Tag bezeichnet.
-   * Ein Tag, das kein Container-Tag ist, wird als Leaf-Tag bezeichnet.
-   * Ein Tag-Namespace kann entweder ein Leaf-Tag oder ein Container-Tag sein.
+   * Doppelpunkt (`:`) – Trennzeichen bei Namespace-Tags
+   * Schrägstrich (`/`) – Trennzeichen bei untergeordneten Tags
+* Wenn der Titel eines Tags Tag-Trennzeichen enthält, werden diese in der UI unterdrückt.
+* Mitglieder der Gruppe `tag-administrators` und Mitglieder, die Bearbeitungsrechte für `/content/cq:tags` haben, können Tags erstellen und ihre Klassifikationsschemata ändern.
+   * Ein Tag, das untergeordnete Tags enthält, bezeichnet man als Container-Tag.
+   * Ein Tag, das kein Container-Tag ist, wird Leaf-Tag genannt.
+   * Ein Tag-Namespace ist entweder ein Leaf-Tag oder ein Container-Tag.
 
 Weitere technische Details zur Funktionsweise von Tags finden Sie unter [AEM-Tagging-Framework](/help/implementing/developing/introduction/tagging-framework.md).
 
 ## Tagging-Konsole {#tagging-console}
 
-Die Tagging-Konsole wird zum Erstellen und Verwalten von Tags und deren Taxonomien verwendet. Sie können die Tagging-Konsole wie folgt verwenden, um Ihre Tags zu verwalten:
+Über die Tagging-Konsole können Sie Tags und ihre Klassifikationsschemen erstellen und verwalten. Sie können die Tagging-Konsole wie folgt verwenden, um Ihre Tags wie folgt zu verwalten:
 
-* Gruppieren Sie sie in Namespaces.
-* Überprüfen Sie die Verwendung vorhandener Tags, bevor Sie neue erstellen.
-* Neuorganisation der Tags, ohne die Verbindung zwischen dem Tag und dem aktuell referenzierten Inhalt zu trennen.
+* Gruppieren in Namespaces.
+* Überprüfen der Verwendung vorhandener Tags, bevor neue erstellt werden.
+* Neuorganisation der Tags, ohne die Verbindung zwischen dem Tag und dem Inhalt, auf den aktuell verwiesen wird, zu trennen.
 
 So greifen Sie auf die Tagging-Konsole zu:
 
-1. Melden Sie sich in einer Authoring-Umgebung mit Administratorrechten an.
+1. Melden Sie sich bei der Authoring-Umgebung mit Administratorberechtigungen an.
 1. Wählen Sie im globalen Navigationsmenü die Option **`Tools`** > **`General`** >
    **`Tagging`**.
 
@@ -71,31 +71,31 @@ So greifen Sie auf die Tagging-Konsole zu:
 
 Es gibt mehrere Schritte zum Erstellen und Verwenden von Tags zum Organisieren Ihrer Inhalte.
 
-1. [Erstellen eines Namespace für Ihre Tags](#creating-namespaces) (oder wählen Sie eine vorhandene, die wiederverwendet werden soll).
+1. [Erstellen Sie einen Namespace für Ihre Tags](#creating-namespaces) (oder wählen Sie einen vorhandenen, der wiederverwendet werden soll).
 1. [Erstellen Sie ein neues Tag.](#creating-tags)
 1. [Veröffentlichen Sie das Tag.](#publishing-tags)
 
 ### Erstellen von Namespaces {#creating-namespaces}
 
-Zum Organisieren anderer Tags wird ein Namespace verwendet. Sie kann als Tag der untersten Ebene betrachtet werden und wird normalerweise zum Gruppieren anderer Tags verwendet.
+Ein Namespace wird zum Organisieren anderer Tags verwendet. Er kann als Tag der untersten Ebene betrachtet werden und wird normalerweise zum Gruppieren anderer Tags verwendet.
 
-1. Um einen Namespace zu erstellen, öffnen Sie die [Tagging-Konsole](#tagging-console) und wählen Sie die **Erstellen** in der Symbolleiste und **Namespace erstellen**.
+1. Um einen Namespace zu erstellen, öffnen Sie die [Tagging-Konsole](#tagging-console) und wählen Sie die Schaltfläche **Erstellen** in der Symbolleiste und dann **Namespace erstellen** aus.
 
-   ![Dialogfeld &quot;Namespace hinzufügen&quot;](/help/sites-cloud/administering/assets/add-namespace.png)
+   ![Dialogfeld „Namespace hinzufügen“](/help/sites-cloud/administering/assets/add-namespace.png)
 
 1. Geben Sie die folgenden Informationen ein.
 
-   * **Titel** - Ein Titel für den Namespace, der dem Benutzer in der Benutzeroberfläche angezeigt wird (optional)
-   * **Name** - Wenn kein Name angegeben ist, wird ein gültiger Knotenname aus dem **Titel**. Siehe Dokument . [AEM-Tagging-Framework](/help/implementing/developing/introduction/tagging-framework.md#tagid) für weitere Informationen.
-   * **Beschreibung** - Beschreibung des Namespace (optional)
+   * **Titel** – Ein Titel für den Namespace, der den Benutzenden in der Benutzeroberfläche angezeigt wird (optional)
+   * **Name** – Wenn kein Name angegeben ist, wird ein gültiger Knotenname aus dem **Titel** erstellt. Weitere Informationen finden Sie im Dokument [AEM-Tagging-Framework](/help/implementing/developing/introduction/tagging-framework.md#tagid).
+   * **Beschreibung** – Eine Beschreibung des Namespace (optional).
 
-1. Wählen Sie nach Eingabe der erforderlichen Informationen die Option **Erstellen**.
+1. Wählen Sie nach Eingabe der erforderlichen Informationen die Option **Erstellen** aus.
 
 Der Namespace wird erstellt. In der Tagging-Konsole befinden sich die Namespaces auf der untersten Ebene (in der Spalte ganz links in der Konsole) und werden durch Ordnersymbole dargestellt, die ihre Art als &quot;Container&quot;oder Gruppierung anderer Tags widerspiegeln.
 
-Sie können jetzt [Erstellen neuer Tags](#creating-tags) in diesem Namespace oder [vorhandene Tags verwalten.](#managing-tags)
+Sie können in diesem Namespace jetzt [neue Tags erstellen](#creating-tags) oder [vorhandene Tags verwalten.](#managing-tags)
 
-Ein Namespace muss keine Unter-Tags enthalten. Da ein Namespace selbst ein Tag ist, kann er zur Organisation Ihres Inhalts wie jedes andere Tag verwendet werden. Um jedoch mit der Erstellung einer strukturierten Tagging-Taxonomie fortzufahren, können Sie [Untertags erstellen](#creating-tags) in diesem Namespace basierend auf Ihren Projektanforderungen.
+Ein Namespace darf keine Unter-Tags enthalten. Da ein Namespace selbst ein Tag ist, kann er wie jedes andere Tag zur Organisation Ihrer Inhalte verwendet werden. Um jedoch mit der Erstellung einer strukturierten Tagging-Taxonomie fortzufahren, können Sie in diesem Namespace basierend auf Ihren Projektanforderungen [Unter-Tags erstellen](#creating-tags).
 
 ### Erstellen von Tags {#creating-tags}
 
@@ -105,47 +105,47 @@ Tags werden im Allgemeinen zu Namespaces hinzugefügt.
 
 1. Wählen Sie den Namespace aus, in dem Sie das Tag erstellen möchten. Oder wählen Sie ein anderes Tag aus, um ein untergeordnetes Tag darunter zu erstellen.
 
-1. Wählen Sie die **Erstellen** in der Symbolleiste und **Tag erstellen**.
+1. Wählen Sie die Schaltfläche **Erstellen** in der Symbolleiste und dann **Tag erstellen** aus.
 
-1. Die **Tag erstellen** wird geöffnet. Geben Sie die erforderlichen Informationen für das neue Tag an.
+1. Das Dialogfeld **Tag erstellen** wird geöffnet. Geben Sie die erforderlichen Informationen für das neue Tag an.
 
-   * **Titel** - Ein Anzeigetitel für das Tag (erforderlich)
-   * **Name** - Ein Name für das Tag (erforderlich). Wenn kein Name angegeben ist, wird ein gültiger Knotenname aus dem **Titel**. Siehe [TagID](/help/implementing/developing/introduction/tagging-framework.md#tagid).
-   * **Beschreibung** - Eine Beschreibung des Tags
-   * **Tag-Pfad** - Die Standardeinstellung ist der Namespace (oder das Tag), den Sie in der Tagging-Konsole ausgewählt haben. Dies kann manuell aktualisiert werden, indem Sie auf das Symbol für die Pfadauswahl tippen oder klicken.
+   * **Titel** – Ein Anzeigetitel für das Tag (erforderlich).
+   * **Name** – Ein Name für das Tag (erforderlich). Wenn Sie keinen festlegen, wird ein gültiger Knotenname aus dem **Titel** erstellt. Siehe [TagID](/help/implementing/developing/introduction/tagging-framework.md#tagid).
+   * **Beschreibung** – Eine Beschreibung des Tags.
+   * **Tag-Pfad** – Die Standardeinstellung ist der Namespace (oder das Tag), den bzw. das Sie in der Tagging-Konsole ausgewählt haben. Dies kann manuell aktualisiert werden, indem Sie das Symbol für die Pfadauswahl auswählen.
 
    ![Tag-Dialogfeld erstellen](assets/create-tag.png)
 
-1. Klicken Sie auf **Übermitteln**.
+1. Wählen Sie **Absenden**.
 
 Das Tag wird erstellt und die Konsole wird aktualisiert, um das neue Tag anzuzeigen.
 
 Tags ermöglichen die flexible Erstellung Ihrer eigenen Taxonomie entsprechend Ihren organisatorischen Anforderungen.
 
-* Sie können untergeordnete Tags vorhandener Tags erstellen, indem Sie in der Konsole das übergeordnete Tag auswählen, bevor Sie das neue Tag erstellen.
+* Sie können Tags erstellen, die vorhandenen Tags untergeordnet sind, indem Sie in der Konsole das übergeordnete Tag auswählen, bevor Sie das neue Tag erstellen.
 * Wenn Sie ein Tag erstellen, ohne einen Namespace oder ein anderes Tag auszuwählen, erstellen Sie effektiv einen Namespace.
 
 ### Veröffentlichen von Tags {#publishing-tags}
 
-Genau wie beim Erstellen anderer Inhalte in AEM, existiert dieser nur in der Authoring-Umgebung, nachdem Sie ein Tag (oder einen Namespace) erstellt haben. Damit Ihre Tags Ihren Benutzern zur Verfügung stehen, müssen Sie die Tags veröffentlichen.
+Genau wie beim Erstellen anderer Inhalte in AEM existiert dieser nur in der Authoring-Umgebung, nachdem Sie ein Tag (oder einen Namespace) erstellt haben. Damit Ihre Tags Ihren Benutzenden zur Verfügung stehen, müssen Sie die Tags veröffentlichen.
 
-1. Um ein Tag zu veröffentlichen, öffnen Sie die [Tagging-Konsole.](#tagging-console)
+1. Um ein Tag zu veröffentlichen, öffnen Sie die [Tagging-Konsole](#tagging-console).
 
-1. Wählen Sie die Tags aus, die Sie veröffentlichen möchten, und wählen Sie in der Symbolleiste **Veröffentlichen**.
+1. Wählen Sie die Tags aus, die Sie veröffentlichen möchten, und wählen Sie in der Symbolleiste **Veröffentlichen** aus.
 
    ![Auswählen von Tags in der Konsole](assets/select-tags.png)
 
-1. Die **Veröffentlichungs-Tag** werden Sie aufgefordert, eine Bestätigung zur Veröffentlichung der ausgewählten Tags einzuholen. Auswählen **Veröffentlichen**.
+1. Im Dialogfeld **Veröffentlichungs-Tag** werden Sie aufgefordert, die Veröffentlichung der ausgewählten Tags zu bestätigen. Wählen Sie **Veröffentlichen** aus.
 
    ![Das Bestätigungs-Modal für das Veröffentlichungs-Tag](assets/publish-tag.png)
 
-1. Die Veröffentlichungsaktion wird mit einer **Erfolg** angezeigt.
+1. Die Veröffentlichungsaktion wird mit einem Dialogfeld **Erfolgreich** bestätigt.
 
-   ![Dialogfeld &quot;Tag erfolgreich veröffentlichen&quot;](assets/publish-tag-success.png)
+   ![Dialogfeld „Tag erfolgreich veröffentlicht“](assets/publish-tag-success.png)
 
 Die ausgewählten Tags werden zur Veröffentlichung in die Warteschlange gestellt. Ähnlich wie Seiteninhalte werden nur die ausgewählten Tags veröffentlicht, unabhängig davon, ob sie Unter-Tags aufweisen oder nicht.
 
-Um eine gesamte Taxonomie (einen Namespace und untergeordnete Tags) zu veröffentlichen, empfiehlt es sich, eine [package](/help/implementing/developing/tools/package-manager.md) des Namespace (siehe [Stammknoten der Taxonomie](/help/implementing/developing/introduction/tagging-framework.md#taxonomy-root-node)).
+Um eine vollständige Taxonomie (einen Namespace und untergeordnete Tags) zu veröffentlichen, empfehlen wir, ein [Paket](/help/implementing/developing/tools/package-manager.md) des Namespace zu erstellen (siehe [Taxonomie-Stammknoten](/help/implementing/developing/introduction/tagging-framework.md#taxonomy-root-node)).
 
 <!--
 Be sure to [apply permissions](#setting-tag-permissions) to the namespace before creating the package.
@@ -153,7 +153,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 ## Verwalten von Tags {#managing-tags}
 
-Es gibt verschiedene Aktionen, die Sie zum Verwalten und Organisieren vorhandener Tags und Namespaces ausführen können. Wählen Sie einfach ein Tag oder einen Namespace im [Tagging-Konsole](#tagging-console) um in der Symbolleiste die verfügbaren Aktionen anzuzeigen.
+Es gibt verschiedene Aktionen, die Sie zum Verwalten und Organisieren vorhandener Tags und Namespaces ausführen können. Wählen Sie in der [Tagging-Konsole](#tagging-console) einfach ein Tag oder einen Namespace aus, um die verfügbaren Aktionen in der Symbolleiste anzuzeigen.
 
 * [Eigenschaften anzeigen](#viewing-tag-properties)
 * [Bearbeiten](#editing-tags)
@@ -167,85 +167,85 @@ Wenn in der Symbolleiste ausreichend Speicherplatz zur Verfügung steht, sind zu
 
 ### Anzeigen der Tag-Eigenschaften {#viewing-tag-properties}
 
-Wenn ein einzelnes Tag, Namespace oder ein anderes Tag in der Tagging-Konsole ausgewählt ist, werden in der Spalte links neben der Tag-Spalte grundlegende Details des ausgewählten Tags wie der Zeitpunkt der letzten Bearbeitung und die letzte Veröffentlichung angezeigt.
+Wenn ein einzelnes Tag, ein einzelner Namespace oder ein anderes Tag in der Tagging-Konsole ausgewählt ist, werden in der Spalte links neben der Tag-Spalte grundlegende Details zum ausgewählten Tag angezeigt, z. B. der Zeitpunkt der letzten Bearbeitung und Veröffentlichung.
 
-![Spalte &quot;Tag-Details&quot;](assets/tag-details-column.png)
+![Spalte mit Tag-Details](assets/tag-details-column.png)
 
-Sie können weitere Details zum Tag anzeigen, einschließlich der letzten Veröffentlichung und des Zeitpunkts durch Umschalten der Konsole auf **Eigenschaften** anzeigen.
+Sie können weitere Details zum Tag anzeigen, darunter wer die letzte Veröffentlichung durchgeführt hat und wann, indem Sie in die Ansicht **Eigenschaften** der Konsole wechseln.
 
-1. Um die Eigenschaften eines Tags anzuzeigen, öffnen Sie die [Tagging-Konsole.](#tagging-console)
+1. Um die Eigenschaften eines Tags anzuzeigen, öffnen Sie die [Tagging-Konsole](#tagging-console).
 
-1. Wählen Sie das Tag aus, dessen Eigenschaften Sie anzeigen möchten, und wählen Sie in der linken Leiste die Option **Eigenschaften**.
+1. Wählen Sie das Tag, dessen Eigenschaften angezeigt werden sollen, und dann in der linken Leiste die Option **Eigenschaften** aus.
 
-   ![Eigenschaftenansicht auswählen](assets/view-tag-properties.png)
+   ![Auswählen der Ansicht „Eigenschaften“](assets/view-tag-properties.png)
 
 1. Die detaillierten Eigenschaften des ausgewählten Tags werden in der linken Leiste angezeigt.
 
-   ![Anzeigen von Tag-Eigenschaften](assets/tag-properties.png)
+   ![Anzeigen der Tag-Eigenschaften](assets/tag-properties.png)
 
-Weitere Informationen zum Auswählen von Anzeigemodi und der Leiste finden Sie unter [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Weitere Informationen zum Auswählen der Anzeigemodi und Leiste finden Sie unter [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 ### Bearbeiten von Tags {#editing-tags}
 
-Tags und Namespaces können nach der Erstellung bearbeitet werden.
+Tags und Namespaces können nach dem Erstellen bearbeitet werden.
 
-1. Um ein Tag zu bearbeiten, öffnen Sie die [Tagging-Konsole.](#tagging-console)
+1. Um ein Tag zu bearbeiten, öffnen Sie die [Tagging-Konsole](#tagging-console).
 
-1. Wählen Sie das zu bearbeitende Tag aus und wählen Sie in der Symbolleiste **Bearbeiten**.
+1. Wählen Sie das zu bearbeitende Tag und dann in der Symbolleiste die Option **Bearbeiten** aus.
 
-1. Nehmen Sie die gewünschten Änderungen vor. Es ist möglich, Folgendes zu ändern:
+1. Nehmen Sie die gewünschten Änderungen vor. Folgendes kann geändert werden:
 
    * **Titel**
    * **Beschreibung**
    * [**Lokalisierung**](#managing-tags-in-different-languages)
 
-1. Nachdem Sie die Änderungen vorgenommen haben, wählen Sie **Einsenden**.
+1. Wenn Sie die Änderungen vorgenommen haben, wählen Sie die Option **Absenden** aus.
 
 Detaillierte Informationen zum Hinzufügen von Übersetzungen finden Sie im Abschnitt [Verwalten von Tags in verschiedenen Sprachen](#managing-tags-in-different-languages).
 
-Wenn die von Ihnen vorgenommenen Änderungen an einem bereits veröffentlichten Tag vorgenommen wurden, sollten Sie [erneut veröffentlichen.](#publishing-tags)
+Wenn die von Ihnen vorgenommenen Änderungen an einem bereits veröffentlichten Tag vorgenommen wurden, sollten Sie [es erneut veröffentlichen](#publishing-tags).
 
 ### Rückgängigmachen der Veröffentlichung {#unpublishing-tags}
 
-Um das Tag in Ihrer Autoreninstanz zu deaktivieren und es aus Ihrer Veröffentlichungsinstanz zu entfernen, können Sie die Veröffentlichung rückgängig machen.
+Um das Tag in Ihrer Autoreninstanz zu deaktivieren und es aus Ihrer Veröffentlichungsinstanz zu entfernen, können Sie seine Veröffentlichung aufheben.
 
-1. Um die Veröffentlichung eines Tags rückgängig zu machen, öffnen Sie die [Tagging-Konsole.](#tagging-console)
+1. Um die Veröffentlichung eines Tags aufzuheben, öffnen Sie die [Tagging-Konsole](#tagging-console).
 
-1. Wählen Sie die Tags aus, deren Veröffentlichung Sie rückgängig machen möchten, und wählen Sie in der Symbolleiste **Veröffentlichung rückgängig machen**.
+1. Wählen Sie die Tags, deren Veröffentlichung aufgehoben werden soll, und dann in der Symbolleiste die Option **Veröffentlichung aufheben** aus.
 
    ![Auswählen von Tags in der Konsole](assets/select-tags.png)
 
-1. Die **Veröffentlichung des Tags rückgängig machen** werden Sie aufgefordert, eine Bestätigung zur Veröffentlichung der ausgewählten Tags einzuholen. Auswählen **Veröffentlichen**.
+1. Über das Dialogfeld zum **Aufheben der Tag-Veröffentlichung** werden Sie aufgefordert, den Vorgang für die ausgewählten Tags zu bestätigen. Wählen Sie **Veröffentlichung aufheben** aus.
 
-   ![Das Bestätigungs-Modal für das Veröffentlichungs-Tag](assets/unpublish-tag.png)
+   ![Das Bestätigungsmodal für „Aufheben der Tag-Veröffentlichung“](assets/unpublish-tag.png)
 
-1. Die Aktion zum Rückgängigmachen der Veröffentlichung wird mit einem **Erfolg** angezeigt.
+1. Die Aktion zum Aufheben der Veröffentlichung wird mit einem Dialogfeld **Erfolg** bestätigt.
 
-   ![Dialogfeld &quot;Tag erfolgreich veröffentlichen&quot;](assets/unpublish-tag-success.png)
+   ![Dialogfeld „Erfolg“ beim Aufheben der Tag-Veröffentlichung ](assets/unpublish-tag-success.png)
 
-Die ausgewählten Tags werden zum Rückgängigmachen der Veröffentlichung in die Warteschlange gestellt. Wenn das ausgewählte Tag ein Container-Tag ist, werden alle untergeordneten Tags in der Autorenumgebung deaktiviert und aus der Veröffentlichungsumgebung entfernt.
+Die ausgewählten Tags werden zum Aufheben der Veröffentlichung in die Warteschlange gestellt. Wenn es sich bei dem ausgewählten Tag um ein Container-Tag handelt, werden auch alle zugehörigen untergeordneten Tags in der Autorenumgebung deaktiviert und aus der Veröffentlichungsumgebung entfernt.
 
-### Anzeigen von Tag-Referenzen {#viewing-tag-references}
+### Anzeigen von Tag-Verweisen {#viewing-tag-references}
 
-Es kann nützlich sein, zu sehen, auf welchen Inhalt ein bestimmtes Tag angewendet wird. Verwenden Sie dazu die **Verweise** in der Tagging-Konsole angezeigt.
+Es kann nützlich sein, zu sehen, auf welchen Inhalt ein bestimmtes Tag angewendet wird. Verwenden Sie dazu die Ansicht **Verweise** in der Tagging-Konsole.
 
-1. Um die Verweise eines Tags anzuzeigen, öffnen Sie die [Tagging-Konsole.](#tagging-console)
+1. Um die Verweise eines Tags anzuzeigen, öffnen Sie die [Tagging-Konsole](#tagging-console).
 
-1. Wählen Sie das Tag aus, dessen Referenzen Sie anzeigen möchten, und wählen Sie in der linken Leiste die Option **Verweise**.
+1. Wählen Sie das Tag, deren Verweise angezeigt werden sollen, und dann in der linken Leiste die Option **Verweise** aus.
 
-   ![Eigenschaftenansicht auswählen](assets/view-tag-references.png)
+   ![Auswählen der Ansicht „Eigenschaften“](assets/view-tag-references.png)
 
 1. Die Gesamtzahl der Verweise für das ausgewählte Tag wird in der linken Leiste angezeigt.
 
    ![Anzeigen von Tag-Verweisen](assets/tag-references.png)
 
-1. Wählen Sie die Anzahl der Tag-Verweise aus, um die detaillierte Liste der dem Tag zugewiesenen Inhalte anzuzeigen.
+1. Wählen Sie die Anzahl der Tag-Verweise aus, um eine detaillierte Liste der dem Tag zugewiesenen Inhalte anzuzeigen.
 
-   ![Anzeigen der Details der Verweise des Tags](assets/tag-references-detail.png)
+   ![Anzeigen der Details der Tag-Verweise](assets/tag-references-detail.png)
 
 Bewegen Sie die Maus oder wählen Sie einen verweisenden Inhalt in der Liste aus, um den vollständigen Pfad des Inhalts anzuzeigen.
 
-Weitere Informationen zum Auswählen von Anzeigemodi und der Leiste finden Sie unter [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Weitere Informationen zum Auswählen der Anzeigemodi und über die Leiste finden Sie unter [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 ### Verschieben von Tags {#moving-tags}
 
@@ -253,66 +253,66 @@ Es kann erforderlich sein, Ihre Tagging-Taxonomie zu bereinigen oder anderweitig
 
 >[!TIP]
 >
->Es ist Best Practice, dass nur Administratoren das Verschieben und Umbenennen von Tags zulassen.
+>Es ist Best Practice, dass nur Admins Tags verschieben und umbenennen dürfen.
 
-1. Um ein Tag zu verschieben oder umzubenennen, öffnen Sie die [Tagging-Konsole.](#tagging-console)
+1. Um ein Tag zu verschieben oder umzubenennen, öffnen Sie die [Tagging-Konsole](#tagging-console).
 
-1. Wählen Sie das Tag aus, das Sie verschieben oder umbenennen möchten, und wählen Sie **Verschieben** in der Symbolleiste.
+1. Wählen Sie das zu verschiebende oder umzubenennende Tag und dann in der Symbolleiste die Option **Verschieben** aus.
 
-1. Im **Tag verschieben** angeben, welche Eigenschaft Sie ändern möchten.
+1. Geben Sie im Dialogfeld **Tag verschieben** an, welche Eigenschaft geändert werden soll.
 
-   * **Umbenennen in** - Der neue Name, den Sie dem Tag geben möchten
-      * Dieses Feld wird vorab mit dem aktuellen Namen des Tags ausgefüllt.
-      * Lassen Sie die Änderungen unverändert, wenn Sie das Tag nur verschieben und nicht umbenennen möchten.
-   * **Verschieben nach** - Wo Sie das Tag verschieben möchten
-      * Dieses Feld wird mit der aktuellen Position des Tags vorausgefüllt.
-      * Lassen Sie die Änderungen unverändert, wenn Sie das Tag nur umbenennen und nicht verschieben möchten.
+   * **Umbenennen in**: Der neue Name, der dem Tag gegeben werden soll.
+      * Dieses Feld wird mit dem aktuellen Namen des Tags vorausgefüllt.
+      * Ändern Sie nichts, wenn das Tag nur verschoben, aber nicht umbenannt werden soll.
+   * **Verschieben nach**: Der Speicherort, an den das Tag verschoben werden soll.
+      * Dieses Feld wird mit dem aktuellen Speicherort des Tags vorausgefüllt.
+      * Ändern Sie nichts, wenn das Tag nur umbenannt, aber nicht verschoben werden soll.
 
    ![Tag verschieben](assets/move-tag.png)
 
-1. Klicken Sie auf **Übermitteln**.
+1. Wählen Sie **Absenden**.
 
-Das Tag wird umbenannt und/oder an die neue Position verschoben. Wenn es sich bei dem ausgewählten Tag um ein Container-Tag handelt, werden beim Verschieben auch die untergeordneten Tags verschoben.
+Das Tag wird umbenannt und/oder an seinen neuen Speicherort verschoben. Wenn es sich bei dem ausgewählten Tag um ein Container-Tag handelt, werden beim Verschieben auch die untergeordneten Tags verschoben.
 
 ### Zusammenführen von Tags {#merging-tags}
 
-Wenn Ihre Tagging-Taxonomie Duplikate oder ähnliche Tags aufweist, kann es nützlich sein, diese Tags zusammenzuführen. Wenn Tag `A` wird in Tag zusammengeführt `B`auf allen Seiten, die mit Tag getaggt sind `A` mit Tag getaggt werden `B` und Tag `A` ist für Autoren nicht mehr verfügbar.
+Wenn Ihre Tagging-Taxonomie Duplikate oder ähnliche Tags aufweist, kann es nützlich sein, diese Tags zusammenzuführen. Wenn Tag `A` mit Tag `B` zusammengeführt wird, werden alle mit Tag `A` gekennzeichneten Seiten mit Tag `B` gekennzeichnet, und Tag `A` steht Autorinnen und Autoren nicht mehr zur Verfügung.
 
-1. Um zwei Tags zusammenzuführen, öffnen Sie die [Tagging-Konsole.](#tagging-console)
+1. Um zwei Tags zusammenzuführen, öffnen Sie die [Tagging-Konsole](#tagging-console).
 
-1. Wählen Sie das Tag aus, das Sie mit einem anderen Tag zusammenführen möchten, und wählen Sie dann **Zusammenführen** in der Symbolleiste.
+1. Wählen Sie das Tag, das mit einem anderen Tag zusammengeführt werden soll, und dann in der Symbolleiste die Option **Zusammenführen** aus.
 
-1. Im **Tag zusammenführen** wählen Sie das **Durchsuchen** des **Zusammenführen in** -Feld, um anzugeben, mit welchem Tag Sie das ausgewählte Tag zusammenführen möchten.
+1. Wählen Sie im Dialogfeld **Tag zusammenführen** das Symbol **Durchsuchen** des Felds **Zusammenführen in** aus, um anzugeben, mit welchem Tag das ausgewählte Tag zusammengeführt werden soll.
 
-   ![Dialogfeld &quot;Tag zusammenführen&quot;](assets/merge-tag.png)
+   ![Dialogfeld „Tag zusammenführen“](assets/merge-tag.png)
 
-1. Klicken Sie auf **Übermitteln**.
+1. Wählen Sie **Absenden**.
 
-Das in der Konsole ausgewählte Tag wird mit dem im Dialogfeld angegebenen Tag zusammengeführt. Wenn ein referenziertes Tag verschoben oder zusammengeführt wird, wird es nicht physisch gelöscht, sodass Verweise beibehalten werden können. Siehe [AEM-Tagging-Framework](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) für weitere Informationen.
+Das in der Konsole ausgewählte Tag wird mit dem im Dialogfeld angegebenen Tag zusammengeführt. Wenn ein referenziertes Tag verschoben oder zusammengeführt wird, wird es nicht physisch gelöscht, sodass Verweise beibehalten werden können. Weitere Informationen finden Sie unter [AEM-Tagging-Framework](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags).
 
 ### Löschen von Tags {#deleting-tags}
 
-Wenn sich Ihre Tagging-Taxonomie ändert und ein Tag oder Namespace überflüssig wird, kann es gelöscht werden.
+Wenn sich Ihre Tagging-Taxonomie ändert und ein Tag oder Namespace nicht mehr benötigt wird, kann das Tag bzw. der Namespace gelöscht werden.
 
-1. Um ein Tag zu löschen, öffnen Sie die [Tagging-Konsole.](#tagging-console)
+1. Um ein Tag zu löschen, öffnen Sie die [Tagging-Konsole](#tagging-console).
 
-1. Wählen Sie das Tag aus, das Sie löschen möchten, und wählen Sie dann **Löschen** in der Symbolleiste.
+1. Wählen Sie das zu löschende Tag und dann in der Symbolleiste die Option **Löschen** aus.
 
-1. Die **Tag löschen** werden Sie aufgefordert, eine Bestätigung zum Löschen der ausgewählten Tags einzuholen. Wählen Sie **Löschen** aus.
+1. Über das Dialogfeld **Tag löschen** werden Sie aufgefordert, den Löschvorgang für das ausgewählte Tag zu bestätigen. Wählen Sie **Löschen** aus.
 
-   ![Das Bestätigungs-Modal Tag löschen](assets/delete-tag.png)
+   ![Das Bestätigungsmodal „Tag löschen“](assets/delete-tag.png)
 
-1. AEM überprüft, ob der Verweis auf das Tag nicht erfolgt.
+1. AEM stellt anhand einer entsprechenden Prüfung sicher, dass nicht auf das Tag verwiesen wird.
 
-   1. Wenn keine Verweise gefunden werden, bittet AEM um eine endgültige Bestätigung zum Löschen. Auswählen **Löschen**
+   1. Wenn keine Verweise gefunden werden, fordert AEM zur endgültigen Bestätigung des Löschvorgangs auf. Wählen Sie **Löschen** aus
 
       ![Keine Verweise gefunden](assets/no-references-found.png)
 
-   1. Wenn Verweise gefunden werden, präsentiert AEM sie und fordert eine endgültige Bestätigung zum Löschen.
+   1. Wenn Verweise gefunden werden, präsentiert AEM diese und fordert zur endgültigen Bestätigung des Löschvorgangs auf.
 
       ![Verweise gefunden](assets/references-found.png)
 
-Die ausgewählten Tags werden gelöscht und dauerhaft aus der Autorenumgebung entfernt. Wenn das Tag veröffentlicht war, wird es auch aus der Veröffentlichungsumgebung entfernt. Wenn das ausgewählte Tag ein Container-Tag ist, werden auch alle untergeordneten Tags entfernt.
+Das ausgewählte Tag wird gelöscht und dauerhaft aus der Autorenumgebung entfernt. Wenn das Tag veröffentlicht war, wird es auch aus der Veröffentlichungsumgebung entfernt. Wenn es sich bei dem ausgewählten Tag um ein Container-Tag handelt, werden alle zugehörigen untergeordneten Tags ebenfalls entfernt.
 
 <!--
 
@@ -351,30 +351,30 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 ## Verwalten von Tags in verschiedenen Sprachen {#managing-tags-in-different-languages}
 
-Die `title` -Eigenschaft eines Tags in mehrere Sprachen übersetzt werden. Nach der Übersetzung kann der entsprechende Tag-Titel entsprechend der Benutzer- oder Inhaltssprache angezeigt werden.
+Die Eigenschaft `title` eines Tags kann in verschiedene Sprachen übersetzt werden. Nach der Übersetzung kann der entsprechende Tag-Titel entsprechend der Benutzer- oder Inhaltssprache angezeigt werden.
 
-Nehmen wir an, wir haben ein Tag namens `Animals` dass wir ins Deutsche und Französisch übersetzen wollen.
+Angenommen, das Tag `Animals` soll ins Deutsche und Französische übersetzt werden.
 
-1. Öffnen Sie die [Tagging-Konsole.](#tagging-console)
+1. Öffnen Sie die [Tagging-Konsole](#tagging-console).
 
-1. Wählen Sie das Tag aus, das Sie übersetzen möchten, und wählen Sie dann **Bearbeiten** in der Symbolleiste.
+1. Wählen Sie das zu übersetzende Tag und dann in der Symbolleiste die Option **Bearbeiten** aus.
 
 1. Im **Tag bearbeiten** im Dialogfeld **Lokalisierung** die Zielsprache, z. B. Deutsch, auswählen.
 
-1. Im **deutsch** das angezeigt wird, geben Sie den übersetzten Titel an.
+1. Geben Sie im angezeigten Feld **Deutsch** den übersetzten Titel an.
 
 1. Wiederholen Sie die beiden vorherigen Schritte für Französisch.
 
    ![Übersetzen von Tag-Titeln](assets/translate-tag.png)
 
-1. Klicken Sie auf **Übermitteln**.
+1. Wählen Sie **Absenden**.
 
-Bei Inhaltsseiten wird die für das Tag ausgewählte Sprache aus der Seitensprache übernommen, sofern verfügbar.
+Für Inhaltsseiten wird die Sprache für das Tag entsprechend der Sprache der Seite ausgewählt, sofern vorhanden.
 
-In der Authoring-Umgebung verwendet AEM jedoch die Benutzerspracheinstellung. In der Tagging-Konsole müssen Sie also für die `Animals` Tag, `Animaux` für einen Benutzer angezeigt, der die Sprache in seinen Benutzereigenschaften auf Französisch setzt.
+In der Authoring-Umgebung verwendet AEM jedoch die benutzerseitige Spracheinstellung. Für Benutzende, die in den Benutzereigenschaften Französisch als Sprache festgelegt haben, wird `Animaux` für das Tag `Animals` in der Tagging-Konsole angezeigt.
 
-Informationen zum Hinzufügen einer neuen Sprache zum Dialogfeld finden Sie im Dokument . [Erstellen von Tags in AEM-Anwendungen](/help/implementing/developing/introduction/tagging-applications.md#adding-a-new-language-to-the-edit-tag-dialog)
+Informationen zum Hinzufügen einer neuen Sprache zum Dialogfeld finden Sie im Dokument [Einbinden von Tagging in AEM-Anwendungen](/help/implementing/developing/introduction/tagging-applications.md#adding-a-new-language-to-the-edit-tag-dialog).
 
 >[!TIP]
 >
->Weitere Informationen zu AEM Lokalisierungsfunktionen finden Sie unter [Übersetzen Ihres Inhalts für mehrsprachige Sites](/help/sites-cloud/administering/translation/overview.md).
+>Weitere Informationen zu AEM-Lokalisierungsfunktionen finden Sie unter [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-cloud/administering/translation/overview.md).

@@ -7,7 +7,7 @@ exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '3960'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ Mithilfe von Übersetzungsprojekten können Sie die Übersetzung von AEM-Inhalte
 
 Wenn einem Übersetzungsprojekt Ressourcen hinzugefügt werden, wird ein Übersetzungsauftrag für sie erstellt. Vorgänge enthalten Befehle und Statusinformationen, mit denen Sie die Workflows für menschliche und maschinelle Übersetzungen verwalten, die für die Ressourcen ausgeführt werden.
 
-Übersetzungsprojekte sind langfristige Elemente, die durch Sprache und Übersetzungsmethode/-anbieter definiert werden, um sie für die Globalisierung an die organisatorische Steuerung anzupassen. Sie sollten einmal initiiert werden, entweder während der Erstübersetzung oder manuell, und dann während der gesamten Aktivitäten zur Aktualisierung von Inhalten und Übersetzungen in Kraft bleiben.
+Übersetzungsprojekte sind langfristige Elemente, die durch Sprache und Übersetzungsmethode/-anbieter definiert werden, um sie für die Globalisierung an die organisatorische Steuerung anzupassen. Sie sollten einmal während der Erstübersetzung oder manuell initiiert werden und so lange gültig bleiben, wie Aktivitäten der Inhalts- und Übersetzungsaktualisierung ausgeführt werden.
 
 Übersetzungsprojekte und -aufträge werden mit Übersetzungsvorbereitungs-Workflows erstellt. Diese Workflows umfassen drei Optionen für die Erstübersetzung (Erstellen und übersetzen) und für Aktualisierungen (Übersetzung aktualisieren):
 
@@ -29,10 +29,10 @@ Wenn einem Übersetzungsprojekt Ressourcen hinzugefügt werden, wird ein Überse
 1. [Zu vorhandenem Projekt hinzufügen](#adding-pages-to-a-translation-project)
 1. [Nur Inhaltsstruktur](#creating-the-structure-of-a-language-copy)
 
-AEM erkennt, ob ein Übersetzungsprojekt für die Erstübersetzung von Inhalten oder für die Aktualisierung bereits übersetzter Sprachkopien erstellt wird. Wenn Sie ein Übersetzungsprojekt für eine Seite erstellen und die Sprachkopien angeben, für die Sie übersetzen möchten, erkennt AEM, ob die Quellseite bereits in den Zielsprachkopien vorhanden ist:
+AEM erkennt, ob ein Übersetzungsprojekt für die Erstübersetzung von Inhalten oder für die Aktualisierung bereits übersetzter Sprachkopien erstellt wird. Wenn Sie ein Übersetzungsprojekt für eine Seite erstellen und die Sprachkopien angeben, die übersetzt werden sollen, erkennt AEM, ob die Quellseite bereits in den Zielsprachkopien vorhanden ist:
 
 * **Die Sprachkopie enthält die Seite nicht:** AEM geht in diesem Fall von einer Erstübersetzung aus. Die Seite wird sofort in die Sprachkopie kopiert und in das Projekt aufgenommen. Wenn die übersetzte Seite in AEM importiert wird, kopiert AEM sie direkt in die Sprachkopie.
-* **Die Sprachkopie enthält bereits die Seite:** AEM geht in diesem Fall davon aus, dass die Übersetzung aktualisiert wird. Ein Launch wird erstellt und eine Kopie der Seite zum Launch hinzugefügt und in das Projekt aufgenommen. Mit Launches können Sie aktualisierte Übersetzungen überprüfen, bevor Sie sie der Sprachkopie zuweisen:
+* **Die Sprachkopie enthält bereits die Seite:** AEM geht in diesem Fall davon aus, dass die Übersetzung aktualisiert wird. Ein Launch wird erstellt und eine Kopie der Seite zum Launch hinzugefügt und in das Projekt aufgenommen. Mithilfe von Launches können Sie aktualisierte Übersetzungen vor dem Einfügen in die Sprachkopie überprüfen:
 
    * Wenn die übersetzte Seite in AEM importiert wird, wird die Seite im Launch überschrieben.
    * Die übersetzte Seite überschreibt die Sprachkopie nur, wenn der Launch weitergeleitet (beworben) wird.
@@ -50,11 +50,11 @@ Beispiel: Der Sprachstamm `/content/wknd/fr` wurde für die französische Übers
 
 Erstellen Sie Übersetzungsprojekte so, dass Sie den Workflow zur Übersetzung der Ressourcen Ihres Sprachstamms ausführen und verwalten können. Wenn Sie Projekte erstellen, legen Sie die Seite im Sprachstamm, die Sie übersetzen wollen, und die Sprachkopien, für die Sie die Übersetzung durchführen wollen, fest:
 
-* Die Cloud-Konfiguration des Übersetzungsintegrations-Frameworks, das mit der ausgewählten Seite verknüpft ist, bestimmt viele Eigenschaften der Übersetzungsprojekte, z. B. den zu verwendenden Übersetzungs-Workflow.
-* Für jede ausgewählte Sprachkopie wird ein Projekt erstellt.
-* Es wird eine Kopie der ausgewählten Seite und der zugehörigen Assets erstellt und jedem Projekt hinzugefügt. Diese Kopien werden später zur Übersetzung an den Übersetzungsanbieter gesendet.
+* Die Cloud-Konfiguration des Frameworks für die Übersetzungsintegration, das mit der ausgewählten Seite verknüpft ist, bestimmt viele Eigenschaften der Übersetzungsprojekte, z. B. die zu verwendenden Übersetzungs-Workflows.
+* Es wird ein Projekt für jede ausgewählte Sprachkopie erstellt.
+* Es wird eine Kopie der ausgewählten Seite und der zugehörigen Assets erstellt und jedem Projekt hinzugefügt. Diese Kopien werden später zum Übersetzen an den Übersetzungsanbieter gesendet.
 
-Sie können festlegen, dass auch die untergeordneten Seiten der ausgewählten Seite ausgewählt werden sollen. In diesem Fall werden jedem Projekt auch die Kopien der untergeordneten Seiten hinzugefügt, sodass sie übersetzt werden. Wenn alle untergeordneten Seiten mit unterschiedlichen Übersetzungsintegrations-Framework-Konfigurationen verknüpft sind, erstellt AEM weitere Projekte.
+Sie können festlegen, dass die untergeordneten Seiten der ausgewählten Seite ebenfalls ausgewählt werden sollen. In diesem Fall werden jedem Projekt auch die Kopien der untergeordneten Seiten hinzugefügt, sodass sie übersetzt werden. Wenn alle untergeordneten Seiten mit unterschiedlichen Übersetzungsintegrations-Framework-Konfigurationen verknüpft sind, erstellt AEM weitere Projekte.
 
 Sie können [Übersetzungsprojekte auch manuell erstellen](#creating-a-translation-project-using-the-projects-console).
 
@@ -81,7 +81,7 @@ Nach dem Übersetzen können Sie [die Übersetzung überprüfen](#reviewing-and-
    ![Verweise](../assets/references.png)
 
 1. Wählen Sie die Option **Sprachkopien** und dann die Sprachkopien aus, für die Sie die Quellseiten übersetzen.
-1. Auswählen **Erstellen und übersetzen** und konfigurieren Sie dann den Übersetzungsauftrag:
+1. Wählen Sie **Erstellen und übersetzen** aus und konfigurieren Sie dann den Übersetzungsauftrag:
 
    * Wählen Sie mithilfe des Dropdown-Menüs **Sprache** eine Sprachkopie aus, für die Sie eine Übersetzung durchführen möchten. Wählen Sie bei Bedarf weitere Sprachen aus. Die in der Liste angezeigten Sprachen entsprechen den [von Ihnen erstellten Sprachstämmen](preparation.md#creating-a-language-root).
       * Wenn Sie mehrere Sprachen auswählen, wird ein Projekt mit einem Übersetzungsauftrag für jede Sprache erstellt.
@@ -103,7 +103,7 @@ Nach dem Übersetzen können Sie [die Übersetzung überprüfen](#reviewing-and-
    ![Verweise](../assets/references.png)
 
 1. Wählen Sie die Option **Sprachkopien** und dann die Sprachkopien aus, für die Sie die Quellseiten übersetzen.
-1. Auswählen **Sprachkopien aktualisieren** und konfigurieren Sie dann den Übersetzungsauftrag:
+1. Wählen Sie **Sprachkopien aktualisieren** aus und konfigurieren Sie dann den Übersetzungsauftrag:
 
    * Wählen Sie zur Übersetzung der von Ihnen ausgewählten Seite und allen untergeordneten Seiten die Option **Alle Unterseiten auswählen** aus. Um nur die von Ihnen ausgewählten Seiten zu übersetzen, wählen Sie diese Option ab.
    * Wählen Sie für **Projekt** **Übersetzungsprojekt(e) erstellen** aus.
@@ -118,9 +118,9 @@ Nach dem Übersetzen können Sie [die Übersetzung überprüfen](#reviewing-and-
 
 Nachdem Sie ein Übersetzungsprojekt erstellt haben, können Sie die Leiste **Ressourcen** verwenden, um Seiten zum Projekt hinzuzufügen. Das Hinzufügen von Seiten ist dann hilfreich, wenn Sie Seiten von verschiedenen Verzweigungen in dasselbe Projekt einfügen.
 
-Wenn Sie einem Übersetzungsprojekt Seiten hinzufügen, werden die Seiten in einen neuen Übersetzungsauftrag einbezogen. Sie können auch [Seiten zu einem vorhandenen Auftrag hinzufügen](#adding-pages-assets-to-a-translation-job).
+Wenn Sie einem Übersetzungsprojekt Seiten hinzufügen, werden die Seiten in einen neuen Übersetzungsauftrag einbezogen. Sie können auch [Seiten zu einem vorhandenen Vorgang hinzufügen](#adding-pages-assets-to-a-translation-job).
 
-Wie beim Erstellen eines Projekts werden beim Hinzufügen von Seiten bei Bedarf Kopien der Seiten zu einem Launch hinzugefügt, um das Überschreiben vorhandener Sprachkopien zu vermeiden. (Siehe [Erstellen von Übersetzungsprojekten für bestehende Sprachkopien](#performing-initial-translations-and-updating-existing-translations).)
+So wie beim Erstellen eines Projekts werden beim Hinzufügen von Seiten bei Bedarf Kopien der Seiten zu einem Launch hinzugefügt, um zu verhindern, dass vorhandene Sprachkopien überschrieben werden. (Siehe [Erstellen von Übersetzungsprojekten für bestehende Sprachkopien](#performing-initial-translations-and-updating-existing-translations).)
 
 1. Verwenden Sie die Sites-Konsole, um die Seite auszuwählen, die Sie den Übersetzungsprojekten hinzufügen.
 
@@ -132,7 +132,7 @@ Wie beim Erstellen eines Projekts werden beim Hinzufügen von Seiten bei Bedarf 
 
    ![Aktualisieren von Sprachkopien aus der Leiste „Verweise“](../assets/update-language-copies-references.png)
 
-1. Auswählen **Sprachkopien aktualisieren** und konfigurieren Sie dann die Eigenschaften:
+1. Wählen Sie **Sprachkopien aktualisieren** aus und konfigurieren Sie dann die Eigenschaften:
 
    * Wählen Sie zur Übersetzung der von Ihnen ausgewählten Seite und allen untergeordneten Seiten die Option **Alle Unterseiten auswählen** aus. Um nur die von Ihnen ausgewählten Seiten zu übersetzen, wählen Sie diese Option ab.
    * Wählen Sie für das **Projekt** die Option **Zu vorhandenem Übersetzungsprojekt hinzufügen** aus.
@@ -142,7 +142,7 @@ Wie beim Erstellen eines Projekts werden beim Hinzufügen von Seiten bei Bedarf 
    >
    >Die im Übersetzungsprojekt festgelegte Sprache muss dem Pfad der Sprachkopie entsprechen, der in der Leiste „Verweise“ angezeigt wird.
 
-1. Auswählen **Aktualisieren**.
+1. Wählen Sie **Aktualisieren** aus.
 
 ### Erstellen der Struktur einer Sprachkopie {#creating-the-structure-of-a-language-copy}
 
@@ -159,14 +159,14 @@ Füllen Sie Ihre Sprachkopie so, dass sie Inhalte aus der Stammsprache enthält,
 
    ![Sprachkopien auswählen](../assets/language-copy-structure-select.png)
 
-1. Auswählen **Sprachkopien aktualisieren** um die Übersetzungs-Tools anzuzeigen und die Eigenschaften zu konfigurieren:
+1. Wählen Sie **Sprachkopien aktualisieren** aus, um die Übersetzungs-Tools anzuzeigen, und konfigurieren Sie die Eigenschaften:
 
    * Wählen Sie die Option **Alle Unterseiten auswählen** aus.
    * Wählen Sie für das **Projekt** die Option **Nur Struktur erstellen** aus.
 
    ![Nur Struktur](../assets/language-copy-structure-only.png)
 
-1. Auswählen **Aktualisieren**.
+1. Wählen Sie **Aktualisieren** aus.
 
 ### Aktualisieren des Translation Memory {#updating-translation-memory}
 
@@ -186,7 +186,7 @@ AEM aktualisiert die Übersetzung der vorhandenen Zeichenfolgen im Translation M
 So verwenden Sie diese Funktion:
 
 * Ein TMS muss für die Verwendung mit AEM konfiguriert werden.
-* Der Connector muss die -Methode implementieren [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
+* Der Connector muss die Methode [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html) implementieren.
    * Der Code innerhalb dieser Methode bestimmt, was mit der Aktualisierungsanfrage für das Translation Memory geschieht.
    * Das AEM-Übersetzungs-Framework sendet die Zeichenfolgenwertpaare (ursprüngliche und aktualisierte Übersetzung) über diese Methodenimplementierung zurück an das TMS.
 
@@ -197,8 +197,8 @@ Die Aktualisierungen des Translation Memory können auch umgeleitet und an ein b
 In der Listenansicht der Sites-Konsole kann eine Eigenschaft ausgewählt werden, die anzeigt, ob eine Seite bereits übersetzt wurde, sich in Übersetzung befindet oder noch nicht übersetzt wurde.
 
 1. Wechseln Sie in der Sites-Konsole zur [Listenansicht](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Select, **Anzeigeeinstellungen** in der Ansicht-Dropdown-Liste.
-1. Überprüfen Sie im Dialogfeld die **Übersetzt** Eigenschaft und wählen Sie **Aktualisieren**.
+1. Wählen Sie **Anzeigeeinstellungen** im Dropdown-Menü „Ansicht“ aus.
+1. Markieren Sie im Dialogfeld die Eigenschaft **Übersetzt** und wählen Sie **Aktualisieren** aus.
 
 Die Sites-Konsole zeigt jetzt die Spalte **Übersetzt** mit dem Übersetzungsstatus der aufgeführten Seiten an.
 
@@ -243,25 +243,25 @@ Wenn Sie ein Übersetzungsprojekt manuell erstellen, müssen Sie neben den [grun
    * Wenn mehrere Sprachen ausgewählt sind, wird für jede Sprache im Projekt ein Auftrag erstellt.
 * **Übersetzungsmethode:** Wählen Sie **Menschliche Übersetzung** aus, um anzugeben, dass die Übersetzung manuell durchgeführt werden soll.
 
-1. Wählen Sie in der Symbolleiste der Projektekonsole die Option **Erstellen**.
-1. Wählen Sie die **Übersetzungsprojekt** Vorlage und wählen Sie **Nächste**.
+1. Wählen Sie in der Symbolleiste der Projektkonsole die Option **Erstellen** aus.
+1. Wählen Sie zunächst die Vorlage **Übersetzungsprojekt** aus und anschließend **Weiter**.
 1. Geben Sie Werte für die Registerkarte der **Basiseigenschaften** ein.
-1. Auswählen **Erweitert** und geben Werte für die übersetzungsbezogenen Eigenschaften an.
-1. Wählen Sie **Erstellen**. Wählen Sie im Bestätigungsfeld **Fertig** , um zur Projektekonsole zurückzukehren, oder wählen Sie **Projekt öffnen** , um das Projekt zu öffnen und zu verwalten.
+1. Wählen Sie **Erweitert** aus und geben Sie Werte für die übersetzungsspezifischen Eigenschaften an.
+1. Wählen Sie **Erstellen** aus. Wählen Sie im Bestätigungsfeld **Fertig** aus, um zur Projektkonsole zurückzukehren, oder **Projekt öffnen**, um das Projekt zu öffnen und mit der Verwaltung des Projekts zu beginnen.
 
 ### Hinzufügen von Seiten und Assets zu einem Übersetzungsauftrag {#adding-pages-assets-to-a-translation-job}
 
 Sie können dem Übersetzungsauftrag Ihres Übersetzungsprojekts Seiten, Assets oder Tags hinzufügen. So fügen Sie Seiten oder Assets hinzu:
 
-1. Wählen Sie am unteren Rand der Kachel Übersetzungsauftrag Ihres Übersetzungsprojekts die Auslassungspunkte aus.
+1. Wählen Sie im Übersetzungsprojekt unten in der Kachel „Übersetzungsauftrag“ die Auslassungspunkte aus.
 
    ![Kachel des Übersetzungsauftrags](../assets/translation-job.png)
 
-1. Wählen Sie im nächsten Fenster die Option **Hinzufügen** in der Symbolleiste und wählen Sie **Assets/Seiten**.
+1. Wählen Sie im nächsten Fenster in der Symbolleiste die Schaltfläche **Hinzufügen** aus und wählen Sie dann **Assets/Seiten** aus.
 
    ![Seiten hinzufügen](../assets/add-to-project.png)
 
-1. Wählen Sie im modalen Fenster das oberste Element des Zweigs aus, den Sie hinzufügen möchten, und wählen Sie dann das Häkchensymbol aus. In diesem Fenster ist die Mehrfachauswahl aktiviert.
+1. Wählen Sie im modalen Fenster das oberste Element der Verzweigung aus, das Sie hinzufügen wollen, und wählen Sie dann das Häkchensymbol aus. In diesem Fenster ist die Mehrfachauswahl aktiviert.
 
    ![Seiten auswählen](../assets/select-pages.png)
 
@@ -269,7 +269,7 @@ Sie können dem Übersetzungsauftrag Ihres Übersetzungsprojekts Seiten, Assets 
 
    ![Suchen nach Inhalten](../assets/search-for-content.png)
 
-1. Wählen Sie nach der Auswahl **Auswählen**. Die Seiten und/oder Assets werden dem Übersetzungsauftrag hinzugefügt.
+1. Wählen Sie anschließend **Auswählen** aus. Die Seiten und/oder Assets werden dem Übersetzungsauftrag hinzugefügt.
 
 >[!TIP]
 >
@@ -283,7 +283,7 @@ Sie können Tags zu einem Übersetzungsprojekt hinzufügen, ähnlich wie Sie [As
 
 Die Eigenschaften des Übersetzungsprojekts sind über die Schaltfläche mit den drei Punkten der Kachel mit der Projektzusammenfassung zugänglich. In den Eigenschaften des Übersetzungsprojekts finden Sie neben den generischen [Projektinformationen](/help/sites-cloud/authoring/projects/overview.md#project-info) auch übersetzungsspezifische.
 
-Wählen Sie in Ihrem Übersetzungsprojekt das Auslassungszeichen unten auf der Kachel Übersetzungszusammenfassung aus. Die meisten projektspezifischen Eigenschaften befinden sich auf der Registerkarte **Erweitert**.
+Wählen Sie in Ihrem Übersetzungsprojekt unten auf der Kachel „Zusammenfassung der Übersetzung“ die Auslassungspunkte aus. Die meisten projektspezifischen Eigenschaften befinden sich auf der Registerkarte **Erweitert**.
 
 * **Ausgangssprache:** Die Sprache der Seiten, die übersetzt werden
 * **Zielsprache:** Die Sprache oder Sprachen, in die die Seiten übersetzt werden
@@ -324,13 +324,13 @@ Die folgende Tabelle beschreibt die einzelnen Status, die ein Auftrag oder ein E
 | **Fehler beim Update** | Beim Übertragen von Dateien zwischen AEM und dem Übersetzungs-Service ist ein Fehler aufgetreten. |
 | **Unbekannter Status** | Ein unbekannter Fehler ist aufgetreten. |
 
-Um den Status jeder Datei im Auftrag anzuzeigen, wählen Sie die Auslassungszeichen am unteren Rand der Kachel aus.
+Wählen Sie die Auslassungspunkte am unteren Rand der Kachel aus, um den Status der einzelnen Dateien im Auftrag anzuzeigen.
 
 ### Festlegen des Fälligkeitsdatums von Übersetzungsaufträgen {#setting-the-due-date-of-translation-jobs}
 
-Geben Sie das Datum an, vor dem Ihr Übersetzungsanbieter übersetzte Dateien zurückgeben muss. Die Festlegung eines Fälligkeitsdatums funktioniert nur dann richtig, wenn der Übersetzungsanbieter diese Funktion unterstützt.
+Geben Sie das Datum an, bis zu dem Ihr Übersetzungsanbieter die übersetzten Dateien liefern muss. Die Festlegung eines Fälligkeitsdatums funktioniert nur dann richtig, wenn der Übersetzungsanbieter diese Funktion unterstützt.
 
-1. Wählen Sie die Auslassungszeichen unten in der Kachel Übersetzungszusammenfassung aus.
+1. Wählen Sie am unteren Rand der Kachel „Zusammenfassung der Übersetzung“ die Auslassungspunkte aus.
 
    ![Kachel „Zusammenfassung der Übersetzung“](../assets/translation-summary-tile.png)
 
@@ -338,11 +338,11 @@ Geben Sie das Datum an, vor dem Ihr Übersetzungsanbieter übersetzte Dateien zu
 
    ![Übersetzungsprojekt-Eigenschaften](../assets/translation-project-properties-basic.png)
 
-1. Klicken Sie auf **Speichern und schließen**.
+1. Wählen Sie **Speichern und schließen**.
 
 ### Berechnen des Umfangs eines Übersetzungsauftrags {#scoping-a-translation-job}
 
-Berechnen Sie den Umfang eines Übersetzungsauftrags, um eine Kostenschätzung für die Übersetzung von Ihrem Übersetzungsdienstleister zu erhalten. Bei der Umfangsberechnung eines Auftrags werden Quelldateien an den Übersetzungsanbieter gesendet, der den Text mit seinem Pool an gespeicherten Übersetzungen (Translation Memory) vergleicht. In der Regel handelt es sich beim Umfang um die Anzahl der zu übersetzenden Wörter.
+Berechnen Sie den Umfang eines Übersetzungsauftrags, um eine Kostenschätzung für die Übersetzung von Ihrem Übersetzungsdienstleister zu erhalten. Bei der Umfangsberechnung eines Auftrags werden Quelldateien an den Übersetzungsanbieter gesendet, der den Text mit seinem Pool an gespeicherten Übersetzungen (dem sogenannten Translation Memory) vergleicht. In der Regel handelt es sich beim Umfang um die Anzahl der zu übersetzenden Wörter.
 
 Wenden Sie sich an Ihren Übersetzungsanbieter, um weitere Informationen zu den Ergebnissen der Umfangsberechnung zu erhalten.
 
@@ -355,8 +355,8 @@ Wenn Sie den Umfang eines Übersetzungsauftrags berechnen, lautet der Status des
 Die Umfangsberechnung funktioniert nur dann richtig, wenn der Übersetzungsanbieter diese Funktion unterstützt.
 
 1. Öffnen Sie in der Projektkonsole das Übersetzungsprojekt.
-1. Wählen Sie im Titel des Übersetzungsauftrags das Menü &quot;Befehle&quot;aus und wählen Sie dann **Anforderungsumfang**.
-1. Wenn sich der Auftragsstatus in **Umfang abgeschlossen**, wählen Sie das Menü &quot;Befehle&quot;aus und klicken Sie dann auf **Umfang anzeigen**.
+1. Wählen Sie im Titel des Übersetzungsauftrags das Befehlsmenü aus und wählen Sie dann **Berechnung anfordern** aus.
+1. Wenn sich der Auftragsstatus in **Berechnung abgeschlossen** ändert, wählen Sie das Befehlsmenü und dann **Berechnung anzeigen** aus.
 
 ### Starten von Übersetzungsaufträgen {#starting-translation-jobs}
 
@@ -365,15 +365,15 @@ Starten Sie einen Übersetzungsauftrag, um die Quellseiten in die Zielsprache zu
 Sie können einen einzelnen Auftrag aus dem Projekt heraus starten.
 
 1. Öffnen Sie in der Projektkonsole das Übersetzungsprojekt.
-1. Wählen Sie auf der Kachel &quot;Übersetzungsauftrag&quot;das Menü &quot;Befehle&quot;aus und wählen Sie dann **Starten**.
-1. Wählen Sie im Aktionsdialogfeld, das den Start der Übersetzung bestätigt, die Option **Schließen**.
+1. Wählen Sie in der Kachel „Übersetzungsauftrag“ zunächst das Befehlsmenü und dann **Starten** aus.
+1. Wählen Sie im Aktionsdialogfeld, das den Start der Übersetzung bestätigt, **Schließen** aus.
 
 Nachdem Sie den Übersetzungsauftrag gestartet haben, wird in der Kachel „Übersetzungsauftrag“ der Status **Übersetzung läuft** angezeigt.
 
 Sie können auch alle Übersetzungsaufträge für ein Projekt starten.
 
 1. Wählen Sie in der Projektkonsole das Übersetzungsprojekt aus.
-1. Wählen Sie in der Symbolleiste **Übersetzungsauftrag(e) starten**.
+1. Wählen Sie in der Symbolleiste **Übersetzungsaufträge starten** aus.
 1. Überprüfen Sie im Dialogfeld die Liste der Aufträge, die gestartet werden sollen, und bestätigen Sie dann mit **Starten** oder brechen Sie mit der Option **Abbrechen** ab.
 
 ### Abbrechen von Übersetzungsaufträgen {#canceling-a-translation-job}
@@ -381,8 +381,8 @@ Sie können auch alle Übersetzungsaufträge für ein Projekt starten.
 Sie können einen Übersetzungsauftrag abbrechen, um den Übersetzungsprozess zu stoppen und den Übersetzungsanbieter daran zu hindern, weitere Übersetzungen durchzuführen. Sie können einen Auftrag abbrechen, wenn der Auftrag den Status **Übersetzung beauftragt** oder **Übersetzung läuft** hat.
 
 1. Öffnen Sie in der Projektkonsole das Übersetzungsprojekt.
-1. Wählen Sie auf der Kachel &quot;Übersetzungsauftrag&quot;das Menü &quot;Befehle&quot;aus und wählen Sie dann **Abbrechen**.
-1. Wählen Sie im Aktionsdialogfeld, das den Abbruch der Übersetzung bestätigt, die Option **OK**.
+1. Wählen Sie in der Kachel „Übersetzungsauftrag“ zunächst das Befehlsmenü und dann **Abbrechen** aus.
+1. Wählen Sie im Dialogfeld „Aktion“, das den Abbruch der Übersetzung bestätigt, **OK** aus.
 
 ### Workflow zum Akzeptieren und Ablehnen {#accept-reject-workflow}
 
@@ -397,7 +397,7 @@ Bei Ablehnung der Inhalte werden diese an den Übersetzungsanbieter zurückgesen
 Schließen Sie einen Übersetzungsauftrag ab, nachdem Sie die übersetzten Dateien vom Anbieter überprüft haben.
 
 1. Öffnen Sie in der Projektkonsole das Übersetzungsprojekt.
-1. Wählen Sie auf der Kachel &quot;Übersetzungsauftrag&quot;das Menü &quot;Befehle&quot;aus und wählen Sie dann **Fertig**.
+1. Wählen Sie in der Kachel „Übersetzungsauftrag“ zunächst das Befehlsmenü und dann **Fertigstellen** aus.
 1. Der Auftrag hat jetzt den Status **Fertig stellen**.
 
 Beim Workflow „Menschliche Übersetzung“ signalisiert der Abschluss einer Übersetzung dem Anbieter, dass der Übersetzungsauftrag erfüllt wurde und er die Übersetzung in seinem Translation Memory speichern sollte.
@@ -405,7 +405,7 @@ Beim Workflow „Menschliche Übersetzung“ signalisiert der Abschluss einer Ü
 Archivieren Sie einen Übersetzungsauftrag, nachdem er abgeschlossen ist und Sie die Auftragsstatusdetails nicht länger einsehen müssen.
 
 1. Öffnen Sie in der Projektkonsole das Übersetzungsprojekt.
-1. Wählen Sie auf der Kachel &quot;Übersetzungsauftrag&quot;das Menü &quot;Befehle&quot;aus und wählen Sie dann **Archivieren**.
+1. Wählen Sie in der Kachel „Übersetzungsauftrag“ zunächst das Befehlsmenü und dann **Archivieren** aus.
 
 Wenn Sie den Auftrag archivieren, wird die Kachel „Übersetzungsauftrag“ aus dem Projekt entfernt.
 
@@ -419,18 +419,18 @@ Wenn Inhalte für eine vorhandene Sprachkopie übersetzt werden, überprüfen Si
 
 ![Auftrag bereit für Überprüfung](../assets/job-ready-for-review.png)
 
-1. Wählen Sie die Seite im Sprach-Master aus und wählen Sie **Verweise**, wählen Sie **Sprachkopien**.
+1. Wählen Sie die Seite zunächst in der Sprachmustervorlage aus, wählen Sie dann **Verweise** und abschließend **Sprachkopien**.
 1. Wählen Sie die zu überprüfende Sprachkopie aus.
 
    ![Sprachkopie bereit für Überprüfung](../assets/language-copy-ready-for-review.png)
 
-1. Auswählen **Launch** , um die Launch-bezogenen Befehle anzuzeigen.
+1. Wählen Sie **Launch** aus, um die Launch-Befehle anzuzeigen.
 
    ![Starten](../assets/language-copy-launch.png)
 
 1. Klicken Sie auf **Seite öffnen**, um die Launch Copy der zu überprüfenden Seite zu öffnen und die Inhalte zu bearbeiten.
 1. Nachdem Sie die Inhalte überprüft und alle notwendigen Änderungen vorgenommen haben, klicken Sie auf **Bewerben**, um die Launch Copy zu bewerben.
-1. Im **Launch bewerben** Seite, geben Sie an, welche Seiten weitergeleitet werden sollen, und wählen Sie **Bewerben**.
+1. Legen Sie auf der Seite **Launch bewerben** fest, welche Seiten beworben werden sollen, und wählen Sie dann **Bewerben** aus.
 
 ### Vergleichen von Sprachkopien {#comparing-language-copies}
 
@@ -448,7 +448,7 @@ So vergleichen Sie Sprachkopien mit dem Sprachstamm:
 
 ## Verschieben oder Umbenennen einer Quellseite {#move-source}
 
-Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), wodurch die Seite nach dem Verschieben erneut übersetzt wird, erstellen Sie eine Sprachkopie basierend auf dem neuen Seitennamen/Speicherort. Die alte Sprachkopie mit dem vorherigen Namen/Speicherort bleibt bestehen.
+Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page) werden muss, wird bei einer erneuten Übersetzung der Seite nach dem Verschieben eine Sprachkopie auf der Basis des neuen Seitennamens/Speicherorts erstellt. Die alte Sprachkopie mit dem vorherigen Namen/Speicherort bleibt bestehen.
 
 Die Best Practice für dieses Szenario ist folgendes Verfahren:
 
@@ -459,20 +459,20 @@ Die Best Practice für dieses Szenario ist folgendes Verfahren:
 
 ## Importieren und Exportieren von Übersetzungsaufträgen {#import-export}
 
-Obwohl AEM mehrere Übersetzungslösungen und -schnittstellen anbietet, ist es auch möglich, Übersetzungsauftragsinformationen manuell zu importieren und zu exportieren.
+Obwohl AEM mehrere Übersetzungslösungen und -schnittstellen bietet, ist es auch möglich, Informationen zu Übersetzungsaufträgen manuell zu im- und exportieren.
 
 ### Exportieren von Übersetzungsaufträgen {#exporting-a-translation-job}
 
 Sie können den Inhalt eines Übersetzungsauftrags herunterladen, um ihn beispielsweise an einen Übersetzungsanbieter zu senden, der nicht über einen Connector mit AEM integriert ist, oder um den Inhalt zu überprüfen.
 
-1. Wählen Sie aus dem Dropdown-Menü der Kachel Übersetzungsauftrag die Option **Export**.
-1. Wählen Sie im Dialogfeld **Exportierte Datei herunterladen** und speichern Sie die Datei gegebenenfalls im Webbrowser-Dialogfeld.
-1. Wählen Sie im Dialogfeld **Schließen**.
+1. Wählen Sie im Dropdown-Menü der Kachel „Übersetzungsauftrag“ **Exportieren** aus.
+1. Wählen Sie im Dialogfeld **Exportierte Datei herunterladen** aus und speichern Sie die Datei ggf. über das Dialogfeld des Webbrowsers.
+1. Wählen Sie im Dialogfeld **Schließen** aus.
 
 ### Importieren von Übersetzungsaufträgen {#importing-a-translation-job}
 
 Sie können übersetzte Inhalte beispielsweise in AEM importieren, wenn Ihr Übersetzungsanbieter sie an Sie sendet, da sie nicht über einen Connector mit AEM integriert sind.
 
-1. Wählen Sie aus dem Dropdown-Menü der Kachel Übersetzungsauftrag die Option **Import**.
+1. Wählen Sie im Dropdown-Menü der Kachel „Übersetzungsauftrag“ **Importieren** aus.
 1. Wählen Sie im Dialogfeld des Webbrowsers die zu importierende Datei aus.
-1. Wählen Sie im Dialogfeld **Schließen**.
+1. Wählen Sie im Dialogfeld **Schließen** aus.

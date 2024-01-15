@@ -1,29 +1,29 @@
 ---
 title: Anpassen von Konsolen
-description: Erfahren Sie mehr über die verschiedenen Optionen, die AEM bietet, um die Konsolen Ihrer Authoring-Instanz anzupassen.
+description: Erfahren Sie mehr über die verschiedenen Optionen, die AEM zum Anpassen der Konsolen Ihrer Autoreninstanz bereitstellt.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '516'
-ht-degree: 11%
+ht-degree: 91%
 
 ---
 
 # Anpassen von Konsolen {#customizing-consoles}
 
-AEM bietet Optionen zum Anpassen der Konsolen (und der [Seitenbearbeitungsfunktionen](/help/implementing/developing/extending/page-authoring.md)) Ihrer Authoring-Instanz.
+AEM bietet Optionen zum Anpassen der Konsolen (und der [Seitenbearbeitungsfunktionen](/help/implementing/developing/extending/page-authoring.md)) Ihrer Autoreninstanz.
 
-## Clientbibliotheken {#clientlibs}
+## Client-Bibliotheken {#clientlibs}
 
-Clientlibs ermöglichen es Ihnen, die Standardimplementierung zu erweitern, um neue Funktionen anzubieten und gleichzeitig Standardfunktionen, -objekte und -methoden wiederzuverwenden. Beim Anpassen mit clientlibs können Sie Ihre eigene clientlib unter erstellen. `/apps.` Beispielsweise kann er den Code enthalten, der für Ihre benutzerdefinierte Komponente erforderlich ist.
+Mit Client-Bibliotheken können Sie die Standardimplementierung um neue Funktionen erweitern und gleichzeitig Standardfunktionen, -objekte und -methoden wiederverwenden. Beim Anpassen mit clientlibs können Sie Ihre eigene clientlib unter erstellen. `/apps.` Beispielsweise kann er den Code enthalten, der für Ihre benutzerdefinierte Komponente erforderlich ist.
 
-Siehe [Verwenden Client-seitiger Bibliotheken auf AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
+Siehe [Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md)
 
 ## Überlagerungen {#overlays}
 
-Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, die unter `/libs` mit Ihrer eigenen benutzerdefinierten Funktionalität unter `/apps`. Beim Erstellen einer Überlagerung ist keine 1:1-Kopie des Originals erforderlich, da [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) ermöglicht die Vererbung.
+Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, Standardfunktionen (in `/libs`) durch Ihre eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die [Sling-Ressourcenzusammenführung](/help/implementing/developing/introduction/sling-resource-merger.md) das Vererben zulässt.
 
-Überlagerungen können auf viele Arten verwendet werden, um Ihre AEM Konsolen zu erweitern. In den folgenden Abschnitten finden Sie verschiedene Beispiele.
+Überlagerungen können auf viele Arten zum Erweitern Ihrer AEM-Konsolen verwendet werden. In den folgenden Abschnitten werden verschieden Beispiele beschrieben.
 
 Siehe auch [Überlagerungen für Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
@@ -39,9 +39,9 @@ Sie können die Standardansicht (Spalte, Karte, Liste) für eine Konsole anpasse
 
    * `/libs/wcm/core/content/sites/jcr:content/views`
 
-   * Der erste Eintrag ist der Standardwert.
+   * Der erste Eintrag ist die Standardeinstellung.
 
-   * Die verfügbaren Knoten korrelieren mit den verfügbaren Anzeigeoptionen:
+   * Die verfügbaren Knoten entsprechen den verfügbaren Anzeigeoptionen:
 
       * `column`
       * `card`
@@ -59,9 +59,9 @@ Sie können die Standardansicht (Spalte, Karte, Liste) für eine Konsole anpasse
 
 ### Hinzufügen einer neuen Aktion zur Symbolleiste {#add-a-new-action-to-the-toolbar}
 
-Sie können eigene Komponenten erstellen und die entsprechenden Client-Bibliotheken für benutzerdefinierte Aktionen einschließen.
+Sie können Ihre eigenen Komponenten einschließlich der entsprechenden Client-Bibliotheken für benutzerdefinierte Aktionen erstellen.
 
-* Sie können beispielsweise eine **Weiterleiten an Social Media** Aktion unter:
+* Erstellen Sie beispielsweise eine Aktion **Weiterleiten an Social Media** unter:
 
    * `/apps/wcm/core/clientlibs/sites/js/socialmedia.js`
 
@@ -73,15 +73,15 @@ Sie können eigene Komponenten erstellen und die entsprechenden Client-Bibliothe
 
    * `content/jcr:content/body/content/header/items/selection/items/socialmedia`
 
-### Beschränken einer Symbolleistenaktion auf eine bestimmte Gruppe {#restrict-a-toolbar-action-to-a-specific-group}
+### Beschränken einer Symbolleisten-Aktion auf eine bestimmte Gruppe {#restrict-a-toolbar-action-to-a-specific-group}
 
-Sie können eine benutzerdefinierte Rendering-Bedingung verwenden, um die Standardaktion zu überlagern und bestimmte Bedingungen vorzuschreiben, die erfüllt sein müssen, bevor sie gerendert wird.
+Sie können die Standardaktion mit einer benutzerdefinierten Render-Bedingung überlagern und bestimmte Bedingungen festlegen, die vor dem Rendern erfüllt sein müssen.
 
-Sie können beispielsweise eine Komponente erstellen, um die Renderbedingungen einer Gruppe entsprechend zu steuern:
+Erstellen Sie beispielsweise eine Komponente zum Steuern der Render-Bedingungen nach Gruppe:
 
 * `/apps/myapp/components/renderconditions/group`
 
-So wenden Sie diese auf die **Site erstellen** Aktion in der Sites-Konsole:
+So wenden Sie diese auf die Aktion **Site erstellen** in der Site-Konsole an:
 
 * `/libs/wcm/core/content/sites`
 
@@ -89,32 +89,32 @@ So wenden Sie diese auf die **Site erstellen** Aktion in der Sites-Konsole:
 
    * `/apps/wcm/core/content/sites`
 
-1. Fügen Sie dann die Rendering-Bedingung für die Aktion hinzu:
+1. Fügen Sie dann die Render-Bedingung für die Aktion hinzu:
 
    * `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-Mithilfe von Eigenschaften auf diesem Knoten können Sie die `groups` definieren, die die spezifische Aktion ausführen dürfen, beispielsweise `administrators`.
+Mithilfe der Eigenschaften auf diesem Knoten können Sie die `groups` definieren, die die spezifische Aktion ausführen dürfen, beispielsweise `administrators`.
 
 ### Anpassen von Spalten in der Listenansicht {#customizing-columns-in-list-view}
 
 So passen Sie die Spalten in der Listenansicht an:
 
-1. Liste der verfügbaren Spalten überlagern
+1. Überlagern Sie die Liste der verfügbaren Spalten.
 
    * Auf dem Knoten:
 
      `/apps/wcm/core/content/common/availablecolumns`
 
-1. Fügen Sie Ihre neuen Spalten hinzu oder entfernen Sie vorhandene.
+1. Fügen Sie die neuen Spalten hinzu oder entfernen Sie vorhandene.
 
-Wenn Sie zusätzliche Daten einfügen möchten, müssen Sie eine [PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) mit `pageInfoProviderType` -Eigenschaft.
+Falls Sie zusätzliche Daten hinzufügen möchten, müssen Sie einen [PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) mit einer Eigenschaft `pageInfoProviderType` schreiben.
 
 >[!NOTE]
 >
 >Diese Funktion ist für Spalten von Textfeldern optimiert. Bei anderen Datentypen ist es möglich, Überlagerungen vorzunehmen `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
 
-### Ressourcen filtern {#filtering-resources}
+### Filtern von Ressourcen {#filtering-resources}
 
-Bei Verwendung einer Konsole muss ein Benutzer häufig aus Ressourcen wie Seiten, Komponenten oder Assets auswählen. Dies kann in Form einer Liste erfolgen, aus der der Autor ein Element auswählen muss.
+Bei Verwendung einer Konsole müssen Benutzende häufig aus Ressourcen wie Seiten, Komponenten oder Assets auswählen. Dabei kann eine Liste verwendet werden, aus der die Autorin bzw. der Autor ein Element auswählen muss.
 
-Um die Liste in einer angemessenen Größe und auch für den Anwendungsfall relevant zu halten, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Siehe [Anpassen der Seitenbearbeitung](/help/implementing/developing/extending/page-authoring.md#filtering-resources) für Details.
+Um die Liste in einer angemessenen Größe und auch für den Anwendungsfall relevant zu halten, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Weitere Details finden Sie unter [Anpassen der Seitenbearbeitung](/help/implementing/developing/extending/page-authoring.md#filtering-resources).

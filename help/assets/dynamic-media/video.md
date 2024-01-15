@@ -341,7 +341,7 @@ VBR benötigt mehr Zeit für die Kodierung, liefert jedoch die besten Ergebnisse
 Verwendung von VBR vs. CRB
 Wenn es um die Auswahl von VBR oder CBR geht, wird für Ihre Mediendateien meist VBR empfohlen. VBR bietet Dateien mit besserer Qualität bei wettbewerbsfähigen Bitraten. Verwenden Sie bei VBR auf jeden Fall eine Kodierung mit zwei Durchgängen und stellen Sie die maximale Bitrate so ein, dass sie 1,5-mal größer ist als die Ziel-Video-Bitrate.
 
-Stellen Sie bei der Auswahl einer Videokodierungsvorgabe sicher, dass Sie die Verbindungsgeschwindigkeit des Zielbenutzers berücksichtigen. Wählen Sie eine Vorgabe mit einer Datenrate, die 80 % dieser Geschwindigkeit beträgt. Wenn die Verbindungsgeschwindigkeit des Zielbenutzers beispielsweise 1000 kBit/s beträgt, ist die beste Vorgabe eine mit einer Videodatenrate von 800 kBit/s.
+Berücksichtigen Sie bei Auswahl einer Videokodierungsvorgabe unbedingt die Verbindungsgeschwindigkeit der Zielgruppenbenutzenden. Wählen Sie eine Vorgabe mit einer Datenrate, die 80 % dieser Geschwindigkeit beträgt. Beispiel: Wenn die Verbindungsgeschwindigkeit der Zielperson 1000 kBit/s beträgt, hat die optimale Vorgabe eine Videodatenrate von 800 kBit/s.
 
 Diese Tabelle enthält die Datenraten von typischen Verbindungsgeschwindigkeiten.
 

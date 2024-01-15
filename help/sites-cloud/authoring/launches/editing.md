@@ -5,7 +5,7 @@ exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '551'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ Wenn ein Launch für eine Seite (oder mehrere Seiten) erstellt wurde, können Si
 1. Rufen Sie [Launches aus Verweisen (Konsole „Sites“)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) auf, um die verfügbaren Aktionen anzuzeigen.
 1. Klicken Sie auf **Zur Seite gehen**, um die Seite zur Bearbeitung zu öffnen.
 
-Beim Bearbeiten der Seite wird in der oberen Symbolleiste zusammen mit der Variablen **Urlaub** und **Navigieren** options:
+Wenn Sie die Seite bearbeiten, sehen Sie einen Hinweis in der oberen Symbolleiste, zusammen mit den Optionen **Verlassen** und **Navigieren**:
 
 ![Launch über den Seiten-Editor verlassen und navigieren](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 

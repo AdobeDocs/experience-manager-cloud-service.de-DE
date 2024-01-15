@@ -6,7 +6,7 @@ exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1785'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -34,7 +34,7 @@ Die Formularportalkomponenten ermöglichen es Ihnen, die folgende Funktion hinzu
 * Aktivieren der Suche nach Formularen anhand von Titel und Beschreibung.
 * Verwenden von benutzerdefiniertem CSS, um das Erscheinungsbild des Portals anzupassen.
 * Erstellen von Links zu Formularen.
-* Listet Entwürfe und Übermittlungen im Zusammenhang mit dem vom Benutzer erstellten adaptiven Forms auf.
+* Auflisten von Entwürfen und Übermittlungen für die von der Person erstellten adaptiven Formulare.
 
 ## Komponenten einer Formularportal-Seite {#forms-portal-components}
 

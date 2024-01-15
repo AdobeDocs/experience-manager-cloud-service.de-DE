@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: f59959bc10e502d85d3f4797dcf4ad0490d233f4
 workflow-type: tm+mt
 source-wordcount: '1177'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
 
 * Die Build-Umgebung ist Linux-basiert und von Ubuntu 22.04 abgeleitet.
 * Apache Maven 3.8.8 ist installiert.
-   * Adobe empfiehlt Benutzern [Aktualisieren Sie ihre Maven-Repositorys, um HTTPS anstelle von HTTP zu verwenden.](#https-maven)
+   * Adobe empfiehlt Benutzenden, [ihre Maven-Repositorys zu aktualisieren, um HTTPS anstelle von HTTP zu verwenden.](#https-maven)
 * Die installierten Java-Versionen sind Oracle JDK 8u371 und Oracle JDK 11.0.20.
-* Standardmäßig wird die Variable `JAVA_HOME` Umgebungsvariable auf `/usr/lib/jvm/jdk1.8.0_371` enthält Oracle JDK 8u371. Siehe [JDK-Version der alternativen Maven-Ausführung](#alternate-maven-jdk-version) für weitere Details.
+* Standardmäßig wird die Umgebungsvariable `JAVA_HOME` auf `/usr/lib/jvm/jdk1.8.0_371` festgelegt, was Oracle JDK 8u371 enthält. Weitere Einzelheiten finden Sie im Abschnitt [Alternative JDK-Version für die Maven-Ausführung](#alternate-maven-jdk-version).
 * Es sind einige zusätzliche erforderliche Systempakete installiert.
    * `bzip2`
    * `unzip`
@@ -36,7 +36,7 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven wird auf Systemebene mit einer `settings.xml`-Datei konfiguriert, die automatisch das öffentliche Adobe-Artefakt-Repository enthält und ein Profil namens `adobe-public` verwendet. (Weitere Informationen dazu finden Sie im [Adobe Public Maven Repository](https://repo1.maven.org/)).
-* Node.js 18 ist für [Front-End- und vollständige Stapel-Pipelines.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+* Node.js 18 ist für [Frontend- und Full-Stack-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) verfügbar.
 
 >[!NOTE]
 >
@@ -44,15 +44,15 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
 
 ## HTTPS-Maven-Repositorys {#https-maven}
 
-Cloud Manager [Version 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) hat eine rollierende Aktualisierung der Build-Umgebung gestartet (mit Version 2023.12.0 abgeschlossen), die eine Aktualisierung auf Maven 3.8.8 enthielt. Eine wesentliche Änderung, die in Maven 3.8.1 eingeführt wurde, war eine Sicherheitsverbesserung, die darauf abzielte, potenzielle Schwachstellen zu minimieren. Insbesondere deaktiviert Maven jetzt alle unsicheren `http://*` Spiegeln standardmäßig, wie im Abschnitt [Maven-Versionshinweise.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+Cloud Manager [Version 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) hat eine rollierende Aktualisierung der Build-Umgebung gestartet (mit Version 2023.12.0 abgeschlossen), die eine Aktualisierung auf Maven 3.8.8 enthielt. Eine wesentliche Änderung, die in Maven 3.8.1 eingeführt wurde, war eine Sicherheitsverbesserung, die darauf abzielte, potenzielle Schwachstellen zu minimieren. Insbesondere deaktiviert Maven jetzt alle unsicheren `http://*`-Spiegelungen standardmäßig, wie in den [Maven-Versionshinweisen](http://maven.apache.org/docs/3.8.1/release-notes.html?lang=de#cve-2021-26291) beschrieben.
 
-Aufgrund dieser Sicherheitsverbesserung können einige Benutzer während des Build-Schritts mit Problemen konfrontiert sein, insbesondere beim Herunterladen von Artefakten aus Maven-Repositorys, die unsichere HTTP-Verbindungen verwenden.
+Aufgrund dieser Sicherheitsverbesserung können bei einzelnen Benutzenden während des Build-Schritts Probleme auftreten, insbesondere beim Herunterladen von Artefakten aus Maven-Repositorys, die unsichere HTTP-Verbindungen verwenden.
 
-Um ein reibungsloses Erlebnis mit der aktualisierten Version zu gewährleisten, empfiehlt Adobe, dass Benutzer ihre Maven-Repositorys so aktualisieren, dass sie HTTPS anstelle von HTTP verwenden. Diese Anpassung steht im Einklang mit dem wachsenden Trend der Branche hin zu sicheren Kommunikationsprotokollen und trägt zur Aufrechterhaltung eines sicheren und zuverlässigen Build-Prozesses bei.
+Um ein reibungsloses Erlebnis mit der aktualisierten Version zu gewährleisten, empfiehlt Adobe, dass Benutzende ihre Maven-Repositorys so aktualisieren, dass sie HTTPS anstelle von HTTP verwenden. Diese Anpassung steht im Einklang mit dem wachsenden Trend der Branche hin zu sicheren Kommunikationsprotokollen und trägt zur Aufrechterhaltung eines sicheren und zuverlässigen Build-Prozesses bei.
 
 ### Verwenden einer bestimmten Java-Version {#using-java-support}
 
-Standardmäßig werden Projekte vom Cloud Manager-Build-Prozess mit dem Oracle 8 JDK erstellt. Kunden, die ein alternatives JDK verwenden möchten, haben zwei Optionen.
+Standardmäßig werden Projekte vom Cloud Manager-Build-Prozess mit dem Oracle 8 JDK erstellt. Kundinnen und Kunden, die ein alternatives JDK verwenden möchten, haben zwei Optionen.
 
 * [Verwenden der Maven-Toolchains.](#maven-toolchains)
 * [Auswahl einer alternativen JDK-Version für den gesamten Maven-Ausführungsprozess.](#alternate-maven-jdk-version)
@@ -169,7 +169,7 @@ Variablennamen müssen die folgenden Konventionen einhalten.
 * Pro Pipeline sind maximal 200 Variablen zulässig.
 * Jeder Name darf maximal 100 Zeichen lang sein.
 * Jede `string`-Variable darf höchstens 2047 Zeichen enthalten.
-* Jeder `secretString` Der Variablenwert type darf maximal 500 Zeichen enthalten.
+* Jede Variable des Typs `secretString` darf maximal 500 Zeichen enthalten.
 
 Bei Verwendung in einer Maven-`pom.xml`-Datei ist es in der Regel hilfreich, diese Variablen Maven-Eigenschaften mithilfe einer ähnlichen Syntax wie dieser zuzuordnen.
 
@@ -189,7 +189,7 @@ Bei Verwendung in einer Maven-`pom.xml`-Datei ist es in der Regel hilfreich, die
 
 ## Installieren zusätzlicher Systempakete {#installing-additional-system-packages}
 
-Einige Builds erfordern die Installation zusätzlicher Systempakete, damit sie vollumfänglich funktionieren. Beispielsweise kann ein Build ein Python- oder Ruby-Skript aufrufen und muss einen entsprechenden Sprachinterpreter installiert haben. Dies kann durch Aufrufen des [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) in ihrer `pom.xml` erfolgen, wodurch APT aufgerufen wird. Diese Ausführung sollte im Allgemeinen in einem Cloud Manager-spezifischen Maven-Profil eingeschlossen sein. In diesem Beispiel wird Python installiert.
+Einige Builds erfordern die Installation zusätzlicher Systempakete, damit sie vollumfänglich funktionieren. So ist es z. B. möglich, dass ein Build ein Python- oder Ruby-Skript aufruft, wofür der entsprechende Sprach-Interpreter installiert sein muss. Dies kann durch Aufrufen des [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) in ihrer `pom.xml` erfolgen, wodurch APT aufgerufen wird. Diese Ausführung sollte im Allgemeinen in einem Cloud Manager-spezifischen Maven-Profil eingeschlossen sein. In diesem Beispiel wird Python installiert.
 
 ```xml
         <profile>

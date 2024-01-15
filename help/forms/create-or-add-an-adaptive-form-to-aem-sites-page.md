@@ -7,7 +7,7 @@ exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '3177'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ Mit AEM Forms können Sie Ihrer AEM Sites-Seite nahtlos ein adaptives Formular h
 
 Mit dem AEM-Seiteneditor können Sie schnell mehrere Formulare erstellen und zu Ihren AEM Sites-Seiten hinzufügen. Die Verwendung des AEM-Seiteneditors ermöglicht es Inhaltsautorinnen und Inhaltsautoren, nahtlose Erlebnisse zur Datenerfassung auf einer Sites-Seite zu erstellen, indem sie die Leistung adaptiver Formularkomponenten nutzen, einschließlich dynamischem Verhalten, Überprüfungen, Datenintegration, Generierung von Datensatzdokumenten und Automatisierung von Geschäftsprozessen. Außerdem können Sie damit verschiedene Funktionen von AEM Sites-Seiten verwenden, z. B. Versionierung, Targeting, Übersetzung und Multi-Site-Manager.
 
-Der AEM Forms Cloud Service bietet Container- und Einbettungskomponenten für adaptive Formulare. Sie können den Container für adaptive Formulare verwenden, um ein Formular auf einer AEM Sites-Seite oder in einem Experience Fragment zu erstellen, während Sie mit der Komponente Adaptive Forms - Embed ein vorhandenes adaptives Formular hinzufügen oder ein Formular mit dem Adaptive Forms Editor erstellen können.
+Der AEM Forms Cloud Service bietet Container- und Einbettungskomponenten für adaptive Formulare. Sie können den Container für adaptive Formulare verwenden, um ein Formular auf einer AEM Sites-Seite oder in einem Experience Fragment zu erstellen. Oder Sie können mit der Einbettungskomponente für adaptive Formulare ein vorhandenes adaptives Formular hinzufügen oder mit dem Editor für adaptive Formulare ein Formular erstellen.
 
 ![Beispiel für ein adaptives Formular auf einer AEM Sites-Seite](/help/forms/assets/adaptive-form-in-sites-page.png)
 
@@ -188,7 +188,7 @@ So konvertieren Sie ein adaptives Formular auf einer AEM Sites-Seite in ein Expe
 1. Legen Sie im Dialogfeld „In Experience Fragment-Variante konvertieren“ Werte für die folgenden Optionen fest:
 
    * **Aktion:** Wählen Sie diese Option aus, um ein Experience Fragment zu erstellen oder zu einem vorhandenen Experience Fragment hinzuzufügen.
-   * **Übergeordneter Pfad:** Geben Sie den Pfad des Ordners an, in dem das Experience Fragment gehostet werden soll. Die Option ist nur zum Erstellen eines Experience Fragment verfügbar.
+   * **Übergeordneter Pfad:** Geben Sie den Pfad des Ordners an, in dem das Experience Fragment gehostet werden soll. Die Option ist nur zum Erstellen eines Experience Fragments verfügbar.
    * **Vorlage:** Geben Sie den Pfad der Experience Fragment-Vorlage an. Wenn Sie keine Experience Fragment-Vorlage haben, [erstellen Sie eine](/help/implementing/developing/extending/experience-fragments.md). Die Option ist nur zum Hinzufügen des adaptiven Formulars zu einem vorhandenen Experience Fragment verfügbar.
    * **Fragmenttitel:** Geben Sie den Titel des Experience Fragments an. Der Titel identifiziert ein Experience Fragment eindeutig.
 

@@ -5,7 +5,7 @@ exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 82%
+ht-degree: 89%
 
 ---
 
@@ -29,7 +29,7 @@ Mehrere Filterpfade werden vom Tool ebenso wenig unterstützt wie `filter.xml` v
 
 Das [AEM Repo Tool ist unter diesem Link auf GitHub verfügbar](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo), zusammen mit detaillierten Installations- und Nutzungsanleitungen.
 
-Wenn Sie die Quelle des AEM Repo Tool herunterladen möchten, lesen Sie das unten verlinkte GitHub-Projekt.
+Wenn Sie die Quelle des AEM Repo Tools herunterladen möchten, sehen Sie sich das unten verlinkte GitHub-Projekt an.
 
 CODE AUF GITHUB
 

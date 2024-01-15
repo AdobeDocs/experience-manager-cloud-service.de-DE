@@ -5,7 +5,7 @@ exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2974'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ Die Symbolleiste bietet Zugriff auf eine Vielzahl von Optionen. Je nach aktuelle
 
 * **Modusauswahl**
 
-  Zeigt den aktuellen [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) und ermöglicht die Auswahl eines anderen Modus wie Bearbeiten, Layout, Timewarp oder Targeting.
+  Zeigt den aktuellen [Modus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) an und ermöglicht die Auswahl eines anderen Modus, z. B. Bearbeiten, Layout, Timewarp oder Targeting.
 
   ![Schaltfläche „Modusauswahl“](/help/sites-cloud/authoring/assets/mode-selector.png)
 
@@ -87,7 +87,7 @@ Die Symbolleiste bietet Zugriff auf eine Vielzahl von Optionen. Je nach aktuelle
 
 * **Anmerken**
 
-  Ermöglicht das Hinzufügen von [Anmerkungen](/help/sites-cloud/authoring/fundamentals/annotations.md) auf der Seite, wenn Sie eine Seite überprüfen. Nach der ersten Anmerkung ändert sich das Symbol in eine Zahl, die die Anzahl der Anmerkungen auf der Seite anzeigt.
+  Hierüber können Sie die Seite mit [Anmerkungen](/help/sites-cloud/authoring/fundamentals/annotations.md) versehen (z. B. zu Prüfungszwecken). Nach der ersten Anmerkung ändert sich das Symbol in eine Zahl, die die Anzahl der Anmerkungen auf der Seite anzeigt.
 
   ![Schaltfläche „Anmerkungen“](/help/sites-cloud/authoring/assets/annotations.png)
 
@@ -151,9 +151,9 @@ Sie können eine neue Komponente über das Feld **Komponenten hierher ziehen** d
 
      ![Einfügen einer Komponente](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-   * Wenn Sie sich auf einem Desktop-Gerät befinden, können Sie auf das **Komponenten hierher ziehen** ankreuzen.
+   * Wenn Sie ein Desktop-Gerät verwenden, können Sie die Aktion per Doppelklick auf das Feld **Komponenten hierher ziehen** durchführen.
 
-   * Die **Neue Komponente einfügen** -Dialogfeld geöffnet, in dem Sie die gewünschte Komponente auswählen können:
+   * Das Dialogfeld **Neue Komponente einfügen** wird geöffnet, in dem Sie die erforderliche Komponente auswählen können:
 
      ![Dialogfeld „Neue Komponente einfügen“](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -161,7 +161,7 @@ Sie können eine neue Komponente über das Feld **Komponenten hierher ziehen** d
 
 ### Einfügen einer Komponente mit dem Assets-Browser {#inserting-a-component-using-the-assets-browser}
 
-Sie können der Seite auch eine neue Komponente hinzufügen, indem Sie ein Asset aus dem [Asset-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) ziehen. Dadurch wird automatisch eine Komponente des entsprechenden Typs erstellt (und das Asset enthält).
+Sie können der Seite auch eine neue Komponente hinzufügen, indem Sie ein Asset aus dem [Asset-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) ziehen. Dadurch wird automatisch eine Komponente des entsprechenden Typs erstellt, die das Asset enthält.
 
 Dieses Verhalten kann für Ihre Installation konfiguriert werden. Weitere Informationen finden Sie unter „Konfigurieren eines Absatzsystems zum Erstellen einer Komponenteninstanz infolge des Ziehens eines Assets“. <!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
@@ -173,7 +173,7 @@ So erstellen Sie eine Komponente, indem Sie einen der obigen Asset-Typen ziehen:
 
    Eine für den Asset-Typ geeignete Komponente wird am erforderlichen Speicherort erstellt und enthält das ausgewählte Asset.
 
-1. [Bearbeiten](#edit-content) die Komponente, falls erforderlich.
+1. [Bearbeiten](#edit-content) Sie bei Bedarf die Komponente.
 
 >[!NOTE]
 >
@@ -185,15 +185,15 @@ Wenn Sie die Assets durchgehen und feststellen, dass Sie an einem der Assets ein
 
 ## Komponenten-Symbolleiste {#component-toolbar}
 
-Wenn Sie eine Komponente auswählen, wird die Symbolleiste geöffnet. Dadurch erhalten Sie Zugriff auf verschiedene Aktionen, die für die Komponente ausgeführt werden können.
+Wenn Sie eine Komponente auswählen, wird die Symbolleiste geöffnet. Damit können Sie verschiedene Aktionen für die Komponente auswählen.
 
-Die tatsächlichen für die Benutzenden verfügbaren Aktionen werden abhängig von der jeweiligen Situation angezeigt, sodass hier u. U. nicht alle möglichen Aktionen beschrieben werden.
+Die tatsächlich für die Benutzenden verfügbaren Aktionen werden abhängig von der jeweiligen Situation angezeigt, sodass hier u. U. nicht alle möglichen Aktionen beschrieben werden.
 
 ![Komponentensymbolleiste](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 
 * **Bearbeiten**
 
-  [Abhängig vom Komponententyp](/help/sites-cloud/authoring/fundamentals/components.md) können Sie hierüber den [Inhalt der Komponente bearbeiten](#edit-content). Häufig wird eine Symbolleiste bereitgestellt.
+  [Abhängig vom Komponententyp](/help/sites-cloud/authoring/fundamentals/components.md) können Sie hiermit den [Inhalt der Komponente bearbeiten](#edit-content). Häufig wird eine Symbolleiste bereitgestellt.
 
   ![Schaltfläche „Bearbeiten“](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
 
@@ -243,27 +243,27 @@ Die tatsächlichen für die Benutzenden verfügbaren Aktionen werden abhängig v
 
 * **Gruppe**
 
-  Damit können Sie mehrere Komponenten gleichzeitig auswählen. Dasselbe kann auf einem Desktop-Gerät durch **Strg+Klicken** bzw. **Befehl+Klicken** erreicht werden.
+  Mit dieser Aktion können Sie mehrere Komponenten gleichzeitig auswählen. Dasselbe kann auf einem Desktop-Gerät durch **Strg+Klicken** bzw. **Befehl+Klicken** erreicht werden.
 
   ![Schaltfläche „Gruppe“](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
 
-* **Übergeordnet**
+* **Übergeordnetes Element**
 
-  Damit können Sie die übergeordnete Komponente der ausgewählten Komponente auswählen.
+  Hierüber können Sie die Komponente auswählen, die der ausgewählten Komponente übergeordnet ist.
 
   ![Schaltfläche „Übergeordnet“](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
 * **Layout**
 
-  Auf diese Weise können Sie die [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) der ausgewählten Komponente. Dies gilt nur für die ausgewählte Komponente und aktiviert nicht den [Layout-Modus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) für die gesamte Seite.
+  Hierüber können Sie das [Layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) der ausgewählten Komponente ändern. Dies gilt nur für die ausgewählte Komponente und aktiviert nicht den [Layout-Modus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) für die gesamte Seite.
 
   ![Schaltfläche „Layout“](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **In Experience Fragment-Variante umwandeln**
 
-  Auf diese Weise können Sie eine [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) aus der ausgewählten Komponente oder fügen Sie sie einem vorhandenen Experience Fragment hinzu.
+  Hierüber können Sie ein [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) von der ausgewählten Komponente aus erstellen oder sie zu einem bestehenden Experience Fragment hinzufügen.
 
-  ![Schaltfläche „In Experience Fragment-Variante umwandeln“](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
+  ![Schaltfläche „In Experience Fragment umwandeln“](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
 ## Inhalt bearbeiten {#edit-content}
 
@@ -294,7 +294,7 @@ Die genauen Bearbeitungsoptionen hängen von der Komponente ab. Für einige Komp
 
 * Bildkomponente – Vollbild
 
-  [Der Wechsel in den Vollbildmodus](#edit-content-full-screen-mode) für die Bildkomponente bietet mehr Platz zum Bearbeiten des Bildes und zeigt zusätzliche Bearbeitungsoptionen wie **Karte starten** und **Zoom zurücksetzen**. Außerdem können im Vollbildmodus Zuschnittvoreinstellungen ausgewählt werden.
+  [Der Wechsel in den Vollbildmodus](#edit-content-full-screen-mode) für die Bildkomponente bietet mehr Platz zum Bearbeiten des Bildes und zeigt zusätzliche Bearbeitungsoptionen wie **Map starten** und **Zoom zurücksetzen**. Außerdem können im Vollbildmodus Zuschnittvoreinstellungen ausgewählt werden.
 
   ![Vollbildmodus der Bildkomponente](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -341,7 +341,7 @@ Wenn Sie eine Komponente anpassen möchten, müssen Sie nicht ständig zwischen 
 
    ![Komponenten-Symbolleiste einer Seitenkomponente](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   Wählen Sie die **Layout** Aktion zum Anpassen des Layouts der Komponente.
+   Wählen Sie die **Layout**-Aktion aus, um das Layout der Komponente anzupassen.
 
    ![Schaltfläche „Layout“ der Komponenten-Symbolleiste](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
@@ -361,7 +361,7 @@ Wenn Sie eine Komponente anpassen möchten, müssen Sie nicht ständig zwischen 
 
 >[!TIP]
 >
->Die Layout-Aktion ist immer auf die jeweils ausgewählte Komponente beschränkt. Wenn Sie beispielsweise das Layout einer Komponente bearbeiten und dann auf eine andere Komponente klicken, wird die standardmäßige Bearbeitungssymbolleiste (nicht die Layout-Symbolleiste) für die neu ausgewählte Komponente und die Größenänderungsgriffe angezeigt und die Emulator-Symbolleiste wird ausgeblendet.
+>Die Layout-Aktion ist immer auf die jeweils ausgewählte Komponente beschränkt. Wenn Sie z. B. das Layout einer Komponente bearbeiten und dann auf eine andere Komponente klicken, werden die Layout-Aktionen in der Bearbeitungssymbolleiste durch die Standardaktionen ersetzt und die Ziehpunkte zur Größenanpassung und die Emulator-Symbolleiste nicht mehr angezeigt.
 >
 >Um das Layout für die gesamte Seite, d. h. über mehrere Komponenten hinweg, zu bearbeiten, wechseln Sie in den [Layout-Modus](/help/sites-cloud/authoring/features/responsive-layout.md).
 

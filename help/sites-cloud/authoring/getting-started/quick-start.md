@@ -5,7 +5,7 @@ exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1541'
-ht-degree: 79%
+ht-degree: 95%
 
 ---
 
@@ -36,7 +36,7 @@ Bevor Sie mit der Schnellstartanleitung beginnen, hier eine kleine Sammlung von 
 
 * Neuanordnen von Seiten
 
-   * Dies kann in der [Listenansicht](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) durchgeführt werden. Die Änderungen werden angewendet und in anderen Ansichten angezeigt.
+   * Dies kann in der [Listenansicht](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) durchgeführt werden. Die Änderungen werden angewendet und sind in anderen Ansichten sichtbar.
 
 ### Bearbeiten von Seiten {#page-authoring}
 
@@ -51,7 +51,7 @@ Bevor Sie mit der Schnellstartanleitung beginnen, hier eine kleine Sammlung von 
 
 >[!NOTE]
 >
->Es gibt mehrere Tastaturbefehle, die die Bearbeitung vereinfachen können.
+>Es gibt eine Reihe von Tastaturbefehlen, die die Bearbeitung vereinfachen.
 >
 >* [Tastaturbefehle bei der Seitenbearbeitung](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
 >* [Tastaturbefehle für Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
@@ -66,7 +66,7 @@ Es gibt verschiedene Möglichkeiten, eine Seite zu finden: Sie können navigiere
 
    ![Anzeigen der Auswahl-Dropdown-Liste](/help/sites-cloud/authoring/assets/views.png)
 
-1. Navigieren Sie in der Baumstruktur nach oben mithilfe von [Breadcrumb in der Kopfzeile](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), mit dem Sie zur ausgewählten Position zurückkehren können:
+1. Navigieren Sie in der Baumstruktur nach oben, indem Sie [den Breadcrumb in der Kopfzeile](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header) verwenden. Dies ermöglicht es Ihnen, zum ausgewählten Pfad zurückzukehren:
 
    ![Breadcrumb-Dropdown](/help/sites-cloud/authoring/assets/breadcrumb.png)
 
@@ -76,7 +76,7 @@ Es gibt verschiedene Möglichkeiten, eine Seite zu finden: Sie können navigiere
 
 ### Erstellen einer neuen Seite {#creating-a-new-page}
 
-nach [Erstellen einer Seite](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
+So [erstellen Sie eine Seite](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
 1. [Navigieren Sie zu der Position, an der Sie die neue Seite erstellen möchten.](#finding-your-page)
 1. Verwenden Sie das Symbol **Erstellen** und wählen Sie dann **Seite** aus der Liste:
@@ -87,17 +87,17 @@ nach [Erstellen einer Seite](/help/sites-cloud/authoring/fundamentals/organizing
 
 ### Auswählen Ihrer Seite für weitere Aktionen {#selecting-your-page-for-further-action}
 
-Sie können eine Seite auswählen, damit Sie darauf reagieren können. Wenn Sie eine Seite auswählen, wird die Symbolleiste automatisch aktualisiert, sodass die für diese Ressource relevanten Aktionen angezeigt werden.
+Sie können eine Seite auswählen, um eine Aktion für sie durchzuführen. Wenn Sie eine Seite auswählen, wird die Symbolleiste automatisch aktualisiert, sodass die für diese Ressource relevanten Aktionen angezeigt werden.
 
 Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsole verwenden:
 
 1. Spaltenansicht:
 
-   * Wählen Sie die Miniaturansicht für die gewünschte Ressource aus. Die Miniaturansicht wird mit einem Häkchen versehen, um anzuzeigen, dass sie ausgewählt wurde.
+   * Wählen Sie die Miniaturansicht für die gewünschte Ressource aus. Auf der Miniaturansicht wird die ausgewählte Ressource durch ein Häkchen gekennzeichnet.
 
 1. Listenansicht:
 
-   * Wählen Sie die Miniaturansicht für die gewünschte Ressource aus. Die Miniaturansicht wird mit einem Häkchen versehen, um anzuzeigen, dass sie ausgewählt wurde.
+   * Wählen Sie die Miniaturansicht für die gewünschte Ressource aus. Auf der Miniaturansicht wird die ausgewählte Ressource durch ein Häkchen gekennzeichnet.
 
 1. Kartenansicht:
 
@@ -114,7 +114,7 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
 
 [Schnellaktionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) sind verfügbar:
 
-1. [Navigieren zur Seite](#finding-your-page) Sie möchten handeln.
+1. [Navigieren Sie zu der Seite](#finding-your-page), für die Sie eine Aktion ausführen möchten.
 1. Bewegen Sie den Mauszeiger über die Karte, die die gewünschte Ressource darstellt. Die Schnellaktionen werden angezeigt:
 
    ![Kartenaktionen](/help/sites-cloud/authoring/assets/card-actions.png)
@@ -148,7 +148,7 @@ So bearbeiten Sie Ihre Seite:
    * [Den Inhalt einer vorhandenen Komponente](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) auf der Seite bearbeiten:
 
       * Öffnen Sie die Komponenten-Symbolleiste mit einer der beiden Optionen. Öffnen Sie das Dialogfeld über das Symbol **Bearbeiten** (Bleistift).
-      * Öffnen Sie den Editor für die Bearbeitung an Ort und Stelle für die Komponente durch Auswählen und Halten oder durch einen doppelten langsamen Klick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine begrenzte Auswahl).
+      * Öffnen Sie den Editor für die Bearbeitung an Ort und Stelle für die Komponente durch Auswählen und Halten oder durch einen doppelten langsamen Klick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine eingeschränkte Auswahl).
       * Um alle verfügbaren Aktionen anzuzeigen, gehen Sie wie folgt in den Vollbildmodus:
 
         ![Schaltfläche „Vollbild“](/help/sites-cloud/authoring/assets/full-screen.png)
@@ -160,19 +160,19 @@ So bearbeiten Sie Ihre Seite:
    * [Verschieben](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) Sie eine Komponente mit einem der folgenden Verfahren:
 
       * Ziehen Sie die gewünschte Komponente an die neue Position.
-      * Öffnen Sie die Komponenten-Symbolleiste mit einer der beiden Optionen. Verwenden Sie die **Ausschneiden** then **Einfügen** Symbole, falls erforderlich.
+      * Öffnen Sie die Komponenten-Symbolleiste mit einer der beiden Optionen. Verwenden Sie die Symbole **Ausschneiden** und dann **Einfügen**, wo erforderlich.
 
    * Wenden Sie die Aktionen [Kopieren (und Einfügen)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) auf eine Komponente an:
 
-      * Öffnen Sie die Komponenten-Symbolleiste mit einer der beiden Optionen. Verwenden Sie die **Kopieren** then **Einfügen** nach Bedarf.
+      * Öffnen Sie die Komponenten-Symbolleiste mit einer der beiden Optionen. Verwenden Sie die Symbole **Ausschneiden** und dann **Einfügen**, wo erforderlich.
 
    >[!NOTE]
    >
-   >Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie eine Seite auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden/Kopieren geöffnet war, muss diese Seite aktualisiert werden.
+   >Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie Komponenten auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden und Kopieren geöffnet war, muss diese Seite aktualisiert werden.
 
-   * Eine Komponente [löschen](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar):
+   * So [löschen](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) Sie eine Komponente:
 
-      * Öffnen Sie die Komponentensymbolleiste mit entweder select und verwenden Sie dann die **Löschen** Symbol.
+      * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken, und verwenden Sie das Symbol **Löschen**.
 
    * Fügen Sie der Seite [Anmerkungen](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) hinzu:
 
@@ -273,7 +273,7 @@ Diese Aktionen können alle wie folgt ausgelöst werden:
 [Sperren einer Seite](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page): Verhindert, dass andere Autoren daran arbeiten, während Sie dies tun. Das Symbol bzw. die Schaltfläche „Sperren“ (und „Entsperren“) ist verfügbar:
 
 * Symbolleiste, wenn die [Seite ausgewählt wurde](#selecting-your-page-for-further-action)
-* Das Dropdown-Menü [Seiteninformationen](#editing-the-page-properties) beim Bearbeiten einer Seite.
+* Dropdown-Menü [Seiteninformationen](#editing-the-page-properties) beim Bearbeiten einer Seite
 * Seitensymbolleiste beim Bearbeiten einer Seite (wenn die Seite gesperrt ist)
 
 Beispielsweise sieht das Schloss-Symbol folgendermaßen aus:
@@ -292,9 +292,9 @@ Beispielsweise sieht das Schloss-Symbol folgendermaßen aus:
 
    ![Ansicht „Verweise“](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. Wählen Sie den gewünschten Referenztyp aus, um weitere Details anzuzeigen und (falls zutreffend) weitere Aktionen durchzuführen.
+1. Wählen Sie den gewünschten Verweistyp aus, um weitere Details anzuzeigen und (bei Bedarf) weitere Aktionen auszuführen.
 
-### Erstellen einer Seitenversion {#creating-a-version-of-your-page}
+### Erstellen einer Version Ihrer Seite {#creating-a-version-of-your-page}
 
 So erstellen Sie eine [Version](/help/sites-cloud/authoring/features/page-versions.md) Ihrer Seite:
 
@@ -302,7 +302,7 @@ So erstellen Sie eine [Version](/help/sites-cloud/authoring/features/page-versio
 
    ![Ansichtsoption „Timeline“](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. Wählen Sie die Auslassungszeichen unten rechts in der Spalte &quot;Timeline&quot;aus, um zusätzliche Schaltflächen anzuzeigen, darunter **Als Version speichern**.
+1. Wählen Sie unten rechts in der Spalte „Timeline“ die Auslassungspunkte aus, um weitere Schaltflächen einzublenden, darunter auch **Als Version speichern**.
 
    ![Ansicht „Timeline“](/help/sites-cloud/authoring/assets/timeline-view.png)
 
@@ -320,7 +320,7 @@ Beim Wiederherstellen und/oder Vergleichen von Seitenversionen wird dasselbe gru
 
 1. Wählen Sie die Version aus, die Sie wiederherstellen möchten. Dadurch werden zusätzliche Aktionsschaltflächen angezeigt:
 
-   * **Auf diese Version zurück**
+   * **Auf diese Version zurücksetzen**
 
       * Die Version wird wiederhergestellt.
 

@@ -1,11 +1,11 @@
 ---
-title: Wie integriere ich DocuSign in ein adaptives Formular?
+title: Wie lässt sich DocuSign in ein adaptives Formular integrieren?
 description: Erfahren Sie, wie Sie DocuSign mit einem adaptiven Formular verwenden können, um E-Signaturen einzuholen.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1534'
-ht-degree: 87%
+ht-degree: 90%
 
 ---
 
@@ -186,7 +186,7 @@ Erstellen eines signaturfähigen adaptiven Formulars:
 1. Auswählen **[!UICONTROL Erstellen Sie.]** Es wird ein signaturfähiges adaptives Formular erstellt. Sie können Ihre [!DNL DocuSign]-Felder zum Formular hinzufügen und dieses zum Signieren senden.
 1. Öffnen Sie Ihr adaptives Formular im Bearbeitungsmodus. Im **[!UICONTROL Inhalt]** auswählen, wählen Sie die **[!UICONTROL Formular-Container]** und wählen ![Konfigurieren](assets/configure-icon.svg).
 
-1. Im **[!UICONTROL Einsendung]** Bereich, wählen Sie **[!UICONTROL Senden mit elektronischen Dokumentunterschriften]** aus dem **[!UICONTROL Übermittlungsaktion]** Dropdown-Liste.
+1. Wählen Sie im Abschnitt **[!UICONTROL Übermittlung]** die Option **[!UICONTROL Senden mit DocuSign-E-Signaturen]** aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** aus.
 
 1. Im **[!UICONTROL Aktionskonfiguration]** Bereich, wählen Sie **[!UICONTROL Hinzufügen]** um einen Empfänger hinzuzufügen und die E-Mail-Adresse des Empfängers anzugeben. Auswählen **[!UICONTROL Hinzufügen]** erneut, um weitere Empfänger hinzuzufügen.
 
@@ -211,7 +211,7 @@ Verwenden von [!DNL DocuSign] in einem vorhandenen adaptiven Formular:
 
 1. Öffnen Sie Ihr adaptives Formular im Bearbeitungsmodus. Im **[!UICONTROL Inhalt]** auswählen, wählen Sie die **[!UICONTROL Formular-Container]** und wählen ![Konfigurieren](assets/configure-icon.svg).
 
-1. Im **[!UICONTROL Einsendung]** Bereich, wählen Sie **[!UICONTROL Senden mit elektronischen Dokumentunterschriften]** aus dem **[!UICONTROL Übermittlungsaktion]** Dropdown-Liste.
+1. Wählen Sie im Abschnitt **[!UICONTROL Übermittlung]** die Option **[!UICONTROL Senden mit DocuSign-E-Signaturen]** aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** aus.
 
 1. Im **[!UICONTROL Aktionskonfiguration]** Bereich, wählen Sie **[!UICONTROL Hinzufügen]** um einen Empfänger hinzuzufügen und die E-Mail-Adresse des Empfängers anzugeben. Auswählen **[!UICONTROL Hinzufügen]** erneut, um weitere Empfänger hinzuzufügen.
 

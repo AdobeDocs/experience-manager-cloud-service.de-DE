@@ -1,22 +1,22 @@
 ---
-title: Wie kann man einem adaptiven Formular Fußnote hinzufügen?
-description: Verwenden Sie den Rich-Text-Editor (RTE) für Fußnoten in einem adaptiven Formular.
+title: Hinzufügen von Fußnoten zu einem adaptiven Formular?
+description: Verwenden Sie den Rich-Text-Editor (RTE) für Fußnoten in adaptiven Formularen.
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 89%
+ht-degree: 96%
 
 ---
 
-# Fußzeilenkomponente {#footnotecomponent}
+# Fußnotenkomponente {#footnotecomponent}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/creating-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 Eine **[!UICONTROL Fußnote]** ist eine zusätzliche Information oder Anmerkung, die am Ende der Seite erscheint. Eine [!UICONTROL Fußnote] umfasst die Anmerkungen, auf die in Ihrem Text durch hochgestellte Zahlen verwiesen wird.
 
-Fußnoten werden in der Reihenfolge nummeriert, in der sie auf der Seite erscheinen. Jede Fußnote hat eine eindeutige hochgestellte Nummer, die der Nummer am unteren Rand der Seite entspricht. Neben der Nummer erscheint die Zusatzinformation als Fußnotenbeschreibung.
+Fußnoten werden in der Reihenfolge nummeriert, in der sie auf der Seite angezeigt werden. Jede Fußnote hat eine eindeutige hochgestellte Nummer, die der Nummer am unteren Rand der Seite entspricht. Neben der Nummer erscheint die Zusatzinformation als Fußnotenbeschreibung.
 
 ![Fußnotenbeschreibung](/help/forms/assets/footnote_description.png)
 

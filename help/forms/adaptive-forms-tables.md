@@ -7,7 +7,7 @@ exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2476'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -71,13 +71,13 @@ Um eine Zeile hinzuzufügen, zu löschen oder zu verschieben, muss eine beliebig
 
 ![add-delete-move-row-column](assets/add-delete-move-row.png)
 
-Doppelklicken Sie auf die Zeile, um Eigenschaften einer Zeile wie Name, Bindungsverweis, Wiederholungseinstellungen, CSS-Klasse zu konfigurieren.
+Durch Doppelklicken auf die Zeile lassen sich Eigenschaften einer Zeile wie Name, Bindungsverweis, Wiederholungseinstellungen oder CSS-Klasse konfigurieren.
 ![add-delete-move-row-column](assets/row-properties-image.png)
 
 
 #### Hinzufügen oder Löschen einer Spalte
 
-Um eine Spalte hinzuzufügen oder zu löschen, klicken Sie auf die Textzelle im Kopfzeilenbereich. Eine Symbolleiste mit den Optionen zum Hinzufügen oder Löschen einer Spalte wird geöffnet:
+Um eine Spalte hinzuzufügen oder zu löschen, muss auf die Textzelle im Kopfzeilenbereich geklickt werden. Daraufhin wird eine Symbolleiste mit den Optionen zum Hinzufügen oder Löschen einer Spalte geöffnet:
 
 ![add-delete-move-row-column](assets/add-delet-column.png)
 
@@ -155,7 +155,7 @@ Tabellen unterstützen standardmäßig das dynamische Hinzufügen oder Löschen 
 1. Geben Sie auf der Registerkarte „Wiederholungseinstellungen“ die Mindest- und Höchstanzahl der Zeilen in der Tabelle an.
 1. Klicken Sie auf **Fertig**.
 
-Zur Laufzeit oder Vorschau wird **+** und ![Schaltfläche &quot;Löschen&quot;](/help/forms/assets/Smock_Delete.svg) -Schaltflächen zum Hinzufügen oder Löschen einer Zeile.
+Zur Laufzeit oder während der Vorschau werden die Schaltflächen **+** und ![Entfernen](/help/forms/assets/Smock_Delete.svg) zum Hinzufügen bzw. Löschen einer Zeile angezeigt.
 
 ![add-delete-rows-dynamic](assets/add-delete-layout.png)
 

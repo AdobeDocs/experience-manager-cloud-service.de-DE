@@ -1,5 +1,5 @@
 ---
-title: Wie integrieren Sie ein adaptives Formular in Microsoft® Power Automate?
+title: Integrieren eines adaptiven Formulars in Microsoft® Power Automate?
 description: Integrieren Sie ein adaptives Formular mit Microsoft Power Automate.
 hide: true
 hidefromtoc: true
@@ -7,7 +7,7 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1163'
-ht-degree: 70%
+ht-degree: 90%
 
 ---
 
@@ -28,18 +28,18 @@ Um ein adaptives Formular mit Microsoft® Power Automate zu verbinden, ist Folge
 
 * Premium-Lizenz von Microsoft® Power Automate.
 * Der Microsoft® [Power Automate-Fluss](https://docs.microsoft.com/de-de/power-automate/create-flow-solution) mit dem `When an HTTP request is received`-Trigger zum Akzeptieren der Übermittlungsdaten für adaptive Formulare.
-* Ein Experience Manager mit [Forms Author](/help/forms/forms-groups-privileges-tasks.md) und [Forms Admin](/help/forms/forms-groups-privileges-tasks.md) permissions
-* Konto, das für die Verbindung mit Microsoft® Power Automate verwendet wird, ist Eigentümer des Stromautomatisierungsflusses, der für den Empfang von Daten aus dem adaptiven Formular konfiguriert ist.
+* Benutzerin bzw. Benutzer von Experience Manager mit Berechtigungen als [Formularautor](/help/forms/forms-groups-privileges-tasks.md) und [Formularadministrator](/help/forms/forms-groups-privileges-tasks.md)
+* Konto, das für die Verbindung mit Microsoft® Power Automate verwendet wird, als verantwortliche Person des Power Automate-Flusses, der für den Empfang von Daten aus dem adaptiven Formular konfiguriert ist
 
 
 ## Verbinden Ihrer Instanz von Forms as a Cloud Service mit Microsoft® Power Automate {#connect-forms-server-with-power-automate}
 
 Führen Sie die folgenden Schritte aus, um Ihre Instanz von Forms as a Cloud Service mit Microsoft® Power Automate zu verbinden:
 
-1. [Erstellen einer Microsoft](#ms-power-automate-application)
-1. [Microsoft erstellen](#microsoft-power-automate-dataverse-cloud-configuration)
-1. [Microsoft erstellen](#create-microsoft-power-automate-flow-cloud-configuration)
-1. [Microsoft veröffentlichen](#publish-microsoft-power-automate-dataverse-cloud-configuration)
+1. [Erstellen Sie eine Microsoft](#ms-power-automate-application)
+1. [Erstellen Sie eine Microsoft](#microsoft-power-automate-dataverse-cloud-configuration)
+1. [Erstellen Sie eine Microsoft](#create-microsoft-power-automate-flow-cloud-configuration)
+1. [Veröffentlichen Sie eine Microsoft](#publish-microsoft-power-automate-dataverse-cloud-configuration)
 
 ### Erstellen einer Microsoft® Azure Active Directory-Anwendung {#ms-power-automate-application}
 
@@ -73,7 +73,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Instanz von Forms as a Cloud Ser
 1. Klicken Sie auf der Seite mit den API-Berechtigungen auf „Berechtigung hinzufügen“. Wählen Sie „APIs, die meine Organisation verwendet“ und suchen Sie nach `DataVerse`.
 1. Aktivieren Sie „user_impersonation“ und klicken Sie auf „Berechtigungen hinzufügen“.
 1. (Optional) Klicken Sie auf der Seite „Zertifikate und geheime Schlüssel“ auf „Neuer geheimer Client-Schlüssel“. Geben Sie im Bildschirm „Geheimen Client-Schlüssel hinzufügen“ eine Beschreibung und einen Zeitraum ein, nach dem das Geheimnis ablaufen soll, und klicken Sie auf „Hinzufügen“. Es wird eine geheime Zeichenfolge generiert.
-1. Notieren Sie sich Ihre organisationsspezifischen [URL der Dynamics-Umgebung](https://docs.microsoft.com/de-de/power-automate/web-api#compose-http-requests).
+1. Notieren Sie sich Ihre organisationsspezifische [URL der Dynamics-Umgebung](https://docs.microsoft.com/de-de/power-automate/web-api#compose-http-requests).
 
 ### Erstellen einer Cloud-Konfiguration des Microsoft® Power Automate Dataverse {#microsoft-power-automate-dataverse-cloud-configuration}
 
@@ -88,15 +88,15 @@ Führen Sie die folgenden Schritte aus, um Ihre Instanz von Forms as a Cloud Ser
    Wenn Sie ein adaptives Formular erstellen, geben Sie den Namen des Containers im Feld **[!UICONTROL Konfigurations-Container]** an.
 
 1. Wählen Sie auf der Konfigurationsseite **[!UICONTROL Erstellen]** erstellen [!DNL Microsoft®® Power Automate Flow Service] Konfiguration in AEM Forms.
-1. Im **[!UICONTROL Konfigurieren des Datenversand-Dienstes für Microsoft® Power Automated]** Seite, geben Sie die **[!UICONTROL Client-ID]** (auch als Bewerbungs-ID bezeichnet), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth-URL]** und **[!UICONTROL URL der dynamischen Umgebung]**. Verwenden Sie die Client-ID, den geheimen Client-Schlüssel, die OAuth-URL und die URL der Dynamics-Umgebung der [Microsoft® Azure Active Directory-Anwendung](#ms-power-automate-application), die Sie im vorherigen Abschnitt erstellt haben. Verwenden Sie die Option „Endpunkte“ in der Benutzeroberfläche der Microsoft® Azure Active Directory-Anwendung, um die OAuth-URL zu finden.
+1. Geben Sie auf der Seite **[!UICONTROL Konfigurieren des Dataverse-Services für Microsoft® Power Automate]** die **[!UICONTROL Client-ID]** (auch als Anwendungs-ID bezeichnet), den **[!UICONTROL geheimen Client-Schlüssel]**, die **[!UICONTROL OAuth-URL]** und die **[!UICONTROL URL der Dynamics-Umgebung]** an. Verwenden Sie die Client-ID, den geheimen Client-Schlüssel, die OAuth-URL und die URL der Dynamics-Umgebung der [Microsoft® Azure Active Directory-Anwendung](#ms-power-automate-application), die Sie im vorherigen Abschnitt erstellt haben. Verwenden Sie die Option „Endpunkte“ in der Benutzeroberfläche der Microsoft® Azure Active Directory-Anwendung, um die OAuth-URL zu finden.
 
-   ![Option &quot;Endpunkte verwenden&quot;in der Benutzeroberfläche der Microsoft Power Automate-Anwendung, um OAuth-URL zu finden](assets/endpoints.png)
+   ![Verwenden Sie die Option „Endpunkte“ in der Benutzeroberfläche der Microsoft® Azure Active Directory-Anwendung, um die OAuth-URL zu finden.](assets/endpoints.png)
 
 1. Auswählen **[!UICONTROL Verbinden]** . Wenn Sie dazu aufgefordert werden, melden Sie sich bei Ihrem Microsoft® Azure-Konto an. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-### Erstellen Sie eine Cloud-Konfiguration für den Microsoft® Power Automate Flow Service {#create-microsoft-power-automate-flow-cloud-configuration}
+### Erstellen einer Cloud-Konfiguration für den Microsoft® Power Automate Flow Service {#create-microsoft-power-automate-flow-cloud-configuration}
 
-1. Navigieren Sie zu **[!UICONTROL Instrumente]** ![Hammer](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® Power Automated Flow Service]** und öffnen Sie den Konfigurationscontainer, den Sie im vorherigen Abschnitt erstellt haben.
+1. Navigieren Sie zu **[!UICONTROL Tools]** ![Hammersymbol](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® Power Automate Flow Service]** und öffnen Sie den Konfigurations-Container, den Sie im vorherigen Schritt erstellt haben.
 
 
    >[!NOTE]
@@ -104,12 +104,12 @@ Führen Sie die folgenden Schritte aus, um Ihre Instanz von Forms as a Cloud Ser
    Wenn Sie ein adaptives Formular erstellen, geben Sie den Namen des Containers im Feld **[!UICONTROL Konfigurations-Container]** an.
 
 1. Wählen Sie auf der Konfigurationsseite **[!UICONTROL Erstellen]** erstellen [!DNL Microsoft®® Power Automate Flow Service] Konfiguration in AEM Forms.
-1. Im **[!UICONTROL Konfigurieren von Datenquellen für Microsoft® Power Automated]** Seite, geben Sie die **[!UICONTROL Client-ID]** (auch als Bewerbungs-ID bezeichnet), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth-URL]** und **[!UICONTROL URL der dynamischen Umgebung]**. Verwenden Sie die Client-ID, den geheimen Client-Schlüssel, die OAuth-URL und die ID der Dynamics-Umgebung. Verwenden Sie die Option „Endpunkte“ in der Benutzeroberfläche der Microsoft® Azure Active Directory-Anwendung, um die OAuth-URL zu finden. Öffnen Sie die [Meine Flüsse](https://powerautomate.microsoft.com/de-de/) und wählen Sie Eigene Flüsse aus. Verwenden Sie die in URL als Dynamics-Umgebungs-ID aufgeführte ID.
+1. Geben Sie auf der Seite **[!UICONTROL Konfigurieren von Dataverse für Microsoft® Power Automate]** die **[!UICONTROL Client-ID]** (auch als Anwendungs-ID bezeichnet), den **[!UICONTROL geheimen Client-Schlüssel]**, die **[!UICONTROL OAuth-URL]** und die **[!UICONTROL URL der Dynamics-Umgebung]** an. Verwenden Sie die Client-ID, den geheimen Client-Schlüssel, die OAuth-URL und die ID der Dynamics-Umgebung. Verwenden Sie die Option „Endpunkte“ in der Benutzeroberfläche der Microsoft® Azure Active Directory-Anwendung, um die OAuth-URL zu finden. Öffnen Sie die [Meine Flüsse](https://powerautomate.microsoft.com/de-de/) und wählen Sie Eigene Flüsse aus. Verwenden Sie die in URL als Dynamics-Umgebungs-ID aufgeführte ID.
 1. Auswählen **[!UICONTROL Verbinden]**. Wenn Sie dazu aufgefordert werden, melden Sie sich bei Ihrem Microsoft® Azure-Konto an. Wählen Sie **[!UICONTROL Speichern]** aus.
 
 ### Veröffentlichen Sie sowohl die Cloud-Konfigurationen des Microsoft® Power Automate Dataverse als auch des Microsoft® Power Automate Flow Service. {#publish-microsoft-power-automate-dataverse-cloud-configuration}
 
-1. Navigieren Sie zu **[!UICONTROL Instrumente]** ![Hammer](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® Power Automated Data]** und öffnen Sie den Konfigurationscontainer, den Sie zuvor erstellt haben [Microsoft® Power Automate Data Cloud-Konfiguration erstellen](#microsoft-power-automate-dataverse-cloud-configuration) Abschnitt.
+1. Navigieren Sie zu **[!UICONTROL Tools]** ![Hammersymbol](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® Power Automate Dataverse]** und öffnen Sie den Konfigurations-Container, den Sie zuvor im Abschnitt [Erstellen einer Cloud-Konfiguration des Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration) erstellt haben.
 1. Wählen Sie die `dataverse` Konfiguration und wählen Sie **[!UICONTROL Veröffentlichen]**.
 1. Wählen Sie auf der Seite Veröffentlichen die Option **[!UICONTROL Alle Konfigurationen]** und wählen **[!UICONTROL Veröffentlichen]**. Veröffentlichen Sie sowohl die Cloud-Konfigurationen des Power Automate Dataverse als auch die des Power Automate Flow Service.
 
@@ -122,7 +122,7 @@ Nachdem Sie [Ihre Instanz von Forms as a Cloud Service mit Microsoft® Power Aut
 1. Melden Sie sich bei Ihrer Autoreninstanz an, wählen Sie Ihr adaptives Formular aus und klicken Sie auf **[!UICONTROL Eigenschaften]**.
 1. Suchen Sie im Konfigurations-Container den im Abschnitt erstellten Container und wählen Sie ihn aus. [Microsoft® Power Automate Data Cloud-Konfiguration erstellen](#microsoft-power-automate-dataverse-cloud-configuration)und wählen Sie **[!UICONTROL Speichern und schließen]**.
 1. Öffnen Sie das adaptive Formular zur Bearbeitung und navigieren Sie zum Abschnitt **[!UICONTROL Übermittlung]** der Eigenschaften des Containers für adaptive Formulare.
-1. Im Eigenschaftencontainer, für **[!UICONTROL Sendeaktionen]** wählen Sie **[!UICONTROL Netzautomatisierungsfluss aufrufen]** und wählen Sie eine **[!UICONTROL Stromautomatisierungsfluss]**. Wählen Sie den erforderlichen Fluss aus, und die Daten von adaptiven Formularen werden bei der Übermittlung übermittelt.
+1. Wählen Sie im Eigenschaften-Container für **[!UICONTROL Sendeaktionen]** die Option **[!UICONTROL Power Automate-Fluss aufrufen]** aus und wählen Sie dann einen **[!UICONTROL Power Automate-Fluss]** aus. Wählen Sie den erforderlichen Fluss aus, und die Daten von adaptiven Formularen werden bei der Übermittlung übermittelt.
 
    ![Konfigurieren der Übermittlungsaktion](assets/submission.png)
 
@@ -193,8 +193,8 @@ Stellen Sie vor dem Übermitteln des adaptiven Formulars sicher, dass der Trigge
 ## Siehe auch
 
 * [Erstellen eines adaptiven Formulars](creating-adaptive-form-core-components.md)
-* [Konfigurieren einer Sendeaktion](configure-submit-actions-core-components.md)
-* [Adobe Experience Manager Connector für Microsoft® Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
+* [Konfigurieren einer Übermittlungsaktion](configure-submit-actions-core-components.md)
+* [Adobe Experience Manager Connector für Microsoft® Power Automate](https://learn.microsoft.com/de-de/connectors/adobeexperiencemanag/)
 * [Verbinden eines adaptiven Formulars mit Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
 
 

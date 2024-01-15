@@ -4,8 +4,8 @@ description: Erfahren Sie mehr über Wartungsaufgaben in AEM as a Cloud Service 
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: 35223fba365cf55fca51eb8420b7217ec3e95ccc
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 83%
+source-wordcount: '1127'
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
   <tr>
     <td>Versionsbereinigung</td>
     <td>Adobe</td>
-    <td>Für bestehende Umgebungen (die vor dem 4. Februar 2024 erstellt wurden) ist die Bereinigung deaktiviert und wird in Zukunft nur aktiviert, wenn der Kunde dies explizit aktiviert hat. Zu diesem Zeitpunkt kann die Bereinigung auch mit benutzerdefinierten Werten konfiguriert werden.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Für neue Umgebungen (die ab dem 4. Februar 2024 erstellt wurden) ist die Bereinigung standardmäßig mit den unten stehenden Werten aktiviert, wobei Kunden benutzerdefinierte Werte konfigurieren können.
+    <td>Für bestehende Umgebungen (die vor dem Montag, 4. Februar 2024 erstellt wurden) ist die Bereinigung deaktiviert und wird in Zukunft nur aktiviert, wenn die Kundin oder der Kunde dies explizit vornimmt. Zu dem Zeitpunkt kann die Bereinigung auch mit benutzerdefinierten Werten konfiguriert werden.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Für neue Umgebungen (die ab dem Montag, 4. Februar 2024 erstellt wurden) ist die Bereinigung standardmäßig mit den unten stehenden Werten aktiviert, wobei Kundinnen und Kunden benutzerdefinierte Werte konfigurieren können.
      <ol>
        <li>Versionen, die älter als 30 Tage sind, werden entfernt</li>
        <li>Die letzten 5 Versionen der letzten 30 Tage werden beibehalten</li>
@@ -56,7 +56,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
   <tr>
     <td>Bereinigung von Prüfprotokollen</td>
     <td>Adobe</td>
-    <td>Für bestehende Umgebungen (die vor dem 4. Februar 2024 erstellt wurden) ist die Bereinigung deaktiviert und wird in Zukunft nur aktiviert, wenn der Kunde dies explizit aktiviert hat. Zu diesem Zeitpunkt kann die Bereinigung auch mit benutzerdefinierten Werten konfiguriert werden.<br><br> <!-- See above for the two line breaks -->Für neue Umgebungen (die ab dem 4. Februar 2024 erstellt wurden) ist die Bereinigung standardmäßig unter der Variablen <code>/content</code> Knoten des Repositorys gemäß folgendem Verhalten:
+    <td>Für bestehende Umgebungen (die vor dem Montag, 4. Februar 2024 erstellt wurden) ist die Bereinigung deaktiviert und wird in Zukunft nur aktiviert, wenn die Kundin oder der Kunde dies explizit vornimmt. Zu dem Zeitpunkt kann die Bereinigung auch mit benutzerdefinierten Werten konfiguriert werden.<br><br> <!-- See above for the two line breaks -->Für neue Umgebungen (die ab dem Montag, 4. Februar 2024 erstellt wurden) ist die Bereinigung standardmäßig unter dem Knoten <code>/content</code> des Repositorys gemäß folgendem Verhalten aktiviert:
      <ol>
        <li>Für die Replikationsprüfung werden Prüfprotokolle entfernt, die älter als 3 Tage sind</li>
        <li>Bei der DAM (Assets)-Prüfung werden Prüfprotokolle entfernt, die älter als 30 Tage sind</li>
@@ -75,7 +75,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
     <td>Ad-hoc-Aufgabenbereinigung</td>
     <td>Kunde</td>
     <td>
-    <p>Das muss in Git geschehen. Überschreiben Sie den Konfigurationsknoten des nativen Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code>.</p>
+    <p>Das muss in Git geschehen. Überschreiben Sie den vorkonfigurierten Konfigurationsknoten des Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code>.</p>
     <p>Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster. Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten hinzufügen. Benennen Sie ihn <code>granite_TaskPurgeTask</code>, wobei Sie das Attribut <code>sling:resourceType</code> auf <code>granite/operations/components/maintenance/task</code> und das Attribut <code>granite.maintenance.name</code> auf <code>TaskPurge</code> setzen. Konfigurieren Sie die OSGi-Eigenschaften. Eine Liste der Eigenschaften finden Sie unter <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code>.</p>
   </td>
   </tr>
@@ -83,7 +83,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
     <td>Workflow-Bereinigung</td>
     <td>Kunde</td>
     <td>
-    <p>Das muss in Git geschehen. Überschreiben Sie den Konfigurationsknoten des nativen Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code>. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.</p>
+    <p>Das muss in Git geschehen. Überschreiben Sie den Standardkonfigurationsknoten des Wartungsfensters unter <code>/libs</code>, indem Sie Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code> erstellen. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.</p>
     <p>Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_WorkflowPurgeTask</code>). Informationen zum Konfigurieren der OSGi-Eigenschaften finden Sie in der <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=de#regular-purging-of-workflow-instances">AEM 6.5-Dokumentation zu Wartungsaufgaben</a>.</p>
   </td>
   </tr>
@@ -91,7 +91,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
     <td>Projektbereinigung</td>
     <td>Kunde</td>
     <td>
-    <p>Das muss in Git geschehen. Überschreiben Sie den Konfigurationsknoten des nativen Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code>. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.</p>
+    <p>Das muss in Git geschehen. Überschreiben Sie den Standardkonfigurationsknoten des Wartungsfensters unter <code>/libs</code>, indem Sie Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code> erstellen. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.</p>
     <p>Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_ProjectPurgeTask</code>). Siehe die Liste der OSGi-Eigenschaften unter „Bereinigungskonfiguration von Adobe-Projekten“.</p>
   </td>
   </tr>

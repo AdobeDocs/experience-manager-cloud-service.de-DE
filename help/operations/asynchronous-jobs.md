@@ -5,7 +5,7 @@ exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '856'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ Zu diesen Vorgängen gehören:
 * Abrufen von Assets, die über dem festgelegten Schwellenwert liegen, aus einer Remote-AEM-Bereitstellung
 * Ausrollen von Live Copies
 
-Sie können den Status asynchroner Aufträge im **[!UICONTROL Hintergrundvorgänge]** Dashboard am **Globale Navigation** > **Instrumente** > **Allgemein** > **Aufträge**.
+Sie können den Status von asynchronen Aufträgen im Dashboard **[!UICONTROL Hintergrundvorgänge]** unter **Globale Navigation** > **Tools** > **Allgemein** > **Aufträge** einsehen.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Wenn AEM einen Vorgang asynchron verarbeitet, erhalten Sie eine Benachrichtigung
 
 Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie zur Seite **[!UICONTROL Hintergrundvorgänge]**.
 
-1. Wählen Sie in der Experience Manager-Benutzeroberfläche die Option **Globale Navigation** > **Instrumente** > **Allgemein** > **Aufträge**.
+1. Wählen Sie in der Benutzeroberfläche von Experience Manager die Option **Globale Navigation** > **Tools** > **Allgemein** > **Aufträge** aus.
 
 1. Überprüfen Sie die Details für die Vorgänge auf der Seite **[!UICONTROL Hintergrundvorgänge]**.
 
@@ -71,7 +71,7 @@ Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie z
 
 ## Konfigurieren der Optionen für die asynchrone Auftragsverarbeitung {#configure}
 
-Es gibt mehrere Optionen zu asynchronen Aufträgen, die konfiguriert werden können. Die folgenden Beispiele zeigen, wie dies mit dem Konfigurations-Manager in einem lokalen Entwicklungssystem durchgeführt werden kann.
+Es gibt verschiedene Optionen für asynchrone Aufträge, die konfiguriert werden können. Die folgenden Beispiele zeigen, wie dies mit dem Konfigurations-Manager in einem lokalen Entwicklungssystem durchgeführt werden kann.
 
 >[!NOTE]
 >

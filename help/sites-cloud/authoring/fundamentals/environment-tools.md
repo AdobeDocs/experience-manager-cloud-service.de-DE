@@ -5,7 +5,7 @@ exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
 source-wordcount: '2161'
-ht-degree: 87%
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisiere
 
 ## Verwalten Ihrer Site {#managing-your-site}
 
-Die **Sites** Mit der Konsole können Sie auf Ihrer Website navigieren und diese verwalten. Verwenden Sie dazu die Kopfzeilenleiste, Symbolleiste, Aktionssymbole (für die ausgewählte Ressource zutreffend), Breadcrumbs und ggf. sekundäre Leisten (z. B. Timeline und Verweise).
+Über die **Sites-Konsole** können Sie zu Ihrer Website navigieren und diese verwalten. Hierfür stehen neben der Kopfzeilen- und Symbolleiste auch Aktionssymbole (für die jeweils ausgewählte Ressource) sowie Breadcrumbs und ggf. sekundäre Leisten (z. B. für Timeline und Verweise) zur Verfügung.
 
 Zum Beispiel in der Spaltenansicht:
 
@@ -73,7 +73,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
   Der Komponenten-Browser wird auf der linken Seite des Fensters geöffnet.
 
-  Um Ihrer Seite eine Komponente hinzuzufügen, klicken Sie auf die gewünschte Komponente und ziehen Sie sie an die gewünschte Position.
+  Um der Seite eine Komponente hinzuzufügen, klicken Sie auf die gewünschte Komponente und ziehen Sie sie an die gewünschte Position.
 
   ![Komponenten-Browser auf einem Desktop-Gerät](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
@@ -90,7 +90,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
    * Komponenten nach Namen filtern
    * Mittels Dropdown-Auswahl die Anzeige auf eine bestimmte Gruppe begrenzen
 
-  Für eine detailliertere Beschreibung der Komponente können Sie das Informationssymbol neben der Komponente im **Komponenten** Browser (sofern verfügbar). Zum Beispiel für das **Inhaltsfragment**:
+  Für eine detailliertere Beschreibung der Komponente können Sie (falls verfügbar) im **Komponenten-Browser** das Informationssymbol neben der Komponente auswählen. Zum Beispiel für das **Inhaltsfragment**:
 
   ![Komponenten-Browser-Informationen](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -149,7 +149,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
   Der Asset-Browser wird auf der linken Seite des Fensters geöffnet.
 
-  Um ein Asset zu Ihrer Seite hinzuzufügen, klicken Sie auf das gewünschte Asset und ziehen Sie es auf die gewünschte Komponente oder Position.
+  Um der Seite ein Asset hinzuzufügen, klicken Sie auf das gewünschte Asset und ziehen Sie es in die gewünschte Komponente oder Position.
 
   ![Asset-Browser auf Desktop-Gerät](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 
@@ -163,13 +163,13 @@ Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den 
 
 ## Inhaltsstruktur {#content-tree}
 
-Die **Inhaltsstruktur** gibt einen Überblick über alle Komponenten auf der Seite in einer Hierarchie, sodass Sie auf einen Blick sehen können, wie die Seite aufgebaut ist.
+Die **Inhaltsstruktur** bietet einen Überblick über alle auf der Seite verwendeten Komponenten in einer hierarchischen Darstellung, sodass Sie direkt feststellen können, wie die Seite aufgebaut ist.
 
 Die Inhaltsstruktur befindet sich auf einer Registerkarte im seitlichen Bedienfeld (zusammen mit dem Asset-Browser). Um das Bedienfeld zu öffnen (oder zu schließen), verwenden Sie das Symbol links oben in der Symbolleiste:
 
 ![Schaltfläche „Inhaltsstruktur“](/help/sites-cloud/authoring/assets/content-tree-button.png)
 
-Wenn Sie das Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. Wählen Sie ggf. die Registerkarte **Inhaltsstruktur**. Mit dieser Strukturansicht Ihrer Seite oder Vorlage können Sie leicht nachvollziehen, wie die darauf verwendeten Komponenten hierarchisch strukturiert sind. Auf einer komplexer gestalteten Seite können Sie so zudem einfacher zwischen Komponenten auf der Seite wechseln.
+Wenn Sie das Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. Wählen Sie ggf. die Registerkarte **Inhaltsstruktur**. Mit dieser Strukturansicht Ihrer Seite oder Vorlage können Sie leicht nachvollziehen, wie die darauf verwendeten Komponenten hierarchisch strukturiert sind. Auf einer komplexeren Seite können Sie so zudem einfacher zwischen Komponenten auf der Seite wechseln.
 
 ![Inhaltsstruktur](/help/sites-cloud/authoring/assets/content-tree-editor.png)
 
@@ -189,7 +189,7 @@ Durch Klicken auf die Komponente wird diese im Seiteneditor markiert. Die verfü
 
   Die Komponenten einer Basisseite weisen die üblichen Optionen auf.
 
-  Wenn Sie in der Struktur auf eine Komponente klicken, die bearbeitbar ist, wird rechts neben ihrem Namen ein Schraubenschlüssel-Symbol angezeigt. Durch Klicken auf dieses Symbol wird das Dialogfeld &quot;Bearbeiten&quot;für die Komponente gestartet.
+  Wenn Sie in der Struktur auf eine Komponente klicken, die bearbeitbar ist, wird rechts neben ihrem Namen ein Schraubenschlüssel-Symbol angezeigt. Durch Klicken auf dieses Symbol wird das Dialogfeld „Bearbeiten“ für die Komponente geöffnet.
 
   ![Schaltfläche zum Bearbeiten einer Inhaltsstruktur](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
@@ -271,8 +271,8 @@ Darüber hinaus können über die **Seiteninformationen** ggf. auch Analysen und
 Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über die jeweils unterschiedliche Aktionen durchgeführt werden können:
 
 * [Bearbeiten:](/help/sites-cloud/authoring/fundamentals/editing-content.md) Der Modus zum Bearbeiten des Seiteninhalts.
-* [Layout](/help/sites-cloud/authoring/features/responsive-layout.md) - ermöglicht das Erstellen und Bearbeiten eines responsiven Layouts abhängig vom Gerät (wenn die Seite auf einem Layout-Container basiert)
-* [Zielsetzung:](/help/sites-cloud/authoring/personalization/targeted-content.md) Steigerung der Inhaltsrelevanz durch Zielsetzung und Messung über alle Kanäle hinweg.
+* [Layout](/help/sites-cloud/authoring/features/responsive-layout.md): Ermöglicht es, das responsive Layout gerätespezifisch zu erstellen und zu bearbeiten (wenn die Seite auf einem Layout-Container basiert).
+* [Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md): Steigerung der Inhaltsrelevanz durch Targeting und Messung über alle Kanäle hinweg.
 * [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp): Ermöglicht es, eine Seite in dem Zustand anzuzeigen, den sie zu einem bestimmten früheren Zeitpunkt aufgewiesen hat.
 * [Live Copy-Status:](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status): Für einen schnellen Überblick über den Live Copy-Status und darüber, welche Komponenten übernommen oder nicht übernommen wurden.
 * [Entwicklermodus](/help/implementing/developing/tools/developer-mode.md)
@@ -288,7 +288,7 @@ Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Sym
 >* Abhängig von den Merkmalen der Seite sind einige Modi ggf. nicht verfügbar.
 >* Für den Zugriff auf einige Modi sind die entsprechenden Berechtigungen erforderlich.
 >* Aus Platzgründen steht der Entwicklermodus auf Mobilgeräten nicht zur Verfügung.
->* Es gibt eine [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) zum Umschalten zwischen **Vorschau** und dem derzeit ausgewählten Modus (z. B. **Bearbeiten**, **Layout** usw.).
+>* Mit dem [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` können Sie zwischen der **Vorschau** und dem aktuell ausgewählten Modus (z. B. **Bearbeiten**, **Layout**) wechseln.
 >
 
 ## Pfadauswahl {#path-selection}
@@ -315,10 +315,10 @@ Der Pfad-Browser ist wie die [Spaltenansicht](/help/sites-cloud/authoring/gettin
 
 ![Pfad-Browser](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Sobald eine Ressource ausgewählt wurde, wird die **Auswählen** -Schaltfläche oben rechts im Dialogfeld wird aktiviert. Wählen Sie diese Option aus, um die Auswahl zu bestätigen oder **Abbrechen** abbrechen.
+* Sobald eine Ressource ausgewählt ist, wird die Schaltfläche **Auswählen** oben rechts im Dialogfeld aktiviert. Wählen Sie diese Option aus, um die Auswahl zu bestätigen, oder wählen Sie zum Abbrechen die Option **Abbrechen** aus.
 * Wenn der Kontext die Auswahl mehrerer Ressourcen zulässt, wird bei Auswahl einer Ressource auch die Schaltfläche **Auswählen** aktiviert, aber auch die Anzahl der ausgewählten Ressourcen wird oben rechts im Fenster angezeigt. Klicken Sie auf das **X** neben der Zahl, um die Auswahl für alle aufzuheben.
 * Wenn Sie durch den Baum navigieren, wird Ihre Position in den Breadcrumbs am oberen Rand des Dialogfelds angezeigt. Mithilfe der Breadcrumbs können Sie innerhalb der Ressourcenhierarchie schnell von einem Punkt zu einem anderen wechseln.
-* Sie können jederzeit das Suchfeld oben im Dialogfeld verwenden. Klicken Sie im Suchfeld auf **X**, wenn Sie die Suche löschen möchten.
+* Darüber hinaus können Sie jederzeit das Suchfeld oben im Dialogfeld verwenden. Klicken Sie im Suchfeld auf **X**, wenn Sie die Suche löschen möchten.
 * Sie können Ihre Suche auch eingrenzen, indem Sie die Filteroptionen einblenden und die Ergebnisse nach Pfad filtern.
 
   ![Option „Filter“](/help/sites-cloud/authoring/assets/filters-option.png)

@@ -5,7 +5,7 @@ exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '583'
-ht-degree: 84%
+ht-degree: 86%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 84%
 [[!DNL Experience Manager Forms] Data Integration](data-integration.md) bietet eine [!DNL Azure]-Speicherkonfiguration, um Formulare mit [!DNL Azure]-Speicher-Services zu integrieren. Das Formulardatenmodell kann verwendet werden, um adaptive Formulare zu erstellen, die mit [!DNL Azure]-Server interagieren, um Unternehmens-Workflows zu ermöglichen. Zum Beispiel:
 
 * Schreiben von Daten in [!DNL Azure] bei Übermittlung von adaptiven Formularen.
-* Daten schreiben in [!DNL Azure] durch benutzerdefinierte Entitäten, die im Formulardatenmodell definiert sind, und umgekehrt.
+* Schreiben von Daten in [!DNL Azure] durch benutzerdefinierte Entitäten, die im Formulardatenmodell definiert sind, und umgekehrt.
 * Abfragen eines [!DNL Azure]-Servers nach Daten und Auffüllen adaptiver Formulare.
 * Lesen Sie Daten vom [!DNL Azure]-Server.
 

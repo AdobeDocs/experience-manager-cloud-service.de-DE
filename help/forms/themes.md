@@ -1,12 +1,12 @@
 ---
-title: Wie können Designs erstellt und verwendet werden, um ein adaptives Formular zu gestalten?
-description: Verwenden Sie Designs für adaptive Formulare, um ein adaptives Formular zu gestalten und eine visuelle Identität bereitzustellen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
+title: Wie können Designs erstellt und für das Formatieren adaptiver Formulare verwendet werden?
+description: Verwenden Sie Designs adaptiver Formulare, um ein adaptives Formular zu formatieren und ihm eine visuelle Identität zu verleihen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '5558'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 Sie können Designs erstellen und anwenden, um ein adaptives Formular<!-- or an interactive communication--> zu formatieren. Zu einem Design gehören Stildetails für die Komponenten und Bedienfelder. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, spiegeln die entsprechenden Komponenten den angegebenen Stil wider. Das Design wird unabhängig, ohne Verweis auf ein adaptives Formular<!-- or interactive communication -->, verwaltet.
@@ -653,7 +653,7 @@ Zum Anzeigen der generierten CSS-Datei stehen die folgenden Optionen zur Verfüg
     
     * **Design-Editor:**
     
-    Mit dem Design-Editor können Sie Stile zum Formatieren eines Formulars erstellen &lt;!-- oder einer interaktiven Kommunikation -->. Sie können die Formatierung von Komponenten in einem Design festlegen, die die Konsistenz des Erscheinungsbilds bei mehreren Formularen, die Sie entwickeln, ermöglichen. Es wird empfohlen, Formatierungsinformationen in einem Design anzugeben und dann das Design auf ein Formular anzuwenden.
+    Mit dem Design-Editor können Sie Stile zum Formatieren eines Formulars erstellen &lt;!-- oder einer interaktiven Kommunikation -->. Sie können auch die Formatierung von Komponenten in einem Design festlegen, um die Konsistenz des Look-and-Feel zwischen verschiedenen Formularen, die Sie entwickeln, zu gewährleisten. Es wird empfohlen, Formatierungsinformationen in einem Design anzugeben und dann das Design auf ein Formular anzuwenden.
     
     * **Inline-Formatierung:**
     

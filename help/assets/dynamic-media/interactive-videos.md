@@ -586,7 +586,7 @@ Die vorhandene Schnellansichtsimplementierung stellt normalerweise eine Kette vo
 1. Die Backend-Logik gibt dem Frontend-Code die entsprechenden Schnellansichtsdaten oder -inhalte zurück.
 1. Der Frontend-Code lädt die Schnellansichtsdaten oder -inhalte.
 1. Optional wandelt der Frontend-Code die geladenen Schnellansichtsdaten in eine HTML-Darstellung um.
-1. Der Frontend-Code zeigt ein modales Dialogfeld oder Bedienfeld an und rendert den HTML-Inhalt auf dem Bildschirm für den Benutzer.
+1. Der Frontend-Code zeigt ein modales Dialogfeld an und rendert den HTML-Inhalt auf dem Bildschirm der Benutzenden.
 
 Diese Aufrufe stellen keine unabhängigen öffentlichen API-Aufrufe dar, die durch die Web-Seitenlogik in einem beliebigen Schritt aufgerufen werden können. Vielmehr handelt es sich um einen verketteten Aufruf, in dem der jeweils nächste Schritte in der letzten Phase (Callback) des vorherigen Schritts ausgeblendet ist.
 
@@ -598,7 +598,7 @@ In einem solchen Ereignis-Handler nimmt der Frontend-Code Folgendes vor:
 * Er erstellt anhand der Miniaturen eine Schnellansichts-URL.
 * Er löst den Schnellansichts-Ladevorgang vom Backend aus und rendert die Schnellansicht auf dem Bildschirm, um sie anzuzeigen.
 
-Außerdem unterstützt der interaktive Video-Viewer den Vollbildmodus. Der Trigger wählt eine Miniaturansicht aus, ohne den Vollbildmodus zu verlassen. Um diese Funktion zu erzielen, ändern Sie den Frontend-Code so, dass das modale Dialogfeld für die Schnellansicht am Container des Viewers angehängt ist. Fügen Sie keinen Dokument-TEXT oder ein anderes Web-Seitenelement hinzu, das nicht verfügbar ist, wenn der Viewer im Vollbildmodus angezeigt wird. Der Code, der für diese Aufgabe zuständig ist, muss an einem weiteren Viewer-Callback lauschen, der gesendet wird, nachdem der Viewer auf der Seite geladen wurde.
+Außerdem unterstützt der interaktive Video-Viewer den Vollbildmodus. Benutzende können Schnellansichten auslösen, indem sie eine Miniatur auswählen, ohne das Vollbild verlassen zu müssen. Um diese Funktion zu erzielen, ändern Sie den Frontend-Code so, dass das modale Dialogfeld für die Schnellansicht am Container des Viewers angehängt ist. Fügen Sie keinen Dokument-TEXT oder ein anderes Web-Seitenelement hinzu, das nicht verfügbar ist, wenn der Viewer im Vollbildmodus angezeigt wird. Der Code, der für diese Aufgabe zuständig ist, muss an einem weiteren Viewer-Callback lauschen, der gesendet wird, nachdem der Viewer auf der Seite geladen wurde.
 
 Der von Experience Manager zurückgegebene Einbettungs-Code verfügt über einen einsatzbereiten Ereignis-Handler. Er ist auskommentiert, wie im folgenden hervorgehobenen Code-Fragment zu sehen ist:
 

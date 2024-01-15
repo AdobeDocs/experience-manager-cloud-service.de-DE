@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2121'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 83%
 
 Mit der [!DNL Experience Manager Forms]-Datenintegration können Sie unterschiedliche Datenquellen konfigurieren und Verbindungen zu ihnen herstellen. Die folgenden Datenquellen werden standardmäßig unterstützt:
 
-* Relationale Datenbanken - MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], postgreSQL und [!DNL Oracle RDBMS]
+* Relationale Datenbanken – MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], postgreSQL und [!DNL Oracle RDBMS]
 * RESTful-Webservices
 * SOAP-basierte Webservices
 * OData-Dienste (Version 4.0)
@@ -283,7 +283,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
 
    >[!NOTE]
    >
-   Wählen Sie den OAuth 2.0-Authentifizierungstyp aus, mit dem eine Verbindung hergestellt werden soll [!DNL Microsoft®® Dynamics] Dienste, die den OData-Endpunkt als Dienststamm verwenden.
+   Wählen Sie den Authentifizierungstyp OAuth 2.0 aus, um eine Verbindung mit [!DNL Microsoft®® Dynamics]-Services herzustellen, die den OData-Endpunkt als Service-Stamm nutzen.
 
 1. Auswählen **[!UICONTROL Erstellen]** , um die Cloud-Konfiguration für den OData-Dienst zu erstellen.
 

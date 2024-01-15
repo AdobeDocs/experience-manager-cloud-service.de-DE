@@ -5,7 +5,7 @@ exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '2045'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -130,7 +130,7 @@ Weitere Authoring-Werkzeuge wie das Ziehen und Ablegen zusätzlicher Komponenten
 
 ## SPAs und der AEM-SPA-Editor {#spa-apps-and-the-aem-spa-editor}
 
-Wenn Sie erfahren, wie sich ein SPA für den Benutzer verhält und dann die SPA Seite überprüfen, können Sie besser verstehen, wie eine SAP-App mit dem SPA Editor in AEM funktioniert.
+Wenn Sie wissen, wie sich eine SPA bei Benutzenden verhält, und dann die SPA-Seite prüfen, können Sie besser verstehen, wie eine SPA mit dem SPA-Editor in AEM zusammenarbeitet.
 
 ### Verwenden eines SPA-Programms {#using-an-spa-application}
 
@@ -207,9 +207,9 @@ Im nächsten Abschnitt [Laden eines SPA-Programms](#loading-a-spa-application) w
 
 ### Interaktion mit dem SPA-Editor {#interaction-with-the-spa-editor}
 
-Mithilfe der WKND SPA Project-Beispielanwendung ist klar, wie sich die App verhält und beim Veröffentlichen geladen wird. Dazu werden Inhaltsdienste für die Bereitstellung von JSON-Inhalten und das asynchrone Laden von Ressourcen verwendet.
+Mithilfe der exemplarischen WKND-SPA-Projektanwendung wird deutlich, wie sich die App verhält und beim Veröffentlichen geladen wird. Dabei kommen Inhaltsdienste für die JSON-Inhaltsbereitstellung und das asynchrone Laden von Ressourcen zum Einsatz.
 
-Für den Inhaltsautor ist die Inhaltserstellung mit einem SPA-Editor außerdem nahtlos in AEM.
+Darüber hinaus ist die Inhaltserstellung mit einem SPA-Editor für Inhaltsautorinnen und Inhaltsautoren innerhalb von AEM nahtlos.
 
 Im folgenden Abschnitt werden wir uns den Vertrag ansehen, der es dem SPA-Editor erlaubt, Komponenten innerhalb der SPA mit AEM-Komponenten zu verbinden und so für ein nahtloses Bearbeitungserlebnis zu sorgen.
 
@@ -219,7 +219,7 @@ Im folgenden Abschnitt werden wir uns den Vertrag ansehen, der es dem SPA-Editor
 
 1. Überprüfen Sie mithilfe der integrierten Entwickler-Tools Ihres Browsers den Inhalt der Seite. Wählen Sie mit dem Auswahl-Tool eine bearbeitbare Komponente auf der Seite aus und zeigen Sie die Elementdetails an.
 
-   Die Komponente verfügt über ein neues Datenattribut `data-cq-data-path`.
+   Die Komponente verfügt über ein neues Datenattribut (`data-cq-data-path`).
 
    ![Inspizieren von WKND-SPA-Projekt-Elementen](assets/wknd-inspector.png)
 
@@ -229,7 +229,7 @@ Im folgenden Abschnitt werden wir uns den Vertrag ansehen, der es dem SPA-Editor
 
    Dieser Pfad ermöglicht ein Abrufen und Verknüpfen des Konfigurationsobjekts mit Bearbeitungskontext der einzelnen Komponenten.
 
-   Dies ist das einzige Markup-Attribut, das erforderlich ist, damit der Editor das Element als bearbeitbare Komponente innerhalb der SPA erkennen kann. Basierend auf diesem Attribut bestimmt der SPA Editor, welche bearbeitbare Konfiguration mit der Komponente verknüpft ist, sodass der richtige Frame, die richtige Symbolleiste usw. geladen wird.
+   Dies ist das einzige Markup-Attribut, das erforderlich ist, damit der Editor das Element als bearbeitbare Komponente innerhalb der SPA erkennen kann. Auf Grundlage dieses Attributs bestimmt der SPA-Editor, welche bearbeitbare Konfiguration mit der Komponente verknüpft ist, sodass der richtige Rahmen, die richtige Symbolleiste usw. geladen wird.
 
    Einige spezifische Klassennamen werden auch für die Kennzeichnung von Platzhaltern und für die Drag-and-Drop-Funktion von Assets hinzugefügt.
 
@@ -241,7 +241,7 @@ Im folgenden Abschnitt werden wir uns den Vertrag ansehen, der es dem SPA-Editor
 
 ## Headful und Headless in AEM {#headful-headless}
 
-SPAs können mit flexiblen Integrationsstufen innerhalb von AEM aktiviert werden, einschließlich SPAs, die außerhalb von AEM entwickelt und gepflegt werden. Außerdem können SPA innerhalb von AEM verwendet werden und gleichzeitig AEM verwenden, um Inhalte Headless an zusätzliche Endpunkte zu senden.
+SPAs können mit flexiblen Integrationsstufen innerhalb von AEM aktiviert werden, einschließlich SPAs, die außerhalb von AEM entwickelt und gepflegt werden. Darüber hinaus können SPAs innerhalb von AEM verwendet werden und gleichzeitig AEM nutzen, um Inhalte als Headless-Inhalte an zusätzliche Endpunkte zu liefern.
 
 >[!TIP]
 >

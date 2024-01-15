@@ -7,7 +7,7 @@ exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
@@ -31,7 +31,7 @@ Bevor Sie diese Funktion verwenden, müssen Sie diesen Anweisungen folgen, um si
 
 1. Melden Sie sich bei der Adobe Admin Console an (https://adminconsole.adobe.com/).
 1. Stellen Sie sicher, dass oben rechts die richtige Kennung der IMS-Organisation ausgewählt ist.
-1. Klicken Sie auf die Navigationsoption Produkte .
+1. Klicken Sie auf die Navigationsoption „Produkte“.
 1. Überprüfen Sie, ob „Adobe Experience Manager as a Cloud Service“ für die IMS-Organisation bereitgestellt wurde.
 1. Überprüfen Sie, ob „Adobe Analytics“ für die IMS-Organisation bereitgestellt wurde.
 1. Rufen Sie Cloud Manager auf (https://experience.adobe.com/cloud-manager).
@@ -46,11 +46,11 @@ Die Umgebung sollte jetzt für die Automatisierung der Einrichtung von Experienc
 1. Navigieren Sie zu **Sites** und wählen Sie den Stamm der Site aus, die in Adobe Analytics integriert werden soll.
 1. Erweitern Sie das Menü der Seitenleiste und wählen Sie **Einrichten von Analytics**.
 
-   Dies ist eine neue Option in der Seitenleiste, die ein Bedienfeld öffnet, das Steuerelemente und Status für die Automatisierung des Experience Cloud-Setups bereitstellt.
+   Dies ist eine neue Option in der Seitenleiste, durch die sich ein Bedienfeld öffnet, das Steuerelemente und Status für die Automatisierung der Experience Cloud-Einrichtung bereitstellt.
 1. Wählen Sie die **Integration von Analytics** Schaltfläche.
 1. Geben Sie im daraufhin angezeigten Dialogfeld einen Namen für die **Report Suite-ID** ein.
 
-   Diese Zeichenfolge wird verwendet, um eine [Report Suite-ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=de) in Adobe Analytics als Datenspeicher für die Analysedaten für die ausgewählte AEM Site. An die angegebene Zeichenfolge werden Umgebungs- und Ebenen-IDs angehängt, um die Eindeutigkeit sicherzustellen.
+   Diese Zeichenfolge wird verwendet, um in Adobe Analytics eine neue [Report Suite-ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=de) als Datenspeicher für die Analysedaten für die ausgewählte AEM-Site zu erstellen. An die angegebene Zeichenfolge werden Umgebungs- und Ebenen-IDs angehängt, um die Eindeutigkeit sicherzustellen.
 
 1. Aktualisieren Sie die Seite und das Bedienfeld und wählen Sie **Überprüfen des Integrationsstatus** , um den Status der Automatisierung zu überprüfen.
 

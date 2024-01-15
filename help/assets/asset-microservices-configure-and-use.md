@@ -8,7 +8,7 @@ exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '2859'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -194,7 +194,7 @@ Nachbearbeitungs-Workflows oder [automatisch gestartete Workflows](https://exper
 Gehen Sie wie folgt vor, um [!DNL Experience Manager] eine Workflow-Konfiguration für die Nachbearbeitung hinzuzufügen:
 
 * Erstellen eines oder mehrerer Workflow-Modelle. Diese benutzerdefinierten Modelle werden in dieser Dokumentation als *Workflow-Modelle nach der Verarbeitung* bezeichnet. Es handelt sich um normale [!DNL Experience Manager]-Workflow-Modelle.
-* Fügen Sie diesen Modellen die erforderlichen Workflow-Schritte hinzu. Überprüfen Sie die Schritte aus dem Standard-Workflow und fügen Sie alle erforderlichen Standardschritte zum benutzerdefinierten Workflow hinzu. Die Schritte werden basierend auf einer Workflow-Modellkonfiguration für die Assets ausgeführt. Wenn beispielsweise Smart-Tagging beim Hochladen von Assets automatisch erfolgen soll, fügen Sie den Schritt zum benutzerdefinierten Workflow-Modell für die Nachbearbeitung hinzu.
+* Fügen Sie diesen Modellen die erforderlichen Workflow-Schritte hinzu. Überprüfen Sie die Schritte aus dem Standard-Workflow und fügen Sie dem benutzerdefinierten Workflow alle erforderlichen Standardschritte hinzu. Die Schritte werden basierend auf einer Workflow-Modellkonfiguration für die Assets ausgeführt. Wenn beispielsweise Smart-Tagging beim Hochladen von Assets automatisch erfolgen soll, fügen Sie den Schritt zum benutzerdefinierten Workflow-Modell für die Nachbearbeitung hinzu.
 * Fügen Sie am Ende den Schritt [!UICONTROL Abgeschlossener Prozess zum DAM-Workflow eines Asset-Updates] hinzu. Durch Hinzufügen dieses Schritts wird sichergestellt, dass Experience Manager weiß, wann die Verarbeitung abgeschlossen ist, und das Asset als verarbeitet markiert werden kann, d. h., dass beim Asset der Wert *Neu* angezeigt wird.
 * Erstellen Sie eine Konfiguration für den Custom Workflow Runner Service, mit der die Ausführung eines Nachbearbeitungs-Workflow-Modells entweder nach Pfad (Speicherort für Ordner) oder nach regulären Ausdrücken konfiguriert werden kann.
 
@@ -246,7 +246,7 @@ Wenn keine Nachbearbeitung erforderlich ist, erstellen und verwenden Sie ein „
    * Titel: Deaktivieren des automatisch gestarteten Workflows
    * Name: disable-auto-start-workflow
 1. Wählen Sie __Fertig__ aus, um das Workflow-Modell zu erstellen.
-1. __Auswählen__ und __Bearbeiten__ das erstellte Workflow-Modell
+1. __Wählen__ Sie das erstellte Workflow-Modell aus und __bearbeiten__ Sie es.
 1. Wählen Sie im Workflow-Modell-Editor die Option __Schritt 1__ aus der Modelldefinition aus und löschen Sie sie.
 1. Öffnen Sie das __seitliche Bedienfeld__ und wählen Sie __Schritte__ aus.
 1. Ziehen Sie den Schritt __Abgeschlossener Prozess zum DAM-Workflow eines Asset-Updates__ in die Modelldefinition.

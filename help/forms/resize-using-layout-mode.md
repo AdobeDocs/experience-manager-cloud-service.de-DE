@@ -1,6 +1,6 @@
 ---
-title: Wie verwende ich den Layout-Modus, um die Größe von Komponenten für adaptive Formulare zu ändern?
-description: Definieren Sie die Position der AEM Forms-Komponenten, lernen Sie den Layout-Modus zu öffnen, passen Sie die Größe von Komponenten an, ändern Sie die Größe von Bedienfeldern und definieren Sie das mehrspaltige Layout für ein Bedienfeld.
+title: Verwenden des Layout-Modus zum Ändern der Größe von Komponenten für adaptive Formulare?
+description: Definieren Sie die Position der AEM Forms-Komponenten, erfahren Sie, wie der Layout-Modus geöffnet wird, passen Sie die Größe von Komponenten an, ändern Sie die Größe von Bedienfeldern und definieren Sie ein mehrspaltiges Layout für ein Bedienfeld.
 role: User
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
@@ -8,17 +8,17 @@ exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1138'
-ht-degree: 76%
+ht-degree: 81%
 
 ---
 
-# Verwenden Sie den Layout-Modus, um die Größe von Komponenten für adaptive Forms zu ändern. {#use-layout-mode-to-resize-components}
+# Verwenden des Layout-Modus zum Ändern der Größe von Komponenten für adaptive Formulare {#use-layout-mode-to-resize-components}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/creating-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/resize-using-layout-mode.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/resize-using-layout-mode.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 Mit der Authoring-Oberfläche für adaptive Formulare können Sie mithilfe des Layout-Modus die Größe von Komponenten ändern. Indem Sie blaue Punkte in Spalten ziehen, können Sie den Start- und Endpunkt zur Positionierung der Komponenten definieren. Die blauen Punkte werden nach dem Tippen auf die Komponente im responsiven Raster angezeigt. Das responsive Raster besteht aus 12 gleichen Spalten. Die weiße und blaue Farbschattierung in alternativen Spalten setzt die Spalten voneinander ab.

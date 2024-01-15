@@ -33,7 +33,7 @@ Best Practices Analyzer v2.1.40 wurde am 03. März 2023 veröffentlicht.
 
 ### Veröffentlichungsdatum {#release-date-ctt}
 
-Das Content Transfer Tool v2.0.16 wurde am Donnerstag, 8. März 2023 veröffentlicht.
+Das Content Transfer Tool v2.0.16 wurde am 08. März 2023 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt}
 

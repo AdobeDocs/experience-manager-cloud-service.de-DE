@@ -5,7 +5,7 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 3d53f81bfe9b180f19590a70d72b6bf62a7ab732
 workflow-type: tm+mt
 source-wordcount: '2755'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ Die Protokollierung und Protokollierungsebenen in AEM as a Cloud Service werden 
 
 * AEM-Protokollierung, die die Protokollierung auf AEM-Programmebene durchführt,
 * Apache HTTPD Web Server-/Dispatcher-Protokollierung, die die Protokollierung des Webservers und Dispatchers in der Veröffentlichungsstufe durchführt.
-* Die CDN-Protokollierung, die, wie ihr Name anzeigt, die Protokollierung im CDN durchführt. Diese Funktion wird Anfang September schrittweise für Kunden eingeführt.
+* Die CDN-Protokollierung, die, wie ihr Name besagt, die Protokollierung im CDN durchführt. Diese Funktion wird Anfang September schrittweise für Kundinnen und Kunden eingeführt.
 
 ## AEM-Protokollierung {#aem-logging}
 
@@ -279,7 +279,7 @@ AEM as a Cloud Service stellt drei Protokolle für die Apache-Webserver- und Dis
 * Apache HTTPD Web Server-Fehlerprotokoll
 * Dispatcher-Protokoll
 
-Diese Protokolle sind nur für die Veröffentlichungsstufe verfügbar.
+Diese Protokolle sind nur für die Veröffentlichungsebene verfügbar.
 
 Dieser Satz an Protokollen bietet Einblicke in HTTP-Anfragen an die Veröffentlichungsstufe von AEM as a Cloud Service, bevor diese Anfragen das AEM-Programm erreichen. Dies ist wichtig, da im Idealfall die meisten HTTP-Anfragen an die Server der Veröffentlichungsstufe von Inhalten bereitgestellt werden, die von Apache HTTPD Web Server und AEM Dispatcher zwischengespeichert werden und niemals das AEM-Programm selbst erreichen. Daher gibt es keine Protokolleinträge für diese Anfragen in Java-, Anfrage- oder Zugriffsprotokollen in AEM.
 
@@ -502,9 +502,9 @@ Define DISP_LOG_LEVEL debug
 
 ## CDN-Protokoll {#cdn-log}
 
-AEM as a Cloud Service bietet Zugriff auf CDN-Protokolle, die für Anwendungsfälle nützlich sind, einschließlich der Optimierung der Cache-Trefferquote. Das CDN-Protokollformat kann nicht angepasst werden und es gibt kein Konzept, es auf verschiedene Modi wie Info, Warn oder Fehler festzulegen.
+AEM as a Cloud Service bietet Zugriff auf CDN-Protokolle, die für Anwendungsfälle nützlich sind, einschließlich der Optimierung der Cache-Trefferquote. Das CDN-Protokollformat kann nicht angepasst werden und es gibt kein Konzept, um es auf verschiedene Modi wie Info, Warnung oder Fehler festzulegen.
 
-Die Funktion Splunk-Weiterleitung unterstützt CDN-Protokolle noch nicht.
+Die Funktion „Splunk-Weiterleitung“ unterstützt CDN-Protokolle noch nicht.
 
 **Beispiel**
 
@@ -534,7 +534,7 @@ Die CDN-Protokolle unterscheiden sich von den anderen Protokollen insofern, als 
 
 | **Feldname** | **Beschreibung** |
 |---|---|
-| *timestamp* | Der Zeitpunkt, zu dem die Anfrage nach TLS-Beendigung gestartet wurde |
+| *timestamp* | Der Zeitpunkt, zu dem die Anfrage nach der TLS-Beendigung gestartet wurde |
 | *ttfb* | Abkürzung für *Time To First Byte*. Das Zeitintervall vom Start der Anfrage bis zu dem Punkt, an dem das Streamen des Antworttexts begann. |
 | *cli_ip* | Die Client-IP-Adresse. |
 | *cli_country* | Der Alpha-2-Ländercode gemäß [ISO 3166-1](https://de.wikipedia.org/wiki/ISO_3166-1) mit zwei Buchstaben für das Client-Land. |
@@ -548,7 +548,7 @@ Die CDN-Protokolle unterscheiden sich von den anderen Protokollen insofern, als 
 | *status* | Der HTTP-Status-Code als ganzzahliger Wert. |
 | *res_age* | Die Zeit in Sekunden, für die eine Antwort zwischengespeichert wurde (in allen Knoten). |
 | *pop* | das Rechenzentrum des CDN-Cache-Servers |
-| *rules* | Die Namen aller übereinstimmenden [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md) und WAF-Flags, die auch angeben, ob die Übereinstimmung zu einem Block führte. Leer, wenn keine Regeln übereinstimmten. |
+| *rules* | Die Namen aller übereinstimmenden [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md) und WAF-Flags, die auch angeben, ob die Übereinstimmung zu einer Blockierung führte. Leer, wenn keine Regeln übereinstimmten. |
 
 
 ## Zugriff auf Protokolle {#how-to-access-logs}
@@ -557,11 +557,11 @@ Die CDN-Protokolle unterscheiden sich von den anderen Protokollen insofern, als 
 
 Auf die Protokolle in AEM as a Cloud Service für Cloud-Services kann entweder durch Herunterladen über die Cloud Manager-Oberfläche oder durch Nachverfolgung der Protokolle über die Befehlszeile mithilfe der Adobe I/O-Befehlszeilenschnittstelle zugegriffen werden. Weitere Informationen finden Sie in der [Dokumentation zur Cloud Manager-Protokollierung](/help/implementing/cloud-manager/manage-logs.md).
 
-### Protokolle für weitere Veröffentlichungsregionen {#logs-for-additional-publish-regions}
+### Protokolle für zusätzliche Veröffentlichungsregionen {#logs-for-additional-publish-regions}
 
-Wenn für eine bestimmte Umgebung zusätzliche Veröffentlichungsregionen aktiviert sind, können Protokolle für jede Region wie oben erwähnt aus Cloud Manager heruntergeladen werden.
+Wenn für eine bestimmte Umgebung zusätzliche Veröffentlichungsregionen aktiviert sind, können, wie oben erwähnt, Protokolle für jede Region aus Cloud Manager heruntergeladen werden.
 
-Die AEM Protokolle und die Dispatcher-Protokolle für die zusätzlichen Veröffentlichungsregionen geben die Region in den ersten drei Buchstaben nach der Umgebungs-ID an, wie dies anhand von **nld2** im folgenden Beispiel, das sich auf eine zusätzliche AEM Veröffentlichungsinstanz in den Niederlanden bezieht:
+Die AEM-Protokolle und die Dispatcher-Protokolle für die zusätzlichen Veröffentlichungsregionen geben die Region in den ersten drei Buchstaben nach der Umgebungs-ID an, wie dies in Form von **nld2** im folgenden Beispiel dargestellt ist, das sich auf eine zusätzliche AEM-Veröffentlichungsinstanz in den Niederlanden bezieht:
 
 ```
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
@@ -643,7 +643,7 @@ Unten finden Sie ein Beispiel für eine Support-Anfrage:
 Programm 123, Produktionsumgebung
 
 * Splunk-HEC-Endpunktadresse: `splunk-hec-ext.acme.com`
-* Splunk-Index: acme_123prod (der Kunde kann die gewünschte Namenskonvention auswählen)
+* Splunk-Index: acme_123prod (die Kundin bzw. der Kunde kann die gewünschte Namenskonvention auswählen)
 * Splunk-Port: 443
 * Splunk-HEC-Token: ABC123
 

@@ -5,7 +5,7 @@ exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '3539'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -192,7 +192,7 @@ Vielleicht möchten Sie den Benutzern von übersetzten Inhalten lokalisierte Sei
 
 Die Herausforderung bei der Lokalisierung des Seitennamens besteht darin, dass viele der für die AEM-Plattform erhältlichen Lokalisierungs-Tools für die Synchronisierung von Inhalten identische Seitennamen für verschiedene Sprachen benötigen.
 
-Die `sling:alias` -Eigenschaft ermöglicht Ihnen, unseren Kuchen zu essen und zu essen. `sling:alias` kann jeder Ressource als Eigenschaft hinzugefügt werden, um einen Alias für die Ressource zu erlauben. Im vorangegangenen Beispiel hätten Sie Folgendes:
+Die Eigenschaft `sling:alias` ermöglicht das Beste aus beiden Welten. `sling:alias` kann jeder Ressource als Eigenschaft hinzugefügt werden, um einen Alias für die Ressource zu erlauben. Im vorangegangenen Beispiel hätten Sie Folgendes:
 
 * Eine Seite im JCR unter:
   `…/es/home`

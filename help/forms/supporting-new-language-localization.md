@@ -1,23 +1,23 @@
 ---
 title: Wie füge ich einem adaptiven Formular, das auf Foundation-Komponenten basiert, Unterstützung für neue Gebietsschemata hinzu?
-description: Bei Adaptive Forms können Sie Gebietsschemata für weitere Sprachen hinzufügen, mit Ausnahme der standardmäßig bereitgestellten Sprachen.
+description: Bei adaptiven Formularen können Sie Gebietsschemata für weitere Sprachen zusätzlich zu den vorkonfigurierten Sprachen hinzufügen.
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
 source-wordcount: '1220'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# Unterstützung neuer Gebietsschemas zum Lokalisieren von adaptiven Formularen {#supporting-new-locales-for-adaptive-forms-localization}
+# Unterstützung neuer Gebietsschemata zum Lokalisieren von adaptiven Formularen {#supporting-new-locales-for-adaptive-forms-localization}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/creating-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=de) |
 | Kernkomponenten | [Hier klicken](supporting-new-language-localization-core-components.md) |
 | Foundation-Komponenten | Dieser Artikel |
 
@@ -27,11 +27,11 @@ AEM Forms bietet vorkonfiguriert Unterstützung für die Gebietsschemata Englisc
 
 Die Lokalisierung von adaptiven Formularen beruht auf zwei Arten von Gebietsschema-Wörterbüchern:
 
-* **Formularspezifisches Wörterbuch** Enthält Zeichenfolgen, die in adaptiven Formularen verwendet werden. Beispielsweise Beschriftungen, Feldnamen, Fehlermeldungen und Hilfebeschreibungen. Wird für jedes Gebietsschema in Form eines Satzes von XLIFF-Dateien für die einzelnen Gebietsschemas verwaltet und ist unter `[author-instance]/libs/cq/i18n/gui/translator.html` verfügbar.
+* **Formularspezifisches Wörterbuch** Enthält Zeichenfolgen, die in adaptiven Formularen verwendet werden. Beispielsweise Beschriftungen, Feldnamen, Fehlermeldungen und Hilfebeschreibungen. Wird für jedes Gebietsschema in Form eines Satzes von XLIFF-Dateien für die einzelnen Gebietsschemata verwaltet und ist unter `[author-instance]/libs/cq/i18n/gui/translator.html` verfügbar.
 
-* **Globale Wörterbücher** Es gibt zwei globale Wörterbücher, die als JSON-Objekte verwaltet werden, in der AEM Client-Bibliothek. Diese Wörterbücher enthalten Standardfehlermeldungen, Monatsnamen, Währungssymbole, Datums- und Uhrzeitmuster usw. Sie finden diese Wörterbücher unter `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Für jedes Gebietsschema gibt es einen separaten Ordner. Da globale Wörterbücher nicht häufig aktualisiert werden, können Browser separate JavaScript-Dateien für jedes Gebietsschema zwischenspeichern und die Nutzung der Netzwerkbandbreite reduzieren, wenn auf demselben Server auf verschiedene adaptive Formulare zugegriffen wird.
+* **Globale Wörterbücher** In der AEM-Client-Bibliothek gibt es zwei globale Wörterbücher, die als JSON-Objekte verwaltet werden. Diese Wörterbücher enthalten Standardfehlermeldungen, Monatsnamen, Währungssymbole, Datums- und Uhrzeitmuster usw. Sie finden diese Wörterbücher unter `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Für jedes Gebietsschema gibt es einen separaten Ordner. Globale Wörterbücher werden nicht oft aktualisiert. Durch die separaten JavaScript-Dateien für jedes Gebietsschema können Browser diese im Cache zwischenspeichern. Dies reduziert den Netzwerk-Traffic, wenn auf demselben Server auf verschiedene adaptive Formulare zugegriffen wird.
 
-## Unterstützung für neue Gebietsschemata hinzufügen {#add-support-for-new-locales}
+## Hinzufügen von Unterstützung für neue Gebietsschemata {#add-support-for-new-locales}
 
 Führen Sie die folgenden Schritte aus, um Unterstützung für ein neues Gebietsschema hinzuzufügen:
 
@@ -42,7 +42,7 @@ Führen Sie die folgenden Schritte aus, um Unterstützung für ein neues Gebiets
 
 AEM Forms unterstützt die Lokalisierung von Inhalten in adaptiven Formulare in den Sprachumgebungen Englisch (en), Spanisch (es), Französisch (fr), Italianisch (it), Deutsch (de), Japanisch (ja), brasilianisches Portugiesisch (pt-BR), Chinesisch (zh-CN), Chinesisch – Taiwan (zh-TW) und Koreanisch (ko-KR).
 
-So fügen Sie Unterstützung für ein neues Gebietsschema zur Laufzeit von Adaptive Forms hinzu:
+So fügen Sie während der Laufzeit in adaptiven Formularen Unterstützung für ein neues Gebietsschema hinzu:
 
 1. [Klonen Sie Ihr Repository.](#clone-the-repository)
 1. [Fügen Sie ein Gebietsschema zum GuideLocalizationService hinzu.](#add-a-locale-to-the-guide-localization-service)
@@ -70,7 +70,7 @@ So fügen Sie Unterstützung für ein neues Gebietsschema zur Laufzeit von Adapt
 1. Erstellen Sie im Ordner „UI.content“ den Ordner `etc/clientlibs`.
 1. Erstellen Sie außerdem einen Ordner mit dem Namen `locale-name` unter `etc/clientlibs`, der als Container für xfa- und af-clientlibs dient.
 
-##### 3.1 XFA-Client-Bibliothek für ein Gebietsschema in einem Ordner mit Gebietsschema-Namen hinzufügen
+##### 3.1 Fügen Sie die XFA-Client-Bibliothek für ein Gebietsschema in einem Ordner „locale-name“ hinzu.
 
 Erstellen Sie einen Knoten mit dem Namen `[locale-name]_xfa` und dem Typ `cq:ClientLibraryFolder` unter `etc/clientlibs/locale_name`, mit der Kategorie `xfaforms.I18N.<locale>`, und fügen Sie die folgenden Dateien hinzu:
 
@@ -105,7 +105,7 @@ Führen Sie diesen Schritt nur dann durch, wenn das `<locale>`, das Sie hinzufü
 1. Fügen Sie die `<locale-name>`-Standardgebietsschema-Werte `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` und `ko-kr` hinzu, falls noch nicht vorhanden.
 
 1. Fügen Sie das `<locale>` den Werten der Eigenschaft `languages` von `/etc/languages` hinzu.
-1. Fügen Sie die erstellten Ordner im `filter.xml` unter etc/META-INF/[Ordnerhierarchie] as:
+1. Fügen Sie die erstellten Ordner in der Datei `filter.xml` unter etc/META-INF/[Ordnerhierarchie] wie folgt hinzu:
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>
@@ -121,7 +121,7 @@ Sobald die Pipeline-Einrichtung abgeschlossen ist, wird das neu hinzugefügte Ge
 
 ### Verwenden eines hinzugefügten Gebietsschemas in adaptiven Formularen {#use-added-locale-in-af}
 
-Führen Sie die folgenden Schritte aus, um ein adaptives Formular mit dem neu hinzugefügten Gebietsschema zu verwenden und zu rendern:
+Führen Sie die folgenden Schritte aus, um ein adaptives Formular mit einem neu hinzugefügten Gebietsschema zu verwenden und zu rendern:
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an.
 1. Gehen Sie zu **Formulare** > **Formulare und Dokumente**.
@@ -147,15 +147,15 @@ Um das Browser-Gebietsschema der Benutzenden zu überschreiben, können Sie den 
 Wenn für das angeforderte Gebietsschema keine Client-Bibliothek vorhanden ist, wird nach einer Client-Bibliothek für den im Gebietsschema vorhandenen Sprach-Code gesucht. Beispiel: Wenn das angeforderte Gebietsschema `en_ZA` (südafrikanisches Englisch) lautet und die Client-Bibliothek für `en_ZA` nicht vorhanden ist, verwendet das adaptive Formular die Client-Bibliothek für `en` (Englisch), sofern vorhanden. Wenn jedoch keines davon vorhanden ist, verwendet das adaptive Formular das Wörterbuch für das Gebietsschema `en`.
 
 
-Nachdem das Gebietsschema identifiziert ist, wählt das adaptive Formular das formularspezifische Wörterbuch aus. Wenn das formularspezifische Wörterbuch für das angeforderte Gebietsschema nicht gefunden wird, wird das Wörterbuch für die Sprache verwendet, in der das adaptive Formular erstellt wird.
+Nachdem das Gebietsschema identifiziert ist, wählt das adaptive Formular das formularspezifische Wörterbuch aus. Wenn es das formularspezifische Wörterbuch für das angeforderte Gebietsschema nicht findet, verwendet es das Wörterbuch für die Sprache, in der das adaptive Formular verfasst wurde.
 
 Wenn keine Informationen zum Gebietsschema vorhanden sind, wird das adaptive Formular in der Originalsprache des Formulars übermittelt. Die Originalsprache ist die Sprache, die bei der Entwicklung des adaptiven Formulars verwendet wurde.
 
-Abrufen einer [Beispiel-Client-Bibliothek](/help/forms/assets/locale-support-sample.zip) , um Unterstützung für neues Gebietsschema hinzuzufügen. Sie müssen den Inhalt des Ordners im erforderlichen Gebietsschema ändern.
+Holen Sie sich die [Muster-Client-Bibliothek](/help/forms/assets/locale-support-sample.zip), um die Unterstützung für neue Gebietsschemata hinzuzufügen. Sie müssen den Inhalt des Ordners im erforderlichen Gebietsschema ändern.
 
 ## Best Practices zur Unterstützung neuer Lokalisierungen {#best-practices}
 
-* Adobe empfiehlt die Erstellung eines Übersetzungsprojekts nach der Erstellung eines adaptiven Formulars.
+* Adobe empfiehlt, ein Übersetzungsprojekt erst nach dem Erstellen eines adaptiven Formulars durchzuführen.
 
 * Wenn neue Felder in einem vorhandenen adaptiven Formular hinzugefügt werden:
    * **Für maschinelle Übersetzung**: Erstellen Sie das Wörterbuch neu und führen Sie das Übersetzungsprojekt aus. Felder, die einem adaptiven Formular nach dem Erstellen eines Übersetzungsprojekts hinzugefügt wurden, bleiben unübersetzt.

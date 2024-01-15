@@ -1,13 +1,13 @@
 ---
 title: Vorbereiten von Inhalten für die Übersetzung
-description: Erfahren Sie, wie Sie bei der Entwicklung mehrsprachiger Websites Inhalte für die Übersetzung vorbereiten.
+description: Erfahren Sie, wie Sie bei der Entwicklung mehrsprachiger Websites Inhalte für die Übersetzung vorbereiten können.
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 73%
+ht-degree: 90%
 
 ---
 
@@ -52,7 +52,7 @@ Die [WKND-Tutorial-Website](/help/implementing/developing/introduction/develop-w
 
 Die Sprachkopie, für die Sie ursprünglich Inhalte verfassen, ist der Sprach-Master. Die Sprach-Master-Vorlage ist die Quelle, die in andere Sprachen übersetzt wird.
 
-Jeder Sprachzweig einer Website wird als Sprachkopie bezeichnet. Die Stammseite einer Sprachkopie, auch als Sprachstamm bezeichnet, identifiziert die Sprache des Inhalts in der Sprachkopie. Beispielsweise stellt `/content/wknd/fr` den Sprachstamm der französischen Sprachkopie dar. Sprachkopien müssen [korrekt konfigurierter Sprachstamm](preparation.md#creating-a-language-root) , damit bei der Übersetzung von Quell-Sites die richtige Sprache angesprochen wird.
+Jeder Sprachzweig einer Website wird als Sprachkopie bezeichnet. Die Stammseite einer Sprachkopie, auch als Sprachstamm bezeichnet, identifiziert die Sprache des Inhalts in der Sprachkopie. Beispielsweise stellt `/content/wknd/fr` den Sprachstamm der französischen Sprachkopie dar. Sprachkopien müssen einen [korrekt konfigurierten Sprachstamm](preparation.md#creating-a-language-root) verwenden, damit die korrekte Sprache angesprochen wird, wenn Übersetzungen von einer Quell-Website durchgeführt werden.
 
 Führen Sie die folgenden Schritte aus, um Ihre Website für die Übersetzung vorzubereiten:
 
@@ -71,20 +71,20 @@ Um den Sprachstamm zu erstellen, erstellen Sie eine Seite und verwenden Sie eine
 * `<language-code>` - Der unterstützte Sprachcode ist ein aus zwei Buchstaben bestehender Code gemäß ISO-639-1, beispielsweise `en`.
 * `<language-code>_<country-code>` oder `<language-code>-<country-code>` - Der unterstützte Ländercode ist ein aus zwei Buchstaben bestehender Code mit Kleinbuchstaben oder Großbuchstaben gemäß ISO 3166, beispielsweise `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen Website. Beispielsweise verfügt die Stammseite der französischen Sprachkopie der WKND-Website über `fr` als die Eigenschaft **Name**. Die **Name** -Eigenschaft wird als Name des Seitenknotens im Repository verwendet und bestimmt daher den Pfad der Seite (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
+Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen Website. Beispielsweise verfügt die Stammseite der französischen Sprachkopie der WKND-Website über `fr` als die Eigenschaft **Name**. Beachten Sie, dass die Eigenschaft **Name** als Name des Seitenknotens im Repository verwendet wird und daher den Pfad der Seite bestimmt (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. Navigieren Sie zu „Sites“.
-1. Wählen Sie die Site aus, für die Sie eine Sprachkopie erstellen möchten.
-1. Auswählen **Erstellen** und wählen Sie **Seite**.
+1. Wählen Sie die Website aus, für die Sie eine Sprachkopie erstellen möchten.
+1. Wählen Sie **Erstellen** und dann **Seite** aus.
 
    ![Seite erstellen](../assets/create-page.png)
 
-1. Wählen Sie die Seitenvorlage aus und wählen Sie dann **Nächste**.
+1. Wählen Sie die Seitenvorlage aus und wählen Sie dann **Weiter** aus.
 1. Im **Name** Feldtyp Ländercode im Format `<language-code>` oder `<language-code>_<country-code>`, beispielsweise `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Geben Sie einen Titel für die Seite ein.
 
    ![Sprachstammseite erstellen](../assets/create-language-root.png)
 
-1. Wählen Sie **Erstellen**. Wählen Sie im Bestätigungsdialogfeld entweder **Fertig** zur Konsole &quot;Sites&quot;zurückzukehren oder **Öffnen** , um die Sprachkopie zu öffnen.
+1. Wählen Sie **Erstellen** aus. Wählen Sie im Bestätigungsdialogfeld entweder **Fertig**, um zur Sites-Konsole zurückzukehren, oder **Öffnen**, um die Sprachkopie zu öffnen.
 
 ## Anzeigen des Status der Sprachstämme {#seeing-the-status-of-language-roots}
 
@@ -94,11 +94,11 @@ AEM hat eine Leiste **Verweise**, die eine Liste der erstellten Sprachstämme an
 
 Verwenden Sie die folgende Ansicht, um die Sprachkopien für eine Seite mithilfe der [Auswahlleiste](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) anzuzeigen.
 
-1. Wählen Sie in der Sites-Konsole eine Seite der Site aus und wählen Sie dann **Verweise**.
+1. Wählen Sie in der Sites-Konsole eine Seite der Website und dann **Verweise** aus.
 
    ![Offene Verweise-Leiste](../assets/opening-references-rail.png)
 
-1. Wählen Sie in der Verweisleiste **Sprachkopien**. In der Leiste werden die Sprachkopien der Website angezeigt.
+1. Wählen Sie in der Leiste „Verweise“ **Sprachkopien** aus. In der Leiste werden die Sprachkopien der Website angezeigt.
 
 ## Sprachkopien auf mehreren Ebenen {#multiple-levels}
 

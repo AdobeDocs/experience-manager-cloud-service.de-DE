@@ -5,7 +5,7 @@ exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '2282'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -59,7 +59,7 @@ Mit diesem Tool können Sie die gewünschte Teilmenge Ihrer Inhalte angeben, die
 
 Die Migration von Inhalten ist ein mehrstufiger Prozess, der die Planung, Verfolgung und Zusammenarbeit zwischen verschiedenen Teams erfordert.
 
-Eine vollständige Beschreibung der Funktionsweise des Tools und der empfohlenen Verwendung durch Adobe finden Sie in der [Dokumentation zum Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
+Eine ausführliche Beschreibung der Funktionsweise des Tools und seiner von Adobe empfohlenen Verwendung finden Sie in der [Dokumentation zum Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 ## Code-Refaktorierung {#code-refactor}
 
@@ -75,7 +75,7 @@ Sehen Sie sich zunächst die Dokumentation zu den grundlegenden Tools an und beg
 * Erfahren Sie, wie Sie eine lokale Entwicklungsumgebung einrichten, indem Sie das [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=de) herunterladen
 * Machen Sie sich abschließend mit der [AEM as a Cloud Service Java-API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) vertraut.
 
-Sie können auch:
+Darüber hinaus haben Sie folgende Möglichkeiten:
 
 * In diesem Video erfahren Sie, wie Sie das Dispatcher-SDK lokal installieren:
 
@@ -112,7 +112,7 @@ Sobald Sie die lokale Entwicklungsumgebung eingerichtet haben, sollten Sie sich 
 
 ### Planen eines Code-Freeze {#schedule-a-code-freeze}
 
-Um Ihre laufende Codeentwicklung auf Ihrer aktiven AEM zusammen mit den Code-Refaktorierungsaufgaben im Rahmen der Journey der Umstellung zu verwalten, empfiehlt Adobe, einen Code-Freeze-Zeitraum zu planen, bis Sie die Umstrukturierung Ihres Maven-Projekts abgeschlossen haben und damit mit AEM as a Cloud Service kompatibel sind.
+Um Ihre laufende Code-Entwicklung in Ihrem aktiven AEM zusammen mit der Code-Refaktorierung als Teil Ihrer Umstellung zu verwalten, empfiehlt Adobe, eine Code-Freeze-Periode einzuplanen, bis Sie die Neustrukturierung Ihres Maven-Projekts für die Kompatibilität mit AEM as a Cloud Service abgeschlossen haben.
 
 Sobald die Neustrukturierung des Projekts abgeschlossen ist, können Sie die Entwicklung neuen Codes basierend auf dieser neuen Struktur fortsetzen. Dadurch werden Cloud Manager-Pipeline-Fehler bei der Code-Bereitstellung und beim Testen reduziert.
 

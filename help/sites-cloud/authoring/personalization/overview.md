@@ -5,7 +5,7 @@ exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1054'
-ht-degree: 89%
+ht-degree: 97%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 89%
 
 Personalisierung der Web-Inhalte, die Sie Kunden bereitstellen, bedeutet, diese Erlebnisse auf die Kundeninteressen und -bedürfnisse abzustimmen. Sie können dies auf der Grundlage der Informationen tun, die Sie über Ihre Kunden haben. z. B. Einkaufsübersicht, Alter, Geschlecht, geografische Angaben usw.
 
-Mit Adobe Experience Manager as a Cloud Service (AEM) können Sie eine Inhaltsauswahl erstellen und dann festlegen, welche Zielgruppen (Gruppen von Endbenutzern) die einzelnen Erlebnisse sehen. Das bedeutet, dass Sie Ihre personalisierten Erlebnisse an bestimmte Zielgruppen richten.
+Mit Adobe Experience Manager as a Cloud Service (AEM) können Sie eine Auswahl von Inhalten erstellen und dann festlegen, welche Zielgruppen (Gruppen von Endbenutzenden) die einzelnen Erlebnisse zu sehen bekommen. Das bedeutet, dass Sie Ihre personalisierten Erlebnisse an bestimmte Zielgruppen richten.
 
 Wenn Ihr Reader online ist, überprüft Ihre Targeting-Engine die über den Endbenutzer verfügbaren Informationen und vergleicht sie mit den Erlebnisdefinitionen. Die Engine *„entscheidet“* dann, welches personalisierte Erlebnis angezeigt werden soll.
 
@@ -24,7 +24,7 @@ AEM bietet ein Framework von Tools für folgende Aktivitäten:
 * Definieren der Regeln, die verwendet werden, um die bekannten Benutzerinformationen mit einer Zielgruppendefinition abzugleichen.
 * Konfigurieren Ihrer Seiten, um zielgerichtete personalisierter Erlebnisse zu präsentieren, sodass die für den aktuellen Endbenutzer spezifischen Inhalte dargestellt werden.
 
-Die folgende Übersicht zeigt einige der für die Personalisierung verwendeten Begriffe in AEM as a Cloud Service, gefolgt von einer empfohlenen Reihenfolge der Aktionen.
+Die folgende Übersicht zeigt einige der Begriffe, die im Zusammenhang mit der Personalisierung in AEM as a Cloud Service verwendet werden, gefolgt von einer empfohlenen Reihenfolge von Aktionen.
 
 ## Erfahrung {#experience}
 
@@ -40,7 +40,7 @@ Beim Erstellen von Seiten definieren Sie mehrere Erlebnisse, wobei jedes Erlebni
 
 Ein Angebot ist ein personalisiertes Erlebnis, das oft nur für einen begrenzten Zeitraum zur Verfügung steht.
 
-Beispielsweise kann eine Seite von einer Beispiel-Website Angebote als Teaser-Bild verwenden, das oben auf der Seite angezeigt wird. Eine Person über 30 und eine Person unter 30 Jahren können verschiedene Angebote als Erlebnis-Teaser sehen.
+Beispielsweise kann eine Seite einer Beispiel-Website Angebote als das Teaser-Bild verwenden, das oben auf der Seite eingeblendet wird. Personen über 30 und Personen unter 30 können jeweils andere Angebote als Erlebnis-Teaser angezeigt bekommen.
 
 ## Zielgruppe {#audience}
 

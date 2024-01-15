@@ -5,7 +5,7 @@ exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '651'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ In diesem Dokument werden die einzelnen Bausteine und ihr Austausch von Daten be
 ### Editoren {#editors}
 
 * **Universeller Editor** – Der universelle Editor verwendet ein instrumentiertes DOM, um die Bearbeitung von Inhalten im Kontext zu ermöglichen. Lesen Sie [Attribute und Typen](attributes-types.md) für Details zu den notwendigen Metadaten. Im Dokument [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) finden Sie ein Beispiel für die Instrumentierung in AEM.
-* **Eigenschaftenleiste** - Manche Eigenschaften von Komponenten können nicht kontextbezogen bearbeitet werden, z. B. die Drehzeit eines Karussells oder die Akkordeon-Registerkarte muss immer geöffnet oder geschlossen werden. Um die Bearbeitung solcher Komponenteninformationen zu ermöglichen, wird in der Seitenleiste des Editors ein formularbasierter Editor bereitgestellt.
+* **Eigenschaftenleiste** – Einige Eigenschaften von Komponenten können nicht kontextbezogen bearbeitet werden, z. B. die Drehzeit eines Karussells oder welche Akkordeon-Registerkarte immer geöffnet bzw. geschlossen werden soll. Um die Bearbeitung solcher Komponenteninformationen zu ermöglichen, wird in der Seitenleiste des Editors ein formularbasierter Editor bereitgestellt.
 
 ### Remote-App {#remote-app}
 
@@ -52,7 +52,7 @@ Der universelle Editor strebt ein minimales SDK an, daher liegt die Instrumentie
 ### Persistenzschicht {#persistence-layer}
 
 * **Inhaltsfragmentmodell** – Um die Leiste zum Bearbeiten von Inhaltsfragment-Eigenschaften, den Inhaltsfragment-Editor und formularbasierte Editoren zu unterstützen, sind Modelle pro Komponente und Inhaltsfragment erforderlich.
-* **Inhalt** - Inhalte können überall gespeichert werden, z. B. in AEM, Magento usw.
+* **Inhalt** – Der Inhalt kann an beliebiger Stelle gespeichert werden, z. B. in AEM, Magento usw.
 
 ![Persistenzschicht](assets/persistence-layer.png)
 
@@ -81,8 +81,8 @@ Der universelle Editor sendet alle Inhaltsänderungen an einen zentralen Dienst,
 Weitere Informationen zum universellen Editor finden Sie in diesen Dokumenten.
 
 * [Einführung in den universellen Editor](introduction.md) – Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
-* [Inhaltserstellung mit dem universellen Editor](authoring.md) – Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
-* [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md) - Erfahren Sie, wie der Universal Editor Inhalte veröffentlicht und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
+* [Inhaltserstellung mit dem universellen Editor](authoring.md) – Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und Inhaltsautoren ist, Inhalte mit dem universellen Editor zu erstellen.
+* [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md) – Erfahren Sie, wie mit dem universellen Editor Inhalte veröffentlicht werden und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
 * [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) – Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.
 * [Attribute und Typen](attributes-types.md) – Erfahren Sie mehr über die Datenattribute und -typen, die der universelle Editor erfordert.
 * [Authentifizierung beim universellen Editor](authentication.md) – Erfahren Sie, wie beim universellen Editor authentifiziert wird.

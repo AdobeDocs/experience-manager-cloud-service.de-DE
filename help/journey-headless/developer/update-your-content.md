@@ -5,7 +5,7 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 source-git-commit: 31b0eecd01ee319aaf700505293530fec129b00f
 workflow-type: tm+mt
 source-wordcount: '1061'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -41,7 +41,7 @@ Im vorherigen Teil der Headless-Tour haben Sie erfahren, wie Sie mit der AEM-Gra
 
 Warum ist also eine weitere API erforderlich?
 
-Die Assets-HTTP-API ermöglicht Ihnen Folgendes: **Lesen** Ihren Inhalt, aber auch **Erstellen**, **Aktualisieren** und **Löschen** content - Aktionen, die mit der GraphQL-API nicht möglich sind.
+Die Assets-HTTP-API ermöglicht zwar das **Lesen** Ihres Inhalts, aber auch das **Erstellen**, **Aktualisieren** und **Löschen** von Inhalten – Aktionen, die mit der GraphQL-API nicht möglich sind.
 
 Die Assets-REST-API ist in jeder standardmäßigen Installation einer aktuellen Adobe Experience Manager as a Cloud Service-Version verfügbar.
 
@@ -54,7 +54,7 @@ Die Assets-HTTP-API umfasst die:
 
 Die aktuelle Implementierung der Assets-HTTP-API basiert auf dem Architekturstil **REST** und ermöglicht den Zugriff auf (in AEM gespeicherte) Inhalte über **CRUD**-Vorgänge (Create, Read, Update, Delete, also Erstellen, Lesen, Aktualisieren, Löschen).
 
-Mit diesen Vorgängen können Sie mit der API Adobe Experience Manager as a Cloud Service als Headless-CMS (Content Management System) betreiben, indem Sie einer JavaScript-Frontend-Anwendung Content Services bereitstellen. Oder jedem anderen Programm, das HTTP-Anfragen ausführen und JSON-Antworten verarbeiten kann. Beispielsweise benötigen Framework-basierte oder benutzerdefinierte Single Page Applications (SPAs) die über die API bereitgestellten Inhalte häufig im JSON-Format.
+Durch diese Operationen ermöglicht die API es Ihnen, Adobe Experience Manager as a Cloud Service als Headless-CMS (Content-Management-System) auszuführen, indem es einem JavaScript-Frontend-Programm Content Services bereitstellt. Oder jedem anderen Programm, das HTTP-Anfragen ausführen und JSON-Antworten verarbeiten kann. Beispielsweise benötigen Framework-basierte oder benutzerdefinierte Single Page Applications (SPAs) die über die API bereitgestellten Inhalte häufig im JSON-Format.
 
 <!--
 >[!NOTE]
@@ -254,7 +254,7 @@ Die Verwendung unterscheidet sich je nachdem, ob Sie eine AEM-Autoren- oder Ver�
 
 >[!NOTE]
 >
->Siehe API-Referenz . [Adobe Experience Manager Assets API - Inhaltsfragmente](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>Siehe die API-Referenz [Adobe Experience Manager Assets API – Inhaltsfragmente](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ### Lesen/Bereitstellen {#read-delivery}
 
@@ -297,7 +297,7 @@ Nutzung erfolgt über:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-Weitere Informationen zur Verwendung der AEM Assets REST-API finden Sie unter folgenden Themen:
+Weitere Informationen zur Verwendung der AEM Assets REST-API finden Sie in folgenden Quellen:
 
 * Adobe Experience Manager Assets-HTTP-API (Zusätzliche Ressourcen)
 * Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API (Zusätzliche Ressourcen)

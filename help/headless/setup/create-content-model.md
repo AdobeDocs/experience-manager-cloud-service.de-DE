@@ -5,7 +5,7 @@ exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -24,14 +24,14 @@ Inhaltsfragmentmodelle definieren die Struktur der Daten und Inhalte, die Sie in
 Ein Informationsarchitekt würde diese Aufgaben nur sporadisch durchführen, da neue Modelle erforderlich sind. Für die Zwecke dieser Anleitung für den Einstieg müssen wir nur ein Modell erstellen.
 
 1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Werkzeuge**, **Allgemein**, **Inhaltsfragmentmodelle**.
-1. Wählen Sie den Ordner aus, der durch die Erstellung der Konfiguration erstellt wurde.
+1. Wählen Sie den Ordner aus, der durch die Erstellung der Konfiguration generiert wurde.
 
    ![Der Ordner „Modelle“](../assets/models-folder.png)
 1. Wählen Sie **Erstellen** aus.
 1. Geben Sie einen **Modell-Titel**, **Tags** und eine **Beschreibung** an. Sie können auch **Modell aktivieren** aus- oder abwählen, um zu steuern, ob das Modell unmittelbar nach der Erstellung aktiviert wird.
 
    ![Erstellen eines Modells](../assets/models-create.png)
-1. Wählen Sie im Bestätigungsfenster **Öffnen** um Ihr Modell zu konfigurieren.
+1. Wählen Sie im Bestätigungsfenster **Öffnen** aus, um Ihr Modell zu konfigurieren.
 
    ![Bestätigungsfenster](../assets/models-confirmation.png)
 1. Erstellen Sie mit dem **Inhaltsfragmentmodell-Editor** das Inhaltsfragmentmodell, indem Sie Felder aus der Spalte **Datentypen** ziehen und ablegen.
@@ -42,9 +42,9 @@ Ein Informationsarchitekt würde diese Aufgaben nur sporadisch durchführen, da 
 
    ![Konfigurieren von Eigenschaften](../assets/models-configure-properties.png)
 
-1. Wenn Sie mit der Modellerstellung fertig sind, wählen Sie **Speichern**.
+1. Wenn Sie mit der Erstellung des Modells fertig sind, wählen Sie **Speichern** aus.
 
-1. Der Modus des erstellten Modells hängt davon ab, ob Sie ausgewählt haben **Modell aktivieren** beim Erstellen des Modells:
+1. Der Modus des erstellten Modells hängt davon ab, ob Sie beim Erstellen des Modells **Modell aktivieren** ausgewählt haben:
    * ausgewählt – das neue Modell ist bereits **aktiviert**
    * nicht ausgewählt – das neue Modell wird im Modus **Entwurf** erstellt
 

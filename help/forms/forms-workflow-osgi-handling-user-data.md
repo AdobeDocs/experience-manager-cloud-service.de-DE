@@ -8,7 +8,7 @@ discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '994'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -74,7 +74,7 @@ Sie können Benutzerdaten aus einer Workflow-Instanz im Repository aufrufen und 
 Bei der Identifizierung von Workflows, die mit einer Initiatorin oder einem Initiator verbunden sind, können Sie jedoch in den folgenden Szenarien keine Workflows identifizieren oder die Ergebnisse sind möglicherweise nicht eindeutig:
 
 * **Workflow, der durch einen überwachten Ordner ausgelöst wird**: Eine Workflow-Instanz kann nicht über die Person identifiziert werden, die sie initiiert hat, wenn der Workflow durch einen überwachten Ordner ausgelöst wird. In diesem Fall werden die Benutzerinformationen in den gespeicherten Daten codiert.
-* **Workflow, der von AEM Veröffentlichungsinstanz initiiert wurde**: Alle Workflow-Instanzen werden mit einem Dienstbenutzer erstellt, wenn Adaptive Forms oder Briefe von AEM Veröffentlichungsinstanz gesendet werden. In diesen Fällen wird der Benutzername der angemeldeten Person nicht in den Workflow-Instanzdaten erfasst.
+* **Workflow, der von der AEM-Veröffentlichungsinstanz initiiert wurde**: Alle Workflow-Instanzen werden mithilfe von Service-Benutzenden erstellt, wenn adaptive Formulare oder Briefe von der AEM-Veröffentlichungsinstanz gesendet werden. In diesen Fällen wird der Benutzername der angemeldeten Person nicht in den Workflow-Instanzdaten erfasst.
 
 ### Zugreifen auf Benutzerdaten {#access}
 

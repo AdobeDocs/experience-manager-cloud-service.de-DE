@@ -5,7 +5,7 @@ exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 78%
+ht-degree: 97%
 
 ---
 
@@ -36,9 +36,9 @@ Nach der Lizenzierung einer zusätzlichen Veröffentlichungsregion werden die Re
 
 Zusätzliche Veröffentlichungsregionen werden auf Staging- und Produktionsumgebungen angewendet, nicht jedoch auf RDE- oder Entwicklungsumgebungen.
 
-Sollte eine Region nicht verfügbar sein, müssen Kunden das Routing von Traffic zu verfügbaren Regionen nicht verwalten, da es vom Adobe CDN verwaltet wird.
+Sollte eine Region nicht mehr verfügbar sein, müssen Kundinnen und Kunden das Routing von Traffic zu verfügbaren Regionen nicht verwalten, da es vom Adobe CDN verwaltet wird.
 
-Wie im Abschnitt Hinweise zu erweiterten Netzwerken unten beschrieben, wird empfohlen, dass Kunden, die erweiterte Netzwerke verwenden, diese für jede zusätzliche Veröffentlichungsregion konfigurieren, damit die Verfügbarkeit beibehalten wird, wenn eine Region nicht mehr verfügbar ist.
+Wie im Abschnitt „Überlegungen zu erweiterten Netzwerken“ unten beschrieben, wird empfohlen, dass Kundinnen und Kunden, die erweiterte Netzwerke verwenden, diese für jede zusätzliche Veröffentlichungsregion konfigurieren, damit die Verfügbarkeit beibehalten wird, wenn eine Region nicht mehr verfügbar ist.
 
 
 ## Überlegungen zu erweiterten Netzwerken {#advanced-networking-considerations}
@@ -49,13 +49,13 @@ Weitere Informationen finden Sie im Abschnitt [Erweiterte Netzwerkkonfiguration 
 
 ## Protokollierung {#logging}
 
-Wenn zusätzliche Veröffentlichungsbereiche aktiviert sind, werden über Cloud Manager separate Protokolle für jede Region bereitgestellt. Weitere Informationen finden Sie unter [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md) und [Protokolle für weitere Veröffentlichungsregionen](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
+Wenn zusätzliche Veröffentlichungsregionen aktiviert sind, werden separate Protokolle für jede Region über Cloud Manager bereitgestellt. Weitere Informationen finden Sie unter [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md) und [Protokolle für weitere Veröffentlichungsregionen](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
 
 ## Einschränkungen {#limitations}
 
 Beachten Sie die folgenden Einschränkungen bei der Verwendung zusätzlicher Veröffentlichungsregionen.
 
-* Zusätzliche Veröffentlichungsregionen können nur zu AEM Sites hinzugefügt werden. Zusätzliche Veröffentlichungsbereiche erstrecken sich nicht auf andere AEM oder zugehörige Funktionen, die im selben Programm bereitgestellt werden (z. B. AEM Forms oder Adobe Learning Manager).
+* Zusätzliche Veröffentlichungsregionen können nur zu AEM Sites hinzugefügt werden. Zusätzliche Veröffentlichungsregionen erstrecken sich nicht auf andere AEM-Lösungen oder zugehörige Funktionen, die im selben Programm bereitgestellt werden (z. B. AEM Forms oder Adobe Learning Manager).
 * Zusätzliche Regionen können nur hinzugefügt werden, wenn verknüpfte Berechtigungen im Mandanten verfügbar und nicht verwendet sind.
 * Es können maximal drei zusätzliche Veröffentlichungsregionen zu jeder einzelnen Umgebung hinzugefügt werden.
 * Zusätzliche Regionen sind nur für Produktionsprogramme verfügbar. Die Funktion ist nicht in Sandbox-Programmen verfügbar.

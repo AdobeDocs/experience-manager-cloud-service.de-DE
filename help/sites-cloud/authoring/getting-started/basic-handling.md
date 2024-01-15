@@ -5,7 +5,7 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2943'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Dieses Dokument soll einen Überblick über die grundlegende Handhabung der AEM-
 
 ## Touch-optimierte Benutzeroberfläche {#a-touch-enabled-ui}
 
-Die Benutzeroberfläche für AEM wurde für Touchscreens optimiert. Eine Touch-optimierte Benutzeroberfläche ermöglicht es Ihnen, mithilfe von Gesten wie &quot;Auswählen&quot;, &quot;Berühren und Halten&quot;und &quot;Wischen&quot;mit der Software zu interagieren. Da die AEM-Benutzeroberfläche Touch-optimiert ist, können Sie Berührungsgesten auf Ihren Touch-Geräten wie auf Ihrem Handy oder Tablet verwenden. Es sind jedoch auch Mausaktionen auf einem herkömmlichen Desktop-Gerät möglich, sodass Sie flexibel entscheiden können, wie Sie Ihre Inhalte erstellen möchten.
+Die AEM-Benutzeroberfläche wurde für Touchscreens optimiert. Eine Touch-optimierte Benutzeroberfläche ermöglicht es Ihnen, mithilfe von Gesten wie &quot;Auswählen&quot;, &quot;Berühren und Halten&quot;und &quot;Wischen&quot;mit der Software zu interagieren. Da die AEM-Benutzeroberfläche Touch-optimiert ist, können Sie Berührungsgesten auf Ihren Touch-Geräten wie auf Ihrem Handy oder Tablet verwenden. Es sind jedoch auch Mausaktionen auf einem herkömmlichen Desktop-Gerät möglich, sodass Sie flexibel entscheiden können, wie Sie Ihre Inhalte erstellen möchten.
 
 ## Erste Schritte {#first-steps}
 
@@ -31,21 +31,21 @@ Unmittelbar nach der Anmeldung gelangen Sie zum [Navigationsfenster](#navigation
 
 ![Navigationsfenster](/help/sites-cloud/authoring/assets/navigation.png)
 
-Damit Sie ein gutes Verständnis der grundlegenden Funktionen in AEM erhalten, wurde für dieses Dokument die **Sites-Konsole** herangezogen. Wählen Sie aus **Sites** um zu beginnen.
+Damit Sie ein gutes Verständnis der grundlegenden Funktionen in AEM erhalten, wurde für dieses Dokument die **Sites-Konsole** herangezogen. Wählen Sie **Sites** aus, um zu beginnen.
 
 ## Produktnavigation {#product-navigation}
 
-Wenn eine Benutzerin oder ein Benutzer zum ersten Mal auf eine Konsole zugreift, wird ein Tutorial zur Produktnavigation gestartet. Nehmen Sie sich einen Augenblick Zeit, um sich einen guten Überblick über die grundlegende Handhabung von AEM zu verschaffen.
+Wenn eine Benutzerin oder ein Benutzer zum ersten Mal auf eine Konsole zugreift, wird ein Tutorial zur Produktnavigation gestartet. Nehmen Sie sich einen Moment Zeit, um sich das Programm anzusehen und einen guten Überblick über den grundlegenden Umgang mit AEM zu erhalten.
 
 ![Navigations-Tutorial](/help/sites-cloud/authoring/assets/tutorial.png)
 
-Auswählen **Nächste** um zur nächsten Seite der Übersicht zu gelangen. Auswählen **Schließen** oder wählen Sie außerhalb des Übersichtsdialogfelds aus, um es zu schließen.
+Wählen Sie **Weiter** aus, um zur nächsten Seite des Überblicks zu wechseln. Wählen Sie zum Schließen die Option **Schließen** oder eine Stelle außerhalb des Dialogfelds „Überblick“ aus.
 
 Die Übersicht wird bei Ihrem nächsten Zugriff auf eine Konsole wieder gestartet, sofern Sie nicht die Option **Nicht mehr anzeigen** aktivieren.
 
 ## Globale Navigation {#global-navigation}
 
-Sie können mithilfe des globalen Navigationsfensters zwischen den Konsolen navigieren. Diese wird als Vollbild-Dropdown-Liste ausgelöst, wenn Sie den Adobe Experience Manager-Link oben links im Bildschirm auswählen.
+Sie können mithilfe des globalen Navigationsfensters zwischen den Konsolen navigieren. Dieses Navigationsfenster wird als Vollbild-Dropdown angezeigt, wenn Sie den Adobe Experience Manager-Link in der linken oberen Bildschirmecke auswählen.
 
 Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließen** klicken oder tippen. Sie kehren dann zu Ihrer vorherigen Position zurück.
 
@@ -79,7 +79,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
 
 ## Tools-Bereich {#tools-panel}
 
-Im Tools-Bereich befindet sich ein seitliches Bedienfeld mit einem Bereich von Kategorien, in denen ähnliche Tools-Konsolen gruppiert sind. Die Tools-Konsolen bieten Zugriff auf verschiedene spezialisierte Tools und Konsolen, mit denen Sie Websites, digitale Assets und andere Bereiche Ihres Inhalts-Repositorys verwalten können. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+Im Tools-Bereich befindet sich ein seitliches Bedienfeld mit einem Bereich von Kategorien, in denen ähnliche Tools-Konsolen gruppiert sind. Die Tools-Konsolen bieten Zugriff auf verschiedene spezialisierte Tools und Konsolen, mit denen Sie Websites, digitale Assets und andere Aspekte Ihres Content-Repositorys verwalten können. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![Tools-Bereich](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -133,7 +133,7 @@ Die Kopfzeile befindet sich immer am oberen Rand des Bildschirms. Die meisten Op
 
   Breadcrumbs befinden sich immer in der Mitte der Leiste und zeigen die Beschreibung des aktuell ausgewählten Elements an. Sie ermöglichen Ihnen damit die Navigation innerhalb einer bestimmten Konsole. In der **Sites**-Konsole können Sie damit durch die Ebenen Ihrer Website navigieren.
 
-  Klicken Sie einfach auf den Breadcrumb-Text, um eine Dropdown-Liste mit den Hierarchieebenen des aktuell ausgewählten Elements anzuzeigen. Klicken Sie auf einen Eintrag, um zu dieser Position zu springen.
+  Klicken Sie einfach auf den Breadcrumb-Text, um eine Dropdown-Liste mit den Hierarchieebenen des aktuell ausgewählten Elements anzuzeigen. Klicken Sie auf einen Eintrag, um zu dieser Position zu gelangen.
 
   ![Beispiel für Breadcrumbs (erweitert)](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
@@ -171,7 +171,7 @@ Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
 
 * **Konsolensymbolleiste**
 
-  Je nach Standort kann die **Hilfe** -Symbol öffnet die entsprechenden Ressourcen:
+  Durch Auswahl des Symbols **Hilfe** werden abhängig von Ihrer Position die geeigneten Ressourcen geöffnet:
 
   ![Hilfesymbol](/help/sites-cloud/authoring/assets/help-console.png)
 
@@ -232,7 +232,7 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 
 In der [Kartenansicht](#card-view) sind bestimmte Aktionen sowohl als Schnellaktionssymbole als auch auf der Symbolleiste vorhanden. Schnellaktionssymbole sind jeweils nur für ein Element verfügbar, sodass Sie keine Vorauswahl treffen müssen.
 
-Die Schnellaktionen sind sichtbar, wenn Sie mit dem Mauszeiger über eine Ressourcenkarte (Desktop-Gerät) fahren. Die verfügbaren Schnellaktionen können von der Konsole und dem Kontext abhängen. Hier finden Sie beispielsweise die Schnellaktionen für eine Seite in der **Sites**-Konsole:
+Die Schnellaktionen sind sichtbar, wenn Sie den Mauszeiger (auf Desktop-Geräten) über eine Ressourcenkarte bewegen. Die verfügbaren Schnellaktionen können von der Konsole und dem Kontext abhängen. Hier finden Sie beispielsweise die Schnellaktionen für eine Seite in der **Sites**-Konsole:
 
 ![Zusätzliche Optionen](/help/sites-cloud/authoring/assets/quick-actions.png)
 
@@ -305,7 +305,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
    * Beim Tippen bzw. Klicken werden der Ressourcenname und der Pfeil hervorgehoben.
    * Die untergeordneten Elemente der angeklickten/angetippten Ressource werden in der Spalte rechts neben der angeklickten/angetippten Ressource angezeigt.
-   * Wenn Sie einen Ressourcennamen auswählen, der keine untergeordneten Elemente enthält, werden die zugehörigen Details in der letzten Spalte angezeigt.
+   * Wenn Sie einen Ressourcennamen auswählen, der keine untergeordneten Elemente besitzt, werden die Ressourcendetails in der letzten Spalte angezeigt.
 
 * Durch Tippen oder Klicken auf die Miniaturansicht wird die Ressource ausgewählt.
 
@@ -332,7 +332,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
    * den Seitentitel
    * wichtige Daten (z. B. zuletzt bearbeitet, zuletzt veröffentlicht)
    * ob die Seite gesperrt, ausgeblendet oder Teil einer Live Copy ist
-   * Gegebenenfalls Zeitpunkt, zu dem Sie im Rahmen eines Workflows tätig werden müssen
+   * wann Sie im Zuge eines Workflows agieren müssen (sofern zutreffend)
       * Markierungen, die die erforderlichen Aktionen angeben, können mit Einträgen in Ihrem [Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md) in Verbindung stehen.
 
 * [Schnellaktionen](#quick-actions) sind ebenfalls in dieser Ansicht verfügbar, z. B. Auswahl und allgemeine Aktionen wie Bearbeiten.
@@ -353,12 +353,12 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
    * Wenn alle Elemente in der Liste ausgewählt sind, wird dieses Kontrollkästchen aktiviert.
 
-      * Aktivieren Sie das Kontrollkästchen, um die Auswahl aller Optionen aufzuheben.
+      * Wählen Sie das Kontrollkästchen aus, um die Auswahl für alle aufzuheben.
 
    * Wenn nur einige Elemente ausgewählt sind, wird es mit einem Minuszeichen angezeigt.
 
-      * Aktivieren Sie das Kontrollkästchen, um alle auszuwählen.
-      * Aktivieren Sie das Kontrollkästchen erneut, um die Auswahl für alle aufzuheben.
+      * Wählen Sie das Kontrollkästchen aus, um alle auszuwählen.
+      * Wählen Sie das Kontrollkästchen erneut aus, um die Auswahl für alle aufzuheben.
 
 * Wählen Sie mit der Option **Ansichtseinstellungen** unter der Schaltfläche „Ansichten“ die Spalten aus, die angezeigt werden sollen. Die folgenden Spalten stehen zur Anzeige zur Verfügung:
 
@@ -367,7 +367,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
    * **Veröffentlicht** – Veröffentlichungsstatus
    * **Vorschau** – Vorschaustatus
    * **Vorlage** – Vorlage, auf der die Seite basiert
-   * **Workflow** – Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darauf bewegen oder die Timeline öffnen.
+   * **Workflow** – Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darüber bewegen oder die Timeline öffnen.
    * **Seiten-Analytik**
    * **Unique Visitors**
    * **Zeit auf Seite**
@@ -386,7 +386,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
   Wählen Sie die vertikale Auswahlleiste aus und ziehen Sie das Element an eine neue Position in der Liste.
 
-  ![Bestellliste](/help/sites-cloud/authoring/assets/order-list.png)
+  ![Liste sortieren](/help/sites-cloud/authoring/assets/order-list.png)
 
 ## Schienenauswahl {#rail-selector}
 
@@ -422,7 +422,7 @@ Die Zeitleiste kann zur Anzeige und/oder Einleitung von Ereignissen in Verbindun
 
 ![Zeitleisten-Struktur](/help/sites-cloud/authoring/assets/timeline.png)
 
-In der Timeline-Spalte können Sie:
+In der Timeline-Spalte haben Sie folgende Möglichkeiten:
 
 * Anzeigen verschiedener Ereignisse im Zusammenhang mit einem ausgewählten Element
 
@@ -476,6 +476,6 @@ Im Dokument [Verwenden der Site-Leiste zur Verwaltung des Designs Ihrer Site](/h
 
 ### Filter {#filter}
 
-Dadurch wird ein Bedienfeld geöffnet, das dem [suchen](/help/sites-cloud/authoring/getting-started/search.md) mit den entsprechenden Ortsfiltern, die bereits festgelegt wurden, können Sie den Inhalt, den Sie anzeigen möchten, weiter filtern.
+Hierdurch wird ein dem [Suchbereich](/help/sites-cloud/authoring/getting-started/search.md) ähnliches Fenster mit bereits entsprechend eingestellten Ortsfiltern geöffnet. So können Sie den für die Anzeige gewünschten Inhalt weiter filtern.
 
 ![Filterbeispiel](/help/sites-cloud/authoring/assets/filter.png)

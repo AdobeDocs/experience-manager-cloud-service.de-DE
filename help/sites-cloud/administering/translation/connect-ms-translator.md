@@ -7,7 +7,7 @@ exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 81%
+ht-degree: 97%
 
 ---
 
@@ -34,9 +34,9 @@ Nachdem Sie die Konfiguration erstellt haben, müssen Sie sie [aktivieren](#act
 
 Mit dem folgenden Verfahren wird eine Microsoft Translator-Konfiguration erstellt.
 
-1. Im [Navigationsfenster,](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) select **Instrumente** > **Cloud Service** > **Übersetzungs-Cloud Service**.
-1. Navigieren Sie zu der Stelle, an der Sie die Konfiguration erstellen möchten. Normalerweise ist dies in Ihrem Site-Stammverzeichnis oder es kann eine globale Standardkonfiguration sein.
-1. Klicken Sie auf die Schaltfläche **Erstellen**.
+1. Wählen Sie im [Navigationsbereich](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services** aus.
+1. Navigieren Sie zu dem Ort, an dem Sie die Konfiguration erstellen möchten. Normalerweise ist dies in Ihrem Site-Stammverzeichnis oder es kann eine globale Standardkonfiguration sein.
+1. Wählen Sie die Schaltfläche **Erstellen**.
 1. Legen Sie Ihre Konfiguration fest.
    1. Wählen Sie **Microsoft Translator** in der Dropdown-Liste aus.
    1. Geben Sie einen Titel für Ihre Konfiguration ein. Durch den Titel wird die Konfiguration in der Cloud Services-Konsole und in Dropdown-Listen mit den Seiteneigenschaften identifiziert.
@@ -49,26 +49,26 @@ Mit dem folgenden Verfahren wird eine Microsoft Translator-Konfiguration erstell
 
    ![Bearbeiten einer Übersetzungskonfiguration](../assets/edit-translation-config.png)
 
-1. Auswählen **Verbinden** , um die Verbindung zu überprüfen.
-1. Klicken Sie auf **Speichern und schließen**.
+1. Wählen Sie **Verbinden** aus, um die Verbindung zu überprüfen.
+1. Wählen Sie **Speichern und schließen**.
 
 ## Durchführen eines Upgrades für die Konfiguration „Microsoft Translator-Testlizenz“ {#upgrading-the-microsoft-translator-trial-license-configuration}
 
 Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link zur Microsoft-Website, über den Sie ein für Produktionssysteme geeignetes Kontoabonnement erhalten können.
 
-1. Im [Navigationsfenster,](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) select **Instrumente** > **Cloud Service** > **Übersetzungs-Cloud Service**.
+1. Wählen Sie im [Navigationsbereich](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services** aus.
 1. Wählen Sie Ihre vorhandene Microsoft Translator-Konfiguration aus.
 1. Wählen Sie **Bearbeiten** aus.
-1. Im **Konfiguration bearbeiten** auswählen **Upgrade-Abonnement**. Eine Microsoft-Webseite mit weiteren Details zum Service wird geöffnet.
+1. Wählen Sie im Fenster **Konfiguration bearbeiten** die Option **Abonnement aktualisieren** aus. Eine Microsoft-Webseite mit weiteren Details zum Service wird geöffnet.
 
 ## Anpassen der Microsoft Translator-Engine {#customizing-your-microsoft-translator-engine}
 
 Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link zur Microsoft-Website, auf der die Microsoft Translator-Engine angepasst werden kann.
 
-1. Im [Navigationsfenster,](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) select **Instrumente** > **Cloud Service** > **Übersetzungs-Cloud Service**.
+1. Wählen Sie im [Navigationsbereich](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services** aus.
 1. Wählen Sie Ihre vorhandene Microsoft Translator-Konfiguration aus.
 1. Wählen Sie **Bearbeiten** aus.
-1. Im **Konfiguration bearbeiten** auswählen **Übersetzer anpassen**. Verwenden Sie die Microsoft-Webseite, die geöffnet wird, um Ihren Service anzupassen.
+1. Wählen Sie im Fenster **Konfiguration bearbeiten** die Option **Translator anpassen** aus. Verwenden Sie die Microsoft-Webseite, die geöffnet wird, um Ihren Service anzupassen.
 
 ## Aktivieren der Übersetzungs-Service-Konfigurationen {#activating-the-translator-service-configurations}
 

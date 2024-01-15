@@ -9,7 +9,7 @@ docset: aem65
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2465'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 ## Übersicht {#overview}
@@ -50,7 +50,7 @@ Die Touch-optimierte Benutzeroberfläche für das Erstellen adaptiver Formulare 
 * Standardmäßige Formularkomponenten
 * Integriertes Repository für Assets
 
-Wenn Sie ein vorhandenes adaptives Formular erstellen oder bearbeiten, verwenden Sie die folgenden Elemente der Benutzeroberfläche:
+Wenn Sie ein vorhandenes adaptives Formular erstellen oder bearbeiten, verwenden Sie die folgenden UI-Elemente:
 
 * [Seitenleiste](#sidebar)
 * [Seitensymbolleiste](#page-toolbar)
@@ -87,7 +87,7 @@ Im Inhalt-Browser können Sie Folgendes anzeigen:
 
    * **Datenmodellobjekte**
 Hiermit können Sie die Formularmodellhierarchie anzeigen.
-Sie können Formularmodellelemente per Drag-and-Drop in das adaptive Formular ziehen. Die hinzugefügten Elemente werden automatisch in Formularkomponenten konvertiert, während ihre ursprünglichen Eigenschaften beibehalten werden. Sie können Datenmodellobjekte anzeigen, wenn in Ihrem Formular ein XML-Schema, ein JSON-Schema oder eine XDP-Vorlage verwendet wird.
+Damit können Sie Formularmodellelemente per Drag-and-Drop auf das adaptive Formular ziehen. Die hinzugefügten Elemente werden automatisch in Formularkomponenten konvertiert, während ihre ursprünglichen Eigenschaften beibehalten werden. Sie können Datenmodellobjekte anzeigen, wenn in Ihrem Formular ein XML-Schema, ein JSON-Schema oder eine XDP-Vorlage verwendet wird.
 
 * **Eigenschaften-Browser**
 

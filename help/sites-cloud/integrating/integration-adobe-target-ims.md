@@ -5,7 +5,7 @@ exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '854'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Bevor Sie mit diesem Verfahren beginnen:
 * Der Systemadministrator Ihres Unternehmens sollte die Admin Console verwenden, um die erforderlichen Entwickler in Ihrem Unternehmen den relevanten Produktprofilen hinzuzufügen.
 
    * Dadurch erhalten bestimmte Entwickler Berechtigungen, Integrationen mithilfe der Adobe-Entwicklerkonsole zu ermöglichen.
-   * Siehe [Verwalten von Entwicklern](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
+   * Siehe [Verwalten von Entwickelnden](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
 ## Konfigurieren einer IMS-Konfiguration – Generieren eines öffentlichen Schlüssels {#configuring-an-ims-configuration-generating-a-public-key}
@@ -67,9 +67,9 @@ Adobe-Entwicklerkonsolen-Projekt (Integration) mit Adobe Target, das AEM verwend
 
 >[!CAUTION]
 >
->Derzeit unterstützen wir nur die **Dienstkonto (JWT)** Berechtigungstyp.
+>Derzeit unterstützen wir nur den Anmeldedatentyp **Service-Konto (JWT)** der Adobe Developer Console.
 >
->Verwenden Sie nicht das **OAuth Server-zu-Server** Berechtigungstyp, der in Zukunft unterstützt wird.
+>Verwenden Sie nicht den Anmeldedatentyp **OAuth-Server-zu-Server**, der erst in Zukunft unterstützt wird.
 
 1. Öffnen Sie die Adobe-Entwicklerkonsole für Projekte:
 
@@ -154,7 +154,7 @@ Wählen Sie **Anzeigen** (rechts neben einem bestimmten Projekteintrag) aus, um 
 * APIs
    * Beispiel: Adobe Target
 
-Einige davon müssen Sie die Integration von Adobe Target in AEM auf der Basis von IMS abschließen.
+Bei einigen davon müssen Sie die Integration von Adobe Target in AEM mithilfe von IMS abschließen.
 
 ## Abschließen der IMS-Konfiguration in AEM {#completing-the-ims-configuration-in-aem}
 
@@ -196,7 +196,7 @@ So überprüfen Sie, ob die Konfiguration erwartungsgemäß funktioniert:
 
    ![Konsistenz prüfen](assets/integrate-target-ims-12.png)
 
-1. Bei Erfolg wird eine Bestätigungsmeldung angezeigt.
+1. Bei erfolgreicher Ausführung wird eine Bestätigungsmeldung angezeigt.
 
 ## Abschließen der Integration mit Adobe Target {#complete-the-integration-with-adobe-target}
 

@@ -14,7 +14,7 @@ exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
 source-git-commit: d9d4ed55722920a8528056defbc0d8a411dd6807
 workflow-type: tm+mt
 source-wordcount: '1866'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
@@ -57,7 +57,7 @@ Befolgen Sie die unter [AEM Projektarchetyp](https://experienceleague.adobe.com/
 ![AEM Commerce-Projekt](../assets/aep-integration/aem-project-with-commerce.png)
 
 
-Erstellen Sie das erstellte AEM Commerce-Projekt und stellen Sie es im lokalen AEM SDK bereit, indem Sie den folgenden Befehl im Stammverzeichnis des Projekts ausführen.
+Erstellen Sie das angelegte AEM Commerce-Projekt und stellen Sie es im lokalen AEM SDK bereit, indem Sie den folgenden Befehl aus dem Stammverzeichnis des Projekts ausführen.
 
 ```bash
 $ mvn clean install -PautoInstallSinglePackage
@@ -402,11 +402,11 @@ Führen Sie die folgenden Schritte aus, um einen Datenstrom in Experience Platfo
 
    ![AEP – Datenströme erstellen](../assets/aep-integration/AEP-Datastream-Create.png)
 
-1. Benennen Sie Ihren Datenstrom mithilfe des erforderlichen Feldes __Name__. Unter dem __Ereignisschema__ das Feld, wählen Sie das erstellte Schema und klicken Sie auf __Speichern__.
+1. Benennen Sie Ihren Datenstrom mithilfe des erforderlichen Feldes __Name__. Wählen Sie das erstellte Schema unter dem Feld __Ereignisschema__ aus und wählen Sie dann __Speichern__.
 
    ![AEP – Datenströme definieren](../assets/aep-integration/AEP-Datastream-Define.png)
 
-1. Öffnen Sie den erstellten Datenspeicher und klicken Sie auf __Dienst hinzufügen__.
+1. Öffnen Sie den erstellten Datenstrom und klicken Sie auf __Service hinzufügen__.
 
    ![AEP-Datenströme – Service hinzufügen](../assets/aep-integration/AEP-Datastream-Add-Service.png)
 
@@ -439,7 +439,7 @@ Um das Ereignis zu triggern, können Sie den AEM-Autor oder den Veröffentlichun
 
 1. Klicken Sie in der oberen Aktionsleiste auf __Als veröffentlicht anzeigen__ und klicken Sie dann in der Navigation der Storefront auf eine beliebige bevorzugte Kategorie.
 
-1. Klicken Sie auf eine beliebige Produktkarte im __Produktseite__, wählen Sie __Farbe, Größe__ um die __Zum Warenkorb hinzufügen__ Schaltfläche.
+1. Klicken Sie auf eine beliebige Produktkarte auf der __Produktseite__ und wählen Sie __Farbe, Größe__, um die Schaltfläche __Zum Warenkorb hinzufügen__ zu aktivieren.
 
 
 1. Öffnen Sie die __Snowploinspektor__ Erweiterung aus dem Bedienfeld der Browsererweiterung und wählen Sie __Experience Platform Wed SDK__ in der linken Leiste.
@@ -499,6 +499,6 @@ __Profile-XDM-Ereignisse:__
 Weitere Informationen finden Sie in den folgenden Ressourcen:
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [[!DNL Data Connection] Übersicht](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
-- [[!DNL Data Connection] Veranstaltungen](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
+- Überblick über [[!DNL Data Connection] ](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html?lang=de)
+- [[!DNL Data Connection] Ereignisse](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html?lang=de)
 - [Überblick zu Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=de)

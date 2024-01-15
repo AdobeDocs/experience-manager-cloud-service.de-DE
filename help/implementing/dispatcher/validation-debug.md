@@ -6,7 +6,7 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '2971'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -109,7 +109,7 @@ Wenn Sie den genauen Host abgleichen möchten, weil Sie mehrere vhost-Dateien ha
 
 * `conf.d/enabled_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-Dieser Ordner enthält relative symbolische Links zu Dateien unter &quot;conf.dispatcher.d/available_vhosts&quot;.
+Dieser Ordner enthält relative symbolische Links zu Dateien unter „conf.dispatcher.d/available_vhosts“.
 
 Beispielbefehle, die zum Erstellen dieser symbolischen Verknüpfungen erforderlich sind:
 
@@ -127,7 +127,7 @@ mklink wknd.vhost ..\available_vhosts\wknd.vhost
 
 >[!NOTE]
 >
-> Wenn Sie unter Windows mit symbolischen Links arbeiten, sollten Sie an einer Eingabeaufforderung mit erhöhten Rechten, im Windows-Subsystem für Linux oder über die [Erstellen von symbolischen Links](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) zugewiesene Berechtigung.
+> Wenn Sie unter Windows mit symbolischen Links arbeiten, sollte sich Ihre Ausführung in einer Eingabeaufforderung mit erhöhten Rechten oder im Windows-Subsystem für Linux befinden, oder Sie sollten über die Berechtigung [Symbolische Links erstellen](https://docs.microsoft.com/de-de/windows/security/threat-protection/security-policy-settings/create-symbolic-links) verfügen.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -147,7 +147,7 @@ Sie können eine oder mehrere dieser Dateien haben. Sie enthalten Farmen, um Hos
 
 * `conf.dispatcher.d/enabled_farms/<CUSTOMER_CHOICE>.farm`
 
-Dieser Ordner enthält relative symbolische Links zu Dateien unter &quot;conf.dispatcher.d/available_farms&quot;.
+Dieser Ordner enthält relative symbolische Links zu Dateien unter „conf.dispatcher.d/available_farms“.
 
 Beispielbefehle, die zum Erstellen dieser symbolischen Verknüpfungen erforderlich sind:
 
@@ -165,7 +165,7 @@ mklink wknd.farm ..\available_farms\wknd.farm
 
 >[!NOTE]
 >
-> Wenn Sie unter Windows mit symbolischen Links arbeiten, sollten Sie an einer Eingabeaufforderung mit erhöhten Rechten, im Windows-Subsystem für Linux oder über die [Erstellen von symbolischen Links](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) zugewiesene Berechtigung.
+> Wenn Sie unter Windows mit symbolischen Links arbeiten, sollte sich Ihre Ausführung in einer Eingabeaufforderung mit erhöhten Rechten oder im Windows-Subsystem für Linux befinden, oder Sie sollten über die Berechtigung [Symbolische Links erstellen](https://docs.microsoft.com/de-de/windows/security/threat-protection/security-policy-settings/create-symbolic-links) verfügen.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -396,7 +396,7 @@ Im flexiblen Modus können auch andere Dateien eingeschlossen werden, sofern sie
 | `conf.d/modsec` |
 | `conf.d/rewrites` |
 
-Sie können beispielsweise eine Datei in ein erstelltes Verzeichnis unter `conf.d/includes` Verzeichnis wie folgt:
+Sie können beispielsweise wie folgt eine Datei in ein neu erstelltes Unterverzeichnis unter `conf.d/includes` einfügen:
 
 ```
 Include conf.d/includes/mynewdirectory/myincludefile.conf

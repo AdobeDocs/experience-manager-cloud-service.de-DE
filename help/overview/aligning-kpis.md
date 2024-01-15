@@ -5,7 +5,7 @@ exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '482'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ In unserer digitalen Welt kann fast alles gemessen werden. Die Wahl der drei KPI
 
 1. **Bestimmen Sie anhand Ihrer Unternehmensziele Ihre Produktziele.** Ihre Produktziele sind die spezifischen Ergebnisse, die Sie durch die Verwendung von Experience Manager als Content-Management-Plattform erreichen möchten. Wenn Ihr Unternehmensziel darin besteht, den Online-Umsatz zu steigern, könnte Ihr Produktziel sein, eine 2-Punkt-Steigerung der Konversion für alle Seiten mit Marketing-Inhalten zu erreichen. Wenn Ihr Unternehmensziel lautet, die Betriebskosten zu senken, könnte Ihr Produktziel darin bestehen, die Produktivität von Teams, die digitale Inhalte erstellen, um 20 % zu steigern.
 
-   Idealerweise sollte jedes Produktziel eine Basiszahl haben, wie z. B. Ihre aktuelle Konversionsrate für eine bestimmte Kategorie von Seiten. Die Basiszahlen für Website-Besuche, Konversions oder Online-Einnahmen sind relativ einfach zu ermitteln. Bei Produktzielen für die Produktivität oder die Markteinführungszeit wird es wahrscheinlich einige Arbeit erfordern, um eine Basiszahl zu berechnen. Es lohnt sich jedoch, sich zu bemühen, denn klare Ziele helfen Ihnen, mehr Wert aus Ihrer Investition in Experience Manager zu ziehen.
+   Idealerweise sollte jedes Produktziel eine Basiszahl haben, wie z. B. Ihre aktuelle Konversionsrate für eine bestimmte Kategorie von Seiten. Die Basiszahlen für Website-Besuche, Konversions oder Online-Einnahmen sind relativ einfach zu ermitteln. Bei Produktzielen für die Produktivität oder die Markteinführungszeit wird es wahrscheinlich einige Arbeit erfordern, um eine Basiszahl zu berechnen. Aber es lohnt sich, denn mit klaren Produktzielen können Sie mehr aus Ihrer Investition in Experience Manager herausholen.
 
 1. **Definieren Sie für jedes Produktziel Leistungsindikatoren.** Vielleicht besteht Ihr Ziel beispielsweise darin, die mit DRM-Verstößen verbundenen rechtlichen Kosten um 100.000 € zu senken. Ein guter Leistungsindikator könnte sein: „100 % der abgelaufenen Assets werden am oder vor dem Ablaufdatum aus den digitalen Eigenschaften entfernt.“ Versuchen Sie, für jedes Produktziel mehrere Indikatoren zu definieren. Wenn Sie beispielsweise mit zwei bis drei Unternehmenszielen und drei bis fünf Produktzielen begonnen haben, haben Sie eine Liste von 15 bis 20 Leistungsindikatoren.
 

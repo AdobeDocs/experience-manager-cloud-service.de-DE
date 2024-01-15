@@ -8,7 +8,7 @@ exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2453'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -78,7 +78,7 @@ Stellen Sie sicher, dass die Bilder im Trainings-Satz den folgenden Richtlinien 
 
 **Menge und Größe:** Mindestens 10 Bilder und maximal 50 Bilder pro Tag.
 
-**Kohärenz**: Stellen Sie sicher, dass die Bilder für ein Tag visuell ähnlich sind. Es wird empfohlen, die Tags derselben visuellen Aspekte (z. B. desselben Objekttyps in einem Bild) zu einem einzigen Tag-Modell zusammenzufassen. Beispielsweise ist es nicht empfehlenswert, diese Bilder mit Tags zu versehen als `my-party` (für das Training), da sie visuell nicht ähnlich sind.
+**Kohärenz**: Stellen Sie sicher, dass die Bilder für ein Tag visuell ähnlich sind. Es wird empfohlen, die Tags derselben visuellen Aspekte (z. B. desselben Objekttyps in einem Bild) zu einem einzigen Tag-Modell zusammenzufassen. So ist es beispielsweise nicht empfehlenswert, diese Bilder mit dem Tag `my-party` zu versehen (zu Trainings-Zwecken), da sie einander visuell nicht ähnlich sind.
 
 ![Veranschaulichende Bilder als Beispiele für die Richtlinien für das Training](assets/do-not-localize/coherence.png)
 
@@ -123,7 +123,7 @@ Gehen Sie folgendermaßen vor, um ein Modell für Ihre geschäftsspezifischen Ta
 1. Erstellen Sie die erforderlichen Tags und die entsprechende Tag-Struktur. Laden Sie die entsprechenden Bilder in das DAM-Repository hoch.
 1. Rufen Sie in der [!DNL Experience Manager]-Benutzeroberfläche **[!UICONTROL Assets]** > **[!UICONTROL Smart-Tag-Training]** auf.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. Geben Sie einen **[!UICONTROL Titel]** und eine **[!UICONTROL Beschreibung]** ein.
-1. Klicken Sie auf das Ordnersymbol in **[!UICONTROL Tags]** -Feld. Ein Popup-Fenster wird geöffnet.
+1. Klicken Sie auf das Ordnersymbol im Feld **[!UICONTROL Tags]**. Ein Popup-Fenster wird geöffnet.
 1. Suchen oder wählen Sie die entsprechenden Tags, die Sie dem Modell hinzufügen möchten, aus den vorhandenen Tags in `cq-tags` aus. Klicken Sie auf **[!UICONTROL Weiter]**.
 
    >[!NOTE]

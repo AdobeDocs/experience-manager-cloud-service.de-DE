@@ -52,7 +52,7 @@ Die Integration nutzt zwei separate und unabhängige Typen des Tracking von Dyna
 
 ### Informationen zum Tracking mit Adobe Analytics  {#about-tracking-using-adobe-analytics}
 
-Mit Adobe Analytics können Sie Aktionen verfolgen, die vom Benutzer bei der Interaktion mit Dynamic Media-Viewern auf Ihrer Website ausgeführt werden. Mit Adobe Analytics können Sie außerdem Viewer-spezifische Daten verfolgen. Beispielsweise können Sie Ladeereignisse der Ansicht zusammen mit dem Asset-Namen, vorgenommenen Zoom-Aktionen und Videowiedergabeaktionen verfolgen und aufzeichnen.
+Mit Adobe Analytics können Sie Aktionen nachverfolgen, die von Benutzenden bei der Interaktion mit Dynamic Media-Viewern auf Ihrer Website ausgeführt werden. Mit Adobe Analytics können Sie außerdem Viewer-spezifische Daten verfolgen. Beispielsweise können Sie Ladeereignisse der Ansicht zusammen mit dem Asset-Namen, vorgenommenen Zoom-Aktionen und Videowiedergabeaktionen verfolgen und aufzeichnen.
 
 In Experience Platform Tags arbeiten die Konzepte *Datenelemente* und *Regeln* zusammen, um das Adobe Analytics-Tracking zu erlauben.
 
@@ -204,7 +204,7 @@ Gleichermaßen werden die Werte von Datenelementen automatisch aktualisiert, wen
 
 Jeder Dynamic Media-Viewer verfügt auf der Website über eine eindeutige Kennung. Das Datenelement verfolgt den Wert selbst und auch den Viewer, der den Wert ausgefüllt hat. Angenommen, es gibt mehrere Viewer auf derselben Seite und ein **[!UICONTROL AssetName]**-Datenelement, das auf das **[!UICONTROL LOAD]**-Ereignis und das zugehörige „asset“-Argument verweist. Das Datenelement **[!UICONTROL AssetName]** verwaltet eine Sammlung von Asset-Namen, die mit jedem auf der Seite geladenen Viewer verknüpft sind.
 
-Der jeweilige vom Datenelement zurückgegebene Wert hängt vom Kontext ab. Wenn das Datenelement in einer Regel angefordert wird, die durch ein Dynamic Media-Viewer-Ereignis ausgelöst wurde, wird der Datenelementwert für den Viewer zurückgegeben, der die Regel initiiert hat. Und das Datenelement wird in einer Regel angefordert, die durch ein Ereignis einer anderen Platform Tags-Erweiterung ausgelöst wurde. In diesem Fall kommt der Wert des Datenelements von dem Viewer, der dieses Datenelement zuletzt aktualisiert hat.
+Der jeweilige vom Datenelement zurückgegebene Wert hängt vom Kontext ab. Wenn das Datenelement in einer Regel angefordert wird, die durch ein Dynamic Media-Viewer-Ereignis ausgelöst wurde, wird der Datenelementwert für den Viewer zurückgegeben, der die Regel initiiert hat. Und das Datenelement wird in einer Regel angefordert, die durch ein Ereignis einer anderen Experience Platform Tags-Erweiterung ausgelöst wurde. In diesem Fall kommt der Wert des Datenelements von dem Viewer, der dieses Datenelement zuletzt aktualisiert hat.
 
 **Betrachten Sie das folgende Beispiel:**
 
@@ -221,11 +221,11 @@ Der jeweilige vom Datenelement zurückgegebene Wert hängt vom Kontext ab. Wenn 
    * Verwendet das Tastendruckereignis der Experience Platform Tags-Core-Erweiterung als Auslöser.
    * Sendet den Wert des **[!UICONTROL ZoomScale]**-Datenelements an Adobe Analytics.
 
-Nehmen wir nun an, der Benutzer lädt die Webseite mit den beiden Viewern. In *Viewer1* zoomt er auf eine Skalierung von 50 %. In *Viewer2* zoomt er dann auf eine Skalierung von 25 %. In *Viewer1* schwenkt er das Bild und drückt schließlich eine Taste auf der Tastatur.
+Nehmen wir nun an, dass die Benutzerin oder der Benutzer die Web-Seite mit beiden Viewern lädt. In *Viewer1* zoomt er auf eine Skalierung von 50 %. In *Viewer2* zoomt er dann auf eine Skalierung von 25 %. In *Viewer1* schwenkt er das Bild und drückt schließlich eine Taste auf der Tastatur.
 
-Die Aktivität des Benutzers führt dazu, dass die folgenden beiden Tracking-Aufrufe an Adobe Analytics gesendet werden:
+Die Aktivitäten der Person führen dazu, dass die folgenden beiden Tracking-Aufrufe an Adobe Analytics gesendet werden:
 
-* Der erste Aufruf erfolgt, weil die **[!UICONTROL TrackPan]**-Regel ausgelöst wird, wenn der Benutzer in *Viewer1* schwenkt. Dieser Aufruf sendet 50 % als Wert des **[!UICONTROL ZoomScale]**-Datenelements, da das Datenelement weiß, dass die Regel von *Viewer1* ausgelöst wird, und den entsprechenden Skalierungswert abruft.
+* Der erste Aufruf erfolgt, weil die **[!UICONTROL TrackPan]**-Regel ausgelöst wird, wenn die Person in *Viewer1* schwenkt. Dieser Aufruf sendet 50 % als Wert des **[!UICONTROL ZoomScale]**-Datenelements, da das Datenelement weiß, dass die Regel von *Viewer1* ausgelöst wird, und den entsprechenden Skalierungswert abruft.
 * Der zweite Aufruf erfolgt, weil die **[!UICONTROL TrackKey]**-Regel ausgelöst wird, wenn der Benutzer eine Taste auf der Tastatur drückt. Bei diesem Aufruf werden 25 % als Wert des **[!UICONTROL ZoomScale]**-Datenelements gesendet, da die Regel nicht vom Viewer ausgelöst wurde. Daher gibt das Datenelement den aktuellsten Wert zurück.
 
 Das oben aufgestellte Beispiel wirkt sich auch auf die Lebensdauer des Datenelementwerts aus. Der Wert des vom Dynamic Media-Viewer verwalteten Datenelements wird im Code der Experience Platform Tags-Bibliothek gespeichert, selbst wenn der Viewer selbst auf der Website beendet wird. Diese Funktion bedeutet, dass das Datenelement den letzten bekannten Wert zurückgibt, wenn es eine Regel gibt, die nicht von einer Dynamic Media Viewers-Erweiterung ausgelöst wird und auf dieses Datenelement verweist. Das gilt auch, wenn der Viewer nicht mehr auf der Website vorhanden ist.
@@ -519,7 +519,7 @@ Siehe auch [Auswahleigenschaft konfigurieren](https://experienceleague.adobe.com
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-   Wählen Sie die erstellte Eigenschaft aus und fahren Sie dann mit *Installation und Einrichtung von Erweiterungen*.
+   Wählen Sie die erstellte Eigenschaft aus und fahren Sie dann mit der *Installation und Einrichtung von Erweiterungen* fort.
 
 ### Installation und Einrichtung von Erweiterungen {#installing-and-setup-of-extensions}
 

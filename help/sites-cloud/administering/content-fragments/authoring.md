@@ -1,5 +1,5 @@
 ---
-title: Erstellung von Inhaltsfragmenten
+title: Erstellen von Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente erstellen und Varianten dieses Inhalts entsprechend dem Zweck erstellen. Dies bietet mehr Flexibilität für die Headless-Bereitstellung und das Seiten-Authoring.
 feature: Content Fragments
 role: User, Developer, Architect
@@ -7,120 +7,120 @@ exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
 source-wordcount: '2266'
-ht-degree: 5%
+ht-degree: 95%
 
 ---
 
-# Erstellung von Inhaltsfragmenten {#authoring-content-fragments}
+# Erstellen von Inhaltsfragmenten {#authoring-content-fragments}
 
-Die Inhaltserstellung von Inhaltsfragmenten konzentriert sich sowohl auf die Headless-Bereitstellung als auch auf die Seitenbearbeitung.
+Die Erstellung von Inhaltsfragmenten konzentriert sich sowohl auf die Headless-Bereitstellung als auch auf die Seitenbearbeitung.
 
-Für Inhaltsfragmente stehen zwei Editoren zur Verfügung. Der in diesem Abschnitt beschriebene Editor:
+Es gibt zwei Editoren für Inhaltsfragmente. Der Editor, der in diesem Abschnitt beschrieben wird:
 
-* wurde für die Headless-Content-Bereitstellung entwickelt (obwohl sie für alle Szenarien verwendet werden kann)
-* ist im **Inhaltsfragmente** console
+* wurde für die Bereitstellung von Headless-Inhalten entwickelt (obwohl er für alle Szenarien verwendet werden kann)
+* ist über die **Inhaltsfragmentkonsole** verfügbar.
 
 Dieser Editor bietet Folgendes:
 
-* [Automatisches Speichern](#saving-autosaving), um einen versehentlichen Verlust von Bearbeitungen zu verhindern.
-* [Online-Upload von Assets als Inhaltsreferenzen](#reference-images), ohne sie zuerst in Asset DAM hochladen zu müssen.
+* [Automatisches Speichern](#saving-autosaving) zur Vermeidung von versehentlichen Verlusten von Bearbeitungen.
+* [Online-Upload von Assets als Inhaltsverweise](#reference-images), ohne sie zuerst in Asset DAM hochladen zu müssen.
 * [Vorschau](#preview-content-fragment) des vom Inhaltsfragment bereitgestellten gerenderten Erlebnisses.
-* Fähigkeit [Veröffentlichen](#publish-content-fragment) und [Veröffentlichung rückgängig machen](#unpublish-content-fragment) aus dem Editor aus.
-* Fähigkeit [zugehörige Sprachkopien anzeigen und öffnen](#view-language-copies) im Editor.
-* Fähigkeit [Versionsdetails anzeigen](#view-version-history) im Editor. Sie können auch zu einer ausgewählten Version zurückkehren.
-* Fähigkeit [Anzeigen und Öffnen von übergeordneten Verweisen](#view-parent-references).
-* Eine hierarchische Ansicht des Inhaltsfragments und seiner Verweise mithilfe der [Strukturstruktur](#structure-tree).
+* Fähigkeit zum [Veröffentlichen](#publish-content-fragment) und [Aufheben der Veröffentlichung](#unpublish-content-fragment) über den Editor.
+* Fähigkeit zum [Anzeigen und Öffnen zugehöriger Sprachkopien](#view-language-copies) im Editor.
+* Fähigkeit zum [Anzeigen von Versionsdetails](#view-version-history) im Editor. Sie können auch eine ausgewählte Version wiederherstellen.
+* Fähigkeit zum [Anzeigen und Öffnen von übergeordneten Verweisen](#view-parent-references).
+* Eine hierarchische Ansicht des Inhaltsfragments und seiner Verweise mithilfe der [Baumstruktur](#structure-tree).
 
 >[!WARNING]
 >
->Der in diesem Abschnitt beschriebene Editor ist: *only* verfügbar im *online* Adobe Experience Manager (AEM) as a Cloud Service.
+>Der in diesem Abschnitt beschriebene Editor ist *nur* *online* in Adobe Experience Manager (AEM) as a Cloud Service verfügbar.
 
-## Inhaltsfragment-Editor {#content-fragment-editor}
+## Inhaltsfragmenteditor {#content-fragment-editor}
 
-Beim ersten Öffnen des Inhaltsfragment-Editors werden vier Hauptbereiche angezeigt:
+Beim ersten Öffnen des Inhaltsfragmenteditors werden vier Hauptbereiche angezeigt:
 
 * obere Symbolleiste: für wichtige Informationen und Aktionen
-   * einen Link zur Inhaltsfragmentkonsole (Startseiten-Symbol)
+   * ein Link zur Inhaltsfragmentkonsole (Startseiten-Symbol)
    * Informationen zum Modell und Ordner
-   * Links zu [Vorschau (wenn das URL-Standardmuster für die Vorschau für das Modell konfiguriert ist)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
-   * [Veröffentlichen](#publish-content-fragment), und [Veröffentlichung rückgängig machen](#unpublish-content-fragment) Aktionen
-   * eine Option zum Anzeigen aller **Übergeordnete Verweise** (Verknüpfungssymbol)
-   * das Fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** und zuletzt gespeicherte Informationen
-   * Umschalten auf den ursprünglichen (Assets-basierten) Editor
+   * Links zur [Vorschau (wenn das URL-Standardmuster für die Vorschau für das Modell konfiguriert ist)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
+   * die Aktionen [Veröffentlichen](#publish-content-fragment) und [Veröffentlichung aufheben](#unpublish-content-fragment)
+   * eine Option zum Anzeigen aller **übergeordneten Verweise** (Verknüpfungssymbol)
+   * der **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** des Fragments und Informationen über die letzte Speicherung
+   * ein Umschalter zum Umschalten auf den ursprünglichen (Assets-basierten) Editor
 
      >[!WARNING]
      >
-     >Der ursprüngliche Editor wird auf derselben Registerkarte geöffnet. Es wird nicht empfohlen, beide Editoren gleichzeitig geöffnet zu haben.
+     >Der ursprüngliche Editor wird auf derselben Registerkarte geöffnet. Es wird davon abgeraten, beide Editoren gleichzeitig geöffnet zu haben.
 
-* linker Bereich: zeigt die **[Varianten](#variations)** für das Inhaltsfragment und dessen **Felder**:
-   * Diese Links können verwendet werden, um [Navigieren in der Inhaltsfragmentstruktur](#navigate-structure)
-* Rechter Bereich: enthält Registerkarten [Anzeigen der Eigenschaften (Metadaten) und Tags](#view-properties-tags), Informationen über die [Versionsverlauf](#view-version-history)sowie Informationen zu allen [Sprachkopien](#view-language-copies)
-   * im **Eigenschaften** Registerkarte können Sie die **Titel** und **Beschreibung** für das Fragment oder **Variante**
-* Zentralbereich: zeigt die tatsächlichen Felder und den Inhalt der ausgewählten Variante an
-   * ermöglicht die Bearbeitung des Inhalts
-   * if **Registerkartenplatzhalter** -Felder werden innerhalb des hier gezeigten Modells definiert und können für die Navigation verwendet werden. Sie werden entweder horizontal oder als Dropdown-Liste angezeigt.
+* linker Bereich: zeigt die **[Varianten](#variations)** für das Inhaltsfragment und dessen **Felder** an:
+   * diese Links können verwendet werden, um [in der Inhaltsfragmentstruktur zu navigieren](#navigate-structure)
+* rechter Bereich: enthält Registerkarten [mit den Eigenschaften (Metadaten) und Tags](#view-properties-tags), Informationen über den [Versionsverlauf](#view-version-history) sowie Informationen zu [Sprachkopien](#view-language-copies)
+   * auf der Registerkarte **Eigenschaften** können Sie den **Titel** und die **Beschreibung** für das Fragment oder die **Variante** aktualisieren
+* zentraler Bereich: zeigt die tatsächlichen Felder und den Inhalt der ausgewählten Variante an
+   * ermöglicht das Bearbeiten des Inhalts
+   * wenn **Registerkartenplatzhalter**-Felder innerhalb des hier gezeigten Modells definiert werden und für die Navigation verwendet werden können, werden sie entweder horizontal oder als Dropdown-Liste angezeigt.
 
   >[!NOTE]
   >
   >Abhängig von den Definitionen im zugrunde liegenden Modell können Felder bestimmten Typen von [Validierung](/help/assets/content-fragments/content-fragments-models.md#validation).
 
-![Inhaltsfragmente-Editor - Übersicht](assets/cf-authoring-overview.png)
+![Inhaltsfragmenteditor – Überblick](assets/cf-authoring-overview.png)
 
-## Navigieren zur Inhaltsfragmentstruktur {#navigate-structure}
+## In der Inhaltsfragmentstruktur navigieren {#navigate-structure}
 
 Ein einzelnes Inhaltsfragment;
 
 * Besteht aus zwei Ebenen:
 
    * **[Varianten](#variations)** des Inhaltsfragments
-   * **Felder** - vom Inhaltsfragmentmodell definiert und von jeder Variante verwendet
+   * **Felder** – vom Inhaltsfragmentmodell definiert und von jeder Variante verwendet
 
-* Kann verschiedene Verweise enthalten.
+* Kann eine Reihe von Verweisen enthalten.
 
 ### Varianten und Felder {#variations-and-fields}
 
 Im linken Bereich können Sie Folgendes sehen:
 
-* die Liste der **[Varianten](#variations)** die für dieses Fragment erstellt wurden:
-   * **Main** ist die Variante, die beim ersten Erstellen des Inhaltsfragments vorhanden ist. Sie können später weitere hinzufügen
-   * Sie können eine Variante zur Bearbeitung auswählen und öffnen
+* die Liste der **[Varianten](#variations)**, die für dieses Fragment erstellt wurden:
+   * **Haupt** ist die Variante, die beim ersten Erstellen des Inhaltsfragments vorhanden ist. Sie können später weitere hinzufügen
+   * Sie können eine Variante auswählen und zur Bearbeitung öffnen
    * Sie können auch [eine Variante erstellen](#create-variation)
 * die **Felder** innerhalb des Fragments und dessen Varianten:
-   * Das Symbol zeigt an, dass [Datentyp](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
+   * das Symbol zeigt den [Datentyp](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) an
    * der Text ist der Feldname
-   * Diese stellen einen direkten Link zum Feldinhalt im zentralen Bedienfeld bereit (für die aktuelle Variante).
+   * diese stellen gemeinsam einen direkten Link zum Feldinhalt im zentralen Bereich bereit (für die aktuelle Variante)
 
 ### Links folgen {#follow-links}
 
-In verschiedenen Bereichen des Editors wird das Link-Symbol angezeigt. Dies kann zum Öffnen des angezeigten Elements verwendet werden, z. B. ein Inhaltsfragmentmodell, eine übergeordnete Referenz oder ein Fragment, auf das verwiesen wird:
+Das Link-Symbol wird in verschiedenen Bereichen des Editors angezeigt. Dies kann zum Öffnen des angezeigten Elements verwendet werden, z. B. ein Inhaltsfragmentmodell, eine übergeordnete Referenz oder ein Fragment, auf das verwiesen wird:
 
-![Inhaltsfragment-Editor - Link-Symbol](assets/cf-authoring-link-icon.png)
+![Inhaltsfragmenteditor – Link-Symbol](assets/cf-authoring-link-icon.png)
 
-### Strukturstruktur {#structure-tree}
+### Baumstruktur {#structure-tree}
 
-Öffnen Sie die **Strukturstruktur** in der Editor-Symbolleiste, um die hierarchische Struktur des Inhaltsfragments und dessen Verweise anzuzeigen. Verwenden Sie die Link-Symbole, um zu den Verweisen zu navigieren.
+Öffnen Sie die Registerkarte **Baumstruktur** über die Editor-Symbolleiste, um die hierarchische Struktur des Inhaltsfragments und dessen Verweise anzuzeigen. Verwenden Sie die Link-Symbole, um zu den Verweisen zu navigieren.
 
-![Inhaltsfragmente-Editor - Strukturstruktur](assets/cf-authoring-structure-tree.png)
+![Inhaltsfragmenteditor – Baumstruktur](assets/cf-authoring-structure-tree.png)
 
 >[!NOTE]
 >
->Siehe [Analysieren der Struktur von Inhaltsfragmenten - Strukturstruktur](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree) für weitere Details.
+>Siehe [Analysieren der Struktur von Inhaltsfragmenten – Baumstruktur](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree) für weitere Details.
 
 ## Speichern und automatisches Speichern {#saving-autosaving}
 
 <!-- CHECK: cannot be saved, no undo, redo -->
 
-Bei jeder von Ihnen vorgenommenen Aktualisierung wird das Inhaltsfragment automatisch gespeichert. Die zuletzt gespeicherte Zeit wird in der oberen Symbolleiste angezeigt.
+Das Inhaltsfragment wird bei jeder von Ihnen vorgenommenen Aktualisierung automatisch gespeichert. Die Zeit der letzten Speicherung wird in der oberen Symbolleiste angezeigt.
 
 ## Varianten {#variations}
 
-[Varianten](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) sind eine wichtige Funktion AEM Inhaltsfragmente. Sie ermöglichen es Ihnen, Kopien der **Main** Inhalte für die Verwendung in bestimmten Kanälen und Szenarien, wodurch die Headless Content-Bereitstellung und das Seiten-Authoring noch flexibler werden.
+[Varianten](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) sind eine wichtige Funktion von AEM-Inhaltsfragmenten. Sie können damit Kopien des **Haupt-Inhalts** erstellen und bearbeiten, um sie in bestimmten Kanälen und Szenarien zu verwenden. Dadurch wird die Bereitstellung von Headless-Inhalten und die Seitenbearbeitung noch flexibler.
 
-Im Editor haben Sie folgende Möglichkeiten:
+Über den Editor haben Sie folgende Möglichkeiten:
 
-* [Erstellen von Varianten](#create-variation) des **Main** content
+* [Erstellen von Varianten](#create-variation) des **Haupt-Inhalts**
 
-* Wählen Sie die erforderliche Variante zum Bearbeiten des Inhalts aus.
+* Die erforderliche Variante zum Bearbeiten des Inhalts auswählen
 
 * [Variante umbenennen](#rename-variation)
 
@@ -130,114 +130,114 @@ Im Editor haben Sie folgende Möglichkeiten:
 
 So erstellen Sie eine Variante Ihres Inhaltsfragments:
 
-1. Wählen Sie im linken Bereich die **Pluszeichen** (**Variante erstellen**), das rechts von **Varianten**.
+1. Wählen Sie im linken Bereich das **Pluszeichen** (**Variante erstellen**), das sich rechts von **Varianten** befindet.
 
    >[!NOTE]
    >
-   >Nach der Erstellung Ihrer ersten Variante werden vorhandene Varianten im selben Bedienfeld aufgelistet.
+   >Nach der Erstellung Ihrer ersten Variante werden vorhandene Varianten im selben Bereich aufgelistet.
 
-   ![Inhaltsfragment-Editor - Erstellen der ersten Variante](assets/cf-authoring-create-variation-01.png)
+   ![Inhaltsfragmenteditor – Erstellen Ihrer ersten Variante ](assets/cf-authoring-create-variation-01.png)
 
-1. Geben Sie im Dialogfeld einen **Titel** für Ihre Variante und eine **Beschreibung** wenn gewünscht:
+1. Geben Sie im Dialogfeld einen **Titel** für Ihre Variante und, wenn gewünscht, eine **Beschreibung** ein:
 
-   ![Inhaltsfragmente-Editor - Dialogfeld &quot;Variante erstellen&quot;](assets/cf-authoring-create-variation-02.png)
+   ![Inhaltsfragmenteditor – Dialogfeld „Variante erstellen“](assets/cf-authoring-create-variation-02.png)
 
-1. **Erstellen** die Variante. Er wird in der Liste angezeigt.
+1. **Erstellen** Sie die Variante. Sie wird in der Liste angezeigt.
 
 ### Umbenennen einer Variante {#rename-variation}
 
-So benennen Sie eine **Variante**:
+So benennen Sie eine **Variante** um:
 
 1. Wählen Sie die gewünschte Variante aus.
 
-1. Öffnen Sie die **Eigenschaften** im rechten Bereich.
+1. Öffnen Sie die Registerkarte **Eigenschaften** im rechten Bereich.
 
-1. Variante aktualisieren **Titel**.
+1. Aktualisieren Sie den **Titel** der Variante.
 
-1. Entweder drücken Sie **Rückgabe** oder in ein anderes Feld wechseln, um die Änderung automatisch zu speichern. Der Titel wird im Abschnitt **Varianten** auf der linken Seite.
+1. Drücken Sie entweder auf die **Return-Taste** oder wechseln Sie in ein anderes Feld, um die Änderung automatisch zu speichern. Der Titel wird im Bereich **Varianten** auf der linken Seite aktualisiert.
 
 
-### Variante löschen {#delete-variation}
+### Löschen einer Variante {#delete-variation}
 
 So löschen Sie eine Variante Ihres Inhaltsfragments:
 
 >[!NOTE]
 >
->Löschen ist nicht möglich **Main**.
+>Die **Hauptvariante** kann nicht gelöscht werden.
 
 1. Wählen Sie die Variante aus.
 
-1. Im **Variante** das Löschsymbol (Papierkorbsymbol):
+1. Wählen Sie im Bereich **Variante** das Symbol „Löschen“ (Papierkorb) aus:
 
-   ![Inhaltsfragment-Editor - Symbol &quot;Variante löschen&quot;](assets/cf-authoring-delete-variation.png)
+   ![Inhaltsfragmenteditor – Symbol „Variante löschen“](assets/cf-authoring-delete-variation.png)
 
-1. Ein Dialogfeld wird geöffnet. Auswählen **Löschen** , um die Aktion zu bestätigen.
+1. Ein Dialogfeld wird geöffnet. Wählen Sie **Löschen** aus, um die Aktion zu bestätigen.
 
-## Mehrzeilige Textfelder bearbeiten - Nur Text oder Markdown {#edit-multi-line-text-fields-plaintext-markdown}
+## Bearbeiten mehrzeiliger Textfelder – Nur-Text oder Markdown {#edit-multi-line-text-fields-plaintext-markdown}
 
-**[Mehrzeiliger Text](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** -Felder können eines von drei Formaten aufweisen:
+**[Mehrzeilige Textfelder](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** können eines von drei Formaten aufweisen:
 
 * Nur Text
 * [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
 * [Rich-Text](#edit-multi-line-text-fields-rich-text)
 
-Felder, die als Nur-Text- oder Markdown-Felder definiert sind, haben ein einfaches Textfeld ohne Formatierungsoptionen (auf dem Bildschirm):
+Bei Feldern, die als Nur-Text- oder Markdown-Felder definiert sind, handelt es sich um einfache Textfelder ohne Formatierungsoptionen (auf dem Bildschirm):
 
-![Inhaltsfragment-Editor - Mehrzeiliger Text - Vollbild](assets/cf-authoring-multilinetext-plaintext-markdown.png)
+![Inhaltsfragmenteditor – Mehrzeiliger Text – Vollbild](assets/cf-authoring-multilinetext-plaintext-markdown.png)
 
-## Mehrzeilige Textfelder bearbeiten - Rich-Text {#edit-multi-line-text-fields-rich-text}
+## Bearbeiten mehrzeiliger Textfelder – Rich-Text {#edit-multi-line-text-fields-rich-text}
 
-Für **[Mehrzeiliger Text](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** Felder, die als **Rich-Text**, stehen verschiedene Funktionen zur Verfügung:
+Für Felder mit **[mehrzeiligem Text](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**, die als **Rich-Text** definiert sind, stehen verschiedene Funktionen zur Verfügung:
 
-* Bearbeiten Sie den Inhalt:
-   * Rückgängig/Wiederherstellen
+* Den Inhalt bearbeiten:
+   * Rückgängig/Wiederholen
    * Als Text einfügen/einfügen
    * Kopieren
    * Absatzformat auswählen
    * Tabelle erstellen/verwalten
    * Text formatieren; fett, kursiv, unterstrichen, Farbe
    * Absatzausrichtung festlegen
-   * Listen erstellen/verwalten, Aufzählungszeichen, Nummerierung
+   * Listen erstellen/verwalten, mit Aufzählungszeichen, mit Nummerierung
    * Texteinzug; verringern, erhöhen
    * Aktuelle Formatierung löschen
    * Links einfügen
-   * Auswählen und Einfügen von Verweisen auf Bild-Assets
-   * Hinzufügen von Sonderzeichen
-* [Vollbild-Editor](#full-screen-editor-rich-text) - Umschalten zwischen Vollbild und In-Flow
+   * Verweise auf Bild-Assets auswählen und einfügen
+   * Sonderzeichen hinzufügen
+* [Vollbild-Editor](#full-screen-editor-rich-text) – Zwischen Vollbild und Textfluss umschalten
 * [Statistiken](#statistics-rich-text)
 * [Vergleichen und Synchronisieren](#compare-and-synchronize-rich-text)
 
 Zum Beispiel:
 
-![Inhaltsfragmente-Editor - Mehrzeiliger Text - Umschalter im Vollbildmodus](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
+![Inhaltsfragmenteditor – Mehrzeiliger Text – Umschalter im Vollbild](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
 >[!NOTE]
 >
->Mehrzeilige Textfelder werden auch durch die entsprechenden [icon](#fields-datatypes-icons) im **Felder** Bedienfeld.
+>Mehrzeilige Textfelder werden auch durch das entsprechende [Symbol](#fields-datatypes-icons) im Bereich **Felder** angezeigt.
 
-### Vollbild-Editor - Rich-Text {#full-screen-editor-rich-text}
+### Vollbild-Editor – Rich-Text {#full-screen-editor-rich-text}
 
-Der Vollbild-Editor bietet dieselben Bearbeitungsoptionen wie im Textfluss - bietet jedoch mehr Platz für den Text.
-
-Zum Beispiel:
-
-![Inhaltsfragment-Editor - Mehrzeiliger Text - Vollbild](assets/cf-authoring-multilinetext-fullscreen.png)
-
-### Statistiken - Rich-Text {#statistics-rich-text}
-
-Die Aktion **Statistik** zeigt eine Reihe von Informationen zum Text in einem mehrzeiligen Feld an.
+Der Vollbild-Editor bietet dieselben Bearbeitungsoptionen wie im Textfluss, lässt jedoch mehr Platz für den Text.
 
 Zum Beispiel:
 
-![Inhaltsfragmente-Editor - Statistiken](assets/cf-authoring-multilinetext-statistics.png)
+![Inhaltsfragmenteditor – Mehrzeiliger Text – Vollbild](assets/cf-authoring-multilinetext-fullscreen.png)
 
-### Vergleichen und Synchronisieren - Rich-Text {#compare-and-synchronize-rich-text}
+### Statistiken – Rich-Text {#statistics-rich-text}
 
-Die Aktion **Vergleichen** ist für mehrzeilige Felder verfügbar, wenn Sie über eine **Variante** öffnen.
+Die Aktion **Statistik** zeigt eine Reihe von Informationen über den Text in einem mehrzeiligen Feld an.
 
-Dadurch wird das mehrzeilige Feld im Vollbildmodus geöffnet und:
+Zum Beispiel:
 
-* zeigt den Inhalt für beide **Main** und der aktuelle **Variante** parallel, wobei alle Unterschiede hervorgehoben werden
+![Inhaltsfragmenteditor – Statistik](assets/cf-authoring-multilinetext-statistics.png)
+
+### Vergleichen und Synchronisieren – Rich-Text {#compare-and-synchronize-rich-text}
+
+Die Aktion **Vergleichen** ist für mehrzeilige Felder verfügbar, wenn eine **Variante** geöffnet ist.
+
+Dadurch wird das mehrzeilige Feld im Vollbild geöffnet und:
+
+* es wird der Inhalt für die **Hauptvariante** und die aktuelle **Variante** parallel angezeigt, wobei alle Unterschiede hervorgehoben werden.
 
 * Unterschiede sind farblich gekennzeichnet:
 
@@ -245,189 +245,189 @@ Dadurch wird das mehrzeilige Feld im Vollbildmodus geöffnet und:
    * Rot zeigt an, dass Inhalt entfernt wurde (aus der Variante)
    * Blau zeigt an, dass Text ersetzt wurde
 
-* stellt die **Synchronisieren** Aktion, die den Inhalt von synchronisiert **Main** zur aktuellen Variante
+* stellt die Aktion **Synchronisieren** zur Verfügung, die den Inhalt der **Hauptvariante** mit der aktuellen Variante synchronisiert.
 
-   * if **Main** aktualisiert wurde, werden diese Änderungen in die Variante übertragen
-   * Wenn die Variante aktualisiert wurde, werden diese Änderungen durch den Inhalt von **Main**
+   * wenn die **Hauptvariante** aktualisiert wurde, werden diese Änderungen in die Variante übertragen.
+   * wenn die Variante aktualisiert wurde, werden diese Änderungen mit dem Inhalt der **Hauptvariante** überschrieben.
 
   >[!CAUTION]
   >
-  >Die Synchronisierung ist nur zum Kopieren von Änderungen verfügbar *von **Main**zur Änderung*.
+  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**in die Variante* zu kopieren.
   >
-  >Änderungen übertragen *von einer Änderung zu **Main*** ist nicht als Option verfügbar.
+  >Es ist nicht möglich, Änderungen *von einer Variante auf die **Hauptvariante*** zu übertragen.
 
-Beispiel: ein Szenario, in dem der Varianteninhalt vollständig umgeschrieben wurde, sodass eine Synchronisierung diesen neuen Inhalt durch den Inhalt aus ersetzt **Main**:
+Beispiel: ein Szenario, in dem der Varianteninhalt vollständig umgeschrieben wurde, sodass eine Synchronisierung diesen neuen Inhalt durch den Inhalt aus der **Hauptvariante** ersetzt:
 
-![Inhaltsfragmente-Editor - Vergleichen und Synchronisieren](assets/cf-authoring-multilinetext-compare.png)
+![Inhaltsfragmenteditor – Vergleichen und Synchronisieren](assets/cf-authoring-multilinetext-compare.png)
 
 ## Verweise verwalten {#manage-references}
 
 ### Fragmentreferenzen {#fragment-references}
 
-[Fragmentverweise](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#fragment-reference-nested-fragments) kann verwendet werden für:
+[Fragmentreferenzen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#fragment-reference-nested-fragments) können für Folgendes verwendet werden:
 
 * [einen Verweis auf ein vorhandenes Inhaltsfragment erstellen](#create-reference-existing-content-fragment)
 * [ein Inhaltsfragment erstellen und dann darauf verweisen](#create-reference-content-fragment)
 
-#### Erstellen eines Verweises auf ein vorhandenes Inhaltsfragment {#create-reference-existing-content-fragment}
+#### einen Verweis auf ein vorhandenes Inhaltsfragment erstellen {#create-reference-existing-content-fragment}
 
 So erstellen Sie einen Verweis auf ein vorhandenes Inhaltsfragment:
 
 1. Wählen Sie das Feld aus.
-1. Auswählen **Vorhandenes Fragment hinzufügen**.
-1. Wählen Sie das gewünschte Fragment aus der Fragmentauswahl aus.
+1. Wählen Sie **Vorhandenes Fragment hinzufügen** aus.
+1. Wählen Sie das erforderliche Fragment aus der Fragmentauswahl aus.
 
    >[!NOTE]
    >
    >Sie können jeweils nur ein Fragment auswählen.
 
-#### Erstellen eines Inhaltsfragments und einer Referenz {#create-reference-content-fragment}
+#### Ein Inhaltsfragment erstellen und darauf verweisen {#create-reference-content-fragment}
 
-Alternativ können Sie [select **Neues Fragment erstellen** , um die **Erstellen** dialog](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment). Nach der Erstellung wird auf dieses Fragment verwiesen.
+Alternativ können Sie [**Neues Fragment erstellen** auswählen, um das Dialogfeld **Erstellen** zu öffnen](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment). Nach der Erstellung wird auf dieses Fragment verwiesen.
 
-### Inhaltsreferenzen {#content-references}
+### Inhaltsverweise {#content-references}
 
-[Inhaltsreferenzen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) werden verwendet, um andere AEM Content-Typen zu referenzieren, z. B. Bilder, Seiten und Experience Fragments.
+[Inhaltsverweise](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) werden verwendet, um auf andere AEM-Inhaltstypen zu verweisen, z. B. Bilder, Seiten und Experience Fragments.
 
-#### Referenzbilder {#reference-images}
+#### Auf Bilder verweisen {#reference-images}
 
-In **Inhaltsreferenz** -Felder können Sie beides:
+In **Inhaltsverweis**-Feldern haben Sie beide Möglichkeiten:
 
-* Referenz-Assets, die bereits im Repository vorhanden sind
-* sie direkt in das Feld hochladen, wodurch die Verwendung der **Assets** Hochladen der Konsole
+* Auf Assets verweisen, die bereits im Repository vorhanden sind
+* Sie können sie direkt in das Feld hochladen, wodurch es nicht nötig ist, die **Assets**-Konsole zum Hochladen zu verwenden
 
   >[!NOTE]
   >
-  >So laden Sie Bilder direkt in die **Inhaltsreferenz** Feld, it **must**:
+  >Damit ein Bild direkt in das Feld **Inhaltsverweis** hochgeladen werden kann, **muss** es Folgendes erfüllen:
   >
-  >* über eine **Stammverzeichnis** definiert (im [Inhaltsfragmentmodell](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). Gibt an, wo das Bild gespeichert wird.
-  >* include **Bild** in der Liste der akzeptierten Inhaltstypen
+  >* Es muss über einen definierten **Stammpfad** verfügen (im [Inhaltsfragmentmodell](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). Dieser gibt an, wo das Bild gespeichert wird.
+  >* Es muss ein **Bild** entsprechend der Liste der akzeptierten Inhaltstypen enthalten
 
 Um ein Asset hinzuzufügen, haben Sie folgende Möglichkeiten:
 
-* Ziehen Sie die neue Asset-Datei direkt (z. B. aus Ihrem Dateisystem) in den **Inhaltsreferenz** field
-* die **Asset hinzufügen** Aktion und wählen Sie entweder **Durchsuchen von Assets** oder **Hochladen** , um den entsprechenden Selektor zu öffnen, den Sie verwenden können:
+* ziehen Sie die neue Asset-Datei direkt (z. B. aus Ihrem Dateisystem) in das Feld **Inhaltsverweis**
+* verwenden Sie die Aktion **Asset hinzufügen** und wählen Sie anschließend entweder **Assets durchsuchen** oder **Hochladen** aus, um die entsprechende Auswahl zu öffnen, die Sie verwenden möchten:
 
-  ![Inhaltsfragmente-Editor - Asset-Optionen hinzufügen](assets/cf-authoring-add-asset-options.png)
+  ![Inhaltsfragmenteditor – Asset-Optionen hinzufügen](assets/cf-authoring-add-asset-options.png)
 
-#### Referenzseiten {#reference-pages}
+#### Auf Seiten verweisen {#reference-pages}
 
-So fügen Sie Verweise auf AEM Seiten, Experience Fragments oder andere Content-Typen hinzu:
+So fügen Sie Verweise zu AEM-Seiten, Experience Fragments oder anderen Inhaltsypen hinzu:
 
-1. Auswählen **Inhaltspfad hinzufügen**.
+1. Wählen Sie **Inhaltspfad hinzufügen** aus.
 
 1. Fügen Sie im Eingabefeld den erforderlichen Pfad hinzu.
 
-1. Bestätigen mit **Hinzufügen**.
+1. Bestätigen Sie mit **Hinzufügen**.
 
-### Übergeordnete Verweise anzeigen {#view-parent-references}
+### Anzeigen übergeordneter Verweise {#view-parent-references}
 
 Durch Auswahl des Link-Symbols in der oberen Symbolleiste wird eine Liste aller übergeordneten Verweise geöffnet.
 
 Zum Beispiel:
 
-![Inhaltsfragmente-Editor - Verweise anzeigen](assets/cf-authoring-show-references-link.png)
+![Inhaltsfragmenteditor – Verweise anzeigen](assets/cf-authoring-show-references-link.png)
 
-Ein Fenster mit allen zugehörigen Verweisen wird geöffnet. Um einen Verweis zu öffnen, wählen Sie den Namen, den Titel oder das Link-Symbol aus.
+Ein Fenster mit allen zugehörigen Verweisen wird geöffnet. Wählen Sie zum Öffnen eines Verweises den Namen, den Titel oder das Link-Symbol aus.
 
 Zum Beispiel:
 
-![Inhaltsfragmente-Editor - Verweise anzeigen](assets/cf-authoring-show-references.png)
+![Inhaltsfragmenteditor – Verweise anzeigen](assets/cf-authoring-show-references.png)
 
-## Eigenschaften und Tags anzeigen {#view-properties-tags}
+## Anzeigen von Eigenschaften und Tags {#view-properties-tags}
 
-Auf der Registerkarte &quot;Eigenschaften&quot;des rechten Bedienfelds können Eigenschaften (Metadaten) und Tags angezeigt werden. Die Eigenschaften können wie folgt lauten:
+Auf der Registerkarte „Eigenschaften“des rechten Bereichs können Eigenschaften (Metadaten) und Tags angezeigt werden. Die Eigenschaften können wie folgt lauten:
 
-* für die **Inhaltsfragment** - wenn **Main** ist derzeit ausgewählt
-* für bestimmte **Variante**
+* für das **Inhaltsfragment** – wenn derzeit die **Hauptvariante** ausgewählt ist
+* für eine bestimmte **Variante**
 
-![Inhaltsfragmente-Editor - Eigenschaften](assets/cf-authoring-properties.png)
+![Inhaltsfragmenteditor – Eigenschaften](assets/cf-authoring-properties.png)
 
-### Eigenschaften und Tags bearbeiten {#edit-properties-tags}
+### Bearbeiten von Eigenschaften und Tags {#edit-properties-tags}
 
-Auf der Registerkarte &quot;Eigenschaften&quot;(rechtes Bedienfeld) können Sie auch Folgendes bearbeiten:
+Auf der Registerkarte „Eigenschaften“(rechter Bereich) können Sie auch Folgendes bearbeiten:
 
 * **Titel**
 * **Beschreibung**
 * **Tags**: über die Dropdownliste oder das Auswahldialogfeld
 
-  ![Inhaltsfragment-Editor - Verwalten von Tags](assets/cf-authoring-edit-tags.png)
+  ![Inhaltsfragmenteditor – Tags verwalten](assets/cf-authoring-edit-tags.png)
 
-### Inhaltsfragmentmodell öffnen {#open-content-fragment-model}
+### Öffnen des Inhaltsfragmentmodells {#open-content-fragment-model}
 
-Wenn Sie **Main** ausgewählt ist, wird der Name des zugrunde liegenden Inhaltsfragmentmodells im Abschnitt &quot;Eigenschaften&quot;angezeigt. Wenn Sie das Link-Symbol auswählen, wird das Modell in einer separaten Registerkarte geöffnet.
+Wenn Sie die **Hauptvariante** ausgewählt haben, wird der Name des zugrunde liegenden Inhaltsfragmentmodells im Abschnitt „Eigenschaften“ angezeigt. Wenn Sie das Symbol „Link“ auswählen, wird das Modell auf einer separaten Registerkarte geöffnet.
 
 Zum Beispiel:
 
-![Inhaltsfragmente-Editor - Inhaltsfragmentmodell öffnen](assets/cf-authoring-open-model.png)
+![Inhaltsfragmenteditor – Inhaltsfragmentmodell öffnen](assets/cf-authoring-open-model.png)
 
-## Versionsverlauf anzeigen {#view-version-history}
+## Anzeigen des Versionsverlaufs {#view-version-history}
 
-Im **Versionsverlauf** im rechten Bereich Details zu den aktuellen und vorherigen Versionen angezeigt werden:
+Auf der Registerkarte **Versionsverlauf** im rechten Bereich werden Details zu der aktuellen und vorherigen Version angezeigt:
 
 >[!NOTE]
 >
 >Eine neue Version wird erstellt, wenn das Inhaltsfragment veröffentlicht wird.
 
-![Inhaltsfragmente-Editor - Versionsverlauf - Überblick](assets/cf-authoring-version-history-overview.png)
+![Inhaltsfragmenteditor – Überblick über den Versionsverlauf](assets/cf-authoring-version-history-overview.png)
 
 ### Auf eine Version zurücksetzen {#revert-version}
 
-Sie können zu einer beliebigen Version zurückkehren.
+Sie können eine beliebige Version wiederherstellen.
 
 So stellen Sie eine bestimmte Version wieder her:
 
 1. Wählen Sie das Symbol mit den drei Punkten neben der Version aus.
 
-1. Auswählen **Wiederherstellen**.
+1. Wählen Sie **Wiederherstellen** aus.
 
-![Inhaltsfragmente-Editor - Versionsverlauf - Wiederherstellen](assets/cf-authoring-version-history-revert.png)
+![Inhaltsfragmenteditor – Versionsverlauf wiederherstellen](assets/cf-authoring-version-history-revert.png)
 
 ## Anzeigen der Sprachkopien {#view-language-copies}
 
-Im **Spracheigenschaften** -Tab-Details verwandter Sprachkopien werden angezeigt. Wenn Sie ein Link-Symbol auswählen, wird die Kopie auf einer separaten Registerkarte geöffnet.
+Auf der Registerkarte **Spracheigenschaften** werden Details zu zugehörigen Sprachkopien angezeigt. Durch Auswahl eines Link-Symbols wird die Kopie auf einer separaten Registerkarte geöffnet.
 
 Zum Beispiel:
 
-![Inhaltsfragmente-Editor - Sprachkopie öffnen](assets/cf-authoring-open-language-copies.png)
+![Inhaltsfragmenteditor – Sprachkopie öffnen](assets/cf-authoring-open-language-copies.png)
 
 >[!NOTE]
 >
->Weitere Informationen zum Übersetzen eines Inhaltsfragments und Erstellen von Sprachkopien finden Sie unter [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md).
+>Weitere Informationen zum Übersetzen eines Inhaltsfragments und Erstellen von Sprachkopien finden Sie unter [AEM Headless-Übersetzungs-Journey](/help/journey-headless/translation/overview.md).
 
 
 ## Vorschau des Fragments anzeigen {#preview-content-fragment}
 
-Der Inhaltsfragment-Editor bietet Autoren die Möglichkeit, ihre Bearbeitungen in einer externen Frontend-Anwendung in der Vorschau anzuzeigen.
+Der Inhaltsfragmenteditor bietet Autorinnen und Autoren die Möglichkeit, die Vorschau von Bearbeitungen in einer externen Frontend-Anwendung anzuzeigen.
 
-Um diese Funktion verwenden zu können, müssen Sie zunächst:
+Für die Verwendung dieser Funktion müssen Sie zunächst wie folgt vorgehen:
 
 * Arbeiten Sie mit Ihrem IT-Team zusammen, um die externe Frontend-Anwendung einzurichten, die das Inhaltsfragment rendert, indem sie die JSON-Ausgabe nutzt.
-* Wenn die externe Frontend-Anwendung eingerichtet ist, wird die **Standard-URL-Vorschaumuster** als [-Eigenschaft des entsprechenden Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* Wenn die externe Frontend-Anwendung eingerichtet ist, muss das **Standard-URL-Vorschaumuster** als [-Eigenschaft des entsprechenden Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) definiert werden.
 
-Wenn die URL definiert wurde, wird die **Vorschau** -Schaltfläche aktiv ist. Sie können diese Schaltfläche auswählen, um die externe Anwendung (in einer separaten Registerkarte) zum Rendern des Inhaltsfragments zu starten.
+Wenn die URL definiert wurde, wird die Schaltfläche **Vorschau** aktiv. Sie können diese Schaltfläche auswählen, um die externe Anwendung (auf einer separaten Registerkarte) zum Rendern des Inhaltsfragments zu starten.
 
-## Veröffentlichen des Fragments {#publish-content-fragment}
+## Veröffentlichen Ihres Fragments {#publish-content-fragment}
 
-Sie können **Veröffentlichen** Ihr Fragment zu Ihrem
-
-* Vorschauinstanz
-* Veröffentlichungsinstanz
-
-Sie können das Fragment entweder im Editor oder in der Konsole veröffentlichen. Siehe [Veröffentlichen und Anzeigen der Vorschau eines Fragments](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) für ausführliche Informationen.
-
-## Veröffentlichung des Fragments rückgängig machen {#unpublish-content-fragment}
-
-Sie können auch **Veröffentlichung rückgängig machen** Ihr Fragment aus Ihrem
+Sie können Ihr Fragment für Folgendes **veröffentlichen**:
 
 * Vorschauinstanz
 * Veröffentlichungsinstanz
 
-Sie können die Veröffentlichung des Fragments im Editor oder in der Konsole rückgängig machen. Siehe [Rückgängigmachen der Veröffentlichung eines Fragments](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) für ausführliche Informationen.
+Sie können das Fragment entweder über den Editor oder die Konsole veröffentlichen. Die vollständigen Details finden Sie unter [Veröffentlichen und Anzeigen der Vorschau eines Fragments](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment).
+
+## Veröffentlichung des Fragments aufheben {#unpublish-content-fragment}
+
+Sie können für Ihr Fragment auch die **Veröffentlichung aufheben**, und zwar in beiden Instanzen:
+
+* Vorschauinstanz
+* Veröffentlichungsinstanz
+
+Sie können die Veröffentlichung des Fragments über den Editor oder die Konsole aufheben. Die vollständigen Details finden Sie unter [Aufheben der Veröffentlichung eines Fragments](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment).
 
 ## Felder, Datentypen und Symbole {#fields-datatypes-icons}
 
-Die **Felder** enthält alle Felder im Inhaltsfragment. Das Symbol zeigt die **[Datentyp](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**:
+Im Bereich **Felder** sind alle Felder im Inhaltsfragment aufgeführt. Das Symbol zeigt den **[Datentyp](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** an:
 
 <table style="table-layout:auto">
  <tbody>
@@ -472,7 +472,7 @@ Die **Felder** enthält alle Felder im Inhaltsfragment. Das Symbol zeigt die **[
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Registerkarten-Platzhalter</b></p><p>Obwohl nicht durch ein reales Symbol dargestellt, wird eine <b>Registerkartenplatzhalter</b> wird im linken Bereich angezeigt. <br>Sie wird auch im zentralen Bedienfeld angezeigt, entweder horizontal wie angezeigt oder in einer Dropdown-Liste (wenn zu viele vorhanden sind, um horizontal angezeigt zu werden).</p> </td>
+   <td><p><b>Registerkartenplatzhalter</b></p><p>Obwohl nicht durch ein tatsächliches Symbol dargestellt, wird ein <b>Registerkartenplatzhalter</b> wird im linken Bereich angezeigt. <br>Sie wird auch im zentralen Bedienfeld angezeigt, entweder horizontal wie angezeigt oder in einer Dropdown-Liste (wenn zu viele vorhanden sind, um horizontal angezeigt zu werden).</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>
@@ -480,14 +480,14 @@ Die **Felder** enthält alle Felder im Inhaltsfragment. Das Symbol zeigt die **[
 
 ## Wissenswertes {#good-to-know}
 
-* Zum Bearbeiten eines Inhaltsfragments benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihre Systemadmins, falls Probleme auftreten.
+* Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihre Systemadmins, falls Probleme auftreten.
 
-  Wenn Sie beispielsweise `edit` -Berechtigungen ist der Editor schreibgeschützt.
+  Wenn Sie beispielsweise nicht über `edit`-Berechtigungen verfügen, ist der Editor schreibgeschützt.
 
-* Ein Inhaltsfragmentmodell kann häufig Datenfelder definieren, die **Titel** und **Beschreibung**. Wenn diese Felder vorhanden sind, handelt es sich um benutzerdefinierte Felder, die im *Zentralbereich* beim Bearbeiten des Fragments.
+* Ein Inhaltsfragmentmodell kann häufig Datenfelder mit dem Namen **Titel** und **Beschreibung** definieren. Wenn diese Felder vorhanden sind, handelt es sich um benutzerdefinierte Felder, die im *zentralen Bereich* beim Bearbeiten des Fragments aktualisiert werden können.
 
-  Das Inhaltsfragment und seine Varianten verfügen auch über Metadatenfelder (Varianteneigenschaften) namens **Titel** und **Beschreibung**. Diese Felder sind integraler Bestandteil jedes Inhaltsfragments und werden beim Fragment anfänglich definiert. Sie können im Abschnitt *Rechter Bereich* beim Bearbeiten des Fragments.
+  Das Inhaltsfragment und seine Varianten verfügen auch über Metadatenfelder (Varianteneigenschaften) namens **Titel** und **Beschreibung**. Diese Felder sind integraler Bestandteil jedes Inhaltsfragments und werden beim Fragment anfänglich definiert. Sie können im *rechten Bereich* beim Bearbeiten des Fragments aktualisiert werden.
 
-* Umfassende Informationen zu den [ursprünglicher Inhaltsfragmente-Editor](/help/assets/content-fragments/content-fragments-variations.md) - sie ist sowohl über die **Assets** und **Inhaltsfragmente** Konsole.
+* Umfassende Informationen zum [ursprünglichen Inhaltsfragmenteditor](/help/assets/content-fragments/content-fragments-variations.md) finden Sie in der Assets-Dokumentation. Diese ist über die **Assets-Konsole** und die **Inhaltsfragmentkonsole** verfügbar.
 
-* Ihr Projektteam kann den Editor bei Bedarf anpassen. Siehe [Anpassen der Inhaltsfragment-Konsole und des Editors](/help/implementing/developing/extending/content-fragments-console-and-editor.md) für weitere Informationen.
+* Ihr Projekt-Team kann die Konsole bei Bedarf anpassen. Weitere Details hierzu finden Sie unter [Anpassen von Inhaltsfragmentkonsole und Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md).

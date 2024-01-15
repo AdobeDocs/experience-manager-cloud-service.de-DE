@@ -8,7 +8,7 @@ exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1507'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -118,7 +118,7 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 
 1. Um ein Asset zu löschen, aktivieren Sie das entsprechende Kontrollkästchen und klicken Sie auf **[!UICONTROL Asset löschen]**.
 1. Um eine Vorgabe anzuwenden, klicken Sie in der rechten oberen Ecke auf **[!UICONTROL Vorgabe]** und wählen Sie eine Vorgabe aus, die auf die Assets angewendet werden soll.
-1. Wählen Sie **[!UICONTROL Speichern]** aus. Das erstellte gemischte Medienset wird in dem Ordner angezeigt, in dem es erstellt wurde.
+1. Wählen Sie **[!UICONTROL Speichern]** aus. Das erstellte gemischte Medien-Set wird in dem Ordner angezeigt, in dem es erstellt wurde.
 
 ## Bearbeiten von gemischten Mediensets {#editing-mixed-media-sets}
 

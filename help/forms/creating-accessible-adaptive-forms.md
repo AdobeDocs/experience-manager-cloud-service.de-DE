@@ -7,7 +7,7 @@ feature: Adaptive Forms, Foundation Components
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2018'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 95%
 
 ## Einführung {#introduction}
 
-Ein barrierefreies Formular ist ein Formular, das jeder verwenden kann, einschließlich Benutzer mit Behinderungen. Adaptive Forms umfasst verschiedene Funktionen, die die Benutzerfreundlichkeit für Benutzer mit unterschiedlichen Fähigkeiten verbessern. Die Integration von Barrierefreiheit in adaptive Formulare macht Inhalte nicht nur für die größtmögliche Zielgruppe zugänglich, sondern stellt auch eine Anforderung dar, wenn Dokumente in Regionen bereitgestellt werden müssen, in denen die Einhaltung von Barrierefreiheitsstandards obligatorisch ist. Mit [!DNL AEM Forms] können Formularentwickler die Barrierefreiheitsstandards einhalten.
+Ein barrierefreies Formular ist ein Formular, das alle verwenden kann, einschließlich Benutzender mit Behinderungen. Adaptive Formulare verfügen über eine Reihe von Merkmalen und Funktionen, die die Benutzerfreundlichkeit für Benutzende mit begrenzten Fähigkeiten verbessern. Die Integration von Barrierefreiheit in adaptive Formulare macht Inhalte nicht nur für die größtmögliche potenzielle Zielgruppe zugänglich, sondern entspricht auch einer Anforderung beim Bereitstellen von Dokumenten in Regionen, in denen die Einhaltung von Barrierefreiheitsstandards obligatorisch ist. Mit [!DNL AEM Forms] können Formularentwickler die Barrierefreiheitsstandards einhalten.
 
 Beim Verfassen eines adaptiven Formulars müssen Autoren die folgenden Punkte berücksichtigen, um barrierefreie adaptive Formulare zu erstellen:
 
@@ -137,7 +137,7 @@ Bei Barrierefreiheits-Designs müssen zusätzliche Richtlinien zur Farbverwendun
 
 Benutzende mit Sehbehinderung benötigen etwa einen hohen Kontrast zwischen Text und Hintergrund, um digitale Inhalte zu lesen. Ohne genügend Kontrast kann ein Formular für einige Benutzende schwieriger oder überhaupt nicht lesbar sein.
 
-Es wird empfohlen, die standardmäßigen Schrift- und Hintergrundfarben zu verwenden: Inhalte in schwarzer Farbe auf weißem Hintergrund. Wenn Sie die Standardfarben ändern, wählen Sie entweder eine dunkle Vordergrundfarbe auf heller Hintergrundfarbe oder umgekehrt.
+Es wird empfohlen, die standardmäßigen Schrift- und Hintergrundfarben zu verwenden: Inhalte in schwarzer Farbe auf weißem Hintergrund. Wenn Sie die Standardfarben ändern, wählen Sie entweder eine dunkle Vordergrundfarbe vor einer hellen Hintergrundfarbe oder umgekehrt.
 
 <!-- See [Creating custom themes for Adaptive Forms](creating-custom-adaptive-form-themes.md), for more information about changing the color contrast and theme for the Adaptive Forms. -->
 
@@ -156,7 +156,7 @@ Die folgenden Tastaturbefehle sind in [!DNL AEM Forms] verfügbar.
 | Die ausgefüllten Daten in einem Formular zurücksetzen | Alt+R |
 | Formular absenden | Alt+S |
 
-Darüber hinaus stehen verschiedene Tastaturbefehle für die Komponente **[!UICONTROL Datumsauswahl]** in adaptiven Formularen zur Verfügung. Um die Tastaturbefehle zu aktivieren, wählen Sie die **[!UICONTROL Datumsauswahl]** Komponente und wählen Sie ![Konfigurieren](assets/configure-icon.svg) , um die Eigenschaften zu öffnen. Im **[!UICONTROL Muster]** ein Anzeigemuster mithilfe der **[!UICONTROL Typ]** und **[!UICONTROL Muster]** Dropdown-Listen. Speichern Sie die Eigenschaften, um die Verwendung der Tastenkombinationen für die Komponente **[!UICONTROL Datumsauswahl]** zu aktivieren.
+Darüber hinaus stehen verschiedene Tastaturbefehle für die Komponente **[!UICONTROL Datumsauswahl]** in adaptiven Formularen zur Verfügung. Um die Tastaturbefehle zu aktivieren, wählen Sie die **[!UICONTROL Datumsauswahl]** Komponente und wählen Sie ![Konfigurieren](assets/configure-icon.svg) , um die Eigenschaften zu öffnen. Wählen Sie im Abschnitt **[!UICONTROL Muster]** ein Anzeigemuster mithilfe der Dropdown-Listen **[!UICONTROL Typ]** und **[!UICONTROL Muster]** aus. Speichern Sie die Eigenschaften, um die Verwendung der Tastenkombinationen für die Komponente **[!UICONTROL Datumsauswahl]** zu aktivieren.
 
 Für die Datumsauswahl-Komponente in adaptiven Formularen stehen die folgenden Tastaturbefehle zur Verfügung:
 

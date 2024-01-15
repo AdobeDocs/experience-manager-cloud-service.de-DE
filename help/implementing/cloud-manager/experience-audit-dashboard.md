@@ -1,24 +1,24 @@
 ---
 title: Experience Audit-Dashboard
-description: Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die bereitgestellten Änderungen über eine klare, informative Dashboard-Oberfläche den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
+description: Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und durch eine klare, informative Dashboard-Oberfläche sicherstellt, dass die bereitgestellten Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '824'
-ht-degree: 22%
+ht-degree: 98%
 
 ---
 
 # Experience Audit-Dashboard {#experience-audit-dashboard}
 
 
-Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die bereitgestellten Änderungen über eine klare, informative Dashboard-Oberfläche den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
+Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und durch eine klare, informative Dashboard-Oberfläche sicherstellt, dass die bereitgestellten Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
 
 >[!NOTE]
 >
 >Diese Funktion ist nur für das [Early-Adopter-Programm](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) verfügbar.
 >
->Weitere Informationen zur vorhandenen Funktion &quot;Erlebnisprüfung&quot;für AEM as a Cloud Service finden Sie unter [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
+>Weitere Informationen zur vorhandenen Experience Audit-Funktion für AEM as a Cloud Service finden Sie unter [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 ## Übersicht {#overview}
 
@@ -28,92 +28,92 @@ Experience Audit ist eine Funktion, die in Cloud Manager Sites-Produktions-Pipel
 
 1. Führen Sie keine Regressionen ein.
 
-Experience Audit in Cloud Manager stellt sicher, dass das Benutzererlebnis auf der Site höchsten Standards entspricht.
+Experience Audit in Cloud Manager stellt sicher, dass das Erlebnis der Benutzenden auf der Site höchsten Standards entspricht.
 
 Die Ergebnisse des Audits sind rein informativ und ermöglichen es dem Bereitstellungs-Manager, die Bewertungen sowie die Unterschiede zwischen aktuellen und vorherigen Bewertungen anzuzeigen. Diese Erkenntnis ist wertvoll, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wurde.
 
-Experience Audit basiert auf [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/), ein Open-Source-Tool aus Google, das in allen Cloud Manager-Produktions-Pipelines aktiviert ist.
+Experience Audit basiert auf [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/), einem Open-Source-Tool von Google, und ist in allen Cloud Manager-Produktions-Pipelines aktiviert.
 
 >[!TIP]
 >
 >Sie konfigurieren, welche Seiten bei Experience Audit einbezogen werden sollen, wenn Sie das [Einrichten Ihrer Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code) vornehmen.
 
-## Das Dashboard &quot;Erlebnisprüfung&quot; {#dashboard}
+## Das Experience Audit-Dashboard {#dashboard}
 
-Die Ergebnisse der Erlebnisprüfung werden im Abschnitt **Staging-Tests** Phase der Produktions-Pipeline über die [Ausführungsseite der Produktions-Pipeline](/help/implementing/cloud-manager/deploy-code.md).
+Die Ergebnisse des Experience Audit werden im Schritt **Staging-Tests** der Produktions-Pipeline über die [Ausführungsseite der Produktions-Pipeline](/help/implementing/cloud-manager/deploy-code.md) präsentiert.
 
 ![Dashboard in der Pipeline](assets/dashboard.png)
 
 Experience Audit bietet aggregierte und detaillierte Testergebnisse auf Seitenebene, die auf vier Registerkarten zusammengefasst sind:
 
-* **[Insights](#insights)** Geben Sie eine kurze Beschreibung der umsetzbaren Empfehlungen zur Verbesserung der Leistung Ihrer Site.
-* **[Lighthouse-Bewertungen](#lighthouse)** sind eine Zusammenfassung der Lighthouse-Werte für den Code, der in dieser Pipeline-Ausführung bereitgestellt wird.
+* **[Einblicke](#insights)** geben eine kurze Beschreibung der umsetzbaren Empfehlungen zur Verbesserung der Leistung Ihrer Site.
+* **[Lighthouse-Bewertungen](#lighthouse)** sind eine Zusammenfassung der Lighthouse-Bewertungen für den Code, der in dieser Pipeline-Ausführung bereitgestellt wird.
 * **[Seiten](#pages)** ist eine Zusammenfassung der Leistung von Seiten, die speziell für die Analyse konfiguriert wurden.
 * **[Probleme](#issues)** fasst alle Leistungsprobleme zusammen, die im Code dieser Pipeline-Ausführung erkannt wurden.
 
-### Insights {#insights}
+### Einblicke {#insights}
 
-Die **Insights** -Tab enthält eine kurze Beschreibung der umsetzbaren Empfehlungen zur Verbesserung der Leistung Ihrer Site.
+Die Registerkarte **Einblicke** enthält eine kurze Beschreibung der umsetzbaren Empfehlungen zur Verbesserung der Leistung Ihrer Site.
 
-![Erkenntnisse](assets/insights.png)
+![Einblicke](assets/insights.png)
 
-Wählen Sie die **Mehr anzeigen** -Schaltfläche, um das vollständige Dashboard zu öffnen.
+Wählen Sie die Schaltfläche **Mehr anzeigen** aus, um das vollständige Dashboard zu öffnen.
 
-Im **Einblicke und Empfehlungen** finden Sie eine detaillierte Liste der umsetzbaren Empfehlungen mit einem klaren Wertindikator, der an die bei der Performance zu erwartenden Gewinne gebunden ist, sowie den betroffenen Prozentsatz der Seiten. Auf diese Weise können Sie diese Empfehlungen einfach für Ihre Teams priorisieren.
+Im Abschnitt **Einblicke und Empfehlungen** finden Sie eine detaillierte Liste der umsetzbaren Empfehlungen mit einem klaren Wertindikator, der an Gewinne gebunden ist, die bei der Leistung zu erwarten sind, sowie den betroffenen Prozentsatz der Seiten. Auf diese Weise können Sie diese Empfehlungen für Ihre Teams einfach priorisieren.
 
 ![Einblicke und Empfehlungen](assets/insights-recommendations.png)
 
-Um zur Ausführungsseite der Produktions-Pipeline zurückzukehren, wählen Sie einfach den Pfeil nach hinten im Browser aus.
+Um zur Ausführungsseite der Produktions-Pipeline zurückzukehren, wählen Sie einfach den Zurück-Pfeil im Browser aus.
 
-### Lighthouse-Werte {#lighthouse}
+### Lighthouse-Bewertungen {#lighthouse}
 
-Die **Lighthouse-Bewertungen** tab eine Zusammenfassung der Lighthouse-Werte für den Code, der in dieser Pipeline-Ausführung bereitgestellt wird.
+Die Registerkarte **Lighthouse-Bewertungen** ist eine Zusammenfassung der Lighthouse-Bewertungen für den Code, der in dieser Pipeline-Ausführung bereitgestellt wird.
 
 ![Lighthouse-Bewertungen](assets/lighthouse.png)
 
-Wählen Sie die **Mehr anzeigen** -Schaltfläche, um das vollständige Dashboard zu öffnen.
+Wählen Sie die Schaltfläche **Mehr anzeigen** aus, um das vollständige Dashboard zu öffnen.
 
-Im **Lighthouse-Bewertungen** finden Sie eine Trendansicht der verschiedenen Bewertungen. Auswählen **Leistung**, **Zugänglichkeit**, **PWA** oder **SEO** um die monatliche Trendansicht für diese Werte anzuzeigen.
+Im Abschnitt **Lighthouse-Bewertungen** finden Sie eine Trend-Ansicht der verschiedenen Bewertungen. Wählen Sie **Leistung**, **Zugänglichkeit**, **PWA** oder **SEO** aus, um die monatliche Trend-Ansicht für diese Werte anzuzeigen.
 
-![Diagramme für Lighthouse-Bewertungen](assets/lighthouse-scores.png)
+![Diagramme zu Lighthouse-Bewertungen](assets/lighthouse-scores.png)
 
 Jeder Punkt im Diagramm entspricht dem Durchschnitt aller Implementierungen im Monat des Interesses.
 
-Um zur Ausführungsseite der Produktions-Pipeline zurückzukehren, wählen Sie einfach den Pfeil nach hinten im Browser aus.
+Um zur Ausführungsseite der Produktions-Pipeline zurückzukehren, wählen Sie einfach den Zurück-Pfeil im Browser aus.
 
 ### Seiten {#pages}
 
-Die **Seiten** -Tab ist eine Zusammenfassung der Leistung von Seiten, die speziell für die Analyse konfiguriert wurden.
+Die Registerkarte **Seiten** ist eine Zusammenfassung der Leistung von Seiten, die speziell für die Analyse konfiguriert wurden.
 
-![Registerkarte &quot;Seiten&quot;](assets/pages.png)
+![Registerkarte „Seiten“](assets/pages.png)
 
-Wählen Sie die **Mehr anzeigen** -Schaltfläche, um das vollständige Dashboard zu öffnen.
+Wählen Sie die Schaltfläche **Mehr anzeigen** aus, um das vollständige Dashboard zu öffnen.
 
-Die **Seiten** bietet eine Liste der getesteten Seiten mit den aktuellsten Lighthouse-Leistungsbewertungen und der Aufschlüsselung.
+Der Abschnitt **Seiten** bietet eine Liste der getesteten Seiten mit den aktuellsten Lighthouse-Leistungsbewertungen und der Aufschlüsselung.
 
-![Seitenansicht](assets/pages-view.png)
+![Seiten-Ansicht](assets/pages-view.png)
 
-Sie konfigurieren, welche Seiten bei Experience Audit einbezogen werden sollen, wenn Sie das [Einrichten Ihrer Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code) vornehmen.
+Sie konfigurieren, welche Seiten bei Experience Audit einbezogen werden sollen, wenn Sie Ihre [Pipeline einrichten](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
 
-Um zur Ausführungsseite der Produktions-Pipeline zurückzukehren, wählen Sie einfach den Pfeil nach hinten im Browser aus.
+Um zur Ausführungsseite der Produktions-Pipeline zurückzukehren, wählen Sie einfach den Zurück-Pfeil im Browser aus.
 
 ### Probleme {#issues}
 
-Die **Probleme** in diesem Tab werden alle Leistungsprobleme zusammengefasst, die im Code dieser Pipeline-Ausführung erkannt wurden.
+Die Registerkarte **Probleme** in diesem Tab fasst alle Leistungsprobleme zusammen, die im Code dieser Pipeline-Ausführung erkannt wurden.
 
-![Registerkarte &quot;Probleme&quot;](assets/issues.png)
+![Registerkarte „Probleme“](assets/issues.png)
 
-Wählen Sie die **Mehr anzeigen** -Schaltfläche, um das vollständige Dashboard zu öffnen.
+Wählen Sie die Schaltfläche **Mehr anzeigen** aus, um das vollständige Dashboard zu öffnen.
 
-Im **Einblicke und Empfehlungen** finden Sie eine detailliertere Liste der umsetzbaren Empfehlungen mit einem klaren Wertindikator, der an die bei der Performance zu erwartenden Gewinne gebunden ist, sowie den betroffenen Prozentsatz der Seiten. Auf diese Weise können Sie diese Empfehlungen einfach für Ihre Teams priorisieren.
+Im Abschnitt **Einblicke und Empfehlungen** finden Sie eine detailliertere Liste der umsetzbaren Empfehlungen mit einem klaren Wertindikator, der an Gewinne gebunden ist, die bei der Leistung zu erwarten sind, sowie den betroffenen Prozentsatz der Seiten. Auf diese Weise können Sie diese Empfehlungen für Ihre Teams einfach priorisieren.
 
 ![Einblicke und Empfehlungen](assets/insights-recommendations.png)
 
-Um zur Ausführungsseite der Produktions-Pipeline zurückzukehren, wählen Sie einfach den Pfeil nach hinten im Browser aus.
+Um zur Ausführungsseite der Produktions-Pipeline zurückzukehren, wählen Sie einfach den Zurück-Pfeil im Browser aus.
 
 ### Seitendetails {#page-detail}
 
-Wenn Sie den Link einer Seite auf einer der Registerkarten **Erlebnisprüfung** auf der Registerkarte &quot;Pipeline-Ausführungsseite&quot;oder im **Seiten** im vollständigen Dashboard von Experience Audit können Sie die Details einer bestimmten Seite anzeigen.
+Wenn Sie den Link einer Seite auf einer Registerkarte des Abschnitts **Experience Audit** der Registerkarte „Pipeline-Ausführungsseite“ oder im Abschnitt **Seiten** des vollständigen Dashboards von Experience Audit auswählen, können Sie die Details einer bestimmten Seite anzeigen.
 
 ![Seitendaten](assets/page-data.png)
 
@@ -121,4 +121,4 @@ Sie können sehen, wie die einzelnen Seiten für den jeweiligen Test bewertet wu
 
 Wenn Sie auf die Details einer einzelnen Seite klicken, erhalten Sie Informationen zu den bewerteten Elementen der Seite sowie Anleitungen zur Problembehebung, falls Verbesserungsmöglichkeiten erkannt werden.
 
-Um zur Ausführungsseite der Produktions-Pipeline zurückzukehren, wählen Sie einfach den Pfeil nach hinten im Browser aus.
+Um zur Ausführungsseite der Produktions-Pipeline zurückzukehren, wählen Sie einfach den Zurück-Pfeil im Browser aus.

@@ -6,7 +6,7 @@ exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
 source-wordcount: '1733'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -141,7 +141,7 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
      <li>HTML</li> 
      <li>PDF</li> 
      <li>Beide</li> 
-    </ul> <p>Mit dieser Option wird das Renderformat der Formulare nur im Forms Portal eingeschränkt, wo sie für den Benutzer sichtbar sind.</p> </td> 
+    </ul> <p>Diese Option wird zum Eingrenzen des Renderformats der Formulare nur im Formularportal verwendet, wo sie für die Benutzenden sichtbar sind.</p> </td> 
   </tr> 
   <tr> 
    <td>Tags</td> 

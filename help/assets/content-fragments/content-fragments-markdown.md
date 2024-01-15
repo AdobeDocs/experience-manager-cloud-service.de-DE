@@ -7,7 +7,7 @@ exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,7 @@ Sie können Folgendes definieren:
 
 ## Überschriftsnotation {#heading-notation}
 
-Zum Erstellen einer Kopfzeile durch Platzieren eines Rautezeichens (#) vor der Überschrift. Ein Hash-Tag (#) wird für ein H1-Tag, zwei Hash-Tags (##) für ein H2 usw. verwendet. Sie können bis zu 6 Hashtags verwenden. Beispiel:
+Zum Erstellen einer Kopfzeile durch Platzieren eines Hashtags (#) vor der Überschrift. Ein Hashtag (#) wird für eine H1 verwendet, zwei Hashtags (##) für eine H2 usw. Sie können bis zu 6 Hashtags verwenden. Beispiel:
 
     `## This is an H2`
 

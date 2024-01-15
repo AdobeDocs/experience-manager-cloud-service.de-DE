@@ -6,7 +6,7 @@ exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 source-git-commit: 47666e87b1cb87577291304336e0219481b7b4e2
 workflow-type: tm+mt
 source-wordcount: '1749'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -261,13 +261,13 @@ Die Verwendung unterscheidet sich je nachdem, ob Sie eine AEM-Autoren- oder Ver�
 
 >[!NOTE]
 >
->Siehe [API-Referenz](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). Besonders interessant: [Adobe Experience Manager Assets API – Inhaltsfragmente](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html?lang=de).
+>Siehe die [API-Referenz](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). Besonders interessant: [Adobe Experience Manager Assets API – Inhaltsfragmente](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html?lang=de).
 
 ## Beschränkungen {#limitations}
 
 Es gibt einige Beschränkungen:
 
-* **Inhaltsfragmentmodelle werden derzeit nicht unterstützt**: sie können weder gelesen noch erstellt werden. Um ein vorhandenes Inhaltsfragment erstellen oder aktualisieren zu können, müssen Entwickler den richtigen Pfad zum Inhaltsfragmentmodell kennen. Derzeit ist dies lediglich über die Verwaltungsoberfläche möglich.
+* **Inhaltsfragmentmodelle werden derzeit nicht unterstützt**: sie können weder gelesen noch erstellt werden. Um ein Inhaltsfragment zu erstellen oder ein bestehendes zu aktualisieren, müssen Entwickelnde den richtigen Pfad zum Inhaltsfragmentmodell kennen. Derzeit ist dies lediglich über die Verwaltungsoberfläche möglich.
 * **Verweise werden ignoriert**. Zurzeit sind keine Überprüfungen für Verweise auf vorhandene Inhaltsfragmente verfügbar. Wenn Sie beispielsweise ein Inhaltsfragment löschen, treten möglicherweise Probleme auf einer Seite auf, die einen Verweis auf das gelöschte Inhaltsfragment enthält.
 * **JSON-Datentyp** Die REST-API-Ausgabe des *JSON-Datentyps* basiert auf *Zeichenfolgen*.
 

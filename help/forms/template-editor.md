@@ -1,5 +1,5 @@
 ---
-title: Wie kann eine Vorlage für ein adaptives Formular erstellt werden?
+title: Erstellen einer Vorlage für ein adaptives Formular?
 description: Erstellen Sie Vorlagen für adaptive Formulare, indem Sie mithilfe des Vorlagen-Editors die grundlegende Struktur und die anfänglichen Inhalte definieren.
 feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639

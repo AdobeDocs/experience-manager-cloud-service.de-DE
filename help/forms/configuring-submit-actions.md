@@ -6,7 +6,7 @@ exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '3913'
-ht-degree: 88%
+ht-degree: 93%
 
 ---
 
@@ -172,23 +172,23 @@ Bevor Sie die Übermittlungsaktion **[!UICONTROL AEM-Workflow aufrufen]** verwen
 
 ## An SharePoint senden {#submit-to-sharedrive}
 
-Die Sendeaktion **[!UICONTROL An SharePoint senden]** verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint Storage senden.
+Die Sendeaktion **[!UICONTROL An SharePoint senden]** verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint-Speicher senden.
 
 Mit Senden an SharePoint haben Sie folgende Möglichkeiten:
-* [Verbinden eines adaptiven Formulars mit der SharePoint Document Library](#connect-af-sharepoint-doc-library)
+* [Verbinden eines adaptiven Formulars mit der SharePoint-Dokumentbibliothek](#connect-af-sharepoint-doc-library)
 * [Verbinden eines adaptiven Formulars mit einer SharePoint-Liste](#connect-af-sharepoint-list)
 
 
-### Verbinden eines adaptiven Formulars mit der SharePoint Document Library {#connect-af-sharepoint-doc-library}
+### Verbinden eines adaptiven Formulars mit der SharePoint-Dokumentbibliothek {#connect-af-sharepoint-doc-library}
 
-So verwenden Sie die **[!UICONTROL An SharePoint Document Library übermitteln]** Sendeaktion in einem adaptiven Formular:
+So verwenden Sie die Sendeaktion **[!UICONTROL An SharePoint-Dokumentbibliothek senden]** in einem adaptiven Formular:
 
-1. [Erstellen einer SharePoint Document Library-Konfiguration](#create-a-sharepoint-configuration-create-sharepoint-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® SharePoint-Speicher verbunden.
-2. [Verwenden der Sendeaktion „An SharePoint senden“ in einem adaptiven Formular](#use-sharepoint-configuartion-in-af): Dadurch wird Ihr adaptives Formular mit dem konfigurierten Microsoft® SharePoint verbunden.
+1. [Konfiguration für die SharePoint-Dokumentbibliothek erstellen](#create-a-sharepoint-configuration-create-sharepoint-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® SharePoint-Speicher verbunden.
+2. [Sendeaktion „An SharePoint senden“ in einem adaptiven Formular verwenden](#use-sharepoint-configuartion-in-af): Dadurch wird Ihr adaptives Formular mit dem konfigurierten Microsoft® SharePoint verbunden.
 
-#### Erstellen einer SharePoint Document Library-Konfiguration {#create-sharepoint-configuration}
+#### Erstellen einer SharePoint-Dokumentbibliothekskonfiguration {#create-sharepoint-configuration}
 
-So verbinden Sie AEM Forms mit Ihrem Microsoft® Sharepoint Document Library-Speicher:
+So verbinden Sie AEM Forms mit Ihrem Microsoft® Sharepoint-Dokumentbibliothekspeicher:
 
 1. Gehen Sie zu Ihrer **AEM Forms-Autoreninstanz** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® SharePoint]**.
 1. Sobald Sie **[!UICONTROL Microsoft® SharePoint]** auswählen, werden Sie zum **[!UICONTROL SharePoint-Browser]** weitergeleitet.
@@ -217,15 +217,15 @@ So verbinden Sie AEM Forms mit Ihrem Microsoft® Sharepoint Document Library-Spe
 
 Jetzt können Sie die SharePoint-Sites-Konfiguration für die Sendeaktion in einem adaptiven Formular verwenden.
 
-#### Verwenden der SharePoint Document Library-Konfiguration in einem adaptiven Formular {#use-sharepoint-configuartion-in-af}
+#### Verwenden der SharePoint-Dokumentbibliothekskonfiguration in einem adaptiven Formular {#use-sharepoint-configuartion-in-af}
 
-Sie können die erstellte SharePoint Document Library-Konfiguration in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einem SharePoint-Ordner zu speichern. Führen Sie die folgenden Schritte aus, um eine SharePoint Document Library-Speicherkonfiguration in einem adaptiven Formular zu verwenden:
+Sie können die erstellte Konfiguration für die SharePoint-Dokumentbibliothek in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einem SharePoint-Ordner zu speichern. Führen Sie die folgenden Schritte aus, um eine Speicherkonfiguration der SharePoint-Dokumentbibliothek in einem adaptiven Formular zu verwenden:
 
-1. Erstellen eines [adaptives Formular](/help/forms/creating-adaptive-form.md).
+1. Erstellen Sie ein [adaptives Formular](/help/forms/creating-adaptive-form.md).
 
    >[!NOTE]
    >
-   > * Gleiches auswählen [!UICONTROL Konfigurations-Container] für ein adaptives Formular, in dem Sie den SharePoint Document Library-Speicher erstellt haben.
+   > * Wählen Sie denselben [!UICONTROL Konfigurations-Container] für ein adaptives Formular, in dem Sie den SharePoint-Dokumentbibliothekspeicher erstellt haben.
    > * Wenn kein [!UICONTROL Konfigurations-Container] ausgewählt ist, erscheinen die globalen [!UICONTROL Speicherkonfigurations]-Ordner im Fenster mit den Eigenschaften der Sendeaktion.
 
 1. Wählen Sie **Sendeaktion** als **[!UICONTROL An SharePoint senden]**.
@@ -233,7 +233,7 @@ Sie können die erstellte SharePoint Document Library-Konfiguration in einem ada
 1. Wählen Sie die **[!UICONTROL Speicherkonfiguration]**, in der Sie Ihre Daten speichern möchten.
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Sendeeinstellungen zu speichern.
 
-Wenn Sie das Formular übermitteln, werden die Daten im angegebenen Microsoft® Sharepoint Document Library-Speicher gespeichert.
+Wenn Sie das Formular senden, werden die Daten im angegebenen Microsoft® Sharepoint-Dokumentbibliothekspeicher gespeichert.
 Ordnerstruktur zum Speichern von Daten: `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ### Verbinden eines adaptiven Formulars mit der Microsoft® SharePoint-Liste {#connect-af-sharepoint-list}
@@ -444,7 +444,7 @@ Verwenden Sie das Kontrollkästchen **[!UICONTROL Auf dem Server erneut überpr�
 
 Aktivieren von Server-seitiger Validierung
 
-Wenn Endbenutzerinnen oder -benutzer diese Validierungen umgehen und die Formulare senden, führt der Server die Validierung erneut durch. Wenn die Validierung Server-seitig fehlschlägt, wird die Übermittlung abgebrochen. Dem Benutzer wird das Originalformular erneut angezeigt. Die erfassten Daten und die gesendeten Daten werden dem Benutzer als Fehler angezeigt.
+Wenn Endbenutzerinnen oder -benutzer diese Validierungen umgehen und die Formulare senden, führt der Server die Validierung erneut durch. Wenn die Validierung Server-seitig fehlschlägt, wird die Übermittlung abgebrochen. Den Benutzenden wird das ursprüngliche Formular erneut präsentiert. Die erfassten Daten und die gesendeten Daten werden dem Benutzer als Fehler angezeigt.
 
 >[!NOTE]
 >

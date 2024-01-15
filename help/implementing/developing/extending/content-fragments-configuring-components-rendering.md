@@ -5,7 +5,7 @@ exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ Diese Informationen sind erforderlich, wenn Sie:
 * Ihre eigene auf einem Inhaltsfragment basierende Komponente bereitstellen
 * Außerdem müssen die erweiterten Dienste genutzt werden.
 
-Adobe empfiehlt die Verwendung der Kernkomponenten.
+Adobe empfiehlt, die Kernkomponenten zu verwenden.
 
 >[!CAUTION]
 >
@@ -47,7 +47,7 @@ Wenn Sie eine oder mehrere dieser Funktionen benötigen, ist es (in der Regel) e
 
 ## OSGi-Service – Konfiguration der Inhaltsfragment-Komponente {#osgi-service-content-fragment-component-configuration}
 
-Die Konfiguration muss an den OSGi-Dienst gebunden sein **Konfiguration der Inhaltsfragment-Komponente**:
+Die Konfiguration muss an den OSGi-Service zur **Konfiguration der Inhaltsfragment-Komponente** gebunden sein:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 

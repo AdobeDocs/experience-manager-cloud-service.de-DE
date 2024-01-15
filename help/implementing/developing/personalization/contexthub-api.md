@@ -5,7 +5,7 @@ exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '4602'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -219,7 +219,7 @@ Ruft die Schlüssel aus dem Store ab. Optional können Sie die Schlüssel abrufe
 
 ##### Parameter {#parameters-getkeys}
 
-* **`includeInternals`:** Ein Wert von `true` enthält intern verwendete Schlüssel in die Ergebnisse. Diese Schlüssel beginnen mit einem Unterstrich (`_`). Der Standardwert ist `false`.
+* **`includeInternals`:** Der Wert `true` umfasst intern verwendete Schlüssel in den Ergebnissen. Diese Schlüssel beginnen mit einem Unterstrich (`_`). Der Standardwert ist `false`.
 
 ##### Rückgabe {#returns-getkeys}
 
@@ -403,7 +403,7 @@ Ein Objekt, das die unformatierte Antwort darstellt.
 
 #### getServiceDetails() {#getservicedetails}
 
-Ruft das Service-Objekt für dieses ContextHub.Store.JSONPStore-Objekt ab. Das Dienstobjekt enthält die Informationen, die zum Erstellen der Dienst-URL erforderlich sind.
+Ruft das Service-Objekt für dieses ContextHub.Store.JSONPStore-Objekt ab. Das Service-Objekt enthält die Informationen, die zum Erstellen der Service-URL erforderlich sind.
 
 ##### Rückgabe {#returns-getservicedetails}
 
@@ -481,15 +481,15 @@ Löst den angegebenen Parameter auf.
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` erweitert [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) so erbt es alle Funktionen dieser Klasse. Die Daten, die vom JSONP-Service abgerufen werden, bleiben jedoch gemäß der Konfiguration der ContextHub-Persistenz bestehen. (Siehe [Persistenzmodi:](adding-contexthub.md#persistence-modes))
+`ContextHub.Store.PersistedJSONPStore` erweitert [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) so, dass es alle Funktionen dieser Klasse übernimmt. Die Daten, die vom JSONP-Service abgerufen werden, bleiben jedoch gemäß der Konfiguration der ContextHub-Persistenz bestehen. (Siehe [Persistenzmodi:](adding-contexthub.md#persistence-modes))
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
-`ContextHub.Store.PersistedStore` erweitert [ContextHub.Store.Core](#contexthub-store-core) so erbt es alle Funktionen dieser Klasse. Die Daten in diesem Store werden gemäß der Konfiguration der ContextHub-Persistenz beibehalten.
+`ContextHub.Store.PersistedStore` erweitert [ContextHub.Store.Core](#contexthub-store-core) und übernimmt dadurch alle Funktionen dieser Klasse. Die Daten in diesem Store werden gemäß der Konfiguration der ContextHub-Persistenz beibehalten.
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-`ContextHub.Store.SessionStore` erweitert [ContextHub.Store.Core](#contexthub-store-core) so erbt es alle Funktionen dieser Klasse. Die Daten in diesem Store werden mithilfe der speicherinternen Persistenz beibehalten (JavaScript-Objekt).
+`ContextHub.Store.SessionStore` erweitert [ContextHub.Store.Core](#contexthub-store-core) und übernimmt dadurch alle Funktionen dieser Klasse. Die Daten in diesem Store werden mithilfe der speicherinternen Persistenz beibehalten (JavaScript-Objekt).
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -856,7 +856,7 @@ Eine Kopie des Baums, der bereinigt wird.
 
 #### getItem() {#getitem}
 
-Ruft den Wert aus einem Objekt für den Schlüssel ab.
+Ruft den Wert eines Objekts für den Schlüssel ab.
 
 ##### Parameter {#parameters-getitem-2}
 

@@ -5,7 +5,7 @@ exl-id: 2ec31445-899d-40b8-b3eb-073cb07aff12
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '137'
-ht-degree: 75%
+ht-degree: 99%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 75%
 
 Die Karte Go-Live enthält alle relevanten Inhalte, die die Vorbereitung, spezifische Maßnahmen und gründliche Überlegungen für einen reibungslosen und erfolgreichen Go-Live von AEM as a Cloud Service hervorheben.
 
-Klicken Sie auf Ihre Projektkarte, um die Projekt-Landingpage zu öffnen und zur **Live-Schaltung** wie in der folgenden Abbildung dargestellt.
+Klicken Sie auf Ihre Projektkarte, um die Projekt-Landingpage zu öffnen und zum Abschnitt **Live-Schaltung** zu gehen, wie in der folgenden Abbildung dargestellt.
 
 ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
@@ -25,7 +25,7 @@ Klicken Sie auf Ihre Projektkarte, um die Projekt-Landingpage zu öffnen und zur
 
 In diesem Abschnitt erfahren Sie mehr zur Karte „Go-Live-Aktivität“:
 
-1. Klicken Sie auf **Ansicht** -Schaltfläche in der **Live-Schaltung** Karte.
+1. Klicken Sie auf die Schaltfläche **Ansicht** auf der Karte **Live-Schaltung**.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 

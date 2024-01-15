@@ -5,7 +5,7 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
 source-wordcount: '2474'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -85,7 +85,7 @@ Sie haben folgende Möglichkeiten:
 
 ### Vollbild-Editor {#full-screen-editor}
 
-Wenn Sie ein mehrzeiliges Textfeld bearbeiten, können Sie den Vollbild-Editor öffnen. Wählen Sie innerhalb des tatsächlichen Textes aus und wählen Sie dann das folgende Aktionssymbol aus:
+Beim Bearbeiten eines mehrzeiligen Textfelds können Sie den Vollbild-Editor öffnen. Wählen Sie den eigentlichen Text und dann das folgende Aktionssymbol aus:
 
 ![Symbol für den Vollbild-Editor](assets/cfm-variations-03.png)
 

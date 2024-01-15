@@ -1,6 +1,6 @@
 ---
-title: Wie können wir von AEM 6.5 Forms zu AEM Forms as a Cloud Service migrieren?
-description: Erste Schritte mit der Migration-Journey zu AEM as a Cloud Service | Adobe Experience Manager. Migrieren von [!DNL AEM Forms] (On-Premise- und AMS-Umgebungen) in eine [!DNL AEM Forms] as a Cloud Service-Umgebung.
+title: Migration von AEM 6.5 Forms zu AEM Forms as a Cloud Service?
+description: Erste Schritte bei der Migration zu AEM as a Cloud Service | Adobe Experience Manager.  Migrieren von [!DNL AEM Forms] (On-Premise- und AMS-Umgebungen) in eine [!DNL AEM Forms] as a Cloud Service-Umgebung.
 Keywords: 6.5 forms to cloud service, 6.5 forms to cs, migrate 6.5 forms to CS, migrate 6.5 forms to cloud service, upgrade 6.5 forms to CS, move 6.5 forms to CS, upgrade AEM 6.5 to CS, AEM Forms 6.5 to Cloud Service, AEM form migration to cloud service, Migration Journey to AEM as a Cloud Service | Adobe Experience Manager.
 contentOwner: khsingh
 feature: Adaptive Forms
@@ -12,7 +12,7 @@ exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1430'
-ht-degree: 86%
+ht-degree: 94%
 
 ---
 
@@ -23,8 +23,8 @@ ht-degree: 86%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/upgrade.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-Sie können Ihre adaptiven Formulare, Designs, Vorlagen und Cloud-Konfigurationen aus <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> AEM 6.5 Forms unter OSGi zu [!DNL AEM] as a Cloud Service migrieren. Verwenden Sie vor der Migration dieser Assets das Migrationsdienstprogramm, um das in früheren Versionen verwendete Format in das in [!DNL AEM] as a Cloud Service.
-Beginnen wir mit der Migration Journey zu AEM as a Cloud Service | Adobe Experience Manager. Wenn Sie das Migrationsdienstprogramm ausführen, werden die folgenden Assets aktualisiert:
+Sie können Ihre adaptiven Formulare, Designs, Vorlagen und Cloud-Konfigurationen aus <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> AEM 6.5 Forms unter OSGi zu [!DNL AEM] as a Cloud Service migrieren. Bevor Sie diese Assets migrieren, verwenden Sie das Migrationsdienstprogramm, um das in früheren Versionen verwendete Format in das Format zu konvertieren, das in [!DNL AEM] as a Cloud Service verwendet wird.
+Beginnen wir die Migration zu AEM as a Cloud Service | Adobe Experience Manager.  Wenn Sie das Migrationsdienstprogramm ausführen, werden die folgenden Assets aktualisiert:
 
 * Benutzerdefinierte Komponenten für adaptive Formulare
 * Adaptive Formularvorlagen und -Designs
@@ -122,7 +122,7 @@ Führen Sie die folgenden Schritte aus, um Ihre [!DNL AEM Forms]-Assets mit Clou
 
    Der Cloud Service unterstützt keine Regeleditorskripte. Das Tool für die **[!UICONTROL Migration von Code-Editor-Skripten]** konvertiert alle Regelskripte in Ihrer Umgebung in wiederverwendbare Funktionen und wendet die wiederverwendbaren Funktionen auf den entsprechenden Speicherort im Visual Editor an. Diese wiederverwendbaren Funktionen werden in Form von Client-Bibliotheken gespeichert und helfen Ihnen dabei, die vorhandenen Funktionen zu erhalten. Das Tool wendet die generierten wiederverwendbaren Funktionen automatisch auf entsprechende adaptive Formulare an.
 
-   AEM Formularmigration zu Cloud Service verwenden Sie die [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de#contentmanagement) , um die wiederverwendbaren Funktionen (Client-Bibliotheken) in ein Paket zu exportieren.
+   AEM Forms-Migration zu Cloud Service: Verwenden Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de#contentmanagement), um die wiederverwendbaren Funktionen (Client-Bibliotheken) in ein Paket zu exportieren.
 
 1. [Stellen Sie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=de#deploying-content-packages-via-cloud-manager-and-package-manager) das Paket mit den wiederverwendbare Funktionen (Client-Bibliotheken), [benutzerspezifischen Code, Komponenten, Konfigurationen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=de#cloud-manager) und benutzerdefinierte gebietsschemaspezifische Bibliotheken in Ihrer [!DNL AEM] as a Cloud Service-Umgebung bereit.
 
@@ -154,7 +154,7 @@ Sie können die unten aufgeführten Ordnerpfade der obersten Ebene oder bestimmt
 * `/content/forms/af`
 * `/etc/clientlibs/fd/theme`
 
-Wenn Sie AEM Workflow-Modelle von AEM Forms 6.5 auf Cloud Service migrieren, geben Sie die folgenden Pfade an:
+Wenn Sie AEM-Workflow-Modelle von AEM Forms 6.5 zu Cloud Service migrieren, geben Sie die folgenden Pfade an:
 
 * `/conf/global/settings/workflow/models/`
 * `/conf/global/settings/workflow/launcher`
@@ -171,7 +171,7 @@ Wenn Sie AEM Workflow-Modelle von AEM Forms 6.5 auf Cloud Service migrieren, geb
 Das Migrationsdienstprogramm hilft Ihnen bei der Migration von adaptiven Formularen basierend auf Foundation-Komponenten. Darüber hinaus unterstützt Forms as a Cloud Service Kernkomponenten für adaptive Formulare. Damit können Sie:
 
 * [Auf Kernkomponenten basierende, eigenständige adaptive Formulare erstellen](/help/forms/creating-adaptive-form-core-components.md)
-* [Erstellen eines auf Kernkomponenten basierenden adaptiven Formulars direkt auf einer AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [auf Kernkomponenten basierende adaptive Formulare direkt auf einer AEM Sites-Seite erstellen](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 Weitere Informationen zu AEM Forms as a Cloud Service finden Sie unter:
 

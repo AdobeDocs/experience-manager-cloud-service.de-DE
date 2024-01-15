@@ -14,7 +14,7 @@ exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
 source-git-commit: 20c12efb963bc1defd16f5b42b5efa5d4067e266
 workflow-type: tm+mt
 source-wordcount: '3674'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -88,7 +88,7 @@ Wenn Sie weiterlesen, erfahren Sie mehr darüber, warum dieses Konzept der „Ei
 
 Wenn Sie bereit sind, ein Bild- oder Video-Asset live zu schalten, wird es durch das Backbone von Dynamic Media unterstützt, das aus einem leistungsstarken, erstklassigen Bereitstellungsnetzwerk besteht. Das Netzwerk bedient täglich Hunderte von Kunden auf der ganzen Welt. Die Assets werden im Content Delivery Network (CDN), das von Akamai gehostet wird, verteilt. Das CDN ist ein System von Computer-Services, die miteinander vernetzt sind und transparent zusammenarbeiten, um Endbenutzern Inhalte, insbesondere große Rich-Media-Inhalte, bereitzustellen.
 
-Im CDN-System werden Web-Inhalte in Web-Caches im Internet gespeichert. Dann werden sie vom Web-Cache an die Endbenutzer geliefert, was eine schnellere Bereitstellung ermöglicht. Wenn also jemand zum ersten Mal eine Webseite herunterlädt, werden die angezeigten Inhalte an einen CDN-Cache geliefert. Sie werden auf dem Server gespeichert, sodass beim nächsten Zugriff eines Benutzers im selben Bereich auf die Webseite derselbe zwischengespeicherte Inhalt schneller bereitgestellt wird. Der Inhalt wird schneller bereitgestellt, da er sich näher am Benutzer befindet. Ein CDN sorgt für eine schnellere Anzeige von Webseiten und verringert gleichzeitig die Bandbreitenanforderungen an den zentralen Server, da die Inhalte nicht in jedem Fall von einem zentralen Server, sondern von einem Cache-Netzwerk geliefert werden. Dieser optimierte Fluss bedeutet ein besseres Benutzererlebnis, was zu höheren Umsätzen führt.
+Im CDN-System werden Web-Inhalte in Web-Caches im Internet gespeichert. Dann werden sie vom Web-Cache an die Endbenutzer geliefert, was eine schnellere Bereitstellung ermöglicht. Wenn also jemand zum ersten Mal eine Webseite herunterlädt, werden die angezeigten Inhalte an einen CDN-Cache geliefert. Sie werden auf dem Server gespeichert, sodass beim nächsten Zugriff eines Benutzers im selben Bereich auf die Webseite derselbe zwischengespeicherte Inhalt schneller bereitgestellt wird. Die Inhalte werden schneller bereitgestellt, da sie sich näher an den Benutzenden befinden. Ein CDN sorgt für eine schnellere Anzeige von Webseiten und verringert gleichzeitig die Bandbreitenanforderungen an den zentralen Server, da die Inhalte nicht in jedem Fall von einem zentralen Server, sondern von einem Cache-Netzwerk geliefert werden. Dieser optimierte Fluss bedeutet ein besseres Benutzererlebnis, was zu höheren Umsätzen führt.
 
 <!-- USE AN IMAGE HERE? ![Content delivery network](/help/assets/assets-dm/cdn.png) -->
 

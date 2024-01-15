@@ -7,7 +7,7 @@ exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '3145'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -266,13 +266,13 @@ Sie können die erweiterten Einstellungen der **[!UICONTROL Adaptive Formulare �
 * **Formular deckt die gesamte Breite des Rahmens ab**: 
 Ein Inline-Frame (iframe) ist ein HTML-Element, das ein adaptives Formular auf eine AEM Sites-Seite lädt.
 
-   * Wenn das Kontrollkästchen **[!UICONTROL Formular deckt die gesamte Breite des Rahmens ab]** aktiviert ist, belegt ein adaptives Formular die gesamte Breite des Containers, in dem es platziert wird. In diesem Fall wird kein iFrame zum Rendern des Formulars verwendet.  Das Layout und Design eines adaptiven Formulars passen sich an die gesamte Breite des Containers an, sodass es responsiv ist und an verschiedene Bildschirmgrößen angepasst werden kann. Mit dieser Option können Sie mehrere adaptive Forms in eine AEM Sites-Seite einbetten.
+   * Wenn das Kontrollkästchen **[!UICONTROL Formular deckt die gesamte Breite des Rahmens ab]** aktiviert ist, belegt ein adaptives Formular die gesamte Breite des Containers, in dem es platziert wird. In diesem Fall wird kein iFrame zum Rendern des Formulars verwendet.  Das Layout und Design eines adaptiven Formulars passen sich an die gesamte Breite des Containers an, sodass es responsiv ist und an verschiedene Bildschirmgrößen angepasst werden kann. Mit dieser Option können Sie mehrere adaptive Formulare in eine AEM Sites-Seite einbetten.
 
      >[!NOTE]
      >
      > Um mehrere Formulare in eine AEM Sites-Seite einzubetten, aktivieren Sie das Kontrollkästchen **[!UICONTROL Formular deckt die gesamte Breite des Rahmens ab]**.
 
-   * Wenn das Kontrollkästchen **[!UICONTROL Formular deckt die gesamte Breite des Rahmens ab]** nicht aktiviert ist, deckt ein adaptives Formular nicht die gesamte Breite des Containers ab. Stattdessen wird ein iframe zum Rendern des Formulars verwendet, der nicht über eine bestimmte Breite hinaus erweitert werden kann. Dieser Ansatz ist nützlich, wenn ein adaptives Formular bestimmte Grenzen hat und mit anderen AEM Komponenten daneben innerhalb des Containers vorhanden sein muss. Wenn diese Option nicht aktiviert ist, kann nur ein einziges adaptives Formular ohne iFrame in eine AEM Sites-Seite eingebettet werden.
+   * Wenn das Kontrollkästchen **[!UICONTROL Formular deckt die gesamte Breite des Rahmens ab]** nicht aktiviert ist, deckt ein adaptives Formular nicht die gesamte Breite des Containers ab. Stattdessen wird ein iframe zum Rendern des Formulars verwendet, der nicht über eine bestimmte Breite hinaus erweitert werden kann. Dieser Ansatz ist nützlich, wenn ein adaptives Formular bestimmte Grenzen hat und im Container mit anderen AEM-Komponenten daneben koexistieren muss. Wenn diese Option nicht aktiviert ist, kann nur ein einziges adaptives Formular ohne iFrame in eine AEM Sites-Seite eingebettet werden.
 
      >[!NOTE]
      >

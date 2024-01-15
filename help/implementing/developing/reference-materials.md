@@ -5,13 +5,13 @@ exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 source-git-commit: 3434d51c9b0bad02b0c3f0836341f671c9405182
 workflow-type: tm+mt
 source-wordcount: '594'
-ht-degree: 87%
+ht-degree: 96%
 
 ---
 
 # API-Referenzmaterial {#api-reference-materials}
 
-Adobe Experience Manager (AEM) stellt zahlreiche APIs zum Entwickeln von Anwendungen und Erweitern von AEM bereit. AEM basiert auf mehreren Open-Source-Technologien, die auch verwendet werden können.
+Adobe Experience Manager (AEM) stellt zahlreiche APIs zum Entwickeln von Anwendungen und Erweitern von AEM bereit. AEM basiert auf verschiedenen Open-Source-Technologien, die ebenfalls genutzt werden können.
 
 ## AEM-Kern-APIs {#core-aem-apis}
 
@@ -19,8 +19,8 @@ Die folgenden APIs sind zentraler Bestandteil von AEM.
 
 | API | Beschreibung |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Produktabstraktionen wie Seiten, Assets, Workflows usw. |
-| [Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Adobe&#39;s Open Web Stack mit verschiedenen wesentlichen Komponenten (die 6.5 Granite-Materialien gelten für AEMaaCS) |
+| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Produktabstraktionen wie Seiten, Assets und Workflows. |
+| [Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Open Web Stack von Adobe mit verschiedenen wichtigen Komponenten (die 6.5 Granite-Materialien gelten für AEMaaCS) |
 | [Coral-Benutzeroberfläche](https://opensource.adobe.com/coral-spectrum/documentation/) | Der visuelle Stil von Adobe für Cloud-Benutzeroberflächen und ein konsistentes Benutzererlebnis |
 
 <!---
@@ -48,7 +48,7 @@ AEM basiert auf den folgenden vier primären Java-API-Sätzen in absteigender Re
 
 | Priorität | API | Beschreibung |
 |---|---|---|
-| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Produktabstraktionen wie Seiten, Assets, Workflows usw. |
+| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Produktabstraktionen wie Seiten, Assets und Workflows. |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | REST- und ressourcenbasierte Abstraktionen wie Ressourcen, Wertzuordnungen und HTTP-Anforderungen. |
 | 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Daten- und Inhaltsabstraktionen wie Knoten, Eigenschaften und Sitzungen. |
 | 4 | [Apache Felix](https://felix.apache.org/) | OSGi-Programm-Container-Abstraktionen wie Services und (OSGi-) Komponenten. |

@@ -1,6 +1,6 @@
 ---
 title: Wie wende ich elektronische Signaturen auf ein Formular mithilfe von Freihandsignaturen an?
-description: Erfahren Sie, wie Sie mithilfe von Freihandsignaturen elektronische Signaturen auf ein Formular anwenden.
+description: Lernen Sie, wie man elektronische Signaturen auf ein Formular mithilfe einer Freihandsignatur anwendet.
 uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
@@ -9,17 +9,17 @@ exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '709'
-ht-degree: 81%
+ht-degree: 89%
 
 ---
 
-# Formular mithilfe von Freihandsignaturen e-signieren{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
+# E-Signieren eines Formulars mithilfe von Freihandsignaturen{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/creating-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 
@@ -73,11 +73,11 @@ Sie können die **Konfigurieren** ![Symbol zum Konfigurieren](assets/configure.p
 
    * **Elementname**: Geben Sie den Namen der Komponente an.
 
-   * **Titel:** Geben Sie einen eindeutigen Titel der Komponente an.
+   * **Titel**: Geben Sie den eindeutigen Titel der Komponente an.
    * **Vorlagennachricht**: Geben Sie die Nachricht an, die angezeigt werden soll, während das PDF-Signaturdokument geladen wird. Adobe Sign-Dienste benötigen einige Zeit, um das PDF-Signaturdokument vorzubereiten und zu laden.
    * **Signaturdienst**: Wählen Sie die Option **Freihandsignatur** aus.
 
-   * **CSS-Klasse**: Geben Sie ggf. die CSS-Klasse der Client-Bibliothek an. Adobe empfiehlt, [themes](themes.md) und [Inline-Stile](inline-style-adaptive-forms.md) anstelle der CSS-Klasse.
+   * **CSS-Klasse**: Geben Sie ggf. die CSS-Klasse der Client-Bibliothek an. Adobe empfiehlt, [Designs](themes.md) und [Inline-Stile](inline-style-adaptive-forms.md) anstelle der CSS-Klasse zu verwenden.
 
    Wählen Sie Fertig aus ![aem_forms_save](assets/aem_forms_save.png) -Symbol, um die Änderungen zu speichern. Die Signatur wurde erfolgreich konfiguriert.
 
@@ -89,7 +89,7 @@ Sie können die **Konfigurieren** ![Symbol zum Konfigurieren](assets/configure.p
 
    ![Signaturbildschirm für EchoSign-Seite](assets/esignscribblesign.jpg)
 
-1. Klicks **[!UICONTROL Sign]**. Das Dialogfeld „Freihandsignatur“ wird angezeigt. Signieren Sie das Formular und klicken Sie auf das Symbol „Fertig“ ![aem_forms_save](assets/aem_forms_save.png), um die Signatur zu speichern.
+1. Klicken Sie auf **[!UICONTROL Signieren]**. Das Dialogfeld „Freihandsignatur“ wird angezeigt. Signieren Sie das Formular und klicken Sie auf das Symbol „Fertig“ ![aem_forms_save](assets/aem_forms_save.png), um die Signatur zu speichern.
 
    ![Dialogfeld für Freihandsignatur](assets/scribblewidget.png)
 

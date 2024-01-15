@@ -1,11 +1,11 @@
 ---
 title: Exportieren von Experience Fragments nach Adobe Target
-description: Erfahren Sie, wie Sie Ihre Experience Fragments in Adobe Target exportieren, um Erlebnisse zu testen und zu personalisieren.
+description: Erfahren Sie, wie Sie Ihre Experience Fragments in Adobe Target exportieren können, um Erlebnisse zu testen und zu personalisieren.
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '2184'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -102,7 +102,7 @@ Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderl
    * die passende Konfiguration
    * die Option für das erforderliche Format
    * einen Adobe Target-Arbeitsbereich
-   * bei Bedarf - die Externalizer-Domäne
+   * falls erforderlich – die Externalizer-Domain
 
    >[!CAUTION]
    >
@@ -189,7 +189,7 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
 
    * **Präzises Targeting verwenden**: Dieses Kontrollkästchen ist standardmäßig aktiviert. Wenn diese Option aktiviert ist, wartet die Cloud-Service-Konfiguration auf das Laden des Kontexts, bevor der Inhalt geladen wird. Siehe folgenden Hinweis.
 
-   * **Segmente aus Adobe Target synchronisieren**: Aktivieren Sie diese Option, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Wählen Sie diese Option aus, wenn die Eigenschaft &quot;API-Typ&quot;REST ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Der AEM-Begriff „Segment“ ist gleichbedeutend mit dem Target-Begriff „Zielgruppe“.)
+   * **Segmente aus Adobe Target synchronisieren**: Aktivieren Sie diese Option, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Wählen Sie diese Option aus, wenn die Eigenschaft „API-Typ“ auf „REST“ festgelegt ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Der AEM-Begriff „Segment“ ist gleichbedeutend mit dem Target-Begriff „Zielgruppe“.)
 
    * **Client-Bibliothek:** dies ist standardmäßig AT.js (mbox.js wird nicht mehr unterstützt)
 
@@ -315,7 +315,7 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >Für Medien-Assets wie Bilder wird nur ein Verweis nach Target exportiert. Das Asset selbst bleibt in AEM Assets gespeichert und wird von der AEM-Veröffentlichungsinstanz bereitgestellt.
 >
->Daher muss das Experience Fragment mit allen zugehörigen Assets vor dem Export in Target veröffentlicht werden.
+>Daher muss das Experience Fragment mit allen zugehörigen Assets veröffentlicht werden, bevor es nach Target exportiert wird.
 
 So exportieren Sie ein Experience Fragment aus AEM nach Target (nach Angabe der Cloud-Konfiguration):
 
@@ -326,19 +326,19 @@ So exportieren Sie ein Experience Fragment aus AEM nach Target (nach Angabe der 
    >
    >Es muss sich um eine Experience Fragment Web-Variante handeln.
 
-1. Auswählen **Exportieren in Adobe Target**.
+1. Wählen Sie **Nach Adobe Target exportieren** aus
 
    >[!NOTE]
    >
    >Wenn das Experience Fragment bereits exportiert wurde, wählen Sie **In Adobe Target aktualisieren**.
 
-1. Auswählen **Exportieren ohne Veröffentlichung** oder **Veröffentlichen** nach Bedarf.
+1. Wählen Sie **Exportieren ohne Veröffentlichung** bzw. **Veröffentlichen** aus.
 
    >[!NOTE]
    >
    >Wenn Sie **Veröffentlichen** auswählen, wird das Experience Fragment sofort veröffentlicht und an Target gesendet.
 
-1. Auswählen **OK** im Bestätigungsdialogfeld.
+1. Wählen Sie im Bestätigungsdialogfeld **OK** aus.
 
    Ihr Experience Fragment sollte jetzt in Target enthalten sein.
 

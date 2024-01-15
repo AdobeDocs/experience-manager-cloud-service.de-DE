@@ -8,7 +8,7 @@ exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ In diesem Dokument erfahren Sie, wie Sie mit der Übersetzung von Website-Inhalt
 
 ## Anforderungen und Vorbedingungen {#requirements-prerequisites}
 
-Es gibt mehrere Voraussetzungen, bevor Sie mit der Übersetzung Ihrer AEM beginnen.
+Bevor Sie mit der Übersetzung Ihrer AEM-Inhalte beginnen, müssen Sie mehrere Anforderungen erfüllen.
 
 ### Kenntnisse {#knowledge}
 
@@ -65,7 +65,7 @@ Die Sites-Konsole bietet einen Überblick über die Struktur Ihrer Inhalte, soda
 
 So greifen Sie auf die Sites-Konsole zu:
 
-1. Wählen Sie im globalen Navigationsmenü die Option **Navigation** > **Sites**.
+1. Wählen Sie im globalen Navigationsmenü die Optionen **Navigation** > **Sites** aus.
 1. Die Sites-Konsole wird auf der obersten Ebene Ihrer Inhalte geöffnet.
 1. Stellen Sie sicher, dass die Option **Spaltenansicht** mithilfe der Ansichtsauswahl oben rechts im Fenster ausgewählt ist.
 
@@ -75,7 +75,7 @@ So greifen Sie auf die Sites-Konsole zu:
 
    ![Inhaltshierarchie](assets/sites-console-hierarchy.png)
 
-1. Durch Tippen oder Klicken auf das Kontrollkästchen eines Elements in einer Spalte wird dieses Element ausgewählt, die Details des ausgewählten Elements werden rechts in der Spalte angezeigt und es werden mehrere Aktionen angezeigt, die für das ausgewählte Element in der Symbolleiste oben verfügbar sind.
+1. Durch Tippen oder Klicken auf das Kontrollkästchen eines Elements in einer Spalte wird dieses Element ausgewählt, und die Details des ausgewählten Elements werden in der Spalte rechts angezeigt. Außerdem wird in der Symbolleiste darüber eine Reihe von Aktionen angezeigt, die für das ausgewählte Element verfügbar sind.
 
    ![Inhaltsauswahl](assets/sites-console-selection.png)
 
@@ -93,11 +93,11 @@ Mithilfe dieser einfachen Tools können Sie intuitiv durch Ihre Inhaltsstruktur 
 
 ### Seiteneditor {#page-editor}
 
-In der Sites-Konsole können Sie durch Ihren Inhalt navigieren und einen Überblick über dessen Struktur erhalten. Um die Details einer Einzelseite anzuzeigen, müssen Sie den Website-Editor verwenden.
+Die Sites-Konsole ermöglicht Ihnen die Navigation in Ihren Inhalten und bietet einen Überblick über deren Struktur. Um die Details einer Einzelseite anzuzeigen, müssen Sie den Website-Editor verwenden.
 
 So bearbeiten Sie eine Seite:
 
-1. Verwenden Sie die Sites-Konsole, um eine Seite zu suchen und auszuwählen. Beachten Sie, dass Sie das Kontrollkästchen einer einzelnen Seite aktivieren müssen, um sie auszuwählen.
+1. Verwenden Sie die Sites-Konsole, um eine Seite zu suchen und auszuwählen. Denken Sie daran, dass Sie das Kontrollkästchen einer Einzelseite auswählen müssen, um sie auszuwählen.
 
    ![Auswahl einer zu bearbeitenden Seite](assets/sites-editor-select-page.png)
 
@@ -107,7 +107,7 @@ So bearbeiten Sie eine Seite:
 
    ![Bearbeiten einer Seite](assets/sites-editor-title.png)
 
-Sie können jederzeit zur Sites-Konsole zurückkehren, indem Sie in Ihrem Browser zu diesem Tab zurückkehren. Mit dem Sites-Editor können Sie den Inhalt der Seite schnell anzeigen, da die Inhaltsautoren und Ihre Zielgruppe ihn sehen können.
+Sie können jederzeit zur Sites-Konsole zurückkehren, indem Sie in Ihrem Browser zu diesem Tab zurückkehren. Mit dem Sites-Editor können Sie die Inhalte der Seite schnell so anzeigen, wie die Inhaltsautorinnen bzw. Inhaltsautoren und Ihre Zielgruppe sie sehen können.
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ Nachdem Sie nun diesen Teil der AEM Sites-Übersetzungs-Tour abgeschlossen haben
 * verstehen, wie AEM Inhalte speichert.
 * mit den Übersetzungs-Tools von AEM vertraut sein.
 
-Machen Sie sich mit diesem Wissen vertraut und fahren Sie mit Ihrer AEM Sites-Übersetzungs-Journey fort, indem Sie das Dokument erneut überprüfen. [Konfigurieren des Übersetzungs-Connectors](configure-connector.md) Hier erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.|
+Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Sites-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Konfigurieren des Übersetzungs-Connectors](configure-connector.md) lesen, in dem Sie lernen, wie Sie AEM mit einem Übersetzungsdienstleister verbinden.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

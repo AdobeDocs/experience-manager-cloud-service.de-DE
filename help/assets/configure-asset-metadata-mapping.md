@@ -5,7 +5,7 @@ exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1005'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ So legen Sie die Metadatenzuordnung für die Felder „Projektname“, „Dokume
 
 1. Wählen Sie die Experience Manager Assets-Integration aus und klicken Sie auf **[!UICONTROL Bearbeiten]**.
 
-1. Klicken Sie auf **[!UICONTROL Metadaten]**. Ordnen Sie auf der Registerkarte **[!UICONTROL Assets]** das Workfront-Feld [!UICONTROL Projekt] > [!UICONTROL Name] dem `wm:projectName` Experience Manager Assets-Feld zu. Wenn Sie die exakte Übereinstimmung nicht finden, empfiehlt Adobe, nach der besten Übereinstimmung zu suchen, um das Workfront- und Experience Manager Assets-Feld zuzuordnen. Sie können die Zuordnung von Feldern unterschiedlicher Datentypen vermeiden. Sie können beispielsweise ein Datumsfeld in Workfront einem Beschreibungsfeld in Assets zuordnen.
+1. Klicken Sie auf **[!UICONTROL Metadaten]**. Ordnen Sie auf der Registerkarte **[!UICONTROL Assets]** das Workfront-Feld [!UICONTROL Projekt] > [!UICONTROL Name] dem `wm:projectName` Experience Manager Assets-Feld zu. Wenn Sie die exakte Übereinstimmung nicht finden, empfiehlt Adobe, nach der besten Übereinstimmung zu suchen, um das Feld zwischen Workfront und Experience Manager Assets zuzuordnen. Sie können die Zuordnung von Feldern unterschiedlicher Datentypen vermeiden. Sie können beispielsweise ein Datumsfeld in Workfront einem Beschreibungsfeld in Assets zuordnen.
 1. Ordnen Sie das Workfront-Feld [!UICONTROL Dokument] > [!UICONTROL Name] dem `wm:documentName` Experience Manager Assets-Feld zu.
 
    ![Zuordnung in Workfront](assets/workfront-metadata-mapping.png)
@@ -56,7 +56,7 @@ So senden Sie das Bild von Workfront an Experience Manager Assets:
 
 1. Klicken Sie auf das Hauptmenüsymbol ![Menü anzeigen](assets/show-menu.svg) in der oberen rechten Ecke des Adobe Workfront-Programms und dann auf **[!UICONTROL Projekte]**.
 
-1. Klicks **[!UICONTROL Neues Projekt]** , um ein Projekt zu erstellen.
+1. Klicken Sie auf **[!UICONTROL Neues Projekt]**, um ein Projekt zu erstellen.
 
 1. Klicken Sie auf **[!UICONTROL Dokumente]** im linken Bereich, ziehen Sie das Bild, das Sie an Experience Manager Assets senden möchten, und wählen Sie es aus.
 
@@ -82,7 +82,7 @@ So konfigurieren Sie die Metadatenzuordnung mit einem neuen Metadatenformular in
 
 1. Wählen Sie das Schemaformular aus und klicken Sie auf **[!UICONTROL Bearbeiten]**.
 
-1. (Optional) Klicken Sie im Metadatenschema-Formular-Editor auf `+` , um eine Registerkarte für die Workfront-Felder zu erstellen.
+1. (Optional) Klicken Sie im Metadatenschema-Formular-Editor auf `+`, um eine neue Registerkarte für die Workfront-Felder zu erstellen.
 
 1. Klicken Sie auf **[!UICONTROL Formular erstellen]** und ziehen Sie die **[!UICONTROL Einzelzeilentext]**-Komponente in das Formular. Klicken Sie auf die Komponente im Formular. Gehen Sie auf der Registerkarte **[!UICONTROL Formular erstellen]** folgendermaßen vor:
 

@@ -5,7 +5,7 @@ exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '2042'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 Das folgende Tutorial führt Sie durch die Schritte zum Erstellen einer benutzerdefinierten Komponente für AEM Screens. AEM Screens verwendet viele vorhandene Design-Muster und Technologien anderer AEM-Produkte. Das Tutorial hebt Unterschiede und besondere Überlegungen bei der Entwicklung für AEM Screens hervor.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Dieses Tutorial richtet sich an Entwicklerinnen und Entwickler, die neu bei AEM Screens sind. In diesem Tutorial wird eine einfache „Hello World“-Komponente für einen Sequenzkanal in AEM Screens erstellt. Über ein Dialogfeld können Autorinnen und Autoren den angezeigten Text aktualisieren.
 
@@ -132,7 +132,7 @@ AEM Screens weist einige interessante Einschränkungen auf, die nicht unbedingt 
    Screens-Komponenten erfordern je nach verwendetem [Inhaltserstellungsmodus](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) zwei unterschiedliche Wiedergaben:
 
    1. **Produktion**: Vorschau- oder Veröffentlichungsmodus (wcmmode=disabled)
-   1. **Bearbeiten**: wird für alle anderen Authoring-Modi verwendet, d. h. Bearbeiten, Design, Strukturvorlage, Entwickler ...
+   1. **Bearbeiten**: für alle anderen Inhaltserstellungsmodi, d. h. Bearbeiten, Design, Strukturvorlage, Entwickler …
 
    `helloworld.html` fungiert als Schalter, der überprüft, welcher Authoring-Modus gerade aktiv ist, und zu einem anderen HTL-Skript umleitet. Eine gängige Konvention, die von Screens-Komponenten verwendet wird, besteht darin, ein `edit.html`-Skript für den Bearbeitungsmodus und ein `production.html`-Skript für den Produktionsmodus zu verwenden.
 
@@ -289,7 +289,7 @@ AEM Screens-Komponenten werden im Bearbeitungsmodus anders als im Vorschau-/Prod
 
    Die Eigenschaft „categories“ ist eine Zeichenfolge, die die Client-Bibliothek identifiziert. Die Kategorie „cq.screens.components“ wird sowohl im Bearbeitungs- als auch im Vorschau-/Produktionsmodus verwendet. Daher wird jedes in sharedclientlib definierte CSS/JS in allen Modi geladen.
 
-   Es empfiehlt sich, in einer Produktionsumgebung niemals Pfade direkt zu /apps bereitzustellen. Die Eigenschaft allowProxy stellt sicher, dass auf die CSS- und JS-Client-Bibliothek über ein Präfix of/etc.clientlibs verwiesen wird.
+   Es empfiehlt sich, in einer Produktionsumgebung niemals Pfade direkt zu /apps bereitzustellen. Die allowProxy-Eigenschaft stellt sicher, dass auf die Pfade zu Client-Bibliotheks-CSS und -JS über ein Präfix „of/etc.clientlibs“ verwiesen wird.
 
 1. Erstellen Sie eine Datei mit dem Namen `css.txt` unter dem freigegebenen Ordner.
 
@@ -329,7 +329,7 @@ AEM Screens-Komponenten werden im Bearbeitungsmodus anders als im Vorschau-/Prod
 
 1. Kopieren Sie den Client-Bibliotheksordner `shared` und fügen Sie ihn ein, um eine neue Client-Bibliothek mit dem Namen `production` zu erstellen.
 
-   ![Kopieren Sie die freigegebene Client-Bibliothek, um eine Produktions-Client-Bibliothek zu erstellen](/help/screens-cloud/developing/assets/copy-clientlib.gif)
+   ![Kopieren Sie die freigegebene Client-Bibliothek, um eine neue Produktions-Client-Bibliothek zu erstellen](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
    Kopieren Sie die freigegebene Client-Bibliothek, um eine neue Produktions-Client-Bibliothek zu erstellen.
 

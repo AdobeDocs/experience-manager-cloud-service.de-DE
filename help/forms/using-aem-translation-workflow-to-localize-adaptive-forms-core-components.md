@@ -1,12 +1,12 @@
 ---
-title: Wie können wir ein auf Kernkomponenten basierendes adaptives Formular übersetzen?
+title: Übersetzen eines auf Kernkomponenten basierenden adaptiven Formulars?
 description: Erfahren Sie, wie Sie ein Formulardatenmodell in AEM Forms erstellen, das Modell mit Beispieldaten und -diensten testen und verschiedene Optionen für ein Modell konfigurieren.
 feature: Adaptive Forms, Core Components
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '884'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ Der Service für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adapti
    * Um einem vorhandenen Übersetzungsprojekt ein neues Wörterbuch hinzuzufügen, wählen Sie die Option **[!UICONTROL Zu vorhandenem Übersetzungsprojekt hinzufügen]** aus und wählen Sie ein **[!UICONTROL vorhandenes Übersetzungsprojekt]** aus.
 1. Geben Sie im Feld **Zielsprachen** ein Gebietsschema an (beispielsweise `German(de)`). Sie können mehrere Gebietsschemata angeben. Das Formular wird in alle im Feld **Zielsprachen** angegebenen Gebietsschemata übersetzt. Klicken Sie auf **Fertig**.
 1. Klicken Sie im Dialogfeld „Wörterbuch hinzugefügt“ auf **Projekte öffnen**.
-1. Klicken Sie im Bildschirm &quot;Projekte&quot;auf das erstellte Projekt. Klicken Sie beispielsweise auf den Titel **Referenz-Site Behörde – Gebietsschema Deutsch**.
+1. Klicken Sie auf dem Bildschirm „Projekte“ auf das erstellte Projekt. Klicken Sie beispielsweise auf den Titel **Referenz-Site Behörde – Gebietsschema Deutsch**.
 1. Klicken Sie auf der Kachel **Übersetzungsauftrag** auf das Symbol ![aem62forms_downarrow](assets/aem62forms_downarrow.png) und dann auf **Start**. Der Status der Kachel ändert sich in „Entwurf“. Bei Fertigstellung der Übersetzung ändert sich der Status in **Genehmigt**. Aktualisieren Sie die Seite nach einigen Minuten und überprüfen Sie den Status.
 
    ![Übersetzung starten](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
@@ -68,11 +68,11 @@ Führen Sie die folgenden Schritte zum Lokalisieren eines Formulars und seines D
    * Um einem vorhandenen Übersetzungsprojekt ein neues Wörterbuch hinzuzufügen, wählen Sie die Option **[!UICONTROL Zu vorhandenem Übersetzungsprojekt hinzufügen]** aus und wählen Sie ein **[!UICONTROL vorhandenes Übersetzungsprojekt]** aus.
 1. Geben Sie im Feld **Zielsprachen** ein Gebietsschema an (beispielsweise `German(de)`). Sie können mehrere Gebietsschemata angeben. Das Formular wird in alle im Feld **Zielsprachen** angegebenen Gebietsschemata übersetzt. Klicken Sie auf **Fertig**.
 1. Klicken Sie im Dialogfeld „Wörterbuch hinzugefügt“ auf **Projekte öffnen**.
-1. Klicken Sie im Bildschirm &quot;Projekte&quot;auf das erstellte Projekt. Klicken Sie beispielsweise auf den Titel **Referenz-Site Behörde – Gebietsschema Deutsch**.
+1. Klicken Sie auf dem Bildschirm „Projekte“ auf das erstellte Projekt. Klicken Sie beispielsweise auf den Titel **Referenz-Site Behörde – Gebietsschema Deutsch**.
 1. Klicken Sie am unteren Rand der Kachel **Zusammenfassung** auf die **Auslassungspunkte**. Der Bildschirm „Eigenschaften des Übersetzungsprojekts“ wird geöffnet.
 1. Öffnen Sie oben auf dem Bildschirm **Eigenschaften des Übersetzungsprojekts** die Registerkarte **[!UICONTROL Erweitert]**. Wählen Sie für das **[!UICONTROL Übersetzungsfeld]** die Option **[!UICONTROL Menschliche Übersetzung]** aus. Klicken Sie oben auf dem Bildschirm auf **Speichern und schließen**.
 1. Klicken Sie auf der Kachel **Übersetzungsauftrag** auf das Symbol ![aem62forms_downarrow](assets/aem62forms_downarrow.png) und dann auf **Exportieren**. Klicken Sie im Dialogfeld „Exportieren“ auf die Option „Exportierte Datei herunterladen“. Es wird eine ZIP-Datei heruntergeladen.
-   ![Übersetzungsdatei exportieren](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
+   ![Exportieren einer Übersetzungsdatei](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. Entpacken Sie die heruntergeladene ZIP-Datei. Der extrahierte Ordner hat zwei Dateien:
    * translation_export_summary.xml
    * [form-fields-file].xml.

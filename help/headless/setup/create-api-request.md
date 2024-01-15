@@ -5,7 +5,7 @@ exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '652'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie, wie Sie die GraphQL-API für die Headless-Bereitstellung von Inhal
 
 * Mit der [GraphQL-API](/help/headless/graphql-api/content-fragments.md) können Sie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellen. Diese API bietet die zuverlässigsten Funktionen zum Abfragen und Verwenden von Inhaltsfragmentinhalten.
    * Um die API zu verwenden, [definieren Sie Endpunkte und aktivieren Sie sie in AEM](/help/headless/graphql-api/graphql-endpoint.md), und aktivieren Sie gegebenenfalls die [installierte GraphiQL-Oberfläche](/help/headless/graphql-api/graphiql-ide.md).
-* [Die Assets-REST-API](/help/assets/content-fragments/assets-api-content-fragments.md) ermöglicht das Erstellen und Ändern von Inhaltsfragmenten (und anderen Assets).
+* Mit der [Assets-REST-API](/help/assets/content-fragments/assets-api-content-fragments.md) können Sie Inhaltsfragmente (und andere Assets) erstellen und ändern.
 
 Der Rest dieses Handbuchs konzentriert sich auf den GraphQL-Zugriff und die Bereitstellung von Inhaltsfragmenten.
 
@@ -31,7 +31,7 @@ Bevor die GraphQL-APIs verwendet werden können, muss ein GraphQL-Endpunkt erste
 1. Wählen Sie **Erstellen** aus.
 1. Das Dialogfeld **Neuen GraphQL-Endpunkt erstellen** wird geöffnet. Hier können Sie Folgendes angeben:
    * **Name**: Name des Endpunkts; Sie können einen beliebigen Text eingeben.
-   * **Verwenden des von bereitgestellten GraphQL-Schemas**: Wählen Sie über die Dropdownliste die gewünschte Konfiguration aus.
+   * **GraphQL-Schema verwenden, das bereitgestellt wurde von**: Verwenden Sie die Dropdown-Liste, um die gewünschte Konfiguration auszuwählen.
 1. Bestätigen Sie mit **Erstellen**.
 1. In der Konsole wird nun ein **Pfad** basierend auf der zuvor erstellten Konfiguration angezeigt. Dieser Pfad wird zum Ausführen von GraphQL-Abfragen verwendet.
 
@@ -63,7 +63,7 @@ GraphiQL ist eine IDE, die in Ihrer AEM-Umgebung integriert ist; sie wird verfü
 
    ![GraphiQL-Editor](../assets/graphiql.png)
 
-1. Angenommen, das von Ihnen erstellte Modell `person` wurde mit den Feldern `firstName`, `lastName` und `position` aufgerufen. Wir können dann eine einfache Abfrage erstellen, um den Inhalt unseres Inhaltsfragments abzurufen.
+1. Angenommen, das von uns erstellte Modell `person` wurde mit den Feldern `firstName`, `lastName` und `position` aufgerufen. Wir können dann eine einfache Abfrage erstellen, um den Inhalt unseres Inhaltsfragments abzurufen.
 
    ```text
    query 

@@ -5,7 +5,7 @@ exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -29,7 +29,7 @@ Gehen Sie wie folgt vor, um von Screens Content Provider aus Video-Ausgabedarste
 
 1. Klicken Sie in der linken Navigationsleiste auf den Abschnitt „Tools“, dann auf **Assets** und dann auf **Verarbeitungsprofile**.
 
-   ![Klicken Sie auf Verarbeitungsprofile](/help/screens-cloud/assets/configure/screens-cp-3.png)
+   ![Klicken auf „Verarbeitungsprofile“](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
 1. Klicken Sie auf **Erstellen**, um ein Verarbeitungsprofil zu erstellen.
 
@@ -37,15 +37,15 @@ Gehen Sie wie folgt vor, um von Screens Content Provider aus Video-Ausgabedarste
 
 1. Geben Sie den **Namen** ein, z. B. **ScreensVerarbeitungsProfil**.
 
-   ![Dialogfeld &quot;Verarbeitungsprofil&quot;mit hervorgehobenem Feld &quot;Name&quot;](/help/screens-cloud/assets/configure/screens-video-3.png)
+   ![Das Dialogfeld „Verarbeitungsprofil“ mit hervorgehobenem Feld „Name“.](/help/screens-cloud/assets/configure/screens-video-3.png)
 
-1. Navigieren Sie zur Registerkarte **Video**, um eine Videocodierung hinzuzufügen, und klicken Sie dann auf **Neue hinzufügen**.
+1. Navigieren Sie zur Registerkarte **Video**, um eine Videokodierung hinzuzufügen, und klicken Sie dann auf **Neue hinzufügen**.
 
-   ![Dialogfeld &quot;Verarbeitungsprofil&quot;mit hervorgehobener Schaltfläche &quot;Neu hinzufügen&quot;](/help/screens-cloud/assets/configure/screens-video-4a.png)
+   ![Dialogfeld „Verarbeitungsprofil“ mit hervorgehobener Schaltfläche „Neu hinzufügen“.](/help/screens-cloud/assets/configure/screens-video-4a.png)
 
-1. Geben Sie den **Codierungsnamen** wie z. B. **screens-fullhd** und die **Bitrate** als **2500** ein.
+1. Geben Sie den **Kodierungsnamen** wie z. B. **screens-fullhd** und die **Bitrate** als **2500** ein.
 
-   ![Dialogfeld &quot;Verarbeitungsprofil&quot;mit hervorgehobener Schaltfläche Speichern.](/help/screens-cloud/assets/configure/screens-video-4.png)
+   ![Dialogfeld „Verarbeitungsprofil“ mit hervorgehobener Schaltfläche „Speichern“.](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
    >Verwenden Sie den Codierungsnamen, der mit „screens-“ beginnt. Nur bei diesen Videoausgabedarstellungen wird davon ausgegangen, dass sie das Videoerlebnis in Screens as a Cloud Service wiedergeben. Geben Sie die Bitrate ein, mit der Ihre Videos funktionieren (2500 kbps für Videos mit 720 px und 5000 kbps für 1080 px).

@@ -1,6 +1,6 @@
 ---
-title: Wie verwalte ich Formulare, Anwendungen und Aufgaben im AEM Posteingang?
-description: Mit dem AEM-Posteingang können Sie formularzentrierte Workflows starten, indem Sie Anwendungen senden und Aufgaben verwalten.
+title: Wie verwalte ich Formulare, Anwendungen und Aufgaben im AEM-Posteingang?
+description: Mit dem AEM-Posteingang können Sie formularzentrierte Workflows starten, indem Sie Anwendungen übermitteln und Aufgaben verwalten.
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
@@ -8,20 +8,20 @@ discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1084'
-ht-degree: 69%
+ht-degree: 89%
 
 ---
 
 
 # Verwalten von Formularanwendungen und Aufgaben im AEM-Posteingang {#manage-forms-applications-and-tasks-in-aem-inbox}
 
-Eine der vielen Möglichkeiten, einen Forms-orientierten Workflow zu starten oder auszulösen, besteht darin, Anwendungen im AEM-Posteingang zu verwenden. Sie müssen eine Workflow-Anwendung erstellen, um eine Forms Workflow als Anwendung im Posteingang verfügbar zu machen. Weitere Informationen zu Workflow-Anwendungen und anderen Möglichkeiten zum Starten von Forms-Workflows finden Sie unter [Starten eines formularzentrierten Workflow auf OSGi](aem-forms-workflow.md#launch).
+Eine der vielen Möglichkeiten, einen Forms-orientierten Workflow zu starten oder auszulösen, besteht darin, Anwendungen im AEM-Posteingang zu verwenden. Sie müssen eine Workflow-Anwendung erstellen, um einen Forms-Workflow als Anwendung im Posteingang verfügbar zu machen. Weitere Informationen zu Workflow-Anwendungen und anderen Möglichkeiten zum Starten von Forms-Workflows finden Sie unter [Starten eines formularzentrierten Workflow auf OSGi](aem-forms-workflow.md#launch).
 
-Darüber hinaus führt der AEM-Posteingang Benachrichtigungen und Aufgaben aus verschiedenen AEM-Komponenten einschließlich Forms-Workflows zusammen. Wenn eine Forms Workflow ausgelöst wird, die einen Schritt &quot;Aufgabe zuweisen&quot;enthält, wird die zugehörige Anwendung im Posteingang des Verantwortlichen als Aufgabe aufgelistet. Wenn eine ganze Gruppe zugewiesen ist, wird die Aufgabe im Posteingang aller Gruppenmitglieder angezeigt, bis eine Person die Aufgabe annimmt oder delegiert.
+Darüber hinaus führt der AEM-Posteingang Benachrichtigungen und Aufgaben aus verschiedenen AEM-Komponenten einschließlich Forms-Workflows zusammen. Wenn ein Forms-Workflow ausgelöst wird, der einen Schritt zur Zuweisung einer Aufgabe enthält, wird die dazugehörige Anwendung als Aufgabe im Posteingang der zugewiesenen Person angezeigt. Wenn eine ganze Gruppe zugewiesen ist, wird die Aufgabe im Posteingang aller Gruppenmitglieder angezeigt, bis eine Person die Aufgabe annimmt oder delegiert.
 
 Die Benutzeroberfläche des Posteingangs bietet Listen- und Kalenderansichten zum Anzeigen von Aufgaben. Sie können außerdem die Einstellungen für die Anzeige konfigurieren. Sie können Aufgaben nach verschiedenen Parametern filtern. Weitere Informationen zum Anzeigen und Filtern finden Sie unter [Ihr Posteingang](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=de#inbox-in-the-header).
 
-Zusammenfassend können Sie mit dem Posteingang eine Anwendung erstellen und zugewiesene Aufgaben verwalten.
+Kurz zusammengefasst: Mit dem Posteingang können Sie neue Anwendungen erstellen und zugewiesene Aufgaben verwalten.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Zusammenfassend können Sie mit dem Posteingang eine Anwendung erstellen und zug
 
 ## Aufgaben verwalten {#manage-tasks}
 
-Wenn Sie ein Forms-Workflow-Trigger sind und ein Bevollmächtigter oder Mitglied der Bevollmächtigten-Gruppe sind, wird eine Aufgabe in Ihrem Posteingang angezeigt. Sie können Aufgabendetails anzeigen und verfügbare Aktionen für die Aufgabe im Posteingang durchführen.
+Wenn ein Forms-Workflow ausgelöst wird und Sie eine bevollmächtigte Person sind oder zu einer bevollmächtigten Gruppe gehören, wird eine Aufgabe in Ihrem Posteingang angezeigt. Sie können im Posteingang Aufgabendetails anzeigen und verfügbare Aktionen für die Aufgabe ausführen.
 
 ### Aufgaben annehmen oder delegieren {#claim-or-delegate-tasks}
 
@@ -57,10 +57,10 @@ Aufgaben, die einer Gruppe zugewiesen sind, werden im Posteingang aller Gruppenm
 
 ### Aufgabendetails anzeigen und Aktionen für Aufgaben durchführen {#view-details-and-perform-actions-on-tasks}
 
-Wenn Sie eine Aufgabe öffnen, können Sie Aufgabendetails anzeigen und verfügbare Aktionen ausführen. Die für eine Aufgabe verfügbaren Aktionen werden im Schritt Aufgabe zuweisen der zugehörigen Forms Workflow definiert.
+Wenn Sie eine Aufgabe öffnen, können Sie Aufgabendetails anzeigen und verfügbare Aktionen ausführen. Die für eine Aufgabe verfügbaren Aktionen werden im Schritt der Aufgabenzuweisung des dazugehörigen Forms-Workflows definiert.
 
 1. Wählen Sie diese Option aus, um die Miniaturansicht der Aufgabe auszuwählen. Die Optionen zum Öffnen oder Delegieren der ausgewählten Aufgabe werden oben angezeigt.
-1. Auswählen **Öffnen** , um Aufgabendetails und verfügbare Aktionen anzuzeigen. Die detaillierte Aufgabenansicht wird geöffnet. In dieser Ansicht können Sie Aufgabendetails anzeigen und eine Aufgabe bearbeiten.
+1. Wählen Sie **Öffnen**, um Aufgabendetails und verfügbare Aktionen anzuzeigen. Die detaillierte Aufgabenansicht wird geöffnet. In dieser Ansicht können Sie Aufgabendetails anzeigen und an der Aufgabe arbeiten.
 
    >[!NOTE]
    >
@@ -93,13 +93,13 @@ Darüber hinaus zeigt die Registerkarte den Aufgabenverlauf für jede abgeschlos
 
 #### Aktionssymbolleiste {#actions-toolbar}
 
-In der Aktionssymbolleiste werden alle verfügbaren Optionen für die Aufgabe angezeigt. Während &quot;Speichern&quot;, &quot;Zurücksetzen&quot;und &quot;Delegieren&quot;Standardaktionen sind, werden andere verfügbare Aktionen im [Schritt &quot;Aufgabe zuweisen&quot;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=de#extending-aem). Im obigen Beispiel sind „Genehmigen“ und „Ablehnen“ im Workflow konfiguriert.
+In der Aktionssymbolleiste werden alle verfügbaren Optionen für die Aufgabe angezeigt. Speichern, Zurücksetzen und Delegieren sind Standardaktionen, andere verfügbare Aktionen werden dagegen im Schritt [Aufgabe zuweisen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=de#extending-aem) konfiguriert. Im obigen Beispiel sind „Genehmigen“ und „Ablehnen“ im Workflow konfiguriert.
 
-Während Sie mit der Aufgabe arbeiten, wird sie im Workflow weiter ausgeführt.
+Während Sie an der Aufgabe arbeiten, schreitet sie im Workflow weiter voran.
 
 ### Anzeigen der abgeschlossenen Aufgaben {#view-completed-tasks}
 
-Im AEM-Posteingang werden nur aktive Aufgaben angezeigt. Abgeschlossene Aufgaben werden nicht in der Liste angezeigt. Sie können jedoch Posteingangsfilter verwenden, um Aufgaben anhand verschiedener Parameter zu filtern, z. B. Aufgabentyp, Status, Start- und Enddatum. Abgeschlossene Aufgaben anzeigen:
+Im AEM-Posteingang werden nur aktive Aufgaben angezeigt. Abgeschlossene Aufgaben werden nicht in der Liste angezeigt. Sie können jedoch mithilfe von Posteingangsfiltern Aufgaben basierend auf verschiedenen Parametern filtern, z. B. Aufgabentyp, Status oder Start- und Enddatum. Abgeschlossene Aufgaben anzeigen:
 
 1. Wählen Sie in AEM Posteingang die Option ![Umschalten zwischen Seitenbereich1 und Seitenbereich](assets/toggle-side-panel1.png) , um die Filterauswahl zu öffnen.
 1. Auswählen **[!UICONTROL Aufgabenstatus]** Akkordeon und wählen Sie **[!UICONTROL Fertig]**. Alle Ihre abgeschlossenen Aufgaben werden angezeigt.
@@ -120,9 +120,9 @@ Auf der Registerkarte **[!UICONTROL Workflow-Details]** werden alle Schritte des
 
 ## Fehlerbehebung {#troubleshooting-workflows}
 
-### Elemente im Zusammenhang mit AEM Workflow können nicht in AEM Posteingang angezeigt werden. {#unable-to-see-aem-worklow-items}
+### Elemente eines AEM-Workflows werden im AEM-Posteingang nicht angezeigt {#unable-to-see-aem-worklow-items}
 
-Ein Eigentümer eines Workflow-Modells kann Elemente im Zusammenhang mit AEM Workflow in AEM Posteingang nicht anzeigen. Um das Problem zu beheben, fügen Sie die unten aufgeführten Indizes zu Ihrem AEM-Repository hinzu und erstellen Sie den Index neu.
+Die Eigentümerin bzw. der Eigentümer eines Workflow-Modells ist nicht in der Lage, die Elemente eines AEM-Workflows im AEM-Posteingang anzusehen. Um das Problem zu beheben, fügen Sie die unten aufgeführten Indizes zu Ihrem AEM-Repository hinzu und erstellen Sie den Index neu.
 
 1. Verwenden Sie eine der folgenden Methoden, um Indizes hinzuzufügen:
 
