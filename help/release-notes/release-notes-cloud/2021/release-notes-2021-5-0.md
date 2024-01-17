@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.5.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.5.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 720430af374636878b42ce346ca9c61ab089709b
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 90%
+source-wordcount: '1355'
+ht-degree: 92%
 
 ---
 
@@ -31,7 +31,7 @@ Die folgende Version (2021.6.0) wird am 28. Juni 2021 veröffentlicht.
 
 * [Vorabveröffentlichungskanal](/help/release-notes/prerelease.md): Sehen Sie sich kommende Funktionen einen ganzen Monat vor deren Veröffentlichung in der Vorschau an.
 
-* [Veraltete APIs](/help/release-notes/deprecated-apis.md): Die neueste Liste der veralteten APIs für Adobe Experience Manager as a Cloud Service ist verfügbar.
+* [Veraltete APIs](/help/release-notes/deprecated-removed-features.md): Die neueste Liste der veralteten APIs für Adobe Experience Manager as a Cloud Service ist verfügbar.
 
 * [Build Analyzer-Maven-Plug-in des AEM as a Cloud Service-SDK](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=de): Aktualisieren Sie Ihre Maven-Projekte auf die neueste Version, die eine Prüfung auf veraltete Java-APIs sowie weitere Verbesserungen umfasst.
 
@@ -106,7 +106,7 @@ Die nächste Version ist für den 3. Juni 2021 geplant.
 
 ### Neue Funktionen {#what-is-new-may}
 
-* Die Qualitätsregel PackageOverlaps erkennt jetzt Fälle, in denen dasselbe Paket mehrmals bereitgestellt wurde, d. h. an mehreren eingebetteten Speicherorten in demselben bereitgestellten Paketsatz.
+* Die PackageOverlaps-Qualitätsregel erkennt jetzt Fälle, in denen dasselbe Paket mehrmals bereitgestellt wurde, d. h. an mehreren eingebetteten Speicherorten, im selben bereitgestellten Paketsatz.
 
 * Der Repository-Endpunkt in der öffentlichen API enthält jetzt die Git-URL.
 
