@@ -2,10 +2,10 @@
 title: Cloud Manager-Umgebungsvariablen
 description: Standardumgebungsvariablen können über Cloud Manager konfiguriert und verwaltet und der Laufzeitumgebung zur Verfügung gestellt werden, damit sie in der OSGi-Konfiguration verwendet werden können.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 85%
+source-wordcount: '992'
+ht-degree: 98%
 
 ---
 
@@ -37,10 +37,10 @@ Typische Anwendungsfälle für die Verwendung von Umgebungsvariablen sind:
 >Sie müssen Mitglied der [**Implementierungs-Manager**-Rolle](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) sein, um Umgebungsvariablen hinzufügen oder ändern zu können.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Adobe Cloud Manager an.
-1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Wählen Sie den zu verwaltenden Ordner aus.
+1. Im **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** auswählen, wählen Sie den Bereich aus, den Sie verwalten möchten.
 1. Wählen Sie die Registerkarte **Umgebungen** für das ausgewählte Programm und wählen Sie dann im linken Navigationsfenster die Umgebung aus, für die Sie eine Umgebungsvariable erstellen möchten.
 1. Wählen Sie in den Details der Umgebung die Registerkarte **Konfiguration** und dann **Hinzufügen** aus, um das Dialogfeld **Umgebungskonfiguration** zu öffnen.
-   * Wenn Sie zum ersten Mal eine Umgebungsvariable hinzufügen, wird eine **Konfiguration hinzufügen** in der Mitte der Seite. Sie können diese Schaltfläche oder **Hinzufügen** verwenden, um das Dialogfeld **Umgebungskonfiguration** zu öffnen.
+   * Wenn Sie zum ersten Mal eine Umgebungsvariable hinzufügen, wird die Schaltfläche **Konfiguration hinzufügen** in der Mitte der Seite angezeigt. Sie können diese Schaltfläche oder **Hinzufügen** verwenden, um das Dialogfeld **Umgebungskonfiguration** zu öffnen.
 
    ![Registerkarte „Konfiguration“](assets/configuration-tab.png)
 
@@ -65,20 +65,20 @@ Ein Indikator mit dem Status **Aktualisierung läuft** wird oben in der Tabelle 
 
 >[!TIP]
 >
->Wenn Sie mehrere Variablen hinzufügen möchten, wird empfohlen, die erste Variable hinzuzufügen. Verwenden Sie dann die **Hinzufügen** im **Umgebungskonfiguration** -Dialogfeld, um die zusätzlichen Variablen hinzuzufügen. Auf diese Weise können Sie sie mit einer Aktualisierung zur Umgebung hinzufügen.
+>Wenn Sie mehrere Variablen hinzufügen möchten, wird empfohlen, die erste Variable hinzuzufügen, und dann die Schaltfläche **Hinzufügen** im Dialogfeld **Umgebungskonfiguration** zu verwenden, um die zusätzlichen Variablen hinzuzufügen. Auf diese Weise können Sie sie mit einer Aktualisierung zur Umgebung hinzufügen.
 
 ## Aktualisieren von Umgebungsvariablen {#update-variables}
 
 Nachdem Sie Umgebungsvariablen erstellt haben, können Sie diese mithilfe der Schaltfläche **Hinzufügen/Aktualisieren** aktualisieren, um das Dialogfeld **Umgebungskonfiguration** zu starten.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Adobe Cloud Manager an.
-1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Wählen Sie den zu verwaltenden Ordner aus.
+1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Wählen Sie dasjenige aus, das Sie verwalten möchten.
 1. Wählen Sie die Registerkarte **Umgebungen** für das ausgewählte Programm aus und wählen Sie dann im linken Navigationsfenster die Umgebung aus, für die Sie eine Umgebungsvariable erstellen möchten.
 1. Wählen Sie in den Details der Umgebung die Registerkarte **Konfiguration** aus und wählen Sie oben rechts **Hinzufügen/Aktualisieren** aus, um das Dialogfeld **Umgebungskonfiguration** zu öffnen.
 
    ![Schaltfläche „Hinzufügen/Aktualisieren“ für Variablen](assets/add-update-variables.png)
 
-1. Verwenden Sie die Suchschaltfläche in der letzten Spalte der Zeile der Variable, die Sie ändern möchten, und wählen Sie **Bearbeiten** oder **Löschen**.
+1. Verwenden Sie die Schaltfläche mit den Auslassungspunkten in der letzten Spalte der Zeile der Variablen, die Sie ändern möchten, und wählen Sie **Bearbeiten** oder **Löschen** aus.
 
    ![Variable bearbeiten oder löschen](assets/edit-delete-variable.png)
 
@@ -88,13 +88,13 @@ Nachdem Sie Umgebungsvariablen erstellt haben, können Sie diese mithilfe der Sc
 
    ![Variable bearbeiten](assets/edit-variable.png)
 
-1. Nachdem Sie die erforderlichen Konfigurationsänderungen vorgenommen haben, wählen Sie **Speichern**.
+1. Nachdem Sie die erforderlichen Konfigurationsänderungen vorgenommen haben, wählen Sie **Speichern** aus.
 
 [Wie beim Hinzufügen von Variablen](#add-variables) wird ein Indikator mit dem Status **Aktualisieren** oben in der Tabelle und neben den neu aktualisierten Variablen angezeigt, um anzugeben, dass die Umgebung mit der Konfiguration aktualisiert wird. Nach Abschluss sind die aktualisierten Umgebungsvariablen in der Tabelle sichtbar.
 
 >[!TIP]
 >
->Wenn Sie mehrere Variablen aktualisieren möchten, wird empfohlen, die Variable **Umgebungskonfiguration** Dialogfeld zum gleichzeitigen Aktualisieren aller erforderlichen Variablen vor dem Tippen oder Klicken **Speichern**. Auf diese Weise können Sie sie mit einer Aktualisierung zur Umgebung hinzufügen.
+>Wenn Sie mehrere Variablen aktualisieren möchten, wird empfohlen, das Dialogfeld **Umgebungskonfiguration** zu verwenden, um alle erforderlichen Variablen gleichzeitig zu aktualisieren, bevor Sie auf **Speichern** tippen bzw. klicken. Auf diese Weise können Sie sie mit einer Aktualisierung zur Umgebung hinzufügen.
 
 ## Verwenden von Umgebungsvariablen {#using}
 
@@ -120,7 +120,7 @@ In der Authoring-, Vorschau- und Veröffentlichungsumgebung können sowohl regul
 
 Im [Dispatcher können nur reguläre Umgebungsvariablen verwendet werden.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) Geheimnisse können nicht verwendet werden.
 
-Umgebungsvariablen können jedoch nicht in `IfDefine` Richtlinien.
+Allerdings können Umgebungsvariablen nicht in `IfDefine`-Richtlinien verwendet werden.
 
 >[!TIP]
 >

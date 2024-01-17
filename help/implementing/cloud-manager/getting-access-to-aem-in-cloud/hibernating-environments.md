@@ -2,10 +2,10 @@
 title: Ruhezustand und Aufheben des Ruhezustands von Sandbox-Umgebungen
 description: Erfahren Sie, wie die Umgebungen eines Sandbox-Programms automatisch in den Ruhezustand übergehen und wie Sie den Ruhezustand wieder aufheben können.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 85%
+source-wordcount: '695'
+ht-degree: 94%
 
 ---
 
@@ -31,7 +31,7 @@ Gehen Sie wie folgt vor, um Ihre Sandbox-Programmumgebungen manuell in den Ruhez
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Klicken Sie auf das Programm, das Sie in den Ruhezustand versetzen möchten, um die Details anzuzeigen.
+1. Im **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** auf den Bildschirm tippen oder klicken Sie auf das Programm, das Sie in den Ruhezustand versetzen möchten, um dessen Details anzuzeigen.
 
 1. Klicken Sie auf der Karte **Umgebungen** auf die Schaltfläche mit den Auslassungspunkten und wählen Sie **Entwicklerkonsole** aus.
 
@@ -47,11 +47,11 @@ Gehen Sie wie folgt vor, um Ihre Sandbox-Programmumgebungen manuell in den Ruhez
 
    ![Bestätigen des Ruhezustands](assets/hibernate-2.png)
 
-Wenn der Ruhezustand erfolgreich war, wird die Benachrichtigung zum Abschluss des Ruhezustands für Ihre Umgebung im **Entwicklerkonsole** angezeigt.
+Nach erfolgreicher Aktivierung des Ruhezustands wird im Bildschirm **Developer Console** eine Benachrichtigung zur Fertigstellung des Ruhezustands für Ihre Umgebung angezeigt.
 
 ![Ruhezustand – Bestätigung](assets/hibernate-4.png)
 
-In der Entwicklerkonsole können Sie auch auf das **Umgebungen** -Link in den Breadcrumbs über dem **Pod** Dropdown-Liste für eine Liste der Umgebungen, die in den Ruhezustand versetzt werden sollen.
+In der Developer Console können Sie auch auf den Link **Umgebungen** in den Breadcrumbs oberhalb der Dropdown-Liste **Pod** klicken, um eine Liste der Umgebungen zu erhalten, die in den Ruhezustand versetzt werden sollen.
 
 ![Liste der Umgebungen, die in den Ruhezustand versetzt werden sollen](assets/hibernate-1b.png)
 
@@ -65,13 +65,13 @@ In der Entwicklerkonsole können Sie auch auf das **Umgebungen** -Link in den Br
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Klicken Sie auf das Programm, das Sie in den Ruhezustand versetzen möchten, um die Details anzuzeigen.
+1. Im **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** auf den Bildschirm tippen oder klicken Sie auf das Programm, dessen Ruhezustand Sie deaktivieren möchten, um die Details anzuzeigen.
 
 1. Klicken Sie auf der Karte **Umgebungen** auf die Schaltfläche mit den Auslassungspunkten und wählen Sie **Entwicklerkonsole** aus.
 
    * Siehe [Aufrufen der Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console), um weitere Informationen zur Developer Console zu erhalten.
 
-1. Klicks **Ruhezustand deaktivieren**.
+1. Klicken Sie auf **Aus Ruhezustand holen**.
 
    ![Schaltfläche „Ruhezustand aufheben“](assets/de-hibernation-img1.png)
 
@@ -88,7 +88,7 @@ In der Entwicklerkonsole können Sie auch auf das **Umgebungen** -Link in den Br
    ![Abschluss der Aufhebung des Ruhezustands](assets/de-hibernation-img4.png)
 
 
-In der Entwicklerkonsole können Sie auch auf das **Umgebungen** -Link in den Breadcrumbs über dem **Pod** Dropdown-Liste für eine Liste der Umgebungen, die den Ruhezustand deaktivieren sollen.
+In der Developer Console können Sie auch auf den Link **Umgebungen** in den Breadcrumbs oberhalb der Dropdown-Liste **Pod** klicken, um eine Liste der Umgebungen, die aus dem Ruhezustand geholt werden soll, zu erhalten.
 
 ![Liste der im Ruhezustand befindlichen Pods](assets/de-hibernate-1b.png)
 

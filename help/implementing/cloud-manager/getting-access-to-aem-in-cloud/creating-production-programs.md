@@ -2,10 +2,10 @@
 title: Erstellen von Produktionsprogrammen
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Produktionsprogramm für das Hosten von Live-Traffic erstellen.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 73%
+source-wordcount: '599'
+ht-degree: 88%
 
 ---
 
@@ -22,7 +22,7 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Klicks **Programm hinzufügen** oben rechts im Bildschirm.
+1. Im **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** Bildschirm, tippen oder klicken Sie **Programm hinzufügen** in der oberen rechten Ecke des Bildschirms.
 
    ![Cloud Manager-Landingpage](assets/log-in.png)
 
@@ -30,15 +30,13 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen.
 
    ![Assistent zum Erstellen von Programmen](assets/create-production-program.png)
 
-1. Optional können Sie ein Bild zum Programm hinzufügen, indem Sie eine Bilddatei per Drag-and-Drop auf das Ziel **Programmbild hinzufügen** ziehen oder darauf klicken, um ein Bild aus einem Dateibrowser auszuwählen. Klicken Sie auf **Weiter**.
+1. Optional können Sie ein Bild zum Programm hinzufügen, indem Sie eine Bilddatei per Drag-and-Drop auf das Ziel **Programmbild hinzufügen** ziehen oder darauf klicken, um ein Bild aus einem Datei-Browser auszuwählen. Wählen Sie **Weiter**.
 
-1. Wenn Sie über die erforderlichen Berechtigungen verfügen, wird die **Sicherheit** angezeigt wird und die Option zum Aktivieren **HIPAA** und/oder **WAF-DDOS-Schutz** für Ihr Produktionsprogramm. Kreuzen Sie bei Bedarf die entsprechenden Optionen des Programms an und wählen Sie die Option **Weiter**.
+1. Wenn Sie über die erforderlichen Berechtigungen verfügen, wird die Registerkarte **Sicherheit** angezeigt. Dort können Sie für Ihr Produktionsprogramm die Optionen **HIPAA** und/oder **WAF-DDOS-Schutz** aktivieren. Aktivieren Sie ggf. die entsprechenden Optionen für das Programm und wählen Sie dann **Weiter** aus.
 
-   * HIPAA kann nach der Programmerstellung nicht mehr aktiviert oder deaktiviert werden.
-      * Hier finden Sie [weitere Informationen](https://www.adobe.com/go/hipaa-ready) zur Implementierung der HIPAA-fähigen Lösung von Adobe.
-   * Nach der Aktivierung kann der WAF-DDOS-Schutz konfiguriert werden, indem eine [produktionsfremde Pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-
-   {{waf-limited-release}}
+   * Die HIPAA-Option kann nach der Programmerstellung weder aktiviert noch deaktiviert werden.
+      * Hier finden Sie [weitere Informationen](https://www.adobe.com/go/hipaa-ready) zur Implementierung einer HIPAA-fähigen Lösung von Adobe.
+   * Nach der Aktivierung kann der WAF-DDOS-Schutz durch Einrichten einer [produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) konfiguriert werden.
 
    ![Sicherheitsoptionen](assets/create-production-program-security.png)
 
@@ -49,7 +47,7 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen.
 
    ![Lösungen auswählen](assets/setup-prod-select.png)
 
-1. Klicken Sie auf den Pfeil vor den Lösungsnamen, um optionale Add-ons anzuzeigen, z. B. die **Handel** Add-On-Option unter **Sites**.
+1. Klicken Sie auf den Pfeil vor den Lösungsnamen, um optionale Add-ons anzuzeigen, z. B. die Add-on-Option **Commerce** unter **Sites**.
 
    ![Add-ons auswählen](assets/setup-prod-commerce.png)
 
@@ -60,7 +58,7 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen.
    ![Geplanten Tag der Live-Schaltung definieren](assets/setup-go-live.png)
 
    * Dieses Datum kann jederzeit bearbeitet werden.
-   * Dieses Datum dient nur zur informativen Verwendung und löst das Widget Tag der Veröffentlichung auf der Programmübersichtsseite aus, um produktinterne Links zur AEM as a Cloud Service Best Practice-Dokumentation bereitzustellen, die zeitnah auf Ihre Journey ausgerichtet ist und zu einem erfolgreichen und reibungslosen Veröffentlichungserlebnis führen.
+   * Dieses Datum dient nur zur informativen Verwendung und für Trigger das Widget &quot;Go Live&quot;im [**Programmübersicht** page](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) Bereitstellung produktinterner Links zur AEM as a Cloud Service Best Practice-Dokumentation in zeitnaher Abstimmung mit Ihrem Journey, was zu einem erfolgreichen und reibungslosen Go Live-Erlebnis führt.
 
 1. Klicken Sie auf **Erstellen**.
 
@@ -70,7 +68,7 @@ Ihr Programm wird von Cloud Manager erstellt, wird auf der Landingpage angezeigt
 
 ## Zugriff auf ein Programm {#accessing}
 
-1. Wenn Ihre Programmkarte auf der Landingpage angezeigt wird, wählen Sie die Suchschaltfläche aus, um die verfügbaren Menüoptionen anzuzeigen.
+1. Wenn Sie die Programmkarte auf der Landingpage sehen, wählen Sie die Schaltfläche mit den Auslassungspunkten aus, um die für Sie verfügbaren Menüoptionen anzuzeigen.
 
    ![Programmübersicht](assets/program-overview.png)
 
@@ -80,7 +78,7 @@ Ihr Programm wird von Cloud Manager erstellt, wird auf der Landingpage angezeigt
 
    ![Programmübersicht](assets/set-up-prod5.png)
 
-Wenn Sie zu einem anderen Programm wechseln oder zur Übersichtsseite zurückkehren müssen, um ein anderes Programm zu erstellen, klicken Sie auf den Programmnamen oben links im Bildschirm, um die **Navigieren Sie zu** -Option.
+Wenn Sie zu einem anderen Programm wechseln oder zur Übersichtsseite zurückkehren möchten, um ein anderes Programm zu erstellen, klicken Sie oben links auf dem Bildschirm auf den Namen Ihres Programms, um die Option **Navigieren zu** aufzurufen.
 
 ![Navigieren zu](assets/create-program-a1.png)
 

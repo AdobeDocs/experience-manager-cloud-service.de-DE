@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen
 description: Erfahren Sie mehr über die Arten von Umgebungen, die Sie erstellen können, und wie Sie sie für ein Cloud Manager-Projekt erstellen.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '2607'
-ht-degree: 81%
+source-wordcount: '2614'
+ht-degree: 96%
 
 ---
 
@@ -37,13 +37,13 @@ Die Fähigkeiten der einzelnen Umgebungen hängen von den Lösungen ab, die im [
 
 ## Hinzufügen einer Umgebung {#adding-environments}
 
-Um eine Umgebung hinzuzufügen oder zu bearbeiten, muss ein Benutzer Mitglied der **Business Owner** Rolle.
+Um eine Umgebung hinzufügen oder bearbeiten zu können, muss eine Benutzerin oder ein Benutzer Mitglied der Rolle **Geschäftsinhaber** sein.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Klicken Sie auf das Programm, für das Sie eine Umgebung hinzufügen möchten.
+1. Im **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** auf das Programm tippen oder klicken Sie auf das Programm, für das Sie eine Umgebung hinzufügen möchten.
 
-1. Auf der Seite **Programmübersicht** klicken Sie auf der Karte **Umgebungen** auf **Umgebung hinzufügen**, um eine Umgebung hinzuzufügen.
+1. Auf der Seite **[Programmübersicht](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview)** klicken Sie auf der Karte **Umgebungen** auf **Umgebung hinzufügen**, um eine Umgebung hinzuzufügen.
 
    ![Karte „Umgebung“](assets/no-environments.png)
 
@@ -87,9 +87,9 @@ Wenn Sie eine Umgebung hinzufügen, können Sie zusätzlich zur primären Region
 1. Wenn Sie die Option **Zusätzliche Veröffentlichungsregionen hinzufügen** wählen, wird eine neue Dropdown-Option **Zusätzliche Veröffentlichungsregionen** angezeigt.
 1. Wählen Sie in der Dropdown-Liste **Zusätzliche Veröffentlichungsregionen** eine zusätzliche Region aus.
 1. Die ausgewählte Region wird unter der Dropdown-Liste hinzugefügt, um ihre Auswahl anzugeben.
-   * Wählen Sie die `X` neben dem ausgewählten Bereich, damit Sie die Auswahl aufheben können.
+   * Wählen Sie das `X` neben der ausgewählten Region aus, um sie wieder abzuwählen.
 1. Wählen Sie eine andere Region aus der Dropdown-Liste **Zusätzliche Veröffentlichungsregionen**, um eine weitere Region hinzuzufügen.
-1. Auswählen **Speichern** wenn Sie bereit sind, Ihre Umgebung zu erstellen.
+1. Wählen Sie **Speichern** aus, wenn Sie bereit sind, Ihre Umgebung zu erstellen.
 
 ![Auswählen mehrerer Regionen](assets/select-multiple-regions.png)
 
@@ -115,7 +115,7 @@ Sie können auch zusätzliche Veröffentlichungsregionen entfernen. Sie können 
 
    ![Umgebung bearbeiten](assets/edit-environment.png)
 
-1. Auswählen **Speichern** , um die Änderungen zu speichern.
+1. Wählen Sie **Speichern** aus, um die Änderungen zu speichern.
 
 Änderungen an der Produktionsumgebung gelten sowohl für die Produktions- als auch für die Staging-Umgebung. Änderungen an mehreren Veröffentlichungsregionen können nur in der Produktionsumgebung bearbeitet werden.
 
@@ -175,37 +175,37 @@ Nach der Aktivierung können Sie Inhalte im Vorschau-Service veröffentlichen, i
 >
 >Ihre Umgebung muss auf AEM Version `2021.05.5368.20210529T101701Z` oder höher ausgeführt werden, um den Vorschau-Service nutzen zu können. Vergewissern Sie sich, dass in Ihrer Umgebung eine Aktualisierungs-Pipeline erfolgreich ausgeführt wurde, damit Sie den Vorschau-Service verwenden können.
 
-### Status weiterer Veröffentlichungsregionen {#additional-region-status}
+### Status zusätzlicher Veröffentlichungsregionen {#additional-region-status}
 
-Wenn Sie zusätzliche Veröffentlichungsregionen aktiviert haben, können Sie den Status dieser Regionen über die **Umgebungen** Karte.
+Wenn Sie zusätzliche Veröffentlichungsregionen aktiviert haben, können Sie den Status dieser Regionen über die Karte **Umgebungen** überprüfen.
 
-1. Im **Übersicht** Seite, suchen Sie die **Umgebungen** Karte.
+1. Suchen Sie auf der Seite **Übersicht** die Karte **Umgebungen**.
 
-1. Im **Umgebungen** -Karte, **Status** gibt an, ob es Probleme mit den konfigurierten zusätzlichen Veröffentlichungsregionen gibt. Klicken Sie auf **Info** für Details zu den Regionen.
+1. Auf der Karte **Umgebungen** gibt die Spalte **Status** an, ob es Probleme mit den konfigurierten zusätzlichen Veröffentlichungsregionen gibt. Klicken Sie auf das Symbol **Info**, um Details zu den Regionen zu erhalten.
 
-   ![Zusätzliche Statusinformationen zu Veröffentlichungsregionen auf der Karte Umgebungen](assets/additional-publish-region-status-environments-card.png)
+   ![Status von zusätzlichen Veröffentlichungsregionen auf der Karte „Umgebungen“](assets/additional-publish-region-status-environments-card.png)
 
-Alternativ können Sie über die **Umgebungen** Registerkarte.
+Alternativ können Sie auf die gleichen Informationen über die Registerkarte **Umgebungen** zugreifen.
 
-1. Im **Übersicht** Seite, wählen Sie die **Umgebungen** Registerkarte.
+1. Wählen Sie auf der Seite **Übersicht** die Registerkarte **Umgebungen** aus.
 
-1. Im **Umgebungen** wählen Sie im linken Navigationsbereich die Umgebung aus, die Sie abfragen möchten.
+1. Wählen Sie auf der Registerkarte **Umgebungen** im linken Navigationsbereich die Umgebung aus, die Sie abfragen möchten.
 
-1. Sobald eine Umgebung ausgewählt ist:
+1. Wenn eine Umgebung ausgewählt ist:
 
-   * Die **Umgebungsinformationen** zeigt an, welche Regionen für die ausgewählte Umgebung konfiguriert sind.
-   * Die **Status** Spalte **Umgebungssegmente** gibt an, ob es Probleme mit den konfigurierten zusätzlichen Veröffentlichungsregionen gibt. Bewegen Sie den Mauszeiger über den Status, um Details zu Problemen zu erhalten.
+   * Die Tabelle **Umgebungsinformationen** zeigt an, welche Regionen für die ausgewählte Umgebung konfiguriert sind.
+   * Die Spalte **Status** der Tabelle **Umgebungssegmente** gibt an, ob es Probleme mit den konfigurierten zusätzlichen Veröffentlichungsregionen gibt. Bewegen Sie den Mauszeiger über den Status, um Details zu Problemen zu erhalten.
 
-   ![Zusätzliche Statusinformationen zu Veröffentlichungsregionen auf der Registerkarte Umgebungen](assets/additional-publish-region-status-environments-tab.png)
+   ![Status von zusätzliche Veröffentlichungsregionen auf der Registerkarte „Umgebungen“](assets/additional-publish-region-status-environments-tab.png)
 
 Wenn Probleme mit zusätzlichen Veröffentlichungsregionen gemeldet werden:
 
-1. Sei geduldig! Cloud Manager versucht kontinuierlich, die Region wiederherzustellen, und kann jederzeit verfügbar sein.
-1. Wenn das Problem nach mehreren Stunden besteht, können Sie den zusätzlichen Veröffentlichungsbereich entfernen und ihn (entweder dieselbe Region oder eine andere Region) erneut hinzufügen, um eine vollständige Bereitstellung Trigger.
+1. Haben Sie Geduld. Cloud Manager versucht kontinuierlich, die Region wiederherzustellen, und sie kann jederzeit wieder verfügbar werden.
+1. Wenn das Problem nach mehreren Stunden weiterhin besteht, können Sie den zusätzlichen Veröffentlichungsbereich entfernen und ihn erneut hinzufügen (entweder dieselbe Region oder eine andere Region), um eine vollständige Bereitstellung auszulösen.
 
-Wie lange Sie darauf warten, dass sich das System von selbst erholt, bevor Sie zusätzliche Maßnahmen ergreifen, hängt von den Auswirkungen ab, die der Ausfall dieser Region auf Ihre Systeme hat.
+Wie lange Sie darauf warten sollten, dass sich das System von selbst erholt, bevor Sie zusätzliche Maßnahmen ergreifen, hängt von den Auswirkungen ab, die der Ausfall dieser Region auf Ihre Systeme hat.
 
-In jedem Fall [Traffic wird immer in die nächstgelegene Region weitergeleitet, die online ist.](/help/operations/additional-publish-regions.md) Wenn weiterhin Probleme auftreten, wenden Sie sich an die Adobe-Kundenunterstützung.
+In jedem Fall wird [Traffic immer in die nächstgelegene Region weitergeleitet, die online ist.](/help/operations/additional-publish-regions.md) Wenn weiterhin Probleme auftreten, wenden Sie sich an die Adobe-Kundenunterstützung.
 
 ## Aktualisieren von Umgebungen {#updating-dev-environment}
 
@@ -236,7 +236,7 @@ Diese Option ist auch verfügbar, indem Sie auf die Registerkarte **Umgebungen**
 
 ![Update-Option auf der Registerkarte „Umgebungen“](assets/environ-update3.png)
 
-Ein Benutzer mit der **Bereitstellungsmanager** oder **Business Owner** Rolle kann diese Option verwenden, um die mit dieser Umgebung verknüpfte Pipeline auf die neueste AEM zu aktualisieren.
+Eine Benutzerin bzw. ein Benutzer mit der Rolle **Bereitstellungs-Manager** oder **Geschäftsinhaber** kann diese Option verwenden, um die mit dieser Umgebung verknüpfte Pipeline auf die neueste AEM-Version zu aktualisieren.
 
 Nachdem die Pipeline-Version auf die neueste öffentlich verfügbare AEM-Version aktualisiert wurde, wird der Benutzer aufgefordert, die zugehörige Pipeline auszuführen, um die neueste Version in der Umgebung bereitzustellen.
 
@@ -250,7 +250,7 @@ Das Verhalten der Option **Aktualisieren** hängt von der Konfiguration und dem 
 
 ## Löschen von Entwicklungsumgebungen {#deleting-environment}
 
-Ein Benutzer mit der **Bereitstellungsmanager** oder **Business Owner** Rolle kann eine Entwicklungsumgebung löschen.
+Eine Benutzerin bzw. ein Benutzer mit der Rolle **Bereitstellungs-Manager** oder **Geschäftsinhaber** kann eine Entwicklungsumgebung löschen.
 
 Klicken Sie im Bildschirm **Überblick** des Programms auf der Karte **Umgebungen** auf die Schaltfläche mit den Auslassungspunkten für die Entwicklungsumgebung, die Sie löschen möchten.
 
@@ -289,7 +289,7 @@ Diese Option ist auch über die Registerkarte **Umgebung** des Fensters **Überb
 
 ## Lokale Anmeldung {#login-locally}
 
-Auswählen **Lokale Anmeldung** aus dem Suchmenü der Umgebung im **Umgebungen** -Karte, um sich lokal bei Adobe Experience Manager anzumelden.
+Wählen Sie **Lokale Anmeldung** aus dem Menü mit den Auslassungspunkten auf der Karte **Umgebungen** aus, um sich lokal bei Adobe Experience Manager anzumelden.
 
 ![Lokale Anmeldung](assets/environ-login-locally.png)
 
@@ -303,7 +303,7 @@ Benutzerdefinierte Domain-Namen werden in Cloud Manager for Sites-Programmen sow
 
 Um benutzerdefinierte Domain-Namen zu konfigurieren, gehen Sie zur Registerkarte **Umgebungen** und klicken Sie auf eine Umgebung, um die Details der Umgebung anzuzeigen.
 
-Benutzerinnen oder Benutzer müssen über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um einen benutzerdefinierten Domain-Namen in Cloud Manager hinzuzufügen.
+Benutzerinnen oder Benutzer müssen über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um einen benutzerdefinierten Domain-Namen in Cloud Manager hinzufügen zu können.
 
 ![Umgebungsdetails](assets/domain-names.png)
 
@@ -333,7 +333,7 @@ Die IP-Zulassungsliste muss in Cloud Manager vorhanden sein, damit sie auf eine 
 **So wenden Sie eine IP-Zulassungsliste an:**
 
 1. Navigieren Sie von der Registerkarte **Umgebungen** des Bildschirms **Überblick** des Programms zu der gewünschten Umgebung und dann zur Tabelle **IP-Zulassungslisten**.
-1. Verwenden Sie die Eingabefelder oben in der Tabelle der IP-Zulassungslisten-Zulassungsliste, damit Sie die IP- und den Autoren- oder Veröffentlichungsdienst auswählen können, auf den Sie sie anwenden möchten.
+1. Verwenden Sie die Eingabefelder oben in der Tabelle der IP-Zulassungsliste, um die IP-Zulassungsliste und den Author- oder Publish-Service auszuwählen, auf die Sie sie anwenden möchten.
 1. Klicken Sie auf **Anwenden** und bestätigen Sie Ihre Übermittlung.
 
 ### Aufheben der Anwendung einer IP-Zulassungsliste {#unapply-ip-allow-list}

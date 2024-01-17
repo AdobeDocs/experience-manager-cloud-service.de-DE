@@ -3,23 +3,23 @@ title: Konfigurieren von Produktions-Pipelines
 description: Erfahren Sie, wie Sie Produktions-Pipelines konfigurieren, um Ihren Code zu erstellen und in Produktionsumgebungen bereitzustellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 77%
+source-wordcount: '1418'
+ht-degree: 98%
 
 ---
 
 
 # Konfigurieren einer Produktions-Pipeline {#configure-production-pipeline}
 
-Erfahren Sie, wie Sie Produktions-Pipelines konfigurieren, um Ihren Code zu erstellen und in Produktionsumgebungen bereitzustellen. Eine Produktions-Pipeline stellt Code zuerst in der Staging-Umgebung bereit und stellt bei der Genehmigung denselben Code in der Produktionsumgebung bereit.
+Erfahren Sie, wie Sie Produktions-Pipelines konfigurieren, um Ihren Code zu erstellen und in Produktionsumgebungen bereitzustellen. Eine Produktions-Pipeline stellt Code zuerst in der Staging-Umgebung bereit. Nach der Genehmigung wird derselbe Code in der Produktionsumgebung bereitgestellt.
 
-Ein Benutzer muss über die Rolle **[Bereitstellungs-Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** verfügen, um Produktions-Pipelines konfigurieren zu können.
+Benutzende müssen über die Rolle **[Bereitstellungs-Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** verfügen, um Produktions-Pipelines konfigurieren zu können.
 
 >[!NOTE]
 >
->Eine Produktions-Pipeline kann erst eingerichtet werden, wenn die Programmerstellung abgeschlossen ist, ein Git-Repository über mindestens eine Verzweigung verfügt und ein Satz aus Produktions- und Staging-Umgebung erstellt wird.
+>Eine Produktions-Pipeline kann erst eingerichtet werden, wenn die Erstellung eines Programms abgeschlossen wurde, das Git-Repository über mindestens eine Verzweigung verfügt und ein Satz aus Produktions- und Staging-Umgebung erstellt wurde.
 
 Bevor Sie Code bereitstellen, müssen Sie Ihre Pipeline-Einstellungen über den [!UICONTROL Cloud Manager] konfigurieren.
 
@@ -35,9 +35,11 @@ Sobald Sie mit der Benutzeroberfläche von [!UICONTROL Cloud Manager] Ihr Progra
 >
 >Bevor Sie eine Frontend-Pipeline konfigurieren, lesen Sie den Abschnitt [Tour zur schnellen Erstellung einer AEM-Site](/help/journey-sites/quick-site/overview.md). Dort finden Sie eine durchgängige Anleitung über das benutzerfreundliche AEM-Tool zur schnellen Site-Erstellung. Diese Tour hilft Ihnen, die Frontend-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site schnell ohne AEM-Backend-Kenntnisse anzupassen.
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
+1. Melden Sie sich bei Cloud Manager an unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) und wählen Sie die entsprechende Organisation aus
 
-1. Navigieren Sie zum **Pipelines** Karte aus der **Programmübersicht** Seite und klicken Sie auf **Hinzufügen** auswählen **Produktions-Pipeline hinzufügen**.
+1. Im **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** angezeigt, wählen Sie das Programm aus.
+
+1. Gehen Sie von der Seite **Programmübersicht** zur Karte **Pipelines**, klicken Sie auf **Hinzufügen** und wählen Sie dann **Produktions-Pipeline hinzufügen** aus.
 
    ![Die Karte „Pipelines“ im Programm-Manager – Überblick](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
@@ -56,14 +58,14 @@ Sobald Sie mit der Benutzeroberfläche von [!UICONTROL Cloud Manager] Ihr Progra
 
    ![Konfiguration der Produktions-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
-1. Im **Quellcode** -Registerkarte müssen Sie auswählen, welcher Code von der Pipeline verarbeitet werden soll.
+1. Auf der Registerkarte **Quell-Code** müssen Sie auswählen, welcher Code von der Pipeline verarbeitet werden soll.
 
    * **[Full-Stack-Code](#full-stack-code)**
-   * **[Zielgerichtete Implementierung](#targeted-deployment)**
+   * **[Zielgerichtete Bereitstellung](#targeted-deployment)**
 
-Siehe [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) für weitere Informationen zu den Pipelinetypen.
+Weitere Informationen zu diesem Pipeline-Typ finden Sie unter [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
-Die Schritte zum Abschluss der Erstellung Ihrer Produktions-Pipeline variieren je nach ausgewähltem Quellcode. Folgen Sie den oben stehenden Links, um zum nächsten Abschnitt dieses Dokuments zu springen und die Konfiguration Ihrer Pipeline abzuschließen.
+Die Schritte zum Abschluss der Erstellung Ihrer Produktions-Pipeline variieren je nach dem von Ihnen gewählten Typ von Quell-Code. Folgen Sie den oben stehenden Links, um zum nächsten Abschnitt dieses Dokuments zu springen und die Konfiguration Ihrer Pipeline abzuschließen.
 
 ### Full-Stack-Code {#full-stack-code}
 
@@ -117,22 +119,22 @@ Für das Experience Audit konfigurierte Pfade werden an den Dienst gesendet und 
 
 Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
 
-### Zielgerichtete Implementierung {#targeted-deployment}
+### Zielgerichtete Bereitstellung {#targeted-deployment}
 
-Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile Ihrer AEM bereitgestellt. In einer solchen Bereitstellung können Sie auswählen, **Einschließen** einen der folgenden Code-Typen:
+Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile Ihrer AEM-Anwendung bereitgestellt. In einer solchen Bereitstellung können Sie auswählen, einen der folgenden Code-Typen **einzuschließen**:
 
-* **[Konfiguration](#config)** - Konfigurieren Sie Einstellungen für Ihre AEM-Umgebung, Wartungsaufgaben, CDN-Regeln und mehr.
-   * Siehe Dokument . [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md) , um zu erfahren, wie Sie die Konfigurationen in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
-* **[Frontend-Code](#front-end-code)** - Konfigurieren Sie JavaScript und CSS für das Frontend Ihrer AEM.
-   * Mit Frontend-Pipelines erhalten Frontend-Entwicklern mehr Unabhängigkeit und der Entwicklungsprozess kann beschleunigt werden.
+* **[Konfigurieren](#config)** – Konfigurieren Sie Einstellungen für Ihre AEM-Umgebung, Wartungsaufgaben, CDN-Regeln und mehr.
+   * Siehe das Dokument [Traffic-Filterregeln einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md), um zu erfahren, wie Sie die Konfigurationen in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
+* **[Frontend-Code](#front-end-code)** – Konfigurieren Sie JavaScript und CSS für das Frontend Ihrer AEM-Anwendung.
+   * Mit Frontend-Pipelines erhalten Frontend-Entwickelnde mehr Unabhängigkeit, und der Entwicklungsprozess kann beschleunigt werden.
    * Weitere Informationen dazu, wie dieser Prozess abläuft und was dabei zu beachten ist, um das volle Potenzial dieses Prozesses auszuschöpfen, finden Sie im Dokument [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
-* **[Web-Ebene-Konfiguration](#web-tier-config)** - Konfigurieren Sie die Dispatcher-Eigenschaften zum Speichern, Verarbeiten und Bereitstellen von Webseiten für den Client.
+* **[Web-Stufen-Konfiguration](#web-tier-config)** – Konfigurieren Sie die Dispatcher-Eigenschaften zum Speichern, Verarbeiten und Bereitstellen von Web-Seiten für den Client.
 
 >[!NOTE]
 >
 >* Wenn für die ausgewählte Umgebung bereits eine Web-Stufen-Code-Pipeline vorhanden ist, wird diese Auswahl deaktiviert.
 >* Wenn Sie über eine vorhandene Full-Stack-Pipeline verfügen, die in einer Umgebung bereitgestellt wird, wird beim Erstellen einer Web-Stufen-Konfigurations-Pipeline für dieselbe Umgebung die vorhandene Web-Stufen-Konfiguration in der Full-Stack-Pipeline ignoriert.
-> * Es kann immer nur eine Konfigurationspipeline pro Umgebung geben.
+> * Es kann immer nur eine Konfigurations-Pipeline pro Umgebung geben.
 
 Die Schritte zum Abschluss der Erstellung Ihrer Produktions- und Zielgruppen-Bereitstellungs-Pipeline sind dieselben, wenn Sie einen Bereitstellungstyp auswählen.
 
@@ -140,11 +142,11 @@ Die Schritte zum Abschluss der Erstellung Ihrer Produktions- und Zielgruppen-Ber
 
 ![Zielgerichtete Bereitstellungsoptionen](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-targeted-deployment.png)
 
-1. Definieren Sie die **Förderfähige Bereitstellungsumgebungen**.
+1. Definieren Sie die **geeigneten Bereitstellungsumgebungen**.
 
-   * Wenn es sich bei Ihrer Pipeline um eine Bereitstellungs-Pipeline handelt, müssen Sie auswählen, in welchen Umgebungen sie bereitgestellt werden soll.
+   * Wenn es sich bei Ihrer Pipeline um eine Bereitstellungs-Pipeline handelt, müssen Sie auswählen, für welche Umgebungen sie etwas bereitstellen soll.
 
-1. under **Quellcode**, definieren Sie die folgenden Optionen:
+1. Definieren Sie unter **Quell-Code** die folgenden Optionen:
 
    * **Repository**: Diese Option legt fest, aus welchem Git-Repository die Pipeline den Code abrufen soll.
 
@@ -156,15 +158,15 @@ Die Schritte zum Abschluss der Erstellung Ihrer Produktions- und Zielgruppen-Ber
       * Geben Sie die ersten Zeichen des Verzweigungsnamens und die Funktion zur automatischen Vervollständigung dieses Felds ein. Es werden die entsprechenden auswählbaren Verzweigungen gesucht.
    * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
    * **Anhalten vor der Bereitstellung in der Produktion**: Diese Option setzt die Pipeline vor der Bereitstellung in der Produktion aus.
-   * **Geplant**: Mit dieser Option kann der Benutzer die geplante Bereitstellung in der Produktionsumgebung aktivieren. Nur für zielgerichtete Bereitstellungen mit Webstufe verfügbar.
+   * **Geplant**: Mit dieser Option können Benutzende die geplante Bereitstellung in der Produktionsumgebung aktivieren. Nur für Web-Stufen-spezifische Bereitstellungen verfügbar.
 
-   ![Config-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
+   ![Konfigurations-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
 1. Klicken Sie auf **Speichern**.
 
 Die Pipeline wird gespeichert und auf der Karte **Pipelines** auf der Seite **Programmübersicht** können Sie jetzt [Pipelines verwalten](managing-pipelines.md).
 
-Beim Ausführen einer zielgerichteten Bereitstellungs-Pipeline Konfigurationen [wie WAF-Konfigurationen](/help/security/traffic-filter-rules-including-waf.md) wird bereitgestellt, sofern sie in der Umgebung, im Repository und in der Verzweigung gespeichert werden, die Sie in der Pipeline definiert haben.
+Beim Ausführen einer zielgerichteten Bereitstellungs-Pipeline werden Konfigurationen [wie WAF-Konfigurationen](/help/security/traffic-filter-rules-including-waf.md) bereitgestellt, sofern sie in der Umgebung, im Repository und in der Verzweigung gespeichert sind, die Sie in der Pipeline definiert haben.
 
 ## Überspringen von Dispatcher-Paketen {#skip-dispatcher-packages}
 

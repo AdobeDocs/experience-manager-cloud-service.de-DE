@@ -2,10 +2,10 @@
 title: Hinzufügen eines SSL-Zertifikats
 description: Erfahren Sie, wie Sie mithilfe der Self-Service-Tools von Cloud Manager Ihr eigenes SSL-Zertifikat hinzufügen.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 82%
+source-wordcount: '557'
+ht-degree: 96%
 
 ---
 
@@ -17,23 +17,25 @@ Erfahren Sie, wie Sie mithilfe der Self-Service-Tools von Cloud Manager Ihr eige
 >
 >Die Bereitstellung eines Zertifikats kann einige Tage dauern. Adobe empfiehlt daher, das Zertifikat rechtzeitig im Voraus bereitzustellen.
 
-## Zertifikatanforderungen {#certificate-requirements}
+## Zertifikatsanforderungen {#certificate-requirements}
 
-Lesen Sie den Abschnitt . **Zertifikatanforderungen** des Dokuments [Einführung in die Verwaltung von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) , um sicherzustellen, dass das Zertifikat, das Sie hinzufügen möchten, von AEM as a Cloud Service unterstützt wird.
+Lesen Sie im Abschnitt **Zertifikatsanforderungen** des Dokuments [Einführung in die Verwaltung von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements), wie Sie sicherstellen, dass das Zertifikat, das Sie hinzufügen möchten, von AEM as a Cloud Service unterstützt wird.
 
 ## Hinzufügen eines Zertifikats {#adding-a-cert}
 
 Führen Sie die folgenden Schritte aus, um ein Zertifikat mit Cloud Manager hinzuzufügen.
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
+1. Melden Sie sich bei Cloud Manager an unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) und wählen Sie die entsprechende Organisation aus
+
+1. Im **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** angezeigt, wählen Sie das Programm aus.
 
 1. Gehen Sie auf der **Übersichtsseite** zum Bildschirm **Umgebungen**.
 
-1. Klicks **SSL-Zertifikate** über das linke Navigationsfenster. Auf diesem Hauptbildschirm wird eine Tabelle mit Details zu vorhandenen SSL-Zertifikaten angezeigt.
+1. Klicken Sie im linken Navigationsbereich auf **SSL-Zertifikate**. Auf diesem Hauptbildschirm wird eine Tabelle mit Details zu vorhandenen SSL-Zertifikaten angezeigt.
 
    ![Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. Klicks **SSL-Zertifikat hinzufügen** zum Öffnen **SSL-Zertifikat hinzufügen** Dialogfeld.
+1. Klicken Sie auf **SSL-Zertifikat hinzufügen**, um das Dialogfeld **SSL-Zertifikat hinzufügen** zu öffnen.
 
    * Geben Sie in **Zertifikatname** einen Namen für Ihr Zertifikat ein.
       * Dies dient nur zu Informationszwecken und der Name kann so gewählt werden, dass Sie Ihr Zertifikat leicht finden können.
@@ -133,7 +135,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->Die Ausgabe dieser beiden Befehle muss genau gleich sein. Wenn Sie keinen passenden privaten Schlüssel für Ihre `main/server` -Zertifikat verwenden, müssen Sie das Zertifikat erneut verschlüsseln, indem Sie eine neue CSR generieren und/oder ein aktualisiertes Zertifikat von Ihrem SSL-Anbieter anfordern.
+>Die Ausgabe dieser beiden Befehle muss genau gleich sein. Wenn Sie keinen passenden privaten Schlüssel zu Ihrem `main/server`-Zertifikat finden können, müssen Sie das Zertifikat neu verschlüsseln, indem Sie eine neue Zertifikatsignaturanforderung (CSR) generieren und/oder ein aktualisiertes Zertifikat von Ihrem SSL-Anbieter anfordern.
 
 ### Gültigkeitsdaten des Zertifikats {#certificate-validity-dates}
 

@@ -3,10 +3,10 @@ title: Konfigurieren von produktionsfremden Pipelines
 description: Erfahren Sie, wie Sie produktionsfremde Pipelines so konfigurieren, dass die Qualität des Codes vor seiner Bereitstellung in Produktionsumgebungen getestet wird.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 80%
+source-wordcount: '1290'
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 80%
 
 Erfahren Sie, wie Sie produktionsfremde Pipelines so konfigurieren, dass die Qualität des Codes vor seiner Bereitstellung in Produktionsumgebungen getestet wird.
 
-Ein Benutzer muss über die **[Bereitstellungsmanager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** Rolle zum Konfigurieren von Nicht-Produktions-Pipelines.
+Benutzende müssen über die Rolle **[Bereitstellungs-Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** verfügen, um produktionsfremde Pipelines konfigurieren zu können.
 
 ## Produktionsfremde Pipelines {#non-production-pipelines}
 
@@ -34,7 +34,9 @@ Es gibt zwei Arten von produktionsfremden Pipelines:
 
 Sobald Sie mit der Benutzeroberfläche von Cloud Manager Ihr Programm eingerichtet und mindestens eine Umgebung haben, können Sie eine produktionsfremde Pipeline hinzufügen, indem Sie die folgenden Schritte ausführen.
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+
+Im **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** angezeigt, wählen Sie das Programm aus.
 
 1. Rufen Sie die Karte **Pipelines** über den Startbildschirm von Cloud Manager auf. Klicken Sie auf **+Hinzufügen** und wählen Sie **Produktionsfremde Pipeline hinzufügen** aus.
 
@@ -65,11 +67,11 @@ Sobald Sie mit der Benutzeroberfläche von Cloud Manager Ihr Programm eingericht
 1. Auf der Registerkarte **Quell-Code** im Dialogfeld **Produktionsfremde Pipeline hinzufügen** müssen Sie auswählen, welche Art von Code die Pipeline verarbeiten soll.
 
    * **[Full-Stack-Code](#full-stack-code)**
-   * **[Zielgerichtete Implementierung](#targeted-deployment)**
+   * **[Zielgerichtete Bereitstellung](#targeted-deployment)**
 
-Siehe [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) für weitere Informationen zu den Pipelinetypen.
+Weitere Informationen zu den Pipeline-Typen finden Sie unter [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
-Die Schritte zum Erstellen Ihrer produktionsfremden Pipeline variieren je nach ausgewähltem Quellcode. Folgen Sie den oben stehenden Links, um zum nächsten Abschnitt dieses Dokuments zu springen und die Konfiguration Ihrer Pipeline abzuschließen.
+Die Schritte zum Abschluss der Erstellung Ihrer produktionsfremden Pipeline variieren entsprechend der von Ihnen gewählten Option für den Quell-Code. Folgen Sie den oben stehenden Links, um zum nächsten Abschnitt dieses Dokuments zu springen und die Konfiguration Ihrer Pipeline abzuschließen.
 
 ### Full-Stack-Code {#full-stack-code}
 
@@ -98,42 +100,42 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der produktionsfrem
       * **Funktionstests für das Produkt** – Führen Sie [Produktfunktionstests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) mit der Entwicklungsumgebung durch.
       * **Benutzerdefinierte Funktionstests** – Führen Sie [benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) gegen die Entwicklungsumgebung durch.
       * **Benutzerdefinierte UI-Tests** – Führen Sie [benutzerdefinierte UI-Tests](/help/implementing/cloud-manager/ui-testing.md) für benutzerdefinierte Anwendungen aus.
-      * **Erlebnisprüfung** - Ausführen [Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-testing.md)
+      * **Erlebnisprüfung** – Ausführen einer [Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-testing.md)
 
    ![Full-Stack-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
 1. Klicken Sie auf **Speichern**.
 
-Die Pipeline wird gespeichert und auf der Karte **Pipelines** auf der Seite **Programmübersicht** können Sie jetzt [Pipelines verwalten](managing-pipelines.md).
+Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
 
-### Zielgerichtete Implementierung {#targeted-deployment}
+### Zielgerichtete Bereitstellung {#targeted-deployment}
 
-Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile Ihrer AEM bereitgestellt. In einer solchen Bereitstellung können Sie auswählen, **Einschließen** einen der folgenden Code-Typen:
+Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile Ihrer AEM-Anwendung bereitgestellt. In einer solchen Bereitstellung können Sie auswählen, einen der folgenden Code-Typen **einzuschließen**:
 
-* **[Konfiguration](#config)** - Konfigurieren Sie Einstellungen für Ihre AEM-Umgebung, Wartungsaufgaben, CDN-Regeln und mehr.
-   * Siehe Dokument . [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md) , um zu erfahren, wie Sie Traffic-Filterregeln in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
-* **[Frontend-Code](#front-end-code)** - Konfigurieren Sie JavaScript und CSS für das Frontend Ihrer AEM.
-   * Mit Frontend-Pipelines erhalten Frontend-Entwicklern mehr Unabhängigkeit und der Entwicklungsprozess kann beschleunigt werden.
+* **[Konfigurieren](#config)** – Konfigurieren Sie Einstellungen für Ihre AEM-Umgebung, Wartungsaufgaben, CND-Regeln und mehr.
+   * Im Dokument [Traffic-Filterregeln einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md) finden Sie Informationen dazu, wie Sie Traffic-Filterregeln in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
+* **[Frontend-Code](#front-end-code)** – Konfigurieren Sie JavaScript und CSS für das Frontend Ihrer AEM-Anwendung.
+   * Mit Frontend-Pipelines erhalten Frontend-Entwickelnde mehr Unabhängigkeit, und der Entwicklungsprozess kann beschleunigt werden.
    * Weitere Informationen dazu, wie dieser Prozess abläuft und was dabei zu beachten ist, um das volle Potenzial dieses Prozesses auszuschöpfen, finden Sie im Dokument [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
-* **[Web-Ebene-Konfiguration](#web-tier-config)** - Konfigurieren Sie die Dispatcher-Eigenschaften zum Speichern, Verarbeiten und Bereitstellen von Webseiten für den Client.
+* **[Web-Stufen-Konfiguration](#web-tier-config)** – Konfigurieren Sie die Dispatcher-Eigenschaften zum Speichern, Verarbeiten und Bereitstellen von Web-Seiten für den Client.
 
 >[!NOTE]
 >
 >* Wenn für die ausgewählte Umgebung bereits eine Web-Stufen-Code-Pipeline vorhanden ist, wird diese Auswahl deaktiviert.
 >* Wenn Sie über eine vorhandene Full-Stack-Pipeline verfügen, die in einer Umgebung bereitgestellt wird, wird beim Erstellen einer Web-Stufen-Konfigurations-Pipeline für dieselbe Umgebung die vorhandene Web-Stufen-Konfiguration in der Full-Stack-Pipeline ignoriert.
-> * Es kann immer nur eine Konfigurationspipeline pro Umgebung geben.
+> * Es kann immer nur eine Konfigurations-Pipeline pro Umgebung geben.
 
-Die Schritte zum Erstellen Ihrer nicht produktionsbezogenen, zielgerichteten Implementierungs-Pipeline sind dieselben, wenn Sie einen Bereitstellungstyp auswählen.
+Die Schritte zum Fertigstellen Ihrer produktionsfremden zielgerichteten Bereitstellungs-Pipeline sind dieselben, wenn Sie einen Bereitstellungstyp auswählen.
 
 1. Wählen Sie den benötigten Bereitstellungstyp aus.
 
 ![Zielgerichtete Bereitstellungsoptionen](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-targeted-deployment.png)
 
-1. Definieren Sie die **Förderfähige Bereitstellungsumgebungen**.
+1. Definieren Sie die **geeigneten Bereitstellungsumgebungen**.
 
-   * Wenn es sich bei Ihrer Pipeline um eine Bereitstellungs-Pipeline handelt, müssen Sie auswählen, in welchen Umgebungen sie bereitgestellt werden soll.
+   * Wenn es sich bei Ihrer Pipeline um eine Bereitstellungs-Pipeline handelt, müssen Sie auswählen, für welche Umgebungen sie etwas bereitstellen soll.
 
-1. under **Quellcode**, definieren Sie die folgenden Optionen:
+1. Definieren Sie unter **Quell-Code** die folgenden Optionen:
 
    * **Repository**: Diese Option legt fest, aus welchem Git-Repository die Pipeline den Code abrufen soll.
 
@@ -145,13 +147,13 @@ Die Schritte zum Erstellen Ihrer nicht produktionsbezogenen, zielgerichteten Imp
       * Geben Sie die ersten Zeichen des Verzweigungsnamens und die Funktion zur automatischen Vervollständigung dieses Felds ein. Es werden die entsprechenden auswählbaren Verzweigungen gesucht.
    * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
 
-   ![Config-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![Konfigurations-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
 
 1. Klicken Sie auf **Speichern**.
 
 Die Pipeline wird gespeichert und auf der Karte **Pipelines** auf der Seite **Programmübersicht** können Sie jetzt [Pipelines verwalten](managing-pipelines.md).
 
-Beim Ausführen einer zielgerichteten Bereitstellungs-Pipeline Konfigurationen [wie WAF-Konfigurationen](/help/security/traffic-filter-rules-including-waf.md) wird bereitgestellt, sofern sie in der Umgebung, im Repository und in der Verzweigung gespeichert werden, die Sie in der Pipeline definiert haben.
+Beim Ausführen einer zielgerichteten Bereitstellungs-Pipeline werden Konfigurationen [wie WAF-Konfigurationen](/help/security/traffic-filter-rules-including-waf.md) bereitgestellt, sofern sie in der Umgebung, im Repository und in der Verzweigung gespeichert sind, die Sie in der Pipeline definiert haben.
 
 ## Überspringen von Dispatcher-Paketen {#skip-dispatcher-packages}
 

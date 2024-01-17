@@ -2,10 +2,10 @@
 title: Erstellen von Sandbox-Programmen
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Sandbox-Programm für Schulungs-, Demo-, POC- oder andere produktionsfremde Zwecke erstellen.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 90%
+source-wordcount: '443'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ Weitere Informationen zu Programmtypen finden Sie im Dokument [Programm- und Pro
 
 1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an und wählen Sie die entsprechende Organisation aus.
 
-1. Klicken Sie auf der Landingpage von Cloud Manager oben rechts im Bildschirm auf **Programm hinzufügen**.
+1. Im **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** Bildschirm, tippen oder klicken Sie **Programm hinzufügen** in der oberen rechten Ecke des Bildschirms.
 
    ![Cloud Manager-Landingpage](assets/cloud-manager-my-programs.png)
 
@@ -27,11 +27,11 @@ Weitere Informationen zu Programmtypen finden Sie im Dokument [Programm- und Pro
 
    ![Erstellen von Programmtypen](assets/create-sandbox.png)
 
-1. Optional können Sie ein Bild zum Programm hinzufügen, indem Sie eine Bilddatei per Drag-and-Drop auf das Ziel **Programmbild hinzufügen** ziehen oder darauf klicken, um ein Bild aus einem Dateibrowser auszuwählen. Klicken Sie auf **Weiter**.
+1. Optional können Sie ein Bild zum Programm hinzufügen, indem Sie eine Bilddatei per Drag-and-Drop auf das Ziel **Programmbild hinzufügen** ziehen oder darauf klicken, um ein Bild aus einem Datei-Browser auszuwählen. Wählen Sie **Weiter**.
 
    * Das Bild dient nur als Kachel im Programmübersichtsfenster und hilft bei der Identifizierung des Programms.
 
-1. Im **Sandbox einrichten** auswählen, welche Lösungen Sie in Ihrem Sandbox-Programm aktivieren möchten, indem Sie die Optionen im **Lösungen und Add-ons** Tabelle.
+1. Wählen Sie im Dialogfeld **Sandbox einrichten**, welche Lösungen in Ihrem Sandbox-Programm aktiviert werden sollen, indem Sie die Optionen in der Tabelle **Lösungen und Add-ons** aktivieren.
 
    * Verwenden Sie die Pfeile neben den Lösungsnamen, um zusätzliche, optionale Add-ons für die Lösungen anzuzeigen.
 
@@ -49,7 +49,7 @@ Auf der Landingpage wird eine neue Sandbox-Programmkarte mit einer Statusanzeige
 
 Sie können die Details Ihrer Sandbox-Einrichtung anzeigen und auf die Umgebung zugreifen (sobald sie verfügbar ist), indem Sie die Seite „Programmübersicht“ aufrufen.
 
-1. Klicken Sie auf der Landingpage von Cloud Manager auf die Suchschaltfläche in Ihrem erstellten Programm.
+1. Klicken Sie auf der Landingpage von Cloud Manager in Ihrem erstellten Programm auf die Schaltfläche mit den Auslassungspunkten.
 
    ![Zugriff auf die Programmübersicht](assets/program-overview-sandbox.png)
 

@@ -2,10 +2,10 @@
 title: Zugreifen auf und Verwalten von Protokollen
 description: Erfahren Sie, wie Sie auf Protokolle zugreifen und diese verwalten können, um Ihren Entwicklungsprozess in AEM as a Cloud Service zu unterstützen.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 78%
+source-wordcount: '330'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,9 @@ Sie können über die Karte **Umgebungen** auf der Seite **Überblick** oder der
 
 Gehen Sie wie folgt vor, um Protokolle herunterzuladen:
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+
+1. Im **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** angezeigt, wählen Sie das Programm aus.
 
 1. Navigieren Sie von der Seite **Überblick** zur Karte **Umgebungen**.
 
@@ -32,11 +34,11 @@ Gehen Sie wie folgt vor, um Protokolle herunterzuladen:
 
    ![Dialog „Protokolle herunterladen“](assets/download-preview.png)
 
-   In diesem Fall [Zusätzliche Veröffentlichungsregionen](/help/operations/additional-publish-regions.md) für Ihre Umgebung aktiviert sind, können Sie jede Region auswählen und die Protokolle separat herunterladen, wie unten dargestellt:
+   Falls [zusätzliche Veröffentlichungsregionen](/help/operations/additional-publish-regions.md) für Ihre Umgebung aktiviert sind, können Sie jede Region auswählen und die Protokolle separat herunterladen, wie unten dargestellt:
 
-   ![Protokolle für weitere Veröffentlichungsregionen herunterladen](assets/download-publish-region-logs.png)
+   ![Herunterladen von Protokollen für zusätzliche Veröffentlichungsregionen](assets/download-publish-region-logs.png)
 
-1. Nachdem Sie Ihren Dienst ausgewählt haben, klicken Sie auf das Download-Symbol neben dem Protokoll, das Sie abrufen möchten.
+1. Nachdem Sie Ihren Service ausgewählt haben, klicken Sie auf das Download-Symbol neben dem Protokoll, das Sie abrufen möchten.
 
 Sie können Ihre Protokolle auch über die Seite **Umgebungen** aufrufen.
 
@@ -92,5 +94,5 @@ Weitere Informationen zur Cloud Manager-API und zur Adobe I/O-CLI finden Sie in 
 
 Weitere Informationen zu Protokolldateien in AEM as a Cloud Service finden Sie in den folgenden zusätzlichen Ressourcen:
 
-* [Cloud 5-AEM-Protokolldateien](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
+* [Cloud 5-AEM-Protokolldateien](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html?lang=de)
 * [Debugging von AEM as a Cloud Service mithilfe von Protokollen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=de)
