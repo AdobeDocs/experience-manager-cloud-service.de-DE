@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
+source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1002'
 ht-degree: 85%
 
 ---
@@ -174,3 +174,7 @@ Als Nächstes können Sie ein Datenmodell für ein adaptives Formular erstellen 
 Sie können [Konfigurieren der Sendeaktion &quot;Formulardatenmodell&quot;](/help/forms/using-form-data-model.md) für ein adaptives Formular zum Senden von Daten an Microsoft Dynamics OData.
 
 Weitere Informationen über die Erstellung und Verwendung des Formulardatenmodells in Unternehmens-Workflows finden Sie unter [Datenintegration](data-integration.md).
+
+## Ähnliche Artikel
+
+{{af-submit-action}}
