@@ -2,7 +2,7 @@
 title: Attribute und Elementtypen
 description: Erfahren Sie mehr über die Datenattribute und Elementtypen, die der universelle Editor erfordert.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 7550491de94f1e2cbb28b07f8abbdaded5aa04ea
+source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 94%
@@ -28,13 +28,13 @@ Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss si
 
 | Dateneigenschaft | Beschreibung |
 |---|---|
-| `itemid` | URN zur Ressource, siehe den Abschnitt [„Instrumentieren der Seite“ im Dokument „Erste Schritte mit dem universellen Editor in AEM“](getting-started.md#instrument-thepage) |
-| `itemprop` | Attribut der Ressource, siehe den Abschnitt [„Instrumentieren der Seite“ im Dokument „Erste Schritte mit dem universellen Editor in AEM“](getting-started.md#instrument-thepage) |
-| `itemtype` | Typ des bearbeitbaren Elements (z. B. Text, Bild, Referenz usw.) |
-| `data-editor-itemfilter` | Definiert, welche Verweise verwendet werden können |
-| `data-editor-itemlabel` | Definiert eine benutzerdefinierte Beschriftung für ein auswählbares Element, das im Editor angezeigt wird. <br>Wenn `itemmodel` festgelegt ist, wird die Beschriftung über das Modell abgerufen |
-| `data-editor-itemmodel` | Definiert ein Modell, das für die formularbasierte Bearbeitung in der Eigenschaftenleiste verwendet wird |
-| `data-editor-behavior` | Definiert das Verhalten einer Instrumentierung. Zum Beispiel kann ein eigenständiger Text oder ein Bild auch eine Komponente imitieren, um sie verschiebbar oder löschbar zu machen |
+| `data-aue-resource` | URN zur Ressource, siehe den Abschnitt [„Instrumentieren der Seite“ im Dokument „Erste Schritte mit dem universellen Editor in AEM“](getting-started.md#instrument-thepage) |
+| `data-aue-prop` | Attribut der Ressource, siehe den Abschnitt [„Instrumentieren der Seite“ im Dokument „Erste Schritte mit dem universellen Editor in AEM“](getting-started.md#instrument-thepage) |
+| `data-aue-type` | Typ des bearbeitbaren Elements (z. B. Text, Bild, Referenz usw.) |
+| `data-aue-filter` | Definiert, welche Verweise verwendet werden können |
+| `data-aue-label` | Definiert eine benutzerdefinierte Beschriftung für ein auswählbares Element, das im Editor angezeigt wird. <br>Wenn `itemmodel` festgelegt ist, wird die Beschriftung über das Modell abgerufen |
+| `data-aue-model` | Definiert ein Modell, das für die formularbasierte Bearbeitung in der Eigenschaftenleiste verwendet wird |
+| `data-aue-behavior` | Definiert das Verhalten einer Instrumentierung. Zum Beispiel kann ein eigenständiger Text oder ein Bild auch eine Komponente imitieren, um sie verschiebbar oder löschbar zu machen |
 
 ## Elementtypen {#item-types}
 
@@ -47,14 +47,14 @@ Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss si
 | `component` | Das bearbeitbare Element ist eine Komponente. Es werden keine zusätzlichen Funktionen hinzugefügt. Es ist erforderlich, um bewegliche/löschbare Teile des DOM anzuzeigen und die Eigenschaftenleiste und ihre Felder zu öffnen | Erforderlich | Nicht zutreffend | Nicht zutreffend | Optional | Optional | Nicht zutreffend |
 | `reference` | Das bearbeitbare Element ist ein Verweis, zum Beispiel ein Inhaltsfragment, Experience Fragment oder Produkt | Abhängig von <br>siehe unten | Abhängig von <br>siehe unten | Optional<br>Liste der Filterkriterien für Inhaltsfragmente, Produkte oder Experience Fragments, die an den Referenz-Selektor übergeben werden | Optional | Optional | Nicht zutreffend |
 
-Je nach Anwendungsfall kann `itemprop` oder `itemid` erforderlich sein oder nicht. Beispiel:
+Je nach Anwendungsfall kann `data-aue-prop` oder `data-aue-resource` erforderlich sein oder nicht. Beispiel:
 
-* `itemid` ist erforderlich, wenn Sie Inhaltsfragmente über GraphQL abfragen und die Liste im Kontext bearbeitbar machen möchten.
-* `itemprop` ist erforderlich, wenn Sie eine Komponente haben, die den Inhalt eines referenzierten Inhaltsfragments rendert, und die Referenz innerhalb der Komponente aktualisieren möchten.
+* `data-aue-resource` ist erforderlich, wenn Sie Inhaltsfragmente über GraphQL abfragen und die Liste im Kontext bearbeitbar machen möchten.
+* `data-aue-prop` ist erforderlich, wenn Sie eine Komponente haben, die den Inhalt eines referenzierten Inhaltsfragments rendert, und die Referenz innerhalb der Komponente aktualisieren möchten.
 
 ## Verhaltensweisen {#behaviors}
 
-| `data-editor-behavior` | Beschreibung |
+| `data-aue-behavior` | Beschreibung |
 |---|---|
 | `component` | Kann verwendet werden, um eigenständigen Text, Rich-Text und Medien das Verhalten von Komponenten nachahmen zu lassen, sodass sie auch auf der Seite verschiebbar und löschbar sind. |
 | `container` | Kann verwendet werden, damit Container als ihre eigenen Komponenten behandelt werden, sodass sie auf der Seite verschiebbar und löschbar sind. |

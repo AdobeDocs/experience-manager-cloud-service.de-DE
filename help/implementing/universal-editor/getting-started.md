@@ -2,10 +2,10 @@
 title: Erste Schritte mit dem universellen Editor in AEM
 description: Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 100%
+source-wordcount: '903'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Dieses Dokument führt Sie durch diese Schritte.
 
 ## Anfordern des Zugriffs auf den universellen Editor {#request-access}
 
-Zunächst müssen Sie den Zugriff auf den universellen Editor anfordern. Navigieren Sie zu [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), melden Sie sich an und validieren Sie, ob Sie Zugriff auf den universellen Editor haben.
+Zunächst müssen Sie den Zugriff auf den universellen Editor anfordern. Öffnen [`https://experience.adobe.com/#/aem/editor&#39;](https://experience.adobe.com/#/aem/editor), melden Sie sich an und überprüfen Sie, ob Sie Zugriff auf den universellen Editor haben.
 
 Wenn Sie keinen Zugriff haben, können Sie ihn über ein Formular anfordern, das auf derselben Seite verlinkt ist.
 
@@ -59,7 +59,7 @@ import "@adobe/universal-editor-cors";
 
 ### Alternative für Nicht-React-Apps {#alternative}
 
-Wenn Sie keine React-App implementieren und/oder Server-seitiges Rendering erforderlich ist, besteht eine alternative Methode darin, Folgendes in den Hauptteil des Dokuments einzuschließen.
+Wenn Sie keine React-App implementieren und/oder serverseitiges Rendering erfordern, besteht eine alternative Methode darin, Folgendes in den Hauptteil des Dokuments einzuschließen.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -124,10 +124,10 @@ Verbindungen, die in der App verwendet werden, werden als `<meta>`-Tags im `<hea
 
 Die Kennung `urn:adobe:aue:system` stellt die Verbindung des universellen Editors von Adobe dar.
 
-`itemid`s verwenden das Präfix `urn`, um die Kennung zu verkürzen.
+`data-aue-resource`s verwenden das Präfix `urn`, um die Kennung zu verkürzen.
 
 ```html
-itemid="urn:<referenceName>:<resource>"
+data-aue-resource="urn:<referenceName>:<resource>"
 ```
 
 * `<referenceName>` – Dies ist die im `<meta>`-Tag erwähnte Referenz. Z. B. `aemconnection`

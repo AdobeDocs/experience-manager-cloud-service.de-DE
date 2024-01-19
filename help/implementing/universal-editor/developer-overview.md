@@ -1,9 +1,10 @@
 ---
 title: Übersicht über den universellen Editor für AEM-Entwickler
 description: Wenn Sie ein AEM Entwickler sind, der daran interessiert ist, wie der universelle Editor funktioniert und wie er in Ihrem Projekt verwendet wird, bietet Ihnen dieses Dokument eine durchgängige Einführung, indem es Sie durch die Anleitung des WKND-Projekts zur Verwendung mit dem universellen Editor führt.
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
+source-git-commit: d7154fcec9cf6e3cb00ce8e434e38544294df165
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3112'
 ht-degree: 1%
 
 ---
@@ -36,6 +37,7 @@ Um dieser Übersicht zu folgen, benötigen Sie die folgenden verfügbaren Inform
    * [Die WKND-Demosite muss installiert sein.](https://github.com/adobe/aem-guides-wknd)
 * [Zugriff auf den universellen Editor](/help/implementing/universal-editor/getting-started.md#onboarding)
 * [Lokaler Universal Editor-Dienst](/help/implementing/universal-editor/local-dev.md) für Entwicklungszwecke ausgeführt werden
+   * Stellen Sie sicher, dass Ihr Browser zu [das selbst signierte Zertifikat der lokalen Dienste akzeptieren.](/help/implementing/universal-editor/local-dev.md#editing)
 
 Neben der allgemeinen Vertrautheit mit der Webentwicklung geht dieses Dokument von der grundlegenden Vertrautheit mit AEM Entwicklung aus. Wenn Sie nicht mit AEM Entwicklung vertraut sind, lesen Sie [das WKND-Tutorial , bevor Sie fortfahren.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
@@ -164,7 +166,7 @@ Die Seite wird jetzt mit der richtigen JavaScript-Bibliothek geladen, damit der 
 
 Die WKND-Seite wird jetzt erfolgreich im universellen Editor geladen und die JavaScript-Bibliothek wird geladen, um den Editor mit Ihrer App zu verbinden.
 
-Wahrscheinlich haben Sie jedoch schnell bemerkt, dass Sie im universellen Editor nicht mit der Seite interagieren können. Der Universal Editor kann Ihre Seite nicht bearbeiten. Damit der universelle Editor Ihren Inhalt bearbeiten kann, müssen Sie eine Verbindung definieren, damit er weiß, wo der Inhalt geschrieben werden soll. Für die lokale Entwicklung müssen Sie zurück in Ihre lokale AEM-Entwicklungsinstanz schreiben unter `https://localhost:8443`.
+Wahrscheinlich haben Sie jedoch bemerkt, dass Sie im universellen Editor nicht mit der Seite interagieren können. Der Universal Editor kann Ihre Seite nicht bearbeiten. Damit der universelle Editor Ihren Inhalt bearbeiten kann, müssen Sie eine Verbindung definieren, damit er weiß, wo der Inhalt geschrieben werden soll. Für die lokale Entwicklung müssen Sie zurück in Ihre lokale AEM-Entwicklungsinstanz schreiben unter `https://localhost:8443`.
 
 1. Öffnen Sie CRXDE Lite.
 
@@ -227,10 +229,9 @@ Ihre Komponenten müssen auch instrumentiert werden, um mit dem universellen Edi
 1. Am Ende des ersten `div` Fügen Sie in etwa Zeile 26 die Instrumentierungsdetails für die Komponente hinzu.
 
    ```text
-   itemscope
-   itemid="urn:aem:${resource.path}"
-   itemtype="component"
-   data-editor-itemlabel="Teaser"
+   data-aue-resource="urn:aem:${resource.path}"
+   data-aue-type="component"
+   data-aue-label="Teaser"
    ```
 
 1. Klicks **Alle speichern** in der Symbolleiste und laden Sie den universellen Editor neu.
@@ -262,9 +263,9 @@ Sie können jetzt den Teaser auswählen, ihn jedoch nicht bearbeiten. Der Grund 
 1. Fügen Sie die folgenden Eigenschaften am Ende des `h2` Tag (nahe Zeile 17).
 
    ```text
-   itemprop="jcr:title"
-   itemtype="text"
-   data-editor-itemlabel="Title"
+   data-aue-prop="jcr:title"
+   data-aue-type="text"
+   data-aue-label="Title"
    ```
 
 1. Klicks **Alle speichern** in der Symbolleiste und laden Sie den universellen Editor neu.
@@ -281,15 +282,14 @@ Nachdem Sie jetzt den Titel des Teasers bearbeiten können, sollten wir einen Mo
 
 Sie haben die Teaser-Komponente im universellen Editor identifiziert, indem Sie sie instrumentieren.
 
-* `itemscope` identifiziert es als Element für den universellen Editor.
-* `itemid` identifiziert die Ressource in AEM, die bearbeitet wird.
-* `itemtype` definiert, dass die Elemente als Seitenkomponente behandelt werden sollen (im Gegensatz zu Containern).
-* `data-editor-itemlabel` zeigt eine benutzerfreundliche Beschriftung in der Benutzeroberfläche für den ausgewählten Teaser an.
+* `data-aue-resource` identifiziert die Ressource in AEM, die bearbeitet wird.
+* `data-aue-type` definiert, dass die Elemente als Seitenkomponente behandelt werden sollen (im Gegensatz zu Containern).
+* `data-aue-label` zeigt eine benutzerfreundliche Beschriftung in der Benutzeroberfläche für den ausgewählten Teaser an.
 
 Sie haben auch die Titelkomponente innerhalb der Teaser-Komponente instrumentiert.
 
-* `itemprop` ist das geschriebene JCR-Attribut.
-* `itemtype` ist die Art und Weise, wie das Attribut bearbeitet werden sollte. In diesem Fall mit dem Texteditor, da es sich um einen Titel handelt (im Gegensatz zum Rich-Text-Editor).
+* `data-aue-prop` ist das geschriebene JCR-Attribut.
+* `data-aue-type` ist die Art und Weise, wie das Attribut bearbeitet werden sollte. In diesem Fall mit dem Texteditor, da es sich um einen Titel handelt (im Gegensatz zum Rich-Text-Editor).
 
 ## Authentifizierungskopfzeilen definieren {#auth-header}
 
@@ -299,13 +299,13 @@ Jetzt können Sie den Titel des Teasers inline bearbeiten und Änderungen werden
 
 Wenn Sie den Browser jedoch neu laden, wird der vorherige Titel neu geladen. Der Grund dafür ist, dass der Universal Editor zwar weiß, wie eine Verbindung zu Ihrer AEM-Instanz hergestellt werden kann, dass er sich jedoch noch nicht bei Ihrer AEM-Instanz authentifizieren kann, um Änderungen an der JCR-Instanz zurückzuschreiben.
 
-Wenn Sie die Registerkarte &quot;Netzwerk&quot;der Browser-Entwickler-Tools anzeigen und nach `update`, sehen Sie, dass beim Versuch, den Titel zu bearbeiten, ein 500-Fehler auftritt.
+Wenn Sie die Registerkarte &quot;Netzwerk&quot;der Browser-Entwickler-Tools anzeigen und nach `update`, sehen Sie, dass beim Versuch, den Titel zu bearbeiten, ein 401-Fehler auftritt.
 
 ![Fehler beim Versuch, den Titel zu bearbeiten](assets/dev-edit-error.png)
 
 Wenn Sie den universellen Editor verwenden, um Ihre Produktions-AEM-Inhalte zu bearbeiten, verwendet der universelle Editor dasselbe IMS-Token, das Sie zum Anmelden beim Editor verwendet haben, um sich bei AEM zu authentifizieren, um das Zurückschreiben an das JCR zu erleichtern.
 
-Wenn Sie sich lokal entwickeln, können Sie den AEM Identitäts-Provider nicht verwenden. Daher müssen Sie manuell eine Authentifizierungsmethode bereitstellen, indem Sie explizit einen Authentifizierungs-Header festlegen.
+Wenn Sie sich lokal entwickeln, können Sie den AEM Identitäts-Provider nicht verwenden, da IMS-Token nur an Adobe-eigene Domänen übergeben werden. Sie müssen manuell eine Authentifizierungsmethode bereitstellen, indem Sie explizit einen Authentifizierungs-Header festlegen.
 
 1. Klicken Sie in der Benutzeroberfläche des universellen Editors auf die **Authentifizierungs-Header** in der Symbolleiste.
 
@@ -323,22 +323,24 @@ Wenn Sie den Traffic in den Entwickler-Tools des Browsers untersuchen und nach d
 
 ```json
 {
-  "op": "patch",
-  "connections": {
-    "aem": "aem:https://localhost:8443"
-  },
-  "path": {
-    "itemid": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
-    "itemtype": "text",
-    "itemprop": "jcr:title"
+  "connections": [
+    {
+      "name": "aem",
+      "protocol": "aem",
+      "uri": "https://localhost:8443"
+    }
+  ],
+  "target": {
+    "resource": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
+    "type": "text",
+    "prop": "jcr:title"
   },
   "value": "Tiny Toon Adventures"
 }
 ```
 
-* `op` ist der Vorgang, der in diesem Fall ein Patch des vorhandenen Inhalts des bearbeiteten Felds ist.
 * `connections` ist die Verbindung zu Ihrer lokalen AEM-Instanz
-* `path` ist der genaue Knoten und die Eigenschaften, die im JCR aktualisiert werden.
+* `target` ist der genaue Knoten und die Eigenschaften, die im JCR aktualisiert werden.
 * `value` ist die von Ihnen vorgenommene Aktualisierung.
 
 Sie können sehen, dass die Änderung im JCR beibehalten wurde.
@@ -357,7 +359,7 @@ Sie verfügen jetzt über eine App, die mit dem Universal Editor bearbeitbar ist
 
 Die Bearbeitung ist derzeit auf die Inline-Bearbeitung des Teaser-Titels beschränkt. Es gibt jedoch Fälle, in denen eine Bearbeitung nicht ausreicht. Text wie der Titel des Teasers kann an der Stelle bearbeitet werden, an der er mit Tastatureingaben vorliegt. Komplexere Elemente müssen jedoch in der Lage sein, strukturierte Daten separat von ihrer Darstellung im Browser anzuzeigen und zu bearbeiten. Hierfür dient die Eigenschaftenleiste.
 
-Aktualisieren Sie Ihre App jetzt, um die Eigenschaftenleiste für die Bearbeitung zu verwenden. Hierfür kehren Sie zur Header-Datei der Seitenkomponente Ihrer App zurück, in der Sie bereits die Verbindungen zu Ihrer lokalen AEM-Entwicklungsinstanz und Ihrem lokalen Universal Editor-Dienst hergestellt haben. Hier müssen Sie die Komponenten definieren, die in der App bearbeitet werden können, sowie deren Datenmodelle.
+Um Ihre App zu aktualisieren und die Eigenschaftenleiste für die Bearbeitung zu verwenden, kehren Sie zur Header-Datei der Seitenkomponente Ihrer App zurück. Hier haben Sie bereits die Verbindungen zu Ihrer lokalen AEM-Entwicklungsinstanz und Ihrem lokalen Universal Editor-Dienst hergestellt. Hier müssen Sie die Komponenten definieren, die in der App bearbeitet werden können, sowie deren Datenmodelle.
 
 1. Öffnen Sie CRXDE Lite.
 
@@ -369,10 +371,10 @@ Aktualisieren Sie Ihre App jetzt, um die Eigenschaftenleiste für die Bearbeitun
 
    ![Bearbeiten der Datei customheaderlibs.html](assets/dev-instrument-properties-rail.png)
 
-1. Fügen Sie das erforderliche Skript hinzu, um die Felder dem Ende der Datei zuzuordnen.
+1. Fügen Sie am Ende der Datei das erforderliche Skript hinzu, um die Komponenten zu definieren.
 
    ```html
-   <script type="application/vnd.adobe.aem.editor.component-definition+json">
+   <script type="application/vnd.adobe.aue.component+json">
    {
      "groups": [
        {
@@ -388,29 +390,69 @@ Aktualisieren Sie Ihre App jetzt, um die Eigenschaftenleiste für die Bearbeitun
                    "resourceType": "wknd/components/teaser"
                  }
                }
-             },
-             "model": {
-               "id": "teaser",
-               "fields": [
-                 {
-                   "component": "text-input",
-                   "name": "jcr:title",
-                   "label": "Title",
-                   "valueType": "string"
-                 },
-                 {
-                   "component": "text-area",
-                   "name": "jcr:description",
-                   "label": "Description",
-                   "valueType": "string"
+             }
+           },
+           {
+             "title": "Title",
+             "id": "title",
+             "plugins": {
+               "aem": {
+                 "page": {
+                   "resourceType": "wknd/components/title"
                  }
-               ]
+               }
              }
            }
          ]
        }
      ]
    }
+   </script>
+   ```
+
+1. Fügen Sie unterhalb der Datei das erforderliche Skript hinzu, um das Modell zu definieren.
+
+   ```html
+   <script type="application/vnd.adobe.aue.model+json">
+   [
+     {
+       "id": "teaser",
+       "fields": [
+         {
+           "component": "text-input",
+           "name": "jcr:title",
+           "label": "Title",
+           "valueType": "string"
+         },
+         {
+           "component": "text-area",
+           "name": "jcr:description",
+           "label": "Description",
+           "valueType": "string"
+         }
+       ]
+     },
+     {
+       "id": "title",
+       "fields": [
+         {
+           "component": "select",
+           "name": "type",
+           "value": "h1",
+           "label": "Type",
+           "valueType": "string",
+           "options": [
+             { "name": "h1", "value": "h1" },
+             { "name": "h2", "value": "h2" },
+             { "name": "h3", "value": "h3" },
+             { "name": "h4", "value": "h4" },
+             { "name": "h5", "value": "h5" },
+             { "name": "h6", "value": "h6" }
+           ]
+         }
+       ]
+     }
+   ]
    </script>
    ```
 
@@ -457,15 +499,17 @@ Sie müssen auch auf Komponentenebene definieren, welches Modell die Komponente 
 
    ![Bearbeiten der Datei &quot;teaser.html&quot;](assets/dev-edit-teaser.png)
 
-1. Am Ende des ersten `div` in etwa Zeile 32, nach der `itemscope` -Eigenschaften, die Sie zuvor hinzugefügt haben, die Instrumentierungsdetails für das Modell hinzufügen, das die Teaser-Komponente verwenden wird.
+1. Am Ende des ersten `div` Fügen Sie in ungefähr Zeile 32 nach den Eigenschaften, die Sie zuvor hinzugefügt haben, die Instrumentierungsdetails für das Modell hinzu, das die Teaser-Komponente verwenden wird.
 
    ```text
-   data-editor-itemmodel="teaser"
+   data-aue-model="teaser"
    ```
 
 1. Klicks **Alle speichern** in der Symbolleiste und laden Sie den universellen Editor neu.
 
-1. Klicken Sie auf den Titel des Teasers, um ihn erneut zu bearbeiten.
+Jetzt können Sie die für Ihre Komponente instrumentierte Eigenschaftenleiste testen.
+
+1. Klicken Sie im universellen Editor auf den Titel des Teasers, um ihn erneut zu bearbeiten.
 
 1. Klicken Sie auf die Leiste Eigenschaften , um die Registerkarte Eigenschaften anzuzeigen und die gerade instrumentierten Felder anzuzeigen.
 
@@ -489,7 +533,7 @@ Sie können beispielsweise ein Feld hinzufügen, um die Formatierung der Kompone
 
    ![Bearbeiten der Datei customheaderlibs.html](assets/dev-instrument-styles.png)
 
-1. Fügen Sie dem `fields` -Array für das Stilfeld. Denken Sie daran, vor dem Einfügen des neuen Felds ein Komma nach dem letzten Feld hinzuzufügen.
+1. Fügen Sie im Modelldefinitionsskript ein zusätzliches Element zum `fields` -Array für das Stilfeld. Denken Sie daran, vor dem Einfügen des neuen Felds ein Komma nach dem letzten Feld hinzuzufügen.
 
    ```json
    {
