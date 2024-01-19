@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 94%
+source-wordcount: '1000'
+ht-degree: 85%
 
 ---
 
@@ -35,6 +35,9 @@ ht-degree: 94%
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
 <!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service (OData Service) ist für alle Ausführungsmodi verfügbar. Weitere Informationen zum Konfigurieren der Ausführungsmodi für eine [!DNL Experience Manager]-Instanz finden Sie unter [Ausführungsmodi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=de#runmodes).
+
+AEM as a Cloud Service bietet verschiedene vordefinierte Übermittlungsaktionen für die Verarbeitung von Formularübermittlungen. Weitere Informationen zu diesen Optionen finden Sie im Abschnitt [Übermittlungsaktion für adaptive Formulare](/help/forms/configure-submit-actions-core-components.md)  Artikel.
+
 
 ## Voraussetzungen {#prerequisites}
 
@@ -70,7 +73,7 @@ Gehen Sie folgendermaßen vor, um die Antwort-URL für eine registrierte [!DNL M
 
 >[!NOTE]
 >
->Verwenden Sie dieses Verfahren nur bei der Integration von [!DNL Experience Manager Forms] mit einem lokal installierten [!DNL Microsoft Dynamics]-Server.
+> Verwenden Sie dieses Verfahren nur bei der Integration von [!DNL Experience Manager Forms] mit einem lokal installierten [!DNL Microsoft Dynamics]-Server.
 
 1. Konfigurieren Sie die lokale [!DNL Microsoft Dynamics]-On-Premises-Instanz für IFD, wie in [Konfigurieren von IFD für  [!DNL Microsoft Dynamics]](https://technet.microsoft.com/de-de/library/dn609803.aspx) beschrieben.
 1. Führen Sie die folgenden Befehle mit Windows PowerShell aus, um die Anspruchseinstellungen für IFD-aktiviertes [!DNL Microsoft Dynamics] zu konfigurieren:
@@ -158,14 +161,16 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-Nach der Konfiguration des MS Dynamics-OData-Cloud Service können Sie den Service beim Erstellen von Formulardatenmodellen verwenden. Weitere Informationen finden Sie unter [Erstellen des Formulardatenmodells](create-form-data-models.md).
+Nachdem Sie den MS Dynamics OData-Cloud-Dienst konfiguriert haben, können Sie den Dienst beim Erstellen von Formulardatenmodellen verwenden. Weitere Informationen finden Sie unter [Erstellen des Formulardatenmodells](create-form-data-models.md).
 
-Anschließend können Sie ein adaptives Formular erstellen, das auf dem Datenmodell basiert, und es dann in verschiedenen Anwendungsfällen für adaptive Formulare verwenden, wie zum Beispiel:
+Als Nächstes können Sie ein Datenmodell für ein adaptives Formular erstellen und es in verschiedenen Anwendungsfällen für adaptive Formulare verwenden, z. B.:
 
 * Befüllen eines adaptiven Formulars durch Abfragen von Informationen aus [!DNL Microsoft Dynamics]-Entitäten und -Services
 * Aufrufen von [!DNL Microsoft Dynamics]-Servervorgängen, die in einem Formulardatenmodell definiert sind, mithilfe von adaptiven Formularregeln
 * Schreiben übermittelter Formulardaten in [!DNL Microsoft Dynamics]-Entitäten
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
+
+Sie können [Konfigurieren der Sendeaktion &quot;Formulardatenmodell&quot;](/help/forms/using-form-data-model.md) für ein adaptives Formular zum Senden von Daten an Microsoft Dynamics OData.
 
 Weitere Informationen über die Erstellung und Verwendung des Formulardatenmodells in Unternehmens-Workflows finden Sie unter [Datenintegration](data-integration.md).

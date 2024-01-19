@@ -5,10 +5,10 @@ Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, sale
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 100%
+source-wordcount: '482'
+ht-degree: 85%
 
 ---
 
@@ -24,6 +24,8 @@ Sie können OAuth 2.0-Client-Anmeldeinformationen verwenden, um AEM Forms in di
 ![Workflow beim Festlegen der Kommunikation zwischen AEM Forms und der Salesforce-Anwendung](/help/forms/assets/salesforce-workflow.png)
 
 AEM Forms tauscht die in der Salesforce Connect-Anwendung definierten Client-Anmeldeinformationen (Consumer Key und Consumer Secret) aus, um ein Zugriffs-Token zu erhalten.
+
+AEM as a Cloud Service bietet verschiedene vordefinierte Übermittlungsaktionen für die Verarbeitung von Formularübermittlungen. Weitere Informationen zu diesen Optionen finden Sie im Abschnitt [Übermittlungsaktion für adaptive Formulare](/help/forms/configure-submit-actions-core-components.md) Artikel.
 
 Die Verwendung von OAuth 2.0-Client-Anmeldeinformationen für die Authentifizierung hat gegenüber Authorization Code Flow mehrere Vorteile:
 
@@ -69,6 +71,9 @@ Führen Sie zum Verbinden des adaptiven Formulars mit der Salesforce-Anwendung m
 1. Klicken Sie auf **[!UICONTROL Verbindung testen]**.
 1. Wenn die Verbindung erfolgreich hergestellt wurde, klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**.
 
-Jetzt können Sie das [Formulardatenmodell erstellen](/help/forms/create-form-data-models.md), um das adaptive Formular an die Salesforce-Anwendung zu senden.
+
+Nachdem Sie die Salesforce-Anwendung konfiguriert haben, können Sie die Konfiguration beim Erstellen von Formulardatenmodellen verwenden. Weitere Informationen finden Sie unter [Formulardatenmodell erstellen](create-form-data-models.md). [Konfigurieren der Sendeaktion &quot;Formulardatenmodell&quot;](/help/forms/using-form-data-model.md) für ein adaptives Formular zum Senden von Daten an Salesforce-Anwendungen.
+
+Weitere Informationen über die Erstellung und Verwendung des Formulardatenmodells in Unternehmens-Workflows finden Sie unter [Datenintegration](data-integration.md).
 
 

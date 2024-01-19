@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 7cf7883e133d58145b5b3e1bb6ba8eb21ebad5d9
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1273'
 ht-degree: 4%
 
 ---
@@ -21,21 +21,23 @@ ht-degree: 4%
 
 Beispielsweise können Sie mit Workfront Fusion ein Szenario erstellen, um Daten mit dem adaptiven Formular zu erfassen, die Daten zu verarbeiten und die Daten zur Archivierung an einen Datenspeicher zu senden. Nachdem ein Szenario eingerichtet wurde, führt Workfront Fusion die Aufgaben automatisch aus, sobald ein Benutzer ein Formular ausfüllt, wodurch der Datenspeicher nahtlos aktualisiert wird.
 
+AEM as a Cloud Service bietet verschiedene vordefinierte Übermittlungsaktionen für die Verarbeitung von Formularübermittlungen. Weitere Informationen zu diesen Optionen finden Sie im Abschnitt [Übermittlungsaktion für adaptive Formulare](/help/forms/configure-submit-actions-core-components.md)  Artikel.
+
 ## Vorteile der Verwendung von Adobe Workfront Fusion{#advatages-of-workfront-fusion}
 
 Einige Vorteile der Verwendung von Adobe Workfront Fusion mit AEM Forms:
 
-- Senden von mit Adaptive Forms erfassten Daten an ein Workfront Fusion-Szenario
-- Automatisieren von Aufgaben, die weniger fehleranfällig sind.
-- Anpassen von Anforderungen, die für eine Organisation spezifisch sind, die nicht direkt in Workfront enthalten sind.
-- Umgang mit einfachen Logiken und einfachen Entscheidungen, z. B. if/then -Anweisungen.
+* Senden von mit Adaptive Forms erfassten Daten an ein Workfront Fusion-Szenario
+* Automatisieren von Aufgaben, die weniger fehleranfällig sind.
+* Anpassen von Anforderungen, die für eine Organisation spezifisch sind, die nicht direkt in Workfront enthalten sind.
+* Umgang mit einfachen Logiken und einfachen Entscheidungen, z. B. if/then -Anweisungen.
 
 ## Voraussetzungen für die Integration von AEM Forms in Adobe Workfront Fusion {#prerequisites}
 
 Voraussetzungen für die Verbindung von Workfront Fusion mit AEM Forms sind:
 
-- Eine gültige [Workfront Fusion-Lizenz](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-- Ein AEM Benutzer mit Zugriffsrechten [Entwicklerkonsole](https://my.cloudmanager.adobe.com/) nach [Dienstanmeldeinformationen abrufen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=de).
+* Eine gültige [Workfront Fusion-Lizenz](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* Ein AEM Benutzer mit Zugriffsrechten [Entwicklerkonsole](https://my.cloudmanager.adobe.com/) nach [Dienstanmeldeinformationen abrufen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=de).
 
 ## Integrieren von AEM Forms mit Adobe Workfront Fusion
 
@@ -100,16 +102,16 @@ So fügen Sie eine Verbindung hinzu:
    > Speichern Sie die `https://` im **IMS-Endpunkt** Textfeld beim Hinzufügen `imsEndpoint` URL.
 
 1. Geben Sie die folgenden Werte in der **[!UICONTROL Verbindung erstellen]** Dialogfeld:
-   - Angeben **Client-ID** mit dem Wert von **clientId** über die Dienstanmeldeinformationen in der Entwicklerkonsole.
-   - Angeben **Client Secret** mit dem Wert von **clientSecret** über die Dienstanmeldeinformationen in der Entwicklerkonsole.
-   - Angeben **Technische Konto-ID**  mit dem Wert von **id** über die Dienstanmeldeinformationen in der Entwicklerkonsole.
-   - Angeben **Organisations-ID**  mit dem Wert von **org** über die Dienstanmeldeinformationen in der Entwicklerkonsole.
-   - **Meta-Bereiche**  mit dem Wert von **Metaskope** über die Dienstanmeldeinformationen in der Entwicklerkonsole.
-   - **Private Schlüssel**  mit dem Wert von **privateKey** über die Dienstanmeldeinformationen in der Entwicklerkonsole.
+   * Angeben **Client-ID** mit dem Wert von **clientId** über die Dienstanmeldeinformationen in der Entwicklerkonsole.
+   * Angeben **Client Secret** mit dem Wert von **clientSecret** über die Dienstanmeldeinformationen in der Entwicklerkonsole.
+   * Angeben **Technische Konto-ID**  mit dem Wert von **id** über die Dienstanmeldeinformationen in der Entwicklerkonsole.
+   * Angeben **Organisations-ID**  mit dem Wert von **org** über die Dienstanmeldeinformationen in der Entwicklerkonsole.
+   * **Meta-Bereiche**  mit dem Wert von **Metaskope** über die Dienstanmeldeinformationen in der Entwicklerkonsole.
+   * **Private Schlüssel**  mit dem Wert von **privateKey** über die Dienstanmeldeinformationen in der Entwicklerkonsole.
 
    >[!NOTE]
    >
-   >- Für **Privater Schlüssel**, entfernen `\r\n` aus dem Wert.
+   >* Für **Privater Schlüssel**, entfernen `\r\n` aus dem Wert.
    >  Wenn der Wert des privaten Schlüssels beispielsweise:
    >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`nach dem Entfernen der `\r\n` aus dem privaten Schlüssel würde der Schlüssel wie folgt aussehen, wobei beide Werte in einer separaten Zeile angezeigt werden:
    >
@@ -117,7 +119,7 @@ So fügen Sie eine Verbindung hinzu:
    >
    >   `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
    > 
-   >- Sie können auch einen privaten Schlüssel oder ein Zertifikat aus der Datei abrufen, indem Sie die **Extract** Schaltfläche.
+   >* Sie können auch einen privaten Schlüssel oder ein Zertifikat aus der Datei abrufen, indem Sie die **Extract** Schaltfläche.
 
 1. Klicken Sie auf **Weiter**.
 
@@ -144,8 +146,8 @@ Wenn Sie auf die Umschalter-Schaltfläche klicken, wird das Workfront-Szenario i
 ### 2. Konfigurieren der Sendeaktion eines adaptiven Formulars für Workfront Fusion
 
 Sie können die Übermittlungsaktion für Workfont Fusion konfigurieren für:
-- [Neue adaptive Forms](#new-af-submit-action)
-- [Vorhandene adaptive Formulare](#existing-af-submit-action)
+* [Neue adaptive Forms](#new-af-submit-action)
+* [Vorhandene adaptive Formulare](#existing-af-submit-action)
 
 #### Konfigurieren der Sendeaktion für das neue adaptive Formular für Workfront Fusion {#new-af-submit-action}
 
@@ -187,7 +189,11 @@ So konfigurieren Sie die Sendeaktion des vorhandenen adaptiven Formulars für Wo
 
 ## Best Practices {#best-practices}
 
-- Es wird empfohlen, Ihren Webhook-Namen sorgfältig auszuwählen, da es nicht möglich ist, den Namen des Szenarios in der AEM-Instanz zu erhalten. Falls Sie den Webhook-Namen in Zukunft ändern, wird er nicht in der Dropdown-Liste für die Übermittlungsaktion für AEM Forms angezeigt.
-- Ein Szenario kann über mehrere Webhook-Links verfügen, gleichzeitig ist jedoch nur ein Webhook-Link aktiv. Es wird empfohlen, den nicht verknüpften Webhook zu löschen, damit er nicht in der Dropdown-Liste für Übermittlungsaktionen in AEM Forms angezeigt wird.
+* Es wird empfohlen, Ihren Webhook-Namen sorgfältig auszuwählen, da es nicht möglich ist, den Namen des Szenarios in der AEM-Instanz zu erhalten. Falls Sie den Webhook-Namen in Zukunft ändern, wird er nicht in der Dropdown-Liste für die Übermittlungsaktion für AEM Forms angezeigt.
+* Ein Szenario kann über mehrere Webhook-Links verfügen, gleichzeitig ist jedoch nur ein Webhook-Link aktiv. Es wird empfohlen, den nicht verknüpften Webhook zu löschen, damit er nicht in der Dropdown-Liste für Übermittlungsaktionen in AEM Forms angezeigt wird.
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
+
+## Ähnliche Artikel
+
+{{af-submit-action}}

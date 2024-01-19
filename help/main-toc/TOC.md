@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 104dfd255185816983674026a84337624a851d9a
+source-git-commit: cb817f2ce94a1618fd8dd73834f663e8aaed2b7f
 workflow-type: tm+mt
-source-wordcount: '4551'
-ht-degree: 96%
+source-wordcount: '4600'
+ht-degree: 95%
 
 ---
 
@@ -609,6 +609,12 @@ ht-degree: 96%
             + [Konfigurieren der Umleitungsseite oder der Dankesnachricht](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Erstellen von Formularen mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
             + [Konfigurieren der Übermittlungsaktion für ein adaptives Formular](/help/forms/configure-submit-actions-core-components.md)
+            + [Senden eines adaptiven Formulars an Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+            + [Senden eines adaptiven Formulars an Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
+            + [Konfigurieren des SharePoint-Speichers für ein adaptives Formular](/help/forms/configure-submit-action-sharepoint.md)
+            + [Integrieren AEM adaptiven Formulars in AEM Workflow](/help/forms/configure-submit-action-workflow.md)
+            + [Konfigurieren der Sendeaktion &quot;An REST-Endpunkt übermitteln&quot;für die adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
+            + [Konfigurieren der Sendeaktion &quot;E-Mail senden&quot;für ein adaptives Formular](/help/forms/configure-submit-action-send-email.md)
             + [Verwenden von Google reCAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Hinzufügen eines benutzerdefinierten Fehler-Handlers in einem adaptiven Formular](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Hinzufügen eines Gebietsschemas für auf Kernkomponenten basierende adaptive Formulare](/help/forms/supporting-new-language-localization-core-components.md)
