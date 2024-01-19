@@ -3,10 +3,10 @@ title: Versionshinweise für Cloud Manager 2024.1.0 in Adobe Experience Manager 
 description: Dies sind die Versionshinweise für Cloud Manager 2024.1.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a00eb97859f679ade3a4a6d89a427735451ebd70
+source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 63%
+source-wordcount: '673'
+ht-degree: 53%
 
 ---
 
@@ -21,7 +21,12 @@ Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2024.1.0 in AE
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager -Version 2024.1.0 in AEM as a Cloud Service wurde am 18. Januar 2024 veröffentlicht.
+Die Cloud Manager -Version 2024.1.0 in AEM as a Cloud Service wurde am 18. Januar 2024 veröffentlicht. Die nächste Version ist für den 16. Februar 2024 geplant.
+
+## Neue Funktionen {#what-is-new}
+
+* Cloud Manager überprüft jetzt nicht nur die Hauptdatumswerte [Zertifikat,](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) aber auch für Zwischenzertifikate.
+* CDN [logs](/help/implementing/cloud-manager/manage-logs.md) werden nun in einem komprimierten Format zurückgegeben.
 
 ## Early-Adopter-Programm {#early-adoption}
 
@@ -61,3 +66,8 @@ Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie
 Das Dashboard verwendet Google Lighthouse, ein automatisiertes Open-Source-Tool zur Verbesserung der Qualität Ihrer Web-Anwendungen. Sie können es für jede Web-Seite ausführen, egal ob öffentlich oder authentifizierungspflichtig. Es enthält Prüfungen für Leistung, Barrierefreiheit, progressive Web-Apps, SEO und mehr.
 
 Möchten Sie das neue Dashboard testen? Senden Sie zunächst eine E-Mail an `aem-lighthouse-pilot@adobe.com` aus Ihrer mit Ihrer Adobe ID verknüpften E-Mail.
+
+## Fehlerbehebungen {#bug-fixes}
+
+* Es wurde ein Fehler behoben, bei dem Konfigurationspipelines beim Build-Schritt fehlschlugen und eine unklare Fehlermeldung angezeigt wurde, wenn der Speicherort der Konfigurationsdateien nicht ordnungsgemäß festgelegt wurde. Die Fehlermeldung ist jetzt klar und weist darauf hin, dass der Benutzer prüfen sollte, ob der Speicherort der Konfigurationsdateien korrekt ist.
+* Wenn ein Build-Schritt mit dem Status abgeschlossen wird `FAILED` aufgrund einer `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, wird sie nun aufgrund von Zusammenführungskonflikten mit der Zielverzweigung ordnungsgemäß als Fehler beschrieben.
