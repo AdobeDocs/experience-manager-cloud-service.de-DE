@@ -1,12 +1,12 @@
 ---
 title: Caching in AEM as a Cloud Service
-description: Erfahren Sie mehr über die Grundlagen der Zwischenspeicherung in AEM as a Cloud Service
+description: Erfahren Sie mehr über die Caching-Grundlagen in AEM as a Cloud Service.
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
+source-git-commit: 28537409c5974ff8ade30207f16cc62b45c47616
 workflow-type: tm+mt
-source-wordcount: '2865'
-ht-degree: 90%
+source-wordcount: '2894'
+ht-degree: 95%
 
 ---
 
@@ -87,7 +87,7 @@ Diese Methode kann beispielsweise nützlich sein, wenn die Geschäftslogik eine 
 
 ### Bilder und alle Inhalte, die groß genug sind, um im Blob-Speicher gespeichert zu werden {#images}
 
-Das Standardverhalten von Programmen, die nach Mitte Mai 2022 erstellt wurden (insbesondere bei Programm-IDs über 65000), besteht darin, standardmäßig den Cache zu speichern, wobei auch der Authentifizierungskontext der Anfrage berücksichtigt wird. Ältere Programme (Programm-IDs kleiner/gleich 65000) speichern Blob-Inhalte nicht standardmäßig.
+Das Standardverhalten von Programmen, die nach Mitte Mai 2022 erstellt wurden (insbesondere bei Programm-IDs über 65000), besteht darin, standardmäßig zwischenzuspeichern. Dabei wird auch der Authentifizierungskontext der Anfrage berücksichtigt. Ältere Programme (Programm-IDs kleiner oder gleich 65000) speichern Blob-Inhalte nicht standardmäßig.
 
 In beiden Fällen können die Caching-Kopfzeilen auf einer detaillierteren Ebene auf Apache-/Dispatcher-Ebene überschrieben werden, indem die `mod_headers`-Anweisungen von Apache verwendet werden, Beispiel: 
 
@@ -98,9 +98,9 @@ In beiden Fällen können die Caching-Kopfzeilen auf einer detaillierteren Ebene
    </LocationMatch>
 ```
 
-Achten Sie beim Ändern der Caching-Header auf der Dispatcher-Ebene darauf, nicht zu weitläufig zwischenzuspeichern. Siehe die Diskussion im Abschnitt HTML/Text [oben](#html-text). Stellen Sie außerdem sicher, dass Assets, die privat bleiben sollen (und nicht zwischengespeichert werden sollen), nicht Teil der Filter der `LocationMatch`-Anweisung sind.
+Achten Sie beim Ändern der Caching-Header auf der Dispatcher-Ebene darauf, nicht zu weitläufig zwischenzuspeichern. Siehe die Diskussion im Abschnitt HTML/Text [oben](#html-text). Stellen Sie außerdem sicher, dass Assets, die privat bleiben sollen (und nicht zwischengespeichert werden sollen), nicht Teil der Filter der Anweisung `LocationMatch` sind.
 
-JCR-Ressourcen (größer als 16 KB), die im Blob Store gespeichert sind, werden von AEM normalerweise als 302-Weiterleitungen bereitgestellt. Diese Umleitungen werden abgefangen und vom CDN gefolgt und der Inhalt wird direkt aus dem Blob Store bereitgestellt. Nur eine begrenzte Anzahl von Headern kann für diese Antworten angepasst werden. So können Sie beispielsweise `Content-Disposition` Sie sollten die Dispatcher-Anweisungen wie folgt verwenden:
+JCR-Ressourcen (größer als 16 KB), die im Blob Store gespeichert sind, werden von AEM normalerweise als 302-Weiterleitungen bereitgestellt. Diese Weiterleitungen werden abgefangen, ihnen wird vom CDN gefolgt und der Inhalt wird direkt aus dem Blob Store bereitgestellt. Für diese Antworten kann nur eine begrenzte Anzahl von Kopfzeilen angepasst werden. Zum Beispiel sollten Sie zum Anpassen von `Content-Disposition` die Dispatcher-Anweisungen wie folgt verwenden:
 
 ```
 <LocationMatch "\.(?i:pdf)$">
@@ -109,7 +109,7 @@ JCR-Ressourcen (größer als 16 KB), die im Blob Store gespeichert sind, werden 
   </LocationMatch>
 ```
 
-Die Liste der Header, die für Blob-Antworten angepasst werden können, ist:
+Die Liste der Kopfzeilen, die für Blob-Antworten angepasst werden können, lautet wie folgt:
 
 ```
 content-security-policy
@@ -224,23 +224,27 @@ Jetzt können Bilder im Blob-Speicher, die als „privat“ gekennzeichnet sind,
      </LocationMatch>
      ```
 
+### Analysieren des CDN-Cache-Trefferverhältnisses {#analyze-chr}
+
+Siehe [Tutorial zur Analyse der Cache-Trefferquote](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) Informationen zum Herunterladen von CDN-Protokollen und zum Analysieren des Cache-Trefferverhältnisses Ihrer Site mithilfe eines Dashboards.
+
 ### HEAD-Anfrageverhalten {#request-behavior}
 
 Wenn eine HEAD-Anfrage im Adobe-CDN für eine Ressource empfangen wird, die **nicht** zwischengespeichert wird, wird die Anfrage umgewandelt und vom Dispatcher und/oder der AEM-Instanz als GET-Anfrage empfangen. Wenn die Antwort zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen vom CDN bereitgestellt. Wenn die Antwort nicht zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen für einen Zeitraum, der von der `Cache-Control`-TTL abhängt, an den Dispatcher oder an die AEM-Instanz oder an beide übertragen.
 
 ### Parameter von Marketing-Kampagnen {#marketing-parameters}
 
-Website-URLs enthalten häufig Marketing-Kampagnenparameter, mit denen der Erfolg einer Kampagne verfolgt wird.
+Website-URLs enthalten häufig Marketing-Kampagnenparameter, mit denen der Erfolg einer Kampagne verfolgt werden kann.
 
-In Umgebungen, die im Oktober 2023 oder höher erstellt wurden, entfernt das CDN gängige Marketing-bezogene Abfrageparameter, insbesondere diejenigen, die dem folgenden Regex-Muster entsprechen, um Cache-Anforderungen zu verbessern:
+Zur Verbesserung von Cache-Anforderungen entfernt das CDN gängige Marketing-bezogene Abfrageparameter in Umgebungen, die im Oktober 2023 oder später erstellt wurden, insbesondere diejenigen, die dem folgenden Regex-Muster entsprechen:
 
 ```
 ^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
 ```
 
-Senden Sie ein Support-Ticket, wenn Sie möchten, dass dieses Verhalten deaktiviert wird.
+Reichen Sie ein Support-Ticket ein, wenn Sie möchten, dass dieses Verhalten deaktiviert wird.
 
-Für Umgebungen, die vor Oktober 2023 erstellt wurden, wird empfohlen, die `ignoreUrlParams` Eigenschaft als [hier dokumentiert](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#ignoring-url-parameters).
+Für Umgebungen, die vor Oktober 2023 erstellt wurden, wird empfohlen, die Eigenschaft `ignoreUrlParams` der Dispatcher-Konfiguration wie [hier dokumentiert](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#ignoring-url-parameters) zu konfigurieren.
 
 Es gibt zwei Möglichkeiten, Marketing-Parameter zu ignorieren. (Dabei wird das Cache-Busting über Abfrageparameter bevorzugt ignoriert):
 
