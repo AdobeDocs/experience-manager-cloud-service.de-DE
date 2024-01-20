@@ -2,10 +2,10 @@
 title: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 description: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 16aa0241dd954b7f66523d746827d81b956578bd
+source-git-commit: b1c5df329e45128704ae82f49673c6a755a61a73
 workflow-type: tm+mt
-source-wordcount: '1379'
-ht-degree: 95%
+source-wordcount: '1573'
+ht-degree: 85%
 
 ---
 
@@ -15,14 +15,27 @@ Im folgenden Abschnitt finden Sie allgemeine Versionshinweise zu [!DNL Workfront
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für die neueste Version 1.9.15 von [!DNL Workfront for Experience Manager enhanced connector] ist der 17. November 2023.
+Das Veröffentlichungsdatum für die neueste Version 1.9.16 von [!DNL Workfront for Experience Manager enhanced connector] ist der Samstag, 19. Januar 2024.
 
 ## Die Highlights der Version {#release-highlights}
 
 Die neueste Version von [!DNL Workfront for Experience Manager enhanced connector] enthält die folgenden Verbesserungen und Fehlerbehebungen:
 
-* Beim Anzeigen der Liste AEM Ordner dauert das Laden des Dialogfelds mehr als eine Minute.
-* Autorisiert [!DNL Workfront] Benutzer erhalten durchweg Fehlerprotokolle zu Authentifizierungsfehlern.
+* Die [!DNL Workfront] Konfiguration in [!DNL CRX DE] speichert derzeit nicht die `project ID`, wodurch beim Anwenden der schreibgeschützten Berechtigung Fehler verursacht werden. Erfahren Sie mehr über das [Berechtigungen konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
+
+* Keine öffentliche Dokumentation zum Hinzufügen einer benutzerdefinierten Eigenschaft zur vordefinierten Indexdefinition. Weitere Informationen [Hinzufügen benutzerdefinierter Eigenschaften](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping).
+
+* Das Löschen von Verbindungskonfigurationen auf dem erweiterten Connector wirkt sich erheblich auf Ereignisabonnements und andere gespeicherte Konfigurationen aus, sodass sie auf eine alte URL verweisen.
+
+* Beim Installieren des Add-On-Pakets für Formulare wird das **[!UICONTROL Router umschalten]**, was zum Scheitern der [!DNL WFEC AMS environment Toggle] Funktion.
+
+* Die Aktivierung von Ereignisabonnements bei der Einrichtung des EWC führt zu wiederholten API-Aufruffehlern bei `HTTP 400` bei der Einrichtung [!DNL Workfront] verbesserter Connector für das erste Mal.
+
+* Beim Löschen von Kommentaren zu verknüpften Ordner-Assets in Workfront kann der verknüpfte Ordnerpfad auf AEM nicht gefunden werden.
+
+* Eine unzureichende Unterstützung für große Datei-Assets in AEM führt zu einem Problem mit der Größe von 4 Byte.
+
+* Keine Verarbeitung der Anfragezeit für kritische Flüsse in verknüpften Ordnern, Dokumentaktualisierungen und Aktualisierungen von Notizen.
 
 >[!NOTE]
 >
@@ -31,7 +44,7 @@ Die neueste Version von [!DNL Workfront for Experience Manager enhanced connecto
 
 >[!IMPORTANT]
 >
->Adobe empfiehlt eine [Aktualisierung auf die neueste Version 1.9.15](/help/assets/workfront-connector-install.md) des [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe empfiehlt, [Aktualisierung auf die neueste Version 1.9.16](/help/assets/workfront-connector-install.md) des [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekannte Probleme {#known-issues}
 
@@ -40,6 +53,11 @@ Die neueste Version von [!DNL Workfront for Experience Manager enhanced connecto
 * Wenn Sie das klassische Workfront-Erlebnis verwenden, wird die **[!UICONTROL Senden an]** -Option verfügbar im **[!UICONTROL Mehr]** in der Dropdown-Liste können Sie das Ziel nicht innerhalb von Experience Manager auswählen. Die Option **[!UICONTROL Senden an]** funktioniert korrekt über die Dropdown-Liste **[!UICONTROL Dokumentenaktionen]**. Die Option **[!UICONTROL Senden an]** funktioniert korrekt für die Dropdown-Liste **[!UICONTROL Mehr]** und die Dropdown-Liste **[!UICONTROL Dokumentenaktionen]**, die in dem neuen Workfront-Erlebnis verfügbar sind.
 
 ## Frühere Versionen {#previous-releases}
+
+### Version vom November 2023 {#november-2023-release}
+
+* Beim Anzeigen der Liste AEM Ordner dauert das Laden des Dialogfelds mehr als eine Minute.
+* Autorisiert [!DNL Workfront] Benutzer erhalten durchweg Fehlerprotokolle zu Authentifizierungsfehlern.
 
 ### Version Oktober 2023 {#october-2023-release}
 
