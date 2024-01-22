@@ -5,7 +5,7 @@ exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 95%
 >id="aemcloud_chooseteam"
 >title="Wählen des richtigen Teams"
 >abstract="Stellen Sie die richtigen Mitarbeiter in die richtigen Positionen ein, um Ihre Adobe Experience Manager-Bereitstellung erfolgreich zu gestalten."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="Ausrichten von KPIs"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html" text="Bewerten von KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=de" text="Ausrichten von KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=de" text="Bewerten von KPIs"
 
 Wahrscheinlich sind in Ihrer Organisation mehrere Abteilungen für verschiedene Aspekte des digitalen Erlebnisses zuständig. Ohne Steuerung sind die Voraussetzungen für endlose Debatten, Kämpfe und Verwirrung geschaffen.
 

@@ -5,7 +5,7 @@ exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '482'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 99%
 >id="aemcloud_alignkpis"
 >title="Ausrichten von KPIs"
 >abstract="In unserer digitalen Welt kann fast alles gemessen werden. Die Wahl der richtigen KPIs für Ihre Adobe Experience Manager-Implementierung trägt dazu bei, dass sich Ihr Team auf das konzentrieren kann, was am wichtigsten ist."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html" text="Bewerten von KPIs"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html" text="Auswahl des richtigen Teams"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=de" text="Bewerten von KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=de" text="Auswahl des richtigen Teams"
 
 In unserer digitalen Welt kann fast alles gemessen werden. Die Wahl der drei KPIs für Ihre Adobe Experience Manager-Implementierung trägt dazu bei, dass sich Ihr Team auf das konzentrieren kann, was am wichtigsten ist.
 
