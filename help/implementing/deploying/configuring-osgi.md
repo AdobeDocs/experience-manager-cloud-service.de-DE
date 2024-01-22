@@ -3,24 +3,25 @@ title: Konfigurieren von OSGi für Adobe Experience Manager as a Cloud Service
 description: OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen Werten
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
 workflow-type: tm+mt
-source-wordcount: '3265'
-ht-degree: 97%
+source-wordcount: '3269'
+ht-degree: 98%
 
 ---
 
-# Konfigurieren von OSGi für Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
->[!NOTE]
->
->AEM hat mit Version 2021.12.0 die Möglichkeit eingeführt, die Cloud Manager-Benutzeroberfläche zu verwenden, um standardmäßige Umgebungsvariablen zu konfigurieren. Weitere Informationen finden Sie in der Dokumentation [hier](/help/implementing/cloud-manager/environment-variables.md).
+# Konfigurieren von OSGi für Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [OSGi](https://www.osgi.org/) ist ein wesentlicher Bestandteil der Technologien von Adobe Experience Manager (AEM). OSGi wird zur Steuerung der AEM-Bundles und ihrer Konfigurationen verwendet.
 
 OSGi bietet standardisierte Grundbausteine – kleine, wiederverwendbare, gemeinsame genutzte Komponenten. Diese Komponenten können zu einem Programm zusammengefügt und bereitgestellt werden. Dies ermöglicht die einfache Verwaltung von OSGi-Bundles, da diese einzeln angehalten, installiert und gestartet werden können. Die gegenseitigen Abhängigkeiten werden automatisch verwaltet. Jede OSGi-Komponente ist in einem der verschiedenen Bundles enthalten. Weitere Informationen finden Sie in der [OSGi-Spezifikation](https://help.eclipse.org/latest/index.jsp).
 
 Sie können die Konfigurationseinstellungen für OSGi-Komponenten mithilfe von Konfigurationsdateien verwalten, die Teil eines AEM-Code-Projekts sind.
+
+>[!TIP]
+>
+>Sie können Cloud Manager verwenden, um Umgebungsvariablen zu konfigurieren. Weitere Informationen finden Sie in der Dokumentation . [hier.](/help/implementing/cloud-manager/environment-variables.md)
 
 ## OSGi-Konfigurationsdateien {#osgi-configuration-files}
 
@@ -79,9 +80,9 @@ Ausführungsmodi von AEM as a Cloud Service sind basierend auf dem Umgebungstyp 
 Die vom Ausführungsmodus bestimmten OSGi-Konfigurationswerte können wie folgt überprüft werden:
 
 1. Öffnen der [Entwicklerkonsole](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=de) für die Umgebung in AEM as a Cloud Service
-1. Auswahl der zu prüfenden Dienstebenen mithilfe der __Pod__ Dropdown-Liste
+1. Auswählen der zu prüfenden Service-Ebene(n) mithilfe des Dropdown-Menüs __Pod__
 1. Auswählen der Registerkarte __Status__
-1. Auswählen __Konfigurationen__ aus dem __Status-Dump__ Dropdown-Liste
+1. Auswählen von __Konfigurationen__ im Dropdown-Menü __Status-Dump__
 1. Auswählen der Schaltfläche __Status abrufen__
 
 In der resultierenden Ansicht werden alle OSGi-Komponentenkonfigurationen für die ausgewählte(n) Ebene(n) mit den entsprechenden OSGi-Konfigurationswerten angezeigt. Diese Werte können mit den OSGi-Konfigurationswerten im Quellcode des AEM-Projekts unter `/apps/example/osgiconfig/config.<runmode(s)>` abgeglichen werden.
@@ -157,7 +158,7 @@ Beginnen Sie bei der Definition eines OSGi-Konfigurationswerts mit Inline-Werten
 Verwenden Sie nur umgebungsspezifische Konfigurationen (`$[env:ENV_VAR_NAME]`) für nicht geheime Konfigurationswerte, wenn die Werte für die Vorschauebene variieren oder in den Entwicklungsumgebungen variieren. Dazu gehören lokale Entwicklungsinstanzen und alle Entwicklungsumgebungen von Adobe Experience Manager as a Cloud Service. Vermeiden Sie außer zum Festlegen eindeutiger Werte für die Vorschauebene die Verwendung nicht geheimer umgebungsspezifischer Konfigurationen für Adobe Experience Manager as a Cloud Service-Staging- oder -Produktionsumgebungen.
 
 * Verwenden Sie nicht geheime umgebungsspezifische Konfigurationen nur für Konfigurationswerte, die sich zwischen Veröffentlichungs- und Vorschauebene unterscheiden, oder für Werte, die sich zwischen Entwicklungsumgebungen, einschließlich lokaler Entwicklungsinstanzen, unterscheiden.
-* Verwenden Sie neben dem Szenario, in dem die Vorschaustufe von der Veröffentlichungsstufe abweichen muss, die standardmäßigen Inline-Werte in den OSGi-Konfigurationen für nicht geheime Werte der Staging- und Produktionsebene. In diesem Zusammenhang wird von der Verwendung umgebungsspezifischer Konfigurationen abgeraten, um die Durchführung von Konfigurationsänderungen zur Laufzeit in Staging- und Produktionsumgebungen zu erleichtern. Diese Änderungen sollten über die Quell-Code-Verwaltung eingeführt werden.
+* Verwenden Sie abgesehen von dem Szenario, in dem die Vorschauebene von der Veröffentlichungsebene abweichen muss, die standardmäßigen Inline-Werte in den OSGi-Konfigurationen für nicht geheime Werte der Staging- und Produktionsumgebung. In diesem Zusammenhang wird von der Verwendung umgebungsspezifischer Konfigurationen abgeraten, um die Durchführung von Konfigurationsänderungen zur Laufzeit in Staging- und Produktionsumgebungen zu erleichtern. Diese Änderungen sollten über die Quell-Code-Verwaltung eingeführt werden.
 
 ### Verwendung geheimer umgebungsspezifischer Konfigurationswerte {#when-to-use-secret-environment-specific-configuration-values}
 
@@ -514,6 +515,10 @@ Auf [dieser Seite](https://developer.adobe.com/experience-cloud/cloud-manager/do
 >
 >Stellen Sie sicher, dass der verwendeten Cloud Manager-API die Rolle „Bereitstellungs-Manager - Cloud Service“ zugewiesen wurde. Andere Rollen können nicht alle folgenden Befehle ausführen.
 
+>[!TIP]
+>
+>Sie können auch Cloud Manager verwenden, um Umgebungsvariablen zu konfigurieren. Weitere Informationen finden Sie in der Dokumentation . [hier.](/help/implementing/cloud-manager/environment-variables.md)
+
 ### Festlegen von Werten über API {#setting-values-via-api}
 
 Durch den Aufruf der API werden die neuen Variablen und Werte in einer Cloud-Umgebung bereitgestellt, ähnlich wie bei einer typischen Bereitstellungs-Pipeline für Kunden-Code. Die Authoring- und Publishing-Services werden neu gestartet und verweisen auf die neuen Werte. Dies dauert normalerweise einige Minuten.
@@ -522,8 +527,8 @@ Durch den Aufruf der API werden die neuen Variablen und Werte in einer Cloud-Umg
 PATCH /program/{programId}/environment/{environmentId}/variables
 ```
 
-```
-]
+```json
+[
         {
                 "name" : "MY_VAR1",
                 "value" : "plaintext value",
@@ -594,7 +599,7 @@ Pro Umgebung können bis zu 200 Variablen deklariert werden.
 
 Da die geheimen und umgebungsspezifischen Konfigurationswerte außerhalb von Git bestehen und daher nicht Teil der formellen Adobe Experience Manager as a Cloud Service-Bereitstellungsmechanismen sind, sollte der Kunde sie verwalten, steuern und in den Adobe Experience Manager as a Cloud Service-Bereitstellungsprozess integrieren.
 
-Wie oben erwähnt, werden durch den Aufruf der API die neuen Variablen und Werte in Cloud-Umgebungen bereitgestellt, ähnlich wie bei einer typischen Bereitstellungs-Pipeline für Kunden-Code. Die Authoring- und Publishing-Services werden neu gestartet und verweisen auf die neuen Werte. Dies dauert normalerweise einige Minuten. Die Qualitätstests und Tests, die von Cloud Manager während einer regulären Codebereitstellung ausgeführt werden, werden während dieses Prozesses nicht ausgeführt.
+Wie oben erwähnt, werden durch den Aufruf der API die neuen Variablen und Werte in Cloud-Umgebungen bereitgestellt, ähnlich wie bei einer typischen Bereitstellungs-Pipeline für Kunden-Code. Die Authoring- und Publishing-Services werden neu gestartet und verweisen auf die neuen Werte. Dies dauert normalerweise einige Minuten. Die Qualitäts-Gates und Tests, die von Cloud Manager während einer regulären Code-Bereitstellung ausgeführt werden, werden während dieses Prozesses nicht ausgeführt.
 
 Normalerweise würden Kunden die API aufrufen, um Umgebungsvariablen zu setzen, bevor sie Code bereitstellen, der sich in Cloud Manager auf diese Variablen verlässt. In einigen Situationen kann es sinnvoll sein, eine vorhandene Variable zu ändern, nachdem der Code bereits bereitgestellt wurde.
 

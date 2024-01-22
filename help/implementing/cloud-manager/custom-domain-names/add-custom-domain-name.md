@@ -2,12 +2,13 @@
 title: Hinzufügen eines benutzerdefinierten Domain-Namens
 description: Erfahren Sie, wie Sie mit Cloud Manager einen benutzerdefinierten Domain-Namen hinzufügen.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 52466e091cf6e0ab1ac620e15568c04881a3b63a
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 94%
+source-wordcount: '680'
+ht-degree: 87%
 
 ---
+
 
 # Hinzufügen eines benutzerdefinierten Domain-Namens {#adding-cdn}
 
@@ -60,17 +61,21 @@ Für die CDN-Bereitstellung sind ein gültiges SSL-Zertifikat und eine erfolgrei
 
 Unter [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) erhalten Sie weitere Informationen zu den verschiedenen Status und dem Umgang mit potenziellen Problemen.
 
+>[!TIP]
+>
+>Lesen Sie den folgenden Artikel über die Notwendigkeit [Hinzufügen von CNAME oder A Record als Nächstes](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) um den doppelten Aufwand beim Hinzufügen von DNS-Einträgen zu Ihrer benutzerdefinierten Domäne zu vermeiden. Der TXT-Eintrag und der CNAME oder A Record können gleichzeitig auf dem herrschenden DNS-Server festgelegt werden.
+
+>[!TIP]
+>
+>Weitere Informationen zu TXT-Einträgen finden Sie unter [Hinzufügen eines TXT-Eintrags](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
+
 >[!NOTE]
 >
 >Die Verarbeitung der DNS-Verifizierung kann aufgrund von Verzögerungen bei der DNS-Verbreitung einige Stunden dauern.
 >
 >Cloud Manager überprüft die Eigentümerschaft und aktualisiert den Status, der in der Tabelle der Domain-Einstellungen zu sehen ist. Siehe [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) für weitere Details.
 
->[!TIP]
->
->Weitere Informationen zu TXT-Einträgen finden Sie unter [Hinzufügen eines TXT-Eintrags](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
-
-## Hinzufügen eines benutzerdefinierten Domain-Namens über die Seite mit den Umgebungen {#adding-cdn-environments}
+## Hinzufügen eines benutzerdefinierten Domänennamens von der Seite &quot;Umgebungen&quot; {#adding-cdn-environments}
 
 Führen Sie die folgenden Schritte von der Seite **Umgebungen** aus, um einen benutzerdefinierten Domain-Namen hinzuzufügen.
 
