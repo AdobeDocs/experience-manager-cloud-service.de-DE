@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: fa57e0438a7570551785375c4e5a57fa38fd2f6f
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 98%
+source-wordcount: '1953'
+ht-degree: 90%
 
 ---
 
@@ -60,18 +60,53 @@ Aus diesen Gründen erhalten Sie mit [!DNL Assets] die richtigen Mittel, um Meta
 
 ## Metadatentypen {#types-of-metadata}
 
-Die beiden grundlegenden Metadatentypen sind technische Metadaten und beschreibende Metadaten.
+Metadaten werden als technische, informative und administrative Metadaten klassifiziert.
 
-Technische Metadaten eignen sich für Software-Programme, die mit digitalen Assets arbeiten und nicht manuell gepflegt werden sollen. [!DNL Experience Manager Assets] und andere Software ermitteln technische Metadaten automatisch. Die Metadaten können sich ändern, wenn das Asset geändert wird. Die verfügbaren technischen Metadaten für ein Asset hängen größtenteils vom Dateityp des Assets ab. Beispiele für technische Metadaten:
+### Technische Metadaten
 
-* Größe einer Datei.
-* Abmessungen (Höhe und Breite) eines Bildes.
-* Bitrate einer Audio- oder Videodatei.
-* Auflösung (Detaillierungsgrad) eines Bildes.
+Technische Metadaten konzentrieren sich auf die technischen Aspekte digitaler Assets und liefern wichtige Informationen zu:
 
-Beschreibende Metadaten sind solche, die sich auf die Programm-Domain beziehen – etwa das Unternehmen, aus dem ein Asset stammt. Beschreibende Metadaten können nicht automatisch bestimmt werden. Sie werden manuell oder halbautomatisch erstellt. Beispielsweise kann eine GPS-fähige Kamera automatisch den Längen- und Breitengrad verfolgen und das Bild mit einem Geotag versehen.
+* Dateigröße
+* Format
+* Auflösung
+* Dimensionen
+* Farbmodus
 
-Die Kosten für die manuelle Erstellung beschreibender Metadateninformationen sind hoch. Daher werden Standards festgelegt, um den Austausch von Metadaten zwischen Software-Systemen und Organisationen zu erleichtern. [!DNL Experience Manager Assets] unterstützt alle relevanten Standards für die Metadatenverwaltung.
+Dieser Metadatentyp hilft Benutzern, digitale Assets zu verstehen und effizient zu verwenden.
+
+### Informative Metadaten
+
+Informationsmetadaten bieten deskriptive Informationen zur Verbesserung des Verständnisses von Inhalten und erleichtern die Inhaltserkennung und -suche. Er enthält Suchbegriffe, Beschriftungen und Beschreibungen. <br>Wenn Sie beispielsweise ein Video in Experience Manager Assets verwalten, können wir die folgenden Informationsmetadaten einbeziehen:
+
+* **Schlüsselwörter**: Marketing, Produktstart, Promo
+* **Beschriftung**: Einführung unseres neuesten Produkts mit spannenden Funktionen
+* **Beschreibung**: Eine detaillierte Übersicht über den Videoinhalt.
+
+### Administrative Metadaten
+
+Administrative Metadaten behandeln die Managementaspekte digitaler Assets. Sie stellt die Zugriffskontrolle, die Compliance und die Verwaltung des gesamten Lebenszyklus von Assets innerhalb des Digital Asset Management-Systems sicher. Er enthält Informationen zu:
+
+* Asset-Besitz
+* Nutzungsrechte
+* Berechtigungen
+* Weitere Verwaltungsdetails
+
+Dieser Metadatentyp gewährleistet eine effektive Asset-Verwaltung, Zugriffskontrolle und Compliance.
+
+<!-- Learn more about [metadata best practices](metadata-best-practices.md) to manage your digital assets effectively. -->
+
+<!-- The two basic types of metadata are technical metadata and descriptive metadata.
+
+Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. [!DNL Experience Manager Assets] and other software automatically determine technical metadata and the metadata may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Some examples of technical metadata are:
+
+* Size of a file.
+* Dimensions (height and width) of an image.
+* Bit rate of an audio or video file.
+* Resolution (level of detail) of an image.
+
+Descriptive metadata is metadata concerned with the application domain, for example, the business that an asset is coming from. Descriptive metadata cannot be determined automatically. It is created manually or semi-automatically. For example, a GPS-enabled camera can automatically track the latitude and longitude and add geotag the image.
+
+The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management. -->
 
 ## Metadaten und letzte Änderung {#last-modification}
 
@@ -115,7 +150,7 @@ ID3-Tags wurden für das MP3-Dateiformat entwickelt. Weitere Informationen zu Fo
 
 ### Exif {#exif}
 
-Exchangeable Image File Format (Exif, austauschbares Bilddateiformat) ist das in der digitalen Fotografie am häufigsten verwendete Metadatenformat. Es bietet eine Möglichkeit, ein festes Vokabular von Metadateneigenschaften in viele Dateiformate wie JPEG, TIFF, RIFF und WAV einzubetten. Exif speichert Metadaten als Paare aus Metadatenname und Metadatenwert. Die Name/Wert-Paare für Metadaten werden auch als Tags bezeichnet (nicht zu verwechseln mit dem Tagging in [!DNL Experience Manager]). Moderne Digitalkameras erstellen Exif-Metadaten und moderne Grafik-Software unterstützt sie. Das Exif-Format ist der kleinste gemeinsame Nenner für die Metadatenverwaltung, insbesondere für Bilder.
+Exchangeable Image File Format (Exif, austauschbares Bilddateiformat) ist das in der digitalen Fotografie am häufigsten verwendete Metadatenformat. Es bietet eine Möglichkeit, ein festes Vokabular von Metadateneigenschaften in viele Dateiformate wie JPEG, TIFF, RIFF und WAV einzubetten. Exif speichert Metadaten als Paare aus Metadatenname und Metadatenwert. Diese Name-Wert-Paare für Metadaten werden auch als Tags bezeichnet, nicht zu verwechseln mit dem Tagging in [!DNL Experience Manager]. Moderne Digitalkameras erstellen Exif-Metadaten und moderne Grafik-Software unterstützt sie. Das Exif-Format ist der kleinste gemeinsame Nenner für die Metadatenverwaltung, insbesondere für Bilder.
 
 Eine wichtige Einschränkung von Exif besteht darin, dass das Format von einigen gängigen Bilddateiformaten wie BMP, GIF oder PNG nicht unterstützt wird.
 
@@ -135,7 +170,7 @@ Mit Enterprise Manager Assets können Sie die Metadaten mehrerer Assets gleichze
 
 1. Navigieren Sie zum Speicherort der Assets, die Sie bearbeiten möchten.
 1. Wählen Sie die Assets aus, für die Sie gemeinsame Eigenschaften bearbeiten möchten.
-1. Wählen Sie in der Symbolleiste **[!UICONTROL Eigenschaften]** , um die [!UICONTROL Eigenschaften] Seite für die ausgewählten Assets.
+1. Wählen Sie auf der Symbolleiste **[!UICONTROL Eigenschaften]** aus, um für die ausgewählten Assets die Seite [!UICONTROL Eigenschaften] zu öffnen.
 
    >[!NOTE]
    >
@@ -149,8 +184,8 @@ Mit Enterprise Manager Assets können Sie die Metadaten mehrerer Assets gleichze
    >* Auf der Seite [!UICONTROL Eigenschaften] können Sie Assets aus der Asset-Liste entfernen, indem Sie die Auswahl aufheben. In der Asset-Liste sind alle Assets standardmäßig ausgewählt. Die Metadaten für Assets, die Sie aus der Liste entfernen, werden nicht aktualisiert.
    >* Aktivieren Sie über der Asset-Liste das Kontrollkästchen neben **[!UICONTROL Titel]**, um zwischen der Auswahl von Assets und dem Deaktivieren der Liste umzuschalten.
 
-1. Um ein anderes Metadatenschema für die Assets auszuwählen, wählen Sie **[!UICONTROL Einstellungen]** und wählen Sie in der Symbolleiste das gewünschte Schema aus. Speichern Sie die Änderungen.
-1. Um die neuen Metadaten mit den vorhandenen Metadatenfeldern, die mehrere Werte enthalten, anzuhängen, wählen Sie den **[!UICONTROL Anlagenmodus]**. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Klicken Sie auf **[!UICONTROL Übermitteln]**.
+1. Wenn Sie ein anderes Metadatenschema für die Assets wählen möchten, wählen Sie in der Symbolleiste **[!UICONTROL Einstellungen]** und anschließend das gewünschte Schema aus. Speichern Sie die Änderungen.
+1. Um die neuen Metadaten mit den vorhandenen Metadatenfeldern, die mehrere Werte enthalten, anzuhängen, wählen Sie den **[!UICONTROL Anlagenmodus]**. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Wählen Sie **[!UICONTROL Absenden]**.
 
    >[!CAUTION]
    >
