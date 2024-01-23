@@ -1,31 +1,31 @@
 ---
 title: Responsives Design
-description: Responsives Design ermöglicht die effektive Darstellung derselben Erlebnisse auf verschiedenen Geräten in verschiedenen Ausrichtungen.
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+description: Responsives Design ermöglicht die effektive Darstellung derselben Erlebnisse auf mehreren Geräten in verschiedenen Ausrichtungen.
+source-git-commit: c9ee24e7b9f10ebbf9425dff66103e097701c8e4
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 68%
+source-wordcount: '908'
+ht-degree: 57%
 
 ---
 
 
 # Responsives Design {#responsive-design}
 
-Gestalten Sie Ihre Erlebnisse so, dass sie sich dem Client-Darstellungsfeld anpassen, auf dem sie angezeigt werden. Responsives Design ermöglicht die effektive Darstellung derselben Web-Seiten auf verschiedenen Geräten in beiden Ausrichtungen. Die folgende Abbildung zeigt einige Möglichkeiten, wie eine Seite auf Änderungen der Viewport-Größe reagieren kann:
+Gestalten Sie Ihre Erlebnisse so, dass sie sich dem Client-Darstellungsfeld anpassen, auf dem sie angezeigt werden. Responsives Design ermöglicht die effektive Darstellung derselben Web-Seiten auf verschiedenen Geräten in beiden Ausrichtungen. Die folgende Abbildung zeigt einige Möglichkeiten, wie eine Seite auf Größenänderungen des Darstellungsfelds reagieren kann:
 
-* Layout: Verwenden Sie einspaltige Layouts für kleinere Viewports und mehrspaltige Layouts für größere Viewports.
-* Textgröße: Verwenden Sie in größeren Viewports eine größere Textgröße (falls zutreffend, z. B. Überschriften).
-* Inhalt: Nur die wichtigsten Inhalte bei der Anzeige auf kleineren Geräten einschließen.
-* Navigation: Gerätespezifische Tools werden für den Zugriff auf andere Seiten bereitgestellt.
+* Layout: Verwenden Sie einspaltige Layouts für kleinere Darstellungsfelder und mehrspaltige Layouts für größere Darstellungsfelder.
+* Textgröße: Verwenden Sie in größeren Darstellungsfeldern eine größere Textgröße (wo passend, z. B. Überschriften).
+* Inhalt: Schließen Sie bei der Anzeige auf kleineren Geräten nur die wichtigsten Inhalte ein.
+* Navigation: Für den Zugriff auf andere Seiten werden gerätespezifische Tools bereitgestellt.
 * Bilder: Stellen Sie anhand der Fenstergröße dem Client-Darstellungsfeld entsprechende Ausgabedarstellungen zur Verfügung.
 
 ![Beispiele für responsives Design](assets/responsive-example.png)
 
-Entwickeln Sie Adobe Experience Manager (AEM)-Programme, die HTML5-Inhalte generieren, die sich an verschiedene Fenstergrößen und Ausrichtungen anpassen. Beispielsweise entsprechen die folgenden Darstellungsfeldbreiten verschiedenen Gerätetypen und -ausrichtungen
+Entwickeln Sie Adobe Experience Manager (AEM)-Programme, die HTML5-Inhalte generieren, die sich an verschiedene Fenstergrößen und Ausrichtungen anpassen. Beispielsweise entsprechen die folgenden Breiten von Darstellungsfeldern verschiedenen Gerätetypen und -ausrichtungen.
 
-* Maximale Breite von 480 Pixel (Telefon, Hochformat)
-* Maximale Breite von 767 Pixel (Telefon, Querformat)
-* Breite zwischen 768 Pixel und 979 Pixel (Tablet, Hochformat)
+* Maximale Breite von 480 Pixeln (Smartphone, Hochformat)
+* Maximale Breite von 767 Pixeln (Smartphone, Querformat)
+* Breite zwischen 768 Pixeln und 979 Pixeln (Tablet, Hochformat)
 * Breite zwischen 980 Pixel und 1199 Pixel (Tablet, Querformat)
 * Breite von 1200 Pixel oder mehr (Desktop)
 
@@ -37,7 +37,7 @@ Weitere Informationen finden Sie unter den folgenden Themen zur Implementierung 
 
 Nutzen Sie während des Design-Vorgangs die **Emulator**-Symbolleiste, um Vorschauen Ihrer Seiten in verschiedenen Bildschirmgrößen anzuzeigen.
 
-## Vor dem Entwicklungsvorgang {#before-you-develop}
+## Vor dem Entwickeln {#before-you-develop}
 
 Vor der Entwicklung eines AEM-Programms, das Ihre Web-Seiten unterstützt, müssen Sie einige Design-Entscheidungen treffen. Sie benötigen beispielsweise die folgenden Informationen:
 
@@ -52,19 +52,82 @@ Die typische AEM-Programmstruktur unterstützt alle Implementierungen responsive
 * Seitenkomponenten befinden sich unter `/apps/<application_name>/components`
 * Vorlagen befinden sich unter `/apps/<application_name>/templates`
 
-## Nutzung von Medienabfragen {#using-media-queries}
+## Verwenden von Medienabfragen {#using-media-queries}
 
-Medienabfragen ermöglichen die selektive Verwendung von CSS-Stilen für das Seiten-Rendering. AEM-Entwicklungs-Tools und -funktionen ermöglichen Ihnen die effektive und effiziente Implementierung von Medienabfragen in Programmen.
+Medienabfragen ermöglichen die selektive Verwendung von CSS-Stilen für das Rendern von Seiten. AEM-Entwicklungs-Tools und -funktionen ermöglichen Ihnen die effektive und effiziente Implementierung von Medienabfragen in Programmen.
 
 Die W3C-Gruppe stellt die [Medienabfragen](https://www.w3.org/TR/css3-mediaqueries/)-Empfehlung zur Verfügung, die diese CSS3-Funktion und die Syntax beschreibt.
 
 ### Erstellen der CSS-Datei {#creating-the-css-file}
 
-Definieren Sie in Ihrer CSS-Datei Medienabfragen anhand der Eigenschaften der Geräte, die Sie als Ziel auswählen. Die folgende Implementierungsstrategie kann für die Verwaltung der Stile der verschiedenen Medienabfragen verwendet werden:
+Definieren Sie in der CSS-Datei Medienabfragen anhand der Eigenschaften der Zielgeräte. Die folgende Implementierungsstrategie kann für die Verwaltung der Stile der verschiedenen Medienabfragen verwendet werden:
 
 * Verwenden Sie einen [Client-Bibliotheksordner](clientlibs.md), um das CSS zu definieren, das zusammengestellt wird, wenn die Seite gerendert wird.
-* Definieren Sie die Medienabfragen und die zugehörigen Stile in separaten CSS-Dateien. Es ist nützlich, Dateinamen zu verwenden, die die Gerätefunktionen der Medienabfrage darstellen.
+* Definieren Sie die Medienabfragen und die zugehörigen Stile in separaten CSS-Dateien. Es ist nützlich, Dateinamen zu verwenden, die die Geräteeigenschaften der Medienabfrage darstellen.
 * Definieren Sie Stile, die alle Geräte gemeinsam haben, in einer separaten CSS-Datei.
 * Sortieren Sie in der Datei „css.txt“ des Client-Bibliotheksordners die Liste der CSS-Dateien, wie es in der zusammengestellten CSS-Datei erforderlich ist.
 
 Das [WKND-Tutorial](develop-wknd-tutorial.md) verwendet diese Strategie zur Definition von Stilen beim Website-Design. Die von WKND verwendete CSS-Datei befindet sich unter `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
+
+### Verwenden von Medienabfragen bei AEM-Seiten {#using-media-queries-with-aem-pages}
+
+[Das WKND-Beispielprojekt](/help/implementing/developing/introduction/develop-wknd-tutorial.md) und [AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) die [Seitenkernkomponente,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html) , das die clientlibs über die Seitenrichtlinie enthält.
+
+Wenn Ihre eigene Seitenkomponente nicht auf der Seitenkernkomponente basiert, können Sie auch den Client-Bibliotheksordner in das HTL- oder JSP-Skript einbeziehen. Auf diese Weise wird die CSS-Datei mit den Medienabfragen generiert und referenziert, die erforderlich sind, damit das responsive Raster funktioniert.
+
+#### HTL {#htl}
+
+```html
+<sly data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}">
+<sly data-sly-call="${clientlib.all @ categories='apps.weretail.all'}"/>
+```
+
+#### JSP {#jsp}
+
+```xml
+<ui:includeClientLib categories="apps.weretail.all"/>
+```
+
+Das JSP-Skript generiert den folgenden HTML-Code, der auf die Stylesheets verweist:
+
+```xml
+<link rel="stylesheet" href="/etc/designs/weretail/clientlibs-all.css" type="text/css">
+<link href="/etc/designs/weretail.css" rel="stylesheet" type="text/css">
+```
+
+## Vorschau für bestimmte Geräte {#previewing-for-specific-devices}
+
+Mit dem Emulator können Sie eine Vorschau Ihrer Seiten in unterschiedlichen Darstellungsfeldgrößen anzeigen, damit Sie das Verhalten Ihres responsiven Designs testen können. Beim Bearbeiten einer Seite in der Sites-Konsole können Sie auf die **Emulator** -Symbol, um den Emulator anzuzeigen.
+
+![Das Emulator-Symbol in der Symbolleiste](assets/emulator-icon.png)
+
+In der Emulator-Symbolleiste können Sie auf die **Geräte** -Symbol, um ein Dropdown-Menü anzuzeigen, in dem Sie ein Gerät auswählen können. Wenn Sie ein Gerät auswählen, passt sich die Seite der jeweiligen Darstellungsfeldgröße an.
+
+![Die Emulator-Symbolleiste](assets/emulator.png)
+
+### Festlegen von Gerätegruppen {#specifying-device-groups}
+
+So legen Sie die Gerätegruppen fest, die im **Geräte** Liste hinzufügen, `cq:deviceGroups` -Eigenschaft auf `jcr:content` Knoten der Vorlagenseite Ihrer Site. Der Wert der Eigenschaft ist ein Array von Pfaden zu den Gerätegruppenknoten.
+
+Die Vorlagenseite der WKND-Site lautet beispielsweise `/conf/wknd/settings/wcm/template-types/empty-page/structure`. Und die `jcr:content` -Knoten darunter enthält die folgende Eigenschaft:
+
+* Name: `cq:deviceGroups`
+* Typ: `String[]`
+* Wert: `mobile/groups/responsive`
+
+Gerätegruppenknoten befinden sich im Ordner `/etc/mobile/groups`.
+
+## Responsive Bilder {#responsive-images}
+
+Responsive Seiten passen sich dynamisch an das Gerät an, auf dem sie gerendert werden, und bieten dem Benutzer ein besseres Erlebnis. Es ist jedoch auch wichtig, dass Assets auf den Breakpoint und das Gerät optimiert werden, um die Seitenladezeit zu minimieren.
+
+[Die Kernkomponente &quot;Bildkomponente&quot;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=de) Funktionen wie die Auswahl adaptiver Bilder.
+
+* Standardmäßig verwendet die Bildkomponente die [Adaptives Bildservlet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) , um die richtige Ausgabedarstellung bereitzustellen.
+* [Weboptimierte Bildbereitstellung](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=de) ist auch über ein einfaches Kontrollkästchen in seiner Richtlinie verfügbar, das Bild-Assets aus dem DAM im WebP-Format bereitstellt und die Download-Größe eines Bildes im Durchschnitt um etwa 25 % reduzieren kann.
+
+## Der Layout-Container {#layout-container}
+
+Mit AEM Layout-Container können Sie ein responsives Layout effizient und effektiv implementieren, um die Seitendimensionen an den Client-Viewport anzupassen.
+
+Lesen Sie das Dokument . [Konfigurieren des Layout-Containers und des Layout-Modus](/help/sites-cloud/administering/responsive-layout.md) Weitere Informationen dazu, wie der Layout-Container funktioniert und wie Sie responsive Layouts für Ihren Inhalt aktivieren.
