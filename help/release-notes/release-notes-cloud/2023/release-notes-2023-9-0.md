@@ -2,17 +2,17 @@
 title: Versionshinweise für Version 2023.9.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2023.9.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 3bec7e0387a5e04a7748a3b7341c17a993c6feb9
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 36%
+source-wordcount: '1440'
+ht-degree: 79%
 
 ---
 
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2023.9.0 {#release-notes}
 
-Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle (neueste) Version von [!DNL Experience Manager] as a Cloud Service beschrieben.
+Im folgenden Abschnitt werden die Versionshinweise zu den neuen Funktionen der Version 2023.9.0 von [!DNL Experience Manager] as a Cloud Service beschrieben.
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Die aktuelle Version der Funktion (2023.9.0) ist der 28. September 2023. Die nächste Version der Funktion (2023.10.0) ist für den 26. Oktober 2023 geplant.
+Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.9.0) ist der Freitag, 28. September 2023. Die nächste Version mit neuen Funktionen (2023.10.0) ist für den Freitag, 26. Oktober 2023 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -48,13 +48,13 @@ Weitere Informationen zu Edge Delivery Services finden Sie im Artikel [here](/he
 
 ### Neue Funktionen in der Assets-Ansicht {#assets-view-features}
 
-**Zuweisen eines Metadatenformulars zu einem Ordner**
+**Metadatenformular einem Ordner zuweisen**
 
-Sie können jetzt ein Metadatenformular einem bestimmten Ordner in Ihrer Bereitstellung zuweisen. Alle Assets im Ordner, einschließlich Assets in den Unterordnern, zeigen dann Eigenschaften an, die im zugewiesenen Metadatenformular definiert sind.
+Sie können jetzt ein Metadatenformular einem bestimmten Ordner in Ihrer Bereitstellung zuweisen. Alle Assets im Ordner, einschließlich Assets in den Unterordnern, zeigen dann die im zugewiesenen Metadatenformular definierten Eigenschaften an.
 
-![Zuweisen eines Metadatenformulars zu einem Ordner](/help/release-notes/assets/assign-to-folder.png)
+![Metadatenformular einem Ordner zuweisen](/help/release-notes/assets/assign-to-folder.png)
 
-### Neue Funktionen in der Administratoransicht {#admin-view-features}
+### Neue Funktionen in der Admin-Ansicht {#admin-view-features}
 
 * **Integrieren von AEM Assets as a Cloud Service mit dokumentbasiertem Authoring für Edge Delivery Services**: Integrieren Sie AEM Assets in dokumentbasiertes Authoring für Edge Delivery Services, damit Website-Autoren [Bilder verwenden, die in AEM Assets-Repositorys beim Erstellen von Dokumenten in Microsoft Word- oder Google-Dokumenten verfügbar sind](/help/edge/using.md#integrate-assets-edge).
 
@@ -62,44 +62,44 @@ Sie können jetzt ein Metadatenformular einem bestimmten Ordner in Ihrer Bereits
 
   ![Anheften von Elementen für Gruppen](/help/release-notes/assets/extract-archive.png)
 
-### Funktionen zur Vorabversion sind verfügbar in [!DNL Experience Manager Assets] {#prerelease-features-assets}
+### Vorab veröffentlichte Funktionen, die in [!DNL Experience Manager Assets] verfügbar sind {#prerelease-features-assets}
 
-* **Dynamic Media**: [Unterstützung für mehrere Untertitel und mehrere Audiospuren für Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma)—Sie können jetzt einfach mehrere Untertitel und mehrere Audiospuren zu einem Hauptvideo hinzufügen. Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autorinnen und Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
+* **Dynamic Media**: [Unterstützung für mehrere Untertitel und mehrere Audiospuren für Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) – Sie können jetzt ganz einfach mehrere Untertitel und mehrere Audiospuren zu einem primären Video hinzufügen. Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autorinnen und Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
 
-  ![Registerkarte &quot;Untertitel und Audiospuren&quot;auf der Seite &quot;Eigenschaften&quot;eines ausgewählten Video-Assets.](/help/release-notes/assets/msma-aem-cs.png)*Registerkarte &quot;Untertitel und Audiospuren&quot;auf der Seite &quot;Eigenschaften&quot;eines ausgewählten Video-Assets.*
+  ![Registerkarte „Untertitel und Audiospuren“ auf der Seite „Eigenschaften“ eines ausgewählten Video-Assets.](/help/release-notes/assets/msma-aem-cs.png)*Registerkarte „Untertitel und Audiospuren“ auf der Seite „Eigenschaften“ eines ausgewählten Video-Assets.*
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in [!DNL Experience Manager Forms] {#forms-features}
 
-* [**Enterprise-Unterstützung für Google reCAPTCHA**](/help/forms/captcha-adaptive-forms-core-components.md): Verwenden Sie Google reCAPTCHA Enterprise in einem adaptiven Formular, um einen verbesserten Schutz vor betrügerischer Aktivität und Spam zu bieten und so eine sicherere Benutzererfahrung zu bieten. Dank der erweiterten Risikoanalyse und nahtloser Integration können echte Benutzer problemlos Formulare senden, während Bots effektiv blockiert werden.
+* [**Unterstützung für Google reCAPTCHA Enterprise**](/help/forms/captcha-adaptive-forms-core-components.md): Verwenden Sie Google reCAPTCHA Enterprise in einem adaptiven Formular, um einen besseren Schutz vor betrügerischen Aktivitäten und Spam zu bieten und so ein sichereres Anwendererlebnis zu ermöglichen. Dank erweiterter Risikoanalyse und nahtloser Integration können echte Benutzende problemlos Formulare absenden, während Bots effektiv blockiert werden.
 
-* [**Adobe Analytics mit Experience Cloud-Setup-Automatisierung für Forms**](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md): Sie können Adobe Analytics jetzt mit Experience Cloud Setup Automation mit mehreren Schaltflächen aktivieren. Dadurch können Sie AEM Forms as a Cloud Service mit Experience Platform-Tags und Adobe Analytics verbinden, um Leistungsmetriken für Ihre veröffentlichten Formulare zu erfassen und zu verfolgen.
+* [**Adobe Analytics mit Experience Cloud-Setup-Automatisierung für Formulare**](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md): Sie können nun Adobe Analytics dank Experience Cloud-Setup-Automatisierung mit wenigen Klicks aktivieren. So können Sie AEM Forms as a Cloud Service mit Experience Platform-Tags und Adobe Analytics verbinden, um Leistungsmetriken für Ihre veröffentlichten Formulare zu erfassen und nachzuverfolgen.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3424577/enable-adobe-analytics/?quality=12&learn=on)
 
-* [**Adobe Analytics-Berichtsvorlage für Adaptive Forms**](/help/forms/view-understand-aem-forms-analytics-reports.md): Forms as a Cloud Service bietet jetzt einen Adobe Analytics-Bericht OOTB. Dies hilft Ihnen, die Leistung Ihrer Formulare einfach zu verstehen. Die Metriken auf Formularebene bieten Ihnen einen Einblick in die Leistung des Formulars in Bezug auf mehrere wichtige Leistungsindikatoren (KPIs) wie Ausgabedarstellungen, Besuchende, Übermittlungen, durchschnittliche Ausfüllzeit. Durch die Verfolgung des Benutzerverhaltens und des Feedbacks können Sie Bereiche des Formulars identifizieren, die Verwirrung verursachen, und Orientierungsverbesserungen am Formularentwurf und der Funktionalität vornehmen.
+* [**Adobe Analytics-Berichtsvorlage für adaptive Formulare**](/help/forms/view-understand-aem-forms-analytics-reports.md): Forms as a Cloud Service bietet nun einen vorkonfigurierten Adobe Analytics-Bericht. Dies hilft Ihnen, die Leistung Ihrer Formulare einfach zu verstehen. Die Metriken auf Formularebene bieten Ihnen einen Einblick in die Leistung des Formulars in Bezug auf mehrere wichtige Leistungsindikatoren (KPIs) wie Ausgabedarstellungen, Besuchende, Übermittlungen, durchschnittliche Ausfüllzeit. Durch Nachverfolgung von Benutzerverhalten und -Feedback können Sie Formularbereiche identifizieren, die Verwirrung verursachen, und so Verbesserungen am Formular-Design und an der Formularfunktionalität erwirken.
 
   ![Adobe Analytics-Bericht zur Benutzerinteraktion im adaptiven Formular](/help/forms/assets/forms-analytics-report.png)
 
-* **[Formularfragment in Adaptive Forms basierend auf Kernkomponenten](/help/forms/adaptive-form-fragments-core-components.md)**: Verabschieden Sie sich von Duplizierung, optimieren Sie Ihren digitalen Bestand und verbessern Sie die Zusammenarbeit bei der Steigerung Ihrer Formularerstellungserfahrung mit Formularfragmenten. Diese wiederverwendbaren Komponenten lassen sich nahtlos in mehrere Formulare integrieren, wodurch die Erstellung konsistenter und professionell aussehender Formulare optimiert wird. Formularfragmente sorgen für Wiederverwendbarkeit, Standardisierung und Markenkonsistenz durch die Funktion „Einmal ändern und überall widerspiegeln“. Erleben Sie mehr Wartbarkeit und Effizienz, da Aktualisierungen an einem Ort automatisch über alle Formulare hinweg übernommen werden, die diese Fragmente verwenden.
+* **[Formularfragment in adaptiven Formularen auf Basis auf Kernkomponenten](/help/forms/adaptive-form-fragments-core-components.md)**: Keine Duplizierung mehr! Außerdem können Sie Ihre digitalen Bestände und die Zusammenarbeit optimieren, während Sie das Anwendererlebnis bei der Formularerstellung mit Formularfragmenten verbessern. Diese wiederverwendbaren Komponenten lassen sich nahtlos in mehrere Formulare integrieren, was die Erstellung konsistenter und professionell aussehender Formulare optimiert. Formularfragmente sorgen für Wiederverwendbarkeit, Standardisierung und Markenkonsistenz durch die Funktion „Einmal ändern und überall widerspiegeln“. Erleben Sie mehr Wartbarkeit und Effizienz, da Aktualisierungen an einem Ort automatisch über alle Formulare hinweg übernommen werden, die diese Fragmente verwenden.
 
-* **[Verbesserter Workflow-Schritt in Adobe Sign](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: Der Schritt &quot;Adobe Sign-Workflow&quot;wurde um Folgendes erweitert:
-   * **ID-basierte Authentifizierung für Adobe Sign**: Die Adobe Acrobat Sign-Authentifizierung mit ID-basierter Regierungsauthentifizierung bietet eine zusätzliche Überprüfungsebene, indem sie es Benutzern ermöglicht, ihre Identität mit staatlich ausgestellten Kennungen (Führerschein, nationale Kennung, Pass) zu authentifizieren. Durch die Nutzung von vertrauenswürdigen Identifikationsdokumenten verleiht diese Erweiterung dem Unterzeichnungsprozess ein zusätzliches Maß an Vertrauen und ist somit ideal für Szenarien, die erhöhte Sicherheit, Compliance und Benutzervalidierung erfordern.
+* **[Verbesserter Workflow-Schritt in Adobe Sign](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: Der Workflow-Schritt in Adobe Sign enthält die folgenden Verbesserungen:
+   * **Authentifizierung mit amtlichem Lichtbildausweis für Adobe Sign**: Die Authentifizierung mit amtlichem Lichtbildausweis von Adobe Acrobat Sign bietet eine zusätzliche Verifizierungsebene, indem Benutzenden ermöglicht wird, ihre Identität anhand von amtlichen Lichtbildausweisen (Führerschein, Personalausweis, Reisepass) zu authentifizieren. Durch die Nutzung von vertrauenswürdigen Identifikationsdokumenten verleiht diese Erweiterung dem Unterzeichnungsprozess ein zusätzliches Maß an Vertrauen und ist somit ideal für Szenarien, die erhöhte Sicherheit, Compliance und Benutzervalidierung erfordern.
 
-   * **Audit-Protokoll für Adobe Sign-Dokumente**: Verwenden Sie die Funktion &quot;Audit-Protokoll&quot;, um detaillierte Einblicke in den Lebenszyklus Ihrer Adobe Sign-Dokumente zu erhalten. Mit dem Audit-Protokoll können Sie jetzt eine umfassende Aufzeichnung aller Aktionen und Interaktionen führen, die mit Ihren Dokumenten verbunden sind. Dazu gehören Details wie etwa die Personen, die das Dokument angesehen, bearbeitet oder unterschrieben haben, sowie Zeitstempel für jedes Ereignis. Diese Verbesserung ist entscheidend für die Einhaltung von Vorschriften, die Beilegung von Streitigkeiten und die Gewährleistung der Integrität Ihrer digitalen Vereinbarungen.
+   * **Audit-Protokoll für Adobe Sign-Dokumente**: Verwenden Sie die Audit-Protokoll-Funktion, um ausführliche Erkenntnisse zum Lebenszyklus Ihrer Adobe Sign-Dokumente zu erhalten. Mit dem Audit-Protokoll können Sie jetzt eine umfassende Aufzeichnung aller Aktionen und Interaktionen führen, die mit Ihren Dokumenten verbunden sind. Dazu gehören Details wie etwa die Personen, die das Dokument angesehen, bearbeitet oder unterschrieben haben, sowie Zeitstempel für jedes Ereignis. Diese Verbesserung ist entscheidend für die Einhaltung von Vorschriften, die Beilegung von Streitigkeiten und die Gewährleistung der Integrität Ihrer digitalen Vereinbarungen.
 
-   * **Neue Rollen für Empfänger von Vereinbarungen, die über den Unterzeichner hinausgehen**: Adobe Acrobat Sign hat die Möglichkeit, die Rollen für Vertragsempfänger über den Unterzeichner hinaus zu erweitern, um die Anforderungen an den Workflow besser zu erfüllen. Wenn diese Option aktiviert ist, kann die Rolle jeder Empfängerin und jedes Empfängers in einem Vertrag einzeln konfiguriert werden, wobei die Unterzeichnerin bzw. der Unterzeichner die Standardeinstellung ist.
+   * **Neue Rollen für Empfängerinnen und Empfänger von Vereinbarungen über die Unterzeichnerinnen bzw. Unterzeichner hinaus**: Adobe Acrobat Sign bietet die Möglichkeit, die Rollen für Empfängerinnen und Empfänger von Vereinbarungen über die Personen hinaus zu erweitern, die unterzeichnet haben, um Workflow-Anforderungen besser zu erfüllen. Wenn diese Option aktiviert ist, kann die Rolle jeder Empfängerin und jedes Empfängers in einem Vertrag einzeln konfiguriert werden, wobei die Person, die unterzeichnet hat, die Standardeinstellung ist.
 
-* **Unterstützung der Seitenzahl in Kommunikations-APIs**: Jetzt können Sie neben dem Abrufen Ihres Dokuments über die Kommunikations-APIs auch die wertvollen Informationen über die Anzahl der im Dokument enthaltenen Seiten erhalten.
+* **Unterstützung der Seitenzahl in Kommunikations-APIs**: Sie können nun neben dem Abruf Ihres Dokuments über die Kommunikations-APIs auch wertvolle Informationen über die Anzahl der im Dokument enthaltenen Seiten beziehen.
 
-* **[Umgang mit Fehlern mit benutzerdefinierten Fehler-Handlern im Regeleditor](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: Sie können jetzt eine benutzerdefinierte Funktion aufrufen, wenn ein von einem externen Dienst zurückgegebener Fehler auftritt, und eine angepasste Antwort für Endbenutzer bereitstellen. Sie können beispielsweise einen benutzerdefinierten Workflow im Back-End für bestimmte Fehler-Codes aufrufen oder die Kundin bzw. den Kunden darüber informieren, dass der Dienst nicht verfügbar ist.
+* **[Fehlerhandhabung mit benutzerdefinierten Fehler-Handlern im Regeleditor](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: Sie können nun eine benutzerdefinierte Funktion aufrufen, wenn ein von einem externen Dienst zurückgegebener Fehler auftritt, und eine maßgeschneiderte Antwort für Endbenutzerinnen und -benutzer bereitstellen. Sie können beispielsweise einen benutzerdefinierten Workflow im Backend für bestimmte Fehler-Codes aufrufen oder die Kundin bzw. den Kunden darüber informieren, dass der Dienst nicht verfügbar ist.
 
-* **[64-Bit-Version von AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: Die 64-Bit-Version von AEM Forms Designer bietet verbesserte Leistung, Skalierbarkeit und Speicherverwaltung, um die Erstellung von Formularen zu optimieren. Mit der 64-Bit-Architektur können Sie noch größere und komplexere Projekte einfach angehen, um nahtlose Design-Workflows und eine optimierte Effizienz zu gewährleisten. Verbessern Sie Ihre Formularentwurfskompetenzen und nutzen Sie die Zukunft von AEM Forms Designer mit dieser innovativen Version.
+* **[64-Bit-Version von AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: Die 64-Bit-Version von AEM Forms Designer bietet verbesserte Leistung, Skalierbarkeit und Speicherverwaltung, um die Erstellung von Formularen zu optimieren. Mit der 64-Bit-Architektur können Sie noch größere und komplexere Projekte einfach angehen, um nahtlose Design-Workflows und eine optimierte Effizienz zu gewährleisten. Verbessern Sie Ihre Formularentwurfsfähigkeiten und nutzen Sie die Zukunft von AEM Forms Designer mit dieser innovativen Version.
 
 ### Programm für frühe Anwender {#forms-early-adopter}
 
-* **[Protect Ihrer Dokumente mit DocAssurance-APIs (Teil der Kommunikations-APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: Mit den DocAssurance-APIs können Sie vertrauliche Informationen schützen, indem Sie die Dokumente signieren und verschlüsseln. Durch Verschlüsselung werden die Inhalte eines Dokuments in ein unlesbares Format umgewandelt, sodass nur autorisierte Benutzer Zugriff erhalten. Diese befestigte Schutzschicht schützt nicht nur wertvolle Daten vor unbefugten Augen, sondern bietet auch Seelenfrieden. Signature-APIs ermöglichten Ihrem Unternehmen, die Sicherheit und Vertraulichkeit verteilter und empfangener Adobe PDF-Dokumente zu gewährleisten. Dieser Service verwendet digitale Signaturen und Zertifizierung, um sicherzustellen, dass nur die Empfänger, für die dies vorgesehen ist, die Dokumente ändern können.
+* **[Protect Ihrer Dokumente mit DocAssurance-APIs (Teil der Kommunikations-APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: Mit den DocAssurance-APIs können Sie vertrauliche Informationen schützen, indem Sie die Dokumente signieren und verschlüsseln. Durch die Verschlüsselung werden die Inhalte eines Dokuments in ein unlesbares Format umgewandelt, sodass nur autorisierte Benutzende Zugriff erhalten. Diese verstärkte Schutzschicht schützt nicht nur wertvolle Daten vor unbefugten Blicken, sorgt auch für ein beruhigendes Gefühl. Signature-APIs ermöglichten Ihrem Unternehmen, die Sicherheit und Vertraulichkeit verteilter und empfangener Adobe PDF-Dokumente zu gewährleisten. Dieser Service verwendet digitale Signaturen und Zertifizierung, um sicherzustellen, dass nur die Empfängerinnen und Empfänger, für die dies vorgesehen ist, die Dokumente ändern können.
 
   Sie können schreiben an `aem-forms-early-adopter-program@adobe.com` von Ihrer offiziellen E-Mail-ID, um dem frühen Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern.
 
@@ -112,7 +112,7 @@ Sie können jetzt ein Metadatenformular einem bestimmten Ordner in Ihrer Bereits
 
   Sie können von Ihrer offiziellen E-Mail-ID eine E-Mail an `aem-forms-headless@adobe.com` senden, um am Early-Adopter-Programm teilzunehmen.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
 
 ### Neues CDN-Caching-Verhalten für kampagnenbezogene URL-Parameter {#cache-url-params}
 
@@ -125,9 +125,9 @@ Filtern Sie den Traffic im CDN anhand von:
 * Anfragekopfzeilen und -eigenschaften (z. B. IP-Adresse)
 * Traffic-Muster, die bekanntermaßen mit bösartigem Traffic verknüpft sind
 
-Möchten Sie die Funktion ausprobieren und Feedback teilen? E-Mail an senden **aemcs-waf-adopter@adobe.com** von Ihrer offiziellen E-Mail-ID, um mehr über das Programm für frühe Anwender zu erfahren. Der Platz ist begrenzt.
+Möchten Sie die Funktion ausprobieren und Feedback geben? Sie können von Ihrer offiziellen E-Mail-ID eine E-Mail an **aemcs-waf-adopter@adobe.com** senden, um am Early-Adopter-Programm teilzunehmen. Die Plätze sind begrenzt.
 
-Weitere Informationen zur Funktion finden Sie im Artikel . [here](/help/security/traffic-filter-rules-including-waf.md).
+Weitere Informationen zur Funktion finden Sie im Artikel [hier](/help/security/traffic-filter-rules-including-waf.md).
 
 ## Cloud Manager {#cloud-manager}
 

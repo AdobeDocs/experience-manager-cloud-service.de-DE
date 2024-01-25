@@ -1,17 +1,17 @@
 ---
 title: Versionshinweise für Version 2023.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2023.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: c33874869bccae1e9837b30827a655e70636dd56
+exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
+source-git-commit: 07a799cf374bbd1ce0fe5d85433bf12d1d5ee648
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 31%
+ht-degree: 38%
 
 ---
 
-
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2023.11.0 {#release-notes}
 
-Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle (neueste) Version von [!DNL Experience Manager] as a Cloud Service beschrieben.
+Im folgenden Abschnitt werden die Versionshinweise zu den neuen Funktionen der Version 2023.11.0 von [!DNL Experience Manager] as a Cloud Service beschrieben.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.11.0) war der Freitag, 30. November 2023. Die nächste Version (2023.12.0) ist für den Freitag, 14. Dezember 2023 geplant.
+Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.11.0) ist der Freitag, 30. November 2023. Die nächste Version mit neuen Funktionen (2023.12.0) ist für den Freitag, 14. Dezember 2023 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -45,7 +45,7 @@ Sehen Sie sich das Video Versionsübersicht von November 2023 an, um eine Zusamm
 
 ![Suchen und Ersetzen](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
 
-Möchten Sie die Funktion ausprobieren und Feedback teilen? E-Mail an senden **aemcs-headless-adopter@adobe.com** von Ihrer offiziellen E-Mail-ID, um mehr über das Programm für frühe Anwender zu erfahren.
+Möchten Sie die Funktion ausprobieren und Feedback geben? E-Mail an senden **aemcs-headless-adopter@adobe.com** von Ihrer offiziellen E-Mail-ID, um mehr über das Programm für frühe Anwender zu erfahren.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -53,7 +53,7 @@ Möchten Sie die Funktion ausprobieren und Feedback teilen? E-Mail an senden **a
 
 * **Eingebetteter Adobe Expreß-Editor in AEM Assets**: Benutzer mit Zugriff auf Express verfügen jetzt über integrierte Bildbearbeitungs- und -erstellungs-Tools von Adobe Expreß und Adobe Firefly direkt in AEM Assets, um die Wiederverwendung von Inhalten zu verbessern und die Geschwindigkeit der Inhaltswiedergabe zu beschleunigen.
 
-  ![Zuweisen eines Metadatenformulars zu einem Ordner](/help/assets/assets/adobe-express-aem-assets.png)
+  ![Metadatenformular einem Ordner zuweisen](/help/assets/assets/adobe-express-aem-assets.png)
 
 <!--
 
@@ -66,9 +66,9 @@ Möchten Sie die Funktion ausprobieren und Feedback teilen? E-Mail an senden **a
 
 * **Verwendungsberichte in Insights**: Administratoren können jetzt die im Rahmen von Insights verfügbaren Speicherverwendungsberichte anzeigen.
 
-  ![Einblicke zur Speicherverwendung](/help/assets/assets/storage-usage-insights.png)
+  ![Einblicke in die Speichernutzung](/help/assets/assets/storage-usage-insights.png)
 
-* **Erste Homepage-Konfiguration durchsuchen**: Mit Experience Manager Assets können Sie jetzt das Starterlebnis für Ihre Organisation konfigurieren. Wenn Sie zuerst als Startseite die Suche auswählen, können Sie die Ausrichtung der Suchleiste, das Hintergrundbild und das Logo für Ihre Organisation konfigurieren.
+* **Erste Homepage-Konfiguration durchsuchen**: Mit Experience Manager Assets können Sie jetzt das Starterlebnis für Ihre Organisation konfigurieren. Wenn Sie die Startseite als erste Suche festlegen, können Sie die Ausrichtung des Suchbalkens, das Hintergrundbild und das Logo Ihres Unternehmens konfigurieren.
 
   ![Erste Konfiguration durchsuchen](/help/assets/assets/search-first-configuration.png)
 
@@ -108,11 +108,11 @@ Möchten Sie die Funktion ausprobieren und Feedback teilen? E-Mail an senden **a
 
   ![Unterstützung von Sprachen mit Rechts-Links](/help/forms/assets/right-to-left-language-support.png)
 
-* **[Protect Ihrer Dokumente mit DocAssurance-APIs (Teil der Kommunikations-APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: Mit den DocAssurance-APIs können Sie vertrauliche Informationen schützen, indem Sie die Dokumente signieren und verschlüsseln. Durch Verschlüsselung werden die Inhalte eines Dokuments in ein unlesbares Format umgewandelt, sodass nur autorisierte Benutzer Zugriff erhalten. Diese befestigte Schutzschicht schützt nicht nur wertvolle Daten vor unbefugten Augen, sondern bietet auch Seelenfrieden. Signature-APIs ermöglichten Ihrem Unternehmen, die Sicherheit und Vertraulichkeit verteilter und empfangener Adobe PDF-Dokumente zu gewährleisten. Dieser Dienst verwendet digitale Signaturen und Zertifizierung, um sicherzustellen, dass nur beabsichtigte Empfänger Dokumente ändern können.
+* **[Protect Ihrer Dokumente mit DocAssurance-APIs (Teil der Kommunikations-APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: Mit den DocAssurance-APIs können Sie vertrauliche Informationen schützen, indem Sie die Dokumente signieren und verschlüsseln. Durch die Verschlüsselung werden die Inhalte eines Dokuments in ein unlesbares Format umgewandelt, sodass nur autorisierte Benutzende Zugriff erhalten. Diese verstärkte Schutzschicht schützt nicht nur wertvolle Daten vor unbefugten Blicken, sorgt auch für ein beruhigendes Gefühl. Signature-APIs ermöglichten Ihrem Unternehmen, die Sicherheit und Vertraulichkeit verteilter und empfangener Adobe PDF-Dokumente zu gewährleisten. Dieser Service verwendet digitale Signaturen und Zertifizierung, um sicherzustellen, dass nur die Empfängerinnen und Empfänger, für die dies vorgesehen ist, die Dokumente ändern können.
 
   Sie können schreiben an `aem-forms-early-adopter-program@adobe.com` von Ihrer offiziellen E-Mail-ID, um dem frühen Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
 
 ### WAF-Traffic-Filterregeln können jetzt lizenziert werden {#cdn-waf-license}
 

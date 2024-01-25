@@ -1,17 +1,17 @@
 ---
 title: Versionshinweise für Version 2023.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2023.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: d79335bde72a2517939e9bfc07a75ab7a8b6b0b9
+exl-id: 81a6cbd2-7101-429b-8572-2650c5bea963
+source-git-commit: 811a8f4d83a1034737c23b1707a24b52742fef55
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 38%
+source-wordcount: '918'
+ht-degree: 57%
 
 ---
 
-
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2023.10.0 {#release-notes}
 
-Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle (neueste) Version von [!DNL Experience Manager] as a Cloud Service beschrieben.
+Im folgenden Abschnitt werden die Versionshinweise zu den neuen Funktionen der Version 2023.10.0 von [!DNL Experience Manager] as a Cloud Service beschrieben.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Die aktuelle Version der Funktion (2023.10.0) ist der 26. Oktober 2023. Die nächste Version der Funktion (2023.11.0) ist für den 30. November 2023 geplant.
+Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.10.0) ist der Freitag, 26. Oktober 2023. Die nächste Version mit neuen Funktionen (2023.11.0) ist für den Freitag, 30. November 2023 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -53,15 +53,15 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2023“ an, das eine Zusa
 
 * **Massenimport von Assets aus der OneDrive-Datenquelle**: Administratoren haben jetzt die Möglichkeit, [Import einer großen Anzahl von Assets von OneDrive in AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). Die aktualisierte Liste der unterstützten Datenquellen für den Massenimport umfasst Azure, AWS, Google Cloud, Dropbox und OneDrive.
 
-  ![Zuweisen eines Metadatenformulars zu einem Ordner](/help/assets/assets/bulk-import-source-details-onedrive.png)
+  ![Metadatenformular einem Ordner zuweisen](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-* **Unterstützung von Cross-Org-Berechtigungen für Bibliotheken**: Mit Experience Manager Assets können Sie jetzt den Zugriff auf Creative Cloud-Bibliotheken in einer anderen IMS-Organisation konfigurieren. Dies ermöglicht einen einfacheren Zugriff auf die neuesten produktübergreifenden Workflows zwischen Creative Cloud und Experience Manager und reduziert Zeit und Aufwand für kreative Inhalte.
+* **Unterstützung von Cross-Org-Berechtigungen für Bibliotheken**: Mit Experience Manager Assets können Sie jetzt den Zugriff auf Creative Cloud-Bibliotheken in einer anderen IMS-Organisation konfigurieren. Dies ermöglicht einen einfacheren Zugriff auf die neuesten produktübergreifenden Workflows zwischen Creative Cloud und Experience Manager und reduziert Zeit und Aufwand bei der Erstellung kreativer Inhalte.
 
-### Funktionen zur Vorabversion sind verfügbar in [!DNL Experience Manager Assets] {#prerelease-features-assets}
+### Vorab veröffentlichte Funktionen, die in [!DNL Experience Manager Assets] verfügbar sind {#prerelease-features-assets}
 
-* **Dynamic Media**: [Unterstützung für mehrere Untertitel und mehrere Audiospuren für Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma)—Sie können jetzt einfach mehrere Untertitel und mehrere Audiospuren zu einem Hauptvideo hinzufügen. Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autorinnen und Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
+* **Dynamic Media**: [Unterstützung für mehrere Untertitel und mehrere Audiospuren für Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) – Sie können jetzt ganz einfach mehrere Untertitel und mehrere Audiospuren zu einem primären Video hinzufügen. Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autorinnen und Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
 
-  ![Registerkarte &quot;Untertitel und Audiospuren&quot;auf der Seite &quot;Eigenschaften&quot;eines ausgewählten Video-Assets.](/help/release-notes/assets/msma-aem-cs.png)*Registerkarte &quot;Untertitel und Audiospuren&quot;auf der Seite &quot;Eigenschaften&quot;eines ausgewählten Video-Assets.*
+  ![Registerkarte „Untertitel und Audiospuren“ auf der Seite „Eigenschaften“ eines ausgewählten Video-Assets.](/help/release-notes/assets/msma-aem-cs.png)*Registerkarte „Untertitel und Audiospuren“ auf der Seite „Eigenschaften“ eines ausgewählten Video-Assets.*
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -69,18 +69,18 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2023“ an, das eine Zusa
 
 * **[Benutzerdefinierte Eigenschaften für adaptive Forms](/help/forms/template-editor-core-components.md#add-a-custom-group-name-in-the-policy-of-template-editor)**: Sie können benutzerdefinierte Attribute (Schlüssel-Wert-Paare) mit einer Formularvorlage oder adaptiven Formularkomponente verknüpfen, damit Formularentwickler dynamisches Formularverhalten bereitstellen können, das sich basierend auf den Werten dieser benutzerdefinierten Attribute anpasst. Beispielsweise können Entwickler basierend auf den Werten benutzerdefinierter Attribute verschiedene Ausgabeformate einer Headless-Forms-Komponente auf mobilen, Desktop- oder Webplattformen erstellen und so das Benutzererlebnis auf einer Vielzahl von Geräten erheblich verbessern.
 
-* **Designs und Vorlagen**: Starten Sie Ihren Formularerstellungsprozess mit unseren neuen Designs und Vorlagen, die auf erfahrene Profis und neue Formularautoren zugeschnitten sind. Nahtlos mit den Kernkomponenten von Adaptive Forms erstellt, ermöglichen Ihnen diese sorgfältig kuratierten Designs und Vorlagen die rasche Erstellung von Formularen für gängige Anwendungsfälle.
+* **Designs und Vorlagen**: Starten Sie Ihren Formularerstellungsprozess mit unseren neuen Designs und Vorlagen, die auf erfahrene Profis und neue Formularautoren zugeschnitten sind. Diese sorgfältig kuratierten Designs und Vorlagen wurden mit den Kernkomponenten für adaptive Formulare nahtlos erstellt und ermöglichen Ihnen die rasche Erstellung von Formularen für gängige Anwendungsfälle.
 
   ![Vordefinierte Vorlagen](/help/forms/assets/form-templates-ootb.png)
 
 
 ### Programm für frühe Anwender {#forms-early-adopter}
 
-* **[Protect Ihrer Dokumente mit DocAssurance-APIs (Teil der Kommunikations-APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: Mit den DocAssurance-APIs können Sie vertrauliche Informationen schützen, indem Sie die Dokumente signieren und verschlüsseln. Durch Verschlüsselung werden die Inhalte eines Dokuments in ein unlesbares Format umgewandelt, sodass nur autorisierte Benutzer Zugriff erhalten. Diese befestigte Schutzschicht schützt nicht nur wertvolle Daten vor unbefugten Augen, sondern bietet auch Seelenfrieden. Signature-APIs ermöglichten Ihrem Unternehmen, die Sicherheit und Vertraulichkeit verteilter und empfangener Adobe PDF-Dokumente zu gewährleisten. Dieser Service verwendet digitale Signaturen und Zertifizierung, um sicherzustellen, dass nur die Empfänger, für die dies vorgesehen ist, die Dokumente ändern können.
+* **[Protect Ihrer Dokumente mit DocAssurance-APIs (Teil der Kommunikations-APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: Mit den DocAssurance-APIs können Sie vertrauliche Informationen schützen, indem Sie die Dokumente signieren und verschlüsseln. Durch die Verschlüsselung werden die Inhalte eines Dokuments in ein unlesbares Format umgewandelt, sodass nur autorisierte Benutzende Zugriff erhalten. Diese verstärkte Schutzschicht schützt nicht nur wertvolle Daten vor unbefugten Blicken, sorgt auch für ein beruhigendes Gefühl. Signature-APIs ermöglichten Ihrem Unternehmen, die Sicherheit und Vertraulichkeit verteilter und empfangener Adobe PDF-Dokumente zu gewährleisten. Dieser Service verwendet digitale Signaturen und Zertifizierung, um sicherzustellen, dass nur die Empfängerinnen und Empfänger, für die dies vorgesehen ist, die Dokumente ändern können.
 
   Sie können schreiben an `aem-forms-early-adopter-program@adobe.com` von Ihrer offiziellen E-Mail-ID, um dem frühen Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
 
 ### Traffic-Filterregeln, einschließlich WAF {#traffic-filter-rules-waf}
 

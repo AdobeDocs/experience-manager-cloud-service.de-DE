@@ -3,10 +3,10 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 055d510f8bd3a227c2c51d7f0dea561f06f9b4fd
+source-git-commit: fd0f0fdfc0aaf02d631b9bf909fcb1e1431f5401
 workflow-type: tm+mt
-source-wordcount: '4924'
-ht-degree: 92%
+source-wordcount: '4994'
+ht-degree: 94%
 
 ---
 
@@ -160,13 +160,13 @@ Die Berechtigungen sind diejenigen, die für den Zugriff auf Assets erforderlich
 
 GraphQL-Abfragen werden mit der Berechtigung der AEM-Benutzenden der zugrunde liegenden Anfrage ausgeführt. Wenn die Benutzenden keinen Lesezugriff auf einige (als Assets gespeicherte) Fragmente haben, werden diese nicht Teil der Ergebnismenge.
 
-Außerdem muss der Benutzer Zugriff auf einen GraphQL-Endpunkt haben, um GraphQL-Abfragen ausführen zu können.
+Außerdem benötigen die Benutzenden Zugriff auf einen GraphQL-Endpunkt, um GraphQL-Abfragen ausführen zu können.
 
 ## Schema-Generierung {#schema-generation}
 
-GraphQL ist eine stark typisierte API, d. h. die Daten müssen klar strukturiert und nach Typ geordnet sein.
+GraphQL ist eine stark typisierte API, was bedeutet, dass die Daten klar strukturiert und nach Typ geordnet sein müssen.
 
-Die GraphQL-Spezifikation enthält eine Reihe von Richtlinien zum Erstellen einer robusten API zum Abfragen von Daten in einer bestimmten Instanz. Dazu muss ein Client die [Schema](#schema-generation), der alle für eine Abfrage erforderlichen Typen enthält.
+Die GraphQL-Spezifikation enthält eine Reihe von Richtlinien zum Erstellen einer robusten API zum Abfragen von Daten in einer bestimmten Instanz. Dazu muss ein Client das [Schema](#schema-generation) abrufen, das alle für eine Abfrage erforderlichen Typen enthält.
 
 Bei Inhaltsfragmenten basieren die GraphQL-Schemata (Struktur und Typen) auf **aktivierten** [Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) und deren Datentypen.
 
@@ -239,7 +239,7 @@ Innerhalb des Schemas gibt es einzelne Felder, die zwei grundlegenden Kategorien
 
   Eine Auswahl von [Datentypen](#Data-types) wird verwendet, um Felder basierend auf der Konfiguration Ihres Inhaltsfragmentmodells zu erstellen. Die Feldnamen werden dem Feld **Eigenschaftsname** auf der Registerkarte **Datentyp** entnommen.
 
-   * Daneben gibt es auch die Einstellung **Rendern als**, da Benutzende bestimmte Datentypen konfigurieren können. Beispielsweise kann ein einzeiliges Textfeld so konfiguriert werden, dass es mehrere einzeilige Texte enthält, indem Sie `multifield` aus der Dropdown-Liste.
+   * Daneben gibt es auch die Einstellung **Rendern als**, da Benutzende bestimmte Datentypen konfigurieren können. Beispielsweise kann ein einzeiliges Textfeld so konfiguriert werden, dass es mehrere einzeilige Texte enthält, indem `multifield` aus der Dropdown-Liste ausgewählt wird.
 
 * GraphQL für AEM generiert auch eine Reihe von [Hilfsfeldern](#helper-fields).
 
@@ -249,7 +249,7 @@ GraphQL für AEM unterstützt eine Liste von Typen. Alle unterstützten Datentyp
 
 | Datentyp für Inhaltsfragmentmodelle | GraphQL-Typ | Beschreibung |
 |--- |--- |--- |
-| Einzeilentext | `String`, `[String]` | Wird für einfache Zeichenfolgen wie Autorennamen, Ortsnamen usw. verwendet |
+| Einzeilentext | `String`, `[String]` | Wird für einfache Zeichenfolgen wie Autorennamen, Ortsnamen usw. verwendet. |
 | Mehrzeilentext | `String`, `[String]` | Wird für die Ausgabe von Text verwendet, z. B. für den Textkörper eines Artikels |
 | Zahl | `Float`, `[Float]` | Wird für die Anzeige von Gleitkommazahlen und regulären Zahlen verwendet |
 | Boolesch | `Boolean` | Wird für die Anzeige von Kontrollkästchen → einfachen Wahr/Falsch-Aussagen verwendet |
@@ -263,7 +263,7 @@ GraphQL für AEM unterstützt eine Liste von Typen. Alle unterstützten Datentyp
 
 ### Hilfsfelder {#helper-fields}
 
-Zusätzlich zu den Datentypen für benutzergenerierte Felder generiert GraphQL for AEM auch mehrere *Helper* -Felder, um ein Inhaltsfragment zu identifizieren oder zusätzliche Informationen zu einem Inhaltsfragment bereitzustellen.
+Zusätzlich zu den Datentypen für benutzergenerierte Felder generiert GraphQL für AEM auch mehrere *Hilfsfelder*, um ein Inhaltsfragment zu identifizieren oder zusätzliche Informationen über ein Inhaltsfragment bereitzustellen.
 
 Diese [Hilfsfelder](#helper-fields) sind durch ein vorangestelltes `_` gekennzeichnet, um zu unterscheiden, was vom Benutzer bzw. von der Benutzerin definiert und was automatisch generiert wurde.
 
@@ -519,7 +519,7 @@ Jedes Feld kann anhand einer eigenen Ausdrucksgruppe gefiltert werden. Die Ausdr
 
 Eine Filterdefinition (als das `filter`-Argument an eine Abfrage übergeben) enthält:
 
-* Eine Unterdefinition für jedes Feld (auf das Feld kann über seinen Namen zugegriffen werden, z. B. gibt es eine `lastName` im Filter für die `lastName` im Feld &quot;Datentyp&quot;(Feld)
+* Eine Unterdefinition für jedes Feld (auf das Feld kann über seinen Namen zugegriffen werden, z. B. gibt es ein `lastName`-Feld im Filter für das `lastName`-Feld im Daten(feld)typ)
 * Jede Unterdefinition enthält das `_expressions`-Array, das die Ausdrucksgruppe bereitstellt, und das `_logOp`-Feld, das den logischen Operator definiert, mit dem die Ausdrücke kombiniert werden sollten
 * Jeder Ausdruck wird durch den Wert (`value`-Feld) und den Operator (`_operator`-Feld) definiert, mit dem der Inhalt eines Felds verglichen werden soll
 
@@ -575,8 +575,8 @@ Mit dieser Funktion können Sie die Abfrageergebnisse entsprechend einem bestimm
 Die Sortierkriterien:
 
 * ist eine durch Kommas getrennte Liste von Werten, die den Feldpfad darstellen
-   * Das erste Feld in der Liste definiert die primäre Sortierreihenfolge, das zweite Feld wird verwendet, wenn zwei Werte der primären Sortierkriterien gleich sind, das dritte, wenn die ersten beiden Kriterien gleich sind usw.
-   * gepunktete Notation, also field1.subfield.subfield usw.
+   * das erste Feld in der Liste definiert die primäre Sortierreihenfolge, das zweite Feld wird verwendet, wenn zwei Werte der primären Sortierkriterien gleich sind, das dritte, wenn die ersten beiden Kriterien gleich sind, usw.
+   * gepunktete Notation, z. B. „field1.subfield.subfield“ usw.
 * mit optionaler Sortierrichtung
    * ASC (aufsteigend) oder DESC (absteigend); standardmäßig wird ASC angewendet
    * die Richtung kann pro Feld angegeben werden. Dies bedeutet, dass Sie ein Feld in aufsteigender Reihenfolge sortieren können, ein anderes in absteigender Reihenfolge (name, firstName DESC)
@@ -715,7 +715,7 @@ query {
 
 Mit einer Web-optimierten Bildbereitstellung können Sie eine GraphQL-Abfrage verwenden, um:
 
-* Eine URL für ein AEM Asset-Bild anzufordern
+* Anfordern einer URL für ein DAM-Asset-Bild (referenziert durch eine **Inhaltsreferenz**)
 
 * Parameter mit der Abfrage zu übergeben, sodass automatisch eine bestimmte Ausgabedarstellung des Bildes generiert und zurückgegeben wird
 
@@ -735,9 +735,19 @@ Auf diese Weise können Sie Bildausgabeformate für die JSON-Bereitstellung dyna
 
 Die Lösung in GraphQL bietet Ihnen folgende Möglichkeiten:
 
-* Verwenden von `_dynamicUrl` für die Referenz `ImageRef`
+* URL anfordern: Verwenden Sie `_dynamicUrl` auf `ImageRef` reference
 
-* Hinzufügen von `_assetTransform` in die Listenüberschrift, in der die Filter definiert sind
+* Parameter weitergeben: hinzufügen `_assetTransform` in die Listenüberschrift, in der die Filter definiert sind
+
+<!-- 
+>[!NOTE]
+>
+>A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>* `_dynamicUrl` : a DAM asset
+>* `_dmS7Url` : a Dynamic Media asset
+> 
+>If the image referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
+-->
 
 ### Struktur der Umwandlungsanfrage {#structure-transformation-request}
 
@@ -902,7 +912,7 @@ Verwenden Sie beispielsweise die folgenden URLs, um die vorherigen Beispiele dir
      >
      >Das abschließende `;`ist obligatorisch, um die Liste der Parameter sauber zu beenden.
 
-### Einschränkungen bei der Bildbereitstellung {#image-delivery-limitations}
+### Einschränkungen bei der Web-optimierten Bildbereitstellung {#web-optimized-image-delivery-limitations}
 
 Die folgenden Einschränkungen gelten:
 
@@ -912,6 +922,58 @@ Die folgenden Einschränkungen gelten:
 
    * Keine Zwischenspeicherung bei Author
    * Zwischenspeicherung bei Publish – Alter von maximal 10 Minuten (kann vom Client nicht geändert werden)
+
+<!--
+## Dynamic Media asset delivery by URL in GraphQL queries{#dynamic-media-asset-delivery-by-url}
+
+GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
+
+The solution in GraphQL means you can:
+
+* use `_dmS7Url` on the `ImageRef` reference
+
+>[!NOTE]
+>
+>For this you need to have a [Dynamic Media Cloud Configuration](/help/assets/dynamic-media/config-dm.md). 
+>
+>This adds the `dam:scene7File` and `dam:scene7Domain` attributes on the asset's metadata when it is created.
+
+>[!NOTE]
+>
+>A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>
+>* `_dmS7Url` : a Dynamic Media asset
+>* `_dynamicUrl` : a DAM asset
+> 
+>If the image referenced is a Dynamic Media asset then the value for `_dynamicURL` will be `null`. See [web-optimized image delivery in GraphQL queries](#web-optimized-image-delivery-in-graphql-queries).
+
+### Sample query for Dynamic Media asset delivery by URL {#sample-query-dynamic-media-asset-delivery-by-url}
+
+The following is a sample query:
+* for multiple Content Fragments of type `team` and `person`
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      _path
+      title
+      teamMembers {
+        fullName
+        profilePicture {
+          __typename
+          ... on ImageRef{
+            _dmS7Url
+            height
+            width
+          }
+        }
+      }
+    }
+  }
+} 
+```
+-->
 
 ## GraphQL für AEM – Zusammenfassung der Erweiterungen {#graphql-extensions}
 
@@ -985,19 +1047,28 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
          * Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit einer gegebenen Variante](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 
-   * Für [Bildbereitstellung](#image-delivery):
+   * Für die Bildbereitstellung:
 
-      * `_dynamicUrl`: über die Referenz `ImageRef`
+      * `_authorURL`: die vollständige URL zum Bild-Asset in AEM Autoreninstanz
+      * `_publishURL`: die vollständige URL zum Bild-Asset bei AEM Veröffentlichung
 
-      * `_assetTransform`: in der Listenüberschrift, in der die Filter definiert sind
+      * Für [Web-optimierte Bildbereitstellung](#web-optimized-image-delivery-in-graphql-queries) (von DAM-Assets):
 
-      * Siehe:
+         * `_dynamicUrl`: die vollständige URL zum Web-optimierten DAM-Asset auf der `ImageRef` reference
 
-         * [Beispielabfrage für die Bildbereitstellung mit vollständigen Parametern](#image-delivery-full-parameters)
+           >[!NOTE]
+           >
+           >`_dynamicUrl` ist die bevorzugte URL für Web-optimierte DAM-Assets und sollte die Verwendung von `_path`, `_authorUrl`, und `_publishUrl` wann immer möglich.
 
-         * [Beispielabfrage für die Bildbereitstellung mit einem einzelnen angegebenen Parameter](#image-delivery-single-specified-parameter)
+         * `_assetTransform`: zum Übergeben von Parametern in die Listenüberschrift, in der die Filter definiert sind
 
-   * `_tags`: um die IDs von Inhaltsfragmenten oder Varianten anzuzeigen, die Tags enthalten; dies ist ein Array von `cq:tags`-Kennungen.
+         * Siehe:
+
+            * [Beispielabfrage für eine Web-optimierte Bildbereitstellung mit vollständigen Parametern](#web-optimized-image-delivery-full-parameters)
+
+            * [Beispielabfrage für eine Web-optimierte Bildbereitstellung mit einem einzelnen angegebenen Parameter](#web-optimized-image-delivery-single-query-variable)
+
+   * `_tags`: um die IDs von Inhaltsfragmenten oder Varianten anzuzeigen, die Tags enthalten. Dies ist ein Array von `cq:tags` Kennungen.
 
       * Siehe [Beispielabfrage – Namen aller Städte, die als Städtereisen markiert sind](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
       * Siehe [Beispielabfrage für Inhaltsfragmentvarianten eines bestimmten Modells, an die ein bestimmtes Tag angehängt ist](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
@@ -1028,6 +1099,13 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 * Fallback bei der Abfrage verschachtelter Fragmente:
 
    * Wenn eine bestimmte Variante nicht in einem verschachtelten Fragment vorhanden ist, wird die **primäre** Variante ausgegeben.
+
+<!-- between dynamicURL and tags -->
+<!--
+    * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
+
+      * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
+-->
 
 ## Abfragen des GraphQL-Endpunkts von einer externen Website {#query-graphql-endpoint-from-external-website}
 
