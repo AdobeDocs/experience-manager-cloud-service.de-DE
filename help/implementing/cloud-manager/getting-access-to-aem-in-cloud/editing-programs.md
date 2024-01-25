@@ -2,10 +2,10 @@
 title: Verwalten und Bearbeiten von Programmen
 description: Erfahren Sie, wie Sie Ihre Produktions- und Sandbox-Programme bearbeiten, um ihre Optionen nach der Erstellung anzupassen.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 0d60c19638707262dab7f290f84fa873b694bc22
+source-git-commit: 2dfae31e32d375c82c4f690624e48f7f09feb4df
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 49%
+source-wordcount: '773'
+ht-degree: 32%
 
 ---
 
@@ -99,38 +99,21 @@ Die **Leistung** -Karte einen Überblick über die **[CDN-Dashboard.](/help/impl
 
    ![Option „Programm bearbeiten“](assets/edit-program-overview.png)
 
-1. Die Seite **Programm bearbeiten** wird geöffnet. Wählen Sie die Registerkarte **Allgemein** aus, um den Programmnamen und die Beschreibung zu bearbeiten.
-
-   * Für ein Programm muss mindestens eine Lösung ausgewählt sein.
+1. Die **Programm bearbeiten** Seite, die in der **Allgemein** Registerkarte.
 
    ![Registerkarte „Allgemein“](assets/edit-program-prod1.png)
 
-1. Wählen Sie die Registerkarte **Lösungen und Add-ons** aus, um die Lösungen für das Programm zu ändern.
-
-   ![Lösungen auswählen](assets/edit-prg.png)
-
-1. Klicken Sie auf den Pfeil vor dem Lösungsnamen, um optionale Add-ons anzuzeigen, z. B. die Add-on-Option **Commerce** unter **Sites**.
-
-   ![Add-ons bearbeiten](assets/edit-program-add-on.png)
-
-1. Auf der Registerkarte **Einstellungen für die Live-Schaltung** können Sie den geplanten Tag der Veröffentlichung für das Programm ändern.
-
-   ![Live-Schaltungs-Einstellungen bearbeiten](assets/edit-program-go-live.png)
-
-   * Dieses Datum dient nur zu Informationszwecken.  Dadurch wird das Go Live-Widget auf der Programmübersichtsseite ausgelöst. Im Gegenzug bietet es produktinterne Links zur Dokumentation der Best Practices in Adobe Experience Manager (AEM) as a Cloud Service, um sich an Ihrer Tour auszurichten und zu einem erfolgreichen Go Live-Erlebnis beizutragen.
-   * Diese Registerkarte ist nicht für Sandbox-Programme verfügbar.
-
-1. Wenn die erforderlichen Berechtigungen für das Programm verfügbar sind, zeigt die Registerkarte **Sicherheit** an, wo Sie die Sicherheitsoptionen für das Programm ändern können.
-
-   ![Sicherheitseinstellungen bearbeiten](assets/edit-program-security.png)
-
-   * HIPAA kann nach der [Programmerstellung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) weder aktiviert noch deaktiviert werden.
-      * Hier finden Sie [weitere Informationen](https://www.adobe.com/go/hipaa-ready) zur Implementierung einer HIPAA-fähigen Lösung von Adobe.
-   * Nach der Aktivierung kann der WAF-DDOS-Schutz durch Einrichten einer [produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) konfiguriert werden.
+1. Die zur Bearbeitung des Programms verfügbaren Optionen sind mit denen beim Erstellen des Programms identisch.
+   * Lesen Sie die Dokumente [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) und [Erstellen von Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) für Details zu den einzelnen Optionen.
+   * [Zusätzliche Optionen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) kann je nach den Berechtigungen Ihres Unternehmens für Ihr Produktionsprogramm verfügbar sein.
 
 1. Klicken Sie auf **Aktualisieren**, um Ihre Änderungen am Programm zu speichern.
 
-Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich des Hinzufügens oder Entfernens einer Lösung oder eines Add-ons, werden diese Änderungen erst nach der nächsten Bereitstellung wirksam.
+Die Änderungen am Programm werden gespeichert.
+
+>[!NOTE]
+>
+>Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich des Hinzufügens oder Entfernens einer Lösung oder eines Add-ons, werden diese Änderungen erst nach der nächsten Bereitstellung wirksam.
 
 ## Löschen von Sandbox-Programmen {#delete-sandbox-program}
 
