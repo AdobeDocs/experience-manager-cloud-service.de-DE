@@ -5,10 +5,10 @@ topic-tags: author
 keywords: Adaptive Formularfragmente hinzufügen, adaptive Formularfragmente, Formularfragment erstellen, Fragment zu einem adaptiven Formular hinzufügen, Fragmente verwalten
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 5d9cf5d4dee5122263b15cee8874975887c57219
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 94%
+source-wordcount: '1789'
+ht-degree: 93%
 
 ---
 
@@ -27,6 +27,10 @@ Adaptive Formulare bieten einen praktischen Mechanismus, mit dem Formularsegment
 Formularfragmente lassen sich nahtlos in mehrere Formulare integrieren, wodurch die Erstellung konsistenter und professionell aussehender Formulare optimiert wird. Formularfragmente sorgen für Wiederverwendbarkeit, Standardisierung und Markenkonsistenz durch die Funktion „Einmal ändern und überall widerspiegeln“. Erleben Sie mehr Wartbarkeit und Effizienz, da Aktualisierungen an einem Ort automatisch über alle Formulare hinweg übernommen werden, die diese Fragmente verwenden.
 
 Sie können ein Fragment mehrmals zu einem Dokument hinzufügen und die Datenbindungseigenschaften seiner Komponenten verwenden, um es mit verschiedenen Datenquellen oder Schemata zu verknüpfen. Beispielsweise können Sie dasselbe Adressfragment für permanente, Kommunikations- und Abrechnungsadressen verwenden und es mit verschiedenen Feldern einer Datenquellen oder eines Schemas verbinden.
+
+>[!NOTE]
+>
+> Sie können Ihre Fragmenterfahrung für Benutzer einfach mit der [Dialogfeld &quot;Konfigurieren&quot;und Dialogfeld &quot;Design&quot;der Formularfragment-Komponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html).
 
 ## Erstellen eines Formularfragments {#create-a-fragment}
 
