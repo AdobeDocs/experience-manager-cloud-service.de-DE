@@ -3,10 +3,10 @@ title: Best Practices der Suchfunktion für [!DNL Adobe Experience Manager] as a
 description: Best Practices zum Suchen, Finden und Abrufen von Asset-Metadaten in Ihrer Anwendung.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 47003c9aa0faefc01a9935c53a5a78938c37cf66
+source-git-commit: 6397a300de13c5e4f6ee5828de1ba76a1677c227
 workflow-type: tm+mt
-source-wordcount: '2521'
-ht-degree: 99%
+source-wordcount: '2527'
+ht-degree: 97%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 [!DNL Adobe Experience Manager Assets] bietet stabile Suchmethoden für Assets, mit denen Sie eine höhere Inhaltsgeschwindigkeit erzielen können. Manchmal kann das Auffinden des richtigen Assets mühsam und zeitaufwendig sein. Daher ist die Suchfunktion für Assets in [!DNL Adobe Experience Manager Assets] von zentraler Bedeutung für die Nutzung eines Digital Asset Management-Systems. Sei es für die Weiterverwendung durch Kreative, für die robuste Verwaltung von Assets durch Geschäftsanwenderinnen und -anwender und Marketing-Fachleute oder für die Verwaltung durch DAM-Admins.
 
-Dieses Hilfedokument enthält Best Practices für die AEM-Suchfunktion mithilfe verschiedener Szenarien, damit AEM-Benutzende eine einfache oder erweiterte Suche durchführen können.
+Dieses Hilfedokument enthält AEM Best Practices für die Suche mithilfe verschiedener Szenarien, damit AEM Benutzer eine einfache bis erweiterte Suche durchführen können.
 
 ## Zugriff auf die Experience Manager-Suche {#access-experience-manager-search}
 
@@ -258,7 +258,11 @@ Markieren Sie das Asset > navigieren Sie zu den Auslassungspunkten oben rechts >
 
 1. Beachten Sie die Suchleiste. Die Miniaturansicht des ausgewählten Assets wird in der Suchleiste angezeigt und gibt Ihre Suchanforderung an. Daraufhin werden Assets mit ähnlichen Smart-Tags zurückgegeben.
 
-Die **[!UICONTROL Assets-Ansicht]** unterstützt die Option [!UICONTROL Ähnliche suchen] nicht.
+Führen Sie die folgenden Schritte in der **[!UICONTROL Asset-Ansicht]** aus:
+
+1. Suchen Sie das Asset gemäß Ihren Anforderungen.
+1. Wählen Sie das Bild aus und navigieren Sie zu [!UICONTROL Ähnliches Bild suchen] -Option in der Navigationsleiste am oberen Rand.
+Sie gelangen zur Sammlung von Assets mit ähnlichen Farben und Metadaten.
 
 ## Benutzerdefinierte Suchfacetten {#custom-search-facets}
 
@@ -351,7 +355,7 @@ The newly added assets are not indexed.
         <td> 
             Unterstützte Optionen sind:
             <ul>
-            <li> Veröffentlichen
+            <li> Publish
             <li> Veröffentlichungsdatum
             <li> Zuletzt veröffentlicht von
             <li> Genehmigung 
@@ -418,11 +422,6 @@ The newly added assets are not indexed.
             <li> Inhaltsfragmentmodell
             </ul> 
         </td>
-        <td> Nicht unterstützt </td>
-    </tr>
-     <tr>
-        <td> Ähnliche suchen </td>
-        <td> Unterstützt </td>
         <td> Nicht unterstützt </td>
     </tr>
 </table>
