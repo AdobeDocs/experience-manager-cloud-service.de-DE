@@ -2,10 +2,10 @@
 title: Mein Arbeitsbereich für die Assets-Ansicht
 description: Mein Arbeitsbereich ist eine Seite, die anpassbare visuelle Module bietet, mit denen Sie bequem auf wichtige Bereiche der Assets-Benutzeroberfläche und Informationen zugreifen können, die für den Benutzenden am relevantesten sind.
 exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
-source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
-workflow-type: ht
-source-wordcount: '740'
-ht-degree: 100%
+source-git-commit: 2500322c5565314e84ee7989399b9130f5cd6f74
+workflow-type: tm+mt
+source-wordcount: '745'
+ht-degree: 91%
 
 ---
 
@@ -44,7 +44,7 @@ So veröffentlichen Sie ein Asset, einen Ordner oder eine Sammlung:
 
 1. Wählen Sie das Element aus und klicken Sie auf **[!UICONTROL An Schnellzugriff anheften]**.
 
-1. Wählen Sie aus, ob das Element nur für Sie, für die gesamte Organisation oder für ausgewählte Gruppen veröffentlicht werden soll. Wenn Sie **[!UICONTROL Für Gruppen]** auswählen, definieren Sie die Gruppennamen im Feld **[!UICONTROL Für Gruppen anheften]**.
+1. Wählen Sie aus, ob das Element nur für Sie, für die gesamte Organisation oder für ausgewählte Gruppen veröffentlicht werden soll. Wenn Sie **[!UICONTROL Für Gruppen]**, wählen Sie einen vorhandenen Gruppennamen in der **[!UICONTROL Pin für Gruppen]** -Feld.
 
    ![Anheften von Elementen für Gruppen](assets/pin-items-for-groups.png)
 1. Klicken Sie auf **[!UICONTROL Anheften]**.
@@ -62,7 +62,7 @@ Im Dashboard „Mein Arbeitsbereich“ können Sie über den Abschnitt **Insight
 
 **Aufgaben**
 
-Zeigt auf der Registerkarte **[!UICONTROL Meine Aufgaben]** die Liste der Ihnen derzeit zugewiesenen Aufgaben, auf der Registerkarte **[!UICONTROL Zugewiesene Aufgaben]** die von Ihnen erstellten Aufgaben und auf der Registerkarte **[!UICONTROL Abgeschlossen]** die von Ihnen bereits erledigten Aufgaben. Sie können eine Aufgabe auswählen und auf **[!UICONTROL Aufgabe abschließen]** klicken, um eine Aufgabe zu genehmigen oder abzulehnen. Sie können auch eine Aufgabe auswählen und auf **[!UICONTROL Aufgabendetails öffnen]** klicken, um die Aufgabe anzuzeigen und zu genehmigen, abzulehnen, zu bearbeiten oder zu löschen.
+Zeigt die Liste der Aufgaben an, die Ihnen derzeit im **[!UICONTROL Meine Aufgaben]** von Ihnen im **[!UICONTROL Zugewiesene Aufgaben]** und die Aufgaben, die Sie bereits im **[!UICONTROL Abgeschlossene Aufgaben]** Registerkarte. Sie können eine Aufgabe auswählen und auf **[!UICONTROL Vollständige Frage]** , um eine Aufgabe zu genehmigen oder abzulehnen. Sie können auch eine Aufgabe auswählen und auf **[!UICONTROL Aufgabendetails öffnen]** klicken, um die Aufgabe anzuzeigen und zu genehmigen, abzulehnen, zu bearbeiten oder zu löschen.
 
 ![Aufgaben in Workspace](assets/tasks-workspace.png)
 
