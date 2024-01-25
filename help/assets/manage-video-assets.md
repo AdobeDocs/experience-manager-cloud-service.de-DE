@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 517412d3f9d79a35bd1c25bd0eb09c0dee63c9af
+source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
 workflow-type: tm+mt
-source-wordcount: '4904'
-ht-degree: 99%
+source-wordcount: '4975'
+ht-degree: 95%
 
 ---
 
@@ -25,12 +25,34 @@ Lernen Sie, wie Sie die Video-Assets in [!DNL Adobe Experience Manager Assets] v
 
 ## Hochladen und Anzeigen der Vorschau von Video-Assets {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] generiert eine Vorschau für Video-Assets mit der Erweiterung MP4. Sie können eine Vorschau dieser Ausgabedarstellungen in der Benutzeroberfläche von [!DNL Assets] anzeigen.
+Sie können Video-Assets in einem unterstützten Format hochladen und in einer Vorschau anzeigen in [!DNL Experience Manager Assets].
+<!-- It generates previews for video assets with the extension MP4. -->
 
-1. Navigieren Sie im Ordner „Digitale Assets“ (oder dessen Unterordnern) zum Speicherort, an dem Sie digitale Assets hinzufügen möchten.
-1. Um Assets hochzuladen, klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]** und wählen dann **[!UICONTROL Dateien]** aus. Alternativ können Sie eine Datei auf die Benutzeroberfläche ziehen. Weitere Informationen finden Sie unter [Hochladen von Assets](manage-digital-assets.md#uploading-assets).
-1. Rufen Sie die Vorschau eines Videos in der Kartenansicht auf, indem Sie auf die Schaltfläche **[!UICONTROL Wiedergabe]** ![Schaltfläche Wiedergabe](assets/do-not-localize/play.png) im Video-Asset klicken. Sie können Videos nur in der Kartenansicht anhalten oder wiedergeben. Die Optionen [!UICONTROL Wiedergabe] und [!UICONTROL Pause] sind in der Listenansicht nicht verfügbar.
-1. Wählen Sie auf der Karte die Option **[!UICONTROL Bearbeiten]**, um eine Vorschau des Videos auf der Seite mit den Asset-Details anzuzeigen. Das Video wird im systemeigenen Video-Player des Browsers wiedergegeben. Sie können das Video wiedergeben und anhalten, die Lautstärke regeln und in den Vollbildmodus wechseln.
+### Hochladen von Video-Assets
+
+Gehen Sie wie folgt vor, um ein Video-Asset hochzuladen:
+
+1. Navigieren Sie im Ordner &quot;Digitale Assets&quot;oder in den Unterordnern zu dem Speicherort, an dem Sie das Asset hinzufügen müssen.
+1. Klicks **[!UICONTROL Erstellen]** Wählen Sie in der Symbolleiste und **[!UICONTROL Dateien]**. <br>Alternativ können Sie eine Datei auf die Benutzeroberfläche ziehen.
+Weitere Informationen [Hochladen von Assets](manage-digital-assets.md#uploading-assets) in [!DNL Experience Manager Assets].
+
+<!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
+1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
+
+### Vorschau von Video-Assets
+
+Sie können eine Vorschau der MP4-Ausgabeformate im [!DNL Assets] -Benutzeroberfläche. Gehen Sie wie folgt vor, um eine Vorschau eines Video-Assets anzuzeigen:
+
+1. Hochladen eines Video-Assets in einem unterstützten Format [!DNL Experience Manager Assets]. Weitere Informationen zum [unterstützte Videoformate](file-format-support.md#video-formats). <br>Nach dem Hochladen wird das Video-Asset verarbeitet und eine Vorschau-Ausgabedarstellung generiert.
+1. Klicken Sie auf das Asset und wählen Sie ![Detailoption](assets/do-not-localize/details_icon.svg) **[!UICONTROL Details]**  aus der oberen Symbolleiste. Das Video-Asset wird im Video-Viewer geöffnet.
+1. Klicken Sie auf ![Abspieloption](assets/do-not-localize/play.png) auf der Videominiatur angezeigt. <br>Sie können das Video wiedergeben, anhalten, die Lautstärke steuern und in den Vollbildmodus wechseln.
+
+Für vorhandene Video-Assets in [!DNL Experience Manager Assets], müssen Sie **[!UICONTROL Neuverarbeitung]** die Assets in [!DNL Experience Manager] , um die Funktion zur Videovorschau zu aktivieren. Erfahren Sie, wie [digitale Assets erneut verarbeiten](reprocessing.md) in [!DNL Experience Manager].
+
+### Einschränkungen der Videovorschau
+
+* MXF-Dateien zeigen keine Videovorschau an, obwohl die Ausgabedarstellung generiert wurde.
+* WebM-Dateien generieren keine Vorschaudarstellungen, da sie von Webbrowsern systemintern wiedergegeben werden können.
 
 ## Veröffentlichen von Video-Assets {#publish-video-assets}
 
