@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
+source-git-commit: 4b05e8f8ae554e7c0881134ef24ca8ce35e3e2bf
 workflow-type: tm+mt
-source-wordcount: '4975'
+source-wordcount: '4976'
 ht-degree: 95%
 
 ---
@@ -41,7 +41,7 @@ Weitere Informationen [Hochladen von Assets](manage-digital-assets.md#uploading-
 
 ### Vorschau von Video-Assets
 
-Sie können eine Vorschau der MP4-Ausgabeformate im [!DNL Assets] -Benutzeroberfläche. Gehen Sie wie folgt vor, um eine Vorschau eines Video-Assets anzuzeigen:
+Sie können eine Vorschau von Videos in unterstützten Ausgabeformaten im [!DNL Assets] -Benutzeroberfläche. Gehen Sie wie folgt vor, um eine Vorschau eines Video-Assets anzuzeigen:
 
 1. Hochladen eines Video-Assets in einem unterstützten Format [!DNL Experience Manager Assets]. Weitere Informationen zum [unterstützte Videoformate](file-format-support.md#video-formats). <br>Nach dem Hochladen wird das Video-Asset verarbeitet und eine Vorschau-Ausgabedarstellung generiert.
 1. Klicken Sie auf das Asset und wählen Sie ![Detailoption](assets/do-not-localize/details_icon.svg) **[!UICONTROL Details]**  aus der oberen Symbolleiste. Das Video-Asset wird im Video-Viewer geöffnet.
