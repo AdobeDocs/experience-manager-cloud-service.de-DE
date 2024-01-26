@@ -2,10 +2,10 @@
 title: Aufnehmen von Inhalten in Cloud Service
 description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ihrem Migrationssatz in eine Cloud Service-Zielinstanz aufnehmen können.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
+source-git-commit: 281523183cecf1e74c33f58ca9ad038bba1a6363
 workflow-type: tm+mt
-source-wordcount: '2407'
-ht-degree: 80%
+source-wordcount: '2410'
+ht-degree: 79%
 
 ---
 
@@ -38,7 +38,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager au
    > Wenn die Extraktion ausgeführt wird, wird sie im Dialogfeld angezeigt. Nach erfolgreichem Abschluss der Extraktion wird die Aufnahme automatisch gestartet. Wenn die Extraktion fehlschlägt oder angehalten wird, wird der Aufnahmevorgang zurückgesetzt.
 
    * **Ziel:** Wählen Sie die Zielumgebung aus. In dieser Umgebung werden die Inhalte des Migrationssatzes aufgenommen.
-      * Aufnahmen unterstützen kein Ziel in einer schnellen Entwicklungsumgebung (RDE), und diese werden nicht als mögliche Zielauswahl angezeigt, selbst wenn Benutzerzugriff darauf besteht.
+      * Einstiege unterstützen keine Ziele vom Typ Rapid Development Environment (RDE) oder Preview und erscheinen nicht als mögliche Zielauswahl, selbst wenn der Benutzer Zugriff darauf hat.
       * Während ein Migrationssatz gleichzeitig in mehrere Ziele aufgenommen werden kann, kann ein Ziel zu jedem Zeitpunkt nur das Ziel einer ausgeführten oder einer wartenden Aufnahme sein.
 
    * **Ebene:** Wählen Sie die Ebene aus. (Author/Publish).
