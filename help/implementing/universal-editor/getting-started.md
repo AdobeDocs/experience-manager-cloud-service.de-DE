@@ -2,10 +2,10 @@
 title: Erste Schritte mit dem universellen Editor in AEM
 description: Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
+source-git-commit: f9d584d7b117c24224079f581802f5f126890304
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '871'
+ht-degree: 95%
 
 ---
 
@@ -104,8 +104,6 @@ Diese Eigenschaft muss in der OSGi-Konfiguration `org.apache.sling.engine.impl.S
 ## Instrumentieren der Seite {#instrument-page}
 
 Der Service des universellen Editors erfordert einen [Uniform Resource Name (URN)](https://de.wikipedia.org/wiki/Uniform_Resource_Name), um das richtige Backend-System für den Inhalt in der bearbeiteten App zu identifizieren und zu verwenden. Daher ist ein URN-Schema erforderlich, um Inhalte wieder Inhaltsressourcen zuzuordnen.
-
-Die der Seite hinzugefügten Instrumentierungsattribute bestehen hauptsächlich aus [HTML Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata), einem Branchenstandard, der auch verwendet werden kann, um HTML semantischer zu gestalten und HTML-Dokumente zu indexieren.
 
 ### Erstellen von Verbindungen {#connections}
 
