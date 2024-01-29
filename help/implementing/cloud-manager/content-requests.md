@@ -2,9 +2,9 @@
 title: Grundlegendes zu Cloud Service-Inhaltsanfragen
 description: Wenn Sie Lizenzen für Inhaltsanfragen von Adobe erworben haben, können Sie mehr über die Arten von Inhaltsanfragen, die Adobe Experience Cloud as a Service misst, und über die Abweichungen von den Analytics-Reporting-Tools eines Unternehmens erfahren.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: e31b05f0cef6c5ca3a1c00b757eac013aa43bb90
+source-git-commit: 6212ad20cb427d6b2ccd4c467d571832f923ed2a
 workflow-type: tm+mt
-source-wordcount: '2690'
+source-wordcount: '2683'
 ht-degree: 36%
 
 ---
@@ -96,9 +96,13 @@ Die Echtzeit-Benutzerüberwachung (Real User Monitoring, RUM) bietet einen tiefe
 
 ### Wer kann von RUM Data Monitoring Service profitieren? {#who-can-benefit-from-rum-data-monitoring-service}
 
-RUM Data Service ist für diejenigen von Vorteil, die Adobe nutzen, da es eine präzisere Reflektion der Benutzerinteraktionen bietet und eine zuverlässige Messung der Website-Interaktion gewährleistet, indem die Anzahl der Seitenansichten auf Client-Seite widergespiegelt wird, die mit den vorhandenen serverseitigen CDN-Log-Seitenansichten verglichen werden können. Darüber hinaus kann Adobe für Kunden, die ihr eigenes CDN verwenden, die automatische Traffic-Berichterstellung optimieren, die Seitenansichten für sie enthält. Das bedeutet, dass sie keinen Traffic-Bericht mit Adobe teilen müssen.
+RUM Data Service ist für alle Kunden von Vorteil, unabhängig davon, ob sie Adobe oder ihr eigenes CDN verwenden. Es bietet eine präzisere Darstellung der Benutzerinteraktionen und gewährleistet eine zuverlässige Messung der Website-Interaktion, indem es die Anzahl der Seitenansichten auf Client-Seite widerspiegelt.
 
-Darüber hinaus bietet es eine hervorragende Möglichkeit, erweiterte Einblicke in Ihre Seitenleistung zu erhalten, und zwar sowohl für Kunden, die das CDN verwenden, als auch für Kunden, die ihr eigenes CDN verwenden.
+Insbesondere werden Benutzerinteraktionen für Adobe-CDN-Benutzer genau verfolgt, um einen direkten Vergleich zwischen clientseitigen Seitenansichten und serverseitigen CDN-Protokollen zu ermöglichen.
+
+Kunden, die ihr eigenes CDN verwenden, können von der vereinfachten Traffic-Berichterstellung profitieren, da Adobe jetzt diese Seitenansichten direkt integriert, sodass keine separaten Berichte mehr erforderlich sind.
+
+Darüber hinaus erhalten alle Kunden tiefe Einblicke in die Seitenleistung, um ihre digitalen Erlebnisse effektiv zu optimieren.
 
 ### Erfahren Sie, wie der Datendienst für die Echtzeit-Benutzerüberwachung (RUM) funktioniert {#understand-how-the-rum-data-service-works}
 
