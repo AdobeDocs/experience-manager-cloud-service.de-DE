@@ -5,7 +5,7 @@ exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
 workflow-type: tm+mt
 source-wordcount: '680'
-ht-degree: 83%
+ht-degree: 87%
 
 ---
 
@@ -59,14 +59,14 @@ Zusammenfassend benötigen Sie die folgenden Informationen, um OAuth2 für den E
 
 Generieren Sie anschließend in einem nachfolgenden Schritt das Aktualisierungs-Token, das Teil der OSGi-Konfiguration ist, indem Sie Folgendes ausführen:
 
-1. Öffnen Sie die folgende URL im Browser, nachdem Sie `clientID` und `tenantID` mit den für Ihr Konto spezifischen Werten:
+1. Öffnen Sie die folgende URL im Browser, nachdem Sie `clientID` und `tenantID` durch die für Ihr Konto spezifischen Werte ersetzt haben:
 
    ```
    https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
    ```
 
 1. Wenn Sie gefragt werden, erlauben Sie die Berechtigung.
-1. Die URL leitet zu einem neuen Speicherort um, der in folgendem Format erstellt wurde:
+1. Die URL wird an einen neuen Ort umgeleitet. Sie wird in folgendem Format erstellt:
 
    ```
    http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`

@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 0b4c820159f918cb9b3a93d9ab36dc26b1d8da47
 workflow-type: tm+mt
 source-wordcount: '381'
-ht-degree: 27%
+ht-degree: 34%
 
 ---
 
@@ -17,7 +17,7 @@ Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuel
 
 Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 14697, die am Dienstag, 18. Dezember 2023 veröffentlicht wurde. Sie ersetzt Version 14538, in der ein Problem aufgetreten ist. Das vorherige Maintenance Release war Version 14227.
 
-2023.12.0 Feature Activation bietet die vollständige Funktion für dieses Maintenance Release. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de).
+2023.12.0: Die Funktionsaktivierung bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de).
 
 ### Verbesserungen {#enhancements-14697}
 
@@ -50,6 +50,6 @@ Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsver
 | Technologie | Version | Link |
 |---|---|---|
 | AEM OAK | 1.58-T20231123092841-619e1bd | [Oak API 1.58.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.58.0/index.html) |
-| AEM SLING-API | Version 2.27.2 | [Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM SLING-API | Version: 2.27.2 | [Apache Sling-API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | Version: 1.4.20-1.4.0 | [Spezifikation von HTML-Vorlagensprachen](https://github.com/adobe/htl-spec) |
-| AEM-Kernkomponenten | Version 2.23.4 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |
+| AEM-Kernkomponenten | Version: 2.23.4 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |

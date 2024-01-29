@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 53%
+ht-degree: 58%
 
 ---
 
@@ -21,7 +21,7 @@ Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2024.1.0 in AE
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager -Version 2024.1.0 in AEM as a Cloud Service wurde am 18. Januar 2024 veröffentlicht. Die nächste Version ist für den 16. Februar 2024 geplant.
+Die Cloud Manager -Version 2024.1.0 in AEM as a Cloud Service wurde am 18. Januar 2024 veröffentlicht. Die nächste Version wird voraussichtlich am 16. Februar 2024 veröffentlicht.
 
 ## Neue Funktionen {#what-is-new}
 
@@ -38,7 +38,7 @@ Sie können die [Datendienst für die Echtzeit-Benutzerüberwachung (RUM)](/help
 
 Der Real User Monitoring (RUM) Data Service bietet eine präzisere Darstellung der Benutzerinteraktionen und stellt so eine zuverlässige Messung der Website-Interaktion sicher. Dies ist eine großartige Gelegenheit, erweiterte Einblicke in Ihre Seitenleistung zu erhalten. Dies ist nützlich für Kunden, die entweder Adobe-verwaltetes CDN oder nicht-Adobe verwaltetes CDN verwenden. Für Kunden, die ein nicht von Adobe verwaltetes CDN verwenden, kann die automatisierte Traffic-Berichterstellung jetzt für sie aktiviert werden, sodass keine Traffic-Berichte mehr für Adobe freigegeben werden müssen.
 
-Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte eine E-Mail an `aemcs-rum-adopter@adobe.com` von der mit Ihrer Adobe ID verknüpften E-Mail-Adresse aus. Geben Sie den Domänennamen für die Produktions-, Staging- und Entwicklungsumgebungen in Ihre E-Mail ein.  Die Verfügbarkeit des Early-Adopter-Programms mit dieser Funktion ist begrenzt.
+Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte eine E-Mail an `aemcs-rum-adopter@adobe.com` von der mit Ihrer Adobe ID verknüpften E-Mail-Adresse aus. Geben Sie den Domänennamen für die Produktions-, Staging- und Entwicklungsumgebungen in Ihre E-Mail ein.  Die Verfügbarkeit des Early-Adopter-Programms für diese Funktion ist begrenzt.
 
 ### Bringen Sie Ihren eigenen GitHub mit {#byo-github}
 
@@ -48,7 +48,7 @@ Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie
 
 ### Self-Service-Inhaltswiederherstellung {#content-restore}
 
-[Eine neue Funktion zur Self-Service-Wiederherstellung von Inhalten](/help/operations/restore.md) bietet jetzt eine Backup-Wiederherstellung für bis zu sieben Tage und steht Early Adopters zu Auswertungszwecken zur Verfügung:
+[Eine neue Self-Service-Funktion zur Inhaltswiederherstellung](/help/operations/restore.md) bietet jetzt eine Backup-Wiederherstellung für bis zu sieben Tage und steht Early-Adopters zu Bewertungszwecken zur Verfügung:
 
 * Zeitpunktgenaue Backup-Wiederherstellung für die letzten 24 Stunden
 * Wiederherstellung zu festen Zeiten für bis zu sieben Tage
@@ -56,7 +56,7 @@ Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie
 Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie über die mit Ihrer Adobe-ID verknüpfte E-Mail-Adresse eine E-Mail an `aemcs-restorefrombackup-adopter@adobe.com`.
 
 * Das Early-Adopter-Programm ist auf Entwicklungsumgebungen beschränkt.
-* Die Verfügbarkeit des Early-Adopter-Programms mit dieser Funktion ist begrenzt.
+* Die Verfügbarkeit des Early-Adopter-Programms für diese Funktion ist begrenzt.
 * Diese Funktion dient zum Wiederherstellen versehentlich gelöschter Inhalte und ist nicht für die Notfallwiederherstellung vorgesehen.
 
 ### Experience Audit-Dashboard {#experience-audit-dashboard}
@@ -70,4 +70,4 @@ Möchten Sie das neue Dashboard testen? Senden Sie zunächst eine E-Mail an `aem
 ## Fehlerbehebungen {#bug-fixes}
 
 * Es wurde ein Fehler behoben, bei dem Konfigurationspipelines beim Build-Schritt fehlschlugen und eine unklare Fehlermeldung angezeigt wurde, wenn der Speicherort der Konfigurationsdateien nicht ordnungsgemäß festgelegt wurde. Die Fehlermeldung ist jetzt klar und weist darauf hin, dass der Benutzer prüfen sollte, ob der Speicherort der Konfigurationsdateien korrekt ist.
-* Wenn ein Build-Schritt mit dem Status abgeschlossen wird `FAILED` aufgrund einer `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, wird sie nun aufgrund von Zusammenführungskonflikten mit der Zielverzweigung ordnungsgemäß als Fehler beschrieben.
+* Wenn ein Build-Schritt aufgrund eines `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR` mit dem Status `FAILED` abgeschlossen wird, wird dies nun ordnungsgemäß als Fehler aufgrund von Zusammenführungskonflikten mit der Zielverzweigung beschrieben.

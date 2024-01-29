@@ -5,7 +5,7 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
 workflow-type: tm+mt
 source-wordcount: '3350'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ Eine Unterkategorie von Traffic-Filterregeln erfordert entweder eine Lizenz für
 
 Traffic-Filterregeln können über Cloud Manager-Konfigurations-Pipelines bereitgestellt werden, um Typen von Entwicklungs-, Staging- und Produktionsumgebungen in Produktionsprogrammen (ohne Sandbox) bereitzustellen. Die Unterstützung von RDEs wird in Zukunft verfügbar sein.
 
-[Tutorial durchlaufen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=de) um rasch konkrete Kenntnisse zu dieser Funktion zu erwerben.
+[Durchlaufen Sie ein Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=de), um rasch konkrete Kenntnisse zu dieser Funktion zu erwerben.
 
 ## Wie dieser Artikel organisiert ist {#how-organized}
 
@@ -227,7 +227,7 @@ when:
 
 ### Aktionsstruktur {#action-structure}
 
-Ein `action` kann entweder eine Zeichenfolge sein, die die Aktion angibt (allow, block oder log), oder ein Objekt, das sowohl aus dem Aktionstyp (allow, block oder log) als auch aus Optionen wie wafFlags und/oder dem Status besteht.
+Ein `action` kann entweder eine Zeichenfolge sein, die die Aktion angibt (Zulassen, Blockieren oder Protokollieren), oder ein Objekt, das sowohl aus dem Aktionstyp (Zulassen, Blockieren oder Protokollieren) als auch aus Optionen wie wafFlags und/oder dem Status besteht.
 
 **Aktionstypen**
 
@@ -278,7 +278,7 @@ Die `wafFlags`-Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln v
 
 * In Cloud Manager definierte IP-Zulassungslisten haben Vorrang vor Traffic-Filter-Regeln.
 
-* Die WAF-Regelübereinstimmung wird nur in CDN-Protokollen angezeigt, wenn CDN fehlt und weitergibt, nicht aber bei Treffern.
+* Übereintimmungen für eine WAF-Regel erscheinen nur in CDN-Protokollen bei Fehlschlägen und Durchgängen von CDN, nicht jedoch bei Treffern.
 
 ## Regelbeispiele {#examples}
 
@@ -492,7 +492,7 @@ Die Regeln verhalten sich wie folgt:
 * Wenn die WAF lizenziert und aktiviert ist, wird die `waf` -Attribut listet alle WAF-Flags (z. B. SQLI) auf, die erkannt wurden, unabhängig davon, ob die WAF-Flags in irgendwelchen Regeln aufgeführt wurden. Dies soll Aufschluss über potenzielle neue Regeln geben, die deklariert werden können.
 * Wenn keine auf Kundenseite deklarierten Regeln übereinstimmen und keine WAF-Regeln übereinstimmen, ist die Eigenschaft `rules` leer.
 
-Wie bereits erwähnt, erscheinen WAF-Regelübereinstimmungen nur in CDN-Protokollen für CDN-Fehlschläge und -Übermittlungen, nicht aber für Treffer.
+Wie bereits erwähnt, erscheinen Übereinstimmungen für eine WAF-Regel nur in CDN-Protokollen für Fehlschläge und Durchgänge von CDN, nicht jedoch für Treffer.
 
 Das folgende Beispiel zeigt eine beispielhafte `cdn.yaml` und zwei CDN-Protokolleinträge:
 
