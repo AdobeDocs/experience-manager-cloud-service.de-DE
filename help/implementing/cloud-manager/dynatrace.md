@@ -1,67 +1,67 @@
 ---
-title: Dynatraktion
-description: Erfahren Sie, wie Sie Dynatrace mit AEM as a Cloud Service verwenden.
+title: Dynatrace
+description: Erfahren Sie, wie Sie Dynatrace mit AEM as a Cloud Service nutzen
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 source-git-commit: a234f2a00c51bcb23b0c52feac9971259d26b8c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '557'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Dynatraktion {#dynatrace}
+# Dynatrace {#dynatrace}
 
-Adobe bietet die Möglichkeit, Dynatraace zu verwenden, um AEM im Rahmen der Unternehmensbereitstellung zu überwachen, die Ursache möglicher Probleme zu ermitteln und Maßnahmen zu ergreifen, um diese bei Bedarf zu beheben.
+Adobe bietet die Möglichkeit, Dynatrace zur Überwachung von AEM as a Cloud Service im Rahmen einer Unternehmensbereitstellung, zur Identifizierung potenzieller Problemursachen und zur Behebung dieser Probleme zu nutzen.
 
-Mit Dynatraktion können Sie für alle Ihre AEM-Anwendungen eine nahtlose Beobachtbarkeit erhalten. Dynatrace bietet einen umfassenden Einblick in das Benutzererlebnis, indem Sie Ihre AEM-Anwendungen automatisch erkennen und ihre Abhängigkeiten von der Website zum Container für den Cloud-Service visualisieren. In Verbindung mit End-to-End-Traces in allen Ebenen und der Echtzeit-Benutzerüberwachung können Sie Ihre AEM inhaltsbasierten Erlebnisse ohne Lücken oder blinde Flecken auf die nächste Ebene bringen. Wenn Anomalien auftreten, diagnostiziert Dynatrace sie in Echtzeit mit der Davis AI-Engine und zeigt die Ursache auf den fehlerhaften Code an, bevor Ihre Kunden betroffen sind. Dadurch wird die mittlere Reparaturzeit minimiert.
+Dynatrace ermöglicht die nahtlose Überwachung sämtlicher AEM-Programme. Dynatrace bietet umfassenden Einblick in das Endbenutzererlebnis durch automatische Ermittlung der genutzten AEM-Programme und Visualisierung ihrer Abhängigkeiten von der Website über den Container bis zum Cloud-Service. Bringen Sie durch die Verknüpfung mit End-to-end-Traces auf allen Ebenen und Echtzeit-Benutzerüberwachung Ihre auf AEM-Content gestützten Erlebnisse auf die nächste Stufe – ohne Lücken oder blinde Flecken. Wenn Anomalien auftreten, diagnostiziert Dynatrace sie mit der KI-Engine Davis in Echtzeit und ermittelt den ursächlichen fehlerhaften Code, bevor Kundschaft betroffen ist. Dadurch wird auch die mittlere Reparaturzeit minimiert.
 
-Weitere Informationen zu Dynatrace finden Sie unter [Adobe AEM Cloud Service-Integration](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/).
+Weitere Informationen zu Dynatrace finden Sie unter [Integration von Adobe AEM Cloud Service](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/).
 
-![Leistungsmetriken AEM Autoren- und Herausgeber](/help/implementing/cloud-manager/assets/dynatrace-performance-metrics.png)
+![Performance-Metriken in der AEM-Autoren- und -Veröffentlichungsumgebung](/help/implementing/cloud-manager/assets/dynatrace-performance-metrics.png)
 
-## Integrieren von Dynatrakien in AEM as a Cloud Service {#integrating-dynatrace-with-aem-as-a-cloud-service}
+## Integration von Dynatrace mit AEM as a Cloud Service {#integrating-dynatrace-with-aem-as-a-cloud-service}
 
-Dynatraktikkunden können ihre AEM-Umgebungen überwachen, indem sie über ein Support-Ticket eine Konnektivität anfordern.
+Dynatrace-Kunden können ihre AEM-Umgebungen überwachen, indem sie über ein Support-Ticket eine Verbindung anfragen.
 
-Die für Verbindungsanfragen erforderlichen Details werden nachfolgend beschrieben:
+Im Folgenden finden Sie die für Verbindungsanfragen erforderlichen Details:
 
 | **Feld** | **Beschreibung** |
 |---|---|
-| URL der dynamischen Umgebung | Ihre URL der dynamischen Umgebung.<br><br>Für Dynatrace SaaS-Kunden lautet das Format `https://<your-environment-id>.live.dynatrace.com`.<br><br>Für Dynatrace Managed -Kunden lautet das Format `https://<your-managed-url>/e/<environmentId>` |
-| Dynamic Environment ID | Ihre ID der dynamischen Umgebung. Siehe [Abrufen von Informationen zur Dynatraktionsumgebung](#get-dynatrace-env-info) für Informationen dazu. |
-| Dynatraktische Umgebungstoken | Ihr Token für die Dynatraktionsumgebung. Siehe [Abrufen von Informationen zur Dynatraktionsumgebung](#get-dynatrace-env-info) für Informationen dazu.<br><br>Dies sollte als geheim betrachtet werden. Verwenden Sie daher geeignete Sicherheitspraktiken. Zum Beispiel schützen Passwörter sie auf einer Website wie **zerobin.net**, auf die das Kundensupport-Ticket zusammen mit dem Kennwort verweisen kann. |
-| Dynatraktions-API-Zugriffstoken | Das API-Zugriffstoken Ihrer Dynatraktionsumgebung.  Siehe [Erstellen eines Dynatraktions-API-Zugriffstokens](#create-dynatrace-access-token) für die Erstellung.<br><br>Dies sollte als geheim betrachtet werden, sodass geeignete Sicherheitspraktiken zum Einsatz kommen. Zum Beispiel schützen Passwörter sie auf einer Website wie **zerobin.net**, auf die das Kundensupport-Ticket zusammen mit dem Kennwort verweisen kann.<br><br>Hinweis: Dies ist nur für Dynatrace Managed erforderlich. |
-| Dynatrace ActiveGate Port | Ihr ActiveGate-Port von Dynatracet, mit dem die AEM-Integration eine Verbindung herstellen soll.<br><br>Hinweis: Dies ist nur für Dynatrace Managed erforderlich. |
-| DynamicGate-Netzwerkzone | Ihre [Dynatrace ActiveGate-Netzwerkzone](https://docs.dynatrace.com/docs/manage/network-zones) die effiziente Weiterleitung AEM Überwachungsdaten über Rechenzentren und Netzwerkregionen hinweg.<br><br>Hinweis: Eine DynamicGate-Netzwerkzone ist optional. |
-| AEM Umgebungs-ID(s) | Die AEM-Umgebungs-ID(s) für die Überwachung durch Dynatraktion. |
+| Dynatrace-Umgebungs-URL | Die URL Ihrer Dynatrace-Umgebung.<br><br>Für Dynatrace SaaS-Kunden lautet das Format `https://<your-environment-id>.live.dynatrace.com`.<br><br>Für Dynatrace Managed-Kunden lautet das Format `https://<your-managed-url>/e/<environmentId>` |
+| Dynatrace-Umgebungs-ID | Die ID Ihrer Dynatrace-Umgebung. Weitere Informationen zum Erhalt finden Sie unter [Abrufen von Informationen zur Dynatrace-Umgebung](#get-dynatrace-env-info). |
+| Dynatrace-Umgebungs-Token | Ihr Token für die Dynatrace-Umgebung. Weitere Informationen zum Erhalt finden Sie unter [Abrufen von Informationen zur Dynatrace-Umgebung](#get-dynatrace-env-info).<br><br>Dieses Token sollte als geheim behandelt werden. Verwenden Sie daher entsprechende Sicherheitsmaßnahmen. Schützen Sie es zum Beispiel mit einem Passwort auf einer Website wie **zerobin.net**, auf die das Kunden-Support-Ticket verweisen kann. |
+| Dynatrace-API-Zugriffs-Token | Das API-Zugriffs-Token Ihrer Dynatrace-Umgebung.  Weitere Informationen zur Erstellung finden Sie unter [Erstellen eines Dynatrace-API-Zugriffs-Tokens](#create-dynatrace-access-token).<br><br>Dieses Token sollte als geheim behandelt werden. Verwenden Sie daher entsprechende Sicherheitsmaßnahmen. Schützen Sie es zum Beispiel mit einem Passwort auf einer Website wie **zerobin.net**, auf die das Kunden-Support-Ticket verweisen kann.<br><br>Hinweis: Dies ist nur für Dynatrace Managed erforderlich. |
+| Dynatrace ActiveGate-Port | Ihr Dynatrace ActiveGate-Port, mit dem die AEM-Integration eine Verbindung herstellen soll.<br><br>Hinweis: Dies ist nur für Dynatrace Managed erforderlich. |
+| Dynatrace ActiveGate-Netzwerkzone | Ihre [Dynatrace ActiveGate-Netzwerkzone](https://docs.dynatrace.com/docs/manage/network-zones) zur effizienten Weiterleitung von AEM-Überwachungsdaten über Rechenzentren und Netzwerkregionen hinweg.<br><br>Hinweis: Eine Dynatrace ActiveGate-Netzwerkzone ist optional. |
+| AEM-Umgebungs-ID(s) | Die AEM-Umgebungs-ID(s), die Dynatrace überwachen soll. |
 
 >[!NOTE]
 >
->Nach der Integration von Dynatrace fließen die Daten nicht mehr in andere APM-Tools wie New Relic, sofern sie zuvor aktiviert waren.
+>Nach der Integration von Dynatrace fließen keine Daten mehr an andere APM-Tools wie New Relic, wenn diese zuvor aktiviert waren.
 
 
-## Erstellen eines Dynatraktions-API-Zugriffstokens {#create-dynatrace-access-token}
+## Erstellen eines Dynatrace-API-Zugriffs-Tokens {#create-dynatrace-access-token}
 
-1. Melden Sie sich bei Ihrer Dynatraktionsumgebung an.
-1. Gehen Sie im Dynatraktionsmenü zu Verwalten > Zugriffstoken .
-1. Wählen Sie Neues Token generieren aus.
-1. Definieren Sie einen Tokennamen.
+1. Melden Sie sich bei Ihrer Dynatrace-Umgebung an.
+1. Wählen Sie im Dynatrace-Menü „Manage“ (Verwalten) > „Access tokens“ (Zugriffs-Token).
+1. Wählen Sie „Generate new token“ (Neues Token generieren).
+1. Geben Sie einen Token-Namen an.
 
 1. Optional: Legen Sie ein Ablaufdatum fest. Stellen Sie sicher, dass Sie ein neues Token generieren, bevor es abläuft.
-1. Setzen Sie den Token-Umfang auf PaaS-Integration - Installationsprogramm herunterladen
-1. Wählen Sie Token generieren aus.
-1. Kopieren Sie das generierte Zugriffstoken und speichern Sie es an einem sicheren Ort.
+1. Setzen Sie den Token-Umfang auf „PaaS integration - Installer download“ (PaaS-Integration – Installationsprogramm herunterladen)
+1. Wählen Sie „Generate token“ (Token generieren).
+1. Kopieren Sie das generierte Zugriffs-Token und speichern Sie es an einem sicheren Ort.
 
 
-## Abrufen von Informationen zur Dynatraktionsumgebung {#get-dynatrace-env-info}
+## Abrufen von Informationen zur Dynatrace-Umgebung {#get-dynatrace-env-info}
 
-1. Führen Sie die folgende API-Anfrage an Ihre Dynatraktionsumgebung aus:
+1. Führen Sie die folgende API-Anfrage an Ihre Dynatrace-Umgebung aus:
 
 `curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"`
 
-Ersetzen \&lt;environmenturl> mit der URL Ihrer dynamischen Umgebung und \&lt;accesstoken> mit Ihrem erstellten API-Zugriffstoken.
+Ersetzen Sie \&lt;environmentUrl\> mit der URL Ihrer Dynatrace-Umgebung und \&lt;accessToken\> mit Ihrem erstellten API-Zugriffs-Token.
 
-1. Kopieren Sie den \&lt;environmentid> und \&lt;environmenttoken> aus der Antwort-Payload und speichern Sie sie an einem gesicherten Ort.
+1. Kopieren Sie \&lt;environmentId\> und \&lt;environmentToken\> aus der Antwort-Payload und speichern Sie sie an einem sicheren Ort.
 
 ```
 {
