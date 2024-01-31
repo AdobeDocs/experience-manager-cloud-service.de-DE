@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
+source-git-commit: 45b263651f6139b1c7f83ff3485186b272ba1a4f
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 81%
+source-wordcount: '302'
+ht-degree: 71%
 
 ---
 # Snippets {#snippets}
@@ -56,3 +56,7 @@ ht-degree: 81%
 * [Submit to Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Adaptives Formular mit Salesforce-Anwendung verbinden](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [Verbinden eines adaptiven Formulars mit Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+
+## AEM Authoring mit frühzeitigem Zugriff auf Edge Delivery Services {#aem-authoring-edge-early-access}
+
+[!BADGE FRÜHZEITIGE ZUGRIFFSTECHNOLOGIE - Fragen Sie uns über diese Funktion von den AEM Sites Labs auf Ihrem Slack-Kanal!]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEM Authoring mit Edge Delivery Services ist eine Technologie für den frühzeitigen Zugriff."}

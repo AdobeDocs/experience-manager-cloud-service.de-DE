@@ -2,13 +2,13 @@
 title: Inhaltserstellung für Edge Delivery Services
 description: Erfahren Sie, wie Content Authoring mit Edge Delivery Services funktioniert und wie Sie AEM Inhalte mit Edge Delivery Services erstellen.
 feature: Edge Delivery Services
-source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
+exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
+source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 14%
+source-wordcount: '491'
+ht-degree: 13%
 
 ---
-
 
 # Inhaltserstellung für Edge Delivery Services {#authoring-edge}
 
@@ -40,7 +40,7 @@ Bei der Verwendung von Edge Delivery Services mit AEM as a Cloud Service ist es 
    * Der Inhalt bleibt in AEM gespeichert.
    * AEM rendert semantische HTML, die für die Aufnahme benötigt wird.
    * Inhalte werden in Edge Delivery Services veröffentlicht.
-1. [Edge-Bereitstellungsdienste](/help/edge/developer/keeping-it-100.md) 100% Lighthouse-Wert sicherstellen.
+1. [Edge Delivery Services](/help/edge/developer/keeping-it-100.md) 100% Lighthouse-Wert sicherstellen.
 
 Blöcke sind grundlegende Komponenten einer Seite, die von Edge Delivery Services bereitgestellt wird. Autoren können aus Standardblöcken wählen, die standardmäßig von Adobe bereitgestellt werden, oder aus Bausteinen, die von Ihren Entwicklern für Ihr Projekt angepasst wurden.
 
@@ -53,6 +53,8 @@ Details zu den Bausteinen können dann in der Leiste Eigenschaften konfiguriert 
 ![Blockeigenschaften konfigurieren](assets/block-properties.png)
 
 Weitere Informationen zum Authoring mit dem universellen Editor finden Sie im Dokument [Inhaltserstellung mit dem universellen Editor.](/help/implementing/universal-editor/authoring.md)
+
+Lesen Sie hierzu die [Erste Schritte für Entwickler für AEM Authoring mit Edge Delivery Services](/help/edge/edge-dev-getting-started.md) , um zu erfahren, wie Sie Ihr eigenes Projekt mit AEM und Edge Delivery Services erstellen können.
 
 ## Erste Schritte {#how-to-get-started}
 
