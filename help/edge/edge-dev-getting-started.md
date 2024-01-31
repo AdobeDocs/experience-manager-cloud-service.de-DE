@@ -2,9 +2,9 @@
 title: Erste Schritte für Entwickler für AEM Authoring mit Edge Delivery Services
 description: In diesem Handbuch erfahren Sie, wie Sie mit einer neuen Adobe Experience Manager-Site arbeiten, die Edge Delivery Services und den universellen Editor für die Inhaltserstellung verwendet
 feature: Edge Delivery Services
-source-git-commit: eae751441435949296eb76a7e9b4103393860a8d
+source-git-commit: 5967bd78b9c23cf3451ac3b0ec2118da5200ddc1
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -48,8 +48,6 @@ Zunächst müssen Sie ein neues Projekt auf GitHub erstellen, das auf der Adobe-
    ![Repository-Projekt kopieren](assets/edge-dev-getting-started/use-template-project.png)
 
 1. Standardmäßig wird Ihnen das Repository zugewiesen. Ändern Sie dies bei Bedarf, geben Sie einen Repository-Namen und eine Beschreibung ein und klicken Sie auf **Repository erstellen**.
-
-   * Das Repository sollte **Öffentlich**.
 
    ![Repository erstellen](assets/edge-dev-getting-started/create-repo.png)
 
