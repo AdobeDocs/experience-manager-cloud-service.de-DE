@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 796dbcfefc6ed5e1b937a0c45ec1b3987c3c2af3
+source-git-commit: b63dc036834210a6fdfe856c1972ede4888b9758
 workflow-type: tm+mt
-source-wordcount: '4615'
+source-wordcount: '4619'
 ht-degree: 95%
 
 ---
@@ -923,7 +923,7 @@ ht-degree: 95%
       + [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md)
       + [SLA-Berichte](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
-      + [Dynatraktion](/help/implementing/cloud-manager/dynatrace.md)
+      + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md)
       + SSL-Zertifikate {#manage-ssl-certificates}
          + [Einführung ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
@@ -1119,7 +1119,7 @@ ht-degree: 95%
       + [Erste Schritte mit dem universellen Editor in AEM](/help/implementing/universal-editor/getting-started.md)
       + [Entwicklerübersicht für den universellen Editor](/help/implementing/universal-editor/developer-overview.md)
       + [Attribute und Elementtypen](/help/implementing/universal-editor/attributes-types.md)
-      + [Feldtypen](/help/implementing/universal-editor/field-types.md)
+      + [Modelldefinitionen, Felder und Komponententypen](/help/implementing/universal-editor/field-types.md)
       + [Authentifizierung beim universellen Editor](/help/implementing/universal-editor/authentication.md)
       + [Lokale AEM-Entwicklung mit dem universellen Editor](/help/implementing/universal-editor/local-dev.md)
       + [Universal Editor-Aufrufe](/help/implementing/universal-editor/calls.md)
