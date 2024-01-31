@@ -2,7 +2,7 @@
 title: Verwalten von SSL-Zertifikaten
 description: Erfahren Sie, wie Sie mit Cloud Manager den Status Ihrer SSL-Zertifikate überprüfen und diese bearbeiten, ersetzen, aktualisieren und löschen können.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 7143ea8d36e26aa1674608ff7bd8ba22e2030b3c
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 97%
@@ -18,9 +18,9 @@ Erfahren Sie, wie Sie mit Cloud Manager den Status Ihrer SSL-Zertifikate überpr
 
 Der Status Ihrer SSL-Zertifikate ist auf der SSL-Zertifikatsseite auf einen Blick ersichtlich.
 
-* **Grün**: Dieser Status zeigt an, dass Ihr Zertifikat ab dem aktuellen Datum mindestens 60 Tage gültig ist.
+* **Grün**: Dieser Status zeigt an, dass Ihr Zertifikat ab dem aktuellen Datum mindestens 14 Tage gültig ist.
 
-* **Orange**: Dieser Status gibt an, dass Ihr Zertifikat in weniger als 60 Tagen ablaufen wird.
+* **Orange**: Dieser Status gibt an, dass Ihr Zertifikat in weniger als 14 Tagen ablaufen wird.
    * Sie sollten sicherstellen und planen, Ihr Zertifikat zu erneuern und über die Cloud Manager-Benutzeroberfläche zu ersetzen, um mögliche Website-Zugriffe oder Ausfälle zu vermeiden.
    * Cloud Manager sendet in der Benutzeroberfläche regelmäßige Benachrichtigungen, um Sie über einen bevorstehenden Zertifikatablauf zu informieren.
 
