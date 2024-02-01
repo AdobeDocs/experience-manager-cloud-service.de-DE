@@ -2,10 +2,10 @@
 title: Entwickeln von Sites mit der Frontend-Pipeline
 description: Mit der Frontend-Pipeline erhalten Frontend-Entwickler mehr Unabhängigkeit und der Entwicklungsprozess wird erheblich beschleunigt. In diesem Dokument werden einige besondere Überlegungen zum Frontend-Build-Prozess beschrieben, die berücksichtigt werden sein sollten.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: de2d4355894d166d47f49a22af773b9e2c19e67b
+source-git-commit: 74e4c4cc57dbdc78b6c93efe78c856bdafbae477
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 98%
+source-wordcount: '1169'
+ht-degree: 90%
 
 ---
 
@@ -20,17 +20,22 @@ ht-degree: 98%
 
 ## Frontend-Build-Vertrag {#front-end-build-contract}
 
-Ähnlich wie die [Full-Stack-Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) verfügt die Frontend-Pipeline über eine eigene Umgebung. Entwickelnde haben eine gewisse Flexibilität bei dieser Pipeline, solange der folgende Frontend-Build-Vertrag eingehalten wird.
+Ähnlich wie die [Full-Stack-Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) verfügt die Frontend-Pipeline über eine eigene Umgebung. Entwickler können diese Pipeline flexibel verwenden, solange der folgende Frontend-Build-Vertrag eingehalten wird.
 
-Die Front-End-Pipeline erfordert, dass das Projekt „Front-End-Node.js“ die `build`-Skriptanweisung verwendet, um den Build zu generieren, der von der Front-End-Pipeline bereitgestellt wird. Cloud Manager verwendet den Befehl `npm run build`, um das bereitstellbare Projekt für den `dist`-Ordner zu generieren.
+Für die Frontend-Pipeline muss das Frontend-Projekt Node.js die Variable `build` Skriptanweisung zum Generieren des Builds, den es bereitstellt. Dies liegt daran, dass Cloud Manager den -Befehl verwendet `npm run build` , um das bereitstellbare Projekt für den Front-End-Build zu generieren.
 
-Der Inhalt des Ordners `dist` wird schließlich für AEM as a Cloud Service von der Cloud Manager-Pipeline bereitgestellt.
+Der resultierende Inhalt der `dist` -Ordner ist das Element, das letztendlich von Cloud Manager bereitgestellt wird und als statische Dateien bereitgestellt wird. Diese Dateien werden extern AEM gehostet, jedoch über eine `/content/...` URL in der bereitgestellten Umgebung.
 
-### Knotenversionen {#node-versions}
+## Knotenversionen {#node-versions}
 
-Standardmäßig verwendet die Front-End-Pipeline Node 14, aber auch 12, 16 und 18 sind verfügbar.
+Die Frontend-Build-Umgebung unterstützt die folgenden Node.js-Versionen.
 
-Mithilfe der Umgebungsvariable `NODE_VERSION` können Sie die gewünschte Version festlegen.
+* 12
+* 14 (Standard)
+* 16
+* 18
+
+Sie können die `NODE_VERSION` [Umgebungsvariable](/help/implementing/cloud-manager/environment-variables.md) , um die gewünschte Version festzulegen.
 
 ## Zentrale Datenquelle {#single-source-of-truth}
 
