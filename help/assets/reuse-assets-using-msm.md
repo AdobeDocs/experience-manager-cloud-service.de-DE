@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 9e0aefa096a493df22860d0194a0a76f3eaf2390
 workflow-type: tm+mt
-source-wordcount: '3403'
-ht-degree: 99%
+source-wordcount: '3400'
+ht-degree: 100%
 
 ---
 
@@ -248,10 +248,10 @@ Anweisungen zum Anzeigen von Status und Informationen zu einer Aktion „Synchro
 Sie können die Live Copy-Vererbung für Folgendes abbrechen:
 
 * Metadatenfeld
-* Inhaltsfragmentvariante
-* Inhaltsfragment-Datenfeld
+* [Inhaltsfragmentvariante](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+* [Inhaltsfragment-Datenfeld](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
 
-Dies bedeutet, dass das Element nicht mehr mit der Quellkomponente synchronisiert wird. Sie können die Vererbung bei Bedarf zu einem späteren Zeitpunkt aktivieren.
+Dies bedeutet, dass das Element nicht mehr mit der Quellkomponente synchronisiert wird. Falls erforderlich, können Sie die Vererbung zu einem späteren Zeitpunkt aktivieren.
 
 ### Vererbung abbrechen {#cancel-inheritance}
 
