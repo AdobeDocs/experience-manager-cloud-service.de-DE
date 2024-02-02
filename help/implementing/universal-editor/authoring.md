@@ -2,10 +2,10 @@
 title: Inhaltserstellung mit dem universellen Editor
 description: Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: a616b27c5212b00d3b51778402ed52a68028fdaf
 workflow-type: tm+mt
-source-wordcount: '2165'
-ht-degree: 89%
+source-wordcount: '2189'
+ht-degree: 86%
 
 ---
 
@@ -295,11 +295,14 @@ Details zu Ihrem Text sind auch in der Eigenschaftenleiste verfügbar. Änderung
 
 Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklicken oder doppeltippen.
 
-Drücken Sie die Eingabetaste oder wählen Sie etwas außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
-
 ![Bearbeiten einer Rich-Text-Komponente](assets/rich-text-editing.png)
 
-Außerdem sind Formatierungsoptionen und Details zu Ihrem Text in der Eigenschaftenleiste verfügbar. Änderungen werden automatisch gespeichert, sobald das bearbeitete Feld in der Eigenschaftenleiste nicht mehr im Fokus ist.
+Zur Vereinfachung stehen Formatierungsoptionen und Details zu Ihrem Text an zwei Stellen zur Verfügung.
+
+* Die **Kontextmenü** wird oberhalb des Rich-Text-Blocks geöffnet und bietet grundlegende Formatierungsoptionen im Kontext. Aufgrund von Platzbeschränkungen können einige Optionen hinter der Suchschaltfläche ausgeblendet werden.
+* Die **Eigenschaftenleiste** zeigt alle verfügbaren Formatierungsoptionen zusammen mit dem Text an.
+
+Änderungen werden automatisch gespeichert, sobald der Fokus das bearbeitete Feld verlässt.
 
 ### Bearbeiten von Medien {#edit-media}
 
