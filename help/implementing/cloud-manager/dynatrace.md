@@ -43,13 +43,13 @@ Im Folgenden finden Sie die für Verbindungsanfragen erforderlichen Details:
 ## Erstellen eines Dynatrace-API-Zugriffs-Tokens {#create-dynatrace-access-token}
 
 1. Melden Sie sich bei Ihrer Dynatrace-Umgebung an.
-1. Wählen Sie im Dynatrace-Menü „Manage“ (Verwalten) > „Access tokens“ (Zugriffs-Token).
-1. Wählen Sie „Generate new token“ (Neues Token generieren).
+1. Wählen Sie im Dynatrace-Menü „Manage“ > „Access tokens“.
+1. Wählen Sie „Generate new token“.
 1. Geben Sie einen Token-Namen an.
 
 1. Optional: Legen Sie ein Ablaufdatum fest. Stellen Sie sicher, dass Sie ein neues Token generieren, bevor es abläuft.
-1. Setzen Sie den Token-Umfang auf „PaaS integration - Installer download“ (PaaS-Integration – Installationsprogramm herunterladen)
-1. Wählen Sie „Generate token“ (Token generieren).
+1. Setzen Sie den Token-Umfang auf „PaaS integration - Installer download“
+1. Wählen Sie „Generate token“.
 1. Kopieren Sie das generierte Zugriffs-Token und speichern Sie es an einem sicheren Ort.
 
 
