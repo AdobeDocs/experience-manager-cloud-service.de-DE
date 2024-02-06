@@ -1,18 +1,18 @@
 ---
-title: Anpassen der Benutzeroberfläche
-description: Erfahren Sie mehr über die verschiedenen Erweiterungspunkte, mit denen Sie die Benutzeroberfläche des universellen Editors anpassen können, um die Anforderungen Ihrer Inhaltsautoren zu unterstützen.
+title: Anpassen des Authoring-Erlebnisses für den universellen Editor
+description: Erfahren Sie mehr über die verschiedenen Erweiterungspunkte und andere Funktionen, mit denen Sie die Benutzeroberfläche des universellen Editors anpassen können, um die Anforderungen Ihrer Inhaltsautoren zu unterstützen.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: 1bc65e65e6ce074a050e21137ce538b5c086665f
+source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
 
 
-# Anpassen der Benutzeroberfläche {#customizing-ui}
+# Anpassen des Authoring-Erlebnisses für den universellen Editor {#customizing-ue}
 
-Erfahren Sie mehr über die verschiedenen Erweiterungspunkte, mit denen Sie die Benutzeroberfläche des universellen Editors anpassen können, um die Anforderungen Ihrer Inhaltsautoren zu unterstützen.
+Erfahren Sie mehr über die verschiedenen Erweiterungspunkte und andere Funktionen, mit denen Sie das Authoring-Erlebnis des universellen Editors anpassen können, um die Anforderungen Ihrer Inhaltsautoren zu unterstützen.
 
 ## Publishing deaktivieren {#disable-publish}
 
@@ -59,3 +59,40 @@ Festlegen der `components` -Attribut in einer Filterdefinition `null` lässt all
    }
 ]
 ```
+
+## Bedingtes Anzeigen und Ausblenden von Komponenten in der Eigenschaftenleiste {#conditionally-hide}
+
+Obwohl eine oder mehrere Komponenten allgemein für Ihre Autoren verfügbar sein können, kann es in bestimmten Situationen vorkommen, dass dies nicht sinnvoll ist. In solchen Fällen können Sie Komponenten in der Eigenschaftenleiste ausblenden, indem Sie eine `condition` -Attribut [-Felder des Komponentenmodells.](/help/implementing/universal-editor/field-types.md#fields)
+
+Bedingungen können mithilfe von [JsonLogic-Schema.](https://jsonlogic.com/) Wenn die Bedingung wahr ist, wird das Feld angezeigt. Wenn die Bedingung falsch ist, wird das Feld ausgeblendet.
+
+### Beispielmodell {#sample-model}
+
+```json
+ {
+    "id": "conditionally-revealed-component",
+    "fields": [
+      {
+        "component": "boolean",
+        "label": "Shall the text field be revealed?",
+        "name": "reveal",
+        "valueType": "boolean"
+      },
+      {
+        "component": "text-input",
+        "label": "Hidden text field",
+        "name": "hidden-text",
+        "valueType": "string",
+        "condition": { "===": [{"var" : "reveal"}, true] }
+      }
+    ]
+ }
+```
+
+#### Bedingung falsch {#false}
+
+![Ausgeblendetes Textfeld](assets/hidden.png)
+
+#### Bedingung wahr {#true}
+
+![Angezeigtes Textfeld](assets/shown.png)
