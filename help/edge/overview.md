@@ -6,7 +6,7 @@ exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
 workflow-type: tm+mt
 source-wordcount: '868'
-ht-degree: 41%
+ht-degree: 96%
 
 ---
 
@@ -21,39 +21,39 @@ Mithilfe von Edge Delivery Services können Sie:
 * die Autoreneffizienz durch Entkopplung von Inhaltsquellen erhöhen. standardmäßig sowohl AEM-Authoring als auch dokumentbasiertes Authoring verwenden. Sie können also mit mehreren Inhaltsquellen an derselben Website arbeiten.
 * ein integriertes Experimentierungs-Framework verwenden, das die schnelle Testerstellung, Ausführung ohne Leistungseinbußen und schnelle Freigabe für die Ermittlung eines Testgewinners ermöglicht.
 
-## Übersicht über Edge Delivery Services {#edge-overview}
+## Überblick über Edge Delivery Services {#edge-overview}
 
-Das folgende Diagramm zeigt, wie Sie Inhalte in Microsoft Word (dokumentbasierte Bearbeitung) bearbeiten und in Edge Delivery Services veröffentlichen können. Außerdem wird die AEM Veröffentlichungsmethode mit dem universellen Editor angezeigt.
+Das folgende Diagramm zeigt, wie Sie Inhalte in Microsoft Word (dokumentbasierte Bearbeitung) bearbeiten und mit Edge Delivery Services veröffentlichen können. Es zeigt auch die AEM-Veröffentlichungsmethode mit dem universellen Editor.
 
 ![Architektur von Edge Delivery](assets/AEM-with-EDS-publishing-simple2.png)
 
-Edge Delivery services ist ein zusammenstellbarer Satz von Diensten, der eine hohe Flexibilität bei der Erstellung von Inhalten auf Ihrer Website ermöglicht. Wie bereits erwähnt, können Sie beide [AEM Content Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=de) mit [Authoring mit universellen Editoren](/help/implementing/universal-editor/introduction.md) sowie [Dokumentenbasiertes Authoring.](https://www.aem.live/docs/authoring)
+Edge Delivery Services ist ein zusammenstellbarer Satz von Diensten, der eine hohe Flexibilität bei der Erstellung von Inhalten auf Ihrer Website ermöglicht. Wie bereits erwähnt, können Sie zur Inhaltserstellung sowohl das [AEM Content-Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=de) als auch das [dokumentenbasierte Authoring](https://www.aem.live/docs/authoring) gemeinsam mit dem [universellen Editor](/help/implementing/universal-editor/introduction.md) verwenden.
 
-Sie können beispielsweise Inhalte direkt aus Microsoft Word-Dokumenten oder Google Docs verwenden. Das bedeutet, dass Dokumente aus diesen Quellen Seiten auf Ihrer Website werden können. Darüber hinaus können Überschriften, Listen, Bilder und Schriftelemente von der ursprünglichen Quelle auf die Website übertragen werden. Der neue Inhalt wird sofort ohne Neuerstellungsprozess hinzugefügt.
+Sie können beispielsweise Inhalte direkt aus Microsoft Word-Dokumenten oder Google Docs verwenden. Das bedeutet, dass Dokumente aus diesen Quellen Seiten auf Ihrer Website werden können. Darüber hinaus können Überschriften, Listen, Bilder und Schriftelemente von der ursprünglichen Quelle auf die Website übertragen werden. Der neue Inhalt wird sofort und ohne Neuerstellungsprozess hinzugefügt.
 
-Edge Delivery Services verwenden GitHub, damit Kunden Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Sie können beispielsweise Inhalte entweder in Google Docs oder Microsoft Word schreiben und die Funktionalität Ihrer Site kann mithilfe von CSS und JavaScript in GitHub entwickelt werden. Wenn Sie bereit sind, können Sie die Sidekick-Browser-Erweiterung verwenden, um Inhaltsaktualisierungen in der Vorschau anzuzeigen und zu veröffentlichen.
+Edge Delivery Services nutzt GitHub, damit Kundinnen und Kunden Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Sie können beispielsweise Inhalte entweder in Google Docs oder Microsoft Word schreiben, und die Funktionalität Ihrer Site kann mithilfe von CSS und JavaScript in GitHub entwickelt werden. Wenn Sie bereit sind, können Sie die Sidekick-Browser-Erweiterung verwenden, um Inhaltsaktualisierungen in der Vorschau anzuzeigen und zu veröffentlichen.
 
 Weitere Informationen finden Sie in der Edge Delivery Services-Dokumentation:
 
-* Weitere Informationen zu den ersten Schritten mit der Edge-Bereitstellung finden Sie unter [Abschnitt &quot;Erstellen&quot;.](https://www.aem.live/docs/#build)
-* Informationen zum Erstellen und Veröffentlichen von Inhalten mithilfe der Edge-Bereitstellung finden Sie in der [Abschnitt &quot;Veröffentlichen&quot;](https://www.aem.live/docs/authoring)
-* Informationen dazu, wie Sie Ihr Website-Projekt ordnungsgemäß starten, finden Sie unter [Launch-Abschnitt.](https://www.aem.live/docs/#launch)
+* Weitere Informationen zu den ersten Schritten mit Edge Delivery finden Sie im Abschnitt [Build](https://www.aem.live/docs/#build).
+* Informationen zum Erstellen und Veröffentlichen von Inhalten mithilfe von Edge Delivery finden Sie im Abschnitt [Veröffentlichen](https://www.aem.live/docs/authoring).
+* Informationen dazu, wie Sie Ihr Website-Projekt ordnungsgemäß starten, finden Sie im Abschnitt [Launch](https://www.aem.live/docs/#launch).
 
 ## Edge Delivery Services und andere Adobe Experience Cloud-Produkte {#edge-other-products}
 
-Edge Delivery Services sind Teil von Adobe Experience Manager und als solche können Edge Delivery Services und AEM Sites in derselben Domäne nebeneinander bestehen. Dies ist ein häufiger Anwendungsfall für größere Websites. Darüber hinaus können Inhalte von Edge Delivery Services einfach in Ihren AEM Sites-Seiten und umgekehrt genutzt werden.
+Edge Delivery Services sind Teil von Adobe Experience Manager, und insofern können sowohl Edge Delivery Services- als auch AEM-Sites auf derselben Domain vorhanden sein. Dies ist ein häufiger Anwendungsfall für größere Websites. Darüber hinaus können Inhalte aus Edge Delivery Services einfach in Ihren AEM Sites-Seiten verwendet werden und umgekehrt.
 
 Lesen Sie hierzu die [Erste Schritte für Entwickler für AEM Authoring mit Edge Delivery Services](/help/edge/edge-dev-getting-started.md) , um zu erfahren, wie Sie Ihr eigenes Projekt mit AEM und Edge Delivery Services erstellen können.
 
-Sie können Edge Delivery Services auch mit Adobe Target, Analytics und Launch verwenden.
+Sie können Edge Delivery Services auch zusammen mit Adobe Target, Analytics und Launch verwenden.
 
 ## Zugriff auf Edge Delivery Services {#getting-access}
 
-Die ersten Schritte mit Edge Delivery Services sind einfach. Beginnen Sie mit den Anweisungen [Erste Schritte - Tutorial für Entwickler.](https://www.aem.live/developer/tutorial)
+Die ersten Schritte mit Edge Delivery Services sind einfach. Beginnen Sie mit den Anweisungen in [Erste Schritte – Tutorial für Entwicklungspersonen](https://www.aem.live/developer/tutorial).
 
 ## Hilfe von Adobe {#adobe-gethelp}
 
-Sie können über Ihren bereitgestellten Kanal zur Produktzusammenarbeit mit Adobe-Produkt-Teams interagieren (weitere Informationen finden Sie unten), um Antworten bezüglich der Produktnutzung oder Best Practices zu erhalten. Es gibt keine Service Level Targets (SLTs), die mit den Konversationen über den Kanal für die Produktzusammenarbeit verknüpft sind. Wenn ein Produktproblem zusätzliche Untersuchungen und Fehlerbehebungen erfordert und Antwort-SLTs erfüllen muss, können Sie ein Support-Ticket senden, das auf Folgendes folgt: [-Support-Prozess.](https://experienceleague.adobe.com/?support-tab=home&amp;lang=de#support)
+Sie können über Ihren bereitgestellten Kanal zur Produktzusammenarbeit mit Adobe-Produkt-Teams interagieren (weitere Informationen finden Sie unten), um Antworten bezüglich der Produktnutzung oder Best Practices zu erhalten. Für Konversationen über den Kanal für die Produktzusammenarbeit gelten keine Vorgaben für Service-Levels (SLTs). Wenn ein Produktproblem zusätzliche Untersuchungen und Fehlerbehebungen erfordert und Antwort-SLTs erfüllen muss, können Sie gemäß dem [Support-Prozess](https://experienceleague.adobe.com/?support-tab=home?lang=de#support) ein Support-Ticket einreichen.
 
 Adobe bietet drei Kanäle, um Ihnen mit Edge Delivery Services zu helfen:
 
@@ -63,14 +63,14 @@ Adobe bietet drei Kanäle, um Ihnen mit Edge Delivery Services zu helfen:
 
 ### Zugreifen auf Community-Ressourcen {#community-resource}
 
-Adobe setzt sich dafür ein, Ihnen die bestmögliche Community-Interaktion und -Unterstützung für Edge Delivery Services und dokumentbasiertes Authoring zu bieten.
+Adobe setzt sich dafür ein, Ihnen die bestmögliche Community-Interaktion und -Unterstützung für Edge Delivery Services und dokumentbasiertes Authoring zu bieten. 
 
-* Teilnehmen an [Experience League Community](https://adobe.ly/3Q6kTKl) Fragen zu stellen, Feedback zu teilen, Diskussionen einzuleiten, Adobe-Experten und AEM-Berater/Champs zu unterstützen und in Echtzeit mit Gleich gesinnten in Kontakt zu treten.
-* Mitglied werden [Discord Channel,](https://discord.gg/aem-live) eine lockere Plattform für Echtzeit-Interaktionen und einen schnellen Ideenaustausch.
+* Beteiligen Sie sich an der [Experience League-Community](https://adobe.ly/3Q6kTKl), um Fragen zu stellen, Feedback zu teilen, Diskussionen einzuleiten, Unterstützung von Adobe- und AEM-Fachleuten und -Champions zu erhalten und in Echtzeit mit Gleichgesinnten in Kontakt zu treten. 
+* Schließen Sie sich unserem [Discord-Kanal](https://discord.gg/aem-live) an, einer lockereren Plattform für Echtzeitinteraktionen und schnellen Ideenaustausch.
 
-### Zugriff auf Ihren Produktkollaborationskanal {#collab-channel}
+### Zugriff auf Ihren Kanal für die Produktzusammenarbeit {#collab-channel}
 
-Angesichts des Nutzens des direkten Kommunikationskanals mit Kunden werden alle AEM Kunden beim Start einen Slack-Kanal für Schnelligkeit, wichtige Updates und skalierte Berichte zur Erlebnisqualität einrichten. Sie erhalten eine Einladung von Adobe, sich einem unternehmensspezifischen Slack-Kanal anzuschließen.
+Angesichts des Nutzens des Kanals zur direkten Kundenkommunikation richten alle AEM-Kundinnen und -Kunden beim Start einen Slack-Kanal ein, um für eine bessere Geschwindigkeit zu sorgen sowie wichtige Aktualisierungen und skalierte Berichte zur Erlebnisqualität zu erhalten. Sie erhalten eine Einladung von Adobe, einem speziell für Ihre Organisation eingerichteten Slack-Kanal beizutreten.
 
 Weitere Informationen finden Sie unter [Verwenden des Slack Bots](https://www.aem.live/docs/slack).
 
@@ -78,13 +78,13 @@ Weitere Informationen finden Sie unter [Verwenden des Slack Bots](https://www.ae
 
 Schritte zum Einreichen eines Support-Tickets über die Admin Console:
 
-1. [Nach dem standardmäßigen Support-Prozess,](https://experienceleague.adobe.com/?support-tab=home&amp;lang=de#support) ein Ticket erstellen.
+1. [Nach dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/?support-tab=home?lang=de#support) erstellen Sie ein Ticket.
 1. Fügen Sie **Edge Delivery** zum Titel des Tickets hinzu.
 1. Geben Sie in der Beschreibung die folgenden Details an:
 
    * URL der Live-Website. Beispiel: `www.mydomain.com`.
-   * URL der Ursprungs-Website (`.hlx` URL).
+   * URL der Ursprungs-Website (`.hlx`-URL).
 
 ## Wie geht es weiter {#whats-next}
 
-Erste Schritte mit [Verwenden von Edge Delivery Services](/help/edge/using.md).
+Lesen Sie zunächst den Artikel: [Verwenden von Edge Delivery Services](/help/edge/using.md).
