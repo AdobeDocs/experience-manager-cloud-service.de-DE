@@ -3,9 +3,9 @@ title: OAuth2-Unterstützung für den E-Mail-Service
 description: OAuth2-Unterstützung für den E-Mail-Service in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '680'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -27,13 +27,13 @@ Weitere Informationen zum AEM as a Cloud Service E-Mail-Service finden Sie unter
    ![Starten des App-Registrierungsprozesses](assets/oauth-outlook1.png)
 
 1. Füllen Sie die Informationen entsprechend Ihren Anforderungen aus und klicken Sie dann auf **Registrieren**.
-1. Wechseln Sie zur erstellten App und wählen Sie **API-Berechtigungen**.
+1. Wechseln Sie zur erstellten Anwendung und wählen Sie **API-Berechtigungen** aus.
 1. Klicken Sie auf **Berechtigung hinzufügen** > **Diagrammberechtigungen** > **Delegierte Berechtigungen**.
 1. Wählen Sie die folgenden Berechtigungen für Ihre Anwendung aus und klicken Sie dann auf **Berechtigung hinzufügen**:
 
    >[!NOTE]
    >
-   >Die Konfiguration von Berechtigungen kann sich im Laufe der Zeit ändern. Arbeiten Sie mit Microsoft zusammen, wenn diese nicht erwartungsgemäß funktionieren.
+   >Die Konfiguration von Berechtigungen kann sich im Laufe der Zeit weiterentwickeln. Arbeiten Sie mit Microsoft zusammen, wenn diese nicht erwartungsgemäß funktionieren.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -140,15 +140,15 @@ Bevor Sie mit der OAuth-Konfiguration auf der AEM-Seite fortfahren, überprüfen
 
    >[!NOTE]
    >
-   >Der Umfang kann sich im Laufe der Zeit ändern. Arbeiten Sie mit Microsoft zusammen, wenn diese nicht erwartungsgemäß funktionieren.
+   >Der Umfang kann sich im Laufe der Zeit weiterentwickeln. Arbeiten Sie mit Microsoft zusammen, wenn diese nicht erwartungsgemäß funktionieren.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
    * `offline_access`
    * `email`
    * `profile`
-1. Erstellen einer OSGi-Eigenschaftendatei `called com.day.cq.mailer.DefaultMailService.cfg.json`
-under `/apps/<my-project>/osgiconfig/config` mit der unten stehenden Syntax. Die Werte `smtp.host` und `smtp.port` spiegeln die erweiterte Netzwerkkonfiguration wider, wie im Abschnitt [Tutorial zum E-Mail-Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=de) beschrieben.
+1. Erstellen Sie eine OSGi-Eigenschaftendatei mit dem Namen `called com.day.cq.mailer.DefaultMailService.cfg.json`
+unter `/apps/<my-project>/osgiconfig/config` mit der folgenden Syntax: Die Werte `smtp.host` und `smtp.port` spiegeln die erweiterte Netzwerkkonfiguration wider, wie im Abschnitt [Tutorial zum E-Mail-Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=de) beschrieben.
 
    ```
    {
@@ -166,7 +166,7 @@ under `/apps/<my-project>/osgiconfig/config` mit der unten stehenden Syntax. Die
    ```
 
 1. Für Outlook ist der `smtp.host`-Konfigurationswert `smtp.office365.com`.
-1. Übergeben Sie zur Laufzeit die Variable `refreshToken values` und `clientSecret` Geheimnisse, die die Cloud Manager-Variablen-API wie beschrieben verwenden [here](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) oder mithilfe von [Cloud Manager zum Hinzufügen von Variablen.](/help/implementing/cloud-manager/environment-variables.md) Die Werte für die Variablen `SECRET_SMTP_OAUTH_REFRESH_TOKEN`  und `SECRET_SMTP_OAUTH_CLIENT_SECRET` festgelegt werden.
+1. Übergeben Sie zur Laufzeit die Geheimnisse `refreshToken values` und `clientSecret` mithilfe der API für Cloud Manager-Variablen wie [hier](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) oder unter [Hinzufügen von Variablen mit Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) beschrieben. Die Werte für die Variablen `SECRET_SMTP_OAUTH_REFRESH_TOKEN` und `SECRET_SMTP_OAUTH_CLIENT_SECRET` sollten definiert werden.
 
 ### Fehlerbehebung {#troubleshooting}
 

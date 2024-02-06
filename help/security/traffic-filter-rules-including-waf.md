@@ -3,9 +3,9 @@ title: Traffic-Filterregeln, einschließlich WAF-Regeln
 description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3350'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Traffic-Filterregeln können verwendet werden, um Anforderungen auf der CDN-Eben
 
 Die meisten dieser Traffic-Filterregeln stehen allen Kundinnen und Kunden von AEM as a Cloud Service Sites und Forms zur Verfügung.  Sie arbeiten hauptsächlich mit den Eigenschaften und Kopfzeilen von Anfragen, einschließlich IP, Host-Name, Pfad und Benutzeragent.
 
-Eine Unterkategorie von Traffic-Filterregeln erfordert entweder eine Lizenz für erweiterte Sicherheit oder eine Lizenz für WAF-DDoS-Schutz. Diese leistungsstarken Regeln werden als Traffic-Filterregeln für WAF (Web Application Firewall, kurz: WAF-Regeln) bezeichnet und haben Zugriff auf die [WAF-Flags](#waf-flags-list), die weiter unten in diesem Artikel beschrieben werden.
+Eine Unterkategorie von Traffic-Filterregeln erfordert entweder eine Lizenz für Enhanced Security oder eine WAF-DDoS Protection-Lizenz. Diese leistungsstarken Regeln werden als Traffic-Filterregeln für WAF (Web Application Firewall, kurz: WAF-Regeln) bezeichnet und haben Zugriff auf die [WAF-Flags](#waf-flags-list), die weiter unten in diesem Artikel beschrieben werden.
 
 Traffic-Filterregeln können über Cloud Manager-Konfigurations-Pipelines bereitgestellt werden, um Typen von Entwicklungs-, Staging- und Produktionsumgebungen in Produktionsprogrammen (ohne Sandbox) bereitzustellen. Die Unterstützung von RDEs wird in Zukunft verfügbar sein.
 
@@ -33,7 +33,7 @@ Dieser Artikel ist in die folgenden Abschnitte unterteilt:
 * **Traffic-Schutz – Übersicht:** Erfahren Sie, wie Sie vor schädlichem Traffic geschützt werden.
 * **Empfohlener Prozess zum Konfigurieren von Regeln:** Erfahren Sie mehr über eine allgemeine Methode zum Schutz Ihrer Website.
 * **Setup:** Erfahren Sie, wie Sie Traffic-Filterregeln einrichten, konfigurieren und bereitstellen, einschließlich der erweiterten WAF-Regeln.
-* **Regelsyntax:** Erfahren Sie, wie Sie Traffic-Filterregeln in der Konfigurationsdatei von `cdn.yaml` deklarieren. Dazu gehören sowohl die Traffic-Filterregeln, die für alle Sites- und Forms-Kunden verfügbar sind, als auch die Unterkategorie der WAF-Regeln für diejenigen, die diese Funktion lizenzieren.
+* **Regelsyntax:** Erfahren Sie, wie Sie Traffic-Filterregeln in der Konfigurationsdatei von `cdn.yaml` deklarieren. Dazu gehören sowohl die Traffic-Filterregeln, die für alle Kundinnen und Kunden von Sites und Forms verfügbar sind, als auch die Unterkategorie der WAF-Regeln für diejenigen, die diese Funktion lizenzieren.
 * **Regelbeispiele:** Sehen Sie sich zu Beginn Beispiele für deklarierte Regeln an.
 * **Ratenbegrenzungsregeln:** Erfahren Sie, wie Sie Regeln zur Ratenbegrenzung verwenden, um Ihre Site vor Angriffen mit hohem Volumen zu schützen.
 * **CDN-Protokolle:** Erfahren Sie, welche deklarierten Regeln und WAF-Flags mit Ihrem Traffic übereinstimmen.
@@ -54,7 +54,7 @@ Adobe ergreift standardmäßig Maßnahmen, um eine Leistungsbeeinträchtigung du
 
 Kundinnen und Kunden können proaktive Maßnahmen ergreifen, um Angriffe auf Anwendungsebene (Ebene 7) zu minimieren, indem sie Regeln auf verschiedenen Ebenen des Inhaltsbereitstellungsflusses konfigurieren.
 
-Auf der Apache-Ebene können Kundinnen und Kunden beispielsweise das [Dispatcher-Modul](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-access-to-content-filter) oder [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html) konfigurieren, um den Zugriff auf bestimmte Inhalte zu beschränken.
+Auf der Apache-Ebene können Kundinnen und Kunden beispielsweise das [Dispatcher-Modul](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring-access-to-content-filter) oder [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=de) konfigurieren, um den Zugriff auf bestimmte Inhalte zu beschränken.
 
 Wie in diesem Artikel beschrieben, können Traffic-Filterregeln mithilfe der Cloud Manager-Konfigurations-Pipeline auf dem von Adobe verwalteten CDN bereitgestellt werden. Zusätzlich zu Traffic-Filterregeln, die auf Eigenschaften wie IP-Adresse, Pfad und Kopfzeilen basieren, oder Regeln, die auf der Festlegung von Ratenbeschränkungen beruhen, können Kundinnen und Kunden auch eine leistungsstarke Unterkategorie von Traffic-Filterregeln lizenzieren, die sogenannten WAF-Regeln.
 
@@ -79,7 +79,7 @@ Im Folgenden finden Sie einen allgemein empfohlenen End-to-End-Prozess für die 
         cdn.yaml
    ```
 
-1. `cdn.yaml` sollte Metadaten und eine Liste von Traffic-Filterregeln und WAF-Regeln enthalten.
+1. `cdn.yaml` sollte Metadaten sowie eine Liste von Traffic-Filterregeln und WAF-Regeln enthalten.
 
    ```
    kind: "CDN"
@@ -113,14 +113,14 @@ Der `kind`-Parameter sollte auf `CDN` gesetzt sein und die Version auf die Schem
 
 1. Erstellen Sie für andere Umgebungstypen als RDE eine zielgerichtete Bereitstellungskonfigurations-Pipeline in Cloud Manager.
 
-   * [Siehe Konfigurieren von Produktions-Pipelines .](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
-   * [Siehe Konfigurieren von produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+   * [Siehe: Konfigurieren von Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * [Siehe: Konfigurieren von produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 Für RDEs wird später die Befehlszeile verwendet, RDE wird jedoch derzeit noch nicht unterstützt.
 
 **Anmerkungen**
 
-* Sie können `yq` , um die YAML-Formatierung Ihrer Konfigurationsdatei lokal zu überprüfen (z. B. `yq cdn.yaml`).
+* Sie können `yq` verwenden, um die YAML-Formatierung Ihrer Konfigurationsdatei lokal zu überprüfen (z. B. `yq cdn.yaml`).
 
 ## Syntax für Traffic-Filterregeln {#rules-syntax}
 
@@ -149,7 +149,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-Das Format der Traffic-Filterregeln in der Datei `cdn.yaml` wird im Folgenden beschrieben. Siehe einige [andere Beispiele](#examples) in einem späteren Abschnitt und einem separaten Abschnitt zu [Regeln für Ratenbegrenzungen](#rate-limit-rules).
+Das Format der Traffic-Filterregeln in der Datei `cdn.yaml` wird im Folgenden beschrieben. Siehe einige [andere Beispiele](#examples) in einem späteren Abschnitt sowie einen separaten Abschnitt zu [Ratenbegrenzungsregeln](#rate-limit-rules).
 
 
 | **Eigenschaft** | **Die meisten Traffic-Filterregeln** | **WAF-Traffic-Filterregeln** | **Typ** | **Standardwert** | **Beschreibung** |
@@ -282,7 +282,7 @@ Die `wafFlags`-Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln v
 
 ## Regelbeispiele {#examples}
 
-Es folgen einige Regelbeispiele. Siehe den [Abschnitt „Ratenbegrenzung](#rules-with-rate-limits) weiter unten, um Beispiele für Ratenbegrenzungsregeln zu erhalten.
+Es folgen einige Regelbeispiele. Weitere Informationen zu Beispielen für Ratenbegrenzungsregeln  finden Sie weiter unten im Abschnitt [Ratenbegrenzung](#rules-with-rate-limits).
 
 **Beispiel 1**
 
@@ -416,9 +416,9 @@ Die Ratenbegrenzungen werden pro CDN-POP berechnet. Nehmen wir beispielsweise an
 | **Eigenschaft** | **Typ** | **Standard** | **BEDEUTUNG** |
 |---|---|---|---|
 | limit | Ganzzahl von 10 bis 10.000 | erforderlich | Anfragerate (pro CDN-POP) in Anfragen pro Sekunde, für die die Regel ausgelöst wird. |
-| window | Ganzzahl: 1, 10 oder 60 | 10 | Stichprobenfenster in Sekunden, für das die Anfragerate berechnet wird. Die Genauigkeit der Zähler hängt von der Größe des Fensters ab (ein größeres Fenster liefert höhere Genauigkeit). Beispielsweise kann man eine Genauigkeit von 50 % für das 1-Sekunden-Fenster und eine Genauigkeit von 90 % für das 60-Sekunden-Fenster erwarten. |
+| window | Ganzzahl: 1, 10 oder 60 | 10 | Stichprobenfenster in Sekunden, für das die Anfragerate berechnet wird. Die Genauigkeit der Zähler hängt von der Größe des Fensters ab (ein größeres Fenster liefert höhere Genauigkeit). Beispielsweise kann man für das 1-Sekunden-Fenster eine Genauigkeit von 50 % und für das 60-Sekunden-Fenster eine Genauigkeit von 90 % erwarten. |
 | penalty | Ganzzahl von 60 bis 3600 | 300 (5 Minuten) | Ein Zeitraum in Sekunden, für den übereinstimmende Anfragen blockiert werden (auf die nächste Minute gerundet). |
-| groupBy | array[Getter] | keine | Der Zähler der Ratenbegrenzer wird durch eine Reihe von Anforderungseigenschaften aggregiert (z. B. clientIp). |
+| groupBy | array[Getter] | keine | Der Zähler der Ratenbegrenzer wird durch eine Reihe von Anfrageeigenschaften aggregiert (z. B. clientIp). |
 
 
 ### Beispiele {#ratelimiting-examples}
@@ -471,7 +471,7 @@ data:
 
 AEM as a Cloud Service bietet Zugriff auf CDN-Protokolle, die für Anwendungsfälle nützlich sind, einschließlich der Optimierung der Cache-Trefferquote und der Konfiguration von Traffic-Filterregeln. CDN-Protokolle werden im Cloud Manager-Dialog **Protokolle herunterladen** angezeigt, wenn Sie den Author- oder Publish-Service auswählen.
 
-CDN-Protokolle können bis zu fünf Minuten verspätet sein.
+CDN-Protokolle können sich bis zu fünf Minuten verzögern.
 
 Die Eigenschaft `rules` beschreibt, welche Traffic-Filterregeln übereinstimmen, und weist folgendes Muster auf:
 
@@ -489,7 +489,7 @@ Die Regeln verhalten sich wie folgt:
 
 * Der auf Kundenseite deklarierte Regelname aller übereinstimmenden Regeln wird im Attribut `match` aufgeführt.
 * Das Attribut `action` bestimmt, ob die Regeln zum Blockieren, Zulassen oder Protokollieren führen.
-* Wenn die WAF lizenziert und aktiviert ist, wird die `waf` -Attribut listet alle WAF-Flags (z. B. SQLI) auf, die erkannt wurden, unabhängig davon, ob die WAF-Flags in irgendwelchen Regeln aufgeführt wurden. Dies soll Aufschluss über potenzielle neue Regeln geben, die deklariert werden können.
+* Wenn die WAF lizenziert und aktiviert ist, listet das Attribut `waf` alle WAF-Flags (z. B. SQLI) auf, die erkannt wurden, unabhängig davon, ob die WAF-Flags in Regeln aufgeführt wurden. Dies soll Aufschluss über potenzielle neue Regeln geben, die deklariert werden können.
 * Wenn keine auf Kundenseite deklarierten Regeln übereinstimmen und keine WAF-Regeln übereinstimmen, ist die Eigenschaft `rules` leer.
 
 Wie bereits erwähnt, erscheinen Übereinstimmungen für eine WAF-Regel nur in CDN-Protokollen für Fehlschläge und Durchgänge von CDN, nicht jedoch für Treffer.

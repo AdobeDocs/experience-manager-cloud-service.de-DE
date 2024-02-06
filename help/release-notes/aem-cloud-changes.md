@@ -1,11 +1,11 @@
 ---
 title: Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service
-description: Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service.
+description: Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '862'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe Experience Manager (AEM) Cloud Service bietet viele neue Funktionen und M�
 >[!NOTE]
 >In diesem Dokument werden die wesentlichen Änderungen an AEM als Ganzes hervorgehoben. Weitere Informationen und lösungsspezifische Änderungen finden Sie unter:
 >
->* [Einführung in Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
+>* [Einführung zu Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 >* [Neue Funktionen und Unterschiede](/help/overview/what-is-new-and-different.md) von Adobe Experience Manager as a Cloud Service im Vergleich zu vorherigen Versionen.
 >* [Architektur](/help/overview/architecture.md) von Adobe Experience Manager as a Cloud Service
 >* [Wesentliche Änderungen an AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
@@ -39,13 +39,13 @@ Die wichtigsten Unterschiede sind in folgenden Bereichen festzustellen:
 
 * [Benutzerdefinierte Ausführungsmodi sind nicht zulässig](#custom-runmodes)
 
-* [Entfernung von Replikationsagenten und zugehörigen Änderungen](#replication-agents)
+* [Entfernung von Replikationsagenten und damit verbundene Änderungen](#replication-agents)
 
 * [Entfernung der klassischen Benutzeroberfläche](#classic-ui)
 
 * [Bereitstellung auf Veröffentlichungsseite](#publish-side-delivery)
 
-* [Asset-Handhabung und -Bereitstellung](#asset-handling)
+* [Handhabung und Bereitstellung von Assets](#asset-handling)
 
 ## /apps und /libs sind zur Laufzeit unveränderlich {#apps-libs-immutable}
 
@@ -79,13 +79,13 @@ Abgesehen von Änderungen unter dem Ordner `/home` auf der Veröffentlichungsebe
 
 ## Benutzerdefinierte Ausführungsmodi sind nicht zulässig {#custom-runmodes}
 
-Zusätzliche oder benutzerdefinierte Ausführungsmodi sind in AEM Cloud Service nicht möglich. Eine Liste der standardmäßig für AEM Cloud Service bereitgestellten Ausführungsmodi finden Sie unter [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md#runmodes).
+Zusätzliche oder benutzerdefinierte Ausführungsmodi sind in AEM Cloud Service nicht möglich. Eine Liste der standardmäßig für AEM Cloud Service bereitgestellten Ausführungsmodi finden Sie im Dokument [Bereitstellen in AEM as a Cloud Service.](/help/implementing/deploying/overview.md#runmodes)
 
-## Entfernung von Replikationsagenten und zugehörigen Änderungen {#replication-agents}
+## Entfernung von Replikationsagenten und damit verbundene Änderungen {#replication-agents}
 
 In AEM Cloud Service werden Inhalte über [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) veröffentlicht. Die in früheren Versionen von AEM verwendeten Replikationsagenten werden nicht mehr verwendet oder bereitgestellt, was sich möglicherweise auf die folgenden Bereiche bestehender AEM-Projekte auswirken könnte:
 
-* Benutzerdefinierte Workflows, die Inhalte beispielsweise an Replikations-Agenten von Vorschau-Servern senden.
+* Benutzerdefinierte Workflows, die beispielsweise Inhalte an Replikations-Agenten von Vorschau-Servern senden.
 * Anpassung an Replikationsagenten zur Umwandlung von Inhalten.
 * Verwendung der Rückwärtsreplikation, um Inhalte aus Publish zurück an Author zu senden.
 

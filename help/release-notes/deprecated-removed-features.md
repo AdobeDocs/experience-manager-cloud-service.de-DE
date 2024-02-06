@@ -3,9 +3,9 @@ title: Veraltete und entfernte Funktionen
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: cb2c883fbadc5347dbe5fc50337abc41d4f5cec3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2068'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -37,11 +37,11 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 | [!DNL Sites] | Experience Fragments-Eigenschaften für **Social-Media-Status**. | Die Funktion wird bald entfernt. |
 | [!DNL Sites] | Vorlagenbasierte einfache Inhaltsfragmente. | Jetzt [Modellbasierte strukturierte Inhaltsfragmente](/help/assets/content-fragments/content-fragments-models.md). |
 | [!DNL Assets] | `DAM Asset Update`-Workflow zur Verarbeitung erfasster Bilder. | Für die Asset-Erfassung werden jetzt [Asset-Microservices](/help/assets/asset-microservices-overview.md) verwendet. |
-| [!DNL Assets] | Hochladen von Assets direkt in [!DNL Experience Manager]. Siehe [veraltete APIs zum Hochladen von Assets](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Verwenden Sie den [direkten binären Upload](/help/assets/add-assets.md). Weitere technische Daten finden Sie im Abschnitt zu den [APIs für den direkten Upload](/help/assets/developer-reference-material-apis.md#upload-binary). |
+| [!DNL Assets] | Hochladen von Assets direkt in [!DNL Experience Manager]. Siehe [Veraltete APIs zum Hochladen von Assets](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Verwenden Sie den [direkten binären Upload](/help/assets/add-assets.md). Weitere technische Daten finden Sie im Abschnitt zu den [APIs für den direkten Upload](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | [Bestimmte Workflow-Schritte ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) im `DAM Asset Update`-Workflow werden nicht unterstützt, darunter der Aufruf von Befehlszeilen-Tools wie [!DNL ImageMagick]. | [Asset-Microservices](/help/assets/asset-microservices-overview.md) bieten Ersatz für viele Workflows. Verwenden Sie für die benutzerdefinierte Verarbeitung [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | FFmpeg-Transcodierung von Videos. | Verwenden Sie für die Generierung von FFmpeg-Miniaturen [Asset-Microservices](/help/assets/asset-microservices-overview.md). Verwenden Sie für die von FFmpeg-Transcodierung [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | Benutzeroberfläche für die Strukturreplikation auf der Registerkarte „Verteilung“ des Replikationsagenten (wird nach dem 30. September 2021 entfernt) | Ansätze für [Veröffentlichungen verwalten](/help/operations/replication.md#manage-publication) oder [Workflows zur Veröffentlichung von Inhaltsbäumen](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | Weder die Registerkarte &quot;Verteilen&quot;des Administrationsbildschirms des Replikationsagenten noch die Replikations-API können zur Replikation von Inhaltspaketen über 10 MB verwendet werden. Verwenden Sie stattdessen entweder [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder [Arbeitsablauf für Veröffentlichungsinhalte](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | Weder die Registerkarte „Verteilung“ des Administrationsbildschirms des Replikationsagenten noch die Replikations-API können für die Replikation von Inhaltspaketen von über 10 MB verwendet werden. Verwenden Sie stattdessen entweder die Funktion [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder den [Workflow für die Veröffentlichung der Inhaltsstruktur](/help/operations/replication.md#publish-content-tree-workflow) |
 
 ## Entfernte Funktionen {#removed-features}
 
@@ -72,7 +72,7 @@ Diese Regeln werden während des Build-Prozesses von Cloud Manager validiert. Im
 
 Weitere Informationen zur OSGi-Konfiguration finden Sie [hier](/help/implementing/deploying/configuring-osgi.md).
 
-++ + OSGi-Konfigurationen, die nicht geändert werden können.
++++OSGi-Konfigurationen, die nicht geändert werden können.
 * **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Ankündigungsdatum: 30.04.2021, Erzwingungsdatum: 31.07.2021)
 * **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Ankündigungsdatum: 30.04.2021, Erzwingungsdatum: 31.07.2021)
 * **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Ankündigungsdatum: 30.04.2021, Erzwingungsdatum: 31.07.2021)
@@ -80,7 +80,7 @@ Weitere Informationen zur OSGi-Konfiguration finden Sie [hier](/help/implementin
 * **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Ankündigungsdatum: 25.08.2021, Erzwingungsdatum: 26.11.2021)
 +++
 
-++ + OSGi-Konfigurationen, die Build-Validierungsregeln unterliegen.
++++OSGi-Konfigurationen, die Build-Validierungsregeln unterliegen.
 * **`org.apache.felix.eventadmin.impl.EventAdmin`** (Ankündigungsdatum: 30.04.2021, Erzwingungsdatum: 31.07.2021)
 * `org.apache.felix.eventadmin.ThreadPoolSize`
    * Typ: integer
@@ -207,7 +207,7 @@ Weitere Informationen zur OSGi-Konfiguration finden Sie [hier](/help/implementin
 Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das voraussichtliche Datum ihrer Entfernung. Von den Kunden wird erwartet, dass sie die APIs bis zum Zieltermin aus ihrem Code entfernen. Jegliche Verwendung der API nach dem Datum der Entfernung führt zu Fehlern in der lokalen SDK-/Entwicklungsumgebung und dem Cloud Manager-Build-Prozess.
 
 <details>
-  <summary>Erweitern Sie , um die Liste veralteter APIs anzuzeigen.</summary>
+  <summary>Erweitern, um die Liste veralteter APIs anzuzeigen.</summary>
 <table style="table-layout:auto">
   <tr>
     <th>Package/Klasse</th>

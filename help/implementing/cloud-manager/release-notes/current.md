@@ -4,9 +4,9 @@ description: Dies sind die Versionshinweise für Cloud Manager 2024.1.0 in AEM a
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -21,30 +21,30 @@ Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2024.1.0 in AE
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager -Version 2024.1.0 in AEM as a Cloud Service wurde am 18. Januar 2024 veröffentlicht. Die nächste Version wird voraussichtlich am 16. Februar 2024 veröffentlicht.
+Die Version 2024.1.0 von Cloud Manager in AEM as a Cloud Service wurde am 18. Januar 2024 veröffentlicht. Die nächste Version wird voraussichtlich am 16. Februar 2024 veröffentlicht.
 
 ## Neue Funktionen {#what-is-new}
 
-* Cloud Manager überprüft jetzt nicht nur die Hauptdatumswerte [Zertifikat,](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) aber auch für Zwischenzertifikate.
-* CDN [logs](/help/implementing/cloud-manager/manage-logs.md) werden nun in einem komprimierten Format zurückgegeben.
+* Cloud Manager validiert jetzt nicht nur die Ablaufdaten für das [Hauptzertifikat](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md), sondern auch die der Zwischenzertifikate.
+* CDN-[Protokolle](/help/implementing/cloud-manager/manage-logs.md) werden nun in einem komprimierten Format zurückgegeben.
 
 ## Early-Adopter-Programm {#early-adoption}
 
 Um einige bevorstehende Funktionen testen zu können, müssen Sie Teil des Early-Adopter-Programms von Adobe sein.
 
-### Clientseitige Erfassung über die Echtzeit-Benutzerüberwachung (RUM) {#rum}
+### Client-seitige Sammlung über Real User Monitoring (RUM) {#rum}
 
-Sie können die [Datendienst für die Echtzeit-Benutzerüberwachung (RUM)](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) , um die clientseitige Erfassung für AEM as a Cloud Service zu aktivieren.
+Sie können den [Datendienst Real User Monitoring (RUM)](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) nutzen, um die Client-seitige Sammlung für AEM as a Cloud Service zu aktivieren.
 
-Der Real User Monitoring (RUM) Data Service bietet eine präzisere Darstellung der Benutzerinteraktionen und stellt so eine zuverlässige Messung der Website-Interaktion sicher. Dies ist eine großartige Gelegenheit, erweiterte Einblicke in Ihre Seitenleistung zu erhalten. Dies ist nützlich für Kunden, die entweder Adobe-verwaltetes CDN oder nicht-Adobe verwaltetes CDN verwenden. Für Kunden, die ein nicht von Adobe verwaltetes CDN verwenden, kann die automatisierte Traffic-Berichterstellung jetzt für sie aktiviert werden, sodass keine Traffic-Berichte mehr für Adobe freigegeben werden müssen.
+Der Datendienst Real User Monitoring (RUM) bietet eine präzisere Darstellung der Benutzerinteraktionen und stellt so eine zuverlässige Messung der Website-Interaktionen sicher. Dies ist eine großartige Gelegenheit, erweiterte Einblicke in Ihre Seitenleistung zu erhalten. Dies ist nützlich für Kundinnen und Kunden, die entweder ein von Adobe verwaltetes CDN oder ein nicht von Adobe verwaltetes CDN verwenden. Für diejenigen, die ein nicht von Adobe verwaltetes CDN verwenden, kann die automatisierte Traffic-Berichterstellung jetzt für sie aktiviert werden, sodass keine Traffic-Berichte mehr für Adobe freigegeben werden müssen.
 
-Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte eine E-Mail an `aemcs-rum-adopter@adobe.com` von der mit Ihrer Adobe ID verknüpften E-Mail-Adresse aus. Geben Sie den Domänennamen für die Produktions-, Staging- und Entwicklungsumgebungen in Ihre E-Mail ein.  Die Verfügbarkeit des Early-Adopter-Programms für diese Funktion ist begrenzt.
+Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an `aemcs-rum-adopter@adobe.com`. Geben Sie in Ihrer E-Mail den Domain-Namen für die Produktions-, Staging- und Entwicklungsumgebungen an. Die Verfügbarkeit des Early-Adopter-Programms für diese Funktion ist begrenzt.
 
 ### Bringen Sie Ihren eigenen GitHub mit {#byo-github}
 
 Wenn Sie Ihre Repositorys mit GitHub verwalten, [können Sie jetzt Code direkt in Ihren GitHub-Repositorys über Cloud Manager validieren.](/help/implementing/cloud-manager/managing-code/byo-github.md) Durch diese Integration entfällt die Notwendigkeit, Code ständig mit dem Adobe-Repository zu synchronisieren, und Sie können Pull-Anfragen überprüfen, bevor Sie sie in den Hauptverzweigungen zusammenführen.
 
-Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie eine E-Mail an `Grp-CloudManager_BYOG@adobe.com` von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse aus.
+Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an `Grp-CloudManager_BYOG@adobe.com`.
 
 ### Self-Service-Inhaltswiederherstellung {#content-restore}
 
@@ -65,9 +65,9 @@ Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie
 
 Das Dashboard verwendet Google Lighthouse, ein automatisiertes Open-Source-Tool zur Verbesserung der Qualität Ihrer Web-Anwendungen. Sie können es für jede Web-Seite ausführen, egal ob öffentlich oder authentifizierungspflichtig. Es enthält Prüfungen für Leistung, Barrierefreiheit, progressive Web-Apps, SEO und mehr.
 
-Möchten Sie das neue Dashboard testen? Senden Sie zunächst eine E-Mail an `aem-lighthouse-pilot@adobe.com` aus Ihrer mit Ihrer Adobe ID verknüpften E-Mail.
+Möchten Sie das neue Dashboard testen? Senden Sie dazu eine E-Mail an `aem-lighthouse-pilot@adobe.com` von der E-Mail-Adresse, die mit Ihrer Adobe ID verknüpft ist.
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* Es wurde ein Fehler behoben, bei dem Konfigurationspipelines beim Build-Schritt fehlschlugen und eine unklare Fehlermeldung angezeigt wurde, wenn der Speicherort der Konfigurationsdateien nicht ordnungsgemäß festgelegt wurde. Die Fehlermeldung ist jetzt klar und weist darauf hin, dass der Benutzer prüfen sollte, ob der Speicherort der Konfigurationsdateien korrekt ist.
+* Es wurde ein Fehler behoben, bei dem Konfigurations-Pipelines beim Build-Schritt fehlschlugen und eine unklare Fehlermeldung angezeigt wurde, wenn der Speicherort der Konfigurationsdateien nicht ordnungsgemäß festgelegt wurde. Die Fehlermeldung ist jetzt klar und weist darauf hin, dass die Person prüfen sollte, ob der Speicherort der Konfigurationsdateien korrekt ist.
 * Wenn ein Build-Schritt aufgrund eines `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR` mit dem Status `FAILED` abgeschlossen wird, wird dies nun ordnungsgemäß als Fehler aufgrund von Zusammenführungskonflikten mit der Zielverzweigung beschrieben.

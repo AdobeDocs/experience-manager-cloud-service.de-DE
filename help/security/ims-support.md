@@ -3,9 +3,9 @@ title: IMS-Unterstützung für Adobe Experience Manager as a Cloud Service
 description: Unterstützung von Bildverwaltungssystemen für Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1917'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -53,8 +53,8 @@ Sobald die Kundschaft als IMS-Organisation existiert, muss sie ihr System wie fo
 ![IMS-Onboarding](/help/security/assets/ims2.png)
 
 1. Der festgelegte Systemadministrator erhält eine Einladung zur Anmeldung bei Cloud Manager. Nach der Anmeldung bei Cloud Manager können die Systemadministratoren entweder AEM-Programme und -Umgebungen bereitstellen oder für Verwaltungsaufgaben zur Admin Console navigieren.
-1. Der Systemadministrator beansprucht eine Domäne, um das Eigentum an der entsprechenden Domäne zu bestätigen (z. B. acme.com).
-1. Der Systemadministrator richtet die Benutzerverzeichnisse ein.
+1. Der Systemadministrator bzw. die Systemadministratorin beansprucht eine Domain, um die Eigentümerschaft der Domain zu bestätigen (beispielsweise acme.com).
+1. Der Systemadministrator bzw. die Systemadministratorin richtet die Benutzerverzeichnisse ein.
 1. Der Systemadministrator führt die IDP-Konfiguration in der Admin Console aus, um Single-Sign-On einzurichten.
 1. Der AEM-Administrator verwaltet die lokalen Gruppen, Berechtigungen und Zugriffsrechte wie gewohnt.
 
@@ -98,11 +98,11 @@ Das Tool zur Benutzersynchronisierung steht über das Adobe Github-Repository [a
 
 Die wichtigsten Funktionen dieser Version sind die Möglichkeit, neue LDAP-Gruppen für die Benutzermitgliedschaft in der Admin Console dynamisch zuzuordnen und dynamische Benutzergruppen zu erstellen.
 
-Weitere Informationen zu den neuen Gruppenfunktionen finden Sie [hier](https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options).
+Weitere Informationen zu den neuen Gruppenfunktionen finden Sie [hier](https://adobe-apiplatform.github.io/user-sync.py/de/user-manual/advanced_configuration.html#additional-group-options).
 
 **Dokumentation zur Benutzersynchronisierung**
 
-Siehe [UST-Dokumentation](https://adobe-apiplatform.github.io/user-sync.py/en/) für weitere Details.
+Siehe [UST-Dokumentation](https://adobe-apiplatform.github.io/user-sync.py/de/) für weitere Details.
 
 Das Tool zur Benutzersynchronisierung muss sich mit dem Verfahren [hier](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html) als Adobe Developer-Client-UMAPI registrieren.
 
@@ -213,7 +213,7 @@ Um auf Cloud Manager oder Umgebungen in AEM as a Cloud Service zugreifen zu kön
 Unter Rollendefinitionen finden Sie weitere Informationen zu Rollen von Benutzenden, die die Verfügbarkeit bestimmter Funktionen in Cloud Manager steuern.
 
 >[!NOTE]
->Cloud Manager verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Informationen zu den einzelnen Rollen mit den entsprechenden Berechtigungen, vorkonfigurierten Aufgaben oder den Berechtigungen, die mit den einzelnen Rollen verknüpft sind, finden Sie unter [Rollenbasierte Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html).
+>Cloud Manager verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Informationen zu den einzelnen Rollen mit den entsprechenden Berechtigungen, vorkonfigurierten Aufgaben oder den Berechtigungen, die mit den einzelnen Rollen verknüpft sind, finden Sie unter [Rollenbasierte Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=de).
 
 **Schritte zum Hinzufügen eines Benutzers**
 

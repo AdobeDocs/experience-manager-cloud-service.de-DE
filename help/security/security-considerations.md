@@ -5,9 +5,9 @@ hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '217'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Um asymmetrische, kryptografische Vorgänge zu unterstützen, speichert AEM Zert
 
 ### Eigenschaften des Trust Store {#truststore-characteristics}
 
-* Der Trust Store befindet sich unter `/etc/truststore` und besteht aus einer Java-Keystore-Datei, dem Keystore-Passwort und den Repository-Metadaten. Sowohl das Kennwort als auch der Keystore selbst werden aus technischen Gründen verschlüsselt, auch wenn die enthaltenen Zertifikate standardmäßig über die API für alle zugänglich sind
+* Der Trust Store befindet sich unter `/etc/truststore` und besteht aus einer Java-Keystore-Datei, dem Keystore-Passwort und den Repository-Metadaten. Sowohl das Passwort als auch der Keystore selbst sind aus technischen Gründen verschlüsselt, auch wenn die enthaltenen Zertifikate standardmäßig über die API für alle zugänglich sind
 * Standardmäßig werden die Zertifikate nur für HTTPS- und SAML-Unterstützung verwendet und der Speicher muss zuerst manuell erstellt werden
 * Kunden oder Kundinnen können sie in ihrem eigenen Code über die [Keystore-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-) verwenden
 * Der Trust-Store kann über die Benutzeroberfläche unter **Tools** – **Sicherheit** – **Trust Store** oder durch Zugriff auf *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`* verwaltet werden, wie unten dargestellt:

@@ -1,18 +1,18 @@
 ---
 title: Wesentliche Änderungen an AEM Sites in AEM Cloud Service
-description: Erfahren Sie, wie Sie in AEM Cloud Service AEM Sites as a Cloud Service erstellen und verwalten sowie wichtige Änderungen an AEM Sites vornehmen können.
+description: Erfahren Sie, wie Sie AEM Sites as a Cloud Service erstellen und verwalten sowie wichtige Änderungen an AEM Sites in AEM Cloud Service vornehmen können.
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
 # Wesentliche Änderungen an AEM Sites as a Cloud Service {#notable-changes}
 
-AEM Sites as a Cloud Service stellt Experience-Management-Funktionen als Teil der Cloud-nativen Plattform AEM as a Cloud Service bereit. Neben den wichtigsten Vorteilen von AEM as a Cloud Service, wie Cloud-nativer Skalierbarkeit, Betriebszeit und immer auf dem neuesten Stand, bietet AEM Sites as a Cloud Service auch mehrere Sites-spezifische Änderungen und Ergänzungen.
+AEM Sites as a Cloud Service stellt Experience-Management-Funktionen als Teil der Cloud-nativen Plattform AEM as a Cloud Service bereit. Neben den wichtigsten Vorteilen von AEM as a Cloud Service, wie der Cloud-nativen Skalierbarkeit, der Betriebszeit und der Aktualität, bietet AEM Sites as a Cloud Service auch eine Reihe von Sites-spezifischen Änderungen und Ergänzungen.
 
 >[!NOTE]
 >In diesem Dokument werden die wesentlichen Änderungen an AEM Sites aufgeführt. Allgemeine Änderungen an AEM as a Cloud Service und anderen Modulen finden Sie unter:
@@ -41,7 +41,7 @@ Der Initiator solcher Aktionen kann ihren Status in einer neuen Benutzeroberflä
 
 >[!NOTE]
 >
->Der Benutzer des Systems muss diese neue Funktion nicht ändern. Dies wird hier lediglich als eine Abweichung vom Verhalten vorheriger lokal bereitgestellten Versionen von AEM aufgeführt.
+>Auf Benutzerseite müssen keine Änderungen am System vorgenommen werden, um diese neue Funktion zu nutzen. Dies wird hier lediglich als eine Abweichung vom Verhalten vorheriger lokal bereitgestellten Versionen von AEM erwähnt.
 
 ## Neue Referenz-Website und Tutorial {#new-reference-site-and-tutorial}
 
