@@ -3,9 +3,9 @@ title: Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dfeeaca8341abec5d4fd518957baf6936a21aea3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3540'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -351,7 +351,7 @@ Die meisten VPN-Geräte mit IPSec-Technologie werden unterstützt. Schauen Sie s
 
 * Unterstützung ist auf eine einzelne VPN-Verbindung beschränkt
 * Die Splunk-Weiterleitungsfunktion ist über eine VPN-Verbindung nicht möglich.
-* DNS-Resolver müssen im Gateway-Adressbereich aufgeführt sein, um private Hostnamen aufzulösen.
+* DNS-Resolver müssen im Gateway-Adressraum aufgeführt sein, um private Host-Namen aufzulösen.
 
 ### Kreation {#vpn-creation}
 
