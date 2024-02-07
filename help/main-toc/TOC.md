@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3d5901e6543b0b5d3214e69c5119367eeb71bf07
+source-git-commit: c986f817b2dc81e03b9c6f725d8754f017a585dd
 workflow-type: tm+mt
 source-wordcount: '4633'
 ht-degree: 95%
@@ -78,15 +78,15 @@ ht-degree: 95%
    + Wartungsversionshinweise zu AEMaaCS {#maintenance}
       + [Neueste Wartungversionshinweise](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
-         + [Wartungversionshinweise für 2023.11.0](/help/release-notes/maintenance/2023/2023.11.0.md)
-         + [Wartungversionshinweise für 2023.10.0](/help/release-notes/maintenance/2023/2023.10.0.md)
-         + [Wartungversionshinweise für 2023.9.0](/help/release-notes/maintenance/2023/2023.9.0.md)
-         + [Wartungversionshinweise für 2023.8.0](/help/release-notes/maintenance/2023/2023.8.0.md)
-         + [Wartungversionshinweise für 2023.7.0](/help/release-notes/maintenance/2023/2023.7.0.md)
-         + [Neueste Wartungversionshinweise für 2023.6.0](/help/release-notes/maintenance/2023/2023.6.0.md)
-         + [Neueste Wartungversionshinweise für 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
-         + [Neueste Wartungversionshinweise für 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
-         + [Neueste Wartungversionshinweise für 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
+         + [Wartungversionshinweise für 2023.11.0](/help/release-notes/maintenance/2023/2023-11-0.md)
+         + [Wartungversionshinweise für 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md)
+         + [Wartungversionshinweise für 2023.9.0](/help/release-notes/maintenance/2023/2023-9-0.md)
+         + [Wartungversionshinweise für 2023.8.0](/help/release-notes/maintenance/2023/2023-8-0.md)
+         + [Wartungversionshinweise für 2023.7.0](/help/release-notes/maintenance/2023/2023-7-0.md)
+         + [Neueste Wartungversionshinweise für 2023.6.0](/help/release-notes/maintenance/2023/2023-6-0.md)
+         + [Neueste Wartungversionshinweise für 2023.4.0](/help/release-notes/maintenance/2023/2023-4-0.md)
+         + [Neueste Wartungversionshinweise für 2023.2.0](/help/release-notes/maintenance/2023/2023-2-0.md)
+         + [Neueste Wartungversionshinweise für 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
    + Versionshinweise für Cloud Manager {#cloud-manager}
       + [Aktuelle Versionshinweise](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
