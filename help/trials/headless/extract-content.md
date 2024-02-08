@@ -7,7 +7,7 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1069'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -119,9 +119,9 @@ Nachdem Sie nun die beiden primären Abfragetypen ausgeführt haben, können Sie
 
 1. Definieren Sie die Elemente, die die Abfrage für das ausgewählte Inhaltsfragmentmodell enthalten soll. Geben Sie erneut eine linke geschweifte Klammer `{` ein und drücken Sie dann Strg+Leertaste oder Option+Leertaste, um eine AutoVervollständigen-Liste anzuzeigen. Wählen Sie aus den Optionen `items` aus.
 
-1. Wählen Sie die **Pretify** -Schaltfläche, um Ihren Code automatisch zu formatieren, sodass er leichter zu lesen ist.
+1. Wählen Sie die Schaltfläche **Verschönern** aus, um den Code automatisch so zu formatieren, dass er leichter zu lesen ist.
 
-1. Wählen Sie nach Abschluss die **Play** Schaltfläche oben links im Editor, um die Abfrage auszuführen. Der Editor vervollständigt automatisch die `items`, die kurz gelb hervorgehoben werden, und die Abfrage wird ausgeführt.
+1. Wählen Sie nach Abschluss des Vorgangs oben links im Editor die Schaltfläche **Wiedergeben** aus, um die Abfrage auszuführen. Der Editor vervollständigt automatisch die `items`, die kurz gelb hervorgehoben werden, und die Abfrage wird ausgeführt.
 
 1. Die Ergebnisse werden im rechten Bereich neben dem Abfrage-Editor angezeigt.
 
@@ -177,13 +177,13 @@ Sie erstellen eine persistente Abfrage mit Daten, die Sie in Ihrer Client-Applik
 
 1. Im Popup **Abfragename**, geben Sie Ihrer Abfrage den Namen `adventure-list`.
 
-1. Auswählen **Speichern unter**.
+1. Wählen Sie **Sichern unter** aus.
 
    ![Abfrage beibehalten](assets/do-not-localize/persist-query.png)
 
 1. Die Abfrage wird beibehalten, wie durch eine Bannermeldung am unteren Bildschirmrand bestätigt. Die Abfrage wird jetzt auch im linken Bereich der persistierten Abfragen im Fenster angezeigt.
 
-1. Damit die persistente Abfrage öffentlich verfügbar ist, muss sie ähnlich wie Ihre Inhaltsfragmente veröffentlicht werden. Klicks **Veröffentlichen** oben rechts im Abfrageeditor, um die Abfrage zu veröffentlichen.
+1. Damit die persistierte Abfrage öffentlich verfügbar ist, muss sie ähnlich wie bei der Veröffentlichung Ihrer Inhaltsfragmente veröffentlicht werden. Klicken Sie oben rechts im Abfrage-Editor auf **Veröffentlichen**, um die Abfrage zu veröffentlichen.
 
 1. Die Veröffentlichung wird durch eine Bannerbenachrichtigung bestätigt.
 

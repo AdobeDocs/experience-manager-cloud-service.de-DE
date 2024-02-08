@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -33,19 +33,19 @@ ht-degree: 81%
 
 Inhaltsfragmente stellen Ihren Headless-Inhalt dar und basieren auf vordefinierten Strukturen, den sogenannten Inhaltsfragmentmodellen. Sie haben ein Modell bereits in einem vorherigen Modul erstellt.
 
-In diesem Modul erstellen Sie mithilfe der Inhaltsfragmentkonsole ein auf diesem Modell basierendes Inhaltsfragment. Stellen Sie sich die Inhaltsfragmentkonsole als Ihre Bibliothek vor, in der Headless-Content verfügbar ist. Verwenden Sie die Inhaltsfragmentkonsole, um neue Inhaltsfragmente zu erstellen und vorhandene Fragmente zu verwalten.
+In diesem Modul erstellen Sie mithilfe der Inhaltsfragmentkonsole ein Inhaltsfragment, das auf diesem Modell basiert. Stellen Sie sich die Inhaltsfragmentkonsole als Ihre Bibliothek vor, in der Headless-Content verfügbar ist. Verwenden Sie die Inhaltsfragmentkonsole, um neue Inhaltsfragmente zu erstellen und vorhandene Fragmente zu verwalten.
 
-Die Inhaltsfragmentkonsole wird verwendet, um Headless-Inhalte über Versandkanäle hinweg und unabhängig vom Kontext zu erstellen und zu bearbeiten. Dies kann in vielen Authoring-Fällen die effektivste Methode sein. In einem späteren Modul werden wir die Bearbeitung von Headless Content im Kontext und an Ort und Stelle untersuchen.
+Die Inhaltsfragmentkonsole wird verwendet, um Headless-Inhalte über Bereitstellungskanäle hinweg und unabhängig vom Kontext zu erstellen und zu bearbeiten. In vielen Authoring-Fällen kann dies die effektivste Methode sein. In einem späteren Modul wird die Bearbeitung von Headless-Inhalten im Kontext und an Ort und Stelle erkundet.
 
-1. Wählen Sie die **Erstellen** -Schaltfläche oben rechts in der Konsole.
+1. Wählen Sie oben rechts in der Konsole die Schaltfläche **Erstellen** aus.
 
-1. Die **Neues Inhaltsfragment** wird geöffnet, in dem Sie mit der Erstellung eines Inhaltsfragments beginnen können. **Speicherort** wird automatisch mit dem Speicherort des neuen Inhalts befüllt.
+1. Das Dialogfeld **Neues Inhaltsfragment** wird geöffnet, in dem Sie mit der Erstellung eines Inhaltsfragments beginnen können. **Speicherort** wird automatisch mit dem Speicherort des neuen Inhalts befüllt.
 
 1. Wählen Sie in der Dropdown-Liste **Inhaltsfragmentmodell** das zuvor erstellte **Abenteuer**-Inhaltsfragmentmodell.
 
 1. Fügen Sie `Tuscany` als beschreibenden **Titel** für das Inhaltsfragment hinzu. Dadurch wird Ihr Fragment in der Konsole identifiziert.
 
-1. Auswählen **Erstellen und öffnen**.
+1. Wählen Sie **Erstellen und öffnen** aus.
 
 ![Erstellen eines neuen Inhaltsfragments](assets/do-not-localize/create-content.png)
 
@@ -71,7 +71,7 @@ Wenn Sie Ihr neues Inhaltsfragment speichern und öffnen, wird der Inhaltsfragme
 
 1. Geben Sie ein **Bild** an, das für die Reise repräsentativ ist, indem Sie auf **Asset hinzufügen** im Feld **Bild** tippen oder klicken.
 
-1. Wählen Sie im Popup-Fenster &quot;Asset&quot;die Option **Durchsuchen von Assets** , um aus einem vorhandenen Asset in der Asset-Bibliothek auszuwählen.
+1. Wählen Sie im Popup-Fenster des Assets **Assets durchsuchen** aus, um ein vorhandenes Asset aus der Asset-Bibliothek auszuwählen.
 
    ![Asset hinzufügen](assets/do-not-localize/add-asset.png)
 
@@ -79,17 +79,17 @@ Wenn Sie Ihr neues Inhaltsfragment speichern und öffnen, wird der Inhaltsfragme
 
 1. Der Inhalt des Ordners **Radfahren-Toskana** wird auf der rechten Seite angezeigt. Wählen Sie das Bild `ADOBESTOCK_141786166.JPEG` aus.
 
-1. Auswählen **Auswählen**.
+1. Wählen Sie **Auswählen** aus.
 
    ![Asset auswählen](assets/do-not-localize/select-asset.png)
 
 1. Das ausgewählte Bild wird im Inhaltsfragment angezeigt. Der Editor speichert die Änderungen automatisch.
 
-1. Nachdem Sie den Inhalt hinzugefügt haben, wählen Sie die **Veröffentlichen** Schaltfläche oben rechts im Editor. Dadurch kann Ihr Inhaltsfragment von externen Apps verwendet werden. Wählen Sie dann **Jetzt** aus der Dropdown-Liste aus. Sie können die Veröffentlichung auch zu einem späteren Zeitpunkt planen.
+1. Nachdem Sie den gesamten Inhalt hinzugefügt haben, wählen Sie die Schaltfläche **Veröffentlichen** oben rechts im Editor aus. Dadurch kann Ihr Inhaltsfragment von externen Apps verwendet werden. Wählen Sie dann **Jetzt** aus der Dropdown-Liste aus. Sie können die Veröffentlichung auch zu einem späteren Zeitpunkt planen.
 
    ![Inhalt veröffentlichen](assets/do-not-localize/publish.png)
 
-1. Der Dialog **Inhaltsfragmente veröffentlichen** wird angezeigt. AEM führt automatisch eine Verweisprüfung durch, um sicherzustellen, dass alle erforderlichen Ressourcen für Ihr Inhaltsfragment veröffentlicht werden. In diesem Fall müssen Sie auch das von Ihnen erstellte Modell veröffentlichen. Auswählen **Veröffentlichen**.
+1. Der Dialog **Inhaltsfragmente veröffentlichen** wird angezeigt. AEM führt automatisch eine Verweisprüfung durch, um sicherzustellen, dass alle erforderlichen Ressourcen für Ihr Inhaltsfragment veröffentlicht werden. In diesem Fall müssen Sie auch das von Ihnen erstellte Modell veröffentlichen. Wählen Sie **Veröffentlichen** aus.
 
    ![Veröffentlichungs- und Verweisprüfung](assets/do-not-localize/publish-confirm.png)
 

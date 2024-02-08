@@ -6,8 +6,8 @@ index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 07f61a3f6a794e18bc2e02e966392cdce3103a81
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 98%
+source-wordcount: '1002'
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ Gehen Sie wie oben beschrieben vor, um diese zusätzlichen Felder hinzuzufügen.
 
    * **Rendern als:** **Inhaltsreferenz**: Wenn Sie ein Abenteuer erstellen, verweist dieses Feld auf das Bild-Asset, das diese Reise darstellt.
    * **Feldbezeichnung:** `Image`: Die Bezeichnung, die für dieses Feld angezeigt wird, wenn ein Abenteuer erstellt wird.
-   * **Stammpfad:** `/content/dam/aem-demo-assets/en` - Gibt einen Startpunktpfad beim Suchen nach Assets mit der Asset-Auswahl an.
+   * **Stammpfad:** `/content/dam/aem-demo-assets/en`: Gibt einen Startpunktpfad beim Suchen nach Assets mit dem Asset-Selektor an.
 
 1. Nachdem Sie die erforderlichen Felder für das Inhaltsfragmentmodell hinzugefügt haben, klicken Sie oben rechts im Fenster auf **Speichern**.
 

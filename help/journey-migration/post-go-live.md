@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie Probleme erkennen und die Leistung verbessern
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 76%
+source-wordcount: '459'
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 76%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=de" text="Zugreifen auf und Verwalten von Protokollen"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=de#aem-as-a-cloud-service-development-tools" text="Entwicklungs-Tools für AEM as a Cloud Service"
 
-Diese Journey ist der letzte Teil, daher lernen Sie, wie Sie nach Abschluss der Migration auf Probleme überwachen und die Leistung verbessern können. In der Phase nach der Migration sollten Sie die Bereinigung temporärer Dateien sicherstellen, die Best Practices für die kontinuierliche Entwicklung überprüfen und die Protokolle verwalten.
+Diese Tour ist der letzte Teil. Sie lernen, wie Sie Probleme erkennen und die Leistung verbessern, nachdem die Migration abgeschlossen ist. In der Phase nach der Migration sollten Sie die Bereinigung temporärer Dateien sicherstellen, die Best Practices für die kontinuierliche Entwicklung überprüfen und die Protokolle verwalten.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
@@ -43,15 +43,15 @@ Weitere Informationen zu Entwicklungs-Tools finden Sie unter [Implementierung f�
 Als Benutzer können Sie in der Entwicklungsumgebung auf CRXDE Lite zugreifen, jedoch nicht in der Staging- oder Produktionsumgebung.
 
 >[!IMPORTANT]
->Das Schreiben in unveränderliche Repositorys wie zum Beispiel `/libs` und `/apps` führt zur Laufzeit zu Fehlern. Außerdem haben Sie keinen Zugriff auf Entwickler-Tools für Staging- und Produktionsumgebungen.
+>Das Schreiben in unveränderliche Repositorys wie zum Beispiel `/libs` und `/apps` führt zur Laufzeit zu Fehlern. Außerdem haben Kundinnen und Kunden keinen Zugriff auf Entwickler-Tools für Staging- und Produktionsumgebung.
 
-Siehe [Entwickeln mit CRXDE Lite](/help/implementing/developing/tools/crxde.md) für weitere Informationen zur Entwicklung Ihrer AEM-Anwendung mit CRXDE Lite.
+Weitere Informationen zum Entwickeln Ihrer AEM-Anwendung mit CRXDE Lite finden Sie unter [Entwickeln mit CRXDE Lite](/help/implementing/developing/tools/crxde.md).
 
 ## Verwalten von Protokollen {#managing-logs}
 
 Benutzerinnen und Benutzer können auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
 
-Siehe [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md) , um zu erfahren, wie Sie über die Benutzeroberfläche oder die API über Cloud Manager auf Protokolle zugreifen und diese verwalten können.
+Unter [Zugriff und Verwaltung von Protokollen](/help/implementing/cloud-manager/manage-logs.md) erfahren Sie, wie Sie über die Benutzeroberfläche oder über die API via Cloud Manager auf Protokolle zugreifen und diese verwalten können.
 
 ## Kontaktieren des Supports {#contacting-support}
 
@@ -65,13 +65,13 @@ Wenn Sie Fragen zum Zugriff auf Cloud Service haben, wenden Sie sich an Ihren Ad
 
 ## Dokumentieren von Erkenntnissen {#document-learnings}
 
-Nachdem die Migration abgeschlossen ist, dokumentieren Sie die während dieses Prozesses gewonnenen Erkenntnisse. Einige Fragen, die möglicherweise den Dokumentationsprozess unterstützen könnten, sind:
+Dokumentieren Sie die während dieses Prozesses gewonnenen Erkenntnisse, sobald die Migration abgeschlossen ist. Einige Fragen, die möglicherweise den Dokumentationsprozess unterstützen könnten, sind:
 
 * Was hat gut funktioniert und was nicht?
 * Was waren die größten Herausforderungen?
-* Recommendations , wenn eine zukünftige Migration vorliegt.
+* Empfehlungen im Falle einer zukünftigen Migration.
 
-Geben Sie diese Nachmigrationserfahrungen für Interessengruppen und Teams in Ihrer Organisation frei.
+Teilen Sie diese Erkenntnisse nach der Migration dann mit Projektbeteiligten und Teams innerhalb Ihres Unternehmens.
 
 ## Die Tour ist (fast) zu Ende {#journey-ends}
 

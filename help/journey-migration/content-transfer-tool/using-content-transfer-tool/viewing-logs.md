@@ -4,8 +4,8 @@ description: Anzeigen von Protokollen für einen Migrationssatz im Content Trans
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 84%
+source-wordcount: '231'
+ht-degree: 100%
 
 ---
 
@@ -38,6 +38,6 @@ Gehen Sie dann wie folgt vor:
 
 ### Aufnahmeprotokolle
 
-Rufen Sie die Aufnahmeprotokolle auf, indem Sie in Cloud Acceleration Manager die Liste der Aufnahmevorgänge aufrufen. Suchen Sie dann den gewünschten Migrationsauftrag und klicken Sie auf die drei Punkte (**...**) des Auftrags. Sie können dann auf **Protokoll herunterladen** um Protokolle herunterzuladen.
+Rufen Sie die Aufnahmeprotokolle auf, indem Sie im Cloud Acceleration Manager die Liste der Aufnahmevorgänge aufrufen. Suchen Sie dann den gewünschten Migrationsvorgang und klicken Sie auf die drei Punkte (**…**) neben dem Vorgang. Sie können dann auf **Protokoll herunterladen** klicken, um Protokolle herunterzuladen.
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)
