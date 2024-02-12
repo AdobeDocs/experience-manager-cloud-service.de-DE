@@ -2,13 +2,13 @@
 title: Veröffentlichen von Inhalten für Edge Delivery Services
 description: Erfahren Sie, wie Content Publishing mit Edge Delivery Services funktioniert und wie Sie AEM Inhalte mit Edge Delivery Services veröffentlichen.
 feature: Edge Delivery Services
-source-git-commit: 166525b6987215a64521d1ff63a222187376ba65
+exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
+source-git-commit: daad30dd74d389c631131a77655c9fabf4ff2967
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
-
 
 # Veröffentlichen von Inhalten für Edge Delivery Services {#publishing-edge}
 
@@ -22,6 +22,10 @@ Mit Edge Delivery Services ist die Veröffentlichung von Inhalten unabhängig vo
 Wenn Sie den universellen Editor verwenden, um AEM Inhalt zu erstellen, ist die Veröffentlichung so einfach wie das Klicken auf **Veröffentlichen** im universellen Editor. Lesen Sie das Dokument . [Veröffentlichen von Inhalten mit dem universellen Editor](/help/implementing/universal-editor/publishing.md)
 
 Der Informationsfluss bei der Veröffentlichung sieht wie folgt aus. Sobald der Autor die Veröffentlichung startet, ist dieser Fluss automatisch und wird hier zu Informationszwecken dargestellt.
+
+>[!NOTE]
+>
+>Pro Tag sind maximal 5.000 Pfade zulässig, die über die Authoring-Benutzeroberfläche oder durch Workflows veröffentlicht werden. Integrationen, die das Laden von Massenveröffentlichungen ermöglichen, werden nicht unterstützt.
 
 ![Informationsfluss bei der Veröffentlichung von AEM auf Edge Delivery Services](assets/publishing-flow.png)
 
