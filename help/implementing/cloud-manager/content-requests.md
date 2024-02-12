@@ -2,9 +2,9 @@
 title: Grundlegendes zu Cloud Service-Inhaltsanfragen
 description: Wenn Sie Lizenzen für Inhaltsanfragen von Adobe erworben haben, können Sie mehr über die Arten von Inhaltsanfragen, die Adobe Experience Cloud as a Service misst, und über die Abweichungen von den Analytics-Reporting-Tools eines Unternehmens erfahren.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 6212ad20cb427d6b2ccd4c467d571832f923ed2a
+source-git-commit: 13a2aad1fc8080fb0d5060fcc31c9b71f1a833ca
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2682'
 ht-degree: 36%
 
 ---
@@ -81,7 +81,7 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 
 ## Clientseitige Sammlung {#cliendside-collection}
 
-### Echtzeit-Benutzerüberwachung (RUM) für AEM as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
+### Real User Monitoring Service für AEM as a Cloud Service {#real-user-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
@@ -94,7 +94,7 @@ Real User Monitoring (RUM) ist eine Art von Technologie zur Leistungsüberwachun
 
 Die Echtzeit-Benutzerüberwachung (Real User Monitoring, RUM) bietet einen tiefen Einblick in die wichtigsten Leistungsmetriken von der Initiierung der URL bis zur Rückgabe der Anfrage an den Browser. Dies alles hilft den Entwicklern, die Anwendung zu erweitern, um die Verwendung für die Endbenutzer zu vereinfachen.
 
-### Wer kann von RUM Data Monitoring Service profitieren? {#who-can-benefit-from-rum-data-monitoring-service}
+### Wer kann von der Echtzeit-Benutzerüberwachung profitieren? {#who-can-benefit-from-rum-service}
 
 RUM Data Service ist für alle Kunden von Vorteil, unabhängig davon, ob sie Adobe oder ihr eigenes CDN verwenden. Es bietet eine präzisere Darstellung der Benutzerinteraktionen und gewährleistet eine zuverlässige Messung der Website-Interaktion, indem es die Anzahl der Seitenansichten auf Client-Seite widerspiegelt.
 
@@ -104,17 +104,17 @@ Kunden, die ihr eigenes CDN verwenden, können von der vereinfachten Traffic-Ber
 
 Darüber hinaus erhalten alle Kunden tiefe Einblicke in die Seitenleistung, um ihre digitalen Erlebnisse effektiv zu optimieren.
 
-### Erfahren Sie, wie der Datendienst für die Echtzeit-Benutzerüberwachung (RUM) funktioniert {#understand-how-the-rum-data-service-works}
+### Erfahren Sie, wie der Real User Monitoring Service funktioniert {#understand-how-the-rum-service-works}
 
 Adobe Experience Manager verwendet die Echtzeit-Benutzerüberwachung (RUM), um Kunden und Adobe zu helfen, zu verstehen, wie Besucher mit Adobe Experience Manager-gestützten Sites interagieren, Leistungsprobleme zu diagnostizieren und die Effektivität von Experimenten zu messen. RUM bewahrt die Privatsphäre der Besucher durch Stichproben - nur ein kleiner Teil aller Seitenansichten wird überwacht - und einen umsichtigen Ausschluss aller persönlich identifizierbaren Informationen (PII).
 
-### Echtzeit-Benutzerüberwachung (RUM) und Datenschutz {#rum-and-privacy}
+### Real User Monitoring Service und Datenschutz {#rum-service-and-privacy}
 
 Die Echtzeit-Benutzerüberwachung in Adobe Experience Manager dient der Wahrung des Datenschutzes der Besucher und der Minimierung der Datenerfassung. Als Besucher bedeutet dies, dass keine personenbezogenen Daten von der Website erfasst werden, die Sie besuchen, oder der Adobe zur Verfügung gestellt werden.
 
 Als Site-Operator bedeutet dies, dass keine zusätzliche Anmeldung erforderlich ist, um die Überwachung über diese Funktion zu aktivieren. Daher gibt es kein zusätzliches Popup, das die Endbenutzer für die Aktivierung der RUM-Überwachung akzeptieren können.
 
-### RUM-Datenstichproben {#rum-data-sampling}
+### Daten-Sampling für den Real User Monitoring Service {#rum-service-data-sampling}
 
 Herkömmliche Web-Analytics-Lösungen versuchen, Daten zu jedem einzelnen Besucher zu erfassen. Die Echtzeit-Benutzerüberwachung von Adobe Experience Manager erfasst nur Informationen aus einem kleinen Bruchteil der Seitenansichten. Die Echtzeit-Benutzerüberwachung (Real User Monitoring, RUM) ist dazu gedacht, gesampelt und anonymisiert zu werden und nicht als Ersatz für die Analyse. Standardmäßig haben Seiten ein Stichprobenverhältnis von 1:100. Site-Operatoren können diese Zahl nicht so konfigurieren, dass die Sampling-Rate ab heute erhöht oder verringert wird. Um den gesamten Traffic genau zu schätzen, sammeln wir für jede 100 Seitenansichten detaillierte Daten von einer, um Ihnen eine zuverlässige Annäherung des gesamten Traffics zu ermöglichen.&quot;
 
@@ -136,14 +136,14 @@ Die Echtzeit-Benutzerüberwachung (Real User Monitoring, RUM) dient dazu, die Er
 * Die Zielgruppe oder der Link zu einer externen Seite oder Ressource, mit der der Benutzer für den oben genannten Checkpoint interagiert. Beispiel: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
 * Die Leistungsmetriken &quot;Core Web Vitals&quot;(CWV), &quot;Größter Content Paint&quot;(LCP), &quot;Erste Eingabe-Verzögerung&quot;(FID) und &quot;Kumulativer Layout-Umschalt&quot;(CLS), die die Erlebnisqualität des Besuchers beschreiben.
 
-### Einrichten des Datendienstes für die Echtzeit-Benutzerüberwachung (RUM) {#how-to-set-up-them-rum-data-service}
+### Einrichten des Echtzeit-Benutzerüberwachungsdienstes {#how-to-set-up-the-rum-service}
 
 * Wenn Sie Teil unseres Early Adopter-Programms sein möchten, senden Sie bitte eine E-Mail an `aemcs-rum-adopter@adobe.com`zusammen mit Ihrem Domänennamen für die Produktions-, Staging- und Entwicklungsumgebung von Ihrer E-Mail-Adresse aus, die mit Ihrer Adobe ID verknüpft ist. Das Produktteam von Adobe aktiviert dann den Datendienst für die Echtzeit-Benutzerüberwachung (RUM) für Sie.
 * Sobald dies abgeschlossen ist, erstellt das Produktteam von Adobe einen Kanal für die Zusammenarbeit mit Kunden.
 * Das Produktteam von Adobe kontaktiert Sie, indem es Ihnen den Domänenschlüssel und die Daten-Dashboard-URL zur Verfügung stellt, über die Sie die Seitenansichten und [Die wichtigsten Web-Vitals (CWV)](https://web.dev/vitals/) Metriken, die von der clientseitigen RUM (Real User Monitoring)-Sammlung erfasst werden.
 * Anschließend erfahren Sie, wie Sie mit dem Domänenschlüssel auf die Daten-Dashboard-URL zugreifen und die Metriken anzeigen können.
 
-### Verwendung von URL-Daten (Real User Monitoring) {#how-rum-data-is-being-used}
+### Verwendung der Daten des Real User Monitoring Service {#how-rum-service-data-is-being-used}
 
 RUM-Daten sind für folgende Zwecke von Vorteil:
 
