@@ -3,10 +3,10 @@ title: Versionshinweise für Cloud Manager 2024.1.0 in Adobe Experience Manager 
 description: Dies sind die Versionshinweise für Cloud Manager 2024.1.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
-workflow-type: ht
-source-wordcount: '673'
-ht-degree: 100%
+source-git-commit: b81c2bd5c339bce97fe5774572bf1532fc8e04df
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie
 
 ### Bringen Sie Ihren eigenen GitHub mit {#byo-github}
 
-Wenn Sie Ihre Repositorys mit GitHub verwalten, [können Sie jetzt Code direkt in Ihren GitHub-Repositorys über Cloud Manager validieren.](/help/implementing/cloud-manager/managing-code/byo-github.md) Durch diese Integration entfällt die Notwendigkeit, Code ständig mit dem Adobe-Repository zu synchronisieren, und Sie können Pull-Anfragen überprüfen, bevor Sie sie in den Hauptverzweigungen zusammenführen.
+Wenn Sie Ihre Repositorys mit GitHub verwalten, [können Sie jetzt Code direkt in Ihren GitHub-Repositorys über Cloud Manager validieren.](/help/implementing/cloud-manager/managing-code/byo-github.md) Durch diese Integration entfällt die Notwendigkeit, Code konsistent mit dem Adobe-Repository zu synchronisieren, und Sie können Pull-Anforderungen überprüfen, bevor Sie sie in die Hauptverzweigungen zusammenführen. Diese Funktion ist nur für öffentliche GitHub-Anwendungen verfügbar. Unterstützung für selbstgehostetes GitHub ist nicht verfügbar.
 
 Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an `Grp-CloudManager_BYOG@adobe.com`.
 
