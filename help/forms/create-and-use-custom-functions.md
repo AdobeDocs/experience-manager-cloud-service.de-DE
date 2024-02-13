@@ -5,9 +5,9 @@ keywords: Fügen Sie eine benutzerdefinierte Funktion hinzu, verwenden Sie eine 
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 94a290964a92f8c6ed353d9c77f3dd3b8a5598a4
+source-git-commit: 28020b05e4aaaa3f066943e0504f05e307c7020b
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '763'
 ht-degree: 17%
 
 ---
@@ -64,11 +64,11 @@ Sie können eine benutzerdefinierte Funktion mit oder ohne jsdoc-Kommentare erst
             // code to be executed
         }
 ```
+<!--
 
-* **Pfeilfunktion mit obligatorischem jsdoc-Kommentar**
+* **Arrow function with mandatory jsdoc comment**
 
-Beispiele für die Erstellung von Pfeilfunktionen:
-
+Some of the examples to create Arrow functions are:
 ```javascript
     /**
     * test function
@@ -82,7 +82,6 @@ Beispiele für die Erstellung von Pfeilfunktionen:
     };
 ```
 
-<!-- 
     * @param {string=} b another parameter description
       /** */
     testFunction1=(a) => (return a)
