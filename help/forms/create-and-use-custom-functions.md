@@ -5,10 +5,10 @@ keywords: Fügen Sie eine benutzerdefinierte Funktion hinzu, verwenden Sie eine 
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 28020b05e4aaaa3f066943e0504f05e307c7020b
+source-git-commit: 1fb7fece71eec28219ce36c72d628867a222b618
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 17%
+source-wordcount: '779'
+ht-degree: 16%
 
 ---
 
@@ -43,9 +43,9 @@ Im obigen Beispiel wird, wenn der Benutzer versucht, das Formular zu senden, die
 
 ### Verwendung benutzerdefinierter Funktionen {#uses-of-custom-function}
 
-Die Verwendung benutzerdefinierter Funktionen in Adaptive Forms bietet unter anderem folgende Vorteile:
+Die Verwendung benutzerdefinierter Funktionen in Adaptive Forms bietet folgende Vorteile:
 
-* **Datenverarbeitung**: Benutzerdefinierte Funktionen bearbeiten und verarbeiten die in die Formularfelder eingegebenen Daten.
+* **Datenverarbeitung**: Benutzerdefinierte Funktionen bearbeiten und verarbeiten Daten, die in die Formularfelder eingegeben werden.
 * **Datenvalidierung**: Benutzerdefinierte Funktionen ermöglichen es Ihnen, benutzerdefinierte Prüfungen von Formulareingaben durchzuführen und bestimmte Fehlermeldungen bereitzustellen.
 * **Dynamisches Verhalten**: Benutzerdefinierte Funktionen ermöglichen es Ihnen, das dynamische Verhalten Ihrer Formulare anhand bestimmter Bedingungen zu steuern. Beispielsweise können Sie Felder ein-/ausblenden, Feldwerte ändern oder die Formularlogik dynamisch anpassen.
 * **Integration**: Sie können benutzerdefinierte Funktionen zur Integration mit externen APIs oder Diensten verwenden. Dies hilft beim Abrufen von Daten aus externen Quellen, beim Senden von Daten an externe REST-Endpunkte oder beim Ausführen benutzerdefinierter Aktionen basierend auf externen Ereignissen.
@@ -90,7 +90,7 @@ Some of the examples to create Arrow functions are:
 
 * **Funktionsausdruck mit obligatorischem jsdoc-Kommentar**
 
-Erstellen Sie benutzerdefinierte Funktionen in den folgenden Formaten, um sie im Regeleditor eines adaptiven Formulars aufzulisten. Zum Beispiel:
+Um benutzerdefinierte Funktionen im Regeleditor eines adaptiven Formulars aufzulisten, erstellen Sie benutzerdefinierte Funktionen im folgenden Format:
 
 ```javascript
     /**
@@ -118,7 +118,7 @@ The functions that are not supported in the custom function list are:
 
 >[!NOTE]
 >
-> Sie können die `error.log` -Datei, falls Fehler wie benutzerdefinierte Funktionen im Regeleditor nicht aufgeführt werden.
+> Sie können die `error.log` -Datei für Fehler, z. B. für benutzerdefinierte Funktionen, die nicht im Regeleditor aufgelistet werden.
 
 <!--The `error.log` file also displays the methods and parameters that are not supported for custom functions. -->
 
@@ -136,13 +136,13 @@ Schritte zum Erstellen benutzerdefinierter Funktionen:
 Sie können benutzerdefinierte Funktionen hinzufügen, indem Sie die Client-Bibliothek hinzufügen. Um eine Client-Bibliothek zu erstellen, führen Sie die folgenden Schritte aus:
 
 1. [Klonen Sie Ihr AEM Forms as a Cloud Service-Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git).
-1. Erstellen Sie einen Ordner unter dem Ordner `[AEM Forms as a Cloud Service repository folder]/apps/`. Erstellen Sie beispielsweise einen Ordner mit dem Namen `experience-league`
-1. Navigieren Sie zu `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` und erstellen Sie einen `ClientLibraryFolder` als `es6clientlibs`.
-1. Hinzufügen einer Eigenschaft `categories`mit einem Zeichenfolgenwert als `es6customfunctions` der `es6clientlibs` Ordner.
+1. Erstellen Sie einen Ordner unter dem Ordner `[AEM Forms as a Cloud Service repository folder]/apps/`. Erstellen Sie beispielsweise einen Ordner mit dem Namen `experience-league`.
+1. Navigieren Sie zu `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` und erstellen Sie eine `ClientLibraryFolder`. Erstellen Sie beispielsweise einen Client-Bibliotheksordner als `es6clientlibs`.
+1. Hinzufügen einer Eigenschaft `categories` mit einem Zeichenfolgentyp -Wert. Weisen Sie beispielsweise den Wert zu `es6customfunctions` der `categories` -Eigenschaft für `es6clientlibs` Ordner.
 
    >[!NOTE]
    >
-   >`es6customfunctions` ist eine Beispielkategorie. Sie können einen beliebigen Namen für die Kategorie auswählen.
+   > Sie können einen beliebigen Namen für `client library folder` und `categories` -Eigenschaft.
 
 1. Erstellen Sie einen Ordner mit dem Namen `js`.
 1. Navigieren Sie zum Ordner `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js`.
@@ -150,7 +150,7 @@ Sie können benutzerdefinierte Funktionen hinzufügen, indem Sie die Client-Bibl
 
    >[!NOTE]
    >
-   >* Wenn die JavaScript-Datei mit dem Code für benutzerdefinierte Funktionen einen Fehler enthält, werden die benutzerdefinierten Funktionen nicht im Regeleditor eines adaptiven Formulars aufgeführt. Sie können auch die `error.log` -Datei für den Fehler.
+   > Wenn die JavaScript-Datei mit dem Code für benutzerdefinierte Funktionen einen Fehler enthält, werden die benutzerdefinierten Funktionen nicht im Regeleditor eines adaptiven Formulars aufgeführt. Sie können auch die `error.log` -Datei für den Fehler.
 
    <!-- 
     >* AEM Adaptive Form supports the caching of custom functions. If the JavaScript is modified, the caching becomes invalidated, and it is parsed. You can see a message as `Fetched following custom functions list from cache` in the `error.log` file.  -->
@@ -179,18 +179,22 @@ Sobald die Pipeline erfolgreich ausgeführt wurde, wird die in der Client-Biblio
 
 ### Clientbibliothek in einem adaptiven Formular hinzufügen{#use-custom-function}
 
-Nachdem Sie Ihre Client-Bibliothek hinzugefügt haben, verwenden Sie sie in Ihrem adaptiven Formular. Damit können Sie Ihre [benutzerdefinierte Funktion als Regel im Formular](/help/forms/rule-editor.md#custom-functions). So fügen Sie die Client-Bibliothek in Ihrem adaptiven Formular hinzu:
+Nachdem Sie Ihre Client-Bibliothek in Ihrer Forms CS-Umgebung bereitgestellt haben, verwenden Sie die zugehörigen Funktionen in Ihrem adaptiven Formular. Hinzufügen der Client-Bibliothek zum adaptiven Formular
 
-1. Öffnen Sie das Formular im Bearbeitungsmodus.
-Um ein Formular im Bearbeitungsmodus zu öffnen, wählen Sie ein Formular aus und wählen Sie **[!UICONTROL Öffnen]**.
-1. Wählen Sie im Bearbeitungsmodus eine Komponente aus und wählen Sie dann ![Feldebene](assets/select_parent_icon.svg) > **[!UICONTROL Container für adaptive Formulare]** und wählen Sie ![cmppr](assets/configure-icon.svg).
-1. Fügen Sie in der Seitenleiste unter „Name der Client-Bibliothek“ Ihre Client-Bibliothek hinzu. (In diesem Beispiel wäre das `es6customfunctions`.)
+1. Öffnen Sie das Formular im Bearbeitungsmodus. Um ein Formular im Bearbeitungsmodus zu öffnen, wählen Sie ein Formular aus und wählen Sie **[!UICONTROL Bearbeiten]**.
+1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
+1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
+1. Öffnen Sie die **[!UICONTROL Allgemein]** und wählen Sie den Namen der **[!UICONTROL Client-Bibliothekskategorie]** aus der Dropdown-Liste aus (in diesem Fall wählen Sie `es6customfunctions`).
 
    ![Hinzufügen der benutzerdefinierten Funktion zur Client-Bibliothek](/help/forms/assets/clientlib-custom-function.png)
 
-Erstellen Sie eine Regel, um die benutzerdefinierte Funktion im Regeleditor zu verwenden.
+1. Klicks **[!UICONTROL Fertig]** .
+
+Jetzt können Sie eine Regel erstellen, um benutzerdefinierte Funktionen im Regeleditor zu verwenden.
 
 <!--
+
+Create a rule to use custom function in the rule editor. 
 
 ### Support for the optional parameters in custom functions{#support-for-optional-parameter}
 
