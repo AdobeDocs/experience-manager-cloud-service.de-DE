@@ -1,10 +1,10 @@
 ---
 title: Inhaltsmodellierung für AEM Authoring mit Edge Delivery Services-Projekten
 description: Erfahren Sie, wie die Inhaltsmodellierung für AEM Authoring mit Edge Delivery Services-Projekten funktioniert und wie Sie Ihre eigenen Inhalte modellieren.
-source-git-commit: 8f3c7524ae8ee642a9aee5989e03e6584a664eba
+source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
 workflow-type: tm+mt
-source-wordcount: '1940'
-ht-degree: 1%
+source-wordcount: '2097'
+ht-degree: 0%
 
 ---
 
@@ -109,16 +109,19 @@ Für jeden Baustein hat der Entwickler folgende Möglichkeiten:
 
 * Muss die `core/franklin/components/block/v1/block` Ressourcentyp, die generische Implementierung der Blocklogik in AEM.
 * Muss den Blocknamen definieren, der in der Tabellenüberschrift des Blocks wiedergegeben wird.
+   * Der Blockname wird verwendet, um den richtigen Stil und das richtige Skript zum Dekorieren des Blocks abzurufen.
 * Kann eine [Modell-ID.](/help/implementing/universal-editor/field-types.md#model-structure)
+   * Die Modell-ID ist ein Verweis auf das Modell der Komponente, das die Felder definiert, die dem Autor in der Eigenschaftenleiste zur Verfügung stehen.
 * Kann eine [Filter-ID.](/help/implementing/universal-editor/customizing.md#filtering-components)
+   * Die Filter-ID ist ein Verweis auf den Filter der Komponente, der es ermöglicht, das Authoring-Verhalten zu ändern, z. B. indem begrenzt wird, welche untergeordneten Elemente zum Block oder Abschnitt hinzugefügt werden können oder welche RTE-Funktionen aktiviert sind.
 
-Alle diese Informationen werden in AEM gespeichert, wenn ein Block zu einer Seite hinzugefügt wird.
+Alle diese Informationen werden in AEM gespeichert, wenn ein Block zu einer Seite hinzugefügt wird. Wenn der Ressourcentyp oder der Blockname fehlt, wird der Block nicht auf der Seite gerendert.
 
 >[!WARNING]
 >
->Es ist zwar möglich, benutzerdefinierte AEM-Komponenten zu implementieren. Die Komponenten für die von AEM bereitgestellten Edge Delivery Services sind ausreichend und bieten bestimmte Schutzschienen, um die Entwicklung zu erleichtern.
+>Es ist zwar möglich, benutzerdefinierte AEM-Komponenten zu implementieren, ist jedoch weder erforderlich noch zu empfehlen. Die Komponenten für die von AEM bereitgestellten Edge Delivery Services sind ausreichend und bieten bestimmte Schutzschienen, um die Entwicklung zu erleichtern.
 >
->Aus diesem Grund wird von Adobe die Verwendung benutzerdefinierter AEM nicht empfohlen.
+>Die von AEM bereitgestellten Komponenten rendern ein Markup, das von [helix-html2md](https://github.com/adobe/helix-html2md) beim Veröffentlichen in Edge Delivery Services und durch [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) beim Laden einer Seite im Universal Editor. Das Markup ist der stabile Vertrag zwischen AEM und den anderen Teilen des Systems und ermöglicht keine Anpassungen. Aus diesem Grund dürfen Projekte die Komponenten nicht ändern und keine benutzerdefinierten Komponenten verwenden.
 
 ### Blockstruktur {#block-structure}
 
@@ -130,7 +133,9 @@ Im einfachsten Formular rendert ein Block jede Eigenschaft in einer einzelnen Ze
 
 Im folgenden Beispiel wird das Bild zuerst im Modell und dann in der Textzeile definiert. Sie werden also mit dem Bild zuerst und Text danach gerendert.
 
-##### Daten {#data-simple}
+>[!BEGINTABS]
+
+>[!TAB Daten]
 
 ```json
 {
@@ -142,7 +147,7 @@ Im folgenden Beispiel wird das Bild zuerst im Modell und dann in der Textzeile d
 }
 ```
 
-##### Markup {#markup-simple}
+>[!TAB Markup]
 
 ```html
 <div class="hero">
@@ -161,6 +166,20 @@ Im folgenden Beispiel wird das Bild zuerst im Modell und dann in der Textzeile d
 </div>
 ```
 
+>[!TAB Verzeichnis]
+
+```text
++---------------------------------------------+
+| Hero                                        |
++=============================================+
+| ![Helix - a shape like a corkscrew][image0] |
++---------------------------------------------+
+| # Welcome to AEM                            |
++---------------------------------------------+
+```
+
+>[!ENDTABS]
+
 Sie werden feststellen, dass einige Werttypen im Markup die Ableitung von Semantik zulassen und Eigenschaften in einzelnen Zellen kombiniert werden. Dieses Verhalten wird im Abschnitt beschrieben [Geben Sie Inference ein.](#type-inference)
 
 #### Schlüssel-Wert-Block {#key-value}
@@ -171,7 +190,9 @@ In anderen Fällen wird der Block jedoch als eine Schlüssel-Wert-Paar-ähnliche
 
 Ein Beispiel hierfür ist die [Abschnitt-Metadaten.](/help/edge/developer/markup-sections-blocks.md#sections) In diesem Anwendungsfall kann der Block so konfiguriert werden, dass er als Schlüssel-Wert-Paar-Tabelle dargestellt wird. Siehe Abschnitt . [Abschnitte und Abschnittsmetadaten](#sections-metadata) für weitere Informationen.
 
-##### Daten {#data-key-value}
+>[!BEGINTABS]
+
+>[!TAB Daten]
 
 ```json
 {
@@ -184,7 +205,7 @@ Ein Beispiel hierfür ist die [Abschnitt-Metadaten.](/help/edge/developer/markup
 }
 ```
 
-##### Markup {#markup-key-value}
+>[!TAB Markup]
 
 ```html
 <div class="featured-articles">
@@ -203,13 +224,31 @@ Ein Beispiel hierfür ist die [Abschnitt-Metadaten.](/help/edge/developer/markup
 </div>
 ```
 
+>[!TAB Verzeichnis]
+
+```text
++-----------------------------------------------------------------------+
+| Featured Articles                                                     |
++=======================================================================+
+| source   | [/content/site/articles.json](/content/site/articles.json) |
++-----------------------------------------------------------------------+
+| keywords | Developer,Courses                                          |
++-----------------------------------------------------------------------+
+| limit    | 4                                                          |
++-----------------------------------------------------------------------+
+```
+
+>[!ENDTABS]
+
 #### Container-Blöcke {#container}
 
 Beide vorherigen Strukturen haben eine einzige Dimension: die Liste der Eigenschaften. Container-Blöcke ermöglichen das Hinzufügen von untergeordneten Elementen (normalerweise vom gleichen Typ oder Modell) und sind daher zweidimensional. Diese Blöcke unterstützen weiterhin ihre eigenen Eigenschaften, die zuerst als Zeilen mit einer einzelnen Spalte gerendert werden. Sie ermöglichen jedoch auch das Hinzufügen von untergeordneten Elementen, für die jedes Element als Zeile und jede Eigenschaft als Spalte in dieser Zeile gerendert wird.
 
 Im folgenden Beispiel akzeptiert ein Block eine Liste verknüpfter Symbole als untergeordnete Elemente, wobei jedes verknüpfte Symbol über ein Bild und einen Link verfügt. Beachten Sie die [Filter-ID](/help/implementing/universal-editor/customizing.md#filtering-components) in den Daten des Blocks eingestellt werden, um auf die Filterkonfiguration zu verweisen.
 
-##### Daten {#data-container}
+>[!BEGINTABS]
+
+>[!TAB Daten]
 
 ```json
 {
@@ -232,7 +271,7 @@ Im folgenden Beispiel akzeptiert ein Block eine Liste verknüpfter Symbole als u
 }
 ```
 
-##### Markup {#markup-container}
+>[!TAB Markup]
 
 ```html
 <div class="our-partners">
@@ -263,6 +302,22 @@ Im folgenden Beispiel akzeptiert ein Block eine Liste verknüpfter Symbole als u
   </div>
 </div>
 ```
+
+>[!TAB Verzeichnis]
+
+```text
++------------------------------------------------------------ +
+| Our Partners                                                |
++=============================================================+
+| Our community of partners is ...                            |
++-------------------------------------------------------------+
+| ![Icon of Foo][image0] | [https://foo.com](https://foo.com) |
++-------------------------------------------------------------+
+| ![Icon of Bar][image1] | [https://bar.com](https://bar.com) |
++-------------------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ### Erstellen Semantischer Inhaltsmodelle für Blöcke {#creating-content-models}
 
@@ -300,7 +355,9 @@ Beim Ausblenden von Feldern werden mehrere Feldwerte basierend auf einer Namensk
 
 ##### Bilder {#image-collapse}
 
-###### Daten {#data-image}
+>[!BEGINTABS]
+
+>[!TAB Daten]
 
 ```json
 {
@@ -309,7 +366,7 @@ Beim Ausblenden von Feldern werden mehrere Feldwerte basierend auf einer Namensk
 }
 ```
 
-###### Markup {#markup-image}
+>[!TAB Markup]
 
 ```html
 <picture>
@@ -317,9 +374,19 @@ Beim Ausblenden von Feldern werden mehrere Feldwerte basierend auf einer Namensk
 </picture>
 ```
 
+>[!TAB Verzeichnis]
+
+```text
+![A red car on a road][image0]
+```
+
+>[!ENDTABS]
+
 ##### Links und Schaltflächen {#links-buttons-collapse}
 
-###### Daten {#data-links-buttons}
+>[!BEGINTABS]
+
+>[!TAB Daten]
 
 ```json
 {
@@ -330,7 +397,7 @@ Beim Ausblenden von Feldern werden mehrere Feldwerte basierend auf einer Namensk
 }
 ```
 
-###### Markup {#markup-links-buttons}
+>[!TAB Markup]
 
 Nein `linkType`oder `linkType=default`
 
@@ -354,9 +421,21 @@ Nein `linkType`oder `linkType=default`
 </em>
 ```
 
+>[!TAB Verzeichnis]
+
+```text
+[adobe.com](https://www.adobe.com "Navigate to adobe.com")
+**[adobe.com](https://www.adobe.com "Navigate to adobe.com")**
+_[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
+```
+
+>[!ENDTABS]
+
 ##### Überschriften {#headings-collapse}
 
-###### Daten {#data-headings}
+>[!BEGINTABS]
+
+>[!TAB Daten]
 
 ```json
 {
@@ -365,19 +444,31 @@ Nein `linkType`oder `linkType=default`
 }
 ```
 
-###### Markup {#markup-headings}
+>[!TAB Markup]
 
 ```html
 <h2>Getting started</h2>
 ```
 
+>[!TAB Verzeichnis]
+
+```text
+## Getting started
+```
+
+>[!ENDTABS]
+
 #### Elementgruppierung {#element-grouping}
 
 while [Feldausfall](#field-collapse) Bei der Elementgruppierung geht es darum, mehrere Eigenschaften zu einem einzigen semantischen Element zu kombinieren. Dabei geht es darum, mehrere semantische Elemente zu einer einzigen Zelle zu verketten. Dies ist besonders hilfreich in Anwendungsfällen, in denen der Autor in der Art und Anzahl der Elemente, die er erstellen kann, eingeschränkt werden sollte.
 
-Beispielsweise sollte der Autor nur einen Untertitel, einen Titel und eine einzelne Absatzbeschreibung sowie maximal zwei Aktionsaufruf-Schaltflächen erstellen. Wenn Sie diese Elemente gruppieren, erhalten Sie ein semantisches Markup, das ohne weitere Maßnahmen formatiert werden kann.
+Beispielsweise kann eine Teaser-Komponente dem Autor erlauben, nur einen Untertitel, einen Titel und eine einzelne Absatzbeschreibung sowie maximal zwei Aktionsaufruf-Schaltflächen zu erstellen. Wenn Sie diese Elemente gruppieren, erhalten Sie ein semantisches Markup, das ohne weitere Maßnahmen formatiert werden kann.
 
-##### Daten {#data-grouping}
+Die Elementgruppierung verwendet eine Benennungsregel, bei der der Gruppenname durch einen Unterstrich von jeder Eigenschaft in der Gruppe getrennt wird. Das Reduzieren der Eigenschaften in einer Gruppe funktioniert wie zuvor beschrieben.
+
+>[!BEGINTABS]
+
+>[!TAB Daten]
 
 ```json
 {
@@ -397,7 +488,7 @@ Beispielsweise sollte der Autor nur einen Untertitel, einen Titel und eine einze
 }
 ```
 
-##### Markup {#markup-grouping}
+>[!TAB Markup]
 
 ```html
 <div class="teaser">
@@ -419,6 +510,24 @@ Beispielsweise sollte der Autor nur einen Untertitel, einen Titel und eine einze
   </div>
 </div>
 ```
+
+>[!TAB Verzeichnis]
+
+```text
++-------------------------------------------------+
+| Teaser                                          |
++=================================================+
+| ![A group of people sitting on a stage][image0] |
++-------------------------------------------------+
+| Adobe Experience Cloud                          |
+| ## Welcome to AEM                               |
+| Join us in this ask me everything session ...   |
+| [More Details](https://link.to/more-details)    |
+| [RSVP](https://link.to/sign-up)                 |
++-------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ## Abschnitte und Abschnittsmetadaten {#sections-metadata}
 
@@ -500,18 +609,17 @@ Es ist möglich, Metadaten anhand von Pfaden oder Pfadmustern in AEM as a Cloud 
 
 Um eine solche Tabelle zu erstellen, erstellen Sie eine Seite und verwenden Sie die Metadatenvorlage in der Sites-Konsole.
 
->[!NOTE]
->
->Stellen Sie beim Bearbeiten der Metadaten-Tabelle sicher, dass Sie zu **Vorschau** -Modus, da die Bearbeitung auf der Seite selbst erfolgt, nicht im Editor.
-
-Definieren Sie in den Seiteneigenschaften des Arbeitsblatts die benötigten Metadatenfelder zusammen mit der URL. Fügen Sie dann Metadaten pro Seitenpfad oder Seitenpfadmuster hinzu, wobei das URL-Feld mit den zugeordneten, öffentlichen Pfaden und nicht mit dem Inhaltspfad in AEM verknüpft ist.
+Definieren Sie in den Seiteneigenschaften des Arbeitsblatts die benötigten Metadatenfelder zusammen mit der URL. Fügen Sie dann Metadaten pro Seitenpfad oder Seitenpfadmuster hinzu.
 
 Stellen Sie sicher, dass das Arbeitsblatt Ihrer Pfadzuordnung hinzugefügt wird, bevor Sie es veröffentlichen.
 
-```text
-mappings:
-  - /content/site/:/
-  - /content/site/metadata:/metadata.json
+```json
+{
+  "mappings": [
+    "/content/site/:/",
+    "/content/site/metadata:/metadata.json"
+  ]
+}
 ```
 
 ### Seiteneigenschaften {#page-properties}
