@@ -3,10 +3,10 @@ title: Validieren und Debuggen mit den Dispatcher Tools
 description: Erfahren Sie mehr über die lokale Validierung, das Debugging, die Dateistruktur mit flexiblem Modus und die Migration vom alten Modus zum flexiblen Modus.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 2cb57347856568da979b34832ce12cce295841dd
 workflow-type: tm+mt
-source-wordcount: '2971'
-ht-degree: 100%
+source-wordcount: '3028'
+ht-degree: 98%
 
 ---
 
@@ -546,6 +546,25 @@ Cloud manager validator 2.0.43
 2022/07/04 09:53:55 No issues found
 INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
 INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
+```
+
+### Benutzerdefinierte Umgebungsvariablen einfügen {#environment-variables}
+
+Benutzerdefinierte Umgebungsvariablen können mit dem Dispatcher-SDK verwendet werden, indem sie in einer separaten Datei festgelegt und im `ENV_FILE` Umgebungsvariable vor dem Start des lokalen Dispatchers.
+
+Eine Datei mit benutzerdefinierten Umgebungsvariablen würde wie folgt aussehen:
+
+```
+COMMERCE_ENDPOINT=commerce-host
+AEM_HTTP_PROXY_HOST=host.docker.internal
+AEM_HTTP_PROXY_PORT=8000
+```
+
+Sie kann im lokalen Dispatcher-SDK mit den folgenden Befehlen verwendet werden:
+
+```
+export ENV_FILE=custom.env
+./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080
 ```
 
 ## Verschiedene Dispatcher-Konfigurationen pro Umgebung {#different-dispatcher-configurations-per-environment}
