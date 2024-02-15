@@ -4,9 +4,9 @@ description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 03293f49e583d8b40bafd95bbc89c9ba5c024da8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '937'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -94,10 +94,10 @@ Mit Assets Essentials können Sie jetzt eine Blockierungsliste mit Wörtern fest
 
   Sie können von Ihrer offiziellen E-Mail-ID aus an `aem-forms-early-adopter-program@adobe.com` schreiben, um dem Early-Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern.
 
-* **[Sie können den Datendienst für die Echtzeit-Benutzerüberwachung (RUM) nutzen](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** , um die clientseitige Erfassung für AEM as a Cloud Service zu aktivieren.
-Der Datendienst Real User Monitoring (RUM) bietet eine präzisere Darstellung der Benutzerinteraktionen und stellt so eine zuverlässige Messung der Website-Interaktionen sicher. Dies ist eine großartige Gelegenheit, erweiterte Einblicke in Ihre Seitenleistung zu erhalten. Dies ist zwar für Kunden von Vorteil, die entweder Adobe-verwaltetes CDN oder nicht-Adobe-verwaltetes CDN verwenden. Darüber hinaus kann für Kunden, die ein nicht von Adobe verwaltetes CDN verwenden, die automatisierte Traffic-Berichterstellung jetzt für sie aktiviert werden, sodass die Freigabe von Traffic-Berichten für Adobe entfällt.
+* **[Sie können den Datendienst Real User Monitoring (RUM) nutzen](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**, um die Client-seitige Sammlung für AEM as a Cloud Service zu aktivieren.
+Der Datendienst Real User Monitoring (RUM) bietet eine präzisere Darstellung der Benutzerinteraktionen und stellt so eine zuverlässige Messung der Website-Interaktionen sicher. Dies ist eine großartige Gelegenheit, erweiterte Einblicke in Ihre Seitenleistung zu erhalten. Dies ist nützlich für Kundinnen und Kunden, die entweder ein von Adobe verwaltetes CDN oder ein nicht von Adobe verwaltetes CDN verwenden. Für diejenigen, die ein nicht von Adobe verwaltetes CDN verwenden, kann jetzt außerdem die automatisierte Traffic-Berichterstellung aktiviert werden, sodass keine Traffic-Berichte mehr für Adobe freigegeben werden müssen.
 
-  Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte eine E-Mail an `aemcs-rum-adopter@adobe.com`zusammen mit Ihrem Domänennamen für jede Umgebung, für die Sie RUM über Ihre mit Ihrer Adobe ID verknüpfte E-Mail-Adresse aktivieren möchten. Das Produktteam von Adobe aktiviert dann den Datendienst für die Echtzeit-Benutzerüberwachung (RUM) für Sie.
+  Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an `aemcs-rum-adopter@adobe.com`. Geben Sie in der E-Mail den Domain-Namen für jede Umgebung an, für die Sie RUM aktivieren möchten. Das Produkt-Team von Adobe aktiviert dann den Datendienst Real User Monitoring (RUM) für Sie.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
 
