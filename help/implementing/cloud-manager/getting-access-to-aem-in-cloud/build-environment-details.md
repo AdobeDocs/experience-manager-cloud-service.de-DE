@@ -2,10 +2,10 @@
 title: Build-Umgebung
 description: Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie sie den Code erstellt und testet.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 30f2eaf4d2edba13e875cd1bfe767e83a2b7f1a5
+source-git-commit: cb4c9711fc9c57546244b5b362027c255e5abc35
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 100%
+source-wordcount: '1023'
+ht-degree: 96%
 
 ---
 
@@ -19,10 +19,10 @@ Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie s
 Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellungsumgebung.
 
 * Die Build-Umgebung ist Linux-basiert und von Ubuntu 22.04 abgeleitet.
-* Apache Maven 3.8.8 ist installiert.
+* Apache Maven 3.9.4 ist installiert.
    * Adobe empfiehlt Benutzenden, [ihre Maven-Repositorys zu aktualisieren, um HTTPS anstelle von HTTP zu verwenden.](#https-maven)
-* Die installierten Java-Versionen sind Oracle JDK 8u371 und Oracle JDK 11.0.20.
-* Standardmäßig wird die Umgebungsvariable `JAVA_HOME` auf `/usr/lib/jvm/jdk1.8.0_371` festgelegt, was Oracle JDK 8u371 enthält. Weitere Einzelheiten finden Sie im Abschnitt [Alternative JDK-Version für die Maven-Ausführung](#alternate-maven-jdk-version).
+* Die installierten Java-Versionen sind Oracle JDK 8u401 und Oracle JDK 11.0.22.
+* Standardmäßig wird die Variable `JAVA_HOME` Umgebungsvariable auf `/usr/lib/jvm/jdk1.8.0_401` enthält Oracle JDK 8u401. Weitere Einzelheiten finden Sie im Abschnitt [Alternative JDK-Version für die Maven-Ausführung](#alternate-maven-jdk-version).
 * Es sind einige zusätzliche erforderliche Systempakete installiert.
    * `bzip2`
    * `unzip`
@@ -120,7 +120,7 @@ Diese Tabelle verweist auf die Produktversionsnummern. Java-Build-Nummern oder -
 
 Es ist auch möglich, Java 8 oder Java 11 als JDK für die gesamte Maven-Ausführung auszuwählen. Im Gegensatz zu den Toolchain-Optionen ändert dies das für alle Plug-ins verwendete JDK, es sei denn, die Toolchain-Konfiguration ist ebenfalls festgelegt. In diesem Fall wird die Toolchain-Konfiguration weiterhin für Toolchain-fähige Maven-Plug-ins angewendet. Daher funktioniert in diesem Fall das Überprüfen und Erzwingen der Java-Version mit dem [Apache Maven Enforcer-Plug-in](https://maven.apache.org/enforcer/maven-enforcer-plugin/).
 
-Erstellen Sie dazu eine Datei mit dem Namen `.cloudmanager/java-version` in der von der Pipeline verwendeten Git-Repository-Verzweigung. Diese Datei kann entweder den Inhalt 11 oder 8 enthalten. Alle anderen Werte werden ignoriert. Wenn „11“ angegeben ist, wird Oracle 11 verwendet, und die Umgebungsvariable `JAVA_HOME` wird auf `/usr/lib/jvm/jdk-11.0.2` festgelegt. Wenn „8“ angegeben ist, wird Oracle 8 verwendet, und die Umgebungsvariable `JAVA_HOME` wird auf `/usr/lib/jvm/jdk1.8.0_202` festgelegt.
+Erstellen Sie dazu eine Datei mit dem Namen `.cloudmanager/java-version` in der von der Pipeline verwendeten Git-Repository-Verzweigung. Diese Datei kann entweder den Inhalt 11 oder 8 enthalten. Alle anderen Werte werden ignoriert. Wenn „11“ angegeben ist, wird Oracle 11 verwendet, und die Umgebungsvariable `JAVA_HOME` wird auf `/usr/lib/jvm/jdk-11.0.22` festgelegt. Wenn „8“ angegeben ist, wird Oracle 8 verwendet, und die Umgebungsvariable `JAVA_HOME` wird auf `/usr/lib/jvm/jdk1.8.0_401` festgelegt.
 
 ## Umgebungsvariablen {#environment-variables}
 
@@ -147,44 +147,7 @@ Um dies zu unterstützen, fügt Cloud Manager diese Standard-Umgebungsvariablen 
 
 Der Build-Prozess kann von bestimmten Konfigurationsvariablen abhängen, die nicht im Git-Repository platziert werden können oder zwischen Pipeline-Ausführungen mit derselben Verzweigung variieren müssen.
 
-Cloud Manager ermöglicht die Konfiguration dieser Variablen über die Cloud Manager-API oder die Cloud Manager-CLI individuell für die Pipelines. Variablen können entweder als reiner Test oder mit Data-at-Rest-Verschlüsselung gespeichert werden. In beiden Fällen werden Variablen innerhalb der Build-Umgebung als Umgebungsvariable bereitgestellt, die in der `pom.xml`-Datei oder anderen Build-Skripten referenziert werden kann.
-
-Dieser CLI-Befehl legt eine Variable fest.
-
-```shell
-$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test
-```
-
-Dieser Befehl listet Variablen auf.
-
-```shell
-$ aio cloudmanager:list-pipeline-variables PIPELINEID
-```
-
-Variablennamen müssen die folgenden Konventionen einhalten.
-
-* Variablen dürfen nur alphanumerische Zeichen und den Unterstrich (`_`) enthalten.
-* Die Namen sollten in Großbuchstaben geschrieben sein.
-* Pro Pipeline sind maximal 200 Variablen zulässig.
-* Jeder Name darf maximal 100 Zeichen lang sein.
-* Jede `string`-Variable darf höchstens 2047 Zeichen enthalten.
-* Jede Variable des Typs `secretString` darf maximal 500 Zeichen enthalten.
-
-Bei Verwendung in einer Maven-`pom.xml`-Datei ist es in der Regel hilfreich, diese Variablen Maven-Eigenschaften mithilfe einer ähnlichen Syntax wie dieser zuzuordnen.
-
-```xml
-        <profile>
-            <id>cmBuild</id>
-            <activation>
-                <property>
-                    <name>env.CM_BUILD</name>
-                </property>
-            </activation>
-            <properties>
-                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
-            </properties>
-        </profile>
-```
+Lesen Sie das Dokument . [Konfigurieren von Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) für weitere Informationen
 
 ## Installieren zusätzlicher Systempakete {#installing-additional-system-packages}
 
