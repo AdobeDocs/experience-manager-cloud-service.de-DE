@@ -6,7 +6,7 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 3e1e1eba822bf3156ef563b88269cdef2298e951
+source-git-commit: 94519d3c7d2f927f046628d9ce057209556e847d
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 4%
@@ -35,7 +35,7 @@ AEM Forms as a Cloud Service bietet einen OOTB-Connector zum Verbinden und Sende
 
 Um eine Verbindung zwischen Workfront Fusion und AEM Forms herzustellen, ist Folgendes erforderlich:
 
-* Eine gültige [Lizenz für Workfront und Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* Eine gültige [Workfront- und Workfront Fusion-Lizenz](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
 * Ein AEM Benutzer mit Zugriffsrechten [Entwicklerkonsole](https://my.cloudmanager.adobe.com/) nach [Dienstanmeldeinformationen abrufen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=de).
 
 ## Integrieren von AEM Forms mit Adobe Workfront Fusion
@@ -135,7 +135,7 @@ So fügen Sie eine Verbindung hinzu:
 
 ### 2. Konfigurieren der Sendeaktion eines adaptiven Formulars für Workfront Fusion
 
-Sie können die Übermittlungsaktion für Workfont Fusion konfigurieren für:
+Sie können die Sendeaktion für Workfront Fusion konfigurieren für:
 * [Neue adaptive Forms](#new-af-submit-action)
 * [Vorhandene adaptive Formulare](#existing-af-submit-action)
 
