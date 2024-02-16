@@ -2,10 +2,10 @@
 title: Zugreifen auf und Verwalten von Protokollen
 description: Erfahren Sie, wie Sie auf Protokolle zugreifen und diese verwalten können, um Ihren Entwicklungsprozess in AEM as a Cloud Service zu unterstützen.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 178af74512e74ff401588b68c73fa4661acec704
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 97%
+source-wordcount: '346'
+ht-degree: 93%
 
 ---
 
@@ -43,8 +43,6 @@ Gehen Sie wie folgt vor, um Protokolle herunterzuladen:
 Sie können Ihre Protokolle auch über die Seite **Umgebungen** aufrufen.
 
 ![Protokolle aus dem Bildschirm „Umgebungen“](assets/download-logs.png)
-
-
 
 ## Protokolle über API {#logs-through-api}
 
@@ -86,6 +84,10 @@ Environment Id Service    Name
 ```
 
 ### Zusätzliche Ressourcen {#resources}
+
+>[!TIP]
+>
+>Checkout [diese Videoressource](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) , um mehr über das Debugging AEM as a Cloud Service zu erfahren.
 
 Weitere Informationen zur Cloud Manager-API und zur Adobe I/O-CLI finden Sie in den folgenden zusätzlichen Ressourcen:
 
