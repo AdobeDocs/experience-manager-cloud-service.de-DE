@@ -3,10 +3,11 @@ title: Wie richte ich eine  [!DNL AEM Forms]  as a Cloud Service-Umgebung ein?
 description: Erfahren Sie, wie Sie eine  [!DNL AEM Forms]  as a Cloud Service-Umgebung einrichten und konfigurieren.
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
+source-git-commit: 7fe779602f52081dc785074bdc0f374665b908e6
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 100%
+source-wordcount: '609'
+ht-degree: 86%
 
 ---
 
@@ -46,21 +47,24 @@ ht-degree: 100%
 
 * (Nur für Sandboxes) Nach der Einführung in den Service [erstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en) und [nutzen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=de) Sie Produktions- und Nicht-Produktions-Pipelines. Dadurch wird Ihre Umgebung um die neuesten Funktionen von [!DNL AEM Forms] as a Cloud Service erweitert.
 
-Sie können Forms as a Cloud Service verwenden, um ein adaptives Formular (digitale Registrierung) zu erstellen oder Kundenkommunikation zu generieren. Führen Sie nach Abschluss des [Onboardings](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=de) bei [!DNL Adobe Experience Manager] as a Cloud Service eine der folgenden Aktionen aus, um die Funktionen für die digitale Registrierung oder die Kundenkommunikation zu aktivieren. Sie können auch beide Funktionen aktivieren:
+Sie können Forms as a Cloud Service verwenden, um ein adaptives Formular (digitale Registrierung) zu erstellen oder Kundenkommunikation zu generieren. Nach Abschluss [Onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=de) der [!DNL Adobe Experience Manager] Führen Sie as a Cloud Service die folgenden Schritte aus, um die Funktionen Forms - Digitale Registrierung oder Kundenkommunikation zu aktivieren. <!--You can also enable both the features-->:
 
 1. Melden Sie sich bei Cloud Manager an und öffnen Sie eine AEM Forms as a Cloud Service-Instanz.
+1. Öffnen Sie die Option Programm bearbeiten und rufen Sie die Registerkarte Lösungen und Add-ons auf:
 
-1. Wählen Sie die Option „Programm bearbeiten“, gehen Sie zur Registerkarte „Lösungen und Add-ons“ und wählen Sie **[!UICONTROL Forms – Kommunikation]**.
+   * Wenn Sie über eine Produktionsumgebung verfügen, wählen Sie **[!UICONTROL Forms - Kommunikation]** Option zur Aktivierung von Forms - Digital Enrollment und Forms - Communications Add-On.
 
-   ![Kommunikation](assets/communications.png)
+     ![Kommunikation](assets/communications.png)
 
-   Wenn Sie die Option **[!UICONTROL Forms – Digitale Registrierung]** bereits aktiviert haben, wählen Sie anschließend die Option **[!UICONTROL Forms – Kommunikations-Add-on]**.
+   <!-- If you have already enabled the **[!UICONTROL Forms - Digital Enrollment]** option, then select the **[!UICONTROL Forms - Communications Add-On]** option. ![Addon](assets/add-on.png) -->
 
-   ![Add-on](assets/add-on.png)
+   * Wenn Sie über eine Sandbox-Umgebung verfügen, wählen Sie **[!UICONTROL Forms]** um Forms - Digital Enrollment und Forms - Communications Add-On zu aktivieren.
+
+     ![Auswahl der Form-Digital-Registrierung](assets/forms-digital-enrollment1.png)
+
 
 1. Klicken Sie auf **[!UICONTROL Aktualisieren]**.
-
-1. Führen Sie die Build-Pipeline aus. Nachdem die Build-Pipeline erfolgreich ausgeführt wurde, werden die Kommunikations-APIs für Ihre Umgebung aktiviert.
+1. Führen Sie die Build-Pipeline aus. Nachdem die Build-Pipeline erfolgreich war, wird die ausgewählte Lösung für Ihre Umgebung aktiviert.
 
 >[!NOTE]
 >
