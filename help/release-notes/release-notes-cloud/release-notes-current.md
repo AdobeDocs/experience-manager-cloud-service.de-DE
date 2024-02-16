@@ -3,8 +3,8 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 03293f49e583d8b40bafd95bbc89c9ba5c024da8
-workflow-type: ht
+source-git-commit: e2c1d30c035fc1f664efbd15fee977f5488dc5f8
+workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.1.0) ist der 25. Januar 2024. Die nächste Version (2024.2.0) ist für den 29. Februar 2024 geplant.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.1.0) ist der 25. Januar 2024. Die nächste Version (2024.3.0) ist für den Freitag, 28. März 2024 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -116,3 +116,4 @@ Eine vollständige Liste der Cloud Manager-Veröffentlichungen nach Monaten find
 ## Migrations-Tools {#migration-tools}
 
 Eine vollständige Liste der Versionen von Migrations-Tools finden Sie [hier](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+
