@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 8546e6286bea5f603b1e011a76c206b178337ab7
+source-git-commit: 3e1e1eba822bf3156ef563b88269cdef2298e951
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1241'
 ht-degree: 4%
 
 ---
@@ -21,28 +21,24 @@ ht-degree: 4%
 
 Beispielsweise können Sie mit Workfront Fusion ein Szenario erstellen, um Daten mit dem adaptiven Formular zu erfassen, die Daten zu verarbeiten und die Daten zur Archivierung an einen Datenspeicher zu senden. Nachdem ein Szenario eingerichtet wurde, führt Workfront Fusion die Aufgaben automatisch aus, sobald ein Benutzer ein Formular ausfüllt, wodurch der Datenspeicher nahtlos aktualisiert wird.
 
-AEM as a Cloud Service bietet verschiedene vordefinierte Übermittlungsaktionen für die Verarbeitung von Formularübermittlungen. Weitere Informationen zu diesen Optionen finden Sie im Abschnitt [Übermittlungsaktion für adaptive Formulare](/help/forms/configure-submit-actions-core-components.md)  Artikel.
+AEM Forms as a Cloud Service bietet einen OOTB-Connector zum Verbinden und Senden eines adaptiven Formulars an Adobe Workfront Fusion. Die Übermittlung eines Formulars an Adobe Workfront Fusion kann mehrere Vorteile bieten:
+* Sie ermöglichte die nahtlose Übertragung von Formulardaten an Workfront Fusion-Workflows.
+* Dies hilft bei der Automatisierung verschiedener Aufgaben, die durch Formularübermittlungen ausgelöst werden. Dazu können das Initiieren von Projekten, das Zuweisen von Aufgaben zu bestimmten Team-Mitgliedern, das Senden von Benachrichtigungen und das Aktualisieren des Projektstatus gehören - alles ohne manuelles Eingreifen.
+* Alle in Workfront Fusion erfassten Formularübermittlungen bieten eine zentrale &quot;Source of Truth&quot; für projektbezogene Informationen.
 
 
-## Vorteile der Verwendung von Adobe Workfront Fusion{#advatages-of-workfront-fusion}
+<!--  AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.-->
 
-Einige Vorteile der Verwendung von Adobe Workfront Fusion mit AEM Forms:
-
-* Senden von mit Adaptive Forms erfassten Daten an ein Workfront Fusion-Szenario
-* Automatisieren von Aufgaben, die weniger fehleranfällig sind.
-* Anpassen von Anforderungen, die für eine Organisation spezifisch sind, die nicht direkt in Workfront enthalten sind.
-* Umgang mit einfachen Logiken und einfachen Entscheidungen, z. B. if/then -Anweisungen.
+>[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 ## Voraussetzungen für die Integration von AEM Forms in Adobe Workfront Fusion {#prerequisites}
 
-Voraussetzungen für die Verbindung von Workfront Fusion mit AEM Forms sind:
+Um eine Verbindung zwischen Workfront Fusion und AEM Forms herzustellen, ist Folgendes erforderlich:
 
-* Eine gültige [Workfront Fusion-Lizenz](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* Eine gültige [Lizenz für Workfront und Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
 * Ein AEM Benutzer mit Zugriffsrechten [Entwicklerkonsole](https://my.cloudmanager.adobe.com/) nach [Dienstanmeldeinformationen abrufen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=de).
 
 ## Integrieren von AEM Forms mit Adobe Workfront Fusion
-
->[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 Verbindung herstellen [Workfront-Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) Führen Sie die folgenden Schritte aus, um ein Formular zu erstellen:
 
