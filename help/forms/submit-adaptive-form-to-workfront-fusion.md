@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 52e1f57b82aec25ad61024f357016dbb5498ca1b
+source-git-commit: 8546e6286bea5f603b1e011a76c206b178337ab7
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1238'
 ht-degree: 4%
 
 ---
@@ -41,6 +41,8 @@ Voraussetzungen für die Verbindung von Workfront Fusion mit AEM Forms sind:
 * Ein AEM Benutzer mit Zugriffsrechten [Entwicklerkonsole](https://my.cloudmanager.adobe.com/) nach [Dienstanmeldeinformationen abrufen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=de).
 
 ## Integrieren von AEM Forms mit Adobe Workfront Fusion
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 Verbindung herstellen [Workfront-Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) Führen Sie die folgenden Schritte aus, um ein Formular zu erstellen:
 
@@ -129,16 +131,7 @@ So fügen Sie eine Verbindung hinzu:
 1. Auswählen der erstellten Verbindung **[!UICONTROL Verbindung]** aus der Dropdown-Liste.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Klicks **[!UICONTROL OK]** und speichern Sie die Änderungen für das Szenario.
-
-#### 1.3 Workfront-Szenario aktivieren {#activate-scenario}
-
-So aktivieren Sie das Szenario:
-
-1. Klicks **[!UICONTROL Szenarien]** ![Freigabesymbol](/help/forms/assets/Smock_ShareAndroid_18_N.svg) im linken Bereich.
-1. Klicken Sie auf **[!UICONTROL Inaktives Szenario]** Registerkarte.
-1. Klicken Sie auf **EIN/AUS** Umschalten-Schaltfläche für Ihr AEM Forms-Szenario.
-
-Wenn Sie auf die Umschalter-Schaltfläche klicken, wird das Workfront-Szenario im **[!UICONTROL Aktives Szenario]** Registerkarte.
+1. Um das Szenario zu aktivieren, klicken Sie im Szenario-Editor auf die Schaltfläche Ein/Aus .
 
 >[!NOTE]
 >
