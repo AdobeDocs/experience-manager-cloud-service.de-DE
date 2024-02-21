@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d76273ddcbcf5013713e515e39dde8f42bbbf425
+source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
 workflow-type: tm+mt
-source-wordcount: '4648'
-ht-degree: 94%
+source-wordcount: '4711'
+ht-degree: 93%
 
 ---
 
@@ -614,8 +614,8 @@ ht-degree: 94%
             + [Erstellen von Formularen mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
             + [Konfigurieren der Übermittlungsaktion für ein adaptives Formular](/help/forms/configure-submit-actions-core-components.md)
             + [Senden eines adaptiven Formulars an Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [Senden eines adaptiven Formulars an Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
-            + [Konfigurieren des SharePoint-Speichers für ein adaptives Formular](/help/forms/configure-submit-action-sharepoint.md)
+            + [Senden eines adaptiven Formulars an Microsoft](/help/forms/configure-submit-action-onedrive.md)
+            + [Verbinden eines adaptiven Formulars mit Microsoft](/help/forms/configure-submit-action-sharepoint.md)
             + [Integrieren AEM adaptiven Formulars in AEM Workflow](/help/forms/configure-submit-action-workflow.md)
             + [Konfigurieren der Sendeaktion &quot;An REST-Endpunkt übermitteln&quot;für die adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
             + [Konfigurieren der Sendeaktion &quot;E-Mail senden&quot;für ein adaptives Formular](/help/forms/configure-submit-action-send-email.md)
@@ -802,6 +802,21 @@ ht-degree: 94%
       + [Akamai-Einrichtung](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Schnelles Setup](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Umleitungen](/help/edge/docs/redirects.md)
+   + Erstellen von Edge Delivery Forms {#build-forms}
+      + [Übersicht](/help/edge/docs/forms/overview.md)
+      + Erste Schritte {#getting-started-eds-forms}
+         + [Erstellen und Anzeigen einer Vorschau eines Formulars](/help/edge/docs/forms/create-forms.md)
+         + [Formular zum Senden von Daten aktivieren](/help/edge/docs/forms/submit-forms.md)
+         + [Veröffentlichen eines Formulars auf der Siteseite](/help/edge/docs/forms/publish-eds-forms.md)
+         + [Hinzufügen von Überprüfungen zu Formularfeldern](/help/edge/docs/forms/validate-forms.md)
+         + [Designs und Formularstil ändern](/help/edge/docs/forms/style-theme-forms.md)
+      + Erweiterte Funktionen {#advanced-features-eds-forms}
+         + [Erstellen und Hinzufügen von Formularfragmenten zu einem Formular](/help/edge/docs/forms/form-fragments.md)
+         + [Formular übersetzen](/help/edge/docs/forms/translate-forms.md)
+         + [Wiederholbare Abschnitte zu einem Formular hinzufügen](/help/edge/docs/forms/repeatable-forms.md)
+         + [Anwenden von reCAPTCHA auf ein Formular](/help/edge/docs/forms/recaptacha-forms.md)
+         + [Erstellen benutzerdefinierter Komponenten](/help/edge/docs/forms/custom-components-forms.md)
+         + [Dankeseite hinzufügen](/help/edge/docs/forms/thank-you-page-form.md)
    + Ressourcen für die Edge-Bereitstellung {#resources}
       + Sidekick {#sidekick}
          + [Verwenden von Sidekick](/help/edge/docs/sidekick.md)

@@ -2,10 +2,10 @@
 title: Bereitschaftsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: f99395870d076d47ef53b01c9fc6579a9f8788a2
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 55%
+source-wordcount: '984'
+ht-degree: 44%
 
 ---
 
@@ -58,16 +58,19 @@ Führen Sie die folgenden Schritte aus, um in die Bereitschaftsphase zu gelangen
 
 1. Nachdem Sie einen neuen Bericht hochgeladen haben, können Sie den Bericht Best Practices-Analyse sehen.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
+   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
+
+   >[!NOTE]
+   >Wenn mehrere Berichte hochgeladen werden, ist der Bericht, der detailliert angezeigt wird, immer derjenige, der das letzte Erstellungsdatum hat (nicht das Upload-Datum).
 
 1. Überprüfen Sie das Dashboard zur Best-Practices-Analyse in CAM. Siehe [Überprüfen des Berichts zur Best Practices-Analyse](#analysis-report) für weitere Details.
 
    >[!NOTE]
-   >Durch das Hochladen eines neuen Berichts werden alle Bewertungen zurückgesetzt.
+   >Durch das Hochladen eines neuen Berichts werden alle Bewertungen zurückgesetzt, wenn dieser neuer als der zuvor geladene Bericht ist.
 
 ### Verwenden der Druckvorschau {#print-preview-cam}
 
-Sie können in Cloud Acceleration Manager die Druckvorschau-Option auswählen, um eine druckbare Vorschau der Berichte anzuzeigen oder den Bericht zur einfachen Freigabe in einem PDF-Format zu drucken.
+Sie können die Druckvorschau-Option in Cloud Acceleration Manager auswählen, um eine druckbare Vorschau der Berichte anzuzeigen oder den Bericht zur einfachen Freigabe in ein PDF-Format zu drucken.
 
 Führen Sie dazu folgende Schritte durch:
 
@@ -86,12 +89,12 @@ Führen Sie dazu folgende Schritte durch:
 
 ### Verwenden von „Trendlinie anzeigen“ {#trendline-view-cam}
 
-Wenn Sie mehr als einen Best Practices Analyzer-Bericht (BPA) in ein Projekt hochladen, können Sie die Option **Trendlinie anzeigen** zum Anzeigen und Vergleichen von Ergebnissen aus historischen BPA-Berichten auswählen.
+Wenn Sie mehr als einen eindeutigen Best Practices Analyzer-Bericht (BPA) in ein Projekt hochladen, können Sie die **Trendlinie anzeigen** -Option zum Anzeigen und Vergleichen von Ergebnissen aus historischen BPA-Berichten.
 
 Gehen Sie wie folgt vor, um Berichte über die Trendlinienoption anzuzeigen:
 
 >[!NOTE]
->Wenn Sie mehr als einen BPA-Bericht in ein Projekt hochladen, wird die **...** Symbol.
+>Wenn Sie mehr als einen einzelnen BPA-Bericht in ein Projekt hochladen, wird die **...** Symbol. Berichte werden als identisch betrachtet (nicht eindeutig), wenn Host und Erstellungszeit identisch sind.
 
 1. Navigieren Sie zu Ihrem Projekt und klicken Sie auf **Überprüfen** aus dem **Best Practices-Analyse** in der **Bereitschaft** Phase.
 
@@ -100,9 +103,6 @@ Gehen Sie wie folgt vor, um Berichte über die Trendlinienoption anzuzeigen:
 1. Klicks **...**.
 
    ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
-
-   >[!IMPORTANT]
-   >Der angezeigte Bericht ist immer der Bericht mit dem neuesten Berichtsdatum.
 
 1. Klicken Sie in der Dropdownliste auf **Trendlinie anzeigen**, wie in der folgenden Abbildung dargestellt.
 

@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 94519d3c7d2f927f046628d9ce057209556e847d
+source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1255'
 ht-degree: 4%
 
 ---
@@ -40,11 +40,17 @@ Um eine Verbindung zwischen Workfront Fusion und AEM Forms herzustellen, ist Fol
 
 ## Integrieren von AEM Forms mit Adobe Workfront Fusion
 
-Verbindung herstellen [Workfront-Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) Führen Sie die folgenden Schritte aus, um ein Formular zu erstellen:
-
 ### 1. Erstellen eines Workfront-Szenarios {#workflow-scenario}
 
-Erstellen eines Workfront-Szenarios:
+Um ein Workfront-Szenario zu erstellen, führen Sie die folgenden Schritte aus:
+
+1. [Erstellen eines Szenarios](#create-scenario)
+1. [Hinzufügen eines Web-Hooks zu einem Szenario](#add-webhook)
+1. [Herstellen einer Verbindung zu einem Webhook](#add-connection)
+
+#### Erstellen eines Szenarios {#create-scenario}
+
+So erstellen Sie ein Szenario:
 1. Anmelden bei [Workfront Fusion-Konto](https://app-qa.workfrontfusion.com/).
 1. Klicks **[!UICONTROL Szenarien]** ![Freigabesymbol](/help/forms/assets/Smock_ShareAndroid_18_N.svg) im linken Bereich.
 1. Klicks **[!UICONTROL Neues Szenario erstellen]** in der oberen rechten Ecke der Seite. Eine Seite zum Erstellen eines neuen Szenarios wird auf dem Bildschirm angezeigt.
@@ -61,7 +67,7 @@ Erstellen eines Workfront-Szenarios:
 
 1. Wählen Sie die **[!UICONTROL Formularereignisse beobachten]** und ein Fenster zum Hinzufügen eines Webhooks angezeigt.
 
-#### 1.1 Webhook hinzufügen {#add-webhook}
+#### Webhook hinzufügen {#add-webhook}
 
 ![Webhook hinzufügen](/help/forms/assets/workfront-add-webhook.png)
 
@@ -76,7 +82,7 @@ Hinzufügen eines Webhooks:
 
 1. Klicks **[!UICONTROL Hinzufügen]** , um eine neue Verbindung hinzuzufügen. Die **[!UICONTROL Verbindung erstellen]** angezeigt.
 
-#### 1.2 Verbindung zu einem Webhook hinzufügen {#add-connection}
+#### Verbindung zu einem Webhook hinzufügen {#add-connection}
 
 ![Verbindung hinzufügen](/help/forms/assets/workfront-add-connection.png)
 
