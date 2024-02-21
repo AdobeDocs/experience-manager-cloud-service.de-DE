@@ -7,7 +7,7 @@ hidefromtoc: true
 source-git-commit: 7318c5e65fc03bfebbf5fb43e4edc30ffbb53909
 workflow-type: tm+mt
 source-wordcount: '1598'
-ht-degree: 60%
+ht-degree: 86%
 
 ---
 
@@ -31,42 +31,42 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
 >title="Verfolgung von Formularübermittlungen"
->abstract="Mit unserem intuitiven Tracking-Dashboard können Sie mühelos Formularübermittlungen in Ihrer AEM Forms-Veröffentlichungsinstanz überwachen. Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle Instanz sind, sodass Sie Trends schnell analysieren und fundierte Entscheidungen treffen können. Für Übermittlungsdaten anderer Instanzen greifen Sie einfach auf das Dashboard der jeweiligen Instanz zu."
+>abstract="Mit unserem intuitiven Tracking-Dashboard können Sie mühelos Formularübermittlungen in der AEM Forms-Veröffentlichungsinstanz überwachen. Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle Instanz sind, sodass Sie Trends schnell analysieren und fundierte Entscheidungen treffen können. Für Übermittlungsdaten anderer Instanzen greifen Sie einfach auf das Dashboard der jeweiligen Instanz zu."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_conversions_graph_en"
 >title="Verfolgung von Formularkonvertierungen"
->abstract="Halten Sie sich über Formularkonvertierungen auf dem Laufenden und erhalten Sie eine Zusammenfassung der Gesamtanzahl der Konvertierungen. Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Veröffentlichungsinstanz sind, sodass Sie Trends schnell analysieren und fundierte Entscheidungen treffen können. Um Konversionsdaten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
+>abstract="Halten Sie sich über Formularkonvertierungen mit einer Zusammenfassung der Gesamtanzahl der Konvertierungen auf dem Laufenden. Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Veröffentlichungsinstanz sind, sodass Sie Trends schnell analysieren und fundierte Entscheidungen treffen können. Um Konversionsdaten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="Durchschnittliche Dauer für die Formularerstellung"
->abstract="Das Diagramm zeigt die durchschnittliche Zeit, die zum Erstellen eines Formulars benötigt wurde. Jeder Balken im Diagramm stellt ein bestimmtes Formular dar. Die Höhe des Balkens gibt die durchschnittliche Dauer an, die für die Formularerstellung während dieses Zeitraums verwendet wurde. Die Analyse dieses Diagramms hilft Benutzern, die Effizienz und Geschwindigkeit der Formularerstellung über verschiedene Zeiträume oder in unterschiedlichen Kontexten zu verstehen, sodass Einblicke in potenzielle Verbesserungen möglich sind. Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Autoreninstanz sind. Um Daten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
+>abstract="Das Diagramm zeigt die durchschnittliche Zeit, die zum Erstellen eines Formulars benötigt wurde. Jeder Balken im Diagramm stellt ein bestimmtes Formular dar. Die Höhe des Balkens gibt die durchschnittliche Dauer an, die für die Formularerstellung während dieses Zeitraums verwendet wurde. Die Analyse dieses Diagramms hilft Benutzenden, die Effizienz und Geschwindigkeit der Formularerstellung über verschiedene Zeiträume oder in unterschiedlichen Kontexten zu untersuchen, sodass Einblicke für potenzielle Verbesserungen möglich sind. Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Autoreninstanz sind. Um Daten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="Durchschnittliche Dauer der Formularerstellung"
->abstract="Das Diagramm zeigt die durchschnittliche Zeit an, die zum Erstellen und Veröffentlichen eines Formulars benötigt wurde, gemessen ab dem ersten Tag, an dem das Formular zur Bearbeitung geöffnet wurde. Jede Leiste entspricht einem bestimmten Zeitrahmen für ein Formular, wobei die Balkenhöhe die durchschnittliche Zeit angibt, die vom Beginn der Formularentwicklung bis zur Fertigstellung und Veröffentlichung benötigt wird. Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Autoreninstanz sind. Um Daten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
+>abstract="Das Diagramm zeigt die durchschnittliche Zeit an, die zum Erstellen und Veröffentlichen eines Formulars benötigt wurde, gemessen ab dem ersten Tag, an dem das Formular zur Bearbeitung geöffnet wurde. Jeder Balken entspricht einem bestimmten Zeitrahmen für ein Formular, wobei die Balkenhöhe die durchschnittliche Zeit angibt, die vom Beginn der Formularentwicklung bis zur Fertigstellung und Veröffentlichung benötigt wurde. Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Autoreninstanz sind. Um Daten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="Verfolgung neuer Formulare"
->abstract="Das Diagramm enthält Informationen zur Anzahl oder Häufigkeit neu erstellter Formulare in bestimmten Zeiträumen. Jeder Balken im Diagramm stellt eine bestimmte Maßeinheit dar, z. B. Tage, Wochen oder Monate. Die Höhe jedes Balkens gibt die Menge oder Häufigkeit neuer Formulare an, die in diesem bestimmten Intervall erstellt wurden. Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Autoreninstanz sind. Um Daten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
+>abstract="Das Diagramm enthält Informationen zur Anzahl oder Häufigkeit neu erstellter Formulare in bestimmten Zeiträumen. Jeder Balken im Diagramm stellt eine bestimmte Maßeinheit dar, z. B. Tage, Wochen oder Monate. Die Höhe jedes Balkens gibt die Menge oder Häufigkeit neuer Formulare an, die im jeweiligen Intervall erstellt wurden. Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Autoreninstanz sind. Um Daten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="Verfolgung veröffentlichter Formulare"
->abstract="Das Diagramm enthält Informationen zur Anzahl oder Häufigkeit von Formularen, die in bestimmten Zeiträumen erfolgreich veröffentlicht wurden. Auf diese Weise können Sie Trends, Muster oder Variationen bei der Veröffentlichung von Formularen im Zeitverlauf nachvollziehen, die Produktivität überwachen, Spitzenzeiten bei der Veröffentlichung ermitteln oder den Erfolg von Änderungen im Formularveröffentlichungsprozess bewerten. Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Veröffentlichungsinstanz sind. Um Konversionsdaten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
+>abstract="Das Diagramm enthält Informationen zur Anzahl oder Häufigkeit von Formularen, die in bestimmten Zeiträumen erfolgreich veröffentlicht wurden. Auf diese Weise können Sie Trends, Muster oder Variationen bei der Veröffentlichung von Formularen im Zeitverlauf nachvollziehen, die Produktivität überwachen, Spitzenzeiten von Veröffentlichungen ermitteln oder den Erfolg von Änderungen im Formularveröffentlichungsprozess bewerten. Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Veröffentlichungsinstanz sind. Um Konversionsdaten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
 >title="Verfolgung veröffentlichter Formulare"
->abstract="Anhand dieses Diagramms können Sie sehen, wie viele Formularfragmente Personen in ihren Formularen verwenden. Es gibt Ihnen ein Gefühl, wie beliebt oder üblich diese wiederverwendbaren Teile beim Erstellen von Formularen sind. Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Veröffentlichungsinstanz sind. Um Konversionsdaten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
+>abstract="Anhand dieses Diagramms können Sie sehen, wie viele Formularfragmente von Personen in ihren Formularen verwendet werden. Sie erhalten einen Eindruck davon, wie beliebt oder verbreitet diese wiederverwendbaren Teile beim Erstellen von Formularen sind. Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Veröffentlichungsinstanz sind. Um Konversionsdaten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
 >title="Verfolgung veröffentlichter Formulare"
->abstract="Das Diagramm zeigt die durchschnittliche Zeit an, die zum Erstellen eines Formularfragments benötigt wird, gemessen ab dem ersten Tag, an dem das Formularfragment zur Bearbeitung geöffnet wurde. Jede Leiste entspricht einem bestimmten Zeitrahmen für ein Formularfragment. Die Balkenhöhe gibt die durchschnittliche Zeit an, die vom Beginn der Formularfragmententwicklung bis zur Fertigstellung und Veröffentlichung benötigt wird. Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Veröffentlichungsinstanz sind. Um Konversionsdaten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
+>abstract="Das Diagramm zeigt die durchschnittliche Zeit an, die zum Erstellen eines Formularfragments benötigt wurde, gemessen ab dem ersten Tag, an dem das Formularfragment zur Bearbeitung geöffnet wurde. Jeder Balken entspricht einem bestimmten Zeitrahmen für ein Formularfragment, wobei die Balkenhöhe die durchschnittliche Zeit angibt, die vom Beginn der Formularfragmententwicklung bis zur Fertigstellung und Veröffentlichung benötigt wurde. Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Veröffentlichungsinstanz sind. Um Konversionsdaten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
 
 <!-- 
 
