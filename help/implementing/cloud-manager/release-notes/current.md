@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4a41de9da557be562bb2ff5773c7954f76a9acc7
 workflow-type: tm+mt
 source-wordcount: '725'
-ht-degree: 76%
+ht-degree: 97%
 
 ---
 
@@ -21,15 +21,15 @@ Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2024.2.0 in AE
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager -Version 2024.2.0 AEM as a Cloud Service wurde am 15. Februar 2024 veröffentlicht. Die nächste Version ist für den 16. März 2024 geplant.
+Die Cloud Manager -Version 2024.2.0 AEM as a Cloud Service wurde am 15. Februar 2024 veröffentlicht. Die nächste Version soll am 16. März 2024 veröffentlicht werden.
 
 ## Neue Funktionen {#what-is-new}
 
-* Cloud Manager unterstützt jetzt die Self-Service-Verwaltung von [Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) über die Cloud Manager -Benutzeroberfläche.
-* [Vorschaufunktion](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice) wird jetzt für Umgebungen aktiviert, die erstellt wurden, bevor die Vorschaufunktion eingeführt wurde.
-* [Benutzerdefinierte Berechtigungen für Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) Sie können benutzerdefinierte Berechtigungsprofile mit konfigurierbaren Berechtigungen erstellen, um den Zugriff auf Programme, Pipelines und Umgebungen für Cloud Manager-Benutzer zu beschränken.
-   * Diese Funktion begann schrittweise mit dem [Version Dezember 2023](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md) und wird am 20. Februar 2024 abgeschlossen sein.
-* Für alle neuen Umgebungen muss die Variable [Umgebungsproduktprofil](/help/onboarding/aem-cs-team-product-profiles.md) Namen sind ein benutzerfreundlicheres Format, das auf einer Kombination aus Profilbeschreibung, Umgebungstyp, Nummer und Programmnummer basiert.
+* Cloud Manager unterstützt jetzt die Self-Service-Verwaltung von [Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) über die Cloud Manager-Benutzeroberfläche.
+* Die [Vorschaufunktion](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice) wird jetzt für Umgebungen aktiviert, die erstellt wurden, bevor die Vorschaufunktion eingeführt wurde.
+* Mit [benutzerdefinierten Cloud Manager-Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md) können Sie benutzerdefinierte Berechtigungsprofile mit konfigurierbaren Berechtigungen erstellen, um den Zugriff auf Programme, Pipelines und Umgebungen für Cloud Manager-Benutzende zu beschränken.
+   * Diese Funktion wurde schrittweise mit der [Version Dezember 2023](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md) ausgerollt und wird am 20. Februar 2024 allgemein verfügbar sein.
+* In allen neuen Umgebungen werden die Namen für [Umgebungsproduktprofile](/help/onboarding/aem-cs-team-product-profiles.md) einem benutzerfreundlicheren Format folgen, das auf einer Kombination aus Profilbeschreibung, Umgebungstyp, Nummer und Programmnummer basiert.
 * [Die Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) wurde auf die Maven-Version 3.9.4 und die JDK-Versionen jdk-11.0.22 und jdk1.8.0_401 aktualisiert.
 
 ## Early-Adopter-Programm {#early-adoption}
@@ -73,4 +73,4 @@ Möchten Sie das neue Dashboard testen? Senden Sie dazu eine E-Mail an `aem-ligh
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* Das JDK der Build-Container wurde auf eine Version aktualisiert, die [JDK-8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
+* Das JDK der Build-Container wurde auf eine Version aktualisiert, die [JDK-8313765](https://bugs.openjdk.org/browse/JDK-8313765) löst.
