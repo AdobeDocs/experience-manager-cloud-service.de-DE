@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Unterstützung von AEM as a Cloud Servi
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: c4daf04d5520da1e646f35ba72c9f53cb1d97d36
+source-git-commit: a9296bba5d1ad3f6eb2190de9c15a1083f2ac6d5
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 91%
+source-wordcount: '148'
+ht-degree: 64%
 
 ---
 
@@ -22,17 +22,16 @@ Erfahren Sie mehr über AEM as a Cloud Service Unterstützung für Integrationen
 >
 >Weitere Informationen zur Integration von Adobe Campaign mit AEM 6.5, der vor Ort oder bei AMS gehosteten AEM-Lösung, finden Sie in [diesem Dokument](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html?lang=de).
 
-## Integrieren mit Adobe Campaign Classic {#acc}
+## Integration mit Adobe Campaign v7/v8 {#acc}
 
-Es gibt mehrere Versionen von Adobe Campaign Classic (ACC). Die Unterstützung für die Integration mit AEM as a Cloud Service hängt von der von Ihnen implementierten ACC-Version ab.
+Die Unterstützung für die Integration mit AEM as a Cloud Service hängt von der implementierten Campaign-Version ab.
 
-| ACC-Version | Integration mit AEMaaCS |
+| Campaign-Version | Integration mit AEMaaCS |
 |---|---|
-| [v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=de) | Nicht unterstützt |
-| [v8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=de) | Nicht unterstützt |
-| Web-Benutzeroberfläche* | Unterstützt |
+| [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=de) | Nicht unterstützt |
+| [Campaign v8 (Clientkonsole)](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=de) | Nicht unterstützt |
+| Campaign-Webbenutzeroberfläche | Unterstützt. [Weitere Infos](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html) |
 
-*Die Web-Benutzeroberfläche für Adobe Campaign Classic wird Ende 2023 erwartet.
 
 ## Integrieren mit Adobe Campaign Standard {#acs}
 
