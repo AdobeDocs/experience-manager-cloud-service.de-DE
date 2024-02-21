@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service wurde für optimale Leistung entwic
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Der AEM Forms Edge Delivery Service hilft Ihnen bei Folgendem:
 
 * **Vereinfachen Sie Authoring und Übermittlung**: Erstellen Sie Formulare mit vertrauten Tools wie Microsoft Excel oder Google Tabellen anstelle der herkömmlichen Authoring-Umgebungen. Senden Sie Formulare direkt an Ihre Microsoft Excel- oder Google Tabellen und verwenden Sie ihr Ökosystem, um die übermittelten Daten einfach zu verarbeiten.
 
-## Erste Schritte mit dem AEM Forms Edge Delivery Service
+## Erste Schritte mit den Grundlagen
 
 <div>
 

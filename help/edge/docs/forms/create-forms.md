@@ -4,9 +4,9 @@ description: Handwerkliche perfekte Formen, schnell! ⚡ AEM Forms Edge Delivery
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '932'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,8 @@ Diese Formulare senden Daten direkt an eine Microsoft Excel- oder Google Tabelle
 
 ![Erste Schritte mit Edge Delivery Forms](/help/edge/assets/getting-started-with-eds-forms.png)
 
-## Fügen Sie den Formularblock zu Ihrem Edge Delivery Service-Projekt (EDS) hinzu. {#add-forms-block-to-an-eds-project}
+
+## Schritt 1: Hinzufügen des Formularblocks zu Ihrem Edge Delivery Service-Projekt (EDS) {#add-forms-block-to-an-eds-project}
 
 Die AEM Forms Edge-Bereitstellung enthält einen Formularblock, mit dem Sie mühelos Formulare erstellen können, um erfasste Daten zu erfassen und zu speichern. So fügen Sie den Formularblock in Ihr Edge Delivery Service-Projekt ein:
 
@@ -81,7 +82,7 @@ Die AEM Forms Edge-Bereitstellung enthält einen Formularblock, mit dem Sie müh
    > * Wenn der Fehler &quot;Pfad zum Modul kann nicht aufgelöst werden &quot;&#39;../../scripts/lib-franklin.js&#39;&quot; auftritt, öffnen Sie die `[EDS Project]/blocks/forms/form.js` -Datei. Ersetzen Sie in der Importanweisung die `franklin-lib.js` -Datei mit der `aem.js` -Datei.
    > * Sollten Sie auf Linkingfehler stoßen, können Sie diese ignorieren. Um die Linting-Prüfungen zu umgehen, öffnen Sie die `[EDS Project]\package.json` und aktualisieren Sie das Skript &quot;lint&quot;von `"lint": "npm run lint:js && npm run lint:css"` nach `"lint": "echo 'skipping linting for now'"`. Speichern Sie die Datei und übertragen Sie sie in Ihr GitHub-Projekt.
 
-## Erstellen eines Formulars mit Microsoft Excel oder Google Sheet {#create-a-form-for-an-eds-project}
+## Schritt 2: Erstellen eines Formulars mit Microsoft Excel oder Google Sheet
 
 Anstelle komplexer Prozesse können Sie ein Formular einfach mithilfe einer Tabelle erstellen. Zunächst können Sie die Zeilen- und Spaltenüberschriften zu einem Arbeitsblatt hinzufügen, wobei jede Zeile ein Formularfeld definiert und jede Spaltenüberschrift die Eigenschaften der entsprechenden Formularfelder definiert.
 
@@ -123,7 +124,7 @@ So erstellen Sie ein Formular:
 
 
 
-## Vorschau des Formulars mit der Seite &quot;Edge Delivery Service (EDS)&quot; {#add-a-form-to-your-eds-page}
+## Schritt 3: Vorschau des Formulars mit Ihrer Edge Delivery Service-Seite (EDS) anzeigen
 
 Bis jetzt haben Sie den Formularblock für Ihr EDS-Projekt aktiviert und die Struktur des Formulars vorbereitet. Nun können Sie eine Vorschau des Formulars anzeigen:
 
@@ -153,8 +154,9 @@ Bis jetzt haben Sie den Formularblock für Ihr EDS-Projekt aktiviert und die Str
 
    ![Fehler bei Formularübermittlung](/help/edge/assets/form-error.png)
 
+## Nächster Schritt
 
-   Der nächste Schritt besteht darin, [Tabellenkalkulation zur Datenaufnahme vorbereiten](/help/edge/docs/forms/submit-forms.md).
+Der nächste Schritt besteht darin, [Tabellenkalkulation zur Datenaufnahme vorbereiten](/help/edge/docs/forms/submit-forms.md).
 
 
 
