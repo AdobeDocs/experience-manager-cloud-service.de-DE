@@ -2,10 +2,10 @@
 title: Erstellen und Verwalten von Kanälen in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie in Screens as a Cloud Service Kanäle erstellen und verwalten.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 88%
+source-wordcount: '1103'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ In diesem Dokument erfahren Sie, wie Sie in Screens Content Provider Kanäle fü
 
 * verstehen, wie man Kanäle für Screens Content Provider erstellt
 * Inhalte in Ihren Kanälen verwalten und bearbeiten
-* Aktivierungszeitplan für Ihre Kanäle
+* den Zeitplan für die Zuweisung und Aktivierung Ihrer Kanäle in [Screens Service Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=de)
 
 ## Schritte zum Erstellen eines neuen Sequenzkanals in Screens as a Cloud Service {#create-new-channel}
 
@@ -34,18 +34,18 @@ Gehen Sie wie folgt vor, um einen Sequenzkanal in Screens as a Cloud Service zu 
 
 1. Gehen Sie zu Ihrem AEM Screens-Projekt, z. B. *FirstDigitalExperience*.
 
-1. Wählen Sie die **Kanäle** Ordner aus Ihrem Projekt, z. B. **FirstDigitalExperience** —> **Kanäle** und klicken **Erstellen** in der Aktionsleiste aus.
+1. Wählen Sie den Ordner **Kanäle** in Ihrem Projekt aus, z. B. **ErstesDigitalesErlebnis** > **Kanäle**, und klicken Sie in der Aktionsleiste auf **Erstellen**.
 
    ![channel-create1](/help/screens-cloud/assets/create-content/channel-create1.png)
 
-1. Wählen Sie die Vorlage aus, beispielsweise **Sequenzkanal** aus dem **Erstellen** Assistent und klicken Sie auf **Nächste**.
+1. Wählen Sie im Assistenten **Erstellen** die Vorlage aus, z. B. **Sequenzkanal**, und klicken Sie auf **Weiter**.
 
    ![channel-create2](/help/screens-cloud/assets/create-content/channel-create2.png)
 
    >[!NOTE]
    > Der Assistent **Erstellen** bietet beim Erstellen eines Kanals verschiedene Arten von Vorlagen. Siehe [Verfügbare Vorlagen](#available-templates) im Erstellungsassistenten für weitere Details.
 
-1. Geben Sie den Namen Ihres Sequenzkanals ein, z. B. **LoopingChannelOne** und klicken **Erstellen**.
+1. Geben Sie den Namen Ihres Sequenzkanals ein, z. B. **SchleifeKanalEins**, und klicken Sie auf **Erstellen**.
 
    ![channel-create3](/help/screens-cloud/assets/create-content/channel-create3.png)
 
@@ -65,19 +65,19 @@ Gehen Sie von Ihrem Projekt zum Kanal und wählen Sie den Kanal aus, wie in der 
 
 Um Inhalt in einem Kanal hinzuzufügen oder zu bearbeiten, gehen Sie wie folgt vor:
 
-1. Klicken Sie auf den Kanal, den Sie bearbeiten möchten (wie in der untenstehenden Abbildung gezeigt). Klicks **Bearbeiten** Öffnen Sie den Editor in der oberen linken Ecke der Aktionsleiste.
+1. Klicken Sie auf den Kanal, den Sie bearbeiten möchten (wie in der untenstehenden Abbildung gezeigt). Klicken Sie oben links in der Aktionsleiste auf **Bearbeiten**, um den Editor zu öffnen.
 
    ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
-1. Mit dem Editor können Sie Assets/Komponenten zu Ihrem Kanal hinzufügen, den Sie veröffentlichen möchten.
+1. Mit dem Editor können Sie Assets/Komponenten zu Ihrem Kanal hinzufügen, die veröffentlicht werden sollen.
 
 1. Ziehen Sie die Assets per Drag-and-Drop aus dem linken Bereich und fügen Sie sie zum Editor hinzu.
 
    ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
-   >Klicks **Vorschau** um eine Vorschau der Inhalte Ihres Kanals anzuzeigen.
-   >![edit-channelpreview](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
+   >Klicken Sie auf **Vorschau**, um die Inhalte Ihres Kanals in einer Vorschau anzuzeigen.
+   >![Bearbeiten – Kanalvorschau](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## Verfügbare Vorlagen im Assistenten „Erstellen“. {#available-templates}
 
@@ -91,7 +91,9 @@ Die folgenden Vorlagen sind bei Verwendung des Assistenten zum **Erstellen** ein
 
 ## Verwenden von Standardzuweisungsdetails für Kanäle {#default-channels}
 
-Mit dieser Funktion können Sie einen standardmäßigen Aktivierungsplan für einen Kanal definieren und ihn standardmäßig für jede Zuweisung für eine Anzeige verwenden. Mit dieser Methode muss die umständliche Zeitplandefinition nicht wiederholt werden.
+Mit dieser Funktion können Sie einen standardmäßigen Aktivierungsplan für einen Kanal definieren und ihn standardmäßig für jede Zuweisung für ein Display verwenden. Mit dieser Methode muss die umständliche Zeitplandefinition nicht wiederholt werden.
+
+1. Gehen Sie von [hier](https://experience.adobe.com/screens) zu Screens Services Provider.
 
 ### Erstellen von Standardzuweisungsdetails für einen Kanal {#create-default}
 
@@ -119,7 +121,7 @@ Auf dieser Kachel werden die folgenden Informationen angezeigt:
 Kanäle mit Standardzuweisungsdetails können dem Display auf die gleiche Weise zugewiesen werden wie normale Kanäle. Es besteht die zusätzliche Option, die Standardzuweisungsdetails zu verwenden, statt jedes Mal manuell benutzerdefinierte Zuweisungsdetails zu definieren.
 
 1. Navigieren Sie zur Detailseite des Displays, dem Sie den Kanal zuweisen möchten, und klicken Sie auf **Kanal zuweisen**.
-Wählen Sie alternativ das gewünschte Display in der Bestandsansicht aus und klicken Sie auf **Kanal zuweisen**.
+Wählen Sie alternativ die gewünschte Anzeige im [inventory](https://experience.adobe.com/screens/displays) Anzeigen und klicken Sie auf **Kanal zuweisen**.
 1. Daraufhin wird das Dialogfeld für die Kanalzuweisung geöffnet.
 
    ![image](/help/screens-cloud/assets/display/Assignments4.png)
