@@ -4,10 +4,10 @@ description: Handwerkliche perfekte Formen, schnell! ⚡ AEM Forms Edge Delivery
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: 7b497791c70fd588b7e8c9a94caa218189d3153a
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 1%
+source-wordcount: '891'
+ht-degree: 2%
 
 ---
 
@@ -28,43 +28,21 @@ Diese Formulare senden Daten direkt an eine Microsoft Excel- oder Google Tabelle
 ## Bevor Sie beginnen
 
 * Richten Sie Ihr Edge Delivery Service-Projekt (EDS) ein und klonen Sie es. Siehe [Entwickler-Tutorial](https://www.aem.live/developer/tutorial) für Details.
-* Klonen Sie die [Forms Block-Repository](https://github.com/adobe/afb). Sie enthält den Formularblock, der zum Rendern des Formulars erforderlich ist.
+* Klonen Sie die [Forms Block-Repository](https://github.com/adobe/afb).
 
-![Erste Schritte mit Edge Delivery Forms](/help/edge/assets/getting-started-with-eds-forms.png)
+  ![Erste Schritte mit Edge Delivery Forms](/help/edge/assets/getting-started-with-eds-forms.png)
 
 
-## Schritt 1: Hinzufügen des Formularblocks zu Ihrem Edge Delivery Service-Projekt (EDS) {#add-forms-block-to-an-eds-project}
+## Formular erstellen
+
+
++++ Schritt 1: Fügen Sie den Formularblock zu Ihrem EDS-Projekt (Edge Delivery Service) hinzu.
 
 Die AEM Forms Edge-Bereitstellung enthält einen Formularblock, mit dem Sie mühelos Formulare erstellen können, um erfasste Daten zu erfassen und zu speichern. So fügen Sie den Formularblock in Ihr Edge Delivery Service-Projekt ein:
 
-1. Navigieren Sie zum `blocks` Ordner in Ihrem Ordner &quot;Edge Delivery Service&quot;(EDS)-Projekt in Ihrer lokalen Entwicklungsumgebung.
+1. Navigieren Sie zu `[cloned Forms Block repository folder]`/blocks/.
 
-
-   ```Shell
-   cd [EDS Project folder]/blocks
-   ```
-
-1. Erstellen Sie einen Ordner mit dem Namen `form` unter `blocks` Verzeichnis. Beispielsweise im Ordner für das EDS-Projekt mit dem Namen `Portal`erstellen Sie einen Ordner mit dem Namen `form`.
-
-   ```Shell
-   mkdir form
-   ```
-
-
-1. Fügen Sie die [Forms Block](https://github.com/adobe/afb/tree/main/blocks/form) -Dateien in den Ordner &quot;form&quot;.
-
-   ```shell
-   cp -R <source:path of the form block> <destination: path of the form folder created in the previous step>
-   ```
-
-   **Beispiel:**
-
-
-   ```shell
-   cp -R ../../afb/blocks/form ../../fantastic-computing-machine/blocks 
-   ```
-
-
+1. Kopieren Sie die `forms` Ordner in `[Cloned EDS Project repository folder]\blocks` Ordner.
 
 1. Checken Sie den Ordner &quot;Formular&quot;und die zugrunde liegenden Dateien in Ihr Edge Delivery Service-Projekt auf GitHub ein.
 
@@ -79,10 +57,13 @@ Die AEM Forms Edge-Bereitstellung enthält einen Formularblock, mit dem Sie müh
 
    >[!NOTE]
    >
-   > * Wenn der Fehler &quot;Pfad zum Modul kann nicht aufgelöst werden &quot;&#39;../../scripts/lib-franklin.js&#39;&quot; auftritt, öffnen Sie die `[EDS Project]/blocks/forms/form.js` -Datei. Ersetzen Sie in der Importanweisung die `franklin-lib.js` -Datei mit der `aem.js` -Datei.
+   > * Wenn der Fehler &quot;Pfad zum Modul kann nicht aufgelöst werden &quot;&#39;../../scripts/lib-franklin.js&#39;&quot; auftritt, öffnen Sie die `[EDS Project]/blocks/forms/form.js` -Datei. Ersetzen Sie in der Importanweisung die `lib-franklin.js` -Datei mit der `aem.js` -Datei.
    > * Sollten Sie auf Linkingfehler stoßen, können Sie diese ignorieren. Um die Linting-Prüfungen zu umgehen, öffnen Sie die `[EDS Project]\package.json` und aktualisieren Sie das Skript &quot;lint&quot;von `"lint": "npm run lint:js && npm run lint:css"` nach `"lint": "echo 'skipping linting for now'"`. Speichern Sie die Datei und übertragen Sie sie in Ihr GitHub-Projekt.
 
-## Schritt 2: Erstellen eines Formulars mit Microsoft Excel oder Google Sheet
++++
+
++++ Schritt 2: Erstellen eines Formulars mit Microsoft Excel oder Google Sheet
+
 
 Anstelle komplexer Prozesse können Sie ein Formular einfach mithilfe einer Tabelle erstellen. Zunächst können Sie die Zeilen- und Spaltenüberschriften zu einem Arbeitsblatt hinzufügen, wobei jede Zeile ein Formularfeld definiert und jede Spaltenüberschrift die Eigenschaften der entsprechenden Formularfelder definiert.
 
@@ -122,15 +103,16 @@ So erstellen Sie ein Formular:
    For example, https://main--portal--wkndforms.hlx.live/contact-us.json
    ```
 
++++
 
++++ Schritt 3: Vorschau des Formulars mit Ihrer Edge Delivery Service-Seite (EDS) anzeigen
 
-## Schritt 3: Vorschau des Formulars mit Ihrer Edge Delivery Service-Seite (EDS) anzeigen
 
 Bis jetzt haben Sie den Formularblock für Ihr EDS-Projekt aktiviert und die Struktur des Formulars vorbereitet. Nun können Sie eine Vorschau des Formulars anzeigen:
 
-1. Wechseln Sie zum Projektverzeichnis für die AEM Edge-Bereitstellung auf Microsoft SharePoint oder Google Drive.
+1. Wechseln Sie zu Ihrem Microsoft SharePoint- oder Google Drive-Konto und öffnen Sie das Projektverzeichnis AEM Edge-Bereitstellung .
 
-1. Erstellen oder öffnen Sie eine Dokumentendatei zum Hosten des Formulars. Öffnen Sie beispielsweise die Indexdatei.
+1. Öffnen Sie eine Dokumentdatei, um das Formular darin einzubetten. Öffnen Sie beispielsweise die Indexdatei. Sie können auch eine neue Datei erstellen.
 
 1. Navigieren Sie zum gewünschten Speicherort im Dokument, dem Sie das Formular hinzufügen möchten.
 
@@ -153,6 +135,9 @@ Bis jetzt haben Sie den Formularblock für Ihr EDS-Projekt aktiviert und die Str
    Füllen Sie nun das Formular aus und klicken Sie auf die Senden-Schaltfläche. Es tritt ein Fehler ähnlich dem folgenden auf, da die Tabelle noch nicht für die Annahme der Daten konfiguriert ist.
 
    ![Fehler bei Formularübermittlung](/help/edge/assets/form-error.png)
+
++++
+
 
 ## Nächster Schritt
 
