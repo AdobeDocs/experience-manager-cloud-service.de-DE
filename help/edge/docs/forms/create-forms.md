@@ -4,10 +4,10 @@ description: Handwerkliche perfekte Formen, schnell! ⚡ AEM Forms Edge Delivery
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 7b497791c70fd588b7e8c9a94caa218189d3153a
+source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 2%
+source-wordcount: '889'
+ht-degree: 1%
 
 ---
 
@@ -18,33 +18,31 @@ Im heutigen digitalen Zeitalter ist die Erstellung benutzerfreundlicher Formular
 
 Diese Formulare senden Daten direkt an eine Microsoft Excel- oder Google Tabellen-Datei, sodass Sie ein dynamisches Ökosystem und robuste APIs von Google Tabellen, Microsoft Excel und Microsoft SharePoint verwenden können, um gesendete Daten einfach zu verarbeiten oder einen bestehenden Geschäftsarbeitsablauf zu initiieren.
 
+![Erste Schritte mit Edge Delivery Forms](/help/edge/assets/getting-started-with-eds-forms.png)
+
+
 ## Voraussetzungen
 
-* Sie haben ein GitHub-Konto.
-* Sie haben Zugriff auf Google Tabellen oder Microsoft SharePoint.
-* Sie verstehen die Grundlagen von Git, HTML, CSS und JavaScript.
-* Sie haben Node und NPM für die lokale Entwicklung installiert.
-
-## Bevor Sie beginnen
+Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
 * Richten Sie Ihr Edge Delivery Service-Projekt (EDS) ein und klonen Sie es. Siehe [Entwickler-Tutorial](https://www.aem.live/developer/tutorial) für Details.
-* Klonen Sie die [Forms Block-Repository](https://github.com/adobe/afb).
-
-  ![Erste Schritte mit Edge Delivery Forms](/help/edge/assets/getting-started-with-eds-forms.png)
+* Klonen Sie die [Forms Block-Repository](https://github.com/adobe/afb). Sie enthält den Code zum Rendern des Formulars auf einer EDS Sites-Seite.
+* Stellen Sie sicher, dass Sie Zugriff auf Google Tabellen oder Microsoft SharePoint haben.
 
 
 ## Formular erstellen
-
 
 +++ Schritt 1: Fügen Sie den Formularblock zu Ihrem EDS-Projekt (Edge Delivery Service) hinzu.
 
 Die AEM Forms Edge-Bereitstellung enthält einen Formularblock, mit dem Sie mühelos Formulare erstellen können, um erfasste Daten zu erfassen und zu speichern. So fügen Sie den Formularblock in Ihr Edge Delivery Service-Projekt ein:
 
-1. Navigieren Sie zu `[cloned Forms Block repository folder]`/blocks/.
+1. Navigieren Sie zu `[cloned Forms Block repository folder]/blocks/`.
 
-1. Kopieren Sie die `forms` Ordner in `[Cloned EDS Project repository folder]\blocks` Ordner.
+1. Kopieren Sie die `forms` Ordner in `[Cloned EDS Project repository folder]/blocks` Ordner.
 
-1. Checken Sie den Ordner &quot;Formular&quot;und die zugrunde liegenden Dateien in Ihr Edge Delivery Service-Projekt auf GitHub ein.
+   >[!VIDEO](https://video.tv.adobe.com/v/3427487?quality=12&learn=on)
+
+1. Checkin `form` Ordner und die zugrunde liegenden Dateien in Ihrem Edge Delivery Service-Projekt auf GitHub.
 
    ```Shell
    cd ..
@@ -112,7 +110,7 @@ Bis jetzt haben Sie den Formularblock für Ihr EDS-Projekt aktiviert und die Str
 
 1. Wechseln Sie zu Ihrem Microsoft SharePoint- oder Google Drive-Konto und öffnen Sie das Projektverzeichnis AEM Edge-Bereitstellung .
 
-1. Öffnen Sie eine Dokumentdatei, um das Formular darin einzubetten. Öffnen Sie beispielsweise die Indexdatei. Sie können auch eine neue Datei erstellen.
+1. Öffnen Sie eine Dokumentdatei, um das Formular darin einzubetten. Öffnen Sie beispielsweise die Indexdatei. Sie können auch eine neue Dokumentendatei erstellen.
 
 1. Navigieren Sie zum gewünschten Speicherort im Dokument, dem Sie das Formular hinzufügen möchten.
 

@@ -4,9 +4,9 @@ description: Erstellen Sie leistungsstarke Formulare schneller mit Tabellen und 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '989'
 ht-degree: 1%
 
 ---
@@ -14,65 +14,72 @@ ht-degree: 1%
 
 # Formular aktivieren, um Daten zu senden
 
-Nachdem Sie das Formular erstellt und in der Vorschau angezeigt haben, aktivieren Sie die entsprechende Tabelle, um Daten zu akzeptieren. Richten Sie die Tabelle so ein, dass die Header, die mit den zu erfassenden Daten übereinstimmen, mit den Daten übereinstimmen, die Sie erfassen möchten, um mit der Akzeptanz der Daten zu beginnen. Alle Header, die dem &quot;shared-default&quot;-Blatt hinzugefügt wurden, sollten ebenfalls im &quot;eingehenden&quot;Blatt unter einer Tabelle vorhanden sein.
+Sobald du [das Formular erstellt und in der Vorschau angezeigt wurde](/help/edge/docs/forms/create-forms.md)ist es an der Zeit, die entsprechende Tabelle so zu aktivieren, dass sie Daten erhält.
 
-Im folgenden Beispiel werden Felder für ein Formular &quot;contact-us&quot;angezeigt:
+>[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
-![Felder für ein Kontakt-Formular](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
+So aktivieren Sie das Arbeitsblatt:
 
-
-Sobald diese Einrichtung abgeschlossen ist, kann Ihr Formular Übermittlungen annehmen. Sie können eine der folgenden Methoden verwenden, um die Akzeptanz von Daten in Ihrer Tabelle zu ermöglichen:
-
-* [Manuelles Konfigurieren eines Arbeitsblatts für die Datenaufnahme](#manually-configure-a-spreadsheet-to-receive-data)
-
-* [Verwenden Sie Admin-APIs, um die Akzeptanz von Daten in einer Tabelle zu ermöglichen](#use-admin-apis-to-enable-a-spreadsheet-to-receive-data-use-admin-apis-to-enable-a-spreadsheet-to-recieve-data)
-
-## Manuelles Konfigurieren eines Arbeitsblatts für die Datenaufnahme
-
-So konfigurieren Sie eine Tabelle manuell, um Daten zu akzeptieren:
-
-
-1. Öffnen Sie die von Ihnen erstellte Arbeitsmappe und ändern Sie den Namen des Standardblatts in &quot;Eingehend&quot;.
+1. Öffnen Sie das Arbeitsblatt, das Ihr Formular enthält, fügen Sie ihm ein Arbeitsblatt hinzu und ändern Sie den Namen des Arbeitsblatts in `incoming`.
 
    >[!WARNING]
    >
-   > Wenn das &quot;eingehende&quot; Blatt nicht vorhanden ist, sendet AEM keine Daten an diese Arbeitsmappe.
+   > Wenn die Variable `incoming` Das Blatt existiert nicht, AEM sendet keine Daten an diese Arbeitsmappe.
 
-1. Bereiten Sie das Blatt vor, indem Sie Kopfzeilen hinzufügen, die mit den eingegebenen Daten übereinstimmen. Im folgenden Beispiel werden Felder für ein Formular &quot;contact-us&quot;angezeigt:
+1. Im `incoming` -Tabelle alle Spaltenüberschriften in `Name` Spalte (Formularfeldnamen) in der `shared-default` Blatt.
+
+   Im folgenden Beispiel werden Kopfzeilen für ein &quot;contact-us&quot;-Formular angezeigt:
 
    ![Felder für ein Kontakt-Formular](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. Zeigen Sie eine Vorschau der Tabelle im Sidekick an.
+1. Verwenden Sie den Sidekick, um eine Vorschau des Blatts anzuzeigen.
 
    >[!NOTE]
    >
-   >Auch wenn Sie das Blatt zuvor in der Vorschau angezeigt haben, müssen Sie es erneut in der Vorschau anzeigen, nachdem Sie das &quot;eingehende&quot;Blatt zum ersten Mal erstellt haben.
+   >Selbst wenn Sie die Vorschau des Arbeitsblatts zuvor angesehen haben, müssen Sie die Vorschau erneut anzeigen, nachdem Sie die `incoming` erstmalig.
 
 
-## Verwenden Sie Admin-APIs, um die Akzeptanz von Daten in einer Tabelle zu ermöglichen
+Nachdem die Feldnamen zum `incoming` -Seite, kann Ihr Formular Übermittlungen annehmen. Sie können das Formular in der Vorschau anzeigen und Daten mit ihm an das Blatt senden.
 
-Sie können eine POST-Anfrage an die Formularroute im AEM Admin-Dienst initiieren. Nach Erhalt der Hauptteildaten der POST analysiert der Admin-Dienst sie und generiert selbstständig die für die Datenerfassung erforderlichen Kopfzeilen, Tabellen und Arbeitsblätter, wodurch die Funktionalität des Formulardienstes optimiert wird.
+Beachten Sie auch die folgenden Änderungen in Ihrer Tabelle:
+
+Eine Tabelle mit dem Namen &quot;Slack&quot;wird Ihrer Excel-Arbeitsmappe oder Ihrem Google-Arbeitsblatt hinzugefügt. In diesem Arbeitsblatt können Sie automatische Benachrichtigungen für einen bestimmten Slack-Kanal konfigurieren, wenn neue Daten in Ihre Tabelle aufgenommen werden. Derzeit unterstützt AEM ausschließlich Benachrichtigungen an die Organisation AEM Engineering Slack und die Adobe Enterprise Support-Organisation.
+
+1. Um Slack-Benachrichtigungen einzurichten, geben Sie die &quot;teamId&quot; des Slack-Arbeitsbereichs und den &quot;Kanalnamen&quot; bzw. die &quot;ID&quot; ein. Sie können auch den slack-Bot (mit dem Debugging-Befehl) nach der &quot;teamId&quot;und der &quot;channel ID&quot;fragen. Die Verwendung der &quot;Kanal-ID&quot;anstelle des &quot;Kanalnamens&quot;ist vorzuziehen, da Kanalumbenennungen erhalten bleiben.
+
+   >[!NOTE]
+   >
+   > Bei älteren Formularen war die Spalte &quot;teamId&quot;nicht vorhanden. Die &quot;teamId&quot;wurde in die Kanalspalte eingeschlossen, getrennt durch &quot;#&quot;oder &quot;/&quot;.
+
+1. Geben Sie einen beliebigen Titel ein und geben Sie unter den Feldern die Namen der Felder ein, die in der Slack-Benachrichtigung angezeigt werden sollen. Jede Überschrift sollte durch ein Komma getrennt werden (z. B. Name, E-Mail).
+
+   >[!WARNING]
+   >
+   >  Die &quot;freigegebenen Standard&quot;-Tabellen dürfen niemals persönlich identifizierbare Informationen oder vertrauliche Daten enthalten, die Ihnen nicht mit dem öffentlichen Zugriff vertraut sind.
+
+
+## (Optional) Verwenden Sie Admin-APIs, um die Akzeptanz von Daten in einer Tabelle zu ermöglichen
+
+Sie können auch eine POST-Anfrage an das Formular senden, damit es Daten aufnehmen und Kopfzeilen für die `incoming` Blatt. Nach Erhalt der POST-Anfrage analysiert der Dienst den Anforderungstext und generiert autonom die für die Datenerfassung erforderlichen Kopfzeilen und Arbeitsblätter.
 
 So verwenden Sie Admin-APIs, um eine Tabelle für die Datenaufnahme zu aktivieren:
 
 
-1. Öffnen Sie die von Ihnen erstellte Arbeitsmappe und ändern Sie den Namen des Standardblatts in &quot;Eingehend&quot;.
+1. Öffnen Sie die von Ihnen erstellte Arbeitsmappe und ändern Sie den Namen des Standardblatts in `incoming`.
 
    >[!WARNING]
    >
-   > Wenn das &quot;eingehende&quot; Blatt nicht vorhanden ist, sendet AEM keine Daten an diese Arbeitsmappe.
+   > Wenn die Variable `incoming` Das Blatt existiert nicht, AEM sendet keine Daten an diese Arbeitsmappe.
 
 1. Zeigen Sie eine Vorschau der Tabelle im Sidekick an.
 
    >[!NOTE]
    >
-   >Auch wenn Sie das Blatt zuvor in der Vorschau angezeigt haben, müssen Sie es erneut in der Vorschau anzeigen, nachdem Sie das &quot;eingehende&quot;Blatt zum ersten Mal erstellt haben.
+   >Selbst wenn Sie die Vorschau des Arbeitsblatts zuvor angesehen haben, müssen Sie die Vorschau erneut anzeigen, nachdem Sie die `incoming` erstmalig.
 
-1. Bereiten Sie das Blatt vor, indem Sie Kopfzeilen hinzufügen, die mit den eingegebenen Daten übereinstimmen.
+1. Senden Sie die POST-Anfrage, um die entsprechenden Header im `incoming` und fügen Sie die `shared-default` Blätter zu Ihrem Spread, wenn es nicht bereits vorhanden ist.
 
-   Senden Sie dazu eine POST-Anfrage an die Formularroute im AEM Admin-Dienst. Der Admin-Dienst prüft die Daten im Hauptteil der POST und generiert die entsprechenden Kopfzeilen, Tabellen und Tabellen, die erforderlich sind, um Daten effektiv zu erfassen und den Forms-Dienst optimal zu nutzen.
-
-   Informationen zum Formatieren der POST-Anforderung zum Einrichten des Arbeitsblatts finden Sie im Abschnitt [Dokumentation zur Admin-API](https://www.hlx.live/docs/admin.html#tag/form). Sehen Sie sich auch das unten bereitgestellte Beispiel an:
+   Informationen zum Formatieren der POST-Anforderung zum Einrichten des Arbeitsblatts finden Sie im Abschnitt [Dokumentation zur Admin-API](https://www.hlx.live/docs/admin.html#tag/form). Sie können sich das folgende Beispiel ansehen:
 
    **Anfrage**
 
@@ -135,27 +142,26 @@ So verwenden Sie Admin-APIs, um eine Tabelle für die Datenaufnahme zu aktiviere
    }'
    ```
 
-   Die oben erwähnte POST-Anfrage enthält Beispieldaten, einschließlich der beiden Formularfelder und der entsprechenden Beispielwerte. Diese Daten werden vom Admin-Dienst zum Einrichten des Formulars verwendet.
+   Die oben genannte POST-Anfrage enthält Beispieldaten, einschließlich der beiden Formularfelder und der entsprechenden Beispielwerte. Diese Daten werden vom Admin-Dienst zum Einrichten des Formulars verwendet.
 
-   Wenn Sie die POST-Anforderung an den Admin-Dienst senden, beachten Sie die folgenden Änderungen in Ihrer Arbeitsmappe:
+   Ihr Formular kann jetzt Daten annehmen. Beachten Sie auch die folgenden Änderungen in Ihrer Tabelle:
 
-* Eine neue Tabelle mit dem Namen &quot;shared-default&quot;wird zu Ihrer Excel-Arbeitsmappe oder Google-Tabelle hinzugefügt. Die im Arbeitsblatt &quot;shared-default&quot;vorhandenen Daten werden abgerufen, wenn eine GET zum Arbeitsblatt angefordert wird. Diese Tabelle dient als optimale Position für die Verwendung von Tabellenformeln zur Zusammenfassung der eingehenden Daten, wodurch sie für den Verbrauch in anderen Kontexten geeignet ist.
+Eine Tabelle mit dem Namen &quot;Slack&quot;wird Ihrer Excel-Arbeitsmappe oder Ihrem Google-Arbeitsblatt hinzugefügt. In diesem Arbeitsblatt können Sie automatische Benachrichtigungen für einen bestimmten Slack-Kanal konfigurieren, wenn neue Daten in Ihre Tabelle aufgenommen werden. Derzeit unterstützt AEM ausschließlich Benachrichtigungen an die Organisation AEM Engineering Slack und die Adobe Enterprise Support-Organisation.
 
-  Die &quot;freigegebenen Standard&quot;-Tabellen dürfen niemals persönlich identifizierbare Informationen oder vertrauliche Daten enthalten, die Ihnen nicht mit dem öffentlichen Zugriff vertraut sind.
+1. Um Slack-Benachrichtigungen einzurichten, geben Sie die &quot;teamId&quot; des Slack-Arbeitsbereichs und den &quot;Kanalnamen&quot; bzw. die &quot;ID&quot; ein. Sie können auch den slack-Bot (mit dem Debugging-Befehl) nach der &quot;teamId&quot;und der &quot;channel ID&quot;fragen. Die Verwendung der &quot;Kanal-ID&quot;anstelle des &quot;Kanalnamens&quot;ist vorzuziehen, da Kanalumbenennungen erhalten bleiben.
 
-* Eine Tabelle mit dem Namen &quot;Slack&quot;wird Ihrer Excel-Arbeitsmappe oder Ihrem Google-Arbeitsblatt hinzugefügt. In diesem Arbeitsblatt können Sie automatische Benachrichtigungen für einen bestimmten Slack-Kanal konfigurieren, wenn neue Daten in Ihre Tabelle aufgenommen werden. Derzeit unterstützt AEM ausschließlich Benachrichtigungen an die Organisation AEM Engineering Slack und die Adobe Enterprise Support-Organisation.
+   >[!NOTE]
+   >
+   > Bei älteren Formularen war die Spalte &quot;teamId&quot;nicht vorhanden. Die &quot;teamId&quot;wurde in die Kanalspalte eingeschlossen, getrennt durch &quot;#&quot;oder &quot;/&quot;.
 
-   1. Um Slack-Benachrichtigungen einzurichten, geben Sie die &quot;teamId&quot; des Slack-Arbeitsbereichs und den &quot;Kanalnamen&quot; bzw. die &quot;ID&quot; ein. Sie können auch den slack-Bot (mit dem Debugging-Befehl) nach der &quot;teamId&quot;und der &quot;channel ID&quot;fragen. Die Verwendung der &quot;Kanal-ID&quot;anstelle des &quot;Kanalnamens&quot;ist vorzuziehen, da Kanalumbenennungen erhalten bleiben.
+1. Geben Sie einen beliebigen Titel ein und geben Sie unter den Feldern die Namen der Felder ein, die in der Slack-Benachrichtigung angezeigt werden sollen. Jede Überschrift sollte durch ein Komma getrennt werden (z. B. Name, E-Mail).
 
-      >[!NOTE]
-      >
-      > Bei älteren Formularen war die Spalte &quot;teamId&quot;nicht vorhanden. Die &quot;teamId&quot;wurde in die Kanalspalte eingeschlossen, getrennt durch &quot;#&quot;oder &quot;/&quot;.
-
-   1. Geben Sie einen beliebigen Titel ein und geben Sie unter den Feldern die Namen der Felder ein, die in der Slack-Benachrichtigung angezeigt werden sollen. Jede Überschrift sollte durch ein Komma getrennt werden (z. B. Name, E-Mail).
 
 Das Blatt ist jetzt so eingerichtet, dass es Daten erhält. Sie können [Vorschau des Formulars mit dem Formularblock anzeigen](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) oder [POST-Anfragen verwenden](#use-admin-apis-to-send-data-to-your-sheet) , um Daten an die Tabelle zu senden.
 
-
+>[!WARNING]
+>
+>  Die &quot;freigegebenen Standard&quot;-Tabellen dürfen niemals persönlich identifizierbare Informationen oder vertrauliche Daten enthalten, die Ihnen nicht mit dem öffentlichen Zugriff vertraut sind.
 
 ## Daten an Ihr Blatt senden {#send-data-to-your-sheet}
 
