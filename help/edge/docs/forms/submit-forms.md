@@ -1,18 +1,18 @@
 ---
-title: Von Tabellen in Forms - Überarbeiten von Feldvalidierungen für Formularblöcke
-description: Erstellen Sie leistungsstarke Formulare schneller mit Tabellen und Formularblock-Feldern! Dieses Handbuch hilft Ihnen beim Erstellen benutzerdefinierter Validierungen für EDS Forms Block-Felder.
+title: Vorbereiten der Tabelle auf die Datenaufnahme
+description: Erstellen Sie leistungsstarke Formulare schneller mit Tabellen und Formularblock-Feldern!
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
 
 
-# Formular aktivieren, um Daten zu senden
+# Vorbereiten der Tabelle auf die Datenaufnahme
 
 Sobald du [das Formular erstellt und in der Vorschau angezeigt wurde](/help/edge/docs/forms/create-forms.md)ist es an der Zeit, die entsprechende Tabelle so zu aktivieren, dass sie Daten erhält.
 
@@ -20,15 +20,15 @@ Sobald du [das Formular erstellt und in der Vorschau angezeigt wurde](/help/edge
 
 So aktivieren Sie das Arbeitsblatt:
 
-1. Öffnen Sie das Arbeitsblatt, das Ihr Formular enthält, fügen Sie ihm ein Arbeitsblatt hinzu und ändern Sie den Namen des Arbeitsblatts in `incoming`.
+1. Öffnen Sie das Arbeitsblatt, in dem sich Ihr Formular befindet, und fügen Sie ein neues Blatt hinzu, indem Sie es umbenennen. `incoming`.
 
    >[!WARNING]
    >
-   > Wenn die Variable `incoming` Das Blatt existiert nicht, AEM sendet keine Daten an diese Arbeitsmappe.
+   > Wenn die Variable `incoming` -Tabelle nicht vorhanden ist, AEM keine Daten an die Tabelle sendet.
 
-1. Im `incoming` -Tabelle alle Spaltenüberschriften in `Name` Spalte (Formularfeldnamen) in der `shared-default` Blatt.
+1. Spiegeln Sie die Formularfeldnamen und -werte der `Name` in der`shared-default` -Tabelle zu den Kopfzeilen im `incoming` Blatt.
 
-   Im folgenden Beispiel werden Kopfzeilen für ein &quot;contact-us&quot;-Formular angezeigt:
+   Jeder Wert in `Name` Spalte `shared-default` Tabellenblatt, mit Ausnahme der Senden-Schaltfläche, dient als Kopfzeile im `incoming` Blatt. Betrachten Sie beispielsweise die folgende Abbildung, die Kopfzeilen für ein &quot;contact-us&quot;-Formular veranschaulicht:
 
    ![Felder für ein Kontakt-Formular](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
@@ -77,9 +77,9 @@ So verwenden Sie Admin-APIs, um eine Tabelle für die Datenaufnahme zu aktiviere
    >
    >Selbst wenn Sie die Vorschau des Arbeitsblatts zuvor angesehen haben, müssen Sie die Vorschau erneut anzeigen, nachdem Sie die `incoming` erstmalig.
 
-1. Senden Sie die POST-Anfrage, um die entsprechenden Header im `incoming` und fügen Sie die `shared-default` Blätter zu Ihrem Spread, wenn es nicht bereits vorhanden ist.
+1. Senden Sie die POST-Anfrage, um die entsprechenden Header im `incoming` und fügen Sie die `shared-default` Blätter zu Ihrem Spread, wenn es nicht bereits existiert.
 
-   Informationen zum Formatieren der POST-Anforderung zum Einrichten des Arbeitsblatts finden Sie im Abschnitt [Dokumentation zur Admin-API](https://www.hlx.live/docs/admin.html#tag/form). Sie können sich das folgende Beispiel ansehen:
+   Informationen zum Formatieren der POST-Anforderung zum Einrichten des Arbeitsblatts finden Sie im Abschnitt [Dokumentation zur Admin-API](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). Sie können sich das folgende Beispiel ansehen:
 
    **Anfrage**
 

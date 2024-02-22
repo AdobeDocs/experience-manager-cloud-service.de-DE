@@ -4,25 +4,35 @@ description: AEM Forms Edge Delivery Service wurde für optimale Leistung entwic
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 0%
+source-wordcount: '468'
+ht-degree: 1%
 
 ---
 
 
 # AEM Forms Edge Delivery Service {#aem-forms-edge-delivery-service-overview}
 
-AEM Forms Edge Delivery Service ist ein von Adobe angebotener zusammenstellbarer Service, mit dem Sie leistungsstarke Webformulare erstellen und bereitstellen können. Dieser zusammenstellbare Dienst lässt sich nahtlos in Adobe Experience Manager (AEM) integrieren, damit Sie mit einem intuitiven und effizienten Workflow leistungsstarke, blitzschnelle Webformulare entwerfen, erstellen und bereitstellen können.
-
-Der AEM Forms Edge Delivery Service hilft Ihnen bei Folgendem:
+AEM Forms Edge Delivery Service ist ein von Adobe angebotener zusammenstellbarer Service, mit dem Sie leistungsstarke Webformulare erstellen und bereitstellen können. Der Service bietet folgende Möglichkeiten:
 
 * **Gestaltete visuell verblüffende Formulare**: Entdecken Sie die bunten, Cookie-Cutter-Designs und fesseln Sie Benutzer mit dynamischen, modernen Formularen, die Ihre Markenidentität widerspiegeln. Nutzen Sie vorgefertigte Komponenten oder erstellen Sie eigene benutzerdefinierte Komponenten, um Ihre Vision schnell und einfach umzusetzen.
 
 * **Erstellen von Formularen mit perfektem Leuchtturm-Ergebnis**: Erstellen Sie Formulare, die schnell geladen und gerendert werden, selbst bei langsamen Internetverbindungen. Schnellere Ladezeiten und optimiertes Benutzererlebnis tragen zu höheren Formularabschlussraten und verbesserten Konversionsraten bei.
 
 * **Vereinfachen Sie Authoring und Übermittlung**: Erstellen Sie Formulare mit vertrauten Tools wie Microsoft Excel oder Google Tabellen anstelle der herkömmlichen Authoring-Umgebungen. Senden Sie Formulare direkt an Ihre Microsoft Excel- oder Google Tabellen und verwenden Sie ihr Ökosystem, um die übermittelten Daten einfach zu verarbeiten.
+
+
+Dieser zusammenstellbare Dienst ist von der Inhaltsquelle entkoppelt und bietet die Flexibilität bei der Inhaltserstellung, indem er es Benutzern ermöglicht, ihre bevorzugten Authoring-Tools zu verwenden.
+
+![Bearbeitungswerkzeuge für Edge-Formulare](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+
+Autoren von Inhalten können Tools nutzen, mit denen sie vertraut sind, z. B. Microsoft Excel oder Google Tabellen (Dokumentenbasiertes Authoring), JSON Editors oder AEM Forms Adaptive Forms Editor für WYSIWYG-Bearbeitung (AEM Forms-Projekte), um Formulare zu entwerfen und zu erstellen.
+
+>[!NOTE]
+>
+>
+> Die WYSIWYG-Bearbeitungsfunktion und Cross-Walk-Bereiche sind im Frühbenutzerprogramm verfügbar. Sie können von Ihrer offiziellen E-Mail-ID aus an aem-forms-early-adopter-program@adobe.com schreiben, um dem frühen Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern.
 
 ## Erste Schritte mit den Grundlagen
 
@@ -47,7 +57,7 @@ Der AEM Forms Edge Delivery Service hilft Ihnen bei Folgendem:
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
             <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Erstellen eines Formulars mit Formularen mit Formularen" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Formular erstellen</b>
+            <br><b style="margin-top: 5px;">Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel</b>
         </a>
         <p>Erstellen Sie Formulare, die schnell und automatisch auf Mobilgeräten geladen und wiedergegeben werden.</p>
     </div>
