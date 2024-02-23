@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service wurde für optimale Leistung entwic
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '463'
 ht-degree: 1%
 
 ---
@@ -27,12 +27,12 @@ Dieser zusammenstellbare Dienst ist von der Inhaltsquelle entkoppelt und bietet 
 
 ![Bearbeitungswerkzeuge für Edge-Formulare](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-Autoren von Inhalten können Tools nutzen, mit denen sie vertraut sind, z. B. Microsoft Excel oder Google Tabellen (Dokumentenbasiertes Authoring), JSON Editors oder AEM Forms Adaptive Forms Editor für WYSIWYG-Bearbeitung (AEM Forms-Projekte), um Formulare zu entwerfen und zu erstellen.
+Autoren von Inhalten können Tools nutzen, mit denen sie vertraut sind, z. B. Microsoft Excel oder Google Tabellen (Dokumentenbasiertes Authoring), JSON-Dateien (Headless Authoring) oder AEM Forms Adaptive Forms Editor (WYSIWYG Authoring), um Formulare zu entwerfen und zu erstellen.
 
 >[!NOTE]
 >
 >
-> Die WYSIWYG-Bearbeitungsfunktion und Cross-Walk-Bereiche sind im Frühbenutzerprogramm verfügbar. Sie können von Ihrer offiziellen E-Mail-ID aus an aem-forms-early-adopter-program@adobe.com schreiben, um dem frühen Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern.
+> Die WYSIWYG-Authoring-Funktion ist im Rahmen des Programms für frühe Anwender verfügbar. Sie können von Ihrer offiziellen E-Mail-ID aus an aem-forms-early-adopter-program@adobe.com schreiben, um dem frühen Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern.
 
 ## Erste Schritte mit den Grundlagen
 
@@ -67,13 +67,12 @@ Autoren von Inhalten können Tools nutzen, mit denen sie vertraut sind, z. B. Mi
             <br><b style="margin-top: 5px;">Feldvalidierungen anwenden</b>
         </a>
         <p>Reduzieren Sie Fehler und Frustration, indem Sie die Formulareingaben auf korrekte Formatierung überprüfen.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/form-fragments.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Formularfragmente in einem EDS-Formular verwenden" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Formularfragmente erstellen</b>
+    </div>    <div class="card-container">
+        <a href="/help/edge/docs/forms/style-theme-forms.md">
+            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Stile oder Designs auf ein Formular anwenden" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Anpassen eines Designs</b>
         </a>
-        <p>Verwenden Sie vorkonfigurierte Fragmente über mehrere Formulare hinweg erneut.</p>
+        <p>Erstellen Sie ein konsistentes Markenbild, indem Sie dasselbe Design auf alle Formulare anwenden.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
@@ -83,11 +82,11 @@ Autoren von Inhalten können Tools nutzen, mit denen sie vertraut sind, z. B. Mi
         <p>Erweitern Sie die Reichweite Ihrer Formulare, während Sie die Kosten im Auge behalten.</p>
     </div>
     <div class="card-container">
-        <a href="/help/edge/docs/forms/style-theme-forms.md">
-            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Stile oder Designs auf ein Formular anwenden" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Anpassen eines Designs</b>
+        <a href="/help/edge/docs/forms/form-fragments.md">
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Formularfragmente in einem EDS-Formular verwenden" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Formularfragmente erstellen</b>
         </a>
-        <p>Erstellen Sie ein konsistentes Markenbild, indem Sie dasselbe Design auf alle Formulare anwenden.</p>
+        <p>Verwenden Sie vorkonfigurierte Fragmente über mehrere Formulare hinweg erneut.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  
