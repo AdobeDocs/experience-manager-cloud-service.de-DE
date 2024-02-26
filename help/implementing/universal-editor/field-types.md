@@ -2,10 +2,10 @@
 title: Modelldefinitionen, Felder und Komponententypen
 description: Erfahren Sie anhand von Beispielen mehr über Felder und Komponententypen, die der universelle Editor in der Eigenschaftenleiste bearbeiten kann. Erfahren Sie, wie Sie Ihre eigene App instrumentieren können, indem Sie eine Modelldefinition erstellen und mit der Komponente verknüpfen.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: bbe02f66b5bce3b919be4abd3b2de482a235b6ee
+source-git-commit: fcdba895510b0c428a4274092c8b314fd36f5c7d
 workflow-type: tm+mt
-source-wordcount: '1126'
-ht-degree: 9%
+source-wordcount: '1144'
+ht-degree: 10%
 
 ---
 
@@ -89,6 +89,23 @@ Ein Feldobjekt hat die folgende Typdefinition.
 ### Komponententypen {#component-types}
 
 Im Folgenden finden Sie die Komponententypen, die für das Rendern von Feldern verwendet werden können.
+
+| Beschreibung | Komponententyp |
+|---|---|
+| [AEM Tag](#aem-tag) | `aem-tag` |
+| [AEM](#aem-content) | `aem-content` |
+| [Boolesch](#boolean) | `boolean` |
+| [Kontrollkästchengruppe](#checkbox-group) | `checkbox-group` |
+| [Container](#container) | `container` |
+| [Datum/Uhrzeit](#date-time) | `date-time` |
+| [Mehrfachauswahl](#multiselect) | `multiselect` |
+| [Zahl](#number) | `number` |
+| [Optionsfeldgruppe](#radio-group) | `radio-group` |
+| [Verweis](#reference) | `reference` |
+| [Rich-Text](#rich-text) | `rich-text` |
+| [Auswählen](#select) | `select` |
+| [Registerkarte](#tab) | `tab` |
+| [Text](#text) | `text` |
 
 #### AEM Tag {#aem-tag}
 
@@ -624,6 +641,59 @@ Ein Referenzkomponententyp ermöglicht einen Verweis auf ein anderes Datenobjekt
 
 >[!ENDTABS]
 
+#### Rich-Text {#rich-text}
+
+Rich-Text ermöglicht eine mehrzeilige Rich-Text-Eingabe. Es bietet zusätzliche Validierungstypen.
+
+| Validierungstyp | Werttyp | Beschreibung | Erforderlich |
+|---|---|---|---|
+| `maxSize` | `number` | Maximale Anzahl erlaubter Zeichen | Nein |
+| `customErrorMsg` | `string` | Meldung, die bei `maxSize` überschritten wird | Nein |
+
+>[!BEGINTABS]
+
+>[!TAB Beispiel 1]
+
+```json
+{
+  "id": "richtext",
+  "fields": [
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB Beispiel 2]
+
+```json
+{
+  "id": "another-richtext",
+  "fields": [
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string",
+      "validation": {
+        "maxSize": 1000,
+        "customErrorMsg": "That's about as funny as a screen door on a battleship."
+      }
+    }
+  ]
+}
+```
+
+>[!TAB Screenshot]
+
+![Screenshot des Textbereich-Komponententyps](assets/component-types/richtext.png)
+
+>[!ENDTABS]
+
 #### Auswählen {#select}
 
 Ein Typ &quot;Komponente auswählen&quot;ermöglicht die Auswahl einer einzelnen Option aus einer Liste vordefinierter Optionen in einem Dropdown-Menü.
@@ -704,62 +774,9 @@ Wenn Sie Elemente haben möchten, die über allen Registerkarten angezeigt werde
 
 >[!ENDTABS]
 
-#### Textbereich {#text-area}
+#### Text {#text}
 
-Ein Textbereich ermöglicht eine mehrzeilige Rich-Text-Eingabe. Es bietet zusätzliche Validierungstypen.
-
-| Validierungstyp | Werttyp | Beschreibung | Erforderlich |
-|---|---|---|---|
-| `maxSize` | `number` | Maximale Anzahl erlaubter Zeichen | Nein |
-| `customErrorMsg` | `string` | Meldung, die bei `maxSize` überschritten wird | Nein |
-
->[!BEGINTABS]
-
->[!TAB Beispiel 1]
-
-```json
-{
-  "id": "richtext",
-  "fields": [
-    {
-      "component": "text-area",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string"
-    }
-  ]
-}
-```
-
->[!TAB Beispiel 2]
-
-```json
-{
-  "id": "another-richtext",
-  "fields": [
-    {
-      "component": "text-area",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 1000,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
-    }
-  ]
-}
-```
-
->[!TAB Screenshot]
-
-![Screenshot des Textbereich-Komponententyps](assets/component-types/richtext.png)
-
->[!ENDTABS]
-
-#### Texteingabe {#text-input}
-
-Eine Texteingabe ermöglicht eine einzelne Textzeile.  Es enthält zusätzliche Validierungstypen.
+Text ermöglicht eine einzelne Textzeile.  Es enthält zusätzliche Validierungstypen.
 
 | Validierungstyp | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
@@ -777,7 +794,7 @@ Eine Texteingabe ermöglicht eine einzelne Textzeile.  Es enthält zusätzliche 
   "id": "simpletext",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "text",
       "label": "Simple Text",
       "valueType": "string"
@@ -793,7 +810,7 @@ Eine Texteingabe ermöglicht eine einzelne Textzeile.  Es enthält zusätzliche 
   "id": "another simpletext",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "text",
       "label": "Simple Text",
       "valueType": "string",
@@ -812,6 +829,6 @@ Eine Texteingabe ermöglicht eine einzelne Textzeile.  Es enthält zusätzliche 
 
 >[!TAB Screenshot]
 
-![Screenshot des Komponententyps für die Texteingabe](assets/component-types/simpletext.png)
+![Screenshot des Textkomponententyps](assets/component-types/simpletext.png)
 
 >[!ENDTABS]
