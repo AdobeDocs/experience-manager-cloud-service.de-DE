@@ -2,9 +2,9 @@
 title: Universal Editor-Aufrufe
 description: Erfahren Sie mehr über die verschiedenen Arten von Aufrufen, die der universelle Editor an Ihre App sendet, um Sie beim Debugging zu unterstützen.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
-source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
+source-git-commit: 1fc53e726f3a15c9ac7d772b4c181a7877e417af
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '615'
 ht-degree: 1%
 
 ---
@@ -27,6 +27,8 @@ Für den Entwickler kann es jedoch nützlich sein, diese Aufrufe zu verstehen un
 * Die **Nutzlast** enthält Details dazu, was der Editor aktualisiert, einschließlich der Angabe, was aktualisiert werden soll und wie es aktualisiert werden soll.
 * Die **Reaktion** enthält Details dazu, was vom Editor-Dienst genau aktualisiert wurde. Dadurch soll die Aktualisierung des Inhalts im Editor erleichtert werden. In bestimmten Fällen kann die `move` aufrufen, muss die gesamte Seite aktualisiert werden.
 
+Nachdem ein Aufruf erfolgreich abgeschlossen wurde, werden Ereignisse ausgelöst, die die Payload der Anfrage und der Antwort enthalten, die für Ihre eigene App angepasst werden können. Lesen Sie das Dokument . [Universelle Editor-Ereignisse](/help/implementing/universal-editor/events.md) für weitere Details.
+
 Im Folgenden finden Sie eine Liste der Aufruftypen, die der Universal Editor an Ihre App sendet, sowie Beispiel-Payloads und -Antworten.
 
 ## Aktualisieren {#update}
@@ -40,7 +42,9 @@ Die Payload enthält Details dazu, was an das JCR zurückgeschrieben werden soll
 * `type`: Der JCR-Werttyp der zu aktualisierenden Eigenschaft
 * `value`: Die aktualisierten Daten
 
-### Beispiel-Payload {#update-payload}
+>[!BEGINTABS]
+
+>[!TAB Beispiel-Payload]
 
 ```json
 {
@@ -60,7 +64,7 @@ Die Payload enthält Details dazu, was an das JCR zurückgeschrieben werden soll
 }
 ```
 
-### Beispielantwort {#update-response}
+>[!TAB Beispielantwort]
 
 ```json
 {
@@ -74,6 +78,8 @@ Die Payload enthält Details dazu, was an das JCR zurückgeschrieben werden soll
 }
 ```
 
+>[!ENDTABS]
+
 ## Details {#details}
 
 A `details` wird aufgerufen, wenn Ihre App im universellen Editor geladen wird, um den App-Inhalt abzurufen.
@@ -83,7 +89,9 @@ Die Payload enthält die zu rendernden Daten sowie Details dazu, was die Daten d
 * Für eine Komponente ruft der universelle Editor nur eine `data` -Objekt, da das Schema der Daten in der App definiert ist.
 * Bei Inhaltsfragmenten ruft der universelle Editor auch eine `schema` -Objekt, da das Inhaltsfragmentmodell im JCR definiert ist.
 
-### Beispiel-Payload {#details-payload}
+>[!BEGINTABS]
+
+>[!TAB Beispiel-Payload]
 
 ```json
 {
@@ -102,7 +110,7 @@ Die Payload enthält die zu rendernden Daten sowie Details dazu, was die Daten d
 }
 ```
 
-### Beispielantwort {#details-response}
+>[!TAB Beispielantwort]
 
 ```json
 {
@@ -134,6 +142,8 @@ Die Payload enthält die zu rendernden Daten sowie Details dazu, was die Daten d
 }
 ```
 
+>[!ENDTABS]
+
 ## Hinzufügen {#add}
 
 Ein `add` wird aufgerufen, wenn Sie mit dem universellen Editor eine neue Komponente in Ihrer App platzieren.
@@ -142,7 +152,9 @@ Die Payload enthält eine `path` -Objekt, das enthält, wo der Inhalt hinzugefü
 
 Er umfasst auch `content` -Objekt mit zusätzlichen Objekten für endpunktspezifische Details des zu speichernden Inhalts [für jedes Plug-in.](/help/implementing/universal-editor/architecture.md) Wenn Ihre App beispielsweise auf Inhalten von AEM und Magento basiert, enthält die Payload ein Datenobjekt für jedes System.
 
-### Beispiel-Payload {#add-payload}
+>[!BEGINTABS]
+
+>[!TAB Beispiel-Payload]
 
 ```json
 {
@@ -174,7 +186,7 @@ Er umfasst auch `content` -Objekt mit zusätzlichen Objekten für endpunktspezif
 }
 ```
 
-### Beispielantwort {#add-response}
+>[!TAB Beispielantwort]
 
 ```json
 {
@@ -188,13 +200,17 @@ Er umfasst auch `content` -Objekt mit zusätzlichen Objekten für endpunktspezif
 }
 ```
 
+>[!ENDTABS]
+
 ## Verschieben {#move}
 
 A `move` -Aufruf tritt auf, wenn Sie eine Komponente mit dem universellen Editor in Ihrer App verschieben.
 
 Die Payload enthält eine `from` Objekt, das definiert, wo die Komponente war, und ein `to` -Objekt, das definiert, wo es verschoben wurde.
 
-### Beispiel-Payload {#move-payload}
+>[!BEGINTABS]
+
+>[!TAB Beispiel-Payload]
 
 ```json
 {
@@ -227,7 +243,7 @@ Die Payload enthält eine `from` Objekt, das definiert, wo die Komponente war, u
 }
 ```
 
-### Beispielantwort {#move-response}
+>[!TAB Beispielantwort]
 
 ```json
 {
@@ -240,13 +256,17 @@ Die Payload enthält eine `from` Objekt, das definiert, wo die Komponente war, u
 }
 ```
 
+>[!ENDTABS]
+
 ## Remove {#remove}
 
 A `remove` wird aufgerufen, wenn Sie eine Komponente in Ihrer App mit dem universellen Editor löschen.
 
 Die Payload enthält den Pfad des entfernten Objekts.
 
-### Beispiel-Payload {#remove-payload}
+>[!BEGINTABS]
+
+>[!TAB Beispiel-Payload]
 
 ```json
 {
@@ -272,7 +292,7 @@ Die Payload enthält den Pfad des entfernten Objekts.
 }
 ```
 
-### Beispielantwort {#remove-response}
+>[!TAB Beispielantwort]
 
 ```json
 {
@@ -286,13 +306,17 @@ Die Payload enthält den Pfad des entfernten Objekts.
 }
 ```
 
+>[!ENDTABS]
+
 ## Publish {#publish}
 
 A `publish` wird aufgerufen, wenn Sie auf **Veröffentlichen** im universellen Editor, um den bearbeiteten Inhalt zu veröffentlichen.
 
 Der Universal Editor durchläuft den Inhalt und generiert eine Liste von Verweisen, die ebenfalls veröffentlicht werden müssen.
 
-### Beispiel-Payload {#publish-payload}
+>[!BEGINTABS]
+
+>[!TAB Beispiel-Payload]
 
 ```json
 {
@@ -332,7 +356,7 @@ Der Universal Editor durchläuft den Inhalt und generiert eine Liste von Verweis
 }
 ```
 
-### Beispielantwort {#publish-response}
+>[!TAB Beispielantwort]
 
 ```json
 {
@@ -355,3 +379,9 @@ Der Universal Editor durchläuft den Inhalt und generiert eine Liste von Verweis
   ]
 }
 ```
+
+>[!ENDTABS]
+
+## Zusätzliche Ressourcen {#additional-resources}
+
+* [Universelle Editor-Ereignisse](/help/implementing/universal-editor/events.md)
