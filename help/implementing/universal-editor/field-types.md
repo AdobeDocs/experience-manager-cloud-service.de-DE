@@ -2,10 +2,10 @@
 title: Modelldefinitionen, Felder und Komponententypen
 description: Erfahren Sie anhand von Beispielen mehr über Felder und Komponententypen, die der universelle Editor in der Eigenschaftenleiste bearbeiten kann. Erfahren Sie, wie Sie Ihre eigene App instrumentieren können, indem Sie eine Modelldefinition erstellen und mit der Komponente verknüpfen.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 550d26cde3d6b7be419bc9df70db8894851361c6
+source-git-commit: bbe02f66b5bce3b919be4abd3b2de482a235b6ee
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 11%
+source-wordcount: '1126'
+ht-degree: 9%
 
 ---
 
@@ -94,7 +94,9 @@ Im Folgenden finden Sie die Komponententypen, die für das Rendern von Feldern v
 
 Ein AEM Tag-Komponententyp aktiviert eine AEM Tag-Auswahl, die zum Anhängen von Tags an die Komponente verwendet werden kann.
 
-##### Beispiel {#sample-aem-tag}
+>[!BEGINTABS]
+
+>[!TAB Beispiel]
 
 ```json
 {
@@ -110,15 +112,19 @@ Ein AEM Tag-Komponententyp aktiviert eine AEM Tag-Auswahl, die zum Anhängen von
 }
 ```
 
-##### Screenshot {#screenshot-aem-tag}
+>[!TAB Screenshot]
 
 ![Screenshot AEM Tag-Komponententyps](assets/component-types/aem-tag-picker.png)
+
+>[!ENDTABS]
 
 #### AEM {#aem-content}
 
 Der Typ AEM Inhaltskomponente ermöglicht eine AEM Inhaltsauswahl, die zum Festlegen von Inhaltsverweisen verwendet werden kann.
 
-##### Beispiel {#sample-aem-content}
+>[!BEGINTABS]
+
+>[!TAB Beispiel]
 
 ```json
 {
@@ -135,9 +141,11 @@ Der Typ AEM Inhaltskomponente ermöglicht eine AEM Inhaltsauswahl, die zum Festl
 }
 ```
 
-##### Screenshot {#screenshot-aem-content}
+>[!TAB Screenshot]
 
 ![Screenshot AEM Inhaltskomponententyps](assets/component-types/aem-content-picker.png)
+
+>[!ENDTABS]
 
 #### Boolesch {#boolean}
 
@@ -147,7 +155,9 @@ Ein boolescher Komponententyp speichert einen einfachen true/false -Wert, der al
 |---|---|---|---|
 | `customErrorMsg` | `string` | Meldung, die angezeigt wird, wenn der eingegebene Wert kein boolescher Wert ist | Nein |
 
-##### Beispiel {#sample-boolean}
+>[!BEGINTABS]
+
+>[!TAB Beispiel 1]
 
 ```json
 {
@@ -162,6 +172,8 @@ Ein boolescher Komponententyp speichert einen einfachen true/false -Wert, der al
   ]
 }
 ```
+
+>[!TAB Beispiel 2]
 
 ```json
 {
@@ -180,15 +192,19 @@ Ein boolescher Komponententyp speichert einen einfachen true/false -Wert, der al
 }
 ```
 
-##### Screenshot {#screenshot-boolean}
+>[!TAB Screenshot]
 
 ![Screenshot des booleschen Komponententyps](assets/component-types/boolean.png)
+
+>[!ENDTABS]
 
 #### Kontrollkästchen-Gruppe {#checkbox-group}
 
 Ähnlich wie bei einem booleschen Wert ermöglicht ein Kontrollkästchengruppen-Komponententyp die Auswahl mehrerer true/false -Elemente, die als mehrere Kontrollkästchen gerendert werden.
 
-##### Beispiel {#sample-checkbox-group}
+>[!BEGINTABS]
+
+>[!TAB Beispiel]
 
 ```json
 {
@@ -208,9 +224,11 @@ Ein boolescher Komponententyp speichert einen einfachen true/false -Wert, der al
 }
 ```
 
-#### Screenshot {#screenshot-checkbox-group}
+>[!TAB Screenshot]
 
 ![Screenshot des Kontrollkästchengruppen-Komponententyps](assets/component-types/checkbox-group.png)
+
+>[!ENDTABS]
 
 #### Container {#container}
 
@@ -220,7 +238,9 @@ Ein Container-Komponententyp ermöglicht die Gruppierung von Komponenten. Es bie
 |---|---|---|---|
 | `collapsible` | `boolean` | Ist der Container ausblendbar? | Nein |
 
-##### Beispiel {#sample-container}
+>[!BEGINTABS]
+
+>[!TAB Beispiel]
 
 ```json
  {
@@ -251,9 +271,44 @@ Ein Container-Komponententyp ermöglicht die Gruppierung von Komponenten. Es bie
 }
 ```
 
-##### Screenshot {#screenshot-container}
+>[!TAB Screenshot]
 
 ![Screenshot des Container-Komponententyps](assets/component-types/container.png)
+
+#### Inhaltsfragment {#content-fragment}
+
+Mit der Auswahl für Inhaltsfragmente können Sie eine [Inhaltsfragment](/help/sites-cloud/authoring/fragments/content-fragments.md) und deren Varianten (falls erforderlich). Es bietet eine zusätzliche Konfiguration.
+
+| Konfiguration | Werttyp | Beschreibung | Erforderlich |
+|---|---|---|---|
+| `variationName` | `string` | Variablenname zum Speichern der ausgewählten Variante. Wenn nicht definiert, wird keine Variantenauswahl angezeigt | Nein |
+
+>[!BEGINTABS]
+
+>[!TAB Beispiel 1]
+
+```json
+[
+  {
+    "id": "aem-content-fragment",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "name": "picker",
+        "label": "Content Fragment Picker",
+        "valueType": "string",
+        "variationName": "contentFragmentVariation"
+      }
+    ]
+  }
+]
+```
+
+>[!TAB Screenshot]
+
+![Screenshot der Inhaltsfragmentauswahl](assets/component-types/aem-content-fragment.png)
+
+>[!ENDTABS]
 
 #### Datum/Uhrzeit {#date-time}
 
@@ -270,7 +325,9 @@ Es bietet außerdem einen zusätzlichen Validierungstyp.
 |---|---|---|---|
 | `customErrorMsg` | `string` | Meldung, die bei `valueFormat` ist nicht erfüllt | Nein |
 
-##### Beispiel {#sample-date-time}
+>[!BEGINTABS]
+
+>[!TAB Beispiel 1]
 
 ```json
 {
@@ -285,6 +342,8 @@ Es bietet außerdem einen zusätzlichen Validierungstyp.
   ]
 }
 ```
+
+>[!TAB Beispiel 2]
 
 ```json
 {
@@ -336,15 +395,55 @@ Es bietet außerdem einen zusätzlichen Validierungstyp.
 }
 ```
 
-##### Screenshot {#screenshot-date-time}
+>[!TAB Screenshot]
 
 ![Screenshot des Datums- und Uhrzeitkomponenten-Typs](assets/component-types/date-time.png)
+
+>[!ENDTABS]
+
+#### Experience Fragment {#experience-fragment}
+
+Mit der Experience Fragment-Auswahl können Sie eine [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) und deren Varianten (falls erforderlich). Es bietet eine zusätzliche Konfiguration.
+
+| Konfiguration | Werttyp | Beschreibung | Erforderlich |
+|---|---|---|---|
+| `variationName` | `string` | Variablenname zum Speichern der ausgewählten Variante. Wenn nicht definiert, wird keine Variantenauswahl angezeigt | Nein |
+
+>[!BEGINTABS]
+
+>[!TAB Beispiel 1]
+
+```json
+[
+  {
+    "id": "aem-experience-fragment",
+    "fields": [
+      {
+        "component": "aem-experience-fragment",
+        "name": "picker",
+        "label": "Experience Fragment Picker",
+        "valueType": "string",
+        "variationName": "experienceFragmentVariation"
+      }
+    ]
+  }
+]
+```
+
+>[!TAB Screenshot]
+
+![Screenshot der Experience Fragment-Auswahl](assets/component-types/aem-experience-fragment.png)
+
+>[!ENDTABS]
+
 
 #### Mehrfachauswahl {#multiselect}
 
 Ein Komponententyp &quot;multiselect&quot;zeigt mehrere Elemente zur Auswahl in einer Dropdown-Liste an, einschließlich der Möglichkeit, die auswählbaren Elemente zu gruppieren.
 
-##### Stichproben {#sample-multiselect}
+>[!BEGINTABS]
+
+>[!TAB Beispiel 1]
 
 ```json
 {
@@ -363,6 +462,8 @@ Ein Komponententyp &quot;multiselect&quot;zeigt mehrere Elemente zur Auswahl in 
   ]
 }
 ```
+
+>[!TAB Beispiel 2]
 
 ```json
 {
@@ -397,10 +498,12 @@ Ein Komponententyp &quot;multiselect&quot;zeigt mehrere Elemente zur Auswahl in 
 }
 ```
 
-##### Screenshots {#screenshot-multiselect}
+>[!TAB Screenshots]
 
 ![Screenshot des Multiselect-Komponententyps](assets/component-types/multiselect.png)
 ![Screenshot des Multiselect-Komponententyps mit Gruppierung](assets/component-types/multiselect-group.png)
+
+>[!ENDTABS]
 
 #### Zahl {#number}
 
@@ -412,7 +515,9 @@ Ein Komponententyp vom Typ Zahl ermöglicht die Eingabe einer Zahl. Es bietet zu
 | `numberMax` | `number` | Maximale zulässige Anzahl | Nein |
 | `customErrorMsg` | `string` | Meldung, die bei `numberMin` oder `numberMax` ist nicht erfüllt | Nein |
 
-##### Beispiel {#sample-number}
+>[!BEGINTABS]
+
+>[!TAB Beispiel 1]
 
 ```json
 {
@@ -428,6 +533,8 @@ Ein Komponententyp vom Typ Zahl ermöglicht die Eingabe einer Zahl. Es bietet zu
   ]
 }
 ```
+
+>[!TAB Beispiel 2]
 
 ```json
 {
@@ -451,15 +558,19 @@ Ein Komponententyp vom Typ Zahl ermöglicht die Eingabe einer Zahl. Es bietet zu
 }
 ```
 
-##### Screenshot {#screenshot-number}
+>[!TAB Screenshot]
 
 ![Screenshot des Komponententyps &quot;Zahl&quot;](assets/component-types/number.png)
+
+>[!ENDTABS]
 
 #### Optionsfeldgruppe {#radio-group}
 
 Ein Optionsfeldgruppen-Komponententyp ermöglicht eine sich gegenseitig ausschließende Auswahl aus mehreren Optionen, die als Gruppe ähnlich einer Kontrollkästchengruppe gerendert werden.
 
-##### Beispiel {#sample-radio-group}
+>[!BEGINTABS]
+
+>[!TAB Beispiel]
 
 ```json
 {
@@ -479,15 +590,19 @@ Ein Optionsfeldgruppen-Komponententyp ermöglicht eine sich gegenseitig ausschli
 }
 ```
 
-##### Screenshot {#screenshot-radio-group}
+>[!TAB Screenshot]
 
 ![Screenshot des Komponententyps einer Optionsfeldgruppe](assets/component-types/radio.png)
+
+>[!ENDTABS]
 
 #### Verweis {#reference}
 
 Ein Referenzkomponententyp ermöglicht einen Verweis auf ein anderes Datenobjekt aus dem aktuellen Objekt.
 
-##### Beispiel {#sample-reference}
+>[!BEGINTABS]
+
+>[!TAB Beispiel]
 
 ```json
 {
@@ -503,15 +618,19 @@ Ein Referenzkomponententyp ermöglicht einen Verweis auf ein anderes Datenobjekt
 }
 ```
 
-##### Screenshot {#screenshot-reference}
+>[!TAB Screenshot]
 
 ![Screenshot des Referenzkomponententyps](assets/component-types/reference.png)
+
+>[!ENDTABS]
 
 #### Auswählen {#select}
 
 Ein Typ &quot;Komponente auswählen&quot;ermöglicht die Auswahl einer einzelnen Option aus einer Liste vordefinierter Optionen in einem Dropdown-Menü.
 
-##### Beispiel {#sample-select}
+>[!BEGINTABS]
+
+>[!TAB Beispiel]
 
 ```json
 {
@@ -531,9 +650,11 @@ Ein Typ &quot;Komponente auswählen&quot;ermöglicht die Auswahl einer einzelnen
 }
 ```
 
-##### Screenshot {#screenshot-select}
+>[!TAB Screenshot]
 
 ![Screenshot des ausgewählten Komponententyps](assets/component-types/select.png)
+
+>[!ENDTABS]
 
 #### Registerkarte {#tab}
 
@@ -543,7 +664,9 @@ A `tab` -Definition kann als Trennzeichen im Array von `fields`. Alles, was hint
 
 Wenn Sie Elemente haben möchten, die über allen Registerkarten angezeigt werden, müssen diese vor allen Registerkarten definiert werden.
 
-##### Beispiel {#sample-tab}
+>[!BEGINTABS]
+
+>[!TAB Beispiel]
 
 ```json
 {
@@ -575,9 +698,11 @@ Wenn Sie Elemente haben möchten, die über allen Registerkarten angezeigt werde
 }
 ```
 
-##### Screenshot {#screenshot-tab}
+>[!TAB Screenshot]
 
 ![Screenshot des Registerkarten-Komponententyps](assets/component-types/tab.png)
+
+>[!ENDTABS]
 
 #### Textbereich {#text-area}
 
@@ -588,7 +713,9 @@ Ein Textbereich ermöglicht eine mehrzeilige Rich-Text-Eingabe. Es bietet zusät
 | `maxSize` | `number` | Maximale Anzahl erlaubter Zeichen | Nein |
 | `customErrorMsg` | `string` | Meldung, die bei `maxSize` überschritten wird | Nein |
 
-##### Beispiel {#sample-text-area}
+>[!BEGINTABS]
+
+>[!TAB Beispiel 1]
 
 ```json
 {
@@ -603,6 +730,8 @@ Ein Textbereich ermöglicht eine mehrzeilige Rich-Text-Eingabe. Es bietet zusät
   ]
 }
 ```
+
+>[!TAB Beispiel 2]
 
 ```json
 {
@@ -622,9 +751,11 @@ Ein Textbereich ermöglicht eine mehrzeilige Rich-Text-Eingabe. Es bietet zusät
 }
 ```
 
-##### Screenshot {#screenshot-text-area}
+>[!TAB Screenshot]
 
 ![Screenshot des Textbereich-Komponententyps](assets/component-types/richtext.png)
+
+>[!ENDTABS]
 
 #### Texteingabe {#text-input}
 
@@ -637,7 +768,9 @@ Eine Texteingabe ermöglicht eine einzelne Textzeile.  Es enthält zusätzliche 
 | `regExp` | `string` | Regulärer Ausdruck, der dem Eingabetext entsprechen muss | Nein |
 | `customErrorMsg` | `string` | Meldung, die bei `minLength`, `maxLength`, und/oder `regExp` verletzt | Nein |
 
-##### Beispiel {#sample-text-input}
+>[!BEGINTABS]
+
+>[!TAB Beispiel 1]
 
 ```json
 {
@@ -652,6 +785,8 @@ Eine Texteingabe ermöglicht eine einzelne Textzeile.  Es enthält zusätzliche 
   ]
 }
 ```
+
+>[!TAB Beispiel 2]
 
 ```json
 {
@@ -675,6 +810,8 @@ Eine Texteingabe ermöglicht eine einzelne Textzeile.  Es enthält zusätzliche 
 }
 ```
 
-##### Screenshot {#screenshot-text-input}
+>[!TAB Screenshot]
 
 ![Screenshot des Komponententyps für die Texteingabe](assets/component-types/simpletext.png)
+
+>[!ENDTABS]
