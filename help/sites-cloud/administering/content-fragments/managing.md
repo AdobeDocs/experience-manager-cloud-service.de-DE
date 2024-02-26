@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Ihre AEM Inhaltsfragmente über die Konsole u
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '2620'
 ht-degree: 93%
@@ -32,7 +32,7 @@ Nachdem Sie Ihre [Inhaltsfragmentmodelle](#creating-a-content-model) definiert h
 >Inhaltsfragmente können in folgenden Fällen verwendet werden:
 >
 >* Für [Headless-Bereitstellung mithilfe von Inhaltsfragmenten mit GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md),
->* Beim Erstellung von Seiten. Siehe [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* Beim Erstellung von Seiten. Siehe [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -345,7 +345,7 @@ Nach der Veröffentlichung wird der Fragmentstatus aktualisiert und im Editor un
 
 >[!NOTE]
 >
->Wenn Sie [eine Seite veröffentlichen, in der das Fragment verwendet wird](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), wird das Fragment außerdem in den Seitenverweisen aufgeführt.
+>Wenn Sie [eine Seite veröffentlichen, in der das Fragment verwendet wird](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing), wird das Fragment außerdem in den Seitenverweisen aufgeführt.
 
 ## Rückgängigmachen der Veröffentlichung eines Fragments {#unpublishing-a-fragment}
 

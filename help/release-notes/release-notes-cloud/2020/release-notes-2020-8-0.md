@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2020.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0“
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 91%
+source-wordcount: '1031'
+ht-degree: 92%
 
 ---
 
@@ -18,9 +18,9 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 ### Neue Funktionen in [!DNL Sites] {#what-is-new-sites}
 
-* Möglichkeit der [Wiederherstellung einer früheren Version von Seiten und Unterseiten (Seitenbäume)](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
+* Möglichkeit der [Wiederherstellung einer früheren Version von Seiten und Unterseiten (Seitenbäume)](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions).
 
-* Möglichkeit der [Erstellung von Starts](/help/sites-cloud/authoring/launches/overview.md) im AEM-[SPA-Editor](/help/implementing/developing/hybrid/introduction.md).
+* Fähigkeit [Launches erstellen](/help/sites-cloud/authoring/launches/overview.md) in AEM [SPA Editor](/help/implementing/developing/hybrid/introduction.md).
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}

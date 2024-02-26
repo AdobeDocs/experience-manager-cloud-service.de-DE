@@ -2,10 +2,10 @@
 title: Arbeiten mit Aufgaben
 description: Aufgaben stellen zu erledigende Arbeiten am Inhalt dar und werden in Projekten verwendet, um den Grad der Vollständigkeit der laufenden Aufgaben zu bestimmen
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Klicken Sie auf das Auslassungszeichen (...) in der Aufgabenkachel, um die Liste
 
 #### Aufgabendetails {#task-details}
 
-Wählen Sie für weitere Informationen zu einer bestimmten Aufgabe in der Aufgabenliste die Aufgabe aus und **Öffnen**.
+Um weitere Informationen zu einer bestimmten Aufgabe zu erhalten, tippen/klicken Sie in der Aufgabenliste auf die Aufgabe und auf **Öffnen**.
 
 ![Aufgabendetails](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -63,7 +63,7 @@ Sie können neue Aufgaben zu Projekten hinzufügen. Diese Aufgaben werden in der
 
 So fügen Sie eine Aufgabe hinzu:
 
-1. Im Projekt wird im **Aufgaben** Kachel, wählen Sie das Symbol + aus. Das Fenster **Aufgabe hinzufügen** wird geöffnet.
+1. Wählen Sie im Projekt in der Kachel **Aufgaben** das Plussymbol (+) aus. Das Fenster **Aufgabe hinzufügen** wird geöffnet.
 1. Geben Sie Informationen über die Aufgabe ein. Der Titel der Aufgabe und die Gruppe, der sie zugewiesen ist, sind obligatorisch. Zusätzliche Informationen wie der Inhaltspfad, die Beschreibung, die Aufgabenpriorität und das Fälligkeitsdatum sind optional. Darüber hinaus können Sie die Registerkarte **Erweitert** auswählen, um den Namen der Aufgabe einzugeben, der zum Benennen der URL verwendet wird.
 
    ![Aufgabe hinzufügen](/help/sites-cloud/authoring/assets/projects-add-task.png)
@@ -76,6 +76,6 @@ Eine andere Möglichkeit, auf Aufgaben zuzugreifen, bietet der Posteingang. Sie 
 
 ![Aufgaben im Posteingang](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-Um eine Aufgabe abzuschließen, wählen Sie die Aufgabe aus und klicken Sie auf **Abschließen**. Fügen Sie Informationen zur Aufgabe hinzu und klicken Sie auf **Fertig**. In Ihrem [Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md) finden Sie weitere Informationen.
+Um eine Aufgabe abzuschließen, wählen Sie die Aufgabe aus und klicken Sie auf **Abschließen**. Fügen Sie Informationen zur Aufgabe hinzu und klicken Sie auf **Fertig**. In Ihrem [Posteingang](/help/sites-cloud/authoring/inbox.md) finden Sie weitere Informationen.
 
 ![Aufgabenbenachrichtigungen](/help/sites-cloud/authoring/assets/projects-task-notifications.png)

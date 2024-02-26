@@ -2,8 +2,8 @@
 title: Metadaten – Fragmenteigenschaften (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie die Metadateneigenschaften für Inhaltsfragmente anzeigen und bearbeiten können.
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
-workflow-type: ht
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ Erfahren Sie, wie Sie die Metadateneigenschaften für Inhaltsfragmente in AEM an
 
 >[!NOTE]
 >
->Inhaltsfragmente sind ein Sites-Feature, werden jedoch als **Assets** gespeichert.
+>Inhaltsfragmente sind eine Sites-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
 >Es gibt zwei Editoren für die Erstellung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
 
@@ -38,7 +38,7 @@ Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und 
    * **Titel**
    * **Beschreibung**
    * **Tags**
-      * [Tags](/help/sites-cloud/authoring/features/tags.md) sind besonders leistungsstark bei der Organisation Ihrer Fragmente, da sie für die Inhaltsklassifizierung und -taxonomie verwendet werden können. Tags können zum Suchen von Inhalten (nach Tags) und zum Anwenden von Massenvorgängen verwendet werden.
+      * [Tags](/help/sites-cloud/authoring/sites-console/tags.md) sind besonders leistungsstark bei der Organisation Ihrer Fragmente, da sie für die Inhaltsklassifizierung und -taxonomie verwendet werden können. Tags können zum Suchen von Inhalten (nach Tags) und zum Anwenden von Massenvorgängen verwendet werden.
 Beispielsweise können Sie relevante Fragmente als „Weihnachts-Launch“ taggen, um nur diese als Teilmenge zu durchsuchen oder sie für einen anderen zukünftigen Launch in einen neuen Ordner zu kopieren.
 
         >[!NOTE]

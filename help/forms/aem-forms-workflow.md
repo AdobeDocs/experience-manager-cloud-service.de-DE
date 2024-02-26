@@ -4,7 +4,7 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: 'Verwenden Sie AEM Forms Workflow, um Geschäftsprozessabläufe zu automatisieren und schnell zu erstellen. Beispiele sind: Überprüfung und Genehmigung, PDF-Generierung, Adobe Sign-Workflows.'
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 95%
@@ -197,7 +197,7 @@ Sie können einen formularzentrierten Workflow wie folgt starten oder auslösen:
 
 ### Senden eines Antrags aus dem AEM-Posteingang {#inbox}
 
-Die von Ihnen erstellte Workflow-Anwendung ist als Antrag im Posteingang verfügbar. Benutzer, die Mitglieder der Gruppe [!DNL workflow-users] sind, können den Antrag ausfüllen und senden, der den zugehörigen Workflow auslöst. Weitere Informationen über die Verwendung des AEM-Posteingangs zum Senden von Anwendungen und Verwalten von Aufgaben finden Sie unter [Verwalten von Forms-Anwendungen und Aufgaben im AEM-Posteingang](manage-applications-inbox.md).
+Die von Ihnen erstellte Workflow-Anwendung ist als Antrag im Posteingang verfügbar. Benutzer, die Mitglieder der Gruppe [!DNL workflow-users] sind, können den Antrag ausfüllen und senden, der den zugehörigen Workflow auslöst. Weitere Informationen über die Verwendung des AEM-Posteingangs zum Senden von Anwendungen und Verwalten von Aufgaben finden Sie unter [Verwalten von Forms-Anwendungen und Aufgaben im AEM-Posteingang](manage-applications-/help/sites-cloud/authoring/inbox.md).
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 

@@ -3,16 +3,16 @@ title: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in [!DNL Adobe Experie
 description: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in [!DNL Adobe Experience Manager] as a Cloud Service zu erstellen.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1876'
-ht-degree: 100%
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+workflow-type: tm+mt
+source-wordcount: '1858'
+ht-degree: 99%
 
 ---
 
 # Konfigurieren des Rich-Text-Editors {#configure-the-rich-text-editor}
 
-Der Rich-Text-Editor (RTE) bietet Autoren eine große Bandbreite an Funktionen zum Bearbeiten von Textinhalten. Symbole, Auswahlfelder, Symbolleiste und Menüs werden für eine WYSIWYG-Textbearbeitung bereitgestellt. Administratoren können den RTE konfigurieren, um die in den Authoring-Komponenten verfügbaren Funktionen zu aktivieren, zu deaktivieren und zu erweitern. Erfahren Sie, wie Autoren [RTE zum Erstellen von Web-Inhalten verwenden](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md).
+Der Rich-Text-Editor (RTE) bietet Autoren eine große Bandbreite an Funktionen zum Bearbeiten von Textinhalten. Symbole, Auswahlfelder, Symbolleiste und Menüs werden für eine WYSIWYG-Textbearbeitung bereitgestellt. Administratoren können den RTE konfigurieren, um die in den Authoring-Komponenten verfügbaren Funktionen zu aktivieren, zu deaktivieren und zu erweitern. Erfahren Sie, wie Autoren [RTE zum Erstellen von Web-Inhalten verwenden](/help/sites-cloud/authoring/page-editor/rich-text-editor.md).
 
 Die RTE-Konzepte und -Schritte, die zur Konfiguration erforderlich sind, sind unten aufgeführt.
 
@@ -24,7 +24,7 @@ Die RTE-Konzepte und -Schritte, die zur Konfiguration erforderlich sind, sind un
 
 ## Grundlegendes zur Benutzeroberfläche, die Autoren zur Verfügung steht {#understand-rte-ui}
 
-Die RTE-Benutzeroberfläche bietet ein [responsives Design](/help/sites-cloud/authoring/features/responsive-layout.md) für die Authoring-Umgebung. Die Benutzeroberfläche wurde für die Verwendung auf Touch- und Desktop-Geräten entwickelt.
+Die RTE-Benutzeroberfläche bietet ein [responsives Design](/help/sites-cloud/authoring/page-editor/responsive-layout.md) für die Authoring-Umgebung. Die Benutzeroberfläche wurde für die Verwendung auf Touch- und Desktop-Geräten entwickelt.
 
 ![Rich-Text-Editor-Symbolleiste](assets/rte-toolbar-full-screen-mode.png)
 
@@ -39,9 +39,9 @@ Autoren können in [!DNL Experience Manager] Textinhalte mithilfe der verschiede
 | Bearbeitungsmodus | Bearbeitungsbereich | Für die Aktivierung empfohlene Funktionen |
 |--- |--- |--- |
 | Inline | Bearbeitung im Kontext für schnelle, geringfügige Änderungen; Formatieren ohne Öffnen eines Dialogfelds. | Minimale RTE-Funktionen. |
-| RTE-Vollbildschirm | Füllt die gesamte Seite aus. | Alle erforderlichen RTE-Funktionen. |
+| RTE-Vollbildschirm | deckt die gesamte Seite ab. | Alle erforderlichen RTE-Funktionen. |
 | Dialogfeld | Dialogfeld, das oberhalb des Seiteninhalts angezeigt wird, jedoch nicht die gesamte Seite einnimmt. | Funktionen mit Bedacht aktivieren. |
-| Dialogfeld-Vollbildmodus | Wie im Vollbildmodus; enthält Dialogfelder neben dem RTE. | Alle erforderlichen RTE-Funktionen. |
+| Dialogfeld-Vollbildmodus | Wie im Vollbildmodus; enthält Felder des Dialogfelds neben dem RTE. | Alle erforderlichen RTE-Funktionen. |
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ Die Funktionen werden über eine Reihe von Plug-ins zur Verfügung gestellt, jew
 
 Die grundlegenden RTE-Funktionen werden durch den Wert der Eigenschaft `features` in einem Knoten aktiviert oder deaktiviert, der spezifisch für das entsprechende Plug-in ist.
 
-In der folgenden Tabelle sind die aktuellen Plug-ins aufgelistet:
+In der folgenden Tabelle sind die derzeit verfügbaren Plug-ins aufgelistet, mit Angabe von:
 
 * Plug-in-IDs mit einem Link zur API-Dokumentation. Die ID wird beim [Aktivieren eines Plug-ins](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin) als Knotenname verwendet.
 * Zulässige Werte für die Eigenschaft `features`.
@@ -103,7 +103,7 @@ In der folgenden Tabelle sind die aktuellen Plug-ins aufgelistet:
 | links | `modifylink`, `unlink`, `anchor` | [Hyperlinks und Anker](configure-rich-text-editor-plug-ins.md#linkstyles). |
 | lists | `ordered`, `unordered`, `indent`, `outdent` | Über dieses Plug-in werden [Einzüge und Listen](configure-rich-text-editor-plug-ins.md#indentmargin) gesteuert, einschließlich verschachtelter Listen. |
 | misctools | `specialchars`, `sourceedit` | Verschiedene Tools gestatten es Autoren, [Sonderzeichen](configure-rich-text-editor-plug-ins.md#spchar) einzugeben oder die HTML-Quelle zu bearbeiten. Außerdem können Sie [zahlreiche Sonderzeichen](configure-rich-text-editor-plug-ins.md#definerangechar) hinzufügen, wenn Sie Ihre eigene Liste definieren möchten. |
-| Paraformat | `paraformat` | Folgende Standard-Absatzformate sind verfügbar: „Absatz“, „Überschrift 1“, „Überschrift 2“ und „Überschrift 3“ (`<p>`, `<h1>`, `<h2>` und `<h3>`). Sie können [weitere Absatzformate](configure-rich-text-editor-plug-ins.md#paraformats) hinzufügen oder die Liste erweitern. |
+| Paraformat | `paraformat` | Folgende Standard-Absatzformate sind verfügbar: „Absatz“, „Überschrift 1“, „Überschrift 2“ und „Überschrift 3“ (`<p>`, `<h1>`, `<h2>` und `<h3>`). Sie können [weitere Absatzformate hinzufügen](configure-rich-text-editor-plug-ins.md#paraformats) oder die Liste erweitern. |
 | spellcheck | `checktext` | [Rechtschreibprüfung mit Sprachunterstützung](configure-rich-text-editor-plug-ins.md#adddict). |
 | styles | `styles` | Unterstützung für das Styling mithilfe einer CSS-Klasse. [Fügen Sie neue Textstile hinzu](configure-rich-text-editor-plug-ins.md#textstyles), wenn Sie eigene Stile zur Verwendung mit Text hinzufügen oder erweitern möchten. |
 | subsuperscript | `subscript`, `superscript` | Erweiterung der grundlegenden Formatierungsoptionen um die Optionen „Hochgestellt“ und „Tiefgestellt“. |
@@ -145,14 +145,14 @@ Wenn der RTE im Touch-optimierten Dialogfeld verwendet wird, muss die Eigenschaf
 
 ## Aktivieren von RTE-Funktionen durch Aktivieren von Plug-ins {#enable-rte-functionalities-by-activating-plug-ins}
 
-RTE-Funktionen werden über eine Reihe von Plug-ins mit jeweils einer Eigenschaft „Funktionen“ bereitgestellt. Sie können die Funktionseigenschaft konfigurieren, um die verschiedenen Funktionen der einzelnen Plug-ins zu aktivieren oder zu deaktivieren.
+RTE-Funktionen werden über eine Reihe von Plug-ins mit jeweils einer Eigenschaft „Funktionen“ bereitgestellt. Sie können die Funktionen so konfigurieren, dass die verschiedenen Funktionen der einzelnen Plug-ins aktiviert oder deaktiviert werden.
 
 Ausführliche Konfigurationen des RTE-Plug-ins finden Sie unter [Aktivieren und Konfigurieren von RTE-Plug-ins](configure-rich-text-editor-plug-ins.md).
 
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-Die [Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=de#the-text-component-and-the-rich-text-editor) ermöglicht es den Bearbeitern von Vorlagen, viele RTE-Plug-ins in der Benutzeroberfläche als Content-Richtlinien zu konfigurieren, sodass keine technische Konfiguration mehr erforderlich ist. Content-Richtlinien können mit RTE-Benutzeroberflächenkonfigurationen verwendet werden, wie in diesem Dokument beschrieben ist. Weitere Informationen finden Sie in [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md) und in der [Entwickler-Dokumentation zu Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=de).
+Die [Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=de#the-text-component-and-the-rich-text-editor) ermöglicht es den Bearbeitern von Vorlagen, viele RTE-Plug-ins in der Benutzeroberfläche als Content-Richtlinien zu konfigurieren, sodass keine technische Konfiguration mehr erforderlich ist. Content-Richtlinien können mit RTE-Benutzeroberflächenkonfigurationen verwendet werden, wie in diesem Dokument beschrieben ist. Weitere Informationen finden Sie in [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/sites-console/templates.md) und in der [Entwickler-Dokumentation zu Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=de).
 
 >Zu Referenzzwecken finden Sie die standardmäßigen Textkomponenten (bereitgestellt im Rahmen einer Standardinstallation) unter:
 >
@@ -218,7 +218,7 @@ Der Knoten „pop-up“ im Inline- oder Vollbildmodus enthält eine Liste der ve
 
 ## Einstellungen für die RTE-Benutzeroberfläche und Content-Richtlinien {#rtecontentpolicies}
 
-Administratoren können die RTE-Optionen mithilfe von Content-Richtlinien steuern, anstatt die Konfiguration wie oben beschrieben durchzuführen. Inhaltsrichtlinien definieren die Design-Eigenschaften einer Komponente, wenn sie als Teil einer [bearbeitbaren Vorlage](/help/sites-cloud/authoring/features/templates.md) verwendet werden. Wenn zum Beispiel eine Textkomponente, die den RTE verwendet, mit einer bearbeitbaren Vorlage verwendet wird, kann die Content-Richtlinie definieren, dass die fettgedruckte Option und einige Absatzformatierungsoptionen verfügbar sind. Inhaltsrichtlinien sind wiederverwendbar und können auf mehrere Vorlagen angewendet werden.
+Administratoren können die RTE-Optionen mithilfe von Content-Richtlinien steuern, anstatt die Konfiguration wie oben beschrieben durchzuführen. Inhaltsrichtlinien definieren die Designeigenschaften einer Komponente, wenn sie als Teil einer [bearbeitbaren Vorlage](/help/sites-cloud/authoring/sites-console/templates.md) verwendet wird. Wenn zum Beispiel eine Textkomponente, die den RTE verwendet, mit einer bearbeitbaren Vorlage verwendet wird, kann die Content-Richtlinie definieren, dass die fettgedruckte Option und einige Absatzformatierungsoptionen verfügbar sind. Inhaltsrichtlinien sind wiederverwendbar und können auf mehrere Vorlagen angewendet werden.
 
 Die verfügbaren Optionen im RTE werden von der Benutzeroberflächenkonfiguration abwärts zu den Content-Richtlinien übertragen.
 
@@ -280,5 +280,5 @@ Unten finden Sie einen Beispielausschnitt zur Zuordnung des Befehls `Bold` zum C
 >[!MORELIKETHIS]
 >
 >* [Konfigurieren von RTE-Plug-ins](configure-rich-text-editor-plug-ins.md)
->* [Verwenden des Rich-Text-Editors für das Authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
+>* [Verwenden des Rich-Text-Editors für das Authoring](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
 >* [Konfigurieren des RTE für barrierefreie Websites](rte-accessible-content.md)

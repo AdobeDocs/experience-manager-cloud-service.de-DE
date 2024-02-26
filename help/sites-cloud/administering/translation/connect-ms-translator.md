@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie AEM sofort mit Microsoft Translator verbinden
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 97%
@@ -34,7 +34,7 @@ Nachdem Sie die Konfiguration erstellt haben, müssen Sie sie [aktivieren](#act
 
 Mit dem folgenden Verfahren wird eine Microsoft Translator-Konfiguration erstellt.
 
-1. Wählen Sie im [Navigationsbereich](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services** aus.
+1. Wählen Sie im [Navigationsbereich](/help/sites-cloud/authoring/basic-handling.md#first-steps) **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services** aus.
 1. Navigieren Sie zu dem Ort, an dem Sie die Konfiguration erstellen möchten. Normalerweise ist dies in Ihrem Site-Stammverzeichnis oder es kann eine globale Standardkonfiguration sein.
 1. Wählen Sie die Schaltfläche **Erstellen**.
 1. Legen Sie Ihre Konfiguration fest.
@@ -56,7 +56,7 @@ Mit dem folgenden Verfahren wird eine Microsoft Translator-Konfiguration erstell
 
 Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link zur Microsoft-Website, über den Sie ein für Produktionssysteme geeignetes Kontoabonnement erhalten können.
 
-1. Wählen Sie im [Navigationsbereich](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services** aus.
+1. Wählen Sie im [Navigationsbereich](/help/sites-cloud/authoring/basic-handling.md#first-steps) **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services** aus.
 1. Wählen Sie Ihre vorhandene Microsoft Translator-Konfiguration aus.
 1. Wählen Sie **Bearbeiten** aus.
 1. Wählen Sie im Fenster **Konfiguration bearbeiten** die Option **Abonnement aktualisieren** aus. Eine Microsoft-Webseite mit weiteren Details zum Service wird geöffnet.
@@ -65,13 +65,13 @@ Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link
 
 Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link zur Microsoft-Website, auf der die Microsoft Translator-Engine angepasst werden kann.
 
-1. Wählen Sie im [Navigationsbereich](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services** aus.
+1. Wählen Sie im [Navigationsbereich](/help/sites-cloud/authoring/basic-handling.md#first-steps) **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services** aus.
 1. Wählen Sie Ihre vorhandene Microsoft Translator-Konfiguration aus.
 1. Wählen Sie **Bearbeiten** aus.
 1. Wählen Sie im Fenster **Konfiguration bearbeiten** die Option **Translator anpassen** aus. Verwenden Sie die Microsoft-Webseite, die geöffnet wird, um Ihren Service anzupassen.
 
 ## Aktivieren der Übersetzungs-Service-Konfigurationen {#activating-the-translator-service-configurations}
 
-Sie müssen Ihre Cloud Service-Konfigurationen aktivieren, um übersetzte Inhalte zu unterstützen, die auf der Veröffentlichungsinstanz repliziert werden. Verwenden Sie die Methode [Veröffentlichen eines Baums](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-and-unpublishing-a-tree), um die Repository-Knoten zu aktivieren, die die Microsoft Translator-Konfigurationen speichern. Die Knoten befinden sich unter den folgenden übergeordneten Knoten:
+Sie müssen Ihre Cloud Service-Konfigurationen aktivieren, um übersetzte Inhalte zu unterstützen, die auf der Veröffentlichungsinstanz repliziert werden. Verwenden Sie die Methode [Veröffentlichen eines Baums](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-and-unpublishing-a-tree), um die Repository-Knoten zu aktivieren, die die Microsoft Translator-Konfigurationen speichern. Die Knoten befinden sich unter den folgenden übergeordneten Knoten:
 
 * `/libs/settings/cloudconfigs/translation/msft-translation`

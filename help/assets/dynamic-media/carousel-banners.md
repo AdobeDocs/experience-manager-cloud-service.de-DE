@@ -5,18 +5,18 @@ contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '4534'
-ht-degree: 95%
+source-wordcount: '4492'
+ht-degree: 99%
 
 ---
 
 # Karussellbanner{#carousel-banners}
 
-Karussellbanner ermöglichen es Marketingexperten, die Konversion zu fördern, indem sie einfach interaktive drehbare Werbeinhalte erstellen und auf jedem Bildschirm bereitstellen.
+Mit Karussellbannern können Marketing-Fachleute die Konversionsrate steigern, indem sie auf einfache Art Drehbanner mit Promo-Inhalten erstellen, die auf beliebigen Bildschirmen bereitgestellt werden können.
 
-Das Erstellen und Ändern von Inhalten in Werbebannern kann zeitaufwendig sein und Ihre Fähigkeit einschränken, neue Inhalte schnell zu veröffentlichen oder zielgerichteter zu gestalten. Karussellbanner ermöglichen Ihnen das schnelle Erstellen oder Ändern rotierender Banner und das Hinzufügen von Interaktivität wie Hotspot-Verknüpfungen zu Produktdetails oder verwandten Ressourcen. Sie können auf jedem Bildschirm bereitstellen und so neue Werbeinhalte schneller auf den Markt bringen.
+Das Erstellen und Ändern von Inhalten auf Werbebannern kann zeitaufwendig sein und Ihre Fähigkeit beeinträchtigen, neue Inhalte schnell zu veröffentlichen oder zielgerichteter zu gestalten. Karussellbanner ermöglichen Ihnen das schnelle Erstellen oder Ändern rotierender Banner und das Hinzufügen von Interaktivität wie Hotspot-Verknüpfungen zu Produktdetails oder verwandten Ressourcen. Sie können auf jedem Bildschirm bereitstellen und so neue Werbeinhalte schneller auf den Markt bringen.
 
 Karussellbanner sind Banner, die durch die Bezeichnung **[!UICONTROL CAROUSELSET]** gekennzeichnet sind:
 
@@ -85,7 +85,7 @@ So schaffen Sie einen schnellen Einstieg:
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * [Hinzufügen eines Karussellbanner zu einer Website-Seite](#adding-a-carousel-banner-to-your-website-page)Sie können die Karussellbanner-URL oder den Einbettungs-Code hinzufügen, die oder den Sie auf die Website-Seite kopiert haben.
+   * [Hinzufügen eines Karussellbanners zu Ihrer Website-Seite](#adding-a-carousel-banner-to-your-website-page)Sie können die Karussellbanner-URL oder den Einbettungscode hinzufügen, die bzw. den Sie auf die Website-Seite kopiert haben.
 
       * [Integrieren Sie das Karussellbanner mit einer vorhandenen Schnellansicht](#integrating-the-carousel-banner-with-an-existing-quickview). Wenn Sie ein Drittanbietersystem für Web Content Management verwenden, müssen Sie das neue Karussellbanner mit der vorhandenen Schnellansichtsimplementierung auf Ihrer Website integrieren.
 
@@ -109,9 +109,9 @@ Wenn Sie Hotspots oder Imagemaps zu einem Bannerbild hinzufügen, weisen Sie ein
 
 -->
 
-Es ist wichtig, die Anzahl und den Typ der Variablen, denen Hotspot- oder Imagemap-Daten zugewiesen werden sollen, korrekt zu ermitteln. Jeder Hotspot bzw. jede Imagemap, der/die einem Bannerbild hinzugefügt wird, muss genügend Informationen enthalten, um das Produkt im vorhandenen Backend-System eindeutig zu identifizieren. Gleichzeitig sollten Hotspots oder Imagemaps nicht mehr Daten enthalten als unbedingt notwendig. Der Grund dafür ist, dass der Dateneingabeprozess dadurch zu komplex und die laufende Hotspot- oder Imagemap-Verwaltung fehleranfälliger würde.
+Es ist wichtig, die Anzahl und den Typ der Variablen, denen Hotspot- oder Imagemap-Daten zugewiesen werden sollen, korrekt zu ermitteln. Jeder Hotspot bzw. jede Imagemap, der/die einem Bannerbild hinzugefügt wird, muss genügend Informationen enthalten, um das Produkt im vorhandenen Backend-System eindeutig zu identifizieren. Gleichzeitig sollten Hotspots oder Imagemaps nicht mehr Daten enthalten als unbedingt notwendig. Dies würde die Dateneingabe unnötig erschweren, und bei der Verwaltung von Hotspots und Imagemaps könnten leichter Fehler auftreten.
 
-Es gibt verschiedene Möglichkeiten, einen Variablensatz für Hotspot- oder Imagemap-Daten zu identifizieren.
+Es gibt verschiedene Möglichkeiten, den für Hotspot- oder Imagemap-Daten zu verwendenden Variablensatz zu ermitteln.
 
 Manchmal ist es ausreichend, die IT-Experten zu konsultieren, die für die vorhandene Schnellansichtsimplementierung verantwortlich sind. Diese kennen wahrscheinlich den Mindestsatz an Daten, die erforderlich sind, um die Schnellansicht im System zu ermitteln. Es ist jedoch auch möglich, einfach das vorhandene Verhalten des Frontend-Codes zu analysieren.
 
@@ -225,10 +225,10 @@ Informationen zum Hochladen von Bildbannern finden Sie unter [Hochladen von Asse
    >
    >Bei Karussellbannern können Sie Folgendes anpassen:
    >
-   >* Dauer der Anzeige eines Bildes. Standardmäßig wird jedes Bild 9 Sekunden lang angezeigt.
-   >* Animation. Standardmäßig ist jede Folienübergänge eine Überblendung. Sie können dies in eine Folienübergang ändern.
-   >* Stil der Schaltflächen. Benutzer können die Banner durchlaufen, indem sie auf die jeweiligen Punkte oder Zahlen klicken. Sie können ändern, wo die Anzeigenschaltflächen angezeigt werden (und ob es sich um numerische Schaltflächen oder gepunktete Schaltflächen handelt) und wie groß sie sind.
-   >* Ändern Sie den Hervorhebungsstil einer Imagemap oder des Symbols für Hotspots.
+   >* Anzeigedauer eines Bildes. Standardmäßig wird jedes Bild für 9 Sekunden angezeigt.
+   >* Animation. Standardmäßig sind alle Folienübergänge Überblendungen. Sie können einen anderen Übergang auswählen.
+   >* Stil der Schaltflächen. Benutzer können die Banner durchlaufen, indem sie auf die jeweiligen Punkte oder Zahlen klicken. Sie können ändern, wo die Set-Indikatoren angezeigt werden (und ob es sich um einen numerischen oder Punktstil handelt). Sie können auch ihre Größe bestimmen.
+   >* Ändern des Markierungsstils einer Imagemap oder des Symbols für Hotspots.
    >* Wählen Sie vor dem Bearbeiten einer Viewer-Vorgabe den Stil aus, auf dem die Vorgabe basieren soll. Wenn Sie keinen Stil festlegen, bevor Sie mit dem Bearbeiten der Viewer-Vorgabe beginnen, werden alle Ihre Änderungen verworfen, wenn Sie zu einer anderen Vorgabe wechseln.
 
    Sie können auch eine Vorschau der Darstellung des Karussellbanners anzeigen. Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previewing-carousel-banners).
@@ -241,7 +241,7 @@ Sie können einem Banner mithilfe des Karussellset-Editors Hotspots oder Imagema
 
 Beim Hinzufügen von Hotspots oder Imagemaps können Sie sie als eine Schnellansichts-Popup-Anzeige, als einen Hyperlink oder als Experience Fragment definieren.
 
-Siehe [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+Siehe [Experience Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -276,13 +276,13 @@ Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previe
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Hotspots: Klicken Sie auf dem Bild auf eine Stelle, an der der Hotspot angezeigt werden soll.
-   * Imagemaps: Klicken Sie auf das Bild und ziehen Sie dann von oben links nach unten rechts, um den Bereich für die Imagemap zu erstellen. Sie können die Größe der Imagemap anpassen, indem Sie die Ecken ziehen.
+   * Imagemaps: Klicken Sie auf das Bild und ziehen Sie dann von oben links nach unten rechts, um den Bereich für die Imagemap zu erstellen. Sie können die Größe der Imagemap anpassen, indem Sie an den Ecken ziehen.
 
    Ziehen Sie den Hotspot oder die Imagemap ggf. an eine neue Position. Sie können auch die Pfeiltasten verwenden, um die Position eines ausgewählten Hotspots zu steuern. Fügen Sie weitere Hotspots oder Imagemaps nach Bedarf hinzu.
 
    Um einen Hotspot oder eine Imagemap zu löschen, klicken Sie auf die Registerkarte **[!UICONTROL Aktionen]**. Wählen Sie unter der Überschrift **[!UICONTROL Maps und Hotspots]** in der Dropdown-Liste **[!UICONTROL Ausgewählter Typ]** den Namen des Hotspots oder der Imagemap aus, den/die Sie entfernen möchten. Klicken Sie auf das **[!UICONTROL Papierkorb]**-Symbol neben dem Menü und dann auf **[!UICONTROL Löschen]**.
 
-1. Geben Sie im Textfeld Name den Namen des Hotspots oder der Imagemap ein. Dieser Name wird auch in der Dropdown-Liste **[!UICONTROL Karten und Hotspots]** angezeigt. Wenn Sie einen Namen angeben, können Sie den Hotspot oder die Imagemap einfach erkennen, sollten Sie später Änderungen vornehmen.
+1. Geben Sie im Textfeld „Name“ den Namen des Hotspots oder der Imagemap ein. Dieser Name wird auch in der Dropdown-Liste **[!UICONTROL Karten und Hotspots]** angezeigt. Wenn Sie einen Namen angeben, können Sie den Hotspot oder die Imagemap einfach erkennen, sollten Sie später Änderungen vornehmen.
 1. Führen Sie einen der folgenden Schritte auf der Registerkarte **[!UICONTROL Aktion]** aus:
 
    * Wählen Sie **[!UICONTROL Schnellansicht]** aus.
@@ -313,7 +313,7 @@ Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previe
    * Wählen Sie **[!UICONTROL Experience Fragment]** aus.
 
       * Wenn Sie AEM Sites-Kunde sind, klicken Sie auf das Suchsymbol (Lupe), um die Seite „Experience Fragment“ zu öffnen. Um zur Seite für die Hotspot-Verwaltung zurückzukehren, klicken Sie auf das Experience Fragment, das Sie verwenden möchten, und wählen Sie dann oben rechts auf der Seite **[!UICONTROL Auswählen]**.
-Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
       * Legen Sie die Breite und Höhe des Experience Fragment fest, so wie es im Banner angezeigt werden soll.
 
@@ -444,7 +444,7 @@ Die vorhandene Schnellansichtsimplementierung stellt normalerweise eine Kette vo
 1. Die Backend-Logik gibt dem Frontend-Code die entsprechenden Schnellansichtsdaten oder -inhalte zurück.
 1. Der Frontend-Code lädt die Schnellansichtsdaten oder -inhalte.
 1. Optional wandelt der Frontend-Code die geladenen Schnellansichtsdaten in eine HTML-Darstellung um.
-1. Der Frontend-Code zeigt ein modales Dialogfeld oder Bedienfeld an und rendert den HTML-Inhalt auf dem Bildschirm für den Benutzer.
+1. Der Frontend-Code zeigt ein modales Dialogfeld an und rendert den HTML-Inhalt auf dem Bildschirm der Benutzenden.
 
 Diese Aufrufe stellen keine unabhängigen öffentlichen API-Aufrufe dar, die durch die Web-Seitenlogik in einem beliebigen Schritt aufgerufen werden können. Vielmehr handelt es sich um einen verketteten Aufruf, in dem der jeweils nächste Schritte in der letzten Phase (Callback) des vorherigen Schritts ausgeblendet ist.
 
@@ -452,7 +452,7 @@ Sobald das interaktive Karussellbanner Schritt 1 und teilweise Schritt 2 erset
 
 In einem solchen Ereignis-Handler nimmt der Frontend-Code Folgendes vor:
 
-* Listet ein Ereignis auf, das vom Karussellbanner ausgegeben wird.
+* Er lauscht auf ein Ereignis, das durch das Karussellbanner ausgegeben wird.
 * Er erstellt eine Schnellansichts-URL anhand der Hotspot- oder Imagemap-Daten.
 * Er löst den Schnellansichts-Ladevorgang vom Backend aus und rendert die Schnellansicht auf dem Bildschirm, um sie anzuzeigen.
 

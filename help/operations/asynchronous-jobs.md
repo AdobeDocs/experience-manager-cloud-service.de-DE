@@ -2,9 +2,9 @@
 title: Asynchrone Aufträge
 description: Adobe Experience Manager optimiert die Leistung durch asynchrone Ausführung einiger ressourcenintensiver Aufgaben im Hintergrund.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '854'
 ht-degree: 97%
 
 ---
@@ -31,7 +31,7 @@ Sie können den Status von asynchronen Aufträgen im Dashboard **[!UICONTROL Hin
 
 ## Überwachen des Status asynchroner Vorgänge {#monitor-the-status-of-asynchronous-operations}
 
-Wenn AEM einen Vorgang asynchron verarbeitet, erhalten Sie eine Benachrichtigung in Ihrem [Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md) und per E-Mail (falls aktiviert).
+Wenn AEM einen Vorgang asynchron verarbeitet, erhalten Sie eine Benachrichtigung in Ihrem [Posteingang](/help/sites-cloud/authoring/inbox.md) und per E-Mail (falls aktiviert).
 
 Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie zur Seite **[!UICONTROL Hintergrundvorgänge]**.
 
@@ -136,6 +136,6 @@ Wenn die Anzahl der zu verschiebenden Anlagen/Ordner oder Referenzen den Schwell
 
 >[!MORELIKETHIS]
 >
->* [Erstellen und Organisieren von Seiten](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
+>* [Verwalten von Seiten](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 >* [Importieren und Exportieren von Asset-Metadaten in großen Mengen](/help/assets/metadata-import-export.md).
 >* [Verwenden Sie verbundene Assets, um DAM-Assets aus Remote-Bereitstellungen freizugeben](/help/assets/use-assets-across-connected-assets-instances.md).

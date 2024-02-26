@@ -2,10 +2,10 @@
 title: Grundlagen zur Inhaltsmodellierung
 description: Erfahren Sie mehr über die Grundlagen der Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Innerhalb eines Modells:
 1. Mit **Datentypen** können Sie die einzelnen Attribute definieren.
 Definieren Sie beispielsweise das Feld mit dem Namen eines Lehrers als **Text** und dessen Dienstjahre als **Zahl**.
 1. Mit den Datentypen **Inhaltsreferenz** und **Fragmentreferenz** können Sie Beziehungen zu anderen Inhalten in AEM erstellen.
-1. Die **Fragmentverweis** -Datentyp können Sie mehrere Ebenen der Struktur realisieren, indem Sie Ihre Inhaltsfragmente verschachteln (je nach Modelltyp). Dies ist für Ihre Inhaltsmodellierung von entscheidender Bedeutung.
+1. Mit dem Datentyp **Fragmentreferenz** können Sie mehrere Ebenen der Struktur umsetzen, indem Sie die Inhaltsfragmente verschachteln (je nach Modelltyp). Dies ist für Ihre Inhaltsmodellierung von entscheidender Bedeutung.
 
 Beispiel:
 
@@ -109,11 +109,11 @@ Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglich
 
 >[!NOTE]
 >
->Sie können auch mit Links in Textblöcken improvisierte Verweise erstellen.
+>Sie können auch improvisierte Referenzen auch über Links in Textblöcken erstellen.
 
 ## Strukturebenen (verschachtelte Fragmente) {#levels-of-structure-nested-fragments}
 
-Für die Inhaltsmodellierung **Fragmentverweis** Datentyp können Sie mehrere Ebenen von Struktur und Beziehungen erstellen.
+Bei der Inhaltsmodellierung ermöglicht der Datentyp **Fragmentreferenz** die Erstellung mehrerer Strukturebenen und Beziehungen.
 
 Mit diesem Verweis können Sie verschiedene Inhaltsfragmentmodelle *verbinden*, um Zusammenhänge darzustellen. Dadurch kann die Headless-Anwendung den Verbindungen folgen und bei Bedarf auf die Inhalte zugreifen.
 
@@ -130,7 +130,7 @@ Zum Beispiel könnten bei Ihnen die folgenden Inhaltsfragmentmodelle definiert s
 * Person
 * Auszeichnungen
 
-Es scheint ziemlich einfach, aber ein Unternehmen hat sowohl einen CEO als auch Mitarbeiter...und dies sind alles Leute, die jeweils als Person definiert sind.
+Es scheint ziemlich einfach, aber ein Unternehmen hat sowohl einen CEO als auch Mitarbeitende…und dies sind alles Leute, die jeweils als Person definiert sind.
 
 Und eine Person kann eine Auszeichnung bekommen (oder vielleicht zwei).
 
@@ -153,8 +153,8 @@ Nachdem Sie nun die Grundlagen gelernt haben, lautet der nächste Schritt [Erfah
 
    * [Inhaltsfragmentmodelle – Datentypen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-* [Authoring – Konzepte](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Authoring – Konzepte](/help/sites-cloud/authoring/author-publish.md)
 
-* [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) – Diese Seite basiert hauptsächlich auf der **Sites**-Konsole, aber viele / die meisten Funktionen sind auch für das Authoring von **Inhaltsfragmenten** unter der **Assets**-Konsole relevant.
+* [Grundlegende Handhabung](/help/sites-cloud/authoring/basic-handling.md) – Diese Seite basiert hauptsächlich auf der **Sites**-Konsole, aber viele / die meisten Funktionen sind auch für das Authoring von **Inhaltsfragmenten** unter der **Assets**-Konsole relevant.
 
 * [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)

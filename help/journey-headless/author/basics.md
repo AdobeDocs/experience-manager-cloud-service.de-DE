@@ -2,10 +2,10 @@
 title: Grundlagen zum Authoring
 description: Erfahren Sie mehr über die Konzepte und Mechanismen sw Authoring für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1727'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Wie bei den meisten Systemen müssen Sie sich anmelden. Als Autorin bzw. Autor e
 * Passwort
 * Link zum Zugriff auf den Anmeldebildschirm
 
-Ihr Konto wurde mit den erforderlichen Berechtigungen konfiguriert. Wenn Sie Probleme haben, empfiehlt Adobe, sich an Ihr internes Projektunterstützungsteam zu wenden.
+Ihr Konto wurde mit den erforderlichen Berechtigungen konfiguriert. Sollten Sie Probleme haben, empfiehlt Adobe Ihnen, sich an Ihr internes Projektunterstützungs-Team zu wenden.
 
 ### Navigation {#navigation}
 
@@ -135,7 +135,7 @@ Dazu können Sie im Bereich **Dateien** der **Assets**-Konsole Ordner erstellen.
 
 ![Option „Ordner erstellen“](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Ein Dialogfeld wird geöffnet, in das Sie die Details eingeben und dann mit **Erstellen**:
+Daraufhin wird ein Dialogfeld geöffnet, in dem Sie die Details eingeben und dann mit **Erstellen** bestätigen können:
 
 ![Dialogfeld „Ordner erstellen“](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -189,34 +189,34 @@ Sie können ein Fragment unmittelbar nach seiner Erstellung öffnen oder indem S
 
 >[!NOTE]
 >
->Inhaltsfragmente sind eine Sites-Funktion, werden jedoch als **Assets**.
+>Inhaltsfragmente sind eine Sites-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
->Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten.
+>Es gibt zwei Editoren für das Erstellen von Inhaltsfragmenten.
 >
->* Der neue Editor, auf den hauptsächlich über das **Inhaltsfragmente** Konsole.
->* Der ursprüngliche Editor, auf den hauptsächlich über das **Assets** Konsole.
+>* Der neue Editor, auf den hauptsächlich über die **Inhaltsfragmentkonsole** zugegriffen wird.
+>* Der ursprüngliche Editor. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole.
 
 Wenn der Editor zum ersten Mal geöffnet wird, sehen Sie Folgendes:
 
 * obere Symbolleiste: für wichtige Informationen und Aktionen
-   * einen Link zur Inhaltsfragmentkonsole (Startseiten-Symbol)
+   * ein Link zur Inhaltsfragmentkonsole (Startseiten-Symbol)
    * Informationen zum Modell und Ordner
    * Links zur Vorschau; wenn das URL-Standardmuster für die Vorschau für das Modell konfiguriert ist
-   * Aktionen &quot;Veröffentlichen&quot;und &quot;Veröffentlichung rückgängig machen&quot;
-   * eine Option zum Anzeigen aller **Übergeordnete Verweise** (Verknüpfungssymbol)
-   * das Fragment **Status** und zuletzt gespeicherte Informationen
-   * Umschalten auf den ursprünglichen (Assets-basierten) Editor
-* linker Bereich: zeigt die **Varianten** für das Inhaltsfragment und dessen **Felder**:
-   * Diese Links können zum Navigieren in der Inhaltsfragmentstruktur verwendet werden.
-* rechter Bereich: enthält Registerkarten mit den Eigenschaften (Metadaten und Tags), Informationen zum Versionsverlauf und Informationen zu Sprachkopien
-   * im **Eigenschaften** Registerkarte können Sie die **Titel** und **Beschreibung** für das Fragment oder **Variante**
-* Zentralbereich: zeigt die tatsächlichen Felder und den Inhalt der ausgewählten Variante an
-   * ermöglicht die Bearbeitung des Inhalts
-   * if **Registerkartenplatzhalter** -Felder werden innerhalb des hier angezeigten Modells definiert und können für die Navigation verwendet werden
+   * die Aktionen „Veröffentlichen“ und „Veröffentlichung rückgängig machen“
+   * eine Option zum Anzeigen aller **übergeordneten Verweise** (Link-Symbol)
+   * der **Status** des Fragments und Informationen über die letzte Speicherung
+   * ein Umschalter zum Umschalten auf den ursprünglichen (Assets-basierten) Editor
+* linker Bereich: zeigt die **Varianten** für das Inhaltsfragment und dessen **Felder** an:
+   * diese Links können verwendet werden, um in der Inhaltsfragmentstruktur zu navigieren
+* rechter Bereich: enthält Registerkarten mit den Eigenschaften (Metadaten) und Tags, Informationen über den Versionsverlauf sowie Informationen zu Sprachkopien
+   * auf der Registerkarte **Eigenschaften** können Sie den **Titel** und die **Beschreibung** für das Fragment oder die **Variante** aktualisieren
+* zentraler Bereich: zeigt die tatsächlichen Felder und den Inhalt der ausgewählten Variante an
+   * ermöglicht das Bearbeiten des Inhalts
+   * wenn **Registerkartenplatzhalter**-Felder innerhalb des Modells definiert sind, werden sie hier angezeigt und können für die Navigation verwendet werden.
 
-Ein Fragment kann beispielsweise:
+Für ein Fragment kann beispielsweise Folgendes gelten:
 
-* Erfordert mehrere Informationen, einige mit einem bestimmten Typ. Für Headless-Inhalte sind Verweise von zentraler Bedeutung (Sie erfahren später auf Ihrer Journey darüber).
+* Erfordert mehrere Informationen, einige mit einem bestimmten Typ. Für Headless-Inhalte sind Verweise von zentraler Bedeutung (Sie werden später in Ihrer Tour mehr darüber erfahren).
 
 * Ermöglicht Ihnen das Schreiben eines langen Textabschnitts. Hier finden Sie zusätzliche Optionen zum Verwalten und Formatieren des Textes. Sie können die einzelnen Textfelder auch in einem Vollbild-Editor öffnen (mithilfe des kleinen bildschirmähnlichen Symbols auf der rechten Seite).
 
@@ -267,21 +267,21 @@ Nachdem Sie nun die Grundlagen gelernt haben, lautet der nächste Schritt: [Erfa
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Authoring – Konzepte](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Authoring – Konzepte](/help/sites-cloud/authoring/author-publish.md)
 
-* [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md): Diese Seite basiert hauptsächlich auf der **Sites**-Konsole, aber viele / die meisten Funktionen sind auch für das Authoring von **Inhaltsfragmenten** unter der **Assets**-Konsole relevant.
+* [Grundlegende Handhabung](/help/sites-cloud/authoring/basic-handling.md): Diese Seite basiert hauptsächlich auf der **Sites**-Konsole, aber viele / die meisten Funktionen sind auch für das Authoring von **Inhaltsfragmenten** unter der **Assets**-Konsole relevant.
 
-   * [Navigationsfenster](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
+   * [Navigationsfenster](/help/sites-cloud/authoring/basic-handling.md#navigation-panel)
 
-   * [Die Kopfzeile](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)
+   * [Die Kopfzeile](/help/sites-cloud/authoring/basic-handling.md#the-header)
 
-   * [Aktionssymbolleiste](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+   * [Aktionssymbolleiste](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar)
 
-   * [Schnellaktionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
+   * [Schnellaktionen](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
 
-   * [Anzeigen und Auswählen von Ressourcen](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+   * [Anzeigen und Auswählen von Ressourcen](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 
-   * [Schienenauswahl](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+   * [Schienenauswahl](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
 
 * [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 
@@ -291,7 +291,7 @@ Nachdem Sie nun die Grundlagen gelernt haben, lautet der nächste Schritt: [Erfa
 
    * [Erstellen eines Inhaltsfragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [Erstellung von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/authoring.md)
+   * [Erstellen von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/authoring.md)
 
    * Veröffentlichung
 
@@ -313,7 +313,7 @@ Nachdem Sie nun die Grundlagen gelernt haben, lautet der nächste Schritt: [Erfa
 
       * [Inhaltsfragmentmodelle – Zulassen von Inhaltsfragmentmodellen für Ihren Assets-Ordner](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
-* [Inhaltsfragmente - der ursprüngliche Editor aus der Konsole &quot;Assets&quot;](/help/assets/content-fragments/content-fragments-variations.md)
+* [Inhaltsfragmente – der ursprüngliche Editor aus der Assets-Konsole](/help/assets/content-fragments/content-fragments-variations.md)
 
 * Anleitungen für den Einstieg
    * [Erstellen eines Setups für einen Asset-Ordner (Headless)](/help/headless/setup/create-assets-folder.md)

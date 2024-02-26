@@ -2,16 +2,16 @@
 title: Anpassen der Ansichten von Seiteneigenschaften
 description: Erfahren Sie, wie Seiteneigenschaften von Autorinnen und Autoren angezeigt und bearbeitet werden können.
 exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '361'
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
+workflow-type: tm+mt
+source-wordcount: '352'
 ht-degree: 100%
 
 ---
 
 # Anpassen der Ansichten von Seiteneigenschaften{#customizing-views-of-page-properties}
 
-Jede Seite verfügt über einen Satz von [Eigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md), die von Benutzenden angezeigt und bearbeitet werden können. Einige sind beim Erstellen der Seite erforderlich (Ansicht erstellen), andere können später angezeigt und bearbeitet werden (Ansicht bearbeiten). Diese Seiteneigenschaften werden über das Dialogfeld (`cq:dialog`) der entsprechenden Seitenkomponente definiert und bereitgestellt.
+Jede Seite verfügt über einen Satz von [Eigenschaften](/help/sites-cloud/authoring/sites-console/page-properties.md), die von Benutzenden angezeigt und bearbeitet werden können. Einige sind beim Erstellen der Seite erforderlich (Ansicht erstellen), andere können später angezeigt und bearbeitet werden (Ansicht bearbeiten). Diese Seiteneigenschaften werden über das Dialogfeld (`cq:dialog`) der entsprechenden Seitenkomponente definiert und bereitgestellt.
 
 Der Standardstatus für jede Seiteneigenschaft ist wie folgt:
 
@@ -39,7 +39,7 @@ Felder müssen einzeln konfiguriert werden, wenn eine Änderung erforderlich ist
 
 Sie können diese Felder auch konfigurieren, indem Sie das Dialogfeld Ihrer Seitenkomponente konfigurieren und die entsprechenden Knoteneigenschaften anwenden.
 
-Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) zeigt standardmäßig die Felder an, die unter **Weitere Titel und Beschreibungen** gruppiert sind. Um diese auszublenden, nehmen Sie folgende Konfiguration vor:
+Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) zeigt standardmäßig die Felder an, die unter **Weitere Titel und Beschreibungen** gruppiert sind. Um diese auszublenden, nehmen Sie folgende Konfiguration vor:
 
 1. Erstellen Sie Ihre Seitenkomponente unter `/apps`.
 1. Erstellen Sie eine Überschreibung (mit *dialog diff*, das von [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) bereitgestellt wird) für den Abschnitt `basic` der Seitenkomponente. Beispiel:

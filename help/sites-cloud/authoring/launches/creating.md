@@ -2,10 +2,10 @@
 title: Erstellen von Launches
 description: Erstellen Sie einen Launch, um die Aktualisierung einer neuen Version bestehender Web-Seiten für die zukünftige Aktivierung zu ermöglichen.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1042'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 99%
 
 Erstellen Sie einen Launch, um die Aktualisierung einer neuen Version bestehender Web-Seiten für die zukünftige Aktivierung zu aktivieren. Wenn Sie einen Launch erstellen, können Sie einen Titel und die Quellseite angeben:
 
-* Der Titel wird in der Leiste [Verweise](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) angezeigt. Von dort aus haben Autoren Zugriff zur Bearbeitung.
+* Der Titel wird in der Leiste [Verweise](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references) angezeigt. Von dort aus haben Autoren Zugriff zur Bearbeitung.
 * Die untergeordneten Seiten der Quellseiten werden standardmäßig in den Launch eingeschlossen. Sie können bei Bedarf nur die Quellseite verwenden.
 * Standardmäßig aktualisiert [Live Copy](/help/sites-cloud/administering/msm/overview.md) automatisch die Launch-Seiten, wenn sich die Quellseiten ändern. Zur Vermeidung automatischer Änderungen können Sie festlegen, dass eine statische Kopie erstellt wird.
 
@@ -25,9 +25,9 @@ Optional können Sie das **Launch-Datum** (und die Uhrzeit) für die Bewerbung u
 >
 >* `/libs/launches/templates/outofscope`
 >
->Diese Seiten können nicht bearbeitet werden. Die Nachricht wird angezeigt:
+>Diese Seiten können nicht bearbeitet werden. Es wird die folgende Meldung angezeigt:
 >
->* **Diese Seite ist nicht Teil des Launches. Zur Produktionsseite**
+>* **Diese Seite ist nicht Teil des Launches. Navigieren zur Produktionsseite**
 
 ## Erstellen eines Launches {#creating-a-launch}
 
@@ -48,7 +48,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 
    >[!NOTE]
    >
-   >In der **Sites**-Konsole können Sie auch den [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) verwenden, um eine Seite auszuwählen, bevor Sie **Erstellen** auswählen.
+   >In der **Sites**-Konsole können Sie auch den [Auswahlmodus](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) verwenden, um eine Seite auszuwählen, bevor Sie **Erstellen** auswählen.
    >
    >Dadurch wird die ausgewählte Seite als Anfangsquellseite verwendet.
 
@@ -114,7 +114,7 @@ Die Auswahl dieser Option bewirkt Folgendes:
 >
 >Da eine andere Vorlage verwendet wird, ist die neue Seite leer. Aufgrund der unterschiedlichen Seitenstruktur wird kein Inhalt kopiert.
 >
->Dieser Mechanismus kann verwendet werden, um die Vorlage einer [vorhandenen Seite](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) zu ändern, wobei jedoch der Verlust von Inhalten zu berücksichtigen ist.
+>Dieser Mechanismus kann verwendet werden, um die Vorlage einer [vorhandenen Seite](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) zu ändern, wobei jedoch der Verlust von Inhalten zu berücksichtigen ist.
 
 ### Erstellen von verschachtelten Launches {#creating-a-nested-launch}
 

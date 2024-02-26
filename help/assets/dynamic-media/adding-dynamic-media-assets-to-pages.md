@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: e2d79742c2097748d736bc4d2d2046711d978fc5
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '3166'
 ht-degree: 99%
@@ -309,7 +309,7 @@ Sie können die folgenden **[!UICONTROL allgemeinen]** Einstellungen bearbeiten,
 Die Panoramamedienkomponente ist für die Assets bestimmt, bei denen es sich um kugelförmige Panoramabilder handelt. Solche Bilder bieten ein 360°-Betrachtungserlebnis eines Raums, einer Immobile, eines Ortes oder einer Landschaft. Damit ein Bild als kugelförmiges Panoramabild gilt, muss MINDESTENS eine der beiden folgenden Eigenschaften zutreffen:
 
 * Ein Seitenverhältnis von 2:1.
-* Mit den Keywords `equirectangular` oder (`spherical` + `panorama`) oder (`spherical` + `panoramic`) markiert. Weitere Informationen finden Sie unter [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md).
+* Mit den Keywords `equirectangular` oder (`spherical` + `panorama`) oder (`spherical` + `panoramic`) markiert. Weitere Informationen finden Sie unter [Verwenden von Tags](/help/sites-cloud/authoring/sites-console/tags.md).
 
 Die Kriterien für das Seitenverhältnis sowie die Keywords gelten für Panorama-Assets für die Asset-Detailseite und die WCM-Komponente **[!UICONTROL Panoramamedien]**.
 

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie das Framework für die Übersetzungsintegrati
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1499'
-ht-degree: 91%
+source-wordcount: '1465'
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Die folgenden Übersetzungsdienstleister bieten eine Implementierung der neuen A
 
 Wenn Sie ein Connector-Paket installiert haben, können Sie eine Cloud-Konfiguration für den Connector erstellen. In der Regel müssen Sie Ihre Anmeldedaten für die Authentifizierung beim Übersetzungs-Service angeben. Weitere Informationen zum Hinzufügen einer Cloud-Konfiguration für den Microsoft Translator-Connector finden Sie unter [Integrieren mit Microsoft Translator](connect-ms-translator.md).
 
-Sie können bei Bedarf mehrere Cloud-Konfigurationen für denselben Connector erstellen. Beispielsweise können Sie eine Konfiguration für jedes Konto oder Projekt erstellen, das Sie bei einem Anbieter haben.
+Sie können mehrere Cloud-Konfigurationen für denselben Connector erstellen, falls erforderlich. Beispielsweise können Sie eine Konfiguration für jedes Konto oder Projekt erstellen, das Sie bei einem Anbieter haben.
 
 Nach der Konfiguration einer Verbindung können Sie die Framework-Konfiguration für die Übersetzungsintegration erstellen, von der diese Verbindung genutzt wird.
 
@@ -69,13 +69,13 @@ Nachdem Sie ein Framework für die Übersetzungsintegration erstellt haben, kön
 
 Eine einzelne Konfiguration des Frameworks steuert, wie Seiteninhalte und Assets übersetzt werden. So erstellen Sie eine Übersetzungskonfiguration:
 
-1. Im [globales Navigationsmenü,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) select **Tools > Cloud Service und Übersetzungs-Cloud Service**.
-1. Navigieren Sie zu der Stelle, an der Sie die Konfiguration in Ihrer Inhaltsstruktur erstellen möchten. Diese bezieht sich oft auf eine bestimmte Site oder kann global sein.
-1. Geben Sie die folgenden Informationen in die Felder ein und wählen Sie dann **Erstellen**.:
+1. Wählen Sie im [globalen Navigationsmenü](/help/sites-cloud/authoring/basic-handling.md#global-navigation) **Tools > Cloud-Services > Übersetzungs-Cloud-Services** aus.
+1. Navigieren Sie zu der Stelle in Ihrer Inhaltsstruktur, an der Sie die Konfiguration erstellen möchten. Diese bezieht sich oft auf eine bestimmte Site oder kann global sein.
+1. Geben Sie die folgenden Informationen in die Felder ein und wählen Sie dann **Erstellen** aus.:
    1. Wählen Sie **Konfigurationstyp** in der Dropdown-Liste aus.
    1. Geben Sie einen **Titel** für Ihre Konfiguration ein. Durch den **Titel** wird die Konfiguration in der **Cloud Services**-Konsole und in Dropdown-Listen mit den Seiteneigenschaften identifiziert.
    1. Geben Sie optional einen **Namen** für den Repository-Knoten ein, auf dem die Konfiguration gespeichert wird.
-1. Im **Konfiguration bearbeiten** konfigurieren Sie die Eigenschaften im **Sites** und **Assets** Registerkarten und wählen Sie **Speichern und schließen**.
+1. Konfigurieren Sie im Fenster **Konfiguration bearbeiten** die Eigenschaften auf den Registerkarten **Sites** und **Assets** und wählen Sie dann **Speichern und schließen** aus.
 
 ### Website-Konfigurationseigenschaften {#sites-configuration-properties}
 
@@ -118,7 +118,7 @@ Um die Übersetzung Ihrer Quellseiten in andere Sprachen zu konfigurieren, verkn
 * mit der Cloud-Konfiguration, die AEM an Ihren Übersetzungsdienstleister anbindet
 * mit dem Framework für die Übersetzungsintegration, das die Details der Übersetzung konfiguriert
 
-Die Cloud-Konfiguration des Framework für die Übersetzungsintegration identifiziert die Cloud-Konfiguration, die für die Verbindung mit dem Dienstleister verwendet werden soll. Wenn Sie eine Quellseite mit der Cloud-Konfiguration eines Frameworks verknüpfen, muss die Seite mit der Cloud-Konfiguration des Dienstleisters verknüpft sein, die die Cloud-Konfiguration des Frameworks nutzt.
+Die Cloud-Konfiguration des Frameworks für die Übersetzungsintegration legt fest, mit welcher Cloud-Konfiguration die Verbindung zum Dienstleister hergestellt werden soll. Wenn Sie eine Quellseite mit der Cloud-Konfiguration eines Frameworks verknüpfen, muss die Seite mit der Cloud-Konfiguration des Dienstleisters verknüpft sein, die die Cloud-Konfiguration des Frameworks nutzt.
 
 Wenn Sie eine Seite mit einer Cloud-Konfiguration verknüpfen, erben die untergeordneten Elemente der Seite diese Verknüpfung. Wenn Sie z. B. die Seite `/content/wknd/language-masters/en/magazine` mit einem Framework für die Übersetzungsintegration verknüpfen, werden die Seite `magazine` und die untergeordneten Seiten entsprechend diesem Framework übersetzt.
 
@@ -128,16 +128,16 @@ Bei Bedarf können Sie die Verknüpfung auf einer untergeordneten Seite übersch
 
 Verknüpfen Sie eine Seite mit Ihrem Übersetzungsdienstleister, um die Seite und ihre untergeordneten Seiten zu übersetzen.
 
-1. Wählen Sie in der Sites-Konsole die zu konfigurierende Seite aus und wählen Sie **Eigenschaften anzeigen**.
+1. Wählen Sie in der Sites-Konsole die zu konfigurierende Seite und dann die Option **Eigenschaften anzeigen** aus.
 1. Wählen Sie die Registerkarte **Cloud-Services** aus.
-1. Im **Konfiguration hinzufügen** die Konfiguration aus.
-1. Klicken Sie auf **Speichern und schließen**.
+1. Wählen Sie in der Dropdown-Liste **Konfiguration hinzufügen** die Konfiguration aus.
+1. Wählen Sie **Speichern und schließen**.
 
 ### Verknüpfen von Seiten mit einem Framework für die Übersetzungsintegration {#associating-pages-with-a-translation-integration-framework}
 
 Verknüpfen Sie eine Seite mit dem Framework für die Übersetzungsintegration, das festlegt, wie die Übersetzung der Seite und der untergeordneten Seiten durchgeführt werden soll.
 
-1. Wählen Sie in der Sites-Konsole die zu konfigurierende Seite aus und wählen Sie **Eigenschaften anzeigen**.
+1. Wählen Sie in der Sites-Konsole die zu konfigurierende Seite und dann **Eigenschaften anzeigen** aus.
 1. Wählen Sie die Registerkarte **Cloud-Services** aus.
-1. Im **Konfiguration hinzufügen** die Konfiguration aus.
-1. Klicken Sie auf **Speichern und schließen**.
+1. Wählen Sie in der Dropdown-Liste **Konfiguration hinzufügen** die Konfiguration aus.
+1. Wählen Sie **Speichern und schließen**.

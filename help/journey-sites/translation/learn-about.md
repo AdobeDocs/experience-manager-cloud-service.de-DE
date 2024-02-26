@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Auf allgemeiner Ebene besteht die Übersetzung in AEM aus vier einfachen Schritt
 1. Die übersetzten Inhalte werden überprüft und veröffentlicht.
 
 
-Im Journey erfahren Sie außerdem, wie AEM Inhalte Schritt für Schritt übersetzt.
+Im weiteren Verlauf der Tour erfahren Sie Schritt für Schritt, wie AEM Inhalte übersetzt.
 
 ## Wie geht es weiter {#what-is-next}
 
@@ -62,5 +62,5 @@ Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Sites-Übersetzung-Tour 
 
 Es wird zwar empfohlen, mit dem nächsten Teil der Sites-Übersetzungs-Tour fortzufahren, indem Sie das Dokument [Erste Schritte mit der AEM Sites-Übersetzung](getting-started.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche, optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, die aber nicht erforderlich sind, um mit der Tour fortzufahren.
 
-* [Schnellstartanleitung zum Verfassen von Seiten (Authoring)](/help/sites-cloud/authoring/getting-started/quick-start.md) – Ein kurzer Überblick über die wichtigsten Konzepte zur Inhaltserstellung mit AEM Sites
+* [Schnellstartanleitung zum Verfassen von Seiten (Authoring)](/help/sites-cloud/authoring/quick-start.md) – Ein kurzer Überblick über die wichtigsten Konzepte zur Inhaltserstellung mit AEM Sites
 * [MSM und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md) – Die Details des Multi-Site-Managers von AEM und wie er mit seinen Übersetzungs-Tools zusammenarbeitet.

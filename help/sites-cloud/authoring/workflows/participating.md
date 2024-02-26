@@ -2,7 +2,7 @@
 title: Teilnehmen an Workflows
 description: Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 98%
@@ -24,11 +24,11 @@ Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivitä
 
 Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), werden verschiedene Warnhinweise und/oder Benachrichtigungen angezeigt:
 
-* Ihr Indikator [Benachrichtigung](/help/sites-cloud/authoring/getting-started/inbox.md) (Symbolleiste) wird erhöht:
+* Ihr Indikator [Benachrichtigung](/help/sites-cloud/authoring/inbox.md) (Symbolleiste) wird erhöht:
 
   ![Benachrichtigungssymbolleiste](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* Das Element wird in Ihrem Benachrichtigungs-[Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md) aufgeführt:
+* Das Element wird in Ihrem Benachrichtigungs-[Posteingang](/help/sites-cloud/authoring/inbox.md) aufgeführt:
 
   ![Benachrichtigungen im Posteingang](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
@@ -72,7 +72,7 @@ Sie können einen Teilnehmerschritt wie folgt abschließen:
 
 Führen Sie die folgenden Schritte aus, um das Arbeitselement abzuschließen:
 
-1. Öffnen Sie den **[AEM-Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Öffnen Sie den **[AEM-Posteingang](/help/sites-cloud/authoring/inbox.md)**.
 1. Wählen Sie das Workflow-Element aus, das Sie durchführen möchten (wählen Sie die Miniaturansicht aus).
 1. Wählen Sie in der Symbolleiste die Option **Fertig stellen** aus.
 1. Das Dialogfeld **Arbeitselement fertigstellen** wird geöffnet. Gehen Sie in der Dropdown-Auswahl zu **Nächster Schritt** und fügen Sie bei Bedarf einen **Kommentar** hinzu.
@@ -82,7 +82,7 @@ Führen Sie die folgenden Schritte aus, um das Arbeitselement abzuschließen:
 
 Führen Sie die folgenden Schritte aus, um das Arbeitselement abzuschließen:
 
-1. Öffnen Sie die [Seite zur Bearbeitung](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Öffnen Sie die [Seite zur Bearbeitung](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Wählen Sie in der Statusleiste oben im Bild **Fertig stellen** aus.
 1. Das Dialogfeld **Arbeitselement fertigstellen** wird geöffnet. Gehen Sie in der Dropdown-Auswahl zu **Nächster Schritt** und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
@@ -131,7 +131,7 @@ Das Delegieren eines Teilnehmerschritts ist möglich:
 
 Gehen Sie folgendermaßen vor, um ein Arbeitselement zu delegieren:
 
-1. Öffnen Sie den **[AEM-Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Öffnen Sie den **[AEM-Posteingang](/help/sites-cloud/authoring/inbox.md)**.
 1. Wählen Sie das Workflow-Element aus, das Sie durchführen möchten (wählen Sie die Miniaturansicht aus).
 1. Wählen Sie in der Symbolleiste die Option **Delegieren** aus.
 1. Das Dialogfeld wird geöffnet. Wählen Sie in der Dropdown-Auswahl die Option **Benutzer** aus (dabei kann es sich auch um eine Gruppe handeln) und fügen Sie bei Bedarf einen **Kommentar** hinzu.
@@ -141,7 +141,7 @@ Gehen Sie folgendermaßen vor, um ein Arbeitselement zu delegieren:
 
 Gehen Sie folgendermaßen vor, um ein Arbeitselement zu delegieren:
 
-1. Öffnen Sie die [Seite zur Bearbeitung](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Öffnen Sie die [Seite zur Bearbeitung](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Wählen Sie in der Statusleiste oben im Bild **Delegieren** aus.
 1. Das Dialogfeld wird geöffnet. Wählen Sie in der Dropdown-Auswahl die Option **Benutzer** aus (dabei kann es sich auch um eine Gruppe handeln) und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
@@ -181,7 +181,7 @@ Das Wechseln zu einem vorherigen Teilnehmerschritt ist folgendermaßen möglich:
 
 Gehen Sie dazu folgendermaßen vor:
 
-1. Öffnen Sie den **[AEM-Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Öffnen Sie den **[AEM-Posteingang](/help/sites-cloud/authoring/inbox.md)**.
 1. Wählen Sie das Workflow-Element aus, das Sie durchführen möchten (wählen Sie die Miniaturansicht aus).
 1. Wählen Sie **Schritt zurück** aus, um das Dialogfeld zu öffnen.
 1. Wählen Sie die Option **Vorheriger Schritt** aus und fügen Sie bei Bedarf einen **Kommentar** hinzu.
@@ -191,7 +191,7 @@ Gehen Sie dazu folgendermaßen vor:
 
 Gehen Sie dazu folgendermaßen vor:
 
-1. Öffnen Sie die [Seite zur Bearbeitung](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Öffnen Sie die [Seite zur Bearbeitung](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Wählen Sie in der Symbolleiste oben im Bild **Schritt zurück** aus.
 1. Wählen Sie die Option **Vorheriger Schritt** aus und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
@@ -242,7 +242,7 @@ Das Öffnen der Details der Arbeitselemente ist möglich:
 
 Gehen Sie folgendermaßen vor, um ein Workflow-Element zu öffnen und die Details anzusehen:
 
-1. Öffnen Sie den **[AEM-Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Öffnen Sie den **[AEM-Posteingang](/help/sites-cloud/authoring/inbox.md)**.
 1. Wählen Sie das Workflow-Element aus, das Sie durchführen möchten (wählen Sie die Miniaturansicht aus).
 1. Wählen Sie **Öffnen** aus, um die Informationsregisterkarten zu öffnen.
 1. Wählen Sie bei Bedarf die geeignete Aktion aus, geben Sie etwaige Details ein und bestätigen Sie mit **OK** (oder **Abbrechen**).
@@ -252,7 +252,7 @@ Gehen Sie folgendermaßen vor, um ein Workflow-Element zu öffnen und die Detail
 
 Gehen Sie folgendermaßen vor, um ein Workflow-Element zu öffnen und die Details anzusehen:
 
-1. Öffnen Sie die [Seite zur Bearbeitung](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Öffnen Sie die [Seite zur Bearbeitung](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Wählen Sie aus der Statusleiste **Details anzeigen** aus, um die Informationsregisterkarten zu öffnen.
 1. Wählen Sie bei Bedarf die geeignete Aktion aus, geben Sie etwaige Details ein und bestätigen Sie mit **OK** (oder **Abbrechen**).
 1. Mit **Speichern** oder **Abbrechen** schließen Sie das Dialogfeld.
@@ -263,7 +263,7 @@ Sie können sich Details zur Payload anzeigen lassen, die mit der Workflow-Insta
 
 Gehen Sie folgendermaßen vor, um die Payload und Ressourcen der Workflow-Instanz anzuzeigen:
 
-1. Öffnen Sie den **[AEM-Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Öffnen Sie den **[AEM-Posteingang](/help/sites-cloud/authoring/inbox.md)**.
 1. Wählen Sie das Workflow-Element aus, das Sie durchführen möchten (wählen Sie die Miniaturansicht aus).
 1. Wählen Sie in der Symbolleiste **Nutzdaten anzeigen** aus, um den Dialog zu öffnen.
    * Da ein Workflow-Paket lediglich eine Sammlung von Referenzen auf Pfade innerhalb des Repositorys ist, können Sie die Einträge hier hinzuzufügen, entfernen oder anpassen, um zu ändern, was vom Workflow-Paket referenziert werden soll. Verwenden Sie die Komponente **Ressourcendefinition**, um neue Einträge hinzuzufügen.

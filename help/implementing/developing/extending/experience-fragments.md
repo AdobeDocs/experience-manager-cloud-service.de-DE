@@ -1,10 +1,10 @@
 ---
-title: Experience Fragments  Übersicht
+title: Übersicht über Experience Fragments
 description: Erweitern Sie Experience Fragments in Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 29d8d08899bb60b2bf3027ed32dbcdca3a73e671
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1642'
 ht-degree: 98%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 ## Grundlagen {#the-basics}
 
-Ein [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) ist eine Gruppe aus einer oder mehreren Komponenten (einschließlich Inhalt und Layout), die innerhalb von Seiten referenziert werden können.
+Ein [Experience Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md) ist eine Gruppe aus einer oder mehreren Komponenten (einschließlich Inhalt und Layout), die innerhalb von Seiten referenziert werden können.
 
 Ein primäres Experience Fragment, eine andere Variante oder beides verwendet:
 
@@ -47,7 +47,7 @@ Beispiel:
 
 ![Einfache HTML-Ausgabe](assets/xf-14.png)
 
-Der Selektor für die einfache Ausgabedarstellung verwendet einen Transformer im Gegensatz zu zusätzlichen Skripten. Der [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) wird als Transformer verwendet. Dieser Transformer wird wie folgt konfiguriert:
+Der Selektor für einfache Ausgabedarstellungen verwendet einen Transformator im Gegensatz zu zusätzlichen Skripten. Die [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) wird als Transformator verwendet. Dieser Transformer wird wie folgt konfiguriert:
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
@@ -83,15 +83,13 @@ Um eine Experience Fragment-Vorlage zu erstellen, die vom Assistenten **Erstelle
 1. Beide:
 
    1. Der Ressourcentyp der Vorlage (der Anfangsknoten) muss erben von:
-
       `cq/experience-fragments/components/xfpage`
 
    1. Der Name der Vorlage muss beginnen mit:
-
       `experience-fragments`
 Dieses Muster ermöglicht es Benutzenden, Experience Fragments in /content/experience-fragments zu erstellen, da die Eigenschaft `cq:allowedTemplates` dieses Ordners alle Vorlagen enthält, deren Namen mit `experience-fragment` beginnen. Kunden können diese Eigenschaft aktualisieren, um ihr eigenes Namensschema oder ihre eigenen Vorlagenspeicherorte einzuschließen.
 
-1. [Zulässige Vorlagen](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) können in der Experience Fragments-Konsole konfiguriert werden.
+1. [Zulässige Vorlagen](/help/sites-cloud/authoring/fragments/content-fragments.md#configure-allowed-templates-folder) können in der Experience Fragments-Konsole konfiguriert werden.
 
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
@@ -121,7 +119,7 @@ In AEM haben Sie die Möglichkeit, Experience Fragments zu erstellen. Ein Experi
 * besteht aus einer Gruppe von Komponenten und einem Layout,
 * kann unabhängig von einer AEM-Seite vorhanden sein.
 
-Einer der Anwendungsfälle für solche Gruppen ist das Einbetten von Inhalten in Touchpoints von Drittanbietern, wie z. B. Adobe Target.
+Einer der Anwendungsfälle für solche Gruppen ist das Einbetten von Inhalten in Touchpoints von Dritten, wie z. B. Adobe Target.
 
 ### Standardmäßige Link-Umschreibung {#default-link-rewriting}
 
@@ -163,7 +161,7 @@ Nachdem Sie die HTML-Seite generiert haben, wird die Sling Rewriter-Pipeline an 
    >
    >Die internen Links in der HTML-Datei sind relative Links, aber es kann vorkommen, dass benutzerdefinierte Komponenten vollständige URLs im HTML-Code bereitstellen. Standardmäßig ignoriert AEM diese vollständigen URLs und nimmt keine Änderungen vor.
 
-   Die Links in diesen Attributen werden durch den AEM Link Externalizer `publishLink()` geleitet, um die URL so zu erstellen, als wäre sie auf einer veröffentlichten Instanz und als solche öffentlich verfügbar.
+   Die Links in diesen Attributen werden durch den AEM Link Externalizer `publishLink()` geleitet, um die URL so neu zu erstellen, als wäre sie in einer veröffentlichten Instanz und als solche öffentlich verfügbar.
 
 Bei Verwendung einer vordefinierten Implementierung sollte der oben beschriebene Prozess ausreichen, um das Target-Angebot aus dem Experience Fragment zu generieren und es dann in Adobe Target zu exportieren. Es gibt jedoch einige Anwendungsfälle, die in diesem Prozess nicht berücksichtigt werden. Einige dieser Fälle, die nicht berücksichtigt werden, umfassen Folgendes:
 
@@ -174,7 +172,7 @@ Für diese Anwendungsfälle stellt AEM die Link Rewriter Provider-Schnittstelle 
 
 ### Link Rewriter Provider-Schnittstelle {#link-rewriter-provider-interface}
 
-Für kompliziertere Fälle, die nicht vom [Standard](#default-link-rewriting) abgedeckt werden, bietet AEM die Link Rewriter Provider-Schnittstelle. Diese Schnittstelle ist eine `ConsumerType`-Schnittstelle, die Sie als Service in Ihren Bundles implementieren können. Sie umgeht die Änderungen, die AEM an internen Links eines HTML-Angebots vornimmt, die aus einem Experience Fragment gerendert wurden. Auf dieser Oberfläche können Sie den Prozess des Neuschreibens interner HTML-Links an Ihre geschäftlichen Anforderungen anpassen.
+Für kompliziertere Fälle, die nicht vom [Standard](#default-link-rewriting) abgedeckt werden, bietet AEM die Link Rewriter Provider-Schnittstelle. Diese Schnittstelle ist eine `ConsumerType`-Schnittstelle, die Sie als Service in Ihren Bundles implementieren können. Sie umgeht die Änderungen, die AEM an internen Links eines HTML-Angebots vornimmt, die aus einem Experience Fragment gerendert wurden. Diese Schnittstelle ermöglicht es Ihnen, das Umschreiben interner HTML-Links an Ihre geschäftlichen Anforderungen anzupassen.
 
 Beispiele für Anwendungsfälle für die Implementierung dieser Schnittstelle als Service:
 
@@ -290,7 +288,7 @@ Der Name des HTML-Elements, das verarbeitet wird.
 * `attribute`
 Der genaue Attributname.
 
-Wenn beispielsweise das System „Nach Target exportieren“ dieses Element verarbeitet, können Sie `CSSInclude` wie folgt definieren:
+Wenn beispielsweise das System „In Target exportieren“ dieses Element verarbeitet, können Sie `CSSInclude` wie folgt definieren:
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">

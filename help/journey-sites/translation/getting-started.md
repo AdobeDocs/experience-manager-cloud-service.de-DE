@@ -5,7 +5,7 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 99%
@@ -47,7 +47,7 @@ Bevor Sie mit der Übersetzung Ihrer AEM-Inhalte beginnen, müssen Sie mehrere A
 
 >[!TIP]
 >
->Wenn Sie nicht mit der Verwendung eines umfangreichen CMS wie AEM vertraut sind, sollten Sie die Dokumentation [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) lesen, bevor Sie fortfahren. Die grundlegende Dokumentation der Handhabung ist nicht Teil der Tour. Kehren Sie daher nach Abschluss zu dieser Seite zurück.
+>Wenn Sie nicht mit der Verwendung eines umfangreichen CMS wie AEM vertraut sind, sollten Sie die Dokumentation [Grundlegende Handhabung](/help/sites-cloud/authoring/basic-handling.md) lesen, bevor Sie fortfahren. Die grundlegende Dokumentation der Handhabung ist nicht Teil der Tour. Kehren Sie daher nach Abschluss zu dieser Seite zurück.
 
 ### Tools {#tools}
 
@@ -207,7 +207,7 @@ Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Sites-Übersetzungs-Tour
 
 Es wird empfohlen, zum nächsten Teil der Übersetzungs-Tour voranzuschreiten, indem Sie das Dokument [Konfigurieren des Übersetzungs-Connectors](configure-connector.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Sie sind jedoch nicht erforderlich, um mit der Tour fortzufahren.
 
-* [Grundlegende Handhabung von AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md): Lernen Sie die Grundlagen der AEM-Benutzeroberfläche kennen, um bequem navigieren und wichtige Aufgaben wie das Auffinden von Inhalten ausführen zu können.
+* [Grundlegende Handhabung von AEM](/help/sites-cloud/authoring/basic-handling.md): Lernen Sie die Grundlagen der AEM-Benutzeroberfläche kennen, um bequem navigieren und wichtige Aufgaben wie das Auffinden von Inhalten ausführen zu können.
 * [Ermitteln von zu übersetzenden Inhalten](/help/sites-cloud/administering/translation/rules.md): Erfahren Sie, wie Übersetzungsregeln Inhalte ermitteln, die übersetzt werden müssen.
 * [Konfigurieren des Frameworks für die Übersetzungsintegration](/help/sites-cloud/administering/translation/integration-framework.md): Erfahren Sie, wie Sie das Translation Integration Framework (TIF) für die Integration mit Übersetzungs-Services von Drittanbietern konfigurieren.
 * [Verwalten von Übersetzungsprojekten](/help/sites-cloud/administering/translation/managing-projects.md): Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Übersetzungsprojekte in AEM erstellen und verwalten.

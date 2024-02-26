@@ -4,7 +4,7 @@ description: Hier erfahren Sie, wie Sie ein adaptives Formular erstellen oder zu
 feature: Adaptive Forms, Foundation Components, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '3177'
 ht-degree: 98%
@@ -32,13 +32,13 @@ Der AEM Forms Cloud Service bietet Container- und Einbettungskomponenten für ad
 
 Wenn Sie in der Vergangenheit Foundation-Komponenten für adaptive Formulare oder einfache HTML-basierte Formulare für Ihre Sites erstellt haben, empfiehlt Adobe, Kernkomponenten für adaptive Formulare zu verwenden, um ein adaptives Formular auf der AEM Sites-Seite oder im Experience Fragment zu erstellen. Mit diesen können Sie verschiedene Funktionen von AEM Sites-Seiten verwenden, wie z. B. Versionierung, Targeting, Übersetzung und Multi-Site-Manager, wodurch die Erstellung und Verwaltung von adaptiven Formularen insgesamt verbessert wird. Sehen wir uns einige dieser Funktionen an:
 
-* **Versionierung:** AEM Sites-Seiten bieten eine [robuste Versionierungfähigkeiten](/help/sites-cloud/authoring/features/page-versions.md), mit der Sie verschiedene Versionen Ihrer Formulare verfolgen und verwalten können. Dadurch können Sie Änderungen und Verbesserungen an Formularen vornehmen und gleichzeitig bei Bedarf frühere Versionen wiederherstellen. Versionierung stellt einen kontrollierten und organisierten Ansatz für die Formularentwicklung und -weiterentwicklung sicher.
+* **Versionierung:** AEM Sites-Seiten bieten eine [robuste Versionierungfähigkeiten](/help/sites-cloud/authoring/sites-console/page-versions.md), mit der Sie verschiedene Versionen Ihrer Formulare verfolgen und verwalten können. Dadurch können Sie Änderungen und Verbesserungen an Formularen vornehmen und gleichzeitig bei Bedarf frühere Versionen wiederherstellen. Versionierung stellt einen kontrollierten und organisierten Ansatz für die Formularentwicklung und -weiterentwicklung sicher.
 * **Targeting (Integration mit Adobe Target):** Mit den Targeting-Funktionen von AEM Sites-Seiten können Sie auch [das Formularerlebnis für verschiedene Zielgruppen personalisieren](/help/sites-cloud/integrating/integration-adobe-target-ims.md). Mithilfe von Benutzersegmenten und Targeting-Kriterien können Sie den Inhalt, das Design oder das Verhalten des Formulars an bestimmte Benutzergruppen anpassen. Auf diese Weise können Sie ein personalisiertes und relevantes Formularerlebnis bereitstellen und die Interaktions- und Konversionsraten steigern.
 * **Übersetzung:** AEM Sites kann [nahtlos mit Übersetzungsdiensten integriert werden](/help/sites-cloud/administering/translation/overview.md), sodass Sie Formulare einfach in mehrere Sprachen übersetzen können. Diese Funktion vereinfacht den Lokalisierungsprozess und stellt sicher, dass Ihre Formulare für eine globale Zielgruppe zugänglich ist. Sie können Übersetzungen effizient in AEM-Übersetzungsprojekten verwalten und so Zeit und Aufwand für die Unterstützung mehrsprachiger Formulare reduzieren. Weitere Informationen zu Übersetzung finden Sie im Abschnitt „Überlegungen“.
 * **Multi-Site-Management und Live Copy:** AEM Sites bietet robuste [Fähigkeiten für die Verwaltung mehrerer Sites und Live Copys](/help/sites-cloud/administering/msm/overview.md), mit denen Sie mehrere Websites in einer Umgebung erstellen und verwalten können. Mit dieser Funktion können Sie nun Formulare über verschiedene Sites hinweg wiederverwenden, was Konsistenz gewährleistet und doppelte Arbeit vermeidet. Mit zentralisierter Kontrolle und Verwaltung können Sie Formulare effizient über mehrere Websites hinweg verwalten und aktualisieren.
 * **Themen:** AEM Sites-Seiten bieten ein Framework für das Entwerfen und Verwalten konsistenter visueller Stile auf mehreren Web-Seiten. Diese definieren Farben, Schriftarten, Stylesheets und andere visuelle Elemente, die zum allgemeinen Look-and-Feel der Website beitragen. [Sie können die Designs verwenden, die für ein adaptives Formular einer AEM Sites-Seite entwickelt wurden, was Zeit und Mühe spart.](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes).
 * **Tagging:** Mit AEM Sites-Seiten können Sie [Tags oder Beschriftungen zu einer Seite, einem Asset oder anderen Inhalten zuweisen](/help/implementing/developing/introduction/tagging-framework.md). Tags sind Keywords oder Metadatenbeschriftungen, die eine Möglichkeit bieten, Inhalte basierend auf bestimmten Kriterien zu kategorisieren und zu organisieren. Sie können Seiten, Assets oder anderen Inhaltselementen in AEM ein oder mehrere Tags zuweisen, um die Suche zu verbessern und die Assets zu kategorisieren.
-* **Sperren und Entsperren von Inhalten:** Mit AEM Sites können Benutzerinnen und Benutzer in der AEM Sites-Umgebung [Zugriff und Änderungen auf Seiten steuern](/help/sites-cloud/authoring/fundamentals/editing-content.md). Wenn eine Seite gesperrt ist, bedeutet dies, dass sie von anderen Benutzenden vor unbefugten Änderungen oder Bearbeitungen geschützt ist. Nur Benutzende, die den Inhalt gesperrt haben, oder Admins können ihn entsperren, um Änderungen zuzulassen.
+* **Sperren und Entsperren von Inhalten:** Mit AEM Sites können Benutzerinnen und Benutzer in der AEM Sites-Umgebung [Zugriff und Änderungen auf Seiten steuern](/help/sites-cloud/authoring/page-editor/edit-content.md). Wenn eine Seite gesperrt ist, bedeutet dies, dass sie von anderen Benutzenden vor unbefugten Änderungen oder Bearbeitungen geschützt ist. Nur Benutzende, die den Inhalt gesperrt haben, oder Admins können ihn entsperren, um Änderungen zuzulassen.
 
 Darüber hinaus verwenden adaptive Formulare im AEM-Seiteneditor die [Kernkomponenten für adaptive Formulare](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de#features). Diese Kernkomponenten bieten eine standardmäßige und einfachere Methode zum Formatieren und Anpassen der Komponenten, genau wie für [WCM-Komponenten für AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de).
 
@@ -261,7 +261,7 @@ Beim Senden eines Formulars können Sie die Benutzenden zu einer anderen Web-Sei
 
 * [Create style or themes for your forms](using-themes-in-core-components.md)
 * [Add dynamic behavior to forms using the rule editor](rule-editor.md)
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 
 -->
 
@@ -269,6 +269,6 @@ Beim Senden eines Formulars können Sie die Benutzenden zu einer anderen Web-Sei
 
 {{see-also}}
 * [Hinzufügen von dynamischem Verhalten zu Formularen mithilfe des Regeleditors](rule-editor.md)
-* [Festlegen des Layouts von Formularen für verschiedene Bildschirmgrößen und Gerätetypen](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Festlegen des Layouts von Formularen für verschiedene Bildschirmgrößen und Gerätetypen](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 
 

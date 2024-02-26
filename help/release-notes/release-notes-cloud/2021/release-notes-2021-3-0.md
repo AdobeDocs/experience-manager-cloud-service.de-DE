@@ -2,7 +2,7 @@
 title: Versionshinweise für Version 2021.3.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0“
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 87%
@@ -27,7 +27,7 @@ Die folgende Version (2021.4.0) wird am 29. April 2021 veröffentlicht.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* [Eine PWA-Version einer Website](/help/sites-cloud/authoring/features/enable-pwa.md) kann jetzt über eine einfache Konfiguration auf Projektebene aktiviert werden.
+* [Eine PWA-Version einer Website](/help/sites-cloud/authoring/sites-console/enable-pwa.md) kann jetzt über eine einfache Konfiguration auf Projektebene aktiviert werden.
 * Inhaltsfragment-Modellerweiterungen – jetzt ist es möglich, mehrzeilige Textdatentypen als Listen mit mehreren Feldern zu definieren.
 * Verbesserungen des Inhaltsfragmente-Editors – verschachtelte untergeordnete Fragmente werden jetzt im Breadcrumb angezeigt und die Ansicht von Veröffentlichungs-, Speicher- und Speicher-/Ausstiegsaktionen wurde verbessert.
 

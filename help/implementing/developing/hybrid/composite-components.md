@@ -2,10 +2,10 @@
 title: Zusammengesetzte Komponenten in SPAs
 description: Erfahren Sie, wie Sie eigene zusammengesetzte Komponenten erstellen. Das sind Komponenten aus anderen Komponenten, die mit dem AEM-SPA-Editor funktionieren.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 94%
+source-wordcount: '782'
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 94%
 
 Zusammengesetzte Komponenten nutzen den modularen Charakter von AEM-Komponenten, indem sie mehrere Basiskomponenten zu einer einzelnen Komponente kombinieren. Ein gängiges Anwendungsbeispiel für zusammengesetzte Komponenten ist die Kartenkomponente, die aus einer Kombination aus Bild- und Textkomponenten besteht.
 
-Wenn Composite-Komponenten ordnungsgemäß im Editor-Framework für AEM Einzelseiten-Apps (SPA) implementiert sind, können die Inhaltsautoren die Komponenten wie jede andere Komponente per Drag-and-Drop verschieben, aber dennoch jede Komponente einzeln bearbeiten, aus der die Composite-Komponente besteht.
+Wenn zusammengesetzte Komponenten ordnungsgemäß im Editor-Framework für AEM-Single-Page-Applications (SPA) implementiert sind, können die Inhaltsautorinnen und Inhaltsautoren solche Komponenten wie jede andere Komponente per Drag-and-Drop verschieben, sind jedoch nach wie vor in der Lage, jede Komponente, aus der die zusammengesetzte Komponente besteht, auch einzeln zu bearbeiten.
 
 In diesem Artikel wird gezeigt, wie Sie Ihrer Single Page Application eine zusammengesetzte Komponente hinzufügen können, um nahtlos mit dem AEM SPA Editor zu arbeiten.
 
@@ -156,7 +156,7 @@ Anschließend können Sie es zu Ihrer SPA hinzufügen und die Inhalte abrufen.
     itemPath='root/responsivegrid' />
    ```
 
-1. Fügen Sie die erstellte Komponente `wknd-spa/components/imagecard` den zulässigen Komponenten für die Container-Komponente [in der Seitenvorlage](/help/sites-cloud/authoring/features/templates.md) hinzu.
+1. Fügen Sie die erstellte Komponente `wknd-spa/components/imagecard` den zulässigen Komponenten für die Container-Komponente [in der Seitenvorlage](/help/sites-cloud/authoring/sites-console/templates.md) hinzu.
 
 Jetzt kann die Komponente `imagecard` direkt zum Container im AEM-Editor hinzugefügt werden.
 

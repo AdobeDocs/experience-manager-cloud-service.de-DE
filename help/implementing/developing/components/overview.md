@@ -2,16 +2,16 @@
 title: Komponentenübersicht
 description: Bei Komponenten handelt es sich um modulare Einheiten, mit denen spezifische Funktionalität zum Darstellen von Inhalten auf Ihrer Website realisiert wird.
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 57%
+source-wordcount: '376'
+ht-degree: 56%
 
 ---
 
 # Komponentenübersicht {#components-overview}
 
-Diese Seite enthält einen Überblick über die Komponenten von Adobe Experience Manager (AEM), z. B. für die [Seitenbearbeitung](/help/sites-cloud/authoring/fundamentals/components.md).
+Diese Seite enthält einen Überblick über die Komponenten von Adobe Experience Manager (AEM), z. B. für die [Seitenbearbeitung](/help/sites-cloud/authoring/page-editor/components.md).
 
 ## Was sind Komponenten? {#what-are-components}
 
@@ -48,7 +48,7 @@ Die Kernkomponenten werden mit AEM as a Cloud Service bereitgestellt; das [WKND-
 
 ### Anzeigen der verfügbaren Komponenten {#viewing-available-components}
 
-Eine Übersicht über alle verfügbaren Komponenten in Ihrer AEM-Instanz erhalten Sie über die [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console.md).
+Eine Übersicht über alle verfügbaren Komponenten in Ihrer AEM-Instanz erhalten Sie über die [Komponentenkonsole](/help/sites-cloud/authoring/components-console.md).
 
 Alternativ können Sie auch CRXDE Lite verwenden, um eine Liste aller im Repository verfügbaren Komponenten zu erhalten.
 

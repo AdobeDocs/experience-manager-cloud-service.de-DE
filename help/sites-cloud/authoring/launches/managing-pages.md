@@ -2,10 +2,10 @@
 title: Verwalten von Seiten in Ihrem Launch
 description: Sie können neue Seiten in Ihrem Launch erstellen. Sie können auch unerwünschte Seiten löschen.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,6 @@ Von hier können durch die Struktur Ihres Launchs navigieren:
 * Dem Seiten-Editor:
 
    * Wählen Sie **Navigieren** aus, um die Struktur des Launchs in der Konsole zu öffnen:
-
      ![Navigieren zum Launch über den Seiten-Editor](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
      >[!NOTE]
@@ -46,11 +45,11 @@ Wenn Sie eine bestimmte Quellseite auswählen und **Verweise** öffnen, können 
   >
   >Sie können auch **/Launches-Konsole** auswählen, um auf **Inhalt verwalten** (und andere Optionen) zuzugreifen.
 
-Alle diese Einstiegspunkte öffnen den Launch in der Sites-Konsole, wo Sie Folgendes tun können:
+All diese Einstiegspunkte öffnen den Launch in der Sites-Konsole, wo Sie Folgendes tun können:
 
 * Navigieren,
 * neue Seiten **erstellen**,
-* Wählen Sie vorhandene Seiten aus und handeln Sie, beispielsweise **Bearbeiten**, öffnen **Eigenschaften**, **Sperren**, **Kopieren**, **Einfügen** und **Löschen**
+* Vorhandene Seiten auswählen und Aktionen ausführen, beispielsweise **Bearbeiten**, **Eigenschaften** öffnen, **Sperren**, **Kopieren**, **Einfügen** und **Löschen**
   ![Navigieren in der Sites-Konsole über „Inhalt verwalten“](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * Verwenden Sie die Leiste **Verweise**, um zu den Seiten **Launch-Quelle** zurückzukehren:
   ![Sites-Konsole – Launch-Quelle](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
@@ -61,7 +60,7 @@ So fügen Sie Ihrem Launch neue Seiten hinzu:
 
 1. [Navigieren Sie in Ihrem Launch zum gewünschten Speicherort](#navigate-structure-of-launch).
 
-1. Wählen Sie **Erstellen** aus, um wie gewohnt [eine Seite zu erstellen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page).
+1. Wählen Sie **Erstellen** aus, um wie gewohnt [eine Seite zu erstellen](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page).
 
 ## Entfernen von Seiten aus Ihrem Launch {#remove-pages-from-launch}
 
@@ -69,4 +68,4 @@ So entfernen Sie Seiten aus Ihrem Launch:
 
 1. [Navigieren Sie in Ihrem Launch zum gewünschten Speicherort](#navigate-structure-of-launch).
 
-1. Wählen Sie **Löschen** aus, um wie gewohnt [eine Seite zu löschen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page).
+1. Wählen Sie **Löschen** aus, um wie gewohnt [eine Seite zu löschen](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page).

@@ -2,8 +2,8 @@
 title: Anwenden von Workflows auf Seiten
 description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Aktionen auszuführen. Es ist auch möglich, mehrere Workflows anzuwenden.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 100%
 
@@ -70,7 +70,7 @@ Sie können einen Workflow von der Symbolleiste der **Sites**-Konsole aus starte
 
 Aus der **Zeitleiste** können Sie einen Workflow starten, der auf Ihre ausgewählte Ressource angewendet werden soll.
 
-1. [Wählen Sie die Ressource aus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) und öffnen Sie die [Zeitleiste](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (oder öffnen Sie die Zeitleiste und wählen Sie dann die Ressource aus).
+1. [Wählen Sie die Ressource aus](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) und öffnen Sie die [Zeitleiste](/help/sites-cloud/authoring/basic-handling.md#timeline) (oder öffnen Sie die Zeitleiste und wählen Sie dann die Ressource aus).
 1. Der Pfeil neben dem Kommentarfeld kann verwendet werden, um **Workflow starten** anzuzeigen:
 
    ![Erstellen von Workflows über die Timeline](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
@@ -116,7 +116,7 @@ Details können Sie angeben wie folgt:
 
 1. Im Schritt **Umfang** können Sie Folgendes auswählen:
 
-   * Wählen Sie **Inhalt hinzufügen** aus, um den [Pfad-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) zu öffnen und zusätzliche Ressourcen auszuwählen. Wählen Sie im Browser die Option **Auswählen** aus, um den Inhalt zur Workflow-Instanz hinzuzufügen.
+   * Wählen Sie **Inhalt hinzufügen** aus, um den [Pfad-Browser](/help/sites-cloud/authoring/path-selection.md) zu öffnen und zusätzliche Ressourcen auszuwählen. Wählen Sie im Browser die Option **Auswählen** aus, um den Inhalt zur Workflow-Instanz hinzuzufügen.
 
    * Eine vorhandene Ressource, um weitere Aktionen zu sehen:
 

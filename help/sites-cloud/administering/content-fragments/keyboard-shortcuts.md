@@ -4,7 +4,7 @@ description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung, darunter
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 88%
@@ -15,7 +15,7 @@ ht-degree: 88%
 
 In der Inhaltsfragmentkonsole stehen verschiedene Tastaturbefehle zur Verfügung.
 
-In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für [Seiten bearbeiten](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), andere zu [allgemeine Verwendung von Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für [Seiten bearbeiten](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), andere zu [allgemeine Verwendung von Konsolen](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -38,11 +38,11 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für [S
 | Auswählen eines oder mehrerer Inhaltsfragmente | `u` | Öffnen des Dialogfelds „Veröffentlichung rückgängig machen“ |
 | Beliebiges offenes Dialogfeld | `esc` | Dialogfeld wird verworfen |
 
-Desktop-Benutzern stehen ebenfalls verschiedene Tastaturbefehle zur Verfügung. Einige gelten für die [Bearbeitung von Seiten](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), andere für die generelle [Verwendung von Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Desktop-Benutzern stehen ebenfalls verschiedene Tastaturbefehle zur Verfügung. Einige gelten für die [Bearbeitung von Seiten](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), andere für die generelle [Verwendung von Konsolen](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->Die Tastaturbefehle des Editors sind immer aktiv, unabhängig davon, ob die [Tastaturbefehle der Konsole deaktiviert sind](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+>Die Tastaturbefehle des Editors sind immer aktiv, unabhängig davon, ob die [Tastaturbefehle der Konsole deaktiviert sind](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## Betriebssystemspezifische Modifikatortasten {#os-specific-modifier-keys}
 

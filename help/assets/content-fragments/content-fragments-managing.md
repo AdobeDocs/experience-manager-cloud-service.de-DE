@@ -2,7 +2,7 @@
 title: Verwalten von Inhaltsfragmenten (Assets - Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit der Konsole "Assets"Ihre AEM Inhaltsfragmente verwalten können, entweder als Grundlage für Headless-Inhalte oder für die Seitenbearbeitung.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 96%
@@ -29,7 +29,7 @@ Der [Inhaltsfragment-Editor](#opening-the-fragment-editor) bietet verschiedene [
 >
 >Inhaltsfragmente können in folgenden Fällen verwendet werden:
 >
->* Beim Erstellung von Seiten. Siehe [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* Beim Erstellung von Seiten. Siehe [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md).
 >* Für [Headless-Bereitstellung mithilfe von Inhaltsfragmenten mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 >[!NOTE]
@@ -94,7 +94,7 @@ Die Methode zum Erstellen eines Inhaltsfragments ist folgende:
 In der **Assets**-Konsole ist eine Reihe von Aktionen für Ihre Inhaltsfragmente verfügbar, und zwar entweder:
 
 * In der Symbolleiste: Wenn Sie Ihr Fragment ausgewählt haben, sind alle passenden Aktionen verfügbar.
-* Als [Schnellzugriffe](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions): Eine Untergruppe von Aktionen, die für die einzelnen Fragmentkarten verfügbar sind.
+* Als [Schnellzugriffe](/help/sites-cloud/authoring/basic-handling.md#quick-actions): Eine Untergruppe von Aktionen, die für die einzelnen Fragmentkarten verfügbar sind.
 
 ![Aktionen in der Symbolleiste](assets/cfm-managing-02.png)
 
@@ -299,16 +299,16 @@ Neben den Standardoptionen enthält die [Zeitleiste](/help/assets/manage-digital
 
 >[!NOTE]
 >
-Kommentare sind:
+>Kommentare sind:
 >
-* Standardfunktionen für alle Assets
-* In der Zeitleiste erstellt worden
-* mit dem Fragment-Asset verbunden
+>* Standardfunktionen für alle Assets
+>* In der Zeitleiste erstellt worden
+>* mit dem Fragment-Asset verbunden
 >
-Anmerkungen (für Inhaltsfragmente) sind:
+>Anmerkungen (für Inhaltsfragmente) sind:
 >
-* Im Fragmenteditor eingegeben worden
-* spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
+>* Im Fragmenteditor eingegeben worden
+>* spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
 >
 
 Beispiel:
@@ -339,7 +339,7 @@ Sie werden nebeneinander angezeigt, wobei:
 
 >[!NOTE]
 >
-Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleichen.
+>Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleichen.
 
 ![Vergleichen von Varianten](assets/cfm-managing-06.png)
 
@@ -357,9 +357,9 @@ Sie können eine frühere Version Ihres Fragments wiederherstellen.
 
 >[!CAUTION]
 >
-Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
-Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+>Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
 Inhaltsfragmente müssen veröffentlicht werden, um in der Publishing-Umgebung genutzt werden zu können. Dies geschieht mithilfe der standardmäßigen Assets-Funktionen:
 
@@ -371,11 +371,11 @@ Der Zugriff kann auf folgende Weisen erfolgen:
 * Nach der Erstellung; Verwenden von [Aktionen, die in der Assets-Konsole verfügbar sind](#actions-for-a-content-fragment-assets-console).
 * Im [Inhaltsfragment-Editor](#toolbar-actions-in-the-content-fragment-editor)
 
-Wenn Sie [eine Seite veröffentlichen, in der das Fragment verwendet wird](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), wird das Fragment außerdem in den Seitenverweisen aufgeführt.
+Wenn Sie [eine Seite veröffentlichen, in der das Fragment verwendet wird](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing), wird das Fragment außerdem in den Seitenverweisen aufgeführt.
 
 >[!CAUTION]
 >
-Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
+>Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
 
 ## Löschen von Fragmenten {#deleting-a-fragment}
 
@@ -386,11 +386,11 @@ So löschen Sie ein Fragment:
 
    >[!NOTE]
    >
-   Die **Löschaktion** ist nicht als Schnellzugriff verfügbar.
+   >Die **Löschaktion** ist nicht als Schnellzugriff verfügbar.
 
 3. Wählen Sie **Löschen** in der Symbolleiste aus.
 4. Bestätigen Sie die **Löschaktion**.
 
    >[!CAUTION]
    >
-   Wenn das Fragment bereits in einer Seite referenziert wird, werden Sie in einer Warnung zur Bestätigung des **erzwungenen Löschens** aufgefordert. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.
+   >Wenn das Fragment bereits in einer Seite referenziert wird, werden Sie in einer Warnung zur Bestätigung des **erzwungenen Löschens** aufgefordert. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.

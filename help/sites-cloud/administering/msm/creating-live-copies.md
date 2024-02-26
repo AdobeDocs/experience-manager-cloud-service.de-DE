@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Live Copies erstellen und synchronisieren, um
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '4270'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ Die folgenden Schritte stehen einem Administrator in einer lokalen Entwicklungsi
 
 So erstellen Sie eine Blueprint-Konfiguration:
 
-1. [Navigieren](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) Sie zum Menü **Tools** und wählen Sie dann das Menü **Sites** aus.
+1. [Navigieren](/help/sites-cloud/authoring/basic-handling.md#global-navigation) Sie zum Menü **Tools** und wählen Sie dann das Menü **Sites** aus.
 1. Wählen Sie **Blueprints**, um die Konsole **Blueprint-Konfigurationen** zu öffnen:
 
    ![Blueprint-Konfigurationen](../assets/blueprint-configurations.png)
@@ -68,11 +68,11 @@ So erstellen Sie eine Blueprint-Konfiguration:
 
 1. Mit **Erstellen** wird die Blueprint-Konfiguration basierend auf Ihren Angaben erstellt.
 
-### Lokales Bearbeiten oder Löschen von Blueprint-Konfigurationen{#editing-or-deleting-a-blueprint-configuration}
+### Lokales Bearbeiten oder Löschen einer Blueprint-Konfiguration{#editing-or-deleting-a-blueprint-configuration}
 
 Sie können eine vorhandene Blueprint-Konfiguration bearbeiten oder löschen:
 
-1. [Navigieren](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) Sie zum Menü **Tools** und wählen Sie dann das Menü **Sites** aus.
+1. [Navigieren](/help/sites-cloud/authoring/basic-handling.md#global-navigation) Sie zum Menü **Tools** und wählen Sie dann das Menü **Sites** aus.
 1. Wählen Sie **Blueprints**, um die Konsole **Blueprint-Konfigurationen** zu öffnen:
 
    ![Blueprint-Konfigurationen](../assets/blueprint-configurations.png)
@@ -84,7 +84,7 @@ Sie können eine vorhandene Blueprint-Konfiguration bearbeiten oder löschen:
 
 ## Erstellen von Live Copies {#creating-a-live-copy}
 
-Es gibt mehrere Möglichkeiten, eine Live Copy zu erstellen.
+Sie haben mehrere Möglichkeiten, eine Live Copy zu erstellen.
 
 ### Erstellen von Live Copies einer Seite {#creating-a-live-copy-of-a-page}
 
@@ -110,11 +110,11 @@ So erstellen Sie eine Live Copy:
 
    ![Live Copy erstellen](../assets/create-live-copy.png)
 
-1. Wählen Sie die Quellseite aus und wählen Sie **Nächste**. Beispiel:
+1. Wählen Sie die Quellseite und anschließend **Weiter** aus. Beispiel:
 
    ![Live Copy-Quelle auswählen](../assets/live-copy-from.png)
 
-1. Geben Sie den Zielpfad der Live Copy an (öffnen Sie den übergeordneten Ordner/die übergeordnete Seite der Live Copy) und wählen Sie dann **Nächste**.
+1. Geben Sie den Zielpfad der Live Copy an (öffnen Sie den übergeordneten Ordner/die übergeordnete Seite der Live Copy) und wählen Sie dann **Weiter** aus.
 
    ![Live Copy-Ziel auswählen](../assets/live-copy-to.png)
 
@@ -135,7 +135,7 @@ So erstellen Sie eine Live Copy:
    * Bei Deaktivierung wird eine Live Copy mit allen untergeordneten Elementen der ausgewählten Seite erstellt (tiefe Live Copy).
 
 1. (Optional) Um eine oder mehrere Rollout-Konfigurationen für die Live Copy zu spezifizieren, wählen Sie sie in der Dropdown-Liste **Rollout-Konfigurationen** aus. Ausgewählte Konfigurationen werden unter der Dropdown-Auswahl angezeigt.
-1. Wählen Sie **Erstellen**. Eine Bestätigungsmeldung wird angezeigt. Hier können Sie entweder **Öffnen** oder **Fertig** auswählen.
+1. Wählen Sie **Erstellen** aus. Eine Bestätigungsmeldung wird angezeigt. Hier können Sie entweder **Öffnen** oder **Fertig** auswählen.
 
    >[!NOTE]
    >
@@ -160,7 +160,7 @@ Geben Sie beim Erstellen der Site Werte für die folgenden Eigenschaften an:
 * **Name**: (Optional) Der Name des JCR-Knotens, der die Stammseite der Live Copy speichert (der Standardwert basiert auf dem Titel)
 * **Site-Inhaber**: (Optional) Informationen zum Verantwortlichen für die Live Copy
 * **Live Copy**: Wählen Sie diese Option, um eine Live-Beziehung zur Quell-Site herzustellen. Wenn Sie diese Option nicht auswählen, wird eine Kopie des Blueprints erstellt, aber sie wird anschließend nicht mit der Quelle synchronisiert.
-* **Rollout-Konfigurationen**: (Optional) Wählen Sie eine oder mehrere Rollout-Konfigurationen für die Synchronisierung der Live Copy aus. Standardmäßig werden die Rollout-Konfigurationen von der Blueprint-Konfiguration vererbt. Weitere Informationen finden Sie unter [Angeben der zu verwendenden Rollout-Konfigurationen](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
+* **Rollout-Konfigurationen**: (Optional) Wählen Sie eine oder mehrere Rollout-Konfigurationen für die Synchronisierung der Live Copy aus. Standardmäßig werden die Rollout-Konfigurationen vom Blueprint übernommen. Siehe [Festlegen der zu verwendenden Rollout-Konfigurationen](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) für weitere Details.
 
 So erstellen Sie die Live Copy einer Site über eine Blueprint-Konfiguration:
 
@@ -169,9 +169,9 @@ So erstellen Sie die Live Copy einer Site über eine Blueprint-Konfiguration:
 
    ![Erstellen einer Site aus einer Blueprint](../assets/create-site-from-blueprint.png)
 
-1. Verwenden Sie die **Ausgangssprachen** Auswahl, um die Sprachen der Blueprint-Site anzugeben, die für die Live Copy verwendet werden soll.
+1. Geben Sie über die Auswahl **Anfangssprachen** die Sprachen der Blueprint-Site an, die für die Live Copy verwendet werden sollen.
 
-   Alle verfügbaren Sprachen sind standardmäßig ausgewählt. Um eine Sprache zu entfernen, wählen Sie die **X** neben der Sprache angezeigt.
+   Alle verfügbaren Sprachen sind standardmäßig ausgewählt. Um eine Sprache zu entfernen, wählen Sie das **X** neben der Sprache aus.
 
    Beispiel:
 
@@ -211,7 +211,7 @@ So zeigen Sie die Eigenschaften an:
 
 ### Anzeigen der Live Copies einer Blueprint-Seite {#seeing-the-live-copies-of-a-blueprint-page}
 
-Mit Blueprint-Seiten (auf die in einer Blueprint-Konfiguration verwiesen wird) erhalten Sie eine Liste der Live Copy-Seiten, die die aktuelle (Blueprint-)Seite als Quelle verwenden. In dieser Liste können Sie die Live Copies nachverfolgen. Die Liste wird auf der Registerkarte **Blueprint** der [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) angezeigt.
+Mit Blueprint-Seiten (auf die in einer Blueprint-Konfiguration verwiesen wird) erhalten Sie eine Liste der Live Copy-Seiten, die die aktuelle (Blueprint-)Seite als Quelle verwenden. In dieser Liste können Sie die Live Copies nachverfolgen. Die Liste wird auf der Registerkarte **Blueprint** der [Seiteneigenschaften](/help/sites-cloud/authoring/sites-console/page-properties.md) angezeigt.
 
 ![Registerkarte „Blueprint“ der Seiteneigenschaften](../assets/live-copy-blueprint-tab.png)
 
@@ -249,7 +249,7 @@ Rollouts werden als asynchrone Vorgänge verarbeitet und können auf der Seite [
 
 #### Durchführen von Blueprint-Rollouts über die Verweisleiste {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. Wählen Sie in der **Sites**-Konsole die Seite in der Live Copy aus und öffnen Sie das Bedienfeld **[Referenzen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (in der Symbolleiste).
+1. Wählen Sie in der **Sites**-Konsole die Seite in der Live Copy aus und öffnen Sie das Bedienfeld **[Referenzen](/help/sites-cloud/authoring/basic-handling.md#references)** (in der Symbolleiste).
 1. Wählen Sie die Option **Blueprint** aus der Liste, um die mit dieser Seite verbundenen Blueprints anzuzeigen.
 1. Wählen Sie die erforderliche Blueprint aus der Liste aus.
 1. Wählen Sie **Rollout** aus.
@@ -305,7 +305,7 @@ Synchronisieren Sie eine Live Copy, um Änderungen von der Quelle per Pull auf 
 
 1. Wählen Sie in der **Sites-Konsole** die Live Copy-Seite aus und öffnen Sie die Eigenschaften.
 1. Öffnen Sie die Registerkarte **Live Copy**.
-1. Auswählen **Synchronisieren**.
+1. Wählen Sie **Synchronisieren** aus.
 
    ![Schaltfläche „Synchronisieren“](../assets/synchronize.png)
 
@@ -333,7 +333,7 @@ Zum Ändern von Live Copy-Inhalt haben Sie folgende Möglichkeiten:
 
 >[!TIP]
 >
->Wenn Sie eine Seite manuell in der Live Copy erstellen, ist die neue Seite lokal in der Live Copy, d. h. sie verfügt nicht über eine entsprechende Quellseite, an die sie angehängt ist.
+>Wenn Sie eine Seite manuell in der Live Copy erstellen, liegt diese neue Seite für die Live Copy lokal vor. Sie verfügt also über keine entsprechende Quellseite, mit der sie verbunden ist.
 >
 >Eine Best Practice zur Erstellung einer lokalen Seite, die Teil der Beziehung ist, besteht darin, die lokale Seite in der Quelle zu erstellen und einen tiefen Rollout durchzuführen. Hierdurch wird die Seite lokal als Live Copy erstellt.
 
@@ -417,7 +417,7 @@ Nach dem [Aussetzen](#suspending-inheritance-from-page-properties) wird die Akti
 
 ![Schaltfläche „Fortsetzen“](../assets/resume.png)
 
-Wenn diese Option ausgewählt ist, wird das Dialogfeld angezeigt. Sie können bei Bedarf eine Synchronisierung auswählen und die Aktion bestätigen.
+Wenn diese Option ausgewählt ist, wird das Dialogfeld angezeigt. Sie können ggf. eine Synchronisierung auswählen. Bestätigen Sie anschließend die Aktion.
 
 #### Fortsetzen von Live Copy-Seiten über die Live Copy-Übersicht {#resume-a-live-copy-page-from-the-live-copy-overview}
 
@@ -463,11 +463,11 @@ So geben Sie die Tiefe an oder ändern diese:
    >
    >Weitere Informationen finden Sie unter [Live Copies – Komposition](overview.md#live-copies-composition).
 
-1. Auswählen **Speichern** um Ihre Aktualisierungen beizubehalten.
+1. Wählen Sie **Speichern**, um ihre Aktualisierungen beizubehalten.
 
 ### Abbrechen der Vererbung für Komponenten {#cancelling-inheritance-for-a-component}
 
-Brechen Sie die Live Copy-Vererbung für eine Komponente ab, sodass die Komponente nicht länger mit der Quellkomponente synchronisiert wird. Sie können die Vererbung bei Bedarf zu einem späteren Zeitpunkt aktivieren.
+Brechen Sie die Live Copy-Vererbung für eine Komponente ab, sodass die Komponente nicht länger mit der Quellkomponente synchronisiert wird. Falls erforderlich, können Sie die Vererbung zu einem späteren Zeitpunkt aktivieren.
 
 >[!NOTE]
 >
@@ -475,11 +475,11 @@ Brechen Sie die Live Copy-Vererbung für eine Komponente ab, sodass die Komponen
 
 Vererbung abbrechen, um den Komponenteninhalt zu ändern oder die Komponente zu löschen:
 
-1. Wählen Sie die Komponente aus, für die Sie die Vererbung abbrechen möchten.
+1. Wählen Sie die Komponente aus, für die die Vererbung abgebrochen werden soll.
 
    ![Vererbung in der Komponenten-Symbolleiste](../assets/inheritance-toolbar.png)
 
-1. Wählen Sie in der Komponenten-Symbolleiste die **Vererbung abbrechen** Symbol.
+1. Wählen Sie in der Symbolleiste „Komponente“ das Symbol **Vererbung abbrechen** aus.
 
    ![Symbol „Vererbung abbrechen“](../assets/cancel-inheritance-icon.png)
 
@@ -489,7 +489,7 @@ Vererbung abbrechen, um den Komponenteninhalt zu ändern oder die Komponente zu 
 
 ### Erneutes Aktivieren der Vererbung für eine Komponente {#re-enabling-inheritance-for-a-component}
 
-Um die Vererbung für eine Komponente zu aktivieren, wählen Sie die **Vererbung erneut aktivieren** in der Komponenten-Symbolleiste.
+Um die Vererbung für eine Komponente zu aktivieren, wählen Sie in der Symbolleiste „Komponente“ das Symbol **Vererbung erneut aktivieren** aus.
 
 ![Symbol „Vererbung erneut aktivieren“](../assets/re-enable-inheritance-icon.png)
 
@@ -523,7 +523,7 @@ Wenn Sie die Vererbung abbrechen, können Sie den Eigenschaftswert ändern. Ein 
 
 ![Nicht vererbte Eigenschaften](../assets/properties-not-inherited.png)
 
-Sie können die Vererbung für eine Eigenschaft später bei Bedarf erneut aktivieren.
+Sie können später ggf. die Vererbung für eine Eigenschaft erneut aktivieren.
 
 >[!NOTE]
 >
@@ -534,13 +534,13 @@ Sie können die Vererbung für eine Eigenschaft später bei Bedarf erneut aktivi
 
    ![Schaltfläche „Vererbung abbrechen“](../assets/cancel-inheritance-button.png)
 
-1. Im **Vererbung abbrechen** Bestätigungsdialogfeld auswählen **Ja**.
+1. Wählen Sie im Bestätigungsdialogfeld **Vererbung abbrechen** die Option **Ja** aus.
 
 ### Wiederherstellen der Eigenschaften einer Live Copy-Seite {#revert-properties-of-a-live-copy-page}
 
-Um die Vererbung für eine Eigenschaft zu aktivieren, wählen Sie die **Vererbung wiederherstellen** neben der Eigenschaft angezeigt.
+Um die Vererbung für eine Eigenschaft zu aktivieren, wählen Sie das Symbol **Vererbung wiederherstellen** neben der entsprechenden Eigenschaft aus.
 
-![Schaltfläche „Vererbung zurücksetzen“](../assets/revert-inheritance-button.png)
+![Schaltfläche „Vererbung wiederherstellen“](../assets/revert-inheritance-button.png)
 
 ### Zurücksetzen von Live Copy-Seiten {#resetting-a-live-copy-page}
 
@@ -575,8 +575,8 @@ Die [**Rücksetzungsaktion** ist auch über die Live Copy-Übersicht verfügbar
 
 Zum Nachverfolgen der von Ihnen durchgeführten Änderungen können Sie die Blueprint-Seite unter **Verweise** anzeigen und mit der zugehörigen Live Copy-Seite vergleichen:
 
-1. Navigieren Sie in der **Sites-Konsole** [zu einer Blueprint- oder Live Copy-Seite und wählen Sie diese aus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie das Bedienfeld **[Verweise](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** und wählen Sie je nach Kontext entweder:
+1. Navigieren Sie in der **Sites-Konsole** [zu einer Blueprint- oder Live Copy-Seite und wählen Sie diese aus](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Öffnen Sie das Bedienfeld **[Verweise](/help/sites-cloud/authoring/basic-handling.md#references)** und wählen Sie je nach Kontext entweder:
 
    * **Blueprint**
    * **Live Copies**
@@ -592,7 +592,7 @@ Zum Nachverfolgen der von Ihnen durchgeführten Änderungen können Sie die Blue
 
 1. Die Live Copy- und Blueprint-Seiten werden nebeneinander geöffnet.
 
-   Vollständige Informationen zur Verwendung der Vergleichsfunktion finden Sie unter [Seitenvergleich](/help/sites-cloud/authoring/features/page-diff.md).
+   Vollständige Informationen zur Verwendung der Vergleichsfunktion finden Sie unter [Seitenvergleich](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Trennen von Live Copies {#detaching-a-live-copy}
 

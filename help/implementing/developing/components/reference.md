@@ -2,10 +2,10 @@
 title: Komponenten-Referenzhandbuch
 description: Ein Referenzhandbuch für Entwickler zu den Details der Komponenten und ihrer Struktur.
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '3642'
-ht-degree: 96%
+source-wordcount: '3481'
+ht-degree: 99%
 
 ---
 
@@ -55,16 +55,16 @@ Dies bedeutet, dass Sie nur die erforderlichen Unterschiede neu definieren müss
 
 ### Inhaltslogik und Rendering-Markup  {#content-logic-and-rendering-markup}
 
-Ihre Komponente wird mit [HTML](https://www.w3schools.com/htmL/html_intro.asp) gerendert. Ihre Komponente muss die HTML definieren, die erforderlich ist, um den erforderlichen Inhalt zu übernehmen und ihn dann nach Bedarf in der Autoren- und Veröffentlichungsumgebung wiederzugeben.
+Ihre Komponente wird mit [HTML](https://www.w3schools.com/htmL/html_intro.asp) gerendert. Ihre Komponente muss den HTML-Code definieren, der notwendig ist, um den erforderlichen Inhalt zu übernehmen und anschließend in der Autoren- und Veröffentlichungsumgebung nach Bedarf zu rendern.
 
 Es empfiehlt sich, den für Markup und Rendering zuständigen Code getrennt von dem Code zu halten, der die Logik zur Auswahl des Komponenteninhalts enthält.
 
-Dieser Ansatz wird durch [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de) unterstützt, eine Vorlagensprache, die dazu dient sicherzustellen, dass eine echte Programmiersprache für die Definition der zugrunde liegenden Geschäftslogik genutzt wird. Dieser Mechanismus hebt den Code hervor, der für eine bestimmte Ansicht aufgerufen wird, und ermöglicht bei Bedarf eine spezifische Logik für verschiedene Ansichten derselben Komponente.
+Dieser Ansatz wird durch [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de) unterstützt, eine Vorlagensprache, die dazu dient sicherzustellen, dass eine echte Programmiersprache für die Definition der zugrunde liegenden Geschäftslogik genutzt wird. Dieser Mechanismus hebt den Code hervor, der für eine bestimmte Ansicht aufgerufen wird, und lässt bei Bedarf eine spezifische Logik für unterschiedliche Ansichten derselben Komponente zu.
 
 Diese (optionale) Logik kann auf verschiedene Arten implementiert werden und wird von HTL mit bestimmten Befehlen aufgerufen:
 
 * Verwenden von Java – [Die HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=de) ermöglicht es einer HTL-Datei, auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse zuzugreifen. Dies ermöglicht es Ihnen, Java-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
-* Verwenden von JavaScript – [Die HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=de) ermöglicht es einer HTL-Datei, auf den in JavaScript geschriebenen Hilfs-Code zuzugreifen. Auf diese Weise können Sie JavaScript-Code verwenden, um die Logik für die Auswahl und Konfiguration des Komponenteninhalts zu implementieren.
+* Verwenden von JavaScript - [HTL-JavaScript-Anwendungs-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=de) ermöglicht einer HTL-Datei den Zugriff auf in JavaScript geschriebenen Hilfscode. Dies ermöglicht es Ihnen, JavaScript-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
 * Verwenden von Client-seitigen Bibliotheken – Moderne Websites beruhen in hohem Maße auf der Client-seitigen Verarbeitung durch einen komplexen JavaScript- und CSS-Code. Weitere Informationen finden Sie im Dokument [Verwenden Client-seitiger Bibliotheken in AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Komponentenstruktur {#structure}
@@ -103,7 +103,7 @@ Die Definition einer Komponente lässt sich wie folgt aufschlüsseln:
 * **Stammknoten**:
    * `<mycomponent> (cq:Component)` – Hierarchieknoten der Komponente.
 * **Wichtige Eigenschaften**:
-   * `jcr:title` – Komponententitel; wird beispielsweise als Titel genutzt, wenn die Komponente im [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) oder in der [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console.md) aufgeführt wird.
+   * `jcr:title` – Komponententitel; wird beispielsweise als Titel genutzt, wenn die Komponente im [Komponenten-Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) oder in der [Komponentenkonsole](/help/sites-cloud/authoring/components-console.md) aufgeführt wird.
    * `jcr:description` – Beschreibung der Komponente; wird als Mouseover-Hinweis im Komponenten-Browser oder in der Komponentenkonsole genutzt.
    * Weitere Informationen finden Sie im Abschnitt [Komponentensymbol](#component-icon).
 * **Wichtige untergeordnete Knoten**:
@@ -141,7 +141,7 @@ Wenn keine der o. g. Eigenschaften (`cq:icon`, `abbreviation`, `cq:icon.png` od
 
 Um die Vererbung von Symbolen von übergeordneten Komponenten zu deaktivieren, legen Sie eine leere Eigenschaft `abbreviation` für die Komponente fest. Das Standardverhalten wird daraufhin erneut aktiviert.
 
-Die [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console.md#component-details) zeigt an, wie das Symbol für eine bestimmte Komponente definiert ist.
+Die [Komponentenkonsole](/help/sites-cloud/authoring/components-console.md#component-details) zeigt an, wie das Symbol für eine bestimmte Komponente definiert ist.
 
 #### Beispiel: SVG-Symbol {#svg-icon-example}
 
@@ -166,7 +166,7 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
 | Name | Typ | Beschreibung |
 |---|---|---|
 | `.` | `cq:Component` | Dies stellt die aktuelle Komponente dar. Eine Komponente weist den Knotentyp `cq:Component` auf. |
-| `componentGroup` | `String` | Dies stellt die Gruppe dar, unter der die Komponente im [Komponenten-Browser ausgewählt werden kann](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Ein Wert, der mit `.` beginnt, wird für Komponenten verwendet, die nicht in der Benutzeroberfläche ausgewählt werden können, wie zum Beispiel Basiskomponenten, von denen andere Komponenten erben. |
+| `componentGroup` | `String` | Dies stellt die Gruppe dar, unter der die Komponente im [Komponenten-Browser ausgewählt werden kann](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). Ein Wert, der mit `.` beginnt, wird für Komponenten verwendet, die nicht in der Benutzeroberfläche ausgewählt werden können, wie zum Beispiel Basiskomponenten, von denen andere Komponenten erben. |
 | `cq:isContainer` | `Boolean` | Dies zeigt an, ob es sich bei der Komponente um eine Containerkomponente handelt, die andere Komponenten wie ein Absatzsystem enthalten kann. |
 | `cq:dialog` | `nt:unstructured` | Dies ist die Definition des Bearbeitungsdialogs der Komponente. |
 | `cq:design_dialog` | `nt:unstructured` | Dies ist die Definition des Design-Dialogs der Komponente. |
@@ -181,7 +181,7 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
 | `component.html` | `nt:file` | Dies ist die HTL-Skriptdatei der Komponente. |
 | `cq:icon` | `String` | Dieser Wert verweist auf das [Symbol der Komponente](#component-icon) und wird im Komponenten-Browser angezeigt. |
 
-Wenn Sie sich die **Text** -Komponente können Sie mehrere dieser Elemente sehen:
+In der **Textkomponente** finden sich die folgenden Elemente:
 
 ![Struktur der Textkomponente](assets/components-text.png)
 
@@ -199,7 +199,7 @@ Zu den wichtigen untergeordneten Knoten gehören:
 
 ### Dialogfelder {#dialogs}
 
-Dialogfelder sind ein wichtiges Element einer Komponente: Sie stellen den Autoren eine Oberfläche für die Konfiguration der Komponente auf einer Inhaltsseite und für Eingaben für diese Komponente bereit. Weitere Informationen zur Interaktion von Inhaltsautoren mit Komponenten finden Sie in der [Authoring-Dokumentation](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+Dialogfelder sind ein wichtiges Element einer Komponente: Sie stellen den Autoren eine Oberfläche für die Konfiguration der Komponente auf einer Inhaltsseite und für Eingaben für diese Komponente bereit. Weitere Informationen zur Interaktion von Inhaltsautoren mit Komponenten finden Sie in der [Authoring-Dokumentation](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 Je nach Komplexität der Komponente benötigen Sie eventuell eine oder mehrere Registerkarten.
 
@@ -221,9 +221,9 @@ In diesem Dialogfeld werden einzelne Felder definiert:
 
 ### Design-Dialogfelder {#design-dialogs}
 
-Design-Dialogfelder ähneln den Dialogfeldern, die zum Bearbeiten und Konfigurieren von Inhalten genutzt werden. Sie stellen die Oberfläche für Vorlagenautoren bereit, um Design-Details für diese Komponente auf einer Seitenvorlage zu konfigurieren und bereitzustellen. Seitenvorlagen werden dann von den Inhaltsautoren verwendet, um Inhaltsseiten zu erstellen. Weitere Informationen zum Erstellen von Vorlagen finden Sie in der [Vorlagendokumentation](/help/sites-cloud/authoring/features/templates.md).
+Design-Dialogfelder ähneln den Dialogfeldern, die zum Bearbeiten und Konfigurieren von Inhalten genutzt werden. Sie stellen die Oberfläche für Vorlagenautoren bereit, um Design-Details für diese Komponente auf einer Seitenvorlage zu konfigurieren und bereitzustellen. Seitenvorlagen werden dann von den Inhaltsautoren verwendet, um Inhaltsseiten zu erstellen. Weitere Informationen zum Erstellen von Vorlagen finden Sie in der [Vorlagendokumentation](/help/sites-cloud/authoring/sites-console/templates.md).
 
-[Design-Dialoge werden beim Bearbeiten einer Seitenvorlage verwendet](/help/sites-cloud/authoring/features/templates.md), obwohl sie nicht für alle Komponenten benötigt werden. Zum Beispiel verfügen die **Titel**- und **Bildkomponente** beide über Design-Dialoge, während die **Komponente für Freigabe in Social Media** keine besitzt.
+[Design-Dialoge werden beim Bearbeiten einer Seitenvorlage verwendet](/help/sites-cloud/authoring/sites-console/templates.md), obwohl sie nicht für alle Komponenten benötigt werden. Zum Beispiel verfügen die **Titel**- und **Bildkomponente** beide über Design-Dialoge, während die **Komponente für Freigabe in Social Media** keine besitzt.
 
 ### Coral- und Granite-Benutzeroberfläche {#coral-and-granite}
 
@@ -248,9 +248,9 @@ Content not found
 >See the [AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) on customizing dialog fields.
 -->
 
-Zum Erstellen eines Widgets zur Verwendung in einem Komponentendialogfeld müssen Sie eine Granite-UI-Feldkomponente erstellen.
+Um ein Widget zur Verwendung in einem Komponentendialogfeld zu erstellen, müssen Sie eine Granite-Benutzeroberflächenfeldkomponente erstellen.
 
-Wenn Sie das Dialogfeld für einen einfachen Container für ein Formularelement halten, können Sie den Primärinhalt Ihres Dialogfeldinhalts als auch Formularfelder sehen. Zum Erstellen eines neuen Formularfelds müssen Sie einen Ressourcentyp erstellen. Dies entspricht dem Erstellen einer Komponente. Um Ihnen bei dieser Aufgabe zu helfen, bietet die Granite-Benutzeroberfläche eine generische Feldkomponente, von der eine Vererbung möglich ist (mithilfe von `sling:resourceSuperType`):
+Wenn Sie das Dialogfeld für einen einfachen Container für ein Formularelement halten, können Sie den Primärinhalt Ihres Dialogfeldinhalts auch als Formularfelder sehen. Um ein neues Formularfeld zu erstellen, müssen Sie einen Ressourcentyp erstellen. Dies entspricht dem Erstellen einer Komponente. Um Ihnen bei dieser Aufgabe zu helfen, bietet die Granite-Benutzeroberfläche eine generische Feldkomponente, von der eine Vererbung möglich ist (mithilfe von `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -278,7 +278,7 @@ Nachdem Sie eine Komponente erstellt haben, müssen Sie sie aktivieren, um sie z
 
 Nachdem eine Komponente definiert wurde, muss sie zur Verwendung bereitgestellt werden. Um eine Komponente für die Verwendung in einer Vorlage verfügbar zu machen, müssen Sie die Komponente in der Richtlinie des Layout-Containers der Vorlage aktivieren.
 
-Weitere Informationen zum Erstellen von Vorlagen finden Sie in der [Vorlagendokumentation](/help/sites-cloud/authoring/features/templates.md).
+Weitere Informationen zum Erstellen von Vorlagen finden Sie in der [Vorlagendokumentation](/help/sites-cloud/authoring/sites-console/templates.md).
 
 ### Komponenten und die von ihnen erstellten Inhalte {#components-and-the-content-they-create}
 
@@ -441,7 +441,7 @@ Die Feldüberprüfung in der Granite-Benutzeroberfläche und den Granite-Benutze
 
 ### Erkennen der Verfügbarkeit des Dialogfelds {#dialog-ready}
 
-Wenn Sie über ein benutzerdefiniertes JavaScript verfügen, das nur ausgeführt werden darf, wenn das Dialogfeld verfügbar und bereit ist, sollten Sie auf die `dialog-ready` -Ereignis.
+Wenn Sie über ein benutzerdefiniertes JavaScript verfügen, das nur ausgeführt werden muss, wenn das Dialogfeld verfügbar und bereit ist, sollten Sie auf das `dialog-ready`-Ereignis lauschen.
 
 Dieses Ereignis wird ausgelöst, wenn das Dialogfeld geladen (oder erneut geladen) wird und einsatzbereit ist, d. h., wenn eine Änderung (Erstellen/Aktualisieren) im DOM des Dialogfelds erfolgt.
 
@@ -469,7 +469,7 @@ Sie müssen lediglich eine `README.md`-Datei in der Komponentenstruktur platzier
 
 ![README.md in der Komponentenstruktur](assets/components-documentation.png)
 
-Dieser Markdown wird dann in der [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console.md) angezeigt.
+Dieser Markdown wird dann in der [Komponentenkonsole](/help/sites-cloud/authoring/components-console.md) angezeigt.
 
 ![README.md sichtbar in der Komponentenkonsole](assets/components-documentation-console.png)
 

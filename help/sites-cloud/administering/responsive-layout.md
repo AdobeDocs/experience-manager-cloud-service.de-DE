@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren des Layout-Containers und des Layout-Modus
 description: Erfahren Sie, wie Sie Layout-Container und Layout-Modus konfigurieren, um responsive Layouts für Ihre Inhaltsautoren zu aktivieren.
-source-git-commit: 4ae0ae4fbf8f6a97434628f5f6049720c6c43118
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 50%
@@ -11,11 +11,11 @@ ht-degree: 50%
 
 # Konfigurieren des Layout-Containers und des Layout-Modus {#configuring-layout-container-and-layout-mode}
 
-[Responsives Layout](/help/sites-cloud/authoring/features/responsive-layout.md) ist ein Mechanismus zur Realisierung [responsives Webdesign.](https://de.wikipedia.org/wiki/Responsive_Webdesign) Auf diese Weise kann der Inhaltsautor Webseiten erstellen, deren Layout und Abmessungen von den Geräten abhängen, die er verwendet.
+[Responsives Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md) ist ein Mechanismus zur Realisierung [responsives Webdesign.](https://de.wikipedia.org/wiki/Responsive_Webdesign) Auf diese Weise kann der Inhaltsautor Webseiten erstellen, deren Layout und Abmessungen von den Geräten abhängen, die er verwendet.
 
 Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination von Mechanismen ermöglicht:
 
-* **[Layout-Container](/help/sites-cloud/authoring/features/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Diese Komponente bietet ein Rasterabsatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können.
+* **[Layout-Container](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Diese Komponente bietet ein Rasterabsatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können.
    * Sie können sie als Standard-ParSys für Ihre Seite nutzen und/oder sie anderen Autoren im Komponenten-Browser zur Verfügung stellen.
    * Die Standardeinstellung **Layout-Container** Komponente ist definiert unter `/libs/wcm/foundation/components/responsivegrid`.
    * Sie können Layout-Container definieren:
@@ -23,8 +23,8 @@ Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination v
       * als Standard-Absatzsystem für die Seite.
       * Als Komponente und als Standard-Parsys.
          * Sie können den Layout-Container als Standard für die Seite festlegen und es den Benutzern gleichzeitig erlauben, weitere Layout-Container darin hinzuzufügen, z. B. für die Spaltensteuerung.
-* **[Layout-Modus](/help/sites-cloud/authoring/fundamentals/environment-tools.md)** - Sobald der Layout-Container auf Ihrer Seite positioniert ist, können Sie die **Layout** -Modus, um Inhalte im responsiven Raster zu positionieren.
-* **[Emulator](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)** - Hiermit können Sie responsive Websites erstellen und bearbeiten, die das Layout durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße anpassen. Die Benutzenden können dann mithilfe des Emulators sehen, wie der Inhalt gerendert wird.
+* **[Layout-Modus](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)** - Sobald der Layout-Container auf Ihrer Seite positioniert ist, können Sie die **Layout** -Modus, um Inhalte im responsiven Raster zu positionieren.
+* **[Emulator](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)** - Hiermit können Sie responsive Websites erstellen und bearbeiten, die das Layout durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße anpassen. Die Benutzenden können dann mithilfe des Emulators sehen, wie der Inhalt gerendert wird.
 
 Mit diesen responsiven Rastermechanismen können Sie:
 
@@ -220,9 +220,9 @@ Für ein effizientes responsives Layout muss der Inhaltsautor Instanzen der Layo
 
 Damit Autorinnen und Autoren weitere responsive Raster zu den Inhaltsseiten hinzufügen können, müssen Sie die Layout-Container-Komponente für Ihre Seite aktivieren. Möglich ist dies über folgende Optionen:
 
-* **Über die Autorenumgebung** - [Bearbeiten von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md) , um den Layout-Container für eine Seite zu aktivieren.
+* **Über die Autorenumgebung** - [Bearbeiten von Seitenvorlagen](/help/sites-cloud/authoring/sites-console/templates.md) , um den Layout-Container für eine Seite zu aktivieren.
 * **Komponentendefinition** - Verwendung `allowedComponent` oder ein statisches Include bei der Definition der Komponente.
 
 ### Konfigurieren des Rasters des Layout-Containers {#configure-the-grid-of-the-layout-container}
 
-Sie können die Anzahl der für jede bestimmte Instanz des Layout-Containers verfügbaren Spalten konfigurieren [durch Bearbeiten Ihrer Seitenvorlagen.](/help/sites-cloud/authoring/features/templates.md)
+Sie können die Anzahl der für jede bestimmte Instanz des Layout-Containers verfügbaren Spalten konfigurieren [durch Bearbeiten Ihrer Seitenvorlagen.](/help/sites-cloud/authoring/sites-console/templates.md)

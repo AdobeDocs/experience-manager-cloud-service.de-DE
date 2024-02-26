@@ -4,7 +4,7 @@ seo-title: Developer Mode
 description: Der Entwicklermodus öffnet einen Seitenbereich mit mehreren Registerkarten mit Informationen für Entwickler zur aktuellen Seite.
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 97%
@@ -13,7 +13,7 @@ ht-degree: 97%
 
 # Entwicklermodus {#developer-mode}
 
-Beim Bearbeiten von Seiten in AEM sind diverse [Modi](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) verfügbar, u. a. auch der Entwicklermodus. Der Entwicklermodus öffnet einen Seitenbereich mit mehreren Registerkarten mit technischen Informationen für Entwickler zur aktuellen Seite.
+Beim Bearbeiten von Seiten in AEM sind diverse [Modi](/help/sites-cloud/authoring/sites-console/introduction.md#page-modes) verfügbar, u. a. auch der Entwicklermodus. Der Entwicklermodus öffnet einen Seitenbereich mit mehreren Registerkarten mit technischen Informationen für Entwickler zur aktuellen Seite.
 
 Zwei Registerkarten sind verfügbar:
 
@@ -41,7 +41,7 @@ Der Entwicklermodus ist als Seitenbereich im Seiten-Editor implementiert. Um den
 
 Der Bereich ist in zwei Registerkarten unterteilt:
 
-* **[Komponenten](#components)** – Hier sehen Sie die Komponentenstruktur, die der [Inhaltsstruktur](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree) für Autoren ähnelt.
+* **[Komponenten](#components)** – Hier sehen Sie die Komponentenstruktur, die der [Inhaltsstruktur](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#content-tree) für Autoren ähnelt.
 * **[Fehler](#errors)** – Wenn ein Problem auftritt, werden hier die Details für die jeweilige Komponente angezeigt.
 
 ### Registerkarte „Komponenten“ {#components}
@@ -55,7 +55,7 @@ Diese Registerkarte enthält eine Komponentenstruktur mit folgenden Attributen:
 * Ermöglicht das Erweitern der Baumstruktur und Auswählen bestimmter Komponenten innerhalb der Baumstruktur. Die Auswahl bietet Zugriff auf Komponentendetails, z. B.:
    * Repository-Pfad
    * Links zu den Skripten (Zugriff über CRXDE Lite)
-   * Komponentendetails, wie sie in der [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console.md) zu sehen sind
+   * Komponentendetails, wie sie in der [Komponentenkonsole](/help/sites-cloud/authoring/components-console.md) zu sehen sind
 * In der Baumstruktur ausgewählte Komponenten werden im Editor durch einen blauen Rahmen gekennzeichnet.
 
 Diese Registerkarte „Komponenten“ hilft bei Folgendem:
@@ -76,7 +76,7 @@ Jeder Komponenteneintrag kann die folgenden Optionen haben:
 
 * **Skript bearbeiten:** Ein Link, der das Komponentenskript in CRXDE Lite öffnet.
 
-* **Komponentendetails anzeigen:** Öffnet die Details der Komponente in der [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console.md).
+* **Komponentendetails anzeigen:** Öffnet die Details der Komponente in der [Komponentenkonsole](/help/sites-cloud/authoring/components-console.md).
 
 Das Erweitern eines Komponenteneintrags durch Tippen oder Klicken auf den Pfeil kann auch Folgendes anzeigen:
 

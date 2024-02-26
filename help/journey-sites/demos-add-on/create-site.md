@@ -2,10 +2,10 @@
 title: Erstellen einer Demo-Site
 description: Erstellen Sie eine Demosite in AEM basierend auf einer Bibliothek vorkonfigurierter Vorlagen.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 72%
+source-wordcount: '809'
+ht-degree: 99%
 
 ---
 
@@ -15,39 +15,39 @@ Erstellen Sie eine Demosite in AEM basierend auf einer Bibliothek vorkonfigurier
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der Tour zum AEM-Referenz-Demo-Add-on, [Erstellen eines Programms](create-program.md), haben Sie den ersten Konfigurationsschritt ausgeführt, um ein Programm zu Testzwecken zu erstellen, und eine Pipeline verwendet, um den Add-on-Inhalt bereitzustellen. Sie sollten jetzt folgende Punkte erfüllen:
+Im vorherigen Dokument der Tour zum AEM-Referenz-Demo-Add-on, [Erstellen eines Programms](create-program.md), haben Sie den ersten Konfigurationsschritt ausgeführt, um ein Programm zu Testzwecken zu erstellen, und eine Pipeline verwendet, um den Add-on-Inhalt bereitzustellen. Sie sollten jetzt zu Folgendem in der Lage sein:
 
-* Erfahren Sie, wie Sie mit Cloud Manager ein Programm erstellen.
+* Verstehen, wie Sie mit Cloud Manager ein neues Programm erstellen können.
 * Sie sollten nun wissen, wie Sie das Referenzdemo-Add-on für das neue Programm aktivieren.
 * Sie sollten in der Lage sein, eine Pipeline zum Bereitstellen des Add-on-Inhalts ausführen.
 
-In diesem Artikel wird der nächste Schritt des Prozesses beschrieben, indem in AEM eine Site oder ein AEM Screens-Projekt erstellt wird, die auf den Vorlagen des Referenz-Demo-Add-ons basiert.
+In diesem Artikel wird der nächste Schritt des Prozesses beschrieben, in dem basierend auf den Vorlagen des Referenzdemo-Add-ons eine Site oder ein AEM Screens-Projekt in AEM erstellt wird.
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie eine Site basierend auf den Vorlagen des Referenz-Demo-Add-ons erstellen. Nach dem Lesen sollten Sie Folgendes können:
+In diesem Dokument erfahren Sie, wie Sie eine Site basierend auf den Vorlagen des Referenzdemo-Add-ons erstellen. Nach dem Lesen sollten Sie Folgendes können:
 
 * Verstehen, wie Sie auf die AEM Authoring-Umgebung zugreifen.
 * Wissen, wie Sie eine Site basierend auf einer Vorlage erstellen.
 * Die Grundlagen der Navigation in der Site-Struktur und der Bearbeitung einer Seite verstehen.
 
-## Erstellen einer Demo-Site  oder eines Screens-Projekts {#create-site}
+## Erstellen einer Demosite oder eines Screens-Projekts {#create-site}
 
-Nachdem die Pipeline das Referenz-Demo-Add-On bereitgestellt hat, können Sie auf die Authoring-Umgebung in AEM zugreifen, um Demo-Sites basierend auf dem Inhalt des Add-Ons zu erstellen.
+Nachdem die Pipeline das Referenzdemo-Add-on bereitgestellt hat, können Sie auf die Autorenumgebung in AEM zugreifen, um Demo-Sites basierend auf dem Inhalt des Add-ons zu erstellen.
 
-1. Wählen Sie auf der Seite Programmübersicht in Cloud Manager den Link zur AEM Authoring-Umgebung aus.
+1. Wählen Sie auf der Seite mit der Programmübersicht in Cloud Manager den Link zur AEM-Autorenumgebung aus.
 
-   ![Zugriff auf die Authoring-Umgebung](assets/access-author.png)
+   ![Zugriff auf die Autorenumgebung](assets/access-author.png)
 
-1. Wählen Sie im Hauptmenü von AEM die Option **Sites**.
+1. Wählen Sie im Hauptmenü von AEM die Option **Sites** aus.
 
    ![Zugriff auf Sites](assets/access-sites.png)
 
-1. Wählen Sie in der Sites-Konsole **Erstellen** oben rechts im Bildschirm, und wählen Sie **Site aus Vorlage** in der Dropdown-Liste.
+1. Wählen Sie in der Sites-Konsole **Erstellen** oben rechts im Bildschirm und anschließend **Site aus Vorlage** in der Dropdown-Liste aus.
 
    ![Erstellen einer Site aus einer Vorlage](assets/create-site-from-template.png)
 
-1. Der Assistent zur Site-Erstellung wird gestartet. In der linken Spalte sehen Sie die Demovorlagen, die die Pipeline für Ihre Authoring-Instanz bereitgestellt hat. Wählen Sie eine aus, um sie auszuwählen und Details in der rechten Spalte anzuzeigen. Wenn Sie AEM Screens testen oder vorführen möchten, wählen Sie die **We.Cafe-Site-Vorlage**. Wählen Sie **Weiter** aus.
+1. Der Assistent zur Site-Erstellung wird gestartet. In der linken Spalte sehen Sie die Demovorlagen, die die Pipeline für Ihre Authoring-Instanz bereitgestellt hat. Wählen Sie einen Ordner aus, um Details in der rechten Spalte anzuzeigen. Wenn Sie AEM Screens testen oder vorführen möchten, wählen Sie unbedingt die **We.Cafe-Site-Vorlage** aus. Wählen Sie **Weiter** aus.
 
    ![Assistent zur Site-Erstellung](assets/site-creation-wizard.png)
 
@@ -59,7 +59,7 @@ Nachdem die Pipeline das Referenz-Demo-Add-On bereitgestellt hat, können Sie au
 
    ![Site-Details](assets/site-details.png)
 
-1. Die Site-Erstellung wird mit einem Dialogfeld bestätigt. Klicken Sie auf **Fertig**.
+1. Die Site-Erstellung wird mit einem Dialogfeld bestätigt. Wählen Sie **Fertig**.
 
    ![Site-Erstellung abgeschlossen](assets/site-creation-complete.png)
 
@@ -77,11 +77,11 @@ Nachdem Sie Ihre Demo-Site erstellt haben, können Sie sie wie jede andere Site 
 
    ![Spaltenansicht](assets/column-view.png)
 
-1. Wählen Sie die Site aus, um deren Struktur und Inhalt zu untersuchen. Die Spaltenansicht wird beim Navigieren in der Inhaltsstruktur der Demo-Site kontinuierlich erweitert.
+1. Wählen Sie die Site aus, um deren Struktur und Inhalt zu erkunden. Die Spaltenansicht wird beim Navigieren in der Inhaltsstruktur der Demo-Site kontinuierlich erweitert.
 
    ![Site-Struktur](assets/site-structure.png)
 
-1. Wählen Sie eine Seite aus, um sie auszuwählen, und klicken Sie auf **Bearbeiten** in der Symbolleiste.
+1. Wählen Sie eine Seite und anschließend die Option **Bearbeiten** in der Symbolleiste aus.
 
    ![Seite auswählen](assets/select-page.png)
 
@@ -103,12 +103,12 @@ Nachdem Sie nun diesen Teil der Tour zum Referenzdemo-Add-on von Adobe Experienc
 
 Sie können jetzt die Funktionen von AEM mithilfe von Add-On-Inhalten testen. Sie haben zwei Möglichkeiten, um mit der Tour fortzufahren:
 
-* Wenn Sie AEM Screens-Inhalte vollständig demonstrieren und testen möchten, stellen Sie sicher, dass Sie eine Site basierend auf der **We.Cafe-Site-Vorlage** wie zuvor beschrieben und weiterhin [Aktivieren Sie AEM Screens für Ihre Demosite.](screens.md)
-* Wenn Sie nur mit zum Demo von Sites-Inhalten arbeiten, fahren Sie mit [Verwalten Ihrer Demosites,](manage.md) Hier erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihrer Demosites zur Verfügung stehen und wie Sie diese entfernen können.
+* Wenn Sie AEM Screens-Inhalte vollständig demonstrieren und testen möchten, stellen Sie sicher, dass Sie, wie zuvor beschrieben, eine Site basierend auf der **We.Cafe-Site-Vorlage** bereitgestellt haben und fahren Sie mit [Aktivieren von AEM Screens für Ihre Demo-Site](screens.md) fort.
+* Wenn Sie nur Inhalte von Demo-Sites zeigen möchten, fahren Sie mit dem Abschnitt [Verwalten Ihrer Demo-Sites](manage.md) fort. Dort erfahren Sie, welche Tools Ihnen bei der Verwaltung Ihrer Demo-Sites helfen und wie Sie sie entfernen können.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
 * [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=de): Wenn Sie an weiteren Details zu den Funktionen von Cloud Manager interessiert sind, sollten Sie sich die ausführlichen technischen Dokumente direkt ansehen.
 * [Site erstellen](/help/sites-cloud/administering/site-creation/create-site.md): Erfahren Sie, wie Sie AEM verwenden, um eine Site mithilfe von Site-Vorlagen zu erstellen, um den Stil und die Struktur Ihrer Site zu definieren.
-* [Seitenbenennungskonventionen in AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). Auf dieser Seite finden Sie die Konventionen zum Organisieren von AEM-Seiten.
-* [AEM – Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md): Lesen Sie sich dieses Dokument durch, wenn Sie noch nicht mit AEM vertraut sind, um grundlegende Konzepte wie z. B. die Navigation in der Konsole und ihre Organisation zu verstehen.
+* [Seitenbenennungskonventionen in AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices). Auf dieser Seite finden Sie die Konventionen zum Organisieren von AEM-Seiten.
+* [AEM – Grundlegende Handhabung](/help/sites-cloud/authoring/basic-handling.md): Lesen Sie sich dieses Dokument durch, wenn Sie noch nicht mit AEM vertraut sind, um grundlegende Konzepte wie z. B. die Navigation in der Konsole und ihre Organisation zu verstehen.

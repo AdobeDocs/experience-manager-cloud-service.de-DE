@@ -1,7 +1,7 @@
 ---
 title: Erstellen von für die Verwendung mit dem universellen Editor instrumentierten Bausteinen
 description: Erfahren Sie, wie Sie Bausteine erstellen, die für die Verwendung mit dem universellen Editor bei AEM Authoring mit Edge Delivery Services-Projekten instrumentiert sind.
-source-git-commit: 40e404c743102f1de8b3d959597836f04f0c0fef
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 0%
@@ -130,7 +130,7 @@ Im folgenden Beispiel eines Anführungszeichens wird dieser Ansatz verwendet.
 
 Nachdem Ihr einfacher Anführungsblock definiert und in das Beispielprojekt übertragen wurde, können Sie einer vorhandenen Seite einen Anführungsblock hinzufügen.
 
-1. Melden Sie sich in einem Browser bei AEM as a Cloud Service an. [Verwenden der Sites-Konsole,](/help/sites-cloud/authoring/getting-started/basic-handling.md) Navigieren Sie zu der Site, die Sie in der [Erste Schritte für Entwickler für AEM Authoring mit Edge Delivery Services](/help/edge/edge-dev-getting-started.md) und wählen Sie eine Seite aus.
+1. Melden Sie sich in einem Browser bei AEM as a Cloud Service an. [Verwenden der Sites-Konsole,](/help/sites-cloud/authoring/basic-handling.md) Navigieren Sie zu der Site, die Sie in der [Erste Schritte für Entwickler für AEM Authoring mit Edge Delivery Services](/help/edge/edge-dev-getting-started.md) und wählen Sie eine Seite aus.
 
    * In diesem Fall `index` wird zu Veranschaulichungszwecken verwendet.
 

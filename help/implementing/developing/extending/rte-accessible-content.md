@@ -3,9 +3,9 @@ title: Konfigurieren Sie den RTE, um barrierefreie Web-Seiten und Websites zu er
 description: Hier erfahren Sie, wie Sie den Rich-Text-Editor konfigurieren, um barrierefreie Websites in [!DNL Adobe Experience Manager] zu erstellen.
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '509'
 ht-degree: 100%
 
 ---
@@ -148,5 +148,4 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 >[!MORELIKETHIS]
 >
 >* [Kurzanleitung zu WCAG-Standards](/help/compliance/accessibility/quick-guide-wcag.md)
->* [Erstellen barrierefreier Inhalte in Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
-
+>* [Erstellen barrierefreier Inhalte in Experience Manager](/help/sites-cloud/authoring/page-editor/accessible-content.md)

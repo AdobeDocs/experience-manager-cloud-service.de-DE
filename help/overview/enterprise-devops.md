@@ -2,8 +2,8 @@
 title: DevOp-Strategien für Unternehmen
 description: Erfahren Sie mehr über die Prozesse, Methoden und Kommunikation, die zur Vereinfachung von Bereitstellung und Zusammenarbeit nötig sind.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ Die Staging-Umgebung sollte ein Spiegelbild der Produktionsumgebung sein – Kon
 
 ### Produktion - Autoren- und Veröffentlichungsumgebung   {#production-author-and-publish}
 
-Die Produktionsumgebung besteht aus den für das tatsächliche [Verfassen und Veröffentlichen](/help/sites-cloud/authoring/getting-started/concepts.md) der Implementierung notwendigen Umgebungen.
+Die Produktionsumgebung besteht aus den für das tatsächliche [Verfassen und Veröffentlichen](/help/sites-cloud/authoring/author-publish.md) der Implementierung notwendigen Umgebungen.
 
 Eine Produktionsumgebung besteht aus mindestens einer Autoreninstanz und einer Veröffentlichungsinstanz:
 

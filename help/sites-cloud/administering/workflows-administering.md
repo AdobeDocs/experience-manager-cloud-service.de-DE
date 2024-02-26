@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Workflow-Instanzen mithilfe der Workflow-Kons
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 98%
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 Die Workflow-Konsole stellt mehrere Tools für die Verwaltung von Workflow-Instanzen bereit, um sicherzustellen, dass sie wie erwartet ausgeführt werden.
 
-Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwenden Sie die [globale Navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation), um das Bedienfeld **Tools** zu öffnen, und wählen Sie dann **Workflow** aus:
+Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwenden Sie die [globale Navigation](/help/sites-cloud/authoring/basic-handling.md#global-navigation), um das Bedienfeld **Tools** zu öffnen, und wählen Sie dann **Workflow** aus:
 
 * **Modelle**: Workflow-Definitionen verwalten
 * **Instanzen**: Laufende Workflow-Instanzen anzeigen und verwalten

@@ -4,7 +4,7 @@ description: Lernen Sie die Grundlagen der Konsole „Live Copy-Übersicht“ k
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 97%
@@ -32,8 +32,8 @@ Sie können die Live Copy-Übersicht wie folgt öffnen:
 
 Die **Live Copy-Übersicht** wird über das seitliche Bedienfeld **Verweise** der Konsole **Sites** geöffnet:
 
-1. Navigieren Sie in der Konsole **Sites** [zu Ihrer Blueprint-Seite und wählen Sie diese aus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie die Leiste **[Verweise](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** und wählen Sie **Live Copies** aus.
+1. Navigieren Sie in der Konsole **Sites** [zu Ihrer Blueprint-Seite und wählen Sie diese aus](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Öffnen Sie die Leiste **[Verweise](/help/sites-cloud/authoring/basic-handling.md#references)** und wählen Sie **Live Copies** aus.
 
    ![Live Copy in der Leiste „Verweise“](../assets/live-copy-references.png)
 

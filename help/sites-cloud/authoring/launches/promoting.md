@@ -2,10 +2,10 @@
 title: Weiterleiten von Launches
 description: Sie müssen Launch-Seiten weiterleiten, damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 98%
+source-wordcount: '812'
+ht-degree: 100%
 
 ---
 
@@ -44,15 +44,15 @@ Sie können Launches über die Konsolen **Sites** oder **Launches** weiterleiten
 
 1. Öffnen Sie:
    * die **Sites**-Konsole beim Navigieren auf Quellseiten:
-      1. Öffnen Sie die Leiste [Verweise](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) und wählen Sie die gewünschte Quellseite mithilfe des [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md) aus. (Oder wählen Sie die Seite aus und öffnen die Verweisleiste. Die Reihenfolge ist nicht wichtig.) Alle Verweise werden angezeigt.
+      1. Öffnen Sie die Leiste [Verweise](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references) und wählen Sie die gewünschte Quellseite mithilfe des [Auswahlmodus](/help/sites-cloud/authoring/basic-handling.md) aus. (Oder wählen Sie die Seite aus und öffnen die Verweisleiste. Die Reihenfolge ist nicht wichtig.) Alle Verweise werden angezeigt.
       1. Wählen Sie **Launches** aus (z. B. „Launches (1)“), um eine Liste der spezifischen Launches anzuzeigen.
       1. Wählen Sie den gewünschten Launch aus, damit die verfügbaren Aktionen angezeigt werden.
       1. Wählen Sie **Launch bewerben** aus, um den Assistenten zu öffnen.
    * die **Sites**-Konsole beim Navigieren auf Launch-Seiten:
-      1. Wählen Sie die erforderliche Launch-Seite mit dem [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md) aus.
+      1. Wählen Sie die erforderliche Launch-Seite mit dem [Auswahlmodus](/help/sites-cloud/authoring/basic-handling.md) aus.
       1. Die Aktion **Weiterleiten** steht in der Symbolleiste zur Verfügung.
    * In der Konsole **Launches**:
-      1. Wählen Sie den Launch aus (wählen Sie die Miniaturansicht aus).
+      1. Wählen Sie den Launch aus (indem Sie die Miniaturansicht auswählen).
       1. Wählen Sie **Bewerben** aus.
 1. Im ersten Schritt können Sie folgende Optionen festlegen:
    * **Ziel**
@@ -80,7 +80,7 @@ Sie können Launches über die Konsolen **Sites** oder **Launches** weiterleiten
 
 ## Weiterleiten von Launch-Seiten bei der Bearbeitung {#promoting-launch-pages-when-editing}
 
-Wenn Sie eine Launch-Seite bearbeiten, steht die Aktion **Launch bewerben** auch im Bereich **Seiteninformationen** zur Verfügung. Dadurch wird der Assistent geöffnet, mit dem die benötigten Informationen erfasst werden.
+Wenn Sie eine Launch-Seite bearbeiten, steht die Aktion **Launch bewerben** auch im Bereich **Seiteninformationen** zur Verfügung. Dadurch wird der Assistent geöffnet, um die benötigten Informationen zusammenzustellen.
 
 ![Launch von Site-Informationen aus bewerben](/help/sites-cloud/authoring/assets/launches-promote-page-info.png)
 

@@ -2,7 +2,7 @@
 title: Entwicklung und Seitenvergleich
 description: Verstehen Sie, wie die Seitenvergleichsfunktion funktioniert und wie sie sich auf einen Entwickler auswirken kann.
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 93%
@@ -15,11 +15,11 @@ ht-degree: 93%
 
 Die Inhaltserstellung ist ein iterativer Prozess. Damit ein Autor effizient arbeiten kann, muss er sehen können, was sich von Iteration zu Iteration verändert hat. Es ist ineffizient und bringt Fehler mit sich, wenn eine Seitenversion und danach die andere geprüft wird. Eine Autorin bzw. ein Autor möchte die aktuelle Seite mit einer früheren Version nebeneinander vergleichen können, wobei die Unterschiede hervorgehoben werden.
 
-Der Seitenvergleich ermöglicht es Benutzenden, die aktuelle Seite mit Launches, früheren Versionen usw. zu vergleichen. Weitere Informationen zu dieser Benutzerfunktion finden Sie unter [Seitenvergleich](/help/sites-cloud/authoring/features/page-diff.md).
+Der Seitenvergleich ermöglicht es Benutzenden, die aktuelle Seite mit Launches, früheren Versionen usw. zu vergleichen. Weitere Informationen zu dieser Benutzerfunktion finden Sie unter [Seitenvergleich](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Details zum Vorgang {#operation-details}
 
-Beim Vergleichen von Versionen einer Seite wird die vorherige Version, die jemand vergleichen möchte, von AEM im Hintergrund neu erstellt, um den Vergleich zu erleichtern. Diese frühere Version ist notwendig, um den Inhalt [für den Vergleich nebeneinander zu rendern](/help/sites-cloud/authoring/features/page-diff.md).
+Beim Vergleichen von Versionen einer Seite wird die vorherige Version, die jemand vergleichen möchte, von AEM im Hintergrund neu erstellt, um den Vergleich zu erleichtern. Diese frühere Version ist notwendig, um den Inhalt [für den Vergleich nebeneinander zu rendern](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 Dieser Wiederherstellungsvorgang wird intern von AEM durchgeführt und ist für die Benutzenden transparent, ohne dass sie eingreifen müssen. Ein Administrator, der das Repository beispielsweise im CRXDE Lite ansieht, würde diese neu erstellten Versionen jedoch innerhalb der Inhaltsstruktur sehen.
 

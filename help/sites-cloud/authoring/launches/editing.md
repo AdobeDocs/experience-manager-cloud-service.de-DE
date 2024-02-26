@@ -2,7 +2,7 @@
 title: Bearbeiten von Launches
 description: Nachdem Sie einen Launch für Ihre Seite (oder eine Reihe von Seiten) erstellt haben, können Sie den Inhalt in der „Launch Copy“ der Seiten bearbeiten.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 95%
@@ -48,15 +48,15 @@ Siehe [Ändern des Live-Copy-Inhalts](/help/sites-cloud/administering/msm/creati
 
 Um die vorgenommenen Änderungen zu verfolgen, können Sie den Launch in **Referenzen** anzeigen und die Launch- mit der Quellseite vergleichen:
 
-1. Navigieren Sie in der **Sites-Konsole** [zu den Quellseiten Ihres Launches und wählen Sie sie eine aus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie das Bedienfeld **[Verweise](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** und wählen Sie **Launches** aus.
+1. Navigieren Sie in der **Sites-Konsole** [zu den Quellseiten Ihres Launches und wählen Sie sie eine aus](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Öffnen Sie das Bedienfeld **[Verweise](/help/sites-cloud/authoring/basic-handling.md#references)** und wählen Sie **Launches** aus.
 1. Wählen Sie den gewünschten Launch aus und dann **Mit Quelle vergleichen**
 
    ![Vergleichen von Launch und Quelle](/help/sites-cloud/authoring/assets/launches-compare.png)
 
 1. Die beiden Seiten (Launch und Quelle) werden nebeneinander geöffnet.
 
-   Vollständige Informationen zur Verwendung der Vergleichsfunktion finden Sie unter [Seitenvergleich](/help/sites-cloud/authoring/features/page-diff.md).
+   Vollständige Informationen zur Verwendung der Vergleichsfunktion finden Sie unter [Seitenvergleich](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Ändern der verwendeten Quellseiten {#changing-the-source-pages-used}
 

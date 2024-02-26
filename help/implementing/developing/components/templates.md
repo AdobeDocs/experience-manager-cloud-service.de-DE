@@ -2,7 +2,7 @@
 title: Seitenvorlagen
 description: Seitenvorlagen werden beim Erstellen einer Seite verwendet, die als Basis für die neue Seite verwendet wird
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '3267'
 ht-degree: 99%
@@ -13,7 +13,7 @@ ht-degree: 99%
 
 Beim Erstellen einer Seite müssen Sie eine Vorlage auswählen. Die Seitenvorlage wird als Basis für die neue Seite genutzt. Die Vorlage definiert die Struktur der Seite, anfängliche Inhalte und die Komponenten, die verwendet werden können (Design-Eigenschaften). Das hat mehrere Vorteile:
 
-* Seitenvorlagen sollen spezialisierten Autoren das [Erstellen und Bearbeiten von Vorlagen](/help/sites-cloud/authoring/features/templates.md) ermöglichen.
+* Seitenvorlagen sollen spezialisierten Autoren das [Erstellen und Bearbeiten von Vorlagen](/help/sites-cloud/authoring/sites-console/templates.md) ermöglichen.
    * Diese spezialisierten Autoren werden als **Vorlagenautoren** bezeichnet.
    * Vorlagenautoren müssen Mitglieder der Gruppe `template-authors` sein.
 * Seitenvorlagen behalten eine dynamische Verbindung zu allen damit erstellten Seiten bei. Dadurch wird sichergestellt, dass alle Änderungen an der Vorlage auf den Seiten widergespiegelt werden.
@@ -30,7 +30,7 @@ Dieses Dokument:
 
 >[!NOTE]
 >
->Bei den in diesem Dokument beschriebenen Schritten wird vorausgesetzt, dass Sie bereits mit dem Erstellen und Bearbeiten von Vorlagen vertraut sind. Weitere Informationen finden Sie im Dokument [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md) für Autoren, das detailliert beschreibt, welche Funktionen Vorlagenautoren mit bearbeitbaren Vorlagen zur Verfügung stehen.
+>Bei den in diesem Dokument beschriebenen Schritten wird vorausgesetzt, dass Sie bereits mit dem Erstellen und Bearbeiten von Vorlagen vertraut sind. Weitere Informationen finden Sie im Dokument [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/sites-console/templates.md) für Autoren, das detailliert beschreibt, welche Funktionen Vorlagenautoren mit bearbeitbaren Vorlagen zur Verfügung stehen.
 
 >[!TIP]
 >
@@ -38,7 +38,7 @@ Dieses Dokument:
 
 ## Erstellen neuer Vorlagen {#creating-a-new-template}
 
-Seitenvorlagen werden von Vorlagenautoren in erster Linie mit der [Vorlagenkonsole und dem Vorlageneditor](/help/sites-cloud/authoring/features/templates.md) erstellt. In diesem Abschnitt finden Sie einen Überblick über diesen Prozess, der anschließend aus technischer Perspektive beleuchtet wird.
+Seitenvorlagen werden von Vorlagenautoren in erster Linie mit der [Vorlagenkonsole und dem Vorlageneditor](/help/sites-cloud/authoring/sites-console/templates.md) erstellt. In diesem Abschnitt finden Sie einen Überblick über diesen Prozess, der anschließend aus technischer Perspektive beleuchtet wird.
 
 Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
 
@@ -58,7 +58,7 @@ Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
    * Wenn Sie möchten, dass Seitenautorinnen und -autoren Komponenten hinzufügen und entfernen können, fügen Sie der Vorlage ein Absatzsystem hinzu.
    * Komponenten lassen sich entsperren und erneut sperren, damit Sie den anfänglichen Inhalt definieren können.
 
-   Einzelheiten dazu, wie Vorlagenautorinnen und -autoren Strukturen definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
+   Einzelheiten dazu, wie Vorlagenautorinnen und -autoren Strukturen definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-structure-template-author).
 
    Technische Details zur Struktur werden in diesem Dokument unter [Struktur](#structure) erläutert.
 
@@ -70,7 +70,7 @@ Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
 
    * Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden).
 
-   Einzelheiten dazu, wie Vorlagenautorinnen und -autoren Richtlinien definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
+   Einzelheiten dazu, wie Vorlagenautorinnen und -autoren Richtlinien definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-structure-template-author).
 
    Technische Details zu Richtlinien werden in diesem Dokument unter [Inhaltsrichtlinien](#content-policies) erläutert.
 
@@ -79,7 +79,7 @@ Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
    * Der anfängliche Inhalt definiert den Inhalt, der angezeigt wird, wenn eine Seite anfänglich auf Grundlage einer Vorlage erstellt wird.
    * Der anfängliche Inhalt kann dann von Seitenautorinnen bzw. -autoren bearbeitet werden.
 
-   Einzelheiten dazu, wie Vorlagenautoren Strukturen definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#editing-a-template-initial-content-author).
+   Einzelheiten dazu, wie Vorlagenautoren Strukturen definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-initial-content-author).
 
    Technische Details zum anfänglichen Inhalt finden Sie unter [Anfänglicher Inhalt](#initial-content) in diesem Dokument.
 
@@ -88,7 +88,7 @@ Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
    * Sie können das Vorlagen-Layout für verschiedene Geräte definieren.
    * Responsives Layout funktioniert für Vorlagen ebenso wie für die Seitenbearbeitung.
 
-   Einzelheiten dazu, wie Vorlagenautorinnen und -autoren Vorlagen-Layouts definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#editing-a-template-layout-template-author).
+   Einzelheiten dazu, wie Vorlagenautorinnen und -autoren Vorlagen-Layouts definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-layout-template-author).
 
    Technische Details zum Vorlagen-Layout finden Sie unter [Layout](#layout) in diesem Dokument.
 
@@ -97,7 +97,7 @@ Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
    * Eine Vorlage kann aktiviert oder deaktiviert werden, um sie für Vorlagenautorinnen und -autoren verfügbar bzw. nicht verfügbar zu machen.
    * Eine Vorlage kann für bestimmte Seitenverzweigungen verfügbar oder nicht verfügbar gemacht werden.
 
-   Einzelheiten dazu, wie Vorlagen aktiviert werden können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author).
+   Einzelheiten dazu, wie Vorlagen aktiviert werden können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/sites-console/templates.md#enabling-and-allowing-a-template-template-author).
 
    Technische Details zum Aktivieren von Vorlagen werden in diesem Dokument unter [Aktivieren und Zulassen von Vorlagen](#enabling-and-allowing-a-template-for-use) erläutert.
 
@@ -106,7 +106,7 @@ Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
    * Wenn Sie eine Vorlage zum Erstellen einer Seite verwenden, ist kein Unterschied zwischen statischen und bearbeitbaren Vorlagen ersichtlich.
    * Für die Seitenautoren ist der Prozess transparent.
 
-   Einzelheiten dazu, wie Seitenautoren Vorlagen zum Erstellen von Seiten verwenden können, finden Sie unter [Erstellen und Organisieren von Seiten](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
+   Einzelheiten dazu, wie Seitenautoren Vorlagen zum Erstellen von Seiten verwenden können, finden Sie unter [Erstellen und Organisieren von Seiten](/help/sites-cloud/authoring/sites-console/organizing-pages.md#templates).
 
    Technische Details zu den Richtlinien werden in diesem Dokument unter [Resultierende Inhaltsseiten](#resultant-content-pages) erläutert.
 
@@ -355,7 +355,7 @@ When creating an editable template, the value is copied from the template type t
 
 Wenn Sie eine Vorlage erstellt haben, die als Grundlage für andere Vorlagen dienen kann, können Sie diese Vorlage als Vorlagentyp kopieren.
 
-1. Erstellen Sie eine Vorlage wie andere bearbeitbare Vorlagen auch, [wie hier dokumentiert](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author). Diese dient dann als Grundlage für Ihren Vorlagentyp.
+1. Erstellen Sie eine Vorlage wie andere bearbeitbare Vorlagen auch, [wie hier dokumentiert](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author). Diese dient dann als Grundlage für Ihren Vorlagentyp.
 1. Kopieren Sie mit CRXDE Lite die erstellte Vorlage aus dem Knoten `templates` in den Knoten `template-types` unter dem [Vorlagenordner](#template-folders).
 1. Löschen Sie die Vorlage aus dem Knoten `templates` unter dem [Vorlagenordner](#template-folders).
 1. Löschen Sie in der Kopie der Vorlage, die sich unter dem `template-types`-Knoten befindet, alle `cq:template`- und `cq:templateType`-Eigenschaften aus allen `jcr:content`-Knoten.
@@ -453,7 +453,7 @@ Definiert den anfänglichen Inhalt, den eine neue Seite bei Erstellung enthält:
 
 ### Layout {#layout}
 
-Beim [Bearbeiten einer Vorlage können Sie das Layout definieren](/help/sites-cloud/authoring/features/templates.md). Dabei wird das [standardmäßige responsive Layout](/help/sites-cloud/authoring/features/responsive-layout.md) verwendet.
+Beim [Bearbeiten einer Vorlage können Sie das Layout definieren](/help/sites-cloud/authoring/sites-console/templates.md). Dabei wird das [standardmäßige responsive Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md) verwendet.
 
 <!-- that can also be [configured](/help/sites-administering/configuring-responsive-layout.md). -->
 
@@ -484,7 +484,7 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
 
    Bevor eine Vorlage verwendet werden kann, muss sie wie folgt aktiviert werden:
 
-   * Durch [Aktivieren der Vorlage](/help/sites-cloud/authoring/features/templates.md) über die **Vorlagen**-Konsole.
+   * Durch [Aktivieren der Vorlage](/help/sites-cloud/authoring/sites-console/templates.md) über die **Vorlagen**-Konsole.
 
    * Durch Festlegen der Statuseigenschaft des Knotens `jcr:content`
 
@@ -499,7 +499,7 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
 
 1. **Zugelassene Vorlagen**
 
-   * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
+   * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften**](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
    * Legen Sie die folgende Eigenschaft fest:
      `cq:allowedTemplates`
 Im `jcr:content` -Knoten der erforderlichen Verzweigung.

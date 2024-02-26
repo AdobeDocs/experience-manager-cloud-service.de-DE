@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1943'
-ht-degree: 99%
+source-wordcount: '1916'
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Viele Elemente der Benutzeroberfläche, die mit einem Zeiger angeklickt oder bea
 
 ### Tastaturbefehle in [!DNL Assets] {#keyboard-shortcuts}
 
-Die folgenden Aktionen in [!DNL Assets] funktionieren mit den aufgelisteten Tastaturbefehlen. Die meisten Tastaturbefehle, die für [!DNL Experience Manager]-Konsolen gelten, gelten auch für [!DNL Assets]. Weitere Informationen finden Sie unter [Tastaturbefehle für Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). Erfahren Sie, wie Sie [die Tastaturbefehle aktivieren oder deaktivieren](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Die folgenden Aktionen in [!DNL Assets] funktionieren mit den aufgelisteten Tastaturbefehlen. Die meisten Tastaturbefehle, die für [!DNL Experience Manager]-Konsolen gelten, gelten auch für [!DNL Assets]. Weitere Informationen finden Sie unter [Tastaturbefehle für Konsolen](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md). Erfahren Sie, wie Sie [die Tastaturbefehle aktivieren oder deaktivieren](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 | Benutzeroberfläche oder Szenario | Tastaturbefehl | Aktion |
 |---|---|---|
@@ -171,7 +171,7 @@ Bei Metadatenvorgängen, die in der Regel von Rollen wie Marketing-Experten und 
 
 * Die Option [!UICONTROL Speichern und schließen] auf der Seite [!UICONTROL Asset-Eigenschaften] kann jetzt über die Tastatur aufgerufen werden.
 * Sprachausgaben geben die Optionen zum Löschen der ausgewählten Tags auf der Registerkarte [!UICONTROL Allgemein] der Seite [!UICONTROL Eigenschaften] des Assets aus.
-* Benutzer können das Popup-Dialogfeld Datepicker mit einer Tastatur verwenden. Das Benutzeroberflächenelement zur Datumsauswahl wird zum Einstellen von Ein- und Ausschaltzeiten und zum Auswählen von Daten verwendet.
+* Benutzende können das Popup-Dialogfeld zur Datumsauswahl mit einer Tastatur verwenden. Das Benutzeroberflächenelement zur Datumsauswahl wird zum Einstellen von Ein- und Ausschaltzeiten und zum Auswählen von Daten verwendet.
 * Die Funktion zum Ziehen mit der Tastatur funktioniert im [!UICONTROL Metadatenschema-Editor] im Durchsuchen-Modus der Sprachausgabe korrekt.
 * Ein Benutzer kann den Fokus mithilfe der Tastatur in das Feld „Benutzer hinzufügen“ oder „Gruppe hinzufügen“ unter [!UICONTROL Geschlossene Benutzergruppe] auf der Registerkarte [!UICONTROL Berechtigungen] von [!UICONTROL Ordnereigenschaften] verschieben.
 

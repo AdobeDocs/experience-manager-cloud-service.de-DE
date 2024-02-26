@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Über
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '3960'
 ht-degree: 98%
@@ -196,7 +196,7 @@ Die Aktualisierungen des Translation Memory können auch umgeleitet und an ein b
 
 In der Listenansicht der Sites-Konsole kann eine Eigenschaft ausgewählt werden, die anzeigt, ob eine Seite bereits übersetzt wurde, sich in Übersetzung befindet oder noch nicht übersetzt wurde.
 
-1. Wechseln Sie in der Sites-Konsole zur [Listenansicht](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. Wechseln Sie in der Sites-Konsole zur [Listenansicht](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Wählen Sie **Anzeigeeinstellungen** im Dropdown-Menü „Ansicht“ aus.
 1. Markieren Sie im Dialogfeld die Eigenschaft **Übersetzt** und wählen Sie **Aktualisieren** aus.
 
@@ -437,18 +437,18 @@ Wenn Inhalte für eine vorhandene Sprachkopie übersetzt werden, überprüfen Si
 So vergleichen Sie Sprachkopien mit dem Sprachstamm:
 
 1. Navigieren Sie in der Sites-Konsole zur Sprachkopie, die Sie vergleichen wollen.
-1. Öffnen Sie die [Leiste „Verweise“](/help/sites-cloud/authoring/getting-started/basic-handling.md#references).
+1. Öffnen Sie die [Leiste „Verweise“](/help/sites-cloud/authoring/basic-handling.md#references).
 1. Wählen Sie unter der Überschrift **Kopien** die Option **Sprachkopien** aus.
 1. Wählen Sie Ihre spezifische Sprachkopie aus und klicken Sie dann entweder auf **Mit Stamm vergleichen** oder auf **Mit vorherigen vergleichen**.
 
    ![Vergleichen von Sprachkopien](../assets/language-copy-compare.png)
 
 1. Die beiden Seiten (Launch und Quelle) werden nebeneinander geöffnet.
-   * Vollständige Informationen zur Verwendung der Funktion finden Sie unter [Seitenvergleich](/help/sites-cloud/authoring/features/page-diff.md).
+   * Vollständige Informationen zur Verwendung der Funktion finden Sie unter [Seitenvergleich](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Verschieben oder Umbenennen einer Quellseite {#move-source}
 
-Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page) werden muss, wird bei einer erneuten Übersetzung der Seite nach dem Verschieben eine Sprachkopie auf der Basis des neuen Seitennamens/Speicherorts erstellt. Die alte Sprachkopie mit dem vorherigen Namen/Speicherort bleibt bestehen.
+Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) werden muss, wird bei einer erneuten Übersetzung der Seite nach dem Verschieben eine Sprachkopie auf der Basis des neuen Seitennamens/Speicherorts erstellt. Die alte Sprachkopie mit dem vorherigen Namen/Speicherort bleibt bestehen.
 
 Die Best Practice für dieses Szenario ist folgendes Verfahren:
 

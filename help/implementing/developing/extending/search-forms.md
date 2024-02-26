@@ -2,16 +2,16 @@
 title: Konfigurieren von Suchformularen
 description: Konfigurieren von Suchformularen für Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: ht
-source-wordcount: '2033'
-ht-degree: 100%
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
+source-wordcount: '2036'
+ht-degree: 99%
 
 ---
 
 # Konfigurieren von Suchformularen {#configuring-search-forms}
 
-Adobe Experience Manager as a Cloud Service verfügt über einen leistungsstarken [Suchmechanismus](/help/sites-cloud/authoring/getting-started/search.md).
+Adobe Experience Manager as a Cloud Service verfügt über einen leistungsstarken [Suchmechanismus](/help/sites-cloud/authoring/search.md).
 
 In Kombination mit diesem steht Ihnen auch eine Reihe vordefinierter Optionen zum Filtern Ihres Inhalts zur Verfügung. Diese enthalten vordefinierte Facetten wie **Änderungsdatum**, **Veröffentlichungsstatus** oder **Live Copy-Status**, mit denen Sie schnell zu den benötigten Ressourcen navigieren können.
 
@@ -19,9 +19,9 @@ In Kombination mit diesem steht Ihnen auch eine Reihe vordefinierter Optionen zu
 
 Zusammen sollen diese Ihnen helfen, Ihre Inhalte schnell und einfach zu finden:
 
-* [Suchen und Filtern](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
-* [Schienenauswahl](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
-* [Assets-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (beim Bearbeiten von Seiten)
+* [Suchen und Filtern](/help/sites-cloud/authoring/search.md#search-and-filter)
+* [Schienenauswahl](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
+* [Assets-Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) (beim Bearbeiten von Seiten)
 
 >[!NOTE]
 >
@@ -145,7 +145,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Datum Bereich</td>
+   <td>Datumsbereich</td>
    <td>Suche nach Ressourcen, die innerhalb eines angegebenen Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie das Start- und das Enddatum angeben.</td>
    <td>
     <ul>
@@ -210,7 +210,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Ausgeblendet Filter</td>
+   <td>Ausgeblendeter Filter</td>
    <td>Ein Filter für Eigenschaft und Wert, der für den Benutzer nicht sichtbar ist.</td>
    <td>
     <ul>
@@ -281,7 +281,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Seite Status</td>
+   <td>Seitenstatus</td>
    <td>Filtern von Seiten nach ihrem Status.</td>
    <td>
     <ul>
@@ -313,7 +313,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
    </td>
   </tr>
   <tr>
-   <td>Pfad Ausgeblendet</td>
+   <td>Pfad ausgeblendet</td>
    <td>Ein Filter für den Pfad, der für den Benutzer nicht sichtbar ist.</td>
    <td>
     <ul>
@@ -548,8 +548,8 @@ Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfü
 1. Navigieren Sie zu **Tools** > **Allgemein** > **Suchformulare**.
 
 1. Wählen Sie die Konfiguration aus, die Sie anpassen möchten.
-1. Verwenden Sie das Symbol **Bearbeiten**, um die Konfiguration für das Aktualisieren zu öffnen.
-1. Bei einer neuen Anpassung wollen Sie wahrscheinlich [neue Prädikatsfelder hinzufügen und die Einstellungen](#add-edit-a-predicate-field-and-define-field-settings) nach Bedarf definieren. Bei einer vorhandenen Anpassung können Sie ein vorhandenes Feld auswählen und [die Einstellungen aktualisieren](#add-edit-a-predicate-field-and-define-field-settings).
+1. Verwenden Sie das Symbol **Bearbeiten**, um die Konfiguration für die Aktualisierung zu öffnen.
+1. Bei einer neuen Anpassung wollen Sie wahrscheinlich nach Bedarf [neue Prädikatsfelder hinzufügen und die Einstellungen definieren](#add-edit-a-predicate-field-and-define-field-settings). Bei einer vorhandenen Anpassung können Sie ein vorhandenes Feld auswählen und [die Einstellungen aktualisieren](#add-edit-a-predicate-field-and-define-field-settings).
 1. Wählen Sie **Fertig** aus, um die Konfiguration zu speichern. Ihre Änderungen werden beim nächsten Einsatz der Konfiguration angezeigt.
 
    >[!NOTE]
@@ -563,7 +563,7 @@ Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfü
 
 Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definieren/aktualisieren:
 
-1. [Öffnen Sie die benutzerdefinierte Konfiguration](#creating-opening-a-customized-configuration) für das Aktualisieren.
+1. [Öffnen Sie die benutzerdefinierte Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
 1. Um ein neues Feld hinzuzufügen, öffnen Sie die Registerkarte **Prädikat auswählen** und ziehen Sie das benötigte Prädikat an die gewünschte Stelle. Beispiel: die **Datumsbereich-Eigenschaft**:
 
    ![Hinzufügen von Prädikaten](assets/csf-add-predicate.png)
@@ -598,7 +598,7 @@ Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definiere
 
 ### Löschen eines Prädikatfelds {#deleting-a-predicate-field}
 
-1. [Öffnen Sie die benutzerdefinierte Konfiguration](#creating-opening-a-customized-configuration) für das Aktualisieren.
+1. [Öffnen Sie die benutzerdefinierte Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
 1. Wählen Sie das Prädikatsfeld (rechts) aus, öffnen Sie die Registerkarte **Einstellungen** und wählen Sie dann das Symbol **Löschen** (unten links) aus.
 
    ![Löschsymbol](assets/csf-delete-icon.png)

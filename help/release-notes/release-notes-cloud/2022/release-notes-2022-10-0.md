@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2022.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2022.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 77%
+source-wordcount: '833'
+ht-degree: 78%
 
 ---
 
@@ -23,7 +23,7 @@ Im folgenden Abschnitt werden die Versionshinweise für die Funktionen der Versi
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.10.0) war der 10. November 2022. Die nächste monatliche Version (2023.1.0) ist für den 9. Februar 2023 geplant.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.10.0) war der 10. November 2022. Die nächste monatliche Version (2023.1.0) ist für den Freitag, 9. Februar 2023 geplant.
 
 ## Video zur Version {#release-video}
 
@@ -36,7 +36,7 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2022“ an, das eine Zusa
 
 ### Neue Funktionen in [!DNL Sites] {#sites-features}
 
-* Die [Registerkarte &quot;Personalisierung&quot;für Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) ermöglicht dem Experience Fragment-Editor Funktionen zur Segmentierungsspezifikation und die Flexibilität, verschachtelte Experience Fragments zu erstellen, wodurch Kopf- und Fußzeilen für mehrere Segmente erstellt werden können. Bis zur Einführung dieser Funktion ist die von AEM angebotene Personalisierung nur für Web-Seiten verfügbar, nicht aber für Experience Fragments.
+* Die [Registerkarte &quot;Personalisierung&quot;für Experience Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) ermöglicht dem Experience Fragment-Editor Funktionen zur Segmentierungsspezifikation und die Flexibilität, verschachtelte Experience Fragments zu erstellen, wodurch Kopf- und Fußzeilen für mehrere Segmente erstellt werden können. Bis zur Einführung dieser Funktion ist die von AEM angebotene Personalisierung nur für Web-Seiten verfügbar, nicht aber für Experience Fragments.
 
 * Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) ermöglicht es Benutzenden, übersetzte Inhaltsfragmente effizient zu verwalten. Über einen 1-Klick-Zugriff können auch alle Sprachkopien angezeigt werden. Benutzende können die Tabellenansicht auch nach der Region filtern, die sie interessiert.
 

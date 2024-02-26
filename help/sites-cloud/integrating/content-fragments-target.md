@@ -1,11 +1,11 @@
 ---
 title: Exportieren von Inhaltsfragmenten nach Adobe Target
-description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente in Adobe Target exportieren, um Erlebnisse zu testen und zu personalisieren.
+description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente nach Adobe Target exportieren können, um Erlebnisse zu testen und zu personalisieren.
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '2223'
-ht-degree: 96%
+source-wordcount: '2159'
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 >* Die AEM Inhaltsfragmente werden in den Standardarbeitsbereich von Adobe Target exportiert.
 >* AEM muss gemäß den Anweisungen unter [Integration mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) mit Adobe Target integriert werden.
 
-Sie können [Inhaltsfragmente](/help/sites-cloud/authoring/fundamentals/content-fragments.md), die in Adobe Experience Manager as a Cloud Service (AEM) erstellt wurden, nach Adobe Target (Target) exportieren. Diese können dann als Angebote in Target-Aktivitäten verwendet werden, um Erlebnisse in großem Maßstab zu testen und zu personalisieren.
+Sie können [Inhaltsfragmente](/help/sites-cloud/authoring/fragments/content-fragments.md), die in Adobe Experience Manager as a Cloud Service (AEM) erstellt wurden, nach Adobe Target (Target) exportieren. Diese können dann als Angebote in Target-Aktivitäten verwendet werden, um Erlebnisse in großem Maßstab zu testen und zu personalisieren.
 
 Es gibt die Option zum Exportieren eines Inhaltsfragments nach Adobe Target:
 
@@ -98,7 +98,7 @@ Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderl
    * die passende Konfiguration
    * die Option für das erforderliche Format
    * einen Adobe Target-Arbeitsbereich
-   * bei Bedarf - die Externalizer-Domäne
+   * falls erforderlich – die Externalizer-Domain
 
    >[!CAUTION]
    >
@@ -187,7 +187,7 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
 
    * **Präzises Targeting verwenden**: Dieses Kontrollkästchen ist standardmäßig aktiviert. Wenn diese Option aktiviert ist, wartet die Cloud-Service-Konfiguration auf das Laden des Kontexts, bevor der Inhalt geladen wird. Siehe folgenden Hinweis.
 
-   * **Segmente aus Adobe Target synchronisieren**: Aktivieren Sie diese Option, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Wählen Sie diese Option aus, wenn die Eigenschaft &quot;API-Typ&quot;REST ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Der AEM-Begriff „Segment“ ist gleichbedeutend mit dem Target-Begriff „Zielgruppe“.)
+   * **Segmente aus Adobe Target synchronisieren**: Aktivieren Sie diese Option, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Wählen Sie diese Option aus, wenn die Eigenschaft „API-Typ“ auf „REST“ festgelegt ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Der AEM-Begriff „Segment“ ist gleichbedeutend mit dem Target-Begriff „Zielgruppe“.)
 
    * **Client-Bibliothek:** dies ist standardmäßig AT.js (mbox.js wird nicht mehr unterstützt)
 
@@ -286,7 +286,7 @@ After you create a Target framework in AEM, associate your web pages with the fr
 When you associate a page with the framework, the child pages inherit the association.
 
 1. In the **Sites** console, navigate to the site that you want to configure.
-1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
+1. Using either [quick actions](/help/sites-cloud/authoring/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
 1. Select **Edit**.
 1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
@@ -300,7 +300,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
 1. Select **Done**.
-1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
+1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md).)
 
    >[!NOTE]
    >
@@ -313,14 +313,14 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >Für Medien-Assets wie Bilder wird nur ein Verweis nach Target exportiert. Das Asset selbst bleibt in AEM Assets gespeichert und wird von der AEM-Veröffentlichungsinstanz bereitgestellt.
 >
->Daher muss das Inhaltsfragment mit allen zugehörigen Assets vor dem Export in Target veröffentlicht werden.
+>Deshalb muss das Inhaltsfragment mit allen zugehörigen Assets veröffentlicht werden, bevor es nach Target exportiert wird.
 
 So exportieren Sie ein Inhaltsfragment aus AEM in Target (nach Angabe der Cloud-Konfiguration):
 
 1. Navigieren Sie zu Ihrem Inhaltsfragment in der **Assets**-Konsole.
 1. Wählen Sie das Inhaltsfragment aus, das Sie in die Zielgruppe exportieren möchten.
 
-1. Auswählen **Exportieren in Adobe Target-Angebote**.
+1. Wählen Sie **Nach Adobe Target-Angebote exportieren** aus.
 
    ![Nach Adobe Target exportieren](assets/cfm-export-target-01.png)
 
@@ -334,7 +334,7 @@ So exportieren Sie ein Inhaltsfragment aus AEM in Target (nach Angabe der Cloud-
    
    -->
 
-1. Auswählen **Exportieren ohne Veröffentlichung** oder **Veröffentlichen** nach Bedarf.
+1. Wählen Sie **Exportieren ohne Veröffentlichung** bzw. **Veröffentlichen** aus.
 
    >[!NOTE]
    >
@@ -346,13 +346,13 @@ So exportieren Sie ein Inhaltsfragment aus AEM in Target (nach Angabe der Cloud-
    >
    >Wenn Sie **Veröffentlichen** auswählen, wird das Inhaltsfragment sofort veröffentlicht und an Target gesendet.
 
-1. Auswählen **OK** im Bestätigungsdialogfeld.
+1. Wählen Sie im Bestätigungsdialogfeld **OK** aus.
 
    Ihr Inhaltsfragment sollte sich jetzt in Target befinden.
 
    >[!NOTE]
    >
-   >[Viele Details](/help/sites-cloud/authoring/fundamentals/content-fragments.md#details-of-your-content-fragment) des Exports können in der **Listenansicht** der Konsole und den **Eigenschaften** eingesehen werden.
+   >[Viele Details](/help/sites-cloud/authoring/fragments/content-fragments.md#details-of-your-content-fragment) des Exports können in der **Listenansicht** der Konsole und den **Eigenschaften** eingesehen werden.
 
    >[!NOTE]
    >
@@ -360,7 +360,7 @@ So exportieren Sie ein Inhaltsfragment aus AEM in Target (nach Angabe der Cloud-
 
 >[!NOTE]
 >
->Alternativ können Sie den Export auch über den Seiteneditor durchführen, indem Sie vergleichbare Befehle im Menü [Seiteninformationen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) verwenden.
+>Alternativ können Sie den Export auch über den Seiteneditor durchführen, indem Sie vergleichbare Befehle im Menü [Seiteninformationen](/help/sites-cloud/authoring/page-editor/introduction.md#page-information) verwenden.
 
 ## Verwenden Ihrer Inhaltsfragmente in Adobe Target {#using-your-content-fragments-in-adobe-target}
 

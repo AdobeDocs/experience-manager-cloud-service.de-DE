@@ -4,10 +4,10 @@ description: Im Folgenden erhalten Sie eine Einführung in das Wiederverwenden v
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '2698'
-ht-degree: 92%
+source-wordcount: '2702'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ Multi Site Manager (MSM) ermöglicht Ihnen die Verwendung derselben Site-Inhalte
    * Inhalte einmalig erstellen und diese
    * Inhalte dann in anderen Bereichen derselben oder anderer Sites verwenden (über [Live Copies](#live-copies)).
 * MSM behält dann die Live-Beziehungen zwischen Ihren Quellinhalten und deren Live Copies bei, sodass:
-   * Wenn Sie den Quellinhalt ändern, werden die Quelle und die Live Copies synchronisiert.
+   * die Quelle und die Live Copies synchronisiert werden, wenn den Quellinhalt ändern.
    * Sie Anpassungen am Inhalt der Live Copies vornehmen können, indem Sie die Live-Beziehung zu einzelnen Unterseiten und/oder Komponenten trennen.
 
 Diese Seite bietet einen Überblick über das Wiederverwenden von Inhalten mit MSM. Auf den folgenden Seiten werden die damit zusammenhängenden Probleme ausführlich behandelt.
@@ -32,7 +32,7 @@ Diese Seite bietet einen Überblick über das Wiederverwenden von Inhalten mit M
 
 >[!NOTE]
 >
->MSM kann auch für Assets, einschließlich Inhaltsfragmente, verwendet werden. Siehe [Wiederverwenden von Inhaltsfragmenten mit MSM für Assets](/help/assets/reuse-assets-using-msm.md) (nur über die Konsole &quot;Assets&quot;verfügbar).
+>MSM kann auch für Assets, einschließlich Inhaltsfragmente, verwendet werden. Siehe [Wiederverwenden von Inhaltsfragmenten mit MSM für Assets](/help/assets/reuse-assets-using-msm.md) (nur über die Assets-Konsole verfügbar).
 
 ## Mögliche Szenarien {#possible-scenarios}
 
@@ -72,7 +72,7 @@ MSM und Live Copies haben zahlreiche Anwendungsfälle. Szenarien können beispie
 
   Alternativ dazu möchte ein Unternehmen mit einem Händlernetzwerk vielleicht separate Websites für seine einzelnen Verkaufsvertretungen, von denen jede eine Variante der von der Zentrale bereitgestellten Haupt-Website darstellt. Dies könnte für ein einzelnes Unternehmen mit mehreren regionalen Niederlassungen oder ein nationales Franchise-System mit einem zentralen Franchise-Geber und mehreren lokalen Franchise-Nehmern gelten.
 
-  Die Hauptverwaltung kann die zentralen Informationen bereitstellen, während die regionalen Stellen lokale Informationen wie Kontaktdaten, Öffnungszeiten und Veranstaltungen hinzufügen können.
+  Die Zentrale kann die Kerninformationen bereitstellen und die regionalen Standorte können lokale Informationen wie Kontaktdetails, Geschäftszeiten und Veranstaltungen ergänzen.
 
   ```xml
   /content
@@ -106,7 +106,7 @@ MSM und Live Copies haben zahlreiche Anwendungsfälle. Szenarien können beispie
   >
   >und
   >
-  >* Wie viel der einzelnen Kopien angepasst werden muss.
+  >* welcher Anteil der einzelnen Kopien angepasst werden muss.
 
 ## MSM über die Benutzeroberfläche {#msm-from-the-ui}
 
@@ -114,14 +114,14 @@ Auf MSM kann mithilfe verschiedener Optionen der jeweiligen Konsole direkt über
 
 * **Website erstellen** (**Sites**)
 
-   * MSM unterstützt Sie bei der Verwaltung mehrerer Websites, die gemeinsame Inhalte enthalten. Beispielsweise werden Websites oft so für internationale Zielgruppen bereitgestellt, dass der Großteil der Inhalte für alle Länder ist, ein Teil des Inhalts aber spezifisch für das jeweilige Land ist. Mit MSM können Sie [Erstellen von Live Copies, die automatisch eine oder mehrere Sites basierend auf Ihrer Quell-Site aktualisieren](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Dies hilft Ihnen auch dabei, eine gemeinsame Basisstruktur zu erzwingen, die gemeinsamen Inhalte auf mehreren Sites zu nutzen, ein gemeinsames Erscheinungsbild zu erreichen und die Maßnahmen auf die Verwaltung der Inhalte zu konzentrieren, die sich auf den verschiedenen Sites tatsächlich unterscheiden. Erstellen einer Site auf diese Weise:
+   * MSM unterstützt Sie bei der Verwaltung mehrerer Websites, die gemeinsame Inhalte enthalten. Beispielsweise werden Websites oft so für internationale Zielgruppen bereitgestellt, dass der Großteil der Inhalte für alle Länder ist, ein Teil des Inhalts aber spezifisch für das jeweilige Land ist. MSM ermöglicht Ihnen die [Erstellung von Live Copies, die automatisch eine oder mehrere Sites basierend auf Ihrer Quell-Site aktualisieren](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Dies hilft Ihnen auch dabei, eine gemeinsame Basisstruktur zu erzwingen, die gemeinsamen Inhalte auf mehreren Sites zu nutzen, ein gemeinsames Erscheinungsbild zu erreichen und die Maßnahmen auf die Verwaltung der Inhalte zu konzentrieren, die sich auf den verschiedenen Sites tatsächlich unterscheiden. Erstellen einer Site auf diese Weise:
       * Für die Angabe der Quelle ist eine vordefinierte Blueprint-Konfiguration erforderlich.
       * Es wird eine Live Copy der (vordefinierten) Quelle erstellt.
       * Bietet den Benutzenden die Schaltfläche **Rollout**.
 
 * **Erstellen einer Live Copy** (**Sites**)
 
-   * Mit MSM können Sie [eine Ad-hoc-Live Copy (einmalig) einer einzelnen Seite oder Unterverzweigung einer Website erstellen.](creating-live-copies.md#creating-a-live-copy-of-a-page) Beispielsweise das Duplizieren einer Unterverzweigung, um Informationen über eine neue/aktualisierte Version eines Produkts bereitzustellen. Erstellen einer Live Copy auf diese Weise:
+   * Mit MSM können Sie [eine (einmalige) Ad-hoc-Live Copy einer einzelnen Seite oder eines Unterzweigs einer Website erstellen,](creating-live-copies.md#creating-a-live-copy-of-a-page) z. B. einen Unterzweig duplizieren, um Informationen über eine neue/aktualisierte Version eines Produkts bereitzustellen. Erstellen einer Live Copy auf diese Weise:
       * Erstellt eine Ad-hoc-Live Copy (keine Blueprint-Konfiguration erforderlich).
       * Kann verwendet werden, um (sofort) eine Live Copy einer beliebigen Seite/Verzweigung zu erstellen.
       * Erfordert die Option **Synchronisieren** (die **Rollout**-Schaltfläche wird nicht bereitgestellt).
@@ -132,15 +132,15 @@ Auf MSM kann mithilfe verschiedener Optionen der jeweiligen Konsole direkt über
 
 * **Verweise** (**Sites**)
 
-   * Die Leiste [Verweise](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) stellt Ihnen Informationen zu den **Live Copies** sowie den Zugriff auf die entsprechenden Aktionen bereit.
+   * Die Leiste [Verweise](/help/sites-cloud/authoring/basic-handling.md#references) stellt Ihnen Informationen zu den **Live Copies** sowie den Zugriff auf die entsprechenden Aktionen bereit.
 
 * **Live Copy-Übersicht** (**Sites**)
 
-   * Mithilfe dieser Konsole können Sie [Ihr Blueprint und seine Live Copies anzeigen und verwalten.](live-copy-overview.md)
+   * Diese Konsole ermöglicht Ihnen die [Ansicht und Verwaltung Ihres Blueprints und dessen Live Copies](live-copy-overview.md).
 
 * **Blueprints** (**Tools** – **Sites**)
 
-   * Mithilfe dieser Konsole können Sie [Erstellen und verwalten Sie Ihre Blueprint-Konfigurationen.](creating-live-copies.md#creating-a-blueprint-configuration)
+   * Diese Konsole ermöglicht Ihnen die [Erstellung und Verwaltung Ihrer Blueprint-Konfigurationen](creating-live-copies.md#creating-a-blueprint-configuration).
 
 >[!NOTE]
 >
@@ -189,7 +189,7 @@ Im vorherigen Beispiel ist `/content/wknd/language-masters/en` die globale prim�
 
 * Der Inhalt unter `/content/wknd/language-masters/en` ist die Quelle.
 * Der Inhalt unter `/content/wknd/language-masters/en` wird unter die Knoten `/content/wknd/us/en/` und `/content/wknd/ca/en` kopiert. Dabei handelt es sich um die Live Copies.
-* Autoren ändern Seiten unten `/content/wknd/language-masters/en`.
+* Autorinnen und Autoren ändern die Seiten unterhalb von `/content/wknd/language-masters/en`.
 * Nach der Auslösung synchronisiert MSM diese Änderungen mit den Live Copies.
 
 ### Live Copies – Komposition {#live-copies-composition}
@@ -245,7 +245,7 @@ Eine Live Copy wird als gestapelte Live Copy bezeichnet, wenn sie als untergeo
 
 ### Quelle, Blueprints und Blueprint-Konfigurationen {#source-blueprints-and-blueprint-configurations}
 
-Jede Seite einer Verzweigung von Seiten kann als Quelle einer Live Copy verwendet werden. Mit MSM können Sie jedoch auch eine Blueprint-Konfiguration definieren, die einen Quellpfad angibt. Eine Blueprint-Konfiguration hat die folgenden Vorteile:
+Jede Seite einer Verzweigung von Seiten kann als Quelle einer Live Copy verwendet werden. MSM ermöglicht Ihnen allerdings auch die Definition einer Blueprint-Konfiguration, die einen Quellpfad angibt. Eine Blueprint-Konfiguration hat die folgenden Vorteile:
 
 * Der Autor kann die Option **Rollout** für einen Blueprint verwenden. Das heißt, dass Änderungen explizit an Live Copies gepusht werden, die von diesem Blueprint Konfigurationsoptionen übernehmen.
 * Der Autor kann **Website erstellen** nutzen, wodurch der Benutzer einfach Sprachen auswählen und die Struktur der Live Copy konfigurieren kann.
@@ -278,7 +278,7 @@ Ein Rollout ist die zentrale MSM-Aktion, die Live Copies mit ihrer Quelle synch
 Eine Rollout-Konfiguration definiert, wann und wie eine Live Copy mit dem Quellinhalt synchronisiert wird. Eine Rollout-Konfiguration besteht aus einem Auslöser und einer oder mehreren Synchronisierungsaktionen:
 
 * **Auslöser** – Ein Auslöser ist ein Ereignis, das die Live-Aktionssynchronisierung bewirkt, wie zum Beispiel die Aktivierung einer Quellseite. MSM definiert die Auslöser, die Sie verwenden können.
-* **Synchronisierungsaktionen** – Synchronisierungsaktionen werden auf der Live Copy durchgeführt, um sie mit der Quelle zu synchronisieren. Beispielaktionen kopieren Inhalte, sortieren untergeordnete Knoten und aktivieren die Live Copy-Seite. MSM bietet mehrere Synchronisierungsaktionen.
+* **Synchronisierungsaktionen** – Synchronisierungsaktionen werden auf der Live Copy durchgeführt, um sie mit der Quelle zu synchronisieren. Beispielaktionen kopieren Inhalte, sortieren untergeordnete Knoten und aktivieren die Live Copy-Seite. MSM stellt eine Reihe von Synchronisierungsaktionen bereit.
 
 >[!NOTE]
 >
@@ -288,7 +288,7 @@ Rollout-Konfigurationen können wiederverwendet werden, sodass mehr als eine Liv
 
 ### Rollout-Konflikte {#rollout-conflicts}
 
-Rollouts können kompliziert werden, vor allem wenn Autoren sowohl Inhalte in der Quelle als auch in der Live Copy bearbeiten. Es ist also hilfreich zu wissen, wie AEM [Konflikte handhabt, die während des Rollouts auftreten](rollout-conflicts.md).
+Rollouts können kompliziert werden, insbesondere wenn Autoren Inhalte sowohl in der Quelle als auch in der Live Copy bearbeiten. Daher ist es nützlich, sich darüber im Klaren zu sein, wie AEM mit jeder [Konflikte, die während des Rollouts auftreten können.](rollout-conflicts.md)
 
 ### Aussetzen und Abbrechen der Vererbung und Synchronisierung {#suspending-and-cancelling-inheritance-and-synchronization}
 
@@ -319,11 +319,11 @@ Die folgenden Schritte beschreiben die standardmäßige Vorgehensweise für die 
 1. Entwickeln Sie die Inhalte der Quellseite.
 1. Legen Sie die zu verwendende Rollout-Konfiguration fest.
 
-   1. MSM [installiert mehrere Rollout-Konfigurationen](live-copy-sync-config.md#installed-rollout-configurations) , die mehrere Anwendungsfälle erfüllen können.
-   1. Optional können Sie [Erstellen einer Rollout-Konfiguration](live-copy-sync-config.md#creating-a-rollout-configuration) falls erforderlich.
+   1. MSM [installiert mehrere Rollout-Konfigurationen](live-copy-sync-config.md#installed-rollout-configurations), die sich für eine Reihe von Nutzungsszenarien eignen.
+   1. Optional können Sie [eine Rollout-Konfiguration erstellen](live-copy-sync-config.md#creating-a-rollout-configuration), falls nötig.
 
-1. Stellen Sie fest, wo Sie [die zu verwendenden Rollout-Konfigurationen spezifizieren](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) müssen und konfigurieren Sie sie nach Bedarf.
-1. Falls erforderlich, [Erstellen einer Blueprint-Konfiguration](creating-live-copies.md#creating-a-blueprint-configuration) , der den Quellinhalt der Live Copy angibt.
+1. Bestimmen Sie, wo Sie [die zu verwendenden Rollout-Konfigurationen spezifizieren](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) müssen, und konfigurieren Sie sie nach Bedarf.
+1. [Erstellen Sie gegebenenfalls eine Blueprint-Konfiguration](creating-live-copies.md#creating-a-blueprint-configuration), die den Quellinhalt der Live Copy identifiziert.
 1. [Erstellen Sie eine Live Copy.](creating-live-copies.md#creating-a-live-copy)
 1. Nehmen Sie bei Bedarf Änderungen am Quellinhalt vor. Sie sollten den normalen, von Ihrer Organisation etablierten Inhaltsprüfungs- und Genehmigungsprozess anwenden.
 1. Führen Sie ein [Rollout](creating-live-copies.md#rolling-out-a-blueprint) des Blueprints durch oder [synchronisieren Sie die Live Copy](creating-live-copies.md#synchronizing-a-live-copy) mit den Änderungen.

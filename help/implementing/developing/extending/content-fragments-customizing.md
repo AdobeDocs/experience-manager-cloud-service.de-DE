@@ -1,11 +1,11 @@
 ---
 title: Anpassen und Erweitern von Inhaltsfragmenten
-description: Ein Inhaltsfragment erweitert ein Standard-Asset. Erfahren Sie, wie Sie sie anpassen können.
+description: Ein Inhaltsfragment erweitert ein Standard-Asset. Erfahren Sie, wie Sie diese anpassen können.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 56%
+source-wordcount: '1689'
+ht-degree: 60%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 56%
 
 In Adobe Experience Manager as a Cloud Service erweitert ein Inhaltsfragment ein Standard-Asset. Siehe:
 
-* [Erstellen und Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md) und [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+* [Erstellen und Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md) und [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 * [Verwalten von Assets](/help/assets/manage-digital-assets.md) für weitere Informationen zu Standard-Assets.
 
@@ -61,7 +61,6 @@ Inhaltsfragmente, die auf einem Inhaltsfragmentmodell basieren, werden einem ein
 * Alle Inhalte werden im Knoten `jcr:content/data` des Assets gespeichert:
 
    * Die Elementdaten werden unter dem Master-Unterknoten gespeichert:
-
      `jcr:content/data/master`
 
    * Varianten werden unter einem Unterknoten gespeichert, der den Namen der Variante trägt, z. B.: `jcr:content/data/myvariation`
@@ -97,11 +96,11 @@ Integration mit dem Assets-Kern:
 >
 >Die [Inhaltsfragment-Komponente als Teil der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de). Weitere Informationen finden Sie unter [Entwickeln von Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=de).
 
-AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen anderen Asset-Typen. AEM stellt die **[Kernkomponente &quot;Inhaltsfragment&quot;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de)** - a [-Komponente, mit der Sie Inhaltsfragmente in Ihre Seiten einfügen können](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Sie können die Kernkomponente für **[Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=de)** auch erweitern.
+AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen anderen Asset-Typen. AEM stellt die **[Kernkomponente &quot;Inhaltsfragment&quot;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de)** - a [-Komponente, mit der Sie Inhaltsfragmente in Ihre Seiten einfügen können](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). Sie können die Kernkomponente für **[Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=de)** auch erweitern.
 
 * Die Komponente verwendet die `fragmentPath`-Eigenschaft für Verweise auf das tatsächliche Inhaltsfragment. Die `fragmentPath`-Eigenschaft wird wie ähnliche Eigenschaften anderer Asset-Typen gehandhabt, beispielsweise wenn das Inhaltsfragment zu einem anderen Speicherort verschoben wird.
 
-* Über die Komponente können Sie die anzuzeigende Variante auswählen.
+* Mit der Komponente können Sie die Variante auswählen, die angezeigt werden soll.
 
 * Außerdem können mehrere Absätze ausgewählt werden, um die Ausgabe zu beschränken. Dies kann beispielsweise für die Ausgabe in mehreren Spalten verwendet werden.
 
@@ -177,7 +176,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
 * **Inhaltsfragment** ([ContentFragment](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
-  Auf dieser Oberfläche können Sie abstrakt mit einem Inhaltsfragment arbeiten.
+  Mit dieser Schnittstelle können Sie abstrakt mit einem Inhaltsfragment arbeiten.
 
   Die Schnittstelle bietet folgende Möglichkeiten:
 
@@ -298,7 +297,7 @@ Dazu können Sie die Ressource, die die API darstellt, wie folgt anpassen:
 
 `com.adobe.cq.dam.cfm.ContentFragment`
 
-Beispiel:
+Zum Beispiel:
 
 ```java
 // first, get the resource
@@ -334,7 +333,7 @@ Die [Intervall für automatisches Speichern](/help/sites-cloud/administering/con
 
 Wenn Sie ein Intervall für das automatische Speichern von 5 Minuten festlegen möchten, definieren Sie die Eigenschaft auf Ihrem Knoten.
 
-Beispiel:
+Zum Beispiel:
 
 * Knoten: `/conf/global/settings/dam/cfm/jcr:content`
 * Eigenschaftsname: `autoSaveInterval`

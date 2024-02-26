@@ -2,7 +2,7 @@
 title: Verwalten von Tags
 description: Erfahren Sie, wie Sie Tags in AEM verwalten, um Ihre Inhalte zu organisieren.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2200'
 ht-degree: 95%
@@ -16,7 +16,7 @@ Tags sind eine intuitive Methode zur Klassifizierung Ihrer Inhalte. Sie fungiere
 Bei Adobe Experience Manager (AEM) kann ein Tag die Eigenschaft sein von:
 
 * Einem Inhaltsknoten für eine Seite
-   * Weitere Informationen finden Sie im Dokument . [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md).
+   * Weitere Informationen finden Sie im Dokument . [Verwenden von Tags](/help/sites-cloud/authoring/sites-console/tags.md).
 * Einem Metadatenknoten für ein Asset
    * Weitere Informationen finden Sie im Dokument . [Verwalten von Metadaten für digitale Assets](/help/assets/manage-metadata.md).
 
@@ -183,7 +183,7 @@ Sie können weitere Details zum Tag anzeigen, darunter wer die letzte Veröffent
 
    ![Anzeigen der Tag-Eigenschaften](assets/tag-properties.png)
 
-Weitere Informationen zum Auswählen der Anzeigemodi und Leiste finden Sie unter [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Weitere Informationen zum Auswählen der Anzeigemodi und Leiste finden Sie unter [Grundlegende Handhabung](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### Bearbeiten von Tags {#editing-tags}
 
@@ -245,7 +245,7 @@ Es kann nützlich sein, zu sehen, auf welchen Inhalt ein bestimmtes Tag angewend
 
 Bewegen Sie die Maus oder wählen Sie einen verweisenden Inhalt in der Liste aus, um den vollständigen Pfad des Inhalts anzuzeigen.
 
-Weitere Informationen zum Auswählen der Anzeigemodi und über die Leiste finden Sie unter [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Weitere Informationen zum Auswählen der Anzeigemodi und über die Leiste finden Sie unter [Grundlegende Handhabung](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### Verschieben von Tags {#moving-tags}
 

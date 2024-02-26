@@ -2,7 +2,7 @@
 title: Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente
 description: Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 92%
@@ -28,7 +28,7 @@ Dieser Artikel baut darauf auf, damit Sie verstehen, wie Sie Metadaten und Tags 
 
 Sie können Metadaten und Tags aus dem rechten Bereich des Inhaltsfragment-Editors hinzufügen:
 
-![Inhaltsfragmente-Editor – Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
+![Inhaltsfragmenteditor – Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Wie geht es weiter {#whats-next}
 
@@ -38,6 +38,6 @@ Jetzt können Sie all dieses Wissen nutzen und mit der Erstellung von Inhaltsfra
 
 * [Metadaten – Fragmenteigenschaften](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
 
-* [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md)
+* [Verwenden von Tags](/help/sites-cloud/authoring/sites-console/tags.md)
 
 * [Inhaltsfragmentmodelle – Zulassen von Inhaltsfragmentmodellen für Ihren Asset-Ordner](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)

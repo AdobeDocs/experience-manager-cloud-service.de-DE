@@ -2,10 +2,10 @@
 title: Einbinden von Tagging in AEM-Programme
 description: Programmatisch mit Tags oder erweiterten Tags innerhalb eines benutzerdefinierten AEM-Programms arbeiten
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 95%
+source-wordcount: '717'
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ die mit dem
 
 Weitere Informationen zum Tagging finden Sie unter:
 
-* Weitere Informationen zum Tagging von Inhalten als Inhaltsersteller finden Sie unter [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md).
+* Weitere Informationen zum Tagging von Inhalten als Inhaltsersteller finden Sie unter [Verwenden von Tags](/help/sites-cloud/authoring/sites-console/tags.md).
 * Informationen zur Erstellung und Verwaltung von Tags durch Admins sowie dazu, welchen Inhalten Tags zugewiesen werden, finden Sie unter „Verwalten von Tags“.
 
 ## Übersicht über die Tagging-API {#overview-of-the-tagging-api}
@@ -51,7 +51,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Abrufen eines Tag-Objekts {#retrieving-a-tag-object}
 
-A `Tag` kann über die `TagManager`, indem Sie entweder ein vorhandenes Tag auflösen oder eines erstellen:
+Ein `Tag` kann über den `TagManager` abgerufen werden, indem entweder ein vorhandenes Tag aufgelöst oder eines erstellt wird:
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -168,4 +168,4 @@ Finnisch ist jetzt im Tag-Dialogfeld der Seiteneigenschaften und im Dialogfeld *
 
 >[!NOTE]
 >
->Die neue Sprache muss eine der AEM anerkannten Sprachen sein. Das heißt, es muss als Knoten unter verfügbar sein. `/libs/wcm/core/resources/languages`.
+>Die neue Sprache muss eine der von AEM anerkannten Sprachen sein. Das heißt, sie muss als Knoten unterhalb von `/libs/wcm/core/resources/languages` verfügbar sein.

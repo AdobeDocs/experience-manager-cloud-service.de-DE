@@ -2,7 +2,7 @@
 title: Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM
 description: Erfahren Sie mehr über die Konzepte und Methoden der Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmentmodellen.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 98%
@@ -108,9 +108,9 @@ Nachdem Sie die Grundlagen gelernt haben, besteht der nächste Schritt darin, Ih
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Authoring – Konzepte](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Authoring – Konzepte](/help/sites-cloud/authoring/author-publish.md)
 
-* [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) – diese Seite basiert hauptsächlich auf der **Sites**-Konsole, aber viele/die meisten Funktionen sind auch für die Navigation zu und die Ausführung von Aktionen mit **Inhaltsfragmentmodellen** auf der **Allgemein**-Konsole relevant.
+* [Grundlegende Handhabung](/help/sites-cloud/authoring/basic-handling.md) – diese Seite basiert hauptsächlich auf der **Sites**-Konsole, aber viele/die meisten Funktionen sind auch für die Navigation zu und die Ausführung von Aktionen mit **Inhaltsfragmentmodellen** auf der **Allgemein**-Konsole relevant.
 
 * [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 

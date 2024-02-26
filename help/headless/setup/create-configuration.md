@@ -2,10 +2,10 @@
 title: Erstellen einer Konfiguration – Einrichten von Headless
 description: Erstellen Sie als ersten Schritt eine Konfiguration, um mit Headless in AEM as a Cloud Service zu beginnen.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,13 +19,13 @@ Der Konfigurations-Browser bietet eine generische Konfigurations-API, eine Inhal
 
 Stellen Sie sich im Kontext von Headless-Content-Management in AEM eine Konfiguration als einen Arbeitsplatz in AEM vor, an dem Sie Ihre Inhaltsmodelle erstellen können, die die Struktur Ihrer zukünftigen Inhalte und Inhaltsfragmente definieren. Sie können über mehrere Konfigurationen verfügen, um diese Modelle zu trennen.
 
-Wenn Sie mit [Seitenvorlagen in einer Full-Stack-AEM-Implementierung](/help/sites-cloud/authoring/features/templates.md) vertraut sind, ist die Verwendung von Konfigurationen für die Verwaltung von Inhaltsmodellen ähnlich.
+Wenn Sie mit [Seitenvorlagen in einer Full-Stack-AEM-Implementierung](/help/sites-cloud/authoring/sites-console/templates.md) vertraut sind, ist die Verwendung von Konfigurationen für die Verwaltung von Inhaltsmodellen ähnlich.
 
 ## Erstellen einer Konfiguration {#how-to-create-a-configuration}
 
 Ein Administrator muss eine Konfiguration nur einmal oder sehr selten erstellen, wenn für die Organisation Ihrer Inhaltsmodelle ein neuer Arbeitsbereich erforderlich ist. Für die Zwecke dieser ersten Schritte müssen wir nur eine Konfiguration erstellen.
 
-1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü die Option **Tools > Allgemein > Konfigurationsbrowser**.
+1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Tools > Allgemein > Konfigurations-Browser** aus.
 1. Geben Sie einen **Titel** und einen **Namen** für Ihre Konfiguration an.
    * Der **Titel** sollte beschreibend sein.
    * Der **Name** wird zum Knotennamen im Repository.

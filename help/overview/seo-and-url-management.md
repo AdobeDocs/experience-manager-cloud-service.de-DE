@@ -2,7 +2,7 @@
 title: Best Practices für SEO und URL-Verwaltung für Adobe Experience Manager as a Cloud Service
 description: Best Practices für SEO und URL-Verwaltung für Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '3539'
 ht-degree: 99%
@@ -210,7 +210,7 @@ während es Benutzern ermöglicht wird, in ihrer Muttersprache mit dem Seitennam
 
 >[!NOTE]
 >
->Die `sling:alias`-Eigenschaft kann [beim Bearbeiten der Seiteneigenschaften mithilfe der Alias-Eigenschaft](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) festgelegt werden.
+>Die `sling:alias`-Eigenschaft kann [beim Bearbeiten der Seiteneigenschaften mithilfe der Alias-Eigenschaft](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) festgelegt werden.
 
 #### /etc/map {#etc-map}
 

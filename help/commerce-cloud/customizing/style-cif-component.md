@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 99%
+source-wordcount: '2342'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine 
 
 ## Was Sie erstellen werden
 
-In diesem Tutorial wird ein neuer Stil für die Produkt-Teaser-Komponente implementiert, der einer Karte ähnlich ist. Das im Tutorial erworbene Wissen kann auf andere CIF-Kernkomponenten angewendet werden.
+In diesem Tutorial wird ein neuer Stil für die Produkt-Teaser-Komponente implementiert, der einer Karte ähnlich ist.  Das im Tutorial erworbene Wissen kann auf andere CIF-Kernkomponenten angewendet werden.
 
 ![Was Sie erstellen werden](../assets/style-cif-component/what-you-will-build.png)
 
@@ -57,7 +57,7 @@ Klonen Sie das [Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) un
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. Fügen Sie die erforderlichen OSGi-Konfigurationen hinzu, damit Sie Ihre AEM-Instanz mit einer Adobe Commerce-Instanz verbinden oder die Konfigurationen zum erstellten Projekt hinzufügen können.
+1. Fügen Sie die erforderlichen OSGi-Konfigurationen hinzu, um so Ihre AEM-Instanz mit einer Adobe Commerce-Instanz zu verbinden, oder fügen Sie die Konfigurationen zum erstellten Projekt hinzu.
 
 1. An diesem Punkt sollten Sie über eine funktionierende Version einer Storefront verfügen, die mit einer Adobe Commerce-Instanz verbunden ist. Navigieren Sie zur Seite `US` > `Home` unter: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -77,7 +77,7 @@ Das `ui.frontend`-Modul ist ebenfalls ein Maven-Modul und mit dem größeren Pro
 
 ![ui.frontend-zu-ui.apps-Architektur](../assets/style-cif-component/ui-frontend-architecture.png)
 
-*Kompilierte CSS- und JavaScript-Dateien werden bei einem Maven-Build aus dem `ui.frontend`-Modul als Client-Bibliothek in das `ui.apps`-Modul kopiert*
+*Kompilierte CSS- und JavaScript-Dateien werden bei einem Maven-Build aus dem `ui.frontend`-Modul als Client-Bibliothek in das `ui.apps`-Modul kopiert*.
 
 ## Teaser-Stil aktualisieren {#ui-frontend-module}
 
@@ -108,7 +108,7 @@ Nehmen Sie als Nächstes eine kleine Änderung am Teaser-Stil vor, um zu sehen, 
    }
    ```
 
-   Mit der obigen Regel sollte der Produkt-Teaser-Komponente ein fetter rosa Rahmen hinzugefügt werden.
+   Mit der obigen Regel sollte der Produkt-Teaser-Komponente ein dicker rosa Rahmen hinzugefügt werden.
 
 1. Öffnen Sie ein neues Terminal-Fenster und navigieren Sie zum Ordner `ui.frontend`:
 
@@ -182,7 +182,7 @@ Nehmen Sie als Nächstes eine kleine Änderung am Teaser-Stil vor, um zu sehen, 
 
    **clientlib-cif**: Eine leere Client-Bibliothek, die die erforderlichen Abhängigkeiten von [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) einfach einbettet. Die Kategorie lautet `venia.cif`.
 
-   **clientlib-grid**: Umfasst die CSS, die zur Aktivierung der Funktion „Responsives Raster“ von AEM erforderlich ist. Durch Verwendung des AEM-Rasters wird der [Layout-Modus](/help/sites-cloud/authoring/features/responsive-layout.md) im AEM-Editor aktiviert und Inhaltsautorinnen und -autoren erhalten die Möglichkeit, die Größe von Komponenten zu ändern. Die Kategorie lautet `venia.grid` und ist in der `venia.base`-Bibliothek eingebettet.
+   **clientlib-grid**: Umfasst die CSS, die zur Aktivierung der Funktion „Responsives Raster“ von AEM erforderlich ist. Durch Verwendung des AEM-Rasters wird der [Layout-Modus](/help/sites-cloud/authoring/page-editor/responsive-layout.md) im AEM-Editor aktiviert und Inhaltsautorinnen und -autoren erhalten die Möglichkeit, die Größe von Komponenten zu ändern. Die Kategorie lautet `venia.grid` und ist in der `venia.base`-Bibliothek eingebettet.
 
 1. Überprüfen Sie die Dateien `customheaderlibs.html` und `customfooterlibs.html` unter `ui.apps/src/main/content/jcr_root/apps/venia/components/page`:
 
@@ -340,7 +340,7 @@ Der webpack-Dev-Server dient als Proxy für Bilder und einige der CSS/JavaScript
 
 ## Kartenstil für den Produkt-Teaser implementieren {#update-css-product-teaser}
 
-Ändern Sie anschließend die Sass-Dateien im `ui.frontend`-Modul, um für den Produkt-Teaser einen kartenähnlichen Stil zu implementieren. Der webpack-Dev-Server dient dazu, die Änderungen schnell anzuzeigen.
+Ändern Sie anschließend die Sass-Dateien im `ui.frontend`-Modul, um für den Produkt-Teaser einen kartenähnlichen Stil zu implementieren. Der webpack-dev-Server dient dazu, die Änderungen schnell anzuzeigen.
 
 Kehren Sie zur IDE und zum erstellten Projekt zurück.
 
@@ -437,7 +437,7 @@ Kehren Sie zur IDE und zum erstellten Projekt zurück.
 
    Die Änderungen wurden jedoch noch nicht in AEM bereitgestellt. Sie können die [Lösungsdatei hier](../assets/style-cif-component/_productteaser.scss) herunterladen.
 
-1. Aktualisierungen über ein Befehlszeilen-Terminal mithilfe Ihrer Maven-Kenntnisse in AEM bereitstellen:
+1. Stellen Sie Aktualisierungen mithilfe Ihrer Maven-Kenntnisse über ein Befehlszeilen-Terminal in AEM bereit:
 
    ```shell
    $ cd aem-cif-guides-venia/
@@ -473,7 +473,7 @@ Sie haben den Stil Ihrer ersten AEM CIF-Kernkomponente festgelegt und dafür ein
 
 ## Bonusaufgabe {#bonus-challenge}
 
-Verwenden Sie das [AEM-Stilsystem](/help/sites-cloud/authoring/features/style-system.md), um zwei Stile einzurichten, die von einer Inhaltsautorin bzw. einem Inhaltsautor aktiviert bzw. deaktiviert werden können. [Entwickeln mit dem Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=de) umfasst detaillierte Schritte und Informationen dazu, wie Sie dabei vorgehen.
+Verwenden Sie das [AEM-Stilsystem](/help/sites-cloud/authoring/page-editor/style-system.md), um zwei Stile einzurichten, die von einer Inhaltsautorin bzw. einem Inhaltsautor aktiviert bzw. deaktiviert werden können. [Entwickeln mit dem Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=de) umfasst detaillierte Schritte und Informationen dazu, wie Sie dabei vorgehen.
 
 ![Bonusaufgabe – Stilsystem](../assets/style-cif-component/bonus-challenge.png)
 

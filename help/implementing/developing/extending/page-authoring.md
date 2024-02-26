@@ -2,7 +2,7 @@
 title: Anpassen der Seitenbearbeitung
 description: Erfahren Sie mehr über die Mechanismen, die AEM as a Cloud Service bietet, um die Seitenbearbeitungsfunktionen anzupassen.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 98%
@@ -36,7 +36,7 @@ Weitere Informationen zu Überlagerungen finden Sie unter [Überlagerungen für 
 
 ## Neue Ebene hinzufügen (Modus) {#add-new-layer-mode}
 
-Beim Bearbeiten einer Seite sind verschiedene [Modi](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) verfügbar. Diese Modi werden mithilfe von [Ebenen](/help/implementing/developing/introduction/ui-structure.md#layer) implementiert. Diese ermöglichen den Zugriff auf verschiedene Funktionstypen für denselben Seiteninhalt. Zu den standardmäßigen AEM-Modi gehören Bearbeiten, Layout, Entwickler, Timewarp, Live Copy-Status und Targeting.
+Beim Bearbeiten einer Seite sind verschiedene [Modi](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes) verfügbar. Diese Modi werden mithilfe von [Ebenen](/help/implementing/developing/introduction/ui-structure.md#layer) implementiert. Diese ermöglichen den Zugriff auf verschiedene Funktionstypen für denselben Seiteninhalt. Zu den standardmäßigen AEM-Modi gehören Bearbeiten, Layout, Entwickler, Timewarp, Live Copy-Status und Targeting.
 
 ### Ebenenbeispiel: Live Copy-Status {#layer-example-live-copy-status}
 

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die Frontend-Pipeline für vorhandene Sites a
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 98%
+source-wordcount: '554'
+ht-degree: 100%
 
 ---
 
@@ -50,8 +50,8 @@ AEM kann Ihre vorhandene Site automatisch an die Frontend-Pipeline anpassen. Um 
 Die Aktivierung Ihrer Site erfolgt über die Sites-Konsole unter Verwendung der [Site-Leiste](site-rail.md).
 
 1. Melden Sie sich bei AEM an und gehen Sie über **Globale Navigation** > **Sites** zu Ihrer Site.
-1. Wählen Sie Ihre Site in der Konsole aus. Wählen Sie den Stamm der Site und keine untergeordneten Seiten aus.
-1. Wenn Ihre Site ausgewählt ist, öffnen Sie die [Leistenauswahl](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) auf der linken Seite und wählen Sie **Site**.
+1. Wählen Sie Ihre Site in der Konsole aus. Wählen Sie den Stamm der Site aus, keine untergeordneten Seiten.
+1. Wenn Ihre Site ausgewählt ist, öffnen Sie die [Leistenauswahl](/help/sites-cloud/authoring/basic-handling.md#rail-selector) auf der linken Seite und wählen Sie **Site**.
 1. Klicken Sie in der Leiste **Site** auf die Schaltfläche **Frontend-Pipeline aktivieren**.
 
    ![Frontend-Pipeline aktivieren](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)

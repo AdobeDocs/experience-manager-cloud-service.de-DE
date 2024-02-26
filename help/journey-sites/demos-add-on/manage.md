@@ -2,10 +2,10 @@
 title: Verwalten Ihrer Demo-Sites
 description: Erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihrer Demo-Sites helfen, und wie Sie diese entfernen können.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 89%
+source-wordcount: '927'
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ In diesem Dokument erfahren Sie, wie Sie die von Ihnen erstellten Demo-Sites ver
 
 Da Sie nun über eigene Demo-Sites verfügen, möchten Sie wahrscheinlich wissen, wie Sie diese verwalten können. Die Pipeline hat nicht nur die Site-Vorlagen bereitgestellt, um Ihnen Inhalte für die Demo-Sites zur Verfügung zu stellen, sondern auch eine Reihe von Dienstprogrammen zur Verwaltung dieser Sites bereitgestellt.
 
-1. Wählen Sie in der AEM globalen Navigationsleiste die Option **Instrumente** > **Referenz-Demos** > **Referenz Demo Utilities**.
+1. Wählen Sie in der globalen AEM-Navigationsleiste **Tools** > **Referenzdemos** > **Referenzdemo-Dienstprogramme**.
 
    ![Demo-Dienstprogramme zur Selbstbedienung](assets/demo-utilities.png)
 
@@ -49,10 +49,10 @@ Da Sie nun über eigene Demo-Sites verfügen, möchten Sie wahrscheinlich wissen
 
    ![Dashboard](assets/dashboard.png)
 
-Self-Service Demo Utilities bietet mehrere Tools.
+Self-Service-Demo-Dienstprogramme bieten mehrere Tools.
 
-* **Löschen von Sites**: Wählen Sie die Site aus, die Sie in dieser Adobe Experience Manager-Instanz löschen möchten. Beachten Sie, dass es sich um eine destruktive Aktion handelt, die nicht rückgängig gemacht werden kann, sobald sie eingeleitet wurde.
-* **Löschen von Site-Vorlagen**: Wählen Sie die Site-Vorlage aus, die Sie in dieser Adobe Experience Manager-Instanz löschen möchten. Stellen Sie sicher, dass auch alle Sites, die auf die Vorlage verweisen, vor dem Löschen der Site-Vorlage gelöscht werden. Beachten Sie, dass es sich um eine destruktive Aktion handelt, die nicht rückgängig gemacht werden kann, sobald sie eingeleitet wurde.
+* **Löschen von Sites**: Wählen Sie die Site aus, die Sie in dieser Adobe Experience Manager-Instanz löschen möchten. Beachten Sie, dass es sich um eine destruktive Aktion handelt, die nach ihrer Einleitung nicht rückgängig gemacht werden kann.
+* **Löschen von Site-Vorlagen**: Wählen Sie die Site-Vorlage aus, die Sie in dieser Adobe Experience Manager-Instanz löschen möchten. Stellen Sie sicher, dass auch alle Sites, die auf die Vorlage verweisen, vor dem Löschen der Site-Vorlage gelöscht werden. Beachten Sie, dass es sich um eine destruktive Aktion handelt, die nach ihrer Einleitung nicht rückgängig gemacht werden kann.
 * **Grundlegender Autoren-Cache**: Dadurch werden mehrere Ressourcen innerhalb der Adobe Experience Manager-Instanz abgerufen, wodurch die Abrufzeiten verkürzt werden. Dies kann mehrere Sekunden dauern.
 * **Android-App**: Tools zum Installieren und Starten der Demo-App unter Android. Erstellen Sie eine Site basierend auf der **WKND Single Page App**, um diese Seite zu füllen. Verwendung von einem Android-Gerät, Emulator oder Bluestacks.
 * **Benutzereinstellungen**: Popup-Dialogfelder für Tutorial deaktivieren.
@@ -62,15 +62,15 @@ Self-Service Demo Utilities bietet mehrere Tools.
 
 Nachdem Sie eine Reihe von AEM-Funktionen getestet haben, benötigen Sie Ihre Demo-Site oder sogar die Vorlage, auf der sie basiert, möglicherweise nicht mehr. Es ist einfach, sowohl Demo-Sites als auch Site-Vorlagen zu löschen.
 
-1. Zugriff auf **Referenz Demo Utilities** und wählen **Sites löschen**.
+1. Greifen Sie auf **Referenzdemo-Dienstprogramme** zu und wählen Sie **Sites löschen** aus.
 
    ![Löschen von Sites](assets/delete-sites.png)
 
-1. Die verfügbaren Sites werden in einer Liste dargestellt. Markieren Sie die Website(s), die Sie löschen möchten, und wählen Sie **Löschen**.
+1. Die verfügbaren Sites werden in einer Liste dargestellt. Markieren Sie die Site oder Sites, die Sie löschen möchten, und wählen Sie **Löschen** aus.
 
    >[!CAUTION]
    >
-   >Das Löschen von Sites und Vorlagen ist eine destruktive Aktion und kann nicht rückgängig gemacht werden, sobald sie initiiert wurden.
+   >Das Löschen von Sites und Vorlagen ist eine destruktive Aktion und kann nach seiner Einleitung nicht rückgängig gemacht werden.
 
 1. Bestätigen Sie den Löschvorgang der Site im Dialogfeld.
 
@@ -93,7 +93,7 @@ Sie können Vorlagen auf die gleiche Weise wie unter der Überschrift **Löschen
 Herzlichen Glückwunsch! Sie haben die Tour zum AEM-Referenzdemo-Add-on abgeschlossen! Sie sollten jetzt:
 
 * Über grundlegende Kenntnisse zu Cloud Manager verfügen und verstehen, wie Pipelines Inhalte und Konfigurationen für AEM bereitstellen.
-* Erfahren Sie, wie Sie mit Cloud Manager ein Programm erstellen.
+* Verstehen, wie Sie mit Cloud Manager ein neues Programm erstellen können.
 * Wissen, wie Sie das Referenzdemo-Add-on für das neue Programm aktivieren und eine Pipeline zum Bereitstellen des Add-on-Inhalts bereitstellen können.
 * Wissen, wie Sie auf die AEM-Autorenumgebung zugreifen können, um eine auf einer Vorlage basierende Site zu erstellen.
 * Verstehen, wie man auf die Demo-Dienstprogramme zur Selbstbedienung zugreift.
@@ -105,7 +105,7 @@ Sie können jetzt die Funktionen von AEM mit Ihren eigenen Demo-Sites erkunden. 
 
 * [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=de): Wenn Sie an weiteren Details zu den Funktionen von Cloud Manager interessiert sind, sollten Sie sich die ausführlichen technischen Dokumente direkt ansehen.
 * [Site erstellen](/help/sites-cloud/administering/site-creation/create-site.md): Erfahren Sie, wie Sie AEM verwenden, um eine Site mithilfe von Site-Vorlagen zu erstellen, um den Stil und die Struktur Ihrer Site zu definieren.
-* [Seitenbenennungskonventionen in AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). Auf dieser Seite finden Sie die Konventionen zum Organisieren von AEM-Seiten.
-* [AEM – Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md): Lesen Sie sich dieses Dokument durch, wenn Sie noch nicht mit AEM vertraut sind, um grundlegende Konzepte wie z. B. die Navigation in der Konsole und ihre Organisation zu verstehen.
+* [Seitenbenennungskonventionen in AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices). Auf dieser Seite finden Sie die Konventionen zum Organisieren von AEM-Seiten.
+* [AEM – Grundlegende Handhabung](/help/sites-cloud/authoring/basic-handling.md): Lesen Sie sich dieses Dokument durch, wenn Sie noch nicht mit AEM vertraut sind, um grundlegende Konzepte wie z. B. die Navigation in der Konsole und ihre Organisation zu verstehen.
 * [Technische Dokumentation zu AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de): Wenn Sie bereits über ein solides Verständnis von AEM verfügen, sehen Sie sich die ausführlichen technischen Dokumente an.
 * [Site-Vorlagen](/help/sites-cloud/administering/site-creation/site-templates.md): Lesen Sie dieses Dokument, wenn Sie mehr über die Struktur von Site-Vorlagen und deren Verwendung zur Erstellung von Sites erfahren möchten.

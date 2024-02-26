@@ -2,10 +2,10 @@
 title: Erste Schritte mit der AEM Headless-Übersetzung
 description: Erfahren Sie, wie Sie Ihre Headless-Inhalte organisieren und wie AEM Übersetzungs-Tools funktionieren.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 93%
+source-wordcount: '1409'
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ In diesem Dokument erfahren Sie, wie Sie mit der Übersetzung von Headless-Inhal
 
 ## Anforderungen und Vorbedingungen {#requirements-prerequisites}
 
-Es gibt mehrere Voraussetzungen, bevor Sie mit der Übersetzung Ihrer Headless AEM-Inhalte beginnen.
+Bevor Sie mit der Übersetzung der Headless-AEM-Inhalte beginnen, müssen Sie verschiedene Anforderungen erfüllen.
 
 ### Kenntnisse {#knowledge}
 
@@ -44,7 +44,7 @@ Es gibt mehrere Voraussetzungen, bevor Sie mit der Übersetzung Ihrer Headless A
 
 >[!TIP]
 >
->Wenn Sie nicht mit der Verwendung eines umfangreichen CMS wie AEM vertraut sind, sollten Sie die Dokumentation [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) lesen, bevor Sie fortfahren. Die grundlegende Dokumentation der Handhabung ist nicht Teil der Tour. Kehren Sie daher nach Abschluss zu dieser Seite zurück.
+>Wenn Sie nicht mit der Verwendung eines umfangreichen CMS wie AEM vertraut sind, sollten Sie die Dokumentation [Grundlegende Handhabung](/help/sites-cloud/authoring/basic-handling.md) lesen, bevor Sie fortfahren. Die grundlegende Dokumentation der Handhabung ist nicht Teil der Tour. Kehren Sie daher nach Abschluss zu dieser Seite zurück.
 
 ### Tools {#tools}
 
@@ -85,11 +85,10 @@ Da die Inhaltsmodelle die Struktur Ihrer Inhalte definieren, müssen Sie wissen,
 1. Der **Inhaltsfragmentmodell-Editor** wird geöffnet.
    1. Die linke Spalte enthält die Felder des Modells. Diese Spalte interessiert uns.
    1. Die rechte Spalte enthält die Felder, die dem Modell hinzugefügt werden können. Diese Spalte können wir ignorieren.
-
       ![Inhaltsfragmentmodell-Editor](assets/content-fragment-model-editor.png)
 1. Wählen Sie eines der Felder des Modells aus. AEM markiert es und die Details dieses Felds werden in der rechten Spalte angezeigt.
    ![Details des Inhaltsfragmentmodell-Editors](assets/content-fragment-model-editor-detail.png)
-1. Der Inhaltsarchitekt aktiviert die **Übersetzbar** in jedem Feld des Inhaltsmodells, das übersetzt werden muss.
+1. Die Inhaltsarchitektin bzw. der Inhaltsarchitekt aktiviert das Feld **Übersetzbar** für jedes Feld des Inhaltsmodells, das übersetzt werden muss.
 
 >[!TIP]
 >
@@ -179,13 +178,13 @@ Nachdem Sie nun diesen Teil der Headless-Übersetzungs-Tour abgeschlossen haben,
 * verstehen, wie AEM Headless-Inhalte speichert.
 * mit den Übersetzungs-Tools von AEM vertraut sein.
 
-Auf diesen Erkenntnissen aufbauen und Ihre Journey-zur Headless-AEM-Übersetzung fortsetzen, indem Sie das Dokument erneut überprüfen. [Übersetzungsintegration konfigurieren](configure-connector.md) Hier erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.|
+Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Headless-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Konfigurieren der Übersetzungsintegration](configure-connector.md) lesen, in dem Sie lernen, wie Sie AEM mit einem Übersetzungsdienst verbinden.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
 Es wird zwar empfohlen, zum nächsten Teil der Headless-Übersetzungs-Tour voranzuschreiten, indem Sie das Dokument [Konfigurieren des Übersetzungs-Connectors](configure-connector.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Sie sind jedoch nicht erforderlich, um mit der Headless-Tour fortzufahren.
 
-* [Grundlegende Handhabung von AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md): Lernen Sie die Grundlagen der AEM-Benutzeroberfläche kennen, um bequem navigieren und wichtige Aufgaben wie das Auffinden von Inhalten ausführen zu können.
+* [Grundlegende Handhabung von AEM](/help/sites-cloud/authoring/basic-handling.md): Lernen Sie die Grundlagen der AEM-Benutzeroberfläche kennen, um bequem navigieren und wichtige Aufgaben wie das Auffinden von Inhalten ausführen zu können.
 * [Ermitteln von zu übersetzenden Inhalten](/help/sites-cloud/administering/translation/rules.md): Erfahren Sie, wie Übersetzungsregeln Inhalte ermitteln, die übersetzt werden müssen.
 * [Konfigurieren des Frameworks für die Übersetzungsintegration](/help/sites-cloud/administering/translation/integration-framework.md): Erfahren Sie, wie Sie das Translation Integration Framework (TIF) für die Integration mit Übersetzungs-Services von Drittanbietern konfigurieren.
 * [Verwalten von Übersetzungsprojekten](/help/sites-cloud/administering/translation/managing-projects.md): Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Übersetzungsprojekte in AEM erstellen und verwalten.
