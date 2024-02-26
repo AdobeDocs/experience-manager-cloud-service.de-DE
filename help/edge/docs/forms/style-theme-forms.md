@@ -4,9 +4,9 @@ description: Design und Stil für ein AEM Forms Edge Delivery Service-Formular a
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
+source-git-commit: 59ed012f10a20939c846c8fff088534c5638f3db
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Alle Formularfelder mit Ausnahme von Dropdown-Listen, Optionsfeldgruppen und Kon
 * Eingabe: Die `input` -Element definiert den Datentyp, der eingegeben werden soll. Zum Beispiel Text, Zahl, E-Mail.
 * Beschreibung (optional): Die `div` with class `field-description` stellt zusätzliche Informationen oder Anweisungen für den Benutzer bereit.
 
-**Beispiel**
+**Beispiel einer HTML-Struktur**
 
 ```HTML
 <div class="form-text-wrapper form-first-name field-wrapper" data-required="true">
@@ -99,7 +99,7 @@ Alle Formularfelder mit Ausnahme von Dropdown-Listen, Optionsfeldgruppen und Kon
 </div>
 ```
 
-#### CSS-Selektor für allgemeine Komponenten
+**CSS-Selektor für allgemeine Komponenten**
 
 ```CSS
 .form-{Type}-wrapper input {
@@ -121,7 +121,7 @@ Alle Formularfelder mit Ausnahme von Dropdown-Listen, Optionsfeldgruppen und Kon
 * `.form-{Type}-wrapper`: Targeting des äußeren `div` -Element basierend auf dem Feldtyp. Beispiel: `.form-text-wrapper` Alle Texteingabefelder werden als Ziel ausgewählt.
 * `.form-{Name}`: Wählt das Element weiter auf Grundlage des spezifischen Feldnamens aus. Beispiel: `.form-first-name` gibt das Textfeld &quot;Vorname&quot;als Ziel an.
 
-**Beispiel:**
+**Beispiel-CSS-Selektoren für allgemeine Komponenten**
 
 ```CSS
 /*Target all text input fields */
@@ -159,7 +159,7 @@ Bei Dropdown-Menüs wird die `select` -Element anstelle von `input` element:
 </div>
 ```
 
-**Beispiel**
+**HTML-Struktur**
 
 ```HTML
     <div class="form-drop-down-wrapper form-country field-wrapper" data-required="true">
@@ -173,7 +173,7 @@ Bei Dropdown-Menüs wird die `select` -Element anstelle von `input` element:
    </div>
 ```
 
-#### CSS-Selektoren für Dropdown-Komponenten
+#### Beispiel-CSS-Selektoren für Dropdown-Komponenten
 
 ```CSS
 /* Target the outer wrapper */
@@ -265,98 +265,95 @@ Bei Dropdown-Menüs wird die `select` -Element anstelle von `input` element:
 </div>
 ```
 
-#### CSS-Selektoren für Optionsfelder und Kontrollkästchengruppen
+**Beispiel-CSS-Selektoren für Optionsfelder und Kontrollkästchengruppen**
 
-**Targeting des äußeren Wrappers**
-
-
-```CSS
-   /* Targets all radio group wrappers */
-.form-radio-group-wrapper {
-  margin-bottom: 20px; /* Adds space between radio groups */
-}
-
-/* Targets all checkbox group wrappers */
-.form-checkbox-group-wrapper {
-  margin-bottom: 20px; /* Adds space between checkbox groups */
-}
-```
-
-Diese Selektoren richten sich an die äußersten Container von Optionsfeld- und Kontrollkästchengruppen, sodass Sie allgemeine Stile auf die gesamte Gruppenstruktur anwenden können. Dies ist nützlich zum Festlegen von Abstand, Ausrichtung oder anderen layoutbezogenen Eigenschaften.
-
-**Bezeichnungen von Zielgruppen**
-
-```CSS
-.form-radio-group-wrapper .field-label,
-.form-checkbox-group-wrapper .field-label {
- font-weight: bold; /* Makes the group label bold */
-}
-```
-
-Diese Auswahl dient als Ziel für die `.field-label` -Element sowohl in Optionsfeld- als auch in Kontrollkästchen-Gruppenwrappern. Dadurch können Sie die Beschriftungen speziell für diese Gruppen gestalten und sie möglicherweise auffälliger gestalten.
-
-**Targeting einzelner Eingaben und Beschriftungen**
-
-```CSS
-/* Styling radio buttons */
-.form-radio-group-wrapper input[type="radio"] {
-  margin-right: 5px; /* Adds space between the input and its label */
-} 
-
-/* Styling radio button labels */
-.form-radio-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
-}
-
-/* Styling checkboxes */
-.form-checkbox-group-wrapper input[type="checkbox"] {
-  margin-right: 5px;  /* Adds space between the input and its label */ 
-}
-
-/* Styling checkbox labels */
-.form-checkbox-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
-}
-```
-
-Diese Selektoren bieten eine detailliertere Steuerung einzelner Optionsfelder, Kontrollkästchen und der zugehörigen Beschriftungen. Sie können diese verwenden, um Größenangaben, Abstände oder spezifischere visuelle Stile anzupassen.
+* Targeting des äußeren Wrapper: Diese Selektoren richten sich an die äußersten Container von Optionsfeld- und Kontrollkästchengruppen, sodass Sie allgemeine Stile auf die gesamte Gruppenstruktur anwenden können. Dies ist nützlich zum Festlegen von Abstand, Ausrichtung oder anderen layoutbezogenen Eigenschaften.
 
 
-**Anpassen der Darstellung von Optionsfeldern und Kontrollkästchen**
-
-```CSS
-/* Hide the default radio button or checkbox */
-.form-radio-group-wrapper input[type="radio"],
-.form-checkbox-group-wrapper input[type="checkbox"] {
-  opacity: 0; 
-  position: absolute; 
-}
-
-/* Create a custom radio button */
-.form-radio-group-wrapper input[type="radio"] + label::before { 
-  content: "";
-  display: inline-block;
-  width: 16px; 
-  height: 16px; 
-  border: 2px solid #ccc; 
-  border-radius: 50%;
-  margin-right: 5px;
-}
-
-.form-radio-group-wrapper input[type="radio"]:checked + label::before {
-  background-color: #007bff; 
-}
-
-/* Create a custom checkbox */
-/* Similar styling as above, with adjustments for a square shape */
-```
-
-Diese Technik blendet die Standardeingabe aus und verwendet :before und :after Pseudoelemente, um benutzerdefinierte Visuals zu erstellen, die das Erscheinungsbild basierend auf dem Status &quot;aktiviert&quot;ändern.
+  ```CSS
+     /* Targets all radio group wrappers */
+  .form-radio-group-wrapper {
+    margin-bottom: 20px; /* Adds space between radio groups */
+  }
+  
+  /* Targets all checkbox group wrappers */
+  .form-checkbox-group-wrapper {
+    margin-bottom: 20px; /* Adds space between checkbox groups */
+  }
+  ```
 
 
-## Stilfelder
+* Bezeichnungen der Zielgruppe: Diese Auswahl dient der `.field-label` -Element sowohl in Optionsfeld- als auch in Kontrollkästchen-Gruppenwrappern. Dadurch können Sie die Beschriftungen speziell für diese Gruppen gestalten und sie möglicherweise auffälliger gestalten.
 
-Zusätzlich zu den zuvor erläuterten allgemeinen Stiltechniken können Sie Formularfelder auch nach dem jeweiligen Typ oder nach einzelnen Namen formatieren. Dies ermöglicht eine präzisere Steuerung und Anpassung des Erscheinungsbilds Ihres Formulars.
+  ```CSS
+  .form-radio-group-wrapper .field-label,
+  .form-checkbox-group-wrapper .field-label {
+   font-weight: bold; /* Makes the group label bold */
+  }
+  ```
+
+
+
+* Targeting einzelner Eingaben und Beschriftungen: Diese Selektoren bieten eine granularere Kontrolle über einzelne Optionsfelder, Kontrollkästchen und die zugehörigen Beschriftungen. Sie können diese verwenden, um Größenangaben, Abstände oder spezifischere visuelle Stile anzupassen.
+
+  ```CSS
+  /* Styling radio buttons */
+  .form-radio-group-wrapper input[type="radio"] {
+    margin-right: 5px; /* Adds space between the input and its   label */
+  } 
+  
+  /* Styling radio button labels */
+  .form-radio-group-wrapper label {
+    font-size: 15px; /* Changes the label font size */
+  }
+  
+  /* Styling checkboxes */
+  .form-checkbox-group-wrapper input[type="checkbox"] {
+    margin-right: 5px;  /* Adds space between the input and its  label */ 
+  }
+  
+  /* Styling checkbox labels */
+  .form-checkbox-group-wrapper label {
+    font-size: 15px; /* Changes the label font size */
+  }
+  ```
+
+
+
+
+* Anpassen des Erscheinungsbilds von Optionsfeldern und Kontrollkästchen: Diese Methode blendet die Standardeingabe aus und verwendet :before und :after Pseudo-Elemente, um benutzerdefinierte Visualisierungen zu erstellen, die das Erscheinungsbild basierend auf dem Status &quot;aktiviert&quot;ändern.
+
+  ```CSS
+  /* Hide the default radio button or checkbox */
+  .form-radio-group-wrapper input[type="radio"],
+  .form-checkbox-group-wrapper input[type="checkbox"] {
+    opacity: 0; 
+    position: absolute; 
+  }
+  
+  /* Create a custom radio button */
+  .form-radio-group-wrapper input[type="radio"] + label::before { 
+    content: "";
+    display: inline-block;
+    width: 16px; 
+    height: 16px; 
+    border: 2px solid #ccc; 
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .form-radio-group-wrapper input[type="radio"]:checked +  label::before {
+    background-color: #007bff; 
+  }
+  
+  /* Create a custom checkbox */
+  /* Similar styling as above, with adjustments for a square shape  */
+  ```
+
+
+## Formatieren von Komponenten
+
+Sie können Formularfelder auch nach dem jeweiligen Typ oder nach einzelnen Namen formatieren. Dies ermöglicht eine präzisere Steuerung und Anpassung des Erscheinungsbilds Ihres Formulars.
 
 ### Formatierung basierend auf Feldtyp
 
@@ -388,7 +385,7 @@ Sie können CSS-Selektoren verwenden, um bestimmte Feldtypen als Ziel auszuwähl
 * Die `data-required` -Attribut gibt an, ob das Feld erforderlich oder optional ist.
 * Jedes Feld verfügt über eine entsprechende Beschriftung, ein Eingabeelement und potenzielle zusätzliche Elemente wie Platzhalter und Beschreibungen.
 
-Zum Beispiel:
+**Beispiel-CSS-Selektoren**
 
 ```CSS
 /* Target all text input fields */
@@ -403,7 +400,7 @@ Zum Beispiel:
 }
 ```
 
-### Formatieren bestimmter Feldtypen
+### Formatierung basierend auf Feldnamen
 
 Sie können auch einzelne Felder nach Namen ausrichten, um eindeutige Stile anzuwenden.
 
@@ -416,7 +413,7 @@ Sie können auch einzelne Felder nach Namen ausrichten, um eindeutige Stile anzu
 </div>
 ```
 
-**CSS-Selektor**
+**Beispiel-CSS-Selektor**
 
 ```CSS
 .form-otp input {
@@ -424,6 +421,6 @@ Sie können auch einzelne Felder nach Namen ausrichten, um eindeutige Stile anzu
 }
 ```
 
-* Selektor: Diese CSS-Datei enthält alle Eingabeelemente, die sich in einem Element mit der Klasse befinden `form-otp`. Ihre HTML-Struktur folgt den Konventionen des Formularblocks. Dies bedeutet, dass ein Container mit der Klasse &quot;form-otp&quot;markiert ist, der das Feld mit dem Namen &quot;otp&quot;enthält.
+Diese CSS-Datei enthält alle Eingabeelemente, die sich in einem Element befinden, das über die Klasse verfügt `form-otp`. Die HTML-Struktur Ihres Formulars entspricht den Konventionen des Formularblocks. Dies bedeutet, dass ein Container mit der Klasse &quot;form-otp&quot;markiert ist, der das Feld mit dem Namen &quot;otp&quot;enthält.
 
-* Eigenschaft und Wert: Der Code wird angewendet `letter-spacing: 2px`. Diese CSS-Eigenschaft steuert den Abstand zwischen einzelnen Buchstaben im Textinhalt des Eingabefelds.
+
