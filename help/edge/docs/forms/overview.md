@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service wurde für optimale Leistung entwic
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
+source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '422'
 ht-degree: 1%
 
 ---
@@ -20,19 +20,14 @@ AEM Forms Edge Delivery Service ist ein von Adobe angebotener zusammenstellbarer
 
 * **Erstellen von Formularen mit perfektem Leuchtturm-Ergebnis**: Erstellen Sie Formulare, die schnell geladen und gerendert werden, selbst bei langsamen Internetverbindungen. Schnellere Ladezeiten und optimiertes Benutzererlebnis tragen zu höheren Formularabschlussraten und verbesserten Konversionsraten bei.
 
-* **Vereinfachen Sie Authoring und Übermittlung**: Erstellen Sie Formulare mit vertrauten Tools wie Microsoft Excel oder Google Tabellen anstelle der herkömmlichen Authoring-Umgebungen. Senden Sie Formulare direkt an Ihre Microsoft Excel- oder Google Tabellen und verwenden Sie ihr Ökosystem, um die übermittelten Daten einfach zu verarbeiten.
+* **Vereinfachen Sie Authoring und Übermittlung**: Nutzen Sie Authoring-Tools, mit denen Sie sich auskennen, wie z. B. Microsoft Excel oder Google Tabellen (Dokumentenbasiertes Authoring), JSON-Dateien (Headless Authoring) oder Adaptive Forms Editor (WYSIWYG Authoring), um Formulare zu entwerfen und zu erstellen. Der Dienst ist von der Inhaltsquelle entkoppelt und bietet die Flexibilität bei der Inhaltserstellung, indem Sie Ihre bevorzugten Authoring-Tools verwenden können.
 
+  ![Bearbeitungswerkzeuge für Edge-Formulare](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-Dieser zusammenstellbare Dienst ist von der Inhaltsquelle entkoppelt und bietet die Flexibilität bei der Inhaltserstellung, indem er es Benutzern ermöglicht, ihre bevorzugten Authoring-Tools zu verwenden.
-
-![Bearbeitungswerkzeuge für Edge-Formulare](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
-
-Autoren von Inhalten können Tools nutzen, mit denen sie vertraut sind, z. B. Microsoft Excel oder Google Tabellen (Dokumentenbasiertes Authoring), JSON-Dateien (Headless Authoring) oder AEM Forms Adaptive Forms Editor (WYSIWYG Authoring), um Formulare zu entwerfen und zu erstellen.
-
->[!NOTE]
->
->
-> Die WYSIWYG-Authoring-Funktion ist im Rahmen des Programms für frühe Anwender verfügbar. Sie können von Ihrer offiziellen E-Mail-ID aus an aem-forms-early-adopter-program@adobe.com schreiben, um dem frühen Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern.
+  >[!NOTE]
+  >
+  >
+  > Die WYSIWYG-Authoring-Funktion ist im Rahmen des Programms für frühe Anwender verfügbar. Sie können von Ihrer offiziellen E-Mail-ID aus an aem-forms-early-adopter-program@adobe.com schreiben, um dem frühen Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern.
 
 ## Erste Schritte mit den Grundlagen
 
