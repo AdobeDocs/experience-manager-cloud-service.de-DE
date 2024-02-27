@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 87552743ef13d122864a676637138f72f87d8500
+source-git-commit: 784cf3600cec4f0bde72e6a1e491095f56d5e5b3
 workflow-type: tm+mt
-source-wordcount: '4721'
+source-wordcount: '4730'
 ht-degree: 93%
 
 ---
@@ -723,6 +723,7 @@ ht-degree: 93%
       + [Verwenden von Screens Content Provider](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [Erstellen von Screens-Video-Ausgabedarstellungen](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
       + [Konfigurieren des Dispatchers für Screens as a Cloud Service](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
+      + [Konfigurieren von Timeline-Ansichten für Screens as a Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
    + Erstellen von Inhalten {#create-content}
       + [Erstellen und Verwalten eines Projekts in Screens Content Provider](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [Erstellen und Verwalten eines Kanals in Screens Content Provider](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
