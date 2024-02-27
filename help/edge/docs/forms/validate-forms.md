@@ -4,15 +4,29 @@ description: Erstellen Sie leistungsstarke Formulare schneller mit Tabellen und 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 2%
+source-wordcount: '262'
+ht-degree: 0%
 
 ---
 
 
-# Formularblock-Feldvalidierungen für den AEM Forms Edge-Bereitstellungsdienst verwalten
+# Hinzufügen von Überprüfungen zu Formularfeldern
+
+Der Formularblock verfügt über integrierte Validierungsfunktionen. Diese Validierungen werden in modernen Browsern basierend auf dem ausgewählten Feldtyp und den von Ihnen bereitgestellten zusätzlichen Eigenschaften automatisch angewendet.
+
+## Typen und Validierung von Feldern
+
+Der Formularblock unterstützt eine Vielzahl von [HTML-5-Eingabetypen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), einschließlich Text, E-Mail, Zahl, Datum und mehr. Es wird auch berücksichtigt [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), Auswahl und Feldsatz sowie umfassende Eingabedokumentvalidierungsfunktionen, die mit HTML-5 verbunden sind.
+
+verwendet HTML-Feldtypen, um die Art der Daten zu definieren, die ein Benutzer eingeben kann. Verschiedene Feldtypen verfügen über unterschiedliche integrierte Validierungsregeln:
+
+E-Mail: Dieser Feldtyp validiert automatisch die Benutzereingabe anhand eines allgemeinen Formats für E-Mail-Adressen. Benutzern, die eine ungültige E-Mail eingeben, wird eine Fehlermeldung angezeigt.
+Zahl: Dieser Feldtyp erlaubt nur numerische Eingaben. Benutzer, die nicht-numerische Zeichen eingeben, erhalten einen Fehler.
+Datum: Dieser Feldtyp validiert die Benutzereingabe anhand eines Standarddatumsformats. Daten, die außerhalb eines angemessenen Bereichs liegen, werden möglicherweise auch als ungültig gekennzeichnet.
+URL: Dieser Feldtyp validiert die Benutzereingabe anhand eines gültigen URL-Formats. Benutzern, die eine ungültige URL eingeben, wird eine Fehlermeldung angezeigt.
+Tel: Dieser Feldtyp wurde speziell für Telefonnummern entwickelt und kann die Überprüfung der Trigger auf der Grundlage bestimmter Länderformate (nicht allgemein unterstützt) ermöglichen.
 
 
 ## Mehr anzeigen
