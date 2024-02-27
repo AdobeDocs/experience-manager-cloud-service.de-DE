@@ -2,9 +2,9 @@
 title: Methoden zum Erstellen von Inhalten in AEM
 description: Erfahren Sie mehr über die verschiedenen Möglichkeiten, Inhalte in AEM zu erstellen, und wie sie sich unterscheiden.
 feature: Authoring
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: 85b99fc0b0eb20b24f27d06159a52d4339a3c962
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -43,9 +43,15 @@ Der AEM Inhaltsfragment-Editor ist der Editor der Wahl für die Erstellung von H
 
 ![Der AEM Inhaltsfragment-Editor](assets/authoring-methods-cf-editor.png)
 
-Der AEM Inhaltsfragment-Editor stellt eine klare Benutzeroberfläche zum Erstellen und Verwalten von strukturierten Inhalten bereit, die sich ideal für die Headless-Bereitstellung eignet.
+Der AEM Inhaltsfragment-Editor bietet eine klare Benutzeroberfläche zum Erstellen und Verwalten von strukturierten Inhalten, die sich ideal für die Headless-Bereitstellung eignet.
 
-Weitere Informationen zum AEM Inhaltsfragment-Editor finden Sie im Dokument . [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md)
+Weitere Informationen zum AEM Inhaltsfragment-Editor finden Sie in den Dokumenten . [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md) und [Erstellen von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md).
+
+>[!NOTE]
+>
+>Die *new* Der in diesem Abschnitt hervorgehobene Editor ist nur in der Online-Adobe Experience Manager (AEM) as a Cloud Service verfügbar.
+>
+>Die [*original* Inhaltsfragmente-Editor](/help/assets/content-fragments/content-fragments-variations.md) ist auch verfügbar.
 
 ## Universeller Editor {#universal-editor}
 
