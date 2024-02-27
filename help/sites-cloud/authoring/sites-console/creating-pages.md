@@ -1,10 +1,10 @@
 ---
 title: Erstellen von Seiten
 description: Erfahren Sie, wie Sie mithilfe der Sites-Konsole neue Seiten für Ihre Website erstellen.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 0ba8faaa14d09d09fce5846bfff77287bfbd94c7
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 84%
+source-wordcount: '461'
+ht-degree: 40%
 
 ---
 
@@ -21,7 +21,7 @@ Erfahren Sie, wie Sie mit der **Sites** Konsole.
 
 Ihr Konto muss über die entsprechenden Zugriffsrechte und Berechtigungen verfügen, um Seiten erstellen zu können.
 
-Wenn Sie auf Probleme stoßen, empfehlen wir Ihnen, sich an die Systemadmins zu wenden.
+Wenden Sie sich bei Problemen an Ihren Systemadministrator.
 
 ## Erstellen einer neuen Seite {#creating-a-new-page}
 
@@ -35,7 +35,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
 
 1. Im ersten Schritt des Assistenten haben Sie folgende Möglichkeiten:
 
-   * Wählen Sie die Vorlage, die Sie zum Erstellen der neuen Seite verwenden möchten, und wählen Sie **Weiter**, um fortzufahren.
+   * Wählen Sie die Vorlage aus, die Sie zum Erstellen der neuen Seite verwenden möchten, und wählen Sie dann **Nächste** um fortzufahren.
 
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
 
@@ -57,7 +57,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
 
       * Mit diesem Wert wird der URI generiert. Wenn kein Name angegeben ist, wird der Name vom Titel abgeleitet.
       * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den Konventionen](/help/implementing/developing/introduction/naming-conventions.md) von AEM und JCR.
-      * Die **Eingabe von ungültigen Zeichen** im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die auf zu entfernende/ersetzende Zeichen verweist.
+      * Die **Eingabe von ungültigen Zeichen** im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld hervorgehoben und eine erläuternde Meldung angezeigt, die die Zeichen angibt, die entfernt/ersetzt werden müssen.
 
    >[!TIP]
    >
@@ -67,18 +67,22 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
 
    ![Angeben des Seitentitels](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
-1. Verwenden Sie **Erstellen**, um den Vorgang abzuschließen und die neue Seite zu erstellen. Im Bestätigungs-Dialogfeld werden Sie gefragt, ob Sie die Seite sofort **öffnen** oder zur Konsole zurückkehren möchten (**Fertig**):
+1. Tippen oder klicken **Erstellen** , um den Prozess abzuschließen und Ihre neue Seite zu erstellen. Im Bestätigungsdialogfeld werden Sie gefragt, ob Sie **Öffnen** die Seite sofort öffnen oder zur Konsole zurückkehren (**Fertig**). Wählen Sie einen aus, um den Seitenerstellungsprozess zu beenden.
 
    ![Erfolgreiche Seitenerstellung](/help/sites-cloud/authoring/assets/organizing-create-page-success.png)
 
-   >[!NOTE]
-   >
-   >Wenn Sie eine Seite erstellen und dabei einen in diesem Verzeichnis bereits vorhandenen Namen verwenden, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `beach` bereits vorhanden ist, wird eine neue Seite `beach1` genannt.
+   * Wenn Sie **Öffnen**, die **Sites** -Konsole öffnet den entsprechenden Editor basierend auf der Vorlage der neuen Seite, entweder:
+      * [im Seiten-Editor](/help/sites-cloud/authoring/page-editor/introduction.md)
+      * [Der Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-1. Wenn Sie zur Konsole zurückkehren, wird die neue Seite angezeigt:
+Wenn Sie zur Konsole zurückkehren, wird Ihre neue Seite angezeigt:
 
-   ![Neu erstellte Seite](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
+![Neu erstellte Seite](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
+
+>[!NOTE]
+>
+>Wenn Sie eine Seite mit einem Namen erstellen, der bereits an derselben Stelle vorhanden ist, AEM die Seite mit einer Variation des Namens erstellen, die durch Anhängen einer Zahl angegeben wird. Wenn beispielsweise `beach` bereits vorhanden ist, wird die neue Seite `beach1`.
 
 >[!CAUTION]
 >
->Nachdem eine Seite erstellt wurde, kann ihre Vorlage nicht mehr geändert werden – es sei denn, Sie [erstellen einen Launch mit einer neuen Vorlage](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), wobei aber der gesamte bereits vorhandene Inhalt verloren geht.
+>Nachdem eine Seite erstellt wurde, kann ihre Vorlage nur geändert werden, wenn Sie [Launch mit einer neuen Vorlage erstellen](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), wobei jedoch alle vorhandenen Inhalte verloren gehen.

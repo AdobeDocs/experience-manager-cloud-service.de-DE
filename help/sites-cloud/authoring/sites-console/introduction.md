@@ -1,10 +1,10 @@
 ---
 title: Die Sites-Konsole
 description: Erfahren Sie, wie Sie mit der Sites-Konsole Ihre AEM verwalten und organisieren können.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 50%
+source-wordcount: '1628'
+ht-degree: 49%
 
 ---
 
@@ -231,16 +231,18 @@ Bei jeder Auswahl einer Ressource können Sie verschiedene Aktionen für das aus
 
 Die Aktionssymbolleiste wird nur angezeigt, wenn eine Ressource in der Konsole ausgewählt ist. Die in der Aktionssymbolleiste verfügbare Aktion ändert sich entsprechend den Aktionen, die Sie für die ausgewählten Elemente ausführen können. Die häufigsten Aktionen sind:
 
-* [Erstellen](#create-action) - Erstellen neuer Inhalte oder inhaltsbezogener Aktionen
-* [Bearbeiten](/help/sites-cloud/authoring/page-editor/introduction.md) - Seite bearbeiten
-* [Eigenschaften](/help/sites-cloud/authoring/sites-console/page-properties.md) - Öffnet das Fenster &quot;Seiteneigenschaften&quot;.
-* [Sperren](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Sperren einer Seite, um zu verhindern, dass andere sie ändern
-* [Kopieren](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Eine Seite kopieren
-* [Verschieben](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Verschieben oder Umbenennen einer Seite
-* [Quick Publish](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Sofortiges Veröffentlichen von Seiten
-* [Veröffentlichung verwalten](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Eine oder mehrere Seiten für die Veröffentlichung planen
-* [Wiederherstellen](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Wiederherstellen einer Version einer Seite oder eines Seitenbaums
-* [Löschen](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Löschen von Seiten
+* [**Erstellen**](#create-action) - Erstellen neuer Inhalte oder inhaltsbezogener Aktionen
+* **Bearbeiten** - Je nachdem, wie die ausgewählte Seite erstellt wurde, wird die **Bearbeiten** -Aktion öffnet den entsprechenden Editor.
+   * [Seiten-Editor](/help/sites-cloud/authoring/page-editor/introduction.md) - Für Seiten, die mit dem AEM Seiten-Editor erstellt wurden
+   * [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) - Für mit dem Universal Editor erstellte Seiten
+* [**Eigenschaften**](/help/sites-cloud/authoring/sites-console/page-properties.md) - Öffnet das Fenster &quot;Seiteneigenschaften&quot;.
+* [**Sperren**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Sperren einer Seite, um zu verhindern, dass andere sie ändern
+* [**Kopieren**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Eine Seite kopieren
+* [**Verschieben**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Verschieben oder Umbenennen einer Seite
+* [**Quick Publish**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Sofortiges Veröffentlichen von Seiten
+* [**Veröffentlichung verwalten**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Eine oder mehrere Seiten für die Veröffentlichung planen
+* [**Wiederherstellen**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Wiederherstellen einer Version einer Seite oder eines Seitenbaums
+* [**Löschen**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Löschen von Seiten
 
 Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbolleiste schnell länger als der verfügbare Platz werden. In diesem Fall werden weitere Optionen angezeigt. Klicken oder tippen Sie auf die Auslassungspunkte (die drei Punkte oder **...**) öffnet eine Dropdown-Auswahl, die alle verbleibenden Aktionen enthält.
 
@@ -248,13 +250,13 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 
 ### Aktion erstellen {#create-action}
 
-Die Aktion &quot;Erstellen&quot;bietet ähnliche Optionen wie die Schaltfläche &quot;Symbolleiste erstellen&quot;zum Erstellen neuer Seiten und ähnlicher Elemente.
+Die Erstellungsaktion bietet ähnliche Optionen wie die [**Erstellen** Symbolleistenschaltfläche](#create-button) zum Erstellen neuer Seiten und ähnlicher Elemente.
 
 Darüber hinaus bietet es die Möglichkeit, seitenbezogene Aktionen zu erstellen.
 
-* [Workflow](/help/sites-cloud/authoring/workflows/overview.md) - Anwenden eines Workflows auf eine Seite
-* [Version](/help/sites-cloud/authoring/sites-console/page-versions.md) - Erstellen einer Seitenversion
+* [**Workflow**](/help/sites-cloud/authoring/workflows/overview.md) - Anwenden eines Workflows auf eine Seite
+* [**Version**](/help/sites-cloud/authoring/sites-console/page-versions.md) - Erstellen einer Seitenversion
 
 ## Vorlagen
 
-Durch Auswählen der Seite in der [Spaltenansicht](/help/sites-cloud/authoring/basic-handling.md#column-view) oder [Listenansicht](/help/sites-cloud/authoring/basic-handling.md#list-view) können Sie schnell und einfach feststellen, auf welcher Vorlage die Seite basiert.
+Durch Auswählen der Seite in der [**Spaltenansicht**](/help/sites-cloud/authoring/basic-handling.md#column-view) oder [**Listenansicht**](/help/sites-cloud/authoring/basic-handling.md#list-view) können Sie schnell und einfach feststellen, auf welcher Vorlage die Seite basiert.

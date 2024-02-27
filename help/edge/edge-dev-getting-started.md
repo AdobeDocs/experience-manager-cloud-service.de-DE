@@ -2,7 +2,7 @@
 title: Erste Schritte für Entwickler für AEM Authoring mit Edge Delivery Services
 description: In diesem Handbuch erfahren Sie, wie Sie mit einer neuen Adobe Experience Manager-Site arbeiten, die Edge Delivery Services und den universellen Editor für die Inhaltserstellung verwendet
 feature: Edge Delivery Services
-source-git-commit: 224cfe9853e8974c33b0e53e961a02d54f875a35
+source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 0%
@@ -141,7 +141,7 @@ Nachdem Sie nun über ein GitHub-Projekt verfügen, müssen Sie eine neue AEM-Si
 
    ![Universal Editor](assets/edge-dev-getting-started/universal-editor.png)
 
-Sie können Ihre Site jetzt mit dem universellen Editor bearbeiten. Siehe [Dokumentation zum universellen Editor](/help/implementing/universal-editor/authoring.md) für weitere Informationen.
+Sie können Ihre Site jetzt mit dem universellen Editor bearbeiten. Siehe [Dokumentation zum universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) für weitere Informationen.
 
 ### Veröffentlichen Ihrer neuen Site {#publishing}
 

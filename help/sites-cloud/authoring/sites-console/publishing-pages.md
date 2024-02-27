@@ -2,10 +2,10 @@
 title: Veröffentlichen von Seiten
 description: Erfahren Sie, wie Sie Ihre Seiten mithilfe verschiedener Mechanismen in AEM veröffentlichen oder Ihre Veröffentlichung rückgängig machen können.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 93%
+source-wordcount: '1936'
+ht-degree: 90%
 
 ---
 
@@ -39,8 +39,9 @@ Bei der Arbeit mit Adobe Experience Manager (AEM) as a Cloud Service können Sie
 
 Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen folgendermaßen vornehmen:
 
-* [Im Seiten-Editor](#publishing-from-the-editor)
-* [In der Sites-Konsole](#publishing-from-the-console)
+* [Im Seiten-Editor](#publishing-from-the-page-editor)
+* [Aus dem ](#publishing-from-the-sites-console)
+* [Im universellen Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
 >[!NOTE]
 >
@@ -62,9 +63,9 @@ Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen fo
 >
 > Weitere Möglichkeiten finden Sie unter **Einschaltzeit** und **Ausschaltzeit** auf der [Registerkarte „Allgemein“ der Seiteneigenschaften](/help/sites-cloud/authoring/sites-console/page-properties.md#basic).
 
-### Veröffentlichungen im Editor {#publishing-from-the-editor}
+### Veröffentlichen im Seiten-Editor {#publishing-from-the-page-editor}
 
-Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden.
+Wenn Sie eine Seite im [Seiteneditor,](/help/sites-cloud/authoring/page-editor/introduction.md) Sie kann direkt im Editor veröffentlicht werden.
 
 1. Wählen Sie das Symbol **Seiteninformationen** aus, um das Menü zu öffnen, und danach die Option **Seite veröffentlichen**.
 
@@ -89,15 +90,15 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
 
 >[!NOTE]
 >
->Mit dem Editor kann nur eine teilweise Veröffentlichung vorgenommen werden, d. h. nur die ausgewählten Seiten werden veröffentlicht, aber keine untergeordneten Seiten.
+>Das Veröffentlichen über den Seiteneditor ist eine flache Veröffentlichung, d. h. nur die ausgewählten Seiten werden veröffentlicht und untergeordnete Seiten werden nicht veröffentlicht.
 
 >[!NOTE]
 >
 >Seiten, auf die im Editor über [Aliasnamen](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) zugegriffen wird, können nicht veröffentlicht werden. Veröffentlichungsoptionen im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
 
-### Veröffentlichungen über die Konsole {#publishing-from-the-console}
+### Veröffentlichen über die Site-Konsole {#publishing-from-the-sites-console}
 
-In der Sites-Konsole gibt es zwei Möglichkeiten zur Veröffentlichung:
+Im **Sites** Console gibt es zwei Optionen für die Veröffentlichung:
 
 * [Quick Publish](#quick-publish)
 * [Veröffentlichung verwalten](#manage-publication)

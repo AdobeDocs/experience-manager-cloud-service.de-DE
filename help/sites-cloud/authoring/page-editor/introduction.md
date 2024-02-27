@@ -1,17 +1,21 @@
 ---
 title: Der AEM Seiteneditor
 description: Der AEM-Seiteneditor ist ein leistungsstarkes Tool für die Inhaltserstellung.
-source-git-commit: f11635b799a9154ff3fcaac5faca429a12f7a62b
+source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 43%
+source-wordcount: '1431'
+ht-degree: 42%
 
 ---
 
 
 # Der AEM Seiteneditor {#editing-page-content}
 
-Sobald Ihre Seite im **Sites** können Sie den Inhalt der Seite mit dem AEM Seiteneditor bearbeiten, einem leistungsstarken Tool zur Inhaltserstellung.
+Sobald Ihre Seite im [**Sites** Konsole,](/help/sites-cloud/authoring/sites-console/introduction.md) Sie können den Seiteninhalt mit dem AEM Seiteneditor bearbeiten, einem leistungsstarken Tool zur Inhaltserstellung.
+
+>[!NOTE]
+>
+>Beim Bearbeiten einer Seite im [**Sites** Konsole,](/help/sites-cloud/authoring/sites-console/introduction.md) Die Konsole öffnet den Editor, der dem der Seite entsprechenden [template:](/help/sites-cloud/authoring/sites-console/templates.md) entweder dem in diesem Dokument beschriebenen Seiteneditor oder dem [Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 >[!NOTE]
 >

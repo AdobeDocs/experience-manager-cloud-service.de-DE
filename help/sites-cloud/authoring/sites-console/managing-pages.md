@@ -1,10 +1,10 @@
 ---
 title: Verwalten von Seiten
 description: Erfahren Sie, wie Sie die Seiten Ihrer Website verwalten AEM einschließlich Verschieben, Kopieren und Löschen.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 78%
+source-wordcount: '1271'
+ht-degree: 75%
 
 ---
 
@@ -42,7 +42,9 @@ Nachher [Erstellen einer Seite](/help/sites-cloud/authoring/sites-console/creati
 
    ![Schaltfläche „Bearbeiten“](/help/sites-cloud/authoring/assets/edit.png)
 
-1. Die Seite wird geöffnet und Sie können [die Seite bearbeiten](/help/sites-cloud/authoring/page-editor/edit-content.md).
+1. Die Seite wird geöffnet und Sie können die Seite nach Bedarf bearbeiten. Je nachdem, wie die ausgewählte Seite erstellt wurde, wird die **Bearbeiten** -Aktion öffnet den entsprechenden Editor.
+   * [Seiten-Editor](/help/sites-cloud/authoring/page-editor/introduction.md) - Für Seiten, die mit dem AEM Seiten-Editor erstellt wurden
+   * [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) - Für mit dem Universal Editor erstellte Seiten
 
 ## Kopieren und Einfügen einer Seite {#copying-and-pasting-a-page}
 

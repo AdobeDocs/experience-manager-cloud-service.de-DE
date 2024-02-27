@@ -3,7 +3,7 @@ title: Inhaltserstellung für Edge Delivery Services
 description: Erfahren Sie, wie Content Authoring mit Edge Delivery Services funktioniert und wie Sie AEM Inhalte mit Edge Delivery Services erstellen.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 21%
@@ -31,7 +31,7 @@ Bei der Verwendung von Edge Delivery Services mit AEM as a Cloud Service ist es 
 
 1. [Die AEM Authoring-Umgebung](/help/sites-cloud/authoring/quick-start.md) wird für das Content Management verwendet, z. B. zum Erstellen neuer Seiten, Experience Fragments, Inhaltsfragmente usw.
    * Alle Funktionen von AEM sind verfügbar, wie Workflows, MSM, Übersetzung, Launches usw.
-1. [Der Universal Editor](/help/implementing/universal-editor/authoring.md) wird verwendet, um den in AEM verwalteten Inhalt zu erstellen.
+1. [Der Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) wird verwendet, um den in AEM verwalteten Inhalt zu erstellen.
    * Der Universal Editor bietet eine neue und moderne Benutzeroberfläche für die Inhaltserstellung.
    * Zum Authoring rendert AEM die HTML, schließt jedoch die Skripte, Stile, Symbole und andere Ressourcen von Edge Delivery Services ein.
    * Obwohl der universelle Editor verwendet wird, bleiben alle Änderungen AEM.
@@ -52,7 +52,7 @@ Details zu den Bausteinen können dann in der Leiste Eigenschaften konfiguriert 
 
 ![Blockeigenschaften konfigurieren](assets/block-properties.png)
 
-Weitere Informationen zum Authoring mit dem universellen Editor finden Sie im Dokument [Inhaltserstellung mit dem universellen Editor.](/help/implementing/universal-editor/authoring.md)
+Weitere Informationen zum Authoring mit dem universellen Editor finden Sie im Dokument [Inhaltserstellung mit dem universellen Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 Lesen Sie hierzu [Erste Schritte für Entwickelnde für AEM Authoring mit Edge Delivery Services](/help/edge/edge-dev-getting-started.md), um zu erfahren, wie Sie Ihr eigenes Projekt mit AEM und Edge Delivery Services erstellen können.
 
