@@ -3,10 +3,11 @@ title: Einrichten einer lokalen Entwicklungsumgebung für AEM Forms?
 description: Einrichten einer lokalen Entwicklungsumgebung für Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 58325cccf218eb2176868879842a795d1c91d8a6
+exl-id: 12877a77-094f-492a-af58-cffafecf79ae
+source-git-commit: 1ec17aebe4eb003b24f5036288a8836aabddb77a
 workflow-type: tm+mt
-source-wordcount: '2682'
-ht-degree: 100%
+source-wordcount: '2724'
+ht-degree: 97%
 
 ---
 
@@ -129,7 +130,12 @@ Das Funktionsarchiv für Adobe Experience Manager Forms as a Cloud Service biete
 
 1. Navigieren Sie zum Verzeichnis „crx-quickstart/install“. Wenn der Ordner nicht vorhanden ist, erstellen Sie ihn.
 
-1. Beenden Sie Ihre AEM-Instanz, platzieren Sie das [!DNL AEM Forms]-Add-on-Funktionsarchiv `aem-forms-addon-<version>.far` im Installationsordner und starten Sie die Instanz neu.
+1. Beenden Sie Ihre AEM-Instanz, platzieren Sie die [!DNL AEM Forms] Archiv für Zusatzfunktionen, `aem-forms-addon-<version>.far`im Installationsordner.
+1. Wechseln Sie zum aktiven Befehlsfenster und drücken Sie die `Ctrl + C` -Befehl zum Neustart des SDK.
+
+   >[!NOTE]
+   >
+   > Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
 
 ### Konfigurieren von Benutzern und Berechtigungen {#configure-users-and-permissions}
 
@@ -241,8 +247,8 @@ Verwenden Sie dieses Projekt, um adaptive Formulare zu erstellen, Konfigurations
 
 >[!NOTE]
 >
-> Richten Sie ein auf AEM-Archetyp Version 30 oder höher basierendes Projekt ein, um Microsoft® Dynamics 365- und Salesforce-Formulardatenmodelle mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
->Richten Sie ein auf AEM-Archetyp Version 32 oder höher basierendes Projekt ein, um Tranquil-, Urbane- und Ultramarine-Designs mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
+> Richten Sie ein auf AEM-Archetyp Version 30 oder höher basierendes Projekt ein, um Microsoft® Dynamics 365- und Salesforce-Formulardatenmodelle mit AEM Forms as a Cloud Service zu erhalten und zu verwenden.
+> Richten Sie ein auf AEM-Archetyp Version 32 oder höher basierendes Projekt ein, um Tranquil-, Urbane- und Ultramarine-Designs mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
 
 Einrichten des Projekts:
 
