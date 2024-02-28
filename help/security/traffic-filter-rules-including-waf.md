@@ -3,9 +3,9 @@ title: Traffic-Filterregeln, einschließlich WAF-Regeln
 description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 86a7815a1055b8ffaf57b802f3232f2c03ec06dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3376'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -253,7 +253,7 @@ Die `wafFlags`-Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln v
 | USERAGENT | Angriffs-Tooling | Angriffs-Tooling ist der Einsatz automatisierter Software zur Identifizierung von Sicherheitslücken oder zum Versuch, eine entdeckte Anfälligkeit auszunutzen. |
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI-Angriffe versuchen, die [Log4Shell-Anfälligkeit](https://en.wikipedia.org/wiki/Log4Shell) in Log4J-Versionen vor 2.16.0 auszunutzen. |
 | BHH | Bad Hop Headers | Bad Hop Headers weisen auf einen HTTP-Schmuggelversuch durch einen fehlerhaften Transfer-Encoding(TE)- oder Content-Length(CL)-Header oder einen korrekt formatierten TE- und CL-Header hin. |
-| KODEINJEKTION | Code-Injektion | Code Injection ist der Versuch, ein Zielsystem durch beliebige Anwendungs-Code-Befehle mittels Benutzereingabe zu steuern oder zu beschädigen. |
+| CODEINJECTION | Code-Injektion | Code-Injektion ist der Versuch, über beliebige Anwendungs-Code-Befehle mittels Benutzereingaben die Kontrolle über ein Zielsystem zu erlangen oder es zu beschädigen. |
 | ABNORMALPATH | Anormaler Pfad | Anormaler Pfad bedeutet, dass der ursprüngliche Pfad vom normalisierten Pfad abweicht (z. B. `/foo/./bar` wird normalisiert in `/foo/bar`) |
 | DOUBLEENCODE | Doppelte Codierung | Bei der doppelten Codierung wird geprüft, ob HTML-Zeichen doppelt codiert werden |
 | NOTUTF8 | Ungültige Codierung | Eine ungültige Codierung kann dazu führen, dass der Server böswillige Zeichen aus einer Anfrage in eine Antwort übersetzt, was entweder zu einer Dienstverweigerung oder zu XSS führt |
