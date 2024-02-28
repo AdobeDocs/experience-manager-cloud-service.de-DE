@@ -4,30 +4,53 @@ description: AEM Forms Edge Delivery Service wurde für optimale Leistung entwic
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 4%
+source-wordcount: '418'
+ht-degree: 6%
 
 ---
 
 
 # AEM Forms Edge Delivery Service {#aem-forms-edge-delivery-service-overview}
 
-AEM Forms Edge Delivery Service ist ein von Adobe angebotener zusammenstellbarer Service, mit dem Sie leistungsstarke Webformulare erstellen und bereitstellen können. Der Service bietet folgende Möglichkeiten:
 
-* **Captivate von Benutzern mit atemberaubenden Formularen**: Erstellen Sie komplexe und ansprechende Formulare mit einer Bibliothek vordefinierter Komponenten. Integrieren Sie einfach reCAPTCHA, senden Sie Formulare direkt per E-Mail und ermöglichen Sie nahtlose Dateiuploads, um Speicherlösungen wie Sharepoint, Azure Storage und Amazon S3 zu sichern. Erstellen Sie sogar eigene benutzerdefinierte Formularkomponenten, um Ihre einzigartige Vision zum Leben zu erwecken.
+<div>
+&lt;style="font-family: Arial, sans-serif; margin: 0; padding: 0;"&gt;
+    <main class="content">
+      <section class="content-section">
+        <p style="line-height: 1.5;">AEM Forms Edge Delivery Service ist ein von Adobe angebotener zusammenstellbarer Service, mit dem Sie leistungsstarke Webformulare erstellen und bereitstellen können. Der Service bietet folgende Möglichkeiten:</p>
+        </section> <section class="content-section">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">Captivate von Benutzern mit atemberaubenden Formularen</h2>
+        <img src="/help/edge/assets/enrollment-form.png" alt="Registrierungsformular" style="float: left; margin: 0 20px 20px 0; width: 150px;">
+        <p style="line-height: 1.5;">Erstellen Sie komplexe und ansprechende Formulare mit einer Bibliothek vordefinierter Komponenten. Integrieren Sie einfach reCAPTCHA, senden Sie Formulare direkt per E-Mail und ermöglichen Sie nahtlose Dateiuploads, um Speicherlösungen wie Sharepoint, Azure Storage und Amazon S3 zu sichern. Erstellen Sie sogar eigene benutzerdefinierte Formularkomponenten, um Ihre einzigartige Vision zum Leben zu erwecken.</p>
+        </section> <section class="content-section">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">Erstellen von Formularen mit perfektem Leuchtturm-Ergebnis</h2>
+        <img src="/help/edge/assets/lighthouse-forms.png" alt="perfekte Leuchtturmbewertung für Ihre Formulare" style="float: right; margin: 20px 0 0 20px; width: 150px;">
+        <p style="line-height: 1.5;"> Erstellen Sie Formulare, die schnell geladen und gerendert werden, selbst bei langsamen Internetverbindungen. Schnellere Ladezeiten und optimiertes Benutzererlebnis tragen zu höheren Formularabschlussraten und verbesserten Konversionsraten bei.</p>
+        </section>
+        <section class="content-section">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">Erstellen von digitalen Registrierungserlebnissen mit Tools Ihrer Wahl</h2>
+        <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="Registrierungsformular" style="float: left; margin: 0 20px 20px 0; width: 150px;">
+        <p style="line-height: 1.5;">die Autoreneffizienz durch Entkopplung von Inhaltsquellen erhöhen. standardmäßig sowohl AEM-Authoring als auch dokumentbasiertes Authoring verwenden. Daher können Sie mit mehreren Inhaltsquellen auf derselben Website arbeiten und Ihre bevorzugten Authoring-Tools wie Microsoft Excel, Google Tabellen oder AEM Editoren verwenden.</p>
+        </section>
+</div>
 
-  ![Registrierungsformulare](/help/edge/assets/enrollment-form.png)
 
-* **Erstellen von Formularen mit perfektem Leuchtturm-Ergebnis**: Erstellen Sie Formulare, die schnell geladen und gerendert werden, selbst bei langsamen Internetverbindungen. Schnellere Ladezeiten und optimiertes Benutzererlebnis tragen zu höheren Formularabschlussraten und verbesserten Konversionsraten bei.
+<!-- >
+* **Captivate users with stunning forms**: 
+Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life. 
 
-  ![perfekte Leuchtturmbewertung für Ihre Formulare](/help/edge/assets/lighthouse-forms.png)
+    ![Enrollment forms](/help/edge/assets/enrollment-form.png)
 
-* **Erstellen von digitalen Registrierungserlebnissen mit Tools Ihrer Wahl**: Erhöhen Sie die Authoring-Effizienz durch Entkopplung der Inhaltsquellen. standardmäßig sowohl AEM-Authoring als auch dokumentbasiertes Authoring verwenden. Daher können Sie mit mehreren Inhaltsquellen auf derselben Website arbeiten und Ihre bevorzugten Authoring-Tools wie Microsoft Excel, Google Tabellen oder AEM Editoren verwenden.
+* **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
 
-  ![Bearbeitungswerkzeuge für Edge-Formulare](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+    ![perfect lighthouse score for your forms](/help/edge/assets/lighthouse-forms.png)
 
+* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.
+
+    ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+    
 <!--
 * **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
 

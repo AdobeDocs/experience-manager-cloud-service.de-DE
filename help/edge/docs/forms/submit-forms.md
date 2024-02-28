@@ -4,7 +4,7 @@ description: Erstellen Sie leistungsstarke Formulare schneller mit Tabellen und 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 1%
@@ -16,7 +16,10 @@ ht-degree: 1%
 
 Sobald du [das Formular erstellt und in der Vorschau angezeigt wurde](/help/edge/docs/forms/create-forms.md)ist es an der Zeit, die entsprechende Tabelle so zu aktivieren, dass sie Daten erhält.
 
+<!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
+
+-->
 
 So aktivieren Sie das Arbeitsblatt:
 

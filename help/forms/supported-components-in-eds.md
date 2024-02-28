@@ -1,13 +1,17 @@
 ---
-description: Dieses Tutorial enthält alle Informationen zu Komponenten von EDS. .
-title: Formularkomponenten unterstützt in Formularblock - Tutorial für Entwickler
+title: AEM Forms Edge Delivery Service - Formularkomponenten
+description: AEM Forms Edge Delivery Service wurde für optimale Leistung entwickelt und ermöglicht es Ihnen, sich die Zukunft einer optimierten Datenerfassung und Benutzerinteraktion vorzustellen. Der Artikel listet alle Formularkomponenten auf, die standardmäßig für EDD-Formulare verfügbar sind.
 feature: Edge Delivery Services
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+hide: true
+hidefromtoc: true
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 6%
+source-wordcount: '871'
+ht-degree: 5%
 
 ---
+
+
 
 
 # HTML-Komponenten, die in der Formularblock-Edge-Bereitstellung unterstützt werden
