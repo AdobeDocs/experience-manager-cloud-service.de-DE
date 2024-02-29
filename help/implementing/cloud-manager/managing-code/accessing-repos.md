@@ -2,12 +2,13 @@
 title: Zugriff auf Repositorys
 description: Erfahren Sie, wie Sie mithilfe der Self-Service-Git-Kontoverwaltung über Cloud Manager auf Ihr Git-Repository zugreifen und es verwalten können.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 1b24fa084577f2ba0dc718ee35d12e42ac9d609c
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 94%
+source-wordcount: '270'
+ht-degree: 85%
 
 ---
+
 
 # Zugriff auf Repositorys {#accessing-repos}
 
@@ -23,7 +24,7 @@ Cloud Manager macht es Ihnen leicht, Ihre Repository-Informationen abzurufen, in
 
    ![Schaltfläche „Zugriff auf Repo Info“ auf der Karte „Umgebungen“](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Klicken Sie auf **Repo Info anzeigen** Schaltfläche zum Öffnen eines Dialogfelds zur Ansicht:
+1. Klicken Sie auf die Schaltfläche **Repo-Info anzeigen**, um ein Dialogfeld mit folgenden Inhalten zu öffnen:
 
    * Die URL zum Git-Repository von Cloud Manager.
    * Der Git-Benutzername.
@@ -40,3 +41,9 @@ Die Option **Zugriff auf Repo-Info** ist auch auf der Pipeline-Registerkarte **P
 >[!NOTE]
 >
 >Die Option **Zugriff auf Repo-Info** ist für Benutzende mit der Rolle **Entwickler** oder **Bereitstellungs-Manager** sichtbar.
+
+## Sperren eines Zugangskennworts {#revoke-password}
+
+Sie können jederzeit ein Zugangskennwort sperren. Um dies zu tun, bitte [ein Support-Ticket für diese Anfrage erstellen.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)
+
+Das Ticket wird mit hoher Priorität behandelt und sollte innerhalb eines Tages widerrufen werden.
