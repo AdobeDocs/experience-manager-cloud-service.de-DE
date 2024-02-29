@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service wurde für optimale Leistung entwic
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '872'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 Die AEM Forms Edge-Bereitstellung umfasst einen Formularblock. Mit dem Formularblock können Sie mühelos Formulare erstellen, um erfasste Daten zu erfassen und zu speichern.
 
-Der Formularblock unterstützt HTML-5-Komponenten wie Text, E-Mail, Zahl, Datum und viele mehr. Es unterstützt auch Textbereichs-, Auswahl- und Feldsatzelemente sowie Eingabebesuchungsfunktionen, die nativ in HTML-5 enthalten sind. Der Formularblock erstellt eine einheitliche HTML-Struktur für alle Feldtypen und Container, um die Konsistenz zu gewährleisten. Sie können auch [Formatieren der Feldtypen](https://adobe-rnd.github.io/form-block/customization/styling_form) mithilfe der `form.css` -Datei.
+Der Formularblock unterstützt OOTB-HTML-5-Komponenten wie Text, E-Mail, Nummer, Datum und viele mehr. Es unterstützt auch Textbereichs-, Auswahl- und Feldsatzelemente sowie Eingabebesuchungsfunktionen, die nativ in HTML-5 enthalten sind. Der Formularblock erstellt eine einheitliche HTML-Struktur für alle Feldtypen und Container, um die Konsistenz zu gewährleisten. Sie können auch [Formatieren der Feldtypen](https://adobe-rnd.github.io/form-block/customization/styling_form) mithilfe der `form.css` -Datei.
 
 ## Unterstützte HTML 5-Eingabetypen im Formularblock
 

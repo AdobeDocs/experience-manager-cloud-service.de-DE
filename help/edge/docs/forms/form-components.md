@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service wurde für optimale Leistung entwic
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '275'
 ht-degree: 5%
 
 ---
@@ -57,8 +57,8 @@ Die folgenden Eigenschaften werden für Formularkomponenten des Formularblocks u
    </td>
   </tr>
       <tr>
-   <td>Platzhalter</td>
-   <td>Text, Suche, URL, Tel, E-Mail, Kennwort und Nummer</td>
+   <td>Beschreibung</td>
+   <td>Gilt für alle Felder</td>
    <td> Das Platzhalterattribut gibt dem Benutzer einen kurzen Hinweis dazu, welche Informationen im Feld erwartet werden.
    </td>
   </tr>
