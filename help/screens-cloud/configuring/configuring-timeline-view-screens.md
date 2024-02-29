@@ -1,10 +1,10 @@
 ---
 title: Konfigurieren der Timeline-Ansicht für AEM Screens
 description: Auf dieser Seite wird beschrieben, wie Sie eine Timeline-Ansicht in Screens as a Cloud Service konfigurieren.
-source-git-commit: 30317d006142b3fbfc1b62fab5b4e28cb1b7dbb7
+source-git-commit: eb71ea3a1a739b08fb3154a5f41a0706bd81488c
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 9%
+source-wordcount: '813'
+ht-degree: 15%
 
 ---
 
@@ -28,17 +28,17 @@ Führen Sie die folgenden Schritte aus, um eine Timeline-Ansicht für AEM Screen
 1. eine Version speichern
 1. einen Workflow starten
 
-Im folgenden Abschnitt werden diese Schritte detailliert beschrieben.
+Die folgenden Abschnitte beschreiben diese Schritte detailliert.
 
 ### Kommentar hinzufügen {#addcomment}
 
 Die über die Timeline verfügbare Kommentierung ermöglicht es Benutzern, einen zentralisierten und historischen Datensatz für Diskussionen zu erstellen, die über den Kanal, den Speicherort oder einen beliebigen Ordner auf dem Bildschirm stattfinden.
 Kommentare bieten AEM Benutzern eine gute konsolidierte Möglichkeit, eine Methode zu besprechen, die beibehalten werden kann, sodass andere wichtige Entscheidungen verstehen können.
 
-1. Navigieren Sie zu dem Kanal, für den Sie einen Kommentar hinzufügen möchten
-1. Kanal auswählen
-1. Öffnen Sie die Spalte Timeline .
-1. Fügen Sie den gewünschten Kommentar hinzu und drücken Sie die Eingabetaste
+1. Navigieren Sie zu dem Kanal, für den Sie einen Kommentar hinzufügen möchten.
+1. Wählen Sie den Kanal aus.
+1. Öffnen Sie die Spalte **Zeitleiste**.
+1. Fügen Sie Ihren Kommentar hinzu und drücken Sie **Eingabe**.
 
 ![Kommentar hinzufügen](/help/screens-cloud/assets/configure/screen-timeline3.jpg)
 
@@ -58,91 +58,95 @@ Durch die Versionierung wird ein &quot;Schnappschuss&quot;eines Kanals zu einem 
 
 #### Neue Version erstellen {#createnewversion}
 
-1. Navigieren Sie zu dem Kanal, für den Sie einen Kommentar hinzufügen möchten
-1. Kanal auswählen
-1. Öffnen Sie die Spalte Timeline .
-1. Klicken Sie auf die Schaltfläche (drei Punkte) neben dem Kommentarfeld am unteren Rand.
+1. Navigieren Sie zu dem Kanal, für den Sie einen Kommentar hinzufügen möchten.
+1. Wählen Sie den Kanal aus.
+1. Öffnen Sie die Spalte **Zeitleiste**.
+1. Klicken Sie auf die Schaltfläche (drei Punkte) neben dem Kommentarfeld am unteren Rand der Seite.
 
    ![Kommentar hinzufügen](/help/screens-cloud/assets/configure/screens-timeline5.jpg)
 
-1. Als Version speichern
-1. Geben Sie bei Bedarf einen Titel und einen Kommentar ein
+1. Wählen Sie **Als Version speichern**.
+1. Geben Sie einen **Titel** und **Kommentar** für die -Version.
 
    ![Kommentar hinzufügen](/help/screens-cloud/assets/configure/screens-timeline6.jpg)
 
-1. Bestätigen Sie die neue Version mit Erstellen. Die Informationen in der Timeline werden aktualisiert, um die neue Version anzugeben.
+1. Bestätigen Sie die neue Version durch Auswahl von **Erstellen**.Die Informationen in der Timeline werden entsprechend der neuen Version aktualisiert.
 
 #### Auf eine Version zurücksetzen {#revertversion}
 
 So stellen Sie die ausgewählte Seite auf eine frühere Version zurück:
-1. Navigieren Sie zu dem Kanal, für den Sie einen Kommentar hinzufügen möchten
-1. Kanal auswählen
-1. Öffnen Sie die Spalte Timeline .
-1. Wählen Sie entweder Alle anzeigen oder Versionen aus dem Dropdown-Menü Filter . Die Kanalversionen für den ausgewählten Kanal werden aufgelistet
+
+1. Navigieren Sie zum Kanal, um einen Kommentar hinzuzufügen.
+1. Wählen Sie den Kanal aus.
+1. Öffnen Sie die Spalte **Zeitleiste**.
+1. Wählen Sie entweder **Alle anzeigen** oder **Versionen** aus der Dropdown-Liste Filter . Die Kanalversionen für den ausgewählten Kanal werden aufgelistet.
 1. Wählen Sie die Version aus, die Sie wiederherstellen möchten. Die möglichen Optionen werden angezeigt:
 
    ![Kommentar hinzufügen](/help/screens-cloud/assets/configure/screens-timeline7.jpg)
 
-1. Wählen Sie Auf diese Version zurück. Die ausgewählte Version wird wiederhergestellt und die Informationen in der Timeline aktualisiert.
+1. Wählen Sie **Auf diese Version zurück**. Die ausgewählte Version wird wiederhergestellt und die Informationen in der Timeline aktualisiert.
 
 #### Vorschau einer Version anzeigen {#previewversion}
 
 Sie können eine Vorschau einer bestimmten Version anzeigen:
-1. Navigieren Sie zu dem Kanal, für den Sie einen Kommentar hinzufügen möchten
-1. Kanal auswählen
-1. Öffnen Sie die Spalte Timeline .
-1. Wählen Sie entweder Alle anzeigen oder Versionen aus dem Dropdown-Menü Filter . Die Kanalversionen für den ausgewählten Kanal werden aufgelistet
+
+1. Navigieren Sie zum Kanal, um einen Kommentar hinzuzufügen.
+1. Wählen Sie den Kanal aus.
+1. Öffnen Sie die Spalte **Zeitleiste**.
+1. Wählen Sie entweder **Alle anzeigen** oder **Versionen** aus der Dropdown-Liste Filter . Die Kanalversionen für den ausgewählten Kanal werden aufgelistet.
 1. Wählen Sie die Version aus, die Sie in der Vorschau anzeigen möchten. Die möglichen Optionen werden angezeigt:
 
    ![Vorschau der Version](/help/screens-cloud/assets/configure/screens-timeline8.jpg)
 
-1. Wählen Sie Vorschau aus. Der Kanal wird in einer neuen Registerkarte angezeigt.
+1. Wählen Sie **Vorschau**. Der Kanal wird in einer neuen Registerkarte angezeigt.
 
 #### Version mit aktueller Version vergleichen {#compareversion}
 
 Sie können eine bestimmte Version mit der aktuellen Version vergleichen:
-1. Navigieren Sie zu dem Kanal, für den Sie einen Kommentar hinzufügen möchten
-1. Kanal auswählen
-1. Öffnen Sie die Spalte Timeline .
-1. Wählen Sie entweder Alle anzeigen oder Versionen aus dem Dropdown-Menü Filter . Die Kanalversionen für den ausgewählten Kanal werden aufgelistet
+
+1. Navigieren Sie zu dem Kanal, für den Sie einen Kommentar hinzufügen möchten.
+1. Wählen Sie den Kanal aus.
+1. Öffnen Sie die **Timeline** column
+1. Wählen Sie entweder **Alle anzeigen** oder **Versionen** aus der Dropdown-Liste Filter . Die Kanalversionen für den ausgewählten Kanal werden aufgelistet.
 1. Wählen Sie die Version aus, die Sie vergleichen möchten. Die möglichen Optionen werden angezeigt:
 
    ![Version vergleichen](/help/screens-cloud/assets/configure/screens-timeline9.jpg)
 
-1. Wählen Sie Mit aktueller Version vergleichen aus. Das Popup wird geöffnet, um die Unterschiede anzuzeigen
+1. Wählen Sie **Mit aktueller Version vergleichen** aus. Das Popup wird geöffnet, um die Unterschiede anzuzeigen.
 
 ### Workflow starten {#workflowstart}
 
 Beim Authoring können Sie Workflows aufrufen, um Aktionen auf Ihren Kanälen durchzuführen. Es ist auch möglich, mehr als einen Workflow anzuwenden.
 Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
-* Der anzuwendende Workflow
-* Optional: Ein Titel, der dabei hilft, die Workflow-Instanz im Posteingang eines Benutzers zu identifizieren
-* Die Workflow-Payload
+
+* Der anzuwendende Workflow.
+* Optional einen Titel, der dazu beiträgt, die Workflow-Instanz im Posteingang eines Benutzers zu identifizieren.
+* Die Workflow-Payload.
 
 #### Workflow starten
 
-1. Navigieren Sie zu dem Kanal, für den Sie einen Kommentar hinzufügen möchten
-1. Kanal auswählen
-1. Öffnen Sie die Spalte Timeline .
-1. Klicken Sie auf die Schaltfläche (drei Punkte) neben dem Kommentarfeld unten.
+1. Navigieren Sie zu dem Kanal, für den Sie einen Kommentar hinzufügen möchten.
+1. Wählen Sie den Kanal aus.
+1. Öffnen Sie die Spalte **Zeitleiste**.
+1. Klicken Sie auf die Schaltfläche (drei Punkte) neben dem Kommentarfeld am unteren Rand.
 
    ![Workflow starten](/help/screens-cloud/assets/configure/screens-timeline10.jpg)
 
-1. Workflow starten
+1. Wählen Sie **Workflow starten** aus.
 1. Der Assistent Workflow erstellen wird geöffnet, um die Workflow-Details anzugeben.
-1. Wählen Sie Workflow-Modell aus der Dropdown-Liste aus und geben Sie den Workflow-Titel ein
+1. Auswählen **Workflow-Modell** aus der Dropdown-Liste und geben Sie den Workflow-Titel ein.
 
    ![Workflow starten](/help/screens-cloud/assets/configure/screens-timeline11.jpg)
 
-1. Fahren Sie fort, indem Sie auf Weiter klicken.
-1. Im Schritt zum Umfang können Sie
-* Inhalt hinzufügen , um zusätzliche Ressourcen zum Workflow hinzuzufügen
-* Untergeordnete Elemente einschließen , um anzugeben, dass untergeordnete Elemente dieser Ressource im Workflow enthalten sind
-* Auswahl entfernen , um diese Ressource aus dem Workflow zu entfernen
+1. Weiter durch Klicken auf **Nächste**.
+1. Im Schritt &quot;Perimeter&quot;haben Sie folgende Möglichkeiten:
+   * **Inhalt hinzufügen** , um dem Workflow zusätzliche Ressourcen hinzuzufügen.
+   * **Untergeordnete Elemente einschließen** , um anzugeben, dass die untergeordneten Elemente dieser Ressource im Workflow enthalten sind.
+   * **Auswahl entfernen**, um die betreffende Ressource aus dem Workflow zu entfernen.
 
-  ![Workflow starten](/help/screens-cloud/assets/configure/screens-timeline12.jpg)
+   ![Workflow starten](/help/screens-cloud/assets/configure/screens-timeline12.jpg)
 
-1. Verwenden Sie Erstellen , um den Assistenten zu schließen und die Workflow-Instanz zu erstellen
-1. Je nach ausgewähltem Workflow-Modell müssen Sie eventuell einige zusätzliche Aktionen ausführen, um den Workflow abzuschließen.
+1. Auswählen **Erstellen** , um den Assistenten zu schließen und die Workflow-Instanz zu erstellen.
+1. Je nach ausgewähltem Workflow-Modell müssen Sie eventuell einige zusätzliche Aktionen durchführen, um den Workflow abzuschließen.
 
-![Workflow starten](/help/screens-cloud/assets/configure/screens-timeline13.jpg)
+   ![Workflow starten](/help/screens-cloud/assets/configure/screens-timeline13.jpg)
