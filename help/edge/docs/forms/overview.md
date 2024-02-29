@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service wurde für optimale Leistung entwic
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 6fbeb94d3547d50e93ab80aee5d6458e51edb1da
+source-git-commit: e21b681b12e90110436c7319797809c8d6b75eea
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '445'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 # AEM Forms Edge Delivery Service
 
-AEM Forms Edge Delivery Service ist ein von Adobe angebotener zusammenstellbarer Service, mit dem Sie leistungsstarke Webformulare erstellen und bereitstellen können.
+Mit dem Adobe Edge Delivery Service können Sie Formulare optimieren und höhere Abschlussraten erzielen. Mit diesem leistungsstarken, zusammenstellbaren Dienst können Sie Formulare auf Unternehmensebene mit außergewöhnlicher Leistung und visueller Attraktivität erstellen. AEM priorisiert sowohl das Anwendererlebnis als auch Ihre Geschäftsziele, gewährleistet blitzschnelle Ladezeiten und erhöhte Formularabschlüsse.
 
-![Wichtige Funktionen von EDS Forms](/help/edge/assets/eds-forms-key-features.png)
+![Wichtige Funktionen von EDS Forms](/help/edge/assets/eds-forms-key-features.png){width="70%"}
 
 Der Service bietet folgende Möglichkeiten:
 
