@@ -4,10 +4,10 @@ description: Handwerkliche perfekte Formen, schnell! ⚡ AEM Forms Edge Delivery
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 1%
+source-wordcount: '1120'
+ht-degree: 2%
 
 ---
 
@@ -79,7 +79,7 @@ So fahren Sie mit der Formularerstellung fort:
 
    ![Standard-Arbeitsblatt in &quot;shared-default&quot;umbenennen](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Fügen Sie zum Hinzufügen der Formularfelder Zeilen und Spaltenüberschriften in das &quot;shared-default&quot;-Blatt ein. Jede Zeile sollte ein Formularfeld darstellen, wobei Spaltenüberschriften das entsprechende Feld definieren [properties](/help/edge/docs/forms/eds-form-field-properties).
+1. Fügen Sie zum Hinzufügen der Formularfelder Zeilen und Spaltenüberschriften in das &quot;shared-default&quot;-Blatt ein. Jede Zeile sollte eine [Formularfeld](/help/edge/docs/forms/form-components.md), wobei die Spaltenüberschriften das entsprechende Feld definieren [properties](/help/edge/docs/forms/eds-form-field-properties).
 
    Für einen schnellen Start sollten Sie den Inhalt der [Abfragetabelle](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) in Ihre Tabelle ein. Nachdem Sie den Inhalt kopiert haben, speichern Sie das Arbeitsblatt.
 
@@ -153,6 +153,7 @@ Bis jetzt haben Sie den Formularblock zu Ihrem EDS-Projekt hinzugefügt und die 
 
 ## Mehr anzeigen
 
+* [Formularkomponenten](/help/edge/docs/forms/form-components.md)
 * [Formularfeldeigenschaften](/help/edge/docs/forms/eds-form-field-properties)
 * [Erstellen und Anzeigen einer Vorschau eines Formulars](/help/edge/docs/forms/create-forms.md)
 * [Formular zum Senden von Daten aktivieren](/help/edge/docs/forms/submit-forms.md)
