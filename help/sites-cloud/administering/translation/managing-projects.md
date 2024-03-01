@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Über
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: ae500923bac34689a28b9ff0bc78586f725829de
 workflow-type: tm+mt
-source-wordcount: '3960'
-ht-degree: 98%
+source-wordcount: '4011'
+ht-degree: 96%
 
 ---
 
@@ -448,14 +448,26 @@ So vergleichen Sie Sprachkopien mit dem Sprachstamm:
 
 ## Verschieben oder Umbenennen einer Quellseite {#move-source}
 
-Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) werden muss, wird bei einer erneuten Übersetzung der Seite nach dem Verschieben eine Sprachkopie auf der Basis des neuen Seitennamens/Speicherorts erstellt. Die alte Sprachkopie mit dem vorherigen Namen/Speicherort bleibt bestehen.
+Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), wodurch die Seite nach dem Verschieben erneut übersetzt wird, wird eine Sprachkopie erstellt, die auf dem neuen Seitennamen/Speicherort basiert. Die alte Sprachkopie, die auf dem vorherigen Namen/Speicherort basiert, ist noch vorhanden. Um dies zu verhindern, können Sie nach dem Verschieben die Funktion zum Aktualisieren der Sprachkopie verwenden:
 
-Die Best Practice für dieses Szenario ist folgendes Verfahren:
+1. Verschieben Sie eine Seite mit einer Sprachkopie.
+1. Wählen Sie den Sprachkopiestamm aus.
+1. Öffnen Sie das Bedienfeld **Verweise**.
+1. Wählen Sie **Sprachkopien** aus.
+1. Wählen Sie die zu aktualisierenden Zielsprachen aus.
+1. Wählen Sie **Sprachkopien aktualisieren** aus.
 
-1. Machen Sie die Veröffentlichung der Sprachkopien, die mit der zu verschiebenden Quellseite verknüpft sind, rückgängig.
-1. Löschen Sie sie.
-1. Erstellen Sie in der neu verschobenen Quellseite neue Sprachkopien.
-1. Veröffentlichen Sie die erstellten Sprachkopien.
+   ![updating-language-copy](../assets/translation-move-to.png)
+
+1. Klicken Sie auf **Aktualisieren**. Es wird ein [Launch](/help/sites-cloud/authoring/launches/promoting.md) erstellt.
+1. Navigieren Sie zum erforderlichen Sprachstamm und wählen Sie ihn aus.
+1. Wählen Sie über das Bedienfeld **Verweise** **Launches** aus.
+
+   ![promote-launch-translation](../assets/promote-launch-translation.png)
+
+1. Klicken Sie auf den erstellten Launch und klicken Sie auf **Launch bewerben**.
+
+Jetzt wurde die Quellseite und die zugehörige Sprachkopie verschoben.
 
 ## Importieren und Exportieren von Übersetzungsaufträgen {#import-export}
 
