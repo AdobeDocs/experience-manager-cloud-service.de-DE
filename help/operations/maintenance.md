@@ -2,10 +2,10 @@
 title: Wartungsaufgaben in AEM as a Cloud Service
 description: Erfahren Sie mehr über Wartungsaufgaben in AEM as a Cloud Service und deren Konfiguration.
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 4b6f1233b8b21c511b9495151d812e4ededfce11
+source-git-commit: af690ee4c1c0c13bffa179c68423993361385a45
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 97%
+source-wordcount: '1123'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ Wartungsaufgaben sind Prozesse, die nach einem Zeitplan ausgeführt werden, um d
 
 ## Konfigurieren von Wartungsaufgaben {#maintenance-tasks-configuring}
 
-In früheren Versionen von AEM konnten Sie Wartungsaufgaben mithilfe der Wartungskarte konfigurieren (Tools > Vorgänge > Wartung). Bei AEM as a Cloud Service ist die Wartungskarte nicht mehr vorhanden. Daher sollten Konfigurationen an die Quell-Code-Verwaltung übertragen und mithilfe von Cloud Manager bereitgestellt werden. Adobe verwaltet Wartungsaufgaben, deren Einstellungen von Kunden nicht konfiguriert werden können (z. B. Datenspeicherbereinigung, Auditprotokollbereinigung, Versionsbereinigung). Andere Wartungsaufgaben können von Kunden konfiguriert werden, wie in der folgenden Tabelle beschrieben.
+In früheren Versionen von AEM konnten Sie Wartungsaufgaben mithilfe der Wartungskarte konfigurieren (Tools > Vorgänge > Wartung). Bei AEM as a Cloud Service ist die Wartungskarte nicht mehr vorhanden. Daher sollten Konfigurationen an die Quell-Code-Verwaltung übertragen und mithilfe von Cloud Manager bereitgestellt werden. Adobe verwaltet Wartungsaufgaben, deren Einstellungen von Kunden nicht konfiguriert werden können (z. B. die Speicherbereinigung). Andere Wartungsaufgaben können von Kunden konfiguriert werden, wie in der folgenden Tabelle beschrieben.
 
 >[!CAUTION]
 >
