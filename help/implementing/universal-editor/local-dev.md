@@ -2,10 +2,10 @@
 title: Lokale AEM-Entwicklung mit dem universellen Editor
 description: Erfahren Sie, wie der universelle Editor die Bearbeitung lokaler AEM-Instanzen zu Entwicklungszwecken unterstützt.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: bbb7e7d9023f8326980196923bfab77c3968ead4
+source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 68%
+source-wordcount: '698'
+ht-degree: 63%
 
 ---
 
@@ -40,9 +40,9 @@ Der universelle Editor-Dienst ist keine vollständige Kopie des universellen Edi
 
 [NodeJS, Version 16](https://nodejs.org/en/download/releases) ist erforderlich, um eine lokale Kopie des Universal Editor-Dienstes auszuführen.
 
-Der Dienst „Universeller Editor“ wird direkt von AEM Engineering vertrieben. Kontaktieren Sie Ihre technischen Fachleute im VIP-Programm, um eine lokale Kopie zu erhalten.
+Der Universal Editor Service ist über Software Distribution verfügbar. Lesen Sie hierzu die [Dokumentation zur Softwareverteilung](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de) für weitere Informationen zum Zugriff.
 
-Engineering wird Ihnen eine Datei `universal-editor-service.cjs` bereitstellen. Speichern Sie diese in Ihrer lokalen Entwicklungsumgebung.
+Speichern Sie die `universal-editor-service.cjs` -Datei von Software Distribution in Ihre lokale Entwicklungsumgebung.
 
 ## Erstellen eines Zertifikats zum Ausführen des Dienstes „Universeller Editor“ mit HTTPS {#ue-https}
 

@@ -4,10 +4,10 @@ description: Lernen Sie die Grundlagen der AEM-Paketverwaltung mit Package Manag
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
 workflow-type: tm+mt
-source-wordcount: '3774'
-ht-degree: 92%
+source-wordcount: '3769'
+ht-degree: 99%
 
 ---
 
@@ -97,7 +97,7 @@ Um Pakete erstellen, ändern, hochladen und installieren zu können, müssen Ben
 
 Sie haben drei Möglichkeiten, auf Package Manager zuzugreifen:
 
-1. Im AEM Hauptmenü > **Instrumente** > **Implementierung** > **Pakete**
+1. Vom AEM-Hauptmenü > **Tools** > **Bereitstellung** > **Pakete**
 1. Von [CRXDE Lite](crxde.md) unter Verwendung der oberen Umschaltleiste
 1. Direkt durch Zugreifen auf `http://<host>:<port>/crx/packmgr/`
 
@@ -105,7 +105,7 @@ Sie haben drei Möglichkeiten, auf Package Manager zuzugreifen:
 
 Package Manager ist in vier Hauptfunktionsbereiche unterteilt:
 
-* **Linke Navigationsleiste** - In diesem Bereich können Sie die Liste der Packages filtern und sortieren.
+* **Linker Navigationsbereich**: In diesem Bedienfeld können Sie die Liste der Pakete filtern und sortieren.
 * **Paketliste**: Dies ist die Liste der Pakete in Ihrer Instanz, die entsprechend der Auswahl im linken Navigationsbereich gefiltert und sortiert wurden.
 * **Aktivitätsprotokoll**: Dieses Bedienfeld ist zunächst minimiert und wird erweitert, um die Aktivität von Package Manager detailliert zu beschreiben, z. B. wenn ein Paket aufgebaut oder installiert wird. Unter der Registerkarte „Aktivitätsprotokoll“ sind weitere Schaltflächen für Folgendes verfügbar:
    * **Protokoll löschen**
@@ -149,7 +149,7 @@ Wenn das Paket geändert wurde oder noch nie aufgebaut wurde, wird der Status al
 
 ## Paketeinstellungen {#package-settings}
 
-Ein Paket ist im Wesentlichen ein Satz von Filtern und den Repository-Daten, die auf diesen Filtern basieren. Mithilfe der Package Manager-Benutzeroberfläche können Sie auf ein Paket klicken und dann die **Bearbeiten** -Schaltfläche, um die Details eines Pakets mit den folgenden Einstellungen anzuzeigen.
+Ein Paket ist im Wesentlichen ein Satz von Filtern und den Repository-Daten, die auf diesen Filtern basieren. Mithilfe der Package Manager-Benutzeroberfläche können Sie auf ein Paket und dann auf die Schaltfläche **Bearbeiten** klicken, um die Details eines Pakets, einschließlich der folgenden Einstellungen, anzuzeigen.
 
 * [Allgemeine Einstellungen](#general-settings)
 * [Paketfilter](#package-filters)
@@ -304,7 +304,7 @@ Möglicherweise müssen Sie [das Paket neu aufbauen](#building-a-package), um se
 
 ### Neuverpacken eines Pakets {#rewrapping-a-package}
 
-Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim erneuten Umbrechen werden die Paketinformationen ohne Miniaturansicht, Beschreibung usw. geändert, ohne dass der Paketinhalt geändert wird.
+Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim Neuverpacken werden die Paketinformationen wie Miniaturansicht, Beschreibung usw. geändert, ohne dass der Paketinhalt geändert wird.
 
 1. [Greifen Sie auf Package Manager zu.](#accessing)
 
@@ -314,7 +314,7 @@ Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim erneuten Umb
 
 1. Klicken Sie zum Speichern auf **Speichern**.
 
-1. Klicks **Mehr** > **Rewrap** und ein Dialogfeld wird zur Bestätigung aufgerufen.
+1. Wenn Sie auf **Weiter** > **Neu verpacken** klicken, werden Sie über ein Dialogfeld zur Bestätigung aufgefordert.
 
 ### Anzeigen anderer Paketversionen {#other-versions}
 
@@ -324,7 +324,7 @@ Da jede Version eines Pakets in der Liste ebenso wie jedes andere Paket angezeig
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Klicks **Mehr** > **Andere Versionen** und ein Dialogfeld mit einer Liste anderer Versionen desselben Pakets mit Statusinformationen geöffnet.
+1. Wenn Sie auf **Mehr** > **Andere Versionen** klicken, öffnet sich ein Dialogfeld mit einer Liste von anderen Versionen desselben Pakets mit Statusinformationen.
 
 ### Anzeigen von Paketinhalten und Testen der Installation {#viewing-package-contents-and-testing-installation}
 
@@ -334,11 +334,11 @@ Nach dem Aufbau eines Pakets können Sie dessen Inhalt anzeigen.
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Klicken Sie auf die Schaltfläche **Mehr** > **Inhalt**, und der Package Manager listet den gesamten Inhalt des Pakets im Aktivitätsprotokoll auf.
+1. Um den Inhalt anzuzeigen, klicken Sie auf **Mehr** > **Inhalt**. Package Manager listet den vollständigen Paketinhalt im Aktivitätsprotokoll auf.
 
    ![Paketinhalt](assets/package-contents.png)
 
-1. Klicken Sie auf , um einen Probelauf der Installation durchzuführen **Mehr** > **Testinstallation** und Package Manager-Berichte in der Aktivität protokollieren die Ergebnisse so, als ob die Installation durchgeführt würde.
+1. Klicken Sie auf **Mehr** > **Installation testen**, um einen Probelauf der Installation durchzuführen. Package Manager berichtet im Aktivitätsprotokoll die Ergebnisse so, als ob die Installation durchgeführt worden wäre.
 
    ![Testen der Installation](assets/test-install.png)
 
@@ -387,7 +387,7 @@ Da Pakete vorhandene Inhalte ändern können, ist es oft nützlich, diese Änder
 
 Package Manager kann die folgenden Validierungen durchführen:
 
-* [OSGi-Paket-Importe](#osgi-package-imports)
+* [OSGi-Paketimporte](#osgi-package-imports)
 * [Überlagerungen](#overlays)
 * [ACLs](#acls)
 
@@ -395,19 +395,19 @@ Package Manager kann die folgenden Validierungen durchführen:
 
 >[!NOTE]
 >
->Da Pakete nicht zum Bereitstellen von Code in AEMaaCS verwendet werden können, **OSGi-Paketimporte** -Validierung nicht erforderlich.
+>Da Pakete nicht zum Bereitstellen von Code in AEMaaCS verwendet werden können, ist die Validierung von **OSGi-Paketimporten** nicht erforderlich.
 
 **Prüfumfang**
 
 Diese Validierung prüft das Paket auf JAR-Dateien (OSGi-Bundles), extrahiert deren `manifest.xml`-Datei (die die versionierten Abhängigkeiten enthält, die für das OSGi-Bundle erforderlich sind) und stellt sicher, dass die AEM-Instanz die Abhängigkeiten mit den richtigen Versionen exportiert.
 
-**Berichterstellung**
+**Wie die Berichterstellung erfolgt**
 
 Eventuelle versionierte Abhängigkeiten, die von der AEM-Instanz nicht erfüllt werden können, werden im Aktivitätsprotokoll von Package Manager aufgeführt.
 
 **Fehlerstatus**
 
-Wenn die Abhängigkeiten nicht erfüllt sind, werden die OSGi-Bundles in dem Paket mit diesen Abhängigkeiten nicht gestartet. Dies führt zu einer fehlerhaften Bereitstellung des Programms, da alle auf dem nicht gestarteten OSGi-Bundle basierenden Prozesse nicht ordnungsgemäß funktionieren.
+Wenn Abhängigkeiten nicht erfüllt sind, werden die OSGi-Bundles in dem Paket mit diesen Abhängigkeiten nicht gestartet. Dies führt zu einer fehlerhaften Bereitstellung des Programms, da alle auf dem nicht gestarteten OSGi-Bundle basierenden Prozesse nicht ordnungsgemäß funktionieren.
 
 **Fehlerbehebung**
 
@@ -417,21 +417,21 @@ Um Fehler aufgrund nicht erfüllter OSGi-Bundles zu beheben, muss die Abhängigk
 
 >[!NOTE]
 >
->Da Pakete nicht zum Bereitstellen von Code in AEMaaCS verwendet werden können, **Überlagerungen** -Validierung nicht erforderlich.
+>Da Pakete nicht zum Bereitstellen von Code in AEMaaCS verwendet werden können, ist die Validierung von **Überlagerungen** nicht erforderlich.
 
 **Prüfumfang**
 
-Diese Validierung ermittelt, ob das zu installierende Paket eine Datei enthält, die bereits in der Ziel-AEM-Instanz überlagert ist.
+Diese Validierung ermittelt, ob das zu installierende Paket eine Datei enthält, die in der AEM-Zielinstanz bereits überlagert ist.
 
 Beispiel: Bei einer bestehenden Überlagerung unter `/apps/sling/servlet/errorhandler/404.jsp` ändert ein Paket, das `/libs/sling/servlet/errorhandler/404.jsp` enthält, die vorhandene Datei unter `/libs/sling/servlet/errorhandler/404.jsp`.
 
-**Berichterstellung**
+**Wie die Berichterstellung erfolgt**
 
 Solche Überlagerungen werden im Aktivitätsprotokoll von Package Manager beschrieben.
 
 **Fehlerstatus**
 
-Ein Fehlerstatus bedeutet, dass das Paket versucht, eine bereits überlagerte Datei bereitzustellen. Daher werden die Änderungen im Paket von der Überlagerung überschrieben (und somit „ausgeblendet“) und nicht übernommen.
+Ein Fehlerstatus bedeutet, dass das Paket versucht, eine bereits überlagerte Datei bereitzustellen. Die Änderungen im Paket werden somit durch die Überlagerung überschrieben (und so „ausgeblendet“) und nicht umgesetzt.
 
 **Fehlerbehebung**
 
@@ -447,7 +447,7 @@ Zur Behebung dieses Problems muss der Verantwortliche für die Überlagerungsdat
 
 Diese Validierung prüft, welche Berechtigungen hinzugefügt werden, wie sie verarbeitet werden (zusammenführen/ersetzen) und ob die aktuellen Berechtigungen betroffen sind.
 
-**Berichterstellung**
+**Wie die Berichterstellung erfolgt**
 
 Die Berechtigungen werden im Aktivitätsprotokoll von Package Manager beschrieben.
 
@@ -457,7 +457,7 @@ Es können keine expliziten Fehler angegeben werden. Die Validierung gibt ledigl
 
 **Fehlerbehebung**
 
-Mithilfe der von der Validierung bereitgestellten Informationen können die betroffenen Knoten in CRXDE überprüft werden und die ACLs können im Paket nach Bedarf angepasst werden.
+Anhand der von der Validierung bereitgestellten Informationen können die betroffenen Knoten in CRXDE überprüft und die ACLs nach Bedarf im Paket angepasst werden.
 
 >[!CAUTION]
 >
@@ -478,7 +478,7 @@ Führen Sie die Validierung stets nach dem Hochladen und vor dem Installieren ei
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Um das Paket zu validieren, klicken Sie auf **Mehr** > **Bestätigen**,
+1. Um das Paket zu validieren, klicken Sie auf **Mehr** > **Validieren**.
 
 1. Aktivieren Sie im angezeigten modalen Dialogfeld das Kontrollkästchen der gewünschten Validierungstypen und starten Sie die Validierung durch Klicken auf **Überprüfen**.
 
@@ -516,7 +516,7 @@ Pakete werden durch ihre Filter definiert. Sie können Package Manager anweisen,
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Klicks **Mehr** > **Reichweite**.
+1. Klicken Sie auf **Mehr** > **Abdeckung**.
 
 1. Die Details zur Abdeckung sind im Aktivitätsprotokoll aufgeführt.
 
@@ -532,7 +532,7 @@ Vor der Installation Ihres Pakets erstellt Package Manager automatisch ein Snaps
 
 1. [Greifen Sie auf Package Manager zu.](#accessing)
 
-1. Öffnen Sie die Paketdetails des Pakets, das Sie installieren möchten, in der Paketliste, indem Sie auf den Paketnamen klicken.
+1. Öffnen Sie in der Paketliste die Paketdetails des Pakets, das Sie installieren möchten, indem Sie auf den Paketnamen klicken.
 
 1. Klicken Sie entweder auf die Schaltfläche **Installieren** in den Paketdetails oder auf den Link **Installieren** im Paketstatus.
 
@@ -576,7 +576,7 @@ Durch die Deinstallation eines Pakets wird der Inhalt des Repositorys auf den Sc
 
 1. Öffnen Sie die Paketdetails des Pakets, das Sie deinstallieren möchten, indem Sie in der Paketliste auf den Paketnamen klicken.
 
-1. Klicks **Mehr** > **Deinstallieren**, um den Inhalt dieses Pakets aus dem Repository zu entfernen.
+1. Klicken Sie auf **Mehr** > **Deinstallieren**, um den Inhalt dieses Pakets aus dem Repository zu entfernen.
 
 1. Es wird ein Dialogfeld mit einer Liste aller vorgenommenen Änderungen und der Aufforderung zur Bestätigung angezeigt.
 
@@ -600,9 +600,9 @@ Replizieren Sie den Inhalt eines Pakets, um es auf der Veröffentlichungsinstanz
 
 1. [Greifen Sie auf Package Manager zu.](#accessing)
 
-1. Öffnen Sie die Paketdetails des Pakets, das Sie replizieren möchten, in der Paketliste, indem Sie auf den Paketnamen klicken.
+1. Öffnen Sie in der Paketliste die Paketdetails des Pakets, das Sie replizieren möchten, indem Sie auf den Paketnamen klicken.
 
-1. Klicks **Mehr** > **Replikation**.
+1. Klicken Sie auf **Mehr** > **Replizieren**.
 
 1. Das Paket wird repliziert und Details im Aktivitätsprotokoll aufgeführt.
 
@@ -612,4 +612,4 @@ AEM-Pakete können verwendet werden, um Inhalte über AEMaaCS-Umgebungen hinweg 
 
 [Software-Verteilung](https://downloads.experiencecloud.adobe.com) stellt AEM-Pakete für die Verwendung im lokalen AEM SDK zur Entwicklung bereit. AEM-Pakete, die über Software-Verteilung bereitgestellt werden, dürfen nicht in Cloud-Umgebungen von AEMaaCS installiert werden, es sei denn, dies wird ausdrücklich vom Adobe-Support genehmigt.
 
-Weitere Informationen finden Sie in der [Dokumentation zur Software-Verteilung](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
+Weitere Informationen finden Sie im [Dokumentation zur Softwareverteilung.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de)
