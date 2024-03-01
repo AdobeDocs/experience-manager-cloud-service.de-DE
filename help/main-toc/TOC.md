@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
 workflow-type: tm+mt
-source-wordcount: '4748'
+source-wordcount: '4749'
 ht-degree: 92%
 
 ---
@@ -268,14 +268,14 @@ ht-degree: 92%
       + [Schnellstartanleitung zum Verfassen von Seiten (Authoring)](/help/sites-cloud/authoring/quick-start.md)
       + [Grundlegende Handhabung](/help/sites-cloud/authoring/basic-handling.md)
       + [Authoring und Publishing](/help/sites-cloud/authoring/author-publish.md)
-      + [Authoring - Methoden](/help/sites-cloud/authoring/authoring-methods.md)
+      + [Bearbeitungsmethoden](/help/sites-cloud/authoring/authoring-methods.md)
       + [Suchen](/help/sites-cloud/authoring/search.md)
       + [Konfigurieren der Kontoumgebung](/help/sites-cloud/authoring/account-environment.md)
       + [Ihr Posteingang](/help/sites-cloud/authoring/inbox.md)
       + [Komponentenkonsole](/help/sites-cloud/authoring/components-console.md)
       + [Pfadauswahl](/help/sites-cloud/authoring/path-selection.md)
       + [Fehlerbehebung](/help/sites-cloud/authoring/troubleshooting.md)
-      + Sites-Konsole {#sites-console}
+      + Sites Konsole {#sites-console}
          + [Die Sites-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md)
          + [Konsolenseites Bedienfeld](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
          + [Erstellen einer neuen Site](/help/sites-cloud/authoring/sites-console/create-site.md)
@@ -294,7 +294,7 @@ ht-degree: 92%
          + [Exportieren in CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
       + Seiten-Editor {#page-editor}
          + [im Seiten-Editor](/help/sites-cloud/authoring/page-editor/introduction.md)
-         + [Editor Side Panel](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
+         + [Seitenbereich des Editors](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
          + [Bearbeiten von Seiten](/help/sites-cloud/authoring/page-editor/edit-content.md)
          + [Hinzufügen von Seitenanmerkungen](/help/sites-cloud/authoring/page-editor/annotations.md)
          + [Rich-Text-Editor](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
@@ -304,7 +304,7 @@ ht-degree: 92%
          + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.1-Richtlinien)](/help/sites-cloud/authoring/page-editor/accessible-content.md)
          + [Tastaturbefehle](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [Stilsystem](/help/sites-cloud/authoring/page-editor/style-system.md)
-         + [Einschränkungen beim Rückgängigmachen](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+         + [Einschränkungen der Rückgängig Wiederholen](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + Universeller Editor {#universal-editor}
          + [Inhaltserstellung mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [Veröffentlichen von Inhalten mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
@@ -596,7 +596,7 @@ ht-degree: 92%
          + [Integrieren von AEM Forms as a Cloud Service mit Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Integrieren adaptiver Formulare in Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [Anzeigen und Verstehen des Analyseberichts zu adaptiven Formularen](/help/forms/view-understand-aem-forms-analytics-reports.md)
-         + [Senden eines adaptiven Formulars an Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+         + [Senden eines adaptiven Formular an Adobe Systems Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Integrieren eines adaptiven Formulars mit Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Einbetten eines adaptiven Formulars in eine AEM Sites-Seite](/help/forms/embed-adaptive-form-aem-sites.md)
          + [Einbetten eines auf Kernkomponenten basierenden adaptiven Formulars in eine externe Web-Seite](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
@@ -626,16 +626,16 @@ ht-degree: 92%
             + [Konfigurieren der Umleitungsseite oder der Dankesnachricht](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Erstellen von Formularen mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
             + [Konfigurieren der Übermittlungsaktion für ein adaptives Formular](/help/forms/configure-submit-actions-core-components.md)
-            + [Senden eines adaptiven Formulars an Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [Senden eines adaptiven Formulars an Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + [Verbinden eines adaptiven Formulars mit Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-            + [Integrieren AEM adaptiven Formulars in AEM Workflow](/help/forms/configure-submit-action-workflow.md)
-            + [Konfigurieren der Sendeaktion &quot;An REST-Endpunkt übermitteln&quot;für die adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
-            + [Konfigurieren der Sendeaktion &quot;E-Mail senden&quot;für ein adaptives Formular](/help/forms/configure-submit-action-send-email.md)
+            + [Senden eines adaptiven Formular an Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+            + [Senden eines adaptiven Formular an Microsoft](/help/forms/configure-submit-action-onedrive.md)
+            + [Verbinden eines adaptiven Formular mit Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+            + [Integrieren AEM adaptiven Formular in AEM Workflow](/help/forms/configure-submit-action-workflow.md)
+            + [Konfigurieren der Sendeaktion &quot;An REST-Endpunkt übermitteln&quot; für adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
+            + [Konfigurieren der Senden E-Mail-Sendeaktion für eine adaptive Formular](/help/forms/configure-submit-action-send-email.md)
             + [Verwenden von Google reCAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Hinzufügen eines benutzerdefinierten Fehler-Handlers in einem adaptiven Formular](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Hinzufügen eines Gebietsschemas für auf Kernkomponenten basierende adaptive Formulare](/help/forms/supporting-new-language-localization-core-components.md)
-            + [Benutzerdefinierte Funktionen erstellen und verwenden](/help/forms/create-and-use-custom-functions.md)
+            + [Benutzerdefinierte Erstellen und verwenden](/help/forms/create-and-use-custom-functions.md)
       + Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
          + Konvertieren von PDF-Formularen in adaptive Formulare {#afcs}
             + [Einführung in den Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de)
@@ -724,7 +724,7 @@ ht-degree: 92%
       + [Verwenden von Screens Content Provider](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [Erstellen von Screens-Video-Ausgabedarstellungen](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
       + [Konfigurieren des Dispatchers für Screens as a Cloud Service](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
-      + [Konfigurieren von Timeline-Ansichten für Screens as a Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
+      + [Konfigurieren von Timeline-Ansichten für Screens als Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
    + Erstellen von Inhalten {#create-content}
       + [Erstellen und Verwalten eines Projekts in Screens Content Provider](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [Erstellen und Verwalten eines Kanals in Screens Content Provider](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
@@ -755,8 +755,8 @@ ht-degree: 92%
          + [Erstellen von Produkterlebnissen](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
    + Integrationen {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
-      + [Live Search CIF Komponente](/help/commerce-cloud/integrating/live-search-plp.md)
-      + [Live Search Popover CIF Komponente](/help/commerce-cloud/integrating/live-search-popover.md)
+      + [Live Search CIF-Komponente](/help/commerce-cloud/integrating/live-search-plp.md)
+      + [Live-Search Popover-CIF-Komponente](/help/commerce-cloud/integrating/live-search-popover.md)
       + [Drittanbieter-Commerce-Lösung](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM-Storefront {#storefront}
@@ -784,68 +784,68 @@ ht-degree: 92%
 + Edge Delivery Services {#edge-delivery}
    + [AEM und Edge Delivery Services](/help/edge/overview.md)
    + [Verwenden von Edge Delivery](/help/edge/using.md)
-   + [Entwicklerhandbuch - Erste Schritte](/help/edge/edge-dev-getting-started.md)
+   + [Entwickler-Erste Schritte](/help/edge/edge-dev-getting-started.md)
    + [Authoring von Inhalten für die Edge-Bereitstellung](/help/edge/authoring.md)
    + [Veröffentlichen von Inhalten für die Edge-Bereitstellung](/help/edge/publishing.md)
    + [Entwickeln für die Edge-Bereitstellung](/help/edge/developing.md)
    + [Inhaltsmodellierung](/help/edge/content-modeling.md)
-   + [Erstellen von Bausteinen](/help/edge/create-block.md)
-   + [Vorhandene Projekte und Edge-Bereitstellung](/help/edge/existing-projects.md)
-   + Erstellen von Edge-Bereitstellungsanwendungen {#build}
-      + [Erste Schritte - Tutorial für Entwickler](/help/edge/developer/tutorial.md)
-      + [Anatomie eines Projekts](/help/edge/developer/anatomy-of-a-franklin-project.md)
+   + [Erstellen von Blöcken](/help/edge/create-block.md)
+   + [Vorhandene Projekte und Edge-Lieferung](/help/edge/existing-projects.md)
+   + Erstellen von Edge-Lieferung Anwendungen {#build}
+      + [Erste Schritte – Entwickler-Tutorial](/help/edge/developer/tutorial.md)
+      + [Anatomie eines Projekt](/help/edge/developer/anatomy-of-a-franklin-project.md)
       + [Blocksammlung](/help/edge/developer/block-collection.md)
       + [Tabellen](/help/edge/developer/spreadsheets.md)
       + [Formulare](/help/edge/developer/forms.md)
       + [Indizierung](/help/edge/developer/indexing.md)
-      + [100 beibehalten](/help/edge/developer/keeping-it-100.md)
+      + [100 bleiben](/help/edge/developer/keeping-it-100.md)
       + [Markup - Abschnitte](/help/edge/developer/markup-sections-blocks.md)
       + [Favicon](/help/edge/developer/favicon.md)
       + [Benutzerdefinierte Kopfzeilen](/help/edge/docs/custom-headers.md)
       + [Best Practices für Entwickler](/help/edge/docs/dev-collab-and-good-practices.md)
-   + Veröffentlichen von Edge-Bereitstellungsanwendungen {#publish}
+   + Publishing Edge Lieferung Anwendungen {#publish}
       + [Authoring](/help/edge/docs/authoring.md)
       + [Massenmetadaten](/help/edge/docs/bulk-metadata.md)
       + [Platzhalter](/help/edge/docs/placeholders.md)
       + [Sitemap](/help/edge/developer/sitemap.md)
       + [Einrichten von SharePoint](/help/edge/docs/setup-customer-sharepoint.md)
       + [Slack Bot](/help/edge/docs/slack.md)
-   + Starten von Edge-Bereitstellungsanwendungen {#launch}
-      + [Live-Checkliste aufrufen](/help/edge/docs/go-live-checklist.md)
+   + Starten von Edge-Lieferung Anwendungen {#launch}
+      + [OK Live-Checkliste](/help/edge/docs/go-live-checklist.md)
       + [Push-Invalidierung](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
       + [Cloudflare Worker-Einrichtung](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
       + [Akamai-Einrichtung](/help/edge/docs/byo-cdn-akamai-setup.md)
-      + [Schnelles Setup](/help/edge/docs/byo-cdn-fastly-setup.md)
-      + [Umleitungen](/help/edge/docs/redirects.md)
-   + Erstellen von Edge Delivery Forms {#build-forms}
+      + [Fastly-Setup](/help/edge/docs/byo-cdn-fastly-setup.md)
+      + [Leitet](/help/edge/docs/redirects.md)
+   + Erstellen von Edge-Lieferung Forms {#build-forms}
       + [Übersicht](/help/edge/docs/forms/overview.md)
       + Erste Schritte {#getting-started-eds-forms}
-         + [Erstellen und Anzeigen einer Vorschau eines Formulars](/help/edge/docs/forms/create-forms.md)
+         + [Erstellen und Vorschau eines Formulars](/help/edge/docs/forms/create-forms.md)
          + [Formular zum Senden von Daten aktivieren](/help/edge/docs/forms/submit-forms.md)
          + [Veröffentlichen eines Formulars auf der Siteseite](/help/edge/docs/forms/publish-eds-forms.md)
          + [Hinzufügen von Überprüfungen zu Formularfeldern](/help/edge/docs/forms/validate-forms.md)
-         + [Designs und Formularstil ändern](/help/edge/docs/forms/style-theme-forms.md)
-         + [Verwenden Sie Regeln, um einem Formular dynamisches Verhalten hinzuzufügen](/help/edge/docs/forms/rules-forms.md)
+         + [ändern Themen und Formularstil](/help/edge/docs/forms/style-theme-forms.md)
+         + [Verwenden von Regeln zum Hinzufügen dynamischen Verhaltens zu einem Formular](/help/edge/docs/forms/rules-forms.md)
       + Funktionen {#advanced-features-eds-forms}
-         + [Formularfragmente](/help/edge/docs/forms/form-fragments.md)
+         + [Formular Fragmente](/help/edge/docs/forms/form-fragments.md)
          + [Wiederholbare Abschnitte](/help/edge/docs/forms/repeatable-forms.md)
          + [Übersetzung](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
-         + [Dankeseite](/help/edge/docs/forms/thank-you-page-form.md)
+         + [Vielen Dank Seite](/help/edge/docs/forms/thank-you-page-form.md)
          + [Benutzerdefinierte Komponenten](/help/edge/docs/forms/custom-components-forms.md)
       + Verweise {#forms-references}
-         + [Liste der Formularblock-Komponenten](/help/edge/docs/forms/form-components.md)
-   + Ressourcen für die Edge-Bereitstellung {#resources}
+         + [Liste von Formularblock-Komponenten](/help/edge/docs/forms/form-components.md)
+   + Ressourcen für Edge-Lieferung {#resources}
       + Sidekick {#sidekick}
-         + [Verwenden von Sidekick](/help/edge/docs/sidekick.md)
-         + [Installieren der Erweiterung](/help/edge/docs/sidekick-extension.md)
-         + [Projektkonfigurator](https://www.aem.live/tools/sidekick/)
-         + [Sidekick-Bibliothek](/help/edge/docs/sidekick-library.md)
+         + [Verwenden des Sidekicks](/help/edge/docs/sidekick.md)
+         + [Installieren von Erweiterung](/help/edge/docs/sidekick-extension.md)
+         + [Projekt Konfigurator](https://www.aem.live/tools/sidekick/)
+         + [Sidekick Bibliothek](/help/edge/docs/sidekick-library.md)
       + [Häufig gestellte Fragen](/help/edge/docs/faq.md)
       + [Admin-API](https://www.aem.live/docs/admin.html)
       + [AEM Status](https://www.aemstatus.net)
       + Tools {#tools}
-         + [Sidekick Chrome-Erweiterung](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [AEM Sidekick Chrom Erweiterung](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Github Bot](https://github.com/apps/aem-code-sync)
          + [Auditprotokoll](/help/edge/docs/auditlog.md)
 + Headless {#headless}
@@ -1042,10 +1042,10 @@ ht-degree: 92%
          + [Erste Schritte mit dem universellen Editor in AEM](/help/implementing/universal-editor/getting-started.md)
          + [Entwicklerübersicht für den universellen Editor](/help/implementing/universal-editor/developer-overview.md)
          + [Attribute und Elementtypen](/help/implementing/universal-editor/attributes-types.md)
-         + [Modelldefinitionen, Felder und Komponententypen](/help/implementing/universal-editor/field-types.md)
+         + [Modelldefinitionen, -felder und -typen Komponente](/help/implementing/universal-editor/field-types.md)
          + [Authentifizierung beim universellen Editor](/help/implementing/universal-editor/authentication.md)
          + [Lokale AEM-Entwicklung mit dem universellen Editor](/help/implementing/universal-editor/local-dev.md)
-         + [Universal Editor-Aufrufe](/help/implementing/universal-editor/calls.md)
+         + [Universelle Editor-Aufrufe](/help/implementing/universal-editor/calls.md)
          + [Ereignisse](/help/implementing/universal-editor/events.md)
          + [Anpassen des universellen Editors](/help/implementing/universal-editor/customizing.md)
       + [Headless-Experience-Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=de)
@@ -1070,7 +1070,7 @@ ht-degree: 92%
          + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=de)
          + [Launch-Integration](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA-Referenzdokumente](/help/implementing/developing/hybrid/reference-materials.md)
-         + [Deaktivieren der Serialisierung von ResourceResolvers über den Sling Model Exporter](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
+         + [Verbieten Sie die Serialisierung von ResourceResolvern über den Sling Model Exporter](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
    + Entwickler-Tools {#developer-tools}
       + [Entwicklermodus](/help/implementing/developing/tools/developer-mode.md)
       + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)

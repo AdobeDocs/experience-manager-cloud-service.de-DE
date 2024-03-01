@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie das Framework für die Übersetzungsintegrati
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
 workflow-type: tm+mt
-source-wordcount: '1465'
-ht-degree: 100%
+source-wordcount: '1466'
+ht-degree: 83%
 
 ---
 
@@ -27,11 +27,11 @@ Einen Überblick über die Funktionen zur Übersetzung von Inhalten in AEM erhal
 
 ## Herstellen einer Verbindung zu einem Übersetzungsdienstleister {#connecting-to-a-translation-service-provider}
 
-Erstellen Sie eine Cloud-Konfiguration, die AEM an Ihren Übersetzungsdienstleister anbindet. AEM enthält die Funktion, standardmäßig eine [Verbindung zu Microsoft Translator herzustellen](connect-ms-translator.md).
+Erstellen Sie eine Cloud-Konfiguration, die AEM an Ihren Übersetzungsdienstleister anbindet. AEM enthält die Funktion, [standardmäßig eine Verbindung zu Microsoft® Translator](connect-ms-translator.md) herzustellen.
 
 Die folgenden Übersetzungsdienstleister bieten eine Implementierung der neuen AEM-API für Übersetzungsprojekte.
 
-* [Microsoft Translator](connect-ms-translator.md)
+* [Microsoft](connect-ms-translator.md)
 * [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
 * [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
@@ -39,11 +39,11 @@ Die folgenden Übersetzungsdienstleister bieten eine Implementierung der neuen A
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
-* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
+<!-- THIS URL IS 404 * [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html) -->
 * [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
-Wenn Sie ein Connector-Paket installiert haben, können Sie eine Cloud-Konfiguration für den Connector erstellen. In der Regel müssen Sie Ihre Anmeldedaten für die Authentifizierung beim Übersetzungs-Service angeben. Weitere Informationen zum Hinzufügen einer Cloud-Konfiguration für den Microsoft Translator-Connector finden Sie unter [Integrieren mit Microsoft Translator](connect-ms-translator.md).
+Wenn Sie ein Connector-Paket installiert haben, können Sie eine Cloud-Konfiguration für den Connector erstellen. In der Regel müssen Sie Ihre Anmeldedaten für die Authentifizierung beim Übersetzungsdienst angeben. Informationen zum Hinzufügen einer Cloud Konfiguration für den Microsoft Translator-Connector finden Sie unter Integrieren mit Microsoft®® Translator](connect-ms-translator.md).[
 
 Sie können mehrere Cloud-Konfigurationen für denselben Connector erstellen, falls erforderlich. Beispielsweise können Sie eine Konfiguration für jedes Konto oder Projekt erstellen, das Sie bei einem Anbieter haben.
 
@@ -51,7 +51,7 @@ Nach der Konfiguration einer Verbindung können Sie die Framework-Konfiguration 
 
 ## Erstellen einer Konfiguration für die Übersetzungsintegration {#creating-a-translation-integration-configuration}
 
-Erstellen Sie eine Framework-Konfiguration für die Übersetzungsintegration, um festzulegen, wie Ihre Inhalte übersetzt werden sollen. Die Konfiguration enthält die folgenden Informationen:
+Erstellen eine Übersetzungsintegration Framework Konfiguration, damit Sie festlegen können, wie Ihre Inhalte übersetzt werden sollen. Die Konfiguration enthält die folgenden Informationen:
 
 * welcher Übersetzungsanbieter eingesetzt werden soll
 * ob eine menschliche oder maschinelle Übersetzung erfolgen soll
@@ -91,7 +91,7 @@ Die Registerkarte **Sites** steuert, wie die Übersetzung von Seiteninhalten dur
 | Tags übersetzen | Diese Option ermöglicht die Übersetzung von Tags, die der Seite zugeordnet sind. |
 | Seiten-Assets übersetzen | Diese Eigenschaft definiert, wie Assets übersetzt werden, die Komponenten aus dem Dateisystem hinzugefügt oder aus Assets referenziert werden:<br>- Nicht übersetzen: Seiten-Assets werden nicht übersetzt.<br>- Workflow für Sites-Übersetzung verwenden: Assets werden entsprechend der Konfigurationseigenschaften auf der Registerkarte **Sites** bearbeitet.<br>- Workflow für Assets-Übersetzung verwenden: Assets werden entsprechend der Eigenschaften auf der Registerkarte **Assets** bearbeitet. |
 | Übersetzung automatisch durchführen | Aktivieren Sie diese Eigenschaft, um Übersetzungsaufträge nach der Erstellung von Übersetzungsprojekten automatisch auszuführen. Bei dieser Option haben Sie keine Möglichkeit, den Übersetzungsauftrag zu prüfen und seinen Umfang zu ermitteln. |
-| Deaktivieren der Übersetzung „Nur Update“. | Wenn diese Option markiert ist, werden beim Aktualisieren des Übersetzungsprojekts alle übersetzbaren Felder zur Übersetzung übermittelt, nicht nur die seit der letzten Übersetzung geänderten Felder. |
+| Deaktivieren der Übersetzung „Nur Update“. | Wenn diese Option aktiviert ist, werden beim Aktualisieren des Übersetzungsprojekts alle zu übersetzenden Felder zur Übersetzung gesendet, nicht nur diejenigen, die seit der letzten Übersetzung geändert wurden. |
 
 ### Assets-Konfigurationseigenschaften {#assets-configuration-properties}
 
@@ -105,11 +105,11 @@ Asset-Eigenschaften steuern, wie Assets konfiguriert werden. Weitere Information
 | Übersetzungsanbieter | Diese Eigenschaft definiert den Übersetzungsanbieter, der die Übersetzung ausführt. Ein Anbieter wird in der Liste angezeigt, wenn sein entsprechender Connector installiert ist. |
 | Inhaltskategorie | (Nur maschinelle Übersetzung) Diese Eigenschaft beschreibt den zu übersetzenden Inhalt. Die Kategorie kann beeinflussen, welche Terminologie und welche Formulierungen bei der Übersetzung von Inhalten verwendet werden. |
 | Assets übersetzen | Aktivieren Sie diese Eigenschaft, um Assets in das Übersetzungsprojekt einzubeziehen. |
-| Metadaten übersetzen | Aktivieren Sie diese Eigenschaft, um Asset-Metadaten zu übersetzen. |
-| Tags übersetzen | Aktivieren Sie diese Eigenschaft, um Tags zu übersetzen, die mit dem Asset verknüpft sind. |
-| Übersetzung automatisch durchführen | Wählen Sie diese Eigenschaft aus, um Übersetzungsaufträge nach der Erstellung von Übersetzungsprojekten automatisch auszuführen. Bei dieser Option haben Sie keine Möglichkeit, den Übersetzungsauftrag zu prüfen oder seinen Umfang zu ermitteln. |
-| Deaktivieren der Übersetzung „Nur Update“. | Wenn diese Option markiert ist, werden beim Aktualisieren des Übersetzungsprojekts alle übersetzbaren Felder zur Übersetzung übermittelt, nicht nur die seit der letzten Übersetzung geänderten Felder. |
-| Aktivieren von Inhaltsmodellfeldern für die Übersetzung | Durch Aktivierung dieser Option wird das Feld **Übersetzbar** in [Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) verwendet, um zu ermitteln, ob das Feld übersetzt wurde. Automatisch werden entsprechend [Übersetzungsregeln](rules.md) erstellt. Diese Option ersetzt alle Übersetzungsregeln, die Sie erstellt haben. |
+| Metadaten übersetzen | Aktivieren Sie diese Eigenschaft, damit Sie Medienelement Metadaten übersetzen können. |
+| Tags übersetzen | Aktivieren Sie diese Eigenschaft, damit Sie mit der Medienelement verknüpfte Tags übersetzen können. |
+| Übersetzung automatisch durchführen | Wählen Sie diese Eigenschaft aus, damit Sie Übersetzungsaufträge automatisch ausführen können, nachdem Übersetzungsprojekte erstellt wurden. Bei dieser Option haben Sie keine Möglichkeit, den Übersetzungsauftrag zu prüfen oder seinen Umfang zu ermitteln. |
+| Deaktivieren der Übersetzung „Nur Update“. | Wenn diese Option aktiviert ist, werden beim Aktualisieren des Übersetzungsprojekts alle zu übersetzenden Felder zur Übersetzung gesendet, nicht nur diejenigen, die seit der letzten Übersetzung geändert wurden. |
+| Aktivieren von Inhaltsmodellfeldern für die Übersetzung | Wenn Sie diese Option aktivieren, wird das Feld &quot;Übersetzbar **&quot; in [Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) verwendet, um festzustellen, ob das** Feld übersetzt ist, und es werden automatisch Übersetzungsregeln](rules.md) entsprechend erstellt[. Diese Option hat Vorrang vor etwaigen Übersetzungsregeln, die Sie erstellt haben. |
 
 ## Konfigurieren von Seiten für Übersetzungen {#configuring-pages-for-translation}
 
@@ -120,9 +120,9 @@ Um die Übersetzung Ihrer Quellseiten in andere Sprachen zu konfigurieren, verkn
 
 Die Cloud-Konfiguration des Frameworks für die Übersetzungsintegration legt fest, mit welcher Cloud-Konfiguration die Verbindung zum Dienstleister hergestellt werden soll. Wenn Sie eine Quellseite mit der Cloud-Konfiguration eines Frameworks verknüpfen, muss die Seite mit der Cloud-Konfiguration des Dienstleisters verknüpft sein, die die Cloud-Konfiguration des Frameworks nutzt.
 
-Wenn Sie eine Seite mit einer Cloud-Konfiguration verknüpfen, erben die untergeordneten Elemente der Seite diese Verknüpfung. Wenn Sie z. B. die Seite `/content/wknd/language-masters/en/magazine` mit einem Framework für die Übersetzungsintegration verknüpfen, werden die Seite `magazine` und die untergeordneten Seiten entsprechend diesem Framework übersetzt.
+Wenn Sie eine Seite mit einer Cloud-Konfiguration verknüpfen, erben die untergeordneten Elemente der Seite diese Verknüpfung. Wenn Sie die Seite z. B. mit einem Framework für Übersetzungsintegration verknüpft haben, werden die `/content/wknd/language-masters/en/magazine` `magazine` Seite und untergeordneten Seiten darunter gemäß der Framework übersetzt.
 
-Bei Bedarf können Sie die Verknüpfung auf einer untergeordneten Seite überschreiben. Beispiel: Die Inhalte einer Website drehen sich größtenteils um Reisen und Lifestyle. Ein Zweig an Seiten beschreibt dagegen das Unternehmen. In einem solchen Fall könnte die Stammseite der Site mit einem Framework für die Übersetzungsintegration verknüpft sein, das die maschinelle Übersetzung mit der Kategorie „Lifestyle“ festlegt, während der Zweig, der das Unternehmen beschreibt, ein Framework verwenden würde, das die maschinelle Übersetzung mit der Kategorie „Allgemein“ durchführt.
+Bei Bedarf können Sie die Verknüpfung auf einer untergeordneten Seite überschreiben. Beispiel: Die Inhalte einer Website drehen sich größtenteils um Reisen und Lifestyle. Ein Zweig an Seiten beschreibt dagegen das Unternehmen. In einem solchen Fall kann der Stamm Seite der Website einem Framework für die Übersetzungsintegration zugeordnet sein, das die maschinelle Übersetzung mithilfe der Lifestyle-Kategorie angibt. Die Verzweigung, die die Firma beschreibt, verwendet eine Framework, die die maschinelle Übersetzung mithilfe der allgemeinen Kategorie ausführt.
 
 ### Verknüpfen einer Seite mit einem Übersetzungsdienstleister {#associating-a-page-with-a-translation-provider}
 

@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
 workflow-type: tm+mt
-source-wordcount: '2559'
-ht-degree: 99%
+source-wordcount: '2298'
+ht-degree: 97%
 
 ---
 
@@ -28,15 +28,15 @@ Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine 
 
 ## Was Sie erstellen werden
 
-Die Marke Venia hat vor kurzem begonnen, Produkte mit nachhaltigen Materialien zu produzieren, und das Unternehmen möchte als Teil des Produkt-Teasers ein Zeichen für **Umweltfreundlich** anzeigen. In Adobe Commerce wurde ein neues benutzerdefiniertes Attribut erstellt, das angibt, ob ein Produkt das **umweltfreundliche** Material verwendet. Dieses benutzerspezifische Attribut wird als Teil der GraphQL-Abfrage hinzugefügt und im Produkt-Teaser bei bestimmten Produkten angezeigt.
+Die Marke Venia hat vor kurzem begonnen, Produkte mit nachhaltigen Materialien zu produzieren, und das Unternehmen möchte als Teil des Produkt-Teasers ein Zeichen für **Umweltfreundlich** anzeigen. In Adobe Commerce wird ein neues benutzerdefiniertes Attribut erstellt, das angibt, ob ein Produkt **umweltfreundliches** Material verwendet. Dieses benutzerspezifische Attribut wird als Teil der GraphQL-Abfrage hinzugefügt und im Produkt-Teaser für bestimmte Produkte angezeigt.
 
 ![Abzeichen für „Umweltfreundlich“ – endgültige Implementierung](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
 ## Voraussetzungen {#prerequisites}
 
-Zum Absolvieren dieses Tutorials ist eine lokale Entwicklungsumgebung erforderlich. Diese Umgebung umfasst eine laufende Instanz von AEM, die konfiguriert und mit einer Adobe Commerce-Instanz verbunden ist. Überprüfen Sie die Anforderungen und Schritte zum [Einrichten einer lokalen Entwicklungsumgebung mit dem AEM as a Cloud Service SDK](../develop.md). Zum Absolvieren des ganzen Tutorials benötigen Sie Berechtigungen, um in Adobe Commerce [Attribute einem Produkt](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) hinzufügen zu können.
+Zum Absolvieren dieses Tutorials ist eine lokale Entwicklungsumgebung erforderlich. Diese Umgebung umfasst eine laufende Instanz von AEM, die konfiguriert und mit einer Adobe Commerce-Instanz verbunden ist. Überprüfen Sie die Anforderungen und Schritte zum [Einrichten einer lokalen Entwicklungsumgebung mit dem AEM as a Cloud Service SDK](../develop.md). Um die Anleitung vollständig zu folgen, müssen Sie Berechtigung, um einem Produkt](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Systems Commerce Attribute hinzuzufügen[.
 
-Außerdem benötigen Sie eine GraphQL-IDE wie [GraphiQL](https://github.com/graphql/graphiql) oder eine Browser-Erweiterung, um die Code-Beispiele und Tutorials ausführen zu können. Wenn Sie eine Browser-Erweiterung installieren, vergewissern Sie sich, dass sie Anfrage-Header setzen kann. In Google Chrome ist der [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) eine Erweiterung, die dazu geeignet ist.
+Außerdem benötigen Sie eine GraphQL-IDE wie [GraphiQL](https://github.com/graphql/graphiql) oder eine Browser-Erweiterung, um die Code-Beispiele und Tutorials ausführen zu können. Wenn Sie eine Browser-Erweiterung installieren, vergewissern Sie sich, dass sie Anfrage-Header setzen kann. In Google Chrome ist der _Altair GraphQL Client_ eine Erweiterung, die dazu geeignet ist.
 
 ## Venia-Projekt klonen {#clone-venia-project}
 
@@ -59,7 +59,7 @@ Klonen Sie das [Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia), u
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. Fügen Sie die erforderlichen OSGi-Konfigurationen hinzu, damit Sie Ihre AEM-Instanz mit einer Adobe Commerce-Instanz verbinden oder die Konfigurationen zum erstellten Projekt hinzufügen können.
+1. Fügen Sie die erforderlichen OSGi-Konfigurationen hinzu, um Ihre AEM-Instanz mit einer Adobe Commerce-Instanz zu verbinden, oder fügen Sie die Konfigurationen zum erstellten Projekt hinzu.
 
 1. An diesem Punkt sollten Sie über eine funktionierende Version einer Storefront verfügen, die mit einer Adobe Commerce-Instanz verbunden ist. Navigieren Sie zur Seite `US` > `Home` unter: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -126,7 +126,7 @@ Die in AEM angezeigten Produkte und Produktdaten werden in Adobe Commerce gespei
    >
    > Weitere Informationen zur Verwaltung von [Produktattributen finden Sie im Adobe Commerce-Benutzerhandbuch](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
 
-1. Navigieren Sie zu **System** > **Tools** > **Cache-Verwaltung**. Da das Datenschema aktualisiert wurde, müssen Sie einige der Cache-Typen in Adobe Commerce invalidieren.
+1. Navigieren Sie zu **System** > **Tools** > **Cache-Verwaltung**. Da das Datenschema aktualisiert wurde, müssen Sie einige Cache-Typen in Adobe Commerce invalidieren.
 1. Aktivieren Sie das Kontrollkästchen neben **Konfiguration** und senden Sie den Cache-Typ zum **Aktualisieren**.
 
    ![Cache-Typ von Konfiguration aktualisieren](../assets/customize-cif-components/refresh-configuration-cache-type.png)
@@ -139,7 +139,7 @@ Die in AEM angezeigten Produkte und Produktdaten werden in Adobe Commerce gespei
 
 Bevor Sie sich in den AEM-Code stürzen, ist es sinnvoll, die [GraphQL-Übersicht](https://devdocs.magento.com/guides/v2.4/graphql/) mit einer GraphQL-IDE zu erkunden. Die Adobe Commerce-Integration mit AEM erfolgt hauptsächlich über eine Reihe von GraphQL-Abfragen. Das Verstehen und Ändern der GraphQL-Abfragen ist eine der wichtigsten Methoden zum Erweitern der CIF-Kernkomponenten.
 
-Verwenden Sie anschließend eine GraphQL-IDE, um zu prüfen, ob das `eco_friendly`-Attribut dem Produktattributsatz hinzugefügt wurde. Screenshots in diesem Tutorial stellen den [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) dar.
+Verwenden Sie anschließend eine GraphQL-IDE, um zu prüfen, ob das `eco_friendly`-Attribut dem Produktattributsatz hinzugefügt wurde. Screenshots in diesem Anleitung verwenden die _Altair GraphQL Client_ Google Chrom Erweiterung.
 
 1. Öffnen Sie die GraphQL-IDE und geben Sie die URL `http://<commerce-server>/graphql` in die URL-Leiste Ihrer IDE oder Erweiterung ein.
 2. Fügen Sie die folgende [Produktabfrage](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) hinzu, wobei `YOUR_SKU` die **SKU** des in der vorherigen Übung verwendeten Produkts ist:
@@ -186,7 +186,7 @@ Verwenden Sie anschließend eine GraphQL-IDE, um zu prüfen, ob das `eco_friendl
 
 ## Sling-Modell für den Produkt-Teaser aktualisieren {#updating-sling-model-product-teaser}
 
-Als Nächstes erweitern Sie die Geschäftslogik des Produkt-Teasers, indem Sie ein Sling-Modell implementieren. [Sling-Modelle](https://sling.apache.org/documentation/bundles/models.html) sind von Anmerkungen gesteuerte „POJOs“ (Plain Old Java™ Objects), die eine Geschäftslogik implementieren, die von der Komponente benötigt wird. Sling-Modelle werden mit den HTL-Skripten als Teil der Komponente verwendet. Folgen Sie dem [Delegationsmuster für Sling-Modelle](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models), damit Sie Teile des bestehenden Produkt-Teaser-Modells erweitern können.
+Als Nächstes erweitern Sie die Geschäftslogik des Produkt-Teasers, indem Sie ein Sling-Modell implementieren. [Sling-Modelle](https://sling.apache.org/documentation/bundles/models.html) sind Anmerkung gesteuerte &quot;POJOs&quot; (Plain Old Java™ Objects), die von der Komponente benötigt implementieren Business-Logik. Sling-Modelle werden mit den HTL-Skripten als Teil der Komponente verwendet. Folgen Sie dem [Delegationsmuster für Sling-Modelle](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models), damit Sie Teile des bestehenden Produkt-Teaser-Modells erweitern können.
 
 Sling-Modelle werden als Java™ implementiert und können im **Kernmodul** des erstellten Projekts gefunden werden.
 
@@ -486,7 +486,7 @@ An diesem Punkt funktioniert die Logik dafür, wann das Zeichen **Umweltfreundli
 
 ## Herzlichen Glückwunsch {#congratulations}
 
-Sie haben Ihre erste AEM CIF-Komponente angepasst! Laden Sie die [fertigen Lösungsdateien hier](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip) herunter.
+Sie haben Ihre erste AEM-CIF-Komponente angepasst. Laden Sie die [fertigen Lösungsdateien hier](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip) herunter.
 
 ## Bonusaufgabe {#bonus-challenge}
 
