@@ -2,10 +2,10 @@
 title: Arbeiten mit Inhaltsfragmenten (Assets - Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenerstellung und die Headless-Bereitstellung eignen.  Auch wie sie zusammen mit MSM verwendet werden können.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 98%
+source-wordcount: '2228'
+ht-degree: 97%
 
 ---
 
@@ -113,16 +113,6 @@ Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser struktu
 >[!NOTE]
 >
 >AEM unterstützt auch die Übersetzung von Fragmentinhalten. Weitere Informationen finden Sie unter [Übersetzen von Assets](/help/assets/translate-assets.md).
-
-## Wiederverwenden von Inhaltsfragmenten mit MSM für Assets {#reusing-content-fragments-with-msm-assets}
-
-Beim Zugriff über die **Assets**-Konsole können Sie MSM verwenden und Live Copys für Ihre Fragmente erstellen.
-
-Weitere Details finden Sie unter [Wiederverwenden von Inhaltsfragmenten mit MSM für Assets](/help/assets/reuse-assets-using-msm.md). Dies ermöglicht die [Vererbung](/help/assets/content-fragments/content-fragments-variations.md#inheritance) für Varianten und einzelne Felder Ihrer Fragmente.
-
->[!CAUTION]
->
->Wenn Sie MSM verwenden wollen (welches Kopien von Inhaltsfragmenten erstellt), dann sollten alle **Eindeutig**-Einschränkungen aus allen Datentypen entfernt werden, die in den jeweiligen [Inhaltsfragmentmodellen](/help/assets/content-fragments/content-fragments-models.md) verwendet werden.
 
 ## Inhaltstyp {#content-type}
 
@@ -297,6 +287,21 @@ Um Ihre Inhaltsfragmente zum Erstellen von Seiten zu verwenden, benötigen Sie a
    * Zuständig für das Layout und die Bereitstellung eines Fragments, d. h. Kanäle.
    * Fragmente benötigen eine oder mehrere dedizierte Komponenten zur Definition des Layouts sowie zur Bereitstellung einiger oder aller Elemente/Varianten und zugehörigen Inhalte.
    * Durch Ziehen eines Fragments auf eine Seite während der Bearbeitung wird die erforderliche Komponente automatisch zugewiesen.
+
+## Wiederverwenden von Inhaltsfragmenten mit MSM (für Assets) {#reusing-content-fragments-with-msm-assets}
+
+Beim Zugriff über die **Assets**-Konsole können Sie MSM verwenden und Live Copys für Ihre Fragmente erstellen.
+
+Weitere Informationen finden Sie unter:
+
+* [Wiederverwenden von Inhaltsfragmenten mit MSM (für Assets)](/help/assets/content-fragments/content-fragments-msm.md)
+* [Wiederverwenden von Assets mit MSM für Assets](/help/assets/reuse-assets-using-msm.md).
+
+Diese ermöglichen [Vererbung](/help/assets/content-fragments/content-fragments-variations.md#inheritance) für Varianten und einzelne Felder Ihrer Fragmente.
+
+>[!CAUTION]
+>
+>Wenn Sie MSM verwenden wollen (welches Kopien von Inhaltsfragmenten erstellt), dann sollten alle **Eindeutig**-Einschränkungen aus allen Datentypen entfernt werden, die in den jeweiligen [Inhaltsfragmentmodellen](/help/assets/content-fragments/content-fragments-models.md) verwendet werden.
 
 ## Anwendungsbeispiel {#example-usage}
 

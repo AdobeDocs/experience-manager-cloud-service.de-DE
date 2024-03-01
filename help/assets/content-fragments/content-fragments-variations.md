@@ -2,7 +2,7 @@
 title: Varianten - Erstellen von Fragmentinhalten (Assets - Inhaltsfragmente)
 description: Erfahren Sie, wie Inhaltsfragmentvarianten es Ihnen ermöglichen, Inhalte für das Fragment zu erstellen, dann Varianten dieses Inhalts entsprechend dem Zweck zu erstellen und so die Flexibilität zu erhöhen.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 96%
@@ -404,7 +404,7 @@ Es wird an der aktuellen Position in Ihrem Fragment als Referenz hinzugefügt.
 
 ## Vererbung {#inheritance}
 
-Vererbung ist der Mechanismus, bei dem Inhalte automatisch von einer Komponente in eine andere verschoben werden können. Vererbte Felder und Varianten können das Produkt von [Multi-Site-Management](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets) sein.
+Vererbung ist der Mechanismus, bei dem Inhalte automatisch von einer Komponente in eine andere verschoben werden können. Vererbte Felder und Varianten können das Produkt von [Multi-Site-Management](/help/assets/content-fragments/content-fragments-msm.md) sein.
 
 Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Je nach Kontext kann dies für eine Variante oder ein einzelnes Feld verfügbar sein, wenn das Fragment Teil einer Live Copy ist.
 
