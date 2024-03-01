@@ -4,9 +4,9 @@ description: Design und Stil für ein AEM Forms Edge Delivery Service-Formular a
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Formularfelder formatieren
 
-Forms ist von entscheidender Bedeutung für die Benutzerinteraktion auf Websites, sodass sie Daten eingeben können. In diesem Handbuch werden die Grundlagen für die Formatierung verschiedener Formularfelder im [Formularblock](/help/edge/docs/forms/create-forms.md), mit dem Sie visuell ansprechende und benutzerfreundliche Formulare erstellen können.
+Forms ist von entscheidender Bedeutung für die Benutzerinteraktion auf Websites, sodass sie Daten eingeben können. In diesem Handbuch werden die Grundlagen für die Formatierung verschiedener Formularfelder im [Adaptiver Formularblock](/help/edge/docs/forms/create-forms.md), mit dem Sie visuell ansprechende und benutzerfreundliche Formulare erstellen können.
 
 ## Grundlagen zu Formularfeldtypen
 
-Bevor wir uns mit der Formatierung befassen, sollten wir die allgemeinen Formularfeldtypen überprüfen, die vom Formularblock unterstützt werden:
+Bevor wir uns mit der Formatierung befassen, sollten wir die allgemeinen Formularfeldtypen überprüfen, die vom Baustein &quot;Adaptives Formular&quot;unterstützt werden:
 
 * Eingabefelder: Dazu gehören Texteingaben, E-Mail-Eingaben, Kennworteingaben und mehr.
 * Kontrollkästchengruppen: Dient zum Auswählen mehrerer Optionen.
@@ -35,7 +35,7 @@ Grundlegende CSS-Konzepte sind vor der Formatierung bestimmter Formularfelder vo
 * Box Model: Das CSS-Box-Modell beschreibt die Struktur von HTML-Elementen als Inhaltsbereich, der von Abstand, Rahmen und Rändern umgeben ist.
 * Flexbox/Grid: CSS Flexbox- und Rasterlayouts sind leistungsstarke Tools zum Erstellen responsiver und flexibler Designs.
 
-## Formatieren eines Formulars für Formularblöcke
+## Formatieren eines Formulars für adaptive Formularblöcke
 
 Der Formularblock bietet eine standardisierte HTML-Struktur, die die Auswahl und Formatierung von Formularkomponenten vereinfacht:
 
