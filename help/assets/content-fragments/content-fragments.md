@@ -2,16 +2,16 @@
 title: Arbeiten mit Inhaltsfragmenten (Assets - Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenerstellung und die Headless-Bereitstellung eignen.  Auch wie sie zusammen mit MSM verwendet werden können.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
+source-git-commit: 02b96c27f985492396cfbd262b9fec450ec8d2c8
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2222'
 ht-degree: 97%
 
 ---
 
 # Arbeiten mit Inhaltsfragmenten {#working-with-content-fragments}
 
-In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten [seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen](/help/sites-cloud/authoring/fragments/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten. Dies eignet sich ideal für die Headless-Bereitstellung.  Sie können auch zusammen mit [Multi-Site-Management verwendet werden, um die Wiederverwendung Ihrer Inhalte zu ermöglichen](#reusing-content-fragments-with-msm-assets).
+In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten [seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen](/help/sites-cloud/authoring/fragments/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten. Dies eignet sich ideal für die Headless-Bereitstellung.  Sie können auch zusammen mit [Multi-Site-Management verwendet werden, um die Wiederverwendung Ihrer Inhalte zu ermöglichen](#reusing-content-fragments-with-msm).
 
 Inhaltsfragmente enthalten strukturierten Inhalt:
 
@@ -50,7 +50,7 @@ Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurier
 * [Verwenden verknüpfter Inhalte](/help/assets/content-fragments/content-fragments-assoc-content.md) – Hinzufügen verknüpfter Inhalte
 * [Metadaten – Fragmenteigenschaften](/help/assets/content-fragments/content-fragments-metadata.md) – Anzeigen und Bearbeiten der Fragmenteigenschaften
 * Verwenden Sie [Inhaltsfragmente zusammen mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md), um Inhalte für die Verwendung in Ihren Anwendungen bereitzustellen. Dabei kann es Ihnen helfen, die [JSON-Ausgabe](/help/assets/content-fragments/content-fragments-json-preview.md) in der Vorschau anzeigen.
-* [Wiederverwenden von Inhaltsfragmenten mit MSM für Assets](#reusing-content-fragments-with-msm-assets)
+* [Wiederverwenden von Inhaltsfragmenten mit MSM](#reusing-content-fragments-with-msm)
 
 >[!NOTE]
 >
@@ -288,13 +288,13 @@ Um Ihre Inhaltsfragmente zum Erstellen von Seiten zu verwenden, benötigen Sie a
    * Fragmente benötigen eine oder mehrere dedizierte Komponenten zur Definition des Layouts sowie zur Bereitstellung einiger oder aller Elemente/Varianten und zugehörigen Inhalte.
    * Durch Ziehen eines Fragments auf eine Seite während der Bearbeitung wird die erforderliche Komponente automatisch zugewiesen.
 
-## Wiederverwenden von Inhaltsfragmenten mit MSM (für Assets) {#reusing-content-fragments-with-msm-assets}
+## Wiederverwenden von Inhaltsfragmenten mit MSM {#reusing-content-fragments-with-msm}
 
 Beim Zugriff über die **Assets**-Konsole können Sie MSM verwenden und Live Copys für Ihre Fragmente erstellen.
 
 Weitere Informationen finden Sie unter:
 
-* [Wiederverwenden von Inhaltsfragmenten mit MSM (für Assets)](/help/assets/content-fragments/content-fragments-msm.md)
+* [Wiederverwenden von Inhaltsfragmenten mit MSM](/help/assets/content-fragments/content-fragments-msm.md)
 * [Wiederverwenden von Assets mit MSM für Assets](/help/assets/reuse-assets-using-msm.md).
 
 Diese ermöglichen [Vererbung](/help/assets/content-fragments/content-fragments-variations.md#inheritance) für Varianten und einzelne Felder Ihrer Fragmente.
