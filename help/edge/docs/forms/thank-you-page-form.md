@@ -4,38 +4,49 @@ description: Erfahren Sie, wie Sie Dankeseiten und Weiterleitungen für EDS Form
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: cadeccd916884ca2437e2b2684771c181cc8281e
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 0%
+source-wordcount: '545'
+ht-degree: 1%
 
 ---
 
 
-# Konfigurieren von Dankeseiten und Weiterleitungen in adaptiven Forms-Blöcken
+# Dankeseite oder Umleitungsformular nach der Übermittlung anzeigen
 
-Dankeseiten und Umleitungen sind wichtige Aspekte der Verbesserung des Benutzererlebnisses, die Benutzern eine Bestätigung, klare Kommunikation und reibungslose Navigation nach der Formularübermittlung bieten.
+Nachdem ein Benutzer ein Formular gesendet hat, ist es entscheidend, ein nahtloses Erlebnis entweder über eine Dankeseite oder eine Umleitung bereitzustellen. Diese Elemente bestätigen nicht nur die erfolgreiche Übermittlung, sondern verbessern auch die Benutzerzufriedenheit und führen sie bei ihrer Journey weiter.
 
-## Konfigurieren von Dankeseiten
+* **Danksagungsseite**: Eine Dankeseite ist ein Eckpfeiler der Benutzererfahrung, der Sicherheit bietet und wichtige Informationen vermittelt und gleichzeitig die Markenidentität stärkt. Es dient als direkte Anerkennung der Aktion des Benutzers und fördert ein Gefühl der Fertigstellung und Zufriedenheit.
 
-Dankeseiten dienen als beruhigende Bestätigung für Benutzer und ermöglichen es Unternehmen, wichtige Informationen zu kommunizieren und gleichzeitig die Markenidentität zu stärken. Führen Sie die folgenden Schritte aus, um eine Dankeseite für EDS Forms zu konfigurieren:
+* **Umleiten**: Eine Umleitung spielt eine zentrale Rolle bei der Lenkung der Benutzer zu relevanten Zielen, der Optimierung der Interaktion und letztendlich der Steigerung der Konversionsraten. Durch eine Umleitung, die Benutzer nahtlos zum nächsten Schritt im Journey führt, wird eine reibungslose Navigation gewährleistet. Beispielsweise die Umleitung des Benutzers zur Zahlungsseite nach der Erfassung anfänglicher Details.
+
+Im Block Adaptive Forms wird standardmäßig eine Dankeseite angezeigt. Sie haben jedoch die Flexibilität, dieses Erlebnis an Ihre spezifischen Anforderungen anzupassen. Zu den Optionen gehören:
+
+* [Konfigurieren der Dankeseite und -nachricht zur Anpassung an Ihre Marken- und Kommunikationsziele](#configuring-the-thank-you-page-and-message)
+* [Weiterleiten von Benutzern zu einer anderen Seite nach der Übermittlung](#redirect-users-to-another-page-post-submission)die Journey weiter zu verbessern
+
+## Konfigurieren der Dankeseite und -meldung
+
+Das Standardverhalten des Bausteins Adaptive Forms besteht darin, bei der Übermittlung die Dankeseite anzuzeigen. Führen Sie die folgenden Schritte aus, um die Dankeseite für Ihren adaptiven Forms-Block zu konfigurieren:
 
 1. Rufen Sie den Ordner AEM Edge-Bereitstellungsprojekt in Microsoft SharePoint oder Google Workspace auf.
 1. Erstellen Sie in Ihrem Projektverzeichnis eine Microsoft Word- oder Google Docs-Datei mit dem Namen &quot;Danke&quot;.
-1. Fügen Sie Ihre Dankesnachricht zur Datei &quot;Danke&quot; hinzu.
+1. Fügen Sie Ihre Dankesnachricht zur Datei &quot;Danke&quot; hinzu. </br>
+
    ![Beispiel-Dankeseite](/help/edge/assets/sample-thankyou-page.png)
+
 1. Verwenden Sie AEM Sidekick, um die Datei &quot;Danke&quot; in der Vorschau anzuzeigen und zu veröffentlichen.
 
-## Weiterleiten von Benutzern nach Übermittlung
+Ihr adaptiver Forms-Block zeigt die Dankeseite bei der Formularübermittlung an.
 
-Die Umleitung erleichtert nahtlose Journey, indem sie Benutzer zu relevanten Zielen führt, die Interaktion optimiert und die Konversionsraten erhöht.
+## Umleiten von Benutzern zu einer anderen Seite nach der Übermittlung
 
 Standardmäßig leitet der Block Adaptive Forms die Benutzer zur &quot;Dankeseite&quot;weiter. Um Benutzer auf eine andere Seite als die standardmäßige &quot;Danksagungsseite&quot;umzuleiten, haben Sie zwei Optionen:
 
-* entweder die vorhandene Dankeseite durch eine andere Seite ersetzen oder
+* entweder die vorhandene &quot;Danksagungsseite&quot;durch eine andere Seite ersetzen oder
 * leitet die &quot;Danksagungsseite&quot; zu einer anderen Seite Ihrer Wahl weiter.
 
-### Ersetzen Sie die vorhandene &quot;Danksagungsseite&quot;
+### Vorhandene &quot;Dankeseite&quot;ersetzen
 
 1. Öffnen Sie &quot;[EDS-Projekt]/blocks/form/form.js&quot;zur Bearbeitung.
 1. Ändern Sie die `thankyou` in der folgenden Zeile auf die gewünschte Seite klicken:
@@ -63,4 +74,12 @@ Standardmäßig leitet der Block Adaptive Forms die Benutzer zur &quot;Dankeseit
 
 Konfigurieren Sie eine Website-Umleitung, um die &quot;Danke&quot;-Seite auf eine andere Seite umzuleiten. Siehe Abschnitt [Umleitungs-Dokumentation](https://www.aem.live/docs/redirects) für detaillierte Anweisungen.
 
+## Mehr anzeigen
 
+* [Formularkomponenten](/help/edge/docs/forms/form-components.md)
+* [Formularfeldeigenschaften](/help/edge/docs/forms/eds-form-field-properties)
+* [Erstellen und Anzeigen einer Vorschau eines Formulars](/help/edge/docs/forms/create-forms.md)
+* [Formular zum Senden von Daten aktivieren](/help/edge/docs/forms/submit-forms.md)
+* [Veröffentlichen eines Formulars auf der Siteseite](/help/edge/docs/forms/publish-eds-forms.md)
+* [Hinzufügen von Überprüfungen zu Formularfeldern](/help/edge/docs/forms/validate-forms.md)
+* [Designs und Formularstil ändern](/help/edge/docs/forms/style-theme-forms.md)
