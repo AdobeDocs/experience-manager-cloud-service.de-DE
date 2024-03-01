@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: e5a48cfd042c0e8d7448007854e1f73bded8cf7f
 workflow-type: tm+mt
-source-wordcount: '3125'
-ht-degree: 94%
+source-wordcount: '3209'
+ht-degree: 91%
 
 ---
 
@@ -43,6 +43,12 @@ Sie können auch verschiedene Eigenschaften definieren, zum Beispiel: **Tags**, 
    ![Titel und Beschreibung](assets/cf-cfmodels-create.png)
 
 1. Verwenden Sie **Erstellen**, um das leere Modell zu speichern. Eine Meldung zeigt den Erfolg der Aktion an. Sie können **Öffnen** auswählen, um das Modell sofort zu bearbeiten, oder **Fertig**, um zur Konsole zurückzukehren.
+
+>[!CAUTION]
+>
+>Wenn Sie mehrere referenzierte Fragmente abfragen, wird nicht empfohlen, dass die verschiedenen Fragmentmodelle Feldnamen mit demselben Namen, aber unterschiedlichen Typen haben.
+>
+>Weitere Informationen finden Sie unter [GraphQL-API für die Verwendung mit Inhaltsfragmenten AEM - Einschränkungen](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Inhaltsfragmentmodell – Eigenschaften {#content-fragment-model-properties}
 
@@ -290,6 +296,12 @@ AEM bietet Schutz vor Wiederholungen für:
 * Inhaltsverweise Dies verhindert, dass der Benutzer eine Referenz zum aktuellen Fragment hinzufügt, und kann zu einem leeren Dialogfeld für die Auswahl von Fragmentverweisen führen.
 >
 * Fragmentverweise in GraphQL Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die von einander referenziert werden, wird beim ersten Auftreten null zurückgegeben.
+
+>[!CAUTION]
+>
+Wenn Sie mehrere referenzierte Fragmente abfragen, wird nicht empfohlen, dass die verschiedenen Fragmentmodelle Feldnamen mit demselben Namen, aber unterschiedlichen Typen haben.
+>
+Weitere Informationen finden Sie unter [GraphQL-API für die Verwendung mit Inhaltsfragmenten AEM - Einschränkungen](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Inhaltsreferenz {#content-reference}
 

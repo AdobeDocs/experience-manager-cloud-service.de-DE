@@ -3,10 +3,10 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: fd0f0fdfc0aaf02d631b9bf909fcb1e1431f5401
+source-git-commit: a8fbf0a9a1f7e12b6a668544b1a67d8551abf1b7
 workflow-type: tm+mt
-source-wordcount: '4994'
-ht-degree: 94%
+source-wordcount: '5135'
+ht-degree: 91%
 
 ---
 
@@ -1125,6 +1125,31 @@ Zum Schutz vor potenziellen Problemen gibt es Standardbeschränkungen für Abfra
 * Die Abfrage darf nicht mehr als 1M (1024 * 1024) Zeichen enthalten
 * Die Abfrage darf nicht mehr als 15.000 Token enthalten.
 * Die Abfrage darf nicht mehr als 200000 Whitespace-Token enthalten.
+
+Außerdem müssen Sie Folgendes beachten:
+
+* Ein Feldkonfliktfehler wird zurückgegeben, wenn Ihre GraphQL-Abfrage Felder mit demselben Namen in zwei (oder mehr) Modellen enthält:
+
+   * Wo also:
+
+      * Zwei (oder mehr Modelle) werden als mögliche Verweise verwendet, wenn sie als zulässig definiert sind **Modelltyp** in der Inhaltsfragmentreferenz.
+
+     und:
+
+      * Diese beiden Modelle haben Felder mit einem gemeinsamen Namen. Das bedeutet, dass in beiden Modellen der gleiche Name vorkommt.
+
+     und
+
+      * Diese Felder weisen unterschiedliche Datentypen auf.
+
+   * Zum Beispiel:
+
+      * Wenn zwei (oder mehr) Fragmente mit verschiedenen Modellen (z. B. `M1`, `M2`) als mögliche Verweise (Inhaltsreferenz oder Fragmentverweis) aus einem anderen Fragment verwendet werden, z. B. `Fragment1` `MultiField/List`
+      * Und diese beiden Fragmente mit verschiedenen Modellen (`M1`, `M2`) Felder mit demselben Namen, aber unterschiedlichen Typen haben.
+Beispiel:
+         * `M1.Title` as `Text`
+         * `M2.Title` as `Text/MultiField`
+      * Dann tritt ein Feldkonfliktfehler auf, wenn die GraphQL-Abfrage die `Title` -Feld.
 
 ## Häufig gestellte Fragen {#faqs}
 
