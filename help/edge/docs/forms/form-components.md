@@ -4,20 +4,21 @@ description: Dieses Dokument bietet einen Überblick über die Formularkomponent
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '913'
 ht-degree: 3%
 
 ---
 
 
-# Formularkomponenten
+# Entwicklerhandbuch zu Formularkomponenten und -eigenschaften: AEM Forms Edge Delivery Service
 
 Mit AEM Forms Edge Delivery Service können Sie benutzerfreundliche und interaktive Formulare mit verschiedenen Komponenten erstellen. Diese Komponenten decken unterschiedliche Arten der Datenerfassung ab und können einfach an Ihre spezifischen Anforderungen angepasst werden.
 
-Der Baustein &quot;Adaptives Formular&quot;generiert eine [einheitliche HTML-Struktur](/help/edge/docs/forms/style-theme-forms.md) für alle Feldtypen und Container (Bereiche), die die Konsistenz sicherstellen. Diese einheitliche Struktur erleichtert [Formular formatieren](/help/edge/docs/forms/style-theme-forms.md).
+![Eine Beispieltabelle mit einigen Komponenten und Eigenschaften](/help/edge/assets/sample-form-in-spreadsheet.png)
 
+Der Baustein &quot;Adaptives Formular&quot;generiert eine [einheitliche HTML-Struktur](/help/edge/docs/forms/style-theme-forms.md) für alle Feldtypen und Container (Bereiche), die die Konsistenz sicherstellen. Diese einheitliche Struktur erleichtert [Formular formatieren](/help/edge/docs/forms/style-theme-forms.md).
 
 ## Verfügbare Komponenten
 
@@ -38,6 +39,8 @@ Im Folgenden finden Sie eine Übersicht über die verfügbaren Komponenten:
 - Bedienfelder/Container: Zum Gruppieren von verwandten Formularelementen für eine bessere Organisation. Es handelt sich um eine Kombination aus [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) und [legend](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
 
 
+
+
 ## Komponenteneigenschaften
 
 Jede Formularkomponente enthält verschiedene Eigenschaften, mit denen Sie das Verhalten und Erscheinungsbild steuern können. Hier werden die Eigenschaften unterstützt, die von den Komponenten für adaptive Formularblöcke unterstützt werden:
@@ -45,7 +48,7 @@ Jede Formularkomponente enthält verschiedene Eigenschaften, mit denen Sie das V
 
 | Property | Anwendbare Komponenten | Details |
 |--------------|------------------------------|----------------------------------------------------------------------|
-| Typ | Alle | Gibt den Typ der Komponente an. Diese Eigenschaft bestimmt das Verhalten und Erscheinungsbild des Eingabefelds. Bei Texteingaben kann der Typ beispielsweise &quot;text&quot;, &quot;email&quot; für E-Mail-Eingaben und &quot;password&quot; für Kennworteingaben lauten. Der Baustein für adaptive Formulare unterstützt alle gültigen HTML 5 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">Eingabetypen</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, und <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> als Typ. |
+| Typ | Alle | Gibt den Typ der Komponente an. Diese Eigenschaft bestimmt das Verhalten und Erscheinungsbild des Eingabefelds. Bei Texteingaben kann der Typ beispielsweise &quot;text&quot;, &quot;email&quot; für E-Mail-Eingaben und &quot;password&quot; für Kennworteingaben lauten. Bausteine für adaptive Formulare unterstützen  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">alle gültigen HTML5-Eingabetypen</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, und <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> als Typ. |
 | Name | Alle | Identifiziert die Komponente für die Formularübermittlung. Das Attribut name wird verwendet, wenn die Formulardaten an den Server gesendet werden und die Benutzereingabe mit einem bestimmten Feld verknüpft wird. |
 | Bezeichnung | Alle | Stellt Benutzern kontextbezogene Informationen bereit. Die Beschriftung ist der Text, der neben der Komponente angezeigt wird und Benutzern Hinweise dazu gibt, welche Informationen einzugeben sind. |
 | Wert  | Text, Kennwort, E-Mail, Zahl, Bereich, Datum und seine Varianten (datetime-local, Monat, Woche, Zeit), Kontrollkästchen, Radio, Ausgeblendet, Senden, Schaltfläche | Gibt den Anfangswert der Komponente an. Bei Texteingaben, Textbereichen und ausgewählten Elementen ist dies der Standardtext oder die angezeigte Option. Bei Optionsfeld- und Kontrollkästchen-Komponenten ist dies der Wert/die Daten, der/die bei der Auswahl übermittelt wird. Das Attribut value ist optional, sollte jedoch für Kontrollkästchen und Optionsfelder als obligatorisch betrachtet werden. |
@@ -192,4 +195,12 @@ Here is the table which outlines how core components correspond to their HTML-5 
    <td> A two-state toggle that allows user to select between two states such as enabling or disabling a feature, setting, or functionality.</td>
   </tr>
  </tbody>
-</table>
+</table> -->
+
+## Mehr anzeigen
+
+- [Erstellen und Anzeigen einer Vorschau eines Formulars](/help/edge/docs/forms/create-forms.md)
+- [Formular zum Senden von Daten aktivieren](/help/edge/docs/forms/submit-forms.md)
+- [Veröffentlichen eines Formulars auf der Siteseite](/help/edge/docs/forms/publish-eds-forms.md)
+- [Hinzufügen von Überprüfungen zu Formularfeldern](/help/edge/docs/forms/validate-forms.md)
+- [Designs und Formularstil ändern](/help/edge/docs/forms/style-theme-forms.md)
