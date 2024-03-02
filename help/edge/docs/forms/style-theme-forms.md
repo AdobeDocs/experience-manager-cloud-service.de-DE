@@ -4,9 +4,9 @@ description: Design und Stil für ein AEM Forms Edge Delivery Service-Formular a
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Forms ist von entscheidender Bedeutung für die Benutzerinteraktion auf Websites
 
 ## Grundlagen zu Formularfeldtypen
 
-Bevor wir uns mit der Formatierung befassen, sollten wir die allgemeinen Formularfeldtypen überprüfen, die vom Baustein &quot;Adaptives Formular&quot;unterstützt werden:
+Bevor wir uns mit der Formatierung befassen, sollten wir die allgemeinen Formularfeldtypen überprüfen, die vom adaptiven Formularblock unterstützt werden:
 
 * Eingabefelder: Dazu gehören Texteingaben, E-Mail-Eingaben, Kennworteingaben und mehr.
 * Kontrollkästchengruppen: Dient zum Auswählen mehrerer Optionen.
@@ -37,9 +37,9 @@ Grundlegende CSS-Konzepte sind vor der Formatierung bestimmter Formularfelder vo
 
 ## Formatieren eines Formulars für adaptive Formularblöcke
 
-Der Formularblock bietet eine standardisierte HTML-Struktur, die die Auswahl und Formatierung von Formularkomponenten vereinfacht:
+Der Adaptive Formularblock bietet eine standardisierte HTML-Struktur, die die Auswahl und Formatierung von Formularkomponenten vereinfacht:
 
-* **Standardstile aktualisieren**: Sie können die Standardstile eines Formulars ändern, indem Sie `/blocks/form/form.css file`. Diese Datei bietet einen umfassenden Stil für ein Formular, der mehrstufige Assistentenformulare unterstützt. Die Verwendung benutzerdefinierter CSS-Variablen ermöglicht eine einfache Anpassung, Wartung und einheitliche Formatierung in allen Formularen. Anweisungen zum Hinzufügen des Formularblocks zu Ihrem Projekt finden Sie unter [Formular erstellen](/help/edge/docs/forms/create-forms.md).
+* **Standardstile aktualisieren**: Sie können die Standardstile eines Formulars ändern, indem Sie `/blocks/form/form.css file`. Diese Datei bietet einen umfassenden Stil für ein Formular, der mehrstufige Assistentenformulare unterstützt. Die Verwendung benutzerdefinierter CSS-Variablen ermöglicht eine einfache Anpassung, Wartung und einheitliche Formatierung in allen Formularen. Anweisungen zum Hinzufügen des Bausteins Adaptives Formular zu Ihrem Projekt finden Sie unter [Formular erstellen](/help/edge/docs/forms/create-forms.md).
 
 * **Anpassung**: Verwenden Sie die Standardeinstellung `forms.css` als Basis verwenden und anpassen, um das Erscheinungsbild Ihrer Formularkomponenten zu ändern, sodass es visuell ansprechend und benutzerfreundlich ist. Die Dateistruktur fördert die Organisation und verwaltet Stile für Formulare, wodurch konsistente Designs auf Ihrer Website gefördert werden.
 
@@ -60,7 +60,7 @@ Der Formularblock bietet eine standardisierte HTML-Struktur, die die Auswahl und
 
 ## Komponentenstruktur
 
-Der Formularblock bietet eine konsistente HTML-Struktur für verschiedene Formularelemente, wodurch Stile und Verwaltung vereinfacht werden. Sie können die Komponenten mithilfe von CSS für Stilzwecke bearbeiten.
+Der Baustein für adaptive Formulare bietet eine konsistente HTML-Struktur für verschiedene Formularelemente, wodurch Stile und Verwaltung vereinfacht werden. Sie können die Komponenten mithilfe von CSS für Stilzwecke bearbeiten.
 
 ### Allgemeine Komponenten (außer Dropdown, Optionsfeldgruppen und Kontrollkästchengruppen):
 
@@ -421,6 +421,6 @@ Sie können auch einzelne Felder nach Namen ausrichten, um eindeutige Stile anzu
 }
 ```
 
-Diese CSS-Datei enthält alle Eingabeelemente, die sich in einem Element befinden, das über die Klasse verfügt `form-otp`. Die HTML-Struktur Ihres Formulars entspricht den Konventionen des Formularblocks. Dies bedeutet, dass ein Container mit der Klasse &quot;form-otp&quot;markiert ist, der das Feld mit dem Namen &quot;otp&quot;enthält.
+Diese CSS-Datei enthält alle Eingabeelemente, die sich in einem Element befinden, das über die Klasse verfügt `form-otp`. Die HTML-Struktur Ihres Formulars entspricht den Konventionen des Bausteins für adaptive Formulare. Dies bedeutet, dass ein Container mit der Klasse &quot;form-otp&quot;markiert ist, der das Feld mit dem Namen &quot;otp&quot;enthält.
 
 

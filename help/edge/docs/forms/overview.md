@@ -1,28 +1,28 @@
 ---
-title: Übersicht über AEM Forms Edge Lieferung Dienst
-description: AEM Forms Edge Lieferung Dienst für Spitzenleistung entwickelt und ermöglicht es Ihnen, sich die Zukunft optimierter Datenerfassung und Benutzerinteraktion vorzustellen.
+title: Übersicht über den AEM Forms Edge-Bereitstellungsdienst
+description: AEM Forms Edge Delivery Service wurde für optimale Leistung entwickelt und ermöglicht es Ihnen, sich die Zukunft einer optimierten Datenerfassung und Benutzerinteraktion vorzustellen.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1c6e44fd6652d93ba73bc2eb3604cd08eae7a33c
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 3%
+source-wordcount: '866'
+ht-degree: 2%
 
 ---
 
 
-# AEM Forms Edge-Lieferung Dienst
+# AEM Forms Edge Delivery Service
 
-Optimieren Sie die Formularerstellung und voranbringen Sie höhere Abschlussraten mit dem AEM Forms Edge-Lieferung Dienst von Adobe Systems. Dieser leistungsstarke, zusammensetzbare Dienst ermöglicht es Ihnen, Formulare der Enterprise-Klasse mit außergewöhnlicher Leistung und visueller Attraktivität zu Build. AEM priorisiert sowohl die User Experience als auch Ihre Geschäftsziele und sorgt für blitzschnelle Ladezeiten und mehr Formularausfüllungen.
+Mit dem Adobe Edge Delivery Service können Sie Formulare optimieren und höhere Abschlussraten erzielen. Mit diesem leistungsstarken, zusammenstellbaren Dienst können Sie Formulare auf Unternehmensebene mit außergewöhnlicher Leistung und visueller Attraktivität erstellen. AEM priorisiert sowohl das Anwendererlebnis als auch Ihre Geschäftsziele, gewährleistet blitzschnelle Ladezeiten und erhöhte Formularabschlüsse.
 
 Der Service bietet folgende Möglichkeiten:
 
-* **Fesseln Sie Benutzer mit beeindruckenden Formularen: Build komplexe und ansprechende Formulare** mit Leichtigkeit mit einer Bibliothek von vorkonfiguriert Komponenten. Integrieren Sie reCAPTCHA einfach, senden Sie Formulare direkt an E-Mails und ermöglichen Sie nahtlose Dateiuploads, um Datenspeicherung Lösungen liken Sharepoint, Azure Storage und Amazon S3 zu sichern. Erstellen Sie sogar Ihre eigenen benutzerdefinierten Formularkomponenten, um Ihre einzigartige Vision zum Leben zu erwecken.
+* **Captivate von Benutzern mit atemberaubenden Formularen**: Erstellen Sie komplexe und ansprechende Formulare mit einer Bibliothek vordefinierter Komponenten. Integrieren Sie einfach reCAPTCHA, senden Sie Formulare direkt per E-Mail und ermöglichen Sie nahtlose Dateiuploads, um Speicherlösungen wie Sharepoint, Azure Storage und Amazon S3 zu sichern. Erstellen Sie sogar eigene benutzerdefinierte Formularkomponenten, um Ihre einzigartige Vision zum Leben zu erwecken.
 
-* **Erstellen digitale Registrierungserfahrungen mit Tools Ihrer Wahl**: Steigern Sie die Authoring-Effizienz, indem Sie Inhalte Quellen entkoppeln. Standardmäßig können Sie sowohl Dokument-basiertes Authoring (Microsoft 365 und Google Arbeitsbereich) als auch AEM Authoring (AEM Editoren) verwenden. Auf diese Weise können Sie mit mehreren Inhalte Quellen auf derselben Website arbeiten und Ihre bevorzugten Authoring-Tools wie Microsoft Excel, Google Sheets oder Adaptive Forms Editor verwenden.
+* **Erstellen von digitalen Registrierungserlebnissen mit Tools Ihrer Wahl**: Erhöhen Sie die Authoring-Effizienz durch Entkopplung der Inhaltsquellen. Sie können standardmäßig sowohl dokumentbasiertes Authoring (Microsoft 365 und Google Workspace) als auch AEM Authoring (AEM Editoren) verwenden. Daher können Sie mit mehreren Inhaltsquellen auf derselben Website arbeiten und Ihre bevorzugten Authoring-Tools wie Microsoft Excel, Google Tabellen oder Adaptive Forms Editor verwenden.
 
-* **Build Formulare mit perfektem Lighthouse-Ergebnis**: Build Formulare, die schnell geladen und gerendert werden, Linear bei langsamen Internetverbindungen. Schnellere Ladezeiten und optimierte User Experience tragen zu höheren Formularabschlussraten und verbesserten Konversion-Raten bei.
+* **Formulare mit perfektem Lighthouse-Wert erstellen**: Erstellen Sie Formulare, die schnell geladen und gerendert werden, selbst bei langsamen Internetverbindungen. Schnellere Ladezeiten und optimiertes Benutzererlebnis tragen zu höheren Formularabschlussraten und verbesserten Konversionsraten bei.
 
   <div>
     <style>
@@ -37,24 +37,22 @@ Der Service bietet folgende Möglichkeiten:
     }
 </style>
     <div class="image-container">
-    <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms Hauptmerkmale">
+    <img src="/help/edge/assets/eds-forms-key-features.png" alt="Wichtige Funktionen von EDS Forms">
     </div>
 
 
 </div>
-&lt;!-- &gt;
-* **Fesseln Sie Benutzer mit atemberaubenden Formularen**: 
-Build komplexe und ansprechende Formulare mit einer Bibliothek aus vorkonfiguriert Komponenten. Integrieren Sie reCAPTCHA einfach, senden Sie Formulare direkt an E-Mails und ermöglichen Sie nahtlose Dateiuploads, um Datenspeicherung Lösungen liken Sharepoint, Azure Storage und Amazon S3 zu sichern. Erstellen Sie sogar Ihre eigenen benutzerdefinierten Formularkomponenten, um Ihre einzigartige Vision zum Leben zu erwecken.
+&lt;!— &gt; **Captivate-Benutzer mit atemberaubenden Formularen*: Erstellen Sie komplexe und ansprechende Formulare mit Leichtigkeit mithilfe einer Bibliothek vordefinierter Komponenten. Integrieren Sie einfach reCAPTCHA, senden Sie Formulare direkt per E-Mail und ermöglichen Sie nahtlose Dateiuploads, um Speicherlösungen wie Sharepoint, Azure Storage und Amazon S3 zu sichern. Erstellen Sie sogar eigene benutzerdefinierte Formularkomponenten, um Ihre einzigartige Vision zum Leben zu erwecken.
 
-    ![Anmeldeformulare] (/help/edge/assets/enrollment-form.png)
+    ![Registrierungsformulare](/help/edge/assets/enrollment-form.png)
 
-* **Build Formulare mit perfektem Lighthouse-Score**: Build Formulare, die Linear bei langsamen Internetverbindungen schnell geladen und gerendert werden. Schnellere Ladezeiten und optimierte User Experience tragen zu höheren Formularabschlussraten und verbesserten Konversion-Raten bei.
+* **Erstellen von Formularen mit perfektem Leuchtturm-Ergebnis**: Erstellen Sie Formulare, die schnell geladen und gerendert werden, selbst bei langsamen Internetverbindungen. Schnellere Ladezeiten und optimiertes Benutzererlebnis tragen zu höheren Formularabschlussraten und verbesserten Konversionsraten bei.
 
-  ![Perfekter Leuchtturm-Score für Ihre Formulare](/help/edge/assets/lighthouse-forms.png)
+  ![perfekte Leuchtturmbewertung für Ihre Formulare](/help/edge/assets/lighthouse-forms.png)
 
-* **Erstellen digitale Registrierungserfahrungen mit Tools Ihrer Wahl**: Steigern Sie die Authoring-Effizienz, indem Sie Inhalte Quellen entkoppeln. standardmäßig sowohl AEM-Authoring als auch dokumentbasiertes Authoring verwenden. Auf diese Weise können Sie mit mehreren Inhalte Quellen auf derselben Website arbeiten und Ihre bevorzugten Authoring-Tools wie Microsoft Excel, Google Sheets oder AEM Editors verwenden.
+* **Erstellen von digitalen Registrierungserlebnissen mit Tools Ihrer Wahl**: Erhöhen Sie die Authoring-Effizienz durch Entkopplung der Inhaltsquellen. standardmäßig sowohl AEM-Authoring als auch dokumentbasiertes Authoring verwenden. Daher können Sie mit mehreren Inhaltsquellen auf derselben Website arbeiten und Ihre bevorzugten Authoring-Tools wie Microsoft Excel, Google Tabellen oder AEM Editoren verwenden.
 
-  ![Bearbeitungswerkzeuge für Edge Lieferung Formulare](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+  ![Bearbeitungswerkzeuge für Edge-Formulare](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
 <!--
 * **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
@@ -69,7 +67,22 @@ Build komplexe und ansprechende Formulare mit einer Bibliothek aus vorkonfigurie
 
     -->
 
-## Anfang Formularerstellung
+## Schlüsselfunktionen
+
+* **HTML5-basierte Formularfeldkomponenten**: Mit dem AEM Forms Edge Delivery Service können Sie benutzerfreundliche und interaktive Formulare mithilfe von Formularfeldern erstellen, die auf einer gültigen HTML5 basieren. [Eingabetypen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, und <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  Komponenten. Diese Komponenten decken unterschiedliche Arten der Datenerfassung ab und können einfach an Ihre spezifischen Anforderungen angepasst werden.
+
+* **Zugänglichkeit**: Auf die Felder im Formularblock kann zugegriffen werden. Jede Bezeichnung ist mit dem entsprechenden Eingabeelement verknüpft und IDs werden automatisch für die Verknüpfung generiert. Mit Feldern verknüpfte Beschreibungen werden über das Attribut aria-describedby verknüpft. Die Tastaturnavigation mit den standardmäßigen Tabulator-/Umschalt- und Tabulatortasten wird unterstützt.
+
+* **Formularregeln**: Erstellen Sie eine Logik, die die Sichtbarkeit, Validierung und das Verhalten von Feldern basierend auf Benutzereingaben oder vordefinierten Bedingungen anpasst. Regeln bieten eine flexible und intuitive Möglichkeit, intelligente Formulare hinzuzufügen, um sicherzustellen, dass sie sich nahtlos an Benutzereingaben anpassen.
+
+* **Datei-Uploads**: Verbessern Sie Ihre Formulare mit nahtlosen Dateianlagenfunktionen. Unabhängig davon, ob Sie Dokumente, Bilder oder andere Dateien von Ihren Benutzern erfassen müssen, ermöglicht Ihnen der Block für adaptive Formulare die mühelose Integration der Funktionen zum Hochladen von Dateien. Mit den verfügbaren benutzerdefinierten Bearbeitungsoptionen können Sie den Datei-Upload-Prozess an Ihre spezifischen Anforderungen anpassen.
+
+* **Formularüberprüfung**: Vor der Übermittlung wird das Formular validiert und ungültige Felder werden entsprechend mit Fehlermeldungen markiert, die dem Benutzer angezeigt werden. Für die Anzeige dieser Fehler stehen verschiedene Muster zur Verfügung.
+
+* **Formatieren von Forms**: Jedes Formularfeld verfügt über eine feste HTML-Struktur, die mithilfe benutzerdefinierter CSS- oder JavaScript-Dateien weiter dekoriert werden kann. Selektoren für Zielgruppenfelder in CSS/JS werden basierend auf Typ und Name bereitgestellt.
+
+
+## Erstellen von Formularen
 
 <div>
 
@@ -91,66 +104,66 @@ Build komplexe und ansprechende Formulare mit einer Bibliothek aus vorkonfigurie
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
-            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Erstellen eines Formulars mit EDS-Formularen" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel
-            </b>
+            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Erstellen eines Formulars mit Formularen mit Formularen" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel</b>
         </a>
-        <p>Erstellen Formulare, die auf mobilen Geräten schnell geladen und wiedergegeben werden und Umbrüche automatisch wiedergeben.</p>
+        <p>Erstellen Sie Formulare, die schnell und automatisch auf Mobilgeräten geladen und wiedergegeben werden.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
-            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Formular absenden" alt="Verwenden Formular Fragmente in einem EDS-Formular" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">Formular an Tabelle senden
-            </b>
+            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Formular senden" alt="Formularfragmente in einem EDS-Formular verwenden" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Formular an Tabelle senden</b>
         </a>
-        <p>Senden Sie Formulare direkt an Microsoft Excel oder Google Tabellen.</p>
+        <p>Senden Sie Formulare direkt an Ihre Microsoft Excel- oder Google Tabellen.</p>
     </div>
      <div class="card-container">
         <a href="/help/edge/docs/forms/style-theme-forms.md">
-            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Übernehmen Stile oder Themen zu einem EDS-Formular" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">Anpassen eines Designs
-            </b>
+            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Stile oder Designs auf ein Formular anwenden" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Anpassen eines Designs</b>
         </a>
-        <p>Erstellen ein konsistentes Werbetreibender Bild, indem Sie in allen Formularen das gleiche Design anwenden.</p>
+        <p>Erstellen Sie ein konsistentes Markenbild, indem Sie dasselbe Design auf alle Formulare anwenden.</p>
     </div>
       <div class="card-container">
         <a href="/help/edge/docs/forms/validate-forms.md">
-            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="hinzufügen Überprüfungen von Formularfeldern" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">Übernehmen Feldvalidierungen
-            </b>
+            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Hinzufügen von Überprüfungen zu Formularfeldern" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Feldvalidierungen anwenden</b>
         </a>
-        <p>Reduzieren Sie Fehler und Frustration, indem Sie Formulareingaben auf korrekte Formatierung überprüfen.</p>
+        <p>Reduzieren Sie Fehler und Frustration, indem Sie die Formulareingaben auf korrekte Formatierung überprüfen.</p>
     </div> 
             <div class="card-container">
         <a href="/help/edge/docs/forms/rules-forms.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Verwenden von Regeln zum Hinzufügen dynamischen Verhaltens zu einem Formular" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">Verwenden von Regeln zum Hinzufügen dynamischen Verhaltens zu einem Formular
-            </b>
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Verwenden Sie Regeln, um einem Formular dynamisches Verhalten hinzuzufügen" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Verwenden Sie Regeln, um einem Formular dynamisches Verhalten hinzuzufügen</b>
         </a>
-        <p>Verwenden Sie vorkonfigurierte Fragmente in mehreren Formularen wieder.</p>
+        <p>Verwenden Sie vorkonfigurierte Fragmente über mehrere Formulare hinweg erneut.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
-            <img src="/help/edge/assets/smock_abc_18_n.svg" alt="EDS-Formular übersetzen" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">Formular übersetzen
-            </b>
+            <img src="/help/edge/assets/smock_abc_18_n.svg" alt="EDS-Formular übersetzen" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Formular übersetzen</b>
         </a>
-        <p>Erweitern Sie die Reichweite Ihrer Formulare und halten Sie gleichzeitig die Kosten im Griff.</p>
+        <p>Erweitern Sie die Reichweite Ihrer Formulare, während Sie die Kosten im Auge behalten.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  
-            <img src="/help/edge/assets/smock_addto_18_n.svg" alt="hinzufügen wiederholbare Abschnitte in ein EDS-Formular" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">hinzufügen wiederholbaren Abschnitten
-            </b>
+            <img src="/help/edge/assets/smock_addto_18_n.svg" alt="Wiederholbare Abschnitte zu einem EDS-Formular hinzufügen" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Wiederholbare Abschnitte hinzufügen</b>
         </a>
-        <p>Erstellen Sie mühelos wiederholbare Abschnitte und fügen Sie sie zu einem Formular hinzu.</p>
+        <p>Erstellen und fügen Sie mühelos wiederholbare Abschnitte zu einem Formular hinzu.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/custom-components-forms.md"> 
-            <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="Erstellen benutzerdefinierter Formularkomponenten mit standardmäßigem JavaScript und CSS"  style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">Erstellen benutzerdefinierter Komponenten
-            </b>
+            <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="Erstellen benutzerdefinierter Formularkomponenten mit standardmäßigem JavaScript und CSS"  style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Erstellen benutzerdefinierter Komponenten</b>
         </a>
-        <p>Verwenden Sie Standard-JavaScript und CSS zum Erstellen von Komponenten und Themen.</p>
+        <p>Verwenden Sie standardmäßiges JavaScript und CSS, um Komponenten und Designs zu erstellen.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/recaptacha-forms.md">  
-            <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="Verwendung von reCAPTCHA in einem EDS-Formular" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">reCAPTCHA verwenden
-            </b>
+            <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="Verwenden von reCAPTCHA in einem EDS-Formular" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">reCAPTCHA verwenden</b>
         </a>
-        <p>Nutzen Sie die OOTB reCAPTCHA-Integration für zuverlässigen Spam- und Bot Schutz.</p>
+        <p>Verwenden Sie die OOTB reCAPTCHA-Integration für einen robusten Spam- und Bot-Schutz.</p>
     </div>
 
 

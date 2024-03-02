@@ -4,7 +4,7 @@ description: AEM Forms Edge Delivery Services-Formular veröffentlichen
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 1%
@@ -18,7 +18,7 @@ Sobald Sie bereit sind, Ihr Formular für Ihre Kunden zur Datenerfassung oder -�
 
 ## Voraussetzungen
 
-* Die [Der Baustein für adaptive Formulare ist für Ihr EDS-Projekt auf GitHub aktiviert.](/help/edge/docs/forms/create-forms.md).
+* Die [Der adaptive Formularblock ist für Ihr EDS-Projekt auf GitHub aktiviert](/help/edge/docs/forms/create-forms.md).
 * Ihr Formular ist vollständig getestet und einsatzbereit.
 * Ihre [Tabelle ist konfiguriert](/help/edge/docs/forms/submit-forms.md) , um Daten zu akzeptieren.
 
