@@ -4,9 +4,9 @@ description: Handwerkliche perfekte Formen, schnell! ⚡ AEM Forms Edge Delivery
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: 68b60d33e6ccfe27452cfea76603e4d7d29f0c6e
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1150'
 ht-degree: 2%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 2%
 Im heutigen digitalen Zeitalter ist die Erstellung benutzerfreundlicher Formulare für jedes Unternehmen von entscheidender Bedeutung. Mit AEM Forms Edge Delivery können Sie Formulare mit vertrauten Tools wie Word- oder Google-Dokumenten erstellen.
 
 Diese Formulare senden Daten direkt an eine Microsoft Excel- oder Google Tabellen-Datei, sodass Sie ein dynamisches Ökosystem und robuste APIs von Google Tabellen, Microsoft Excel und Microsoft SharePoint verwenden können, um gesendete Daten einfach zu verarbeiten oder einen bestehenden Geschäftsarbeitsablauf zu initiieren.
+
+![Dokumentenbasiertes Authoring-Ökosystem](/help/edge/assets/document-based-authoring.png)
 
 Die AEM Forms Edge-Bereitstellung bietet einen Block, der als &quot;Adaptiver Formularblock&quot;bezeichnet wird und mit dem Sie mühelos Formulare erstellen können, um erfasste Daten zu erfassen und zu speichern. Sie können den Block Adaptives Formular in Ihr AEM EDS-Projekt einbeziehen, um mit der Erstellung eines Formulars zu beginnen. Fangen wir an:
 
