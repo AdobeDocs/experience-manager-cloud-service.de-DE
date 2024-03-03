@@ -1,15 +1,131 @@
 ---
-title: Wiederholbare Abschnitte zu einem EDS-Formular hinzufügen
+title: Wiederholbare Abschnitte zu einem Formular hinzufügen
 description: Wiederholbare Abschnitte zu einem EDS-Formular hinzufügen
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '25'
-ht-degree: 0%
+source-wordcount: '554'
+ht-degree: 13%
 
 ---
 
 
-# Hinzufügen wiederholbarer Abschnitte zu einem AEM Forms Edge Delivery Service-Formular
+# Wiederholbare Abschnitte zu einem Formular hinzufügen
+
+Der Baustein &quot;Adaptives Formular&quot;bietet die Möglichkeit, einen Abschnitt oder eine Komponente eines Formulars wiederholbar zu machen.
+
+Ein wiederholbarer Abschnitt ist eine Komponente eines Formulars, das mehrmals dupliziert oder repliziert wird, um Informationen für mehrere Vorkommen ähnlicher Daten zu sammeln.
+
+Dies könnte beispielsweise ein Formular sein, mit dem Informationen über die Arbeitserfahrung einer Person erfasst werden. Sie könnten einen wiederholbaren Abschnitt zum Erfassen der Details jeder vorherigen Beschäftigung haben. Der wiederholbare Abschnitt enthält normalerweise Felder wie Unternehmensname, Stellenbezeichnung, Beschäftigungsdauer und Arbeitsverantwortlichkeiten. Die Benutzerin bzw. der Benutzer kann mehrere Instanzen des wiederholbaren Abschnitts hinzufügen, um Informationen zu den einzelnen Beschäftigungen einzugeben, die sie bzw. er in der Vergangenheit hatte.
+
+
+
+Am Ende dieses Artikels werden Sie Folgendes gelernt haben:
+
+* [Erstellen eines wiederholbaren Abschnitts in einem Formular](#add-repeatable-sections-to-a-form)
+* [Mindest- oder Höchstanzahl von Wiederholungen in einem Formular festlegen](#set-minimum-or-maximum-number-of-repetitions-for-a-repeatable-section)
+
+## Erstellen eines wiederholbaren Abschnitts in einem Formular
+
+Das Erstellen eines wiederholbaren Abschnitts in einem Formular bietet Benutzern die Möglichkeit, mehrere Instanzen desselben Datensatzes einzugeben, sodass sich wiederholende Informationen effizient erfassen lassen. So erstellen Sie einen wiederholbaren Abschnitt in einem Formular:
+
+1. Wechseln Sie in Microsoft SharePoint oder Google Workspace zum Projektordner &quot;Edge Deliver&quot;und öffnen Sie die Tabelle. Öffnen Sie beispielsweise eine Tabelle mit dem Namen `job-application.xlsx`.
+
+1. Fügen Sie ein Formularfeld mit dem `type` Eigenschaft festgelegt auf `fieldset` und aktivieren die Wiederholbarkeit durch Festlegen von `repeatable` nach `true`. Geben Sie außerdem eine beschreibende `label` für das Feld, da es als Überschrift für den wiederholbaren Abschnitt dient.
+
+   In der Abbildung unten finden Sie eine Abbildung eines Abschnitts über den Beschäftigungsverlauf in einem Antragsformular für Aufträge.
+
+   ![](/help/edge/assets/repeatable-section-example-job-application-form.png)
+
+1. Im `Fieldset` -Eigenschaft aller Felder, die in einen wiederholbaren Abschnitt eingefügt werden sollen, geben Sie die `Name` des entsprechenden Feldsatzes.
+
+   Geben Sie beispielsweise `experience` in der Eigenschaft &quot;Fieldset&quot;aller relevanten Felder, die in die `employment history` Abschnitt.
+
+   ![](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
+
+1. Verwendung [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) , um das Blatt in der Vorschau anzuzeigen und zu veröffentlichen. Der wiederholbare Abschnitt wird dem Formular hinzugefügt.
+
+   Unter dem wiederholbaren Abschnitt finden Benutzer eine intuitive **Hinzufügen** -Schaltfläche, wodurch das Hinzufügen mehrerer Abschnitte erleichtert wird.
+
+   ![wiederholbaren Abschnitt, einen intuitiven **Hinzufügen** Schaltfläche zum Hinzufügen mehrerer Abschnitte ](/help/edge/assets/repeatable-section-example.png)
+
+
+## Mindest- oder Höchstanzahl von Wiederholungen für einen wiederholbaren Abschnitt festlegen
+
+Im Formularentwurf ist es von Vorteil, Mindest- und Höchstwiederholungen für wiederholbare Abschnitte festzulegen. Auf diese Weise stellen Sie Kontrolle und Konsistenz sicher und lenken gleichzeitig die Benutzer effektiv. So legen Sie eine Mindest- oder Höchstanzahl von Wiederholungen fest:
+
+1. Wechseln Sie in Microsoft SharePoint oder Google Workspace zum Projektordner &quot;Edge Deliver&quot;und öffnen Sie die Tabelle.
+
+1. Legen Sie die `min` -Eigenschaft, um anzugeben, wie oft der Abschnitt mindestens wiederholt werden kann.
+
+   ![Legen Sie die Eigenschaft min und max fest, um festzulegen, wie oft der Abschnitt wiederholt werden kann.](/help/edge/assets/repeatable-section-set-min-max.png)
+
+1. Legen Sie die `max` -Eigenschaft, um die maximale Anzahl der Wiederholungen des Abschnitts anzugeben.
+
+1. Verwendung [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) , um das Blatt in der Vorschau anzuzeigen und zu veröffentlichen.
+
+   Beim Hinzufügen wiederholbarer Abschnitte finden Benutzer jetzt eine intuitive **Löschen** -Symbol, wodurch der Prozess zum Entfernen wiederholbarer Abschnitte vereinfacht wird. Nach dem Hinzufügen können diese Abschnitte nicht auf weniger Instanzen reduziert werden, als von der `min` -Eigenschaft. Dadurch wird sichergestellt, dass die Mindestanforderungen für das Ausfüllen des Formulars eingehalten werden.
+
+<!--
+
+For example, consider a form used to collect information from users applying for a loan. . You may have a repeatable section for capturing details of each co-applicant. The repeatable section would typically contain fields such as co-co-applicant
+
+The form allows users to provide personal information, including details of the co-applicants. Users can enter details for co-applicants, with this section being repeatable.
+
+![Repeatable sections in forms](/help/forms/assets/eds-repeatable.png)
+
+## Prerequisites
+
+The [Adaptive Form block is enabled](/help/edge/docs/forms/create-forms.md) for your Edge Delivery Service project. 
+
+## Add a repeatable section to a form 
+
+Let's take an example of a loan application form. The form enables users to submit personal information. You can include co-applicant details using repeatable sections, with the option to add a minimum and maximum of three co-applicant sections.
+
+"_You can use a Microsoft Excel file on your SharePoint Site or Google Sheet file on Google Drive to develop a form. Examples in this document are based on a [Microsoft Excel file on your SharePoint Site](https://www.aem.live/docs/setup-customer-sharepoint)._" 
+
+
+To add repeatable sections in Edge Delivery:
+
+1. [Author a form using Microsoft Excel](#author-form)
+2. [Preview and publish the form](#preview-form)
+
+### Author a form using Microsoft Excel {#author-form}
+
+1. Go to your Edge Deliver project folder on Microsoft SharePoint or Google Workspace and open your spreadsheet. For example, open an a spreadsheet named `loan-application.xlsx`.
+
+1. Add a new columns labeled `Repeatable` to the sheet contaning your form fields. By default, the `shared-default` sheet contains the form fields.  
+
+1. Add new columns labeled as `Repeatable`, `Min`, and `Max` in your Microsoft Excel file.
+1. Specify the value for the `Repeatable` column as `True` for the fieldset that you want to make repeatable.
+1. Specify the values for the `Min` and `Max` columns. The `Min` value represents the minimum number of occurrences for which the panel repeats, while the `Max` value represents the maximum number of occurrences for which the panel repeats.
+1. Save your Microsoft Excel file.
+     
+>[!NOTE]
+>
+> Here is the [Loan application](/help/forms/assets/loan-application.xlsx) excel sheet for your reference. 
+
+### Preview/Publish the form using your Edge Delivery Service
+
+1. Open or create new document file in a Microsft SharePoint Site to embed the Excel sheet  in it using a `Form Block`. For example, open the `index` file and add a `Form Block`.
+2. Open the command prompt, navigate to your AEM Edge Delivery project directory on your local machine, and execute the command as `aem up`.
+
+The form is accessible at `https://localhost:3000`, where clicking the `Add` button adds new repeatable section for entering co-applicant details. You can also delete the the repeatable section by clicking the `Delete` button. 
+
+>[!NOTE]
+>
+> If you encounter a "Page Not Found" error while accessing your form at localhost, add the directory name of the Microsoft SharePoint Site in front of the URL where your form is located. For example, `http://localhost:3000/<dir-name>/`
+
+-->
+
+
+## Mehr anzeigen
+
+* [Erstellen und Anzeigen einer Vorschau eines Formulars](/help/edge/docs/forms/create-forms.md)
+* [Formular zum Senden von Daten aktivieren](/help/edge/docs/forms/submit-forms.md)
+* [Veröffentlichen eines Formulars auf der Siteseite](/help/edge/docs/forms/publish-forms.md)
+* [Hinzufügen von Überprüfungen zu Formularfeldern](/help/edge/docs/forms/validate-forms.md)
+* [Designs und Formularstil ändern](/help/edge/docs/forms/style-theme-forms.md)
+* [Formularkomponenten und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)

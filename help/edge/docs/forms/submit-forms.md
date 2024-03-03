@@ -4,9 +4,9 @@ description: Erstellen Sie leistungsstarke Formulare schneller mit Tabellen und 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1003'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 1%
 
 Sobald du [das Formular erstellt und in der Vorschau angezeigt wurde](/help/edge/docs/forms/create-forms.md)ist es an der Zeit, die entsprechende Tabelle so zu aktivieren, dass sie Daten erhält.
 
+![Dokumentenbasiertes Authoring-Ökosystem](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -46,6 +47,7 @@ So aktivieren Sie das Arbeitsblatt:
 
 
 Nachdem die Feldnamen zum `incoming` -Seite, kann Ihr Formular Übermittlungen annehmen. Sie können das Formular in der Vorschau anzeigen und Daten mit ihm an das Blatt senden.
+
 
 
 Beachten Sie auch die folgenden Änderungen in Ihrer Tabelle:
@@ -290,6 +292,6 @@ Als Nächstes können Sie die Dankesnachricht anpassen, [Konfigurieren einer Dan
 
 * [Erstellen und Anzeigen einer Vorschau eines Formulars](/help/edge/docs/forms/create-forms.md)
 * [Formular zum Senden von Daten aktivieren](/help/edge/docs/forms/submit-forms.md)
-* [Veröffentlichen eines Formulars auf der Siteseite](/help/edge/docs/forms/publish-eds-forms.md)
+* [Veröffentlichen eines Formulars auf der Siteseite](/help/edge/docs/forms/publish-forms.md)
 * [Hinzufügen von Überprüfungen zu Formularfeldern](/help/edge/docs/forms/validate-forms.md)
 * [Designs und Formularstil ändern](/help/edge/docs/forms/style-theme-forms.md)

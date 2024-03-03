@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service wurde für optimale Leistung entwic
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,10 @@ Der Service bietet folgende Möglichkeiten:
   <div>
     <style>
     .image-container {
-    width: 80%;
     text-align: center; 
     }
     .image-container img {
-        width: 100%; /* Set image width to 100% of the container */
-        border: .5px solid; /* Maintain the border style */
-        padding: 15px; /* Maintain the padding */
+        width: 100%; /* Set image width to 100% of the container 
     }
 </style>
     <div class="image-container">
@@ -42,6 +39,8 @@ Der Service bietet folgende Möglichkeiten:
 
 
 </div>
+
+<!--
 
 <!--
 
@@ -62,25 +61,33 @@ Der Service bietet folgende Möglichkeiten:
 
     
     >[!NOTE]
+    >[!NOTE]
     >
     >
     > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
 
     -->
 
-## Schlüsselfunktionen
+## Wichtigste Funktionen
 
-* **HTML5-basierte Formularfeldkomponenten**: Mit dem AEM Forms Edge Delivery Service können Sie benutzerfreundliche und interaktive Formulare mithilfe von Formularfeldern erstellen, die auf einer gültigen HTML5 basieren. [Eingabetypen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, und <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  Komponenten. Diese Komponenten decken unterschiedliche Arten der Datenerfassung ab und können einfach an Ihre spezifischen Anforderungen angepasst werden.
+* **HTML5-basierte Formularfeldkomponenten**: Mit dem AEM Forms Edge Delivery Service können Sie benutzerfreundliche und interaktive Formulare mit Formularkomponenten erstellen, die auf HTML5 basieren [Eingabetypen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, und <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  -Elemente. Diese Komponenten decken unterschiedliche Arten der Datenerfassung ab und können einfach an Ihre spezifischen Anforderungen angepasst werden.
 
 * **Zugänglichkeit**: Auf die Felder im Formularblock kann zugegriffen werden. Jede Bezeichnung ist mit dem entsprechenden Eingabeelement verknüpft und IDs werden automatisch für die Verknüpfung generiert. Mit Feldern verknüpfte Beschreibungen werden über das Attribut aria-describedby verknüpft. Die Tastaturnavigation mit den standardmäßigen Tabulator-/Umschalt- und Tabulatortasten wird unterstützt.
 
-* **Formularregeln**: Erstellen Sie eine Logik, die die Sichtbarkeit, Validierung und das Verhalten von Feldern basierend auf Benutzereingaben oder vordefinierten Bedingungen anpasst. Regeln bieten eine flexible und intuitive Möglichkeit, intelligente Formulare hinzuzufügen, um sicherzustellen, dass sie sich nahtlos an Benutzereingaben anpassen.
+* **Formatierung**: Jedes Formularfeld verfügt über eine feste HTML-Struktur, die einfach mit benutzerdefinierten CSS- oder JavaScript-Dateien dekoriert werden kann. Selektoren für Zielgruppenfelder in CSS und JS werden basierend auf Typ und Name bereitgestellt. Dank der standardisierten Struktur können Sie einfach neue Selektoren erstellen.
 
-* **Datei-Uploads**: Verbessern Sie Ihre Formulare mit nahtlosen Dateianlagenfunktionen. Unabhängig davon, ob Sie Dokumente, Bilder oder andere Dateien von Ihren Benutzern erfassen müssen, ermöglicht Ihnen der Block für adaptive Formulare die mühelose Integration der Funktionen zum Hochladen von Dateien. Mit den verfügbaren benutzerdefinierten Bearbeitungsoptionen können Sie den Datei-Upload-Prozess an Ihre spezifischen Anforderungen anpassen.
+* **Regeln**: Einfaches Erstellen einer Logik, die die Sichtbarkeit, Validierung und das Verhalten von Feldern basierend auf Benutzereingaben oder vordefinierten Bedingungen anpasst. Regeln bieten eine flexible und intuitive Möglichkeit, intelligente Formulare hinzuzufügen, um sicherzustellen, dass sie sich nahtlos an Benutzereingaben anpassen.
 
-* **Formularüberprüfung**: Vor der Übermittlung wird das Formular validiert und ungültige Felder werden entsprechend mit Fehlermeldungen markiert, die dem Benutzer angezeigt werden. Für die Anzeige dieser Fehler stehen verschiedene Muster zur Verfügung.
+* **Überprüfungen**: Vor der Übermittlung wird das Formular validiert und ungültige Felder werden entsprechend mit Fehlermeldungen markiert, die dem Benutzer angezeigt werden. Für die Anzeige dieser Fehler stehen verschiedene Muster zur Verfügung.
 
-* **Formatieren von Forms**: Jedes Formularfeld verfügt über eine feste HTML-Struktur, die mithilfe benutzerdefinierter CSS- oder JavaScript-Dateien weiter dekoriert werden kann. Selektoren für Zielgruppenfelder in CSS/JS werden basierend auf Typ und Name bereitgestellt.
+Es gibt einige erweiterte Funktionen, die auf Anfrage verfügbar sind:
+
+* **Datei-Uploads**: Sie können Ihren Formularen Dateianlagenfunktionen hinzufügen. Unabhängig davon, ob Sie Dokumente, Bilder oder andere Dateien von Ihren Benutzern erfassen müssen, bietet Ihnen die Funktion zum Hochladen von Dateien mühelos einen schnellen Einstieg. Mit den verfügbaren benutzerdefinierten Bearbeitungsoptionen können Sie den Datei-Upload-Prozess an Ihre spezifischen Anforderungen anpassen.
+
+* **reCAPTCHA**: Profitieren Sie von der nahtlosen Integration von Google reCAPTCHA in Ihre Formulare mit unserer vordefinierten OOTB-Unterstützung. Schützen Sie Ihre Formulare vor betrügerischen Aktivitäten, Spam und Missbrauch und bewahren Sie gleichzeitig ein reibungsloses und ununterbrochenes Benutzererlebnis.
+
+* **E-Mail-Benachrichtigung bei Formularübermittlung senden**: Beseitigen Sie den Aufwand manueller Nachbearbeitungen und sorgen Sie für eine zeitnahe Kommunikation mit unserer integrierten E-Mail-Automatisierung für Formularübermittlungen. Mit dieser integrierten Lösung können Sie relevante Parteien mühelos benachrichtigen, einschließlich der Übermittlung von Formulardaten, wenn ein Benutzer ein Formular auf Ihrer Website ausfüllt. Es sind keine komplexen Konfigurationen oder zusätzlichen Tools erforderlich - sie können nativ verwendet werden.
+
 
 ## Workflow
 

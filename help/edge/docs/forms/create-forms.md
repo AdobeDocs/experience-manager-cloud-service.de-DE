@@ -4,7 +4,7 @@ description: Handwerkliche perfekte Formen, schnell! ⚡ AEM Forms Edge Delivery
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 2%
@@ -81,7 +81,7 @@ So fahren Sie mit der Formularerstellung fort:
 
    ![Standard-Arbeitsblatt in &quot;shared-default&quot;umbenennen](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Fügen Sie zum Hinzufügen der Formularfelder Zeilen und Spaltenüberschriften in das &quot;shared-default&quot;-Blatt ein. Jede Zeile sollte eine [Formularfeld](/help/edge/docs/forms/form-components.md), wobei die Spaltenüberschriften das entsprechende Feld definieren [properties](/help/edge/docs/forms/eds-form-field-properties).
+1. Fügen Sie zum Hinzufügen der Formularfelder Zeilen und Spaltenüberschriften in das &quot;shared-default&quot;-Blatt ein. Jede Zeile sollte eine [Formularfeld](/help/edge/docs/forms/form-components.md#available-components), wobei die Spaltenüberschriften das entsprechende Feld definieren [properties](/help/edge/docs/forms/form-components.md#components-properties).
 
    Für einen schnellen Start sollten Sie den Inhalt der [Abfragetabelle](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) in Ihre Tabelle ein. Nachdem Sie den Inhalt kopiert haben, speichern Sie das Arbeitsblatt.
 
@@ -159,6 +159,6 @@ Bis jetzt haben Sie den Block Adaptives Formular zu Ihrem EDS-Projekt hinzugefü
 * [Formularfeldeigenschaften](/help/edge/docs/forms/eds-form-field-properties)
 * [Erstellen und Anzeigen einer Vorschau eines Formulars](/help/edge/docs/forms/create-forms.md)
 * [Formular zum Senden von Daten aktivieren](/help/edge/docs/forms/submit-forms.md)
-* [Veröffentlichen eines Formulars auf der Siteseite](/help/edge/docs/forms/publish-eds-forms.md)
+* [Veröffentlichen eines Formulars auf der Siteseite](/help/edge/docs/forms/publish-forms.md)
 * [Hinzufügen von Überprüfungen zu Formularfeldern](/help/edge/docs/forms/validate-forms.md)
 * [Designs und Formularstil ändern](/help/edge/docs/forms/style-theme-forms.md)

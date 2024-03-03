@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Dankeseiten und Weiterleitungen für Forms Bl
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d6b1048c44022da47a9d7443f564a2ff9d1802cf
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 1%
@@ -86,6 +86,6 @@ Um die Dankeseite auf eine andere Seite umzuleiten, verwenden Sie die [Website-U
 * [Formularfeldeigenschaften](/help/edge/docs/forms/eds-form-field-properties)
 * [Erstellen und Anzeigen einer Vorschau eines Formulars](/help/edge/docs/forms/create-forms.md)
 * [Formular zum Senden von Daten aktivieren](/help/edge/docs/forms/submit-forms.md)
-* [Veröffentlichen eines Formulars auf der Siteseite](/help/edge/docs/forms/publish-eds-forms.md)
+* [Veröffentlichen eines Formulars auf der Siteseite](/help/edge/docs/forms/publish-forms.md)
 * [Hinzufügen von Überprüfungen zu Formularfeldern](/help/edge/docs/forms/validate-forms.md)
 * [Designs und Formularstil ändern](/help/edge/docs/forms/style-theme-forms.md)

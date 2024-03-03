@@ -2,9 +2,9 @@
 description: Dieses Tutorial enthält Anweisungen zum Erstellen eines Abschnitts eines Formulars, der wiederholbar ist
 title: Wiederholbare Abschnitte in Edge Delivery Services
 feature: Edge Delivery Services
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ In diesem Beispiel verwenden wir eine Excel-Tabelle mit dem Namen `loan-applicat
 1. Öffnen oder erstellen Sie eine neue Dokumentdatei auf einer Microsoft SharePoint-Site, um die Excel-Arbeitsmappe mit einer `Form Block`. Öffnen Sie beispielsweise die `index` und fügen Sie eine `Form Block`.
 2. Öffnen Sie die Eingabeaufforderung, navigieren Sie zu Ihrem AEM Edge Delivery-Projektverzeichnis auf Ihrem lokalen Computer und führen Sie den Befehl als `aem up`.
 
-Auf das Formular kann unter `https://localhost:3000`, wobei durch Klicken auf `Add` -Schaltfläche fügt einen neuen wiederholbaren Abschnitt zur Eingabe der Details des Mitbewerbers hinzu. Sie können den wiederholbaren Abschnitt auch löschen, indem Sie auf die `Delete` Schaltfläche.
+Auf das Formular kann unter `https://localhost:3000`, wobei durch Klicken auf `Add` -Schaltfläche fügt einen neuen wiederholbaren Abschnitt zur Eingabe der Details des Mitbewerbers hinzu. Sie können auch den wiederholbaren Abschnitt löschen, indem Sie auf die `Delete` Schaltfläche.
 
 >[!NOTE]
 >
