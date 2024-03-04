@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 4c1525fd51956d3d788a91f58978a9c885e6daa5
-workflow-type: ht
-source-wordcount: '1409'
-ht-degree: 100%
+source-git-commit: ea61a794788ee2a59e05727fa3c4fd4fc1ca9956
+workflow-type: tm+mt
+source-wordcount: '1427'
+ht-degree: 99%
 
 ---
 
@@ -227,15 +227,19 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 ## Dynamic Media – Unterstützte Rasterbildformate {#image-support-dynamic-media}
 
 | Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischer Ausgabedarstellung anzeigen | Dynamische Ausgabedarstellung bereitstellen | Dynamische Ausgabedarstellung herunterladen | Festlegen von Typen, die dieses Format unterstützen |
-| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
-| BMP | ✓ | - | - | - | - | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md) und [Drehung](/help/assets/dynamic-media/spin-sets.md) |
-| EPS | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+|---|:---:|:---:|:---:|:---:|:---:| --- |
+| AVIF | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| BMP | ✓ | − | − | − | − | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md) und [Drehung](/help/assets/dynamic-media/spin-sets.md) |
+| [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript&reg;-eps-and-pdf-file-formats-adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| HEIC | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md) und [Drehung](/help/assets/dynamic-media/spin-sets.md) |
-| PICT | ✓ | - | - | - | - | - |
+| PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md) und [Drehung](/help/assets/dynamic-media/spin-sets.md) |
-| PSD ‡ | ✓ | - | - | - | - | - |
+| PSD ‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md) und [Drehung](/help/assets/dynamic-media/spin-sets.md) |
+| WEBP | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+<!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von [!DNL Adobe Photoshop] generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
