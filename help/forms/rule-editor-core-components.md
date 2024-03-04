@@ -1,27 +1,17 @@
 ---
-title: Verwenden des Regeleditors zum Hinzufügen von Regeln zu Formularfeldern, um dynamisches Verhalten hinzuzufügen und eine komplexe Logik zu einem adaptiven Formular zu erstellen?
+title: Wie können Sie mit dem Regeleditor Regeln zu Formularfeldern hinzufügen, um dynamisches Verhalten hinzuzufügen und eine komplexe Logik zu einem adaptiven Formular zu erstellen, das auf Kernkomponenten basiert?
 description: Der Regeleditor für adaptive Formulare ermöglicht es Ihnen, ohne Programmierung oder Skripterstellung dynamisches Verhalten und komplexe Logik in Ihre Formulare zu integrieren.
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: bbb5e4caef2cb8c44d10a92647401ee86a9326c0
+source-git-commit: 78b3b11caf143ed147079ef2b3b3ebe5c1beafd7
 workflow-type: tm+mt
-source-wordcount: '6457'
-ht-degree: 94%
+source-wordcount: '5755'
+ht-degree: 82%
 
 ---
 
-# Hinzufügen von Regeln zu adaptiven Formularen {#adaptive-forms-rule-editor}
-
-<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/creating-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
-
-| Version | Artikel-Link |
-| -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=de) |
-| AEM as a Cloud Service | Dieser Artikel |
-
-## Übersicht {#overview}
+# Hinzufügen von Regeln zu einem adaptiven Formular (Kernkomponenten) {#adaptive-forms-rule-editor}
 
 Der Regeleditor ermöglicht es Geschäftsbenutzern und Entwicklern, Regeln für adaptive Formularobjekte zu erstellen. Diese Regeln definieren Aktionen für Formularobjekte, die durch voreingestellte Bedingungen, Benutzereingaben und Benutzeraktionen im Formular ausgelöst werden. Dies ermöglicht noch größere Effizienz für ein schnelles und korrektes Ausfüllen der Formulare.
 
@@ -57,7 +47,7 @@ Die Regeltypen „Anzeigen“, „Ausblenden“, „Aktivieren“, „Deaktivier
 
 >[!NOTE]
 >
->Die verfügbaren Regeltypen, einschließlich der Bedingungen und Aktionen, die Sie im Regeleditor definieren, hängen auch vom Typ des Formularobjekts ab, für das Sie eine Regel erstellen. Der Regeleditor zeigt nur gültige Regeltypen und Optionen zum Schreiben von Bedingungs- und Aktionsanweisungen für einen bestimmten Formularobjekttyp an. So werden für ein Bereichsobjekt beispielsweise keine Regeln vom Typ „Validieren“, „Wert festlegen“ oder „Deaktivieren“ angezeigt.
+>Die verfügbaren Regeltypen, einschließlich der Bedingungen und Aktionen, die Sie im Regeleditor definieren, hängen auch vom Typ des Formularobjekts ab, für das Sie eine Regel erstellen. Der Regeleditor zeigt nur gültige Regeltypen und Optionen zum Schreiben von Bedingungs- und Aktionsanweisungen für einen bestimmten Formularobjekttyp an. Beispielsweise sehen Sie für ein Bedienfeldobjekt keine Typen &quot;Validieren&quot;und &quot;Wert einstellen&quot;.
 
 Weitere Informationen über die im Regeleditor verfügbaren Regeltypen finden Sie unter [Verfügbare Regeltypen im Regeleditor](rule-editor.md#p-available-rule-types-in-rule-editor-p).
 
@@ -88,15 +78,18 @@ Der Regeleditor bietet die folgenden logischen Operatoren und Ereignisse, mit de
 * **Beginnt mit**
 * **Endet mit**
 * **Enthält**
+* **Enthält nicht**
 * **Ist leer**
 * **Ist nicht leer**
 * **Hat ausgewählt:** Gibt „true“ zurück, wenn der Benutzer eine bestimmte Option für ein Kontrollkästchen, ein Dropdown-Element oder ein Optionsfeld auswählt.
 * **Ist initialisiert (Ereignis):** Gibt „true“ zurück, wenn ein Formularobjekt im Browser dargestellt wird.
 * **Wird geändert (Ereignis):** Gibt „true“ zurück, wenn der Benutzer den eingegebenen Wert oder die ausgewählte Option für ein Formularobjekt ändert.
-* **Navigation (Ereignis):** Gibt „true“ zurück, wenn auf ein Navigationsobjekt geklickt wird. Navigationsobjekte werden verwendet, um zwischen Bereichen zu wechseln.
-* **Schritt abgeschlossen (Ereignis):** Gibt „true“ zurück, wenn ein Regelschritt abgeschlossen ist.
-* **Erfolgreiche Übermittlung (Ereignis):** Gibt „true“ zurück, wenn Daten erfolgreich an ein Formulardatenmodell gesendet wurden.
-* **Fehler bei der Übermittlung (Ereignis):** Gibt „true“ zurück, wenn die Daten nicht erfolgreich an ein Formulardatenmodell gesendet wurden.
+
+<!--
+* **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
+* **Step Completion(event):** Returns true when a step of a rule completes.
+* **Successful Submission(event):** Returns true on successful submission of data to a form data model.
+* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model. -->
 
 ## Verfügbare Typen von Regeln im Regeleditor {#available-rule-types-in-rule-editor}
 
@@ -120,17 +113,23 @@ Aktion 2 auf Objekt B anwenden;
 UND
 Aktion 3 auf Objekt C anwenden;
 
-_
+`Else, do the following:`
+
+Aktion 2 für Objekt C; _
 
 Beim Erstellen einer Regel für Komponenten mit mehreren Werten (z. B. Optionsfelder oder Listen) werden die Optionen automatisch abgerufen und dem Regelersteller zur Verfügung gestellt. Sie müssen die Optionswerte nicht erneut eingeben.
 
 Eine Liste hat beispielsweise vier Optionen: „Rot“, „Blau“, „Grün“ und „Gelb“. Beim Erstellen der Regel werden die Optionen (Optionsfelder) automatisch abgerufen und dem Regelerstellenden wie folgt zur Verfügung gestellt:
 
-![Anzeigeoptionen für mehrere Werte](assets/multivaluefcdisplaysoptions1.png)
+![Anzeigeoptionen für mehrere Werte](assets/multivaluefcdisplaysoptions.png)
 
-Beim Schreiben der Wenn-Regel können Sie die Aktion „Wert löschen von“ auslösen. Die Aktion „Wert löschen von“ löscht den Wert des angegebenen Objekts. Mit „Wert löschen von“ als Option in der Wenn-Anweisung können Sie komplexe Bedingungen mit mehreren Feldern erstellen.
+Beim Schreiben der Wenn-Regel können Sie die Aktion „Wert löschen von“ auslösen. Die Aktion „Wert löschen von“ löscht den Wert des angegebenen Objekts. Mit der Option Wert löschen von als Option in der Wenn-Anweisung können Sie komplexe Bedingungen mit mehreren Feldern erstellen. Sie können die Anweisung Else hinzufügen, um weitere Bedingungen hinzuzufügen.
 
-![Wert löschen von](assets/clearvalueof1.png)
+![Wert löschen von](assets/clearvalueof.png)
+
+>[!NOTE]
+>
+> Wenn der Regeltyp nur einstufige then-else-Anweisungen unterstützt.
 
 **[!UICONTROL Ausblenden]**: Blendet das angegebene Objekt aus.
 
@@ -152,49 +151,53 @@ Weitere Informationen zum Konfigurieren von Services im Formulardatenmodell find
 
 Mit dem Regeltyp **[!UICONTROL Eigenschaft festlegen]** können Sie den Wert einer Eigenschaft des angegebenen Objekts basierend auf einer Bedingungsaktion festlegen. Sie können die Eigenschaft für eines der folgenden Elemente festlegen:
 * visible (Boolescher Wert)
-* dorExclusion (Boolescher Wert)
-* chartType (Zeichenfolge)
-* title (Zeichenfolge)
+* label.value (String)
+* label.visible (Boolesch)
+* description (String)
 * aktiviert (Boolescher Wert)
-* mandatory (Boolescher Wert)
-* validationsDisabled (Boolescher Wert)
-* validateExpMessage (Zeichenfolge)
-* value (Zahl, Zeichenfolge, Datum)
-* items (Liste)
+* readOnly (Boolesch)
+* required (Boolesch)
+* screenReaderText (String)
 * valid (Boolescher Wert)
 * errorMessage (Zeichenfolge)
+* default (Zahl, Zeichenfolge, Datum)
+* enumNames (String)[])
+* chartType (Zeichenfolge)
 
-Damit können Sie bespielsweise Regeln definieren, um Kontrollkästchen dynamisch zum adaptiven Formular hinzuzufügen. Sie können benutzerdefinierte Funktionen, Formularobjekte oder eine Objekteigenschaft verwenden, um eine Regel zu definieren.
+So können Sie beispielsweise Regeln definieren, die das Textfeld anzeigen, wenn auf eine Schaltfläche geklickt wird. Sie können benutzerdefinierte Funktionen, ein Formularobjekt, eine Objekteigenschaft oder eine Dienstausgabe verwenden, um eine Regel zu definieren.
 
-![Eigenschaft festlegen](assets/set_property_rule_new1.png)
+![Eigenschaft festlegen](assets/set_property_rule_new.png)
 
-Um eine Regel basierend auf einer benutzerdefinierten Funktion zu definieren, wählen Sie **[!UICONTROL Funktionsausgabe]** in der Dropdown-Liste aus und ziehen Sie eine benutzerdefinierte Funktion mittels Drag-and-Drop aus der Registerkarte **[!UICONTROL Funktionen]**. Wenn die Bedingungsaktion erfüllt ist, wird die Anzahl der in der benutzerdefinierten Funktion definierten Kontrollkästchen dem adaptiven Formular hinzugefügt.
+Um eine Regel basierend auf einer benutzerdefinierten Funktion zu definieren, wählen Sie **[!UICONTROL Funktionsausgabe]** in der Dropdown-Liste aus und ziehen Sie eine benutzerdefinierte Funktion mittels Drag-and-Drop aus der Registerkarte **[!UICONTROL Funktionen]**. Wenn die Bedingungsaktion erfüllt ist, wird das Texteingabefeld angezeigt.
 
-Um eine auf einem Formularobjekt basierende Regel zu definieren, wählen Sie **[!UICONTROL Formularobjekt]** in der Dropdown-Liste aus und ziehen Sie ein Formularobjekt mittels Drag-and-Drop aus der Registerkarte **[!UICONTROL Formularobjekte]**. Wenn die Bedingungsaktion erfüllt ist, wird die Anzahl der im Formularobjekt definierten Kontrollkästchen dem adaptiven Formular hinzugefügt.
+Um eine auf einem Formularobjekt basierende Regel zu definieren, wählen Sie **[!UICONTROL Formularobjekt]** in der Dropdown-Liste aus und ziehen Sie ein Formularobjekt mittels Drag-and-Drop aus der Registerkarte **[!UICONTROL Formularobjekte]**. Wenn die Bedingungsaktion erfüllt ist, wird das Texteingabefeld im adaptiven Formular angezeigt.
 
-Mit einer Regel vom Typ „Eigenschaft festlegen“, die auf einer Objekteigenschaft basiert, können Sie die Anzahl der Kontrollkästchen in einem adaptiven Formular auf der Grundlage einer anderen Objekteigenschaft hinzufügen, die im adaptiven Formular enthalten ist.
+Mit einer auf einer Objekteigenschaft basierenden Regel Eigenschaft festlegen können Sie das Texteingabefeld in einem adaptiven Formular basierend auf einer anderen Objekteigenschaft im adaptiven Formular sichtbar machen.
 
-Die folgende Abbildung zeigt ein Beispiel für das dynamische Hinzufügen von Kontrollkästchen auf der Grundlage der Anzahl der Dropdown-Listen im adaptiven Formular:
+Die folgende Abbildung zeigt ein Beispiel für die dynamische Aktivierung des Kontrollkästchens basierend auf dem Ausblenden oder Anzeigen des Textfelds in einem adaptiven Formular:
 
-![Objekteigenschaft](assets/object_property_set_property_new1.png)
+![Objekteigenschaft](assets/object_property_set_property_new.png)
 
 **[!UICONTROL Wert löschen von]**: Löscht den Wert des angegebenen Objekts.
 
 **[!UICONTROL Fokus festlegen]**: Legt den Fokus auf das angegebene Objekt.
 
-**[!UICONTROL Formular speichern]**: Speichert das Formular.
+**[!UICONTROL Formular senden]** Sendet das Formular.
 
-**[!UICONTROL Formulare senden]**: Sendet das Formular.
+**[!UICONTROL Zurücksetzen]** Setzt das Formular oder das angegebene Objekt zurück.
 
-**[!UICONTROL Formular zurücksetzen]**: Setzt das Formular zurück.
-
-**[!UICONTROL Formular validieren]**: Überprüft das Formular.
+**[!UICONTROL Bestätigen]** Validiert das Formular oder das angegebene Objekt.
 
 **[!UICONTROL Instanz hinzufügen]**: Fügt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile hinzu.
 
 **[!UICONTROL Instanz entfernen]**: Entfernt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile.
 
+**[!UICONTROL Funktionsausgabe]** Definiert eine Regel, die auf vordefinierten Funktionen oder benutzerdefinierten Funktionen basiert.
+
 **[!UICONTROL Navigieren zu]**: Navigiert zu anderen <!--Interactive Communications,--> adaptiven Formularen, anderen Assets (wie Bildern oder Dokument-Fragmenten) oder zu einer externen URL. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+
+**[!UICONTROL Dispatcher-Ereignis]** Trigger der spezifischen Aktionen oder Verhaltensweisen anhand vordefinierter Bedingungen oder Ereignisse.
+
 
 ### [!UICONTROL Wert festlegen] {#set-value-of}
 
@@ -204,25 +207,17 @@ Der Regeltyp **Wert festlegen** steht für manche Formularobjekte nicht zur Verf
 
 Wert von Objekt A festlegen auf:
 
-(Zeichenfolge ABC) ODER
-(Objekteigenschaft X von Objekt C) ODER
-(Wert aus einer Funktion) ODER
-(Wert aus einem mathematischen Ausdruck) ODER
-(Ausgabewert von einem Datenmodell-Service oder Webservice);
+(Zeichenfolge ABC) ODER (Objekteigenschaft X von Objekt C) ODER (Wert aus einer Funktion) ODER (Wert aus einem mathematischen Ausdruck) ODER (Ausgabewert eines Datenmodelldienstes);
 
 When (optional):
 
-(Bedingung 1 UND Bedingung 2 UND Bedingung 3) „TRUE“ zurückgibt;
+(Condition 1 AND Condition 2 AND Condition 3) is TRUE;
 
-Im folgenden Beispiel wird der Wert im Feld `dependentid` als Eingabe genommen und der Wert des Felds `Relation` auf die Ausgabe des Arguments `Relation` des Formulardatenmodell-Service `getDependent` festgelegt.
+Im folgenden Beispiel wird der Wert von `Question2` as `True` und legt den Wert von `Result` as `correct`.
 
-![Set-value-web-service](assets/set-value-web-service1.png)
+![Set-value-web-service](assets/set-value-web-service.png)
 
-Beispiel für die Regel „Wert festlegen“ unter Verwendung des Formulardatenmodell-Service
-
->[!NOTE]
->
->Darüber hinaus können Sie die Regel „Wert festlegen“ verwenden, um alle Werte in einer Dropdown-Listenkomponente mit der Ausgabe eines Formulardatenmodell-Service oder eines Webservice aufzufüllen. Stellen Sie jedoch sicher, dass das von Ihnen ausgewählte Ausgabeargument ein Array-Typ ist. Alle Werte, die in einem Array zurückgegeben werden, stehen in der angegebenen Dropdown-Liste zur Verfügung.
+Beispiel einer Regel zum Festlegen eines Werts mit dem Formulardatenmodelldienst.
 
 ### [!UICONTROL Anzeigen] {#show}
 
@@ -306,24 +301,25 @@ Eine typische Regel vom Typ „Validieren“ ist wie folgt strukturiert:
 
 ![Script-validation](assets/script-validation.png)
 
-### [!UICONTROL Optionen festlegen] {#setoptionsof}
+<!--
+### [!UICONTROL Set Options Of] {#setoptionsof}
 
-Mit dem Regeltyp **[!UICONTROL Optionen festlegen]** können Sie Regeln definieren, um Kontrollkästchen dynamisch zum adaptiven Formular hinzuzufügen. Sie können ein Formulardatenmodell oder eine benutzerdefinierte Funktion verwenden, um die Regel zu definieren.
+The **[!UICONTROL Set Options Of]** rule type enables you to define rules to add check boxes dynamically to the Adaptive Form. You can use a Form Data Model or a custom function to define the rule.
 
-Um eine Regel basierend auf einer benutzerdefinierten Funktion zu definieren, wählen Sie **[!UICONTROL Funktionsausgabe]** in der Dropdown-Liste aus und ziehen Sie eine benutzerdefinierte Funktion mittels Drag-and-Drop aus der Registerkarte **[!UICONTROL Funktionen]**. Die in der benutzerdefinierten Funktion definierte Anzahl von Kontrollkästchen wird dem adaptiven Formular hinzugefügt.
+To define a rule based on a custom function, select **[!UICONTROL Function Output]** from the drop-down list, and drag-and-drop a custom function from the **[!UICONTROL Functions]** tab. The number of checkboxes defined in the custom function are added to the Adaptive Form.
 
-![Benutzerdefinierte Funktionen](assets/custom_functions_set_options_new.png)
+![Custom Functions](assets/custom_functions_set_options_new.png)
 
-Informationen über das Erstellen einer benutzerdefinierten Funktion finden Sie unter [Benutzerdefinierte Funktionen im Regeleditor](#custom-functions).
+To create a custom function, see [custom functions in rule editor](#custom-functions).
 
-So definieren Sie eine auf einem Formulardatenmodell basierende Regel:
+To define a rule based on a form data model:
 
-1. Wählen Sie **[!UICONTROL Service-Ausgabe]** in der Dropdown-Liste aus.
-1. Wählen Sie das Datenmodellobjekt aus.
-1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Wert anzeigen]** eine Datenmodell-Objekteigenschaft aus. Die Anzahl der Kontrollkästchen im adaptiven Formular wird von der Anzahl der Instanzen abgeleitet, die für diese Eigenschaft in der Datenbank definiert wurden.
-1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Wert speichern]** eine Datenmodell-Objekteigenschaft.
+1. Select **[!UICONTROL Service Output]** from the drop-down list.
+1. Select the data model object.
+1. Select a data model object property from the **[!UICONTROL Display Value]** drop-down list. The number of checkboxes in the Adaptive Form is derived from the number of instances defined for that property in the database.
+1. Select a data model object property from the **[!UICONTROL Save Value]** drop-down list.
 
-![FDM-Set-Optionen](assets/fdm_set_options_new.png)
+![FDM set options](assets/fdm_set_options_new.png) -->
 
 ## Grundlegendes zur Benutzeroberfläche des Regeleditors {#understanding-the-rule-editor-user-interface}
 
@@ -334,19 +330,19 @@ So starten Sie die Benutzeroberfläche des Regeleditors:
 1. Öffnen Sie ein adaptives Formular im Autorenmodus.
 1. Wählen Sie das Formularobjekt aus, für das Sie eine Regel schreiben möchten, und wählen Sie in der Komponentensymbolleiste die Option ![edit-rules](assets/edit-rules-icon.svg). Die Benutzeroberfläche des Regeleditors wird angezeigt.
 
-   ![create-rules](assets/create-rules1.png)
+   ![create-rules](assets/create-rules.png)
 
    Alle vorhandenen Regeln für die ausgewählten Formularobjekte werden in dieser Ansicht aufgelistet. Weitere Informationen zum Verwalten vorhandener Regeln finden Sie unter [Verwalten von Regeln](rule-editor.md#p-manage-rules-p).
 
 1. Auswählen **[!UICONTROL Erstellen]** , um eine neue Regel zu erstellen. Wenn Sie den Regeleditor zum ersten Mal starten, wird standardmäßig der Visual Editor der Regeleditor-Benutzeroberfläche geöffnet.
 
-   ![Benutzeroberfläche des Regeleditors](assets/rule-editor-ui1.png)
+   ![Benutzeroberfläche des Regeleditors](assets/rule-editor-ui.png)
 
 Nachfolgend werden die einzelnen Komponenten der Benutzeroberfläche des Regeleditors im Detail beschrieben.
 
 ### A. Ansicht „Komponente und Regel“ {#a-component-rule-display}
 
-Zeigt den Titel des adaptiven Formularobjekts, über das Sie den Regeleditor aufgerufen haben, sowie den derzeit ausgewählten Regeltyp an. Im oben gezeigten Beispiel wurde der Regeleditor über ein adaptives Formularobjekt namens „Salary“ (Gehalt) gestartet, und der Regeltyp „Wenn“ ist ausgewählt.
+Zeigt den Titel des adaptiven Formularobjekts, über das Sie den Regeleditor aufgerufen haben, sowie den derzeit ausgewählten Regeltyp an. Im obigen Beispiel wird der Regeleditor von einem adaptiven Formularobjekt mit dem Namen Frage 1 gestartet und der Regeltyp ist Wann.
 
 ### B. Formularobjekte und Funktionen {#b-form-objects-and-functions-br}
 
@@ -356,9 +352,11 @@ Die Registerkarte „Formularobjekte“ zeigt eine hierarchische Ansicht aller O
 
 Die Formularobjekte, auf die eine oder mehrere gültige Regeln angewendet wurden, sind mit einem grünen Punkt markiert. Ist eine der auf ein Formularobjekt angewendeten Regeln ungültig, wird das Formularobjekt mit einem gelben Punkt markiert.
 
-Die Registerkarte „Funktionen“ enthält eine Reihe integrierter Funktionen (z. B. „Summe von“, „Minimum von“, „Maximum von“, „Durchschnitt von“, „Anzahl von“ und „Formular validieren“). Sie können diese Funktionen verwenden, um Werte in wiederholbaren Bereichen und Tabellenzeilen zu berechnen und sie beim Erstellen von Regeln in den Aktions- und Bedingungsanweisungen zu verwenden. Sie können jedoch auch [benutzerdefinierte Funktionen](#custom-functions) erstellen.
+Die Registerkarte „Funktionen“ enthält eine Reihe integrierter Funktionen (z. B. „Summe von“, „Minimum von“, „Maximum von“, „Durchschnitt von“, „Anzahl von“ und „Formular validieren“). Sie können diese Funktionen verwenden, um Werte in wiederholbaren Bereichen und Tabellenzeilen zu berechnen und sie beim Erstellen von Regeln in den Aktions- und Bedingungsanweisungen zu verwenden. Sie können jedoch auch benutzerdefinierte Funktionen erstellen.
 
-![Die Registerkarte „Funktionen“](assets/functions1.png)
+Einige Funktionen werden in der Abbildung dargestellt:
+
+![Die Registerkarte „Funktionen“](assets/functions.png)
 
 >[!NOTE]
 >
@@ -397,7 +395,7 @@ Die Schaltfläche **[!UICONTROL Fertig]** wird verwendet, um eine Regel zu speic
 
 ## Regeln schreiben {#write-rules}
 
-Zum Schreiben von Regeln können Sie den visuellen Regeleditor &lt;!-- oder den Code-Editor> verwenden. Wenn Sie den Regeleditor zum ersten Mal starten, wird er im visuellen Editormodus geöffnet. Sie können zum Code-Editormodus wechseln und Regeln schreiben. Wenn Sie eine Regel im Code-Editor schreiben oder ändern, ist es jedoch nicht möglich, für diese Regel in den Visual Editor zu wechseln, es sei denn, Sie löschen den Inhalt des Code-Editors. Wenn Sie den Regeleditor das nächste Mal starten, wird er in dem Modus geöffnet, den Sie zuletzt zum Erstellen von Regeln verwendet haben.
+Sie können Regeln mit dem visuellen Regeleditor schreiben <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
 
 Im Folgenden wird zunächst das Schreiben von Regeln im Visual Editor beschrieben.
 
@@ -418,7 +416,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    Öffnen Sie das Kreditantragsformular im Autorenmodus. Wählen Sie die **[!UICONTROL Familienstand]** Komponente und wählen Sie ![edit-rules](assets/edit-rules-icon.svg). Wählen Sie als Nächstes **[!UICONTROL Erstellen]** , um den Regeleditor zu starten.
 
-   ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1.png)
+   ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1-cc.png)
 
    Wenn Sie den Regeleditor starten, ist standardmäßig die Wenn-Regel ausgewählt. Darüber hinaus wird das Formularobjekt (in diesem Fall „Familienstand“), von dem aus Sie den Regeleditor gestartet haben, in der Wenn-Anweisung angegeben.
 
@@ -426,41 +424,56 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
 1. Auswählen **[!UICONTROL Status auswählen]** und wählen Sie **[!UICONTROL ist gleich]**. Das Feld **[!UICONTROL Eine Zeichenfolge eingeben]** wird angezeigt.
 
-   ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
+   ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
-   In dem Optionsfeld „Familienstand“ werden den Optionen **[!UICONTROL Verheiratet]** und **[!UICONTROL Ledig]** die Werte **0** bzw. **1** zugewiesen. Sie können die zugewiesenen Werte auf der Registerkarte „Titel“ des Dialogfelds zum Bearbeiten des Optionsfelds überprüfen, wie unten gezeigt.
+<!--  In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
 
-   ![Optionsfeldwerte im Regeleditor](assets/radio-button-values.png)
+   ![Radio button values from rule editor](assets/radio-button-values.png)-->
 
-1. Geben Sie in der Regel im Feld **[!UICONTROL Eine Zeichenfolge eingeben]** den Wert **0** an.
+1. Im **[!UICONTROL String eingeben]** in der Regel ein, wählen Sie **Verheiratet** aus dem Dropdown-Menü.
 
-   ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4.png)
+   ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4-cc.png)
 
    Sie haben die Bedingung als `When Marital Status is equal to Married` definiert. Definieren Sie anschließend die Aktion, die ausgeführt werden soll, wenn diese Bedingung „True“ lautet.
 
 1. Wählen Sie für die Dann-Anweisung die Option **[!UICONTROL Anzeigen]** aus der Dropdown-Liste **[!UICONTROL Aktion auswählen]**.
 
-   ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
+   ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5-cc.png)
 
 1. Ziehen Sie das Feld **[!UICONTROL Gehalt des Partners]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]**. Alternativ können Sie die **[!UICONTROL Objekt ablegen oder hier auswählen]** und wählen Sie die **[!UICONTROL Gehalt des Partners]** aus dem Popup-Menü, in dem alle Formularobjekte im Formular aufgelistet werden.
 
-   ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
+   ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
+
+   Definieren Sie als Nächstes die Aktion, die ausgeführt werden soll, wenn diese Bedingung False ist.
+1. Klicks **[!UICONTROL Abschnitt &quot;Else hinzufügen&quot;]** , um eine weitere Bedingung für die **[!UICONTROL Gehalt des Partners]** eingeben, falls Sie Familienstand als Einzelperson auswählen.
+
+   ![when-else](assets/when-else.png)
+
+
+1. Wählen Sie in der Anweisung Else die Option **[!UICONTROL Ausblenden]** aus dem **[!UICONTROL Aktion auswählen]** angezeigt.
+   ![when-else](assets/when-else-1.png)
+
+1. Ziehen Sie das Feld **[!UICONTROL Gehalt des Partners]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]**. Alternativ können Sie die **[!UICONTROL Objekt ablegen oder hier auswählen]** und wählen Sie die **[!UICONTROL Gehalt des Partners]** aus dem Popup-Menü, in dem alle Formularobjekte im Formular aufgelistet werden.
+   ![when-else](assets/when-else-2.png)
 
    Die Regel wird im Regeleditor wie folgt angezeigt.
 
-   ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7.png)
+   ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7-cc.png)
+
+
 
 1. Auswählen **[!UICONTROL Fertig]** , um die Regel zu speichern.
 
-1. Wiederholen Sie die Schritte 1 bis 5, um eine weitere Regel zu definieren, mit der das Feld für das Gehalt der Partnerin bzw. des Partners ausgeblendet wird, wenn unter Familienstand „Ledig“ angegeben ist. Die Regel wird im Regeleditor wie folgt angezeigt.
+<!--
+1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
 
-   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8.png)
+   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png) -->
 
-   >[!NOTE]
-   >
-   >Alternativ zu diesem Verfahren können Sie dieses Verhalten auch implementieren, indem Sie für das Feld „Gehalt des Partners“ lediglich eine Regel vom Typ „Anzeigen“ anstelle zweier Wenn-Regeln für das Feld „Familienstand“ erstellen.
+>[!NOTE]
+>
+> Alternativ können Sie eine Regel Anzeigen für das Feld Gehalt des Partners anstelle einer Wenn-Regel für das Feld Familienstand schreiben, um dasselbe Verhalten zu implementieren.
 
-   ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9.png)
+![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
 
 1. Als Nächstes erstellen Sie eine Regel für die Berechnung des Kreditanspruchsbetrags (50 % des Gesamtgehalts) und zur Anzeige des Betrags im Feld für den Kreditanspruch. Dies erreichen Sie, indem Sie für das Feld „Kreditanspruch“ Regeln vom Typ **[!UICONTROL Wert festlegen]** erstellen.
 
@@ -468,11 +481,11 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
 1. Wählen Sie in der Dropdown-Liste „Regeln“ die Regel **[!UICONTROL Wert festlegen]** aus.
 
-   ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
+   ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10-cc.png)
 
 1. Auswählen **[!UICONTROL Option auswählen]** und wählen **[!UICONTROL Mathematischer Ausdruck]**. Ein Feld, in dem Sie mathematische Ausdrücke schreiben können, wird geöffnet.
 
-   ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
+   ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11-cc.png)
 
 1. Gehen Sie in diesem Ausdrucksfeld wie folgt vor:
 
@@ -486,11 +499,11 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
 1. Wählen Sie anschließend im markierten Bereich um das Ausdrucksfeld aus und wählen Sie **[!UICONTROL Ausdruck erweitern]**.
 
-   ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
+   ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
    Wählen Sie im Feld für den erweiterten Ausdruck im Feld **[!UICONTROL Operator auswählen]** die Option **[!UICONTROL geteilt durch]** und im Feld **[!UICONTROL Option auswählen]** die Option **[!UICONTROL Zahl]** aus. Geben Sie **[!UICONTROL 2]** in das Zahlenfeld ein.
 
-   ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14.png)
+   ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14-cc.png)
 
    >[!NOTE]
    >
@@ -500,7 +513,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
 1. Auswählen **[!UICONTROL Bedingung hinzufügen]** , um eine Wenn-Anweisung hinzuzufügen.
 
-   ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15.png)
+   ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
    Gehen Sie in der Wenn-Anweisung wie folgt vor:
 
@@ -510,21 +523,22 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    * Wählen Sie in dem anderen Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]** den Eintrag „String“ (Zeichenfolge) aus und geben Sie **[!UICONTROL Verheiratet]** in das Feld **[!UICONTROL Geben Sie eine Zeichenfolge ein]** ein.
 
-   Die Regel wird schließlich wie folgt im Regeleditor angezeigt.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
+   Die Regel wird schließlich wie folgt im Regeleditor angezeigt.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16-cc.png)
 
 1. Klicken Sie auf **[!UICONTROL Fertig]**. Dadurch wird die Regel gespeichert.
 
 1. Folgen Sie wiederum Schritt 7 bis 14, um eine andere Regel zu definieren, mit deren Hilfe der Kreditanspruch berechnet wird im Falle, dass der Familienstand „Ledig“ ist. Die Regel wird im Regeleditor wie folgt angezeigt.
 
-   ![write-rules-visual-editor-17](assets/write-rules-visual-editor-17.png)
+   ![write-rules-visual-editor-17](assets/write-rules-visual-editor-17-cc.png)
 
->[!NOTE]
->
->Sie können auch die Regel „Wert einstellen von“ verwenden, um den Kreditanspruch über die Wenn-Regel zu berechnen, die Sie erstellt haben, um das Feld für das Gehalt der Partnerin bzw. des Partners ein- bzw. auszublenden. Die resultierende kombinierte Regel (für den Familienstand „Ledig“) wird wie folgt im Regeleditor angezeigt.
->
->Auf ähnliche Weise können Sie eine kombinierte Regel erstellen, die die Sichtbarkeit des Felds für das Gehalt der Partnerin bzw. des Partners steuert und den Kreditanspruch berechnet, wenn unter Familienstand „Verheiratet“ angegeben ist.
+Sie können auch die Regel „Wert einstellen von“ verwenden, um den Kreditanspruch über die Wenn-Regel zu berechnen, die Sie erstellt haben, um das Feld für das Gehalt der Partnerin bzw. des Partners ein- bzw. auszublenden. Die resultierende kombinierte Regel (für den Familienstand „Ledig“) wird wie folgt im Regeleditor angezeigt.
 
-![write-rules-visual-editor-18](assets/write-rules-visual-editor-18.png)
+![write-rules-visual-editor-18](assets/write-rules-visual-editor-18-cc.png)
+
+Sie können eine kombinierte Regel erstellen, um die Sichtbarkeit des Felds für das Gehalt des Partners oder der Partnerin zu steuern und die Kreditanspruchsberechtigung für den Familienstand &quot;Verheiratet&quot;unter Verwendung der Bedingung &quot;Else&quot;zu berechnen.
+
+![write-rules-visual-editor-19](assets/write-rules-visual-editor-19-cc.png)
+
 
 <!-- ### Using code editor {#using-code-editor}
 
@@ -549,6 +563,8 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Benutzerdefinierte Funktionen im Regeleditor {#custom-functions}
 
+Sie können auch benutzerdefinierte Funktionen in Ihrem Regeleditor verwenden. Anweisungen zum Erstellen benutzerdefinierter Funktionen finden Sie im Artikel [Benutzerdefinierte Funktionen in Adaptive Forms](/help/forms/create-and-use-custom-functions.md).
+
 Zusätzlich zu den vorkonfigurierten Funktionen wie beispielsweise *Summe von*, die unter „Funktionenausgabe“ aufgeführt sind, können Sie auch benutzerdefinierte Funktionen erstellen, die Sie häufig benötigen. Stellen Sie sicher, dass für die Funktion, die Sie schreiben, ein `jsdoc` vorhanden ist.
 
 Dieses dazugehörige `jsdoc` ist aus den folgenden Gründen erforderlich:
@@ -571,10 +587,6 @@ Alternativ dazu ist es möglich`,``@function funcName <Function Name>` **oder** 
   `funcName` ist der Name der Funktion (Leerzeichen sind nicht zulässig).
   `<Function Name>` ist der Anzeigename der Funktion.
 
-* **Member** (Mitglied)
-Syntax: `@memberof namespace`
-Bindet einen Namespace an die Funktion.
-
 * **Parameter**
 Syntax: `@param {type} name <Parameter Description>`
 Alternativ dazu ist es möglich, `@argument` `{type} name <Parameter Description>` **oder** `@arg` `{type}` `name <Parameter Description>` zu verwenden.
@@ -585,10 +597,28 @@ Zeigt die von der Funktion verwendeten Parameter an. In einer Funktion können m
    1. Number (Zahl)
    1. Boolean (Boolesch)
    1. Scope (Umfang)
+   1. Zeichenfolge[]
+   1. number[]
+   1. boolean[]
+   1. Datum
+   1. date[]
+   1. Array
+   1. Objekt
 
-  Scope bezieht sich auf Felder eines adaptiven Formulars. Wenn ein Formular verzögertes Laden (Lazy Loading) verwendet, können Sie `scope` verwenden, um auf dessen Felder zuzugreifen. Sie können auf Felder zugreifen, wenn die Felder geladen wurden oder wenn die Felder als „global“ gekennzeichnet sind.
+  `scope` bezieht sich auf ein spezielles globales Objekt, das von der Forms-Laufzeit bereitgestellt wird. Es muss der letzte Parameter sein und ist für den Benutzer im Regeleditor nicht sichtbar. Sie können den Bereich verwenden, um auf lesbare Formular- und Feld-Proxy-Objekte zuzugreifen, um Eigenschaften zu lesen, Ereignisse, die die Regel ausgelöst haben, und eine Reihe von Funktionen zur Bearbeitung des Formulars.
 
-  Alle Parametertypen fallen in eine der oben genannten Kategorien. „None“ (Keiner) wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Bei den Typen wird nicht zwischen Groß- und Kleinschreibung unterschieden. Leerzeichen sind im Parameter `name` unzulässig. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
+  `object` type wird verwendet, um ein lesbares Feldobjekt im Parameter an eine benutzerdefinierte Funktion zu übergeben, anstatt den Wert weiterzugeben.
+
+  Alle Parametertypen fallen in eine der oben genannten Kategorien. „None“ (Keiner) wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Bei den Typen wird nicht zwischen Groß- und Kleinschreibung unterschieden. Leerzeichen sind im Parameternamen nicht zulässig.  Parameterbeschreibung kann mehrere Wörter enthalten.
+
+* **Optionaler Parameter**
+Syntax: `@param {type=} name <Parameter Description>`
+Alternativ können Sie Folgendes verwenden: `@param {type} [name] <Parameter Description>`
+Standardmäßig sind alle Parameter obligatorisch. Sie können einen Parameter optional markieren, indem Sie `=` in den Parametertyp ein oder den Parameternamen in eckige Klammern setzen.
+
+  Deklarieren Sie beispielsweise `Input1` als optionaler Parameter:
+   * `@param {type=} Input1`
+   * `@param {type} [Input1]`
 
 * **Return Type** (Rückgabetyp)
 Syntax: `@return {type}`
@@ -597,73 +627,55 @@ Fügt Informationen über die Funktion hinzu (z. B. ihren Zweck).
 Die Zeichenfolge „{type}“ gibt den Rückgabetyp der Funktion an. Zulässige Rückgabetypen sind:
 
    1. String (Zeichenfolge)
-   1. Number (Zahl)
-   1. Boolean (Boolesch)
+   2. Number (Zahl)
+   3. Boolean (Boolesch)
+   4. Zeichenfolge[]
+   5. number[]
+   6. boolean[]
+   7. Datum
+   8. date[]
+   9. Array
+   10. Objekt
 
   Alle anderen Rückgabetypen fallen in eine der oben genannten Kategorien. Keine Angabe wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Bei Rückgabetypen wird nicht zwischen Groß- und Kleinschreibung unterschieden.
 
-   * **This** (Dieses)
-Syntax: `@this currentComponent`
+<!--
+**Adding a custom function**
 
-  Verwenden Sie @this, um auf die Komponente des adaptiven Formulars zu verweisen, in der die Regel geschrieben wird.
+For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
 
-  Das folgende Beispiel basiert auf dem Feldwert. In dem folgenden Beispiel blendet die Regel ein Feld im Formular aus. Der `this`-Teil von `this.value` bezieht sich auf die zugrunde liegende Komponente des adaptiven Formulars, für die die Regel geschrieben wird.
+To create a client library and add it in the CRX repository, perform the following steps:
 
-  ```
-     /**
-     * @function myTestFunction
-     * @this currentComponent
-     * @param {scope} scope in which code inside function is run.
-     */
-     myTestFunction = function (scope) {
-        if(this.value == "O"){
-              scope.age.visible = true;
-        } else {
-           scope.age.visible = false;
-        }
-     }
-  ```
-
-  >[!NOTE]
-  >
-  >Kommentare vor benutzerdefinierten Funktionen werden für die Zusammenfassung verwendet. Die Zusammenfassung kann sich über mehrere Zeilen bis zum nächsten Tag erstrecken. Beschränken Sie ihre Länge auf eine einzelne Zeile, um eine kurze Beschreibung im Regel-Builder zu erhalten.
-
-**Hinzufügen einer benutzerdefinierten Funktion**
-
-Angenommen, Sie möchten eine benutzerdefinierte Funktion zur Berechnung der Fläche eines Quadrats hinzufügen. Die Seitenlänge entspricht der Benutzereingabe für die benutzerdefinierte Funktion. Dieser Wert muss in ein numerisches Feld im Formular eingegeben werden. Die berechnete Ausgabe wird in einem anderen numerischen Feld im Formular angezeigt. Um eine benutzerdefinierte Funktion hinzuzufügen, müssen Sie zunächst eine Client-Bibliothek erstellen und sie dann zum CRX-Repository hinzufügen.
-
-So erstellen Sie eine Client-Bibliothek und fügen sie dem CRX-Repository hinzu:
-
-1. Erstellen Sie eine Client-Bibliothek. Weitere Informationen finden Sie unter [Verwenden Client-seitiger Bibliotheken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=de#developing).
-1. Fügen Sie in CRXDE die Eigenschaft `categories` mit dem Wert `customfunction` (vom Typ „String“ (Zeichenfolge)) zum Ordner `clientlib` hinzu.
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
+1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >
-   >`customfunction` ist eine Beispielkategorie. Sie können einen beliebigen Namen für die Kategorie wählen, die Sie im Ordner `clientlib`erstellen.
+   >`customfunction`is an example category. You can choose any name for the category you create in the `clientlib`folder.
 
-Nachdem Sie Ihre Client-Bibliothek im CRX-Repository hinzugefügt haben, verwenden Sie sie in Ihrem adaptiven Formular. Sie ermöglicht die Verwendung der benutzerdefinierten Funktion als Regel im Formular. So fügen Sie die Client-Bibliothek in Ihrem adaptiven Formular hinzu:
+After you have added your client library in the CRX repository, use it in your Adaptive Form. It lets you use your custom function as a rule in your form. To add the client library in your Adaptive Form, perform the following steps:
 
-1. Öffnen Sie das Formular im Bearbeitungsmodus.
-Um ein Formular im Bearbeitungsmodus zu öffnen, wählen Sie ein Formular aus und wählen Sie **[!UICONTROL Öffnen]**.
-1. Wählen Sie im Bearbeitungsmodus eine Komponente aus und wählen Sie dann ![Feldebene](assets/select_parent_icon.svg) > **[!UICONTROL Container für adaptive Formulare]** und wählen Sie ![cmppr](assets/configure-icon.svg).
-1. Fügen Sie in der Seitenleiste unter „Name der Client-Bibliothek“ Ihre Client-Bibliothek hinzu. (In diesem Beispiel wäre das `customfunction`.)
+1. Open your form in edit mode.
+   To open a form in edit mode, select a form and select **[!UICONTROL Open]**.
+1. In the edit mode, select a component, then select ![field-level](assets/select_parent_icon.svg) &gt; **[!UICONTROL Adaptive Form Container]**, and then select ![cmppr](assets/configure-icon.svg).
+1. In the sidebar, under Name of Client Library, add your client library. ( `customfunction` in the example.)
 
-   ![Hinzufügen der benutzerdefinierten Funktion zur Client-Bibliothek](assets/clientlib.png)
+   ![Adding the custom function client library](assets/clientlib.png)
 
-1. Wählen Sie das numerische Eingabefeld aus und wählen Sie ![edit-rules](assets/edit-rules-icon.svg) , um den Regeleditor zu öffnen.
-1. Auswählen **[!UICONTROL Regel erstellen]**. Erstellen Sie mithilfe der unten gezeigten Optionen eine Regel zum Speichern des Quadratwerts der Eingabe im Ausgabefeld des Formulars.
+1. Select the input numeric box, and select ![edit-rules](assets/edit-rules-icon.svg) to open the rule editor.
+1. Select **[!UICONTROL Create Rule]**. Using options shown below, create a rule to save the squared value of the input in the Output field of your form.
 
-   [![Verwendung benutzerdefinierter Funktionen zum Erstellen einer Regel](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
-
-1. Klicken Sie auf **[!UICONTROL Fertig]**. Ihre benutzerdefinierte Funktion wird hinzugefügt.
+   [![Using custom functions to create a rule](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
+  
+1. Select **[!UICONTROL Done]**. Your custom function is added.
 
    >[!NOTE]
    >
-   > Informationen zum Aufrufen eines Formulardatenmodells aus dem Regeleditor mithilfe benutzerdefinierter Funktionen [finden Sie hier ](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
+   > To invoke a form data model from rule editor using custom functions, [see here](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services). 
 
-#### Unterstützte Typen von Funktionsdeklarationen {#function-declaration-supported-types}
+#### Function declaration supported types {#function-declaration-supported-types}
 
-**Funktionsanweisung**
+**Function Statement**
 
 ```javascript
 function area(len) {
@@ -671,9 +683,9 @@ function area(len) {
 }
 ```
 
-Diese Funktion wird ohne `jsdoc`-Kommentare eingefügt.
+This function is included without `jsdoc` comments.
 
-**Funktionsausdruck**
+**Function Expression**
 
 ```javascript
 var area;
@@ -684,7 +696,7 @@ area = function(len) {
 };
 ```
 
-**Funktionsausdruck und -anweisung**
+**Function Expression and Statement**
 
 ```javascript
 var b={};
@@ -694,7 +706,7 @@ b.area = function(len) {
 }
 ```
 
-**Funktionsdeklaration als Variable**
+**Function Declaration as Variable**
 
 ```javascript
 /** */
@@ -705,9 +717,9 @@ var x1,
     x2 =5, x3 =true;
 ```
 
-Einschränkung: Über die benutzerdefinierte Funktion wird nur die erste Funktionsdeklaration aus der Variablenliste ausgewählt, falls zusammen vorhanden. Der Funktionsausdruck kann für jede deklarierte Funktion verwendet werden.
+Limitation: custom function picks only the first function declaration from the variable list, if together. You can use function expression for every function declared.
 
-**Funktionsdeklaration als Objekt**
+**Function Declaration as Object**
 
 ```javascript
 var c = {
@@ -722,13 +734,14 @@ var c = {
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Sie `jsdoc` für jede benutzerdefinierte Funktion verwenden. Obwohl `jsdoc`-Kommentare empfohlen werden, sollten Sie einen leeren `jsdoc`-Kommentar einfügen, um eine Funktion als benutzerdefinierte Funktion zu kennzeichnen. Dies ermöglicht eine standardmäßige Behandlung Ihrer benutzerdefinierten Funktion.
+>Ensure that you use `jsdoc` for every custom function. Although `jsdoc`comments are encouraged, include an empty `jsdoc`comment to mark your function as custom function. It enables default handling of your custom function.
+-->
 
 ## Verwalten von Regeln {#manage-rules}
 
 Alle vorhandenen Regeln für ein Formularobjekt werden aufgelistet, wenn Sie das Objekt auswählen und ![edit-rules1](assets/edit-rules-icon.svg). Sie können den Titel und eine Vorschau der Regelzusammenfassung anzeigen. Darüber hinaus können Sie in der Benutzeroberfläche die vollständige Regelübersicht erweitern und anzeigen, die Reihenfolge der Regeln ändern, Regeln bearbeiten und Regeln löschen.
 
-![List-rules](assets/list-rules.png)
+![List-rules](assets/list-rules-cc.png)
 
 Sie können die folgenden Aktionen für Regeln ausführen:
 
@@ -743,7 +756,7 @@ Sie können die Position einer Regel in der Reihenfolge ändern, indem Sie auf !
 
 * **Aktivieren/Deaktivieren**: Wenn Sie die Verwendung einer Regel vorübergehend aussetzen müssen, können Sie eine oder mehrere Regeln auswählen und **[!UICONTROL Deaktivieren]** in der Symbolleiste &quot;Aktionen&quot;, um sie zu deaktivieren. Wenn eine Regel deaktiviert ist, wird sie zur Laufzeit nicht ausgeführt. Um eine Regel zu aktivieren, die deaktiviert ist, können Sie sie auswählen und in der Aktionssymbolleiste die Option Aktivieren auswählen. Die Statusspalte der Regel zeigt an, ob die Regel aktiviert oder deaktiviert ist.
 
-![Regel deaktivieren](assets/disablerule.png)
+![Regel deaktivieren](assets/disablerule-cc.png)
 
 ## Kopieren und Einfügen von Regeln {#copy-paste-rules}
 

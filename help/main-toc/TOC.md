@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+source-git-commit: 2359f66c961d7678d07af12aa8173ad9169dff9c
 workflow-type: tm+mt
-source-wordcount: '4751'
+source-wordcount: '4761'
 ht-degree: 92%
 
 ---
@@ -636,6 +636,7 @@ ht-degree: 92%
             + [Hinzufügen eines benutzerdefinierten Fehler-Handlers in einem adaptiven Formular](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Hinzufügen eines Gebietsschemas für auf Kernkomponenten basierende adaptive Formulare](/help/forms/supporting-new-language-localization-core-components.md)
             + [Benutzerdefinierte Funktionen erstellen und verwenden](/help/forms/create-and-use-custom-functions.md)
+            + [Hinzufügen von Regeln zu einem adaptiven Formular basierend auf Kernkomponenten](/help/forms/rule-editor-core-components.md)
       + Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
          + Konvertieren von PDF-Formularen in adaptive Formulare {#afcs}
             + [Einführung in den Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de)
