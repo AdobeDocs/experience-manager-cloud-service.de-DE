@@ -6,9 +6,9 @@ feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6701'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -506,7 +506,7 @@ Nachdem Sie Experience Platform Tags konfiguriert haben, werden für die Integra
 
 Bei einer Eigenschaft in Experience Platform Tags handelt es sich um eine benannte Konfiguration, die alle Ihre Einstellungen zusammenhält. Es wird eine Bibliothek der Konfigurationseinstellungen erstellt und in verschiedenen Umgebungsebenen (Entwicklung, Staging und Produktion) veröffentlicht.
 
-Siehe auch [Auswahleigenschaft konfigurieren](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=de).
+Siehe auch [Konfigurieren einer ausgewählten Eigenschaft](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=de).
 
 **So erstellen Sie eine Eigenschaft in Experience Platform Tags:**
 

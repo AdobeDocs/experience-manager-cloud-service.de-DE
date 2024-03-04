@@ -1,6 +1,6 @@
 ---
 title: Multi-Store-Einrichtung in Commerce
-description: Erfahren Sie, wie Sie mehrere Store-Ansichten von Adobe Commerce zu Adobe Experience Manager zuordnen. Dadurch können Projekte auch mehrinstanzenfähige und mehrsprachige Anwendungsfälle unterstützen.
+description: Erfahren Sie, wie Sie mehrere Store-Ansichten von Adobe Commerce zu Adobe Experience Manager zuordnen. Dadurch können Projekte auch mehrmandantenfähige und mehrsprachige Anwendungsfälle unterstützen.
 sub-product: Commerce
 version: Cloud Service
 doc-type: technical-video
@@ -11,9 +11,9 @@ kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Videoeinführung mit detaillierten Optionen zur Integration mehrerer Adobe Comme
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-AEM-Funktionen von Live Copy und Sprachkopie zur Verwaltung mehrerer Sites werden zusammen mit dem Commerce Integration Framework verwendet, um Sites global über Regionen und Gebietsschemata hinweg zu verwalten.
+AEM-Funktionen zur Verwaltung mehrerer Websites von Live Copy und Sprachkopie werden mit dem Commerce Integration Framework verwendet, um global Sites über Regionen und Gebietsschemata hinweg zu verwalten.
 
 Es empfiehlt sich, eine 1:1-Beziehung zwischen der AEM-Site und der Adobe Commerce Store-Ansicht zu verwenden.
 
@@ -39,11 +39,11 @@ Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu ein
 
 3. Erstellen Sie eine untergeordnete Konfiguration der CIF-Cloud Service-Konfiguration wie folgt:
 
-   * Navigieren Sie AEM zu Tools > Allgemein > [Konfigurationsbrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * Wechseln Sie in AEM zu „Tools“ > „Allgemein“ > [Konfigurations-Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
    * Wählen Sie die von Ihnen erstellte Basiskonfiguration aus.
-   * Erstellen Sie eine Konfiguration mithilfe der oben unter Punkt 2 beschriebenen Schritte.
+   * Erstellen Sie eine Konfiguration mithilfe der unter Punkt 2 beschriebenen Schritte.
 
-   Diese neue Konfiguration wird als untergeordnete Konfiguration der Basiskonfiguration erstellt. Sie können jetzt unter Tools > Allgemein > Konfigurationsbrowser die Konfigurationseinstellungen erstellen.
+   Diese neue Konfiguration wird als untergeordnete Konfiguration der Basiskonfiguration erstellt. Sie können nun die Konfigurationseinstellungen unter „Tools“ > „Allgemein“ > „Konfigurationsbrowser“ erstellen.
 
    >[!TIP]
    >

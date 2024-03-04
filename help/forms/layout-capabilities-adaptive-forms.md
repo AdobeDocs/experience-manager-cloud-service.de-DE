@@ -4,9 +4,9 @@ description: Layout und Darstellung adaptiver Formulare auf verschiedenen Gerät
 feature: Adaptive Forms, Foundation Components
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '847'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,9 +44,9 @@ Um das Layout eines adaptiven Formulars zu ändern, verwenden Sie den Autorenmod
 
 Formularersteller können jedem Bereich eines adaptiven Formulars ein Layout zuordnen, einschließlich des Stammbereichs.
 
-Die Bereichslayouts stehen unter `/libs/fd/af/layouts/panel` zur Verfügung. Wählen Sie das Bedienfeld aus und wählen Sie ![cmppr1](assets/configure-icon.svg) , um die Bereichseigenschaften anzuzeigen.
+Die Bereichslayouts stehen unter `/libs/fd/af/layouts/panel` zur Verfügung. Wählen Sie den Bereich und wählen Sie dann ![cmppr1](assets/configure-icon.svg), um die Eigenschaften des Bereichs anzuzeigen.
 
-![Liste der Bereichslayouts für den Stammbereich eines adaptiven Formulars](assets/layouts.png)
+![Liste der Bereichs-Layouts für den Stammbereich eines adaptiven Formulars](assets/layouts.png)
 
 ### [!UICONTROL Responsiv – alles auf einer Seite ohne Navigation] {#responsive-everything-on-one-page-without-navigation-br}
 

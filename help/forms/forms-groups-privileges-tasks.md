@@ -3,8 +3,9 @@ title: Welche Benutzergruppen sind in AEM Forms as a Cloud Service vorkonfigurie
 description: Liste der vorkonfigurierten Benutzergruppen und der jeder Gruppe zugewiesenen Berechtigungen
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '167'
 ht-degree: 100%
 

@@ -1,11 +1,12 @@
 ---
-description: Neben der Übersetzung von Google-Dokumenten und Word-Dokumenten in Markdown und HTML Markup übersetzt AEM auch Tabellen (Microsoft Excel-Arbeitsmappen und Google Tabellen) in JSON-Dateien, die von Ihrer Website oder Webanwendung einfach genutzt werden können.
+description: Neben der Übersetzung von Google-Dokumenten und Word-Dokumenten in Markdown und HTML-Markup können mit AEM auch Tabellen (Microsoft Excel-Arbeitsmappen und Google Sheets) in JSON-Dateien übersetzt werden, die von Ihrer Website oder Web-Anwendung einfach genutzt werden können.
 title: Tabellen und JSON
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 032ae9aa-577c-44b1-8f5f-fb3d2885013e
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '44'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

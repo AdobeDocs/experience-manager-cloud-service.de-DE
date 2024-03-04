@@ -1,21 +1,21 @@
 ---
-title: Wie erstelle ich eine Vorlage für ein adaptives Formular basierend auf der Kernkomponente?
-description: Erstellen Sie Vorlagen für adaptive Formulare basierend auf der Kernkomponente , um die grundlegende Struktur und den anfänglichen Inhalt mithilfe des Vorlagen-Editors zu definieren.
+title: Wie erstellt man eine adaptive Formularvorlage basierend auf einer Kernkomponente?
+description: Erstellen Sie adaptive Formularvorlagen auf Basis einer Kernkomponente, um die Grundstruktur und den anfänglichen Inhalt mit dem Vorlageneditor zu definieren.
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1961'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
-# Erstellen einer Vorlage für ein adaptives Formular basierend auf Kernkomponenten {#adaptive-form-templates}
+# Erstellen einer adaptiven Formularvorlage basierend auf Kernkomponenten {#adaptive-form-templates}
 
 Wenn Sie ein Formular erstellen, fügen Sie Felder und Komponenten hinzu, um Formularstruktur, Inhalt und Aktionen im Editor zu definieren. Sie können Felder und Komponenten im`guideRootPanel` des Formularcontainers hinzufügen. Mit dem Vorlageneditor können Sie eine Vorlage erstellen, die eine grundlegende Struktur und anfänglichen Inhalt enthält, die Autorinnen und Autoren zum Erstellen von Formularen verwenden können.
 
-Beispiel: Sie möchten, dass alle Autoren in einem Registrierungsformular bestimmte Textfelder, Navigationsschaltflächen und eine Schaltfläche zum Senden verwenden. Sie können eine Vorlage mit den Komponenten erstellen, die Autoren verwenden können, damit ihr Formular konsistent mit anderen Registrierungsformularen ist. Wenn Autoren die Vorlage zum Erstellen eines adaptiven Formulars verwenden, erbt das neue Formular die Struktur, die Komponenten und die Komponenten, die Sie in der Vorlage angegeben haben. Mit dem Vorlageneditor können Sie:
+Beispiel: Sie möchten, dass alle Autoren in einem Registrierungsformular bestimmte Textfelder, Navigationsschaltflächen und eine Schaltfläche zum Senden verwenden. Sie können eine Vorlage mit den Komponenten erstellen, die Autoren verwenden können, damit ihr Formular konsistent mit anderen Registrierungsformularen ist. Wenn Autorinnen und Autoren die Vorlage verwenden, um ein adaptives Formular zu erstellen, erbt das neue Formular die Struktur und die Komponenten, die Sie in der Vorlage festgelegt haben. Mit dem Vorlageneditor können Sie:
 
 * Kopf- und Fußzeilenkomponenten eines Formulars in der Strukturebene hinzufügen.
 * Den anfänglichen Inhalt für das Formular angeben.
@@ -27,11 +27,11 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## Voraussetzung
 
-**Aktivieren der adaptiven Forms-Kernkomponenten für Ihre Umgebung**: Wenn Sie ein Programm erstellen, sind die adaptiven Forms-Kernkomponenten bereits für Ihre Umgebung aktiviert. Wenn Sie eine as a Cloud Service Formularumgebung haben, die auf [AEM Archetyp 39 oder früher](https://github.com/adobe/aem-project-archetype), [Aktivieren der adaptiven Forms-Kernkomponenten für Ihre Umgebung](enable-adaptive-forms-core-components.md).
+**Aktivieren der Kernkomponenten adaptiver Formulare für Ihre Umgebung**: Wenn Sie ein Programm erstellen, sind die Kernkomponenten adaptiver Formulare bereits für Ihre Umgebung aktiviert. Wenn Sie eine Forms as a Cloud Service-Umgebung haben, die auf dem [AEM-Archetyp 39 oder früher](https://github.com/adobe/aem-project-archetype) basiert, [aktivieren Sie die Kernkomponenten adaptiver Formulare für Ihre Umgebung](enable-adaptive-forms-core-components.md).
 
 >[!NOTE]
 >
-> Bei der Bereitstellung der as a Cloud Service Forms-Umgebung basierend auf Archetyp 45 muss die Variable **Adaptive Forms (Kernkomponente)** Vorlagen und komponentenbasierte Kernthemen werden zu Ihrer Umgebung hinzugefügt.
+> Bei der Bereitstellung der Forms as a Cloud Service-Umgebung, die auf Archetyp 45 basiert, werden die Vorlagen für **adaptive Formulare (Kernkomponente)** und auf Kernkomponenten basierende Themen zu Ihrer Umgebung hinzugefügt.
 
 ## Arbeiten mit Vorlagen {#working-with-templates}
 
@@ -47,13 +47,13 @@ In Experience Manager steht ein globaler Ordner zum Organisieren von Vorlagen zu
 
 Nachdem Sie einen Ordner erstellt haben, öffnen Sie den Ordner und führen Sie die folgenden Schritte aus, um eine Vorlage zu erstellen:
 
-1. Auswählen **[!UICONTROL Erstellen]** in dem Ordner, den Sie erstellt haben.
-1. Im **[!UICONTROL Auswählen eines Vorlagentyps]** Bereich, wählen Sie **[!UICONTROL Vorlage für adaptives Formular (Kernkomponente)]** und wählen **[!UICONTROL Nächste]**.
+1. Wählen Sie im erstellten Ordner **[!UICONTROL Erstellen]**.
+1. Wählen Sie im Abschnitt **[!UICONTROL Einen Vorlagentyp auswählen]** die Vorlage **[!UICONTROL Adaptives Formular (Kernkomponente)]** und wählen Sie dann **[!UICONTROL Weiter]**.
 
-1. Im **[!UICONTROL Vorlagendetails]** -Abschnitt, stellen Sie eine **Vorlagentitel** und wählen **[!UICONTROL Erstellen]**.
+1. Geben Sie im Abschnitt **[!UICONTROL Vorlagendetails]** einen **Vorlagentitel** ein und wählen Sie **[!UICONTROL Erstellen]**.
 Sie können auch eine Beschreibung angeben.
 
-1. Auswählen **[!UICONTROL Fertig]** , um zur Konsole zurückzukehren, oder wählen Sie **[!UICONTROL Öffnen]** , um die Vorlage im Editor zu öffnen.
+1. Wählen Sie **[!UICONTROL Fertig]**, um zur Konsole zurückzukehren, oder **[!UICONTROL Öffnen]**, um die Vorlage im Editor zu öffnen.
 
 ## Benutzeroberfläche des Vorlageneditors {#template-editor-ui}
 
@@ -64,7 +64,7 @@ Wenn Sie eine Vorlage zum Bearbeiten öffnen, können Sie die folgenden AEM-Edit
    * **Seitliches Bedienfeld ein/aus**: Hiermit können Sie die Seitenleiste ein- oder ausblenden.
    * **Seiteninformationen**: Ermöglicht Ihnen die Angabe von Informationen wie dem Zeitpunkt der Veröffentlichung oder der Zurücknahme der Veröffentlichung, Miniaturen, Client-seitigen Bibliotheken, einer Seitenrichtlinie und dem Seiten-Design einer Client-seitigen Bibliothek.
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **Modusauswahl:** Hiermit können Sie den Modus ändern. Sie können zwischen den Modi **[!UICONTROL Struktur]**, **[!UICONTROL Anfänglicher Inhalt]**, **[!UICONTROL Layout-Steuerung]** wählen. Im Modus „Struktur“ können Sie die Kopf- und Fußzeile hinzufügen und anpassen. Im Modus „Anfänglicher Inhalt“ können Sie den Formularinhalt anpassen.
+   * **Modusauswahl**: Hiermit können Sie den Modus ändern. Sie können zwischen den Modi **[!UICONTROL Struktur]**, **[!UICONTROL Anfänglicher Inhalt]**, **[!UICONTROL Layout-Steuerung]** wählen. Im Modus „Struktur“ können Sie die Kopf- und Fußzeile hinzufügen und anpassen. Im Modus „Anfänglicher Inhalt“ können Sie den Formularinhalt anpassen.
    * **Vorschau**: Hier können Sie das Aussehen der Vorlage bei Veröffentlichung in einer Vorschau simulieren. Sie können den Ebenenselektor und die Vorschau verwenden, um zwischen Bearbeitungs- und Vorschau-Modus zu wechseln.
 * **Seitenleiste**: Enthält Inhalts-, Eigenschaften-, Elemente- und Komponenten-Browser.
 * **Komponenten-Symbolleiste**: Wenn Sie eine Komponente auswählen, sehen Sie eine Symbolleiste, in der Sie die Komponente anpassen können.
@@ -84,7 +84,7 @@ Der Ebenenselektor ist neben der Option „Vorschau“ in der rechten oberen Eck
 
 ### Struktur {#structure}
 
-Wenn Sie die Strukturebene im Vorlageneditor auswählen, ist es hilfreich, den Inhalt, der beim Erstellen der mit der Vorlage verknüpften adaptiven Forms nicht geändert werden kann, im Voraus zu definieren.
+Wenn Sie die Strukturebene im Vorlageneditor auswählen, ist es hilfreich, im Voraus die Inhalte zu definieren, die beim Erstellen der mit der Vorlage verknüpften adaptiven Formulare nicht geändert werden können.
 
 <!-- you can see the layout containers above and below the Adaptive Form Container. Authors can use these layout containers for header and footer. -->
 
@@ -117,11 +117,11 @@ Beispielsweise können Sie die Kopfzeilenkomponente zur Vorlage hinzufügen. Wen
 
 ### Anfänglicher Inhalt {#initial-content}
 
-Wenn die Option „Anfänglicher Inhalt“ ausgewählt ist, wird der Container des adaptiven Formulars der Vorlage wie ein adaptives Formular zur Bearbeitung geöffnet. Damit können Sie vordefinierte Inhalte erstellen, die beim Erstellen von Adaptive Forms, die mit der Vorlage verknüpft ist, geändert werden können. Wie beim Authoring eines adaptiven Formulars können Sie anfängliche Einstellungen festlegen, z. B. das Design und Übermittlungsaktionen.
+Wenn die Option „Anfänglicher Inhalt“ ausgewählt ist, wird der Container des adaptiven Formulars der Vorlage wie ein adaptives Formular zur Bearbeitung geöffnet. Damit können Sie vordefinierte Inhalte erstellen, die beim Erstellen von adaptiven Formularen, die mit der Vorlage verknüpft sind, geändert werden können. Wie beim Authoring eines adaptiven Formulars können Sie anfängliche Einstellungen festlegen, z. B. das Design und Übermittlungsaktionen.
 
-Formularautorinnen und -autoren verwenden sie als Grundlage zum Erstellen eines Formulars. Die Struktur des Inhaltsflusses wird in der Ebene „Anfänglicher Inhalt“ der Vorlage angegeben. Um zum Bearbeiten des anfänglichen Inhalts der Formularvorlage zu wechseln, wählen Sie vor der Vorschau in der Seitensymbolleiste die Option ![Arbeitsfläche-Dropdown](assets/canvas-drop-down.png) **>** **[!UICONTROL Anfänglicher Inhalt]**.
+Formularautorinnen und -autoren verwenden sie als Grundlage zum Erstellen eines Formulars. Die Struktur des Inhaltsflusses wird in der Ebene „Anfänglicher Inhalt“ der Vorlage angegeben. Um zum Bearbeiten des anfänglichen Inhalts der Formularvorlage zu wechseln, bevor Sie die Vorschau in der Seitensymbolleiste anzeigen, wählen Sie ![canvas-drop-down](assets/canvas-drop-down.png) **>** **[!UICONTROL Anfänglicher Inhalt]**.
 
-![Kopf- und Fußzeile in der Ebene &quot;Anfänglicher Inhalt&quot; hinzugefügt](assets/header-and-footer.png)
+![Kopf- und Fußzeile in der Ebene des anfänglichen Inhalts hinzugefügt](assets/header-and-footer.png)
 
 In der Ebene „Anfänglicher Inhalt“ erstellen Sie die Vorlage für ein adaptives Formular, das Ihre Autoren als Grundlage verwenden. Das Erstellen einer Vorlage ähnelt dem Erstellen eines Formulars. Sie verwenden die in der Seitenleiste verfügbaren Optionen. Die Seitenleiste bietet Browser für Inhalte, Eigenschaften, Assets und Komponenten.
 
@@ -133,24 +133,24 @@ In der Ebene „Anfänglicher Inhalt“ erstellen Sie die Vorlage für ein adapt
 
 ### Layout {#layout}
 
-Beim Bearbeiten einer Vorlage können Sie das Layout definieren. Dabei wird das standardmäßige responsive Layout verwendet. Das Layout hilft bei der Verwaltung der Breite einer Komponente basierend auf der Gerätebreite, um einen responsiven Entwurf eines adaptiven Formulars zu erleichtern.
+Bei der Bearbeitung einer Vorlage können Sie das Layout festlegen, wobei standardmäßig ein responsives Layout verwendet wird. Das Layout hilft bei der Verwaltung der Breite einer Komponente basierend auf der Gerätebreite, um einen responsiven Entwurf eines adaptiven Formulars zu erleichtern.
 
 ![Layout-Container in der Strukturebene](/help/forms/assets/layout-template-core-component.png)
 
-Weitere Informationen finden Sie im Artikel [Responsives Layout verstehen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en) für weitere Informationen.
+Weitere Informationen finden Sie in dem Artikel [Grundlegendes zum responsiven Layout](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=de).
 
 ## Aktivieren der Vorlage {#enabling-the-template}
 
 Wenn Sie eine Vorlage erstellen, wird sie als Entwurf hinzugefügt. Aktivieren Sie die Vorlage, um sie zum Erstellen von adaptiven Formularen zu verwenden. Aktivieren einer Vorlage:
 
-1. Navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Instrumente]** > **[!UICONTROL Vorlagen]**und öffnen Sie den Ordner, in dem Sie die Vorlage erstellt haben.
+1. Navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Vorlagen]** und öffnen Sie den Ordner, in dem Sie die Vorlage erstellt haben.
 Die Vorlage, die Sie erstellt haben, ist als Entwurf gekennzeichnet.
-1. Wählen Sie die Vorlage aus und wählen Sie **[!UICONTROL Aktivieren]** in der Symbolleiste.
+1. Wählen Sie die Vorlage aus und wählen Sie dann **[!UICONTROL Aktivieren]** in der Symbolleiste.
 Beim Erstellen eines adaptiven Formulars wird Ihnen die Vorlage angezeigt, wenn Sie aufgefordert werden, eine Vorlage auszuwählen.
 
 ## Importieren oder Exportieren einer Vorlage {#importing-or-exporting-a-template}
 
-Ein Formular funktioniert mit seiner Vorlage. Wenn Sie ein adaptives Formular herunterladen, das mit einer benutzerdefinierten Vorlage erstellt wird, wird die Vorlage nicht heruntergeladen. Wenn Sie das Formular in eine andere [!DNL AEM Forms]-Instanz importieren, wird es ohne die Vorlage importiert. Wenn ein Formular importiert wird, aber die Vorlage nicht verfügbar ist, wird das Formular nicht gerendert. Es ist auch möglich, die benutzerdefinierte Vorlage vom `/conf`-Knoten in `https://<server>:<port>/crx/packmgr` zu verpacken und in die [!DNL AEM Forms]-Instanz zu importieren, in die Sie das Formular hochladen möchten. Sie können auch [Erstellen Sie eine Vorlage mit AEM Archetyp und stellen Sie sie auf Ihrer Cloud Service-Instanz bereit.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=de#prerequisites).
+Ein Formular funktioniert mit seiner Vorlage. Wenn Sie ein adaptives Formular herunterladen, das mit einer benutzerdefinierten Vorlage erstellt wird, wird die Vorlage nicht heruntergeladen. Wenn Sie das Formular in eine andere [!DNL AEM Forms]-Instanz importieren, wird es ohne die Vorlage importiert. Wenn ein Formular importiert wird, aber die Vorlage nicht verfügbar ist, wird das Formular nicht gerendert. Es ist auch möglich, die benutzerdefinierte Vorlage vom `/conf`-Knoten in `https://<server>:<port>/crx/packmgr` zu verpacken und in die [!DNL AEM Forms]-Instanz zu importieren, in die Sie das Formular hochladen möchten. Sie können auch [eine Vorlage mit dem AEM-Archetyp erstellen und sie für Ihre Cloud Services-Instanz bereitstellen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=de#prerequisites).
 
 >[!NOTE]
 >
@@ -158,9 +158,9 @@ Ein Formular funktioniert mit seiner Vorlage. Wenn Sie ein adaptives Formular he
 
 ## Verknüpfen eines Formulardatenmodellschema mit einer Vorlage {#associating-form-data-model-schema-in-template}
 
-Autorinnen und Autoren können ein [!UICONTROL Formulardatenmodellschema] in einem Vorlagen-Editor mit einer Vorlage für ein adaptives Formular verknüpfen. Dies ermöglicht es Autorinnen und Autoren, ein Schema aus dem Vorlageneditor auswählen. Wenn Sie ein Schema mit einer Vorlage verknüpfen und Formularautorinnen oder -autoren ein Formular basierend auf der Vorlage erstellen, wird das Schema für das Formular vorausgewählt. Dies hilft Formularautoren dabei, die Verwendung von Schemas zu regulieren und spart auch Zeit für Formularautoren. So wählen Sie ein Formulardatenmodellschema im Vorlageneditor aus:
+Autorinnen und Autoren können ein [!UICONTROL Formulardatenmodellschema] in einem Vorlagen-Editor mit einer Vorlage für ein adaptives Formular verknüpfen. Dies ermöglicht es Autorinnen und Autoren, ein Schema aus dem Vorlageneditor auswählen. Wenn Sie ein Schema mit einer Vorlage verknüpfen und Formularautorinnen oder -autoren ein Formular basierend auf der Vorlage erstellen, wird das Schema für das Formular vorausgewählt. Dies hilft Formularautorinnen und -autoren, die Verwendung von Schemata zu regeln und spart ihnen außerdem Zeit. So wählen Sie ein Formulardatenmodellschema im Vorlageneditor aus:
 
-1. Auswählen **[!UICONTROL Inhaltsbrowser]** auf der linken Seite.
+1. Wählen Sie auf der linken Seite **[!UICONTROL Inhalts-Browser]** aus.
 1. Navigieren Sie zum Formular-Container **[!UICONTROL Einstellung]**.
 1. Wählen Sie **[!UICONTROL Datenmodell]** aus.
 1. Wählen Sie das Formulardatenmodell über **[!UICONTROL Formulardatenmodell auswählen]** und speichern Sie die Konfiguration.
@@ -200,44 +200,44 @@ After you have added fields, you can add buttons such as Submit and Reset.
 
 ### Hinzufügen benutzerdefinierter Eigenschaften zu adaptiven Formularkomponenten mithilfe der Vorlagenrichtlinie
 
-Mit der Option „Benutzerdefinierte Eigenschaften“ können Sie mithilfe der Formularvorlage benutzerdefinierte Attribute (Schlüsselwertpaare) mit einer Kernkomponente eines adaptiven Formulars verknüpfen. Die benutzerdefinierten Eigenschaften werden im **[!UICONTROL properties]** -Abschnitt der Headless-Ausgabedarstellung der Komponente. So kann ein dynamisches Formularverhalten erzeugt werden, das sich je nach den benutzerdefinierten Attributwerten anpasst. Beispielsweise können Entwickelnde verschiedene Ausgabedarstellungen einer Headless-Formularkomponente für Mobile-, Desktop- oder Web-Plattformen entwerfen und so das Benutzererlebnis auf einer Vielzahl von Geräten erheblich verbessern.
+Mit der Option „Benutzerdefinierte Eigenschaften“ können Sie mithilfe der Formularvorlage benutzerdefinierte Attribute (Schlüssel-Wert-Paare) mit einer Kernkomponente eines adaptiven Formulars verknüpfen. Die benutzerdefinierten Eigenschaften werden im Abschnitt **[!UICONTROL Eigenschaften]** der Headless-Ausgabedarstellung der Komponente angezeigt. So kann ein dynamisches Formularverhalten erzeugt werden, das sich je nach den benutzerdefinierten Attributwerten anpasst. Beispielsweise können Entwickelnde verschiedene Ausgabedarstellungen einer Headless-Formularkomponente für Mobile-, Desktop- oder Web-Plattformen entwerfen und so das Benutzererlebnis auf einer Vielzahl von Geräten erheblich verbessern.
 
 Schritte zum Hinzufügen benutzerdefinierter Eigenschaften zu Kernkomponentenfeldern für adaptive Formulare:
 
 1. [Fügen Sie in der Richtlinie eines Vorlageneditors einen benutzerdefinierten Gruppennamen hinzu](#add-a-custom-group-name)
-1. [Wählen Sie einen benutzerdefinierten Gruppennamen im Dialogfeld &quot;Bearbeiten&quot;der Komponente &quot;Adaptives Formular&quot;aus](#select-a-custom-group-name)
+1. [Auswählen eines benutzerdefinierten Gruppennamen im Dialogfeld „Bearbeiten“ einer Komponente eines adaptiven Formulars](#select-a-custom-group-name)
 
 #### Fügen Sie in der Richtlinie des Vorlageneditors einen benutzerdefinierten Gruppennamen hinzu {#add-a-custom-group-name}
 
-1. Navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Instrumente]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Vorlagen]**.
+1. Navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Vorlagen]**.
 1. Wählen Sie die Vorlage basierend auf Kernkomponenten aus und öffnen Sie sie im Bearbeitungsmodus.
-1. Klicken Sie auf **[!UICONTROL Politik]** ![Politik](/help/forms/assets/Smock_FeedManagement_18_N.svg) Symbol eines Kernkomponentenfelds für adaptive Formulare, in dem die benutzerdefinierten Eigenschaften definiert werden müssen. Die **[!UICONTROL Adaptives Formularfeld]** angezeigt.
-1. Wählen Sie die **[!UICONTROL Benutzerdefinierte Eigenschaften]** Registerkarte.
-1. Geben Sie die **[!UICONTROL Richtlinienname]** unter **[!UICONTROL Politik]** Abschnitt.
-1. Geben Sie die **[!UICONTROL Gruppenname]** und fügen Sie ein Schlüssel-Wert-Paar hinzu, das einer bestimmten Gruppe zugeordnet ist. Der Gruppenname ist für Formularautoren im Dialogfeld &quot;Bearbeiten&quot;einer Komponente sichtbar. Wenn Sie den Gruppennamen auswählen, gilt jedes zugeordnete Schlüssel-Wert-Paar für eine Komponente.
+1. Klicken Sie auf das Symbol **[!UICONTROL Richtlinie]** ![Richtlinie](/help/forms/assets/Smock_FeedManagement_18_N.svg) eines Kernkomponentenfelds für adaptive Formulare, in dem die benutzerdefinierten Eigenschaften definiert werden müssen. Das Dialogfeld **[!UICONTROL Adaptives Formularfeld]** wird angezeigt.
+1. Wählen Sie die Registerkarte **[!UICONTROL Benutzerdefinierte Eigenschaften]** aus.
+1. Geben Sie den **[!UICONTROL Richtliniennamen]** unter dem Abschnitt **[!UICONTROL Richtlinie]** an.
+1. Geben Sie den **[!UICONTROL Gruppennamen]** an und fügen Sie ein Schlüssel-Wert-Paar hinzu, das einer bestimmten Gruppe zugeordnet ist. Der Gruppenname ist für Formularautorinnen und -autoren im Dialogfeld „Bearbeiten“ einer Komponente sichtbar. Wenn Sie den Gruppennamen auswählen, gilt jedes zugeordnete Schlüssel-Wert-Paar für eine Komponente.
 1. Klicken Sie auf **[Fertig]**.
 
 ![Hinzufügen benutzerdefinierter Eigenschaftsgruppennamen im Vorlageneditor](/help/forms/assets/custom-properties-core-component.png)
 
-Wenn Sie mithilfe der Vorlagenrichtlinie mindestens eine benutzerdefinierte Eigenschaftsgruppe hinzufügen, wird die **[!UICONTROL Erweitert]** wird im Dialogfeld &quot;Bearbeiten&quot;einer entsprechenden Kernkomponente angezeigt.
+Wenn Sie mithilfe der Vorlagenrichtlinie eine oder mehrere benutzerdefinierte Eigenschaftsgruppen hinzufügen, wird im Dialogfeld „Bearbeiten“ einer entsprechenden Kernkomponente die Registerkarte **[!UICONTROL Erweitert]** angezeigt.
 
-#### Wählen Sie im Dialogfeld &quot;Bearbeiten&quot;einer Kernkomponente einen benutzerdefinierten Gruppennamen aus {#select-a-custom-group-name}
+#### Wählen Sie im Dialogfeld „Bearbeiten“ einer Kernkomponente einen benutzerdefinierten Gruppennamen aus {#select-a-custom-group-name}
 
 1. Öffnen Sie ein adaptives Formular im Bearbeitungsmodus.
-1. Wählen Sie die Komponente aus, für die die benutzerdefinierten Eigenschaften im Vorlageneditor definiert wurden, und wählen Sie ![settings_icon](assets/configure-icon.svg) , um das Dialogfeld &quot;Bearbeiten&quot;der Komponente zu öffnen.
+1. Wählen Sie die Komponente aus, für die die benutzerdefinierten Eigenschaften im Vorlageneditor definiert wurden, und wählen Sie dann ![settings_icon](assets/configure-icon.svg) aus, um das Dialogfeld „Bearbeiten“ der Komponente zu öffnen.
 1. Wählen Sie die Registerkarte **[!UICONTROL Erweitert]** aus.
-1. Wählen Sie den Namen der benutzerdefinierten Eigenschaftsgruppe aus **[!UICONTROL Benutzerdefinierte Eigenschaftsauswahl]** angezeigt. Alle definierten benutzerspezifischen Gruppennamen werden automatisch in die Dropdown-Liste eingefügt.
-1. Auswählen **[!UICONTROL Fertig]** , um die Eigenschaften zu speichern.
+1. Wählen Sie den Namen der benutzerdefinierten Eigenschaftsgruppe aus der Dropdown-Liste **[!UICONTROL Benutzerdefinierte Eigenschaftsauswahl]** aus. Alle definierten benutzerdefinierten Gruppennamen werden automatisch in die Dropdown-Liste eingefügt.
+1. Wählen Sie **[!UICONTROL Fertig]**, um die Eigenschaften zu speichern.
 
-![Benutzerdefinierten Eigenschaftsgruppennamen auswählen](/help/forms/assets/select-custom-properties-group-name.png)
+![auswählen benutzerdefinierter Eigenschaftsgruppennamen](/help/forms/assets/select-custom-properties-group-name.png)
 
 >[!NOTE]
 >
-> * Die **[!UICONTROL Zusätzliche benutzerdefinierte Eigenschaften]** können Sie zusätzlich zu den in der Vorlagenrichtlinie bereitgestellten dynamisch komponentenspezifische benutzerdefinierte Eigenschaften hinzufügen. Die benutzerdefinierte Eigenschaft der spezifischen Komponente hat Vorrang vor der benutzerdefinierten Eigenschaft, die in der Vorlagenrichtlinie festgelegt wird, wenn die Schlüsselnamenwerte übereinstimmen.
+> * Mit dem Kontrollkästchen **[!UICONTROL Zusätzliche benutzerdefinierte Eigenschaften]** können Sie dynamisch komponentenspezifische benutzerdefinierte Eigenschaften zusätzlich zu den in der Vorlagenrichtlinie vorgesehenen hinzufügen. Die benutzerdefinierte Eigenschaft der spezifischen Komponente hat Vorrang vor der benutzerdefinierten Eigenschaft, die in der Vorlagenrichtlinie festgelegt wird, wenn die Schlüsselnamenwerte übereinstimmen.
 
 ## Erstellen eines adaptiven Formulars mithilfe der Vorlage {#creating-an-adaptive-form-using-the-template}
 
-Nachdem Sie eine Vorlage erstellt und aktiviert haben, steht sie im Formular-Manager zur Verfügung, wenn Sie ein adaptives Formular erstellen. Informationen zum Verwenden einer Vorlage und Erstellen eines adaptiven Formulars finden Sie unter [Erstellen eines adaptiven Formulars basierend auf Kernkomponenten](/help/forms/creating-adaptive-form-core-components.md).
+Nachdem Sie eine Vorlage erstellt und aktiviert haben, steht sie im Formular-Manager zur Verfügung, wenn Sie ein adaptives Formular erstellen. Weitere Informationen zum Verwenden einer Vorlage und zum Erstellen eines adaptiven Formulars finden Sie unter [Erstellen eines adaptiven Formulars basierend auf Kernkomponenten](/help/forms/creating-adaptive-form-core-components.md).
 <!--
 ## Change display option of out of the box templates  {#change-display-option-of-out-of-the-box-templates}
 
@@ -278,9 +278,9 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 
 ## Best Practices {#best-practices}
 
-* Erstellen Sie Vorlagen mithilfe der Komponenten, die auf Kernkomponenten basieren, z. B. Adaptiver Formulartext, Container für adaptive Formulare und mehr. So erhalten Sie Informationen zu den adaptiven Forms-Kernkomponenten: [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de).
-* Schränken Sie die Anzahl der Vorlagen so ein, dass sie den grundlegend verschiedenen auf den Websites verfügbaren Formulartypen entsprechen.
-* Stellen Sie die erforderlichen Flexibilität und Konfigurationsfunktionen für Ihre benutzerdefinierten Komponenten bereit, die in einer Vorlage verwendet werden.
+* Erstellen Sie Vorlagen mithilfe der Komponenten, die auf Kernkomponenten basieren, z. B. Adaptiver Formulartext, Container für adaptive Formulare und mehr. Um Informationen über Kernkomponenten adaptiver Formulare zu erhalten [klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de).
+* Begrenzen Sie die Anzahl der Vorlagen so, dass sie den grundlegend unterschiedlichen Formulartypen auf den Websites entsprechen.
+* Bieten Sie in Ihren benutzerdefinierten Komponenten, die in einer Vorlage verwendet werden, die notwendige Flexibilität und Konfigurationsmöglichkeiten.
 
 <!--
 ## See next
@@ -293,6 +293,6 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 ## Siehe auch {#see-also}
 
 {{see-also}}
-* [Erstellen von Stilen oder Designs für Ihre Formulare](using-themes-in-core-components.md)
+* [Erstellen von Stilen oder Themen für Ihre Formulare](using-themes-in-core-components.md)
 * [Erstellen eines adaptiven Formulars (Kernkomponenten)](/help/forms/creating-adaptive-form-core-components.md)
 

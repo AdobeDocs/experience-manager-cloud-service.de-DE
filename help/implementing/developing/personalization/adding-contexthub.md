@@ -3,9 +3,9 @@ title: Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher
 description: Fügen Sie Ihren Seiten ContextHub hinzu, um die ContextHub-Funktionen zu aktivieren und eine Verknüpfung mit den ContextHub-JavaScript-Bibliotheken herzustellen
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '897'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Schließen Sie die `contexthub`-Komponente in den Bereich `head` Ihrer Seite ein
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
 ```
 
-Sie müssen außerdem konfigurieren, ob die ContextHub-Symbolleiste im Vorschaumodus angezeigt wird. Siehe [Ein- und Ausblenden der ContextHub-Benutzeroberfläche](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
+Sie müssen auch festlegen, ob die ContextHub-Symbolleiste im Vorschaumodus angezeigt wird. Siehe [Ein- und Ausblenden der ContextHub-Benutzeroberfläche](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
 
 ## Informationen zu ContextHub-Speichern {#about-contexthub-stores}
 
@@ -103,7 +103,7 @@ Einzelne Datenelemente werden als Satz von Schlüssel-Wert-Paaren gespeichert. U
 * [getItem](contexthub-api.md#getitem-key)
 * [setItem](contexthub-api.md#setitem-key-value-options)
 
-Benutzerdefinierte Store-Kandidaten können zusätzliche Funktionen definieren, die Zugriff auf Store-Daten bieten.
+Benutzerdefinierte Speicherkandidaten können weitere Funktionen definieren können, die den Zugriff auf Speicherdaten ermöglichen.
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Die Regeln zur Auflösung dieser Segmente werden wie folgt zusammengefasst:
 
 >[!WARNING]
 >
->Die installierten Segmente werden als Referenzkonfigurationen bereitgestellt, damit Sie Ihre eigene dedizierte Konfiguration für Ihr Projekt erstellen können. Verwenden Sie sie nicht direkt.
+>Die installierten Segmente werden als Referenzkonfigurationen bereitgestellt, damit Sie Ihre eigene Konfiguration für Ihr Projekt erstellen können. Verwenden Sie sie nicht direkt.
 
 ## Debuggen von ContextHub {#debugging-contexthub}
 

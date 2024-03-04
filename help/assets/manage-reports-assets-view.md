@@ -3,9 +3,9 @@ title: Verwalten von Berichten in Assets-Ansicht
 description: Greifen Sie auf die Daten im Abschnitt „Berichte“ der Assets-Ansicht zu, um die Produkt- und Funktionsnutzung zu bewerten und Erkenntnisse zu wichtigen Erfolgsmetriken zu erhalten.
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
 source-git-commit: c9ec348d7e65f4bb69b93a39b9ad7192485d8db4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '814'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
 
 ## Anzeigen von Insights {#view-live-statistics}
 
-In der Assets-Ansicht können Sie mit dem Insights-Dashboard Echtzeitdaten für Ihre Assets Essentials-Umgebung anzeigen. Sie können Echtzeit-Ereignismetriken während der letzten 30 Tage oder für die letzten 12 Monate anzeigen.
+In der Assets-Ansicht können Sie mit dem Insights-Dashboard Echtzeitdaten für Ihre Assets Essentials-Umgebung anzeigen. Sie können Echtzeit-Ereignismetriken für die letzten 30 Tage oder für die letzten 12 Monate anzeigen.
 
 <!--![Toolbar options when you select an asset](assets/assets-essentials-live-statistics.png)-->
 
@@ -41,13 +41,13 @@ Klicken Sie auf **[!UICONTROL Erkenntnisse]** im linken Navigationsbereich, um d
 
 ![Erkenntnisse](assets/insights.png)
 
-* **Downloads**: Die Anzahl der Assets, die in den letzten 30 Tagen oder 12 Monaten aus der Assets-Ansichtsumgebung heruntergeladen wurden und mit einem Liniendiagramm dargestellt wurden.
+* **Downloads**: Die Anzahl der Assets, die in den letzten 30 Tagen oder 12 Monaten aus der Assets-Ansichtsumgebung heruntergeladen wurden, dargestellt als Liniendiagramm.
 
-* **Uploads**: Die Anzahl der Assets, die in die Umgebung mit der Asset-Ansicht hochgeladen wurden, in den letzten 30 Tagen oder 12 Monaten, die mit einem Liniendiagramm dargestellt wurden.
+* **Uploads**: Die Anzahl der Assets, die in den letzten 30 Tagen oder 12 Monaten in die Assets-Ansichtsumgebung hochgeladen wurden, dargestellt als Liniendiagramm.
 
 <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
-* **Speichernutzung**: Die Speicherverwendung in Byte für die Umgebung &quot;Assets-Ansicht&quot;, die mithilfe eines Balkendiagramms dargestellt wird.
+* **Speichernutzung**: Darstellung der Speichernutzung in Byte für die Assets-Ansicht-Umgebung mithilfe eines Balkendiagramms.
 
 <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 

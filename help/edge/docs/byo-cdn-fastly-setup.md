@@ -1,14 +1,15 @@
 ---
-description: Die folgenden Screenshots zeigen, wie Sie die schnelle Bereitstellung von Inhalten konfigurieren. Grundlegende Einstellungen sind mit einem roten Kreis markiert.
-title: Schnelles Setup
+description: Die folgenden Screenshots zeigen, wie Sie Fastly für das Liefern von Inhalten konfigurieren. Grundlegende Einstellungen sind mit einem roten Kreis markiert.
+title: Fastly-Einrichtung
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 90986139-9c7f-4b63-b24d-c199b4d4dff0
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '23'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Schnelles Setup
+# Fastly-Einrichtung
 
 {{$include 6b65e1ea-8645-4b2e-a1b6-d330f9849bb0}}

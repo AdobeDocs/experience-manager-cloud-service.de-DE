@@ -10,9 +10,9 @@ feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1663'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Konfigurieren wir nun die Transkription in diesem Videoprofil. Gehen Sie zur Reg
 
 Nachdem das Verarbeitungsprofil für die Transkription von Audio- und Videodateien konfiguriert wurde, können Sie dieses Verarbeitungsprofil mit einer der folgenden Methoden auf Ordner anwenden:
 
-* Wählen Sie die Definition eines Verarbeitungsprofils in **[!UICONTROL Instrumente]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]** und verwenden **[!UICONTROL Anwenden von Profilen auf Ordner]** Aktion. Mit dem Inhaltsbrowser können Sie zu einem bestimmten Ordner navigieren, den Ordner auswählen und die Anwendung des Profils bestätigen.
+* Wählen Sie unter **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]** eine Verarbeitungsprofildefinition aus und verwenden Sie die Aktion **[!UICONTROL Profil auf Ordner anwenden]**. Mit dem Inhaltsbrowser können Sie zu einem bestimmten Ordner navigieren, den Ordner auswählen und die Anwendung des Profils bestätigen.
 * Wählen Sie einen Ordner in der Assets-Benutzeroberfläche aus und klicken Sie zum Öffnen der Ordnereigenschaften auf die Aktion **[!UICONTROL Eigenschaften]**. Klicken Sie auf die Registerkarte **[!UICONTROL Asset-Verarbeitung]** und wählen Sie das entsprechende Verarbeitungsprofil für den Ordner aus der Liste **[!UICONTROL Verarbeitungsprofil]** aus. Klicken Sie auf **[!UICONTROL Speichern und schließen]**, um die Änderungen zu speichern.
 
   ![configure-transcription-service](assets/video-processing-profile3.png)

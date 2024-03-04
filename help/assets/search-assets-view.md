@@ -4,9 +4,9 @@ description: Erfahren Sie, wie man in der AEM Assets-Ansicht Assets sucht und fi
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
 source-git-commit: 7b815a83e4e93c024403fab02f9a9b4ba8685007
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1543'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -120,28 +120,28 @@ Entfernen benutzerdefinierter Filter
 
 1. Klicken Sie auf **[!UICONTROL Bestätigen]**, um die Filter aus der Benutzeroberfläche zu entfernen.
 
-## Suchen nach Assets mithilfe von [!DNL Adobe Firefly] {#search-firefly}
+## Suchen von Assets mithilfe von [!DNL Adobe Firefly] {#search-firefly}
 
-Sie können nach einem Asset suchen, das in keinem der Asset-Ordner verfügbar ist, indem Sie die [!DNL Adobe Firefly] Asset-Suchfunktion in [!DNL Experience Manager Assets]. Auf diese Weise können Sie effizient Assets in Echtzeit generieren, die nicht in den Asset-Ordnern gespeichert sind.
+Sie können nach einem Asset suchen, das in keinem der Asset-Ordner verfügbar ist, indem Sie die [!DNL Adobe Firefly] Asset-Suchfunktion in [!DNL Experience Manager Assets] verwenden. So können Sie effizient und in Echtzeit Assets generieren, die nicht in den Asset-Ordnern gespeichert sind.
 
 ### Vorbereitung
 
-Sie müssen über eine aktive [!DNL Adobe Express] Abonnement.
+Sie müssen ein aktives Abonnement von [!DNL Adobe Express] haben.
 
 ### Generieren von Assets
 
 So generieren Sie neue Assets mit [!DNL Adobe Firefly]:
 
-1. Navigieren Sie zum [!DNL AEM Assets] Arbeitsbereich.
+1. Navigieren Sie zum [!DNL AEM Assets]-Workspace.
 1. Geben Sie den Asset-Namen in die Suchleiste oben auf der Seite ein.<br>
-Sie können beispielsweise ein Asset mit dem Keyword `Bugatti Type 57`. Bei der Suche nach dem Asset werden keine Ergebnisse gefunden, da das Asset in keinem der Asset-Ordner vorhanden ist.
-1. Geben Sie den Asset-Namen in die Suchleiste in der Mitte der Seite ein und klicken Sie auf **[!UICONTROL Erzeugen]**.
-   ![Firefly-Integration](assets/firefly-integration.jpg)
-   *Abbildung: Keine Ergebnisse für Bugatti Typ 57 im Asset-Ordner gefunden.* <br>
+Sie können beispielsweise ein Asset mit dem Schlüsselwort `Bugatti Type 57` suchen. Bei der Suche nach dem Asset werden keine Ergebnisse gefunden, da das Asset in keinem der Asset-Ordner vorhanden ist.
+1. Geben Sie den Asset-Namen in die Suchleiste in der Mitte der Seite ein und klicken Sie auf **[!UICONTROL Generieren]**.
+   ![Integration mit Firefly](assets/firefly-integration.jpg)
+   *Abbildung: Keine Ergebnisse für „Bugatti Type 57“ im Asset-Ordner gefunden.* <br>
 Die neuen Assets wurden erfolgreich generiert.
-   ![Firefly-Integration](assets/bugatti-type-57.jpg)
-   *Abbildung: Referenzieren von Assets, die mithilfe von [!DNL Adobe Firefly] Asset-Suchfunktion.* <br>
-Sie können diese Assets für den einfachen Zugriff in Ihren gewünschten Ordner hochladen.
+   ![Integration mit Firefly](assets/bugatti-type-57.jpg)
+   *Abbildung: Mit der Asset-Suchfunktion in [!DNL Adobe Firefly] gesuchte Referenz-Assets* <br>
+Sie können diese Assets in den von Ihnen bevorzugten Ordner hochladen, um den Zugriff zu erleichtern.
 
 ### Hochladen von Assets
 
@@ -149,8 +149,8 @@ So laden Sie das generierte Asset in das Asset-Repository hoch:
 
 1. Klicken Sie auf **[!UICONTROL Hochladen]**.
 1. Wählen Sie den Asset-Ordner aus, in den Sie das Asset hochladen müssen, und klicken Sie auf **[!UICONTROL Ordner auswählen]**.
-   ![Hochladen des Assets](assets/upload-asset-firefly.jpg)
-   *Abbildung: Wählen Sie den Ordner aus, in den das Asset hochgeladen werden soll.*
+   ![Hochladen eines Assets](assets/upload-asset-firefly.jpg)
+   *Abbildung: Wählen Sie den Ordner zum Hochladen des Assets aus.*
 
 ## Gespeicherte Suchvorgänge {#saved-search}
 
@@ -177,7 +177,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 Sie können die Assets auswählen, die in den Suchergebnissen angezeigt werden, und die folgenden Aktionen ausführen:
 
-* **Ähnliches Bild suchen**: Suchen Sie ähnliche Bild-Assets in der Assets-Benutzeroberfläche basierend auf den Metadaten und Smart-Tags.
+* **Nach ähnlichem Bild suchen**: Suchen Sie anhand der Metadaten und Smart-Tags nach ähnlichen Bild-Assets in der Assets-Benutzeroberfläche.
 
 * **Details**: Zeigen Sie Asset-Eigenschaften an und bearbeiten Sie diese.
 
@@ -187,9 +187,9 @@ Sie können die Assets auswählen, die in den Suchergebnissen angezeigt werden, 
 
 * **An Schnellzugriff anheften**: [Heften Sie ein Asset an](my-workspace-assets-view.md), um später im Bedarfsfall schneller darauf zugreifen zu können. Alle angehefteten Elemente werden im Dashboard „Mein Arbeitsbereich“ im Abschnitt **Schnellzugriff** angezeigt.
 
-* **In Adobe Expreß öffnen**: Bearbeiten Sie ein Bild im integrierten Adobe Expreß auf dem Experience Manager Assets-Bildschirm.
+* **In Adobe Express öffnen**: Bearbeiten Sie ein Bild in der integrierten Adobe Express-Anwendung auf dem Experience Manager Assets-Bildschirm.
 
-* **Bearbeiten**: Bearbeiten Sie das Bild mit Adobe Expreß.
+* **Bearbeiten**: Bearbeiten Sie das Bild mit Adobe Express.
 
 * **Link freigeben**: [Teilen Sie Links](share-links-for-assets-view.md) für ein Asset mit anderen Benutzenden, damit sie darauf zugreifen und es herunterladen können.
 
@@ -207,38 +207,38 @@ Sie können die Assets auswählen, die in den Suchergebnissen angezeigt werden, 
 
 * **Beobachten**: [Überwachen Sie Vorgänge](manage-notifications-assets-view.md), die für ein Asset durchgeführt werden.
 
-## Konfigurieren der ersten Homepage für die Suche {#configuring-search-first-homepage}
+## Konfigurieren der Startseite für die erste Suche {#configuring-search-first-homepage}
 
-Mit Experience Manager Assets können Sie die Standard-Landingpage für Ihre Organisation auswählen. Bei der Verwendung von Search First als Startseite haben Sie auch Optionen, das Branding der Seite anzupassen, indem Sie den Hintergrund und die Logo-Bilder so konfigurieren, dass sie Ihrer Marke entsprechen.
+Mit Experience Manager Assets können Sie die Standard-Landingpage Ihres Unternehmens auswählen. Bei der Verwendung der ersten Suche als Startseite haben Sie auch die Möglichkeit, das Branding der Seite anzupassen, indem Sie den Hintergrund und die Logo-Bilder so konfigurieren, dass sie Ihrer Marke entsprechen.
 
-Um die erste Startseite der Suche zu konfigurieren, führen Sie die folgenden Schritte aus:
+Gehen Sie wie folgt vor, um die Startseite für die erste Suche zu konfigurieren:
 
 1. Navigieren Sie zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**.
-1. Auswählen **[!UICONTROL Suche zuerst]**. Es öffnet außerdem die Konfiguration der ersten Suchfunktion. Sie können [Ausrichtung](#setting-alignment-search-bar) oder [Festlegen von Hintergrund- und Logo-Bildern](#setting-background-image-and-logo) auf Ihrer Homepage.
+1. Wählen Sie **[!UICONTROL Erste Suche]**. Es öffnet sich die Konfiguration der ersten Suche. Sie können die Optionen [Ausrichtung](#setting-alignment-search-bar) oder [Hintergrund- und Logo-Bilder festlegen](#setting-background-image-and-logo) auf Ihrer Startseite einrichten.
 
-### Festlegen der Ausrichtung der Suchleiste {#setting-alignment-search-bar}
+### Ausrichtung der Suchleiste festlegen {#setting-alignment-search-bar}
 
-[!DNL Assets view] ermöglicht es Ihnen, die Ausrichtung der Suchleiste zu ändern. Sie können die Suchleiste entweder in der Mitte oder oben anzeigen lassen. Wählen Sie die gewünschte Ausrichtung aus und klicken Sie auf **[!UICONTROL Speichern]**.
+[!DNL Assets view] ermöglicht es Ihnen, die Ausrichtung der Suchleiste zu ändern. Sie können die Suchleiste entweder in der Mitte oder oben anzeigen lassen. Wählen Sie die gewünschte Ausrichtung und klicken Sie auf **[!UICONTROL Speichern]**.
 
-![Suchen Sie die erste Startseitenausrichtung](assets/search-first-alignment.png)
+![Ausrichtung der Startseite für die erste Suche](assets/search-first-alignment.png)
 
-### Festlegen von Hintergrund- und Logo-Bildern für die Homepage {#setting-background-image-and-logo}
+### Festlegen der Hintergrund- und Logo-Bilder für die Startseite {#setting-background-image-and-logo}
 
-Sie können Ihrer ersten Suchhomepage ein Markenlogo und ein Hintergrundbild hinzufügen. Führen Sie die folgenden Schritte aus:
+Sie können zu Ihrer Startseite für die erste Suche ein Markenlogo und ein Hintergrundbild hinzufügen. Führen Sie die folgenden Schritte aus:
 
-1. Navigieren Sie zu **[!UICONTROL Hintergrund und Logo-Bild]** Abschnitt unter **[!UICONTROL Homepage]**.
-1. Klicks **[!UICONTROL Ersetzen]** , um Bilder aus einem vorhandenen Asset-Repository zu durchsuchen.
-1. Klicken Sie auf **[!UICONTROL Speichern]**. [Vorschau](#preview-configured-homepage) die Änderungen, um die Änderungen zu überprüfen.
+1. Navigieren Sie zum Abschnitt **[!UICONTROL Hintergrund- und Logo-Bild]** unter **[!UICONTROL Startseite]**.
+1. Klicken Sie auf **[!UICONTROL Ersetzen]**, um die Bilder in einem vorhandenen Asset-Repository zu durchsuchen.
+1. Klicken Sie auf **[!UICONTROL Speichern]**. Öffnen Sie die [Vorschau](#preview-configured-homepage) der Änderungen, um die Änderungen zu überprüfen.
 
-### Vorschau der konfigurierten Homepage {#preview-configured-homepage}
+### Vorschau der konfigurierten Startseite {#preview-configured-homepage}
 
-Sie können eine Vorschau anzeigen, um das Layout und die Formatierung der ersten Suchhomepage zu überprüfen. Verwenden **[!UICONTROL Vorschau]** können Sie das Layout korrigieren oder Änderungen entsprechend den Anforderungen vornehmen. Führen Sie die folgenden Schritte aus, um eine Vorschau der konfigurierten Homepage anzuzeigen:
+Sie können eine Vorschau anzeigen, um das Layout und die Formatierung der Startseite für die erste Suche zu überprüfen. Mithilfe der **[!UICONTROL Vorschau]** können Sie das Layout korrigieren oder Änderungen entsprechend Ihres Bedarfs vornehmen. Gehen Sie wie folgt vor, um eine Vorschau der konfigurierten Startseite anzuzeigen:
 
-1. Klicks **[!UICONTROL Allgemeine Einstellungen]** und wählen **[!UICONTROL Suche zuerst]**.
-1. Navigieren Sie zu **[!UICONTROL Anpassen der ersten Startseite der Suche]** und klicken **[!UICONTROL Vorschau]**. Umschalten **[!UICONTROL Dunkles Thema]** -Schaltfläche, um die Startseite im dunklen oder hellen Design als Vorschau anzuzeigen.
-1. Klicks **[!UICONTROL Schließen]** um den Vorschaubildschirm zu schließen.
+1. Klicken Sie auf **[!UICONTROL Allgemeine Einstellungen]** und wähle Sie **[!UICONTROL Erste Suche]**.
+1. Navigieren Sie zu **[!UICONTROL Startseite für erste Suche anpassen]** und klicken Sie auf **[!UICONTROL Vorschau]**. Betätigen Sie die Schaltfläche **[!UICONTROL Dunkles Thema]**, um die Startseite mit dunklem oder hellem Thema als Vorschau anzuzeigen.
+1. Klicken Sie auf **[!UICONTROL Schließen]**, um den Vorschau-Bildschirm zu schließen. 
 
-   ![Erste Homepage-Vorschau durchsuchen](assets/search-first-preview.gif)
+   ![Vorschau der Startseite für die erste Suche](assets/search-first-preview.gif)
 
 ## Nächste Schritte {#next-steps}
 

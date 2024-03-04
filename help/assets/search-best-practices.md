@@ -4,9 +4,9 @@ description: Best Practices zum Suchen, Finden und Abrufen von Asset-Metadaten i
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 source-git-commit: 6397a300de13c5e4f6ee5828de1ba76a1677c227
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2527'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 [!DNL Adobe Experience Manager Assets] bietet stabile Suchmethoden für Assets, mit denen Sie eine höhere Inhaltsgeschwindigkeit erzielen können. Manchmal kann das Auffinden des richtigen Assets mühsam und zeitaufwendig sein. Daher ist die Suchfunktion für Assets in [!DNL Adobe Experience Manager Assets] von zentraler Bedeutung für die Nutzung eines Digital Asset Management-Systems. Sei es für die Weiterverwendung durch Kreative, für die robuste Verwaltung von Assets durch Geschäftsanwenderinnen und -anwender und Marketing-Fachleute oder für die Verwaltung durch DAM-Admins.
 
-Dieses Hilfedokument enthält AEM Best Practices für die Suche mithilfe verschiedener Szenarien, damit AEM Benutzer eine einfache bis erweiterte Suche durchführen können.
+Dieses Hilfedokument enthält Best Practices für die AEM-Suchfunktion mithilfe verschiedener Szenarien, um AEM-Benutzende bei der Durchführung einer einfachen oder erweiterten Suche zu unterstützen.
 
 ## Zugriff auf die Experience Manager-Suche {#access-experience-manager-search}
 
@@ -261,8 +261,8 @@ Markieren Sie das Asset > navigieren Sie zu den Auslassungspunkten oben rechts >
 Führen Sie die folgenden Schritte in der **[!UICONTROL Asset-Ansicht]** aus:
 
 1. Suchen Sie das Asset gemäß Ihren Anforderungen.
-1. Wählen Sie das Bild aus und navigieren Sie zu [!UICONTROL Ähnliches Bild suchen] -Option in der Navigationsleiste am oberen Rand.
-Sie gelangen zur Sammlung von Assets mit ähnlichen Farben und Metadaten.
+1. Wählen Sie das Bild aus und navigieren Sie zur Option [!UICONTROL Ähnliches Bild suchen] in der Navigationsleiste am oberen Rand.
+Sie gelangen darüber zur Sammlung von Assets mit ähnlichen Farben und Metadaten.
 
 ## Benutzerdefinierte Suchfacetten {#custom-search-facets}
 
@@ -355,7 +355,7 @@ The newly added assets are not indexed.
         <td> 
             Unterstützte Optionen sind:
             <ul>
-            <li> Publish
+            <li> Veröffentlichen
             <li> Veröffentlichungsdatum
             <li> Zuletzt veröffentlicht von
             <li> Genehmigung 

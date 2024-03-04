@@ -10,9 +10,9 @@ level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1430'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Um einen reibungslosen Übergang von AEM Forms 6.5 zur AEM as a Cloud Service-Um
    * [User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de#cloud-migration): Mit dem User Mapping Tool können Sie Ihre Benutzer den entsprechenden Adobe IMS-Benutzerkonten zuordnen.
    * [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de#cloud-migration): Mit dem Content Transfer Tool können Sie Inhalte aus Ihrer vorhandenen Umgebung vorbereiten und in eine Cloud Service-Umgebung übertragen. Dies erleichtert Benutzerinnen und Benutzern das einfache Upgrade von AEM Forms auf die Cloud-Umgebung.
 * Konten mit Administratorrechten in [!DNL AEM Forms] as a Cloud Service und Ihrer lokalen [!DNL AEM Forms]-Umgebung.
-* Laden Sie den Best Practice Analyzer, das Content Transfer Tool und das Migrationsdienstprogramm von [!DNL AEM Forms] aus dem [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) herunter und installieren Sie die Tools.
+* Laden Sie den Best Practice Analyzer, das Content Transfer Tool und das Migrationsdienstprogramm von [!DNL AEM Forms] aus dem [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html) herunter und installieren Sie die Tools.
 
 * Führen Sie das Tool [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=de#cloud-migration) aus und beheben Sie die gemeldeten Probleme. Die möglichen Probleme bei der Migration von Adobe Experience Manager Forms zu Adobe Experience Manager Forms as a Cloud Service finden Sie unter [AEM-Mustererkennung für Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=de#viewing-report).
 
@@ -92,7 +92,7 @@ Führen Sie die folgenden Schritte aus, um Ihre [!DNL AEM Forms]-Assets mit Clou
 
 1. Führen Sie das [User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de#cloud-migration) aus, um Ihre Benutzer den entsprechenden Adobe IMS-Benutzerkonten zuzuordnen. Sie benötigen Adobe IMS-Benutzerkonten, um sich bei einer [!DNL AEM Forms] as a Cloud Service-Instanz anzumelden.
 
-1. Laden Sie das [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de#cloud-migration) und das [!DNL AEM Forms] as a Cloud Service-Migrationsdienstprogramm aus dem [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) in die geklonte Umgebung herunter und installieren Sie die Tools. Sie können AEM Package Manager verwenden, um das Tool und das Dienstprogramm zu installieren.
+1. Laden Sie das [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de#cloud-migration) und das [!DNL AEM Forms] as a Cloud Service-Migrationsdienstprogramm aus dem [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html) in die geklonte Umgebung herunter und installieren Sie die Tools. Sie können AEM Package Manager verwenden, um das Tool und das Dienstprogramm zu installieren.
 
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Inhaltsmigration]**.
 
@@ -105,20 +105,20 @@ Führen Sie die folgenden Schritte aus, um Ihre [!DNL AEM Forms]-Assets mit Clou
 
 1. Verwenden Sie die Optionen nacheinander, um Ihre [!DNL AEM Forms]-Assets mit [!DNL AEM] as a Cloud Service kompatibel zu machen:
 
-   1. Auswählen **[!UICONTROL Migration von AEM Forms Assets]** und wählen Sie im nächsten Bildschirm **[!UICONTROL Migration starten]**. Dadurch werden adaptive Formulare und Designs in Ihrer [!DNL AEM Forms]-Umgebung mit [!DNL AEM] as a Cloud Service kompatibel gemacht.
+   1. Wählen Sie **[!UICONTROL AEM Forms-Assets-Migration]** und im nächsten Bildschirm die Option **[!UICONTROL Migration beginnen]** aus. Dadurch werden adaptive Formulare und Designs in Ihrer [!DNL AEM Forms]-Umgebung mit [!DNL AEM] as a Cloud Service kompatibel gemacht.
 
-   1. Auswählen **[!UICONTROL Migration benutzerdefinierter Forms-Komponenten]** und wählen Sie auf der Seite &quot;Migration benutzerdefinierter Komponenten&quot;die Option **[!UICONTROL Migration starten]**. Dadurch werden alle benutzerdefinierten Komponenten, die für adaptive Formulare und Komponentenüberlagerungen in Ihrer [!DNL AEM Forms]-Umgebung entwickelt wurden, mit [!DNL AEM] as a Cloud Service kompatibel gemacht.
+   1. Wählen Sie **[!UICONTROL Migration benutzerdefinierter Komponenten für adaptive Formulare]** und auf der Seite „Migration von benutzerdefinierten Komponenten“ die Option **[!UICONTROL Migration beginnen]** aus. Dadurch werden alle benutzerdefinierten Komponenten, die für adaptive Formulare und Komponentenüberlagerungen in Ihrer [!DNL AEM Forms]-Umgebung entwickelt wurden, mit [!DNL AEM] as a Cloud Service kompatibel gemacht.
 
-   1. Auswählen **[!UICONTROL Adaptive Forms-Vorlagenmigration]** und wählen Sie auf der Seite &quot;Migration benutzerdefinierter Komponenten&quot;die Option **[!UICONTROL Migration starten]**. Dadurch werden Vorlagen für adaptive Formulare unter `/apps` oder `/conf`, die mit dem AEM-Vorlageneditor erstellt wurden, mit [!DNL AEM] as a Cloud Service kompatibel gemacht.
+   1. Wählen Sie **[!UICONTROL Migration von Vorlagen für adaptive Formulare]** und auf der Seite „Migration von benutzerdefinierten Komponenten“ die Option **[!UICONTROL Migration beginnen]** aus. Dadurch werden Vorlagen für adaptive Formulare unter `/apps` oder `/conf`, die mit dem AEM-Vorlageneditor erstellt wurden, mit [!DNL AEM] as a Cloud Service kompatibel gemacht.
 
-   1. Auswählen **[!UICONTROL Migration von AEM Forms Cloud-Konfigurationen]** Wählen Sie auf der Seite &quot;Konfigurationsmigration&quot;die Option **[!UICONTROL Migration starten]**. Dadurch werden die folgenden Cloud Services aktualisiert und an einen neuen Speicherort verschoben:
+   1. Wählen Sie **[!UICONTROL Migration von AEM Forms Cloud-Konfigurationen]** und auf der Seite „Migration von Konfigurationen“ die Option **[!UICONTROL Migration beginnen]** aus. Dadurch werden die folgenden Cloud Services aktualisiert und an einen neuen Speicherort verschoben:
 
       * Form Data Model Cloud Service (Cloud Service für Formulardatenmodell)
       * Google reCAPTCHA Cloud Service
       * [!DNL Adobe Sign] Cloud Service
       * Adobe Fonts Cloud Service (Cloud Service für Adobe Fonts)
 
-   1. Auswählen **[!UICONTROL Code-Editor-Skriptmigration]**, geben Sie einen Speicherort an, an dem wiederverwendbare Funktionen gespeichert werden sollen, und wählen Sie **[!UICONTROL Migration starten].
+   1. Wählen Sie **[!UICONTROL Migration von Code-Editor-Skripten]** aus, geben Sie einen Speicherort für wiederverwendbare Funktionen an und wählen Sie [!UICONTROL Migration beginnen] aus.
 
    Der Cloud Service unterstützt keine Regeleditorskripte. Das Tool für die **[!UICONTROL Migration von Code-Editor-Skripten]** konvertiert alle Regelskripte in Ihrer Umgebung in wiederverwendbare Funktionen und wendet die wiederverwendbaren Funktionen auf den entsprechenden Speicherort im Visual Editor an. Diese wiederverwendbaren Funktionen werden in Form von Client-Bibliotheken gespeichert und helfen Ihnen dabei, die vorhandenen Funktionen zu erhalten. Das Tool wendet die generierten wiederverwendbaren Funktionen automatisch auf entsprechende adaptive Formulare an.
 

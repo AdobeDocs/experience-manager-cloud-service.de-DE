@@ -7,9 +7,9 @@ feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 source-git-commit: fa57e0438a7570551785375c4e5a57fa38fd2f6f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1953'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -60,38 +60,38 @@ Aus diesen Gründen erhalten Sie mit [!DNL Assets] die richtigen Mittel, um Meta
 
 ## Metadatentypen {#types-of-metadata}
 
-Metadaten werden als technische, informative und administrative Metadaten klassifiziert.
+Metadaten werden in technische, informative und administrative Metadaten eingeteilt.
 
 ### Technische Metadaten
 
-Technische Metadaten konzentrieren sich auf die technischen Aspekte digitaler Assets und liefern wichtige Informationen zu:
+Bei technischen Metadaten liegt der Schwerpunkt auf den technischen Aspekten digitaler Assets. Sie liefern wichtige Informationen zu Folgendem:
 
 * Dateigröße
 * Format
 * Auflösung
-* Dimensionen
+* Abmessungen
 * Farbmodus
 
-Dieser Metadatentyp hilft Benutzern, digitale Assets zu verstehen und effizient zu verwenden.
+Dieser Metadatentyp hilft Benutzenden dabei, digitale Assets zu verstehen und effizient einzusetzen.
 
 ### Informative Metadaten
 
-Informationsmetadaten bieten deskriptive Informationen zur Verbesserung des Verständnisses von Inhalten und erleichtern die Inhaltserkennung und -suche. Er enthält Suchbegriffe, Beschriftungen und Beschreibungen. <br>Wenn Sie beispielsweise ein Video in Experience Manager Assets verwalten, können wir die folgenden Informationsmetadaten einbeziehen:
+Informative Metadaten bieten beschreibende Informationen, um das Verständnis von Inhalten zu verbessern, und helfen bei der Inhaltserkennung und -suche. Sie umfassen Schlüsselwörter, Beschriftungen und Beschreibungen. <br>Beispielsweise können beim Verwalten eines Videos in Experience Manager Assets die folgenden informativen Metadaten einbezogen werden:
 
-* **Schlüsselwörter**: Marketing, Produktstart, Promo
-* **Beschriftung**: Einführung unseres neuesten Produkts mit spannenden Funktionen
-* **Beschreibung**: Eine detaillierte Übersicht über den Videoinhalt.
+* **Schlüsselwörter**: Marketing, Produktstart, Werbung
+* **Beschriftung**: Einführung unseres neuesten Produkts mit überzeugenden Funktionen
+* **Beschreibung**: Ein detaillierter Überblick über den Videoinhalt.
 
 ### Administrative Metadaten
 
-Administrative Metadaten behandeln die Managementaspekte digitaler Assets. Sie stellt die Zugriffskontrolle, die Compliance und die Verwaltung des gesamten Lebenszyklus von Assets innerhalb des Digital Asset Management-Systems sicher. Er enthält Informationen zu:
+Administrative Metadaten behandeln die verwaltungstechnischen Aspekte digitaler Assets. Sie stellen die Zugriffssteuerung, die Compliance und die Verwaltung des gesamten Lebenszyklus von Assets innerhalb des Digital Asset Management-Systems sicher. Sie umfassen Informationen zu Folgendem:
 
-* Asset-Besitz
-* Nutzungsrechte
+* Asset-Eigentümerschaft
+* Verwendungsrechte
 * Berechtigungen
-* Weitere Verwaltungsdetails
+* Weitere administrative Details
 
-Dieser Metadatentyp gewährleistet eine effektive Asset-Verwaltung, Zugriffskontrolle und Compliance.
+Dieser Metadatentyp gewährleistet einen effektiven Ablauf von Asset-Management, Zugriffssteuerung und Compliance.
 
 <!-- Learn more about [metadata best practices](metadata-best-practices.md) to manage your digital assets effectively. -->
 
@@ -150,7 +150,7 @@ ID3-Tags wurden für das MP3-Dateiformat entwickelt. Weitere Informationen zu Fo
 
 ### Exif {#exif}
 
-Exchangeable Image File Format (Exif, austauschbares Bilddateiformat) ist das in der digitalen Fotografie am häufigsten verwendete Metadatenformat. Es bietet eine Möglichkeit, ein festes Vokabular von Metadateneigenschaften in viele Dateiformate wie JPEG, TIFF, RIFF und WAV einzubetten. Exif speichert Metadaten als Paare aus Metadatenname und Metadatenwert. Diese Name-Wert-Paare für Metadaten werden auch als Tags bezeichnet, nicht zu verwechseln mit dem Tagging in [!DNL Experience Manager]. Moderne Digitalkameras erstellen Exif-Metadaten und moderne Grafik-Software unterstützt sie. Das Exif-Format ist der kleinste gemeinsame Nenner für die Metadatenverwaltung, insbesondere für Bilder.
+Exchangeable Image File Format (Exif, austauschbares Bilddateiformat) ist das in der digitalen Fotografie am häufigsten verwendete Metadatenformat. Es bietet eine Möglichkeit, ein festes Vokabular von Metadateneigenschaften in viele Dateiformate wie JPEG, TIFF, RIFF und WAV einzubetten. Exif speichert Metadaten als Paare aus Metadatenname und Metadatenwert. Diese Name-Wert-Paare für Metadaten werden auch als „Tags“ bezeichnet, nicht zu verwechseln mit dem Tagging in [!DNL Experience Manager]. Moderne Digitalkameras erstellen Exif-Metadaten und moderne Grafik-Software unterstützt sie. Das Exif-Format ist der kleinste gemeinsame Nenner für die Metadatenverwaltung, insbesondere für Bilder.
 
 Eine wichtige Einschränkung von Exif besteht darin, dass das Format von einigen gängigen Bilddateiformaten wie BMP, GIF oder PNG nicht unterstützt wird.
 

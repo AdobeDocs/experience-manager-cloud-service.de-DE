@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1413'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -119,7 +119,7 @@ Halten Sie sich beim Verschieben von Seiten in einer Live Copy an die folgende B
 
 ## Anpassen von Rollouts {#customizing-rollouts}
 
-MSM-Rollout-Konfigurationen können in hohem Maße angepasst werden. Die Automatisierung von Rollouts kann weit reichende Folgen haben. Deshalb sollte den folgenden Schritten eine sehr sorgfältige Planung vorausgehen:
+MSM-Rollout-Konfigurationen können in hohem Maße angepasst werden. Die Automatisierung von Rollouts kann weitreichende Folgen haben. Deshalb sollte den folgenden Schritten eine sehr sorgfältige Planung vorausgehen:
 
 * Automatisieren von Rollouts, etwa mit [onModify-Auslösern](#onmodify)
 * Anpassen von [Knotentypen/-eigenschaften](#node-types-properties)

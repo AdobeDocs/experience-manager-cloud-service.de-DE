@@ -1,14 +1,14 @@
 ---
 title: Rotationssets
-description: Erfahren Sie, wie Sie mit Rotationssets in Dynamic Media arbeiten.
+description: Erfahren Sie, wie Sie in Dynamic Media mit Rotationssets arbeiten.
 contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1956'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -144,7 +144,7 @@ Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/dynamic-media/limit
 
    * Wählen Sie oben links auf der Seite des Rotationsset-Editors **[!UICONTROL Asset hinzufügen]** aus.
 
-   * Wählen Sie in der Mitte des Rotationsset-Editors die Option **[!UICONTROL Auswählen zum Öffnen der Asset-Auswahl]**.
+   * Wählen Sie in der Mitte des Rotationsset-Editors **[!UICONTROL Wählen, um die Asset-Auswahl zu öffnen]** aus.
 
    Wählen Sie die gewünschten Assets, die Sie in Ihr Rotationsset aufnehmen möchten. Die ausgewählten Assets sind mit einem Häkchen versehen. Wenn Sie fertig sind, wählen Sie in der oberen rechten Ecke der Seite **[!UICONTROL Auswählen]**.
 

@@ -1,22 +1,22 @@
 ---
-title: Adobe Experience Manager as a Cloud Service-Inhaltsfragmente unterstützen die Assets-HTTP-API
+title: Unterstützung für Adobe Experience Manager as a Cloud Service-Inhaltsfragmente in der Assets-HTTP-API
 description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einem wichtigen Teil der Headless-Bereitstellungs-Funktion in Adobe Experience Manager.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 source-git-commit: 47666e87b1cb87577291304336e0219481b7b4e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1749'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Unterstützung von Inhaltsfragmenten in der AEM Assets HTTP API {#content-fragments-support-in-aem-assets-http-api}
+# Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API {#content-fragments-support-in-aem-assets-http-api}
 
 ## Übersicht {#overview}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einem wichtigen Teil der Headless-Bereitstellungs-Funktion in Adobe Experience Manager (AEM).
@@ -263,7 +263,7 @@ Die Verwendung unterscheidet sich je nachdem, ob Sie eine AEM-Autoren- oder Ver�
 >
 >Siehe die [API-Referenz](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). Besonders interessant: [Adobe Experience Manager Assets API – Inhaltsfragmente](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html?lang=de).
 
-## Beschränkungen {#limitations}
+## Einschränkungen {#limitations}
 
 Es gibt einige Beschränkungen:
 
@@ -358,4 +358,4 @@ Hier finden Sie detaillierte API-Referenzen:
 Weitere Informationen finden Sie unter:
 
 * [Assets-HTTP-API – Dokumentation](/help/assets/mac-api-assets.md)
-* [AEM Gems-Sitzung: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)
+* [AEM Gems-Sitzung: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=de)

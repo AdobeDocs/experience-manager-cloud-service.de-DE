@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Dispatcher-Tools, die unterstützten Ap
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '716'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager 
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: ef6138af1735dc7aecbc4210a3fe9983d73348dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1656'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -135,7 +135,7 @@ Die GraphiQL-IDE ist die **bevorzugte** Methode zum Erstellen persistenter Abfra
 
 1. Erstellen Sie eine umschlossene einfache Abfrage.
 
-   Beispiel:
+   Zum Beispiel:
 
    ```shell
    $ curl -X PUT \
@@ -148,7 +148,7 @@ Die GraphiQL-IDE ist die **bevorzugte** Methode zum Erstellen persistenter Abfra
 
 1. Erstellen Sie eine umschlossene Abfrage mit Cache-Steuerung.
 
-   Beispiel:
+   Zum Beispiel:
 
    ```shell
    $ curl -X PUT \
@@ -161,7 +161,7 @@ Die GraphiQL-IDE ist die **bevorzugte** Methode zum Erstellen persistenter Abfra
 
 1. Erstellen Sie eine persistente Abfrage mit Parametern:
 
-   Beispiel:
+   Zum Beispiel:
 
    ```shell
    $ curl -X PUT \
@@ -209,7 +209,7 @@ Dabei ist `PERSISTENT_PATH` ein gekürzter Pfad zum Speicherort der persistenten
    >
    > Die Abfragevariablen und -werte müssen beim Ausführen einer persistenten Abfrage ordnungsgemäß [codiert](#encoding-query-url) sein.
 
-   Beispiel:
+   Zum Beispiel:
 
    ```xml
    $ curl -X GET \
@@ -257,7 +257,7 @@ Aus dieser Abfrage kann unter einem Pfad `wknd/adventures-by-activity` eine pers
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-UTF-8-Kodierung `%3B` ist für `;` und `%3D` ist die Kodierung für `=`. Die Abfragevariablen und alle Sonderzeichen müssen [ordnungsgemäß codiert sein](#encoding-query-url), damit die persistente Abfrage ausgeführt wird.
+Die UTF-8-Kodierung `%3B` ist für `;`, und `%3D` ist die Kodierung für `=`. Die Abfragevariablen und alle Sonderzeichen müssen [ordnungsgemäß codiert sein](#encoding-query-url), damit die persistente Abfrage ausgeführt wird.
 
 ## Caching persistenter Abfragen {#caching-persisted-queries}
 
@@ -402,7 +402,7 @@ Der Endpunkt gibt je nach Fall `400` oder `500` zurück, wenn bei der Ausführun
 
 Damit die Abfrage-URL von einer Applikation verwendet werden kann, müssen alle Sonderzeichen, die beim Erstellen von Abfragevariablen verwendet werden – d. h. Semikolons (`;`), Gleichheitszeichen (`=`), Schrägstriche (`/`) – konvertiert werden, sodass die entsprechende UTF-8-Codierung verwendet wird.
 
-Beispiel:
+Zum Beispiel:
 
 ```xml
 curl -X GET \ "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/adventure-by-path%3BadventurePath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fadventures%2Fbali-surf-camp%2Fbali-surf-camp"
@@ -443,8 +443,8 @@ So erstellen Sie ein Paket:
 1. Geben Sie im Dialogfeld zur Paketdefinition unter **Allgemein** einen **Namen** wie „wknd-persistent-queries“ ein.
 1. Geben Sie eine Versionsnummer wie „1.0“ ein.
 1. Fügen Sie unter **Filter** einen neuen **Filter** hinzu. Wählen Sie über die Pfadsuche den Ordner `persistentQueries` unterhalb der Konfiguration aus. Für die Konfiguration von `wknd` lautet der vollständige Pfad beispielsweise `/conf/wknd/settings/graphql/persistentQueries`.
-1. Auswählen **Speichern** , um die neue Paketdefinition zu speichern und das Dialogfeld zu schließen.
-1. Wählen Sie die **Build** in der erstellten Package-Definition.
+1. Wählen Sie **Speichern** aus, um die neue Paketdefinition zu speichern und das Dialogfeld zu schließen.
+1. Wählen Sie in der erstellten Paketdefinition die Schaltfläche **Aufbauen**.
 
 Nachdem das Paket erstellt wurde, können Sie Folgendes tun:
 

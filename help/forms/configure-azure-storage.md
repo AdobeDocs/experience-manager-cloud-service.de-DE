@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '583'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -28,10 +28,10 @@ ht-degree: 86%
 Stellen Sie vor dem Ausführen dieser Schritte sicher, dass Sie über ein [!DNL Azure]-Speicherkonto und einen Zugriffsschlüssel verfügen, um den Zugriff auf das [!DNL Azure]-Speicherkonto zu autorisieren.
 
 1. Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure-Speicher]**.
-1. Wählen Sie einen Ordner aus, um die Konfiguration zu erstellen, und wählen Sie **[!UICONTROL Erstellen]**.
+1. Wählen Sie einen Ordner, um die Konfiguration zu erstellen, und dann **[!UICONTROL Erstellen]**.
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Titel für die Konfiguration an.
 1. Geben Sie den Namen des [!DNL Azure]-Speicherkontos im Feld **[!UICONTROL Azure-Speicherkonto]** an.
-1. Geben Sie den Schlüssel für den Zugriff auf das Azure-Speicherkonto im **[!UICONTROL Azure Access Key]** Feld und wählen Sie **[!UICONTROL Speichern]**.
+1. Geben Sie den Schlüssel für den Zugriff auf das Azure-Speicherkonto im Feld **[!UICONTROL Azure-Zugriffsschlüssel]** an und wählen Sie **[!UICONTROL Speichern]**.
 
 ## Erstellen von Formulardatenmodellen {#create-azure-form-data-model}
 
@@ -43,13 +43,13 @@ Nachdem Sie das Formulardatenmodell erstellt und Datenmodellobjekte hinzugefügt
 
 So fügen Sie [!DNL Azure]-Services hinzu:
 
-1. Wählen Sie im Bearbeitungsmodus die Dienste aus dem **[!UICONTROL Dienste]** im linken Bereich und wählen Sie **[!UICONTROL Auswahl hinzufügen]**. Die ausgewählten Services werden auf der Registerkarte **[!UICONTROL Services]** des Formulardatenmodells angezeigt.
+1. Wählen Sie im Bearbeitungsmodus die Services im Abschnitt **[!UICONTROL Services]** im linken Bereich aus und wählen Sie dann **[!UICONTROL Auswahl hinzufügen]**. Die ausgewählten Services werden auf der Registerkarte **[!UICONTROL Services]** des Formulardatenmodells angezeigt.
 
    ![Ausgewählte Services hinzufügen](assets/select-services.png)
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Services]** den Service aus und tippen Sie auf **[!UICONTROL Eigenschaften bearbeiten]**. Definieren Sie basierend auf dem Service die Eingabe- oder Ausgabemodellobjekte für den Service.
 
-1. Auswählen **[!UICONTROL Speichern]** , um das Formulardatenmodell zu speichern.
+1. Wählen Sie **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern.
 
    In der folgenden Tabelle werden die verfügbaren [!DNL Azure]-Services beschrieben:
 
@@ -94,9 +94,9 @@ So fügen Sie [!DNL Azure]-Services hinzu:
 
 Definieren einer Datenmodell-Objekteigenschaft als Suchschlüssel
 
-1. Im **[!UICONTROL Modell]** Registerkarte wählen Sie die Datenmodellobjekteigenschaft aus und wählen Sie **[!UICONTROL Eigenschaften bearbeiten]**.
+1. Wählen Sie auf der Registerkarte **[!UICONTROL Modell]** die Datenmodell-Objekteigenschaft aus und dann **[!UICONTROL Eigenschaften bearbeiten]**.
 1. Schalten Sie die Umschaltoption **[!UICONTROL Suchschlüssel]** in den Status „EIN“. Diese Option ist nur für primäre Datentypen verfügbar.
-1. Auswählen **[!UICONTROL Fertig]** und wählen Sie **[!UICONTROL Speichern]** , um das Formulardatenmodell zu speichern.
+1. Wählen Sie **[!UICONTROL Fertig]** und anschließend **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern.
 
 Nachdem Sie die Eigenschaften des Datenmodellobjekts als Suchschlüssel definiert haben, werden die Hash-Werte in Azure-Index-Tags und Base64-kodierte Werte in den Azure-Metadaten gespeichert.
 

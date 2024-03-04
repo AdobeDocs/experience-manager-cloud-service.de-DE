@@ -1,14 +1,15 @@
 ---
-description: Um Websites zu entwerfen und Funktionen zu erstellen, verwenden Entwickler das Markup und DOM, die dynamisch aus dem Inhalt gerendert werden. Markup und DOM sind so konstruiert, dass flexible Manipulationen und Stile möglich sind. Gleichzeitig bietet es vordefinierte Funktionen, sodass der Entwickler sich über einige Aspekte moderner Websites keine Gedanken machen muss.
-title: Markup, Abschnitte, Blöcke und automatisches Blockieren
+description: Um Websites zu entwerfen und Funktionen zu erstellen, verwenden Entwickelnde Markup und DOM, die dynamisch aus dem Inhalt gerendert werden. Markup und DOM sind so konstruiert, dass sie eine flexible Bearbeitung und Stilanwendung ermöglichen. Gleichzeitig bieten sie vorkonfigurierte Funktionen, sodass Entwickelnde sich über einige Aspekte moderner Websites keine Gedanken machen müssen.
+title: Markup, Abschnitte, Blöcke und automatische Blockerstellung
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 3f4ae9e9-e5c8-4873-a3d0-591c4d8683dd
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '70'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Markup, Abschnitte, Blöcke und automatisches Blockieren
+# Markup, Abschnitte, Blöcke und automatische Blockerstellung
 
 {{$include 22a1fc6f-1cd6-416f-a8e7-70ce9600e04e}}

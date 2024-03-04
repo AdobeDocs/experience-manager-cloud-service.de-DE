@@ -3,9 +3,9 @@ title: AEM as a Cloud Service-SDK
 description: Überblick über das AEM as a Cloud Service Software Development Kit
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1213'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Darüber hinaus werden manche Kundinnen und Kunden, die zuvor AEM 6.5 oder früh
 
 ## Erstellen für das SDK {#building-for-the-sdk}
 
-Das AEM as a Cloud Service-SDK wird zum Erstellen und Bereitstellen von benutzerdefiniertem Code verwendet. Siehe [Dokumentation zum AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=de). Im Allgemeinen werden die folgenden Schritte ausgeführt:
+Das AEM as a Cloud Service-SDK wird zum Erstellen und Bereitstellen von benutzerdefiniertem Code verwendet. Siehe die [Dokumentation zum AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=de). Im Allgemeinen werden die folgenden Schritte ausgeführt:
 
 * **Kompilieren von Code**. Wie erwartet, wird der Quell-Code kompiliert, wodurch die resultierenden Inhaltspakete erzeugt werden.
 * **Erstellen von Artefakten**. Während dieses Prozesses werden Artefakte erstellt.
@@ -36,7 +36,7 @@ Die gleichen Schritte werden von Cloud Manager bei der Bereitstellung in Cloud-U
 
 >[!NOTE]
 >
->Das AEM as a Cloud Service SDK sollte mit einer Distribution und Version von Java erstellt werden, die von unterstützt werden. [Build-Umgebung von Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). AEM as a Cloud Service Kunden können das Oracle-JDK von der [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) Java 11 wird bis September 2026 durch Adobe-Lizenzierung und Supportbedingungen für die Oracle-Java-Technologie bei Verwendung in Adobe Experience Manager-Projekten unterstützt.
+>Das AEM as a Cloud Service SDK sollte mit einer Distribution und Version von Java erstellt werden, die von der [Build-Umgebung von Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) unterstützt wird. Kundinnen und Kunden von AEM as a Cloud Service können das Oracle-JDK vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html) herunterladen und haben erweiterte Unterstützung für Java 11 bis September 2026 durch die Lizenz- und Support-Bedingungen von Adobe für die Oracle Java-Technologie, wenn sie in Adobe Experience Manager-Projekten unterstützt wird.
 
 ## Zugriff auf das AEM as a Cloud Service-SDK {#accessing-the-aem-as-a-cloud-service-sdk}
 
@@ -69,7 +69,7 @@ Es ist *optional*, nach jeder täglichen Wartungsversion zu aktualisieren. Kundi
 
 Nachfolgend finden Sie die empfohlene Vorgehensweise zum Aktualisieren einer lokalen Umgebung:
 
-1. Stellen Sie sicher, dass alle nützlichen Inhalte entweder in der Quell-Code-Verwaltung an das Projekt übertragen oder in einem veränderlichen Inhaltspaket für den späteren Import verfügbar sind.
+1. Vergewissern Sie sich, dass alle nützlichen Inhalte entweder in die Quell-Code-Verwaltung für das Projekt übertragen wurden oder in einem veränderlichen Inhaltspaket für den späteren Import verfügbar sind.
 1. Inhalte lokaler Entwicklungstests müssen separat gespeichert werden, damit sie nicht im Rahmen des Cloud Manager-Pipeline-Build bereitgestellt werden. Der Grund dafür ist, dass sie nur für die lokale Entwicklung verwendet werden.
 1. Beenden Sie den derzeit laufenden Schnellstart.
 1. Verschieben Sie den Ordner `crx-quickstart` zur sicheren Aufbewahrung in einen anderen Ordner.
@@ -78,14 +78,14 @@ Nachfolgend finden Sie die empfohlene Vorgehensweise zum Aktualisieren einer lok
 1. Erstellen Sie einen ganz neuen Ordner und platzieren Sie darin die neue Schnellstart-JAR.
 1. Starten Sie den neuen Schnellstart mit den gewünschten Ausführungsmodi (entweder durch Umbenennen der Datei oder Übergabe der Ausführungsmodi über `-r`).
    * Sorgen Sie dafür, dass keine Reste des alten Schnellstarts im Ordner verbleiben.
-1. Erstellen Sie Ihre AEM.
+1. Erstellen Sie Ihre AEM-Anwendung.
 1. Stellen Sie Ihre AEM-Anwendung mithilfe von Package Manager auf lokalem AEM bereit.
 1. Installieren Sie über Package Manager alle Pakete mit veränderlichen Inhalten, die für lokale Umgebungstests benötigt werden.
 1. Entwickeln Sie nach Bedarf weiter und stellen Sie Änderungen bereit.
 
 Wenn es Inhalte gibt, die mit jeder neuen AEM-Schnellstartversion installiert werden sollen, fügen Sie sie in einem Inhaltspaket und der Quell-Code-Verwaltung des Projekts hinzu. Installieren Sie sie dann jedes Mal.
 
-Es wird empfohlen, das SDK häufig zu aktualisieren (z. B. alle zwei Wochen) und den gesamten lokalen Status täglich zu verwerfen, um nicht versehentlich von den Stateful-Daten in der Anwendung abhängig zu sein.
+Sie sollten das SDK häufig aktualisieren (z. B. alle zwei Wochen) und täglich den ganzen lokalen Status verwerfen, um in der Anwendung nicht versehentlich von Stateful-Daten abzuhängen.
 
 Wenn Sie von CryptoSupport abhängig sind ([entweder durch Konfiguration der Anmeldeinformationen von Cloud-Services oder des SMTP-Mail-Dienstes in AEM oder durch Verwendung der CryptoSupport-API in Ihrer Anwendung](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), werden die verschlüsselten Eigenschaften durch einen Schlüssel verschlüsselt. Dieser Schlüssel wird beim ersten Start einer AEM-Umgebung automatisch generiert. Während die Cloud-Implementierung dafür sorgt, dass der umgebungsspezifische CryptoKey automatisch wiederverwendet wird, muss der CryptoKey in die lokale Entwicklungsumgebung injiziert werden.
 

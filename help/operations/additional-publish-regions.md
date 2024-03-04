@@ -3,9 +3,9 @@ title: Zusätzliche Veröffentlichungsregionen
 description: Erfahren Sie, wie AEM as a Cloud Service zusätzliche Veröffentlichungsregionen für höhere Verfügbarkeit und geringere Latenz unterstützt.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '638'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Organisationen können bis zu drei zusätzliche Veröffentlichungsregionen lizen
 
 >[!NOTE]
 >
->Diese Funktion ist derzeit nur für AEM Sites verfügbar. Sie kann auch nicht auf Sandbox-Programme angewendet werden. Für die zusätzliche Funktion &quot;Veröffentlichungsregionen&quot;muss Ihr Programm auf AEM Version 12142 oder höher aktualisiert werden.
+>Diese Funktion ist derzeit nur für AEM Sites verfügbar. Sie kann auch nicht auf Sandbox-Programme angewendet werden. Für zusätzliche Veröffentlichungsregionen muss Ihr Programm außerdem auf die AEM-Version 12142 oder höher aktualisiert werden.
 
 ## Anwendungsfälle {#use-cases}
 

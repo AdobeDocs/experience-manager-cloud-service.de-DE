@@ -6,10 +6,11 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 docset: aem65
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '2465'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +94,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop auf das adaptive Form
 
   Hier können Sie die Eigenschaften einer Komponente bearbeiten. Die Eigenschaften sind je nach Komponente verschieden. So zeigen Sie die Eigenschaften des Containers für adaptive Formulare an:
 
-  Wählen Sie eine Komponente aus und wählen Sie dann ![Feldebene](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Container für adaptive Formulare]** und wählen Sie ![properties](assets/Smock_Wrench_18_N.svg).
+  Wählen Sie eine Komponente aus, tippen Sie auf ![Feldebene](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Container des adaptiven Formulars]** und dann auf ![Eigenschaften](assets/Smock_Wrench_18_N.svg).
 
 * **Assets-Browser**
 
@@ -304,7 +305,7 @@ Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau des For
 
 Wenn Sie eine Komponente auswählen, wird eine Symbolleiste angezeigt, mit der Sie sie bearbeiten können. Sie erhalten Optionen zum Ausschneiden, Einfügen, Verschieben und Angeben von Eigenschaften der Komponenten. Ihre Optionen sind:
 
-A.**Konfigurieren**: Wenn Sie **[!UICONTROL Konfigurieren]**, sind die Komponenteneigenschaften in der Seitenleiste sichtbar. Durch das Konfigurieren dieser Eigenschaften können Sie das Benutzererlebnis beim Erfassen von Daten anpassen. Sie können den Elementnamen der Komponente ändern und den Beschriftungstext im Titelfeld der Komponente angeben. Mit dem Elementnamen können Sie Werte erfassen, die Benutzende mithilfe der Komponente eingeben. In den Komponenteneigenschaften geben Sie das Verhalten der Komponente an und verwalten die Benutzereingabe. Konfigurieren Sie Eigenschaften in der Seitenleiste, um Benutzerdaten zu erfassen und sie für die weitere Verarbeitung zu verwenden. Mit den Eigenschaften für den adaptiven Formular-Container können Sie Client-Bibliotheken, Layouts, Designs sowie die Einstellungen für Datensatzdokumente, Speicherung, Übermittlung und Metadaten festlegen.
+A. **Konfigurieren**: Wenn Sie **[!UICONTROL Konfigurieren]** auswählen, werden in der Seitenleiste die Komponenteneigenschaften sichtbar. Durch das Konfigurieren dieser Eigenschaften können Sie das Benutzererlebnis beim Erfassen von Daten anpassen. Sie können den Elementnamen der Komponente ändern und den Beschriftungstext im Titelfeld der Komponente angeben. Mit dem Elementnamen können Sie Werte erfassen, die Benutzende mithilfe der Komponente eingeben. In den Komponenteneigenschaften geben Sie das Verhalten der Komponente an und verwalten die Benutzereingabe. Konfigurieren Sie Eigenschaften in der Seitenleiste, um Benutzerdaten zu erfassen und sie für die weitere Verarbeitung zu verwenden. Mit den Eigenschaften für den adaptiven Formular-Container können Sie Client-Bibliotheken, Layouts, Designs sowie die Einstellungen für Datensatzdokumente, Speicherung, Übermittlung und Metadaten festlegen.
 
 B. **Kopieren**: Sie können die Kopieroption verwenden, um eine Komponente zu kopieren und an anderen Positionen im Formular einzufügen. Wenn Sie eine Komponente einfügen, erhält die eingefügte Komponente einen neuen Elementnamen, behält jedoch die Eigenschaften der kopierten Komponente bei.
 
@@ -322,7 +323,7 @@ H. **Gruppieren**: Mit dieser Funktion können Sie mehrere Komponenten auswähle
 
 I. **Übergeordnet**: Hier können Sie das übergeordnete Element einer Komponente auswählen. Beispiel: Ein Textfeld, das innerhalb eines Unterabschnitts liegt, der seinerseits Teil eines Abschnitts ist. Der Abschnitt befindet sich im Guide-Stammbereich, und der adaptive Formular-Container ist einem Guide-Stammbereich übergeordnet. Bei einer Komponente können Sie alle Optionen sehen, wobei die Sortierhierarchie von unten nach oben verläuft.
 
-Wenn Sie beispielsweise **[!UICONTROL Übergeordnet]** Für ein Textfeld sehen Sie Folgendes:
+Wenn Sie beispielsweise für ein Textfeld **[!UICONTROL Übergeordnet]** auswählen, sehen Sie Folgendes:
 
 * Unterabschnitt
 * Abschnitt

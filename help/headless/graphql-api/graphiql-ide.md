@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die GraphiQL IDE in Adobe Experience Manager 
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1136'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Das **GraphiQL**-Tool erlaubt es Ihnen, Ihre GraphQL-Abfragen zu testen und zu d
 
 Sie können auf den Abfrage-Editor wie folgt zugreifen:
 
-* **Instrumente** > **Allgemein** > **GraphQL Query Editor**
+* **Tools** > **Allgemein** > **GraphQL-Abfrage-Editor**
 * Direkt, zum Beispiel: `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL-Oberfläche](assets/cfm-graphiql-interface.png "GraphiQL-Oberfläche")
@@ -89,7 +89,7 @@ In beiden Fällen ist die Abfrage, die im Editor-Panel angezeigt wird, die Abfra
 
 Mit der GraphiQL-IDE können Sie auch Ihre [Abfragevariablen](/help/headless/graphql-api/content-fragments.md#graphql-variables) verwalten.
 
-Beispiel:
+Zum Beispiel:
 
 ![GraphQL-Variablen](assets/cfm-graphqlapi-03.png "GraphQL-Variablen")
 
@@ -164,7 +164,7 @@ Mit der Option **URL kopieren** können Sie eine Abfrage simulieren, indem Sie d
   >The target environment might need adjusting, depending on your requirements.
 -->
 
-Beispiel:
+Zum Beispiel:
 
 `http://localhost:4502/graphql/execute.json/global/article-list-01`
 

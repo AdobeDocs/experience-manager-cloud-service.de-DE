@@ -3,9 +3,9 @@ title: Hinzufügen eines benutzerdefinierten Domain-Namens
 description: Erfahren Sie, wie Sie mit Cloud Manager einen benutzerdefinierten Domain-Namen hinzufügen.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 52466e091cf6e0ab1ac620e15568c04881a3b63a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '680'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ In Cloud Manager können Sie einen benutzerdefinierten Domain-Namen aus zwei Pos
 
 >[!NOTE]
 >
->Ein Benutzer muss über die **Business Owner** oder **Bereitstellungsmanager** Rolle, um einen benutzerdefinierten Domänennamen in Cloud Manager hinzuzufügen, und Sie müssen das schnelle CDN verwenden.
+>Benutzende müssen über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um einen benutzerdefinierten Domain-Namen in Cloud Manager hinzufügen zu können, und Sie müssen das Fastly CDN verwenden.
 
 ## Hinzufügen eines benutzerdefinierten Domain-Namens über die Seite mit den Domain-Einstellungen {#adding-cdn-settings}
 
@@ -29,9 +29,9 @@ Gehen Sie folgendermaßen vor, um auf der Seite **Domain-Einstellungen** einen b
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Im **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** angezeigt, wählen Sie das Programm aus.
+1. Wählen Sie auf dem Bildschirm **[Meine Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** das Programm aus.
 
-1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
+1. Navigieren Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
 1. Klicken Sie im linken Navigationsbereich auf **Domain-Einstellungen**.
 
@@ -63,7 +63,7 @@ Unter [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/im
 
 >[!TIP]
 >
->Lesen Sie den folgenden Artikel über die Notwendigkeit [Hinzufügen von CNAME oder A Record als Nächstes](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) um den doppelten Aufwand beim Hinzufügen von DNS-Einträgen zu Ihrer benutzerdefinierten Domäne zu vermeiden. Der TXT-Eintrag und der CNAME oder A Record können gleichzeitig auf dem herrschenden DNS-Server festgelegt werden.
+>Lesen Sie den folgenden Artikel über die Notwendigkeit, [einen CNAME- oder A-Eintrag hinzuzufügen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md), um doppelten Aufwand beim Hinzufügen von DNS-Einträgen zu Ihrer benutzerdefinierten Domain zu vermeiden. Der TXT-Eintrag und der CNAME- oder A-Eintrag können gleichzeitig auf dem zuständigen DNS-Server eingerichtet werden.
 
 >[!TIP]
 >
@@ -75,7 +75,7 @@ Unter [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/im
 >
 >Cloud Manager überprüft die Eigentümerschaft und aktualisiert den Status, der in der Tabelle der Domain-Einstellungen zu sehen ist. Siehe [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) für weitere Details.
 
-## Hinzufügen eines benutzerdefinierten Domänennamens von der Seite &quot;Umgebungen&quot; {#adding-cdn-environments}
+## Hinzufügen eines benutzerdefinierten Domain-Namens auf der Umgebungsseite {#adding-cdn-environments}
 
 Führen Sie die folgenden Schritte von der Seite **Umgebungen** aus, um einen benutzerdefinierten Domain-Namen hinzuzufügen.
 

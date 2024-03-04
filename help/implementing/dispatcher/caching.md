@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Caching-Grundlagen in AEM as a Cloud Se
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 source-git-commit: 28537409c5974ff8ade30207f16cc62b45c47616
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2894'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Diese Methode kann beispielsweise nützlich sein, wenn die Geschäftslogik eine 
   ```
 
   >[!NOTE]
-  >Die Surrogate-Control-Kopfzeile gilt für das von Adobe verwaltete CDN. Wenn ein [kundenseitig verwaltetes CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN) verwendet wird, kann je nach CDN-Provider eine andere Kopfzeile erforderlich sein.
+  >Die Surrogate-Control-Kopfzeile gilt für das von Adobe verwaltete CDN. Wenn ein [kundenseitig verwaltetes CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=de#point-to-point-CDN) verwendet wird, kann je nach CDN-Provider eine andere Kopfzeile erforderlich sein.
 
   Gehen Sie beim Festlegen von globalen Kopfzeilen zur Cache-Steuerung oder ähnlichen Cache-Kopfzeilen, die einem weit gefassten regulären Ausdruck entsprechen, umsichtig vor, damit sie nicht auf private Inhalte angewendet werden, die andere nicht einsehen sollen. Erwägen Sie, mehrere Anweisungen zu verwenden, um sicherzustellen, dass die Regeln detailliert angewendet werden. AEM as a Cloud Service entfernt die Cache-Kopfzeile, wenn festgestellt wird, dass sie auf ein Objekt angewendet wurde, welches der Dispatcher als nicht zwischenspeicherbar eingestuft hat, wie in der Dispatcher-Dokumentation beschrieben. Um AEM zu zwingen, die Caching-Kopfzeilen immer anzuwenden, können Sie folgendermaßen die Option **`always`** hinzufügen:
 
@@ -226,7 +226,7 @@ Jetzt können Bilder im Blob-Speicher, die als „privat“ gekennzeichnet sind,
 
 ### Analysieren des CDN-Cache-Trefferverhältnisses {#analyze-chr}
 
-Siehe [Tutorial zur Analyse der Cache-Trefferquote](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) Informationen zum Herunterladen von CDN-Protokollen und zum Analysieren des Cache-Trefferverhältnisses Ihrer Site mithilfe eines Dashboards.
+Im [Tutorial zur Analyse des Cache-Trefferverhältnisses](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html?lang=de) finden Sie Informationen zum Herunterladen von CDN-Protokollen und zur Analyse des Cache-Trefferverhältnisses Ihrer Website mithilfe eines Dashboards.
 
 ### HEAD-Anfrageverhalten {#request-behavior}
 
@@ -246,10 +246,10 @@ Reichen Sie ein Support-Ticket ein, wenn Sie möchten, dass dieses Verhalten dea
 
 Für Umgebungen, die vor Oktober 2023 erstellt wurden, wird empfohlen, die Eigenschaft `ignoreUrlParams` der Dispatcher-Konfiguration wie [hier dokumentiert](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#ignoring-url-parameters) zu konfigurieren.
 
-Es gibt zwei Möglichkeiten, Marketing-Parameter zu ignorieren. (Dabei wird das Cache-Busting über Abfrageparameter bevorzugt ignoriert):
+Es gibt zwei Möglichkeiten Marketing-Parameter zu ignorieren. (Wobei die erste Variante bevorzugt wird, um Cache-Busting über Abfrageparameter zu ignorieren):
 
 1. Ignorieren Sie alle Parameter und erlauben Sie selektiv verwendete Parameter.
-Nur im folgenden Beispiel `page` und `product` -Parameter werden nicht ignoriert und die Anforderungen werden an den Publisher weitergeleitet.
+Im folgenden Beispiel werden nur die Parameter `page` und `product` nicht ignoriert und die Anfragen werden an den Publisher weitergeleitet.
 
 ```
 /ignoreUrlParams {
@@ -259,7 +259,7 @@ Nur im folgenden Beispiel `page` und `product` -Parameter werden nicht ignoriert
 }
 ```
 
-1. Alle Parameter mit Ausnahme der Marketing-Parameter zulassen. Die Datei [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) definiert eine Liste häufig verwendeter Marketing-Parameter, die ignoriert werden. Adobe aktualisiert diese Datei nicht. Sie kann von Benutzern je nach ihren Marketing-Anbietern erweitert werden.
+1. Lassen Sie alle Parameter außer den Marketing-Parametern zu. Die Datei [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) definiert eine Liste häufig verwendeter Marketing-Parameter, die ignoriert werden. Adobe aktualisiert diese Datei nicht. Sie kann von Benutzenden je nach ihren Marketing-Anbietern erweitert werden.
 
 ```
 /ignoreUrlParams {
@@ -338,7 +338,7 @@ Die Ansätze unterscheiden sich hinsichtlich der Verfügbarkeit der Stufe, der M
   </tr>
   <tr>
     <td>Replikations-API</td>
-    <td>Veröffentlichen </td>
+    <td>Veröffentlichen</td>
     <td>Nicht möglich, Ereignis wird bei jeder Veröffentlichungsinstanz ausgelöst.</td>
     <td>Beste Möglichkeit.</td>
     <td>

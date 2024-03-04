@@ -3,9 +3,9 @@ title: Verwenden von Best Practices Analyzer
 description: Erfahren Sie, wie Sie mit Best Practices Analyzer die Bereitschaft zu einem Upgrade erkennen können.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2418'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung von Best
 Best Practices Analyzer kann als ZIP-Datei vom Software Distribution-Portal heruntergeladen werden. Sie können das Paket über [Package Manager](/help/implementing/developing/tools/package-manager.md) in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren.
 
 >[!NOTE]
->Laden Sie Best Practices Analyzer aus dem [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)-Portal herunter.
+>Laden Sie Best Practices Analyzer aus dem [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html)-Portal herunter.
 
 ## Anzeigen des Best Practices Analyzer-Berichts {#viewing-report}
 
@@ -57,7 +57,7 @@ Best Practices Analyzer kann als ZIP-Datei vom Software Distribution-Portal heru
 
 Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer-Bericht anzeigen können:
 
-1. Wählen Sie Adobe Experience Manager aus und navigieren Sie zu Tools > **Aktivitäten** > **Best Practices Analyzer**.
+1. Wählen Sie Adobe Experience Manager aus und navigieren Sie zu „Tools“ > **Vorgänge** > **Best Practices Analyzer**.
 
    ![Bild](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
@@ -208,7 +208,7 @@ Diese Schnittstelle verwendet die folgenden HTTP-Kopfzeilen:
 Die folgenden HTTP-Abfrageparameter stehen zur Verfügung, wenn HTTP-Kopfzeilen möglicherweise nicht einfach verwendet werden können:
 
 * `max-age` (Zahl, optional): Gibt die Lebensdauer der Cache-Aktualisierung in Sekunden an. Diese Zahl muss 0 oder höher sein. Die Standardlebensdauer für die Aktualisierung beträgt 86400 Sekunden. Ohne diesen Parameter oder den entsprechenden Header wird ein Aktualisierungs-Cache verwendet, um Anfragen 24 Stunden lang zu verarbeiten, bevor der Bericht neu generiert werden muss. Durch die Verwendung von `max-age=0` wird das Löschen des Caches erzwungen und eine Neuerstellung des Berichts eingeleitet. Dazu wird die zuvor festgelegte Lebensdauer für die Aktualisierung mit einem Wert, der ungleich null ist, für den neu generierten Cache verwendet.
-* `respond-async` (boolesch, optional): Gibt an, dass die Antwort asynchron bereitgestellt werden soll. Die Verwendung von `respond-async=true`, wenn der Cache veraltet ist, führt dazu, dass der Server die Antwort `202 Accepted` zurückgibt und den Cache verarbeitet, ohne darauf zu warten, dass der Cache aktualisiert und der Bericht generiert wird. Wenn der Cache aktualisiert ist, hat dieser Parameter keine Auswirkung. Der Standardwert ist `false`. Ohne diesen Parameter oder den entsprechenden Header reagiert der Server synchron, was möglicherweise eine erhebliche Zeitdauer und eine Anpassung der maximalen Antwortzeit für den HTTP-Client erfordert.
+* `respond-async` (boolesch, optional): Gibt an, dass die Antwort asynchron bereitgestellt werden soll. Die Verwendung von `respond-async=true`, wenn der Cache veraltet ist, führt dazu, dass der Server die Antwort `202 Accepted` zurückgibt und den Cache verarbeitet, ohne darauf zu warten, dass der Cache aktualisiert und der Bericht generiert wird. Wenn der Cache aktualisiert ist, hat dieser Parameter keine Auswirkung. Der Standardwert ist `false`. Ohne diesen Parameter oder den entsprechenden Header reagiert der Server synchron. Dies kann viel Zeit und eine Anpassung der maximalen Antwortzeit für den HTTP-Client erfordern.
 * `may-refresh-cache` (boolesch, optional): Gibt an, dass der Server den Cache bei einer Anfrage aktualisieren kann, wenn der aktuelle Cache leer oder veraltet ist bzw. in Kürze veraltet sein wird. Wenn `may-refresh-cache=true` oder wenn dieser Wert nicht angegeben wird, dann kann der Server eine Hintergrundaufgabe initiieren, die den Musterdetektor aufruft und den Cache aktualisiert. Wenn `may-refresh-cache=false`, dann initiiert der Server keine Aktualisierungsaufgabe, die andernfalls ausgeführt worden wäre, wenn der Cache leer oder veraltet ist. In diesem Fall ist der Bericht leer. Auf eine Aktualisierungsaufgabe, die bereits in Bearbeitung ist, hat dieser Parameter keine Auswirkung.
 * `return-minimal` (boolesch, optional): Gibt an, dass die Antwort des Servers nur den Status mit der Fortschrittsanzeige und dem Cache-Status im JSON-Format enthalten sollte. Wenn `return-minimal=true`, dann ist der Antworttext auf das Statusobjekt beschränkt. Wenn `return-minimal=false` oder der Wert nicht angegeben wird, wird eine vollständige Antwort bereitgestellt.
 * `log-findings` (boolesch, optional): Gibt an, dass der Server den Inhalt des Caches beim ersten Erstellen oder Aktualisieren protokollieren soll. Jedes Ergebnis aus dem Cache wird als JSON-Zeichenfolge protokolliert. Diese Protokollierung erfolgt nur, wenn `log-findings=true` und die Anfrage einen neuen Cache generiert.

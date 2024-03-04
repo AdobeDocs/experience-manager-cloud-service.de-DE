@@ -3,9 +3,9 @@ title: Live-Schaltung
 description: Erfahren Sie, wie Sie die Migration durchführen, sobald der Code und der Inhalt Cloud-fähig sind.
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1721'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -107,11 +107,11 @@ Bitte beachten Sie, dass die gesamte Aufnahme fehlschlägt, wenn eine der folgen
 Im Gegensatz zum obigen Abschnitt schlägt die Aufnahme **nicht** aufgrund der folgenden Bedenken bei Assets fehl. Es wird jedoch dringend empfohlen, in diesen Szenarien die entsprechenden Schritte zu unternehmen:
 
 * Jedes Asset, bei dem die ursprüngliche Ausgabedarstellung fehlt
-* Jeder Ordner, der fehlt `jcr:content` Knoten.
+* Jeder Ordner, dessen Knoten `jcr:content` fehlt.
 
 Die beiden oben genannten Punkte werden im Bericht von [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) identifiziert und gemeldet.
 
-## Checkliste der Live-Schaltung {#Go-Live-Checklist}
+## Checkliste vor der Live-Schaltung {#Go-Live-Checklist}
 
 Überprüfen Sie diese Liste der Aktivitäten, um sicherzustellen, dass Sie eine reibungslose und erfolgreiche Migration durchführen können.
 
@@ -126,7 +126,7 @@ Die beiden oben genannten Punkte werden im Bericht von [Best Practice Analyzer](
 * Ausführen der endgültigen Inhaltsauffüllung.
 * Überprüfen Sie die Dispatcher-Konfigurationen.
    * Verwenden Sie einen lokalen Dispatcher-Validator, der die Konfiguration, Validierung und Simulation des Dispatchers lokal unterstützt.
-      * [Richten Sie die lokalen Dispatcher-Tools ein.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#prerequisites)
+      * [Richten Sie die lokalen Dispatcher-Tools ein.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=de#prerequisites)
    * Überprüfen Sie die Konfiguration des virtuellen Hosts sorgfältig.
       * Die einfachste (und standardmäßige) Lösung besteht darin, `ServerAlias *` in Ihrer virtuellen Host-Datei im `/dispatcher/src/conf.d/available_vhostsfolder` einzuschließen.
          * Dadurch können die von Produktfunktionstests, Dispatcher-Cache-Invalidierung und vom Klonen verwendeten Host-Aliase funktionieren.
@@ -153,7 +153,7 @@ Die beiden oben genannten Punkte werden im Bericht von [Best Practice Analyzer](
       * Wenn Sie eine sehr hohe TTL haben, dauert die Aktualisierung Ihres DNS-Eintrags länger.
 * Führen Sie Leistungs- und Sicherheitstests durch, die Ihren Geschäftsanforderungen und -zielen entsprechen.
    * Führen Sie Tests in der Staging-Umgebung durch.  Sie hat dieselbe Größe wie die Produktion.
-   * Entwicklungsumgebungen haben nicht die gleiche Größe wie Staging und Produktion.
+   * Entwicklungsumgebungen haben nicht die gleiche Größe wie Staging- und Produktionsumgebungen.
 * Stellen Sie um und gehen Sie sicher, dass die tatsächliche Live-Schaltung ohne neue Bereitstellung oder Inhaltsaktualisierung durchgeführt wird.
 * Erstellen Sie Benachrichtigungsprofile für die Benutzenden der Admin Console. Siehe [Benachrichtigungsprofile](/help/journey-onboarding/notification-profiles.md)
 

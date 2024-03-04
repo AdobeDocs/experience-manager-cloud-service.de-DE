@@ -6,7 +6,7 @@ feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 source-git-commit: 4c1525fd51956d3d788a91f58978a9c885e6daa5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1409'
 ht-degree: 100%
 

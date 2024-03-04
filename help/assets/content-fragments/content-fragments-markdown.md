@@ -5,15 +5,15 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '586'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Markdown {#markdown}
 
-Wann Sie [Authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)verwendet der Inhaltsfragment-Editor *Markdown* -Syntax verwenden, um Inhalte für die Headless-Bereitstellung oder für die Seitenbearbeitung einfach zu schreiben:
+Beim [Authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) verwendet der Inhaltsfragmenteditor eine *Markdown*-Syntax, mit der Sie einfach Inhalte entweder für die Seitenbearbeitung oder für die Headless-Bereitstellung erstellen können:
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Sie können Folgendes definieren:
 
 ## Überschriftsnotation {#heading-notation}
 
-Zum Erstellen einer Kopfzeile durch Platzieren eines Hashtags (#) vor der Überschrift. Ein Hashtag (#) wird für eine H1 verwendet, zwei Hashtags (##) für eine H2 usw. Sie können bis zu 6 Hashtags verwenden. Beispiel:
+Zum Erstellen einer Kopfzeile durch Platzieren eines Hashtags (#) vor der Überschrift. Ein Hashtag (#) wird für eine H1 verwendet, zwei Hashtags (##) für eine H2 usw. Sie können bis zu 6 Hashtags verwenden. Zum Beispiel:
 
     `## This is an H2`
 
@@ -45,7 +45,7 @@ Zum Erstellen einer Kopfzeile durch Platzieren eines Hashtags (#) vor der Übers
 
     `###### This is a H6`
 
-Optional können Sie eine Ü1 erstellen, indem Sie den Text mit Gleichheitszeichen unterstreichen, und eine Ü2, indem Sie den Text mit Minuszeichen unterstreichen. Beispiel:
+Optional können Sie eine Ü1 erstellen, indem Sie den Text mit Gleichheitszeichen unterstreichen, und eine Ü2, indem Sie den Text mit Minuszeichen unterstreichen. Zum Beispiel:
 
     `This is an H1`
 
@@ -111,7 +111,7 @@ Wobei „id“ der Name eines definierten Bildverweises ist. Bildverweise werden
 
 ## Blockzitate {#block-quotes}
 
-Sie können Text zitieren, indem Sie das Symbol > vor dem Text einfügen. Beispiel:
+Sie können Text zitieren, indem Sie das Symbol > vor dem Text einfügen. Zum Beispiel:
 
     `>This is block quotes`
 
@@ -119,7 +119,7 @@ Sie können Text zitieren, indem Sie das Symbol > vor dem Text einfügen. Beispi
 
     `>asdfahsdlfasdfj`
 
-Sie können verschachtelte Blockzitate nutzen. Beispiel:
+Sie können verschachtelte Blockzitate nutzen. Zum Beispiel:
 
     `> This is the first level of quoting.`
 
@@ -135,7 +135,7 @@ Sie können verschachtelte Blockzitate nutzen. Beispiel:
 
 Sie können sowohl sortierte als auch unsortierte Listen erstellen
 
-Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den Elementen in der Liste. Beispiel:
+Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den Elementen in der Liste. Zum Beispiel:
 
     `* item in list`
 
@@ -143,7 +143,7 @@ Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den
 
     `* item in list`
 
-Um eine sortierte Liste zu erstellen, fügen Sie vor jedem Element in der Liste die Nummer und danach einen Punkt hinzu. Beispiel:
+Um eine sortierte Liste zu erstellen, fügen Sie vor jedem Element in der Liste die Nummer und danach einen Punkt hinzu. Zum Beispiel:
 
     `1. First item in list.`
 
@@ -173,13 +173,13 @@ Sie können Text wie folgt fett formatieren:
 
 Um einen Codebereich anzugeben, schließen Sie ihn in einfache Anführungszeichen (&#39;) ein. Im Gegensatz zu vorformatierten Code-Blöcken zeigt ein Code-Bereich Code innerhalb eines normalen Absatzes an.
 
-Beispiel:
+Zum Beispiel:
 
     ``Use the `printf()` function.``
 
 ## Code-Blöcke {#code-blocks}
 
-Code-Blöcke werden in der Regel verwendet, um den Quell-Code zu veranschaulichen. Sie können Codeblöcke durch Einrücken des Codes mit Tabulator oder mindestens 4 Leerzeichen erstellen. Beispiel:
+Code-Blöcke werden in der Regel verwendet, um den Quell-Code zu veranschaulichen. Sie können Codeblöcke durch Einrücken des Codes mit Tabulator oder mindestens 4 Leerzeichen erstellen. Zum Beispiel:
 
     `This is a normal paragraph.`
 

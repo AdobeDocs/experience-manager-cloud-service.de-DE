@@ -3,9 +3,9 @@ title: Externalisieren von URLs
 description: Der Externalizer ist ein OSGi-Dienst, mit dem Sie Ressourcenpfade programmgesteuert in externe, absolute URLs umwandeln können.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '630'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ Dieser Abschnitt zeigt einige Beispiele dafür, wie der Externalizer-Service ver
 
 >[!NOTE]
 >
->Im Kontext von HTML sollten keine absoluten Links erstellt werden. Verwenden Sie daher in solchen Fällen dieses Dienstprogramm nicht.
+>Im Kontext von HTML sollten keine absoluten Links erstellt werden. Verwenden Sie dieses Dienstprogramm daher in solchen Fällen nicht.
 
 * **Einen Pfad mit der publish-Domain externalisieren Sie wie folgt:**
 

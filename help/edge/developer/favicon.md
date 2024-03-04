@@ -1,11 +1,12 @@
 ---
-description: "Wenn Sie Ihrer Site ein Favicon hinzufügen, erhalten Sie einen professionellen Einblick in Ihre Browser der Besucher’s:"
+description: „Wenn Sie Ihrer Site ein Favicon hinzufügen, erhalten Sie einen professionellen Einblick in die Browser Ihrer Besucherinnen und Besucher:“
 title: Favicon
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
-source-wordcount: '18'
-ht-degree: 0%
+exl-id: e5225611-8bc7-4239-96db-83f7819410d7
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
+source-wordcount: '17'
+ht-degree: 100%
 
 ---
 

@@ -7,9 +7,9 @@ feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3431'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -92,14 +92,14 @@ Zur Unterstützung von Nutzungsszenarien für die Asset-Verteilung haben Sie die
 * **Laufende Arbeit oder laufende kreative Arbeit (Work-In-Progress, WIP):** Eine Phase im Asset-Lebenszyklus, in der ein Asset mehrfach geändert wird und in der Regel noch nicht zur Freigabe für breitere Teams bereit ist.
 * **Fertige Kreativ-Assets:** Assets, die für ein breiteres Team freigegeben werden können oder die vom Kreativ-Team für die Freigabe mit Marketing- oder LOB-Teams ausgewählt/genehmigt wurden.
 
-* **Asset-Genehmigungen:** Der Genehmigungsprozess, der für Assets ausgeführt wird, die bereits auf DAM hochgeladen wurden. Dazu gehören in der Regel Markengenehmigungen, Genehmigungen usw.
+* **Asset-Genehmigungen:** Der Genehmigungsprozess, der für Assets ausgeführt wird, die bereits auf DAM hochgeladen wurden. Dazu gehören in der Regel Markengenehmigungen, rechtliche Genehmigungen usw.
 * **Endgültiges Asset:** Ein Asset, das alle Genehmigungen/Metadaten-Taggingprozesse durchlaufen hat und für das breitere Team verwendet werden kann. Ein solches Asset wird in DAM gespeichert und allen (bzw. allen interessierten) Benutzern zur Verfügung gestellt. Es kann in Marketing-Kanälen oder von Kreativ-Teams verwendet werden, um Designs zu erstellen.
 
 * **Kleinere Asset-Aktualisierung/-Änderung:** Schnelle, kleine Änderung an einem digitalen Asset. Diese wird häufig aufgrund einer Retuschieranfrage oder einer kleineren Bearbeitungsanfrage, einer Asset-Überprüfung oder einer Genehmigung (z. B. Neupositionierung, Änderung der Textgröße, Anpassung der Sättigung/Helligkeit, Farbe usw.) durchgeführt.
 * **Größere Asset-Aktualisierung/-Änderung:** Änderung eines digitalen Assets, die viel Arbeit erfordert und manchmal über einen längeren Zeitraum erfolgen muss. Diese umfasst in der Regel mehrere Änderungen. Das Asset muss während der Aktualisierung mehrmals gespeichert werden. Bei umfangreichen Asset-Aktualisierungen wird das Asset in der Regel in eine WIP-Phase versetzt.
 * **DAM:** Digital Asset Management. In diesem Dokument wird der Begriff synonym mit Experience Manager-Assets verwendet, sofern nicht ausdrücklich anders angegeben.
 * **Kreativer Benutzer:** Kreativprofi, der digitale Assets mit Creative Cloud-Programmen und -Services erstellt. In einigen Fällen kann ein kreativer Benutzer Mitglied eines Kreativ-Teams sein, das möglicherweise Creative Cloud verwendet, aber keine digitalen Assets erstellt (z. B. Creative Director oder Creative Team Manager).
-* **DAM-Benutzer:** Ein typischer Benutzer eines DAM-Systems. Je nach Organisation kann ein DAM-Benutzer ein Marketing- oder ein Nicht-Marketing-Benutzer sein, z. B. ein &quot;Line-of-Business&quot;(LOB)-Benutzer, Bibliothekar, Vertriebsmitarbeiter usw.
+* **DAM-Benutzer:** Ein typischer Benutzer eines DAM-Systems. Je nach Organisation können DAM-Benutzende Marketing- oder Nicht-Marketing-Benutzende sein, z. B. „Line-of-Business“(LOB)-Benutzende, Bibliothekarinnen und Bibliothekare oder Vertriebspersonal.
 
 ### Überlegungen zur Integration von Experience Manager und Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
@@ -181,7 +181,7 @@ Experience Manager Assets unterstützt zwei Arten von Benutzern, die sich in ihr
 
 #### Kreative Benutzer mit direktem Zugriff auf DAM {#creative-users-with-direct-access-to-dam}
 
-In der Regel haben interne Kreativ-Teams oder Agenturen/Kreativprofis, die in das interne Netzwerk integriert sind, Zugriff auf die DAM-Instanz, einschließlich der Anmeldung von Experience Managern. Die Experience Manager- und Netzwerkinfrastruktur kann eingerichtet werden, um externen Parteien – normalerweise vertrauenswürdige Organisationen wie Agenturen, die für einen Kunden arbeiten – direkten Zugriff zu ermöglichen, damit diese über das Netzwerk (z. B. über VPN oder IP-Zulassungsliste) auf Experience Manager zugreifen können.
+In der Regel haben interne Kreativ-Teams oder Agenturen/Kreativprofis, die an das interne Netzwerk angeschlossen sind, Zugriff auf die DAM-Instanz, einschließlich Experience Manager-Anmeldung. Die Experience Manager- und Netzwerkinfrastruktur kann eingerichtet werden, um externen Parteien – normalerweise vertrauenswürdige Organisationen wie Agenturen, die für einen Kunden arbeiten – direkten Zugriff zu ermöglichen, damit diese über das Netzwerk (z. B. über VPN oder IP-Zulassungsliste) auf Experience Manager zugreifen können.
 
 In solchen Fällen bietet Adobe Asset Link oder das Experience Manager-Desktop-Programm einfachen Zugriff auf abgeschlossene/genehmigte Assets und ermöglicht das Speichern fertiger Kreativ-Assets in DAM.
 
@@ -216,11 +216,11 @@ In diesem Fall wird empfohlen, die Experience Manager-Desktop-Anwendung zum Deak
 
 In einigen Szenarien müssen Sie möglicherweise eine größere Anzahl von Dateien gleichzeitig in DAM hochladen. Beispiele dafür sind:
 
-* Hochladen von Ergebnissen von Fotoshootings oder größeren Projekten
+* Hochladen von Ergebnissen von Foto-Shootings oder größeren Projekten
 * Hochladen von Assets von Kreativagenturen
 * Hochladen ausgewählter Assets aus einem größeren Satz, wenn die Auswahl außerhalb von DAM erfolgt
 
-Diese Beschreibung bezieht sich auf das betriebsbedingte Hochladen von Dateien (z. B. jede Woche oder bei jedem Foto-Shooting ) als normaler Teil des Workflows des Desktop-Benutzers. Große Asset-Migrationen werden hier nicht behandelt.
+Die Beschreibung bezieht sich auf das betriebsbedingte Hochladen von Dateien (z. B. wöchentlich oder bei jedem Foto-Shooting) als normaler Teil des Workflows von Desktop-Benutzenden. Große Asset-Migrationen werden hier nicht behandelt.
 
 Sie können die folgenden Upload-Funktionen nutzen:
 

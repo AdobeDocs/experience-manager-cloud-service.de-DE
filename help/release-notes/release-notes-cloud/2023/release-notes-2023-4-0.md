@@ -3,9 +3,9 @@ title: Versionshinweise für Version 2023.4.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2023.4.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1122'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -42,8 +42,8 @@ Sehen Sie sich das Übersichtsvideo zur Version April 2023 an, das eine Zusammen
 
 ### Neue Funktionen in der Vorabversion von [!DNL Experience Manager Sites] {#prerelease-sites}
 
-* Inhaltsfragmente und ihre Referenzen können jetzt mithilfe der [Inhaltsfragmentkonsole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=de) im [AEM-Vorschau-Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html#access-preview-service) veröffentlicht werden, sodass Benutzerinnen und Benutzer eine Vorschau des endgültigen Erlebnisses in einer entkoppelten Vorschau-App anzeigen können, bevor sie live gehen.
-* Bilder können jetzt dynamisch für die Web-Bereitstellung in Headless-Szenarien mit AEM GraphQL optimiert werden. [Abfragevariablen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables) können in GraphQL-Abfragen definiert werden, um zuzulassen, dass entkoppelte Client-Anwendungen entsprechend optimierte Bilder von AEM anfordern können.
+* Inhaltsfragmente und ihre Referenzen können jetzt mithilfe der [Inhaltsfragmentkonsole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=de) im [AEM-Vorschau-Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=de#access-preview-service) veröffentlicht werden, sodass Benutzerinnen und Benutzer eine Vorschau des endgültigen Erlebnisses in einer entkoppelten Vorschau-App anzeigen können, bevor sie live gehen.
+* Bilder können jetzt dynamisch für die Web-Bereitstellung in Headless-Szenarien mit AEM GraphQL optimiert werden. [Abfragevariablen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=de#query-variables) können in GraphQL-Abfragen definiert werden, um zuzulassen, dass entkoppelte Client-Anwendungen entsprechend optimierte Bilder von AEM anfordern können.
 * Tags für [Inhaltsfragmentvarianten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=de) können jetzt über die Inhaltsbereitstellungs-API von AEM GraphQL an JSON ausgegeben werden.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -71,7 +71,7 @@ Sehen Sie sich das Übersichtsvideo zur Version April 2023 an, das eine Zusammen
 
 ### Funktion der [!DNL Assets]-Vorabversion {#prerelease-feature-assets}
 
-* Dynamic Media: Die Benutzeroberfläche für einige Felder mit Bezug auf smartes Zuschneiden in einem Bildprofil wurde aktualisiert und spiegelt jetzt die aktuellen Richtlinien zum Definieren eines smarten Zuschnitts wider. Siehe [Optionen für das Zuschneiden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options).
+* Dynamic Media: Die Benutzeroberfläche für einige Felder mit Bezug auf smartes Zuschneiden in einem Bildprofil wurde aktualisiert und spiegelt jetzt die aktuellen Richtlinien zum Definieren eines smarten Zuschnitts wider. Siehe [Optionen für das Zuschneiden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=de#crop-options).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

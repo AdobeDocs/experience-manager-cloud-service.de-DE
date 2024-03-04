@@ -3,9 +3,9 @@ title: Erste Schritte mit SPAs in AEM unter Verwendung von React
 description: Dieser Artikel beschreibt eine Beispiel-SPA, erläutert, wie diese zusammengestellt wird, und ermöglicht es Ihnen, unter Verwendung des React-Frameworks schnell mit Ihrer eigenen SPA zu arbeiten.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1130'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

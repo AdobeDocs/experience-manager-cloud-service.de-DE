@@ -3,9 +3,9 @@ title: Erstellen einer API-Anfrage – Headless-Einrichtung
 description: Erfahren Sie, wie Sie die GraphQL-API für die Headless-Bereitstellung von Inhaltsfragmentinhalten und die Assets-REST-API von AEM zur Verwaltung von Inhaltsfragmenten verwenden.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '652'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ GraphiQL ist eine IDE, die in Ihrer AEM-Umgebung integriert ist; sie wird verfü
 
    Sie können auf den Abfrage-Editor wie folgt zugreifen:
 
-   * **Instrumente** > **Allgemein** > **GraphQL Query Editor**
+   * **Tools** > **Allgemein** > **GraphQL-Abfrage-Editor**
    * direkt, zum Beispiel: `http://localhost:4502/aem/graphiql.html`
 
 1. Die GraphiQL-IDE ist ein In-Browser-Abfrage-Editor für GraphQL. Sie können damit Abfragen zum Abrufen von Inhaltsfragmenten erstellen, um diese als JSON-Datei headless bereitzustellen.

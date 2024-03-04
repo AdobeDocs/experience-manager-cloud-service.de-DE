@@ -3,9 +3,9 @@ title: Go-Live-Phase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Go-Live-Phase in Cloud Acceleration Manager.
 exl-id: 2ec31445-899d-40b8-b3eb-073cb07aff12
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '137'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Klicken Sie auf Ihre Projektkarte, um die Projekt-Landingpage zu öffnen und zum
 ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
->Weitere Informationen finden Sie unter [Erstellen und Verwalten eines Projekts in Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html#create-project).
+>Weitere Informationen finden Sie unter [Erstellen und Verwalten eines Projekts in Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=de#create-project).
 
 
 ## Verwenden der Karte „Go-Live-Aktivität“ {#go-live}

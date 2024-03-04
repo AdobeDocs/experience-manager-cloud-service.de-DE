@@ -4,9 +4,9 @@ description: Erstellen Sie Vorlagen für adaptive Formulare, indem Sie mithilfe 
 feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2059'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Beispiel: Sie möchten, dass alle Autoren in einem Registrierungsformular bestim
 * Den anfänglichen Inhalt für das Formular angeben.
 * Design und Übermittlungsaktionen festlegen.
 
-Sie können das [!DNL AEM Forms]-Referenzinhaltspaket vom [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) herunterladen und installieren, um Referenz-Designs und Vorlagen in Ihre Umgebung zu importieren.
+Sie können das [!DNL AEM Forms]-Referenzinhaltspaket vom [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html) herunterladen und installieren, um Referenz-Designs und Vorlagen in Ihre Umgebung zu importieren.
 
 ## Arbeiten mit Vorlagen {#working-with-templates}
 
@@ -39,13 +39,13 @@ In Experience Manager steht ein globaler Ordner zum Organisieren von Vorlagen zu
 
 Nachdem Sie einen Ordner erstellt haben, öffnen Sie den Ordner und führen Sie die folgenden Schritte aus, um eine Vorlage zu erstellen:
 
-1. Auswählen **[!UICONTROL Erstellen]** in dem Ordner, den Sie erstellt haben.
-1. Wählen Sie im Abschnitt Vorlagentyp auswählen die Option **[!UICONTROL Adaptive Formularvorlage]** und wählen **[!UICONTROL Nächste]**.
+1. Wählen Sie **[!UICONTROL Erstellen]** innerhalb des Ordners, den Sie erstellt haben.
+1. Im Abschnitt „Vorlagentyp auswählen“ wählen Sie **[!UICONTROL Adaptive Formularvorlage]** und wählen Sie dann **[!UICONTROL Weiter]**.
 
-1. Geben Sie im Bereich &quot;Vorlagendetails&quot;einen Vorlagentitel ein und wählen Sie **[!UICONTROL Erstellen]**.
+1. Geben Sie im Abschnitt „Vorlagendetails“ einen Namen für die Vorlage an und wählen Sie **[!UICONTROL Erstellen]**.
 Sie können auch eine Beschreibung angeben.
 
-1. Auswählen **[!UICONTROL Fertig]** , um zur Konsole zurückzukehren, oder wählen Sie **[!UICONTROL Öffnen]** , um die Vorlage im Editor zu öffnen.
+1. Wählen Sie **[!UICONTROL Fertig]**, um zur Konsole zurückzukehren, oder **[!UICONTROL Öffnen]**, um die Vorlage im Editor zu öffnen.
 
 ### Benutzeroberfläche des Vorlageneditors {#template-editor-ui}
 
@@ -105,7 +105,7 @@ Beispielsweise können Sie die Kopfzeilenkomponente zur Vorlage hinzufügen. Wen
 
 Wenn die Option „Anfänglicher Inhalt“ ausgewählt ist, wird der Container des adaptiven Formulars der Vorlage wie ein adaptives Formular zur Bearbeitung geöffnet. Wie beim Authoring eines adaptiven Formulars können Sie anfängliche Einstellungen festlegen, z. B. das Design und Übermittlungsaktionen.
 
-Formularautorinnen und -autoren verwenden sie als Grundlage zum Erstellen eines Formulars. Die Struktur des Inhaltsflusses wird in der Ebene „Anfänglicher Inhalt“ der Vorlage angegeben. Um zum Bearbeiten des anfänglichen Inhalts der Formularvorlage zu wechseln, wählen Sie vor der Vorschau in der Seitensymbolleiste die Option ![Arbeitsfläche-Dropdown](assets/canvas-drop-down.png) **>** **[!UICONTROL Anfänglicher Inhalt]**.
+Formularautorinnen und -autoren verwenden sie als Grundlage zum Erstellen eines Formulars. Die Struktur des Inhaltsflusses wird in der Ebene „Anfänglicher Inhalt“ der Vorlage angegeben. Um zum Bearbeiten des anfänglichen Inhalts der Formularvorlage zu wechseln, bevor Sie die Vorschau in der Seitensymbolleiste anzeigen, wählen Sie ![canvas-drop-down](assets/canvas-drop-down.png) **>** **[!UICONTROL Anfänglicher Inhalt]**.
 
 
 In der Ebene „Anfänglicher Inhalt“ erstellen Sie die Vorlage für ein adaptives Formular, das Ihre Autoren als Grundlage verwenden. Das Erstellen einer Vorlage ähnelt dem Erstellen eines Formulars. Sie verwenden die in der Seitenleiste verfügbaren Optionen. Die Seitenleiste bietet Browser für Inhalte, Eigenschaften, Assets und Komponenten.
@@ -132,7 +132,7 @@ Sie haben ein Logo hinzugefügt, einen Titel angegeben und eine Fußzeile in der
 * Sie können die Bedienfeldkomponente aus dem Komponenten-Browser in der Seitenleiste ziehen.
 * Sie können ein untergeordnetes Bedienfeld von `guideRootPanel` aus der Symbolleiste hinzufügen.
 
-Um die Registerkarten „Allgemeine Informationen“ und „Berufliche Informationen“ zu erstellen, fügen Sie zwei Bedienfelder im untergeordneten Bedienfeld von `guideRootPanel` hinzu. Wählen Sie die Bedienfelder aus und wählen Sie ![cmppr](assets/configure-icon.svg) , um die Eigenschaften in der Seitenleiste zu öffnen. Ändern Sie die Elementnamen in `general-info` und `professional-info` und die Titel in „Allgemeine Informationen“ bzw. „Berufliche Informationen“. Wählen Sie in der Seitenleiste Inhalt aus, um den Inhaltsbrowser zu öffnen. Wählen Sie in der Registerkarte „Formularobjekte“ `guideRootPanel` aus. Im Editor ist „guideRootPanel“ ausgewählt. Auswählen ![cmppr](assets/configure-icon.svg) in der Komponentensymbolleiste, um die Eigenschaften zu öffnen. Wählen Sie im Feld Bedienfeldlayout die Option **[!UICONTROL Registerkarten oben]** und wählen **[!UICONTROL Fertig]**. Die Vorlagenstruktur mit Registerkarten wird angewendet.
+Um die Registerkarten „Allgemeine Informationen“ und „Berufliche Informationen“ zu erstellen, fügen Sie zwei Bedienfelder im untergeordneten Bedienfeld von `guideRootPanel` hinzu. Wählen Sie die Bedienfelder aus und wählen Sie dann ![cmppr](assets/configure-icon.svg), um die Eigenschaften in der Seitenleiste zu öffnen. Ändern Sie die Elementnamen in `general-info` und `professional-info` und die Titel in „Allgemeine Informationen“ bzw. „Berufliche Informationen“. Wählen Sie in der Randleiste „Inhalt“, um den Inhalts-Browser zu öffnen. Wählen Sie in der Registerkarte „Formularobjekte“ `guideRootPanel` aus. Im Editor ist „guideRootPanel“ ausgewählt. Wählen Sie ![cmppr](assets/configure-icon.svg) in der Komponenten-Symbolleiste, um dessen Eigenschaften zu öffnen. Wählen Sie im Feld „Bedienfeld-Layout“ **[!UICONTROL Registerkarten oben]** und wählen Sie dann **[!UICONTROL Fertig]**. Die Vorlagenstruktur mit Registerkarten wird angewendet.
 
 #### Hinzufügen von Inhalten in Registerkarten {#adding-content-in-tabs}
 
@@ -151,7 +151,7 @@ Wenn Sie eine Vorlage erstellen, wird sie als Entwurf hinzugefügt. Aktivieren S
 1. Navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Werkzeuge]** > **[!UICONTROL Vorlagen]** und öffnen Sie den Ordner, in dem Sie die Vorlage erstellt haben.
 
 1. Die Vorlage, die Sie erstellt haben, ist als Entwurf gekennzeichnet.
-1. Wählen Sie die Vorlage aus und wählen Sie **[!UICONTROL Aktivieren]** in der Symbolleiste.
+1. Wählen Sie die Vorlage aus und wählen Sie dann **[!UICONTROL Aktivieren]** in der Symbolleiste.
 Beim Erstellen eines adaptiven Formulars wird Ihnen die Vorlage angezeigt, wenn Sie aufgefordert werden, eine Vorlage auszuwählen.
 
 ## Importieren oder Exportieren einer Vorlage {#importing-or-exporting-a-template}
@@ -167,7 +167,7 @@ Ein Formular funktioniert mit seiner Vorlage. Wenn Sie ein adaptives Formular he
 
 Autorinnen und Autoren können ein [!UICONTROL Formulardatenmodellschema] in einem Vorlagen-Editor mit einer Vorlage für ein adaptives Formular verknüpfen. Dies ermöglicht es Autorinnen und Autoren, ein Schema aus dem Vorlageneditor auswählen. Wenn Sie ein Schema mit einer Vorlage verknüpfen und Formularautorinnen oder -autoren ein Formular basierend auf der Vorlage erstellen, wird das Schema für das Formular vorausgewählt. Dies hilft Formularautorinnen und -autoren, die Verwendung von Schemata zu regeln und spart ihnen außerdem Zeit. So wählen Sie ein Formulardatenmodellschema im Vorlageneditor aus:
 
-1. Auswählen **[!UICONTROL Inhaltsbrowser]** auf der linken Seite.
+1. Wählen Sie **[!UICONTROL Inhalts-Browser]** auf der linken Seite.
 1. Navigieren Sie zum Formular-Container **[!UICONTROL Einstellung]**.
 1. Wählen Sie **[!UICONTROL Datenmodell]** aus.
 1. Wählen Sie das Formulardatenmodell über **[!UICONTROL Formulardatenmodell auswählen]** und speichern Sie die Konfiguration.
@@ -206,7 +206,7 @@ Perform the following steps to show and hide templates:
 Sie können ein adaptives Formular auch als Vorlage für zukünftige Verwendungen speichern. So speichern Sie ein adaptives Formular als Vorlage:
 
 1. Wählen Sie ein adaptives Formular aus, um es als Vorlage zu speichern.
-1. Klicken Sie auf **[!UICONTROL Als Vorlage speichern]**. Folgendes Dialogfeld wird angezeigt.
+1. Klicken Sie auf **[!UICONTROL Als Vorlage speichern]**. Ein Dialogfeld wird angezeigt.
 1. Geben Sie **[!UICONTROL Titel]** (Pflichtfeld), **[!UICONTROL Speicherort]** (Pflichtfeld) und **[!UICONTROL Beschreibung]** (optionales Feld) für die Vorlage an.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 

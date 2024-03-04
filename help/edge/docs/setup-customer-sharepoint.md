@@ -1,14 +1,15 @@
 ---
-description: '"**HINWEIS**: für Projekte, die Adobe\u2019s Sharepoint (<https: adobe.sharepoint.com="">) bitte hier fortfahren."'
-title: Verwendung von Sharepoint
+description: '**HINWEIS**: Fahren Sie bei Projekten, die SharePoint von Adobe verwenden (<https://adobe.sharepoint.com>), bitte hier fort.'
+title: Verwenden von SharePoint
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
-source-wordcount: '19'
-ht-degree: 0%
+exl-id: c0feb7bc-5418-4f93-bcfc-072cfe2e97bd
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
+source-wordcount: '20'
+ht-degree: 100%
 
 ---
 
-# Verwendung von Sharepoint
+# Verwenden von SharePoint
 
 {{$include be731df7-f3ae-4a8a-839a-e49c7445761a}}

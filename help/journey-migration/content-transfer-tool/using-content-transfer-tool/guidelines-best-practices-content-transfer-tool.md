@@ -1,11 +1,11 @@
 ---
-title: Richtlinien und Best Practices für die Verwendung des Content Transfer Tool
-description: Erfahren Sie mehr über die Richtlinien und Best Practices für die Verwendung des Content Transfer Tool.
+title: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
+description: Lernen Sie die Richtlinien und Best Practices für die Verwendung des Content Transfer Tools kennen.
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1401'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -27,17 +27,17 @@ ht-degree: 62%
 Es ist eine neue Version des Content Transfer Tools verfügbar, die den Inhaltstransferprozess mit Cloud Acceleration Manager integriert. Es wird dringend empfohlen, zu dieser neuen Version zu wechseln, um alle ihre Vorteile nutzen zu können:
 
 * Self-Service-Methode zur einmaligen Extraktion eines Migrationssatzes und zur gleichzeitigen Aufnahme in mehrere Umgebungen
-* Verbesserte Benutzererfahrung durch verbesserte Ladezustände, Limits und Fehlerbehandlung
+* Verbessertes Benutzererlebnis durch bessere Ladezustände, Limits und Fehlerbehandlung
 * Aufnahmeprotokolle bleiben erhalten und stehen immer zur Fehlerbehebung zur Verfügung.
 
-Um mit der Verwendung der neuen Version zu beginnen, deinstallieren Sie ältere Versionen des Content Transfer Tool. Dies ist erforderlich, da die neue Version mit einer größeren Veränderung der Architektur einhergeht. Mit Version 2.x erstellen Sie Migrationssätze und führen die Extraktion und Aufnahme auf den Sets erneut aus.
+Um mit der Verwendung der neuen Version zu beginnen, müssen ältere Versionen des Content Transfer Tools deinstalliert werden. Dies ist erforderlich, da die neue Version mit einer größeren Veränderung der Architektur einhergeht. Mit Version 2.x erstellen Sie Migrationssätze und führen Extraktion und Aufnahme mit diesen Sätzen erneut durch.
 Versionen vor 2.0.0 werden nicht unterstützt. Es wird empfohlen, die neueste Version zu verwenden.
 
-Die folgenden Richtlinien und Best Practices gelten für die neue Version des Content Transfer Tool:
+Die folgenden Richtlinien und Best Practices gelten für die neue Version des Content Transfer Tools:
 
-* Ausführen [Revisionsbereinigung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=de) und [Konsistenzprüfungen von Datenspeichern](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) auf **source** Repository, sodass Sie potenzielle Probleme erkennen und die Größe des Repositorys reduzieren können.
+* Führen Sie eine [Revisionsbereinigung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=de) und [Datenspeicher-Konsistenzprüfungen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=de) auf dem **Quell-Repository** aus, um mögliche Probleme zu identifizieren und die Größe des Repositorys zu reduzieren.
 
-* In der Aufnahmephase empfiehlt Adobe, die Aufnahme mit der *wischen* Modus aktiviert, bei dem das vorhandene Repository (Autor oder Veröffentlichung) in der Adobe Experience Manager-Zielumgebung (AEM) gelöscht wird. Aktualisieren Sie dann mit den Migrationssatzdaten. Dieser Modus ist schneller als der Nicht-Wischmodus, bei dem der Migrationssatz zusätzlich zum aktuellen Inhalt angewendet wird.
+* Adobe empfiehlt, in der Aufnahmephase die Aufnahme mit aktiviertem *Löschmodus* durchzuführen, in dem das vorhandene Repository (Author oder Publish) in der Zielumgebung des Adobe Experience Manager (AEM) Cloud Service gelöscht wird. Aktualisieren Sie dann mit den Migrationssatzdaten. Dieser Modus ist schneller als der Nicht-Löschmodus, bei dem der Migrationssatz zusätzlich zum aktuellen Inhalt angewendet wird.
 
 * Nach Abschluss der Aktivität zum Inhaltstransfer ist in der Cloud Service-Umgebung die korrekte Projektstruktur erforderlich, um sicherzustellen, dass der Inhalt in der Cloud Service-Umgebung erfolgreich gerendert wird.
 
@@ -49,15 +49,15 @@ Die allgemeine Formel zur Berechnung des erforderlichen freien Speicherplatzes l
    * *Knotenspeichergröße*: Größe des Segmentspeicherverzeichnisses oder der MongoDB-Datenbank.
 Bei einer Segmentspeichergröße von 20 GB wären daher 94 GB freier Speicherplatz erforderlich.
 
-* Während der gesamten Übertragung von Inhalten muss ein Migrationssatz beibehalten werden, um die Auffüllung von Inhalten zu unterstützen. Es können maximal 20 Migrationssätze pro Projekt in Cloud Acceleration Manager erstellt und gepflegt werden, während die Aktivität zum Inhaltstransfer stattfindet. Wenn mehr als 20 Migrationssätze benötigt werden, erstellen Sie ein zweites Projekt in Cloud Acceleration Manager. Dies erfordert jedoch zusätzliches Projektmanagement und Out-of-Product-Governance, um zu verhindern, dass Inhalte auf dem Ziel von mehreren Benutzern überschrieben werden.
+* Während der gesamten Übertragung von Inhalten muss ein Migrationssatz beibehalten werden, um die Auffüllung von Inhalten zu unterstützen. Es können maximal 20 Migrationssätze pro Projekt in Cloud Acceleration Manager erstellt und verwaltet werden, während die Aktivität zum Übertragen von Inhalten ausgeführt wird. Wenn mehr als 20 Migrationssätze benötigt werden, erstellen Sie in Cloud Acceleration Manager ein zweites Projekt. Dies erfordert jedoch zusätzliches Projekt-Management und Out-of-Product-Governance, um zu verhindern, dass Inhalte auf dem Ziel von mehreren Benutzenden überschrieben werden.
 
-* Ändern Sie nicht das Installationsverzeichnis des CTT-Tools. Standardmäßig findet die Installation im Pfad crx-quickstart/cloud-migration statt. Dieser spezifische Speicherort wird intern von anderen Bibliotheken verwendet. Eine Änderung dieses Pfads kann zu Extraktionsproblemen führen.
+* Ändern Sie nicht das Installationsverzeichnis des CTT-Tools. Standardmäßig findet die Installation im Pfad „crx-quickstart/cloud-migration“ statt. Dieser spezifische Speicherort wird intern von anderen Bibliotheken verwendet. Eine Änderung dieses Pfads kann zu Extraktionsproblemen führen.
 
 ## Wichtige Überlegungen vor der Verwendung des Content Transfer Tools {#important-considerations}
 
 Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Content Transfer Tools:
 
-* Die Systemanforderungen für das Content Transfer Tool sind AEM 6.3 + und Java™ 8. Wenn Sie eine niedrigere AEM verwenden, aktualisieren Sie Ihr Content Repository auf AEM 6.5, um das Content Transfer Tool zu verwenden.
+* Die Systemanforderungen für das Content Transfer Tool sind AEM 6.3 + und Java™ 8. Wenn Sie eine niedrigere AEM-Version verwenden, aktualisieren Sie Ihr Content-Repository auf AEM 6.5, um das Content Transfer Tool verwenden zu können.
 
 * Java™ muss in der AEM-Umgebung konfiguriert sein, damit der Befehl `java` von der Person ausgeführt werden kann, die AEM startet.
 
@@ -65,17 +65,17 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Wenn Sie eine *Sandbox-Umgebung* verwenden, müssen Sie dafür sorgen, dass Ihre Umgebung aktuell ist bzw. auf die neueste Version aktualisiert wird. Wenn Sie eine *Produktionsumgebung* nutzen, wird diese automatisch aktualisiert.
 
-* Um eine Aufnahme zu starten, müssen Sie der lokalen AEM angehören **Administratoren** -Gruppe in der Cloud Service-Instanz, an die Sie Inhalte übertragen. Unberechtigte Benutzer können die Aufnahme nicht starten, ohne das Migrationstoken manuell angeben zu müssen.
+* Um eine Aufnahme zu starten, müssen Sie der lokalen **AEM-Admin-Gruppe** in der Cloud Service-Instanz angehören, an die Sie Inhalte übertragen. Unberechtigte Personen können die Aufnahme nicht starten, ohne das Migrations-Token manuell angeben zu müssen.
 
-* Wenn die Einstellung **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in dem Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für einen Administrator, der der **Administratoren** hinzugefügt. Der Benutzer muss in die **Administratoren** -Gruppe, um das Zugriffstoken für das Content Transfer Tool abzurufen.
+* Wenn die Einstellung **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in dem Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Admins, die der Gruppe **Admins** hinzugefügt werden. Benutzende müssen erneut zur **Admin-Gruppe** hinzugefügt werden, um das Zugriffs-Token für das Content Transfer Tool abrufen zu können.
 
-* Aufnahmen unterstützen nicht das Zusammenführen von Inhalten aus mehreren Quellen in der Zielinstanz von Cloud Service, wenn die Inhalte aus den beiden Quellen in dieselben Pfade auf dem Ziel verschoben werden. Um Cloud Service aus mehreren Quellen in eine Zielquellen-Instanz zu verschieben, stellen Sie sicher, dass sich die Inhaltspfade aus den Quellen nicht überschneiden.
+* Aufnahmen unterstützen nicht das Zusammenführen von Inhalten aus mehreren Quellen in der Zielinstanz von Cloud Service, wenn die Inhalte aus den beiden Quellen in dieselben Pfade auf dem Ziel verschoben werden. Wenn Sie Inhalte aus mehreren Quellen in eine einzige Zielinstanz von Cloud Service verschieben möchten, stellen Sie sicher, dass sich die Inhaltspfade der Quellen nicht überschneiden.
 
-* Der Extraktionsschlüssel ist 14 Tage nach seiner Erstellung oder Erneuerung gültig. Er kann jederzeit erneuert werden. Wenn der Extraktionsschlüssel abgelaufen ist, können Sie keine Extraktion durchführen.
+* Der Extraktionsschlüssel ist 14 Tage nach seiner Erstellung/Erneuerung gültig. Er kann jederzeit erneuert werden. Wenn der Extraktionsschlüssel abgelaufen ist, können Sie keine Extraktion durchführen.
 
-* Das Content Transfer Tool führt keine Inhaltsanalyse durch, bevor Inhalte von der Quellinstanz zur Zielinstanz übertragen werden. Beispielsweise unterscheidet CTT nicht zwischen veröffentlichten und unveröffentlichten Inhalten, wenn Inhalte in eine Veröffentlichungsumgebung aufgenommen werden. Alle Inhalte, die im Migrationssatz angegeben sind, werden in die gewählte Zielinstanz aufgenommen. Benutzende können einen Migrationssatz in eine Autoreninstanz oder eine Veröffentlichungsinstanz oder in beide aufnehmen. Adobe empfiehlt, beim Verschieben von Inhalten auf eine Produktionsinstanz die CTT auf der Quellautorinstanz zu installieren, um Inhalte in die Zielautorinstanz zu verschieben. Installieren Sie auf ähnliche Weise CTT auf der Quell-Veröffentlichungsinstanz, um Inhalte in die Ziel-Veröffentlichungsinstanz zu verschieben. Weitere Einzelheiten finden Sie unter [Ausführen des Content Transfer Tools auf einer Veröffentlichungsinstanz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de#running-tool).
+* Das Content Transfer Tool führt keine Inhaltsanalyse durch, bevor Inhalte von der Quellinstanz zur Zielinstanz übertragen werden. Beispielsweise unterscheidet CTT nicht zwischen veröffentlichten und unveröffentlichten Inhalten, wenn Inhalte in eine Veröffentlichungsumgebung aufgenommen werden. Alle Inhalte, die im Migrationssatz angegeben sind, werden in die gewählte Zielinstanz aufgenommen. Benutzende können einen Migrationssatz in eine Autoreninstanz oder eine Veröffentlichungsinstanz oder in beide aufnehmen. Adobe empfiehlt, beim Verschieben von Inhalten auf eine Produktionsinstanz CTT auf der Quell-Autoreninstanz zu installieren, um Inhalte auf die Ziel-Autoreninstanz zu verschieben. Installieren Sie auf ähnliche Weise CTT auf der Quell-Veröffentlichungsinstanz, um Inhalte in die Ziel-Veröffentlichungsinstanz zu verschieben. Weitere Einzelheiten finden Sie unter [Ausführen des Content Transfer Tools auf einer Veröffentlichungsinstanz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de#running-tool).
 
-* Die vom Content Transfer Tool übertragenen Benutzenden und Gruppen sind nur diejenigen, die vom Inhalt zur Erfüllung der Berechtigungen benötigt werden. Im _Extraktionsprozess_ wird alles unter `/home` in den Migrationssatz kopiert und eine Benutzerzuordnung erstellt, indem ein aus der E-Mail-Adresse jedes Benutzers bzw. jeder Benutzerin generiertes Feld hinzugefügt wird. Weitere Informationen finden Sie unter [Benutzerzuordnung und Prinzipalmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Die _Aufnahme_ Prozess kopiert alle Benutzer und Gruppen, auf die in den migrierten Inhalts-ACLs verwiesen wird. Siehe [Migrieren geschlossener Benutzergruppen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) für zusätzliche Überlegungen zu Gruppen, die in einer CUG-Richtlinie (Closed User Group, geschlossene Benutzergruppe) verwendet werden.
+* Die vom Content Transfer Tool übertragenen Benutzenden und Gruppen sind nur diejenigen, die vom Inhalt zur Erfüllung der Berechtigungen benötigt werden. Im _Extraktionsprozess_ wird alles unter `/home` in den Migrationssatz kopiert und eine Benutzerzuordnung erstellt, indem ein aus der E-Mail-Adresse jedes Benutzers bzw. jeder Benutzerin generiertes Feld hinzugefügt wird. Weitere Informationen finden Sie unter [Benutzerzuordnung und Prinzipalmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Im _Aufnahmeprozess_ werden alle Benutzenden und Gruppen, auf die in den migrierten Inhalts-ACLs verwiesen wird, kopiert. Siehe [Migrieren von geschlossenen Benutzergruppen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) für zusätzliche Überlegungen zu Gruppen, die in einer Richtlinie für geschlossene Benutzergruppen (CUG) verwendet werden.
 
 * Während der Extraktionsphase wird das Content Transfer Tool in einer aktiven AEM-Quellinstanz ausgeführt.
 
@@ -83,13 +83,13 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Bei Verwendung von `Amazon S3` oder `Azure` als Datenspeicher im Quell-AEM-System sollte der Datenspeicher so konfiguriert werden, dass die gespeicherten Blobs nicht gelöscht werden können (gesammelter Abfall). Dadurch wird die Integrität der Indexdaten sichergestellt. Wird diese Konfiguration nicht auf diese Weise vorgenommen, kann es zu fehlgeschlagenen Extraktionen kommen, da die Integrität dieser Indexdaten nicht gewährleistet ist.
 
-* Wenn Sie benutzerdefinierte Indizes verwenden, müssen Sie sicherstellen, dass Sie die benutzerdefinierten Indizes mit dem Knoten `tika` konfigurieren, bevor Sie das Content Transfer Tool ausführen. Weitere Informationen finden Sie unter [Vorbereiten der neuen Indexdefinition](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#preparing-the-new-index-definition).
+* Wenn Sie benutzerdefinierte Indizes verwenden, müssen Sie sicherstellen, dass Sie die benutzerdefinierten Indizes mit dem Knoten `tika` konfigurieren, bevor Sie das Content Transfer Tool ausführen. Weitere Informationen finden Sie unter [Vorbereiten der neuen Indexdefinition](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=de#preparing-the-new-index-definition).
 
-* Wenn Sie Auffüllungen durchführen möchten, darf sich die Inhaltsstruktur des vorhandenen Inhalts nicht von dem Zeitpunkt an ändern, zu dem die erste Extraktion erfolgt, bis zum Zeitpunkt der Auffüllextraktion. Für Inhalte, deren Struktur seit der ersten Extraktion geändert wurde, können keine Auffüllungen ausgeführt werden. Achten Sie darauf, dies während des Migrationsprozesses entsprechend einzuschränken.
+* Wenn Sie eine Auffüllung vornehmen möchten, darf sich die Inhaltsstruktur der vorhandenen Inhalte zwischen der ersten Extraktion und der Auffüllungsextraktion nicht ändern. Für Inhalte, deren Struktur seit der ersten Extraktion geändert wurde, können keine Auffüllungen ausgeführt werden. Achten Sie darauf, dies während des Migrationsprozesses entsprechend einzuschränken.
 
 * Wenn Sie beabsichtigen, Versionen als Teil eines Migrationssatzes einzubeziehen und Auffüllungen mit `wipe=false` durchzuführen, müssen Sie aufgrund einer aktuellen Einschränkung im Content Transfer Tool die Versionsbereinigung deaktivieren. Wenn Sie es vorziehen, die Versionsbereinigung aktiviert zu lassen und in einen Migrationssatz aufzufüllen, dann müssen Sie die Aufnahme als `wipe=true` durchführen.
 
-* Ein Migrationssatz läuft nach einer längeren Inaktivitätsdauer ab, nach der seine Daten nicht mehr verfügbar sind. Weitere Informationen finden Sie unter [Ablauf von Migrationssätzen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de#migration-set-expiry).
+* Ein Migrationssatz läuft nach längerer Inaktivität ab. Danach sind die zugehörigen Daten nicht mehr verfügbar. Weitere Informationen finden Sie unter [Ablauf von Migrationssätzen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de#migration-set-expiry).
 
 ## Wie geht es weiter {#whats-next}
 

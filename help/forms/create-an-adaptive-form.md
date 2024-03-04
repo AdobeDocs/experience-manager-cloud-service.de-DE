@@ -1,7 +1,7 @@
 ---
 title: Erstellen eines adaptiven Formulars
 description: Erfahren Sie mit unserem schrittweisen Tutorial, wie Sie Mobile-responsive adaptive Formulare erstellen. Diese Formulare passen sich geräteübergreifend nahtlos an und sorgen so für ein reibungsloses Erlebnis.
-keywords: Adaptive Forms, Responsive Forms, HTML5 Forms
+keywords: Adaptive Formulare, responsive Formulare, HTML5-Formulare
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2673'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -57,9 +57,9 @@ Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 
 1. Melden Sie sich bei Ihrer [!DNL Experience Manager Forms]-Autoreninstanz an. Dabei kann es sich um eine Cloud-Instanz oder eine lokale Entwicklungsinstanz handeln.
 
-1. Geben Sie Ihre Anmeldedaten auf der Experience Manager-Anmeldeseite ein. Nachdem Sie angemeldet sind, wählen Sie links oben die Option **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms und Dokumente]**.
+1. Geben Sie Ihre Anmeldedaten auf der Experience Manager-Anmeldeseite ein. Wenn Sie sich angemeldet haben, wählen Sie in der oberen linken Ecke **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 
-1. Auswählen **[!UICONTROL Erstellen]**  > **[!UICONTROL Adaptives Forms]**. Der Assistent wird geöffnet. Wählen Sie auf der Registerkarte „Quelle“ eine Vorlage aus:
+1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Adaptive Formulare]**. Der Assistent wird geöffnet. Wählen Sie auf der Registerkarte „Quelle“ eine Vorlage aus:
 
    ![Kernkomponentenvorlage](/help/forms/assets/core-components-template.png){width="100%" align="center"}
 
@@ -105,11 +105,11 @@ Jetzt können Sie die [Kernkomponenten für adaptive Formulare](https://experien
 
 ## Bearbeiten der Formularmodelleigenschaften eines adaptiven Formulars {#edit-form-model-core-components-based-adaptive-forms}
 
-1. Wählen Sie das adaptive Formular aus und wählen Sie ![Seiteninformationen](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Eigenschaften öffnen]**. Die Seite mit den Formulareigenschaften wird geöffnet.
+1. Wählen Sie das adaptive Formular aus und wählen Sie dann ![Seiteninformationen](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Eigenschaften öffnen]**. Die Seite mit den Formulareigenschaften wird geöffnet.
 
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie ein Formularmodell aus. Wenn das adaptive Formular ohne Formularmodell ist, können Sie entweder ein JSON-Schema oder ein Formulardatenmodell auswählen. Wenn das adaptive Formular jedoch bereits auf einem Formularmodell basiert, haben Sie die Möglichkeit, zu einem anderen Formularmodell desselben Typs zu wechseln. Wenn das Formular beispielsweise ein JSON-Schema verwendet, können Sie einfach zu einem anderen JSON-Schema wechseln. Wenn das Formular ein Formulardatenmodell verwendet, können Sie auch zu einem anderen Formulardatenmodell wechseln.
 
-1. Auswählen **[!UICONTROL Speichern]** , um die Eigenschaften zu speichern.
+1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Eigenschaften zu speichern.
 
 >[!TAB Erstellen adaptiver Formulare mit Foundation-Komponenten]
 
@@ -132,9 +132,9 @@ Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 
 1. Geben Sie Ihre Anmeldedaten auf der Experience Manager-Anmeldeseite ein.
 
-   Nachdem Sie angemeldet sind, wählen Sie links oben die Option **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms und Dokumente]**.
+   Wenn Sie sich angemeldet haben, wählen Sie in der linken oberen Ecke **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 
-1. Auswählen **[!UICONTROL Erstellen]**  > **[!UICONTROL Adaptives Forms]**. Der Assistent wird geöffnet.
+1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Adaptive Formulare]**. Der Assistent wird geöffnet.
 1. Wählen Sie auf der Registerkarte „Quelle“ eine Vorlage aus:
 
    * Wenn Sie eine bearbeitbare Vorlage auswählen, werden ein Design und eine Sendeaktion, die in der Vorlage angegeben sind, automatisch ausgewählt und die **[!UICONTROL Erstellen]**-Schaltfläche wird aktiviert. Sie können zu den Registerkarten **[!UICONTROL Stil]** oder **[!UICONTROL Übermittlung]** gehen, um ein anderes Design oder eine andere Übermittlungsaktion auszuwählen. Wenn in der ausgewählten bearbeitbaren Vorlage kein Design angegeben wird, bleibt die Schaltfläche „Erstellen“ deaktiviert. Sie können zur Registerkarte **[!UICONTROL Stile]** gehen, um ein Design manuell auszuwählen.
@@ -235,13 +235,13 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 Sie können das Formularmodell für ein adaptives Formular (JSON-basiertes oder Formulardatenmodell) ändern. Sie können nicht zwischen Formularmodellen wechseln.
 
-1. Wählen Sie das adaptive Formular aus und wählen Sie die **Eigenschaften** Symbol.
+1. Wählen Sie das adaptive Formular aus und wählen Sie dann das Symbol **Eigenschaften**.
 1. Öffnen Sie die Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie eine der folgenden Vorgehensweisen.
 
    * Wenn das adaptive Formular nicht auf einem Formularmodell basiert, können Sie ein Formularmodell und ein entsprechendes XML- oder JSON-Schema oder ein Formulardatenmodell auswählen.<!-- a form template, -->
    * Bei einem adaptiven Formular, das auf einem Formularmodell basiert, können Sie ein anderes <!-- form template, --> XML-Schema, JSON-Schema oder Formulardatenmodell für dasselbe Formularmodell wählen.
 
-1. Auswählen **[!UICONTROL Speichern]** , um die Eigenschaften zu speichern.
+1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Eigenschaften zu speichern.
 
 Sie können die Eigenschaften des Formularmodells auch im Editor für adaptive Formulare oder im Vorlagen-Editor für adaptive Formulare ändern.
 
@@ -251,7 +251,7 @@ Sie können die Eigenschaften des Formularmodells auch im Editor für adaptive F
 
    * Wenn das adaptive Formular nicht auf einem Formularmodell basiert, können Sie ein Formularmodell und ein entsprechendes XML- oder JSON-Schema für eine <!-- a form template, --> oder ein Formulardatenmodell auswählen.
    * Wenn das adaptive Formular auf einem Formularmodell basiert, können Sie das Formularmodell nicht ändern. Sie können ggf. ein anderes XML- oder JSON-Schema für eine <!-- form template, --> oder ein Formulardatenmodell für dasselbe Formularmodell wählen.
-1. Auswählen ![Speichern](/help/forms/assets/check-button.png) , um die Eigenschaften zu speichern.
+1. Wählen Sie ![Speichern](/help/forms/assets/check-button.png) aus, um die Eigenschaften zu speichern.
 
 ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png){width="100%" align="center"}
 

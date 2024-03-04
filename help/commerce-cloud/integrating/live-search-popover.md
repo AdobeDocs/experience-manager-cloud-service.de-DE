@@ -1,26 +1,26 @@
 ---
-title: '''[!DNL Live Search] Popover-CIF'
-description: Aktivieren von CIF Komponenten [!DNL Live Search] Popover-Komponente auf einer AEM Site
-source-git-commit: bf0dadb0300c56bd8fe46ea7318146d3b56e6e83
-workflow-type: tm+mt
+title: „[!DNL Live Search] Popover-CIF-Komponente“
+description: Verwenden von CIF-Komponenten zum Aktivieren von [!DNL Live Search] -Popover-Komponenten auf einer AEM-Site
+exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
+source-git-commit: 6da9ade59139b3eb6c103635ae72b8d71ef9a7fc
+workflow-type: ht
 source-wordcount: '175'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# [!DNL Live Search]-Popover-CIF-Komponente {#live-search-popover}
 
-# [!DNL Live Search] Popover CIF Component {#live-search-popover}
-
-Die [!DNL Live Search] Popover ist das Element, das die [!DNL Live Search] Ergebnisse bei der Eingabe im Suchfeld.
-In diesem Thema wird beschrieben, wie Sie diese Komponente in Ihre AEM integrieren.
+Das [!DNL Live Search]-Popover ist das Element, das die [!DNL Live Search]-Ergebnisse während der Eingabe im Suchfeld enthält.
+In diesem Thema wird beschrieben, wie Sie diese Komponente in Ihre AEM-Site integrieren.
 
 ## Dateistruktur {#file-strucure}
 
-Um die CIF zu aktivieren, müssen die Dateien bearbeitet und erstellt werden.
+Um die CIF-Komponente zu aktivieren, müssen Dateien bearbeitet und erstellt werden.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/.content.xml
 
-  Erstellen Sie die `.content.xml` Datei:
+  Erstellen Sie die Datei `.content.xml`:
 
   ```xml
   <?xml version="1.0" encoding="UTF-8"?>
@@ -33,7 +33,7 @@ Um die CIF zu aktivieren, müssen die Dateien bearbeitet und erstellt werden.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/css.txt
 
-  Erstellen Sie die `css.txt` Datei:
+  Erstellen Sie die Datei `css.txt`:
 
   ```text
   #base=css
@@ -43,7 +43,7 @@ Um die CIF zu aktivieren, müssen die Dateien bearbeitet und erstellt werden.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/css/searchbar.css
 
-  Erstellen Sie die `searchbar.css` Datei:
+  Erstellen Sie die Datei `searchbar.css`:
 
 
   ```css
@@ -138,7 +138,7 @@ Um die CIF zu aktivieren, müssen die Dateien bearbeitet und erstellt werden.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js.txt
 
-  Erstellen Sie die `js.txt` Datei:
+  Erstellen Sie die Datei `js.txt`:
 
   ```text
   js/searchbar.js
@@ -146,7 +146,7 @@ Um die CIF zu aktivieren, müssen die Dateien bearbeitet und erstellt werden.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js/searchbar.js
 
-  Erstellen Sie die `searchbar.js` Datei:
+  Erstellen Sie die Datei `searchbar.js`:
 
   ```javascript
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -492,7 +492,7 @@ Um die CIF zu aktivieren, müssen die Dateien bearbeitet und erstellt werden.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/searchbar.html
 
-  Erstellen Sie die `searchbar.html` Datei:
+  Erstellen Sie die Datei `searchbar.html`:
 
   ```html
   <!-- Livesearch popover -->
@@ -554,7 +554,7 @@ Um die CIF zu aktivieren, müssen die Dateien bearbeitet und erstellt werden.
 
 * ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json
 
-  Erstellen Sie die `com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json` Datei:
+  Erstellen Sie die Datei `com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json`:
 
   ```json
   {
@@ -568,7 +568,7 @@ Um die CIF zu aktivieren, müssen die Dateien bearbeitet und erstellt werden.
 
    * ui.tests/test-module/specs/venia/searchbar.js
 
-     Bearbeiten Sie die `searchbar.js` Datei, Zeile 19-20, ändern `describe` nach `describe.skip`:
+     Bearbeiten Sie die Datei `searchbar.js`, Zeile 19–20, und ändern Sie `describe` in `describe.skip`:
 
      ```javascript
      describe.skip('Venia Searchbar Component', () => {

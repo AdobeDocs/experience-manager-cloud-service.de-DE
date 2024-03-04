@@ -3,9 +3,9 @@ title: Grundlegendes zur CMS-Headless-Entwicklung
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Headless-Technologie und darüber, warum Sie sie verwenden sollten.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1626'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Benutzer erwarten Interaktionen, unabhängig von der Plattform oder dem Kontaktp
 
 Der Kopf (engl. „head“) eines Systems ist im Allgemeinen der Ausgabe-Renderer dieses Systems, in der Regel in Form einer GUI oder einer anderen grafischen Ausgabe.
 
-Ein Headless-Server beispielsweise sitzt wahrscheinlich in einem Rack irgendwo in einem Serverraum und hat keinen Monitor angeschlossen. Um darauf zuzugreifen, müssen Sie sich per Fernzugriff damit verbinden. In diesem Fall ist der Monitor der Kopf, da er das Rendering der Ausgabe des Servers übernimmt. Als Verbraucher des Services stellen Sie Ihren eigenen Kopf (den Monitor) bereit, wenn Sie per Fernzugriff eine Verbindung mit ihm herstellen.
+Ein Headless-Server beispielsweise steht wahrscheinlich in einem Rack irgendwo in einem Server-Raum und hat keinen angeschlossenen Monitor. Um darauf zuzugreifen, müssen Sie sich per Fernzugriff damit verbinden. In diesem Fall ist der Monitor der Kopf, da er das Rendering der Ausgabe des Servers übernimmt. Als Verbraucher des Services stellen Sie Ihren eigenen Kopf (den Monitor) bereit, wenn Sie per Fernzugriff eine Verbindung mit ihm herstellen.
 
 Wenn wir über ein Headless-CMS sprechen, verwaltet das CMS die Inhalte und stellt sie in der Folge für die Verbraucher bereit. Indem ein Headless-CMS jedoch nur die **Inhalte** standardisiert bereitstellt, lässt es das endgültige Ausgabe-Rendering aus, sodass die **Präsentation** des Inhalts dem verbrauchenden Service überlassen bleibt.
 
@@ -68,7 +68,7 @@ Das Auslassen des Kopfes vereinfacht das CMS, indem es die Komplexität beseitig
 
 ## Entkopplung {#decoupling}
 
-Eine Headless-Bereitstellung ist möglich, indem eine Reihe robuster und flexibler Anwendungsprogrammierschnittstellen (APIs) verfügbar gemacht werden, in denen all Ihre Erlebnisse ausgewählt werden können. Die API dient als gemeinsame Sprache für die Services, bindet sie auf Inhaltsebene durch standardisierte Inhaltsbereitstellung zusammen, ermöglicht ihnen jedoch die Flexibilität, eigene Lösungen zu implementieren.
+Die Headless-Bereitstellung wird möglich, indem eine Reihe robuster und flexibler Anwendungs-Programmierschnittstellen (APIs) zur Verfügung gestellt wird, auf die alle Ihre Erlebnisse zugreifen können. Die API dient als gemeinsame Sprache für die Services, bindet sie auf Inhaltsebene durch standardisierte Inhaltsbereitstellung zusammen, ermöglicht ihnen jedoch die Flexibilität, eigene Lösungen zu implementieren.
 
 Headless ist ein Beispiel für die Entkopplung Ihrer Inhalte von ihrer Präsentation. Oder in einem allgemeineren Sinne, die Entkopplung des Frontend vom Backend Ihres Service-Stacks. Bei einem Headless-Setup wird das Präsentationssystem (der Kopf) vom Content-Management (dem Schwanz) entkoppelt. Die beiden interagieren nur über API-Aufrufe.
 

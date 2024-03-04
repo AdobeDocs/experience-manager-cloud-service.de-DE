@@ -1,14 +1,15 @@
 ---
-description: Die Sidekick-Bibliothek ist eine Erweiterung für die AEM Sidekick, die Entwicklern die Erstellung benutzeroberflächengesteuerter Tools für Inhaltsautoren ermöglicht. Es enthält ein integriertes Baustein-Plug-in, das Autoren eine Liste aller Bausteine intuitiv anzeigen kann, sodass Autoren sich nicht mehr jede Variante eines Bausteins merken oder suchen müssen. Entwickler können auch eigene Plugins für die Sidekick-Bibliothek schreiben.
+description: Die Sidekick-Bibliothek ist eine Erweiterung für die AEM Sidekick, die Entwicklerinnen und Entwicklern die Erstellung UI-gesteuerter Tools für Inhaltsautorinnen und -autoren ermöglicht. Sie enthält ein integriertes Baustein-Plug-in, das Autorinnen und Autoren eine Liste aller Bausteine intuitiv anzeigen kann, sodass Autorinnen und Autoren sich nicht mehr jede Variante eines Bausteins merken oder suchen müssen. Entwicklerinnen und Entwickler können auch eigene Plug-ins für die Sidekick-Bibliothek schreiben.
 title: Was ist die Sidekick-Bibliothek?
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 013f67b7-9841-48dd-a9e5-9971ba75d515
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '76'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Was ist die Sidekick-Bibliothek?
+# Was ist die Sidekick-Bibliothek? 
 
 {{$include 88484cc5-cc46-4096-9eae-f5dc47bd4004}}

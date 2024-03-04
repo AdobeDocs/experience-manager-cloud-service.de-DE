@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2414'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Die neue Rollout-Konfiguration steht dann zur Verfügung, sobald Sie die Rollout
 
 Sie können mehrere OSGi-Services konfigurieren, die die entsprechenden Synchronisierungsaktionen unterstützen, sodass sie sich nicht auf bestimmte Knotentypen und Eigenschaften auswirken. So sollten beispielsweise viele Eigenschaften und Unterknoten, die mit der internen Funktionstüchtigkeit von AEM zusammenhängen, nicht in einer Live Copy enthalten sein. Nur Inhalte, die für Benutzer der Seite relevant sind, sollten kopiert werden.
 
-Beim Arbeiten mit AEM gibt es mehrere Methoden zum Verwalten der Konfigurationseinstellungen für diese Dienste. Siehe [Konfigurieren von OSGi](/help/implementing/deploying/configuring-osgi.md) für weitere Details und empfohlene Vorgehensweisen.
+In AEM können Sie die Konfigurationseinstellungen für solche Services auf unterschiedliche Weise verwalten. Weitere Details und Informationen zur empfohlenen Vorgehensweise finden Sie unter [Konfigurieren von OSGi](/help/implementing/deploying/configuring-osgi.md).
 
 In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, von denen Sie Knoten ausschließen können. Die Tabelle enthält die Namen der Dienste, die mit der Web-Konsole konfiguriert werden sollen, und die PID für die Konfiguration mit einem Repository-Knoten.
 
@@ -134,7 +134,7 @@ Wenn Sie beispielsweise möchten, dass die Seite **Title** bei den Änderungen e
 
 Sie können mehrere OSGi-Services konfigurieren, die die entsprechenden Synchronisierungsaktionen im Zusammenhang mit der Aktualisierung von Verweisen unterstützen.
 
-Beim Arbeiten mit AEM gibt es mehrere Methoden zum Verwalten der Konfigurationseinstellungen für diese Dienste. Siehe [Konfigurieren von OSGi](/help/implementing/deploying/configuring-osgi.md) für weitere Details und empfohlene Vorgehensweisen.
+In AEM können Sie die Konfigurationseinstellungen für solche Services auf unterschiedliche Weise verwalten. Weitere Details und Informationen zur empfohlenen Vorgehensweise finden Sie unter [Konfigurieren von OSGi](/help/implementing/deploying/configuring-osgi.md).
 
 In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, für die Sie die Referenz-Aktualisierung angeben können. Die Tabelle enthält die Namen der Dienste, die mit der Web-Konsole konfiguriert werden sollen, und die PID für die Konfiguration mit einem Repository-Knoten.
 

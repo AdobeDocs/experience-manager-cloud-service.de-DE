@@ -2,9 +2,9 @@
 title: Rollen und Zuständigkeiten
 description: Rollen und Zuständigkeiten
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '484'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 90%
 >id="aemcloud_raci"
 >title="Rollen und Zuständigkeiten"
 >abstract="Adobe bietet eine Reihe von Services rund um Bereitstellung, Entwicklung, Staging und Produktion von Experience Manager as a Cloud Service. Damit die Entwicklung und Bereitstellung der Lösung so effizient wie möglich ablaufen kann, ist es wichtig, dass Kunden und Customizer ihre Rollen verstehen und erfüllen, wie hier beschrieben."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=de" text="Die richtigen Mitarbeiter, die richtigen Rollen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=de" text="Auswählen der richtigen Personen und der richtigen Rollen"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=de" text="Ausrichten von KPIs"
 
 <br></br>
@@ -60,6 +60,6 @@ Adobe bietet eine Reihe von Services rund um Bereitstellung, Entwicklung, Stagin
 
 >[!NOTE]
 >
-> Die obigen Angaben setzen voraus, dass der Premier Support enthalten ist. Die Tabelle kann durch Vereinbarung zwischen dem Kunden und dem Customizer geändert werden. Adobe empfiehlt, dass Sie mit Ihren Adobe Sales- und Personalisierungsteams zusammenarbeiten, wenn Sie eine der oben genannten Fragen klären möchten.
-> Kunden, die keine Anpassung selbst durchführen möchten, sollten die Services des Adobe Professional Services-Teams oder eines Experience Manager-Partners in Anspruch nehmen.
->Um ein hohes Qualitätsniveau aufrechtzuerhalten, verlangt Adobe, dass Partner, die an Entwicklungsprojekten für Experience Manager as a Cloud Service beteiligt sind, mit mindestens einer Person besetzt sind, die die Advanced Developer-Zertifizierung für Experience Manager-Software erhalten hat.
+> Die obigen Angaben setzen voraus, dass der Premier Support enthalten ist. Die Tabelle kann durch Vereinbarung zwischen dem Kunden und dem Customizer geändert werden. Adobe empfiehlt Ihnen, mit dem Adobe-Vertrieb und Ihren Anpassungs-Teams zusammenzuarbeiten, wenn Sie eine Klärung zu einem der oben genannten Punkte benötigen.
+> Kundinnen und Kunden, die die Anpassung nicht selbst durchführen möchten, sollten die Dienste des Professional Services-Teams von Adobe oder eines Experience Manager-Partners in Anspruch nehmen.
+>Um ein hohes Qualitätsniveau aufrechtzuerhalten, verlangt Adobe, dass es bei Partnern, die an Entwicklungsprojekten für Experience Manager as a Cloud Service beteiligt sind, mindestens eine Person gibt, die die Advanced Developer-Zertifizierung für Experience Manager-Software erhalten hat.

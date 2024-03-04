@@ -1,13 +1,13 @@
 ---
 title: Wie können benutzerdefinierte Schriftarten in AEM Forms verwendet werden?
-description: Erfahren Sie, wie Sie benutzerdefinierte Schriftarten zu einer as a Cloud Service Forms-Umgebung hinzufügen.
+description: Erfahren Sie, wie Sie benutzerdefinierte Schriftarten zu einer Forms as a Cloud Service-Umgebung hinzufügen.
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
 feature: Adaptive Forms
 role: Admin, User
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '467'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ So fügen Sie benutzerdefinierte Schriftarten zu Ihrer Cloud Service-Umgebung hi
    </plugin>
    ```
 
-1. Fügen Sie den Schriftartenordner zu `<modules>` hinzu, das in der POM-Datei aufgeführt ist. Beispiel:
+1. Fügen Sie den Schriftartenordner zu `<modules>` hinzu, das in der POM-Datei aufgeführt ist. Zum Beispiel:
 
    ```xml
    <modules>

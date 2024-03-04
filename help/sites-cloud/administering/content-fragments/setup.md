@@ -1,21 +1,21 @@
 ---
-title: Inhaltsfragmente - Einrichtung
-description: Erfahren Sie, wie Sie Inhaltsfragmente und GraphQL für die Verwendung mit AEM Headless-Bereitstellungsfunktionen und Seitenbearbeitung aktivieren.
+title: Inhaltsfragmente – Einrichtung
+description: Erfahren Sie, wie Sie Funktionen für Inhaltsfragmente und GraphQL für die Verwendung mit AEM Headless-Bereitstellungsfunktionen und Seitenbearbeitung aktivieren.
 feature: Content Fragments
 role: Developer, Architect
 exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
 source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '392'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
-# Inhaltsfragmente - Einrichtung {#content-fragments-setup}
+# Inhaltsfragmente – Einrichtung {#content-fragments-setup}
 
-Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service ermöglichen die Vorbereitung von Inhalten für die Verwendung an mehreren Orten und über mehrere Kanäle. Dies eignet sich ideal für Headless-Bereitstellung und Seitenbearbeitung.
+Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service ermöglichen die Vorbereitung von Inhalten für die Verwendung an mehreren Orten und über mehrere Kanäle. Dies ist ideal für die Headless-Bereitstellung und die Seitenbearbeitung.
 
-Um Ihre Instanz für die Inhaltsfragmentfunktionalität zu aktivieren, müssen Sie Folgendes aktivieren:
+Um Ihre Instanz für die Inhaltsfragmentfunktionen zu aktivieren, müssen Sie Folgendes aktivieren:
 
 * **Inhaltsfragmentmodelle** – obligatorisch
 
@@ -28,18 +28,18 @@ Um Ihre Instanz für die Inhaltsfragmentfunktionalität zu aktivieren, müssen S
 
 * **GraphQL: Beständige Abfragen** – optional
 
-Das Einrichten der Instanz erfolgt:
+Das Einrichten Ihrer Instanz ist abgeschlossen:
 
-* von [Aktivieren der Funktionalität im Konfigurationsbrowser](#enable-content-fragment-functionality-configuration-browser)
-* then [Anwenden der Konfiguration auf Ihre einzelnen Assets-Ordner](#apply-the-configuration-to-your-folder)
+* durch das [Aktivieren der Funktionen im Konfigurations-Browser](#enable-content-fragment-functionality-configuration-browser)
+* dann das [Anwenden der Konfiguration auf Ihre einzelnen Assets-Ordner](#apply-the-configuration-to-your-folder)
 
-## Aktivieren der Funktion &quot;Inhaltsfragment&quot;im Konfigurationsbrowser {#enable-content-fragment-functionality-configuration-browser}
+## Aktivieren von Inhaltsfragmentfunktionen im Konfigurations-Browser {#enable-content-fragment-functionality-configuration-browser}
 
-Um die Funktion &quot;Inhaltsfragment&quot;von Inhaltsfragmentmodellen und von GraphQL beständigen Abfragen zu verwenden, müssen Sie **must** sie zunächst über die **Konfigurationsbrowser**:
+Um die Inhaltsfragmentfunktionen von Inhaltsfragmentmodellen und von GraphQL beständigen Abfragen zu verwenden, **müssen** Sie sie zunächst über den **Konfigurations-Browser** aktivieren:
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [Konfigurationsbrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Weitere Informationen finden Sie unter [Konfigurations-Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >
@@ -58,8 +58,8 @@ Um die Funktion &quot;Inhaltsfragment&quot;von Inhaltsfragmentmodellen und von G
 1. Öffnen Sie über **Erstellen** das Dialogfeld, in dem Sie:
 
    1. einen **Titel** angeben,
-   1. Bei Erstellung wird die **Name** wird zum Knotennamen im Repository.
-Sie können einen Namen eingeben. Wenn Sie das Feld leer lassen, wird es automatisch basierend auf dem Titel generiert und dann entsprechend angepasst. [AEM Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md); Sie können das Ergebnis bei Bedarf anpassen.
+   1. Bei der Erstellung wird der **Name** zum Knotennamen im Repository
+Sie können einen Namen eingeben. Wenn Sie das Feld leer lassen, wird automatisch ein Name basierend auf dem Titel generiert und dann entsprechend der [AEM-Namenskonventionen](/help/implementing/developing/introduction/naming-conventions.md) angepasst. Sie können das Ergebnis bei Bedarf anpassen.
    1. Um ihre Verwendung zu aktivieren, wählen Sie
       * **Inhaltsfragmentmodelle**
       * **GraphQL – Persistente Abfragen**
@@ -70,8 +70,8 @@ Sie können einen Namen eingeben. Wenn Sie das Feld leer lassen, wird es automat
 
 ## Wenden Sie die Konfiguration auf Ihren Ordner an {#apply-the-configuration-to-your-folder}
 
-Wann die Konfiguration **global** für die Funktion &quot;Inhaltsfragment&quot;aktiviert ist, gilt sie dann für jeden Ordner &quot;Assets&quot;, auf den über die **Assets** Konsole.
+Wenn die Konfiguration **Global** für die Inhaltsfragmentfunktionen aktiviert ist, gilt dies für alle Assets-Ordner, die über die **Assets**-Konsole zugänglich sind.
 
-Um andere Konfigurationen (also keine globalen) mit einem vergleichbaren Asset-Ordner zu verwenden, müssen Sie die Verbindung definieren. Wählen Sie dazu die entsprechende **Konfiguration** im **Cloud Service** des **Ordnereigenschaften** des entsprechenden Ordners.
+Um eine andere Konfiguration (d. h. nicht „Global“) mit einem vergleichbaren Assets-Ordner zu verwenden, müssen Sie die Verbindung definieren. Wählen Sie dazu die entsprechende **Konfiguration** in der Registerkarte **Cloud-Services** der **Ordnereigenschaften** des entsprechenden Ordners aus.
 
 ![Konfiguration anwenden](assets/cf-setup-apply-conf.png)

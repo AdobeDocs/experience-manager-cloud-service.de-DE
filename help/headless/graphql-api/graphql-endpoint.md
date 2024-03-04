@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie GraphQL-Endpunkte in Adobe Experience Manager
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '512'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -91,4 +91,4 @@ Wählen Sie den neuen Endpunkt und **Veröffentlichen** aus, um ihn in allen Umg
 >
 >Dies kann – insbesondere bei Veröffentlichungsinstanzen – Sicherheitsbedenken aufwerfen, da GraphQL-Abfragen eine hohe Server-Belastung verursachen können.
 >
->Einrichten [Für Ihren Anwendungsfall geeignete ACLs](/help/headless/security/permissions.md) auf dem -Endpunkt.
+>Richten Sie am Endpunkt [für Ihren Anwendungsfall geeignete ACLs](/help/headless/security/permissions.md) ein.

@@ -3,9 +3,9 @@ title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud Service kennen und erfahren Sie, worin sich dieser Dienst von AEM vor Ort und AEM in AMS unterscheidet.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2745'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Der Status darf nicht im Speicher gehalten werden, sondern muss im Repository ve
 
 ## Status im Dateisystem {#state-on-the-filesystem}
 
-Verwenden Sie AEM as a Cloud Service nicht das Dateisystem der Instanz. Der Datenträger ist temporär und wird verworfen, wenn Instanzen recycelt werden. Eine beschränkte Nutzung des Dateisystems für die temporäre Datenspeicherung im Zusammenhang mit der Verarbeitung einzelner Anfragen ist möglich, sollte aber nicht für riesige Dateien missbraucht werden. Dies liegt daran, dass sich dies negativ auf das Ressourcennutzungskontingent auswirken und zu Datenträgerbeschränkungen führen kann.
+Verwenden Sie das Dateisystem der Instanz nicht in AEM as a Cloud Service. Der Datenträger ist temporär und wird verworfen, wenn Instanzen recycelt werden. Eine beschränkte Nutzung des Dateisystems für die temporäre Datenspeicherung im Zusammenhang mit der Verarbeitung einzelner Anfragen ist möglich, sollte aber nicht für riesige Dateien missbraucht werden. Dies liegt daran, dass sich dies negativ auf das Ressourcennutzungskontingent auswirken und zu Datenträgerbeschränkungen führen kann.
 
 Wenn beispielsweise die Nutzung des Dateisystems nicht unterstützt wird, sollte die Veröffentlichungsebene sicherstellen, dass alle Daten, die beibehalten werden müssen, zur längeren Datenspeicherung an einen externen Dienst gesendet werden.
 
@@ -47,7 +47,7 @@ Als Hintergrundaufgaben ausgeführter Code muss davon ausgehen, dass die Instanz
 
 Um die Probleme zu minimieren, sollten Aufträge mit langer Laufzeit nach Möglichkeit vermieden und zumindest wieder aufgenommen werden können. Verwenden Sie für die Ausführung solcher Aufträge Sling-Aufträge, die eine Garantie für mindestens einmaliges Ausführen haben und daher, falls sie unterbrochen werden, so schnell wie möglich wieder ausgeführt werden. Aber sie sollten wahrscheinlich nicht wieder von vorne anfangen. Für die Planung solcher Aufträge ist es am besten, die Planung von [Sling-Aufträgen](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) zu verwenden, da dies wiederum die mindestens einmalige Ausführung garantiert.
 
-Verwenden Sie die Sling Commons Scheduler nicht zur Planung, da die Ausführung nicht garantiert werden kann. Es ist nur wahrscheinlicher, dass er eingeplant wird.
+Verwenden Sie für die Planung nicht den Sling Commons Scheduler, da die Ausführung nicht garantiert werden kann. Es ist nur wahrscheinlicher, dass er eingeplant wird.
 
 In ähnlicher Weise kann nicht garantiert werden, dass alles, was asynchron geschieht, wie z. B. die Reaktion auf Beobachtungsereignisse (JCR-Ereignisse oder Sling-Ressourcenereignisse), ausgeführt wird. Daher sollte man bei der Verwendung vorsichtig sein. Dies gilt bereits jetzt für AEM-Bereitstellungen.
 
@@ -140,7 +140,7 @@ Legen Sie beispielsweise `/apps/<example>/config/org.apache.sling.commons.log.Lo
 
 Lassen Sie die DEBUG-Protokollebene nicht länger als notwendig aktiviert, da hierdurch zahlreiche Protokolleinträge generiert werden.
 
-Mithilfe des OSGi-Konfigurations-Targetings im Ausführungsmodus können diskrete Protokollebenen für die verschiedenen AEM-Umgebungen festgelegt werden, wenn es wünschenswert ist, während der Entwicklung immer bei `DEBUG` zu protokollieren. Beispiel:
+Mithilfe des OSGi-Konfigurations-Targetings im Ausführungsmodus können diskrete Protokollebenen für die verschiedenen AEM-Umgebungen festgelegt werden, wenn es wünschenswert ist, während der Entwicklung immer bei `DEBUG` zu protokollieren. Zum Beispiel:
 
 | Umgebung | Speicherort der OSGi-Konfiguration nach Ausführungsmodus | `org.apache.sling.commons.log.level` Eigenschaftswert |
 | - | - | - |
@@ -148,7 +148,7 @@ Mithilfe des OSGi-Konfigurations-Targetings im Ausführungsmodus können diskret
 | Staging | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN |
 | Produktion | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERROR |
 
-Eine Zeile in der Debugdatei beginnt gewöhnlich mit DEBUG, gefolgt von der Angabe der Protokollebene, der Aktion des Installationsprogramms und der Protokollmeldung. Beispiel:
+Eine Zeile in der Debugdatei beginnt gewöhnlich mit DEBUG, gefolgt von der Angabe der Protokollebene, der Aktion des Installationsprogramms und der Protokollmeldung. Zum Beispiel:
 
 ```text
 DEBUG 3 WebApp Panel: WebApp successfully deployed
@@ -172,23 +172,23 @@ Thread-Dumps in Cloud-Umgebungen werden laufend gesammelt, können aber derzeit 
 
 Für die lokale Entwicklung haben Entwickler uneingeschränkten Zugriff auf CRXDE Lite (`/crx/de`) und die AEM Web-Konsole (`/system/console`).
 
-Bei der lokalen Entwicklung (mit dem SDK), `/apps` und `/libs` kann direkt in geschrieben werden, was sich von Cloud-Umgebungen unterscheidet, in denen diese Ordner der obersten Ebene unveränderlich sind.
+Bei der lokalen Entwicklung (mit dem SDK) kann direkt in `/apps` und `/libs` geschrieben werden, was sich von Cloud-Umgebungen unterscheidet, in denen diese Ordner der obersten Ebene unveränderlich sind.
 
 ### Entwicklungs-Tools für AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
 >[!NOTE]
->Die AEM as a Cloud Service Developer Console sollte nicht mit der gleichnamigen [*Adobe Developer-Konsole*](https://developer.adobe.com/developer-console/).
+>Die AEM as a Cloud Service Developer Console sollte nicht mit der ähnlich benannten [*Adobe Developer Console*](https://developer.adobe.com/developer-console/) verwechselt werden.
 >
 
 Kunden können in der Entwicklungsumgebung der Autorenebene auf CRXDE Lite zugreifen, jedoch nicht in der Staging- oder Produktionsumgebung. Das unveränderliche Repository (`/libs`, `/apps`) kann zur Laufzeit nicht in beschrieben werden. Ein entsprechender Versuch führt zu Fehlern.
 
-Stattdessen kann der Repository-Browser über die AEM as a Cloud Service Developer Console gestartet werden, die eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen auf der Ebene der Autoren-, Veröffentlichungs- und Vorschauen bereitstellt. Mehr über den Repository-Browser erfahren Sie [hier](/help/implementing/developing/tools/repository-browser.md).
+Stattdessen kann der Repository-Browser von der AEM as a Cloud Service Developer Console aus gestartet werden und bietet eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen auf den Ebenen „Autor“, „Veröffentlichung“ und „Vorschau“. Mehr über den Repository-Browser erfahren Sie [hier](/help/implementing/developing/tools/repository-browser.md).
 
-Eine Reihe von Tools zum Debugging AEM as a Cloud Service Entwicklungsumgebungen finden Sie in der AEM as a Cloud Service Entwicklerkonsole für RDE-, Entwicklungs-, Staging- und Produktionsumgebungen. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungs-Service-URLs wie folgt festgelegt werden:
+Eine Reihe von Tools zum Debuggen von AEM as a Cloud Service-Entwicklungsumgebungen sind in der AEM as a Cloud Service Developer Console für RDE-, Entwicklungs-, Staging- und Produktionsumgebungen verfügbar. Die URL kann durch Anpassen der Author- und Publish-Service-URLs wie folgt festgelegt werden:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-Als Kurzbefehl kann der folgende Cloud Manager-CLI-Befehl verwendet werden, um die AEM as a Cloud Service Developer Console basierend auf einem Umgebungsparameter zu starten, der unten beschrieben wird:
+Als Abkürzung kann der folgende Cloud Manager CLI-Befehl verwendet werden, um die AEM als Cloud Service Developer Console auf der Grundlage eines unten beschriebenen Umgebungsparameters zu starten:
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
@@ -206,11 +206,11 @@ Wie unten dargestellt, können Entwickler Paketabhängigkeiten und Servlets aufl
 
 ![Developer Console 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-Die AEM as a Cloud Service Developer Console ist auch für das Debugging nützlich und enthält einen Link zum Tool &quot;Abfrage erläutern&quot;:
+Die AEM as a Cloud Service Developer Console enthält einen Link zum Tool „Abfrage erläutern“, das ebenfalls für die Fehlersuche nützlich ist:
 
 ![Developer Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Bei Produktionsprogrammen wird der Zugriff auf die AEM as a Cloud Service Developer Console durch die &quot;Cloud Manager - Entwicklerrolle&quot;in Adobe Admin Console definiert, während bei Sandbox-Programmen die AEM as a Cloud Service Entwicklerkonsole für alle Benutzer mit einem Produktprofil verfügbar ist, das ihnen Zugriff auf AEM as a Cloud Service gewährt. Für alle Programme ist „Cloud Manager - Entwicklerrolle“ für Status-Dumps erforderlich, und der Repository Browser und die Benutzenden müssen auch in den Produktprofilen „AEM-Benutzer“ oder „AEM-Administrator“ sowohl für die Authoring- als auch für die Publishing-Services definiert sein, um Daten von beiden Services anzeigen zu können. Weitere Informationen zum Einrichten von Anwenderberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=de).
+Bei Produktionsprogrammen wird der Zugriff auf die AEM as a Cloud Service Developer Console durch die Rolle „Cloud Manager – Entwicklerrolle“ in der Adobe Admin Console definiert, während bei Sandbox-Programmen die AEM as a Cloud Service Developer Console allen Benutzenden zur Verfügung steht, deren Produktprofil ihnen Zugriff auf AEM as a Cloud Service gewährt. Für alle Programme ist „Cloud Manager - Entwicklerrolle“ für Status-Dumps erforderlich, und der Repository Browser und die Benutzenden müssen auch in den Produktprofilen „AEM-Benutzer“ oder „AEM-Administrator“ sowohl für die Authoring- als auch für die Publishing-Services definiert sein, um Daten von beiden Services anzeigen zu können. Weitere Informationen zum Einrichten von Anwenderberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=de).
 
 ### Performance-Überwachung {#performance-monitoring}
 

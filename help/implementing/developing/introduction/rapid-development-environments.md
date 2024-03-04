@@ -3,9 +3,9 @@ title: Schnelle Entwicklungsumgebungen
 description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen (Rapid Development Environments) für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung nutzen können.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 source-git-commit: 43f76a3f1e0bb52ca9d44982b2bb2b37064edf9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3414'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -314,15 +314,15 @@ Das obige Code-Beispiel veranschaulicht das Verhalten, wenn ein Paket nicht aufg
 
 >[!NOTE]
 >
->Diese Funktion ist noch nicht allgemein verfügbar, kann aber von frühen Anwendern verwendet werden. Bitte wenden Sie sich an **aemcs-rde-support@adobe.com** , um es auszuprobieren und Feedback zu geben.
+>Diese Funktion ist noch nicht allgemein verfügbar, kann aber von Early-Adopters verwendet werden. Bitte wenden Sie sich an **aemcs-rde-support@adobe.com**, um dies auszuprobieren und Feedback zu hinterlassen.
 
-RDEs unterstützen Frontend-Code basierend auf [Site-Designs](/help/sites-cloud/administering/site-creation/site-themes.md) und [Site-Vorlagen](/help/sites-cloud/administering/site-creation/site-templates.md). Bei RDEs erfolgt dies mithilfe einer Befehlszeilenanweisung zum Bereitstellen von Frontend-Paketen anstelle von Cloud Manager. [Front-End-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) wird für andere Umgebungstypen verwendet.
+RDEs unterstützen Frontend-Code, der auf [Site-Designs](/help/sites-cloud/administering/site-creation/site-themes.md) und [Seitenvorlagen](/help/sites-cloud/administering/site-creation/site-templates.md) basiert. Bei RDEs erfolgt dies über eine Befehlszeilenanweisung zur Bereitstellung von Frontend-Paketen und nicht über die [Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) von Cloud Manager, die für andere Umgebungstypen verwendet wird.
 
 Erstellen Sie wie gewohnt Ihr Frontend-Paket mit npm:
 
 `npm run build`
 
-Sie sollte eine `dist/` -Ordner, sodass Ihr Frontend-Paketordner einen `package.json` Datei und `dist` Ordner:
+Es sollte einen `dist/`-Ordner erzeugen, so dass Ihr Frontend-Paketordner eine `package.json`-Datei und einen `dist`-Ordner enthalten sollte:
 
 ```
 ls ./path-to-frontend-pkg-folder/
@@ -341,7 +341,7 @@ Logs:
 > with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
 ```
 
-Alternativ können Sie die `package.json` Datei und `dist` Ordner und stellen Sie diese ZIP-Datei bereit:
+Alternativ können Sie die Datei `package.json` und den Ordner `dist` komprimieren und diese ZIP-Datei bereitstellen:
 
 `zip -r frontend-pkg.zip ./path-to-frontend-pkg-folder/dist ./path-to-frontend-pkg-folder/package.json`
 
@@ -357,8 +357,8 @@ Logs:
 >[!NOTE]
 >
 >Die Benennung der Dateien im Frontend-Paket muss den folgenden Benennungskonventionen entsprechen:
-> * Ordner &quot;dist&quot;, für den Ordner des npm-Build-Ausgabepakets
-> * Datei &quot;package.json&quot;, für das npm dependencies-Paket
+> * „dist“-Ordner, für den Ordner des NPM-Build-Ausgabepakets
+> * „package.json“-Datei, für das NPM-Abhängigkeitspaket
 
 ### Überprüfen des Status der RDE {#checking-rde-status}
 
@@ -521,7 +521,7 @@ Beachten Sie außerdem die folgenden Überlegungen:
 
 * RDEs enthalten keine Vorschauebene
 * RDEs unterstützen derzeit nicht den Vorabversionskanal.
-* Während RDE-Unterstützung für das Anzeigen und Debugging von Frontend-Code basierend auf [Site-Designs](/help/sites-cloud/administering/site-creation/site-themes.md) und [Site-Vorlagen](/help/sites-cloud/administering/site-creation/site-templates.md) bereitgestellt ist noch nicht GA-fähig, kann es von frühen Anwendern verwendet werden. Bitte wenden Sie sich an **aemcs-rde-support@adobe.com** , um es auszuprobieren und Feedback zu geben.
+* Die RDE-Unterstützung für das Anzeigen und Debuggen von Frontend-Code, der auf [Site-Designs](/help/sites-cloud/administering/site-creation/site-themes.md) und [Site-Vorlagen](/help/sites-cloud/administering/site-creation/site-templates.md) basiert, ist zwar noch nicht allgemein zugänglich, kann aber von Early Adopters genutzt werden. Bitte wenden Sie sich an **aemcs-rde-support@adobe.com**, um dies auszuprobieren und Feedback zu hinterlassen.
 
 
 

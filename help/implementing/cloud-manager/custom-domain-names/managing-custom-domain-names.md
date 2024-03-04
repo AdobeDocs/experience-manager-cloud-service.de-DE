@@ -3,9 +3,9 @@ title: Verwalten von benutzerdefinierten Domain-Namen
 description: Erfahren Sie, wie Sie mit Cloud Manager benutzerdefinierte Domain-Namen anzeigen, aktualisieren, ersetzen und löschen können.
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '339'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ Mit Cloud Manager können Sie benutzerdefinierte Domain-Namen anzeigen, aktualis
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Im **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** angezeigt, wählen Sie das Programm aus.
+1. Wählen Sie auf dem Bildschirm **[Meine Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** das Programm aus.
 
-1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
+1. Navigieren Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
 1. Ermitteln Sie die Zeile, in der der benutzerdefinierte Domain-Name aufgeführt ist, den Sie anzeigen oder aktualisieren möchten.
 

@@ -9,9 +9,9 @@ feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
 source-git-commit: 973cec704b5e8f34e3b2c448fc10e09226ffa933
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '308'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Dynamic Media unterstützt nicht die folgenden Kombinationen aus Webbrowser und 
 <!-- CQDOC-19433 (original ticket)
 and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
 
-Ab dem 30. April 2024 beendet Adobe Dynamic Media die Unterstützung für Folgendes:
+Ab dem 30. April 2024 wird Adobe Dynamic Media die Unterstützung für Folgendes einstellen:
 
 * SSL (Secure Socket Layer) 2.0
 * SSL 3.0

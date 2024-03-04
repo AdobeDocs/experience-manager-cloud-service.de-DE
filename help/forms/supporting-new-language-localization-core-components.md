@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie neue Gebietsschemata für ein adaptives Formu
 feature: Adaptive Forms, Core Components
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1333'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 92%
 | Foundation-Komponenten | [Hier klicken](supporting-new-language-localization.md) |
 | Kernkomponenten | Dieser Artikel |
 
-<span class="preview"> Die Sprachunterstützungsfunktion von rechts nach links ist im Rahmen des Programms für frühe Anwender verfügbar. Sie können von Ihrer offiziellen E-Mail-ID aus an aem-forms-early-adopter-program@adobe.com schreiben, um dem frühen Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern. </span>
+<span class="preview"> Die Unterstützungsfunktion für Sprachen von rechts nach links ist im Rahmen des Early-Adopter-Programms verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-early-adopter-program@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugang zu dieser Funktion zu beantragen. </span>
 
-AEM Forms bietet vorkonfiguriert Unterstützung für die Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (it), Deutsch (de), Japanisch (ja), brasilianisches Portugiesisch (pt-BR), Chinesisch (zh-CN), Chinesisch – Taiwan (zh-TW) und Koreanisch (ko-KR). Sie können auch Unterstützung für weitere Gebietsschemata hinzufügen, wie Hindi(hi_IN). Sie können Adaptive Forms auch in einer RTL-Sprache (Right-to-Left) wie Arabisch, Persisch und Urdu präsentieren, indem Sie diese Gebietsschemata hinzufügen.
+AEM Forms bietet vorkonfiguriert Unterstützung für die Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (it), Deutsch (de), Japanisch (ja), brasilianisches Portugiesisch (pt-BR), Chinesisch (zh-CN), Chinesisch – Taiwan (zh-TW) und Koreanisch (ko-KR). Sie können auch Unterstützung für weitere Gebietsschemata hinzufügen, wie Hindi (hi_IN). Sie können adaptive Formulare auch in einer RTL-Sprache (Right-to-Left, rechts nach links) wie Arabisch, Persisch und Urdu präsentieren, indem Sie diese Gebietsschemata hinzufügen.
 
 ## Wie wird das Gebietsschema für ein adaptives Formular ausgewählt?
 
@@ -75,7 +75,7 @@ Gehen Sie wie folgt vor, um Unterstützung für ein neues Gebietsschema hinzuzuf
    git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/
    ```
 
-   Ersetzen Sie `<my-org>` und `<my-program>` in der obigen URL durch Ihren Organisationsnamen und Programmnamen. Detaillierte Anweisungen zum Abrufen des Organisationsnamens, Programmnamens oder des vollständigen Pfads Ihres Git-Repositorys sowie der zum Klonen des Repositorys erforderlichen Anmeldeinformationen finden Sie unter [Zugriff auf Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git) Artikel.
+   Ersetzen Sie `<my-org>` und `<my-program>` in der obigen URL durch Ihren Organisationsnamen und Programmnamen. Detaillierte Anweisungen zum Abrufen des Organisationsnamens, Programmnamens oder des vollständigen Pfads Ihres Git-Repositorys sowie der zum Klonen des Repositorys erforderlichen Anmeldeinformationen finden Sie im Artikel [Zugreifen auf Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git).
 
    Nach erfolgreichem Abschluss des Befehls wird der Ordner `<my-program>` erstellt. Er enthält den Inhalt, der aus dem Git-Repository geklont wurde. Im Rest des Artikels wird der Ordner als `[AEM Forms as a Cloud Service Git repository]` bezeichnet.
 

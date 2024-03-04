@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Indizes und Abfragen anhand der Best-Pra
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3088'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -268,7 +268,7 @@ Im Folgenden finden Sie einige Best Practices, die Sie beim Definieren oder Erwe
    * Verwenden Sie ein Index-Tag in der Indexdefinition (und der zugehörigen Abfrage) und `selectionPolicy = tag`, um sicherzustellen, dass der Index nur für die vorgesehenen Abfragen verwendet wird.
    * Stellen Sie sicher, dass `queryPaths` und `includedPaths` beide angegeben werden (normalerweise mit denselben Werten).
    * Verwenden Sie `excludedPaths`, um Pfade auszuschließen, die keine nützlichen Ergebnisse enthalten.
-   * Verwendung `analyzed` -Eigenschaften nur bei Bedarf, z. B. wenn Sie eine Volltext-Abfragebeschränkung nur für diese Eigenschaft verwenden müssen.
+   * Verwenden Sie `analyzed`-Eigenschaften nur, wenn sie erforderlich sind, z. B. wenn Sie eine Volltext-Abfragebeschränkung nur für diese Eigenschaft verwenden müssen.
    * Geben Sie immer `async = [ async, nrt ] `, `compatVersion = 2` und `evaluatePathRestrictions = true` an.
    * Geben Sie `nodeScopeIndex = true` nur an, wenn Sie einen Volltext-Index für Knotenteile benötigen.
 

@@ -3,9 +3,9 @@ title: Versionshinweise für Version 2023.6.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2023.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1357'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Eine Zusammenfassung der in der Version 2023.6.0 hinzugefügten Funktionen finde
 
 ![Vorschau in der Inhaltsfragmentkonsole](/help/assets/content-fragments-console-preview.png)
 
-* Bilder können jetzt dynamisch für die Web-Bereitstellung in Headless-Szenarien mit AEM GraphQL optimiert werden. [Abfragevariablen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables) können in GraphQL-Abfragen definiert werden, um zuzulassen, dass entkoppelte Client-Anwendungen entsprechend optimierte Bilder von AEM anfordern können.
+* Bilder können jetzt dynamisch für die Web-Bereitstellung in Headless-Szenarien mit AEM GraphQL optimiert werden. [Abfragevariablen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=de#query-variables) können in GraphQL-Abfragen definiert werden, um zuzulassen, dass entkoppelte Client-Anwendungen entsprechend optimierte Bilder von AEM anfordern können.
 * Tags für [Inhaltsfragmentvarianten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=de) können jetzt über die Inhaltsbereitstellungs-API von AEM GraphQL an JSON ausgegeben werden.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -58,9 +58,9 @@ Die [neue Assets-Ansicht](/help/assets/assets-view-introduction.md) ist jetzt in
 
 Mit Experience Manager Assets können Sie jetzt über die Benutzeroberfläche für Suchergebnisse mehr tun: Sie können jetzt:
 
-* [Suchen Sie im aktuellen Repository-Speicherort.](/help/assets/search-assets.md) , anstatt nach dem Keyword im gesamten Repository zu suchen.
+* [Standardmäßig wird die Suche innerhalb des aktuellen Repository-Speicherorts durchgeführt](/help/assets/search-assets.md), anstatt im gesamten Repository nach dem Schlüsselwort zu suchen.
 
-* [Navigieren Sie zum Ordnerspeicherort](/help/assets/search-assets.md#aftersearch) für Assets, die in den Suchergebnissen angezeigt werden.
+* [Navigieren Sie zum Speicherort des Ordners](/help/assets/search-assets.md#aftersearch) für Assets, die in den Suchergebnissen angezeigt werden.
 
 **Vorschau von Miniaturansichten für 3D-Assets**
 
@@ -74,7 +74,7 @@ Ein neues, verbessertes Benutzererlebnis für das [Erstellen von Link-Freigaben]
 
 **Dynamic Media: Aktualisierte Felder für smartes Zuschneiden im Bildprofil**
 
-Die Benutzeroberfläche für einige Felder mit Bezug auf smartes Zuschneiden in einem Bildprofil wurde aktualisiert und spiegelt jetzt die aktuellen Richtlinien zum Definieren eines smarten Zuschnitts wider. Siehe [Optionen für das Zuschneiden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options).
+Die Benutzeroberfläche für einige Felder mit Bezug auf smartes Zuschneiden in einem Bildprofil wurde aktualisiert und spiegelt jetzt die aktuellen Richtlinien zum Definieren eines smarten Zuschnitts wider. Siehe [Optionen für das Zuschneiden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=de#crop-options).
 
 ### Neue Funktionen in der Assets-Ansicht {#assets-view-features}
 

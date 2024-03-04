@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1288'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -214,7 +214,7 @@ In der Benutzeroberfläche können Sie **Übersetzen** auf der Registerkarte **E
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-**`updateDestinationLanguage`** wird für Eigenschaften verwendet, die keinen Text, sondern Sprachcodes enthalten, z. B. `jcr:language`. Der Benutzer übersetzt keinen Text, sondern das Sprachschema von der Quelle ins Ziel. Solche Eigenschaften werden nicht zur Übersetzung versendet.
+**`updateDestinationLanguage`** wird für Eigenschaften verwendet, die keinen Text, sondern Sprach-Codes enthalten, wie zum Beispiel `jcr:language`. Der Benutzer übersetzt keinen Text, sondern das Sprachschema von der Quelle ins Ziel. Solche Eigenschaften werden nicht zur Übersetzung versendet.
 
 In der Benutzeroberfläche können Sie auf der Registerkarte **Eigenschaften** die Option **Übersetzen** aktivieren/deaktivieren, um diesen Wert zu ändern, allerdings nur für die spezifischen Eigenschaften, die Sprach-Codes als Wert haben.
 

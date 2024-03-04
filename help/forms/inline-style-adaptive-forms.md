@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '761'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -27,8 +27,8 @@ Sie können das allgemeine Erscheinungsbild und Design eines adaptiven Formulars
 
 So fügen Sie Inline-Stile zu einer Komponente hinzu:
 
-1. Öffnen Sie das Formular im Formulareditor und ändern Sie den Modus in den Stilmodus. Um den Stilmodus zu ändern, wählen Sie in der Seitensymbolleiste die Option ![Arbeitsfläche-Dropdown](assets/Smock_ChevronDown.svg) > **[!UICONTROL Stil]**.
-1. Wählen Sie eine Komponente auf der Seite aus und klicken Sie auf die Schaltfläche &quot;Bearbeiten&quot; ![edit-button](assets/edit.svg). In der Seitenleiste geöffnete Stileigenschaften.
+1. Öffnen Sie das Formular im Formulareditor und ändern Sie den Modus in den Stilmodus. Um den Stilmodus zu aktivieren, tippen Sie in der Symbolleiste der Seite auf ](assets/Smock_ChevronDown.svg)canvas-drop-down![ > **[!UICONTROL Stil]**.
+1. Wählen Sie eine Komponente auf der Seite aus und wählen Sie die Schaltfläche „Bearbeiten“ ![edit-button](assets/edit.svg). In der Seitenleiste geöffnete Stileigenschaften.
 
    Sie können auch Komponenten aus der Hierarchiestruktur in der Seitenleiste auswählen. Die Hierarchiestruktur für das Formular ist als „Formularobjekte“ in der Seitenleiste verfügbar.
 
@@ -46,7 +46,7 @@ So fügen Sie Inline-Stile zu einer Komponente hinzu:
    * [!UICONTROL Erweitert] (Ermöglicht das Schreiben benutzerdefinierten CSS für die Komponente)
 
 1. Ebenso können Sie Stile auf andere Teile einer Komponente wie [!UICONTROL Widget], [!UICONTROL Beschriftung] und [!UICONTROL Hilfe] anwenden.
-1. Auswählen **[!UICONTROL Fertig]** zur Bestätigung der Änderungen oder **[!UICONTROL Abbrechen]** , um die Änderungen zu verwerfen.
+1. Wählen Sie **[!UICONTROL Fertig]**, um die Änderungen zu bestätigen, oder **[!UICONTROL Abbrechen]**, um die Änderungen zu verwerfen.
 
 ## Beispiel: Inline-Formatvorlagen für eine Feldkomponente {#example-inline-styles-for-a-field-component}
 
@@ -111,9 +111,9 @@ Wenn Sie den obigen Schritten folgen, können Sie andere Komponenten wie Bereich
 
 ## Kopieren und Einfügen von Stilen {#copy-paste-styles}
 
-Sie können einen Stil auch von einer Komponente kopieren und in eine andere Komponente in einem adaptiven Formular einfügen. Im **[!UICONTROL Stil]** -Modus wählen Sie die Komponente aus und klicken Sie auf das Symbol Kopieren . ![Kopieren](assets/property-copy-icon.svg).
+Sie können einen Stil auch von einer Komponente kopieren und in eine andere Komponente in einem adaptiven Formular einfügen. Wählen Sie im Modus **[!UICONTROL Stil]** die entsprechende Komponente und dann das Symbol „Kopieren“ ![Kopieren](assets/property-copy-icon.svg).
 
-Wählen Sie die andere Komponente desselben Typs aus und klicken Sie auf das Symbol Einfügen . ![Kopieren](assets/Smock_Paste_18_N.svg) , um den kopierten Stil einzufügen. Sie können auch das Symbol Stil löschen auswählen ![Kopieren](assets/clear-style-icon.svg) , um den angewendeten Stil zu löschen.
+Wählen Sie die andere Komponente desselben Typs und dann das Symbol „Einfügen“ ![Einfügen](assets/Smock_Paste_18_N.svg), um den kopierten Stil einzufügen. Sie können auch auf das Symbol „Stil entfernen“ ![Stil entfernen](assets/clear-style-icon.svg) auswählen, um den angewendeten Stil zu entfernen.
 
 ## Stile für verschiedene Zustände einer Komponente festlegen {#set-styles-for-states}
 
@@ -121,15 +121,15 @@ Sie können Stile für verschiedene Statuszustände eines Komponententyps festle
 
 So definieren Sie die Formatierung für einen Status einer Komponente:
 
-1. Im **[!UICONTROL Stil]** -Modus wählen Sie die Komponente aus und klicken Sie auf das Symbol Bearbeiten . ![Bearbeiten](assets/Smock_Edit_18_N.svg).
+1. Wählen Sie im Modus **[!UICONTROL Stil]** die Komponente und wählen Sie das Symbol „Bearbeiten“ ![Bearbeiten](assets/Smock_Edit_18_N.svg).
 
 1. Wählen Sie mit der Dropdownliste **[!UICONTROL Status]** den Status der Komponente aus.
 
    ![Status auswählen](assets/select-state.png)
 
-1. Definieren Sie den Stil für den ausgewählten Status der Komponente und wählen Sie ![Speichern](assets/save_icon.svg) , um die Eigenschaften zu speichern.
+1. Definieren Sie die Formatierung für den ausgewählten Status der Komponente und wählen Sie ![Speichern](assets/save_icon.svg), um die Eigenschaften zu speichern.
 
-Sie können die Statuszustände „Erfolg“ und „Fehler“ auch simulieren. Wählen Sie das Symbol Erweitern aus, um die **[!UICONTROL Erfolg simulieren]** und **[!UICONTROL Fehler simulieren]** Optionen.
+Sie können die Statuszustände „Erfolg“ und „Fehler“ auch simulieren. Wählen Sie das Symbol „Erweitern“, um die Optionen **[!UICONTROL Erfolg simulieren]** und **[!UICONTROL Fehler simulieren]** anzuzeigen.
 
 ![Status simulieren](assets/simulate-states.png)
 

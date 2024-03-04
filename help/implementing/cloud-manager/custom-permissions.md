@@ -3,9 +3,9 @@ title: Benutzerdefinierte Berechtigungen
 description: Erfahren Sie, wie Sie mit benutzerdefinierten Berechtigungen benutzerdefinierte Berechtigungsprofile mit konfigurierbaren Berechtigungen erstellen können, um den Zugriff auf Programme, Pipelines und Umgebungen für Cloud Manager-Benutzende zu beschränken.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
 source-git-commit: 3891a55ff48f48de4e55e0229e9f76e5bf500cb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1515'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Um eigene, benutzerdefinierte Berechtigungen zu erstellen und zu verwenden, sind
 1. [Weisen Sie dem Produktprofil benutzerdefinierte Berechtigungen zu.](#assign-permissions)
 1. [Weisen Sie dem Produktprofil Benutzende zu.](#assign-users)
 
-In diesem Abschnitt werden diese Schritte beschrieben. Es kann nützlich sein, [Begriffe](#terms) und [Konfigurierbare Berechtigungen](#configurable-permissions) -Abschnitte, während Sie Ihre eigenen benutzerdefinierten Berechtigungen erstellen.
+In diesem Abschnitt werden diese Schritte beschrieben. Möglicherweise helfen Ihnen die Informationen in den Abschnitten [Begriffe](#terms) und [Konfigurierbare Berechtigungen](#configurable-permissions) bei der Erstellung Ihrer eigenen benutzerdefinierten Berechtigungen.
 
 >[!NOTE]
 >

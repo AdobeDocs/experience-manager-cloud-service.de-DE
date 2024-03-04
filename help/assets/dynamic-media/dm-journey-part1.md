@@ -12,9 +12,9 @@ hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
 source-git-commit: 20c12efb963bc1defd16f5b42b5efa5d4067e266
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3674'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -88,11 +88,11 @@ Wenn Sie weiterlesen, erfahren Sie mehr darüber, warum dieses Konzept der „Ei
 
 Wenn Sie bereit sind, ein Bild- oder Video-Asset live zu schalten, wird es durch das Backbone von Dynamic Media unterstützt, das aus einem leistungsstarken, erstklassigen Bereitstellungsnetzwerk besteht. Das Netzwerk bedient täglich Hunderte von Kunden auf der ganzen Welt. Die Assets werden im Content Delivery Network (CDN), das von Akamai gehostet wird, verteilt. Das CDN ist ein System von Computer-Services, die miteinander vernetzt sind und transparent zusammenarbeiten, um Endbenutzern Inhalte, insbesondere große Rich-Media-Inhalte, bereitzustellen.
 
-Im CDN-System werden Web-Inhalte in Web-Caches im Internet gespeichert. Dann werden sie vom Web-Cache an die Endbenutzer geliefert, was eine schnellere Bereitstellung ermöglicht. Wenn also jemand zum ersten Mal eine Webseite herunterlädt, werden die angezeigten Inhalte an einen CDN-Cache geliefert. Sie werden auf dem Server gespeichert, sodass beim nächsten Zugriff eines Benutzers im selben Bereich auf die Webseite derselbe zwischengespeicherte Inhalt schneller bereitgestellt wird. Die Inhalte werden schneller bereitgestellt, da sie sich näher an den Benutzenden befinden. Ein CDN sorgt für eine schnellere Anzeige von Webseiten und verringert gleichzeitig die Bandbreitenanforderungen an den zentralen Server, da die Inhalte nicht in jedem Fall von einem zentralen Server, sondern von einem Cache-Netzwerk geliefert werden. Dieser optimierte Fluss bedeutet ein besseres Benutzererlebnis, was zu höheren Umsätzen führt.
+Im CDN-System werden Web-Inhalte in Web-Caches im Internet gespeichert. Dann werden sie vom Web-Cache an die Endbenutzer geliefert, was eine schnellere Bereitstellung ermöglicht. Wenn also jemand zum ersten Mal eine Webseite herunterlädt, werden die angezeigten Inhalte an einen CDN-Cache geliefert. Sie werden auf dem Server gespeichert, sodass beim nächsten Zugriff auf die Web-Seite in derselben Region derselbe Cache-Inhalt schneller bereitgestellt wird. Die Inhalte werden schneller bereitgestellt, da sie sich näher an den Benutzenden befinden. Ein CDN sorgt für eine schnellere Anzeige von Webseiten und verringert gleichzeitig die Bandbreitenanforderungen an den zentralen Server, da die Inhalte nicht in jedem Fall von einem zentralen Server, sondern von einem Cache-Netzwerk geliefert werden. Dieser optimierte Fluss bedeutet ein besseres Benutzererlebnis, was zu höheren Umsätzen führt.
 
 <!-- USE AN IMAGE HERE? ![Content delivery network](/help/assets/assets-dm/cdn.png) -->
 
-Historisch betrachtet liefert das CDN monatlich 3,5 Petabyte Traffic an Kunden. Das System kann an einem Tag 52 Milliarden Assets bereitstellen. Diese Zahl entspricht 864.000 Bildern und Videos, die _jede Sekunde_ erfolgreich an Kunden bereitgestellt werden.
+Historisch betrachtet liefert das CDN monatlich 3,5 Petabyte Traffic an die Kundschaft. Das System kann an einem Tag 52 Milliarden Assets bereitstellen. Diese Zahl entspricht 864.000 Bildern und Videos, die _jede Sekunde_ erfolgreich an Kunden bereitgestellt werden.
 
 ### Intelligente Bildbearbeitung
 
@@ -117,11 +117,11 @@ Die intelligente Bildbearbeitung ist nicht standardmäßig aktiviert, da sie ein
 
 ### Adaptive Videosets
 
-Wenn eine Seite oder eine Hauptseite ein Video enthält, beschäftigen sich Ihre Kunden in der Regel länger mit diesem Inhalt und bleiben länger auf der Seite, was in der Regel eine gute Sache ist. Dieses Verhalten wird durch Analysen gezeigt, die Adobe durchgeführt hat. Videos können jedoch komplex sein. Zum einen sind sie oft mit einer großen Primärdatei verbunden. Es ist kompliziert, die Größe und Bereitstellung von Videos zu bestimmen, um sicherzustellen, dass das Erlebnis unabhängig vom Gerät, auf dem es angezeigt wird, und unabhängig von der Bandbreite reibungslos ausgeführt wird.
+Wenn eine Seite oder eine Hauptseite ein Video enthält, beschäftigen sich Ihre Kunden in der Regel länger mit diesem Inhalt und bleiben länger auf der Seite, was in der Regel eine gute Sache ist. Dieses Verhalten zeigt sich in den von Adobe durchgeführten Analysen. Videos können jedoch komplex sein. Zum einen sind sie oft mit einer großen Primärdatei verbunden. Es ist kompliziert, die Größe und Bereitstellung von Videos zu bestimmen, um sicherzustellen, dass das Erlebnis unabhängig von dem Gerät, auf dem es angezeigt wird, und unabhängig von der Bandbreite reibungslos abläuft.
 
-Um dieses Problem zu lösen, bietet Ihnen Dynamic Media die Möglichkeit, _Adaptive Videosets_ zu erstellen.
+Um dieses Problem zu lösen, bietet Ihnen Dynamic Media die Möglichkeit, _adaptive Video-Sets_ zu erstellen.
 
-Ein adaptives Videoset gruppiert Versionen desselben Videos, die mit unterschiedlichen Bitraten und Formaten kodiert wurden.
+Ein adaptives Video-Set gruppiert Versionen desselben Videos, die mit unterschiedlichen Bitraten und Formaten kodiert sind.
 
 Sie beginnen mit Ihrem ursprünglichen, primären Video, das Sie in das System hochladen. Dynamic Media skaliert bzw. _transkodiert_ dieses Video automatisch in mehrere Videos. Zum Zeitpunkt der Bereitstellung wird dann auf intelligente Weise bestimmt, welcher Videobildschirm, welche Qualität und welches Format verwendet werden soll, und die Daten werden entweder an das Smartphone, das Tablet oder den Desktop-Computer übertragen.
 
@@ -133,11 +133,11 @@ Adaptive Videosets bieten Ihnen bestmögliche Wiedergabe für Kunden, die das Dy
 
 ## Anwendungsbeispiele für Dynamic Media {#dm-journey-b}
 
-Im Folgenden finden Sie häufige Anwendungsfälle und Lösungen, mit denen Dynamic Media Sie bei der Förderung von positiver Kundeninteraktion, Treue, Konversion und höherer ROI unterstützen kann.
+Im Folgenden finden Sie häufige Anwendungsfälle und Lösungen, bei denen Dynamic Media Ihnen helfen kann, die Kundenbindung, Loyalität, Konversion und den ROI zu erhöhen.
 
 ### Anwendungsfall: Ansatz der primären Datei
 
-Einer der wichtigsten Anwendungsfälle für Dynamic Media ist auch einer der offensichtlichsten. Das bedeutet, dass die Gewichtung von Seiten und Erlebnissen sowie die Größe des Inhalts reduziert wird, unabhängig davon, ob es sich um ein Bild oder ein Video handelt, das bereitgestellt wird.
+Einer der wichtigsten Anwendungsfälle für Dynamic Media ist auch einer der offensichtlichsten. Das heißt, dass der Umfang von Seiten und Erlebnissen sowie die Größe der bereitgestellten Inhalte, seien es Bilder oder Videos, reduziert werden.
 
 Im Folgenden sehen Sie ein typisches Erlebnis oder eine Webseite. Etwa 90 % einer Seite bestehen aus Rich-Media-Inhalten wie Bildern und Videos, bei denen es sich in der Regel um sehr umfangreiche Dateien handelt.
 
@@ -175,13 +175,13 @@ Ein weiterer Anwendungsfall, den Dynamic Media löst, ist Video. Video ist kompl
 | **Problem** | **Dynamic Media-Lösung** |
 |---|---|
 | Schwierigkeiten bei der Verwaltung und Bereitstellung von für verschiedene Geräte optimierten Videos. | Verwenden eines einzelnen Videos, das die Größe automatisch für alle Geräte anpasst. |
-| Videos werden aufgrund der verfügbaren Bandbreite des Benutzers angehalten oder in niedriger Qualität abgespielt. | Stellen Sie Videos über einen HTML-Player bereit, der die verfügbare Bandbreite automatisch erkennt und die Qualität anpasst, um eine originalgetreue und flüssige Wiedergabe zu gewährleisten. |
+| Videos bleiben aufgrund der verfügbaren Bandbreite der Benutzenden stehen oder werden in niedriger Qualität wiedergegeben. | Stellen Sie Videos über einen HTML-Player bereit, der die verfügbare Bandbreite automatisch erkennt und die Qualität anpasst, um eine originalgetreue und flüssige Wiedergabe zu gewährleisten. |
 | Es ist nicht praktikabel und zu zeitaufwändig, alle Versionen eines Videos manuell zu erstellen, nur um eine gute Anzeige und Wiedergabe auf allen Geräten zu gewährleisten. | Dank eines vereinfachten Arbeitsablaufs entfällt die stundenlange, mühsame Transkodierung. |
 | | Gewinnen Sie Zeit für höherwertige Aufgaben. |
 
-Kunden kommen mit den folgenden Problemen nach Dynamic Media, die sie zu lösen hoffen:
+Kundinnen und Kunden wenden sich mit folgendem Problem, das sie zu lösen hoffen, an Dynamic Media:
 
-&quot;_Mein Unternehmen hat das Video, und die Abteilung hat viel Geld ausgegeben, um es zu erstellen, aber es wurde davon abgehalten, es auf Seiten zu platzieren oder zu liefern. Der Grund dafür war, dass durch Tests die Qualität des Videos nicht garantiert werden konnte, oder selbst, wenn es wirklich spielen würde. Und dies wirkt sich letztlich auf die Marke des Unternehmens und möglicherweise auf seine Rolle bei der Konversion aus._&quot;
+„_Mein Unternehmen hat das Video, und die Abteilung hat viel Geld für die Erstellung ausgegeben, sich aber nicht getraut, es auf den Seiten zu platzieren oder es auszuliefern. Der Grund dafür war, dass beim Testen die Qualität des Videos nicht garantiert werden konnte, und auch nicht, ob es wirklich abgespielt werden würde. Und das wirkt sich letztlich auf die Marke des Unternehmens und möglicherweise auf seine Rolle bei der Konversion aus._“
 
 Die Lösung von Dynamic Media besteht darin, diese eine primäre Videodatei zu nehmen und Dynamic Media alle Größen durch seinen Transkodierungsprozess bestimmen zu lassen. Kombinieren Sie dies dann mit dem intelligenten Videoplayer von Dynamic Media. Dieser Workflow gewährleistet, dass das Video auf Ihrer Haupt-Landingpage oder auf einer Kategorie- oder Produktdetailseite konsistent ist und in hoher Qualität bereitgestellt wird.
 
@@ -199,7 +199,7 @@ Im Folgenden finden Sie weitere Anwendungsbeispiele.
 
 | **Problem** | **Dynamic Media-Lösung** |
 |---|---|
-| Zeitaufwendige und aufwändige manuelle Zeichnung, Messung und Ausschneiden von Bildern oder Videos, um den Fokus hervorzuheben und über alle Bildschirmgrößen und Geräte hinweg angemessen anzuzeigen. | Smartes Zuschneiden in Dynamic Media nutzt eine Adobe Sensei AI-Funktion, um den Fokus in einem Bild oder Video automatisch zu erkennen und zuzuschneiden, um ihn so zu erhalten. |
+| Es ist zeitaufwendig und arbeitsintensiv, Bilder oder Videos manuell zu zeichnen, zu messen und zuzuschneiden, um den Fokuspunkt hervorzuheben und auf allen Bildschirmgrößen und Geräten angemessen anzuzeigen. | Smartes Zuschneiden in Dynamic Media nutzt eine Adobe Sensei AI-Funktion, um den Fokus in einem Bild oder Video automatisch zu erkennen und zuzuschneiden, um ihn so zu erhalten. |
 | Verlorene Zeit, die besser für die Erstellung wirkungsvoller Erlebnisse genutzt werden könnte. | Erfasst den gewünschten Blickpunkt unabhängig von der Bildschirmgröße. |
 | Assets zur einmaligen Verwendung, die für jedes Erlebnis und jedes Gerät erstellt werden. | Vermeidet mühsame manuelle Aufgaben und liefert hochwertige, schnell ladende Bilder und Videos, die auf jedem Gerät oder Bildschirm gut aussehen. |
 
@@ -264,7 +264,7 @@ Die obige Ausgabedarstelleung ist jetzt live! [Jetzt probieren](https://s7d1.sce
 
 ## Optional – Weitere Informationen
 
-In Teil I dieser Journey wurden die Grundlagen verschiedener Dynamic Media-Themen behandelt. Wenn Sie mehr darüber erfahren möchten, was Sie lesen, verwenden Sie die unten stehenden Materialien, um Konzepte genauer zu untersuchen. Andernfalls können Sie mit Teil 2 Ihrer Tour fortfahren. Siehe [Nächste Schritte in dieser Dynamic Media-Tour](#whats-next).
+In Teil 1 dieser Journey wurden die Grundlagen verschiedener Dynamic Media-Themen behandelt. Wenn Sie mehr über das Gelesene erfahren möchten, nutzen Sie die folgenden Materialien, um die Konzepte zu vertiefen. Andernfalls können Sie mit Teil 2 Ihrer Tour fortfahren. Siehe [Nächste Schritte in dieser Dynamic Media-Tour](#whats-next).
 
 _Dynamic Media-Hilfethemen_
 
@@ -290,7 +290,7 @@ _Dynamic Media-Viewer_
 
 ## Nächste Schritte in dieser Dynamic Media-Tour {#whats-next}
 
-In Teil II dieser Journey untersuchen Sie Dynamic Media-URLs genau, um besser zu verstehen, was bei der Bereitstellung eines Assets geschieht. Außerdem erfahren Sie mehr über die Grundlagen der Erstellung von Bildvorgaben zum Rendern von Assets und lernen etwas über Bildsets, Rotationssets und Sets mit gemischten Medien und darüber, wie sie erstellt werden.
+In Teil 2 dieser Journey werden Sie Dynamic Media-URLs näher untersuchen, um besser zu verstehen, was passiert, wenn ein Asset bereitgestellt wird. Außerdem erfahren Sie mehr über die Grundlagen der Erstellung von Bildvorgaben zum Rendern von Assets und lernen etwas über Bildsets, Rotationssets und Sets mit gemischten Medien und darüber, wie sie erstellt werden.
 
 Hier geht es zu [Dynamic Media-Tour: Grundlagen, Teil 2](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 

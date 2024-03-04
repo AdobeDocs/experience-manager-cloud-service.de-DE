@@ -1,18 +1,18 @@
 ---
-title: Wie kann ich ein adaptives Formular zur Überprüfung senden? Wie werden Überprüfungen für ein adaptives AEM-Formular verwaltet?
-description: '"Überprüfen"ist ein Mechanismus, mit dem der Überprüfer mithilfe des Schritts "Aufgabe zuweisen"verschiedene Aufgaben für adaptive Formulare ausführen kann.'
+title: Übermittlung eines adaptiven Formulars zur Überprüfung Wie werden Überprüfungen für ein adaptives AEM-Formular verwaltet?
+description: Die Überprüfung ist ein Mechanismus, mit dem Überprüfende mithilfe des Schritts „Aufgabe zuweisen“ verschiedene Aufgaben für adaptive Formulare durchführen können.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 
-# Erstellen und Verwalten von Überprüfungen für ein adaptives Formular {#review-step-forms-aem-sites-page}
+# Erstellen und Verwalten von Überprüfungen eines adaptiven Formulars {#review-step-forms-aem-sites-page}
 
 Unter Verwendung von [Schritt zuweisen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=de#assign-task-step) des AEM-Workflows prüfen Überprüfende das gesendete Formular und führt Aktionen dafür durch. Gehen Sie wie folgt vor, um das gesendete Formular mit dem Schritt „Aufgabe zuweisen“ zu überprüfen:
 
@@ -25,7 +25,7 @@ Unter Verwendung von [Schritt zuweisen](https://experienceleague.adobe.com/docs/
 1. Öffnen Sie Ihre Autoreninstanz im Bearbeitungsmodus.
 1. Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]** > **[!UICONTROL Erstellen]** > **[!UICONTROL Modell erstellen]**
 1. Geben Sie den Titel des Workflows an und fügen Sie den Schritt **[Aufgabe zuweisen]** hinzu
-1. Auswählen ![settings_icon](assets/settings_icon.png) in der Aktionsleiste. Das Dialogfeld **[!UICONTROL Aufgabe zuweisen]** wird geöffnet.
+1. Wählen Sie ![settings_icon](assets/settings_icon.png) in der Aktionsleiste. Das Dialogfeld **[!UICONTROL Aufgabe zuweisen]** wird geöffnet.
 1. Öffnen Sie die Registerkarte [!UICONTROL Formular und Dokument] und öffnen Sie das Dropdown-Menü [!UICONTROL Vorausgefüllt] und geben Sie Folgendes an:
 
    * Eingabedatei auswählen mit
@@ -44,7 +44,7 @@ Unter Verwendung von [Schritt zuweisen](https://experienceleague.adobe.com/docs/
 Konfigurieren Sie nun die Übermittlungsaktion einer Container-Komponente für adaptive Formulare auf der Sites-Seite:
 
 1. Navigieren Sie zur Sites-Seite.
-1. Auswählen ![settings_icon](assets/settings_icon.png) eines Containers für adaptive Formulare. Das Dialogfeld **[!UICONTROL Container für adaptive Formulare]** wird geöffnet.
+1. Wählen Sie ![settings_icon](assets/settings_icon.png) eines Containers für adaptive Formulare. Das Dialogfeld **[!UICONTROL Container für adaptive Formulare]** wird geöffnet.
 1. Öffnen Sie die Registerkarte **[!UICONTROL Übermittlung]** und geben Sie **[!UICONTROL Übermittlungsaktion]** an, um [einen AEM-Workflow auszulösen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=de#invoke-an-aem-workflow)
 
 1. Klicken Sie auf [Fertig], um die Einstellungen zu speichern.

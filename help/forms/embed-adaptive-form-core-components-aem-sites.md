@@ -5,9 +5,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2067'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -203,7 +203,7 @@ Um adaptive Formularkomponenten auf einer AEM Sites-Seite zu verwenden, fügen S
 
 1. Öffnen Sie die AEM Sites-Seite im Bearbeitungsmodus.
 1. Ziehen Sie die [!UICONTROL Adaptive Formulare – Einbettungskomponente] per Drag-and-Drop aus dem Komponenten-Browser auf die Seite.
-1. Wählen Sie die [!UICONTROL Adaptives Forms - Einbetten] Komponente auf der Siteseite und wählen Sie ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) in der Aktionsleiste. Das Dialogfeld **[!UICONTROL Bearbeiten der „Adaptive Formulare – Einbettungskomponente“]** wird geöffnet.
+1. Wählen Sie die [!UICONTROL Einbettungskomponente für adaptive Formulare] auf der Sites-Seite und dann ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) in der Aktionsleiste. Das Dialogfeld **[!UICONTROL Bearbeiten der „Adaptive Formulare – Einbettungskomponente“]** wird geöffnet.
 1. Wählen Sie das adaptive Formular aus, das Sie in den [!UICONTROL Asset-Pfad] einbetten möchten.
 1. Speichern Sie die Einstellungen. Das adaptive Formular ist jetzt in der Seite eingebettet.
 
@@ -253,7 +253,7 @@ Beachten Sie die folgenden Szenarien für die Veröffentlichung des hinzugefügt
 Um eine Konfiguration oder Eigenschaft eines adaptiven Formulars zu ändern, führen Sie einen der folgenden Schritte aus:
 
 * Öffnen Sie das Originalformular in einem adaptiven Formular im entsprechenden Editor und ändern Sie es.
-* Wählen Sie das adaptive Formular auf der Site-Seite im Bearbeitungsmodus aus und wählen Sie dann **[!UICONTROL In einem neuen Fenster bearbeiten]**. Das ursprüngliche Formular wird im Bearbeitungsmodus geöffnet, sodass Sie es bearbeiten können.
+* Wählen Sie von der Sites-Seite aus im Bearbeitungsmodus das adaptive Formular und dann **[!UICONTROL In neuem Fenster bearbeiten]**. Das ursprüngliche Formular wird im Bearbeitungsmodus geöffnet, sodass sie es bearbeiten können.
 
 ## Änderung des Layouts eines adaptiven Formulars, das zu einer AEM Sites-Seite hinzugefügt wurde {#change-layout-af-aem-sites-page}
 

@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 46456903ee947c61d63508dc86cc5f72dc50ed82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '886'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Die Bearbeitung an Ort und Stelle und im Kontext kann häufig von Vorteil gegen�
 
 Mit dem universellen Editor können Sie Ihren Text im Kontext sowie an Ort und Stelle flexibel bearbeiten, was eine einfache und intuitive Inhaltserstellung ermöglicht.
 
-1. Doppelklicken Sie auf , um den Titel des neuesten Artikels auszuwählen und ihn zu bearbeiten.
+1. Wählen Sie mit einem Doppelklick den Titel des neuesten Artikels aus, um ihn zu bearbeiten.
 
    ![Der universelle Editor](assets/do-not-localize/ue-component-mode.png)
 
@@ -47,7 +47,7 @@ Mit dem universellen Editor können Sie Ihren Text im Kontext sowie an Ort und S
 
    ![Bearbeiten von Text im universellen Editor](assets/do-not-localize/ue-edit-text-2.png)
 
-1. Wählen Sie außerhalb der Textkomponente aus und Ihre Änderungen werden automatisch gespeichert.
+1. Wählen Sie etwas außerhalb der Textkomponente aus und Ihre Änderungen werden automatisch gespeichert.
 
 Der universelle Editor speichert die Änderungen automatisch in der Authoring-Umgebung. Sie müssen sie noch veröffentlichen, damit Ihre Leserinnen und Leser sie auch sehen können. Dies erfolgt noch in einem späteren Schritt.
 
@@ -73,7 +73,7 @@ Das Bild wird durch das von Ihnen ausgewählte Bild ersetzt.
 
 Mit dem universellen Editor können Sie mit Ihren Inhalten in deren Kontext interagieren und sehen, wie die Inhalte auf den Geräten Ihrer Benutzenden bereitgestellt werden.
 
-1. Die Desktop-Version Ihres Inhalts wird standardmäßig vom Editor gerendert. Wählen Sie die Schaltfläche Emulator oben rechts in der Symbolleiste des universellen Editors aus, um das Zielgerät zu ändern.
+1. Die Desktop-Version Ihres Inhalts wird standardmäßig vom Editor gerendert. Wählen Sie die Schaltfläche „Emulator“ oben rechts in der Symbolleiste des universellen Editors aus, um das Zielgerät zu ändern.
 
    ![Menüelement „Emulator“](assets/do-not-localize/ue-emulator-1.png)
 
@@ -89,7 +89,7 @@ Sie können auch genaue Abmessungen für den Emulator angeben und das emulierte 
 
 ## Vorschau und Veröffentlichung {#preview}
 
-Da Sie den Inhalt auswählen müssen, um ihn im Editor zu ändern, ist es im Editor nicht möglich, Links zu folgen oder mit Ihrem Inhalt zu interagieren, indem Sie auf tippen oder klicken. Im Vorschaumodus können Sie den Links in Ihrem Inhalt folgen und ihn vor der Veröffentlichung so erleben wie Ihre Benutzenden.
+Da Sie Ihren Inhalt auswählen müssen, um ihn im Editor zu ändern, können Sie im Editor weder Links folgen noch durch Tippen oder Klicken mit Ihrem Inhalt interagieren. Im Vorschaumodus können Sie den Links in Ihrem Inhalt folgen und ihn vor der Veröffentlichung so erleben wie Ihre Benutzenden.
 
 1. Wählen Sie in der Symbolleiste des universellen Editors die Option **Vorschau**.
 
@@ -111,9 +111,9 @@ Der Inhalt wird veröffentlicht.
 
 Um das Inhaltserstellungserlebnis zu beschleunigen, wenn die strukturierte Bearbeitung von Headless-Inhalten gegenüber der Bearbeitung im Kontext von Vorteil ist, bietet Ihnen der universelle Editor auch einen Schnellzugriff auf den Inhaltsfragmenteditor.
 
-1. Deaktivieren Sie den Vorschaumodus, indem Sie auf **Vorschau** in der Symbolleiste des universellen Editors.
+1. Deaktivieren Sie den Vorschaumodus, indem Sie in der Symbolleiste des universellen Editors auf **Vorschau** tippen.
 
-   ![Vorschaumodus deaktivieren](assets/do-not-localize/ue-toggle-off-preview.png)
+   ![Ausschalten des Vorschaumodus](assets/do-not-localize/ue-toggle-off-preview.png)
 
 1. Scrollen Sie weiter nach unten auf der Seite zum Abschnitt **Adventures**.
 

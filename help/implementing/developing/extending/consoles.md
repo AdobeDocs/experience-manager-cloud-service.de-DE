@@ -3,9 +3,9 @@ title: Anpassen von Konsolen
 description: Erfahren Sie mehr über die verschiedenen Optionen, die AEM zum Anpassen der Konsolen Ihrer Autoreninstanz bereitstellt.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '516'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ AEM bietet Optionen zum Anpassen der Konsolen (und der [Seitenbearbeitungsfunkti
 
 ## Client-Bibliotheken {#clientlibs}
 
-Mit Client-Bibliotheken können Sie die Standardimplementierung um neue Funktionen erweitern und gleichzeitig Standardfunktionen, -objekte und -methoden wiederverwenden. Beim Anpassen mit clientlibs können Sie Ihre eigene clientlib unter erstellen. `/apps.` Beispielsweise kann er den Code enthalten, der für Ihre benutzerdefinierte Komponente erforderlich ist.
+Mit Client-Bibliotheken können Sie die Standardimplementierung um neue Funktionen erweitern und gleichzeitig Standardfunktionen, -objekte und -methoden wiederverwenden. Bei der Anpassung mit Client-Bibliotheken können Sie unter `/apps.` Ihre eigene Client-Bibliothek erstellen. Beispielsweise kann sie den Code enthalten, der für Ihre benutzerdefinierte Komponente erforderlich ist.
 
 Siehe [Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md)
 
@@ -111,7 +111,7 @@ Falls Sie zusätzliche Daten hinzufügen möchten, müssen Sie einen [PageInfoPr
 
 >[!NOTE]
 >
->Diese Funktion ist für Spalten von Textfeldern optimiert. Bei anderen Datentypen ist es möglich, Überlagerungen vorzunehmen `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+>Diese Funktion ist für Spalten von Textfeldern optimiert. Bei anderen Datentypen ist es möglich, `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps` zu überlagern.
 
 ### Filtern von Ressourcen {#filtering-resources}
 

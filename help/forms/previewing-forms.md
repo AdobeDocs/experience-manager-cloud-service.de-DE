@@ -1,24 +1,24 @@
 ---
-title: Wie kann ich ein adaptives Formular in der Vorschau anzeigen?
-description: Benutzer können eine Vorschau des Formulars anzeigen, bevor es veröffentlicht oder aktiviert wird, um sicherzustellen, dass es den Erwartungen entspricht. Die Vorschauoptionen können je nach unterstützten Formulartypen variieren.
+title: Vorschau eines adaptiven Formulars
+description: Benutzende können eine Vorschau des Formulars anzeigen, bevor es veröffentlicht oder aktiviert wird, um sicherzustellen, dass es den Erwartungen entspricht. Die Vorschauoptionen können je nach unterstützten Formulartypen variieren.
 topic-tags: author
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 6511c4273ca3d394d98a61e8acb4d3cb03c243d5
-workflow-type: tm+mt
+exl-id: 72235277-6c34-4341-9a10-02afa753e7f5
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '336'
-ht-degree: 25%
+ht-degree: 100%
 
 ---
-
 
 # Formularvorschau {#previewing-a-form}
 
 ## Übersicht {#overview}
 
-In [!DNL AEM Forms] können Sie die Formulare und Dokumente im Repository in der Vorschau anzeigen. Die Vorschau zeigt genau, wie die Formulare aussehen und sich verhalten, wenn sie für die Endbenutzer freigegeben werden.
+In [!DNL AEM Forms] können Sie die Formulare und Dokumente im Repository in der Vorschau anzeigen. Die Vorschau zeigt genau, wie die Formulare aussehen und sich verhalten, wenn sie für die Endbenutzenden freigegeben werden.
 
-Bei der Vorschau von Formularen werden diese in der interaktiven Benutzeroberfläche wiedergegeben und der Benutzer kann die Formulare mit Daten ausfüllen. Bei der Vorschau von Dokumenten werden diese im nicht interaktiven Modus gerendert und der Benutzer kann nur das Dokument anzeigen. Für Formulare ist eine zusätzliche Option der benutzerdefinierten Vorschau verfügbar. Mit dieser Option können Sie eine Vorschau des Formulars mit Daten aus einer XML-Datei anzeigen. Die Daten füllen einige der Felder oder alle Felder des Formulars aus, das in der Vorschau angezeigt wird.
+Bei der Vorschau von Formularen werden diese in der interaktiven Benutzeroberfläche wiedergegeben und die Benutzenden können die Formulare mit Daten ausfüllen. Bei der Vorschau von Dokumenten werden diese im nicht interaktiven Modus gerendert und die Person kann nur das Dokument anzeigen. Für Formulare ist eine zusätzliche Option der benutzerdefinierten Vorschau verfügbar. Mit dieser Option können Sie eine Vorschau des Formulars mit Daten aus einer XML-Datei anzeigen. Die Daten füllen einige oder alle Felder des Formulars aus, das in der Vorschau angezeigt wird.
 
 In der folgenden Tabelle sind die Vorschauoptionen aufgeführt, die für verschiedene Typen unterstützter Formulare verfügbar sind:
 
@@ -49,13 +49,13 @@ In der folgenden Tabelle sind die Vorschauoptionen aufgeführt, die für verschi
 
 ## Formularvorschau {#previewing-a-form-1}
 
-1. Wählen Sie ein Asset aus, das Sie in der Vorschau anzeigen möchten, und klicken Sie auf Vorschau ![aem6forms_preview](assets/aem6forms_preview.png) in der Aktionssymbolleiste.
+1. Wählen Sie ein Asset aus, das Sie in der Vorschau anzeigen möchten, und klicken Sie in der Symbolleiste „Aktionen“ auf „Vorschau“ ![aem6forms_preview](assets/aem6forms_preview.png).
 
    >[!NOTE]
    >
    >Um ein Asset auszuwählen, wechseln Sie aus der standardmäßigen Kartenansicht in die Listenansicht. Klicken Sie auf ![aem6forms_viewlist](assets/aem6forms_viewlist.png) oder ![aem6forms_viewcard](assets/aem6forms_viewcard.png), um die Ansichten zu wechseln.
 
-1. Durch Klicken auf Vorschau werden die möglichen Vorschauoptionen aufgelistet, die für den ausgewählten Asset-Typ gelten. Klicken Sie auf die gewünschte Option, um das ausgewählte Asset in einer neuen Registerkarte anzuzeigen.
+1. Durch das Klicken auf „Vorschau“ werden die möglichen und anwendbaren Vorschauoptionen für den ausgewählten Asset-Typ aufgelistet. Klicken Sie auf die gewünschte Option, um das ausgewählte Asset in einer neuen Registerkarte anzuzeigen.
 
    Ihre Optionen sind:
 
@@ -65,8 +65,7 @@ In der folgenden Tabelle sind die Vorschauoptionen aufgeführt, die für verschi
 
 ## Vorschau mit Daten {#preview-with-data}
 
-Wenn Sie **Vorschau mit Daten** können Sie sehen, wie das Formular mit echten eingegebenen Daten aussieht. Mit der Option Vorschau mit Daten können Sie eine XML-Datei hochladen, die Beispielbenutzerdaten enthält. Die Beispielbenutzerdaten werden zum Ausfüllen des Vorschauformulars in dem von Ihnen ausgewählten Format verwendet.
+Wenn Sie **Vorschau mit Daten** auswählen, können Sie sehen, wie das Formular mit echten eingegebenen Daten aussieht. Mit der Option „Vorschau mit Daten“ können Sie eine XML-Datei hochladen, die Beispielbenutzerdaten enthält. Die Beispielbenutzerdaten werden zum Ausfüllen des Vorschauformulars in dem von Ihnen ausgewählten Format verwendet.
 
 1. Wählen Sie ein Asset aus, klicken Sie auf „Vorschau“ ![aem6forms_preview](assets/aem6forms_preview.png) und wählen Sie **Vorschau mit Daten** aus.
-1. Geben Sie im Dialogfeld &quot;Formularvorschau&quot;FormData als XML-Datei an. Klicken Sie auf Vorschau , um das Formular mit den zusammengeführten Daten aus XML wiederzugeben.
-
+1. Geben Sie im Dialogfeld „Formularvorschau“ FormData als XML-Datei an. Klicken Sie auf „Vorschau“, um das Formular mit den zusammengeführten Daten aus XML wiederzugeben.

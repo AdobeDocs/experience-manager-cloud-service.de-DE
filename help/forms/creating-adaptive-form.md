@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1493'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -78,9 +78,9 @@ Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 
 1. Geben Sie Ihre Anmeldedaten auf der Experience Manager-Anmeldeseite ein.
 
-   Nachdem Sie angemeldet sind, wählen Sie links oben die Option **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms und Dokumente]**.
+   Wenn Sie sich angemeldet haben, wählen Sie in der linken oberen Ecke **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 
-1. Auswählen **[!UICONTROL Erstellen]**  > **[!UICONTROL Adaptives Forms]**. Der Assistent wird geöffnet.
+1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Adaptives Formular]**. Der Assistent wird geöffnet.
 1. Wählen Sie auf der Registerkarte „Quelle“ eine Vorlage aus:
 
    * Wenn Sie eine bearbeitbare Vorlage auswählen, werden ein Design und eine Sendeaktion, die in der Vorlage angegeben sind, automatisch ausgewählt und die **[!UICONTROL Erstellen]**-Schaltfläche wird aktiviert. Sie können zu den Registerkarten **[!UICONTROL Stil]** oder **[!UICONTROL Übermittlung]** gehen, um ein anderes Design oder eine andere Übermittlungsaktion auszuwählen. Wenn in der ausgewählten bearbeitbaren Vorlage kein Design angegeben wird, bleibt die Schaltfläche „Erstellen“ deaktiviert. Sie können zur Registerkarte **[!UICONTROL Stile]** gehen, um ein Design manuell auszuwählen.
@@ -181,13 +181,13 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 Sie können das Formularmodell für ein adaptives Formular (JSON-basiertes oder Formulardatenmodell) ändern. Sie können nicht zwischen Formularmodellen wechseln.
 
-1. Wählen Sie das adaptive Formular aus und wählen Sie die **Eigenschaften** Symbol.
+1. Wählen Sie das adaptive Formular aus und wählen Sie dann das Symbol **Eigenschaften**.
 1. Öffnen Sie die Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie eine der folgenden Vorgehensweisen.
 
    * Wenn das adaptive Formular nicht auf einem Formularmodell basiert, können Sie ein Formularmodell und ein entsprechendes XML- oder JSON-Schema oder ein Formulardatenmodell auswählen.<!-- a form template, -->
    * Bei einem adaptiven Formular, das auf einem Formularmodell basiert, können Sie ein anderes <!-- form template, --> XML-Schema, JSON-Schema oder Formulardatenmodell für dasselbe Formularmodell wählen.
 
-1. Auswählen **[!UICONTROL Speichern]** , um die Eigenschaften zu speichern.
+1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Änderungen zu speichern.
 
 Sie können die Eigenschaften des Formularmodells auch im Editor für adaptive Formulare oder im Vorlagen-Editor für adaptive Formulare ändern.
 
@@ -196,8 +196,8 @@ Sie können die Eigenschaften des Formularmodells auch im Editor für adaptive F
 1. Öffnen Sie die Registerkarte **[!UICONTROL Datenmodell]** und führen Sie eine der folgenden Aktionen aus:
 
    * Wenn das adaptive Formular nicht auf einem Formularmodell basiert, können Sie ein Formularmodell und ein entsprechendes XML- oder JSON-Schema für eine <!-- a form template, --> oder ein Formulardatenmodell auswählen.
-   * Wenn das adaptive Formular auf einem Formularmodell basiert, können Sie das Formularmodell nicht ändern. Sie können ggf. ein anderes XML- oder JSON-Schema für eine <!-- form template, --> oder ein Formulardatenmodell für dasselbe Formularmodell wählen.
-1. Auswählen ![Speichern](/help/forms/assets/check-button.png) , um die Eigenschaften zu speichern.
+   * Wenn das adaptive Formular auf einem Formularmodell basiert, können Sie das Formularmodell nicht ändern. Sie können ggf. ein anderes <!-- form template, --> XML- oder JSON-Schema oder ein Formulardatenmodell für dasselbe Formularmodell wählen.
+1. Wählen Sie ![Speichern](/help/forms/assets/check-button.png) aus, um die Änderungen zu speichern.
 
 ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)
 

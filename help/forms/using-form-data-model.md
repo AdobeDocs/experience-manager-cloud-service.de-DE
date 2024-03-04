@@ -6,9 +6,9 @@ role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
 source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1290'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Sie können [adaptive Formulare](creating-adaptive-form.md) und adaptive Formula
 
    ![Create-af-1-1](assets/create-af-1-1.png)
 
-1. Zum Erweitern auswählen **[!UICONTROL Formulardatenmodell auswählen]**. Alle verfügbaren Formulardatenmodelle werden aufgelistet.
+1. Wählen Sie **[!UICONTROL Formulardatenmodell auswählen]**, um es zu erweitern. Alle verfügbaren Formulardatenmodelle werden aufgelistet.
 
    Wählen Sie ein Formulardatenmodell aus.
 
@@ -100,7 +100,7 @@ The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)-->
 
-Um ein adaptives Formular mit Beispieldaten in der Vorschau anzuzeigen, öffnen Sie das adaptive Formular im Autorenmodus und wählen Sie **[!UICONTROL Vorschau]**.
+Um ein adaptives Formular mit Beispieldaten in der Vorschau anzuzeigen, öffnen Sie das Formular im Autorenmodus und wählen Sie **[!UICONTROL Vorschau]**.
 
 ## Vorbefüllen mit dem Formulardatenmodell-Service {#prefill}
 
@@ -125,12 +125,12 @@ So konfigurieren Sie die Übermittlungsaktion für das Formulardatenmodell:
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
 1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Übermittlung]**.
-1. Aus dem **[!UICONTROL Übermittlungsaktion]** Dropdown-Liste auswählen **[!UICONTROL Senden mit Formulardatenmodell]**.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** die Option **[!UICONTROL Mit Formulardatenmodell absenden]**.
 
    ![Aktionskonfiguration](/help/forms/assets/configure-submit-action-invoke-fdm.png)
 
-1. Geben Sie die **[!UICONTROL Zu übermittelndes Datenmodell]**.
-1. Klicks **[!UICONTROL Fertig]**
+1. Geben Sie das **[!UICONTROL Datenmodell an, das übermittelt werden soll]**.
+1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
 Beim Senden des Formulars werden die Daten für das konfigurierte Datenmodellobjekt in die entsprechende Datenquelle geschrieben. Darüber hinaus können Sie einen Formularanhang mit einem Formulardatenmodell und einem Datensatzdokument (Document of Record) an die Datenquelle senden. Weitere Informationen zum Formulardatenmodell finden Sie unter [[!DNL AEM Forms] Datenintegration](data-integration.md).
 
@@ -138,16 +138,16 @@ Beim Senden des Formulars werden die Daten für das konfigurierte Datenmodellobj
 
 >[!NOTE]
 >
-> AEM as a Cloud Service bietet verschiedene vordefinierte Übermittlungsaktionen für die Verarbeitung von Formularübermittlungen. Weitere Informationen zu diesen Optionen finden Sie im Abschnitt [Übermittlungsaktion für adaptive Formulare](/help/forms/configure-submit-actions-core-components.md)  Artikel.
+> AEM as a Cloud Service bietet verschiedene vordefinierte Übermittlungsaktionen für die Verarbeitung von Formularübermittlungen. Weitere Informationen zu diesen Optionen finden Sie im Artikel [Übermittlungsaktion für adaptive Formulare](/help/forms/configure-submit-actions-core-components.md).
 
 Sie können auch Formularanhänge mit der Objekteigenschaft des binären Datenmodells an eine Datenquelle senden. Führen Sie folgende Schritte aus, um Anlagen an eine JDBC-Datenquelle zu senden:
 
 1. Fügen Sie dem Formulardatenmodell ein Datenmodellobjekt hinzu, das eine binäre Eigenschaft enthält.
 1. Ziehen Sie im adaptiven Formular die Komponente **[!UICONTROL Dateianhang]** aus dem Komponentenbrowser auf das adaptive Formular.
-1. Wählen Sie aus, um die hinzugefügte Komponente auszuwählen, und wählen Sie ![settings_icon](assets/configure-icon.svg) , um den Eigenschaftenbrowser für die Komponente zu öffnen.
-1. Wählen Sie im Feld &quot;Bindungsverweis&quot;die Option ![folderSearch_18](assets/folder-search-icon.svg) und navigieren Sie zur Auswahl der binären Eigenschaft, die Sie im Formulardatenmodell hinzugefügt haben. Konfigurieren Sie weitere Eigenschaften entsprechend.
+1. Wählen Sie die hinzugefügte Komponente und wählen Sie dann ![settings_icon](assets/configure-icon.svg), um den Eigenschaften-Browser für die Komponente zu öffnen.
+1. Wählen Sie im Feld „Bindungsverweis“ die Option ![foldersearch_18](assets/folder-search-icon.svg), navigieren Sie zur binären Eigenschaft, die Sie im Formulardatenmodell hinzugefügt haben, und wählen Sie sie aus. Konfigurieren Sie weitere Eigenschaften entsprechend.
 
-   Auswählen ![check-button](assets/save_icon.svg) , um die Eigenschaften zu speichern. Das Anlagenfeld ist jetzt an die binäre Eigenschaft des Formulardatenmodells gebunden.
+   Wählen Sie ![check-button](assets/save_icon.svg), um die Eigenschaften zu speichern. Das Anlagenfeld ist jetzt an die binäre Eigenschaft des Formulardatenmodells gebunden.
 
 1. Aktivieren Sie im Übermittlungsabschnitt der Eigenschaften des Containers für adaptive Formulare die Option **[!UICONTROL Formularanhänge einreichen]**. Dies sendet den Anhang im Feld der binären Eigenschaft bei der Formularübermittlung an die Datenquelle.
 

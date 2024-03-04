@@ -1,11 +1,11 @@
 ---
 title: Erste Schritte mit CIF-Authoring
-description: Erste Schritte mit CIF Authoring
+description: Erste Schritte mit CIF-Authoring.
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '778'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Wenn Produkt- und Kategoriedaten in Commerce-Komponenten oder AEM-Back-Office-Di
 
 ### Produktauswahl
 
-Durch Klicken auf das Ordnersymbol wird die modale Benutzeroberfläche der Auswahl geöffnet (z. B. Produkt-Teaser).
+Durch Klicken auf das Ordnersymbol wird die modale Benutzeroberfläche der Auswahl geöffnet (z. B. Produkt-Teaser).
 ![Produktauswahl](assets/product-picker-open.png)
 
 Produkte können über die Katalogstruktur auf der linken Seite oder über die Suche gefunden werden. Die Volltextsuche berücksichtigt die ausgewählte Kategorie und beschränkt die Suchergebnisse auf diese Kategorie.
@@ -57,7 +57,7 @@ Produkte mit Varianten werden mit einem Ordnersymbol gekennzeichnet, auf das Sie
 
 ### Kategorieauswahl
 
-Funktioniert wie eine Produktauswahl. Durch Klicken auf das Ordnersymbol wird die modale Benutzeroberfläche der Auswahl geöffnet (z. B. Kategoriekarussell).
+Funktioniert wie eine Produktauswahl. Durch Klicken auf das Ordnersymbol wird die modale Benutzeroberfläche der Auswahl geöffnet (z. B. Kategoriekarussell).
 ![Kategorieauswahl](assets/category-picker-open.png)
 
 Durchsuchen Sie die Katalogstruktur auf der linken Seite und wählen Sie die Kategorie aus.

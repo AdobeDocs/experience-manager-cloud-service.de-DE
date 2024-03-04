@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1002'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 85%
 
 <!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service (OData Service) ist für alle Ausführungsmodi verfügbar. Weitere Informationen zum Konfigurieren der Ausführungsmodi für eine [!DNL Experience Manager]-Instanz finden Sie unter [Ausführungsmodi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=de#runmodes).
 
-AEM as a Cloud Service bietet verschiedene vordefinierte Übermittlungsaktionen für die Verarbeitung von Formularübermittlungen. Weitere Informationen zu diesen Optionen finden Sie im Abschnitt [Übermittlungsaktion für adaptive Formulare](/help/forms/configure-submit-actions-core-components.md)  Artikel.
+AEM as a Cloud Service bietet verschiedene vordefinierte Übermittlungsaktionen für die Verarbeitung von Formularübermittlungen. Mehr über diese Optionen erfahren Sie in dem Artikel [Übermittlungsaktion für adaptive Formulare](/help/forms/configure-submit-actions-core-components.md).
 
 
 ## Voraussetzungen {#prerequisites}
@@ -125,11 +125,11 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
 >
 >Eine schrittweise Anleitung zum Konfigurieren von [!DNL Microsoft Dynamics 365], online oder On-Premise, finden Sie unter [[!DNL Microsoft Dynamics] OData-Konfiguration](ms-dynamics-odata-configuration.md).
 
-1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Data Sources]**. Wählen Sie aus, um den Ordner auszuwählen, in dem Sie eine Cloud-Konfiguration erstellen möchten.
+1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Data Sources]**. Wählen Sie den Ordner aus, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
    Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](#cloud-folder).
 
-1. Auswählen **[!UICONTROL Erstellen]** , um die **[!UICONTROL Assistent zum Erstellen der Datenquellenkonfiguration]**. Geben Sie einen Namen und optional einen Titel für die Konfiguration an, wählen Sie **[!UICONTROL OData-Dienst]** aus dem **[!UICONTROL Diensttyp]** in der Dropdown-Liste, optional ein Miniaturbild für die Konfiguration durchsuchen und auswählen und **[!UICONTROL Nächste]**.
+1. Wählen Sie **[!UICONTROL Erstellen]**, um den **[!UICONTROL Assistenten zum Erstellen der Datenquellenkonfiguration]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL OData-Service]** aus der **[!UICONTROL Dropdown-Liste „Service-Typ“]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration und wählen Sie **[!UICONTROL Weiter]**.
 Auf der Registerkarte **[!UICONTROL Authentifizierungseinstellungen]**:
 
    1. Geben Sie den Wert für das Feld **[!UICONTROL Service-Stamm]** ein. Wechseln Sie zur Dynamics-Instanz und navigieren Sie zu **[!UICONTROL Entwickler-Ressourcen]**, um den Wert für das Feld „Service-Stamm“ anzuzeigen. Beispiel: https://&lt;tenant-name>/api/data/v9.1/
@@ -161,9 +161,9 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-Nachdem Sie den MS Dynamics OData-Cloud-Dienst konfiguriert haben, können Sie den Dienst beim Erstellen von Formulardatenmodellen verwenden. Weitere Informationen finden Sie unter [Erstellen des Formulardatenmodells](create-form-data-models.md).
+Nach der Konfiguration des MS Dynamics-OData-Cloud-Service können Sie den Service beim Erstellen von Formulardatenmodellen verwenden. Weitere Informationen finden Sie unter [Erstellen von Formulardatenmodellen](create-form-data-models.md).
 
-Als Nächstes können Sie ein Datenmodell für ein adaptives Formular erstellen und es in verschiedenen Anwendungsfällen für adaptive Formulare verwenden, z. B.:
+Anschließend können Sie ein adaptives Formular erstellen, das auf dem Datenmodell basiert, und es dann in verschiedenen Anwendungsfällen für adaptive Formulare verwenden, wie zum Beispiel:
 
 * Befüllen eines adaptiven Formulars durch Abfragen von Informationen aus [!DNL Microsoft Dynamics]-Entitäten und -Services
 * Aufrufen von [!DNL Microsoft Dynamics]-Servervorgängen, die in einem Formulardatenmodell definiert sind, mithilfe von adaptiven Formularregeln
@@ -171,9 +171,9 @@ Als Nächstes können Sie ein Datenmodell für ein adaptives Formular erstellen 
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
 
-Sie können [Konfigurieren der Sendeaktion &quot;Formulardatenmodell&quot;](/help/forms/using-form-data-model.md) für ein adaptives Formular zum Senden von Daten an Microsoft Dynamics OData.
+Sie können [die Formulardatenmodell-Übermittlungsaktion](/help/forms/using-form-data-model.md) für ein adaptives Formular so konfigurieren, dass Daten an Microsoft Dynamics OData gesendet werden.
 
-Weitere Informationen über die Erstellung und Verwendung des Formulardatenmodells in Unternehmens-Workflows finden Sie unter [Datenintegration](data-integration.md).
+Weitere Informationen über die Erstellung und Verwendung eines Formulardatenmodells in Unternehmens-Workflows finden Sie unter [Datenintegration](data-integration.md).
 
 ## Ähnliche Artikel
 

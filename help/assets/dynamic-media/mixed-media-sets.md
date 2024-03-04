@@ -1,18 +1,18 @@
 ---
-title: Gemischte Mediensets
-description: Erfahren Sie, wie Sie mit gemischten Mediensets in Dynamic Media arbeiten.
+title: Sets für gemischte Medien
+description: In diesem Abschnitt erfahren Sie, wie Sie Sets für gemischte Medien in Dynamic Media verwenden.
 contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1507'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Gemischte Mediensets{#mixed-media-sets}
+# Sets für gemischte Medien{#mixed-media-sets}
 
 Mit gemischten Mediensets können Sie eine Mischung aus Bildern, Bildsets, Rotationssets und Videos in einer Präsentation bereitstellen.
 
@@ -158,7 +158,7 @@ Sie können direkt auf der Benutzeroberfläche verschiedene Bearbeitungsaufgaben
 
    >[!NOTE]
    >
-   >* Um die Assets in einem gemischten Medienset zu bearbeiten, navigieren Sie zum gemischten Medienset. Wählen Sie das Set aus (wählen Sie es nicht aus), damit Sie es auf der Seite &quot;Experience Manager-Set-Vorschau&quot;öffnen können. Klicken Sie in der linken Leiste auf das Caret-Zeichen nach unten, um die Dropdown-Liste zu öffnen, und klicken Sie dann auf **[!UICONTROL Set-Mitglieder]**. Bewegen Sie den Mauszeiger auf der Seite „Set-Mitglieder“ über ein Asset und klicken Sie dann auf **[!UICONTROL Bearbeiten]** (Stiftsymbol), um die Bearbeitungsseite zu öffnen.
+   >* Um die Assets in einem gemischten Medienset zu bearbeiten, navigieren Sie zum gemischten Medienset. Wählen Sie das Set (nicht auswählen), um es auf der Seite „Experience Manager-Set-Vorschau“ zu öffnen. Klicken Sie in der linken Leiste auf das Caret-Zeichen nach unten, um die Dropdown-Liste zu öffnen, und klicken Sie dann auf **[!UICONTROL Set-Mitglieder]**. Bewegen Sie den Mauszeiger auf der Seite „Set-Mitglieder“ über ein Asset und klicken Sie dann auf **[!UICONTROL Bearbeiten]** (Stiftsymbol), um die Bearbeitungsseite zu öffnen.
    >
    >* Um ein komplettes gemischtes Medienset aus einem Anzeigemodus zu löschen (z. B. Karten- oder Spaltenansicht), navigieren Sie zum gemischten Medienset. Bewegen Sie den Mauszeiger über das Set und klicken Sie dann auf **[!UICONTROL Auswählen]** (Häkchensymbol). Drücken Sie die **[!UICONTROL Rücktaste]** oder klicken Sie auf **[!UICONTROL Mehr]** (Reihe von drei Punkten) und dann auf **[!UICONTROL Löschen]**.
 

@@ -1,14 +1,15 @@
 ---
-description: Die Qualität des Erlebnisses von Websites ist entscheidend, um die Geschäftsziele Ihrer Website und die Zufriedenheit Ihrer Besucher zu erreichen.
-title: Behalten Sie es bei 100, Web Performance
+description: Die Qualität des Erlebnisses von Websites ist entscheidend, um die Geschäftsziele Ihrer Website und die Zufriedenheit Ihrer Besucherinnen und Besucher zu erreichen.
+title: 100 % halten, Web-Performance
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: f808ae16-15b7-48ce-a477-76268ba005ec
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '33'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Behalten Sie es bei 100, Web Performance
+# 100 % halten, Web-Performance
 
 {{$include c8f9d9c3-0687-4d69-8f54-cf6e603747a8}}

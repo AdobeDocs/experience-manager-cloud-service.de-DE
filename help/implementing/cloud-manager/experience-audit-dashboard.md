@@ -3,9 +3,9 @@ title: Experience Audit-Dashboard
 description: Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und durch eine klare, informative Dashboard-Oberfläche sicherstellt, dass die bereitgestellten Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '824'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Im Abschnitt **Lighthouse-Bewertungen** finden Sie eine Trend-Ansicht der versch
 
 ![Diagramme zu Lighthouse-Bewertungen](assets/lighthouse-scores.png)
 
-Jeder Punkt im Diagramm entspricht dem Durchschnitt aller Implementierungen im Monat des Interesses.
+Jeder Punkt im Diagramm ist der Durchschnitt aller Implementierungen im jeweiligen Monat.
 
 Um zur Ausführungsseite der Produktions-Pipeline zurückzukehren, wählen Sie einfach den Zurück-Pfeil im Browser aus.
 

@@ -6,9 +6,9 @@ feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 >
 >Viele erweiterte DAM-Nutzungsszenarien werden von [!DNL Experience Manager Assets] erfüllt. Die Media Library-Lizenz berechtigt Sie nur dazu, die aufgelisteten Nutzungsszenarien mit Media Library zu erfüllen. Wenn ein Anwendungsfall nicht aufgeführt ist, wenden Sie ihn nicht mit der Media Library-Lizenz an. Wenn Sie Fragen haben, wenden Sie sich bitte an den Support.
 
-Sie können keine Smart-Tags verwenden. [!DNL Asset] -Link, [!DNL Asset] Auswahl, Massen-Tagging, Ändern von Asset-Workflows oder Standard [!DNL Adobe Experience Manager] Benutzeroberfläche für den Zugriff auf Media Library ohne [!DNL Assets] -Lizenz.
+Beachten Sie, dass Sie ohne [!DNL Assets]-Lizenz keine Smart Tags, keinen [!DNL Asset]-Link, keine [!DNL Asset]-Auswahl, kein Bulk-Tagging, keine modifizierten Asset-Workflows oder die Standard-[!DNL Adobe Experience Manager]-Benutzeroberfläche verwenden können, um auf die Medienbibliothek zuzugreifen.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
@@ -116,4 +116,4 @@ Sie können keine Smart-Tags verwenden. [!DNL Asset] -Link, [!DNL Asset] Auswahl
 >[!MORELIKETHIS]
 >
 >* [DAM-Funktionen in  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=de)
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [[!DNL Experience Manager]  as a  [!DNL Cloud Service] -Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-cloud-service.html)

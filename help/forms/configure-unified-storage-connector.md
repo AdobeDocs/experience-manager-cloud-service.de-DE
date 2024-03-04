@@ -5,9 +5,9 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Workflow
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '642'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -28,10 +28,10 @@ Stellen Sie vor dem Ausführen dieser Schritte sicher, dass Sie über ein [!DNL 
 Führen Sie die folgenden Schritte aus, um eine [!DNL Azure]-Speicherkonfiguration zu erstellen:
 
 1. Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure-Speicher]**.
-1. Wählen Sie einen Ordner aus, um die Konfiguration zu erstellen, und wählen Sie **[!UICONTROL Erstellen]**.
+1. Wählen Sie einen Ordner aus, um die Konfiguration zu erstellen, und wählen Sie anschließend die Option **[!UICONTROL Erstellen]** aus.
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Titel für die Konfiguration an.
 1. Geben Sie den Namen des [!DNL Azure]-Speicherkontos im Feld **[!UICONTROL Azure-Speicherkonto]** an.
-1. Geben Sie den Schlüssel für den Zugriff auf das Azure-Speicherkonto im **[!UICONTROL Azure Access Key]** Feld und wählen Sie **[!UICONTROL Speichern]**.
+1. Geben Sie den Schlüssel für den Zugriff auf das Azure-Speicherkonto im Feld **[!UICONTROL Azure-Zugriffsschlüssel]** an und wählen Sie **[!UICONTROL Speichern]** aus.
 
 ### Konfigurieren von Unified Storage Connector (USC) für AEM-Workflows {#configure-unified-storage-connector-workflows}
 
@@ -41,7 +41,7 @@ Führen Sie die folgenden Schritte aus, um Unified Storage Connector (USC) für 
 
 1. Wählen Sie im Abschnitt **[!UICONTROL Workflow]** den Eintrag **[!UICONTROL Azure]** aus der Dropdown-Liste „Speicher“ aus.
 1. Geben Sie den [Konfigurationspfad für die Azure-Speicherkonfiguration](#create-azure-storage-configuration) im Feld **[!UICONTROL Pfad für Speicherkonfiguration]** an.
-1. Auswählen **[!UICONTROL Veröffentlichen]** und wählen Sie **[!UICONTROL Speichern]** , um die Konfiguration zu speichern.
+1. Wählen Sie **[!UICONTROL Veröffentlichen]** und anschließend **[!UICONTROL Speichern]** aus, um die Konfiguration zu speichern.
 
 ### Konfigurieren eines AEM-Workflow-Modells für die externe Datenspeicherung {#configure-workflow-external-data-storage}
 

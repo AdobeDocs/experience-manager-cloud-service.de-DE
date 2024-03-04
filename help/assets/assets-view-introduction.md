@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die wichtigsten Vorteile der Assets-Ansicht
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 source-git-commit: 408a691de8a6fe2801a9907308db43f2050528c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '972'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Richten Sie mithilfe der Assets-Ansicht schnell eine Ordnerstruktur für Ihre Or
 
 ### Search-First-Ansatz für mehr Effizienz {#search-first}
 
-Erschließen Sie das Potenzial der digitalen Asset-Bibliothek Ihrer Organisation durch Suchvorgänge mit modernsten Funktionen. Sie können sich von der Mühe verabschieden, manuell durch unzählige Dateien und Ordner zu navigieren. Alle Benutzenden können sofort das perfekte Bild, Video oder Dokument für beeindruckende Marketing-Kampagnen, faszinierende Präsentationen und ansprechende Inhalte finden. Mit unserer Search-First-Suchmaschine können Sie mühelos durch Asset-Typen, Metadaten, Smarttags und sogar den Inhalt selbst navigieren, ohne das genaue Keyword zu kennen. Nutzen Sie die Zukunft des DAM mit unserem Search-First-Ansatz und schöpfen Sie das volle Potenzial Ihrer digitalen Asset-Bibliothek aus.
+Erschließen Sie das Potenzial der digitalen Asset-Bibliothek Ihrer Organisation durch Suchvorgänge mit modernsten Funktionen. Sie müssen nicht mehr mühevoll unzählige Dateien und Ordner manuell durchgehen. Alle Benutzenden können sofort das perfekte Bild, Video oder Dokument für beeindruckende Marketing-Kampagnen, faszinierende Präsentationen und ansprechende Inhalte finden. Mit unserer Search-First-Suchmaschine können Sie mühelos durch Asset-Typen, Metadaten, Smarttags und sogar den Inhalt selbst navigieren, ohne das genaue Keyword zu kennen. Nutzen Sie die Zukunft des DAM mit unserem Search-First-Ansatz und schöpfen Sie das volle Potenzial Ihrer digitalen Asset-Bibliothek aus.
 
 ![Search-First-Ansatz](assets/search-first.gif)
 

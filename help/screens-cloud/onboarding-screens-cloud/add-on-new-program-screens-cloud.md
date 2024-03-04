@@ -1,11 +1,11 @@
 ---
-title: Hinzufügen des Screens-Add-ons zu einem neuen Programm in Cloud Manager
-description: Erfahren Sie mehr über das Hinzufügen eines Screens-Add-ons zu einem neuen Programm in Cloud Manager für Screens as a Cloud Service.
+title: Hinzufügen eines Screens-Add-ons zu einem neuen Programm in Cloud Manager
+description: Auf dieser Seite wird beschrieben, wie Sie in Cloud Manager for Screens as a Cloud Service ein Screens-Add-on zu einem neuen Programm hinzufügen.
 exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '288'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
@@ -29,22 +29,22 @@ Gehen Sie wie folgt vor, um Screens as an Add-on zu einem neuen Programm in Clou
    >[!NOTE]
    >Weitere Informationen zu Cloud Manager finden Sie in der [Einführung in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=de).
 
-1. Klicks **Programm hinzufügen** von der Cloud Manager -Landingpage aus.
+1. Klicken Sie auf **Programm hinzufügen** auf der Landingpage von Cloud Manager.
 
    ![image](/help/screens-cloud/assets/onboarding/onboard-screens-addon1.png)
 
-1. Wählen Sie im Assistenten „Programm erstellen“ die Option **Für die Produktion einrichten** aus, um ein Produktionsprogramm zu erstellen. Der Benutzer kann den standardmäßigen Programmnamen akzeptieren oder ihn vor der Auswahl bearbeiten **Weiter**.
+1. Wählen Sie im Assistenten „Programm erstellen“ die Option **Für die Produktion einrichten** aus, um ein Produktionsprogramm zu erstellen. Die Benutzerin bzw. der Benutzer kann den Standardnamen des Programms annehmen oder bearbeiten und dann mit **Weiter** fortfahren.
 
    ![Bild](/help/screens-cloud/assets/onboarding/onboard-screens-addon2.png)
 
-1. Auswählen **Screens** als Add-on aus der **Für Produktion einrichten** in diesem Schritt des Assistenten angezeigt werden, und klicken Sie auf **Erstellen**.
+1. Wählen Sie in diesem Schritt des Assistenten **Screens** als Add-on auf dem Bildschirm **Für Produktion einrichten** und klicken Sie auf **Erstellen**.
 
    ![Bild](/help/screens-cloud/assets/onboarding/onboard-screens-addon3.png)
 
-1. Nachdem die Einrichtung des Programms abgeschlossen ist, wird Ihr Cloud Manager-Programm angezeigt. Beispiel: die **ScreensCloud-Demoprogramm**, wie in der folgenden Abbildung dargestellt, mit Screens als Add-on in Ihrem Programm.
+1. Nachdem die Einrichtung des Programms abgeschlossen ist, wird Ihr Cloud Manager-Programm angezeigt. Zum Beispiel das **ScreensCloud-Demoprogramm**, wie in der Abbildung unten gezeigt, mit Screens als Add-on in Ihrem Programm.
 
    ![image](/help/screens-cloud/assets/onboarding/onboard-screens-addon4.png)
 
-## Wie geht es weiter {#whats-next}
+## Wie es weitergeht: {#whats-next}
 
-Wenn Sie gelernt haben, wie Sie Screens als Add-on zu einem vorhandenen Cloud Manager-Programm hinzufügen können und Ihr Programm unter den Programmen und Produkten von Cloud Manager angezeigt wird, können Sie fortfahren. Der nächste Schritt im Onboarding-Prozess ist [Erstellen einer Verzweigung für Ihr Projekt in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
+Wenn Sie gelernt haben, wie Sie Screens als Add-on zu einem vorhandenen Cloud Manager-Programm hinzufügen können und Ihr Programm unter den Programmen und Produkten von Cloud Manager angezeigt wird, können Sie fortfahren. Der nächste Schritt im Onboarding-Prozess ist das [Erstellen einer Verzweigung für Ihr Projekt in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).

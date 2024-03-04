@@ -6,9 +6,9 @@ feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '719'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -106,7 +106,7 @@ Folgen Sie der Dokumention zu AEM-Inhaltsfragmenten, um einen GraphQL-Endpunkt f
 
 Die vollständigen Beispiele für beide Konfigurationen finden Sie hier: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
-Um den GraphQL-Endpunkt zu präsentieren, gibt es einige vorbereitete Beispiel-Inhaltsfragmentmodelle und -daten über ein Inhaltspaket. Diese funktionieren gut zusammen mit den React-Komponenten, die mit der PWA Studio-Erweiterung bereitgestellt werden.
+Zur Veranschaulichung des GraphQL-Endpunkts gibt es einige vorbereitete Beispielmodelle für Inhaltsfragmente und Daten über ein Inhaltspaket. Diese funktionieren gut zusammen mit den React-Komponenten, die mit der PWA Studio-Erweiterung bereitgestellt werden.
 
 ## Verwendung {#how-to-use}
 

@@ -3,9 +3,9 @@ title: Verwenden von Content Transformer
 description: Erfahren Sie, wie Sie Ihre Inhaltsstruktur transformieren können, um die Migration auf AEM as a Cloud Service vorzubereiten.
 exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '630'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -52,10 +52,10 @@ Der Content Transformer ist mit dem [Content Transfer Tool](/help/journey-migrat
 
    ![Bild](/help/journey-migration/content-transformer/assets/ct-4.png)
 
-1. Sie können alle oder bestimmte Probleme auswählen und sie verschieben, entfernen und umbenennen, um sie zu beheben. Benutzerdefinierte Pfade können auch über die Schaltfläche **Pfade hinzufügen** in der oberen rechten Ecke hinzugefügt werden.
+1. Sie können alle oder bestimmte Probleme auswählen und sie verschieben, entfernen und umbenennen, um sie zu beheben. Benutzerdefinierte Pfade können auch über die Schaltfläche **Pfade hinzufügen** in der rechten oberen Ecke hinzugefügt werden.
 
    >[!NOTE]
-   > Bei Verwendung des Verschiebevorgangs wird empfohlen, alle Pfade in nur einen Ordner zu verschieben (z. B. unter `/etc/packages/content-transformation/paths`). Wenn also die Backup-Pakete installiert sind, um die Instanz wieder in den Originalzustand zu versetzen, wird der Ordner (`/etc/packages/content-transformation/paths`) kann mithilfe des Entfernen-Vorgangs gelöscht werden, um die Repository-Größe zu reduzieren.
+   > Bei Verwendung des Verschiebevorgangs wird empfohlen, alle Pfade in nur einen Ordner zu verschieben (z. B. unter `/etc/packages/content-transformation/paths`). Wenn also die Backup-Pakete installiert sind, um die Instanz wieder in den Originalzustand zu versetzen, kann der Ordner (`/etc/packages/content-transformation/paths`) mithilfe des Vorgangs zum Entfernen gelöscht werden, um die Repository-Größe zu reduzieren.
 
    ![image](/help/journey-migration/content-transformer/assets/ct-5.png)
    ![image](/help/journey-migration/content-transformer/assets/ct-6.png)
@@ -63,7 +63,7 @@ Der Content Transformer ist mit dem [Content Transfer Tool](/help/journey-migrat
    >[!NOTE]
    > Jeder Vorgang, der den Quellinhalt ändern kann (`move`/`remove`/`rename`), erstellt vor der Umwandlung standardmäßig ein Backup-Paket der Quellpfade unter `/etc/packages/content-transformation`. Obwohl jedes Vorgangsdialogfeld über eine Option zum Deaktivieren/Aktivieren der Erstellung von Backup-Paketen verfügt, wird dringend empfohlen, die Erstellung von Paketen immer zu aktivieren.
 
-1. Ein Beispiel für ein Backup-Paket, das für den Verschiebevorgang der Pfade erstellt wurde, ist unten abgebildet. Klicken Sie auf „Installieren“, um die Quellpfade wiederherzustellen. Die Installation bringt nur die Quellpfade an ihren ursprünglichen Speicherort zurück und löscht nicht die Pfade, auf die sie während der Umwandlung verschoben wurden. Um die Pfade am verschobenen Speicherort zu löschen, klicken Sie auf **Pfade hinzufügen** Schaltfläche zum Hinzufügen des Standorts (z. B. `/etc/packages/content-transformation/paths`), wählen Sie den Ort aus und klicken Sie auf **Entfernen**.
+1. Ein Beispiel für ein Backup-Paket, das für den Verschiebevorgang der Pfade erstellt wurde, ist unten abgebildet. Klicken Sie auf „Installieren“, um die Quellpfade wiederherzustellen. Die Installation bringt nur die Quellpfade an ihren ursprünglichen Speicherort zurück und löscht nicht die Pfade, auf die sie während der Umwandlung verschoben wurden. Um die Pfade an dem verschobenen Speicherort zu löschen, klicken Sie auf die Schaltfläche **Pfade hinzufügen**, um den Speicherort hinzuzufügen (zum Beispiel `/etc/packages/content-transformation/paths`), wählen Sie den Speicherort aus und klicken Sie auf **Entfernen**.
 
    >[!CAUTION]
    > Löschen Sie nicht `/etc/packages/content-transformation`, da dies der Speicherort ist, an dem sich die Backup-Pakete befinden. Nur wenn Sie sicher sind, dass Sie diese Pakete nicht mehr benötigen, können Sie diesen Speicherort löschen, um die Repository-Größe zu reduzieren.

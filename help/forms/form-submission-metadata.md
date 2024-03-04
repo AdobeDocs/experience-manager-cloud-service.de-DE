@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '693'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,8 +27,8 @@ Ein weiteres Beispiel ist ein Formular, das E-Mail-IDs und Telefonnummern erfass
 Führen Sie die folgenden Schritte aus, um den Metadaten ein Element hinzuzufügen:
 
 1. Öffnen Sie das adaptive Formular im Bearbeitungsmodus.\
-   Um das Formular im Bearbeitungsmodus zu öffnen, wählen Sie im Forms Manager das Formular aus und wählen Sie **[!UICONTROL Öffnen]**.
-1. Wählen Sie im Bearbeitungsmodus eine Komponente aus und wählen Sie ![Feldebene](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]** und wählen Sie ![cmppr](assets/configure-icon.svg).
+   Um das Formular im Bearbeitungsmodus zu öffnen, wählen Sie es im Forms Manager aus und wählen Sie **[!UICONTROL Öffnen]**.
+1. Wählen Sie im Bearbeitungsmodus eine Komponente aus, wählen Sie ![Feldebene](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]** und dann ![cmppr](assets/configure-icon.svg).
 1. Klicken Sie in der Seitenleiste auf **[!DNL Metadata]**.
 1. Klicken Sie im Abschnitt „Metadaten“ auf **[!DNL Add]**.
 1. Verwenden Sie das Feld „Wert“ auf der Registerkarte „Metadaten“, um Skripte hinzuzufügen. Die Skripte, die Sie hinzufügen, erfassen Daten aus Elementen im Formular und berechnen Werte, die an die Metadaten übergeben werden.

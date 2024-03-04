@@ -3,9 +3,9 @@ title: Generieren von Zugriffs-Token für Server-seitige APIs
 description: Erfahren Sie, wie Sie durch Generieren eines sicheren JWT-Tokens die Kommunikation zwischen einem Drittanbieter-Server und AEM as a Cloud Service ermöglichen.
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2089'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -110,7 +110,7 @@ Zunächst muss in der Adobe Admin Console ein neues Produktprofil erstellt werde
 
 1. Navigieren Sie zur Adobe Admin Console unter [https://adminconsole.adobe.com/](https://adminconsole.adobe.com/).
 1. Klicken Sie auf den Link **Verwalten** unter der Spalte **Produkte und Dienste** auf der linken Seite.
-1. Auswählen **AEM as a Cloud Service**.
+1. Wählen Sie **AEM as a Cloud Service**.
 1. Klicken Sie auf die Schaltfläche **Neues Profil.**
 
    ![Neues Profil](/help/implementing/developing/introduction/assets/s2s-newproductprofile.png)

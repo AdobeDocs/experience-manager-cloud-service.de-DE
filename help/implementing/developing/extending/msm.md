@@ -3,9 +3,9 @@ title: Erweitern des Multi-Site-Managers
 description: Erfahren Sie, wie Sie die Funktionen des Multi-Site-Managers erweitern können.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2337'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ Erstellen Sie dazu zwei Klassen:
 
    * `getName`: Gibt den Namen der Aktion zurück
 
-      * Der Name wird verwendet, um auf die Aktion zu verweisen, z. B. in Rollout-Konfigurationen.
+      * Der Name wird verwendet, um auf die Aktion zu verweisen, z. B. in Rollout-Konfigurationen.
 
    * `execute`: Führt die Aufgabe der Aktion aus
 
@@ -204,7 +204,7 @@ Rollout-Konfigurationen werden unter dem [Rollout-Konfigurationsknoten](#create-
 
 Fügen Sie untergeordnete Knoten des Typs `cq:LiveSyncAction` hinzu, um Synchronisierungsaktionen zur Rollout-Konfiguration hinzuzufügen. Die Reihenfolge der Synchronisierungsaktionsknoten bestimmt die Reihenfolge, in der die Aktionen durchgeführt werden.
 
-1. Wählen Sie unter CRXDE Lite Ihre [Rollout-Konfiguration](#create-the-rollout-configuration) Knoten, z. B. `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
+1. Wählen Sie in CRXDE Lite Ihren [Rollout-Konfigurationsknoten](#create-the-rollout-configuration) aus, z. B. `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
 
 1. Erstellen Sie einen Knoten mit den folgenden Knoteneigenschaften:
 

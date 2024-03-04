@@ -3,9 +3,9 @@ title: Erste Schritte auf der Migrationstour zu Adobe Experience Manager as a Cl
 description: Beginnen Sie Ihre Migrationstour, indem Sie sich mit den Grundlagen des Umstiegs auf Adobe Experience Manager as a Cloud Service vertraut machen.
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '560'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Mit AEM as a Cloud Service können sich Ihre Teams auf Innovationen konzentriere
 
 Die Migrationstour zu Cloud Service umfasst die folgenden Phasen:
 
-* Ermitteln Sie in der [Bereitschaftsphase](/help/journey-migration/readiness.md) zunächst einmal, ob Ihre Bereitstellung für den Wechsel zu AEM as a Cloud Service bereit ist. In dieser Phase sollten Sie sich auch mit den Änderungen vertraut machen, die AEM as a Cloud Service eingeführt hat.
+* Ermitteln Sie in der [Bereitschaftsphase](/help/journey-migration/readiness.md) zunächst einmal, ob Ihre Bereitstellung für den Wechsel zu AEM as a Cloud Service bereit ist. In dieser Phase sollten Sie sich auch mit den Änderungen vertraut machen, die mit AEM as a Cloud Service eingeführt wurden.
 * Als Nächstes sollten Sie in der [Implementierungsphase](/help/journey-migration/implementation.md) Ihren Code und Ihre Inhalte fit für die Cloud machen. In dieser Phase werden Sie die Tools erkunden, die Adobe bereitstellt, um den Wechsel in die Cloud zu erleichtern.
 * Sobald alles eingerichtet ist, können Sie in der [Live-Schaltungsphase](/help/journey-migration/go-live.md) die Migration durchführen.
 * Schließlich sollten Sie in der [Phase nach der Live-Schaltung](/help/journey-migration/post-go-live.md) sicherstellen, dass Sie auch nach Abschluss der Migration auf Probleme achten und die Leistung optimieren.

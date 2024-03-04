@@ -1,11 +1,12 @@
 ---
-description: Beim Arbeiten mit einer großen Anzahl von Entwicklungsteams in vielen Projekten und Organisationen haben wir festgestellt, dass es nützlich ist, einige unserer Einblicke zu sammeln. Einige davon beziehen sich auf AEM, aber die meisten beziehen sich auf die Entwicklung von Frontend für allgemeine Zwecke oder sind nur allgemeine Richtlinien zur Zusammenarbeit in einem Entwicklerteam.
+description: Beim Arbeiten mit einer großen Anzahl von Entwicklungs-Teams in vielen Projekten und Organisationen haben wir festgestellt, dass es nützlich ist, einige unserer Einblicke zu sammeln. Einige davon beziehen sich auf AEM, aber die meisten beziehen sich auf die Entwicklung von Frontend für allgemeine Zwecke oder sind nur allgemeine Richtlinien zur Zusammenarbeit in einem Entwickler-Team.
 title: Entwicklungszusammenarbeit und Best Practices
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: e7f9b0f7-d22f-44ec-b8b7-85daa34de2a0
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '66'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

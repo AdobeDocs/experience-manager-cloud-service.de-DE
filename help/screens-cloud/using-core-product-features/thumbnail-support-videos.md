@@ -4,9 +4,9 @@ description: Auf dieser Seite wird beschrieben, wie Sie in Screens as a Cloud Se
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '548'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Gehen Sie wie folgt vor, um Miniaturansichten in Videos zu verwenden:
 1. Gehen Sie zu einem vorhandenen Screens-Kanal oder erstellen Sie einen Kanal.
 
    >[!NOTE]
-   >Informationen zum Erstellen eines Kanals und Hinzufügen von Inhalten zu einem Kanal finden Sie unter [Erstellen und Verwalten eines Kanals in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html).
+   >Informationen zum Erstellen eines Kanals und Hinzufügen von Inhalten zu einem Kanal finden Sie unter [Erstellen und Verwalten eines Kanals in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=de).
 
 1. Wählen Sie den Kanal aus. Klicken Sie in der Aktionsleiste auf **Bearbeiten**, um den Editor zu öffnen.
 

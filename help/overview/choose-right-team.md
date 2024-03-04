@@ -1,11 +1,11 @@
 ---
 title: Die richtigen Mitarbeiter, die richtigen Rollen
-description: Erfahren Sie, wie Sie die richtigen Personen für Ihr Projekt auswählen und sie den richtigen Rollen zuweisen können.
+description: Erfahren Sie, wie Sie die richtigen Personen für Ihr Projekt auswählen und sie den richtigen Rollen zuweisen.
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ Nachdem Sie nun wissen, welche Rollen erforderlich sind, sehen Sie in der folgen
 
 <br>
 
-![Horizontales Balkendiagramm mit fiktiven Rollen und ihrer Beteiligung am AEM Assets-Team.](/help/overview/assets/team_involvement2.png)
+![Horizontales Balkendiagramm mit fiktiven Rollen und dem Niveau ihrer Beteiligung am AEM Assets-Team.](/help/overview/assets/team_involvement2.png)
 
 >[!TIP]
 >

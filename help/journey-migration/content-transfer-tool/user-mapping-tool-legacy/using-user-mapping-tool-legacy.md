@@ -5,9 +5,9 @@ exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '806'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,9 +37,9 @@ Führen Sie die nachfolgenden Schritte aus, um dieses einzurichten:
 
 ## Zugriff auf die Benutzeroberfläche für das Tool für die Benutzerzuordnung {#user-interface}
 
-Das User Mapping Tool ist in das Content Transfer Tool integriert. Sie können das Content Transfer Tool vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) herunterladen. Weitere Informationen zur neuesten Version finden Sie in den [Aktuellen Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
+Das User Mapping Tool ist in das Content Transfer Tool integriert. Sie können das Content Transfer Tool vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html) herunterladen. Weitere Informationen zur neuesten Version finden Sie in den [Aktuellen Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. Wählen Sie die Adobe Experience Manager aus und navigieren Sie zu Tools > **Aktivitäten** > **Inhaltsmigration**.
+1. Wählen Sie Adobe Experience Manager aus und navigieren Sie zu „Tools“ > **Vorgänge** > **Inhaltsmigration**.
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access1.png)
 

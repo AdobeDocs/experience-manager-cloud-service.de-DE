@@ -4,9 +4,9 @@ description: Verschaffen Sie sich einen Überblick über die Compliance in Exper
 landing-page-description: Einen Überblick über Compliance in AEM as a Cloud Service, einschließlich Datenschutz und Barrierefreiheit, erhalten Sie hier.
 exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
 source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '90'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 

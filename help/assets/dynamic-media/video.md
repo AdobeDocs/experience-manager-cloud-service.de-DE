@@ -6,9 +6,9 @@ feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 source-git-commit: 0d5f95cc2e7378f09c8f6c4bc3858e7b42c07924
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '9350'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
 
 1. **Konfigurieren Sie Videos in Dynamic Media** anhand der folgenden Schritte:
 
-   * Erstellen Sie Ihr eigenes Videokodierungsprofil. Oder Sie können einfach die vordefinierte _Adaptive Videokodierung_ Profil, das mit Dynamic Media geliefert wird.
+   * Erstellen Sie Ihr eigenes Videokodierungsprofil. Sie können auch einfach das in „Dynamische Medien“ bereits integrierte vordefinierte Profil _Adaptive Videokodierung_ verwenden.
 
       * [Erstellen eines Videokodierungsprofils](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * Erfahren Sie mehr über die [Best Practices für Videokodierung](#best-practices-for-encoding-videos).
@@ -208,17 +208,17 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr>
    <td>Desktop</td>
    <td>Firefox 45 oder höher</td>
-   <td>HLS- oder DASH*-Streaming mit adaptiver Bitrate</td>
+   <td>HLS- oder DASH*-Streaming mit adaptiver Bit-Rate</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Chrome</td>
-   <td>HLS- oder DASH*-Streaming mit adaptiver Bitrate</td>
+   <td>HLS- oder DASH*-Streaming mit adaptiver Bit-Rate</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Safari (Mac)</td>
-   <td>HLS-Streaming mit adaptiver Bitrate</td>
+   <td>HLS-Streaming mit adaptiver Bit-Rate</td>
   </tr>
   <tr>
    <td>Mobilgerät</td>
@@ -228,7 +228,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr>
    <td>Mobilgerät</td>
    <td>Chrome (Android 7™ oder neuer)</td>
-   <td>HLS- oder DASH*-Streaming mit adaptiver Bitrate/td&gt;
+   <td>HLS- oder DASH*-Streaming mit adaptiver Bit-Rate/td&gt;
   </tr>
   <tr>
    <td>Mobilgerät</td>
@@ -238,12 +238,12 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr>
    <td>Mobilgerät</td>
    <td>Safari (iOS)</td>
-   <td>HLS-Streaming mit adaptiver Bitrate</td>
+   <td>HLS-Streaming mit adaptiver Bit-Rate</td>
   </tr>
   <tr>
    <td>Mobilgerät</td>
    <td>Chrome (iOS)</td>
-   <td>HLS-Streaming mit adaptiver Bitrate</td>
+   <td>HLS-Streaming mit adaptiver Bit-Rate</td>
   </tr>
  </tbody>
 </table>
@@ -717,7 +717,7 @@ Alle hochgeladenen Audiospurdateien können jedoch als Standardaudio festgelegt 
 >Die Standardaudio-Wiedergabe kann auch von den Einstellungen in den folgenden Browsern abhängen:
 >
 >* Chrome: Es wird das im Video festgelegte Standardaudio wiedergegeben.
-* Safari: Wenn die Standardsprache in Safari festgelegt ist, werden Audioinhalte mit der festgelegten Standardsprache wiedergegeben, sofern mit dem Video-Manifest verfügbar. Andernfalls wird das Standardaudio wiedergegeben, das als Teil der Eigenschaften eines Videos festgelegt ist.
+>* Safari: Wenn die Standardsprache in Safari festgelegt ist, werden Audioinhalte mit der festgelegten Standardsprache wiedergegeben, sofern mit dem Video-Manifest verfügbar. Andernfalls wird das Standardaudio wiedergegeben, das als Teil der Eigenschaften eines Videos festgelegt ist.
 
 **So legen Sie das Standardaudio für ein Video mit mehreren Audiospuren fest:**
 
@@ -746,7 +746,7 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-medi
 
 >[!NOTE]
 >
-Auf der standardmäßigen Vorschau-Registerkarte von Experience Managern werden nicht mehrere Untertitel- und Audiospuren angezeigt. Der Grund dafür ist, dass diese Spuren mit Dynamic Media verknüpft sind und nur mit der Dynamic Media-Viewer-Vorschau angezeigt werden können.
+>Auf der standardmäßigen Vorschau-Registerkarte von Experience Managern werden nicht mehrere Untertitel- und Audiospuren angezeigt. Der Grund dafür ist, dass diese Spuren mit Dynamic Media verknüpft sind und nur mit der Dynamic Media-Viewer-Vorschau angezeigt werden können.
 
 **So zeigen Sie ein Video mit mehreren Untertiteln und Audiospuren in einer Vorschau an:**
 
@@ -825,7 +825,7 @@ Die ursprüngliche Audiospur, die aus einer primären Datei extrahiert wurde, ka
 
 >[!IMPORTANT]
 >
-Adobe empfiehlt, dass Sie in Ihrem Dynamic Media-Konto die [Multiuntertitel- und Multiaudiospur-Funktion aktivieren](#enable-dash). Auf diese Weise können Sie die neueste Dynamic Media-Backend-Architektur und einen vereinfachten Arbeitsablauf zum Hinzufügen von Einblendtiteln, Untertiteln und Audiospuren zu Ihren Videos nutzen.
+>Adobe empfiehlt, dass Sie in Ihrem Dynamic Media-Konto die [Multiuntertitel- und Multiaudiospur-Funktion aktivieren](#enable-dash). Auf diese Weise können Sie die neueste Dynamic Media-Backend-Architektur und einen vereinfachten Arbeitsablauf zum Hinzufügen von Einblendtiteln, Untertiteln und Audiospuren zu Ihren Videos nutzen.
 
 Sorgen Sie dafür, dass Ihre Videos Märkte auf der ganzen Welt erreichen, indem Sie Untertitel zu einzelnen Videos oder adaptiven Videosets hinzufügen. Wenn Sie verdeckte Untertitel hinzufügen, müssen Sie die Audiodaten nicht synchronisieren oder Muttersprachler bzw. Muttersprachlerinnen damit beauftragen, das Audio in einer anderen Sprache neu aufzuzeichnen. Das Video wird in der Sprache, in der es aufgenommen wurde, wiedergegeben. Fremdsprachliche Untertitel werden angezeigt, sodass auch Nutzer anderer Sprachen den Audioteil verstehen können.
 
@@ -833,7 +833,7 @@ Geschlossene Untertitel ermöglichen auch einen besseren Zugang für Personen, d
 
 >[!NOTE]
 >
-Der verwendete Video-Player muss die Anzeige von Untertiteln unterstützen.
+>Der verwendete Video-Player muss die Anzeige von Untertiteln unterstützen.
 
 Weitere Informationen finden Sie unter [Barrierefreiheit in Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md).
 
@@ -849,7 +849,7 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
 
    Siehe [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
 
-   Es gibt viele Websites, die sowohl kostenlose als auch Premium-Tools und -Dienste anbieten, die Sie verwenden können, um WebVTT-Untertiteldateien außerhalb von Dynamic Media zu erstellen. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
+   Es gibt viele Websites, die sowohl kostenlose als auch Premium-Tools und -Services anbieten, die Sie verwenden können, um WebVTT-Untertiteldateien außerhalb von Dynamic Media zu erstellen. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
    <!-- [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
@@ -857,11 +857,11 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
 
    In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.-->
 
-Befolgen Sie die Anweisungen auf dem Bildschirm von einer Website, um Ihre WebVTT-Datei zu erstellen und zu speichern. Wenn Sie fertig sind, kopieren Sie den Inhalt der Untertiteldatei und fügen Sie ihn in einen Texteditor ein. Speichern Sie ihn dann mit der Dateierweiterung .vtt.
+Folgen Sie den Anweisungen auf dem Bildschirm von einer dieser Websites, um Ihre WebVTT-Datei zu erstellen und zu speichern. Wenn Sie fertig sind, kopieren Sie den Inhalt der Untertiteldatei und fügen Sie ihn in einen Texteditor ein. Speichern Sie ihn dann mit der Dateierweiterung .vtt.
 
 >[!NOTE]
 >
-Für globale Unterstützung von Videountertiteln in verschiedenen Sprachen ist zu beachten, dass der WebVTT-Standard separate .vtt-Dateien und Abrufe für jede Sprache benötigt, die Sie unterstützen möchten.
+>Für globale Unterstützung von Videountertiteln in verschiedenen Sprachen ist zu beachten, dass der WebVTT-Standard separate .vtt-Dateien und Abrufe für jede Sprache benötigt, die Sie unterstützen möchten.
 
 Im Allgemeinen sollte die VTT-Untertiteldatei denselben Namen haben wie die Videodatei, an den jedoch ein Kürzel für die Sprache wie -EN, -FR oder -DE angehängt ist. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen Web-Content-Management-System zu automatisieren.
 
@@ -874,7 +874,7 @@ Im Allgemeinen sollte die VTT-Untertiteldatei denselben Namen haben wie die Vide
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Wählen Sie für ein Popup-Video-Viewer-Erlebnis **[!UICONTROL URL]**. Wählen Sie im Dialogfeld „URL“ die URL aus, kopieren Sie sie in die Zwischenablage und fügen Sie sie dann in einen einfachen Texteditor ein. Hängen Sie die kopierte URL des Videos mit der folgenden Syntax an:
+   * Wählen Sie **[!UICONTROL URL]** aus, damit das Video in einem Popup-Fenster wiedergegeben wird. Wählen Sie im Dialogfeld „URL“ die URL aus, kopieren Sie sie in die Zwischenablage und fügen Sie sie dann in einen einfachen Texteditor ein. Hängen Sie die kopierte URL des Videos mit der folgenden Syntax an:
 
      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
@@ -892,7 +892,7 @@ Um das Ansehen von und Navigieren in langformatigen Videos zu vereinfachen, kön
 
 >[!NOTE]
 >
-Der verwendete Video-Player muss die Verwendung von Kapitelmarken unterstützen. Dynamic Media-Video-Player unterstützten Kapitelmarken, Video-Player von Drittanbietern jedoch möglicherweise nicht.
+>Der verwendete Video-Player muss die Verwendung von Kapitelmarken unterstützen. Dynamic Media-Video-Player unterstützten Kapitelmarken, Video-Player von Drittanbietern jedoch möglicherweise nicht.
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 

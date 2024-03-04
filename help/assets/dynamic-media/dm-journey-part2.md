@@ -12,9 +12,9 @@ hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2677'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -123,7 +123,7 @@ Sie erinnern sich, dass Sie in [Anatomie einer Dynamic Media URL](#dm-journey-d)
 
 Sie können sich eine Bildvorgabe als Rezept für Ihre Bilder vorstellen. Alle Bilder, die diese Vorgabe verwenden, werden konsistent und jedes Mal gleich aussehen. Der Parameter `&op_brightness=+10` wurde hinzugefügt, um die Helligkeit etwas zu erhöhen.
 
-Wenn Sie fertig sind, speichern Sie die Vorgabe. Jetzt ist sie für alle Bilder verfügbar, die Sie haben. In diesem Fall sollten Sie die _Mittel_ Bildvorgabe auf ein Bild einer Schüssel mit flüssiger Schokolade.
+Wenn Sie fertig sind, speichern Sie die Vorgabe. Jetzt ist sie für alle Bilder verfügbar, die Sie haben. In diesem Fall möchten Sie die Bildvorgabe _Medium_ auf das Bild einer Schüssel mit flüssiger Schokolade anwenden.
 
 ![Anwenden der Bildvorgabe *Medium*, um eine Ausgabedarstellung eines Bildes zu erzeugen](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Anwenden der Bildvorgabe „Medium“, um eine Ausgabedarstellung eines Bildes zu erzeugen._

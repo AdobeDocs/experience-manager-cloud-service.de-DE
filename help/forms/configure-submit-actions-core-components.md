@@ -5,9 +5,9 @@ keywords: Anleitung zum Auswählen einer Sendeaktion für ein adaptives Formular
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -25,19 +25,19 @@ ht-degree: 66%
 Mit einer Übermittlungsaktion können Sie das Ziel der Daten auswählen, die über ein adaptives Formular erfasst werden. Eine Übermittlungsaktion wird ausgelöst, wenn jemand in einem adaptiven Formular auf die Schaltfläche **[!UICONTROL Senden]** klickt. Forms as a Cloud Service bietet eine Reihe vorkonfigurierter Übermittlungsaktionen für adaptive Formulare, die auf Kernkomponenten basieren.  Diese vorkonfigurierten Übermittlungsaktionen ermöglichen Ihnen Folgendes:
 
 * Müheloses Senden von Formulardaten per E-Mail.
-* Starten Sie Microsoft® Power Automate-Flüsse oder AEM Workflows beim Senden der Daten.
-* Übermitteln Sie die Formulardaten direkt an Microsoft® SharePoint Server, Microsoft® Azure Blob Storage oder Microsoft® OneDrive.
+* Starten von Microsoft® Power Automate-Abläufen oder AEM-Workflows beim Senden der Daten.
+* Sie können die Formulardaten direkt an Microsoft® SharePoint Server, Microsoft® Azure Blob Storage oder Microsoft® OneDrive übertragen.
 * Nahtloses Senden von Daten an eine konfigurierte Datenquelle mit dem Formulardatenmodell.
 * Bequemes Senden von Daten an einen REST-Endpunkt.
 
-Sie können [Standardmäßige Übermittlungsaktionen erweitern](custom-submit-action-form.md). Sie können die Übermittlungsaktionen auch für organisationsspezifische Anforderungen anpassen.
+Sie können [standardmäßige Übermittlungsaktionen erweitern](custom-submit-action-form.md). Sie können die Übermittlungsaktionen auch für organisationsspezifische Anforderungen anpassen.
 
-Um eine Übermittlungsaktion für ein adaptives Formular zu definieren, verwenden Sie das Dialogfeld &quot;Konfigurieren&quot;eines **Container für adaptive Formulare** -Komponente. Das Dialogfeld &quot;Konfigurieren&quot;eines **Container für adaptive Formulare** -Komponente umfasst:
+Um eine Übermittlungsaktion für ein adaptives Formular zu definieren, verwenden Sie das Dialogfeld „Konfigurieren“ einer **adaptiven Formular-Container**-Komponente. Das Konfigurationsdialogfeld einer **adaptiven Formular-Container**-Komponente beinhaltet:
 * Registerkarte „Allgemein“
-* Registerkarte &quot;Formulardatenmodell&quot;
+* Registerkarte „Formulardatenmodell“
 * Registerkarte „Übermittlung“
 
-Sie können die Eigenschaften des Formular-Containers im Dialogfeld &quot;Konfigurieren&quot;definieren. Weitere Informationen zum Dialogfeld &quot;Konfigurieren&quot;einer Formularcontainer-Komponente finden Sie unter [Klicken Sie hier.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)
+Sie können die Eigenschaften des Formular-Containers im Dialogfeld „Konfigurieren“ definieren. Für weitere Informationen zum Dialogfeld „Konfigurieren“ einer Formular-Container-Komponente [klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=de).
 
 ## Auswählen und Konfigurieren einer Übermittlungsaktion für ein adaptives Formular {#select-and-configure-submit-action}
 
@@ -50,18 +50,18 @@ So wählen Sie eine Übermittlungsaktion aus und konfigurieren Sie für Ihr Form
 
    ![Klicken Sie auf das Schraubenschlüsselsymbol, um das Dialogfeld „Container für ein adaptives Formular“ zu öffnen und eine Übermittlungsaktion zu konfigurieren.](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. Auswählen und Konfigurieren eines **[!UICONTROL Übermittlungsaktion]**, basierend auf Ihren Anforderungen.
+1. Wählen Sie basierend auf Ihren Anforderungen eine **[!UICONTROL Übermittlungsaktion]** aus und konfigurieren Sie sie.
 
-Sie können auch verschiedene Aktionen für Übermittlungen adaptiver Formulare konfigurieren.
-* **Umleitungs-URL/Pfad** - Diese Option ermöglicht es dem Benutzer, eine Seite für jedes Formular zu konfigurieren, zu dem die Formularbenutzer nach dem Senden eines adaptiven Formulars umgeleitet werden.
-* **Nachricht anzeigen**: Mit dieser Option können Benutzende eine Nachricht hinzufügen, die angezeigt wird, wenn das adaptive Formular erfolgreich übermittelt wurde. Der vordefinierte Text ist im Dialogfeld enthalten und kann vom Benutzer geändert werden.
+Sie können verschiedene Aktionen für Übermittlungen adaptiver Formulare konfigurieren.
+* **Umleitungs-URL/-pfad**: Diese Option ermöglicht es, eine Seite für jedes Formular zu konfigurieren, zu dem die Benutzerinnen und Benutzer des Formulars nach dem Übermitteln eines adaptiven Formulars umgeleitet werden. 
+* **Nachricht anzeigen**: Mit dieser Option können Benutzende eine Nachricht hinzufügen, die angezeigt wird, wenn das adaptive Formular erfolgreich übermittelt wurde. Der vordefinierte Text ist im Dialogfeld enthalten und kann geändert werden. 
 
-Detaillierte Informationen zu den folgenden Übermittlungsaktionen finden Sie unter:
+Detaillierte Informationen zur folgenden Übermittlungsaktion finden Sie unter:
 
 * [E-Mail senden](/help/forms/configure-submit-action-send-email.md)
 * [Power Automate-Fluss aufrufen](/help/forms/forms-microsoft-power-automate-integration.md)
 * [An SharePoint senden](/help/forms/configure-submit-action-sharepoint.md)
-* [Aufrufen einer Workfront-Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [Workfront Fusion aufrufen](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Mit Formulardatenmodell senden](/help/forms/using-form-data-model.md)
 * [An Azure Blob Storage senden](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [An REST-Endpunkt senden](/help/forms/configure-submit-action-restpoint.md)
@@ -70,10 +70,10 @@ Detaillierte Informationen zu den folgenden Übermittlungsaktionen finden Sie un
 
 Sie können ein adaptives Formular auch an andere Speicherkonfigurationen senden:
 
-* [Adaptives Formular mit Salesforce-Anwendung verbinden](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Verbinden eines adaptiven Formulars mit einer Salesforce-Anwendung](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [Verbinden eines adaptiven Formulars mit Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
 
-Sie können [Anpassen der standardmäßigen Sendeaktionen](custom-submit-action-form.md). Darüber hinaus können Sie die Sendeaktionen an bestimmte organisatorische Anforderungen anpassen.
+Sie können [die standardmäßigen Übermittlungsaktionen anpassen](custom-submit-action-form.md). Darüber hinaus können Sie die Übermittlungsaktionen an bestimmte Unternehmensanforderungen anpassen.
 
 
 <!--

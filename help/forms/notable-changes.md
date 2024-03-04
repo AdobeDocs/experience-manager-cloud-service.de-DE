@@ -6,9 +6,9 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 contentOwner: khsingh
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1317'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Adobe Experience Manager Forms as a Cloud Service enthält einige wichtige Ände
 
 <!--* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server.-->
 
-* **Vorbefüllungsdienst:** Der Vorbefüllungs-Dienst ruft Daten vom Server ab und führt Zusammenführungen durch, um die Adaptive Forms auf der Clientseite vorab auszufüllen. Diese Funktion hilft, die zum Ausfüllen eines adaptiven Formulars erforderliche Zeit zu verbessern. Sie können die [Vorbefüllungs-Dienst](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html) , um die Zusammenführungsaktion auf dem Adobe Experience Manager Forms-Server auszuführen.
+* **Vorbefüllungsdienst:** Der Vorbefüllungs-Dienst ruft Daten vom Server ab und führt Zusammenführungen durch, um die adaptiven Formulare auf der Client-Seite vorab auszufüllen. Der Zeitaufwand für das Vorbefüllen eines adaptiven Formulars wird dadurch verringert. Sie können den [Vorbefüllungsdienst](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html?lang=de) immer so konfigurieren, dass die Zusammenführungsaktion auf dem Formular-Server von Adobe Experience Manager ausgeführt wird.
 
 * **Übermittlungsaktionen**: Die **E-Mail**-Übermittlungsaktion bietet Optionen zum Senden von Anhängen und zum Anhängen von Datensatzdokumenten (Document of Record, DoR) per E-Mail. Sie können sie anstelle der Aktion **E-Mail als PDF** verwenden, die in AEM 6.5 Forms verfügbar ist.
 

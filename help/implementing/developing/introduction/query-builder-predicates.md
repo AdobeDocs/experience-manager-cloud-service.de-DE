@@ -3,9 +3,9 @@ title: Query Builder-Prädikatsreferenz
 description: Prädikatsreferenz für die Query Builder-API in AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2270'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ Der Name „root“ wird in Abfragen nie verwendet, er ist implizit.
 
 * **`p.offset`**: Zahl, die den Anfang der Ergebnisseite anzeigt, d. h. wie viele Elemente übersprungen werden sollen.
 * **`p.limit`**: Zahl, die die Seitengröße anzeigt.
-* **`p.guessTotal`** - empfohlen: Vermeidung der Berechnung der vollständigen Ergebnissumme, was kostspielig sein kann. Entweder eine Zahl, die die maximal zu zählende Summe angibt (z. B. 1000, eine Zahl, die Benutzern genügend Feedback zur groben Größe und exakten Zahlen für kleinere Ergebnisse gibt). Oder `true` nur bis zum erforderlichen Minimum zählen `p.offset` + `p.limit`.
+* **`p.guessTotal`**: empfohlen: Dies vermeidet die Berechnung der vollen Ergebnissumme, die sehr kostspielig sein kann. Entweder eine Zahl, die die maximal zu zählende Summe angibt (z. B. 1.000, eine Zahl, die Benutzenden genügend Feedback zur groben Größe und exakten Zahlen für kleinere Ergebnisse gibt). Oder `true`, um nur bis zu dem erforderlichen Minimum `p.offset` + `p.limit` zu zählen.
 * **`p.excerpt`**: Wenn auf `true` gesetzt, wird der vollständige Textauszug in das Ergebnis aufgenommen.
 * **`p.indexTag`**: Wenn festgelegt, enthält die Abfrage eine Index-Tag-Option (siehe [Index-Tag der Abfrageoption](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)).
 * **`p.facetStrategy`**: wenn auf `oak` gesetzt, delegiert Query Builder die Facettenextraktion an Oak (siehe [Facetten](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)).
 * **`p.hits`** (nur für das JSON-Servlet): Legt mit diesen Standardwerten fest, wie Treffer als JSON geschrieben werden (erweiterbar über den Dienst „ResultHitWriter“).
    * **`simple`**: Minimale Elemente wie `path`, `title`, `lastmodified`, `excerpt` (falls festgelegt).
-   * **`full`** - Sling JSON-Rendering des Knotens mit `jcr:path` gibt den Pfad des Treffers an. Standardmäßig werden nur die direkten Eigenschaften des Knotens aufgelistet und eine tiefere Struktur mit `p.nodedepth=N`, wobei 0 die gesamte, unendliche Unterstruktur bedeutet. Hinzufügen `p.acls=true` , um die JCR-Berechtigungen der aktuellen Sitzung für das angegebene Ergebniselement (Zuordnungen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+   * **`full`**: Das Sling JSON-Rendering des Knotens, wobei `jcr:path` den Pfad des Treffers angibt. Standardmäßig werden nur die direkten Eigenschaften des Knotens aufgelistet und eine tiefere Baumstruktur mit `p.nodedepth=N`, wobei 0 die gesamte, unendliche Unterstruktur bedeutet. Fügen Sie `p.acls=true` hinzu, um die JCR-Berechtigungen der aktuellen Sitzung für das angegebene Ergebnis zu berücksichtigen (Zuordnungen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
    * **`selective`**: Nur Eigenschaften, die in `p.properties` angegeben sind, wobei es sich um eine durch Leerzeichen (verwenden Sie in URLs `+`) getrennte Liste relativer Pfade handelt. Wenn der relative Pfad eine Tiefe von `>1` hat, werden diese Eigenschaften als untergeordnete Objekte dargestellt. Die besondere Eigenschaft `jcr:path` umfasst den Pfad des Treffers.
 
 ### group {#group}
@@ -76,8 +76,8 @@ Dieses Prädikat ermöglicht die Sortierung der Ergebnisse. Wenn nach mehreren E
 
 #### Eigenschaften {#properties-13}
 
-* **`orderby`** - entweder JCR-Eigenschaftsname, der durch ein vorangestelltes @ angegeben wird, z. B. `@jcr:lastModified` oder `@jcr:content/jcr:title`oder einer anderen Eigenschaft in der Abfrage, z. B. `2_property`, nach der sortiert werden soll
-* **`sort`** – Sortierrichtung, entweder `desc` für absteigend oder `asc` für aufsteigend (Standard).
+* **`orderby`**: Entweder der JCR-Eigenschaftsname, angezeigt durch ein vorangestelltes „@“, z. B. `@jcr:lastModified` bzw. `@jcr:content/jcr:title`, oder ein anderes Prädikat in der Abfrage, z. B. `2_property`, nach dem sortiert werden soll.
+* **`sort`**: Sortierrichtung, entweder `desc` für absteigend oder `asc` für aufsteigend (Standard).
 * **`case`**: Wenn auf `ignore` gesetzt, wird bei der Sortierung die Groß-/Kleinschreibung nicht beachtet, d. h. `a` kommt vor `B`. Wenn leer oder nicht angegeben, wird bei der Sortierung die Groß-/Kleinschreibung beachtet, d. h. `B` kommt vor `a`
 
 ## Prädikate {#predicates}
@@ -92,7 +92,7 @@ Dieses Prädikat unterstützt die Facettenextraktion und liefert Buckets für je
 
 #### Eigenschaften {#properties}
 
-* **`boolproperty`** - relativer Pfad zur Eigenschaft, z. B. `myFeatureEnabled` oder `jcr:content/myFeatureEnabled`
+* **`boolproperty`**: relativer Pfad der Eigenschaft, z. B. `myFeatureEnabled` oder `jcr:content/myFeatureEnabled`.
 * **`value`** – Wert, auf den die Eigenschaft geprüft wird, `true` oder `false`.
 
 ### contentfragment {#contentfragment}
@@ -135,10 +135,10 @@ Filtern wird nicht unterstützt.
 
 #### Eigenschaften {#properties-3}
 
-* **`property`** - relativer Pfad zu einem `DATE` -Eigenschaft, beispielsweise `jcr:lastModified`
-* **`lowerBound`** - niedrigere Datumsgrenze, für die die Eigenschaft überprüft werden soll, beispielsweise `2014-10-01`
+* **`property`**: Relativer Pfad zu einer `DATE`-Eigenschaft, z. B. `jcr:lastModified`.
+* **`lowerBound`**: Untere Datumsgrenze, auf welche die Eigenschaft überprüft werden soll, z. B. `2014-10-01`.
 * **`lowerOperation`** – `>` (neuer) oder `>=` (gleich alt oder neuer), gilt für `lowerBound`. Standard: `>`
-* **`upperBound`** - obere Grenze, um beispielsweise die Eigenschaft zu überprüfen. `2014-10-01T12:15:00`
+* **`upperBound`**: Obere Datumsgrenze, auf welche die Eigenschaft überprüft werden soll, z. B. `2014-10-01T12:15:00`.
 * **`upperOperation`** – `<` (älter) oder `<=` (gleich alt oder älter), gilt für `upperBound`. Standard: `<`
 * **`timeZone`** – Kennung der Zeitzone, die verwendet werden soll, wenn keine ISO-8601-Datumszeichenfolge angegeben wird. Der Standardwert ist die standardmäßige Zeitzone des Systems.
 
@@ -187,7 +187,7 @@ Es unterstützt die Facettenextraktion und stellt Buckets für jeden eindeutigen
 
 #### Eigenschaften {#properties-8}
 
-* **`language`** - ISO-Sprachcode, beispielsweise `de`
+* **`language`**: ISO-Sprach-Code, z. B. `de`.
 
 ### mainasset {#mainasset}
 
@@ -250,7 +250,7 @@ Facettenextraktion wird nicht unterstützt.
 &lt;!--- * Ist die Eigenschaft `self`festgelegt, wird der gesamte Teilbaum einschließlich des Basisknotens durchsucht --->
 * **`exact`**: Wenn `exact` `true` ist, muss der exakte Pfad übereinstimmen, darf aber bestimmte einfache Platzhalter (`*`) enthalten, die mit Namen übereinstimmen, aber nicht `/`. Wenn die Option `false` (Standard) ist, werden alle untergeordneten Elemente berücksichtigt (optional).
 * **`flat`**: Durchsucht nur die direkt untergeordneten Elemente (ähnlich wie das Anhängen von `/*` in xpath). Wird nur verwendet, wenn `exact` nicht „true“ ist (optional).
-* **`self`** - durchsucht die Unterstruktur, enthält jedoch den Basisknoten, der als Pfad angegeben wird (keine Platzhalter).
+* **`self`**: Durchsucht den Teilbaum, aber bezieht den als Pfad angegebenen Basisknoten mit ein (keine Platzhalter).
    * *Wichtiger Hinweis*: Es wurde ein Problem mit der `self`-Eigenschaft in der aktuellen Implementierung von QueryBuilder erkannt. Die Verwendung in Abfragen kann zu falschen Suchergebnissen führen. Es ist auch nicht möglich, die aktuelle Implementierung der `self`-Eigenschaft zu ändern, da dadurch bestehende Anwendungen, die sich darauf stützen, beschädigt werden können. Aufgrund dieser Tatsache wird die `self`-Eigenschaft nicht mehr unterstützt, und es wird empfohlen, sie nicht mehr zu verwenden.
 
 ### property {#property}
@@ -261,10 +261,10 @@ Es unterstützt die Facettenextraktion und stellt für jeden eindeutigen Eigensc
 
 #### Eigenschaften {#properties-15}
 
-* **`property`** - relativer Pfad zur Eigenschaft, z. B. `jcr:title`.
+* **`property`**: Relativer Pfad der Eigenschaft, z. B. `jcr:title`.
 * **`value`**: Wert, auf den die Eigenschaft überprüft werden soll. Verarbeitet Umwandlungen anhand des JCR-Eigenschaftstyps als Zeichenfolgen.
 * **`N_value`**: Verwenden Sie `1_value`, `2_value`, …, um auf mehrere Werte zu prüfen (standardmäßig kombiniert mit `OR`, bzw. mit `AND`, wenn `and=true`).
-* **`and`** – Legen Sie hierfür `true` fest, um mehrere Werte (`N_value`) mit `AND` zu kombinieren.
+* **`and`**: Legen Sie hierfür `true` fest, um mehrere Werte (`N_value`) mit `AND` zu kombinieren.
 * **`operation`**
    * `equals` für exakte Übereinstimmung (Standard).
    * `unequals` für unterschiedliche Werte.
@@ -296,7 +296,7 @@ Facettenextraktion wird nicht unterstützt.
 
 Dieses Prädikat gleicht `JCR DATE`-Eigenschaften anhand von Zeit-Offsets, die relativ zur aktuellen Server-Zeit sind, mit einem Datums-/Zeitintervall ab. Sie können `lowerBound` und `upperBound` entweder anhand eines Millisekundenwerts oder der Bugzilla-Syntax `1s 2m 3h 4d 5w 6M 7y` (eine Sekunde, zwei Minuten, drei Stunden, vier Tage, fünf Wochen, sechs Monate, sieben Jahre) angeben. Mit dem Präfix `-` geben Sie einen negativen Offset vor der aktuellen Zeit an. Wenn Sie nur `lowerBound` oder nur `upperBound` angeben, ist der jeweils andere standardmäßig `0`, was der aktuellen Zeit entspricht.
 
-Beispiel:
+Zum Beispiel:
 
 * `upperBound=1h` (und keine `lowerBound`) wählt alles in der nächsten Stunde aus.
 * `lowerBound=-1d` (und keine `upperBound`) wählt alles in den letzten 24 Stunden aus.
@@ -348,7 +348,7 @@ Es unterstützt die Facettenextraktion und stellt Buckets für jedes einzigartig
 
 #### Eigenschaften {#properties-21}
 
-* **`tag`** - Tag-Titelpfad, nach dem gesucht werden soll, beispielsweise `properties:orientation/landscape`
+* **`tag`**: Tag-Titelpfad, nach dem gesucht werden soll, z. B. `properties:orientation/landscape`.
 * **`N_value`** – Verwenden Sie `1_value`, `2_value`, um auf mehrere Tags zu prüfen (standardmäßig kombiniert mit `OR`, mit `AND`, wenn `and=true`).
 * **`property`** – Eigenschaft (bzw. relativer Pfad zur Eigenschaft), die betrachtet werden soll (Standard: `cq:tags`).
 
@@ -360,7 +360,7 @@ Es unterstützt die Facettenextraktion und stellt Buckets für jedes einzigartig
 
 #### Eigenschaften {#properties-22}
 
-* **`tagid`** - Tag-ID, nach der beispielsweise gesucht werden soll `properties:orientation/landscape`
+* **`tagid`**: Tag-ID, nach der gesucht werden soll, z. B. `properties:orientation/landscape`.
 * **`N_value`** – Verwenden Sie `1_value`, `2_value`, um auf mehrere Tag-IDs zu prüfen (standardmäßig kombiniert mit `OR`, mit `AND`, wenn `and=true`).
 * **`property`** – Eigenschaft (bzw. relativer Pfad zur Eigenschaft), die betrachtet werden soll (Standard: `cq:tags`).
 
@@ -385,4 +385,4 @@ Es unterstützt die Facettenextraktion und stellt für jeden eindeutigen Typ in 
 
 #### Eigenschaften {#Properties-2}
 
-* **`type`** - Knotentyp oder `mixin` Name, nach dem beispielsweise gesucht werden soll `cq:Page`
+* **`type`**: Knotentyp oder `mixin`-Name, nach dem gesucht werden soll, zum Beispiel `cq:Page`

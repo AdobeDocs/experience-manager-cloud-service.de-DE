@@ -1,12 +1,12 @@
 ---
 title: Bereitstellen für AEM as a Cloud Service
-description: Erfahren Sie mehr über die Grundlagen und Best Practices für die Bereitstellung auf AEM as a Cloud Service
+description: Erfahren Sie mehr über die Grundlagen und Best Practices für die Bereitstellung für AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3429'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -69,9 +69,9 @@ Sämtlicher Inhalt und Code, der im unveränderlichen Repository persistent ist,
 
 Da Anwendungsänderungen aufgrund des Bereitstellungsmusters durch einen Umschalter aktiviert werden, dürfen sie nicht von Änderungen im veränderlichen Repository abhängig sein, mit Ausnahme von Dienstbenutzerinnen und -benutzern, ihren ACLs, Knotentypen und Änderungen der Indexdefinition.
 
-Kunden mit vorhandener Code-Basis müssen die in der AEM-Dokumentation beschriebene Repository-Umstrukturierung durchführen, um dafür zu sorgen, dass zuvor unter „/etc“ befindliche Inhalte an den richtigen Speicherort verschoben werden.
+Kundinnen und Kunden mit vorhandener Code-Basis müssen die in der AEM-Dokumentation beschriebene Repository-Umstrukturierung durchführen, um dafür zu sorgen, dass die zuvor unter „/etc“ befindlichen Inhalte an den richtigen Speicherort verschoben werden.
 
-Für diese Code-Pakete gelten einige zusätzliche Einschränkungen, beispielsweise [Installationshaken](https://jackrabbit.apache.org/filevault/installhooks.html) werden nicht unterstützt.
+Für diese Code-Pakete gelten einige zusätzliche Einschränkungen, z. B. werden keine [Installations-Hooks](https://jackrabbit.apache.org/filevault/installhooks.html) unterstützt.
 
 ## OSGi-Konfiguration {#osgi-configuration}
 
@@ -104,11 +104,11 @@ Beim Start der neuen Version des Programms, aber vor der Umstellung:
 
 Nach der Umstellung auf die neue Programmversion:
 
-* Alle anderen Inhalte, die über Jackrabbit-Vault definiert werden können. Beispiel:
+* Alle anderen Inhalte, die über Jackrabbit-Vault definiert werden können. Zum Beispiel:
    * Ordner (hinzufügen, ändern, entfernen)
    * Bearbeitbare Vorlagen (hinzufügen, ändern, entfernen)
    * Kontextsensible Konfiguration (alles unter `/conf`) (hinzufügen, ändern, entfernen)
-   * Skripte (Pakete können Trigger Install Hooks in verschiedenen Phasen der Installation des Pakets installieren. Informationen zu Installations-Hooks finden Sie in der [Jackrabbit Filevault-Dokumentation](https://jackrabbit.apache.org/filevault/installhooks.html). AEM CS verwendet derzeit die Filevault-Version 3.4.0, die die Installations-Hooks für Admin-Benutzende, Systembenutzende und Mitglieder der Administratorgruppe einschränkt.)
+   * Skripte (Pakete können in verschiedenen Phasen der Paketinstallation Installations-Hooks auslösen). Informationen zu Installations-Hooks finden Sie in der [Jackrabbit Filevault-Dokumentation](https://jackrabbit.apache.org/filevault/installhooks.html). AEM CS verwendet derzeit die Filevault-Version 3.4.0, die die Installations-Hooks für Admin-Benutzende, Systembenutzende und Mitglieder der Administratorgruppe einschränkt.)
 
 Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinstanzen lässt sich einschränken, indem Sie Pakete unter `/apps` in einen „install.author“- oder „install.publish“-Ordner einbetten. Eine Umstrukturierung, die dieser Trennung Rechnung trägt, wurde in AEM 6.5 vorgenommen. Einzelheiten zur empfohlenen Projektumstrukturierung finden Sie in der [Dokumentation zu AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=de)
 
@@ -134,7 +134,7 @@ In folgenden Fällen ist es vorzuziehen, in den OSGi-Werkseinstellungen manuell 
   >
   >Eine Definition von ACLs erfordert, dass die Knotenstrukturen bereits vorhanden sind. Daher können vorherige Anweisungen zur Pfaderstellung erforderlich sein.
 
-* Pfad hinzufügen (z. B. für Stammordnerstrukturen)
+* Pfad hinzufügen (z. B. für Stammordnerstrukturen)
 * CNDs hinzufügen (Definitionen für Knotentypen)
 
 Aufgrund der folgenden Vorteile ist bei diesen Anwendungsfällen für die Inhaltsänderung bevorzugt „repoinit“ zu verwenden:
@@ -295,7 +295,7 @@ In bestehenden AEM-Lösungen haben Kundinnen und Kunden die Möglichkeit, Instan
 
 AEM as a Cloud Service hingegen ist eigenwilliger bezüglich der Frage, welche Ausführungsmodi verfügbar sind und wie ihnen OSGi-Pakete und OSGi-Konfigurationen zugeordnet werden können:
 
-* Die OSGI-Konfigurationslaufmodi müssen auf die RDE-, Entwicklungs-, Staging-, Produktions-Umgebung oder auf Author und Publish für den Service verweisen. Eine Kombination aus `<service>.<environment_type>` wird unterstützt, während diese Umgebungen in dieser bestimmten Reihenfolge verwendet werden müssen (z. B. `author.dev` oder `publish.prod`). Die OSGI-Token sollten direkt aus dem Code referenziert werden, anstatt die `getRunModes`-Methode zu verwenden, die den `environment_type` zur Laufzeit nicht mehr enthält. Weitere Informationen finden Sie unter [Konfigurieren von OSGi für AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+* Die OSGI-Konfigurationslaufmodi müssen auf die RDE-, Entwicklungs-, Staging-, Produktions-Umgebung oder auf Author und Publish für den Service verweisen. Es wird eine Kombination aus `<service>.<environment_type>` unterstützt, wobei diese Umgebungen genau in dieser bestimmten Reihenfolge verwendet werden müssen (z. B. `author.dev` oder `publish.prod`). Die OSGI-Token sollten direkt aus dem Code referenziert werden, anstatt die `getRunModes`-Methode zu verwenden, die den `environment_type` zur Laufzeit nicht mehr enthält. Weitere Informationen finden Sie unter [Konfigurieren von OSGi für AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * Die Ausführungsmodi von OSGi-Bundles sind auf den Service (author, publish) beschränkt. OSGi-Pakete für den Pre-Run-Modus sollten im Inhaltspaket unter `install.author` oder `install.publish` installiert werden.
 
 AEM as a Cloud Service lässt die Verwendung von Ausführungsmodi nicht zu, um Inhalte für bestimmte Umgebungen oder Dienste zu installieren. Wenn eine Entwicklungsumgebung mit Daten oder HTML-Dateien bestückt werden muss, die sich nicht in der Staging- oder Produktionsumgebung befinden, kann Package Manager verwendet werden.

@@ -6,9 +6,9 @@ feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1059'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -141,7 +141,7 @@ Wenn Sie ein Metadatenschema für einen Ordner konfigurieren, wird der Pfad in d
 
 1. Wählen Sie das [!DNL Experience Manager]-Logo aus und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Ordner-Metadatenschemata]**.
 1. Wählen Sie auf der Seite „Ordner-Metadatenschema-Formulare“ das Schemaformular aus, das Sie auf einen Ordner anwenden möchten.
-1. Wählen Sie in der Symbolleiste **[!UICONTROL Auf Ordner anwenden]**.
+1. Wählen Sie in der Symbolleiste **[!UICONTROL Auf Ordner anwenden]** aus.
 
 1. Wählen Sie den Ordner aus, auf den Sie das Schema anwenden möchten, und wählen Sie anschließend **[!UICONTROL Anwenden]** aus. Wenn bereits ein Metadatenschema auf den Ordner angewendet wurde, wird eine Warnung dazu angezeigt, dass das bestehende Schema überschrieben wird. Wählen Sie **[!UICONTROL Überschreiben]** aus.
 1. Öffnen Sie die Metadateneigenschaften für den Ordner, auf den Sie das Schema angewendet haben.

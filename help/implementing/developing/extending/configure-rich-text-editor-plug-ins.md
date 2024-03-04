@@ -5,9 +5,9 @@ contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4303'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Standardmäßig sind die Plug-ins `format`, `link`, `list`, `justify` und `contr
 
 Halten Sie sich nach der Aktivierung eines Plug-ins an diese Richtlinien, um die Eigenschaft `features` zu konfigurieren.
 
-| | Alle Funktionen aktivieren | Aktivieren Sie einige spezifische Funktionen. | Alle Funktionen deaktivieren. |
+| | Alle Funktionen aktivieren | Bestimmte Funktionen aktivieren | Alle Funktionen deaktivieren. |
 |---|---|---|---|
 | Name | Funktionen | Funktionen | Funktionen |
 | Typ | Zeichenfolge | `String` (mehrere Zeichenfolgen; legen Sie den Typ auf `String` fest und klicken Sie in CRXDE Lite auf `Multi`) | Zeichenfolge |
@@ -95,7 +95,7 @@ Sie können Ihren Autoren in der RTE-Symbolleiste nur einige, alle oder keine di
 
 Um die Anzeige der Symbole in RTE zu konfigurieren, führen Sie folgende Schritte aus.
 
-1. Navigieren Sie zu Ihrer Komponente, beispielsweise `/apps/<myProject>/components/text`.
+1. Navigieren Sie zu Ihrer Komponente, z. B. `/apps/<myProject>/components/text`.
 1. Navigieren Sie zum Knoten `rtePlugins/edit`. Lesen Sie die Informationen unter [Aktivieren von Plug-ins](#activateplugin), falls noch kein Knoten vorhanden ist.
 1. Erstellen Sie die Eigenschaft `features` im Knoten `edit` und fügen Sie eine oder mehrere Funktionen hinzu. Speichern Sie alle Änderungen.
 
@@ -191,7 +191,7 @@ Ein Beispiel für eine gültige `htmlPasteRules`-Struktur ist unten aufgeführt:
 
 ## Konfigurieren von Textstilen {#textstyles}
 
-Autorinnen und Autoren können Stile anwenden, um das Erscheinungsbild eines Textabschnitts zu ändern. Die Stile basieren auf CSS-Klassen, die Sie in Ihrem CSS-Stylesheet vordefinieren. Stilisierter Inhalt wird in `span`-Tags eingeschlossen, wobei das Attribut `class` zum Verweis auf die CSS-Klasse verwendet wird. Beispiel:
+Autorinnen und Autoren können Stile anwenden, um das Erscheinungsbild eines Textabschnitts zu ändern. Die Stile basieren auf CSS-Klassen, die Sie in Ihrem CSS-Stylesheet vordefinieren. Stilisierter Inhalt wird in `span`-Tags eingeschlossen, wobei das Attribut `class` zum Verweis auf die CSS-Klasse verwendet wird. Zum Beispiel:
 
 `<span class=monospaced>Monospaced Text Here</span>`
 
@@ -228,7 +228,7 @@ Aktivieren Sie dazu das styles-Plug-in.
 
 Geben Sie dann die Speicherorte für die Stylesheets an, auf die Sie verweisen möchten:
 
-1. Navigieren Sie zum Stammknoten Ihrer Textkomponente, z. B. `/apps/<myProject>/components/text`.
+1. Navigieren Sie zum Stammknoten der Textkomponente, beispielsweise `/apps/<myProject>/components/text`.
 1. Fügen Sie dem übergeordneten Knoten des Knotens `<rtePlugins-node>` die Eigenschaft `externalStyleSheets` hinzu:
 
    * **Name** `externalStyleSheets`
@@ -329,7 +329,7 @@ Jeglicher im RTE verfasster Text wird in einem Block-Tag platziert, standardmä�
 
 >[!NOTE]
 >
->Wenn beispielsweise ein Block-Tag `<hr>` -Tag, einem Absatz nicht zugewiesen werden kann, handelt es sich nicht um einen gültigen Anwendungsfall für `paraformat` -Plug-in.
+>Wenn ein Block-Tag, beispielsweise ein `<hr>`-Tag, keinem Absatz zugewiesen werden kann, handelt es sich um keinen zulässigen Anwendungsfall für ein `paraformat`-Plug-in.
 
 Wenn das Plug-in „Absatzformate“ zum ersten Mal aktiviert wird, sind keine standardmäßigen Absatzformate verfügbar. Die Popup-Liste ist leer. Gehen Sie wie folgt vor, um Absatzformate für Autoren bereitzustellen:
 

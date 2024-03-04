@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über Headless in Adobe Experience Manager (AEM) 
 landing-page-description: Erfahren Sie, wie Sie Headless in Adobe Experience Manager as a Cloud Service verwenden und verwalten können.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
-workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: '694'
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Für die ersten Schritte mit AEM Headless-Funktionen stehen verschiedene Ressour
 
 ## Vergleich von Headful und Headless {#headful-headless}
 
-Diese Anleitung konzentriert sich auf das vollständige Headless-Implementierungsmodell von AEM. Headful und Headless müssen jedoch keine binäre Wahl in AEM sein. Headless-Funktionen können verwendet werden, um Inhalte zu verwalten und für verschiedene Endpunkte bereitzustellen sowie um Inhaltserstellern gleichzeitig die Bearbeitung von Einzelseiten-Webanwendungen zu ermöglichen. Alles in AEM.
+Diese Anleitung konzentriert sich auf das vollständige Headless-Implementierungsmodell von AEM. In AEM muss die Entscheidung zwischen Headful und Headless aber keine Entweder-oder-Entscheidung sein. Headless-Funktionen können verwendet werden, um Inhalte zu verwalten und für verschiedene Endpunkte bereitzustellen sowie um Inhaltserstellern gleichzeitig die Bearbeitung von Einzelseiten-Webanwendungen zu ermöglichen. Alles in AEM.
 
 >[!TIP]
 >

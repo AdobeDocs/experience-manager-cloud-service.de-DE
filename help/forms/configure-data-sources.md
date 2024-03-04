@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2121'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Bevor Sie relationale Datenbanken mit [!DNL Experience Manager] Web-Konsolenkonf
 Sie können relationale Datenbanken mithilfe der [!DNL Experience Manager] Web-Konsolenkonfiguration konfigurieren. Gehen Sie folgendermaßen vor:
 
 1. Gehen Sie zur [!DNL Experience Manager] Web-Konsole unter `https://server:host/system/console/configMgr`.
-1. Suchen Sie die Konfiguration **[!UICONTROL Day Commons JDBC Connections Pools]**. Wählen Sie diese Option aus, um die Konfiguration im Bearbeitungsmodus zu öffnen.
+1. Suchen Sie die Konfiguration **[!UICONTROL Day Commons JDBC Connections Pools]**. Tippen Sie darauf, um die Konfiguration im Bearbeitungsmodus zu öffnen.
 
    ![JDBC-Verbindungs-Pool](/help/forms/assets/jdbc_connector.png)
 
@@ -111,15 +111,15 @@ Konfigurieren des Ordners für Cloud Service-Konfigurationen:
    * Weitere Informationen finden Sie in der Dokumentation zum [Konfigurationsbrowser](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=de).
 1. Gehen Sie folgendermaßen vor, um den globalen Ordner für Cloud-Konfigurationen zu aktivieren, oder überspringen Sie diesen Schritt, um einen anderen Ordner für Cloud Service-Konfigurationen zu erstellen und zu konfigurieren.
 
-   1. Im **[!UICONTROL Konfigurationsbrowser]**, wählen Sie die `global` Ordner und auswählen **[!UICONTROL Eigenschaften]**.
+   1. Wählen Sie im **[!UICONTROL Konfigurations-Browser]** den Ordner `global` aus und wählen Sie **[!UICONTROL Eigenschaften]**.
 
    1. Aktivieren Sie im Dialogfeld **[!UICONTROL Konfigurationseigenschaften]** die Option **[!UICONTROL Cloud-Konfigurationen]**.
 
-   1. Auswählen **[!UICONTROL Speichern und schließen]** , um die Konfiguration zu speichern und das Dialogfeld zu schließen.
+   1. Wählen Sie **[!UICONTROL Speichern und schließen]**, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
 
-1. Im **[!UICONTROL Konfigurationsbrowser]** auswählen **[!UICONTROL Erstellen]**.
+1. Wählen Sie im **[!UICONTROL Konfigurations-Browser]** die Option **[!UICONTROL Erstellen]**.
 1. Legen Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen Titel für den Ordner fest und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**.
-1. Auswählen **[!UICONTROL Erstellen]** , um den Ordner zu erstellen, der für Cloud Service-Konfigurationen aktiviert ist.
+1. Wählen Sie **[!UICONTROL Erstellen]**, um den für Cloud Service-Konfigurationen aktivierten Ordner zu erstellen.
 
 ## Konfigurieren von RESTful-Webservices {#configure-restful-web-services}
 
@@ -127,11 +127,11 @@ RESTful-Webservices können mithilfe von [Swagger-Spezifikationen](https://swagg
 
 ### Konfigurieren von RESTful-Services für Open API Spezifikation Version 2.0 {#configure-restful-services-open-api-2.0}
 
-1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Data Sources]**. Wählen Sie aus, um den Ordner auszuwählen, in dem Sie eine Cloud-Konfiguration erstellen möchten.
+1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Datenquellen]**. Wählen Sie den Ordner aus, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
    Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](configure-data-sources.md#cloud-folder).
 
-1. Auswählen **[!UICONTROL Erstellen]** , um die **[!UICONTROL Assistent zum Erstellen der Datenquellenkonfiguration]**. Geben Sie einen Namen und optional einen Titel für die Konfiguration an, wählen Sie **[!UICONTROL RESTful-Dienst]** aus dem **[!UICONTROL Diensttyp]** in der Dropdown-Liste, optional ein Miniaturbild für die Konfiguration durchsuchen und auswählen und **[!UICONTROL Nächste]**.
+1. Wählen Sie **[!UICONTROL Erstellen]**, um den **[!UICONTROL Assistenten zum Erstellen der Datenquellenkonfiguration]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL RESTful-Service]** aus der Dropdown-Liste **[!UICONTROL Service-Typ]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration und wählen Sie **[!UICONTROL Weiter]**.
 1. Geben Sie folgende Details für den RESTful-Service an:
 
    * Wählen Sie eine URL oder Datei aus der Dropdown-Liste [!UICONTROL Swagger-Quelle] aus und geben Sie dementsprechend die [!DNL Swagger URL] zur [!DNL  Swagger]-Definitionsdatei an oder laden Sie die [!DNL Swagger]-Datei aus Ihrem lokalen Dateisystem hoch.
@@ -148,15 +148,15 @@ RESTful-Webservices können mithilfe von [Swagger-Spezifikationen](https://swagg
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. Auswählen **[!UICONTROL Erstellen]** , um die Cloud-Konfiguration für den RESTful-Dienst zu erstellen.
+1. Wählen Sie **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den RESTful-Service zu erstellen.
 
 ### Konfigurieren von RESTful-Services für Open API Spezifikation Version 3.0 {#configure-restful-services-open-api-3.0}
 
-1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Data Sources]**. Wählen Sie aus, um den Ordner auszuwählen, in dem Sie eine Cloud-Konfiguration erstellen möchten.
+1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Datenquellen]**. Wählen Sie den Ordner aus, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
    Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](configure-data-sources.md#cloud-folder).
 
-1. Auswählen **[!UICONTROL Erstellen]** , um die **[!UICONTROL Assistent zum Erstellen der Datenquellenkonfiguration]**. Geben Sie einen Namen und optional einen Titel für die Konfiguration an, wählen Sie **[!UICONTROL RESTful-Dienst]** aus dem **[!UICONTROL Diensttyp]** in der Dropdown-Liste, optional ein Miniaturbild für die Konfiguration durchsuchen und auswählen und **[!UICONTROL Nächste]**.
+1. Wählen Sie **[!UICONTROL Erstellen]**, um den **[!UICONTROL Assistenten zum Erstellen der Datenquellenkonfiguration]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL RESTful-Service]** aus der Dropdown-Liste **[!UICONTROL Service-Typ]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration und wählen Sie **[!UICONTROL Weiter]**.
 1. Geben Sie folgende Details für den RESTful-Service an:
 
    * Wählen Sie eine URL oder Datei aus der Dropdown-Liste [!UICONTROL Swagger-Quelle] aus und geben Sie dementsprechend die [!DNL Swagger 3.0 URL] zur [!DNL  Swagger]-Definitionsdatei an oder laden Sie die [!DNL Swagger]-Datei aus Ihrem lokalen Dateisystem hoch.
@@ -167,7 +167,7 @@ RESTful-Webservices können mithilfe von [Swagger-Spezifikationen](https://swagg
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. Auswählen **[!UICONTROL Erstellen]** , um die Cloud-Konfiguration für den RESTful-Dienst zu erstellen.
+1. Wählen Sie **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den RESTful-Service zu erstellen.
 
 Einige der von RESTful Services Open API Specifikation Version 3.0 nicht unterstützten Vorgänge sind:
 * Rückrufe
@@ -208,7 +208,7 @@ Folgende JSON-Datei zeigt ein Beispiel:
 } 
 ```
 
-1. Auswählen **[!UICONTROL Formulardatenmodell HTTP-Client-Konfiguration für REST-Datenquelle]**.
+1. Wählen Sie **[!UICONTROL HTTP-Client-Konfiguration des Formulardatenmodells für REST-Datenquellen]**.
 
 1. Führen Sie im Dialog [!UICONTROL Formular-Datenmodell HTTP-Client-Konfiguration für REST-Datenquelle] folgende Schritte aus:
 
@@ -228,11 +228,11 @@ SOAP-basierte Webservices werden mithilfe von [WSDL-Spezifikationen (Web Service
 
 Um den SOAP-basierten Webservice in [!DNL Experience Manager] as a Cloud Service zu konfigurieren, benötigen Sie die WSDL-URL für den Webservice. Gehen Sie dann wie folgt vor:
 
-1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Data Sources]**. Wählen Sie aus, um den Ordner auszuwählen, in dem Sie eine Cloud-Konfiguration erstellen möchten.
+1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Data Sources]**. Wählen Sie den Ordner aus, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
    Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](configure-data-sources.md#cloud-folder).
 
-1. Auswählen **[!UICONTROL Erstellen]** , um die **[!UICONTROL Assistent zum Erstellen der Datenquellenkonfiguration]**. Geben Sie einen Namen und optional einen Titel für die Konfiguration an, wählen Sie **[!UICONTROL SOAP-Webdienst]** aus dem **[!UICONTROL Diensttyp]** in der Dropdown-Liste, optional ein Miniaturbild für die Konfiguration durchsuchen und auswählen und **[!UICONTROL Nächste]**.
+1. Wählen Sie **[!UICONTROL Erstellen]**, um den **[!UICONTROL Assistenten zum Erstellen der Datenquellenkonfiguration]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL SOAP-Webservice]** aus der Dropdown-Liste **[!UICONTROL Service-Typ]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration, und wählen Sie **[!UICONTROL Weiter]**.
 1. Geben Sie Folgendes für den SOAP-Webservice an:
 
    * WSDL-URL für den Webservice.
@@ -244,7 +244,7 @@ Um den SOAP-basierten Webservice in [!DNL Experience Manager] as a Cloud Service
 
      <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. Auswählen **[!UICONTROL Erstellen]** , um die Cloud-Konfiguration für den SOAP-Webdienst zu erstellen.
+1. Wählen Sie **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den SOAP-Webservice zu erstellen.
 
 ### Aktivieren der Verwendung von Importanweisungen in SOAP-Webservices WSDL {#enable-import-statements}
 
@@ -269,11 +269,11 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
 > Das Formulardatenmodell unterstützt [OData Version 4](https://www.odata.org/documentation/).
 >Eine schrittweise Anleitung zum Konfigurieren von [!DNL Microsoft®® Dynamics 365], online oder lokal finden Sie unter [[!DNL Microsoft® Dynamics] OData-Konfiguration](ms-dynamics-odata-configuration.md).
 
-1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Data Sources]**. Wählen Sie aus, um den Ordner auszuwählen, in dem Sie eine Cloud-Konfiguration erstellen möchten.
+1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Datenquellen]**. Wählen Sie den Ordner aus, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
    Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](#cloud-folder).
 
-1. Auswählen **[!UICONTROL Erstellen]** , um die **[!UICONTROL Assistent zum Erstellen der Datenquellenkonfiguration]**. Geben Sie einen Namen und optional einen Titel für die Konfiguration an, wählen Sie **[!UICONTROL OData-Dienst]** aus dem **[!UICONTROL Diensttyp]** in der Dropdown-Liste, optional ein Miniaturbild für die Konfiguration durchsuchen und auswählen und **[!UICONTROL Nächste]**.
+1. Wählen Sie **[!UICONTROL Erstellen]**, um den **[!UICONTROL Assistenten zum Erstellen der Datenquellenkonfiguration]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL OData-Service]** aus der Dropdown-Liste **[!UICONTROL Service-Typ]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration und wählen Sie **[!UICONTROL Weiter]**.
 1. Geben Sie folgende Details für den OData-Service an:
 
    * Service-Stamm-URL für den zu konfigurierenden OData-Service.
@@ -283,9 +283,9 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
 
    >[!NOTE]
    >
-   Wählen Sie den Authentifizierungstyp OAuth 2.0 aus, um eine Verbindung mit [!DNL Microsoft®® Dynamics]-Services herzustellen, die den OData-Endpunkt als Service-Stamm nutzen.
+   >Wählen Sie den Authentifizierungstyp OAuth 2.0 aus, um eine Verbindung mit [!DNL Microsoft®® Dynamics]-Services herzustellen, die den OData-Endpunkt als Service-Stamm nutzen.
 
-1. Auswählen **[!UICONTROL Erstellen]** , um die Cloud-Konfiguration für den OData-Dienst zu erstellen.
+1. Wählen Sie **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den OData-Service zu erstellen.
 
 <!--
 ## Configure Microsoft® SharePoint List {#config-sharepoint-list}

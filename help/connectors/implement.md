@@ -1,11 +1,11 @@
 ---
 title: Implementieren von AEM-Connectoren
-description: Erfahren Sie mehr über Connectoren, darüber, was sie tun können und wie Sie diese wertvollen Tools in Experience Manager implementieren können.
+description: Erfahren Sie mehr über Connectoren und darüber, was sie tun können und wie Sie diese wertvollen Tools in Experience Manager implementieren können.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '935'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Implementieren von AEM-Connectoren
 
 Im Folgenden finden Sie nützliche Hinweise zum Erstellen von [AEM-Connectoren](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html). Sie sollten zusammen mit Anleitungen zum [Senden](submit.md) und [Warten](maintain.md) von Connectoren gelesen werden.
 
-Eine Entwicklerlizenz für AEM kann über das [Adobe Exchange-Programm](https://partners.adobe.com/exchangeprogram/experiencecloud).
+Eine Entwicklerlizenz für AEM kann über das [Adobe Exchange-Programm](https://partners.adobe.com/exchangeprogram/experiencecloud) erworben werden.
 
 Gängige Integrationsmuster
 ---------------------------

@@ -4,9 +4,9 @@ description: Lernen Sie, wie Sie eine Vorlage für ein Datensatzdokument (DoR) f
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4124'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Laden Sie Ihre XFA-Vorlage (XDP-Datei) in Ihre AEM Forms-Instanz hoch. Führen S
 
 1. Klicken Sie in der Experience Manager-Autor-Instanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
 1. Wählen Sie ein Formular aus und klicken Sie auf **[!UICONTROL Eigenschaften]**.
-1. Wählen Sie im Fenster Eigenschaften die Option **[!UICONTROL Formularmodell]**.
+1. Wählen Sie im Fenster „Eigenschaften“ die Option **[!UICONTROL Formularmodell]**.
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie in der Dropdown-Liste **[!UICONTROL Auswählen aus]** die Option **[!UICONTROL Schema]** oder **[!UICONTROL Ohne]** aus. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
 1. Wählen Sie auf der Registerkarte „Formularmodell“ im Abschnitt „Konfiguration der Datensatzdokument-Vorlagenkonfiguration“ die Option **Formularvorlage als Datensatzdokument-Vorlage zuordnen**. Bei Auswahl dieser Option werden alle auf Ihrem Computer verfügbaren XFA-Vorlagen (XDP-Dateien) angezeigt. Wählen Sie die entsprechende Datei aus. Stellen Sie außerdem sicher, dass dasselbe Schema (Datenschema) für das adaptive Formular und die ausgewählte XFA-Vorlage (XDP-Datei) verwendet wird.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
@@ -62,7 +62,7 @@ Laden Sie Ihr Adobe Acrobat-PDF (AcroForm) in Ihre AEM Forms-Instanz hoch. Führ
 
 1. Klicken Sie in der Experience Manager-Autor-Instanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
 1. Wählen Sie ein Formular aus und klicken Sie auf **[!UICONTROL Eigenschaften]**.
-1. Wählen Sie im Fenster Eigenschaften die Option **[!UICONTROL Formularmodell]**.
+1. Wählen Sie im Fenster „Eigenschaften“ die Option **[!UICONTROL Formularmodell]**.
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie in der Dropdown-Liste **[!UICONTROL Auswählen aus]** die Option **[!UICONTROL Schema]** oder **[!UICONTROL Ohne]** aus. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
 1. Wählen Sie auf der Registerkarte „Formularmodell“ im Abschnitt „Konfiguration der Datensatzdokument-Vorlagenkonfiguration“ die Option **Formularvorlage als Datensatzdokument-Vorlage zuordnen**. Bei Auswahl dieser Option werden alle auf Ihrem Computer verfügbaren Acrobat-PDF (AcroForm) angezeigt. Wählen Sie die entsprechende Datei aus.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
@@ -83,7 +83,7 @@ Führen Sie die folgenden Schritte aus, um ein adaptives Formular so zu konfigur
 
 1. Klicken Sie in der Experience Manager-Autor-Instanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
 1. Wählen Sie ein Formular aus und klicken Sie auf **[!UICONTROL Eigenschaften]**.
-1. Wählen Sie im Fenster Eigenschaften die Option **[!UICONTROL Formularmodell]**.
+1. Wählen Sie im Fenster „Eigenschaften“ die Option **[!UICONTROL Formularmodell]**.
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie in der Dropdown-Liste **[!UICONTROL Auswählen aus]** die Option **[!UICONTROL Schema]** oder **[!UICONTROL Ohne]** aus. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
 1. Wählen Sie auf der Registerkarte „Formularmodell“ im Abschnitt „Konfiguration der Datensatzdokument-Vorlage“die Option **Datensatzdokument erzeugen**.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
@@ -336,10 +336,10 @@ Beim Generieren eines Datensatzdokuments können Sie auf der Registerkarte „Da
 
 Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt ist. Dadurch wird sichergestellt, dass die von Ihnen auf der Registerkarte für das Datensatzdokument eingegebenen Branding-Informationen lokalisiert werden. Gehen Sie wie folgt vor, um die Branding-Informationen des Datensatzdokuments anzupassen:
 
-1. Wählen Sie einen Bereich (Stammbereich) im Datensatzdokument aus und wählen Sie dann ![konfigurieren](assets/configure.png).
-1. Auswählen ![dortab](assets/dortab.png). Die Registerkarte „Datensatzdokument“ wird angezeigt.
+1. Wählen Sie einen Bereich (Stammbereich) im Datensatzdokument aus und wählen Sie dann ![Konfigurieren](assets/configure.png).
+1. Wählen Sie ![dortab](assets/dortab.png). Die Registerkarte „Datensatzdokument“ wird angezeigt.
 1. Wählen Sie entweder die Standardvorlage oder eine benutzerdefinierte Vorlage für die Darstellung des Datensatzdokuments aus. Wenn Sie die Standardvorlage auswählen, wird eine Miniaturvorschau des Datensatzdokuments unterhalb der Dropdown-Liste „Vorlage“ angezeigt.
-1. Je nachdem, ob Sie eine Standard- oder eine benutzerdefinierte Vorlage auswählen, werden einige der folgenden Eigenschaften oder alle Eigenschaften auf der Registerkarte Datensatzdokument angezeigt. Geben Sie die folgenden Eigenschaften an, um das Erscheinungsbild des Datensatzdokuments zu definieren:
+1. Abhängig davon, ob Sie eine standardmäßige oder benutzerdefinierte Vorlage auswählen, werden einige oder alle der folgenden Eigenschaften auf der Registerkarte „Datensatzdokument“ angezeigt. Geben Sie die folgenden Eigenschaften an, um das Erscheinungsbild des Datensatzdokuments zu definieren:
 
    1. **Allgemeine Eigenschaften**:
       * **Vorlage**: Wenn Sie eine benutzerdefinierte Vorlage auswählen, navigieren zu einer XDP-Datei auf Ihrem [!DNL AEM Forms]-Server und wählen sie aus. Wenn Sie eine Vorlage verwenden möchten, die sich noch nicht auf Ihrem [!DNL AEM Forms]-Server befindet, müssen Sie die XDP-Datei zuerst auf Ihren [!DNL AEM Forms]-Server hochladen.
@@ -385,7 +385,7 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
    </proto>
    ```
 
-1. Um die Branding-Änderungen zu speichern, wählen Sie **[!UICONTROL Fertig]**.
+1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Branding-Änderungen zu speichern.
 
 ## Unterstützung von Datensatzdokumenten im Editor für adaptive Formulare {#dor-support-in-adaptiveform}
 
@@ -402,7 +402,7 @@ Führen Sie die folgenden Schritte über die Autoreninstanz des Editors für ada
 
    * **[!UICONTROL Generieren von Dokument aus Datensatz]**: Wenn diese Option ausgewählt ist, wird die [!UICONTROL Datensatzdokument]-Vorlage automatisch für Ihr adaptives Formular generiert.
 
-1. Auswählen ![Speichern](/help/forms/assets/check-button.png) , um die Eigenschaften zu speichern.
+1. Wählen Sie ![Speichern](/help/forms/assets/check-button.png) aus, um die Änderungen zu speichern.
 
 ![Unterstützung für die Datensatzdokument-Vorlage](/help/forms/assets/dor-templatesupport.png)
 

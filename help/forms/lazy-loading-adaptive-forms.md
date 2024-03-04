@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1063'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -52,8 +52,8 @@ Formulare enthalten Felder und Abschnitte, die nicht für alle Benutzer und Bedi
 Führen Sie zum Aktivieren des verzögerten Ladens in einem adaptiven Formularfragment folgende Schritte durch:
 
 1. Öffnen Sie im Bearbeitungsmodus das adaptive Formular, das das Fragment enthält, für das Sie verzögertes Laden aktivieren möchten.
-1. Wählen Sie das adaptive Formularfragment aus und wählen Sie ![konfigurieren](assets/configure-icon.svg).
-1. Aktivieren Sie in der Seitenleiste **[!UICONTROL Fragment verzögert laden]** und wählen **Fertig**.
+1. Wählen Sie das adaptive Formularfragment und anschließend die Option ![Konfigurieren](assets/configure-icon.svg) aus.
+1. Aktivieren Sie in der Seitenleiste die Option **[!UICONTROL Fragment verzögert laden]** und wählen Sie **Fertig** aus.
 
    ![Verzögertes Laden für das adaptive Formularfragment aktivieren](assets/lazy-loading-fragment.png)
 
@@ -62,7 +62,7 @@ Führen Sie zum Aktivieren des verzögerten Ladens in einem adaptiven Formularfr
 Sie können die Werte von Objekten im verzögert geladenen Fragment als global markieren, damit sie in Skripten verwendet werden können, wenn das übergeordnete Fragment nicht geladen wird. Gehen Sie folgendermaßen vor:
 
 1. Öffnen Sie das adaptive Formularfragment im Bearbeitungsmodus.
-1. Wählen Sie das Feld aus, dessen Wert Sie als global markieren möchten, und wählen Sie dann ![konfigurieren](assets/configure-icon.svg).
+1. Wählen Sie das Feld aus, dessen Wert Sie als global markieren möchten, und anschließend die Option ![Konfigurieren](assets/configure-icon.svg).
 1. Aktivieren Sie in der Randleiste **[!UICONTROL Wert bei verzögertem Laden verwenden]**.
 
    ![Feld „Verzögertes Laden“ in der Randleiste](assets/enable-lazy-loading.png)

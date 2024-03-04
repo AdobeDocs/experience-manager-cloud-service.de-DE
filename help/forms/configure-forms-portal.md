@@ -1,12 +1,12 @@
 ---
-title: Wie erstelle ich ein Forms-Portal auf einer Experience Manager Sites-Seite?
+title: Erstellen eines Formularportals auf einer Experience Manager Sites-Seite
 description: Erfahren Sie, wie Sie ein Formularportal erstellen und vordefinierte Kernkomponenten auf einer AEM Sites-Seite verwenden können.
 feature: Adaptive Forms, Foundation Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1785'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -89,8 +89,8 @@ So importieren Sie vordefinierte Formularportal-Komponenten in AEM Forms as a Cl
 
 Stellen Sie vor dem Ausführen dieser Schritte sicher, dass Sie über ein Azure-Speicherkonto und einen Zugriffsschlüssel verfügen, um den Zugriff auf das [!DNL Azure]-Speicherkonto zu autorisieren.
 
-1. Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure-Speicher]**.
-1. Wählen Sie einen Ordner aus, um die Konfiguration zu erstellen, und wählen Sie **[!UICONTROL Erstellen]**.
+1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure-Speicher]**.
+1. Wählen Sie einen Ordner aus, um die Konfiguration zu erstellen, und wählen Sie dann **[!UICONTROL Erstellen]**.
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Titel für die Konfiguration an.
 1. Geben Sie den Namen des [!DNL Azure]-Speicherkontos im Feld **[!UICONTROL Azure-Speicherkonto]** an.
 
@@ -100,8 +100,8 @@ Führen Sie die folgenden Schritte aus, um Unified Storage Connector für AEM-Wo
 
 1. Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Unified Storage Connector]**.
 1. Wählen Sie im Abschnitt **[!UICONTROL Formularportal]** den Eintrag **[!UICONTROL Azure]** aus der Dropdown-Liste **[!UICONTROL Speicher]** aus.
-1. Geben Sie den [Konfigurationspfad für die Azure-Speicherkonfiguration](#create-azure-storage-configuration) im Feld **[!UICONTROL Pfad für Speicherkonfiguration]** an.
-1. Auswählen **[!UICONTROL Veröffentlichen]** und wählen Sie **[!UICONTROL Speichern]** , um die Konfiguration zu speichern.
+1. Geben Sie im Feld **[!UICONTROL Pfad für Speicherkonfiguration]** den [Konfigurationspfad für die Azure-Speicherkonfiguration](#create-azure-storage-configuration) an.
+1. Tippen Sie auf **[!UICONTROL Veröffentlichen]** und dann auf **[!UICONTROL Speichern]**, um die Konfiguration zu speichern.
 
 ## Aktivieren von Komponenten des Formularportals {#enable-forms-portal-components}
 
@@ -113,11 +113,11 @@ Sobald eine Portalkomponente aktiviert ist, können Sie sie in der Autoreninstan
 
 Sie können das Formularportal auf mit AEM erstellten Websites erstellen und anpassen, indem Sie die Portalkomponenten hinzufügen und konfigurieren. Stellen Sie sicher, dass [Komponenten aktiviert sind](#enable-forms-portal-components), bevor Sie sie im Formularportal verwenden.
 
-Um eine Komponente hinzuzufügen, ziehen Sie die Komponente entweder aus dem Bereich Komponenten in den Layout-Container auf der Seite oder wählen Sie das Symbol zum Hinzufügen im Layout-Container aus und fügen Sie die Komponente aus dem [!UICONTROL Neue Komponente einfügen] angezeigt.
+Um eine Komponente hinzuzufügen, ziehen Sie die Komponente entweder aus dem Bereich „Komponenten“ in den Layout-Container auf der Seite oder wählen Sie das Symbol zum Hinzufügen im Layout-Container und fügen Sie über das Dialogfeld [!UICONTROL Neue Komponente einfügen] die Komponente hinzu.
 
 ### Konfigurieren der Komponente für Entwürfe und Einsendungen {#configure-drafts-submissions-component}
 
-Die Komponente für Entwürfe und Einsendungen zeigt Formulare an, die als Entwurf zum späteren Ausfüllen und für gesendete Formulare gespeichert wurden. Wählen Sie zum Konfigurieren die Komponente aus und wählen Sie dann die ![Symbol &quot;Konfigurieren&quot;](assets/configure_icon.png). Geben Sie im Dialogfeld [!UICONTROL Entwürfe und Einsendungen] den Titel an, um die Formularliste als Entwurf oder übermittelte Formulare anzugeben. Wählen Sie außerdem aus, ob die Komponente Entwürfe von Formularen oder übermittelte Formulare im Karten- oder Listenformat auflisten soll.
+Die Komponente für Entwürfe und Einsendungen zeigt Formulare an, die als Entwurf zum späteren Ausfüllen und für gesendete Formulare gespeichert wurden. Wählen Sie zum Konfigurieren die Komponente und dann das ![Symbol „Konfigurieren“](assets/configure_icon.png). Geben Sie im Dialogfeld [!UICONTROL Entwürfe und Einsendungen] den Titel an, um die Formularliste als Entwurf oder übermittelte Formulare anzugeben. Wählen Sie außerdem aus, ob die Komponente Entwürfe von Formularen oder übermittelte Formulare im Karten- oder Listenformat auflisten soll.
 
 ![Symbol für Entwürfe](assets/drafts-component.png)
 
@@ -129,7 +129,7 @@ Die Komponente für Suche und Auflister wird verwendet, um adaptive Formulare au
 
 ![Symbol für Suche und Auflister](assets/search-and-lister-component.png)
 
-Wählen Sie zum Konfigurieren die Komponente aus und wählen Sie dann die ![Symbol &quot;Konfigurieren&quot;](assets/configure_icon.png). Das Dialogfeld [!UICONTROL Suche und Auflister] wird geöffnet.
+Wählen Sie zum Konfigurieren die Komponente und dann das ![Symbol „Konfigurieren“](assets/configure_icon.png) aus. Das Dialogfeld [!UICONTROL Suche und Auflister] wird geöffnet.
 
 1. Konfigurieren Sie auf der Registerkarte [!UICONTROL Anzeige] Folgendes:
    * In **[!UICONTROL Titel]** geben Sie den Titel für die Komponente für Suche und Auflister an. Ein aussagekräftiger Titel ermöglicht es den Benutzern, die Liste der Formulare schnell zu durchsuchen.
@@ -141,7 +141,7 @@ Wählen Sie zum Konfigurieren die Komponente aus und wählen Sie dann die ![Symb
 
 ### Konfigurieren der Link-Komponente {#configure-link-component}
 
-Mit der Link-Komponente können Sie Links zu einem adaptiven Formular auf der Seite bereitstellen. Wählen Sie zum Konfigurieren die Komponente aus und wählen Sie dann die ![Symbol &quot;Konfigurieren&quot;](assets/configure_icon.png). Der Dialog [!UICONTROL Link-Komponente bearbeiten] wird geöffnet.
+Mit der Link-Komponente können Sie Links zu einem adaptiven Formular auf der Seite bereitstellen. Wählen Sie zum Konfigurieren die Komponente und dann das ![Symbol „Konfigurieren“](assets/configure_icon.png) aus. Der Dialog [!UICONTROL Link-Komponente bearbeiten] wird geöffnet.
 
 1. Geben Sie auf der Registerkarte [!UICONTROL Anzeige] die Link-Beschriftung und die QuickInfo ein, um die Identifizierung der durch diesen Link dargestellten Formulare zu erleichtern.
 1. Geben Sie auf der Registerkarte [!UICONTROL Asset-Informationen] den Repository-Pfad an, unter dem das Asset gespeichert ist.
@@ -152,7 +152,7 @@ Mit der Link-Komponente können Sie Links zu einem adaptiven Formular auf der Se
 Sie können konfigurieren, dass ein adaptives Formular nur gesendet wird, wenn alle Empfänger das Unterschriftsverfahren abgeschlossen haben. Gehen Sie wie folgt vor, um die Einstellung mit Adobe Sign zu konfigurieren.
 
 1. Öffnen Sie in der Autoreninstanz ein adaptives Formular im Bearbeitungsmodus.
-1. Wählen Sie im linken Bereich das Symbol Eigenschaften aus und erweitern Sie die **[!UICONTROL ELEKTRONISCHE UNTERSCHRIFT]** -Option.
+1. Wählen Sie im linken Bereich das Symbol „Eigenschaften“ aus und erweitern Sie die Option **[!UICONTROL ELEKTRONISCHE UNTERSCHRIFT]**.
 1. Wählen Sie **[!UICONTROL Adobe Sign aktivieren]** aus. Es werden verschiedene Konfigurationsoptionen angezeigt.
 1. Wählen Sie im Abschnitt [!UICONTROL Formular senden] die Option **[!UICONTROL nach Abschluss der Signaturzeremonie durch jeden Empfänger]** aus, um die Aktion „Formular senden“ zu konfigurieren, bei der das Formular erst zur Unterschrift an alle Empfänger gesendet wird. Erst nachdem alle Empfänger das Formular signiert haben, wird das Formular gesendet.
 
@@ -160,27 +160,27 @@ Sie können konfigurieren, dass ein adaptives Formular nur gesendet wird, wenn a
 
 Sie können Formulare als Entwürfe speichern, um sie später abzuschließen. Es gibt zwei Möglichkeiten, ein Formular als Entwurf zu speichern:
 
-* Erstellen Sie eine Regel &quot;Formular speichern&quot;für eine Formularkomponente, z. B. eine Schaltfläche. Beim Klicken auf die Schaltfläche wird die Regel ausgelöst und das Formular als Entwurf gespeichert.
+* Erstellen Sie eine Regel „Formular speichern“ für eine Formularkomponente, beispielsweise eine Schaltfläche. Beim Klicken auf die Schaltfläche wird die Regel ausgelöst und das Formular als Entwurf gespeichert.
 * Aktivieren Sie die Funktion „Automatisches Speichern“, mit der das Formular beim angegebenen Ereignis oder nach einem konfigurierten Zeitintervall gespeichert wird.
 
 ### Erstellen von Regeln zum Speichern eines adaptiven Formulars als Entwurf {#rule-to-save-adaptive-form-as-draft}
 
-Gehen Sie wie folgt vor, um eine Regel &quot;Formular speichern&quot;für eine Formularkomponente zu erstellen, z. B. eine Schaltfläche:
+Gehen Sie wie folgt vor, um eine Regel „Formular speichern“ für eine Formularkomponente wie beispielsweise eine Schaltfläche zu erstellen:
 
 1. Öffnen Sie in der Autoreninstanz ein adaptives Formular im Bearbeitungsmodus.
-1. Wählen Sie im linken Bereich die Option ![Symbol &quot;Komponenten&quot;](assets/components_icon.png) und ziehen Sie die [!UICONTROL Schaltfläche] -Komponente in das Formular ein.
-1. Wählen Sie die [!UICONTROL Schaltfläche] und wählen Sie dann die ![Symbol &quot;Konfigurieren&quot;](assets/configure_icon.png).
-1. Wählen Sie die [!UICONTROL Regeln bearbeiten] -Symbol, um den Regeleditor zu öffnen.
-1. Auswählen **[!UICONTROL Erstellen]** , um die Regel zu konfigurieren und zu erstellen.
-1. Wählen Sie im Abschnitt [!UICONTROL Wann] die Option „wird angeklickt“ und im Abschnitt [!UICONTROL Dann] die Option „Formular speichern“ aus.
-1. Auswählen **[!UICONTROL Fertig]** , um die Regel zu speichern.
+1. Wählen Sie im linken Bereich das ![Symbol „Komponenten“](assets/components_icon.png) aus und ziehen Sie die Komponente [!UICONTROL Schaltfläche] auf das Formular.
+1. Wählen Sie die Komponente [!UICONTROL Schaltfläche] und dann das ![Symbol „Konfigurieren“](assets/configure_icon.png) aus.
+1. Wählen Sie das Symbol [!UICONTROL Regeln bearbeiten] aus, um den Regeleditor zu öffnen.
+1. Wählen Sie **[!UICONTROL Erstellen]** aus, um die Regel zu konfigurieren und zu erstellen.
+1. Wählen Sie im Abschnitt [!UICONTROL Wenn] die Option „wird angeklickt“ und im Abschnitt [!UICONTROL Dann] die Option „Formular speichern“ aus.
+1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Regel zu speichern.
 
 ### Automatisches Speichern aktivieren {#enable-auto-save}
 
 Sie können die Funktion zum automatischen Speichern für ein adaptives Formular wie folgt konfigurieren:
 
 1. Öffnen Sie in der Autoreninstanz ein adaptives Formular im Bearbeitungsmodus.
-1. Wählen Sie im linken Bereich die ![Eigenschaften-Symbol](assets/configure_icon.png) und erweitern [!UICONTROL AUTOMATISCHES SPEICHERN] -Option.
+1. Wählen Sie im linken Bereich das ![Symbol „Eigenschaften“](assets/configure_icon.png) aus und erweitern Sie die Option [!UICONTROL AUTOMATISCHES SPEICHERN].
 1. Setzen Sie das Häkchen bei **[!UICONTROL Aktivieren]**, um das automatische Speichern des Formulars zu aktivieren. Sie können Folgendes konfigurieren:
 * Standardmäßig wird [!UICONTROL Adaptives Formularereignis] auf „true“ gesetzt, was bedeutet, dass das Formular nach jedem Ereignis automatisch gespeichert wird.
 * Wählen Sie unter [!UICONTROL Auslöser] die Einstellungen entsprechend, sodass die automatische Speicherung basierend auf dem Vorkommen eines Ereignisses oder nach einem bestimmten Zeitintervall ausgelöst wird.

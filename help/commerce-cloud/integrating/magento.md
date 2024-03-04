@@ -4,9 +4,9 @@ description: AEM und Adobe Commerce werden über das Commerce Integration Framew
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b
 source-git-commit: 6d63328ca17a00e0369c57714409f3f448cb311f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '439'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -52,5 +52,5 @@ Innerhalb von Projekten können AEM CIF-Kernkomponenten und benutzerdefinierte P
 
 ## Suchen {#search}
 
-CIF bietet eine vordefinierte [Kernkomponente der Suche](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) , das ein Server-seitiges gerendertes Sucherlebnis basierend auf [Commerce GraphQL-API](https://developer.adobe.com/commerce/webapi/graphql/). Commerce-Kunden haben die Möglichkeit, [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) anstatt. Folgen Sie diesen [link](/help/commerce-cloud/integrating/live-search-plp.md) , um mehr über die Integration CIF - Live-Suche zu erfahren.
+CIF bietet eine vordefinierte [Kernkomponente für die Suche](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html), die ein Server-seitiges gerendertes Sucherlebnis basierend auf der [Commerce GraphQL-API](https://developer.adobe.com/commerce/webapi/graphql/) darstellt. Commerce-Kundinnen und -Kunden haben die Möglichkeit, stattdessen die [Live-Suche](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=de) zu verwenden. Mehr über die Integration der CIF-Live-Suche erfahren Sie unter diesem [Link](/help/commerce-cloud/integrating/live-search-plp.md).
 

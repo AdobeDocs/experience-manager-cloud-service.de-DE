@@ -6,9 +6,9 @@ feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1396'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -27,12 +27,12 @@ Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen m
 ## Hinzufügen eines Metadatenprofils {#adding-a-metadata-profile}
 
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenprofile]** und klicken Sie dann auf **[!UICONTROL Erstellen]**.
-1. Geben Sie einen Titel für das Metadatenprofil ein, z. B. Beispielmetadaten, und wählen Sie **[!UICONTROL Einsenden]**. Es wird „Formular bearbeiten“ für das Metadatenprofil angezeigt.
-1. Klicken Sie auf eine Komponente und konfigurieren Sie ihre Eigenschaften im **[!UICONTROL Einstellungen]** Registerkarte. Klicken Sie beispielsweise auf die **[!UICONTROL Beschreibung]** und bearbeiten Sie die Eigenschaften.
+1. Geben Sie einen Titel für das Metadatenprofil ein, etwa „Beispielmetadaten“, und tippen Sie auf **[!UICONTROL Senden]**. Es wird das Formular zum Bearbeiten für das Metadatenprofil angezeigt.
+1. Klicken Sie auf eine Komponente und konfigurieren Sie ihre Eigenschaften in der Registerkarte **[!UICONTROL Einstellungen]**. Klicken Sie beispielsweise auf die **[!UICONTROL Beschreibungskomponente]** und bearbeiten Sie die Eigenschaften.
 Bearbeiten Sie die folgenden Eigenschaften für die Komponente **[!UICONTROL Beschreibung]**:
 
    * **[!UICONTROL Feldbezeichnung]**: Der Anzeigename der Metadateneigenschaft. Dieser dient lediglich als Referenz für den Benutzer.
-   * **[!UICONTROL Zu Eigenschaft zuordnen]** - Der Wert dieser Eigenschaft liefert den relativen Pfad/Namen zum Asset-Knoten, unter dem er im Repository gespeichert ist. Der Wert sollte immer mit `./` beginnen, weil dies anzeigt, dass sich der Pfad unter dem Knoten des Assets befindet.
+   * **[!UICONTROL Zu Eigenschaft zuordnen]**: Der Wert dieser Eigenschaft liefert den relativen Pfad oder Namen zum Asset-Knoten für dessen Speicherort im Repository. Der Wert sollte immer mit `./` beginnen, weil dies anzeigt, dass sich der Pfad unter dem Knoten des Assets befindet.
 
      Der Wert, den Sie für **[!UICONTROL Zu Eigenschaft zuordnen]** angeben, wird als Eigenschaft unter dem Metadatenknoten des Assets gespeichert. Wenn Sie beispielsweise `/jcr:content/metadata/dc:desc` als Namen von **[!UICONTROL Zu Eigenschaft zuordnen]** [!DNL Adobe Experience Manager Assets] angeben, wird der Wert `dc:desc` von im Metadatenknoten des Assets gespeichert.
 
@@ -90,7 +90,7 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 1. Navigieren Sie zu **[!UICONTROL Tools > Assets > Metadatenprofile]**.
 1. Wählen Sie ein Metadatenprofil aus, das Sie auf einen oder mehrere Ordner anwenden möchten.
-1. Klicks **[!UICONTROL Anwenden von Metadatenprofilen auf Ordner]** und wählen Sie den Ordner oder mehrere Ordner aus, die Sie für den Empfang der neu hochgeladenen Assets verwenden möchten, und klicken Sie auf **[!UICONTROL Fertig]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
+1. Klicken Sie auf **[!UICONTROL Metadatenprofil auf Ordner anwenden]** und wählen Sie einen oder mehrere Ordner aus, die Sie verwenden möchten, um neu hochgeladene Assets zu empfangen. Klicken Sie anschließend auf **[!UICONTROL Fertig]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
 #### Anwenden von Metadatenprofilen auf Ordner aus „Eigenschaften“ {#applying-metadata-profiles-to-folders-from-properties}
 
@@ -108,7 +108,7 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 * Navigieren Sie zu `https://[aem_server]/mnt/overlay/dam/gui/content/assets/v2/foldersharewizard.html/content/dam` und wenden Sie das entsprechende Profil an und klicken Sie auf **[!UICONTROL Speichern]**.
 
-* Navigieren Sie in CRXDE Lite zum folgenden Knoten: `/content/dam/jcr:content`. Eigenschaft hinzufügen `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Klicken Sie auf **Alle speichern**.
+* Navigieren Sie in CRXDE Lite zum folgenden Knoten: `/content/dam/jcr:content`. Fügen Sie die Eigenschaft `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` hinzu. Klicken Sie auf **Alle speichern**.
 
 ## Entfernen eines Metadatenprofils aus Ordnern {#removing-a-metadata-profile-from-folders}
 
@@ -120,7 +120,7 @@ Sie können ein Metadatenprofil aus einem Ordner im Menü **Tools** entfernen. W
 
 1. Klicken Sie auf das Adobe Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools > Assets > Metadatenprofile]**.
 1. Wählen Sie ein Metadatenprofil aus, das Sie aus einem oder mehreren Ordnern entfernen möchten.
-1. Klicks **[!UICONTROL Entfernen von Metadatenprofilen aus Ordnern]** und wählen Sie den Ordner oder mehrere Ordner aus, aus denen Sie ein Profil entfernen möchten, und klicken Sie auf **[!UICONTROL Fertig]**.
+1. Klicken Sie auf **[!UICONTROL Metadatenprofil aus Ordnern entfernen]** und wählen Sie einen oder mehrere Ordner aus, aus dem bzw. denen ein Profil entfernt werden soll, und klicken Sie dann auf **[!UICONTROL Fertig]**.
 
    Sie können bestätigen, dass das Metadatenprofil nicht länger auf einen Ordner angewendet wird, da der Name in diesem Fall nicht mehr unter dem Ordner angezeigt wird.
 

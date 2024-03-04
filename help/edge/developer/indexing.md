@@ -1,11 +1,12 @@
 ---
-description: Adobe Experience Manager bietet eine Möglichkeit, einen Index aller veröffentlichten Seiten in einem bestimmten Bereich Ihrer Website zu speichern. Dies wird häufig verwendet, um Listen und Feeds zu erstellen und Anwendungsfälle für die Suche und Filterung Ihrer Seiten oder Inhaltsfragmente zu aktivieren.
+description: Adobe Experience Manager bietet eine Möglichkeit, einen Index aller veröffentlichten Seiten in einem bestimmten Bereich Ihrer Website zu speichern. Dies wird häufig verwendet, um Listen und Feeds zu erstellen und Anwendungsfälle für das Suchen und Filtern Ihrer Seiten oder Inhaltsfragmente zu aktivieren.
 title: Indizierung
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 8ca968fd-73af-4082-bfc5-0737fdd8a5be
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '45'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 

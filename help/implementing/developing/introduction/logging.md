@@ -3,9 +3,9 @@ title: Protokollieren für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Service verwenden können, um globale Parameter für den zentralen Protokollierungs-Dienst zu konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festzulegen oder die Datenprotokollierung anzufordern.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 35959a1cd47e9ea1b93aeddc3eb72cf03c44eda8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2776'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -190,7 +190,7 @@ Im Folgenden finden Sie Beispiele für die empfohlenen Protokollierungskonfigura
 
 Die HTTP-Anfrageprotokollierung von AEM as a Cloud Service bietet Einblick in die an AEM gesendeten HTTP-Anfragen und deren HTTP-Antworten in zeitlicher Reihenfolge. Dieses Protokoll ist hilfreich, um die HTTP-Anfragen an AEM und die Reihenfolge zu verstehen, in der sie verarbeitet und beantwortet werden.
 
-Der Schlüssel zum Verständnis dieses Protokolls liegt in der Zuordnung der HTTP-Anfrage- und Antwortpaare anhand ihrer Kennungen, die durch den numerischen Wert in den Klammern angegeben werden. Häufig werden bei Anfragen und den zugehörigen Antworten andere HTTP-Anforderungen und -Antworten im Protokoll angezeigt.
+Der Schlüssel zum Verständnis dieses Protokolls liegt in der Zuordnung der HTTP-Anfrage- und Antwortpaare anhand ihrer Kennungen, die durch den numerischen Wert in den Klammern angegeben werden. Oft werden zwischen Anfragen und den entsprechenden Antworten andere HTTP-Anfragen und Antworten in das Protokoll eingefügt.
 
 **Beispielprotokoll**
 
@@ -285,7 +285,7 @@ Dieser Satz an Protokollen bietet Einblicke in HTTP-Anfragen an die Veröffentli
 
 ### Apache HTTPD Web Server-Zugriffsprotokoll {#apache-httpd-web-server-access-log}
 
-Das Apache HTTP Web Server-Zugriffsprotokoll enthält Einträge für jede HTTP-Anfrage, die den Webserver/Dispatcher der Veröffentlichungsstufe erreicht. Anforderungen, die von einem vorgelagerten CDN bereitgestellt werden, werden nicht in diesen Protokollen angezeigt.
+Das Apache HTTP Web Server-Zugriffsprotokoll enthält Einträge für jede HTTP-Anfrage, die den Webserver/Dispatcher der Veröffentlichungsstufe erreicht. Anfragen, die von einem vorgelagerten CDN bereitgestellt werden, sind in diesen Protokollen nicht enthalten.
 
 Informationen zum Fehlerprotokollformat finden Sie in der [offiziellen Dokumentation von Apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -397,7 +397,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 Die Protokollierungsebenen „mod_rewrite“ werden durch die Variable „REWRITE_LOG_LEVEL“ in der Datei `conf.d/variables/global.var` definiert.
 
-Sie kann auf „Error“, „Warn“, „Info“, „Debug“ und „Trace1“ bis „Trace8“ eingestellt werden, wobei der Standardwert „Warn“ ist. Um Ihre RewriteRules zu debuggen, wird empfohlen, die Protokollebene auf trace2 zu erhöhen. Es wird empfohlen, Neuschreibungsregeln mit dem [Dispatcher SDK](../../dispatcher/validation-debug.md). Die maximale Protokollebene für AEM as a Cloud Service ist `debug`. Daher ist es derzeit nicht effektiv möglich, Neuschreibungsregeln in der Cloud zu debuggen.
+Sie kann auf „Error“, „Warn“, „Info“, „Debug“ und „Trace1“ bis „Trace8“ eingestellt werden, wobei der Standardwert „Warn“ ist. Zum Debuggen Ihrer Neuschreibungsregeln wird empfohlen, die Protokollebene auf „Trace2“ zu erhöhen. Es wird empfohlen, Neuschreibungsregeln mit dem [Dispatcher SDK](../../dispatcher/validation-debug.md) zu debuggen. Die maximale Protokollebene für AEM as a Cloud Service ist `debug`. Daher ist es derzeit nicht effektiv möglich, Neuschreibungsregeln in der Cloud zu debuggen.
 
 Weitere Informationen finden Sie in der [Dokumentation zum mod_rewrite-Modul](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging).
 
@@ -590,7 +590,7 @@ Abrufen der Protokolle:
    * Apache HTTPD Web Server-Fehlerprotokoll – `httpd_error.log`
    * Dispatcher-Protokolle – `dispatcher.log`
 
-Die Protokolle werden auch direkt an die Terminalausgabe gedruckt. Meistens sollten diese Protokolle DEBUG sein, was bei Ausführung von Docker durch Übergabe in der Debug-Ebene als Parameter erreicht werden kann. Beispiel:
+Die Protokolle werden auch direkt an die Terminalausgabe gedruckt. Meistens sollten diese Protokolle DEBUG sein, was bei Ausführung von Docker durch Übergabe in der Debug-Ebene als Parameter erreicht werden kann. Zum Beispiel:
 
 `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
@@ -611,7 +611,7 @@ Kundinnen und Kunden mit Splunk-Konten können über das Kunden-Support-Ticket a
 
 Die Netzwerkbandbreite, die mit an Splunk gesendeten Protokollen verknüpft ist, wird als Teil der kundenseitigen Netzwerk-E/A-Nutzung betrachtet.
 
-CDN-Protokolle werden für neue Support-Ticketanfragen an Splunk weitergeleitet. Kunden, die Splunk-Weiterleitung bereits aktiviert haben, können in Zukunft CDN-Protokolle hinzufügen.
+CDN-Protokolle werden für neue Support-Ticketanfragen an Splunk weitergeleitet. Kundinnen und Kunden, die die Splunk-Weiterleitung bereits aktiviert haben, können in Zukunft CDN-Protokolle hinzufügen.
 
 ### Aktivieren der Splunk-Weiterleitung {#enabling-splunk-forwarding}
 

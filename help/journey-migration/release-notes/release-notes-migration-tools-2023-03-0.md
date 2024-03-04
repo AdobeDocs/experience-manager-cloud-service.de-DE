@@ -4,9 +4,9 @@ description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Ve
 feature: Release Information
 exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '301'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,8 +37,8 @@ Das Content Transfer Tool v2.0.16 wurde am 08. März 2023 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt}
 
-* Die Benutzerzuordnung wurde optimiert und in den Schritt zur Inhaltsextraktion integriert. Es ist keine Einrichtung erforderlich. Standardmäßig erfolgt die Benutzerzuordnung automatisch, wenn Benutzende die Inhaltsextraktion starten. Benutzende haben die Möglichkeit, bei Bedarf die Benutzerzuordnung zu deaktivieren. Weitere Informationen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html#user-mapping-detail).
-* Der Vorkopierschritt mit [AzCopy](https://learn.microsoft.com/de-de/azure/storage/common/storage-use-azcopy-v10) wurde in das Content Transfer Tool integriert, was die Extraktion von Inhalten erheblich beschleunigt. Vorkopie wird automatisch konfiguriert und installiert, wenn diese CTT-Version installiert ist. Wenn die Extraktion initiiert wird, wird die Vorkopie automatisch für Migrationssätze ausgeführt, die größer als 200 GB sind. Benutzende haben die Möglichkeit, sie bei Bedarf zu deaktivieren. Weitere Informationen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html).
+* Die Benutzerzuordnung wurde optimiert und in den Schritt zur Inhaltsextraktion integriert. Es ist keine Einrichtung erforderlich. Standardmäßig erfolgt die Benutzerzuordnung automatisch, wenn Benutzende die Inhaltsextraktion starten. Benutzende haben die Möglichkeit, bei Bedarf die Benutzerzuordnung zu deaktivieren. Weitere Informationen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=de#user-mapping-detail).
+* Der Vorkopierschritt mit [AzCopy](https://learn.microsoft.com/de-de/azure/storage/common/storage-use-azcopy-v10) wurde in das Content Transfer Tool integriert, was die Extraktion von Inhalten erheblich beschleunigt. Vorkopie wird automatisch konfiguriert und installiert, wenn diese CTT-Version installiert ist. Wenn die Extraktion initiiert wird, wird die Vorkopie automatisch für Migrationssätze ausgeführt, die größer als 200 GB sind. Benutzende haben die Möglichkeit, sie bei Bedarf zu deaktivieren. Weitere Informationen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=de).
 * CTT kann jetzt auf Windows-Servern verwendet werden.
 
 ### Fehlerbehebungen {#bug-fixes-ctt}

@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
 source-git-commit: 4bda798113d85b800cb088d150f8c9d453c9ec3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1767'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -63,13 +63,13 @@ Gehen Sie wie folgt vor, um die Ereignisse zu abonnieren:
 1. Gehen Sie in den Cloud-Services zur Registerkarte „Projektverknüpfte Ordner“.
 1. Übergeordneter Pfad des verknüpften Ordners: Wählen Sie einen Ordner im DAM aus, in dem Sie die verknüpften Ordner erstellen möchten. Wenn Sie das Feld leer lassen, wird standardmäßig /content/dam verwendet. Stellen Sie sicher, dass das Metadatenschema für Workfront-Tools und das Metadatenschema für Workfront-Ordner mit verknüpften Ordnern auf den ausgewählten Ordner angewendet wurden.
 1. Verknüpfte Ordnerstruktur: Geben Sie durch Kommas getrennte Werte ein. Jeder Wert sollte `DE:<some-project-custom-form-field>`, Portfolio, Programm, Jahr, Name oder ein „literaler Zeichenfolgenwert“ sein (letzteres in Anführungszeichen). Er ist derzeit auf Portfolio,Programm,Jahr,DE:Projekttyp,Name festgelegt.
-1. Berechtigungen konfigurieren: Hinzufügen `jcr:all permissions` Berechtigungen für `/conf/workfront-tools/settings/cloudconfigs` für `wf-workfront-users` hinzugefügt.
+1. Konfigurieren der Berechtigungen: Fügen Sie Berechtigungen `jcr:all permissions` zu `/conf/workfront-tools/settings/cloudconfigs` für die Gruppe `wf-workfront-users` hinzu.
 1. Das Kontrollkästchen „Verknüpfte Ordnertitel in Workfront unter Verwendung der Namen der Ordnerstruktur erstellen“ sollte aktiviert werden, wenn der Titel des Ordners in Workfront alle Ordner in der Struktur enthalten soll. Andernfalls ist es der Titel des letzten Ordners.
 1. Im Mehrfachfeld „Unterordner“ können Sie eine Liste von Ordnern angeben, die als Unterordner des verknüpften Ordners erstellt werden sollen.
 1. Projektstatus: Wählen Sie den Status aus, für den das Projekt festgelegt werden muss, um den verknüpften Ordner zu erstellen.
 1. Erstellen eines verknüpften Ordners in Projekten mit Portfolio: Liste der Portfolios, denen das Projekt angehören muss, um den verknüpften Ordner erstellen zu können. Lassen Sie diese Liste leer, wenn der verknüpfte Ordner für alle Projektportfolios erstellt werden soll.
 1. Verknüpften Ordner in Projekten mit benutzerdefiniertem Formularfeld erstellen: Benutzerdefiniertes Formularfeld und sein entsprechender Wert, den das Projekt haben muss, damit Sie den verknüpften Ordner erstellen können. Diese Konfiguration wird ignoriert, wenn sie leer gelassen wird. Wählen Sie `CUSTOM FORMS: Create DAM Linked Folder` als Feld und geben Sie `Yes` als Wert ein.
-1. Berechtigung konfigurieren: Konfigurieren Sie diese Berechtigungen. `jcr:all permissions for /conf/workfront-tools/settings/cloudconfigs` für die `wf-workfront-users group`.
+1. Konfigurieren der Berechtigung: Konfigurieren Sie diese Berechtigungen, `jcr:all permissions for /conf/workfront-tools/settings/cloudconfigs` für die `wf-workfront-users group`.
 1. Klicken Sie auf „Automatische Erstellung verknüpfter Ordner aktivieren“. Wenn Sie zur Registerkarte „Ereignisabonnements“ zurückkehren, sehen Sie, dass es jetzt ein Erstellungsereignis gibt.
 
 ![Konfiguration verknüpfter Ordner](/help/assets/assets/wf-linked-folder-config.png)

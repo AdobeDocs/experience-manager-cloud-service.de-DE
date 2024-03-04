@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Sie adaptive Formulare, PDF-Formulare, Designs un
 topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '1193'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -22,15 +23,15 @@ Wenn Sie ein adaptives Formular exportieren, werden die Content-Richtlinien und 
 So laden Sie Formulare oder zugehörige Assets herunter:
 
 1. Melden Sie sich bei der [!DNL AEM Forms]-Instanz an.
-1. Auswählen **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Symbol > **[!UICONTROL Navigation]** ![Kompass](assets/Smock_Compass_18_N.svg) Symbol > **[!UICONTROL Forms]** > **[!UICONTROL Forms und Dokumente]**.
-1. Wählen Sie die Assets aus und wählen Sie die **[!UICONTROL Herunterladen]** Symbol.
-1. Wählen Sie unter Asset(s) herunterladen eine der folgenden Optionen aus und wählen Sie **[!UICONTROL Herunterladen]**.
+1. Wählen Sie **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Symbol > **[!UICONTROL Navigation]** ![Kompass](assets/Smock_Compass_18_N.svg) Symbol > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
+1. Wählen Sie die Assets aus und wählen Sie dann das Symbol **[!UICONTROL Herunterladen]**.
+1. Wählen Sie unter „Asset(s) herunterladen“ eine der folgenden Optionen und wählen Sie dann **[!UICONTROL Herunterladen]**.
 
    * **Als CRX-Paket herunterladen:** Verwenden Sie die Option zum Herunterladen und Verschieben aller ausgewählten Assets und der zugehörigen Abhängigkeiten von einer [!DNL AEM Forms]-Instanz in eine andere. Es werden alle Assets und Ordner als CRX-Paket heruntergeladen, einschließlich der in AEM erstellten Formulare (adaptive Formulare und adaptive Formularfragmente), Formularsätze, Formulardatenmodelle, Formularvorlagen, PDF-Dokumente und referenzierten Ressourcen (XSDs und Bilder).
 Der Vorteil des Herunterladens von Assets als Paket besteht darin, dass auch referenzierte Assets mit heruntergeladen werden. Beispiel: Sie haben ein adaptives Formular, das eine Formularvorlage, XSD und ein Bild verwendet. Wenn Sie dieses adaptive Formular auswählen und es als Paket herunterladen, enthält das heruntergeladene Paket auch die Formularvorlage, XSD und das Bild. Alle mit dem Asset verknüpften Metadateneigenschaften (einschließlich benutzerdefinierter Eigenschaften) werden ebenfalls heruntergeladen.
 
    * **Assets als Binärdateien herunterladen:** Verwenden Sie diese Option nur zum Herunterladen von Formularvorlagen (XDP), PDF-Formularen (PDF), Dokumenten (PDF) und Ressourcen (Bilder, Schemata, Stylesheets). Sie können diese Assets mit externen Anwendungen bearbeiten. Assets, die Binärdateien wie Bilder, PDFs und andere unterstützte Formate enthalten, werden als .zip-Datei heruntergeladen.
-Sie können Adaptive Forms, adaptive Formularfragmente, Designs und Formularsätze nicht herunterladen mit **[!UICONTROL Herunterladen von Assets als Binärdateien]** -Option. Um diese Assets herunterzuladen, sollten Sie die Option **[!UICONTROL Als CRX-Paket herunterladen]** nutzen.
+Sie können mit der Option **[!UICONTROL Assets als Binärdateien herunterladen]** keine adaptiven Formulare, adaptiven Formularfragmente, Designs und Formularsätze herunterladen. Um diese Assets herunterzuladen, sollten Sie die Option **[!UICONTROL Als CRX-Paket herunterladen]** nutzen.
 
    Die ausgewählten Assets werden als Archiv (.zip-Datei) heruntergeladen.
 
@@ -44,11 +45,11 @@ Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen.
 So laden Sie ein Formular oder ein referenziertes Asset hoch:
 
 1. Melden Sie sich bei der [!DNL AEM Forms]-Instanz an.
-1. Auswählen **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Symbol > **[!UICONTROL Navigation]** ![Kompass](assets/Smock_Compass_18_N.svg) Symbol > **[!UICONTROL Forms]** > **[!UICONTROL Forms und Dokumente]**.
-1. Auswählen **[!UICONTROL Erstellen]** > **[!UICONTROL Datei-Upload]**. Das folgende Dialogfeld wird angezeigt.
-1. Navigieren Sie im Dialogfeld zum Paket oder Archiv, das importiert werden soll, und wählen Sie es aus. Sie können auch andere unterstützte Dateitypen auswählen. Auswählen **[!UICONTROL Öffnen]**. Der ausgewählte Ordner- oder Dateiname darf keine Sonderzeichen enthalten.
+1. Wählen Sie das Symbol **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Symbol **[!UICONTROL Navigation]** ![Kompass](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
+1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Datei hochladen]**. Ein Dialogfeld wird angezeigt.
+1. Navigieren Sie im Dialogfeld zum Paket oder Archiv, das importiert werden soll, und wählen Sie es aus. Sie können auch andere unterstützte Dateitypen auswählen. Wählen Sie **[!UICONTROL Öffnen]**. Der ausgewählte Ordner- oder Dateiname darf keine Sonderzeichen enthalten.
 
-   Überprüfen Sie im Dialogfeld die Details der hochgeladenen Assets und wählen Sie **[!UICONTROL Hochladen]**.
+   Überprüfen Sie im Dialogfeld die Details der Assets, die hochgeladen werden, und wählen Sie **[!UICONTROL Hochladen]**.
 
    Wenn Sie ein vorhandenes Formular-Asset hochladen, wird das Asset aktualisiert.
 
@@ -65,8 +66,8 @@ Sie können Designs in [!DNL AEM Forms] exportieren und in anderen Projekten ode
 Herunterladen von Designs
 
 1. Melden Sie sich bei der [!DNL AEM Forms]-Instanz an.
-1. Auswählen **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Symbol > **[!UICONTROL Navigation]** ![Kompass](assets/Smock_Compass_18_N.svg) Symbol > **[!UICONTROL Forms]** > **[!UICONTROL Designs]**.
-1. Wählen Sie das Design aus und wählen Sie **[!UICONTROL Herunterladen]**. Das Design wird als ein Archiv (.zip-Datei) heruntergeladen.
+1. Wählen Sie das Symbol **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Symbol **[!UICONTROL Navigation]** ![Kompass](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulare]** > **[!UICONTROL Designs]**.
+1. Wählen Sie das Design und dann **[!UICONTROL Herunterladen]**. Das Design wird als ein Archiv (.zip-Datei) heruntergeladen.
 
 ## Hochladen eines Designs {#uploading-a-theme}
 
@@ -170,9 +171,9 @@ Sie können Ordner verwenden, um Assets zu gruppieren und zu organisieren. Wenn 
 
 ### Erstellen von Ordnern {#create-a-folder}
 
-1. Melden Sie sich bei der [!DNL AEM Forms]-Instanz an.
-1. Experience Manager auswählen ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Symbol > Navigation ![Kompass](assets/Smock_Compass_18_N.svg) Symbol> **[!UICONTROL Forms]** > **[!UICONTROL Forms und Dokumente]**.
-1. Auswählen **[!UICONTROL Erstellen]** > **[!UICONTROL Ordner]**.
+1. Melden Sie sich bei Ihrer [!DNL AEM Forms]-Instanz an.
+1. Wählen Sie das Symbol „Experience Manager“ ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Symbol „Navigation“ ![Kompass](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
+1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Ordner]**.
 1. Geben Sie die folgenden Details ein:
 
    * **[!UICONTROL Titel]**: Der Anzeigename für den Ordner
@@ -186,7 +187,7 @@ Sie können Ordner verwenden, um Assets zu gruppieren und zu organisieren. Wenn 
 
    Wenn ein Ordner mit dem angegebenen Namen vorhanden ist, schlägt das Senden mit einem Fehler fehl. Sie können die Fehlermeldung anzeigen, indem Sie die Maus über das Fehlersymbol ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) bewegen, das neben dem Namensfeld angezeigt wird.
 
-   Sie können den erstellten Ordner auswählen, um in den Ordner zu wechseln und Assets oder Ordner im Ordner zu erstellen. Außerdem können Sie einen Ordner auswählen und ihn zum Herunterladen in die Warteschlange stellen, ihn löschen oder seinen Namen bearbeiten.
+   Sie können den erstellten Ordner auswählen, um in den Ordner zu wechseln und Assets oder Ordner innerhalb des Ordners zu erstellen. Außerdem können Sie einen Ordner auswählen und ihn zum Herunterladen in die Warteschlange stellen, ihn löschen oder seinen Namen bearbeiten.
 
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}

@@ -3,9 +3,9 @@ title: Inhaltssuche und -indizierung
 description: Erfahren Sie mehr über die Inhaltssuche und -indizierung in AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2442'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -32,48 +32,48 @@ Beschränkungen:
 * Derzeit wird die Indexverwaltung in AEM as a Cloud Service nur für Indizes des Typs `lucene` unterstützt.
 * Es werden nur Standard-Analyzer unterstützt (d. h. die Analyzer, die mit dem Produkt geliefert werden). Benutzerdefinierte Analyzer werden nicht unterstützt.
 * Intern können andere Indizes konfiguriert und für Abfragen verwendet werden. Zum Beispiel Abfragen, die gegen für den `damAssetLucene`-Index geschrieben wurden, können auf Skyline tatsächlich für eine Elasticsearch-Version dieses Index ausgeführt werden. Dieser Unterschied ist für die Anwendung und die Benutzenden normalerweise nicht sichtbar, jedoch melden bestimmte Tools wie die `explain`-Funktion einen anderen Index. Unterschiede zwischen Lucene-Indizes und Elastic-Indizes finden Sie in der [Elastic-Dokumentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Elasticsearch-Indizes müssen und können kundenseitig nicht direkt konfiguriert werden.
-* Suche nach ähnlichen Funktionsvektoren (`useInSimilarity = true`) wird nicht unterstützt.
+* Die Suche nach ähnlichen Funktionsvektoren (`useInSimilarity = true`) wird nicht unterstützt.
 
 >[!TIP]
 >
->Weitere Informationen zur Oak-Indizierung und zu Abfragen, einschließlich einer detaillierten Beschreibung der erweiterten Such- und Indizierungsfunktionen, finden Sie im Abschnitt [Dokumentation zu Apache Oak](https://jackrabbit.apache.org/oak/docs/query/query.html).
+>Weitere Informationen zur Oak-Indizierung und zu Abfragen, einschließlich einer detaillierten Beschreibung der erweiterten Such- und Indizierungsfunktionen, finden Sie in der [Dokumentation zu Apache Oak](https://jackrabbit.apache.org/oak/docs/query/query.html).
 
 
 ## Verwendung {#how-to-use}
 
 Indexdefinitionen können wie folgt in drei primäre Anwendungsfälle kategorisiert werden:
 
-1. **Hinzufügen** eine neue benutzerdefinierte Indexdefinition.
-2. **Aktualisieren** eine vorhandene Indexdefinition durch Hinzufügen einer neuen Version.
-3. **Entfernen** eine Indexdefinition, die nicht mehr erforderlich ist.
+1. **Hinzufügen** einer neuen benutzerdefinierten Indexdefinition.
+2. **Aktualisieren** einer vorhandenen Indexdefinition durch Hinzufügen einer neuen Version.
+3. **Entfernen** einer Indexdefinition, die nicht mehr erforderlich ist.
 
-Für die obigen Punkte 1 und 2 müssen Sie eine Indexdefinition als Teil Ihrer benutzerdefinierten Codebasis im entsprechenden Cloud Manager-Veröffentlichungszeitplan erstellen. Weitere Informationen finden Sie unter [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md) Dokumentation.
+Für die Punkte 1 und 2 müssen Sie als Teil Ihrer benutzerdefinierten Code-Basis im jeweiligen Release-Plan für Cloud Manager eine neue Indexdefinition erstellen. Weitere Informationen finden Sie in der Dokumentation [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 ## Indexnamen {#index-names}
 
 Eine Indexdefinition kann in eine der folgenden Kategorien unterteilt werden:
 
-1. Vordefinierter OOTB-Index. Beispiel: `/oak:index/cqPageLucene-2` oder `/oak:index/damAssetLucene-8`.
+1. Vorkonfigurierter Index. Beispiel: `/oak:index/cqPageLucene-2` oder `/oak:index/damAssetLucene-8`.
 
-2. Anpassung eines OOTB-Index. Diese werden durch Anfügen von `-custom-` gefolgt von einer numerischen Kennung zum ursprünglichen Indexnamen. Beispiel: `/oak:index/damAssetLucene-8-custom-1`.
+2. Anpassung eines vorkonfigurierten Index. Diese werden durch Anfügen von `-custom-`, gefolgt von einer numerischen Kennung zum ursprünglichen Indexnamen, angegeben. Beispiel: `/oak:index/damAssetLucene-8-custom-1`.
 
-3. Vollständig benutzerdefinierter Index: Es ist möglich, einen völlig neuen Index von Grund auf neu zu erstellen. Ihr Name muss über ein Präfix verfügen, um Namenskonflikte zu vermeiden. Beispiel: `/oak:index/acme.product-1-custom-2`, wobei das Präfix `acme.`
+3. Vollständig benutzerdefinierter Index: Es ist möglich, einen völlig neuen Index von Grund auf neu zu erstellen. Dessen Name muss über ein Präfix verfügen, um Namenskonflikte zu vermeiden. Beispiel: `/oak:index/acme.product-1-custom-2`, wobei das Präfix `acme.` ist.
 
 >[!NOTE]
 >
->Neue Indizes in der `dam:Asset` Von Knotentyp (insbesondere Volltext-Indizes) wird dringend abgeraten, da diese mit OOTB-Produktfunktionen in Konflikt geraten können, was zu Funktions- und Leistungsproblemen führt. Im Allgemeinen werden der aktuellen Version zusätzliche Eigenschaften hinzugefügt `damAssetLucene-*` Die Indexversion ist die am besten geeignete Methode, Abfragen auf der `dam:Asset` Knotentyp (diese Änderungen werden automatisch zu einer neuen Produktversion des Index zusammengeführt, wenn sie später veröffentlicht werden). Wenden Sie sich im Zweifelsfall an den Adobe Support .
+>Von dem Einführen neuer Indizes für den Knotentyp `dam:Asset` (insbesondere Volltext-Indizes) wird dringend abgeraten, da diese mit OOTB-Produktfunktionen in Konflikt geraten können, was zu Funktions- und Leistungsproblemen führt. Im Allgemeinen stellt das Hinzufügen zusätzlicher Eigenschaften zur aktuellen Indexversion `damAssetLucene-*` die am besten geeignete Methode dar, um Abfragen für den Knotentyp `dam:Asset` zu indizieren (diese Änderungen werden automatisch zu einer neuen Produktversion des Index zusammengeführt, wenn er später veröffentlicht wird). Wenden Sie sich im Zweifelsfall an den Adobe Support.
 
 ## Vorbereiten der neuen Indexdefinition {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->Wenn Sie beispielsweise einen vordefinierten Index anpassen, `damAssetLucene-8`, kopieren Sie die neueste vordefinierte Indexdefinition aus einem *Cloud Service-Umgebung* mit dem CRX DE Package Manager (`/crx/packmgr/`) . Umbenennen in `damAssetLucene-8-custom-1` (oder höher) und fügen Sie Ihre Anpassungen in die XML-Datei ein. Dadurch wird sichergestellt, dass die erforderlichen Konfigurationen nicht versehentlich entfernt werden. Beispiel: die `tika` Knoten unter `/oak:index/damAssetLucene-8/tika` ist in dem angepassten Index erforderlich, der in einer AEM Cloud Service-Umgebung bereitgestellt wird, aber nicht im lokalen AEM SDK vorhanden ist.
+>Wenn Sie einen vorkonfigurierten Index anpassen, z. B. `damAssetLucene-8`, kopieren Sie die neueste vorkonfigurierte Indexdefinition aus einer *Cloud Service-Umgebung* mithilfe des CRX DE Package Manager (`/crx/packmgr/`). Benennen Sie sie in `damAssetLucene-8-custom-1` (oder höher) um und fügen Sie Ihre Anpassungen in die XML-Datei ein. Dadurch wird sichergestellt, dass erforderliche Konfigurationen nicht versehentlich entfernt werden. Beispiel: der Knoten `tika` unter `/oak:index/damAssetLucene-8/tika` ist in dem angepassten Index erforderlich, der in einer AEM Cloud Service-Umgebung bereitgestellt wird, aber nicht im lokalen AEM SDK vorhanden ist.
 
-Für Anpassungen eines OOTB-Index erstellen Sie ein neues Paket, das die tatsächliche Indexdefinition enthält, die diesem Namensmuster folgt:
+Bereiten Sie für Anpassungen eines OOTB-Indexes ein neues Paket vor, das die tatsächliche Indexdefinition enthält und diesem Namensmuster folgt:
 
 `<indexName>-<productVersion>-custom-<customVersion>`
 
-Für einen vollständig angepassten Index erstellen Sie ein neues Indexdefinitionspaket, das die Indexdefinition enthält, die diesem Namensmuster folgt:
+Bereiten Sie für einen vollständig angepassten Index eine neues Indexdefinitionspaket vor, das die Indexdefinition enthält und diesem Namensmuster folgt:
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
@@ -83,20 +83,21 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->Für jedes Inhaltspaket, das Indexdefinitionen enthält, sollten die folgenden Eigenschaften in der Eigenschaftendatei des Inhaltspakets festgelegt sein, das sich unter `<package_name>/META-INF/vault/properties.xml`:
+>Für jedes Inhaltspaket, das Indexdefinitionen enthält, sollten die folgenden Eigenschaften in der Eigenschaftendatei des Inhaltspakets unter `<package_name>/META-INF/vault/properties.xml` festgelegt sein:
 >
 > * `noIntermediateSaves=true`
 >
 > * `allowIndexDefinitions=true`
 
-## Bereitstellen von benutzerdefinierten Indexdefinitionen {#deploying-custom-index-definitions}
+## Bereitstellen benutzerdefinierter Indexdefinitionen {#deploying-custom-index-definitions}
 
-So veranschaulichen Sie die Bereitstellung einer angepassten Version des vordefinierten Index `damAssetLucene-8`, werden wir eine schrittweise Anleitung geben. In diesem Beispiel werden wir ihn umbenennen in `damAssetLucene-8-custom-1`. Dann läuft der Prozess wie folgt ab:
+Für die Veranschaulichung der Bereitstellung einer angepassten Version des vordefinierten Indexes `damAssetLucene-8` erhalten Sie eine schrittweise Anleitung. In diesem Beispiel werden wir ihn in `damAssetLucene-8-custom-1` umbenennen. Dann läuft der Prozess wie folgt ab:
 
-1. Erstellen Sie einen neuen Ordner mit dem aktualisierten Indexnamen im `ui.apps` directory:
+1. Erstellen Sie einen neuen Ordner mit dem aktualisierten Indexnamen im Verzeichnis `ui.apps`:
    * Beispiel: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-2. Konfigurationsdatei hinzufügen `.content.xml` mit den benutzerdefinierten Konfigurationen im erstellten Ordner. Nachfolgend finden Sie ein Beispiel für eine Anpassung: Dateiname: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
+2. Fügen Sie eine Konfigurationsdatei `.content.xml` mit den benutzerdefinierten Konfigurationen im erstellten Ordner hinzu. Nachfolgend finden Sie ein Beispiel für eine Anpassung:
+Dateiname: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -132,7 +133,7 @@ So veranschaulichen Sie die Bereitstellung einer angepassten Version des vordefi
    </jcr:root>
    ```
 
-3. Hinzufügen eines Eintrags zum FileVault-Filter in `ui.apps/src/main/content/META-INF/vault/filter.xml`:
+3. Fügen Sie einen Eintrag zum FileVault-Filter in `ui.apps/src/main/content/META-INF/vault/filter.xml` hinzu:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -142,7 +143,7 @@ So veranschaulichen Sie die Bereitstellung einer angepassten Version des vordefi
    </workspaceFilter>
    ```
 
-4. Fügen Sie eine Konfigurationsdatei für Apache Tika in hinzu: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`:
+4. Fügen Sie eine Konfigurationsdatei für Apache Tika in `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml` hinzu:
 
    ```xml
    <properties>
@@ -158,11 +159,11 @@ So veranschaulichen Sie die Bereitstellung einer angepassten Version des vordefi
    </properties>
    ```
 
-5. Stellen Sie sicher, dass Ihre Konfiguration den Richtlinien entspricht, die im Abschnitt [Projektkonfiguration](#project-configuration) Abschnitt. Nehmen Sie die erforderlichen Anpassungen vor.
+5. Stellen Sie sicher, dass Ihre Konfiguration den Richtlinien entspricht, die im Abschnitt [Projektkonfiguration](#project-configuration) angegeben sind. Nehmen Sie die erforderlichen Anpassungen vor.
 
 ## Projektkonfiguration
 
-Es wird dringend empfohlen, Version >= zu verwenden. `1.3.2` des Jackrabbit `filevault-package-maven-plugin`. Die Schritte zur Integration in Ihr Projekt lauten wie folgt:
+Wir empfehlen dringend, Version >= `1.3.2` von Jackrabbit `filevault-package-maven-plugin` zu verwenden. Die Schritte zur Integration in Ihr Projekt sind wie folgt:
 
 1. Aktualisieren der Version auf der obersten Ebene `pom.xml`:
 
@@ -176,7 +177,7 @@ Es wird dringend empfohlen, Version >= zu verwenden. `1.3.2` des Jackrabbit `fil
    </plugin>
    ```
 
-2. Fügen Sie der obersten Ebene Folgendes hinzu: `pom.xml`:
+2. Fügen Sie der obersten Ebene `pom.xml` Folgendes hinzu:
 
    ```xml
    <jackrabbit-packagetype>
@@ -186,7 +187,7 @@ Es wird dringend empfohlen, Version >= zu verwenden. `1.3.2` des Jackrabbit `fil
    </jackrabbit-packagetype>
    ```
 
-   Hier finden Sie ein Beispiel für die oberste Ebene des Projekts `pom.xml` -Datei mit den oben genannten Konfigurationen enthalten:
+   Hier ein Beispiel für die Datei `pom.xml` der obersten Ebene des Projekts mit den oben genannten Konfigurationen:
 
    Dateiname: `pom.xml`
 
@@ -209,7 +210,7 @@ Es wird dringend empfohlen, Version >= zu verwenden. `1.3.2` des Jackrabbit `fil
    </plugin>
    ```
 
-3. In `ui.apps/pom.xml` und `ui.apps.structure/pom.xml` es erforderlich ist, die `allowIndexDefinitions` und `noIntermediateSaves` Optionen in `filevault-package-maven-plugin`. Aktivieren `allowIndexDefinitions` ermöglicht benutzerdefinierte Indexdefinitionen, während `noIntermediateSaves` stellt sicher, dass die Konfigurationen automatisch hinzugefügt werden.
+3. In `ui.apps/pom.xml` und `ui.apps.structure/pom.xml` müssen die Optionen `allowIndexDefinitions` und `noIntermediateSaves` in `filevault-package-maven-plugin` aktiviert sein. Das Aktivieren von `allowIndexDefinitions` ermöglicht benutzerdefinierte Indexdefinitionen, und `noIntermediateSaves` stellt sicher, dass die Konfigurationen automatisch hinzugefügt werden.
 
    Dateinamen: `ui.apps/pom.xml` und `ui.apps.structure/pom.xml`
 
@@ -227,7 +228,7 @@ Es wird dringend empfohlen, Version >= zu verwenden. `1.3.2` des Jackrabbit `fil
    </plugin>
    ```
 
-4. Filter hinzufügen für `/oak:index` in `ui.apps.structure/pom.xml`:
+4. Fügen Sie einen Filter für `/oak:index` in `ui.apps.structure/pom.xml` hinzu:
 
    ```xml
    <filters>
@@ -236,11 +237,11 @@ Es wird dringend empfohlen, Version >= zu verwenden. `1.3.2` des Jackrabbit `fil
    </filters>
    ```
 
-Stellen Sie nach dem Hinzufügen der neuen Indexdefinition die neue Anwendung mithilfe von Cloud Manager bereit. Diese Bereitstellung initiiert zwei Aufträge, die für das Hinzufügen (und gegebenenfalls das Zusammenführen) der Indexdefinitionen zu MongoDB und Azure Segment Store für Autoren- und Veröffentlichungszwecke verantwortlich sind. Vor dem Wechsel werden die zugrunde liegenden Repositorys einer Neuindizierung mit den aktualisierten Indexdefinitionen unterzogen.
+Stellen Sie nach dem Hinzufügen der neuen Indexdefinition die neue Anwendung mithilfe von Cloud Manager bereit. Diese Bereitstellung startet zwei Aufträge, die für das Hinzufügen (und gegebenenfalls das Zusammenführen) der Indexdefinitionen zu MongoDB und Azure Segment Store verantwortlich sind (für Authoring- bzw. Publishing-Zwecke). Vor dem Wechsel werden die zugrunde liegenden Repositorys einer Neuindizierung mit den aktualisierten Indexdefinitionen unterzogen.
 
 >[!TIP]
 >
->Weitere Informationen zur erforderlichen Paketstruktur für AEM as a Cloud Service finden Sie unter [AEM Projektstruktur](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+>Weitere Informationen zur erforderlichen Paketstruktur für AEM as a Cloud Service finden Sie unter [AEM-Projektstruktur](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## Indexverwaltung unter Verwendung von rollierenden Bereitstellungen {#index-management-using-rolling-deployments}
 
@@ -274,7 +275,7 @@ Bei der Entwicklung oder bei Verwendung von lokalen Installationen können Indiz
 
 ### Indexverwaltung mit rollierenden Bereitstellungen {#index-management-with-rolling-deployments}
 
-Bei rollierenden Bereitstellungen gibt es keine Ausfallzeiten. Während einer Aktualisierung werden sowohl die alte Version (z. B. Version 1) der Anwendung als auch die neue Version (Version 2) gleichzeitig für dasselbe Repository ausgeführt. Wenn für Version 1 ein bestimmter Index verfügbar sein muss, darf dieser Index in Version 2 nicht entfernt werden. Der Index sollte später entfernt werden, z. B. in Version 3. Ab diesem Zeitpunkt ist garantiert, dass Version 1 der Anwendung nicht mehr ausgeführt wird. Außerdem sollten Programme so geschrieben werden, dass Version 1 gut funktioniert, auch wenn Version 2 ausgeführt wird und Indizes von Version 2 verfügbar sind.
+Bei rollierenden Bereitstellungen gibt es keine Ausfallzeiten. Während einer Aktualisierung werden sowohl die alte Version (z. B. Version 1) der Anwendung als auch die neue Version (Version 2) gleichzeitig für dasselbe Repository ausgeführt. Wenn für Version 1 ein bestimmter Index verfügbar sein muss, darf dieser Index in Version 2 nicht entfernt werden. Der Index sollte erst später entfernt werden, z. B. in Version 3. Ab diesem Zeitpunkt ist garantiert, dass Version 1 der Anwendung nicht mehr ausgeführt wird. Außerdem sollten Programme so geschrieben werden, dass Version 1 gut funktioniert, auch wenn Version 2 ausgeführt wird und Indizes von Version 2 verfügbar sind.
 
 Nach Abschluss der Aktualisierung auf die neue Version können alte Indizes vom System entfernt werden. Die alten Indizes können möglicherweise noch einige Zeit bleiben, um Rollbacks zu beschleunigen (falls ein Rollback erforderlich sein sollte).
 
@@ -307,7 +308,7 @@ Nachdem Adobe einen vordefinierten Index wie „damAssetLucene“ oder „cqPage
 
 ### Aktuelle Einschränkungen {#current-limitations}
 
-Die Indexverwaltung wird derzeit nur für Indizes des Typs `lucene` unterstützt, wobei `compatVersion` auf `2` gesetzt ist. Intern können andere Indizes konfiguriert und für Abfragen verwendet werden, z. B. Elasticsearch-Indizes. Abfragen, die gegen die `damAssetLucene` -Index könnte auf AEM as a Cloud Service tatsächlich mit einer Elasticsearch-Version dieses Index ausgeführt werden. Dieser Unterschied ist für den Anwendungsbenutzer nicht sichtbar, jedoch sind bestimmte Tools wie die `explain` -Funktion einen anderen Index meldet. Unterschiede zwischen Lucene- und Elasticsearch-Indizes finden Sie in der [Elasticsearch-Dokumentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Elasticsearch-Indizes können und müssen nicht direkt konfiguriert werden.
+Die Indexverwaltung wird derzeit nur für Indizes des Typs `lucene` unterstützt, wobei `compatVersion` auf `2` gesetzt ist. Intern können andere Indizes konfiguriert und für Abfragen verwendet werden, z. B. Elasticsearch-Indizes. Sie können Abfragen, die gegen den `damAssetLucene`-Index geschrieben werden, auf AEM as a Cloud Service tatsächlich für eine Elasticsearch-Version dieses Indexes ausführen. Dieser Unterschied ist für die Anwenderinnen und Anwender nicht sichtbar. Bestimmte Tools wie die `explain`-Funktion melden jedoch einen anderen Index. Unterschiede zwischen Lucene- und Elasticsearch-Indizes finden Sie in der [Elasticsearch-Dokumentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Elasticsearch-Indizes können und müssen nicht direkt konfiguriert werden.
 
 Es werden nur integrierte Analyzer unterstützt (d. h. diejenigen, die mit dem Produkt geliefert werden). Benutzerdefinierte Analyzer werden nicht unterstützt.
 
@@ -341,7 +342,7 @@ Die neue Version des Programms nutzt die folgende (geänderte) Konfiguration:
 
 ### Rückgängigmachen einer Änderung {#undoing-a-change}
 
-Manchmal ist es erforderlich, eine Änderung in einer Indexdefinition rückgängig zu machen. Dies kann auf einen versehentlichen Fehler zurückzuführen sein oder die Änderung ist nicht mehr erforderlich. Nehmen wir beispielsweise die Indexdefinition `damAssetLucene-8-custom-3,` , die versehentlich erstellt wurde und bereits bereitgestellt wurde. Daher möchten Sie zur vorherigen Indexdefinition zurückkehren. `damAssetLucene-8-custom-2.` Dazu müssen Sie einen neuen Index mit dem Namen `damAssetLucene-8-custom-4` die die Definition aus dem vorherigen Index enthält, `damAssetLucene-8-custom-2.`
+Manchmal ist es erforderlich, eine Änderung in einer Indexdefinition rückgängig zu machen. Dies kann auf einen versehentlichen Fehler zurückzuführen sein, oder die Änderung ist nicht mehr erforderlich. Nehmen wir beispielsweise die Indexdefinition `damAssetLucene-8-custom-3,`, die versehentlich erstellt und bereits bereitgestellt wurde. Daher müssen Sie zur vorherigen Indexdefinition zurückkehren. `damAssetLucene-8-custom-2.` Dazu müssen Sie einen neuen Index mit dem Namen `damAssetLucene-8-custom-4` einführen, der die Definition aus dem vorherigen Index enthält, `damAssetLucene-8-custom-2.`
 
 ### Entfernen eines Index {#removing-an-index}
 

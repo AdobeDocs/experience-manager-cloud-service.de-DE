@@ -6,9 +6,9 @@ contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1084'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -30,8 +30,8 @@ Kurz zusammengefasst: Mit dem Posteingang können Sie neue Anwendungen erstellen
 ## Anwendung erstellen {#create-application}
 
 1. Wechseln Sie zum AEM-Posteingang unter https://&#39;[server]:[port]&#39;/aem/inbox.
-1. Wählen Sie in der Benutzeroberfläche des Posteingangs die Option **[!UICONTROL Erstellen > Anwendung]**. Die Seite „Programm auswählen“ wird angezeigt.
-1. Wählen Sie ein Programm aus und klicken Sie auf **[!UICONTROL Erstellen]**. Das zum Programm gehörige adaptive Formular wird geöffnet. Füllen Sie die Informationen im adaptiven Formular aus und wählen Sie **[!UICONTROL Einsenden]**. Der dazugehörige Workflow wird gestartet und erstellt eine Aufgabe im Posteingang des Empfängers.
+1. Wählen Sie in der Benutzeroberfläche des Posteingangs **[!UICONTROL Erstellen > Anwendung]**. Die Seite „Programm auswählen“ wird angezeigt.
+1. Wählen Sie ein Programm aus und klicken Sie auf **[!UICONTROL Erstellen]**. Das zum Programm gehörige adaptive Formular wird geöffnet. Füllen Sie die Informationen im adaptiven Formular aus und wählen Sie **[!UICONTROL Senden]**. Der dazugehörige Workflow wird gestartet und erstellt eine Aufgabe im Posteingang des Empfängers.
 
 ## Aufgaben verwalten {#manage-tasks}
 
@@ -41,17 +41,17 @@ Wenn ein Forms-Workflow ausgelöst wird und Sie eine bevollmächtigte Person sin
 
 Aufgaben, die einer Gruppe zugewiesen sind, werden im Posteingang aller Gruppenmitglieder angezeigt. Jedes Gruppenmitglied kann diese Aufgabe annehmen oder an ein anderes Gruppenmitglied delegieren. Gehen Sie dazu wie folgt vor:
 
-1. Wählen Sie diese Option aus, um die Miniaturansicht der Aufgabe auszuwählen. Optionen zum Öffnen oder Delegieren der Aufgabe werden oben angezeigt.
+1. Wählen Sie die Miniaturansicht der Aufgabe, um sie auszuwählen. Optionen zum Öffnen oder Delegieren der Aufgabe werden oben angezeigt.
 
    ![select-task](assets/select-task.png)
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Um die Aufgabe zuzuweisen, wählen Sie **[!UICONTROL Delegieren]**. Das Dialogfeld „Element delegieren“ wird geöffnet. Wählen Sie einen Benutzer aus, fügen Sie optional einen Kommentar hinzu und wählen Sie **[!UICONTROL OK]**.
+   * Um die Aufgabe zu delegieren, wählen Sie **[!UICONTROL Delegieren]**. Das Dialogfeld „Element delegieren“ wird geöffnet. Wählen Sie eine Person aus, fügen Sie optional einen Kommentar ein und wählen Sie **[!UICONTROL OK]**.
 
    ![delegate](assets/delegate.png)
 
-   * Um die Aufgabe anzufordern, wählen Sie **[!UICONTROL Öffnen]**. Das Dialogfeld „Selbst zuweisen“ wird geöffnet. Auswählen **[!UICONTROL Fortfahren]** , um die Aufgabe anzufordern. Die angenommene Aufgabe wird mit Ihnen als bevollmächtigte Person in Ihrem Posteingang angezeigt.
+   * Um die Aufgabe anzunehmen, wählen Sie **[!UICONTROL Öffnen]**. Das Dialogfeld „Selbst zuweisen“ wird geöffnet. Wählen Sie **[!UICONTROL Fortfahren]**, um die Aufgabe anzunehmen. Die angenommene Aufgabe wird mit Ihnen als bevollmächtigte Person in Ihrem Posteingang angezeigt.
 
    ![claim](assets/claim.png)
 
@@ -59,7 +59,7 @@ Aufgaben, die einer Gruppe zugewiesen sind, werden im Posteingang aller Gruppenm
 
 Wenn Sie eine Aufgabe öffnen, können Sie Aufgabendetails anzeigen und verfügbare Aktionen ausführen. Die für eine Aufgabe verfügbaren Aktionen werden im Schritt der Aufgabenzuweisung des dazugehörigen Forms-Workflows definiert.
 
-1. Wählen Sie diese Option aus, um die Miniaturansicht der Aufgabe auszuwählen. Die Optionen zum Öffnen oder Delegieren der ausgewählten Aufgabe werden oben angezeigt.
+1. Wählen Sie die Miniaturansicht der Aufgabe, um sie auszuwählen. Die Optionen zum Öffnen oder Delegieren der ausgewählten Aufgabe werden oben angezeigt.
 1. Wählen Sie **Öffnen**, um Aufgabendetails und verfügbare Aktionen anzuzeigen. Die detaillierte Aufgabenansicht wird geöffnet. In dieser Ansicht können Sie Aufgabendetails anzeigen und an der Aufgabe arbeiten.
 
    >[!NOTE]
@@ -87,7 +87,7 @@ Auf der Registerkarte „Formular“ im Hauptinhaltsbereich werden das übermitt
 
 Die Registerkarte „Workflow-Details“ oben zeigt den Fortschritt der Aufgabe in verschiedenen Phasen des Workflows an. Es werden die abgeschlossenen, aktuellen und ausstehenden Phasen der Aufgabe angezeigt. Die Phasen für einen Workflow werden im Schritt [Aufgabe zuweisen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=de#extending-aem) des dazugehörigen Workflows definiert.
 
-Darüber hinaus zeigt die Registerkarte den Aufgabenverlauf für jede abgeschlossene Phase im Workflow an. Sie können **[!UICONTROL Details anzeigen]** für eine abgeschlossene Phase, um Details zu dieser Phase zu erfahren. Es werden Kommentare, Formular- und Aufgabenanhänge, Status, Start- und Enddaten usw. zu der Aufgabe angezeigt.
+Darüber hinaus zeigt die Registerkarte den Aufgabenverlauf für jede abgeschlossene Phase im Workflow an. Sie können für eine abgeschlossene Phase **[!UICONTROL Details ansehen]** wählen, um Details über diese Phase zu erfahren. Es werden Kommentare, Formular- und Aufgabenanhänge, Status, Start- und Enddaten usw. zu der Aufgabe angezeigt.
 
 ![workflow-details](assets/workflow-details.png)
 
@@ -99,10 +99,10 @@ Während Sie an der Aufgabe arbeiten, schreitet sie im Workflow weiter voran.
 
 ### Anzeigen der abgeschlossenen Aufgaben {#view-completed-tasks}
 
-Im AEM-Posteingang werden nur aktive Aufgaben angezeigt. Abgeschlossene Aufgaben werden nicht in der Liste angezeigt. Sie können jedoch mithilfe von Posteingangsfiltern Aufgaben basierend auf verschiedenen Parametern filtern, z. B. Aufgabentyp, Status oder Start- und Enddatum. Abgeschlossene Aufgaben anzeigen:
+Im AEM-Posteingang werden nur aktive Aufgaben angezeigt. Abgeschlossene Aufgaben werden nicht in der Liste angezeigt. Sie können jedoch mithilfe von Posteingangsfiltern Aufgaben basierend auf verschiedenen Parametern filtern, z. B. Aufgabentyp, Status oder Start- und Enddatum. So zeigen Sie abgeschlossene Aufgaben an:
 
-1. Wählen Sie in AEM Posteingang die Option ![Umschalten zwischen Seitenbereich1 und Seitenbereich](assets/toggle-side-panel1.png) , um die Filterauswahl zu öffnen.
-1. Auswählen **[!UICONTROL Aufgabenstatus]** Akkordeon und wählen Sie **[!UICONTROL Fertig]**. Alle Ihre abgeschlossenen Aufgaben werden angezeigt.
+1. Wählen Sie im AEM-Posteingang ![toggle-side-panel1](assets/toggle-side-panel1.png), um die Filterauswahl zu öffnen.
+1. Wählen Sie das Akkordeon **[!UICONTROL Aufgabenstatus]** und dann **[!UICONTROL Fertigstellen]**. Alle Ihre abgeschlossenen Aufgaben werden angezeigt.
 
    ![filter](assets/filter.png)
 
@@ -114,7 +114,7 @@ Im Abschnitt mit den Aufgabendetails werden Informationen wie die durchgeführte
 
 ![completed-task](assets/completed-task.png)
 
-Auf der Registerkarte **[!UICONTROL Workflow-Details]** werden alle Schritte des Workflows angezeigt. Auswählen **[!UICONTROL Details anzeigen]** für einen Schritt mit detaillierten Informationen.
+Auf der Registerkarte **[!UICONTROL Workflow-Details]** werden alle Schritte des Workflows angezeigt. Wählen Sie bei einem Schritt **[!UICONTROL Details anzeigen]**, um detaillierte Informationen zu erhalten.
 
 ![completed-task-workflow](assets/completed-task-workflow.png)
 

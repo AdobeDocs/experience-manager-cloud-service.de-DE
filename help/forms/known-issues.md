@@ -1,15 +1,15 @@
 ---
-title: Welche bekannten Probleme und Einschränkungen gibt es in der as a Cloud Service AEM Forms-Umgebung?
-description: Bekannte Probleme und Einschränkungen bei  [!DNL AEM Forms] as a Cloud Service Umgebung.
+title: Welche bekannten Probleme und Einschränkungen gibt es in einer AEM Forms as a Cloud Service-Umgebung?
+description: Bekannte Probleme und Einschränkungen einer  [!DNL AEM Forms]  as a Cloud Service-Umgebung
 contentOwner: khsingh
 role: Admin, Developer, User
 feature: Adaptive Forms
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '367'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Bevor Sie mit der Nutzung von [!DNL AEM Forms] as a Cloud Service beginnen, mach
 
 * Wenn Sie ein Schema mit wiederholbaren Elementen verwenden, um ein auf Kernkomponenten basierendes adaptives Formular zu erstellen, funktioniert die Drag-and-Drop-Option für wiederholbare Elemente aus der Datenmodellstruktur im Editor für adaptive Formulare nicht.
 
-## Beschränkungen {#limitations}
+## Einschränkungen {#limitations}
 
 * Die Unterstützung für XFA-basierte adaptive Formulare ist nicht standardmäßig. Wenn Sie XFA-basierte adaptive Formulare verwenden möchten, wenden Sie sich mit den Details zu Ihrem Anwendungsfall und den spezifischen Anforderungen an den Adobe-Support.
 

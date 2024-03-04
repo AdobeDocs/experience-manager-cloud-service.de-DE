@@ -1,57 +1,57 @@
 ---
-title: Fehlerbehebung bei persistenten GraphQL-Abfragen
-description: Erfahren Sie, wie Sie Probleme mit persistenten GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beheben können.
+title: Fehlerbehebung bei persistierten GraphQL-Abfragen
+description: Erfahren Sie, wie Sie Probleme bei persistierten GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beheben können.
 feature: Content Fragments,GraphQL API
-source-git-commit: c8ea9846600d1773e6f269973635f5338f31906f
-workflow-type: tm+mt
+exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '353'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# Fehlerbehebung bei persistierten GraphQL-Abfragen {#troubleshoot-persisted-graphql-queries}
 
-# Fehlerbehebung bei persistenten GraphQL-Abfragen {#troubleshoot-persisted-graphql-queries}
+Das [Aktionszentrum](/help/operations/actions-center.md) enthält den Warnhinweis **Fehler bei persistierter GraphQL-Abfrage**. Dies bedeutet, dass Sie immer dann informiert werden, wenn eine der persistierten GraphQL-Abfragen einen Fehler ausgibt.
 
-Die [Aktionszentrum](/help/operations/actions-center.md) enthält die **Persistenter Abfragefehler von GraphQL** Warnhinweis. Dies bedeutet, dass Sie immer dann informiert werden, wenn eine der von GraphQL gespeicherten Abfragen einen Fehler ausgibt.
-
-Um Ihnen bei der Fehlerbehebung und Lösung solcher Probleme zu helfen, erläutern wir die *am häufigsten* Ursachen von Fehlern und Schritte zu deren Behebung.
+Um Ihnen bei der Fehlerbehebung und Lösung solcher Probleme zu helfen, erläutern wir die *häufigsten* Ursachen von Fehlern und die Schritte zu deren Behebung.
 
 ## Änderungen am Inhaltsfragmentmodell {#changes-to-content-fragment-model}
 
-Eine von GraphQL beibehaltene Abfrage kann fehlschlagen, wenn sie auf veralteten GraphQL-Typen basiert. Dies ist häufig auf eine Änderung der zugrunde liegenden Inhaltsfragmentmodelle zurückzuführen.
+Eine persistierte GraphQL-Abfrage kann fehlschlagen, wenn sie auf veralteten GraphQL-Typen basiert. Dies ist häufig auf eine Änderung der zugrunde liegenden Inhaltsfragmentmodelle zurückzuführen.
 
-Dies kann aus verschiedenen Gründen geschehen. Beispiel: wenn ein Inhaltsmodellautor:
+Dies kann aus verschiedenen Gründen geschehen. Zum Beispiel, wenn ein Inhaltsmodellautor oder eine -autorin:
 
-* entfernt oder benennt ein Feld um
-* aktualisiert die für einen Fragmentverweis definierten zulässigen Modelle
-* Veröffentlichung eines Modells aufheben, auf das andere Modelle verweisen
-* sonstige Maßnahmen und Gründe
+* ein Feld entfernt oder umbenennt
+* die für einen Fragmentverweis definierten zulässigen Modelle aktualisiert
+* die Veröffentlichung eines Modells aufhebt, auf das andere Modelle verweisen
+* sonstige Aktionen und Gründe
 
-Gehen Sie dazu wie folgt vor:
+Gehen Sie zur Fehlerbehebung wie folgt vor:
 
-* Die beibehaltene Abfrage, die fehlschlägt, sollte aktualisiert werden, um die Änderung am Inhaltsfragmentmodell zu berücksichtigen.
-* oder die Änderung des Modells, durch das das Problem verursacht wurde, zurückgesetzt werden sollte
+* Die persistierte Abfrage, die fehlschlägt, sollte aktualisiert werden, um die Änderung am Inhaltsfragmentmodell zu berücksichtigen,
+* oder die Änderung des Modells, durch die das Problem verursacht wurde, sollte zurückgesetzt werden
 
 ## GraphQL-Endpunkt nicht konfiguriert {#graphql-endpoint-not-configured}
 
-Wenn persistente Abfragen die `400` oder `500` Fehler-Code zusammen mit den Informationen `No suitable endpoint found`bedeutet dies, dass in der AEM Umgebung kein GraphQL-Endpunkt konfiguriert ist.
+Wenn persistierte Abfragen den Fehler-Code `400` oder `500` zusammen mit der Information `No suitable endpoint found` zurückgeben, bedeutet dies, dass in der AEM-Umgebung kein GraphQL-Endpunkt konfiguriert ist.
 
-Um dies zu korrigieren, führen Sie die Schritte zum Aktivieren und Veröffentlichen Ihres Endpunkts aus [Verwalten von GraphQL-Endpunkten in AEM](/help/headless/graphql-api/graphql-endpoint.md).
+Um dies zu korrigieren, führen Sie die Schritte zum Aktivieren und Veröffentlichen Ihres Endpunkts gemäß [Verwalten von GraphQL-Endpunkten in AEM](/help/headless/graphql-api/graphql-endpoint.md) aus.
 
-## Fehlender Pfad in der von GraphQL gespeicherten Abfrage-URL {#missing-path-query-url}
+## Fehlender Pfad in der von GraphQL persistierten Abfrage-URL {#missing-path-query-url}
 
-Wenn persistente Abfragen die `400` oder `500` Fehlercode mit den Informationen `Suffix: '/' does not contain a path`, wird das GraphQL-Servlet ohne Pfadsuffix aufgerufen.
+Wenn persistierte Abfragen den Fehler-Code `400` oder `500` mit der Information `Suffix: '/' does not contain a path` zurückgeben, wird das GraphQL-Servlet ohne Pfadsuffix aufgerufen.
 
-Das Muster sollte `/graphql/execute.json/thePath`.
+Das Muster sollte `/graphql/execute.json/thePath` sein.
 
-## Blockierung aufgrund IP-Zulassungsliste {#blocked-due-to-ip-allow-list}
+## Blockierung aufgrund der IP-Zulassungsliste {#blocked-due-to-ip-allow-list}
 
-In diesem Fall gibt die Abfrage die `405` Fehlercode.
+In diesem Fall gibt die Abfrage den Fehler-Code `405` zurück.
 
-Dies ist nichts Besonderes für GraphQL. Siehe KB-Artikel [405 Fehler nicht zulässig](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-20824.html).
+Dies gilt nicht spezifisch für GraphQL. Siehe KB-Artikel [405-Fehler Nicht zulässig](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-20824.html?lang=de).
 
 ## Von Dispatcher blockiert {#blocked-dispatcher}
 
-Wenn der GraphQL-Endpunkt die `404` Fehler beim Veröffentlichen für `POST` -Anfragen bedeutet, dass die GraphQL-Abfragen auf Dispatcher-Ebene blockiert werden und der -Endpunkt manuell aktiviert werden muss.
+Wenn der GraphQL-Endpunkt beim Veröffentlichen für `POST`-Anfragen den Fehler `404` zurückgibt, bedeutet dies, dass die GraphQL-Abfragen auf Dispatcher-Ebene blockiert werden und der Endpunkt manuell aktiviert werden muss.
 
-Dies sollte nicht standardmäßig der Fall sein, aber eine benutzerdefinierte Dispatcher-Konfiguration kann dieses Problem verursachen. Weitere Informationen finden Sie unter [Dispatcher - Endpunktkonfiguration mit AEM Headless](/help/headless/deployment/dispatcher.md).
+Dies sollte standardmäßig nicht der Fall sein, aber eine benutzerdefinierte Dispatcher-Konfiguration kann dieses Problem verursachen. Weitere Informationen finden Sie unter [Dispatcher – Endpunktkonfiguration mit AEM Headless](/help/headless/deployment/dispatcher.md).

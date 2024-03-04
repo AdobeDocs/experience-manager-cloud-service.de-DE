@@ -4,9 +4,9 @@ description: OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen We
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3269'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Sie können die Konfigurationseinstellungen für OSGi-Komponenten mithilfe von K
 
 >[!TIP]
 >
->Sie können Cloud Manager verwenden, um Umgebungsvariablen zu konfigurieren. Weitere Informationen finden Sie in der Dokumentation . [hier.](/help/implementing/cloud-manager/environment-variables.md)
+>Sie können Cloud Manager verwenden, um Umgebungsvariablen zu konfigurieren. Weitere Informationen finden Sie in der Dokumentation [hier](/help/implementing/cloud-manager/environment-variables.md).
 
 ## OSGi-Konfigurationsdateien {#osgi-configuration-files}
 
@@ -99,7 +99,7 @@ So überprüfen Sie, ob die entsprechenden OSGi-Konfigurationswerte angewendet w
 
 Es gibt drei verschiedene OSGi-Konfigurationswerte, die mit Adobe Experience Manager as a Cloud Service verwendet werden können.
 
-1. **Inline-Werte**, d. h. Werte, die in der OSGi-Konfiguration fest codiert und in Git gespeichert werden. Beispiel:
+1. **Inline-Werte**, d. h. Werte, die in der OSGi-Konfiguration fest codiert und in Git gespeichert werden. Zum Beispiel:
 
    ```json
    {
@@ -107,7 +107,7 @@ Es gibt drei verschiedene OSGi-Konfigurationswerte, die mit Adobe Experience Man
    }
    ```
 
-1. **Geheime Werte**, d. h. Werte, die aus Sicherheitsgründen nicht in Git gespeichert werden dürfen. Beispiel:
+1. **Geheime Werte**, d. h. Werte, die aus Sicherheitsgründen nicht in Git gespeichert werden dürfen. Zum Beispiel:
 
    ```json
    {
@@ -115,7 +115,7 @@ Es gibt drei verschiedene OSGi-Konfigurationswerte, die mit Adobe Experience Man
    } 
    ```
 
-1. **Umgebungsspezifische Werte**, also Werte, die von Entwicklungsumgebung zu Entwicklungsumgebung variieren und vom Ausführungsmodus nicht genau anvisiert werden können (da es in Adobe Experience Manager as a Cloud Service einen einzigen `dev`-Ausführungsmodus gibt). Beispiel:
+1. **Umgebungsspezifische Werte**, also Werte, die von Entwicklungsumgebung zu Entwicklungsumgebung variieren und vom Ausführungsmodus nicht genau anvisiert werden können (da es in Adobe Experience Manager as a Cloud Service einen einzigen `dev`-Ausführungsmodus gibt). Zum Beispiel:
 
    ```json
    {
@@ -123,7 +123,7 @@ Es gibt drei verschiedene OSGi-Konfigurationswerte, die mit Adobe Experience Man
    }
    ```
 
-   Eine einzelne OSGi-Konfigurationsdatei kann eine beliebige Kombination dieser Konfigurationswerttypen gleichzeitig verwenden. Beispiel:
+   Eine einzelne OSGi-Konfigurationsdatei kann eine beliebige Kombination dieser Konfigurationswerttypen gleichzeitig verwenden. Zum Beispiel:
 
    ```json
    {
@@ -175,9 +175,9 @@ Es gibt zwei Möglichkeiten, OSGi-Konfigurationen zu erstellen, wie unten beschr
 OSGi-Konfigurationsdateien im JSON-Format können manuell direkt im AEM-Projekt geschrieben werden. Dies ist häufig die schnellste Möglichkeit, OSGi-Konfigurationen für bekannte OSGi-Komponenten und insbesondere benutzerdefinierte OSGi-Komponenten zu erstellen, die von demselben Entwickler entworfen und entwickelt wurden, der die Konfigurationen definiert. Dieser Ansatz kann auch genutzt werden, um Konfigurationen für dieselbe OSGi-Komponente in verschiedenen Ausführungsmodus-Ordnern zu kopieren, einzufügen und zu aktualisieren.
 
 1. Öffnen Sie in Ihrer IDE das `ui.apps`-Projekt, suchen oder erstellen Sie den Konfigurationsordner (`/apps/.../config.<runmode>`), der für die Ausführungsmodi bestimmt ist, auf die die neue OSGi-Konfiguration wirken soll.
-1. Erstellen Sie in diesem Konfigurationsordner eine `<PID>.cfg.json`-Datei. Die PID ist die persistente Identität der OSGi-Komponente. Normalerweise ist dies der vollständige Klassenname der OSGi-Komponentenimplementierung. Beispiel:
+1. Erstellen Sie in diesem Konfigurationsordner eine `<PID>.cfg.json`-Datei. Die PID ist die persistente Identität der OSGi-Komponente. Normalerweise ist dies der vollständige Klassenname der OSGi-Komponentenimplementierung. Zum Beispiel:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-Die Werksdateinamen der OSGi-Konfiguration verwenden die `<factoryPID>-<name>.cfg.json` Namenskonvention
+Die Werksdateinamen der OSGi-Konfiguration verwenden die `<factoryPID>-<name>.cfg.json`-Namenskonvention.
 1. Öffnen Sie die neue `.cfg.json`-Datei und definieren Sie die Schlüssel/Wert-Kombinationen für die OSGi-Eigenschafts- und -Wertpaare entsprechend dem [JSON OSGi-Konfigurationsformat](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. Speichern Sie Ihre Änderungen in der neuen `.cfg.json`-Datei
 1. Fügen Sie Ihre neue OSGi-Konfigurationsdatei hinzu und übertragen Sie sie auf Git
@@ -192,14 +192,14 @@ Die AEM Web-Konsole von AEM SDK QuickStart Jar kann verwendet werden, um OSGi-Ko
 
 1. Melden Sie sich bei der AEM-Web-Konsole von AEM SDK Quickstart Jar unter `https://<host>:<port>/system/console` als Admin-Benutzerin bzw. -Benutzer an.
 1. Navigieren Sie zu **OSGi** > **Konfiguration**
-1. Suchen Sie zum Konfigurieren die OSGi-Komponente und wählen Sie den Titel aus, den Sie bearbeiten möchten
+1. Zur Konfiguration suchen Sie die OSGi-Komponente und wählen Sie den Titel zum Bearbeiten aus.
    ![OSGi-Konfiguration](./assets/configuring-osgi/configuration.png)
 1. Bearbeiten Sie die OSGi-Konfigurationseigenschaftswerte nach Bedarf über die Web-Benutzeroberfläche
 1. Bewahren Sie die PID (Persistent Identity) an einem sicheren Ort auf. Diese wird später zum Generieren der OSGi-Konfigurations-JSON verwendet.
-1. Speichern
+1. Wählen Sie „Speichern“ aus
 1. Gehen Sie zu „OSGi“ > „OSGi Installer-Konfigurationsdrucker“
 1. Fügen Sie die in Schritt 5 kopierte PID ein. Stellen Sie sicher, dass das Serialisierungsformat auf „OSGi Configurator JSON“ eingestellt ist
-1. Drucken auswählen
+1. Wählen Sie „Drucken“ aus
 1. Die OSGi-Konfiguration im JSON-Format wird im Abschnitt „Serialisierte Konfigurationseigenschaften“ angezeigt
    ![OSGi Installer-Konfigurationsdrucker](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. Öffnen Sie in Ihrer IDE das `ui.apps`-Projekt, suchen oder erstellen Sie den Konfigurationsordner (`/apps/.../config.<runmode>`), der für die Ausführungsmodi bestimmt ist, auf die die neue OSGi-Konfiguration wirken soll.
@@ -213,7 +213,7 @@ Die AEM Web-Konsole von AEM SDK QuickStart Jar kann verwendet werden, um OSGi-Ko
 
 ### Inline-Werte {#inline-values}
 
-Inline-Werte werden gemäß der standardmäßigen JSON-Syntax als Name-Wert-Paare formatiert. Beispiel:
+Inline-Werte werden gemäß der standardmäßigen JSON-Syntax als Name-Wert-Paare formatiert. Zum Beispiel:
 
 ```json
 {
@@ -517,7 +517,7 @@ Auf [dieser Seite](https://developer.adobe.com/experience-cloud/cloud-manager/do
 
 >[!TIP]
 >
->Sie können auch Cloud Manager verwenden, um Umgebungsvariablen zu konfigurieren. Weitere Informationen finden Sie in der Dokumentation . [hier.](/help/implementing/cloud-manager/environment-variables.md)
+>Sie können auch Cloud Manager verwenden, um Umgebungsvariablen zu konfigurieren. Weitere Informationen finden Sie in der Dokumentation [hier](/help/implementing/cloud-manager/environment-variables.md).
 
 ### Festlegen von Werten über API {#setting-values-via-api}
 

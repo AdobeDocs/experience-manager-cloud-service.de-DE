@@ -1,23 +1,23 @@
 ---
 title: Zugehörige Inhalte (Assets – Inhaltsfragmente)
-description: Erfahren Sie, wie die zugehörige Inhaltsfunktion für AEM Inhaltsfragmente die Verbindung bereitstellt, damit Assets optional mit dem Fragment verwendet werden können.
+description: Erfahren Sie, wie die Funktion der zugehörigen Inhalte für AEM-Inhaltsfragmente die Verbindung herstellt, damit Assets optional mit dem Fragment verwendet werden können.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '281'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
 # Zugehörige Inhalte{#associated-content}
 
-Für as a Cloud Service Inhaltsfragmente von Adobe Experience Manager (AEM) stellt die zugehörige Inhaltsfunktion (verfügbar im Original-Editor) die Verbindung bereit, damit Assets optional mit dem Fragment verwendet werden können. Dies bietet Flexibilität durch [Bereitstellung einer Reihe von Assets, auf die bei Verwendung des Inhaltsfragments zugegriffen werden kann](/help/assets/content-fragments/content-fragments.md#using-associated-content), während gleichzeitig dazu beiträgt, die für die Suche nach dem entsprechenden Asset erforderliche Zeit zu reduzieren. Diese Funktion kann sowohl für Ihre Headless Content-Bereitstellung als auch für die Seitenbearbeitung verwendet werden.
+Bei den Inhaltsfragmenten von Adobe Experience Manager (AEM) as a Cloud Service stellt die zugehörige Inhaltsfunktion (verfügbar im Original-Editor) die Verbindung her, sodass Assets optional mit dem Fragment verwendet werden können. Dies bietet Ihnen mehr Flexibilität, wenn es darum geht, [eine Reihe von Assets bereitzustellen, auf die bei der Verwendung des Inhaltsfragments zugegriffen werden soll](/help/assets/content-fragments/content-fragments.md#using-associated-content). Darüber hinaus wird so der Zeitaufwand für die Suche nach dem passenden Asset reduziert. Diese Funktion kann sowohl für Ihre Headless Content-Bereitstellung als auch für die Seitenbearbeitung verwendet werden.
 
 >[!NOTE]
 >
 >Inhaltsfragmente sind eine Sites-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
->Es gibt zwei Editoren für die Erstellung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor beschrieben, auf den Sie hauptsächlich über das **Assets** Konsole.
+>Es gibt zwei Editoren für die Erstellung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole.
 
 ## Hinzufügen von zugehörigen Inhalten {#adding-associated-content}
 

@@ -1,13 +1,13 @@
 ---
 title: Erstellen von Inhaltsfragmenten
-description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente erstellen und Varianten dieses Inhalts entsprechend dem Zweck erstellen. Dies bietet mehr Flexibilität für die Headless-Bereitstellung und das Seiten-Authoring.
+description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente verfassen und dann je nach Zweck Varianten dieses Inhalts erstellen. Dies bietet mehr Flexibilität für die Headless-Bereitstellung und das Seiten-Authoring.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2266'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Beim ersten Öffnen des Inhaltsfragmenteditors werden vier Hauptbereiche angezei
 
   >[!NOTE]
   >
-  >Abhängig von den Definitionen im zugrunde liegenden Modell können Felder bestimmten Typen von [Validierung](/help/assets/content-fragments/content-fragments-models.md#validation).
+  >Abhängig von den Definitionen im zugrunde liegenden Modell können Felder bestimmten Arten von [Validierung](/help/assets/content-fragments/content-fragments-models.md#validation) unterliegen.
 
 ![Inhaltsfragmenteditor – Überblick](assets/cf-authoring-overview.png)
 
@@ -92,7 +92,7 @@ Im linken Bereich können Sie Folgendes sehen:
 
 ### Links folgen {#follow-links}
 
-Das Link-Symbol wird in verschiedenen Bereichen des Editors angezeigt. Dies kann zum Öffnen des angezeigten Elements verwendet werden, z. B. ein Inhaltsfragmentmodell, eine übergeordnete Referenz oder ein Fragment, auf das verwiesen wird:
+Das Link-Symbol wird in verschiedenen Bereichen des Editors angezeigt. Dies kann verwendet werden, um das angezeigte Element zu öffnen, z. B. ein Inhaltsfragmentmodell, einen übergeordneten Verweis oder ein Fragment, auf das verwiesen wird:
 
 ![Inhaltsfragmenteditor – Link-Symbol](assets/cf-authoring-link-icon.png)
 
@@ -241,7 +241,7 @@ Dadurch wird das mehrzeilige Feld im Vollbild geöffnet und:
 
 * Unterschiede sind farblich gekennzeichnet:
 
-   * Grün kennzeichnet hinzugefügten Inhalt (zur Variante)
+   * Grün zeigt an, dass der Inhalt (zur Variante) hinzugefügt wurde
    * Rot zeigt an, dass Inhalt entfernt wurde (aus der Variante)
    * Blau zeigt an, dass Text ersetzt wurde
 
@@ -349,7 +349,7 @@ Auf der Registerkarte „Eigenschaften“(rechter Bereich) können Sie auch Folg
 
 * **Titel**
 * **Beschreibung**
-* **Tags**: über die Dropdownliste oder das Auswahldialogfeld
+* **Tags**: über die Dropdown-Liste oder das Dialogfeld „Auswahl“
 
   ![Inhaltsfragmenteditor – Tags verwalten](assets/cf-authoring-edit-tags.png)
 
@@ -472,7 +472,7 @@ Im Bereich **Felder** sind alle Felder im Inhaltsfragment aufgeführt. Das Symbo
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Registerkartenplatzhalter</b></p><p>Obwohl nicht durch ein tatsächliches Symbol dargestellt, wird ein <b>Registerkartenplatzhalter</b> wird im linken Bereich angezeigt. <br>Sie wird auch im zentralen Bedienfeld angezeigt, entweder horizontal wie angezeigt oder in einer Dropdown-Liste (wenn zu viele vorhanden sind, um horizontal angezeigt zu werden).</p> </td>
+   <td><p><b>Registerkartenplatzhalter</b></p><p>Obwohl nicht durch ein tatsächliches Symbol dargestellt, wird ein <b>Registerkartenplatzhalter</b> wird im linken Bereich angezeigt. <br>Er wird auch im zentralen Bereich angezeigt, entweder horizontal wie gezeigt oder in einer Dropdown-Liste (wenn für eine horizontale Anzeige zu viele vorhanden sind).</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>

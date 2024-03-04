@@ -3,9 +3,9 @@ title: Query Builder-API
 description: Die Funktionalität der Query Builder-Komponente für die Asset-Freigabe wird über eine Java™-API und eine REST-API verfügbar gemacht.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1830'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -27,9 +27,9 @@ Die REST-API bietet Zugriff auf dieselben Funktionen über HTTP, wobei Antworten
 
 ## Gem-Sitzung {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) ist eine Serie mit ausführlichen technischen Erläuterungen zu Adobe Experience Manager von Adobe-Experten.
+[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=de) ist eine Serie mit ausführlichen technischen Erläuterungen zu Adobe Experience Manager von Adobe-Experten.
 
-In der [Sitzung zu Query Builder](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html) erhalten Sie eine Übersicht und Informationen zur Verwendung des Tools.
+In der [Sitzung zu Query Builder](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=de) erhalten Sie eine Übersicht und Informationen zur Verwendung des Tools.
 
 ## Beispielabfragen {#sample-queries}
 

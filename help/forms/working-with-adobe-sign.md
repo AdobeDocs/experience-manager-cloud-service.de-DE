@@ -7,9 +7,9 @@ role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
 source-git-commit: e81da7414335e00411942adeb41978d39f172b52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3242'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Sie können [!DNL Adobe Sign] für ein vorhandenes adaptives Formular aktivieren
 Erstellen eines signaturfähigen adaptiven Formulars:
 
 1. Gehen Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente]**.
-1. Auswählen **[!UICONTROL Erstellen]** und wählen **[!UICONTROL Adaptives Formular]**. Eine Liste von Vorlagen wird angezeigt. Wählen Sie eine Vorlage und dann **[!UICONTROL Nächste]**.
+1. Wählen Sie **[!UICONTROL Erstellen]** und dann **[!UICONTROL Adaptives Formular]** aus. Eine Liste von Vorlagen wird angezeigt. Wählen Sie eine Vorlage aus und dann **[!UICONTROL Weiter]**.
 1. Auf der Registerkarte **[!UICONTROL Standard]**:
 
    1. Geben Sie **[!UICONTROL Name]** und **[!UICONTROL Titel]** für das adaptive Formular an.
@@ -91,14 +91,14 @@ Erstellen eines signaturfähigen adaptiven Formulars:
 
    * Wenn Sie keine benutzerdefinierte Formularvorlage haben, wählen Sie die Option **[!UICONTROL Datensatzdokument erzeugen]**. Wenn Sie diese Option verwenden, zeigt das zum Signieren gesendete Dokument alle Felder des adaptiven Formulars an.
 
-1. Auswählen **[!UICONTROL Erstellen Sie.]** Es wird ein signaturfähiges adaptives Formular erstellt. Sie können Ihre [!DNL Adobe Sign]-Felder zum Formular hinzufügen und dieses zum Signieren senden.
+1. Wählen Sie **[!UICONTROL Erstellen.]** Es wird ein signaturfähiges adaptives Formular erstellt. Sie können Ihre [!DNL Adobe Sign]-Felder zum Formular hinzufügen und dieses zum Signieren senden.
 
 #### Aktivieren von [!DNL Adobe Sign] für ein adaptives Formular {#editafsign}
 
 Verwenden von [!DNL Adobe Sign] in einem vorhandenen adaptiven Formular:
 
 1. Gehen Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente]**.
-1. Wählen Sie das adaptive Formular aus und wählen Sie **[!UICONTROL Eigenschaften]**.
+1. Wählen Sie das adaptive Formular aus und wählen Sie dann **[!UICONTROL Eigenschaften]**.
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Standard]** den [Konfigurations-Container](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) aus, der bei der Integration von [!DNL Adobe Sign] in [!DNL AEM Forms] erstellt wurde.
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Formularmodus]** eine der folgenden Optionen aus:
 
@@ -106,7 +106,7 @@ Verwenden von [!DNL Adobe Sign] in einem vorhandenen adaptiven Formular:
 
    * Wenn Sie keine benutzerdefinierte Formularvorlage haben, wählen Sie die Option **[!UICONTROL Datensatzdokument erzeugen]**. Wenn Sie diese Option verwenden, zeigt das zum Signieren gesendete Dokument alle Felder des adaptiven Formulars an.
 
-1. Auswählen **[!UICONTROL Speichern und schließen]**. Das adaptive Formular ist für [!DNL Adobe Sign] aktiviert. Jetzt können Sie Ihre [!DNL Adobe Sign]-Felder zum Formular hinzufügen und dieses zum Signieren senden.
+1. Wählen Sie **[!UICONTROL Speichern und schließen]**. Das adaptive Formular ist für [!DNL Adobe Sign] aktiviert. Jetzt können Sie Ihre [!DNL Adobe Sign]-Felder zum Formular hinzufügen und dieses zum Signieren senden.
 
 ### Hinzufügen von [!DNL Adobe Sign]-Feldern zu einem adaptiven Formular {#addadobesignfieldstoanadaptiveform}
 
@@ -126,15 +126,15 @@ Gehen Sie wie folgt vor, um einem adaptiven Formular Felder hinzuzufügen und ei
    >  * Verwenden Sie den [!DNL Adobe Sign]-Block nur für adaptive Formulare, die automatisch ein Datensatzdokument generieren. Wenn Sie das Datensatzdokument mithilfe einer benutzerdefinierten XDP-Datei generieren oder ein formularvorlagenbasiertes adaptives Formular verwenden, wird der [!DNL Adobe Sign]-Block nicht unterstützt.
 
 
-1. Wählen Sie die **[!UICONTROL Adobe Sign Block]** und wählen Sie die **[!UICONTROL Bearbeiten]** ![Bearbeiten](assets/Smock_Edit_18_N.svg) Symbol. Es werden Optionen zum Hinzufügen von Feldern und zum Formatieren der Darstellung von Feldern angezeigt.
+1. Wählen Sie die Komponente **[!UICONTROL Adobe Sign-Block]** aus und wählen Sie dann das Symbol **[!UICONTROL Bearbeiten]** (![Edit](assets/Smock_Edit_18_N.svg)). Es werden Optionen zum Hinzufügen von Feldern und zum Formatieren der Darstellung von Feldern angezeigt.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
    **A.** Wählen Sie [!DNL Adobe Sign]-Felder aus und fügen Sie sie hinzu. **B.** Erweitern Sie den [!DNL Adobe Sign]-Block zur Vollbildansicht.
 
-1. Wählen Sie die **[!UICONTROL Adobe Sign]** Feld ![Adobe Sign](assets/adobesign.png) Symbol. Es zeigt Optionen zum Auswählen und Hinzufügen von [!DNL Adobe Sign]-Feldern an.
+1. Wählen Sie auf dem Feld **[!UICONTROL Adobe Sign]** das Symbol ![Adobe Sign](assets/adobesign.png). Es zeigt Optionen zum Auswählen und Hinzufügen von [!DNL Adobe Sign]-Feldern an.
 
-   Erweitern Sie die **[!UICONTROL Typ]** Dropdown-Feld zur Auswahl eines [!DNL Adobe Sign] und wählen Sie Fertig aus. ![Speichern](assets/save_icon.svg) Symbol zum Hinzufügen des ausgewählten Felds zu [!DNL Adobe Sign] blockieren. Die Dropdown-Liste **[!UICONTROL Typ]** enthält die Feldtypen „Signatur“, „Empfängerinformationen“ und „Daten“. Die Integration von [!DNL Adobe Sign] in AEM [!DNL Forms] unterstützt nur die in der Dropdown-Liste [!UICONTROL Typ] angegebenen Felder. Ausführliche Informationen zu [!DNL Adobe Sign]-Feldern finden Sie in der [Adobe Sign-Dokumentation](https://helpx.adobe.com/de/sign/help/field-types.html).
+   Erweitern Sie die Dropdown-Liste **[!UICONTROL Typ]**, wählen Sie ein [!DNL Adobe Sign]-Feld aus und wählen Sie dann das Symbol „Fertig“ (![Save](assets/save_icon.svg)), um das ausgewählte Feld zum [!DNL Adobe Sign]-Block hinzuzufügen. Die Dropdown-Liste **[!UICONTROL Typ]** enthält die Feldtypen „Signatur“, „Empfängerinformationen“ und „Daten“. Die Integration von [!DNL Adobe Sign] in AEM [!DNL Forms] unterstützt nur die in der Dropdown-Liste [!UICONTROL Typ] angegebenen Felder. Ausführliche Informationen zu [!DNL Adobe Sign]-Feldern finden Sie in der [Adobe Sign-Dokumentation](https://helpx.adobe.com/de/sign/help/field-types.html).
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -149,7 +149,7 @@ Gehen Sie wie folgt vor, um einem adaptiven Formular Felder hinzuzufügen und ei
 
 [!DNL Adobe Sign] ist standardmäßig nicht für adaptive Formulare aktiviert. So aktivieren Sie es:
 
-1. Wählen Sie im Inhaltsbrowser die Option **[!UICONTROL Formular-Container]** und wählen Sie die **[!UICONTROL Konfigurieren]** ![konfigurieren](assets/Smock_Wrench_18_N.svg) Symbol. Dadurch wird der Eigenschaftenbrowser geöffnet, der die Eigenschaften des Containers für adaptive Formulare anzeigt.
+1. Wählen Sie im Inhalts-Browser **[!UICONTROL Formular-Container]** und das Symbol **[!UICONTROL Konfigurieren]** ![configure](assets/Smock_Wrench_18_N.svg) aus. Dadurch wird der Eigenschaftenbrowser geöffnet, der die Eigenschaften des Containers für adaptive Formulare anzeigt.
 1. Erweitern Sie im Eigenschaftenbrowser das Akkordeon **[!UICONTROL Elektronische Signatur]** und wählen Sie die Option **[!UICONTROL Adobe Sign aktivieren]**. Dadurch wird [!DNL Adobe Sign] für ein adaptives Formular aktiviert.
 
 ### Auswählen von [!DNL Adobe Sign] as a Cloud Service und der Signaturreihenfolge {#select-adobe-sign-cloud-service-and-signing-order}
@@ -162,7 +162,7 @@ So wählen Sie einen Cloud Service und die Signierreihenfolge aus:
 
 ![Cloud-service](/help/forms/assets/adobe-sign-cloud-service.png)
 
-1. Wählen Sie im Inhaltsbrowser die Option **[!UICONTROL Formular-Container]** und wählen Sie die **[!UICONTROL Konfigurieren]** ![konfigurieren](assets/Smock_Wrench_18_N.svg) Symbol. Dadurch wird der Eigenschaftenbrowser geöffnet, der die Eigenschaften des Containers für adaptive Formulare anzeigt.
+1. Wählen Sie im Inhalts-Browser **[!UICONTROL Formular-Container]** und das Symbol **[!UICONTROL Konfigurieren]** ![configure](assets/Smock_Wrench_18_N.svg) aus. Dadurch wird der Eigenschaftenbrowser geöffnet, der die Eigenschaften des Containers für adaptive Formulare anzeigt.
 1. Erweitern Sie im Eigenschaftenbrowser das Akkordeon **[!UICONTROL Elektronische Signatur]** und wählen Sie die Option **[!UICONTROL Adobe Sign aktivieren]**. Dadurch wird [!DNL Adobe Sign] für ein adaptives Formular aktiviert.
 1. Wählen Sie einen Cloud Service aus der bereits konfigurierten Liste der [!DNL Adobe Sign]-Cloud Services aus.
 
@@ -170,9 +170,9 @@ So wählen Sie einen Cloud Service und die Signierreihenfolge aus:
 
    Die Dropdown-Liste führt die existierenden Cloud-Services im Ordner `global` unter Werkzeuge > **[!UICONTROL Cloud-Services]** > **[!UICONTROL Adobe Sign]** auf. Darüber hinaus werden in der Dropdown-Liste auch die Cloud-Services aufgeführt, die in dem Ordner vorhanden sind, den Sie beim Erstellen eines adaptiven Formulars im Feld **[!UICONTROL Konfigurations-Container]** auswählen.
 
-1. Wählen Sie die Option zum Konfigurieren der Sendeaktion mit **[!UICONTROL Formular senden]**. Sie können eine der beiden folgenden Optionen auswählen:
-   * **Senden Sie das Formular (und senden Sie die Vereinbarung zur Unterzeichnung)**: Mit dieser Option wird das Formular sofort gesendet und anschließend zur Unterzeichnung an die Empfänger gesendet.
-   * **Senden Sie das Formular (nachdem jeder Empfänger die Unterzeichnungszeremonie abgeschlossen hat)**: Mit dieser Option wird Adaptive Forms erst gesendet, nachdem alle Unterzeichner den Signiervorgang abgeschlossen haben. Sie können das Intervall konfigurieren, um den Signaturstatus für alle Unterzeichner zu überprüfen. Weitere Informationen finden Sie unter  [Konfigurieren [!DNL Adobe Acrobat Sign] Planung](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status).
+1. Wählen Sie über **[!UICONTROL Formular übermitteln]** die Option zum Konfigurieren der Übermittlungsaktion aus. Sie können eine der beiden folgenden Optionen auswählen:
+   * **Formular übermitteln (und die Vereinbarung zur Unterzeichnung senden)**: Mit dieser Option wird das Formular sofort übermittelt und anschließend zur Unterzeichnung an die Empfängerinnen und Empfänger gesendet.
+   * **Formular übermitteln (nachdem alle Empfänger das Unterzeichnungsverfahren abgeschlossen haben)**: Mit dieser Option werden adaptive Formulare erst übermittelt, nachdem alle Unterzeichnenden den Unterzeichnungsvorgang abgeschlossen haben. Sie können das Intervall konfigurieren, um den Signaturstatus für alle Unterzeichnenden zu überprüfen. Weitere Informationen finden Sie unter [Konfigurieren der  [!DNL Adobe Acrobat Sign] -Planung](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status).
 
 1. Wählen Sie die Signaturreihenfolge im Dialogfeld **[!UICONTROL Empfänger können]**. Die Empfänger können ein adaptives Formular **[!UICONTROL sequenziell]**, d. h. ein Empfänger nach dem anderen, oder **[!UICONTROL simultan]** in beliebiger Reihenfolge signieren.
 
@@ -184,17 +184,17 @@ So wählen Sie einen Cloud Service und die Signierreihenfolge aus:
 
    >[!NOTE]
    >
-   > Wenn ein adaptives Formular mithilfe eines Formulardatenmodells erstellt wird, wird das Feld &quot;Vereinbarung-ID&quot;im Dialogfeld angezeigt.
+   > Wenn ein adaptives Formular mithilfe eines Formulardatenmodells erstellt wird, wird das Feld „Vereinbarungs-ID“ im Dialogfeld angezeigt.
 
-1. [Hinzufügen von Empfängern zu einem adaptiven Formular](working-with-adobe-sign.md#addsignerstoanadaptiveform) und wählen Sie Fertig aus ![Speichern](assets/save_icon.svg) -Symbol, um die Änderungen zu speichern.
+1. [Fügen Sie dem adaptiven Formular Empfängerinnen und Empfänger hinzu](working-with-adobe-sign.md#addsignerstoanadaptiveform) und wählen Sie das Symbol „Fertig“ ![Speichern](assets/save_icon.svg), um die Änderungen zu speichern.
 
 ### Hinzufügen von Empfängern zu einem adaptiven Formular {#addsignerstoanadaptiveform}
 
 Es kann einen oder mehrere Empfänger für eine Adobe Sign-Vereinbarung geben. Wenn Sie einen Empfänger hinzufügen, können Sie auch Authentifizierungsdetails für den Empfänger konfigurieren und auswählen, ob der Formularausfüller und der Empfänger dieselbe Person sind. Führen Sie die folgenden Schritte durch, um einen Empfänger hinzuzufügen und seine Details anzugeben:
 
-1. Wählen Sie im Inhaltsbrowser die Option **[!UICONTROL Formular-Container]** und wählen Sie die **[!UICONTROL Konfigurieren]** ![konfigurieren](assets/Smock_Wrench_18_N.svg) Symbol. Dadurch wird der Eigenschaftenbrowser geöffnet, der Eigenschaften des Containers für adaptive Formulare anzeigt.
+1. Wählen Sie im Inhalts-Browser **[!UICONTROL Formular-Container]** und das Symbol **[!UICONTROL Konfigurieren]** ![configure](assets/Smock_Wrench_18_N.svg) aus. Dadurch wird der Eigenschaftenbrowser geöffnet, der Eigenschaften des Containers für adaptive Formulare anzeigt.
 1. Erweitern Sie im Eigenschaftenbrowser das Akkordeon **[!UICONTROL Elektronische Signatur]** und wählen Sie die Option **[!UICONTROL Adobe Sign aktivieren]**. Dadurch wird [!DNL Adobe Sign] für ein adaptives Formular aktiviert.
-1. Auswählen **[!UICONTROL Empfänger hinzufügen]**. Dadurch wird dem adaptiven Formular ein Empfänger hinzugefügt. Sie können dem adaptiven Formular mehrere Empfänger hinzufügen. Alle Empfänger erhalten bei Übermittlung des adaptiven Formulars eine Adobe Sign-Vereinbarung.
+1. Wählen Sie **[!UICONTROL Empfänger hinzufügen]** aus. Dadurch wird dem adaptiven Formular ein Empfänger hinzugefügt. Sie können dem adaptiven Formular mehrere Empfänger hinzufügen. Alle Empfänger erhalten bei Übermittlung des adaptiven Formulars eine Adobe Sign-Vereinbarung.
    ![phone-details](assets/recipient-settings.png)
 
 1. Klicken Sie auf das Symbol **[!UICONTROL Bearbeiten]** ![Bearbeiten](assets/Smock_Edit_18_N.svg), und geben Sie folgende Informationen zum Empfänger ein:
@@ -224,7 +224,7 @@ Es kann einen oder mehrere Empfänger für eine Adobe Sign-Vereinbarung geben. W
 
    Die Abbildung oben zeigt zwei [!DNL Adobe Sign]-Blöcke als Beispiel: „Personal-Information“ und „Office-details“
 
-   Wählen Sie die ![Speichern](assets/save_icon.svg) Symbol. Der Empfänger wird hinzugefügt.
+   Wählen Sie das Symbol ![Speichern](assets/save_icon.svg). Der Empfänger wird hinzugefügt.
 
 ### Übermittlungsaktion für ein adaptives Formular auswählen {#selectsubmitactionforanadaptiveform}
 
@@ -309,15 +309,15 @@ Nachdem Sie die [Eigenschaften des adaptiven Formulars für Adobe Sign bearbeite
 
    ![Sign-Block](assets/sign-block-new.png)
 
-1. Wählen Sie die **[!UICONTROL Adobe Sign Block]** und wählen Sie die **[!UICONTROL Bearbeiten]** ![Bearbeiten](assets/Smock_Edit_18_N.svg) Symbol. Es werden Optionen zum Hinzufügen von Feldern und zum Formatieren der Darstellung von Feldern angezeigt.
+1. Wählen Sie die Komponente **[!UICONTROL Adobe Sign Block]** und dann das Symbol **[!UICONTROL Bearbeiten]** ![Edit](assets/Smock_Edit_18_N.svg). Es werden Optionen zum Hinzufügen von Feldern und zum Formatieren der Darstellung von Feldern angezeigt.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
    **A.** Wählen Sie [!DNL Adobe Sign]-Felder aus und fügen Sie sie hinzu. **B.** Erweitern Sie den [!DNL Adobe Sign]-Block zur Vollbildansicht.
 
-1. Wählen Sie die **[!UICONTROL Adobe Sign Field]** ![Adobe Sign](assets/adobesign.png) Symbol. Es zeigt Optionen zum Auswählen und Hinzufügen von [!DNL Adobe Sign]-Feldern an.
+1. Wählen Sie das Symbol **[!UICONTROL Adobe Sign]** ![Adobe Sign](assets/adobesign.png). Es zeigt Optionen zum Auswählen und Hinzufügen von [!DNL Adobe Sign]-Feldern an.
 
-   Erweitern Sie die **[!UICONTROL Typ]** Dropdown-Feld zur Auswahl **[!UICONTROL Digitale Signatur]** und wählen Sie die **[!UICONTROL Fertig]** Symbol zum Hinzufügen des ausgewählten Felds zu [!DNL Adobe Sign] blockieren.
+   Erweitern Sie das Dropdown-Feld **[!UICONTROL Typ]**, wählen Sie **[!UICONTROL Digitale Signatur]** und dann das Symbol **[!UICONTROL Fertig]** aus, um das ausgewählte Feld zum [!DNL Adobe Sign]-Block hinzuzufügen.
 
    ![Digitale Signaturen](assets/digital_signatures_new.png)
 

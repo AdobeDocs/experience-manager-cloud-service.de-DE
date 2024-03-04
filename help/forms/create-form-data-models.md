@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1512'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -37,17 +37,17 @@ Die [!DNL Experience Manager Forms]-Datenintegration bietet eine intuitive Benut
 Stellen Sie sicher, dass Sie die Datenquellen konfiguriert haben, die Sie im Formulardatenmodell verwenden möchten, und zwar wie in [Konfigurieren von Datenquellen](configure-data-sources.md) beschrieben. Gehen Sie folgendermaßen vor, um ein Formulardatenmodell basierend auf konfigurierten Datenquellen zu erstellen:
 
 1. Gehen Sie in der [!DNL Experience Manager]-Autorinstanz zu **[!UICONTROL Forms > Datenintegration]**.
-1. Auswählen **[!UICONTROL Erstellen > Formulardatenmodell]**.
+1. Wählen Sie **[!UICONTROL Erstellen > Formulardatenmodell]**.
 1. Im Dialogfeld „Formulardatenmodell erstellen“:
 
    * Geben Sie einen Namen für das Formulardatenmodell an.
    * (**Optional**) Geben Sie Titel, Beschreibung und Tags für das Formulardatenmodell an.
-   * (**Optional und nur anwendbar, wenn Datenquellen konfiguriert sind**) Wählen Sie das Häkchen-Symbol neben dem **[!UICONTROL Datenquellenkonfiguration]** und wählen Sie den Konfigurationsknoten aus, in dem sich die Cloud-Dienste für die Datenquellen befinden, die Sie verwenden möchten. Das beschränkt die Liste der Datenquellen, die auf der nächsten Seite zur Auswahl stehen, auf diejenigen, die im ausgewählten Konfigurationsknoten verfügbar sind. [!DNL Experience Manager]-Benutzerprofildatenquellen werden jedoch standardmäßig aufgelistet. Wenn Sie keinen Konfigurationsknoten auswählen, werden Datenquellen von allen Konfigurationsknoten angezeigt.
+   * (**Optional und nur anwendbar, wenn Datenquellen konfiguriert sind**) Wählen Sie das Häkchensymbol neben dem Feld **[!UICONTROL Datenquellenkonfiguration]** und dann den Konfigurationsknoten, in dem sich die Cloud Services für die Datenquellen befinden, die Sie verwenden möchten. Das beschränkt die Liste der Datenquellen, die auf der nächsten Seite zur Auswahl stehen, auf diejenigen, die im ausgewählten Konfigurationsknoten verfügbar sind. [!DNL Experience Manager]-Benutzerprofildatenquellen werden jedoch standardmäßig aufgelistet. Wenn Sie keinen Konfigurationsknoten auswählen, werden Datenquellen von allen Konfigurationsknoten angezeigt.
 
 1. Wählen Sie **[!UICONTROL Weiter]** aus.
 
 1. (**Trifft nur zu, wenn Datenquellen konfiguriert sind**) Der Bildschirm **[!UICONTROL Datenquelle auswählen]** listet verfügbare Datenquellen auf, falls vorhanden. Wählen Sie Datenquellen aus, die Sie im Formulardatenmodell verwenden möchten.
-1. Auswählen **[!UICONTROL Erstellen]** und wählen Sie im Bestätigungsdialogfeld **[!UICONTROL Öffnen]** , um den Editor für Formulardatenmodell zu öffnen.
+1. Wählen Sie **[!UICONTROL Erstellen]** und dann im Bestätigungsdialogfeld **[!UICONTROL Öffnen]**, um den Formulardatenmodelleditor zu öffnen.
 
    Im Folgenden werden die verschiedenen Komponenten der Benutzeroberfläche im Formulardatenmodelleditor beschrieben.
 
@@ -71,21 +71,21 @@ Weitere Informationen zum Formulardatenmodelleditor und dazu, wie Sie mit ihm da
 
 Führen Sie folgende Schritte aus, um Datenquellen zu einem vorhandenen Formulardatenmodell hinzuzufügen oder sie zu aktualisieren.
 
-1. Navigieren Sie zu **[!UICONTROL Forms > Datenintegrationen]**, wählen Sie das Formulardatenmodell aus, dem Sie Datenquellen hinzufügen oder aktualisieren möchten, und wählen Sie **[!UICONTROL Eigenschaften]**.
+1. Navigieren Sie zu **[!UICONTROL Formulare > Datenintegrationen]**, wählen Sie das Formulardatenmodell aus, dem Sie Datenquellen hinzufügen oder in dem Sie sie aktualisieren möchten, und wählen Sie dann **[!UICONTROL Eigenschaften]**.
 1. Wechseln Sie in den Eigenschaften des Formulardatenmodells zur Registerkarte **[!UICONTROL Quelle aktualisieren]**.
 
    Auf der Registerkarte **[!UICONTROL Quelle aktualisieren]**:
 
-   * Wählen Sie das Symbol Durchsuchen im **[!UICONTROL Kontextabhängige Konfiguration]** und wählen Sie einen Konfigurationsknoten aus, in dem sich die Cloud-Konfiguration für die Datenquelle befindet, die Sie hinzufügen möchten. Wenn Sie keinen Knoten auswählen, befinden sich Cloud-Konfigurationen, die sich nur im `global` Knoten werden angezeigt, wenn Sie **[!UICONTROL Quellen hinzufügen]**.
+   * Klicken Sie auf das Symbol „Durchsuchen“ im Feld **[!UICONTROL Kontextabhängige Konfiguration]** und wählen Sie einen Konfigurationsknoten aus, in dem sich die Cloud-Konfiguration für die hinzuzufügende Datenquelle befindet. Wenn Sie keinen Knoten auswählen, werden die Cloud-Konfigurationen, die sich nur im Knoten `global` befinden, aufgelistet, wenn Sie auf **[!UICONTROL Quellen hinzufügen]** klicken.
 
-   * Um eine neue Datenquelle hinzuzufügen, wählen Sie **[!UICONTROL Quellen hinzufügen]** und wählen Sie die Datenquellen aus, die dem Formulardatenmodell hinzugefügt werden sollen. Alle in `global` konfigurierten Datenquellen und ggf. der ausgewählte Konfigurationsknoten werden angezeigt.
+   * Um eine neue Datenquelle hinzuzufügen, wählen Sie **[!UICONTROL Quellen hinzufügen]** und d die Datannenquellen aus, die dem Formulardatenmodell hinzugefügt werden sollen. Alle in `global` konfigurierten Datenquellen und ggf. der ausgewählte Konfigurationsknoten werden angezeigt.
 
-   * Um eine vorhandene Datenquelle durch eine andere Datenquelle desselben Typs zu ersetzen, wählen Sie die **[!UICONTROL Bearbeiten]** für die Datenquelle und wählen Sie aus der Liste der verfügbaren Datenquellen aus.
-   * Um eine vorhandene Datenquelle zu löschen, wählen Sie die **[!UICONTROL Löschen]** für die Datenquelle. Das Symbol „Löschen“ ist deaktiviert, wenn ein Datenmodellobjekt in der Datenquelle im Formulardatenmodell hinzugefügt wird.
+   * Um eine vorhandene Datenquelle durch eine andere Datenquelle desselben Typs zu ersetzen, klicken Sie auf das Symbol **[!UICONTROL Bearbeiten]** für die Datenquelle und wählen Sie diese aus der Liste der verfügbaren Datenquellen aus.
+   * Um eine vorhandene Datenquelle zu löschen, wählen Sie das Symbol **[!UICONTROL Löschen]** für die Datenquelle. Das Symbol „Löschen“ ist deaktiviert, wenn ein Datenmodellobjekt in der Datenquelle im Formulardatenmodell hinzugefügt wird.
 
      ![fdm-properties](assets/fdm-properties.png)
 
-1. Auswählen **[!UICONTROL Speichern und schließen]** , um die Aktualisierungen zu speichern.
+1. Klicken Sie zum Speichern der Aktualisierungen auf **[!UICONTROL Speichern und schließen]**.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Führen Sie folgende Schritte aus, um Datenquellen zu einem vorhandenen Formular
 
 Das [!UICONTROL Formulardatenmodell] nutzt [kontextabhängige Konfigurationen von Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=de), um verschiedene Datenquellenparameter für die Verbindung mit Datenquellen für verschiedene [!DNL Experience Manager]-Ausführungsmodi zu unterstützen.
 
-Wenn das [!UICONTROL Formulardatenmodell] Cloud-Konfigurationen zum Speichern von Parametern verwendet, die beim Einchecken und Bereitstellen über die Versionskontrolle (Cloud Manager GIT-Repository) eine Cloud-Konfiguration mit denselben Parametern für alle Ausführungsmodi (Entwicklung, Staging und Produktion) erstellen. Für Anwendungsfälle, in denen unterschiedliche Datensätze für Test- und Produktionsumgebungen benötigt werden, verwenden wir jedoch Datenquellenparameter (z. B. die Datenquellen-URL) für verschiedene [!DNL Experience Manager] Ausführungsmodi.
+Wenn das [!UICONTROL Formulardatenmodell] Cloud-Konfigurationen zum Speichern von Parametern verwendet, die beim Einchecken und Bereitstellen über die Versionskontrolle (Cloud Manager GIT-Repository) eine Cloud-Konfiguration mit denselben Parametern für alle Ausführungsmodi (Entwicklung, Staging und Produktion) erstellen. Für Anwendungsfälle, in denen unterschiedliche Datensätze für Test- und Produktionsumgebungen benötigt werden, verwenden wir jedoch Datenquellenparameter (z. B. die Datenquellen-URL) für unterschiedliche [!DNL Experience Manager]-Ausführungsmodi.
 
 Dazu müssen Sie eine OSGi-Konfiguration erstellen, die Datenquellenparameter-Wert-Paare enthält. Dadurch wird dasselbe Paar aus der [!UICONTROL Formulardatenmodell]-Cloud-Konfiguration zur Laufzeit überschrieben. Da die OSGi-Konfigurationen diese Ausführungsmodi standardmäßig unterstützen, können Sie einen Datenquellenparameter basierend auf dem Ausführungsmodus in andere Werte überschreiben.
 
@@ -114,7 +114,7 @@ So aktivieren Sie bereitstellungsspezifische Cloud-Konfigurationen im [!UICONTRO
 
 1. Erstellen Sie eine kontextabhängige Apache Sling-Konfiguration. So erstellen Sie die OSGi-Konfiguration:
    1. **Richten Sie die OSGi-Konfigurationsdateien im [!DNL Experience Manager]-Projektarchetypen ein.**
-Erstellen von OSGi Factory-Konfigurationsdateien mit PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Erstellen Sie eine Datei mit demselben Namen unter jedem Ausführungsmodusordner, in dem die Werte pro Ausführungsmodus geändert werden müssen. Weitere Informationen finden Sie unter [Konfigurieren von OSGi für [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+Erstellen von OSGi-Werkskonfigurationsdateien mit PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Erstellen Sie eine Datei mit demselben Namen unter jedem Ausführungsmodusordner, in dem die Werte pro Ausführungsmodus geändert werden müssen. Weitere Informationen finden Sie unter [Konfigurieren von OSGi für [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
    1. **Legen Sie das OSGi-Konfigurations-JSON fest.** So verwenden Sie den Apache Sling Context-Aware Configuration Override Provider (kontextabhängiger Apache Sling-Konfigurationsüberschreibungs-Anbieter):
       1. Wählen Sie in `/system/console/configMgr` der lokalen Entwicklungsinstanz die werkseitige OSGi-Konfiguration mit dem Namen **[!UICONTROL Apache Sling Context-Aware Configuration Override Provider: OSGi-Konfiguration]** aus.

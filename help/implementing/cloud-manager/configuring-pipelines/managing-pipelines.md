@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre vorhandenen Pipelines verwalten, einschl
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '934'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -41,11 +41,11 @@ Das Fenster **Pipelines** zeigt eine vollständige Liste aller Pipelines für da
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Im **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** angezeigt, wählen Sie das Programm aus.
+1. Wählen Sie auf dem Bildschirm **[Meine Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** das Programm aus.
 
 1. Wählen Sie auf der Seite **Programmübersicht** die Registerkarte **Pipelines** aus, um zum Fenster **Pipelines** zu wechseln.
 
-1. Hier sehen Sie eine Liste aller Pipelines für das Programm und starten und stoppen die Pipeline-Ausführung wie in der **Pipelines Card**.
+1. Hier können Sie eine Liste aller Pipelines für das Programm sehen und die Ausführung von Pipelines starten und stoppen, wie Sie es in der **Pipelines-Karte** tun würden.
 
 Wenn Sie während der Pipeline-Ausführung mit der Maus über **Status** gehen, werden Details der Ausführung angezeigt.
 

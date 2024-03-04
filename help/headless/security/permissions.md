@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über verschiedene Berechtigungen und Überlegung
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '811'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Der Autoren-Service, mit dem interne Anwender Inhalte erstellen, verwalten und v
 
 Als Best Practice sollten Berechtigungen für Gruppen in AEM festgelegt werden. Diese Gruppen werden auch als lokale Gruppen bezeichnet und können in der AEM-Autorenumgebung verwaltet werden.
 
-Die einfachste Möglichkeit, die Gruppenmitgliedschaft zu verwalten, besteht darin, Adobe Identity Management System (IMS)-Gruppen zu verwenden und [IMS-Gruppen für lokale AEM-Gruppen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem) zuzuweisen.
+Die einfachste Möglichkeit, die Gruppenmitgliedschaft zu verwalten, besteht darin, Adobe Identity Management System (IMS)-Gruppen zu verwenden und [IMS-Gruppen für lokale AEM-Gruppen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=de#managing-permissions-in-aem) zuzuweisen.
 
 ![Berechtigungsfluss der Admin Console](assets/admin-console-aem-group-permissions.png)
 

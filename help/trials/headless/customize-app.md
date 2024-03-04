@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1017'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Nachdem Sie jetzt wissen, wie eine Überschrift in der App geändert wird, versu
 
 1. Kehren Sie von der Vorschau zur Browser-Registerkarte des Inhaltsfragment-Editors zurück.
 
-1. Sie müssen zur richtigen Stelle im Inhaltsfragment-Editor zurückkehren. Die Breadcrumbs oben links im Editor zeigen an, wo Sie sich in der Inhaltshierarchie befinden. Auswählen **Mtn Biker in Canyon** in den Breadcrumbs, um zu dieser Seite zurückzukehren.
+1. Sie müssen zur richtigen Stelle im Inhaltsfragment-Editor zurückkehren. Die Breadcrumbs oben links im Editor zeigen an, wo Sie sich in der Inhaltshierarchie befinden. Wählen Sie in den Breadcrumbs den Eintrag **Mtn Biker in Canyon**, um zu dieser Seite zurückzukehren.
 
    ![Breadcrumbs](assets/do-not-localize/swap-image-2.png)
 

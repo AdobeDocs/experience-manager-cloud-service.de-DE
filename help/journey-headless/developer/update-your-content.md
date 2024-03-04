@@ -3,9 +3,9 @@ title: Aktualisieren Ihres Inhalts über AEM Assets-APIs
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie mit der REST-API auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese aktualisieren können.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 source-git-commit: 31b0eecd01ee319aaf700505293530fec129b00f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1061'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -262,7 +262,7 @@ Nutzung erfolgt über:
 
 `GET /{cfParentPath}/{cfName}.json`
 
-Beispiel:
+Zum Beispiel:
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
@@ -281,7 +281,7 @@ Nutzung erfolgt über:
 
 Der Hauptteil muss eine JSON-Darstellung des zu erstellenden Inhaltsfragments enthalten – einschließlich des anfänglichen Inhalts, der für Inhaltsfragmentelemente festgelegt werden soll. Sie müssen die Eigenschaft `cq:model` festlegen und auf ein gültiges Inhaltsfragmentmodell verweisen. Andernfalls tritt ein Fehler auf. Außerdem müssen Sie eine Kopfzeile vom Typ `Content-Type` hinzufügen, für die `application/json` festgelegt ist.
 
-### Aktualisieren {#update}
+### Update {#update}
 
 Nutzung erfolgt über
 

@@ -1,40 +1,40 @@
 ---
 Title: How to configure submit to Rest Endpoint submit action for an Adaptive Form?
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
-keywords: AEM Forms REST Endpoint, An REST-Endpunkt übermitteln, Daten an REST-URL posten, REST-Endpoint-Aktion konfigurieren
+keywords: AEM Forms REST-Endpunkt, An REST-Endpunkt übermitteln, Daten an REST-URL posten, REST-Endpoint-Aktion konfigurieren
 feature: Adaptive Forms, Core Components
 source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '550'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 
-# Konfigurieren einer Sendeaktion &quot;Adaptives Formular für REST-Endpunkt&quot;
+# Konfigurieren eines adaptiven Formulars für die REST-Endpunkt-Übermittlungsaktion
 
-Verwenden Sie die **[!UICONTROL An REST-Endpunkt übermitteln]** Aktion zum Posten der gesendeten Daten an eine REST-URL. Die URL kann sich auf einem internen (dem Server, auf dem das Formular gerendert wird) oder auf einem externen Server befinden.
+Verwenden Sie die Aktion **[!UICONTROL An REST-Endpunkt übermitteln]**, um die übertragenen Daten an eine Rest-URL zu veröffentlichen. Die URL kann sich auf einem internen Server (dem Server, auf dem das Formular gerendert wird) oder auf einem externen Server befinden.
 
-AEM as a Cloud Service bietet verschiedene vordefinierte Übermittlungsaktionen für die Verarbeitung von Formularübermittlungen. Weitere Informationen zu diesen Optionen finden Sie im Abschnitt [Übermittlungsaktion für adaptive Formulare](/help/forms/configure-submit-actions-core-components.md)  Artikel.
+AEM as a Cloud Service bietet verschiedene vordefinierte Übermittlungsaktionen für die Verarbeitung von Formularübermittlungen. Weitere Informationen zu diesen Optionen finden Sie im Artikel [Übermittlungsaktion für adaptive Formulare](/help/forms/configure-submit-actions-core-components.md).
 
 ## Vorteile
 
-Einige Vorteile der Konfiguration der **[!UICONTROL An REST-Endpunkt übermitteln]** Übermittlungsaktion für Adaptive Forms sind:
+Einige Vorteile der Konfiguration der Übermittlungsaktion **[!UICONTROL An REST-Endpunkt übermitteln]** für adaptive Formulare sind:
 
 * Sie ermöglicht die nahtlose Integration von Formulardaten in externe Systeme und Dienste über RESTful-APIs.
-* Es bietet Flexibilität bei der Verarbeitung von Datenübermittlungen aus Adaptive Forms und unterstützt dynamische und komplexe Datenstrukturen.
-* Es unterstützt die dynamische Zuordnung von Formularfeldern zu Parametern in der REST-Endpunkt-URL, sodass anpassbare und anpassbare Datenübermittlungen möglich sind.
+* Sie bietet Flexibilität bei der Verarbeitung von Datenübermittlungen aus adaptiven Formularen und unterstützt dynamische und komplexe Datenstrukturen.
+* Sie unterstützt die dynamische Zuordnung von Formularfeldern zu Parametern in der REST-Endpunkt-URL, was eine anpassbare und benutzerdefinierte Datenübermittlung ermöglicht.
 
 
-## Konfigurieren der Sendeaktion &quot;An REST-Endpunkt übermitteln&quot; {#steps-to-configure-submit-to-restendpoint-submit-action}
+## Konfigurieren der Übermittlungsaktion als „An REST-Endpunkt übermitteln“ {#steps-to-configure-submit-to-restendpoint-submit-action}
 
-So konfigurieren Sie die Sendeaktion:
+So konfigurieren Sie die Übermittlungsaktion:
 
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
 1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Übermittlung]**.
-1. Aus dem **[!UICONTROL Übermittlungsaktion]** Dropdown-Liste auswählen **[!UICONTROL An REST-Endpunkt übermitteln]**.
-   ![Aktionskonfiguration für &quot;An REST-Endpunkt übermitteln&quot;](/help/forms/assets/submit-action-restendpoint.png)
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** die Option **[!UICONTROL An REST-Endpunkt übermitteln]**.
+   ![Aktionskonfiguration für „An REST-Endpunkt übermitteln“](/help/forms/assets/submit-action-restendpoint.png)
 
    Um Daten auf einem internen Server zu senden, geben Sie den Pfad der Ressource an. Die Daten werden an den Pfad der Ressource gesendet. Beispiel: `/content/restEndPoint`. Für solche Sende-Anfragen werden die Authentifizierungsinformationen der Versandanfrage verwendet.
 
@@ -55,7 +55,7 @@ So konfigurieren Sie die Sendeaktion:
 
    In diesem Beispiel speichert `data` die XML-Daten, und `att` speichert Anlagendaten.
 
-   Die Übermittlungsoption **[!UICONTROL An REST-Endpunkt übermitteln]** wird verwendet, wenn Sie die im Formular eingetragenen Daten zu einer konfigurierten Bestätigungsseite im Rahmen der HTTP GET-Anforderung weiterleiten möchten. Sie können den Namen des anzufragenden Felds hinzufügen. Das Format der Anfrage lautet:
+   Die Übermittlungsoption **[!UICONTROL An REST-Endpunkt übermitteln]** wird verwendet, wenn Sie die im Formular eingetragenen Daten zu einer konfigurierten Bestätigungsseite im Rahmen der HTTP GET-Anforderung weiterleiten möchten. Sie können den Namen der anzufordernden Felder hinzufügen. Das Format der Anfrage lautet:
 
    `{fieldName}={request parameter name}`
 
@@ -69,8 +69,8 @@ So konfigurieren Sie die Sendeaktion:
 
 ## Best Practices
 
-* Stellen Sie beim Senden von Daten an einen externen Server sicher, dass die URL sicher ist, und konfigurieren Sie den Pfad, um die POST-Anforderung anonym zu verarbeiten, um vertrauliche Informationen zu schützen.
-* Alle Felder müssen über verschiedene Elementnamen verfügen, um als Parameter in der REST-URL weitergeleitet zu werden, auch dann, wenn die Felder in verschiedenen Bereichen platziert sind.
+* Stellen Sie beim Senden von Daten an einen externen Server sicher, dass die URL sicher ist, und konfigurieren Sie den Pfad, um die POST-Anforderung anonym zu verarbeiten und dadurch vertrauliche Informationen zu schützen.
+* Alle Felder müssen über verschiedene Elementnamen verfügen, um als Parameter in der REST-URL weitergeleitet zu werden, und zwar auch dann, wenn die Felder in verschiedene Bereiche platziert wurden.
 
 ## Ähnliche Artikel
 

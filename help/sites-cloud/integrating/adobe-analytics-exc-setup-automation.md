@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '719'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -44,15 +44,15 @@ Die Umgebung sollte jetzt für die Automatisierung der Einrichtung von Experienc
 ## Einrichtung
 
 1. Navigieren Sie zu **Sites** und wählen Sie den Stamm der Site aus, die in Adobe Analytics integriert werden soll.
-1. Erweitern Sie das Menü der Seitenleiste und wählen Sie **Einrichten von Analytics**.
+1. Erweitern Sie das Menü der Seitenleiste und wählen Sie **Analytics einrichten**.
 
    Dies ist eine neue Option in der Seitenleiste, durch die sich ein Bedienfeld öffnet, das Steuerelemente und Status für die Automatisierung der Experience Cloud-Einrichtung bereitstellt.
-1. Wählen Sie die **Integration von Analytics** Schaltfläche.
+1. Wählen Sie die Schaltfläche **Analytics integrieren**.
 1. Geben Sie im daraufhin angezeigten Dialogfeld einen Namen für die **Report Suite-ID** ein.
 
    Diese Zeichenfolge wird verwendet, um in Adobe Analytics eine neue [Report Suite-ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=de) als Datenspeicher für die Analysedaten für die ausgewählte AEM-Site zu erstellen. An die angegebene Zeichenfolge werden Umgebungs- und Ebenen-IDs angehängt, um die Eindeutigkeit sicherzustellen.
 
-1. Aktualisieren Sie die Seite und das Bedienfeld und wählen Sie **Überprüfen des Integrationsstatus** , um den Status der Automatisierung zu überprüfen.
+1. Aktualisieren Sie die Seite und das Bedienfeld und wählen Sie **Integrationsstatus überprüfen**, um den Status der Automatisierung zu überprüfen.
 
    Die automatisierte Einrichtung erfolgt asynchron. Das **Überprüfen des Integrationsstatus** zeigt den aktuellen Status der Integration an.
 
@@ -75,7 +75,7 @@ Navigieren Sie dann zu Adobe Analytics, um die Daten anzuzeigen, die von den Ere
 
 1. Navigieren Sie in derselben IMS-Organisation wie Ihre AEM-Site zu Adobe Analytics.
 1. Erstellen Sie einen neuen Übersichtsbericht für AEM Sites, indem Sie zu **Berichte** > **Interaktion** > **Adobe Experience Manager** > **Site-Leistungsübersicht** navigieren.
-1. Auswählen **Bericht öffnen**.
+1. Wählen Sie **Bericht öffnen**.
 1. Wählen Sie die **Report Suite-ID**, die zu dem Namen der in der vorherigen Übung verwendeten Report Suite gehört.
 1. Sehen Sie sich an, wie die Analysedaten im Laufe der Zeit in die neue Vorlage fließen.
 

@@ -3,9 +3,9 @@ title: Registrierung, Anmeldung und Anwenderprofil
 description: In diesem Abschnitt erfahren Sie mehr über Registrierung, Anmeldung, Anwenderdaten und Gruppensynchronisierung für AEM as a Cloud Service.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1132'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ Es gibt verschiedene Ansätze zur Beibehaltung von Daten, abhängig von der Art 
 Informationen zum Anwenderprofil können auf zwei Arten geschrieben und gelesen werden:
 
 * Server-seitige Verwendung mit der `com.adobe.granite.security.user`-Schnittstelle „UserPropertiesManager“, die Daten unter dem Knoten des Anwenders in `/home/users` platziert. Stellen Sie sicher, dass Seiten, die pro Benutzer eindeutig sind, nicht zwischengespeichert werden.
-* Client-seitige Verwendung von ContextHub, wie in [der Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization) beschrieben.
+* Client-seitige Verwendung von ContextHub, wie in [der Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=de#personalization) beschrieben.
 
 ### Datenspeicher von Drittanbietern {#third-party-data-stores}
 
@@ -104,7 +104,7 @@ Der Echtzeitzugriff auf Dienste von Drittanbietern zum Abruf von Profilattribute
 
 ## Berechtigungen (geschlossene Benutzergruppen) {#permissions-closed-user-groups}
 
-Zugriffsrichtlinien auf Veröffentlichungsebene, auch geschlossene Benutzergruppen genannt, werden in der AEM-Authoring-Umgebung wie [hier beschrieben](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages) definiert. Um den Zugriff auf bestimmte Abschnitte oder Seiten einer Website für einige Benutzende zu beschränken, wenden Sie die geschlossenen Benutzergruppen nach Bedarf mithilfe der AEM-Authoring-Umgebung wie hier beschrieben an, und replizieren Sie sie auf der Veröffentlichungsebene.
+Zugriffsrichtlinien auf Veröffentlichungsebene, auch geschlossene Benutzergruppen genannt, werden in der AEM-Authoring-Umgebung wie [hier beschrieben](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=de#applying-your-closed-user-group-to-content-pages) definiert. Um den Zugriff auf bestimmte Abschnitte oder Seiten einer Website für einige Benutzende zu beschränken, wenden Sie die geschlossenen Benutzergruppen nach Bedarf mithilfe der AEM-Authoring-Umgebung wie hier beschrieben an, und replizieren Sie sie auf der Veröffentlichungsebene.
 
 * Wenn sich Anwender mithilfe von SAML bei einem Identitätsanbieter anmelden, identifiziert der Authentifizierungs-Handler die Gruppenmitgliedschaften des Anwenders (die mit den geschlossenen Anwendergruppen auf der Veröffentlichungsebene übereinstimmen sollten) und behält die Verknüpfung zwischen dem Anwender und der Gruppe über einen Repository-Datensatz bei.
 * Wenn die Anmeldung ohne Einbindung eines Identitätsanbieters erfolgt, kann der benutzerdefinierte Code dieselben Repository-Strukturbeziehungen anwenden.
@@ -113,7 +113,7 @@ Unabhängig von der Anmeldung kann benutzerdefinierter Code auch die Gruppenmitg
 
 ## Datensynchronisierung {#data-synchronization}
 
-Website-Endanwender erwarten bei jeder Website-Anfrage ein konsistentes Erlebnis. Das gilt auch dann, wenn sie sich mit einem anderen Browser anmelden, selbst wenn sie ihnen nicht bekannt sind, werden sie an verschiedene Server-Knoten der Infrastruktur auf Veröffentlichungsebene weitergeleitet. AEM as a Cloud Service erreicht dies durch die schnelle Synchronisierung der `/home` Ordnerhierarchie (Benutzerprofilinformationen, Gruppenmitgliedschaft usw.) über alle Knoten der Veröffentlichungsstufe hinweg.
+Endbenutzende von Websites erwarten bei jeder Website-Anfrage ein konsistentes Erlebnis. Das gilt auch dann, wenn sie sich mit einem anderen Browser anmelden: Selbst wenn sie ihm nicht bekannt sind, werden sie an verschiedene Server-Knoten der Infrastruktur auf Veröffentlichungsebene weitergeleitet. AEM as a Cloud Service erreicht dies durch eine schnelle Synchronisierung der `/home`-Ordnerhierarchie (Benutzerprofilinformationen, Gruppenmitgliedschaft usw.) für alle Knoten der Veröffentlichungsebene.
 
 Anders als bei anderen AEM-Lösungen verfolgt die Anwender- und Gruppenmitgliedssynchronisierung in AEM as a Cloud Service keinen Point-to-Point-Messaging-Ansatz, sondern einen Ansatz, der auf Veröffentlichen/Abonnieren ausgelegt ist und keine Konfiguration durch den Kunden erfordert.
 

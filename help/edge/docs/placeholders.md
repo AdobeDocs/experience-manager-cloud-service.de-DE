@@ -1,11 +1,12 @@
 ---
-description: Auf den meisten Websites gibt es Zeichenfolgen oder Variablen, die auf der gesamten Site verwendet werden. Insbesondere bei Sites, die mehrere Sprachen unterstützen müssen, ist es nicht empfehlenswert, solche Werte zu hartcodieren. Stattdessen können Platzhalter zentral verwendet und verwaltet werden.
+description: Bei den meisten Websites gibt es Zeichenfolgen oder Variablen, die auf der gesamten Site verwendet werden. Insbesondere bei Sites, die mehrere Sprachen unterstützen müssen, sollten diese Werte nicht hartkodiert werden. Stattdessen können Platzhalter verwendet und zentral verwaltet werden.
 title: Platzhalter
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 392e2323-8d6f-40eb-a68e-51baeee7fc2d
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '45'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

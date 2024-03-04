@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie ein Formulardatenmodell in AEM Forms erstelle
 feature: Adaptive Forms, Core Components
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '884'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Mit lokalisierten Formularen können Sie eine größere Zielgruppe über Länder
 
 Der Service für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adaptiven Formulare und [Datensatzdokumente](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service ist für die Verwendung einer Testversion von Microsoft Translator für die maschinelle Übersetzung vorkonfiguriert. Führen Sie zum Aktivieren des Service für Ihre adaptiven Formulare und Datensatzdokumente folgende Schritte durch:
 
-1. Wählen Sie auf der AEM Forms-Benutzeroberfläche ein Formular aus und wählen Sie die **[!UICONTROL Wörterbuch hinzufügen]** -Option.
+1. Wählen Sie in der Benutzeroberfläche von AEM Forms ein Formular und dann die Option **[!UICONTROL Wörterbuch hinzufügen]** aus.
 1. Auf dem Bildschirm „Wörterbuch zum Übersetzungsprojekt hinzufügen“ für die Option **[!UICONTROL Projekt]**
 
    * Wählen Sie zum Erstellen eines Übersetzungsprojekts die Option **[!UICONTROL Neues Übersetzungsprojekt erstellen]** aus und legen Sie im Feld **Projekttitel** den Titel fest. Beispiel: `Government Reference Site - German locale.`
@@ -61,7 +61,7 @@ Für die Übersetzung wird den professionellen Übersetzerinnen oder Übersetzer
 
 Führen Sie die folgenden Schritte zum Lokalisieren eines Formulars und seines Datensatzdokuments mit menschlicher Übersetzung durch:
 
-1. Wählen Sie auf der AEM Forms-Benutzeroberfläche ein Formular aus und wählen Sie die **[!UICONTROL Wörterbuch hinzufügen]** -Option.
+1. Wählen Sie in der Benutzeroberfläche von AEM Forms ein Formular und dann die Option **[!UICONTROL Wörterbuch hinzufügen]** aus.
 1. Auf dem Bildschirm „Wörterbuch zum Übersetzungsprojekt hinzufügen“ für die Option **[!UICONTROL Projekt]**
 
    * Wählen Sie zum Erstellen eines Übersetzungsprojekts die Option **[!UICONTROL Neues Übersetzungsprojekt erstellen]** aus und legen Sie im Feld **Projekttitel** den Titel fest. Beispiel: `Government Reference Site - German locale.`

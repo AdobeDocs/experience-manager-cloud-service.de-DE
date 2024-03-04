@@ -9,9 +9,9 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1066'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ Das Add-on und die [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-c
 
 Diese Konfiguration kann mithilfe der CIF-Cloud-Service-Konfiguration wie folgt für das Projekt angepasst werden:
 
-1. Gehen Sie AEM zu Tools > Cloud Service > CIF Konfiguration.
+1. Gehen Sie in AEM zu „Tools“ > „Cloud-Services“ > „CIF-Konfiguration“.
 
 2. Wählen Sie die Commerce-Konfiguration aus, die Sie ändern möchten.
 

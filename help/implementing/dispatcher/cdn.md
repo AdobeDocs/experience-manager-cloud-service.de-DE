@@ -1,12 +1,12 @@
 ---
 title: CDN in AEM as a Cloud Service
-description: Erfahren Sie, wie Sie das AEM-verwaltete CDN verwenden und wie Sie Ihr eigenes CDN auf das AEM verwaltete CDN verweisen.
+description: Erfahren Sie, wie Sie das AEM-verwaltete CDN verwenden und wie Sie Ihr eigenes CDN auf das AEM-verwaltete CDN verweisen lassen.
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
-workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: '1031'
+ht-degree: 100%
 
 ---
 

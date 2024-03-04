@@ -3,9 +3,9 @@ title: Konfigurieren von Übersetzungsregeln für Headless-Inhalte
 description: Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '912'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ In der Benutzeroberfläche der **Übersetzungskonfiguration** stehen verschieden
    ![Kontext hinzufügen](assets/add-translation-context.png)
 1. Verwenden Sie den Pfad-Browser, um den erforderlichen Pfad auszuwählen und wählen Sie **Bestätigen** aus, um ihn zu speichern. Denken Sie daran, dass Inhaltsfragmente, die Headless-Inhalte enthalten, sich im Allgemeinen unter `/content/dam/<your-project>` befinden.
    ![Pfad auswählen](assets/select-context.png)
-1. Wählen Sie den von Ihnen erstellten Kontext aus und wählen Sie dann **Bearbeiten**. Dadurch wird der **Editor für Übersetzungsregeln** geöffnet, in dem die Eigenschaften konfiguriert werden können.
+1. Wählen Sie den erstellten Kontext und dann **Bearbeiten** aus. Dadurch wird der **Editor für Übersetzungsregeln** geöffnet, in dem die Eigenschaften konfiguriert werden können.
    ![Editor für Übersetzungsregeln](assets/translation-rules-editor.png)
 1. Standardmäßig werden alle Konfigurationen vom übergeordneten Pfad übernommen, in diesem Fall `/content/dam`. Deaktivieren Sie die Option **Übernehmen von`/content/dam`**, um der Konfiguration zusätzliche Felder hinzuzufügen.
 1. Ist diese Option deaktiviert, fügen Sie im Abschnitt **Allgemein** der Liste die Eigenschaftsnamen der Inhaltsfragmentmodelle hinzu, die Sie [zuvor als zu übersetzende Felder identifiziert haben](getting-started.md#content-models).
