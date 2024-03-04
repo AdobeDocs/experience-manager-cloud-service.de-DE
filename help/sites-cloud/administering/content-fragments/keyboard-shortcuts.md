@@ -1,13 +1,13 @@
 ---
 title: Tastaturbefehle für die Inhaltsfragmentkonsole
-description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung, darunter eine Auswahl zur Verwaltung von Inhaltsfragmenten.
+description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung, darunter auch eine Auswahl für die Verwaltung von Inhaltsfragmenten.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '223'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 88%
 
 In der Inhaltsfragmentkonsole stehen verschiedene Tastaturbefehle zur Verfügung.
 
-In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für [Seiten bearbeiten](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), andere zu [allgemeine Verwendung von Konsolen](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
+In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für die [Bearbeitung von Seiten](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), andere für die [Verwendung von Konsolen](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >

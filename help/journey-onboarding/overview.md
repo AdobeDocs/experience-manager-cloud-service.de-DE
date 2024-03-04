@@ -6,7 +6,7 @@ recommendations: noDisplay
 source-git-commit: 98618765b405316b18110182c221ddd968c70e96
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -17,9 +17,9 @@ Herzlichen Glückwunsch zur Wahl von AEM as a Cloud Service! Dieses Dokument ist
 
 ## Einführung {#introduction}
 
-Adobe Experience Manager ist eine leistungsstarke Suite zusammenstellbarer Inhaltsdienste, die schnell wirkungsvolle, personalisierte Erlebnisse für alle Kanäle bereitstellen und so Inhalte für alle freigeben. **Edge Delivery Services** ist die neueste Innovation in Adobe Experience Manager, die extrem schnelle Inhalte ermöglicht und außergewöhnliche Erlebnisse bietet. Erfahren Sie mehr über die ersten Schritte mit Edge Delivery Services unter [diese Seite](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=de). Informationen zur Verwendung von Edge Delivery Services finden Sie unter [Entwickler-Tutorial](https://www.hlx.live/developer/tutorial) Seite.
+Adobe Experience Manager ist eine leistungsstarke Suite zusammenstellbarer Inhaltsdienste, die schnell wirkungsvolle, personalisierte Erlebnisse für alle Kanäle bereitstellen und so Inhalte für alle freigeben. **Edge Delivery Services** ist die neueste Innovation in Adobe Experience Manager, die extrem schnelle Inhalte ermöglicht und außergewöhnliche Erlebnisse bietet. Mehr über die ersten Schritte mit Edge Delivery Services erfahren Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=de). Informationen zur Verwendung von Edge Delivery Services finden Sie auf der Seite [Entwicklertutorial](https://www.hlx.live/developer/tutorial).
 
-Onboarding ist der Vorgang, bei dem ein benannter Systemadministrator AEM as a Cloud Service für Ihre Organisation einrichtet. Dieser Prozess umfasst die anfängliche Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzenden zu Rollen auf der Grundlage ihrer Aufgabenstellung. Dadurch kann sich jedes Mitglied anmelden und auf seine Ressourcen in AEM as a Cloud Service zugreifen.
+Onboarding ist der Vorgang, bei dem benannte Systemadmins AEM as a Cloud Service für Ihre Organisation einrichten. Dieser Prozess umfasst die anfängliche Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzenden zu Rollen auf der Grundlage ihrer Aufgabenstellung. Dadurch kann sich jedes Mitglied anmelden und auf seine Ressourcen in AEM as a Cloud Service zugreifen.
 
 ![Die Onboarding-Tour](/help/journey-onboarding/assets/onboarding-journey.png)
 
@@ -69,7 +69,7 @@ Dieses Onboarding-Handbuch zeigt den vollständigen Prozess des Onboarding als S
 >
 >Wenn Sie neu bei AEM as a Cloud Service sind, aber bereits mit AEM vertraut sind und von On-Premise- oder Adobe Managed Services migrieren, sollten Sie sich die [Migrations-Tour zu AEM as a Cloud Service](/help/journey-migration/getting-started.md) ansehen.
 
-## Übersicht über Onboarding-Tour {#overview}
+## Übersicht der Onboarding-Tour {#overview}
 
 In den folgenden Artikeln werden die wichtigsten Onboarding-Konzepte detailliert beschrieben und Sie erhalten ein grundlegendes Wissen über AEM as a Cloud Service. Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Daher empfiehlt Adobe, wenn Sie neu im Onboarding sind, am Anfang zu beginnen und schrittweise vorzugehen.
 

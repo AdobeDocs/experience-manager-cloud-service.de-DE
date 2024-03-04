@@ -5,7 +5,7 @@ exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '854'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -55,7 +55,7 @@ Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie z
 
    ![Stoppsymbol](assets/async-stop-icon.png)
 
-1. Um zusätzliche Details anzuzeigen, beispielsweise eine Beschreibung und Protokolle, wählen Sie den Vorgang aus und klicken Sie auf **[!UICONTROL Öffnen]** aus der Symbolleiste.
+1. Um zusätzliche Details anzuzeigen, beispielsweise Beschreibung und Protokolle, wählen Sie den Vorgang aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Öffnen]**.
 
    ![Öffnen-Symbol](assets/async-open-icon.png)
 

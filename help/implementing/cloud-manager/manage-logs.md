@@ -5,7 +5,7 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: 178af74512e74ff401588b68c73fa4661acec704
 workflow-type: tm+mt
 source-wordcount: '346'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ Gehen Sie wie folgt vor, um Protokolle herunterzuladen:
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Im **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** angezeigt, wählen Sie das Programm aus.
+1. Wählen Sie im Bildschirm **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** das Programm aus.
 
 1. Navigieren Sie von der Seite **Überblick** zur Karte **Umgebungen**.
 

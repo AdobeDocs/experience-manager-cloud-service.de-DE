@@ -6,7 +6,7 @@ exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '2610'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -168,7 +168,7 @@ Auf ähnliche Weise können Sie die Datei `variable.scss` verwenden, um Schriftf
 
 ##### Festlegen von Stilen auf Komponentenebene {#component-based-customization}
 
-Sie können auch Schriftart, Farbe, Größe und andere CSS-Eigenschaften einer bestimmten Kernkomponente des adaptiven Formulars ändern. Beispiel: Schaltfläche, Kontrollkästchen, Container, Fußzeile und mehr. Sie können die Schaltfläche oder das Kontrollkästchen formatieren, indem Sie die CSS-Datei der jeweiligen Komponente bearbeiten und sie an den Stil Ihrer Organisation anpassen. So passen Sie einen Stil einer Komponente an:
+Sie können auch Schriftart, Farbe, Größe und andere CSS-Eigenschaften einer bestimmten Kernkomponente des adaptiven Formulars ändern. Beispiele: Schaltfläche, Kontrollkästchen, Container, Fußzeile usw. Sie können die Schaltfläche oder das Kontrollkästchen formatieren, indem Sie die CSS-Datei der jeweiligen Komponente bearbeiten und sie an den Stil Ihrer Organisation anpassen. So passen Sie einen Stil einer Komponente an:
 
 1. Öffnen Sie die Datei `<your-theme-sources>/src/components/<component>/<component.scss>` zur Bearbeitung. Um zum Beispiel die Schriftfarbe der Schaltflächenkomponente zu ändern, öffnen Sie die Datei `<your-theme-sources>/src/components/button/button.scss`.
 1. Ändern Sie die Werte entsprechend Ihren Anforderungen. Ändern Sie beispielsweise die Farbe der Schaltflächenkomponente beim Bewegen des Mauszeigers in `green`, ändern Sie den Wert der Eigenschaft `color: $white` in der Klasse `cmp-adaptiveform-button__widget:hover` in den Hex-Code `#12B453` oder eine andere Schattierung von `green`. Der endgültige Code sieht wie folgt aus:
@@ -379,7 +379,7 @@ Schritte zum Anwenden eines Designs auf ein adaptives Formular:
 
 1. Melden Sie sich bei Ihrer AEM Forms-Autoreninstanz an.
 
-1. Auswählen **Adobe Experience Manager** > **Forms** > **Forms und Dokumente**.
+1. Wählen Sie **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**.
 
 1. Klicken Sie auf **Erstellen** > **Adaptive Formulare**. Der Assistent zum Erstellen des adaptiven Formulars wird geöffnet.
 

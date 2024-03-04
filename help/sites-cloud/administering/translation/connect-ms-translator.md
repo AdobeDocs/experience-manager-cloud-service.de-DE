@@ -7,7 +7,7 @@ exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Erstellen Sie eine Konfiguration für den [Microsoft Translator](https://www.mic
 | Eigenschaft | Beschreibung |
 |---|---|
 | Übersetzungsetikett | Der Anzeigename für den Übersetzungs-Service |
-| Übersetzungszuteilung | (Optional) Bei benutzergenerierten Inhalten wird die Attribution neben übersetztem Text angezeigt, z. B. `Translations by Microsoft` |
+| Übersetzungszuteilung | (Optional) Bei nutzergenerierten Inhalten die Zuteilung, die neben übersetzten Texten angezeigt wird, beispielsweise `Translations by Microsoft` |
 | Workspace-ID | (Optional) Die ID Ihrer angepassten Microsoft Translator-Engine, die verwendet werden soll |
 | Mitgliedschaftsschlüssel | Ihr Mitgliedschaftsschlüssel für Microsoft Translator |
 

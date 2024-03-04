@@ -80,7 +80,7 @@ Sie benötigen folgende Software, um eine lokale Entwicklungsumgebung einzuricht
 
 ### Herunterladen der neuesten Software-Version von Software Distribution {#software-distribution}
 
-Herunterladen der neuesten Version von Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms-Funktionsarchiv (AEM Forms-Add-on), Forms-Referenzelemente oder Forms Designer von [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html):
+Herunterladen der neuesten Version von Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms-Funktionsarchiv (AEM Forms-Add-on), Forms-Referenzelemente oder Forms Designer von [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html):
 
 1. Melden Sie sich bei <https://experience.adobe.com/#/downloads> mit Ihrer Adobe ID an.
 
@@ -114,7 +114,7 @@ Während QuickStart eine lokale Entwicklungsumgebung bietet, sind hier nicht all
 
 Installieren und Konfigurieren einer lokalen Experience Manager-Umgebung:
 
-* [Herunterladen und Extrahieren](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) des [!DNL Adobe Experience Manager] as a Cloud Service SDK
+* [Herunterladen und Extrahieren](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html) des [!DNL Adobe Experience Manager] as a Cloud Service SDK
 * [Einrichten einer Autoreninstanz](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=de#set-up-local-aem-author-service)
 * [Einrichten einer Veröffentlichungsinstanz](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=de#set-up-local-aem-publish-service)
 
@@ -126,7 +126,7 @@ Führen Sie folgende Schritte in der aufgeführten Reihenfolge aus, um Forms-Arc
 
 Das Funktionsarchiv für Adobe Experience Manager Forms as a Cloud Service bietet Tools zum Erstellen, Gestalten und Optimieren von adaptiven Formularen in der lokalen Entwicklungsumgebung. Installieren Sie das Paket, um ein adaptives Formular zu erstellen, und verwenden Sie verschiedene andere Funktionen von [!DNL AEM Forms]. Installieren des Pakets:
 
-1. Laden Sie das neueste [!DNL AEM Forms]-Archiv für Ihr Betriebssystem aus [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) herunter und extrahieren Sie es.
+1. Laden Sie das neueste [!DNL AEM Forms]-Archiv für Ihr Betriebssystem aus [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html) herunter und extrahieren Sie es.
 
 1. Navigieren Sie zum Verzeichnis „crx-quickstart/install“. Wenn der Ordner nicht vorhanden ist, erstellen Sie ihn.
 

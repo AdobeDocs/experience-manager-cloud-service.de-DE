@@ -1,11 +1,11 @@
 ---
 title: Inhaltsfragmentmodelle (Assets – Inhaltsfragmente)
-description: Erfahren Sie, wie Inhaltsfragmentmodelle als Grundlage für Ihren Headless Content in AEM dienen, sodass Sie Inhaltsfragmente mit strukturierten Inhalten erstellen können.
+description: Erfahren Sie, inwiefern Inhaltsfragmentmodelle als Grundlage für Ihre Headless-Inhalte in AEM dienen und es Ihnen ermöglichen, Inhaltsfragmente mit strukturierten Inhalten zu erstellen.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '3011'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
         >
         Wenn Sie die Eigenschaft **Eigenschaftsname** für einen Datentyp manuell aktualisieren, beachten Sie, dass Namen nur A–Z, a–z, 0–9 und den Unterstrich „_“ als Sonderzeichen enthalten dürfen.
         >
-        Wenn Modelle, die in früheren Versionen von AEM erstellt wurden, unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
+        Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
      Zum Beispiel:
 
@@ -147,10 +147,10 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
 
   >[!CAUTION]
   >
-  Wenn Modelle, die in früheren Versionen von AEM erstellt wurden, unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
+  Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
 * **Rendern als**
-Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Häufig können Sie mit dieser Eigenschaft definieren, ob der Autor eine einzelne Instanz des Felds sieht oder ob es möglich ist, mehrere Instanzen zu erstellen. Wann **Mehrere Felder** verwendet wird, können Sie die Mindest- und Höchstanzahl der Elemente definieren - siehe [Validierung](#validation) für weitere Informationen.
+Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Mit dieser Eigenschaft können Sie oft festlegen, ob die Autorin bzw. der Autor nur eine einzige Instanz des Feldes sieht oder ob mehrere Instanzen erstellt werden dürfen. Wenn **Mehrere Felder** verwendet wird, können Sie die minimale und maximale Anzahl von Einträgen festlegen. Siehe [Validierung](#validation) für weitere Informationen.
 
 * **Feldtitel**
 Bei Eingabe eines **Feldtitels** wird automatisch ein **Eigenschaftsname** generiert, der dann ggf. manuell aktualisiert werden kann.
@@ -212,17 +212,17 @@ Verschiedene Datentypen bieten jetzt die Möglichkeit, Validierungsanforderungen
    * Es können nur Bilder in einem vordefinierten Bereich von Breite und/oder Höhe (in Pixel) referenziert werden.
 * **Fragmentreferenz**
    * Testen Sie, ob ein bestimmtes Inhaltsfragmentmodell vorhanden ist.
-* **Mindestanzahl von Elementen** / **Maximale Elementanzahl**
+* **Mindestanzahl der Elemente**/**Maximale Anzahl der Elemente**
 
-  Felder, die als **Mehrere Felder** (festgelegt mit **Rendern als**) haben die Optionen:
+  Felder, die als **Mehrere Felder** festgelegt wurden (mit **Rendern als**) haben die Optionen:
 
-   * **Mindestanzahl von Elementen**
-   * **Maximale Elementanzahl**
+   * **Mindestanzahl der Elemente**
+   * **Maximale Anzahl der Elemente**
 
-  Diese werden validiert:
+  Diese werden wie folgt validiert:
 
-   * Der maximale Wert wird im [ursprünglicher Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-variations.md).
-   * Beide werden im [Inhaltsfragment-Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
+   * Der Maximalwert wird im [originalen Inhaltsfragmenteditor](/help/assets/content-fragments/content-fragments-variations.md) validiert.
+   * Beide werden im [Inhaltsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md) validiert.
 
 ## Verwenden von Verweisen, um verschachtelten Inhalt zu bilden {#using-references-to-form-nested-content}
 
@@ -269,7 +269,7 @@ Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
 Die Fragmentreferenz verweist auf mindestens ein Inhaltsfragment. Diese Funktion ist besonders beim Abrufen von Inhalten für die Verwendung in Ihrer Anwendung interessant, da sie Ihnen das Abrufen strukturierter Daten mit mehreren Ebenen ermöglicht.
 
-Beispiel:
+Zum Beispiel:
 
 * Ein Modell, das Details für einen Mitarbeiter definiert, beispielsweise:
    * Ein Verweis auf das Modell, das den Arbeitgeber definiert (Firma)

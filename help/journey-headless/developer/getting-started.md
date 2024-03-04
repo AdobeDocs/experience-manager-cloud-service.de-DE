@@ -5,7 +5,7 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '3057'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -181,7 +181,7 @@ Erstellen Sie einen Plan zur benötigten Übersetzung von Inhalten.
 
 Verschaffen Sie sich Klarheit über Ihren Workflow zur Aktualisierung von Inhalten. Wie sieht der Genehmigungsprozess aus, den das System unterstützen muss? Können AEM-Workflows genutzt werden, um diesen Prozess zu automatisieren?
 
-Ihre [Inhaltshierarchie](#content-hierarchy) kann verwendet werden, um die Übersetzung zu erleichtern.
+Ihre [Inhaltshierarchie](#content-hierarchy) kann genutzt werden, um die Übersetzung zu erleichtern.
 
 Im Abschnitt [Zusätzliche Ressourcen](#additional-resources) finden Sie zusätzliche Dokumentation zu AEM-Workflows und Übersetzungs-Tools sowie Links zur AEM Headless-Übersetzungs-Tour.
 

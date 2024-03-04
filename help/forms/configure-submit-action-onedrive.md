@@ -1,12 +1,12 @@
 ---
 Title: How to submit data from an Adaptive Form to Microsoft® OneDrive?
 Description: Explore the streamlined process of connecting AEM Forms with Microsoft® OneDrive using the Submit to OneDrive Submit Action. Learn the step-by-step guide to configure OneDrive and set up submission actions for efficient data storage and retrieval
-keywords: AEM Forms OneDrive-Integration, Verbindung zu Microsoft OneDrive, OneDrive-Konfigurationseinstellungen mit AEM Formularen
+keywords: AEM Forms OneDrive-Integration, Verbindung zu Microsoft OneDrive, OneDrive-Konfigurationseinstellungen mit AEM-Formularen
 feature: Adaptive Forms, Core Components
 source-git-commit: 20458e710502e445cf5c8f582a1d183bdac75c8d
 workflow-type: tm+mt
 source-wordcount: '587'
-ht-degree: 67%
+ht-degree: 98%
 
 ---
 
@@ -15,23 +15,23 @@ ht-degree: 67%
 
 Die Übermittlungsaktion **[!UICONTROL An OneDrive senden]** verbindet ein adaptives Formular mit Microsoft® OneDrive. Sie können die Formulardaten, Dateien, Anhänge oder Datensatzdokumente an den verbundenen Microsoft® OneDrive-Speicher senden.
 
-AEM as a Cloud Service bietet verschiedene vordefinierte Übermittlungsaktionen für die Verarbeitung von Formularübermittlungen. Weitere Informationen zu diesen Optionen finden Sie im Abschnitt [Übermittlungsaktion für adaptive Formulare](/help/forms/configure-submit-actions-core-components.md)  Artikel.
+AEM as a Cloud Service bietet verschiedene vordefinierte Übermittlungsaktionen für die Verarbeitung von Formularübermittlungen. Weitere Informationen zu diesen Optionen finden Sie im Artikel [Übermittlungsaktion für adaptive Formulare](/help/forms/configure-submit-actions-core-components.md).
 
 ## Vorteile
 
 Einige Vorteile der nahtlosen Integration von AEM Forms und Microsoft® OneDrive sind:
 
-* Die geräteübergreifende Barrierefreiheit von OneDrive stellt sicher, dass gespeicherte Formulardaten auf verschiedenen Plattformen sofort verfügbar sind. Benutzer können auf die übermittelten Daten, Anhänge und Dokumente von Desktops, Laptops, Tablets und Mobilgeräten zugreifen, um die Barrierefreiheit und Flexibilität zu verbessern.
-* Die Integration von OneDrive mit AEM Forms bietet eine zuverlässige und skalierbare Lösung für die effiziente Datenspeicherung. Alle Übermittlungen adaptiver Formulare, wie Dateien, Anhänge und Datensatzdokumente, können bequem in OneDrive gespeichert werden, um eine strukturierte und zugängliche Datenübermittlung zu gewährleisten.
+* Die geräteübergreifende Barrierefreiheit von OneDrive. Sie stellt sicher, dass gespeicherte Formulardaten auf verschiedenen Plattformen sofort verfügbar sind. Benutzende können auf die übermittelten Daten, Anhänge und Dokumente von Desktops, Laptops, Tablets und Mobilgeräten zugreifen, was die Barrierefreiheit und Flexibilität verbessert.
+* Die Integration von OneDrive mit AEM-Formularen bietet eine zuverlässige und skalierbare Lösung für die effiziente Datenspeicherung. Alle Übermittlungen adaptiver Formulare, wie Dateien, Anhänge und Datensatzdokumente, können bequem in OneDrive gespeichert werden, was strukturierte und zugängliche Daten zu gewährleistet.
 
 ## Verbinden von OneDrive mit einem adaptiven Formular
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
-Konfigurieren Sie OneDrive für die Übermittlung an AEM Forms. Führen Sie die folgenden Schritte aus:
+Um OneDrive für die Übermittlung von AEM-Formularen zu konfigurieren, führen Sie die folgenden Schritte aus:
 
 1. [Erstellen einer OneDrive-Konfiguration](#create-a-onedrive-configuration-create-onedrive-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® OneDrive-Speicher verbunden.
-2. [Verwenden Sie die Sendeaktion &quot;An OneDrive übermitteln&quot;in einem adaptiven Formular](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): Dadurch wird Ihr adaptives Formular mit dem konfigurierten Microsoft® OneDrive verbunden.
+2. [Verwenden der Übermittlungsaktion „An OneDrive senden“ in einem adaptiven Formular](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): Dadurch wird Ihr adaptives Formular mit dem konfigurierten Microsoft® OneDrive verbunden.
 
 ### Erstellen einer OneDrive-Konfiguration {#create-onedrice-configuration}
 
@@ -81,7 +81,7 @@ Sie können die erstellte OneDrive-Speicherkonfiguration in einem adaptiven Form
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Sendeeinstellungen zu speichern.
 
 Wenn Sie das Formular übermitteln, werden die Daten im angegebenen Microsoft® OneDrive-Speicher gespeichert.
-Ordnerstruktur zum Speichern von Daten: `/folder_name/form_name/year/month/date/submission_id/data`.
+Die Ordnerstruktur zum Speichern von Daten ist `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ## Ähnliche Artikel
 

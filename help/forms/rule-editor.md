@@ -8,7 +8,7 @@ exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: bbb5e4caef2cb8c44d10a92647401ee86a9326c0
 workflow-type: tm+mt
 source-wordcount: '6457'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -332,13 +332,13 @@ Der Regeleditor bietet eine umfangreiche und dennoch einfache Benutzeroberfläch
 So starten Sie die Benutzeroberfläche des Regeleditors:
 
 1. Öffnen Sie ein adaptives Formular im Autorenmodus.
-1. Wählen Sie das Formularobjekt aus, für das Sie eine Regel schreiben möchten, und wählen Sie in der Komponentensymbolleiste die Option ![edit-rules](assets/edit-rules-icon.svg). Die Benutzeroberfläche des Regeleditors wird angezeigt.
+1. Wählen Sie das Formularobjekt aus, für das Sie eine Regel schreiben möchten, und wählen Sie in der Komponenten-Symbolleiste ![edit-rules](assets/edit-rules-icon.svg). Die Benutzeroberfläche des Regeleditors wird angezeigt.
 
    ![create-rules](assets/create-rules1.png)
 
    Alle vorhandenen Regeln für die ausgewählten Formularobjekte werden in dieser Ansicht aufgelistet. Weitere Informationen zum Verwalten vorhandener Regeln finden Sie unter [Verwalten von Regeln](rule-editor.md#p-manage-rules-p).
 
-1. Auswählen **[!UICONTROL Erstellen]** , um eine neue Regel zu erstellen. Wenn Sie den Regeleditor zum ersten Mal starten, wird standardmäßig der Visual Editor der Regeleditor-Benutzeroberfläche geöffnet.
+1. Wählen Sie **[!UICONTROL Erstellen]**, um eine neue Regel zu schreiben. Wenn Sie den Regeleditor zum ersten Mal starten, wird standardmäßig der Visual Editor der Regeleditor-Benutzeroberfläche geöffnet.
 
    ![Benutzeroberfläche des Regeleditors](assets/rule-editor-ui1.png)
 
@@ -364,7 +364,7 @@ Die Registerkarte „Funktionen“ enthält eine Reihe integrierter Funktionen (
 >
 >Sie können auf den Registerkarten „Formularobjekte“ und „Funktionen“ eine Textsuche nach den Namen und Titeln von Objekten und Funktionen durchführen.
 
-Im linken Baum der Formularobjekte können Sie die Formularobjekte auswählen, um die Regeln anzuzeigen, die auf die einzelnen Objekte angewendet werden. Sie können nicht nur durch die Regeln der verschiedenen Formularobjekte navigieren, sondern auch Regeln zwischen den Formularobjekten kopieren und einfügen. Weitere Informationen finden Sie unter [Kopieren und Einfügen von Regeln](rule-editor.md#p-copy-paste-rules-p).
+In der linken Baumstruktur der Formularobjekte können Sie die Formularobjekte auswählen, um die Regeln anzuzeigen, die auf die einzelnen Objekte angewendet werden. Sie können nicht nur durch die Regeln der verschiedenen Formularobjekte navigieren, sondern auch Regeln zwischen den Formularobjekten kopieren und einfügen. Weitere Informationen finden Sie unter [Kopieren und Einfügen von Regeln](rule-editor.md#p-copy-paste-rules-p).
 
 ### C. Umschalten zwischen Formularobjekten und Funktionen {#c-form-objects-and-functions-toggle-br}
 
@@ -416,15 +416,15 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
 1. Schreiben Sie zuerst die Regel, mit der die Sichtbarkeit des Felds „Gehalt des Partners“ entsprechend der vom Benutzer über das Optionsfeld „Familienstand“ gewählten Option gesteuert wird.
 
-   Öffnen Sie das Kreditantragsformular im Autorenmodus. Wählen Sie die **[!UICONTROL Familienstand]** Komponente und wählen Sie ![edit-rules](assets/edit-rules-icon.svg). Wählen Sie als Nächstes **[!UICONTROL Erstellen]** , um den Regeleditor zu starten.
+   Öffnen Sie das Kreditantragsformular im Autorenmodus. Wählen Sie die Komponente **[!UICONTROL Familienstand]** und dann ![edit-rules](assets/edit-rules-icon.svg). Wählen Sie dann **[!UICONTROL Erstellen]**, um den Regeleditor zu starten.
 
    ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1.png)
 
    Wenn Sie den Regeleditor starten, ist standardmäßig die Wenn-Regel ausgewählt. Darüber hinaus wird das Formularobjekt (in diesem Fall „Familienstand“), von dem aus Sie den Regeleditor gestartet haben, in der Wenn-Anweisung angegeben.
 
-   Sie können zwar das ausgewählte Objekt nicht bearbeiten oder ändern, es ist jedoch möglich, über die Dropdown-Liste für Regeln einen anderen Regeltyp wählen (siehe unten). Wenn Sie eine Regel für ein anderes Objekt erstellen möchten, wählen Sie Abbrechen , um den Regeleditor zu beenden und ihn erneut über das gewünschte Formularobjekt zu starten.
+   Sie können zwar das ausgewählte Objekt nicht bearbeiten oder ändern, es ist jedoch möglich, über die Dropdown-Liste für Regeln einen anderen Regeltyp wählen (siehe unten). Wenn Sie eine Regel für ein anderes Objekt erstellen möchten, wählen Sie „Abbrechen“, um den Regeleditor zu beenden, und starten Sie ihn erneut über das gewünschte Formularobjekt.
 
-1. Auswählen **[!UICONTROL Status auswählen]** und wählen Sie **[!UICONTROL ist gleich]**. Das Feld **[!UICONTROL Eine Zeichenfolge eingeben]** wird angezeigt.
+1. Wählen Sie die Dropdown-Liste **[!UICONTROL Status auswählen]** und wählen Sie dann **[!UICONTROL Ist gleich]**. Das Feld **[!UICONTROL Eine Zeichenfolge eingeben]** wird angezeigt.
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
 
@@ -442,7 +442,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. Ziehen Sie das Feld **[!UICONTROL Gehalt des Partners]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]**. Alternativ können Sie die **[!UICONTROL Objekt ablegen oder hier auswählen]** und wählen Sie die **[!UICONTROL Gehalt des Partners]** aus dem Popup-Menü, in dem alle Formularobjekte im Formular aufgelistet werden.
+1. Ziehen Sie das Feld **[!UICONTROL Gehalt des Partners]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]**. Alternativ können Sie auch das Feld **[!UICONTROL Objekt ablegen oder hier auswählen]** und das Feld **[!UICONTROL Gehalt des Ehepartners]** aus dem Popup-Menü auswählen, in dem alle Formularobjekte im Formular aufgelistet sind.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
@@ -450,7 +450,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7.png)
 
-1. Auswählen **[!UICONTROL Fertig]** , um die Regel zu speichern.
+1. Wählen Sie **[!UICONTROL Fertig]**, um die Regel zu speichern.
 
 1. Wiederholen Sie die Schritte 1 bis 5, um eine weitere Regel zu definieren, mit der das Feld für das Gehalt der Partnerin bzw. des Partners ausgeblendet wird, wenn unter Familienstand „Ledig“ angegeben ist. Die Regel wird im Regeleditor wie folgt angezeigt.
 
@@ -464,13 +464,13 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
 1. Als Nächstes erstellen Sie eine Regel für die Berechnung des Kreditanspruchsbetrags (50 % des Gesamtgehalts) und zur Anzeige des Betrags im Feld für den Kreditanspruch. Dies erreichen Sie, indem Sie für das Feld „Kreditanspruch“ Regeln vom Typ **[!UICONTROL Wert festlegen]** erstellen.
 
-   Wählen Sie im Authoring-Modus die **[!UICONTROL Kreditanspruch]** Feld und wählen Sie ![edit-rules](assets/edit-rules-icon.svg). Wählen Sie als Nächstes **[!UICONTROL Erstellen]** , um den Regeleditor zu starten.
+   Wählen Sie im Autorenmodus das Feld **[!UICONTROL Kreditanspruch]** und wählen Sie dann ![edit-rules](assets/edit-rules-icon.svg). Wählen Sie als Nächstes **[!UICONTROL Erstellen]** aus, um den Regeleditor zu starten.
 
 1. Wählen Sie in der Dropdown-Liste „Regeln“ die Regel **[!UICONTROL Wert festlegen]** aus.
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. Auswählen **[!UICONTROL Option auswählen]** und wählen **[!UICONTROL Mathematischer Ausdruck]**. Ein Feld, in dem Sie mathematische Ausdrücke schreiben können, wird geöffnet.
+1. Wählen Sie **[!UICONTROL Option auswählen]** und dann **[!UICONTROL Mathematischer Ausdruck]**. Ein Feld, in dem Sie mathematische Ausdrücke schreiben können, wird geöffnet.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -484,7 +484,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. Wählen Sie anschließend im markierten Bereich um das Ausdrucksfeld aus und wählen Sie **[!UICONTROL Ausdruck erweitern]**.
+1. Wählen Sie als Nächstes den markierten Bereich um das Ausdrucksfeld aus und wählen Sie dann **[!UICONTROL Ausdruck erweitern]**.
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
 
@@ -498,7 +498,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    Erstellen Sie als Nächstes eine Bedingung, bei der bei Rückgabe von „True“ der Ausdruck ausgeführt wird.
 
-1. Auswählen **[!UICONTROL Bedingung hinzufügen]** , um eine Wenn-Anweisung hinzuzufügen.
+1. Wählen Sie **[!UICONTROL Bedingung hinzufügen]**, um eine Wenn-Anweisung hinzuzufügen.
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15.png)
 
@@ -644,18 +644,18 @@ So erstellen Sie eine Client-Bibliothek und fügen sie dem CRX-Repository hinzu:
 Nachdem Sie Ihre Client-Bibliothek im CRX-Repository hinzugefügt haben, verwenden Sie sie in Ihrem adaptiven Formular. Sie ermöglicht die Verwendung der benutzerdefinierten Funktion als Regel im Formular. So fügen Sie die Client-Bibliothek in Ihrem adaptiven Formular hinzu:
 
 1. Öffnen Sie das Formular im Bearbeitungsmodus.
-Um ein Formular im Bearbeitungsmodus zu öffnen, wählen Sie ein Formular aus und wählen Sie **[!UICONTROL Öffnen]**.
-1. Wählen Sie im Bearbeitungsmodus eine Komponente aus und wählen Sie dann ![Feldebene](assets/select_parent_icon.svg) > **[!UICONTROL Container für adaptive Formulare]** und wählen Sie ![cmppr](assets/configure-icon.svg).
+Um ein Formular im Bearbeitungsmodus zu öffnen, wählen Sie ein Formular aus und wählen Sie dann **[!UICONTROL Öffnen]**.
+1. Wählen Sie im Bearbeitungsmodus eine Komponente aus, wählen Sie dann ![field-leve](assets/select_parent_icon.svg) > **[!UICONTROL Container eines adaptiven Formulars]** und dann ![cmppr](assets/configure-icon.svg).
 1. Fügen Sie in der Seitenleiste unter „Name der Client-Bibliothek“ Ihre Client-Bibliothek hinzu. (In diesem Beispiel wäre das `customfunction`.)
 
    ![Hinzufügen der benutzerdefinierten Funktion zur Client-Bibliothek](assets/clientlib.png)
 
-1. Wählen Sie das numerische Eingabefeld aus und wählen Sie ![edit-rules](assets/edit-rules-icon.svg) , um den Regeleditor zu öffnen.
-1. Auswählen **[!UICONTROL Regel erstellen]**. Erstellen Sie mithilfe der unten gezeigten Optionen eine Regel zum Speichern des Quadratwerts der Eingabe im Ausgabefeld des Formulars.
+1. Wählen Sie das numerische Eingabefeld aus und wählen Sie dann ![edit-rules](assets/edit-rules-icon.svg), um den Regeleditor zu öffnen.
+1. Wählen Sie **[!UICONTROL Regel erstellen]** aus. Erstellen Sie mithilfe der unten gezeigten Optionen eine Regel zum Speichern des Quadratwerts der Eingabe im Ausgabefeld des Formulars.
 
    [![Verwendung benutzerdefinierter Funktionen zum Erstellen einer Regel](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
-1. Klicken Sie auf **[!UICONTROL Fertig]**. Ihre benutzerdefinierte Funktion wird hinzugefügt.
+1. Wählen Sie **[!UICONTROL Fertig]**. Ihre benutzerdefinierte Funktion wird hinzugefügt.
 
    >[!NOTE]
    >
@@ -726,22 +726,22 @@ var c = {
 
 ## Verwalten von Regeln {#manage-rules}
 
-Alle vorhandenen Regeln für ein Formularobjekt werden aufgelistet, wenn Sie das Objekt auswählen und ![edit-rules1](assets/edit-rules-icon.svg). Sie können den Titel und eine Vorschau der Regelzusammenfassung anzeigen. Darüber hinaus können Sie in der Benutzeroberfläche die vollständige Regelübersicht erweitern und anzeigen, die Reihenfolge der Regeln ändern, Regeln bearbeiten und Regeln löschen.
+Wenn Sie ein Formularobjekt auswählen und dann ![edit-rules1](assets/edit-rules-icon.svg) wählen, werden alle vorhandenen Regeln für dieses Objekt aufgelistet. Sie können den Titel und eine Vorschau der Regelzusammenfassung anzeigen. Darüber hinaus können Sie in der Benutzeroberfläche die vollständige Regelübersicht erweitern und anzeigen, die Reihenfolge der Regeln ändern, Regeln bearbeiten und Regeln löschen.
 
 ![List-rules](assets/list-rules.png)
 
 Sie können die folgenden Aktionen für Regeln ausführen:
 
-* **Anzeigen/Reduzieren**: Die Inhaltsspalte in der Regelliste zeigt den Regelinhalt an. Wenn der gesamte Regelinhalt nicht in der Standardansicht sichtbar ist, wählen Sie ![expand-rule-content](assets/Smock_ChevronDown.svg) um sie zu erweitern.
+* **Anzeigen/Reduzieren**: Die Inhaltsspalte in der Regelliste zeigt den Regelinhalt an. Wenn in der Standardansicht nicht der gesamte Regelinhalt sichtbar ist, wählen Sie ![expand-rule-content](assets/Smock_ChevronDown.svg), um die Ansicht zu erweitern.
 
 * **Anordnung ändern**: Jede neue Regel, die Sie erstellen, wird am unteren Rand der Regelliste gestapelt. Die Regeln werden von oben nach unten ausgeführt. Die Regel oben wird zuerst ausgeführt, gefolgt von anderen Regeln desselben Typs. Wenn beispielsweise eine Wenn-, Anzeigen-, Aktivieren- und eine weitere Wenn-Regel an den ersten vier Positionen der Liste stehen, werden zuerst die zuoberst stehende Wenn-Regel und dann die Wenn-Regel an der vierten Position ausgeführt. Danach werden die Anzeigen- und die Aktivieren-Regel ausgeführt.
 Sie können die Position einer Regel in der Reihenfolge ändern, indem Sie auf ![sort-rules](assets/sort-rules.svg) für die Regel tippen oder die Regel an die gewünschte Stelle in der Liste ziehen und dort ablegen.
 
-* **Bearbeiten**: Zum Bearbeiten einer Regel aktivieren Sie das Kontrollkästchen neben ihrem Titel. Weitere Optionen zum Bearbeiten und Löschen der Regel werden angezeigt. Auswählen **[!UICONTROL Bearbeiten]** zum Öffnen der ausgewählten Regel im Regeleditor <!-- in visual  or code editor mode depending on the mode used to create the rule -->.
+* **Bearbeiten**: Zum Bearbeiten einer Regel aktivieren Sie das Kontrollkästchen neben ihrem Titel. Weitere Optionen zum Bearbeiten und Löschen der Regel werden angezeigt. Wählen Sie **[!UICONTROL Bearbeiten]**, um die ausgewählte Regel im Regeleditor <!-- in visual  or code editor mode depending on the mode used to create the rule --> zu öffnen.
 
-* **Löschen**: Um eine Regel zu löschen, wählen Sie sie aus und klicken Sie auf **[!UICONTROL Löschen]**.
+* **Löschen**: Um eine Regel zu löschen, wählen Sie die Regel aus und dann **[!UICONTROL Löschen]**.
 
-* **Aktivieren/Deaktivieren**: Wenn Sie die Verwendung einer Regel vorübergehend aussetzen müssen, können Sie eine oder mehrere Regeln auswählen und **[!UICONTROL Deaktivieren]** in der Symbolleiste &quot;Aktionen&quot;, um sie zu deaktivieren. Wenn eine Regel deaktiviert ist, wird sie zur Laufzeit nicht ausgeführt. Um eine Regel zu aktivieren, die deaktiviert ist, können Sie sie auswählen und in der Aktionssymbolleiste die Option Aktivieren auswählen. Die Statusspalte der Regel zeigt an, ob die Regel aktiviert oder deaktiviert ist.
+* **Aktivieren/Deaktivieren**: Wenn Sie die Verwendung einer Regel vorübergehend aussetzen müssen, können Sie eine oder mehrere Regeln auswählen und in der Aktionsleiste **[!UICONTROL Deaktivieren]** wählen, um sie zu deaktivieren. Wenn eine Regel deaktiviert ist, wird sie zur Laufzeit nicht ausgeführt. Um eine deaktivierte Regel wieder zu aktivieren, können Sie sie auswählen und in der Aktionssymbolleiste „Aktivieren“ wählen. Die Statusspalte der Regel zeigt an, ob die Regel aktiviert oder deaktiviert ist.
 
 ![Regel deaktivieren](assets/disablerule.png)
 
@@ -751,7 +751,7 @@ Es ist möglich, Regeln aus einem Feld zu kopieren und in andere, ähnliche Feld
 
 Gehen Sie wie folgt vor, um Regeln zu kopieren und einzufügen:
 
-1. Wählen Sie das Formularobjekt aus, aus dem Sie eine Regel kopieren möchten, und wählen Sie in der Komponentensymbolleiste ![Regel bearbeiten](assets/edit-rules-icon.svg). Die Benutzeroberfläche des Regeleditors wird angezeigt, wobei das Formularobjekt ausgewählt ist und die vorhandenen Regeln angezeigt werden.
+1. Wählen Sie das Formularobjekt aus, von dem Sie eine Regel kopieren möchten, und wählen Sie in der Komponentensymbolleiste ![Regel bearbeiten](assets/edit-rules-icon.svg). Die Benutzeroberfläche des Regeleditors wird angezeigt, wobei das Formularobjekt ausgewählt ist und die vorhandenen Regeln angezeigt werden.
 
    ![Regel kopieren](assets/copyrule.png)
 
@@ -761,13 +761,13 @@ Gehen Sie wie folgt vor, um Regeln zu kopieren und einzufügen:
 
    ![copyrule2](assets/copyrule2.png)
 
-1. Wählen Sie ein anderes Formularobjekt aus, in das Sie die Regel einfügen möchten, und wählen Sie **[!UICONTROL Einfügen]**. Darüber hinaus können Sie die Regel bearbeiten, um Änderungen daran vorzunehmen.
+1. Wählen Sie ein anderes Formularobjekt, in das Sie die Regel einfügen möchten, und wählen Sie dann **[!UICONTROL Einfügen]**. Darüber hinaus können Sie die Regel bearbeiten, um Änderungen daran vorzunehmen.
 
    >[!NOTE]
    >
    >Sie können eine Regel nur dann in ein anderes Formularobjekt einfügen, wenn dieses Formularobjekt das Ereignis der kopierten Regel unterstützt. So unterstützt beispielsweise eine Schaltfläche das Klickereignis. Sie können eine Regel, die ein Klickereignis enthält, in eine Schaltfläche, nicht jedoch in ein Kontrollkästchen einfügen.
 
-1. Auswählen **[!UICONTROL Fertig]** , um die Regel zu speichern.
+1. Wählen Sie **[!UICONTROL Fertig]**, um die Regel zu speichern.
 
 ## Verschachtelte Ausdrücke {#nestedexpressions}
 
@@ -777,7 +777,7 @@ Das folgende Beispiel zeigt eine verschachtelte Regel, die dem Benutzer eine Mel
 
 ![Komplexer Ausdruck](assets/complexexpression.png)
 
-Sie können Bedingungen innerhalb einer Regel auch mittels Drag-and-Drop ziehen, um sie zu bearbeiten. Wählen Sie den Ziehpunkt aus und bewegen Sie den Mauszeiger über ( ![handle](assets/drag-handle.svg)) vor einer Bedingung. Sobald sich der Zeiger wie unten gezeigt in das Handsymbol verwandelt, ziehen Sie die Bedingung per Drag &amp; Drop an eine beliebige Stelle innerhalb der Regel. Die Regelstruktur ändert sich.
+Sie können Bedingungen innerhalb einer Regel auch mittels Drag-and-Drop ziehen, um sie zu bearbeiten. Wählen Sie den Griff (![handle](assets/drag-handle.svg)) vor einer Bedingung aus und bewegen Sie den Mauszeiger darüber. Sobald sich der Zeiger wie unten gezeigt in das Handsymbol verwandelt, ziehen Sie die Bedingung per Drag &amp; Drop an eine beliebige Stelle innerhalb der Regel. Die Regelstruktur ändert sich.
 
 ![Drag-and-Drop](assets/drag-and-drop.png)
 

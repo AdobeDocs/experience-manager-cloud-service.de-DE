@@ -1,30 +1,30 @@
 ---
-title: Konfigurieren des Layout-Containers und des Layout-Modus
-description: Erfahren Sie, wie Sie Layout-Container und Layout-Modus konfigurieren, um responsive Layouts für Ihre Inhaltsautoren zu aktivieren.
+title: Konfigurieren von Layout-Container und Layout-Modus
+description: Erfahren Sie, wie Sie Layout-Container und Layout-Modus konfigurieren, um responsive Layouts für Ihre Inhaltsautorinnen und Inhaltsautoren zu aktivieren.
 source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '1250'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
 
-# Konfigurieren des Layout-Containers und des Layout-Modus {#configuring-layout-container-and-layout-mode}
+# Konfigurieren von Layout-Container und Layout-Modus {#configuring-layout-container-and-layout-mode}
 
-[Responsives Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md) ist ein Mechanismus zur Realisierung [responsives Webdesign.](https://de.wikipedia.org/wiki/Responsive_Webdesign) Auf diese Weise kann der Inhaltsautor Webseiten erstellen, deren Layout und Abmessungen von den Geräten abhängen, die er verwendet.
+Ein [responsives Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md) ist eine Methode, um ein [responsives Webdesign zu realisieren.  ](https://de.wikipedia.org/wiki/Responsive_Webdesign) Dies ermöglicht es der Inhaltsautorinnen und Inhaltsautoren, Web-Seiten zu erstellen, deren Layout und Abmessungen von den Geräten abhängen, die ihre Benutzenden verwenden.
 
-Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination von Mechanismen ermöglicht:
+Das responsive Layout für Ihre Seiten wird von AEM durch eine Kombination von Mechanismen ermöglicht:
 
-* **[Layout-Container](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Diese Komponente bietet ein Rasterabsatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können.
-   * Sie können sie als Standard-ParSys für Ihre Seite nutzen und/oder sie anderen Autoren im Komponenten-Browser zur Verfügung stellen.
-   * Die Standardeinstellung **Layout-Container** Komponente ist definiert unter `/libs/wcm/foundation/components/responsivegrid`.
+* **[Layout-Container](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)**: Diese Komponente liefert ein Rasterabsatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können.
+   * Sie können sie als Standard-Absatzsystem für Ihre Seite nutzen und/oder sie anderen Autorinnen und Autoren im Komponenten-Browser zur Verfügung stellen.
+   * Die standardmäßige **Layout-Container**-Komponente ist definiert unter `/libs/wcm/foundation/components/responsivegrid`.
    * Sie können Layout-Container definieren:
       * als Komponente, die Benutzerinnen und Benutzer einer Seite hinzufügen können.
       * als Standard-Absatzsystem für die Seite.
-      * Als Komponente und als Standard-Parsys.
-         * Sie können den Layout-Container als Standard für die Seite festlegen und es den Benutzern gleichzeitig erlauben, weitere Layout-Container darin hinzuzufügen, z. B. für die Spaltensteuerung.
-* **[Layout-Modus](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)** - Sobald der Layout-Container auf Ihrer Seite positioniert ist, können Sie die **Layout** -Modus, um Inhalte im responsiven Raster zu positionieren.
-* **[Emulator](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)** - Hiermit können Sie responsive Websites erstellen und bearbeiten, die das Layout durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße anpassen. Die Benutzenden können dann mithilfe des Emulators sehen, wie der Inhalt gerendert wird.
+      * als Komponente und als Standard-Absatzsystem gleichzeitig.
+         * Sie können den Layout-Container als Standard für die Seite festlegen und es den Benutzenden gleichzeitig erlauben, weitere Layout-Container darin hinzuzufügen, z. B. für die Spaltensteuerung.
+* **[Layout-Modus](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)**: Sobald der Layout-Container auf Ihrer Seite positioniert ist, können Sie den **Layout**-Modus verwenden, um Inhalte innerhalb des responsiven Rasters zu positionieren.
+* **[Emulator](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)**: Auf diese Weise können Sie responsive Websites erstellen und bearbeiten, deren Layout sich durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße anpasst. Die Benutzenden können dann mithilfe des Emulators sehen, wie der Inhalt gerendert wird.
 
 Mit diesen responsiven Rastermechanismen können Sie:
 
@@ -35,45 +35,45 @@ Mit diesen responsiven Rastermechanismen können Sie:
 
 >[!NOTE]
 >
->Beim Erstellen einer Site aus dem [Projektarchetyp](#addlink) oder von [Standardsite-Vorlage](#addlink), ist das responsive Layout im Allgemeinen konfiguriert. Andernfalls müssen Sie [Aktivieren der Layout-Container-Komponente](#enable-the-layout-container-component-for-page) für Ihre Seiten.
+>Wenn Sie eine Site aus dem [Projekt-Archetyp](#addlink) oder aus der [Standard-Site-Vorlage](#addlink) erstellen, wird das responsive Layout generell konfiguriert. Andernfalls müssen Sie [die Layout-Container-Komponente für Ihre Seiten aktivieren](#enable-the-layout-container-component-for-page).
 
 ## Aktivieren des Emulators {#enabling-emulator}
 
-Die [Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) und [Standardsite-Vorlage](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) sind bereits für die Verwendung des Emulators aktiviert. Wenn Sie eigene Inhalte entwickelt haben, die nicht auf den Kernkomponenten oder dem Archetyp basieren, lesen Sie bitte das Dokument . [Responsives Design](/help/implementing/developing/introduction/responsive-design.md) für Details zur Entwicklung Ihrer Komponenten bei Nutzung dieser Funktionen.
+Der [Projekt-Archetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) und die [Standard-Site-Vorlage](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) sind bereits für die Verwendung des Emulators aktiviert. Wenn Sie eigene Inhalte entwickelt haben, die nicht auf den Kernkomponenten oder dem Archetyp basieren, lesen Sie bitte das Dokument [Responsives Design](/help/implementing/developing/introduction/responsive-design.md), um zu erfahren, wie Sie Ihre Komponenten unter Nutzung dieser Funktionen entwickeln können.
 
 ## Aktivieren des Layout-Modus für die Website {#activate-layout-mode-for-your-site}
 
-**Layout** -Modus können Sie den Emulator verwenden, um das Layout Ihres Inhalts für verschiedene Geräte anzupassen. Die WKND-Beispiel-Site ist bereits für **Layout** -Modus. Führen Sie diese Schritte aus, um Ihre eigene Site zu aktivieren.
+Der **Layout-Modus** ermöglicht es Ihnen, den Emulator zu verwenden, um das Layout Ihrer Inhalte für verschiedene Geräte anzupassen. Die WKND-Beispielseite ist bereits für den **Layout-Modus** aktiviert. Führen Sie diese Schritte aus, um Ihre eigene Site zu aktivieren.
 
-### Haltepunkte konfigurieren {#configure-breakpoints}
+### Konfigurieren von Breakpoints {#configure-breakpoints}
 
-Breakpoints sind für responsives Design von entscheidender Bedeutung und definieren, wie und wann Inhalte an das Zielgerät angepasst werden. Seien Sie jedoch vorsichtig, da jeder von Ihnen eingeführte Breakpoint für Ihre Autoren zusätzliche Arbeit zur Anpassung des Inhalts generiert. Oft können zwei Haltepunkte ausreichend sein, einschließlich des standardmäßigen Haltepunkts, der immer vorhanden ist. Adobe empfiehlt, nicht mehr als drei Haltepunkte zu erstellen, einschließlich der Standardeinstellung, d. h. nicht mehr als zwei Knoten unter `cq:responsive/breakpoint`.
+Breakpoints sind für responsives Design von entscheidender Bedeutung und definieren, wie und wann Inhalte an das Zielgerät angepasst werden. Seien Sie jedoch vorsichtig, da jeder von Ihnen eingeführte Breakpoint für Ihre Autorinnen und Autoren zusätzliche Arbeit zur Anpassung des Inhalts bedeutet. Oft können zwei Breakpoints ausreichend sein, einschließlich des standardmäßigen Breakpoints, der immer vorhanden ist. Adobe empfiehlt, nicht mehr als drei Breakpoints einschließlich des Standardwertes zu erstellen, d. h. nicht mehr als zwei Knoten unter `cq:responsive/breakpoint`.
 
-* Haltepunkte haben einen Titel und eine Breite:
+* Breakpoints haben einen Titel und eine Breite:
    * Der Titel beschreibt die generische Gerätegruppierung, gegebenenfalls mit Ausrichtung.
       * Zum Beispiel `phone`, `tablet`
    * Die Breite definiert die maximale Breite in Pixel für diese generische Gerätegruppierung.
-      * Wenn der Telefon-Breakpoint beispielsweise eine Breite von 768 hat, dann ist dies die maximale Breite des Layouts, das für ein Telefongerät verwendet wird.
+      * Wenn der Telefon-Breakpoint beispielsweise eine Breite von 768 hat, dann ist dies die maximale Breite des Layouts, das für ein Smartphone verwendet wird.
 * Breakpoints können definiert werden:
    * auf der Seitenvorlage, von der aus die Einstellungen auf alle Seiten kopiert werden, die mit dieser Vorlage erstellt wurden
    * auf dem Seitenknoten, von dem aus die Einstellungen von allen untergeordneten Seiten übernommen werden.
-* Haltepunkte werden als Markierungen am oberen Rand des Seiteneditors angezeigt, wenn Sie den Emulator verwenden.
-* Haltepunkte werden von der Hierarchie des übergeordneten Knotens übernommen und können beliebig überschrieben werden.
-* Es gibt einen standardmäßigen (vordefinierten) Breakpoint, der alles über dem letzten konfigurierten Breakpoint abdeckt.
-* Breakpoints können mit CRXDE Lite oder XML definiert werden.
+* Breakpoints sind als Markierungen am oberen Rand des Seiten-Editors sichtbar, wenn Sie den Emulator verwenden.
+* Breakpoints werden von der Hierarchie des übergeordneten Knotens übernommen und können beliebig überschrieben werden.
+* Es gibt einen standardmäßigen (vorkonfigurierten) Breakpoint, der alles oberhalb des letzten konfigurierten Breakpoints abdeckt.
+* Breakpoints können Sie mit CRXDE Lite oder XML definieren.
 
 Breakpoints sollten sowohl für neue als auch für bestehende Projekte berücksichtigt werden.
 
-* Wenn Sie ein neues Projekt einrichten, sollten Sie Haltepunkte zu den Vorlagen hinzufügen.
-* Wenn Sie ein vorhandenes Projekt (mit vorhandenem Inhalt) migrieren, müssen Sie:
-   * Fügen Sie Haltepunkte zu den Vorlagen hinzu.
-   * Fügen Sie dieselben Haltepunkte zu den vorhandenen Seiten hinzu.
+* Wenn Sie ein neues Projekt einrichten, sollten Sie Breakpoints zu den Vorlagen hinzufügen.
+* Wenn Sie ein vorhandenes Projekt (mit vorhandenen Inhalten) migrieren, müssen Sie:
+   * Breakpoints zu Vorlagen hinzufügen.
+   * Dieselben Breakpoints zu vorhandenen Seiten hinzufügen.
 
 Aufgrund der Vererbung müssen Sie dies nur für die Stammseite Ihres Inhalts tun.
 
 #### Konfigurieren von Breakpoints mithilfe von CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
 
-1. Navigieren Sie mithilfe von CRXDE Lite zu einer der folgenden Optionen:
+1. Navigieren Sie mit CRXDE Lite zu einem der folgenden:
 
    * Ihrer Vorlagendefinition.
    * dem Knoten `jcr:content` Ihrer Seite
@@ -112,7 +112,7 @@ Eine Beispieldefinition:
 
 ## Aktivieren der Größenänderung von Komponenten für die Seite {#enable-component-resizing-for-the-page}
 
-Größenanpassung von Komponenten in **Layout** -Modus ist ein wichtiger Teil des responsiven Designs, der auf der WKND-Beispiel-Site verwendet werden kann. Führen Sie diese Schritte aus, um Ihre eigene Site zu aktivieren.
+Die Größenanpassung von Komponenten im **Layout-Modus** ist ein wichtiger Bestandteil des responsiven Designs, das auf der WKND-Beispielseite verwendet werden kann. Führen Sie diese Schritte aus, um Ihre eigene Site zu aktivieren.
 
 ### Festlegen des Layout-Containers als Haupt-Absatzsystem {#set-layout-container-as-main-parsys}
 
@@ -145,7 +145,7 @@ Die folgenden beiden Beispiele veranschaulichen die Definition:
 
 AEM verwendet LESS, um Teile des erforderlichen CSS zu generieren. Diese müssen für Ihre Projekte einbezogen werden.
 
-Sie müssen eine [Client-Bibliothek](/help/implementing/developing/introduction/clientlibs.md) , um zusätzliche Konfigurations- und Funktionsaufrufe bereitzustellen. Der folgende LESS-Extrakt ist ein Beispiel für das Minimum, das Sie zum Projekt hinzufügen müssen:
+Sie müssen auch eine [Client-Bibliothek](/help/implementing/developing/introduction/clientlibs.md) erstellen, um zusätzliche Konfigurations- und Funktionsaufrufe bereitzustellen. Der folgende LESS-Extrakt ist ein Beispiel für das Minimum, das Sie zum Projekt hinzufügen müssen:
 
 ```java
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -181,7 +181,7 @@ Die Basisrasterdefinition finden Sie unter:
 
 Die Größe von Komponenten in einem responsiven Container wird (zusammen mit den entsprechenden HTML-DOM-Elementen) entsprechend der Größe des responsiven Rasters geändert. Daher empfehlen wir in diesen Fällen, Definitionen von (enthaltenen) DOM-Elementen mit fester Breite zu vermeiden (oder zu aktualisieren).
 
-Beispiel:
+Zum Beispiel:
 
 * Vorher:
 
@@ -202,7 +202,7 @@ Jede Änderung der Größe einer Komponente innerhalb des Rasters löst mindeste
 
 Um die Größe eines adaptiven Bildes in einem responsiven Raster ordnungsgemäß zu ändern und die Inhalte des Bildes zu aktualisieren, müssen Sie den Listener `afterEdit`, dessen Wert auf `REFRESH_PAGE` festgelegt ist, zur `EditConfig`-Datei aller enthaltenen Komponenten hinzufügen.
 
-Beispiel:
+Zum Beispiel:
 
 `<cq:listeners jcr:primaryType="cq:EditListenersConfig" afteredit="REFRESH_PAGE" />`
 
@@ -214,15 +214,15 @@ Der Mechanismus für adaptive Bilder wird über ein Skript zur Verfügung gestel
 
 ## Aktivieren der Layout-Container-Komponente für die Seite {#enable-the-layout-container-component-for-page}
 
-Für ein effizientes responsives Layout muss der Inhaltsautor Instanzen der Layout-Container-Komponente auf die Seite ziehen können. Dies ist bereits für die WKND-Beispiel-Site aktiviert. Führen Sie diese Schritte aus, um Ihre eigene Site zu aktivieren.
+Für ein effizientes responsives Layout muss die Inhaltsautorin bzw. der Inhaltsautor Instanzen der Layout-Container-Komponente auf die Seite ziehen können. Dies ist für die WKND-Beispiel-Site bereits aktiviert. Führen Sie diese Schritte aus, um Ihre eigene Site zu aktivieren.
 
 ### Aktivieren der Layout-Container-Komponente für die Seitenbearbeitung {#enable-the-layout-container-component-for-page-editing}
 
 Damit Autorinnen und Autoren weitere responsive Raster zu den Inhaltsseiten hinzufügen können, müssen Sie die Layout-Container-Komponente für Ihre Seite aktivieren. Möglich ist dies über folgende Optionen:
 
-* **Über die Autorenumgebung** - [Bearbeiten von Seitenvorlagen](/help/sites-cloud/authoring/sites-console/templates.md) , um den Layout-Container für eine Seite zu aktivieren.
-* **Komponentendefinition** - Verwendung `allowedComponent` oder ein statisches Include bei der Definition der Komponente.
+* **Über die Autorenumgebung**: [Bearbeiten Sie Ihre Seitenvorlagen](/help/sites-cloud/authoring/sites-console/templates.md), um den Layout-Container für eine Seite zu aktivieren.
+* **Komponentendefinition**: Nutzen Sie beim Definieren der Komponente `allowedComponent` oder ein Static Include.
 
 ### Konfigurieren des Rasters des Layout-Containers {#configure-the-grid-of-the-layout-container}
 
-Sie können die Anzahl der für jede bestimmte Instanz des Layout-Containers verfügbaren Spalten konfigurieren [durch Bearbeiten Ihrer Seitenvorlagen.](/help/sites-cloud/authoring/sites-console/templates.md)
+Sie können die Anzahl der für jede spezifische Instanz des Layout-Containers [verfügbaren Spalten konfigurieren, indem Sie Ihre Seitenvorlagen bearbeiten.](/help/sites-cloud/authoring/sites-console/templates.md)

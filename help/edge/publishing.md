@@ -1,40 +1,40 @@
 ---
 title: Veröffentlichen von Inhalten für Edge Delivery Services
-description: Erfahren Sie, wie Content Publishing mit Edge Delivery Services funktioniert und wie Sie AEM Inhalte mit Edge Delivery Services veröffentlichen.
+description: Erfahren Sie, wie die Inhaltsveröffentlichung mit Edge Delivery Services funktioniert und wie Sie AEM-Inhalte mit Edge Delivery Services veröffentlichen.
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 0%
+ht-degree: 87%
 
 ---
 
 # Veröffentlichen von Inhalten für Edge Delivery Services {#publishing-edge}
 
-Mit Edge Delivery Services ist die Veröffentlichung von Inhalten unabhängig von Ihrer Inhaltsquelle nahtlos:
+Mit Edge Delivery Services erfolgt die Veröffentlichung von Inhalten unabhängig von Ihrer Inhaltsquelle nahtlos:
 
-* Dokumentbasierter Inhalt - Bitte lesen Sie [Abschnitt &quot;Veröffentlichen&quot;](/help/edge/docs/authoring.md) der Edge Delivery Services-Dokumentation.
-* AEM Inhalt - Bitte lesen Sie die unten stehenden Details.
+* Dokumentbasierter Inhalt: Weitere Informationen finden Sie in der Dokumentation zu Edge Delivery Services im Abschnitt [Veröffentlichen](/help/edge/docs/authoring.md).
+* AEM-Inhalte: Weitere Informationen finden Sie nachstehend.
 
-## Veröffentlichungsfluss aus AEM {#publishing-flow}
+## Ablauf beim Veröffentlichen aus AEM {#publishing-flow}
 
-Wenn Sie den universellen Editor verwenden, um AEM Inhalt zu erstellen, ist die Veröffentlichung so einfach wie das Klicken auf **Veröffentlichen** im universellen Editor. Lesen Sie das Dokument . [Veröffentlichen von Inhalten mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
+Wenn Sie AEM-Inhalte mit dem universellen Editor erstellen, müssen Sie zum Veröffentlichen lediglich im universellen Editor auf **Veröffentlichen** klicken. Weitere Informationen finden Sie im Dokument [Veröffentlichen von Inhalten mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/publishing.md).
 
-Der Informationsfluss bei der Veröffentlichung sieht wie folgt aus. Sobald der Autor die Veröffentlichung startet, ist dieser Fluss automatisch und wird hier zu Informationszwecken dargestellt.
+Der Informationsfluss beim Veröffentlichen sieht folgendermaße aus. Sobald der Autor oder die Autorin die Veröffentlichung startet, ist dieser Ablauf automatisch und wird hier zu Informationszwecken dargestellt.
 
 >[!NOTE]
 >
 >Pro Tag sind maximal 5.000 Pfade zulässig, die über die Authoring-Benutzeroberfläche oder durch Workflows veröffentlicht werden. Integrationen, die das Laden von Massenveröffentlichungen ermöglichen, werden nicht unterstützt.
 
-![Informationsfluss bei der Veröffentlichung von AEM auf Edge Delivery Services](assets/publishing-flow.png)
+![Informationsfluss beim Veröffentlichen aus AEM in Edge Delivery Services](assets/publishing-flow.png)
 
-1. Der Inhaltsautor veröffentlicht AEM Inhalte im universellen Editor.
-1. Ein Veröffentlichungsereignis wird an die Adobe-Pipeline-Warteschlange gesendet.
-1. Der Edge Delivery Publish-Dienst leitet die relevanten Ereignisse an die Edge Delivery Admin-API weiter.
-1. Edge Delivery ruft semantische HTML von AEM Author ab und erfasst sie.
+1. Der Inhaltsautor oder die Inhaltsautorin veröffentlicht AEM-Inhalte im universellen Editor.
+1. Ein Veröffentlichungsereignis wird an die Adobe-Pipeline-Warteschlange übergeben.
+1. Der Edge Delivery-Veröffentlichungs-Service leitet die relevanten Ereignisse an die Edge Delivery-Admin-API weiter.
+1. Edge Delivery ruft semantische HTML aus AEM Author ab und erfasst sie.
 1. AEM wird mit dem Veröffentlichungsstatus aktualisiert.
 
-## Erste Schritte {#how-to-get-started}
+## So beginnen Sie: {#how-to-get-started}
 
-Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um Zugriff auf diese Funktion zu erhalten.
+Wenden Sie sich an den Adobe-Support, um Zugriff auf diese Funktion zu erhalten.

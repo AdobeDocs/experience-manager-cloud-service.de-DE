@@ -5,7 +5,7 @@ exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Erfahren Sie mehr über die verschiedenen Erweiterungspunkte und andere Funktionen, mit denen Sie das Authoring-Erlebnis des universellen Editors anpassen können, um die Anforderungen Ihrer Inhaltsautoren zu unterstützen.
 
-## Publishing deaktivieren {#disable-publish}
+## Deaktivieren der Veröffentlichung {#disable-publish}
 
-Bestimmte Authoring-Workflows erfordern, dass Inhalte vor der Veröffentlichung überprüft werden. In solchen Fällen sollte die Option zur Veröffentlichung für Autoren nicht verfügbar sein.
+Bestimmte Authoring-Workflows erfordern, dass Inhalte vor der Veröffentlichung überprüft werden. In solchen Fällen sollte die Option zur Veröffentlichung für Autorinnen und Autoren nicht verfügbar sein.
 
 Die **Veröffentlichen** -Schaltfläche kann daher in einer App vollständig unterdrückt werden, indem die folgenden Metadaten hinzugefügt werden.
 

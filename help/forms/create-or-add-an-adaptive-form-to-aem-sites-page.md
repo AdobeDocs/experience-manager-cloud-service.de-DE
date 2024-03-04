@@ -7,7 +7,7 @@ exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '3177'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Sie können diese Funktion bestmöglich nutzen, indem Sie die folgenden Optionen
 
 * **[Konvertieren eines adaptiven Formulars in ein Experience Fragment](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** Konvertieren Sie ein adaptives Formular, das zu einer AEM Sites-Seite hinzugefügt wurde, in ein Experience Fragment, um das Formular auf mehreren AEM Sites-Seiten wiederverwenden zu können.
 
-* **[Erstellen Sie Formulare basierend auf genehmigten Vorlagen und fügen Sie sie einer AEM Sites-Seite hinzu:](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** Sie können vorab genehmigte Vorlagen verwenden, um schnell Adaptive Forms zu erstellen, die den Branding-Richtlinien und Designstandards Ihres Unternehmens entsprechen. Die Option ist nur für adaptive Formulare verfügbar, die mit dem Editor oder der Einbettungskomponente für adaptive Formulare erstellt wurde.
+* **[Erstellen und Hinzufügen von Formularen basierend auf genehmigten Vorlagen zu einer AEM Sites-Seite:](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** Sie können vorab genehmigte Vorlagen nutzen, um schnell adaptive Formulare zu erstellen, die den Branding-Richtlinien und Design-Standards Ihres Unternehmens entsprechen. Die Option ist nur für adaptive Formulare verfügbar, die mit dem Editor oder der Einbettungskomponente für adaptive Formulare erstellt wurde.
 
 * **[Hinzufügen von vorhandenen Formularen zu einer AEM Sites-Seite:](/help/forms/embed-adaptive-form-aem-sites.md#embed-an-adaptive-form-in-sites-editor)** Sie können bereits erstellte Formulare einfach in Ihre Websites integrieren, sodass Besucherinnen und Besucher direkt mit ihnen interagieren können. Die Option ist nur für adaptive Formulare verfügbar, die mit dem Editor oder der Einbettungskomponente für adaptive Formulare erstellt wurde.
 

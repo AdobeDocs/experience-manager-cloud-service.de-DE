@@ -1,17 +1,17 @@
 ---
-title: Varianten - Erstellen von Fragmentinhalten (Assets - Inhaltsfragmente)
-description: Erfahren Sie, wie Inhaltsfragmentvarianten es Ihnen ermöglichen, Inhalte für das Fragment zu erstellen, dann Varianten dieses Inhalts entsprechend dem Zweck zu erstellen und so die Flexibilität zu erhöhen.
+title: Varianten – Erstellen von Fragmentinhalten (Assets – Inhaltsfragmente)
+description: Verstehen Sie, wie Inhaltsfragmentvarianten es Ihnen ermöglichen, Inhalte für das Fragment zu verfassen und dann je nach Zweck Varianten dieses Inhalts zu erstellen, was die Flexibilität steigert.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
 workflow-type: tm+mt
 source-wordcount: '2474'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Varianten – Erstellen von Fragmentinhalten{#variations-authoring-fragment-content}
 
-[Varianten](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion von Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service. Dies liegt daran, dass Sie damit Kopien der **Master** Inhalte für die Verwendung in bestimmten Kanälen und Szenarien. Insbesondere wird dadurch die Bereitstellung von Headless Content noch flexibler.
+[Varianten](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion von Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service. Dies liegt daran, dass Sie damit Kopien der **Musterinhalte** für die Verwendung in bestimmten Kanälen und Szenarien erstellen und bearbeiten können. Insbesondere wird dadurch die Bereitstellung von Headless-Inhalten noch flexibler.
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Führen Sie eine Vielzahl weiterer Aktionen abhängig vom bearbeiteten Datentyp 
 
 Wenn Sie Ihr Inhaltsfragment zur Bearbeitung öffnen, ist die Registerkarte **Varianten** standardmäßig geöffnet. Hier können Sie den Inhalt bearbeiten, und zwar den der primären Version sowie sämtlicher Varianten. Das strukturierte Fragment enthält Felder mit verschiedenen Datentypen, die im Inhaltsmodell definiert wurden.
 
-Beispiel:
+Zum Beispiel:
 
 ![Vollbild-Editor](assets/cfm-variations-02.png)
 
@@ -81,7 +81,7 @@ Sie haben folgende Möglichkeiten:
 
 >[!NOTE]
 >
->Abhängig von den Definitionen im zugrunde liegenden Modell können Felder bestimmten Typen von [Validierung](/help/assets/content-fragments/content-fragments-models.md#validation).
+>Abhängig von den Definitionen im zugrunde liegenden Modell können Felder bestimmten Typen der [Validierung](/help/assets/content-fragments/content-fragments-models.md#validation) unterliegen.
 
 ### Vollbild-Editor {#full-screen-editor}
 
@@ -218,7 +218,7 @@ Mit der Option **Neues Inhaltsfragment** können Sie ein Fragment erstellen. Daz
 
 Wenn der Vollbild-Editor geöffnet ist, zeigt die Aktion **Textstatistik** eine Reihe von Informationen über den Text an.
 
-Beispiel:
+Zum Beispiel:
 
 ![Statistiken](assets/cfm-variations-04.png)
 
@@ -410,7 +410,7 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Je nach Kon
 
 ![Ein Inhaltsfragment, das die Vererbungsbeziehung anzeigt](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
 
-Beispiel:
+Zum Beispiel:
 
 * Vererbung abbrechen
 

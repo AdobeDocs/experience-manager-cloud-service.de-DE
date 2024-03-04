@@ -1,65 +1,65 @@
 ---
-title: Eine Übersicht über die Arbeit mit Inhaltsfragmenten
-description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in AEM as a Cloud Service Inhalte erstellen und verwenden können - ideal für Headless-Bereitstellung und Seitenbearbeitung.
+title: Ein Überblick über das Arbeiten mit Inhaltsfragmenten
+description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in AEM as a Cloud Service Inhalte erstellen und verwenden können – ideal für Headless-Bereitstellung und Seitenbearbeitung.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '1792'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
-# Eine Übersicht über die Arbeit mit Inhaltsfragmenten {#overview-working-with-content-fragments}
+# Ein Überblick über das Arbeiten mit Inhaltsfragmenten {#overview-working-with-content-fragments}
 
-Mit Adobe Experience Manager (AEM) as a Cloud Service können Sie Inhaltsfragmente entwerfen, erstellen, kuratieren und [seitenunabhängige Inhalte veröffentlichen](/help/sites-cloud/authoring/fragments/content-fragments.md). Sie ermöglichen es Ihnen, Inhalte für die Verwendung an mehreren Orten und über mehrere Kanäle hinweg vorzubereiten, die sich ideal für die Headless-Bereitstellung und die Seitenbearbeitung eignen.
+In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten [seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen](/help/sites-cloud/authoring/fragments/content-fragments.md). Sie ermöglichen es Ihnen, Inhalte so vorzubereiten, dass sie an mehreren Orten und über mehrere Kanäle verwendet werden können, ideal für die Headless-Bereitstellung und das Verfassen von Seiten.
 
 >[!IMPORTANT]
 >
->Der Zugriff auf Inhaltsfragmente erfolgt über zwei Konsolen: **Inhaltsfragmente** und **Assets**.
+>Auf Inhaltsfragmente können Sie über zwei Konsolen zugreifen: **Inhaltsfragmente** und **Assets**.
 >
->Es stehen auch zwei Editoren für Inhaltsfragmente zur Verfügung. (Auf beide Editoren kann von beiden Konsolen aus zugegriffen werden.)
+>Es gibt zudem zwei Editoren für Inhaltsfragmente. (Auf beide Editoren kann von beiden Konsolen aus zugegriffen werden.)
 >
->In diesem Abschnitt werden die **Inhaltsfragmente** und *new* Inhaltsfragment-Editor. Diese wurden für die Headless-Content-Bereitstellung entwickelt (obwohl sie für alle Szenarien verwendet werden können).
+>Dieser Abschnitt befasst sich mit der **Inhaltsfragmentekonsole** und dem *neuen* Inhaltsfragmenteditor. Diese wurden für die Bereitstellung von Headless-Inhalten entwickelt (obwohl sie für alle Szenarien verwendet werden können)
 >
 >Weitere Informationen finden Sie unter:
 >
->* Verwendung der **Assets** Konsole für [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md)
->* Verwendung der [*original* Inhaltsfragmente-Editor](/help/assets/content-fragments/content-fragments-variations.md),
->* using [Inhaltsfragmente für die Seitenbearbeitung](/help/sites-cloud/authoring/fragments/content-fragments.md).
+>* Verwendung der **Assets**-Konsole für die [Verwaltung von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md),
+>* Verwendung des [*originalen* Inhaltsfragmenteditors](/help/assets/content-fragments/content-fragments-variations.md),
+>* Verwendung von [Inhaltsfragmenten für die Seitenerstellung](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 
-Inhaltsfragmente enthalten strukturierten Inhalt:
+Inhaltsfragmente enthalten strukturierte Inhalte:
 
-* Jedes Fragment basiert auf einer [Inhaltsfragmentmodell](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).
+* Jedes Fragment basiert auf einem [Inhaltsfragmentmodell](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).
    * Das Inhaltsfragmentmodell definiert die Struktur des resultierenden Fragments.
 * Jedes Fragment besteht aus:
-   * **[Main](#main-and-variations)** - ein integraler Bestandteil des Fragments, das den Kerninhalt enthält; immer vorhanden, kann nicht gelöscht werden
-   * **[Varianten](#main-and-variations)** - eine oder mehrere vom Autor erstellte Permutationen des Inhalts
+   * **[Hauptteil](#main-and-variations)**: Ein integraler Bestandteil des Fragments, der den Kerninhalt enthält; immer vorhanden, kann nicht gelöscht werden
+   * **[Varianten](#main-and-variations)**: Eine oder mehrere von der Autorin bzw. vom Autor erstellte Permutationen des Inhalts
 * Die Struktur kann variieren:
    * Einfach
       * Beispiel: ein einzelnes, mehrzeiliges Textfeld.
       * Kann verwendet werden, um einfache Inhalte für die Verwendung bei der Seitenerstellung vorzubereiten.
-      * Kann auch für Headless-Sendungen an Ihre Anwendung verwendet werden.
+      * Kann auch für die Headless-Bereitstellung an Ihre Anwendung verwendet werden.
    * Komplex
-      * Eine Kombination aus vielen Feldern unterschiedlicher Datentypen, darunter Text, Zahl, boolescher Wert sowie Datum und Uhrzeit.
-      * Kann entweder zur Vorbereitung strukturierterer Inhalte für die Seitenbearbeitung oder zur Headless-Bereitstellung an Ihre Anwendung verwendet werden.
+      * Eine Kombination aus vielen Feldern mit unterschiedlichen Datentypen, darunter Text, Zahlen, boolesche Werte, Datum und Uhrzeit, um nur einige zu nennen.
+      * Kann entweder zur Vorbereitung von strukturierteren Inhalten für die Seitenerstellung oder zur Headless-Bereitstellung für Ihr Programm verwendet werden.
    * Verschachtelt
       * Mit den verfügbaren Referenzdatentypen können Sie Ihre Inhalte verschachteln.
-      * Wird für Headless-Versand an Ihre Anwendung verwendet.
+      * Wird in der Regel für die Headless-Bereitstellung an Ihre Anwendung verwendet.
 
-Inhaltsfragmente können auch im JSON-Format bereitgestellt werden, indem die Sling Model (JSON)-Exportfunktionen AEM Kernkomponenten verwendet werden. Diese Form der Bereitstellung:
+Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inhaltsfragmente auch im JSON-Format bereitgestellt werden. Diese Form der Bereitstellung:
 
 * bietet Ihnen die Möglichkeit, mithilfe der Komponente zu bestimmen, welche Fragmentelemente bereitgestellt werden sollen
-* Ermöglicht die Massenbereitstellung durch Hinzufügen mehrerer [Inhaltsfragment-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de) auf der für die API-Bereitstellung verwendeten Seite
+* ermöglicht durch das Hinzufügen mehrerer [Inhaltsfragment-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de) auf der für die API-Bereitstellung verwendeten Seite eine Bereitstellung in größerem Umfang
 
 Die Anzahl der Kommunikationskanäle nimmt jährlich zu. Typischerweise beziehen sich Kanäle auf den Bereitstellungsmechanismus, und zwar wie folgt:
 
 * Physischer Kanal; z. B. Desktop, Mobilgerät.
 * Form der Bereitstellung in einem physischen Kanal; z. B. die Produktdetailseite, die Produktkategorieseite für Desktops oder „mobiles Web“, „Mobile App“ für Mobilgeräte.
 
-Sie (wahrscheinlich) möchten jedoch nicht die *exact* denselben Inhalt für alle Kanäle - Sie müssen Ihren Inhalt entsprechend dem jeweiligen Kanal optimieren.
+Sie möchten jedoch (wahrscheinlich) nicht den *exakt* gleichen Inhalt für alle Kanäle verwenden – Sie müssen Ihre Inhalte entsprechend dem jeweiligen Kanal optimieren.
 
 Inhaltsfragmente ermöglichen Ihnen Folgendes:
 
@@ -67,7 +67,7 @@ Inhaltsfragmente ermöglichen Ihnen Folgendes:
 * Kanalneutrale redaktionelle Inhalte erstellen und verwalten
 * Inhaltspools für mehrere Kanäle erstellen
 * Inhaltsvarianten für bestimmte Kanäle entwerfen
-* Fügen Sie Ihrem Text Bilder hinzu, indem Sie Assets einfügen.
+* Hinzufügen von Bildern durch Einfügen von Assets zu Texten
 * Erstellen Sie verschachtelte Inhalte, um die Komplexität Ihrer Daten widerzuspiegeln.
 
 Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über verschiedene Kanäle bereitzustellen.
@@ -80,25 +80,25 @@ Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 >
->Weitere Informationen finden Sie unter [Grundlagen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
+>Weitere Details finden Sie unter [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
 
-Diese und die folgenden Seiten behandeln die Aufgaben zum Erstellen, Konfigurieren, Warten und Verwenden Ihrer Inhaltsfragmente:
+Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurieren, Verwalten und Verwenden von Inhaltsfragmenten beschrieben:
 
 * [Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz](/help/sites-cloud/administering/content-fragments/setup.md)
 * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md): Aktivieren, Erstellen und Definieren Ihrer Modelle
 * [Erstellen von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment) (mithilfe der Inhaltsfragmentkonsole)
 
-Nachdem die Fragmente erstellt wurden, haben Sie folgende Möglichkeiten:
+Nachdem das Fragment erstellt wurde, können Sie Folgendes tun:
 
-* [Verwenden der Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/managing.md) - für den Zugriff auf, die Veröffentlichung (für die Vorschau oder Produktion) und die Referenzierung Ihrer Fragmente
-* [Verwenden des Inhaltsfragmente-Editors](/help/sites-cloud/administering/content-fragments/authoring.md) - zum Bearbeiten, Veröffentlichen (zur Vorschau oder Produktion) und Referenzieren Ihrer Fragmente
-* [Analyse](/help/sites-cloud/administering/content-fragments/analysis.md)  die Struktur Ihres Inhaltsfragments mithilfe des Editors
-* [Zugriff auf Fragmente mit GraphQL zur Headless-Bereitstellung für Ihre Anwendungen](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
-* [Oder verwenden Sie Ihre Fragmente für die Seitenbearbeitung](/help/sites-cloud/authoring/fragments/content-fragments.md)
+* [Verwenden der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md): Um auf Ihre Fragmente zuzugreifen, sie zu veröffentlichen (als Vorschau oder in der Produktion) und auf sie zu verweisen.
+* [Verwenden des Inhaltsfragmenteditors](/help/sites-cloud/administering/content-fragments/authoring.md): Um Ihre Fragmente zu bearbeiten, sie zu veröffentlichen (als Vorschau oder in der Produktion) und auf sie zu verweisen.
+* [Analysieren](/help/sites-cloud/administering/content-fragments/analysis.md) der Struktur Ihres Inhaltsfragments mithilfe des Editors
+* [Zugreifen auf Ihre Fragmente mit GraphQL, für eine Headless-Bereitstellung an Ihre Anwendungen](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
+* [Oder Verwenden Ihrer Fragmente für die Seitenerstellung](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
 >
->Diese Seiten können zusammen mit folgenden Elementen gelesen werden:
+>Diese Seiten können eusammen mit Folgendem gelesen werden:
 >
 >* [Anpassen und Erweitern von Inhaltsfragmenten](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
@@ -106,31 +106,31 @@ Nachdem die Fragmente erstellt wurden, haben Sie folgende Möglichkeiten:
 >* [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/headless/graphql-api/content-fragments.md)
 >* [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
-## Haupt- und Varianten {#main-and-variations}
+## Hauptteil und Varianten {#main-and-variations}
 
-Varianten sind eine wichtige Funktion AEM Inhaltsfragmente. Sie können damit Kopien des **Haupt-Inhalts** erstellen und bearbeiten, um sie in bestimmten Kanälen und Szenarien zu verwenden. Dadurch wird die Bereitstellung von Headless-Inhalten und die Seitenbearbeitung noch flexibler.
+Varianten sind eine wichtige Funktion von AEM-Inhaltsfragmenten. Sie können damit Kopien des **Haupt-Inhalts** erstellen und bearbeiten, um sie in bestimmten Kanälen und Szenarien zu verwenden. Dadurch wird die Bereitstellung von Headless-Inhalten und die Seitenbearbeitung noch flexibler.
 
 * **Allgemein**
 
-   * **Main** ist keine Variante an sich, sondern die Grundlage aller Varianten.
+   * Der **Hauptteil** ist keine Variante an sich, sondern die Grundlage aller Varianten.
    * Integraler Bestandteil des Fragments:
 
-      * Jedes Inhaltsfragment verfügt über eine Instanz von **Main**.
-      * **Main** kann nicht gelöscht werden.
+      * Jedes Inhaltsfragment hat eine **Hauptteil**-Instanz.
+      * Der **Hauptteil** kann nicht gelöscht werden.
 
-   * **Main** ist im Fragmenteditor unter **[Varianten](/help/sites-cloud/administering/content-fragments/authoring.md#variations)**.
+   * Der **Hauptteil** ist im Fragmenteditor unter **[Varianten](/help/sites-cloud/administering/content-fragments/authoring.md#variations)** zugänglich.
 
   >[!NOTE]
   >
-  >Im Editor, der im **Assets** Konsole, **Main** als **Master**.
+  >Im Editor, der über die **Assets**-Konsole verfügbar ist, ist der **Hauptteil** als **Primär** gekennzeichnet.
 
 * **Varianten**
 
    * Ausgabedarstellungen von Fragmenttext, eigens zu redaktionellen Zwecken. Diese können mit einem Kanal verbunden sein, doch ist dies nicht obligatorisch; auch für lokale Ad-hoc-Änderungen geeignet;
-   * werden als Kopien von **Main**, können dann aber nach Bedarf bearbeitet werden. Häufig kommt es zu einer Inhaltsüberlappung zwischen den Varianten.
-   * Kann während der Fragmentbearbeitung definiert werden; über das linke Bedienfeld.
-   * werden im Fragment gespeichert, um die Streuung von Inhaltskopien zu vermeiden;
-   * Varianten können [vergleichen und synchronisieren](/help/sites-cloud/administering/content-fragments/authoring.md#compare-and-synchronize-rich-text) mit **Main**.
+   * Werden als Kopien des **Hauptteils** erstellt, können dann aber nach Bedarf bearbeitet werden, wobei es oft inhaltliche Überschneidungen zwischen den Varianten selbst gibt.
+   * Können während der Erstellung von Fragmenten über das linke Bedienfeld definiert werden.
+   * Werden im Fragment gespeichert, um zu vermeiden, dass Inhaltskopien verstreut werden.
+   * Varianten können mit dem **Hauptteil** [verglichen und synchronisiert](/help/sites-cloud/administering/content-fragments/authoring.md#compare-and-synchronize-rich-text) werden.
   <!--
   * Can be [Summarized](/help/sites-cloud/administering/content-fragments/authoring.md#summarizing-text) to quickly truncate the text to a predefined length.
   -->
@@ -167,45 +167,45 @@ Inhaltsfragmente werden:
 
 * als **Assets** gespeichert:
 
-   * Inhaltsfragmente (und ihre Varianten) können über die [Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
-   * Erstellt und bearbeitet im [Inhaltsfragment-Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
+   * Inhaltsfragmente (und deren Varianten) können in der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) erstellt und verwaltet werden.
+   * Erstellt und bearbeitet im [Inhaltsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md).
 
-* Für die Inhaltsbereitstellung mit der [GraphQL-API AEM](/help/headless/graphql-api/content-fragments.md).
+* Zugänglich für die Bereitstellung von Inhalten über die [AEM GraphQL-API](/help/headless/graphql-api/content-fragments.md).
 
-* Verfügbar im [Seiten-Editor mithilfe der Inhaltsfragment-Komponente](/help/sites-cloud/authoring/fragments/content-fragments.md) (Verweiskomponente):
+* Verfügbar im [Seiteneditor unter Verwendung der Inhaltsfragmentkomponente](/help/sites-cloud/authoring/fragments/content-fragments.md) (Verweiskomponente):
 
-   * Die [Inhaltsfragment-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de) ist für Seitenautoren verfügbar. Dadurch können sie das erforderliche Inhaltsfragment entweder im HTML- oder JSON-Format referenzieren und bereitstellen.
+   * Die [Inhaltsfragment-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de) steht für Autorinnen und Autoren der Seite zur Verfügung. Sie ermöglicht das Verweisen und Bereitstellen des erforderlichen Inhaltsfragments im HTML- oder JSON-Format.
 
 Inhaltsfragmente sind eine Inhaltsstruktur mit folgenden Eigenschaften:
 
-* ohne Layout oder Design (Textformatierung ist für Textfelder möglich).
-* Sie sind unabhängig vom Bereitstellungsmechanismus (z. B. Seite oder Kanal).
+* Sie weisen kein Layout oder Design auf (Textformatierung ist in Textfeldern möglich).
+* Sie sind unabhängig vom Bereitstellungsmechanismus (z. B. Seite oder Kanal).
 * Enthalten mindestens einen [Bestandteil](#constituent-parts-of-a-content-fragment).
 * Kann Bilder [enthalten oder mit Bildern verbunden sein](#fragments-with-visual-assets).
 
 ### Fragmente mit visuellen Assets {#fragments-with-visual-assets}
 
-Um Autoren eine bessere Kontrolle über ihren Inhalt zu ermöglichen, können Bilder zu einem Inhaltsfragment hinzugefügt und/oder darin integriert werden.
+Um Autorinnen und Autoren eine bessere Kontrolle über eigene Inhalte zu ermöglichen, können zu einem Inhaltsfragment Bilder hinzugefügt und/oder darin integriert werden.
 
-Assets können auf verschiedene Weise mit einem Inhaltsfragment verwendet werden. Jede davon hat eigene Vorteile:
+Assets können auf verschiedene Weise mit einem Inhaltsfragment verwendet werden; jede hat ihre eigenen Vorteile:
 
-* as a **Inhaltsreferenz**
-* innerhalb einer **Mehrzeiliger Text** field
+* als **Inhaltsverweis**
+* innerhalb eines **mehrzeiligen Textfelds**
 
 ### Bestandteile von Inhaltsfragmenten {#constituent-parts-of-a-content-fragment}
 
-Die Inhaltsfragment-Assets bestehen aus den folgenden Teilen (entweder direkt oder indirekt):
+Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direkt oder indirekt):
 
 * **Fragmentelementen**
 
    * Elemente korrelieren mit den Datenfeldern, die Inhalte enthalten.
-   * Sie verwenden eine [Inhaltsfragmentmodell](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) , um das Inhaltsfragment zu erstellen. Die im Modell angegebenen Elemente (Felder) definieren die Struktur des Fragments. Bei diesen Elementen (Feldern) gibt es verschiedene Datentypen.
+   * Verwenden Sie ein [Inhaltsfragmentmodell](/help/sites-cloud/administering/content-fragments/content-fragment-models.md), um das Inhaltsfragment zu erstellen. Die im Modell angegebenen Elemente (Felder) definieren die Struktur des Fragments. Bei diesen Elementen (Feldern) gibt es verschiedene Datentypen.
 
 * **Fragmentabsätze**
 
    * Textblöcke, häufig mehrzeilig, die als einzelne Entitäten getrennt sind.
 
-   * Ermöglichen die Inhaltssteuerung während der Seitenbearbeitung
+   * Aktivieren Sie die Inhaltskontrolle während der Seitenerstellung.
 
 * **Fragmentmetadaten**
 
@@ -213,7 +213,7 @@ Die Inhaltsfragment-Assets bestehen aus den folgenden Teilen (entweder direkt od
    * Tag-Erstellung möglich:
 
       * Beim Erstellen und Bearbeiten des Fragments
-      * Wenn Sie [Eigenschaften anzeigen oder bearbeiten](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags) im Fragment-Editor
+      * Oder später, wenn Sie im Fragmenteditor [die Eigenschaften anzeigen oder bearbeiten](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
 
   >[!CAUTION]
   >
@@ -221,16 +221,16 @@ Die Inhaltsfragment-Assets bestehen aus den folgenden Teilen (entweder direkt od
 
   >[!CAUTION]
   >
-  >Ein Inhaltsfragmentmodell kann häufig Datenfelder mit dem Namen **Titel** und **Beschreibung** definieren. Wenn diese beiden Felder vorhanden sind, handelt es sich um benutzerdefinierte Felder, die im Inhaltsbereich des Editors aktualisiert werden können.
+  >In einem Inhaltsfragmentmodell werden häufig Datenfelder mit den Namen **Titel** und **Beschreibung** definiert. Wenn diese beiden Felder vorhanden sind, handelt es sich um benutzerdefinierte Felder, die im Inhaltsbereich des Editors aktualisiert werden können.
   >
-  >Das Inhaltsfragment und seine Varianten verfügen auch über Metadaten- (Eigenschaften-)Felder namens **Titel** und **Beschreibung**. Diese beiden Metadatenfelder sind integraler Bestandteil jedes Inhaltsfragments und jeder Variante und werden beim Erstellen des Fragments ursprünglich definiert. Sie können im Bereich &quot;Eigenschaften/Metadaten&quot;des Editors aktualisiert werden.
+  >Das Inhaltsfragment und seine Variationen verfügen auch über Metadatenfelder (Eigenschaftsfelder) namens **Titel** und **Beschreibung**. Diese beiden Metadatenfelder sind integraler Bestandteil jedes Inhaltsfragments und jeder Variation und werden bei der Erstellung des Fragments definiert. Sie können im Bereich „Eigenschaften/Metadaten“ des Editors aktualisiert werden.
 
 * **[Allgemein](#main-and-variations)**
 * **[Varianten](#main-and-variations)**
 
 ### Voraussetzungen für Fragmente {#required-by-fragments}
 
-Zum Erstellen von Inhaltsfragmenten benötigen Sie Folgendes:
+Um Inhaltsfragmente zu erstellen, benötigen Sie:
 
 * **Inhaltsmodelle**
 
@@ -238,14 +238,14 @@ Zum Erstellen von Inhaltsfragmenten benötigen Sie Folgendes:
    * Werden [mithilfe von Tools erstellt](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).
    * Erforderlich zum [Erstellen eines Fragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments).
    * Definiert die Struktur eines Fragments (Titel, Inhaltselemente, Tag-Definitionen).
-   * Für Definitionen des Inhaltsfragmentmodells sind ein Titel und ein Datenelement erforderlich. Alle anderen Elemente sind optional.
-   * Das Modell kann Standardinhalte definieren – sofern zutreffend.
-   * Autoren können die definierte Struktur beim Bearbeiten von Fragmentinhalten nicht ändern. Sie können jedoch den Modell-Editor über den Fragment-Editor öffnen.
-   * Änderungen, die nach dem Erstellen von abhängigen Inhaltsfragmenten an einem Modell vorgenommen werden, können sich auf diese Inhaltsfragmente auswirken.
+   * Definitionen von Inhaltsfragmentmodellen erfordern einen Titel und ein Datenelement. Alle weiteren Elemente sind optional.
+   * Das Modell kann Standardinhalte definieren, sofern anwendbar.
+   * Autorinnen und Autoren können die definierte Struktur beim Bearbeiten von Fragmentinhalten nicht ändern. Sie können jedoch den Modelleditor über den Fragmenteditor öffnen.
+   * Änderungen, die nach dem Erstellen von abhängigen Inhaltsfragmenten an einem Modell vorgenommen wurden, können sich auf diese Inhaltsfragmente auswirken.
 
-Um Ihre Inhaltsfragmente für die Bereitstellung Headless Content zu verwenden, benötigen Sie außerdem:
+Um Ihre Inhaltsfragmente für die Bereitstellung von Headless-Inhalten zu verwenden, benötigen Sie außerdem:
 
-* a [GraphQL-Abfrage](/help/headless/graphql-api/content-fragments.md) , um den erforderlichen Inhalt anzufordern
+* Eine [GraphQL-Abfrage](/help/headless/graphql-api/content-fragments.md) zur Abfrage des gewünschten Inhalts.
 * Diese Inhalte können dann zur Entwicklung Ihrer eigenen SPA für AEM verwendet werden. Weitere Informationen finden Sie in den folgenden Dokumenten:
 
    * [SPA-WKND-Tutorial](/help/implementing/developing/hybrid/wknd-tutorial.md)
@@ -254,22 +254,22 @@ Um Ihre Inhaltsfragmente für die Bereitstellung Headless Content zu verwenden, 
 
 Um Ihre Inhaltsfragmente zum Erstellen von Seiten zu verwenden, benötigen Sie außerdem Folgendes:
 
-* A **Inhaltsfragment-Komponente**
+* Eine **Inhaltsfragmentkomponente**
 
    * Hilft bei der Bereitstellung des Fragments im HTML- und/oder JSON-Format.
    * Erforderlich zum [Referenzieren des Fragments auf einer Seite](/help/sites-cloud/authoring/fragments/content-fragments.md).
-   * Zuständig für das Layout und die Bereitstellung eines Fragments, z. B. Kanäle.
+   * Zuständig für das Layout und die Bereitstellung eines Fragments, z. B. Kanäle.
    * Fragmente benötigen eine oder mehrere dedizierte Komponenten zur Definition des Layouts sowie zur Bereitstellung einiger oder aller Elemente/Varianten und zugehörigen Inhalte.
    * Durch Ziehen eines Fragments auf eine Seite während der Bearbeitung wird die erforderliche Komponente automatisch zugewiesen.
    * Siehe [Inhaltsfragment-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de).
 
 ## Anwendungsbeispiel {#example-usage}
 
-Ein Fragment samt seinen Elementen und Varianten kann zur Erstellung von kohärentem Inhalt für verschiedene Kanäle verwendet werden. Beim Entwerfen Ihres Fragments müssen Sie überlegen, was und wo verwendet werden soll.
+Ein Fragment samt seinen Elementen und Varianten kann zur Erstellung von kohärentem Inhalt für verschiedene Kanäle verwendet werden. Beim Entwurf eines Fragments muss berücksichtigt werden, welche Elemente wo verwendet werden.
 
 ### WKND-Beispiel {#wknd-sample}
 
-Die [WKND-Site und WKND-Freigabe](/help/implementing/developing/introduction/develop-wknd-tutorial.md) Beispiele werden bereitgestellt, anhand derer Sie mehr über AEM as a Cloud Service erfahren können.
+Die Beispiele der [WKND-Site und WKND Shared](/help/implementing/developing/introduction/develop-wknd-tutorial.md) helfen Ihnen dabei, mehr über AEM as a Cloud Service zu erfahren.
 
 <!-- CHECK: which links can/should be used these days? -->
 

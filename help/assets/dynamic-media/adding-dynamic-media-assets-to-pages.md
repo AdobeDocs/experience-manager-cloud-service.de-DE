@@ -8,7 +8,7 @@ exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '3166'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -239,7 +239,7 @@ Sie können die folgende Dynamic Media-Einstellung bearbeiten, indem Sie in der
 
   Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
-* **[!UICONTROL Seitenverhältnisübereinstimmung aktivieren]** - Wenn Dynamic Media eine Ausgabedarstellung mit smartem Zuschneiden mit einem Seitenverhältnis wählen soll, das dem Seitenverhältnis des Originalbilds am besten entspricht, wählen Sie diese Option aus.
+* **[!UICONTROL Seitenverhältnisübereinstimmung aktivieren]**: Wählen Sie diese Option aus, damit Dynamic Media eine intelligente zugeschnittene (Smart-Crop) Ausgabedarstellung mit einem Seitenverhältnis auswählt, das dem Seitenverhältnis des Originalbilds am besten entspricht.
 
 * **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]** – Aktivieren Sie das Kontrollkästchen (Standard), um die Optimierung des DPR (Device Pixel Ratio, Gerätepixelverhältnis) zu ermöglichen.
 

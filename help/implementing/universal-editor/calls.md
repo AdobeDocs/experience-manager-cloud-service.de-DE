@@ -1,44 +1,44 @@
 ---
-title: Universal Editor-Aufrufe
-description: Erfahren Sie mehr über die verschiedenen Arten von Aufrufen, die der universelle Editor an Ihre App sendet, um Sie beim Debugging zu unterstützen.
+title: Aufrufe im universellen Editor
+description: Erfahren Sie mehr über die verschiedenen Arten von Aufrufen, die der universelle Editor an Ihre App sendet, um Sie beim Debuggen zu unterstützen.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 source-git-commit: 1fc53e726f3a15c9ac7d772b4c181a7877e417af
 workflow-type: tm+mt
 source-wordcount: '615'
-ht-degree: 1%
+ht-degree: 90%
 
 ---
 
 
-# Universal Editor-Aufrufe {#calls}
+# Aufrufe im universellen Editor {#calls}
 
-Erfahren Sie mehr über die verschiedenen Arten von Aufrufen, die der universelle Editor an Ihre App sendet, um Sie beim Debugging zu unterstützen.
+Erfahren Sie mehr über die verschiedenen Arten von Aufrufen, die der universelle Editor an Ihre App sendet, um Sie beim Debuggen zu unterstützen.
 
 {{universal-editor-status}}
 
 ## Übersicht {#overview}
 
-Der Universal Editor kommuniziert mit Ihrer instrumentierten App über eine Reihe definierter Aufrufe. Dies ist für transparent und hat keine Auswirkungen auf das Endbenutzererlebnis.
+Der universelle Editor kommuniziert mit Ihrer instrumentierten App über eine Reihe definierter Aufrufe. Dies ist für die Endbenutzenden transparent und hat keine Auswirkungen auf ihr Anwendererlebnis.
 
-Für den Entwickler kann es jedoch nützlich sein, diese Aufrufe zu verstehen und zu verstehen, was sie tun, wenn Sie Ihre Anwendung mit dem universellen Editor debuggen. Wenn Sie Ihre App instrumentiert haben und sie sich nicht wie erwartet verhält, kann es hilfreich sein, die **Netzwerk** Registerkarte der Entwicklertools in Ihrem Browser und überprüfen Sie die Aufrufe beim Bearbeiten von Inhalten in Ihrer App.
+Für die Entwickelnden kann es jedoch nützlich sein, diese Aufrufe zu verstehen und zu wissen, was sie tun, wenn sie Ihre Anwendung mit dem universellen Editor debuggen. Wenn Sie Ihre Anwendung instrumentiert haben und sie sich nicht wie erwartet verhält, kann es hilfreich sein, die Registerkarte **Netzwerk** der Entwickler-Tools in Ihrem Browser zu öffnen und die Aufrufe zu inspizieren, während Sie Inhalte in Ihrer Anwendung bearbeiten.
 
-![Beispiel eines Detailaufrufs auf der Registerkarte &quot;Netzwerk&quot;der Entwicklertools des Browsers](assets/calls-network-tab.png)
+![Beispiel für einen Detailaufruf auf der Netzwerk-Registerkarte der Entwickler-Tools des Browsers](assets/calls-network-tab.png)
 
-* Die **Nutzlast** enthält Details dazu, was der Editor aktualisiert, einschließlich der Angabe, was aktualisiert werden soll und wie es aktualisiert werden soll.
-* Die **Reaktion** enthält Details dazu, was vom Editor-Dienst genau aktualisiert wurde. Dadurch soll die Aktualisierung des Inhalts im Editor erleichtert werden. In bestimmten Fällen kann die `move` aufrufen, muss die gesamte Seite aktualisiert werden.
+* Die **Payload** des Aufrufs enthält Details zu dem, was vom Editor aktualisiert wird, einschließlich der Angabe, was zu aktualisieren ist und wie es zu aktualisieren ist.
+* Die **Antwort** enthält Details darüber, was genau vom Editor-Dienst aktualisiert wurde. Dadurch soll die Aktualisierung des Inhalts im Editor erleichtert werden. In bestimmten Fällen, wie bei einem `move`-Aufruf, muss die gesamte Seite aktualisiert werden.
 
 Nachdem ein Aufruf erfolgreich abgeschlossen wurde, werden Ereignisse ausgelöst, die die Payload der Anfrage und der Antwort enthalten, die für Ihre eigene App angepasst werden können. Lesen Sie das Dokument . [Universelle Editor-Ereignisse](/help/implementing/universal-editor/events.md) für weitere Details.
 
-Im Folgenden finden Sie eine Liste der Aufruftypen, die der Universal Editor an Ihre App sendet, sowie Beispiel-Payloads und -Antworten.
+Im Folgenden finden Sie eine Liste der Arten von Aufrufen, die der universelle Editor an Ihre App richtet, sowie Beispiele für Payloads und Antworten.
 
-## Aktualisieren {#update}
+## Update {#update}
 
-Ein `update` wird aufgerufen, wenn Sie Inhalte in Ihrer App mit dem universellen Editor bearbeiten. Die `update` behält die Änderungen bei.
+Ein `update`-Aufruf erfolgt, wenn Sie Inhalte in Ihrer App mit dem universellen Editor bearbeiten. `update` behält die Änderungen bei.
 
 Die Payload enthält Details dazu, was an das JCR zurückgeschrieben werden soll.
 
 * `resource`: Der zu aktualisierende JCR-Pfad
-* `prop`: Die aktualisierte JCR-Eigenschaft
+* `prop`: Die JCR-Eigenschaft, die aktualisiert werden soll
 * `type`: Der JCR-Werttyp der zu aktualisierenden Eigenschaft
 * `value`: Die aktualisierten Daten
 
@@ -82,12 +82,12 @@ Die Payload enthält Details dazu, was an das JCR zurückgeschrieben werden soll
 
 ## Details {#details}
 
-A `details` wird aufgerufen, wenn Ihre App im universellen Editor geladen wird, um den App-Inhalt abzurufen.
+Ein `details`-Aufruf erfolgt beim Laden Ihrer App im universellen Editor, um den Inhalt der App abzurufen.
 
-Die Payload enthält die zu rendernden Daten sowie Details dazu, was die Daten darstellen (das Schema), damit sie im universellen Editor gerendert werden können.
+Die Payload enthält die Daten, die gerendert werden sollen, sowie Details darüber, was die Daten darstellen (das Schema), damit sie im universellen Editor gerendert werden können.
 
-* Für eine Komponente ruft der universelle Editor nur eine `data` -Objekt, da das Schema der Daten in der App definiert ist.
-* Bei Inhaltsfragmenten ruft der universelle Editor auch eine `schema` -Objekt, da das Inhaltsfragmentmodell im JCR definiert ist.
+* Für eine Komponente ruft der universelle Editor nur ein `data`-Objekt ab, da das Schema der Daten in der App definiert ist.
+* Für Inhaltsfragmente ruft der universelle Editor ebenfalls ein `schema`-Objekt ab, da das Inhaltsfragmentmodell im JCR definiert ist.
 
 >[!BEGINTABS]
 
@@ -146,11 +146,11 @@ Die Payload enthält die zu rendernden Daten sowie Details dazu, was die Daten d
 
 ## Hinzufügen {#add}
 
-Ein `add` wird aufgerufen, wenn Sie mit dem universellen Editor eine neue Komponente in Ihrer App platzieren.
+Ein `add`-Aufruf erfolgt, wenn Sie mit dem universellen Editor eine neue Komponente in Ihrer App platzieren.
 
-Die Payload enthält eine `path` -Objekt, das enthält, wo der Inhalt hinzugefügt werden soll.
+Die Payload enthält ein `path`-Objekt, das den Pfad enthält, wo der Inhalt hinzugefügt werden soll.
 
-Er umfasst auch `content` -Objekt mit zusätzlichen Objekten für endpunktspezifische Details des zu speichernden Inhalts [für jedes Plug-in.](/help/implementing/universal-editor/architecture.md) Wenn Ihre App beispielsweise auf Inhalten von AEM und Magento basiert, enthält die Payload ein Datenobjekt für jedes System.
+Es enthält auch ein `content`-Objekt mit zusätzlichen Objekten für endpunktspezifische Details des zu speichernden Inhalts [für jedes Plug-in.](/help/implementing/universal-editor/architecture.md) Wenn Ihre App beispielsweise auf Inhalten von AEM und Magento basiert, enthält die Payload ein Datenobjekt für jedes System.
 
 >[!BEGINTABS]
 
@@ -204,9 +204,9 @@ Er umfasst auch `content` -Objekt mit zusätzlichen Objekten für endpunktspezif
 
 ## Verschieben {#move}
 
-A `move` -Aufruf tritt auf, wenn Sie eine Komponente mit dem universellen Editor in Ihrer App verschieben.
+Ein `move`-Aufruf erfolgt, wenn Sie eine Komponente innerhalb Ihrer App mit dem universellen Editor verschieben.
 
-Die Payload enthält eine `from` Objekt, das definiert, wo die Komponente war, und ein `to` -Objekt, das definiert, wo es verschoben wurde.
+Die Payload enthält ein `from`-Objekt, das angibt, wo sich die Komponente befand, und ein `to`-Objekt, das angibt, wohin sie verschoben wurde.
 
 >[!BEGINTABS]
 
@@ -260,7 +260,7 @@ Die Payload enthält eine `from` Objekt, das definiert, wo die Komponente war, u
 
 ## Remove {#remove}
 
-A `remove` wird aufgerufen, wenn Sie eine Komponente in Ihrer App mit dem universellen Editor löschen.
+Ein `remove`-Aufruf erfolgt, wenn Sie mit dem universellen Editor eine Komponente innerhalb Ihrer App löschen.
 
 Die Payload enthält den Pfad des entfernten Objekts.
 
@@ -308,11 +308,11 @@ Die Payload enthält den Pfad des entfernten Objekts.
 
 >[!ENDTABS]
 
-## Publish {#publish}
+## Veröffentlichen {#publish}
 
-A `publish` wird aufgerufen, wenn Sie auf **Veröffentlichen** im universellen Editor, um den bearbeiteten Inhalt zu veröffentlichen.
+Ein `publish`-Aufruf erfolgt, wenn Sie im universellen Editor auf die Schaltfläche **Veröffentlichen** klicken, um den von Ihnen bearbeiteten Inhalt zu veröffentlichen.
 
-Der Universal Editor durchläuft den Inhalt und generiert eine Liste von Verweisen, die ebenfalls veröffentlicht werden müssen.
+Der universelle Editor durchläuft den Inhalt und generiert eine Liste von Verweisen, die ebenfalls veröffentlicht werden müssen.
 
 >[!BEGINTABS]
 

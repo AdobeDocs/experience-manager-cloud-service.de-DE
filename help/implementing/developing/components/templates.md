@@ -5,7 +5,7 @@ exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '3267'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -320,7 +320,7 @@ Ihre Site-spezifischen Vorlagentypen sollten an einer mit dem folgenden Pfad ver
 
 * `/apps/settings/wcm/template-types`
 
-Definitionen für Ihre benutzerdefinierten Vorlagentypen sollten in benutzerdefinierten Ordnern (empfohlen) oder alternativ im Ordner `global` gespeichert werden. Beispiel:
+Definitionen für Ihre benutzerdefinierten Vorlagentypen sollten in benutzerdefinierten Ordnern (empfohlen) oder alternativ im Ordner `global` gespeichert werden. Zum Beispiel:
 
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/template-types`
 * `/conf/<my-folder>/settings/wcm/template-types`
@@ -371,7 +371,7 @@ Den Code dieser Seite finden Sie auf GitHub.
 
 ## Vorlagendefinitionen {#template-definitions}
 
-Definitionen für bearbeitbare Vorlagen werden in [benutzerdefinierten Ordnern](#template-folders) (empfohlen) oder alternativ im Ordner `global` gespeichert. Beispiel:
+Definitionen für bearbeitbare Vorlagen werden in [benutzerdefinierten Ordnern](#template-folders) (empfohlen) oder alternativ im Ordner `global` gespeichert. Zum Beispiel:
 
 * `/conf/<my-folder>/settings/wcm/templates`
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`
@@ -502,7 +502,7 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
    * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften**](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
    * Legen Sie die folgende Eigenschaft fest:
      `cq:allowedTemplates`
-Im `jcr:content` -Knoten der erforderlichen Verzweigung.
+Auf dem `jcr:content`-Knoten der gewünschten Verzweigung.
 
    Beispielsweise mit dem Wert:
 

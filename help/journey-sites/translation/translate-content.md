@@ -8,7 +8,7 @@ exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2526'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Für Inhaltsverantwortliche, die auch für die Übersetzung verantwortlich ist, 
 
 1. Gehen Sie zu **Navigation** > **Sites** und wählen Sie Ihr Projekt aus.
 1. Suchen Sie den Sprachstamm Ihres Projekts. Wenn Ihr Sprachstamm beispielsweise Englisch ist, `/content/<your-project>/en`.
-   * Vor der ersten Übersetzung, dass die anderen Sprachordner leere Platzhalter sind. Diese werden normalerweise vom Inhaltsarchitekten erstellt.
+   * Vor der ersten Übersetzung sind die anderen Sprachordner leere Platzhalter. Diese werden normalerweise vom Inhaltsarchitekten erstellt.
 1. Suchen Sie den Sprachstamm Ihres Projekts.
 1. Wählen Sie die Leistenauswahl aus und zeigen Sie das Bedienfeld **Verweise** an.
 1. Wählen Sie **Sprachkopien** aus.
@@ -123,7 +123,7 @@ Das Projekt ist in mehrere Karten unterteilt.
 
 * **Zusammenfassung**: Diese Karte zeigt die grundlegenden Kopfzeileninformationen des Projekts, einschließlich des Verantwortlichen, der Sprache und des Übersetzungsdienstleisters.
 * **Übersetzungsauftrag**: Diese Karten bieten einen Überblick über den tatsächlichen Übersetzungsauftrag, einschließlich Status, Anzahl der Assets usw. Im Allgemeinen gibt es pro Sprache einen Auftrag, wobei der ISO-2-Sprach-Code an den Auftragsnamen angehängt wird.
-   * Wann [automatische Erstellung von Übersetzungsaufträgen,](#automatically-creating) AEM erstellt die Aufträge asynchron und sie werden möglicherweise nicht sofort im Projekt angezeigt.
+   * Wenn [automatisch Übersetzungsaufträge erstellt werden,](#automatically-creating) erstellt AEM die Aufträge asynchron und sie erscheinen möglicherweise nicht sofort im Projekt.
 * **Team**: Auf dieser Karte werden die Benutzer angezeigt, die an diesem Übersetzungsprojekt mitarbeiten. Diese Tour behandelt dieses Thema nicht.
 * **Aufgaben**: Zusätzliche Aufgaben im Zusammenhang mit der Übersetzung der Inhalte, z. B. zum Erstellen von Elementen oder Workflow-Elementen. Diese Tour behandelt dieses Thema nicht.
 

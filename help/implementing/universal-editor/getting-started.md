@@ -5,7 +5,7 @@ exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: 799ca20f8787afffd783c93a2480e096fffb1566
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 90%
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ Dieses Dokument führt Sie durch diese Schritte.
 
 ## Anfordern des Zugriffs auf den universellen Editor {#request-access}
 
-Zunächst müssen Sie den Zugriff auf den universellen Editor anfordern. Öffnen [`https://experience.adobe.com/#/aem/editor&#39;](https://experience.adobe.com/#/aem/editor), melden Sie sich an und überprüfen Sie, ob Sie Zugriff auf den universellen Editor haben.
+Zunächst müssen Sie den Zugriff auf den universellen Editor anfordern. Öffnen Sie die Seite [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), melden Sie sich an und validieren Sie, ob Sie Zugriff auf den universellen Editor haben.
 
 Wenn Sie keinen Zugriff haben, können Sie ihn über ein Formular anfordern, das auf derselben Seite verlinkt ist.
 
@@ -59,7 +59,7 @@ import "@adobe/universal-editor-cors";
 
 ### Alternative für Nicht-React-Apps {#alternative}
 
-Wenn Sie keine React-App implementieren und/oder serverseitiges Rendering erfordern, besteht eine alternative Methode darin, Folgendes in den Hauptteil des Dokuments einzuschließen.
+Wenn Sie keine React-App implementieren und/oder Server-seitiges Rendering erforderlich ist, besteht eine alternative Methode darin, Folgendes in den Hauptteil des Dokuments einzuschließen.
 
 ```html
 <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST" async></script>

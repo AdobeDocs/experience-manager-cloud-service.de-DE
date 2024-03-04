@@ -8,7 +8,7 @@ exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '4326'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -330,13 +330,13 @@ In der folgenden Tabelle werden die Mobile Viewer-Gesten aufgeführt, die auf i
    <td><p>Schwenkt</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Auswählen</strong></p> </td>
+   <td><p><strong>Auswahl</strong></p> </td>
    <td><p>Blendet Flyout-Fenster ein</p> </td>
    <td><p>Blendet die Benutzeroberfläche ein oder aus</p> </td>
    <td><p>Blendet die Benutzeroberfläche ein oder aus</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Doppelklicken</strong></p> </td>
+   <td><p><strong>Doppelt auswählen</strong></p> </td>
    <td><p>Trifft nicht zu</p> </td>
    <td><p>Zoomt ein oder setzt zurück</p> </td>
    <td><p>Zoomt ein oder setzt zurück</p> </td>
@@ -384,7 +384,7 @@ Experience Manager zeigt viele verschiedene Viewer-Vorgaben, wenn Sie ein Asset 
 
    ![chlimage_1-222](/help/assets/dynamic-media/assets/chlimage_1-222.png)
 
-1. Ändern Sie in der Eigenschaft limit die Zahl auf die gewünschte Zahl, z. B. `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. Ändern Sie in der Eigenschaft „Limit“ den Wert auf die gewünschte Zahl, z. B. `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`.
 1. Wählen Sie **[!UICONTROL Alle speichern]** aus.
 
 ## Erstellen von Viewer-Vorgaben {#creating-a-new-viewer-preset}

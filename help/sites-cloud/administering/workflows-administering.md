@@ -7,7 +7,7 @@ exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
 
    >[!NOTE]
    >
-   > Um eine gesunde Workflow-Instanz zu erhalten, befolgen Sie die Best Practices unter [Regelmäßige Bereinigung der Workflow-Instanzen](#regular-purging-of-workflow-instances) oder [Best Practices für Workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
+   > Um eine gesunde Workflow-Instanz zu erhalten, befolgen Sie die Best Practices unter [Regelmäßige Bereinigung der Workflow-Instanzen](#regular-purging-of-workflow-instances) oder [Best Practices für Workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=de).
 
 ## Durchsuchen von Workflow-Instanzen {#search-workflow-instances}
 
@@ -111,7 +111,7 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
 Schlägt ein Workflow fehl, ermöglicht Ihnen AEM mit der **Fehler-Konsole** die Untersuchung und das Ergreifen entsprechender Maßnahmen, sobald die ursprüngliche Ursache behoben wurde:
 
 * **Fehlerdetails**
-Öffnet ein Fenster zum Anzeigen der **Fehlermeldung**, **Schritt und **Fehlerstapel**.
+Öffnet ein Fenster, das die **Fehlermeldung**, den **Schritt und den **Fehlerstapel** anzeigt.
 
 * **Offener Verlauf** Die Details des Workflow-Verlaufs werden angezeigt.
 

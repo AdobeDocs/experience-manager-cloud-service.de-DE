@@ -8,13 +8,13 @@ exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '4072'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Interaktive Bilder{#interactive-images}
 
-Sie können aus statischen Bildern ganz einfach ansprechende Erlebnisse für Kunden machen, indem Sie Hotspots mit Shopping-Funktion auf ein Bild ziehen und dort ablegen. Hotspots mit Shopping-Funktion kombinieren zusätzliche Informationen über ein Produkt oder eine Dienstleistung mit einer direkten POS-Funktion, wie „In den Einkaufswagen legen“ oder „Kaufen“. Kunden können diese Hotspots auswählen, die direkt mit dem Produkt oder Service verknüpft sind, es zu einem Warenkorb hinzufügen oder mit einer Webseite verknüpft werden. Direkte Erlebnisse wie diese erhöhen Kundeninteraktionen und Konversionen auf Ihrer Website.
+Sie können aus statischen Bildern ganz einfach ansprechende Erlebnisse für Kunden machen, indem Sie Hotspots mit Shopping-Funktion auf ein Bild ziehen und dort ablegen. Hotspots mit Shopping-Funktion kombinieren zusätzliche Informationen über ein Produkt oder eine Dienstleistung mit einer direkten POS-Funktion, wie „In den Einkaufswagen legen“ oder „Kaufen“. Kundinnen und Kunden können diese Hotspots wählen und so eine direkte Verbindung mit dem Produkt oder Service herstellen, es zum Warenkorb hinzufügen oder eine Web-Seite aufrufen. Direkte Erlebnisse wie diese erhöhen Kundeninteraktionen und Konversionen auf Ihrer Website.
 
 Die folgende Abbildung zeigt ein Banner mit Shopping-Funktion mit einem Schnellansichts-Popup. Benutzer können die Schnellansicht aktivieren, indem sie auf den Kreis oder „Hotspot“ des Modells tippen.
 
@@ -251,31 +251,31 @@ Siehe [(Optional) Anzeigen einer Vorschau für interaktive Bilder](#optional-pre
 
    * Bewegen Sie den Mauszeiger über dem Bild und klicken Sie dann auf **[!UICONTROL Mehr Aktionen]** (Ellipsensymbol) > **[!UICONTROL Bearbeiten]**.
 
-   * Um es in der Seite „Detailansicht“ zu öffnen, wählen Sie das Bild aus. Wählen Sie in der Symbolleiste **[!UICONTROL Bearbeiten]**.
+   * Um es in der Seite „Detailansicht“ zu öffnen, wählen Sie das Bild aus. Wählen Sie in der Symbolleiste **[!UICONTROL Bearbeiten]**. 
 
-1. Wählen Sie links oben auf der Seite die Option **[!UICONTROL Hotspot hinzufügen]** (Fingernensymbol), um die Hotspot-Verwaltungsseite zu öffnen.
+1. Wählen Sie oben links auf der Seite **[!UICONTROL Hotspot hinzufügen]** (Finger-Auswahlsymbol) aus, um die Hotspot-Verwaltungsseite zu öffnen.
 1. Wählen Sie in der linken oberen Ecke der Seite **[!UICONTROL Hotspot]** aus.
 
    1. Wählen Sie in der rechten oberen Ecke der Seite „Hotspot-Verwaltung“ **[!UICONTROL Hotspot]** aus.
    1. Wählen Sie im Bild die Stelle aus, an der der Hotspot angezeigt werden soll. Ziehen Sie bei Bedarf den Hotspot, um seine Position anzupassen. Sie können auch die Pfeiltasten verwenden, um die Position eines ausgewählten Hotspots zu steuern.
    1. Fügen Sie bei Bedarf weitere Hotspots hinzu, indem Sie die Schritte a und b wiederholen.
-   1. (Optional) Um einen Hotspot zu löschen, wählen Sie ihn im Bild aus und klicken Sie auf **[!UICONTROL Löschen]** (Papierkorbsymbol) unter dem **[!UICONTROL Hotspots]** -Überschrift.
+   1. (Optional) Um einen Hotspot zu löschen, wählen Sie ihn auf dem Bild aus und wählen dann **[!UICONTROL Löschen]** (Papierkorb-Symbol) unter der Überschrift **[!UICONTROL Hotspots]** aus.
 
 1. Geben Sie im Textfeld „Name“ den Namen des Hotspots ein. Dieser Name wird auch in der Dropdown-Liste „Ausgewählte Hotspots“ angezeigt.
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Wählen Sie **[!UICONTROL Schnellansicht]** aus.
 
-      * Wenn Sie Experience Manager Sites- oder E-Commerce-Kunde sind, wählen Sie das Produktauswahlsymbol (Lupe) aus, um die Seite „Produkt wählen“ zu öffnen. Wählen Sie das Produkt aus, das Sie verwenden möchten, und wählen Sie **Auswählen** in der oberen rechten Ecke der Seite. Sie gelangen zurück zur Hotspot-Verwaltungsseite.
+      * Wenn Sie Experience Manager Sites- oder E-Commerce-Kunde sind, wählen Sie das Produktauswahlsymbol (Lupe) aus, um die Seite „Produkt wählen“ zu öffnen. Wählen Sie das gewünschte Produkt aus, und wählen Sie dann in der oberen rechten Ecke der Seite **Auswählen**. Sie gelangen zurück zur Hotspot-Verwaltungsseite.
       * Wenn Sie *kein* Experience Manager Sites- oder E-Commerce-Kunde sind, gehen Sie wie folgt vor:
 
          * Siehe [Identifizieren von Hotspot-Variablen](#optional-identifying-hotspot-variables); Sie müssen diese Variablen definieren.
          * Geben Sie anschließend manuell den SKU-Wert ein. Geben Sie im Textfeld „SKU-Wert“ die SKU des Produkts ein. Der Variablenteil der Schnellansichtsvorlage wird automatisch mit dem eingegebenen SKU-Wert ausgefüllt. Dadurch wird sichergestellt, dass das System den getippten Hotspot mit der Schnellansicht einer bestimmten SKU verknüpfen kann.
-         * (Optional) Wenn andere Variablen in der Schnellansicht zur weiteren Identifizierung eines Produkts verwendet werden, wählen Sie **[!UICONTROL Generische Variable hinzufügen]**. Geben Sie im Textfeld eine zusätzliche Variable an. Beispielsweise ist `category=Mens` eine hinzugefügte Variable.
+         * (Optional) Wenn andere Variablen in der Schnellansicht vorhanden sind, die verwendet werden, um ein Produkt weitergehend zu identifizieren, wählen Sie **[!UICONTROL Generische Variable hinzufügen]**. Geben Sie im Textfeld eine zusätzliche Variable an. Beispielsweise ist `category=Mens` eine hinzugefügte Variable.
 
    * Wählen Sie **[!UICONTROL Hyperlink]** aus.
 
-      * Wenn Sie Experience Manager Sites-Kunde sind, wählen Sie das Symbol für die Site-Auswahl (Ordner) aus. Navigieren Sie zu einer URL. Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
+      * Wenn Sie Kundin bzw. Kunde von Experience Manager Sites sind, wählen Sie das Site-Auswahlsymbol (Ordner) aus. Navigieren Sie zu einer URL. Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
       * Wenn Sie Einzelkunde sind, geben Sie im Textfeld „HREF“ den vollständigen URL-Pfad zu einer verknüpften Web-Seite an.
 
    Vergessen Sie nicht anzugeben, ob der Link auf einer neuen Browser-Registerkarte (empfohlener Standard) oder auf derselben Registerkarte geöffnet werden soll.
@@ -284,7 +284,7 @@ Siehe [(Optional) Anzeigen einer Vorschau für interaktive Bilder](#optional-pre
 
    * Wählen Sie **[!UICONTROL Experience Fragment]** aus.
 
-      * Wenn Sie AEM Sites-Kunde sind, klicken Sie auf das Suchsymbol (Lupe), um die Seite „Experience Fragment“ zu öffnen. Wählen Sie das Experience Fragment aus, das Sie verwenden möchten. Wählen Sie anschließend **[!UICONTROL Auswählen]** in der oberen rechten Ecke der Seite. Sie gelangen zurück zur Hotspot-Verwaltungsseite.
+      * Wenn Sie AEM Sites-Kunde sind, klicken Sie auf das Suchsymbol (Lupe), um die Seite „Experience Fragment“ zu öffnen. Wählen Sie das Experience Fragment aus, das Sie verwenden möchten. Wählen Sie dann in der oberen rechten Ecke der Seite **[!UICONTROL Auswählen]**. Sie gelangen zurück zur Hotspot-Verwaltungsseite.
 Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
       * Legen Sie die Breite und Höhe des Experience Fragment fest, so wie es im Banner angezeigt werden soll.
@@ -320,7 +320,7 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-medi
 1. Navigieren Sie in der Ansicht „Assets“ zu einem vorhandenen interaktiven Bild, das Sie erstellt haben, und wählen Sie es aus, um es in der Vorschau zu öffnen.
 1. Wählen Sie in der linken oberen Ecke der Seite „Vorschau“ in der Dropdown-Liste „Inhalt“ **[!UICONTROL Viewer]** aus.
 1. Wählen Sie in der Liste „Viewer“ **[!UICONTROL Shoppable_Banner]** oder den Namen der von Ihnen erstellten Viewer-Vorgabe für interaktive Bilder aus.
-1. Um die zugehörigen Aktionen von Hotspots zu testen, wählen Sie Hotspots auf dem Bild aus.
+1. Um die mit den Hotspots verbundenen Aktionen zu testen, wählen Sie Hotspots auf dem Bild aus.
 
 ## Veröffentlichen von interaktiven Bild-Assets {#publishing-interactive-image-assets}
 

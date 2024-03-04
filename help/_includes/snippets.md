@@ -2,7 +2,7 @@
 source-git-commit: 45b263651f6139b1c7f83ff3485186b272ba1a4f
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 71%
+ht-degree: 87%
 
 ---
 # Snippets {#snippets}
@@ -19,7 +19,7 @@ ht-degree: 71%
 
 >[!NOTE]
 >
->Der universelle Editor befindet sich noch in der Entwicklung und seine Funktionen können sich ändern und von den in diesem Dokument beschriebenen unterscheiden.
+>Der universelle Editor befindet sich noch in der Entwicklung, und seine Funktionen können sich ändern und von den in diesem Dokument beschriebenen abweichen.
 
 ## Siehe auch {#see-also}
 
@@ -53,8 +53,8 @@ ht-degree: 71%
 * [An OneDrive senden](/help/forms/configure-submit-action-onedrive.md)
 * [AEM-Workflow aufrufen](/help/forms/configure-submit-action-workflow.md)
 * [An Power Automate senden](/help/forms/forms-microsoft-power-automate-integration.md)
-* [Submit to Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Adaptives Formular mit Salesforce-Anwendung verbinden](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [An Workfront Fusion senden](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [Verbinden eines adaptiven Formulars mit einer Salesforce-Anwendung](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [Verbinden eines adaptiven Formulars mit Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## AEM Authoring mit frühzeitigem Zugriff auf Edge Delivery Services {#aem-authoring-edge-early-access}

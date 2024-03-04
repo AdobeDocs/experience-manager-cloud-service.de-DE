@@ -8,7 +8,7 @@ exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
 source-git-commit: 22fc488cd507a3504c472eab3dea8daa7e63b81c
 workflow-type: tm+mt
 source-wordcount: '935'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optiona
 * Download
 * Ablauf
 * Änderung
-* Veröffentlichung
+* Veröffentlichen
 * [!DNL Brand Portal]-Veröffentlichung
 * Speichernutzung
 * Dateien
@@ -105,7 +105,7 @@ Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optiona
    ![Auswählen oder Aufheben der Auswahl von Berichtsspalten](assets/custom_columns.png)
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
-1. Im [!UICONTROL Asset-Berichte] -Seite, basiert der Berichterstellungsstatus beispielsweise auf dem aktuellen Status des Berichtauftrags, [!UICONTROL Erfolg], [!UICONTROL Fehlgeschlagen], [!UICONTROL In Warteschlange]oder [!UICONTROL Geplant]. Derselbe Status wird auch im Benachrichtigungseingang angezeigt. Klicken Sie zur Ansicht der Berichtsseite auf den Berichts-Link. Alternativ wählen Sie den Bericht aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Anzeigen]**.
+1. Auf der Seite [!UICONTROL Asset-Berichte] basiert der angezeigte Berichterstellungsstatus auf dem aktuellen Status des Berichtauftrags, zum Beispiel [!UICONTROL Erfolg], [!UICONTROL Fehlgeschlagen], [!UICONTROL In Warteschlange] oder [!UICONTROL Geplant]. Derselbe Status wird auch im Benachrichtigungseingang angezeigt. Klicken Sie zur Ansicht der Berichtsseite auf den Berichts-Link. Alternativ wählen Sie den Bericht aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Anzeigen]**.
 
    <!--![A generated report](assets/report_page.png)-->
    ![generierter Berichtsstatus](assets/report-status.JPG)
@@ -116,7 +116,7 @@ Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optiona
    >
    >Sie können Berichte auf der Grundlage der Ereignisse erstellen, die in den letzten 360 Tagen generiert wurden. Experience Manager bewahrt die Benutzer-ID-Daten 30 Tage lang auf.
 
-## Benutzerdefinierte Spalten zu Berichten hinzufügen {#add-custom-columns}
+## Hinzufügen benutzerdefinierter Spalten zu Berichten {#add-custom-columns}
 
 Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre speziellen Anforderungen anzuzeigen:
 
@@ -133,7 +133,7 @@ Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weite
 * Hochladen
 * Ablauf
 * Änderung
-* Veröffentlichung
+* Veröffentlichen
 * [!DNL Brand Portal]-Veröffentlichung
 * Dateien
 

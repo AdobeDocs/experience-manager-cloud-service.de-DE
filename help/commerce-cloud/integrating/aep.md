@@ -14,7 +14,7 @@ exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
 source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
 workflow-type: tm+mt
 source-wordcount: '1866'
-ht-degree: 81%
+ht-degree: 85%
 
 ---
 
@@ -35,7 +35,7 @@ Die folgenden Schritte zeigen, wie Sie `addToCart`-Ereignisdaten von mit AEM ger
 
 ## Voraussetzungen {#prerequisites}
 
-Verwenden Sie eine lokale Entwicklungs Umgebung, um diese Demo durchzuführen. Dazu gehört eine laufende Instanz von AEM, die konfiguriert und mit einer Adobe Commerce-Instanz verbunden ist. Überprüfen Sie die Anforderungen und Schritte zum [Einrichten einer lokalen Entwicklungsumgebung mit dem AEM as Cloud Service SDK](../develop.md).
+Verwenden Sie eine lokale Entwicklungsumgebung, um diese Demo abzuschließen. Dazu gehört eine laufende Instanz von AEM, die konfiguriert und mit einer Adobe Commerce-Instanz verbunden ist. Überprüfen Sie die Anforderungen und Schritte zum [Einrichten einer lokalen Entwicklungsumgebung mit dem AEM as Cloud Service SDK](../develop.md).
 
 Sie benötigen außerdem Zugriff auf [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html?lang=de) und Berechtigungen zum Erstellen des Schemas, des Datensatzes und der Datenströme für die Datenerfassung. Weitere Informationen finden Sie unter [Verwaltung von Berechtigungen](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html?lang=de).
 
@@ -45,11 +45,11 @@ Um eine funktionierende lokale Umgebung für __AEM Commerce as a Cloud Service__
 
 ### Lokales Setup
 
-Befolgen Sie die Schritte zur [lokalen Einrichtung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?lang=de#lokales-setup) , damit Sie einen funktionierenden AEM Commerce as a Cloud Service Umgebung haben.
+Befolgen Sie die [Lokale Einrichtung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?lang=de#lokales-setup) Schritte, damit Sie über eine as a Cloud Service Arbeitsumgebung AEM Commerce verfügen können.
 
 ### Projekt-Setup
 
-Befolgen Sie die [AEM Projekt Archetyp-Schritte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?lang=de#project) , um ein Werbetreibender neues AEM Commerce-Projekt (CIF) zu erstellen.
+Befolgen Sie die [AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?lang=de#project) Schritte, damit Sie ein brandneues AEM Commerce-Projekt (CIF) erstellen können.
 
 >[!TIP]
 >
@@ -70,7 +70,7 @@ Die lokal bereitgestellte Commerce-Site `My Demo StoreFront` mit Standard-Code u
 
 ### Installation der Connector-Abhängigkeiten von Peregrine und CIF-AEP
 
-Um die Ereignisdaten von den Kategorie- und Produktseiten dieser AEM Commerce-Website abzurufen und zu senden, installieren Sie die Schlüsselpakete `npm` im `ui.frontend` Modul des AEM Commerce-Projekts.
+Um die Ereignisdaten aus den Kategorie- und Produktseiten dieser AEM Commerce-Site zu erfassen und zu senden, installieren Sie den Schlüssel `npm` Pakete in `ui.frontend` -Modul des AEM Commerce-Projekts.
 
 Navigieren Sie zum Modul `ui.frontend` und installieren Sie die erforderlichen Pakete, indem Sie die folgenden Befehle über die Befehlszeile ausführen.
 
@@ -94,7 +94,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 Im Rahmen des Build-Prozesses von Maven wird die bereinigte npm-Installation (mithilfe von `npm ci`) ausgelöst. Dies erfordert auch das Arument `--force`.
 
-Navigieren Sie zur POM-Datei `pom.xml` im Stammverzeichnis des Projekts und suchen Sie nach dem Ausführungsblock `<id>npm ci</id>`. Aktualisieren Sie den Block, sodass er liken Folgendes aussieht:
+Navigieren Sie zur POM-Datei `pom.xml` im Stammverzeichnis des Projekts und suchen Sie nach dem Ausführungsblock `<id>npm ci</id>`. Aktualisieren Sie den Baustein so, dass er wie folgt aussieht:
 
 ```xml
 <execution>
@@ -133,9 +133,9 @@ Wechseln Sie von der standardmäßigen Datei `.babelrc` für das Konfigurationsd
 
 ### Konfigurieren von Webpack für die Verwendung von Babel
 
-Um die JavaScript Dateien mit dem Babel-Lader (`babel-loader`) und Webpack zu transpilieren, bearbeiten Sie die `webpack.common.js` Datei.
+So übertragen Sie die JavaScript-Dateien mit dem Babel-Lader (`babel-loader`) und Webpack, bearbeiten Sie die `webpack.common.js` -Datei.
 
-Navigieren Sie zum `ui.frontend` Modul und aktualisieren Sie die `webpack.common.js` Datei, sodass Sie den Eigenschaft Wert wie folgt Regel `module` können:
+Navigieren Sie zum `ui.frontend` und aktualisieren Sie die `webpack.common.js` -Datei, damit Sie die folgende Regel in der `module` Eigenschaftswert:
 
 ```javascript
 {
@@ -154,7 +154,7 @@ Damit [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-c
 
 1. Navigieren Sie zum `ui.frontend`-Modul und speichern Sie die Datei als `./src/main/possibleTypes.js`
 
-1. Aktualisieren Sie den `webpack.common.js` Dateiabschnitt, `DefinePlugin` sodass Sie die erforderlichen statischen Variablen während Build Zeit ersetzen können.
+1. Aktualisieren Sie die `webpack.common.js` -Datei `DefinePlugin` -Abschnitt, damit Sie die erforderlichen statischen Variablen während der Build-Zeit ersetzen können.
 
    ```javascript
    const { DefinePlugin } = require('webpack');
@@ -226,7 +226,7 @@ Um die React-basierten Peregrine- und CIF-Kernkomponenten zu initialisieren, ers
 
    >[!IMPORTANT]
    >
-   >Obwohl Sie vielleicht bereits mit der [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) Datei aus __AEM Guides - CIF Venia Projekt__ vertraut sind, gibt es einige Änderungen, die Sie an dieser Datei vornehmen müssen. Überprüfen Sie zunächst alle __TODO__-Kommentare. Anschließend suchen Sie innerhalb der Eigenschaft `eventsCollector` nach dem `eventsCollector > aep`-Objekt und aktualisieren die Eigenschaften `orgId` und `datastreamId` auf die korrekten Werte. [Weitere Informationen](./aep.md#add-aep-values-to-aem)
+   >Vielleicht kennen Sie bereits die [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) Datei aus __AEM Guides - CIF Venia-Projekt__, müssen Sie einige Änderungen an dieser Datei vornehmen. Überprüfen Sie zunächst alle __TODO__-Kommentare. Anschließend suchen Sie innerhalb der Eigenschaft `eventsCollector` nach dem `eventsCollector > aep`-Objekt und aktualisieren die Eigenschaften `orgId` und `datastreamId` auf die korrekten Werte. [Weitere Informationen](./aep.md#add-aep-values-to-aem)
 
 1. Erstellen Sie eine Datei `App.js` mit folgendem Inhalt. Diese Datei ähnelt einer typischen React-App-Startpunktdatei und enthält React- und benutzerdefinierte Hooks sowie die Verwendung von React Context, um die Integration von Experience Platform zu erleichtern.
 
@@ -333,7 +333,7 @@ Um die React-basierten Peregrine- und CIF-Kernkomponenten zu initialisieren, ers
 
 ### Erstellen und Bereitstellen des aktualisierten AEM-Projekts
 
-Um sicherzustellen, dass die oben genannten Änderungen an der Paketinstallation, dem Code und der Konfiguration korrekt sind, erstellen Sie das aktualisierte AEM Commerce-Projekt mit dem folgenden Maven-Befehl neu und stellen Sie es bereit: `$ mvn clean install -PautoInstallSinglePackage`.
+Um sicherzustellen, dass die oben genannten Änderungen an Paketinstallation, -code und -konfiguration korrekt sind, erstellen Sie das aktualisierte AEM Commerce-Projekt mit dem folgenden Maven-Befehl neu und stellen Sie es bereit: `$ mvn clean install -PautoInstallSinglePackage`.
 
 ## Setup von Experience Platform {#aep-setup}
 
@@ -368,7 +368,7 @@ Um die Struktur für Commerce-Ereignisdaten zu definieren, müssen Sie ein Schem
 
 ### Erstellen eines Datensatzes
 
-Um die Ereignisdaten zu speichern, müssen Sie einen Datensatz erstellen, der der Schemadefinition entspricht. Ein Datensatz ist ein Datenspeicherung- und Verwaltungskonstrukt für eine Sammlung von Daten – in der Regel eine Tabelle –, die einen Schema (Spalten) und Felder (Zeilen) enthält.
+Um die Ereignisdaten zu speichern, müssen Sie einen Datensatz erstellen, der der Schemadefinition entspricht. Ein Datensatz ist ein Speicher- und Verwaltungskonstrukt für eine Sammlung von Daten, normalerweise eine Tabelle, die ein Schema (Spalten) und Felder (Zeilen) enthält.
 
 1. Navigieren Sie im Browser zur Produkt-Startseite von __Adobe Experience Platform__. Beispiel: <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
@@ -395,7 +395,7 @@ Um die Ereignisdaten zu speichern, müssen Sie einen Datensatz erstellen, der de
 
 ### Datenstrom erstellen
 
-Alle Applikationen die folgenden Schritte auf, damit Sie einen Datenstrom im Experience Platform erstellen können.
+Führen Sie die folgenden Schritte aus, damit Sie einen Datastream im Experience Platform erstellen können.
 
 1. Navigieren Sie im Browser zur Produkt-Startseite von __Adobe Experience Platform__. Beispiel: <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
@@ -432,7 +432,7 @@ Nach Abschluss des oben genannten Experience Platform-Setups sollten Sie `datast
 
 ## Triggern des `addToCart`-Ereignisses und Überprüfen der Datenerfassung {#event-trigger-verify}
 
-Mit den obigen Schritten ist die Einrichtung von AEM Commerce und Experience Platform abgeschlossen. Sie können jetzt eine `addToCart` Ereignis auslösen und Datenerfassung mit der Google Chrom-Erweiterung Snowplow Inspector _und Datensatz__ In der Produkt-UI _können Metriken und Diagramme__ umgeschaltet werden.
+Mit den obigen Schritten ist die Einrichtung von AEM Commerce und Experience Platform abgeschlossen. Sie können jetzt einen Trigger `addToCart` -Ereignis eintreten und die Datenerfassung mithilfe der Google Chrome-Erweiterung überprüfen _Snowploinspektor_ und Datensatz __Metriken und Diagramme__ in der Produktoberfläche ein-/ausschalten.
 
 Um das Ereignis zu triggern, können Sie den AEM-Autor oder den Veröffentlichungs-Service Ihrer lokalen Einrichtung verwenden. Verwenden Sie für dieses Beispiel den AEM-Autor, indem Sie sich bei Ihrem Konto anmelden.
 
@@ -443,7 +443,7 @@ Um das Ereignis zu triggern, können Sie den AEM-Autor oder den Veröffentlichun
 1. Klicken Sie auf eine beliebige Produktkarte auf der __Produktseite__ und wählen Sie __Farbe, Größe__, um die Schaltfläche __Zum Warenkorb hinzufügen__ zu aktivieren.
 
 
-1. Öffnen Sie die __Snowplow Inspector-Erweiterung__ über das Erweiterungsfenster des Browser und wählen Sie Experience Platform Wed SDK __auf der linken Leiste aus__.
+1. Öffnen Sie im Erweiterungsbedienfeld des Browsers die Erweiterung __Snowplow Inspector__ und wählen Sie in der linken Leiste die Option __Experience Platform Web SDK__ aus.
 
 
 1. Kehren Sie zur __Produktseite__ zurück und klicken Sie auf die Schaltfläche __Zum Warenkorb hinzufügen__. Dadurch werden Daten an die Experience Platform gesendet. Die Erweiterung __Adobe Experience Platform Debugger__ zeigt die Ereignisdetails an.
@@ -452,7 +452,7 @@ Um das Ereignis zu triggern, können Sie den AEM-Autor oder den Veröffentlichun
 
 
 
-1. Navigieren Sie in Experience Platform Produkt-UI unter __dem__ Tab Dataset Aktivität __zu Datasets > My Demo StoreFront__. Wenn __&quot;Metriken und Diagramme__ &quot; aktiviert ist, werden die Ereignis-Daten-Statistiken angezeigt.
+1. Navigieren Sie in der Experience Platform-Produkt-Benutzeroberfläche zu __Datensätze > My Demo StoreFront__ unter der __Datensatzaktivität__ Registerkarte. Wenn __Metriken und Diagramme__ aktiviert ist, werden die Ereignisdatenstatistiken angezeigt.
 
    ![Statistiken zu Datensatzdaten in Experience Platform](../assets/aep-integration/AEP-Dataset-AddToCart-EventData.png)
 
@@ -460,9 +460,9 @@ Um das Ereignis zu triggern, können Sie den AEM-Autor oder den Veröffentlichun
 
 ## Implementierungsdetails {#implementation-details}
 
-Der [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) baut auf dem [Daten Verbindung für Adobe Systems Commerce](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html) auf, das Teil des [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) Projekts ist.
+Der [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) basiert auf [Data Connection für Adobe Commerce](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html), was Teil des [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)-Projekts ist.
 
-Mit dem PWA Studio-Projekt können Sie Storefronts als Progressive Web Applications (PWA) erstellen, die von Adobe Commerce oder Magento Open Source unterstützt werden. Das Projekt enthält auch eine Komponentenbibliothek mit dem Namen [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) für das Hinzufügen von Logiken zu visuellen Komponenten. Der [Peregrin-Bibliothek](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) bietet auch die benutzerdefinierten React-Hooks, die von [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) verwendet werden, um nahtlos zu integrieren mit Experience Platform.
+Mit dem PWA Studio-Projekt können Sie Storefronts als Progressive Web Applications (PWA) erstellen, die von Adobe Commerce oder Magento Open Source unterstützt werden. Das Projekt enthält auch eine Komponentenbibliothek mit dem Namen [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) für das Hinzufügen von Logiken zu visuellen Komponenten. Die [Peregrin-Bibliothek](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) stellt auch die benutzerdefinierten React-Hooks bereit, die von [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) zur nahtlosen Integration in Experience Platform verwendet werden.
 
 
 ## Unterstützte Ereignisse {#supported-events}
@@ -492,7 +492,7 @@ __Profile-XDM-Ereignisse:__
 
 1. Anmelden
 1. Konto erstellen
-1. Bearbeiten Konto
+1. Konto bearbeiten
 
 
 ## Zusätzliche Ressourcen {#additional-resources}

@@ -5,7 +5,7 @@ exl-id: 03c08616-2203-4b90-bed6-4836266e2507
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Der Seitenvergleich ermöglicht es Benutzenden, die aktuelle Seite mit Launches,
 
 Beim Vergleichen von Versionen einer Seite wird die vorherige Version, die jemand vergleichen möchte, von AEM im Hintergrund neu erstellt, um den Vergleich zu erleichtern. Diese frühere Version ist notwendig, um den Inhalt [für den Vergleich nebeneinander zu rendern](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
-Dieser Wiederherstellungsvorgang wird intern von AEM durchgeführt und ist für die Benutzenden transparent, ohne dass sie eingreifen müssen. Ein Administrator, der das Repository beispielsweise im CRXDE Lite ansieht, würde diese neu erstellten Versionen jedoch innerhalb der Inhaltsstruktur sehen.
+Dieser Wiederherstellungsvorgang wird intern von AEM durchgeführt und ist für die Benutzenden transparent, ohne dass sie eingreifen müssen. Admins, die das Repository beispielsweise in CRXDE Lite anzeigen, würden diese neu erstellten Versionen jedoch in der Inhaltsstruktur sehen.
 
 Beim Vergleich von Inhalten wird die gesamte Baumstruktur bis zur zu vergleichenden Seite an der folgenden Stelle neu erstellt:
 
@@ -29,7 +29,7 @@ Beim Vergleich von Inhalten wird die gesamte Baumstruktur bis zur zu vergleichen
 
 Es wird automatisch eine Bereinigungsaufgabe ausgeführt, um diesen temporären Inhalt zu bereinigen.
 
-## Beschränkungen {#limitations}
+## Einschränkungen {#limitations}
 
 Der Vergleich erfolgt Client-seitig über einen DOM-Vergleich, wodurch der Vergleichsprozess vereinfacht wird. Es gibt jedoch mehrere Einschränkungen, die von der Entwicklungsperson berücksichtigt werden müssen.
 

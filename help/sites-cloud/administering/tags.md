@@ -5,7 +5,7 @@ exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2200'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Weitere technische Details zur Funktionsweise von Tags finden Sie unter [AEM-Tag
 So greifen Sie auf die Tagging-Konsole zu:
 
 1. Melden Sie sich bei der Authoring-Umgebung mit Administratorberechtigungen an.
-1. Wählen Sie im globalen Navigationsmenü die Option **`Tools`** > **`General`** >
+1. Wählen Sie im globalen Navigationsmenü den Befehl **`Tools`** > **`General`** >
    **`Tagging`**.
 
 ![Die Tagging-Konsole in AEM](/help/sites-cloud/administering/assets/tagging-console.png)
@@ -91,7 +91,7 @@ Ein Namespace wird zum Organisieren anderer Tags verwendet. Er kann als Tag der 
 
 1. Wählen Sie nach Eingabe der erforderlichen Informationen die Option **Erstellen** aus.
 
-Der Namespace wird erstellt. In der Tagging-Konsole befinden sich die Namespaces auf der untersten Ebene (in der Spalte ganz links in der Konsole) und werden durch Ordnersymbole dargestellt, die ihre Art als &quot;Container&quot;oder Gruppierung anderer Tags widerspiegeln.
+Der Namespace wird erstellt. In der Tagging-Konsole befinden sich die Namespaces auf der niedrigsten Ebene (in der Spalte ganz links in der Konsole) und werden durch Ordnersymbole dargestellt, die ihre Art als „Container“ oder Gruppierung anderer Tags widerspiegeln.
 
 Sie können in diesem Namespace jetzt [neue Tags erstellen](#creating-tags) oder [vorhandene Tags verwalten.](#managing-tags)
 
@@ -163,7 +163,7 @@ Es gibt verschiedene Aktionen, die Sie zum Verwalten und Organisieren vorhandene
 * [Zusammenführen](#merging-tags)
 * [Löschen](#deleting-tags)
 
-Wenn in der Symbolleiste ausreichend Speicherplatz zur Verfügung steht, sind zusätzliche Optionen hinter dem Auslassungssymbol verfügbar.
+Zusätzliche Optionen sind hinter dem Symbol mit den Auslassungspunkten verfügbar, wenn in der Symbolleiste nicht genügend Platz vorhanden ist.
 
 ### Anzeigen der Tag-Eigenschaften {#viewing-tag-properties}
 
@@ -243,7 +243,7 @@ Es kann nützlich sein, zu sehen, auf welchen Inhalt ein bestimmtes Tag angewend
 
    ![Anzeigen der Details der Tag-Verweise](assets/tag-references-detail.png)
 
-Bewegen Sie die Maus oder wählen Sie einen verweisenden Inhalt in der Liste aus, um den vollständigen Pfad des Inhalts anzuzeigen.
+Bewegen Sie den Mauszeiger über einen verweisenden Inhalt in der Liste oder wählen Sie ihn aus, um den vollständigen Inhaltspfad anzuzeigen.
 
 Weitere Informationen zum Auswählen der Anzeigemodi und über die Leiste finden Sie unter [Grundlegende Handhabung](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
@@ -359,7 +359,7 @@ Angenommen, das Tag `Animals` soll ins Deutsche und Französische übersetzt wer
 
 1. Wählen Sie das zu übersetzende Tag und dann in der Symbolleiste die Option **Bearbeiten** aus.
 
-1. Im **Tag bearbeiten** im Dialogfeld **Lokalisierung** die Zielsprache, z. B. Deutsch, auswählen.
+1. Wählen Sie im Dialogfeld **Tag bearbeiten** in der Spalte **Lokalisierung** die Zielsprache aus, z. B. Deutsch.
 
 1. Geben Sie im angezeigten Feld **Deutsch** den übersetzten Titel an.
 

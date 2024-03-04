@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: a8fbf0a9a1f7e12b6a668544b1a67d8551abf1b7
 workflow-type: tm+mt
 source-wordcount: '5135'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -119,7 +119,7 @@ Die [persistenten Abfragen](/help/headless/graphql-api/persisted-queries.md) sin
 
 GraphQL-Abfragen über POST werden nicht empfohlen, da sie nicht zwischengespeichert werden. Daher ist der Dispatcher auf einer Standardinstanz so konfiguriert, dass er solche Abfragen blockiert.
 
-GraphQL unterstützt zwar auch GET-Anfragen, diese können jedoch Einschränkungen (z. B. die Länge der URL) erreichen, die durch die Verwendung persistenter Abfragen vermieden werden können.
+GraphQL unterstützt zwar auch GET-Anfragen, diese können jedoch Einschränkungen unterliegen (z. B. die Länge der URL), die durch die Verwendung persistierter Abfragen vermieden werden können.
 
 Weitere Informationen finden Sie unter [Aktivieren der Caching-Funktion für persistierte Abfragen](/help/headless/deployment/dispatcher-caching.md).
 
@@ -257,7 +257,7 @@ GraphQL für AEM unterstützt eine Liste von Typen. Alle unterstützten Datentyp
 | Aufzählung | `String` | Wird verwendet, um eine Option aus einer Liste von Optionen anzuzeigen, die bei der Modellerstellung definiert wurde |
 | Tags | `[String]` | Wird verwendet, um eine Liste von Zeichenfolgen anzuzeigen, die in AEM verwendete Tags darstellen |
 | Inhaltsreferenz | `String`, `[String]` | Wird verwendet, um den Pfad zu einem anderen Asset in AEM anzuzeigen |
-| Fragmentreferenz |  *Ein Modelltyp* <br><br>Einzelnes Feld: `Model` - Modelltyp, direkt referenziert <br><br>Multifield mit einem referenzierten Typ: `[Model]` - Array des Typs `Model`, die direkt aus dem Array referenziert wird <br><br>Multifield mit mehreren referenzierten Typen: `[AllFragmentModels]` - Array aller Modelltypen, referenziert aus Array mit Vereinigungstyp |  Wird verwendet, um auf ein oder mehrere Inhaltsfragmente bestimmter Modelltypen zu verweisen, die beim Erstellen des Modells definiert wurden |
+| Fragmentreferenz |  *Ein Modelltyp* <br><br>Einzelnes Feld: `Model` – Modelltyp, direkt referenziert <br><br>Multifeld, mit einem referenzierten Typ: `[Model]`: Array vom Typ `Model`, direkt referenziert von Array <br><br>Multifeld, mit mehreren referenzierten Typen: `[AllFragmentModels]`: Array aller Modelltypen, referenziert von Array mit Vereinigungstyp |  Wird verwendet, um auf ein oder mehrere Inhaltsfragmente bestimmter Modelltypen zu verweisen, die beim Erstellen des Modells definiert wurden |
 
 {style="table-layout:auto"}
 
@@ -286,7 +286,7 @@ Der folgende Code zeigt die Pfade aller Inhaltsfragmente an, die auf der Grundla
 }
 ```
 
-Um ein einzelnes Inhaltsfragment eines bestimmten Typs abzurufen, müssen Sie zuerst dessen Pfad bestimmen. Beispiel:
+Um ein einzelnes Inhaltsfragment eines bestimmten Typs abzurufen, müssen Sie zuerst dessen Pfad bestimmen. Zum Beispiel:
 
 ```graphql
 {
@@ -355,7 +355,7 @@ Weitere Informationen finden Sie unter [Beispielabfrage für Metadaten – Liste
 
 #### Varianten {#variations}
 
-Das Feld `_variations` wurde implementiert, um die Abfrage der Varianten eines Inhaltsfragments zu vereinfachen. Beispiel:
+Das Feld `_variations` wurde implementiert, um die Abfrage der Varianten eines Inhaltsfragments zu vereinfachen. Zum Beispiel:
 
 ```graphql
 {
@@ -523,7 +523,7 @@ Eine Filterdefinition (als das `filter`-Argument an eine Abfrage übergeben) ent
 * Jede Unterdefinition enthält das `_expressions`-Array, das die Ausdrucksgruppe bereitstellt, und das `_logOp`-Feld, das den logischen Operator definiert, mit dem die Ausdrücke kombiniert werden sollten
 * Jeder Ausdruck wird durch den Wert (`value`-Feld) und den Operator (`_operator`-Feld) definiert, mit dem der Inhalt eines Felds verglichen werden soll
 
-Sie können es weglassen `_logOp` , wenn Sie Elemente mit `AND` und `_operator` , wenn Sie nach Gleichheit suchen möchten, da dies die Standardwerte sind.
+Sie können `_logOp` auslassen, wenn Sie Elemente mit `AND` kombinieren wollen, und `_operator`, wenn Sie auf Gleichheit prüfen wollen, da dies die Standardwerte sind.
 
 Das folgende Beispiel zeigt eine vollständige Abfrage, die alle Personen filtert, die über eine `lastName` von `Provo` verfügen oder `sjö` enthalten, ohne die Groß-/Kleinschreibung zu beachten:
 
@@ -581,7 +581,7 @@ Die Sortierkriterien:
    * ASC (aufsteigend) oder DESC (absteigend); standardmäßig wird ASC angewendet
    * die Richtung kann pro Feld angegeben werden. Dies bedeutet, dass Sie ein Feld in aufsteigender Reihenfolge sortieren können, ein anderes in absteigender Reihenfolge (name, firstName DESC)
 
-Beispiel:
+Zum Beispiel:
 
 ```graphql
 query {
@@ -613,7 +613,7 @@ Sie können auch ein Feld innerhalb eines verschachtelten Fragments mithilfe des
 >
 >Dies kann sich negativ auf die Leistung auswirken.
 
-Beispiel:
+Zum Beispiel:
 
 ```graphql
 query {
@@ -735,9 +735,9 @@ Auf diese Weise können Sie Bildausgabeformate für die JSON-Bereitstellung dyna
 
 Die Lösung in GraphQL bietet Ihnen folgende Möglichkeiten:
 
-* URL anfordern: Verwenden Sie `_dynamicUrl` auf `ImageRef` reference
+* Eine URL anfordern: Verwenden Sie `_dynamicUrl` für den Verweis `ImageRef`.
 
-* Parameter weitergeben: hinzufügen `_assetTransform` in die Listenüberschrift, in der die Filter definiert sind
+* Parameter übergeben: Fügen Sie `_assetTransform` in den Header der Liste ein, in der Ihre Filter definiert sind.
 
 <!-- 
 >[!NOTE]
@@ -912,7 +912,7 @@ Verwenden Sie beispielsweise die folgenden URLs, um die vorherigen Beispiele dir
      >
      >Das abschließende `;`ist obligatorisch, um die Liste der Parameter sauber zu beenden.
 
-### Einschränkungen bei der Web-optimierten Bildbereitstellung {#web-optimized-image-delivery-limitations}
+### Einschränkungen bei der Web-optimierten Bereitstellung von Bildern {#web-optimized-image-delivery-limitations}
 
 Die folgenden Einschränkungen gelten:
 
@@ -1049,26 +1049,26 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
    * Für die Bildbereitstellung:
 
-      * `_authorURL`: die vollständige URL zum Bild-Asset in AEM Autoreninstanz
-      * `_publishURL`: die vollständige URL zum Bild-Asset bei AEM Veröffentlichung
+      * `_authorURL`: ist die vollständige URL zum Bild-Asset in AEM Author
+      * `_publishURL`: ist die vollständige URL zum Bild-Asset in AEM Publish
 
-      * Für [Web-optimierte Bildbereitstellung](#web-optimized-image-delivery-in-graphql-queries) (von DAM-Assets):
+      * Für die [Web-optimierte Bildbereitstellung](#web-optimized-image-delivery-in-graphql-queries) (von DAM-Assets):
 
-         * `_dynamicUrl`: die vollständige URL zum Web-optimierten DAM-Asset auf der `ImageRef` reference
+         * `_dynamicUrl`: die vollständige URL zum Web-optimierten DAM-Asset auf dem Verweis `ImageRef`
 
            >[!NOTE]
            >
-           >`_dynamicUrl` ist die bevorzugte URL für Web-optimierte DAM-Assets und sollte die Verwendung von `_path`, `_authorUrl`, und `_publishUrl` wann immer möglich.
+           >`_dynamicUrl` ist die bevorzugte URL für Web-optimierte DAM-Assets und sollte, wann immer möglich, die Verwendung von `_path`, `_authorUrl` und `_publishUrl` ersetzen.
 
-         * `_assetTransform`: zum Übergeben von Parametern in die Listenüberschrift, in der die Filter definiert sind
+         * `_assetTransform`: zur Übergabe von Parametern im Header der Liste, in der Ihre Filter definiert sind
 
          * Siehe:
 
-            * [Beispielabfrage für eine Web-optimierte Bildbereitstellung mit vollständigen Parametern](#web-optimized-image-delivery-full-parameters)
+            * [Beispielabfrage für die Web-optimierte Bereitstellung von Bildern mit allen Parametern](#web-optimized-image-delivery-full-parameters)
 
-            * [Beispielabfrage für eine Web-optimierte Bildbereitstellung mit einem einzelnen angegebenen Parameter](#web-optimized-image-delivery-single-query-variable)
+            * [Beispielabfrage für die Web-optimierte Bereitstellung von Bildern mit einem einzigen angegebenen Parameter](#web-optimized-image-delivery-single-query-variable)
 
-   * `_tags`: um die IDs von Inhaltsfragmenten oder Varianten anzuzeigen, die Tags enthalten. Dies ist ein Array von `cq:tags` Kennungen.
+   * `_tags`: um die IDs von Inhaltsfragmenten oder Varianten anzuzeigen, die Tags enthalten (dies ist ein Array von `cq:tags`-Kennungen).
 
       * Siehe [Beispielabfrage – Namen aller Städte, die als Städtereisen markiert sind](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
       * Siehe [Beispielabfrage für Inhaltsfragmentvarianten eines bestimmten Modells, an die ein bestimmtes Tag angehängt ist](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
@@ -1081,7 +1081,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
    * Und Operationen:
 
-      * `_operator` : Anwendung spezifischer Operatoren; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
+      * `_operator`: bestimmte Operatoren anwenden: `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
          * Siehe [Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)
          * Siehe [Beispielabfrage – Alle Abenteuer, bei denen `_path` mit einem bestimmten Präfix beginnt](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
 
@@ -1122,9 +1122,9 @@ Siehe [Authentifizierung für AEM-GraphQL-Remote-Abfragen in Inhaltsfragmenten](
 
 Zum Schutz vor potenziellen Problemen gibt es Standardbeschränkungen für Abfragen:
 
-* Die Abfrage darf nicht mehr als 1M (1024 * 1024) Zeichen enthalten
+* Die Abfrage darf nicht mehr als 1 Million (1024 × 1024) Zeichen enthalten.
 * Die Abfrage darf nicht mehr als 15.000 Token enthalten.
-* Die Abfrage darf nicht mehr als 200000 Whitespace-Token enthalten.
+* Die Abfrage darf nicht mehr als 200.000 Whitespace-Token enthalten.
 
 Außerdem müssen Sie Folgendes beachten:
 

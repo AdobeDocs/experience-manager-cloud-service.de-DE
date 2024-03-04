@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 25af074bcb32e47732b27bacf10c8d3435299440
 workflow-type: tm+mt
 source-wordcount: '2713'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -137,7 +137,7 @@ Es gibt weitere benachbarte Dienste:
    * Ist für die Anzeige von Kundendaten wie Lizenzierungsmetriken (z. B. Inhaltsanforderungen, Speicher, Benutzende) oder Nutzungsberichten (z. B. die Anzahl der Uploads und Downloads) zuständig.
    * Die Kundendaten können über APIs und innerhalb von Produktbenutzeroberflächen (z. B. Cloud Manager) bereitgestellt werden.
 * Der Real-User Metric(RUM)-Dienst:
-   * ist für die Erfassung von Schlüsselmetriken aus einem Kundenerlebnis (z. B. Seitenansichten, Web-Lebenszyklen, Konversionsereignisse) und die Beantwortung von zugehörigen Abfragen (z. B. Top-Seitenansichten für eine bestimmte Domäne in den letzten 7 Tagen) zuständig.
+   * Ist für die Erfassung von Schlüsselmetriken aus einem Kundenerlebnis (z. B. Seitenansichten, Web-Lebenszyklen, Konversionsereignisse) und für die Beantwortung verknüpfter Abfragen zuständig (z. B. Top-Seitenansichten für eine bestimmte Domain in den letzten 7 Tagen).
 * Der Asset Compute-Service:
    * ist für die Verarbeitung hochgeladener Bilder, Videos und Dokumente zuständig, z. B. PDF- und Adobe Photoshop-Dateien. Die Verarbeitung kann Adobe Sensei verwenden, um Bild- und Videometadaten (wie beschreibende Tags oder Primärfarbtöne) zu extrahieren und dann Ausgabedarstellungen (wie unterschiedliche Größen oder Formate) mit Zugriff auf APIs wie die Adobe Photoshop- und Adobe Lightroom-APIs zu generieren.
 * Der Identity Management-Dienst (IMS):

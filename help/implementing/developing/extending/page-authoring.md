@@ -5,7 +5,7 @@ exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -158,7 +158,7 @@ Den Code dieser Seite finden Sie auf [GitHub](https://github.com/Adobe-Marketing
 
 ## Hinzufügen einer neuen Seitenaktion {#add-a-new-page-action}
 
-So fügen Sie der Seitensymbolleiste eine neue Seitenaktion hinzu, z. B. eine **Zurück zu Sites** Aktion (Konsole).
+So fügen Sie der Seitensymbolleiste eine neue Seitenaktion hinzu, z. B. die Aktion **Zurück zu Sites** (Konsole).
 
 ### Codebeispiel {#code-sample-3}
 

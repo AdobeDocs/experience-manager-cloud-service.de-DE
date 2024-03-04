@@ -1,13 +1,13 @@
 ---
 title: Verwalten von Inhaltsfragmenten
-description: Erfahren Sie, wie Sie Ihre AEM Inhaltsfragmente über die Konsole und den Editor verwalten, um Inhalte als Grundlage für Headless-Inhalte zu erstellen oder um Seiten zu erstellen.
+description: Erfahren Sie, wie Sie Ihre AEM-Inhaltsfragmente über die Konsole und den Editor verwalten, um Inhalte als Grundlage für Ihre Headless-Inhalte oder für die Seitenbearbeitung zu verwalten.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '2620'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
    * Sie können einen bestimmten Zweig des Baums auswählen
    * Die Größe kann geändert werden, um verschachtelte Ordner anzuzeigen
 * Das Haupt-/rechte Bedienfeld – von hier aus können Sie:
-   * Anzeigen der Liste aller Inhaltsfragmente im ausgewählten Zweig des Baums:
+   * Eine Liste aller Inhaltsfragmente im ausgewählten Zweig des Baums anzeigen:
       * Es werden die Inhaltsfragmente aus dem ausgewählten Ordner und dazu alle untergeordneten Ordner angezeigt.
          * Der Speicherort wird durch die Breadcrumbs angegeben. Diese können auch verwendet werden, um den Speicherort zu ändern:
       * [Es werden Informationen zu den einzelnen Fragmenten angezeigt.](#information-content-fragments)
@@ -192,7 +192,7 @@ Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angez
 
      ![Inhaltsfragmentkonsole – Dialogfeld „Verweise“](assets/cf-managing-console-references-dialog.png)
 
-* **Sprache**: Geben Sie eine [Sprache](#language-copies-fragment) copy
+* **Sprache**: Angabe jedweder [Sprachkopie](#language-copies-fragment)
 
    * Gibt das Gebietsschema des Inhaltsfragments zusammen mit der Gesamtzahl der mit dem Inhaltsfragment verknüpften Gebietsschemata/[Sprachkopien](#language-copies-fragment) an.
 
@@ -223,10 +223,10 @@ So erstellen Sie ein Inhaltsfragment:
 
 1. Das Dialogfeld **Neues Inhaltsfragment** wird geöffnet. Hier können Sie Folgendes angeben:
 
-   * **Standort** - Automatisch mit dem aktuellen Standort ausgefüllt, Sie können jedoch bei Bedarf einen anderen Ort auswählen.
-   * **Inhaltsfragmentmodell** - Wählen Sie aus der Dropdown-Liste das Modell aus, das als Grundlage für das Fragment verwendet werden soll.
+   * **Speicherort** – Dies wird automatisch mit dem aktuellen Speicherort ausgefüllt, Sie können jedoch bei Bedarf einen anderen Speicherort auswählen.
+   * **Inhaltsfragmentmodell** – Wählen Sie aus der Dropdown-Liste das Modell aus, das als Grundlage für das Fragment verwendet werden soll.
    * **Titel**
-   * **Name** - basierend auf der Variablen **Titel**, Sie können sie jedoch bei Bedarf bearbeiten.
+   * **Name** – Dies wird basierend auf dem **Titel** automatisch ausgefüllt, kann jedoch bei Bedarf bearbeitet werden.
    * **Beschreibung**
 
    ![Dialogfeld „Neues Inhaltsfragment“](assets/cf-managing-new-cf-dialog.png)
@@ -373,17 +373,17 @@ Wenn das entsprechende Dialogfeld geöffnet wird, können Sie den gewünschten S
 
 ## Suchen und Ersetzen {#find-and-replace}
 
-Die **Ersetzen** -Aktion ist verfügbar (in der oberen Symbolleiste), um angegebenen Text in den ausgewählten Inhaltsfragmenten zu suchen und zu ersetzen.
+Die Aktion **Ersetzen** ist verfügbar (in der oberen Symbolleiste), um den angegebenen Text in den ausgewählten Inhaltsfragmenten zu suchen und zu ersetzen.
 
 ![Suchen und Ersetzen](assets/cf-managing-find-replace.png)
 
-Vor der Ersetzung werden die Validierungskriterien überprüft und Sie werden über etwaige Konflikte informiert, sodass Sie die Ersatzzeichenfolge ändern oder nur die validierten Instanzen ersetzen können.
+Vor dem Ersetzen werden die Validierungskriterien überprüft und Sie werden über etwaige Konflikte informiert, sodass Sie die Ersatz-Zeichenfolge ändern oder nur die validierten Instanzen ersetzen können.
 
 >[!NOTE]
 >
->Die Aktion &quot;Suchen und Ersetzen&quot;kann nur für maximal 20 ausgewählte Inhaltsfragmente ausgeführt werden (gleichzeitig).
+>Die Aktion „Suchen und Ersetzen“ kann nur für maximal 20 ausgewählte Inhaltsfragmente (gleichzeitig) ausgeführt werden.
 >
->Wenn Sie mehr als 20 Inhaltsfragmente auswählen, wird die Nachricht angezeigt **Suche und Ersetzung sind nicht möglich**.
+>Wenn Sie mehr als 20 Inhaltsfragmente auswählen, wird die Nachricht **Suchen und Ersetzen ist nicht möglich** angezeigt.
 
 ![Ersetzen bestätigen](assets/cf-managing-confirm-replace.png)
 

@@ -6,7 +6,7 @@ exl-id: 74215a70-45c8-4b7f-ba30-60c332de07e9
 source-git-commit: 69798b1ac3758d37c4e2f480ccc23bae24d6a814
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 5%
+ht-degree: 42%
 
 ---
 
@@ -24,7 +24,7 @@ In AEM Screens Cloud können Kunden einen Bericht zum Status der Geräteinaktivi
 
 * Kundenname
 * IMS-Organisations-ID
-* Häufigkeit planen: Geben Sie eine Uhrzeit oder Häufigkeit in Stunden an (z. B. 1), zu der dieser Monitor E-Mails senden soll.
+* Häufigkeit: Geben Sie eine Zeit oder eine Häufigkeit in Stunden (z. B. 1) an, zu der der Service E-Mails senden soll.
 * Ping-Timeout: Gibt das Intervall in Minuten an, nach dem ein Gerät als nicht erreichbar betrachtet werden soll.
 * E-Mail-ID(s) : E-Mail-ID(s), an die der Bericht gesendet wird
 

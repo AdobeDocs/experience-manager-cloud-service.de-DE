@@ -8,7 +8,7 @@ exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '4976'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,34 +25,34 @@ Lernen Sie, wie Sie die Video-Assets in [!DNL Adobe Experience Manager Assets] v
 
 ## Hochladen und Anzeigen der Vorschau von Video-Assets {#upload-and-preview-video-assets}
 
-Sie können Video-Assets in einem unterstützten Format hochladen und in einer Vorschau anzeigen in [!DNL Experience Manager Assets].
+Sie können Video-Assets im unterstützten Format auf [!DNL Experience Manager Assets] hochladen und eine Vorschau anzeigen.
 <!-- It generates previews for video assets with the extension MP4. -->
 
 ### Hochladen von Video-Assets
 
 Gehen Sie wie folgt vor, um ein Video-Asset hochzuladen:
 
-1. Navigieren Sie im Ordner &quot;Digitale Assets&quot;oder in den Unterordnern zu dem Speicherort, an dem Sie das Asset hinzufügen müssen.
-1. Klicks **[!UICONTROL Erstellen]** Wählen Sie in der Symbolleiste und **[!UICONTROL Dateien]**. <br>Alternativ können Sie eine Datei auf die Benutzeroberfläche ziehen.
-Weitere Informationen [Hochladen von Assets](manage-digital-assets.md#uploading-assets) in [!DNL Experience Manager Assets].
+1. Navigieren Sie im Ordner „Digitale Assets“ (oder dessen Unterordnern) zum Speicherort, an dem Sie das Asset hinzufügen möchten.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Dateien]**. <br>Alternativ können Sie eine Datei auf die Benutzeroberfläche ziehen.
+In [!DNL Experience Manager Assets] finden Sie weitere Informationen zum [Hochladen von Assets](manage-digital-assets.md#uploading-assets).
 
 <!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
 1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
 
 ### Vorschau von Video-Assets
 
-Sie können eine Vorschau von Videos in unterstützten Ausgabeformaten im [!DNL Assets] -Benutzeroberfläche. Gehen Sie wie folgt vor, um eine Vorschau eines Video-Assets anzuzeigen:
+Sie können in der [!DNL Assets]-Benutzeroberfläche eine Vorschau der Videos in den unterstützten Ausgabedarstellungen anzeigen. Gehen Sie wie folgt vor, um eine Vorschau für ein Video-Asset anzuzeigen:
 
-1. Hochladen eines Video-Assets in einem unterstützten Format [!DNL Experience Manager Assets]. Weitere Informationen zum [unterstützte Videoformate](file-format-support.md#video-formats). <br>Nach dem Hochladen wird das Video-Asset verarbeitet und eine Vorschau-Ausgabedarstellung generiert.
-1. Klicken Sie auf das Asset und wählen Sie ![Detailoption](assets/do-not-localize/details_icon.svg) **[!UICONTROL Details]**  aus der oberen Symbolleiste. Das Video-Asset wird im Video-Viewer geöffnet.
-1. Klicken Sie auf ![Abspieloption](assets/do-not-localize/play.png) auf der Videominiatur angezeigt. <br>Sie können das Video wiedergeben, anhalten, die Lautstärke steuern und in den Vollbildmodus wechseln.
+1. Laden Sie ein Video-Asset in einem unterstützten Format auf [!DNL Experience Manager Assets] hoch. Weitere Informationen zu [unterstützten Videoformaten](file-format-support.md#video-formats). <br>Nach dem Hochladen wird das Video-Asset verarbeitet und eine Vorschau-Ausgabedarstellung generiert.
+1. Klicken Sie auf das Asset und wählen Sie die Option ![Details](assets/do-not-localize/details_icon.svg) **[!UICONTROL Details]** in der oberen Symbolleiste. Das Video-Asset wird im Video-Viewer geöffnet.
+1. Klicken Sie auf das Symbol ![Wiedergabeoption](assets/do-not-localize/play.png) auf der Miniaturansicht des Videos. <br>Sie können das Video wiedergeben und anhalten, die Lautstärke regeln und in den Vollbildmodus wechseln.
 
-Für vorhandene Video-Assets in [!DNL Experience Manager Assets], müssen Sie **[!UICONTROL Neuverarbeitung]** die Assets in [!DNL Experience Manager] , um die Funktion zur Videovorschau zu aktivieren. Erfahren Sie, wie [digitale Assets erneut verarbeiten](reprocessing.md) in [!DNL Experience Manager].
+Für vorhandene Video-Assets in [!DNL Experience Manager Assets] müssen Sie die Assets in [!DNL Experience Manager] **[!UICONTROL neu verarbeiten]**, um die Videovorschau-Funktion zu aktivieren. Erfahren Sie, wie Sie [digitale Assets in [!DNL Experience Manager] erneut verarbeiten](reprocessing.md) können.
 
 ### Einschränkungen der Videovorschau
 
 * MXF-Dateien zeigen keine Videovorschau an, obwohl die Ausgabedarstellung generiert wurde.
-* WebM-Dateien generieren keine Vorschaudarstellungen, da sie von Webbrowsern systemintern wiedergegeben werden können.
+* WebM-Dateien generieren keine Vorschauausgabedarstellungen, da sie von Webbrowsern systemintern wiedergegeben werden können.
 
 ## Veröffentlichen von Video-Assets {#publish-video-assets}
 
@@ -83,7 +83,7 @@ Sie können auch [die Veröffentlichung von Videos aufheben, um diese von YouTub
 
 ### Konfigurieren von Google Cloud-Einstellungen {#configuring-google-cloud-settings}
 
-Um Inhalte auf YouTube zu veröffentlichen, benötigen Sie ein Google-Konto. Wenn Sie über ein Gmail-Konto verfügen, besitzen Sie bereits ein Google-Konto. Wenn Sie noch nicht über ein Google-Konto verfügen, können Sie einfach eines erstellen. Sie benötigen das Konto, da Sie Anmeldeinformationen benötigen, um Video-Assets in YouTube zu veröffentlichen. <!-- hidden March 3 2022 If you have an account already created, then skip this task and proceed directly to [Create a YouTube channel](#creating-a-youtube-channel). -->
+Um Inhalte auf YouTube zu veröffentlichen, benötigen Sie ein Google-Konto. Wenn Sie über ein Gmail-Konto verfügen, besitzen Sie bereits ein Google-Konto. Wenn Sie noch nicht über ein Google-Konto verfügen, können Sie einfach eines erstellen. Sie benötigen das Konto, um über Anmeldeinformationen für die Veröffentlichung von Video-Assets auf YouTube zu verfügen. <!-- hidden March 3 2022 If you have an account already created, then skip this task and proceed directly to [Create a YouTube channel](#creating-a-youtube-channel). -->
 
 Das mit Google Cloud verwendete Konto und das für YouTube verwendete Google-Konto müssen nicht übereinstimmen.
 
@@ -110,7 +110,7 @@ Google ändert regelmäßig seine Benutzeroberfläche. Daher können die Schritt
 
    Ihre Projekt-ID basiert auf dem Projektnamen. Wählen Sie daher den Projektnamen sorgfältig. Er kann nach seiner Erstellung nicht geändert werden. Sie müssen dieselbe Projekt-ID erneut eingeben, wenn Sie später YouTube in Experience Manager einrichten. Schreiben Sie sie daher auf.
 
-1. Wählen Sie **[!UICONTROL Erstellen]**.
+1. Wählen Sie **[!UICONTROL Erstellen]** aus.
 
 1. Führen Sie eine der folgenden Aktionen aus:
 

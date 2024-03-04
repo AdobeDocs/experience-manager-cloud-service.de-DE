@@ -5,7 +5,7 @@ exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 source-git-commit: fcdba895510b0c428a4274092c8b314fd36f5c7d
 workflow-type: tm+mt
 source-wordcount: '1144'
-ht-degree: 10%
+ht-degree: 17%
 
 ---
 
@@ -24,7 +24,7 @@ Dieses Dokument bietet einen Überblick über eine Modelldefinition sowie über 
 
 >[!TIP]
 >
->Wenn Sie nicht genau wissen, wie Sie Ihre App für den universellen Editor instruieren können, lesen Sie das Dokument . [Übersicht über den universellen Editor für AEM Entwickler.](/help/implementing/universal-editor/developer-overview.md)
+>Wenn Sie nicht wissen, wie Sie Ihre Anwendung für den universellen Editor instrumentieren, lesen Sie bitte das Dokument [Übersicht über den universellen Editor für AEM-Entwicklerinnen und -entwickler.](/help/implementing/universal-editor/developer-overview.md)
 
 ## Modelldefinitionsstruktur {#model-structure}
 
@@ -215,7 +215,7 @@ Ein boolescher Komponententyp speichert einen einfachen true/false -Wert, der al
 
 >[!ENDTABS]
 
-#### Kontrollkästchen-Gruppe {#checkbox-group}
+#### Kontrollkästchengruppe {#checkbox-group}
 
 Ähnlich wie bei einem booleschen Wert ermöglicht ein Kontrollkästchengruppen-Komponententyp die Auswahl mehrerer true/false -Elemente, die als mehrere Kontrollkästchen gerendert werden.
 
@@ -327,7 +327,7 @@ Mit der Auswahl für Inhaltsfragmente können Sie eine [Inhaltsfragment](/help/s
 
 >[!ENDTABS]
 
-#### Datum/Uhrzeit {#date-time}
+#### Datum und Uhrzeit {#date-time}
 
 Ein Datums-/Uhrzeitkomponenten-Typ ermöglicht die Spezifikation eines Datums, einer Uhrzeit oder einer Kombination daraus. Es bietet zusätzliche Konfigurationen.
 
@@ -694,7 +694,7 @@ Rich-Text ermöglicht eine mehrzeilige Rich-Text-Eingabe. Es bietet zusätzliche
 
 >[!ENDTABS]
 
-#### Auswählen {#select}
+#### Auswahl {#select}
 
 Ein Typ &quot;Komponente auswählen&quot;ermöglicht die Auswahl einer einzelnen Option aus einer Liste vordefinierter Optionen in einem Dropdown-Menü.
 
@@ -730,9 +730,9 @@ Ein Typ &quot;Komponente auswählen&quot;ermöglicht die Auswahl einer einzelnen
 
 Mit einem Registerkarten-Komponententyp können Sie andere Eingabefelder auf mehreren Registerkarten gruppieren, um die Layout-Organisation für Autoren zu verbessern.
 
-A `tab` -Definition kann als Trennzeichen im Array von `fields`. Alles, was hinter einer `tab` wird auf dieser Registerkarte platziert, bis eine neue `tab` gefunden wird, wobei die folgenden Elemente auf der neuen Registerkarte platziert werden.
+Eine `tab`-Definition kann als Trennzeichen in einer Reihe von `fields` betrachtet werden. Alles, was nach einem `tab` kommt, wird auf dieser Registerkarte platziert, bis auf einen neuen `tab` gestoßen wird, woraufhin die folgenden Elemente auf der neuen Registerkarte platziert werden.
 
-Wenn Sie Elemente haben möchten, die über allen Registerkarten angezeigt werden, müssen diese vor allen Registerkarten definiert werden.
+Wenn Sie Elemente haben möchten, die oberhalb von allen Registerkarten angezeigt werden, müssen diese vor allen Registerkarten definiert werden.
 
 >[!BEGINTABS]
 

@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 source-git-commit: 9033820fa0dc8eee181e3f581675f45cf11e694a
 workflow-type: tm+mt
 source-wordcount: '2688'
-ht-degree: 36%
+ht-degree: 86%
 
 ---
 
@@ -13,26 +13,26 @@ ht-degree: 36%
 
 ## Einführung {#introduction}
 
-Inhaltsanforderungen von Cloud Services werden über die serverseitige Datenerfassung gemessen. Die Sammlung wird über die Analyse des CDN-Protokolls aktiviert.
+Inhaltsanfragen von Cloud Services werden über die Server-seitige Datenerfassung gemessen. Die Sammlung wird über die Analyse des CDN-Protokolls aktiviert.
 
 >[!NOTE]
 >Zusätzlich wird für eine begrenzte Anzahl von [Frühkindliche Betreuung](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter), wird die clientseitige Erfassung auch über die Messung des Real User Monitoring-Diensts aktiviert. Weitere Informationen finden Sie in der Dokumentation unter [diesem Artikel](#real-user-monitoring-for-aem-as-a-cloud-service).
 
 ## Grundlegendes zu Cloud Service-Inhaltsanfragen {#understaing-cloud-service-content-requests}
 
-Inhaltsanforderungen werden automatisch Server-seitig am Rande von Adobe Experience Manager as a Cloud Service erfasst, indem die Protokolldateien aus dem AEM as a Cloud Service CDN automatisiert analysiert werden. Dies geschieht durch Isolieren der Anfragen, die HTML zurückgeben `(text/html)` oder JSON `(application /Json)` Inhalt aus dem CDN und basierend auf verschiedenen unten beschriebenen Aufnahme- und Ausschlussregeln. Eine Inhaltsanforderung erfolgt unabhängig vom zurückgegebenen Inhalt, der von den CDN-Caches bereitgestellt wird, oder dem Inhalt, der an die Herkunft des CDN (AEM Dispatcher) zurückgeht.
+Inhaltsanfragen werden automatisch Server-seitig am Edge von Adobe Experience Manager as a Cloud Service erfasst, indem die Protokolldateien aus dem AEM as a Cloud Service-CDN automatisiert analysiert werden. Dies geschieht durch Isolieren der Anfragen, die HTML- `(text/html)` oder JSON`(application /Json)`-Inhalt aus dem CDN zurückgeben, und basierend auf verschiedenen Aufnahme- und Ausschlussregeln, die im Folgenden erläutert werden. Eine Inhaltsanfrage erfolgt unabhängig davon, ob der zurückgegebene Inhalt von den CDN-Caches bereitgestellt wird oder ob er zurück an den Ursprung des CDN (AEM-Dispatcher) geht.
 
-Der Real User Monitoring-Dienst , die clientseitige Sammlung, bietet eine präzisere Darstellung der Benutzerinteraktionen und stellt so eine zuverlässige Messung der Website-Interaktion sicher. Dadurch erhalten Kunden erweiterte Einblicke in ihren Seiten-Traffic und ihre Leistung. Dies ist zwar für beide Kunden von Vorteil, die entweder das von Adobe verwaltete CDN oder ein nicht von Adobe verwaltetes CDN verwenden. Darüber hinaus kann die automatische Traffic-Berichterstellung jetzt für Kunden aktiviert werden, die ein nicht von Adobe verwaltetes CDN verwenden. Dadurch entfällt die Notwendigkeit, Traffic-Berichte mit Adobe zu teilen.
+Der Real User Monitoring-Dienst , die clientseitige Sammlung, bietet eine präzisere Darstellung der Benutzerinteraktionen und stellt so eine zuverlässige Messung der Website-Interaktion sicher. Dadurch erhalten Kundinnen und Kunden erweiterte Einblicke in ihren Seiten-Traffic und ihre Leistung. Dies ist sowohl für Kundinnen und Kunden von Vorteil, die das von Adobe verwaltete CDN nutzen, als auch für solche, die ein nicht von Adobe verwaltetes CDN verwenden. Darüber hinaus kann die automatische Traffic-Berichterstellung jetzt für Kundinnen und Kunden aktiviert werden, die ein nicht von Adobe verwaltetes CDN verwenden. Dadurch entfällt die Notwendigkeit, Traffic-Berichte mit Adobe zu teilen.
 
-Für Kunden, die ihr eigenes CDN auf AEM as a Cloud Service übertragen, führt die serverseitige Berichterstellung zu Zahlen, die nicht mit den lizenzierten Inhaltsanforderungen verglichen werden können. Diese Zahlen müssen vom Kunden am Rand des äußeren CDN gemessen werden. Bei diesen Kunden wird die clientseitige Berichterstellung und die zugehörige Leistung anhand der Variablen [Adobe RUM-Datendienst](#real-user-monitoring-for-aem-as-a-cloud-service) ist die von der Adobe empfohlene Option. Siehe [Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter) Informationen zum Opt-in.
+Für Kundinnen und Kunden, die ihr eigenes CDN auf AEM as a Cloud Service anwenden, führt die Server-seitige Berichterstellung zu Zahlen, die nicht mit den lizenzierten Inhaltsanfragen verglichen werden können. Diese Zahlen müssen von den Kundinnen und Kunden am Edge des äußeren CDN gemessen werden. Für diese Kundinnen und Kunden, die Client-seitige Berichterstellung und die damit verbundene Leistung ist der [Adobe RUM-Datendienst](#real-user-monitoring-for-aem-as-a-cloud-service) die von Adobe empfohlene Option. Weitere Informationen zum Opt-in finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter).
 
-## Serverseitige Sammlung {#serverside-collection}
+## Server-seitige Sammlung {#serverside-collection}
 
 Es gibt Regeln, um bekannte Bots auszuschließen, einschließlich bekannter Services, die die Site regelmäßig besuchen, um ihren Suchindex oder -Service zu aktualisieren.
 
 ### Abweichungen von Cloud Service-Inhaltsanfragen {#content-requests-variances}
 
-Inhaltsanfragen können Abweichungen von den Analytics-Reporting-Tools eines Unternehmens aufweisen, die in dieser Tabelle zusammengefasst sind. Im Allgemeinen *nicht* Verwenden Sie Analysetools, die Daten mithilfe Client-seitiger Instrumentierung erfassen, um über die Anzahl der Inhaltsanforderungen für eine bestimmte Site zu berichten, einfach weil sie häufig davon abhängen, dass die Benutzerzustimmung ausgelöst wird, und daher bei einem erheblichen Teil des Traffics fehlen. Analytics-Tools, die Daten Server-seitig in Protokolldateien sammeln, oder CDN-Berichte für Kundinnen und Kunden, die zusätzlich zu AEM as a Cloud Service ihr eigenes CDN hinzufügen, bieten bessere Zählungen. Für Berichte zu Seitenansichten und der zugehörigen Leistung ist der Adobe RUM-Datendienst die Adobe empfohlene Option.
+Inhaltsanfragen können Abweichungen von den Analytics-Reporting-Tools eines Unternehmens aufweisen, die in dieser Tabelle zusammengefasst sind. Im Allgemeinen sollten Analyse-Tools, die Daten mithilfe Client-seitiger Instrumentierung erfassen, *nicht verwendet werden*, um über die Anzahl der Inhaltsanfragen für eine bestimmte Site zu berichten. Der Grund dafür ist, dass sie häufig von der Zustimmung von Benutzerinnen und Benutzern abhängig sind, um ausgelöst zu werden, wodurch sie einen erheblichen Anteil des Traffics nicht erfassen. Analyse-Tools, die Daten Server-seitig in Protokolldateien sammeln, oder CDN-Berichte für Kundinnen und Kunden, die zusätzlich zu AEM as a Cloud Service ihr eigenes CDN hinzufügen, bieten bessere Zählungen. Für die Berichterstellung über Seitenansichten und die damit verbundene Leistung ist der Adobe RUM-Datendienst die von Adobe empfohlene Option.
 
 | Grund für die Abweichung | Erklärung |
 |---|---|
@@ -79,106 +79,106 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 | Ausschließen von `manifest.json` | Ausgeschlossen | Manifest ist kein API-Aufruf, sondern bietet Informationen zur Installation von Websites auf Desktops oder Mobiltelefonen. Adobe sollte eine JSON-Anfrage an `/etc.clientlibs/*/manifest.json` nicht zählen |
 | Ausschließen von `favicon.ico` | Ausgeschlossen | Obwohl der zurückgegebene Inhalt nicht HTML oder JSON sein sollte, stellen wir fest, dass in einigen Szenarien wie SAML-Authentifizierungabläufen Favicons als HTML zurückgegeben werden können und daher explizit von der Zählung ausgeschlossen sind. |
 
-## Clientseitige Sammlung {#cliendside-collection}
+## Client-seitige Sammlung {#cliendside-collection}
 
 ### Real User Monitoring Service für AEM as a Cloud Service {#real-user-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
->Diese Funktion steht nur dem Programm für frühe Anwender zur Verfügung.
->Sie müssen die AEM Cloud Service-Version verwenden **2023.11.14227** und höher, um den RUM-Datendienst zu aktivieren.
+>Diese Funktion ist nur für das Early-Adopter-Programm verfügbar.
+>Sie müssen die AEM Cloud Service-Version **2023.11.14227** oder höher verwenden, um den RUM-Daten-Service zu aktivieren.
 
 ### Übersicht {#overview}
 
-Der Real User Monitoring Service ist eine Art von Technologie zur Leistungsüberwachung, die die digitalen Benutzererlebnisse einer Website oder Anwendung in Echtzeit erfasst und analysiert. Es bietet Einblicke in die Echtzeit-Leistung einer Webanwendung und bietet genaue Einblicke in das Benutzererlebnis.
+Der Real User Monitoring Service ist eine Art von Technologie zur Leistungsüberwachung, die die digitalen Benutzererlebnisse einer Website oder Anwendung in Echtzeit erfasst und analysiert. Es ermöglicht einen Einblick in die Echtzeit-Leistung einer Web-Anwendung und bietet genaue Einblicke in das Benutzererlebnis.
 
 Der Real User Monitoring-Dienst bietet einen umfassenden Einblick in die wichtigsten Leistungsmetriken von der Initiierung der URL bis zur Rückgabe der Anfrage an den Browser. Dies alles hilft den Entwicklern, die Anwendung zu erweitern, um die Verwendung für die Endbenutzer zu vereinfachen.
 
 ### Wer kann von der Echtzeit-Benutzerüberwachung profitieren? {#who-can-benefit-from-rum-service}
 
-RUM Data Service ist für alle Kunden von Vorteil, unabhängig davon, ob sie Adobe oder ihr eigenes CDN verwenden. Es bietet eine präzisere Darstellung der Benutzerinteraktionen und gewährleistet eine zuverlässige Messung der Website-Interaktion, indem es die Anzahl der Seitenansichten auf Client-Seite widerspiegelt.
+Der RUM-Datendienst ist für alle Kundinnen und Kunden von Vorteil, unabhängig davon, ob sie Adobe oder ihr eigenes CDN verwenden. Er bietet eine präzisere Darstellung der Benutzerinteraktionen und gewährleistet eine zuverlässige Messung der Website-Interaktion, indem er die Anzahl der Seitenansichten auf Client-Seite widerspiegelt.
 
-Insbesondere werden Benutzerinteraktionen für Adobe-CDN-Benutzer genau verfolgt, um einen direkten Vergleich zwischen clientseitigen Seitenansichten und serverseitigen CDN-Protokollen zu ermöglichen.
+Insbesondere werden Benutzerinteraktionen für Adobe-CDN-Benutzende genau verfolgt, um einen direkten Vergleich zwischen Client-seitigen Seitenansichten und Server-seitigen CDN-Protokollen zu ermöglichen.
 
-Kunden, die ihr eigenes CDN verwenden, können von der vereinfachten Traffic-Berichterstellung profitieren, da Adobe jetzt diese Seitenansichten direkt integriert, sodass keine separaten Berichte mehr erforderlich sind.
+Kundinnen und Kunden, die ihr eigenes CDN verwenden, können von der vereinfachten Traffic-Berichterstellung profitieren, da Adobe jetzt diese Seitenansichten direkt integriert, sodass keine separaten Berichte mehr erforderlich sind.
 
-Darüber hinaus erhalten alle Kunden tiefe Einblicke in die Seitenleistung, um ihre digitalen Erlebnisse effektiv zu optimieren.
+Darüber hinaus erhalten alle Kundinnen und Kunden tiefe Einblicke in die Seitenleistung, um ihre digitalen Erlebnisse effektiv zu optimieren.
 
 ### Erfahren Sie, wie der Real User Monitoring Service funktioniert {#understand-how-the-rum-service-works}
 
-Adobe Experience Manager verwendet die Echtzeit-Benutzerüberwachung (RUM), um Kunden und Adobe zu helfen, zu verstehen, wie Besucher mit Adobe Experience Manager-gestützten Sites interagieren, Leistungsprobleme zu diagnostizieren und die Effektivität von Experimenten zu messen. RUM bewahrt die Privatsphäre der Besucher durch Stichproben - nur ein kleiner Teil aller Seitenansichten wird überwacht - und einen umsichtigen Ausschluss aller persönlich identifizierbaren Informationen (PII).
+Adobe Experience Manager verwendet Real User Monitoring (RUM), um Kundinnen und Kunden sowie Adobe zu helfen, zu verstehen, wie Besucherinnen und Besucher mit Adobe Experience Manager-gestützten Sites interagieren, Leistungsprobleme zu diagnostizieren und die Effektivität von Experimenten zu messen. RUM bewahrt die Privatsphäre der Besucherinnen und Besucher durch Stichproben – nur ein kleiner Teil aller Seitenansichten wird überwacht – und den sorgfältigen Ausschluss aller persönlich identifizierbaren Informationen (PII).
 
 ### Real User Monitoring Service und Datenschutz {#rum-service-and-privacy}
 
-Der Real User Monitoring-Dienst in Adobe Experience Manager wurde entwickelt, um den Besucherdatenschutz zu wahren und die Datenerfassung zu minimieren. Als Besucher bedeutet dies, dass keine personenbezogenen Daten von der Website erfasst werden, die Sie besuchen, oder der Adobe zur Verfügung gestellt werden.
+Der Real User Monitoring-Dienst in Adobe Experience Manager wurde entwickelt, um den Besucherdatenschutz zu wahren und die Datenerfassung zu minimieren. Als Besucherin bzw. Besucher bedeutet dies für Sie, dass keine persönlichen Daten durch die von Ihnen besuchte Website erfasst oder an Adobe weitergegeben werden.
 
-Als Site-Operator bedeutet dies, dass keine zusätzliche Anmeldung erforderlich ist, um die Überwachung über diese Funktion zu aktivieren. Daher gibt es kein zusätzliches Popup, das die Endbenutzer für die Aktivierung der RUM-Überwachung akzeptieren können.
+Als Site-Operator bedeutet dies für Sie, dass kein zusätzliches Opt-in erforderlich ist, um die Überwachung durch diese Funktion zu aktivieren. Daher gibt es kein zusätzliches Popup, das von den Benutzerinnen oder Benutzern für die Aktivierung der RUM-Überwachung akzeptieren werden muss.
 
 ### Daten-Sampling für den Real User Monitoring Service {#rum-service-data-sampling}
 
-Herkömmliche Web-Analytics-Lösungen versuchen, Daten zu jedem einzelnen Besucher zu erfassen. Der Echtzeit-Benutzerüberwachungsdienst von Adobe Experience Manager erfasst nur Informationen von einem kleinen Bruchteil der Seitenansichten. Die Daten des Real User Monitoring-Dienstes sind dazu gedacht, gesampelt und anonymisiert zu werden, anstatt für Analysen ersetzt zu werden. Standardmäßig haben Seiten ein Stichprobenverhältnis von 1:100. Site-Operatoren können diese Zahl nicht so konfigurieren, dass die Sampling-Rate ab heute erhöht oder verringert wird. Um den gesamten Traffic genau zu schätzen, sammeln wir für jede 100 Seitenansichten detaillierte Daten von einer, um Ihnen eine zuverlässige Annäherung des gesamten Traffics zu ermöglichen.&quot;
+Herkömmliche Web-Analyse-Lösungen versuchen, Daten zu allen Besucherinnen und Besuchern zu erfassen. Der Echtzeit-Benutzerüberwachungsdienst von Adobe Experience Manager erfasst nur Informationen von einem kleinen Bruchteil der Seitenansichten. Die Daten des Real User Monitoring-Dienstes sind dazu gedacht, gesampelt und anonymisiert zu werden, anstatt für Analysen ersetzt zu werden. Standardmäßig haben Seiten ein Stichprobenverhältnis von 1:100. Site-Operatoren können diese Zahl nicht einfach so konfigurieren, dass die Sampling-Rate ab heute erhöht oder verringert wird. Um den gesamten Traffic genau zu schätzen, erfassen wir für jeweils 100 Seitenansichten detaillierte Daten von einer Ansicht, um Ihnen einen zuverlässigen Näherungswert des gesamten Traffics zu ermöglichen.“
 
-Da die Entscheidung darüber, ob die Daten erfasst werden, auf Seitenansichtsbasis erfolgt, ist es praktisch unmöglich, Interaktionen auf mehreren Seiten zu verfolgen. RUM hat kein Konzept von Besuchen, Besuchern oder Sitzungen, nur von Seitenansichten. Das ist beabsichtigt.
+Da die Entscheidung darüber, ob die Daten erfasst werden, für jede einzelne Seitenansicht erfolgt, ist es praktisch unmöglich, Interaktionen über mehrere Seiten hinweg zu verfolgen. RUM hat kein Konzept von Besuchen, Besucherinnen und Besuchern oder Sitzungen, nur von Seitenansichten. Das ist beabsichtigt.
 
 ### Welche Daten werden erfasst? {#what-data-is-being-collected}
 
 Der Real User Monitoring Service soll verhindern, dass personenbezogene Daten erfasst werden. Die vollständigen Informationen, die vom Adobe Experience Manager Real User Monitoring-Dienst erfasst werden können, finden Sie unten:
 
-* Der Hostname der besuchten Site, beispielsweise: `experienceleague.adobe.com`
+* Der Host-Name der besuchten Site, beispielsweise: `experienceleague.adobe.com`
 * Der allgemeine Benutzeragenten-Typ, der zur Anzeige der Seite verwendet wird, z. B. Desktop oder Mobilgerät
-* Der Zeitpunkt der Datenerfassung, z. B.: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* Die URL der besuchten Seite, z. B.: `https://experienceleague.adobe.com/docs`
-* Die Referrer-URL (die URL der Seite, die mit der aktuellen Seite verknüpft ist, wenn der Benutzer einem Link gefolgt ist)
+* Der Zeitpunkt der Datenerfassung, z. B.: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
+* Die URL der besuchten Seite, z. B.: `https://experienceleague.adobe.com/docs`
+* Die Referrer-URL (die URL der Seite, die mit der aktuellen Seite verknüpft ist, wenn die Person einem Link gefolgt ist)
 * Eine zufällig generierte ID der Seitenansicht in einem Format, das dem folgenden ähnelt: `2Ac6`
-* Gewicht oder Umkehrung der Stichprobenrate, beispielsweise: `100`. Das bedeutet, dass nur ein von hundert Seitenansichten aufgezeichnet wird
-* Checkpoint oder Name eines bestimmten Ereignisses in der Abfolge des Ladens der Seite oder der Interaktion mit ihr als Besucher
-* Die Quelle oder die Kennung des DOM-Elements, mit dem der Benutzer für den oben genannten Checkpoint interagiert. Dies kann beispielsweise ein Bild sein.
-* Die Zielgruppe oder der Link zu einer externen Seite oder Ressource, mit der der Benutzer für den oben genannten Checkpoint interagiert. Beispiel: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
-* Die Leistungsmetriken &quot;Core Web Vitals&quot;(CWV), &quot;Größter Content Paint&quot;(LCP), &quot;Erste Eingabe-Verzögerung&quot;(FID) und &quot;Kumulativer Layout-Umschalt&quot;(CLS), die die Erlebnisqualität des Besuchers beschreiben.
+* Die Gewichtung oder der Kehrwert der Stichprobenrate, beispielsweise: `100`. Das bedeutet, dass nur eine von hundert Seitenansichten aufgezeichnet wird
+* Der Checkpoint oder Name eines bestimmten Ereignisses in der Abfolge des Ladens der Seite oder der Interaktion mit ihr als Besucherin oder Besucher
+* Die Quelle oder die Kennung des DOM-Elements, mit dem die Person für den oben genannten Checkpoint interagiert. Dies kann beispielsweise ein Bild sein.
+* Die Zielgruppe oder der Link zu einer externen Seite oder Ressource, mit der die Person für den oben genannten Checkpoint interagiert. Beispiel: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
+* Die Leistungsmetriken „Core Web Vitals“ (CWV), „Largest Contentful Paint“ (LCP), „First Input Delay“ (FID) und „Cumulative Layout Shift“ (CLS), die die Erlebnisqualität der Besucherin oder des Besuchers beschreiben.
 
 ### Einrichten des Echtzeit-Benutzerüberwachungsdienstes {#how-to-set-up-the-rum-service}
 
-* Wenn Sie Teil unseres Early Adopter-Programms sein möchten, senden Sie bitte eine E-Mail an `aemcs-rum-adopter@adobe.com`zusammen mit Ihrem Domänennamen für die Produktions-, Staging- und Entwicklungsumgebung von Ihrer E-Mail-Adresse aus, die mit Ihrer Adobe ID verknüpft ist. Das Produktteam von Adobe aktiviert dann den Datendienst für die Echtzeit-Benutzerüberwachung (RUM) für Sie.
-* Sobald dies abgeschlossen ist, erstellt das Produktteam von Adobe einen Kanal für die Zusammenarbeit mit Kunden.
+* Wenn Sie Teil unseres Early Adopter-Programms sein möchten, senden Sie bitte eine E-Mail an `aemcs-rum-adopter@adobe.com` zusammen mit Ihrem Domain-Namen für die Produktions-, Staging- und Entwicklungsumgebung von Ihrer E-Mail-Adresse aus, die mit Ihrer Adobe-ID verknüpft ist. Das Produkt-Team von Adobe aktiviert dann für Sie den Datendienst für das Real User Monitoring (RUM).
+* Sobald dies abgeschlossen ist, erstellt das Produkt-Team von Adobe einen Kanal für die Zusammenarbeit mit Kundinnen und Kunden.
 * Das Produktteam von Adobe kontaktiert Sie, indem es Ihnen den Domänenschlüssel und die Daten-Dashboard-URL zur Verfügung stellt, über die Sie die Seitenansichten und [Die wichtigsten Web-Vitals (CWV)](https://web.dev/vitals/) Metriken, die von der clientseitigen Erfassung des Real User Monitoring-Dienstes erfasst werden.
-* Anschließend erfahren Sie, wie Sie mit dem Domänenschlüssel auf die Daten-Dashboard-URL zugreifen und die Metriken anzeigen können.
+* Anschließend erfahren Sie, wie Sie mit dem Domain-Schlüssel auf die Daten-Dashboard-URL zugreifen und die Metriken anzeigen können.
 
 ### Verwendung der Daten des Real User Monitoring Service {#how-rum-service-data-is-being-used}
 
 RUM-Daten sind für folgende Zwecke von Vorteil:
 
 * Identifizieren und Beheben von Leistungsengpässen bei Kunden-Sites
-* Optimierte, automatische Traffic-Berichte, die Seitenansichten für Kunden enthalten, die ihr eigenes CDN verwenden. Dies bedeutet, dass sie keinen Traffic-Bericht mit Adobe teilen müssen.
-* Um zu verstehen, wie Adobe Experience Manager mit anderen Skripten (z. B. Analyse-, Targeting- oder externen Bibliotheken) auf derselben Seite interagiert, wird die Kompatibilität erhöht.
+* Optimierte, automatische Traffic-Berichte, die Seitenansichten für die Kundinnen und Kunden enthalten, die ihr eigenes CDN verwenden. Dies bedeutet, dass sie keinen Traffic-Bericht mit Adobe teilen müssen.
+* Um zu verstehen, wie Adobe Experience Manager mit anderen Skripten (z. B. Analyse, Targeting oder externen Bibliotheken) auf derselben Seite interagiert, und die Kompatibilität zu erhöhen.
 
 ### Einschränkungen und Verstehen von Abweichungen bei Seitenansichten und Leistungsmetriken {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
 
-Da Sie diese Daten analysieren werden, kann es Abweichungen bei Seitenansichten und anderen Leistungsmetriken geben, die von der Echtzeit-Benutzerüberwachung (RUM) gemeldet werden. Diese Abweichungen können verschiedenen Faktoren zugeschrieben werden, die mit der Echtzeit- und clientseitigen Überwachung verbunden sind. Im Folgenden finden Sie wichtige Hinweise, die Kunden bei der Interpretation ihrer RUM-Daten beachten sollten:
+Da Sie diese Daten analysieren werden, kann es Abweichungen bei Seitenansichten und anderen Leistungsmetriken geben, die von Real User Monitoring (RUM) gemeldet werden. Diese Abweichungen können verschiedenen Faktoren zugeschrieben werden, die mit der Client-seitigen Überwachung in Echtzeit verbunden sind. Im Folgenden finden Sie wichtige Hinweise, die Kundinnen und Kunden bei der Interpretation ihrer RUM-Daten beachten sollten:
 
 1. **Tracker-Blocker**
 
-   * Endbenutzer, die Tracker-Blocker oder Datenschutzerweiterungen verwenden, können die Datenerfassung des Real User Monitoring-Dienstes behindern, da diese Tools die Ausführung der Tracking-Skripte einschränken. Diese Einschränkung kann zu untergemeldeten Seitenansichten und Benutzerinteraktionen führen, was zu einer Diskrepanz zwischen der tatsächlichen Site-Aktivität und den von RUM erfassten Daten führen kann.
+   * Endbenutzer, die Tracker-Blocker oder Datenschutzerweiterungen verwenden, können die Datenerfassung des Real User Monitoring-Dienstes behindern, da diese Tools die Ausführung der Tracking-Skripte einschränken. Diese Einschränkung kann dazu führen, dass zu wenig Seitenaufrufe und Benutzerinteraktionen gemeldet werden, was zu einer Diskrepanz zwischen den tatsächlichen Aktivitäten auf der Website und den von RUM erfassten Daten führt.
 
 1. **Einschränkungen bei der Erfassung von API-/JSON-Aufrufen**
 
-   * Der RUM-Datendienst konzentriert sich auf das clientseitige Erlebnis und erfasst derzeit nicht die Backend-API- oder JSON-Aufrufe. Der Ausschluss dieser Aufrufe aus den Daten des Real User Monitoring Service führt zu Abweichungen von den von CDN Analytics gemessenen Inhaltsanforderungen.
+   * Der RUM-Datendienst konzentriert sich auf das Client-seitige Erlebnis und erfasst derzeit nicht die Backend-API- oder JSON-Aufrufe. Der Ausschluss dieser Aufrufe aus den Daten des Real User Monitoring Service führt zu Abweichungen von den von CDN Analytics gemessenen Inhaltsanforderungen.
 
 ### Häufig gestellte Fragen {#faq}
 
-1. **Wie kann ich Pfade konfigurieren, die in die Überwachung ein- oder ausgeschlossen werden?**
+1. **Wie kann ich Pfade konfigurieren, sodass sie für die Überwachung ein- oder ausgeschlossen werden?**
 
-   Kunden können Pfade konfigurieren, um die URLs für die Überwachung ein- oder auszuschließen, indem sie die Umgebungsvariablen in der Konfiguration in Cloud Manager mithilfe der folgenden Variablen festlegen: `AEM_WEBVITALS_EXCLUDE` und `AEM_WEBVITALS_INCLUDE_PATHS`
+   Kundinnen und Kunden können Pfade konfigurieren, um die URLs für die Überwachung ein- oder auszuschließen, indem sie die Umgebungsvariablen in der Konfiguration in Cloud Manager mithilfe der folgenden Variablen festlegen: `AEM_WEBVITALS_EXCLUDE` und `AEM_WEBVITALS_INCLUDE_PATHS`.
 
-   Beachten Sie, dass die Einstellung &quot;Einschließen&quot;standardmäßig für das Ziel &quot;/content&quot;konfiguriert ist. Beachten Sie dabei, dass es sich bei den Pfaden, die Sie hier konfigurieren müssen, um Inhaltspfade innerhalb des Systems handelt, nicht um die URL-Pfade, die Sie in Ihrem Browser sehen. Diese Unterscheidung ist für die genaue Einrichtung und Anpassung Ihrer Konfiguration an Ihre spezifischen Anforderungen von entscheidender Bedeutung.
+   Bitte beachten Sie, dass die Einstellung „include“ standardmäßig auf „/content“ festgelegt ist. Denken Sie daran, dass es sich bei den Pfaden, die Sie hier konfigurieren müssen, um Inhaltspfade innerhalb des Systems handelt, nicht um die URL-Pfade, die Sie in Ihrem Browser sehen. Diese Unterscheidung ist für die genaue Einrichtung und Anpassung Ihrer Konfiguration an Ihre spezifischen Anforderungen von entscheidender Bedeutung.
 
-1. **Kann Adobe alle Seitenansichten verfolgen, bevor die Interaktion das vom Kunden verwaltete CDN erreicht oder zu dem Zeitpunkt, zu dem die Interaktion das vom Kunden verwaltete CDN erreicht?**
+1. **Wäre Adobe in der Lage, alle Seitenaufrufe zu verfolgen, bevor die Interaktion das kundenseitig verwaltete CDN erreicht, oder zu dem Zeitpunkt, an dem die Interaktion das kundenseitig verwaltete CDN erreicht?**
 
-   Ja.
+   Ja. 
 
-1. **Können Kunden die RUM-Datendienstskripte in Drittanbietersysteme wie Dynatrace integrieren?**
+1. **Kann die Kundschaft die RUM-Datendienstskripte in Drittanbietersysteme wie Dynatrace integrieren?**
 
-   Ja.
+   Ja. 
 
-1. **Werden die Metriken &quot;Interaktion mit der nächsten Farbe&quot;, &quot;Zeit bis zum ersten Byte&quot;und &quot;Erste contentful Farbe&quot;erfasst?**
+1. **Werden die Web Vitals-Metriken „Interaktion mit der nächsten Farbe“, „Zeit bis zum ersten Byte“ und „Erste inhaltsreiche Farbe“ erfasst?**
 
-   Interaktion mit der nächsten Farbe (INP) und Zeit bis zum ersten Byte (TTFB) werden erfasst.  Die erste Inhaltsfarbe wird derzeit nicht erfasst.
+   Interaktion mit der nächsten Farbe (INP) und Zeit bis zum ersten Byte (TTFB) werden erfasst.  Die erste inhaltsreiche Farbe wird derzeit nicht erfasst.

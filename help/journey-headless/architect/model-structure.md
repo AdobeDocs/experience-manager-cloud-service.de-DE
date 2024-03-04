@@ -5,7 +5,7 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Erstellen von Inhaltsfragmentmodellen {#creating-content-fragment-models}
 
-Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur definiert werden. Dies kann unter **Instrumente** > **Allgemein** > **Inhaltsfragmentmodelle**.
+Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur definiert werden. Dies kann unter **Tools** > **Allgemein** > **Inhaltsfragmentmodelle** erfolgen. 
 
 ![Inhaltsfragmentmodelle in Tools](assets/cfm-tools.png)
 
@@ -63,11 +63,11 @@ Sie können Instanzen der **Datentypen** in den linken Bereich ziehen – Sie de
 
 ![Felder definieren](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-Nachdem Sie einen Datentyp hinzugefügt haben, müssen Sie die **Eigenschaften** für dieses Feld definieren. Diese hängen vom verwendeten Typ ab. Beispiel:
+Nachdem Sie einen Datentyp hinzugefügt haben, müssen Sie die **Eigenschaften** für dieses Feld definieren. Diese hängen vom verwendeten Typ ab. Zum Beispiel:
 
 ![Dateneigenschaften](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
-Sie können beliebig viele Felder hinzufügen. Beispiel:
+Sie können beliebig viele Felder hinzufügen. Zum Beispiel:
 
 ![Inhaltsfragmentmodell](/help/sites-cloud/administering/content-fragments/assets/cfm-models-07.png)
 

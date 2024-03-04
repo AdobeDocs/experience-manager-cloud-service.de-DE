@@ -1,11 +1,11 @@
 ---
 title: Authentifizierung beim universellen Editor
-description: Erfahren Sie, wie der universelle Editor das Adobe Identity Management-System (IMS) zur Authentifizierung verwendet.
+description: Erfahren Sie, wie der universelle Editor die Authentifizierung mit Adobe Identity Management System (IMS) durchführt.
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
 source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
 workflow-type: tm+mt
 source-wordcount: '332'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 

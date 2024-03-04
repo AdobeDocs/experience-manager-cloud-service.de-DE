@@ -1,6 +1,6 @@
 ---
 title: Interaktive Videos
-description: Erfahren Sie, wie Sie in Dynamic Media mit interaktiven Videos und Videos mit Shopping-Funktion arbeiten.
+description: Erfahren Sie, wie Sie in Dynamic Media mit interaktiven Videos sowie Videos mit Shopping-Funktion arbeiten.
 contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
@@ -8,7 +8,7 @@ exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '5863'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

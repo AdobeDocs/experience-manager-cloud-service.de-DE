@@ -1,13 +1,13 @@
 ---
 title: Inhaltsfragmentmodelle
-description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für Ihre Inhaltsfragmente dienen. So können Sie strukturierte Inhalte für die Headless-Bereitstellung oder für die Seitenbearbeitung erstellen.
+description: Erfahren Sie, inwiefern Inhaltsfragmentmodelle in AEM als Grundlage für Ihre Inhaltsfragmente dienen, damit Sie strukturierte Inhalte für die Headless-Bereitstellung oder für die Seitenbearbeitung erstellen können.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 source-git-commit: e5a48cfd042c0e8d7448007854e1f73bded8cf7f
 workflow-type: tm+mt
 source-wordcount: '3209'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -206,7 +206,7 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
 
 * **Rendern als**
 
-  Die verschiedenen Optionen zum Realisieren/Rendern des Felds in einem Fragment. Häufig können Sie damit definieren, ob dem Autor eine einzelne Instanz des Felds angezeigt wird oder ob er mehrere Instanzen erstellen darf. Wann **Mehrere Felder** verwendet wird, können Sie die Mindest- und Höchstanzahl der Elemente definieren - siehe [Validierung](#validation) für weitere Informationen.
+  Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Oft können Sie damit festlegen, ob dem Autor oder der Autorin nur eine einzige Instanz des Feldes angezeigt wird oder ob mehrere Instanzen erstellt werden dürfen. Wenn **Mehrere Felder** verwendet wird, können Sie die Mindest- und Höchstanzahl der Elemente definieren. Siehe [Validierung](#validation) für weitere Informationen.
 
 * **Feldbezeichnung**
 Das Eingeben einer **Feldbezeichnung** generiert automatisch einen **Eigenschaftsnamen**, der dann bei Bedarf manuell aktualisiert werden kann.
@@ -264,14 +264,14 @@ Verschiedene Datentypen bieten jetzt die Möglichkeit, Validierungsanforderungen
    * Es können nur Bilder in einem vordefinierten Bereich von Breite und/oder Höhe (in Pixel) referenziert werden.
 * **Fragmentreferenz**
    * Testen Sie, ob ein bestimmtes Inhaltsfragmentmodell vorhanden ist.
-* **Mindestanzahl von Elementen** / **Maximale Elementanzahl**
+* **Mindestanzahl der Elemente**/**Maximale Anzahl der Elemente**
 
-  Felder, die als **Mehrere Felder** (festgelegt mit **Rendern als**) haben die Optionen:
+  Felder, die als **Mehrere Felder** festgelegt wurden (mit **Rendern als**) haben die Optionen:
 
-   * **Mindestanzahl von Elementen**
-   * **Maximale Elementanzahl**
+   * **Mindestanzahl der Elemente**
+   * **Maximale Anzahl der Elemente**
 
-  Diese werden im [Inhaltsfragment-Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
+  Diese werden im [Inhaltsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md) validiert.
 
 ## Verwenden von Verweisen, um verschachtelten Inhalt zu bilden {#using-references-to-form-nested-content}
 

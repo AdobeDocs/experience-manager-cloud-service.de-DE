@@ -5,7 +5,7 @@ exl-id: 02795a31-244a-42b4-8297-2649125d7777
 source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 88%
+ht-degree: 94%
 
 ---
 
@@ -47,7 +47,7 @@ Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss si
 | `component` | Das bearbeitbare Element ist eine Komponente. Es werden keine zusätzlichen Funktionen hinzugefügt. Es ist erforderlich, um bewegliche/löschbare Teile des DOM anzuzeigen und die Eigenschaftenleiste und ihre Felder zu öffnen | Erforderlich | Nicht zutreffend | Nicht zutreffend | Optional | Optional | Nicht zutreffend |
 | `reference` | Das bearbeitbare Element ist ein Verweis, zum Beispiel ein Inhaltsfragment, Experience Fragment oder Produkt | Abhängig von <br>siehe unten | Abhängig von <br>siehe unten | Optional<br>Liste der Filterkriterien für Inhaltsfragmente, Produkte oder Experience Fragments, die an den Referenz-Selektor übergeben werden | Optional | Optional | Nicht zutreffend |
 
-Je nach Anwendungsfall kann `data-aue-prop` oder `data-aue-resource` erforderlich sein oder nicht. Beispiel:
+Je nach Anwendungsfall kann `data-aue-prop` oder `data-aue-resource` erforderlich sein oder nicht. Zum Beispiel:
 
 * `data-aue-resource` ist erforderlich, wenn Sie Inhaltsfragmente über GraphQL abfragen und die Liste im Kontext bearbeitbar machen möchten.
 * `data-aue-prop` ist erforderlich, wenn Sie eine Komponente haben, die den Inhalt eines referenzierten Inhaltsfragments rendert, und die Referenz innerhalb der Komponente aktualisieren möchten.

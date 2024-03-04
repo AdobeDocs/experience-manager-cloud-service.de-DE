@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: cb4c9711fc9c57546244b5b362027c255e5abc35
 workflow-type: tm+mt
 source-wordcount: '1023'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
 
 * Die Build-Umgebung ist Linux-basiert und von Ubuntu 22.04 abgeleitet.
 * Apache Maven 3.9.4 ist installiert.
-   * Adobe empfiehlt Benutzenden, [ihre Maven-Repositorys zu aktualisieren, um HTTPS anstelle von HTTP zu verwenden.](#https-maven)
+   * Adobe empfiehlt Benutzenden, [ihre Maven-Repositorys zu aktualisieren, sodass sie HTTPS anstelle von HTTP verwenden](#https-maven).
 * Die installierten Java-Versionen sind Oracle JDK 8u401 und Oracle JDK 11.0.22.
 * Standardmäßig wird die Variable `JAVA_HOME` Umgebungsvariable auf `/usr/lib/jvm/jdk1.8.0_401` enthält Oracle JDK 8u401. Weitere Einzelheiten finden Sie im Abschnitt [Alternative JDK-Version für die Maven-Ausführung](#alternate-maven-jdk-version).
 * Es sind einige zusätzliche erforderliche Systempakete installiert.
@@ -35,7 +35,7 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
-* Maven wird auf Systemebene mit einer `settings.xml`-Datei konfiguriert, die automatisch das öffentliche Adobe-Artefakt-Repository enthält und ein Profil namens `adobe-public` verwendet. (Weitere Informationen dazu finden Sie im [Adobe Public Maven Repository](https://repo1.maven.org/)).
+* Maven wird auf Systemebene mit einer `settings.xml`-Datei konfiguriert, die automatisch das öffentliche Adobe-Artefakt-Repository enthält und ein Profil namens `adobe-public` verwendet. (Weitere Informationen dazu finden Sie im [Adobe Public Maven Repository](https://repo1.maven.org/).)
 
 >[!NOTE]
 >

@@ -1,17 +1,17 @@
 ---
-title: Verwalten von Inhaltsfragmenten (Assets - Inhaltsfragmente)
-description: Erfahren Sie, wie Sie mit der Konsole "Assets"Ihre AEM Inhaltsfragmente verwalten können, entweder als Grundlage für Headless-Inhalte oder für die Seitenbearbeitung.
+title: Verwalten von Inhaltsfragmenten (Assets – Inhaltsfragmente)
+description: Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM-Inhaltsfragmente verwalten können, entweder als Grundlage für Ihre Headless-Inhalte oder für die Erstellung von Seiten.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1885'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Verwalten von Inhaltsfragmenten {#managing-content-fragments}
 
-Erfahren Sie, wie Sie mit der Konsole &quot;Assets&quot;Ihre AEM Inhaltsfragmente verwalten können, entweder als Grundlage für Headless-Inhalte oder für die Seitenbearbeitung.
+Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM-Inhaltsfragmente verwalten können, entweder als Grundlage für Ihre Headless-Inhalte oder für die Erstellung von Seiten.
 
 Nachdem Sie Ihre [Inhaltsfragmentmodelle](#creating-a-content-model) definiert haben, können Sie diese verwenden, um [Ihre Inhaltsfragmente](#creating-a-content-fragment) zu erstellen.
 
@@ -54,7 +54,7 @@ Die Methode zum Erstellen eines Inhaltsfragments ist folgende:
 1. Wählen Sie **Erstellen** und danach **Inhaltsfragment** aus, um den Assistenten zu öffnen.
 1. Im ersten Schritt des Assistenten müssen Sie die Grundlage des neuen Fragments angeben.
 
-   * [Modell](/help/assets/content-fragments/content-fragments-models.md) - wird verwendet, um ein Fragment zu erstellen, für das strukturierte Inhalte erforderlich sind, z. B. die **Abenteuer** model
+   * [Modell](/help/assets/content-fragments/content-fragments-models.md) – wird verwendet, um ein Fragment zu erstellen, für das strukturierte Inhalte erforderlich sind; beispielsweise das **Adventure**-Modell
 
       * Alle verfügbaren Modelle werden angezeigt.
 
@@ -311,7 +311,7 @@ Neben den Standardoptionen enthält die [Zeitleiste](/help/assets/manage-digital
 >* spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
 >
 
-Beispiel:
+Zum Beispiel:
 
 ![Timeline](assets/cfm-managing-05.png)
 

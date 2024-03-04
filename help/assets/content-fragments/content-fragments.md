@@ -1,11 +1,11 @@
 ---
-title: Arbeiten mit Inhaltsfragmenten (Assets - Inhaltsfragmente)
+title: Arbeiten mit Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenerstellung und die Headless-Bereitstellung eignen.  Auch wie sie zusammen mit MSM verwendet werden können.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 source-git-commit: 02b96c27f985492396cfbd262b9fec450ec8d2c8
 workflow-type: tm+mt
 source-wordcount: '2222'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 97%
 
 In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten [seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen](/help/sites-cloud/authoring/fragments/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten. Dies eignet sich ideal für die Headless-Bereitstellung.  Sie können auch zusammen mit [Multi-Site-Management verwendet werden, um die Wiederverwendung Ihrer Inhalte zu ermöglichen](#reusing-content-fragments-with-msm).
 
-Inhaltsfragmente enthalten strukturierten Inhalt:
+Inhaltsfragmente enthalten strukturierte Inhalte:
 
 * Sie basieren auf einem [Inhaltsfragmentmodell](/help/assets/content-fragments/content-fragments-models.md), das eine Struktur für das daraus entstehende Fragment vordefiniert.
 * Die Struktur kann variieren:
@@ -184,7 +184,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
    * In den Modi [Rich-Text](/help/assets/content-fragments/content-fragments-variations.md#rich-text) und [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown) kann ein Absatz als Kopfzeile formatiert werden. In diesem Fall gehören dieser und der folgende Absatz als eine Einheit zusammen.
 
-   * Ermöglichen die Inhaltssteuerung während der Seitenbearbeitung
+   * Aktivieren Sie die Inhaltskontrolle während der Seitenerstellung.
 
 * **In ein Fragment eingefügte Assets (Fragmente mit gemischten Medien)**
 
@@ -202,7 +202,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
      >[!NOTE]
      >
-     >Assets können auch als zusätzlicher (Zwischeninhalt) Inhalt hinzugefügt werden, wenn ein Fragment auf einer Seite verwendet wird. Verwenden Sie dazu entweder [Zugehörige Inhalte](/help/assets/content-fragments/content-fragments-assoc-content.md) oder Assets aus dem Assets-Browser.
+     >Assets können auch als zusätzlicher (Übergangs-) Inhalt hinzugefügt werden, wenn ein Fragment auf einer Seite verwendet wird (bei Nutzung von [zugehörigen Inhalten](/help/assets/content-fragments/content-fragments-assoc-content.md) oder Assets aus dem Assets-Browser).
 
 * **Zugehörige Inhalte**
 
@@ -244,7 +244,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
    * sind Ausgabeformate von Fragmenttext, eigens zu einem redaktionellen Zweck. Dieser kann mit einem Kanal verbunden sein, doch ist dies nicht obligatorisch. Auch für lokale Ad-hoc-Änderungen geeignet.
    * werden als Kopien von **Vorlagen** erstellt, können aber dann nach Bedarf bearbeitet werden. es gibt Inhaltsüberschneidungen zwischen den Varianten selbst.
    * können beim Erstellen von Fragmenten definiert werden;
-   * werden im Fragment gespeichert, um die Streuung von Inhaltskopien zu vermeiden;
+   * Werden im Fragment gespeichert, um zu vermeiden, dass Inhaltskopien verstreut werden.
    * können mit der Vorlage [synchronisiert](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) werden, wenn der Vorlageninhalt aktualisiert wurde;
    * können [zusammengefasst](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) werden, um Text schnell auf eine vordefinierte Länge zu kürzen;
    * sind auf der Registerkarte [Varianten](/help/assets/content-fragments/content-fragments-variations.md) des Fragment-Editors verfügbar.
@@ -274,7 +274,7 @@ Das Erstellen von Inhaltsfragmenten erfordert Folgendes:
    * Erforderlich zum [Erstellen eines Fragments](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
    * Definiert die Struktur eines Fragments (Titel, Inhaltselemente, Tag-Definitionen).
    * Inhaltsmodelldefinitionen erfordern einen Titel und ein Datenelement. Alle weiteren Elemente sind optional.
-   * Das Modell kann Standardinhalte definieren – sofern zutreffend.
+   * Das Modell kann Standardinhalte definieren, sofern anwendbar.
    * Autoren können die definierte Struktur nicht ändern, wenn sie den Fragmentinhalt erstellen.
    * Änderungen, die nach dem Erstellen von abhängigen Inhaltsfragmenten an einem Modell vorgenommen wurden, können sich auf diese Inhaltsfragmente auswirken.
 

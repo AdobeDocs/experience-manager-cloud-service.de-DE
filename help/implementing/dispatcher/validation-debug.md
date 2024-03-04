@@ -1,5 +1,5 @@
 ---
-title: Validieren und Debuggen mit den Dispatcher Tools
+title: Validieren und Debuggen mit den Dispatcher-Tools
 description: Erfahren Sie mehr über die lokale Validierung, das Debugging, die Dateistruktur mit flexiblem Modus und die Migration vom alten Modus zum flexiblen Modus.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
@@ -10,7 +10,7 @@ ht-degree: 98%
 
 ---
 
-# Validieren und Debuggen mit den Dispatcher Tools {#Dispatcher-in-the-cloud}
+# Validieren und Debuggen mit den Dispatcher-Tools {#Dispatcher-in-the-cloud}
 
 ## Einführung {#apache-and-dispatcher-configuration-and-testing}
 
@@ -522,7 +522,7 @@ Anstatt die lokale Validierung (`validate.sh`) auszuführen und den Docker-Conta
 
 Sie können das Skript mit dem folgenden Befehl ausführen: `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
 
-Die ersten Zeilen der Ausgabe sehen ähnlich aus wie die für `docker_run.sh`. Beispiel:
+Die ersten Zeilen der Ausgabe sehen ähnlich aus wie die für `docker_run.sh`. Zum Beispiel:
 
 ```
 ~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082

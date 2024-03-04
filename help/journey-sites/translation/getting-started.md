@@ -8,7 +8,7 @@ exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ So bearbeiten Sie eine Seite:
 
    ![Auswahl einer zu bearbeitenden Seite](assets/sites-editor-select-page.png)
 
-1. Wählen Sie die **Bearbeiten** in der Symbolleiste.
+1. Wählen Sie in der Symbolleiste die Option **Bearbeiten**.
 1. Der Website-Editor wird geöffnet, wobei die ausgewählte Seite in einem neuen Browser-Tab zur Bearbeitung geladen wird.
 1. Wenn Sie den Mauszeiger über den Inhalt bewegen oder darauf tippen, werden Selektoren für einzelne Komponenten angezeigt. Komponenten sind die Drag-and-Drop-Bausteine, aus denen die Seite besteht.
 

@@ -8,7 +8,7 @@ exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '3145'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 Sie können diese Funktion bestmöglich nutzen, indem Sie die folgenden Optionen verwenden:
 
-* **[Erstellen eines adaptiven Formulars mit genehmigten Vorlagen und Einbetten in eine AEM Sites-Seite](#embed-form-using-adaptive-form-wizzard-aem-sites):** Sie können vorab genehmigte Vorlagen verwenden, um Adaptive Forms schnell zu erstellen und einzubetten, die den Branding-Richtlinien und Designstandards Ihres Unternehmens entsprechen.
+* **[Erstellen eines adaptiven Formulars mit genehmigten Vorlagen und Einbetten in eine AEM Sites-Seite](#embed-form-using-adaptive-form-wizzard-aem-sites):** Sie können vorab genehmigte Vorlagen nutzen, um schnell adaptive Formulare zu erstellen und einzubetten, die den Branding-Richtlinien und Design-Standards Ihres Unternehmens entsprechen.
 
 * **[Einbetten von vorhandenen Formularen in eine AEM Sites-Seite:](#embed-an-adaptive-form-in-sites-editor)** Sie können bereits erstellte Formulare einfach in Ihre Websites integrieren, sodass Besucherinnen und Besucher direkt mit ihnen interagieren können.
 
@@ -202,7 +202,7 @@ Einbetten eines adaptiven Formulars in eine Sites-Seite:
 
 1. Öffnen Sie die AEM Sites-Seite im Bearbeitungsmodus.
 1. Ziehen Sie die **[!UICONTROL Adaptive Formulare – Einbettungskomponente (v2)]** per Drag-and-Drop vom Komponenten-Browser auf die Sites-Seite.
-1. Wählen Sie die **[!UICONTROL Adaptives Forms - Einbetten]** auf der Seite &quot;Sites&quot;und wählen Sie ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg) in der Aktionsleiste. Das Dialogfeld **[!UICONTROL Bearbeiten von „Adaptive Formulare – Einbetten (v2)“]** wird geöffnet.
+1. Wählen Sie auf der Sites-Seite die **[!UICONTROL Adaptive Formulare – Einbettungskomponente]** aus und wählen Sie dann in der Aktionsleiste die Option ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg) aus. Das Dialogfeld **[!UICONTROL Bearbeiten von „Adaptive Formulare – Einbetten (v2)“]** wird geöffnet.
 1. Wählen Sie das adaptive Formular aus, das Sie in den **[!UICONTROL Asset-Pfad]** einbetten möchten.
 1. Speichern Sie die Einstellungen. Das adaptive Formular ist jetzt in der Seite eingebettet.
 
@@ -216,7 +216,7 @@ Sie können die Barrierefreiheit Ihrer Formulare auch erweitern, indem Sie sie i
 
 1. Öffnen Sie ein Experience Fragment im Bearbeitungsmodus.
 1. Ziehen Sie die **[!UICONTROL Adaptive Formulare – Einbettungskomponente (v2)]** vom Komponenten-Browser per Drag-and-Drop zum Experience Fragment.
-1. Wählen Sie die **[!UICONTROL Adaptives Forms - Einbetten]** Komponente im Experience Fragment und wählen Sie ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg) in der Aktionsleiste. Das Dialogfeld **[!UICONTROL Bearbeiten von „Adaptive Formulare – Einbetten (v2)“]** wird geöffnet.
+1. Wählen Sie im Experience Fragment die **[!UICONTROL Einbettungskomponente für adaptive Formulare]** aus und wählen Sie in der Aktionsleiste die Option ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg) aus. Das Dialogfeld **[!UICONTROL Bearbeiten von „Adaptive Formulare – Einbetten (v2)“]** wird geöffnet.
 1. Wählen Sie das adaptive Formular aus, das Sie in den **[!UICONTROL Asset-Pfad]** einbetten möchten.
 1. Speichern Sie die Einstellungen. Das adaptive Formular ist jetzt in das Experience Fragment eingebettet.
 
@@ -234,7 +234,7 @@ So konvertieren Sie ein adaptives Formular auf einer AEM Sites-Seite in ein Expe
 
    ![Klicken des Archivlogos, um ein adaptives Formular in einer AEM Sites-Seite in ein Experience Fragment zu konvertieren](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
-   Ein Dialogfeld zum Konvertieren des Containers für adaptive Formulare in ein neues Experience Fragment oder zum Hinzufügen zu einem vorhandenen Experience Fragment wird angezeigt.
+   Es wird ein Dialogfeld zum Konvertieren des Containers für adaptive Formulare in ein neues Experience Fragment oder zum Hinzufügen zu einem vorhandenen Experience Fragment angezeigt.
 
 1. Legen Sie im Dialogfeld **[!UICONTROL In Experience Fragment-Variante konvertieren]** Werte für die folgenden Optionen fest:
 
@@ -358,7 +358,7 @@ Betrachten wir die folgenden Szenarien für das Veröffentlichen eines eingebett
 Um eine Konfiguration oder Eigenschaft des eingebetteten adaptiven Formulars zu ändern, führen Sie einen der folgenden Schritte aus.
 
 * Öffnen Sie das Originalformular in einem adaptiven Formular im entsprechenden Editor und ändern Sie es.
-* Wählen Sie das adaptive Formular auf der Site-Seite im Bearbeitungsmodus aus und wählen Sie dann **[!UICONTROL In einem neuen Fenster bearbeiten]**. Das ursprüngliche Formular wird im Bearbeitungsmodus geöffnet, sodass Sie es bearbeiten können.
+* Wählen Sie von der Sites-Seite aus im Bearbeitungsmodus das adaptive Formular und dann **[!UICONTROL In neuem Fenster bearbeiten]**. Das ursprüngliche Formular wird im Bearbeitungsmodus geöffnet, sodass sie es bearbeiten können.
 
 >[!NOTE]
 >

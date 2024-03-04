@@ -5,7 +5,7 @@ exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ In AEM erfolgt die Bereitstellung mit dem `model`-Selektor und der `.json`-Erwei
 
 Alternativ können Sie die Inhalte eines strukturierten Inhaltsfragments bereitstellen, indem Sie dieses spezifisch nachverfolgen.
 
-Dies geschieht mithilfe des gesamten Pfads zum Fragment (über die `jcr:content`), beispielsweise mit einem Suffix wie .
+Verwenden Sie dazu den vollständigen Pfad zum Fragment (über `jcr:content`); beispielsweise mit dem folgenden Suffix:
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 

@@ -6,7 +6,7 @@ exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
 workflow-type: tm+mt
 source-wordcount: '3901'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Eine Übermittlungsaktion wird ausgelöst, wenn Benutzende in einem adaptiven Fo
 * [An OneDrive senden](#submit-to-onedrive)
 * [Senden an Azure Blob-Speicher](#azure-blob-storage)
 * [An Power Automate senden](#microsoft-power-automate)
-* [Submit to Workfront Fusion](#workfront-fusion)
+* [An Workfront Fusion senden](#workfront-fusion)
 
 Sie können die [standardmäßige Übermittlungsaktion erweitern](custom-submit-action-form.md) und dadurch eine eigene Übermittlungsaktion erstellen.
 
@@ -60,7 +60,7 @@ Sie können eine Übermittlungsaktion in der Seitenleiste im Bereich **[!UICONTR
 
 ## An REST-Endpunkt übermitteln {#submit-to-rest-endpoint}
 
-Verwenden Sie die Aktion **[!UICONTROL An REST-Endpunkt übermitteln]**, um die übertragenen Daten an eine Rest-URL zu veröffentlichen. Die URL kann sich auf einem internen (dem Server, auf dem das Formular gerendert wird) oder auf einem externen Server befinden.
+Verwenden Sie die Aktion **[!UICONTROL An REST-Endpunkt übermitteln]**, um die übertragenen Daten an eine Rest-URL zu veröffentlichen. Die URL kann sich auf einem internen Server (dem Server, auf dem das Formular gerendert wird) oder auf einem externen Server befinden.
 
 Um Daten auf einem internen Server zu senden, geben Sie den Pfad der Ressource an. Die Daten werden an den Pfad der Ressource gesendet. Beispiel: /content/restEndPoint. Für solche Sende-Anfragen werden die Authentifizierungsinformationen der Versandanfrage verwendet.
 
@@ -93,7 +93,7 @@ Sie können auch **[!UICONTROL POST-Anforderungen aktivieren]** und eine URL ein
 
 >[!NOTE]
 >
->Alle Felder müssen über verschiedene Elementnamen verfügen, um als Parameter in der REST-URL weitergeleitet zu werden, auch dann, wenn die Felder in verschiedenen Bereichen platziert sind.
+>Alle Felder müssen über verschiedene Elementnamen verfügen, um als Parameter in der REST-URL weitergeleitet zu werden, und zwar auch dann, wenn die Felder in verschiedene Bereiche platziert wurden.
 
 ## E-Mail senden {#send-email}
 
@@ -174,9 +174,9 @@ Bevor Sie die Übermittlungsaktion **[!UICONTROL AEM-Workflow aufrufen]** verwen
 
 Die Sendeaktion **[!UICONTROL An SharePoint senden]** verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint-Speicher senden.
 
-Mit Senden an SharePoint haben Sie folgende Möglichkeiten:
+Mit dem Senden an SharePoint haben Sie folgende Möglichkeiten:
 * [Verbinden eines adaptiven Formulars mit der SharePoint-Dokumentbibliothek](#connect-af-sharepoint-doc-library)
-* [Verbinden eines adaptiven Formulars mit einer SharePoint-Liste](#connect-af-sharepoint-list)
+* [Verbinden eines adaptiven Formulars mit der SharePoint-Liste](#connect-af-sharepoint-list)
 
 
 ### Verbinden eines adaptiven Formulars mit der SharePoint-Dokumentbibliothek {#connect-af-sharepoint-doc-library}
@@ -236,20 +236,20 @@ Sie können die erstellte Konfiguration für die SharePoint-Dokumentbibliothek i
 Wenn Sie das Formular senden, werden die Daten im angegebenen Microsoft® Sharepoint-Dokumentbibliothekspeicher gespeichert.
 Ordnerstruktur zum Speichern von Daten: `/folder_name/form_name/year/month/date/submission_id/data`.
 
-### Verbinden eines adaptiven Formulars mit der Microsoft® SharePoint-Liste {#connect-af-sharepoint-list}
+### Verbinden eines adaptiven Formulars mit einer Microsoft® SharePoint-Liste {#connect-af-sharepoint-list}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
-So verwenden Sie die [!UICONTROL An SharePoint-Liste übermitteln] Sendeaktion in einem adaptiven Formular:
+So verwenden Sie die Sendeaktion [!UICONTROL An SharePoint-Liste senden] in einem adaptiven Formular:
 
-1. [Erstellen einer SharePoint-Listenkonfiguration](#create-sharepoint-list-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® Sharepoint List Storage verbunden.
-1. [Verwenden des Sendevorgangs mit dem Formulardatenmodell in einem adaptiven Formular](#use-submit-using-fdm): Dadurch wird Ihr adaptives Formular mit der konfigurierten Microsoft® SharePoint verbunden.
+1. [SharePoint-Listenkonfiguration erstellen](#create-sharepoint-list-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® Sharepoint-Listenspeicher verbunden.
+1. [Sendeaktion mit Formulardatenmodell in einem adaptiven Formular verwenden](#use-submit-using-fdm): Dadurch wird Ihr adaptives Formular mit dem konfigurierten Microsoft® SharePoint verbunden.
 
-#### Erstellen einer SharePoint-Listenkonfiguration {#create-sharepoint-list-configuration}
+#### Erstellen einer Microsoft SharePoint-Listenkonfiguration {#create-sharepoint-list-configuration}
 
-So verbinden Sie AEM Forms mit Ihrer Microsoft® Sharepoint List:
+So verbinden Sie AEM Forms mit Ihrer Microsoft® SharePoint-Liste:
 
-1. Navigieren Sie zu **[!UICONTROL Instrumente]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Wechseln Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® SharePoint]**.
 1. Wählen Sie einen **Konfigurations-Container**. Die Konfiguration wird im ausgewählten Konfigurations-Container gespeichert.
 1. Klicken Sie in der Dropdown-Liste auf **[!UICONTROL Erstellen]** > **[!UICONTROL SharePoint-Liste]**. Der SharePoint-Konfigurationsassistent wird angezeigt.
 1. Geben Sie **[!UICONTROL Titel]**, **[!UICONTROL Client-ID]**, **[!UICONTROL Client-Geheimnis]** und **[!UICONTROL OAuth-URL]** an. Informationen zum Abrufen der Client-ID, des Client-Geheimnisses und der Mandanten-ID für die OAuth-URL finden Sie in der [Dokumentation von Microsoft®](https://learn.microsoft.com/de-de/graph/auth-register-app-v2).
@@ -264,19 +264,19 @@ So verbinden Sie AEM Forms mit Ihrer Microsoft® Sharepoint List:
 
 1. Klicken Sie auf **[!UICONTROL Verbinden]**. Bei erfolgreicher Verbindung erscheint die Meldung `Connection Successful`.
 1. Wählen Sie **[!UICONTROL SharePoint-Site]** und **[!UICONTROL SharePoint-Liste]** aus der Dropdown-Liste.
-1. Auswählen **[!UICONTROL Erstellen]** , um die Cloud-Konfiguration für die Microsoft® SharePointList zu erstellen.
+1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für die Microsoft® SharePoint-Liste zu erstellen.
 
 
-#### Verwenden des Sendevorgangs mit dem Formulardatenmodell in einem adaptiven Formular {#use-submit-using-fdm}
+#### Verwenden der Sendeaktion mit einem Fomulardatenmodell in einem adaptiven Formular {#use-submit-using-fdm}
 
-Sie können die erstellte SharePoint-Listenkonfiguration in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einer SharePoint-Liste zu speichern. Führen Sie die folgenden Schritte aus, um eine SharePoint List-Speicherkonfiguration in einem adaptiven Formular zu verwenden:
+Sie können die erstellte SharePoint-Listenkonfiguration in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einer SharePoint-Liste zu speichern. Führen Sie die folgenden Schritte aus, um eine SharePoint-Listenspeicherkonfiguration in einem adaptiven Formular zu verwenden:
 
 1. [Erstellen eines Formulardatenmodells mit der Microsoft® SharePoint-Listenkonfiguration](/help/forms/create-form-data-models.md)
 1. [Konfigurieren des Formulardatenmodells zum Abrufen und Senden von Daten](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form.md)
 1. [Konfigurieren einer Übermittlungsaktion mit einem Formulardatenmodell](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
-Wenn Sie das Formular übermitteln, werden die Daten im angegebenen Microsoft® Sharepoint List Storage gespeichert.
+Wenn Sie das Formular senden, werden die Daten im angegebenen Microsoft® Sharepoint-Listenspeicher gespeichert.
 
 >[!NOTE]
 >
@@ -342,7 +342,7 @@ Sie können die erstellte OneDrive-Speicherkonfiguration in einem adaptiven Form
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Sendeeinstellungen zu speichern.
 
 Wenn Sie das Formular übermitteln, werden die Daten im angegebenen Microsoft® OneDrive-Speicher gespeichert.
-Ordnerstruktur zum Speichern von Daten: `/folder_name/form_name/year/month/date/submission_id/data`.
+Die Ordnerstruktur zum Speichern von Daten ist `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ## Senden an Azure Blob-Speicher {#submit-to-azure-blob-storage}
 
@@ -404,11 +404,11 @@ Der Editor für adaptive Formulare verfügt über die Übermittlungsaktion **Auf
 
 Verwenden Sie nach erfolgreicher Konfiguration die Übermittlungsaktion [Microsoft® Power Automate-Fluss aufrufen](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action), um Daten an einen Power Automate-Fluss zu senden.
 
-## Submit to Workfront Fusion {#workfront-fusion}
+## An Workfront Fusion senden {#workfront-fusion}
 
-Sie können ein adaptives Formular so konfigurieren, dass bei der Übermittlung Daten an Workfront Fusion gesendet werden. Workfront Fusion ermöglicht die Automatisierung von Prozessen, sodass Benutzer sich auf neue Aufgaben konzentrieren können, anstatt dieselben Aufgaben immer wieder zu wiederholen. Es automatisiert sowohl einfache als auch komplexe Aufgaben, spart Zeit und gewährleistet eine konsistente Prozessausführung.
+Sie können ein adaptives Formular so konfigurieren, dass bei der Übermittlung Daten an Workfront Fusion gesendet werden. Workfront Fusion ermöglicht die Automatisierung von Prozessen, sodass sich Benutzende auf neue Aufgaben konzentrieren können, anstatt dieselben Aufgaben immer wieder zu wiederholen. Es automatisiert sowohl einfache als auch komplexe Aufgaben, spart Zeit und gewährleistet eine konsistente Prozessausführung.
 
-Der adaptive Forms-Editor stellt die **Aufrufen eines Workfront Fusion-Szenarios** Übermittlungsaktion zum Senden von adaptiven Forms-Daten oder -Anhängen an ein Workfront Fusion-Szenario. Informationen zum Verwenden der Sendeaktion zum Senden erfasster Daten an ein Workfront Fusion-Szenario finden Sie unter [Senden eines adaptiven Formulars an Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
+Der Editor für adaptive Formulare stellt die Übermittlungsaktion **Aufrufen eines Workfront Fusion-Szenarios** zum Senden von adaptiven Formulardaten oder -anhängen an ein Workfront Fusion-Szenario bereit. Informationen zum Verwenden der Sendeaktion zum Senden erfasster Daten an ein Workfront Fusion-Szenario finden Sie unter [Senden eines adaptiven Formulars an Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
 
 ## Verwenden synchroner oder asynchroner Übermittlung {#use-synchronous-or-asynchronous-submission}
 
