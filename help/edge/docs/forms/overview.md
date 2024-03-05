@@ -4,10 +4,10 @@ description: AEM Forms Edge Delivery Service wurde für optimale Leistung entwic
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+source-git-commit: d63d0f1152d0a23623c197924a44bc6b1e69fb42
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 1%
+source-wordcount: '1120'
+ht-degree: 0%
 
 ---
 
@@ -89,9 +89,36 @@ Es gibt einige erweiterte Funktionen, die auf Anfrage verfügbar sind:
 * **E-Mail-Benachrichtigung bei Formularübermittlung senden**: Beseitigen Sie den Aufwand manueller Nachbearbeitungen und sorgen Sie für eine zeitnahe Kommunikation mit unserer integrierten E-Mail-Automatisierung für Formularübermittlungen. Mit dieser integrierten Lösung können Sie relevante Parteien mühelos benachrichtigen, einschließlich der Übermittlung von Formulardaten, wenn ein Benutzer ein Formular auf Ihrer Website ausfüllt. Es sind keine komplexen Konfigurationen oder zusätzlichen Tools erforderlich - sie können nativ verwendet werden.
 
 
-## Workflow
+## Verfügbare Forms-Blöcke
 
-![Dokumentenbasiertes Authoring-Ökosystem](/help/edge/assets/document-based-authoring-workflow.png)
+Der AEM Forms Edge Delivery Service bietet zwei Arten von Formularblöcken, die unterschiedlichen Anforderungen gerecht werden:
+
+* **Forms-Grundblock**: Diese vielseitige Option eignet sich für die Erstellung einfacher Formulare mit grundlegenden Funktionen. Dadurch können Sie verschiedene Eingabetypen wie Textfelder, Dropdown-Menüs und Optionsfelder integrieren und so Benutzerdaten effektiv erfassen.
+
+* **Adaptiver Forms-Block**: Dieser erweiterte Baustein bietet zusätzliche Funktionen, die über den grundlegenden Forms-Baustein hinausgehen und Ihnen die Möglichkeit bieten, komplexere und interaktive Formulare zu erstellen. Im Folgenden finden Sie eine Aufschlüsselung der wichtigsten Funktionen:
+
+   * Regeln: Definieren Sie logikbasierte Aktionen in Ihren Formularen. Sie können Regeln verwenden, um Formularbereiche bedingt ein- oder auszublenden, Felder auf der Grundlage der Benutzereingabe vorauszufüllen und verschiedene Überprüfungen durchzuführen, um die Datenintegrität sicherzustellen.
+
+   * Serverseitige Erweiterbarkeit: Erweitern Sie die Funktionen Ihrer Formulare, indem Sie sie in die serverseitige Logik integrieren. Auf diese Weise können Sie komplexe Berechnungen durchführen, mit externen Systemen interagieren und bestimmte Aufgaben basierend auf Benutzeraktionen im Formular automatisieren.
+
+   * Cross-Walk: Optimieren Sie Workflows und Daten-Management: Nutzen Sie die AEM, um:
+
+      * Benutzerfreundliche Formulare mit AEM Editoren erstellen.
+
+      * Generieren Sie ein &quot;Datensatzdokument&quot;, um die gesendeten Daten sicher und fälschungssicher zu archivieren.
+
+      * Erleichtern Sie das e-Signieren mit Adobe Sign für ein reibungsloses und sicheres Signieren.
+
+      * Automatisieren Sie Geschäftsprozesse durch AEM Workflows und lösen Sie Aktionen basierend auf Formularübermittlungen aus.
+
+      * Einfache Integration in verschiedene Datenquellen, sodass ein nahtloser Datenfluss und -austausch möglich sind.
+
+  Für die Verwendung des Adaptive Forms-Blocks ist eine zusätzliche Lizenz erforderlich.
+
+### Auswählen des richtigen Forms-Blocks
+
+Die Auswahl zwischen Basis- und Adaptive Forms-Bausteinen hängt von Ihren spezifischen Anforderungen ab. Wenn Sie eine unkomplizierte Lösung für die Erfassung grundlegender Benutzerinformationen benötigen, ist der Basic Forms Block perfekt geeignet. Wenn Ihre Formulare jedoch komplexe Logik, Datenmanipulationen, Integration in externe Systeme oder optimierte Workflows mithilfe AEM Funktionen erfordern, und **Sie haben die erforderliche Lizenz**, bietet der Adaptive Forms Block die nötige Leistung und Flexibilität, um Ihre Ziele zu erreichen.
+
 
 ## Erstellen von Formularen
 

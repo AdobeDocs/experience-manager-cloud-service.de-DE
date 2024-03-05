@@ -4,9 +4,9 @@ description: Wiederholbare Abschnitte zu einem EDS-Formular hinzufügen
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+source-git-commit: d63d0f1152d0a23623c197924a44bc6b1e69fb42
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '565'
 ht-degree: 13%
 
 ---
@@ -14,9 +14,7 @@ ht-degree: 13%
 
 # Wiederholbare Abschnitte zu einem Formular hinzufügen
 
-Der Baustein &quot;Adaptives Formular&quot;bietet die Möglichkeit, einen Abschnitt oder eine Komponente eines Formulars wiederholbar zu machen.
-
-Ein wiederholbarer Abschnitt ist eine Komponente eines Formulars, das mehrmals dupliziert oder repliziert wird, um Informationen für mehrere Vorkommen ähnlicher Daten zu sammeln.
+Der Baustein &quot;Adaptives Formular&quot;bietet die Möglichkeit, einen Abschnitt oder eine Komponente eines Formulars wiederholbar zu machen. Dadurch können Benutzer Informationen für denselben Datentyp mehrmals eingeben, was die Erfassung von Informationen wie Arbeitserfahrung oder Bildungshintergrund erleichtert.
 
 Dies könnte beispielsweise ein Formular sein, mit dem Informationen über die Arbeitserfahrung einer Person erfasst werden. Sie könnten einen wiederholbaren Abschnitt zum Erfassen der Details jeder vorherigen Beschäftigung haben. Der wiederholbare Abschnitt enthält normalerweise Felder wie Unternehmensname, Stellenbezeichnung, Beschäftigungsdauer und Arbeitsverantwortlichkeiten. Die Benutzerin bzw. der Benutzer kann mehrere Instanzen des wiederholbaren Abschnitts hinzufügen, um Informationen zu den einzelnen Beschäftigungen einzugeben, die sie bzw. er in der Vergangenheit hatte.
 
@@ -27,46 +25,51 @@ Am Ende dieses Artikels werden Sie Folgendes gelernt haben:
 * [Erstellen eines wiederholbaren Abschnitts in einem Formular](#add-repeatable-sections-to-a-form)
 * [Mindest- oder Höchstanzahl von Wiederholungen in einem Formular festlegen](#set-minimum-or-maximum-number-of-repetitions-for-a-repeatable-section)
 
-## Erstellen eines wiederholbaren Abschnitts in einem Formular
+## Erstellen eines wiederholbaren Abschnitts
 
 Das Erstellen eines wiederholbaren Abschnitts in einem Formular bietet Benutzern die Möglichkeit, mehrere Instanzen desselben Datensatzes einzugeben, sodass sich wiederholende Informationen effizient erfassen lassen. So erstellen Sie einen wiederholbaren Abschnitt in einem Formular:
 
-1. Wechseln Sie in Microsoft SharePoint oder Google Workspace zum Projektordner &quot;Edge Deliver&quot;und öffnen Sie die Tabelle. Öffnen Sie beispielsweise eine Tabelle mit dem Namen `job-application.xlsx`.
+1. Wechseln Sie in Microsoft SharePoint oder Google Workspace zum Projektordner &quot;Edge Deliver&quot;und öffnen Sie die Tabelle.
 
-1. Fügen Sie ein Formularfeld mit dem `type` Eigenschaft festgelegt auf `fieldset` und aktivieren die Wiederholbarkeit durch Festlegen von `repeatable` nach `true`. Geben Sie außerdem eine beschreibende `label` für das Feld, da es als Überschrift für den wiederholbaren Abschnitt dient.
+1. Fügen Sie ein Formularfeld mit dem `type` Eigenschaft festgelegt auf `fieldset`
+1. Angeben `Name` des Felds. Die Eigenschaft name wird verwendet, um einen wiederholbaren Abschnitt zu erstellen.
+1. Aktivieren der Wiederholbarkeit durch Festlegen von `repeatable` nach `true`.
+1. Beschreibung angeben `label` für das Feld. Sie dient als Überschrift für den wiederholbaren Abschnitt.
 
    In der Abbildung unten finden Sie eine Abbildung eines Abschnitts über den Beschäftigungsverlauf in einem Antragsformular für Aufträge.
 
    ![](/help/edge/assets/repeatable-section-example-job-application-form.png)
 
-1. Im `Fieldset` -Eigenschaft aller Felder, die in einen wiederholbaren Abschnitt eingefügt werden sollen, geben Sie die `Name` des entsprechenden Feldsatzes.
+1. Legen Sie für jedes Feld, das Sie in den Abschnitt aufnehmen möchten, dessen `Fieldset` -Eigenschaft denselben Namen wie in Schritt 3 angegeben.
 
    Geben Sie beispielsweise `experience` in der Eigenschaft &quot;Fieldset&quot;aller relevanten Felder, die in die `employment history` Abschnitt.
 
-   ![](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
+   ![Beispiel für ein wiederholbares Abschnittsfeld und dessen Eigenschaften](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
 
 1. Verwendung [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) , um das Blatt in der Vorschau anzuzeigen und zu veröffentlichen. Der wiederholbare Abschnitt wird dem Formular hinzugefügt.
 
    Unter dem wiederholbaren Abschnitt finden Benutzer eine intuitive **Hinzufügen** -Schaltfläche, wodurch das Hinzufügen mehrerer Abschnitte erleichtert wird.
 
-   ![wiederholbaren Abschnitt, einen intuitiven **Hinzufügen** Schaltfläche zum Hinzufügen mehrerer Abschnitte ](/help/edge/assets/repeatable-section-example.png)
+   ![wiederholbarer Abschnitt, Schaltfläche Hinzufügen , um mehrere Abschnitte hinzuzufügen ](/help/edge/assets/repeatable-section-example.png)
 
 
-## Mindest- oder Höchstanzahl von Wiederholungen für einen wiederholbaren Abschnitt festlegen
+## Festlegen von minimalen und maximalen Wiederholungen
 
 Im Formularentwurf ist es von Vorteil, Mindest- und Höchstwiederholungen für wiederholbare Abschnitte festzulegen. Auf diese Weise stellen Sie Kontrolle und Konsistenz sicher und lenken gleichzeitig die Benutzer effektiv. So legen Sie eine Mindest- oder Höchstanzahl von Wiederholungen fest:
 
 1. Wechseln Sie in Microsoft SharePoint oder Google Workspace zum Projektordner &quot;Edge Deliver&quot;und öffnen Sie die Tabelle.
 
-1. Legen Sie die `min` -Eigenschaft, um anzugeben, wie oft der Abschnitt mindestens wiederholt werden kann.
+1. Für ein Feld von `type` `fieldset` und `repeatable` Eigenschaft festgelegt auf `true`:
+
+   * legen Sie die `min` -Eigenschaft, um anzugeben, wie oft der Abschnitt mindestens wiederholt werden kann.
+
+   * legen Sie die `max` -Eigenschaft, um die maximale Anzahl der Wiederholungen des Abschnitts anzugeben.
 
    ![Legen Sie die Eigenschaft min und max fest, um festzulegen, wie oft der Abschnitt wiederholt werden kann.](/help/edge/assets/repeatable-section-set-min-max.png)
 
-1. Legen Sie die `max` -Eigenschaft, um die maximale Anzahl der Wiederholungen des Abschnitts anzugeben.
-
 1. Verwendung [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) , um das Blatt in der Vorschau anzuzeigen und zu veröffentlichen.
 
-   Beim Hinzufügen wiederholbarer Abschnitte finden Benutzer jetzt eine intuitive **Löschen** -Symbol, wodurch der Prozess zum Entfernen wiederholbarer Abschnitte vereinfacht wird. Nach dem Hinzufügen können diese Abschnitte nicht auf weniger Instanzen reduziert werden, als von der `min` -Eigenschaft. Dadurch wird sichergestellt, dass die Mindestanforderungen für das Ausfüllen des Formulars eingehalten werden.
+   Beim Hinzufügen eines wiederholbaren Abschnitts finden Benutzer eine intuitive **Löschen** -Symbol verwenden, was das Entfernen wiederholbarer Abschnitte erleichtert. Nach dem Hinzufügen können diese Abschnitte nicht auf weniger Instanzen reduziert werden, als von der `min` -Eigenschaft. Dadurch wird sichergestellt, dass die Mindestanforderungen für das Ausfüllen des Formulars eingehalten werden.
 
 <!--
 
