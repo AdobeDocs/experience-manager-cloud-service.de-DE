@@ -1,12 +1,12 @@
 ---
 title: Erste Schritte mit AEM und Edge Delivery Services
-description: Erfahren Sie, wie AEM as a Cloud Service von der Leistung und den perfekten Lighthouse-Werten profitieren kann, die von Edge Delivery Services angeboten werden.
+description: Erfahren Sie, wie AEM as a Cloud Service von der Performance und den perfekten Lighthouse-Werten profitieren kann, die von Edge Delivery Services angeboten werden.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '874'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
