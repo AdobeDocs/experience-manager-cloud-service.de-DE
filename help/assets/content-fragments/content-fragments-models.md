@@ -428,7 +428,7 @@ So löschen Sie ein Inhaltsfragmentmodell:
 
    >[!NOTE]
    >
-   Wenn auf das Modell verwiesen wird, wird eine Warnung angezeigt. Ergreifen Sie entsprechende Maßnahmen.
+   >Wenn auf das Modell verwiesen wird, wird eine Warnung angezeigt. Ergreifen Sie entsprechende Maßnahmen.
 
 ## Veröffentlichen eines Inhaltsfragmentmodells {#publishing-a-content-fragment-model}
 
