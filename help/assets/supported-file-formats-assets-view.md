@@ -3,11 +3,10 @@ title: Unterstützte Dateiformate
 description: Unterstützte Dateiformate für die verschiedenen Anwendungsfälle von  [!DNL Assets view]
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
-exl-id: bc44e98d-446e-41ff-b5b4-9dc324834630
-source-git-commit: 6cb30ffda6c0de04e5cb3d01341b59c9ee75b335
-workflow-type: ht
-source-wordcount: '363'
-ht-degree: 100%
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+workflow-type: tm+mt
+source-wordcount: '515'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +40,7 @@ Die verschiedenen Dateitypen werden, wie unten beschrieben, in unterschiedlichem
 | Asset-Typ | [Durchsuchen](/help/assets/navigate-assets-view.md) | Kopieren | [Hochladen](/help/assets/add-delete-assets-view.md) | Erstellen | [Löschen](/help/assets/add-delete-assets-view.md#delete-assets) | Details | Bild-Zoom | [Kürzlich angesehen](/help/assets/navigate-assets-view.md) |
 |-------------------|----------|----------|----------|----------|----------|-------------------|------------|-----------------|
 | Rasterbilder | ✓ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
-| RAW Dateien | ✓ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
+| RAW-Dateien | ✓ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | Ordner | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | − |
 | MP4-Videos | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | PDF | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
@@ -57,7 +56,7 @@ Die verschiedenen Dateitypen werden, wie unten beschrieben, in unterschiedlichem
 | Asset-Typ | [Download](/help/assets/manage-organize-assets-view.md#download) | Drag-and-Drop | [Bildeditor](/help/assets/edit-images-assets-view.md) | [Suchen](/help/assets/search-assets-view.md) | [Smart-Tags](/help/assets/metadata-assets-view.md#tags) | [Umbenennen](/help/assets/manage-organize-assets-view.md) | [Versionen](/help/assets/manage-organize-assets-view.md#versions-of-assets) |
 |---------------|----------|---------------|--------------|----------|------------|----------|----------|
 | Rasterbilder | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAW Dateien | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RAW-Dateien | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Ordner | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 | Videos | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | CC-Bibliotheken | − | − | − | − | − | ✓ | ✓ |
@@ -72,7 +71,7 @@ Die verschiedenen Dateitypen werden, wie unten beschrieben, in unterschiedlichem
 | Asset-Typ | Anmerken | Kommentar | Erstellen von Aufgaben und Überprüfen |
 |---------------|----------|----------|-------------------------|
 | Rasterbilder | ✓ | ✓ | ✓ |
-| RAW Dateien | ✓ | ✓ | ✓ |
+| RAW-Dateien | ✓ | ✓ | ✓ |
 | Ordner | − | − | − |
 | Videos | − | ✓ | ✓ |
 | CC-Bibliotheken | − | − | − |
@@ -93,7 +92,7 @@ Die verschiedenen Dateitypen werden, wie unten beschrieben, in unterschiedlichem
 | Asset-Typ | [Metadaten](/help/assets/metadata-assets-view.md) | [Ausgabedarstellungen](/help/assets/add-delete-assets-view.md#renditions) | [Papierkorb](/help/assets/add-delete-assets-view.md#delete-assets) | Kopieren | Verschieben |
 |---------------|-------------------|------------|----------|----------|----------|
 | Rasterbilder | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAW Dateien | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RAW-Dateien | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Ordner | ✓ | − | ✓ | ✓ | ✓ |
 | Videos | ✓ | − | ✓ | ✓ | ✓ |
 | CC-Bibliotheken | ✓ | − | − | − | − |
