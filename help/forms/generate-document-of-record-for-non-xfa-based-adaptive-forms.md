@@ -3,10 +3,10 @@ title: Wie generiert man ein Datensatzdokument (DoR) für AEM Forms?
 description: Lernen Sie, wie Sie eine Vorlage für ein Datensatzdokument (DoR) für adaptive Formulare generieren können.
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
-source-wordcount: '4124'
-ht-degree: 100%
+source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
+workflow-type: tm+mt
+source-wordcount: '4170'
+ht-degree: 98%
 
 ---
 
@@ -345,13 +345,18 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
       * **Vorlage**: Wenn Sie eine benutzerdefinierte Vorlage auswählen, navigieren zu einer XDP-Datei auf Ihrem [!DNL AEM Forms]-Server und wählen sie aus. Wenn Sie eine Vorlage verwenden möchten, die sich noch nicht auf Ihrem [!DNL AEM Forms]-Server befindet, müssen Sie die XDP-Datei zuerst auf Ihren [!DNL AEM Forms]-Server hochladen.
       * **Akzentfarbe**: Die Farbe, in der Kopfzeilentext und Trennlinien im Datensatzdokument-PDF dargestellt werden.
       * **Schriftfamilie**: Schriftfamilie des Textes im Datensatzdokument-PDF.
+
+        >[!NOTE]
+        >
+        > AEM Forms bietet eine Vielzahl integrierter Schriftarten, die nahtlos in PDF-Dateien integriert werden können. Um die Liste der unterstützten Schriftarten anzuzeigen, [Klicken Sie hier](/help/forms/supported-out-of-the-box-fonts.md).
+
       * **Formularobjekte einschließen, die nicht mit dem Datenmodell verbunden sind**: Durch Festlegen dieser Eigenschaft werden ungebundene Felder aus dem schemabasierten adaptiven Formular in das Datensatzdokument einbezogen.
       * **Ausgeblendete Felder vom Datensatzdokument ausschließen**: Durch Festlegen der Eigenschaft wird bestimmt, dass die ausgeblendeten Felder aus dem Datensatzdokument ausgeschlossen werden sollen.
       * **Beschreibung der Bedienfelder ausblenden**: Durch Festlegen der Eigenschaft ist die Beschreibung des Bedienfeldes bzw. der Tabelle im Datensatzdokument nicht enthalten. Gilt für Bedienfelder und Tabellen.
 
       ![Allgemeine Eigenschaften](/help/forms/assets/basicpropertiesdor.png)
 
-   1. **Formularfeldeigenschaften**:
+   2. **Formularfeldeigenschaften**:
       * **Für Kontrollkästchen und Optionsschaltflächenkomponenten nur ausgewählte Werte einblenden**: Durch Festlegen dieser Eigenschaft werden nur die ausgewählten Werte von Kontrollkästchen und Optionsfeldern im [!UICONTROL Datensatzdokument] angezeigt.
       * **Trennzeichen für mehrere Werte**: Sie können ein beliebiges Trennzeichen wie Komma oder Zeilenumbruch auswählen, um mehrere Werte anzuzeigen.
       * **Optionenausrichtung**: Sie können die gewünschte Ausrichtung (horizontal, vertikal, wie das adaptive Formular) auswählen, um die Ausrichtung für Felder wie Kontrollkästchen oder Optionsfelder festzulegen, die im [!UICONTROL Datensatzdokument] angezeigt werden sollen. Standardmäßig ist für die Felder im [!UICONTROL Datensatzdokument] die vertikale Ausrichtung festgelegt. Das Festlegen der Eigenschaften über die [!UICONTROL Formularfeldeigenschaften] des Datensatzdokuments überschreibt die Eigenschaften, die in der [!UICONTROL Elementausrichtung] für die Felder in einem adaptiven Formular festgelegt sind. Wenn Sie die Option [!UICONTROL Wie adaptives Formular] auswählen, wird die in der Autoreninstanz des adaptiven Formulars konfigurierte Ausrichtung für Felder des [!UICONTROL Datensatzdokuments] verwendet.
@@ -359,7 +364,7 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
 
       ![Formularfeldeigenschaften](/help/forms/assets/formfieldpropertiesdor.png)
 
-   1. **Eigenschaften der primären Seite**:
+   3. **Eigenschaften der primären Seite**:
       * **Logo-Bild**: Sie können wahlweise das Logo-Bild aus dem adaptiven Formular verwenden, eines aus DAM auswählen oder eines von Ihrem Computer hochladen.
       * **Formulartitel**: Titel des Datensatzdokuments.
       * **Kopfzeilentext**: Text, der im Kopfzeilenabschnitt des Datensatzdokuments angezeigt wird.
@@ -476,6 +481,11 @@ Mit einer XCI-Datei können Sie verschiedene Eigenschaften eines Dokuments festl
 | config/present/pdf/pdfa/conformance | Gibt die Konformitätsstufe mit der PDF/A-Spezifikation an. |
 | config/present/pdf/version | Gibt die Version des zu erzeugenden PDF-Dokuments an |
 | config/present/pdf/version/map | Gibt die Fallback-Schriften für das Dokument an |
+
+>[!NOTE]
+>
+> AEM Forms bietet eine Vielzahl integrierter Schriftarten, die nahtlos in PDF-Dateien integriert werden können. Um die Liste der unterstützten Schriftarten anzuzeigen, [Klicken Sie hier](/help/forms/supported-out-of-the-box-fonts.md).
+
 
 ### Verwenden einer benutzerdefinierten XCI-Datei in einer Forms as a Cloud Service-Umgebung
 

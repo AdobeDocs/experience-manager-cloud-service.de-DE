@@ -3,10 +3,10 @@ title: Generieren eines Datensatzdokuments für adaptive Formulare?
 description: Erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument für Kernkomponenten adaptiver Formulare generieren.
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
-source-wordcount: '3108'
-ht-degree: 100%
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
+workflow-type: tm+mt
+source-wordcount: '3131'
+ht-degree: 99%
 
 ---
 
@@ -327,6 +327,10 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
       * **Vorlage**: Wenn Sie eine benutzerdefinierte Vorlage auswählen möchten, wählen Sie eine XDP-Datei auf Ihrem [!DNL AEM Forms]-Server aus. Wenn Sie eine Vorlage verwenden möchten, die sich noch nicht auf Ihrem [!DNL AEM Forms]-Server befindet, müssen Sie die XDP-Datei zuerst auf Ihren [!DNL AEM Forms]-Server hochladen.
       * **Akzentfarbe**: Die Farbe, in der Kopfzeilentext und Trennlinien im Datensatzdokument-PDF gerendert werden.
       * **Schriftfamilie**: Schriftfamilie des Textes im Datensatzdokument-PDF.
+
+        >[!NOTE]
+        >
+        > AEM Forms bietet eine Vielzahl integrierter Schriftarten, die nahtlos in PDF-Dateien integriert werden können. Um die Liste der unterstützten Schriftarten anzuzeigen, [Klicken Sie hier](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **Formularobjekte einschließen, die nicht mit dem Datenmodell verbunden sind**: Durch Festlegen dieser Eigenschaft werden ungebundene Felder aus dem schemabasierten adaptiven Formular in das Datensatzdokument einbezogen.
 
