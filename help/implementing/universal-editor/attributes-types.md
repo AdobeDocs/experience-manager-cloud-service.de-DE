@@ -2,10 +2,10 @@
 title: Attribute und Elementtypen
 description: Erfahren Sie mehr über die Datenattribute und Elementtypen, die der universelle Editor erfordert.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
+source-git-commit: 5ddd4bbcce10c5cda97e3ea3f6750b209b5743f0
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss si
 | `data-aue-prop` | Attribut der Ressource, siehe den Abschnitt [„Instrumentieren der Seite“ im Dokument „Erste Schritte mit dem universellen Editor in AEM“](getting-started.md#instrument-thepage) |
 | `data-aue-type` | [Typ des bearbeitbaren Elements](#item-types) (z. B. Text, Bild und Verweis) |
 | `data-aue-filter` | Definiert, welche Verweise verwendet werden können |
-| `data-aue-label` | Definiert eine benutzerdefinierte Beschriftung für ein auswählbares Element, das im Editor angezeigt wird. <br>Wenn `itemmodel` festgelegt ist, wird die Beschriftung über das Modell abgerufen |
+| `data-aue-label` | Definiert eine benutzerdefinierte Beschriftung für ein auswählbares Element, das im Editor angezeigt wird. <br>Wenn `data-aue-model` festgelegt ist, wird die Beschriftung über das Modell abgerufen |
 | `data-aue-model` | Definiert ein Modell, das für die formularbasierte Bearbeitung in der Eigenschaftenleiste verwendet wird |
 | `data-aue-behavior` | Definiert die [Verhalten einer Instrumentierung,](#behaviors) Beispielsweise kann eigenständiger Text oder Bild auch eine Komponente imitieren, um sie zu verschieben oder zu löschen. |
 
