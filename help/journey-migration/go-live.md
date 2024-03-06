@@ -2,10 +2,10 @@
 title: Live-Schaltung
 description: Erfahren Sie, wie Sie die Migration durchführen, sobald der Code und der Inhalt Cloud-fähig sind.
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: ht
-source-wordcount: '1721'
-ht-degree: 100%
+source-git-commit: 8baea95d57ce1e92e0e7083c161c9fee395fcb8e
+workflow-type: tm+mt
+source-wordcount: '1771'
+ht-degree: 97%
 
 ---
 
@@ -156,6 +156,9 @@ Die beiden oben genannten Punkte werden im Bericht von [Best Practice Analyzer](
    * Entwicklungsumgebungen haben nicht die gleiche Größe wie Staging- und Produktionsumgebungen.
 * Stellen Sie um und gehen Sie sicher, dass die tatsächliche Live-Schaltung ohne neue Bereitstellung oder Inhaltsaktualisierung durchgeführt wird.
 * Erstellen Sie Benachrichtigungsprofile für die Benutzenden der Admin Console. Siehe [Benachrichtigungsprofile](/help/journey-onboarding/notification-profiles.md)
+* Ziehen Sie die Konfiguration von Traffic-Filter-Regeln in Erwägung, um zu steuern, welcher Traffic auf Ihrer Website nicht zulässig sein soll.
+   * Regeln für Traffic-Filter mit Ratenbegrenzungen können ein effektives Werkzeug gegen DDoS-Angriffe sein. Eine spezielle Kategorie von Traffic-Filterregeln, so genannte WAF-Regeln, erfordert eine separate Lizenz.
+   * Weitere Informationen finden Sie in der Dokumentation [vorgeschlagene Startregeln](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules).
 
 Sie können immer auf die Liste verweisen, falls Sie Ihre Aufgaben bei der Migration neu kalibrieren müssen.
 
