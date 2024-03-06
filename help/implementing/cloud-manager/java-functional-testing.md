@@ -2,10 +2,10 @@
 title: Java™-Funktionstests
 description: Erfahren Sie, wie Sie Java™-Funktionstests für AEM as a Cloud Service schreiben.
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: e463979df1f705283f29d954f9869d85f0a96465
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 100%
+source-wordcount: '877'
+ht-degree: 92%
 
 ---
 
@@ -111,6 +111,25 @@ Weitere Informationen finden Sie im [`aem-testing-clients`GitHub-Repository](htt
 >
 > Wenn Sie weitere Ressourcen benötigen, erstellen Sie einen Fall für die Kundenunterstützung und beschreiben Sie Ihren Anwendungsfall. Das Adobe-Team prüft Ihre Anfrage und leistet angemessene Unterstützung.
 
+#### Abhängigkeiten
+
+* aem-cloud-testing-clients:
+
+Bevorstehende Änderungen an der containerisierten Infrastruktur, die zum Ausführen von Funktionstests verwendet wird, erfordern die Bibliothek [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) wird in Ihrem benutzerdefinierten Funktionstest verwendet, um auf mindestens eine Version zu aktualisieren **1.2.1**
+Stellen Sie sicher, dass Ihre Abhängigkeit in `it.tests/pom.xml` wurde aktualisiert.
+
+```
+<dependency>
+   <groupId>com.adobe.cq</groupId>
+   <artifactId>aem-cloud-testing-clients</artifactId>
+   <version>1.2.1</version>
+</dependency>
+```
+
+>[!NOTE]
+>
+>Diese Änderung ist nach dem 6. April 2024 erforderlich.
+>Wenn die Abhängigkeitsbibliothek nicht aktualisiert wird, treten Pipeline-Fehler beim Schritt &quot;Benutzerdefinierte Funktionstests&quot;auf.
 
 ### Lokale Testausführung {#local-test-execution}
 
@@ -153,3 +172,4 @@ mvn verify -Plocal \
     -Dit.publish.user=<user> \
     -Dit.publish.password=<password>
 ```
+
