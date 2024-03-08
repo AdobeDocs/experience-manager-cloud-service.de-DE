@@ -4,17 +4,17 @@ description: Dieses Dokument bietet einen Überblick über die Formularkomponent
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 7d087d41-9313-482a-a905-8955b0999781
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '964'
 ht-degree: 3%
 
 ---
 
-
 # Formularkomponenten und Eigenschaften: AEM Forms Edge Delivery Service
 
-Mit AEM Forms Edge Delivery Service können Sie benutzerfreundliche und interaktive Formulare mit verschiedenen Komponenten erstellen. Diese Komponenten decken unterschiedliche Arten der Datenerfassung ab und können einfach an Ihre spezifischen Anforderungen angepasst werden.
+Mit AEM Forms Edge Delivery Services können Sie benutzerfreundliche und interaktive Formulare mit verschiedenen Komponenten erstellen. Diese Komponenten decken unterschiedliche Arten der Datenerfassung ab und können einfach an Ihre spezifischen Anforderungen angepasst werden.
 
 
 ![Eine Beispieltabelle mit einigen Komponenten und Eigenschaften](/help/edge/assets/sample-form-in-spreadsheet.png)
@@ -49,7 +49,7 @@ Im Folgenden finden Sie eine Übersicht über die verfügbaren Komponenten:
 Jede Formularkomponente enthält verschiedene Eigenschaften, mit denen Sie das Verhalten und Erscheinungsbild steuern können. Hier werden die Eigenschaften unterstützt, die von den Komponenten für adaptive Formularblöcke unterstützt werden:
 
 
-| Property | Anwendbare Komponenten | Details |
+| Eigenschaft | Anwendbare Komponenten | Details |
 |--------------|------------------------------|----------------------------------------------------------------------|
 | Typ | Alle | Gibt den Typ der Komponente an. Diese Eigenschaft bestimmt das Verhalten und Erscheinungsbild des Eingabefelds. Bei Texteingaben kann der Typ beispielsweise &quot;text&quot;, &quot;email&quot; für E-Mail-Eingaben und &quot;password&quot; für Kennworteingaben lauten. Bausteine für adaptive Formulare unterstützen  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">alle gültigen HTML5-Eingabetypen</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, und <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> als Typ. |
 | Typ | Alle | Gibt den Typ der Komponente an. Diese Eigenschaft bestimmt das Verhalten und Erscheinungsbild des Eingabefelds. Bei Texteingaben kann der Typ beispielsweise &quot;text&quot;, &quot;email&quot; für E-Mail-Eingaben und &quot;password&quot; für Kennworteingaben lauten. Bausteine für adaptive Formulare unterstützen  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">alle gültigen HTML5-Eingabetypen</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, und <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> als Typ. |

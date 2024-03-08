@@ -4,13 +4,13 @@ description: Handwerkliche perfekte Formen, schnell! ⚡ AEM Forms Edge Delivery
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 2%
+source-wordcount: '1165'
+ht-degree: 1%
 
 ---
-
 
 # Erstellen eines Formulars mithilfe des Bausteins Adaptives Formular
 
@@ -27,24 +27,26 @@ Die AEM Forms Edge-Bereitstellung bietet einen Block, der als &quot;Adaptiver Fo
 
 Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
-* Richten Sie das GitHub-Projekt des Edge Delivery Service (EDS) mithilfe AEM Textbausteine ein und klonen Sie das entsprechende GitHub-Repository auf Ihrem lokalen Computer. Siehe [Entwickler-Tutorial](https://www.aem.live/developer/tutorial) für Details. In diesem Dokument wird der lokale Ordner Ihres Edge Delivery Service-Projekts (EDS) als `[EDS Project repository]` .
+* Richten Sie das GitHub-Projekt für Edge Delivery Services (EDS) mithilfe AEM Bausteinvorlage ein und klonen Sie das entsprechende GitHub-Repository auf Ihrem lokalen Computer. Siehe [Entwickler-Tutorial](https://www.aem.live/developer/tutorial) für Details. In diesem Dokument wird der lokale Ordner Ihres Edge Delivery Services-Projekts (EDS) als `[EDS Project repository]` .
 * Stellen Sie sicher, dass Sie Zugriff auf Google Tabellen oder Microsoft SharePoint haben. Informationen zum Einrichten von Microsoft SharePoint als Inhaltsquelle finden Sie unter [Verwendung von Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## Formular erstellen
 
-+++ Schritt 1: Fügen Sie den Block Adaptives Formular zu Ihrem Edge Delivery Service (EDS)-Projekt hinzu.
++++ Schritt 1: Hinzufügen des Bausteins Adaptives Formular zu Ihrem Edge Delivery Services (EDS)-Projekt.
 
-Mit Adaptive können Benutzer Formulare für eine Edge Delivery Service-Site erstellen. Dieser Baustein ist jedoch nicht in der standardmäßigen AEM-Bausteinvorlage enthalten (die zum Erstellen eines Projekts mit dem Edge Delivery Service verwendet wird). So integrieren Sie den Baustein für adaptive Formulare nahtlos in Ihr Edge Delivery Service-Projekt:
+Mit Adaptive können Benutzer Formulare für eine Edge Delivery Services-Site erstellen. Dieser Baustein ist jedoch nicht in der standardmäßigen AEM (die zum Erstellen eines Edge Delivery Services-Projekts verwendet wird) enthalten. So integrieren Sie den Block Adaptives Formular nahtlos in Ihr Edge Delivery Services-Projekt:
 
-1. **Repository für adaptive Formularblöcke klonen**: Klonen Sie die [Repository für adaptive Formularblöcke](https://github.com/adobe/afb) auf Ihrem lokalen Computer. Es enthält den Code zum Rendern des Formulars auf einer EDS-Webseite. In diesem Dokument wird der lokale Ordner Ihres Forms Block-Repositorys als `[Adaptive Form Block repository]`.
-1. **Suchen Sie das Repository für adaptive Formularblöcke:** Zugriff auf [Repository für adaptive Formularblöcke]/blocks auf Ihrem lokalen Computer und kopieren Sie den Ordner `form` Ordner.
-1. **Fügen Sie den Block Adaptives Formular in Ihr EDS-Projekt ein:**
-Navigieren Sie zum [EDS-Projekt-Repository]/blocks/ Ordner auf Ihrem lokalen Computer und fügen Sie den Formularordner ein.
-1. **Übertragen Sie Änderungen auf GitHub:** Checken Sie den Formularordner und die zugrunde liegenden Dateien in Ihr Edge Delivery Service-Projekt auf GitHub ein.
+1. **Repository für adaptive Formularblöcke klonen**: Klonen Sie die [Repository für adaptive Formularblöcke](https://github.com/adobe-rnd/form-block) auf Ihrem lokalen Computer. Es enthält den Code zum Rendern des Formulars auf einer EDS-Webseite. In diesem Dokument wird der lokale Ordner Ihres Forms Block-Repositorys als `[Adaptive Form Block repository]`.
+1. **Suchen Sie das Repository für adaptive Formularblöcke:** Zugriff auf [Repository für adaptive Formularblöcke]/blocks/src und kopieren Sie den Inhalt.
 
-Nach Abschluss dieser Schritte wurde der Baustein für adaptives Formular erfolgreich zum Projekt-Repository für Edge Delivery Service (EDS) auf GitHub hinzugefügt. Sie können jetzt Formulare erstellen und zu einer EDS Sites-Seite hinzufügen.
+1. auf Ihrem lokalen Computer und kopieren Sie die `form` Ordner.
+1. **Fügen Sie den Code des Bausteins des adaptiven Formulars in Ihr EDS-Projekt ein:**
+Navigieren Sie zum [EDS-Projekt-Repository]/blocks/ Ordner auf Ihrem lokalen Computer und erstellen Sie einen Ordner &quot;form&quot;. Fügen Sie die `[Adaptive Form Block repository]/blocks/src content`, kopiert in einem vorherigen Schritt in die `[EDS Project repository]/blocks/form` Ordner.
+1. **Übertragen Sie Änderungen auf GitHub:** Checkin `[EDS Project repository]/blocks/form` Ordner und die zugrunde liegenden Dateien Ihrem Edge Delivery Services-Projekt auf GitHub.
+
+Nach Abschluss dieser Schritte wurde der Baustein für adaptive Formulare erfolgreich zum Repository Ihres Edge Delivery Services-Projekts (EDS) auf GitHub hinzugefügt. Sie können jetzt Formulare erstellen und zu einer EDS Sites-Seite hinzufügen.
 
 
 **Beheben von GitHub-Build-Problemen**
@@ -57,13 +59,11 @@ Wenn der Fehler &quot;Pfad zum Modul kann nicht aufgelöst werden &quot;&#39;../
 * **Linking-Fehler beheben:**
 Sollten Sie auf Linkingfehler stoßen, können Sie diese umgehen. Öffnen Sie die [EDS-Projekt]/package.json und ändern Sie das Skript &quot;lint&quot;von &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; in &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;&quot;. Speichern Sie die Datei und übertragen Sie die Änderungen auf Ihr GitHub-Projekt.
 
-
-
 +++
 
 +++ Schritt 2: Erstellen Sie ein Formular mit Microsoft Excel oder Google Sheet.
 
-Anstatt durch komplexe Prozesse zu navigieren, kann das Erstellen eines Formulars mühelos mithilfe einer Tabelle erfolgen. Zunächst können Sie die Zeilen- und Spaltenüberschriften zu einem Arbeitsblatt hinzufügen, wobei jede Zeile ein Formularfeld darstellt, während jede Spaltenüberschrift die Eigenschaften des entsprechenden Felds definiert.
+Anstatt durch komplexe Prozesse zu navigieren, kann das Erstellen eines Formulars mühelos mithilfe einer Tabelle erfolgen. Sie können die Zeilen und Spalten definieren, aus denen die Formularstruktur besteht. Jede Zeile stellt eine einzelne [Formularfeld](/help/edge/docs/forms/form-components.md#available-components) und die Spaltenüberschriften definieren die entsprechenden [Feldeigenschaften](/help/edge/docs/forms/form-components.md#components-properties).
 
 Betrachten Sie beispielsweise die folgende Tabelle, in der die Zeilen Felder für eine `enquiry` Formular- und Spaltenüberschriften definieren ihre Eigenschaften:
 
@@ -96,7 +96,7 @@ So fahren Sie mit der Formularerstellung fort:
 
 
    ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+       https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
    ```
 
    * `<branch>` bezieht sich auf die Verzweigung Ihres GitHub-Repository.
@@ -110,7 +110,7 @@ So fahren Sie mit der Formularerstellung fort:
 
 +++
 
-+++ Schritt 3: Anzeigen einer Vorschau des Formulars mit Ihrer Edge Delivery Service-Seite (EDS).
++++ Schritt 3: Anzeigen einer Vorschau des Formulars mithilfe Ihrer Edge Delivery Services (EDS)-Seite.
 
 
 Bis jetzt haben Sie den Block Adaptives Formular zu Ihrem EDS-Projekt hinzugefügt und die Struktur des Formulars vorbereitet. Nun können Sie eine Vorschau des Formulars anzeigen:
@@ -121,7 +121,7 @@ Bis jetzt haben Sie den Block Adaptives Formular zu Ihrem EDS-Projekt hinzugefü
 
 1. **Navigieren Sie zum gewünschten Speicherort:** Wechseln Sie an die gewünschte Stelle im Dokument, an der Sie das Formular hinzufügen möchten.
 
-1. **Fügen Sie den Block Adaptives Formular hinzu:** Fügen Sie einen Block mit dem Namen &quot;Formular&quot;in die Datei ein, wie unten dargestellt:
+1. **Fügen Sie den Block Adaptives Formular hinzu:** So erstellen Sie einen Formularblock zum Rendern des Formulars. Wählen Sie &quot;Einfügen&quot;> &quot;Tabelle&quot;und erstellen Sie eine Spalte (zwei Zeilentabellen). Nennen Sie die Tabelle &quot;Formular&quot;und fügen Sie die Vorschau-URL in die zweite Zeile ein. Stellen Sie sicher, dass die URL als Hyperlink formatiert ist, nicht als Nur-Text, wie unten dargestellt:
 
    | Formular |
    |---|
@@ -153,12 +153,4 @@ Bis jetzt haben Sie den Block Adaptives Formular zu Ihrem EDS-Projekt hinzugefü
 
 
 
-## Mehr anzeigen
 
-* [Formularkomponenten](/help/edge/docs/forms/form-components.md)
-* [Formularfeldeigenschaften](/help/edge/docs/forms/eds-form-field-properties)
-* [Erstellen und Anzeigen einer Vorschau eines Formulars](/help/edge/docs/forms/create-forms.md)
-* [Formular zum Senden von Daten aktivieren](/help/edge/docs/forms/submit-forms.md)
-* [Veröffentlichen eines Formulars auf der Siteseite](/help/edge/docs/forms/publish-forms.md)
-* [Hinzufügen von Überprüfungen zu Formularfeldern](/help/edge/docs/forms/validate-forms.md)
-* [Designs und Formularstil ändern](/help/edge/docs/forms/style-theme-forms.md)

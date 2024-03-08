@@ -4,13 +4,13 @@ description: Erfahren Sie, wie Sie Dankeseiten und Weiterleitungen für Forms Bl
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 1%
 
 ---
-
 
 # Dankeseite oder Umleitungsformular nach der Übermittlung anzeigen
 
@@ -63,9 +63,9 @@ Standardmäßig leitet der Block Adaptive Forms die Benutzer zur &quot;Dankeseit
 
    >[!NOTE]
    >
-   > Stellen Sie sicher, dass im Projektordner des Edge Delivery Service-Projekts in Microsoft SharePoint oder Google Workspace eine Seite mit demselben Namen vorhanden ist. Wenn die Seite nicht vorhanden ist, erstellen und veröffentlichen Sie sie.
+   > Stellen Sie sicher, dass sich in Ihrem Edge Delivery Services-Projektordner eine Seite mit demselben Namen auf Microsoft SharePoint oder Google Workspace befindet. Wenn die Seite nicht vorhanden ist, erstellen und veröffentlichen Sie sie.
 
-1. Fahren Sie fort, um den aktualisierten Ordner &quot;form.js&quot;und die zugrunde liegenden Dateien in Ihr Edge Delivery Service-Projekt auf GitHub einzuchecken. Durch diese Aktualisierung wird sichergestellt, dass das Formular jetzt wie angegeben zur aktualisierten Seite weiterleitet.
+1. Fahren Sie fort, um den aktualisierten Ordner &quot;form.js&quot;und die zugrunde liegenden Dateien in Ihrem Edge Delivery Services-Projekt auf GitHub einzuchecken. Durch diese Aktualisierung wird sichergestellt, dass das Formular jetzt wie angegeben zur aktualisierten Seite weiterleitet.
 
 1. Stellen Sie sicher, dass die Seite in Ihrem EDS-Projektordner vorhanden ist, und veröffentlichen Sie sie.
 

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 45b263651f6139b1c7f83ff3485186b272ba1a4f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 87%
+source-wordcount: '331'
+ht-degree: 78%
 
 ---
 # Snippets {#snippets}
@@ -55,8 +55,17 @@ ht-degree: 87%
 * [An Power Automate senden](/help/forms/forms-microsoft-power-automate-integration.md)
 * [An Workfront Fusion senden](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Verbinden eines adaptiven Formulars mit einer Salesforce-Anwendung](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [Verbinden eines adaptiven Formulars mit Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Verbinden eines adaptiven Formulars mit Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## AEM Authoring mit frühzeitigem Zugriff auf Edge Delivery Services {#aem-authoring-edge-early-access}
 
 [!BADGE FRÜHZEITIGE ZUGRIFFSTECHNOLOGIE - Fragen Sie uns über diese Funktion von den AEM Sites Labs auf Ihrem Slack-Kanal!]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEM Authoring mit Edge Delivery Services ist eine Technologie für den frühzeitigen Zugriff."}
+
+## Siehe auch {#see-also-forms-eds}
+
+* [Formularkomponenten](/help/edge/docs/forms/form-components.md)
+* [Erstellen und Anzeigen einer Vorschau eines Formulars](/help/edge/docs/forms/create-forms.md)
+* [Formular zum Senden von Daten aktivieren](/help/edge/docs/forms/submit-forms.md)
+* [Veröffentlichen eines Formulars auf der Siteseite](/help/edge/docs/forms/publish-forms.md)
+* [Hinzufügen von Überprüfungen zu Formularfeldern](/help/edge/docs/forms/validate-forms.md)
+* [Designs und Formularstil ändern](/help/edge/docs/forms/style-theme-forms.md)

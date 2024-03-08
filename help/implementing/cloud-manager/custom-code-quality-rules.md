@@ -2,10 +2,10 @@
 title: Qualitätsregeln für benutzerspezifischen Code
 description: Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der Code-Qualitätstests ausgeführt werden. Sie basieren auf Best Practices von Adobe Experience Manager-Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '4095'
-ht-degree: 87%
+source-wordcount: '4167'
+ht-degree: 99%
 
 ---
 
@@ -101,7 +101,7 @@ Durch die Verwendung einer Formatzeichenfolge aus einer externen Quelle (z. B. 
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
   String messageFormat = request.getParameter("messageFormat");
   request.getResource().getValueMap().put("some property", String.format(messageFormat, "some text"));
-  response.sendStatus(HttpServletResponse.SC_OK);
+  response.sendStatus (HttpServletResponse.SC_OK);
 }
 ```
 
@@ -120,7 +120,7 @@ Beim Ausführen von HTTP-Anfragen über eine Experience Manager-Anwendung muss u
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
  
-public void dontDoThis() {
+public void dontDoThis () {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   HttpClient httpClient = builder.build();
 
@@ -149,7 +149,7 @@ public void dontDoThisEither() {
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
  
-public void doThis() {
+public void doThis () {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   RequestConfig requestConfig = RequestConfig.custom()
     .setConnectTimeout(5000)
@@ -162,7 +162,7 @@ public void doThis() {
   // do something with the client
 }
 
-public void orDoThis() {
+public void orDoThis () {
   URL url = new URL("http://www.google.com");
   URLConnection urlConnection = url.openConnection();
   urlConnection.setConnectTimeout(5000);
@@ -194,7 +194,7 @@ Es ist ein weitverbreiteter Irrtum, dass `ResourceResolver`-Objekte, die mit ein
 #### Nicht konformer Code {#non-compliant-code-4}
 
 ```java
-public void dontDoThis(Session session) throws Exception {
+public void dontDoThis (Session session) throws Exception {
   ResourceResolver resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object)session));
   // do some stuff with the resolver
 }
@@ -203,7 +203,7 @@ public void dontDoThis(Session session) throws Exception {
 #### Konformer Code {#compliant-code-2}
 
 ```java
-public void doThis(Session session) throws Exception {
+public void doThis (Session session) throws Exception {
   ResourceResolver resolver = null;
   try {
     resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object)session));
@@ -215,7 +215,7 @@ public void doThis(Session session) throws Exception {
   }
 }
 
-public void orDoThis(Session session) throws Exception {
+public void orDoThis (Session session) throws Exception {
   try (ResourceResolver resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object) session))){
     // do something with the resolver
   }
@@ -254,7 +254,7 @@ Im Allgemeinen sollte eine Ausnahme genau einmal protokolliert werden. Die mehrf
 #### Nicht konformer Code {#non-compliant-code-6}
 
 ```java
-public void dontDoThis() throws Exception {
+public void dontDoThis () throws Exception {
   try {
     someOperation();
   } catch (Exception e) {
@@ -267,7 +267,7 @@ public void dontDoThis() throws Exception {
 #### Konformer Code {#compliant-code-3}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someOperation();
   } catch (Exception e) {
@@ -275,7 +275,7 @@ public void doThis() {
   }
 }
 
-public void orDoThis() throws MyCustomException {
+public void orDoThis () throws MyCustomException {
   try {
     someOperation();
   } catch (Exception e) {
@@ -296,7 +296,7 @@ Ein weiteres gängiges Muster, das vermieden werden sollte, ist die Protokollier
 #### Nicht konformer Code {#non-compliant-code-7}
 
 ```java
-public void dontDoThis() throws Exception {
+public void dontDoThis () throws Exception {
   logger.error("something went wrong");
   throw new RuntimeException("something went wrong");
 }
@@ -305,7 +305,7 @@ public void dontDoThis() throws Exception {
 #### Konformer Code {#compliant-code-4}
 
 ```java
-public void doThis() throws Exception {
+public void doThis () throws Exception {
   throw new RuntimeException("something went wrong");
 }
 ```
@@ -350,7 +350,7 @@ Als Best Practice sollten Protokollmeldungen kontextbezogene Informationen darü
 #### Nicht konformer Code {#non-compliant-code-9}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -362,7 +362,7 @@ public void dontDoThis() {
 #### Konformer Code {#compliant-code-6}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -383,7 +383,7 @@ Wie schon der Name sagt, sollten Java™-Ausnahmen immer in Ausnahmefällen verw
 #### Nicht konformer Code {#non-compliant-code-10}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -395,7 +395,7 @@ public void dontDoThis() {
 #### Konformer Code {#compliant-code-7}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -416,7 +416,7 @@ Wie bereits erwähnt, ist Kontext beim Verständnis von Protokollmeldungen äuß
 #### Nicht konformer Code {#non-compliant-code-11}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -428,7 +428,7 @@ public void dontDoThis() {
 #### Konformer Code {#compliant-code-8}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -449,7 +449,7 @@ Die Anmeldung in Experience Manager sollte immer über das Protokollierungs-Fram
 #### Nicht konformer Code {#non-compliant-code-12}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -461,7 +461,7 @@ public void dontDoThis() {
 #### Konformer Code {#compliant-code-9}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -482,7 +482,7 @@ Im Allgemeinen sollten Pfade, die mit `/libs` und `/apps` beginnen, nicht hartco
 #### Nicht konformer Code {#non-compliant-code-13}
 
 ```java
-public boolean dontDoThis(Resource resource) {
+public boolean dontDoThis (Resource resource) {
   return resource.isResourceType("/libs/foundation/components/text");
 }
 ```
@@ -490,7 +490,7 @@ public boolean dontDoThis(Resource resource) {
 #### Konformer Code {#compliant-code-10}
 
 ```java
-public void doThis(Resource resource) {
+public void doThis (Resource resource) {
   return resource.isResourceType("foundation/components/text");
 }
 ```
@@ -519,30 +519,30 @@ In vielen Fällen sind diese APIs unter Verwendung der Standard-Java™-Annotati
 
 Es gibt jedoch auch Fälle, in denen eine API im Experience Manager-Kontext veraltet ist, in anderen Kontexten jedoch nicht. Diese Regel identifiziert diese zweite Gruppe. 
 
-### Verwenden Sie in Sling-Modellen keine @Inject-Anmerkung mit @Optional . {#sonarqube-slingmodels-inject-optional}
+### Verwenden Sie in Sling-Modellen keine @Inject-Anmerkung mit @Optional. {#sonarqube-slingmodels-inject-optional}
 
 * **Schlüssel**: InjectAnnotationWithOptionalInjectionCheck
-* **Typ**: Softwarequalität
+* **Typ**: Software-Qualität
 * **Schweregrad**: Gering
 * **Seit**: Version 2023.11
 
-Das Apache Sling-Projekt rät von der Verwendung der `@Inject` -Anmerkung im Kontext von Sling-Modellen, da dies zu schlechter Leistung führen kann, wenn sie mit der `DefaultInjectionStrategy.OPTIONAL` (entweder auf Feld- oder Klassenebene). Stattdessen werden spezifischere Injektionen (wie die `@ValueMapValue` oder `@OsgiInjector` Anmerkungen) verwendet werden.
+Das Apache Sling-Projekt rät von der Verwendung der `@Inject`-Anmerkung im Kontext von Sling-Modellen ab, da dies zu einer schlechten Leistung führen kann, wenn sie mit der `DefaultInjectionStrategy.OPTIONAL` (entweder auf Feld- oder Klassenebene) verwendet wird. Stattdessen sollten spezifischere Injektionen (wie die `@ValueMapValue`- oder `@OsgiInjector`-Anmerkungen) verwendet werden.
 
-Überprüfen Sie die [Apache Sling-Dokumentation](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) für weitere Informationen über die empfohlenen Anmerkungen und die Gründe, warum diese Empfehlung überhaupt abgegeben wurde.
+Lesen Sie die [Apache Sling-Dokumentation](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) für weitere Informationen über die empfohlenen Anmerkungen und die Gründe, aus denen diese Empfehlung überhaupt ausgesprochen wurde.
 
 
-### Wiederverwendung von HTTPClient-Instanzen {#sonarqube-reuse-httpclient}
+### Wiederverwenden von HTTPClient-Instanzen {#sonarqube-reuse-httpclient}
 
 * **Schlüssel**: AEMSRE-870
-* **Typ**: Softwarequalität
+* **Typ**: Software-Qualität
 * **Schweregrad**: Gering
 * **Seit**: Version 2023.11
 
-AEM Anwendungen erreichen häufig andere Anwendungen über das HTTP-Protokoll, und der Apache HttpClient ist eine häufig verwendete Bibliothek, um dies zu erreichen. Die Erstellung eines solchen HttpClient-Objekts bringt jedoch einen gewissen Mehraufwand mit sich, sodass diese Objekte so weit wie möglich wiederverwendet werden sollten.
+AEM-Anwendungen erreichen andere Anwendungen häufig über das HTTP-Protokoll, und der Apache HttpClient ist eine häufig verwendete Bibliothek, um dies zu erreichen. Die Erstellung eines solchen HttpClient-Objekts bringt jedoch einen gewissen Mehraufwand mit sich, sodass diese Objekte so weit wie möglich wiederverwendet werden sollten.
 
-Diese Regel überprüft, ob ein solches HttpClient-Objekt in einer Methode nicht privat, sondern auf Klassenebene global ist, sodass es wiederverwendet werden kann. In diesem Fall sollte das Feld httpClient im Konstruktor der Klasse oder der `activate()` -Methode (wenn diese Klasse eine OSGi-Komponente/ein OSGi-Dienst ist).
+Diese Regel überprüft, ob ein solches HttpClient-Objekt in einer Methode nicht privat, sondern auf Klassenebene global ist, sodass es wiederverwendet werden kann. In diesem Fall sollte das httpClient-Feld im Konstruktor der Klasse oder ihrer Methode `activate()` festgelegt werden (wenn diese Klasse eine OSGi-Komponente/ein OSGi-Dienst ist).
 
-Überprüfen Sie die [Optimierungshandbuch](https://hc.apache.org/httpclient-legacy/performance.html) des HttpClient finden Sie einige Best Practices für die Verwendung des HttpClient.
+Lesen Sie das [Optimierungshandbuch](https://hc.apache.org/httpclient-legacy/performance.html) des HttpClient für einige Best Practices für die Verwendung des HttpClient.
 
 #### Nicht konformer Code {#non-compliant-code-14}
 
@@ -731,7 +731,7 @@ Ein häufig auftretendes Problem bei komplexen Projekten besteht darin, dass die
 >
 >Wenn der Build zum Beispiel Pakete mit den Namen `com.myco:com.myco.ui.apps` und `com.myco:com.myco.all` erstellt, wobei `com.myco:com.myco.ui.apps` in `com.myco:com.myco.all` eingebettet ist, werden alle Konfigurationen innerhalb von `com.myco:com.myco.ui.apps` als Duplikat gemeldet.
 >
->Dies ist im Allgemeinen der Fall, wenn Sie die [Richtlinien für die Struktur von Inhaltspaketen](/help/implementing/developing/introduction/aem-project-content-package-structure.md) nicht befolgen. In diesem speziellen Beispiel fehlt dem Paket `com.myco:com.myco.ui.apps` die `<cloudManagerTarget>none</cloudManagerTarget>`-Eigenschaft.
+>Dies ist im Allgemeinen der Fall, dass die [Richtlinien für die Inhaltspaketstruktur](/help/implementing/developing/introduction/aem-project-content-package-structure.md). In diesem speziellen Beispiel fehlt im Paket `com.myco:com.myco.ui.apps` die Eigenschaft `<cloudManagerTarget>none</cloudManagerTarget>`.
 
 #### Nicht konformer Code {#non-compliant-code-osgi}
 
@@ -986,9 +986,10 @@ Experience Manager as a Cloud Service verbietet es, dass benutzerdefinierte Such
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Experience Manager as a Cloud Service verbietet es, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) eine Eigenschaft mit dem Namen `reindex` enthalten. Die Indizierung mit dieser Eigenschaft muss vor der Migration auf Experience Manager as a Cloud Service aktualisiert werden. Weitere Informationen finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use).
+Experience Manager as a Cloud Service verbietet es, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) eine Eigenschaft mit dem Namen `reindex` enthalten. Die Indizierung mit dieser Eigenschaft muss vor der Migration auf Experience Manager as a 
+Cloud Service aktualisiert werden. Weitere Informationen finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use).
 
-### Benutzerdefinierte DAM-Asset-Lucene-Knoten dürfen &quot;queryPaths&quot;nicht angeben {#oakpal-damAssetLucene-queryPaths}
+### Benutzerdefinierte DAM-Asset-Lucene-Knoten dürfen keine „queryPaths“ angeben. {#oakpal-damAssetLucene-queryPaths}
 
 * **Schlüssel**: IndexDamAssetLucene
 * **Typ**: Fehler
@@ -1023,7 +1024,7 @@ Experience Manager as a Cloud Service verbietet es, dass benutzerdefinierte Such
         + config.xml
 ```
 
-### Wenn die Definition des benutzerdefinierten Suchindex compatVersion enthält, muss sie auf 2 gesetzt werden {#oakpal-compatVersion}
+### Wenn die Definition des benutzerdefinierten Suchindex compatVersion enthält, muss diese auf 2 gesetzt werden. {#oakpal-compatVersion}
 
 * **Schlüssel**: IndexCompatVersion
 * **Typ**: Code Smell
@@ -1031,24 +1032,24 @@ Experience Manager as a Cloud Service verbietet es, dass benutzerdefinierte Such
 * **Seit**: Version 2022.1.0
 
 
-### Der Indexknoten, der &quot;includedPaths&quot;angibt, sollte auch &quot;queryPaths&quot;mit denselben Werten angeben {#oakpal-included-paths-without-query-paths}
+### Der Indexknoten, der „includedPaths“ angibt, sollte auch „queryPaths“ mit denselben Werten angeben. {#oakpal-included-paths-without-query-paths}
 
 * **Schlüssel**: IndexIncludedPathsWithoutQueryPaths
 * **Typ**: Code Smell
 * **Schweregrad**: Gering
 * **Seit**: Version 2023.1.0
 
-Bei benutzerdefinierten Indizes sind beide `includedPaths` und `queryPaths` mit identischen Werten konfiguriert werden. Wenn eine angegeben ist, muss die andere übereinstimmen. Für Indizes von `damAssetLucene`, einschließlich der benutzerdefinierten Versionen. Für diese sollten Sie nur `includedPaths`.
+Bei benutzerdefinierten Indizes sollten `includedPaths` und `queryPaths` mit identischen Werten konfiguriert werden. Wenn einer angegeben ist, muss der andere damit übereinstimmen. Indizes von `damAssetLucene`, einschließlich der benutzerdefinierten Versionen, bilden jedoch einen Sonderfall. Für diese sollten Sie nur `includedPaths` angeben.
 
-### Indexknoten, der nodeScopeIndex für den generischen Knotentyp angibt, sollten auch includedPaths und queryPaths angeben. {#oakpal-full-text-on-generic-node-type}
+### Ein Indexknoten, der nodeScopeIndex für den generischen Knotentyp angibt, sollte auch includedPaths und queryPaths angeben. {#oakpal-full-text-on-generic-node-type}
 
 * **Schlüssel**: IndexFulltextOnGenericType
 * **Typ**: Code Smell
 * **Schweregrad**: Gering
 * **Seit**: Version 2023.1.0
 
-Wenn Sie `nodeScopeIndex` -Eigenschaft auf einem &quot;generischen&quot;Knotentyp wie `nt:unstructured` oder `nt:base`, müssen Sie auch die `includedPaths` und `queryPaths` Eigenschaften.
-`nt:base` kann als &quot;generisch&quot;betrachtet werden, da alle Knotentypen von ihr erben. So legen Sie eine `nodeScopeIndex` on `nt:base` führt ihn dazu, alle Knoten im Repository zu indizieren. Ebenso `nt:unstructured` wird auch als &quot;generisch&quot;betrachtet, da es viele Knoten in Repositorys mit diesem Typ gibt.
+Wenn Sie die Eigenschaft `nodeScopeIndex` für einen „generischen“ Knotentyp wie `nt:unstructured` oder `nt:base` festlegen, müssen Sie auch die Eigenschaften `includedPaths` und `queryPaths` angeben.
+`nt:base` kann als „generisch“ betrachtet werden, da alle Knotentypen von ihr erben. Das Festlegen eines `nodeScopeIndex` für `nt:base` führt also dazu, dass sie alle Knoten im Repository indiziert. Ebenso wird auch `nt:unstructured` als „generisch“ betrachtet, da es in Repositorys viele Knoten mit diesem Typ gibt.
 
 #### Nicht konformer Code {#non-compliant-code-full-text-on-generic-node-type}
 
@@ -1086,16 +1087,16 @@ Wenn Sie `nodeScopeIndex` -Eigenschaft auf einem &quot;generischen&quot;Knotenty
             - nodeScopeIndex: true
 ```
 
-### Die queryLimitReads -Eigenschaft der Abfrage-Engine sollte nicht überschrieben werden {#oakpal-query-limit-reads}
+### Die Eigenschaft queryLimitReads der Abfrage-Engine sollte nicht überschrieben werden. {#oakpal-query-limit-reads}
 
 * **Schlüssel**: OverrideOfQueryLimitReads
 * **Typ**: Code Smell
 * **Schweregrad**: Gering
 * **Seit**: Version 2023.1.0
 
-Das Überschreiben des Standardwerts kann zu sehr langsamen Seitenvorgängen führen, insbesondere wenn mehr Inhalt hinzugefügt wird.
+Das Überschreiben des Standardwerts kann Lesevorgänge von Seiten sehr stark verlangsamen, insbesondere wenn mehr Inhalt hinzugefügt wird.
 
-### Mehrere aktive Versionen desselben Indes {#oakpal-multiple-active-versions}
+### Mehrere aktive Versionen desselben Indexes {#oakpal-multiple-active-versions}
 
 * **Schlüssel**: IndexDetectMultipleActiveVersionsOfSameIndex
 * **Typ**: Code Smell
@@ -1122,14 +1123,14 @@ Das Überschreiben des Standardwerts kann zu sehr langsamen Seitenvorgängen fü
 ```
 
 
-### Der Name vollständig benutzerdefinierter Indexdefinitionen sollte den offiziellen Richtlinien entsprechen {#oakpal-fully-custom-index-name}
+### Der Name vollständig benutzerdefinierter Indexdefinitionen sollte den offiziellen Richtlinien entsprechen. {#oakpal-fully-custom-index-name}
 
 * **Schlüssel**: IndexValidFullyCustomName
 * **Typ**: Code Smell
 * **Schweregrad**: Gering
 * **Seit**: Version 2023.1.0
 
-Das erwartete Muster für vollständig benutzerdefinierte Indexnamen lautet: `[prefix].[indexName]-custom-[version]`. Weitere Informationen finden Sie im Dokument . [Inhaltssuche und -indizierung](/help/operations/indexing.md).
+Das erwartete Muster für vollständig benutzerdefinierte Indexnamen lautet: `[prefix].[indexName]-custom-[version]`. Weitere Informationen finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md).
 
 
 ### Dieselbe Eigenschaft mit unterschiedlichen analysierten Werten in derselben Indexdefinition {#oakpal-same-property-different-analyzed-values}
@@ -1182,7 +1183,7 @@ Beispiel:
         - analyzed: true
 ```
 
-Wenn die analysierte Eigenschaft nicht explizit festgelegt wurde, lautet der Standardwert false.
+Wenn die analysierte Eigenschaft nicht explizit festgelegt wurde, ist der Standardwert „false“.
 
 ### Tags-Eigenschaft
 
@@ -1191,4 +1192,4 @@ Wenn die analysierte Eigenschaft nicht explizit festgelegt wurde, lautet der Sta
 * **Schweregrad**: Gering
 * **Seit**: Version 2023.1.0
 
-Achten Sie bei bestimmten Indizes darauf, die Eigenschaft &quot;tags&quot;und die aktuellen Werte beizubehalten. Das Hinzufügen neuer Werte zur Eigenschaft &quot;tags&quot;ist zwar zulässig, das Löschen vorhandener Werte (oder der Eigenschaft insgesamt) kann jedoch zu unerwarteten Ergebnissen führen.
+Achten Sie bei bestimmten Indizes darauf, die Tags-Eigenschaft und die aktuellen Werte beizubehalten. Das Hinzufügen neuer Werte zur Tags-Eigenschaft ist zwar zulässig, das Löschen vorhandener Werte (oder der Eigenschaft insgesamt) kann jedoch zu unerwarteten Ergebnissen führen.

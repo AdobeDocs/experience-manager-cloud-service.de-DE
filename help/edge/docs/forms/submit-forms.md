@@ -4,17 +4,16 @@ description: Erstellen Sie leistungsstarke Formulare schneller mit Tabellen und 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '971'
 ht-degree: 1%
 
 ---
 
-
 # Vorbereiten der Tabelle auf die Datenaufnahme
 
-![Dokumentenbasiertes Authoring-Ökosystem](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 Sobald du [das Formular erstellt und in der Vorschau angezeigt wurde](/help/edge/docs/forms/create-forms.md)ist es an der Zeit, die entsprechende Tabelle so zu aktivieren, dass sie Daten erhält.
 
@@ -33,13 +32,21 @@ So aktivieren Sie das Arbeitsblatt:
    >
    > Wenn die Variable `incoming` -Tabelle nicht vorhanden ist, AEM keine Daten an die Tabelle sendet.
 
-1. Spiegeln Sie die Formularfeldnamen und -werte der `Name` in der`shared-default` -Tabelle zu den Kopfzeilen im `incoming` Blatt.
+1. Fügen Sie in dieses Blatt eine Tabelle mit dem Namen &quot;take_form&quot;ein. Wählen Sie die Anzahl der Spalten aus, die zum Abgleich der Formularfeldnamen erforderlich sind. Navigieren Sie dann in der Symbolleiste zu Einfügen > Tabelle und klicken Sie auf OK.
 
-   Jeder Wert in `Name` Spalte `shared-default` Tabellenblatt, mit Ausnahme der Senden-Schaltfläche, dient als Kopfzeile im `incoming` Blatt. Betrachten Sie beispielsweise die folgende Abbildung, die Kopfzeilen für ein &quot;contact-us&quot;-Formular veranschaulicht:
+1. Ändern Sie den Namen der Tabelle in &quot;take_form&quot;. Um in Microsoft Excel den Tabellennamen zu ändern, wählen Sie die Tabelle aus und klicken Sie auf &quot;Tabellendesign&quot;.
+
+1. Fügen Sie als Nächstes die Formularfeldnamen als Tabellenüberschriften hinzu. Um sicherzustellen, dass die Felder genau gleich sind, können Sie sie aus dem &quot;shared-default&quot;-Blatt kopieren und einfügen.  Wählen Sie in Ihrem &quot;shared-default&quot;-Blatt die Formular-IDs aus, die unter der Spalte &quot;Name&quot; aufgeführt sind, mit Ausnahme des Senden-Felds.
+
+1. Wählen Sie im &quot;eingehenden&quot;Blatt die Option &quot;Sonderzeichen einfügen&quot;> &quot;Zeilen in Spalten exportieren&quot;, um die Feld-IDs als Spaltenüberschriften in dieses neue Blatt zu kopieren. Behalten Sie nur die Felder bei, deren Daten erfasst werden müssen, die ignoriert werden können.
+
+   Jeder Wert in `Name` Spalte `shared-default` Eine Tabelle, die die Senden-Schaltfläche ausschließt, kann als Kopfzeile im `incoming` Blatt. Betrachten Sie beispielsweise die folgende Abbildung, die Kopfzeilen für ein &quot;contact-us&quot;-Formular veranschaulicht:
 
    ![Felder für ein Kontakt-Formular](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. Verwenden Sie den Sidekick, um eine Vorschau des Blatts anzuzeigen.
+
+
+1. Verwenden Sie die AEM Sidekick-Erweiterung, um eine Vorschau der Formularaktualisierungen anzuzeigen. Ihr Blatt kann jetzt eingehende Formularübermittlungen akzeptieren.
 
    >[!NOTE]
    >
@@ -48,23 +55,11 @@ So aktivieren Sie das Arbeitsblatt:
 
 Nachdem die Feldnamen zum `incoming` -Seite, kann Ihr Formular Übermittlungen annehmen. Sie können das Formular in der Vorschau anzeigen und Daten mit ihm an das Blatt senden.
 
+Nachdem das Blatt für den Empfang von Daten eingerichtet wurde, können Sie [Vorschau des Formulars mit dem Block Adaptives Formular](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) oder [POST-Anfragen verwenden](#use-admin-apis-to-send-data-to-your-sheet) , um Daten an die Tabelle zu senden.
 
-
-Beachten Sie auch die folgenden Änderungen in Ihrer Tabelle:
-
-Eine Tabelle mit dem Namen &quot;Slack&quot;wird Ihrer Excel-Arbeitsmappe oder Ihrem Google-Arbeitsblatt hinzugefügt. In diesem Arbeitsblatt können Sie automatische Benachrichtigungen für einen bestimmten Slack-Kanal konfigurieren, wenn neue Daten in Ihre Tabelle aufgenommen werden. Derzeit unterstützt AEM ausschließlich Benachrichtigungen an die Organisation AEM Engineering Slack und die Adobe Enterprise Support-Organisation.
-
-1. Um Slack-Benachrichtigungen einzurichten, geben Sie die &quot;teamId&quot; des Slack-Arbeitsbereichs und den &quot;Kanalnamen&quot; bzw. die &quot;ID&quot; ein. Sie können auch den slack-Bot (mit dem Debugging-Befehl) nach der &quot;teamId&quot;und der &quot;channel ID&quot;fragen. Die Verwendung der &quot;Kanal-ID&quot;anstelle des &quot;Kanalnamens&quot;ist vorzuziehen, da Kanalumbenennungen erhalten bleiben.
-
-   >[!NOTE]
-   >
-   > Bei älteren Formularen war die Spalte &quot;teamId&quot;nicht vorhanden. Die &quot;teamId&quot;wurde in die Kanalspalte eingeschlossen, getrennt durch &quot;#&quot;oder &quot;/&quot;.
-
-1. Geben Sie einen beliebigen Titel ein und geben Sie unter den Feldern die Namen der Felder ein, die in der Slack-Benachrichtigung angezeigt werden sollen. Jede Überschrift sollte durch ein Komma getrennt werden (z. B. Name, E-Mail).
-
-   >[!WARNING]
-   >
-   >  Die &quot;freigegebenen Standard&quot;-Tabellen dürfen niemals persönlich identifizierbare Informationen oder vertrauliche Daten enthalten, die Ihnen nicht mit dem öffentlichen Zugriff vertraut sind.
+>[!WARNING]
+>
+>  Die &quot;freigegebenen Standard&quot;-Tabellen dürfen niemals persönlich identifizierbare Informationen oder vertrauliche Daten enthalten, die Ihnen nicht mit dem öffentlichen Zugriff vertraut sind.
 
 
 ## (Optional) Verwenden Sie Admin-APIs, um die Akzeptanz von Daten in einer Tabelle zu ermöglichen
@@ -155,6 +150,11 @@ So verwenden Sie Admin-APIs, um eine Tabelle für die Datenaufnahme zu aktiviere
 
    Ihr Formular kann jetzt Daten annehmen. Beachten Sie auch die folgenden Änderungen in Ihrer Tabelle:
 
+## Automatische Änderungen am Blatt, sobald die Datenakzeptierung aktiviert wurde.
+
+
+Nachdem das Arbeitsblatt auf den Empfang von Daten eingestellt wurde, beachten Sie die folgenden Änderungen in Ihrem Arbeitsblatt:
+
 Eine Tabelle mit dem Namen &quot;Slack&quot;wird Ihrer Excel-Arbeitsmappe oder Ihrem Google-Arbeitsblatt hinzugefügt. In diesem Arbeitsblatt können Sie automatische Benachrichtigungen für einen bestimmten Slack-Kanal konfigurieren, wenn neue Daten in Ihre Tabelle aufgenommen werden. Derzeit unterstützt AEM ausschließlich Benachrichtigungen an die Organisation AEM Engineering Slack und die Adobe Enterprise Support-Organisation.
 
 1. Um Slack-Benachrichtigungen einzurichten, geben Sie die &quot;teamId&quot; des Slack-Arbeitsbereichs und den &quot;Kanalnamen&quot; bzw. die &quot;ID&quot; ein. Sie können auch den slack-Bot (mit dem Debugging-Befehl) nach der &quot;teamId&quot;und der &quot;channel ID&quot;fragen. Die Verwendung der &quot;Kanal-ID&quot;anstelle des &quot;Kanalnamens&quot;ist vorzuziehen, da Kanalumbenennungen erhalten bleiben.
@@ -165,12 +165,10 @@ Eine Tabelle mit dem Namen &quot;Slack&quot;wird Ihrer Excel-Arbeitsmappe oder I
 
 1. Geben Sie einen beliebigen Titel ein und geben Sie unter den Feldern die Namen der Felder ein, die in der Slack-Benachrichtigung angezeigt werden sollen. Jede Überschrift sollte durch ein Komma getrennt werden (z. B. Name, E-Mail).
 
+   >[!WARNING]
+   >
+   >  Die &quot;freigegebenen Standard&quot;-Tabellen dürfen niemals persönlich identifizierbare Informationen oder vertrauliche Daten enthalten, die Ihnen nicht mit dem öffentlichen Zugriff vertraut sind.
 
-Das Blatt ist jetzt so eingerichtet, dass es Daten erhält. Sie können [Vorschau des Formulars mit dem Block Adaptives Formular](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) oder [POST-Anfragen verwenden](#use-admin-apis-to-send-data-to-your-sheet) , um Daten an die Tabelle zu senden.
-
->[!WARNING]
->
->  Die &quot;freigegebenen Standard&quot;-Tabellen dürfen niemals persönlich identifizierbare Informationen oder vertrauliche Daten enthalten, die Ihnen nicht mit dem öffentlichen Zugriff vertraut sind.
 
 ## Daten an Ihr Blatt senden {#send-data-to-your-sheet}
 
@@ -288,10 +286,3 @@ Es gibt verschiedene Möglichkeiten, die Formulardaten im Hauptteil der POST zu 
 
 Als Nächstes können Sie die Dankesnachricht anpassen, [Konfigurieren einer Dankeseite](/help/edge/docs/forms/thank-you-page-form.md)oder [set redirects](/help/edge/docs/forms/thank-you-page-form.md).
 
-## Mehr anzeigen
-
-* [Erstellen und Anzeigen einer Vorschau eines Formulars](/help/edge/docs/forms/create-forms.md)
-* [Formular zum Senden von Daten aktivieren](/help/edge/docs/forms/submit-forms.md)
-* [Veröffentlichen eines Formulars auf der Siteseite](/help/edge/docs/forms/publish-forms.md)
-* [Hinzufügen von Überprüfungen zu Formularfeldern](/help/edge/docs/forms/validate-forms.md)
-* [Designs und Formularstil ändern](/help/edge/docs/forms/style-theme-forms.md)

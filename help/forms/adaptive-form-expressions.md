@@ -1,8 +1,8 @@
 ---
 title: Was sind adaptive Formularausdrücke?
 description: Verwenden Sie adaptive Formularausdrücke, um automatische Überprüfung und Berechnung hinzuzufügen sowie die Sichtbarkeit eines Abschnitts zu aktivieren oder zu deaktivieren.
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+workflow-type: tm+mt
 source-wordcount: '2683'
 ht-degree: 100%
 
@@ -215,7 +215,7 @@ GuideBridge ist eine Sammlung von APIs, die für die Interaktion mit adaptiven F
 
 * Zum Zurücksetzen von Formularfeldern können Sie die `guideBridge.reset()`-API in dem Ausdruck für ein Klickereignis einer Schaltfläche auslösen. Ähnlich funktioniert eine Submit-API, die als ein Ausdruck für ein Klickereignis aufgerufen werden kann: `guideBridge.submit()`**.**
 
-* Sie können die `setFocus()`-API verwenden, um den Fokus auf verschiedene Felder oder Bereiche zu legen (der Bereichsfokus ist automatisch auf das erste Feld festgelegt). `setFocus()` stellt eine große Auswahl von Optionen für Navigationszwecke bereit, wie zum Beispiel für das Navigieren über Bereiche hinweg, das Durchlaufen zum vorigen/nächsten Element, das Festlegen des Fokus auf ein bestimmtes Feld und vieles mehr. Wenn Sie beispielsweise in den nächsten Bereich wechseln möchten, können Sie den folgenden Ausdruck verwenden: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
+* Sie können die `setFocus ()`-API verwenden, um den Fokus auf verschiedene Felder oder Bereiche zu legen (der Bereichsfokus ist automatisch auf das erste Feld festgelegt). `setFocus ()` stellt eine große Auswahl von Optionen für Navigationszwecke bereit, wie zum Beispiel für das Navigieren über Bereiche hinweg, das Durchlaufen zum vorigen/nächsten Element, das Festlegen des Fokus auf ein bestimmtes Feld und vieles mehr. Wenn Sie beispielsweise in den nächsten Bereich wechseln möchten, können Sie den folgenden Ausdruck verwenden: `guideBridge.setFocus (this.panel.somExpression, 'nextItem').`
 
 * Zum Überprüfen eines adaptiven Formulars oder seiner spezifischen Bereiche verwenden Sie `guideBridge.validate(errorList, somExpression).`
 

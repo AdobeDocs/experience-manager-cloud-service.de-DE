@@ -6,8 +6,8 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+workflow-type: tm+mt
 source-wordcount: '2377'
 ht-degree: 100%
 
@@ -194,7 +194,7 @@ Um zu verstehen, wie man einen Standard-Fehler-Handler mit der Aktion [Aufrufdi
 
 1. Öffnen Sie ein adaptives Formular im Authoring-Modus, wählen Sie eine Formularkomponente aus und wählen Sie dann **[!UICONTROL Regeleditor]**, um den Regeleditor zu öffnen.
 1. Wählen Sie **[!UICONTROL Erstellen]** aus.
-1. Erstellen Sie eine Bedingung im Abschnitt **Wann** der Regel. Zum Beispiel: **Wenn [der Name des Feldes Haustier-ID]** geändert wird. Die Auswahl wird aus der Dropdown-Liste **Status auswählen** geändert.
+1. Erstellen Sie eine Bedingung im Abschnitt **Wenn** der Regel. Zum Beispiel: **Wenn [der Name des Feldes Haustier-ID]** geändert wird. Die Auswahl wird aus der Dropdown-Liste **Status auswählen** geändert.
 1. Im Abschnitt **Dann** wählen Sie **[!UICONTROL Dienst aufrufen]** aus der Dropdown-Liste **Aktion auswählen.**
 1. Wählen Sie einen **Post-Service** und die zugehörigen Datenbindungen aus dem Abschnitt **Eingabe**. Um zum Beispiel **Haustier-ID** zu validieren, wählen Sie einen **Post-Service** als **GET /pet/{petId}** und dann **Haustier-ID** im Abschnitt **Eingabe**.
 1. Wählen Sie die Datenbindungen aus dem Abschnitt **Ausgabe**. Wählen Sie **Haustiername** im Abschnitt **Ausgabe**.
@@ -379,7 +379,7 @@ if (data) {
         }
 
         if (errorData) {
-            Object.keys(errorData).forEach(function(key) {
+            Object.keys (errorData).forEach(function(key) {
                 var som_key = som_map[key];
                 if (som_key) {
                     var error = {};

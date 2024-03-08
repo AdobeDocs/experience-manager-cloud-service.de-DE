@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 0d5f95cc2e7378f09c8f6c4bc3858e7b42c07924
-workflow-type: ht
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+workflow-type: tm+mt
 source-wordcount: '9350'
 ht-degree: 100%
 
@@ -1238,7 +1238,7 @@ public class ManifestServlet extends HttpServlet {
     private void error(String errorMessage, HttpServletResponse response) throws IOException { 
         ManifestUrl errorManifest = new ManifestUrl(null); 
         errorManifest.setErrorMessage(errorMessage); 
-        response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
+        response.setStatus (HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
         objectMapper.writeValue(response.getWriter(), errorManifest); 
     } 
 } 
@@ -1283,7 +1283,7 @@ public abstract class VideoResponse {
 ```java
 public final class Constants { 
 
-     private Constants() { 
+     private Constants () { 
      } 
 
      public static final String VIDEO_API_PREFIX = "/dynamicmedia/video"; 
@@ -1345,7 +1345,7 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
   */ 
  public static String getRealContextPath(HttpServletRequest req) { 
      final String path = req.getContextPath(); 
-     if (path.equals(CONTEXT_PATH)) { 
+     if (path.equals (CONTEXT_PATH)) { 
          return ""; 
      } 
      return path.substring(CONTEXT_PATH.length()); 

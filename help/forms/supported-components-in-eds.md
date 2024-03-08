@@ -1,13 +1,13 @@
 ---
-title: AEM Forms Edge Delivery Service - Formularkomponenten
-description: AEM Forms Edge Delivery Service wurde für optimale Leistung entwickelt und ermöglicht es Ihnen, sich die Zukunft einer optimierten Datenerfassung und Benutzerinteraktion vorzustellen. Der Artikel listet alle Formularkomponenten auf, die standardmäßig für EDD-Formulare verfügbar sind.
+title: AEM Forms Edge Delivery ServicesFormularkomponenten
+description: AEM Forms Edge Delivery Services, die für optimale Leistung konzipiert wurden und Ihnen die Möglichkeit bieten, sich die Zukunft einer optimierten Datenerfassung und Benutzerinteraktion vorzustellen. Der Artikel listet alle Formularkomponenten auf, die standardmäßig für EDD-Formulare verfügbar sind.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 5%
+source-wordcount: '870'
+ht-degree: 6%
 
 ---
 
@@ -34,7 +34,7 @@ In der folgenden Tabelle wird beschrieben, wie Kernkomponenten ihren HTML-5-Eing
    <td><b>Details</b></td>
   </tr>
   <tr>
-   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html">Formular-Container</a></td>
+   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=de">Formular-Container</a></td>
    <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#form">Formular </td>
    <td> Erstellen Sie ein Formular zur Erfassung von Benutzereingaben.
    </td>
@@ -65,7 +65,7 @@ In der folgenden Tabelle wird beschrieben, wie Kernkomponenten ihren HTML-5-Eing
    <td> Ermöglicht Benutzern die Auswahl einer oder mehrerer Optionen aus einer Liste vordefinierter Optionen. Die Optionen können vom Typ String, Number oder Boolean sein.</td>
   </tr>
   <tr>
-   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group.html">Kontrollkästchen-Gruppe</a></td>
+   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group.html">Kontrollkästchengruppe</a></td>
    <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox">Mehrfach-Kontrollkästchen</a></td>
    <td> Benutzer können eine oder mehrere Optionen aus einer Liste auswählen. Es werden mehrere Kontrollkästchen mit identischen Namen generiert, von denen jedes einem Element in der -Auflistung entspricht. </td>
   </tr>

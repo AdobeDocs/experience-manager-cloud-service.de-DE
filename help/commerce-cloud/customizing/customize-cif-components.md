@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '2298'
 ht-degree: 97%
@@ -34,7 +34,7 @@ Die Marke Venia hat vor kurzem begonnen, Produkte mit nachhaltigen Materialien z
 
 ## Voraussetzungen {#prerequisites}
 
-Zum Absolvieren dieses Tutorials ist eine lokale Entwicklungsumgebung erforderlich. Diese Umgebung umfasst eine laufende Instanz von AEM, die konfiguriert und mit einer Adobe Commerce-Instanz verbunden ist. Überprüfen Sie die Anforderungen und Schritte zum [Einrichten einer lokalen Entwicklungsumgebung mit dem AEM as a Cloud Service SDK](../develop.md). Um die Anleitung vollständig zu folgen, müssen Sie Berechtigung, um einem Produkt](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Systems Commerce Attribute hinzuzufügen[.
+Zum Absolvieren dieses Tutorials ist eine lokale Entwicklungsumgebung erforderlich. Diese Umgebung umfasst eine laufende Instanz von AEM, die konfiguriert und mit einer Adobe Commerce-Instanz verbunden ist. Überprüfen Sie die Anforderungen und Schritte zum [Einrichten einer lokalen Entwicklungsumgebung mit dem AEM as a Cloud Service SDK](../develop.md). Um dem Tutorial vollständig zu folgen, benötigen Sie Berechtigungen zum Hinzufügen von [Attribute zu einem Produkt](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
 
 Außerdem benötigen Sie eine GraphQL-IDE wie [GraphiQL](https://github.com/graphql/graphiql) oder eine Browser-Erweiterung, um die Code-Beispiele und Tutorials ausführen zu können. Wenn Sie eine Browser-Erweiterung installieren, vergewissern Sie sich, dass sie Anfrage-Header setzen kann. In Google Chrome ist der _Altair GraphQL Client_ eine Erweiterung, die dazu geeignet ist.
 
@@ -139,14 +139,14 @@ Die in AEM angezeigten Produkte und Produktdaten werden in Adobe Commerce gespei
 
 Bevor Sie sich in den AEM-Code stürzen, ist es sinnvoll, die [GraphQL-Übersicht](https://devdocs.magento.com/guides/v2.4/graphql/) mit einer GraphQL-IDE zu erkunden. Die Adobe Commerce-Integration mit AEM erfolgt hauptsächlich über eine Reihe von GraphQL-Abfragen. Das Verstehen und Ändern der GraphQL-Abfragen ist eine der wichtigsten Methoden zum Erweitern der CIF-Kernkomponenten.
 
-Verwenden Sie anschließend eine GraphQL-IDE, um zu prüfen, ob das `eco_friendly`-Attribut dem Produktattributsatz hinzugefügt wurde. Screenshots in diesem Anleitung verwenden die _Altair GraphQL Client_ Google Chrom Erweiterung.
+Verwenden Sie anschließend eine GraphQL-IDE, um zu prüfen, ob das `eco_friendly`-Attribut dem Produktattributsatz hinzugefügt wurde. Screenshots in diesem Tutorial verwenden die _Altair GraphQL Client_ Google Chrome-Erweiterung.
 
 1. Öffnen Sie die GraphQL-IDE und geben Sie die URL `http://<commerce-server>/graphql` in die URL-Leiste Ihrer IDE oder Erweiterung ein.
 2. Fügen Sie die folgende [Produktabfrage](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) hinzu, wobei `YOUR_SKU` die **SKU** des in der vorherigen Übung verwendeten Produkts ist:
 
    ```json
      {
-       products(
+       products (
        filter: { sku: { eq: "YOUR_SKU" } }
        ) {
            items {
@@ -186,7 +186,7 @@ Verwenden Sie anschließend eine GraphQL-IDE, um zu prüfen, ob das `eco_friendl
 
 ## Sling-Modell für den Produkt-Teaser aktualisieren {#updating-sling-model-product-teaser}
 
-Als Nächstes erweitern Sie die Geschäftslogik des Produkt-Teasers, indem Sie ein Sling-Modell implementieren. [Sling-Modelle](https://sling.apache.org/documentation/bundles/models.html) sind Anmerkung gesteuerte &quot;POJOs&quot; (Plain Old Java™ Objects), die von der Komponente benötigt implementieren Business-Logik. Sling-Modelle werden mit den HTL-Skripten als Teil der Komponente verwendet. Folgen Sie dem [Delegationsmuster für Sling-Modelle](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models), damit Sie Teile des bestehenden Produkt-Teaser-Modells erweitern können.
+Als Nächstes erweitern Sie die Geschäftslogik des Produkt-Teasers, indem Sie ein Sling-Modell implementieren. [Sling-Modelle](https://sling.apache.org/documentation/bundles/models.html) sind von Anmerkungen gesteuerte &quot;POJOs&quot;(Plain Old Java™ Objects), die Geschäftslogik implementieren, die von der Komponente benötigt wird. Sling-Modelle werden mit den HTL-Skripten als Teil der Komponente verwendet. Folgen Sie dem [Delegationsmuster für Sling-Modelle](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models), damit Sie Teile des bestehenden Produkt-Teaser-Modells erweitern können.
 
 Sling-Modelle werden als Java™ implementiert und können im **Kernmodul** des erstellten Projekts gefunden werden.
 
@@ -312,7 +312,7 @@ Verwenden Sie [eine IDE Ihrer Wahl](https://experienceleague.adobe.com/docs/expe
        Integer ecoFriendlyValue;
        try {
            ecoFriendlyValue = productRetriever.fetchProduct().getAsInteger(ECO_FRIENDLY_ATTRIBUTE);
-           if(ecoFriendlyValue != null && ecoFriendlyValue.equals(Integer.valueOf(1))) {
+           if(ecoFriendlyValue != null && ecoFriendlyValue.equals (Integer.valueOf(1))) {
                LOGGER.info("*** Product is Eco Friendly**");
                return true;
            }

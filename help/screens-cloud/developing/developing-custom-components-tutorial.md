@@ -2,8 +2,8 @@
 title: Entwickeln einer benutzerdefinierten Komponente für Screens as a Cloud Service
 description: Das folgende Tutorial führt Sie durch die Schritte zum Erstellen einer benutzerdefinierten Komponente für AEM Screens. AEM Screens verwendet viele vorhandene Design-Muster und Technologien anderer AEM-Produkte. Das Tutorial hebt Unterschiede und besondere Überlegungen bei der Entwicklung für AEM Screens hervor.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: ht
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 100%
 
@@ -478,7 +478,7 @@ public class MyCustomHandler extends AbstractResourceHandler {
   */
  @Nonnull
  @Override
- public String[] getSupportedResourceTypes() {
+ public String[] getSupportedResourceTypes () {
      return new String[] { … };
  }
 

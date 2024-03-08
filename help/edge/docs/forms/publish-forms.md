@@ -4,13 +4,13 @@ description: AEM Forms Edge Delivery Services-Formular veröffentlichen
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 1%
+source-wordcount: '530'
+ht-degree: 2%
 
 ---
-
 
 # Formular veröffentlichen
 
@@ -112,10 +112,6 @@ Wenn ein Fehler auftritt, der der folgenden Meldung ähnelt, deutet dies darauf 
 +++
 
 
-## Mehr anzeigen
 
-* [Erstellen und Anzeigen einer Vorschau eines Formulars](/help/edge/docs/forms/create-forms.md)
-* [Formular zum Senden von Daten aktivieren](/help/edge/docs/forms/submit-forms.md)
-* [Veröffentlichen eines Formulars auf der Siteseite](/help/edge/docs/forms/publish-forms.md)
-* [Hinzufügen von Überprüfungen zu Formularfeldern](/help/edge/docs/forms/validate-forms.md)
-* [Designs und Formularstil ändern](/help/edge/docs/forms/style-theme-forms.md)
+
+## Mehr anzeigen

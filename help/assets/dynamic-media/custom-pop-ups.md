@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 97%
+source-wordcount: '944'
+ht-degree: 100%
 
 ---
 
@@ -85,12 +85,12 @@ Angenommen, Sie verwenden auf Ihrer Web-Seite für ein interaktives Bild den fol
 
    Der Handler wird mit `setHandlers` in den Viewer geladen:
 
-   `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
+   `*viewerInstance*.setHandlers ({ *handler 1*, *handler 2*}, ...`
 
    **Mit dem obigen Einbettungs-Code-Beispiel erhalten Sie folgenden Code:**
 
    ```xml {.line-numbers}
-   s7interactiveimageviewer.setHandlers({
+   s7interactiveimageviewer.setHandlers ({
        quickViewActivate": function(inData) {
            var sku=inData.sku;
            var genericVariable1=inData.genericVariable1;
@@ -100,7 +100,7 @@ Angenommen, Sie verwenden auf Ihrer Web-Seite für ein interaktives Bild den fol
    })
    ```
 
-   Hier finden Sie weitere Informationen zur Methode `setHandlers()`:
+   Hier finden Sie weitere Informationen zur Methode `setHandlers ()`:
 
    * Interaktiver Bild-Viewer – [Sethandler](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=de)
    * Interaktiver Video-Viewer – [Sethandler](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=de)
@@ -159,7 +159,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
 
      Die Variablen aus der Schnellansicht werden zugeordnet. Der Funktionsaufruf ist vorhanden. Die Browser-Konsole schreibt den Variablenwert in die Browser-Konsole. Dies erfolgt mithilfe der bereitgestellten Beispielfunktion.
 
-1. Sie können jetzt eine Funktion verwenden, um ein einfaches Popup in der Schnellansicht aufzurufen. Im folgenden Beispiel wird eine `DIV` für ein Popup-Fenster.
+1. Sie können jetzt eine Funktion verwenden, um ein einfaches Popup in der Schnellansicht aufzurufen. Im folgenden Beispiel wird ein `DIV` für ein Popup-Fenster verwendet.
 1. Gestalten Sie das Popup-Fenster `DIV` wie folgt. Fügen Sie nach Wunsch zusätzliches Styling hinzu.
 
    ```xml {.line-numbers}
@@ -236,7 +236,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
 1. Ihr fertiger setHandlers-Code sieht etwa wie folgt aus (für den interaktiven Video-Viewer):
 
    ```xml {.line-numbers}
-   s7interactivevideoviewer.setHandlers({
+   s7interactivevideoviewer.setHandlers ({
        "quickViewActivate": function(inData) {
            var sku=inData.sku;
            loadQuickView(sku);

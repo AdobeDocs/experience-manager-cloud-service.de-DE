@@ -2,10 +2,10 @@
 title: Datenschutzbestimmungen – Adobe Experience Manager as a Cloud Service Sites – Bereitschaft
 description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service Sites für die verschiedenen Datenschutzbestimmungen, darunter die EU-Datenschutz-Grundverordnung (DSGVO), das kalifornische Verbraucherdatenschutzgesetz (Consumer Privacy Act) und die Einhaltung der Vorschriften bei der Implementierung eines neuen Projekts in AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 96%
+source-wordcount: '1001'
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Opt-out:
 
    * Um der Aggregation und Analyse von Daten über Ihren Besuch auf dieser Website zu widersprechen, ist es notwendig, ein Cookie in Ihrem Browser zu installieren. Dieses Cookie registriert, dass Sie widersprochen haben.
 
-     Wenn Sie das Opt-out-Cookie löschen oder Computer oder Webbrowser wechseln, müssen Sie sich erneut abmelden.
+     Wenn Sie das Opt-out-Cookie löschen oder den Computer oder Webbrowser wechseln, müssen Sie erneut widersprechen.
 
      Opt-out – Schließen Sie mich aus der Aggregation und Analyse der Besuchersitzungen aus (installieren Sie das Opt-out-Cookie `amcglobal.sc.omtrdc.net`) – Hier klicken.
 
@@ -96,7 +96,7 @@ Standardmäßig werden diese Besucherdaten nicht in AEM gespeichert. AEM sendet 
 
 ### Implementieren von Opt-in-/Opt-out-Komponenten {#implementing-opt-in-opt-out}
 
-Der Site-Eigentümer muss eine Opt-out-Komponente gemäß den folgenden Richtlinien implementieren.
+Die Person, der die Site gehört, muss eine Opt-out-Komponente gemäß den folgenden Richtlinien implementieren.
 
 Diese Richtlinien sehen eine standardmäßige Opt-in-Implementierung vor. Deshalb müssen Website-Besucher klar zustimmen, bevor personenbezogene Daten im Persistenzspeicher des Browsers (auf Client-Seite) abgelegt werden.
 
@@ -223,10 +223,10 @@ So löschen Sie die ContextHub-Persistenz:
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
   
   // following call asks all currently loaded stores to clear their data
-  ContextHub.cleanAllStores();
+  ContextHub.cleanAllStores ();
   
   // following call asks all currently loaded stores to set back default values (provided in their configs)
-  ContextHub.resetAllStores();
+  ContextHub.resetAllStores ();
   ```
 
 * So löschen Sie eine bestimmte Persistenzschicht, z. B. sessionStorage:

@@ -2,7 +2,7 @@
 title: Grundlegendes zu Cloud Service-Inhaltsanfragen
 description: Wenn Sie Lizenzen für Inhaltsanfragen von Adobe erworben haben, können Sie mehr über die Arten von Inhaltsanfragen, die Adobe Experience Cloud as a Service misst, und über die Abweichungen von den Analytics-Reporting-Tools eines Unternehmens erfahren.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 9033820fa0dc8eee181e3f581675f45cf11e694a
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '2688'
 ht-degree: 86%

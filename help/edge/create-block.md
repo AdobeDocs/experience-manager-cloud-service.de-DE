@@ -1,13 +1,13 @@
 ---
 title: Erstellen von für die Verwendung mit dem universellen Editor instrumentierten Bausteinen
 description: Erfahren Sie, wie Sie Bausteine erstellen, die für die Verwendung mit dem universellen Editor bei AEM Authoring mit Edge Delivery Services-Projekten instrumentiert sind.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1204'
 ht-degree: 0%
 
 ---
-
 
 # Erstellen von für die Verwendung mit dem universellen Editor instrumentierten Bausteinen {#create-block}
 
@@ -21,7 +21,7 @@ Dieses Handbuch enthält eine schrittweise Anleitung zum Erstellen von Bausteine
 
 Dieser Leitfaden erfordert unbedingt vorhandene Kenntnisse über AEM Authoring mit Edge Delivery Services-Projekten sowie den universellen Editor. Bevor Sie mit diesem Handbuch beginnen, sollten Sie bereits Zugriff auf Edge Delivery Services haben und mit den Grundlagen vertraut sein, darunter:
 
-* Sie haben die [Tutorial zum Edge-Bereitstellungsdienst.](/help/edge/developer/tutorial.md)
+* Sie haben die [Edge Delivery Service-Tutorial.](/help/edge/developer/tutorial.md)
 * Sie haben Zugriff auf eine [AEM Cloud Service-Sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * Sie haben [den universellen Editor in derselben Sandbox-Umgebung aktiviert hat.](/help/implementing/universal-editor/getting-started.md)
 * Sie haben die [Erste Schritte für Entwickler für AEM Authoring mit Edge Delivery Services](/help/edge/edge-dev-getting-started.md) Handbuch.
