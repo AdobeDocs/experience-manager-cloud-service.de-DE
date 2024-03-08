@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b51ee1ebffc63b56a5b758395427f5587bd165da
+source-git-commit: 87f76de41074debb2acc8ef4f71baf174d0d01ad
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 12%
+source-wordcount: '1168'
+ht-degree: 11%
 
 ---
 
@@ -102,7 +102,11 @@ Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsver
 
 ### Bekannte Probleme {#known-issues-15262}
 
-Keine
+#### `UnsupportedClassVersionError` Schritt zum Erstellen der CM-Pipeline nach der Aktualisierung `aem-sdk-api` Version auf `2024.2.15262.20240224T002940Z-231200`
+
+Die neue Version von aem-sdk-api enthält Klassen, die mit einem Java 11-Ziel kompiliert wurden und nicht mit dem standardmäßigen JDK Version 1.8 der Cloud Manager-Build-Umgebung kompatibel sind. Diese Aktualisierung erfordert, dass Maven mit JDK 11 ausgeführt wird.
+
+Kunden wird empfohlen, eine `.cloudmanager/java-version` -Datei im Stammverzeichnis ihres Git-Repo mit den folgenden Inhalten: `11`. [Build-Umgebung/Festlegen der Maven-JDK-Version](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=en#alternate-maven-jdk-version)
 
 ### Änderungshinweis {#change-notice-15262}
 
