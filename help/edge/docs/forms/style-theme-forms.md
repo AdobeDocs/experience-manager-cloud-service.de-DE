@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1819'
 ht-degree: 0%
 
 ---
@@ -69,18 +69,18 @@ Alle Formularfelder mit Ausnahme von Dropdown-Listen, Optionsfeldgruppen und Kon
 #### HTML Stucture
 
 ```HTML
-<div class="form-{Type}-wrapper form-{Name} field-wrapper" data-required={Required}>
-  <label for="{FieldId}" class="field-label">Field Label</label>
-  <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id="{FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
-  <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - Description of the field.
-  </div>
+<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
+   <label for="{FieldId}" class="field-label">First Name</label>
+   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   <div class="field-description" aria-live="polite" id="{FieldId}-description">
+    Hint - First name should be minimum 3 characters and a maximum of 10 characters.
+   </div>
 </div>
 ```
 
-* Klassen: Das div -Element verfügt über mehrere Klassen für das Targeting bestimmter Elemente und für die Formatierung. Sie benötigen die `form-{Type}-wrapper` oder `form-{Name}` Klassen zum Entwickeln eines CSS-Selektors, um ein Formularfeld zu formatieren:
-   * {Type}: Identifiziert die Komponente nach Feldtyp. Beispiel: Text (form-text-wrapper), Zahl (form-number-wrapper), Datum (form-date-wrapper).
-   * {Name}: Identifiziert die Komponente nach Name. Der Name des Felds darf nur alphanumerische Zeichen enthalten. Die mehreren aufeinander folgenden Gedankenstriche im Namen werden durch einen einzigen Bindestrich ersetzt `(-)`, und die Start- und Endabstände in einem Feldnamen werden entfernt. Beispiel: Vorname (Feld-Wrapper für Formular-Vorname).
+* Klassen: Das div -Element verfügt über mehrere Klassen für das Targeting bestimmter Elemente und für die Formatierung. Sie benötigen die `{Type}-wrapper` oder `field-{Name}` Klassen zum Entwickeln eines CSS-Selektors, um ein Formularfeld zu formatieren:
+   * {Type}: Identifiziert die Komponente nach Feldtyp. Zum Beispiel Text (Text-Wrapper), Zahl (Nummer-Wrapper), Datum (Datum-Wrapper).
+   * {Name}: Identifiziert die Komponente nach Name. Der Name des Felds darf nur alphanumerische Zeichen enthalten. Die mehreren aufeinander folgenden Gedankenstriche im Namen werden durch einen einzigen Bindestrich ersetzt `(-)`, und die Start- und Endabstände in einem Feldnamen werden entfernt. Beispiel: Vorname (field-first-name field-wrapper).
    * {FieldId}: Es handelt sich um eine eindeutige Kennung für das Feld, die automatisch generiert wird.
    * {Required}: Ein boolescher Wert, der angibt, ob das Feld erforderlich ist.
 * Titel: Die `label` -Element liefert einen beschreibenden Text für das Feld und ordnet ihn dem Eingabeelement mithilfe der `for` -Attribut.
@@ -135,7 +135,7 @@ Alle Formularfelder mit Ausnahme von Dropdown-Listen, Optionsfeldgruppen und Kon
 ```CSS
 /*Target all text input fields */
 
-.form-text-wrapper input {
+text-wrapper input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
@@ -143,7 +143,7 @@ Alle Formularfelder mit Ausnahme von Dropdown-Listen, Optionsfeldgruppen und Kon
 
 /*Target all fields with name first-name*/
 
-.form-first-name input {
+first-name input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
@@ -237,43 +237,110 @@ Bei Dropdown-Menüs wird die `select` -Element anstelle von `input` element:
 * Hintergrundfarbe: Für visuelle Harmonie wird eine konsistente Hintergrundfarbe festgelegt.
 * Pfeilanpassung: Optionale Stile blenden den standardmäßigen Dropdown-Pfeil aus und erstellen einen benutzerdefinierten Pfeil mit einem Unicode-Zeichen und einer Positionierung.
 
-### Optionsfeld- und Kontrollkästchen-Gruppen
+### Optionsfeldgruppen
 
-Ähnlich wie bei Dropdown-Komponenten haben Optionsfeld- und Kontrollkästchengruppen ihre eigene HTML-Struktur und CSS-Überlegungen:
+Ähnlich wie bei Dropdown-Komponenten verfügen Optionsfeldgruppen über eine eigene HTML- und CSS-Struktur:
 
 #### HTML-Struktur von Optionsfeldern
 
 ```HTML
-<div class="form-checkbox-group-wrapper form-{Name} field-wrapper" data-required={required}>
-  <label class="field-label">{Label Text}</label>
-  <div class="checkbox-group">
-    <input type="checkbox" id="{FieldId}-1" name="{Name}" value="{Value1}">
-    <label for="{FieldId}-1">{Option 1 Text}</label>
-    <input type="checkbox" id="{FieldId}-2" name="{Name}" value="{Value2}">
-    <label for="{FieldId}-2">{Option 2 Text}</label>
-    </div>
-  <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - Select multiple options (if applicable).
-  </div>
-</div>
+<fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
+   <legend for="{FieldId}" class="field-label">....</legend>
+   <% for each radio in Group %>
+   <div class="radio-wrapper field-{Name}">
+      <input type="radio" value="" id="{UniqueId}" data-field-type="radio-group" name="{FieldId}">
+      <label for="{UniqueId}" class="field-label">...</label>
+   </div>
+   <% end for %>
+</fieldset>
 ```
 
+#### HTML-Strukturbeispiel
+
+```HTML
+<fieldset class="radio-group-wrapper field-color field-wrapper" id="color_preference" name="color_preference" data-required="true">
+  <legend for="color_preference" class="field-label">Favorite Color:</legend>
+  <% for each radio in Group %>
+    <div class="radio-wrapper field-color">
+      <input type="radio" value="red" id="color_red" data-field-type="radio-group" name="color_preference">
+      <label for="color_red" class="field-label">Red</label>
+    </div>
+    <div class="radio-wrapper field-color">
+      <input type="radio" value="green" id="color_green" data-field-type="radio-group" name="color_preference">
+      <label for="color_green" class="field-label">Green</label>
+    </div>
+    <div class="radio-wrapper field-color">
+      <input type="radio" value="blue" id="color_blue" data-field-type="radio-group" name="color_preference">
+      <label for="color_blue" class="field-label">Blue</label>
+    </div>
+  <% end for %>
+</fieldset>
+```
+
+#### Beispiel-CSS-Selektoren für Dropdown-Komponenten
+
+* Targeting des Felds
+
+```CSS
+  .radio-group-wrapper {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+```
+
+Dieser Selektor wendet sich an alle Feldsätze mit dem Funkgruppen-Wrapper der Klasse. Dies wäre nützlich, um allgemeine Stile auf die gesamte Optionsfeldgruppe anzuwenden.
+
+* Optionsfeldbeschriftungen für Targeting
+
+```CSS
+.radio-wrapper label {
+    font-weight: normal;
+    margin-right: 10px;
+  }
+```
+
+* Targeting aller Optionsfeld-Beschriftungen innerhalb eines bestimmten Felds basierend auf seinem Namen
+
+```CSS
+.field-color .radio-wrapper label {
+  /* Your styles here */
+}
+```
+
+### Kontrollkästchen &quot;Gruppen&quot;
 
 #### Kontrollkästchengruppe HTML Struktur
 
 ```HTML
-<div class="form-checkbox-group-wrapper form-{Name} field-wrapper" data-required={required}>
-  <label class="field-label">{Label Text}</label>
-  <div class="checkbox-group">
-    <input type="checkbox" id="{FieldId}-1" name="{Name}" value="{Value1}">
-    <label for="{FieldId}-1">{Option 1 Text}</label>
-    <input type="checkbox" id="{FieldId}-2" name="{Name}" value="{Value2}">
-    <label for="{FieldId}-2">{Option 2 Text}</label>
-    </div>
-  <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - Select multiple options (if applicable).
+<fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
+   <legend for="{FieldId}" class="field-label">....</legend>
+   <% for each radio in Group %>
+   <div class="radio-wrapper field-{Name}">
+      <input type="checkbox" value="" id="{UniqueId}" data-field-type="checkbox-group" name="{FieldId}">
+      <label for="{UniqueId}" class="field-label">...</label>
+   </div>
+   <% end for %>
+</fieldset>
+```
+
+#### HTML-Strukturbeispiel
+
+```HTML
+<fieldset class="checkbox-group-wrapper field-topping field-wrapper" id="topping_preference" name="topping_preference" data-required="false">
+  <legend for="topping_preference" class="field-label">Pizza Toppings:</legend>
+  <div class="checkbox-wrapper field-topping">
+    <input type="checkbox" value="pepperoni" id="topping_pepperoni" data-field-type="checkbox-group" name="topping_preference">
+    <label for="topping_pepperoni" class="field-label">Pepperoni</label>
   </div>
-</div>
+  <div class="checkbox-wrapper field-topping">
+    <input type="checkbox" value="mushrooms" id="topping_mushrooms" data-field-type="checkbox-group" name="topping_preference">
+    <label for="topping_mushrooms" class="field-label">Mushrooms</label>
+  </div>
+  <div class="checkbox-wrapper field-topping">
+    <input type="checkbox" value="onions" id="topping_onions" data-field-type="checkbox-group" name="topping_preference">
+    <label for="topping_onions" class="field-label">Onions</label>
+  </div>
+</fieldset>
 ```
 
 **Beispiel-CSS-Selektoren für Optionsfelder und Kontrollkästchengruppen**

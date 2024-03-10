@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ca65bb637c70e35ff7d7749ed7e1e66e11cdb315
+source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
 workflow-type: tm+mt
-source-wordcount: '4774'
+source-wordcount: '4776'
 ht-degree: 96%
 
 ---
@@ -823,6 +823,7 @@ ht-degree: 96%
    + Erstellen von Edge Delivery Forms {#build-forms}
       + [Übersicht](/help/edge/docs/forms/overview.md)
       + Erste Schritte {#getting-started-eds-forms}
+         + [Erste Schritte](/help/edge/docs/forms/tutorial.md)
          + [Erstellen und Anzeigen einer Vorschau eines Formulars](/help/edge/docs/forms/create-forms.md)
          + [Formular zum Senden von Daten aktivieren](/help/edge/docs/forms/submit-forms.md)
          + [Veröffentlichen eines Formulars auf der Siteseite](/help/edge/docs/forms/publish-forms.md)

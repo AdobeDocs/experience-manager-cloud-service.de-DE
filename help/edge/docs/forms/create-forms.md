@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '845'
 ht-degree: 1%
 
 ---
@@ -27,41 +27,46 @@ Die AEM Forms Edge-Bereitstellung bietet einen Block, der als &quot;Adaptiver Fo
 
 Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
-* Richten Sie das GitHub-Projekt für Edge Delivery Services (EDS) mithilfe AEM Bausteinvorlage ein und klonen Sie das entsprechende GitHub-Repository auf Ihrem lokalen Computer. Siehe [Entwickler-Tutorial](https://www.aem.live/developer/tutorial) für Details. In diesem Dokument wird der lokale Ordner Ihres Edge Delivery Services-Projekts (EDS) als `[EDS Project repository]` .
+* Richten Sie eine [AEM von Projekten mithilfe der AEM Forms-Vorlage](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) oder [Fügen Sie dem vorhandenen AEM-Projekt einen Block für adaptive Formulare hinzu.](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) und klonen Sie das entsprechende GitHub-Repository auf Ihrem lokalen Computer.
+In diesem Dokument wird der lokale Ordner Ihres Edge Delivery Services-Projekts (EDS) als `[EDS Project repository]` .
 * Stellen Sie sicher, dass Sie Zugriff auf Google Tabellen oder Microsoft SharePoint haben. Informationen zum Einrichten von Microsoft SharePoint als Inhaltsquelle finden Sie unter [Verwendung von Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## Formular erstellen
 
-+++ Schritt 1: Hinzufügen des Bausteins Adaptives Formular zu Ihrem Edge Delivery Services (EDS)-Projekt.
+<!-- 
 
-Mit Adaptive können Benutzer Formulare für eine Edge Delivery Services-Site erstellen. Dieser Baustein ist jedoch nicht in der standardmäßigen AEM (die zum Erstellen eines Edge Delivery Services-Projekts verwendet wird) enthalten. So integrieren Sie den Block Adaptives Formular nahtlos in Ihr Edge Delivery Services-Projekt:
++++ Step 1: Add the Adaptive Form Block to your Edge Delivery Services (EDS) project.
 
-1. **Repository für adaptive Formularblöcke klonen**: Klonen Sie die [Repository für adaptive Formularblöcke](https://github.com/adobe-rnd/form-block) auf Ihrem lokalen Computer. Es enthält den Code zum Rendern des Formulars auf einer EDS-Webseite. In diesem Dokument wird der lokale Ordner Ihres Forms Block-Repositorys als `[Adaptive Form Block repository]`.
-1. **Suchen Sie das Repository für adaptive Formularblöcke:** Zugriff auf [Repository für adaptive Formularblöcke]/blocks/src und kopieren Sie den Inhalt.
+The Adaptive  empowers users to create forms for an Edge Delivery ServicesSite. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Form Block into your Edge Delivery Services project:
 
-1. auf Ihrem lokalen Computer und kopieren Sie die `form` Ordner.
-1. **Fügen Sie den Code des Bausteins des adaptiven Formulars in Ihr EDS-Projekt ein:**
-Navigieren Sie zum [EDS-Projekt-Repository]/blocks/ Ordner auf Ihrem lokalen Computer und erstellen Sie einen Ordner &quot;form&quot;. Fügen Sie die `[Adaptive Form Block repository]/blocks/src content`, kopiert in einem vorherigen Schritt in die `[EDS Project repository]/blocks/form` Ordner.
-1. **Übertragen Sie Änderungen auf GitHub:** Checkin `[EDS Project repository]/blocks/form` Ordner und die zugrunde liegenden Dateien Ihrem Edge Delivery Services-Projekt auf GitHub.
+1. **Clone the Adaptive Form Block repository**: Clone the [Adaptive Form Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Form Block repository]`.
+1. **Locate the Adaptive Form Block Repository:** Access the [Adaptive Form Block repository]/blocks/src folder and copy its content. 
 
-Nach Abschluss dieser Schritte wurde der Baustein für adaptive Formulare erfolgreich zum Repository Ihres Edge Delivery Services-Projekts (EDS) auf GitHub hinzugefügt. Sie können jetzt Formulare erstellen und zu einer EDS Sites-Seite hinzufügen.
+1. on your local machine and copy the `form` folder. 
+1. **Paste the Adaptive Form Block's code into your EDS Project:**
+Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Form Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
+1. **Commit Changes to GitHub:** Check in the `[EDS Project repository]/blocks/form` folder and its underlying files to your Edge Delivery Services project on GitHub.
 
+After completing these steps, the Adaptive Form Block is successfully added to your Edge Delivery Services (EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
+ 
 
-**Beheben von GitHub-Build-Problemen**
+**Troubleshooting GitHub build issues**
 
-Stellen Sie einen reibungslosen GitHub-Build-Prozess sicher, indem Sie potenzielle Probleme beheben:
+Ensure a smooth GitHub build process by addressing potential issues:
 
-* **Fehler: Modulpfad auflösen:**
-Wenn der Fehler &quot;Pfad zum Modul kann nicht aufgelöst werden &quot;&#39;../../scripts/lib-franklin.js&#39;&quot; auftritt, navigieren Sie zum [EDS-Projekt]/blocks/forms/form.js. Aktualisieren Sie die Importanweisung, indem Sie die Datei &quot;lib-franken.js&quot;durch die Datei &quot;aem.js&quot;ersetzen.
+* **Resolve Module Path Error:**
+    If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
-* **Linking-Fehler beheben:**
-Sollten Sie auf Linkingfehler stoßen, können Sie diese umgehen. Öffnen Sie die [EDS-Projekt]/package.json und ändern Sie das Skript &quot;lint&quot;von &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; in &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;&quot;. Speichern Sie die Datei und übertragen Sie die Änderungen auf Ihr GitHub-Projekt.
+* **Handle Linting Errors:**
+    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project.
 
 +++
 
-+++ Schritt 2: Erstellen Sie ein Formular mit Microsoft Excel oder Google Sheet.
+-->
+
++++ Schritt 1: Erstellen Sie ein Formular mit Microsoft Excel oder Google Sheet.
 
 Anstatt durch komplexe Prozesse zu navigieren, kann das Erstellen eines Formulars mühelos mithilfe einer Tabelle erfolgen. Sie können die Zeilen und Spalten definieren, aus denen die Formularstruktur besteht. Jede Zeile stellt eine einzelne [Formularfeld](/help/edge/docs/forms/form-components.md#available-components) und die Spaltenüberschriften definieren die entsprechenden [Feldeigenschaften](/help/edge/docs/forms/form-components.md#components-properties).
 
@@ -110,7 +115,7 @@ So fahren Sie mit der Formularerstellung fort:
 
 +++
 
-+++ Schritt 3: Anzeigen einer Vorschau des Formulars mithilfe Ihrer Edge Delivery Services (EDS)-Seite.
++++ Schritt 2: Anzeigen einer Vorschau des Formulars mithilfe Ihrer Edge Delivery Services (EDS)-Seite.
 
 
 Bis jetzt haben Sie den Block Adaptives Formular zu Ihrem EDS-Projekt hinzugefügt und die Struktur des Formulars vorbereitet. Nun können Sie eine Vorschau des Formulars anzeigen:
@@ -150,7 +155,6 @@ Bis jetzt haben Sie den Block Adaptives Formular zu Ihrem EDS-Projekt hinzugefü
 ## Nächster Schritt
 
 [Tabellenkalkulation vorbereiten](/help/edge/docs/forms/submit-forms.md) , um Daten bei der Formularübermittlung zu akzeptieren.
-
 
 
 
