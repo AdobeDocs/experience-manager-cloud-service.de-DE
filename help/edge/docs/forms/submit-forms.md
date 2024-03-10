@@ -1,11 +1,11 @@
 ---
 title: Vorbereiten der Tabelle auf die Datenaufnahme
-description: Erstellen Sie leistungsstarke Formulare schneller mit Tabellen und Bausteinfeldern für adaptive Formulare!
+description: Erstellen Sie leistungsstarke Formulare schneller mit Tabellen und adaptiven Forms-Blockfeldern.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 1%
@@ -55,7 +55,7 @@ So aktivieren Sie das Arbeitsblatt:
 
 Nachdem die Feldnamen zum `incoming` -Seite, kann Ihr Formular Übermittlungen annehmen. Sie können das Formular in der Vorschau anzeigen und Daten mit ihm an das Blatt senden.
 
-Nachdem das Blatt für den Empfang von Daten eingerichtet wurde, können Sie [Vorschau des Formulars mit dem Block Adaptives Formular](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) oder [POST-Anfragen verwenden](#use-admin-apis-to-send-data-to-your-sheet) , um Daten an die Tabelle zu senden.
+Nachdem das Blatt für den Empfang von Daten eingerichtet wurde, können Sie [Vorschau des Formulars mit Adaptiver Forms-Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) oder [POST-Anfragen verwenden](#use-admin-apis-to-send-data-to-your-sheet) , um Daten an die Tabelle zu senden.
 
 >[!WARNING]
 >
@@ -172,7 +172,7 @@ Eine Tabelle mit dem Namen &quot;Slack&quot;wird Ihrer Excel-Arbeitsmappe oder I
 
 ## Daten an Ihr Blatt senden {#send-data-to-your-sheet}
 
-Nachdem das Blatt auf den Empfang von Daten eingestellt wurde, können Sie [Vorschau des Formulars mit dem Block Adaptives Formular](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) oder [Admin-APIs verwenden](#use-admin-apis-to-send-data-to-your-sheet) , um Daten an die Tabelle zu senden.
+Nachdem das Blatt auf den Empfang von Daten eingestellt wurde, können Sie [Vorschau des Formulars mit Adaptiver Forms-Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) oder [Admin-APIs verwenden](#use-admin-apis-to-send-data-to-your-sheet) , um Daten an die Tabelle zu senden.
 
 ### Verwenden von Admin-APIs zum Senden von Daten an Ihr Blatt
 

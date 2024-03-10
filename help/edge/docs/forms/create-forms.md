@@ -5,29 +5,29 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '821'
 ht-degree: 1%
 
 ---
 
-# Erstellen eines Formulars mithilfe des Bausteins Adaptives Formular
+# Erstellen eines Formulars mithilfe des adaptiven Forms-Blocks
 
-Im heutigen digitalen Zeitalter ist die Erstellung benutzerfreundlicher Formulare für jedes Unternehmen von entscheidender Bedeutung. Mit AEM Forms Edge Delivery können Sie Formulare mit vertrauten Tools wie Word- oder Google-Dokumenten erstellen.
+Die AEM Forms Edge-Bereitstellung bietet einen Block, der als Adaptiver Forms-Block bezeichnet wird und mit dem Sie mühelos Formulare erstellen können, um erfasste Daten zu erfassen und zu speichern. Sie können [Erstellen Sie ein neues AEM Projekt, das bereits mit Adaptive Forms Block ausgestattet ist.](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) oder [Fügen Sie den adaptiven Forms-Block zu einem bestehenden AEM hinzu.](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 Diese Formulare senden Daten direkt an eine Microsoft Excel- oder Google Tabellen-Datei, sodass Sie ein dynamisches Ökosystem und robuste APIs von Google Tabellen, Microsoft Excel und Microsoft SharePoint verwenden können, um gesendete Daten einfach zu verarbeiten oder einen bestehenden Geschäftsarbeitsablauf zu initiieren.
 
 ![Dokumentenbasiertes Authoring-Ökosystem](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
-Die AEM Forms Edge-Bereitstellung bietet einen Block, der als &quot;Adaptiver Formularblock&quot;bezeichnet wird und mit dem Sie mühelos Formulare erstellen können, um erfasste Daten zu erfassen und zu speichern. Sie können den Block Adaptives Formular in Ihr AEM EDS-Projekt einbeziehen, um mit der Erstellung eines Formulars zu beginnen. Fangen wir an:
+
 
 
 ## Voraussetzungen
 
 Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
-* Richten Sie eine [AEM von Projekten mithilfe der AEM Forms-Vorlage](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) oder [Fügen Sie dem vorhandenen AEM-Projekt einen Block für adaptive Formulare hinzu.](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) und klonen Sie das entsprechende GitHub-Repository auf Ihrem lokalen Computer.
+* Richten Sie eine [AEM von Projekten mithilfe der AEM Forms-Vorlage](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) oder [Adaptiver Forms-Block zu Ihrem bestehenden AEM hinzugefügt.](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) und klonen Sie das entsprechende GitHub-Repository auf Ihrem lokalen Computer.
 In diesem Dokument wird der lokale Ordner Ihres Edge Delivery Services-Projekts (EDS) als `[EDS Project repository]` .
 * Stellen Sie sicher, dass Sie Zugriff auf Google Tabellen oder Microsoft SharePoint haben. Informationen zum Einrichten von Microsoft SharePoint als Inhaltsquelle finden Sie unter [Verwendung von Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
@@ -37,19 +37,19 @@ In diesem Dokument wird der lokale Ordner Ihres Edge Delivery Services-Projekts 
 
 <!-- 
 
-+++ Step 1: Add the Adaptive Form Block to your Edge Delivery Services (EDS) project.
++++ Step 1: Add the Adaptive Forms Block to your Edge Delivery Services (EDS) project.
 
-The Adaptive  empowers users to create forms for an Edge Delivery ServicesSite. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Form Block into your Edge Delivery Services project:
+The Adaptive  empowers users to create forms for an Edge Delivery ServicesSite. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Forms Block into your Edge Delivery Services project:
 
-1. **Clone the Adaptive Form Block repository**: Clone the [Adaptive Form Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Form Block repository]`.
-1. **Locate the Adaptive Form Block Repository:** Access the [Adaptive Form Block repository]/blocks/src folder and copy its content. 
+1. **Clone the Adaptive Forms Block repository**: Clone the [Adaptive Forms Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Forms Block repository]`.
+1. **Locate the Adaptive Forms Block Repository:** Access the [Adaptive Forms Block repository]/blocks/src folder and copy its content. 
 
 1. on your local machine and copy the `form` folder. 
-1. **Paste the Adaptive Form Block's code into your EDS Project:**
-Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Form Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
+1. **Paste the Adaptive Forms Block's code into your EDS Project:**
+Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Forms Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
 1. **Commit Changes to GitHub:** Check in the `[EDS Project repository]/blocks/form` folder and its underlying files to your Edge Delivery Services project on GitHub.
 
-After completing these steps, the Adaptive Form Block is successfully added to your Edge Delivery Services (EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
+After completing these steps, the Adaptive Forms Block is successfully added to your Edge Delivery Services (EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
  
 
 **Troubleshooting GitHub build issues**
@@ -118,7 +118,7 @@ So fahren Sie mit der Formularerstellung fort:
 +++ Schritt 2: Anzeigen einer Vorschau des Formulars mithilfe Ihrer Edge Delivery Services (EDS)-Seite.
 
 
-Bis jetzt haben Sie den Block Adaptives Formular zu Ihrem EDS-Projekt hinzugefügt und die Struktur des Formulars vorbereitet. Nun können Sie eine Vorschau des Formulars anzeigen:
+Bis jetzt haben Sie den Adaptive Forms Block zu Ihrem EDS-Projekt hinzugefügt und die Formularstruktur vorbereitet. Nun können Sie eine Vorschau des Formulars anzeigen:
 
 1. **Zugriff auf Ihr Projektverzeichnis:** Öffnen Sie Ihr Microsoft SharePoint- oder Google Drive-Konto und navigieren Sie zu Ihrem AEM Edge Delivery-Projektverzeichnis.
 
@@ -126,7 +126,7 @@ Bis jetzt haben Sie den Block Adaptives Formular zu Ihrem EDS-Projekt hinzugefü
 
 1. **Navigieren Sie zum gewünschten Speicherort:** Wechseln Sie an die gewünschte Stelle im Dokument, an der Sie das Formular hinzufügen möchten.
 
-1. **Fügen Sie den Block Adaptives Formular hinzu:** So erstellen Sie einen Formularblock zum Rendern des Formulars. Wählen Sie &quot;Einfügen&quot;> &quot;Tabelle&quot;und erstellen Sie eine Spalte (zwei Zeilentabellen). Nennen Sie die Tabelle &quot;Formular&quot;und fügen Sie die Vorschau-URL in die zweite Zeile ein. Stellen Sie sicher, dass die URL als Hyperlink formatiert ist, nicht als Nur-Text, wie unten dargestellt:
+1. **Fügen Sie den adaptiven Forms-Block hinzu:** So erstellen Sie einen Formularblock zum Rendern des Formulars. Wählen Sie &quot;Einfügen&quot;> &quot;Tabelle&quot;und erstellen Sie eine Spalte (zwei Zeilentabellen). Nennen Sie die Tabelle &quot;Formular&quot;und fügen Sie die Vorschau-URL in die zweite Zeile ein. Stellen Sie sicher, dass die URL als Hyperlink formatiert ist, nicht als Nur-Text, wie unten dargestellt:
 
    | Formular |
    |---|

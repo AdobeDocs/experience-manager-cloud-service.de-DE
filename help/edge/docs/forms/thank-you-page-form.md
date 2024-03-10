@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 1%
@@ -20,14 +20,14 @@ Nachdem ein Benutzer ein Formular gesendet hat, ist es entscheidend, ein nahtlos
 
 * **Umleiten**: Eine Umleitung spielt eine zentrale Rolle bei der Lenkung der Benutzer zu relevanten Zielen, der Optimierung der Interaktion und letztendlich der Steigerung der Konversionsraten. Durch eine Umleitung, die Benutzer nahtlos zum nächsten Schritt im Journey führt, wird eine reibungslose Navigation gewährleistet. Beispielsweise die Umleitung des Benutzers zur Zahlungsseite nach der Erfassung anfänglicher Details.
 
-Im Block Adaptive Forms wird standardmäßig eine Dankeseite angezeigt. Sie haben jedoch die Flexibilität, dieses Erlebnis an Ihre spezifischen Anforderungen anzupassen. Zu den Optionen gehören:
+Im adaptiven Forms-Block wird standardmäßig eine Dankeseite angezeigt. Sie haben jedoch die Flexibilität, dieses Erlebnis an Ihre spezifischen Anforderungen anzupassen. Zu den Optionen gehören:
 
 * [Konfigurieren der Dankeseite und -nachricht zur Anpassung an Ihre Marken- und Kommunikationsziele](#configuring-the-thank-you-page-and-message)
 * [Weiterleiten von Benutzern zu einer anderen Seite nach der Übermittlung für weitere Aktionen](#redirect-users-to-another-page-post-submission)
 
 ## Konfigurieren der Dankeseite und -meldung
 
-Das Standardverhalten des Bausteins Adaptive Forms besteht darin, bei der Übermittlung die Dankeseite anzuzeigen. Führen Sie die folgenden Schritte aus, um die Dankeseite für Ihren adaptiven Forms-Block zu konfigurieren:
+Das Standardverhalten von Adaptive Forms Block besteht darin, die Dankeseite bei der Übermittlung anzuzeigen. Führen Sie die folgenden Schritte aus, um die Dankeseite für Ihren adaptiven Forms-Block zu konfigurieren:
 
 1. Rufen Sie den Ordner AEM Edge-Bereitstellungsprojekt in Microsoft SharePoint oder Google Workspace auf.
 1. Erstellen Sie in Ihrem Projektverzeichnis eine Microsoft Word- oder Google Docs-Datei mit dem Namen &quot;Danke&quot;.
@@ -41,7 +41,7 @@ Ihr adaptiver Forms-Block zeigt die Dankeseite bei der Formularübermittlung an.
 
 ## Umleiten von Benutzern zu einer anderen Seite nach der Übermittlung
 
-Standardmäßig leitet der Block Adaptive Forms die Benutzer zur &quot;Dankeseite&quot;weiter. Um Benutzer auf eine andere Seite als die standardmäßige &quot;Danksagungsseite&quot;umzuleiten, haben Sie zwei Optionen:
+Standardmäßig leitet der Adaptive Forms-Block die Benutzer zur Dankeseite um. Um Benutzer auf eine andere Seite als die standardmäßige &quot;Danksagungsseite&quot;umzuleiten, haben Sie zwei Optionen:
 
 * [Ersetzen Sie die Dankeseite durch eine andere Seite.](#replace-the-existing-thankyou-page)
 * [Verwenden Sie Website-Umleitungen für &quot;Danksagung&quot;-Seitenumleitung.](#use-website-redirects-for-thankyou-page-redirection)

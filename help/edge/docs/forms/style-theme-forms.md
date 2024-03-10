@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '1819'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Formularfelder formatieren
 
-Forms ist von entscheidender Bedeutung für die Benutzerinteraktion auf Websites, sodass sie Daten eingeben können. In diesem Handbuch werden die Grundlagen für die Formatierung verschiedener Formularfelder im [Adaptiver Formularblock](/help/edge/docs/forms/create-forms.md), mit dem Sie visuell ansprechende und benutzerfreundliche Formulare erstellen können.
+Forms ist von entscheidender Bedeutung für die Benutzerinteraktion auf Websites, sodass sie Daten eingeben können. In diesem Handbuch werden die Grundlagen für die Formatierung verschiedener Formularfelder im [Adaptiver Forms-Block](/help/edge/docs/forms/create-forms.md), mit dem Sie visuell ansprechende und benutzerfreundliche Formulare erstellen können.
 
 ## Grundlagen zu Formularfeldtypen
 
-Bevor wir uns mit der Formatierung befassen, sollten wir die allgemeinen Formularfeldtypen überprüfen, die vom adaptiven Formularblock unterstützt werden:
+Bevor wir uns mit der Formatierung befassen, sollten wir die gängigen Formularfeldtypen überprüfen, die vom adaptiven Forms-Block unterstützt werden:
 
 * Eingabefelder: Dazu gehören Texteingaben, E-Mail-Eingaben, Kennworteingaben und mehr.
 * Kontrollkästchengruppen: Dient zum Auswählen mehrerer Optionen.
@@ -35,11 +35,11 @@ Grundlegende CSS-Konzepte sind vor der Formatierung bestimmter Formularfelder vo
 * Box Model: Das CSS-Box-Modell beschreibt die Struktur von HTML-Elementen als Inhaltsbereich, der von Abstand, Rahmen und Rändern umgeben ist.
 * Flexbox/Grid: CSS Flexbox- und Rasterlayouts sind leistungsstarke Tools zum Erstellen responsiver und flexibler Designs.
 
-## Formatieren eines Formulars für adaptive Formularblöcke
+## Formatieren eines Formulars für adaptiven Forms-Block
 
-Der Adaptive Formularblock bietet eine standardisierte HTML-Struktur, die die Auswahl und Formatierung von Formularkomponenten vereinfacht:
+Der Adaptive Forms Block bietet eine standardisierte HTML-Struktur, die die Auswahl und Formatierung von Formularkomponenten vereinfacht:
 
-* **Standardstile aktualisieren**: Sie können die Standardstile eines Formulars ändern, indem Sie `/blocks/form/form.css file`. Diese Datei bietet einen umfassenden Stil für ein Formular, der mehrstufige Assistentenformulare unterstützt. Die Verwendung benutzerdefinierter CSS-Variablen ermöglicht eine einfache Anpassung, Wartung und einheitliche Formatierung in allen Formularen. Anweisungen zum Hinzufügen des Bausteins Adaptives Formular zu Ihrem Projekt finden Sie unter [Formular erstellen](/help/edge/docs/forms/create-forms.md).
+* **Standardstile aktualisieren**: Sie können die Standardstile eines Formulars ändern, indem Sie `/blocks/form/form.css file`. Diese Datei bietet einen umfassenden Stil für ein Formular, der mehrstufige Assistentenformulare unterstützt. Die Verwendung benutzerdefinierter CSS-Variablen ermöglicht eine einfache Anpassung, Wartung und einheitliche Formatierung in allen Formularen. Anweisungen zum Hinzufügen des adaptiven Forms-Blocks zu Ihrem Projekt finden Sie unter [Formular erstellen](/help/edge/docs/forms/create-forms.md).
 
 * **Anpassung**: Verwenden Sie die Standardeinstellung `forms.css` als Basis verwenden und anpassen, um das Erscheinungsbild Ihrer Formularkomponenten zu ändern, sodass es visuell ansprechend und benutzerfreundlich ist. Die Dateistruktur fördert die Organisation und verwaltet Stile für Formulare, wodurch konsistente Designs auf Ihrer Website gefördert werden.
 
@@ -60,7 +60,7 @@ Der Adaptive Formularblock bietet eine standardisierte HTML-Struktur, die die Au
 
 ## Komponentenstruktur
 
-Der Baustein für adaptive Formulare bietet eine konsistente HTML-Struktur für verschiedene Formularelemente, wodurch Stile und Verwaltung vereinfacht werden. Sie können die Komponenten mithilfe von CSS für Stilzwecke bearbeiten.
+Der Adaptive Forms-Block bietet eine konsistente HTML-Struktur für verschiedene Formularelemente, die eine einfachere Formatierung und Verwaltung ermöglicht. Sie können die Komponenten mithilfe von CSS für Stilzwecke bearbeiten.
 
 ### Allgemeine Komponenten (außer Dropdown, Optionsfeldgruppen und Kontrollkästchengruppen):
 
@@ -821,5 +821,5 @@ Sie können auch einzelne Felder nach Namen ausrichten, um eindeutige Stile anzu
 }
 ```
 
-Diese CSS-Datei enthält alle Eingabeelemente, die sich in einem Element befinden, das über die Klasse verfügt `field-otp`. Die HTML-Struktur Ihres Formulars entspricht den Konventionen des Bausteins für adaptive Formulare. Dies bedeutet, dass ein Container mit der Klasse &quot;field-otp&quot;markiert ist, der das Feld mit dem Namen &quot;otp&quot;enthält.
+Diese CSS-Datei enthält alle Eingabeelemente, die sich in einem Element befinden, das über die Klasse verfügt `field-otp`. Die HTML-Struktur Ihres Formulars entspricht den Konventionen des Bausteins Adaptive Forms . Dies bedeutet, dass ein Container mit der Klasse &quot;field-otp&quot;markiert ist, der das Feld mit dem Namen &quot;otp&quot;enthält.
 

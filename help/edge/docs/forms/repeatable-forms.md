@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 13%
@@ -14,7 +14,7 @@ ht-degree: 13%
 
 # Wiederholbare Abschnitte zu einem Formular hinzufügen
 
-Der Baustein &quot;Adaptives Formular&quot;bietet die Möglichkeit, einen Abschnitt oder eine Komponente eines Formulars wiederholbar zu machen. Dadurch können Benutzer Informationen für denselben Datentyp mehrmals eingeben, was die Erfassung von Informationen wie Arbeitserfahrung oder Bildungshintergrund erleichtert.
+Adaptiver Forms-Block bietet die Möglichkeit, einen Abschnitt oder eine Komponente eines Formulars wiederholbar zu machen. Dadurch können Benutzer Informationen für denselben Datentyp mehrmals eingeben, was die Erfassung von Informationen wie Arbeitserfahrung oder Bildungshintergrund erleichtert.
 
 Dies könnte beispielsweise ein Formular sein, mit dem Informationen über die Arbeitserfahrung einer Person erfasst werden. Sie könnten einen wiederholbaren Abschnitt zum Erfassen der Details jeder vorherigen Beschäftigung haben. Der wiederholbare Abschnitt enthält normalerweise Felder wie Unternehmensname, Stellenbezeichnung, Beschäftigungsdauer und Arbeitsverantwortlichkeiten. Die Benutzerin bzw. der Benutzer kann mehrere Instanzen des wiederholbaren Abschnitts hinzufügen, um Informationen zu den einzelnen Beschäftigungen einzugeben, die sie bzw. er in der Vergangenheit hatte.
 
@@ -81,7 +81,7 @@ The form allows users to provide personal information, including details of the 
 
 ## Prerequisites
 
-The [Adaptive Form block is enabled](/help/edge/docs/forms/create-forms.md) for your Edge Delivery Services project. 
+The [Adaptive Forms Block is enabled](/help/edge/docs/forms/create-forms.md) for your Edge Delivery Services project. 
 
 ## Add a repeatable section to a form 
 
