@@ -4,10 +4,10 @@ description: Dieses Tutorial hilft Ihnen, ein neues Adobe Experience Manager For
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
 workflow-type: tm+mt
-source-wordcount: '1770'
-ht-degree: 1%
+source-wordcount: '1803'
+ht-degree: 0%
 
 ---
 
@@ -198,31 +198,29 @@ So zeigen Sie eine Vorschau von nicht veröffentlichten Inhalten an:
 
    [https://main—wefinance—wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
 
-### Formular aktualisieren
+### Formular erstellen
 
-1. Wechseln Sie zum Ordner Microsoft SharePoint oder Google Drive .
+Der Beispielinhalt enthält eine &quot;Anfrage&quot;-Vorlage, die als Vorlage für das &quot;Anfrage&quot;-Formular dient. Jede Zeile des Arbeitsblatts stellt eine [Formularfeld](/help/edge/docs/forms/form-components.md#available-components)und die Spaltenüberschriften definieren die [Feldeigenschaften](/help/edge/docs/forms/form-components.md#available-components). Mit diesem Musterformular erhalten Sie einen Vorsprung beim Erstellen Ihres Formulars.
 
-1. Öffnen Sie `enquiry.xlsx` zur Bearbeitung.
+![Anfrageformular](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-   ![Anfrageformular](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+Beginnen wir mit der Aktualisierung einer Feldbezeichnung. Öffnen Sie das &#39;Anfrage&#39;-Blatt zur Bearbeitung, ändern Sie den Titel der Senden-Schaltfläche in `Let's Chat`und verwenden Sie den Sidekick, um ihn zu veröffentlichen.
 
-1. Ändern Sie den Titel der Senden-Schaltfläche in `Let's Chat`.
+![Anfrageformular](/help/edge/assets/enquiry-form-preview-publish.png)
 
-   ![Anfrageformular](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
-
-1. Verwenden Sie AEM Sidekick, um eine Vorschau anzuzeigen und die `enquiry.xlsx` -Datei.
-
-   ![Anfrageformular](/help/edge/assets/enquiry-form-preview-publish.png)
-
-1. Um eine Vorschau des Anfrageformulars anzuzeigen, gehen Sie zur folgenden URL:
+Um eine Vorschau des aktualisierten Anfrageformulars anzuzeigen, gehen Sie zur folgenden URL:
 
 
-   ```HTML
-   https://<branch>--<repository>--<owner>.hlx.page/enquiry
-   ```
+```HTML
+    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+       
+```
 
-   Der Titel der Senden-Schaltfläche wird aktualisiert. Füllen Sie nun das Formular aus und klicken Sie auf die Senden-Schaltfläche. Es tritt ein Fehler ähnlich dem folgenden auf, da das Arbeitsblatt nicht [auf noch akzeptierte Daten eingestellt ist](/help/edge/docs/forms/submit-forms.md).
+Der Titel der Senden-Schaltfläche wird aktualisiert auf `Let's Chat`.
 
+![Anfrageformular](/help/edge/assets/updated-form.png)
+
+Ausführliche Informationen zum Erstellen und Veröffentlichen eines neuen Formulars erhalten Sie im Abschnitt [Formular erstellen](/help/edge/docs/forms/create-forms.md) Handbuch.
 
 ### Entwickeln von Stil und Funktionalität
 
