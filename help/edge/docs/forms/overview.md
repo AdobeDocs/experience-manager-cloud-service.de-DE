@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '652'
 ht-degree: 17%
 
 ---
@@ -31,7 +31,7 @@ Das folgende Diagramm zeigt, wie Sie Inhalte in Microsoft Excel oder Google Tabe
 
 ![Architektur von Edge Delivery](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-Edge Delivery Services ist ein zusammenstellbarer Satz von Diensten, der eine hohe Flexibilität bei der Erstellung von Inhalten auf Ihrer Website ermöglicht. Wie bereits erwähnt, können Sie beide [AEM Content Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=de) mit [AEM Authoring](/help/implementing/universal-editor/introduction.md) sowie [Dokumentenbasiertes Authoring](https://www.aem.live/docs/authoring)
+Edge Delivery Services ist ein zusammenstellbarer Satz von Diensten, der eine hohe Flexibilität bei der Erstellung von Inhalten auf Ihrer Website ermöglicht. Sie können beide AEM Content Management mit [AEM Authoring](/help/forms/creating-adaptive-form-core-components.md) sowie [Dokumentenbasiertes Authoring](/help/edge/docs/forms/create-forms.md)
 
 Sie können beispielsweise Inhalte direkt aus Microsoft Excel oder Google Tabellen verwenden. Das bedeutet, dass Inhalte aus diesen Quellen zu Formularen auf Ihrer Website werden können. Der neue Inhalt wird sofort und ohne Neuerstellungsprozess hinzugefügt.
 

@@ -4,10 +4,10 @@ description: Dieses Tutorial hilft Ihnen, ein neues Adobe Experience Manager For
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
+source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
 workflow-type: tm+mt
-source-wordcount: '1803'
-ht-degree: 0%
+source-wordcount: '1786'
+ht-degree: 1%
 
 ---
 
@@ -65,7 +65,7 @@ Die AEM Forms-Vorlage für Bausteinvorlagen ermöglicht einen schnellen Einstieg
    >[!NOTE]
    >
    >
-   > Wenn Sie Github Enterprise mit IP-Filterung verwenden, können Sie die folgende IP zur Zulassungsliste hinzufügen: 3.227.118.73
+   > Wenn Sie GitHub Enterprise mit IP-Filterung verwenden, können Sie die folgende IP zur Zulassungsliste hinzufügen: 3.227.118.73
 
    Herzlichen Glückwunsch! Sie haben eine neue Website, die auf `https://<branch>--<repo>--<owner>.hlx.page/`.
 
@@ -79,11 +79,11 @@ Die AEM Forms-Vorlage für Bausteinvorlagen ermöglicht einen schnellen Einstieg
 
 ### Verknüpfen Ihrer eigenen Inhaltsquelle
 
-Ihr neu erstelltes Github-Repository verweist auf [Beispielinhalt, der im Ordner &quot;Google Drive&quot;gespeichert ist](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Dieser schreibgeschützte Inhalt bietet einen guten Ausgangspunkt für Ihre Formulare. Sie können es in Ihr eigenes Google-Laufwerk kopieren und an Ihre Anforderungen anpassen.
+Ihr neu erstelltes GitHub-Repository verweist auf [Beispielinhalt, der im Ordner &quot;Google Drive&quot;gespeichert ist](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Dieser schreibgeschützte Inhalt bietet einen guten Ausgangspunkt für Ihre Formulare. Sie können es in Ihr eigenes Google-Laufwerk kopieren und an Ihre Anforderungen anpassen.
 
 ![Beispielinhalt auf dem Google-Laufwerk](/help/edge/assets/folder-with-sample-content.png)
 
-So kopieren Sie den Beispielinhalt in Ihren eigenen Inhaltsordner und verweisen Ihr Github-Repository auf Ihren eigenen Inhaltsordner:
+So kopieren Sie den Beispielinhalt in Ihren eigenen Inhaltsordner und verweisen Ihr GitHub-Repository auf Ihren eigenen Inhaltsordner:
 
 1. Erstellen Sie einen neuen Ordner speziell für Ihre AEM in Google Drive oder Microsoft SharePoint. In diesem Dokument wird ein Ordner verwendet, der in Microsoft SharePoint erstellt wurde.
 
@@ -106,7 +106,7 @@ So kopieren Sie den Beispielinhalt in Ihren eigenen Inhaltsordner und verweisen 
 
       ![Beispielinhalt herunterladen](/help/edge/assets/download-sample-content.png)
 
-      Die `index`, `nav`, und `footer` -Dateien definieren das grundlegende Layout Ihrer Seiten und ändern sich im gesamten Projekt nur selten. Sie haben auch eine bestimmte Struktur, die sich von den meisten anderen Inhaltsdateien unterscheidet. Indem Sie sich diese Dateien ansehen, werden Sie ein Gefühl dafür bekommen, wie Inhalte in AEM Projekten organisiert werden.
+      Die `index`, `nav`, und `footer` -Dateien definieren das grundlegende Layout Ihrer Seiten und ändern sich im gesamten Projekt nur selten. Sie haben auch eine bestimmte Struktur, die sich von den meisten anderen Inhaltsdateien unterscheidet. Indem Sie sich diese Dateien ansehen, werden Sie ein Gefühl dafür bekommen, wie Inhalte in AEM Projekte organisiert werden.
 
 
    1. Laden Sie diese Dateien in den Ordner Microsoft SharePoint oder Google Drive hoch.
@@ -168,7 +168,7 @@ So zeigen Sie eine Vorschau von nicht veröffentlichten Inhalten an:
 
    ![AEM Sidekick - Hinzufügen eines Projekts](/help/edge/assets/aem-sidekick-add-a-project.png)
 
-   Sobald die Erweiterung installiert und Ihr Projekt hinzugefügt wurde, können Sie Ihre Inhalte auf Ihrem Google-Laufwerk in der Vorschau anzeigen und veröffentlichen.
+   Wenn die Erweiterung installiert ist und Ihr Projekt hinzugefügt wird, können Sie Ihre Inhalte auf Ihrem Google-Laufwerk in der Vorschau anzeigen und veröffentlichen.
 
 1. Wählen Sie alle Dokumente im Ordner Microsoft SharePoint oder Google Drive aus. Sie können mehrere Dokumente auswählen, indem Sie beim Klicken die Strg-Taste (Windows/Linux) oder die Befehlstaste (Mac) gedrückt halten.
 
@@ -178,7 +178,7 @@ So zeigen Sie eine Vorschau von nicht veröffentlichten Inhalten an:
 
    Wenn Sie `index`, `nav`, `footer` und `enquiry` -Dateien sind, sind dies separate Dokumente mit eigenen Vorschau- und Veröffentlichungszyklen. Stellen Sie daher sicher, dass Sie alle Dokumente in der Vorschau anzeigen (und veröffentlichen).
 
-   Nach der Vorschau der Dateien werden die Dokumente in neuen Browserregisterkarten angezeigt. Um eine Vorschau des Beispielformulars anzuzeigen, gehen Sie zur folgenden URL:
+   Nach der Vorschau der Dateien werden die Dokumente in neuen Browserregisterkarten angezeigt. Um eine Vorschau des Beispielformulars anzuzeigen, navigieren Sie zur folgenden URL:
 
 
    ```HTML
@@ -204,7 +204,7 @@ Der Beispielinhalt enthält eine &quot;Anfrage&quot;-Vorlage, die als Vorlage f�
 
 ![Anfrageformular](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-Beginnen wir mit der Aktualisierung einer Feldbezeichnung. Öffnen Sie das &#39;Anfrage&#39;-Blatt zur Bearbeitung, ändern Sie den Titel der Senden-Schaltfläche in `Let's Chat`und verwenden Sie den Sidekick, um ihn zu veröffentlichen.
+Beginnen wir mit der Aktualisierung einer Feldbeschriftung. Öffnen Sie das &#39;Anfrage&#39;-Blatt zur Bearbeitung, ändern Sie den Titel der Senden-Schaltfläche in `Let's Chat`und verwenden Sie den Sidekick, um ihn zu veröffentlichen.
 
 ![Anfrageformular](/help/edge/assets/enquiry-form-preview-publish.png)
 
@@ -233,7 +233,7 @@ So können Sie in kurzer Zeit mit einer lokalen AEM-Entwicklungsumgebung arbeite
        npm install -g @adobe/aem-cli
    ```
 
-1. Klonen Sie Ihr GitHub-Projekt: Klonen Sie Ihr Projekt-Repository von GitHub mithilfe des folgenden Befehls und ersetzen Sie es durch den folgenden Befehl: <owner> mit dem Repository-Eigentümer und <repo> mit dem Repository-Namen:
+1. Klonen Sie Ihr GitHub-Projekt: Klonen Sie Ihr Projekt-Repository von GitHub mithilfe des folgenden Befehls und ersetzen Sie es durch <owner> mit dem Repository-Eigentümer und <repo> mit dem Repository-Namen:
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -281,7 +281,7 @@ Stellen Sie einen reibungslosen GitHub-Build-Prozess sicher, indem Sie potenziel
 Wenn der Fehler &quot;Pfad zum Modul kann nicht aufgelöst werden &quot;&#39;../../scripts/lib-franklin.js&#39;&quot; auftritt, navigieren Sie zum [EDS-Projekt]/blocks/forms/form.js. Aktualisieren Sie die Importanweisung, indem Sie die Datei &quot;lib-franken.js&quot;durch die Datei &quot;aem.js&quot;ersetzen.
 
 * **Linking-Fehler beheben:**
-Sollten Sie auf Linkingfehler stoßen, können Sie diese umgehen. Öffnen Sie die [EDS-Projekt]/package.json und ändern Sie das Skript &quot;lint&quot;von &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; in &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;&quot;. Speichern Sie die Datei und übertragen Sie die Änderungen auf Ihr GitHub-Projekt.
+Sollten Sie auf Linkingfehler stoßen, können Sie diese umgehen. Öffnen Sie die [EDS-Projekt]/package.json und ändern Sie das Skript &quot;lint&quot;von `"lint": "npm run lint:js && npm run lint:css"` nach `"lint": "echo 'skipping linting for now'"`. Speichern Sie die Datei und übertragen Sie die Änderungen auf Ihr GitHub-Projekt.
 
 
 ## Siehe auch
@@ -289,9 +289,4 @@ Sollten Sie auf Linkingfehler stoßen, können Sie diese umgehen. Öffnen Sie di
 * [Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Formulare direkt an Ihre Microsoft Excel- oder Google Tabellen senden](/help/edge/docs/forms/submit-forms.md)
 * [Ändern des Erscheinungsbilds Ihrer Formulare](/help/edge/docs/forms/style-theme-forms.md)
-
-
-
-
-
 
