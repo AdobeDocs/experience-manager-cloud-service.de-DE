@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: b3bfc841f0609e1e529c97dd1f11d16de561701c
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '892'
-ht-degree: 92%
+ht-degree: 86%
 
 ---
 
@@ -54,11 +54,11 @@ DAM-Bibliothekarinnen und -Bibliothekare, -Entwicklungspersonen sowie -Superbenu
 
 Informationen zum Zugriff auf die Assets-Ansicht und einige der Vereinfachungen, die sie gegenüber der Admin-Ansicht bietet, finden Sie unter [Einführung in die Assets-Ansicht](/help/assets/assets-view-introduction.md).
 
-## Integration in dokumentbasiertes Authoring für Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
+## Integration mit der dokumentbasierten Bearbeitung für Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
 
 Mit der Edge-Bereitstellung können Sie schnelle und ansprechende Websites erstellen, auf denen Autorinnen und Autoren Inhalte schnell aktualisieren und veröffentlichen können und neue Sites schnell gestartet werden können.
 
-Integrieren Sie AEM Assets in dokumentbasiertes Authoring für Edge Delivery Services, damit Website-Autorinnen und -Autoren in AEM Assets-Repositorys verfügbare Bilder beim Erstellen von Dokumenten in Microsoft Word oder Google Docs verwenden können. Weitere Informationen finden Sie unter [Integrieren von AEM Assets mit dokumentbasiertem Authoring](/help/edge/using.md#integrate-assets-edge).
+Integrieren Sie AEM Assets in Document-basiertes Authoring für Edge Delivery Services, damit Website-Autoren in AEM Assets-Repositorys verfügbare Bilder beim Erstellen von Dokumenten in Microsoft Word oder Google Docs verwenden können. Weitere Informationen finden Sie unter [Integrieren von AEM Assets in die dokumentbasierte Bearbeitung](/help/edge/using.md#integrate-assets-edge).
 
 ## Integration mit Adobe Journey Optimizer {#integration-with-ajo}
 

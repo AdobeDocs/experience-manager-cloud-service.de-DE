@@ -2,10 +2,10 @@
 title: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service
 description: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 25af074bcb32e47732b27bacf10c8d3435299440
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '2713'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -82,8 +82,7 @@ Für das Content-Management gibt es zwei Hauptsätze an Diensten für die Inhalt
 Bietet eine Web-basierte Schnittstelle (mit zugehörigen APIs) für die Verwaltung von Web-Inhalten. Dies funktioniert für beide Ansätze:
    * Headful – über den Seiten-Editor und den universellen Editor
    * Headless – über den Inhaltsfragmenteditor
-* Die dokumentbasierte Authoring-Ebene: 
-Ermöglicht die Erstellung von Inhalten mithilfe von Standardanwendungen wie:
+* Die dokumentbasierte Authoring-Ebene: Ermöglicht die Erstellung von Inhalten mithilfe von Standardanwendungen wie:
    * Microsoft Word und Excel – über SharePoint
    * Google Docs und Sheets – über Google Drive
 
@@ -93,7 +92,7 @@ Bei der Erlebnis-Bereitstellung gibt es bei der Verwendung von AEM Sites oder AE
    * Führt eine Farm mit standardmäßigen AEM-Publishern und Dispatchern aus, wodurch Web-Seiten und API-Inhalte (z. B. GraphQL), die mit veröffentlichten Inhalten zusammengestellt wurden, dynamisch gerendert werden können.
    * Basiert hauptsächlich auf der Server-seitigen Anwendungslogik.
 * Edge Delivery-Veröffentlichungsebene:
-   * Ermöglicht das dynamische Rendering von Web-Seiten und API-Inhalten aus verschiedenen Inhaltsquellen, z. B. der AEM-Autoren-Ebene oder der dokumentbasierten Authoring-Ebene.
+   * Ermöglicht das dynamische Rendering von Webseiten und API-Inhalten aus verschiedenen Inhaltsquellen, z. B. der AEM-Autorenstufe oder der dokumentbasierten Authoring-Ebene.
    * Basiert auf der Client-seitigen Anwendungslogik und wurde für maximale Leistung entwickelt.
 
 Dort befinden sich auch die wichtigsten benachbarten Dienste:
@@ -160,9 +159,9 @@ Die AEM-Vorschau-Ebene besteht aus einem einzelnen AEM-Knoten.  Dies wird zur Q
 
 Die Edge Delivery Services werden oben auf einer CDN- und Server-losen Infrastruktur betrieben, um die Seiten optimal zusammenzustellen. Wenn eine Ressource angefordert wird, ist die Server-lose Infrastruktur für die Konvertierung der veröffentlichten Inhalte in semantische HTML verantwortlich und dient als Ursprung für das CDN.
 
-Die Konversion in die semantische HTML erfolgt über den veröffentlichten Inhalt, der von der AEM Autoren-Ebene oder der dokumentbasierten Authoring-Umgebung bereitgestellt wird.
+Die Konvertierung in die semantische HTML erfolgt über den veröffentlichten Inhalt, der von der AEM Autorenstufe oder der dokumentbasierten Authoring-Umgebung bereitgestellt wird.
 
-Das folgende Diagramm zeigt, wie Sie Sites-Inhalte in Microsoft Word (dokumentbasiertes Authoring) bearbeiten und mit Edge Delivery veröffentlichen können. Es zeigt auch die herkömmliche AEM-Veröffentlichungsmethode mit den verschiedenen Editoren.
+Das folgende Diagramm zeigt, wie Sie Sites-Inhalte in Microsoft Word (Document-based Authoring ) bearbeiten und in der Edge-Bereitstellung veröffentlichen können. Es zeigt auch die herkömmliche AEM-Veröffentlichungsmethode mit den verschiedenen Editoren.
 
 ![AEM Sites as a Cloud Service – mit Edge Delivery Services](assets/architecture-aem-edge-author-publish.png "AEM Sites as a Cloud Service – mit Edge Delivery Services")
 

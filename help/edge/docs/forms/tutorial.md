@@ -4,7 +4,7 @@ description: Dieses Tutorial hilft Ihnen, ein neues Adobe Experience Manager For
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 0%
@@ -18,11 +18,11 @@ Im heutigen digitalen Zeitalter ist die Erstellung benutzerfreundlicher Formular
 
 Diese Formulare senden Daten direkt an eine Microsoft Excel- oder Google Tabellen-Datei, sodass Sie ein dynamisches Ökosystem und robuste APIs von Google Tabellen, Microsoft Excel und Microsoft SharePoint verwenden können, um gesendete Daten einfach zu verarbeiten oder einen bestehenden Geschäftsarbeitsablauf zu initiieren.
 
-AEM Forms bietet einen Block, der als Adaptiver Forms-Block bezeichnet wird und mit dem Sie mühelos Formulare erstellen können, um erfasste Daten zu erfassen und zu speichern. Sie können ein neues AEM-Projekt erstellen, das bereits mit dem adaptiven Forms-Block ausgestattet ist, oder den Adaptive Forms-Block zu einem vorhandenen AEM hinzufügen.
+AEM Forms bietet einen Block, der als Adaptiver Forms-Block bezeichnet wird und mit dem Sie mühelos Formulare erstellen können, um erfasste Daten zu erfassen und zu speichern. Sie können ein neues AEM-Projekt erstellen, das mit dem Adaptive Forms-Block vorkonfiguriert ist, oder den Adaptive Forms-Block zu einem vorhandenen AEM hinzufügen.
 
 Dieses Tutorial zu AEM Forms führt Sie durch das Erstellen, Anzeigen einer Vorschau und Veröffentlichen Ihres eigenen benutzerdefinierten Formulars mit einem neuen Adobe Experience Manager (AEM) Forms-Projekt. Außerdem lernen Sie, adaptive Forms-Bausteine zu einem bestehenden AEM hinzuzufügen.
 
-* **[Erstellen Sie ein neues AEM-Projekt, das bereits mit Adaptive Forms Block ausgestattet ist.](#create-a-new-eds-project-pre-equipped-with-adaptive-forms-block)**
+* **[Erstellen Sie ein neues AEM-Projekt, das mit Adaptive Forms Block vorkonfiguriert ist.](#create-a-new-eds-project-pre-configured-with-adaptive-forms-block)**
 * **[Adaptiven Forms-Block zu einem bestehenden AEM hinzufügen](#add-adaptive-forms-block-to-an-existing-eds-project)**
 
 
@@ -37,7 +37,7 @@ Dieses Tutorial zu AEM Forms führt Sie durch das Erstellen, Anzeigen einer Vors
 **Kopf hoch!** In diesem Tutorial werden macOS, Chrome und Visual Studio Code verwendet. Während die Schritte für andere Setups angepasst werden können, unterscheiden sich die Screenshots und spezifischen Elemente der Benutzeroberfläche möglicherweise je nach Betriebssystem, Browser und Code-Editor.
 
 
-## Erstellen Sie ein neues AEM-Projekt, das bereits mit Adaptive Forms Block ausgestattet ist.
+## Erstellen Sie ein neues AEM-Projekt, das mit Adaptive Forms Block vorkonfiguriert ist.
 
 Die AEM Forms-Vorlage für Bausteinvorlagen ermöglicht einen schnellen Einstieg in ein AEM Projekt, das mit dem Adaptiven Forms-Block vorkonfiguriert ist. Dies ist die schnellste und einfachste Methode, AEM Best Practices zu befolgen und direkt beim Erstellen Ihrer Formulare zu beginnen.
 

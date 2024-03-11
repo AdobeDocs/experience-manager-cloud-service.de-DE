@@ -2,13 +2,13 @@
 title: Methoden zum Erstellen von Inhalten in AEM
 description: Erfahren Sie mehr über die verschiedenen Möglichkeiten, Inhalte in AEM zu erstellen, und wie sie sich unterscheiden.
 feature: Authoring
-source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
+exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
 
 ---
-
 
 # Methoden zum Erstellen von Inhalten in AEM {#authoring-methods}
 
@@ -21,7 +21,7 @@ AEM as a Cloud Service bietet verschiedene Editoren, um verschiedene Inhaltstype
 * [AEM Seiten-Editor](#page-editor) - Dies ist der klassische Editor für die Inhaltserstellung in AEM, versucht und vertrauenswürdig für Tausende von Websites.
 * [AEM Inhaltsfragment-Editor](#cf-editor) - Dies ist der Editor der Wahl für die Erstellung von Headless Content.
 * [Universal Editor](#universal-editor) - Diese moderne Benutzeroberfläche ermöglicht es Ihnen, AEM Inhalte inhaltsunabhängig zu erstellen. Sie ist die erste Wahl für AEM Projekte, die Edge Delivery Services nutzen.
-* [Dokumentenbasierte Bearbeitung](#document-based) - Wenn Sie Edge Delivery Services verwenden, können Sie Ihren Inhalt als herkömmliche Dokumente wie Microsoft Word- oder Google-Dokumente erstellen, die vollständig außerhalb AEM Konsolen liegen.
+* [Dokumentenbasiertes Authoring](#document-based) - Wenn Sie Edge Delivery Services verwenden, können Sie Ihren Inhalt als herkömmliche Dokumente wie Microsoft Word- oder Google-Dokumente erstellen, die vollständig außerhalb AEM Konsolen liegen.
 
 Aufgrund der integrierten und skalierbaren AEM können diese Methoden je nach den Anforderungen Ihres Projekts ausschließlich oder in Kombination miteinander verwendet werden.
 
@@ -63,12 +63,12 @@ Der universelle Editor wird über die Konsole &quot;Sites&quot;in AEM aufgerufen
 
 Weitere Informationen zum universellen Editor finden Sie im Dokument . [Inhaltserstellung mit dem universellen Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-## Dokumentenbasierte Bearbeitung {#document-based}
+## Dokumentenbasiertes Authoring  {#document-based}
 
 Wenn Sie Edge Delivery Services verwenden, können Sie Ihren Inhalt als herkömmliche Dokumente wie Microsoft Word- oder Google-Dokumente ganz außerhalb der [AEM **Sites** Konsole.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![Bearbeiten von dokumentbasierten Inhalten](assets/authoring-methods-document.jpg)
 
-Beim dokumentbasierten Authoring können Autoren die Tools verwenden, die sie bereits kennen, und dennoch von der Geschwindigkeit und Leistung AEM Edge Delivery Services profitieren, um ihre Inhalte zu veröffentlichen. Für das dokumentbasierte Authoring ist keine Verwendung der AEM-Konsole erforderlich.
+Mit Document-basiertem Authoring können Autoren die Tools verwenden, die sie bereits kennen, und dennoch von der Geschwindigkeit und Leistung AEM Edge Delivery Services profitieren, ihre Inhalte zu veröffentlichen. Die dokumentbasierte Bearbeitung erfordert keine Verwendung der AEM-Konsole.
 
-Weitere Informationen zum dokumentbasierten Authoring finden Sie im Dokument . [Inhaltserstellung für Edge Delivery Services.](/help/edge/authoring.md)
+Weitere Informationen zur dokumentbasierten Bearbeitung finden Sie im Dokument . [Inhaltserstellung für Edge Delivery Services.](/help/edge/authoring.md)

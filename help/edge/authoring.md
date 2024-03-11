@@ -3,10 +3,10 @@ title: Erstellen von Inhalten für Edge Delivery Services
 description: Erfahren Sie, wie Content-Authoring mit Edge Delivery Services funktioniert und wie Sie AEM-Inhalte mit Edge Delivery Services erstellen.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -14,14 +14,14 @@ ht-degree: 100%
 
 Mit Edge Delivery Services ist das Authoring einfach, schnell und flexibel. Sie haben zwei Optionen zum Erstellen von Inhalten für Edge Delivery Services:
 
-* [Dokumentbasiertes Authoring](#document-based) – wie Microsoft Word oder Google Docs
+* [Dokumentenbasiertes Authoring](#document-based) - wie Microsoft Word- oder Google-Dokumente
 * [Universal Editor](#universal-editor) – Eine moderne UI für die Bearbeitung von Inhalten in AEM
 
-## Dokumentbasiertes Authoring {#document-based}
+## Dokumentenbasiertes Authoring  {#document-based}
 
-Beim dokumentbasierten Authoring können Sie mit verschiedenen Quellen wie Microsoft Word und Google Docs arbeiten. Dokumente aus diesen Quellen werden zu Seiten auf Ihrer Website. Überschriften, Listen, Bilder, Schriftelemente und Videos können von der ursprünglichen Quelle auf Ihre Website übertragen werden. Sie können Metadaten für SEO-Zwecke hinzufügen oder Blöcke verwenden, um mit strukturierten Inhalten zu arbeiten und Funktionen hinzuzufügen.
+Bei der dokumentbasierten Bearbeitung können Sie mit verschiedenen Quellen wie Microsoft Word- und Google-Dokumenten arbeiten. Dokumente aus diesen Quellen werden zu Seiten auf Ihrer Website. Überschriften, Listen, Bilder, Schriftelemente und Videos können von der ursprünglichen Quelle auf Ihre Website übertragen werden. Sie können Metadaten für SEO-Zwecke hinzufügen oder Blöcke verwenden, um mit strukturierten Inhalten zu arbeiten und Funktionen hinzuzufügen.
 
-Weitere Informationen zum dokumentbasierten Authoring finden Sie in [diesem Dokument in der Edge Delivery Services-Dokumentation.](/help/edge/docs/authoring.md)
+Weitere Informationen zur dokumentbasierten Bearbeitung finden Sie unter [Dieses Dokument finden Sie in der Edge Delivery Services-Dokumentation.](/help/edge/docs/authoring.md)
 
 ## Authoring mit dem universellen Editor {#universal-editor}
 
