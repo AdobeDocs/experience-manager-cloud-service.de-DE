@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '805'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Schritte ausgefü
 
 * Richten Sie eine [AEM von Projekten mithilfe der AEM Forms-Vorlage](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oder [Adaptiver Forms-Block zu Ihrem bestehenden AEM hinzugefügt.](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) und klonen Sie das entsprechende GitHub-Repository auf Ihrem lokalen Computer.
 In diesem Dokument wird der lokale Ordner Ihres Edge Delivery Services-Projekts (EDS) als `[EDS Project repository]`.
-* Stellen Sie sicher, dass Sie Zugriff auf Google Tabellen oder Microsoft SharePoint haben. Informationen zum Einrichten von Microsoft SharePoint als Inhaltsquelle finden Sie unter [Verwendung von Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint).
+* Stellen Sie sicher, dass Sie Zugriff auf Google Tabellen oder Microsoft SharePoint haben. Informationen zum Einrichten von Microsoft SharePoint als Inhaltsquelle finden Sie unter [Verwendung von SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
 
 
 
@@ -82,7 +82,7 @@ So fahren Sie mit der Formularerstellung fort:
 
    ![Beispielinhalt auf dem Google-Laufwerk](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. Stellen Sie sicher, dass das Blatt für den entsprechenden AEM Benutzer freigegeben ist (z. B. `helix@adobe.com`) [gemäß den für Ihr Projekt angegebenen Konfigurationen](https://www.aem.live/docs/setup-customer-sharepoint). Gewähren Sie der Benutzer Bearbeitungsberechtigung für das Blatt.
+1. Stellen Sie sicher, dass das Blatt für den entsprechenden AEM Benutzer freigegeben ist (z. B. `helix@adobe.com`) [gemäß den für Ihr Projekt angegebenen Konfigurationen](https://www.aem.live/docs/setup-customer-SharePoint). Gewähren Sie der Benutzer Bearbeitungsberechtigung für das Blatt.
 
 1. Öffnen Sie die erstellte Tabelle und benennen Sie das Standardblatt in &quot;Standard freigegeben&quot; um.
 
@@ -165,4 +165,6 @@ Bis jetzt haben Sie die Struktur des Formulars vorbereitet. Nun können Sie eine
 [Tabellenkalkulation vorbereiten](/help/edge/docs/forms/submit-forms.md) , um Daten bei der Formularübermittlung zu akzeptieren.
 
 
+## Siehe auch
 
+{{see-more-forms-eds}}

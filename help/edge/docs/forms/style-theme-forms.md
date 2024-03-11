@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '1819'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
@@ -823,3 +823,6 @@ Sie können auch einzelne Felder nach Namen ausrichten, um eindeutige Stile anzu
 
 Diese CSS-Datei enthält alle Eingabeelemente, die sich in einem Element befinden, das über die Klasse verfügt `field-otp`. Die HTML-Struktur Ihres Formulars entspricht den Konventionen des Bausteins Adaptive Forms . Dies bedeutet, dass ein Container mit der Klasse &quot;field-otp&quot;markiert ist, der das Feld mit dem Namen &quot;otp&quot;enthält.
 
+## Siehe auch
+
+{{see-more-forms-eds}}

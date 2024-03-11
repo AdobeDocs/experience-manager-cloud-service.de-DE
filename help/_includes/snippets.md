@@ -1,5 +1,5 @@
 ---
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 70%
@@ -61,7 +61,7 @@ ht-degree: 70%
 
 [!BADGE FRÜHZEITIGE ZUGRIFFSTECHNOLOGIE - Fragen Sie uns über diese Funktion von den AEM Sites Labs auf Ihrem Slack-Kanal!]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEM Authoring mit Edge Delivery Services ist eine Technologie für den frühzeitigen Zugriff."}
 
-## Mehr anzeigen {#see-more-forms-eds}
+## Siehe auch {#see-more-forms-eds}
 
 * [Erste Schritte mit AEM Forms Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
 * [Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel](/help/edge/docs/forms/create-forms.md)

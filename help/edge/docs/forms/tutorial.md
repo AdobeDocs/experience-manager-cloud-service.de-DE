@@ -4,9 +4,9 @@ description: Dieses Tutorial hilft Ihnen, ein neues Adobe Experience Manager For
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1854'
 ht-degree: 0%
 
 ---
@@ -127,16 +127,16 @@ So kopieren Sie den Beispielinhalt in Ihren eigenen Inhaltsordner und verweisen 
       Wenn Sie Microsoft SharePoint verwenden, verwendet der Ordnerpfad das folgende Format:
 
       ```HTML
-      https://<tenant>.sharepoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+      https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
       ```
 
       Beispiel:
 
       ```HTML
-      https://adobe.sharepoint.com/sites/wkndforms/Shared%20Documents/wefinance
+      https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      Weitere Informationen zum Verwalten von Dateien mit in Microsoft SharePoint finden Sie unter [Verwendung von Adobe Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint).
+      Weitere Informationen zum Verwalten von Dateien mit in Microsoft SharePoint finden Sie unter [Verwendung von Adobe SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
 
 
 
@@ -299,7 +299,5 @@ Sollten Sie auf Linkingfehler stoßen, können Sie diese umgehen. Öffnen Sie di
 
 ## Siehe auch
 
-* [Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Formulare direkt an Ihre Microsoft Excel- oder Google Tabellen senden](/help/edge/docs/forms/submit-forms.md)
-* [Ändern des Erscheinungsbilds Ihrer Formulare](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}
 

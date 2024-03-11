@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -27,21 +27,20 @@ Diese Dienste ermöglichen Ihnen Folgendes:
 
 ## Übersicht über AEM Forms Edge Delivery Services {#edge-overview}
 
-Das folgende Diagramm zeigt, wie Sie Formulare in Microsoft Excel oder Google Tabellen (Dokumentenbasiertes Authoring ) bearbeiten und in Edge Delivery Services veröffentlichen können. Außerdem wird die AEM Veröffentlichungsmethode mit dem adaptiven Forms-Editor (AEM Authoring) angezeigt.
+AEM Forms Edge Delivery services ist ein zusammenstellbarer Satz von Diensten, der Ihnen eine hohe Flexibilität bei der Erstellung von Formularen auf Ihrer Website ermöglicht. Sie können beide AEM Content Management mit [AEM Authoring](/help/forms/creating-adaptive-form-core-components.md) sowie [Dokumentenbasiertes Authoring](/help/edge/docs/forms/create-forms.md). AEM Forms Edge Delivery Services stellt auch einen Formularblock bereit, der als [Adaptiver Forms-Block](/help/edge/docs/forms/create-forms.md) , um Ihrer Edge Delivery Services-Site ein Formular hinzuzufügen.
+
+Sie können beispielsweise Formulare direkt in Microsoft Excel oder Google Tabellen erstellen und diese Tabellen werden in Formulare für Ihre Website umgewandelt. Alle neuen Formulare oder Formularinhalte, wie z. B. ein neues Formularfeld, stehen sofort auf Ihrer Website zur Verfügung, ohne dass ein Neuerstellungsprozess erforderlich ist.
+
+Das folgende Diagramm zeigt, wie Sie Formulare in Microsoft Excel oder Google Tabellen (Dokumentenbasiertes Authoring) bearbeiten und in Edge Delivery Services veröffentlichen können. Außerdem wird die AEM Veröffentlichungsmethode mit dem adaptiven Forms-Editor (AEM Authoring) angezeigt.
 
 ![Architektur von Edge Delivery](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-AEM Forms Edge Delivery services ist ein zusammenstellbarer Satz von Diensten, der Ihnen eine hohe Flexibilität bei der Erstellung von Formularen auf Ihrer Website ermöglicht. Sie können beide AEM Content Management mit [AEM Authoring](/help/forms/creating-adaptive-form-core-components.md) sowie [Dokumentenbasiertes Authoring](/help/edge/docs/forms/create-forms.md).
-
-Sie können beispielsweise Formulare direkt in Microsoft Excel oder Google Tabellen erstellen und diese Tabellen werden in Formulare für Ihre Website umgewandelt. Alle neuen Formulare oder Formularinhalte, wie z. B. ein neues Formularfeld, stehen sofort auf Ihrer Website zur Verfügung, ohne dass ein Neuerstellungsprozess erforderlich ist.
 
 AEM Forms Edge Delivery Services verwendet GitHub, damit Kunden Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Sie können beispielsweise Formulare in [Google Tabellen oder Microsoft Excel](/help/edge/docs/forms/create-forms.md) und die Komponenten Ihrer Formulare können mithilfe von CSS und JavaScript in GitHub entwickelt werden.
 
 Wenn Sie bereit sind, können Sie die [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content), eine Chrome-Browsererweiterung, um Inhaltsaktualisierungen in der Vorschau anzuzeigen und zu veröffentlichen.
 
 ![Installieren von AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
-
-AEM Forms Edge Delivery Services stellt einen Formularblock bereit, der als [Adaptiver Forms-Block](/help/edge/docs/forms/create-forms.md) , um Ihrer Edge Delivery Services-Site ein Formular hinzuzufügen.
 
 Die Wahl zwischen [Dokumentenbasiertes Authoring](#document-based-authoring-features) und [AEM Authoring](#aem-authoring-features) hängt von Ihren spezifischen Anforderungen ab.
 
