@@ -4,10 +4,10 @@ description: Dieses Tutorial hilft Ihnen, ein neues Adobe Experience Manager For
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
+source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
 workflow-type: tm+mt
-source-wordcount: '1786'
-ht-degree: 1%
+source-wordcount: '1878'
+ht-degree: 0%
 
 ---
 
@@ -106,7 +106,7 @@ So kopieren Sie den Beispielinhalt in Ihren eigenen Inhaltsordner und verweisen 
 
       ![Beispielinhalt herunterladen](/help/edge/assets/download-sample-content.png)
 
-      Die `index`, `nav`, und `footer` -Dateien definieren das grundlegende Layout Ihrer Seiten und ändern sich im gesamten Projekt nur selten. Sie haben auch eine bestimmte Struktur, die sich von den meisten anderen Inhaltsdateien unterscheidet. Indem Sie sich diese Dateien ansehen, werden Sie ein Gefühl dafür bekommen, wie Inhalte in AEM Projekte organisiert werden.
+      Die `nav` und `footer` -Dateien definieren das grundlegende Layout Ihrer Seiten und ändern sich im gesamten Projekt nur selten. Sie haben auch eine bestimmte Struktur, die sich von den meisten anderen Inhaltsdateien unterscheidet. Indem Sie sich diese Dateien ansehen, werden Sie ein Gefühl dafür bekommen, wie Inhalte in AEM Projekte organisiert werden.
 
 
    1. Laden Sie diese Dateien in den Ordner Microsoft SharePoint oder Google Drive hoch.
@@ -148,7 +148,7 @@ So kopieren Sie den Beispielinhalt in Ihren eigenen Inhaltsordner und verweisen 
 
       Dadurch wird Ihr Inhaltsordner mit Ihrer Website verbunden. Nach der Aktualisierung des Verweises treten möglicherweise anfänglich Fehler vom Typ &quot;404 nicht gefunden&quot;auf. Dies liegt daran, dass Ihre Inhalte noch nicht in der Vorschau angezeigt wurden. Im nächsten Abschnitt wird erläutert, wie Sie mit der Bearbeitung und Vorschau Ihres Inhalts beginnen können.
 
-      ![Aktualisierte Datei &quot;fsatab.yaml&quot;bestätigen](/help/edge/assets/aem-forms-project-folder-error.png)
+
 
 ### Vorschau erstellen und Inhalt veröffentlichen
 
@@ -204,9 +204,22 @@ Der Beispielinhalt enthält eine &quot;Anfrage&quot;-Vorlage, die als Vorlage f�
 
 ![Anfrageformular](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-Beginnen wir mit der Aktualisierung einer Feldbeschriftung. Öffnen Sie das &#39;Anfrage&#39;-Blatt zur Bearbeitung, ändern Sie den Titel der Senden-Schaltfläche in `Let's Chat`und verwenden Sie den Sidekick, um ihn zu veröffentlichen.
+Beginnen wir mit der Aktualisierung einer Feldbeschriftung. Öffnen Sie das &#39;Anfrage&#39;-Blatt zur Bearbeitung, ändern Sie den Titel der Senden-Schaltfläche in `Let's Chat` und verwenden Sie AEM Sidekick, um die Datei in der Vorschau anzuzeigen und zu veröffentlichen.
 
 ![Anfrageformular](/help/edge/assets/enquiry-form-preview-publish.png)
+
+Wenn Sie die Datei in der Vorschau anzeigen oder veröffentlichen, wird eine JSON-Version der Datei auf einer neuen Registerkarte angezeigt. Kopieren Sie die Vorschau-URL (.hlx.page) oder die Veröffentlichungs-URL (.hlx.live) der Datei.
+
+![JSON der Formulartabelle](/help/edge/assets//preview-and-publish-enquiry-form.png)
+
+Öffnen Sie die `enquiry` und ersetzen Sie die URL im Formularblock durch die URL der im vorherigen Schritt kopierten Datei. Stellen Sie sicher, dass die URL ein Hyperlink ist.
+
+![Abfragedatei mit der .json-URL der URL des Arbeitsblatts](/help/edge/assets/enquiry-doc-to-embed-form.png)
+
+Verwenden Sie AEM Sidekick, um das Anfragedokument in der Vorschau anzuzeigen und zu veröffentlichen.
+
+![Abfragedatei mit der .json-URL der URL des Arbeitsblatts](/help/edge/assets/preview-and-publish-enquiry-document.png)
+
 
 Um eine Vorschau des aktualisierten Anfrageformulars anzuzeigen, gehen Sie zur folgenden URL:
 
