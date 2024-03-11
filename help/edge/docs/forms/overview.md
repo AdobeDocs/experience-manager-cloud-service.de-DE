@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: 67d9eaaf18725403f6a152b04e022cdca6902de0
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '932'
 ht-degree: 2%
 
 ---
@@ -41,6 +41,13 @@ Edge Delivery Services nutzt GitHub, damit Kundinnen und Kunden Code direkt übe
 ![Installieren von AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
 
 AEM Forms Edge Delivery Services stellt einen Formularblock bereit, der als [Adaptiver Forms-Block](/help/edge/docs/forms/create-forms.md) , um Ihrer Edge Delivery Services-Site ein Formular hinzuzufügen.
+
+Die Wahl zwischen [Dokumentenbasiertes Authoring](#document-based-authoring-features) und [AEM Authoring](#aem-authoring-features) hängt von Ihren spezifischen Anforderungen ab.
+
+Für einfache Formulare, die einfach grundlegende Informationen wie Namen und E-Mails erfassen (denken Sie an Formulare, Formulare zur Lead-Generierung oder Formular für Serviceanfragen) und in denen Sie nur die Daten benötigen, um zu einer Tabelle zu gelangen, wird die [Dokumentenbasiertes Authoring](/help/edge/docs/forms/create-forms.md) ist perfekt geeignet. Sie können diese Formulare wie ein Dokument in Google-Dokumenten erstellen.
+
+Wenn Ihre Formulare komplexer werden, z. B. mehrere Bedienfelder, komplexe Regeln und Geschäftslogik, Datenmanipulationen, Integration in externe Systeme oder optimierte Workflows mithilfe AEM Funktionen, dann [AEM Authoring](/help/forms/creating-adaptive-form-core-components.md) ist eine bessere Option.
+
 
 ### Wichtige Funktionen der Dokumentenbearbeitung und AEM Authoring
 
@@ -119,6 +126,13 @@ AEM Authoring (mit dem adaptiven Forms-Editor) bietet eine WYSIWYG-Oberfläche z
 * Möglichkeit zur Konfiguration mehrerer Sendeaktionen für die Verarbeitung von Formularübermittlungen, einschließlich der Übermittlung von Daten an Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics und vielen weiteren Datenquellen.
 
 Im Wesentlichen baut AEM Authoring auf der Grundlage der dokumentbasierten Bearbeitung auf und bietet ein erweitertes Toolkit für die Erstellung und Verwaltung komplexer Formulare.
+
+### Authoring-Workflow
+
+![Dokumentenbasiertes Authoring](/help/edge/assets/document-based-authoring-workflow.png)
+
+![AEM Authoring](/help/edge/assets/aem-authoring-workflow.png)
+
 
 ## Erstellen von Formularen
 
