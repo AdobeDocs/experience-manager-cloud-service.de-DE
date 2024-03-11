@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '803'
 ht-degree: 1%
 
 ---
@@ -28,8 +28,8 @@ Diese Formulare senden Daten direkt an eine Microsoft Excel- oder Google Tabelle
 Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
 * Richten Sie eine [AEM von Projekten mithilfe der AEM Forms-Vorlage](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) oder [Adaptiver Forms-Block zu Ihrem bestehenden AEM hinzugefügt.](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) und klonen Sie das entsprechende GitHub-Repository auf Ihrem lokalen Computer.
-In diesem Dokument wird der lokale Ordner Ihres Edge Delivery Services-Projekts (EDS) als `[EDS Project repository]` .
-* Stellen Sie sicher, dass Sie Zugriff auf Google Tabellen oder Microsoft SharePoint haben. Informationen zum Einrichten von Microsoft SharePoint als Inhaltsquelle finden Sie unter [Verwendung von Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
+In diesem Dokument wird der lokale Ordner Ihres Edge Delivery Services-Projekts (EDS) als `[EDS Project repository]`.
+* Stellen Sie sicher, dass Sie Zugriff auf Google Tabellen oder Microsoft SharePoint haben. Informationen zum Einrichten von Microsoft SharePoint als Inhaltsquelle finden Sie unter [Verwendung von Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
 
@@ -80,6 +80,8 @@ So fahren Sie mit der Formularerstellung fort:
 
 1. Erstellen Sie eine Microsoft Excel-Arbeitsmappe oder ein Google-Blatt an einer beliebigen Stelle in Ihrem AEM Edge-Bereitstellungsprojektverzeichnis. Erstellen Sie beispielsweise eine Tabelle mit dem Namen `enquiry` im Projektverzeichnis AEM Edge-Bereitstellung auf Google Drive.
 
+   ![Beispielinhalt auf dem Google-Laufwerk](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+
 1. Stellen Sie sicher, dass das Blatt für den entsprechenden AEM Benutzer freigegeben ist (z. B. `helix@adobe.com`) [gemäß den für Ihr Projekt angegebenen Konfigurationen](https://www.aem.live/docs/setup-customer-sharepoint). Gewähren Sie der Benutzer Bearbeitungsberechtigung für das Blatt.
 
 1. Öffnen Sie die erstellte Tabelle und benennen Sie das Standardblatt in &quot;Standard freigegeben&quot; um.
@@ -87,6 +89,7 @@ So fahren Sie mit der Formularerstellung fort:
    ![Standard-Arbeitsblatt in &quot;shared-default&quot;umbenennen](/help/edge/assets/rename-sheet-to-shared-default.png)
 
 1. Fügen Sie zum Hinzufügen der Formularfelder Zeilen und Spaltenüberschriften in das &quot;shared-default&quot;-Blatt ein. Jede Zeile sollte eine [Formularfeld](/help/edge/docs/forms/form-components.md#available-components), wobei die Spaltenüberschriften das entsprechende Feld definieren [properties](/help/edge/docs/forms/form-components.md#components-properties).
+
 
    Für einen schnellen Start sollten Sie den Inhalt der [Abfragetabelle](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) in Ihre Tabelle ein. Nachdem Sie den Inhalt kopiert haben, speichern Sie das Arbeitsblatt.
 
@@ -118,19 +121,24 @@ So fahren Sie mit der Formularerstellung fort:
 +++ Schritt 2: Anzeigen einer Vorschau des Formulars mithilfe Ihrer Edge Delivery Services (EDS)-Seite.
 
 
-Bis jetzt haben Sie den Adaptive Forms Block zu Ihrem EDS-Projekt hinzugefügt und die Formularstruktur vorbereitet. Nun können Sie eine Vorschau des Formulars anzeigen:
+Bis jetzt haben Sie die Struktur des Formulars vorbereitet. Nun können Sie eine Vorschau des Formulars anzeigen:
 
-1. **Zugriff auf Ihr Projektverzeichnis:** Öffnen Sie Ihr Microsoft SharePoint- oder Google Drive-Konto und navigieren Sie zu Ihrem AEM Edge Delivery-Projektverzeichnis.
+1. Öffnen Sie Ihr Microsoft SharePoint- oder Google Drive-Konto und navigieren Sie zu Ihrem AEM Edge Delivery-Projektverzeichnis.
 
-1. **Betten Sie das Formular in ein Dokument ein:** Öffnen Sie eine Dokumentdatei (z. B. eine Indexdatei), um das Formular einzubetten. Alternativ können Sie ein neues Dokument erstellen.
 
-1. **Navigieren Sie zum gewünschten Speicherort:** Wechseln Sie an die gewünschte Stelle im Dokument, an der Sie das Formular hinzufügen möchten.
 
-1. **Fügen Sie den adaptiven Forms-Block hinzu:** So erstellen Sie einen Formularblock zum Rendern des Formulars. Wählen Sie &quot;Einfügen&quot;> &quot;Tabelle&quot;und erstellen Sie eine Spalte (zwei Zeilentabellen). Nennen Sie die Tabelle &quot;Formular&quot;und fügen Sie die Vorschau-URL in die zweite Zeile ein. Stellen Sie sicher, dass die URL als Hyperlink formatiert ist, nicht als Nur-Text, wie unten dargestellt:
+1. Öffnen Sie eine Dokumentdatei (z. B. eine Indexdatei), um das Formular einzubetten. Alternativ können Sie ein neues Dokument erstellen.
+
+1. Wechseln Sie an die gewünschte Stelle im Dokument, an der Sie das Formular hinzufügen möchten.
+
+1. So erstellen Sie einen Formularblock zum Rendern des Formulars. Wählen Sie &quot;Einfügen&quot;> &quot;Tabelle&quot;und erstellen Sie eine Spalte (zwei Zeilentabellen). Nennen Sie die Tabelle &quot;Formular&quot;und fügen Sie die Vorschau-URL in die zweite Zeile ein. Stellen Sie sicher, dass die URL als Hyperlink formatiert ist, nicht als Nur-Text, wie unten dargestellt:
 
    | Formular |
    |---|
-   | [https://main—portal—wkndforms.hlx.live/inquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json) |
+   | [https://main—wefinance—wkndforms.hlx.live/inquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+
+
+   ![Adaptiven Forms-Block zu Ihrer Webseite hinzufügen](/help/edge/assets/add-adaptive-forms-block.png)
 
    Dieser Block dient als Platzhalter, in den das Formular eingebettet ist. Fügen Sie in der zweiten Zeile des Blocks die Vorschau-URL Ihrer `<form>.json` als Hyperlink.
 
