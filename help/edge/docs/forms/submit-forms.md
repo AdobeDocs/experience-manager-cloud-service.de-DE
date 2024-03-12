@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 # Vorbereiten der Tabelle auf die Datenaufnahme
 
 
-Sobald du [das Formular erstellt und in der Vorschau angezeigt wurde](/help/edge/docs/forms/create-forms.md)ist es an der Zeit, die entsprechende Tabelle so zu aktivieren, dass sie Daten erhält.
+Sobald du [das Formular erstellt und in der Vorschau angezeigt wurde](/help/edge/docs/forms/create-forms.md)ist es an der Zeit, die entsprechende Tabelle so zu aktivieren, dass sie Daten erhält. Sie können das Tabellenblatt manuell aktivieren, um Daten zu akzeptieren, oder Admin-APIs verwenden, um die Akzeptanz von Daten in einer Tabelle zu ermöglichen.
 
 ![Dokumentenbasiertes Authoring-Ökosystem](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -24,7 +24,10 @@ Sobald du [das Formular erstellt und in der Vorschau angezeigt wurde](/help/edge
 
 -->
 
-So aktivieren Sie das Arbeitsblatt:
+
+## Manuelles Aktivieren des Arbeitsblatts für die Datenaufnahme
+
+So aktivieren Sie die Akzeptanz von Daten im Arbeitsblatt
 
 1. Öffnen Sie das Arbeitsblatt, in dem sich Ihr Formular befindet, und fügen Sie ein neues Blatt hinzu, indem Sie es umbenennen. `incoming`.
 
@@ -61,8 +64,7 @@ Nachdem das Blatt für den Empfang von Daten eingerichtet wurde, können Sie [Vo
 >
 >  Die &quot;freigegebenen Standard&quot;-Tabellen dürfen niemals persönlich identifizierbare Informationen oder vertrauliche Daten enthalten, die Ihnen nicht mit dem öffentlichen Zugriff vertraut sind.
 
-
-## (Optional) Verwenden Sie Admin-APIs, um die Akzeptanz von Daten in einer Tabelle zu ermöglichen
+### Verwenden Sie Admin-APIs, um die Akzeptanz von Daten in einer Tabelle zu ermöglichen
 
 Sie können auch eine POST-Anfrage an das Formular senden, damit es Daten aufnehmen und Kopfzeilen für die `incoming` Blatt. Nach Erhalt der POST-Anfrage analysiert der Dienst den Anforderungstext und generiert autonom die für die Datenerfassung erforderlichen Kopfzeilen und Arbeitsblätter.
 
@@ -151,7 +153,6 @@ So verwenden Sie Admin-APIs, um eine Tabelle für die Datenaufnahme zu aktiviere
    Ihr Formular kann jetzt Daten annehmen. Beachten Sie auch die folgenden Änderungen in Ihrer Tabelle:
 
 ## Automatische Änderungen am Blatt, sobald die Datenakzeptierung aktiviert wurde.
-
 
 Nachdem das Arbeitsblatt auf den Empfang von Daten eingestellt wurde, beachten Sie die folgenden Änderungen in Ihrem Arbeitsblatt:
 
@@ -284,7 +285,7 @@ Es gibt verschiedene Möglichkeiten, die Formulardaten im Hauptteil der POST zu 
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-Als Nächstes können Sie die Dankesnachricht anpassen, [Konfigurieren einer Dankeseite](/help/edge/docs/forms/thank-you-page-form.md)oder [set redirects](/help/edge/docs/forms/thank-you-page-form.md).
+Als Nächstes können Sie [Dankesnachricht anpassen](/help/edge/docs/forms/thank-you-page-form.md).
 
 ## Siehe auch
 

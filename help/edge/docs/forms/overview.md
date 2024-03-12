@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 0%
@@ -84,7 +84,7 @@ Im Wesentlichen [AEM Authoring](/help/forms/creating-adaptive-form-core-componen
 >
 > Die AEM Authoring-Funktion ist im Rahmen des Programms für die frühe Adoptimierung verfügbar. Wenn Sie Interesse haben, senden Sie eine kurze E-Mail von Ihrer Arbeitsadresse an aem-forms-ea@adobe.com , um Zugriff auf die Funktion anzufordern.
 
-### AEM Forms Edge Delivery Services: Authoring Veröffentlichung und Übermittlung von Forms
+### AEM Forms Edge Delivery Services: Authoring, Publishing und Übermittlung von Forms
 
 Die folgenden Diagramme illustrieren den Prozess des Erstellens, Veröffentlichen und Übermittlens von Formularen mithilfe der Dokumentenbearbeitung und AEM Authoring.
 

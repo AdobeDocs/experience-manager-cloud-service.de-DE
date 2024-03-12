@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 2%
+source-wordcount: '937'
+ht-degree: 3%
 
 ---
 
@@ -64,3 +64,6 @@ Jede Formularkomponente enthält verschiedene Eigenschaften, mit denen Sie das V
 | Aktiviert | Kontrollkästchen, Radio | Bestimmt, ob das Feld standardmäßig ausgewählt ist. Das angekreuzte Attribut ist eine boolesche Eigenschaft, die mit Kontrollkästchen und Optionsfeldern verwendet wird. Wenn der Wert auf &quot;true&quot;gesetzt ist, zeigt dies an, dass das Feld beim Laden des Formulars standardmäßig ausgewählt ist. |
 | Fieldset | Alle | Gruppiert Felder, um visuell unterschiedliche Abschnitte in einem Formular zu erstellen. Das fieldset -Element gruppiert verwandte Felder in einem Formular, wobei es sie visuell trennt, um die Organisation und das Benutzererlebnis zu verbessern. </br> Um eine Gruppe von Feldern in einem Feldsatz zu organisieren, verwenden Sie einfach die `fieldset` -Eigenschaft und geben Sie das Namensattribut an. Im folgenden Beispiel wird gezeigt, wie Optionsfelder in einem einzelnen Feldset zur besseren Organisation eingekapselt werden. ![Beispiel für Feldsatz](/help/edge/assets/fieldset-example.png) |
 
+## Siehe auch
+
+{{see-more-forms-eds}}
