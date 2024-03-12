@@ -1,13 +1,13 @@
 ---
 title: Inhaltsmodellierung für AEM Authoring mit Edge Delivery Services-Projekten
 description: Erfahren Sie, wie die Inhaltsmodellierung für AEM Authoring mit Edge Delivery Services-Projekten funktioniert und wie Sie Ihre eigenen Inhalte modellieren.
-source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
+exl-id: e68b09c5-4778-4932-8c40-84693db892fd
+source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
 workflow-type: tm+mt
-source-wordcount: '2097'
-ht-degree: 0%
+source-wordcount: '2095'
+ht-degree: 1%
 
 ---
-
 
 # Inhaltsmodellierung für AEM Authoring mit Edge Delivery Services-Projekten {#content-modeling}
 
@@ -21,8 +21,8 @@ Projekte, die AEM Authoring mit Edge Delivery Services verwenden, erben den Gro�
 
 Bevor Sie mit der Modellierung von Inhalten für Ihr Projekt beginnen, lesen Sie zunächst die folgende Dokumentation.
 
-* [Erste Schritte - Tutorial für Entwickler](/help/edge/developer/tutorial.md)
-* [Markup, Abschnitte, Blöcke und automatisches Blockieren](/help/edge/developer/markup-sections-blocks.md)
+* [Erste Schritte – Entwicklertutorial](/help/edge/developer/tutorial.md)
+* [Markup, Abschnitte, Blöcke und automatische Blockerstellung](/help/edge/developer/markup-sections-blocks.md)
 * [Blocksammlung](/help/edge/developer/block-collection.md)
 
 Es ist wichtig, diese Konzepte zu verstehen, um ein überzeugendes Inhaltsmodell zu entwickeln, das auf inhaltsquellenunabhängige Weise funktioniert. Dieses Dokument enthält Details zu den Mechanismen, die speziell für AEM Authoring implementiert wurden.
@@ -40,7 +40,7 @@ In AEM wird dieser Inhalt als Komponenten mit sehr einfachen, vordefinierten Mod
 
 Das Modell dieser Komponenten ist Teil der [Vorlage für AEM Authoring mit Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
 
-## Blöcke {#blocks}
+## Bausteine {#blocks}
 
 Blöcke werden verwendet, um reichhaltigere Inhalte mit bestimmten Stilen und Funktionen zu erstellen. Im Gegensatz zu Standardinhalten erfordern Blöcke keine zusätzliche Semantik. Blöcke können mit [Komponenten im AEM Seiteneditor.](/help/implementing/developing/components/overview.md)
 
@@ -351,7 +351,7 @@ Alles andere wird als Text gerendert.
 
 #### Feldausblendung {#field-collapse}
 
-Beim Ausblenden von Feldern werden mehrere Feldwerte basierend auf einer Namenskonvention mithilfe der Suffixe zu einem einzigen semantischen Element zusammengefasst. `Title`, `Type`, `Alt`, und `Text` (Groß-/Kleinschreibung beachten). Jede Eigenschaft, die mit einem dieser Suffixe endet, gilt nicht als Wert, sondern als Attribut einer anderen Eigenschaft.
+Beim Ausblenden von Feldern werden mehrere Feldwerte basierend auf einer Namenskonvention mithilfe der Suffixe zu einem einzigen semantischen Element zusammengefasst. `Title`, `Type`, `MimeType`, `Alt`, und `Text` (Groß-/Kleinschreibung beachten). Jede Eigenschaft, die mit einem dieser Suffixe endet, gilt nicht als Wert, sondern als Attribut einer anderen Eigenschaft.
 
 ##### Bilder {#image-collapse}
 
@@ -624,7 +624,13 @@ Stellen Sie sicher, dass das Arbeitsblatt Ihrer Pfadzuordnung hinzugefügt wird,
 
 ### Seiteneigenschaften {#page-properties}
 
-Es ist auch möglich, ein Komponentenmodell für Seitenmetadaten zu definieren, das dem Autor als Registerkarte des Dialogfelds &quot;Seiteneigenschaften&quot;von AEM Sites zur Verfügung gestellt wird.
+Viele der in AEM verfügbaren Standardseiteneigenschaften werden den entsprechenden Seitenmetadaten in einem Dokument zugeordnet. Das umfasst beispielsweise `title`, `description`, `robots`, `canonical url` oder `keywords`. Einige AEM-spezifische Eigenschaften sind ebenfalls verfügbar:
+
+* `cq:lastModified` as `modified-time` im ISO8601-Format
+* Der Zeitpunkt der letzten Veröffentlichung des Dokuments als `published-time` im ISO8601-Format
+* `cq:tags` as `cq-tags` als kommagetrennte Liste der Tag-IDs.
+
+Es ist auch möglich, ein Komponentenmodell für benutzerdefinierte Seitenmetadaten zu definieren, das dem Autor als Registerkarte des Dialogfelds &quot;Seiteneigenschaften&quot;von AEM Sites zur Verfügung gestellt wird.
 
 Erstellen Sie dazu ein Komponentenmodell mit der ID `page-metadata`.
 
@@ -633,15 +639,10 @@ Erstellen Sie dazu ein Komponentenmodell mit der ID `page-metadata`.
   "id": "page-metadata",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "theme",
       "label": "Theme"
     }
   ]
 }
 ```
-
-Es gibt einige Feldnamen mit einer speziellen Bedeutung, die bei der Bereitstellung der Benutzeroberfläche des Bearbeitungsdialogfelds übersprungen werden:
-
-* **`cq:tags`** - Standardmäßig `cq:tags` werden nicht zu den Metadaten hinzugefügt. Fügen Sie sie zum `page-metadata` -Modell fügt die Tag-IDs als kommagetrennte Liste als `tags` Meta-Tag an den Kopf.
-* **`cq:lastModified`** - `cq:lastModified` fügt seine Daten als `last-modified` in den Kopf.
