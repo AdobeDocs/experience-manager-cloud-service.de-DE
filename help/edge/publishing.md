@@ -3,12 +3,13 @@ title: Veröffentlichen von Inhalten für Edge Delivery Services
 description: Erfahren Sie, wie die Inhaltsveröffentlichung mit Edge Delivery Services funktioniert und wie Sie AEM-Inhalte mit Edge Delivery Services veröffentlichen.
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
-source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
+source-git-commit: 3ee1ba83518c3d4fba59b0c98b31e5c63a2eb6ab
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 87%
+source-wordcount: '295'
+ht-degree: 56%
 
 ---
+
 
 # Veröffentlichen von Inhalten für Edge Delivery Services {#publishing-edge}
 
@@ -30,10 +31,14 @@ Der Informationsfluss beim Veröffentlichen sieht folgendermaße aus. Sobald der
 ![Informationsfluss beim Veröffentlichen aus AEM in Edge Delivery Services](assets/publishing-flow.png)
 
 1. Der Inhaltsautor oder die Inhaltsautorin veröffentlicht AEM-Inhalte im universellen Editor.
-1. Ein Veröffentlichungsereignis wird an die Adobe-Pipeline-Warteschlange übergeben.
-1. Der Edge Delivery-Veröffentlichungs-Service leitet die relevanten Ereignisse an die Edge Delivery-Admin-API weiter.
-1. Edge Delivery ruft semantische HTML aus AEM Author ab und erfasst sie.
+1. Ein Veröffentlichungsereignis wird in die Adobe-Pipeline-Warteschlange verschoben.
+1. Der Edge Delivery Services-Veröffentlichungsdienst leitet die relevanten Ereignisse an die Edge Delivery Services-Admin-API weiter.
+1. Edge Delivery ruft semantische HTML von AEM Autor ab und erfasst sie.
 1. AEM wird mit dem Veröffentlichungsstatus aktualisiert.
+
+>[!NOTE]
+>
+>Standardmäßig ist die Edge Delivery Services Admin-API nicht geschützt und kann verwendet werden, um Dokumente ohne Authentifizierung zu veröffentlichen oder die Veröffentlichung rückgängig zu machen. Um die Authentifizierung für die Admin-API zu konfigurieren, siehe [Konfigurieren der Authentifizierung für Autoren](https://www.aem.live/docs/authentication-setup-authoring)muss Ihr Projekt mit einem API_KEY ausgestattet sein, der Zugriff auf den Veröffentlichungsdienst gewährt. [Wenden Sie sich an das Adobe-Team unter Slack.](/help/edge/docs/slack.md) für Leitlinien.
 
 ## So beginnen Sie: {#how-to-get-started}
 
