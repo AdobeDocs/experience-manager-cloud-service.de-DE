@@ -2,7 +2,7 @@
 title: Registrierung, Anmeldung und Anwenderprofil
 description: In diesem Abschnitt erfahren Sie mehr über Registrierung, Anmeldung, Anwenderdaten und Gruppensynchronisierung für AEM as a Cloud Service.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 100%
@@ -37,7 +37,7 @@ Es kann benutzerdefinierter Registrierungs-Code geschrieben werden, der mindeste
 
 1. Anzeigen einer benutzerdefinierten AEM-Komponente, die Registrierungsinformationen erfasst
 1. Verwenden eines ordnungsgemäß bereitgestellten Service-Anwenders bei der Übermittlung, um Folgendes zu erreichen:
-   1. Mithilfe einer der `findAuthorizables ()`-Methoden der UserManager-API überprüfen, ob noch kein Anwender vorhanden ist
+   1. Mithilfe einer der `findAuthorizables()`-Methoden der UserManager-API überprüfen, ob noch kein Anwender vorhanden ist
    1. Erstellen eines Anwenderdatensatzes mithilfe einer der `createUser()`-Methoden der UserManager-API
    1. Beibehalten aller mit den `setProperty()`-Methoden der Authorizable-Schnittstelle erfassten Profildaten
 1. Optionale Abläufe, etwa die Anforderung, dass Anwender ihre E-Mail-Adresse validieren müssen

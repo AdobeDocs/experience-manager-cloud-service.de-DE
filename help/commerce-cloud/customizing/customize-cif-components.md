@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '2298'
 ht-degree: 97%
@@ -146,7 +146,7 @@ Verwenden Sie anschließend eine GraphQL-IDE, um zu prüfen, ob das `eco_friendl
 
    ```json
      {
-       products (
+       products(
        filter: { sku: { eq: "YOUR_SKU" } }
        ) {
            items {
@@ -312,7 +312,7 @@ Verwenden Sie [eine IDE Ihrer Wahl](https://experienceleague.adobe.com/docs/expe
        Integer ecoFriendlyValue;
        try {
            ecoFriendlyValue = productRetriever.fetchProduct().getAsInteger(ECO_FRIENDLY_ATTRIBUTE);
-           if(ecoFriendlyValue != null && ecoFriendlyValue.equals (Integer.valueOf(1))) {
+           if(ecoFriendlyValue != null && ecoFriendlyValue.equals(Integer.valueOf(1))) {
                LOGGER.info("*** Product is Eco Friendly**");
                return true;
            }

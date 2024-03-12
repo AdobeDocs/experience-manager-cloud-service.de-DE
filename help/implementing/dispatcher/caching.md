@@ -3,7 +3,7 @@ title: Caching in AEM as a Cloud Service
 description: Erfahren Sie mehr über die Caching-Grundlagen in AEM as a Cloud Service.
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 100%
@@ -434,7 +434,7 @@ public class InvalidatedHandler implements EventHandler {
 
         String distributionType = (String) event.getProperty(DISTRIBUTION_TYPE);
 
-        if (INVALIDATE.name().equals (distributionType)) {
+        if (INVALIDATE.name().equals(distributionType)) {
             boolean isLeader = discoveryService.getTopology().getLocalInstance().isLeader();
             // process the OSGi event on the leader author instance
             if (isLeader) {
@@ -472,11 +472,11 @@ Der Flush-Agent kann normalerweise durch OSGi-Ereignisse oder Workflows ausgelö
 
 ```
 String[] paths = …
-ReplicationOptions options = new ReplicationOptions ();
-options.setSynchronous (true);
+ReplicationOptions options = new ReplicationOptions();
+options.setSynchronous(true);
 options.setFilter( new AgentFilter {
   public boolean isIncluded (Agent agent) {
-   return agent.getId().equals ("flush");
+   return agent.getId().equals("flush");
   }
 });
 

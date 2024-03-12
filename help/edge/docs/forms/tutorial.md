@@ -4,10 +4,10 @@ description: Dieses Tutorial hilft Ihnen, ein neues Adobe Experience Manager For
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '1854'
-ht-degree: 0%
+source-wordcount: '1850'
+ht-degree: 1%
 
 ---
 
@@ -18,12 +18,9 @@ Im heutigen digitalen Zeitalter ist die Erstellung benutzerfreundlicher Formular
 
 Diese Formulare senden Daten direkt an eine Microsoft Excel- oder Google Tabellen-Datei, sodass Sie ein dynamisches Ökosystem und robuste APIs von Google Tabellen, Microsoft Excel und Microsoft SharePoint verwenden können, um gesendete Daten einfach zu verarbeiten oder einen bestehenden Geschäftsarbeitsablauf zu initiieren.
 
-AEM Forms bietet einen Block, der als Adaptiver Forms-Block bezeichnet wird und mit dem Sie mühelos Formulare erstellen können, um erfasste Daten zu erfassen und zu speichern. Sie können ein neues AEM-Projekt erstellen, das mit dem Adaptive Forms-Block vorkonfiguriert ist, oder den Adaptive Forms-Block zu einem vorhandenen AEM hinzufügen.
+AEM Forms bietet einen Block, der als Adaptiver Forms-Block bezeichnet wird und mit dem Sie mühelos Formulare erstellen können, um erfasste Daten zu erfassen und zu speichern. Sie können [ein neues AEM mit vorkonfiguriertem Adaptive Forms Block erstellen](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oder [Fügen Sie den adaptiven Forms-Block zu einem bestehenden AEM hinzu.](#add-adaptive-forms-block-to-your-existing-aem-project).
 
-Dieses Tutorial zu AEM Forms führt Sie durch das Erstellen, Anzeigen einer Vorschau und Veröffentlichen Ihres eigenen benutzerdefinierten Formulars mit einem neuen Adobe Experience Manager (AEM) Forms-Projekt. Außerdem lernen Sie, adaptive Forms-Bausteine zu einem bestehenden AEM hinzuzufügen.
-
-* **[Erstellen Sie ein neues AEM-Projekt, das mit Adaptive Forms Block vorkonfiguriert ist.](#create-a-new-eds-project-pre-configured-with-adaptive-forms-block)**
-* **[Adaptiven Forms-Block zu einem bestehenden AEM hinzufügen](#add-adaptive-forms-block-to-an-existing-eds-project)**
+Dieses Tutorial zu AEM Forms führt Sie durch das Erstellen, Anzeigen einer Vorschau und Veröffentlichen Ihres eigenen benutzerdefinierten Formulars mit einem neuen Adobe Experience Manager (AEM) Forms-Projekt.
 
 
 
@@ -79,7 +76,7 @@ Die AEM Forms-Vorlage für Bausteinvorlagen ermöglicht einen schnellen Einstieg
 
 ### Verknüpfen Ihrer eigenen Inhaltsquelle
 
-Ihr neu erstelltes GitHub-Repository verweist auf [Beispielinhalt, der im Ordner &quot;Google Drive&quot;gespeichert ist](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Dieser schreibgeschützte Inhalt bietet einen guten Ausgangspunkt für Ihre Formulare. Sie können es in Ihr eigenes Google-Laufwerk kopieren und an Ihre Anforderungen anpassen.
+Ihr neu erstelltes GitHub-Repository verweist auf [Beispielinhalt, der im Ordner &quot;Google Drive&quot;gespeichert ist](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). Dieser schreibgeschützte Inhalt bietet einen guten Ausgangspunkt für Ihre Formulare. Sie können es in Ihr eigenes Google-Laufwerk kopieren und an Ihre Anforderungen anpassen.
 
 ![Beispielinhalt auf dem Google-Laufwerk](/help/edge/assets/folder-with-sample-content.png)
 
@@ -194,8 +191,6 @@ So zeigen Sie eine Vorschau von nicht veröffentlichten Inhalten an:
 
    Wenn das Repository Ihres Projekts beispielsweise &quot;wefinance&quot;heißt, befindet es sich unter dem Kontoinhaber &quot;wkndforms&quot;und Sie verwenden die &quot;main&quot;-Verzweigung, lautet die URL:
 
-
-
    [https://main—wefinance—wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
 
 ### Formular erstellen
@@ -274,9 +269,16 @@ Herzlichen Glückwunsch! Sie haben Ihre lokale Entwicklungsumgebung erfolgreich 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-Wenn Sie über ein vorhandenes AEM-Projekt verfügen, können Sie den Block Adaptive Forms in Ihr aktuelles Projekt integrieren, um mit der Formularerstellung zu beginnen. So integrieren Sie:
+Wenn Sie über ein vorhandenes AEM-Projekt verfügen, können Sie den Block Adaptive Forms in Ihr aktuelles Projekt integrieren, um mit der Formularerstellung zu beginnen.
 
-1. Klonen Sie das Adaptive Forms Block-Repository: https://github.com/adobe-rnd/aem-boilerplate-forms auf Ihrem Computer.
+>
+>
+>
+> Dieser Schritt gilt für Projekte, die mit dem [AEM](https://github.com/adobe/aem-boilerplate). Wenn Sie Ihr AEM Projekt mit dem [AEM Forms-Vorlage](https://github.com/adobe-rnd/aem-boilerplate-forms)können Sie diesen Schritt überspringen.
+
+So integrieren Sie:
+
+1. Klonen Sie das Adaptive Forms Block-Repository: [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) auf Ihren Computer.
 
 1. Suchen Sie im heruntergeladenen Ordner nach dem `blocks/form` Ordner. Kopieren Sie diesen Ordner. Navigieren Sie nun zur lokalen AEM Ihres Projekts. `blocks` und fügen Sie den kopierten Formularordner hier ein.
 

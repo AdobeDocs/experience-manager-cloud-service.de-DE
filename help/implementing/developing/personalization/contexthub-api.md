@@ -2,10 +2,10 @@
 title: Verweis auf die ContextHub-JavaScript-API
 description: Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die ContextHub-Komponente zur Seite hinzugefügt wurde.
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '4602'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Das ContextHub-Objekt bietet Zugriff auf alle Stores.
 
 ### Funktionen (ContextHub) {#functions-contexthub}
 
-#### getAllStores () {#getallstores}
+#### getAllStores() {#getallstores}
 
 Gibt alle registrierten ContextHub-Stores zurück.
 
@@ -83,7 +83,7 @@ Ein Objekt, das alle ContextHub-Stores enthält. Jeder Store ist ein Objekt, das
 Im folgenden Beispiel werden alle Stores und anschließend der Geolocation-Store abgerufen:
 
 ```javascript
-var allStores = ContextHub.getAllStores ();
+var allStores = ContextHub.getAllStores();
 var geoloc = allStores.geolocation
 ```
 
@@ -127,7 +127,7 @@ Bietet Zugriff auf ContextHub-Segmente.
 
 ### Funktionen (ContextHub.SegmentEngine.SegmentManager) {#functions-contexthub-segmentengine-segmentmanager}
 
-#### getResolvedSegments () {#getresolvedsegments}
+#### getResolvedSegments() {#getresolvedsegments}
 
 Gibt die Segmente zurück, die im aktuellen Kontext aufgelöst werden. Diese Funktion hat keine Parameter.
 
@@ -155,7 +155,7 @@ Ein `ContextHub.Utils.Persistence`-Objekt. Weitere Informationen über den Stand
 
 ### Funktionen (ContextHub.Store.Core) {#functions-contexthub-store-core}
 
-#### addAllItems (tree, options) {#addallitems-tree-options}
+#### addAllItems(tree, options) {#addallitems-tree-options}
 
 Führt ein Datenobjekt oder ein Array mit den Store-Daten zusammen. Jedes Schlüssel/Wert-Paar im Objekt oder Array wird dem Store hinzugefügt (über die Funktion `setItem`):
 
@@ -193,7 +193,7 @@ Ein `boolean`-Wert:
 * Der Wert `true` gibt an, dass die Referenz hinzugefügt wurde.
 * Der Wert `false` gibt an, dass keine Referenz hinzugefügt wurde.
 
-#### announceReadiness () {#announcereadiness}
+#### announceReadiness() {#announcereadiness}
 
 Löst das `ready`-Ereignis für diesen Store aus. Diese Funktion hat keine Parameter und gibt keinen Wert zurück.
 
@@ -213,7 +213,7 @@ Gibt den Wert zurück, der einem Schlüssel zugeordnet ist.
 
 Ein Objekt, das den Wert für den Schlüssel darstellt.
 
-#### getKeys (includeInternals) {#getkeys-includeinternals}
+#### getKeys(includeInternals) {#getkeys-includeinternals}
 
 Ruft die Schlüssel aus dem Store ab. Optional können Sie die Schlüssel abrufen, die intern vom ContextHub-Framework verwendet werden.
 
@@ -225,7 +225,7 @@ Ruft die Schlüssel aus dem Store ab. Optional können Sie die Schlüssel abrufe
 
 Ein Array von Schlüsselnamen (`string`-Werte).
 
-#### getReferences () {#getreferences}
+#### getReferences() {#getreferences}
 
 Ruft die Referenzen aus dem Store ab.
 
@@ -401,7 +401,7 @@ Gibt die unbearbeitete Antwort zurück, die seit dem letzten Aufruf des JSONP-Se
 
 Ein Objekt, das die unformatierte Antwort darstellt.
 
-#### getServiceDetails () {#getservicedetails}
+#### getServiceDetails() {#getservicedetails}
 
 Ruft das Service-Objekt für dieses ContextHub.Store.JSONPStore-Objekt ab. Das Service-Objekt enthält die Informationen, die zum Erstellen der Service-URL erforderlich sind.
 
@@ -521,7 +521,7 @@ Eine Service-Programmklasse für die Interaktion mit Cookies.
 
 ### Funktionen (ContextHub.Utils.Cookie) {#functions-contexthub-utils-cookie}
 
-#### exists (key) {#exists-key}
+#### exists(key) {#exists-key}
 
 Ermittelt, ob ein Cookie vorhanden ist.
 
@@ -536,12 +536,12 @@ Wenn `boolean` den Wert „true“ aufweist, bedeutet das, dass das Cookie vorha
 ##### Beispiel {#example-exists}
 
 ```javascript
-if (ContextHub.Utils.Cookie.exists ("name")) {
+if (ContextHub.Utils.Cookie.exists("name")) {
    // conditionally-executed code
 }
 ```
 
-#### getAllItems (filter) {#getallitems-filter}
+#### getAllItems(filter) {#getallitems-filter}
 
 Gibt alle Cookies zurück, deren Schlüssel einem Filter entsprechen.
 
@@ -560,7 +560,7 @@ Ein Objekt von Cookies. Objekteigenschaften sind Cookie-Schlüssel und Schlüsse
 ##### Beispiel {#example-getallitems}
 
 ```javascript
-ContextHub.Utils.Cookie.getAllItems ([/^cq-authoring/, /^cq-editor/])
+ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
 ```
 
 #### getItem(key)  {#getitem-key-1}
@@ -581,7 +581,7 @@ Das Cookie-Wert oder `null`, wenn kein Cookie für den Schlüssel gefunden wurde
 ContextHub.Utils.Cookie.getItem("name");
 ```
 
-#### getKeys (filter) {#getkeys-filter}
+#### getKeys(filter) {#getkeys-filter}
 
 Gibt ein Array der Schlüssel der vorhandenen Cookies zurück, die mit einem Filter übereinstimmen.
 
@@ -600,7 +600,7 @@ Ein Array von Zeichenfolgen, wobei jede Zeichenfolge der Schlüssel eines Cookie
 ##### Beispiel {#example-getkeys-1}
 
 ```javascript
-ContextHub.Utils.Cookie.getKeys ([/^cq-authoring/, /^cq-editor/])
+ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
 ```
 
 #### removeItem(key, options)  {#removeitem-key-options-1}
@@ -829,7 +829,7 @@ Diese Klasse erleichtert die Manipulation von Datenobjekten, die gespeichert ode
 
 ### Funktionen (ContextHub.Utils.JSON.tree) {#functions-contexthub-utils-json-tree}
 
-#### addAllItems () {#addallitems}
+#### addAllItems() {#addallitems}
 
 Erstellt eine Kopie eines Datenobjekts und fügt die Datenstruktur aus einem zweiten Objekt hinzu. Die Funktion gibt die Kopie zurück und ändert keines der ursprünglichen Objekte. Wenn die Datenbäume der beiden Objekte identische Schlüssel enthalten, überschreibt der Wert des zweiten Objekts den Wert des ersten Objekts.
 
@@ -911,7 +911,7 @@ Object {
 }
 ```
 
-#### getKeys () {#getkeys}
+#### getKeys() {#getkeys}
 
 Ruft alle Schlüssel aus der Datenstruktur eines Objekts ab. Optional können Sie nur die Schlüssel der untergeordneten Elemente eines bestimmten Schlüssels abrufen. Sie können auch optional eine Sortierreihenfolge der abgerufenen Schlüssel angeben.
 
@@ -946,7 +946,7 @@ myObject {
 }
 ```
 
-Das Skript `ContextHub.Utils.JSON.tree.getKeys (myObject);` gibt das folgende Array zurück:
+Das Skript `ContextHub.Utils.JSON.tree.getKeys(myObject);` gibt das folgende Array zurück:
 
 ```javascript
 ["/location", "/location/city", "/location/country", "/location/latitude", "/location/longitude", "/location/weather", "/location/weather/humidity", "/location/weather/precipitation", "/location/weather/temperature", "/location/weather/wind"]
@@ -1072,7 +1072,7 @@ Ermöglicht es Ihnen, Store-Kandidaten zu registrieren und registrierte Store-Ka
 
 ### Funktionen (ContextHub.Utils.storeCandidates) {#functions-contexthub-utils-storecandidates}
 
-#### getRegisteredCandidates (storeType) {#getregisteredcandidates-storetype}
+#### getRegisteredCandidates(storeType) {#getregisteredcandidates-storetype}
 
 Gibt die Store-Typen zurück, die als Store-Kandidaten registriert sind. Sie können entweder die registrierten Kandidaten eines bestimmten Store-Typs oder aller Store-Typen abrufen.
 
@@ -1084,7 +1084,7 @@ Gibt die Store-Typen zurück, die als Store-Kandidaten registriert sind. Sie kö
 
 Ein Objekt von Storetypen. Die Objekteigenschaften sind die Namen des Store-Typs und die Eigenschaftswerte sind ein Array registrierter Store-Kandidaten.
 
-#### getStoreFromCandidates (storeType) {#getstorefromcandidates-storetype}
+#### getStoreFromCandidates(storeType) {#getstorefromcandidates-storetype}
 
 Gibt einen Store-Typ aus den registrierten Kandidaten zurück. Wenn mehr als ein Store-Typ mit demselben Namen erneut registriert wird, gibt die Funktion den Store-Typ mit der höchsten Priorität zurück.
 
@@ -1096,7 +1096,7 @@ Gibt einen Store-Typ aus den registrierten Kandidaten zurück. Wenn mehr als ein
 
 Ein Objekt, das den registrierten Store-Kandidaten darstellt. Wenn der angeforderte Store-Typ nicht registriert ist, wird ein Fehler ausgegeben.
 
-#### getSupportedStoreTypes () {#getsupportedstoretypes}
+#### getSupportedStoreTypes() {#getsupportedstoretypes}
 
 Gibt die Namen der Storetypen zurück, die als Storekandidaten registriert sind. Diese Funktion benötigt keine Parameter.
 
