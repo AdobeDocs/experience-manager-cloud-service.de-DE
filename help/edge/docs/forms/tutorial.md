@@ -4,7 +4,7 @@ description: Dieses Tutorial hilft Ihnen, ein neues Adobe Experience Manager For
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: d0298f3c15264bfa7421ccf0cde752f164829c02
 workflow-type: tm+mt
 source-wordcount: '1850'
 ht-degree: 1%
@@ -124,7 +124,7 @@ So kopieren Sie den Beispielinhalt in Ihren eigenen Inhaltsordner und verweisen 
       Wenn Sie Microsoft SharePoint verwenden, verwendet der Ordnerpfad das folgende Format:
 
       ```HTML
-      https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+      https://<tenant>.SharePoint.com/sites/<sp-site>/Shared%20Documents/<folder-name>
       ```
 
       Beispiel:
@@ -271,7 +271,7 @@ Herzlichen Glückwunsch! Sie haben Ihre lokale Entwicklungsumgebung erfolgreich 
 
 Wenn Sie über ein vorhandenes AEM-Projekt verfügen, können Sie den Block Adaptive Forms in Ihr aktuelles Projekt integrieren, um mit der Formularerstellung zu beginnen.
 
->
+>[!NOTE]
 >
 >
 > Dieser Schritt gilt für Projekte, die mit dem [AEM](https://github.com/adobe/aem-boilerplate). Wenn Sie Ihr AEM Projekt mit dem [AEM Forms-Vorlage](https://github.com/adobe-rnd/aem-boilerplate-forms)können Sie diesen Schritt überspringen.
