@@ -4,10 +4,10 @@ description: Einrichten einer lokalen Entwicklungsumgebung für Adobe Experience
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 1ec17aebe4eb003b24f5036288a8836aabddb77a
+source-git-commit: e84d3ad2d7b549092ab7c616bead2f14f59be8c9
 workflow-type: tm+mt
-source-wordcount: '2724'
-ht-degree: 97%
+source-wordcount: '2723'
+ht-degree: 98%
 
 ---
 
@@ -135,7 +135,7 @@ Das Funktionsarchiv für Adobe Experience Manager Forms as a Cloud Service biete
 
    >[!NOTE]
    >
-   > Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
+   > Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 ### Konfigurieren von Benutzern und Berechtigungen {#configure-users-and-permissions}
 
@@ -220,10 +220,21 @@ AEM Forms as a Cloud Service bietet eine Docker-basierte SDK-Umgebung zur einfac
 
 1. Öffnen Sie eine Eingabeaufforderung und navigieren Sie zum Ordner `aem-forms-addon-native-<version>`.
 
-1. Stellen Sie sicher, dass Ihre lokale AEM-Autoreninstanz ausgeführt wird. Führen Sie den folgenden Befehl aus, um das SDK zu starten:
+1. Stellen Sie sicher, dass Ihre lokale AEM-Autoreninstanz ausgeführt wird. Führen Sie die folgenden Befehle aus, um das SDK zu starten:
 
-   * (Unter Microsoft® Windows) `sdk.bat start`
-   * (Unter Linux® oder Apple macOS) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
+   * Unter Microsoft® Windows
+
+     ```shell
+     sdk.bat start
+     ```
+
+
+   * Linux® oder Apple macOS
+
+   ```Shell
+       export AEM_HOME=[local AEM Author installation]
+       ./sdk.sh start
+   ```
 
    >[!NOTE]
    >
