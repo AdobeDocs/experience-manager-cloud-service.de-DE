@@ -3,14 +3,15 @@ title: Anpassen des Designs und Stils für ein AEM Forms Edge Delivery Services-
 description: Anpassen des Designs und Stils für ein AEM Forms Edge Delivery Services-Formular
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2014'
 ht-degree: 0%
 
 ---
 
-# Formularfelder formatieren
+
+# Anpassen des Erscheinungsbilds Ihrer Formulare
 
 Forms ist von entscheidender Bedeutung für die Benutzerinteraktion auf Websites, sodass sie Daten eingeben können. Sie können Cascading Style Sheets (CSS) verwenden, um Felder eines Formulars zu formatieren, die visuelle Darstellung Ihrer Formulare zu verbessern und das Benutzererlebnis zu verbessern.
 
@@ -22,7 +23,7 @@ Am Ende des Artikels:
 
 * Sie erstellen ein Verständnis der Struktur der standardmäßigen CSS-Datei, die im Adaptive Forms Block enthalten ist.
 * Sie erstellen ein Verständnis der HTML-Struktur von Formularkomponenten, die vom Adaptive Forms-Block bereitgestellt werden, einschließlich allgemeiner Komponenten und bestimmter Komponenten wie Dropdown-Listen, Optionsfeldgruppen und Kontrollkästchengruppen.
-* Sie erfahren, wie Sie Formularfelder anhand von Feldtypen und Feldnamen mithilfe von CSS-Selektoren formatieren, um eine konsistente oder eindeutige Formatierung basierend auf Anforderungen zu ermöglichen.
+* Sie erfahren, wie Sie Formularfelder mithilfe von CSS-Selektoren basierend auf dem Feldtyp und den Feldnamen formatieren und so eine konsistente oder eindeutige Formatierung basierend auf Anforderungen ermöglichen.
 
 
 ## Grundlagen zu Formularfeldtypen
@@ -203,7 +204,7 @@ Bei Dropdown-Menüs wird die `select` -Element anstelle von `input` element:
 
 +++ CSS-Selektoren für Dropdown-Komponenten
 
-Im folgenden CSS sind einige Beispiel-CSS-Selektoren für Dropdown-Komponenten aufgeführt.
+Im folgenden CSS sind einige Beispiele für CSS-Selektoren für Dropdown-Komponenten aufgeführt.
 
 ```CSS
 /* Target the outer wrapper */
@@ -262,7 +263,7 @@ Im folgenden CSS sind einige Beispiel-CSS-Selektoren für Dropdown-Komponenten a
 
 Ähnlich wie bei Dropdown-Komponenten verfügen Optionsfeldgruppen über eine eigene HTML- und CSS-Struktur:
 
-+++ HTML-Struktur von Optionsfeldern
++++ HTML-Struktur der Optionsfeldgruppe
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -300,7 +301,7 @@ Im folgenden CSS sind einige Beispiel-CSS-Selektoren für Dropdown-Komponenten a
 
 +++
 
-+++ CSS-Selektoren für Dropdown-Komponenten
++++ CSS-Selektoren für Optionsfeldgruppen
 
 * Targeting des Felds
 
@@ -334,7 +335,7 @@ Dieser Selektor wendet sich an alle Feldsätze mit dem Funkgruppen-Wrapper der K
 
 ### Kontrollkästchen &quot;Gruppen&quot;
 
-+++ Kontrollkästchengruppe HTML Struktur
++++ HTML-Struktur der Kontrollkästchengruppe
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -370,7 +371,7 @@ Dieser Selektor wendet sich an alle Feldsätze mit dem Funkgruppen-Wrapper der K
 
 +++
 
-+++ Beispiel-CSS-Selektoren für Optionsfelder und Kontrollkästchengruppen**
++++ CSS-Selektoren für Kontrollkästchengruppen
 
 * Targeting des äußeren Wrapper: Diese Selektoren richten sich an die äußersten Container von Optionsfeld- und Kontrollkästchengruppen, sodass Sie allgemeine Stile auf die gesamte Gruppenstruktur anwenden können. Dies ist nützlich zum Festlegen von Abstand, Ausrichtung oder anderen layoutbezogenen Eigenschaften.
 
@@ -796,9 +797,9 @@ Sie können Formularfelder anhand ihres spezifischen Typs (`{Type}-wrapper`) ode
 
 ### Formatierung basierend auf Feldtyp
 
-Sie können CSS-Selektoren verwenden, um bestimmte Feldtypen als Ziel auszuwählen und Stile konsistent anzuwenden.
+Sie können CSS-Selektoren verwenden, um bestimmte Feldtypen gezielt anzusprechen und Stile konsistent anzuwenden.
 
-**HTML-Struktur**
++++ HTML-Struktur
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -837,8 +838,10 @@ Sie können CSS-Selektoren verwenden, um bestimmte Feldtypen als Ziel auszuwähl
 * Jedes Feld verfügt über eine entsprechende Beschriftung, ein Eingabeelement und potenzielle zusätzliche Elemente wie Platzhalter und Beschreibungen.
 
 
++++
 
-**Beispiel-CSS-Selektoren**
+
++++ Beispiel-CSS-Selektoren
 
 ```CSS
 /* Target all text input fields */
@@ -853,13 +856,13 @@ Sie können CSS-Selektoren verwenden, um bestimmte Feldtypen als Ziel auszuwähl
 }
 ```
 
-
++++
 
 ### Formatierung basierend auf Feldnamen
 
 Sie können auch einzelne Felder nach Namen ausrichten, um eindeutige Stile anzuwenden.
 
-**HTML-Struktur**
++++ HTML-Struktur
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -883,7 +886,9 @@ Sie können auch einzelne Felder nach Namen ausrichten, um eindeutige Stile anzu
 </div>
 ```
 
-**Beispiel-CSS-Selektor**
++++
+
++++ Beispiel-CSS-Selektor
 
 ```CSS
 .field-otp input {
@@ -891,7 +896,11 @@ Sie können auch einzelne Felder nach Namen ausrichten, um eindeutige Stile anzu
 }
 ```
 
+
+
 Diese CSS-Datei enthält alle Eingabeelemente, die sich in einem Element befinden, das über die Klasse verfügt `field-otp`. Die HTML-Struktur Ihres Formulars entspricht den Konventionen des Bausteins Adaptive Forms . Dies bedeutet, dass ein Container mit der Klasse &quot;field-otp&quot;markiert ist, der das Feld mit dem Namen &quot;otp&quot;enthält.
+
++++
 
 ## Siehe auch
 

@@ -3,14 +3,14 @@ title: Vorbereiten der Tabelle auf die Datenaufnahme
 description: Erstellen Sie leistungsstarke Formulare schneller mit Tabellen und adaptiven Forms-Blockfeldern.
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1001'
 ht-degree: 1%
 
 ---
 
-# Vorbereiten der Tabelle auf die Datenaufnahme
+# Richten Sie Ihre Google Tabellen- oder Microsoft Excel-Dateien ein, um Daten zu akzeptieren
 
 
 Sobald du [das Formular erstellt und in der Vorschau angezeigt wurde](/help/edge/docs/forms/create-forms.md)ist es an der Zeit, die entsprechende Tabelle so zu aktivieren, dass sie Daten erhält. Sie können das Tabellenblatt manuell aktivieren, um Daten zu akzeptieren, oder Admin-APIs verwenden, um die Akzeptanz von Daten in einer Tabelle zu ermöglichen.

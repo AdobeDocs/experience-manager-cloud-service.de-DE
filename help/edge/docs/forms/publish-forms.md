@@ -3,14 +3,14 @@ title: AEM Forms Edge Delivery Services-Formular veröffentlichen
 description: AEM Forms Edge Delivery Services-Formular veröffentlichen
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '549'
 ht-degree: 2%
 
 ---
 
-# Formular veröffentlichen
+# Veröffentlichen Sie Ihr Formular und beginnen Sie mit der Datenerfassung
 
 Sobald Sie bereit sind, Ihr Formular für Ihre Kunden zur Datenerfassung oder -übermittlung freizugeben, können Sie es einfach veröffentlichen, sodass das Formular für Ihre Kunden zur Verfügung steht.
 

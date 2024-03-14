@@ -3,7 +3,7 @@ title: Wiederholbare Abschnitte zu einem Formular hinzufügen
 description: Wiederholbare Abschnitte zu einem EDS-Formular hinzufügen
 feature: Edge Delivery Services
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 14%
