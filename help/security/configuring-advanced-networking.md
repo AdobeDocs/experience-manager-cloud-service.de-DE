@@ -2,78 +2,112 @@
 title: Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: a284c0139b45e618749866385cdcc81d1ceb61e7
 workflow-type: tm+mt
-source-wordcount: '3540'
-ht-degree: 100%
+source-wordcount: '5145'
+ht-degree: 45%
 
 ---
 
+
 # Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren {#configuring-advanced-networking}
 
-Dieser Artikel soll Ihnen die verschiedenen erweiterten Netzwerkfunktionen in AEM as a Cloud Service vorstellen, einschließlich der Bereitstellung von VPN im Self-Service, nicht standardmäßige Ports und dedizierte Ausgangs-IP-Adressen.
+In diesem Artikel werden die verschiedenen erweiterten Netzwerkfunktionen in AEM as a Cloud Service vorgestellt, einschließlich der Self-Service- und API-Bereitstellung von VPN, nicht standardmäßigen Ports und dedizierten Ausgangs-IP-Adressen.
 
->[!INFO]
+>[!TIP]
 >
->Eine Reihe von Artikeln, die Sie durch die erweiterten Netzwerkoptionen führen, finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=de).
+>Zusätzlich zu dieser Dokumentation gibt es auch eine Reihe von Tutorials, die Sie durch die erweiterten Netzwerkoptionen auf dieser Seite führen sollen [Standort.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=de)
 
 ## Übersicht {#overview}
 
-AEM as a Cloud Service bietet verschiedene Arten erweiterter Netzwerkfunktionen, die von den Kunden mithilfe von Cloud Manager-APIs konfiguriert werden können. Dazu gehören:
+AEM as a Cloud Service bietet die folgenden erweiterten Netzwerkoptionen:
 
-* [Flexibler Port-Ausgang](#flexible-port-egress): konfigurieren Sie AEM as a Cloud Service, um ausgehenden Traffic aus nicht standardmäßigen Ports zuzulassen.
-* [Dedizierte Ausgangs-IP-Adresse](#dedicated-egress-IP-address): Konfigurieren des Traffics aus AEM as a Cloud Service, der von einer eindeutigen IP stammt
-* [Virtuelles privates Netzwerk (VPN)](#vpn): Sicherung des Traffics zwischen der Infrastruktur eines Kunden und AEM as a Cloud Service, für Kunden mit VPN-Technologie
+* [Flexibles Port-Egress](#flexible-port-egress) - Konfigurieren Sie AEM as a Cloud Service, um ausgehenden Traffic von nicht standardmäßigen Ports zu ermöglichen.
+* [Dedizierte Ausgangs-IP-Adresse](#dedicated-egress-ip-address) - Konfigurieren Sie den Traffic von AEM as a Cloud Service aus, um von einer eindeutigen IP zu stammen.
+* [Virtuelles privates Netzwerk (VPN)](#vpn) - Sichern Sie den Datenverkehr zwischen Ihrer Infrastruktur und AEM as a Cloud Service, wenn Sie über ein VPN verfügen.
 
-In diesem Artikel werden die einzelnen Optionen detailliert beschrieben, einschließlich ihrer Konfiguration. Als allgemeine Konfigurationsstrategie sollte der `/networkInfrastructures`-API-Endpunkt auf Programmebene aufgerufen werden, um den gewünschten Typ von erweitertem Netzwerk zu deklarieren, gefolgt von einem Aufruf an den `/advancedNetworking`-Endpunkt für jede Umgebung, um die Infrastruktur zu aktivieren und umgebungsspezifische Parameter zu konfigurieren. Beziehen Sie sich auf die entsprechenden Endpunkte in der Dokumentation der Cloud Manager-API für jede formale Syntax sowie Beispielanforderungen und -antworten.
+In diesem Artikel werden diese Optionen zunächst im Detail beschrieben und Sie erfahren, warum Sie sie verwenden können, bevor Sie beschreiben, wie sie über die Cloud Manager-Benutzeroberfläche und die API konfiguriert werden, und abschließend einige erweiterte Anwendungsfälle beschrieben.
 
-Ein Programm kann eine einzige erweiterte Netzwerkvariante bereitstellen. Bei der Entscheidung zwischen flexiblem Port-Ausgang und dedizierter Ausgangs-IP-Adresse wird empfohlen, einen flexiblen Port-Ausgang zu wählen, wenn keine bestimmte IP-Adresse erforderlich ist, da Adobe die Traffic-Leistung des flexiblen Port-Ausgangs optimieren kann.
-
->[!INFO]
+>[!CAUTION]
 >
->Erweiterte Netzwerke sind für das Sandbox-Programm nicht verfügbar.
->Außerdem müssen Umgebungen auf die AEM-Version 5958 oder höher aktualisiert werden.
-
->[!NOTE]
+>Wenn Sie bereits über eine ältere dedizierte Egress-Technologie verfügen und eine dieser erweiterten Netzwerkoptionen konfigurieren möchten, [Wenden Sie sich zunächst an die Adobe Client Care.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=de#home)
 >
->Kundinnen und Kunden, die bereits über eine alte Technologie für dedizierte Ausgänge verfügen und eine dieser Optionen konfigurieren müssen, sollten dies nicht tun, da dies sonst die Website-Konnektivität beeinträchtigt sein könnte. Wenn Sie Unterstützung benötigen, wenden Sie sich an den Adobe-Support.
+>Der Versuch, erweiterte Netzwerke mit veralteter Egress-Technologie zu konfigurieren, kann sich auf die Site-Konnektivität auswirken.
+
+### Anforderungen und Einschränkungen {#requirements}
+
+Bei der Konfiguration erweiterter Netzwerkfunktionen gelten die folgenden Einschränkungen.
+
+* Ein Programm kann eine einzelne erweiterte Netzwerkoption (flexible Port-Ausfahrt, dedizierte Ausgangs-IP-Adresse oder VPN) bereitstellen.
+* Erweiterte Netzwerke sind nicht verfügbar für [Sandbox-Programme.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+* Ein Benutzer in muss über die **Administrator** Rolle, um die Netzwerkinfrastruktur in Ihrem Programm hinzuzufügen und zu konfigurieren.
+* Die Produktionsumgebung muss erstellt werden, bevor in Ihrem Programm eine Netzwerkinfrastruktur hinzugefügt werden kann.
+* Ihre Netzwerkinfrastruktur muss sich in derselben Region befinden wie die primäre Region Ihrer Produktionsumgebung.
+   * Wenn Ihre Produktionsumgebung [zusätzliche Veröffentlichungsregionen,](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) Sie können zusätzliche Netzwerkinfrastruktur erstellen, die jede zusätzliche Region widerspiegelt.
+   * Es ist nicht zulässig, mehr Netzwerkinfrastrukturen als die in Ihrer Produktionsumgebung konfigurierte maximale Anzahl von Regionen zu erstellen.
+   * Sie können in Ihrer Produktionsumgebung so viele Netzwerkinfrastrukturen wie möglich definieren, aber die neue Infrastruktur muss vom gleichen Typ sein wie die zuvor erstellte Infrastruktur.
+   * Bei der Erstellung mehrerer Infrastrukturen dürfen Sie nur die Regionen auswählen, in denen keine erweiterte Netzwerkinfrastruktur erstellt wurde.
+
+### Konfigurieren und Aktivieren erweiterter Netzwerke {#configuring-enabling}
+
+Die Verwendung erweiterter Netzwerkfunktionen erfordert zwei Schritte:
+
+1. Konfiguration der erweiterten Netzwerkoption, ob [flexibles Auslaufen von Ports,](#flexible-port-egress) [dedizierte Ausgangs-IP-Adresse,](#dedicated-egress-ip-address) oder [VPN,](#vpn) muss zunächst auf der Programmebene erfolgen.
+1. Damit sie verwendet werden kann, muss die erweiterte Netzwerkoption auf Umgebungsebene aktiviert sein.
+
+Beide Schritte können entweder über die Cloud Manager-Benutzeroberfläche oder die Cloud Manager-API durchgeführt werden.
+
+* Bei Verwendung der Cloud Manager-Benutzeroberfläche müssen erweiterte Netzwerkkonfigurationen mithilfe eines Assistenten auf Programmebene erstellt und dann die einzelnen Umgebungen bearbeitet werden, in denen die Konfiguration aktiviert werden soll.
+
+* Bei Verwendung der Cloud Manager-API muss die `/networkInfrastructures` Der API-Endpunkt wird auf Programmebene aufgerufen, um den gewünschten Typ von erweitertem Netzwerk zu deklarieren, gefolgt von einem Aufruf an die `/advancedNetworking` Endpunkt für jede Umgebung, um die Infrastruktur zu aktivieren und umgebungsspezifische Parameter zu konfigurieren.
 
 ## Flexibler Port-Ausgang {#flexible-port-egress}
 
 Diese erweiterte Netzwerkfunktion ermöglicht es Ihnen, AEM as a Cloud Service so zu konfigurieren, dass der Ausgangs-Traffic über andere Ports als HTTP (Port 80) und HTTPS (Port 443), die standardmäßig geöffnet sind, läuft.
 
-### Überlegungen {#flexible-port-egress-considerations}
-
-Ein flexibler Port-Ausgang ist die empfohlene Wahl, wenn Sie kein VPN benötigen und keine dedizierte Ausgangs-IP-Adresse benötigen, da Traffic, der nicht auf einen dedizierten Ausgang angewiesen ist, einen höheren Durchsatz erzielen kann.
-
-### Konfiguration {#configuring-flexible-port-egress-provision}
-
-Einmal pro Programm wird der Endpunkt POST `/program/<programId>/networkInfrastructures` aufgerufen, wobei einfach der Wert von `flexiblePortEgress` für den Parameter `kind` und die Region übergeben wird. Der Endpunkt antwortet mit der `network_id` sowie anderen Informationen, einschließlich des Status. Der vollständige Satz von Parametern und die genaue Syntax sowie wichtige Informationen darüber, welche Parameter später nicht mehr geändert werden können, [können den API-Dokumenten entnommen werden.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
-
-Nach dem Aufruf dauert es in der Regel etwa 15 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Ein Aufruf des [Netzwerkinfrastruktur-GET-Endpunkts](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) von Cloud Manager würde den Status „bereit“ anzeigen.
-
-Wenn die Konfiguration des flexiblen Port-Ausgangs für den Programmbereich fertig ist, muss der `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`-Endpunkt pro Umgebung aufgerufen werden, um die Vernetzung auf Umgebungsebene zu aktivieren und optional Regeln für die Port-Weiterleitung zu deklarieren. Parameter können je nach Umgebung konfiguriert werden, um Flexibilität zu bieten.
-
-Regeln für die Port-Weiterleitung sollten für alle Ziel-Ports mit Ausnahme von 80/443 deklariert werden, jedoch nur, wenn kein HTTP- oder HTTPS-Protokoll verwendet wird.
-Geben Sie dazu einen Satz von Ziel-Hosts an (Name oder IP und mit Ports). Die Client-Verbindung, die Port 80/443 über HTTP/HTTPS verwendet, muss in ihrer Verbindung weiterhin Proxy-Einstellungen verwenden, damit die Eigenschaften des erweiterten Netzwerks auf die Verbindung angewendet werden. Für jeden Ziel-Host müssen Kunden den vorgesehenen Ziel-Port einem Port von 30000 bis 30999 zuordnen.
-
-Die API sollte in nur wenigen Sekunden antworten und einen Aktualisierungsstatus angeben. Nach etwa 10 Minuten sollte die `GET`-Methode des Endpunkts anzeigen, dass das erweiterte Netzwerk aktiviert ist.
-
-### Updates {#updating-flexible-port-egress-provision}
-
-Die Konfiguration auf Programmebene kann durch Aufrufen des `PUT /api/program/<program_id>/network/<network_id>`-Endpunkts aktualisiert werden und wird innerhalb weniger Minuten wirksam.
+>[!TIP]
+>
+>Bei der Entscheidung zwischen flexiblem Port-Ausgang und dedizierter Ausgangs-IP-Adresse wird empfohlen, einen flexiblen Port-Ausgang zu wählen, wenn keine bestimmte IP-Adresse erforderlich ist, da Adobe die Traffic-Leistung des flexiblen Port-Ausgangs optimieren kann.
 
 >[!NOTE]
 >
-> Der Parameter „kind“ (`flexiblePortEgress`, `dedicatedEgressIP` oder `VPN`) kann nicht geändert werden. Wenn Sie Unterstützung benötigen, wenden Sie sich an den Support und beschreiben Sie, was bereits erstellt wurde und warum Sie die Änderung vornehmen möchten.
+>Nach der Erstellung können die Infrastrukturtypen der flexiblen Ports nicht mehr bearbeitet werden. Die einzige Möglichkeit, Konfigurationswerte zu ändern, besteht darin, sie zu löschen und neu zu erstellen.
 
-Die Regeln für die Port-Weiterleitung pro Umgebung können durch erneutes Aufrufen des `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`-Endpunkts aktualisiert werden, wobei darauf zu achten ist, dass der gesamte Satz an Konfigurationsparametern und nicht nur eine Teilmenge angegeben wird.
+### UI-Konfiguration {#configuring-flexible-port-egress-provision-ui}
 
-### Deaktivieren des flexiblen Port-Ausgangs {#disabling-flexible-port-egress-provision}
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-Um den flexiblen Port-Ausgang in einer bestimmten Umgebung zu **deaktivieren**, rufen Sie `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()` auf.
+1. Wählen Sie im Bildschirm **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** das Programm aus.
 
-Weitere Informationen zu den APIs finden Sie in der [Dokumentation zur Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+1. Aus dem **Programmübersicht** Seite, navigieren Sie zur **Umgebungen** Registerkarte und wählen Sie **Netzwerkinfrastruktur** im linken Bereich.
+
+   ![Hinzufügen von Netzwerkinfrastruktur](assets/advanced-networking-ui-network-infrastructure.png)
+
+1. Im **Netzwerkinfrastruktur hinzufügen** Assistent, der gestartet wird, wählen Sie **Flexibles Port-Egress** und die Region, in der sie erstellt werden soll, aus der **Region** Dropdown-Menü und tippen oder klicken Sie auf **Weiter**.
+
+   ![Konfigurieren des flexiblen Port-Ausgangs](assets/advanced-networking-ui-flexible-port-egress.png)
+
+1. Die **Bestätigung** -Tab fasst Ihre Auswahl und die nächsten Schritte zusammen. Tippen oder klicken **Speichern** , um die Infrastruktur zu erstellen.
+
+   ![Konfiguration der flexiblen Port-Ausfahrt bestätigen](assets/advanced-networking-ui-flexible-port-egress-confirmation.png)
+
+Unter dem **Netzwerkinfrastruktur** -Überschrift im seitlichen Bedienfeld mit Details zum Typ der Infrastruktur, des Status, der Region und der Umgebungen, in denen sie aktiviert wurde.
+
+![Neuer Eintrag unter &quot;Netzinfrastruktur&quot;](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
+
+>[!NOTE]
+>
+>Die Erstellung der Infrastruktur für flexible Port-Ausgänge kann bis zu einer Stunde dauern, nach der sie auf Umgebungsebene konfiguriert werden kann.
+
+### API-Konfiguration {#configuring-flexible-port-egress-provision-api}
+
+Einmal pro Programm wird der Endpunkt POST `/program/<programId>/networkInfrastructures` aufgerufen, wobei einfach der Wert von `flexiblePortEgress` für den Parameter `kind` und die Region übergeben wird. Der Endpunkt antwortet mit der `network_id`und andere Informationen, einschließlich des Status.
+
+Nach dem Aufruf dauert es in der Regel etwa 15 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Ein Aufruf an die Cloud Manager - [GET-Endpunkt der Netzwerkinfrastruktur](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) würde den Status von **ready**.
+
+>[!TIP]
+>
+>den vollständigen Satz von Parametern, die genaue Syntax und wichtige Informationen wie die Informationen, welche Parameter später nicht mehr geändert werden können, [kann in der API-Dokumentation referenziert werden.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 ### Traffic-Routing {#flexible-port-egress-traffic-routing}
 
@@ -158,7 +192,7 @@ In der folgenden Tabelle wird das Traffic-Routing beschrieben:
 </tbody>
 </table>
 
-**Apache-/Dispatcher-Konfiguration**
+#### Apache-/Dispatcher-Konfiguration {#apache-dispatcher}
 
 Die `mod_proxy`-Direktive der Apache/Dispatcher-Schicht von AEM as a Cloud Service kann mithilfe der oben beschriebenen Eigenschaften konfiguriert werden.
 
@@ -176,39 +210,71 @@ ProxyPass "/somepath" "https://example.com:8443"
 ProxyPassReverse "/somepath" "https://example.com:8443"
 ```
 
-## Dedizierte Ausgangs-IP-Adresse {#dedicated-egress-IP-address}
+## Dedizierte Ausgangs-IP-Adresse {#dedicated-egress-ip-address}
+
+Eine dedizierte IP-Adresse kann die Sicherheit bei der Integration mit SaaS-Anbietern (wie z. B. einem CRM-Anbieter) oder anderen Integrationen außerhalb AEM as a Cloud Service verbessern, die eine Zulassungsliste von IP-Adressen bieten. Durch Hinzufügen der dedizierten IP-Adresse zur Zulassungsliste wird sichergestellt, dass nur Traffic vom AEM Cloud-Service des Kunden in den externen Service fließen darf. Dies geschieht zusätzlich zum Traffic von allen anderen zulässigen IPs.
+
+Dieselbe dedizierte IP wird auf alle Programme in Ihrer Adobe-Organisation und für alle Umgebungen in jedem Programm angewendet. Sie gilt sowohl für Autoren- als auch für Veröffentlichungs-Services.
+
+Ohne aktivierte dedizierte IP-Adressenfunktion fließt der Traffic aus AEM as a Cloud Service Datenströmen über eine Reihe von IPs, die mit anderen AEM as a Cloud Service Kunden geteilt werden.
+
+Die Konfiguration der dedizierten Ausgangs-IP-Adresse ähnelt der [flexibler Port-Ausgang.](#flexible-port-egress) Der Hauptunterschied besteht darin, dass nach der Konfiguration der Traffic immer von einer dedizierten, eindeutigen IP-Adresse ausgeht. Um diese IP zu finden, verwenden Sie einen DNS-Resolver, um die IP-Adresse zu identifizieren, die mit `p{PROGRAM_ID}.external.adobeaemcloud.com` verbunden ist. Es wird nicht erwartet, dass sich die IP-Adresse ändert. Wenn sie sich jedoch ändern muss, wird eine erweiterte Benachrichtigung bereitgestellt.
+
+>[!TIP]
+>
+>Bei der Entscheidung zwischen flexiblem Port-Ausgang und dedizierter Ausgangs-IP-Adresse wird empfohlen, einen flexiblen Port-Ausgang zu wählen, wenn keine bestimmte IP-Adresse erforderlich ist, da Adobe die Traffic-Leistung des flexiblen Port-Ausgangs optimieren kann.
 
 >[!NOTE]
 >
->Wenn Sie vor dem Release vom September 2021 (6.10.21) eine dedizierte Ausgangs-IP erhalten haben, lesen Sie [Kundinnen und Kunden mit alten dedizierten Ausgang-Adressen](#legacy-dedicated-egress-address-customers).
+>Wenn Sie vor 2021.09.30 über eine dedizierte Ausgangs-IP verfügen (d. h. vor der Version vom September 2021), unterstützt Ihre dedizierte Ausgangs-IP-Funktion nur HTTP- und HTTPS-Ports.
+>
+>Dazu gehören HTTP/1.1 und HTTP/2 bei Verschlüsselung. Darüber hinaus kann ein dedizierter Ausgangsendpunkt nur über HTTP/HTTPS an den Ports 80/443 mit einem beliebigen Ziel kommunizieren.
 
-### Vorteile {#benefits}
-
-Diese dedizierte IP-Adresse kann die Sicherheit bei der Integration mit SaaS-Anbietern (wie z. B. einem CRM-Anbieter) oder anderen Integrationen außerhalb von AEM as a Cloud Service, die eine Zulassungsliste von IP-Adressen anbieten, erhöhen. Durch Hinzufügen der dedizierten IP-Adresse zur Zulassungsliste wird sichergestellt, dass nur Traffic vom AEM Cloud-Service des Kunden in den externen Service fließen darf. Dies geschieht zusätzlich zum Traffic von allen anderen zulässigen IPs.
-
-Wenn die Funktion der dedizierten IP-Adresse nicht aktiviert ist, fließt der Traffic von AEM as a Cloud Service über eine Reihe von IPs, die mit anderen Kunden gemeinsam genutzt werden.
-
-### Konfiguration {#configuring-dedicated-egress-provision}
+>[!NOTE]
+>
+>Nach der Erstellung können keine dedizierten Ausgangs-IP-Adressen-Infrastrukturtypen bearbeitet werden. Die einzige Möglichkeit, Konfigurationswerte zu ändern, besteht darin, sie zu löschen und neu zu erstellen.
 
 >[!INFO]
 >
 >Die Splunk-Weiterleitungsfunktion ist über eine dedizierte Ausgangs-IP-Adresse nicht möglich.
 
-Die Konfiguration der dedizierten Ausgangs-IP-Adresse ist mit dem Szenario [flexibler Port-Ausgang](#configuring-flexible-port-egress-provision) identisch.
+### UI-Konfiguration {#configuring-dedicated-egress-provision-ui}
 
-Der Hauptunterschied besteht darin, dass der Traffic immer von einer dedizierten, eindeutigen IP-Adresse ausgeht. Um diese IP zu finden, verwenden Sie einen DNS-Resolver, um die IP-Adresse zu identifizieren, die mit `p{PROGRAM_ID}.external.adobeaemcloud.com` verbunden ist. Es wird nicht erwartet, dass sich die IP-Adresse ändert. Wenn sie aber in Zukunft geändert werden muss, wird vorher eine Benachrichtigung gesendet.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-Zusätzlich zu den Routing-Regeln, die vom flexiblen Port-Ausgang im `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`-Endpunkt unterstützt werden, unterstützt die dedizierte Ausgangs-IP-Adresse einen `nonProxyHosts`-Parameter. Auf diese Weise können Sie eine Gruppe von Hosts deklarieren, die über einen gemeinsamen IP-Adressbereich statt über die dedizierte IP weitergeleitet werden sollen. Dies kann nützlich sein, da ausgehender Traffic über freigegebene IPs möglicherweise weiter optimiert werden kann. Die `nonProxyHost`-URLs können dem Muster von `example.com` oder `*.example.com` folgen, wobei der Platzhalter nur am Beginn der Domain unterstützt wird.
+1. Wählen Sie im Bildschirm **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** das Programm aus.
 
-Bei der Entscheidung zwischen flexiblem Port-Ausgang und dedizierter Ausgangs-IP-Adresse sollten Kunden einen flexiblen Port-Ausgangt wählen, wenn keine bestimmte IP-Adresse erforderlich ist, da Adobe die Traffic-Leistung an flexiblen Ports-Ausgängen optimieren kann.
+1. Aus dem **Programmübersicht** Seite, navigieren Sie zur **Umgebungen** Registerkarte und wählen Sie **Netzwerkinfrastruktur** im linken Bereich.
 
-### Deaktivieren der dedizierten Ausgangs-IP-Adresse {#disabling-dedicated-egress-IP-address}
+   ![Hinzufügen von Netzwerkinfrastruktur](assets/advanced-networking-ui-network-infrastructure.png)
 
-Um die dedizierte Ausgangs-IP-Adresse in einer bestimmten Umgebung zu **deaktivieren**, rufen Sie `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()` auf.
+1. Im **Netzwerkinfrastruktur hinzufügen** Assistent, der gestartet wird, wählen Sie **Dedizierte Ausgangs-IP-Adresse** und die Region, in der sie erstellt werden soll, aus der **Region** Dropdown-Menü und tippen oder klicken Sie auf **Weiter**.
 
-Weitere Informationen zu den APIs finden Sie in der [Dokumentation zur Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+   ![Konfigurieren der dedizierten Ausgangs-IP-Adresse](assets/advanced-networking-ui-dedicated-egress.png)
 
-### Traffic-Routing {#dedcated-egress-ip-traffic-routing}
+1. Die **Bestätigung** -Tab fasst Ihre Auswahl und die nächsten Schritte zusammen. Tippen oder klicken **Speichern** , um die Infrastruktur zu erstellen.
+
+   ![Konfiguration der flexiblen Port-Ausfahrt bestätigen](assets/advanced-networking-ui-dedicated-egress-confirmation.png)
+
+Unter dem **Netzwerkinfrastruktur** -Überschrift im seitlichen Bedienfeld mit Details zum Typ der Infrastruktur, des Status, der Region und der Umgebungen, in denen sie aktiviert wurde.
+
+![Neuer Eintrag unter &quot;Netzinfrastruktur&quot;](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
+
+>[!NOTE]
+>
+>Die Erstellung der Infrastruktur für flexible Port-Ausgänge kann bis zu einer Stunde dauern, nach der sie auf Umgebungsebene konfiguriert werden kann.
+
+### API-Konfiguration {#configuring-dedicated-egress-provision-api}
+
+Einmal pro Programm wird der Endpunkt POST `/program/<programId>/networkInfrastructures` aufgerufen, wobei einfach der Wert von `dedicatedEgressIp` für den Parameter `kind` und die Region übergeben wird. Der Endpunkt antwortet mit der `network_id`und andere Informationen, einschließlich des Status.
+
+Nach dem Aufruf dauert es in der Regel etwa 15 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Ein Aufruf an die Cloud Manager - [GET-Endpunkt der Netzwerkinfrastruktur](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) würde den Status von **ready**.
+
+>[!TIP]
+>
+>den vollständigen Satz von Parametern, die genaue Syntax und wichtige Informationen wie die Informationen, welche Parameter später nicht mehr geändert werden können, [kann in der API-Dokumentation referenziert werden.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+
+### Traffic-Routing {#dedicated-egress-ip-traffic-routing}
 
 HTTP- oder HTTPS-Datenverkehr durchläuft einen vorkonfigurierten Proxy, wenn er standardmäßige Java-Systemeigenschaften für Proxy-Konfigurationen verwendet.
 
@@ -288,7 +354,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </tbody>
 </table>
 
-## Verwendung der Funktion {#feature-usage}
+### Verwendung der Funktion {#feature-usage}
 
 Die Funktion ist mit Java-Code oder Bibliotheken kompatibel, die zu ausgehendem Datenverkehr führen, sofern sie Standard-Java-Systemeigenschaften für Proxy-Konfigurationen verwenden. In der Praxis sollte dies die gängigsten Bibliotheken umfassen.
 
@@ -328,58 +394,81 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
-Dieselbe dedizierte IP wird auf alle Programme eines Kunden in seiner Adobe-Organisation und auf alle Umgebungen in jedem seiner Programme angewendet. Sie gilt sowohl für Autoren- als auch für Veröffentlichungs-Services.
-
 ### Überlegungen zum Debugging {#debugging-considerations}
 
 Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte IP-Adresse ausgeht, überprüfen Sie die Protokolle im Zieldienst, sofern verfügbar. Andernfalls kann es nützlich sein, einen Debugging-Service wie [https://ifconfig.me/IP](https://ifconfig.me/IP) aufzurufen, der die aufrufende IP-Adresse zurückgibt.
 
-## Kunden mit alten dedizierten Ausgangs-Adressen {#legacy-dedicated-egress-address-customers}
-
-Wenn Ihnen vor dem 30.09.2021 eine dedizierte Ausgangs-IP bereitgestellt wurde, unterstützt Ihre dedizierte Ausgangs-IP-Funktion nur HTTP- und HTTPS-Ports.
-Dazu gehören HTTP/1.1 und HTTP/2 bei Verschlüsselung. Darüber hinaus kann ein dedizierter Ausgangsendpunkt nur über HTTP/HTTPS an den Ports 80/443 mit einem beliebigen Ziel kommunizieren.
-
 ## Virtuelles privates Netzwerk (VPN) {#vpn}
 
-VPN ermöglicht die Verbindung zu einer On-Premise-Infrastruktur oder einem Rechenzentrum von der Autoren-, Veröffentlichungs- oder Vorschau-Instanz aus. Beispielsweise für die Mittel zum Zugriff auf eine Datenbank.
+Ein VPN ermöglicht die Verbindung zu einer On-Premise-Infrastruktur oder einem Rechenzentrum von der Autoren-, Veröffentlichungs- oder Vorschauinstanz aus. Dies kann beispielsweise nützlich sein, um den Zugriff auf eine Datenbank zu sichern. Es ermöglicht auch die Verbindung zu SaaS-Anbietern wie einem CRM-Anbieter, der VPN unterstützt oder eine Verbindung von einem Unternehmensnetzwerk mit AEM as a Cloud Service Autoren-, Vorschau- oder Veröffentlichungsinstanz herstellt.
 
-Es ermöglicht auch die Verbindung zu SaaS-Anbietern, wie z. B. einem CRM-Anbieter, der VPN unterstützt oder eine Verbindung von einem Unternehmensnetzwerk mit AEM as a Cloud Service Autoren-, Vorschau- oder Veröffentlichungsinstanzen herstellt.
+Die meisten VPN-Geräte mit IPSec-Technologie werden unterstützt. Lesen Sie die Informationen im Abschnitt **RouteBased-Konfigurationsanweisungen** Spalte in [diese Liste von Geräten.](https://docs.microsoft.com/de-de/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) Konfigurieren Sie das Gerät wie in der Tabelle beschrieben.
 
-Die meisten VPN-Geräte mit IPSec-Technologie werden unterstützt. Schauen Sie sich die Liste der Geräte auf [dieser Seite](https://docs.microsoft.com/de-de/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) an, die auf den Informationen in der Spalte **RouteBased configuration instructions** basiert. Konfigurieren Sie das Gerät wie in der Tabelle beschrieben.
+>[!NOTE]
+>
+>Beachten Sie diese Einschränkungen der VPN-Infrastruktur:
+>
+>* Unterstützung ist auf eine einzelne VPN-Verbindung beschränkt
+>* Die Splunk-Weiterleitungsfunktion ist über eine VPN-Verbindung nicht möglich.
+>* DNS-Resolver müssen im Gateway-Adressraum aufgelistet sein, um private Hostnamen aufzulösen.
 
-### Allgemeine Überlegungen: {#general-vpn-considerations}
+### UI-Konfiguration {#configuring-vpn-ui}
 
-* Unterstützung ist auf eine einzelne VPN-Verbindung beschränkt
-* Die Splunk-Weiterleitungsfunktion ist über eine VPN-Verbindung nicht möglich.
-* DNS-Resolver müssen im Gateway-Adressraum aufgeführt sein, um private Host-Namen aufzulösen.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-### Kreation {#vpn-creation}
+1. Wählen Sie im Bildschirm **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** das Programm aus.
 
-Einmal pro Programm wird der Endpunkt POST `/program/<programId>/networkInfrastructures` aufgerufen, wobei eine Payload mit Konfigurationsinformationen übergeben wird, darunter: der Wert von „vpn“ für den Parameter `kind`, Region, Adressraum (Liste der CIDRs – beachten Sie, dass dies später nicht geändert werden kann), DNS-Resolver (für die Auflösung von Namen im Kundennetz) und VPN-Verbindungsinformationen wie Gateway-Konfiguration, gemeinsamer VPN-Schlüssel und die IP-Sicherheitsrichtlinie. Der Endpunkt antwortet mit der `network_id` sowie anderen Informationen, einschließlich des Status. Der vollständige Satz von Parametern und die genaue Syntax sind in der [API-Dokumentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) zu finden.
+1. Aus dem **Programmübersicht** Seite, navigieren Sie zur **Umgebungen** Registerkarte und wählen Sie **Netzwerkinfrastruktur** im linken Bereich.
+
+   ![Hinzufügen von Netzwerkinfrastruktur](assets/advanced-networking-ui-network-infrastructure.png)
+
+1. Im **Netzwerkinfrastruktur hinzufügen** Assistent, der gestartet wird, wählen Sie **Virtuelles privates Netzwerk** und geben Sie die erforderlichen Informationen ein, bevor Sie auf **Weiter**.
+
+   * **Region** - Dies ist die Region, in der Infrastruktur geschaffen werden sollte.
+   * **Adresse** - Der Adressraum darf nur ein /26 CIDR (64 IP-Adressen) oder ein größerer IP-Bereich im Kundenbereich sein.
+      * Dieser Wert kann später nicht mehr geändert werden.
+   * **DNS-Informationen** - Dies ist eine Liste der Remote-DNS-Resolver.
+      * Presse `Enter` nach Eingabe einer DNS-Server-Adresse, um eine weitere hinzuzufügen.
+      * Tippen oder klicken Sie auf `X` nach einer Adresse, um sie zu entfernen.
+   * **Gemeinsamer Schlüssel** - Dies ist Ihr VPN-vorgegebener Schlüssel.
+      * Auswählen **Freigegebenen Schlüssel anzeigen** , um den Schlüssel anzuzeigen, dessen Wert überprüft werden soll.
+
+   ![VPN konfigurieren](assets/advanced-networking-ui-vpn.png)
+
+1. Im **Verbindungen** Registerkarte des Assistenten, geben Sie eine **Verbindungsname** um Ihre VPN-Verbindung zu identifizieren, tippen oder klicken Sie auf **Verbindung hinzufügen**.
+
+   ![Verbindung hinzufügen](assets/advanced-networking-ui-vpn-add-connection.png)
+
+1. Im **Verbindung hinzufügen** Dialogfeld, definieren Sie Ihre VPN-Verbindung und tippen oder klicken Sie auf **Speichern**.
+
+   * **Verbindungsname** - Dies ist ein beschreibender Name Ihrer VPN-Verbindung, den Sie im vorherigen Schritt angegeben haben und hier aktualisiert werden können.
+   * **Adresse** - Dies ist die IP-Adresse des VPN-Geräts.
+   * **Adressraum** - Dies sind die IP-Adressbereiche, die über das VPN weitergeleitet werden.
+      * Presse `Enter` nach Eingabe eines Bereichs, um einen weiteren hinzuzufügen.
+      * Tippen oder klicken Sie auf `X` nach einem Bereich, um ihn zu entfernen.
+   * **IP-Sicherheitsrichtlinie** - Passen Sie bei Bedarf von den Standardwerten an.
+
+   ![VPN-Verbindung hinzufügen](assets/advanced-networking-ui-vpn-adding-connection.png)
+
+1. Das Dialogfeld wird geschlossen und Sie kehren zum **Verbindungen** im Assistenten. Tippen oder klicken Sie auf **Weiter**.
+
+   ![Eine VPN-Verbindung wird hinzugefügt](assets/advanced-networking-ui-vpn-connection-added.png)
+
+1. Die **Bestätigung** -Tab fasst Ihre Auswahl und die nächsten Schritte zusammen. Tippen oder klicken **Speichern** , um die Infrastruktur zu erstellen.
+
+   ![Konfiguration der flexiblen Port-Ausfahrt bestätigen](assets/advanced-networking-ui-vpn-confirm.png)
+
+Unter dem **Netzwerkinfrastruktur** -Überschrift im seitlichen Bedienfeld mit Details zum Typ der Infrastruktur, des Status, der Region und der Umgebungen, in denen sie aktiviert wurde.
+
+### API-Konfiguration {#configuring-vpn-api}
+
+Die POST `/program/<programId>/networkInfrastructures` Endpunkt wird aufgerufen und eine Payload mit Konfigurationsinformationen übergeben, einschließlich: des Werts von **vpn** für die `kind` Parameter, Region, Adressraum (Liste der CIDRs - dies kann später nicht geändert werden), DNS-Resolver (zur Namensauflösung im Netzwerk des Kunden) und VPN-Verbindungsinformationen wie Gateway-Konfiguration, freigegebener VPN-Schlüssel und IP-Sicherheitsrichtlinie. Der Endpunkt antwortet mit der `network_id`und andere Informationen, einschließlich des Status.
 
 Nach dem Aufruf dauert es in der Regel zwischen 45 und 60 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Die GET-Methode der API kann aufgerufen werden, um den aktuellen Status zurückzugeben, der schließlich von `creating` zu `ready` wechselt. In der API-Dokumentation finden Sie alle Status.
 
-Wenn die Konfiguration der VPN-Konfiguration für das Programm fertig ist, muss der `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`-Endpunkt pro Umgebung aufgerufen werden, um die Vernetzung auf Umgebungsebene zu aktivieren und alle Regeln für die Portweiterleitung zu deklarieren. Parameter können je nach Umgebung konfiguriert werden, um Flexibilität zu bieten.
-
-Weitere Informationen finden Sie in der [API-Dokumentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration).
-
-Regeln für die Port-Weiterleitung sollten für jeden TCP-Traffic, der nicht HTTP/s-Protokoll ist und über das VPN geleitet werden soll, deklariert werden, indem der Satz von Ziel-Hosts (Namen oder IP und Ports) angegeben wird. Für jeden Ziel-Host müssen Kunden den beabsichtigten Ziel-Port einem Port von 30000 bis 30999 zuordnen, wobei die Werte in allen Umgebungen im Programm eindeutig sein müssen. Kunden können auch eine Reihe von URLs im `nonProxyHosts`-Parameter auflisten, die angeben, dass der Traffic nicht über das VPN-Routing, sondern über einen gemeinsamen IP-Bereich laufen soll. Es folgt den Mustern von `example.com` oder `*.example.com`, wobei der Platzhalter nur am Beginn der Domain unterstützt wird.
-
-Die API sollte innerhalb weniger Sekunden mit dem Status `updating` antworten, und nach etwa 10 Minuten würde ein Aufruf des GET-Endpunkts für die Umgebung des Cloud Managers den Status `ready` anzeigen, was bedeutet, dass die Aktualisierung der Umgebung durchgeführt wurde.
-
-`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` muss auch dann aufgerufen werden, wenn es keine Regeln für die Weiterleitung des Umgebungs-Traffics (Hosts oder Bypässe) gibt, aber dann mit einer leeren Payload.
-
-### VPN aktualisieren {#updating-the-vpn}
-
-Die VPN-Konfiguration auf Programmebene kann durch Aufrufen des `PUT /api/program/<program_id>/network/<network_id>`-Endpunkts aktualisiert werden.
-
-Der Adressraum kann nach der ersten VPN-Bereitstellung nicht mehr geändert werden. Wenden Sie sich bei Bedarf an den Support. Darüber hinaus kann der `kind`-Parameter (`flexiblePortEgress`, `dedicatedEgressIP` oder `VPN`) nicht geändert werden. Wenn Sie Unterstützung benötigen, wenden Sie sich an den Support und beschreiben Sie, was bereits erstellt wurde und warum Sie die Änderung vornehmen möchten.
-
-Die Routing-Regeln für die einzelnen Umgebungen können durch erneutes Aufrufen des `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`-Endpunkts aktualisiert werden, wobei darauf zu achten ist, dass der gesamte Satz an Konfigurationsparametern und nicht nur eine Teilmenge angegeben wird. Die Übernahme von Umgebungsaktualisierungen dauert in der Regel 5–10 Minuten.
-
-### Deaktivieren des VPN {#disabling-the-vpn}
-
-Um VPN für eine bestimmte Umgebung zu deaktivieren, rufen Sie `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking` auf. Weitere Informationen finden Sie in der [API-Dokumentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+>[!TIP]
+>
+>den vollständigen Satz von Parametern, die genaue Syntax und wichtige Informationen wie die Informationen, welche Parameter später nicht mehr geändert werden können, [kann in der API-Dokumentation referenziert werden.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 ### Traffic-Routing {#vpn-traffic-routing}
 
@@ -470,7 +559,7 @@ In der folgenden Tabelle wird das Traffic-Routing beschrieben.
 </tbody>
 </table>
 
-### Nützliche Domains für die Konfiguration{#vpn-useful-domains-for-configuration}
+### Nützliche Domains für die Konfiguration {#vpn-useful-domains-for-configuration}
 
 Das folgende Diagramm zeigt eine visuelle Darstellung einer Reihe von Domains und zugehörigen IPs, die für die Konfiguration und Entwicklung nützlich sind. Die Tabelle weiter unten im Diagramm beschreibt diese Domains und IPs.
 
@@ -509,7 +598,7 @@ Wenn Sie nur den VPN-Zugriff auf AEM zulassen möchten, können Umgebungszulassu
 
 Wenn Regeln pfadbasiert sein müssen, verwenden Sie standardmäßige HTTP-Anweisungen auf Dispatcher-Ebene, um bestimmte IPs zu blockieren oder zuzulassen. Sie sollten sicherstellen, dass die gewünschten Pfade auch im CDN nicht zwischenspeicherbar sind, sodass die Anfrage immer an den Ursprung gelangt.
 
-**Beispiel für httpd-Konfiguration**
+#### Beispiel für Httpd-Konfiguration {#httpd-example}
 
 ```
 Order deny,allow
@@ -518,30 +607,160 @@ Allow from 192.168.0.1
 Header always set Cache-Control private
 ```
 
-## Löschen der Netzwerkinfrastruktur eines Programms {#deleting-network-infrastructure}
+## Aktivieren erweiterter Netzwerkkonfigurationen in Umgebungen {#enabling}
 
-Um die Netzwerkinfrastruktur für ein Programm zu **löschen**, rufen Sie `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}` auf.
+Sobald Sie eine erweiterte Netzwerkoption für ein Programm konfiguriert haben, können Sie entscheiden, ob [flexibles Auslaufen von Ports,](#flexible-port-egress) [dedizierte Ausgangs-IP-Adresse,](#dedicated-egress-ip-address) oder [VPN,](#vpn) Um sie verwenden zu können, müssen Sie sie auf Umgebungsebene aktivieren.
+
+Wenn Sie eine erweiterte Netzwerkkonfiguration für eine Umgebung aktivieren, können Sie die optionale Anschlussweiterleitung und Nicht-Proxy-Hosts aktivieren. Parameter können je nach Umgebung konfiguriert werden, um Flexibilität zu bieten.
+
+* **Hafenweiterleitung** - Regeln für die Hafenweiterleitung sollten für alle Zielports mit Ausnahme von 80/443 deklariert werden, jedoch nur, wenn sie nicht das HTTP- oder HTTPS-Protokoll verwenden.
+   * Regeln für die Anschlussweiterleitung werden definiert, indem der Satz von Ziel-Hosts (Namen oder IP und Ports) angegeben wird.
+   * Die Clientverbindung, die Port 80/443 über HTTP/https verwendet, muss in ihrer Verbindung weiterhin Proxy-Einstellungen verwenden, damit die Eigenschaften des erweiterten Netzwerks auf die Verbindung angewendet werden.
+   * Für jeden Ziel-Host müssen Kunden den vorgesehenen Ziel-Port einem Port von 30000 bis 30999 zuordnen.
+   * Regeln zur Port-Weiterleitung sind für alle erweiterten Netzwerktypen verfügbar.
+
+* **Nicht-Proxy-Hosts** - Nicht-Proxy-Hosts ermöglichen es Ihnen, eine Gruppe von Hosts zu deklarieren, die über einen freigegebenen IP-Adressbereich statt über die dedizierte IP weitergeleitet werden sollen.
+   * Dies kann nützlich sein, da das Traffic-egressing über freigegebene IPs weiter optimiert werden kann.
+   * Nicht-Proxy-Hosts sind nur für dedizierte Egress-IP-Adressen und VPN-erweiterte Netzwerktypen verfügbar.
 
 >[!NOTE]
 >
-> Durch Löschen wird die Infrastruktur nur gelöscht, wenn die erweiterte Vernetzung aller Umgebungen deaktiviert sind.
-> 
+>Sie können keine erweiterte Netzwerkkonfiguration für eine Umgebung aktivieren, wenn sich die Umgebung in der **Aktualisieren** -Status.
 
-## Übergang zwischen Typen von erweiterter Vernetzung {#transitioning-between-advanced-networking-types}
+### Aktivieren über die Benutzeroberfläche {#enabling-ui}
 
-Es ist möglich, mithilfe des folgenden Verfahrens zwischen Typen der erweiterten Vernetzung zu migrieren:
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-* Deaktivieren der erweiterten Vernetzung in allen Umgebungen
-* Löschen der Infrastruktur der erweiterten Vernetzung
-* Erneutes Erstellen der Infrastruktur für erweiterte Vernetzung mit den richtigen Werten
-* Erneutes Aktivieren der erweiterten Vernetzung auf Umgebungsebene
+1. Wählen Sie im Bildschirm **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** das Programm aus.
+
+1. Aus dem **Programmübersicht** Seite, navigieren Sie zur **Umgebungen** und wählen Sie die Umgebung aus, in der Sie die erweiterte Netzwerkkonfiguration aktivieren möchten, unter **Umgebungen** im linken Bereich. Wählen Sie dann die **Erweiterte Netzwerkkonfiguration** Registerkarte der ausgewählten Umgebung und tippen oder klicken Sie auf **Netzwerkinfrastruktur aktivieren**.
+
+   ![Umgebung auswählen, um erweiterte Netzwerke zu aktivieren](assets/advanced-networking-ui-enable-environments.png)
+
+1. Die **Erweiterte Netzwerkkonfiguration** wird geöffnet.
+
+1. Im **Nicht-Proxy-Hosts** für dedizierte Ausgangs-IP-Adressen und VPNs können Sie optional eine Reihe von Hosts definieren, die über einen freigegebenen IP-Adressbereich und nicht über die dedizierte IP weitergeleitet werden sollen, indem Sie den Hostnamen im **Nicht-Proxy-Host** Feld und Tippen oder Klicken **Hinzufügen**.
+
+   * Der Host wird der Hostliste auf der Registerkarte hinzugefügt.
+   * Wiederholen Sie diesen Schritt, um mehrere Hosts hinzuzufügen.
+   * Tippen oder klicken Sie auf das X rechts neben der Zeile, um einen Host zu entfernen.
+   * Diese Registerkarte ist nicht für flexible Port-Ausstiegskonfigurationen verfügbar.
+
+   ![Nicht-Proxy-Hosts hinzufügen](assets/advanced-networking-ui-enable-non-proxy-hosts.png)
+
+1. Im **Hafen vorwärts** -Registerkarte können Sie optional Regeln für die Anschlussweiterleitung für beliebige Zielports definieren, die über 80/443 hinausgehen, wenn Sie HTTP oder HTTPS nicht verwenden. Stellen Sie eine **Name**, **Port Orig**, und **Port Dest** und tippen oder klicken Sie **Hinzufügen**.
+
+   * Die Regel wird der Regelliste auf der Registerkarte hinzugefügt.
+   * Wiederholen Sie diesen Schritt, um mehrere Regeln hinzuzufügen.
+   * Tippen oder klicken Sie auf das X rechts neben der Zeile, um eine Regel zu entfernen.
+
+   ![Definieren optionaler Anschlussvorführungen](assets/advanced-networking-ui-port-forwards.png)
+
+1. Tippen oder klicken **Speichern** im Dialogfeld, um die Konfiguration auf die Umgebung anzuwenden.
+
+Die erweiterte Netzwerkkonfiguration wird auf die ausgewählte Umgebung angewendet. Zurück auf **Umgebungen** angezeigt, können Sie die Details der auf die ausgewählte Umgebung angewendeten Konfiguration und ihren Status anzeigen.
+
+![Umgebung mit erweitertem Netzwerk](assets/advanced-networking-ui-configured-environment.png)
+
+### Aktivieren mit der API {#enabling-api}
+
+Um eine erweiterte Netzwerkkonfiguration für eine Umgebung zu aktivieren, muss die `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` -Endpunkt muss pro Umgebung aufgerufen werden.
+
+Die API sollte innerhalb weniger Sekunden mit dem Status `updating` antworten, und nach etwa 10 Minuten würde ein Aufruf des GET-Endpunkts für die Umgebung des Cloud Managers den Status `ready` anzeigen, was bedeutet, dass die Aktualisierung der Umgebung durchgeführt wurde.
+
+Pro Umgebung können die Regeln für die Portweiterleitung aktualisiert werden, indem Sie die `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` -Endpunkt und einschließlich des vollständigen Satzes von Konfigurationsparametern anstelle einer Teilmenge.
+
+Die dedizierte Ausgangs-IP-Adresse und die erweiterten VPN-Netzwerktypen unterstützen eine `nonProxyHosts` -Parameter. Auf diese Weise können Sie eine Gruppe von Hosts deklarieren, die über einen freigegebenen IP-Adressbereich statt über die dedizierte IP weitergeleitet werden sollen. Die `nonProxyHost`-URLs können dem Muster von `example.com` oder `*.example.com` folgen, wobei der Platzhalter nur am Beginn der Domain unterstützt wird.
+
+`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` muss auch dann aufgerufen werden, wenn es keine Regeln für die Weiterleitung des Umgebungs-Traffics (Hosts oder Bypässe) gibt, aber dann mit einer leeren Payload.
+
+>[!TIP]
+>
+>den vollständigen Satz von Parametern, die genaue Syntax und wichtige Informationen wie die Informationen, welche Parameter später nicht mehr geändert werden können, [kann in der API-Dokumentation referenziert werden.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+
+## Bearbeiten und Löschen erweiterter Netzwerkkonfigurationen in Umgebungen {#editing-deleting-environments}
+
+Nachher [Aktivierung der erweiterten Netzwerkkonfiguration für Umgebungen,](#enabling) Sie können die Details dieser Konfigurationen aktualisieren oder löschen.
+
+>[!NOTE]
+>
+>Sie können die Netzwerkinfrastruktur nicht bearbeiten, wenn sie den Status aufweist. **Erstellen**, **Aktualisieren** oder **Löschen**.
+
+### Bearbeiten oder Löschen über die Benutzeroberfläche {#editing-ui}
+
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+
+1. Wählen Sie im Bildschirm **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** das Programm aus.
+
+1. Aus dem **Programmübersicht** Seite, navigieren Sie zur **Umgebungen** und wählen Sie die Umgebung aus, in der Sie die erweiterte Netzwerkkonfiguration aktivieren möchten, unter **Umgebungen** im linken Bereich. Wählen Sie dann die **Erweiterte Netzwerkkonfiguration** und tippen oder klicken Sie auf die Suchschaltfläche .
+
+   ![Auswahl der Bearbeitung oder Löschung von erweiterten Netzwerken auf Programmebene](assets/advanced-networking-ui-edit-delete.png)
+
+1. Wählen Sie im Menü mit den Auslassungspunkten entweder **Bearbeiten** oder **Löschen**.
+
+   * Wenn Sie **Bearbeiten** aktualisieren Sie die Informationen gemäß den im vorherigen Abschnitt beschriebenen Schritten. [Aktivieren der Benutzeroberfläche,](#enabling-ui) und tippen oder klicken Sie **Speichern**.
+   * Wenn Sie **Löschen**, bestätigen Sie den Löschvorgang im **Netzwerkkonfiguration löschen** Dialogfeld mit **Löschen** oder abbrechen mit **Abbrechen**.
+
+Die Änderungen werden im **Umgebungen** Registerkarte.
+
+### Bearbeiten oder Löschen mit der API {#editing-api}
+
+Um das erweiterte Netzwerk für eine bestimmte Umgebung zu löschen, rufen Sie `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+
+>[!TIP]
+>
+>den vollständigen Satz von Parametern, die genaue Syntax und wichtige Informationen wie die Informationen, welche Parameter später nicht mehr geändert werden können, [kann in der API-Dokumentation referenziert werden.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+
+## Bearbeiten und Löschen der Netzwerkinfrastruktur eines Programms {#editing-deleting-program}
+
+Sobald die Netzwerkinfrastruktur für ein Programm erstellt wurde, können nur begrenzte Eigenschaften bearbeitet werden. Wenn Sie es nicht mehr benötigen, können Sie die erweiterte Netzwerkinfrastruktur für Ihr gesamtes Programm löschen.
+
+>[!NOTE]
+>
+>Beachten Sie die folgenden Einschränkungen beim Bearbeiten und Löschen der Netzwerkinfrastruktur:
+>
+>* Durch Löschen wird die Infrastruktur nur gelöscht, wenn die erweiterte Vernetzung aller Umgebungen deaktiviert sind.
+>* Sie können die Netzwerkinfrastruktur nicht bearbeiten, wenn sie den Status aufweist. **Erstellen**, **Aktualisieren** oder **Löschen**.
+>* Nur der erweiterte VPN-Netzwerkinfrastrukturtyp kann nach der Erstellung bearbeitet werden und nur begrenzte Felder.
+>* Aus Sicherheitsgründen muss die Variable **Gemeinsamer Schlüssel** muss immer bei der Bearbeitung einer VPN-erweiterten Netzwerkinfrastruktur bereitgestellt werden, auch wenn Sie den Schlüssel selbst nicht bearbeiten.
+
+### Bearbeiten und Löschen mit der Benutzeroberfläche {#delete-ui}
+
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus
+
+1. Wählen Sie im Bildschirm **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** das Programm aus.
+
+1. Aus dem **Programmübersicht** Seite, navigieren Sie zur **Umgebungen** Registerkarte und wählen Sie **Netzwerkinfrastruktur** im linken Bereich. Tippen oder klicken Sie dann auf die Suchschaltfläche neben der Infrastruktur, die Sie löschen möchten.
+
+   ![Auswahl der Bearbeitung oder Löschung von erweiterten Netzwerken auf Programmebene](assets/advanced-networking-ui-delete-infrastructure.png)
+
+1. Wählen Sie im Menü mit den Auslassungspunkten entweder **Bearbeiten** oder **Löschen**.
+
+1. Wenn Sie **Bearbeiten**, die **Netzwerkinfrastruktur bearbeiten** wird geöffnet. Bearbeiten Sie nach Bedarf entsprechend den Schritten, die beim Erstellen der Infrastruktur beschrieben werden.
+
+1. Wenn Sie **Löschen**, bestätigen Sie den Löschvorgang im **Netzwerkkonfiguration löschen** Dialogfeld mit **Löschen** oder abbrechen mit **Abbrechen**.
+
+Die Änderungen werden im **Umgebungen** Registerkarte.
+
+### Bearbeiten und Löschen mit der API {#delete-api}
+
+Um die Netzwerkinfrastruktur für ein Programm zu **löschen**, rufen Sie `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}` auf.
+
+## Ändern des Typs der erweiterten Netzwerkinfrastruktur eines Programms {#changing-program}
+
+Es ist nur möglich, eine Art von erweiterter Netzwerkinfrastruktur gleichzeitig für ein Programm zu konfigurieren, entweder flexible Port-Ausgänge, dedizierte Ausgangs-IP-Adressen oder VPN.
+
+Wenn Sie entscheiden, dass Sie einen anderen fortgeschrittenen Netzwerkinfrastrukturtyp als den bereits konfigurierten benötigen, müssen Sie die vorhandene löschen und eine neue erstellen. Gehen Sie wie folgt vor:
+
+1. [Löschen Sie erweiterte Netzwerke in allen Umgebungen.](#editing-deleting-environments)
+1. [Löschen Sie die erweiterte Netzwerkinfrastruktur.](#editing-deleting-program)
+1. Erstellen Sie den von Ihnen jetzt benötigten erweiterten Netzwerkinfrastrukturtyp: [flexibles Auslaufen von Ports,](#flexible-port-egress) [dedizierte Ausgangs-IP-Adresse,](#dedicated-egress-ip-address) oder [VPN.](#vpn)
+1. [Erneutes Aktivieren erweiterter Netzwerke auf Umgebungsebene.](#enabling)
 
 >[!WARNING]
 >
 > Diese Vorgehensweise führt zu einer Ausfallzeit von Services für erweiterte Vernetzung zwischen dem Löschen und der erneuten Erstellung.
-> 
-
-Wenn Ausfallzeiten erhebliche geschäftliche Auswirkungen haben würden, wenden Sie sich an den Support, um Hilfe zu erhalten, und beschreiben Sie, was bereits erstellt wurde und warum die Änderung vorgenommen wurde.
+> Wenn Ausfallzeiten erhebliche geschäftliche Auswirkungen haben würden, wenden Sie sich an den Support, um Hilfe zu erhalten, und beschreiben Sie, was bereits erstellt wurde und warum die Änderung vorgenommen wurde.
 
 ## Erweiterte Netzwerkkonfiguration für zusätzliche Veröffentlichungsregionen {#advanced-networking-configuration-for-additional-publish-regions}
 
