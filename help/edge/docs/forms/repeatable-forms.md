@@ -2,10 +2,8 @@
 title: Wiederholbare Abschnitte zu einem Formular hinzufügen
 description: Wiederholbare Abschnitte zu einem EDS-Formular hinzufügen
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 14%
@@ -17,8 +15,6 @@ ht-degree: 14%
 Adaptiver Forms-Block bietet die Möglichkeit, einen Abschnitt oder eine Komponente eines Formulars wiederholbar zu machen. Dadurch können Benutzer Informationen für denselben Datentyp mehrmals eingeben, was die Erfassung von Informationen wie Arbeitserfahrung oder Bildungshintergrund erleichtert.
 
 Dies könnte beispielsweise ein Formular sein, mit dem Informationen über die Arbeitserfahrung einer Person erfasst werden. Sie könnten einen wiederholbaren Abschnitt zum Erfassen der Details jeder vorherigen Beschäftigung haben. Der wiederholbare Abschnitt enthält normalerweise Felder wie Unternehmensname, Stellenbezeichnung, Beschäftigungsdauer und Arbeitsverantwortlichkeiten. Die Benutzerin bzw. der Benutzer kann mehrere Instanzen des wiederholbaren Abschnitts hinzufügen, um Informationen zu den einzelnen Beschäftigungen einzugeben, die sie bzw. er in der Vergangenheit hatte.
-
-
 
 Am Ende dieses Artikels werden Sie Folgendes gelernt haben:
 

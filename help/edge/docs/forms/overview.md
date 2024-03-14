@@ -2,12 +2,10 @@
 title: Übersicht über AEM Forms Edge Delivery Services
 description: AEM Forms-Edge Delivery Services wurden für optimale Leistung entwickelt und ermöglichen es Ihnen, sich die Zukunft einer optimierten Datenerfassung und Benutzerinteraktion vorzustellen.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
@@ -20,7 +18,7 @@ Diese Dienste ermöglichen Ihnen Folgendes:
 
 * **Erstellen Sie mit Tools Ihrer Wahl ein Registrierungserlebnis:** Erhöhen Sie die Autoreneffizienz durch Entkopplung von Inhaltsquellen. Standardmäßig können Sie sowohl die dokumentbasierte Bearbeitung (Microsoft SharePoint oder Google Drive) als auch die AEM Authoring (Adaptiver Forms Editor) verwenden. Sie können mit mehreren Inhaltsquellen auf derselben Formularsite arbeiten und Ihre bevorzugten Authoring-Tools wie Microsoft Excel, Google Tabellen oder Adaptive Forms Editor verwenden.
 
-* **außergewöhnliche digitale Einschreibeerlebnisse bieten:** Bereitstellung digitaler Registrierungserlebnisse, die schnell geladen und gerendert werden. Schnellere Ladezeiten und optimiertes Benutzererlebnis tragen zu höheren Formularvervollständigungs- und Konversionsraten bei.
+* **außergewöhnliche digitale Einschreibeerlebnisse bieten:** Bereitstellung digitaler Registrierungserlebnisse, die schnell und kontinuierlich geladen und gerendert werden und die Formularleistung durch eine echte Benutzerüberwachung (RUM) überwachen. Schnellere Ladezeiten und optimiertes Benutzererlebnis tragen zu höheren Formularvervollständigungs- und Konversionsraten bei.
 
 * **Verwenden Sie die benutzerfreundlichen Tools für Entwickler:** AEM Forms-Edge Delivery Services verwenden einfaches HTML, modernes CSS und Vanilla JavaScript, um außergewöhnliche Erlebnisse zu erstellen und so die steile Lernkurve eines bestimmten Frameworks zu vermeiden. Entwickler mit grundlegenden Kenntnisse in der Webentwicklung können Formularkomponenten und Erlebnisse anpassen und einfach erstellen. Es ist nicht erforderlich, auf die Ausführung einer Pipeline zu warten. Checken Sie einfach Ihren Code in GitHub ein und Ihre Änderungen sind live.
 
@@ -62,6 +60,7 @@ Mit der dokumentbasierten Bearbeitung können Sie Formulare mit vertrauten Tools
 * Google reCAPTCHA-Integration für den Spam-Schutz.
 * Möglichkeit, benutzerdefinierte Formularkomponenten für bestimmte Anforderungen zu erstellen.
 * Senden Sie Formulardaten direkt an Microsoft Excel- oder Google Tabellen oder E-Mail-Adressen.
+* Überwachen der Formularleistung durch Echtzeit-Benutzerüberwachung (RUM)
 
 #### AEM Authoring-Funktionen
 
@@ -92,9 +91,6 @@ Die folgenden Diagramme illustrieren den Prozess des Erstellens, Veröffentliche
 
 ![AEM Authoring](/help/edge/assets/aem-authoring-workflow.png)
 
-
-
-
 ## Erstellen von Formularen
 
 * [Erste Schritte mit AEM Forms Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
@@ -105,20 +101,7 @@ Die folgenden Diagramme illustrieren den Prozess des Erstellens, Veröffentliche
 * [Wiederholbare Abschnitte zu einem Formular-&#x200B; hinzufügen](/help/edge/docs/forms/repeatable-forms.md)
 * [Anzeigen einer benutzerdefinierten Dankesmeldung nach der &#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
 * [Komponenten von Bausteinen für adaptive Formulare und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [Echtzeit-Benutzerüberwachung](https://www.aem.live/developer/rum#authentication)
 
 <!-- 
 
