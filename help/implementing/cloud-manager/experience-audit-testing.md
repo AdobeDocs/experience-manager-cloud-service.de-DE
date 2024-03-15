@@ -2,10 +2,10 @@
 title: Testen mit Experience Audit
 description: Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die bereitgestellten Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
-source-wordcount: '585'
-ht-degree: 100%
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 68%
 
 ---
 
@@ -31,15 +31,57 @@ Experience Audit in Cloud Manager stellt sicher, dass das Erlebnis der Benutzend
 
 Die Ergebnisse des Audits sind rein informativ und ermöglichen es dem Bereitstellungs-Manager, die Bewertungen sowie die Unterschiede zwischen aktuellen und vorherigen Bewertungen anzuzeigen. Diese Erkenntnis ist wertvoll, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wurde.
 
-Experience Audit basiert auf Google Lighthouse, einem Open-Source-Tool von Google, und ist in allen Cloud Manager-Produktions-Pipelines aktiviert.
+Experience Audit basiert auf Google Lighthouse, einem Open Source-Tool von Google.
 
 >[!INFO]
 >
 >Mit Wirkung vom 31. August 2023 wechselt Experience Audit zur Anzeige der Ergebnisse, die für die mobile Plattform spezifisch sind. Beachten Sie, dass die Leistungsmetriken für Mobilgeräte in der Regel niedriger sind als für Desktop-Computer. Daher sollten Sie nach dieser Änderung eine Verschiebung der gemeldeten Leistung erwarten.
 
->[!TIP]
->
->Sie konfigurieren, welche Seiten bei Experience Audit einbezogen werden sollen, wenn Sie das [Einrichten Ihrer Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code) vornehmen.
+## Verfügbarkeit {#availability}
+
+Experience Audit ist für Cloud Manager verfügbar:
+
+* Sites-Produktions-Pipelines, standardmäßig.
+* Front-End-Entwicklungs-Pipelines, optional.
+
+Siehe [Konfigurationsabschnitt](#configuration) Weitere Informationen zum Konfigurieren der Prüfung für die optionalen Umgebungen.
+
+## Konfiguration {#configuration}
+
+Experience Audit ist standardmäßig für Produktions-Pipelines verfügbar. Sie kann optional für Front-End-Entwicklungs-Pipelines aktiviert werden. In allen Fällen müssen Sie definieren, welche Inhaltspfade während der Pipeline-Ausführung ausgewertet werden.
+
+Sie konfigurieren beim Einrichten der Pipeline, welche Seiten in der Erlebnisprüfung enthalten sind.
+
+1. Je nach Pipeline-Typ, den Sie konfigurieren möchten, befolgen Sie die folgenden Anweisungen:
+
+   * Hinzufügen neuer [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) , wenn Sie die Pfade definieren möchten, die von der Prüfung bewertet werden sollen.
+   * Hinzufügen neuer [produktionsfremde Pipeline,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) , wenn Sie die Prüfung in einer Front-End- oder Entwicklungs-Full-Stack-Pipeline aktivieren möchten.
+   * Oder Sie können [eine vorhandene Pipeline bearbeiten,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) und aktualisieren Sie die vorhandenen Optionen.
+
+1. Wenn Sie eine produktionsfremde Pipeline hinzufügen oder bearbeiten, für die Sie Experience Audit verwenden möchten, müssen Sie die **Erlebnisprüfung** Kontrollkästchen auf der **Quellcode** Registerkarte.
+
+   ![Erlebnisprüfung aktivieren](assets/experience-audit-enable.jpg)
+
+   * Dies ist nur für produktionsfremde Pipelines erforderlich.
+   * Die **Erlebnisprüfung** angezeigt, wenn das Kontrollkästchen aktiviert ist.
+
+1. Für Produktions- und Nicht-Produktions-Pipelines definieren Sie die Pfade, die im Experience Audit auf der Seite **Erlebnisprüfung** Registerkarte.
+
+   * Seitenpfade müssen mit `/` und sind relativ zu Ihrer Site.
+   * Wenn Ihre Site beispielsweise `wknd.site` und möchte `https://wknd.site/us/en/about-us.html` Geben Sie im Experience Audit den Pfad ein. `/us/en/about-us.html`.
+
+   ![Definieren eines Pfads für das Experience Audit](assets/experience-audit-add-page.png)
+
+1. Tippen oder klicken **Seite hinzufügen** und der Pfad wird automatisch mit der Adresse Ihrer Umgebung ausgefüllt und der Pfadtabelle hinzugefügt.
+
+   ![Speichern des Pfads zur Tabelle](assets/experience-audit-page-added.png)
+
+1. Fügen Sie weitere Pfade hinzu, indem Sie die vorherigen beiden Schritte wiederholen.
+
+   * Sie können maximal 25 Pfade hinzufügen.
+   * Wenn Sie keine Pfade definieren, wird die Startseite der Site standardmäßig in das Experience Audit einbezogen.
+
+1. Klicken Sie auf **Speichern**, um die Pipeline zu speichern.
 
 ## Verstehen der Ergebnisse von Experience Audit {#understanding-experience-audit-results}
 

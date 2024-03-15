@@ -3,10 +3,10 @@ title: Konfigurieren von produktionsfremden Pipelines
 description: Erfahren Sie, wie Sie produktionsfremde Pipelines so konfigurieren, dass die Qualität des Codes vor seiner Bereitstellung in Produktionsumgebungen getestet wird.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
-workflow-type: ht
-source-wordcount: '1297'
-ht-degree: 100%
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
+workflow-type: tm+mt
+source-wordcount: '1371'
+ht-degree: 94%
 
 ---
 
@@ -120,7 +120,7 @@ Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile I
    * Mit Frontend-Pipelines erhalten Frontend-Entwickelnde mehr Unabhängigkeit, und der Entwicklungsprozess kann beschleunigt werden.
    * Weitere Informationen dazu, wie dieser Prozess abläuft und was dabei zu beachten ist, um das volle Potenzial dieses Prozesses auszuschöpfen, finden Sie im Dokument [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
 * **Web-Stufen-Konfiguration** – Konfigurieren Sie die Dispatcher-Eigenschaften zum Speichern, Verarbeiten und Bereitstellen von Web-Seiten für den Client.
-   * Weitere Einzelheiten finden Sie im Dokument [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines).
+   * Weitere Informationen finden Sie im Dokument [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines).
    * Wenn für die ausgewählte Umgebung bereits eine Web-Stufen-Code-Pipeline vorhanden ist, wird diese Auswahl deaktiviert.
    * Wenn Sie über eine vorhandene Full-Stack-Pipeline verfügen, die in einer Umgebung bereitgestellt wird, wird beim Erstellen einer Web-Stufen-Konfigurations-Pipeline für dieselbe Umgebung die vorhandene Web-Stufen-Konfiguration in der Full-Stack-Pipeline ignoriert.
 
@@ -145,10 +145,16 @@ Die Schritte zum Fertigstellen Ihrer produktionsfremden zielgerichteten Bereitst
    * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welcher Verzweigung in der ausgewählten Pipeline der Code abgerufen werden soll.
       * Geben Sie die ersten Zeichen des Verzweigungsnamens und die Funktion zur automatischen Vervollständigung dieses Felds ein. Es werden die entsprechenden auswählbaren Verzweigungen gesucht.
    * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
+   * **Pipeline** - Bei Frontend-Nicht-Produktions-Pipelines haben Sie die Möglichkeit, **[Erlebnisprüfung.](/help/implementing/cloud-manager/experience-audit-testing.md)**
 
-   ![Konfigurations-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![Konfigurations-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Klicken Sie auf **Speichern**.
+1. Wenn Sie Experience Audit aktiviert haben, tippen oder klicken Sie auf **Weiter** , um **Erlebnisprüfung** -Registerkarte, auf der Sie die Pfade definieren können, die immer in die Erlebnisprüfung einbezogen werden sollen.
+
+   * Wenn aktiviert **Erlebnisprüfung**, siehe Dokument [Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) für Details zur Konfiguration.
+   * Wenn nicht, überspringen Sie diesen Schritt.
+
+1. Tippen oder klicken **Speichern** , um die Pipeline zu speichern.
 
 Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
 

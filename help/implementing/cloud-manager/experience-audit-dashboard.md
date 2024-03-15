@@ -2,9 +2,9 @@
 title: Experience Audit-Dashboard
 description: Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und durch eine klare, informative Dashboard-Oberfläche sicherstellt, dass die bereitgestellten Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 390faed91889e16d06c5024eaf1b4b1ad1427444
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1958'
 ht-degree: 11%
 
 ---
@@ -40,7 +40,7 @@ Experience Audit ist für Cloud Manager verfügbar:
 
 * Sites-Produktions-Pipelines, standardmäßig
 * Entwickeln von Vollstapelpipelines, optional
-* Front-End-Pipelines, optional
+* Entwicklung von Front-End-Pipelines, optional
 
 Siehe [Konfigurationsabschnitt](#configuration) Weitere Informationen zum Konfigurieren der Prüfung für die optionalen Umgebungen.
 

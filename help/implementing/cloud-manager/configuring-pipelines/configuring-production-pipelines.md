@@ -3,10 +3,10 @@ title: Konfigurieren von Produktions-Pipelines
 description: Erfahren Sie, wie Sie Produktions-Pipelines konfigurieren, um Ihren Code zu erstellen und in Produktionsumgebungen bereitzustellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
-workflow-type: ht
-source-wordcount: '1422'
-ht-degree: 100%
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
+workflow-type: tm+mt
+source-wordcount: '1338'
+ht-degree: 96%
 
 ---
 
@@ -93,25 +93,13 @@ Gehen Sie wie folgt vor, um die Konfiguration der Pipeline mit Full-Stack-Code a
 
    ![Full-Stack-Code](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. Klicken Sie auf **Weiter**, um zur Registerkarte **Experience Audit** zu gelangen, auf der Sie die Pfade definieren können, die immer in das Experience Audit einbezogen werden sollen.
+1. Tippen oder klicken **Weiter** , um **Erlebnisprüfung** -Registerkarte, auf der Sie die Pfade definieren können, die immer in die Erlebnisprüfung einbezogen werden sollen.
 
    ![Hinzufügen von Experience Audit](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
-1. Geben Sie einen Pfad an, der in das Experience Audit aufgenommen werden soll.
+1. Geben Sie Pfade an, die in die Erlebnisprüfung einbezogen werden sollen.
 
-   * Seitenpfade müssen mit einem `/` beginnen.
-   * Wenn Sie beispielsweise `https://wknd.site/us/en/about-us.html` in das Experience Audit aufnehmen möchten, geben Sie den Pfad `/us/en/about-us.html` ein.
-
-   ![Definieren eines Pfads für das Experience Audit](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
-
-1. Wenn Sie auf **Seite hinzufügen** klicken, wird der Pfad automatisch mit der Adresse Ihrer Umgebung ausgefüllt und der Pfadtabelle hinzugefügt.
-
-   ![Speichern des Pfads zur Tabelle](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
-
-1. Fügen Sie weitere Pfade hinzu, indem Sie die vorherigen beiden Schritte wiederholen.
-
-   * Sie können maximal 25 Pfade hinzufügen.
-   * Wenn Sie keine Pfade definieren, wird die Startseite der Site standardmäßig in das Experience Audit einbezogen.
+   * Siehe Dokument . [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) für Details.
 
 1. Klicken Sie auf **Speichern**, um die Pipeline zu speichern.
 
