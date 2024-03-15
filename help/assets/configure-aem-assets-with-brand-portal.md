@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 0411da1113c6bddfa1adcc583b4e53c5daa9bd41
 workflow-type: tm+mt
-source-wordcount: '2584'
-ht-degree: 95%
+source-wordcount: '2568'
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ Sie können Brand Portal während der Erstellung der Produktionsumgebungen für 
 
    Brand Portal darf für eine der verfügbaren Umgebungen verwendet werden und wird unter **[!UICONTROL Umgebungsinformationen]** angezeigt.
 
-   Sobald Sie die mit Brand Portal verknüpfte Umgebung gefunden haben, klicken Sie auf das **[!UICONTROL Aktivieren von Brand Portal]** -Schaltfläche, um den Aktivierungs-Workflow zu starten.
+   Sobald Sie die mit Brand Portal verknüpfte Umgebung gefunden haben, klicken Sie auf die Schaltfläche **[!UICONTROL Brand Portal aktivieren]**, um den Workflow für die Aktivierung zu starten.
 
    ![Brand Portal aktivieren](assets/create-environment4.png)
 
@@ -86,7 +86,7 @@ Führen Sie die folgenden Schritte aus, wenn Sie sich nicht sicher sind, wie die
 
 1. Melden Sie sich bei der [Admin Console](https://adminconsole.adobe.com/) an und navigieren Sie zu **[!UICONTROL Produkte]**.
 1. Wählen Sie im linken Bedienfeld **[!UICONTROL Adobe Experience Manager Brand Portal – Brand Portal]** aus.
-1. Klicks **[!UICONTROL Navigieren zu Brand Portal]** , um Brand Portal direkt im Browser zu öffnen.
+1. Klicken Sie auf **[!UICONTROL Zu Brand Portal wechseln]**, um das Brand Portal direkt im Browser zu öffnen.
 
    Oder kopieren Sie die URL des Brand Portal-Mandanten aus dem Link **[!UICONTROL Wechseln zu Brand Portal]** und fügen Sie sie in Ihren Browser ein, um die Benutzeroberfläche von Brand Portal zu öffnen.
 
@@ -122,7 +122,7 @@ Führen Sie die folgenden Schritte durch, um die Verbindung zwischen Ihrer Insta
 
    ![Verarbeitungswarteschlange für die Verteilung von Assets](assets/test-bpconfig3.png)
 
-1. Überprüfen der Verbindung zwischen Experience Manager Assets as a [!DNL Cloud Service] und Brand Portal klicken Sie auf die **[!UICONTROL Verbindung testen]** Symbol.
+1. Um die Verbindung zwischen Experience Manager Assets as a [!DNL Cloud Service] und Brand Portal zu überprüfen, klicken Sie auf das Symbol **[!UICONTROL Verbindung testen]**.
 
    ![Überprüfen der Verbindung zwischen AEM und Brand Portal](assets/test-bpconfig4.png)
 
@@ -237,7 +237,7 @@ Der öffentliche Schlüssel (Zertifikat) authentifiziert Ihr Profil in der Adobe
 1. Melden Sie sich bei Experience Manager Assets an.
 1. Navigieren Sie im Bedienfeld **Tools** zu **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**.
 1. Klicken Sie auf der Seite mit den Adobe IMS-Konfigurationen auf **[!UICONTROL Erstellen]**. Sie werden zur Seite für die **[!UICONTROL Konfiguration des technischen Adobe IMS-Kontos]** weitergeleitet. Standardmäßig wird die Registerkarte **Zertifikat** geöffnet.
-1. Auswählen **[!UICONTROL Adobe Brand Portal]** im **[!UICONTROL Cloud-Lösung]** Dropdown-Liste.
+1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Cloud-Lösung]** den Eintrag **[!UICONTROL Adobe Brand Portal]** aus.
 1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Neues Zertifikat erstellen]** und geben Sie einen **Alias** für den öffentlichen Schlüssel an. Der Alias dient als Name des öffentlichen Schlüssels.
 1. Klicken Sie auf **[!UICONTROL Zertifikat erstellen]**. Klicken Sie auf **[!UICONTROL OK]**, um den öffentlichen Schlüssel zu generieren.
 
@@ -266,7 +266,7 @@ Führen Sie die folgenden Schritte aus, um die Anmeldeinformationen für das Ser
 
    >[!NOTE]
    >
-   >Stellen Sie sicher, dass Sie die richtige IMS-Organisation (Brand Portal-Mandant) aus der Dropdown-Liste (Organisation) oben rechts ausgewählt haben.
+   >Vergewissern Sie sich, dass Sie die richtige IMS-Organisation (Brand Portal-Mandant) aus der Dropdown-Liste (Organisation) oben rechts ausgewählt haben.
 
 1. Klicken Sie auf **[!UICONTROL Neues Projekt erstellen]**. Für Ihre Organisation wird ein leeres Projekt mit einem systemgenerierten Namen erstellt.
 
@@ -290,11 +290,12 @@ Führen Sie die folgenden Schritte aus, um die Anmeldeinformationen für das Ser
 
    ![Profil auswählen](assets/service-account4.png)
 
-1. Sobald die API konfiguriert ist, werden Sie zur Seite mit der API-Übersicht weitergeleitet. Von der linken Navigation unter **[!UICONTROL Anmeldeinformationen]**, klicken Sie auf die **[!UICONTROL Dienstkonto (JWT)]** -Option.
+1. Sobald die API konfiguriert ist, werden Sie zur Seite mit der API-Übersicht weitergeleitet. Klicken Sie im linken Navigationsbereich unter **[!UICONTROL Anmeldeinformationen]** auf die Option **[!UICONTROL Service-Konto (JWT)]**. 
 
    >[!NOTE]
    >
-   >Sie können die Anmeldedaten einsehen und weitere Aktionen durchführen, beispielsweise JWT-Token generieren, Anmeldedaten kopieren und Client-Geheimnisse abrufen.
+   >* Sie können die Anmeldedaten einsehen und weitere Aktionen durchführen, beispielsweise JWT-Token generieren, Anmeldedaten kopieren und Client-Geheimnisse abrufen.
+   >* Derzeit wird nur der Berechtigungstyp für das Adobe Developer Console Service-Konto (JWT) unterstützt. Verwenden Sie den OAuth-Server-zu-Server-Berechtigungstyp erst, wenn er Mitte April unterstützt wird. Mehr dazu unter [Einstellung von JWT-Anmeldedaten in der Adobe Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. Kopieren Sie auf der Registerkarte **[!UICONTROL Client-Anmeldedaten]** die **[!UICONTROL Client-ID]**.
 
@@ -377,7 +378,7 @@ Gehen Sie wie folgt vor, um das IMS-Konto zu konfigurieren.
 >
 >Sie dürfen nur eine IMS-Konfiguration haben.
 >
->Vergewissern Sie sich, dass die IMS-Konfiguration die Konsistenzprüfung besteht. Wenn die Konfiguration die Konsistenzprüfung nicht besteht, ist sie ungültig. Sie müssen sie löschen und eine andere gültige Konfiguration erstellen.
+>Vergewissern Sie sich, dass die IMS-Konfiguration die Konsistenzprüfung besteht. Wenn die Konfiguration die Konsistenzprüfung nicht besteht, ist sie ungültig. Sie müssen sie löschen und eine weitere gültige Konfiguration erstellen.
 
 ### Konfigurieren von Cloud Service {#configure-the-cloud-service}
 
