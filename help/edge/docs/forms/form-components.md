@@ -3,9 +3,9 @@ title: Komponenten von Bausteinen für adaptive Formulare und ihre Eigenschaften
 description: Dieses Dokument bietet einen Überblick über die Formularkomponenten und ihre Eigenschaften, die im AEM Forms Edge Delivery Service verfügbar sind.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
+source-git-commit: 703a48903c44678f6fe311de740b7c767c886ba5
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '1006'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,6 @@ Jede Formularkomponente enthält verschiedene Eigenschaften, mit denen Sie das V
 | Eigenschaft | Anwendbare Komponenten | Details |
 |--------------|------------------------------|----------------------------------------------------------------------|
 | Typ | Alle | Gibt den Typ der Komponente an. Diese Eigenschaft bestimmt das Verhalten und Erscheinungsbild des Eingabefelds. Bei Texteingaben kann der Typ beispielsweise &quot;text&quot;, &quot;email&quot; für E-Mail-Eingaben und &quot;password&quot; für Kennworteingaben lauten. Adaptiver Forms-Block unterstützt  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">alle gültigen HTML5-Eingabetypen</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, und <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> als Typ. |
-| Typ | Alle | Gibt den Typ der Komponente an. Diese Eigenschaft bestimmt das Verhalten und Erscheinungsbild des Eingabefelds. Bei Texteingaben kann der Typ beispielsweise &quot;text&quot;, &quot;email&quot; für E-Mail-Eingaben und &quot;password&quot; für Kennworteingaben lauten. Adaptiver Forms-Block unterstützt  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">alle gültigen HTML5-Eingabetypen</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, und <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> als Typ. |
 | Name | Alle | Identifiziert die Komponente für die Formularübermittlung. Das Attribut name wird verwendet, wenn die Formulardaten an den Server gesendet werden und die Benutzereingabe mit einem bestimmten Feld verknüpft wird. |
 | Bezeichnung | Alle | Stellt Benutzern kontextbezogene Informationen bereit. Die Beschriftung ist der Text, der neben der Komponente angezeigt wird und Benutzern Hinweise dazu gibt, welche Informationen einzugeben sind. |
 | Wert  | Text, Kennwort, E-Mail, Zahl, Bereich, Datum und seine Varianten (datetime-local, Monat, Woche, Zeit), Kontrollkästchen, Radio, Ausgeblendet, Senden, Schaltfläche | Gibt den Anfangswert der Komponente an. Bei Texteingaben, Textbereichen und ausgewählten Elementen ist dies der Standardtext oder die angezeigte Option. Bei Optionsfeld- und Kontrollkästchen-Komponenten ist dies der Wert/die Daten, der/die bei der Auswahl übermittelt wird. Das Attribut value ist optional, sollte jedoch für Kontrollkästchen und Optionsfelder als obligatorisch betrachtet werden. |
@@ -61,6 +60,10 @@ Jede Formularkomponente enthält verschiedene Eigenschaften, mit denen Sie das V
 | Optionen | Dropdown | Gibt Optionen für Dropdown-Menüs an. Die options-Eigenschaft ist eine kommagetrennte Liste von Optionen für Dropdown-Menüs, die die auswählbaren Optionen definieren, die dem Benutzer angezeigt werden. |
 | Aktiviert | Kontrollkästchen, Radio | Bestimmt, ob das Feld standardmäßig ausgewählt ist. Das angekreuzte Attribut ist eine boolesche Eigenschaft, die mit Kontrollkästchen und Optionsfeldern verwendet wird. Wenn der Wert auf &quot;true&quot;gesetzt ist, zeigt dies an, dass das Feld beim Laden des Formulars standardmäßig ausgewählt ist. |
 | Fieldset | Alle | Gruppiert Felder, um visuell unterschiedliche Abschnitte in einem Formular zu erstellen. Das fieldset -Element gruppiert verwandte Felder in einem Formular, wobei es sie visuell trennt, um die Organisation und das Benutzererlebnis zu verbessern. </br> Um eine Gruppe von Feldern in einem Feldsatz zu organisieren, verwenden Sie einfach die `fieldset` -Eigenschaft und geben Sie das Namensattribut an. Im folgenden Beispiel wird gezeigt, wie Optionsfelder in einem einzelnen Feldset zur besseren Organisation eingekapselt werden. ![Beispiel für Feldsatz](/help/edge/assets/fieldset-example.png) |
+| Wiederholbar | Alle | Eine boolesche Eigenschaft für `fieldset` gibt an, dass ein bestimmter Feldsatz für bestimmte `Min` und `Max` Häufigkeit. Die `Min` -Eigenschaft auf 1 oder höher gesetzt werden soll, legen Sie die `Min` -Eigenschaft auf 0. |
+| Sichtbarer Ausdruck | Alle | Ein sichtbarer Ausdruck bezieht sich auf eine Tabellenformel, die mit dem Tag &#39;=&#39;&#39; gekennzeichnet ist und die zur Steuerung der Sichtbarkeit eines Felds verwendet wird. In dieser Formel kann nur die value-Eigenschaft anderer Felder verwendet werden, um eine einfache Verwaltung der Feldanzeige innerhalb des Systems zu ermöglichen. |
+| Wertausdruck | Alle | Ein Wertausdruck bezieht sich auf eine Tabellenformel, die durch das Tag &#39;=&#39;&#39; gekennzeichnet ist und zur Steuerung des Werts eines Felds verwendet wird. In dieser Formel kann nur die value-Eigenschaft anderer Felder verwendet werden, um eine einfache Verwaltung des Feldwerts innerhalb des Systems zu ermöglichen. |
+
 
 ## Siehe auch
 
