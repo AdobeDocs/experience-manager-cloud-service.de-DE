@@ -2,10 +2,10 @@
 title: Traffic-Filterregeln, einschließlich WAF-Regeln
 description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 86a7815a1055b8ffaf57b802f3232f2c03ec06dc
-workflow-type: ht
-source-wordcount: '3376'
-ht-degree: 100%
+source-git-commit: 043c87330bca37529c0cc614596599bea1e41def
+workflow-type: tm+mt
+source-wordcount: '3382'
+ht-degree: 98%
 
 ---
 
@@ -287,7 +287,7 @@ Es folgen einige Regelbeispiele. Weitere Informationen zu Beispielen für Ratenb
 
 **Beispiel 1**
 
-Diese Regel blockiert Anfragen von der IP 192.168.1.1:
+Diese Regel blockiert Anfragen aus **IP 192.168.1.1**:
 
 ```
 kind: "CDN"
@@ -426,7 +426,7 @@ Die Ratenbegrenzungen werden pro CDN-POP berechnet. Nehmen wir beispielsweise an
 
 **Beispiel 1**
 
-Diese Regel blockiert einen Client für 5 Minuten, wenn er in den letzten 60 Sekunden 100 Anfragen/Sek. (pro CDN-POP) überschreitet:
+Diese Regel blockiert einen Client für 5 m, wenn er in den letzten 10 Sek. einen Durchschnittswert von 60 Req/Sek. (pro CDN POP) überschreitet:
 
 ```
 kind: "CDN"
@@ -451,7 +451,7 @@ data:
 
 **Beispiel 2**
 
-Blockiert Anfragen für 60 s für den Pfad /critical/resource, wenn er in den letzten 60 Sekunden 100 Anfragen/Sek. (pro CDN-POP) überschreitet:
+Blockanfragen für Pfad /critical/resource für 60 s, wenn sie in den letzten 60 Sekunden einen Durchschnittswert von 100 Req/Sek (pro CDN POP) überschritten haben:
 
 ```
 kind: "CDN"
