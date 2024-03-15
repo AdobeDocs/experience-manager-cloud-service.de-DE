@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3a86639d9203fff3c72e63baa8d1499b18a4539f
-workflow-type: ht
-source-wordcount: '937'
-ht-degree: 100%
+source-git-commit: 4fdca70b3a711f747e44ac2a6c1d117ac990d49b
+workflow-type: tm+mt
+source-wordcount: '1020'
+ht-degree: 91%
 
 ---
 
@@ -108,6 +108,15 @@ Dynatrace-Kundinnen und -Kunden können ihre AEM-Nutzung überwachen. [Lesen Sie
 ### RDE-Unterstützung für Frontend-Code mithilfe von Site-Designs und Site-Vorlagen: Early-Adopter-Programm {#rde-frontend-early-adopter}
 
 [Schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) unterstützen jetzt Frontend-Code basierend auf [Site-Designs](/help/sites-cloud/administering/site-creation/site-themes.md) und [Site-Vorlagen](/help/sites-cloud/administering/site-creation/site-templates.md) für Early Adopters. Bei RDEs erfolgt dies über eine Befehlszeilenanweisung und nicht über eine [Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Bitte wenden Sie sich an **aemcs-rde-support@adobe.com**, um dies auszuprobieren und Feedback zu hinterlassen.
+
+### CDN-Konfiguration Frühkindlicher Anwender {#cdn-config-early-adopter}
+
+Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md), das die optional lizenzierbaren Web Application Firewall (WAF)-Regeln enthält, gibt es eine Möglichkeit, die Configuration Pipeline zu verwenden, um andere Typen der CDN-Konfiguration zu deklarieren und bereitzustellen. Treten Sie dem frühen Adopter-Programm per E-Mail bei. **aemcs-cdn-config-adopter@adobe.com** Zugriff auf:
+* 301/302 Client-seitige Umleitungen
+* Proxying-Anfragen am Edge zu beliebigen Ursprüngen
+* URL-Transformationen
+* Anforderungs- oder Antwortheader festlegen oder ändern
+* benutzerdefinierte Fehlerseiten, wenn das CDN nicht AEM erreichen kann
 
 ## Cloud Manager {#cloud-manager}
 
