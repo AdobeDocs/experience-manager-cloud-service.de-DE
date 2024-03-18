@@ -3,10 +3,10 @@ title: Persistierte GraphQL-Abfragen – Aktivieren der Caching-Funktion im Disp
 description: Der Dispatcher ist eine Caching- und Sicherheitsebene vor den Adobe Experience Manager-Veröffentlichungsumgebungen. Sie können das Caching für persistierte Abfragen in AEM Headless aktivieren.
 feature: Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
-source-git-commit: ea5b404e83c11f0057342bff22ba45e6b0ead124
-workflow-type: ht
-source-wordcount: '391'
-ht-degree: 100%
+source-git-commit: 6bcbef1695b291c36e19e70db203a114a7e40e67
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 90%
 
 ---
 
@@ -42,15 +42,7 @@ Um das Caching persistierter Abfragen zu aktivieren, definieren Sie die Dispatch
 >
 >Wenn das Dispatcher-Caching für persistierte Abfragen durch die Verwendung von `Define CACHE_GRAPHQL_PERSISTED_QUERIES` aktiviert wird, fügt der Dispatcher eine `ETag`-Kopfzeile zu der Antwort hinzu.
 >
->Standardmäßig ist die `ETag`-Kopfzeile mit der folgenden Direktive konfiguriert:
->
->```
->FileETag MTime Size 
->```
->
->Diese Einstellung kann jedoch zu Problemen führen, wenn sie in den persistierten Abfrageantworten verwendet wird, da sie kleine Änderungen in der Antwort nicht berücksichtigt.
->
->Um individuelle `ETag`-Berechnungen für *jede* Antwort zu erzielen, die eindeutig ist, muss die Einstellung `FileETag Digest` in der Dispatcher-Konfiguration verwendet werden:
+>Individuelle Ergebnisse `ETag` Header-Berechnung für die zwischengespeicherten persistenten Abfragen (für *each* -Antwort, die eindeutig ist) die `FileETag Digest` muss in der Konfiguration des virtuellen Hosts für die Dispatcher-Konfiguration verwendet werden (falls noch nicht vorhanden):
 >
 >```xml
 ><Directory />    
