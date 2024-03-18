@@ -2,10 +2,10 @@
 title: Java™-Funktionstests
 description: Erfahren Sie, wie Sie Java™-Funktionstests für AEM as a Cloud Service schreiben.
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
-source-git-commit: e463979df1f705283f29d954f9869d85f0a96465
+source-git-commit: 641690f2eca17bbfb47360282e818b6902a36144
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 92%
+source-wordcount: '878'
+ht-degree: 94%
 
 ---
 
@@ -128,8 +128,8 @@ Stellen Sie sicher, dass Ihre Abhängigkeit in `it.tests/pom.xml` wurde aktualis
 
 >[!NOTE]
 >
->Diese Änderung ist nach dem 6. April 2024 erforderlich.
->Wenn die Abhängigkeitsbibliothek nicht aktualisiert wird, treten Pipeline-Fehler beim Schritt &quot;Benutzerdefinierte Funktionstests&quot;auf.
+>Diese Änderung muss vor dem 6. April 2024 vorgenommen werden.
+>Wenn die Abhängigkeitsbibliothek nicht aktualisiert wird, treten Pipeline-Fehler beim Schritt „Benutzerdefinierte Funktionstests“ auf.
 
 ### Lokale Testausführung {#local-test-execution}
 
