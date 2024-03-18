@@ -1,23 +1,36 @@
 ---
-title: Adobe unterstützt Standardschriftarten für Datensatzdokument und PDF
-description: Adobe unterstützt Standardschriftarten für Datensatzdokument und PDF
+title: AEM Forms as a Cloud Service unterstützt vordefinierte Schriftarten für die Generierung von PDF.
+description: AEM Forms as a Cloud Service unterstützt vordefinierte Schriftarten für Datensatzdokument und PDF.
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
+exl-id: 67b07bf6-a45c-4a74-8b24-cb2e26c55bc9
+source-git-commit: e8e00d85e5526a3de3a210ee72df07d85bb7d1db
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '150'
 ht-degree: 0%
 
 ---
 
+# Standardmäßige (OOTB) unterstützte Schriftarten für die PDF-Generierung auf Forms as a Cloud Service  {#ootb-supported-fonts-overview}
 
-# Unterstützte Schriftarten für interaktive Kommunikation und Datensatzdokument
+AEM Forms as a Cloud Service bietet verschiedene integrierte OOTB-unterstützte Schriftarten, die nahtlos in [Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md), [Datensatzdokument für Kernkomponenten](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record), und [Datensatzdokument für Foundation-Komponenten](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
 
-AEM Forms bietet verschiedene integrierte Schriftarten, die nahtlos in Datensatzdokumenten und PDF-Dateien verwendet werden können.
+<!--
 
-Sie können Forms as a Cloud Service Communications verwenden, um verschiedene Dateitypen wie XDP-Vorlagen oder PDF mit XML-Daten zu kombinieren, um PDF-Dokumente zu generieren. Sie können die PDF bearbeiten, indem Sie PDF- oder XDP-Dateien kombinieren, neu anordnen oder zusammenführen. Sie können auch das Datensatzdokument verwenden, um AEM Formulare und Inhalte im PDF-Format zu archivieren. Darüber hinaus können Sie unterstützte Schriftarten oder benutzerdefinierte Schriftarten verwenden, um den PDF ein bestimmtes Erscheinungsbild zu verleihen.
+AEM Forms as a Cloud Service offers various built-in fonts that can be seamlessly used within a Document of Record and PDF files for any file formats to generate PDF documents. Additionally, you can use supported fonts or custom fonts to give the PDFs a specific look and feel. The OOTB supported fonts are:
 
-## Unterstützte Schriftarten
+AEM Forms offers various OOTB supported fonts that can be seamlessly used within a Document of Recordhttps://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms] and communication APIs[]. The OOTB supported fonts are available for PDF generation in Forms as a Cloud Service for any use cases such as:
+
+* To combine a template (XFA or PDF) with customer data (XML) to generate documents in various formats ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-generation)).
+
+* To manipulate the PDFs by combining, rearranging, or merging PDF or XDP files ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-manipulation)).
+
+* To generate Document of Record to archive AEM forms and content together in PDF format ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms)).
+-->
+
+## Standardmäßige (OOTB) unterstützte Schriftarten {#ootb-supported-fonts}
+
+Die Liste der OOTB-unterstützten Schriftarten ist:
 
 * AdobeArabic
 * AdobeFanHeitiStd
@@ -38,4 +51,6 @@ Sie können Forms as a Cloud Service Communications verwenden, um verschiedene D
 * KozGoProVI
 * eurosign.ttf
 
-Wenn Sie zusätzlich zu den genannten Schriftarten weitere Schriftarten einbeziehen müssen, [Fügen Sie benutzerdefinierte Schriftarten zu Ihrer Forms in der Cloud Service-Umgebung hinzu.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts.html) mit einer gültigen Lizenz.
+
+Zusätzlich zu den oben genannten Schriftarten können Sie benutzerdefinierte Schriftarten verwenden, um den PDF ein bestimmtes Erscheinungsbild zu verleihen. Um benutzerdefinierte Schriftarten zu aktivieren, müssen Sie [Fügen Sie benutzerdefinierte Schriftarten zu Ihrer as a Cloud Service Forms-Umgebung hinzu](/help/forms/use-custom-fonts.md) mit einer gültigen Lizenz.
+
