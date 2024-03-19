@@ -2,9 +2,9 @@
 title: Verwenden von Tabellen zur Verwaltung von Tabellendaten
 description: Erfahren Sie, wie Sie mit Tabellen Tabellendaten für verschiedene Werte verwalten können, z. B. Metadaten und Umleitungen für Ihre AEM mit der Edge Delivery Services-Site.
 feature: Edge Delivery Services
-source-git-commit: 0fa88453a7d7c58a3ccb2a4baf7d2b143acf7ad5
+source-git-commit: f872ab4eb891ab4aa634e88c76eedeb0f13cb285
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '958'
 ht-degree: 2%
 
 ---
@@ -81,25 +81,9 @@ In diesem Beispiel erstellen Sie eine Tabelle, um Umleitungen für Ihre AEM mit 
    * Der Editor fügt dem Arbeitsblatt bei Bedarf neue Zeilen hinzu.
    * Verwenden Sie zum Löschen oder Verschieben einer Zeile die **Löschen** -Symbol am Ende jeder Zeile und die Ziehpunkte am Anfang jeder Zeile.
 
-1. Wenn Sie mit der Definition Ihrer Umleitungen fertig sind, schließen Sie die Registerkarte und kehren Sie zur **Sites** Konsole.
+## Veröffentlichen von Spreadsheet-Pfaden.json {#paths-json}
 
-1. Tippen oder klicken Sie auf die Umleitungstabelle, die Sie in der Konsole erstellt haben, und tippen oder klicken Sie auf **Quick Publish** in der Aktionsleiste, um die Tabelle zu veröffentlichen.
-
-   ![Wählen Sie die Tabelle in der Sites-Konsole aus.](assets/tabular-data/tabular-data-select-publish.png)
-
-1. Im **Quick Publish** Dialogfeld, tippen oder klicken Sie **Veröffentlichen**.
-
-   ![Veröffentlichung bestätigen](assets/tabular-data/tabular-data-quick-publish.png)
-
-1. Ein Banner bestätigt die Veröffentlichung.
-
-   ![Bannerbestätigung der Veröffentlichung](assets/tabular-data/tabular-data-publish-banner.png)
-
-Die Umleitungs-Tabelle ist jetzt veröffentlicht und öffentlich zugänglich.
-
-## Aktualisieren von paths.json {#paths-json}
-
-Damit AEM die Daten in Ihrer Tabelle nutzen kann, müssen Sie zusätzlich die `paths.json` -Datei Ihres Projekts.
+Damit AEM die Daten in Ihrer Tabelle veröffentlichen kann, müssen Sie zusätzlich die `paths.json` -Datei Ihres Projekts.
 
 1. Öffnen Sie den Stammordner Ihres Projekts in GitHub.
 
@@ -122,7 +106,21 @@ Damit AEM die Daten in Ihrer Tabelle nutzen kann, müssen Sie zusätzlich die `p
 
    * Bestätigen Sie entweder `main` oder erstellen Sie eine Pull-Anforderung gemäß Ihrem Prozess.
 
-Sobald sich `paths.json` zusammengeführt werden, sind die Umleitungen für Ihre Site live.
+1. Wenn Sie mit der Definition Ihrer Umleitungen fertig sind und die Pfadzuordnung aktualisiert haben, kehren Sie zum **Sites** Konsole.
+
+1. Tippen oder klicken Sie auf die Umleitungstabelle, die Sie in der Konsole erstellt haben, und tippen oder klicken Sie auf **Quick Publish** in der Aktionsleiste, um die Tabelle zu veröffentlichen.
+
+   ![Wählen Sie die Tabelle in der Sites-Konsole aus.](assets/tabular-data/tabular-data-select-publish.png)
+
+1. Im **Quick Publish** Dialogfeld, tippen oder klicken Sie **Veröffentlichen**.
+
+   ![Veröffentlichung bestätigen](assets/tabular-data/tabular-data-quick-publish.png)
+
+1. Ein Banner bestätigt die Veröffentlichung.
+
+   ![Bannerbestätigung der Veröffentlichung](assets/tabular-data/tabular-data-publish-banner.png)
+
+Die Umleitungs-Tabelle ist jetzt veröffentlicht und öffentlich zugänglich.
 
 ## Andere Tabellenarten {#other}
 
@@ -134,6 +132,12 @@ Nachdem Sie nun wissen, wie Sie eine Umleitungs-Tabelle erstellen, können Sie e
 * Konfiguration
 
 Führen Sie einfach die gleichen Schritte in den Abschnitten aus. [Tabelle erstellen](#spreadsheet) und [Aktualisieren von paths.json](#paths-json) und wählen Sie die entsprechende Vorlage aus und aktualisieren Sie die `paths.json` Datei entsprechend.
+
+Für [Konfiguration](https://www.aem.live/docs/configuration), [Kopfzeilen](https://www.aem.live/docs/custom-headers) und [Metadaten](https://www.aem.live/docs/bulk-metadata) Stellen Sie sicher, dass Sie eine Zuordnung hinzufügen, um sie an ihren Standardspeicherorten zu veröffentlichen:
+
+* Konfiguration: `/.helix/config.json`
+* Kopfzeilen: `/.helix/headers.json`
+* Metadaten: `/metadata.json`
 
 Darüber hinaus können Sie [Erstellen einer eigenen Tabelle](#own-spreadsheet) mit beliebigen Spalten für Ihre eigene Verwendung.
 
