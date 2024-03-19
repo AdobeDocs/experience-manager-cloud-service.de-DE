@@ -3,10 +3,10 @@ title: CDN in AEM as a Cloud Service
 description: Erfahren Sie, wie Sie das AEM-verwaltete CDN verwenden und wie Sie Ihr eigenes CDN auf das AEM-verwaltete CDN verweisen lassen.
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
-workflow-type: ht
-source-wordcount: '1031'
-ht-degree: 100%
+source-git-commit: 43fdf17ab09fd7a974c32cfd716f65072b678726
+workflow-type: tm+mt
+source-wordcount: '1118'
+ht-degree: 92%
 
 ---
 
@@ -39,6 +39,14 @@ Weitere Informationen finden Sie unter [Verwalten von IP-Zulassungslisten](/help
 >[!CAUTION]
 >
 >Nur Anfragen von den zulässigen IPs werden vom in AEM verwalteten CDN bearbeitet. Wenn Sie Ihr eigenes CDN auf das von AEM verwaltete CDN verweisen, stellen Sie sicher, dass die IPs Ihres CDN in der Zulassungsliste enthalten sind.
+
+### Konfigurieren von Traffic im CDN {#cdn-configuring-cloud}
+
+Regeln zum Konfigurieren von CDN-Traffic und -Filtern können in einer Konfigurationsdatei deklariert und mithilfe der [Cloud Manager-Konfigurations-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Weitere Informationen finden Sie unter [Konfigurieren von Traffic im CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) und [Traffic-Filter-Regeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md).
+
+### Konfigurieren von CDN-Fehlerseiten {#cdn-error-pages}
+
+Eine CDN-Fehlerseite kann so konfiguriert werden, dass sie die standardmäßige, unmarkierte Seite außer Kraft setzt, die dem Browser in dem seltenen Ereignis bereitgestellt wird, das nicht erreicht AEM. Weitere Informationen finden Sie unter [Konfigurieren von CDN-Fehlerseiten](/help/implementing/dispatcher/cdn-error-pages.md).
 
 ## Kunden-CDN verweist auf AEM-verwaltetes CDN {#point-to-point-CDN}
 
