@@ -2,10 +2,10 @@
 title: Grundlegende Handhabung
 description: Machen Sie sich mit der Navigation in AEM und seiner grundlegenden Verwendung vertraut
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 7e0ca5dad5cd53c2304e2eba48a5131d587967ef
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 69%
+source-wordcount: '926'
+ht-degree: 70%
 
 ---
 
@@ -16,7 +16,7 @@ Dieses Dokument soll einen Überblick über die grundlegende Handhabung der AEM 
 
 >[!TIP]
 >
->In AEM sind Tastaturbefehle verfügbar. Insbesondere wenn [Verwenden der Sites-Konsole](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) und [den Seiteneditor](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
+>In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Insbesondere wenn [Verwenden der Sites-Konsole](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) und [den Seiteneditor](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
 
 {{edge-delivery-authoring}}
 
@@ -36,7 +36,7 @@ Damit Sie ein gutes Verständnis der grundlegenden Funktionen in AEM erhalten, w
 
 Wenn eine Benutzerin oder ein Benutzer zum ersten Mal auf eine Konsole zugreift, wird ein Tutorial zur Produktnavigation gestartet. Nehmen Sie sich einen Moment Zeit, um sich das Programm anzusehen und einen guten Überblick über den grundlegenden Umgang mit AEM zu erhalten.
 
-![Navigations-Tutorial](assets/tutorial.png)
+![Navigations-Tutorial](assets/basic-handling-tutorial.png)
 
 Wählen Sie **Weiter** aus, um zur nächsten Seite des Überblicks zu wechseln. Wählen Sie zum Schließen die Option **Schließen** oder eine Stelle außerhalb des Dialogfelds „Überblick“ aus.
 
@@ -48,11 +48,11 @@ Sie können mithilfe des globalen Navigationsfensters zwischen den Konsolen navi
 
 Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließen** klicken oder tippen. Sie kehren dann zu Ihrer vorherigen Position zurück.
 
-![Navigationsfenster obere Leiste](assets/basic-handling-navigation-bar.png)
+![Navigationsfenster obere Leiste](assets/basic-handling-navigation-options.png)
 
 Die globale Navigation verfügt über zwei Fenster, die am linken Bildschirmrand durch Symbole dargestellt werden:
 
-* **[Navigation](#navigation-panel)** - Wird durch einen Kompass und das Standardbedienfeld bei der Anmeldung bei AEM dargestellt
+* **[Navigation](#navigation-panel)**: Wird durch einen Kompass und das Standardbedienfeld bei der Anmeldung bei AEM dargestellt
 * **[Tools](#tools-panel)** – dargestellt durch einen Hammer
 
 Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
@@ -86,31 +86,37 @@ Im **Instrumente** verfügt über ein seitliches Bedienfeld mit einem Kategorieb
 
 Die Kopfzeile befindet sich immer am oberen Rand des Bildschirms. Die meisten Optionen in der Kopfzeile bleiben unabhängig von Ihrer Position im System gleich, manche sind aber kontextspezifisch.
 
-![Navigationskopfzeile](/help/sites-cloud/authoring/assets/navigation-bar.png)
+![Navigationskopfzeile](/help/sites-cloud/authoring/assets/basic-handling-navigation-bar.png)
 
 * [Globale Navigation](#global-navigation) - Wählen Sie die **Adobe Experience Manager** -Link zur Navigation zwischen Konsolen.
 
-  ![Globale Navigation](/help/sites-cloud/authoring/assets/global-navigation.png)
+  ![Globale Navigation](/help/sites-cloud/authoring/assets/basic-handling-global-navigation.png)
 
-* [Suche](/help/sites-cloud/authoring/search.md) - Sie können auch die [Tastaturbefehl](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (Schrägstrich), um die Suche über eine beliebige Konsole aufzurufen.
+* Feedback
 
-  ![Suchsymbol](/help/sites-cloud/authoring/assets/search-icon.png)
+  ![Feedback-Schaltfläche](/help/sites-cloud/authoring/assets/basic-handling-feedback.png)
+
+* Ihre IMS-Organisation - Wählen Sie diese Option aus, um sie bei Bedarf zu ändern.
 
 * [Lösungen](https://www.adobe.com/experience-cloud.html) - Wählen Sie diese Option aus, um auf Ihre anderen Adobe-Lösungen zuzugreifen.
 
-  ![Schaltfläche „Lösungen“](/help/sites-cloud/authoring/assets/solutions.png)
+  ![Schaltfläche „Lösungen“](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
+
+* [Suche](/help/sites-cloud/authoring/search.md) - Sie können auch die [Tastaturbefehl](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (Schrägstrich), um die Suche über eine beliebige Konsole aufzurufen.
+
+  ![Suchsymbol](/help/sites-cloud/authoring/assets/basic-handling-search-icon.png)
 
 * [Hilfe](#accessing-help)
 
-  ![Schaltfläche „Hilfe“](/help/sites-cloud/authoring/assets/help.png)
+  ![Schaltfläche „Hilfe“](/help/sites-cloud/authoring/assets/basic-handling-help-icon.png)
 
 * [Benachrichtigungen](/help/sites-cloud/authoring/inbox.md) - Dieses Symbol ist mit der Anzahl der aktuell zugewiesenen unvollständigen Benachrichtigungen gekennzeichnet.
 
-  ![Schaltfläche „Benachrichtigungen“](/help/sites-cloud/authoring/assets/notifications.png)
+  ![Schaltfläche „Benachrichtigungen“](/help/sites-cloud/authoring/assets/basic-handling-notifications.png)
 
 * [Benutzereigenschaften](/help/sites-cloud/authoring/account-environment.md) - Wählen Sie diese Option aus, um Ihre Benutzereinstellungen zu ändern.
 
-  ![Schaltfläche „Benutzereigenschaften“](/help/sites-cloud/authoring/assets/user-properties.png)
+  ![Schaltfläche „Benutzereigenschaften“](/help/sites-cloud/authoring/assets/basic-handling-user-properties.png)
 
 ## Zugreifen auf die Hilfe {#accessing-help}
 
