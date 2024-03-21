@@ -2,10 +2,10 @@
 title: Veraltete und entfernte Funktionen
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 1da8d9395df3dd2efee7f6a57197aa3f2b27b1a4
+source-git-commit: b675ff42eeaeb124e8789480a51684d359429d15
 workflow-type: tm+mt
-source-wordcount: '2068'
-ht-degree: 100%
+source-wordcount: '2146'
+ht-degree: 96%
 
 ---
 
@@ -42,6 +42,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 | [!DNL Assets] | FFmpeg-Transcodierung von Videos. | Verwenden Sie für die Generierung von FFmpeg-Miniaturen [Asset-Microservices](/help/assets/asset-microservices-overview.md). Verwenden Sie für die von FFmpeg-Transcodierung [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | Benutzeroberfläche für die Strukturreplikation auf der Registerkarte „Verteilung“ des Replikationsagenten (wird nach dem 30. September 2021 entfernt) | Ansätze für [Veröffentlichungen verwalten](/help/operations/replication.md#manage-publication) oder [Workflows zur Veröffentlichung von Inhaltsbäumen](/help/operations/replication.md#publish-content-tree-workflow) |
 | [!DNL Foundation] | Weder die Registerkarte „Verteilung“ des Administrationsbildschirms des Replikationsagenten noch die Replikations-API können für die Replikation von Inhaltspaketen von über 10 MB verwendet werden. Verwenden Sie stattdessen entweder die Funktion [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder den [Workflow für die Veröffentlichung der Inhaltsstruktur](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | Integrationen mit Anmeldeinformationen, die aus Adobe Developer Console-Projekten generiert wurden, verlieren allmählich die Unterstützung für JWT-Anmeldedaten (Service Account). Neue JWT-Anmeldedaten (Service Account) können am oder nach dem 1. Mai 2024 nicht in der Adobe Developer Console erstellt werden. Vorhandene JWT-Anmeldeinformationen können jedoch bis zum 1. Januar 2025 weiterhin für bereits konfigurierte Integrationen verwendet werden. Ab diesem Zeitpunkt funktionieren die vorhandenen JWT-Anmeldeinformationen (Service Account) nicht mehr und Kunden müssen zu OAuth Server-zu-Server-Server-Anmeldeinformationen migrieren. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console) | [Migrieren](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) zu OAuth Server-zu-Server-Anmeldeinformationen. |
 
 ## Entfernte Funktionen {#removed-features}
 
