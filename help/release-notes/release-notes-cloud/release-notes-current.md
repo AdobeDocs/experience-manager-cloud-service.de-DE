@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5f780f5e8fa9289b35eefbbd4c3a71d37a7f465a
+source-git-commit: 8a64e2ca1dc3987558c36346422ee43d202d9ecc
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 91%
@@ -111,7 +111,7 @@ Dynatrace-Kundinnen und -Kunden können ihre AEM-Nutzung überwachen. [Lesen Sie
 
 ### CDN-Konfiguration Frühkindlicher Anwender {#cdn-config-early-adopter}
 
-Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md), das die optional lizenzierbaren Web Application Firewall (WAF)-Regeln enthält, gibt es eine Möglichkeit, die Configuration Pipeline zu verwenden, um andere Typen der CDN-Konfiguration zu deklarieren und bereitzustellen. Treten Sie dem frühen Adopter-Programm per E-Mail bei. **aemcs-cdn-config-adopter@adobe.com** Zugriff auf:
+Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md), das die optional lizenzierbaren Web Application Firewall (WAF)-Regeln enthält, gibt es eine Möglichkeit, die Configuration Pipeline zum Deklarieren und Bereitstellen zu verwenden [andere Typen von CDN-Konfigurationen](/help/implementing/dispatcher/cdn-configuring-traffic.md). Treten Sie dem frühen Adopter-Programm per E-Mail bei. **aemcs-cdn-config-adopter@adobe.com** Zugriff auf:
 * 301/302 Client-seitige Umleitungen
 * Proxying-Anfragen am Edge zu beliebigen Ursprüngen
 * URL-Transformationen
