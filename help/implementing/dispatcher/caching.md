@@ -3,7 +3,7 @@ title: Caching in AEM as a Cloud Service
 description: Erfahren Sie mehr über die Caching-Grundlagen in AEM as a Cloud Service.
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: d6e522cc18441a642e3434b6e5eff893d8f69952
+source-git-commit: 8215686031de1bc37ce37bfdce252b3997646042
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 98%
@@ -278,7 +278,7 @@ Im Allgemeinen ist es nicht erforderlich, den Dispatcher-Cache zu invalidieren. 
 Wie bei früheren Versionen von AEM wird beim Veröffentlichen oder Aufheben der Veröffentlichung von Seiten der Inhalt aus dem Dispatcher-Cache gelöscht. Wenn ein Caching-Problem vermutet wird, sollten Sie die betreffenden Seiten erneut veröffentlichen und sicherstellen, dass ein virtueller Host verfügbar ist, der dem `ServerAlias`-Localhost entspricht, der für die Dispatcher-Cache-Invalidierung erforderlich ist.
 
 >[!NOTE]
->Stellen Sie für eine ordnungsgemäße Dispatcher-Invalidierung sicher, dass Anforderungen von &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;.local&quot;, &quot;\*.adobeaemcloud.com&quot;und &quot;\*.adobeaemcloud.net&quot;alle übereinstimmen und von einer vhost-Konfiguration verarbeitet werden, damit die Anfrage bereitgestellt werden kann. Sie können diese Aufgabe ausführen, indem Sie die globale Übereinstimmung „*“ in einer alle Fälle abdeckenden vhost-Konfiguration verwenden, entsprechend dem Muster in der Referenz zum [AEM-Archetyp](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). Sie können auch sicherstellen, dass die zuvor erwähnte Liste von einem der virtuellen Hosts erfasst wird.
+>Stellen Sie für eine ordnungsgemäße Dispatcher-Invalidierung sicher, dass Anforderungen von &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;\*.local&quot;, &quot;\*.adobeaemcloud.com&quot;und &quot;\*.adobeaemcloud.net&quot;von einer vhost-Konfiguration abgeglichen und verarbeitet werden, damit die Anfrage verarbeitet werden kann. Sie können diese Aufgabe ausführen, indem Sie die globale Übereinstimmung „*“ in einer alle Fälle abdeckenden vhost-Konfiguration verwenden, entsprechend dem Muster in der Referenz zum [AEM-Archetyp](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). Sie können auch sicherstellen, dass die zuvor erwähnte Liste von einem der virtuellen Hosts erfasst wird.
 
 Wenn die Publishing-Instanz eine neue Version einer Seite oder eines Assets von Author erhält, verwendet sie den Flush-Agenten, um die entsprechenden Pfade auf ihrem Dispatcher zu invalidieren. Der aktualisierte Pfad wird zusammen mit den übergeordneten Elementen bis zu einer Ebene aus dem Dispatcher-Cache entfernt (Sie können diese Ebene mit [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#invalidating-files-by-folder-level) konfigurieren).
 
