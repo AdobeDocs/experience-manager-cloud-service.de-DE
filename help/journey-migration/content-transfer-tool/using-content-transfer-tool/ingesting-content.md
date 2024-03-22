@@ -2,10 +2,10 @@
 title: Aufnehmen von Inhalten in Cloud Service
 description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ihrem Migrationssatz in eine Cloud Service-Zielinstanz aufnehmen können.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 8795d9d2078d9f49699ffa77b1661dbe5451a4a2
+source-git-commit: de05abac3620b254343196a283cef198f434cfca
 workflow-type: tm+mt
-source-wordcount: '2534'
-ht-degree: 95%
+source-wordcount: '2752'
+ht-degree: 87%
 
 ---
 
@@ -211,6 +211,14 @@ In der Notiz `Node property value in MongoDB` in [Voraussetzungen für das Conte
 >abstract="Die Extraktion, auf die die Aufnahme wartete, wurde nicht erfolgreich abgeschlossen. Die Aufnahme wurde zurückgesetzt, da sie nicht ausgeführt werden konnte."
 
 Bei einer Aufnahme, die mit einer laufenden Extraktion als Migrationssatz für die Quelle erstellt wurde, wird geduldig gewartet, bis diese Extraktion erfolgreich ist, und zu diesem Zeitpunkt normal gestartet. Wenn die Extraktion fehlschlägt oder gestoppt wird, werden die Aufnahme und der dazugehörige Indizierungsvorgang nicht gestartet, sondern zurückgesetzt. Überprüfen Sie in diesem Fall die Extraktion, um festzustellen, warum sie fehlgeschlagen ist, beheben Sie das Problem und beginnen Sie erneut mit dem Extrahieren. Sobald die feste Extraktion ausgeführt wird, kann eine neue Aufnahme geplant werden.
+
+### Gelöschtes Asset nach der erneuten Ausführung der Erfassung nicht vorhanden
+
+Im Allgemeinen wird eine Änderung der Cloud-Umgebungs-Daten zwischen den einzelnen Aufnahmen nicht empfohlen.
+
+Wenn ein Asset mithilfe der Touch-Benutzeroberfläche von Assets aus dem Cloud Service-Ziel gelöscht wird, werden die Knotendaten gelöscht, aber der Asset-Blob mit dem  wird nicht sofort gelöscht. Sie ist zum Löschen markiert, sodass sie nicht mehr in der Benutzeroberfläche angezeigt wird. Sie verbleibt jedoch im Datenspeicher, bis die Speicherbereinigung erfolgt und der Blob entfernt wird.
+
+In dem Szenario, in dem ein zuvor migriertes Asset gelöscht wird und die nächste Aufnahme ausgeführt wird, bevor der Speicherberater das Löschen des Assets abgeschlossen hat, wird beim Erfassen desselben Migrationssatzes das gelöschte Asset nicht wiederhergestellt. Wenn die Erfassung die Cloud-Umgebung für das Asset überprüft, liegen keine Knotendaten vor. Daher kopiert die Erfassung die Knotendaten in die Cloud-Umgebung. Wenn jedoch der Blob-Store überprüft wird, sieht er, dass der Blob vorhanden ist, und überspringt das Kopieren des Blob. Daher sind die Metadaten nach der Erfassung vorhanden, wenn Sie das Asset über die Touch-Benutzeroberfläche betrachten, das Bild jedoch nicht. Beachten Sie, dass Migrationssätze und die Inhaltsaufnahme nicht für die Bearbeitung dieses Falls entwickelt wurden. Sie zielen darauf ab, der Cloud-Umgebung neue Inhalte hinzuzufügen und zuvor migrierte Inhalte nicht wiederherzustellen.
 
 ## Wie geht es weiter {#whats-next}
 
