@@ -1,6 +1,6 @@
 ---
 title: Von Tabellen in Forms - Überarbeiten von Feldvalidierungen für adaptive Forms
-description: Erstellen Sie leistungsstarke Formulare schneller mit Tabellen und adaptiven Forms-Blockfeldern. Dieses Handbuch hilft Ihnen beim Erstellen benutzerdefinierter Validierungen für EDS Forms Block-Felder.
+description: Erstellen Sie leistungsstarke Formulare schneller mit Tabellen und adaptiven Forms-Blockfeldern. Diese Anleitung hilft Ihnen beim Erstellen benutzerdefinierter Validierungen für EDS-Formularblock-Felder.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
@@ -8,25 +8,25 @@ exl-id: 16e1d42a-42d0-4335-ba81-feedea7ed7d7
 source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 0%
+ht-degree: 80%
 
 ---
 
-# Hinzufügen von Überprüfungen zu Formularfeldern
+# Hinzufügen von Validierungen zu Formularfeldern
 
 Der adaptive Forms-Block verfügt über integrierte Validierungsfunktionen. Diese Validierungen werden in modernen Browsern basierend auf dem ausgewählten Feldtyp und den von Ihnen bereitgestellten zusätzlichen Eigenschaften automatisch angewendet.
 
-## Typen und Validierung von Feldern
+## Grundlegendes zu Feldtypen und Feldvalidierungen
 
-Der adaptive Forms-Block unterstützt eine Vielzahl von [HTML-5-Eingabetypen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), einschließlich Text, E-Mail, Zahl, Datum und mehr. Es wird auch berücksichtigt [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), Auswahl und Feldsatz sowie umfassende Eingabedokumentvalidierungsfunktionen, die mit HTML-5 verbunden sind.
+Der adaptive Forms-Block unterstützt eine Vielzahl von [HTML-5-Eingabetypen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), einschließlich Text, E-Mail, Zahl, Datum und mehr. Ebenfalls berücksichtigt werden Elemente für [Textbereich](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), Auswahl und Feldsatz sowie umfassende Eingabevalidierungsfunktionen, die zu HTML5 gehören.
 
-verwendet HTML-Feldtypen, um die Art der Daten zu definieren, die ein Benutzer eingeben kann. Verschiedene Feldtypen verfügen über unterschiedliche integrierte Validierungsregeln:
+Die HTML-Feldtypen dienen dazu, die Art der Daten zu definieren, die Benutzende eingeben können. Verschiedene Feldtypen verfügen über unterschiedliche integrierte Validierungsregeln:
 
-E-Mail: Dieser Feldtyp validiert automatisch die Benutzereingabe anhand eines allgemeinen Formats für E-Mail-Adressen. Benutzern, die eine ungültige E-Mail eingeben, wird eine Fehlermeldung angezeigt.
-Zahl: Dieser Feldtyp erlaubt nur numerische Eingaben. Benutzer, die nicht-numerische Zeichen eingeben, erhalten einen Fehler.
-Datum: Dieser Feldtyp validiert die Benutzereingabe anhand eines Standarddatumsformats. Daten, die außerhalb eines angemessenen Bereichs liegen, werden möglicherweise auch als ungültig gekennzeichnet.
-URL: Dieser Feldtyp validiert die Benutzereingabe anhand eines gültigen URL-Formats. Benutzern, die eine ungültige URL eingeben, wird eine Fehlermeldung angezeigt.
-Tel: Dieser Feldtyp wurde speziell für Telefonnummern entwickelt und kann die Überprüfung der Trigger auf der Grundlage bestimmter Länderformate (nicht allgemein unterstützt) ermöglichen.
+E-Mail: Dieser Feldtyp gleicht die Benutzereingabe automatisch mit einem allgemeinen Format für E-Mail-Adressen ab. Benutzenden, die eine ungültige E-Mail-Adresse eingeben, wird eine Fehlermeldung angezeigt.
+Zahl: Dieser Feldtyp lässt nur numerische Eingaben zu. Benutzenden, die nicht numerische Zeichen eingeben, wird ein Fehler angezeigt.
+Datum: Dieser Feldtyp gleicht die Benutzereingabe mit einem standardmäßigen Datumsformat ab. Daten, die außerhalb eines angemessenen Bereichs liegen, werden ggf. auch als ungültig gekennzeichnet.
+URL: Dieser Feldtyp gleicht die Benutzereingabe mit einem gültigen URL-Format ab. Benutzenden, die eine ungültige URL eingeben, wird eine Fehlermeldung angezeigt.
+Tel: Dieser Feldtyp ist speziell für Telefonnummern vorgesehen und kann eine Validierung auf Grundlage bestimmter Länderformate (nicht allgemein unterstützt) auslösen.
 
 
 

@@ -1,56 +1,56 @@
 ---
-title: Inhaltsmodellierung für AEM Authoring mit Edge Delivery Services-Projekten
-description: Erfahren Sie, wie die Inhaltsmodellierung für AEM Authoring mit Edge Delivery Services-Projekten funktioniert und wie Sie Ihre eigenen Inhalte modellieren.
+title: Inhaltsmodellierung für AEM-Authoring-Projekte mit Edge Delivery Services
+description: Erfahren Sie, wie die Inhaltsmodellierung für AEM-Authoring-Projekte mit Edge Delivery Services funktioniert und wie Sie eigene Inhalte modellieren.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
 workflow-type: tm+mt
 source-wordcount: '2095'
-ht-degree: 1%
+ht-degree: 94%
 
 ---
 
-# Inhaltsmodellierung für AEM Authoring mit Edge Delivery Services-Projekten {#content-modeling}
+# Inhaltsmodellierung für AEM-Authoring-Projekte mit Edge Delivery Services {#content-modeling}
 
-Erfahren Sie, wie die Inhaltsmodellierung für AEM Authoring mit Edge Delivery Services-Projekten funktioniert und wie Sie Ihre eigenen Inhalte modellieren.
+Erfahren Sie, wie die Inhaltsmodellierung für AEM-Authoring-Projekte mit Edge Delivery Services funktioniert und wie Sie eigene Inhalte modellieren.
 
 {{aem-authoring-edge-early-access}}
 
 ## Voraussetzungen {#prerequisites}
 
-Projekte, die AEM Authoring mit Edge Delivery Services verwenden, erben den Großteil der Mechanismen anderer Edge Delivery Services-Projekte, unabhängig von der Inhaltsquelle oder [Authoring-Methode.](/help/edge/authoring.md)
+Projekte, die AEM-Authoring mit Edge Delivery Services verwenden, erben den Großteil der Mechanismen anderer Edge Delivery Services-Projekte, und zwar unabhängig von der Inhaltsquelle oder [Authoring-Methode](/help/edge/authoring.md).
 
-Bevor Sie mit der Modellierung von Inhalten für Ihr Projekt beginnen, lesen Sie zunächst die folgende Dokumentation.
+Bevor Sie mit der Modellierung von Inhalten für Ihr Projekt beginnen, lesen Sie zunächst Folgendes:
 
-* [Erste Schritte – Entwicklertutorial](/help/edge/developer/tutorial.md)
+* [Erste Schritte – Entwickler-Tutorial](/help/edge/developer/tutorial.md)
 * [Markup, Abschnitte, Blöcke und automatische Blockerstellung](/help/edge/developer/markup-sections-blocks.md)
 * [Blocksammlung](/help/edge/developer/block-collection.md)
 
-Es ist wichtig, diese Konzepte zu verstehen, um ein überzeugendes Inhaltsmodell zu entwickeln, das auf inhaltsquellenunabhängige Weise funktioniert. Dieses Dokument enthält Details zu den Mechanismen, die speziell für AEM Authoring implementiert wurden.
+Es ist wichtig, diese Konzepte zu verstehen, um ein überzeugendes Inhaltsmodell zu entwickeln, das unabhängig von Inhaltsquellen funktioniert. Dieses Dokument enthält Details zu den Mechanismen, die speziell für das AEM-Authoring implementiert wurden.
 
 ## Standardinhalt {#default-content}
 
-**Standardinhalt** ist Inhalt, den ein Autor intuitiv auf eine Seite platzieren würde, ohne zusätzliche Semantik hinzuzufügen. Dazu gehören Text, Überschriften, Links und Bilder. Solche Inhalte sind in ihrer Funktion und ihrem Zweck selbsterklärend.
+**Standardinhalt** ist Inhalt, den eine Autorin oder ein Autor intuitiv auf eine Seite platzieren würde, ohne zusätzliche Semantik hinzuzufügen. Dazu gehören Text, Überschriften, Links und Bilder. Solche Inhalte sind in ihrer Funktion und ihrem Zweck selbsterklärend.
 
-In AEM wird dieser Inhalt als Komponenten mit sehr einfachen, vordefinierten Modellen implementiert, die alles enthalten, was in Markdown und HTML serialisiert werden kann.
+In AEM werden diese Inhalte als Komponenten mit sehr einfachen, vordefinierten Modellen implementiert, die alles enthalten, was in Markdown und HTML serialisiert werden kann.
 
-* **Text**: Rich-Text (einschließlich Listenelementen und starker oder kursiver Text)
+* **Text**: Rich-Text (einschließlich Listenelementen und fett oder kursiv formatiertem Text)
 * **Titel**: Text, Typ (h1-h6)
 * **Bild**: Quelle, Beschreibung
 * **Schaltfläche**: Text, Titel, URL, Typ (Standard, primär, sekundär)
 
-Das Modell dieser Komponenten ist Teil der [Vorlage für AEM Authoring mit Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
+Das Modell dieser Komponenten ist Teil der [Vorlage für das AEM-Authoring mit Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
 
-## Bausteine {#blocks}
+## Blöcke {#blocks}
 
-Blöcke werden verwendet, um reichhaltigere Inhalte mit bestimmten Stilen und Funktionen zu erstellen. Im Gegensatz zu Standardinhalten erfordern Blöcke keine zusätzliche Semantik. Blöcke können mit [Komponenten im AEM Seiteneditor.](/help/implementing/developing/components/overview.md)
+Blöcke werden verwendet, um vielfältigere Inhalte mit bestimmten Stilen und Funktionen zu erstellen. Im Gegensatz zu Standardinhalten erfordern Blöcke keine zusätzliche Semantik. Blöcke können mit [Komponenten im AEM-Seiteneditor](/help/implementing/developing/components/overview.md) verknüpft werden.
 
 Blöcke sind im Wesentlichen Inhaltselemente, die von JavaScript dekoriert und mit einem Stylesheet formatiert werden.
 
 ### Definition des Blockmodells {#model-definition}
 
-Bei Verwendung AEM Authoring mit Edge Delivery Services muss der Inhalt der Bausteine explizit modelliert werden, damit der Autor die Benutzeroberfläche zum Erstellen von Inhalten zur Verfügung stellt. Grundsätzlich müssen Sie ein Modell erstellen, damit die Authoring-Benutzeroberfläche weiß, welche Optionen dem Autor basierend auf dem Block präsentiert werden sollen.
+Beim AEM-Authoring mit Edge Delivery Services muss der Inhalt der Blöcke explizit modelliert werden, damit der Autorin oder dem Autor die Benutzeroberfläche zur Inhaltserstellung zur Verfügung gestellt wird. Grundsätzlich müssen Sie ein Modell erstellen, damit die Authoring-Benutzeroberfläche weiß, welche Optionen der Autorin oder dem Autor basierend auf dem Block präsentiert werden sollen.
 
-Die [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json) -Datei definiert das Blockmodell. Die im Komponentenmodell definierten Felder werden als Eigenschaften in AEM beibehalten und als Zellen in der Tabelle gerendert, aus der sich ein Block zusammensetzt.
+Die Datei [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json) definiert das Blockmodell. Die im Komponentenmodell definierten Felder werden als Eigenschaften in AEM beibehalten und als Zellen in der Tabelle gerendert, aus der sich ein Block zusammensetzt.
 
 ```json
 {
@@ -81,9 +81,9 @@ Die [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk
 }
 ```
 
-Beachten Sie, dass nicht jeder Block über ein Modell verfügen muss. Einige Blöcke sind einfach [container](#container) für eine Liste von untergeordneten Elementen, wobei jedes Kind über ein eigenes Modell verfügt.
+Nicht jeder Block muss über ein Modell verfügen. Einige Blöcke sind einfach [Container](#container) für eine Liste von untergeordneten Elementen. Dabei hat jedes untergeordnete Element ein eigenes Modell.
 
-Außerdem müssen Sie definieren, welche Blöcke vorhanden sind und mit dem universellen Editor zu einer Seite hinzugefügt werden können. Die [`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) -Datei listet die Komponenten so auf, wie sie vom universellen Editor zur Verfügung gestellt werden.
+Außerdem müssen Sie definieren, welche Blöcke vorhanden sind und mit dem universellen Editor zu einer Seite hinzugefügt werden können. Die Datei [`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) listet die Komponenten so auf, wie sie vom universellen Editor zur Verfügung gestellt werden.
 
 ```json
 {
@@ -103,35 +103,35 @@ Außerdem müssen Sie definieren, welche Blöcke vorhanden sind und mit dem univ
 }
 ```
 
-Es ist möglich, ein Modell für viele Blöcke zu verwenden. Einige Blöcke können beispielsweise ein Modell verwenden, das einen Text und ein Bild definiert.
+Es ist möglich, ein Modell für eine Vielzahl von Blöcken zu verwenden. Einige Blöcke können beispielsweise ein gemeinsames Modell haben, das einen Text und ein Bild definiert.
 
-Für jeden Baustein hat der Entwickler folgende Möglichkeiten:
+Für jeden Block gilt Folgendes:
 
-* Muss die `core/franklin/components/block/v1/block` Ressourcentyp, die generische Implementierung der Blocklogik in AEM.
-* Muss den Blocknamen definieren, der in der Tabellenüberschrift des Blocks wiedergegeben wird.
-   * Der Blockname wird verwendet, um den richtigen Stil und das richtige Skript zum Dekorieren des Blocks abzurufen.
-* Kann eine [Modell-ID.](/help/implementing/universal-editor/field-types.md#model-structure)
-   * Die Modell-ID ist ein Verweis auf das Modell der Komponente, das die Felder definiert, die dem Autor in der Eigenschaftenleiste zur Verfügung stehen.
-* Kann eine [Filter-ID.](/help/implementing/universal-editor/customizing.md#filtering-components)
+* Die Entwicklerin oder der Entwickler muss den Ressourcentyp `core/franklin/components/block/v1/block` verwenden, die generische Implementierung der Blocklogik in AEM.
+* Die Entwicklerin oder der Entwickler muss den Blocknamen definieren, der in der Tabellenüberschrift des Blocks gerendert wird.
+   * Anhand des Blocknamens werden der richtige Stil und das richtige Skript zum Dekorieren des Blocks abgerufen.
+* Die Entwicklerin oder der Entwickler kann eine [Modell-ID](/help/implementing/universal-editor/field-types.md#model-structure) definieren.
+   * Die Modell-ID ist ein Verweis auf das Modell der Komponente, das die Felder definiert, die der Autorin oder dem Autor in der Eigenschaftenleiste zur Verfügung stehen.
+* Die Entwicklerin oder der Entwickler kann eine [Filter-ID](/help/implementing/universal-editor/customizing.md#filtering-components) definieren.
    * Die Filter-ID ist ein Verweis auf den Filter der Komponente, der es ermöglicht, das Authoring-Verhalten zu ändern, z. B. indem begrenzt wird, welche untergeordneten Elemente zum Block oder Abschnitt hinzugefügt werden können oder welche RTE-Funktionen aktiviert sind.
 
 Alle diese Informationen werden in AEM gespeichert, wenn ein Block zu einer Seite hinzugefügt wird. Wenn der Ressourcentyp oder der Blockname fehlt, wird der Block nicht auf der Seite gerendert.
 
 >[!WARNING]
 >
->Es ist zwar möglich, benutzerdefinierte AEM-Komponenten zu implementieren, ist jedoch weder erforderlich noch zu empfehlen. Die Komponenten für die von AEM bereitgestellten Edge Delivery Services sind ausreichend und bieten bestimmte Schutzschienen, um die Entwicklung zu erleichtern.
+>Es ist zwar möglich, benutzerdefinierte AEM-Komponenten zu implementieren, was jedoch weder erforderlich noch zu empfehlen ist. Die von AEM für Edge Delivery Services bereitgestellten Komponenten sind ausreichend und bieten bestimmte Mechanismen für eine einfachere Entwicklung.
 >
->Die von AEM bereitgestellten Komponenten rendern ein Markup, das von [helix-html2md](https://github.com/adobe/helix-html2md) beim Veröffentlichen in Edge Delivery Services und durch [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) beim Laden einer Seite im Universal Editor. Das Markup ist der stabile Vertrag zwischen AEM und den anderen Teilen des Systems und ermöglicht keine Anpassungen. Aus diesem Grund dürfen Projekte die Komponenten nicht ändern und keine benutzerdefinierten Komponenten verwenden.
+>Sie rendern ein Markup, das beim Veröffentlichen in Edge Delivery Services von [helix-html2md](https://github.com/adobe/helix-html2md) und beim Laden einer Seite im universellen Editor von [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) genutzt werden kann. Das Markup ist der stabile Kontrakt zwischen AEM und den anderen Teilen des Systems und lässt keine Anpassungen zu. Aus diesem Grund dürfen Projekte die Komponenten nicht ändern und keine benutzerdefinierten Komponenten verwenden.
 
 ### Blockstruktur {#block-structure}
 
-Die Eigenschaften von Blöcken sind [definiert in den Komponentenmodellen](#model-definition) und als solche in AEM beibehalten. Eigenschaften werden als Zellen in der tabellenähnlichen Struktur des Blocks gerendert.
+Die Eigenschaften von Blöcken sind [in den Komponentenmodellen definiert](#model-definition) und werden als solche in AEM beibehalten. Eigenschaften werden als Zellen in der tabellenähnlichen Struktur des Blocks gerendert.
 
 #### Einfache Blöcke {#simple}
 
-Im einfachsten Formular rendert ein Block jede Eigenschaft in einer einzelnen Zeile/Spalte in der Reihenfolge, in der die Eigenschaften im Modell definiert sind.
+In der einfachsten Form rendert ein Block jede Eigenschaft in einer Zeile/Spalte in der Reihenfolge, in der die Eigenschaften im Modell definiert sind.
 
-Im folgenden Beispiel wird das Bild zuerst im Modell und dann in der Textzeile definiert. Sie werden also mit dem Bild zuerst und Text danach gerendert.
+Im folgenden Beispiel wird zuerst das Bild im Modell und dann der Text definiert. An diese Reihenfolge wird sich auch beim Rendern gehalten.
 
 >[!BEGINTABS]
 
@@ -166,7 +166,7 @@ Im folgenden Beispiel wird das Bild zuerst im Modell und dann in der Textzeile d
 </div>
 ```
 
->[!TAB Verzeichnis]
+>[!TAB Tabelle]
 
 ```text
 +---------------------------------------------+
@@ -180,7 +180,7 @@ Im folgenden Beispiel wird das Bild zuerst im Modell und dann in der Textzeile d
 
 >[!ENDTABS]
 
-Sie werden feststellen, dass einige Werttypen im Markup die Ableitung von Semantik zulassen und Eigenschaften in einzelnen Zellen kombiniert werden. Dieses Verhalten wird im Abschnitt beschrieben [Geben Sie Inference ein.](#type-inference)
+Sie stellen möglicherweise fest, dass einige Werttypen die Ableitung von Semantik im Markup zulassen und Eigenschaften in einzelnen Zellen kombiniert werden. Dieses Verhalten wird unter [Typableitung](#type-inference) beschrieben.
 
 #### Schlüssel-Wert-Block {#key-value}
 
@@ -188,7 +188,7 @@ In vielen Fällen wird empfohlen, das gerenderte semantische Markup zu dekoriere
 
 In anderen Fällen wird der Block jedoch als eine Schlüssel-Wert-Paar-ähnliche Konfiguration gelesen.
 
-Ein Beispiel hierfür ist die [Abschnitt-Metadaten.](/help/edge/developer/markup-sections-blocks.md#sections) In diesem Anwendungsfall kann der Block so konfiguriert werden, dass er als Schlüssel-Wert-Paar-Tabelle dargestellt wird. Siehe Abschnitt . [Abschnitte und Abschnittsmetadaten](#sections-metadata) für weitere Informationen.
+Ein Beispiel hierfür sind die [Abschnittsmetadaten.](/help/edge/developer/markup-sections-blocks.md#sections) In diesem Anwendungsfall kann der Block so konfiguriert werden, dass er als Schlüssel-Wert-Paar-Tabelle gerendert wird. Weitere Informationen finden Sie unter [Abschnitte und Abschnittsmetadaten](#sections-metadata).
 
 >[!BEGINTABS]
 
@@ -224,7 +224,7 @@ Ein Beispiel hierfür ist die [Abschnitt-Metadaten.](/help/edge/developer/markup
 </div>
 ```
 
->[!TAB Verzeichnis]
+>[!TAB Tabelle]
 
 ```text
 +-----------------------------------------------------------------------+
@@ -242,9 +242,9 @@ Ein Beispiel hierfür ist die [Abschnitt-Metadaten.](/help/edge/developer/markup
 
 #### Container-Blöcke {#container}
 
-Beide vorherigen Strukturen haben eine einzige Dimension: die Liste der Eigenschaften. Container-Blöcke ermöglichen das Hinzufügen von untergeordneten Elementen (normalerweise vom gleichen Typ oder Modell) und sind daher zweidimensional. Diese Blöcke unterstützen weiterhin ihre eigenen Eigenschaften, die zuerst als Zeilen mit einer einzelnen Spalte gerendert werden. Sie ermöglichen jedoch auch das Hinzufügen von untergeordneten Elementen, für die jedes Element als Zeile und jede Eigenschaft als Spalte in dieser Zeile gerendert wird.
+Beide vorherigen Strukturen haben eine einzige Dimension: die Liste der Eigenschaften. Container-Blöcke ermöglichen das Hinzufügen von untergeordneten Elementen (normalerweise vom gleichen Typ oder Modell) und sind daher zweidimensional. Diese Blöcke unterstützen weiterhin ihre eigenen Eigenschaften, die zuerst als Zeilen mit einer Spalte gerendert werden. Sie ermöglichen jedoch auch das Hinzufügen von untergeordneten Elementen, für die jedes Element als Zeile und jede Eigenschaft als Spalte in dieser Zeile gerendert wird.
 
-Im folgenden Beispiel akzeptiert ein Block eine Liste verknüpfter Symbole als untergeordnete Elemente, wobei jedes verknüpfte Symbol über ein Bild und einen Link verfügt. Beachten Sie die [Filter-ID](/help/implementing/universal-editor/customizing.md#filtering-components) in den Daten des Blocks eingestellt werden, um auf die Filterkonfiguration zu verweisen.
+Im folgenden Beispiel akzeptiert ein Block eine Liste verknüpfter Symbole als untergeordnete Elemente. Dabei verfügt jedes verknüpfte Symbol über ein Bild und einen Link. Achten Sie auf die in den Daten des Blocks festgelegte [Filter-ID](/help/implementing/universal-editor/customizing.md#filtering-components). Darüber wird auf die Filterkonfiguration verwiesen.
 
 >[!BEGINTABS]
 
@@ -303,7 +303,7 @@ Im folgenden Beispiel akzeptiert ein Block eine Liste verknüpfter Symbole als u
 </div>
 ```
 
->[!TAB Verzeichnis]
+>[!TAB Tabelle]
 
 ```text
 +------------------------------------------------------------ +
@@ -319,39 +319,39 @@ Im folgenden Beispiel akzeptiert ein Block eine Liste verknüpfter Symbole als u
 
 >[!ENDTABS]
 
-### Erstellen Semantischer Inhaltsmodelle für Blöcke {#creating-content-models}
+### Erstellen semantischer Inhaltsmodelle für Blöcke {#creating-content-models}
 
-Mit dem [erläuterte Funktionsweise der Blockstruktur,](#block-structure) Es ist möglich, ein Inhaltsmodell zu erstellen, das die in AEM 1:1 gespeicherten Inhalte der Bereitstellungsebene zuordnet.
+Auf Grundlage der [erläuterten Mechanismen der Blockstruktur](#block-structure) ist es nun möglich, ein Inhaltsmodell zu erstellen, das die in AEM gespeicherten Inhalte der Bereitstellungsebene eins zu eins zuordnet.
 
-Zu Beginn jedes Projekts muss ein Inhaltsmodell für jeden Block sorgfältig überdacht werden. Sie muss unabhängig von der Inhaltsquelle und dem Authoring-Erlebnis sein, damit Autoren sie wechseln oder kombinieren können, während Blockimplementierungen und -stile wiederverwendet werden. Weitere Informationen und allgemeine Leitlinien finden Sie unter [David&#39;s Model (nimm 2).](https://www.aem.live/docs/davidsmodel) Genauer gesagt, wird die [Blocksammlung](/help/edge/developer/block-collection.md) enthält einen umfangreichen Satz an Inhaltsmodellen für spezifische Anwendungsfälle gängiger Benutzeroberflächenmuster.
+In der Frühphase jedes Projekts muss ein Inhaltsmodell für jeden Block sorgfältig überdacht werden. Es muss unabhängig von der Inhaltsquelle und dem Authoring-Erlebnis sein. Nur so können sie von Autorinnen und Autoren gewechselt oder kombiniert werden, bei Wiederverwendung von Blockimplementierungen und Stilen. Weitere Informationen und allgemeine Leitlinien finden Sie unter [Davids Modell (Take 2).](https://www.aem.live/docs/davidsmodel) Genauer gesagt, enthält die [Blocksammlung](/help/edge/developer/block-collection.md) einen umfangreichen Satz an Inhaltsmodellen für spezifische Anwendungsfälle gängiger Benutzeroberflächenmuster.
 
-AEM Authoring mit Edge Delivery Services wirft dies die Frage auf, wie ein überzeugendes semantisches Inhaltsmodell bereitgestellt werden kann, wenn die Informationen mit Formularen erstellt werden, die aus mehreren Feldern bestehen, anstatt semantisches Markup im Kontext wie Rich Text zu bearbeiten.
+Beim AEM-Authoring mit Edge Delivery Services wirft dies die Frage auf, wie ein überzeugendes semantisches Inhaltsmodell bereitgestellt werden kann, wenn die Informationen mit aus mehreren Feldern bestehenden Formularen erstellt werden, anstatt semantisches Markup so wie Rich-Text kontextbezogen zu bearbeiten.
 
 Zur Lösung dieses Problems gibt es drei Methoden, die die Erstellung eines überzeugenden Inhaltsmodells erleichtern:
 
-* [Typeinsicht](#type-inference)
-* [Feldausblendung](#field-collapse)
+* [Typableitung](#type-inference)
+* [Ausblendung von Feldern](#field-collapse)
 * [Elementgruppierung](#element-grouping)
 
 >[!NOTE]
 >
->Blockimplementierungen können den Inhalt dekonstruieren und den Block durch ein clientseitig gerendertes DOM ersetzen. Dies ist zwar für Entwickler möglich und intuitiv, für Edge Delivery Services jedoch nicht die beste Vorgehensweise.
+>Blockimplementierungen können den Inhalt dekonstruieren und den Block durch ein Client-seitig gerendertes DOM ersetzen. Dies ist zwar für Entwickelnde möglich und intuitiv, für Edge Delivery Services jedoch nicht die beste Vorgehensweise.
 
-#### Typeinsicht {#type-inference}
+#### Typableitung {#type-inference}
 
-Für einige Werte können wir die semantische Bedeutung aus den Werten selbst ableiten. Zu diesen Werten gehören:
+Für einige Werte kann die semantische Bedeutung aus den Werten selbst abgeleitet werden. Zu solchen Werten zählen:
 
-* **Bilder** - Wenn ein Verweis auf eine Ressource in AEM ein Asset mit einem MIME-Typ ist, der mit `image/`, wird der Verweis als `<picture><img src="${reference}"></picture>`.
-* **Links** - Wenn eine Referenz in AEM vorhanden ist und kein Bild ist oder wenn der Wert mit `https?://`  oder `#`, wird der Verweis als `<a href="${reference}">${reference}</a>` .
-* **Rich-Text** - Wenn ein abgeschnittener Wert mit einem Absatz beginnt (`p`, `ul`, `ol`, `h1`-`h6`usw.), wird der Wert als Rich-Text gerendert.
-* **Klassennamen** - die `classes` -Eigenschaft wird als Blockoptionen behandelt und in der Tabellenüberschrift für [einfache Blöcke,](#simple) oder als Werteliste für Elemente in einer [Container-Block.](#container)
-* **Wertlisten** - Wenn ein Wert eine Eigenschaft mit mehreren Werten ist und der erste Wert keiner der vorherigen ist, werden alle Werte als kommagetrennte Liste verkettet.
+* **Bilder**: Wenn eine Referenz auf eine Ressource in AEM ein Asset mit einem MIME-Typ ist, der mit `image/` beginnt, wird die Referenz als `<picture><img src="${reference}"></picture>` gerendert.
+* **Links**: Wenn eine Referenz in AEM vorhanden ist, die kein Bild ist, oder wenn der Wert mit `https?://` oder `#` beginnt, wird die Referenz als `<a href="${reference}">${reference}</a>` gerendert.
+* **Rich-Text**: Wenn ein abgeschnittener Wert mit einem Absatz beginnt (`p`, `ul`, `ol`, `h1`-`h6` usw.), wird der Wert als Rich-Text gerendert.
+* **Klassennamen**: Die `classes`-Eigenschaft wird als Blockoptionen behandelt und in der Tabellenkopfzeile für [einfache Blöcke](#simple) bzw. als Werteliste für Elemente in einem [Container-Block](#container) gerendert.
+* **Wertelisten**: Wenn es sich bei einem Wert um eine Eigenschaft mit mehreren Werten handelt und der erste Wert keiner der vorherigen ist, werden alle Werte als kommagetrennte Liste verkettet.
 
-Alles andere wird als Text gerendert.
+Alles andere wird als einfacher Text gerendert.
 
-#### Feldausblendung {#field-collapse}
+#### Ausblendung von Feldern {#field-collapse}
 
-Beim Ausblenden von Feldern werden mehrere Feldwerte basierend auf einer Namenskonvention mithilfe der Suffixe zu einem einzigen semantischen Element zusammengefasst. `Title`, `Type`, `MimeType`, `Alt`, und `Text` (Groß-/Kleinschreibung beachten). Jede Eigenschaft, die mit einem dieser Suffixe endet, gilt nicht als Wert, sondern als Attribut einer anderen Eigenschaft.
+Beim Ausblenden von Feldern werden mehrere Feldwerte basierend auf einer Namenskonvention mithilfe der Suffixe zu einem einzigen semantischen Element zusammengefasst. `Title`, `Type`, `MimeType`, `Alt`, und `Text` (Groß-/Kleinschreibung beachten). Jede Eigenschaft, die mit einem dieser Suffixe endet, wird nicht als Wert, sondern als Attribut einer anderen Eigenschaft betrachtet.
 
 ##### Bilder {#image-collapse}
 
@@ -374,7 +374,7 @@ Beim Ausblenden von Feldern werden mehrere Feldwerte basierend auf einer Namensk
 </picture>
 ```
 
->[!TAB Verzeichnis]
+>[!TAB Tabelle]
 
 ```text
 ![A red car on a road][image0]
@@ -399,7 +399,7 @@ Beim Ausblenden von Feldern werden mehrere Feldwerte basierend auf einer Namensk
 
 >[!TAB Markup]
 
-Nein `linkType`oder `linkType=default`
+Kein `linkType` oder `linkType=default`
 
 ```html
 <a href="https://www.adobe.com" title="Navigate to adobe.com">adobe.com</a>
@@ -421,7 +421,7 @@ Nein `linkType`oder `linkType=default`
 </em>
 ```
 
->[!TAB Verzeichnis]
+>[!TAB Tabelle]
 
 ```text
 [adobe.com](https://www.adobe.com "Navigate to adobe.com")
@@ -450,7 +450,7 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 <h2>Getting started</h2>
 ```
 
->[!TAB Verzeichnis]
+>[!TAB Tabelle]
 
 ```text
 ## Getting started
@@ -460,11 +460,11 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 #### Elementgruppierung {#element-grouping}
 
-while [Feldausfall](#field-collapse) Bei der Elementgruppierung geht es darum, mehrere Eigenschaften zu einem einzigen semantischen Element zu kombinieren. Dabei geht es darum, mehrere semantische Elemente zu einer einzigen Zelle zu verketten. Dies ist besonders hilfreich in Anwendungsfällen, in denen der Autor in der Art und Anzahl der Elemente, die er erstellen kann, eingeschränkt werden sollte.
+Bei der [Ausblendung von Feldern](#field-collapse) werden mehrere Eigenschaften zu einem einzigen semantischen Element kombiniert, wohingegen es bei der Elementgruppierung darum geht, mehrere semantische Elemente zu einer einzigen Zelle zu verketten. Dies ist besonders hilfreich in Anwendungsfällen, in denen die Autorin oder der Autor in Bezug auf Art und Anzahl der Elemente, die sie bzw. er erstellen kann, eingeschränkt werden soll.
 
-Beispielsweise kann eine Teaser-Komponente dem Autor erlauben, nur einen Untertitel, einen Titel und eine einzelne Absatzbeschreibung sowie maximal zwei Aktionsaufruf-Schaltflächen zu erstellen. Wenn Sie diese Elemente gruppieren, erhalten Sie ein semantisches Markup, das ohne weitere Maßnahmen formatiert werden kann.
+Beispielsweise kann eine Teaser-Komponente der Autorin oder dem Autor erlauben, nur einen Untertitel, einen Titel und eine einzelne Absatzbeschreibung sowie maximal zwei Aktionsaufruf-Schaltflächen zu erstellen. Wenn Sie diese Elemente gruppieren, erhalten Sie ein semantisches Markup, das ohne weitere Maßnahmen formatiert werden kann.
 
-Die Elementgruppierung verwendet eine Benennungsregel, bei der der Gruppenname durch einen Unterstrich von jeder Eigenschaft in der Gruppe getrennt wird. Das Reduzieren der Eigenschaften in einer Gruppe funktioniert wie zuvor beschrieben.
+Die Elementgruppierung verwendet eine Namenskonvention, bei der der Gruppenname durch einen Unterstrich von jeder Eigenschaft in der Gruppe getrennt wird. Die Ausblendung der Felder für die Eigenschaften in einer Gruppe funktioniert wie zuvor beschrieben.
 
 >[!BEGINTABS]
 
@@ -511,7 +511,7 @@ Die Elementgruppierung verwendet eine Benennungsregel, bei der der Gruppenname d
 </div>
 ```
 
->[!TAB Verzeichnis]
+>[!TAB Tabelle]
 
 ```text
 +-------------------------------------------------+
@@ -531,13 +531,13 @@ Die Elementgruppierung verwendet eine Benennungsregel, bei der der Gruppenname d
 
 ## Abschnitte und Abschnittsmetadaten {#sections-metadata}
 
-Auf die gleiche Weise wie Entwickler mehrere [Blöcke,](#blocks) Sie können verschiedene Abschnitte definieren.
+Entwickelnde können verschiedene Abschnitte auf die gleiche Weise definieren, auf die sie auch mehrere [Blöcke](#blocks) definieren und modellieren.
 
-Das Inhaltsmodell von Edge Delivery Services lässt absichtlich nur eine Verschachtelungsebene zu, d. h. alle Standardinhalte oder -bausteine, die in einem Abschnitt enthalten sind. Um komplexere visuelle Komponenten zu erhalten, die andere Komponenten enthalten können, müssen sie daher als Abschnitte modelliert und mithilfe der clientseitigen automatischen Blockierung kombiniert werden. Typische Beispiele hierfür sind Tabulatoren und ausblendbare Abschnitte wie Akkordeons.
+Das Inhaltsmodell von Edge Delivery Services lässt absichtlich nur eine einzige Verschachtelungsebene zu, d. h. jeder Standard-Content oder -block, der in einem Abschnitt enthalten ist. Um komplexere visuelle Komponenten zu erhalten, die andere Komponenten enthalten können, müssen diese daher als Abschnitte modelliert und mithilfe der Client-seitigen automatischen Blockerstellung kombiniert werden. Typische Beispiele hierfür sind Registerkarten und ausblendbare Abschnitte wie Akkordeons.
 
-Ein Abschnitt kann auf die gleiche Weise wie ein Block definiert werden, jedoch mit dem Ressourcentyp von `core/franklin/components/section/v1/section`. Abschnitte können einen Namen und eine [Filter-ID,](/help/implementing/universal-editor/customizing.md#filtering-components) die von der [Universal Editor](/help/implementing/universal-editor/introduction.md) nur sowie eine [Modell-ID,](/help/implementing/universal-editor/field-types.md#model-structure) wird zum Rendern der Abschnittsmetadaten verwendet. Das Modell ist auf diese Weise das Modell des Bereichs-Metadatenblocks, der automatisch als Schlüssel-Wert-Block an einen Abschnitt angehängt wird, wenn dieser nicht leer ist.
+Ein Abschnitt kann auf die gleiche Weise wie ein Block definiert werden, jedoch mit dem Ressourcentyp `core/franklin/components/section/v1/section`. Abschnitte können einen Namen und eine [Filter-ID](/help/implementing/universal-editor/customizing.md#filtering-components) haben, die nur vom [universellen Editor](/help/implementing/universal-editor/introduction.md) verwendet wird, sowie eine [Modell-ID](/help/implementing/universal-editor/field-types.md#model-structure), die zum Rendern der Abschnittsmetadaten verwendet wird. Das Modell ist auf diese Weise das Modell des Bereichsmetadatenblocks, der automatisch als Schlüssel-Wert-Block an einen Abschnitt angehängt wird, wenn dieser nicht leer ist.
 
-Die [model-ID](/help/implementing/universal-editor/field-types.md#model-structure) und [Filter-ID](/help/implementing/universal-editor/customizing.md#filtering-components) des Standardabschnitts `section`. Sie kann verwendet werden, um das Verhalten des Standardabschnitts zu ändern. Im folgenden Beispiel werden dem Abschnitt-Metadatenmodell einige Stile und ein Hintergrundbild hinzugefügt.
+Die [Modell-ID](/help/implementing/universal-editor/field-types.md#model-structure) und [Filter-ID](/help/implementing/universal-editor/customizing.md#filtering-components) des Standardabschnitts ist `section`. Sie kann verwendet werden, um das Verhalten des Standardabschnitts zu ändern. Im folgenden Beispiel werden dem Abschnittsmetadatenmodell einige Stile und ein Hintergrundbild hinzugefügt.
 
 ```json
 {
@@ -571,7 +571,7 @@ Die [model-ID](/help/implementing/universal-editor/field-types.md#model-structur
 }
 ```
 
-Im folgenden Beispiel wird ein Registerkartenabschnitt definiert, der zum Erstellen eines Tabulatorblocks verwendet werden kann, indem aufeinander folgende Abschnitte mit einem Tab-Titel-Datenattribut während der automatischen Blockierung in einen Tabulatorblock kombiniert werden.
+Im folgenden Beispiel wird ein Registerkartenabschnitt definiert, der zum Erstellen eines Registerkartenblocks verwendet werden kann, indem aufeinander folgende Abschnitte mit einem Registerkartentitel-Datenattribut während der automatischen Blockerstellung in einen Registerkartenblock kombiniert werden.
 
 ```json
 {
@@ -594,7 +594,7 @@ Im folgenden Beispiel wird ein Registerkartenabschnitt definiert, der zum Erstel
 
 ## Seitenmetadaten {#page-metadata}
 
-Dokumente können eine Seite enthalten [Metadatenblock,](/help/edge/authoring.md#metadata--seo) , mit dem definiert wird, welche `<meta>` -Elemente werden im `<head>` einer Seite. Die Seiteneigenschaften von Seiten in AEM as a Cloud Service sind denen zugeordnet, die standardmäßig für Edge Delivery Services verfügbar sind, z. B. `title`, `description`, `keywords`, usw.
+Dokumente können eine Seite [Metadatenblock](/help/edge/authoring.md#metadata--seo) enthalten, mit der definiert wird, welche `<meta>`-Elemente im `<head>` einer Seite gerendert werden. Die Seiteneigenschaften von Seiten in AEM as a Cloud Service sind denen zugeordnet, die standardmäßig für Edge Delivery Services verfügbar sind, z. B. `title`, `description`, `keywords`.
 
 Bevor Sie weitere Informationen zum Definieren Ihrer eigenen Metadaten erhalten, lesen Sie zunächst die folgenden Dokumente, um das Konzept der Seitenmetadaten zu verstehen.
 
@@ -605,13 +605,13 @@ Es ist auch möglich, zusätzliche Seitenmetadaten auf zwei Arten zu definieren.
 
 ### Metadaten-Tabellen {#metadata-spreadsheets}
 
-Es ist möglich, Metadaten anhand von Pfaden oder Pfadmustern in AEM as a Cloud Service tabellenähnlicher Weise zu definieren. Es gibt eine Authoring-Benutzeroberfläche für tabellenähnliche Daten, die Excel oder Google Tabellen ähneln.
+Es ist möglich, Metadaten in AEM as a Cloud Service anhand von Pfaden oder Pfadmustern auf tabellenähnliche Weise zu definieren. Es gibt eine Authoring-Benutzeroberfläche für tabellenähnliche Daten, die Excel- oder Google-Tabellen ähneln.
 
 Um eine solche Tabelle zu erstellen, erstellen Sie eine Seite und verwenden Sie die Metadatenvorlage in der Sites-Konsole.
 
-Definieren Sie in den Seiteneigenschaften des Arbeitsblatts die benötigten Metadatenfelder zusammen mit der URL. Fügen Sie dann Metadaten pro Seitenpfad oder Seitenpfadmuster hinzu.
+Definieren Sie in den Seiteneigenschaften der Kalkulationstabelle die benötigten Metadatenfelder zusammen mit der URL. Fügen Sie dann Metadaten pro Seitenpfad oder Seitenpfadmuster hinzu.
 
-Stellen Sie sicher, dass das Arbeitsblatt Ihrer Pfadzuordnung hinzugefügt wird, bevor Sie es veröffentlichen.
+Stellen Sie sicher, dass die Kalkulationstabelle Ihrer Pfadzuordnung hinzugefügt wird, bevor Sie sie veröffentlichen.
 
 ```json
 {

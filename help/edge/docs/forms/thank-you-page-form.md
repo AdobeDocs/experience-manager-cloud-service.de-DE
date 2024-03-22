@@ -1,12 +1,12 @@
 ---
 title: Benutzerdefinierte Dankesnachricht nach der Formularübermittlung anzeigen
-description: Erfahren Sie, wie Sie Dankeseiten und Weiterleitungen für Forms Block konfigurieren, um das Benutzererlebnis zu optimieren und die Journey der Benutzer zu optimieren.
+description: Erfahren Sie, wie Sie Dankesseiten und Umleitungen für den Formularblock konfigurieren, um das Anwendererlebnis zu optimieren und die Journey der Benutzenden zu optimieren.
 feature: Edge Delivery Services
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
 source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 4%
+ht-degree: 14%
 
 ---
 

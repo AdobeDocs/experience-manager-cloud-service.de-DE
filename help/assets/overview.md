@@ -8,7 +8,7 @@ exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '892'
-ht-degree: 86%
+ht-degree: 94%
 
 ---
 
@@ -62,7 +62,7 @@ Integrieren Sie AEM Assets in Document-basiertes Authoring für Edge Delivery Se
 
 ## Integration mit Adobe Journey Optimizer {#integration-with-ajo}
 
-[Adobe Journey Optimizer](https://business.adobe.com/de/products/journey-optimizer/adobe-journey-optimizer.html) vereinfacht das Journey-Management für Kunden, um Omnichannel-Kampagnen mit intelligenten Entscheidungen und Einblicken bereitzustellen. Bei der Erstellung von Nachrichten mit Journey Optimizer können Sie direkt über die Journey Optimizer-Benutzeroberfläche auf das as a Cloud Service Asset-Repository zugreifen. Benutzer erhalten über die eingebettete Benutzeroberfläche von Experience Manager Assets Zugriff auf Assets. Weitere Informationen finden Sie unter [Erstellen und Verwalten von Assets mit Experience Manager Assets](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html).
+[Adobe Journey Optimizer](https://business.adobe.com/de/products/journey-optimizer/adobe-journey-optimizer.html) vereinfacht das Journey-Management für Kundinnen und Kunden und stellt Omni-Channel-Kampagnen mit intelligenter Entscheidungsfindung und Erkenntnissen bereit. Bei der Erstellung von Nachrichten mit Journey Optimizer können Sie direkt über die Journey Optimizer-Benutzeroberfläche auf Assets als ein Cloud-Service-Repository zugreifen. Benutzende erhalten den Zugriff auf Assets über die eingebettete Benutzeroberfläche von Experience Manager Assets. Weitere Informationen finden Sie unter [Erstellen und Verwalten von Assets mit Experience Manager Assets](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html?lang=de).
 
 ## Neue Assets-Funktionen {#whats-new-assets}
 

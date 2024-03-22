@@ -5,7 +5,7 @@ exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 source-git-commit: 4fe8ed9c3f7b6589878da3317d15fede819bad54
 workflow-type: tm+mt
 source-wordcount: '589'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -28,8 +28,8 @@ Im Folgenden finden Sie die für Verbindungsanfragen erforderlichen Details:
 | **Feld** | **Beschreibung** |
 |---|---|
 | [!DNL Dynatrace Environment URL] | Die URL Ihrer Dynatrace-Umgebung.<br><br>Für Dynatrace SaaS-Kunden lautet das Format `https://<your-environment-id>.live.dynatrace.com`.<br><br>Für Dynatrace Managed-Kunden lautet das Format `https://<your-managed-url>/e/<environmentId>` |
-| [!DNL Dynatrace Environment ID] | Die ID Ihrer Dynatrace-Umgebung. Siehe [Wie erhalte ich meine Dynatrace-Verbindungsdetails?](#how-do-i-get-my-dynatrace-connection-details) für Informationen dazu. |
-| [!DNL Dynatrace Environment Token] | Ihr Token für die Dynatrace-Umgebung. Siehe [Wie erhalte ich meine Dynatrace-Verbindungsdetails?](#how-do-i-get-my-dynatrace-connection-details) für Informationen dazu.<br><br>Dieses Token sollte als geheim behandelt werden. Verwenden Sie daher entsprechende Sicherheitsmaßnahmen. Schützen Sie es zum Beispiel mit einem Passwort auf einer Website wie **zerobin.net**, auf die das Kunden-Support-Ticket verweisen kann. |
+| [!DNL Dynatrace Environment ID] | Die ID Ihrer Dynatrace-Umgebung. Lesen Sie [Wie erhalte ich meine Dynatrace-Verbindungsdetails?](#how-do-i-get-my-dynatrace-connection-details) für Informationen zum Erhalten der ID. |
+| [!DNL Dynatrace Environment Token] | Ihr Token für die Dynatrace-Umgebung. Lesen Sie [Wie erhalte ich meine Dynatrace-Verbindungsdetails?](#how-do-i-get-my-dynatrace-connection-details) für Informationen zum Erhalten des Tokens.<br><br>Dieses Token sollte als geheim behandelt werden. Verwenden Sie daher entsprechende Sicherheitsmaßnahmen. Schützen Sie es zum Beispiel mit einem Passwort auf einer Website wie **zerobin.net**, auf die das Kunden-Support-Ticket verweisen kann. |
 | [!DNL Dynatrace API access token] | Das API-Zugriffs-Token Ihrer Dynatrace-Umgebung.  Weitere Informationen zur Erstellung finden Sie unter [Erstellen eines Dynatrace-API-Zugriffs-Tokens](#create-dynatrace-access-token).<br><br>Dieses Token sollte als geheim behandelt werden. Verwenden Sie daher entsprechende Sicherheitsmaßnahmen. Schützen Sie es zum Beispiel mit einem Passwort auf einer Website wie **zerobin.net**, auf die das Kunden-Support-Ticket verweisen kann.<br><br>Hinweis: Dies ist nur für Dynatrace Managed erforderlich. |
 | [!DNL Dynatrace ActiveGate Port] | Ihr Dynatrace ActiveGate-Port, mit dem die AEM-Integration eine Verbindung herstellen soll.<br><br>Hinweis: Dies ist nur für Dynatrace Managed erforderlich. |
 | [!DNL Dynatrace ActiveGate Network Zone] | Ihre [Dynatrace ActiveGate-Netzwerkzone](https://docs.dynatrace.com/docs/manage/network-zones) zur effizienten Weiterleitung von AEM-Überwachungsdaten über Rechenzentren und Netzwerkregionen hinweg.<br><br>Hinweis: Eine Dynatrace ActiveGate-Netzwerkzone ist optional. |
@@ -39,16 +39,16 @@ Im Folgenden finden Sie die für Verbindungsanfragen erforderlichen Details:
 >
 >Nach der Integration von Dynatrace fließen keine Daten mehr an andere APM-Tools wie New Relic, wenn diese zuvor aktiviert waren.
 
-## Häufig gestellte Fragen {#faq}
+## FAQs {#faq}
 
 ### Welche Lizenz benötige ich für Dynatrace AEM Monitoring? {#which-license-do-i-need-for-AEM-monitoring}
 
-Für die Überwachung von Dynatrace AEM ist eine Dynatrace-Lizenz erforderlich. Dynatrace AEM Lizenzierung basiert auf [Vollstapelüberwachung für Kubernetes-Container](https://docs.dynatrace.com/docs/shortlink/dps-hosts#gib-hour-calculation-for-containers-and-application-only-monitoring). Die Speichergrößen der überwachten AEM-Container (Autoren- und Herausgeberdienste) werden automatisch erkannt.
+Für Dynatrace AEM Monitoring ist eine Dynatrace-Lizenz erforderlich. Die Dynatrace AEM-Lizenzierung basiert auf der [Full-Stack-Überwachung für Kubernetes-Container](https://docs.dynatrace.com/docs/shortlink/dps-hosts#gib-hour-calculation-for-containers-and-application-only-monitoring). Die Speichergrößen der überwachten AEM-Container (Author- und Publish-Service) werden automatisch erkannt.
 
-Die Adobe-Bereitstellungsspezifikationen pro AEM Umgebung sind:
+Die Adobe-Bereitstellungsspezifikationen pro AEM-Umgebung sind:
 
-* Produktion: Im Durchschnitt 4 Container, 16 GB Speicher pro
-* Produktionsfremd: Im Durchschnitt 4 Container, je 8 GB Arbeitsspeicher
+* Produktion: Im Durchschnitt 4 Container mit je 16 GB Speicher
+* Produktionsfremd: Im Durchschnitt 4 Container mit je 8 GB Speicher
 
 Weitere Informationen zur Dynatrace-Lizenzierung finden Sie unter [Dynatrace Platform-Abonnement](https://docs.dynatrace.com/docs/shortlink/dynatrace-platform-subscription).
 
@@ -61,9 +61,9 @@ Weitere Informationen zur Dynatrace-Lizenzierung finden Sie unter [Dynatrace Pla
    ```
 
 
-   Ersetzen `<environmentUrl>` mit Ihrer Dynatrace-Umgebungs-URL und `<accessToken>` mit Ihrem erstellten API-Zugriffstoken.
+   Ersetzen Sie `<environmentUrl>` durch die URL Ihrer Dynatrace-Umgebung und `<accessToken>` durch Ihr erstelltes API-Zugriffs-Token.
 
-1. Kopieren Sie die `<environmentId>` und `<environmentToken>` aus der Antwort-Payload und speichern Sie sie an einem gesicherten Ort.
+1. Kopieren Sie `<environmentId>` und `<environmentToken>` aus der Antwort-Payload und speichern Sie sie an einem sicheren Ort.
 
    ```
    {
@@ -76,10 +76,10 @@ Weitere Informationen zur Dynatrace-Lizenzierung finden Sie unter [Dynatrace Pla
 ### Erstellen eines Dynatrace-API-Zugriffs-Tokens {#create-dynatrace-access-token}
 
 1. Melden Sie sich bei Ihrer Dynatrace-Umgebung an.
-1. Navigieren Sie zu **[!DNL Access tokens]** und wählen **[!DNL Generate new token]**.
-1. Definieren Sie eine [!DNL token name].
+1. Navigieren Sie zu **[!DNL Access tokens]** und wählen Sie **[!DNL Generate new token]**.
+1. Definieren Sie einen [!DNL token name].
 1. Setzen Sie den Token-Umfang auf **[!DNL PaaS integration - Installer download]**.
-1. Auswählen **[!DNL Generate token]**.
+1. Wählen Sie **[!DNL Generate token]**.
 1. Kopieren Sie das generierte Zugriffs-Token und speichern Sie es an einem sicheren Ort.
 
 

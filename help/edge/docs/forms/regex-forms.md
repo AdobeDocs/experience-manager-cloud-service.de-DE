@@ -7,14 +7,14 @@ hidefromtoc: true
 source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 4%
+ht-degree: 87%
 
 ---
 
 
-# Häufig verwendete Regex-Ausdrücke für Überprüfungen
+# Häufig verwendete Regex-Ausdrücke für Validierungen
 
-Im Folgenden finden Sie einige reguläre Ausdrücke, mit denen Sie die Formularüberprüfung über das hinaus erweitern können, was moderne Browser bieten:
+Im Folgenden finden Sie einige reguläre Ausdrücke, mit denen Sie die Validierung von Formularen über das hinaus erweitern können, was moderne Browser bieten:
 
 ## Starkes Kennwort
 
@@ -22,7 +22,7 @@ Im Folgenden finden Sie einige reguläre Ausdrücke, mit denen Sie die Formular�
 ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$
 ```
 
-Stellt mindestens 8 Zeichen sicher mit:
+Gewährleistet mindestens 8 Zeichen mit:
 
 * Kleinbuchstabe (a-z)
 * Großbuchstabe (A-Z)
@@ -37,10 +37,10 @@ Stellt mindestens 8 Zeichen sicher mit:
 ^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$
 ```
 
-Ermöglicht Buchstaben, Zahlen und Sonderzeichen im Benutzernamen und Domänennamen.
+Erlaubt Buchstaben, Zahlen und Sonderzeichen im Benutzernamen und Domain-Namen.
 
 
-## Telefonnummer (Format &quot;USA&quot;)
+## Telefonnummer (US-Format)
 
 ```regex
 ^\(?([0-9]{3})\)?[-. ]([0-9]{3})[-. ]([0-9]{4})$
@@ -56,7 +56,7 @@ Validiert Telefonnummern im Format (XXX) XXX-XXXX.
 ^(http|https)://.*$
 ```
 
-Stellt eine gültige URL sicher, die mit http oder https beginnt.
+Gewährleistet eine gültige URL, die mit http oder https beginnt.
 
 
 
@@ -93,16 +93,16 @@ Validiert 5-stellige US-Postleitzahlen mit optionalem Bindestrich und 4-stellige
 ^[a-zA-Z0-9_]+$
 ```
 
-Ermöglicht Buchstaben, Zahlen und Unterstriche.
+Erlaubt Buchstaben, Zahlen und Unterstriche.
 
 
-## Farbhexadezimalcode
+## Farb-Hexadezimal-Code
 
 ```regex
 ^#[0-9a-fA-F]{6}$
 ```
 
-Validiert 6-stellige Hexadezimalfarbcodes. Beispiel: #FFFFFF.
+Validiert 6-stellige Hexadezimal-Farb-Codes. Beispiel: #FFFFFF.
 
 
 ## IP-Adresse

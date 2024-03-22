@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: 54135244d7b33ba3682633b455a5538474d3146e
 workflow-type: tm+mt
 source-wordcount: '788'
-ht-degree: 79%
+ht-degree: 80%
 
 ---
 
@@ -84,7 +84,7 @@ Um dies zu unterstützen, fügt Cloud Manager diese Standard-Umgebungsvariablen 
 
 Der Build-Prozess kann von bestimmten Konfigurationsvariablen abhängen, die nicht im Git-Repository platziert werden können oder zwischen Pipeline-Ausführungen mit derselben Verzweigung variieren müssen.
 
-Lesen Sie das Dokument . [Konfigurieren von Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) für weitere Informationen
+Weitere Informationen finden Sie im Dokument [Konfigurieren von Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).
 
 ## Installieren zusätzlicher Systempakete {#installing-additional-system-packages}
 

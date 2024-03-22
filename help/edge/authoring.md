@@ -54,7 +54,7 @@ Details zu den Bausteinen können dann in der Leiste Eigenschaften konfiguriert 
 
 Weitere Informationen zum Verfassen mit dem universellen Editor finden Sie im Dokument [Inhaltserstellung mit dem universellen Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-Lesen Sie hierzu [Erste Schritte für Entwickelnde für AEM Authoring mit Edge Delivery Services](/help/edge/edge-dev-getting-started.md), um zu erfahren, wie Sie Ihr eigenes Projekt mit AEM und Edge Delivery Services erstellen können.
+Lesen Sie hierzu das [Erste-Schritte-Handbuch für Entwickelnde zum AEM-Authoring mit Edge Delivery Services](/help/edge/edge-dev-getting-started.md), um zu erfahren, wie Sie Ihr eigenes Projekt mit AEM und Edge Delivery Services erstellen können.
 
 ## So beginnen Sie: {#how-to-get-started}
 

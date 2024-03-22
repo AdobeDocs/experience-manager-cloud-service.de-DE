@@ -7,7 +7,7 @@ exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: a86e68f9dd195512a689943b303225a48b5f8a23
 workflow-type: tm+mt
 source-wordcount: '2723'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -130,12 +130,12 @@ Das Funktionsarchiv für Adobe Experience Manager Forms as a Cloud Service biete
 
 1. Navigieren Sie zum Verzeichnis „crx-quickstart/install“. Wenn der Ordner nicht vorhanden ist, erstellen Sie ihn.
 
-1. Beenden Sie Ihre AEM-Instanz, platzieren Sie die [!DNL AEM Forms] Archiv für Zusatzfunktionen, `aem-forms-addon-<version>.far`im Installationsordner.
-1. Wechseln Sie zum aktiven Befehlsfenster und drücken Sie die `Ctrl + C` -Befehl zum Neustart des SDK.
+1. Beenden Sie Ihre AEM-Instanz und platzieren Sie das [!DNL AEM Forms]-Add-on-Funktionsarchiv `aem-forms-addon-<version>.far` im Installationsordner.
+1. Wechseln Sie zum aktiven Befehlsfenster und drücken Sie die Tastenkombination `Ctrl + C`, um das SDK neu zu starten.
 
    >[!NOTE]
    >
-   > Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+   > Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 ### Konfigurieren von Benutzern und Berechtigungen {#configure-users-and-permissions}
 

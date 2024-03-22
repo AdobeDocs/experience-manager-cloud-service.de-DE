@@ -91,7 +91,7 @@ Die folgenden Diagramme illustrieren den Prozess des Erstellens, Veröffentliche
 
 ![AEM Authoring](/help/edge/assets/aem-authoring-workflow.png)
 
-## Erstellen von Formularen
+## Beginnen mit dem Erstellen von Formularen
 
 * [Erste Schritte mit AEM Forms Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
 * [Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel](/help/edge/docs/forms/create-forms.md)

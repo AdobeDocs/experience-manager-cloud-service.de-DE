@@ -1,11 +1,11 @@
 ---
-title: Übersicht über Experience Fragments
+title: Überblick über Experience Fragments
 description: Erweitern Sie Experience Fragments in Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1642'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Die einfache HTML-Ausgabedarstellung fügt das Protokoll, den Host und den Konte
 
 * oder folgendermaßen enden: `-src` oder `-href`
 
-Beispiel:
+Zum Beispiel:
 
 `.../brooklyn-coat/master.plain.html`
 
@@ -47,7 +47,7 @@ Beispiel:
 
 ![Einfache HTML-Ausgabe](assets/xf-14.png)
 
-Der Selektor für einfache Ausgabedarstellungen verwendet einen Transformator im Gegensatz zu zusätzlichen Skripten. Die [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) wird als Transformator verwendet. Dieser Transformer wird wie folgt konfiguriert:
+Die Auswahl für einfache Ausgabedarstellungen verwendet einen Transformator im Gegensatz zu zusätzlichen Skripten. Der [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) wird als Transformator verwendet. Dieser Transformer wird wie folgt konfiguriert:
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
@@ -249,7 +249,7 @@ Geben Sie dem System an, ob es die Links neu schreiben muss, wenn ein Aufruf fü
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
-Beispiel:
+Zum Beispiel:
 
 ```java
 @Override

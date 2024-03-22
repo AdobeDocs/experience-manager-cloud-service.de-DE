@@ -5,7 +5,7 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: 4ac5ec2a2b8da90820734e4fc06c084c810c0724
 workflow-type: tm+mt
 source-wordcount: '1129'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ Wartungsaufgaben sind Prozesse, die nach einem Zeitplan ausgeführt werden, um d
 
 ## Konfigurieren von Wartungsaufgaben {#maintenance-tasks-configuring}
 
-In früheren Versionen von AEM konnten Sie Wartungsaufgaben mithilfe der Wartungskarte konfigurieren (Tools > Vorgänge > Wartung). Bei AEM as a Cloud Service ist die Wartungskarte nicht mehr vorhanden. Daher sollten Konfigurationen an die Quell-Code-Verwaltung übertragen und mithilfe von Cloud Manager bereitgestellt werden. Adobe verwaltet Wartungsaufgaben, deren Einstellungen von Kunden nicht konfiguriert werden können (z. B. die Speicherbereinigung). Andere Wartungsaufgaben können von Kunden konfiguriert werden, wie in der folgenden Tabelle beschrieben.
+In früheren Versionen von AEM konnten Sie Wartungsaufgaben mithilfe der Wartungskarte konfigurieren (Tools > Vorgänge > Wartung). Bei AEM as a Cloud Service ist die Wartungskarte nicht mehr vorhanden. Daher sollten Konfigurationen an die Quell-Code-Verwaltung übertragen und mithilfe von Cloud Manager bereitgestellt werden. Adobe verwaltet Wartungsaufgaben, deren Einstellungen von Kundinnen und Kunden nicht konfiguriert werden können (z. B. Datenspeicherbereinigung).  Andere Wartungsaufgaben können kundenseitig konfiguriert werden, wie in der folgenden Tabelle beschrieben.
 
 >[!CAUTION]
 >
@@ -44,7 +44,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
   <tr>
     <td>Versionsbereinigung</td>
     <td>Adobe</td>
-    <td>Für bestehende Umgebungen (die vor dem 15. April 2024 erstellt wurden) ist die Bereinigung deaktiviert und wird in Zukunft aktiviert, wobei der Standardwert 7 Jahre beträgt. Kunden können ihn mit niedrigeren benutzerdefinierten Werten konfigurieren (z. B. 30 Tage).<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Für neue Umgebungen (die nach dem Dienstag, 15. April 2024 erstellt wurden) ist die Bereinigung standardmäßig mit den unten stehenden Werten aktiviert, wobei Kundinnen und Kunden benutzerdefinierte Werte konfigurieren können.
+    <td>Für bestehende Umgebungen (die vor dem 15. April 2024 erstellt wurden) ist die Bereinigung deaktiviert und wird in Zukunft aktiviert, wobei der Standardwert 7 Jahre beträgt. Kunden können ihn mit niedrigeren benutzerdefinierten Werten konfigurieren (z. B. 30 Tage).<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Für neue Umgebungen (die ab dem Dienstag, 15. April 2024 erstellt wurden) ist die Bereinigung standardmäßig mit den unten stehenden Werten aktiviert, wobei Kundinnen und Kunden benutzerdefinierte Werte konfigurieren können.
      <ol>
        <li>Versionen, die älter als 30 Tage sind, werden entfernt</li>
        <li>Die letzten 5 Versionen der letzten 30 Tage werden beibehalten</li>

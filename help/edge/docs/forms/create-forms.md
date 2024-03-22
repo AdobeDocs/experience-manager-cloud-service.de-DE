@@ -1,12 +1,12 @@
 ---
 title: Erste Schritte mit dem AEM Forms Edge Delivery Service. Erstellen Sie ein Formular.
-description: Handwerkliche perfekte Formen, schnell! ⚡ AEM Forms Edge Delivery doc-basiertes Authoring = Blazing Speed & SEO-freundliche Formulare für glücklichere Benutzer und Suchmaschinen.
+description: Perfekte Formulare im Handumdrehen! ⚡ Dokumentenbasierte Inhaltserstellung mit AEM Forms Edge Delivery = Atemberaubende Geschwindigkeit und SEO-freundliche Formulare für glücklichere Benutzende und Suchmaschinen.
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 1%
+ht-degree: 62%
 
 ---
 
@@ -31,7 +31,7 @@ In diesem Dokument wird der lokale Ordner Ihres Edge Delivery Services-Projekts 
 
 
 
-## Formular erstellen
+## Erstellen eines Formulars
 
 <!-- 
 
@@ -64,52 +64,52 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 -->
 
-+++ Schritt 1: Erstellen Sie ein Formular mit Microsoft Excel oder Google Sheet.
++++ Schritt 1: Erstellen Sie ein Formular mit Microsoft Excel oder Google Tabellen.
 
 Anstatt durch komplexe Prozesse zu navigieren, kann das Erstellen eines Formulars mühelos mithilfe einer Tabelle erfolgen. Sie können die Zeilen und Spalten definieren, aus denen die Formularstruktur besteht. Jede Zeile stellt eine einzelne [Formularfeld](/help/edge/docs/forms/form-components.md#available-components) und die Spaltenüberschriften definieren die entsprechenden [Feldeigenschaften](/help/edge/docs/forms/form-components.md#components-properties).
 
-Betrachten Sie beispielsweise die folgende Tabelle, in der die Zeilen Felder für eine `enquiry` Formular- und Spaltenüberschriften definieren ihre Eigenschaften:
+Betrachten Sie beispielsweise die folgende Tabelle, in der die Zeilen Felder für ein `enquiry`-Formular darstellen und die Spaltenüberschriften ihre Eigenschaften definieren:
 
 ![Abfragetabelle](/help/edge/assets/enquiry-form-spreadsheet.png)
 
-So fahren Sie mit der Formularerstellung fort:
+So setzen Sie die Formularerstellung fort:
 
-1. Rufen Sie den Ordner AEM Edge-Bereitstellungsprojekt auf Microsoft SharePoint oder Google Drive auf.
+1. Rufen Sie den AEM Edge Delivery-Projektordner in Microsoft SharePoint oder Google Drive auf.
 
-1. Erstellen Sie eine Microsoft Excel-Arbeitsmappe oder ein Google-Blatt an einer beliebigen Stelle in Ihrem AEM Edge-Bereitstellungsprojektverzeichnis. Erstellen Sie beispielsweise eine Tabelle mit dem Namen `enquiry` im Projektverzeichnis AEM Edge-Bereitstellung auf Google Drive.
+1. Erstellen Sie eine Microsoft Excel-Arbeitsmappe oder ein Google-Blatt an einer beliebigen Stelle in Ihrem AEM Edge Delivery-Projektverzeichnis.  Erstellen Sie beispielsweise eine Tabelle mit dem Namen `enquiry` im AEM Edge Delivery-Projektverzeichnis auf Google Drive.
 
    ![Beispielinhalt auf dem Google-Laufwerk](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. Stellen Sie sicher, dass das Blatt für den entsprechenden AEM Benutzer freigegeben ist (z. B. `helix@adobe.com`) [gemäß den für Ihr Projekt angegebenen Konfigurationen](https://www.aem.live/docs/setup-customer-SharePoint). Gewähren Sie der Benutzer Bearbeitungsberechtigung für das Blatt.
+1. Stellen Sie sicher, dass das Blatt für die entsprechenden AEM-Benutzenden (z. B. `helix@adobe.com`) [gemäß den für Ihr Projekt angegebenen Konfigurationen freigegeben ist](https://www.aem.live/docs/setup-customer-SharePoint). Gewähren Sie für das Blatt die Berechtigung zum Bearbeiten durch Benutzende.
 
-1. Öffnen Sie die erstellte Tabelle und benennen Sie das Standardblatt in &quot;Standard freigegeben&quot; um.
+1. Öffnen Sie die erstellte Tabelle und benennen Sie das Standardblatt in „shared-default“ um.
 
-   ![Standard-Arbeitsblatt in &quot;shared-default&quot;umbenennen](/help/edge/assets/rename-sheet-to-shared-default.png)
+   ![Umbenennen des Standardblatts in „shared-default“](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Fügen Sie zum Hinzufügen der Formularfelder Zeilen und Spaltenüberschriften in das &quot;shared-default&quot;-Blatt ein. Jede Zeile sollte eine [Formularfeld](/help/edge/docs/forms/form-components.md#available-components), wobei die Spaltenüberschriften das entsprechende Feld definieren [properties](/help/edge/docs/forms/form-components.md#components-properties).
+1. Fügen Sie zum Hinzufügen der Formularfelder Zeilen und Spaltenüberschriften in das Blatt „shared-default“ ein. Jede Zeile sollte ein [Formularfeld](/help/edge/docs/forms/form-components.md#available-components) darstellen, wobei die Spaltenüberschriften die entsprechenden [Feldeigenschaften](/help/edge/docs/forms/form-components.md#components-properties) definieren.
 
 
-   Für einen schnellen Start sollten Sie den Inhalt der [Abfragetabelle](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) in Ihre Tabelle ein. Nachdem Sie den Inhalt kopiert haben, speichern Sie das Arbeitsblatt.
+   Für einen schnellen Start können Sie den Inhalt der [Abfragetabelle](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) in Ihre Tabelle kopieren. Speichern Sie die Tabelle, nachdem Sie den Inhalt kopiert haben.
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
 
-1. Verwendung [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) um eine Vorschau des Blattes anzuzeigen.
+1. Verwenden Sie [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content), um eine Vorschau des Blattes anzuzeigen.
 
-   ![Verwenden Sie AEM Sidekick, um eine Vorschau der Tabelle anzuzeigen](/help/edge/assets/preview-form.png)
+   ![Verwenden von AEM Sidekick, um eine Vorschau der Tabelle anzuzeigen](/help/edge/assets/preview-form.png)
 
-   Bei der Vorschau werden die Inhalte der Seite in neuen Browser-Registerkarten im JSON-Format angezeigt. Stellen Sie sicher, dass Sie die Vorschau-URL erfassen, da dies für die Wiedergabe des Formulars im nächsten Abschnitt erforderlich ist. Die URL hat das folgende Format:
+   Bei der Vorschau werden die Inhalte des Blattes in neuen Browser-Registerkarten im JSON-Format angezeigt. Stellen Sie sicher, dass Sie die Vorschau-URL erfassen, da dies für das Rendern des Formulars im nächsten Abschnitt erforderlich ist. Die URL hat das folgende Format:
 
 
    ```JSON
        https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
    ```
 
-   * `<branch>` bezieht sich auf die Verzweigung Ihres GitHub-Repository.
+   * `<branch>` bezieht sich auf die Verzweigung Ihres GitHub-Repositorys.
    * `<repository>` bezeichnet Ihr GitHub-Repository.
    * `<owner>` bezieht sich auf den Benutzernamen Ihres GitHub-Kontos, das Ihr GitHub-Repository hostet.
 
-   Wenn das Repository Ihres Projekts beispielsweise &quot;Portal&quot;heißt, befindet es sich unter dem Konto &quot;wkndforms&quot;und Sie die Verzweigung &quot;main&quot;verwenden, sieht die URL wie folgt aus:
+   Wenn das Repository Ihres Projekts beispielsweise „Portal“ heißt, befindet es sich unter dem Konto „wkndforms“. Wenn Sie die Verzweigung „main“ verwenden, sieht die URL wie folgt aus:
 
    `https://main--portal--wkndforms.hlx.page/enquiry.json`
 
@@ -119,13 +119,13 @@ So fahren Sie mit der Formularerstellung fort:
 +++ Schritt 2: Anzeigen einer Vorschau des Formulars mithilfe Ihrer Edge Delivery Services (EDS)-Seite.
 
 
-Bis jetzt haben Sie die Struktur des Formulars vorbereitet. Nun können Sie eine Vorschau des Formulars anzeigen:
+Bis jetzt haben Sie die Struktur des Formulars vorbereitet. So zeigen Sie nun eine Vorschau des Formulars an:
 
 1. Öffnen Sie Ihr Microsoft SharePoint- oder Google Drive-Konto und navigieren Sie zu Ihrem AEM Edge Delivery-Projektverzeichnis.
 
 
 
-1. Öffnen Sie eine Dokumentdatei (z. B. eine Indexdatei), um das Formular einzubetten. Alternativ können Sie ein neues Dokument erstellen.
+1. Öffnen Sie eine Dokumentdatei (z. B. eine Indexdatei), um das Formular einzubetten. Alternativ können Sie ein neues Formular erstellen.
 
 1. Wechseln Sie an die gewünschte Stelle im Dokument, an der Sie das Formular hinzufügen möchten.
 
@@ -138,20 +138,20 @@ Bis jetzt haben Sie die Struktur des Formulars vorbereitet. Nun können Sie eine
 
    ![Adaptiven Forms-Block zu Ihrer Webseite hinzufügen](/help/edge/assets/add-adaptive-forms-block.png)
 
-   Dieser Block dient als Platzhalter, in den das Formular eingebettet ist. Fügen Sie in der zweiten Zeile des Blocks die Vorschau-URL Ihrer `<form>.json` als Hyperlink.
+   Dieser Block dient als Platzhalter, in den das Formular eingebettet ist. Fügen Sie in der zweiten Zeile des Bausteins die Vorschau-URL Ihrer `<form>.json`-Datei als Hyperlink ein.
 
    >[!IMPORTANT]
    >
    >
-   > Stellen Sie sicher, dass die URL als Hyperlink formatiert ist, anstatt als Nur-Text angezeigt zu werden.
+   > Stellen Sie sicher, dass die URL als Hyperlink formatiert ist und nicht nur als reiner Text angezeigt wird.
 
 
-1. Verwendung [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) , um eine Vorschau des Dokuments anzuzeigen. Auf der Seite wird nun das Formular angezeigt. Hier ist beispielsweise das Formular, das auf der Variablen [Fragenübersicht](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
+1. Verwenden Sie [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content), um eine Vorschau des Dokuments anzuzeigen. Das Formular wird jetzt auf der Seite angezeigt. Hier basiert das Formular beispielsweise auf der [Abfragetabelle](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
 
 
-   [![Beispiel-EDS-Formular](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
+   [![Beispiel für ein EDS-Formular](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
 
-   Füllen Sie nun das Formular aus und klicken Sie auf die Senden-Schaltfläche. Es tritt ein Fehler ähnlich dem folgenden auf, da die Tabelle noch nicht für die Annahme der Daten konfiguriert ist.
+   Füllen Sie nun das Formular aus und klicken Sie auf die Schaltfläche „Absenden“. Es tritt ein Fehler ähnlich dem folgenden auf, da die Tabelle noch nicht für das Akzeptieren der Daten konfiguriert ist.
 
    ![Fehler bei Formularübermittlung](/help/edge/assets/form-error.png)
 
@@ -160,7 +160,7 @@ Bis jetzt haben Sie die Struktur des Formulars vorbereitet. Nun können Sie eine
 
 ## Nächster Schritt
 
-[Tabellenkalkulation vorbereiten](/help/edge/docs/forms/submit-forms.md) , um Daten bei der Formularübermittlung zu akzeptieren.
+[Bereiten Sie die Tabellenkalkulation vor](/help/edge/docs/forms/submit-forms.md), um Daten bei der Formularübermittlung zu akzeptieren.
 
 
 ## Siehe auch

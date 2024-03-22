@@ -6,14 +6,14 @@ exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
 source-wordcount: '2014'
-ht-degree: 0%
+ht-degree: 41%
 
 ---
 
 
 # Anpassen des Erscheinungsbilds Ihrer Formulare
 
-Forms ist von entscheidender Bedeutung für die Benutzerinteraktion auf Websites, sodass sie Daten eingeben können. Sie können Cascading Style Sheets (CSS) verwenden, um Felder eines Formulars zu formatieren, die visuelle Darstellung Ihrer Formulare zu verbessern und das Benutzererlebnis zu verbessern.
+Formulare sind von entscheidender Bedeutung für die Benutzerinteraktion auf Websites, da sie die Eingabe von Daten ermöglichen. Sie können Cascading Style Sheets (CSS) verwenden, um Felder eines Formulars zu formatieren, die visuelle Darstellung Ihrer Formulare zu verbessern und das Benutzererlebnis zu verbessern.
 
 Der Adaptive Forms-Block erzeugt eine einheitliche Struktur für alle Formularfelder. Die konsistente Struktur erleichtert die Entwicklung von CSS-Selektoren zur Auswahl und Formatierung von Formularfeldern basierend auf Feldtyp und Feldnamen.
 
@@ -30,18 +30,18 @@ Am Ende des Artikels:
 
 Bevor wir uns mit der Formatierung befassen, sollten wir das gemeinsame Formular lesen [Feldtypen](/help/edge/docs/forms/form-components.md) unterstützt durch den Adaptive Forms-Block:
 
-* Eingabefelder: Dazu gehören Texteingaben, E-Mail-Eingaben, Kennworteingaben und mehr.
-* Kontrollkästchengruppen: Dient zum Auswählen mehrerer Optionen.
-* Optionsfeldgruppen: Dient zum Auswählen nur einer Option aus einer Gruppe.
-* Dropdowns: Wird auch als Auswahlfelder bezeichnet und dient zum Auswählen einer Option aus einer Liste.
-* Bedienfelder/Container: Dient zum Gruppieren verwandter Formularelemente.
+* Eingabefelder: Dazu gehören Texteingaben, E-Mail-Eingaben, Kennworteingaben usw.
+* Kontrollkästchengruppen: Dienen zum Auswählen mehrerer Optionen.
+* Optionsfeldgruppen: Dienen zum Auswählen einer einzelnen Option aus einer Gruppe.
+* Dropdown-Listen: Werden auch als Auswahlfelder bezeichnet und dienen zum Auswählen einer Option aus einer Liste.
+* Bedienfelder/Container: Dienen zum Gruppieren zugehöriger Formularelemente.
 
-## Grundlegende Stilgrundsätze
+## Standard-Formatierungsgrundsätze
 
 Grundlagen [CSS-Grundkonzepte](https://www.w3schools.com/css/css_intro.asp) ist vor der Formatierung bestimmter Formularfelder von entscheidender Bedeutung:
 
-* [Selektoren](https://www.w3schools.com/css/css_selectors.asp): Mit CSS-Selektoren können Sie bestimmte HTML-Elemente für die Formatierung auswählen. Sie können Elementselektoren, Klassenselektoren oder ID-Selektoren verwenden.
-* [Eigenschaften](https://www.w3schools.com/css/css_syntax.asp): CSS-Eigenschaften definieren das visuelle Erscheinungsbild von Elementen. Zu den gebräuchlichen Eigenschaften für die Formatierung von Formularfeldern gehören Farbe, Hintergrundfarbe, Rahmen, Abstand, Rand und mehr.
+* [Selektoren](https://www.w3schools.com/css/css_selectors.asp): Mit CSS-Selektoren können Sie bestimmte HTML-Elemente für die Formatierung auswählen. Sie können die Elementauswahl, Klassenauswahl oder ID-Auswahl verwenden.
+* [Eigenschaften](https://www.w3schools.com/css/css_syntax.asp): CSS-Eigenschaften definieren das visuelle Erscheinungsbild von Elementen. Zu den allgemeinen Eigenschaften für die Formatierung von Formularfeldern gehören u. a. Farbe, Hintergrundfarbe, Rahmen, Abstand und Rand.
 * [Box-Modell](https://www.w3schools.com/css/css_boxmodel.asp): Das CSS-Box-Modell beschreibt die Struktur von HTML-Elementen als Inhaltsbereich, der von Abstand, Rahmen und Rändern umgeben ist.
 * Flexbox/Raster: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) und [Rasterlayouts](https://www.w3schools.com/css/css_grid.asp) sind leistungsstarke Tools zum Erstellen responsiver und flexibler Designs.
 
@@ -49,30 +49,30 @@ Grundlagen [CSS-Grundkonzepte](https://www.w3schools.com/css/css_intro.asp) ist 
 
 Der Adaptive Forms Block bietet eine standardisierte HTML-Struktur, die die Auswahl und Formatierung von Formularkomponenten vereinfacht:
 
-* **Standardstile aktualisieren**: Sie können die Standardstile eines Formulars ändern, indem Sie `/blocks/form/form.css file`. Diese Datei bietet einen umfassenden Stil für ein Formular, der mehrstufige Assistentenformulare unterstützt. Die Verwendung benutzerdefinierter CSS-Variablen ermöglicht eine einfache Anpassung, Wartung und einheitliche Formatierung in allen Formularen. Anweisungen zum Hinzufügen des adaptiven Forms-Blocks zu Ihrem Projekt finden Sie unter [Formular erstellen](/help/edge/docs/forms/create-forms.md).
+* **Aktualisieren von Standardstilen**: Sie können die Standardstile eines Formulars ändern, indem Sie die `/blocks/form/form.css file` bearbeiten. Diese Datei bietet eine umfassende Formatierung für ein Formular, das mehrstufige Assistentenformulare unterstützt. Der Schwerpunkt liegt auf der Verwendung benutzerdefinierter CSS-Variablen für eine einfache Anpassung, Wartung und einheitliche Formatierung in allen Formularen. Anweisungen zum Hinzufügen des adaptiven Forms-Blocks zu Ihrem Projekt finden Sie unter [Formular erstellen](/help/edge/docs/forms/create-forms.md).
 
-* **Anpassung**: Verwenden Sie die Standardeinstellung `forms.css` als Basis verwenden und anpassen, um das Erscheinungsbild Ihrer Formularkomponenten zu ändern, sodass es visuell ansprechend und benutzerfreundlich ist. Die Dateistruktur fördert die Organisation und verwaltet Stile für Formulare, wodurch konsistente Designs auf Ihrer Website gefördert werden.
+* **Anpassen**: Verwenden Sie die das Standard-`forms.css` als Basis und passen Sie es an, um das Look-and-Feel Ihrer Formularkomponenten zu ändern, sodass es visuell ansprechend und benutzerfreundlich ist. Die Dateistruktur fördert die Organisation und verwaltet Stile für Formulare, wodurch konsistente Designs auf Ihrer Website gefördert werden.
 
 ## Aufschlüsselung der Struktur von forms.css
 
 * **Globale Variablen:** Definiert unter `:root` Ebene, diese Variablen (`--variable-name`) speichern Werte, die im gesamten Stylesheet verwendet werden, um Konsistenz und einfache Aktualisierung zu gewährleisten. Diese Variablen definieren Farben, Schriftgrößen, Abstände und andere Eigenschaften. Sie können Ihre eigenen globalen Variablen deklarieren oder vorhandene ändern, um den Stil des Formulars zu ändern.
 
-* **Universelle Auswahlstile:** Die `*` Auswahl stimmt mit jedem Element im Formular überein, wobei sichergestellt wird, dass Stile standardmäßig auf alle Komponenten angewendet werden, einschließlich der Festlegung der `box-sizing` Eigenschaft auf `border-box`.
+* **Universelle Auswahlstile:** Die `*`-Auswahl stimmt mit jedem Element im Formular überein, wodurch sichergestellt wird, dass Stile standardmäßig auf alle Komponenten angewendet werden, einschließlich der Festlegung der Eigenschaft `box-sizing` auf `border-box`.
 
-* **Formularstile:** Dieser Abschnitt konzentriert sich auf die Formatierung von Formularkomponenten mithilfe von Selektoren für das Targeting bestimmter HTML-Elemente. Sie definiert Stile für Eingabefelder, Textbereiche, Kontrollkästchen, Optionsfelder, Dateieingaben, Formularbeschriftungen und Beschreibungen.
+* **Formatierung von Formularen:** Dieser Abschnitt konzentriert sich auf die Formatierung von Formularkomponenten mithilfe der Auswahlen für das Targeting bestimmter HTML-Elemente. Sie definiert Stile für Eingabefelder, Textbereiche, Kontrollkästchen, Optionsfelder, Dateieingaben, Formularbeschriftungen und Beschreibungen.
 
-* **Stil des Assistenten (falls zutreffend):** Dieser Abschnitt dient der Formatierung des Assistenten-Layouts, eines aus mehreren Schritten bestehenden Formulars, in dem jeder Schritt einzeln angezeigt wird. Sie definiert Stile für den Assistentencontainer, Feldsätze, Legenden, Navigationsschaltflächen und responsive Layouts.
+* **Formatierung des Assistenten (falls zutreffend):** Dieser Abschnitt dient der Formatierung des Assistenten-Layouts, eines aus mehreren Schritten bestehenden Formulars, in dem jeder Schritt einzeln angezeigt wird. Sie definiert Stile für den Assistenten-Container, Feldsätze, Legenden, Navigationsschaltflächen und responsive Layouts.
 
-* **Medienabfragen:** Diese bieten Stile für unterschiedliche Bildschirmgrößen, passen das Layout und die Formatierung entsprechend an.
+* **Medienabfragen:** Diese bieten Stile für unterschiedliche Bildschirmgrößen und passen das Layout und die Formatierung entsprechend an.
 
-* **Verschiedene Stile:**: In diesem Abschnitt werden Stile für Erfolgs- oder Fehlermeldungen, Dateiupload-Bereiche und andere Elemente behandelt, auf die Sie in einem Formular stoßen können.
+* **Verschiedene Formatierungen:** In diesem Abschnitt werden Stile für Erfolgs- oder Fehlermeldungen, Datei-Upload-Bereiche und andere Elemente behandelt, auf die Sie in einem Formular stoßen können.
 
 
 ## Komponentenstruktur
 
-Der Adaptive Forms-Block bietet eine konsistente HTML-Struktur für verschiedene Formularelemente, die eine einfachere Formatierung und Verwaltung ermöglicht. Sie können die Komponenten mithilfe von CSS für Stilzwecke bearbeiten.
+Der Adaptive Forms-Block bietet eine konsistente HTML-Struktur für verschiedene Formularelemente, die eine einfachere Formatierung und Verwaltung ermöglicht. Sie können die Komponenten mithilfe von CSS für Formatierungszwecke bearbeiten.
 
-### Allgemeine Komponenten (außer Dropdown, Optionsfeldgruppen und Kontrollkästchengruppen):
+### Allgemeine Komponenten (außer Dropdown-Listen, Optionsfeldgruppen und Kontrollkästchengruppen):
 
 Alle Formularfelder mit Ausnahme von Dropdown-Listen, Optionsfeldgruppen und Kontrollkästchengruppen haben die folgende HTML-Struktur:
 
@@ -88,14 +88,14 @@ Alle Formularfelder mit Ausnahme von Dropdown-Listen, Optionsfeldgruppen und Kon
 </div>
 ```
 
-* Klassen: Das div -Element verfügt über mehrere Klassen für das Targeting bestimmter Elemente und für die Formatierung. Sie benötigen die `{Type}-wrapper` oder `field-{Name}` Klassen zum Entwickeln eines CSS-Selektors, um ein Formularfeld zu formatieren:
+* Klassen: Das div-Element verfügt über mehrere Klassen für das Targeting bestimmter Elemente und für die Formatierung. Sie benötigen die `{Type}-wrapper` oder `field-{Name}` Klassen zum Entwickeln eines CSS-Selektors, um ein Formularfeld zu formatieren:
    * {Type}: Identifiziert die Komponente nach Feldtyp. Zum Beispiel Text (Text-Wrapper), Zahl (Nummer-Wrapper), Datum (Datum-Wrapper).
-   * {Name}: Identifiziert die Komponente nach Name. Der Name des Felds darf nur alphanumerische Zeichen enthalten. Die mehreren aufeinander folgenden Gedankenstriche im Namen werden durch einen einzigen Bindestrich ersetzt `(-)`, und die Start- und Endabstände in einem Feldnamen werden entfernt. Beispiel: Vorname (field-first-name field-wrapper).
-   * {FieldId}: Es handelt sich um eine eindeutige Kennung für das Feld, die automatisch generiert wird.
+   * {Name}: Identifiziert die Komponente anhand des Namens. Der Name des Felds darf nur alphanumerische Zeichen enthalten. Mehrere aufeinander folgende Gedankenstriche im Namen werden durch einen einzigen Bindestrich ersetzt `(-)`, und die Start- und Endabstände in einem Feldnamen werden entfernt. Beispiel: Vorname (field-first-name field-wrapper).
+   * {FieldId}: Eine eindeutige Kennung für das Feld, die automatisch generiert wird.
    * {Required}: Ein boolescher Wert, der angibt, ob das Feld erforderlich ist.
-* Titel: Die `label` -Element liefert einen beschreibenden Text für das Feld und ordnet ihn dem Eingabeelement mithilfe der `for` -Attribut.
-* Eingabe: Die `input` -Element definiert den Datentyp, der eingegeben werden soll. Zum Beispiel Text, Zahl, E-Mail.
-* Beschreibung (optional): Die `div` with class `field-description` stellt zusätzliche Informationen oder Anweisungen für den Benutzer bereit.
+* Titel: Das Element `label` liefert einen beschreibenden Text für das Feld und ordnet ihn dem Eingabeelement mithilfe des `for`-Attributs zu.
+* Eingabe: Das `input`-Element definiert den einzugebenden Datentyp. Zum Beispiel : text, number, email.
+* Beschreibung (optional): `div` mit der Klasse `field-description` stellt zusätzliche Informationen oder Anweisungen für Benutzende bereit.
 
 **HTML-Struktur**
 
@@ -168,7 +168,7 @@ first-name input {
 
 ### Dropdown-Komponente
 
-Bei Dropdown-Menüs wird die `select` -Element anstelle von `input` element:
+Bei Dropdown-Menüs wird das `select`-Element anstelle des `input`-Elements verwendet:
 
 
 
@@ -184,7 +184,7 @@ Bei Dropdown-Menüs wird die `select` -Element anstelle von `input` element:
 </div>
 ```
 
-**HTML-Struktur**
+**Beispiel einer HTML-Struktur**
 
 ```HTML
 <div class="drop-down-wrapper field-country field-wrapper" data-required="true">
@@ -250,9 +250,9 @@ Im folgenden CSS sind einige Beispiele für CSS-Selektoren für Dropdown-Kompone
 }
 ```
 
-* Wrapper als Ziel auswählen: Die erste Auswahl (`.drop-down-wrapper`) dient dem äußeren Wrapper-Element, wobei sichergestellt wird, dass Stile auf die gesamte Dropdown-Komponente angewendet werden.
+* Auswählen des Wrappers als Ziel: Die erste Auswahl (`.drop-down-wrapper`) wählt das äußere Wrapper-Element als Ziel aus, wodurch sichergestellt wird, dass die Stile auf die gesamte Dropdown-Komponente angewendet werden.
 * Flexbox-Layout: Flexbox ordnet Beschriftung, Dropdown-Liste und Beschreibung vertikal für ein sauberes Layout an.
-* Beschriftungsstile: Die Beschriftung zeichnet sich durch eine fett abgestufte Schriftgröße und einen leichten Rand aus.
+* Beschriftungsformatierung: Die Beschriftung zeichnet sich durch eine fette Schriftstärke und einen leichten Rand aus.
 * Dropdown-Stile: Der `select` -Element erhält einen Rahmen, einen Abstand und abgerundete Ecken, um ein poliertes Erscheinungsbild zu erhalten.
 * Hintergrundfarbe: Für visuelle Harmonie wird eine konsistente Hintergrundfarbe festgelegt.
 * Pfeilanpassung: Optionale Stile blenden den standardmäßigen Dropdown-Pfeil aus und erstellen einen benutzerdefinierten Pfeil mit einem Unicode-Zeichen und einer Positionierung.
@@ -373,7 +373,7 @@ Dieser Selektor wendet sich an alle Feldsätze mit dem Funkgruppen-Wrapper der K
 
 +++ CSS-Selektoren für Kontrollkästchengruppen
 
-* Targeting des äußeren Wrapper: Diese Selektoren richten sich an die äußersten Container von Optionsfeld- und Kontrollkästchengruppen, sodass Sie allgemeine Stile auf die gesamte Gruppenstruktur anwenden können. Dies ist nützlich zum Festlegen von Abstand, Ausrichtung oder anderen layoutbezogenen Eigenschaften.
+* Targeting des äußeren Wrappers: Diese Auswahl wählt die äußersten Container von Optionsfeld- und Kontrollkästchengruppen als Ziel aus, sodass Sie allgemeine Stile auf die gesamte Gruppenstruktur anwenden können. Dies ist nützlich zum Festlegen von Abstand, Ausrichtung oder anderen Layout-bezogenen Eigenschaften.
 
 
   ```CSS
@@ -389,7 +389,7 @@ Dieser Selektor wendet sich an alle Feldsätze mit dem Funkgruppen-Wrapper der K
   ```
 
 
-* Bezeichnungen der Zielgruppe: Diese Auswahl dient der `.field-label` -Element sowohl in Optionsfeld- als auch in Kontrollkästchen-Gruppenwrappern. Dadurch können Sie die Beschriftungen speziell für diese Gruppen gestalten und sie möglicherweise auffälliger gestalten.
+* Bezeichnungen der Zielgruppe: Diese Auswahl wählt das `.field-label`-Element sowohl in Optionsfeld- als auch in Kontrollkästchengruppen-Wrappern als Ziel aus. Dadurch können Sie die Beschriftungen speziell für diese Gruppen formatieren und sie ggf. auffälliger gestalten.
 
   ```CSS
    .radio-group-wrapper legend,
@@ -400,7 +400,7 @@ Dieser Selektor wendet sich an alle Feldsätze mit dem Funkgruppen-Wrapper der K
 
 
 
-* Targeting einzelner Eingaben und Beschriftungen: Diese Selektoren bieten eine granularere Kontrolle über einzelne Optionsfelder, Kontrollkästchen und die zugehörigen Beschriftungen. Sie können diese verwenden, um Größenangaben, Abstände oder spezifischere visuelle Stile anzupassen.
+* Targeting einzelner Eingaben und Beschriftungen: Diese Auswahl bietet eine präzisere Kontrolle über einzelne Optionsfelder, Kontrollkästchen und die zugehörigen Beschriftungen. Sie können diese verwenden, um Größe und Abstand anzupassen oder spezifischere visuelle Stile anzuwenden.
 
   ```CSS
   /* Styling radio buttons */
@@ -476,7 +476,7 @@ Dieser Selektor wendet sich an alle Feldsätze mit dem Funkgruppen-Wrapper der K
 </fieldset>
 ```
 
-**HTML-Struktur**
+**Beispiel einer HTML-Struktur**
 
 ```HTML
 <fieldset class="panel-wrapper field-login field-wrapper">
@@ -585,7 +585,7 @@ Dieser Selektor wendet sich an alle Feldsätze mit dem Funkgruppen-Wrapper der K
 </fieldset>
 ```
 
-**HTML-Struktur**
+**Beispiel einer HTML-Struktur**
 
 ```HTML
 <fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
@@ -698,7 +698,7 @@ Dieser Selektor formatiert alle Feld-Wrapper in einem wiederholbaren Bereich, wo
 </div>
 ```
 
-**HTML-Struktur**
+**Beispiel einer HTML-Struktur**
 
 
 ```HTML
@@ -811,7 +811,7 @@ Sie können CSS-Selektoren verwenden, um bestimmte Feldtypen gezielt anzuspreche
 </div>
 ```
 
-**HTML-Struktur**
+**Beispiel einer HTML-Struktur**
 
 ```HTML
 <div class="text-wrapper field-name field-wrapper" data-required="true">
@@ -830,11 +830,11 @@ Sie können CSS-Selektoren verwenden, um bestimmte Feldtypen gezielt anzuspreche
 </div>
 ```
 
-* Jedes Feld wird in ein `div` -Element mit mehreren Klassen:
-   * `{Type}-wrapper`: Identifiziert den Feldtyp. Beispiel: `form-text-wrapper`, `form-number-wrapper`, `form-email-wrapper`.
-   * `field-{Name}`: Identifiziert das Feld anhand seines Namens. Beispiel `form-name`, `form-age`, `form-email`.
+* Jedes Feld wird in ein `div`-Element mit mehreren Klassen eingebettet:
+   * `{Type}-wrapper`: Identifiziert den Feldtyp. Beispiel: `form-text-wrapper`, `form-number-wrapper`, `form-email-wrapper`.
+   * `field-{Name}`: Identifiziert das Feld anhand seines Namens. Beispiel: `form-name`, `form-age`, `form-email`.
    * `field-wrapper`: Eine allgemeine Klasse für alle Feld-Wrapper.
-* Die `data-required` -Attribut gibt an, ob das Feld erforderlich oder optional ist.
+* Das Attribut `data-required` gibt an, ob das Feld erforderlich oder optional ist.
 * Jedes Feld verfügt über eine entsprechende Beschriftung, ein Eingabeelement und potenzielle zusätzliche Elemente wie Platzhalter und Beschreibungen.
 
 
@@ -860,7 +860,7 @@ Sie können CSS-Selektoren verwenden, um bestimmte Feldtypen gezielt anzuspreche
 
 ### Formatierung basierend auf Feldnamen
 
-Sie können auch einzelne Felder nach Namen ausrichten, um eindeutige Stile anzuwenden.
+Sie können auch einzelne Felder nach Namen als Ziel auswählen, um eindeutige Stile anzuwenden.
 
 +++ HTML-Struktur
 
@@ -874,7 +874,7 @@ Sie können auch einzelne Felder nach Namen ausrichten, um eindeutige Stile anzu
 </div>
 ```
 
-**HTML-Struktur**
+**Beispiel einer HTML-Struktur**
 
 ```HTML
 <div class="number-wrapper field-otp field-wrapper" data-required="true">
@@ -898,7 +898,7 @@ Sie können auch einzelne Felder nach Namen ausrichten, um eindeutige Stile anzu
 
 
 
-Diese CSS-Datei enthält alle Eingabeelemente, die sich in einem Element befinden, das über die Klasse verfügt `field-otp`. Die HTML-Struktur Ihres Formulars entspricht den Konventionen des Bausteins Adaptive Forms . Dies bedeutet, dass ein Container mit der Klasse &quot;field-otp&quot;markiert ist, der das Feld mit dem Namen &quot;otp&quot;enthält.
+Diese CSS-Datei wählt alle Eingabeelemente als Ziel aus, die sich in einem Element mit der Klasse `field-otp` befinden. Die HTML-Struktur Ihres Formulars entspricht den Konventionen des Bausteins Adaptive Forms . Dies bedeutet, dass ein Container mit der Klasse &quot;field-otp&quot;markiert ist, der das Feld mit dem Namen &quot;otp&quot;enthält.
 
 +++
 

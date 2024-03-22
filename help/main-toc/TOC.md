@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 2c3be4b60396c5cf57c327fd5b858a3af65397f2
 workflow-type: tm+mt
 source-wordcount: '4829'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -168,7 +168,7 @@ ht-degree: 95%
          + [Versionshinweise für 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [Versionshinweise für 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [Versionshinweise für 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + Versionshinweise für den erweiterten Connector von Workfront für Experience Manager {#workfront}
+   + Versionshinweise für den erweiterten Connector von Workfront für Experience Manager{#workfront}
       + [Aktuelle Versionshinweise für den erweiterten Connector von Workfront für Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [Neue Funktionen](/help/release-notes/what-is-new.md)
    + [Wichtige Änderungen in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
@@ -181,7 +181,7 @@ ht-degree: 95%
    + [Same-Site-Cookie-Unterstützung für AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [OAuth2-Unterstützung für den E-Mail-Service](/help/security/oauth2-support-for-mail-service.md)
    + [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md)
-   + [AEM as a Cloud Service Sicherheitsüberlegungen](/help/security/security-considerations.md)
+   + [AEM as a Cloud Service – Sicherheitsüberlegungen](/help/security/security-considerations.md)
    + [Einstellung der JWT-Anmeldedaten in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + Einstieg {#onboarding}
    + [Hier beginnen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=de)
@@ -198,7 +198,7 @@ ht-degree: 95%
       + [Aufgaben von Entwickelnden und Bereitstellungs-Managern](/help/journey-onboarding/developers.md)
       + [AEM-Benutzeraufgaben](/help/journey-onboarding/aem-users.md)
    + Tour durch das Referenzdemo-Add-on zu AEM {#demo-add-on}
-      + [Übersicht](/help/journey-sites/demos-add-on/overview.md)
+      + [Überblick](/help/journey-sites/demos-add-on/overview.md)
       + [Installation](/help/journey-sites/demos-add-on/installation.md)
       + [Erstellen eines Programms](/help/journey-sites/demos-add-on/create-program.md)
       + [Erstellen einer Demo-Site](/help/journey-sites/demos-add-on/create-site.md)
@@ -225,7 +225,7 @@ ht-degree: 95%
    + [Handbuch zur Migration zu Experience Manager as a Cloud Service für Partner](/help/journey-migration/getting-started-partners.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + Einführung zu Cloud Acceleration Manager {#introduction-cam}
-         + [Übersicht](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
+         + [Überblick](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
          + [Vorteile](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
       + Verwenden von Cloud Acceleration Manager {#using-cam}
          + [Erste Schritte mit Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
@@ -234,13 +234,13 @@ ht-degree: 95%
          + [Live-Schaltungs-Phase](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
    + Cloud-Umstellungs-Tools {#cloud-migration}
       + Best Practices Analyzer {#best-practices-analyzer}
-         + [Übersicht](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
+         + [Überblick](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [Verwenden von Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
       + Content Transformer {#content-transformer}
-         + [Übersicht](/help/journey-migration/content-transformer/overview.md)
+         + [Überblick](/help/journey-migration/content-transformer/overview.md)
          + [Verwenden des Content Transformers](/help/journey-migration/content-transformer/using.md)
       + Content Transfer Tool {#content-transfer-tool}
-         + [Übersicht](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+         + [Überblick](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [Voraussetzungen für die Verwendung des Content Transfer Tools](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [Richtlinien und Best Practices für die Verwendung des Content Transfer Tools](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [Erste Schritte mit dem Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
@@ -256,7 +256,7 @@ ht-degree: 95%
          + [Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Fehlerbehebung im Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + Legacy-Tool für die Benutzerzuordnung (veraltete Version){#legacy-user-mapping-tool}
-            + [Übersicht](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
+            + [Überblick](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [Wichtige Überlegungen](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [Verwenden des User Mapping Tools](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + Code-Refaktorierungs-Tools {#refactoring-tools}
@@ -271,8 +271,8 @@ ht-degree: 95%
    + Authoring {#authoring}
       + [Schnellstartanleitung zum Verfassen von Seiten (Authoring)](/help/sites-cloud/authoring/quick-start.md)
       + [Grundlegende Handhabung](/help/sites-cloud/authoring/basic-handling.md)
-      + [Authoring und Publishing](/help/sites-cloud/authoring/author-publish.md)
-      + [Authoring - Methoden](/help/sites-cloud/authoring/authoring-methods.md)
+      + [Inhaltserstellung und Veröffentlichung](/help/sites-cloud/authoring/author-publish.md)
+      + [Methoden für die Inhaltserstellung](/help/sites-cloud/authoring/authoring-methods.md)
       + [Suchen](/help/sites-cloud/authoring/search.md)
       + [Konfigurieren der Kontoumgebung](/help/sites-cloud/authoring/account-environment.md)
       + [Ihr Posteingang](/help/sites-cloud/authoring/inbox.md)
@@ -281,7 +281,7 @@ ht-degree: 95%
       + [Fehlerbehebung](/help/sites-cloud/authoring/troubleshooting.md)
       + Sites-Konsole {#sites-console}
          + [Die Sites-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md)
-         + [Konsolenseites Bedienfeld](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+         + [Seitliches Bedienfeld der Konsole](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
          + [Erstellen einer neuen Site](/help/sites-cloud/authoring/sites-console/create-site.md)
          + [Organisieren von Seiten](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
          + [Erstellen von Seiten](/help/sites-cloud/authoring/sites-console/creating-pages.md)
@@ -294,11 +294,11 @@ ht-degree: 95%
          + [Seitenvergleich](/help/sites-cloud/authoring/sites-console/page-diff.md)
          + [Verwenden von Tags](/help/sites-cloud/authoring/sites-console/tags.md)
          + [Aktivieren von PWA (Progressive Web App)-Funktionen](/help/sites-cloud/authoring/sites-console/enable-pwa.md)
-         + [Tastaturbefehle](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
+         + [Tastaturkürzel](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
          + [Exportieren in CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
-      + Seiten-Editor {#page-editor}
-         + [im Seiten-Editor](/help/sites-cloud/authoring/page-editor/introduction.md)
-         + [Editor Side Panel](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
+      + Seiteneditor {#page-editor}
+         + [Der Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md)
+         + [Seitliches Bedienfeld des Editors](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
          + [Bearbeiten von Seiten](/help/sites-cloud/authoring/page-editor/edit-content.md)
          + [Hinzufügen von Seitenanmerkungen](/help/sites-cloud/authoring/page-editor/annotations.md)
          + [Rich-Text-Editor](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
@@ -306,16 +306,16 @@ ht-degree: 95%
          + [Komponenten](/help/sites-cloud/authoring/page-editor/components.md)
          + [Authoring für Mobilgeräte](/help/sites-cloud/authoring/page-editor/mobile.md)
          + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.1-Richtlinien)](/help/sites-cloud/authoring/page-editor/accessible-content.md)
-         + [Tastaturbefehle](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
+         + [Tastaturkürzel](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [Stilsystem](/help/sites-cloud/authoring/page-editor/style-system.md)
-         + [Einschränkungen beim Rückgängigmachen](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+         + [Einschränkungen für „Rückgängig machen“ und „Wiederholen“](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + Universeller Editor {#universal-editor}
          + [Inhaltserstellung mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [Veröffentlichen von Inhalten mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
       + Fragmente {#fragments}
          + [Inhaltsfragmente](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)
-         + [Tour für Headless-Inhaltsautoren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=de)
+         + [Tour durch das Verfassen von Headless-Inhalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=de)
       + Projekte {#projects}
          + [Arbeiten mit Projekten](/help/sites-cloud/authoring/projects/overview.md)
          + [Verwalten von Projekten](/help/sites-cloud/authoring/projects/managing.md)
@@ -355,7 +355,7 @@ ht-degree: 95%
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [Überlegungen zum Löschen](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Analysieren der Struktur](/help/sites-cloud/administering/content-fragments/analysis.md)
-         + [Tastaturbefehle](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
+         + [Tastaturkürzel](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + Erstellung einer Site {#site-creation}
          + [Erstellen einer neuen Site](/help/sites-cloud/administering/site-creation/create-site.md)
          + [Aktivieren einer Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -639,8 +639,8 @@ ht-degree: 95%
             + [Verwenden von Google reCAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Hinzufügen eines benutzerdefinierten Fehler-Handlers in einem adaptiven Formular](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Hinzufügen eines Gebietsschemas für auf Kernkomponenten basierende adaptive Formulare](/help/forms/supporting-new-language-localization-core-components.md)
-            + [Benutzerdefinierte Funktionen erstellen und verwenden](/help/forms/create-and-use-custom-functions.md)
-            + [Hinzufügen von Regeln zu einem adaptiven Formular basierend auf Kernkomponenten](/help/forms/rule-editor-core-components.md)
+            + [Erstellen und Verwenden benutzerdefinierter Funktionen](/help/forms/create-and-use-custom-functions.md)
+            + [Hinzufügen von Regeln zu einem adaptiven Formular, das auf Kernkomponenten basiert](/help/forms/rule-editor-core-components.md)
       + Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
          + Konvertieren von PDF-Formularen in adaptive Formulare {#afcs}
             + [Einführung in den Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de)
@@ -660,7 +660,7 @@ ht-degree: 95%
             + [Anwenden einer Freihandsignatur](/help/forms/signing-forms-using-scribble.md)
             + [Hinzufügen einer Tabelle zu einem adaptiven Formular](/help/forms/adaptive-forms-tables.md)
             + [Hinzufügen von Fußnoten-Unterstützung zu einem adaptiven Formular](/help/forms/footnotes-richtextsupport.md)
-         + Konfigurieren eines Layouts und Anwenden eines Stils auf adaptive Formulare {#configure-layout-of-an-adaptive-form}
+         + Konfigurieren eines Layouts und Anwenden eines Stils auf adaptive Formulare{#configure-layout-of-an-adaptive-form}
             + [Festlegen des Layouts eines adaptiven Formulars](/help/forms/layout-capabilities-adaptive-forms.md)
             + [Verwenden des Layout-Modus zum Ändern der Größe von Komponenten](/help/forms/resize-using-layout-mode.md)
             + [Erstellen eines mehrstufigen Datenerfassungsverfahrens](/help/forms/introduction-form-sequence.md)
@@ -711,7 +711,7 @@ ht-degree: 95%
    + Fehlerbehebung {#troubleshooting-aem-forms-cloud-service}
       + [Installation und Konfiguration](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher- und CDN-Caching](/help/forms/troubleshooting-caching-performance.md)
-      + [Neustart AEM SDK](/help/forms/restart-aem-sdk.md)
+      + [Neustarten des AEM SDK](/help/forms/restart-aem-sdk.md)
 + Screens {#screens-as-cloud-service}
    + Überblick über Screens as a Cloud Service {#overview}
       + [Einführung](/help/screens-cloud/introduction/introduction.md)
@@ -786,11 +786,11 @@ ht-degree: 95%
          + [Verwenden der CIF-Katalogauswahl](/help/commerce-cloud/customizing/use-cif-pickers.md)
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migration](/help/commerce-cloud/migration.md)
-   + [Häufig gestellte Fragen](/help/commerce-cloud/faq.md)
+   + [FAQs](/help/commerce-cloud/faq.md)
 + AEM mit Edge Delivery Services {#edge-delivery}
    + [Erste Schritte mit Edge Delivery Services](/help/edge/overview.md)
    + [Verwenden von Edge Delivery](/help/edge/using.md)
-   + [Entwicklerhandbuch - Erste Schritte](/help/edge/edge-dev-getting-started.md)
+   + [Erste-Schritte-Handbuch für Entwickelnde](/help/edge/edge-dev-getting-started.md)
    + [Erstellen von Inhalten für Edge Delivery](/help/edge/authoring.md)
    + [Veröffentlichen von Inhalten für Edge Delivery](/help/edge/publishing.md)
    + [Entwickeln für Edge Delivery](/help/edge/developing.md)
@@ -799,7 +799,7 @@ ht-degree: 95%
    + [Tabellendaten und -fragmente](/help/edge/tabular-data.md)
    + [Vorhandene Projekte und Edge Delivery](/help/edge/existing-projects.md)
    + Erstellen von Edge Delivery-Anwendungen {#build}
-      + [Erste Schritte – Entwicklertutorial](/help/edge/developer/tutorial.md)
+      + [Erste Schritte – Entwickler-Tutorial](/help/edge/developer/tutorial.md)
       + [Anatomie eines Projekts](/help/edge/developer/anatomy-of-a-franklin-project.md)
       + [Blocksammlung](/help/edge/developer/block-collection.md)
       + [Tabellen](/help/edge/developer/spreadsheets.md)
@@ -824,16 +824,16 @@ ht-degree: 95%
       + [Akamai-Setup](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Fastly-Einrichtung](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Umleitungen](/help/edge/docs/redirects.md)
-   + Erstellen von Edge Delivery Forms {#build-forms}
-      + [Übersicht](/help/edge/docs/forms/overview.md)
+   + Erstellen von Edge Delivery-Anwendungen {#build-forms}
+      + [Überblick](/help/edge/docs/forms/overview.md)
       + Erste Schritte {#getting-started-eds-forms}
          + [Erste Schritte](/help/edge/docs/forms/tutorial.md)
          + [Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel](/help/edge/docs/forms/create-forms.md)
          + [Richten Sie Ihre Google Tabellen- oder Microsoft Excel-Dateien ein, um Daten zu akzeptieren &#x200B;](/help/edge/docs/forms/submit-forms.md)
          + [Veröffentlichen Sie Ihr Formular und beginnen Sie mit der Datenerfassung](/help/edge/docs/forms/publish-forms.md)
-         + [Hinzufügen von Überprüfungen zu Formularfeldern](/help/edge/docs/forms/validate-forms.md)
+         + [Hinzufügen von Validierungen zu Formularfeldern](/help/edge/docs/forms/validate-forms.md)
          + [Anpassen des Erscheinungsbilds von Formularen &#x200B;](/help/edge/docs/forms/style-theme-forms.md)
-         + [Verwenden Sie Regeln, um einem Formular dynamisches Verhalten hinzuzufügen](/help/edge/docs/forms/rules-forms.md)
+         + [Verwenden von Regeln zum Hinzufügen von dynamischem Verhalten zu einem Formular](/help/edge/docs/forms/rules-forms.md)
          + [Benutzerdefinierte Dankesnachricht nach der Formularübermittlung anzeigen](/help/edge/docs/forms/thank-you-page-form.md)
       + Funktionen {#advanced-features-eds-forms}
          + [Formularfragmente](/help/edge/docs/forms/form-fragments.md)
@@ -844,16 +844,16 @@ ht-degree: 95%
       + Verweise {#forms-references}
          + [Komponenten von Bausteinen für adaptive Formulare und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
    + Ressourcen für die Edge Delivery {#resources}
-      + Sidekick{#sidekick}
+      + Sidekick {#sidekick}
          + [Verwenden des Sidekicks](/help/edge/docs/sidekick.md)
          + [Installieren der Erweiterung](/help/edge/docs/sidekick-extension.md)
          + [Projektkonfiguration](https://www.aem.live/tools/sidekick/)
          + [Sidekick-Bibliothek](/help/edge/docs/sidekick-library.md)
-      + [Häufig gestellte Fragen](/help/edge/docs/faq.md)
+      + [FAQs](/help/edge/docs/faq.md)
       + [Admin-API](https://www.aem.live/docs/admin.html)
       + [AEM-Status](https://www.aemstatus.net)
       + Tools {#tools}
-         + [AEM Sidekick Chrome-Erweiterung](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [AEM-Sidekick-Chrome-Erweiterung](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Github-Bot](https://github.com/apps/aem-code-sync)
          + [Auditprotokoll](/help/edge/docs/auditlog.md)
 + Headless {#headless}
@@ -872,7 +872,7 @@ ht-degree: 95%
       + [Übersicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=de)
       + [Inhaltsfragmentmodelle](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=de)
       + [Verwalten von Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=de)
-      + Authoring {#authoring}
+      + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
@@ -961,7 +961,7 @@ ht-degree: 95%
          + [Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [Bereitstellen des Codes](/help/implementing/cloud-manager/deploy-code.md)
       + Grundlegendes zu Testergebnissen – Cloud Services {#test-results}
-         + [Übersicht](/help/implementing/cloud-manager/overview-test-results.md)
+         + [Überblick](/help/implementing/cloud-manager/overview-test-results.md)
          + [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Benutzerspezifische Regeln für Code-Qualität](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + Funktionstests {#functional-testing}
@@ -1101,7 +1101,7 @@ ht-degree: 95%
       + [ContextHub-API](/help/implementing/developing/personalization/contexthub-api.md)
       + [Konfigurieren der Segmentierung mit ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=de)
    + Konfigurieren und Erweitern von AEM as a Cloud Service {#configuring-and-extending}
-      + Erweitern von Adobe Experience Manager mit App Builder {#app-builder}
+      + Erweitern von Adobe Experience Manager mit App Builder{#app-builder}
          + [Erweitern von Adobe Experience Manager mit Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [Einführung in App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe-Entwicklerkonsole](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)

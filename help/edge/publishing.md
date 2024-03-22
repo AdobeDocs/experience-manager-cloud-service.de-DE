@@ -6,7 +6,7 @@ exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 source-git-commit: 3ee1ba83518c3d4fba59b0c98b31e5c63a2eb6ab
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 56%
+ht-degree: 66%
 
 ---
 
@@ -26,7 +26,7 @@ Der Informationsfluss beim Veröffentlichen sieht folgendermaße aus. Sobald der
 
 >[!NOTE]
 >
->Pro Tag sind maximal 5.000 Pfade zulässig, die über die Authoring-Benutzeroberfläche oder durch Workflows veröffentlicht werden. Integrationen, die das Laden von Massenveröffentlichungen ermöglichen, werden nicht unterstützt.
+>Pro Tag sind maximal 5.000 Pfade zulässig, die über die Authoring-Benutzeroberfläche oder durch Workflows veröffentlicht werden. Integrationen, die zu Massenveröffentlichungen führen, werden nicht unterstützt.
 
 ![Informationsfluss beim Veröffentlichen aus AEM in Edge Delivery Services](assets/publishing-flow.png)
 
