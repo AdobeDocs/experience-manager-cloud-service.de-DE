@@ -2,7 +2,7 @@
 title: Traffic-Filterregeln, einschließlich WAF-Regeln
 description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 9f23b91df3139115ca442de03457bb50a1e1cb71
+source-git-commit: 38a16251372ee6ba77687f524e5057e00f16f58e
 workflow-type: tm+mt
 source-wordcount: '3669'
 ht-degree: 89%
@@ -24,7 +24,7 @@ Eine Unterkategorie von Traffic-Filterregeln erfordert entweder eine Lizenz für
 
 Traffic-Filterregeln können über Cloud Manager-Konfigurations-Pipelines bereitgestellt werden, um Typen von Entwicklungs-, Staging- und Produktionsumgebungen in Produktionsprogrammen (ohne Sandbox) bereitzustellen. Die Unterstützung von RDEs wird in Zukunft verfügbar sein.
 
-[Durchlaufen Sie ein Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=de), um rasch konkrete Kenntnisse zu dieser Funktion zu erwerben.
+[Durchlaufen Sie ein Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview), um rasch konkrete Kenntnisse zu dieser Funktion zu erwerben.
 
 >[!NOTE]
 >Sie möchten andere Optionen zum Konfigurieren des Traffics im CDN nutzen, z. B. das Ändern der Anfrage/Antwort, das Deklarieren von Weiterleitungen und das Weiterleiten an eine AEM Herkunft? [Erfahren Sie, wie Sie es ausprobieren können](/help/implementing/dispatcher/cdn-configuring-traffic.md) durch Teilnahme am Programm für frühe Adopter.
