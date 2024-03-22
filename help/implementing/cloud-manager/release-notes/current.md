@@ -4,9 +4,9 @@ description: Dies sind die Versionshinweise für Cloud Manager 2024.3.0 in AEM a
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4bae300f653ae6b84cf798f4fe9e8c9326963718
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2024.3.0 in AE
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager -Version 2024.3.0 in AEM as a Cloud Service wurde am 14. März 2024 veröffentlicht. Die nächste Version ist für den 11. April 2024 geplant.
+Die Cloud Manager 2024.3.0 in AEM as a Cloud Service wurde am 14. März 2024 veröffentlicht. Die nächste Version ist für den 11. April 2024 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
-* [Sie können jetzt eine erweiterte Netzwerkinfrastruktur erstellen](/help/security/configuring-advanced-networking.md) in Ihrem Cloud Manager-Programm verwenden und Ihre Umgebungen mithilfe der Cloud Manager-Benutzeroberfläche auf Self-Service-Art konfigurieren.
-* [Details zum Pipelineausführungsschritt](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) enthält, was der aktuelle Schritt der Bereitstellung ist und was erwartet wird.
+* [Sie können nun eine erweiterte Netzwerkinfrastruktur in Ihrem Cloud Manager-Programm erstellen](/help/security/configuring-advanced-networking.md) und Ihre Umgebungen mithilfe der Cloud Manager-Benutzeroberfläche selbstständig konfigurieren.
+* [In den Details zum Pipeline-Ausführungsschritt](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) wird dargelegt, was der aktuelle Schritt der Bereitstellung ist und was erwartet wird.
 
 ## Early-Adopter-Programm {#early-adoption}
 
@@ -69,4 +69,4 @@ Möchten Sie das neue Dashboard testen? Senden Sie dazu eine E-Mail an `aem-ligh
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* Ein Fehler wurde behoben, wenn ein Benutzer die `COMMERCE_ENDPOINT` mit einem nachgestellten Leerzeichen angegeben ist, kann der Dispatcher nicht geladen werden.
+* Es wurde der Fehler behoben, dass bei benutzerseitiger Definition der `COMMERCE_ENDPOINT`-Variable mit einem nachgestellten Leerzeichen der Dispatcher nicht geladen wurde.

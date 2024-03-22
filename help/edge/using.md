@@ -4,9 +4,9 @@ description: Erfahren Sie, wie AEM as a Cloud Service mit Edge Delivery Services
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ Die Aufnahme aus mehreren Inhaltsquellen bietet den Benutzenden maximale Flexibi
 
 Es gibt Fälle, in denen die Inhaltsquelle vordefiniert ist oder aus anderen Gründen nicht flexibel ist (z. B. kann das Projekt nicht Sharepoint oder Google Drive verwenden). In vielen Fällen ist das Tool jedoch nicht vorbestimmt und es gibt mehrere Auswahlmöglichkeiten.
 
-Das Leitprinzip von Adobe ist Einfachheit. Beginnen Sie mit der dokumentbasierten Bearbeitung und fügen Sie bei Bedarf Komplexität hinzu. Wenn ein Tool-Wechsel erforderlich ist, deckt die Integration der Edge Delivery Services von AEM die Migration von Inhalten ab.
+Das Leitprinzip von Adobe ist Einfachheit. Beginnen Sie mit dokumentbasiertem Authoring und fügen Sie bei Bedarf Komplexität hinzu. Wenn ein Tool-Wechsel erforderlich ist, deckt die Integration der Edge Delivery Services von AEM die Migration von Inhalten ab.
 
 ![Flexibilität der Inhaltsquelle](assets/content-source-flexiblity.png)
 
 ## Authoring {#authoring-edge}
 
-Mit Edge Delivery Services ist das Authoring einfach, schnell und flexibel. Sie können festlegen, ob Sie die Dokumentbasierte Bearbeitung oder das Authoring in AEM mit dem universellen Editor erstellen möchten.
+Mit Edge Delivery Services ist das Authoring einfach, schnell und flexibel. Sie können wählen, ob Sie dokumentenbasiertes Authoring oder Authoring in AEM mit dem universellen Editor verwenden möchten.
 
 Weitere Informationen finden Sie im Dokument [Authoring-Inhalte für Edge Delivery Services](authoring.md).
 

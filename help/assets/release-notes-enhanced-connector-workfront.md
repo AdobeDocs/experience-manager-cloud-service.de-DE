@@ -3,9 +3,9 @@ title: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced co
 description: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 411793f140a2a9cf482d820382d41de843a97e87
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1648'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -13,14 +13,14 @@ ht-degree: 97%
 
 Im folgenden Abschnitt finden Sie allgemeine Versionshinweise zu [!DNL Workfront for Experience Manager enhanced connector]
 
-Das Veröffentlichungsdatum für die neueste Version 1.9.18 von [!DNL Workfront for Experience Manager enhanced connector] ist der Samstag, 8. März 2024.
+Das Veröffentlichungsdatum für die neueste Version 1.9.18 von [!DNL Workfront for Experience Manager enhanced connector] ist der 8. März 2024.
 
 ## Die Highlights der Version {#release-highlights}
 
-Die neueste Version der [!DNL Workfront for Experience Manager enhanced connector] umfasst die folgende Fehlerbehebung:
+Die neueste Version von [!DNL Workfront for Experience Manager enhanced connector] enthält die folgende Fehlerbehebung:
 
-* Bei der Verarbeitung von Multi-Asset-Uploads aus Workfront treten Probleme auf.
-* Wenn Sie Workfront zum Suchen nach Ordnern im Experience Manager verwenden, werden in `SERVER_ERROR`.
+* Bei der Verarbeitung von Uploads mit mehreren Assets aus Workfront treten Probleme auf.
+* Wenn Sie Workfront zum Suchen nach Ordnern im Experience Manager verwenden und keine abschließenden Anführungszeichen hinzufügen, führt dies zu einem `SERVER_ERROR`.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Die neueste Version der [!DNL Workfront for Experience Manager enhanced connecto
 
 >[!IMPORTANT]
 >
->Adobe empfiehlt, [Aktualisierung auf die neueste Version 1.9.18](/help/assets/workfront-connector-install.md) des [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe empfiehlt eine [Aktualisierung auf die neueste Version 1.9.18](/help/assets/workfront-connector-install.md) von [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekannte Probleme {#known-issues}
 
