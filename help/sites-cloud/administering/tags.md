@@ -3,7 +3,7 @@ title: Verwalten von Tags
 description: Erfahren Sie, wie Sie Tags in AEM verwalten, um Ihre Inhalte zu organisieren.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2200'
 ht-degree: 100%
 

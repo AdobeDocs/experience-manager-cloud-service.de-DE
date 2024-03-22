@@ -3,7 +3,7 @@ title: Verwalten von SSL-Zertifikaten
 description: Erfahren Sie, wie Sie mit Cloud Manager den Status Ihrer SSL-Zertifikate überprüfen und diese bearbeiten, ersetzen, aktualisieren und löschen können.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 source-git-commit: 7143ea8d36e26aa1674608ff7bd8ba22e2030b3c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '644'
 ht-degree: 100%
 

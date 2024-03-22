@@ -3,9 +3,9 @@ title: Arbeiten mit Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenerstellung und die Headless-Bereitstellung eignen.  Auch wie sie zusammen mit MSM verwendet werden können.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 source-git-commit: 02b96c27f985492396cfbd262b9fec450ec8d2c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2222'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -290,14 +290,14 @@ Um Ihre Inhaltsfragmente zum Erstellen von Seiten zu verwenden, benötigen Sie a
 
 ## Wiederverwenden von Inhaltsfragmenten mit MSM {#reusing-content-fragments-with-msm}
 
-Beim Zugriff über die **Assets**-Konsole können Sie MSM verwenden und Live Copys für Ihre Fragmente erstellen.
+Beim Zugriff über die **Assets**-Konsole können Sie MSM verwenden und Live Copies für Ihre Fragmente erstellen.
 
 Weitere Informationen finden Sie unter:
 
 * [Wiederverwenden von Inhaltsfragmenten mit MSM](/help/assets/content-fragments/content-fragments-msm.md)
-* [Wiederverwenden von Assets mit MSM für Assets](/help/assets/reuse-assets-using-msm.md).
+* [Wiederverwenden von Assets mit MSM für Assets](/help/assets/reuse-assets-using-msm.md)
 
-Diese ermöglichen [Vererbung](/help/assets/content-fragments/content-fragments-variations.md#inheritance) für Varianten und einzelne Felder Ihrer Fragmente.
+Diese ermöglichen die [Vererbung](/help/assets/content-fragments/content-fragments-variations.md#inheritance) für Varianten und einzelne Felder Ihrer Fragmente.
 
 >[!CAUTION]
 >

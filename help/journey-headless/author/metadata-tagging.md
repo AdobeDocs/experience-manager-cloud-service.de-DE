@@ -3,9 +3,9 @@ title: Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für
 description: Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '191'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Dieser Artikel baut darauf auf, damit Sie verstehen, wie Sie Metadaten und Tags 
 
 ## Hinzufügen von Metadaten und Tags {#adding-metadata-and-tags}
 
-Sie können Metadaten und Tags aus dem rechten Bereich des Inhaltsfragment-Editors hinzufügen:
+Sie können Metadaten und Tags aus dem rechten Bedienfeld des Inhaltsfragmenteditors hinzufügen:
 
 ![Inhaltsfragmenteditor – Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 

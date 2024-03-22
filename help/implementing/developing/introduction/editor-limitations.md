@@ -3,9 +3,9 @@ title: Editor-Einschränkungen
 description: Der Editor in der Touch-optimierten Benutzeroberfläche verwendet Überlagerungen, um mit den in einem Iframe eingeschlossenen Inhalten zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '315'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Beim [Bearbeiten einer Seite](/help/sites-cloud/authoring/page-editor/edit-conte
 
 ### Strukturseiten {#structure-pages}
 
-Seiten können nicht benannt werden `structure`. Seiten mit dem Namen `structure` können im Seiteneditor nicht bearbeitet werden.
+Seiten können nicht `structure` benannt werden. Seiten mit dem Namen `structure` können im Seiteneditor nicht bearbeitet werden.
 
 ## CSS-Einschränkungen {#css-limitations}
 

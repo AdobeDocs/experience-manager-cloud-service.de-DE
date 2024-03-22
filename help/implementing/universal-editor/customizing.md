@@ -1,24 +1,24 @@
 ---
-title: Anpassen des Authoring-Erlebnisses für den universellen Editor
-description: Erfahren Sie mehr über die verschiedenen Erweiterungspunkte und andere Funktionen, mit denen Sie die Benutzeroberfläche des universellen Editors anpassen können, um die Anforderungen Ihrer Inhaltsautoren zu unterstützen.
+title: Anpassen des Authoring-Erlebnisses mit dem universellen Editor
+description: Erfahren Sie mehr über die verschiedenen Erweiterungspunkte und anderen Funktionen, mit denen Sie die Benutzeroberfläche des universellen Editors anpassen können, um die Anforderungen Ihrer Inhaltsautorinnen und Inhaltsautoren zu unterstützen.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '302'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
 
-# Anpassen des Authoring-Erlebnisses für den universellen Editor {#customizing-ue}
+# Anpassen des Authoring-Erlebnisses mit dem universellen Editor {#customizing-ue}
 
-Erfahren Sie mehr über die verschiedenen Erweiterungspunkte und andere Funktionen, mit denen Sie das Authoring-Erlebnis des universellen Editors anpassen können, um die Anforderungen Ihrer Inhaltsautoren zu unterstützen.
+Erfahren Sie mehr über die verschiedenen Erweiterungspunkte und anderen Funktionen, mit denen Sie das Inhaltserstellungserlebnis des universellen Editors anpassen können, um die Anforderungen Ihrer Inhaltsautorinnen und Inhaltsautoren zu unterstützen.
 
 ## Deaktivieren der Veröffentlichung {#disable-publish}
 
 Bestimmte Authoring-Workflows erfordern, dass Inhalte vor der Veröffentlichung überprüft werden. In solchen Fällen sollte die Option zur Veröffentlichung für Autorinnen und Autoren nicht verfügbar sein.
 
-Die **Veröffentlichen** -Schaltfläche kann daher in einer App vollständig unterdrückt werden, indem die folgenden Metadaten hinzugefügt werden.
+Die Schaltfläche **Veröffentlichen** kann daher in einer App vollständig unterdrückt werden, indem die folgenden Metadaten hinzugefügt werden.
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
@@ -43,13 +43,13 @@ Eine Filterdefinition könnte wie folgt aussehen, wodurch ein Container so einge
 ]
 ```
 
-Anschließend können Sie über Ihre Container-Komponente auf die Filterdefinition verweisen, indem Sie die Eigenschaft hinzufügen `data-aue-filter`, wobei die Kennung des zuvor definierten Filters übergeben wird.
+Anschließend können Sie über Ihre Container-Komponente auf die Filterdefinition verweisen, indem Sie die Eigenschaft `data-aue-filter` hinzufügen, wobei die Kennung des zuvor definierten Filters übergeben wird.
 
 ```html
 data-aue-filter="container-filter"
 ```
 
-Festlegen der `components` -Attribut in einer Filterdefinition `null` lässt alle Komponenten zu, als gäbe es keinen Filter.
+Durch das Festlegen des Attributs `components` in einer Filterdefinition auf `null` werden alle Komponenten zugelassen, als gäbe es keinen Filter.
 
 ```json
 [
@@ -62,9 +62,9 @@ Festlegen der `components` -Attribut in einer Filterdefinition `null` lässt all
 
 ## Bedingtes Anzeigen und Ausblenden von Komponenten in der Eigenschaftenleiste {#conditionally-hide}
 
-Obwohl eine oder mehrere Komponenten allgemein für Ihre Autoren verfügbar sein können, kann es in bestimmten Situationen vorkommen, dass dies nicht sinnvoll ist. In solchen Fällen können Sie Komponenten in der Eigenschaftenleiste ausblenden, indem Sie eine `condition` -Attribut [-Felder des Komponentenmodells.](/help/implementing/universal-editor/field-types.md#fields)
+Obwohl eine oder mehrere Komponenten allgemein für Ihre Autorinnen und Autoren verfügbar sein können, kann es in bestimmten Situationen vorkommen, dass dies nicht sinnvoll ist. In solchen Fällen können Sie Komponenten in der Eigenschaftenleiste ausblenden, indem Sie ein Attribut `condition` zu den Feldern [ des Komponentenmodells hinzufügen.](/help/implementing/universal-editor/field-types.md#fields)
 
-Bedingungen können mithilfe von [JsonLogic-Schema.](https://jsonlogic.com/) Wenn die Bedingung wahr ist, wird das Feld angezeigt. Wenn die Bedingung falsch ist, wird das Feld ausgeblendet.
+Bedingungen können mithilfe des [JsonLogic-Schemas definiert werden.](https://jsonlogic.com/) Wenn die Bedingung zutrifft, wird das Feld angezeigt. Wenn die Bedingung nicht zutrifft, wird das Feld ausgeblendet.
 
 ### Beispielmodell {#sample-model}
 
@@ -89,10 +89,10 @@ Bedingungen können mithilfe von [JsonLogic-Schema.](https://jsonlogic.com/) Wen
  }
 ```
 
-#### Bedingung falsch {#false}
+#### Bedingung trifft nicht zu {#false}
 
 ![Ausgeblendetes Textfeld](assets/hidden.png)
 
-#### Bedingung wahr {#true}
+#### Bedingung trifft zu {#true}
 
-![Angezeigtes Textfeld](assets/shown.png)
+![Eingeblendetes Textfeld](assets/shown.png)

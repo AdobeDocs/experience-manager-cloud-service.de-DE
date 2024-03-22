@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2620'
 ht-degree: 100%
 

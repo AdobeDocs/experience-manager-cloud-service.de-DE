@@ -3,7 +3,7 @@ title: Verwalten von Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM-Inhaltsfragmente verwalten können, entweder als Grundlage für Ihre Headless-Inhalte oder für die Erstellung von Seiten.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1885'
 ht-degree: 100%
 

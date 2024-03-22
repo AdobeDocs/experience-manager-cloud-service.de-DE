@@ -4,9 +4,9 @@ description: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in [!DNL Adobe E
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1858'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -39,9 +39,9 @@ Autoren können in [!DNL Experience Manager] Textinhalte mithilfe der verschiede
 | Bearbeitungsmodus | Bearbeitungsbereich | Für die Aktivierung empfohlene Funktionen |
 |--- |--- |--- |
 | Inline | Bearbeitung im Kontext für schnelle, geringfügige Änderungen; Formatieren ohne Öffnen eines Dialogfelds. | Minimale RTE-Funktionen. |
-| RTE-Vollbildschirm | deckt die gesamte Seite ab. | Alle erforderlichen RTE-Funktionen. |
+| RTE-Vollbild | Füllt die gesamte Seite aus. | Alle erforderlichen RTE-Funktionen. |
 | Dialogfeld | Dialogfeld, das oberhalb des Seiteninhalts angezeigt wird, jedoch nicht die gesamte Seite einnimmt. | Funktionen mit Bedacht aktivieren. |
-| Dialogfeld-Vollbildmodus | Wie im Vollbildmodus; enthält Felder des Dialogfelds neben dem RTE. | Alle erforderlichen RTE-Funktionen. |
+| Dialogfeld-Vollbild | Wie im Vollbildmodus; enthält Dialogfelder neben dem RTE. | Alle erforderlichen RTE-Funktionen. |
 
 >[!NOTE]
 >

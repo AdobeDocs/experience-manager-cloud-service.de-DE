@@ -4,9 +4,9 @@ description: Auf dieser Seite wird beschrieben, wie Sie den Benachrichtigungsdie
 index: true
 exl-id: 74215a70-45c8-4b7f-ba30-60c332de07e9
 source-git-commit: 69798b1ac3758d37c4e2f480ccc23bae24d6a814
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
-ht-degree: 42%
+ht-degree: 100%
 
 ---
 
@@ -14,13 +14,13 @@ ht-degree: 42%
 
 ## Einführung {#introduction}
 
-### Übersicht
+### Überblick
 
-Mit dem AEM Screens-Benachrichtigungsdienst können Administratoren einen Bericht mit einer Liste aller AEM Screens-Player erhalten, die während eines konfigurierbaren Zeitraums nicht per Ping an eine E-Mail gesendet wurden.
+Der AEM Screens-Benachrichtigungsdienst bietet Admins die Möglichkeit, einen Bericht mit einer Liste aller AEM Screens-Player zu erhalten, die in einem konfigurierbaren Zeitraum nicht für eine E-Mail gepingt haben.
 
 ### Vorgehensweise bei der Konfiguration
 
-In AEM Screens Cloud können Kunden einen Bericht zum Status der Geräteinaktivität anfordern, indem sie ein Support-Ticket mit folgenden Informationen erstellen:
+In der AEM Screens-Cloud können Kundinnen und Kunden einen Bericht zum Status der Geräteinaktivität anfordern, indem sie ein Support-Ticket mit folgenden Informationen erstellen:
 
 * Kundenname
 * IMS-Organisations-ID
@@ -29,8 +29,8 @@ In AEM Screens Cloud können Kunden einen Bericht zum Status der Geräteinaktivi
 * E-Mail-ID(s) : E-Mail-ID(s), an die der Bericht gesendet wird
 
 >[!NOTE]
->Bei E-Mails wird der Player nur dann gemeldet, wenn das Gerät, das zum Zeitpunkt der Generierung der E-Mail keinen Ping für die angegebene Ping-Zeitüberschreitung durchgeführt hat.
+>Bei E-Mails wird der Player nur dann gemeldet, wenn das Gerät zum Zeitpunkt der Generierung der E-Mail keinen Ping für die angegebene Ping-Zeitüberschreitung durchgeführt hat.
 
 ### Anwendungsbeispiel
 
-Wenn Sie die Berichtszeit auf 5 Uhr und das Ping-Timeout auf 1 Stunde festlegen, erhalten Sie, wenn Ihr Screens-Gerät nicht zwischen 4:00 Uhr und 5:00 Uhr pingt, eine E-Mail-Benachrichtigung, in der die Inaktivität des Geräts bestätigt wird.
+Wenn Sie die Berichtszeit auf 5:00 Uhr und das Ping-Timeout auf 1 Stunde setzen, erhalten Sie, falls Ihr Screens-Gerät zwischen 4:00 Uhr und 5:00 Uhr nicht pingt, eine E-Mail-Benachrichtigung, mit der die Inaktivität des Geräts bestätigt wird.

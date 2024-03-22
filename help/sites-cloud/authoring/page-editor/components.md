@@ -3,9 +3,9 @@ title: Komponenten
 description: Komponenten sind der grundlegende Baustein für die Erstellung von Inhaltsseiten in AEM.
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '335'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -23,15 +23,15 @@ AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website
 
 ## Allgemeine Verwendung {#general-usage}
 
-Die Komponenten sind auf der **Komponenten** Registerkarte des Seitenbereichs des Seiteneditors, wenn [Bearbeiten einer Seite.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+Die Komponenten sind auf der Registerkarte **Komponenten** des seitlichen Bedienfelds vom Seiteneditor verfügbar, wenn Sie eine [Seite bearbeiten](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 Sie können eine Komponente auswählen und an die gewünschte Stelle auf Ihrer Seite ziehen. Sie können sie dann bearbeiten, indem Sie Folgendes verwenden:
 
 * [Eigenschaften konfigurieren](/help/sites-cloud/authoring/sites-console/page-properties.md)
-* [Inhalt bearbeiten](/help/sites-cloud/authoring/page-editor/edit-content.md)
+* [Bearbeiten von Inhalten](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [Inhalt bearbeiten – Vollbildmodus](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 
-Weitere Informationen zum Hinzufügen von Komponenten zu einer Seite finden Sie unter [Bearbeiten des Seiteninhalts.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+Weitere Informationen zum Hinzufügen von Komponenten zu einer Seite finden Sie unter [Bearbeiten von Seiteninhalten](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 ## Übersicht über alle Komponenten {#overview-of-all-components}
 

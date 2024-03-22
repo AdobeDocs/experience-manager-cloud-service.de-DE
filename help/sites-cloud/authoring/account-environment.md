@@ -1,17 +1,17 @@
 ---
 title: Konfigurieren der Kontoumgebung
-description: Adobe Experience Manager (AEM) bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren.
+description: Adobe Experience Manager (AEM) bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '501'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 # Konfigurieren der Kontoumgebung {#configuring-your-account-environment}
 
-Adobe Experience Manager (AEM) bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren.
+Adobe Experience Manager (AEM) bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren
 
 Mit der Option [Benutzer](#user-settings) in der [Kopfzeile](/help/sites-cloud/authoring/basic-handling.md#the-header) und dem verbundenen Dialogfeld [Benutzereinstellungen](#my-preferences) können Sie Benutzeroptionen bearbeiten.
 
@@ -24,7 +24,7 @@ Im Dialogfeld **Benutzereinstellungen** können Sie auf Folgendes zugreifen:
 * Identität annehmen als
    * Mit der Funktion „Identität annehmen als“ kann ein Benutzer im Namen eines anderen Benutzers arbeiten. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
 * Profil
-   * Es bietet einen bequemen Link zu Ihren Benutzereinstellungen <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
+   * Über das Profil können Sie bequem über einen Link auf Ihre Benutzereinstellungen zugreifen. <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
 * [Benutzereinstellungen](#my-preferences)
    * Hier können verschiedene auf den jeweiligen Benutzer zugeschnittene Einstellungen festgelegt werden.
 
@@ -32,9 +32,9 @@ Im Dialogfeld **Benutzereinstellungen** können Sie auf Folgendes zugreifen:
 
 ### Benutzereinstellungen {#my-preferences}
 
-Die **Benutzereinstellungen** auf das Dialogfeld über [Benutzer](#user-settings) -Option in der Kopfzeile.
+Auf das Dialogfeld **Benutzereinstellungen** kann über die Option [Benutzer](#user-settings) in der Kopfzeile zugegriffen werden.
 
-Jeder Benutzer kann seine eigenen bevorzugten Eigenschaften festlegen.
+Jede Benutzerin und jeder Benutzer kann eigene, bevorzugte Eigenschaften festlegen.
 
 ![Benutzereinstellungen](/help/sites-cloud/authoring/assets/user-preferences.png)
 
@@ -56,7 +56,7 @@ Jeder Benutzer kann seine eigenen bevorzugten Eigenschaften festlegen.
 
 * **Desktop-Aktionen für Assets anzeigen**
 
-  Für diese Option muss das AEM-Desktop-Programm verwendet werden.
+  Für diese Option ist die AEM-Desktop-App erforderlich.
 
 * **Anmerkungsfarbe**
 
@@ -80,7 +80,7 @@ Jeder Benutzer kann seine eigenen bevorzugten Eigenschaften festlegen.
 
 * **Tastaturbefehle aktivieren**
 
-  AEM unterstützt verschiedene Tastaturbefehle, die die Bearbeitung effizienter gestalten.
+  AEM unterstützt verschiedene Tastaturbefehle, die eine noch effizientere Bearbeitung ermöglichen.
 
    * [Tastaturbefehle für die Seitenbearbeitung](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
    * [Tastaturbefehle für Konsolen](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)

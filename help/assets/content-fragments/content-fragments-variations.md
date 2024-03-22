@@ -3,7 +3,7 @@ title: Varianten – Erstellen von Fragmentinhalten (Assets – Inhaltsfragmente
 description: Verstehen Sie, wie Inhaltsfragmentvarianten es Ihnen ermöglichen, Inhalte für das Fragment zu verfassen und dann je nach Zweck Varianten dieses Inhalts zu erstellen, was die Flexibilität steigert.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2474'
 ht-degree: 100%
 

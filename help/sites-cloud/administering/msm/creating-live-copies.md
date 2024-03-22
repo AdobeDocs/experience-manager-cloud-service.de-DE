@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4270'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -110,7 +110,7 @@ So erstellen Sie eine Live Copy:
 
    ![Live Copy erstellen](../assets/create-live-copy.png)
 
-1. Wählen Sie die Quellseite und anschließend **Weiter** aus. Beispiel:
+1. Wählen Sie die Quellseite und anschließend **Weiter** aus. Zum Beispiel:
 
    ![Live Copy-Quelle auswählen](../assets/live-copy-from.png)
 
@@ -160,7 +160,7 @@ Geben Sie beim Erstellen der Site Werte für die folgenden Eigenschaften an:
 * **Name**: (Optional) Der Name des JCR-Knotens, der die Stammseite der Live Copy speichert (der Standardwert basiert auf dem Titel)
 * **Site-Inhaber**: (Optional) Informationen zum Verantwortlichen für die Live Copy
 * **Live Copy**: Wählen Sie diese Option, um eine Live-Beziehung zur Quell-Site herzustellen. Wenn Sie diese Option nicht auswählen, wird eine Kopie des Blueprints erstellt, aber sie wird anschließend nicht mit der Quelle synchronisiert.
-* **Rollout-Konfigurationen**: (Optional) Wählen Sie eine oder mehrere Rollout-Konfigurationen für die Synchronisierung der Live Copy aus. Standardmäßig werden die Rollout-Konfigurationen vom Blueprint übernommen. Siehe [Festlegen der zu verwendenden Rollout-Konfigurationen](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) für weitere Details.
+* **Rollout-Konfigurationen**: (Optional) Wählen Sie eine oder mehrere Rollout-Konfigurationen für die Synchronisierung der Live Copy aus. Die Rollout-Konfigurationen werden standardmäßig vom Blueprint übernommen. Weitere Informationen finden Sie unter [Angeben der zu verwendenden Rollout-Konfigurationen](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
 
 So erstellen Sie die Live Copy einer Site über eine Blueprint-Konfiguration:
 
@@ -173,7 +173,7 @@ So erstellen Sie die Live Copy einer Site über eine Blueprint-Konfiguration:
 
    Alle verfügbaren Sprachen sind standardmäßig ausgewählt. Um eine Sprache zu entfernen, wählen Sie das **X** neben der Sprache aus.
 
-   Beispiel:
+   Zum Beispiel:
 
    ![Spezifizieren der Eigenschaften beim Erstellen der Site](../assets/create-site-properties.png)
 
@@ -203,7 +203,7 @@ So zeigen Sie die Eigenschaften an:
 1. Wählen Sie in der **Sites-Konsole** die Live Copy-Seite aus und öffnen Sie die Eigenschaften.
 1. Wählen Sie die Registerkarte **Live Copy**.
 
-   Beispiel:
+   Zum Beispiel:
 
    ![Registerkarte „Live Copy“ in den Seiteneigenschaften](../assets/live-copy-inherit.png)
 
@@ -586,7 +586,7 @@ Zum Nachverfolgen der von Ihnen durchgeführten Änderungen können Sie die Blue
    * **Mit Blueprint vergleichen**
    * **Mit Live Copy vergleichen**
 
-   Beispiel:
+   Zum Beispiel:
 
    ![Vergleichen von Live Copies](../assets/compare-live-copy.png)
 

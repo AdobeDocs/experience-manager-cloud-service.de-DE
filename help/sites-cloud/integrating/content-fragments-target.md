@@ -3,7 +3,7 @@ title: Exportieren von Inhaltsfragmenten nach Adobe Target
 description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente nach Adobe Target exportieren können, um Erlebnisse zu testen und zu personalisieren.
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2159'
 ht-degree: 100%
 

@@ -3,19 +3,19 @@ title: Verwenden des Rich-Text-Editors in [!DNL Adobe Experience Manager] , um I
 description: Verwenden des Rich-Text-Editors, um Inhalte zu erstellen [!DNL Experience Manager] .
 exl-id: 15c175f8-11de-4475-87a9-920219a4c004
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Verwenden des Rich-Text-Editors zum Erstellen von Inhalten {#use-rich-text-editor-to-author-content}
+# Erstellen von Inhalten mit dem Rich-Text-Editor {#use-rich-text-editor-to-author-content}
 
 Der Rich-Text-Editor (RTE) ist ein einfacher Baustein zum Hinzufügen von Textinhalten in [!DNL Adobe Experience Manager]. Darüber hinaus basieren viele andere Komponenten, die die Inhaltserstellung ermöglichen, auf dem RTE. Experience Manager-Entwickler können den RTE anpassen und Administratoren konfigurieren den RTE für die Verwendung durch Autoren.
 
 ## Bearbeitung im Kontext {#in-place-editing}
 
-Auswählen einer textbasierten Komponente mit einem einzigen Klick, um die [Komponenten-Symbolleiste.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+Durch Auswahl einer textbasierten Komponente mit einem einzigen Klick wird die [Komponentensymbolleiste](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) angzeigt.
 
 ![Die Komponentensymbolleiste](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 

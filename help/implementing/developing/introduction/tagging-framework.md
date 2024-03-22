@@ -3,7 +3,7 @@ title: AEM-Tagging-Framework
 description: Taggen Sie Inhalte und verwenden Sie die AEM Tagging-Infrastruktur, um sie zu kategorisieren und zu organisieren.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1562'
 ht-degree: 100%
 

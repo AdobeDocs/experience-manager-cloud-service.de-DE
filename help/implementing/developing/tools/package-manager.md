@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
 source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3769'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -612,4 +612,4 @@ AEM-Pakete können verwendet werden, um Inhalte über AEMaaCS-Umgebungen hinweg 
 
 [Software-Verteilung](https://downloads.experiencecloud.adobe.com) stellt AEM-Pakete für die Verwendung im lokalen AEM SDK zur Entwicklung bereit. AEM-Pakete, die über Software-Verteilung bereitgestellt werden, dürfen nicht in Cloud-Umgebungen von AEMaaCS installiert werden, es sei denn, dies wird ausdrücklich vom Adobe-Support genehmigt.
 
-Weitere Informationen finden Sie im [Dokumentation zur Softwareverteilung.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de)
+Weitere Informationen finden Sie in der [Dokumentation zur Software-Verteilung](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).

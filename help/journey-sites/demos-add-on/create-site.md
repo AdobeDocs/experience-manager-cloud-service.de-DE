@@ -3,9 +3,9 @@ title: Erstellen einer Demo-Site
 description: Erstellen Sie eine Demosite in AEM basierend auf einer Bibliothek vorkonfigurierter Vorlagen.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ In diesem Dokument erfahren Sie, wie Sie eine Site basierend auf den Vorlagen de
 * Wissen, wie Sie eine Site basierend auf einer Vorlage erstellen.
 * Die Grundlagen der Navigation in der Site-Struktur und der Bearbeitung einer Seite verstehen.
 
-## Erstellen einer Demosite oder eines Screens-Projekts {#create-site}
+## Erstellen einer Demo-Site oder eines Screens-Projekts {#create-site}
 
 Nachdem die Pipeline das Referenzdemo-Add-on bereitgestellt hat, können Sie auf die Autorenumgebung in AEM zugreifen, um Demo-Sites basierend auf dem Inhalt des Add-ons zu erstellen.
 

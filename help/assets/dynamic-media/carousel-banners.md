@@ -6,9 +6,9 @@ feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4492'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ So schaffen Sie einen schnellen Einstieg:
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * [Hinzufügen eines Karussellbanners zu Ihrer Website-Seite](#adding-a-carousel-banner-to-your-website-page)Sie können die Karussellbanner-URL oder den Einbettungscode hinzufügen, die bzw. den Sie auf die Website-Seite kopiert haben.
+   * [Fügen Sie ein Karussellbanner zu Ihrer Website-Seite hinzu.](#adding-a-carousel-banner-to-your-website-page)Sie können die Karussellbanner-URL oder den Einbettungs-Code hinzufügen, den Sie auf die Website-Seite kopiert haben.
 
       * [Integrieren Sie das Karussellbanner mit einer vorhandenen Schnellansicht](#integrating-the-carousel-banner-with-an-existing-quickview). Wenn Sie ein Drittanbietersystem für Web Content Management verwenden, müssen Sie das neue Karussellbanner mit der vorhandenen Schnellansichtsimplementierung auf Ihrer Website integrieren.
 

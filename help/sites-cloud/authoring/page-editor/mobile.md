@@ -3,7 +3,7 @@ title: Verfassen einer Seite für Mobilgeräte
 description: Beim Verfassen für Mobilgeräte können Sie zwischen mehreren Emulatoren wechseln, um zu sehen, was die Endbenutzerinnen und -benutzer sehen
 exl-id: fabd4468-3304-402f-9522-342da3bbae94
 source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
 ht-degree: 100%
 

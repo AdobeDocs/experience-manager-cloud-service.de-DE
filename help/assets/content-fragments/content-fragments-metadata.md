@@ -3,7 +3,7 @@ title: Metadaten – Fragmenteigenschaften (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie die Metadateneigenschaften für Inhaltsfragmente anzeigen und bearbeiten können.
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '274'
 ht-degree: 100%
 

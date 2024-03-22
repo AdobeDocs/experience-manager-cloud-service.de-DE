@@ -1,26 +1,26 @@
 ---
-title: Verwalten des Site-Designs mithilfe des Site-Bedienfelds
-description: Erfahren Sie mehr über die leistungsstarken Funktionen des Bedienfelds "Site", mit denen Sie Ihr Site-Design einfach anpassen und verwalten können.
+title: Verwenden des Site-Bedienfelds zum Verwalten Ihres Site-Designs
+description: Erfahren Sie mehr über die leistungsstarken Funktionen des Site-Bedienfelds, mit denen Sie Ihr Site-Design einfach anpassen und verwalten können.
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '583'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 
-# Verwenden des Bedienfelds &quot;Site&quot;zum Verwalten Ihres Site-Designs {#site-panel}
+# Verwenden des Site-Bedienfelds zum Verwalten Ihres Site-Designs {#site-panel}
 
-Erfahren Sie mehr über die leistungsstarken Funktionen des Bedienfelds &quot;Site&quot;, mit denen Sie Ihr Site-Design einfach anpassen und verwalten können.
+Erfahren Sie mehr über die leistungsstarken Funktionen des Site-Bedienfelds, mit denen Sie Ihr Site-Design einfach anpassen und verwalten können.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
-Im Bereich &quot;Site&quot;können Sie das Design und die Vorlagenressourcen Ihrer Site verwalten. [Wie andere Panels](/help/sites-cloud/authoring/sites-console/console-side-panel.md) z. B. in den Bedienfeldern Inhaltsstruktur, Verweise oder Timeline wird das Bedienfeld Site in der Sites-Konsole als Bereich ganz links angezeigt, der Informationen zum ausgewählten Element anzeigt. Im Gegensatz zu anderen Bedienfeldern gilt das Bedienfeld &quot;Site&quot;nur für die Stammordner der Site.
+Mit dem Site-Bedienfeld können Sie die Design- und Vorlagenressourcen Ihrer Site verwalten. [Wie andere Bedienfelder](/help/sites-cloud/authoring/sites-console/console-side-panel.md), z. B. die Inhaltsstruktur-, Verweis- oder Timeline-Bedienfelder, wird auch das Site-Bedienfeld in der Sites-Konsole ganz links als Bereich angezeigt, der Informationen zum ausgewählten Element enthält. Im Gegensatz zu anderen Bedienfeldern gilt das Site-Bedienfeld aber nur für Site-Stammverzeichnisse.
 
-Der Bereich &quot;Site&quot;wird verwendet, um Informationen zu Themen und Vorlagen für Ihre Site zu verwalten, darunter:
+Das Site-Bedienfeld wird verwendet, um Informationen zu Designs und Vorlagen für Ihre Site zu verwalten, darunter:
 
 * [Herunterladen von Design-Quellen](#downloading-theme-sources)
 * [Herunterladen von Vorlagenressourcen wie Wireframes](#downloading-template-resources)
@@ -33,9 +33,9 @@ Der Bereich &quot;Site&quot;wird verwendet, um Informationen zu Themen und Vorla
 
 ## Herunterladen von Design-Quellen {#downloading-theme-sources}
 
-Wenn Sie eine Site in AEM erstellen, die auf einer [Site-Vorlage,](site-templates.md) Sie können [Site-Design](site-themes.md) über den Bereich &quot;Site&quot;.
+Wenn Sie in AEM eine Site erstellen, die auf einer [Site-Vorlage](site-templates.md) basiert, können Sie Ihr [Site-Design](site-themes.md) über das Site-Bedienfeld herunterladen.
 
-Wenn der Bereich &quot;Site&quot;in der Sites-Konsole angezeigt wird, wählen Sie den Stamm Ihrer Site aus, um Designinformationen über die Site anzuzeigen.
+Wenn das Site-Bedienfeld in der Sites-Konsole angezeigt wird, wählen Sie das Stammverzeichnis Ihrer Site aus, um Design-Informationen über die Site anzuzeigen.
 
 ![Herunterladen von Design-Quellen](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
@@ -45,7 +45,7 @@ Wählen Sie **Design-Quellen herunterladen** aus, um eine lokale Kopie des Site-
 
 [Site-Vorlagen](site-templates.md) können zusätzlich zu Ihrer Site-Inhaltsstruktur und dem [Site-Design Informationen enthalten.](site-themes.md) Site-Vorlagen können beispielsweise Wireframe-Designs oder andere Site-bezogene Dateien enthalten.
 
-Wenn Ihre Site auf einer Site-Vorlage basiert und der Site-Bereich in der Sites-Konsole angezeigt wird, wählen Sie den Stamm Ihrer Site aus, um Designinformationen über die Site anzuzeigen, einschließlich zusätzlicher Site-Ressourcen.
+Wenn Ihre Site auf einer Site-Vorlage basiert und das Site-Bedienfeld in der Sites-Konsole angezeigt wird, wählen Sie das Stammverzeichnis Ihrer Site aus, um Design-Informationen über die Site anzuzeigen, einschließlich zusätzlicher Site-Ressourcen.
 
 ![Herunterladen von Design-Quellen](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
@@ -53,11 +53,11 @@ Wählen Sie die Schaltfläche oder die Schaltflächen unter der Überschrift **Z
 
 ## Anzeigen und Ändern von Design-Versionen {#them-versions}
 
-Wenn Ihre Site auf einer Site-Vorlage basiert, kann es sein, dass das Design bereits von Ihrem Frontend-Entwickler angepasst wurde. Im Bedienfeld &quot;Site&quot;können Sie anzeigen, welche Version des Site-Designs derzeit bereitgestellt ist, und zu früheren Versionen wechseln.
+Wenn Ihre Site auf einer Site-Vorlage basiert, kann es sein, dass das Design bereits von Ihrem Frontend-Entwickler angepasst wurde. Über das Site-Bedienfeld können Sie anzeigen, welche Version des Site-Designs derzeit bereitgestellt ist, und zu früheren Versionen wechseln.
 
-Wenn der Bereich &quot;Site&quot;in der Sites-Konsole angezeigt wird, wählen Sie den Stamm Ihrer Site aus, um Designinformationen über die Site anzuzeigen.
+Wenn das Site-Bedienfeld in der Sites-Konsole angezeigt wird, wählen Sie das Stammverzeichnis Ihrer Site aus, um Design-Informationen über die Site anzuzeigen.
 
-![Site-Versionen im Bereich](/help/sites-cloud/administering/assets/theme-versions.png)
+![Site-Versionen im Bedienfeld](/help/sites-cloud/administering/assets/theme-versions.png)
 
 Die aktuelle Version des Designs wird mit dem Commit-Hash und dem Zeitstempel der letzten Aktualisierung angezeigt.
 
@@ -77,9 +77,9 @@ Sie können die Schaltfläche **Version auswählen** verwenden, um auf die neue 
 
 Wenn Ihre Site nicht mit einer Site-Vorlage erstellt wurde, ist es nicht möglich, die Frontend-Pipeline zum Anpassen und Bereitstellen ihres Designs zu verwenden.
 
-Sie können die Front-End-Pipeline für Ihre Site jedoch über den Bereich &quot;Site&quot;aktivieren.
+Sie können die Frontend-Pipeline für Ihre Site jedoch über das Site-Bedienfeld aktivieren.
 
-Wenn der Bereich &quot;Site&quot;in der Sites-Konsole angezeigt wird, wählen Sie den Stamm Ihrer Site aus, um Designinformationen über die Site anzuzeigen, und klicken Sie dann auf **Front-End-Pipeline aktivieren**.
+Wenn das Site-Bedienfeld in der Sites-Konsole angezeigt wird, wählen Sie das Stammverzeichnis Ihrer Site aus, um Design-Informationen über die Site anzuzeigen, und wählen Sie dann **Frontend-Pipeline aktivieren** aus.
 
 ![Aktivieren der Frontend-Pipeline](/help/sites-cloud/administering/assets/enable-fep.png)
 

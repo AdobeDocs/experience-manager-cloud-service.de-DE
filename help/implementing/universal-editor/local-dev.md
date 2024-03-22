@@ -3,9 +3,9 @@ title: Lokale AEM-Entwicklung mit dem universellen Editor
 description: Erfahren Sie, wie der universelle Editor die Bearbeitung lokaler AEM-Instanzen zu Entwicklungszwecken unterstützt.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '698'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -16,15 +16,15 @@ Erfahren Sie, wie der universelle Editor die Bearbeitung lokaler AEM-Instanzen z
 
 {{universal-editor-status}}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
-Der Dienst „Universeller Editor“ bindet den universellen Editor und das Backend-System zusammen. Um eine lokale Entwicklung für den universellen Editor durchführen zu können, müssen Sie eine lokale Kopie des Universal Editor Service ausführen. Dies liegt an Folgendem:
+Der Dienst „Universeller Editor“ bindet den universellen Editor und das Backend-System zusammen. Um eine lokale Entwicklung für den universellen Editor durchführen zu können, müssen Sie eine lokale Kopie des Dienstes „Universeller Editor“ ausführen. Der Grund hierfür ist Folgender:
 
-* Der offizielle universelle Editor-Dienst von Adobe wird global gehostet und Ihre lokale AEM-Instanz muss dem Internet zur Verfügung gestellt werden.
-* Bei der Entwicklung mit dem lokalen AEM SDK ist der Zugriff auf einen universellen Editor-Dienst über das Internet nicht möglich.
-* Wenn Ihre AEM-Instanz IP-Beschränkungen aufweist und sich der universelle Editor-Dienst nicht in einem definierten IP-Bereich befindet, können Sie ihn selbst hosten.
+* Der offizielle Dienst „Universeller Editor“ von Adobe wird global gehostet, und Ihre lokale AEM-Instanz würde so dem Internet ausgesetzt werden.
+* Bei der Entwicklung mit einem lokalen AEM SDK ist der Zugriff auf den Dienst „Universeller Editor“ von Adobe über das Internet nicht möglich.
+* Wenn Ihre AEM-Instanz IP-Beschränkungen aufweist und sich der Dienst „Universeller Editor“ von Adobe nicht in einem definierten IP-Bereich befindet, können Sie ihn selbst hosten.
 
-In diesem Dokument wird beschrieben, wie Sie AEM in HTTPS zusammen mit einer lokalen Kopie des Universal Editor-Dienstes ausführen, damit Sie eine lokale Entwicklung auf AEM für die Verwendung mit dem Universal Editor durchführen können.
+In diesem Dokument wird beschrieben, wie Sie AEM in HTTPS zusammen mit einer lokalen Kopie des Dienstes „Universeller Editor“ ausführen, damit Sie mit dem universellen Editor lokal auf AEM entwickeln können.
 
 ## Einrichten von AEM für die Ausführung auf HTTPS {#aem-https}
 
@@ -32,17 +32,17 @@ Innerhalb eines äußeren Rahmens, der mit HTTPS gesichert ist, kann kein unsich
 
 Dazu müssen Sie AEM für die Ausführung auf HTTPS einrichten. Zu Entwicklungszwecken können Sie ein selbstsigniertes Zertifikat verwenden.
 
-[Siehe dieses Dokument](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=de) Informationen zum Einrichten von AEM, die auf HTTPS ausgeführt werden, einschließlich eines selbstsignierten Zertifikats, das Sie verwenden können.
+[In diesem Dokument](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=de) erfahren Sie, wie Sie AEM einrichten, das auf HTTPS ausgeführt wird, einschließlich eines selbstsignierten Zertifikats, das Sie verwenden können.
 
 ## Installieren des Dienstes „Universeller Editor“ {#install-ue-service}
 
-Der universelle Editor-Dienst ist keine vollständige Kopie des universellen Editors, sondern nur eine Teilmenge seiner Funktionen, um sicherzustellen, dass Aufrufe aus Ihrer lokalen AEM-Umgebung nicht über das Internet weitergeleitet werden, sondern von einem definierten Endpunkt, den Sie steuern.
+Der Dienst „Universeller Editor“ ist keine vollständige Kopie des universellen Editors, sondern nur eine Teilmenge seiner Funktionen, um sicherzustellen, dass Aufrufe aus Ihrer lokalen AEM-Umgebung nicht über das Internet weitergeleitet werden, sondern von einem definierten Endpunkt, den Sie steuern.
 
-[NodeJS, Version 16](https://nodejs.org/en/download/releases) ist erforderlich, um eine lokale Kopie des Universal Editor-Dienstes auszuführen.
+[NodeJS Version 16](https://nodejs.org/en/download/releases) ist erforderlich, um eine lokale Kopie des Dienstes „Universeller Editor“ auszuführen.
 
-Der Universal Editor Service ist über Software Distribution verfügbar. Lesen Sie hierzu die [Dokumentation zur Softwareverteilung](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de) für weitere Informationen zum Zugriff.
+Der Dienst „Universeller Editor“ ist über die Software-Verteilung verfügbar. In der [Dokumentation zur Software-Verteilung](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de) finden Sie weitere Informationen zum Zugriff darauf.
 
-Speichern Sie die `universal-editor-service.cjs` -Datei von Software Distribution in Ihre lokale Entwicklungsumgebung.
+Speichern Sie die Datei `universal-editor-service.cjs` von der Software-Verteilung in Ihrer lokalen Entwicklungsumgebung.
 
 ## Erstellen eines Zertifikats zum Ausführen des Dienstes „Universeller Editor“ mit HTTPS {#ue-https}
 
@@ -106,9 +106,9 @@ Nach der Festlegung sollte jeder Inhaltsaktualisierungsaufruf an `https://localh
 
 >[!NOTE]
 >
->Versuch, direkten Zugriff zu erhalten `https://localhost:8000` führt zu einer `404` Fehler. Dies ist das erwartete Verhalten.
+>Der Versuch, direkt auf Ergebnisse von `https://localhost:8000` zuzugreifen, führt zu einem `404`-Fehler. Dies ist das erwartete Verhalten.
 >
->Verwenden Sie zum Testen des Zugriffs auf Ihren lokalen Universal Editor-Dienst `https://localhost:8000/corslib/LATEST`. Siehe [nächster Abschnitt](#editing) für Details.
+>Verwenden Sie `https://localhost:8000/corslib/LATEST` zum Testen des Zugriffs auf Ihren lokalen Dienst „Universeller Editor“. Weitere Informationen finden Sie im [nächsten Abschnitt](#editing).
 
 >[!TIP]
 >

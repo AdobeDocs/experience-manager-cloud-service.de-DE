@@ -6,9 +6,9 @@ feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
 source-git-commit: 52a6cb359bfe0d76bdceb3f517e92d78994872c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '732'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Einige Anwendungsfälle für den Massenexport von Metadaten:
 
 >[!NOTE]
 >
->Metadaten-Exporte sind auf 1.048.575 Assets begrenzt, was der maximalen Arbeitsblattgröße in Microsoft Excel entspricht. Wenn eine exportierte Hierarchie mehr als diese Anzahl von Assets enthält, werden nur die Metadaten der ersten 1.048.575 Assets in die CSV-Datei aufgenommen.
+>Metadaten-Exporte sind auf 1.048.575 Assets begrenzt. Dies entspricht der maximalen Arbeitsblattgröße in Microsoft Excel. Wenn eine exportierte Hierarchie mehr als diese Anzahl von Assets enthält, werden nur die Metadaten der ersten 1.048.575 Assets in die CSV-Datei aufgenommen.
 
 1. Wählen Sie einen Asset-Ordner aus, der Assets enthält, für die Sie Metadaten exportieren möchten. Wählen Sie in der Symbolleiste **[!UICONTROL Metadaten exportieren]** aus.
 1. Geben Sie im Dialogfeld „Metadatenexport“ einen Namen für die CSV-Datei an. Um Metadaten von Assets in Unterordnern zu exportieren, wählen Sie **[!UICONTROL Assets in Unterordnern einschließen]**.

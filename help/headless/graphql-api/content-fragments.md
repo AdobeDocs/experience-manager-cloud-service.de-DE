@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager 
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: a8fbf0a9a1f7e12b6a668544b1a67d8551abf1b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5135'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -1128,11 +1128,11 @@ Zum Schutz vor potenziellen Problemen gibt es Standardbeschränkungen für Abfra
 
 Außerdem müssen Sie Folgendes beachten:
 
-* Ein Feldkonfliktfehler wird zurückgegeben, wenn Ihre GraphQL-Abfrage Felder mit demselben Namen in zwei (oder mehr) Modellen enthält:
+* Es wird ein Feldkonfliktfehler zurückgegeben, wenn Ihre GraphQL-Abfrage Felder mit demselben Namen in zwei (oder mehr) Modellen enthält:
 
-   * Wo also:
+   * Etwa in folgendem Fall:
 
-      * Zwei (oder mehr Modelle) werden als mögliche Verweise verwendet, wenn sie als zulässig definiert sind **Modelltyp** in der Inhaltsfragmentreferenz.
+      * Zwei (oder mehr Modelle) als mögliche Verweise werden verwendet, wenn sie im Inhaltsfragmentverweis als zulässiger **Modelltyp** definiert sind.
 
      und:
 
@@ -1144,12 +1144,12 @@ Außerdem müssen Sie Folgendes beachten:
 
    * Zum Beispiel:
 
-      * Wenn zwei (oder mehr) Fragmente mit verschiedenen Modellen (z. B. `M1`, `M2`) als mögliche Verweise (Inhaltsreferenz oder Fragmentverweis) aus einem anderen Fragment verwendet werden, z. B. `Fragment1` `MultiField/List`
-      * Und diese beiden Fragmente mit verschiedenen Modellen (`M1`, `M2`) Felder mit demselben Namen, aber unterschiedlichen Typen haben.
+      * Wenn zwei (oder mehr) Fragmente mit verschiedenen Modellen (z. B. `M1`, `M2`) als mögliche Verweise (Inhaltsverweis oder Fragmentverweis) aus einem anderen Fragment verwendet werden, z. B. `Fragment1` `MultiField/List`,
+      * und diese beiden Fragmente mit verschiedenen Modellen (`M1`, `M2`) Felder mit demselben Namen, aber unterschiedlichen Typen haben.
 Beispiel:
-         * `M1.Title` as `Text`
-         * `M2.Title` as `Text/MultiField`
-      * Dann tritt ein Feldkonfliktfehler auf, wenn die GraphQL-Abfrage die `Title` -Feld.
+         * `M1.Title` als `Text`
+         * `M2.Title` als `Text/MultiField`
+      * Dann tritt ein Feldkonfliktfehler auf, wenn die GraphQL-Abfrage das `Title`-Feld enthält.
 
 ## Häufig gestellte Fragen {#faqs}
 

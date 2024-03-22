@@ -3,9 +3,9 @@ title: Tastaturbefehle für Konsolen
 description: Mit diesen Tastaturbefehlen sparen Sie Zeit beim Authoring
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '378'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Sie können die Tastaturbefehle an zwei Stellen deaktivieren:
 
 ## Tastaturbefehle für den Seiten-Editor {#keyboard-shortcuts-for-the-page-editor}
 
-In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für die Verwendung von Konsolen, andere für [Seitenbearbeitung](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
+In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die [Seitenbearbeitung](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
 
 ## Tastaturbefehle für die Inhaltsfragmentkonsole {#keyboard-shortcuts-for-the-content-fragments-console}
 

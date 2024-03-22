@@ -3,9 +3,9 @@ title: Bereitstellen eines benutzerdefinierten Designs
 description: Erfahren Sie, wie Sie das Design der Site mithilfe der Pipeline bereitstellen.
 exl-id: fe065972-39db-4074-a802-85895c701efd
 source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1002'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -112,9 +112,9 @@ Im Folgenden finden Sie einige zusätzliche Ressourcen, die näher auf einige de
 * [AEM-Sitedesign](https://github.com/adobe/aem-site-template-standard-theme-e2e) – Dies ist das GitHub-Repository des AEM-Sitedesigns.
 * [npm](https://www.npmjs.com) - AEM-Designs, die zum schnellen Erstellen von Sites verwendet werden, die auf nmp basieren.
 * [webpack](https://webpack.js.org): AEM-Designs, die zum schnellen Erstellen von Sites verwendet werden, verwenden webpack.
-* [Organisieren von Seiten](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - In diesem Handbuch wird beschrieben, wie Sie Seiten Ihrer AEM organisieren.
-* [Erstellen von Seiten](/help/sites-cloud/authoring/sites-console/creating-pages.md) - In diesem Handbuch wird beschrieben, wie Sie neue Seiten zu Ihrer Site hinzufügen.
-* [Verwalten von Seiten](/help/sites-cloud/authoring/sites-console/managing-pages.md) - In diesem Handbuch wird beschrieben, wie Sie die Seiten Ihrer Site verwalten, einschließlich Verschieben, Kopieren und Löschen.
+* [Organisieren von Seiten](/help/sites-cloud/authoring/sites-console/organizing-pages.md) – In dieser Anleitung wird beschrieben, wie Sie Seiten Ihrer AEM-Site organisieren.
+* [Erstellen von Seiten](/help/sites-cloud/authoring/sites-console/creating-pages.md) – In dieser Anleitung wird beschrieben, wie Sie neue Seiten zu Ihrer Site hinzufügen.
+* [Verwalten von Seiten](/help/sites-cloud/authoring/sites-console/managing-pages.md) – In dieser Anleitung wird beschrieben, wie Sie die Seiten Ihrer Site verwalten, einschließlich Verschieben, Kopieren und Löschen.
 * [Arbeiten mit Paketen](/help/implementing/developing/tools/package-manager.md) – Pakete ermöglichen den Import und Export von Repository-Inhalten. In diesem Dokument wird erläutert, wie Sie mit Paketen in AEM 6.5 arbeiten. Dies gilt auch für AEMaaCS.
 * [Onboarding-Journey](/help/journey-onboarding/overview.md) – Dieses Handbuch dient als Ausgangspunkt, um sicherzustellen, dass Ihre Teams eingerichtet sind und Zugriff auf AEM as a Cloud Service haben.
 * [Dokumentation zu Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=de) – Vollständige Details zu den Funktionen finden Sie in der Dokumentation zu Cloud Manager.

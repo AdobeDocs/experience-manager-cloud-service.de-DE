@@ -4,9 +4,9 @@ Description: Explore the streamlined process of connecting AEM Forms with Micros
 keywords: AEM Forms OneDrive-Integration, Verbindung zu Microsoft OneDrive, OneDrive-Konfigurationseinstellungen mit AEM-Formularen
 feature: Adaptive Forms, Core Components
 source-git-commit: 20458e710502e445cf5c8f582a1d183bdac75c8d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '587'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

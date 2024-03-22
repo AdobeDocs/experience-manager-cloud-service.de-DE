@@ -5,9 +5,9 @@ description: Der Entwicklermodus öffnet einen Seitenbereich mit mehreren Regist
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Diese Registerkarte enthält eine Komponentenstruktur mit folgenden Attributen:
 
 * Zeigt die Kette der Komponenten und Vorlagen, die auf dieser Seite gerendert wurden. Die Struktur kann erweitert werden, sodass sie Kontext innerhalb der Hierarchie anzeigt.
 * Zeigt die Server-seitige Verarbeitungszeit, die zum Rendern der Komponente benötigt wird.
-* Ermöglicht das Erweitern der Baumstruktur und Auswählen bestimmter Komponenten innerhalb der Baumstruktur. Die Auswahl bietet Zugriff auf Komponentendetails, z. B.:
+* Ermöglicht es, die Struktur zu erweitern und bestimmte Komponenten innerhalb der Struktur auszuwählen. Die Auswahl bietet Zugriff auf Komponentendetails, z. B.:
    * Repository-Pfad
    * Links zu den Skripten (Zugriff über CRXDE Lite)
    * Komponentendetails, wie sie in der [Komponentenkonsole](/help/sites-cloud/authoring/components-console.md) zu sehen sind

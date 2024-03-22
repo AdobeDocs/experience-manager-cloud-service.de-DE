@@ -1,10 +1,10 @@
 ---
 title: Einschränkungen beim Rückgängigmachen und Wiederherstellen
-description: Erfahren Sie mehr über die Einschränkungen der Optionen "Rückgängig"und "Wiederholen"im AEM Seiteneditor.
+description: Erfahren Sie mehr über Einschränkungen der Optionen „Rückgängig“ und „Wiederholen“ im AEM-Seiteneditor.
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '307'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 

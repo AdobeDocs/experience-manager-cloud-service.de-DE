@@ -1,27 +1,27 @@
 ---
 title: Verwalten von Seiten
-description: Erfahren Sie, wie Sie die Seiten Ihrer Website verwalten AEM einschließlich Verschieben, Kopieren und Löschen.
+description: Erfahren Sie, wie Sie die Seiten Ihrer Website in AEM verwalten, einschließlich dem Verschieben, Kopieren und Löschen.
 source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1271'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 
 # Verwalten von Seiten {#managing-pages}
 
-Erfahren Sie, wie Sie die Seiten Ihrer Website verwalten AEM einschließlich Verschieben, Kopieren und Löschen.
+Erfahren Sie, wie Sie die Seiten Ihrer Website in AEM verwalten, einschließlich dem Verschieben, Kopieren und Löschen.
 
 >[!TIP]
 >
->Bevor Sie mit der Verwaltung Ihrer Seiten beginnen, sollten Sie sich mit [wie Ihre Seiten in AEM organisiert sind.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>Bevor Sie mit der Verwaltung Ihrer Seiten beginnen, sollten Sie sich damit vertraut machen, [wie Ihre Seiten in AEM organisiert sind](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
 
 >[!TIP]
 >
 >Es steht eine Reihe von [Tastaturbefehlen](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) in der Websites-Konsole zur Verfügung, die eine effizientere Seitenorganisation ermöglichen.
 
-## Zugriffsberechtigungen {#access-privileges}
+## Zugriff auf Berechtigungen {#access-privileges}
 
 Ihr Konto muss über die erforderlichen Zugriffsrechte und Berechtigungen verfügen, damit Sie Aktionen auf Seiten durchführen können, beispielsweise erstellen, kopieren, verschieben, bearbeiten und löschen.
 
@@ -29,35 +29,35 @@ Wenn Sie auf Probleme stoßen, empfehlen wir Ihnen, sich an die Systemadmins zu 
 
 ## Öffnen einer Seite zur Bearbeitung {#opening-a-page-for-editing}
 
-Nachher [Erstellen einer Seite](/help/sites-cloud/authoring/sites-console/creating-pages.md) oder mithilfe von zu einer vorhandenen Seite navigieren [die **Sites** Konsole,](/help/sites-cloud/authoring/sites-console/introduction.md) Sie können sie zur Bearbeitung öffnen.
+Wenn Sie [eine Seite erstellt haben](/help/sites-cloud/authoring/sites-console/creating-pages.md) bzw. in [der **Sites-Konsole** zu einer bereits vorhandenen Seite navigiert sind](/help/sites-cloud/authoring/sites-console/introduction.md), können Sie diese zur Bearbeitung öffnen.
 
-1. Öffnen [die **Sites** Konsole.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Öffnen Sie [die **Sites-Konsole**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Navigieren Sie zu der Seite, die Sie bearbeiten möchten.
 1. Wählen Sie Ihre Seite mit einer der folgenden Methoden aus:
 
    * [Schnellaktionen](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) und Symbolleiste
 
-1. Tippen oder klicken Sie auf **Bearbeiten** Symbol.
+1. Tippen oder klicken Sie auf das Symbol **Bearbeiten**.
 
    ![Schaltfläche „Bearbeiten“](/help/sites-cloud/authoring/assets/edit.png)
 
-1. Die Seite wird geöffnet und Sie können die Seite nach Bedarf bearbeiten. Je nachdem, wie die ausgewählte Seite erstellt wurde, wird die **Bearbeiten** -Aktion öffnet den entsprechenden Editor.
-   * [Seiten-Editor](/help/sites-cloud/authoring/page-editor/introduction.md) - Für Seiten, die mit dem AEM Seiten-Editor erstellt wurden
-   * [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) - Für mit dem Universal Editor erstellte Seiten
+1. Die Seite wird geöffnet und Sie können sie nach Bedarf bearbeiten.  Je nachdem, wie die ausgewählte Seite erstellt wurde, öffnet die Aktion **Bearbeiten** den entsprechenden Editor.
+   * [Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) – für Seiten, die mit dem AEM-Seiteneditor erstellt wurden.
+   * [Universeller Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) – für Seiten, die mit dem universellen Editor erstellt wurden.
 
 ## Kopieren und Einfügen einer Seite {#copying-and-pasting-a-page}
 
 Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicherort kopieren:
 
-1. Öffnen [die **Sites** Konsole.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Öffnen [Sie die **Sites-Konsole**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Navigieren Sie zu der Seite, die Sie kopieren möchten.
 1. Wählen Sie Ihre Seite mit einer der folgenden Optionen aus:
 
    * [Schnellaktionen](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) und Symbolleiste
 
-1. Tippen oder klicken Sie auf **Kopieren** Seitensymbol.
+1. Tippen oder klicken Sie auf das Symbol zum **Kopieren** der Seite.
 
    ![Kopieren](/help/sites-cloud/authoring/assets/copy.png)
 
@@ -92,18 +92,18 @@ Die Vorgehensweise beim Verschieben oder Umbenennen einer Seite ist im Großen u
 
 AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite führen, die umbenannt oder verschoben wird. Dies kann seitenweise erfolgen, um volle Flexibilität zu bieten.
 
-1. Öffnen [die **Sites** Konsole.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Öffnen [Sie die **Sites-Konsole**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Navigieren Sie zu der Seite, die Sie verschieben möchten.
 1. Wählen Sie Ihre Seite mit einer der folgenden Optionen aus:
 
    * [Schnellaktionen](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) und Symbolleiste
 
-1. Tippen oder klicken Sie auf **Verschieben** Seitensymbol , um den Assistenten zum Verschieben von Seiten zu öffnen.
+1. Tippen oder klicken Sie auf das Symbol zum **Verschieben** der Seite, um den Assistenten zum Verschieben von Seiten zu öffnen.
 
    ![Schaltfläche „Verschieben“](/help/sites-cloud/authoring/assets/move.png)
 
-1. Aus dem **Umbenennen** Schritt des Assistenten können Sie entweder:
+1. Im Schritt **Umbenennen** des Assistenten haben Sie folgende Möglichkeiten:
 
    * Geben Sie den Namen an, den die Seite nach dem Verschieben aufweisen soll, und wählen Sie dann **Weiter**, um fortzufahren.
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
@@ -116,7 +116,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
    >
    >Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `beach` bereits existiert, wird eine neue Seite mit dem Namen `beach` zu `beach1`.
 
-1. Aus dem **Ziel auswählen** Schritt des Assistenten können Sie entweder:
+1. Im Schritt **Ziel auswählen** des Assistenten können Sie entweder:
 
    * Die [Spaltenansicht](/help/sites-cloud/authoring/basic-handling.md#column-view) verwenden, um zum neuen Speicherort für die Seite zu navigieren:
 
@@ -145,14 +145,14 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
    ![Erneutes Veröffentlichen einer Seite nach Verschiebung](/help/sites-cloud/authoring/assets/move-page-republish.png)
 
-1. Tippen oder klicken **Verschieben** , um festzulegen, wann der Verschiebevorgang ausgeführt werden soll.
+1. Tippen oder klicken Sie auf **Verschieben**, um festzulegen, wann der Verschiebevorgang ausgeführt werden soll.
 
-   * **Jetzt** Trigger und [asynchroner Auftrag](#asynchronous-actions) , um die Seite sofort zu verschieben.
+   * **Jetzt** löst einen [asynchronen Auftrag](#asynchronous-actions) aus, um die Seite sofort zu verschieben.
    * **Später** ermöglicht es Ihnen, ein Datum für die Verarbeitung des Verschiebevorgangs zu planen.
 
-   ![Festlegen des Zeitpunkts für die Verschiebung](assets/managing-pages-move-page-now-later.png)
+   ![Festlegen des Zeitpunkts für das Verschieben](assets/managing-pages-move-page-now-later.png)
 
-1. Tippen oder klicken **Weiter** , um die Seitenverschiebung abzuschließen.
+1. Tippen oder klicken Sie auf **Fortsetzen**, um die Seitenverschiebung abzuschließen.
 
 >[!NOTE]
 >
@@ -178,7 +178,7 @@ Der Status asynchroner Aufträge kann im [**Dashboard** Status asynchroner Auftr
 
 ### Löschen einer Seite {#deleting-a-page}
 
-1. Öffnen [die **Sites** Konsole.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Öffnen Sie [die **Sites-Konsole**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Navigieren Sie zu der Seite, die Sie löschen möchten.
 1. Wählen Sie mit dem [Auswahlmodus](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) die gewünschte Seite aus, bevor Sie in der Symbolleiste die Option **Löschen** auswählen:
 
@@ -191,13 +191,13 @@ Der Status asynchroner Aufträge kann im [**Dashboard** Status asynchroner Auftr
    * **Möchten Sie Seiten vor dem Löschen archivieren?** – Wenn diese Option aktiviert ist, werden beim Löschen Versionen der zu löschenden Seiten erstellt.
       * [Versionen können zu einem späteren Zeitpunkt wiederhergestellt werden](/help/sites-cloud/authoring/sites-console/page-versions.md).
       * Gelöschte Seiten ohne vorherige Versionen können nicht wiederhergestellt werden.
-1. Tippen oder klicken **Abbrechen** , um die Aktion abzubrechen, oder **Löschen** , um die Aktion zu bestätigen.
+1. Tippen oder klicken Sie auf **Abbrechen**, um den Vorgang abzubrechen, oder auf **Löschen**, um den Vorgang zu bestätigen.
    * Wenn die Seite keine Verweise enthält, wird sie gelöscht.
-   * Wenn die Seite Verweise enthält, werden Sie in einem Meldungsfeld darüber informiert, dass **Es wird auf eine oder mehrere Seiten verwiesen.** Sie können **Löschen erzwingen** oder **Abbrechen**.
+   * Wenn die Seite Verweise enthält, werden Sie in einem Meldungsfeld darüber informiert, dass **auf eine oder mehrere Seiten verwiesen wird.** Sie können **Löschen erzwingen** oder **Abbrechen** auswählen.
 
 >[!NOTE]
 >
->Wenn eine Seite bereits veröffentlicht ist, wird ihre Veröffentlichung vor dem Löschen automatisch rückgängig gemacht.
+>Wenn eine Seite bereits veröffentlicht ist, wird vor dem Löschen automatisch ihre Veröffentlichung rückgängig gemacht.
 
 ### Sperren einer Seite {#locking-a-page}
 
@@ -209,8 +209,8 @@ Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Sei
 
 Sie können Ordner erstellen, um Ihre Dateien und Seiten zu organisieren.
 
-1. Öffnen [die **Sites** Konsole.](/help/sites-cloud/authoring/sites-console/introduction.md)
-1. Navigieren Sie zur erforderlichen Position.
+1. Öffnen Sie [die **Sites-Konsole**](/help/sites-cloud/authoring/sites-console/introduction.md). 
+1. Navigieren Sie zum gewünschten Speicherort.
 1. Um die Optionsliste zu öffnen, wählen Sie **Erstellen** in der Symbolleiste aus.
 1. Wählen Sie **Ordner** aus, um das Dialogfeld zu öffnen. Hier können Sie den **Namen** und den **Titel** eingeben:
 

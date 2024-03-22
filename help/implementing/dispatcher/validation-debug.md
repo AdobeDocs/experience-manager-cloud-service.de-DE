@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die lokale Validierung, das Debugging, die 
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 2cb57347856568da979b34832ce12cce295841dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3028'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -548,9 +548,9 @@ INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
 INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
 ```
 
-### Benutzerdefinierte Umgebungsvariablen einfügen {#environment-variables}
+### Einfügen von benutzerdefinierten Umgebungsvariablen {#environment-variables}
 
-Benutzerdefinierte Umgebungsvariablen können mit dem Dispatcher-SDK verwendet werden, indem sie in einer separaten Datei festgelegt und im `ENV_FILE` Umgebungsvariable vor dem Start des lokalen Dispatchers.
+Benutzerdefinierte Umgebungsvariablen können mit dem Dispatcher-SDK verwendet werden, indem sie in einer separaten Datei festgelegt und vor dem Start des lokalen Dispatchers in der Umgebungsvariable `ENV_FILE` referenziert werden.
 
 Eine Datei mit benutzerdefinierten Umgebungsvariablen würde wie folgt aussehen:
 

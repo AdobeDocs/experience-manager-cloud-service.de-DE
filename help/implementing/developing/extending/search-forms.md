@@ -3,9 +3,9 @@ title: Konfigurieren von Suchformularen
 description: Konfigurieren von Suchformularen für Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2036'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -659,13 +659,13 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
 
    * **Eigenschaftsname**
 
-     Geben Sie die Knoteneigenschaft an, nach der auf den Zielknoten gesucht werden soll. Beispiel:
+     Geben Sie die Knoteneigenschaft an, nach der auf den Zielknoten gesucht werden soll. Zum Beispiel:
 
      `jcr:content/cq:template`
 
    * **Optionsknotenpfad**
 
-     Wählen Sie den Pfad des Speicherorts der Optionen aus. Beispiel:
+     Wählen Sie den Pfad des Speicherorts der Optionen aus. Zum Beispiel:
 
      `/apps/cq/gui/content/common/options/predicates/templatetype`
 

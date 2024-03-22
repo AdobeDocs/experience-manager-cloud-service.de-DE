@@ -1,11 +1,11 @@
 ---
 title: Fehlerbehebung in AEM beim Authoring
-description: Einige Probleme bei der Verwendung von AEM
+description: Probleme, die bei der Verwendung mit AEM auftreten können
 exl-id: b9c0584d-255e-486d-b829-09e07499ecd2
 source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 

@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '729'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ Bei Auswahl einer Live Copy-Seite sind die folgenden Aktionen verfügbar:
 * **[Synchronisieren](overview.md#rollout-and-synchronize)** – synchronisiert eine Live Copy, um Änderungen von der Quelle auf die Live Copy zu übertragen
 * **[Zurücksetzen](creating-live-copies.md#resetting-a-live-copy-page)** – setzt eine Live Copy-Seite zurück, um alle abgebrochenen Vererbungsvorgänge zu entfernen und die Seite in denselben Status wie die Quellseite zurückzuversetzen
 * **[Aussetzen](overview.md#suspending-and-cancelling-inheritance-and-synchronization)** – deaktiviert vorübergehend die Live-Beziehung zwischen einer Live Copy und der zugehörigen Blueprint-Seite
-* **[Fortsetzen](creating-live-copies.md#resuming-inheritance-for-a-page)** - Fortsetzen : Ermöglicht die Wiederherstellung einer ausgesetzten Beziehung.
+* **[Fortsetzen](creating-live-copies.md#resuming-inheritance-for-a-page)** – Reaktiviert eine ausgesetzte Beziehung.
 * **[Trennen](overview.md#detaching-a-live-copy)** – entfernt die Live-Beziehung zwischen einer Live Copy und der zugehörigen Blueprint-Seite dauerhaft
 
 ## Beziehungsstatus {#relationship-status}
@@ -112,6 +112,6 @@ Diese Registerkarte liefert detaillierte Informationen zum Status der Beziehung 
 
 ### Live Copy {#live-copy-tab}
 
-Auf diesem Tab können Sie die Live Copy-Konfiguration anzeigen und bearbeiten.
+Auf dieser Registerkarte können Sie die Konfiguration der Live Copy anzeigen und bearbeiten.
 
 ![Registerkarte „Live Copy“](../assets/live-copy-relationship-status-live-copy.png)

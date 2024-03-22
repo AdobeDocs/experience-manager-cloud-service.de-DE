@@ -3,9 +3,9 @@ title: Erstellen von Launches
 description: Erstellen Sie einen Launch, um die Aktualisierung einer neuen Version bestehender Web-Seiten für die zukünftige Aktivierung zu ermöglichen.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1042'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Optional können Sie das **Launch-Datum** (und die Uhrzeit) für die Bewerbung u
 >
 >Diese Seiten können nicht bearbeitet werden. Es wird die folgende Meldung angezeigt:
 >
->* **Diese Seite ist nicht Teil des Launches. Navigieren zur Produktionsseite**
+>* **Diese Seite ist nicht Teil der Markteinführung. Zur Produktionsseite**
 
 ## Erstellen eines Launches {#creating-a-launch}
 
@@ -53,7 +53,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
    >Dadurch wird die ausgewählte Seite als Anfangsquellseite verwendet.
 
 1. Im Schritt **Quelle auswählen** müssen Sie **Seiten hinzufügen**. Sie können mehrere Seiten auswählen, wobei jeweils der Pfad angegeben werden muss:
-   * Navigieren Sie zur erforderlichen Position.
+   * Navigieren Sie zum gewünschten Speicherort.
    * Wählen Sie die Quellseite(n) aus und bestätigen Sie (durch ein Häkchen).
 
    Wiederholen Sie dies nach Bedarf.

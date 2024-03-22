@@ -3,9 +3,9 @@ title: Erstellen und Verwalten von Kanälen in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie in Screens as a Cloud Service Kanäle erstellen und verwalten.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1103'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ In diesem Dokument erfahren Sie, wie Sie in Screens Content Provider Kanäle fü
 
 * verstehen, wie man Kanäle für Screens Content Provider erstellt
 * Inhalte in Ihren Kanälen verwalten und bearbeiten
-* den Zeitplan für die Zuweisung und Aktivierung Ihrer Kanäle in [Screens Service Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=de)
+* den Zeitplan für die Zuweisung und Aktivierung Ihrer Kanäle in [Screens Service Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=de) verwalten
 
 ## Schritte zum Erstellen eines neuen Sequenzkanals in Screens as a Cloud Service {#create-new-channel}
 
@@ -93,7 +93,7 @@ Die folgenden Vorlagen sind bei Verwendung des Assistenten zum **Erstellen** ein
 
 Mit dieser Funktion können Sie einen standardmäßigen Aktivierungsplan für einen Kanal definieren und ihn standardmäßig für jede Zuweisung für ein Display verwenden. Mit dieser Methode muss die umständliche Zeitplandefinition nicht wiederholt werden.
 
-1. Gehen Sie von [hier](https://experience.adobe.com/screens) zu Screens Services Provider.
+1. Navigieren Sie von [hier](https://experience.adobe.com/screens) zu Screens Services Provider.
 
 ### Erstellen von Standardzuweisungsdetails für einen Kanal {#create-default}
 
@@ -121,7 +121,7 @@ Auf dieser Kachel werden die folgenden Informationen angezeigt:
 Kanäle mit Standardzuweisungsdetails können dem Display auf die gleiche Weise zugewiesen werden wie normale Kanäle. Es besteht die zusätzliche Option, die Standardzuweisungsdetails zu verwenden, statt jedes Mal manuell benutzerdefinierte Zuweisungsdetails zu definieren.
 
 1. Navigieren Sie zur Detailseite des Displays, dem Sie den Kanal zuweisen möchten, und klicken Sie auf **Kanal zuweisen**.
-Wählen Sie alternativ die gewünschte Anzeige im [inventory](https://experience.adobe.com/screens/displays) Anzeigen und klicken Sie auf **Kanal zuweisen**.
+Wählen Sie alternativ die gewünschte Anzeige in der [Bestandsansicht](https://experience.adobe.com/screens/displays) aus und klicken Sie auf **Kanal zuweisen**.
 1. Daraufhin wird das Dialogfeld für die Kanalzuweisung geöffnet.
 
    ![image](/help/screens-cloud/assets/display/Assignments4.png)

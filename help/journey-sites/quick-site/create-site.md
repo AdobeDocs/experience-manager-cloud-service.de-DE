@@ -3,9 +3,9 @@ title: Erstellen einer Site aus einer Vorlage
 description: Erfahren Sie, wie Sie mithilfe einer Site-Vorlage schnell eine neue AEM-Site erstellen können.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1485'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -181,9 +181,9 @@ Fahren Sie aufbauend auf diesen Kenntnissen mit der AEM-Journey zur schnellen Si
 Es wird zwar empfohlen, mit dem nächsten Teil der Journey zur schnellen Site-Erstellung fortzufahren, indem Sie das Dokument [Einrichten der Pipeline](pipeline-setup.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Aber sie sind nicht erforderlich, um die Journey fortzusetzen.
 
 * [AEM-Standard-Site-Vorlage](https://github.com/adobe/aem-site-template-standard) – Dies ist das GitHub-Repository der AEM-Standard-Site-Vorlage.
-* [Organisieren von Seiten](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - In diesem Handbuch wird beschrieben, wie Sie die Seiten Ihrer AEM organisieren.
-* [Erstellen von Seiten](/help/sites-cloud/authoring/sites-console/creating-pages.md) - In diesem Handbuch wird beschrieben, wie Sie neue Seiten zu Ihrer Site hinzufügen.
-* [Verwalten von Seiten](/help/sites-cloud/authoring/sites-console/managing-pages.md) - In diesem Handbuch wird beschrieben, wie Sie die Seiten Ihrer Site verwalten, einschließlich Verschieben, Kopieren und Löschen.
+* [Organisieren von Seiten](/help/sites-cloud/authoring/sites-console/organizing-pages.md) – In dieser Anleitung wird beschrieben, wie Sie die Seiten Ihrer AEM-Site organisieren.
+* [Erstellen von Seiten](/help/sites-cloud/authoring/sites-console/creating-pages.md) – In dieser Anleitung wird beschrieben, wie Sie neue Seiten zu Ihrer Site hinzufügen.
+* [Verwalten von Seiten](/help/sites-cloud/authoring/sites-console/managing-pages.md) – In dieser Anleitung wird beschrieben, wie Sie die Seiten Ihrer Site verwalten, einschließlich Verschieben, Kopieren und Löschen.
 * [Arbeiten mit Paketen](/help/implementing/developing/tools/package-manager.md) – Pakete ermöglichen den Import und Export von Repository-Inhalten. In diesem Dokument wird erläutert, wie Sie mit Paketen in AEM 6.5 arbeiten. Dies gilt auch für AEMaaCS.
 * [Dokumentation zur Site-Administration](/help/sites-cloud/administering/site-creation/create-site.md) – Weitere Informationen zu den Funktionen des Tools für die schnelle Site-Erstellung finden Sie in den technischen Dokumenten zur Site-Erstellung.
 * [Erstellen oder Hinzufügen von Formularen zu einer AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): Lernen Sie Schritt für Schritt Techniken und Best Practices für die Integration von Formularen in Ihre Website kennen und optimieren Sie Ihre digitalen Erlebnisse für eine maximale Wirkung.

@@ -3,9 +3,9 @@ title: Veröffentlichen von Seiten
 description: Erfahren Sie, wie Sie Ihre Seiten mithilfe verschiedener Mechanismen in AEM veröffentlichen oder Ihre Veröffentlichung rückgängig machen können.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1936'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Bei der Arbeit mit Adobe Experience Manager (AEM) as a Cloud Service können Sie
 Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen folgendermaßen vornehmen:
 
 * [Im Seiten-Editor](#publishing-from-the-page-editor)
-* [Aus dem ](#publishing-from-the-sites-console)
+* [Im ](#publishing-from-the-sites-console)
 * [Im universellen Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
 >[!NOTE]
@@ -53,19 +53,19 @@ Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen fo
 
 >[!NOTE]
 >
->Wenn Sie die Seitenreihenfolge beibehalten möchten, müssen Sie [Veröffentlichung verwalten](#manage-publication) , um die übergeordnete Seite zusammen mit allen untergeordneten Seiten in einer einzigen Aktion zu veröffentlichen.
+>Wenn Sie die Seitenreihenfolge beibehalten möchten, müssen Sie [Veröffentlichung verwalten](#manage-publication) verwenden, um die übergeordnete Seite zusammen mit allen untergeordneten Seiten in einer einzigen Aktion zu veröffentlichen.
 >
->Die Seitenreihenfolge ist nicht garantiert:
->* wenn nur untergeordnete Seiten zur Veröffentlichung ausgewählt sind (da die Bestellinformationen auf der übergeordneten Seite gespeichert werden)
+>Die Seitenreihenfolge ist in folgenden Situationen nicht garantiert:
+>* wenn nur untergeordnete Seiten zur Veröffentlichung ausgewählt sind (da die Informationen zur Reihenfolge auf der übergeordneten Seite gespeichert sind)
 >* wenn die übergeordneten und untergeordneten Seiten in separaten Aktionen veröffentlicht werden
 
 >[!NOTE]
 >
 > Weitere Möglichkeiten finden Sie unter **Einschaltzeit** und **Ausschaltzeit** auf der [Registerkarte „Allgemein“ der Seiteneigenschaften](/help/sites-cloud/authoring/sites-console/page-properties.md#basic).
 
-### Veröffentlichen im Seiten-Editor {#publishing-from-the-page-editor}
+### Veröffentlichungen im Seiteneditor {#publishing-from-the-page-editor}
 
-Wenn Sie eine Seite im [Seiteneditor,](/help/sites-cloud/authoring/page-editor/introduction.md) Sie kann direkt im Editor veröffentlicht werden.
+Wenn Sie eine Seite im [Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) bearbeiten, kann sie direkt im Editor veröffentlicht werden.
 
 1. Wählen Sie das Symbol **Seiteninformationen** aus, um das Menü zu öffnen, und danach die Option **Seite veröffentlichen**.
 
@@ -90,7 +90,7 @@ Wenn Sie eine Seite im [Seiteneditor,](/help/sites-cloud/authoring/page-editor/i
 
 >[!NOTE]
 >
->Das Veröffentlichen über den Seiteneditor ist eine flache Veröffentlichung, d. h. nur die ausgewählten Seiten werden veröffentlicht und untergeordnete Seiten werden nicht veröffentlicht.
+>Mit dem Seiteneditor kann nur eine teilweise Veröffentlichung vorgenommen werden, d. h. nur die ausgewählten Seiten werden veröffentlicht, aber keine untergeordneten Seiten.
 
 >[!NOTE]
 >
@@ -98,7 +98,7 @@ Wenn Sie eine Seite im [Seiteneditor,](/help/sites-cloud/authoring/page-editor/i
 
 ### Veröffentlichen über die Site-Konsole {#publishing-from-the-sites-console}
 
-Im **Sites** Console gibt es zwei Optionen für die Veröffentlichung:
+In der **Sites**-Konsole gibt es zwei Möglichkeiten zur Veröffentlichung:
 
 * [Quick Publish](#quick-publish)
 * [Veröffentlichung verwalten](#manage-publication)
@@ -129,10 +129,10 @@ So veröffentlichen Sie eine Seite mit der Funktion „Quick Publish“:
 
 >[!NOTE]
 >
->Wenn Sie die Seitenreihenfolge beibehalten möchten, müssen Sie **Veröffentlichung verwalten** , um die übergeordnete Seite zusammen mit allen untergeordneten Seiten in einer einzigen Aktion zu veröffentlichen.
+>Wenn Sie die Seitenreihenfolge beibehalten möchten, müssen Sie **Veröffentlichung verwalten** verwenden, um die übergeordnete Seite zusammen mit allen untergeordneten Seiten in einer einzigen Aktion zu veröffentlichen.
 >
->Die Seitenreihenfolge ist nicht garantiert:
->* wenn nur untergeordnete Seiten zur Veröffentlichung ausgewählt sind (da die Bestellinformationen auf der übergeordneten Seite gespeichert werden)
+>Die Seitenreihenfolge ist in folgenden Situationen nicht garantiert:
+>* wenn nur untergeordnete Seiten zur Veröffentlichung ausgewählt sind (da die Informationen zur Reihenfolge auf der übergeordneten Seite gespeichert sind)
 >* wenn die übergeordneten und untergeordneten Seiten in separaten Aktionen veröffentlicht werden
 
 So veröffentlichen Sie mit „Veröffentlichung verwalten“ eine Seite bzw. machen ihre Veröffentlichung rückgängig:

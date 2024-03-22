@@ -3,9 +3,9 @@ title: Inhaltsfragmente
 description: Inhaltsfragmente in Adobe Experience Manager as a Cloud Service ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1273'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,14 +19,14 @@ In Verbindung mit dem aktualisierten JSON Exporter können strukturierte Inhalts
 
 >[!NOTE]
 >
->Inhaltsfragmente sind eine **Sites** , aber als **Assets**.
+>Inhaltsfragmente sind eine **Sites**-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
->Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** -Konsole, sie können jedoch weiterhin über die **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** Konsole.
+>Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** verwaltet, können jedoch weiterhin über die **[Assets-Konsole](/help/assets/content-fragments/content-fragments-managing.md)** verwaltet werden.
 >
->Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten:
+>Es gibt zwei Editoren für das Erstellen von Inhaltsfragmenten:
 >
->* Der neue Editor für [Inhaltsfragmente - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), wird hauptsächlich über die **Inhaltsfragmente** Konsole.
->* Die [Originaleditor](/help/assets/content-fragments/content-fragments-variations.md) wird in erster Linie von der **Assets** Konsole.
+>* Der Zugriff auf den neuen Editor für [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**.
+>* Der Zugriff auf den [ursprünglichen Editor](/help/assets/content-fragments/content-fragments-variations.md) erfolgt hauptsächlich über die **Assets-Konsole**.
 
 >[!NOTE]
 >
@@ -130,8 +130,8 @@ Damit können Sie zusätzliche Inhalte [zwischen (d. h. Zwischeninhalte)](/help
 
 Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 
-* Fügen Sie Komponenten aus der [Komponenten-Browser.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* Hinzufügen von Assets aus der [Assets-Browser.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* Hinzufügen von Komponenten aus dem [Komponenten-Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser).
+* Hinzufügen von Assets über den [Assets-Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser).
 * [Zugehörige Inhalte](#using-associated-content) als Quelle für Zwischeninhalte verwenden.
 
 >[!CAUTION]

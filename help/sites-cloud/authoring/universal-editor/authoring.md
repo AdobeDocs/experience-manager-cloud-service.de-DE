@@ -3,9 +3,9 @@ title: Inhaltserstellung mit dem universellen Editor
 description: Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 source-git-commit: 799ca20f8787afffd783c93a2480e096fffb1566
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2313'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -34,22 +34,22 @@ Um Inhalte für eine App mit dem universellen Editor erstellen zu können, muss 
 >
 >Im Dokument [Erste Schritte mit dem universellen Editor in AEM](/help/implementing/universal-editor/getting-started.md) finden Sie ein Beispiel dafür, wie Sie eine AEM-App für die Arbeit mit dem universellen Editor konfigurieren.
 
-## Zugriff auf den universellen Editor {#accessing}
+## Zugreifen auf den universellen Editor {#accessing}
 
-Sobald die App für die Verwendung mit dem universellen Editor instrumentiert wurde, kann der universelle Editor sowohl innerhalb AEM as a Cloud Service als auch direkt ohne Zugriff auf AEM aufgerufen werden.
+Sobald die App für die Verwendung mit dem universellen Editor instrumentiert wurde, kann der universelle Editor sowohl in AEM as a Cloud Service als auch direkt ohne Zugriff auf AEM aufgerufen werden.
 
-### Zugreifen auf AEM as a Cloud Service {#accessing-aem}
+### Zugreifen in AEM as a Cloud Service {#accessing-aem}
 
-1. Melden Sie sich bei Ihrer AEM as a Cloud Service Authoring-Instanz an.
-1. Verwenden Sie die [**Sites** console](/help/sites-cloud/authoring/sites-console/introduction.md) um zu der Seite zu navigieren, die für die Verwendung mit dem Universal Editor erstellt wurde, den Sie bearbeiten möchten.
+1. Melden Sie sich bei Ihrer Authoring-Instanz in AEM as a Cloud Service an.
+1. Verwenden Sie die [**Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md), um zu der Seite zu navigieren, die für die Verwendung mit dem universellen Editor erstellt wurde und die Sie bearbeiten möchten.
 1. Bearbeiten Sie die Seite.
-1. Der Universal Editor wird geöffnet, um die ausgewählte Seite zu bearbeiten.
+1. Der universelle Editor wird geöffnet, um die ausgewählte Seite zu bearbeiten.
 
 >[!NOTE]
 >
->Beim Bearbeiten einer Seite im [**Sites** Konsole,](/help/sites-cloud/authoring/sites-console/introduction.md) Die Konsole öffnet den Editor, der dem der Seite entsprechenden [template:](/help/sites-cloud/authoring/sites-console/templates.md) entweder dem in diesem Dokument beschriebenen universellen Editor oder dem [Seiteneditor.](/help/sites-cloud/authoring/page-editor/introduction.md)
+>Beim Bearbeiten einer Seite in der [**Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md) öffnet die Konsole den entsprechenden Editor gemäß der [Vorlage](/help/sites-cloud/authoring/sites-console/templates.md) der Seite: entweder den in diesem Dokument beschriebenen universellen Editor oder den [Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md).
 
-### Direkter Zugriff {#accessing-directly}
+### Direktes Zugreifen {#accessing-directly}
 
 1. Melden Sie sich beim universellen Editor an. Sie benötigen eine Adobe ID, um sich anzumelden und [Zugang zum universellen Editor zu erhalten.](/help/implementing/universal-editor/getting-started.md#request-access)
 
@@ -60,7 +60,7 @@ Sobald die App für die Verwendung mit dem universellen Editor instrumentiert wu
 Die Benutzeroberfläche ist in diese Hauptbereiche unterteilt.
 
 * [Die Kopfzeile von Experience Cloud](#experience-cloud-header)
-* [Symbolleiste des universellen Editors](#universal-editor-toolbar)
+* [Die Symbolleiste des universellen Editors](#universal-editor-toolbar)
 * [Der Editor](#editor)
 * [Die Eigenschaftenleiste](#properties-rail)
 
@@ -110,9 +110,9 @@ Wählen Sie das Symbol für Ihre Benutzerin bzw. Ihren Benutzer aus, um auf Ihre
 
 ### Die Symbolleiste des universellen Editors {#universal-editor-toolbar}
 
-Die Symbolleiste des universellen Editors befindet sich immer oben im Bildschirm direkt darunter [die Experience Cloud-Kopfzeile.](#experience-cloud-header) Dadurch erhalten Sie schnellen Zugriff auf die Navigation zu einer anderen Seite, die Sie bearbeiten können, sowie auf die Veröffentlichung der aktuellen Seite.
+Die Symbolleiste des universellen Editors befindet sich immer oben im Bildschirm, direkt unter der [Kopfzeile von Experience Cloud.](#experience-cloud-header) Dadurch erhalten Sie schnellen Zugriff auf eine andere Seite zum Bearbeiten und Veröffentlichen der aktuellen Seite.
 
-![Symbolleiste des universellen Editors](assets/universal-editor-toolbar.png)
+![Die Symbolleiste des universellen Editors](assets/universal-editor-toolbar.png)
 
 #### Die Schaltfläche „Startseite“ {#home-button}
 
@@ -144,7 +144,7 @@ Die Speicherortleiste zeigt die Adresse der Seite an, die Sie bearbeiten. Wähle
 
 #### Authentifizierungs-Header-Einstellungen {#authentication-settings}
 
-Wählen Sie bei Bedarf das Symbol für die Authentifizierungs-Kopfzeileneinstellungen aus. [Legen Sie einen benutzerdefinierten Authentifizierungs-Header für lokale Entwicklungszwecke fest.](/help/implementing/universal-editor/developer-overview.md#auth-header)
+Wählen Sie das Symbol für die Authentifizierungs-Kopfzeileneinstellungen aus, wenn Sie [eine benutzerdefinierte Authentifizierungs-Kopfzeile für lokale Entwicklungszwecke festlegen wollen](/help/implementing/universal-editor/developer-overview.md#auth-header).
 
 ![Schaltfläche „Authentifizierungs-Header-Einstellungen“](assets/authentication-header-settings.png)
 
@@ -174,7 +174,7 @@ Im Vorschaumodus wird die Seite im Editor so gerendert, wie sie in Ihrem veröff
 
 >[!TIP]
 >
->Verwenden des Hotkeys `P` , um in den und aus dem Vorschaumodus zu wechseln.
+>Verwenden Sie den Hotkey `P`, um in den Vorschaumodus zu wechseln.
 
 #### App-Vorschau öffnen {#open-app-preview}
 
@@ -186,7 +186,7 @@ Wählen Sie das Symbol „App-Vorschau öffnen“ aus, um die Seite, die Sie ger
 >
 >Verwenden Sie den Hotkey `O` (Buchstabe O), um die App-Vorschau zu öffnen.
 
-#### Publish {#publish}
+#### Veröffentlichen {#publish}
 
 Wählen Sie die Schaltfläche „Veröffentlichen“ aus, um die Änderungen am Inhalt für Ihre Leserinnen und Leser live zu veröffentlichen.
 
@@ -220,7 +220,7 @@ Je nach ausgewähltem Komponententyp können Details in der Eigenschaftenleiste 
 
 ![Komponentendetails](assets/component-details.png)
 
-Nicht alle Komponenten verfügen über Details, die angezeigt und/oder bearbeitet werden können.
+Beachten Sie, dass nicht alle Komponenten Details aufweisen, die angezeigt und/oder bearbeitet werden können.
 
 >[!TIP]
 >
@@ -282,13 +282,13 @@ Durch Tippen oder Klicken auf die Schaltfläche „Löschen“ [wird die Kompone
 
 ## Bearbeiten von Inhalten {#editing-content}
 
-Die Bearbeitung von Inhalten ist einfach und intuitiv. Wenn Sie den Mauszeiger über den Inhalt im Editor bewegen, wird der bearbeitbare Inhalt durch ein blaues Feld markiert.
+Die Bearbeitung von Inhalten ist einfach und intuitiv. Wenn Sie mit dem Mauszeiger über einen Inhalt im Editor fahren, werden bearbeitbare Inhalte mit einem blauen Feld hervorgehoben.
 
 ![Bearbeitbare Inhalte werden durch ein blaues Feld hervorgehoben](assets/editable-content.png)
 
 >[!TIP]
 >
->Durch Tippen oder Klicken auf den Inhalt wird er standardmäßig zur Bearbeitung ausgewählt. Wenn Sie durch das Folgen von Links in Ihren Inhalten navigieren möchten, wechseln Sie zum [Vorschaumodus.](#preview-mode)
+>Durch Tippen oder Klicken auf einen Inhalt wird dieser standardmäßig zur Bearbeitung ausgewählt. Wenn Sie durch das Folgen von Links in Ihren Inhalten navigieren möchten, wechseln Sie zum [Vorschaumodus.](#preview-mode)
 
 Je nach ausgewähltem Inhalt können Ihnen unterschiedliche Optionen zur Bearbeitung im Kontext zur Verfügung stehen. Außerdem sehen Sie möglicherweise zusätzliche Informationen und Optionen für den Inhalt in der [Eigenschaftenleiste](#properties-rail).
 
@@ -312,16 +312,16 @@ Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklick
 
 ![Bearbeiten einer Rich-Text-Komponente](assets/rich-text-editing.png)
 
-Zur Vereinfachung stehen Formatierungsoptionen und Details zu Ihrem Text an zwei Stellen zur Verfügung.
+Zur Vereinfachung sind an zwei Stellen Formatierungsoptionen und Details zu Ihrem Text verfügbar.
 
-* Die **Kontextmenü** wird oberhalb des Rich-Text-Blocks geöffnet und bietet grundlegende Formatierungsoptionen im Kontext. Aufgrund von Platzbeschränkungen können einige Optionen hinter der Suchschaltfläche ausgeblendet werden.
+* Das **Kontextmenü** wird oberhalb des Rich-Text-Blocks geöffnet und bietet grundlegende Formatierungsoptionen im Kontext. Aufgrund von Platzbeschränkungen kann es sein, dass einige Optionen hinter der Schaltfläche mit den Auslassungspunkten ausgeblendet werden.
 * Die **Eigenschaftenleiste** zeigt alle verfügbaren Formatierungsoptionen zusammen mit dem Text an.
 
-Änderungen werden automatisch gespeichert, sobald der Fokus das bearbeitete Feld verlässt.
+Änderungen werden automatisch gespeichert, sobald das bearbeitete Feld nicht mehr im Fokus ist.
 
 ### Bearbeiten von Medien {#edit-media}
 
-Sie können die Details in der Eigenschaftenleiste anzeigen.
+Sie können die Details in der Eigenschaftenleiste ansehen.
 
 ![Bearbeiten von Medien](assets/ue-edit-media.png)
 
@@ -334,7 +334,7 @@ Sie können die Details in der Eigenschaftenleiste anzeigen.
 
 ### Bearbeiten von Inhaltsfragmenten {#edit-content-fragment}
 
-Wenn Sie eine [Inhaltsfragment,](/help/sites-cloud/administering/content-fragments/overview.md) Sie können die Details in der Eigenschaftenleiste bearbeiten.
+Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie seine Details in der Eigenschaftenleiste bearbeiten.
 
 ![Bearbeiten von Inhaltsfragmenten](assets/ue-edit-cf.png)
 
@@ -393,7 +393,7 @@ Die Komponenten werden sowohl in der Inhaltsstruktur als auch im Editor neu ange
 
 Wenn Sie mit der Bearbeitung von Inhalten fertig sind, möchten Sie häufig durch diese navigieren, um zu sehen, wie sie im Inhalt anderer Seiten aussehen. Im [Vorschaumodus](#preview-mode) können Sie auf Links klicken, um genau wie eine Person, die Ihre Inhalte liest, durch diese zu navigieren. Der Inhalt wird im Editor so wiedergegeben, wie er veröffentlicht werden würde.
 
-Im Vorschaumodus reagiert das Tippen oder Klicken auf den Inhalt so, wie es für einen Leser des Inhalts der Fall wäre. Wenn Sie den zu bearbeitenden Inhalt auswählen möchten, können Sie [Vorschaumodus.](#preview-mode)
+Beachten Sie, dass im Vorschaumodus beim Tippen oder Klicken auf den Inhalt die gleiche Reaktion erfolgt, wie es bei einer Person, die den Inhalt liest, der Fall wäre. Wenn Sie den Inhalt zum Bearbeiten auswählen möchten, wechseln Sie in den [Vorschaumodus.](#preview-mode)
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
@@ -401,7 +401,7 @@ Informationen zum Veröffentlichen von Inhalten mit dem universellen Editor find
 
 * [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md) – Erfahren Sie, wie mit dem universellen Editor Inhalte veröffentlicht werden und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
 
-Weitere Informationen zu den technischen Details des universellen Editors finden Sie in diesen Entwicklerdokumenten.
+Weitere Informationen zu den technischen Details zum universellen Editor finden Sie in diesen Entwicklerdokumenten.
 
 * [Einführung in den universellen Editor](/help/implementing/universal-editor/introduction.md) – Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
 * [Erste Schritte mit dem universellen Editor in AEM](/help/implementing/universal-editor/getting-started.md) – Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.

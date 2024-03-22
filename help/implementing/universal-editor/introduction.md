@@ -3,7 +3,7 @@ title: Einführung in den universellen Editor
 description: Erfahren Sie, wie der universelle Editor die WYSIWYG-Bearbeitung (What you see is what you get) von beliebigen Headless- und Headful-Erlebnissen ermöglicht. Erfahren Sie, wie er Autorinnen und Autoren dabei helfen kann, außergewöhnliche Inhalte zu erstellen sowie die Geschwindigkeit ihrer Inhalte zu erhöhen, und inwiefern er Entwickelnden ein modernes Erlebnis bietet.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '925'
 ht-degree: 100%
 

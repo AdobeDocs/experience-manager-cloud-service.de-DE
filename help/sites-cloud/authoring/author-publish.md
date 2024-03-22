@@ -1,40 +1,40 @@
 ---
-title: Authoring und Publishing-Konzepte
-description: Erfahren Sie mehr über die Konzepte des Authoring in AEM mithilfe der Autoren-, Vorschau- und Veröffentlichungsumgebungen.
+title: Authoring- und Veröffentlichungskonzepte
+description: Erfahren Sie mehr über die Konzepte zum Authoring in AEM mit Autoren-, Vorschau- und Veröffentlichungsumgebungen.
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
-ht-degree: 30%
+ht-degree: 100%
 
 ---
 
 
-# Authoring und Publishing-Konzepte {#authoring-publishing}
+# Authoring- und Veröffentlichungskonzepte {#authoring-publishing}
 
-Für einen Inhaltsautor kann eine AEM as a Cloud Service Installation als drei primäre Ebenen auf der grundlegendsten Ebene betrachtet werden
+Grundsätzlich hat eine AEM as a Cloud Service-Installation für Inhaltsautorinnen und Inhaltsautoren drei Hauptebenen:
 
 * Autorenebene
 * Vorschauebene
-* AEM Veröffentlichungsebene
+* Veröffentlichungsebene
 
-Diese Ebenen interagieren, damit Sie Inhalte auf Ihrer Website verfügbar machen können, damit Ihre Besucher darauf zugreifen können. Der grundlegende Workflow lautet:
+Diese Ebenen interagieren miteinander und bieten Ihnen die Möglichkeit, Inhalte auf Ihrer Website verfügbar zu machen, sodass Ihre Besucherinnen und Besucher darauf zuzugreifen können. Der Standard-Workflow sieht wie folgt aus:
 
-1. Inhaltsautoren erstellen ihren Inhalt mit der Autorenstufe.
-1. Inhaltsautoren stellen ihren Inhalt für Prüfer zur Verfügung, um sie mithilfe der Vorschauebene in der Vorschau anzuzeigen.
-1. Sobald der Inhalt für den öffentlichen Gebrauch bereit ist, veröffentlichen Autoren den Inhalt mit der Veröffentlichungsstufe.
+1. Inhaltsautorinnen und Inhaltsautoren erstellen ihren Inhalt über die Autorenebene.
+1. Inhaltsautorinnen und Inhaltsautoren stellen ihren Inhalt für Prüfende zur Verfügung, um eine Vorschau mithilfe der Vorschauebene zu ermöglichen.
+1. Sobald der Inhalt für den öffentlichen Gebrauch bereit ist, veröffentlichen die Autorinnen und Autoren den Inhalt über die Veröffentlichungsebene.
 
-Der Inhalt kann viele verschiedene Arten aufweisen, darunter Seiten, Assets und Veröffentlichungen. Die Vorschau von Inhalten kann nach Ermessen des Autors übersprungen werden.
+Der Inhalt kann verschiedenster Art sein. Es kann sich beispielsweise um Seiten, Assets und Veröffentlichungen handeln. Die Inhaltsvorschau kann nach Ermessen der Autorin oder des Autors ausgelassen werden.
 
 ![Abbildung von Autor, Publisher und Dispatchern](assets/author-publish.jpg)
 
-Weitere Informationen zur technischen Architektur von AEM as a Cloud Service finden Sie im Dokument [Eine Einführung in die Architektur von Adobe Experience Manager as a Cloud Service.](/help/overview/architecture.md)
+Weitere Informationen zur technischen Architektur von AEM as a Cloud Service finden Sie in der [Einführung in die Architektur von Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md).
 
 {{edge-delivery-authoring}}
 
 ## Inhaltserstellung {#author-environment}
 
-Die Authoring-Umgebung der Autorenstufe bietet eine einfach zu verwendende grafische Benutzeroberfläche zum Erstellen von Inhalten. Die Autorin bzw. der Autor muss sich mit einem Konto anmelden, dem die entsprechenden Zugriffsrechte zugewiesen wurden.
+Die Authoring-Umgebung der Autorenebene bietet eine einfach zu verwendende grafische Benutzeroberfläche zum Erstellen von Inhalten. Die Autorin bzw. der Autor muss sich mit einem Konto anmelden, dem die entsprechenden Zugriffsrechte zugewiesen wurden.
 
 Je nachdem, wie Ihre Instanz und Ihre persönlichen Zugriffsrechte konfiguriert sind, können Sie viele Aufgaben in Bezug auf Ihre Inhalte durchführen, unter anderem:
 
@@ -51,20 +51,20 @@ Außerdem gibt es administrative Aufgaben, die Sie beim Verwalten des Inhalts un
 
 AEM wird ebenfalls über die Autorenumgebung verwaltet.
 
-Lesen Sie das Dokument . [Schnellstartanleitung zum Authoring](/help/sites-cloud/authoring/quick-start.md) für einen Überblick über den Authoring-Prozess.
+Im Dokument [Schnellstartanleitung zum Authoring](/help/sites-cloud/authoring/quick-start.md) finden Sie einen Überblick über den Authoring-Prozess.
 
 ## Vorschau von Inhalten {#previewing-content}
 
-AEM bietet außerdem einen Vorschaudienst, mit dem Entwickler und Inhaltsautoren eine Vorschau des endgültigen Erlebnisses einer Website anzeigen können, bevor diese in die Veröffentlichungsumgebung gelangt und öffentlich verfügbar ist.
+AEM bietet außerdem einen Vorschau-Service, der Entwickelnden und Inhaltsautorinnen bzw. -autoren die Vorschau des endgültigen Erlebnisses einer Website ermöglicht, bevor dieses in die Veröffentlichungsumgebung gelangt und öffentlich verfügbar ist.
 
-Lesen Sie das Dokument . [Vorschau des Inhalts](/help/sites-cloud/authoring/sites-console/previewing-content.md) für weitere Informationen.
+Weitere Einzelheiten finden Sie in dem Dokument [Vorschau von Inhalten](/help/sites-cloud/authoring/sites-console/previewing-content.md).
 
-## Publishing-Umgebung {#publish-environment}
+## Veröffentlichungsumgebung {#publish-environment}
 
-Wenn die Inhalte Ihrer Site fertig sind, werden sie in der Veröffentlichungsumgebung der Veröffentlichungsstufe veröffentlicht. Hier werden die Seiten der Website entsprechend dem Erscheinungsbild Ihrer Inhaltsvorlage der vorgesehenen Zielgruppe zur Verfügung gestellt.
+Wenn die Inhalte Ihrer Site fertig sind, werden sie in der Veröffentlichungsumgebung der Veröffentlichungsebene veröffentlicht. Hier werden die Seiten der Website in Übereinstimmung mit dem Aussehen Ihrer Inhaltsvorlage der vorgesehenen Zielgruppe bereitgestellt.
 
-Lesen Sie das Dokument . [Veröffentlichen von Seiten](/help/sites-cloud/authoring/sites-console/publishing-pages.md) für weitere Informationen zum Veröffentlichen und Rückgängigmachen der Veröffentlichung von Seiten.
+Im Dokument [Veröffentlichen von Seiten](/help/sites-cloud/authoring/sites-console/publishing-pages.md) finden Sie weitere Informationen zum Veröffentlichen und Aufheben der Veröffentlichung von Seiten.
 
 ## Dispatcher {#dispatcher}
 
-Um die Leistung für Besucher Ihrer Website zu optimieren, muss die Variable **[Dispatcher](/help/implementing/dispatcher/overview.md)** implementiert Lastenausgleich und Caching für die Veröffentlichungs- und Vorschauschicht.
+Um eine optimale Nutzung der Website durch Ihre Besucherinnen und Besucher zu gewährleisten, führt der **[Dispatcher](/help/implementing/dispatcher/overview.md)** eine Lastverteilung und Caching für die Veröffentlichungs- und Vorschauebene durch.

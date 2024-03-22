@@ -3,9 +3,9 @@ title: Asynchrone Aufträge
 description: Adobe Experience Manager optimiert die Leistung durch asynchrone Ausführung einiger ressourcenintensiver Aufgaben im Hintergrund.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '854'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

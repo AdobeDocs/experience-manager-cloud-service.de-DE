@@ -3,9 +3,9 @@ title: Komponentenkonsole
 description: Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind.
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '271'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 97%
 
 Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind, und wichtige Informationen für jede Komponente anzuzeigen.
 
-Der Zugriff erfolgt über **Tools >** **Allgemein >** **Komponenten**. Da es keine Baumstruktur für Komponenten gibt, ist nur die Listenansicht verfügbar.
+Über **Tools** > **Allgemein** > **Komponenten** kann auf sie zugegriffen werden. Da es keine Baumstruktur für Komponenten gibt, ist nur die Listenansicht verfügbar.
 
 ![Die Komponentenkonsole](/help/sites-cloud/authoring/assets/components-console.png)
 

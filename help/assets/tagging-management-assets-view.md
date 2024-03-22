@@ -3,9 +3,9 @@ title: Verwalten von Tags in der Assets-Ansicht
 description: Erfahren Sie, wie Sie Tags in der Assets-Ansicht verwalten. Mit Tags können Sie Assets kategorisieren, damit sie sich leichter durchsuchen und suchen lassen.
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 source-git-commit: cadf0e383608a39200d716cc698ad1979f24fd1d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1739'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -183,7 +183,7 @@ Sie können Smart-Tags auch für ein einzelnes Asset blockieren. Navigieren Sie 
 
 ### Exportieren der Blockierungsliste{#export-blocklist}
 
-Mit der Asset-Ansicht können Sie die aufgelisteten blockierten Tags in das CSV-Format exportieren. Führen Sie die folgenden Schritte aus, um die Blockierungsliste zu exportieren:
+Mit der Assets-Ansicht können Sie die aufgelisteten blockierten Tags in das CSV-Format exportieren. Führen Sie die folgenden Schritte aus, um die Blockierungsliste zu exportieren:
 
 1. Klicken Sie auf **[!UICONTROL Als CSV exportieren]**.
 1. Wählen Sie den entsprechenden Speicherort für die CSV-Datei aus. Sie können die Datei auch gemäß den Anforderungen umbenennen.
@@ -191,7 +191,7 @@ Mit der Asset-Ansicht können Sie die aufgelisteten blockierten Tags in das CSV-
 
 ### Importieren der Blockierungsliste{#import-blocklist}
 
-Die Asset-Ansicht bietet die Möglichkeit, gesperrte Tags aus einer Datenquelle (CSV) zu importieren. Führen Sie die folgenden Schritte aus, um die Blockierungsliste zu importieren:
+Die Assets-Ansicht bietet die Möglichkeit, blockierte Tags aus einer Datenquelle (CSV) zu importieren. Führen Sie die folgenden Schritte aus, um die Blockierungsliste zu importieren:
 
 1. Klicken Sie auf **[!UICONTROL Als CSV importieren]**.
 1. Wählen Sie die CSV-Datei von Ihrem Gerät aus. Klicken Sie auf **[!UICONTROL Datei auswählen]**, um über Ihr Gerät zur Datei zu navigieren. Alternativ können Sie die CSV-Datei per Drag-and-Drop von Ihrem Gerät ziehen.

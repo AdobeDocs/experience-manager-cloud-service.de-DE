@@ -3,22 +3,22 @@ title: Organisieren von Seiten
 description: Erfahren Sie, wie Sie Ihre Website mit AEM organisieren.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '799'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 
 # Organisieren von Seiten {#creating-and-organizing-pages}
 
-Erfahren Sie, wie Sie Ihre Website mit AEM organisieren. Sobald Sie wissen, wie Sie Ihre Seiten organisieren müssen, können Sie [Erstellen neuer Seiten](/help/sites-cloud/authoring/sites-console/creating-pages.md) und [existierende Seiten verwalten.](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+Erfahren Sie, wie Sie Ihre Website mit AEM organisieren.  Sobald Sie wissen, wie Sie Ihre Seiten organisieren müssen, können Sie [neue Seiten erstellen](/help/sites-cloud/authoring/sites-console/creating-pages.md) und [existierende Seiten verwalten](/help/sites-cloud/authoring/sites-console/managing-pages.md).
 
 {{edge-delivery-authoring}}
 
 ## Organisieren Ihrer Site {#organizing-your-site}
 
-Als Autor müssen Sie Ihre Website in AEM organisieren. Dazu gehört die Erstellung und Benennung von Inhaltsseiten, sodass Folgendes zutrifft:
+Als Autorin oder Autor müssen Sie Ihre Site in AEM organisieren. Dazu gehört die Erstellung und Benennung von Inhaltsseiten, sodass Folgendes zutrifft:
 
 * Sie müssen leicht in der Authoring-Umgebung auffindbar sein.
 * Besucher der Website müssen sie einfach in der Veröffentlichungsumgebung durchsuchen können.
@@ -27,7 +27,7 @@ Sie können Ihre Inhalte auch mithilfe von [Ordnern](#creating-a-new-folder) org
 
 Die Struktur einer Website kann als Baumstruktur gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet. Die Titel werden zusammen mit dem Seiteninhalt angezeigt.
 
-Im Folgenden finden Sie ein Beispiel aus dem [WKND-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de) Site, auf der ein Artikel über Skateparks (`la-skateparks`) aufgerufen wird:
+Im Folgenden sehen Sie als Beispiel die Site [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de), auf der ein Artikel über Skateparks (`la-skateparks`) aufgerufen wird:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -48,7 +48,7 @@ Im Folgenden finden Sie ein Beispiel aus dem [WKND-Tutorial](https://experiencel
    /...
 ```
 
-Diese Struktur kann über die [**Sites** Konsole,](/help/sites-cloud/authoring/sites-console/introduction.md) wo Sie durch die Seiten Ihrer Website navigieren und Aktionen auf den Seiten durchführen können.
+Diese Struktur kann über die [**Sites-Konsole** angezeigt werden.](/help/sites-cloud/authoring/sites-console/introduction.md) Von dort aus können Sie durch die Seiten Ihrer Website navigieren und Aktionen auf den Seiten durchführen. 
 
 ## Seitenbenennungskonventionen {#page-naming-conventions}
 
@@ -94,7 +94,7 @@ Umfassende Informationen zu allen zulässigen Zeichen finden Sie in den [Benennu
 
 Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen** für die Seite von dieser Zeichenfolge ab und [validiert den Namen entsprechend den Konventionen](/help/implementing/developing/introduction/naming-conventions.md) von AEM und JCR.
 
-Im Feld **Titel** werden ungültige Zeichen akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
+Im Feld **Titel** werden ungültige Zeichen akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Zum Beispiel:
 
 | Titel | Abgeleiteter Name |
 |---|---|
@@ -115,19 +115,19 @@ Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben
 
 ## Vorlagen {#templates}
 
-In AEM [template](/help/sites-cloud/authoring/sites-console/templates.md) ist ein spezieller Seitentyp, der als Grundlage für jede neue zu erstellende Seite verwendet wird.
+In AEM sind bestimmte Seitentypen in [Vorlagen](/help/sites-cloud/authoring/sites-console/templates.md) gespeichert, die als Basis für jede neue erstellte Seite verwendet werden.
 
-Die Vorlage definiert die Struktur einer Seite, einschließlich eines Miniaturbilds und anderer Eigenschaften. Sie können beispielsweise separate Vorlagen für Produktseiten, Sitemaps und Kontaktinformationen verwenden. Vorlagen bestehen aus [Komponenten](#components).
+Die Vorlage definiert die Seitenstruktur, u. a. eine Miniaturansicht und andere Eigenschaften. Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden. Vorlagen bestehen aus [Komponenten](#components).
 
 Im Lieferumfang von AEM sind diverse Vorlagen enthalten. Welche Vorlagen verfügbar sind, hängt von der jeweiligen Website ab. Die wichtigsten Felder sind:
 
-* **Titel** - Der Titel, der auf der resultierenden Webseite angezeigt wird
-* **Name** - Wird beim Benennen der Seite verwendet
-* **Vorlage** - Eine Liste von Vorlagen, die für die Generierung der neuen Seite verfügbar sind
+* **Titel**: Der Titel, der auf der resultierenden Web-Seite angezeigt wird.
+* **Name**: Wird beim Benennen der Seite verwendet.
+* **Vorlage**: Eine Liste von Vorlagen, die für das Erstellen neuer Seiten verwendet werden können.
 
 ## Komponenten {#components}
 
-[Komponenten](/help/implementing/developing/components/overview.md) sind die von AEM bereitgestellten Elemente, sodass Sie bestimmte Inhaltstypen hinzufügen können. AEM enthält eine Reihe vordefinierter Komponenten namens [die Kernkomponenten,](/help/implementing/developing/components/overview.md#core-components) , die eine umfassende Funktionalität bieten. Beispiele für die Komponenten:
+[Komponenten](/help/implementing/developing/components/overview.md) sind die Elemente, die von AEM bereitgestellt werden, damit Sie bestimmte Inhaltstypen hinzufügen können. AEM enthält eine Reihe vordefinierter Komponenten, die als [die Kernkomponenten,](/help/implementing/developing/components/overview.md#core-components) bezeichnet werden und die eine umfassende Funktionalität bieten. Beispiele für die Komponenten sind:
 
 * Text
 * Bild

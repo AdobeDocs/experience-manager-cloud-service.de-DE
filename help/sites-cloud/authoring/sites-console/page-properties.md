@@ -3,9 +3,9 @@ title: Bearbeiten der Seiteneigenschaften
 description: Erfahren Sie, wie Sie die Eigenschaften definieren, die für die Verwaltung einer Seite in AEM erforderlich sind.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2268'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Titel und Tags**
 
-   * **Titel** - Der Titel der Seite wird an verschiedenen Stellen angezeigt. Zum Beispiel in der Liste auf der Registerkarte **Websites** und in den Karten-/Listenansichten **Sites**.
+   * **Titel** – Der Titel der Seite wird an verschiedenen Stellen angezeigt. Zum Beispiel in der Liste auf der Registerkarte **Websites** und in den Karten-/Listenansichten **Sites**.
       * Dies ist ein Pflichtfeld.
    * **Tags** – Hier können Sie der Seite Tags hinzufügen oder Tags aus der Seite entfernen, indem Sie die Liste im Auswahlfeld aktualisieren.
       * Nachdem Sie ein Tag ausgewählt haben, wird es unter dem Auswahlfeld aufgeführt. Sie können ein Tag mit dem „x“ aus dieser Liste entfernen.
@@ -98,7 +98,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    * **Sprache** – Die Seitensprache
    * **Sprachstamm** – Muss aktiviert werden, wenn die Seite als Stamm einer Sprachkopie fungiert.
-   * **Umleiten** - Gibt die Seite an, zu der diese Seite automatisch mit einer HTML umgeleitet werden soll `302 Found` -Status.
+   * **Redirect** – Gibt die Seite an, zu der diese Seite automatisch mit einem HTML `302 Found`-Status weitergeleitet werden soll.
       * **Ständige Umleitung** – Wenn diese Option aktiviert ist, wird die Seite zum Zielpfad weitergeleitet, der zusammen mit dem HTML-Status `301 Moved Permanently` bereitgestellt wird.
    * **Design** – Gibt an, ob die Seite in der Seitennavigation der resultierenden Seite ein- oder ausgeblendet sein soll.
    * **Alias** – Gibt einen Alias an, der für diese Seite verwendet werden soll.
@@ -323,12 +323,12 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
       * Wenn Sie die Seitenauswahl auf eine Seite reduzieren, sind alle Eigenschaften sichtbar.
    * Gemeinsame Eigenschaften mit einem gemeinsamen Wert
       * Nur Eigenschaften mit einem gemeinsamen Wert werden im Ansichtsmodus angezeigt.
-      * Wenn das Feld mehrwertig ist (z. B. Tags), werden Werte nur angezeigt, wenn *all* sind häufig. Wenn nur einige häufig vorkommen, werden sie nur bei der Bearbeitung angezeigt.
+      * Wenn es sich um ein mehrwertiges Feld handelt (z. B. Tags), werden die Werte nur angezeigt, wenn *alle* übereinstimmen. Wenn nur einige übereinstimmen, werden sie nur bei der Bearbeitung angezeigt.
       * Wenn keine Eigenschaften mit einem gemeinsamen Wert vorhanden sind, wird eine Meldung angezeigt.
 
 * **Bearbeiten**
 
    * Sie können die Werte in den verfügbaren Feldern aktualisieren.
       * Die neuen Werte werden auf alle gewählten Seiten angewendet, wenn Sie **Fertig** wählen.
-      * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
+      * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
    * Felder, die häufig vorkommen, aber auf den verschiedenen Seiten unterschiedliche Werte haben, werden durch einen speziellen Wert angegeben, beispielsweise `<Mixed Entries>`.

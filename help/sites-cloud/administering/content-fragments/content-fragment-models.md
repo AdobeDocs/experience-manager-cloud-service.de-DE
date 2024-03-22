@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 source-git-commit: e5a48cfd042c0e8d7448007854e1f73bded8cf7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3209'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -46,9 +46,9 @@ Sie können auch verschiedene Eigenschaften definieren, zum Beispiel: **Tags**, 
 
 >[!CAUTION]
 >
->Wenn Sie mehrere referenzierte Fragmente abfragen, wird nicht empfohlen, dass die verschiedenen Fragmentmodelle Feldnamen mit demselben Namen, aber unterschiedlichen Typen haben.
+>Wenn Sie mehrere referenzierte Fragmente abfragen, wird nicht empfohlen, dass die verschiedenen Fragmentmodelle Feldnamen mit demselben Namen, sondern unterschiedlichen Typen aufweisen.
 >
->Weitere Informationen finden Sie unter [GraphQL-API für die Verwendung mit Inhaltsfragmenten AEM - Einschränkungen](/help/headless/graphql-api/content-fragments.md#limitations)
+>Weitere Informationen finden Sie unter [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten – Einschränkungen](/help/headless/graphql-api/content-fragments.md#limitations).
 
 ### Inhaltsfragmentmodell – Eigenschaften {#content-fragment-model-properties}
 
@@ -293,15 +293,17 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 >
 AEM bietet Schutz vor Wiederholungen für:
 >
-* Inhaltsverweise Dies verhindert, dass der Benutzer eine Referenz zum aktuellen Fragment hinzufügt, und kann zu einem leeren Dialogfeld für die Auswahl von Fragmentverweisen führen.
+* Inhaltsverweise
+Dies verhindert, dass Benutzende einen Verweis zum aktuellen Fragment hinzufügen, und kann zu einem leeren Auswahldialogfeld „Fragmentreferenz“ führen.
 >
-* Fragmentverweise in GraphQL Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die von einander referenziert werden, wird beim ersten Auftreten null zurückgegeben.
+* Fragmentverweise in GraphQL
+Wenn Sie eine Deep-Abfrage erstellen, die mehrere, sich gegenseitig referenzierende Inhaltsfragmente zurückgibt, gibt sie beim ersten Auftreten NULL zurück.
 
 >[!CAUTION]
 >
-Wenn Sie mehrere referenzierte Fragmente abfragen, wird nicht empfohlen, dass die verschiedenen Fragmentmodelle Feldnamen mit demselben Namen, aber unterschiedlichen Typen haben.
+Wenn Sie mehrere referenzierte Fragmente abfragen, wird nicht empfohlen, dass die verschiedenen Fragmentmodelle Feldnamen mit demselben Namen, sondern unterschiedlichen Typen aufweisen.
 >
-Weitere Informationen finden Sie unter [GraphQL-API für die Verwendung mit Inhaltsfragmenten AEM - Einschränkungen](/help/headless/graphql-api/content-fragments.md#limitations)
+Weitere Informationen finden Sie unter [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten – Einschränkungen](/help/headless/graphql-api/content-fragments.md#limitations).
 
 ### Inhaltsreferenz {#content-reference}
 

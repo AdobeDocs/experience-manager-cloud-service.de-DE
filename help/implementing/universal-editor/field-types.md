@@ -1,26 +1,26 @@
 ---
 title: Modelldefinitionen, Felder und Komponententypen
-description: Erfahren Sie anhand von Beispielen mehr über Felder und Komponententypen, die der universelle Editor in der Eigenschaftenleiste bearbeiten kann. Erfahren Sie, wie Sie Ihre eigene App instrumentieren können, indem Sie eine Modelldefinition erstellen und mit der Komponente verknüpfen.
+description: Erfahren Sie anhand von Beispielen mehr über die Felder und Komponententypen, die mit dem universellen Editor in der Eigenschaftenleiste bearbeitet werden können. Erfahren Sie, wie Sie Ihre eigene App instrumentieren können, indem Sie eine Modelldefinition erstellen und mit der Komponente verknüpfen.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 source-git-commit: fcdba895510b0c428a4274092c8b314fd36f5c7d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1144'
-ht-degree: 17%
+ht-degree: 100%
 
 ---
 
 
 # Modelldefinitionen, Felder und Komponententypen {#field-types}
 
-Erfahren Sie anhand von Beispielen mehr über Felder und Komponententypen, die der universelle Editor in der Eigenschaftenleiste bearbeiten kann. Erfahren Sie, wie Sie Ihre eigene App instrumentieren können, indem Sie eine Modelldefinition erstellen und mit der Komponente verknüpfen.
+Erfahren Sie anhand von Beispielen mehr über die Felder und Komponententypen, die mit dem universellen Editor in der Eigenschaftenleiste bearbeitet werden können. Erfahren Sie, wie Sie Ihre eigene App instrumentieren können, indem Sie eine Modelldefinition erstellen und mit der Komponente verknüpfen.
 
 {{universal-editor-status}}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
-Wenn Sie Ihre eigenen Apps für die Verwendung mit dem universellen Editor anpassen, müssen Sie die Komponenten instrumentieren und definieren, welche Felder und Komponententypen sie in der Eigenschaftenleiste des Editors bearbeiten können. Erstellen Sie dazu ein Modell und verknüpfen Sie es über die Komponente mit diesem.
+Wenn Sie Ihre eigenen Apps für die Verwendung mit dem universellen Editor anpassen, müssen Sie die Komponenten instrumentieren und definieren, welche Felder und Komponententypen sie in der Eigenschaftenleiste des Editors bearbeiten können.  Erstellen Sie dazu ein Modell und verknüpfen Sie es über die Komponente mit diesem.
 
-Dieses Dokument bietet einen Überblick über eine Modelldefinition sowie über die Felder und die verfügbaren Komponententypen sowie Beispielkonfigurationen.
+Dieses Dokument bietet einen Überblick über eine Modelldefinition sowie über die verfügbaren Felder und Komponententypen sowie Beispielkonfigurationen.
 
 >[!TIP]
 >
@@ -41,17 +41,17 @@ Die Modelldefinition ist eine JSON-Struktur, die mit einem Array von Modellen be
 ]
 ```
 
-Siehe **[Felder](#fields)** in diesem Dokument finden Sie weitere Informationen zur Definition der `fields` Array.
+Im Abschnitt **[Felder](#fields)** in diesem Dokument finden Sie weitere Informationen zum Definieren des `fields`-Arrays.
 
-Um die Modelldefinition mit einer Komponente zu verwenden, muss die `data-aue-model` -Attribut verwendet werden.
+Um die Modelldefinition mit einer Komponente zu verwenden, kann das Attribut `data-aue-model` verwendet werden.
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
 ```
 
-## Modelldefinition laden {#loading-model}
+## Laden einer Modelldefinition {#loading-model}
 
-Nachdem ein Modell erstellt wurde, kann es als externe Datei referenziert werden.
+Sobald ein Modell erstellt wurde, kann es als externe Datei referenziert werden.
 
 ```html
 <script type="application/vnd.adobe.aue.model+json" src="<url-of-model-definition>"></script>
@@ -72,19 +72,19 @@ Ein Feldobjekt hat die folgende Typdefinition.
 | Konfiguration | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
 | `component` | `ComponentType` | Renderer der Komponente | Ja |
-| `name` | `string` | Eigenschaft, in der die Daten beibehalten werden sollen | Ja |
-| `label` | `FieldLabel` | Feldbezeichnung | Ja |
+| `name` | `string` | Eigenschaft, in der die Daten beibehalten werden sollen. | Ja |
+| `label` | `FieldLabel` | Titel des Felds | Ja |
 | `description` | `FieldDescription` | Beschreibung des Felds | Nein |
 | `placeholder` | `string` | Platzhalter für das Feld | Nein |
 | `value` | `FieldValue` | Standardwert | Nein |
-| `valueType` | `ValueType` | Standardvalidierung, kann `string`, `string[]`, `number`, `date`, `boolean` | Nein |
-| `required` | `boolean` | Ist das erforderliche Feld? | Nein |
-| `readOnly` | `boolean` | Ist das Feld schreibgeschützt | Nein |
+| `valueType` | `ValueType` | Standardvalidierung, kann `string`, `string[]`, `number`, `date`, `boolean` sein. | Nein |
+| `required` | `boolean` | Ist das Feld erforderlich? | Nein |
+| `readOnly` | `boolean` | Ist das Feld schreibgeschützt? | Nein |
 | `hidden` | `boolean` | Ist das Feld standardmäßig ausgeblendet? | Nein |
-| `condition` | `RulesLogic` | Regel zum Anzeigen oder Ausblenden des Felds basierend auf einer [Bedingung](/help/implementing/universal-editor/customizing.md#conditionally-hide) | Nein |
+| `condition` | `RulesLogic` | Regel zum Anzeigen oder Ausblenden des Felds basierend auf einer [Bedingung](/help/implementing/universal-editor/customizing.md#conditionally-hide). | Nein |
 | `multi` | `boolean` | Ist das Feld ein Mehrfachfeld? | Nein |
-| `validation` | `ValidationType` | Validierungsregeln für das Feld | Nein |
-| `raw` | `unknown` | Rohdaten, die von der Komponente verwendet werden können | Nein |
+| `validation` | `ValidationType` | Validierungsregeln oder Regeln für das Feld | Nein |
+| `raw` | `unknown` | Rohdaten, die von der Komponente verwendet werden können. | Nein |
 
 ### Komponententypen {#component-types}
 
@@ -92,12 +92,12 @@ Im Folgenden finden Sie die Komponententypen, die für das Rendern von Feldern v
 
 | Beschreibung | Komponententyp |
 |---|---|
-| [AEM Tag](#aem-tag) | `aem-tag` |
-| [AEM](#aem-content) | `aem-content` |
+| [AEM-Tag](#aem-tag) | `aem-tag` |
+| [AEM-Inhalt](#aem-content) | `aem-content` |
 | [Boolesch](#boolean) | `boolean` |
-| [Kontrollkästchengruppe](#checkbox-group) | `checkbox-group` |
+| [Kontrollkästchen-Gruppe](#checkbox-group) | `checkbox-group` |
 | [Container](#container) | `container` |
-| [Datum/Uhrzeit](#date-time) | `date-time` |
+| [Datum und Uhrzeit](#date-time) | `date-time` |
 | [Mehrfachauswahl](#multiselect) | `multiselect` |
 | [Zahl](#number) | `number` |
 | [Optionsfeldgruppe](#radio-group) | `radio-group` |
@@ -107,7 +107,7 @@ Im Folgenden finden Sie die Komponententypen, die für das Rendern von Feldern v
 | [Registerkarte](#tab) | `tab` |
 | [Text](#text) | `text` |
 
-#### AEM Tag {#aem-tag}
+#### AEM-Tag {#aem-tag}
 
 Ein AEM Tag-Komponententyp aktiviert eine AEM Tag-Auswahl, die zum Anhängen von Tags an die Komponente verwendet werden kann.
 
@@ -131,13 +131,13 @@ Ein AEM Tag-Komponententyp aktiviert eine AEM Tag-Auswahl, die zum Anhängen von
 
 >[!TAB Screenshot]
 
-![Screenshot AEM Tag-Komponententyps](assets/component-types/aem-tag-picker.png)
+![Screenshot des AEM-Tag-Komponententyps](assets/component-types/aem-tag-picker.png)
 
 >[!ENDTABS]
 
-#### AEM {#aem-content}
+#### AEM-Inhalt {#aem-content}
 
-Der Typ AEM Inhaltskomponente ermöglicht eine AEM Inhaltsauswahl, die zum Festlegen von Inhaltsverweisen verwendet werden kann.
+Der AEM-Inhaltskomponententyp aktiviert eine AEM-Inhaltsauswahl, die zum Festlegen von Inhaltsverweisen verwendet werden kann.
 
 >[!BEGINTABS]
 
@@ -160,13 +160,13 @@ Der Typ AEM Inhaltskomponente ermöglicht eine AEM Inhaltsauswahl, die zum Festl
 
 >[!TAB Screenshot]
 
-![Screenshot AEM Inhaltskomponententyps](assets/component-types/aem-content-picker.png)
+![Screenshot des AEM-Inhaltskomponententyps](assets/component-types/aem-content-picker.png)
 
 >[!ENDTABS]
 
 #### Boolesch {#boolean}
 
-Ein boolescher Komponententyp speichert einen einfachen true/false -Wert, der als Umschalter gerendert wird. Es bietet einen zusätzlichen Validierungstyp.
+Ein boolescher Komponententyp speichert einen einfachen true/false-Wert, der als Umschalter gerendert wird.  Er bietet einen zusätzlichen Validierungstyp.
 
 | Validierungstyp | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
@@ -211,13 +211,13 @@ Ein boolescher Komponententyp speichert einen einfachen true/false -Wert, der al
 
 >[!TAB Screenshot]
 
-![Screenshot des booleschen Komponententyps](assets/component-types/boolean.png)
+![Screenshot eines booleschen Komponententyps](assets/component-types/boolean.png)
 
 >[!ENDTABS]
 
 #### Kontrollkästchengruppe {#checkbox-group}
 
-Ähnlich wie bei einem booleschen Wert ermöglicht ein Kontrollkästchengruppen-Komponententyp die Auswahl mehrerer true/false -Elemente, die als mehrere Kontrollkästchen gerendert werden.
+Ähnlich wie bei einem booleschen Wert ermöglicht ein Kontrollkästchengruppen-Komponententyp die Auswahl mehrerer true/false-Elemente, die als mehrere Kontrollkästchen gerendert werden.
 
 >[!BEGINTABS]
 
@@ -243,13 +243,13 @@ Ein boolescher Komponententyp speichert einen einfachen true/false -Wert, der al
 
 >[!TAB Screenshot]
 
-![Screenshot des Kontrollkästchengruppen-Komponententyps](assets/component-types/checkbox-group.png)
+![Screenshot eines Kontrollkästchengruppen-Komponententyps](assets/component-types/checkbox-group.png)
 
 >[!ENDTABS]
 
 #### Container {#container}
 
-Ein Container-Komponententyp ermöglicht die Gruppierung von Komponenten. Es bietet eine zusätzliche Konfiguration.
+Ein Container-Komponententyp ermöglicht die Gruppierung von Komponenten. Er bietet eine zusätzliche Konfiguration.
 
 | Konfiguration | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
@@ -290,15 +290,15 @@ Ein Container-Komponententyp ermöglicht die Gruppierung von Komponenten. Es bie
 
 >[!TAB Screenshot]
 
-![Screenshot des Container-Komponententyps](assets/component-types/container.png)
+![Screenshot eines Container-Komponententyps](assets/component-types/container.png)
 
 #### Inhaltsfragment {#content-fragment}
 
-Mit der Auswahl für Inhaltsfragmente können Sie eine [Inhaltsfragment](/help/sites-cloud/authoring/fragments/content-fragments.md) und deren Varianten (falls erforderlich). Es bietet eine zusätzliche Konfiguration.
+Mit der Auswahl für Inhaltsfragmente können Sie ein [Inhaltsfragment](/help/sites-cloud/authoring/fragments/content-fragments.md) und dessen Varianten (falls erforderlich) auswählen. Er bietet eine zusätzliche Konfiguration.
 
 | Konfiguration | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
-| `variationName` | `string` | Variablenname zum Speichern der ausgewählten Variante. Wenn nicht definiert, wird keine Variantenauswahl angezeigt | Nein |
+| `variationName` | `string` | Variablenname, um auf die ausgewählte Variante zu speichern.  Wenn nicht definiert, wird keine Variantenauswahl angezeigt. | Nein |
 
 >[!BEGINTABS]
 
@@ -323,24 +323,24 @@ Mit der Auswahl für Inhaltsfragmente können Sie eine [Inhaltsfragment](/help/s
 
 >[!TAB Screenshot]
 
-![Screenshot der Inhaltsfragmentauswahl](assets/component-types/aem-content-fragment.png)
+![Screenshot einer Inhaltsfragmentauswahl](assets/component-types/aem-content-fragment.png)
 
 >[!ENDTABS]
 
 #### Datum und Uhrzeit {#date-time}
 
-Ein Datums-/Uhrzeitkomponenten-Typ ermöglicht die Spezifikation eines Datums, einer Uhrzeit oder einer Kombination daraus. Es bietet zusätzliche Konfigurationen.
+Ein Datums-/Uhrzeitkomponententyp ermöglicht die Angabe eines Datums, einer Uhrzeit oder einer Kombination davon.  Er bietet zusätzliche Konfigurationen.
 
 | Konfiguration | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
-| `displayFormat` | `string` | Format für die Anzeige der Datums-Zeichenfolge | Ja |
-| `valueFormat` | `string` | Format für die Speicherung der Datums-Zeichenfolge | Ja |
+| `displayFormat` | `string` | Format für das Anzeigen der Datums-Zeichenfolge | Ja |
+| `valueFormat` | `string` | Format für das Speichern der Datums-Zeichenfolge | Ja |
 
-Es bietet außerdem einen zusätzlichen Validierungstyp.
+Er bietet außerdem einen zusätzlichen Validierungstyp.
 
 | Validierungstyp | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
-| `customErrorMsg` | `string` | Meldung, die bei `valueFormat` ist nicht erfüllt | Nein |
+| `customErrorMsg` | `string` | Meldung, die angezeigt wird, wenn `valueFormat` nicht respektiert wird. | Nein |
 
 >[!BEGINTABS]
 
@@ -414,17 +414,17 @@ Es bietet außerdem einen zusätzlichen Validierungstyp.
 
 >[!TAB Screenshot]
 
-![Screenshot des Datums- und Uhrzeitkomponenten-Typs](assets/component-types/date-time.png)
+![Screenshot eines Datums-/Uhrzeitkomponententyps](assets/component-types/date-time.png)
 
 >[!ENDTABS]
 
 #### Experience Fragment {#experience-fragment}
 
-Mit der Experience Fragment-Auswahl können Sie eine [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) und deren Varianten (falls erforderlich). Es bietet eine zusätzliche Konfiguration.
+Mit der Experience Fragment-Auswahl können Sie ein [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) und dessen Varianten (falls erforderlich) auswählen. Er bietet eine zusätzliche Konfiguration.
 
 | Konfiguration | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
-| `variationName` | `string` | Variablenname zum Speichern der ausgewählten Variante. Wenn nicht definiert, wird keine Variantenauswahl angezeigt | Nein |
+| `variationName` | `string` | Variablenname, um auf die ausgewählte Variante zu speichern.  Wenn nicht definiert, wird keine Variantenauswahl angezeigt. | Nein |
 
 >[!BEGINTABS]
 
@@ -449,14 +449,14 @@ Mit der Experience Fragment-Auswahl können Sie eine [Experience Fragment](/help
 
 >[!TAB Screenshot]
 
-![Screenshot der Experience Fragment-Auswahl](assets/component-types/aem-experience-fragment.png)
+![Screenshot einer Experience Fragment-Auswahl](assets/component-types/aem-experience-fragment.png)
 
 >[!ENDTABS]
 
 
 #### Mehrfachauswahl {#multiselect}
 
-Ein Komponententyp &quot;multiselect&quot;zeigt mehrere Elemente zur Auswahl in einer Dropdown-Liste an, einschließlich der Möglichkeit, die auswählbaren Elemente zu gruppieren.
+Ein Mehrfachauswahl-Komponententyp zeigt mehrere Elemente zur Auswahl in einer Dropdown-Liste an, einschließlich der Möglichkeit, die auswählbaren Elemente zu gruppieren.
 
 >[!BEGINTABS]
 
@@ -517,20 +517,20 @@ Ein Komponententyp &quot;multiselect&quot;zeigt mehrere Elemente zur Auswahl in 
 
 >[!TAB Screenshots]
 
-![Screenshot des Multiselect-Komponententyps](assets/component-types/multiselect.png)
-![Screenshot des Multiselect-Komponententyps mit Gruppierung](assets/component-types/multiselect-group.png)
+![Screenshot eines Mehrfachauswahl-Komponententyps](assets/component-types/multiselect.png)
+![Screenshot eines Mehrfachauswahl-Komponententyps mit Gruppierung](assets/component-types/multiselect-group.png)
 
 >[!ENDTABS]
 
 #### Zahl {#number}
 
-Ein Komponententyp vom Typ Zahl ermöglicht die Eingabe einer Zahl. Es bietet zusätzliche Validierungstypen.
+Ein Zahl-Komponententyp ermöglicht die Eingabe einer Zahl.  Er bietet zusätzliche Validierungstypen.
 
 | Validierungstyp | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
-| `numberMin` | `number` | Mindestens zulässig | Nein |
-| `numberMax` | `number` | Maximale zulässige Anzahl | Nein |
-| `customErrorMsg` | `string` | Meldung, die bei `numberMin` oder `numberMax` ist nicht erfüllt | Nein |
+| `numberMin` | `number` | Zulässige Mindestanzahl | Nein |
+| `numberMax` | `number` | Zulässige maximale Anzahl | Nein |
+| `customErrorMsg` | `string` | Meldung, die angezeigt wird, wenn `numberMin` oder `numberMax` nicht erfüllt ist. | Nein |
 
 >[!BEGINTABS]
 
@@ -577,13 +577,13 @@ Ein Komponententyp vom Typ Zahl ermöglicht die Eingabe einer Zahl. Es bietet zu
 
 >[!TAB Screenshot]
 
-![Screenshot des Komponententyps &quot;Zahl&quot;](assets/component-types/number.png)
+![Screenshot des Zahl-Komponententyps](assets/component-types/number.png)
 
 >[!ENDTABS]
 
 #### Optionsfeldgruppe {#radio-group}
 
-Ein Optionsfeldgruppen-Komponententyp ermöglicht eine sich gegenseitig ausschließende Auswahl aus mehreren Optionen, die als Gruppe ähnlich einer Kontrollkästchengruppe gerendert werden.
+Ein Optionsfeldgruppen-Komponententyp ermöglicht eine einander ausschließende Auswahl aus mehreren Optionen, die als Gruppe ähnlich einer Kontrollkästchengruppe gerendert werden.
 
 >[!BEGINTABS]
 
@@ -609,13 +609,13 @@ Ein Optionsfeldgruppen-Komponententyp ermöglicht eine sich gegenseitig ausschli
 
 >[!TAB Screenshot]
 
-![Screenshot des Komponententyps einer Optionsfeldgruppe](assets/component-types/radio.png)
+![Screenshot eines Optionsfeldgruppen-Komponententyps](assets/component-types/radio.png)
 
 >[!ENDTABS]
 
-#### Verweis {#reference}
+#### Referenz {#reference}
 
-Ein Referenzkomponententyp ermöglicht einen Verweis auf ein anderes Datenobjekt aus dem aktuellen Objekt.
+Ein Referenz-Komponententyp ermöglicht einen Verweis auf ein anderes Datenobjekt aus dem aktuellen Objekt.
 
 >[!BEGINTABS]
 
@@ -637,18 +637,18 @@ Ein Referenzkomponententyp ermöglicht einen Verweis auf ein anderes Datenobjekt
 
 >[!TAB Screenshot]
 
-![Screenshot des Referenzkomponententyps](assets/component-types/reference.png)
+![Screenshot eines Referenz-Komponententyps](assets/component-types/reference.png)
 
 >[!ENDTABS]
 
 #### Rich-Text {#rich-text}
 
-Rich-Text ermöglicht eine mehrzeilige Rich-Text-Eingabe. Es bietet zusätzliche Validierungstypen.
+Rich-Text ermöglicht eine mehrzeilige Rich-Text-Eingabe. Er bietet zusätzliche Validierungstypen.
 
 | Validierungstyp | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
 | `maxSize` | `number` | Maximale Anzahl erlaubter Zeichen | Nein |
-| `customErrorMsg` | `string` | Meldung, die bei `maxSize` überschritten wird | Nein |
+| `customErrorMsg` | `string` | Meldung, die angezeigt wird, wenn `maxSize` überschritten wird. | Nein |
 
 >[!BEGINTABS]
 
@@ -690,13 +690,13 @@ Rich-Text ermöglicht eine mehrzeilige Rich-Text-Eingabe. Es bietet zusätzliche
 
 >[!TAB Screenshot]
 
-![Screenshot des Textbereich-Komponententyps](assets/component-types/richtext.png)
+![Screenshot eines Textbereich-Komponententyps](assets/component-types/richtext.png)
 
 >[!ENDTABS]
 
 #### Auswahl {#select}
 
-Ein Typ &quot;Komponente auswählen&quot;ermöglicht die Auswahl einer einzelnen Option aus einer Liste vordefinierter Optionen in einem Dropdown-Menü.
+Ein Auswahl-Komponententyp ermöglicht die Auswahl einer einzelnen Option aus einer Liste vordefinierter Optionen in einem Dropdown-Menü.
 
 >[!BEGINTABS]
 
@@ -722,13 +722,13 @@ Ein Typ &quot;Komponente auswählen&quot;ermöglicht die Auswahl einer einzelnen
 
 >[!TAB Screenshot]
 
-![Screenshot des ausgewählten Komponententyps](assets/component-types/select.png)
+![Screenshot eines Auswahl-Komponententyps](assets/component-types/select.png)
 
 >[!ENDTABS]
 
 #### Registerkarte {#tab}
 
-Mit einem Registerkarten-Komponententyp können Sie andere Eingabefelder auf mehreren Registerkarten gruppieren, um die Layout-Organisation für Autoren zu verbessern.
+Ein Registerkarten-Komponententyp ermöglicht das Gruppieren anderer Eingabefelder auf mehreren Registerkarten, um die Layout-Organisation für Autorinnen und Autoren zu verbessern.
 
 Eine `tab`-Definition kann als Trennzeichen in einer Reihe von `fields` betrachtet werden. Alles, was nach einem `tab` kommt, wird auf dieser Registerkarte platziert, bis auf einen neuen `tab` gestoßen wird, woraufhin die folgenden Elemente auf der neuen Registerkarte platziert werden.
 
@@ -776,14 +776,14 @@ Wenn Sie Elemente haben möchten, die oberhalb von allen Registerkarten angezeig
 
 #### Text {#text}
 
-Text ermöglicht eine einzelne Textzeile.  Es enthält zusätzliche Validierungstypen.
+Text ermöglicht die Eingabe einer einzelnen Textzeile.   Er enthält zusätzliche Validierungstypen.
 
 | Validierungstyp | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
-| `minLength` | `number` | Mindestens zulässige Zeichenanzahl | Nein |
-| `maxLength` | `number` | Maximale Zeichenanzahl zulässig | Nein |
-| `regExp` | `string` | Regulärer Ausdruck, der dem Eingabetext entsprechen muss | Nein |
-| `customErrorMsg` | `string` | Meldung, die bei `minLength`, `maxLength`, und/oder `regExp` verletzt | Nein |
+| `minLength` | `number` | Zulässige Mindestanzahl von Zeichen | Nein |
+| `maxLength` | `number` | Zulässige maximale Zeichenanzahl | Nein |
+| `regExp` | `string` | Regulärer Ausdruck, der dem Eingabetext entsprechen muss. | Nein |
+| `customErrorMsg` | `string` | Meldung, die angezeigt wird, wenn gegen `minLength`, `maxLength` und/oder `regExp` verstoßen wird, | Nein |
 
 >[!BEGINTABS]
 
@@ -829,6 +829,6 @@ Text ermöglicht eine einzelne Textzeile.  Es enthält zusätzliche Validierungs
 
 >[!TAB Screenshot]
 
-![Screenshot des Textkomponententyps](assets/component-types/simpletext.png)
+![Screenshot eines Textkomponententyps](assets/component-types/simpletext.png)
 
 >[!ENDTABS]

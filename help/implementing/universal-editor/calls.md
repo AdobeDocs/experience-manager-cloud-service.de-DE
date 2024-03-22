@@ -3,9 +3,9 @@ title: Aufrufe im universellen Editor
 description: Erfahren Sie mehr über die verschiedenen Arten von Aufrufen, die der universelle Editor an Ihre App sendet, um Sie beim Debuggen zu unterstützen.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 source-git-commit: 1fc53e726f3a15c9ac7d772b4c181a7877e417af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '615'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Erfahren Sie mehr über die verschiedenen Arten von Aufrufen, die der universell
 
 {{universal-editor-status}}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Der universelle Editor kommuniziert mit Ihrer instrumentierten App über eine Reihe definierter Aufrufe. Dies ist für die Endbenutzenden transparent und hat keine Auswirkungen auf ihr Anwendererlebnis.
 
@@ -27,7 +27,7 @@ Für die Entwickelnden kann es jedoch nützlich sein, diese Aufrufe zu verstehen
 * Die **Payload** des Aufrufs enthält Details zu dem, was vom Editor aktualisiert wird, einschließlich der Angabe, was zu aktualisieren ist und wie es zu aktualisieren ist.
 * Die **Antwort** enthält Details darüber, was genau vom Editor-Dienst aktualisiert wurde. Dadurch soll die Aktualisierung des Inhalts im Editor erleichtert werden. In bestimmten Fällen, wie bei einem `move`-Aufruf, muss die gesamte Seite aktualisiert werden.
 
-Nachdem ein Aufruf erfolgreich abgeschlossen wurde, werden Ereignisse ausgelöst, die die Payload der Anfrage und der Antwort enthalten, die für Ihre eigene App angepasst werden können. Lesen Sie das Dokument . [Universelle Editor-Ereignisse](/help/implementing/universal-editor/events.md) für weitere Details.
+Nachdem ein Aufruf erfolgreich abgeschlossen wurde, werden Ereignisse mit der Anfrage- und Antwort-Payload ausgelöst, die für Ihre eigene App angepasst werden kann. Weitere Informationen finden Sie unter [Ereignisse des universellen Editors](/help/implementing/universal-editor/events.md).
 
 Im Folgenden finden Sie eine Liste der Arten von Aufrufen, die der universelle Editor an Ihre App richtet, sowie Beispiele für Payloads und Antworten.
 
@@ -384,4 +384,4 @@ Der universelle Editor durchläuft den Inhalt und generiert eine Liste von Verwe
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Universelle Editor-Ereignisse](/help/implementing/universal-editor/events.md)
+* [Ereignisse des universellen Editors](/help/implementing/universal-editor/events.md)

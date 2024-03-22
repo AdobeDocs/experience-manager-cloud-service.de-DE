@@ -7,9 +7,9 @@ feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1255'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -21,10 +21,10 @@ ht-degree: 85%
 
 Beispielsweise können Sie mit Workfront Fusion ein Szenario erstellen, um Daten mit dem adaptiven Formular zu erfassen, die Daten zu verarbeiten und die Daten zur Archivierung an einen Datenspeicher zu senden. Nachdem ein Szenario eingerichtet wurde, führt Workfront Fusion die Aufgaben automatisch aus, sobald eine Person ein Formular ausfüllt, wodurch der Datenspeicher nahtlos aktualisiert wird.
 
-AEM Forms as a Cloud Service bietet einen OOTB-Connector zum Verbinden und Senden eines adaptiven Formulars an Adobe Workfront Fusion. Die Übermittlung eines Formulars an Adobe Workfront Fusion kann mehrere Vorteile bieten:
-* Sie ermöglichte die nahtlose Übertragung von Formulardaten an Workfront Fusion-Workflows.
-* Dies hilft bei der Automatisierung verschiedener Aufgaben, die durch Formularübermittlungen ausgelöst werden. Dazu können das Initiieren von Projekten, das Zuweisen von Aufgaben zu bestimmten Team-Mitgliedern, das Senden von Benachrichtigungen und das Aktualisieren des Projektstatus gehören - alles ohne manuelles Eingreifen.
-* Alle in Workfront Fusion erfassten Formularübermittlungen bieten eine zentrale &quot;Source of Truth&quot; für projektbezogene Informationen.
+AEM Forms as a Cloud Service bietet einen vorkonfigurierten Connector zum Verbinden und Senden eines adaptiven Formulars an Adobe Workfront Fusion. Die Übermittlung eines Formulars an Adobe Workfront Fusion kann mehrere Vorteile bieten:
+* Sie ermöglicht die nahtlose Übertragung von Formularübermittlungsdaten an Workfront Fusion-Workflows.
+* Dies hilft bei der Automatisierung verschiedener Aufgaben, die durch Formularübermittlungen ausgelöst werden. Dazu können das Initiieren von Projekten, das Zuweisen von Aufgaben zu bestimmten Team-Mitgliedern, das Senden von Benachrichtigungen und das Aktualisieren des Projektstatus gehören – alles ohne manuelles Eingreifen.
+* Alle in Workfront Fusion erfassten Formularübermittlungen bieten eine zentrale Quelle für projektbezogene Informationen.
 
 
 <!--  AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.-->
@@ -35,7 +35,7 @@ AEM Forms as a Cloud Service bietet einen OOTB-Connector zum Verbinden und Sende
 
 Um eine Verbindung zwischen Workfront Fusion und AEM Forms herzustellen, ist Folgendes erforderlich:
 
-* Eine gültige [Workfront- und Workfront Fusion-Lizenz](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=de).
+* Eine gültige [Workfront- und Workfront-Fusion-Lizenz](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=de).
 * Eine AEM-Benutzerin bzw. ein -Benutzer mit Zugriffsrechten auf die [Developer Console](https://my.cloudmanager.adobe.com/), um [die Dienstanmeldeinformationen abzurufen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=de).
 
 ## Integrieren von AEM-Formularen mit Adobe Workfront Fusion
@@ -45,8 +45,8 @@ Um eine Verbindung zwischen Workfront Fusion und AEM Forms herzustellen, ist Fol
 Um ein Workfront-Szenario zu erstellen, führen Sie die folgenden Schritte aus:
 
 1. [Erstellen eines Szenarios](#create-scenario)
-1. [Hinzufügen eines Web-Hooks zu einem Szenario](#add-webhook)
-1. [Herstellen einer Verbindung zu einem Webhook](#add-connection)
+1. [Hinzufügen eines Webhooks zu einem Szenario](#add-webhook)
+1. [Hinzufügen einer Verbindung zu einem Webhook](#add-connection)
 
 #### Erstellen eines Szenarios {#create-scenario}
 
@@ -67,7 +67,7 @@ So erstellen Sie ein Szenario:
 
 1. Wählen Sie das Dialogfeld **[!UICONTROL Formularereignisse beobachten]**, und ein Fenster zum Hinzufügen eines Webhooks wird angezeigt.
 
-#### Webhook hinzufügen {#add-webhook}
+#### Hinzufügen eines Webhooks {#add-webhook}
 
 ![Hinzufügen eines Webhooks](/help/forms/assets/workfront-add-webhook.png)
 
@@ -82,7 +82,7 @@ So fügen Sie einen Webhook hinzu:
 
 1. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine neue Verbindung hinzuzufügen. Das Dialogfeld **[!UICONTROL Verbindung erstellen]** erscheint.
 
-#### Verbindung zu einem Webhook hinzufügen {#add-connection}
+#### Hinzufügen einer Verbindung zu einem Webhook {#add-connection}
 
 ![Hinzufügen einer Verbindung](/help/forms/assets/workfront-add-connection.png)
 
@@ -133,7 +133,7 @@ So fügen Sie eine Verbindung hinzu:
 1. Wählen Sie die erstellte Verbindung **[!UICONTROL Verbindung]** aus der Dropdown-Liste.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Klicken Sie auf **[!UICONTROL OK]** und speichern Sie die Änderungen für das Szenario.
-1. Um das Szenario zu aktivieren, klicken Sie im Szenario-Editor auf die Schaltfläche Ein/Aus .
+1. Um das Szenario zu aktivieren, klicken Sie im Szenario-Editor auf die Umschalt-Schaltfläche „EIN/AUS“.
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ So fügen Sie eine Verbindung hinzu:
 
 ### 2. Konfigurieren der Übermittlungsaktion eines adaptiven Formulars für Workfront Fusion
 
-Sie können die Sendeaktion für Workfront Fusion konfigurieren für:
+Sie können die Übermittlungsaktion für Workfront Fusion für Folgendes konfigurieren:
 * [Neue adaptive Formulare](#new-af-submit-action)
 * [Vorhandene adaptive Formulare](#existing-af-submit-action)
 

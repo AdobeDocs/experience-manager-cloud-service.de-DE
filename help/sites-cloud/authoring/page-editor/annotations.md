@@ -3,7 +3,7 @@ title: Hinzufügen von Seitenanmerkungen
 description: Verwenden Sie den Anmerkungsmodus, um Anmerkungen und Skizzen auf den Seiten zu hinterlassen, so wie Sie Haftnotizen verwenden würden, um Ihren Prozess der Inhaltsüberprüfung zu unterstützen.
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '676'
 ht-degree: 100%
 

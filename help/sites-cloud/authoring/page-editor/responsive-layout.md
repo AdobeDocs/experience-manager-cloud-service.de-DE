@@ -3,9 +3,9 @@ title: Responsives Layout
 description: AEM bietet Ihnen die Möglichkeit, Ihre Seiten mit einem responsiven Layout zu gestalten.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1740'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Der Layout-Container:
 
 Die Benutzenden können dann mithilfe des Emulators sehen, wie der Inhalt für bestimmte Geräte gerendert wird.
 
-Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination von Mechanismen ermöglicht:
+Das responsive Layout für Ihre Seiten wird von AEM durch eine Kombination von Mechanismen ermöglicht:
 
 * [**Layout-Container-Komponente**](#adding-a-layout-container-and-its-content-edit-mode)
 
@@ -49,11 +49,11 @@ Je nach Projekt kann der Layout-Container als standardmäßiges Absatzsystem fü
 
 >[!TIP]
 >
->Adobe bietet [GitHub-Dokumentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) des responsiven Layouts als Referenz, der Frontend-Entwicklern zur Verfügung gestellt werden kann, damit sie das AEM Raster außerhalb von AEM verwenden können, z. B. bei der Erstellung statischer HTML-Modelle für eine zukünftige AEM Site.
+>Adobe stellt eine [GitHub-Dokumentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) zum responsiven Layout als Referenz bereit. Diese kann Frontend-Entwicklerinnen und -entwicklern zur Verfügung gestellt werden, damit sie das AEM-Raster außerhalb von AEM verwenden können, um beispielsweise statische HTML-Modelle für künftige AEM Sites zu erstellen.
 
 >[!NOTE]
 >
->Die Verwendung des obigen Mechanismus wird durch die Konfiguration der Vorlage aktiviert. Lesen Sie das Dokument . [Konfigurieren des responsiven Layouts](/help/sites-cloud/administering/responsive-layout.md) für weitere Informationen.
+>Die Verwendung des obigen Mechanismus wird durch die Konfiguration der Vorlage aktiviert. Weitere Informationen finden Sie im Dokument [Konfigurieren des responsiven Layouts](/help/sites-cloud/administering/responsive-layout.md).
 
 ## Layout-Definitionen, Geräteemulation und Breakpoints {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -82,7 +82,7 @@ Wenn Sie z. B. das Gerät **iPhone 6 Plus** für die Emulation und das Layout a
 
 ## Auswahl eines zu emulierenden Geräts {#selecting-a-device-to-emulate}
 
-1. Öffnen Sie die gewünschte Seite zur Bearbeitung. Beispiel:
+1. Öffnen Sie die gewünschte Seite zur Bearbeitung. Zum Beispiel:
 
    `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -96,7 +96,7 @@ Wenn Sie z. B. das Gerät **iPhone 6 Plus** für die Emulation und das Layout a
 
    In der Emulator-Symbolleiste werden zusätzliche Layout-Optionen angezeigt:
 
-   * **Gerät drehen** - Ermöglicht das Drehen eines Geräts von der vertikalen (Hochformat-)Ausrichtung in die horizontale (Querformat-)Ausrichtung und umgekehrt.
+   * **Gerät drehen**: Ermöglicht es Ihnen, die vertikale Ausrichtung (Hochformat) eines Geräts in eine horizontale Ausrichtung (Querformat) zu ändern und umgekehrt.
 
    ![Schaltfläche zum Drehen des Geräts in das Querformat](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![Schaltfläche zum Drehen des Geräts in das Hochformat](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
@@ -134,9 +134,9 @@ Ein **Layout-Container** ist ein Absatzsystem mit folgenden Eigenschaften:
 
 >[!NOTE]
 >
->Wenn nicht bereits verfügbar, wird die Variable **Layout-Container** muss explizit sein [aktiviert für ein Absatzsystem/eine Seite.](/help/sites-cloud/administering/responsive-layout.md)
+>Falls er noch nicht verfügbar ist, muss der **Layout-Container** explizit [für ein Absatzsystem/eine Seite aktiviert werden.](/help/sites-cloud/administering/responsive-layout.md)
 
-1. Der **Layout-Container** ist als Standardkomponente im [Komponentenbrowser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) verfügbar. Von hier können Sie ihn an die gewünschte Position auf der Seite ziehen. Anschließend wird der Platzhalter **Komponenten hierher ziehen** angezeigt.
+1. Der **Layout-Container** ist als Standardkomponente im [Komponenten-Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) verfügbar. Von hier können Sie ihn an die gewünschte Position auf der Seite ziehen. Anschließend wird der Platzhalter **Komponenten hierher ziehen** angezeigt.
 1. Anschließend können Sie dem Layout-Container Komponenten hinzufügen. Diese Komponenten enthalten den tatsächlichen Inhalt:
 
    ![Layout-Container](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
@@ -149,7 +149,7 @@ Sie können einen Layout-Container wie andere Komponenten im **Bearbeitungsmodus
 >
 >Da ein Layout-Container ein Absatzsystem ist, werden beim Löschen der Komponente sowohl das Layout-Raster als auch alle Komponenten (und deren Inhalt) gelöscht, die sich im Container befinden.
 
-1. Wenn Sie mit der Maus auf den Rasterplatzhalter zeigen oder diesen auswählen, wird das Aktionsmenü angezeigt.
+1. Wenn Sie den Mauszeiger über den Rasterplatzhalter bewegen oder ihn auswählen, wird das Aktionsmenü angezeigt.
 
    ![Zum Layout-Container hinzufügen](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 
@@ -204,7 +204,7 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster ausführen:
 
 * Im **Layout-Modus** können Sie **Komponenten hierher ziehen** auswählen, um die gesamte Komponente auszuwählen. Für diesen Modus wird die Symbolleiste angezeigt.
 
-  Die Symbolleiste bietet je nach Status der Layout-Komponente und der zugehörigen Komponenten unterschiedliche Optionen. Beispiel:
+  Die Symbolleiste bietet je nach Status der Layout-Komponente und der zugehörigen Komponenten unterschiedliche Optionen. Zum Beispiel:
 
    * **Übergeordnetes Element**: Wählt die übergeordnete Komponente aus.
 

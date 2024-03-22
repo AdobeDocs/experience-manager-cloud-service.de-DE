@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2702'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 98%
 Multi Site Manager (MSM) ermöglicht Ihnen die Verwendung derselben Site-Inhalte an mehreren Standorten. MSM verwendet seine Live Copy-Funktion, um Folgendes zu erreichen.
 
 * Mit MSM können Sie:
-   * Inhalte einmalig erstellen und diese
+   * Inhalte einmalig erstellen und anschließend
    * Inhalte dann in anderen Bereichen derselben oder anderer Sites verwenden (über [Live Copies](#live-copies)).
 * MSM behält dann die Live-Beziehungen zwischen Ihren Quellinhalten und deren Live Copies bei, sodass:
    * die Quelle und die Live Copies synchronisiert werden, wenn den Quellinhalt ändern.
-   * Sie Anpassungen am Inhalt der Live Copies vornehmen können, indem Sie die Live-Beziehung zu einzelnen Unterseiten und/oder Komponenten trennen.
+   * Sie die Live-Beziehung zu einzelnen Unterseiten und/oder Komponenten trennen können, wenn Sie Anpassungen ausschließlich am Inhalt der Live Copies vornehmen wollen.
 
 Diese Seite bietet einen Überblick über das Wiederverwenden von Inhalten mit MSM. Auf den folgenden Seiten werden die damit zusammenhängenden Probleme ausführlich behandelt.
 
@@ -288,7 +288,7 @@ Rollout-Konfigurationen können wiederverwendet werden, sodass mehr als eine Liv
 
 ### Rollout-Konflikte {#rollout-conflicts}
 
-Rollouts können kompliziert werden, insbesondere wenn Autoren Inhalte sowohl in der Quelle als auch in der Live Copy bearbeiten. Daher ist es nützlich, sich darüber im Klaren zu sein, wie AEM mit jeder [Konflikte, die während des Rollouts auftreten können.](rollout-conflicts.md)
+Rollouts können kompliziert werden, insbesondere wenn Autorinnen und Autoren Inhalte sowohl in der Quelle als auch in der Live Copy bearbeiten. Daher ist es nützlich, sich darüber im Klaren zu sein, wie AEM mit [möglichen Konflikten während des Rollouts](rollout-conflicts.md) verfährt.
 
 ### Aussetzen und Abbrechen der Vererbung und Synchronisierung {#suspending-and-cancelling-inheritance-and-synchronization}
 

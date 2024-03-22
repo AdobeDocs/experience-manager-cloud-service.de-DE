@@ -3,9 +3,9 @@ title: Experience Fragments
 description: Verwenden Sie Experience Fragments von Adobe Experience Manager as a Cloud Service, um Ihre Erlebnisse wiederverwendbar und flexibel zu gestalten.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2035'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Experience Fragments sollten in folgenden Fällen verwendet werden:
    * Beim Einbetten von Inhalten in Touchpoints von Drittanbietern.
 * Wenn Sie über ein Erlebnis mit unterschiedlichen Varianten oder Ausgabedarstellungen verfügen.
    * Kanal- oder kontextspezifische Varianten.
-   * Erlebnisse, die eine Gruppierung sinnvoll sind, z. B. eine Kampagne mit unterschiedlichen Erlebnissen über verschiedene Kanäle hinweg.
+   * Erlebnisse, die für Gruppen sinnvoll sind, z. B. eine Kampagne mit unterschiedlichen Erlebnissen über verschiedene Kanäle.
 * Wenn Sie Omni-Channel-Commerce betreiben.
    * Ermöglichen von Transaktionen an Touchpoints.
 
@@ -125,7 +125,7 @@ Um einen Ordner für Ihre Experience Fragments zu erstellen und zu konfigurieren
 
 1. Geben Sie den regulären Ausdruck zum Abrufen der erforderlichen Vorlagen im Feld **Zulässige Vorlagen** an.
 
-   Beispiel:
+   Zum Beispiel:
    `/conf/(.*)/settings/wcm/templates/experience-fragment(.*)?`
 
    Siehe:
@@ -245,7 +245,7 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragments ers
    * **Beschreibung**
    * **Varianten-Tags**
 
-   Beispiel:
+   Zum Beispiel:
 
    ![Varianteneigenschaften](/help/sites-cloud/authoring/assets/xf-07.png)
 

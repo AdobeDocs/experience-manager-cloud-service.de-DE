@@ -3,9 +3,9 @@ title: Stilsystem
 description: Das Stilsystem ermöglicht es einem Vorlagenautor, in der Inhaltsrichtlinie für Komponenten Stilklassen festzulegen, die ein Inhaltsautor später bei der Bearbeitung der Komponente auf einer Seite auswählen kann. Diese Stile können alternative visuelle Varianten einer Komponente sein, um das Verfahren flexibler zu gestalten.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1305'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -144,7 +144,7 @@ Die Registerkarte für das Dialogfeld „Bearbeiten“ kann auf ähnliche Weise 
 
 Mit der String-Array-Eigenschaft `cq:styleElements` können Entwickler auch eine Liste der zulässigen Elementnamen für Stile in der Komponente konfigurieren. In der Registerkarte „Stile“ für die Richtlinie im Dialogfeld „Design“ können Vorlagenautorinnen und -autoren außerdem Elementnamen auswählen, die für die einzelnen Stile festgelegt werden sollen. Dadurch wird der Elementname des Wrapper-Elements definiert.
 
-Diese Eigenschaft wird auf dem Knoten `cq:Component` festgelegt. Beispiel:
+Diese Eigenschaft wird auf dem Knoten `cq:Component` festgelegt. Zum Beispiel:
 
 * `/apps/<yoursite>/components/content/list@cq:styleElements=[div,section,span]`
 

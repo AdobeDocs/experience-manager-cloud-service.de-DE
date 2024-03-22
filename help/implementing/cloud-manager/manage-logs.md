@@ -3,9 +3,9 @@ title: Zugreifen auf und Verwalten von Protokollen
 description: Erfahren Sie, wie Sie auf Protokolle zugreifen und diese verwalten können, um Ihren Entwicklungsprozess in AEM as a Cloud Service zu unterstützen.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: 178af74512e74ff401588b68c73fa4661acec704
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '346'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Environment Id Service    Name
 
 >[!TIP]
 >
->Checkout [diese Videoressource](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) , um mehr über das Debugging AEM as a Cloud Service zu erfahren.
+>Sehen Sie sich [dieses Video](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) an, um mehr über das Debugging von AEM as a Cloud Service zu erfahren.
 
 Weitere Informationen zur Cloud Manager-API und zur Adobe I/O-CLI finden Sie in den folgenden zusätzlichen Ressourcen:
 

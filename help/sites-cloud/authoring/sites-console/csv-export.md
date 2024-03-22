@@ -3,7 +3,7 @@ title: Exportieren in CSV
 description: Exportieren von Informationen zu Ihren Seiten in eine CSV-Datei auf Ihrem lokalen System
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '197'
 ht-degree: 100%
 

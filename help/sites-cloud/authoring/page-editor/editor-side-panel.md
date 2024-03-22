@@ -1,47 +1,47 @@
 ---
-title: Seitenbereich des Seiteneditors
-description: Erfahren Sie, wie Sie mit dem Seitenbereich im Seiteneditor AEM Sites-Editor Komponenten und Assets zu Ihrer Seite hinzufügen.
+title: Seitliches Bedienfeld des Seiteneditors
+description: Erfahren Sie, wie Sie mit dem seitlichen Bedienfeld im AEM Sites-Editor Komponenten und Assets zu Ihrer Seite hinzufügen.
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1122'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
 
-# Seitenbereich des Seiteneditors {#side-panel}
+# Seitliches Bedienfeld des Seiteneditors {#side-panel}
 
-Erfahren Sie, wie Sie mit dem Seitenbereich im Seiteneditor AEM Sites-Editor Komponenten und Assets zu Ihrer Seite hinzufügen.
+Erfahren Sie, wie Sie mit dem seitlichen Bedienfeld im AEM Sites-Editor Komponenten und Assets zu Ihrer Seite hinzufügen.
 
-## Seitenbereichsmodi {#modes}
+## Modi des seitlichen Bedienfelds {#modes}
 
-Der Seitenbereich kann immer im Seiteneditor durch Tippen oder Klicken auf die **Seitliches Bedienfeld ein/aus** in der Symbolleiste des Seiteneditors.
+Sie können im Seiteneditor jederzeit auf das seitliche Bedienfeld zugreifen, indem Sie in der Symbolleiste des Seiteneditors auf das Symbol **Seitliches Bedienfeld ein/aus** tippen oder klicken.
 
 ![Seitliches Bedienfeld ein/aus](assets/editor-side-panel-side-panel-toggle.png)
 
-Wenn Sie den Seitenbereich öffnen, wird er von der linken Seite aus eingeblendet und Sie können dann aus drei wichtigen Registerkarten auswählen:
+Wenn Sie das seitliche Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet und Sie können zwischen drei wichtigen Registerkarten wählen:
 
-* [Komponenten-Browser](#components-browser) , um neue Inhalte zu Ihrer Seite hinzuzufügen
-* [Der Asset-Browser](#assets-browser) , um neue Assets zu Ihrer Seite hinzuzufügen
-* [Inhaltsstruktur](#content-tree) , um die Struktur Ihrer Seite zu durchsuchen
+* [Komponenten-Browser](#components-browser), um neue Inhalte zu Ihrer Seite hinzuzufügen.
+* [Asset-Browser](#assets-browser), um neue Assets zu Ihrer Seite hinzuzufügen.
+* [Inhaltsstruktur](#content-tree), um die Struktur Ihrer Seite zu durchsuchen.
 
 ## Komponenten-Browser {#components-browser}
 
-[Komponenten](/help/implementing/developing/components/overview.md) sind die Bausteine, die zum Erstellen von Inhalten mit dem AEM Seiteneditor verwendet werden. Sie platzieren mehrere Komponenten auf einer Seite und konfigurieren deren Optionen zum Erstellen Ihrer Inhaltsseite.
+[Komponenten](/help/implementing/developing/components/overview.md) sind die Bausteine, die zum Erstellen von Inhalten mit dem AEM-Seiteneditor verwendet werden. Sie platzieren mehrere Komponenten auf einer Seite und konfigurieren deren Optionen, um Ihre Inhaltsseite zu erstellen.
 
 Der Komponenten-Browser enthält alle Komponenten, die zur Verwendung auf der aktuellen Seite verfügbar sind. Sie können diese an die gewünschte Position ziehen und dann bearbeiten, um Inhalte hinzuzufügen.
 
-Tippen oder klicken Sie auf **Komponenten** Registerkarte im Seitenbereich, um auf die **Komponenten** Browser.
+Tippen oder klicken Sie auf die Registerkarte **Komponenten** im seitlichen Bedienfeld, um auf den **Komponenten-Browser** zuzugreifen.
 
-![Symbol des Komponenten-Browsers im Seitenbereich](assets/editor-side-panel-components-browser.png)
+![Symbol des Komponenten-Browsers im seitlichen Bedienfeld](assets/editor-side-panel-components-browser.png)
 
-Das tatsächliche Erscheinungsbild und die Handhabung hängen vom verwendeten Gerätetyp ab.
+Das tatsächliche Aussehen und die Funktionsweise hängen vom verwendeten Gerätetyp ab.
 
 ### Mobilgerät {#mobile-device-components-browser}
 
-Beim Öffnen des Komponenten-Browsers auf einem Mobilgerät wird die zu bearbeitende Seite vollständig abgedeckt.
+Beim Öffnen des Komponenten-Browsers auf einem Mobilgerät wird die zu bearbeitende Seite vollständig überdeckt.
 
-Um Ihrer Seite eine Komponente hinzuzufügen, wählen Sie die Komponente aus, ziehen Sie sie und verschieben Sie sie nach rechts. Der Komponenten-Browser wird geschlossen und die Seite wird erneut angezeigt, wo Sie die Komponente platzieren können.
+Um der Seite eine Komponente hinzuzufügen, wählen Sie die Komponente aus und ziehen Sie sie nach rechts.  Der Komponenten-Browser wird geschlossen und die Seite, auf der Sie die Komponente platzieren können, wird erneut angezeigt.
 
 ![Komponenten-Browser auf einem Mobilgerät](assets/editor-side-panel-mobile-device.png)
 
@@ -51,15 +51,15 @@ Um Ihrer Seite eine Komponente hinzuzufügen, wählen Sie die Komponente aus, zi
 
 ### Desktop-Gerät {#desktop-device-components-browser}
 
-Wenn Sie den Komponenten-Browser auf einem Desktop-Gerät öffnen, wird er links im Fenster angezeigt.
+Beim Öffnen des Komponenten-Browsers auf einem Deskopt-Gerät wird dieser auf der linken Seite des Fensters angezeigt.
 
 Um der Seite eine Komponente hinzuzufügen, klicken Sie auf die gewünschte Komponente und ziehen Sie sie an die gewünschte Position.
 
 ![Komponenten-Browser auf einem Desktop-Gerät](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
-### Komponenten-Browser verwenden {#using-component-browser}
+### Verwenden des Komponenten-Browsers {#using-component-browser}
 
-Komponenten im **Komponenten** -Browser durch:
+Komponenten im **Komponenten-Browser** werden durch Folgendes dargestellt:
 
 * Komponentenname
 * Komponentengruppe (in grau)
@@ -76,27 +76,27 @@ Für eine detailliertere Beschreibung der Komponente können Sie (falls verfügb
 
 ![Komponenten-Browser-Informationen](assets/editor-side-panel-component-description.png)
 
-Detaillierte Informationen zu den verfügbaren Komponenten finden Sie unter [Komponentenkonsole.](/help/sites-cloud/authoring/components-console.md)
+Weitere Informationen zu den verfügbaren Komponenten finden Sie in der [Komponenten-Konsole](/help/sites-cloud/authoring/components-console.md).
 
 ## Asset-Browser {#assets-browser}
 
-Die **Assets** alle [Assets](/help/assets/overview.md) die zur Verwendung auf Ihrer aktuellen Seite verfügbar sind.
+Der **Asset-Browser** enthält alle [Assets](/help/assets/overview.md), die auf Ihrer aktuellen Seite verwendet werden können.
 
-Tippen oder klicken Sie auf **Assets** im Seitenbereich, um durch die Assets zu navigieren.
+Tippen oder klicken Sie auf die Registerkarte **Assets** im seitlichen Bedienfeld, um die Assets zu durchsuchen.
 
 ![Schaltfläche „Asset-Browser“](assets/editor-side-panel-assets-browser-tab.png)
 
-Der unendliche Bildlauf wird verwendet, um die Liste der Assets nach Bedarf zu erweitern, wenn Sie einen Bildlauf durchführen.
+Bei Bedarf können Sie die Liste der Assets durch Scrollen beliebig erweitern.
 
 ![Asset-Browser](assets/editor-side-panel-assets-browser.png)
 
-Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab:
+Das tatsächliche Aussehen und die Funktionsweise hängen vom verwendeten Gerätetyp ab:
 
 ### Mobilgerät {#mobile-device-assets-browser}
 
-Beim Öffnen des Asset-Browsers auf einem Mobilgerät wird die zu bearbeitende Seite vollständig abgedeckt.
+Beim Öffnen des Asset-Browsers auf einem Mobilgerät wird die zu bearbeitende Seite vollständig überdeckt.
 
-Um ein Asset zu Ihrer Seite hinzuzufügen, wählen Sie das gewünschte Asset aus, ziehen Sie es und verschieben Sie es dann nach rechts. Der Asset-Browser wird geschlossen und die Seite wird erneut angezeigt. Dort können Sie das Asset zur erforderlichen Komponente hinzufügen.
+Um der Seite ein Asset hinzuzufügen, wählen Sie das Asset aus und ziehen Sie es nach rechts.  Der Asset-Browser wird geschlossen und die Seite, auf der Sie das Asset zu der gewünschten Komponente hinzufügen können, wird erneut angezeigt.
 
 ![Asset-Browser auf Mobilgerät](assets/editor-side-panel-assets-browser-mobile.png)
 
@@ -106,13 +106,13 @@ Um ein Asset zu Ihrer Seite hinzuzufügen, wählen Sie das gewünschte Asset aus
 
 ### Desktop-Gerät {#desktop-device-assets-browser}
 
-Wenn Sie den Asset-Browser auf einem Desktop-Gerät öffnen, wird er auf der linken Seite des Fensters geöffnet.
+Beim Öffnen des Asset-Browsers auf einem Desktop-Gerät wird dieser auf der linken Seite des Fensters geöffnet.
 
-Um ein Asset zu Ihrer Seite hinzuzufügen, wählen Sie das gewünschte Asset aus und ziehen Sie es auf die gewünschte Komponente oder Position.
+Um der Seite ein Asset hinzuzufügen, wählen Sie das gewünschte Asset aus und ziehen Sie es in die gewünschte Komponente oder Position.
 
 ![Asset-Browser auf Desktop-Gerät](assets/editor-side-panel-assets-browser-desktop.png)
 
-### Verwenden des Asset-Browsers {#using-assets-browser}
+### Verwenden des Assets-Browsers {#using-assets-browser}
 
 Um ein Asset zu der Seite hinzuzufügen, wählen Sie es aus und ziehen Sie es an die gewünschte Position. Dabei kann es sich um Folgendes handeln:
 
@@ -143,17 +143,17 @@ Die **Inhaltsstruktur** bietet einen Überblick über alle auf der Seite verwend
 
 >[!NOTE]
 >
->Beim Bearbeiten einer Seite auf einem Mobilgerät ist die Inhaltsstruktur nicht verfügbar (wenn die Browser-Breite weniger als 1.024 Pixel beträgt).
+>Beim Bearbeiten einer Seite auf einem Mobilgerät (wenn die Browser-Breite weniger als 1.024 Pixel beträgt) ist die Inhaltsstruktur nicht verfügbar.
 
-Tippen oder klicken Sie auf **Inhaltsstruktur** -Tab, um auf die Inhaltsstruktur zuzugreifen.
+Tippen oder klicken Sie auf die Registerkarte **Inhaltsstruktur**, um auf die Inhaltsstruktur zuzugreifen.
 
 ![Schaltfläche „Inhaltsstruktur“](assets/editor-side-panel-content-tree-tab.png)
 
-Mit dieser Strukturansicht Ihrer Seite oder Vorlage können Sie leicht nachvollziehen, wie die darauf verwendeten Komponenten hierarchisch strukturiert sind. Auf einer komplexeren Seite können Sie so zudem einfacher zwischen Komponenten auf der Seite wechseln.
+Mit dieser Strukturansicht Ihrer Seite oder Vorlage können Sie leichter nachvollziehen, wie deren Inhalte hierarchisch strukturiert sind. Auf einer komplexeren Seite können Sie so zudem einfacher zwischen Komponenten auf der Seite wechseln.
 
 ![Inhaltsstruktur](assets/editor-side-panel-content-tree.png)
 
-Eine Seite kann problemlos aus vielen Komponenten desselben Typs bestehen. Daher wird in der Inhaltsstruktur nach dem Namen des Komponententyps (in Schwarz) beschreibender Text (grau) angezeigt. Der Text für diese Beschreibung wird aus den allgemeinen Eigenschaften der Komponente (z. B. Titel oder Text) entnommen.
+Da eine Seite häufig zahlreiche Komponenten desselben Typs enthält, wird in der Komponentenstruktur neben dem Namen des Komponententyps (schwarz dargestellt) zusätzlich eine Beschreibung angezeigt (grau dargestellt). Der Text für diese Beschreibung wird aus den allgemeinen Eigenschaften der Komponente (z. B. Titel oder Text) entnommen.
 
 Die Komponententypen werden in der für die Benutzeroberfläche ausgewählten Sprache angezeigt, die Beschreibung dagegen in der Sprache, die für die Seite verwendet wird.
 
@@ -161,9 +161,9 @@ Durch Klicken auf den Richtungspfeil neben einer Komponente wird die entsprechen
 
 ![Pfeilerweiterung für Inhaltsstruktur](assets/editor-side-panel-content-tree-chevron.png)
 
-Durch Klicken auf die Komponente wird diese im Seiteneditor markiert. Die verfügbaren Aktionen hängen vom Seitenstatus ab. Zum Beispiel:
+Durch Klicken auf die Komponente wird diese im Seiteneditor markiert. Die verfügbaren Aktionen hängen vom Status der Seite ab.  Zum Beispiel:
 
-## Eine einfache Seite {#basic-page}
+## Eine Basisseite {#basic-page}
 
 Die Komponenten einer Basisseite weisen die üblichen Optionen auf.
 
@@ -175,8 +175,8 @@ Wenn Sie in der Struktur auf eine Komponente klicken, die bearbeitbar ist, wird 
 
 ### Eine Live Copy {#live-copy}
 
-Eine Seite, die Teil eines [Livecopy](/help/sites-cloud/administering/msm/overview.md), wo Komponenten von einer anderen Seite übernommen werden, haben unterschiedliche Optionen.
+Einer Seite, die Teil einer [Live Copy](/help/sites-cloud/administering/msm/overview.md) ist, bei der Komponenten von einer anderen Seite übernommen werden, bietet verschiedene Optionen.
 
 ## Browser für zugehörige Inhalte {#associated-content-browser}
 
-Wenn Ihre Seite Inhaltsfragmente enthält, können Sie auch auf die [Browser für zugehörige Inhalte.](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)
+Wenn Ihre Seite Inhaltsfragmente enthält, haben Sie auch Zugriff auf den [Browser für zugehörige Inhalte.](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)

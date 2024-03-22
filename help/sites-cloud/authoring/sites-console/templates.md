@@ -3,9 +3,9 @@ title: Erstellen von Seitenvorlagen
 description: Eine Vorlage definiert die Struktur einer erstellten Seite und mit dem Vorlageneditor ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4524'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Die in diesem Dokument beschriebenen Aufgaben werden jeweils mit der Rolle aufge
 
 Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
 
-* Verwenden Sie die **Vorlage** Konsole. Dies ist im Abschnitt **Allgemein** Abschnitt **Instrumente** Konsole.
+* Verwenden Sie die **Vorlagen**-Konsole. Dies ist im Abschnitt **Allgemein** der **Tools**-Konsole verfügbar.
    * Oder direkt unter: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * Erstellen Sie bei Bedarf [einen Ordner für die Vorlagen](#creating-a-template-folder-admin).
 * [Erstellen Sie eine neue Vorlage](#creating-a-new-template-template-author), die anfangs leer ist.
@@ -95,11 +95,11 @@ Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
 
 ### Erstellen eines Vorlagenordners – Administrator {#creating-a-template-folder-admin}
 
-Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlagen erstellt werden. Dies ist eine Administratoraufgabe, die im Dokument beschrieben wird [Seitenvorlagen](/help/implementing/developing/components/templates.md#template-folders).
+Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlagen erstellt werden. Dies ist eine Verwaltungsaufgabe und wird in dem Dokument [Seitenvorlagen](/help/implementing/developing/components/templates.md#template-folders) beschrieben.
 
-### Erstellen einer neuen Vorlage – Vorlagenautor {#creating-a-new-template-template-author}
+### Erstellen einer neuen Vorlage – Vorlagenautorin bzw. -autor {#creating-a-new-template-template-author}
 
-1. Öffnen Sie die **Vorlagenkonsole** (durch **Tools >** **Allgemein**) und navigieren Sie dann zum gewünschten Ordner.
+1. Öffnen Sie die **Vorlagenkonsole** (über **Tools >** **Allgemein**) und navigieren Sie zum gewünschten Ordner.
 
    >[!NOTE]
    >
@@ -143,7 +143,7 @@ Eine Vorlage kann die folgenden Eigenschaften aufweisen:
 * Titel
    * Ein Titel, der zur Identifizierung der Vorlage verwendet wird, z. B. im Assistenten **Seite erstellen**.
 * Beschreibung
-   * Eine optionale Beschreibung, die weitere Informationen über die Vorlage und ihre Verwendung bereitstellt, die beispielsweise im **Seite erstellen** Assistent.
+   * Eine optionale Beschreibung mit weiteren Informationen zur Vorlage und deren Verwendung, die beispielsweise im **Seitenerstellungsassistenten** angezeigt werden können.
 
 So zeigen Sie die Eigenschaften an bzw. bearbeiten sie:
 
@@ -226,7 +226,7 @@ Da beim Rendern einer Seite auf die Vorlage verwiesen wird, muss die vollständi
 1. Wählen Sie die **Inhaltsrichtlinien**, die mit veröffentlicht werden sollen.
 1. Wählen Sie **Veröffentlichen** in der Symbolleiste, um den Vorgang abzuschließen.
 
-## Bearbeiten von Vorlagen - Vorlagenautoren {#editing-templates-template-authors}
+## Bearbeiten von Vorlagen – Vorlagenautorinnen und -autoren {#editing-templates-template-authors}
 
 Beim Erstellen oder Bearbeiten einer Vorlage können verschiedene Aspekte definiert werden. Das Bearbeiten von Vorlagen ähnelt der Seitenbearbeitung.
 
@@ -280,7 +280,7 @@ Unter [Seitenrichtlinien](#page-policies) können Sie vordefinierte Seitenrichtl
 
 Das Stilsystem ermöglicht es einem Vorlagenautor, in der Inhaltsrichtlinie für Komponenten Stilklassen festzulegen, die ein Inhaltsautor später bei der Bearbeitung der Komponente auf einer Seite auswählen kann. Diese Stile können alternative visuelle Varianten einer Komponente sein, um das Verfahren flexibler zu gestalten.
 
-Lesen Sie hierzu die [Dokumentation zum Stilsystem](/help/sites-cloud/authoring/page-editor/style-system.md) für weitere Informationen.
+Weitere Informationen finden Sie in der [Dokumentation zum Stilsystem](/help/sites-cloud/authoring/page-editor/style-system.md).
 
 ### Bearbeiten einer Vorlage – Struktur – Vorlagenautor {#editing-a-template-structure-template-author}
 
@@ -315,11 +315,11 @@ Sobald sie hinzugefügt wurde, wird jede Komponente markiert mit:
 >
 >Wenn Sie diesen ändern und Ihren eigenen Text einfügen, wird dieser aktualisierte Text verwendet, wenn eine Seite aus der Vorlage erstellt wird.
 >
->Wenn Sie den Standardtext (Struktur) nicht ändern, wird der Titel standardmäßig mit dem Namen der nachfolgenden Seite benannt.
+>Wenn Sie den Standardtext (Struktur) nicht ändern, wird als Titel standardmäßig der Name der nachfolgenden Seite verwendet.
 
 >[!NOTE]
 >
->Das Hinzufügen von Komponenten und Assets zu einer Vorlage ist zwar nicht identisch, es gibt jedoch viele Ähnlichkeiten mit ähnlichen Aktionen, wenn [Seitenbearbeitung.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+>Das Hinzufügen von Komponenten und Assets zu einer Vorlage ist zwar nicht dasselbe wie das [Erstellen von Seiten](/help/sites-cloud/authoring/page-editor/edit-content.md), es gibt aber durchaus einige Ähnlichkeiten.
 
 #### Komponenten-Aktionen {#component-actions}
 
@@ -415,7 +415,7 @@ Beispielsweise können Sie für eine Bildkomponente die Zuschneideproportionen, 
 
 >[!CAUTION]
 >
->In AEM werden die Zuschnittverhältnisse als **height/width**. Dies unterscheidet sich von der herkömmlichen Definition als Breite/Höhe und erfolgt aus Gründen der Legacy-Kompatibilität. Benutzer, die Seiten erstellen, bemerken keinen Unterschied, vorausgesetzt, dass Sie den **Namen** klar definieren, da dieser auf der Benutzeroberfläche angezeigt wird.
+>In AEM sind die Beschneidungsverhältnisse definiert als **Höhe/Breite**. Dies unterscheidet sich von der herkömmlichen Definition als Breite/Höhe und erfolgt aus Gründen der Legacy-Kompatibilität. Benutzer, die Seiten erstellen, bemerken keinen Unterschied, vorausgesetzt, dass Sie den **Namen** klar definieren, da dieser auf der Benutzeroberfläche angezeigt wird.
 
 >[!NOTE]
 >
@@ -459,7 +459,7 @@ Auf der Registerkarte **Zugelassene Komponenten** legen Sie fest, welche Kompone
 
 ###### Standardkomponenten {#default-components}
 
-Auf der Registerkarte **Standardkomponenten** legen Sie fest, welche Komponenten automatisch mit bestimmten Medientypen verknüpft werden, damit AEM beim Ziehen eines Assets aus dem Asset-Browser weiß, mit welcher Komponente es verknüpft werden soll. Für diese Konfiguration sind nur Komponenten mit Ablageflächen verfügbar.
+Auf der Registerkarte **Standardkomponenten** legen Sie fest, welche Komponenten automatisch mit bestimmten Medientypen verknüpft werden, damit AEM beim Ziehen eines Assets aus dem Asset-Browser weiß, mit welcher Komponente es verknüpft werden soll. Nur Komponenten mit Ablagebereichen sind für eine solche Konfiguration verfügbar.
 
 Wählen Sie **Zuordnung hinzufügen** aus, um eine völlig neue Komponente und MIME-Typzuordnung hinzuzufügen.
 
