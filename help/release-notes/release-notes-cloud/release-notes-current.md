@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 47e85190c2aacfb4429408ce159fecb9b0646569
 workflow-type: tm+mt
 source-wordcount: '1020'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 >
 >Von hier aus können Sie zu den Versionshinweisen früherer Versionen wie 2021 oder 2022 navigieren.
 >
->Sehen Sie sich die [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) an, um mehr über die bevorstehenden Funktionsaktivierungen für [!DNL Experience Manager] as a Cloud Service zu erfahren.
+>Sehen Sie sich die [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) an, um mehr über die bevorstehenden Funktionsaktivierungen für [!DNL Experience Manager] as a Cloud Service zu erfahren.
 
 >[!NOTE]
 >
->Weitere Informationen zu Aktualisierungen der Dokumentation, die nicht direkt mit einer Version zusammenhängen, finden Sie unter [Aktuelle Aktualisierungen der Dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates).
+>Weitere Informationen zu Aktualisierungen der Dokumentation, die nicht direkt mit einer Version zusammenhängen, finden Sie unter [Aktuelle Aktualisierungen der Dokumentation](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates).
 
 ## Veröffentlichungsdatum {#release-date}
 
@@ -109,14 +109,14 @@ Dynatrace-Kundinnen und -Kunden können ihre AEM-Nutzung überwachen. [Lesen Sie
 
 [Schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) unterstützen jetzt Frontend-Code basierend auf [Site-Designs](/help/sites-cloud/administering/site-creation/site-themes.md) und [Site-Vorlagen](/help/sites-cloud/administering/site-creation/site-templates.md) für Early Adopters. Bei RDEs erfolgt dies über eine Befehlszeilenanweisung und nicht über eine [Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Bitte wenden Sie sich an **aemcs-rde-support@adobe.com**, um dies auszuprobieren und Feedback zu hinterlassen.
 
-### CDN-Konfiguration Frühkindlicher Anwender {#cdn-config-early-adopter}
+### Early-Adopter-Programm für die CDN-Konfiguration {#cdn-config-early-adopter}
 
-Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md), das die optional lizenzierbaren Web Application Firewall (WAF)-Regeln enthält, gibt es eine Möglichkeit, die Configuration Pipeline zum Deklarieren und Bereitstellen zu verwenden [andere Typen von CDN-Konfigurationen](/help/implementing/dispatcher/cdn-configuring-traffic.md). Treten Sie dem frühen Adopter-Programm per E-Mail bei. **aemcs-cdn-config-adopter@adobe.com** Zugriff auf:
+Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md), welche die optional lizenzierbaren WAF-Regeln (Web Application Firewall) enthalten, gibt es eine Möglichkeit, die Konfigurations-Pipeline zum Deklarieren und Bereitstellen [anderer Typen von CDN-Konfigurationen](/help/implementing/dispatcher/cdn-configuring-traffic.md) zu verwenden. Wenn Sie am Early-Adopter-Programm teilnehmen möchten, senden Sie eine E-Mail an **aemcs-cdn-config-adopter@adobe.com**, um Zugriff auf Folgendes zu erhalten:
 * 301/302 Client-seitige Umleitungen
-* Proxying-Anfragen am Edge zu beliebigen Ursprüngen
+* Weiterleitungs-Anfragen am Edge zu beliebigen Ursprüngen
 * URL-Transformationen
-* Anforderungs- oder Antwortheader festlegen oder ändern
-* benutzerdefinierte Fehlerseiten, wenn das CDN nicht AEM erreichen kann
+* Festlegen oder Ändern von Anfragen- oder Antwortkopfzeilen
+* benutzerdefinierte Fehlerseiten, wenn das CDN AEM nicht erreichen kann
 
 ## Cloud Manager {#cloud-manager}
 
