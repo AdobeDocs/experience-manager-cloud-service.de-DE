@@ -3,9 +3,9 @@ title: Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 01b55f2ff06d3886724dbb2c25d0c109a5ab6aec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5142'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Bei der Konfiguration erweiterter Netzwerkfunktionen gelten die folgenden Einsch
 Die Verwendung erweiterter Netzwerkfunktionen erfordert zwei Schritte:
 
 1. Die Konfiguration der erweiterten Netzwerkoption, ob [flexibler Port-Ausgang,](#flexible-port-egress) [dedizierte Ausgangs-IP-Adresse](#dedicated-egress-ip-address) oder [VPN](#vpn), muss zunächst auf der Programmebene erfolgen.
-1. Um verwendet werden zu können, muss die erweiterte Netzwerkoption [auf Umgebungsebene aktiviert.](#enabling)
+1. Damit sie verwendet werden kann, muss die erweiterte Netzwerkoption [auf Umgebungsebene aktiviert sein](#enabling).
 
 Beide Schritte können entweder über die Cloud Manager-Benutzeroberfläche oder die Cloud Manager-API durchgeführt werden.
 
@@ -212,7 +212,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ## Dedizierte Ausgangs-IP-Adresse {#dedicated-egress-ip-address}
 
-Eine dedizierte IP-Adresse kann die Sicherheit bei der Integration mit SaaS-Anbietern (wie z. B. einem CRM-Anbieter) oder anderen Integrationen außerhalb von AEM as a Cloud Service erhöhen, die eine Zulassungsliste von IP-Adressen anbieten. Durch Hinzufügen der dedizierten IP-Adresse zur Zulassungsliste wird sichergestellt, dass nur Traffic von Ihrer AEM Cloud Service in den externen Dienst fließen darf. Dies geschieht zusätzlich zum Traffic von allen anderen zulässigen IPs.
+Eine dedizierte IP-Adresse kann die Sicherheit bei der Integration mit SaaS-Anbietern (wie z. B. einem CRM-Anbieter) oder anderen Integrationen außerhalb von AEM as a Cloud Service erhöhen, die eine Zulassungsliste von IP-Adressen anbieten. Durch Hinzufügen der dedizierten IP-Adresse zur Zulassungsliste wird sichergestellt, dass nur Traffic von Ihrem AEM-Cloud-Service in den externen Service fließen darf. Dies geschieht zusätzlich zum Traffic von allen anderen zulässigen IPs.
 
 Dieselbe dedizierte IP wird auf alle Programme in Ihrer Adobe-Organisation und auf alle Umgebungen in jedem Ihrer Programme angewendet. Sie gilt sowohl für den Author- als auch für den Publish-Service.
 
@@ -425,7 +425,7 @@ Die meisten VPN-Geräte mit IPSec-Technologie werden unterstützt. Lesen Sie die
 1. Wählen Sie im gestarteten Assistenten **Netzwerkinfrastruktur hinzufügen** die Option **Privates virtuelles Netzwerk** aus und geben Sie die erforderlichen Informationen ein, bevor Sie auf **Fortsetzen** tippen oder klicken.
 
    * **Region**: Dies ist die Region, in der Infrastruktur erstellt werden sollte.
-   * **Adresse** - Der Adressraum darf nur ein /26 CIDR (64 IP-Adressen) oder ein größerer IP-Bereich in Ihrem eigenen Bereich sein.
+   * **Adressraum**: Der Adressraum darf nur ein /26 CIDR- (64 IP-Adressen) oder ein größerer IP-Bereich in Ihrem eigenen Bereich sein.
       * Dieser Wert kann später nicht mehr geändert werden.
    * **DNS-Informationen**: Dies ist eine Liste der Remote-DNS-Resolver.
       * Drücken Sie nach dem Eingeben einer DNS-Server-Adresse auf `Enter`, um eine weitere einzugeben.
@@ -462,7 +462,7 @@ Unter der Überschrift **Netzwerkinfrastruktur** im seitlichen Bedienfeld ersc
 
 ### API-Konfiguration {#configuring-vpn-api}
 
-Die POST `/program/<programId>/networkInfrastructures` Endpunkt wird aufgerufen und eine Payload mit Konfigurationsinformationen übergeben, einschließlich: des Werts von **vpn** für die `kind` Parameter, Region, Adressraum (Liste der CIDRs - dies kann später nicht geändert werden), DNS-Resolver (zur Namensauflösung in Ihrem Netzwerk) und VPN-Verbindungsinformationen wie Gateway-Konfiguration, freigegebener VPN-Schlüssel und IP-Sicherheitsrichtlinie. Der Endpunkt antwortet mit der `network_id` sowie anderen Informationen, einschließlich des Status. 
+Einmal pro Programm wird der POST-Endpunkt `/program/<programId>/networkInfrastructures` aufgerufen, wobei eine Payload mit Konfigurationsinformationen übergeben wird, darunter: der Wert von **vpn** für den Parameter `kind`, Region, Adressraum (Liste der CIDRs – beachten Sie, dass dies später nicht geändert werden kann), DNS-Resolver (für die Auflösung von Namen im Kundennetz) und VPN-Verbindungsinformationen wie Gateway-Konfiguration, freigegebener VPN-Schlüssel und die IP-Sicherheitsrichtlinie. Der Endpunkt antwortet mit der `network_id` sowie anderen Informationen, einschließlich des Status. 
 
 Nach dem Aufruf dauert es in der Regel zwischen 45 und 60 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Die GET-Methode der API kann aufgerufen werden, um den aktuellen Status zurückzugeben, der schließlich von `creating` zu `ready` wechselt. In der API-Dokumentation finden Sie alle Status.
 
@@ -582,12 +582,12 @@ Das folgende Diagramm zeigt eine visuelle Darstellung einer Reihe von Domains un
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>Nicht zutreffend</td>
-    <td>Die IP des VPN-Gateways auf der Seite von AEM. Ihr Netzwerk-Engineering-Team kann dies verwenden, um nur VPN-Verbindungen zu Ihrem VPN-Gateway von einer bestimmten IP-Adresse aus zuzulassen. </td>
+    <td>Die IP des VPN-Gateways auf der Seite von AEM. Ihr Netzwerk-Engineering-Team kann dies verwenden, um zu Ihrem VPN-Gateway von einer bestimmten IP-Adresse aus nur VPN-Verbindungen zuzulassen. </td>
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
-    <td>Die IP des Traffics von der AEM Seite des VPN zu Ihrer Seite. Dies kann in Ihrer Konfiguration auf die Zulassungsliste gesetzt werden, um sicherzustellen, dass Verbindungen nur aus AEM hergestellt werden können.</td>
-    <td>Wenn Sie VPN-Zugriff auf AEM zulassen möchten, sollten Sie CNAME-DNS-Einträge konfigurieren, um Ihre benutzerdefinierte Domäne und/oder <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> und/oder <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> zu diesem Zweck.</td>
+    <td>Die IP des Traffics kommt dabei von der AEM-Seite des VPN zu Ihrer Seite. Dies kann in Ihrer Konfiguration auf die Zulassungsliste gesetzt werden, um sicherzustellen, dass Verbindungen nur von AEM aus hergestellt werden können.</td>
+    <td>Wenn Sie VPN-Zugriff auf AEM zulassen möchten, sollten Sie CNAME-DNS-Einträge konfigurieren, um <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> und/oder <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> diesen zuzuordnen.</td>
   </tr>
 </tbody>
 </table>
@@ -614,9 +614,9 @@ Wenn Sie eine erweiterte Netzwerkoption für ein Programm wie [Flexibler Port-Au
 Wenn Sie eine erweiterte Netzwerkkonfiguration für eine Umgebung aktivieren, können Sie die optionale Port-Weiterleitung und Nicht-Proxy-Hosts aktivieren. Parameter können je nach Umgebung konfiguriert werden, um Flexibilität zu bieten.
 
 * **Port-Weiterleitung**: Für alle Ziel-Ports außer 80/443 sollten Port-Weiterleitungsregeln deklariert werden. Allerdings nur, wenn nicht das HTTP- oder HTTPS-Protokoll verwendet wird.
-   * Regeln für die Portweiterleitung werden definiert, indem der Satz von Ziel-Hosts (Namen oder IP und Ports) angegeben wird.
+   * Port-Weiterleitungsregeln werden definiert, indem Ziel-Hosts (Namen oder IP sowie Ports) angegeben werden.
    * Die Client-Verbindung, die den Port 80/443 über HTTP/HTTPS verwendet, muss in ihrer Verbindung weiterhin Proxy-Einstellungen verwenden, damit die erweiterten Netzwerkeigenschaften auf die Verbindung angewendet werden. 
-   * Für jeden Zielhost müssen Sie den vorgesehenen Zielport einem Port von 30000 bis 30999 zuordnen.
+   * Für jeden Ziel-Host müssen Sie den vorgesehenen Ziel-Port einem Port von 30000 bis 30999 zuordnen.
    * Port-Weiterleitungsregeln sind für alle erweiterten Netzwerktypen verfügbar.
 
 * **Nicht-Proxy-Hosts**: Nicht-Proxy-Hosts ermöglichen es Ihnen, eine Gruppe von Hosts zu deklarieren, bei denen die Weiterleitung über einen gemeinsamen IP-Adressbereich und nicht über die dedizierte IP erfolgen soll.
@@ -648,7 +648,7 @@ Wenn Sie eine erweiterte Netzwerkkonfiguration für eine Umgebung aktivieren, k�
 
    ![Hinzufügen von Nicht-Proxy-Hosts](assets/advanced-networking-ui-enable-non-proxy-hosts.png)
 
-1. Im **Hafen vorwärts** -Registerkarte können Sie optional Regeln für die Anschlussweiterleitung für beliebige Zielports definieren, die nicht 80/443 sind, wenn HTTP oder HTTPS nicht verwendet wird. Geben Sie einen **Namen**, den **Port-Ursprung** und ein **Port-Ziel** an und tippen oder klicken Sie auf **Hinzufügen**.
+1. Auf der Registerkarte **Port-Weiterleitungen** können Sie optional Port-Weiterleitungsregeln für alle Ziel-Ports außer 80/443 definieren, sofern Sie nicht HTTP oder HTTPS verwenden. Geben Sie einen **Namen**, den **Port-Ursprung** und ein **Port-Ziel** an und tippen oder klicken Sie auf **Hinzufügen**.
 
    * Die Regel wird der Regelliste auf der Registerkarte hinzugefügt.
    * Wiederholen Sie diesen Schritt, um weitere Regeln hinzuzufügen.
