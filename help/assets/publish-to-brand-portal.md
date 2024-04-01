@@ -1,14 +1,14 @@
 ---
 title: Veröffentlichen von Assets, Ordnern und Sammlungen in Brand Portal
 description: Veröffentlichen von Assets, Ordnern und Sammlungen in Brand Portal.
-contentOwner: Vishabh Gupta
+contentOwner: Adobe
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 7f806c457f7bef1c5309bbc6f69d3989af1b06d3
-workflow-type: ht
-source-wordcount: '1301'
-ht-degree: 100%
+source-git-commit: 56a1c18f4ad700305d3b32f1b24d87ec6321325f
+workflow-type: tm+mt
+source-wordcount: '1280'
+ht-degree: 96%
 
 ---
 
@@ -75,7 +75,9 @@ So planen Sie die Veröffentlichung der Assets in Brand Portal zu einem spätere
 
    Wählen Sie **[!UICONTROL Später]** unter **[!UICONTROL Planung]** aus.
 
-   ![publishlaterbp-1](assets/publishlaterbp-1.png)
+   <!--![publishlaterbp-1](assets/publishlaterbp-1.png)-->
+
+   ![Später veröffentlichen](assets/publish-later.png)
 
 1. Wählen Sie ein **[!UICONTROL Aktivierungsdatum]** aus und geben Sie die Zeit an. Klicken Sie auf **[!UICONTROL Weiter]**.
 
@@ -83,22 +85,20 @@ So planen Sie die Veröffentlichung der Assets in Brand Portal zu einem spätere
 
 1. Geben Sie einen **[!UICONTROL Workflow-Titel]** in **[!UICONTROL Workflows]** an. Klicken Sie auf **[!UICONTROL Später veröffentlichen]**.
 
-   ![publishworkflow](assets/publishworkflow.png)
+   <!--![publishworkflow](assets/publishworkflow.png)-->
 
-Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um die veröffentlichten Assets zu sehen (je nach Ihrem geplanten Zeitpunkt).
-
-![bp_landingpage](assets/bp_landingpage.png)
+   ![Veröffentlichungs-Workflow](assets/publish-workflow.png)
 
 >[!NOTE]
 >
 > * Die vorhandenen Benutzenden, die Teil der DAM-Benutzergruppe sind, haben Lesezugriff auf den Pfad „/conf/global/settings/cloudconfigs/mediaportal“
->* Die neuen Benutzenden (oder Benutzenden ohne Administratorrechte) benötigen die folgenden Berechtigungen für Veröffentlichungen auf dem Brand Portal.
+> * Die neuen Benutzenden (oder Benutzenden ohne Administratorrechte) benötigen die folgenden Berechtigungen für Veröffentlichungen auf dem Brand Portal.
 > Pfade:
-> &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; : jcr:read
->/libs : jcr:read
->/conf : jcr:read
->/content : jcr:read, crx:replicate
->/content/dam/ : jcr:read,modify, crx:replicate
+> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>`/libs : jcr:read`
+>`/conf : jcr:read`
+>`/content : jcr:read, crx:replicate`
+>`/content/dam/ : jcr:read,modify, crx:replicate`
 
 ## Veröffentlichen von Ordnern in Brand Portal {#publish-folders-to-brand-portal}
 
@@ -131,8 +131,7 @@ Sie können Asset-Ordner sofort veröffentlichen oder deren Veröffentlichung au
    Eine Meldung erscheint, die besagt, dass der Ordner zur Veröffentlichung in Brand Portal in die Warteschlange gestellt wurde. Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um die veröffentlichten Ordner zu sehen.
 
 1. **Ordner später veröffentlichen**
-
-   Wenn Sie die Asset-Ordner zu einem späteren Zeitpunkt veröffentlichen möchten:
+So planen Sie die Veröffentlichung der Asset-Ordner zu einem späteren Zeitpunkt:
 
    1. Wählen Sie die Ordner aus, die Sie für die Veröffentlichung planen möchten, und wählen Sie oben in der Symbolleiste **[!UICONTROL Veröffentlichung verwalten]** aus.
    1. Wählen Sie unter **[!UICONTROL Aktion]** die Option **[!UICONTROL In Brand Portal veröffentlichen]** aus.
@@ -141,13 +140,29 @@ Sie können Asset-Ordner sofort veröffentlichen oder deren Veröffentlichung au
 
    1. Wählen Sie ein **[!UICONTROL Aktivierungsdatum]** aus und geben Sie die Zeit an. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-      ![publishlaterbp](assets/publishlaterbp.png)
+      <!--![publishlaterbp](assets/publishlaterbp.png)-->
+
+   ![Ordner später veröffentlichen](assets/publish-later-folder.png)
 
    1. Bestätigen Sie Ihre Auswahl unter **[!UICONTROL Umfang]**. Klicken Sie auf **[!UICONTROL Weiter]**.
 
    1. Geben Sie einen Workflow-Titel unter **[!UICONTROL Workflows]** an. Klicken Sie auf **[!UICONTROL Später veröffentlichen]**.
 
-      ![manageschedulepub](assets/manageschedulepub.png)
+      <!--![manageschedulepub](assets/manageschedulepub.png)-->
+
+   ![Veröffentlichungs-Workflow](assets/publish-workflow.png)
+
+### Veröffentlichte Datei oder Ordner in Brand Portal anzeigen {#view-published-file-folder}
+
+1. Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um die veröffentlichten Assets zu sehen (je nach Ihrem geplanten Zeitpunkt).
+
+   ![bp_landingpage](assets/bp_landingpage.png)
+
+1. Zur Listenansicht wechseln ![Listenansicht](assets/list-view.svg) um den aktuellen Veröffentlichungsstatus des Assets anzuzeigen.
+
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+
+![generierter Berichtsstatus](assets/report-status.JPG)
 
 ### Veröffentlichung von Ordnern in Brand Portal rückgängig machen {#unpublish-folders-from-brand-portal}
 
