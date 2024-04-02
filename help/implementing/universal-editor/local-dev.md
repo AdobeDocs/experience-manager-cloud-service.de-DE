@@ -2,8 +2,8 @@
 title: Lokale AEM-Entwicklung mit dem universellen Editor
 description: Erfahren Sie, wie der universelle Editor die Bearbeitung lokaler AEM-Instanzen zu Entwicklungszwecken unterstützt.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
-workflow-type: ht
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 100%
 
@@ -13,8 +13,6 @@ ht-degree: 100%
 # Lokale AEM-Entwicklung mit dem universellen Editor {#local-dev-ue}
 
 Erfahren Sie, wie der universelle Editor die Bearbeitung lokaler AEM-Instanzen zu Entwicklungszwecken unterstützt.
-
-{{universal-editor-status}}
 
 ## Überblick {#overview}
 

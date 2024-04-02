@@ -2,9 +2,9 @@
 title: Einführung in den universellen Editor
 description: Erfahren Sie, wie der universelle Editor die WYSIWYG-Bearbeitung (What you see is what you get) von beliebigen Headless- und Headful-Erlebnissen ermöglicht. Erfahren Sie, wie er Autorinnen und Autoren dabei helfen kann, außergewöhnliche Inhalte zu erstellen sowie die Geschwindigkeit ihrer Inhalte zu erhöhen, und inwiefern er Entwickelnden ein modernes Erlebnis bietet.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
-workflow-type: ht
-source-wordcount: '925'
+source-git-commit: b6548d39ce02006d91f1953c878e08a1c0903563
+workflow-type: tm+mt
+source-wordcount: '868'
 ht-degree: 100%
 
 ---
@@ -13,8 +13,6 @@ ht-degree: 100%
 # Einführung in den universellen Editor {#introduction}
 
 Erfahren Sie, wie der universelle Editor die WYSIWYG-Bearbeitung (What you see is what you get) von beliebigen Headless- und Headful-Erlebnissen ermöglicht. Erfahren Sie, wie er Autorinnen und Autoren dabei helfen kann, außergewöhnliche Inhalte zu erstellen sowie die Geschwindigkeit ihrer Inhalte zu erhöhen, und inwiefern er Entwickelnden ein modernes Erlebnis bietet.
-
-{{universal-editor-status}}
 
 ## Hintergrund {#background}
 
@@ -79,12 +77,6 @@ Eine Marketing-Fachkraft möchte Inhalte erstellen, ohne sich um das Layout küm
 Eine Marketing-Fachkraft möchte Inhalte erstellen, die auf das Layout eines bestimmten Kontexts zugeschnitten sind, um ein außergewöhnliches Erlebnis zu bieten.
 
 * Die zugrunde liegende Aufgabe besteht darin, eine überzeugende Verbindung mit den Leserinnen und Lesern herzustellen.
-
-## Entwicklungsplan {#road-map}
-
-Es ist wichtig zu beachten, dass der universelle Editor noch in Bearbeitung ist und dass einige der in diesem Dokument beschriebenen Funktionen eine Vision des endgültigen Editors darstellen, aber nicht notwendigerweise für seine aktuellen Funktionen repräsentativ sind.
-
-Wenden Sie sich an Ihre Ansprechperson bei Adobe, um mehr über die für den universellen Editor geplanten Funktionen zu erfahren.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

@@ -2,8 +2,8 @@
 title: Inhaltserstellung mit dem universellen Editor
 description: Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 799ca20f8787afffd783c93a2480e096fffb1566
-workflow-type: ht
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+workflow-type: tm+mt
 source-wordcount: '2313'
 ht-degree: 100%
 
@@ -13,8 +13,6 @@ ht-degree: 100%
 # Inhaltserstellung mit dem universellen Editor {#authoring}
 
 Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
-
-{{universal-editor-status}}
 
 ## Einführung {#introduction}
 
