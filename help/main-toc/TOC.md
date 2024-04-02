@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 96ec736b5774fc48d006264b316e390bf022c0e9
+source-git-commit: f3192858ea6fcf87788fafe07aa8870211dbb637
 workflow-type: tm+mt
-source-wordcount: '4828'
+source-wordcount: '4832'
 ht-degree: 98%
 
 ---
@@ -928,6 +928,8 @@ ht-degree: 98%
          + [Grundlagen zum Authoring für Headless mit AEM](/help/journey-headless/author/basics.md)
          + [Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten](/help/journey-headless/author/references.md)
          + [Erfahren Sie mehr über die Definition von Metadaten und Tagging für Inhaltsfragmente](/help/journey-headless/author/metadata-tagging.md)
++ Generative KI {#generative-ai}
+   + [Generieren von Varianten](/help/generative-ai/generate-variations.md)
 + Implementieren {#implementing}
    + [Implementieren von Programmen für AEM as a Cloud Service](/help/implementing/home.md)
    + Verwenden von Cloud Manager {#using-cloud-manager}
