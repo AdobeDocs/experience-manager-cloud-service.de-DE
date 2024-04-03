@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: de05abac3620b254343196a283cef198f434cfca
 workflow-type: tm+mt
 source-wordcount: '2752'
-ht-degree: 87%
+ht-degree: 92%
 
 ---
 
@@ -157,9 +157,9 @@ Wenn „AEM-Versionsaktualisierungen“ aktiv ist (d. h. Aktualisierungen werden
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
->title="Verletzung von Eindeutigkeitsbegrenzungen"
->abstract="Eine häufige Ursache für einen Fehler bei der Nicht-Löschaufnahme ist ein Konflikt in Knoten-IDs. Es kann nur einer der in Konflikt stehenden Knoten vorhanden sein."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Auffüllaufnahme"
+>title="Verletzung der Eindeutigkeitsbeschränkung"
+>abstract="Eine häufige Ursache für einen Fehler bei einer Aufnahme ohne Löschung ist ein Konflikt bei Knoten-IDs. Es kann nur einer der in Konflikt stehenden Knoten vorhanden sein."
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Auffüllaufnahme"
 
 Eine häufige Ursache für einen [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)-Fehler ist ein Konflikt bei Knoten-IDs. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
 
@@ -178,8 +178,8 @@ Dieser Konflikt muss manuell behoben werden. Dabei muss eine Person, die mit dem
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="Referenzierter Knoten kann nicht gelöscht werden"
->abstract="Eine häufige Ursache für einen Fehler bei der Nicht-Löschung ist ein Versionskonflikt für einen bestimmten Knoten in der Zielinstanz. Die Versionen des Knotens müssen behoben werden."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Auffüllaufnahme"
+>abstract="Eine weitere häufige Ursache für einen Fehler bei einer Aufnahme ohne Löschung ist ein Versionskonflikt für einen bestimmten Knoten in der Zielinstanz. Die Versionen des Knotens müssen geändert werden."
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Auffüllaufnahme"
 
 Eine weitere häufige Ursache für einen Fehler bei der [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) ist ein Versionskonflikt für einen bestimmten Knoten in der Zielinstanz. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
 
@@ -196,7 +196,7 @@ Wenn eine Aufnahme mit der Einstellung **Nicht bereinigen** mit einem Migrations
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="Eigenschaft für große Knoten"
->abstract="Eine häufige Ursache für einen Erfassungsfehler ist die Überschreitung der maximalen Größe von Knoteneigenschaftswerten. Befolgen Sie die Dokumentation, einschließlich der Unterlagen zum BPA-Bericht, um Abhilfe zu schaffen."
+>abstract="Eine häufige Ursache für einen Aufnahmefehler ist die Überschreitung der maximalen Größe von Knoteneigenschaftswerten. Befolgen Sie die Dokumentation, einschließlich der Unterlagen zum BPA-Bericht, um dies zu beheben."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=de" text="Migrationsvoraussetzungen"
 
 Die in MongoDB gespeicherten Knoteneigenschaftswerte dürfen 16 MB nicht überschreiten. Wenn ein Knotenwert die unterstützte Größe überschreitet, schlägt die Aufnahme fehl und das Protokoll enthält einen `BSONObjectTooLarge`-Fehler und gibt an, welcher Knoten das Maximum überschritten hat. Dies ist eine MongoDB-Beschränkung.
@@ -208,7 +208,7 @@ In der Notiz `Node property value in MongoDB` in [Voraussetzungen für das Conte
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_rescinded"
 >title="Aufnahme rückgängig gemacht"
->abstract="Die Extraktion, auf die die Aufnahme wartete, wurde nicht erfolgreich abgeschlossen. Die Aufnahme wurde zurückgesetzt, da sie nicht ausgeführt werden konnte."
+>abstract="Die Extraktion, auf die die Aufnahme gewartet hat, wurde nicht erfolgreich abgeschlossen. Die Aufnahme wurde rückgängig gemacht, da sie nicht ausgeführt werden konnte."
 
 Bei einer Aufnahme, die mit einer laufenden Extraktion als Migrationssatz für die Quelle erstellt wurde, wird geduldig gewartet, bis diese Extraktion erfolgreich ist, und zu diesem Zeitpunkt normal gestartet. Wenn die Extraktion fehlschlägt oder gestoppt wird, werden die Aufnahme und der dazugehörige Indizierungsvorgang nicht gestartet, sondern zurückgesetzt. Überprüfen Sie in diesem Fall die Extraktion, um festzustellen, warum sie fehlgeschlagen ist, beheben Sie das Problem und beginnen Sie erneut mit dem Extrahieren. Sobald die feste Extraktion ausgeführt wird, kann eine neue Aufnahme geplant werden.
 
