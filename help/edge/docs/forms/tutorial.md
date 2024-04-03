@@ -2,25 +2,23 @@
 title: Erste Schritte mit AEM Forms Edge Delivery Services - Tutorial für Entwickler
 description: Dieses Tutorial hilft Ihnen, ein neues Adobe Experience Manager Forms-Projekt (AEM) einzurichten. In zehn bis zwanzig Minuten haben Sie Ihre eigenen Formulare erstellt.
 feature: Edge Delivery Services
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
-source-wordcount: '1850'
-ht-degree: 1%
+source-wordcount: '1848'
+ht-degree: 8%
 
 ---
 
+# Erste Schritte – Entwickler-Tutorial
 
-# Erste Schritte – Entwicklertutorial
-
-Im heutigen digitalen Zeitalter ist die Erstellung benutzerfreundlicher Formulare für jedes Unternehmen von entscheidender Bedeutung. Mit AEM Forms Edge Delivery Services (EDS) können Sie Formulare mit vertrauten Tools wie Google Docs und Microsoft Office erstellen.
+Im heutigen digitalen Zeitalter ist die Erstellung benutzerfreundlicher Formulare für jedes Unternehmen schlicht unverzichtbar. Mit AEM Forms Edge Delivery Services (EDS) können Sie Formulare mit vertrauten Tools wie Google Docs und Microsoft Office erstellen.
 
 Diese Formulare senden Daten direkt an eine Microsoft Excel- oder Google Tabellen-Datei, sodass Sie ein dynamisches Ökosystem und robuste APIs von Google Tabellen, Microsoft Excel und Microsoft SharePoint verwenden können, um gesendete Daten einfach zu verarbeiten oder einen bestehenden Geschäftsarbeitsablauf zu initiieren.
 
 AEM Forms bietet einen Block, der als Adaptiver Forms-Block bezeichnet wird und mit dem Sie mühelos Formulare erstellen können, um erfasste Daten zu erfassen und zu speichern. Sie können [ein neues AEM mit vorkonfiguriertem Adaptive Forms Block erstellen](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oder [Fügen Sie den adaptiven Forms-Block zu einem bestehenden AEM hinzu.](#add-adaptive-forms-block-to-your-existing-aem-project).
 
 Dieses Tutorial zu AEM Forms führt Sie durch das Erstellen, Anzeigen einer Vorschau und Veröffentlichen Ihres eigenen benutzerdefinierten Formulars mit einem neuen Adobe Experience Manager (AEM) Forms-Projekt.
-
-
 
 ## Voraussetzungen
 
@@ -64,7 +62,7 @@ Die AEM Forms-Vorlage für Bausteinvorlagen ermöglicht einen schnellen Einstieg
 
    Herzlichen Glückwunsch! Sie haben eine neue Website, die auf `https://<branch>--<repo>--<owner>.hlx.page/`.
 
-   * `<branch>` bezieht sich auf die Verzweigung Ihres GitHub-Repository.
+   * `<branch>` bezieht sich auf die Verzweigung Ihres GitHub-Repositorys.
    * `<repository>` bezeichnet Ihr GitHub-Repository.
    * `<owner>` bezieht sich auf den Benutzernamen Ihres GitHub-Kontos, das Ihr GitHub-Repository hostet.
 
@@ -131,8 +129,7 @@ So kopieren Sie den Beispielinhalt in Ihren eigenen Inhaltsordner und verweisen 
       https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      Weitere Informationen zum Verwalten von Dateien mit in Microsoft SharePoint finden Sie unter [Verwendung von Adobe SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
-
+      Weitere Informationen zum Verwalten von Dateien mit Microsoft SharePoint finden Sie unter [Verwendung von Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
    1. Aktualisieren bestätigen `fsatb.yaml` -Datei, sobald Sie die Referenz aktualisiert haben und alles gut aussieht. Wenn Build-Probleme auftreten, lesen Sie [Beheben von GitHub-Build-Problemen](#troubleshooting-github-build-issues).
@@ -180,7 +177,7 @@ So zeigen Sie eine Vorschau von nicht veröffentlichten Inhalten an:
    https://<branch>--<repository>--<owner>.hlx.live
    ```
 
-   * `<branch>` bezieht sich auf die Verzweigung Ihres GitHub-Repository.
+   * `<branch>` bezieht sich auf die Verzweigung Ihres GitHub-Repositorys.
    * `<repository>` bezeichnet Ihr GitHub-Repository.
    * `<owner>` bezieht sich auf den Benutzernamen Ihres GitHub-Kontos, das Ihr GitHub-Repository hostet.
 
@@ -191,7 +188,7 @@ So zeigen Sie eine Vorschau von nicht veröffentlichten Inhalten an:
 
    [https://main—wefinance—wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
 
-### Formular erstellen
+### Erstellen eines Formulars
 
 Der Beispielinhalt enthält eine &quot;Anfrage&quot;-Vorlage, die als Vorlage für das &quot;Anfrage&quot;-Formular dient. Jede Zeile des Arbeitsblatts stellt eine [Formularfeld](/help/edge/docs/forms/form-components.md#available-components)und die Spaltenüberschriften definieren die [Feldeigenschaften](/help/edge/docs/forms/form-components.md#available-components). Mit diesem Musterformular erhalten Sie einen Vorsprung beim Erstellen Ihres Formulars.
 
@@ -288,16 +285,15 @@ Das war´s! Der Adaptive Forms-Block ist jetzt Teil Ihres AEM-Projekts. Sie kön
 
 ## Beheben von GitHub-Build-Problemen
 
-Stellen Sie einen reibungslosen GitHub-Build-Prozess sicher, indem Sie potenzielle Probleme beheben:
+Stellen Sie einen reibungslosen Build-Prozess in GitHub sicher, indem Sie potenzielle Probleme beheben:
 
-* **Fehler: Modulpfad auflösen:**
-Wenn der Fehler &quot;Pfad zum Modul kann nicht aufgelöst werden &quot;&#39;../../scripts/lib-franklin.js&#39;&quot; auftritt, navigieren Sie zum [EDS-Projekt]/blocks/forms/form.js. Aktualisieren Sie die Importanweisung, indem Sie die Datei &quot;lib-franken.js&quot;durch die Datei &quot;aem.js&quot;ersetzen.
+* **Auflösen des Modulpfadfehlers:**
+Wenn der Fehler „Pfad zum Modul ‚../../scripts/lib-franklin.js‘ kann nicht aufgelöst werden“ auftritt, navigieren Sie zu [EDS-Projekt]/blocks/forms/form.js. Aktualisieren Sie die Importanweisung, indem Sie die Datei „lib-franklin.js“ durch die Datei „aem.js“ ersetzen.
 
-* **Linking-Fehler beheben:**
-Sollten Sie auf Linkingfehler stoßen, können Sie diese umgehen. Öffnen Sie die [EDS-Projekt]/package.json und ändern Sie das Skript &quot;lint&quot;von `"lint": "npm run lint:js && npm run lint:css"` nach `"lint": "echo 'skipping linting for now'"`. Speichern Sie die Datei und übertragen Sie die Änderungen auf Ihr GitHub-Projekt.
+* **Beheben von Linting-Fehlern:**
+Sollten Sie auf Linting-Fehler stoßen, können Sie diese umgehen. Öffnen Sie die [EDS-Projekt]/package.json und ändern Sie das Skript &quot;lint&quot;von `"lint": "npm run lint:js && npm run lint:css"` nach `"lint": "echo 'skipping linting for now'"`. Speichern Sie die Datei und übertragen Sie die Änderungen auf Ihr GitHub-Projekt.
 
 
 ## Siehe auch
 
 {{see-more-forms-eds}}
-

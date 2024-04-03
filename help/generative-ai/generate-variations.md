@@ -1,13 +1,13 @@
 ---
 title: Generieren von Varianten
 description: Erfahren Sie mehr über das Generieren von Varianten, auf die über die Sidekick von Edge Delivery Services zugegriffen werden kann.
-source-git-commit: 88d0b0a6dc2dacdf907ab46c804087772ab2e030
+exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
 source-wordcount: '3338'
 ht-degree: 1%
 
 ---
-
 
 # Generieren von Varianten {#generate-variations}
 
@@ -343,7 +343,7 @@ Auswählen einer **Adobe Target** -Zielgruppe in der Eingabeaufforderung ermögl
 
    >[!NOTE]
    >
-   >So verwenden Sie **Adobe Target** Zielgruppe das Beschreibungsfeld ausfüllen. Wenn nicht, wird die Zielgruppe in der Dropdown-Liste als nicht verfügbar angezeigt. Um eine Beschreibung hinzuzufügen, gehen Sie zu Target und [Zielgruppenbeschreibung hinzufügen](https://experienceleague.adobe.com/docs/target-learn/tutorials/audiences/create-audiences).
+   >So verwenden Sie **Adobe Target** Zielgruppe das Beschreibungsfeld ausfüllen. Wenn nicht, wird die Zielgruppe in der Dropdown-Liste als nicht verfügbar angezeigt. Um eine Beschreibung hinzuzufügen, gehen Sie zu Target und [Zielgruppenbeschreibung hinzufügen](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences).
 
    ![Generieren von Varianten - Zielgruppenquelle - Adobe Target](assets/generate-variations-audiences-adobe-target.png)
 

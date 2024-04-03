@@ -3,7 +3,7 @@ title: Erste Schritte mit dem AEM Forms Edge Delivery Service. Erstellen Sie ein
 description: Perfekte Formulare im Handumdrehen! ⚡ Dokumentenbasierte Inhaltserstellung mit AEM Forms Edge Delivery = Atemberaubende Geschwindigkeit und SEO-freundliche Formulare für glücklichere Benutzende und Suchmaschinen.
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 62%
@@ -27,7 +27,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Schritte ausgefü
 
 * Richten Sie eine [AEM von Projekten mithilfe der AEM Forms-Vorlage](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oder [Adaptiver Forms-Block zu Ihrem bestehenden AEM hinzugefügt.](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) und klonen Sie das entsprechende GitHub-Repository auf Ihrem lokalen Computer.
 In diesem Dokument wird der lokale Ordner Ihres Edge Delivery Services-Projekts (EDS) als `[EDS Project repository]`.
-* Stellen Sie sicher, dass Sie Zugriff auf Google Tabellen oder Microsoft SharePoint haben. Informationen zum Einrichten von Microsoft SharePoint als Inhaltsquelle finden Sie unter [Verwendung von SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
+* Stellen Sie sicher, dass Sie Zugriff auf Google Tabellen oder Microsoft SharePoint haben. Informationen zum Einrichten von Microsoft SharePoint als Inhaltsquelle finden Sie unter [Verwendung von SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
 
@@ -80,7 +80,7 @@ So setzen Sie die Formularerstellung fort:
 
    ![Beispielinhalt auf dem Google-Laufwerk](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. Stellen Sie sicher, dass das Blatt für die entsprechenden AEM-Benutzenden (z. B. `helix@adobe.com`) [gemäß den für Ihr Projekt angegebenen Konfigurationen freigegeben ist](https://www.aem.live/docs/setup-customer-SharePoint). Gewähren Sie für das Blatt die Berechtigung zum Bearbeiten durch Benutzende.
+1. Stellen Sie sicher, dass das Blatt für die entsprechenden AEM-Benutzenden (z. B. `helix@adobe.com`) [gemäß den für Ihr Projekt angegebenen Konfigurationen freigegeben ist](https://www.aem.live/docs/setup-customer-sharepoint). Gewähren Sie für das Blatt die Berechtigung zum Bearbeiten durch Benutzende.
 
 1. Öffnen Sie die erstellte Tabelle und benennen Sie das Standardblatt in „shared-default“ um.
 
