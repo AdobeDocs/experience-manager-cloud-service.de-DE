@@ -3,10 +3,10 @@ title: Persistente GraphQL-Abfragen
 description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service persistieren, um die Leistung zu optimieren. Persistente Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Client-Programme verbessert wird.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: ef6138af1735dc7aecbc4210a3fe9983d73348dd
-workflow-type: ht
-source-wordcount: '1656'
-ht-degree: 100%
+source-git-commit: 2fa76dbe93bcf31901ec0422470b05dadfe4f43f
+workflow-type: tm+mt
+source-wordcount: '1870'
+ht-degree: 88%
 
 ---
 
@@ -258,6 +258,28 @@ Aus dieser Abfrage kann unter einem Pfad `wknd/adventures-by-activity` eine pers
 ```
 
 Die UTF-8-Kodierung `%3B` ist für `;`, und `%3D` ist die Kodierung für `=`. Die Abfragevariablen und alle Sonderzeichen müssen [ordnungsgemäß codiert sein](#encoding-query-url), damit die persistente Abfrage ausgeführt wird.
+
+### Verwenden von Abfragevariablen - Best Practices {#query-variables-best-practices}
+
+Bei der Verwendung von Variablen in Abfragen sollten einige Best Practices befolgt werden:
+
+* Kodierung Als allgemeine Vorgehensweise wird immer empfohlen, alle Sonderzeichen zu kodieren, z. B. `;`, `=`, `?`, `&`, unter anderem.
+* Semikolon Persistente Abfragen, die mehrere Variablen verwenden (die durch Semikolons getrennt sind), müssen Folgendes aufweisen:
+   * die kodierten Semikolons (`%3B`); und durch die Kodierung der URL wird dies ebenfalls erreicht;
+   * oder ein Semikolon am Ende der Abfrage hinzugefügt wird
+* `CACHE_GRAPHQL_PERSISTED_QUERIES`
+Wann `CACHE_GRAPHQL_PERSISTED_QUERIES` für den Dispatcher aktiviert ist, dann werden Parameter aktiviert, die `/` oder `\` -Zeichen in ihrem -Wert doppelt kodiert werden.
+So vermeiden Sie diese Situation:
+   * Aktivieren `DispatcherNoCanonURL` auf dem Dispatcher.
+Dadurch wird der Dispatcher angewiesen, die ursprüngliche URL an AEM weiterzuleiten, sodass doppelte Kodierungen vermieden werden.
+Diese Einstellung funktioniert derzeit nur für `vhost` -Ebene. Wenn Sie also bereits über Dispatcher-Konfigurationen zum Umschreiben von URLs verfügen (z. B. bei Verwendung gekürzter URLs), benötigen Sie möglicherweise eine separate `vhost` für persistente Abfrage-URLs.
+   * Senden `/` oder `\` nicht kodierte Zeichen.
+Stellen Sie beim Aufrufen der gespeicherten Abfrage-URL sicher, dass alle `/` oder `\` -Zeichen bleiben im Wert persistenter Abfragevariablen nicht kodiert.
+     >[!NOTE]
+     >
+     >Diese Option wird nur empfohlen, wenn die Variable `DispatcherNoCanonURL` -Lösung kann aus irgendeinem Grund nicht implementiert werden.
+* `CACHE_GRAPHQL_PERSISTED_QUERIES`
+Wann `CACHE_GRAPHQL_PERSISTED_QUERIES` für den Dispatcher aktiviert ist, wird die `;` -Zeichen nicht im Wert einer Variablen verwendet werden.
 
 ## Caching persistenter Abfragen {#caching-persisted-queries}
 
