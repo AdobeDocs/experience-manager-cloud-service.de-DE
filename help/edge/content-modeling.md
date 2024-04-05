@@ -2,10 +2,10 @@
 title: Inhaltsmodellierung für AEM-Authoring-Projekte mit Edge Delivery Services
 description: Erfahren Sie, wie die Inhaltsmodellierung für AEM-Authoring-Projekte mit Edge Delivery Services funktioniert und wie Sie eigene Inhalte modellieren.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
+source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
 workflow-type: tm+mt
-source-wordcount: '2095'
-ht-degree: 94%
+source-wordcount: '2072'
+ht-degree: 93%
 
 ---
 
@@ -22,8 +22,8 @@ Projekte, die AEM-Authoring mit Edge Delivery Services verwenden, erben den Gro�
 Bevor Sie mit der Modellierung von Inhalten für Ihr Projekt beginnen, lesen Sie zunächst Folgendes:
 
 * [Erste Schritte – Entwickler-Tutorial](/help/edge/developer/tutorial.md)
-* [Markup, Abschnitte, Blöcke und automatische Blockerstellung](/help/edge/developer/markup-sections-blocks.md)
-* [Blocksammlung](/help/edge/developer/block-collection.md)
+* [Markup, Abschnitte, Blöcke und automatisches Blockieren](/help/edge/developer/markup-sections-blocks.md)
+  <!--* [Block Collection](/help/edge/developer/block-collection.md)-->
 
 Es ist wichtig, diese Konzepte zu verstehen, um ein überzeugendes Inhaltsmodell zu entwickeln, das unabhängig von Inhaltsquellen funktioniert. Dieses Dokument enthält Details zu den Mechanismen, die speziell für das AEM-Authoring implementiert wurden.
 
@@ -323,7 +323,7 @@ Im folgenden Beispiel akzeptiert ein Block eine Liste verknüpfter Symbole als u
 
 Auf Grundlage der [erläuterten Mechanismen der Blockstruktur](#block-structure) ist es nun möglich, ein Inhaltsmodell zu erstellen, das die in AEM gespeicherten Inhalte der Bereitstellungsebene eins zu eins zuordnet.
 
-In der Frühphase jedes Projekts muss ein Inhaltsmodell für jeden Block sorgfältig überdacht werden. Es muss unabhängig von der Inhaltsquelle und dem Authoring-Erlebnis sein. Nur so können sie von Autorinnen und Autoren gewechselt oder kombiniert werden, bei Wiederverwendung von Blockimplementierungen und Stilen. Weitere Informationen und allgemeine Leitlinien finden Sie unter [Davids Modell (Take 2).](https://www.aem.live/docs/davidsmodel) Genauer gesagt, enthält die [Blocksammlung](/help/edge/developer/block-collection.md) einen umfangreichen Satz an Inhaltsmodellen für spezifische Anwendungsfälle gängiger Benutzeroberflächenmuster.
+In der Frühphase jedes Projekts muss ein Inhaltsmodell für jeden Block sorgfältig überdacht werden. Es muss unabhängig von der Inhaltsquelle und dem Authoring-Erlebnis sein. Nur so können sie von Autorinnen und Autoren gewechselt oder kombiniert werden, bei Wiederverwendung von Blockimplementierungen und Stilen. Weitere Informationen und allgemeine Leitlinien finden Sie unter [David&#39;s Model (nimm 2).](https://www.aem.live/docs/davidsmodel) <!--More specifically, the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.-->
 
 Beim AEM-Authoring mit Edge Delivery Services wirft dies die Frage auf, wie ein überzeugendes semantisches Inhaltsmodell bereitgestellt werden kann, wenn die Informationen mit aus mehreren Feldern bestehenden Formularen erstellt werden, anstatt semantisches Markup so wie Rich-Text kontextbezogen zu bearbeiten.
 
