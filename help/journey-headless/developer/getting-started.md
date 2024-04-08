@@ -2,10 +2,10 @@
 title: Erste Schritte mit AEM Headless as a Cloud Service
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Voraussetzungen für AEM Headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: ht
+source-git-commit: 998651bf0529d6a8aab0cd340a1c171974c405f6
+workflow-type: tm+mt
 source-wordcount: '3057'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -95,7 +95,7 @@ Um sicherzustellen, dass Sie die Headless-Konzepte verstehen, konzentriert sich 
 
 Sie sollten sich jedoch der zusätzlichen zur Verfügung stehenden Hybridmöglichkeiten bewusst sein, sobald Sie AEM Headless-Funktionen verstehen. Diese Fälle werden nachstehend zu Ihrer Information aufgeführt. Am Ende der Tour werden Sie mit diesen Konzepten näher vertraut gemacht, falls eine solche Flexibilität für Ihr Projekt erforderlich ist.
 
-### Sie verfügen bereits über eine externe Nutzung von Headless-Inhalten, wie z. B. eine Single Page Application (SPA). {#already-have-a-spa}
+### Sie verfügen bereits über einen externen Verbrauch an Headless-Inhalten, z. B. über eine Einzelseitenanwendung (SPA). {#already-have-a-spa}
 
 Nehmen wir einmal an, dass Ihre Grundanforderung mindestens darin besteht, Inhalte von AEM an einen bestehenden externen Service zu senden.
 
