@@ -2,7 +2,7 @@
 title: Übersicht über den universellen Editor für AEM-Entwicklerinnen und -entwickler
 description: Wenn Sie als AEM-Entwicklerin bzw. -entwickler daran interessiert sind, wie der universelle Editor funktioniert und wie er in Ihrem Projekt verwendet wird, bietet Ihnen dieses Dokument eine durchgängige Einführung, indem es Sie durch die Anleitung des WKND-Projekts zur Verwendung mit dem universellen Editor führt.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 100%
@@ -593,3 +593,4 @@ In den folgenden Dokumenten finden Sie weitere Informationen und Details zu den 
 * Weitere Informationen über die Struktur des universellen Editors finden Sie im Dokument [Architektur des universellen Editors](/help/implementing/universal-editor/architecture.md#service).
 * Im Dokument [Lokale AEM-Bereitstellung mit dem universellen Editor](/help/implementing/universal-editor/local-dev.md) finden Sie weitere Informationen zum Herstellen einer Verbindung mit einer selbst gehosteten Version des universellen Editors.
 * Im Dokument [Verwenden des Sling Resource Merger in Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/sling-resource-merger.md) finden Sie weitere Informationen zum Überlagern von Knoten.
+

@@ -2,7 +2,7 @@
 title: Lokale AEM-Entwicklung mit dem universellen Editor
 description: Erfahren Sie, wie der universelle Editor die Bearbeitung lokaler AEM-Instanzen zu Entwicklungszwecken unterstützt.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 100%
@@ -119,3 +119,4 @@ Mit dem [lokal ausgeführten Dienst „Universeller Editor“](#running-ue) und 
 1. Öffnen Sie in Ihrem Browser `https://localhost:8000/corslib/LATEST`.
 1. Weisen Sie Ihren Browser an, um [Ihr selbstsigniertes Zertifikat](#ue-https) zu akzeptieren.
 1. Sobald das selbstsignierte Zertifikat als vertrauenswürdig eingestuft wurde, können Sie die Seite mit Ihrem lokalen Dienst „Universeller Editor“ bearbeiten.
+

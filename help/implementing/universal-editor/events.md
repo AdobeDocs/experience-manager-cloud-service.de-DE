@@ -1,15 +1,15 @@
 ---
-title: Universelle Editor-Ereignisse
+title: Ereignisse des universellen Editors
 description: Erfahren Sie mehr über die verschiedenen Ereignisse, die der universelle Editor sendet und mit denen Sie auf Änderungen an Inhalten oder Benutzeroberfläche in Ihrer Remote-App reagieren können.
-source-git-commit: e92a0be2213e3d5793fd077bd1968852336cc98b
+exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-
-# Universelle Editor-Ereignisse {#events}
+# Ereignisse des universellen Editors {#events}
 
 Erfahren Sie mehr über die verschiedenen Ereignisse, die der universelle Editor sendet und mit denen Sie auf Änderungen an Inhalten oder Benutzeroberfläche in Ihrer Remote-App reagieren können.
 
@@ -278,4 +278,5 @@ Die Payload für dieses Ereignis ist leer.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Universal Editor-Aufrufe](/help/implementing/universal-editor/calls.md)
+* [Aufrufe im universellen Editor](/help/implementing/universal-editor/calls.md)
+

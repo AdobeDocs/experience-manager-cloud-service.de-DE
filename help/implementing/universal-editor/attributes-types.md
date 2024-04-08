@@ -2,7 +2,7 @@
 title: Attribute und Elementtypen
 description: Erfahren Sie mehr über die Datenattribute und Elementtypen, die der universelle Editor erfordert.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 100%
@@ -67,3 +67,4 @@ Weitere Informationen zum universellen Editor finden Sie in diesen Dokumenten.
 * [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) – Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.
 * [Architektur des universellen Editors](architecture.md) – Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.
 * [Authentifizierung beim universellen Editor](authentication.md) – Erfahren Sie, wie beim universellen Editor authentifiziert wird.
+

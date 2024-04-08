@@ -2,7 +2,7 @@
 title: Authentifizierung beim universellen Editor
 description: Erfahren Sie, wie der universelle Editor die Authentifizierung mit Adobe Identity Management System (IMS) durchführt.
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 100%
@@ -40,3 +40,4 @@ Weitere Informationen zum universellen Editor finden Sie in diesen Dokumenten.
 * [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) – Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.
 * [Architektur des universellen Editors](architecture.md) – Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.
 * [Attribute und Typen](attributes-types.md) – Erfahren Sie mehr über die Datenattribute und -typen, die der universelle Editor erfordert.
+
