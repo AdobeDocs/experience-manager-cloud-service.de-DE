@@ -2,10 +2,10 @@
 title: Replikation
 description: Erfahren Sie mehr über die Verteilung und Fehlerbehebung bei der Replikation in AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 9ab6ac5588b6ca5135e3635cc886ec51207e89d7
 workflow-type: tm+mt
 source-wordcount: '1312'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -196,14 +196,17 @@ Die Größe des pro Replikationsaufruf gesendeten Inhalts darf nicht größer se
 
 Um Fehler bei der Replikation zu beheben, navigieren Sie zu den Replikationswarteschlangen in der Web-Benutzeroberfläche des AEM-Authoring-Service:
 
-1. Navigieren Sie im AEM-Startmenü zu **Tools > Bereitstellung > Verteilung**.
-2. Wählen Sie die Karte **Veröffentlichen** aus.
+1. Navigieren Sie im AEM-Startmenü zu . **Tools** > **Bereitstellung** > **Verteilung**
+1. Wählen Sie die Karte **Veröffentlichen** aus.
+
    ![Status](assets/publish-status.png "Status")
-3. Überprüfen des Warteschlangenstatus, der grün sein sollte.
-4. Sie können die Verbindung zum Replikations-Service testen.
-5. Wählen Sie die Registerkarte **Protokolle** aus, auf der der Verlauf der Inhaltsveröffentlichungen angezeigt wird.
+
+1. Überprüfen des Warteschlangenstatus, der grün sein sollte.
+1. Sie können die Verbindung zum Replikations-Service testen.
+1. Wählen Sie die Registerkarte **Protokolle** aus, auf der der Verlauf der Inhaltsveröffentlichungen angezeigt wird.
 
 ![Protokolle](assets/publish-logs.png "Protokolle")
 
 Wenn der Inhalt nicht veröffentlicht werden konnte, wird die gesamte Veröffentlichung vom AEM-Veröffentlichungs-Service zurückgesetzt.
+
 In diesem Fall zeigt die bearbeitbare Haupt-Warteschlange einen roten Status an und sollte überprüft werden, um festzustellen, welche Elemente den Abbruch der Veröffentlichung verursacht haben. Wenn Sie auf diese Warteschlange klicken, werden die ausstehenden Elemente angezeigt, die einzeln oder insgesamt gelöscht werden können.
