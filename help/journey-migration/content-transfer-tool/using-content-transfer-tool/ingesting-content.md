@@ -159,7 +159,7 @@ Wenn „AEM-Versionsaktualisierungen“ aktiv ist (d. h. Aktualisierungen werden
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="Verletzung der Eindeutigkeitsbeschränkung"
 >abstract="Eine häufige Ursache für einen Fehler bei einer Aufnahme ohne Löschung ist ein Konflikt bei Knoten-IDs. Es kann nur einer der in Konflikt stehenden Knoten vorhanden sein."
->additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Auffüllaufnahme"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=de#top-up-ingestion-process" text="Auffüllaufnahme"
 
 Eine häufige Ursache für einen [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)-Fehler ist ein Konflikt bei Knoten-IDs. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
 
@@ -179,7 +179,7 @@ Dieser Konflikt muss manuell behoben werden. Dabei muss eine Person, die mit dem
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="Referenzierter Knoten kann nicht gelöscht werden"
 >abstract="Eine weitere häufige Ursache für einen Fehler bei einer Aufnahme ohne Löschung ist ein Versionskonflikt für einen bestimmten Knoten in der Zielinstanz. Die Versionen des Knotens müssen geändert werden."
->additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Auffüllaufnahme"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=de#top-up-ingestion-process" text="Auffüllaufnahme"
 
 Eine weitere häufige Ursache für einen Fehler bei der [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) ist ein Versionskonflikt für einen bestimmten Knoten in der Zielinstanz. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
 

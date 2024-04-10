@@ -3,7 +3,7 @@ title: Richtlinien und Best Practices für die Verwendung des Content Transfer T
 description: Lernen Sie die Richtlinien und Best Practices für die Verwendung des Content Transfer Tools kennen.
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 100%
 
