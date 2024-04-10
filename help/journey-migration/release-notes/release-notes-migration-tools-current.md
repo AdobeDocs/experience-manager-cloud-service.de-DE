@@ -1,29 +1,26 @@
 ---
-title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.11.0
-description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.11.0
+title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2024.01.0
+description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2024.01.0
 feature: Release Information
-exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '143'
-ht-degree: 100%
+source-git-commit: 0c2dca09a1d0070765e89de833fdd1c7607010c6
+workflow-type: tm+mt
+source-wordcount: '98'
+ht-degree: 67%
 
 ---
 
-# Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.11.0 {#release-notes}
+# Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2024.01.0 {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2023.11.0.
+Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2024.01.0.
 
 ## Content Transfer Tool {#ctt-release}
 
 ### Veröffentlichungsdatum {#release-date-ctt}
 
-Das Content Transfer Tool der Version 3.0.6 wurde am 21. November 2023 veröffentlicht.
+Die Version 3.0.10 des Content Transfer Tool wurde am 15. Januar 2024 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt}
 
-* Cloud Acceleration Manager (CAM) wurde aktualisiert, damit eine Aufnahme automatisch gestartet wird, wenn die Extraktion eines Migrationssatzes erfolgreich abgeschlossen wurde. Benutzende müssen nicht mehr warten, bis die Extraktion abgeschlossen ist, um dann eine Aufnahme manuell zu starten. Weitere Informationen zur Aufnahme von Inhalten in CAM finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=de#ingestion-process)
+* Das Content Transfer Tool unterstützt jetzt die Migration von Sammlungen. Benutzer können den Sammlungsordner mithilfe der Pfadauswahl auswählen und die Extraktion durchführen.
 
-### Fehlerbehebungen {#bug-fixes-ctt}
 
-* Benutzende konnten in CAM keinen Validierungsbericht erstellen. Dieses Problem wurde behoben.
