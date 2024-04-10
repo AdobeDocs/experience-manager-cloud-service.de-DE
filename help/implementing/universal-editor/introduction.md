@@ -2,23 +2,25 @@
 title: Einführung in den universellen Editor
 description: Erfahren Sie, wie der universelle Editor die WYSIWYG-Bearbeitung (What you see is what you get) von beliebigen Headless- und Headful-Erlebnissen ermöglicht. Erfahren Sie, wie er Autorinnen und Autoren dabei helfen kann, außergewöhnliche Inhalte zu erstellen sowie die Geschwindigkeit ihrer Inhalte zu erhöhen, und inwiefern er Entwickelnden ein modernes Erlebnis bietet.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 24496f81313bd58f60aa6d251c46f11fb24d1dbd
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 100%
+source-wordcount: '983'
+ht-degree: 75%
 
 ---
 
 
 # Einführung in den universellen Editor {#introduction}
 
-Erfahren Sie, wie der universelle Editor die WYSIWYG-Bearbeitung (What you see is what you get) von beliebigen Headless- und Headful-Erlebnissen ermöglicht. Erfahren Sie, wie er Autorinnen und Autoren dabei helfen kann, außergewöhnliche Inhalte zu erstellen sowie die Geschwindigkeit ihrer Inhalte zu erhöhen, und inwiefern er Entwickelnden ein modernes Erlebnis bietet.
+Der universelle Editor ist ein vielseitiger visueller Editor, der Teil von Adobe Experience Manager Sites ist. Es ermöglicht Autorinnen und Autoren die WYSIWYG-Bearbeitung (What you see is what you get) eines Headless- oder Headful-Erlebnisses. Erfahren Sie, wie sie Inhaltsautorinnen und -autoren dabei helfen kann, außergewöhnliche Erlebnisse bereitzustellen, und wie sie Entwicklerinnen und Entwicklern beispiellose Freiheit bietet.
 
 ## Hintergrund {#background}
 
-Das leistungsfähigste Tool für AEM-Inhaltsautorinnen und -autoren ist der Seiteneditor. Der Seiteneditor bietet eine intuitive, visuelle, kontextbezogene WYSIWYG-Authoring-Erfahrung, die nur minimale Schulung erfordert und den Autorinnen und Autoren genau zeigt, wie der Inhalt aussehen wird.
+Der universelle Editor bietet ein effizientes und intuitives Authoring-Erlebnis im Kontext, das nur minimale Schulung erfordert. Damit können Autoren ihre Inhalte direkt im Kontext des Web-Erlebnisses verwalten und genau so aussehen, wie sie den Besuchern erscheinen. Da es sich um einen echten Editor als Service und insgesamt flexibler handelt, beabsichtigt es, den Seiteneditor letztendlich zu ersetzen.
 
-Der Seiteneditor kann jedoch nur AEM Seiteninhalte, die Struktur und die darin enthaltenen Komponenten bearbeiten. Heutzutage werden Inhalte jedoch nur selten von einem einzigen Ort bezogen. Der universelle Editor bietet dieselbe integrierte Bearbeitungserfahrung wie der Seiteneditor, jedoch für alle Aspekte von Inhalten in jeder Implementierung.
+Autorinnen und Autoren profitieren von der Flexibilität des universellen Editors, da er dieselbe konsistente visuelle Bearbeitung für alle Formen von AEM-Inhalten unterstützt: Die Bearbeitung im Kontext und die Layout-Komposition ist gleichermaßen für Inhaltsfragmente und Seitenkomponenten möglich. Die beiden Inhaltsformen können sogar bearbeitet werden, wenn sie in einem Web-Erlebnis nebeneinander angezeigt werden, ohne dass Autoren den Kontext wechseln müssen. Dies stellt eine erhebliche Verbesserung gegenüber vorherigen Editoren in AEM dar, die nur einen Inhaltstyp unterstützten.
+
+Entwickler profitieren von der Vielseitigkeit des universellen Editors, da er auch eine echte Entkopplung der Implementierung unterstützt. Es ermöglicht Entwicklern die Verwendung praktisch jedes Frameworks oder jeder Architektur ihrer Wahl, ohne dass SDK- oder Technologiebeschränkungen auferlegt werden. Diese Flexibilität erleichtert sogar die Instrumentierung vorhandener Web-Apps für den universellen Editor, ohne dass diese neu strukturiert werden müssen.
 
 ## Wahrhaftig universell {#universal}
 
