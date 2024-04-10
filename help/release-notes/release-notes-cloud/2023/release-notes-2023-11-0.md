@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2023.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2023.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
-source-git-commit: 07a799cf374bbd1ce0fe5d85433bf12d1d5ee648
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 38%
+ht-degree: 56%
 
 ---
 
@@ -25,7 +25,7 @@ Im folgenden Abschnitt werden die Versionshinweise zu den neuen Funktionen der V
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.11.0) ist der Freitag, 30. November 2023. Die nächste Version mit neuen Funktionen (2023.12.0) ist für den Freitag, 14. Dezember 2023 geplant.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.11.0) ist der Freitag, 30. November 2023. Die nächste Version mit neuen Funktionen (2023.12.0) ist für den Freitag, 14. Dezember 2023 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -39,7 +39,7 @@ Sehen Sie sich das Video Versionsübersicht von November 2023 an, um eine Zusamm
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Frühkindliche Betreuung {#sites-early-adopter}
+### Early-Adopter-Programm {#sites-early-adopter}
 
 **[Strings in Inhaltsfragmenten suchen und ersetzen](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**: Die Inhaltsfragmentkonsole bietet Benutzern eine einfache und intuitive Möglichkeit, eine Zeichenfolge zu ersetzen, die in mehreren Inhaltsfragmenten gleichzeitig angezeigt wird, um die Content Velocity zu beschleunigen.
 
@@ -53,7 +53,7 @@ Möchten Sie die Funktion ausprobieren und Feedback geben? E-Mail an senden **ae
 
 * **Eingebetteter Adobe Expreß-Editor in AEM Assets**: Benutzer mit Zugriff auf Express verfügen jetzt über integrierte Bildbearbeitungs- und -erstellungs-Tools von Adobe Expreß und Adobe Firefly direkt in AEM Assets, um die Wiederverwendung von Inhalten zu verbessern und die Geschwindigkeit der Inhaltswiedergabe zu beschleunigen.
 
-  ![Metadatenformular einem Ordner zuweisen](/help/assets/assets/adobe-express-aem-assets.png)
+  ![Zuweisen eines Metadatenformulars zu einem Ordner](/help/assets/assets/adobe-express-aem-assets.png)
 
 <!--
 
@@ -100,17 +100,17 @@ Möchten Sie die Funktion ausprobieren und Feedback geben? E-Mail an senden **ae
 
 -->
 
-### Frühkindliche Betreuung {#forms-early-adopter}
+### Early-Adopter-Programm {#forms-early-adopter}
 
-* **Senden eines adaptiven Formulars an das Adobe Workfront Fusion-Szenario**: Forms as a Cloud Service bietet vordefinierte Optionen, um ein adaptives Formular einfach mit Adobe Workfront zu verbinden. Dadurch wird der Prozess zum Senden eines adaptiven Formulars an ein Adobe Workfront-Szenario vereinfacht, sodass Sie bei der Übermittlung eines adaptiven Formulars ein Workfront Fusion-Szenario Trigger haben.
+* **Senden eines adaptiven Formulars an das Adobe Workfront Fusion-Szenario**: Forms as a Cloud Service bietet vordefinierte Optionen, um ein adaptives Formular einfach mit Adobe Workfront zu verbinden. Dadurch wird der Prozess zum Senden eines adaptiven Formulars an ein Adobe Workfront-Szenario vereinfacht, indem Sie bei der Übermittlung eines adaptiven Formulars ein Workfront Fusion-Szenario auslösen können.
 
-* **Unterstützung für Sprachen mit Rechts-nach-links-Schreibrichtung**: Adaptive Forms, die auf Kernkomponenten basiert, kann jetzt in einer RTL-Sprache (Right-to-Left) wie Arabisch, Persisch und Urdu angezeigt werden. Die RTL-Sprachen werden von über 2 Milliarden Menschen weltweit gesprochen. Durch die Verwendung eines Formulars in RTL-Sprache können Sie die Reichweite Ihrer adaptiven Formulare erweitern, um diese unterschiedlichen Zielgruppen zu bedienen und RTL-Märkte zu erschließen. In bestimmten Regionen ist es auch ein gesetzliches Mandat, Formulare in der Landessprache zu verfassen. Durch die Unterbringung der lokalen Sprachen öffnen Sie nicht nur den Zugang zu einem breiteren Publikum, sondern sorgen auch für die Einhaltung der einschlägigen Gesetze und Vorschriften.
+* **Unterstützung für Sprachen mit Rechts-nach-links-Schreibrichtung**: Adaptive Formulare, die auf Kernkomponenten basieren, können jetzt in einer RTL-Sprache (Right-to-Left) wie Arabisch, Persisch und Urdu angezeigt werden. RTL-Sprachen werden von über 2 Milliarden Menschen weltweit gesprochen. Durch die Verwendung eines Formulars in RTL-Sprache können Sie die Reichweite Ihrer adaptiven Formulare erweitern, um diese unterschiedlichen Zielgruppen zu bedienen und RTL-Märkte zu erschließen. In bestimmten Regionen ist es außerdem gesetzlich vorgeschrieben, Formulare in der jeweiligen Regionalsprache bereitzustellen. Durch die Anpassung an lokale Sprachen öffnen Sie nicht nur den Zugang zu einem breiteren Publikum, sondern sorgen auch für die Einhaltung der einschlägigen Gesetze und Vorschriften.
 
-  ![Unterstützung von Sprachen mit Rechts-Links](/help/forms/assets/right-to-left-language-support.png)
+  ![Unterstützung von Sprachen mit Rechts-nach-links-Schreibrichtung](/help/forms/assets/right-to-left-language-support.png)
 
-* **[Protect Ihrer Dokumente mit DocAssurance-APIs (Teil der Kommunikations-APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: Mit den DocAssurance-APIs können Sie vertrauliche Informationen schützen, indem Sie die Dokumente signieren und verschlüsseln. Durch die Verschlüsselung werden die Inhalte eines Dokuments in ein unlesbares Format umgewandelt, sodass nur autorisierte Benutzende Zugriff erhalten. Diese verstärkte Schutzschicht schützt nicht nur wertvolle Daten vor unbefugten Blicken, sorgt auch für ein beruhigendes Gefühl. Signature-APIs ermöglichten Ihrem Unternehmen, die Sicherheit und Vertraulichkeit verteilter und empfangener Adobe PDF-Dokumente zu gewährleisten. Dieser Service verwendet digitale Signaturen und Zertifizierung, um sicherzustellen, dass nur die Empfängerinnen und Empfänger, für die dies vorgesehen ist, die Dokumente ändern können.
+* **[Schützen Sie Ihre Dokumente mit DocAssurance-APIs (Teil der Kommunikations-APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: Mit den DocAssurance-APIs können Sie vertrauliche Informationen schützen, indem Sie die Dokumente signieren und verschlüsseln. Durch Verschlüsselung werden die Inhalte eines Dokuments in ein unlesbares Format umgewandelt, sodass nur autorisierte Benutzende Zugriff erhalten. Diese verstärkte Schutzschicht schützt nicht nur wertvolle Daten vor unbefugten Blicken, sondern sorgt auch für Seelenfrieden. Der Signature-Service ermöglicht Ihrem Unternehmen, die Sicherheit und Vertraulichkeit verteilter und empfangener Adobe PDF-Dokumente zu gewährleisten. Dieser Service verwendet digitale Signaturen und Zertifizierung, um sicherzustellen, dass nur die Empfängerinnen und Empfänger, für die dies auch vorgesehen ist, die Dokumente ändern können.
 
-  Sie können schreiben an `aem-forms-early-adopter-program@adobe.com` von Ihrer offiziellen E-Mail-ID, um dem frühen Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern.
+  Sie können von Ihrer offiziellen E-Mail-ID aus an `aem-forms-ea@adobe.com` schreiben, um dem Early-Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
 
@@ -122,14 +122,14 @@ Nach der Lizenzierung können diese erweiterten WAF-Regeln mithilfe der Cloud Ma
 
 Informationen [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md), einschließlich WAF. Sprechen Sie mit Ihrem AEM-Account-Team über die Lizenzierung von WAF-DDoS-Schutz oder Enhanced Security.
 
-### CDN-Konfiguration Frühkindlicher Anwender {#cdn-config-early-adopter}
+### Early-Adopter-Programm für die CDN-Konfiguration {#cdn-config-early-adopter}
 
 Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln (einschließlich WAF)](/help/security/traffic-filter-rules-including-waf.md), gibt es eine Möglichkeit, die Configuration Pipeline zu verwenden, um andere Typen der CDN-Konfiguration zu deklarieren und bereitzustellen. Wir würden uns über Ihre Anwendungsfälle freuen, einschließlich:
 * 301/302 Client-seitige Umleitungen
-* Proxying-Anfragen am Edge zu beliebigen Ursprüngen
+* Weiterleitungs-Anfragen am Edge zu beliebigen Ursprüngen
 * URL-Transformationen
-* Anforderungs- oder Antwortheader festlegen oder ändern
-* benutzerdefinierte Fehlerseiten, wenn das CDN nicht AEM erreichen kann
+* Festlegen oder Ändern von Anfragen- oder Antwortkopfzeilen
+* benutzerdefinierte Fehlerseiten, wenn das CDN AEM nicht erreichen kann
 * Authentifizierung durch Benutzername/Kennwort
 * alle anderen nützlichen CDN-Konfigurationen
 
