@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+source-git-commit: eef58b59cd528743702e3d436acec02dbba58211
 workflow-type: tm+mt
-source-wordcount: '4842'
+source-wordcount: '4857'
 ht-degree: 97%
 
 ---
@@ -423,7 +423,7 @@ ht-degree: 97%
       + [Micro-Front-End-Asset-Selektor](/help/assets/asset-selector.md)
       + [Zielauswahl für Micro-Frontend](/help/assets/destination-selector.md)
       + [Freigeben von Assets](/help/assets/share-assets.md)
-      + [Assets erneut verarbeiten](/help/assets/reprocessing.md)
+      + [Neuverarbeitung von Assets](/help/assets/reprocessing.md)
       + [Überwachen von Aktivitäten und DAM-Aufgaben](/help/assets/assets-activity-history.md)
       + [Erste Schritte mit Asset-Microservices](/help/assets/asset-microservices-configure-and-use.md)
       + [Hinzufügen und Hochladen von Assets](/help/assets/add-assets.md)
@@ -642,7 +642,7 @@ ht-degree: 97%
             + [Erstellen und Verwenden benutzerdefinierter Funktionen](/help/forms/create-and-use-custom-functions.md)
             + [Hinzufügen von Regeln zu einem adaptiven Formular, das auf Kernkomponenten basiert](/help/forms/rule-editor-core-components.md)
             + [Hinzufügen von Versionen, Kommentaren und Anmerkungen zu einem adaptiven Formular](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-            + [Adaptive Forms vergleichen](/help/forms/compare-forms.md)
+            + [Vergleichen von adaptiven Forms](/help/forms/compare-forms.md)
       + Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
          + Konvertieren von PDF-Formularen in adaptive Formulare {#afcs}
             + [Einführung in den Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de)
@@ -700,7 +700,7 @@ ht-degree: 97%
       + [Installieren und Konfigurieren von Forms Designer](/help/forms/installing-configuring-designer.md)
       + [Verwenden von Forms Designer, um Vorlagen zu erstellen](/help/forms/use-forms-designer.md)
       + [Verwenden benutzerdefinierter Schriftarten in PDF-Dokumenten](/help/forms/use-custom-fonts.md)
-      + [Liste der unterstützten Schriftarten in PDF-Dokumenten](/help/forms/supported-out-of-the-box-fonts.md)
+      + [Liste der unterstützten Schriftarten beim PDF von Dokumenten](/help/forms/supported-out-of-the-box-fonts.md)
       + [Bekannte Probleme, Best Practices und häufig gestellte Fragen](/help/forms/communications-known-issues-limitations.md)
    + Transaktionsberichte {#using-communications}
       + [Abrechenbare APIs für Transaktionsberichte](/help/forms/transaction-reports-billable-apis.md)
@@ -798,11 +798,12 @@ ht-degree: 97%
    + [Entwickeln für Edge Delivery](/help/edge/developing.md)
    + [Inhaltsmodellierung](/help/edge/content-modeling.md)
    + [Erstellen von Bausteinen](/help/edge/create-block.md)
-   + [Tabellendaten und -fragmente](/help/edge/tabular-data.md)
+   + [Tabellendaten und Tabellen](/help/edge/tabular-data.md)
    + [Vorhandene Projekte und Edge Delivery](/help/edge/existing-projects.md)
    + Erstellen von Edge Delivery-Anwendungen {#build}
       + [Erste Schritte – Entwickler-Tutorial](/help/edge/developer/tutorial.md)
       + [Anatomie eines Projekts](/help/edge/developer/anatomy-of-a-franklin-project.md)
+      + [Blocksammlung](/help/edge/developer/block-collection.md)
       + [Tabellen](/help/edge/developer/spreadsheets.md)
       + [Formulare](/help/edge/developer/forms.md)
       + [Indizierung](/help/edge/developer/indexing.md)
@@ -829,21 +830,23 @@ ht-degree: 97%
       + [Überblick](/help/edge/docs/forms/overview.md)
       + Erste Schritte {#getting-started-eds-forms}
          + [Erste Schritte](/help/edge/docs/forms/tutorial.md)
-         + [Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-         + [Richten Sie Ihre Google Tabellen- oder Microsoft Excel-Dateien ein, um Daten zu akzeptieren &#x200B;](/help/edge/docs/forms/submit-forms.md)
-         + [Veröffentlichen Sie Ihr Formular und beginnen Sie mit der Datenerfassung](/help/edge/docs/forms/publish-forms.md)
+         + [Erstellen eines Formulars mit Google Sheets oder Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+         + [Richten Sie Ihre Google Sheets- oder Microsoft Excel-Dateien ein, um Daten zu akzeptieren&#x200B;](/help/edge/docs/forms/submit-forms.md)
+         + [Formular veröffentlichen und mit der Datenerfassung beginnen](/help/edge/docs/forms/publish-forms.md)
          + [Hinzufügen von Validierungen zu Formularfeldern](/help/edge/docs/forms/validate-forms.md)
-         + [Anpassen des Erscheinungsbilds von Formularen &#x200B;](/help/edge/docs/forms/style-theme-forms.md)
+         + [Optionen von URL in ein Formular laden](/help/edge/docs/forms/load-options-from-url.md)
+         + [Anpassen des Erscheinungsbilds von Formularen&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [Verwenden von Regeln zum Hinzufügen von dynamischem Verhalten zu einem Formular](/help/edge/docs/forms/rules-forms.md)
-         + [Benutzerdefinierte Dankesnachricht nach der Formularübermittlung anzeigen](/help/edge/docs/forms/thank-you-page-form.md)
+         + [Nach dem Absenden des Formulars eine benutzerdefinierte Dankesnachricht anzeigen](/help/edge/docs/forms/thank-you-page-form.md)
       + Funktionen {#advanced-features-eds-forms}
          + [Formularfragmente](/help/edge/docs/forms/form-fragments.md)
-         + [Wiederholbare Abschnitte zu einem Formular-&#x200B; hinzufügen](/help/edge/docs/forms/repeatable-forms.md)
+         + [Hinzufügen wiederholbarer Abschnitte zu einem Formular&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
          + [Übersetzung](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Benutzerdefinierte Komponenten](/help/edge/docs/forms/custom-components-forms.md)
+         + [Echtzeit-Benutzerüberwachung für Formulare](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + Verweise {#forms-references}
-         + [Komponenten von Bausteinen für adaptive Formulare und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
+         + [Komponenten des adaptiven Formularblocks und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
    + Ressourcen für die Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Verwenden des Sidekicks](/help/edge/docs/sidekick.md)
@@ -1178,9 +1181,3 @@ ht-degree: 97%
    + Barrierefreiheit {#accessibility}
       + [AEM as a Cloud Service und die Richtlinien für barrierefreien Web-Zugang](/help/compliance/accessibility/web-accessibility.md)
       + [Kurzanleitung zu WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
-
-
-<!--
-Temporarily remove:
-    + [Block Collection](/help/edge/developer/block-collection.md)
--->
