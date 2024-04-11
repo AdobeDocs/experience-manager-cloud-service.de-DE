@@ -1,8 +1,8 @@
 ---
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 80%
+source-wordcount: '302'
+ht-degree: 78%
 
 ---
 # Snippets {#snippets}
@@ -50,10 +50,6 @@ ht-degree: 80%
 * [An Workfront Fusion senden](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Verbinden eines adaptiven Formulars mit einer Salesforce-Anwendung](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [Verbinden eines adaptiven Formulars mit Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
-
-## AEM-Authoring mit Edge Delivery Services Early Access {#aem-authoring-edge-early-access}
-
-[!BADGE EARLY-ACCESS-TECHNOLOGIE – Mehr zu dieser Funktion erfahren Sie über die AEM Sites Labs auf Ihrem Slack-Kanal!]{type=Informative url="/help/edge/docs/slack.md" tooltip="Bei AEM-Authoring mit Edge Delivery Services handelt es sich um Early-Access-Technologie."}
 
 ## Siehe auch {#see-more-forms-eds}
 

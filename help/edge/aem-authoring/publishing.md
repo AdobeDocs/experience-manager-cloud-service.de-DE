@@ -1,0 +1,41 @@
+---
+title: Veröffentlichen von Inhalten für Edge Delivery Services
+description: Erfahren Sie, wie die Inhaltsveröffentlichung mit Edge Delivery Services funktioniert und wie Sie AEM-Inhalte mit Edge Delivery Services veröffentlichen.
+feature: Edge Delivery Services
+exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
+source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
+workflow-type: tm+mt
+source-wordcount: '280'
+ht-degree: 64%
+
+---
+
+
+# Veröffentlichen von Inhalten für Edge Delivery Services {#publishing-edge}
+
+Mit Edge Delivery Services erfolgt die Veröffentlichung von Inhalten unabhängig von Ihrer Inhaltsquelle nahtlos:
+
+* Dokumentbasierter Inhalt: Weitere Informationen finden Sie in der Dokumentation zu Edge Delivery Services im Abschnitt [Veröffentlichen](/help/edge/docs/authoring.md).
+* AEM-Inhalte: Weitere Informationen finden Sie nachstehend.
+
+## Ablauf beim Veröffentlichen aus AEM {#publishing-flow}
+
+Wenn Sie AEM-Inhalte mit dem universellen Editor erstellen, müssen Sie zum Veröffentlichen lediglich im universellen Editor auf **Veröffentlichen** klicken. Weitere Informationen finden Sie im Dokument [Veröffentlichen von Inhalten mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/publishing.md).
+
+Der Informationsfluss beim Veröffentlichen sieht folgendermaße aus. Sobald der Autor oder die Autorin die Veröffentlichung startet, ist dieser Ablauf automatisch und wird hier zu Informationszwecken dargestellt.
+
+>[!NOTE]
+>
+>Pro Tag sind maximal 5.000 Pfade zulässig, die über die Authoring-Benutzeroberfläche oder durch Workflows veröffentlicht werden. Integrationen, die zu Massenveröffentlichungen führen, werden nicht unterstützt.
+
+![Informationsfluss beim Veröffentlichen aus AEM in Edge Delivery Services](assets/publishing-flow.png)
+
+1. Der Inhaltsautor oder die Inhaltsautorin veröffentlicht AEM-Inhalte im universellen Editor.
+1. Ein Veröffentlichungsereignis wird in die Adobe-Pipeline-Warteschlange verschoben.
+1. Der Edge Delivery Services-Veröffentlichungsdienst leitet die relevanten Ereignisse an die Edge Delivery Services-Admin-API weiter.
+1. Edge Delivery ruft semantische HTML von AEM Autor ab und erfasst sie.
+1. AEM wird mit dem Veröffentlichungsstatus aktualisiert.
+
+>[!NOTE]
+>
+>Standardmäßig ist die Edge Delivery Services Admin-API nicht geschützt und kann verwendet werden, um Dokumente ohne Authentifizierung zu veröffentlichen oder die Veröffentlichung rückgängig zu machen. Um die Authentifizierung für die Admin-API zu konfigurieren, siehe [Konfigurieren der Authentifizierung für Autoren](https://www.aem.live/docs/authentication-setup-authoring)muss Ihr Projekt mit einem API_KEY ausgestattet sein, der Zugriff auf den Veröffentlichungsdienst gewährt. [Wenden Sie sich an das Adobe-Team unter Slack.](/help/edge/docs/slack.md) für Leitlinien.

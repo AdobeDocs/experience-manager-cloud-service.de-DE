@@ -3,7 +3,7 @@ title: Erste Schritte mit AEM Forms Edge Delivery Services - Tutorial für Entwi
 description: Dieses Tutorial hilft Ihnen, ein neues Adobe Experience Manager Forms-Projekt (AEM) einzurichten. In zehn bis zwanzig Minuten haben Sie Ihre eigenen Formulare erstellt.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+source-git-commit: 74e3bc79a734bd2c686e28cdcbbda96a58268c77
 workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 8%
@@ -192,7 +192,7 @@ So zeigen Sie eine Vorschau von nicht veröffentlichten Inhalten an:
 
 Der Beispielinhalt enthält eine &quot;Anfrage&quot;-Vorlage, die als Vorlage für das &quot;Anfrage&quot;-Formular dient. Jede Zeile des Arbeitsblatts stellt eine [Formularfeld](/help/edge/docs/forms/form-components.md#available-components)und die Spaltenüberschriften definieren die [Feldeigenschaften](/help/edge/docs/forms/form-components.md#available-components). Mit diesem Musterformular erhalten Sie einen Vorsprung beim Erstellen Ihres Formulars.
 
-![Anfrageformular](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+![Anfrageformular](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
 Beginnen wir mit der Aktualisierung einer Feldbeschriftung. Öffnen Sie das &#39;Anfrage&#39;-Blatt zur Bearbeitung, ändern Sie den Titel der Senden-Schaltfläche in `Let's Chat` und verwenden Sie AEM Sidekick, um die Datei in der Vorschau anzuzeigen und zu veröffentlichen.
 
