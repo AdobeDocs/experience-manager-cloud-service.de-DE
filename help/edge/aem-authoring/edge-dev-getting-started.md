@@ -3,7 +3,7 @@ title: Erste-Schritte-Handbuch für Entwickelnde zum AEM-Authoring mit Edge Deli
 description: In diesem Handbuch erfahren Sie, wie Sie mit einer neuen Adobe Experience Manager-Site arbeiten, die Edge Delivery Services und den universellen Editor für die Inhaltserstellung verwendet.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 88%
@@ -197,3 +197,4 @@ Weitere Informationen finden Sie in der Anleitung [Erstellen von für den univer
 >[!TIP]
 >
 >Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für AEM Authoring mit AEM als Inhaltsquelle aktiviert ist, finden Sie unter [Dieses AEM GEMs-Webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+

@@ -3,7 +3,7 @@ title: Verwenden von Tabellen zur Verwaltung von Tabellendaten
 description: Erfahren Sie, wie Sie mit Tabellen Tabellendaten für verschiedene Werte verwalten können, z. B. Metadaten und Umleitungen für Ihre AEM mit der Edge Delivery Services-Site.
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
-source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 2%
@@ -163,3 +163,4 @@ Darüber hinaus können Sie [Erstellen einer eigenen Tabelle](#own-spreadsheet) 
 1. Erstellen Sie das Arbeitsblatt und veröffentlichen Sie es gemäß den Anweisungen für das Umleitungs-Arbeitsblatt.
 
 1. Fügen Sie der `paths.json` -Datei gemäß den Anweisungen für die Umleitungs-Tabelle.
+

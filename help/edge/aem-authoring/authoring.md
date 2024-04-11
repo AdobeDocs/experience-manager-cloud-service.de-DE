@@ -3,7 +3,7 @@ title: Erstellen von Inhalten für Edge Delivery Services
 description: Erfahren Sie, wie Content-Authoring mit Edge Delivery Services funktioniert und wie Sie AEM-Inhalte mit Edge Delivery Services erstellen.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 93%
@@ -56,3 +56,4 @@ Lesen Sie hierzu das [Erste-Schritte-Handbuch für Entwickelnde zum AEM-Authorin
 Beim dokumentbasierten Authoring können Sie mit verschiedenen Quellen wie Microsoft Word- und Google Docs-Dokumenten arbeiten. Dokumente aus diesen Quellen werden zu Seiten auf Ihrer Website. Überschriften, Listen, Bilder, Schriftelemente und Videos können von der ursprünglichen Quelle auf Ihre Website übertragen werden. Sie können Metadaten für SEO-Zwecke hinzufügen oder Blöcke verwenden, um mit strukturierten Inhalten zu arbeiten und Funktionen hinzuzufügen.
 
 Weitere Informationen zum dokumentbasierten Authoring finden Sie in [diesem Dokument in der Edge Delivery Services-Dokumentation.](/help/edge/docs/authoring.md)
+

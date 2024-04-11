@@ -2,7 +2,7 @@
 title: Inhaltsmodellierung für AEM-Authoring-Projekte mit Edge Delivery Services
 description: Erfahren Sie, wie die Inhaltsmodellierung für AEM-Authoring-Projekte mit Edge Delivery Services funktioniert und wie Sie eigene Inhalte modellieren.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: bf6d0ff2f4aebb6620be46704072743578b096d2
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '2233'
 ht-degree: 88%
@@ -657,3 +657,4 @@ Informationen zum Erstellen von Bausteinen finden Sie im Dokument . [Erste Schri
 >[!TIP]
 >
 >Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für AEM Authoring mit AEM als Inhaltsquelle aktiviert ist, finden Sie unter [Dieses AEM GEMs-Webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+
