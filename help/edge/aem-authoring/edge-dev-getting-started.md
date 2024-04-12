@@ -3,10 +3,10 @@ title: Erste-Schritte-Handbuch für Entwickelnde zum AEM-Authoring mit Edge Deli
 description: In diesem Handbuch erfahren Sie, wie Sie mit einer neuen Adobe Experience Manager-Site arbeiten, die Edge Delivery Services und den universellen Editor für die Inhaltserstellung verwendet.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 7cd19f674d3eae2bcbe2b40402e135d4db6e3035
+source-git-commit: 8bdca5357666841c4471170ab3b97476b6be63b6
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 88%
+source-wordcount: '1296'
+ht-degree: 87%
 
 ---
 
@@ -130,7 +130,7 @@ Nachdem Sie nun über ein GitHub-Projekt verfügen, müssen Sie eine neue AEM-Si
 >
 >Um Ihre Site mit dem universellen Editor zu bearbeiten, müssen Sie einen Chromium-basierten Browser nutzen.
 
-1. Laden Sie die neueste AEM Authoring mit der Edge Delivery Services-Site-Vorlage von GitHub herunter unter unter [`https://github.com/adobe-rnd/aem-boilerplate-xwalk`](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
+1. Laden Sie die neueste AEM Authoring mit der Edge Delivery Services-Site-Vorlage von GitHub herunter unter unter [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
 1. Melden Sie sich bei Ihrer AEM as a Cloud Service-Authoring-Instanz an, navigieren Sie zur Sites-Konsole und tippen oder klicken Sie auf **Erstellen** > **Site aus Vorlage**.
 
@@ -140,7 +140,7 @@ Nachdem Sie nun über ein GitHub-Projekt verfügen, müssen Sie eine neue AEM-Si
 
    ![Importieren von Vorlagen](assets/edge-dev-getting-started/site-templates.png)
 
-1. Laden Sie die von Adobe Engineering bereitgestellte Site-Vorlage zum AEM-Authoring mit Edge Delivery Services hoch.
+1. Laden Sie die von GitHub heruntergeladene Site-Vorlage AEM Authoring mit Edge Delivery Services hoch.
 
    * Die Vorlage darf nur einmal hochgeladen werden. Nach dem Hochladen kann es wiederverwendet werden, um zusätzliche Sites zu erstellen.
 
