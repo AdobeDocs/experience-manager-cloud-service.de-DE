@@ -3,9 +3,9 @@ title: Erste-Schritte-Handbuch für Entwickelnde zum AEM-Authoring mit Edge Deli
 description: In diesem Handbuch erfahren Sie, wie Sie mit einer neuen Adobe Experience Manager-Site arbeiten, die Edge Delivery Services und den universellen Editor für die Inhaltserstellung verwendet.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
+source-git-commit: 7cd19f674d3eae2bcbe2b40402e135d4db6e3035
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1297'
 ht-degree: 88%
 
 ---
@@ -50,7 +50,7 @@ AEM stellt Standardbausteine als Teil des Produkts in der Projektvorlage bereit.
 
 Edge Delivery nutzt GitHub, damit Sie Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. 
 
-Ihre Autoren können Inhalte entweder mit dokumentbasiertem Authoring oder mit AEM mit dem universellen Editor erstellen. Entwicklerinnen und Entwickler können die Funktionalität Ihrer Site anpassen, indem sie CSS und JavaScript in GitHub verwenden, unabhängig davon, wie die Autorinnen und Autoren ihre Inhalte erstellen.
+Ihre Autorinnen und Autoren können mit dem universellen Editor Inhalte entweder mit dokumentbasiertem Authoring oder mit Inhalten in AEM erstellen. Entwicklerinnen und Entwickler können die Funktionalität Ihrer Site anpassen, indem sie CSS und JavaScript in GitHub verwenden, unabhängig davon, wie die Autorinnen und Autoren ihre Inhalte erstellen.
 
 Websites werden automatisch für jede Ihrer Verzweigungen erstellt, von der Inhaltsvorschau bis zur Produktion. Jede Ressource, die Sie in Ihr GitHub-Repository einfügen, steht auf Ihrer Website ohne Erstellungsprozess zur Verfügung.
 
@@ -58,7 +58,7 @@ Websites werden automatisch für jede Ihrer Verzweigungen erstellt, von der Inha
 >
 >Weitere Einzelheiten zu Bausteinen und zur Entwicklung für Edge Delivery Services finden Sie im [Abschnitt Build](/help/edge/developer/block-collection.md) der Edge Delivery Services-Dokumentation.
 
-## Erste Schritte mit AEM Authoring und Edge Delivery Services {#getting-started}
+## Erste Schritte mit AEM-Authoring und Edge Delivery Services {#getting-started}
 
 Sobald Sie die [Voraussetzungen](#prerequisites) erfüllt und sich für [die Verwendung des universellen Editors entschieden haben,](#editor-choice) können Sie mit Ihrem eigenen Projekt beginnen.
 
@@ -130,7 +130,7 @@ Nachdem Sie nun über ein GitHub-Projekt verfügen, müssen Sie eine neue AEM-Si
 >
 >Um Ihre Site mit dem universellen Editor zu bearbeiten, müssen Sie einen Chromium-basierten Browser nutzen.
 
-1. Fordern Sie über Ihren [Projekt-Slack-Kanal](/help/edge/docs/slack.md) die neueste Site-Vorlage zum AEM-Authoring mit Edge Delivery Services von Adobe Engineering an.
+1. Laden Sie die neueste AEM Authoring mit der Edge Delivery Services-Site-Vorlage von GitHub herunter unter unter [`https://github.com/adobe-rnd/aem-boilerplate-xwalk`](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
 
 1. Melden Sie sich bei Ihrer AEM as a Cloud Service-Authoring-Instanz an, navigieren Sie zur Sites-Konsole und tippen oder klicken Sie auf **Erstellen** > **Site aus Vorlage**.
 
@@ -141,6 +141,8 @@ Nachdem Sie nun über ein GitHub-Projekt verfügen, müssen Sie eine neue AEM-Si
    ![Importieren von Vorlagen](assets/edge-dev-getting-started/site-templates.png)
 
 1. Laden Sie die von Adobe Engineering bereitgestellte Site-Vorlage zum AEM-Authoring mit Edge Delivery Services hoch.
+
+   * Die Vorlage darf nur einmal hochgeladen werden. Nach dem Hochladen kann es wiederverwendet werden, um zusätzliche Sites zu erstellen.
 
 1. Nach dem Import wird die Vorlage im Assistenten angezeigt. Tippen oder klicken Sie, um sie auszuwählen, und tippen oder klicken Sie dann auf **Weiter**.
 
