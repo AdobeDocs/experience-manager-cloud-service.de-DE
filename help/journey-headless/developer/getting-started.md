@@ -2,9 +2,9 @@
 title: Erste Schritte mit AEM Headless as a Cloud Service
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Voraussetzungen für AEM Headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 998651bf0529d6a8aab0cd340a1c171974c405f6
+source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
 workflow-type: tm+mt
-source-wordcount: '3057'
+source-wordcount: '3068'
 ht-degree: 99%
 
 ---
@@ -298,3 +298,4 @@ Es wird zwar empfohlen, zum nächsten Teil der Headless-Development-Tour voranzu
 * [Assets-REST-API](/help/assets/content-fragments/assets-api-content-fragments.md): Technische Dokumentation, in der erläutert wird, wie Inhaltsfragmente (und andere Assets) erstellt und geändert werden.
 * [Persistente Abfragen](/help/headless/graphql-api/persisted-queries.md): Technische Dokumentation zu persistenten Abfragen in AEM.
 * [Headful und Headless in AEM](/help/implementing/developing/headful-headless.md): Eine vollständige Diskussion der Headless-Integrationsebenen, die in AEM verfügbar sind.
+* Die [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodell](/help/headless/content-fragment-openapis.md) sind auch verfügbar.

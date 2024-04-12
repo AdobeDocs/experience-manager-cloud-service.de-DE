@@ -4,10 +4,10 @@ description: Im Folgenden erhalten Sie eine Einführung in das Wiederverwenden v
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
-source-wordcount: '2702'
-ht-degree: 100%
+source-git-commit: 0a4f9edba00e65439a306024c604e6935c8bac47
+workflow-type: tm+mt
+source-wordcount: '2721'
+ht-degree: 99%
 
 ---
 
@@ -141,6 +141,10 @@ Auf MSM kann mithilfe verschiedener Optionen der jeweiligen Konsole direkt über
 * **Blueprints** (**Tools** – **Sites**)
 
    * Diese Konsole ermöglicht Ihnen die [Erstellung und Verwaltung Ihrer Blueprint-Konfigurationen](creating-live-copies.md#creating-a-blueprint-configuration).
+
+>[!NOTE]
+>
+>MSM kann sowohl mit Seiten als auch mit [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md) da diese Fragmente Teil eines Erlebnisses (Seite) sind.
 
 >[!NOTE]
 >

@@ -2,10 +2,10 @@
 title: Grundlegende Handhabung
 description: Machen Sie sich mit der Navigation in AEM und seiner grundlegenden Verwendung vertraut
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 7e0ca5dad5cd53c2304e2eba48a5131d587967ef
+source-git-commit: 40759b8c07833b0927fa374b906d4202bf258249
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 98%
+source-wordcount: '954'
+ht-degree: 91%
 
 ---
 
@@ -75,10 +75,11 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
 | Assets | In der Assets-Konsole können Sie [digitale Assets, wie Bilder, Videos, Dokumente und Audiodateien](/help/assets/overview.md), importieren und verwalten. Diese Assets können dann von jeder Site verwendet werden, die auf derselben AEM-Instanz ausgeführt wird. Über die Assets-Konsole können Sie auch [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) erstellen und verwalten. |
 | Personalisierung    | Diese Konsole bietet ein Framework aus Tools für die [Bearbeitung von Inhalten für eine bestimmte Zielgruppe und das Bieten personalisierter Erlebnisse](/help/sites-cloud/authoring/personalization/overview.md). |
 | Inhaltsfragmente | [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Veröffentlichen von seitenunabhängigen Inhalten. Sie ermöglichen es Ihnen, strukturierte Inhalte vorzubereiten, die an verschiedenen Orten und über verschiedene Kanäle verwendet werden können, und eignen sich sowohl für die Erstellung von Seiten als auch für die Headless-Bereitstellung. |
+| Generieren von Varianten | [Generieren von Varianten](/help/generative-ai/generate-variations.md) verwendet generative künstliche Intelligenz (AI), um Inhaltsvarianten basierend auf Eingabeaufforderungen zu erstellen. Diese Aufforderungen werden entweder von Adobe bereitgestellt oder von Benutzern erstellt und verwaltet. |
 
 ## Tools-Bereich {#tools-panel}
 
-Im **Tools**-Bereich befindet sich ein seitliches Bedienfeld mit einem Bereich von Kategorien, in denen ähnliche Konsolen gruppiert sind. Die **Tools**-Konsolen bieten Zugriff auf verschiedene spezialisierte Tools und Konsolen, mit denen Sie Websites, digitale Assets und andere Bereiche Ihres Inhalts-Repositorys verwalten können. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+Die **Instrumente** verfügt über ein seitliches Bedienfeld mit einem Kategoriebereich, in dem ähnliche Konsolen gruppiert sind. Die **Instrumente** Konsolen bieten Zugriff auf verschiedene spezialisierte Tools und Konsolen, mit denen Sie Websites, digitale Assets und andere Bereiche Ihres Inhalts-Repositorys verwalten können.
 
 ![Tools-Bereich](assets/basic-handling-tools.png)
 

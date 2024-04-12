@@ -1,13 +1,14 @@
 ---
 title: Generieren von Varianten
-description: Erfahren Sie mehr über das Generieren von Varianten, auf die über die Sidekick von Edge Delivery Services zugegriffen werden kann.
+description: Erfahren Sie mehr über die Generierung von Varianten, auf die über AEM as a Cloud Service Zugriff und die Sidekick von Edge Delivery Services zugegriffen werden kann.
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
 workflow-type: tm+mt
-source-wordcount: '3338'
+source-wordcount: '3257'
 ht-degree: 1%
 
 ---
+
 
 # Generieren von Varianten {#generate-variations}
 
@@ -15,11 +16,12 @@ Wenn Sie nach einer Möglichkeit suchen, Ihre digitalen Kanäle zu optimieren un
 
 Sie können [Zugriff auf Varianten generieren](#access-generate-variations) von:
 
-<!-- 
-* [within Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
--->
-
+* [innerhalb von Adobe Experience Manager (AEM as a Cloud Service)](#access-aemaacs)
 * [Sidekick von AEM Edge Delivery Services](#access-aem-sidekick)
+
+>[!NOTE]
+>
+>Um Varianten generieren zu verwenden, müssen Sie in jedem Fall sicherstellen, dass die Variable [Zugriffsvoraussetzungen](#access-prerequisites) erfüllt sind.
 
 Sie haben dann folgende Möglichkeiten:
 
@@ -245,18 +247,19 @@ So fügen Sie ein neues Textfeld mit dem Titel **Tone of Voice** verwenden Sie i
 
 ![Varianten generieren - Eingabeaufforderung mit Sprachton bearbeitet](assets/generate-variations-prompt-edited.png)
 
-#### Beispiel: Neues Dropdown-Feld hinzufügen - Seitentyp {#example-add-new-dropdown-field-page-type}
+<!--
+#### Example: Add new dropdown field - Page Type {#example-add-new-dropdown-field-page-type}
 
-So erstellen Sie ein Eingabefeld vom Typ Seite mit einer Dropdown-Auswahl:
+To create an input field Page Type providing a dropdown selection:
 
-1. Erstellen Sie eine Tabelle mit dem Namen `pagetype.xls` im Ordner der obersten Ebene Ihrer Ordnerstruktur.
-1. Bearbeiten Sie die Tabelle:
+1. Create a spreadsheet named `pagetype.xls` in the top-level directory of your folder structure.
+1. Edit the spreadsheet:
 
-   1. Erstellen Sie zwei Spalten: **Schlüssel** und **Wert**.
-   1. Im **Schlüssel** geben Sie Titel ein, die im Dropdown-Menü angezeigt werden sollen.
-   1. Im **Wert** -Spalte, beschreiben Sie den Schlüsselwert, damit die generative KI Kontext hat.
+   1. Create two columns: **Key** and **Value**.
+   1. In the **Key** column, enter labels that will appear in the dropdown.
+   1. In the **Value** column, describe the key value so the generative AI has context.
 
-1. Lesen Sie in der Eingabeaufforderung den Titel des Arbeitsblatts sowie den entsprechenden Typ.
+1. In your prompt, refer to the title of the spreadsheet along with the appropriate type. 
 
    ```prompt
    {{@page_type, 
@@ -265,6 +268,7 @@ So erstellen Sie ein Eingabefeld vom Typ Seite mit einer Dropdown-Auswahl:
      spreadsheet=pagetype
    }}
    ```
+-->
 
 ## Erstellen einer Eingabeaufforderung {#create-prompt}
 
@@ -390,6 +394,95 @@ So fügen Sie beispielsweise eine Audience aus einer Datei auf dem Google-Laufwe
 
    ![Generieren von Varianten - Hinzufügen einer CSV-Zielgruppendatei](assets/generate-variations-audiences-csv-save.png)
 
+## Nutzung generischer Aktionen {#generative-action-usage}
+
+Die Verwaltung der Nutzung hängt von den getroffenen Maßnahmen ab:
+
+* Generieren von Varianten
+
+  Eine Generation einer Kopiervariante entspricht einer generativen Aktion. Als Kunde verfügen Sie über eine bestimmte Anzahl von generativen Aktionen, die mit Ihrer AEM Lizenz einhergehen. Sobald die grundlegende Berechtigung verwendet wurde, können Sie zusätzliche Aktionen erwerben.
+
+  >[!NOTE]
+  >
+  >Siehe [Adobe Experience Manager: Cloud Service | Produktbeschreibung](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) Weitere Informationen zu grundlegenden Berechtigungen erhalten Sie, und wenden Sie sich an Ihr Account-Team, wenn Sie generativere Aktionen erwerben möchten.
+
+* Adobe Express
+
+  Die Nutzung der Bildgenerierung erfolgt über Adobe Expreß-Berechtigungen und [generative Gutschriften](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
+
+## Zugriff auf Generieren von Varianten {#access-generate-variations}
+
+Nachdem Sie die Voraussetzungen erfüllt haben, können Sie über AEM as a Cloud Service oder die Sidekick der Edge Delivery Services auf Varianten generieren zugreifen.
+
+### Voraussetzungen für den Zugriff {#access-prerequisites}
+
+Um Varianten generieren zu verwenden, müssen Sie sicherstellen, dass die Voraussetzungen erfüllt sind:
+
+* [Zugriff auf Experience Manager as a Cloud Service mit Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services)
+
+#### Zugriff auf Experience Manager as a Cloud Service mit Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
+
+Benutzer, die Zugriff auf die Option Varianten generieren benötigen, müssen über die Berechtigung einer as a Cloud Service Experience Manager-Umgebung mit Edge Delivery Services verfügen.
+
+>[!NOTE]
+>
+>Wenn Ihr Vertrag für AEM Sites as a Cloud Service keine Edge Delivery Services enthält, müssen Sie einen neuen Vertrag unterzeichnen, um Zugriff zu erhalten.
+>
+>Wenden Sie sich an Ihr Account-Team, um zu besprechen, wie Sie mit Edge Delivery Services as a Cloud Service zu AEM Sites wechseln können.
+
+Um bestimmten Benutzern Zugriff zu gewähren, weisen Sie ihr Benutzerkonto dem jeweiligen Produktprofil zu. Siehe [Zuweisen AEM Produktprofilen für weitere Details](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+
+### Zugriff auf AEM as a Cloud Service {#access-aemaacs}
+
+Auf Generate Variations kann über die [Navigationsfenster](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) von AEM as a Cloud Service:
+
+![Navigationsfenster](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
+
+### Zugriff über die AEM Sidekick {#access-aem-sidekick}
+
+Bevor Sie auf die Option Varianten generieren über die Sidekick (der Edge Delivery Services) zugreifen können, ist eine gewisse Konfiguration erforderlich.
+
+1. Siehe Dokument . [Installieren der AEM Sidekick](https://www.aem.live/docs/sidekick-extension) für die Installation und Konfiguration des Sidekick.
+
+1. Um die Option Varianten generieren im Sidekick (von Edge Delivery Services) zu verwenden, schließen Sie die folgende Konfiguration in Ihre Edge Delivery Services-Projekte unter ein:
+
+   * `tools/sidekick/config.json`
+
+   Dies muss mit Ihrer vorhandenen Konfiguration zusammengeführt und dann bereitgestellt werden.
+
+   Zum Beispiel:
+
+   ```prompt
+   {
+     // ...
+     "plugins": [
+       // ...
+       {
+         "id": "generate-variations",
+         "title": "Generate Variations",
+         "url": "https://experience.adobe.com/aem/generate-variations",
+         "passConfig": true,
+         "environments": ["preview","live", "edit"],
+         "includePaths": ["**.docx**"]
+       }
+       // ...
+     ]
+   }
+   ```
+
+1. Möglicherweise müssen Sie dann sicherstellen, dass Benutzer [Zugriff auf Experience Manager as a Cloud Service mit Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
+
+1. Sie können dann auf die Funktion zugreifen, indem Sie **Generieren von Varianten** über die Symbolleiste der Sidekick:
+
+   ![Generieren von Varianten - Zugriff über AEM Sidekicj](assets/generate-variations-sidekick-toolbar.png)
+
+## Weiterführende Informationen {#further-information}
+
+Weitere Informationen finden Sie unter:
+
+* [GenAI Generieren von Varianten auf GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
+* [Edge Delivery Services-Experimente](https://www.aem.live/docs/experimentation)
+
 ## Häufig gestellte Fragen {#faqs}
 
 ### Formatierte Ausgabe {#formatted-outpu}
@@ -452,106 +545,7 @@ Beispiel: https://experience.adobe.com/#/aem/generate-variations
 
 Wenn Sie zur Version 2.0.0 wechseln, werden benutzerdefinierte Eingabeaufforderungsvorlagen beschädigt, sodass sie nicht verfügbar sind.
 
-Siehe [Versionshinweise für v2.0.0 für Anweisungen zum Abrufen dieser Informationen](#release-notes-2-0-0-retrieve-prompt-templates).
-
-## Nutzung generischer Aktionen {#generative-action-usage}
-
-Die Verwaltung der Nutzung hängt von der getroffenen Aktion ab:
-
-* Generieren von Varianten
-
-  Eine Generation einer Kopiervariante entspricht einer generativen Aktion. Als Kunde verfügen Sie über eine bestimmte Anzahl von generativen Aktionen, die mit Ihrer AEM Lizenz einhergehen. Sobald die grundlegende Berechtigung verwendet wurde, können Sie zusätzliche Aktionen erwerben.
-
-  >[!NOTE]
-  >
-  >Siehe [Adobe Experience Manager: Cloud Service | Produktbeschreibung](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) Weitere Informationen zu grundlegenden Berechtigungen erhalten Sie, und wenden Sie sich an Ihr Account-Team, wenn Sie generativere Aktionen erwerben möchten.
-
-* Adobe Express
-
-  Die Nutzung der Bildgenerierung erfolgt über Adobe Expreß-Berechtigungen und [generative Gutschriften](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
-
-## Zugriff auf Generieren von Varianten {#access-generate-variations}
-
-<!--
-### Access from AEM as a Cloud Service {#access-aemaacs}
-
-Generate Variations can be accessed from the [Navigation Panel](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) of AEM as a Cloud Service:
-
-![Navigation panel](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
--->
-
-### Zugriff über die AEM Sidekick {#access-aem-sidekick}
-
-Bevor Sie auf die Option Varianten generieren über die Sidekick (der Edge Delivery Services) zugreifen können, ist eine gewisse Konfiguration erforderlich.
-
-1. Siehe Dokument . [Installieren der AEM Sidekick](https://www.aem.live/docs/sidekick-extension) für die Installation und Konfiguration des Sidekick.
-
-1. Um die Option Varianten generieren im Sidekick (von Edge Delivery Services) zu verwenden, schließen Sie die folgende Konfiguration in Ihre Edge Delivery Services-Projekte unter ein:
-
-   * `tools/sidekick/config.json`
-
-   Dies muss mit Ihrer vorhandenen Konfiguration zusammengeführt und dann bereitgestellt werden.
-
-   Zum Beispiel:
-
-   ```prompt
-   {
-     // ...
-     "plugins": [
-       // ...
-       {
-         "id": "generate-variations",
-         "title": "Generate Variations",
-         "url": "https://experience.adobe.com/aem/generate-variations",
-         "passConfig": true,
-         "environments": ["preview","live", "edit"],
-         "includePaths": ["**.docx**"]
-       }
-       // ...
-     ]
-   }
-   ```
-
-1. Möglicherweise müssen Sie dann sicherstellen, dass Benutzer [Zugriff auf Experience Manager as a Cloud Service mit Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
-
-1. Sie können dann auf die Funktion zugreifen, indem Sie **Generieren von Varianten** über die Symbolleiste der Sidekick:
-
-   ![Generieren von Varianten - Zugriff über AEM Sidekicj](assets/generate-variations-sidekick-toolbar.png)
-
-## Zugriff auf Experience Manager as a Cloud Service mit Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
-
-Benutzer, die Zugriff auf die Option Varianten generieren benötigen, müssen über die Berechtigung einer as a Cloud Service Experience Manager-Umgebung mit Edge Delivery Services verfügen.
-
->[!NOTE]
->
->Wenn Ihr Vertrag für AEM Sites as a Cloud Service keine Edge Delivery Services enthält, müssen Sie einen neuen Vertrag unterzeichnen, um Zugriff zu erhalten.
->
->Wenden Sie sich an Ihr Account-Team, um zu besprechen, wie Sie mit Edge Delivery Services as a Cloud Service zu AEM Sites wechseln können.
-
-Um bestimmten Benutzern Zugriff zu gewähren, weisen Sie ihr Benutzerkonto dem jeweiligen Produktprofil zu. Siehe [Zuweisen AEM Produktprofilen für weitere Details](/help/journey-onboarding/assign-profiles-cloud-manager.md).
-
-## Weiterführende Literatur {#further-reading}
-
-Lesen Sie auch:
-
-* [GenAI Generieren von Varianten auf GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
-* [Edge Delivery Services-Experimente](https://www.aem.live/docs/experimentation)
-
-## Versionshinweise {#release-notes}
-
-### 2.0.0  {#release-notes-2-0-0}
-
-* Einführung eines universellen persistenten Speichers für Eingabevorlagen.
-* Neue Funktionen für Zielgruppen
-   * Zielgruppen können direkt aus Adobe Target gelesen werden
-   * Aktualisierte Methoden zum Hinzufügen von CSV-Dateien
-* Dialogfeld mit Optionen für Speicheraufforderung
-* Beim Generieren von Bildern wird die Eingabeaufforderung in Adobe Expreß vorausgefüllt
-* Auf den Eingabekarten (auf der Startseite) werden zusätzliche Informationen angezeigt, die gelöscht werden können.
-
-#### 2.0.0 - Abrufen benutzerdefinierter Eingabeaufforderungsvorlagen {#release-notes-2-0-0-retrieve-prompt-templates}
-
-Wenn Sie zur Version 2.0.0 wechseln, werden benutzerdefinierte Eingabeaufforderungsvorlagen beschädigt, sodass sie nicht verfügbar sind. So rufen Sie sie ab:
+So rufen Sie sie ab:
 
 1. Wechseln Sie zum Ordner &quot;Eingabeaufforderung-Vorlage&quot;in Sharepoint.
 1. Kopieren Sie die Eingabeaufforderung.
@@ -561,20 +555,6 @@ Wenn Sie zur Version 2.0.0 wechseln, werden benutzerdefinierte Eingabeaufforderu
 1. Überprüfen Sie, ob die Eingabeaufforderung funktioniert.
 1. Speichern Sie die Eingabeaufforderung.
 
-### 1,0,5 {#release-notes-1-0-5}
+## Versionsverlauf {#release-history}
 
-* Integration mit Adobe Expreß
-* Eingabeaufforderung &quot;Bearbeiten&quot;in die Seitenleiste verschieben
-
-### 1.0.4 {#release-notes-1-0-4}
-
-* Interne Verbesserungen
-
-### 1,0,3 {#release-notes-1-0-3}
-
-* Das linke Navigationsfenster ein- oder ausblenden
-* Kleine Verbesserungen
-
-### 1.0.0 - 1.0.2 {#release-notes-1-0-0-1-0-2}
-
-* Interne Verbesserungen
+Weitere Informationen zu aktuellen und vorherigen Versionen finden Sie in der [Versionshinweise für Generate Variations](/help/generative-ai/release-notes-generate-variations.md)

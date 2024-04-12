@@ -3,7 +3,7 @@ title: Erste Schritte mit AEM Forms Edge Delivery Services - Tutorial für Entwi
 description: Dieses Tutorial hilft Ihnen, ein neues Adobe Experience Manager Forms-Projekt (AEM) einzurichten. In zehn bis zwanzig Minuten haben Sie Ihre eigenen Formulare erstellt.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
-source-git-commit: 74e3bc79a734bd2c686e28cdcbbda96a58268c77
+source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
 workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 8%
@@ -255,6 +255,7 @@ Bereit zur Präsentation Ihrer Erstellung? Verwenden Sie Git, um Ihre Änderunge
 
 Vorschau: `https://<branch>--<repo>--<owner>.hlx.page/`
 Produktion: `https://<branch>--<repo>--<owner>.hlx.live/`
+
 Herzlichen Glückwunsch! Sie haben Ihre lokale Entwicklungsumgebung erfolgreich eingerichtet und Ihre Änderungen bereitgestellt.
 
 

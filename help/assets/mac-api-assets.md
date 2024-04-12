@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '1587'
-ht-degree: 100%
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+workflow-type: tm+mt
+source-wordcount: '1631'
+ht-degree: 97%
 
 ---
 
@@ -23,12 +23,16 @@ ht-degree: 100%
 
 Die [!DNL Assets]-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für digitale Asstes, einschließlich Metadaten, Ausgabedarstellungen und Kommentaren sowie strukturierter Inhalte mit [!DNL Experience Manager]-Inhaltsfragmenten. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md).
 
+>[!NOTE]
+>
+>Die [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodell](/help/headless/content-fragment-openapis.md) sind auch verfügbar.
+
 So greifen Sie auf die API zu:
 
 1. Öffnen Sie das Dokument zum API-Service unter `https://[hostname]:[port]/api.json`.
 1. Folgen Sie dem Link zum [!DNL Assets]-Service, der zu `https://[hostname]:[server]/api/assets.json` führt.
 
-Die API antwortet mit einer JSON-Datei für einige MIME-Typen und einem Antwort-Code für alle MIME-Typen. Die JSON-Antwort ist optional und kann zum Beispiel nicht für PDF-Dateien verfügbar sein. Verwenden Sie den Antwort-Code für weitere Analysen oder Aktionen.
+Die API antwortet mit einer JSON-Datei für einige MIME-Typen und einem Antwort-Code für alle MIME-Typen. Die JSON-Antwort ist optional und kann zum Beispiel für PDF-Dateien nicht verfügbar sein. Verwenden Sie den Antwort-Code für weitere Analysen oder Aktionen.
 
 >[!NOTE]
 >
@@ -40,9 +44,17 @@ Ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) ist e
 
 Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in der [!DNL Experience Manager Assets] HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
+>[!NOTE]
+>
+>Die [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodell](/help/headless/content-fragment-openapis.md) sind auch verfügbar.
+
 ## Datenmodell {#data-model}
 
 Die [!DNL Assets]-HTTP-API stellt zwei wichtige Elemente bereit: Ordner und Assets (für Standard-Assets). Außerdem stellt sie ausführlichere Elemente für die benutzerdefinierten Datenmodelle bereit, die strukturierte Inhalte in Inhaltsfragmenten beschreiben. Weitere Informationen finden Sie im Abschnitt [Datenmodelle für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments).
+
+>[!NOTE]
+>
+>Die [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodell](/help/headless/content-fragment-openapis.md) sind auch verfügbar.
 
 ### Ordner {#folders}
 
@@ -75,6 +87,10 @@ In [!DNL Experience Manager] enthalten Assets die folgenden Elemente:
 * Optionale Kommentare.
 
 Weitere Informationen über Elemente in Inhaltsfragmenten finden Sie unter [Unterstützung von Inhaltsfragmenten in der Experience Manager Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md).
+
+>[!NOTE]
+>
+>Die [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodell](/help/headless/content-fragment-openapis.md) sind auch verfügbar.
 
 In [!DNL Experience Manager] enthält ein Ordner die folgenden Komponenten:
 
@@ -125,7 +141,7 @@ Ruft eine Siren-Darstellung eines vorhandenen Ordners und seiner untergeordneten
 
 **Antwort**: Die Klasse der zurückgegebenen Entität ist ein Asset oder ein Ordner. Die Eigenschaften der enthaltenen Entitäten bilden eine Teilmenge der vollständigen Eigenschaften jeder Entität. Um eine vollständige Darstellung der Entität zu erreichen, sollten Kundinnen und Kunden den Inhalt der URL abrufen, auf die der Link mit einem `rel` von `self` verweist.
 
-## Erstellen von Ordnern {#create-a-folder}
+## Erstellen eines Ordners {#create-a-folder}
 
 Erstellt einen `sling`: `OrderedFolder` im festgelegten Pfad. Wenn statt eines Knotennamens ein `*` angegeben wird, verwendet das Servlet den Parameternamen als Knotennamen. Die Anfrage akzeptiert eine der folgenden Optionen:
 

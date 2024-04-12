@@ -2,10 +2,10 @@
 title: API-Referenzmaterial
 description: AEM verfügt über umfangreiche und leistungsstarke APIs, die Sie für Ihr Digital-Experience-Projekt nutzen können.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: 3434d51c9b0bad02b0c3f0836341f671c9405182
-workflow-type: ht
-source-wordcount: '594'
-ht-degree: 100%
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+workflow-type: tm+mt
+source-wordcount: '608'
+ht-degree: 97%
 
 ---
 
@@ -72,6 +72,7 @@ AEM bietet anpassbare Komponenten- und Inhaltsbereitstellungsoptionen.
 | [Inhaltsfragment-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md) | Zugreifen auf Inhaltsfragmentinhalte direkt über die HTTP-API über CRUD-Vorgänge |
 | [Inhaltsfragment-GraphQL-API](/help/headless/graphql-api/content-fragments.md) | Effiziente Bereitstellung von Inhaltsfragmenten für JavaScript-Clients in Headless-CMS-Implementierungen |
 | [HTTP-API für Inhaltsfragment- Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=de) | Exaktes Format unterstützter HTTP-Asset-Anforderungen |
+| [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodell](/help/headless/content-fragment-openapis.md) | OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodell |
 
 ## SPA-spezifische APIs {#spa-apis}
 

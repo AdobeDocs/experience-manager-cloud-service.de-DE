@@ -2,10 +2,10 @@
 title: Arbeiten mit Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenerstellung und die Headless-Bereitstellung eignen.  Auch wie sie zusammen mit MSM verwendet werden können.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 02b96c27f985492396cfbd262b9fec450ec8d2c8
-workflow-type: ht
-source-wordcount: '2222'
-ht-degree: 100%
+source-git-commit: 930eca968807eaa9b322010d582973d431b9fa01
+workflow-type: tm+mt
+source-wordcount: '2230'
+ht-degree: 99%
 
 ---
 
@@ -61,6 +61,7 @@ Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurier
 >* [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/headless/graphql-api/content-fragments.md)
+>* Die [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodell](/help/headless/content-fragment-openapis.md)
 
 Die Anzahl der Kommunikationskanäle nimmt jährlich zu. Typischerweise beziehen sich Kanäle auf den Bereitstellungsmechanismus, und zwar wie folgt:
 

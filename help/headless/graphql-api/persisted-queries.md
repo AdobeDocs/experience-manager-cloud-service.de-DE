@@ -3,10 +3,10 @@ title: Persistente GraphQL-Abfragen
 description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service persistieren, um die Leistung zu optimieren. Persistente Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Client-Programme verbessert wird.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8b03da83c7f669d9295f7c8a82ce5c97fafe67c8
+source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
 workflow-type: tm+mt
-source-wordcount: '1869'
-ht-degree: 88%
+source-wordcount: '1952'
+ht-degree: 81%
 
 ---
 
@@ -408,7 +408,7 @@ Die standardmäßige OSGi-Konfiguration für Veröffentlichungsinstanzen:
 
 Standardmäßig sendet der `PersistedQueryServlet` eine `200`-Antwort, wenn er eine Abfrage ausführt, unabhängig vom tatsächlichen Ergebnis.
 
-Sie können [die OSGi-Einstellungen](/help/implementing/deploying/configuring-osgi.md) für die **Konfiguration des Dienstes für persistierte Abfragen** konfigurieren, um zu steuern, welcher Status-Code vom `/execute.json/persisted-query`-Endpunkt zurückgegeben wird, wenn ein Fehler in der persistierten Abfrage auftritt.
+Sie können [Konfigurieren der OSGi-Einstellungen](/help/implementing/deploying/configuring-osgi.md) für die **Konfigurationen für beständige Abfragen** , um zu steuern, ob detailliertere Status-Codes von der `/execute.json/persisted-query` -Endpunkt, wenn in der persistenten Abfrage ein Fehler auftritt.
 
 >[!NOTE]
 >
@@ -417,14 +417,20 @@ Sie können [die OSGi-Einstellungen](/help/implementing/deploying/configuring-os
 Das Feld `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) kann nach Bedarf definiert werden:
 
 * `false` (Standardwert):
-Es spielt keine Rolle, ob die persistierte Abfrage erfolgreich ist oder nicht. Die `/execute.json/persisted-query` gibt den Status-Code `200` zurück und der zurückgegebene Header `Content-Type` ist `application/json`.
+Es spielt keine Rolle, ob die persistierte Abfrage erfolgreich ist oder nicht. Die `Content-Type` zurückgegebene Kopfzeile ist `application/json`und die `/execute.json/persisted-query` *always* gibt den Statuscode aus `200`.
 
-* `true`:
-Der Endpunkt gibt je nach Fall `400` oder `500` zurück, wenn bei der Ausführung der gespeicherten Abfrage ein Fehler auftritt. Der zurückgegebene `Content-Type` ist `application/graphql-response+json`.
+* `true`: Die zurückgegebene `Content-Type` is `application/graphql-response+json`und der Endpunkt gibt den entsprechenden Antwort-Code zurück, wenn bei Ausführung der persistenten Abfrage ein Fehler auftritt:
+
+  | Code | Beschreibung |
+  |--- |--- |
+  | 200 | Erfolgreiche Antwort |
+  | 400 | Gibt an, dass keine Kopfzeilen vorhanden sind oder dass ein Problem mit dem persistenten Abfragepfad vorliegt. Beispielsweise Name der Konfiguration nicht angegeben, Suffix nicht angegeben und andere.<br>Siehe [Fehlerbehebung - GraphQL-Endpunkt nicht konfiguriert](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
+  | 404 | Die angeforderte Ressource kann nicht gefunden werden. Beispielsweise ist der GraphQL-Endpunkt nicht auf dem Server verfügbar.<br>Siehe [Fehlerbehebung - Fehlender Pfad in der von GraphQL gespeicherten Abfrage-URL](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
+  | 500 | Interner Server-Fehler. Beispielsweise Validierungsfehler, Persistenzfehler und andere. |
 
   >[!NOTE]
   >
-  >Siehe https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >Siehe auch https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Codieren der Abfrage-URL zur Verwendung in einer Mobile-App {#encoding-query-url}
 

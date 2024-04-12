@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre AEM-Inhaltsfragmente über die Konsole u
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
-workflow-type: ht
-source-wordcount: '2620'
-ht-degree: 100%
+source-git-commit: 3c550a08983ce198a6718d0c2120f1f5001fb28d
+workflow-type: tm+mt
+source-wordcount: '2629'
+ht-degree: 99%
 
 ---
 
@@ -72,6 +72,8 @@ Weitere Einzelheiten finden Sie unter:
 
 Wenn Sie **Inhaltsfragmente** auswählen, wird die Konsole in einer neuen Registerkarte geöffnet.
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Inhaltsfragmentkonsole – Übersicht](assets/cf-managing-console-overview.png)
 
 Hier können Sie sehen, dass es drei Hauptbereiche gibt:
@@ -84,6 +86,7 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
    * Hier können Sie die Ordnerstruktur ein- oder ausblenden
    * Sie können einen bestimmten Zweig des Baums auswählen
    * Die Größe kann geändert werden, um verschachtelte Ordner anzuzeigen
+   * Sie können zwischen der Anzeige von Inhaltsfragmenten oder [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 * Das Haupt-/rechte Bedienfeld – von hier aus können Sie:
    * Eine Liste aller Inhaltsfragmente im ausgewählten Zweig des Baums anzeigen:
       * Es werden die Inhaltsfragmente aus dem ausgewählten Ordner und dazu alle untergeordneten Ordner angezeigt.
@@ -132,6 +135,8 @@ Bestimmte Aktionen sind über die Konsole verfügbar, ohne ein bestimmtes Inhalt
 #### Aktionen für ein (ausgewähltes) Inhaltsfragment {#actions-selected-content-fragment}
 
 Wenn Sie ein bestimmtes Fragment auswählen, wird eine Symbolleiste geöffnet, die die verfügbaren Aktionen für dieses Fragment anzeigt. Sie können auch mehrere Fragmente auswählen. Die Auswahl der Aktionen wird dann entsprechend angepasst.
+
+<!-- CQDOC-21349: screenshot -->
 
 ![Konsole „Inhaltsfragmente“ – Symbolleiste für ein ausgewähltes Fragment](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -373,6 +378,8 @@ Wenn das entsprechende Dialogfeld geöffnet wird, können Sie den gewünschten S
 
 ## Suchen und Ersetzen {#find-and-replace}
 
+<!-- CQDOC-21349: screenshot -->
+
 Die Aktion **Ersetzen** ist verfügbar (in der oberen Symbolleiste), um den angegebenen Text in den ausgewählten Inhaltsfragmenten zu suchen und zu ersetzen.
 
 ![Suchen und Ersetzen](assets/cf-managing-find-replace.png)
@@ -385,8 +392,9 @@ Vor dem Ersetzen werden die Validierungskriterien überprüft und Sie werden üb
 >
 >Wenn Sie mehr als 20 Inhaltsfragmente auswählen, wird die Nachricht **Suchen und Ersetzen ist nicht möglich** angezeigt.
 
-![Ersetzen bestätigen](assets/cf-managing-confirm-replace.png)
+<!-- CQDOC-21349: screenshot -->
 
+![Ersetzen bestätigen](assets/cf-managing-confirm-replace.png)
 
 ## Löschen von Fragmenten {#deleting-a-fragment}
 
@@ -451,6 +459,8 @@ Der Filterbereich bietet folgende Optionen:
 
 Nach der Auswahl werden die Optionen **Filtern nach** angezeigt (unter dem Suchfeld). Sie können von dort aus abgewählt werden. Zum Beispiel:
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Inhaltsfragmentkonsole – Filtern](assets/cf-managing-console-filter.png)
 
 ### Schnelles Filtern {#fast-filtering}
@@ -473,9 +483,13 @@ Nach der Auswahl wird dies als Filtereigenschaft angezeigt und die Liste entspre
 
 Das Suchfeld unterstützt die Volltextsuche. Geben Sie Ihre Suchbegriffe in das Suchfeld ein:
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Konsole „Inhaltsfragmente“ – Suchen](assets/cf-managing-console-search-specification.png)
 
 Die ausgewählten Ergebnisse werden bereitgestellt:
+
+<!-- CQDOC-21349: screenshot -->
 
 ![Konsole „Inhaltsfragmente“ – Suchergebnisse](assets/cf-managing-console-search-results.png)
 

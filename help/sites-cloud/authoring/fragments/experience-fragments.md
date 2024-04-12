@@ -2,10 +2,10 @@
 title: Experience Fragments
 description: Verwenden Sie Experience Fragments von Adobe Experience Manager as a Cloud Service, um Ihre Erlebnisse wiederverwendbar und flexibel zu gestalten.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: ht
-source-wordcount: '2035'
-ht-degree: 100%
+source-git-commit: 0784bfc2928b218a566fdd252fee045ca5ae6b9c
+workflow-type: tm+mt
+source-wordcount: '2083'
+ht-degree: 97%
 
 ---
 
@@ -38,6 +38,7 @@ Ohne Experience Fragments müsste der Autor dieses Fragment kopieren und einfüg
 Mit Experience Fragments ersparen Sie sich das Kopieren/Einfügen.
 * Zur Unterstützung des Nutzungsszenarios mit Headless-Content-Management-Systemen.
 Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kunden. In diesem Fall würde das Erlebnis über ein System/einen Touchpoint eines Drittanbieters aufgenommen und dann an die Benutzerin bzw. den Benutzer weitergeben werden.
+* Mit [Multi-Site-Management (MSM)](/help/sites-cloud/administering/msm/overview.md), da ein Experience Fragment Teil einer Seite ist. Dies gilt sowohl für die einzelnen Fragmente als auch für die Ordner, in denen sie sich befinden.
 
 >[!NOTE]
 >
@@ -237,6 +238,10 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragments ers
    * **Variante**
    * **Variante als Live Copy**
 
+     >[!NOTE]
+     >
+     >Beim Erstellen einer anfänglichen Variante als Live Copy wird der Titel durch Verwendung der Live Copy-Quelle als Master-Variante übernommen.
+
 1. Definieren Sie die erforderlichen Eigenschaften:
 
    * **Vorlage**
@@ -279,7 +284,7 @@ Sie können eine oder mehrere Komponenten auswählen, um einen Baustein zur Wied
 
 ### Erstellen eines Bausteins {#creating-a-building-block}
 
-So erstellen Sie einen Baustein:
+So erstellen Sie einen neuen Baustein:
 
 1. Wählen Sie im Experience Fragment-Editor die Komponenten aus, die Sie wiederverwenden möchten:
 

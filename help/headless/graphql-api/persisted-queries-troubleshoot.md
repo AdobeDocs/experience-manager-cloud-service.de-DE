@@ -3,10 +3,10 @@ title: Fehlerbehebung bei persistierten GraphQL-Abfragen
 description: Erfahren Sie, wie Sie Probleme bei persistierten GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beheben können.
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
-source-wordcount: '353'
-ht-degree: 100%
+source-git-commit: 220e86f18e4a61304764753d8daecb68503e9fd0
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 87%
 
 ---
 
@@ -34,13 +34,13 @@ Gehen Sie zur Fehlerbehebung wie folgt vor:
 
 ## GraphQL-Endpunkt nicht konfiguriert {#graphql-endpoint-not-configured}
 
-Wenn persistierte Abfragen den Fehler-Code `400` oder `500` zusammen mit der Information `No suitable endpoint found` zurückgeben, bedeutet dies, dass in der AEM-Umgebung kein GraphQL-Endpunkt konfiguriert ist.
+Wenn persistente Abfragen die `404` Fehler-Code zusammen mit den Informationen `No suitable endpoint found`bedeutet dies, dass in der AEM Umgebung kein GraphQL-Endpunkt konfiguriert ist.
 
 Um dies zu korrigieren, führen Sie die Schritte zum Aktivieren und Veröffentlichen Ihres Endpunkts gemäß [Verwalten von GraphQL-Endpunkten in AEM](/help/headless/graphql-api/graphql-endpoint.md) aus.
 
 ## Fehlender Pfad in der von GraphQL persistierten Abfrage-URL {#missing-path-query-url}
 
-Wenn persistierte Abfragen den Fehler-Code `400` oder `500` mit der Information `Suffix: '/' does not contain a path` zurückgeben, wird das GraphQL-Servlet ohne Pfadsuffix aufgerufen.
+Wenn persistente Abfragen die `400` Fehlercode mit den Informationen `Suffix: '/' does not contain a path`, wird das GraphQL-Servlet ohne Pfadsuffix aufgerufen.
 
 Das Muster sollte `/graphql/execute.json/thePath` sein.
 
