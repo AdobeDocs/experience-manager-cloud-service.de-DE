@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 1dd2eae9201c86d2cdac78ff99634eff8ca57a05
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 82%
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ Keine
 
 * [Einstellung der JWT-Anmeldedaten in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
-Werfen Sie einen Blick auf [Eingestellte und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) um zu erfahren, was in AEM as a Cloud Service veraltet oder entfernt wurde.
+Lesen Sie unter [Eingestellte und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) nach, um zu erfahren, welche Funktionen und APIs in AEM as a Cloud Service eingestellt oder entfernt wurden.
 
 ### Änderungshinweis {#change-notice-15860}
 
