@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre AEM-Inhaltsfragmente über die Konsole u
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 3c550a08983ce198a6718d0c2120f1f5001fb28d
+source-git-commit: 404eb317562f974f72820c6e3aa019fbe043d7f7
 workflow-type: tm+mt
-source-wordcount: '2629'
+source-wordcount: '2643'
 ht-degree: 99%
 
 ---
@@ -454,6 +454,7 @@ Der Filterbereich bietet folgende Optionen:
 * eine Auswahl von Prädikaten;
    * einschließlich Inhaltsfragmentmodellen, Lokalisierung, Tags, Statusfeldern usw.
    * es kann ein Prädikat ausgewählt oder auch mehrere kombiniert werden, um den Filter zu erstellen.
+* **Unterordnerelemente ausschließen**, sodass Sie in Unterordnern gespeicherte Inhaltsfragmente ausschließen können
 * die Möglichkeit, Ihre Konfiguration zu **speichern**
 * die Option zum Abrufen eines gespeicherten Suchfilters für die Wiederverwendung
 

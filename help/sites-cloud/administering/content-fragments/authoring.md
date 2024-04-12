@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente verfassen 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
-workflow-type: ht
-source-wordcount: '2266'
-ht-degree: 100%
+source-git-commit: 6353bd50c1df43d9ce11616f71a69d8bfb5ab338
+workflow-type: tm+mt
+source-wordcount: '2381'
+ht-degree: 95%
 
 ---
 
@@ -370,6 +370,27 @@ Auf der Registerkarte **Versionsverlauf** im rechten Bereich werden Details zu d
 >Eine neue Version wird erstellt, wenn das Inhaltsfragment veröffentlicht wird.
 
 ![Inhaltsfragmenteditor – Überblick über den Versionsverlauf](assets/cf-authoring-version-history-overview.png)
+
+### Version vergleichen {#compare-version}
+
+Für ein Inhaltsfragment können Sie eine frühere Version mit der aktuellen Version vergleichen.
+
+So vergleichen Sie eine frühere Version mit der aktuellen Version:
+
+1. Wählen Sie das Symbol mit den drei Punkten neben der Version aus.
+
+1. Auswählen **Vergleichen**.
+
+![Inhaltsfragmente-Editor - Versionsverlauf - Vergleich](assets/cf-authoring-version-history-compare.png)
+
+Dadurch wird eine Ansicht geöffnet, die Unterschiede zwischen der aktuellen Version des Inhalts und der ausgewählten vorherigen Version des Inhaltsfragments anzeigt. Aus dem **Varianten mit Änderungen** in der Dropdown-Liste können Sie auswählen, ob Sie Unterschiede zum Hauptinhalt und/oder zum Inhalt einer Variante anzeigen möchten.
+
+Die Unterschiede sind farblich dargestellt:
+
+* Grün: Zeigt den hinzugefügten Inhalt an (zur aktuellen Version).
+* Rot: zeigt an, dass der Inhalt entfernt wurde (aus der aktuellen Version)
+
+![Inhaltsfragmente-Editor - Versionsverlauf - Versionen vergleichen](assets/cf-authoring-version-history-compare-versions.png)
 
 ### Auf eine Version zurücksetzen {#revert-version}
 
