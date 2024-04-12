@@ -1,12 +1,12 @@
 ---
-title: Erste Schritte mit AEM Forms Edge Delivery Services - Tutorial für Entwickler
-description: Dieses Tutorial hilft Ihnen, ein neues Adobe Experience Manager Forms-Projekt (AEM) einzurichten. In zehn bis zwanzig Minuten haben Sie Ihre eigenen Formulare erstellt.
+title: Erste Schritte mit AEM Forms Edge Delivery Services –Entwickler-Tutorial
+description: In diesem Tutorial lernen Sie alles über ein neues Adobe Experience Manager (AEM) Forms-Projekt. In zehn bis zwanzig Minuten haben Sie Ihre eigenen Formulare erstellt.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
 workflow-type: tm+mt
 source-wordcount: '1848'
-ht-degree: 8%
+ht-degree: 99%
 
 ---
 
@@ -14,107 +14,107 @@ ht-degree: 8%
 
 Im heutigen digitalen Zeitalter ist die Erstellung benutzerfreundlicher Formulare für jedes Unternehmen schlicht unverzichtbar. Mit AEM Forms Edge Delivery Services (EDS) können Sie Formulare mit vertrauten Tools wie Google Docs und Microsoft Office erstellen.
 
-Diese Formulare senden Daten direkt an eine Microsoft Excel- oder Google Tabellen-Datei, sodass Sie ein dynamisches Ökosystem und robuste APIs von Google Tabellen, Microsoft Excel und Microsoft SharePoint verwenden können, um gesendete Daten einfach zu verarbeiten oder einen bestehenden Geschäftsarbeitsablauf zu initiieren.
+Diese Formulare senden Daten direkt an eine Microsoft Excel- oder Google Tabellen-Datei, sodass Sie ein dynamisches Ökosystem und robuste APIs von Google Tabellen, Microsoft Excel und Microsoft SharePoint verwenden können, um die übermittelten Daten einfach zu verarbeiten oder einen bestehenden Business-Workflow zu initiieren.
 
-AEM Forms bietet einen Block, der als Adaptiver Forms-Block bezeichnet wird und mit dem Sie mühelos Formulare erstellen können, um erfasste Daten zu erfassen und zu speichern. Sie können [ein neues AEM mit vorkonfiguriertem Adaptive Forms Block erstellen](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oder [Fügen Sie den adaptiven Forms-Block zu einem bestehenden AEM hinzu.](#add-adaptive-forms-block-to-your-existing-aem-project).
+AEM Forms bietet einen Bock, der als adaptiver Formularblock bezeichnet wird und mit dem Sie mühelos Formulare erstellen können, um aufgenommene Daten zu erfassen und zu speichern. Sie können [ein neues AEM-Projekt vorkonfiguriert mit einem Block für ein adaptives Formular erstellen](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oder [den Block für ein adaptives Formular zu einem bestehenden AEM-Projekt hinzufügen.](#add-adaptive-forms-block-to-your-existing-aem-project).
 
-Dieses Tutorial zu AEM Forms führt Sie durch das Erstellen, Anzeigen einer Vorschau und Veröffentlichen Ihres eigenen benutzerdefinierten Formulars mit einem neuen Adobe Experience Manager (AEM) Forms-Projekt.
+Dieses AEM Forms-Tutorial führt Sie durch das Erstellen, Anzeigen einer Vorschau und Veröffentlichen Ihres eigenen benutzerdefinierten Formulars mit einem neuen Adobe Experience Manager (AEM) Forms-Projekt.
 
 ## Voraussetzungen
 
-* Sie verfügen über ein GitHub-Konto und verstehen die Git-Grundlagen.
-* Sie haben ein Google- oder Microsoft SharePoint-Konto.
-* Sie verstehen die Grundlagen von HTML, CSS und JavaScript.
+* Sie verfügen über ein GitHub-Konto und sind mit den Git-Grundlagen vertraut.
+* Sie verfügen über ein Google- oder Microsoft SharePoint-Konto.
+* Sie sind mit den Grundlagen von HTML, CSS und JavaScript vertraut.
 * Sie haben Node/npm für die lokale Entwicklung installiert.
 
-**Kopf hoch!** In diesem Tutorial werden macOS, Chrome und Visual Studio Code verwendet. Während die Schritte für andere Setups angepasst werden können, unterscheiden sich die Screenshots und spezifischen Elemente der Benutzeroberfläche möglicherweise je nach Betriebssystem, Browser und Code-Editor.
+**Hinweis:** In diesem Tutorial werden macOS, Chrome und Visual Studio Code verwendet. Während sich die Schritte für andere Setups anpassen lassen, können sich die Screenshots und spezifischen Elemente der Benutzeroberfläche je nach Betriebssystem, Browser und Code-Editor unterscheiden.
 
 
-## Erstellen Sie ein neues AEM-Projekt, das mit Adaptive Forms Block vorkonfiguriert ist.
+## Erstellen eines neuen, mit adaptivem Formularblock vorkonfigurierten AEM-Projekt
 
-Die AEM Forms-Vorlage für Bausteinvorlagen ermöglicht einen schnellen Einstieg in ein AEM Projekt, das mit dem Adaptiven Forms-Block vorkonfiguriert ist. Dies ist die schnellste und einfachste Methode, AEM Best Practices zu befolgen und direkt beim Erstellen Ihrer Formulare zu beginnen.
+Die AEM Forms-Bausteinvorlage ermöglicht einen schnellen Einstieg in ein AEM-Projekt, das mit dem adaptiven Formularblock vorkonfiguriert ist. Dies ist die schnellste und einfachste Methode, AEM Best Practices zu befolgen und direkt mit der Formularerstellung zu beginnen.
 
-### Erste Schritte mit der AEM Forms-Vorlage für Vorlagen für Vorlagen für Vorlagen
+### Erste Schritte mit der AEM Forms-Baustein-Repository-Vorlage
 
-1. Erstellen Sie ein GitHub-Repository für Ihr AEM Projekt. Erstellen des Repositorys:
+1. Erstellen Sie ein GitHub-Repository für Ihr AEM-Projekt. So erstellen Sie ein Repository:
    1. Navigieren Sie zu [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
-      ![AEM Forms-Vorlage](/help/edge/assets/aem-forms-boilerplate.png)
-   1. Klicken Sie auf **Verwenden Sie diese Vorlage** und wählen Sie die **Neues Repository erstellen** -Option. Der Bildschirm zum Erstellen eines neuen Repositorys wird geöffnet.
+      ![AEM Forms-Bausteinvorlage](/help/edge/assets/aem-forms-boilerplate.png)
+   1. Klicken Sie auf **Use this template** (Diese Vorlage verwenden) und wählen Sie die Option **Create a new repository** (Neues Repository erstellen) aus. Der Bildschirm zum Erstellen eines neuen Repositorys wird geöffnet.
 
-      ![Erstellen eines neuen Repositorys mithilfe von AEM Forms-Vorlage](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
+      ![Erstellen eines neuen Repositorys mithilfe der AEM Forms-Bausteinvorlage](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
 
-   1. Wählen Sie im Bildschirm &quot;Neues Repository erstellen&quot;die Option **owner** und geben Sie **Repository-Name** . Adobe empfiehlt, dass das Repository auf **Öffentlich**. Wählen Sie also die **öffentlich** und klicken Sie auf **Repository erstellen**.
+   1. Wählen Sie im Bildschirm zum Erstellen eines neuen Repositorys die **verantwortliche Person** aus und geben Sie den **Repository-Namen** an. Adobe empfiehlt, das Repository als **öffentlich** festzulegen. Wählen Sie daher die Option **Public** (öffentlich) aus und klicken Sie auf **Create Repository** (Repository erstellen).
 
-   ![Repository auf &quot;Öffentlich&quot;festlegen](/help/edge/assets/create-a-new-repo-keep-it-public.png)
+   ![Festlegen des Repositorys als öffentlich](/help/edge/assets/create-a-new-repo-keep-it-public.png)
 
 
-1. Installieren Sie die GitHub-App zur AEM Codesynchronisierung auf Ihrem Repository. So installieren Sie:
+1. Installieren Sie die AEM Code Sync GitHub App in Ihrem Repository. So installieren Sie sie:
    1. Navigieren Sie zu [https://github.com/apps/aem-code-sync/installations/new](https://github.com/apps/aem-code-sync/installations/new).
-   1. Wählen Sie im Bildschirm AEM Codesynchronisierung installieren die Option **Nur Repositorys auswählen** und wählen Sie das neu erstellte Repository aus. Klicken Sie auf „Speichern“.
+   1. Wählen Sie im Bildschirm zum Installieren der AEM-Code-Synchronisierung die Option **Only select Repositories** (Nur ausgewählte Repositorys) und dann das neu erstellte Repository aus. Klicken Sie auf „Speichern“.
 
-   ![Repository auf &quot;Öffentlich&quot;festlegen](/help/edge/assets/install-aem-code-sync-app-for-your-repo.png)
+   ![Festlegen des Repositorys als öffentlich](/help/edge/assets/install-aem-code-sync-app-for-your-repo.png)
 
    >[!NOTE]
    >
    >
    > Wenn Sie GitHub Enterprise mit IP-Filterung verwenden, können Sie die folgende IP zur Zulassungsliste hinzufügen: 3.227.118.73
 
-   Herzlichen Glückwunsch! Sie haben eine neue Website, die auf `https://<branch>--<repo>--<owner>.hlx.page/`.
+   Herzlichen Glückwunsch! Sie haben eine neue Website auf `https://<branch>--<repo>--<owner>.hlx.page/`.
 
    * `<branch>` bezieht sich auf die Verzweigung Ihres GitHub-Repositorys.
    * `<repository>` bezeichnet Ihr GitHub-Repository.
    * `<owner>` bezieht sich auf den Benutzernamen Ihres GitHub-Kontos, das Ihr GitHub-Repository hostet.
 
-   Wenn der Zweigname beispielsweise `main`, ist das Repository `wefinance`, und der Eigentümer ist `wkndforms`, würde die Website unter [https://main—wefinance—wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
+   Wenn der Name der Verzweigung beispielsweise `main` lautet, das Repository `wefinance` und der Eigentümer `wkndforms` ist, würde die Website unter [https://main--wefinance--wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/) ausgeführt.
 
 
 
 ### Verknüpfen Ihrer eigenen Inhaltsquelle
 
-Ihr neu erstelltes GitHub-Repository verweist auf [Beispielinhalt, der im Ordner &quot;Google Drive&quot;gespeichert ist](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). Dieser schreibgeschützte Inhalt bietet einen guten Ausgangspunkt für Ihre Formulare. Sie können es in Ihr eigenes Google-Laufwerk kopieren und an Ihre Anforderungen anpassen.
+Ihr neu erstelltes GitHub-Repository verweist auf [Beispielinhalt, der im Ordner „Google Drive“ gespeichert ist](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). Dieser schreibgeschützte Inhalt bietet einen guten Ausgangspunkt für Ihre Formulare. Sie können ihn in Ihr eigenes Google Drive kopieren und an Ihre Anforderungen anpassen.
 
-![Beispielinhalt auf dem Google-Laufwerk](/help/edge/assets/folder-with-sample-content.png)
+![Beispielinhalt auf Google Drive](/help/edge/assets/folder-with-sample-content.png)
 
-So kopieren Sie den Beispielinhalt in Ihren eigenen Inhaltsordner und verweisen Ihr GitHub-Repository auf Ihren eigenen Inhaltsordner:
+Kopieren des Beispielinhalts in Ihren eigenen Inhaltsordner und Verweisen Ihres GitHub-Repositorys auf Ihren eigenen Inhaltsordner:
 
-1. Erstellen Sie einen neuen Ordner speziell für Ihre AEM in Google Drive oder Microsoft SharePoint. In diesem Dokument wird ein Ordner verwendet, der in Microsoft SharePoint erstellt wurde.
+1. Erstellen Sie einen neuen Ordner speziell für Ihren AEM-Inhalt in Google Drive oder Microsoft SharePoint. In diesem Dokument wird ein Ordner verwendet, der in Microsoft SharePoint erstellt wurde.
 
-1. Geben Sie den Ordner für den Adobe Experience Manager-Benutzer frei (helix@adobe.com).
+1. Geben Sie den Ordner für die Benutzerin bzw. den Benutzer von Adobe Experience Manager frei (helix@adobe.com).
 
-   ![Verwenden Sie die Option Zugriff verwalten , um Ordner für AEM Benutzer - SharePoint freizugeben.](/help/edge/assets/share-folder-with-aem-user.png)
+   ![SharePoint: Verwenden der Option „Zugriff verwalten“, um Ordner für die AEM-Benutzerin bzw. den Benutzer freizugeben.](/help/edge/assets/share-folder-with-aem-user.png)
 
-   ![Verwenden Sie die Option Zugriff verwalten , um Ordner für AEM Benutzer freizugeben - Google Drive](/help/edge/assets/share-google-drive-folder.png)
-
-
-   Stellen Sie sicher, dass Sie dem Adobe Experience Manager-Benutzer Bearbeitungsrechte für den Ordner zugewiesen haben.
-
-   ![Ordner für AEM Benutzer freigeben, Bearbeitungsrechte bereitstellen SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
-
-   ![Ordner für AEM Benutzer freigeben, Bearbeitungsrechte bereitstellen - Google Drive](/help/edge/assets/add-aem-user-google-folder.png)
-
-1. Kopieren Sie die [Beispielinhalt, der im Ordner &quot;Google Drive&quot;gespeichert ist](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_) in Ihren Ordner. So kopieren Sie:
-
-   1. Laden Sie die Dateien zusammen herunter oder laden Sie einzelne Dateien herunter.
-
-      ![Beispielinhalt herunterladen](/help/edge/assets/download-sample-content.png)
-
-      Die `nav` und `footer` -Dateien definieren das grundlegende Layout Ihrer Seiten und ändern sich im gesamten Projekt nur selten. Sie haben auch eine bestimmte Struktur, die sich von den meisten anderen Inhaltsdateien unterscheidet. Indem Sie sich diese Dateien ansehen, werden Sie ein Gefühl dafür bekommen, wie Inhalte in AEM Projekte organisiert werden.
+   ![Google Drive: Verwenden der Option „Zugriff verwalten“, um Ordner für die AEM-Benutzerin bzw. den Benutzer freizugeben.](/help/edge/assets/share-google-drive-folder.png)
 
 
-   1. Laden Sie diese Dateien in den Ordner Microsoft SharePoint oder Google Drive hoch.
+   Stellen Sie sicher, dass Sie der Adobe Experience Manager-Benutzerin bzw. dem -Benutzer Bearbeitungsrechte für den Ordner zugewiesen haben.
 
-      ![Beispielinhalt auf dem Google-Laufwerk](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+   ![SharePoint: Freigeben des Ordners für die AEM-Benutzerin bzw. den -Benutzer und Bereitstellen von Bearbeitungsrechten](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
 
-      Stellen Sie sicher, dass Sie die  `enquiry` Blätter aus dem Beispielinhalt in Ihren Ordner auf Google Drive oder Microsoft SharePoint. Sie enthält die Struktur für ein Beispielformular.
+   ![Google Drive: Freigeben des Ordners für die AEM-Benutzerin bzw. den -Benutzer und Bereitstellen von Bearbeitungsrechten](/help/edge/assets/add-aem-user-google-folder.png)
 
-1. Nachdem Sie Ihren Inhaltsordner eingerichtet haben, ist es an der Zeit, ihn mit Ihrem Projekt auf GitHub zu verknüpfen, das Sie zuvor mit AEM Forms-Vorlage erstellt haben. So verbinden Sie sich:
+1. Kopieren Sie den [Beispielinhalt, der im Google Drive-Ordner gespeichert ist](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_), in Ihren Ordner. So kopieren Sie ihn:
 
-   1. Wechseln Sie zum GitHub-Repository, das Sie zuvor mit AEM Forms Boilerplate erstellt haben.
+   1. Laden Sie die Dateien zusammen oder als Einzeldateien herunter.
+
+      ![Herunterladen von Beispielinhalt](/help/edge/assets/download-sample-content.png)
+
+      Die Dateien `nav` und `footer` definieren das grundlegende Layout Ihrer Seiten und ändern sich im gesamten Projekt nur selten. Sie haben auch eine bestimmte Struktur, die sich von den meisten anderen Inhaltsdateien unterscheidet. Indem Sie sich diese Dateien ansehen, werden Sie ein Gefühl dafür bekommen, wie Inhalte in AEM Projekten organisiert werden.
+
+
+   1. Laden Sie diese Dateien in den Microsoft SharePoint- oder Google Drive-Ordner hoch.
+
+      ![Beispielinhalt auf Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+
+      Stellen Sie sicher, dass Sie das Blatt `enquiry` aus dem Beispielinhalt in Ihren Ordner auf Google Drive oder Microsoft SharePoint kopieren. Es enthält die Struktur für ein Beispielformular.
+
+1. Nachdem Sie Ihren Inhaltsordner eingerichtet haben, ist es an der Zeit, ihn mit Ihrem Projekt auf GitHub zu verknüpfen, das Sie zuvor mit dem AEM Forms-Textbaustein erstellt haben. So richten Sie die Verbindung ein:
+
+   1. Wechseln Sie zum GitHub-Repository, das Sie zuvor mit dem AEM Forms-Textbaustein erstellt haben.
    1. Öffnen Sie `fstab.yaml` zur Bearbeitung.
-   1. Ersetzen Sie die vorhandene Referenz durch den Pfad zum Ordner, den Sie für den AEM Benutzer freigegeben haben (helix@adobe.com).
+   1. Ersetzen Sie die vorhandene Referenz durch den Pfad zum Ordner, den Sie für die AEM-Benutzerin bzw. den -Benutzer freigegeben haben (helix@adobe.com).
 
-      ![Beispielinhalt auf dem Google-Laufwerk](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
+      ![Beispielinhalt auf Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
 
       Wenn Sie Microsoft SharePoint verwenden, verwendet der Ordnerpfad das folgende Format:
@@ -123,7 +123,7 @@ So kopieren Sie den Beispielinhalt in Ihren eigenen Inhaltsordner und verweisen 
       https://<tenant>.SharePoint.com/sites/<sp-site>/Shared%20Documents/<folder-name>
       ```
 
-      Beispiel:
+      Zum Beispiel:
 
       ```HTML
       https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
@@ -132,45 +132,45 @@ So kopieren Sie den Beispielinhalt in Ihren eigenen Inhaltsordner und verweisen 
       Weitere Informationen zum Verwalten von Dateien mit Microsoft SharePoint finden Sie unter [Verwendung von Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
-   1. Aktualisieren bestätigen `fsatb.yaml` -Datei, sobald Sie die Referenz aktualisiert haben und alles gut aussieht. Wenn Build-Probleme auftreten, lesen Sie [Beheben von GitHub-Build-Problemen](#troubleshooting-github-build-issues).
+   1. Übergeben Sie die aktualisierte Datei `fsatb.yaml`, sobald Sie die Referenz aktualisiert haben und alles gut aussieht. Wenn Build-Probleme auftreten, lesen Sie [Beheben von Build-Problemen in GitHub](#troubleshooting-github-build-issues).
 
 
 
-      ![Aktualisierte Datei &quot;fsatab.yaml&quot;bestätigen](/help/edge/assets/commit-updated-fstab-yaml.png)
+      ![Übergeben der aktualisierten Datei fsatab.yaml](/help/edge/assets/commit-updated-fstab-yaml.png)
 
-      Dadurch wird Ihr Inhaltsordner mit Ihrer Website verbunden. Nach der Aktualisierung des Verweises treten möglicherweise anfänglich Fehler vom Typ &quot;404 nicht gefunden&quot;auf. Dies liegt daran, dass Ihre Inhalte noch nicht in der Vorschau angezeigt wurden. Im nächsten Abschnitt wird erläutert, wie Sie mit der Bearbeitung und Vorschau Ihres Inhalts beginnen können.
+      Dadurch wird Ihr Inhaltsordner mit Ihrer Website verbunden.  Nach der Aktualisierung der Referenz treten möglicherweise anfänglich Fehler vom Typ „404 nicht gefunden“ auf. Dies liegt daran, dass Ihre Inhalte noch nicht in der Vorschau angezeigt wurden. Im nächsten Abschnitt wird erläutert, wie Sie mit der Bearbeitung und Vorschau Ihres Inhalts beginnen können.
 
 
 
-### Vorschau erstellen und Inhalt veröffentlichen
+### Vorschau und Veröffentlichen Ihres Inhalts
 
-Nach Abschluss des letzten Schritts ist Ihre neue Inhaltsquelle nicht leer, sie wird jedoch erst auf Ihrer Website sichtbar sein, wenn sie in die Vorschau- oder Live-Phasen weitergeleitet wird. Derzeit kann dies zu 404-Fehlern führen.
+Nach Abschluss des letzten Schritts ist Ihre neue Inhaltsquelle zwar nicht leer, sie wird jedoch erst auf Ihrer Website sichtbar, wenn sie in die Vorschau- oder Live-Phasen weitergeleitet wird. Derzeit kann dies zu 404-Fehlern führen.
 
-So zeigen Sie eine Vorschau von nicht veröffentlichten Inhalten an:
+So zeigen Sie nicht veröffentlichte Inhalte in einer Vorschau an:
 
-1. Installieren Sie die Chrome-Erweiterung namens [AEM Sidekick](https://chrome.google.com/webstore/detail/helix-sidekick-beta/ccfggkjabjahcjoljmgmklhpaccedipo).
+1. Installieren Sie die Chrome-Erweiterung [AEM Sidekick](https://chrome.google.com/webstore/detail/helix-sidekick-beta/ccfggkjabjahcjoljmgmklhpaccedipo).
 
    ![Installieren von AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
 
-   Nachdem Sie die Erweiterung in Chrome installiert haben, vergessen Sie nicht, sie zu veröffentlichen. Dies erleichtert die Suche.
+   Nachdem Sie die Erweiterung in Chrome installiert haben, vergessen Sie nicht, sie anzuheften. So können Sie sie einfacher finden.
 
-   ![Pin AEM Sidekick](/help/edge/assets/pin-aem-sidekick.png)
+   ![Anheften von AEM Sidekick](/help/edge/assets/pin-aem-sidekick.png)
 
-1. Um die Sidekick Chrome-Erweiterung einzurichten, wechseln Sie zum Ordner &quot;Google Drive&quot;oder &quot;Microsoft SharePoint&quot;und klicken Sie mit der rechten Maustaste auf das Erweiterungssymbol in der Browser-Symbolleiste und wählen Sie `Add this project`.
+1. Um die Sidekick-Chrome-Erweiterung einzurichten, wechseln Sie zum zuvor freigegebenen Google Drive- oder Microsoft SharePoint-Ordner, klicken Sie in der Browser-Symbolleiste mit der rechten Maustaste auf das Erweiterungssymbol und wählen Sie `Add this project` aus.
 
-   ![AEM Sidekick - Hinzufügen eines Projekts](/help/edge/assets/aem-sidekick-add-a-project.png)
+   ![AEM Sidekick – Hinzufügen eines Projekts](/help/edge/assets/aem-sidekick-add-a-project.png)
 
-   Wenn die Erweiterung installiert ist und Ihr Projekt hinzugefügt wird, können Sie Ihre Inhalte auf Ihrem Google-Laufwerk in der Vorschau anzeigen und veröffentlichen.
+   Wenn die Erweiterung installiert und Ihr Projekt hinzugefügt ist, können Sie Ihre Inhalte auf Ihrem Google Drive in einer Vorschau anzeigen und veröffentlichen.
 
-1. Wählen Sie alle Dokumente im Ordner Microsoft SharePoint oder Google Drive aus. Sie können mehrere Dokumente auswählen, indem Sie beim Klicken die Strg-Taste (Windows/Linux) oder die Befehlstaste (Mac) gedrückt halten.
+1. Wählen Sie alle Dokumente im Microsoft SharePoint- oder Google Drive-Ordner aus. Sie können mehrere Dokumente auswählen, indem Sie mit gedrückter Strg-Taste (Windows/Linux) oder Befehlstaste (Mac) auf diese klicken.
 
-   ![Alle Dateien auswählen](/help/edge/assets/select-all-files.png)
+   ![Auswählen aller Dateien](/help/edge/assets/select-all-files.png)
 
-1. Klicken Sie auf das AEM Sidekick-Symbol, das in Ihre Chrome-Erweiterungsleiste eingefügt ist. Auf dem Bildschirm wird eine Symbolleiste angezeigt. Sie können die Vorschau oder Veröffentlichung des Inhalts auswählen.
+1. Klicken Sie auf das AEM Sidekick-Symbol, das an Ihrer Chrome-Erweiterungsleiste angeheftet ist. Auf dem Bildschirm wird eine Symbolleiste angezeigt. Sie können die Inhalte in einer Vorschau anzeigen oder veröffentlichen.
 
-   Wenn Sie `index`, `nav`, `footer` und `enquiry` -Dateien sind, sind dies separate Dokumente mit eigenen Vorschau- und Veröffentlichungszyklen. Stellen Sie daher sicher, dass Sie alle Dokumente in der Vorschau anzeigen (und veröffentlichen).
+   Wenn Sie `index`-, `nav`-, `footer`- und `enquiry`-Dateien herüberkopiert haben, handelt es sich dabei um separate Dokumente mit eigenen Vorschau- und Veröffentlichungszyklen. Stellen Sie daher sicher, dass Sie alle Dokumente in einer Vorschau anzeigen (und veröffentlichen).
 
-   Nach der Vorschau der Dateien werden die Dokumente in neuen Browserregisterkarten angezeigt. Um eine Vorschau des Beispielformulars anzuzeigen, navigieren Sie zur folgenden URL:
+   Nach Vorschau der Dateien werden die Dokumente auf neuen Browser-Registerkarten angezeigt. Um das Beispielformular in einer Vorschau anzuzeigen, navigieren Sie zur folgenden URL:
 
 
    ```HTML
@@ -182,36 +182,36 @@ So zeigen Sie eine Vorschau von nicht veröffentlichten Inhalten an:
    * `<owner>` bezieht sich auf den Benutzernamen Ihres GitHub-Kontos, das Ihr GitHub-Repository hostet.
 
 
-   `https://<branch>--<repo>--<owner>.hlx.page/enquiry` URL.
+   URL.`https://<branch>--<repo>--<owner>.hlx.page/enquiry`
 
-   Wenn das Repository Ihres Projekts beispielsweise &quot;wefinance&quot;heißt, befindet es sich unter dem Kontoinhaber &quot;wkndforms&quot;und Sie verwenden die &quot;main&quot;-Verzweigung, lautet die URL:
+   Wenn das Repository Ihres Projekts beispielsweise „wefinance“ heißt, befindet es sich unter dem Kontobesitzer bzw. der Kontobesitzerin „wkndforms“. Wenn Sie die Verzweigung „main“ verwenden, sieht die URL wie folgt aus:
 
-   [https://main—wefinance—wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
+   [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page)
 
 ### Erstellen eines Formulars
 
-Der Beispielinhalt enthält eine &quot;Anfrage&quot;-Vorlage, die als Vorlage für das &quot;Anfrage&quot;-Formular dient. Jede Zeile des Arbeitsblatts stellt eine [Formularfeld](/help/edge/docs/forms/form-components.md#available-components)und die Spaltenüberschriften definieren die [Feldeigenschaften](/help/edge/docs/forms/form-components.md#available-components). Mit diesem Musterformular erhalten Sie einen Vorsprung beim Erstellen Ihres Formulars.
+Der Beispielinhalt enthält ein Blatt „enquiry“, das als Vorlage für das Formular „enquiry“ dient. Jede Zeile des Blatts steht für ein [Formularfeld](/help/edge/docs/forms/form-components.md#available-components) und die Spaltenüberschriften definieren die [Feldeigenschaften](/help/edge/docs/forms/form-components.md#available-components). Mit diesem Beispielformular können Sie sofort mit der Formularerstellung loslegen.
 
-![Anfrageformular](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
+![Formular „enquiry“](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
-Beginnen wir mit der Aktualisierung einer Feldbeschriftung. Öffnen Sie das &#39;Anfrage&#39;-Blatt zur Bearbeitung, ändern Sie den Titel der Senden-Schaltfläche in `Let's Chat` und verwenden Sie AEM Sidekick, um die Datei in der Vorschau anzuzeigen und zu veröffentlichen.
+Aktualisieren wir zunächst einen Feldtitel. Öffnen Sie das Blatt „enquiry“ zur Bearbeitung, ändern Sie den Titel der Senden-Schaltfläche in `Let's Chat` und verwenden Sie AEM Sidekick, um die Datei in einer Vorschau anzuzeigen und zu veröffentlichen.
 
-![Anfrageformular](/help/edge/assets/enquiry-form-preview-publish.png)
+![Formular „enquiry“](/help/edge/assets/enquiry-form-preview-publish.png)
 
-Wenn Sie die Datei in der Vorschau anzeigen oder veröffentlichen, wird eine JSON-Version der Datei auf einer neuen Registerkarte angezeigt. Kopieren Sie die Vorschau-URL (.hlx.page) oder die Veröffentlichungs-URL (.hlx.live) der Datei.
+Wenn Sie die Datei in einer Vorschau anzeigen oder veröffentlichen, wird eine JSON-Version der Datei auf einer neuen Registerkarte angezeigt. Kopieren Sie die Vorschau-URL (.hlx.page) oder die Veröffentlichungs-URL (.hlx.live) der Datei.
 
-![JSON der Formulartabelle](/help/edge/assets//preview-and-publish-enquiry-form.png)
+![JSON des Formular-Arbeitsblatts](/help/edge/assets//preview-and-publish-enquiry-form.png)
 
-Öffnen Sie die `enquiry` und ersetzen Sie die URL im Formularblock durch die URL der im vorherigen Schritt kopierten Datei. Stellen Sie sicher, dass die URL ein Hyperlink ist.
+Öffnen Sie die `enquiry`-Datei und ersetzen Sie die URL im Formularblock durch die URL der im vorherigen Schritt kopierten Datei. Stellen Sie sicher, dass die URL ein Hyperlink ist.
 
-![Abfragedatei mit der .json-URL der URL des Arbeitsblatts](/help/edge/assets/enquiry-doc-to-embed-form.png)
+![„enquiry“-Datei mit der .json-URL der URL des Arbeitsblatts](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
-Verwenden Sie AEM Sidekick, um das Anfragedokument in der Vorschau anzuzeigen und zu veröffentlichen.
+Verwenden Sie AEM Sidekick, um das „enquiry“-Dokument in einer Vorschau anzuzeigen und zu veröffentlichen.
 
-![Abfragedatei mit der .json-URL der URL des Arbeitsblatts](/help/edge/assets/preview-and-publish-enquiry-document.png)
+![„enquiry“-Datei mit der .json-URL der URL des Arbeitsblatts](/help/edge/assets/preview-and-publish-enquiry-document.png)
 
 
-Um eine Vorschau des aktualisierten Anfrageformulars anzuzeigen, gehen Sie zur folgenden URL:
+Um eine Vorschau des aktualisierten Formulars „enquiry“ anzuzeigen, gehen Sie zur folgenden URL:
 
 
 ```HTML
@@ -219,24 +219,24 @@ Um eine Vorschau des aktualisierten Anfrageformulars anzuzeigen, gehen Sie zur f
        
 ```
 
-Der Titel der Senden-Schaltfläche wird aktualisiert auf `Let's Chat`.
+Der Titel der Senden-Schaltfläche wird in `Let's Chat` geändert.
 
-![Anfrageformular](/help/edge/assets/updated-form.png)
+![Formular „enquiry“](/help/edge/assets/updated-form.png)
 
-Ausführliche Informationen zum Erstellen und Veröffentlichen eines neuen Formulars erhalten Sie im Abschnitt [Formular erstellen](/help/edge/docs/forms/create-forms.md) Handbuch.
+Ausführliche Informationen zum Erstellen und Veröffentlichen eines neuen Formulars finden Sie in der Anleitung [Erstellen eines Formulars](/help/edge/docs/forms/create-forms.md).
 
-### Entwickeln von Stil und Funktionalität
+### Entwickeln von Stilen und Funktionen
 
 
-So können Sie in kurzer Zeit mit einer lokalen AEM-Entwicklungsumgebung arbeiten:
+Gehen Sie wie folgt vor, um in kürzester Zeit über eine lokale AEM-Entwicklungsumgebung zu verfügen:
 
-1. Installieren der AEM-CLI: Die AEM-CLI vereinfacht die Entwicklungsaufgaben. Installieren wir es global mit npm:
+1. AEM-CLI installieren: Die AEM-CLI vereinfacht Entwicklungsaufgaben. Installieren Sie sie global mit npm:
 
    ```Bash
        npm install -g @adobe/aem-cli
    ```
 
-1. Klonen Sie Ihr GitHub-Projekt: Klonen Sie Ihr Projekt-Repository von GitHub mithilfe des folgenden Befehls und ersetzen Sie es durch <owner> mit dem Repository-Eigentümer und <repo> mit dem Repository-Namen:
+1. GitHub-Projekt klonen: Klonen Sie Ihr Projekt-Repository von GitHub mithilfe des folgenden Befehls und ersetzen Sie <owner> durch die Repository-Besitzerin bzw. den Repository-Besitzer und <repo> mit dem Repository-Namen:
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -249,9 +249,9 @@ So können Sie in kurzer Zeit mit einer lokalen AEM-Entwicklungsumgebung arbeite
    aem up
    ```
 
-Adaptiver Forms-Block `blocks/form` Ordner ist Ihr Spielplatz für Stile und Code für Ihre Formulare! Alle bearbeiten `.css` oder `.js` -Dateien in diesem Verzeichnis speichern, werden die Änderungen sofort in Ihrem Browser angezeigt.
+Der Ordner `blocks/form` des adaptiven Formularblocks ist Ihr Spielplatz für Stile und Code für Ihre Formulare! Sie können alle `.css`- oder `.js`-Dateien in diesem Verzeichnis bearbeiten. Die Änderungen werden sofort in Ihrem Browser angezeigt.
 
-Bereit zur Präsentation Ihrer Erstellung? Verwenden Sie Git, um Ihre Änderungen zu übernehmen und zu übertragen. Dadurch werden Ihre Vorschau- und Produktionsumgebungen aktualisiert, auf die über diese URLs zugegriffen werden kann (Platzhalter durch Ihre Projektdetails ersetzen):
+Bereit zur Präsentation Ihrer Kreation? Verwenden Sie Git, um Ihre Änderungen zu bestätigen und zu übertragen. Dadurch werden Ihre Vorschau- und Produktionsumgebungen aktualisiert, auf die über diese URLs zugegriffen werden kann (Platzhalter durch Ihre Projektdetails ersetzen):
 
 Vorschau: `https://<branch>--<repo>--<owner>.hlx.page/`
 Produktion: `https://<branch>--<repo>--<owner>.hlx.live/`
@@ -260,31 +260,31 @@ Herzlichen Glückwunsch! Sie haben Ihre lokale Entwicklungsumgebung erfolgreich 
 
 
 
-## Adaptiven Forms-Block zu Ihrem bestehenden AEM hinzufügen
+## Hinzufügen eines adaptiven Formularblocks zu Ihrem bestehenden AEM-Projekt
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-Wenn Sie über ein vorhandenes AEM-Projekt verfügen, können Sie den Block Adaptive Forms in Ihr aktuelles Projekt integrieren, um mit der Formularerstellung zu beginnen.
+Wenn Sie über ein vorhandenes AEM-Projekt verfügen, können Sie den adaptiven Formularblock in Ihr aktuelles Projekt integrieren, um mit der Formularerstellung zu beginnen.
 
 >[!NOTE]
 >
 >
-> Dieser Schritt gilt für Projekte, die mit dem [AEM](https://github.com/adobe/aem-boilerplate). Wenn Sie Ihr AEM Projekt mit dem [AEM Forms-Vorlage](https://github.com/adobe-rnd/aem-boilerplate-forms)können Sie diesen Schritt überspringen.
+> Dieser Schritt gilt für Projekte, die mit dem [AEM-Textbaustein](https://github.com/adobe/aem-boilerplate) erstellt wurden. Wenn Sie Ihr AEM Projekt mit dem [AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms) erstellt haben, können Sie diesen Schritt überspringen.
 
-So integrieren Sie:
+So integrieren Sie ihn:
 
-1. Klonen Sie das Adaptive Forms Block-Repository: [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) auf Ihren Computer.
+1. Klonen Sie das Repository des adaptiven Formularblocks, [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms), auf Ihren Computer.
 
-1. Suchen Sie im heruntergeladenen Ordner nach dem `blocks/form` Ordner. Kopieren Sie diesen Ordner. Navigieren Sie nun zur lokalen AEM Ihres Projekts. `blocks` und fügen Sie den kopierten Formularordner hier ein.
+1. Suchen Sie im heruntergeladenen Ordner nach dem Ordner `blocks/form`. Kopieren Sie diesen Ordner.  Navigieren Sie nun zum lokalen Ordner `blocks` Ihres AEM-Projekts und fügen Sie den kopierten Formularordner hier ein.
 
-1. Übernehmen Sie diese Änderungen und übertragen Sie sie in Ihr AEM Projekt auf GitHub.
-
-
-Das war´s! Der Adaptive Forms-Block ist jetzt Teil Ihres AEM-Projekts. Sie können mit der Erstellung und dem Hinzufügen von Formularen zu Ihren AEM beginnen.
+1. Bestätigen Sie diese Änderungen und übertragen Sie sie in Ihr AEM-Projekt auf GitHub.
 
 
-## Beheben von GitHub-Build-Problemen
+Das war&#39;s! Der adaptive Formularblock ist jetzt Teil Ihres AEM-Projekts. Sie können mit der Erstellung und dem Hinzufügen von Formularen zu Ihren AEM-Seiten beginnen.
+
+
+## Beheben von Build-Problemen in GitHub
 
 Stellen Sie einen reibungslosen Build-Prozess in GitHub sicher, indem Sie potenzielle Probleme beheben:
 
@@ -292,7 +292,7 @@ Stellen Sie einen reibungslosen Build-Prozess in GitHub sicher, indem Sie potenz
 Wenn der Fehler „Pfad zum Modul ‚../../scripts/lib-franklin.js‘ kann nicht aufgelöst werden“ auftritt, navigieren Sie zu [EDS-Projekt]/blocks/forms/form.js. Aktualisieren Sie die Importanweisung, indem Sie die Datei „lib-franklin.js“ durch die Datei „aem.js“ ersetzen.
 
 * **Beheben von Linting-Fehlern:**
-Sollten Sie auf Linting-Fehler stoßen, können Sie diese umgehen. Öffnen Sie die [EDS-Projekt]/package.json und ändern Sie das Skript &quot;lint&quot;von `"lint": "npm run lint:js && npm run lint:css"` nach `"lint": "echo 'skipping linting for now'"`. Speichern Sie die Datei und übertragen Sie die Änderungen auf Ihr GitHub-Projekt.
+Sollten Sie auf Linting-Fehler stoßen, können Sie diese umgehen. Öffnen Sie die Datei [EDS Project]/package.json und ändern Sie das Skript „lint“ von `"lint": "npm run lint:js && npm run lint:css"` zu `"lint": "echo 'skipping linting for now'"`. Speichern Sie die Datei und übertragen Sie die Änderungen auf Ihr GitHub-Projekt.
 
 
 ## Siehe auch

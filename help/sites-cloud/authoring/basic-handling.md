@@ -5,7 +5,7 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: 40759b8c07833b0927fa374b906d4202bf258249
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -97,7 +97,7 @@ Die Kopfzeile befindet sich immer am oberen Rand des Bildschirms. Die meisten Op
 
   ![Feedback-Schaltfläche](/help/sites-cloud/authoring/assets/basic-handling-feedback.png)
 
-* Ihre IMS-Organisation - Wählen Sie diese Option aus, um sie bei Bedarf zu ändern.
+* Ihre IMS-Organisation – Wählen Sie diese Option aus, um sie bei Bedarf zu ändern.
 
 * [Lösungen](https://www.adobe.com/experience-cloud.html): Wählen Sie diese Option aus, um auf Ihre anderen Adobe-Lösungen zuzugreifen.
 

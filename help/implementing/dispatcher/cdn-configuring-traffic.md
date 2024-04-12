@@ -1,34 +1,34 @@
 ---
 title: Konfigurieren von Traffic im CDN
-description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Regeln und Filter in einer Konfigurationsdatei deklarieren und sie mithilfe der Cloud Manager Configuration Pipeline im CDN bereitstellen.
+description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Regeln und Filter in einer Konfigurationsdatei deklarieren und sie mithilfe der Cloud Manager-Konfigurations-Pipeline im CDN bereitstellen.
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 source-git-commit: 1e2d147aec53fc0f5be53571078ccebdda63c819
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1109'
+ht-degree: 81%
 
 ---
 
 # Konfigurieren von Traffic im CDN {#cdn-configuring-cloud}
 
 >[!NOTE]
->Diese Funktion ist noch nicht allgemein verfügbar. Um dem Programm für frühe Anwender beizutreten, senden Sie eine E-Mail `aemcs-cdn-config-adopter@adobe.com` und beschreiben Sie Ihren Anwendungsfall.
+>Diese Funktion ist noch nicht allgemein verfügbar.  Um dem Early-Adopter-Programm beizutreten, senden Sie eine E-Mail an `aemcs-cdn-config-adopter@adobe.com` und beschreiben Sie Ihren Anwendungsfall.
 
-AEM as a Cloud Service bietet eine Reihe von Funktionen, die im Abschnitt [Adobe-verwaltetes CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) -Ebene, die die Natur von eingehenden oder ausgehenden Anforderungen ändert. Die folgenden Regeln, die auf dieser Seite detailliert beschrieben werden, können deklariert werden, um das folgende Verhalten zu erreichen:
+AEM as a Cloud Service bietet eine Reihe von Funktionen, die auf der Ebene [Adobe-verwaltetes CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) konfigurierbar sind und die Art von eingehenden Anfragen oder ausgehenden Antworten ändern. Die folgenden Regeln, die auf dieser Seite detailliert beschrieben werden, können deklariert werden, um das folgende Verhalten zu erreichen:
 
-* [Umwandlungen anfordern](#request-transformations) - Änderung von Aspekten eingehender Anfragen, einschließlich Kopfzeilen, Pfaden und Parametern.
-* [Reaktionstransformationen](#response-transformations) - Ändern Sie Kopfzeilen, die sich auf dem Weg zum Client befinden (z. B. einen Webbrowser).
-* [Clientseitige Weiterleitungen](#client-side-redirectors) - Trigger einer Browser-Umleitung.
-* [Origin-Selektoren](#origin-selectors) - Proxy zu einem anderen Ursprungs-Backend.
+* [Anforderungsumwandlungen](#request-transformations) – Änderung von Aspekten eingehender Anfragen, einschließlich Kopfzeilen, Pfaden und Parametern.
+* [Reaktionsumwandlungen](#response-transformations) – Änderung von Kopfzeilen, die sich auf dem Weg zurück zum Client befinden (z. B. einen Webbrowser).
+* [Client-seitige Umleitungen](#client-side-redirectors) – Auslöser einer Browser-Umleitung.
+* [Ursprungs-Auswahlen](#origin-selectors) – Proxy zu einem anderen Ursprungs-Backend.
 
-Ebenfalls im CDN konfigurierbar sind Traffic-Filterregeln (einschließlich WAF), die steuern, welcher Traffic vom CDN erlaubt oder verweigert wird. Diese Funktion wurde bereits veröffentlicht. Weitere Informationen dazu finden Sie unter [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md) Seite.
+Ebenfalls im CDN konfigurierbar sind Traffic-Filterregeln (einschließlich WAF), die steuern, welcher Traffic vom CDN erlaubt oder verweigert wird. Diese Funktion wurde bereits veröffentlicht. Weitere Informationen dazu finden Sie auf der Seite [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md).
 
-Wenn das CDN nicht in der Lage ist, seine Herkunft zu erreichen, können Sie außerdem eine Regel schreiben, die auf eine selbstgehostete benutzerdefinierte Fehlerseite verweist (die dann gerendert wird). Weitere Informationen hierzu finden Sie im Abschnitt [Konfigurieren von CDN-Fehlerseiten](/help/implementing/dispatcher/cdn-error-pages.md) Artikel.
+Wenn das CDN nicht in der Lage ist, seinen Ursprung zu erreichen, können Sie außerdem eine Regel schreiben, die auf eine selbstgehostete benutzerdefinierte Fehlerseite verweist (die dann gerendert wird). Weitere Informationen hierzu finden Sie im Artikel [Konfigurieren von CDN-Fehlerseiten](/help/implementing/dispatcher/cdn-error-pages.md).
 
-Alle diese Regeln, die in einer Konfigurationsdatei in der Quell-Code-Verwaltung deklariert sind, werden mithilfe von [Cloud Manager-Konfigurations-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Beachten Sie, dass die kumulative Größe der Konfigurationsdatei 100 KB nicht überschreiten darf.
+Alle diese Regeln, die in einer Konfigurationsdatei in der Verwaltung der Quelle deklariert sind, werden mithilfe der [Cloud Manager-Konfigurations-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) bereitgestellt. Beachten Sie, dass die kumulative Größe der Konfigurationsdatei 100 KB nicht überschreiten darf.
 
-## Reihenfolge der Bewertung {#order-of-evaluation}
+## Reihenfolge der Auswertung {#order-of-evaluation}
 
 Funktionell werden die verschiedenen oben erwähnten Funktionen in der folgenden Sequenz ausgewertet:
 
@@ -38,14 +38,14 @@ Funktionell werden die verschiedenen oben erwähnten Funktionen in der folgenden
 
 Bevor Sie Traffic im CDN konfigurieren können, müssen Sie Folgendes tun:
 
-* Erstellen Sie zunächst diesen Ordner und die Dateistruktur im Ordner der obersten Ebene Ihres Git-Projekts:
+* Erstellen Sie zunächst diesen Ordner und die Dateistruktur im obersten Ordner Ihres Git-Projekts:
 
 ```
 config/
      cdn.yaml
 ```
 
-* Zweitens, die `cdn.yaml` -Konfigurationsdatei sollte sowohl Metadaten als auch die Regeln enthalten, die in den folgenden Beispielen beschrieben werden.
+* Zweitens sollte die Konfigurationsdatei `cdn.yaml` sowohl Metadaten als auch die Regeln enthalten, die in den folgenden Beispielen beschrieben sind.
 
 ## Syntax {#configuration-syntax}
 
@@ -59,11 +59,11 @@ Die Details des Aktionsknotens unterscheiden sich je nach Regeltyp und sind in d
 
 ## Anforderungsumwandlungen {#request-transformations}
 
-Mit Umwandlungsregeln für Anforderungen können Sie eingehende Anforderungen ändern. Die Regeln unterstützen das Festlegen, Aufheben und Ändern von Pfaden, Abfrageparametern und Kopfzeilen (einschließlich Cookies) basierend auf verschiedenen Bedingungen, einschließlich regulärer Ausdrücke. Sie können auch Variablen festlegen, die später in der Auswertungssequenz referenziert werden können.
+Mit Regeln für Anforderungsumwandlungen können Sie eingehende Anforderungen ändern. Die Regeln unterstützen das Festlegen, Aufheben und Ändern von Pfaden, Abfrageparametern und Kopfzeilen (einschließlich Cookies) basierend auf verschiedenen passenden Bedingungen, einschließlich regulärer Ausdrücke. Sie können auch Variablen festlegen, die später in der Auswertungssequenz referenziert werden können.
 
-Anwendungsfälle sind unterschiedlich und enthalten URL-Neuschreibungen zur Vereinfachung der Anwendung oder zur Zuordnung von veralteten URLs.
+Die Anwendungsfälle sind unterschiedlich und enthalten URL-Neuschreibungen zur Vereinfachung der Anwendung oder zur Zuordnung von veralteten URLs.
 
-Wie bereits erwähnt, gibt es eine Größenbeschränkung für die Konfigurationsdatei, sodass Organisationen mit größeren Anforderungen Regeln in der `apache/dispatcher` Ebene.
+Wie bereits erwähnt, gibt es eine Größenbeschränkung für die Konfigurationsdatei, sodass Organisationen mit größeren Anforderungen Regeln auf der `apache/dispatcher`-Ebene definieren sollten.
 
 Konfigurationsbeispiel:
 
@@ -163,7 +163,7 @@ actions:
 
 ### Variablen {#variables}
 
-Sie können Variablen während der Anforderungsumwandlung festlegen und später in der Auswertungssequenz darauf verweisen. Siehe [Bewertungsordnung](#order-of-evaluation) Diagramm für weitere Details.
+Sie können Variablen während der Anforderungsumwandlung festlegen und später in der Auswertungssequenz darauf verweisen. Weitere Informationen finden Sie im Diagramm [Reihenfolge der Auswertung](#order-of-evaluation).
 
 Konfigurationsbeispiel:
 
@@ -196,9 +196,9 @@ data:
             value: some header value
 ```
 
-## Reaktionskonvertierungen {#response-transformations}
+## Reaktionsumwandlungen {#response-transformations}
 
-Mit Regeln zur Antwortumwandlung können Sie Kopfzeilen der ausgehenden Antworten des CDN festlegen und aufheben. Siehe auch das obige Beispiel für Verweise auf eine Variable, die zuvor in einer Anfrageumwandlungsregel festgelegt wurde.
+Mit Regeln zur Reaktionsumwandlung können Sie Kopfzeilen der ausgehenden Antworten des CDN festlegen und aufheben. Siehe auch das Beispiel oben für Referenzen auf eine Variable, die zuvor in einer Regel zu Anfrageumwandlung festgelegt wurde.
 
 Konfigurationsbeispiel:
 
@@ -247,12 +247,12 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 
 | Name | Eigenschaften | Bedeutung |
 |-----------|--------------------------|-------------|
-| **set** | reqHeader, Wert | Legt einen angegebenen Header auf einen angegebenen Wert in der Antwort fest. |
-| **unset** | respHeader | Entfernt einen angegebenen Header aus der Antwort. |
+| **set** | reqHeader, Wert | Legt eine bestimmte Kopfzeile auf einen angegebenen Wert in der Antwort fest. |
+| **nicht gesetzt** | respHeader | Entfernt eine bestimmte Kopfzeile aus der Antwort. |
 
-## Ursprüngliche Selektoren {#origin-selectors}
+## Ursprungs-Auswahlen {#origin-selectors}
 
-Sie können das AEM CDN nutzen, um Traffic an verschiedene Backends zu leiten, einschließlich Nicht-Adobe-Anwendungen (möglicherweise pro Pfad oder Subdomain).
+Sie können das AEM-CDN nutzen, um Traffic an verschiedene Backends zu leiten, einschließlich Adobe-fremder Anwendungen (möglicherweise pro Pfad oder Subdomain).
 
 Konfigurationsbeispiel:
 
@@ -286,28 +286,28 @@ In der folgenden Tabelle wird die verfügbare Aktion erläutert.
 
 | Name | Eigenschaften | Bedeutung |
 |-----------|--------------------------|-------------|
-| **selectOrigin** | originName | Name des definierten Ursprungs. |
-|     | useCache (optional, Standardeinstellung ist &quot;true&quot;) | Flag, ob für Anforderungen, die dieser Regel entsprechen, Zwischenspeicherung verwendet werden soll. |
+| **selectOrigin** | originName | Name eines der definierten Ursprünge. |
+|     | useCache (optional, Standardeinstellung ist „true“) | Flag, ob Caching für Anforderungen verwendet werden soll, die dieser Regel entsprechen. |
 
-**Ursprung**
+**Ursprünge**
 
-Verbindungen zu Quellen sind nur SSL-Anschluss und verwenden Port 443.
+Verbindungen zu Ursprüngen sind nur SSL-Verbindungen und verwenden Port 443.
 
 | Eigenschaft | Bedeutung |
 |------------------|--------------------------------------|
-| **name** | Name, der durch &quot;action.originName&quot;referenziert werden kann. |
-| **domain** | Domänenname, der für die Verbindung mit dem benutzerdefinierten Backend verwendet wird. Es wird auch für SSL-SNI und -Validierung verwendet. |
-| **ip** (optional, unterstützt iv4 und ipv6) | Sofern angegeben, wird sie zum Herstellen einer Verbindung mit dem Backend anstelle von &quot;Domäne&quot;verwendet. &quot;Domäne&quot;wird weiterhin für SSL-SNI und -Validierung verwendet. |
-| **forwardHost** (optional, Standardeinstellung ist &quot;false&quot;) | Wenn der Wert auf &quot;true&quot;gesetzt ist, wird der &quot;Host&quot;-Header aus der Clientanforderung an das Backend übergeben, andernfalls wird der &quot;domain&quot;-Wert in der &quot;Host&quot;-Kopfzeile übergeben. |
-| **forwardCookie** (optional, Standardeinstellung ist &quot;false&quot;) | Wenn der Wert auf &quot;true&quot;gesetzt ist, wird der Header &quot;Cookie&quot;aus der Clientanforderung an das Backend übergeben, andernfalls wird der Cookie-Header entfernt. |
-| **forwardAuthorization** (optional, Standardeinstellung ist &quot;false&quot;) | Wenn der Wert auf &quot;true&quot;gesetzt ist, wird der Header &quot;Authorization&quot;aus der Clientanforderung an das Backend übergeben, andernfalls wird der Autorisierungs-Header entfernt. |
-| **timeout** (optional, in Sekunden ist der Standardwert 60) | Anzahl der Sekunden, die das CDN darauf warten sollte, dass ein Backend-Server das erste Byte eines HTTP-Antworttextes bereitstellt. Dieser Wert wird auch als Zwischen-Byte-Timeout zum Backend-Server verwendet. |
+| **name** | Name, der durch „action.originName“ referenziert werden kann. |
+| **domain** | Domain-Name, der für die Verbindung mit dem benutzerdefinierten Backend verwendet wird. Er wird auch für SSL-SNI und -Validierung verwendet. |
+| **ip** (optional, unterstützt iv4 und ipv6) | Sofern angegeben, wird sie zum Herstellen einer Verbindung mit dem Backend anstelle von „domain“ verwendet. „domain“ wird weiterhin für SSL-SNI und -Validierung verwendet. |
+| **forwardHost** (optional, Standardeinstellung ist „false“) | Wenn die Eigenschaft auf „true“ gesetzt ist, wird die „Host“-Kopfzeile aus der Client-Anforderung an das Backend übergeben, andernfalls wird der Wert „domain“ in der Kopfzeile „Host“ übergeben. |
+| **forwardCookie** (optional, Standardeinstellung ist „false“) | Wenn die Eigenschaft auf „true“ gesetzt ist, wird die „Cookie“-Kopfzeile aus der Client-Anforderung an das Backend übergeben, andernfalls wird die Kopfzeile „Cookie“ entfernt. |
+| **forwardAuthorization** (optional, Standardeinstellung ist „false“) | Wenn die Eigenschaft auf „true“ gesetzt ist, wird die „Autorisierung“-Kopfzeile aus der Client-Anforderung an das Backend übergeben, andernfalls wird die Kopfzeile „Autorisierung“ entfernt. |
+| **timeout** (optional, in Sekunden, Standardeinstellung ist „60“) | Anzahl der Sekunden, die das CDN darauf warten soll, dass ein Backend-Server das erste Byte eines HTTP-Antworttextes bereitstellt. Dieser Wert wird auch als Timeout zwischen Bytes zum Backend-Server verwendet. |
 
-## Clientseitige Weiterleitungen {#client-side-redirectors}
+## Client-seitige Weiterleitungen {#client-side-redirectors}
 
-Sie können clientseitige Weiterleitungsregeln für 301, 302 und ähnliche clientseitige Weiterleitungen verwenden. Wenn eine Regel übereinstimmt, antwortet das CDN mit einer Statuszeile, die den Statuscode und die Meldung enthält (z. B. HTTP/1.1 301 Permanent verschoben), sowie mit dem Speicherort-Header-Satz.
+Sie können Regeln für die Client-seitige Weiterleitung für 301, 302 und ähnliche Client-seitige Weiterleitungen verwenden. Wenn eine Regel übereinstimmt, antwortet das CDN mit einer Statuszeile, die den Status-Code und die Meldung enthält (z. B. HTTP/1.1 301 Permanent verschoben), sowie mit dem Speicherort-Kopfzeilen-Satz.
 
-Sowohl absolute als auch relative Positionen mit festen Werten sind zulässig.
+Sowohl absolute als auch relative Speicherorte mit festen Werten sind zulässig.
 
 Konfigurationsbeispiel:
 
@@ -334,5 +334,5 @@ data:
 
 | Name | Eigenschaften | Bedeutung |
 |-----------|--------------------------|-------------|
-| **umleiten** | location | Wert für die Kopfzeile &quot;Position&quot;. |
-|     | status (optional, Standard ist 301) | Der HTTP-Status, der in der Umleitungsnachricht verwendet werden soll, standardmäßig 301, die zulässigen Werte sind: 301, 302, 303, 307, 308. |
+| **redirect** | location | Wert für die Kopfzeile „Speicherort“. |
+|     | status (optional, Standardeinstellung ist 301) | Der HTTP-Status, der in der Umleitungsnachricht verwendet werden soll, standardmäßig 301, die zulässigen Werte sind: 301, 302, 303, 307, 308. |

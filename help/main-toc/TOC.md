@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
 workflow-type: tm+mt
 source-wordcount: '4881'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -80,9 +80,9 @@ ht-degree: 96%
    + Wartungsversionshinweise zu AEMaaCS {#maintenance}
       + [Neueste Wartungversionshinweise](/help/release-notes/maintenance/latest.md)
       + 2024 {#2024}
-         + [Wartungversionshinweise für 2024.3.0](/help/release-notes/maintenance/2024/2024-3-0.md)
+         + [Wartungsversionshinweise für 2024.3.0](/help/release-notes/maintenance/2024/2024-3-0.md)
       + 2023 {#2023}
-         + [Wartungversionshinweise für 2023.12.0](/help/release-notes/maintenance/2023/2023-12-0.md)
+         + [Wartungsversionshinweise für 2023.12.0](/help/release-notes/maintenance/2023/2023-12-0.md)
          + [Wartungversionshinweise für 2023.11.0](/help/release-notes/maintenance/2023/2023-11-0.md)
          + [Wartungversionshinweise für 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md)
          + [Wartungversionshinweise für 2023.9.0](/help/release-notes/maintenance/2023/2023-9-0.md)
@@ -203,7 +203,7 @@ ht-degree: 96%
       + [Aufgaben von Entwickelnden und Bereitstellungs-Managern](/help/journey-onboarding/developers.md)
       + [AEM-Benutzeraufgaben](/help/journey-onboarding/aem-users.md)
    + Tour durch das Referenzdemo-Add-on zu AEM {#demo-add-on}
-      + [Überblick](/help/journey-sites/demos-add-on/overview.md)
+      + [Übersicht](/help/journey-sites/demos-add-on/overview.md)
       + [Installation](/help/journey-sites/demos-add-on/installation.md)
       + [Erstellen eines Programms](/help/journey-sites/demos-add-on/create-program.md)
       + [Erstellen einer Demo-Site](/help/journey-sites/demos-add-on/create-site.md)
@@ -230,7 +230,7 @@ ht-degree: 96%
    + [Handbuch zur Migration zu Experience Manager as a Cloud Service für Partner](/help/journey-migration/getting-started-partners.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + Einführung zu Cloud Acceleration Manager {#introduction-cam}
-         + [Überblick](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
+         + [Übersicht](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
          + [Vorteile](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
       + Verwenden von Cloud Acceleration Manager {#using-cam}
          + [Erste Schritte mit Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
@@ -239,13 +239,13 @@ ht-degree: 96%
          + [Live-Schaltungs-Phase](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
    + Cloud-Umstellungs-Tools {#cloud-migration}
       + Best Practices Analyzer {#best-practices-analyzer}
-         + [Überblick](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
+         + [Übersicht](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [Verwenden von Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
       + Content Transformer {#content-transformer}
-         + [Überblick](/help/journey-migration/content-transformer/overview.md)
+         + [Übersicht](/help/journey-migration/content-transformer/overview.md)
          + [Verwenden des Content Transformers](/help/journey-migration/content-transformer/using.md)
       + Content Transfer Tool {#content-transfer-tool}
-         + [Überblick](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+         + [Übersicht](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [Voraussetzungen für die Verwendung des Content Transfer Tools](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [Richtlinien und Best Practices für die Verwendung des Content Transfer Tools](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [Erste Schritte mit dem Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
@@ -261,7 +261,7 @@ ht-degree: 96%
          + [Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Fehlerbehebung im Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + Legacy-Tool für die Benutzerzuordnung (veraltete Version){#legacy-user-mapping-tool}
-            + [Überblick](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
+            + [Übersicht](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [Wichtige Überlegungen](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [Verwenden des User Mapping Tools](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + Code-Refaktorierungs-Tools {#refactoring-tools}
@@ -429,7 +429,7 @@ ht-degree: 96%
       + [Micro-Front-End-Asset-Selektor](/help/assets/asset-selector.md)
       + [Zielauswahl für Micro-Frontend](/help/assets/destination-selector.md)
       + [Freigeben von Assets](/help/assets/share-assets.md)
-      + [Assets erneut verarbeiten](/help/assets/reprocessing.md)
+      + [Erneutes Verarbeiten von Assets](/help/assets/reprocessing.md)
       + [Überwachen von Aktivitäten und DAM-Aufgaben](/help/assets/assets-activity-history.md)
       + [Erste Schritte mit Asset-Microservices](/help/assets/asset-microservices-configure-and-use.md)
       + [Hinzufügen und Hochladen von Assets](/help/assets/add-assets.md)
@@ -804,7 +804,7 @@ ht-degree: 96%
       + [Erste-Schritte-Handbuch für Entwickelnde](/help/edge/aem-authoring/edge-dev-getting-started.md)
       + [Erstellen von Bausteinen](/help/edge/aem-authoring/create-block.md)
       + [Inhaltsmodellierung](/help/edge/aem-authoring/content-modeling.md)
-      + [Tabellendaten und -fragmente](/help/edge/aem-authoring/tabular-data.md)
+      + [Tabellendaten und Tabellen](/help/edge/aem-authoring/tabular-data.md)
       + [Vorhandene Projekte und Edge Delivery](/help/edge/aem-authoring/existing-projects.md)
    + Dokumentenbasierte Bearbeitung {#document-authoring}
       + [Authoring](/help/edge/docs/authoring.md)
@@ -833,26 +833,26 @@ ht-degree: 96%
       + [Fastly-Einrichtung](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Umleitungen](/help/edge/docs/redirects.md)
    + Erstellen von Forms {#build-forms}
-      + [Überblick](/help/edge/docs/forms/overview.md)
+      + [Übersicht](/help/edge/docs/forms/overview.md)
       + Erste Schritte {#getting-started-eds-forms}
          + [Erste Schritte](/help/edge/docs/forms/tutorial.md)
          + [Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-         + [Richten Sie Ihre Google Tabellen- oder Microsoft Excel-Dateien ein, um Daten zu akzeptieren &#x200B;](/help/edge/docs/forms/submit-forms.md)
-         + [Veröffentlichen Sie Ihr Formular und beginnen Sie mit der Datenerfassung](/help/edge/docs/forms/publish-forms.md)
+         + [Einrichten von Google Tabellen- oder Microsoft Excel-Dateien, um Daten zu akzeptieren](/help/edge/docs/forms/submit-forms.md)
+         + [Veröffentlichen des Formulars und Starten der Datenerfassung](/help/edge/docs/forms/publish-forms.md)
          + [Hinzufügen von Validierungen zu Formularfeldern](/help/edge/docs/forms/validate-forms.md)
          + [Laden von Optionen aus URL in ein Formular](/help/edge/docs/forms/load-options-from-url.md)
-         + [Anpassen des Erscheinungsbilds von Formularen &#x200B;](/help/edge/docs/forms/style-theme-forms.md)
+         + [Anpassen des Erscheinungsbilds von Formularen](/help/edge/docs/forms/style-theme-forms.md)
          + [Verwenden von Regeln zum Hinzufügen von dynamischem Verhalten zu einem Formular](/help/edge/docs/forms/rules-forms.md)
-         + [Benutzerdefinierte Dankesnachricht nach der Formularübermittlung anzeigen](/help/edge/docs/forms/thank-you-page-form.md)
+         + [Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung](/help/edge/docs/forms/thank-you-page-form.md)
       + Funktionen {#advanced-features-eds-forms}
          + [Formularfragmente](/help/edge/docs/forms/form-fragments.md)
-         + [Wiederholbare Abschnitte zu einem Formular-&#x200B; hinzufügen](/help/edge/docs/forms/repeatable-forms.md)
+         + [Hinzufügen wiederholbarer Abschnitte zu einem Formular](/help/edge/docs/forms/repeatable-forms.md)
          + [Übersetzung](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Benutzerdefinierte Komponenten](/help/edge/docs/forms/custom-components-forms.md)
          + [Echtzeit-Benutzerüberwachung für Formulare](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + Verweise {#forms-references}
-         + [Komponenten von Bausteinen für adaptive Formulare und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
+         + [Komponenten von adaptiven Formularblöcken und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
    + Edge-Bereitstellungsressourcen {#resources}
       + Sidekick {#sidekick}
          + [Verwenden des Sidekicks](/help/edge/docs/sidekick.md)
@@ -974,7 +974,7 @@ ht-degree: 96%
          + [Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [Bereitstellen des Codes](/help/implementing/cloud-manager/deploy-code.md)
       + Grundlegendes zu Testergebnissen – Cloud Services {#test-results}
-         + [Überblick](/help/implementing/cloud-manager/overview-test-results.md)
+         + [Übersicht](/help/implementing/cloud-manager/overview-test-results.md)
          + [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Benutzerspezifische Regeln für Code-Qualität](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + Funktionstests {#functional-testing}
@@ -989,7 +989,7 @@ ht-degree: 96%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md)
-      + [Erweiterte Netzwerke](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
+      + [Erweiterte Netzwerke](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=de)
       + SSL-Zertifikate {#manage-ssl-certificates}
          + [Einführung](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
