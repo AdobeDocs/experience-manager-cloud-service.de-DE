@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '1290'
-ht-degree: 100%
+source-git-commit: 0ccca6194cfcd6e834b2e63337230f83cba96dcd
+workflow-type: tm+mt
+source-wordcount: '1640'
+ht-degree: 94%
 
 ---
 
@@ -21,11 +21,39 @@ ht-degree: 100%
 
 Mit [!DNL Adobe Experience Manager Assets] können Sie Assets, Ordner und Sammlungen für Mitglieder Ihres Unternehmens und externe Einheiten (z. B. Partner und Anbieter) freigeben. Verwenden Sie die folgenden Methoden, um Assets aus [!DNL Experience Manager Assets] as a [!DNL Cloud Service] freizugeben:
 
-* [Freigeben als Link](#sharelink)
+* [Freigeben als Link](#sharelink).
 * [Herunterladen von Assets und separates Freigeben.](/help/assets/download-assets-from-aem.md)
 * Freigeben mit dem [[!DNL Experience Manager] Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de).
 * Freigeben mit [[!DNL Adobe Asset Link]](https://www.adobe.com/de/creativecloud/business/enterprise/adobe-asset-link.html).
 * Freigeben mit [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=de).
+
+## Voraussetzungen {#prerequisites}
+
+Sie benötigen Adminrechte, um die [Einstellungen für die Freigabe von Assets als Link](#config-link-share-settings) zu konfigurieren.
+
+## Konfigurieren der Einstellungen zur Link-Freigabe {#config-link-share-settings}
+
+[!DNL Experience Manager Assets] ermöglicht Ihnen die Konfiguration der standardmäßigen Einstellungen für die Link-Freigabe.
+
+1. Klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie dann zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Assets-Konfiguration]** > **[!UICONTROL Link-Freigabe]**.
+1. Anfangseinstellungen:
+
+   * **Originale einschließen:**
+
+      * Wählen Sie `Select Include Originals`, um die Option `Include Originals` standardmäßig im Dialogfeld für die Link-Freigabe auszuwählen.
+      * Wählen Sie aus, wie `Include Originals` wird Ihnen im Dialogfeld Linkfreigabe angezeigt. [!UICONTROL Bearbeitbar] ermöglicht es dem Benutzer, die hier in den Anfangseinstellungen definierten Einstellungen zu ändern. Mit `Read-only` Die Einstellung wird angezeigt, kann jedoch nicht geändert werden. `Hidden` blendet die Einstellung aus und verwendet den hier in den Anfangseinstellungen konfigurierten Wert.
+   * **Ausgabedarstellungen einschließen:**
+      * Wählen Sie die Option `Select Include Renditions`, um die Option `Include Renditions` standardmäßig im Dialog für die Link-Freigabe auszuwählen.
+      * Wählen Sie aus, wie `Include Renditions` wird Ihnen im Dialogfeld Linkfreigabe angezeigt. [!UICONTROL Bearbeitbar] ermöglicht es dem Benutzer, die hier in den Anfangseinstellungen definierten Einstellungen zu ändern. Mit `Read-only` Die Einstellung wird angezeigt, kann jedoch nicht geändert werden. `Hidden` blendet die Einstellung aus und verwendet den hier in den Anfangseinstellungen konfigurierten Wert.
+
+1. Geben Sie die standardmäßige Gültigkeitsdauer für den Link im Feld `Validity Period` im Abschnitt `Expiration date` an.
+
+1. Die Schaltfläche zur **[!UICONTROL Link-Freigabe]** in der Aktionsleiste:
+   * Alle Benutzenden mit `jcr:modifyAccessControl`-Berechtigungen können die Option [!UICONTROL Link-Freigabe] sehen. Sie ist standardmäßig für alle Admins sichtbar. Die Schaltfläche [!UICONTROL Link-Freigabe] ist standardmäßig für alle sichtbar. Sie können konfigurieren, dass diese Option nur für die definierten Gruppen angezeigt wird, oder Sie können deren Anzeige auch für bestimmte Gruppen ablehnen. Wählen Sie `Allow only for groups`, wenn Sie bestimmten Gruppen erlauben wollen, die Option `Share Link` zu sehen. Wählen Sie `Deny from groups`, wenn Sie bestimmte Gruppen davon ausschließen wollen, die Option `Share Link` zu sehen. Sobald Sie eine dieser Optionen ausgewählt haben, geben Sie die Gruppennamen im Feld `Select Groups` an, um die Namen der Gruppen hinzuzufügen, für die Sie es zulassen bzw. ausschließen möchten.
+
+Die Einstellungen für die E-Mail-Konfiguration finden Sie unter [Dokumentation zum E-Mail-Dienst](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=de).
+
+![E-Mail-Dienst konfigurieren](/help/assets/assets/config-email-service.png)
 
 ## Freigeben von Assets als Link {#sharelink}
 
@@ -42,11 +70,12 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 Es gibt zwei Möglichkeiten, die Assets mithilfe der Link-Freigabe freizugeben:
 
-1. Erstellen Sie einen freigegebenen Link, [kopieren Sie den Asset-Link und teilen Sie ihn](#copy-and-share-assets-link) mit anderen Benutzern. Die Standard-Ablaufzeit für den Link beträgt einen Tag. Sie können die Ablaufzeit nicht ändern, wenn Sie den kopierten Link für andere Benutzer freigeben.
+1. Erstellen Sie einen freigegebenen Link, [kopieren Sie den Asset-Link und teilen Sie ihn](#copy-and-share-assets-link) mit anderen Benutzenden.
+1. Erstellen Sie einen freigegebenen Link und [teilen Sie den Asset-Link per E-Mail](#share-assets-link-through-email). Sie können die Standardwerte wie Ablaufdatum und -zeit ändern und das Herunterladen der Original-Assets und ihrer Ausgabedarstellungen zulassen. Sie können E-Mails an mehrere Benutzer senden, indem Sie deren E-Mail-Adressen hinzufügen.
 
-1. Erstellen Sie einen freigegebenen Link und [teilen Sie den Asset-Link per E-Mail](#share-assets-link-through-email). In diesem Fall können Sie die Standardwerte wie Ablaufdatum und -zeit ändern und das Herunterladen der Original-Assets und ihrer Ausgabedarstellungen zulassen. Sie können E-Mails an mehrere Benutzer senden, indem Sie deren E-Mail-Adressen hinzufügen.
+   ![Dialogfeld „Linkfreigabe“](assets/share-link.png)
 
-   ![Dialogfeld „Linkfreigabe“](assets/link-sharing-dialog.png)
+In beiden Fällen können Sie die Standardwerte wie Ablaufdatum und -zeit ändern und das Herunterladen der Original-Assets und ihrer Ausgabedarstellungen zulassen.
 
 ### Kopieren und Freigeben des Asset-Links{#copy-and-share-asset-link}
 
@@ -55,6 +84,9 @@ Freigeben von Assets als öffentliche URL:
 1. Melden Sie sich bei [!DNL Experience Manager Assets] an und navigieren Sie zu **[!UICONTROL Dateien]**.
 1. Wählen Sie die Assets oder den Ordner mit den Assets aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Link freigeben]**.
 1. Der Dialog **[!UICONTROL Linkfreigabe]** wird angezeigt, der im Feld **[!UICONTROL Link freigeben]** auch einen automatisch generierten Asset-Link enthält.
+1. Legen Sie das Ablaufdatum des freigegebenen Links nach Bedarf fest.
+1. Aktivieren oder deaktivieren Sie unter **[!UICONTROL Link-Einstellungen]** `Include Originals` bzw. `Include Renditions`, um eine oder beide einzubeziehen bzw. auszuschließen. Die Auswahl von mindestens einer Option ist obligatorisch.
+1. Die Namen der ausgewählten Assets werden in der rechten Spalte des Dialogfelds [!DNL Share Link] angezeigt.
 1. Kopieren Sie diesen Link und teilen Sie ihn mit anderen Benutzern.
 
 ### Freigeben des Asset-Links per E-Mail-Benachrichtigung {#share-assets-link-through-email}
@@ -62,9 +94,9 @@ Freigeben von Assets als öffentliche URL:
 So geben Sie Assets per E-Mail frei:
 
 1. Wählen Sie die Assets oder den Ordner mit den Assets aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Link freigeben]**.
-1. Der Dialog **[!UICONTROL Linkfreigabe]** wird angezeigt, der im Feld **[!UICONTROL Link freigeben]** einen automatisch generierten Asset-Link enthält.
+1. Der Dialog **[!UICONTROL Linkfreigabe]** wird angezeigt, der im Feld **[!UICONTROL Link freigeben]** auch einen automatisch generierten Asset-Link enthält.
 
-   * Geben Sie im Feld „E-Mail-Adresse“ die E-Mail-Adresse des Benutzers ein, für den Sie den Link freigeben möchten. Sie können den Link für mehrere Benutzer freigeben. Wenn die Person Mitglied Ihres Unternehmens ist, wählen Sie ihre E-Mail-ID aus den Vorschlägen aus, die in der Dropdown-Liste angezeigt werden. Wenn es sich um einen externen Benutzer handelt, geben Sie die vollständige E-Mail-Adresse ein und drücken Sie die **[!UICONTROL Eingabetaste]**. Die E-Mail-Adresse wird der Liste der Benutzer hinzugefügt.
+   * Geben Sie im Feld „E-Mail-Adresse“ die E-Mail-Adresse der Person ein, für die Sie den Link freigeben möchten. Sie können den Link für mehrere Benutzende freigeben. Wenn die Person Mitglied Ihres Unternehmens ist, wählen Sie ihre E-Mail-Adresse aus den Vorschlägen aus, die in der Dropdown-Liste angezeigt werden. Geben Sie in das Textfeld „E-Mail-Adresse“ die E-Mail-Adresse der Person ein, für die Sie den Link freigeben möchten, und klicken Sie auf [!UICONTROL Eingabe]. Sie können den Link für mehrere Benutzende freigeben.
 
    * Geben Sie im Feld **[!UICONTROL Betreff]** einen Betreff ein, um den Zweck der freigegebenen Assets anzugeben.
    * Geben Sie bei Bedarf eine Nachricht in das Feld **[!UICONTROL Nachricht]** ein.
@@ -115,7 +147,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 >* Before you share a link with users, ensure that Day CQ Mail Service is configured. Otherwise, an error occurs.
 
 1. In the Assets user interface, select the asset to share as a link.
-1. From the toolbar, select the **[!UICONTROL Share Link]**.
+1. From the toolbar, click/tap the **[!UICONTROL Share Link]**.
 
    An asset link is auto-created in the **[!UICONTROL Share Link]** field. Copy this link and share it with the users. The default expiration time for the link is one day.
 
@@ -153,20 +185,20 @@ To generate the URL for assets you want to share with users, use the Link Sharin
    >By default, users can only download the renditions of the asset that you share as a link.
 
 1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users through an email.
-1. To view the shared asset, select the link in the email that is sent to the user. The shared asset is displayed in the **[!UICONTROL Adobe Marketing Cloud]** page.
+1. To view the shared asset, click/tap the link in the email that is sent to the user. The shared asset is displayed in the **[!UICONTROL Adobe Marketing Cloud]** page.
 
-   To toggle to the list view, select the layout icon in the toolbar.
+   To toggle to the list view, click/tap the layout icon in the toolbar.
 
-1. To generate a preview of the asset, select the shared asset. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, select **[!UICONTROL Back]** in the toolbar. If you have shared a folder, select **[!UICONTROL Parent Folder]** to return to the parent folder.
+1. To generate a preview of the asset, click/tap the shared asset. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, click/tap **[!UICONTROL Back]** in the toolbar. If you have shared a folder, click/tap **[!UICONTROL Parent Folder]** to return to the parent folder.
 
    >[!NOTE]
    >
    >Experience Manager supports generating the preview of assets of these MIME types: JPG, PNG, GIF, BMP, INDD, PDF, and PPT. You can only download the assets of the other MIME types.
 
-1. To download the shared asset, select **[!UICONTROL Select]** from the toolbar, select the asset, and then select **[!UICONTROL Download]** from the toolbar.
-1. To view the assets you shared as links, go to the Assets user interface and select the GlobalNav icon. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
+1. To download the shared asset, click/tap **[!UICONTROL Select]** from the toolbar, click/tap the asset, and then click/tap **[!UICONTROL Download]** from the toolbar.
+1. To view the assets you shared as links, go to the Assets user interface and click/tap the GlobalNav icon. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
 1. From the Navigation pane, choose **[!UICONTROL Shared Links]** to display a list of shared assets.
-1. To un-share an asset, select it and select **[!UICONTROL Unshare]** from the toolbar.
+1. To un-share an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar.
 
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
@@ -191,7 +223,7 @@ Die verschiedenen Optionen zum Freigeben der Assets erfordern eine spezifische K
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im Dialogfeld „Link-Freigabe“. Benutzende mit Administratorrechten oder mit Leserechten für den Speicherort `/var/dam/share` können dann die Links sehen, die für sie freigegeben sind. Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für externe Parteien verfügbar zu machen, ohne dass sich diese zunächst bei [!DNL Assets] anmelden müssen.
+Die URL für Assets, die Sie freigeben möchten, generieren Sie im Dialogfeld „Link-Freigabe“. Benutzende mit Administratorrechten oder mit Leserechten für den Speicherort `/var/dam/share` können dann die Links sehen, die für sie freigegeben sind. Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für externe Parteien verfügbar zu machen, ohne dass sich diese zunächst bei [!DNL Assets] anmelden müssen.
 
 >[!NOTE]
 >
@@ -202,20 +234,13 @@ Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im
 >* `[aem_server]:[port]/linkexpired.html`
 
 <!--
-## Configure Day CQ mail service {#configmailservice}
-
-Before you can share assets as links, configure the email service.
-
-1. Select the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
-1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:
+1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service** with the details mentioned against their names:
 
     * SMTP server host name: email server host name
     * SMTP server port: email server port
     * SMTP user: email server user name
     * SMTP password: email server password
-
-1. Select **[!UICONTROL Save]**.
 -->
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -223,14 +248,14 @@ Before you can share assets as links, configure the email service.
 
 When you download assets from the link shared using the Link Sharing feature, Experience Manager compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, you can configure the maximum size of the downloaded files. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
 
-1. Select the Experience Manager logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Click/Tap the Experience Manager logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the web console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
 1. Open the configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
 1. Save the changes.
 -->
 
 <!--
-Add content or link about how to configure sharing by way of BP, DA, AAL, and so on.
+Add content or link about how to configure sharing via BP, DA, AAL, etc.
 -->
 
 ### Aktivieren von Desktop-Aktionen für die Verwendung mit dem Desktop-Programm {#desktop-actions}
