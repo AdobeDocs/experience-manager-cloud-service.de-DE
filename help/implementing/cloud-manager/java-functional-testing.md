@@ -3,9 +3,9 @@ title: Java™-Funktionstests
 description: Erfahren Sie, wie Sie Java™-Funktionstests für AEM as a Cloud Service schreiben.
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 source-git-commit: 641690f2eca17bbfb47360282e818b6902a36144
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '878'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -115,8 +115,8 @@ Weitere Informationen finden Sie im [`aem-testing-clients`GitHub-Repository](htt
 
 * aem-cloud-testing-clients:
 
-Bevorstehende Änderungen an der containerisierten Infrastruktur, die zum Ausführen von Funktionstests verwendet wird, erfordern die Bibliothek [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) wird in Ihrem benutzerdefinierten Funktionstest verwendet, um auf mindestens eine Version zu aktualisieren **1.2.1**
-Stellen Sie sicher, dass Ihre Abhängigkeit in `it.tests/pom.xml` wurde aktualisiert.
+Bevorstehende Änderungen an der Container-Infrastruktur, die zum Ausführen von Funktionstests verwendet wird, erfordern die Aktualisierung der Bibliothek [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients), die in Ihrem benutzerdefinierten Funktionstest verwendet wird, auf mindestens Version **1.2.1**
+Stellen Sie sicher, dass Ihre Abhängigkeit in `it.tests/pom.xml` aktualisiert wurde.
 
 ```
 <dependency>

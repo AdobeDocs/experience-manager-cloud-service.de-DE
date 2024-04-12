@@ -3,9 +3,9 @@ title: Qualitätsregeln für benutzerspezifischen Code
 description: Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der Code-Qualitätstests ausgeführt werden. Sie basieren auf Best Practices von Adobe Experience Manager-Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4167'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -731,7 +731,7 @@ Ein häufig auftretendes Problem bei komplexen Projekten besteht darin, dass die
 >
 >Wenn der Build zum Beispiel Pakete mit den Namen `com.myco:com.myco.ui.apps` und `com.myco:com.myco.all` erstellt, wobei `com.myco:com.myco.ui.apps` in `com.myco:com.myco.all` eingebettet ist, werden alle Konfigurationen innerhalb von `com.myco:com.myco.ui.apps` als Duplikat gemeldet.
 >
->Dies ist im Allgemeinen der Fall, dass die [Richtlinien für die Inhaltspaketstruktur](/help/implementing/developing/introduction/aem-project-content-package-structure.md). In diesem speziellen Beispiel fehlt im Paket `com.myco:com.myco.ui.apps` die Eigenschaft `<cloudManagerTarget>none</cloudManagerTarget>`.
+>Dies ist im Allgemeinen der Fall, wenn die [Richtlinien für die Inhaltspaketstruktur](/help/implementing/developing/introduction/aem-project-content-package-structure.md) nicht eingehalten werden.  In diesem speziellen Beispiel fehlt im Paket `com.myco:com.myco.ui.apps` die Eigenschaft `<cloudManagerTarget>none</cloudManagerTarget>`.
 
 #### Nicht konformer Code {#non-compliant-code-osgi}
 

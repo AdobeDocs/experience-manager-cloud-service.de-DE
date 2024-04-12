@@ -1,23 +1,23 @@
 ---
-title: Komponenten von Bausteinen für adaptive Formulare und ihre Eigenschaften
+title: Komponenten von adaptiven Formularblöcken und ihre Eigenschaften
 description: Dieses Dokument bietet einen Überblick über die Formularkomponenten und ihre Eigenschaften, die im AEM Forms Edge Delivery Service verfügbar sind.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 source-git-commit: 703a48903c44678f6fe311de740b7c767c886ba5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1006'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
-# Komponenten von Bausteinen für adaptive Formulare und ihre Eigenschaften
+# Komponenten von adaptiven Formularblöcken und ihre Eigenschaften
 
-Mit AEM Forms Edge Delivery Services können Sie benutzerfreundliche und interaktive Formulare mit verschiedenen Komponenten erstellen. Diese Komponenten decken unterschiedliche Arten der Datenerfassung ab und können einfach an Ihre spezifischen Anforderungen angepasst werden.
+Mit dem AEM Forms Edge Delivery Service können Sie benutzerfreundliche und interaktive Formulare mit verschiedenen Komponenten erstellen. Diese Komponenten decken unterschiedliche Arten der Datenerfassung ab und können einfach an Ihre spezifischen Anforderungen angepasst werden.
 
 
 ![Eine Beispieltabelle mit einigen Komponenten und Eigenschaften](/help/edge/assets/sample-form-in-spreadsheet.png)
 
-Der adaptive Forms-Block generiert eine [einheitliche HTML-Struktur](/help/edge/docs/forms/style-theme-forms.md) für alle Feldtypen und Container (Bereiche), die die Konsistenz sicherstellen. Diese einheitliche Struktur erleichtert das [Formatieren eines Formulars](/help/edge/docs/forms/style-theme-forms.md).
+Der adaptive Formularblock generiert eine [einheitliche HTML-Struktur](/help/edge/docs/forms/style-theme-forms.md) für alle Feldtypen und Container (Bedienfelder) und stellt so Konsistenz sicher. Diese einheitliche Struktur erleichtert das [Formatieren eines Formulars](/help/edge/docs/forms/style-theme-forms.md).
 
 ## Verfügbare Komponenten
 
@@ -40,12 +40,12 @@ Im Folgenden finden Sie einen Überblick über die verfügbaren Komponenten:
 
 ## Komponenteneigenschaften
 
-Jede Formularkomponente enthält verschiedene Eigenschaften, mit denen Sie das Verhalten und Erscheinungsbild steuern können. Hier finden Sie die Eigenschaften, die von den Adaptive Forms Block-Komponenten unterstützt werden:
+Jede Formularkomponente enthält verschiedene Eigenschaften, mit denen Sie das Verhalten und Erscheinungsbild steuern können. Die folgenden Eigenschaften werden von den Komponenten des adaptiven Formularblocks unterstützt:
 
 
 | Eigenschaft | Anwendbare Komponenten | Details |
 |--------------|------------------------------|----------------------------------------------------------------------|
-| Typ | Alle | Legt den Stil der Komponente fest. Diese Eigenschaft bestimmt das Verhalten und Erscheinungsbild des Eingabefelds. Für Texteingaben kann der Typ beispielsweise „text“, für E-Mail-Eingaben „email“ und für Kennworteingaben „password“ lauten. Adaptiver Forms-Block unterstützt  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">alle gültigen HTML5-Eingabetypen</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, und <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> als Typ. |
+| Typ | Alle | Legt den Stil der Komponente fest. Diese Eigenschaft bestimmt das Verhalten und Erscheinungsbild des Eingabefelds. Für Texteingaben kann der Typ beispielsweise „text“, für E-Mail-Eingaben „email“ und für Kennworteingaben „password“ lauten. Der adaptive Formularblock unterstützt <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">alle gültigen HTML5-Eingabetypen</a> sowie <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, und <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> als Typ. |
 | Name | Alle | Identifiziert die Komponente für die Formularübermittlung. Das Attribut „name“ wird verwendet, wenn die Formulardaten an den Server gesendet werden und die Benutzereingabe mit einem bestimmten Feld verknüpft wird. |
 | Label | Alle | Stellt Benutzenden kontextbezogene Informationen bereit. Bei „label“ handelt es sich um den Text, der neben der Komponente angezeigt wird und der Benutzenden Hinweise dazu gibt, welche Informationen einzugeben sind. |
 | Wert | Text, Kennwort, E-Mail, Zahl, Bereich, Datum und seine Varianten (datetime-local, month, week, time), Kontrollkästchen, Optionsfeld, Ausgeblendet, Absenden, Schaltfläche | Legt den anfänglichen Wert der Komponente fest. Bei „text inputs“, „textarea“ und „select elements“ ist dies der Standardtext oder die angezeigte Option. Bei den Komponenten „Optionsfeld“ und „Kontrollkästchen“ sind dies die Werte/Daten, die bei der Auswahl übermittelt werden. Das Attribut „value“ ist zwar optional, sollte jedoch für Kontrollkästchen und Optionsfelder als obligatorisch betrachtet werden. |
@@ -60,9 +60,9 @@ Jede Formularkomponente enthält verschiedene Eigenschaften, mit denen Sie das V
 | Optionen | Dropdown | Gibt Auswahlmöglichkeiten für Dropdown-Menüs an. Die Eigenschaft „options“ ist eine kommagetrennte Liste von Optionen für Dropdown-Menüs, die die auswählbaren Optionen definieren, die Benutzenden angezeigt werden. |
 | Checked | Kontrollkästchen, Optionsfeld | Bestimmt, ob das Feld standardmäßig ausgewählt ist. Das Attribut „checked“ ist eine boolesche Eigenschaft, die mit Kontrollkästchen und Optionsfeldern verwendet wird. Wenn der Wert auf „true“ gesetzt ist, zeigt dies an, dass das Feld beim Laden des Formulars standardmäßig ausgewählt ist. |
 | Fieldset | Alle | Gruppiert Felder, um visuell unterschiedliche Abschnitte in einem Formular zu erstellen. Das Element „fieldset“ gruppiert verwandte Felder in einem Formular, wobei sie visuell getrennt werden, um die Organisation und das Anwendererlebnis zu verbessern. </br> Um einen Satz von Feldern in einem „fieldset“ zu organisieren, verwenden Sie einfach die Eigenschaft `fieldset` und geben Sie das Attribut „name“ an. Im folgenden Beispiel wird gezeigt, wie Optionsfelder in einem einzelnen „fieldset“ zur besseren Organisation eingekapselt werden. ![Beispiel für „fieldset“](/help/edge/assets/fieldset-example.png) |
-| Wiederholbar | Alle | Eine boolesche Eigenschaft für `fieldset` gibt an, dass ein bestimmter Feldsatz für bestimmte `Min` und `Max` Häufigkeit. Die `Min` -Eigenschaft auf 1 oder höher gesetzt werden soll, legen Sie die `Min` -Eigenschaft auf 0. |
-| Sichtbarer Ausdruck | Alle | Ein sichtbarer Ausdruck bezieht sich auf eine Tabellenformel, die mit dem Tag &#39;=&#39;&#39; gekennzeichnet ist und die zur Steuerung der Sichtbarkeit eines Felds verwendet wird. In dieser Formel kann nur die value-Eigenschaft anderer Felder verwendet werden, um eine einfache Verwaltung der Feldanzeige innerhalb des Systems zu ermöglichen. |
-| Wertausdruck | Alle | Ein Wertausdruck bezieht sich auf eine Tabellenformel, die durch das Tag &#39;=&#39;&#39; gekennzeichnet ist und zur Steuerung des Werts eines Felds verwendet wird. In dieser Formel kann nur die value-Eigenschaft anderer Felder verwendet werden, um eine einfache Verwaltung des Feldwerts innerhalb des Systems zu ermöglichen. |
+| Repeatable | Alle | Eine boolesche Eigenschaft für `fieldset`, die angibt, dass ein bestimmter Feldsatz entsprechend dem für `Min` und `Max` angegebenen Wert wiederholt werden kann. Die `Min`-Eigenschaft sollte auf 1 oder höher gesetzt sein. Legen Sie für die `Min`-Eigenschaft nicht den Wert 0 fest. |
+| Sichtbarer Ausdruck | Alle | Ein sichtbarer Ausdruck bezieht sich auf eine Tabellenformel, die mit dem Tag „=“&#39; gekennzeichnet ist und zur Steuerung der Sichtbarkeit eines Felds verwendet wird. In dieser Formel kann nur die Werteigenschaft anderer Felder verwendet werden, sodass eine einfache Verwaltung der Feldsichtbarkeit innerhalb des Systems ermöglicht wird. |
+| Wertausdruck | Alle | Ein Wertausdruck bezieht sich auf eine Tabellenformel, die durch das Tag „=“&#39; gekennzeichnet ist und zur Steuerung des Werts eines Felds verwendet wird. In dieser Formel kann nur die Werteigenschaft anderer Felder verwendet werden, sodass eine einfache Verwaltung des Feldwerts innerhalb des Systems ermöglicht wird. |
 
 
 ## Siehe auch

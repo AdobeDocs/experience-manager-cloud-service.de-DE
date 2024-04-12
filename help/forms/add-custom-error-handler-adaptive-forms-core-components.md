@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 source-git-commit: d75d448d631da7af3a37192f0890a38c760ab09b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2331'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -255,7 +255,7 @@ Fügen Sie folgenden Code zur JavaScript-Datei hinzu, um die Antwort und die vom
        return true; // true - call default error handler, false - don't call default error handler.
    }
    ```
-   Im obigen Code: `return true` Ruft den Standard-Fehler-Handler automatisch auf. Um zu verhindern, dass der Standard-Fehler-Handler standardmäßig aufgerufen wird, schließen Sie `return false`.
+   Im obigen Code ruft `return true` den Standard-Fehler-Handler automatisch auf. Um zu verhindern, dass der Standard-Fehler-Handler standardmäßig aufgerufen wird, schließen Sie `return false` mit ein.
 
    >[!NOTE]
    >

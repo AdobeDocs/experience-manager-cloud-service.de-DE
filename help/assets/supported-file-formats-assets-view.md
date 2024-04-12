@@ -3,10 +3,11 @@ title: Unterstützte Dateiformate
 description: Unterstützte Dateiformate für die verschiedenen Anwendungsfälle von  [!DNL Assets view]
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
-workflow-type: tm+mt
+exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+workflow-type: ht
 source-wordcount: '515'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +41,7 @@ Die verschiedenen Dateitypen werden, wie unten beschrieben, in unterschiedlichem
 | Asset-Typ | [Durchsuchen](/help/assets/navigate-assets-view.md) | Kopieren | [Hochladen](/help/assets/add-delete-assets-view.md) | Erstellen | [Löschen](/help/assets/add-delete-assets-view.md#delete-assets) | Details | Bild-Zoom | [Kürzlich angesehen](/help/assets/navigate-assets-view.md) |
 |-------------------|----------|----------|----------|----------|----------|-------------------|------------|-----------------|
 | Rasterbilder | ✓ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
-| RAW-Dateien | ✓ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
+| Raw-Dateien | ✓ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | Ordner | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | − |
 | MP4-Videos | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | PDF | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
@@ -56,7 +57,7 @@ Die verschiedenen Dateitypen werden, wie unten beschrieben, in unterschiedlichem
 | Asset-Typ | [Download](/help/assets/manage-organize-assets-view.md#download) | Drag-and-Drop | [Bildeditor](/help/assets/edit-images-assets-view.md) | [Suchen](/help/assets/search-assets-view.md) | [Smart-Tags](/help/assets/metadata-assets-view.md#tags) | [Umbenennen](/help/assets/manage-organize-assets-view.md) | [Versionen](/help/assets/manage-organize-assets-view.md#versions-of-assets) |
 |---------------|----------|---------------|--------------|----------|------------|----------|----------|
 | Rasterbilder | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAW-Dateien | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Raw-Dateien | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Ordner | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 | Videos | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | CC-Bibliotheken | − | − | − | − | − | ✓ | ✓ |
@@ -71,7 +72,7 @@ Die verschiedenen Dateitypen werden, wie unten beschrieben, in unterschiedlichem
 | Asset-Typ | Anmerken | Kommentar | Erstellen von Aufgaben und Überprüfen |
 |---------------|----------|----------|-------------------------|
 | Rasterbilder | ✓ | ✓ | ✓ |
-| RAW-Dateien | ✓ | ✓ | ✓ |
+| Raw-Dateien | ✓ | ✓ | ✓ |
 | Ordner | − | − | − |
 | Videos | − | ✓ | ✓ |
 | CC-Bibliotheken | − | − | − |
@@ -92,7 +93,7 @@ Die verschiedenen Dateitypen werden, wie unten beschrieben, in unterschiedlichem
 | Asset-Typ | [Metadaten](/help/assets/metadata-assets-view.md) | [Ausgabedarstellungen](/help/assets/add-delete-assets-view.md#renditions) | [Papierkorb](/help/assets/add-delete-assets-view.md#delete-assets) | Kopieren | Verschieben |
 |---------------|-------------------|------------|----------|----------|----------|
 | Rasterbilder | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAW-Dateien | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Raw-Dateien | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Ordner | ✓ | − | ✓ | ✓ | ✓ |
 | Videos | ✓ | − | ✓ | ✓ | ✓ |
 | CC-Bibliotheken | ✓ | − | − | − | − |
@@ -125,4 +126,4 @@ Benutzer von [!DNL Adobe Asset Link] können Dateien aus den unterstützten Desk
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&amp;lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General?lang=de#support)

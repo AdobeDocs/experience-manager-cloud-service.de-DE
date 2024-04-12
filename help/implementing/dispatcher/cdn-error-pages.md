@@ -1,11 +1,11 @@
 ---
 title: Konfigurieren von CDN-Fehlerseiten
-description: Erfahren Sie, wie Sie die standardmäßige Fehlerseite außer Kraft setzen können, indem Sie statische Dateien in selbstgehostetem Speicher wie Amazon S3 oder Azure Blob Storage hosten und in einer Konfigurationsdatei auf diese verweisen, die mithilfe der Cloud Manager-Konfigurationspipeline bereitgestellt wird.
+description: Erfahren Sie, wie Sie die standardmäßige Fehlerseite außer Kraft setzen können, indem Sie statische Dateien in selbstgehostetem Speicher wie Amazon S3 oder Azure Blob Storage hosten und darauf in einer Konfigurationsdatei verweisen, die mithilfe der Cloud Manager-Konfigurations-Pipeline bereitgestellt wird.
 feature: Dispatcher
 source-git-commit: 11036c3e95f0444fc5d865232a7dccab5b7f26ae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '335'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
@@ -13,26 +13,26 @@ ht-degree: 1%
 # Konfigurieren von CDN-Fehlerseiten {#cdn-error-pages}
 
 >[!NOTE]
->Diese Funktion ist noch nicht allgemein verfügbar. Um dem Programm für frühe Anwender beizutreten, senden Sie eine E-Mail `aemcs-cdn-config-adopter@adobe.com` und beschreiben Sie Ihren Anwendungsfall.
+>Diese Funktion ist noch nicht allgemein verfügbar.  Um dem Early-Adopter-Programm beizutreten, senden Sie eine E-Mail an `aemcs-cdn-config-adopter@adobe.com` und beschreiben Sie Ihren Anwendungsfall.
 
-Im unwahrscheinlichen Fall wird die [Adobe-verwaltetes CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) kann den AEM nicht erreichen, gibt das CDN standardmäßig eine ungebrandete, generische Fehlerseite aus, die angibt, dass der Server nicht erreicht werden kann. Sie können die Standardfehlerseite außer Kraft setzen, indem Sie statische Dateien in selbstgehostetem Speicher wie Amazon S3 oder Azure Blob Storage hosten und sie in einer Konfigurationsdatei referenzieren, die mithilfe des [Cloud Manager-Konfigurations-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
+Im unwahrscheinlichen Fall, dass das [Adobe-verwaltete CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) den AEM-Ursprung nicht erreichen kann, gibt das CDN standardmäßig eine ungebrandete, generische Fehlerseite aus, die angibt, dass der Server nicht erreicht werden kann. Sie können die standardmäßige Fehlerseite außer Kraft setzen, indem Sie statische Dateien in selbstgehostetem Speicher wie Amazon S3 oder Azure Blob Storage hosten und darauf in einer Konfigurationsdatei verweisen, die mithilfe der [Cloud Manager-Konfigurations-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) bereitgestellt wird.
 
 ## Setup {#setup}
 
-Bevor Sie die standardmäßige Fehlerseite überschreiben können, müssen Sie Folgendes tun:
+Bevor Sie die standardmäßige Fehlerseite außer Kraft setzen können, müssen Sie wie folgt vorgehen:
 
-* Erstellen Sie zunächst diesen Ordner und die Dateistruktur im Ordner der obersten Ebene Ihres Git-Projekts:
+* Erstellen Sie zunächst diesen Ordner und die Dateistruktur im obersten Ordner Ihres Git-Projekts:
 
 ```
 config/
      cdn.yaml
 ```
 
-* Zweitens, die `cdn.yaml` Die Konfigurationsdatei sollte Metadaten und die Fehlerseitenverweise enthalten, wie unten beschrieben.
+* Zweitens sollte die Konfigurationsdatei `cdn.yaml` Metadaten und die Referenzen der Fehlerseite enthalten, wie nachfolgend beschrieben.
 
 ### Konfiguration {#configuration}
 
-Die Fehlerseite wird als Einzelseitenanwendung (SPA) implementiert und verweist auf eine Handvoll von Eigenschaften, wie im folgenden Beispiel gezeigt.  Die statischen Dateien, auf die von den URLs verwiesen wird, sollten von Ihnen in einem Internet-zugänglichen Dienst wie Amazon S3 oder Azure Blob Storage gehostet werden.
+Die Fehlerseite wird als Einzelseitenanwendung (Single Page Application, SPA) implementiert und verweist auf eine Handvoll von Eigenschaften, wie im folgenden Beispiel gezeigt.   Die statischen Dateien, auf die von den URLs verwiesen wird, sollten von Ihnen in einem über das Internet zugänglichen Dienst wie Amazon S3 oder Azure Blob Storage gehostet werden.
 
 Konfigurationsbeispiel:
 
@@ -57,9 +57,9 @@ data:
 |     | cssUrl | URL zu einer CSS-Datei. |
 |     | jsUrl | URL zu einer JavaScript-Datei. |
 
-### Beispielgenerierte HTML {#sample-generated-html}
+### Generierte Beispiel-HTML {#sample-generated-html}
 
-Der HTML-Code, der vom CDN generiert und dem Client bereitgestellt wird, z. B. ein Browser, ähnelt dem folgenden Snippet (ist aber nicht identisch mit):
+Der HTML-Code, der vom CDN generiert und dem Client bereitgestellt wird, z. B. einem Browser, ähnelt dem folgenden Snippet (ist aber nicht identisch mit diesem):
 
 ```
 <!DOCTYPE html>
@@ -80,7 +80,7 @@ Der HTML-Code, der vom CDN generiert und dem Client bereitgestellt wird, z. B. e
 
 ### Testen {#testing}
 
-Rufen Sie zu Testzwecken den dedizierten -Endpunkt mit dem unterstützten Fehlercode auf, z. B.:
+Rufen Sie zu Testzwecken den dedizierten Endpunkt mit dem unterstützten Fehler-Code auf, z. B.:
 
 ```
 curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
@@ -88,4 +88,4 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 Folgende Codes werden unterstützt: 403, 404, 406, 500 und 503.
 
-Auf diese Weise können Sie den Fehler-Handler des CDN direkt Trigger haben, um die synthetische Antwort auf den angegebenen Fehlercode zu testen.
+Auf diese Weise können Sie den Fehler-Handler des CDN direkt auslösen, um die synthetische Antwort auf den angegebenen Fehler-Code zu testen.

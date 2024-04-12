@@ -1,106 +1,106 @@
 ---
-title: Übersicht über AEM Forms Edge Delivery Services
-description: AEM Forms-Edge Delivery Services wurden für optimale Leistung entwickelt und ermöglichen es Ihnen, sich die Zukunft einer optimierten Datenerfassung und Benutzerinteraktion vorzustellen.
+title: Überblick über AEM Forms Edge Delivery Services
+description: AEM Forms Edge Delivery Services wurde für optimale Leistung entwickelt und ermöglicht es Ihnen, sich die Zukunft einer optimierten Datenerfassung und Benutzerinteraktion vorzustellen.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1017'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # AEM Forms Edge Delivery Services
 
-AEM Forms Edge Delivery Services ist ein zusammenstellbarer Satz von Diensten, der eine schnelle Entwicklungsumgebung ermöglicht, in der Autoren neue Formulare schnell aktualisieren, veröffentlichen und starten können. Diese Dienste bieten außergewöhnliche und wirkungsvolle Formularerlebnisse, die Interaktionen und Konversionen fördern. Diese Formularerfahrungen sind einfach zu erstellen und zu entwickeln.
+AEM Forms Edge Delivery Services ist ein zusammenstellbarer Satz von Diensten, der eine schnelle Entwicklungsumgebung ermöglicht, in der Autorinnen und Autoren schnell aktualisieren und veröffentlichen können und neue Formulare schnell live geschaltet werden können.  Diese Dienste bieten außergewöhnliche und sehr wirkungsvolle Formularerlebnisse, die Interaktionen und Konversionen fördern. Diese Formularerlebnisse sind einfach zu erstellen und zu entwickeln.
 
 Diese Dienste ermöglichen Ihnen Folgendes:
 
-* **Erstellen Sie mit Tools Ihrer Wahl ein Registrierungserlebnis:** Erhöhen Sie die Autoreneffizienz durch Entkopplung von Inhaltsquellen. Standardmäßig können Sie sowohl die dokumentbasierte Bearbeitung (Microsoft SharePoint oder Google Drive) als auch die AEM Authoring (Adaptiver Forms Editor) verwenden. Sie können mit mehreren Inhaltsquellen auf derselben Formularsite arbeiten und Ihre bevorzugten Authoring-Tools wie Microsoft Excel, Google Tabellen oder Adaptive Forms Editor verwenden.
+* **Erstellen von Registrierungserlebnissen mit den Tools Ihrer Wahl**: Erhöhen Sie die Effizienz beim Authoring durch Entkopplung der Inhaltsquellen. Sie können standardmäßig sowohl dokumentbasiertes Authoring (Microsoft SharePoint und Google Drive) als auch AEM-Authoring (Editor für adaptive Formulare) verwenden. Sie können mit mehreren Inhaltsquellen auf derselben Formular-Site arbeiten und Ihre bevorzugten Authoring-Tools wie Microsoft Excel, Google Tabellen oder den Editor für adaptive Formulare verwenden.
 
-* **außergewöhnliche digitale Einschreibeerlebnisse bieten:** Bereitstellung digitaler Registrierungserlebnisse, die schnell und kontinuierlich geladen und gerendert werden und die Formularleistung durch eine echte Benutzerüberwachung (RUM) überwachen. Schnellere Ladezeiten und optimiertes Benutzererlebnis tragen zu höheren Formularvervollständigungs- und Konversionsraten bei.
+* **Bereitstellen außergewöhnlicher digitaler Registrierungserlebnisse:** Stellen Sie digitale Registrierungserlebnisse bereit, die schnell und kontinuierlich geladen und gerendert werden, und überwachen Sie die Formularleistung durch eine echte Benutzerüberwachung (Real User Monitoring, RUM). Schnellere Ladezeiten und ein optimiertes Anwendererlebnis tragen zu höheren Formularabschluss- und Konversionsraten bei.
 
-* **Verwenden Sie die benutzerfreundlichen Tools für Entwickler:** AEM Forms-Edge Delivery Services verwenden einfaches HTML, modernes CSS und Vanilla JavaScript, um außergewöhnliche Erlebnisse zu erstellen und so die steile Lernkurve eines bestimmten Frameworks zu vermeiden. Entwickler mit grundlegenden Kenntnisse in der Webentwicklung können Formularkomponenten und Erlebnisse anpassen und einfach erstellen. Es ist nicht erforderlich, auf die Ausführung einer Pipeline zu warten. Checken Sie einfach Ihren Code in GitHub ein und Ihre Änderungen sind live.
+* **Verwenden eines benutzerfreundlichen Toolsets:** AEM Forms Edge Delivery Services verwendet einfaches HTML, modernes CSS und Vanilla JavaScript, um außergewöhnliche Erlebnisse zu erstellen und so die steile Lernkurve eines bestimmten Frameworks zu vermeiden. Entwickelnde mit grundlegenden Kenntnissen in der Webentwicklung können Formularkomponenten und Erlebnisse anpassen und problemlos erstellen. Es ist nicht erforderlich, auf die Ausführung einer Pipeline zu warten. Checken Sie einfach Ihren Code in GitHub ein und Ihre Änderungen sind live.
 
-## Übersicht über AEM Forms Edge Delivery Services {#edge-overview}
+## Überblick über AEM Forms Edge Delivery Services {#edge-overview}
 
-AEM Forms Edge Delivery services ermöglichen eine hohe Flexibilität bei der Erstellung von Formularen auf Ihrer Website. Sie können Inhalte und Formulare erstellen mit [AEM Authoring](/help/forms/creating-adaptive-form-core-components.md) sowie [Dokumentenbasiertes Authoring](/help/edge/docs/forms/create-forms.md). AEM Forms Edge Delivery Services stellt einen Formularblock bereit, der als [Adaptiver Forms-Block](/help/edge/docs/forms/create-forms.md) , um Ihrer Edge Delivery Services-Site ein Formular hinzuzufügen.
+AEM Forms Edge Delivery Services ermöglicht eine hohe Flexibilität bei der Erstellung von Formularen auf Ihrer Website. Sie können Inhalte und Formulare mit [AEM Authoring](/help/forms/creating-adaptive-form-core-components.md) ebenso wie mit [dokumentbasiertem Authoring](/help/edge/docs/forms/create-forms.md) erstellen. AEM Forms Edge Delivery Services stellt einen Formularblock bereit, der als [adaptiver Formularblock](/help/edge/docs/forms/create-forms.md) bekannt ist, um Ihrer Edge Delivery Services-Site ein Formular hinzuzufügen.
 
-Sie können beispielsweise Formulare direkt in Microsoft Excel oder Google Tabellen erstellen und diese Tabellen werden in Formulare für Ihre Website umgewandelt. Alle neuen Formulare oder Formularinhalte, wie z. B. ein neues Formularfeld, stehen sofort auf Ihrer Website zur Verfügung, ohne dass ein Neuerstellungsprozess erforderlich ist.
+Sie können beispielsweise Formulare direkt in Microsoft Excel oder Google Tabellen erstellen, und diese Tabellen werden in Formulare für Ihre Website umgewandelt. Alle neuen Formulare oder Formularinhalte, wie z. B. ein neues Formularfeld, stehen sofort auf Ihrer Website zur Verfügung, ohne dass ein Neuerstellungsprozess erforderlich ist.
 
-Das folgende Diagramm zeigt, wie Sie Formulare in Microsoft Excel oder Google Tabellen (Dokumentenbasiertes Authoring) bearbeiten und in Edge Delivery Services veröffentlichen können. Außerdem wird die AEM Veröffentlichungsmethode mit dem adaptiven Forms-Editor (AEM Authoring) angezeigt.
+Das folgende Diagramm zeigt, wie Sie Inhalte in Microsoft Excel oder Google Tabellen (dokumentbasiertes Authoring) bearbeiten und mit Edge Delivery Services veröffentlichen können. Es zeigt auch die AEM-Veröffentlichungsmethode mit dem Editor für adaptive Formulare (AEM-Authoring).
 
-![In Edge Delivery Services und AEM veröffentlichen](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
+![Veröffentlichen in Edge Delivery Services und AEM](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-AEM Forms Edge Delivery Services verwendet GitHub, damit Kunden Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Sie können beispielsweise Formulare in [Google Tabellen](/help/edge/docs/forms/create-forms.md) oder [Microsoft Excel](/help/edge/docs/forms/create-forms.md) und die Komponenten Ihrer Formulare können mithilfe von CSS und JavaScript in einem GitHub-Repository entwickelt werden.
+AEM Forms Edge Delivery Services nutzt GitHub, damit Kundinnen und Kunden Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Sie können beispielsweise Formulare entweder in [Google Tabellen](/help/edge/docs/forms/create-forms.md) oder [Microsoft Excel](/help/edge/docs/forms/create-forms.md) schreiben und die Komponenten Ihrer Formulare können mithilfe von CSS und JavaScript in einem GitHub-Repository entwickelt werden.
 
-Wenn Ihre Formulare fertig sind, können Sie die [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content), eine Chrome-Browsererweiterung, um Inhaltsaktualisierungen in der Vorschau anzuzeigen und zu veröffentlichen.
+Wenn Ihre Formulare bereit sind, können Sie [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content) verwenden, eine Chrome-Browser-Erweiterung, um Inhaltsaktualisierungen in der Vorschau anzuzeigen und zu veröffentlichen.
 
 ![Installieren von AEM Sidekick](/help/edge/assets/aem-sidekick-preview-publish-forms.png)
 
-Die Wahl zwischen [Dokumentenbasiertes Authoring](#document-based-authoring-features) und [AEM Authoring](#aem-authoring-features) hängt von Ihren spezifischen Anforderungen ab:
+Die Wahl zwischen [dokumentbasiertem Authoring](#document-based-authoring-features) und [AEM-Authoring](#aem-authoring-features) hängt von Ihren spezifischen Anforderungen ab:
 
-* Für einfache Formulare, die einfach grundlegende Informationen mit einigen Feldern erfassen (denken Sie an Formulare, Formulare zur Lead-Generierung oder Formulare für Serviceanfragen) und in denen Sie eine schnelle Datenkonnektivität mithilfe einer Tabelle benötigen, muss die [Dokumentenbasiertes Authoring](#document-based-authoring-features) ist gut geeignet. Sie können diese Formulare wie ein Dokument in Google Tabellen oder Microsoft Excel erstellen.
+* Für einfache Formulare, die nur grundlegende Informationen mit einigen Feldern erfassen (denken Sie an Formulare, Formulare zur Lead-Generierung oder Formulare für Service-Anfragen) und in denen Sie eine schnelle Datenkonnektivität mithilfe einer Tabelle benötigen, ist das [dokumentbasierte Authoring](#document-based-authoring-features) gut geeignet. Sie können diese Formulare wie ein Dokument in Google Tabellen oder Microsoft Excel erstellen.
 
-* Bei komplexen Formularen wie Formularen, die mehrere Bedienfelder erfordern, komplexen Regeln und Geschäftslogik, Datenmanipulationen, Integration in externe Systeme oder optimierte Workflows mithilfe AEM Funktionen, [AEM Authoring](#aem-authoring-features) ist eine bessere Option.
+* Bei komplexen Formularen wie Formularen, die mehrere Bedienfelder, komplexe Regeln und Business-Logik, Datenmanipulationen, Integrationen in externe Systeme oder optimierte Workflows mithilfe von AEM-Funktionen erfordern, ist [AEM-Authoring](#aem-authoring-features) die bessere Option.
 
 
-### Wichtige Funktionen der Dokumentenbearbeitung und AEM Authoring
+### Wichtige Funktionen des dokumentbasierten Authorings und des AEM-Authorings
 
-Die dokumentbasierte Inhaltserstellung bietet eine Reihe grundlegender Funktionen und AEM Authoring bietet zusätzliche Funktionen, die über die dokumentbasierte Inhaltserstellung hinausgehen. So können Sie komplexere und interaktive Formulare erstellen. Die wichtigsten Funktionen von Document-basiertem Authoring und AEM Authoring sind:
+Das dokumentbasierte Authoring bietet eine Reihe grundlegender Funktionen, während das AEM-Authoring zusätzliche Funktionen bietet, die über das dokumentbasierte Authoring hinausgehen. So können Sie komplexere und interaktive Formulare erstellen. Die wichtigsten Funktionen des dokumentbasierten Authorings und des AEM-Authorings sind:
 
-#### Dokumentbasierte Authoring-Funktionen
+#### Funktionen des dokumentbasierten Authorings
 
-Mit der dokumentbasierten Bearbeitung können Sie Formulare mit vertrauten Tools wie Microsoft Excel oder Google Tabellen erstellen. Diese Formulare bieten die folgenden Funktionen:
+Mit dem dokumentbasierten Authoring können Sie Formulare mit vertrauten Tools wie Microsoft Excel oder Google Tabellen erstellen. Diese Formulare bieten die folgenden Funktionen:
 
 * Barrierefreie Komponenten für ein benutzerfreundliches Erlebnis.
-* Standardisierte HTML-Struktur für konsistentes Rendering.
+* Standardisierte HTML-Struktur für konsistentes Rendern.
 * Regeln und Überprüfungen zur Gewährleistung der Datengenauigkeit.
-* Optionen für Dateianlagen zum Erfassen zusätzlicher Informationen.
+* Optionen für Dateianhänge zum Erfassen zusätzlicher Informationen.
 * Google reCAPTCHA-Integration für den Spam-Schutz.
-* Möglichkeit, benutzerdefinierte Formularkomponenten für bestimmte Anforderungen zu erstellen.
-* Senden Sie Formulardaten direkt an Microsoft Excel- oder Google Tabellen oder E-Mail-Adressen.
-* Überwachen der Formularleistung durch Echtzeit-Benutzerüberwachung (RUM)
+* Möglichkeit zur Erstellung benutzerdefinierter Formularkomponenten für bestimmte Anforderungen.
+* Übermitteln Sie Formulardaten direkt an Microsoft Excel oder Google Tabellen oder E-Mail-Adressen.
+* Überwachen der Formularleistung durch echte Benutzerüberwachung (Real User Monitoring, RUM) 
 
-#### AEM Authoring-Funktionen
+#### Funktionen des AEM-Authorings
 
-AEM Authoring bietet eine WYSIWYG-Schnittstelle (Adaptiver Forms-Editor) zum Erstellen von Formularen und bietet alle Funktionen der dokumentbasierten Bearbeitung sowie eine Vielzahl zusätzlicher Funktionen:
+Das AEM-Authoring bietet eine WYSIWYG-Schnittstelle (den Editor für adaptive Formulare) zum Erstellen von Formularen und bietet alle Funktionen des dokumentbasierten Authorings sowie eine Vielzahl zusätzlicher Funktionen:
 
 * Erweiterter Regeleditor zum Erstellen einer komplexen Logik.
-* Serverseitige Erweiterbarkeit für benutzerdefinierte Funktionen.
-* WYSIWYG-Bearbeitungserfahrung für einfache Formularerstellung und -visualisierung.
-* Datensatzdokumentfunktionalität zum Erstellen fälschungssicherer Archive gesendeter Daten.
-* Integration mit Adobe Sign für elektronische Signaturen.
-* Integration mit Adobe Workfront Fusion, um bei der Formularübermittlung Adobe Workfront Fusion-Szenarien auszulösen.
-* Integration mit verschiedenen Datenquellen zum Vorausfüllen von Formularen und zum Senden von Daten.
+* Server-seitige Erweiterbarkeit für benutzerdefinierte Funktionen.
+* WYSIWYG-Bearbeitungserlebnis für einfache Formularerstellung und -visualisierung.
+* Dokument der Datensatzfunktionalität zum Erstellen fälschungssicherer Archive übermittelter Daten.
+* Integration in Adobe Sign für elektronische Signaturen.
+* Integration in Adobe Workfront Fusion, um bei der Formularübermittlung Adobe Workfront Fusion-Szenarien auszulösen.
+* Integration in verschiedene Datenquellen zum Vorausfüllen von Formularen und zum Übermitteln von Daten.
 * Formulardatenmodell zum Definieren der Datenstruktur und der Interaktionen mit verschiedenen Datenquellen.
 * Möglichkeit zur Auswahl aus mehreren Sendeaktionen für die Verarbeitung von Formularübermittlungen, einschließlich der Übermittlung von Daten an Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics und vielen weiteren Datenquellen.
 
-Im Wesentlichen [AEM Authoring](/help/forms/creating-adaptive-form-core-components.md) baut auf der Grundlage von [Dokumentenbasiertes Authoring](/help/edge/docs/forms/create-forms.md), mit einem erweiterten Toolkit für die Erstellung und Verwaltung komplexer Formulare.
+Im Wesentlichen baut das [AEM-Authoring](/help/forms/creating-adaptive-form-core-components.md) auf der Grundlage des [dokumentbasierten Authorings](/help/edge/docs/forms/create-forms.md) auf, mit einem erweiterten Toolkit für die Erstellung und Verwaltung komplexer Formulare.
 
 >[!NOTE]
 >
 >
-> Die AEM Authoring-Funktion ist im Rahmen des Programms für die frühe Adoptimierung verfügbar. Wenn Sie Interesse haben, senden Sie eine kurze E-Mail von Ihrer Arbeitsadresse an aem-forms-ea@adobe.com , um Zugriff auf die Funktion anzufordern.
+> Die AEM-Authoring-Funktion ist im Rahmen des Early-Adopter-Programms verfügbar. Wenn Sie Interesse haben, senden Sie eine kurze E-Mail von Ihrer Arbeitsadresse an aem-forms-ea@adobe.com, um Zugriff auf die Funktion anzufordern.
 
-### AEM Forms Edge Delivery Services: Authoring, Publishing und Übermittlung von Forms
+### AEM Forms Edge Delivery Services: Erstellen, Veröffentlichen und Übermitteln von Formularen
 
-Die folgenden Diagramme illustrieren den Prozess des Erstellens, Veröffentlichen und Übermittlens von Formularen mithilfe der Dokumentenbearbeitung und AEM Authoring.
+Die folgenden Diagramme zeigen den Prozess des Erstellens, Veröffentlichens und Übermittelns von Formularen mithilfe des dokumentbasierten Authorings und mit AEM Authoring.
 
-![Dokumentenbasiertes Authoring ](/help/edge/assets/document-based-authoring-workflow.png)
+![Dokumentbasiertes Authoring ](/help/edge/assets/document-based-authoring-workflow.png)
 
-![AEM Authoring](/help/edge/assets/aem-authoring-workflow.png)
+![AEM-Authoring](/help/edge/assets/aem-authoring-workflow.png)
 
 ## Beginnen mit dem Erstellen von Formularen
 
 * [Erste Schritte mit AEM Forms Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
 * [Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Richten Sie Ihre Google Tabellen- oder Microsoft Excel-Dateien ein, um Daten zu akzeptieren &#x200B;](/help/edge/docs/forms/submit-forms.md)
-* [Veröffentlichen Sie Ihr Formular und beginnen Sie mit der Datenerfassung](/help/edge/docs/forms/publish-forms.md)
-* [Anpassen des Erscheinungsbilds von Formularen &#x200B;](/help/edge/docs/forms/style-theme-forms.md)
-* [Wiederholbare Abschnitte zu einem Formular-&#x200B; hinzufügen](/help/edge/docs/forms/repeatable-forms.md)
-* [Anzeigen einer benutzerdefinierten Dankesmeldung nach der &#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
-* [Komponenten von Bausteinen für adaptive Formulare und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
+* [Einrichten von Google Tabellen- oder Microsoft Excel-Dateien, um Daten zu akzeptieren](/help/edge/docs/forms/submit-forms.md)
+* [Veröffentlichen des Formulars und Starten der Datenerfassung](/help/edge/docs/forms/publish-forms.md)
+* [Anpassen des Erscheinungsbilds von Formularen](/help/edge/docs/forms/style-theme-forms.md)
+* [Hinzufügen wiederholbarer Abschnitte zu einem Formular](/help/edge/docs/forms/repeatable-forms.md)
+* [Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung](/help/edge/docs/forms/thank-you-page-form.md)
+* [Komponenten von adaptiven Formularblöcken und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
 * [Echtzeit-Benutzerüberwachung](https://www.aem.live/developer/rum#authentication)
 
 <!-- 

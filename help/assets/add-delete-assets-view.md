@@ -2,8 +2,9 @@
 title: Hochladen von Assets in das Repository
 description: Hochladen von Assets in  [!DNL Assets view], Anzeigen des Upload-Status und Beheben von Upload-Problemen.
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
-workflow-type: tm+mt
+exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+workflow-type: ht
 source-wordcount: '825'
 ht-degree: 100%
 

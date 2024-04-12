@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie produktionsfremde Pipelines so konfigurieren,
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1371'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -145,16 +145,16 @@ Die Schritte zum Fertigstellen Ihrer produktionsfremden zielgerichteten Bereitst
    * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welcher Verzweigung in der ausgewählten Pipeline der Code abgerufen werden soll.
       * Geben Sie die ersten Zeichen des Verzweigungsnamens und die Funktion zur automatischen Vervollständigung dieses Felds ein. Es werden die entsprechenden auswählbaren Verzweigungen gesucht.
    * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
-   * **Pipeline** - Bei Frontend-Nicht-Produktions-Pipelines haben Sie die Möglichkeit, **[Erlebnisprüfung.](/help/implementing/cloud-manager/experience-audit-testing.md)**
+   * **Pipeline**: Bei produktionsfremden Frontend-Pipelines haben Sie die Möglichkeit, die **[Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-testing.md)** zu aktivieren.
 
    ![Konfigurations-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Wenn Sie Experience Audit aktiviert haben, tippen oder klicken Sie auf **Weiter** , um **Erlebnisprüfung** -Registerkarte, auf der Sie die Pfade definieren können, die immer in die Erlebnisprüfung einbezogen werden sollen.
+1. Wenn Sie die Erlebnisprüfung aktiviert haben, tippen oder klicken Sie auf **Weiter**, um zur Registerkarte **Erlebnisprüfung** zu gelangen, auf der Sie die Pfade definieren können, die immer in die Erlebnisprüfung einbezogen werden sollen.
 
-   * Wenn aktiviert **Erlebnisprüfung**, siehe Dokument [Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) für Details zur Konfiguration.
+   * Wenn Sie die **Erlebnisprüfung** aktiviert haben, lesen Sie das Dokument [Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) für Details zur Konfiguration.
    * Wenn nicht, überspringen Sie diesen Schritt.
 
-1. Tippen oder klicken **Speichern** , um die Pipeline zu speichern.
+1. Tippen oder klicken Sie auf **Speichern**, um die Pipeline zu speichern.
 
 Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
 

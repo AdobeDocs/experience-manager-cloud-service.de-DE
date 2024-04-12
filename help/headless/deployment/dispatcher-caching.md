@@ -4,9 +4,9 @@ description: Der Dispatcher ist eine Caching- und Sicherheitsebene vor den Adobe
 feature: Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
 source-git-commit: 859ea382cce6822da1da7d11213c3f44a25edef3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '339'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Um das Caching persistierter Abfragen zu aktivieren, definieren Sie die Dispatch
 
 >[!NOTE]
 >
->Individuelle Ergebnisse `ETag` Header-Berechnung für die zwischengespeicherten persistenten Abfragen (für *each* -Antwort, die eindeutig ist) die `FileETag Digest` muss in der Konfiguration des virtuellen Hosts für die Dispatcher-Konfiguration verwendet werden (falls noch nicht vorhanden):
+>Für eine individuelle Berechnung der `ETag`-Kopfzeile für die zwischengespeicherten persistenten Abfragen (für *jede* Antwort, die eindeutig ist), muss die `FileETag Digest`-Einstellung in der Konfiguration des virtuellen Hosts für die Dispatcher-Konfiguration verwendet werden (falls noch nicht vorhanden):
 >
 >```xml
 ><Directory />    

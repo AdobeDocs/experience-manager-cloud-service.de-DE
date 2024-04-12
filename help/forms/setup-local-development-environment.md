@@ -5,9 +5,9 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: a86e68f9dd195512a689943b303225a48b5f8a23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2723'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -220,7 +220,7 @@ AEM Forms as a Cloud Service bietet eine Docker-basierte SDK-Umgebung zur einfac
 
 1. Öffnen Sie eine Eingabeaufforderung und navigieren Sie zum Ordner `aem-forms-addon-native-<version>`.
 
-1. Stellen Sie sicher, dass Ihre lokale AEM-Autoreninstanz ausgeführt wird. Führen Sie die folgenden Befehle aus, um das SDK zu starten:
+1. Stellen Sie sicher, dass Ihre lokale AEM-Autoreninstanz ausgeführt wird. Führen Sie folgende Befehle aus, um das SDK zu starten:
 
    * Unter Microsoft® Windows
 

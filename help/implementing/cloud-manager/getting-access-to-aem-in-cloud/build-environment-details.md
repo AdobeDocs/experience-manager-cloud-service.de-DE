@@ -3,9 +3,9 @@ title: Build-Umgebung
 description: Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie sie den Code erstellt und testet.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: 54135244d7b33ba3682633b455a5538474d3146e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '788'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
 * Apache Maven 3.9.4 ist installiert.
    * Adobe empfiehlt Benutzenden, [ihre Maven-Repositorys zu aktualisieren, sodass sie HTTPS anstelle von HTTP verwenden](#https-maven).
 * Die installierten Java-Versionen sind Oracle JDK 11.0.22 und Oracle JDK 8u401.
-* **WICHTIG**: Standardmäßig wird die Variable `JAVA_HOME` Umgebungsvariable auf `/usr/lib/jvm/jdk1.8.0_401` enthält Oracle JDK 8u401. *_Diese Standardeinstellung sollte für AEM Cloud-Projekte überschrieben werden, damit JDK 11 verwendet wird_*. Siehe [Festlegen der Maven-JDK-Version](#alternate-maven-jdk-version) für weitere Details.
+* **WICHTIG**: Standardmäßig wird die Umgebungsvariable `JAVA_HOME` auf `/usr/lib/jvm/jdk1.8.0_401` festgelegt, welches Oracle JDK 8u401 enthält. *_Diese Standardeinstellung sollte für AEM Cloud-Projekte überschrieben werden, damit JDK 11 verwendet wird_*. Weitere Einzelheiten finden Sie im Abschnitt [Einstellen der Maven JDK-Version](#alternate-maven-jdk-version).
 * Es sind einige zusätzliche erforderliche Systempakete installiert.
    * `bzip2`
    * `unzip`
@@ -51,13 +51,13 @@ Um ein reibungsloses Erlebnis mit der aktualisierten Version zu gewährleisten, 
 
 ### Verwenden einer bestimmten Java-Version {#using-java-support}
 
-Standardmäßig werden Projekte vom Cloud Manager-Build-Prozess mit dem Oracle 8 JDK erstellt. AEM Cloud Service-Kunden wird jedoch dringend empfohlen, die JDK-Version, die zum Ausführen von Maven verwendet wird, auf `11`.
+Standardmäßig werden Projekte vom Cloud Manager-Build-Prozess mit dem Oracle 8 JDK erstellt. AEM Cloud Service-Kundinnen und -Kunden wird jedoch dringend empfohlen, die JDK-Version, die zum Ausführen von Maven verwendet wird, auf `11` einzustellen.
 
-#### Festlegen der Maven-JDK-Version {#alternate-maven-jdk-version}
+#### Einstellen der Maven-JDK-Version {#alternate-maven-jdk-version}
 
-Es wird empfohlen, die JDK-Version für die gesamte Maven-Ausführung auf `11` in einer `.cloudmanager/java-version` -Datei.
+Es wird empfohlen, die JDK-Version für die gesamte Maven-Ausführung auf `11` in einer `.cloudmanager/java-version`-Datei einzustellen.
 
-Erstellen Sie dazu eine Datei mit dem Namen `.cloudmanager/java-version` in der von der Pipeline verwendeten Git-Repository-Verzweigung. Bearbeiten Sie die Datei so, dass sie nur den Text enthält. `11`. Cloud Manager akzeptiert auch den Wert `8`festgelegt ist, wird diese Version nicht mehr für AEM Cloud Service-Projekte unterstützt. Alle anderen Werte werden ignoriert. Wann `11` angegeben ist, wird Oracle 11 verwendet und die `JAVA_HOME` Umgebungsvariable auf `/usr/lib/jvm/jdk-11.0.22`.
+Erstellen Sie dazu eine Datei mit dem Namen `.cloudmanager/java-version` in der von der Pipeline verwendeten Git-Repository-Verzweigung. Bearbeiten Sie die Datei so, dass sie nur den Text enthält, `11`. Cloud Manager akzeptiert zwar auch den Wert `8`, jedoch wird diese Version nicht mehr für AEM Cloud Service-Projekte unterstützt. Alle anderen Werte werden ignoriert. Wenn `11` angegeben ist, wird Oracle 11 verwendet und die Umgebungsvariable `JAVA_HOME` wird auf `/usr/lib/jvm/jdk-11.0.22` festgelegt.
 
 ## Umgebungsvariablen {#environment-variables}
 

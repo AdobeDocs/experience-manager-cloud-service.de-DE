@@ -2,8 +2,9 @@
 title: Erfahren Sie, wie man in der  [!DNL Assets view] Assets sucht und findet.
 description: Erfahren Sie, wie man in der AEM Assets-Ansicht Assets sucht und findet. Mit der leistungsstarken Suchfunktion können Sie schnell das passende Asset ermitteln und die Geschwindigkeit Ihrer Inhaltserstellung steigern.
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
-workflow-type: tm+mt
+exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+workflow-type: ht
 source-wordcount: '1543'
 ht-degree: 100%
 

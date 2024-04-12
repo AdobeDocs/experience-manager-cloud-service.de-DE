@@ -3,9 +3,9 @@ title: Aufnehmen von Inhalten in Cloud Service
 description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ihrem Migrationssatz in eine Cloud Service-Zielinstanz aufnehmen können.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: de05abac3620b254343196a283cef198f434cfca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2752'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -158,7 +158,7 @@ Wenn „AEM-Versionsaktualisierungen“ aktiv ist (d. h. Aktualisierungen werden
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="Verletzung der Eindeutigkeitsbeschränkung"
->abstract="Eine häufige Ursache für einen Fehler bei einer Aufnahme ohne Löschung ist ein Konflikt bei Knoten-IDs. Es kann nur einer der in Konflikt stehenden Knoten vorhanden sein."
+>abstract="Eine häufige Ursache für einen Fehler bei der Aufnahme mit der Einstellung „Nicht bereinigen“ ist ein Konflikt bei Knoten-IDs. Es darf nur einer der in Konflikt stehenden Knoten vorhanden sein."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=de#top-up-ingestion-process" text="Auffüllaufnahme"
 
 Eine häufige Ursache für einen [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)-Fehler ist ein Konflikt bei Knoten-IDs. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
@@ -178,7 +178,7 @@ Dieser Konflikt muss manuell behoben werden. Dabei muss eine Person, die mit dem
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="Referenzierter Knoten kann nicht gelöscht werden"
->abstract="Eine weitere häufige Ursache für einen Fehler bei einer Aufnahme ohne Löschung ist ein Versionskonflikt für einen bestimmten Knoten in der Zielinstanz. Die Versionen des Knotens müssen geändert werden."
+>abstract="Eine häufige Ursache für einen Fehler bei der Aufnahme mit der Einstellung „Nicht bereinigen“ ist ein Versionskonflikt für einen bestimmten Knoten in der Zielinstanz. Die Versionen des Knotens müssen in Ordnung gebracht werden."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=de#top-up-ingestion-process" text="Auffüllaufnahme"
 
 Eine weitere häufige Ursache für einen Fehler bei der [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) ist ein Versionskonflikt für einen bestimmten Knoten in der Zielinstanz. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
@@ -196,29 +196,29 @@ Wenn eine Aufnahme mit der Einstellung **Nicht bereinigen** mit einem Migrations
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="Eigenschaft für große Knoten"
->abstract="Eine häufige Ursache für einen Aufnahmefehler ist die Überschreitung der maximalen Größe von Knoteneigenschaftswerten. Befolgen Sie die Dokumentation, einschließlich der Unterlagen zum BPA-Bericht, um dies zu beheben."
+>abstract="Eine häufige Ursache für einen Aufnahmefehler ist die Überschreitung der maximalen Größe von Knoteneigenschaftswerten. Befolgen Sie die Dokumentation, auch die zum BPA-Bericht, um Abhilfe zu schaffen."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=de" text="Migrationsvoraussetzungen"
 
 Die in MongoDB gespeicherten Knoteneigenschaftswerte dürfen 16 MB nicht überschreiten. Wenn ein Knotenwert die unterstützte Größe überschreitet, schlägt die Aufnahme fehl und das Protokoll enthält einen `BSONObjectTooLarge`-Fehler und gibt an, welcher Knoten das Maximum überschritten hat. Dies ist eine MongoDB-Beschränkung.
 
 In der Notiz `Node property value in MongoDB` in [Voraussetzungen für das Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) finden Sie weitere Informationen und einen Link zu einem Oak-Tool, mit dem Sie alle großen Knoten finden können. Sobald alle Knoten mit großen Größen beseitigt sind, führen Sie die Extraktion und Aufnahme erneut durch.
 
-### Aufnahme rückgängig gemacht {#ingestion-rescinded}
+### Aufnahme aufgehoben {#ingestion-rescinded}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_rescinded"
->title="Aufnahme rückgängig gemacht"
->abstract="Die Extraktion, auf die die Aufnahme gewartet hat, wurde nicht erfolgreich abgeschlossen. Die Aufnahme wurde rückgängig gemacht, da sie nicht ausgeführt werden konnte."
+>title="Aufnahme aufgehoben"
+>abstract="Die Extraktion, auf die die Aufnahme gewartet hat, wurde nicht erfolgreich abgeschlossen. Die Aufnahme wurde aufgehoben, da sie nicht ausgeführt werden konnte."
 
 Bei einer Aufnahme, die mit einer laufenden Extraktion als Migrationssatz für die Quelle erstellt wurde, wird geduldig gewartet, bis diese Extraktion erfolgreich ist, und zu diesem Zeitpunkt normal gestartet. Wenn die Extraktion fehlschlägt oder gestoppt wird, werden die Aufnahme und der dazugehörige Indizierungsvorgang nicht gestartet, sondern zurückgesetzt. Überprüfen Sie in diesem Fall die Extraktion, um festzustellen, warum sie fehlgeschlagen ist, beheben Sie das Problem und beginnen Sie erneut mit dem Extrahieren. Sobald die feste Extraktion ausgeführt wird, kann eine neue Aufnahme geplant werden.
 
-### Gelöschtes Asset nach der erneuten Ausführung der Erfassung nicht vorhanden
+### Gelöschtes Asset nach erneuter Aufnahme nicht vorhanden
 
-Im Allgemeinen wird eine Änderung der Cloud-Umgebungs-Daten zwischen den einzelnen Aufnahmen nicht empfohlen.
+Im Allgemeinen wird eine Änderung der Cloud-Umgebungsdaten zwischen den einzelnen Aufnahmen nicht empfohlen.
 
-Wenn ein Asset mithilfe der Touch-Benutzeroberfläche von Assets aus dem Cloud Service-Ziel gelöscht wird, werden die Knotendaten gelöscht, aber der Asset-Blob mit dem  wird nicht sofort gelöscht. Sie ist zum Löschen markiert, sodass sie nicht mehr in der Benutzeroberfläche angezeigt wird. Sie verbleibt jedoch im Datenspeicher, bis die Speicherbereinigung erfolgt und der Blob entfernt wird.
+Wenn ein Asset mithilfe der Touch-optimierten Assets-Benutzeroberfläche aus dem Cloud Service-Ziel gelöscht wird, werden die Knotendaten gelöscht, aber der Asset-Blob mit dem Image wird nicht sofort gelöscht. Es ist zum Löschen markiert, sodass es nicht mehr in der Benutzeroberfläche angezeigt wird. Es verbleibt allerdings im Datenspeicher, bis die Speicherbereinigung erfolgt und der Blob entfernt wird.
 
-In dem Szenario, in dem ein zuvor migriertes Asset gelöscht wird und die nächste Aufnahme ausgeführt wird, bevor der Speicherberater das Löschen des Assets abgeschlossen hat, wird beim Erfassen desselben Migrationssatzes das gelöschte Asset nicht wiederhergestellt. Wenn die Erfassung die Cloud-Umgebung für das Asset überprüft, liegen keine Knotendaten vor. Daher kopiert die Erfassung die Knotendaten in die Cloud-Umgebung. Wenn jedoch der Blob-Store überprüft wird, sieht er, dass der Blob vorhanden ist, und überspringt das Kopieren des Blob. Daher sind die Metadaten nach der Erfassung vorhanden, wenn Sie das Asset über die Touch-Benutzeroberfläche betrachten, das Bild jedoch nicht. Beachten Sie, dass Migrationssätze und die Inhaltsaufnahme nicht für die Bearbeitung dieses Falls entwickelt wurden. Sie zielen darauf ab, der Cloud-Umgebung neue Inhalte hinzuzufügen und zuvor migrierte Inhalte nicht wiederherzustellen.
+Wenn ein zuvor migriertes Asset gelöscht und die nächste Aufnahme ausgeführt wird, bevor die Speicherbereinigung den Löschvorgang für das Asset abgeschlossen hat, wird beim Aufnehmen desselben Migrationssatzes das gelöschte Asset nicht wiederhergestellt. Wenn die Aufnahme die Cloud-Umgebung für das Asset überprüft, liegen keine Knotendaten vor. Daher werden im Zuge der Aufnahme die Knotendaten in die Cloud-Umgebung kopiert. Bei Überprüfung des Blob-Speichers wird jedoch festgestellt, dass der Blob vorhanden ist, und das Kopieren des Blobs übersprungen. Daher sind die Metadaten nach der Aufnahme vorhanden, wenn Sie das Asset über die Touch-optimierte Benutzeroberfläche betrachten, das Image aber nicht. Beachten Sie, dass Migrationssätze und die Inhaltsaufnahme nicht für diesen Fall entwickelt wurden. Sie zielen darauf ab, der Cloud-Umgebung neue Inhalte hinzuzufügen und nicht zuvor migrierte Inhalte wiederherzustellen.
 
 ## Wie geht es weiter {#whats-next}
 

@@ -4,21 +4,21 @@ description: Veröffentlichen eines AEM Forms Edge Delivery Services-Formulars
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '549'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Veröffentlichen Sie Ihr Formular und beginnen Sie mit der Datenerfassung
+# Veröffentlichen des Formulars und Starten der Datenerfassung
 
 Sobald Sie bereit sind, Ihr Formular für Ihre Kundschaft zur Datenerfassung oder -übermittlung freizugeben, können Sie es einfach veröffentlichen, sodass das Formular Ihrer Kundschaft zur Verfügung steht.
 
-![Dokumentenbasiertes Authoring-Ökosystem](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
+![Das Ökosystem des dokumentbasierten Authorings](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
 
 ## Voraussetzungen
 
-* Sie haben ein AEM Projekt basierend auf [AEM Forms-Bausteinvorlage](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oder [Adaptiver Forms-Block zu Ihrem bestehenden AEM hinzugefügt.](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
+* Sie verfügen über ein AEM-Projekt, das auf einer [AEM Forms-Bausteinvorlage](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) basiert, oder Sie haben [einen adaptiven Formularbaustein zu Ihrem bestehenden AEM-Projekt hinzugefügt.](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
 * Ihr Formular ist vollständig getestet und einsatzbereit.
 * Ihre [Tabelle ist konfiguriert](/help/edge/docs/forms/submit-forms.md), um Daten zu akzeptieren.
 
@@ -73,9 +73,9 @@ So fügen Sie das Formular zu Ihrer Web-Seite hinzu:
 
    | Formular |
    |---|
-   | [https://main—wefinance—wkndforms.hlx.live/inquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
 
-   ![Fügen Sie der Datei einen Baustein mit dem Namen &quot;Formular&quot;hinzu.](/help/edge/assets/enquiry-doc-to-embed-form.png)
+   ![Hinzufügen eines Blocks mit dem Namen „Formular“ zu der Datei](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
    Dieser Block dient als Platzhalter, in den das Formular eingebettet ist. Fügen Sie in der zweiten Zeile des Blocks die URL Ihrer `<form>.json`-Datei als Hyperlink hinzu.
 
@@ -87,16 +87,20 @@ So fügen Sie das Formular zu Ihrer Web-Seite hinzu:
    Verwenden Sie die Vorschau-URL (.page-URL) für Entwicklungs- oder Testzwecke oder die Veröffentlichungs-URL (.live) für die Produktion. Im Folgenden finden Sie Beispiele für Vorschau- und Veröffentlichungs-URLs:
 
    **Vorschau-URL**
-| Formular | |—| | [https://main—wefinance—wkndforms.hlx.page/inquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json)  |
+| Formular | 
+|—| 
+| [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json)  |
 
 
    **Veröffentlichungs-URL**
-| Formular | |—| | [https://main—wefinance—wkndforms.hlx.live/inquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
+| Formular | 
+|—| 
+| [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
 
 1. Verwenden Sie [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content), um eine Vorschau der Webseite anzuzeigen. Das Formular wird jetzt auf der Seite angezeigt. Hier basiert das Formular beispielsweise auf der [Abfragetabelle](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
 
 
-   ![Beispiel-EDS-Formular](/help/edge/assets/eds-form.png)
+   ![Beispiel für ein EDS-Formular](/help/edge/assets/eds-form.png)
 
 1. Verwenden Sie AEM Sidekick, um das Formular zu veröffentlichen. Jetzt können Ihre Kundinnen und Kunden das Formular ausfüllen und absenden.
 

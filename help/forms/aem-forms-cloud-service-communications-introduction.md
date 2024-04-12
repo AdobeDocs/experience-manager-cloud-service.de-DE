@@ -6,9 +6,9 @@ exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
 source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1452'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -137,7 +137,7 @@ Sie können die APIs zur Dokumentbearbeitung verwenden, um ein PDF-Dokument in e
 
 >[!NOTE]
 >
-> AEM Forms bietet eine Vielzahl integrierter Schriftarten, die nahtlos in PDF-Dateien integriert werden können. Um die Liste der unterstützten Schriftarten anzuzeigen, [Klicken Sie hier](/help/forms/supported-out-of-the-box-fonts.md).
+> AEM Forms bietet eine Vielzahl integrierter Schriftarten, die nahtlos in PDF-Dateien integriert werden können. Um die Liste der unterstützten Schriftarten anzuzeigen, [klicken Sie hier](/help/forms/supported-out-of-the-box-fonts.md).
 
 <!-- 
 

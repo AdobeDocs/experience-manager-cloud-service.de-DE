@@ -3,9 +3,9 @@ title: Testen mit Experience Audit
 description: Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die bereitgestellten Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '890'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -31,48 +31,48 @@ Experience Audit in Cloud Manager stellt sicher, dass das Erlebnis der Benutzend
 
 Die Ergebnisse des Audits sind rein informativ und ermöglichen es dem Bereitstellungs-Manager, die Bewertungen sowie die Unterschiede zwischen aktuellen und vorherigen Bewertungen anzuzeigen. Diese Erkenntnis ist wertvoll, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wurde.
 
-Experience Audit basiert auf Google Lighthouse, einem Open Source-Tool von Google.
+Die Erlebnisprüfung basiert auf Google Lighthouse, einem Open-Source-Tool von Google.
 
 >[!INFO]
 >
->Mit Wirkung vom 31. August 2023 wechselt Experience Audit zur Anzeige der Ergebnisse, die für die mobile Plattform spezifisch sind. Beachten Sie, dass die Leistungsmetriken für Mobilgeräte in der Regel niedriger sind als für Desktop-Computer. Daher sollten Sie nach dieser Änderung eine Verschiebung der gemeldeten Leistung erwarten.
+>Seit dem 31. August 2023 wechselt die Erlebnisprüfung zur Anzeige der Ergebnisse, die für die mobile Plattform spezifisch sind. Beachten Sie, dass die Leistungsmetriken für Mobilgeräte in der Regel niedriger sind als für Desktop-Computer. Daher sollten Sie nach dieser Änderung eine Verschiebung der gemeldeten Leistung erwarten.
 
 ## Verfügbarkeit {#availability}
 
-Experience Audit ist für Cloud Manager verfügbar:
+Die Erlebnisprüfung ist für folgende Cloud Manager-Pipelines verfügbar:
 
 * Sites-Produktions-Pipelines, standardmäßig.
-* Front-End-Entwicklungs-Pipelines, optional.
+* Frontend-Entwicklungs-Pipelines, optional.
 
-Siehe [Konfigurationsabschnitt](#configuration) Weitere Informationen zum Konfigurieren der Prüfung für die optionalen Umgebungen.
+Im [Abschnitt „Konfiguration“](#configuration) finden Sie weitere Informationen zum Konfigurieren der Prüfung für die optionalen Umgebungen.
 
 ## Konfiguration {#configuration}
 
-Experience Audit ist standardmäßig für Produktions-Pipelines verfügbar. Sie kann optional für Front-End-Entwicklungs-Pipelines aktiviert werden. In allen Fällen müssen Sie definieren, welche Inhaltspfade während der Pipeline-Ausführung ausgewertet werden.
+Die Erlebnisprüfung ist standardmäßig für Produktions-Pipelines verfügbar. Sie kann optional für Frontend-Entwicklungs-Pipelines aktiviert werden. In allen Fällen müssen Sie definieren, welche Inhaltspfade während der Pipeline-Ausführung ausgewertet werden.
 
-Sie konfigurieren beim Einrichten der Pipeline, welche Seiten in der Erlebnisprüfung enthalten sind.
+Sie konfigurieren, welche Seiten bei der Erlebnisprüfung einbezogen werden sollen, wenn Sie Ihre Pipeline einrichten.
 
-1. Je nach Pipeline-Typ, den Sie konfigurieren möchten, befolgen Sie die folgenden Anweisungen:
+1. Je nach Pipeline-Typ, der konfiguriert werden soll, befolgen Sie die Anweisungen für diese Vorgänge:
 
-   * Hinzufügen neuer [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) , wenn Sie die Pfade definieren möchten, die von der Prüfung bewertet werden sollen.
-   * Hinzufügen neuer [produktionsfremde Pipeline,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) , wenn Sie die Prüfung in einer Front-End- oder Entwicklungs-Full-Stack-Pipeline aktivieren möchten.
-   * Oder Sie können [eine vorhandene Pipeline bearbeiten,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) und aktualisieren Sie die vorhandenen Optionen.
+   * Fügen Sie eine neue [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) hinzu, wenn Sie die Pfade definieren möchten, die von der Prüfung bewertet werden sollen.
+   * Fügen Sie eine neue [produktionsfremde Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) hinzu, wenn Sie die Prüfung für eine Frontend- oder Full-Stack-Entwicklungs-Pipeline aktivieren möchten.
+   * Oder Sie können [eine vorhandene Pipeline bearbeiten,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) und die vorhandenen Optionen aktualisieren.
 
-1. Wenn Sie eine produktionsfremde Pipeline hinzufügen oder bearbeiten, für die Sie Experience Audit verwenden möchten, müssen Sie die **Erlebnisprüfung** Kontrollkästchen auf der **Quellcode** Registerkarte.
+1. Wenn Sie eine produktionsfremde Pipeline hinzufügen oder bearbeiten, für die Sie die Erlebnisprüfung verwenden möchten, müssen Sie das Kontrollkästchen **Erlebnisprüfung** auf der Registerkarte **Quell-Code** auswählen.
 
-   ![Erlebnisprüfung aktivieren](assets/experience-audit-enable.jpg)
+   ![Aktivieren der Erlebnisprüfung](assets/experience-audit-enable.jpg)
 
    * Dies ist nur für produktionsfremde Pipelines erforderlich.
-   * Die **Erlebnisprüfung** angezeigt, wenn das Kontrollkästchen aktiviert ist.
+   * Die Registerkarte **Erlebnisprüfung** wird beim Auswählen des Kontrollkästchens angezeigt.
 
-1. Für Produktions- und Nicht-Produktions-Pipelines definieren Sie die Pfade, die im Experience Audit auf der Seite **Erlebnisprüfung** Registerkarte.
+1. Die Pfade für Produktions-Pipelines und produktionsfremde Pipelines, die in die Erlebnisprüfung aufgenommen werden sollen, werden auf der Registerkarte **Erlebnisprüfung** definiert.
 
-   * Seitenpfade müssen mit `/` und sind relativ zu Ihrer Site.
-   * Wenn Ihre Site beispielsweise `wknd.site` und möchte `https://wknd.site/us/en/about-us.html` Geben Sie im Experience Audit den Pfad ein. `/us/en/about-us.html`.
+   * Seitenpfade müssen mit `/` beginnen und sind relativ zu Ihrer Site.
+   * Wenn Ihre Site beispielsweise `wknd.site` ist und Sie `https://wknd.site/us/en/about-us.html` in die Erlebnisprüfung aufnehmen möchten, geben Sie den Pfad `/us/en/about-us.html` ein.
 
-   ![Definieren eines Pfads für das Experience Audit](assets/experience-audit-add-page.png)
+   ![Definieren eines Pfads für die Erlebnisprüfung](assets/experience-audit-add-page.png)
 
-1. Tippen oder klicken **Seite hinzufügen** und der Pfad wird automatisch mit der Adresse Ihrer Umgebung ausgefüllt und der Pfadtabelle hinzugefügt.
+1. Wenn Sie auf **Seite hinzufügen** tippen oder klicken, wird der Pfad automatisch mit der Adresse Ihrer Umgebung ausgefüllt und der Pfadtabelle hinzugefügt.
 
    ![Speichern des Pfads zur Tabelle](assets/experience-audit-page-added.png)
 

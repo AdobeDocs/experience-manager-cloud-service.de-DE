@@ -3,9 +3,9 @@ title: Wartungsaufgaben in AEM as a Cloud Service
 description: Erfahren Sie mehr über Wartungsaufgaben in AEM as a Cloud Service und deren Konfiguration.
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: 4ac5ec2a2b8da90820734e4fc06c084c810c0724
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1129'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
   <tr>
     <td>Versionsbereinigung</td>
     <td>Adobe</td>
-    <td>Für bestehende Umgebungen (die vor dem 15. April 2024 erstellt wurden) ist die Bereinigung deaktiviert und wird in Zukunft aktiviert, wobei der Standardwert 7 Jahre beträgt. Kunden können ihn mit niedrigeren benutzerdefinierten Werten konfigurieren (z. B. 30 Tage).<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Für neue Umgebungen (die ab dem Dienstag, 15. April 2024 erstellt wurden) ist die Bereinigung standardmäßig mit den unten stehenden Werten aktiviert, wobei Kundinnen und Kunden benutzerdefinierte Werte konfigurieren können.
+    <td>Für bestehende Umgebungen (die vor dem 15. April 2024 erstellt wurden) ist die Bereinigung deaktiviert und wird in Zukunft nur mit einem Standardwert von 7 Jahren aktiviert. Kundinnen und Kunden werden dann die Bereinigung mit niedrigeren, benutzerdefinierten Werten (z. B. 30 Tage) konfigurieren können.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Für neue Umgebungen (die ab dem 15. April 2024 erstellt werden) ist die Bereinigung standardmäßig mit den unten stehenden Werten aktiviert, wobei Kundinnen und Kunden benutzerdefinierte Werte konfigurieren können.
      <ol>
        <li>Versionen, die älter als 30 Tage sind, werden entfernt</li>
        <li>Die letzten 5 Versionen der letzten 30 Tage werden beibehalten</li>
@@ -56,7 +56,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
   <tr>
     <td>Bereinigung von Prüfprotokollen</td>
     <td>Adobe</td>
-    <td>Für bestehende Umgebungen (die vor dem 15. April 2024 erstellt wurden) ist die Bereinigung deaktiviert und wird in Zukunft aktiviert, wobei der Standardwert 7 Jahre beträgt. Kunden können ihn mit niedrigeren benutzerdefinierten Werten konfigurieren (z. B. 30 Tage).<br><br> <!-- See above for the two line breaks -->Für neue Umgebungen (die ab April 2024 erstellt wurden) ist die Bereinigung standardmäßig unter der Variablen <code>/content</code> Knoten des Repositorys gemäß folgendem Verhalten:
+    <td>Für bestehende Umgebungen (die vor dem 15. April 2024 erstellt wurden) ist die Bereinigung deaktiviert und wird in Zukunft nur mit einem Standardwert von 7 Jahren aktiviert. Kundinnen und Kunden werden dann die Bereinigung mit niedrigeren, benutzerdefinierten Werten (z. B. 30 Tage) konfigurieren können.<br><br> <!-- See above for the two line breaks -->Für neue Umgebungen (die ab April 2024 erstellt werden) ist die Bereinigung standardmäßig unter dem Knoten <code>/content</code> des Repositorys gemäß folgendem Verhalten aktiviert:
      <ol>
        <li>Für die Replikationsprüfung werden Prüfprotokolle entfernt, die älter als 3 Tage sind</li>
        <li>Bei der DAM (Assets)-Prüfung werden Prüfprotokolle entfernt, die älter als 30 Tage sind</li>

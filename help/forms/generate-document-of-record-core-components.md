@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument für 
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3131'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -330,7 +330,7 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
 
         >[!NOTE]
         >
-        > AEM Forms bietet eine Vielzahl integrierter Schriftarten, die nahtlos in PDF-Dateien integriert werden können. Um die Liste der unterstützten Schriftarten anzuzeigen, [Klicken Sie hier](/help/forms/supported-out-of-the-box-fonts.md).
+        > AEM Forms bietet eine Vielzahl integrierter Schriftarten, die nahtlos in PDF-Dateien integriert werden können. Um die Liste der unterstützten Schriftarten anzuzeigen, [klicken Sie hier](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **Formularobjekte einschließen, die nicht mit dem Datenmodell verbunden sind**: Durch Festlegen dieser Eigenschaft werden ungebundene Felder aus dem schemabasierten adaptiven Formular in das Datensatzdokument einbezogen.
 

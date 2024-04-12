@@ -1,12 +1,12 @@
 ---
-title: '[!DNL Assets view] Benutzeroberfläche'
+title: „Benutzeroberfläche von [!DNL Assets view]“
 description: Grundlegendes zur Benutzeroberfläche von und Navigation in [!DNL Assets view].
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '912'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ Other use cases after previewing.
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&amp;lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General?lang=de#support)
 
 >[!MORELIKETHIS]
 >

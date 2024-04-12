@@ -6,9 +6,9 @@ feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 source-git-commit: 2cb630203b818ae338fe6b7c2ff341c76e3a3958
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2566'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -295,7 +295,7 @@ Führen Sie die folgenden Schritte aus, um die Anmeldeinformationen für das Ser
    >[!NOTE]
    >
    >* Sie können die Anmeldedaten einsehen und weitere Aktionen durchführen, beispielsweise JWT-Token generieren, Anmeldedaten kopieren und Client-Geheimnisse abrufen.
-   >* Derzeit wird nur der Berechtigungstyp für das Adobe Developer Console Service-Konto (JWT) unterstützt. Verwenden Sie nicht das `OAuth Server-to-Server` Berechtigungstyp bis zur Unterstützung Mitte April. Mehr dazu unter [Einstellung von JWT-Anmeldedaten in der Adobe Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
+   >* Derzeit wird nur der Anmeldedatentyp „Service-Konto (JWT)“ der Adobe Developer Console unterstützt. Verwenden Sie den Anmeldedatentyp `OAuth Server-to-Server` erst, wenn er ab Mitte April unterstützt wird. Lesen Sie mehr dazu unter [Einstellung von JWT-Anmeldedaten in der Adobe Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html?lang=de).
 
 1. Kopieren Sie auf der Registerkarte **[!UICONTROL Client-Anmeldedaten]** die **[!UICONTROL Client-ID]**.
 

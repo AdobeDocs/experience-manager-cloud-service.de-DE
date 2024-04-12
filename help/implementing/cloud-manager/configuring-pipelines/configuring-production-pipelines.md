@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Produktions-Pipelines konfigurieren, um Ihren
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1338'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -93,13 +93,13 @@ Gehen Sie wie folgt vor, um die Konfiguration der Pipeline mit Full-Stack-Code a
 
    ![Full-Stack-Code](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. Tippen oder klicken **Weiter** , um **Erlebnisprüfung** -Registerkarte, auf der Sie die Pfade definieren können, die immer in die Erlebnisprüfung einbezogen werden sollen.
+1. Tippen oder klicken Sie auf **Weiter**, um zur Registerkarte **Erlebnisprüfung** zu gelangen, auf der Sie die Pfade definieren können, die immer in die Erlebnisprüfung einbezogen werden sollen.
 
-   ![Hinzufügen von Experience Audit](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
+   ![Hinzufügen der Erlebnisprüfung](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
-1. Geben Sie Pfade an, die in die Erlebnisprüfung einbezogen werden sollen.
+1. Geben Sie Pfade an, die in die Erlebnisprüfung aufgenommen werden sollen.
 
-   * Siehe Dokument . [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) für Details.
+   * Einzelheiten finden Sie im Dokument [Testen mit der Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-testing.md#configuration).
 
 1. Klicken Sie auf **Speichern**, um die Pipeline zu speichern.
 

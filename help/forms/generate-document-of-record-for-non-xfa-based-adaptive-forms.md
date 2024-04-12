@@ -4,9 +4,9 @@ description: Lernen Sie, wie Sie eine Vorlage für ein Datensatzdokument (DoR) f
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4170'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -348,7 +348,7 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
 
         >[!NOTE]
         >
-        > AEM Forms bietet eine Vielzahl integrierter Schriftarten, die nahtlos in PDF-Dateien integriert werden können. Um die Liste der unterstützten Schriftarten anzuzeigen, [Klicken Sie hier](/help/forms/supported-out-of-the-box-fonts.md).
+        > AEM Forms bietet eine Vielzahl integrierter Schriftarten, die nahtlos in PDF-Dateien integriert werden können. Um die Liste der unterstützten Schriftarten anzuzeigen, [klicken Sie hier](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **Formularobjekte einschließen, die nicht mit dem Datenmodell verbunden sind**: Durch Festlegen dieser Eigenschaft werden ungebundene Felder aus dem schemabasierten adaptiven Formular in das Datensatzdokument einbezogen.
       * **Ausgeblendete Felder vom Datensatzdokument ausschließen**: Durch Festlegen der Eigenschaft wird bestimmt, dass die ausgeblendeten Felder aus dem Datensatzdokument ausgeschlossen werden sollen.
@@ -484,7 +484,7 @@ Mit einer XCI-Datei können Sie verschiedene Eigenschaften eines Dokuments festl
 
 >[!NOTE]
 >
-> AEM Forms bietet eine Vielzahl integrierter Schriftarten, die nahtlos in PDF-Dateien integriert werden können. Um die Liste der unterstützten Schriftarten anzuzeigen, [Klicken Sie hier](/help/forms/supported-out-of-the-box-fonts.md).
+> AEM Forms bietet eine Vielzahl integrierter Schriftarten, die nahtlos in PDF-Dateien integriert werden können. Um die Liste der unterstützten Schriftarten anzuzeigen, [klicken Sie hier](/help/forms/supported-out-of-the-box-fonts.md).
 
 
 ### Verwenden einer benutzerdefinierten XCI-Datei in einer Forms as a Cloud Service-Umgebung
@@ -498,7 +498,7 @@ Mit einer XCI-Datei können Sie verschiedene Eigenschaften eines Dokuments festl
     }
    ```
 
-   Beispiel:
+   Zum Beispiel:
 
    ```JSON
     {

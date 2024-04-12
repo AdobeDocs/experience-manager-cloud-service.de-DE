@@ -1,39 +1,39 @@
 ---
-title: Benutzerdefinierte Dankesnachricht nach der Formularübermittlung anzeigen
-description: Erfahren Sie, wie Sie Dankesseiten und Umleitungen für den Formularblock konfigurieren, um das Anwendererlebnis zu optimieren und die Journey der Benutzenden zu optimieren.
+title: Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung
+description: Erfahren Sie, wie Sie Dankesseiten und Umleitungen für den Formularbaustein konfigurieren, um das Anwendererlebnis zu optimieren und die Journey der Benutzenden zu optimieren.
 feature: Edge Delivery Services
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
 source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 14%
+ht-degree: 100%
 
 ---
 
-# Benutzerdefinierte Dankesnachricht nach der Formularübermittlung anzeigen
+# Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung
 
-Nachdem ein Benutzer ein Formular gesendet hat, ist es wichtig, durch eine Dankesnachricht ein nahtloses Erlebnis bereitzustellen. Dies bestätigt nicht nur die erfolgreiche Übermittlung, sondern steigert auch die Benutzerzufriedenheit und führt sie bei ihrer Journey weiter.
+Nachdem Benutzende ein Formular abgesendet haben, ist es entscheidend, ein nahtloses Erlebnis durch eine Dankesnachricht zu bieten. Dies bestätigt nicht nur die erfolgreiche Übermittlung, sondern verbessert zudem die Benutzerzufriedenheit und führt Benutzende weiter auf ihrer Journey.
 
-## Benutzerdefinierte Dankesnachricht konfigurieren
+## Konfigurieren einer benutzerdefinierten Dankesnachricht
 
-Das Standardverhalten von Adaptive Forms Block besteht darin, bei der Übermittlung die folgende Dankesnachricht anzuzeigen. Die Nachricht wird oben im Formular angezeigt.
+Standardmäßig verhält sich der adaptive Formularbaustein so, dass bei der Übermittlung die folgende Dankesnachricht angezeigt wird. Die Nachricht wird oben im Formular angezeigt.
 
-![Standard-Dankesnachricht](/help/edge/assets/thank-you-message.png)
+![Standardmäßige Dankesnachricht](/help/edge/assets/thank-you-message.png)
 
 
-Gehen Sie wie folgt vor, um eine benutzerdefinierte Dankesnachricht für Ihren adaptiven Forms-Block zu konfigurieren:
+Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Dankesnachricht für Ihren adaptiven Formularbaustein zu konfigurieren:
 
-1. Greifen Sie auf Ihr AEM-Projekt auf Ihrem lokalen Computer oder auf das GitHub-Repository zu.
+1. Greifen Sie auf Ihr AEM-Projekt auf Ihrem lokalen Computer oder im GitHub-Repository zu.
 
-1. Navigieren Sie zu [AEM Projektordner]\blocks\form\submit.js Datei zur Bearbeitung.
+1. Navigieren Sie zur Bearbeitung zur Datei [AEM-Projektordner]\blocks\form\submit.js.
 
-1. Suchen Sie den folgenden Code
+1. Suchen Sie folgenden Code
 
    ```JavaScript
        thankYouMessage.innerHTML = payload?.body?.thankYouMessage || 'Thanks for your submission';
    ```
 
-1. Ersetzen Sie die Standardnachricht durch Ihre benutzerdefinierte Nachricht. Beispiel:
+1. Ersetzen Sie die Standardnachricht durch Ihre benutzerdefinierte Nachricht. Zum Beispiel:
 
 
    ```JavaScript
@@ -41,7 +41,7 @@ Gehen Sie wie folgt vor, um eine benutzerdefinierte Dankesnachricht für Ihren a
    ```
 
 
-1. Speichern Sie die Datei. Übertragen Sie die aktualisierte Datei in Ihr GitHub-Repository. Wenn Sie jetzt ein Formular senden, wird die benutzerdefinierte Dankesnachricht angezeigt. Beispiel:
+1. Speichern Sie die Datei. Übertragen Sie die aktualisierte Datei in Ihr GitHub-Repository. Wenn Sie jetzt ein Formular senden, wird die benutzerdefinierte Dankesnachricht angezeigt. Zum Beispiel:
 
 ![Benutzerdefinierte Dankesnachricht](/help/edge/assets/custom-thank-you-message.png)
 

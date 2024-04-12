@@ -3,7 +3,7 @@ title: Überblick über Experience Fragments
 description: Erweitern Sie Experience Fragments in Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1642'
 ht-degree: 100%
 

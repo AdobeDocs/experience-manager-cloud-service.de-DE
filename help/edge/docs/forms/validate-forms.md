@@ -1,24 +1,24 @@
 ---
-title: Von Tabellen in Forms - Überarbeiten von Feldvalidierungen für adaptive Forms
-description: Erstellen Sie leistungsstarke Formulare schneller mit Tabellen und adaptiven Forms-Blockfeldern. Diese Anleitung hilft Ihnen beim Erstellen benutzerdefinierter Validierungen für EDS-Formularblock-Felder.
+title: Von Tabellen bis hin zu Formularen – Validierungen für adaptive Formularbausteine
+description: Erstellen Sie leistungsstarke Formulare schneller mit Tabellen und Blockfelder für ein adaptives Formular. Diese Anleitung hilft Ihnen beim Erstellen benutzerdefinierter Validierungen für EDS-Formularblock-Felder.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 16e1d42a-42d0-4335-ba81-feedea7ed7d7
 source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '237'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 # Hinzufügen von Validierungen zu Formularfeldern
 
-Der adaptive Forms-Block verfügt über integrierte Validierungsfunktionen. Diese Validierungen werden in modernen Browsern basierend auf dem ausgewählten Feldtyp und den von Ihnen bereitgestellten zusätzlichen Eigenschaften automatisch angewendet.
+Der adaptive Formularbaustein verfügt über integrierte Validierungsfunktionen. Diese Validierungen werden in modernen Browsern basierend auf dem ausgewählten Feldtyp und den von Ihnen bereitgestellten zusätzlichen Eigenschaften automatisch angewendet.
 
 ## Grundlegendes zu Feldtypen und Feldvalidierungen
 
-Der adaptive Forms-Block unterstützt eine Vielzahl von [HTML-5-Eingabetypen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), einschließlich Text, E-Mail, Zahl, Datum und mehr. Ebenfalls berücksichtigt werden Elemente für [Textbereich](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), Auswahl und Feldsatz sowie umfassende Eingabevalidierungsfunktionen, die zu HTML5 gehören.
+Der adaptive Formularbaustein unterstützt eine Vielzahl von [HTML5-Eingabetypen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), darunter für Text, E-Mail, Zahl und Datum. Ebenfalls berücksichtigt werden Elemente für [Textbereich](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), Auswahl und Feldsatz sowie umfassende Eingabevalidierungsfunktionen, die zu HTML5 gehören.
 
 Die HTML-Feldtypen dienen dazu, die Art der Daten zu definieren, die Benutzende eingeben können. Verschiedene Feldtypen verfügen über unterschiedliche integrierte Validierungsregeln:
 

@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
 source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1669'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -97,7 +97,7 @@ Bei einer Sende-Aktion handelt es sich um ein sling:Folder-Objekt, das Folgendes
 
 * **addfields.jsp**: Dieses Skript stellt die Aktionsfelder bereit, die der HTML-Datei während der Ausgabe hinzugefügt werden. Verwenden Sie dieses Skript, um im Skript „post.POST.jsp“ verborgene Eingabeparameter hinzuzufügen, die während der Übermittlung benötigt werden.
 * **dialog.xml**: Dieses Skript ähnelt dem Dialogfeld für die CQ-Komponente. Es enthält Konfigurationsinformationen, die der Autor anpasst. Die Felder werden im Dialogfeld für die Bearbeitung des adaptiven Formulars auf der Registerkarte „Aktionen übermitteln“ angezeigt, wenn Sie die Sende-Aktion auswählen.
-* **post.POST.jsp**: Das Submit-Servlet ruft dieses Skript mit den Daten, die Sie übermitteln, und den zusätzlichen Daten aus den vorherigen Bereichen auf. Jede Erwähnung einer Aktionsausführung auf dieser Seite impliziert die Ausführung des Skripts „post.POST.jsp“. Um die Übermittlungsaktion bei der adaptiven Forms zu registrieren, die im Dialogfeld &quot;Bearbeiten&quot;des adaptiven Formulars angezeigt werden soll, fügen Sie diese Eigenschaften zum `sling:Folder`:
+* **post.POST.jsp**: Das Submit-Servlet ruft dieses Skript mit den Daten, die Sie übermitteln, und den zusätzlichen Daten aus den vorherigen Bereichen auf. Jede Erwähnung einer Aktionsausführung auf dieser Seite impliziert die Ausführung des Skripts „post.POST.jsp“. Um die Übermittlungsaktion mit dem adaptiven Formular zu registrieren, sodass sie im Dialogfeld für die Bearbeitung des adaptiven Formulars angezeigt wird, fügen Sie diese Eigenschaften zu `sling:Folder` hinzu:
 
    * **guideComponentType** vom Typ „String“ mit dem Wert **fd/af/components/guidesubmittype**
    * **guideDataModel** vom Typ „String“ und der Angabe, für welchen Typ von adaptiven Formularen die Sende-Aktion gilt. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** wird für adaptive XSD-basierte Formulare unterstützt. **basic** wird für adaptive Formulare unterstützt, die weder XDP noch XSD verwenden. Um die Aktion in mehreren Typen adaptiver Formulare anzuzeigen, fügen Sie die entsprechenden Zeichenfolgen hinzu. Trennen Sie die Zeichenfolgen durch Kommas. Um beispielsweise eine Aktion in adaptiven <!--XFA- and -->XSD-basierten Formularen anzuzeigen, geben Sie den Wert <!--**xfa** and--> **xsd** an.

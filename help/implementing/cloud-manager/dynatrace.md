@@ -3,7 +3,7 @@ title: Dynatrace
 description: Erfahren Sie, wie Sie Dynatrace mit AEM as a Cloud Service nutzen
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 source-git-commit: 4fe8ed9c3f7b6589878da3317d15fede819bad54
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '589'
 ht-degree: 100%
 

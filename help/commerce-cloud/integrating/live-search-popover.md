@@ -3,7 +3,7 @@ title: „[!DNL Live Search] Popover-CIF-Komponente“
 description: Verwenden von CIF-Komponenten zum Aktivieren von [!DNL Live Search] -Popover-Komponenten auf einer AEM-Site
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '175'
 ht-degree: 100%
 

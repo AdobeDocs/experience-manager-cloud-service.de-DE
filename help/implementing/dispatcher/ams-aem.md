@@ -4,9 +4,9 @@ description: Migrieren der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Se
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
 source-git-commit: 6023a13eb4ea0533ba2f6cd00fb9f824b08a3f4a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1499'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Die Apache- und Dispatcher-Konfiguration in AEM as a Cloud Service ähnelt der A
 * In AEM as a Cloud Service können einige Apache-Direktiven nicht verwendet werden (z. B. `Listen` oder `LogLevel`).
 * In AEM as a Cloud Service können nur einige Teile der Dispatcher-Konfiguration in include-Dateien eingefügt werden, und ihre Benennung ist wichtig. Beispielsweise müssen Filterregeln, die Sie über verschiedene Hosts hinweg wiederverwenden möchten, in einer Datei namens `filters/filters.any` abgelegt werden. Weitere Informationen finden Sie auf der Referenzseite.
 * In AEM as a Cloud Service gibt es eine zusätzliche Validierung, um Filterregeln zu deaktivieren, die mit `/glob` geschrieben wurden. Dies dient der Vermeidung von Sicherheitsproblemen. Da `deny *` verwendet wird anstelle von `allow *` (was nicht verwendet werden kann), profitieren Kundinnen und Kunden von einer lokalen Ausführung von Dispatcher und der Möglichkeit zum Ausprobieren: Sie können sich die Protokolle ansehen, um genau zu erfahren, welche Pfade die Dispatcher-Filter blockieren, damit sich diese hinzufügen lassen.
-* AEM as a Cloud Service wird derzeit dringend empfohlen, [Aktivieren der Verwendung des flexiblen Quellmodus der Dispatcher-Konfiguration](/help/implementing/dispatcher/disp-overview.md#validation-debug) z. B. zur Verwendung von Web-Tier-Konfigurationspipelines oder zur besseren Flexibilität bei der Anzahl und Struktur von Konfigurationsdateien.
+* In AEM as a Cloud Service wird derzeit dringend empfohlen, [den flexiblen Quellmodus der Dispatcher-Konfiguration zu verwenden](/help/implementing/dispatcher/disp-overview.md#validation-debug) z. B. zur Verwendung von Konfigurations-Pipelines auf Web-Ebene oder zur besseren Flexibilität bei der Anzahl und Struktur von Konfigurationsdateien. 
 
 ## Richtlinien für die Migration einer Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service
 

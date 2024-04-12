@@ -3,8 +3,9 @@ title: Verwalten von Tags in der Assets-Ansicht
 description: Erfahren Sie, wie Sie Tags in der Assets-Ansicht verwalten. Durch ein besseres Metadaten-Management ist ein Asset einfacher zugänglich und leichter zu verwalten und zu vervollständigen.
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
-workflow-type: tm+mt
+exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+workflow-type: ht
 source-wordcount: '1667'
 ht-degree: 100%
 

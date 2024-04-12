@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '971'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Wenn Sie in der Testversion auf die Schaltfläche **CodePen-Beispielanwendung st
           ...
 ```
 
-Wenn stattdessen ein Fehler angezeigt wird, überprüfen Sie die Browser-Konsole auf weitere Details oder wenden Sie sich an [per E-Mail](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request).
+Wenn stattdessen ein Fehler angezeigt wird, überprüfen Sie die Browser-Konsole auf weitere Details oder kontaktieren Sie uns [per E-Mail](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request).
 
 Nachdem Sie nun ein wenig über CodePen wissen, konfigurieren Sie als Nächstes die App, um Daten aus der persistierten Abfrage abzurufen, die Sie in einem vorherigen Modul erstellt haben.
 
@@ -92,7 +92,7 @@ In Zeile 25 geben Sie an, aus welcher persistierten GraphQL-Abfrage die App Date
    persistedQueryName = 'your-project/adventure-list';
    ```
 
-1. Sobald diese Änderung vorgenommen wurde, sollte die App automatisch aktualisiert werden und die rohe JSON-Antwort aus Ihrer persistierten Abfrage in den `#output`-Div drucken. Wenn eine Fehlermeldung angezeigt wird, überprüfen Sie die Konsole auf weitere Details. Reichweite [per E-Mail](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request) wenn Sie noch Probleme mit diesem Schritt haben.
+1. Sobald diese Änderung vorgenommen wurde, sollte die App automatisch aktualisiert werden und die rohe JSON-Antwort aus Ihrer persistierten Abfrage in den `#output`-Div drucken. Wenn eine Fehlermeldung angezeigt wird, überprüfen Sie die Konsole auf weitere Details. Kontaktieren Sie uns [per E-Mail](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request), wenn Sie noch Probleme mit diesem Schritt haben.
 
 1. Enthält dieses JSON die genauen Eigenschaften, die Ihre App benötigt? Falls nicht, gehen Sie zurück zum Lernhandbuch [Extrahieren von Inhalten mit der GraphQL-API](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql), um Änderungen vorzunehmen. Vergessen Sie nicht, Ihre Abfrage zu speichern und zu veröffentlichen, sobald Sie damit fertig sind.
 
