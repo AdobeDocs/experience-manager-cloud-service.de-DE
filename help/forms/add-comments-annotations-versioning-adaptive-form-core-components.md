@@ -4,9 +4,9 @@ description: Verwenden Sie die Kernkomponenten des adaptiven Formulars, um einem
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 hidefromtoc: true
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '593'
 ht-degree: 2%
 
 ---
@@ -77,22 +77,15 @@ In vielen Fällen müssen Benutzer von Formulargruppen Anmerkungen zu einem Form
 1. Klicken Sie auf **Symbol hinzufügen** befindet sich in der oberen rechten Leiste, wie im Bild angegeben.
    ![Anmerkung](annotation.png)
 
-1. Klicken Sie auf **Symbol hinzufügen** befindet sich in der linken oberen Leiste, wie im Bild angegeben, um Anmerkung hinzuzufügen.
+1. Klicken Sie auf **Symbol hinzufügen** in der linken oberen Leiste, wie im Bild angegeben, um die Anmerkung hinzuzufügen.
    ![Anmerkung hinzufügen](add-annotation.png)
 
-1. Jetzt können Sie Kommentare hinzufügen, Zeichnungen mit mehreren Farben zeichnen, um Komponenten zu bilden.
+1. Jetzt können Sie Kommentare hinzufügen und Zeichnungen mit mehreren Farben zeichnen, um Komponenten zu bilden.
 
-1. Um alle Anmerkungen anzuzeigen, die Sie zu einem Formular hinzugefügt haben, wählen Sie das Formular aus und Sie sehen die Anmerkungen, die im linken Bereich hinzugefügt wurden, wie im Bild dargestellt.
+1. Um alle Anmerkungen anzuzeigen, die Sie einem Formular hinzugefügt haben, wählen Sie das Formular aus und sehen Sie die Anmerkungen, die im linken Bereich hinzugefügt wurden, wie im Bild dargestellt.
 
    ![Siehe Hinzugefügte Anmerkungen](see-annotations.png)
 
+## Siehe auch {#see-also}
 
-
-
-
-
-
-
-
-
-
+{{see-also}}

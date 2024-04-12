@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: af9e30ffb585619d1581db94d3961f561e12df2b
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 34%
@@ -134,22 +134,22 @@ Diese Dienste ermöglichen Ihnen Folgendes:
 
   Sie können jetzt benutzerdefinierte Funktionsinteraktionen optimieren, indem Sie:
 
-   * Nutzen neuer Anmerkungen, um klarere Funktionsdefinitionen bereitzustellen.
-   * Verwendung von Caching-Mechanismen für benutzerdefinierte Funktionen, was zu einer schnelleren Formularleistung führt.
-   * Nahtloses Arbeiten mit globalen Objekten in benutzerdefinierten Funktionen.
-   * Definieren und Verwenden optionaler Parameter in benutzerdefinierten Funktionen.
+   * [Nutzen neuer Anmerkungen für klarere Funktionsdefinitionen](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
+   * [Verwenden von Caching-Mechanismen für benutzerdefinierte Funktionen, was zu einer schnelleren Formularleistung führt](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
+   * [Nahtloses Arbeiten mit globalen Objekten in benutzerdefinierten Funktionen](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+   * [Definieren und Verwenden optionaler Parameter in benutzerdefinierten Funktionen](/help/forms/create-and-use-custom-functions.md#parameter).
 
   Diese Aktualisierung bringt außerdem die folgenden Verbesserungen an der Funktionalität des Regeleditors. Sie haben folgende Möglichkeiten:
 
-   * Implementieren Sie eine leistungsstarke &quot;when-then-else&quot;-Logik für die bedingte Ausführung.
+   * Implementieren von leistungsstarken [&quot;when-then-else&quot;](/help/forms/rule-editor-core-components.md#when) Logik für die bedingte Ausführung.
    * Nutzen Sie moderne JavaScript-Funktionen wie Links- und Pfeilfunktionen (ES10-Unterstützung).
    * Validieren oder Zurücksetzen nicht nur von Feldern, sondern auch von ganzen Bedienfeldern und Formularen, wodurch die Kontrolle über Benutzerinteraktionen erweitert wird.
 
   Diese Verbesserungen bieten ein intuitiveres und leistungsfähigeres Erlebnis für das Erstellen von Regeln und benutzerdefinierten Funktionen im visuellen Regeleditor.
 
-* **Erstellen mehrerer Versionen eines adaptiven Formulars**: Sie können jetzt problemlos Varianten vorhandener Formulare verwalten. Dies vereinfacht die Versionskontrolle und erleichtert den Vergleich für die Formularoptimierung - alles innerhalb eines einzigen, optimierten Workflows.
+* **[Erstellen mehrerer Versionen eines adaptiven Formulars](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**: Sie können jetzt problemlos Varianten vorhandener Formulare verwalten. Dies vereinfacht die Versionskontrolle und erleichtert den Vergleich für die Formularoptimierung - alles innerhalb eines einzigen, optimierten Workflows.
 
-* **Adaptives Formular vergleichen**: Sie können jetzt zwei Formulare einfach vergleichen, um Unterschiede zwischen zwei Formularen zu identifizieren. Dies erleichtert die reibungslose Zusammenarbeit, da Teammitglieder Revisionen vergleichen und Änderungen effizient diskutieren können.
+* **[Adaptives Formular vergleichen](/help/forms/compare-forms.md)**: Sie können jetzt zwei Formulare einfach vergleichen, um Unterschiede zwischen zwei Formularen zu identifizieren. Dies erleichtert die reibungslose Zusammenarbeit, da Teammitglieder Revisionen vergleichen und Änderungen effizient diskutieren können.
 
 * **Verbesserungen der Barrierefreiheit für die Scribble-Signatur-Komponente**: Diese Aktualisierung verbessert die Barrierefreiheit der Scribble-Signatur-Komponente erheblich:
 
@@ -179,7 +179,7 @@ Diese Aktualisierung ermöglicht ein integrativeres Erlebnis für Benutzer mit B
 
   <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Mit dem Adobe Workfront Fusion Connector können Sie Workflows entwickeln, die automatisch bei der Übermittlung eines adaptiven Formulars ausgelöst werden. Stellen Sie sich beispielsweise ein Szenario vor, bei dem ein Workflow initiiert wird, um einer bestimmten Person die Aufgabe zuzuweisen, die übermittelten Daten zu überprüfen, sodass ein Antrag auf Grundlage der im adaptiven Formular erfassten Informationen genehmigt oder abgelehnt werden kann. Diese optimierte Integration verbessert die Effizienz und bringt eine neue Automatisierungsstufe in Ihre Workflow-Prozesse.|
 
-* **Reader Extension-Dienst**: AEM Forms Communication APIs bieten Reader Extension Service, mit dem Sie Funktionen wie das Ausfüllen von Formularen und das Kommentieren regulärer PDF hinzufügen können. So lassen sich diese interaktiv für Benutzer mit dem kostenlosen Adobe Reader gestalten.
+* **[Reader Extension-Dienst](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**: AEM Forms Communication APIs bieten Reader Extension Service, mit dem Sie Funktionen wie das Ausfüllen von Formularen und das Kommentieren regulärer PDF hinzufügen können. So lassen sich diese interaktiv für Benutzer mit dem kostenlosen Adobe Reader gestalten.
 
 * [Unterstützung für Sprachen mit Rechts-nach-links-Schreibrichtung](/help/forms/supporting-new-language-localization-core-components.md): Adaptive Formulare, die auf Kernkomponenten basieren, können jetzt in einer RTL-Sprache (Right-to-Left) wie Arabisch, Persisch und Urdu angezeigt werden. RTL-Sprachen werden von über 2 Milliarden Menschen weltweit gesprochen. Durch die Verwendung eines Formulars in RTL-Sprache können Sie die Reichweite Ihrer adaptiven Formulare erweitern, um diese unterschiedlichen Zielgruppen zu bedienen und in RTL-Märkte einzutreten. In bestimmten Regionen ist es außerdem gesetzlich vorgeschrieben, Formulare in der jeweiligen Regionalsprache bereitzustellen. Durch die Anpassung an lokale Sprachen öffnen Sie nicht nur den Zugang zu einem breiteren Publikum, sondern sorgen auch für die Einhaltung der einschlägigen Gesetze und Vorschriften.
 

@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '3039'
+source-wordcount: '3108'
 ht-degree: 4%
 
 ---
@@ -42,102 +42,112 @@ Benutzerdefinierte Funktionen sind im Wesentlichen Client-Bibliotheken, die in d
 
 JavaScript-Anmerkungen werden verwendet, um Metadaten für JavaScript-Code bereitzustellen. Es enthält Kommentare, die mit bestimmten Symbolen beginnen, z. B. /** und @. Die Anmerkungen enthalten wichtige Informationen zu Funktionen, Variablen und anderen Elementen im Code. Das adaptive Formular unterstützt die folgenden JavaScript-Anmerkungen für benutzerdefinierte Funktionen:
 
-* **Name**
+#### Name
+
 Der Name wird verwendet, um die benutzerdefinierte Funktion im Regeleditor eines adaptiven Formulars zu identifizieren. Die folgenden Syntaxen werden verwendet, um eine benutzerdefinierte Funktion zu benennen:
-   * `@name [functionName] <Function Name>`
-   * `@function [functionName] <Function Name>`
-   * `@func [functionName] <Function Name>`.
-     `functionName` ist der Name der Funktion. Leerzeichen sind nicht zulässig.
-     `<Function Name>` ist der Anzeigename der Funktion im Regeleditor eines adaptiven Formulars.
+
+* `@name [functionName] <Function Name>`
+* `@function [functionName] <Function Name>`
+* `@func [functionName] <Function Name>`.
+  `functionName` ist der Name der Funktion. Leerzeichen sind nicht zulässig.
+  `<Function Name>` ist der Anzeigename der Funktion im Regeleditor eines adaptiven Formulars.
 Wenn der Name der Funktion mit dem Namen der Funktion selbst übereinstimmt, können Sie `[functionName]` aus der Syntax. <!-- For example,  in the `calculateAge` custom function, the name is defined as:
 `* @name calculateAge` -->
 
-* **Parameter**
+#### Parameter
+
 Der Parameter ist eine Liste von Argumenten, die von benutzerdefinierten Funktionen verwendet werden. Eine Funktion kann mehrere Parameter unterstützen. Die folgenden Syntaxen werden verwendet, um einen Parameter in einer benutzerdefinierten Funktion zu definieren:
-   * `@param {type} name <Parameter Description>`
-   * `@argument` `{type} name <Parameter Description>`
-   * `@arg` `{type}` `name <Parameter Description>`.
-     `{type}` stellt den Parametertyp dar.  Zulässige Parametertypen sind:
-      * string: Stellt einen einzelnen Zeichenfolgenwert dar.
-      * number: Stellt einen einzelnen numerischen Wert dar.
-      * boolean: Stellt einen einzelnen booleschen Wert dar (true oder false).
-      * Zeichenfolge[]: Stellt ein Array von Zeichenfolgenwerten dar.
-      * number[]: Stellt ein Array numerischer Werte dar.
-      * boolean[]: Stellt ein Array boolescher Werte dar.
-      * date: Stellt einen einzelnen Datumswert dar.
-      * date[]: Stellt ein Array von Datumswerten dar.
-      * array: Stellt ein generisches Array dar, das Werte verschiedener Typen enthält.
-      * object: Stellt ein an eine benutzerdefinierte Funktion übergebenes Formularobjekt dar, anstatt dessen Wert direkt weiterzugeben.
-      * scope: Stellt das globale Objekt dar, das von benutzerdefinierten Funktionen zur Laufzeit verwendet wird. Sie wird als letzter Parameter in JavaScript-Anmerkungen deklariert und ist im Regeleditor eines adaptiven Formulars nicht sichtbar. Der Parameter scope greift auf das Objekt des Formulars oder der Komponente zu, um die für die Formularverarbeitung erforderliche Regel oder das Ereignis Trigger.
 
-  Beim Parametertyp wird nicht zwischen Groß- und Kleinschreibung unterschieden und Leerzeichen sind im Parameternamen nicht zulässig.
+* `@param {type} name <Parameter Description>`
+* `@argument` `{type} name <Parameter Description>`
+* `@arg` `{type}` `name <Parameter Description>`.
+  `{type}` stellt den Parametertyp dar.  Zulässige Parametertypen sind:
+   * string: Stellt einen einzelnen Zeichenfolgenwert dar.
+   * number: Stellt einen einzelnen numerischen Wert dar.
+   * boolean: Stellt einen einzelnen booleschen Wert dar (true oder false).
+   * Zeichenfolge[]: Stellt ein Array von Zeichenfolgenwerten dar.
+   * number[]: Stellt ein Array numerischer Werte dar.
+   * boolean[]: Stellt ein Array boolescher Werte dar.
+   * date: Stellt einen einzelnen Datumswert dar.
+   * date[]: Stellt ein Array von Datumswerten dar.
+   * array: Stellt ein generisches Array dar, das Werte verschiedener Typen enthält.
+   * object: Stellt ein an eine benutzerdefinierte Funktion übergebenes Formularobjekt dar, anstatt dessen Wert direkt weiterzugeben.
+   * scope: Stellt das globale Objekt dar, das von benutzerdefinierten Funktionen zur Laufzeit verwendet wird. Sie wird als letzter Parameter in JavaScript-Anmerkungen deklariert und ist im Regeleditor eines adaptiven Formulars nicht sichtbar. Der Parameter scope greift auf das Objekt des Formulars oder der Komponente zu, um die für die Formularverarbeitung erforderliche Regel oder das Ereignis Trigger.
 
-  `<Parameter Description>` enthält Details zum Zweck des Parameters. Es kann mehrere Wörter enthalten.
+    Beim Parametertyp wird nicht zwischen Groß- und Kleinschreibung unterschieden und Leerzeichen sind im Parameternamen nicht zulässig.
+    
+    `&lt;parameter description=&quot;&quot;>&quot; enthält Details zum Zweck des Parameters. Es kann mehrere Wörter enthalten.
+    
+    Standardmäßig sind alle Parameter obligatorisch. Sie können einen Parameter als optional definieren, indem Sie entweder &quot;=&quot;nach dem Parametertyp hinzufügen oder den Parameternamen in &quot;[]&quot;einschließen. Parameter, die in JavaScript-Anmerkungen als optional definiert wurden, werden im Regeleditor als optional angezeigt.
+    Um eine Variable als optionalen Parameter zu definieren, können Sie eine der folgenden Syntaxen verwenden:
+    
+    * `@param {type=} Input1`
+    
+    In der obigen Codezeile ist &quot;Input1&quot;ein optionaler Parameter ohne Standardwert. So deklarieren Sie einen optionalen Parameter mit dem Standardwert:
+    `@param {string=&lt;value>} input1`
+    
+    &quot;input1&quot;als optionalen Parameter mit dem Standardwert &quot;value&quot;.
+    
+    * `@param {type} [Input1]&quot;
+    
+    In der obigen Codezeile ist &quot;Input1&quot;ein optionaler Parameter ohne Standardwert. So deklarieren Sie einen optionalen Parameter mit dem Standardwert:
+    `@param {array} [input1=&lt;value>]`
+    &quot;input1&quot;ist ein optionaler Parameter des Array-Typs, bei dem der Standardwert &quot;value&quot;festgelegt ist.
+    Stellen Sie sicher, dass der Parametertyp in geschweifte Klammern eingeschlossen ist. {} und der Parametername in eckigen Klammern [] eingeschlossen ist.
+    
+    Betrachten Sie das folgende Code-Snippet, bei dem input2 als optionaler Parameter definiert ist:
+    
+    &quot;javascript
+    
+    /**
+    * optionale Parameterfunktion
+    * @name OptionalParameterFunction
+    * @param {string} input1
+    * @param {string=} input2
+    * @return {string}
+    */
+    function OptionalParameterFunction(input1, input2) {
+    let result = &quot;Result: &quot;;
+    result += input1;
+    if (input2 !== null) {
+    result += &quot; &quot; + input2;
+    }
+    Rückgabeergebnis;
+    }
+    &quot;
+    
+    Die folgende Abbildung zeigt die Verwendung der benutzerdefinierten Funktion &quot;OptionalParameterFunction&quot;im Regeleditor:
+    
+    &lt;!>— ![Optionale oder erforderliche Parameter ](/help/forms/assets/optional-default-params.png) —>
+    
+    Sie können die Regel speichern, ohne einen Wert für die erforderlichen Parameter anzugeben. Die Regel wird jedoch nicht ausgeführt und es wird eine Warnmeldung angezeigt, wie folgt:
+    
+    &lt;!>— ![unvollständige Regelwarnung](/help/forms/assets/incomplete-rule.png) —>
+    
+    Wenn der Benutzer den optionalen Parameter leer lässt, wird der Wert &quot;Undefined&quot;an die benutzerdefinierte Funktion für den optionalen Parameter übergeben.
 
-  Standardmäßig sind alle Parameter obligatorisch. Sie können einen Parameter als optional definieren, indem Sie entweder `=` nach dem Parametertyp oder , der den Parameternamen in  `[]`. Parameter, die in JavaScript-Anmerkungen als optional definiert wurden, werden im Regeleditor als optional angezeigt.
-Um eine Variable als optionalen Parameter zu definieren, können Sie eine der folgenden Syntaxen verwenden:
+#### Rückgabetyp
 
-   * `@param {type=} Input1`
-In der obigen Codezeile `Input1` ist ein optionaler Parameter ohne Standardwert. So deklarieren Sie einen optionalen Parameter mit dem Standardwert:
-     `@param {string=<value>} input1`
-
-     `input1` als optionalen Parameter verwenden, wobei der Standardwert auf `value`.
-
-   * `@param {type} [Input1]`
-In der obigen Codezeile `Input1` ist ein optionaler Parameter ohne Standardwert. So deklarieren Sie einen optionalen Parameter mit dem Standardwert:
-     `@param {array} [input1=<value>]`
-     `input1` ist ein optionaler Parameter des Array-Typs, dessen Standardwert auf `value`.
-Stellen Sie sicher, dass der Parametertyp in geschweifte Klammern eingeschlossen ist. {} und der Parametername in eckigen Klammern eingeschlossen ist [].
-
-     Betrachten Sie das folgende Code-Snippet, bei dem input2 als optionaler Parameter definiert ist:
-
-     ```javascript
-          /**
-          * optional parameter function
-          * @name OptionalParameterFunction
-          * @param {string} input1 
-          * @param {string=} input2 
-          * @return {string}
-         */
-         function OptionalParameterFunction(input1, input2) {
-         let result = "Result: ";
-         result += input1;
-         if (input2 !== null) {
-             result += " " + input2;
-         }
-         return result;
-         }
-     ```
-
-     Die folgende Abbildung zeigt mithilfe der `OptionalParameterFunction` benutzerdefinierte Funktion im Regeleditor:
-
-     ![Optionale oder erforderliche Parameter](/help/forms/assets/optional-default-params.png)
-
-     Sie können die Regel speichern, ohne einen Wert für die erforderlichen Parameter anzugeben. Die Regel wird jedoch nicht ausgeführt und es wird eine Warnmeldung angezeigt, wie folgt:
-
-     ![unvollständige Regelwarnung](/help/forms/assets/incomplete-rule.png)
-
-     Wenn der Benutzer den optionalen Parameter leer lässt, wird der Wert &quot;Undefined&quot;an die benutzerdefinierte Funktion für den optionalen Parameter übergeben.
-
-* **Rückgabetyp**
 Der Rückgabetyp gibt den Typ des Werts an, den die benutzerdefinierte Funktion nach der Ausführung zurückgibt. Die folgenden Syntaxen werden verwendet, um einen Rückgabetyp in einer benutzerdefinierten Funktion zu definieren:
-   * `@return {type}`
-   * `@returns {type}`
-     `{type}` stellt den Rückgabetyp der Funktion dar. Zulässige Rückgabetypen sind:
-      * string: Stellt einen einzelnen Zeichenfolgenwert dar.
-      * number: Stellt einen einzelnen numerischen Wert dar.
-      * boolean: Stellt einen einzelnen booleschen Wert dar (true oder false).
-      * Zeichenfolge[]: Stellt ein Array von Zeichenfolgenwerten dar.
-      * number[]: Stellt ein Array numerischer Werte dar.
-      * boolean[]: Stellt ein Array boolescher Werte dar.
-      * date: Stellt einen einzelnen Datumswert dar.
-      * date[]: Stellt ein Array von Datumswerten dar.
-      * array: Stellt ein generisches Array dar, das Werte verschiedener Typen enthält.
-      * object: Stellt direkt das Formularobjekt anstelle des Werts dar.
 
-     Beim Rückgabetyp wird nicht zwischen Groß- und Kleinschreibung unterschieden.
+* `@return {type}`
+* `@returns {type}`
+  `{type}` stellt den Rückgabetyp der Funktion dar. Zulässige Rückgabetypen sind:
+   * string: Stellt einen einzelnen Zeichenfolgenwert dar.
+   * number: Stellt einen einzelnen numerischen Wert dar.
+   * boolean: Stellt einen einzelnen booleschen Wert dar (true oder false).
+   * Zeichenfolge[]: Stellt ein Array von Zeichenfolgenwerten dar.
+   * number[]: Stellt ein Array numerischer Werte dar.
+   * boolean[]: Stellt ein Array boolescher Werte dar.
+   * date: Stellt einen einzelnen Datumswert dar.
+   * date[]: Stellt ein Array von Datumswerten dar.
+   * array: Stellt ein generisches Array dar, das Werte verschiedener Typen enthält.
+   * object: Stellt direkt das Formularobjekt anstelle des Werts dar.
 
-* **Privat**
+  Beim Rückgabetyp wird nicht zwischen Groß- und Kleinschreibung unterschieden.
+
+#### Privat
+
 Die als privat deklarierte benutzerdefinierte Funktion wird nicht in der Liste der benutzerdefinierten Funktionen im Regeleditor eines adaptiven Formulars angezeigt. Standardmäßig sind benutzerdefinierte Funktionen öffentlich. Die Syntax zum Deklarieren der benutzerdefinierten Funktion als privat lautet `@private`.
 
 Weitere Informationen zum Definieren optionaler Parameter in JSDocs finden Sie unter [Klicken Sie hier](https://jsdoc.app/tags-param).
@@ -390,7 +400,7 @@ Fügen Sie den folgenden Code in die benutzerdefinierte Funktion ein, wie im Abs
 
 ```javascript
     
-	/**
+    /**
     * enablePanel
     * @name enablePanel
     * @param {object} field1
