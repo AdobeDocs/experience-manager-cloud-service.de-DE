@@ -4,12 +4,20 @@ description: Der Regeleditor für adaptive Formulare ermöglicht es Ihnen, ohne 
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-source-git-commit: 78b3b11caf143ed147079ef2b3b3ebe5c1beafd7
+exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
 workflow-type: tm+mt
-source-wordcount: '5755'
-ht-degree: 82%
+source-wordcount: '5444'
+ht-degree: 88%
 
 ---
+
+
+<span class="preview"> Dieser Artikel enthält Inhalte für einige Funktionen vor der Veröffentlichung. Auf diese Funktionen vor der Veröffentlichung kann nur über unsere [Pre-Release-Kanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features). Die Funktionen des Vorversionsprogramms sind:
+* Unterstützung für die Implementierung verschachtelter Bedingungen mit der Funktion &quot;When-then-else&quot;
+* Überprüfen oder Zurücksetzen von Bedienfeldern und Formularen, einschließlich Feldern
+* Unterstützung für moderne JavaScript-Funktionen wie let- und pfeile Funktionen (ES10-Unterstützung) in benutzerdefinierten Funktionen.
+</span>
 
 # Hinzufügen von Regeln zu einem adaptiven Formular (Kernkomponenten) {#adaptive-forms-rule-editor}
 
@@ -328,13 +336,13 @@ Der Regeleditor bietet eine umfangreiche und dennoch einfache Benutzeroberfläch
 So starten Sie die Benutzeroberfläche des Regeleditors:
 
 1. Öffnen Sie ein adaptives Formular im Autorenmodus.
-1. Wählen Sie das Formularobjekt aus, für das Sie eine Regel schreiben möchten, und wählen Sie in der Komponentensymbolleiste die Option ![edit-rules](assets/edit-rules-icon.svg). Die Benutzeroberfläche des Regeleditors wird angezeigt.
+1. Wählen Sie das Formularobjekt aus, für das Sie eine Regel schreiben möchten, und wählen Sie in der Komponenten-Symbolleiste ![edit-rules](assets/edit-rules-icon.svg). Die Benutzeroberfläche des Regeleditors wird angezeigt.
 
    ![create-rules](assets/create-rules.png)
 
    Alle vorhandenen Regeln für die ausgewählten Formularobjekte werden in dieser Ansicht aufgelistet. Weitere Informationen zum Verwalten vorhandener Regeln finden Sie unter [Verwalten von Regeln](rule-editor.md#p-manage-rules-p).
 
-1. Auswählen **[!UICONTROL Erstellen]** , um eine neue Regel zu erstellen. Wenn Sie den Regeleditor zum ersten Mal starten, wird standardmäßig der Visual Editor der Regeleditor-Benutzeroberfläche geöffnet.
+1. Wählen Sie **[!UICONTROL Erstellen]**, um eine neue Regel zu erstellen. Wenn Sie den Regeleditor zum ersten Mal starten, wird standardmäßig der Visual Editor der Regeleditor-Benutzeroberfläche geöffnet.
 
    ![Benutzeroberfläche des Regeleditors](assets/rule-editor-ui.png)
 
@@ -362,7 +370,7 @@ Einige Funktionen werden in der Abbildung dargestellt:
 >
 >Sie können auf den Registerkarten „Formularobjekte“ und „Funktionen“ eine Textsuche nach den Namen und Titeln von Objekten und Funktionen durchführen.
 
-Im linken Baum der Formularobjekte können Sie die Formularobjekte auswählen, um die Regeln anzuzeigen, die auf die einzelnen Objekte angewendet werden. Sie können nicht nur durch die Regeln der verschiedenen Formularobjekte navigieren, sondern auch Regeln zwischen den Formularobjekten kopieren und einfügen. Weitere Informationen finden Sie unter [Kopieren und Einfügen von Regeln](rule-editor.md#p-copy-paste-rules-p).
+In der linken Baumstruktur der Formularobjekte können Sie die Formularobjekte auswählen, um die Regeln anzuzeigen, die auf die einzelnen Objekte angewendet werden. Sie können nicht nur durch die Regeln der verschiedenen Formularobjekte navigieren, sondern auch Regeln zwischen den Formularobjekten kopieren und einfügen. Weitere Informationen finden Sie unter [Kopieren und Einfügen von Regeln](rule-editor.md#p-copy-paste-rules-p).
 
 ### C. Umschalten zwischen Formularobjekten und Funktionen {#c-form-objects-and-functions-toggle-br}
 
@@ -414,15 +422,15 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
 1. Schreiben Sie zuerst die Regel, mit der die Sichtbarkeit des Felds „Gehalt des Partners“ entsprechend der vom Benutzer über das Optionsfeld „Familienstand“ gewählten Option gesteuert wird.
 
-   Öffnen Sie das Kreditantragsformular im Autorenmodus. Wählen Sie die **[!UICONTROL Familienstand]** Komponente und wählen Sie ![edit-rules](assets/edit-rules-icon.svg). Wählen Sie als Nächstes **[!UICONTROL Erstellen]** , um den Regeleditor zu starten.
+   Öffnen Sie das Kreditantragsformular im Autorenmodus. Wählen Sie die Komponente **[!UICONTROL Familienstand]** und ![edit-rules](assets/edit-rules-icon.svg) aus. Wählen Sie als Nächstes **[!UICONTROL Erstellen]** aus, um den Regeleditor zu starten.
 
    ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1-cc.png)
 
    Wenn Sie den Regeleditor starten, ist standardmäßig die Wenn-Regel ausgewählt. Darüber hinaus wird das Formularobjekt (in diesem Fall „Familienstand“), von dem aus Sie den Regeleditor gestartet haben, in der Wenn-Anweisung angegeben.
 
-   Sie können zwar das ausgewählte Objekt nicht bearbeiten oder ändern, es ist jedoch möglich, über die Dropdown-Liste für Regeln einen anderen Regeltyp wählen (siehe unten). Wenn Sie eine Regel für ein anderes Objekt erstellen möchten, wählen Sie Abbrechen , um den Regeleditor zu beenden und ihn erneut über das gewünschte Formularobjekt zu starten.
+   Sie können zwar das ausgewählte Objekt nicht bearbeiten oder ändern, es ist jedoch möglich, über die Dropdown-Liste für Regeln einen anderen Regeltyp wählen (siehe unten). Wenn Sie eine Regel für ein anderes Objekt erstellen möchten, wählen Sie „Abbrechen“ aus, um den Regeleditor zu beenden, und starten Sie ihn erneut über das gewünschte Formularobjekt.
 
-1. Auswählen **[!UICONTROL Status auswählen]** und wählen Sie **[!UICONTROL ist gleich]**. Das Feld **[!UICONTROL Eine Zeichenfolge eingeben]** wird angezeigt.
+1. Wählen Sie die Dropdown-Liste **[!UICONTROL Status auswählen]** und **[!UICONTROL Ist gleich]** aus. Das Feld **[!UICONTROL Eine Zeichenfolge eingeben]** wird angezeigt.
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
@@ -440,7 +448,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5-cc.png)
 
-1. Ziehen Sie das Feld **[!UICONTROL Gehalt des Partners]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]**. Alternativ können Sie die **[!UICONTROL Objekt ablegen oder hier auswählen]** und wählen Sie die **[!UICONTROL Gehalt des Partners]** aus dem Popup-Menü, in dem alle Formularobjekte im Formular aufgelistet werden.
+1. Ziehen Sie das Feld **[!UICONTROL Gehalt des Partners]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]**. Stattdessen können Sie auch das Feld **[!UICONTROL Objekt hier einfügen oder auswählen]** auswählen und das Feld **[!UICONTROL Gehalt des Partners]** aus dem Popup-Menü wählen, in dem sämtliche Formularobjekte im Formular aufgeführt sind.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
 
@@ -453,7 +461,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 1. Wählen Sie in der Anweisung Else die Option **[!UICONTROL Ausblenden]** aus dem **[!UICONTROL Aktion auswählen]** angezeigt.
    ![when-else](assets/when-else-1.png)
 
-1. Ziehen Sie das Feld **[!UICONTROL Gehalt des Partners]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]**. Alternativ können Sie die **[!UICONTROL Objekt ablegen oder hier auswählen]** und wählen Sie die **[!UICONTROL Gehalt des Partners]** aus dem Popup-Menü, in dem alle Formularobjekte im Formular aufgelistet werden.
+1. Ziehen Sie das Feld **[!UICONTROL Gehalt des Partners]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]**. Stattdessen können Sie auch das Feld **[!UICONTROL Objekt hier einfügen oder auswählen]** auswählen und das Feld **[!UICONTROL Gehalt des Partners]** aus dem Popup-Menü wählen, in dem sämtliche Formularobjekte im Formular aufgeführt sind.
    ![when-else](assets/when-else-2.png)
 
    Die Regel wird im Regeleditor wie folgt angezeigt.
@@ -462,7 +470,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
 
 
-1. Auswählen **[!UICONTROL Fertig]** , um die Regel zu speichern.
+1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Regel zu speichern.
 
 <!--
 1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
@@ -477,13 +485,13 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
 1. Als Nächstes erstellen Sie eine Regel für die Berechnung des Kreditanspruchsbetrags (50 % des Gesamtgehalts) und zur Anzeige des Betrags im Feld für den Kreditanspruch. Dies erreichen Sie, indem Sie für das Feld „Kreditanspruch“ Regeln vom Typ **[!UICONTROL Wert festlegen]** erstellen.
 
-   Wählen Sie im Authoring-Modus die **[!UICONTROL Kreditanspruch]** Feld und wählen Sie ![edit-rules](assets/edit-rules-icon.svg). Wählen Sie als Nächstes **[!UICONTROL Erstellen]** , um den Regeleditor zu starten.
+   Wählen Sie im Autorenmodus das Feld **[!UICONTROL Kreditanspruch]** und wählen Sie dann ![edit-rules](assets/edit-rules-icon.svg). Wählen Sie anschließend **[!UICONTROL Erstellen]** aus, um den Regeleditor zu starten.
 
 1. Wählen Sie in der Dropdown-Liste „Regeln“ die Regel **[!UICONTROL Wert festlegen]** aus.
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10-cc.png)
 
-1. Auswählen **[!UICONTROL Option auswählen]** und wählen **[!UICONTROL Mathematischer Ausdruck]**. Ein Feld, in dem Sie mathematische Ausdrücke schreiben können, wird geöffnet.
+1. Wählen Sie **[!UICONTROL Option auswählen]** und dann **[!UICONTROL Mathematischer Ausdruck]** aus. Ein Feld, in dem Sie mathematische Ausdrücke schreiben können, wird geöffnet.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11-cc.png)
 
@@ -497,7 +505,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. Wählen Sie anschließend im markierten Bereich um das Ausdrucksfeld aus und wählen Sie **[!UICONTROL Ausdruck erweitern]**.
+1. Wählen Sie als Nächstes etwas im hervorgehobenen Bereich um das Ausdrucksfeld und wählen Sie dann **[!UICONTROL Ausdruck erweitern]** aus.
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
@@ -511,7 +519,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    Erstellen Sie als Nächstes eine Bedingung, bei der bei Rückgabe von „True“ der Ausdruck ausgeführt wird.
 
-1. Auswählen **[!UICONTROL Bedingung hinzufügen]** , um eine Wenn-Anweisung hinzuzufügen.
+1. Wählen Sie **[!UICONTROL Bedingung hinzufügen]** aus, um eine Wenn-Anweisung hinzuzufügen.
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
@@ -563,83 +571,83 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Benutzerdefinierte Funktionen im Regeleditor {#custom-functions}
 
-Sie können auch benutzerdefinierte Funktionen in Ihrem Regeleditor verwenden. Anweisungen zum Erstellen benutzerdefinierter Funktionen finden Sie im Artikel [Benutzerdefinierte Funktionen in Adaptive Forms](/help/forms/create-and-use-custom-functions.md).
-
-Zusätzlich zu den vorkonfigurierten Funktionen wie beispielsweise *Summe von*, die unter „Funktionenausgabe“ aufgeführt sind, können Sie auch benutzerdefinierte Funktionen erstellen, die Sie häufig benötigen. Stellen Sie sicher, dass für die Funktion, die Sie schreiben, ein `jsdoc` vorhanden ist.
-
-Dieses dazugehörige `jsdoc` ist aus den folgenden Gründen erforderlich:
-
-* Wenn Sie benutzerdefinierte Konfigurationen und Beschreibungen verwenden möchten
-* Da Funktionen in `JavaScript,` auf unterschiedliche Weise deklariert werden können und Sie mithilfe der Kommentare den Überblick über die Funktionen behalten.
-
-Der Regeleditor unterstützt die JavaScript ES2015-Syntax für Skripte und benutzerdefinierte Funktionen.
-Weitere Informationen finden Sie unter [jsdoc.app](https://jsdoc.app/).
-
-Unterstützte `jsdoc`-Tags:
-
-* **Private** (Privat)
-Syntax: `@private`  
-Eine Private-Funktion ist nicht als benutzerdefinierte Funktion enthalten.
-
-* **Name**
-Syntax: `@name funcName <Function Name>`
-Alternativ dazu ist es möglich`,``@function funcName <Function Name>` **oder** `@func` `funcName <Function Name>` zu verwenden.
-  `funcName` ist der Name der Funktion (Leerzeichen sind nicht zulässig).
-  `<Function Name>` ist der Anzeigename der Funktion.
-
-* **Parameter**
-Syntax: `@param {type} name <Parameter Description>`
-Alternativ dazu ist es möglich, `@argument` `{type} name <Parameter Description>` **oder** `@arg` `{type}` `name <Parameter Description>` zu verwenden.
-Zeigt die von der Funktion verwendeten Parameter an. In einer Funktion können mehrere Parameter-Tags vorhanden sein (je ein Tag für jeden Parameter in der Reihenfolge ihres Auftretens).
-  `{type}` gibt den Parametertyp an. Zulässige Parametertypen sind:
-
-   1. String (Zeichenfolge)
-   1. Number (Zahl)
-   1. Boolean (Boolesch)
-   1. Scope (Umfang)
-   1. Zeichenfolge[]
-   1. number[]
-   1. boolean[]
-   1. Datum
-   1. date[]
-   1. Array
-   1. Objekt
-
-  `scope` bezieht sich auf ein spezielles globales Objekt, das von der Forms-Laufzeit bereitgestellt wird. Es muss der letzte Parameter sein und ist für den Benutzer im Regeleditor nicht sichtbar. Sie können den Bereich verwenden, um auf lesbare Formular- und Feld-Proxy-Objekte zuzugreifen, um Eigenschaften zu lesen, Ereignisse, die die Regel ausgelöst haben, und eine Reihe von Funktionen zur Bearbeitung des Formulars.
-
-  `object` type wird verwendet, um ein lesbares Feldobjekt im Parameter an eine benutzerdefinierte Funktion zu übergeben, anstatt den Wert weiterzugeben.
-
-  Alle Parametertypen fallen in eine der oben genannten Kategorien. „None“ (Keiner) wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Bei den Typen wird nicht zwischen Groß- und Kleinschreibung unterschieden. Leerzeichen sind im Parameternamen nicht zulässig.  Parameterbeschreibung kann mehrere Wörter enthalten.
-
-* **Optionaler Parameter**
-Syntax: `@param {type=} name <Parameter Description>`
-Alternativ können Sie Folgendes verwenden: `@param {type} [name] <Parameter Description>`
-Standardmäßig sind alle Parameter obligatorisch. Sie können einen Parameter optional markieren, indem Sie `=` in den Parametertyp ein oder den Parameternamen in eckige Klammern setzen.
-
-  Deklarieren Sie beispielsweise `Input1` als optionaler Parameter:
-   * `@param {type=} Input1`
-   * `@param {type} [Input1]`
-
-* **Return Type** (Rückgabetyp)
-Syntax: `@return {type}`
-Alternativ ist es möglich, `@returns {type}` zu verwenden.
-Fügt Informationen über die Funktion hinzu (z. B. ihren Zweck).
-Die Zeichenfolge „{type}“ gibt den Rückgabetyp der Funktion an. Zulässige Rückgabetypen sind:
-
-   1. String (Zeichenfolge)
-   2. Number (Zahl)
-   3. Boolean (Boolesch)
-   4. Zeichenfolge[]
-   5. number[]
-   6. boolean[]
-   7. Datum
-   8. date[]
-   9. Array
-   10. Objekt
-
-  Alle anderen Rückgabetypen fallen in eine der oben genannten Kategorien. Keine Angabe wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Bei Rückgabetypen wird nicht zwischen Groß- und Kleinschreibung unterschieden.
+Neben den vordefinierten Funktionen wie *Summe der* die unter **Funktionsausgabe** können Sie auch benutzerdefinierte Funktionen in Ihrem Regeleditor verwenden. Der Regeleditor unterstützt die JavaScript ECMAScript 2019-Syntax für Skripte und benutzerdefinierte Funktionen. Anweisungen zum Erstellen benutzerdefinierter Funktionen finden Sie im Artikel [Benutzerdefinierte Funktionen in Adaptive Forms](/help/forms/create-and-use-custom-functions.md).
 
 <!--
+
+Ensure that the function you write is accompanied by the `jsdoc` above it. Adaptive Form supports the various [JavaScript annotations for custom functions](/help/forms/create-and-use-custom-functions.md#js-annotations).
+
+For more information, see [jsdoc.app](https://jsdoc.app/).
+
+Accompanying `jsdoc` is required:
+
+* If you want custom configuration and description
+* Because there are multiple ways to declare a function in `JavaScript,` and comments let you keep a track of the functions.
+
+Supported `jsdoc` tags:
+
+* **Private**
+  Syntax: `@private`
+  A private function is not included as a custom function.
+
+* **Name**
+  Syntax: `@name funcName <Function Name>`
+  Alternatively `,` you can use: `@function funcName <Function Name>` **or** `@func` `funcName <Function Name>`.
+  `funcName` is the name of the function (no spaces allowed).
+  `<Function Name>` is the display name of the function.
+
+* **Parameter**
+  Syntax: `@param {type} name <Parameter Description>`
+  Alternatively, you can use: `@argument` `{type} name <Parameter Description>` **or** `@arg` `{type}` `name <Parameter Description>`.
+  Shows parameters used by the function. A function can have multiple parameter tags, one tag for each parameter in the order of occurrence.
+  `{type}` represents parameter type. Allowed parameter types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. scope
+    5. string[]
+    6. number[]
+    7. boolean[]
+    8. date
+    9. date[]
+    10. array
+    11. object
+
+   `scope` refers to a special globals object which is provided by forms runtime. It must be the last parameter and is not be visible to the user in the rule editor. You can use scope to access readable form and field proxy object to read properties, event which triggered the rule and a set of functions to manipulate the form.
+
+   `object` type is used to pass readable field object in parameter to a custom function instead of passing the value.
+
+   All parameter types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Types are not case-sensitive. Spaces are not allowed in the parameter name.  Parameter description can have multiple words.
+
+* **Optional Parameter**
+Syntax: `@param {type=} name <Parameter Description>` 
+Alternatively, you can use: `@param {type} [name] <Parameter Description>`
+By default all parameters are mandatory. You can mark a parameter optional by adding `=` in type of the parameter or by putting param name in square brackets.
+   
+   For example, let us declare `Input1` as optional parameter:
+    * `@param {type=} Input1`
+    * `@param {type} [Input1]`
+
+* **Return Type**
+  Syntax: `@return {type}`
+  Alternatively, you can use `@returns {type}`.
+  Adds information about the function, such as its objective.
+  {type} represents the return type of the function. Allowed return types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. string[]
+    5. number[]
+    6. boolean[]
+    7. date
+    8. date[]
+    9. array
+    10. object
+
+  All other return types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Return types are not case-sensitive.
+
 **Adding a custom function**
 
 For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
@@ -647,7 +655,7 @@ For example, you want to add a custom function which calculates area of a square
 To create a client library and add it in the CRX repository, perform the following steps:
 
 1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
-1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
+2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >
@@ -739,22 +747,22 @@ var c = {
 
 ## Verwalten von Regeln {#manage-rules}
 
-Alle vorhandenen Regeln für ein Formularobjekt werden aufgelistet, wenn Sie das Objekt auswählen und ![edit-rules1](assets/edit-rules-icon.svg). Sie können den Titel und eine Vorschau der Regelzusammenfassung anzeigen. Darüber hinaus können Sie in der Benutzeroberfläche die vollständige Regelübersicht erweitern und anzeigen, die Reihenfolge der Regeln ändern, Regeln bearbeiten und Regeln löschen.
+Wenn Sie das Objekt und dann ![edit-rules1](assets/edit-rules-icon.svg) auswählen, werden alle vorhandenen Regeln für ein Formularobjekt aufgelistet. Sie können den Titel und eine Vorschau der Regelzusammenfassung anzeigen. Darüber hinaus können Sie in der Benutzeroberfläche die vollständige Regelübersicht erweitern und anzeigen, die Reihenfolge der Regeln ändern, Regeln bearbeiten und Regeln löschen.
 
 ![List-rules](assets/list-rules-cc.png)
 
 Sie können die folgenden Aktionen für Regeln ausführen:
 
-* **Anzeigen/Reduzieren**: Die Inhaltsspalte in der Regelliste zeigt den Regelinhalt an. Wenn der gesamte Regelinhalt nicht in der Standardansicht sichtbar ist, wählen Sie ![expand-rule-content](assets/Smock_ChevronDown.svg) um sie zu erweitern.
+* **Anzeigen/Reduzieren**: Die Inhaltsspalte in der Regelliste zeigt den Regelinhalt an. Wenn in der Standardansicht nicht der gesamte Regelinhalt sichtbar ist, wählen Sie ![expand-rule-content](assets/Smock_ChevronDown.svg) aus, um die Ansicht zu erweitern.
 
 * **Anordnung ändern**: Jede neue Regel, die Sie erstellen, wird am unteren Rand der Regelliste gestapelt. Die Regeln werden von oben nach unten ausgeführt. Die Regel oben wird zuerst ausgeführt, gefolgt von anderen Regeln desselben Typs. Wenn beispielsweise eine Wenn-, Anzeigen-, Aktivieren- und eine weitere Wenn-Regel an den ersten vier Positionen der Liste stehen, werden zuerst die zuoberst stehende Wenn-Regel und dann die Wenn-Regel an der vierten Position ausgeführt. Danach werden die Anzeigen- und die Aktivieren-Regel ausgeführt.
 Sie können die Position einer Regel in der Reihenfolge ändern, indem Sie auf ![sort-rules](assets/sort-rules.svg) für die Regel tippen oder die Regel an die gewünschte Stelle in der Liste ziehen und dort ablegen.
 
-* **Bearbeiten**: Zum Bearbeiten einer Regel aktivieren Sie das Kontrollkästchen neben ihrem Titel. Weitere Optionen zum Bearbeiten und Löschen der Regel werden angezeigt. Auswählen **[!UICONTROL Bearbeiten]** zum Öffnen der ausgewählten Regel im Regeleditor <!-- in visual  or code editor mode depending on the mode used to create the rule -->.
+* **Bearbeiten**: Zum Bearbeiten einer Regel aktivieren Sie das Kontrollkästchen neben ihrem Titel. Weitere Optionen zum Bearbeiten und Löschen der Regel werden angezeigt. Wählen Sie **[!UICONTROL Bearbeiten]**, um die ausgewählte Regel im Regeleditor <!-- in visual  or code editor mode depending on the mode used to create the rule --> zu öffnen.
 
-* **Löschen**: Um eine Regel zu löschen, wählen Sie sie aus und klicken Sie auf **[!UICONTROL Löschen]**.
+* **Löschen**: Um eine Regel zu löschen, wählen Sie die Regel aus und dann **[!UICONTROL Löschen]**.
 
-* **Aktivieren/Deaktivieren**: Wenn Sie die Verwendung einer Regel vorübergehend aussetzen müssen, können Sie eine oder mehrere Regeln auswählen und **[!UICONTROL Deaktivieren]** in der Symbolleiste &quot;Aktionen&quot;, um sie zu deaktivieren. Wenn eine Regel deaktiviert ist, wird sie zur Laufzeit nicht ausgeführt. Um eine Regel zu aktivieren, die deaktiviert ist, können Sie sie auswählen und in der Aktionssymbolleiste die Option Aktivieren auswählen. Die Statusspalte der Regel zeigt an, ob die Regel aktiviert oder deaktiviert ist.
+* **Aktivieren/Deaktivieren**: Wenn Sie die Verwendung einer Regel vorübergehend aussetzen müssen, können Sie eine oder mehrere Regeln auswählen und in der Aktionsleiste **[!UICONTROL Deaktivieren]** wählen, um sie zu deaktivieren. Wenn eine Regel deaktiviert ist, wird sie zur Laufzeit nicht ausgeführt. Um eine deaktivierte Regel zu aktivieren, können Sie sie auswählen und dann in der Aktionssymbolleiste „Aktivieren“ auswählen. Die Statusspalte der Regel zeigt an, ob die Regel aktiviert oder deaktiviert ist.
 
 ![Regel deaktivieren](assets/disablerule-cc.png)
 
@@ -764,7 +772,7 @@ Es ist möglich, Regeln aus einem Feld zu kopieren und in andere, ähnliche Feld
 
 Gehen Sie wie folgt vor, um Regeln zu kopieren und einzufügen:
 
-1. Wählen Sie das Formularobjekt aus, aus dem Sie eine Regel kopieren möchten, und wählen Sie in der Komponentensymbolleiste ![Regel bearbeiten](assets/edit-rules-icon.svg). Die Benutzeroberfläche des Regeleditors wird angezeigt, wobei das Formularobjekt ausgewählt ist und die vorhandenen Regeln angezeigt werden.
+1. Wählen Sie das Formularobjekt aus, von dem Sie eine Regel kopieren möchten, und wählen Sie in der Komponentensymbolleiste ![Regel bearbeiten](assets/edit-rules-icon.svg). Die Benutzeroberfläche des Regeleditors wird angezeigt, wobei das Formularobjekt ausgewählt ist und die vorhandenen Regeln angezeigt werden.
 
    ![Regel kopieren](assets/copyrule.png)
 
@@ -774,13 +782,13 @@ Gehen Sie wie folgt vor, um Regeln zu kopieren und einzufügen:
 
    ![copyrule2](assets/copyrule2.png)
 
-1. Wählen Sie ein anderes Formularobjekt aus, in das Sie die Regel einfügen möchten, und wählen Sie **[!UICONTROL Einfügen]**. Darüber hinaus können Sie die Regel bearbeiten, um Änderungen daran vorzunehmen.
+1. Wählen Sie ein anderes Formularobjekt aus, in das Sie die Regel einfügen möchten, und wählen Sie dann **[!UICONTROL Einfügen]** aus. Darüber hinaus können Sie die Regel bearbeiten, um Änderungen daran vorzunehmen.
 
    >[!NOTE]
    >
    >Sie können eine Regel nur dann in ein anderes Formularobjekt einfügen, wenn dieses Formularobjekt das Ereignis der kopierten Regel unterstützt. So unterstützt beispielsweise eine Schaltfläche das Klickereignis. Sie können eine Regel, die ein Klickereignis enthält, in eine Schaltfläche, nicht jedoch in ein Kontrollkästchen einfügen.
 
-1. Auswählen **[!UICONTROL Fertig]** , um die Regel zu speichern.
+1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Regel zu speichern.
 
 ## Verschachtelte Ausdrücke {#nestedexpressions}
 
@@ -790,7 +798,7 @@ Das folgende Beispiel zeigt eine verschachtelte Regel, die dem Benutzer eine Mel
 
 ![Komplexer Ausdruck](assets/complexexpression.png)
 
-Sie können Bedingungen innerhalb einer Regel auch mittels Drag-and-Drop ziehen, um sie zu bearbeiten. Wählen Sie den Ziehpunkt aus und bewegen Sie den Mauszeiger über ( ![handle](assets/drag-handle.svg)) vor einer Bedingung. Sobald sich der Zeiger wie unten gezeigt in das Handsymbol verwandelt, ziehen Sie die Bedingung per Drag &amp; Drop an eine beliebige Stelle innerhalb der Regel. Die Regelstruktur ändert sich.
+Sie können Bedingungen innerhalb einer Regel auch mittels Drag-and-Drop ziehen, um sie zu bearbeiten. Wählen Sie den Ziehgriff vor einer Bedingung aus und bewegen Sie den Mauszeiger über den Griff (![handle](assets/drag-handle.svg)). Sobald sich der Zeiger wie unten gezeigt in das Handsymbol verwandelt, ziehen Sie die Bedingung per Drag &amp; Drop an eine beliebige Stelle innerhalb der Regel. Die Regelstruktur ändert sich.
 
 ![Drag-and-Drop](assets/drag-and-drop.png)
 
