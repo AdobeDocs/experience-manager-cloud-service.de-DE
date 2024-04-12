@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
+source-git-commit: 0ef1e1915f2fdbe44cff209851eb43cc9d69958e
 workflow-type: tm+mt
-source-wordcount: '2285'
-ht-degree: 32%
+source-wordcount: '2261'
+ht-degree: 33%
 
 ---
 
@@ -32,11 +32,13 @@ Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Man
 
 Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/maintenance/latest.md).
 
-## Video zur Version {#release-video}
+<!-- ## Release Video {#release-video}
 
-Sehen Sie sich das Video Versionsübersicht vom März 2024 an, um eine Zusammenfassung der Funktionen zu erhalten, die in der Version 2024.3.0 hinzugefügt wurden:
+Have a look at the March 2024 Release Overview video for a summary of the features added in the 2024.3.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -170,8 +172,6 @@ Diese Dienste ermöglichen Ihnen Folgendes:
    * Wenn eine Signatur eingegeben wird, können Benutzer der Sprachausgabe den Text hören, der zum Erstellen der Signatur verwendet wird.
 
 Diese Aktualisierung ermöglicht ein integrativeres Erlebnis für Benutzer mit Behinderungen, indem die Navigation, Klarheit und das Feedback für die Scribble-Signatur-Komponente verbessert werden.
-
-
 
 ### Early-Adopter-Programm {#forms-early-adopter}
 
