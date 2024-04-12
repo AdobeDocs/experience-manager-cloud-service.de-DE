@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 0ef1e1915f2fdbe44cff209851eb43cc9d69958e
+source-git-commit: af9e30ffb585619d1581db94d3961f561e12df2b
 workflow-type: tm+mt
 source-wordcount: '2261'
-ht-degree: 33%
+ht-degree: 34%
 
 ---
 
@@ -48,7 +48,7 @@ Have a look at the March 2024 Release Overview video for a summary of the featur
 
 AEM Sites kann jetzt als Inhaltsquelle für Edge Delivery Services verwendet werden. Autoren verwalten ihre Websites in AEM mit dem neuen universellen Editor mit kontextbezogenem Wysiwyg Authoring. Dies ermöglicht es Unternehmen, mit Edge Delivery Services schnell und leistungsstarke Webseiten zu erstellen und gleichzeitig AEM leistungsstarke Funktionen für Content Management zu nutzen.
 
-![AEM Authoring](/help/edge/assets/universal_editor_edge_delivery_services.png)
+![AEM-Authoring](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
 Weitere Informationen finden Sie unter [Dokumentation](/help/edge/overview.md) und beobachten Sie die [AEM Gems - Erste Schritte mit AEM Authoring und Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
 
@@ -117,7 +117,7 @@ Mit Assets Essentials können Administratoren die Zugriffsebenen für private Sa
 
 ### Neue Funktionen für AEM Forms {#forms-new-features}
 
-* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: AEM Forms Edge Delivery Services ist ein zusammenstellbarer Satz von Diensten, der eine schnelle Entwicklungsumgebung ermöglicht, in der Autoren neue Formulare schnell aktualisieren, veröffentlichen und starten können. Diese Dienste bieten außergewöhnliche und wirkungsvolle Formularerlebnisse, die Interaktionen und Konversionen fördern. Diese Formularerfahrungen sind einfach zu erstellen und zu entwickeln.
+* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: AEM Forms Edge Delivery Services ist ein zusammenstellbarer Satz von Diensten, der eine schnelle Entwicklungsumgebung ermöglicht, in der Autoren neue Formulare schnell aktualisieren, veröffentlichen und starten können. Diese Dienste bieten außergewöhnliche und sehr wirkungsvolle Formularerlebnisse, die Interaktionen und Konversionen fördern. Diese Formularerlebnisse sind einfach zu erstellen und zu entwickeln.
 
   ![EDS Forms-Funktionen](/help/edge/assets/eds-forms-features.png)
 
@@ -241,3 +241,4 @@ Eine vollständige Liste der Cloud Manager-Veröffentlichungen nach Monaten find
 ## Migrations-Tools {#migration-tools}
 
 Eine vollständige Liste der Versionen von Migrations-Tools finden Sie [hier](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+
