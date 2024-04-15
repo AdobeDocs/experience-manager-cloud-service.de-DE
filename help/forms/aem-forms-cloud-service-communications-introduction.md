@@ -2,13 +2,12 @@
 title: Was sind Kommunikations-APIs für AEM Forms as a Cloud Service?
 description: Verwenden Sie Kommunikations-APIs zum Signieren, Zertifizieren oder Schützen Ihrer Dokumente, um PDF-Generierungsprozesse zu automatisieren und PDF-Dokumente in ein anderes Format zu konvertieren.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
-exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
 workflow-type: tm+mt
-source-wordcount: '1964'
-ht-degree: 72%
+source-wordcount: '1982'
+ht-degree: 73%
 
 ---
 
@@ -193,10 +192,12 @@ Sowohl Signature-APIs als auch Verschlüsselungs-APIs sind [synchrone APIs](#typ
 
 ### Dienst „Reader-Erweiterung“
 
-<span class="preview"> Die Reader Extension Service-Funktion ist im Rahmen des Early Adopter Program verfügbar. Sie können schreiben an `aem-forms-ea@adobe.com` von Ihrer offiziellen E-Mail-ID, um dem frühen Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern. </span>
+<span class="preview"> Die Reader Extension Service-Funktion ist im Rahmen des Early Adopter Program verfügbar. Sie können von Ihrer offiziellen E-Mail-ID aus an aem-forms-ea@adobe.com schreiben, um dem frühen Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern. </span>
 
-Der Reader Extensions-Dienst ermöglicht Ihrem Unternehmen die einfache Freigabe interaktiver PDF-Dokumente, indem die Funktionalität von Adobe Reader um zusätzliche Verwendungsrechte erweitert wird. Der Reader Extensions-Dienst funktioniert mit Adobe Reader. Der Dienst fügt einem PDF-Dokument Verwendungsrechte hinzu. Diese Aktion aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument mit Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments.
+Der Reader Extensions-Dienst ermöglicht Ihrem Unternehmen die einfache Freigabe interaktiver PDF-Dokumente, indem die Funktionalität von Adobe Reader um zusätzliche Verwendungsrechte erweitert wird. Der Reader Extensions-Dienst funktioniert mit Adobe Reader 7.0 oder höher. Der Dienst fügt einem PDF-Dokument Verwendungsrechte hinzu. Diese Aktion aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument mit Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments.
 
+>[!NOTE]
+>Externe Benutzende benötigen keine zusätzliche Software oder Plug-ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten.
 
 Bei PDF-Dokumenten, denen entsprechende Verwendungsrechte hinzugefügt wurden, können Empfängerinnen und Empfänger die folgenden Aktivitäten in Adobe Reader durchführen:
 
@@ -242,7 +243,7 @@ Die verschiedenen Funktionen für Verwendungsrechte mit Reader Extension Service
 * **Nachricht**: Die Meldung, die in Adobe Acrobat Reader beim Öffnen eines PDF-Dokuments mit einer oder mehreren angewendeten Verwendungsrechten angezeigt wird.
 * **Kennwort entsperren**: Das zum Öffnen eines verschlüsselten PDF-Dokuments erforderliche Kennwort. Normalerweise ist dies das Kennwort zum Öffnen des Dokuments, aber wenn das PDF-Dokument zusätzlich durch ein Berechtigungskennwort geschützt ist, kann es entweder zum Öffnen verwendet werden.
 
-Die [Dokumentation zur API-Referenz](https://adobe-aem-document-experimental.redoc.ly/) enthält detaillierte Informationen zu allen Parametern, Authentifizierungsmethoden und verschiedenen Services, die von APIs bereitgestellt werden. Die Dokumentation zur API-Referenz ist auch im Format .yaml verfügbar. Sie können die .yaml-Datei herunterladen und in Postman hochladen, um die Funktionalität der APIs zu überprüfen.
+Die [Dokumentation zur API-Referenz](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) enthält detaillierte Informationen zu allen Parametern, Authentifizierungsmethoden und verschiedenen Services, die von APIs bereitgestellt werden. Die Dokumentation zur API-Referenz ist auch im Format .yaml verfügbar. Sie können die .yaml-Datei herunterladen und in Postman hochladen, um die Funktionalität der APIs zu überprüfen.
 
 ## Typen von Kommunikations-APIs {#types}
 
