@@ -4,7 +4,7 @@ description: Verschieben, Löschen, Kopieren, Umbenennen, Aktualisieren und Vers
 role: User,Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: e2a0e93a4ff01d9a180fcf1ad097ccbfb354fc0f
+source-git-commit: f7d3e356e4e43d5838a6319f5ead750c149a9b3b
 workflow-type: tm+mt
 source-wordcount: '1062'
 ht-degree: 95%
@@ -149,3 +149,4 @@ Um das Metadatenfeld „Ablaufdatum“ zum Formular hinzuzufügen, ziehen Sie di
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
 * Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&amp;lang=de#support)
+
