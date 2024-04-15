@@ -2,10 +2,10 @@
 title: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 description: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 411793f140a2a9cf482d820382d41de843a97e87
-workflow-type: ht
-source-wordcount: '1648'
-ht-degree: 100%
+source-git-commit: fdac9b4152c61f775769d7ed30be1097db119e2a
+workflow-type: tm+mt
+source-wordcount: '1660'
+ht-degree: 98%
 
 ---
 
@@ -13,23 +13,21 @@ ht-degree: 100%
 
 Im folgenden Abschnitt finden Sie allgemeine Versionshinweise zu [!DNL Workfront for Experience Manager enhanced connector]
 
-Das Veröffentlichungsdatum für die neueste Version 1.9.18 von [!DNL Workfront for Experience Manager enhanced connector] ist der 8. März 2024.
+Das Veröffentlichungsdatum für die neueste Version 1.9.19 von [!DNL Workfront for Experience Manager enhanced connector] ist der Samstag, 12. April 2024.
 
 ## Die Highlights der Version {#release-highlights}
 
 Die neueste Version von [!DNL Workfront for Experience Manager enhanced connector] enthält die folgende Fehlerbehebung:
 
-* Bei der Verarbeitung von Uploads mit mehreren Assets aus Workfront treten Probleme auf.
-* Wenn Sie Workfront zum Suchen nach Ordnern im Experience Manager verwenden und keine abschließenden Anführungszeichen hinzufügen, führt dies zu einem `SERVER_ERROR`.
+* Wenn HTTP-Clients nicht geschlossen werden, treten Probleme mit nicht genügend Arbeitsspeicher auf.
 
 >[!NOTE]
 >
 >AEM 6.4 hat das Ende des erweiterten Supports erreicht. Siehe unsere [technischen Unterstützungszeiträume](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Die unterstützten Versionen finden Sie [hier](https://experienceleague.adobe.com/docs/?lang=de).
 
-
 >[!IMPORTANT]
 >
->Adobe empfiehlt eine [Aktualisierung auf die neueste Version 1.9.18](/help/assets/workfront-connector-install.md) von [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe empfiehlt, [Aktualisierung auf die neueste Version 1.9.19](/help/assets/workfront-connector-install.md) des [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekannte Probleme {#known-issues}
 
@@ -39,13 +37,18 @@ Die neueste Version von [!DNL Workfront for Experience Manager enhanced connecto
 
 ## Frühere Versionen {#previous-releases}
 
-### Version Februar 2024 {#february-2023-release}
+### Version März 2024 {#march-2024-release}
+
+* Bei der Verarbeitung von Uploads mit mehreren Assets aus Workfront treten Probleme auf.
+* Wenn Sie Workfront zum Suchen nach Ordnern im Experience Manager verwenden und keine abschließenden Anführungszeichen hinzufügen, führt dies zu einem `SERVER_ERROR`.
+
+### Version Februar 2024 {#february-2024-release}
 
 * Aktivieren Sie die Umschalter-Funktion, damit AEM Cloud-Kundinnen und Kunden einen Connector konfigurieren und einrichten können.
 
 * Wenn der `resourceResolver` geschlossen wird, ohne dass die zugrunde liegende Sitzung explizit geschlossen wird, kann dies in AEM-Instanzen zu Sitzungslecks führen. Es ist wichtig, die Sitzung explizit zu schließen, da das automatische Schließen des Ressourcen-Resolvers die Sitzung nicht implizit schließt.
 
-### Version Januar 2024 {#january-2023-release}
+### Version Januar 2024 {#january-2024-release}
 
 * Die [!DNL Workfront]-Konfiguration in [!DNL CRX DE] speichert derzeit nicht die `project ID`, wodurch beim Anwenden mit Schreibschutz-Berechtigung Fehler verursacht werden. Erfahren Sie mehr über das [Konfigurieren von Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=de#linked-folders).
 
@@ -120,7 +123,6 @@ Die neueste Version von [!DNL Workfront for Experience Manager enhanced connecto
 * Das Löschen von Kommentaren in Workfront wird jetzt in Experience Manager angezeigt.
 
 * Die Möglichkeit zur Verwaltung der Blockierung von Neukundinnen oder Neukunden auf Experience Manager as a Cloud Service durch Konfiguration des Connectors.
-
 
 ### Version Januar 2023 {#january-2022-release}
 
