@@ -4,10 +4,10 @@ description: Verschieben, Löschen, Kopieren, Umbenennen, Aktualisieren und Vers
 role: User,Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
-source-wordcount: '1024'
-ht-degree: 100%
+source-git-commit: e2a0e93a4ff01d9a180fcf1ad097ccbfb354fc0f
+workflow-type: tm+mt
+source-wordcount: '1062'
+ht-degree: 95%
 
 ---
 
@@ -28,7 +28,8 @@ Verwenden Sie [!DNL Assets view], um die folgenden Asset-Management-Aufgaben aus
 * ![checkout icon](assets/do-not-localize/checkout-icon.png) Checkt das ausgewählte Asset aus.
 * ![copy icon](assets/do-not-localize/copy-icon.png) Kopiert die ausgewählte Datei oder den ausgewählten Ordner.
 * ![move icon](assets/do-not-localize/move-icon.png) Verschiebt das ausgewählte Asset oder den ausgewählten Ordner an einen anderen Speicherort in der Repository-Hierarchie.
-* ![rename icon](assets/do-not-localize/rename-icon.png) Benennt das ausgewählte Asset oder den ausgewählten Ordner um. Verwenden Sie einen eindeutigen Namen, sonst schlägt die Umbenennung mit einer Warnung fehl. Sie können es mit einem anderen Namen erneut versuchen.
+* ![rename icon](assets/do-not-localize/rename-icon.png) Benennt das ausgewählte Asset oder den ausgewählten Ordner um. Verwenden Sie einen eindeutigen Namen, sonst schlägt die Umbenennung mit einer Warnung fehl. Sie können es mit einem neuen Namen erneut versuchen.
+Außerdem können Sie auf den Titel eines Assets oder Ordners klicken, um es umzubenennen. Erwähnen Sie den neuen Text im **Asset umbenennen** Textfeld und klicken Sie auf **Speichern**. Diese Funktion ist in den Ansichten &quot;Raster&quot;, &quot;Galerie&quot;, &quot;Wasserfall&quot;und &quot;Liste&quot;verfügbar. <!--in-place rename-->
 * ![assign task icon](assets/do-not-localize/review-delegate-icon.png) Weist anderen Benutzern Aufgaben zu, damit sie an einem Asset zusammenarbeiten können.
 
 Sie können die gleichen Optionen bei den Miniaturansichten der Assets anzeigen.
