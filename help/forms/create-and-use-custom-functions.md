@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: bc040f29a8912c5901ddb71bd32ee2d2a97d3eec
+source-git-commit: ee6072b3fc6786905a6610081acb22c708f1eae4
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 4%
@@ -155,7 +155,7 @@ Die als privat deklarierte benutzerdefinierte Funktion wird nicht in der Liste d
 
 Um die benutzerdefinierten Funktionen im Regeleditor aufzulisten, können Sie eines der folgenden Formate verwenden:
 
-### **Funktionsanweisung mit oder ohne jsdoc-Kommentare**
+### Funktionsanweisung mit oder ohne jsdoc-Kommentare
 
 Sie können eine benutzerdefinierte Funktion mit oder ohne jsdoc-Kommentare erstellen.
 
@@ -167,7 +167,7 @@ Sie können eine benutzerdefinierte Funktion mit oder ohne jsdoc-Kommentare erst
 ```
 Wenn der Benutzer der benutzerdefinierten Funktion keine JavaScript-Anmerkungen hinzufügt, wird sie im Regeleditor anhand ihres Funktionsnamens aufgelistet. Es wird jedoch empfohlen, JavaScript-Anmerkungen einzufügen, um die Lesbarkeit der benutzerdefinierten Funktionen zu verbessern.
 
-### **Pfeilfunktion mit obligatorischen JavaScript-Anmerkungen oder Kommentaren**
+### Pfeilfunktion mit obligatorischen JavaScript-Anmerkungen oder Kommentaren
 
 Sie können eine benutzerdefinierte Funktion mit einer Pfeilfunktionssyntax erstellen:
 
@@ -191,7 +191,7 @@ Sie können eine benutzerdefinierte Funktion mit einer Pfeilfunktionssyntax erst
 
 Wenn der Benutzer der benutzerdefinierten Funktion keine JavaScript-Anmerkungen hinzufügt, wird die benutzerdefinierte Funktion nicht im Regeleditor eines adaptiven Formulars aufgeführt.
 
-### **Funktionsausdruck mit obligatorischen JavaScript-Anmerkungen oder Kommentaren**
+### Funktionsausdruck mit obligatorischen JavaScript-Anmerkungen oder Kommentaren
 
 Um benutzerdefinierte Funktionen im Regeleditor eines adaptiven Formulars aufzulisten, erstellen Sie benutzerdefinierte Funktionen im folgenden Format:
 
