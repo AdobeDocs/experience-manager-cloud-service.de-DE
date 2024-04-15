@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 593a2b2930093d29a22f6c1ff391c11db9bda7dc
+source-git-commit: 9582cd8c7777544fde5d13fcd79cfec318e3f780
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 4%
@@ -50,8 +50,7 @@ Der Name wird verwendet, um die benutzerdefinierte Funktion im Regeleditor eines
 * `@func [functionName] <Function Name>`.
   `functionName` ist der Name der Funktion. Leerzeichen sind nicht zulässig.
   `<Function Name>` ist der Anzeigename der Funktion im Regeleditor eines adaptiven Formulars.
-Wenn der Name der Funktion mit dem Namen der Funktion selbst übereinstimmt, können Sie `[functionName]` aus der Syntax. <!-- For example,  in the `calculateAge` custom function, the name is defined as:
-`* @name calculateAge` -->
+Wenn der Name der Funktion mit dem Namen der Funktion selbst übereinstimmt, können Sie `[functionName]` aus der Syntax.
 
 #### Parameter
 
