@@ -2,10 +2,10 @@
 title: Verwalten von Sammlungen
 description: Eine Sammlung ist ein Satz von Assets innerhalb der Experience Manager Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden.
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
-source-wordcount: '789'
-ht-degree: 100%
+source-git-commit: 24c92e3a8ea20696cd39a5070f161d45d09d6f69
+workflow-type: tm+mt
+source-wordcount: '919'
+ht-degree: 86%
 
 ---
 
@@ -47,6 +47,8 @@ Sie können die folgenden Aufgaben ausführen, um Sammlungen zu verwalten und zu
 * [Herunterladen von Sammlungen](#download-collection)
 
 * [Löschen von Sammlungen](#delete-collection)
+
+* [Berechtigungen für eine private Sammlung verwalten](#manage-permissions-to-a-private-collection)
 
 ## Erstellen von Sammlungen {#create-collection}
 
@@ -185,6 +187,18 @@ Löschen von Sammlungen
 1. Wählen Sie die Sammlung aus, die Sie löschen möchten.
 
 1. Klicken Sie auf **[!UICONTROL Löschen]**.
+
+## Berechtigungen für eine private Sammlung verwalten{#manage-permissions-private-collection}
+
+Sie können Administratoren die Verwaltung von [Zugriffsstufen](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) für private Sammlungen, die im Repository verfügbar sind. Sie können Berechtigungen wie `Can View` und `Can Edit` an die Benutzergruppen oder Benutzer. Sie können auch Benutzergruppen Zugriffsverwaltungsberechtigungen zuweisen. Die Benutzer, die private Sammlungen erstellen, sind Eigentümer dieser Sammlungen. Sie können [!UICONTROL Berechtigungen verwalten] Aktion, um den anderen Benutzern Zugriff zu gewähren. Darüber hinaus können Administratoren die Berechtigungen der privaten Sammlungen im [!DNL Experience Manager] Repository.
+
+>[!NOTE]
+>
+>Adobe rät davon ab, Benutzern Berechtigungen zuzuweisen.
+
+Informationen zum Zuweisen der verfügbaren Berechtigungen zu Benutzergruppen finden Sie unter [Berechtigungen zu Benutzergruppen hinzufügen](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+
+Weitere Informationen zum End-to-End-Workflow finden Sie unter [Berechtigungen verwalten](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Nächste Schritte {#next-steps}
 
