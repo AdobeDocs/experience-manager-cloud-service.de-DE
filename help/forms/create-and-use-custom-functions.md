@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 3ed500d0c7a9a445e3417043da3d52632760ccdb
 workflow-type: tm+mt
-source-wordcount: '3108'
+source-wordcount: '3104'
 ht-degree: 4%
 
 ---
@@ -72,59 +72,61 @@ Der Parameter ist eine Liste von Argumenten, die von benutzerdefinierten Funktio
    * date[]: Stellt ein Array von Datumswerten dar.
    * array: Stellt ein generisches Array dar, das Werte verschiedener Typen enthält.
    * object: Stellt ein an eine benutzerdefinierte Funktion übergebenes Formularobjekt dar, anstatt dessen Wert direkt weiterzugeben.
-   * scope: Stellt das globale Objekt dar, das von benutzerdefinierten Funktionen zur Laufzeit verwendet wird. Sie wird als letzter Parameter in JavaScript-Anmerkungen deklariert und ist im Regeleditor eines adaptiven Formulars nicht sichtbar. Der Parameter scope greift auf das Objekt des Formulars oder der Komponente zu, um die für die Formularverarbeitung erforderliche Regel oder das Ereignis Trigger.
+   * scope: Stellt das global -Objekt dar, das schreibgeschützte Variablen wie Formularinstanzen, Zielfeldinstanzen und Methoden zum Ausführen von Formularänderungen innerhalb benutzerdefinierter Funktionen enthält. Sie wird als letzter Parameter in JavaScript-Anmerkungen deklariert und ist im Regeleditor eines adaptiven Formulars nicht sichtbar. Der Parameter scope greift auf das Objekt des Formulars oder der Komponente zu, um die für die Formularverarbeitung erforderliche Regel oder das Ereignis Trigger. Weitere Informationen zum Globals-Objekt und dessen Verwendung finden Sie unter [Klicken Sie hier](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
 
-    Beim Parametertyp wird nicht zwischen Groß- und Kleinschreibung unterschieden und Leerzeichen sind im Parameternamen nicht zulässig.
-    
-    `&lt;parameter description=&quot;&quot;>&quot; enthält Details zum Zweck des Parameters. Es kann mehrere Wörter enthalten.
-    
-    Standardmäßig sind alle Parameter obligatorisch. Sie können einen Parameter als optional definieren, indem Sie entweder &quot;=&quot;nach dem Parametertyp hinzufügen oder den Parameternamen in &quot;[]&quot;einschließen. Parameter, die in JavaScript-Anmerkungen als optional definiert wurden, werden im Regeleditor als optional angezeigt.
-    Um eine Variable als optionalen Parameter zu definieren, können Sie eine der folgenden Syntaxen verwenden:
-    
-    * `@param {type=} Input1`
-    
-    In der obigen Codezeile ist &quot;Input1&quot;ein optionaler Parameter ohne Standardwert. So deklarieren Sie einen optionalen Parameter mit dem Standardwert:
-    `@param {string=&lt;value>} input1`
-    
-    &quot;input1&quot;als optionalen Parameter mit dem Standardwert &quot;value&quot;.
-    
-    * `@param {type} [Input1]&quot;
-    
-    In der obigen Codezeile ist &quot;Input1&quot;ein optionaler Parameter ohne Standardwert. So deklarieren Sie einen optionalen Parameter mit dem Standardwert:
-    `@param {array} [input1=&lt;value>]`
-    &quot;input1&quot;ist ein optionaler Parameter des Array-Typs, bei dem der Standardwert &quot;value&quot;festgelegt ist.
-    Stellen Sie sicher, dass der Parametertyp in geschweifte Klammern eingeschlossen ist. {} und der Parametername in eckigen Klammern [] eingeschlossen ist.
-    
-    Betrachten Sie das folgende Code-Snippet, bei dem input2 als optionaler Parameter definiert ist:
-    
-    &quot;javascript
-    
-    /**
-    * optionale Parameterfunktion
-    * @name OptionalParameterFunction
-    * @param {string} input1
-    * @param {string=} input2
-    * @return {string}
-    */
-    function OptionalParameterFunction(input1, input2) {
-    let result = &quot;Result: &quot;;
-    result += input1;
-    if (input2 !== null) {
-    result += &quot; &quot; + input2;
-    }
-    Rückgabeergebnis;
-    }
-    &quot;
-    
-    Die folgende Abbildung zeigt die Verwendung der benutzerdefinierten Funktion &quot;OptionalParameterFunction&quot;im Regeleditor:
-    
-    &lt;!>— ![Optionale oder erforderliche Parameter ](/help/forms/assets/optional-default-params.png) —>
-    
-    Sie können die Regel speichern, ohne einen Wert für die erforderlichen Parameter anzugeben. Die Regel wird jedoch nicht ausgeführt und es wird eine Warnmeldung angezeigt, wie folgt:
-    
-    &lt;!>— ![unvollständige Regelwarnung](/help/forms/assets/incomplete-rule.png) —>
-    
-    Wenn der Benutzer den optionalen Parameter leer lässt, wird der Wert &quot;Undefined&quot;an die benutzerdefinierte Funktion für den optionalen Parameter übergeben.
+Beim Parametertyp wird nicht zwischen Groß- und Kleinschreibung unterschieden und Leerzeichen sind im Parameternamen nicht zulässig.
+
+`<Parameter Description>` enthält Details zum Zweck des Parameters. Es kann mehrere Wörter enthalten.
+
+**Optionale Parameter**
+Standardmäßig sind alle Parameter obligatorisch. Sie können einen Parameter als optional definieren, indem Sie entweder `=` nach dem Parametertyp oder , der den Parameternamen in  `[]`. Parameter, die in JavaScript-Anmerkungen als optional definiert wurden, werden im Regeleditor als optional angezeigt.
+Um eine Variable als optionalen Parameter zu definieren, können Sie eine der folgenden Syntaxen verwenden:
+
+* `@param {type=} Input1`
+
+In der obigen Codezeile `Input1` ist ein optionaler Parameter ohne Standardwert. So deklarieren Sie einen optionalen Parameter mit dem Standardwert:
+`@param {string=<value>} input1`
+
+`input1` als optionalen Parameter verwenden, wobei der Standardwert auf `value`.
+
+* `@param {type} [Input1]`
+
+In der obigen Codezeile `Input1` ist ein optionaler Parameter ohne Standardwert. So deklarieren Sie einen optionalen Parameter mit dem Standardwert:
+`@param {array} [input1=<value>]`
+`input1` ist ein optionaler Parameter des Array-Typs, dessen Standardwert auf `value`.
+Stellen Sie sicher, dass der Parametertyp in geschweifte Klammern eingeschlossen ist. {} und der Parametername in eckigen Klammern eingeschlossen ist [].
+
+Betrachten Sie das folgende Code-Snippet, bei dem input2 als optionaler Parameter definiert ist:
+
+```javascript
+        /**
+         * optional parameter function
+         * @name OptionalParameterFunction
+         * @param {string} input1 
+         * @param {string=} input2 
+         * @return {string}
+        */
+        function OptionalParameterFunction(input1, input2) {
+        let result = "Result: ";
+        result += input1;
+        if (input2 !== null) {
+            result += " " + input2;
+        }
+        return result;
+        }
+```
+
+Die folgende Abbildung zeigt mithilfe der `OptionalParameterFunction` benutzerdefinierte Funktion im Regeleditor:
+
+![Optionale oder erforderliche Parameter ](/help/forms/assets/optional-default-params.png)
+
+Sie können die Regel speichern, ohne einen Wert für die erforderlichen Parameter anzugeben. Die Regel wird jedoch nicht ausgeführt und es wird eine Warnmeldung angezeigt, wie folgt:
+
+![unvollständige Regelwarnung](/help/forms/assets/incomplete-rule.png)
+
+Wenn der Benutzer den optionalen Parameter leer lässt, wird der Wert &quot;Undefined&quot;an die benutzerdefinierte Funktion für den optionalen Parameter übergeben.
+
+Weitere Informationen zum Definieren optionaler Parameter in JSDocs finden Sie unter [Klicken Sie hier](https://jsdoc.app/tags-param).
 
 #### Rückgabetyp
 
@@ -150,7 +152,6 @@ Der Rückgabetyp gibt den Typ des Werts an, den die benutzerdefinierte Funktion 
 
 Die als privat deklarierte benutzerdefinierte Funktion wird nicht in der Liste der benutzerdefinierten Funktionen im Regeleditor eines adaptiven Formulars angezeigt. Standardmäßig sind benutzerdefinierte Funktionen öffentlich. Die Syntax zum Deklarieren der benutzerdefinierten Funktion als privat lautet `@private`.
 
-Weitere Informationen zum Definieren optionaler Parameter in JSDocs finden Sie unter [Klicken Sie hier](https://jsdoc.app/tags-param).
 
 ## Richtlinien beim Erstellen benutzerdefinierter Funktionen {#considerations}
 
@@ -190,6 +191,8 @@ Sie können eine benutzerdefinierte Funktion mit einer Pfeilfunktionssyntax erst
     
 ```
 
+Wenn der Benutzer der benutzerdefinierten Funktion keine JavaScript-Anmerkungen hinzufügt, wird die benutzerdefinierte Funktion nicht im Regeleditor eines adaptiven Formulars aufgeführt.
+
 * **Funktionsausdruck mit obligatorischen JavaScript-Anmerkungen oder Kommentaren**
 
 Um benutzerdefinierte Funktionen im Regeleditor eines adaptiven Formulars aufzulisten, erstellen Sie benutzerdefinierte Funktionen im folgenden Format:
@@ -207,6 +210,8 @@ Um benutzerdefinierte Funktionen im Regeleditor eines adaptiven Formulars aufzul
             // code to be executed
         }
 ```
+
+Wenn der Benutzer der benutzerdefinierten Funktion keine JavaScript-Anmerkungen hinzufügt, wird die benutzerdefinierte Funktion nicht im Regeleditor eines adaptiven Formulars aufgeführt.
 
 ## Benutzerdefinierte Funktion erstellen {#create-custom-function}
 
@@ -365,30 +370,33 @@ Sie können benutzerdefinierte Funktionen verwenden, um Formularen personalisier
 
 ### Felder und globale Perimeter in benutzerdefinierten Funktionen {#support-field-and-global-objects}
 
-Feldobjekte beziehen sich auf die einzelnen Komponenten oder Elemente in einem Formular, z. B. Textfelder und Kontrollkästchen. Globale Perimeter beziehen sich auf die globalen Variablen oder Einstellungen, auf die über das gesamte Formular zugegriffen werden kann. Sehen wir uns das folgende Code-Snippet an:
+Feldobjekte beziehen sich auf die einzelnen Komponenten oder Elemente in einem Formular, z. B. Textfelder und Kontrollkästchen. Das Globals -Objekt enthält schreibgeschützte Variablen wie Formularinstanz, Zielfeldinstanz und Methoden zum Durchführen von Formularänderungen in benutzerdefinierten Funktionen.
+
+>[!NOTE]
+>
+> Die `param {scope} globals` muss der letzte Parameter sein und wird nicht im Regeleditor eines adaptiven Formulars angezeigt.
+
+<!-- Let us look at the following code snippet:
 
 ```JavaScript
+   
     /**
     * updateDateTime
     * @name updateDateTime
     * @param {object} field
-    * @param {scope} globals 
+    * @param {scope} globals
     */
     function updateDateTime(field, globals) {
     // Accessing the Date object from the global scope
     var currentDate = new Date();
     // Formatting the date and time
     var formattedDateTime = currentDate.toLocaleString();
-    // Updating the field value with the formatted date and time
-    field.value = formattedDateTime;
+    // Updating the field value with the formatted date and time using setProperty.
+    globals.functions.setProperty(field, {value: formattedDateTime});
     }
 ```
 
->[!NOTE]
->
-> Die `param {scope} globals` muss der letzte Parameter sein und wird nicht im Regeleditor eines adaptiven Formulars angezeigt.
-
-Im obigen Codefragment wurde eine benutzerdefinierte Funktion mit dem Namen `updateDateTime` akzeptiert Parameter wie ein Feldobjekt und ein globales Objekt. Der Zugriff auf die Datums- und Uhrzeitobjekte erfolgt über den globalen Umfang. Das Feld stellt das Textfeld-Objekt dar, in dem der formatierte Datums- und Uhrzeitwert im Formular angezeigt wird.
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
 
 Erfahren Sie, wie benutzerdefinierte Funktionen mithilfe eines `Contact Us` Formulare mit unterschiedlichen Anwendungsfällen verwenden.
 
@@ -419,7 +427,8 @@ Fügen Sie den folgenden Code in die benutzerdefinierte Funktion ein, wie im Abs
 
 >[!NOTE]
 >
-> Sie können die Feldeigenschaften mit den verfügbaren Eigenschaften konfigurieren, die sich unter `[form-path]/jcr:content/guideContainer.model.json`.
+> * Sie können die Feldeigenschaften mit den verfügbaren Eigenschaften konfigurieren, die sich unter `[form-path]/jcr:content/guideContainer.model.json`.
+> * Änderungen am Formular, die mithilfe des `setProperty` -Methode des Globals-Objekts sind asynchron und werden bei der Ausführung der benutzerdefinierten Funktion nicht berücksichtigt.
 
 In diesem Beispiel wird die `personaldetails` angezeigt, wenn auf die Schaltfläche geklickt wird. Wenn im Bedienfeld keine Fehler erkannt werden, wird in einem anderen Bedienfeld die `feedback` -Bedienfeld angezeigt, wird beim Klicken auf die Schaltfläche sichtbar.
 
@@ -554,7 +563,7 @@ Die folgende Codezeile:
 `globals.functions.submitForm(globals.functions.exportData(), false);` wird verwendet, um die Formulardaten nach der Bearbeitung zu senden.
 * Das erste Argument sind die zu übermittelnden Daten.
 * Das zweite Argument stellt dar, ob das Formular vor der Übermittlung validiert werden soll. Es ist `optional` und legen Sie `true` Standardmäßig.
-* Das dritte Argument ist die `contentType` der Vorlage, die auch `optional` mit dem Standardwert als `multipart/form-data`.
+* Das dritte Argument ist die `contentType` der Übermittlung, die ebenfalls optional ist, wobei der Standardwert als `multipart/form-data`. Die anderen Werte können `application/json` und `application/x-www-form-urlencoded`.
 
 Fügen Sie den folgenden Code in die benutzerdefinierte Funktion ein, wie im Abschnitt [create-custom-function](#create-custom-function) , um die bearbeiteten Daten auf dem Server zu senden:
 
@@ -565,7 +574,6 @@ Fügen Sie den folgenden Code in die benutzerdefinierte Funktion ein, wie im Abs
     * @param {object} field
     * @param {scope} globals 
     */
-
     function submitData(globals)
     {
     
