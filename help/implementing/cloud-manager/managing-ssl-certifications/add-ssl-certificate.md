@@ -2,10 +2,10 @@
 title: Hinzufügen eines SSL-Zertifikats
 description: Erfahren Sie, wie Sie mithilfe der Self-Service-Tools von Cloud Manager Ihr eigenes SSL-Zertifikat hinzufügen.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
-workflow-type: ht
-source-wordcount: '557'
-ht-degree: 100%
+source-git-commit: 65aaa732d08cee541153f1b2fb4ea7b44f1f3029
+workflow-type: tm+mt
+source-wordcount: '612'
+ht-degree: 91%
 
 ---
 
@@ -40,6 +40,7 @@ Führen Sie die folgenden Schritte aus, um ein Zertifikat mit Cloud Manager hinz
    * Geben Sie in **Zertifikatname** einen Namen für Ihr Zertifikat ein.
       * Dies dient nur zu Informationszwecken und der Name kann so gewählt werden, dass Sie Ihr Zertifikat leicht finden können.
    * Fügen Sie das **Zertifikat**, den **privaten Schlüssel** und die **Zertifikatkette** in die entsprechenden Felder ein. Alle drei Felder sind Pflichtfelder.
+   * In einigen Fällen kann das Endbenutzerzertifikat in der Kette enthalten sein und muss entfernt werden, bevor die Kette in das Feld eingefügt wird.
 
    ![Dialogfeld zum Hinzufügen des SSL-Zertifikats](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -56,6 +57,10 @@ Nach dem Speichern wird Ihr Zertifikat als neue Zeile in der Tabelle angezeigt.
 >[!NOTE]
 >
 >Eine Benutzerin bzw. ein Benutzer muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um ein SSL-Zertifikat in Cloud Manager zu installieren.
+
+>[!NOTE]
+>
+>Wenn Sie eine Fehlermeldung erhalten, die der `The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`, haben Sie wahrscheinlich das Client-Zertifikat in die Zertifikatskette aufgenommen. Vergewissern Sie sich, dass die Kette nicht das Client-Zertifikat enthält, und versuchen Sie es erneut.
 
 ## Zertifikatfehler {#certificate-errors}
 
