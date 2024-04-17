@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f3d3bc92eb47bf5008167f660f26dfede2700540
+source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2321'
 ht-degree: 97%
 
 ---
@@ -97,6 +97,12 @@ Dank der nativen Integration von AEM Assets mit Adobe Express können Sie über 
 **Vorschau der Ausgabedarstellungen für alle unterstützten Videotypen**
 
 Experience Manager Assets generiert jetzt standardmäßig Vorschaudarstellungen aller unterstützten Videotypen, ohne dass eine Verarbeitungsprofilkonfiguration erforderlich ist.
+
+**Konfiguration der Link-Freigabe**
+
+Ein neues, verbessertes Benutzererlebnis für das [Erstellen von Link-Freigaben](/help/assets/share-assets.md), zusammen mit einem brandneuen Satz von Konfigurationen, mit denen Admins das Standardverhalten dieser Funktion für Ihre Benutzerinnen und Benutzer anpassen können.
+
+![E-Mail-Dienst konfigurieren](/help/assets/assets/config-email-service.png)
 
 ### Neue Funktionen in der Assets-Ansicht {#assets-view}
 
