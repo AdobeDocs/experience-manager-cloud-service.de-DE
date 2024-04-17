@@ -2,9 +2,9 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 5e216e45a1400299efcc418007ddbe93f0c571a1
+source-git-commit: 36fefbf74a288d60a9529f0c7273dd6b0557177b
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '424'
 ht-degree: 38%
 
 ---
@@ -45,7 +45,7 @@ Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsver
 * GRANITE-49638: Fehlerhafte Inhaltstypkonfiguration für die RUM-Transformatorfabrik korrigiert.
 * GRANITE-50141: IMSProviderImpl löst das Protokoll aus.
 * SITES-20949: ComponentsIT.testEmbed schlägt fehl, nachdem YouTube referrerpolicy=&quot;strict-origin-when-cross-origin&quot; hinzugefügt hat.
-* SITES-21233: Aktualisierung der Kernkomponenten - Korrektur des Accordions für GS1 US nach der Aktualisierung auf 15860.
+* SITES-21233: Aktualisierung der Kernkomponenten - Korrektur des Accordions nach der Aktualisierung auf 15860.
 * SKYOPS-74819: Fehlerhafte Abwärtskompatibilität für doppelte Schlüssel in Apache Commons.
 * SKYOPS-67087: Clientlib-Aggregation funktioniert in bestimmten Fällen nicht.
 * CQ-4355415: AEM Links für Benachrichtigungen funktionieren in 6.5 SP18 nicht.
