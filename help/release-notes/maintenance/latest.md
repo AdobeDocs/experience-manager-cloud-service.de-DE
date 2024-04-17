@@ -3,9 +3,9 @@ title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 1dd2eae9201c86d2cdac78ff99634eff8ca57a05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '272'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuel
 
 ## Version 15860 {#release-15860}
 
-Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 15860, die am Donnerstag, 10. April 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 15787.
+Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 15860, die am 10. April 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 15787.
 
 2024.3.0: Die Funktionsaktivierung bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de).
 
@@ -25,7 +25,7 @@ Keine
 
 ### Behobene Probleme {#fixed-issues-15860}
 
-* Korrekturen der Regression zur Anzeige der Konsole &quot;Launches&quot;, wenn ein Launch auf eine gelöschte oder verschobene Seite verweist.
+* Behebung einer Regression bei der Anzeige der Launch-Konsole, wenn sich ein Launch auf eine gelöschte oder verschobene Seite bezieht.
 
 ### Bekannte Probleme {#known-issues-15860}
 

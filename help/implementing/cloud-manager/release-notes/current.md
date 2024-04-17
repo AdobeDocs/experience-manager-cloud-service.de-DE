@@ -4,9 +4,9 @@ description: Dies sind die Versionshinweise für Cloud Manager 2024.4.0 in AEM a
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: f1d8778f3cfb6868740141d008fd0217839e9103
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '706'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -21,16 +21,16 @@ Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2024.4.0 in AE
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager -Version 2024.4.0 AEM as a Cloud Service wurde am 10. April 2024 veröffentlicht. Die nächste Version ist für den 9. Mai 2024 geplant.
+Die Version 2024.4.0 von Cloud Manager in AEM as a Cloud Service wurde am 10. April 2024 veröffentlicht. Die nächste Version ist für den 9. Mai 2024 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
-* Der Löschvorgang wurde für [Edge-Bereitstellung](/help/edge/overview.md) Websites durch Aktualisierung der Domain-Zuordnungen aus dem Programm, das sich auf diese Site bezieht.
+* Der Löschvorgang wurde für [Edge Delivery](/help/edge/overview.md)-Websites verbessert, indem die Domain-Zuordnungen aus dem Programm aktualisiert wurden, das mit dieser Site verbunden ist.
    * Wenn keine weiteren Sites zugeordnet sind, wird die Zuordnung gelöscht.
-* Das Implementierungs-Tracking wurde verbessert, indem in der kritischen Startphase einer AEM Statusaktualisierungen in Echtzeit bereitgestellt werden.
-   * Diese Funktion stellt sicher, dass Sie vollständige Einblicke in den Implementierungsfortschritt erhalten, was eine bessere Entscheidungsfindung und operative Effizienz ermöglicht.
-* Die [Netzwerkinfrastruktur](/help/security/configuring-advanced-networking.md) Die Auflistung wurde verbessert, sodass nun alle verbundenen Umgebungen ohne regionenbasierte Filterung angezeigt werden, um eine umfassendere Ansicht zu erhalten.
-* Verbesserte Fehlermeldungen für Code-Build-Probleme ermöglichen eine einfachere Identifizierung der Hauptursachen und der nächsten umsetzbaren Schritte.
+* Das Implementierungs-Tracking wurde durch die Bereitstellung von Echtzeit-Status-Updates während der kritischen Startphase einer AEM-Instanz verbessert.
+   * Diese Funktion stellt die vollständige Sichtbarkeit Ihres Implementierungsfortschritts sicher, was eine bessere Entscheidungsfindung und operative Effizienz ermöglicht.
+* Die Auflistung der [Netzwerkinfrastruktur](/help/security/configuring-advanced-networking.md) wurde insofern verbessert, als alle verbundenen Umgebungen jetzt ohne regionsbasierte Filterung angezeigt werden, um eine umfassendere Ansicht zu erhalten.
+* Optimierte Fehlermeldungen für Probleme beim Erstellen von Code ermöglichen eine einfachere Identifizierung der Hauptursachen und der nächsten möglichen Schritte.
 
 ## Early-Adopter-Programm {#early-adoption}
 
@@ -73,4 +73,4 @@ Möchten Sie das neue Dashboard testen? Senden Sie dazu eine E-Mail an `aem-ligh
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* Es wurde ein Fehler behoben, durch den Cloud Manager Artefakte mit dem falschen Commit-Hash wiederverwendete.
+* Es wurde ein Fehler behoben, durch den Cloud Manager Artefakte mit dem falschen Commit-Hash wiederverwendet hat.
