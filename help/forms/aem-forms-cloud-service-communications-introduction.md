@@ -1,13 +1,14 @@
 ---
 title: Was sind Kommunikations-APIs für AEM Forms as a Cloud Service?
 description: Verwenden Sie Kommunikations-APIs zum Signieren, Zertifizieren oder Schützen Ihrer Dokumente, um PDF-Generierungsprozesse zu automatisieren und PDF-Dokumente in ein anderes Format zu konvertieren.
-Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
+Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+source-git-commit: 126af719cfd2c9361d0e7768b3b65e1149b6a989
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 73%
+source-wordcount: '1988'
+ht-degree: 71%
 
 ---
 
@@ -190,14 +191,11 @@ Sie können diese Aufgaben mithilfe der Verschlüsselungs-APIs erledigen:
 
 Sowohl Signature-APIs als auch Verschlüsselungs-APIs sind [synchrone APIs](#types-of-communications-apis-types).
 
-### Dienst „Reader-Erweiterung“
+### Nutzungsrechte-APIs
 
-<span class="preview"> Die Reader Extension Service-Funktion ist im Rahmen des Early Adopter Program verfügbar. Sie können von Ihrer offiziellen E-Mail-ID aus an aem-forms-ea@adobe.com schreiben, um dem frühen Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern. </span>
+<span class="preview"> Die Funktion &quot;Verwendungsrechte&quot;befindet sich im Programm &quot;Frühzeitige Anmeldung&quot;. Sie können von Ihrer offiziellen E-Mail-ID aus an aem-forms-ea@adobe.com schreiben, um dem frühen Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern. </span>
 
-Der Reader Extensions-Dienst ermöglicht Ihrem Unternehmen die einfache Freigabe interaktiver PDF-Dokumente, indem die Funktionalität von Adobe Reader um zusätzliche Verwendungsrechte erweitert wird. Der Reader Extensions-Dienst funktioniert mit Adobe Reader 7.0 oder höher. Der Dienst fügt einem PDF-Dokument Verwendungsrechte hinzu. Diese Aktion aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument mit Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments.
-
->[!NOTE]
->Externe Benutzende benötigen keine zusätzliche Software oder Plug-ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten.
+Die Funktion &quot;Verwendungsrechte&quot;ermöglicht Ihrem Unternehmen die einfache Freigabe interaktiver PDF-Dokumente, indem die Funktionalität von Adobe Reader um zusätzliche Verwendungsrechte erweitert wird. Der Dienst funktioniert mit Adobe Reader 7.0 oder höher und fügt einem PDF-Dokument Verwendungsrechte hinzu. Diese Aktion aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument mit Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments.
 
 Bei PDF-Dokumenten, denen entsprechende Verwendungsrechte hinzugefügt wurden, können Empfängerinnen und Empfänger die folgenden Aktivitäten in Adobe Reader durchführen:
 
@@ -208,11 +206,13 @@ Bei PDF-Dokumenten, denen entsprechende Verwendungsrechte hinzugefügt wurden, k
 * Elektronische Übermittlung ausgefüllter oder mit Anmerkungen versehener PDF-Dokumente.
 * Verwenden Sie PDF-Dokumente und -Formulare als intuitives Entwicklungs-Frontend für interne Datenbanken und Webdienste.
 * Freigeben von PDF-Dokumenten für andere Benutzende, sodass Prüfende mit intuitiven Markup-Werkzeugen Kommentare hinzufügen können Zu diesen Werkzeugen gehören elektronische Haftnotizen, Stempel, Hervorheben und Durchstreichen. Dieselben Funktionen sind in Acrobat verfügbar.
-* Unterstützen der Dekodierung von Barcode-Formularen.
+* Unterstützung der Dekodierung mit Barcode für Forms.
 
 Diese speziellen Verwendungsrechtefunktionen werden automatisch aktiviert, wenn ein PDF-Dokument mit aktivierten Benutzerrechten in Adobe Reader geöffnet wird. Wenn der Benutzer mit einem Dokument mit aktivierten Benutzerrechten fertig ist, sind diese Funktionen in Adobe Reader erneut deaktiviert. Sie bleiben deaktiviert, bis die Benutzenden ein anderes PDF-Dokument mit aktivierten Rechten erhält.
 
-Die verschiedenen Funktionen für Verwendungsrechte mit Reader Extension Services sind:
+#### Verwendungsrechte aktivieren oder deaktivieren
+
+Die verschiedenen Verwendungsrechtefunktionen für die Erweiterung der PDF Reader-Dienste sind:
 
 * **Dekodierung von Barcodes**: So dekodieren Sie Barcodes im PDF-Dokument.
 
@@ -238,7 +238,11 @@ Die verschiedenen Funktionen für Verwendungsrechte mit Reader Extension Service
 
 * **Submit Standalone**: Zum Senden von Formulardaten offline von einem PDF-Dokument.
 
-**Weitere Funktionen in Reader Extension Services**
+#### Verwendungsrechte extrahieren
+
+Dies hilft beim Abrufen der aktivierten oder deaktivierten Verwendungsrechte für ein PDF-Dokument für die Adobe Acrobat Reader-Erweiterbarkeit.
+
+#### Sonstige Funktionen
 
 * **Nachricht**: Die Meldung, die in Adobe Acrobat Reader beim Öffnen eines PDF-Dokuments mit einer oder mehreren angewendeten Verwendungsrechten angezeigt wird.
 * **Kennwort entsperren**: Das zum Öffnen eines verschlüsselten PDF-Dokuments erforderliche Kennwort. Normalerweise ist dies das Kennwort zum Öffnen des Dokuments, aber wenn das PDF-Dokument zusätzlich durch ein Berechtigungskennwort geschützt ist, kann es entweder zum Öffnen verwendet werden.
