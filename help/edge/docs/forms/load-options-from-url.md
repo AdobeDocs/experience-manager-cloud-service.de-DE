@@ -1,79 +1,84 @@
 ---
 title: Dropdown-Listenoptionen aus URL laden
-description: Die Optionen der Dropdown-Liste sind in einer separaten Tabelle enthalten und werden dann über die bereitgestellte URL in die primäre Tabelle importiert.
+description: Die Optionen der Dropdown-Liste sind in einer gesonderten Tabelle enthalten und werden dann über die angegebene URL in die primäre Tabelle importiert.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
-source-git-commit: eadfc3d448bd2fadce08864ab65da273103a6212
+source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 2%
+source-wordcount: '442'
+ht-degree: 3%
 
 ---
 
 
-# Dropdown-Listenoptionen von URL laden
+# Dropdown-Listenoptionen aus URL laden
 
-In Edge Delivery Services-Formularen haben Benutzende die Möglichkeit, einen Wert aus einem vordefinierten Satz von Optionen auszuwählen. Formularautoren verwenden die `select` -Element, das eine Liste von Auswahlmöglichkeiten bereitstellt.
-Beispiel: `enquiry` Das Formular enthält ein Dropdown-Menü zur Auswahl von Ländern, aus dem die Benutzer eine Reihe vordefinierter Länder auswählen können. Sie können sehen, dass diese Liste eine lange Liste von Ländern enthält, die durch Kommas getrennt sind.
+Forms enthält häufig Dropdown-Menüs, aus denen Benutzer vordefinierte Optionen auswählen können. Diese Optionen werden normalerweise im Formular selbst definiert, aber die Verwaltung langer Listen kann schwerfällig sein. In diesem Handbuch wird beschrieben, wie Sie die Formularbearbeitung verbessern können, indem Sie Dropdown-Optionen aus einer separaten Tabelle über eine URL laden.
+
+
+Die Vorteile des Ladens von Dropdown-Optionen aus einer separaten Tabelle sind:
+
+* Vereinfachte Verwaltung: Verwaltung von Dropdown-Optionen an einem zentralen Ort, um Aktualisierungen und Ergänzungen zu erleichtern.
+* Verbesserte Effizienz: Manuelles Hinzufügen langer Optionslisten innerhalb der Formulardefinition ist nicht erforderlich.
+
+
+
 
 ![Dropdown-Optionen](/help/forms/assets/drop-down-options.png)
 
-Die Verwaltung langer Listen von Optionen für Dropdown-Menüs kann umständlich sein, wenn sie direkt zum Blatt mit der Formulardefinition hinzugefügt werden. Das Erstellen eines separaten Blatts zum Speichern dieser Dropdown-Optionen kann den Prozess vereinfachen und optimieren. Dieses Blatt dient als zentralisiertes Repository für alle Dropdown-Optionen, angeordnet in einem strukturierten Format. Jede Option wird in einer eigenen Zeile aufgelistet, was die Verwaltung und Aktualisierung erleichtert.
-
-Im Folgenden wird beschrieben, wie der Prozess der Formularerstellung durch Laden der Optionsliste aus einer anderen Tabelle über eine URL verbessert werden kann.
 
 Am Ende dieses Artikels werden Sie Folgendes gelernt haben:
 
 * [Optionen in einer separaten Tabelle definieren](#define-options)
-* [Dropdown-Listenoptionen zum Laden der URL hinzufügen](#add-url)
+* [URL hinzufügen, um Dropdown-Listenoptionen zu laden](#add-url)
 
 ## Optionen in einem separaten Blatt definieren {#define-options}
 
-Erstellen Sie eine Tabelle mit zwei Spalten:`Option` und `Value`, um die Optionen zu definieren:
+Definieren von Optionen in einer separaten Tabelle
 
-1. Wechseln Sie zu Ihrem AEM-Projektordner in Microsoft® SharePoint oder dem Google Drive-Ordner.
-2. Eine Tabelle mit dem Namen hinzufügen `shared-country` in der Microsoft® SharePoint-Site oder in Ihrem Google Drive-Ordner aus und fügen Sie Folgendes hinzu:
-
-   * **Option**: Stellt die Anzeigewerte von Optionen im Dropdown-Menü dar.
-   * **Wert**: Stellt den gesendeten Wert dar, wenn ein Benutzer die Option auswählt.
+1. Erstellen Sie eine Tabelle:
+   1. Suchen Sie Ihren AEM Projektordner in Microsoft® SharePoint oder Google Drive.
+   1. Fügen Sie ein neues Blatt hinzu. Beispiel: &quot;freigegebenes Land&quot;.
+1. Definieren Sie Optionsspalten: Fügen Sie zwei Spalten hinzu: &quot;Option&quot;und &quot;Wert&quot;.
+   * &quot;Option&quot; definiert den im Dropdown-Menü angezeigten Text.
+   * &quot;Wert&quot;definiert den gesendeten Wert, wenn ein Benutzer die Option auswählt.
 
    >[!NOTE]
    >
-   > Wenn der Wert und die Option für eine Dropdown-Option identisch sind, kann die Tabelle nur den **Option** Spalte.
+   >Wenn sowohl Option als auch Wert identisch sind, ist nur die Spalte &quot;Option&quot;erforderlich.
 
-   Fügen wir ein neues Blatt hinzu, [geteiltes Land](/help/forms/assets/enquiry-options.xlsx) für die in der `Destination` Dropdown-Liste im `enquiry` Formular.
+1. Füllen Sie das Arbeitsblatt aus: Geben Sie in der Spalte &quot;Option&quot;(und ggf. &quot;Wert&quot;) die Länderoptionen ein.
 
-   Siehe Abbildung unten, in der Folgendes dargestellt wird `shared-country` Kalkulationstabelle:
+   Die Struktur finden Sie im folgenden Beispiel.
 
-   ![Dropdown für Land](/help/forms/assets/drop-down-country-options.png)
-3. Vorschau anzeigen und veröffentlichen `shared-country` Blatt mit [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+   ![Dropdown-Liste für Land](/help/forms/assets/drop-down-country-options.png)
 
-   Verweisen Sie auf die URL, die `shared-country` Blatt: https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country
+1. Vorschau erstellen und veröffentlichen `shared-country` Tabellenblatt verwenden [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+
+   Siehe URL, die die `shared-country` sheet: https://main—wefinance—wkndforms.hlx.live/inquiry.json?sheet=country
 
 >[!NOTE]
 >
-> `?sheet=country` ist ein Abfrageparameter, der an die URL angehängt wird. Dieser Parameter gibt die JSON-Datei an, die anhand des `shared-country` Blatt. Sie werden zur JSON-Datei weitergeleitet, die Informationen zu verschiedenen Ländern enthält.
+> `?sheet=country` ist ein Abfrageparameter, der an die URL angehängt wird. Dieser Parameter gibt die JSON an, die basierend auf der `shared-country` Blatt. Es wird zur JSON-Datei umgeleitet, die Informationen zu verschiedenen Ländern enthält.
 
-## Dropdown-Listenoptionen zum Laden der URL hinzufügen{#add-url}
+## URL hinzufügen, um Dropdown-Listenoptionen zu laden{#add-url}
 
-Die `Options` Eigenschaft eines `select` akzeptiert eine URL. Die URL gibt ein JSON-Array zurück, das als Optionen für das `Destination` Dropdown-Liste. So fügen Sie die Dropdown-Listenoptionen URL zum Laden hinzu:
+Die `Options` -Eigenschaft eines `select` -Feld akzeptiert eine URL. Die URL gibt ein JSON-Array zurück, das als Optionen für die `Destination` Dropdown-Liste. So fügen Sie die URL zum Laden der Dropdown-Listenoptionen hinzu:
 
-1. Wechseln Sie zum AEM-Projektordner in Microsoft® SharePoint oder Google Drive und öffnen Sie die Tabelle. Sie können auch eine neue Tabelle für ein Formular erstellen.
-1. URL kopieren von `shared-country` Blatt und fügen Sie es in die `Options` Spalte für die `Destination` Feld.
+1. Wechseln Sie zu Ihrem AEM-Projektordner auf Microsoft® SharePoint oder Google Drive und öffnen Sie die Tabelle. Sie können auch eine neue Tabelle für ein Formular erstellen.
+1. URL kopieren von `shared-country` und fügen Sie es in das `Options` Spalte für die `Destination` -Feld.
 
    ![Abfragetabelle](/help/forms/assets/drop-down-enquiry.png)
 
-1. Anzeigen einer Vorschau und Veröffentlichen des Arbeitsblatts mithilfe von [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. Erstellen Sie eine Vorschau und veröffentlichen Sie das Blatt mit [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
 
-   ![Dropdown für Land](/help/forms/assets/load-dropdown-options-form.png)
+   ![Dropdown-Liste für Land](/help/forms/assets/load-dropdown-options-form.png)
 
-Weitere Informationen finden Sie im [Anfrage-Tabelle](/help/forms/assets/enquiry-options.xlsx) , um die Dropdown-Listenoptionen URL zum Laden hinzuzufügen.
+Weitere Informationen finden Sie unter [Fragenübersicht](/help/forms/assets/enquiry-options.xlsx) , um die URL zum Laden der Dropdown-Listenoptionen hinzuzufügen.
 
-Nach der Integration der URL in die Dropdown-Listenoptionen für die Formulardefinition zum Laden werden die Optionen für die `Destination` Dropdown-Liste, die von der URL aus angezeigt wird.
+Nach der Integration der URL in die Formulardefinition zum Laden der Dropdown-Listenoptionen werden die Optionen für die `Destination` Dropdown-Liste beginnen, die über die URL angezeigt wird.
 
-Siehe die unten stehende URL, die Folgendes anzeigt: `enquiry` Formular mit den in der separaten Tabelle gespeicherten Optionen:
+Siehe URL unten, in der die Variable `enquiry` Formular mit den im separaten Blatt gespeicherten Optionen:
 
 https://main--wefinance--wkndforms.hlx.live/enquiry-form
 
