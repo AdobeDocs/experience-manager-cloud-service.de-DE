@@ -3,7 +3,7 @@ title: Anpassen des Authoring-Erlebnisses mit dem universellen Editor
 description: Erfahren Sie mehr über die verschiedenen Erweiterungspunkte und anderen Funktionen, mit denen Sie die Benutzeroberfläche des universellen Editors anpassen können, um die Anforderungen Ihrer Inhaltsautorinnen und Inhaltsautoren zu unterstützen.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '302'
 ht-degree: 100%
 

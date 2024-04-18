@@ -3,7 +3,7 @@ title: Übersicht über den universellen Editor für AEM-Entwicklerinnen und -en
 description: Wenn Sie als AEM-Entwicklerin bzw. -entwickler daran interessiert sind, wie der universelle Editor funktioniert und wie er in Ihrem Projekt verwendet wird, bietet Ihnen dieses Dokument eine durchgängige Einführung, indem es Sie durch die Anleitung des WKND-Projekts zur Verwendung mit dem universellen Editor führt.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3139'
 ht-degree: 100%
 

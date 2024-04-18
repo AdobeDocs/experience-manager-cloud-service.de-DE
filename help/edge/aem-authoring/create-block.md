@@ -3,9 +3,9 @@ title: Erstellen von für den universellen Editor instrumentierten Blöcken
 description: Erfahren Sie, wie Sie Blöcke erstellen, die für den universellen Editor im AEM-Authoring mit Edge Delivery Services instrumentiert sind.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1297'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -248,11 +248,11 @@ Die Veröffentlichung von Inhalten mit einem neuen Modell wird nur unterstützt,
 
 ## Nächste Schritte {#next-steps}
 
-Da Sie jetzt wissen, wie man Bausteine erstellt, ist es wichtig zu verstehen, wie man Inhalte semantisch modelliert, um ein schlankes Entwicklererlebnis zu erzielen.
+Nachdem Sie nun wissen, wie man Bausteine erstellt, ist es wichtig zu verstehen, wie man Inhalte auf semantische Weise modelliert, um ein schlankes Entwicklererlebnis zu erhalten.
 
-Lesen Sie das Dokument . [Inhaltsmodellierung für AEM Authoring mit Edge Delivery Services-Projekten](/help/edge/aem-authoring/content-modeling.md) , um zu erfahren, wie die Inhaltsmodellierung für AEM Authoring mit Edge Delivery Services-Projekten funktioniert.
+Lesen Sie das Dokument [Inhaltsmodellierung beim AEM-Authoring mit Edge Delivery Services-Projekten](/help/edge/aem-authoring/content-modeling.md), um zu erfahren, wie die Inhaltsmodellierung beim AEM-Authoring mit Edge Delivery Services-Projekten funktioniert.
 
 >[!TIP]
 >
->Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für AEM Authoring mit AEM als Inhaltsquelle aktiviert ist, finden Sie unter [Dieses AEM GEMs-Webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Eine End-to-End-Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für AEM Authoring mit AEM as a Cloud Service als Inhaltsquelle aktiviert ist, finden Sie in [diesem AEM GEMs-Webinar.](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 

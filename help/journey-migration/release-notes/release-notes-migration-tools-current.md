@@ -2,10 +2,11 @@
 title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2024.01.0
 description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Version 2024.01.0
 feature: Release Information
-source-git-commit: 0c2dca09a1d0070765e89de833fdd1c7607010c6
-workflow-type: tm+mt
+exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
+source-git-commit: b40f2b9c40c5b198dd708d3c703329356d7d0540
+workflow-type: ht
 source-wordcount: '98'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -17,10 +18,8 @@ Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as
 
 ### Veröffentlichungsdatum {#release-date-ctt}
 
-Die Version 3.0.10 des Content Transfer Tool wurde am 15. Januar 2024 veröffentlicht.
+Das Content Transfer Tool 3.0.10 wurde am 15. Januar 2024 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt}
 
-* Das Content Transfer Tool unterstützt jetzt die Migration von Sammlungen. Benutzer können den Sammlungsordner mithilfe der Pfadauswahl auswählen und die Extraktion durchführen.
-
-
+* Das Content Transfer Tool unterstützt jetzt die Migration von Sammlungen. Benutzende können den Sammlungsordner mithilfe der Pfadauswahl auswählen und die Extraktion durchführen.

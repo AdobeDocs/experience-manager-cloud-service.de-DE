@@ -3,9 +3,9 @@ title: Replikation
 description: Erfahren Sie mehr über die Verteilung und Fehlerbehebung bei der Replikation in AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 source-git-commit: 9ab6ac5588b6ca5135e3635cc886ec51207e89d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1312'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -196,7 +196,7 @@ Die Größe des pro Replikationsaufruf gesendeten Inhalts darf nicht größer se
 
 Um Fehler bei der Replikation zu beheben, navigieren Sie zu den Replikationswarteschlangen in der Web-Benutzeroberfläche des AEM-Authoring-Service:
 
-1. Navigieren Sie im AEM-Startmenü zu . **Tools** > **Bereitstellung** > **Verteilung**
+1. Navigieren Sie im AEM-Startmenü zu **Tools** > **Bereitstellung** > **Verteilung**.
 1. Wählen Sie die Karte **Veröffentlichen** aus.
 
    ![Status](assets/publish-status.png "Status")
@@ -207,6 +207,6 @@ Um Fehler bei der Replikation zu beheben, navigieren Sie zu den Replikationswart
 
 ![Protokolle](assets/publish-logs.png "Protokolle")
 
-Wenn der Inhalt nicht veröffentlicht werden konnte, wird die gesamte Veröffentlichung vom AEM-Veröffentlichungs-Service zurückgesetzt.
+Wenn der Inhalt nicht veröffentlicht werden konnte, wird die gesamte Veröffentlichung vom AEM-Publish-Service zurückgesetzt.
 
 In diesem Fall zeigt die bearbeitbare Haupt-Warteschlange einen roten Status an und sollte überprüft werden, um festzustellen, welche Elemente den Abbruch der Veröffentlichung verursacht haben. Wenn Sie auf diese Warteschlange klicken, werden die ausstehenden Elemente angezeigt, die einzeln oder insgesamt gelöscht werden können.

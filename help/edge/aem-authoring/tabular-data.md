@@ -1,23 +1,23 @@
 ---
 title: Verwenden von Tabellen zur Verwaltung von Tabellendaten
-description: Erfahren Sie, wie Sie mit Tabellen Tabellendaten für verschiedene Werte verwalten können, z. B. Metadaten und Umleitungen für Ihre AEM mit der Edge Delivery Services-Site.
+description: Erfahren Sie, wie Sie Tabellen zur Verwaltung von Tabellendaten für verschiedene Werte verwenden können, z. B. Metadaten und Umleitungen für Ihre AEM-Site mit Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '958'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
 # Verwenden von Tabellen zur Verwaltung von Tabellendaten {#tabular-data}
 
-Erfahren Sie, wie Sie mit Tabellen Tabellendaten für verschiedene Werte verwalten können, z. B. Metadaten und Umleitungen für Ihre AEM mit der Edge Delivery Services-Site.
+Erfahren Sie, wie Sie Tabellen zur Verwaltung von Tabellendaten für verschiedene Werte verwenden können, z. B. Metadaten und Umleitungen für Ihre AEM-Site mit Edge Delivery Services.
 
 ## Anwendungsfälle {#use-cases}
 
-Für alle AEM mit der Edge Delivery Services-Site müssen Listen mit Tabellendaten wie für Schlüssel-Wert-Mappings verwaltet werden. Dabei kann es sich um Listen mit vielen verschiedenen Werten handeln, z. B. Metadaten und Umleitungen. Mit den Edge Deliver Services können Sie solche tabellarischen Listen mithilfe eines intuitiven Tools verwalten: der Tabelle. AEM übersetzt diese Tabellen in JSON-Dateien, die von Ihrer Website oder Webanwendung einfach genutzt werden können.
+Für alle AEM-Sites mit Edge Delivery Services müssen Listen mit Tabellendaten verwaltet werden, z. B. für Schlüssel-Wert-Zuordnungen. Dabei kann es sich um Listen mit vielen verschiedenen Werten handeln, z. B. Metadaten und Umleitungen. Mit Edge Delivery Services können Sie solche tabellarischen Listen mithilfe eines intuitiven Tools verwalten: der Kalkulationstabelle. AEM übersetzt diese Tabellen in JSON-Dateien, die von Ihrer Website oder Web-Anwendung einfach genutzt werden können.
 
 Häufige Anwendungsfälle umfassen:
 
@@ -25,72 +25,72 @@ Häufige Anwendungsfälle umfassen:
 * [Metadaten](/help/edge/docs/bulk-metadata.md)
 * [Kopfzeilen](/help/edge/docs/custom-headers.md)
 * [Umleitungen](/help/edge/docs/redirects.md)
-* [Konfigurationen](/help/edge/docs/setup-byo-cdn-push-invalidation.md) z. B. für CND-Setups
+* [Konfigurationen](/help/edge/docs/setup-byo-cdn-push-invalidation.md) z. B. für CND-Setups
 
-Darüber hinaus können Sie [Tabellen erstellen](#own-spreadsheet) einer beliebigen Struktur, um Zuordnungen für Ihre eigenen Zwecke zu speichern.
+Darüber hinaus können Sie [Tabellen mit einer beliebigen Struktur erstellen](#own-spreadsheet), um Zuordnungen für Ihre eigenen Zwecke zu speichern.
 
-In diesem Dokument wird anhand des Beispiels für Umleitungen veranschaulicht, wie solche Tabellen erstellt werden. Einzelheiten zu den einzelnen Anwendungsfällen finden Sie in den zuvor verknüpften Themen in der Edge Delivery Services-Dokumentation .
-
->[!TIP]
->
->Weitere Informationen zur allgemeinen Funktionsweise von Arbeitsblättern mit Edge Delivery Services finden Sie im Dokument [Tabellen und JSON.](/help/edge/developer/spreadsheets.md)
+In diesem Dokument wird anhand des Beispiels für Umleitungen veranschaulicht, wie solche Tabellen erstellt werden. Einzelheiten zu den einzelnen Anwendungsfällen finden Sie in den zuvor verknüpften Themen in der Dokumentation zu Edge Delivery Services.
 
 >[!TIP]
 >
->Tabellen sollten nur zur Verwaltung von Tabellendaten verwendet werden. Zum Speichern strukturierter Daten: [Sehen Sie sich AEM Headless-Funktionen an.](/help/headless/introduction.md)
+>Weitere Informationen zur allgemeinen Funktionsweise von Tabellen mit Edge Delivery Services finden Sie im Dokument [Kalkulationstabellen und JSON.](/help/edge/developer/spreadsheets.md)
+
+>[!TIP]
+>
+>Kalkulationstabellen sollten nur zur Verwaltung von Tabellendaten verwendet werden. [Sehen Sie sich die Funktionen von AEM Headless](/help/headless/introduction.md) zum Speichern strukturierter Daten an.
 
 ## Voraussetzungen {#prerequisites}
 
-Um Zuordnungen mithilfe von Tabellen in Ihrem AEM mit Edge Delivery Services-Projekt erstellen zu können, müssen Sie Ihre Site mit der neuesten Site-Vorlage erstellt haben.
+Um Zuordnungen mithilfe von Kalkulationstabellen in Ihrem AEM-Projekt mit Edge Delivery Services erstellen zu können, müssen Sie Ihre Site mit der neuesten Site-Vorlage erstellt haben.
 
-Lesen Sie das Dokument . [Erste Schritte für Entwickler für AEM Authoring mit Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) für weitere Informationen.
+Lesen Sie das Dokument [Erste-Schritte-Handbuch für Entwickelnde zum AEM-Authoring mit Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) für weitere Informationen.
 
-## Erstellen einer Tabelle {#spreadsheet}
+## Erstellen einer Kalkulationstabelle {#spreadsheet}
 
-In diesem Beispiel erstellen Sie eine Tabelle, um Umleitungen für Ihre AEM mit der Edge Delivery Services-Site zu verwalten. Die gleichen Schritte gelten für [andere Tabellenarten](#other) die Sie erstellen möchten.
+In diesem Beispiel erstellen Sie eine Kalkulationstabelle, um Umleitungen für Ihre AEM-Site mit Edge Delivery Services zu verwalten. Die gleichen Schritte gelten für [andere Tabellenarten](#other), die Sie erstellen möchten.
 
-1. Melden Sie sich bei Ihrer AEM as a Cloud Service Authoring-Instanz an, navigieren Sie zum **Sites** und navigieren Sie zum Stamm der Site, für die eine Tabelle erforderlich ist. Tippen oder klicken **Erstellen** -> **Seite**.
+1. Melden Sie sich bei Ihrer AEM as a Cloud Service-Authoring-Instanz an, navigieren Sie zur **Sites**-Konsole und navigieren Sie zum Stamm der Site, für die eine Kalkulationstabelle erforderlich ist. Tippen oder klicken Sie auf **Erstellen** > **Seite**.
 
    ![Seite erstellen](assets/tabular-data/tabular-data-create-page.png)
 
-1. Im **Vorlage** auf der Registerkarte des Assistenten zum Erstellen einer Seite tippen oder klicken Sie auf die **Umleitungen** Vorlage zum Auswählen und Tippen oder Klicken **Nächste**.
+1. Tippen oder klicken Sie auf der Registerkarte **Vorlage** des Assistenten zum Erstellen einer Seite auf die Vorlage **Umleitungen**, um diese auszuwählen, und tippen oder klicken Sie dann auf **Weiter**.
 
    ![Auswählen der Vorlage](assets/tabular-data/tabular-data-create-page-teamplate-redirects.png)
 
-1. Die **Eigenschaften** -Registerkarte des Assistenten enthält die Standardwerte für die Umleitungs-Tabelle. Tippen oder klicken Sie auf **Erstellen**.
+1. Die Registerkarte **Eigenschaften** des Assistenten zeigt die Standardwerte für die Umleitungstabelle. Tippen oder klicken Sie auf **Erstellen**.
 
-   * **Titel** - Lassen Sie diesen Wert unverändert.
-   * **Spalten** - Die für Umleitungen erforderlichen Mindestspalten werden vorausgefüllt.
-      * **source** - Die umzuleitende Seite
-      * **Ziel** - Die Seite, zu der umgeleitet werden soll
+   * **Titel** – Lassen Sie diesen Wert unverändert.
+   * **Spalten** – Die mindestens für Umleitungen erforderlichen Spalten werden vorausgefüllt.
+      * **Quelle** – Die umzuleitende Seite
+      * **Ziel** – Die Seite, zu der umgeleitet werden soll
 
-   ![Eigenschaften des Arbeitsblatts](assets/tabular-data/tabular-data-create-page-properties-redirects.png)
+   ![Eigenschaften der Tabelle](assets/tabular-data/tabular-data-create-page-properties-redirects.png)
 
-1. Im **Erfolg** Dialogfeld, tippen oder klicken Sie **Öffnen**.
+1. Tippen Sie im Dialogfeld **Erfolg** auf **Öffnen**.
 
    ![Dialogfeld „Erfolg“](assets/tabular-data/tabular-data-success.png)
 
-1. Eine neue Registerkarte wird geöffnet, wobei das Arbeitsblatt in einen Editor mit vordefiniertem **source** und **Ziel** Spalten. Um Ihre Umleitungen zu definieren, tippen oder klicken Sie auf die leere Zeile der **source** Spalte. Änderungen werden automatisch gespeichert, wenn Sie das Arbeitsblatt bearbeiten.
+1. Eine neue Registerkarte wird geöffnet, wobei die Tabelle in einen Editor mit den vordefinierten Spalten **Quelle** und **Ziel** geladen wird. Um Ihre Umleitungen zu definieren, tippen oder klicken Sie auf die leere Zeile der Spalte **Quelle**. Änderungen werden automatisch gespeichert, wenn Sie die Tabelle bearbeiten.
 
    ![Tabelle bearbeiten](assets/tabular-data/tabular-data-edit-redirects.png)
 
-   * Die **source** relativ zur Domäne Ihrer Website ist, sodass nur der relative Pfad enthalten ist.
-   * Die **Ziel** kann entweder eine vollständig qualifizierte URL sein, wenn Sie zu einer anderen Website umleiten, oder es kann sich um einen relativen Pfad handeln, wenn Sie innerhalb Ihrer eigenen Website eine Umleitung durchführen.
+   * Die **Quelle** ist relativ zur Domain Ihrer Website, sodass nur der relative Pfad enthalten ist.
+   * Das **Ziel** kann entweder eine vollständig qualifizierte URL sein, wenn Sie zu einer anderen Website umleiten, oder es kann sich um einen relativen Pfad handeln, wenn Sie innerhalb Ihrer eigenen Website eine Umleitung durchführen.
    * Verwenden Sie die Tabulatortaste, um den Fokus zur nächsten Zelle zu verschieben.
-   * Der Editor fügt dem Arbeitsblatt bei Bedarf neue Zeilen hinzu.
-   * Verwenden Sie zum Löschen oder Verschieben einer Zeile die **Löschen** -Symbol am Ende jeder Zeile und die Ziehpunkte am Anfang jeder Zeile.
+   * Der Editor fügt der Tabelle bei Bedarf neue Zeilen hinzu.
+   * Verwenden Sie zum Löschen oder Verschieben einer Zeile das Symbol **Löschen** am Ende jeder Zeile bzw. die Ziehpunkte am Anfang jeder Zeile.
 
-## Veröffentlichen von Spreadsheet-Pfaden.json {#paths-json}
+## Veröffentlichen einer Kalkulationstabelle paths.json {#paths-json}
 
-Damit AEM die Daten in Ihrer Tabelle veröffentlichen kann, müssen Sie zusätzlich die `paths.json` -Datei Ihres Projekts.
+Damit AEM die Daten in Ihrer Tabelle veröffentlichen kann, müssen Sie zusätzlich die Datei `paths.json` Ihres Projekts aktualisieren.
 
-1. Öffnen Sie den Stammordner Ihres Projekts in GitHub.
+1. Öffnen Sie den Stamm Ihres Projekts in GitHub.
 
-1. Tippen oder klicken Sie auf `paths.json` -Datei, um ihre Details zu öffnen, und dann **Bearbeiten** Symbol.
+1. Tippen oder klicken Sie auf die Datei `paths.json`, um ihre Details zu öffnen, und dann auf das Symbol **Bearbeiten**.
 
-   ![paths.json-Datei](assets/tabular-data/tabular-data-paths-json.png)
+   ![Datei paths.json](assets/tabular-data/tabular-data-paths-json.png)
 
-1. Fügen Sie eine Zeile hinzu, um Ihr neues Arbeitsblatt einem `redirects.json` Ressource.
+1. Fügen Sie eine Zeile hinzu, um Ihre neue Datei einer Ressource `redirects.json` zuzuordnen.
 
    ```json
    {
@@ -101,66 +101,66 @@ Damit AEM die Daten in Ihrer Tabelle veröffentlichen kann, müssen Sie zusätzl
    }
    ```
 
-1. Klicks **Zusage von Änderungen...** , um die Änderungen in `main`.
+1. Klicken Sie auf **Änderungen bestätigen…**, um die Änderungen an `main` zu speichern.
 
-   * Bestätigen Sie entweder `main` oder erstellen Sie eine Pull-Anforderung gemäß Ihrem Prozess.
+   * Bestätigen Sie entweder für `main` oder erstellen Sie eine Abruf-Anforderung gemäß Ihrem Prozess.
 
-1. Wenn Sie mit der Definition Ihrer Umleitungen fertig sind und die Pfadzuordnung aktualisiert haben, kehren Sie zum **Sites** Konsole.
+1. Wenn Sie mit der Definition Ihrer Umleitungen fertig sind und die Pfadzuordnung aktualisiert haben, kehren Sie zur **Sites**-Konsole zurück.
 
-1. Tippen oder klicken Sie auf die Umleitungstabelle, die Sie in der Konsole erstellt haben, und tippen oder klicken Sie auf **Quick Publish** in der Aktionsleiste, um die Tabelle zu veröffentlichen.
+1. Tippen oder klicken Sie auf die Umleitungstabelle, die Sie in der Konsole erstellt haben, und tippen oder klicken Sie dann auf **Quick Publish** in der Aktionsleiste, um die Tabelle zu veröffentlichen.
 
-   ![Wählen Sie die Tabelle in der Sites-Konsole aus.](assets/tabular-data/tabular-data-select-publish.png)
+   ![Auswählen der Tabelle in der Sites-Konsole](assets/tabular-data/tabular-data-select-publish.png)
 
-1. Im **Quick Publish** Dialogfeld, tippen oder klicken Sie **Veröffentlichen**.
+1. Tippen oder klicken Sie im Dialogfeld **Quick Publish** auf **Veröffentlichen**.
 
-   ![Veröffentlichung bestätigen](assets/tabular-data/tabular-data-quick-publish.png)
+   ![Bestätigen der Veröffentlichung](assets/tabular-data/tabular-data-quick-publish.png)
 
 1. Ein Banner bestätigt die Veröffentlichung.
 
    ![Bannerbestätigung der Veröffentlichung](assets/tabular-data/tabular-data-publish-banner.png)
 
-Die Umleitungs-Tabelle ist jetzt veröffentlicht und öffentlich zugänglich.
+Die Umleitungstabelle ist jetzt veröffentlicht und öffentlich zugänglich.
 
 ## Andere Tabellenarten {#other}
 
-Nachdem Sie nun wissen, wie Sie eine Umleitungs-Tabelle erstellen, können Sie einen beliebigen anderen Standardtyp für Tabellen erstellen:
+Nachdem Sie nun wissen, wie Sie eine Umleitungstabelle erstellen, können Sie einen beliebigen anderen Standardtyp für Tabellen erstellen:
 
 * Platzhalter
 * Metadaten
 * Kopfzeilen
 * Konfiguration
 
-Führen Sie einfach die gleichen Schritte in den Abschnitten aus. [Tabelle erstellen](#spreadsheet) und [Aktualisieren von paths.json](#paths-json) und wählen Sie die entsprechende Vorlage aus und aktualisieren Sie die `paths.json` Datei entsprechend.
+Führen Sie einfach die gleichen Schritte in den Abschnitten [Erstellen einer Tabelle](#spreadsheet) und [Aktualisieren von paths.json](#paths-json) aus, wählen Sie die entsprechende Vorlage aus und aktualisieren Sie die Datei `paths.json` entsprechend.
 
-Für [Konfiguration](https://www.aem.live/docs/configuration), [Kopfzeilen](https://www.aem.live/docs/custom-headers) und [Metadaten](https://www.aem.live/docs/bulk-metadata) Stellen Sie sicher, dass Sie eine Zuordnung hinzufügen, um sie an ihren Standardspeicherorten zu veröffentlichen:
+Stellen Sie für [Konfiguration](https://www.aem.live/docs/configuration), [Kopfzeilen](https://www.aem.live/docs/custom-headers) und [Metadaten](https://www.aem.live/docs/bulk-metadata) sicher, dass Sie eine Zuordnung hinzufügen, um sie an ihren Standardspeicherorten zu veröffentlichen:
 
-* Konfiguration: `/.helix/config.json`
+* Konfiguration: `/.helix/config.json`
 * Kopfzeilen: `/.helix/headers.json`
 * Metadaten: `/metadata.json`
 
-Darüber hinaus können Sie [Erstellen einer eigenen Tabelle](#own-spreadsheet) mit beliebigen Spalten für Ihre eigene Verwendung.
+Darüber hinaus können Sie [Ihre eigene Kalkulationstabelle erstellen](#own-spreadsheet), mit beliebigen Spalten für Ihre eigene Verwendung.
 
 >[!NOTE]
 >
->Es ist nicht erforderlich, eine Tabelle zu erstellen, um die Indizierung für AEM, die mit Edge Delivery Services-Projekten as a Cloud Service ist, zu verwalten.
+>Sie müssen keine Tabelle erstellen, um die Indizierung für AEM as a Cloud Service-Projekte mit Edge Delivery Services zu verwalten.
 >
->Wenn Sie eigene Indizes erstellen möchten, [folgen Sie dieser Dokumentation](https://www.aem.live/developer/indexing#setting-up-more-index-configurations) , um `helix-query.yaml` -Datei.
+>Wenn Sie eigene Indizes erstellen möchten, [folgen Sie dieser Dokumentation](https://www.aem.live/developer/indexing#setting-up-more-index-configurations), um Ihre eigene Datei `helix-query.yaml` zu erstellen.
 
 ## Erstellen einer eigenen Tabelle {#own-spreadsheet}
 
-1. Führen Sie dieselben Schritte im Abschnitt aus. [Erstellen Sie eine Tabelle.](#spreadsheet)
+1. Führen Sie dieselben Schritte im Abschnitt [Erstellen einer Tabelle](#spreadsheet) aus.
 
-1. Wählen Sie bei der Auswahl der Vorlage **Tabellenblatt**.
+1. Wählen Sie bei der Auswahl der Vorlage **Tabelle** aus.
 
-1. Im **Eigenschaften** im Assistenten können Sie eigene Spalten hinzufügen.
+1. Auf der Registerkarte **Eigenschaften** des Assistenten können Sie eigene Spalten hinzufügen.
 
    ![Hinzufügen eigener Spalten](assets/tabular-data/tabular-data-own-spreadsheet.png)
 
-   * Im **Spalten** Abschnitt, tippen oder klicken Sie **Hinzufügen** um eine neue Spalte hinzuzufügen.
+   * Tippen oder klicken Sie im Abschnitt **Spalten** auf **Hinzufügen**, um eine neue Spalte hinzuzufügen.
    * Geben Sie einen Namen für die Spalte an.
-   * Entfernen oder reorganisieren Sie die Spalten mit der **Löschen** und ziehen Sie Ziehpunkte.
+   * Entfernen oder reorganisieren Sie die Spalten mit dem **Löschen**-Symbol bzw. dem Ziehpunkt-Symbol.
 
-1. Erstellen Sie das Arbeitsblatt und veröffentlichen Sie es gemäß den Anweisungen für das Umleitungs-Arbeitsblatt.
+1. Erstellen Sie die Tabelle und veröffentlichen Sie sie gemäß den Anweisungen für die Umleitungstabelle.
 
-1. Fügen Sie der `paths.json` -Datei gemäß den Anweisungen für die Umleitungs-Tabelle.
+1. Fügen Sie der Datei `paths.json` gemäß den Anweisungen für die Umleitungstabelle eine Zuordnung hinzu.
 

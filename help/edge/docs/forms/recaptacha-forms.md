@@ -1,26 +1,26 @@
 ---
-title: Verwenden von reCAPTCHA mit AEM Forms-Edge Delivery Services
+title: Verwenden von reCAPTCHA bei AEM Forms Edge Delivery Services
 description: Verwenden von Google reCAPTCHA in einem EDS-Formular
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 source-git-commit: eadfc3d448bd2fadce08864ab65da273103a6212
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '190'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Verwenden von reCAPTCHA mit AEM Forms-Edge Delivery Services
+# Verwenden von reCAPTCHA bei AEM Forms Edge Delivery Services
 
-reCAPTCHA ist ein beliebtes Tool zum Schutz von Websites vor betrügerischen Aktivitäten, Spam und Missbrauch. In Edge Delivery Services bietet der Adaptive Forms Block die Möglichkeit, Google reCAPTCHA hinzuzufügen, um zwischen Menschen und Bots zu unterscheiden. Mit dieser Funktion können Benutzer ihre Website vor Spam und Missbrauch schützen.
-Betrachten Sie beispielsweise ein Anfrageformular, das Daten wie Start- und Endreisedaten, Zimmerbudget, geschätzte Reisekosten und Reiseinformationen erfasst. In solchen Fällen besteht die Gefahr, dass böswillige Benutzer das Formular für Zwecke wie den Versand von Phishing-E-Mails oder die Überflutung mit irrelevanten oder schädlichen Inhalten mit Spambots nutzen. Die Integration von reCAPTCHA bietet zusätzliche Sicherheit, indem überprüft wird, ob die Übermittlungen von echten Benutzern stammen, wodurch Spam-Einträge effektiv minimiert werden.
+reCAPTCHA ist ein beliebtes Tool zum Schutz von Websites vor betrügerischen Aktivitäten, Spam und Missbrauch. In Edge Delivery Services bietet der adaptive Formularbaustein die Möglichkeit, Google reCAPTCHA hinzuzufügen, um zwischen Menschen und Bots zu unterscheiden. Mit dieser Funktion können Benutzende ihre Website vor Spam und Missbrauch schützen.
+Denken Sie beispielsweise an ein Anfrageformular, das Daten wie Start- und Endreisedaten, Zimmerbudget, geschätzte Reisekosten und Reiseinformationen erfasst. In solchen Fällen besteht die Gefahr, dass böswillige Personen das Formular für Zwecke wie den Versand von Phishing-E-Mails oder die Überflutung mit irrelevanten oder schädlichen Inhalten durch Spambots nutzen. Die Integration von reCAPTCHA bietet zusätzliche Sicherheit, indem überprüft wird, ob die Sendungen von echten Personen stammen, wodurch Spam-Einträge effektiv minimiert werden.
 
-Edge Delivery Services unterstützen nur die **Score based(v3)-reCAPTCHA** für den adaptiven Formularblock.
+Edge Delivery Services unterstützt nur **punktebasiertes (v3) reCAPTCHA** für den adaptiven Formularbaustein.
 
 ![Recaptcha V2](/help/forms/assets/recaptcha-v2-invisible.png)
 
-Die **reCAPTCHA** -Funktion im Vorab-Release-Programm. So fordern Sie Zugriff auf die **reCAPTCHA** für AEM Forms-Edge Delivery Services eine E-Mail von Ihrer Arbeitsadresse an mailto:aem-forms-ea@adobe.com senden.
+Die **reCAPTCHA**-Funktion befindet sich im Vorabversionsprogramm. Um Zugriff auf die **reCAPTCHA**-Funktion für AEM Forms Edge Delivery Services anzufordern, senden Sie eine E-Mail von Ihrer Dienstadresse an mailto:aem-forms-ea@adobe.com.
 
 <!--
 By the end of this article, you learn to:

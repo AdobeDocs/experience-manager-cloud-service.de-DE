@@ -3,9 +3,9 @@ title: Verwalten von Umgebungen
 description: Erfahren Sie mehr über die Arten von Umgebungen, die Sie erstellen können, und wie Sie sie für ein Cloud Manager-Projekt erstellen.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: 8f7ddeea27df8e765a7c83c74af25961748ee26d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2660'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -209,7 +209,7 @@ In jedem Fall wird [Traffic immer in die nächstgelegene Region weitergeleitet, 
 
 ## Aktualisieren von Umgebungen {#updating-dev-environment}
 
-Als Cloud-nativer Service werden Aktualisierungen Ihrer Entwicklungs-, Staging- und Produktionsumgebungen innerhalb von Produktionsprogrammen automatisch durch Adobe verwaltet.
+Als Cloud-nativer Service verwaltet Adobe automatisch die Aktualisierungen Ihrer Entwicklungs-, Staging- und Produktionsumgebungen innerhalb der Produktionsprogramme.
 
 Aktualisierungen von Umgebungen in Sandbox-Programmen werden jedoch innerhalb der Programme verwaltet. Wenn in einer solchen Umgebung nicht die neueste öffentlich verfügbare AEM-Version ausgeführt wird, zeigt der Status auf der Karte **Umgebungen** auf dem Bildschirm **Überblick** des Programms **Aktualisierung verfügbar** an.
 
@@ -229,9 +229,9 @@ Der Prozess der Aktualisierung erfolgt also in zwei Schritten:
 ### Aktualisieren von Umgebungen {#updating-your-environments}
 
 >[!NOTE]
-> Seit 2024 werden Entwicklungsinstanzen und einige Sandbox-Programme bereits automatisch aktualisiert, sodass es nicht mehr erforderlich ist, Aktualisierungen für sie manuell zu verwalten. Als Ergebnis dieser Umstellung steht die Option zum manuellen Aktualisieren der Umgebung für Entwicklungsinstanzen möglicherweise nicht zur Verfügung. _etwas_ Ihrer Programme.
+> Seit 2024 werden Entwicklungsinstanzen und einige Sandbox-Programme bereits automatisch aktualisiert, sodass Aktualisierungen für sie nicht manuell verwaltet werden müssen. Aufgrund dieses Übergangs ist die Option zur manuellen Aktualisierung der Umgebung für Entwicklungsinstanzen möglicherweise für _einige_ Ihrer Programme nicht verfügbar.
 
-Die **Aktualisieren** Diese Option ist verfügbar unter **Umgebungen** -Karte für einige Entwicklungsumgebungen und -umgebungen in Sandbox-Programmen erstellen, indem Sie auf die Schaltfläche mit den Auslassungspunkten der Umgebung klicken.
+Die Option **Aktualisieren** ist für einige Entwicklungsumgebungen und Umgebungen in Sandbox-Programmen über die Karte **Umgebungen** durch Klicken auf die Schaltfläche mit den Auslassungspunkten für die Umgebung verfügbar.
 
 ![Option „Aktualisieren“ auf der Karte „Umgebungen“](assets/environ-update2.png)
 
@@ -249,7 +249,7 @@ Das Verhalten der Option **Aktualisieren** hängt von der Konfiguration und dem 
 
 * Wenn die Pipeline bereits aktualisiert wurde, fordert die Option **Aktualisieren** den Benutzer auf, die Pipeline auszuführen.
 * Wenn die Pipeline gerade aktualisiert wird, informiert die Option **Aktualisieren** den Benutzer darüber, dass bereits eine Aktualisierung ausgeführt wird.
-* Wenn keine geeignete Pipeline vorhanden ist, gilt Folgendes: **Aktualisieren** fordert den Benutzer auf, eine zu erstellen.
+* Wenn keine geeignete Pipeline existiert, fordert die Option **Aktualisieren** die Benutzenden auf, eine zu erstellen.
 
 ## Löschen von Entwicklungsumgebungen {#deleting-environment}
 

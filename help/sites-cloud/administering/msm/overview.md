@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 source-git-commit: 0a4f9edba00e65439a306024c604e6935c8bac47
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2721'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -144,7 +144,7 @@ Auf MSM kann mithilfe verschiedener Optionen der jeweiligen Konsole direkt über
 
 >[!NOTE]
 >
->MSM kann sowohl mit Seiten als auch mit [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md) da diese Fragmente Teil eines Erlebnisses (Seite) sind.
+>MSM kann sowohl mit Seiten als auch mit [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md) verwendet werden, da diese Fragmente Teil eines Erlebnisses (Seite) sind.
 
 >[!NOTE]
 >

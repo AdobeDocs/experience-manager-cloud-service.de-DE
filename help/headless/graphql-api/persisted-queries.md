@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager 
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1952'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -257,37 +257,39 @@ Aus dieser Abfrage kann unter einem Pfad `wknd/adventures-by-activity` eine pers
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-Die UTF-8-Kodierung `%3B` ist für `;`, und `%3D` ist die Kodierung für `=`. Die Abfragevariablen und alle Sonderzeichen müssen [ordnungsgemäß codiert sein](#encoding-query-url), damit die persistente Abfrage ausgeführt wird.
+Die UTF-8-Kodierung `%3B` ist für `;`, und `%3D` ist die Kodierung für `=`. Die Abfragevariablen und alle Sonderzeichen müssen [ordnungsgemäß kodiert sein](#encoding-query-url), damit die persistierte Abfrage ausgeführt wird.
 
-### Verwenden von Abfragevariablen - Best Practices {#query-variables-best-practices}
+### Verwenden von Abfragevariablen – Best Practices {#query-variables-best-practices}
 
 Bei der Verwendung von Variablen in Abfragen sollten einige Best Practices befolgt werden:
 
-* Kodierung Als allgemeine Vorgehensweise wird immer empfohlen, alle Sonderzeichen zu kodieren, z. B. `;`, `=`, `?`, `&`, unter anderem.
+* Kodierung
+Als allgemeine Vorgehensweise wird immer empfohlen, alle Sonderzeichen zu kodieren, z. B. `;`, `=`, `?`, `&` und weitere.
 
-* Semikolon Persistente Abfragen, die mehrere Variablen verwenden (die durch Semikolons getrennt sind), müssen Folgendes aufweisen:
-   * die kodierten Semikolons (`%3B`); durch die Kodierung der URL wird auch dies erreicht
-   * oder ein Semikolon am Ende der Abfrage hinzugefügt wird
+* Semikolon
+Persistierte Abfragen, die mehrere Variablen verwenden (die durch Semikolons getrennt sind), müssen Folgendes aufweisen:
+   * die kodierten Semikolons (`%3B`); durch die Kodierung der URL wird dies auch erreicht,
+   * oder ein Semikolon, das am Ende der Abfrage hinzugefügt wird.
 
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
-Wann `CACHE_GRAPHQL_PERSISTED_QUERIES` für den Dispatcher aktiviert ist, dann werden Parameter aktiviert, die `/` oder `\` -Zeichen in ihrem -Wert doppelt kodiert werden.
+Wenn `CACHE_GRAPHQL_PERSISTED_QUERIES` für den Dispatcher aktiviert ist, werden Parameter, die die Zeichen `/` oder `\` in ihrem Wert enthalten, auf Dispatcher-Ebene zweimal kodiert.
 So vermeiden Sie diese Situation:
 
-   * Aktivieren `DispatcherNoCanonURL` auf dem Dispatcher.
+   * Aktivieren Sie `DispatcherNoCanonURL` auf dem Dispatcher.
 Dadurch wird der Dispatcher angewiesen, die ursprüngliche URL an AEM weiterzuleiten, sodass doppelte Kodierungen vermieden werden.
-Diese Einstellung funktioniert derzeit nur für `vhost` -Ebene. Wenn Sie also bereits über Dispatcher-Konfigurationen zum Umschreiben von URLs verfügen (z. B. bei Verwendung gekürzter URLs), benötigen Sie möglicherweise eine separate `vhost` für persistente Abfrage-URLs.
+Diese Einstellung funktioniert derzeit nur für die `vhost`-Ebene. Wenn Sie also bereits über Dispatcher-Konfigurationen zum Umschreiben von URLs verfügen (z. B. bei Verwendung gekürzter URLs), benötigen Sie möglicherweise einen separaten `vhost` für persistierte Abfrage-URLs.
 
-   * Senden `/` oder `\` nicht kodierte Zeichen.
-Stellen Sie beim Aufrufen der gespeicherten Abfrage-URL sicher, dass alle `/` oder `\` -Zeichen bleiben im Wert persistenter Abfragevariablen nicht kodiert.
+   * Senden Sie die Zeichen `/` oder `\` nicht kodiert.
+Stellen Sie beim Aufrufen der persistierten Abfrage-URL sicher, dass alle `/`- oder `\`-Zeichen im Wert persistierter Abfragevariablen unkodiert bleiben.
      >[!NOTE]
      >
-     >Diese Option wird nur empfohlen, wenn die Variable `DispatcherNoCanonURL` -Lösung kann aus irgendeinem Grund nicht implementiert werden.
+     >Diese Option wird nur empfohlen, wenn die `DispatcherNoCanonURL`-Lösung aus irgendeinem Grund nicht implementiert werden kann.
 
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
 
-  Wann `CACHE_GRAPHQL_PERSISTED_QUERIES` für den Dispatcher aktiviert ist, wird die `;` -Zeichen nicht im Wert einer Variablen verwendet werden.
+  Wenn `CACHE_GRAPHQL_PERSISTED_QUERIES` für den Dispatcher aktiviert ist, kann das `;`-Zeichen nicht im Wert einer Variable verwendet werden.
 
-## Caching persistenter Abfragen {#caching-persisted-queries}
+## Caching persistierter Abfragen {#caching-persisted-queries}
 
 Persistierte Abfragen werden empfohlen, da sie auf der [Dispatcher](/help/headless/deployment/dispatcher.md)- und CDN-Ebene zwischengespeichert werden können, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert.
 
@@ -408,7 +410,7 @@ Die standardmäßige OSGi-Konfiguration für Veröffentlichungsinstanzen:
 
 Standardmäßig sendet der `PersistedQueryServlet` eine `200`-Antwort, wenn er eine Abfrage ausführt, unabhängig vom tatsächlichen Ergebnis.
 
-Sie können [Konfigurieren der OSGi-Einstellungen](/help/implementing/deploying/configuring-osgi.md) für die **Konfigurationen für beständige Abfragen** , um zu steuern, ob detailliertere Status-Codes von der `/execute.json/persisted-query` -Endpunkt, wenn in der persistenten Abfrage ein Fehler auftritt.
+Sie können [die OSGi-Einstellungen](/help/implementing/deploying/configuring-osgi.md) für die **Konfiguration des Dienstes für persistierte Abfragen** konfigurieren, um zu steuern, ob detailliertere Status-Codes vom Endpunkt `/execute.json/persisted-query` zurückgegeben werden, wenn ein Fehler in der persistierten Abfrage auftritt.
 
 >[!NOTE]
 >
@@ -417,16 +419,17 @@ Sie können [Konfigurieren der OSGi-Einstellungen](/help/implementing/deploying/
 Das Feld `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) kann nach Bedarf definiert werden:
 
 * `false` (Standardwert):
-Es spielt keine Rolle, ob die persistierte Abfrage erfolgreich ist oder nicht. Die `Content-Type` zurückgegebene Kopfzeile ist `application/json`und die `/execute.json/persisted-query` *always* gibt den Statuscode aus `200`.
+Es spielt keine Rolle, ob die persistierte Abfrage erfolgreich ist oder nicht. Der zurückgegebene `Content-Type`-Header ist `application/json` und die `/execute.json/persisted-query` gibt *immer* den Status-Code `200` zurück.
 
-* `true`: Die zurückgegebene `Content-Type` is `application/graphql-response+json`und der Endpunkt gibt den entsprechenden Antwort-Code zurück, wenn bei Ausführung der persistenten Abfrage ein Fehler auftritt:
+* `true`:
+Der zurückgegebene `Content-Type` ist `application/graphql-response+json` und der Endpunkt gibt den entsprechenden Antwort-Code zurück, wenn bei Ausführung der persistierten Abfrage irgendeine Art von Fehler auftritt:
 
   | Code | Beschreibung |
   |--- |--- |
   | 200 | Erfolgreiche Antwort |
-  | 400 | Gibt an, dass keine Kopfzeilen vorhanden sind oder dass ein Problem mit dem persistenten Abfragepfad vorliegt. Beispielsweise Name der Konfiguration nicht angegeben, Suffix nicht angegeben und andere.<br>Siehe [Fehlerbehebung - GraphQL-Endpunkt nicht konfiguriert](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
-  | 404 | Die angeforderte Ressource kann nicht gefunden werden. Beispielsweise ist der GraphQL-Endpunkt nicht auf dem Server verfügbar.<br>Siehe [Fehlerbehebung - Fehlender Pfad in der von GraphQL gespeicherten Abfrage-URL](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
-  | 500 | Interner Server-Fehler. Beispielsweise Validierungsfehler, Persistenzfehler und andere. |
+  | 400 | Gibt an, dass Header fehlen oder dass ein Problem mit dem Pfad der persistierten Abfrage vorliegt. Beispiele: Konfigurationsname nicht angegeben, Suffix nicht angegeben und andere.<br>Siehe [Fehlerbehebung – GraphQL-Endpunkt nicht konfiguriert](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
+  | 404 | Die angeforderte Ressource kann nicht gefunden werden. Beispiel: Der GraphQL-Endpunkt ist nicht auf dem Server verfügbar.<br>Siehe [Fehlerbehebung – Fehlender Pfad in der von GraphQL persistierten Abfrage-URL](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
+  | 500 | Interner Server-Fehler. Beispiele: Validierungsfehler, Persistenzfehler und andere. |
 
   >[!NOTE]
   >

@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 source-git-commit: 6353bd50c1df43d9ce11616f71a69d8bfb5ab338
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2381'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -371,26 +371,26 @@ Auf der Registerkarte **Versionsverlauf** im rechten Bereich werden Details zu d
 
 ![Inhaltsfragmenteditor – Überblick über den Versionsverlauf](assets/cf-authoring-version-history-overview.png)
 
-### Version vergleichen {#compare-version}
+### Vergleichen der Version {#compare-version}
 
 Für ein Inhaltsfragment können Sie eine frühere Version mit der aktuellen Version vergleichen.
 
-So vergleichen Sie eine frühere Version mit der aktuellen Version:
+So vergleichen Sie eine frühere Version mit der aktuellen:
 
 1. Wählen Sie das Symbol mit den drei Punkten neben der Version aus.
 
-1. Auswählen **Vergleichen**.
+1. Wählen Sie **Vergleichen**.
 
-![Inhaltsfragmente-Editor - Versionsverlauf - Vergleich](assets/cf-authoring-version-history-compare.png)
+![Inhaltsfragmenteditor – Versionsverlaufs-Vergleich](assets/cf-authoring-version-history-compare.png)
 
-Dadurch wird eine Ansicht geöffnet, die Unterschiede zwischen der aktuellen Version des Inhalts und der ausgewählten vorherigen Version des Inhaltsfragments anzeigt. Aus dem **Varianten mit Änderungen** in der Dropdown-Liste können Sie auswählen, ob Sie Unterschiede zum Hauptinhalt und/oder zum Inhalt einer Variante anzeigen möchten.
+Es wird eine Ansicht geöffnet, die Unterschiede zwischen der aktuellen Version und der ausgewählten vorherigen Version des Inhaltsfragments anzeigt. Aus der Dropdown-Liste **Varianten mit Änderungen** können Sie auswählen, ob Sie Unterschiede zum Hauptinhalt und/oder zum Inhalt einer Variante anzeigen möchten.
 
-Die Unterschiede sind farblich dargestellt:
+Unterschiede sind farblich gekennzeichnet:
 
-* Grün: Zeigt den hinzugefügten Inhalt an (zur aktuellen Version).
-* Rot: zeigt an, dass der Inhalt entfernt wurde (aus der aktuellen Version)
+* Grün zeigt an, dass Inhalte (zur aktuellen Version) hinzugefügt wurden.
+* Rot zeigt an, dass Inhalte (aus der aktuellen Version) entfernt wurden.
 
-![Inhaltsfragmente-Editor - Versionsverlauf - Versionen vergleichen](assets/cf-authoring-version-history-compare-versions.png)
+![Inhaltsfragmenteditor – Versionsverlauf-Vergleich](assets/cf-authoring-version-history-compare-versions.png)
 
 ### Auf eine Version zurücksetzen {#revert-version}
 

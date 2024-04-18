@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Probleme bei persistierten GraphQL-Abfragen i
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
 source-git-commit: 220e86f18e4a61304764753d8daecb68503e9fd0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '351'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -34,13 +34,13 @@ Gehen Sie zur Fehlerbehebung wie folgt vor:
 
 ## GraphQL-Endpunkt nicht konfiguriert {#graphql-endpoint-not-configured}
 
-Wenn persistente Abfragen die `404` Fehler-Code zusammen mit den Informationen `No suitable endpoint found`bedeutet dies, dass in der AEM Umgebung kein GraphQL-Endpunkt konfiguriert ist.
+Wenn persistierte Abfragen den Fehler-Code `404` zusammen mit der Information `No suitable endpoint found` zurückgeben, bedeutet dies, dass in der AEM-Umgebung kein GraphQL-Endpunkt konfiguriert ist.
 
 Um dies zu korrigieren, führen Sie die Schritte zum Aktivieren und Veröffentlichen Ihres Endpunkts gemäß [Verwalten von GraphQL-Endpunkten in AEM](/help/headless/graphql-api/graphql-endpoint.md) aus.
 
 ## Fehlender Pfad in der von GraphQL persistierten Abfrage-URL {#missing-path-query-url}
 
-Wenn persistente Abfragen die `400` Fehlercode mit den Informationen `Suffix: '/' does not contain a path`, wird das GraphQL-Servlet ohne Pfadsuffix aufgerufen.
+Wenn persistierte Abfragen den Fehler-Code `400` mit der Information `Suffix: '/' does not contain a path` zurückgeben, wird das GraphQL-Servlet ohne Pfadsuffix aufgerufen.
 
 Das Muster sollte `/graphql/execute.json/thePath` sein.
 

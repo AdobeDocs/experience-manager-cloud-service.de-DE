@@ -6,9 +6,9 @@ feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 source-git-commit: 0ccca6194cfcd6e834b2e63337230f83cba96dcd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1640'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -41,10 +41,10 @@ Sie benötigen Adminrechte, um die [Einstellungen für die Freigabe von Assets a
    * **Originale einschließen:**
 
       * Wählen Sie `Select Include Originals`, um die Option `Include Originals` standardmäßig im Dialogfeld für die Link-Freigabe auszuwählen.
-      * Wählen Sie aus, wie `Include Originals` wird Ihnen im Dialogfeld Linkfreigabe angezeigt. [!UICONTROL Bearbeitbar] ermöglicht es dem Benutzer, die hier in den Anfangseinstellungen definierten Einstellungen zu ändern. Mit `Read-only` Die Einstellung wird angezeigt, kann jedoch nicht geändert werden. `Hidden` blendet die Einstellung aus und verwendet den hier in den Anfangseinstellungen konfigurierten Wert.
+      * Wählen Sie aus, wie die Option `Include Originals` Ihnen im Dialogfeld „Linkfreigabe” angezeigt wird. [!UICONTROL Bearbeitbar] ermöglicht es den Benutzenden, die hier in den Anfangseinstellungen definierten Einstellungen zu ändern. Mit `Read-only` wird die Einstellung angezeigt, kann jedoch nicht geändert werden. `Hidden` blendet die Einstellung aus und verwendet den hier in den Anfangseinstellungen konfigurierten Wert.
    * **Ausgabedarstellungen einschließen:**
       * Wählen Sie die Option `Select Include Renditions`, um die Option `Include Renditions` standardmäßig im Dialog für die Link-Freigabe auszuwählen.
-      * Wählen Sie aus, wie `Include Renditions` wird Ihnen im Dialogfeld Linkfreigabe angezeigt. [!UICONTROL Bearbeitbar] ermöglicht es dem Benutzer, die hier in den Anfangseinstellungen definierten Einstellungen zu ändern. Mit `Read-only` Die Einstellung wird angezeigt, kann jedoch nicht geändert werden. `Hidden` blendet die Einstellung aus und verwendet den hier in den Anfangseinstellungen konfigurierten Wert.
+      * Wählen Sie aus, wie die Option `Include Renditions` Ihnen im Dialogfeld „Link-Freigabe“ angezeigt wird. [!UICONTROL Bearbeitbar] ermöglicht es den Benutzenden, die hier in den Anfangseinstellungen definierten Einstellungen zu ändern. Mit `Read-only` wird die Einstellung angezeigt, kann jedoch nicht geändert werden. `Hidden` blendet die Einstellung aus und verwendet den hier in den Anfangseinstellungen konfigurierten Wert.
 
 1. Geben Sie die standardmäßige Gültigkeitsdauer für den Link im Feld `Validity Period` im Abschnitt `Expiration date` an.
 

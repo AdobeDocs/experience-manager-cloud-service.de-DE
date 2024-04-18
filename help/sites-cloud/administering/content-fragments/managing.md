@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 source-git-commit: 404eb317562f974f72820c6e3aa019fbe043d7f7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2643'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
    * Hier können Sie die Ordnerstruktur ein- oder ausblenden
    * Sie können einen bestimmten Zweig des Baums auswählen
    * Die Größe kann geändert werden, um verschachtelte Ordner anzuzeigen
-   * Sie können zwischen der Anzeige von Inhaltsfragmenten oder [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+   * Sie können zwischen der Anzeige von Inhaltsfragmenten oder [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) wählen.
 * Das Haupt-/rechte Bedienfeld – von hier aus können Sie:
    * Eine Liste aller Inhaltsfragmente im ausgewählten Zweig des Baums anzeigen:
       * Es werden die Inhaltsfragmente aus dem ausgewählten Ordner und dazu alle untergeordneten Ordner angezeigt.
@@ -454,7 +454,7 @@ Der Filterbereich bietet folgende Optionen:
 * eine Auswahl von Prädikaten;
    * einschließlich Inhaltsfragmentmodellen, Lokalisierung, Tags, Statusfeldern usw.
    * es kann ein Prädikat ausgewählt oder auch mehrere kombiniert werden, um den Filter zu erstellen.
-* **Unterordnerelemente ausschließen**, sodass Sie in Unterordnern gespeicherte Inhaltsfragmente ausschließen können
+* die Option **Unterordnerelemente ausschließen**, mit der Sie in Unterordnern gespeicherte Inhaltsfragmente ausschließen können
 * die Möglichkeit, Ihre Konfiguration zu **speichern**
 * die Option zum Abrufen eines gespeicherten Suchfilters für die Wiederverwendung
 

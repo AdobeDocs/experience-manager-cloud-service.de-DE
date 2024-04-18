@@ -3,9 +3,9 @@ title: Attribute und Elementtypen
 description: Erfahren Sie mehr über die Datenattribute und Elementtypen, die der universelle Editor erfordert.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 source-git-commit: 36be262a7949bc66f97f5483ff463d755f5f78e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '686'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss si
 | `data-aue-filter` | Definiert, welche Verweise verwendet werden können |
 | `data-aue-label` | Definiert eine benutzerdefinierte Beschriftung für ein auswählbares Element, das im Editor angezeigt wird. <br>Wenn `data-aue-model` festgelegt ist, wird die Beschriftung über das Modell abgerufen |
 | `data-aue-model` | Definiert ein Modell, das für die formularbasierte Bearbeitung in der Eigenschaftenleiste verwendet wird |
-| `data-aue-behavior` | Definiert die [Verhalten einer Instrumentierung](#behaviors)Beispielsweise kann eigenständiger Text oder Bild auch eine Komponente nachahmen, um sie zu verschieben oder zu löschen |
+| `data-aue-behavior` | Definiert das [Verhalten einer Instrumentierung](#behaviors); zum Beispiel kann ein eigenständiger Text oder ein eigenständiges Bild auch eine Komponente imitieren, um sie verschiebbar oder löschbar zu machen |
 
 ## Elementtypen {#item-types}
 

@@ -3,9 +3,9 @@ title: Inhaltsmodellierung für AEM-Authoring-Projekte mit Edge Delivery Service
 description: Erfahren Sie, wie die Inhaltsmodellierung für AEM-Authoring-Projekte mit Edge Delivery Services funktioniert und wie Sie eigene Inhalte modellieren.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2233'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -350,7 +350,7 @@ Alles andere wird als einfacher Text gerendert.
 
 #### Ausblendung von Feldern {#field-collapse}
 
-Beim Ausblenden von Feldern werden mehrere Feldwerte basierend auf einer Namenskonvention mithilfe der Suffixe zu einem einzigen semantischen Element zusammengefasst. `Title`, `Type`, `MimeType`, `Alt`, und `Text` (Groß-/Kleinschreibung beachten). Jede Eigenschaft, die mit einem dieser Suffixe endet, wird nicht als Wert, sondern als Attribut einer anderen Eigenschaft betrachtet.
+Beim Ausblenden von Feldern werden mehrere Feldwerte basierend auf einer Namenskonvention mithilfe der Suffixe `Title`, `Type`, `MimeType`, `Alt` und `Text` (unter Berücksichtigung der Groß- und Kleinschreibung) zu einem einzigen semantischen Element zusammengefasst. Jede Eigenschaft, die mit einem dieser Suffixe endet, wird nicht als Wert, sondern als Attribut einer anderen Eigenschaft betrachtet.
 
 ##### Bilder {#image-collapse}
 
@@ -625,11 +625,11 @@ Stellen Sie sicher, dass die Kalkulationstabelle Ihrer Pfadzuordnung hinzugefüg
 
 Viele der in AEM verfügbaren Standardseiteneigenschaften werden den entsprechenden Seitenmetadaten in einem Dokument zugeordnet. Das umfasst beispielsweise `title`, `description`, `robots`, `canonical url` oder `keywords`. Einige AEM-spezifische Eigenschaften sind ebenfalls verfügbar:
 
-* `cq:lastModified` as `modified-time` im ISO8601-Format
-* Der Zeitpunkt der letzten Veröffentlichung des Dokuments als `published-time` im ISO8601-Format
-* `cq:tags` as `cq-tags` als kommagetrennte Liste der Tag-IDs.
+* `cq:lastModified` als `modified-time` im ISO8601-Format
+* Zeitpunkt der letzten Veröffentlichung des Dokuments als `published-time` im ISO8601-Format
+* `cq:tags` als `cq-tags` als kommagetrennte Liste der Tag-IDs.
 
-Es ist auch möglich, ein Komponentenmodell für benutzerdefinierte Seitenmetadaten zu definieren, das dem Autor als Registerkarte des Dialogfelds &quot;Seiteneigenschaften&quot;von AEM Sites zur Verfügung gestellt wird.
+Es ist auch möglich, ein Komponentenmodell für benutzerdefinierte Seitenmetadaten zu definieren, das der Autorin oder dem Autor als Registerkarte im Dialogfeld mit den AEM Sites-Seiteneigenschaften zur Verfügung gestellt wird.
 
 Erstellen Sie dazu ein Komponentenmodell mit der ID `page-metadata`.
 
@@ -648,13 +648,13 @@ Erstellen Sie dazu ein Komponentenmodell mit der ID `page-metadata`.
 
 ## Nächste Schritte {#next-steps}
 
-Nachdem Sie nun wissen, wie Sie Inhalte modellieren können, können Sie mit AEM Authoring-Projekt Bausteine für Ihre eigenen Edge Delivery Services erstellen.
+Nachdem Sie nun wissen, wie Sie Inhalte modellieren, können Sie Bausteine für Ihre eigenen Edge Delivery Service-Projekte mit AEM-Authoring erstellen.
 
-Siehe Dokument . [Erstellen von für die Verwendung mit dem universellen Editor instrumentierten Bausteinen](/help/edge/aem-authoring/create-block.md) Hier erfahren Sie, wie Sie Bausteine erstellen, die für die Verwendung mit dem universellen Editor bei AEM Authoring mit Edge Delivery Services-Projekten instrumentiert wurden.
+Im Dokument [Erstellen von Bausteinen, die für die Verwendung mit dem universellen Editor instrumentiert sind](/help/edge/aem-authoring/create-block.md) erfahren Sie, wie Sie Bausteine erstellen, die für die Verwendung mit dem universellen Editor in AEM-Authoring mit Edge Delivery Services-Projekten instrumentiert sind.
 
-Informationen zum Erstellen von Bausteinen finden Sie im Dokument . [Erste Schritte für Entwickler für AEM Authoring mit Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) , um Sie mit einer neuen Adobe Experience Manager-Site zu vertraut zu machen, die Edge Delivery Services und den universellen Editor für die Inhaltserstellung nutzt.
+Wenn Sie bereits mit der Erstellung von Bausteinen vertraut sind, lesen Sie bitte das Dokument [Erste-Schritte-Handbuch für Entwickelnde zum AEM-Authoring mit Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md), um Ihnen den Start mit einer neuen Adobe Experience Manager-Site zu erleichtern, unter Verwendung von Edge Delivery Services und dem universellen Editor für die Erstellung von Inhalten.
 
 >[!TIP]
 >
->Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für AEM Authoring mit AEM als Inhaltsquelle aktiviert ist, finden Sie unter [Dieses AEM GEMs-Webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Eine End-to-End-Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für AEM Authoring mit AEM as a Cloud Service als Inhaltsquelle aktiviert ist, finden Sie in [diesem AEM GEMs-Webinar.](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 

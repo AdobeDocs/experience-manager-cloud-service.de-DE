@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Adobe Experience Manager (AEM) as a Cloud Service
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 source-git-commit: 72fc611e006f80fdda672f08b0b795432f5899e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '970'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -20,23 +20,23 @@ Erfahren Sie, wie Adobe Experience Manager (AEM) as a Cloud Service durch Integr
 AEM as a Cloud Service verwendet die kontinuierliche Integration und Bereitstellung (Continuous Integration und Continuous Delivery, CI/CD), um sicherzustellen, dass Ihre Projekte auf der aktuellen AEM-Version basieren. Dieser Prozess ermöglicht eine nahtlose Aktualisierung Ihrer Produktions-, Staging- und Entwicklungsinstanzen, ohne Ihre Benutzenden zu stören.
 
 >[!NOTE]
-> Da Entwicklungsinstanzen bereits automatisch aktualisiert werden, stehen die manuellen Aktualisierungen für Entwicklungsinstanzen möglicherweise nicht zur Verfügung _etwas_ Ihrer Programme. Diese Funktion wird auf automatische Aktualisierungen umgestellt.
+> Da Entwicklungsinstanzen bereits automatisch aktualisiert werden, stehen die manuellen Aktualisierungen für Entwicklungsinstanzen für _einige_ Ihrer Programme möglicherweise nicht zur Verfügung. Diese Funktion wird derzeit auf automatische Aktualisierungen umgestellt.
 
-Bevor Ihre Instanzen automatisch aktualisiert werden, wird 3 bis 5 Tage vorher eine neue AEM-Wartungsversion veröffentlicht. Während dieses Zeitraums wird Ihre Entwicklungsinstanz möglicherweise automatisch aktualisiert. Falls sie verfügbar ist, haben Sie optional folgende Möglichkeiten [Trigger des Updates für Ihre Entwicklungsinstanzen](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). Versionsaktualisierungen werden zuerst automatisch auf Ihre Entwicklungsumgebungen angewendet. Bei erfolgreicher Aktualisierung wird der Aktualisierungsprozess in Ihren Staging- und Produktionsinstanzen fortgesetzt. Die Entwicklungs- und Staging-Instanzen fungieren als automatisiertes Quality Gate (Qualitätsprüfpunkt), bei dem Ihre benutzerdefinierten Tests ausgeführt werden, bevor das Update auf Ihre Produktionsumgebung angewendet wird.
+Bevor Ihre Instanzen automatisch aktualisiert werden, wird 3 bis 5 Tage vorher eine neue AEM-Wartungsversion veröffentlicht. Während dieses Zeitraums wird Ihre Entwicklungsinstanz möglicherweise automatisch aktualisiert, oder Sie können, falls verfügbar, optional [die Aktualisierung für Ihre Entwicklungsinstanzen auslösen](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). Versionsaktualisierungen werden automatisch zuerst auf Ihre Entwicklungsumgebungen angewendet. Bei erfolgreicher Aktualisierung wird der Aktualisierungsprozess in Ihren Staging- und Produktionsinstanzen fortgesetzt. Die Entwicklungs- und Staging-Instanzen fungieren als automatisiertes Quality Gate (Qualitätsprüfpunkt), bei dem Ihre benutzerdefinierten Tests ausgeführt werden, bevor das Update auf Ihre Produktionsumgebung angewendet wird.
 
-### NIMU (Non-Intrusive Maintenance Updates) {#nimu}
+### Nicht-intrusive Wartungsupdates (NIMU, Non-Intrusive Maintenance Updates) {#nimu}
 
-Nicht-aufdringliche Wartungs-Updates sind automatische Updates, die ohne Einbeziehung der Kunden-Pipelines durchgeführt werden.
-Über die NIMU kann der Kunde die Pipeline jederzeit verwenden, auch wenn eine AEM-Versionsaktualisierung geplant ist oder gerade durchgeführt wird. Wartungs-Updates werden dann nicht mehr im Ausführungsverlauf der Kunden-Pipeline angezeigt, was die Verfolgung des Verlaufs von Code-Bereitstellungen erleichtert.
+Nicht-intrusive Wartungsupdates sind automatische Aktualisierungen, die ohne Einbeziehung der Kunden-Pipelines angewendet werden.
+Über NIMU kann die Kundin bzw. der Kunde die Pipeline jederzeit verwenden, auch wenn eine AEM-Versionsaktualisierung geplant oder im Gange ist, und Wartungs-Updates werden nicht mehr im Ausführungsverlauf der Kunden-Pipeline angezeigt, wodurch es einfacher wird, den Verlauf von Code-Bereitstellungen zu verfolgen.
 
-#### Aktivitäten aktualisieren
+#### Aktualisieren von Aktivitäten
 
-Die aktuelle AEM-Version kann weiterhin wie zuvor mit dem Bedienfeld Umgebungen der Cloud Manager-Benutzeroberfläche für jede Umgebung überprüft werden. Dieselben Quality Gates, die in der Pipeline verwendet werden, werden auch für nicht aufdringliche Wartungs-Updates verwendet, einschließlich der vom Kunden geschriebenen Tests.
-Eine Benachrichtigung der Cloud Manager-Benutzeroberfläche wird gesendet, wenn ein Update zur unterbrechungsfreien Wartung auf die Umgebungen Ihres Programms angewendet wird. Sie können ihn so konfigurieren, dass er auch an Ihre E-Mail gesendet wird.
+Die aktuelle AEM-Version kann wie bisher für jede Umgebung mithilfe des Bedienfelds „Umgebungen der Cloud Manager-Benutzeroberfläche“ überprüft werden. Dieselben Qualitäts-Gates, die in der Pipeline verwendet werden, werden von nicht-intrusiven Wartungs-Updates verwendet, einschließlich der von Kundinnen und Kunden geschriebenen Tests.
+Es wird eine Benachrichtigung über die Cloud Manager-Benutzeroberfläche gesendet, sobald ein nicht-intrusives Wartungs-Update auf die Umgebungen Ihres Programms angewendet wird. Sie können dies so konfigurieren, dass sie auch an Ihre E-Mail-Adresse gesendet wird.
 
 >[!NOTE]
 >
-> Hinweis: Nicht-aufdringliche Wartungs-Updates werden 2024 schrittweise für alle Kunden aktiviert.
+> Hinweis: Nicht-intrusive Wartungs-Updates werden im Jahr 2024 schrittweise für alle Kundinnen und Kunden aktiviert.
 
 
 ## Aktualisierungstypen {#update-types}

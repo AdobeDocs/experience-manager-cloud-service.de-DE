@@ -3,7 +3,7 @@ title: Aufrufe im universellen Editor
 description: Erfahren Sie mehr über die verschiedenen Arten von Aufrufen, die der universelle Editor an Ihre App sendet, um Sie beim Debuggen zu unterstützen.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '615'
 ht-degree: 100%
 

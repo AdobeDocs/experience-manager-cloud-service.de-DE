@@ -7,9 +7,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4881'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -173,7 +173,7 @@ ht-degree: 98%
          + [Versionshinweise für 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Versionshinweise für den erweiterten Connector von Workfront für Experience Manager{#workfront}
       + [Aktuelle Versionshinweise für den erweiterten Connector von Workfront für Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
-   + Versionshinweise für Generate Variations {#generate-variations}
+   + Versionshinweise für das Generieren von Varianten {#generate-variations}
       + [Aktuelle Versionshinweise zum Generieren von Varianten](/help/generative-ai/release-notes-generate-variations.md)
    + [Neue Funktionen](/help/release-notes/what-is-new.md)
    + [Wichtige Änderungen in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
@@ -360,7 +360,7 @@ ht-degree: 98%
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [Überlegungen zum Löschen](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Analysieren der Struktur](/help/sites-cloud/administering/content-fragments/analysis.md)
-         + [Assets in der Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+         + [Assets in der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [Tastaturkürzel](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + Erstellung einer Site {#site-creation}
          + [Erstellen einer neuen Site](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -578,7 +578,7 @@ ht-degree: 98%
       + [Aktualisieren von  [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + Integration mit Adobe Express {#integration-adobe-express}
-      + [Native Integration mit Adobe Expreß](/help/assets/native-integration-adobe-express.md)
+      + [Native Integration mit Adobe Express](/help/assets/native-integration-adobe-express.md)
 
    + Integration mit Creative Cloud {#integration-creative-cloud}
       + [Verbinden von AEM Assets mit Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
@@ -648,7 +648,7 @@ ht-degree: 98%
             + [Erstellen und Verwenden benutzerdefinierter Funktionen](/help/forms/create-and-use-custom-functions.md)
             + [Hinzufügen von Regeln zu einem adaptiven Formular, das auf Kernkomponenten basiert](/help/forms/rule-editor-core-components.md)
             + [Hinzufügen von Versionen, Kommentaren und Anmerkungen zu einem adaptiven Formular](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-            + [Adaptive Forms vergleichen](/help/forms/compare-forms.md)
+            + [Vergleichen adaptiver Formulare](/help/forms/compare-forms.md)
       + Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
          + Konvertieren von PDF-Formularen in adaptive Formulare {#afcs}
             + [Einführung in den Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de)
@@ -798,7 +798,7 @@ ht-degree: 98%
 + Edge Delivery Services {#edge-delivery}
    + [Überblick über Edge Delivery Services](/help/edge/overview.md)
    + [Verwenden von Edge Delivery Services mit AEM](/help/edge/using.md)
-   + AEM-basierte Bearbeitung {#aem-authoring}
+   + AEM-basiertes Authoring {#aem-authoring}
       + [Erstellen von Inhalten für Edge Delivery](/help/edge/aem-authoring/authoring.md)
       + [Veröffentlichen von Inhalten für Edge Delivery](/help/edge/aem-authoring/publishing.md)
       + [Erste-Schritte-Handbuch für Entwickelnde](/help/edge/aem-authoring/edge-dev-getting-started.md)
@@ -806,7 +806,7 @@ ht-degree: 98%
       + [Inhaltsmodellierung](/help/edge/aem-authoring/content-modeling.md)
       + [Tabellendaten und Tabellen](/help/edge/aem-authoring/tabular-data.md)
       + [Vorhandene Projekte und Edge Delivery](/help/edge/aem-authoring/existing-projects.md)
-   + Dokumentenbasierte Bearbeitung {#document-authoring}
+   + Dokumentenbasiertes Authoring {#document-authoring}
       + [Authoring](/help/edge/docs/authoring.md)
       + [Massenmetadaten](/help/edge/docs/bulk-metadata.md)
       + [Platzhalter](/help/edge/docs/placeholders.md)
@@ -832,7 +832,7 @@ ht-degree: 98%
       + [Akamai-Setup](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Fastly-Einrichtung](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Umleitungen](/help/edge/docs/redirects.md)
-   + Erstellen von Forms {#build-forms}
+   + Erstellen von Formularen {#build-forms}
       + [Übersicht](/help/edge/docs/forms/overview.md)
       + Erste Schritte {#getting-started-eds-forms}
          + [Erste Schritte](/help/edge/docs/forms/tutorial.md)
@@ -840,7 +840,7 @@ ht-degree: 98%
          + [Einrichten von Google Tabellen- oder Microsoft Excel-Dateien, um Daten zu akzeptieren](/help/edge/docs/forms/submit-forms.md)
          + [Veröffentlichen des Formulars und Starten der Datenerfassung](/help/edge/docs/forms/publish-forms.md)
          + [Hinzufügen von Validierungen zu Formularfeldern](/help/edge/docs/forms/validate-forms.md)
-         + [Laden von Optionen aus URL in ein Formular](/help/edge/docs/forms/load-options-from-url.md)
+         + [Laden von Optionen aus einer URL in ein Formular](/help/edge/docs/forms/load-options-from-url.md)
          + [Anpassen des Erscheinungsbilds von Formularen](/help/edge/docs/forms/style-theme-forms.md)
          + [Verwenden von Regeln zum Hinzufügen von dynamischem Verhalten zu einem Formular](/help/edge/docs/forms/rules-forms.md)
          + [Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung](/help/edge/docs/forms/thank-you-page-form.md)
@@ -853,7 +853,7 @@ ht-degree: 98%
          + [Echtzeit-Benutzerüberwachung für Formulare](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + Verweise {#forms-references}
          + [Komponenten von adaptiven Formularblöcken und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
-   + Edge-Bereitstellungsressourcen {#resources}
+   + Edge Delivery-Ressourcen {#resources}
       + Sidekick {#sidekick}
          + [Verwenden des Sidekicks](/help/edge/docs/sidekick.md)
          + [Installieren der Erweiterung](/help/edge/docs/sidekick-extension.md)
@@ -896,7 +896,7 @@ ht-degree: 98%
       + [Aktualisieren von Inhaltsfragmenten für optimierte GraphQL-Filterung](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Beispiele für GraphQL-Abfragen](/help/headless/graphql-api/sample-queries.md)
       + [Fehlerbehebung bei GraphQL-Abfragen](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [Inhaltsfragmente und -modelle - OpenAPIs](/help/headless/content-fragment-openapis.md)
+   + [OpenAPIs für Inhaltsfragmente und -modelle](/help/headless/content-fragment-openapis.md)
    + [Unterstützung von Inhaltsfragmenten in der Assets-HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=de)
    + Sicherheit {#security}
       + [Berechtigungen](/help/headless/security/permissions.md)

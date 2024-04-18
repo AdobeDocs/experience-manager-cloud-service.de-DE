@@ -4,9 +4,9 @@ description: In diesem Tutorial lernen Sie alles über ein neues Adobe Experienc
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1848'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ Kopieren des Beispielinhalts in Ihren eigenen Inhaltsordner und Verweisen Ihres 
       https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      Weitere Informationen zum Verwalten von Dateien mit Microsoft SharePoint finden Sie unter [Verwendung von Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
+      Weitere Informationen zum Verwalten von Dateien in Microsoft SharePoint finden Sie unter [Verwenden von Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
    1. Übergeben Sie die aktualisierte Datei `fsatb.yaml`, sobald Sie die Referenz aktualisiert haben und alles gut aussieht. Wenn Build-Probleme auftreten, lesen Sie [Beheben von Build-Problemen in GitHub](#troubleshooting-github-build-issues).
@@ -253,8 +253,8 @@ Der Ordner `blocks/form` des adaptiven Formularblocks ist Ihr Spielplatz für St
 
 Bereit zur Präsentation Ihrer Kreation? Verwenden Sie Git, um Ihre Änderungen zu bestätigen und zu übertragen. Dadurch werden Ihre Vorschau- und Produktionsumgebungen aktualisiert, auf die über diese URLs zugegriffen werden kann (Platzhalter durch Ihre Projektdetails ersetzen):
 
-Vorschau: `https://<branch>--<repo>--<owner>.hlx.page/`
-Produktion: `https://<branch>--<repo>--<owner>.hlx.live/`
+Vorschau: `https://<branch>--<repo>--<owner>.hlx.page/`
+Produktion: `https://<branch>--<repo>--<owner>.hlx.live/`
 
 Herzlichen Glückwunsch! Sie haben Ihre lokale Entwicklungsumgebung erfolgreich eingerichtet und Ihre Änderungen bereitgestellt.
 

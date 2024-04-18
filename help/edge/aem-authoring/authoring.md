@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Content-Authoring mit Edge Delivery Services funk
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '475'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 93%
 
 Mit Edge Delivery Services ist das Authoring einfach, schnell und flexibel. Sie haben zwei Optionen zum Erstellen von Inhalten für Edge Delivery Services:
 
-* [Universal Editor](#universal-editor) – Eine moderne UI für die Bearbeitung von Inhalten in AEM
-* [Dokumentenbasierte Bearbeitung](#document-based) - wie Microsoft Word- oder Google-Dokumente
+* [Universeller Editor](#universal-editor) – Eine moderne Benutzeroberfläche für die Bearbeitung von Inhalten in AEM
+* [Dokumentenbasiertes Authoring](#document-based) – wie Microsoft Word oder Google Docs
 
 ## Authoring mit dem universellen Editor {#universal-editor}
 
@@ -51,9 +51,9 @@ Weitere Informationen zum Verfassen mit dem universellen Editor finden Sie im Do
 
 Lesen Sie hierzu das [Erste-Schritte-Handbuch für Entwickelnde zum AEM-Authoring mit Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md), um zu erfahren, wie Sie Ihr eigenes Projekt mit AEM und Edge Delivery Services erstellen können.
 
-## Dokumentbasiertes Authoring  {#document-based}
+## Dokumentenbasiertes Authoring  {#document-based}
 
-Beim dokumentbasierten Authoring können Sie mit verschiedenen Quellen wie Microsoft Word- und Google Docs-Dokumenten arbeiten. Dokumente aus diesen Quellen werden zu Seiten auf Ihrer Website. Überschriften, Listen, Bilder, Schriftelemente und Videos können von der ursprünglichen Quelle auf Ihre Website übertragen werden. Sie können Metadaten für SEO-Zwecke hinzufügen oder Blöcke verwenden, um mit strukturierten Inhalten zu arbeiten und Funktionen hinzuzufügen.
+Bei Verwendung des dokumentenbasierten Authorings können Sie mit verschiedenen Quellen wie Microsoft Word- und Google Docs-Dokumenten arbeiten. Dokumente aus diesen Quellen werden zu Seiten auf Ihrer Website. Überschriften, Listen, Bilder, Schriftelemente und Videos können von der ursprünglichen Quelle auf Ihre Website übertragen werden. Sie können Metadaten für SEO-Zwecke hinzufügen oder Blöcke verwenden, um mit strukturierten Inhalten zu arbeiten und Funktionen hinzuzufügen.
 
 Weitere Informationen zum dokumentbasierten Authoring finden Sie in [diesem Dokument in der Edge Delivery Services-Dokumentation.](/help/edge/docs/authoring.md)
 

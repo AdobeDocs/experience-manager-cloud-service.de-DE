@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Rege
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 source-git-commit: 1e2d147aec53fc0f5be53571078ccebdda63c819
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1109'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -51,9 +51,9 @@ config/
 
 Die Regeltypen in den folgenden Abschnitten verwenden eine gemeinsame Syntax.
 
-Eine Regel wird durch einen Namen, eine bedingte &quot;Wenn-Klausel&quot;und Aktionen referenziert.
+Eine Regel wird durch einen Namen, einen Bedingungssatz mit „Wenn“ und Aktionen referenziert.
 
-Die if -Klausel bestimmt, ob eine Regel basierend auf Eigenschaften wie Domäne, Pfad, Abfragezeichenfolgen, Kopfzeilen und Cookies ausgewertet wird. Die Syntax ist für alle Regeltypen gleich. Weitere Informationen finden Sie unter [Abschnitt &quot;Bedingungsstruktur&quot;](/help/security/traffic-filter-rules-including-waf.md#condition-structure) im Artikel Traffic-Filterregeln .
+Der Bedingungssatz bestimmt, ob eine Regel basierend auf Eigenschaften wie Domain, Pfad, Abfragezeichenfolgen, Header und Cookies ausgewertet wird. Die Syntax ist für alle Regeltypen gleich. Weitere Informationen finden Sie im [Abschnitt „Bedingungsstruktur“](/help/security/traffic-filter-rules-including-waf.md#condition-structure) im Artikel zu Traffic-Filterregeln.
 
 Die Details des Aktionsknotens unterscheiden sich je nach Regeltyp und sind in den einzelnen Abschnitten unten beschrieben.
 
@@ -139,13 +139,13 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 
 | Name | Eigenschaften | Bedeutung |
 |-----------|--------------------------|-------------|
-| **set** | (reqProperty oder reqHeader oder queryParam oder reqCookie), value | Legt einen angegebenen Anforderungsparameter (nur unterstützte Eigenschaft &quot;path&quot;) oder einen Anforderungsheader, Abfrageparameter oder Cookie auf einen bestimmten Wert fest. |
-|     | var, Wert | Legt eine angegebene Anforderungseigenschaft auf einen angegebenen Wert fest. |
-| **unset** | reqProperty | Entfernt einen angegebenen Anforderungsparameter (nur unterstützte &quot;path&quot;-Eigenschaft) oder einen Anforderungsheader, Abfrageparameter oder Cookie zu einem angegebenen Wert. |
+| **set** | (reqProperty oder reqHeader oder queryParam oder reqCookie), Wert | Legt einen angegebenen Anfrageparameter (nur die „Pfad“-Eigenschaft wird unterstützt) oder einen Anfrage-Header, Abfrageparameter oder Cookie auf einen bestimmten Wert fest. |
+|     | var, Wert | Legt einen bestimmten Anfrageparameter auf einen angegebenen Wert fest. |
+| **unset** | reqProperty | Entfernt einen angegebenen Anfrageparameter (nur die „Pfad“-Eigenschaft wird unterstützt) oder einen Anfrage-Header, Abfrageparameter oder Cookie auf einen bestimmten Wert. |
 |         | var | Entfernt eine angegebene Variable. |
 |         | queryParamMatch | Entfernt alle Abfrageparameter, die einem angegebenen regulären Ausdruck entsprechen. |
-| **transformieren** | op:replace, (reqProperty oder reqHeader oder queryParam oder reqCookie), match, replacement | Ersetzt einen Teil des Anforderungsparameters (nur unterstützte &quot;path&quot;-Eigenschaft) oder den Anforderungsheader, den Abfrageparameter oder das Cookie durch einen neuen Wert. |
-|              | op:tolower, (reqProperty oder reqHeader oder queryParam oder reqCookie) | Legt den Anforderungsparameter (nur unterstützte Eigenschaft &quot;path&quot;) oder den Anforderungsheader, den Abfrageparameter oder das Cookie auf den Wert in Kleinbuchstaben fest. |
+| **Transformieren** | op:replace, (reqProperty oder reqHeader oder queryParam oder reqCookie), Übereinstimmung, Ersatz | Ersetzt einen Teil des Anfrageparameters (nur die „Pfad“-Eigenschaft wird unterstützt) oder des Anfrage-Headers, des Abfrageparameters oder des Cookies durch einen neuen Wert. |
+|              | op:tolower, (reqProperty oder reqHeader oder queryParam oder reqCookie) | Setzt den Anfrageparameter (nur die „Pfad“-Eigenschaft wird unterstützt) oder Anfrage-Header, Abfrageparameter oder Cookie auf seinen Wert in Kleinbuchstaben. |
 
 Aktionen können miteinander verkettet werden. Zum Beispiel:
 

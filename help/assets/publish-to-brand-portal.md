@@ -6,9 +6,9 @@ feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
 source-git-commit: 9e09dc7a5226a2b8da7c796a8a8c4480b99eeb3b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1280'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/brandportal/brand-portal-publish-assets) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/brandportal/brand-portal-publish-assets) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 Als Administrator von Adobe Experience Manager (AEM) Assets können Sie Assets, Ordner und Sammlungen über die AEM Assets Brand Portal-Instanz veröffentlichen. Außerdem können Sie den Veröffentlichungs-Workflow für ein Asset oder einen Ordner zu einem späteren Zeitpunkt einplanen. Nach der Veröffentlichung können die Benutzer von Brand Portal auf die Assets, Ordner und Sammlungen zugreifen und sie an andere Benutzer weiterleiten.
@@ -87,7 +87,7 @@ So planen Sie die Veröffentlichung der Assets in Brand Portal zu einem spätere
 
    <!--![publishworkflow](assets/publishworkflow.png)-->
 
-   ![Veröffentlichungs-Workflow](assets/publish-workflow.png)
+   ![Workflow veröffentlichen](assets/publish-workflow.png)
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ Sie können Asset-Ordner sofort veröffentlichen oder deren Veröffentlichung au
    Eine Meldung erscheint, die besagt, dass der Ordner zur Veröffentlichung in Brand Portal in die Warteschlange gestellt wurde. Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um die veröffentlichten Ordner zu sehen.
 
 1. **Ordner später veröffentlichen**
-So planen Sie die Veröffentlichung der Asset-Ordner zu einem späteren Zeitpunkt:
+Wenn Sie die Asset-Ordner zu einem späteren Zeitpunkt veröffentlichen möchten:
 
    1. Wählen Sie die Ordner aus, die Sie für die Veröffentlichung planen möchten, und wählen Sie oben in der Symbolleiste **[!UICONTROL Veröffentlichung verwalten]** aus.
    1. Wählen Sie unter **[!UICONTROL Aktion]** die Option **[!UICONTROL In Brand Portal veröffentlichen]** aus.
@@ -150,15 +150,15 @@ So planen Sie die Veröffentlichung der Asset-Ordner zu einem späteren Zeitpunk
 
       <!--![manageschedulepub](assets/manageschedulepub.png)-->
 
-   ![Veröffentlichungs-Workflow](assets/publish-workflow.png)
+   ![Workflow veröffentlichen](assets/publish-workflow.png)
 
-### Veröffentlichte Datei oder Ordner in Brand Portal anzeigen {#view-published-file-folder}
+### Ansicht der veröffentlichten Datei oder des Ordners in Brand Portal {#view-published-file-folder}
 
 1. Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um die veröffentlichten Assets zu sehen (je nach Ihrem geplanten Zeitpunkt).
 
    ![bp_landingpage](assets/bp_landingpage.png)
 
-1. Zur Listenansicht wechseln ![Listenansicht](assets/list-view.svg) um den aktuellen Veröffentlichungsstatus des Assets anzuzeigen.
+1. Wechseln Sie zur ![Listenansicht](assets/list-view.svg), um den aktuellen Veröffentlichungsstatus des Assets anzuzeigen.
 
 <!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 

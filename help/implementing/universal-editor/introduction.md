@@ -3,24 +3,24 @@ title: Einführung in den universellen Editor
 description: Erfahren Sie, wie der universelle Editor die WYSIWYG-Bearbeitung (What you see is what you get) von beliebigen Headless- und Headful-Erlebnissen ermöglicht. Erfahren Sie, wie er Autorinnen und Autoren dabei helfen kann, außergewöhnliche Inhalte zu erstellen sowie die Geschwindigkeit ihrer Inhalte zu erhöhen, und inwiefern er Entwickelnden ein modernes Erlebnis bietet.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 source-git-commit: 24496f81313bd58f60aa6d251c46f11fb24d1dbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '983'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 
 # Einführung in den universellen Editor {#introduction}
 
-Der universelle Editor ist ein vielseitiger visueller Editor, der Teil von Adobe Experience Manager Sites ist. Es ermöglicht Autorinnen und Autoren die WYSIWYG-Bearbeitung (What you see is what you get) eines Headless- oder Headful-Erlebnisses. Erfahren Sie, wie sie Inhaltsautorinnen und -autoren dabei helfen kann, außergewöhnliche Erlebnisse bereitzustellen, und wie sie Entwicklerinnen und Entwicklern beispiellose Freiheit bietet.
+Der universelle Editor ist ein vielseitiger visueller Editor, der Teil von Adobe Experience Manager Sites ist. Er ermöglicht Autorinnen und Autoren die WYSIWYG-Bearbeitung (What you see is what you get) von beliebigen Headless- und Headful-Erlebnissen. Erfahren Sie, wie er Autorinnen und Autoren von Inhalten dabei helfen kann, außergewöhnliche Erlebnisse zu liefern, und wie er Entwicklerinnen und Entwicklern unvergleichliche Freiheit bietet.
 
 ## Hintergrund {#background}
 
-Der universelle Editor bietet ein effizientes und intuitives Authoring-Erlebnis im Kontext, das nur minimale Schulung erfordert. Damit können Autoren ihre Inhalte direkt im Kontext des Web-Erlebnisses verwalten und genau so aussehen, wie sie den Besuchern erscheinen. Da es sich um einen echten Editor als Service und insgesamt flexibler handelt, beabsichtigt es, den Seiteneditor letztendlich zu ersetzen.
+Der universelle Editor bietet ein effizientes und intuitives kontextbezogenes Authoring-Erlebnis, das nur eine minimale Schulung erfordert. Mit ihm können Autorinnen und Autoren ihre Inhalte direkt im Kontext des Web-Erlebnisses verwalten, genau so, wie sie den Besuchenden angezeigt werden. Da es sich um einen echten Editor als Dienst handelt, der insgesamt flexibler ist, soll der Seiteneditor letztendlich durch ihn ersetzt werden.
 
-Autorinnen und Autoren profitieren von der Flexibilität des universellen Editors, da er dieselbe konsistente visuelle Bearbeitung für alle Formen von AEM-Inhalten unterstützt: Die Bearbeitung im Kontext und die Layout-Komposition ist gleichermaßen für Inhaltsfragmente und Seitenkomponenten möglich. Die beiden Inhaltsformen können sogar bearbeitet werden, wenn sie in einem Web-Erlebnis nebeneinander angezeigt werden, ohne dass Autoren den Kontext wechseln müssen. Dies stellt eine erhebliche Verbesserung gegenüber vorherigen Editoren in AEM dar, die nur einen Inhaltstyp unterstützten.
+Autorinnen und Autoren profitieren von der Flexibilität des universellen Editors, da er dieselbe konsistente visuelle Bearbeitung für alle Formen von AEM-Inhalten unterstützt: Die Bearbeitung im Kontext und die Layout-Komposition sind sowohl für Inhaltsfragmente als auch für Seitenkomponenten möglich. Die beiden Formen von Inhalten können sogar bearbeitet werden, wenn sie nebeneinander in einem Web-Erlebnis angezeigt werden, ohne dass die Autorinnen und Autoren den Kontext wechseln müssen. Dies ist eine enorme Verbesserung im Vergleich zu früheren AEM-Editoren, die nur eine Art von Inhalt unterstützten.
 
-Entwickler profitieren von der Vielseitigkeit des universellen Editors, da er auch eine echte Entkopplung der Implementierung unterstützt. Es ermöglicht Entwicklern die Verwendung praktisch jedes Frameworks oder jeder Architektur ihrer Wahl, ohne dass SDK- oder Technologiebeschränkungen auferlegt werden. Diese Flexibilität erleichtert sogar die Instrumentierung vorhandener Web-Apps für den universellen Editor, ohne dass diese neu strukturiert werden müssen.
+Entwicklerinnen und Entwickler profitieren von der Vielseitigkeit des universellen Editors, da er auch eine echte Entkopplung der Implementierung unterstützt. Damit können Entwicklerinnen und Entwickler praktisch jedes Framework oder jede Architektur ihrer Wahl nutzen, ohne dass sie SDK- oder Technologieeinschränkungen unterliegen. Diese Flexibilität erleichtert sogar die Instrumentierung vorhandener Web-Apps für den universellen Editor, ohne dass diese neu aufgebaut werden müssen.
 
 ## Wahrhaftig universell {#universal}
 
