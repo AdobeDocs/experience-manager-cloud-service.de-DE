@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
 workflow-type: tm+mt
 source-wordcount: '2321'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 ## Video zur Version {#release-video}
 
-Sehen Sie sich das Video Versionsübersicht vom März 2024 an, um eine Zusammenfassung der Funktionen zu erhalten, die in der Version 2024.3.0 hinzugefügt wurden:
+Werfen Sie einen Blick auf das Video „Versionsübersicht März 2024“ für eine Zusammenfassung der neuen Funktionen in der Version 2024.3.0:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
@@ -138,14 +138,14 @@ Diese Dienste ermöglichen Ihnen Folgendes:
 
   Sie können jetzt Interaktionen mit benutzerdefinierten Funktionen optimieren, indem Sie:
 
-   * [Nutzen neuer Anmerkungen für klarere Funktionsdefinitionen](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
-   * [Verwenden von Caching-Mechanismen für benutzerdefinierte Funktionen, was zu einer schnelleren Formularleistung führt](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
-   * [Nahtloses Arbeiten mit globalen Objekten in benutzerdefinierten Funktionen](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
-   * [Definieren und Verwenden optionaler Parameter in benutzerdefinierten Funktionen](/help/forms/create-and-use-custom-functions.md#parameter).
+   * [neue Anmerkungen nutzen, um klarere Funktionsdefinitionen bereitzustellen](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
+   * [Caching-Mechanismen für benutzerdefinierte Funktionen verwenden, was zu einer schnelleren Formular-Performance führt](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
+   * [nahtlos mit globalen Objekten in benutzerdefinierten Funktionen arbeiten](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+   * [optionale Parameter in benutzerdefinierten Funktionen definieren und verwenden](/help/forms/create-and-use-custom-functions.md#parameter).
 
   Diese Aktualisierung umfasst außerdem die folgenden Verbesserungen an der Funktionalität des Regeleditors. Sie haben folgende Möglichkeiten:
 
-   * Implementieren von leistungsstarken [&quot;when-then-else&quot;](/help/forms/rule-editor-core-components.md#when) Logik für die bedingte Ausführung.
+   * Implementieren Sie eine leistungsstarke [„Wenn-Dann-Sonst“-Logik](/help/forms/rule-editor-core-components.md#when) für die bedingte Ausführung.
    * Nutzen Sie moderne JavaScript-Funktionen wie Let- und Pfeilfunktionen (ES10-Unterstützung).
    * Validieren oder setzen Sie nicht nur Felder zurück, sondern auch ganze Bedienfelder und Formulare, um die Kontrolle über Benutzerinteraktionen zu erweitern.
 
