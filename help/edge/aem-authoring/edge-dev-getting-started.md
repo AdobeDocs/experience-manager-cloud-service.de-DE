@@ -6,7 +6,7 @@ exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 source-git-commit: 8bdca5357666841c4471170ab3b97476b6be63b6
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 87%
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ AEM bietet zwei verschiedene Inhaltseditoren, deren Auswahl von Ihrer Situation 
 * **Universeller Editor**: Dies sollte die Standardauswahl für neue Sites sein.
 * **AEM-Seiteneditor**: Dies sollte für eine bestehende AEM Sites-Migration in Edge Delivery Services ausgewählt werden.
 
-Dieses Handbuch konzentriert sich auf AEM-Projekte für Edge Delivery Services, die den universellen Editor verwenden. Siehe Dokument . [Verwenden von Edge Delivery Services mit AEM](/help/edge/using.md) für weitere Informationen zur Auswahl des richtigen Editors und zur Migration vorhandener AEM Sites zu Edge Delivery Services.
+Dieses Handbuch konzentriert sich auf AEM-Projekte für Edge Delivery Services, die den universellen Editor verwenden. Im Dokument [Verwenden von Edge Delivery Services mit AEM](/help/edge/using.md) finden Sie weitere Informationen zum Auswählen des richtigen Editors und zur Migration vorhandener AEM Sites in Edge Delivery Services.
 
 ## Grundlegende Konzepte bei der Entwicklung für Edge Delivery Services {#core-concepts}
 
@@ -111,7 +111,7 @@ Zunächst müssen Sie ein neues Projekt auf GitHub erstellen, das auf der Adobe-
 
    ![paths.json](assets/edge-dev-getting-started/paths.png)
 
-1. Die Standardzuordnung verwendet den Namen des Repositorys. Aktualisieren Sie die Standardzuordnung entsprechend den Anforderungen für Ihr Projekt mit `/content/<site-name>/:/` und klicken **Zusage von Änderungen...**.
+1. Die Standardzuordnung verwendet den Namen des Repositorys. Aktualisieren Sie die Standardzuordnung entsprechend den Anforderungen für Ihr Projekt mit `/content/<site-name>/:/` und klicken Sie auf **Änderungen übergeben…**.
 
    * Stellen Sie Ihren eigenen `<site-name>` bereit. Sie werden ihn in einem späteren Schritt benötigen.
    * Die Zuordnungen teilen Edge Delivery Services mit, wie der Inhalt in Ihrem AEM Repository der Site-URL zugeordnet werden soll.
@@ -192,11 +192,11 @@ Sobald Sie Ihre neue Site mit dem universellen Editor fertig bearbeitet haben, k
 
 ## Nächste Schritte {#next-steps}
 
-Nachdem Sie nun ein AEM Authoring mit Edge Delivery Services-Projekten haben, können Sie Ihre eigenen Bausteine erstellen und gestalten.
+Jetzt, da Sie über ein funktionierendes AEM-Authoring-Projekt mit Edge Delivery Services verfügen, können Sie Ihre eigenen Blöcke erstellen und gestalten.
 
 Weitere Informationen finden Sie in der Anleitung [Erstellen von für den universellen Editor instrumentierten Blöcken](/help/edge/aem-authoring/create-block.md).
 
 >[!TIP]
 >
->Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für AEM Authoring mit AEM als Inhaltsquelle aktiviert ist, finden Sie unter [Dieses AEM GEMs-Webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Eine End-to-End-Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für AEM-Authoring mit AEM as a Cloud Service als Inhaltsquelle aktiviert ist, finden Sie in [diesem AEM GEMs-Webinar.](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 

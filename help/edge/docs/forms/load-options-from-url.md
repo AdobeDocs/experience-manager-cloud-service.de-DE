@@ -1,16 +1,16 @@
 ---
-title: Dropdown-Listenoptionen aus URL laden
-description: Die Optionen der Dropdown-Liste sind in einer gesonderten Tabelle enthalten und werden dann über die angegebene URL in die primäre Tabelle importiert.
+title: Laden von Dropdown-Listenoptionen aus der URL
+description: Die Dropdown-Listenoptionen sind in einer gesonderten Tabelle enthalten und werden dann über die angegebene URL in die primäre Tabelle importiert.
 feature: Edge Delivery Services
 source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 3%
+ht-degree: 59%
 
 ---
 
 
-# Dropdown-Listenoptionen aus URL laden
+# Laden von Dropdown-Listenoptionen aus der URL
 
 Forms enthält häufig Dropdown-Menüs, aus denen Benutzer vordefinierte Optionen auswählen können. Diese Optionen werden normalerweise im Formular selbst definiert, aber die Verwaltung langer Listen kann schwerfällig sein. In diesem Handbuch wird beschrieben, wie Sie die Formularbearbeitung verbessern können, indem Sie Dropdown-Optionen aus einer separaten Tabelle über eine URL laden.
 
@@ -28,10 +28,10 @@ Die Vorteile des Ladens von Dropdown-Optionen aus einer separaten Tabelle sind:
 
 Am Ende dieses Artikels werden Sie Folgendes gelernt haben:
 
-* [Optionen in einer separaten Tabelle definieren](#define-options)
-* [URL hinzufügen, um Dropdown-Listenoptionen zu laden](#add-url)
+* [Definieren von Optionen in einer separaten Tabelle](#define-options)
+* [Hinzufügen einer URL, um Dropdown-Listenoptionen zu laden](#add-url)
 
-## Optionen in einem separaten Blatt definieren {#define-options}
+## Definieren von Optionen auf einem separaten Blatt {#define-options}
 
 Definieren von Optionen in einer separaten Tabelle
 
@@ -52,33 +52,34 @@ Definieren von Optionen in einer separaten Tabelle
 
    ![Dropdown-Liste für Land](/help/forms/assets/drop-down-country-options.png)
 
-1. Vorschau erstellen und veröffentlichen `shared-country` Tabellenblatt verwenden [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. Erstellen Sie eine Vorschau und veröffentlichen Sie das Blatt `shared-country` unter Verwendung von [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   Siehe URL, die die `shared-country` sheet: https://main—wefinance—wkndforms.hlx.live/inquiry.json?sheet=country
+   Die nachfolgende URL öffnet das Blatt `shared-country`: 
+https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country
 
 >[!NOTE]
 >
-> `?sheet=country` ist ein Abfrageparameter, der an die URL angehängt wird. Dieser Parameter gibt die JSON an, die basierend auf der `shared-country` Blatt. Es wird zur JSON-Datei umgeleitet, die Informationen zu verschiedenen Ländern enthält.
+> `?sheet=country` ist ein Abfrageparameter, der an die URL angehängt wird. Dieser Parameter gibt die auf dem Blatt `shared-country` basierende JSON-Datei an. Er leitet zur JSON-Datei um, die Informationen zu verschiedenen Ländern enthält.
 
-## URL hinzufügen, um Dropdown-Listenoptionen zu laden{#add-url}
+## Hinzufügen einer URL, um Dropdown-Listenoptionen zu laden{#add-url}
 
-Die `Options` -Eigenschaft eines `select` -Feld akzeptiert eine URL. Die URL gibt ein JSON-Array zurück, das als Optionen für die `Destination` Dropdown-Liste. So fügen Sie die URL zum Laden der Dropdown-Listenoptionen hinzu:
+Die `Options`-Eigenschaft eines `select`-Felds akzeptiert eine URL. Die URL gibt ein JSON-Array zurück, das als Optionen für die `Destination`-Dropdown-Liste verwendet wird. So fügen Sie die URL zum Laden der Dropdown-Listenoptionen hinzu:
 
-1. Wechseln Sie zu Ihrem AEM-Projektordner auf Microsoft® SharePoint oder Google Drive und öffnen Sie die Tabelle. Sie können auch eine neue Tabelle für ein Formular erstellen.
-1. URL kopieren von `shared-country` und fügen Sie es in das `Options` Spalte für die `Destination` -Feld.
+1. Wechseln Sie in Microsoft® SharePoint oder Google Drive zu Ihrem AEM-Projektordner und öffnen Sie die Kalkulationstabelle. Sie können auch eine neue Kalkulationstabelle für ein Formular erstellen.
+1. Kopieren Sie die URL des Blattes `shared-country` und fügen Sie sie in die Spalte `Options` für das Feld `Destination` ein.
 
    ![Abfragetabelle](/help/forms/assets/drop-down-enquiry.png)
 
-1. Erstellen Sie eine Vorschau und veröffentlichen Sie das Blatt mit [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. Zeigen Sie eine Vorschau an und veröffentlichen Sie das Blatt mithilfe von [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
 
    ![Dropdown-Liste für Land](/help/forms/assets/load-dropdown-options-form.png)
 
-Weitere Informationen finden Sie unter [Fragenübersicht](/help/forms/assets/enquiry-options.xlsx) , um die URL zum Laden der Dropdown-Listenoptionen hinzuzufügen.
+Um die URL zum Laden der Dropdown-Listenoptionen hinzuzufügen, rufen Sie die [Abfragetabelle](/help/forms/assets/enquiry-options.xlsx) auf.
 
-Nach der Integration der URL in die Formulardefinition zum Laden der Dropdown-Listenoptionen werden die Optionen für die `Destination` Dropdown-Liste beginnen, die über die URL angezeigt wird.
+Nach der Integration der URL in die Formulardefinition zum Laden der Dropdown-Listenoptionen beginnen die Optionen für die Dropdown-Liste `Destination` aus der URL zu erscheinen.
 
-Siehe URL unten, in der die Variable `enquiry` Formular mit den im separaten Blatt gespeicherten Optionen:
+Unter der nachstehenden URL finden Sie das `enquiry`-Formular, in dem die in einem separaten Blatt gespeicherten Optionen angezeigt werden:
 
 https://main--wefinance--wkndforms.hlx.live/enquiry-form
 
