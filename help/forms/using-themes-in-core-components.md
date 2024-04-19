@@ -3,10 +3,10 @@ title: Wie können Designs in adaptive Formularen erstellt und verwendet werden?
 description: Mithilfe von Designs können Sie ein adaptives Formular formatieren und ihm eine visuelle Identität verleihen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
-workflow-type: ht
-source-wordcount: '2610'
-ht-degree: 100%
+source-git-commit: 159407dfaa5d17caddca2953a5732f0e91eb474c
+workflow-type: tm+mt
+source-wordcount: '2754'
+ht-degree: 93%
 
 ---
 
@@ -128,7 +128,7 @@ Gehen Sie wie folgt vor, um ein Design zu klonen:
 1. Führen Sie den folgenden Befehl aus:
 
    ```
-         code .
+      code .
    ```
 
    ![Öffnen Sie den Design-Ordner in einem Texteditor.](/help/forms/assets/aem-forms-theme-folder-in-vs-code.png)
@@ -137,14 +137,31 @@ Gehen Sie wie folgt vor, um ein Design zu klonen:
 
 1. Öffnen Sie die Datei `package.json`, um sie zu bearbeiten.
 
-1. Legen Sie die Werte für die Attribute `name` und `description` fest.
+1. Legen Sie die Werte für die Attribute `name` und `version` fest.
 
-   Das Attribut „name“ wird verwendet, um das Design eindeutig zu identifizieren, z. B. „aem-forms-wknd-theme“, und wird auf der Registerkarte **Stil** des **Assistenten für die Formularerstellung** angezeigt. Das Attribut „description“ enthält zusätzliche Details zum Design, einschließlich seines Zwecks und der Szenarien, für die es entwickelt wurde. Sie können auch die Version, Beschreibung und Lizenz für das Design angeben.
+   ![Abbildung der Namensänderung des Canvas-Designs](/help/forms/assets/changename_canvastheme.png)
 
-1. Speichern und schließen Sie die Datei.
+   >[!NOTE]
+   >
+   > * Das Attribut name dient zur eindeutigen Identifizierung des Designs und der angegebene Name wird im **Stil** des **Assistent zum Erstellen von Formularen**.
+   > * Sie können je nach Wahl einen Namen für Ihr Design auswählen, beispielsweise `mytheme` oder `customtheme`. In diesem Fall haben wir jedoch den Namen als `aem-forms-wknd-theme`.
 
-![Abbildung der Namensänderung des Canvas-Designs](/help/forms/assets/changename_canvastheme.png)
+1. Öffnen Sie die Datei `package-lock.json`, um sie zu bearbeiten.
+1. Legen Sie die Werte für die `name` und `version` -Attribute. Stellen Sie sicher, dass die Werte für `name` und `version` -Attributen in `Package-lock`.json-Datei mit den Dateien in `Package.json` -Datei.
 
+   ![Abbildung der Namensänderung des Canvas-Designs](/help/forms/assets/changename_canvastheme-package-lock.png)
+
+1. (Optional) Öffnen Sie die `ReadMe` -Datei zum Bearbeiten und aktualisieren Sie den Namen des Designs.
+
+   ![Abbildung der Namensänderung des Canvas-Designs](/help/forms/assets/changename_canvastheme-readme-file.png)
+
+1. Speichern und schließen Sie die Dateien.
+
+**Überlegungen beim Festlegen des Designnamens**
+
+* Sie müssen die `@aemforms` aus dem Designnamen in `Package.json` Datei und `Package-lock.json` -Datei. Falls Sie die `@aemforms` von Ihrem benutzerdefinierten Designnamen aus, führt dies zum Fehler der Frontend-Pipeline während der Designbereitstellung.
+* Es wird empfohlen, das Design zu aktualisieren `version` in `Package.json` Datei und `Package-lock.json` -Datei, um Änderungen und Verbesserungen im Zeitverlauf für Ihr Design genau widerzuspiegeln.
+* Für wichtige Informationen zur Verwendung, zu Installationsanweisungen und anderen relevanten Details wird empfohlen, den Namen des Designs im Abschnitt `ReadMe` -Datei.
 
 #### 3. Anpassen eines Designs {#customize-the-theme}
 
