@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
-workflow-type: ht
-source-wordcount: '4881'
-ht-degree: 100%
+source-git-commit: f6c405c9a43b8b605405663a3c4bfa317cfb421b
+workflow-type: tm+mt
+source-wordcount: '4891'
+ht-degree: 99%
 
 ---
 
@@ -80,6 +80,7 @@ ht-degree: 100%
    + Wartungsversionshinweise zu AEMaaCS {#maintenance}
       + [Neueste Wartungversionshinweise](/help/release-notes/maintenance/latest.md)
       + 2024 {#2024}
+         + [Neueste Wartungversionshinweise für 2024.4.0](/help/release-notes/maintenance/2024/2024-4-0.md)
          + [Wartungsversionshinweise für 2024.3.0](/help/release-notes/maintenance/2024/2024-3-0.md)
       + 2023 {#2023}
          + [Wartungsversionshinweise für 2023.12.0](/help/release-notes/maintenance/2023/2023-12-0.md)
@@ -560,6 +561,7 @@ ht-degree: 100%
       + [Suchen und Finden von Assets](/help/assets/search-assets-view.md)
       + [Asset-Management-Aufgaben](/help/assets/manage-organize-assets-view.md)
       + [Bearbeiten von Bildern](/help/assets/edit-images-assets-view.md)
+      + [Anzeigen und Verwalten von Ausgabedarstellungen](/help/assets/renditions.md)
       + [Verwalten von Asset-Metadaten](/help/assets/metadata-assets-view.md)
       + [Freigeben von Assets](/help/assets/share-links-for-assets-view.md)
       + [Verwalten von Sammlungen](/help/assets/manage-collections-assets-view.md)
