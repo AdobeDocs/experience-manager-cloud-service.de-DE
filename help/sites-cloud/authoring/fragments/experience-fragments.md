@@ -2,10 +2,10 @@
 title: Experience Fragments
 description: Verwenden Sie Experience Fragments von Adobe Experience Manager as a Cloud Service, um Ihre Erlebnisse wiederverwendbar und flexibel zu gestalten.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 0784bfc2928b218a566fdd252fee045ca5ae6b9c
-workflow-type: ht
-source-wordcount: '2083'
-ht-degree: 100%
+source-git-commit: e9b9ab2dfd5e1a5b204cbec70ec0a46ebb46f9e9
+workflow-type: tm+mt
+source-wordcount: '2098'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ Ein Experience Fragment in Adobe Experience Manager as a Cloud Service:
 Ein Experience Fragment:
 
 * ist Teil eines Erlebnisses (Seite).
-* kann über mehrere Seiten hinweg verwendet werden.
+* Kann auf mehreren Seiten verwendet werden (basierend auf bearbeitbaren Vorlagen).
 * basiert auf einer (bearbeitbaren) Vorlage, die seine Struktur und Komponenten definiert.
 * Diese Vorlage wird verwendet, um die *Stammseite* des Experience Fragments zu erstellen.
 * besteht aus einer oder mehreren Komponenten mit Layout in einem Absatzsystem.
@@ -262,6 +262,10 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragments ers
 Sie können Ihr Experience Fragment jetzt beim Erstellen Ihrer Seiten verwenden:
 
 1. Öffnen Sie eine beliebige Seite, um sie zu bearbeiten.
+
+   >[!NOTE]
+   >
+   >Die Seite muss auf einer bearbeitbaren Vorlage basieren.
 
 1. Erstellen Sie eine Instanz der Experience Fragment-Komponente innerhalb des Seitenabsatzsystems:
 
