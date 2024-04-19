@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
 workflow-type: tm+mt
 source-wordcount: '2876'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -69,8 +69,8 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager au
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_estimate"
->title="Aufnahmedauer geschätzt"
->abstract="Eine ungefähre Dauer einer bestimmten Aufnahme kann angezeigt werden, um einen allgemeinen Eindruck darüber zu geben, wie lange sie dauern wird. Es gibt Einschränkungen hinsichtlich der Genauigkeit."
+>title="Geschätzte Aufnahmedauer"
+>abstract="Es kann eine ungefähre Dauer einer bestimmten Aufnahme angezeigt werden, um einen Eindruck davon zu vermitteln, wie viel Zeit sie in Anspruch nehmen wird. Allerdings gibt es Einschränkungen hinsichtlich der Genauigkeit."
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 
