@@ -2,10 +2,10 @@
 title: Traffic-Filterregeln, einschließlich WAF-Regeln
 description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 3a79de1cccdec1de4902b234dac3120efefdbce8
-workflow-type: ht
-source-wordcount: '3669'
-ht-degree: 100%
+source-git-commit: d210fed56667b307a7a816fcc4e52781dc3a792d
+workflow-type: tm+mt
+source-wordcount: '3788'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Eine Unterkategorie von Traffic-Filterregeln erfordert entweder eine Lizenz für
 
 Traffic-Filterregeln können über Cloud Manager-Konfigurations-Pipelines bereitgestellt werden, um Typen von Entwicklungs-, Staging- und Produktionsumgebungen in Produktionsprogrammen (ohne Sandbox) bereitzustellen. Die Unterstützung von RDEs wird in Zukunft verfügbar sein.
 
-[Durchlaufen Sie ein Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview?lang=de), um rasch konkrete Kenntnisse zu dieser Funktion zu erwerben.
+[Durchlaufen Sie ein Tutorial](#tutorial), um rasch konkrete Kenntnisse zu dieser Funktion zu erwerben.
 
 >[!NOTE]
 >Sie möchten andere Optionen zum Konfigurieren des Traffics im CDN nutzen, z. B. das Ändern der Anfrage/Antwort, das Deklarieren von Weiterleitungen und das Weiterleiten an eine AEM-fremde Quelle? Nehmen Sie am Early-Adopter-Programm teil, um [mehr über diese Funktion zu erfahren und sie auszuprobieren](/help/implementing/dispatcher/cdn-configuring-traffic.md).
@@ -416,6 +416,8 @@ Ratenbegrenzungsregeln können nicht auf WAF-Flags verweisen. Sie stehen allen K
 
 Die Ratenbegrenzungen werden pro CDN-POP berechnet. Nehmen wir beispielsweise an, POPs in Montreal, Miami und Dublin weisen Traffic-Raten von 80, 90 bzw. 120 Anfragen pro Sekunde auf und die Ratenbegrenzungsregel ist auf einen Grenzwert von 100 festgelegt. In diesem Fall wäre nur der Traffic nach Dublin begrenzt.
 
+Ratenbeschränkungen werden anhand von Traffic, der an der Kante ankommt, Traffic, der die Kante trifft, oder der Anzahl der Fehler bewertet.
+
 ### rateLimit-Struktur {#ratelimit-structure}
 
 | **Eigenschaft** | **Typ** | **Standard** | **BEDEUTUNG** |
@@ -423,6 +425,7 @@ Die Ratenbegrenzungen werden pro CDN-POP berechnet. Nehmen wir beispielsweise an
 | limit | Ganzzahl von 10 bis 10.000 | erforderlich | Anfragerate (pro CDN-POP) in Anfragen pro Sekunde, für die die Regel ausgelöst wird. |
 | window | Ganzzahl: 1, 10 oder 60 | 10 | Stichprobenfenster in Sekunden, für das die Anfragerate berechnet wird. Die Genauigkeit der Zähler hängt von der Größe des Fensters ab (ein größeres Fenster liefert höhere Genauigkeit). Beispielsweise kann man für das 1-Sekunden-Fenster eine Genauigkeit von 50 % und für das 60-Sekunden-Fenster eine Genauigkeit von 90 % erwarten. |
 | penalty | Ganzzahl von 60 bis 3600 | 300 (5 Minuten) | Ein Zeitraum in Sekunden, für den übereinstimmende Anfragen blockiert werden (auf die nächste Minute gerundet). |
+| Anzahl | all, fetch, error | alle | wird anhand des Edge-Traffics (all), des Ursprungs-Traffics (Abruf) oder der Anzahl der Fehler bewertet. |
 | groupBy | array[Getter] | keine | Der Zähler der Ratenbegrenzer wird durch eine Reihe von Anfrageeigenschaften aggregiert (z. B. clientIp). |
 
 
@@ -448,6 +451,7 @@ data:
         limit: 60
         window: 10
         penalty: 300
+        count: all
         groupBy:
           - reqProperty: clientIp
       action: block
@@ -469,7 +473,7 @@ data:
         when: { reqProperty: path, equals: /critical/resource }
         action:
           type: block
-        rateLimit: { limit: 100, window: 60, penalty: 60 }
+        rateLimit: { limit: 100, window: 60, penalty: 60, count: all }
 ```
 
 ## Warnhinweise für Traffic-Filterregeln {#traffic-filter-rules-alerts}
@@ -616,7 +620,7 @@ Adobe bietet einen Mechanismus zum Herunterladen von Dashboard-Tools auf Ihren C
 
 Dashboard-Tools können direkt aus dem GitHub-Repository [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) heruntergeladen werden.
 
-[Siehe das Tutorial](#tutorial) für konkrete Anweisungen zur Verwendung der Dashboard-Tools.
+[Tutorials](#tutorial) sind für konkrete Anweisungen zur Verwendung der Dashboard-Werkzeuge verfügbar.
 
 ## Empfohlene Anfangsregeln {#recommended-starter-rules}
 
@@ -701,9 +705,13 @@ data:
           - CMDEXE
 ```
 
-## Tutorial {#tutorial}
+## Tutorials {#tutorial}
 
-[Arbeiten Sie ein Tutorial durch](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=de), um praktische Kenntnisse und Erfahrungen im Zusammenhang mit Traffic-Filterregeln zu sammeln.
+Zwei Tutorials sind verfügbar.
+
+### Schutz von Websites mit Traffic-Filterregeln (einschließlich WAF-Regeln)
+
+[Arbeiten durch ein Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=de) allgemeine, praktische Kenntnisse und Erfahrungen im Zusammenhang mit Verkehrsfilterregeln, einschließlich WAF-Regeln, zu sammeln.
 
 Das Tutorial führt Sie durch Folgendes:
 
@@ -712,3 +720,16 @@ Das Tutorial führt Sie durch Folgendes:
 * Definieren von Traffic-Filterregeln, einschließlich WAF-Regeln
 * Analyse von Ergebnissen mit Dashboard-Tools
 * Best Practices
+
+### Blockieren von DoS- und DoS-Angriffen mithilfe von Traffic-Filterregeln
+
+[Deep-Dive-Informationen zum Blockieren](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Denial of Service- (DoS-) und Dezentralisierte Denial of Service- (DDoS-)Angriffe mithilfe von Traffic-Filterregeln für Ratenbegrenzungen und anderen Strategien.
+
+Das Tutorial führt Sie durch Folgendes:
+
+* Verstehen des Schutzes
+* Warnhinweise bei Überschreiten von Ratenbeschränkungen erhalten
+* Analyse von Traffic-Mustern mithilfe der Dashboard-Werkzeuge zum Konfigurieren von Schwellenwerten für Traffic-Filterregeln für die Ratenbegrenzung
+
+
+
