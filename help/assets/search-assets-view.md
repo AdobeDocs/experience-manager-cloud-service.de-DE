@@ -3,10 +3,10 @@ title: Erfahren Sie, wie man in der  [!DNL Assets view] Assets sucht und findet.
 description: Erfahren Sie, wie man in der AEM Assets-Ansicht Assets sucht und findet. Mit der leistungsstarken Suchfunktion können Sie schnell das passende Asset ermitteln und die Geschwindigkeit Ihrer Inhaltserstellung steigern.
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
-source-wordcount: '1543'
-ht-degree: 100%
+source-git-commit: bd3835980fcada20fbfe2551a5c15cc7c69a5c37
+workflow-type: tm+mt
+source-wordcount: '1908'
+ht-degree: 81%
 
 ---
 
@@ -239,6 +239,91 @@ Sie können eine Vorschau anzeigen, um das Layout und die Formatierung der Start
 1. Klicken Sie auf **[!UICONTROL Schließen]**, um den Vorschau-Bildschirm zu schließen. 
 
    ![Vorschau der Startseite für die erste Suche](assets/search-first-preview.gif)
+
+## Kontextsuche {#contextual-search}
+
+Sie können auch im Repository verfügbare Assets durchsuchen, indem Sie Textaufforderungen definieren. Experience Manager Assets wandelt diese Textaufforderungen automatisch in Suchfilter um und zeigt die Suchergebnisse an. Mithilfe des Bedienfelds &quot;Filter&quot;können Sie automatische Filter anzeigen und ändern, um die Suchergebnisse weiter einzugrenzen.
+
+### Zugriff auf die Kontextsuche {#access-contextual-search}
+
+So greifen Sie auf die Kontextsuche in Experience Manager Assets zu:
+
+1. Klicks **[!UICONTROL Suche]** im linken Bereich.
+
+   ![Kontextsuche](assets/access-contextual-search.png)
+
+1. Definieren Sie die Textaufforderung im Textfeld Suchen und klicken Sie auf **[!UICONTROL Kontextsuche]**.
+
+   ![Textaufforderung für Kontextsuche](assets/contextual-search-text-prompt.png)
+
+   [!DNL Experience Manager Assets] zeigt die Suchergebnisse an.
+
+
+### Unterstützte Filter {#supported-filters}
+
+Die Kontextsuche unterstützt standardmäßig die folgenden Filter. Stützen Sie Ihre Textanforderungen auf diese Filter, um die entsprechenden Suchergebnisse anzuzeigen.
+
+* Bildhöhe
+
+* Bildbreite
+
+* Dateityp: Bild, Dokument, Video oder Ordner.
+
+* MIME-Typ: JPG, PNG, TIFF, GIF, MP4, PDF, PPTX, DOCX oder XLSX
+
+* Erstellungsdatum
+
+* Änderungsdatum
+
+* Ablaufdatum
+
+* Asset-Status: Genehmigt, Abgelehnt oder alle
+
+* Abgelaufene Assets
+
+### Beispiele für die Textaufforderungen {#text-prompts-examples}
+
+**Beispiel 1**
+
+**Textaufforderung**: In diesem Monat erstellte Bilder.
+
+[!DNL Experience Manager Assets] wendet die folgenden Filter automatisch an und zeigt die Suchergebnisse an:
+
+![Beispiel einer Kontextsuche 1](assets/contextual-search-example1.png)
+
+**Beispiel 2**
+
+**Textaufforderung**: Bilder von mindestens 200px Höhe und 100px Breite mit Strand und klarem Himmel.
+
+[!DNL Experience Manager Assets] wendet die folgenden Filter automatisch an und zeigt die Suchergebnisse an:
+
+![Beispiel für eine Kontextsuche 2](assets/contextual-search-example2.png)
+
+**Beispiel 3**
+
+**Textaufforderung**: Ich brauche Bilder von blauem Himmel mit einer Höhe von 1500 und 2500 Pixel, die im letzten Monat erstellt wurden und noch nicht abgelaufen und genehmigt sind.
+
+[!DNL Experience Manager Assets] wendet die folgenden Filter automatisch an und zeigt die Suchergebnisse an:
+
+![Beispiel einer Kontextsuche 3](assets/contextual-search-example3.png)
+
+Das folgende Video zeigt, wie der durchgängige Prozess vom Zugriff auf die Benutzeroberfläche der kontextuellen Suche über die Definition von Textanforderungen bis hin zur Anzeige der Suchergebnisse reicht.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3428407)
+
+### Kontextsuche deaktivieren {#disable-contextual-search}
+
+Administratoren haben auch die Möglichkeit, die Kontextsuche für Benutzer in Ihrer Organisation zu deaktivieren. Führen Sie dazu die folgenden Schritte aus:
+
+1. Navigieren Sie zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**.
+
+1. Im [!UICONTROL Kontextsuche] -Abschnitt, deaktivieren Sie die **[!UICONTROL Kontextsuche für Ihre Organisation aktivieren]** Deaktivieren Sie die Funktion &quot;Kontextuelle Suche&quot;für alle Benutzer in Ihrer Organisation.
+
+### Feedback zur Kontextsuche {#contextual-search-feedback}
+
+Wenn Sie Feedback zur Funktion &quot;Kontextuelle Suche&quot;geben müssen, klicken Sie auf ![Symbol &quot;Kontextsuche&quot;](assets/do-not-localize/contextual-search-icon.png)  und klicken Sie auf das Symbol Feedback . Wählen Sie den Feedback-Typ aus, geben Sie den Betreff und die Beschreibung an und klicken Sie auf **[!UICONTROL Einsenden]**.
+
+![Feedback zur Kontextsuche](assets/contextual-search-feedback.png)
 
 ## Nächste Schritte {#next-steps}
 
