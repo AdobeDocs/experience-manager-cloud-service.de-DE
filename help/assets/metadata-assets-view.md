@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Tags in der Assets-Ansicht verwalten. Durch e
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
-source-wordcount: '1667'
-ht-degree: 100%
+source-git-commit: 9823bd8af9fce93c8f21495f720673d8b41595ed
+workflow-type: tm+mt
+source-wordcount: '1783'
+ht-degree: 93%
 
 ---
 
@@ -145,13 +145,27 @@ So weisen Sie ein Metadatenformular einem Ordner zu:
 
 2. Klicken Sie auf **[!UICONTROL Ordner zuweisen]**
 
-3. Wählen Sie den Ordner aus und klicken Sie auf **[!UICONTROL Zuweisen]**.
+3. Wählen Sie den Ordner aus und klicken Sie auf **[!UICONTROL Zuweisen]**. Sie können die Ordner auswählen, indem Sie auf die Ordnernamen klicken.
 
    ![Zuweisen eines Metadatenformulars zu einem Ordner](assets/assign-to-folder.png)
 
    Sie können auch zur Seite „Ordnerdetails“ navigieren und ein Metadatenformular aus den im rechten Bereich verfügbaren Ordnereigenschaften auswählen, um das Metadatenformular dem Ordner zuzuweisen.
 
    ![Metadatenformular aus Ordnereigenschaften](assets/metadata-from-folder-props.png)
+
+### Metadatenformular aus Ordnern entfernen {#remove-metadata-form-folder}
+
+Nachdem Sie ein Metadatenformular einem oder mehreren Ordnern zugewiesen haben, können Sie mit Experience Manager Assets auch das Metadatenformular aus den ausgewählten Ordnern entfernen.
+
+So entfernen Sie ein Metadatenformular aus einem Ordner:
+
+1. Navigieren Sie zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Metadatenformulare]** und wählen Sie ein Metadatenformular aus.
+
+1. Klicks **[!UICONTROL Aus Ordner entfernen]**. Die Liste der zugewiesenen Ordner für die Anzeige des Metadatenformulars.
+
+1. Wählen Sie den Ordner aus und klicken Sie auf **[!UICONTROL Entfernen]**. Sie können auch mehrere Ordner aus der Liste auswählen.
+
+Sie können auch zur Seite mit den Ordnerdetails navigieren und **[!UICONTROL Systemzugeordnete Metadatenformulare]** aus dem **[!UICONTROL Metadaten-Forms]** -Feld, um das zugewiesene Metadatenformular aus einem Ordner zu entfernen.
 
 ## Nächste Schritte {#next-steps}
 
