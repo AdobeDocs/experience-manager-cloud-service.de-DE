@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Tags in der Assets-Ansicht verwalten. Durch e
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
-source-git-commit: 9823bd8af9fce93c8f21495f720673d8b41595ed
+source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
 workflow-type: tm+mt
 source-wordcount: '1783'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -17,7 +17,7 @@ Metadaten sind Daten oder Beschreibungen zu den Daten. Beispielsweise können Ih
 
 Mit Metadaten können Sie Assets genauer einteilen. Außerdem erweisen sie sich als nützlich, wenn die Menge digitaler Daten ansteigt. Es ist möglich, einige Hundert Dateien zu verwalten, die nur auf den Dateinamen, den Miniaturbildern und dem Speicherbedarf basieren. Dieser Ansatz ist jedoch nicht skalierbar. Er reicht nicht aus, wenn die Zahl der beteiligten Personen und die Zahl der verwalteten Assets steigt.
 
-Durch das Hinzufügen von Metadaten steigt der Wert eines digitalen Assets, da das Asset folgende Eigenschaften aufweist:
+Mit dem Hinzufügen von Metadaten steigt der Wert eines digitalen Assets, da das Asset folgendermaßen aussieht:
 
 * besser zugänglich – Systeme und Benutzer können es leicht finden.
 * einfacher zu verwalten – Sie können Assets mit denselben Eigenschaften einfacher finden und Änderungen auf sie anwenden.

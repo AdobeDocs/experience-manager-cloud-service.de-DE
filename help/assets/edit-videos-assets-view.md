@@ -2,9 +2,9 @@
 title: Bearbeiten von Videos
 description: Bearbeiten von Videos mit [!DNL Adobe Express] Unterstützte Optionen und aktualisierte Videos als Versionen speichern.
 role: User
-source-git-commit: dd67ce6fd8d0626db5518a39dd5ed472ddfeff93
+source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '753'
 ht-degree: 19%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 19%
 Das Konvertieren eines Videos in eine perfekte Größe ist einfach mit eingebetteten [!DNL Adobe Express] Schnellaktionen. Schnellaktionen in [!DNL Assets Essentials] mit Strom [!DNL Adobe Express] bietet benutzerfreundliche Videobearbeitungsoptionen, einschließlich Zuschneiden von Videos, Größenanpassung von Videos, Zuschneiden von Videos und Konvertieren von Videos in GIF.
 
 Nach der Bearbeitung eines Videos können Sie das neue Video als neue Version speichern. Mit der Versionierung können Sie bei Bedarf später zum Original-Asset zurückkehren. Um ein Video zu bearbeiten, navigieren Sie zu den Details des Videos und klicken Sie auf **[!UICONTROL Video bearbeiten]**. Alternativ können Sie das Asset auswählen und auf Details klicken und dann auf ![Schere](assets/do-not-localize/cut.svg) im rechten Bereich.
-
-Weitere Informationen zum [Vorschaufunktion](navigate-assets-view.md).
 
 ## Voraussetzungen {#prerequisites}
 
