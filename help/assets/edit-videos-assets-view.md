@@ -2,18 +2,19 @@
 title: Bearbeiten von Videos
 description: Bearbeiten von Videos mit [!DNL Adobe Express] Unterstützte Optionen und aktualisierte Videos als Versionen speichern.
 role: User
-source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
+exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
+source-git-commit: 6eb9cfbb463fc976c9101acb434b3b39131c8067
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 19%
+source-wordcount: '779'
+ht-degree: 16%
 
 ---
 
 # Bearbeiten von Videos in [!DNL Assets Essentials] {#edit-videos}
 
-Das Konvertieren eines Videos in eine perfekte Größe ist einfach mit eingebetteten [!DNL Adobe Express] Schnellaktionen. Schnellaktionen in [!DNL Assets Essentials] mit Strom [!DNL Adobe Express] bietet benutzerfreundliche Videobearbeitungsoptionen, einschließlich Zuschneiden von Videos, Größenanpassung von Videos, Zuschneiden von Videos und Konvertieren von Videos in GIF.
+Das Erstellen von Varianten von Videoinhalten ist für Assets-Benutzer mit der eingebetteten [!DNL Adobe Express] Schnellaktionen für Videos. Schnellaktionen in [!DNL Assets Essentials] mit Strom [!DNL Adobe Express] bietet benutzerfreundliche Videobearbeitungsoptionen, einschließlich Zuschneiden von Videos, Größenanpassung von Videos, Zuschneiden von Videos und Konvertieren von Videos in GIF.
 
-Nach der Bearbeitung eines Videos können Sie das neue Video als neue Version speichern. Mit der Versionierung können Sie bei Bedarf später zum Original-Asset zurückkehren. Um ein Video zu bearbeiten, navigieren Sie zu den Details des Videos und klicken Sie auf **[!UICONTROL Video bearbeiten]**. Alternativ können Sie das Asset auswählen und auf Details klicken und dann auf ![Schere](assets/do-not-localize/cut.svg) im rechten Bereich.
+Um ein Video zu bearbeiten, navigieren Sie zu den Details des Videos und klicken Sie auf [!UICONTROL Video bearbeiten]. Alternativ können Sie das Asset auswählen und auf Details klicken und dann auf ![Schere](assets/do-not-localize/cut.svg) im rechten Bereich. Nach dem Bearbeiten eines Videos können Sie das neue Video als neue Version oder als neues Asset speichern.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -38,7 +39,7 @@ Sie können unerwünschte Teile aus dem Video mithilfe von eingebetteten [!DNL A
 
 ### Größe des Videos ändern {#resize-video-using-express}
 
-Die Größenanpassung eines Videos auf eine bestimmte Größe ist ein beliebtes Anwendungsbeispiel. [!DNL Assets Essentials] ermöglicht Ihnen, die Größe des Videos schnell an die gemeinsamen Abmessungen anzupassen, indem Sie vorab berechnete neue Auflösungen für bestimmte Größen bereitstellen. So ändern Sie die Größe des Videos mit [!DNL Assets Essentials]führen Sie die folgenden Schritte aus:
+Die Größe des endgültigen Videoinhalts im DAM muss oft geändert werden, um an bestimmte Kanäle verteilt zu werden. [!DNL Assets Essentials] Sie können die Größe des Videos einfach an die für allgemeine soziale Kanäle erforderlichen Abmessungen anpassen und die Größe auch an benutzerdefinierte Auflösungen anpassen. So ändern Sie die Größe des Videos mit [!DNL Assets Essentials]führen Sie die folgenden Schritte aus:
 
 1. Video auswählen und auf **[!UICONTROL Bearbeiten]**.
 2. Klicks **[!UICONTROL Größe von Videos ändern]** über die im linken Bereich verfügbaren Schnellaktionen.
@@ -52,7 +53,7 @@ Ihr in der Größe angepasstes Video kann heruntergeladen werden. Sie können da
 
 ### Video zuschneiden {#trim-video-using-express}
 
-Schnellere Videobeschneidung [!DNL Assets Essentials] mit Strom [!DNL Adobe Express] ermöglicht Ihnen, Videos mühelos zu beschneiden. Führen Sie die folgenden Schritte aus:
+Wenn Sie einen Clip eines größeren Videos verwenden müssen, können Sie die **[!UICONTROL Trim-Video]** -Funktion zum Auswählen und Zuschneiden eines Bereichs des Videos. Führen Sie die folgenden Schritte aus:
 
 1. Video auswählen und auf **[!UICONTROL Bearbeiten]**.
 2. Klicks **[!UICONTROL Trim-Video]** über die im linken Bereich verfügbaren Schnellaktionen.
@@ -80,11 +81,11 @@ Ihr Video ist als GIF-Format zum Download verfügbar. Sie können das bearbeitet
 
 ## Einschränkungen {#limitations-video-adobe-express}
 
-* Es wird nur der MP4-Videotyp unterstützt.
+* Nur Videos im MP4-Format werden zur Bearbeitung unterstützt.
 
-* Maximale Dateigröße: 200 MB
+* Die maximal unterstützte Quelldateigröße beträgt 200 MB.
 
-* Die Mindest- und Maximalabmessungen des Videos sind 46 Pixel bzw. 3840 Pixel.
+* Unterstützte Videos sind auf jeder Seite größer als 46 Pixel und kleiner als 3840 Pixel.
 
 * Unterstützte Webbrowser sind Google Chrome, Firefox, Safari und Edge.
 
