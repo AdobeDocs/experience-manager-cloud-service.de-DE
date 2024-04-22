@@ -2,10 +2,10 @@
 title: Zugreifen auf und Verwalten von Protokollen
 description: Erfahren Sie, wie Sie auf Protokolle zugreifen und diese verwalten können, um Ihren Entwicklungsprozess in AEM as a Cloud Service zu unterstützen.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 178af74512e74ff401588b68c73fa4661acec704
-workflow-type: ht
-source-wordcount: '346'
-ht-degree: 100%
+source-git-commit: fa28d2fa83fb35fe80692c5f94661fa4c32a02a9
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 98%
 
 ---
 
@@ -15,6 +15,8 @@ ht-degree: 100%
 Erfahren Sie, wie Sie auf Protokolle zugreifen und diese verwalten können, um Ihren Entwicklungsprozess in AEM as a Cloud Service zu unterstützen.
 
 Sie können über die Karte **Umgebungen** auf der Seite **Überblick** oder der Seite „Umgebungsdetails“ auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
+
+Protokolle werden sieben Tage lang aufbewahrt.
 
 ## Herunterladen von Protokollen {#download-logs}
 
