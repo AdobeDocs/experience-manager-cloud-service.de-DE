@@ -2,10 +2,10 @@
 title: Traffic-Filterregeln, einschließlich WAF-Regeln
 description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: d210fed56667b307a7a816fcc4e52781dc3a792d
+source-git-commit: d118cd57370a472dfe752c6ce7e332338606b898
 workflow-type: tm+mt
-source-wordcount: '3788'
-ht-degree: 96%
+source-wordcount: '3817'
+ht-degree: 94%
 
 ---
 
@@ -143,7 +143,10 @@ data:
   trafficFilters:
     rules:
       - name: "path-rule"
-        when: { reqProperty: path, equals: /block-me }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /block-me }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
@@ -252,6 +255,7 @@ Die `wafFlags`-Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln v
 | SQLI | SQL-Injektion | SQL-Injektion ist der Versuch, durch die Ausführung beliebiger Datenbankabfragen Zugriff auf eine Anwendung zu erhalten oder privilegierte Informationen zu erhalten. |
 | BACKDOOR | Backdoor | Ein Backdoor-Signal ist eine Anfrage, die versucht festzustellen, ob eine gemeinsame Backdoor-Datei auf dem System vorhanden ist. |
 | CMDEXE | Befehlsausführung | Befehlsausführung ist der Versuch, durch beliebige Systembefehle mithilfe von Benutzereingaben die Kontrolle über ein Zielsystem zu erlangen oder ein Zielsystem zu beschädigen. |
+| CMDEXE-NO-BIN | Befehlsausführung, außer bei `/bin/` | Gewährleistung des gleichen Schutzniveaus wie `CMDEXE` beim Deaktivieren von false-positiv auf `/bin` aufgrund AEM Architektur. |
 | XSS | Cross-Site-Scripting | Cross-Site-Scripting ist der Versuch, das Konto einer Benutzerin oder eines Benutzers oder die Webbrowsing-Sitzung durch schädlichen JavaScript-Code zu ersetzen. |
 | TRAVERSAL | Verzeichnistraversierung | Verzeichnistraversierung ist der Versuch, in einem System durch privilegierte Ordner zu navigieren, in der Hoffnung, vertrauliche Informationen zu erhalten. |
 | USERAGENT | Angriffs-Tooling | Angriffs-Tooling ist der Einsatz automatisierter Software zur Identifizierung von Sicherheitslücken oder zum Versuch, eine entdeckte Anfälligkeit auszunutzen. |
@@ -331,7 +335,7 @@ data:
 
 **Beispiel 3**
 
-Diese Regel blockiert Anfragen, die den Abfrageparameter `foo` enthalten, erlaubt jedoch jede Anfrage von der IP 192.168.1.1:
+Diese Regel blockiert Veröffentlichungsanfragen, die den Abfrageparameter enthalten `foo`, aber erlaubt jede Anfrage von IP 192.168.1.1:
 
 ```
 kind: "CDN"
@@ -342,7 +346,10 @@ data:
   trafficFilters:
     rules:
       - name: "block-request-that-contains-query-parameter-foo"
-        when: { queryParam: url-param, equals: foo }
+        when:
+          allOf:
+            - { queryParam: url-param, equals: foo }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
       - name: "allow-all-requests-from-ip"
@@ -353,7 +360,7 @@ data:
 
 **Beispiel 4**
 
-Diese Regel blockiert Anfragen an den Pfad `/block-me` und blockiert alle Anfragen, die mit einem `SQLI`- oder `XSS`-Muster übereinstimmen. Dieses Beispiel enthält eine WAF-Traffic-Filterregel, die auf [WAF-Flags](#waf-flags-list) `SQLI` und `XSS` verweist und daher eine separate Lizenz erfordert.
+Diese Regel blockiert Anforderungen an den Pfad `/block-me` auf der Veröffentlichungsinstanz und blockiert alle Anforderungen, die mit einer `SQLI` oder `XSS` Muster. Dieses Beispiel enthält eine WAF-Traffic-Filterregel, die auf [WAF-Flags](#waf-flags-list) `SQLI` und `XSS` verweist und daher eine separate Lizenz erfordert.
 
 ```
 kind: "CDN"
@@ -364,7 +371,10 @@ data:
   trafficFilters:
     rules:
       - name: "path-rule"
-        when: { reqProperty: path, equals: /block-me }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /block-me }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
@@ -416,7 +426,7 @@ Ratenbegrenzungsregeln können nicht auf WAF-Flags verweisen. Sie stehen allen K
 
 Die Ratenbegrenzungen werden pro CDN-POP berechnet. Nehmen wir beispielsweise an, POPs in Montreal, Miami und Dublin weisen Traffic-Raten von 80, 90 bzw. 120 Anfragen pro Sekunde auf und die Ratenbegrenzungsregel ist auf einen Grenzwert von 100 festgelegt. In diesem Fall wäre nur der Traffic nach Dublin begrenzt.
 
-Ratenbeschränkungen werden anhand von Traffic, der an der Kante ankommt, Traffic, der die Kante trifft, oder der Anzahl der Fehler bewertet.
+Ratenbeschränkungen werden anhand von Traffic, der die Kante trifft, Traffic, der die Quelle trifft, oder der Anzahl der Fehler bewertet.
 
 ### rateLimit-Struktur {#ratelimit-structure}
 
@@ -425,7 +435,7 @@ Ratenbeschränkungen werden anhand von Traffic, der an der Kante ankommt, Traffi
 | limit | Ganzzahl von 10 bis 10.000 | erforderlich | Anfragerate (pro CDN-POP) in Anfragen pro Sekunde, für die die Regel ausgelöst wird. |
 | window | Ganzzahl: 1, 10 oder 60 | 10 | Stichprobenfenster in Sekunden, für das die Anfragerate berechnet wird. Die Genauigkeit der Zähler hängt von der Größe des Fensters ab (ein größeres Fenster liefert höhere Genauigkeit). Beispielsweise kann man für das 1-Sekunden-Fenster eine Genauigkeit von 50 % und für das 60-Sekunden-Fenster eine Genauigkeit von 90 % erwarten. |
 | penalty | Ganzzahl von 60 bis 3600 | 300 (5 Minuten) | Ein Zeitraum in Sekunden, für den übereinstimmende Anfragen blockiert werden (auf die nächste Minute gerundet). |
-| Anzahl | all, fetch, error | alle | wird anhand des Edge-Traffics (all), des Ursprungs-Traffics (Abruf) oder der Anzahl der Fehler bewertet. |
+| Anzahl | all, fetts, errors | alle | wird anhand des Edge-Traffics (alles), des Ursprungs-Traffics (Abrufe) oder der Anzahl der Fehler (Fehler) bewertet. |
 | groupBy | array[Getter] | keine | Der Zähler der Ratenbegrenzer wird durch eine Reihe von Anfrageeigenschaften aggregiert (z. B. clientIp). |
 
 
@@ -459,7 +469,7 @@ data:
 
 **Beispiel 2**
 
-Blockiert Anfragen für 60 Sekunden für den Pfad /critical/resource, wenn er in den letzten 60 Sekunden durchschnittlich 100 Anfragen/Sek. (pro CDN-POP) überschreitet:
+Blockanfragen für Pfade /critical/resource für 60 s, wenn sie im Zeitfenster von 10 Sekunden einen Durchschnittswert von 100 Anforderungen an den Ursprung pro Sekunde (pro CDN POP) überschreiten:
 
 ```
 kind: "CDN"
@@ -470,10 +480,13 @@ data:
   trafficFilters:
     rules:
       - name: rate-limit-example
-        when: { reqProperty: path, equals: /critical/resource }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /critical/resource }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
-        rateLimit: { limit: 100, window: 60, penalty: 60, count: all }
+        rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
 
 ## Warnhinweise für Traffic-Filterregeln {#traffic-filter-rules-alerts}
@@ -498,7 +511,10 @@ data:
   trafficFilters:
     rules:
       - name: "path-rule"
-        when: { reqProperty: path, equals: /block-me }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /block-me }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
           experimental_alert: true
@@ -634,14 +650,28 @@ metadata:
 data:
   trafficFilters:
     rules:
-    #  Block client for 5m when it exceeds 100 req/sec on a time window of 1sec
-    - name: limit-requests-client-ip
+    #  Block client for 5m when it exceeds an average of 100 req/sec to origin on a time window of 10sec
+    - name: limit-origin-requests-client-ip
       when:
-        reqProperty: path
-        like: '*'
+        reqProperty: tier
+        equals: 'publish'
       rateLimit:
         limit: 100
-        window: 1
+        window: 10
+        count: fetches
+        penalty: 300
+        groupBy:
+          - reqProperty: clientIp
+      action: log
+    #  Block client for 5m when it exceeds an average of 500 req/sec on a time window of 10sec
+    - name: limit-requests-client-ip
+      when:
+        reqProperty: tier
+        equals: 'publish'
+      rateLimit:
+        limit: 500
+        window: 10
+        count: all
         penalty: 300
         groupBy:
           - reqProperty: clientIp
@@ -650,7 +680,7 @@ data:
     - name: block-ofac-countries
       when:
         allOf:
-          - { reqProperty: tier, equals: publish }
+          - { reqProperty: tier, in: ["author", "publish"] }
           - reqProperty: clientCountry
             in:
               - SY
@@ -670,39 +700,23 @@ data:
     - name: block-waf-flags-globally
       when:
         reqProperty: tier
-        matches: "author|publish"
+        in: ["author", "publish"]
       action:
         type: log
         wafFlags:
+          - TRAVERSAL
+          - CMDEXE-NO-BIN
+          - XSS
+          - LOG4J-JNDI
+          - BACKDOOR
+          - USERAGENT
+          - SQLI
           - SANS
           - TORNODE
           - NOUA
           - SCANNER
-          - USERAGENT
           - PRIVATEFILE
-          - ABNORMALPATH
-          - TRAVERSAL
           - NULLBYTE
-          - BACKDOOR
-          - LOG4J-JNDI
-          - SQLI
-          - XSS
-          - CODEINJECTION
-          - CMDEXE
-          - NO-CONTENT-TYPE
-          - UTF8
-    # Disable protection against CMDEXE on /bin (only works if WAF is licensed enabled for your environment)
-    - name: allow-cdmexe-on-root-bin
-      when:
-        allOf:
-          - reqProperty: tier
-            matches: "author|publish"
-          - reqProperty: path
-            matches: "^/bin/.*"
-      action:
-        type: allow
-        wafFlags:
-          - CMDEXE
 ```
 
 ## Tutorials {#tutorial}
