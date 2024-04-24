@@ -5,7 +5,7 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: d118cd57370a472dfe752c6ce7e332338606b898
 workflow-type: tm+mt
 source-wordcount: '3817'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -636,7 +636,7 @@ Adobe bietet einen Mechanismus zum Herunterladen von Dashboard-Tools auf Ihren C
 
 Dashboard-Tools können direkt aus dem GitHub-Repository [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) heruntergeladen werden.
 
-[Tutorials](#tutorial) sind für konkrete Anweisungen zur Verwendung der Dashboard-Werkzeuge verfügbar.
+Für konkrete Anweisungen zum Verwenden der Dashboard-Tools verfügbar sind [Tutorials](#tutorial) verfügbar.
 
 ## Empfohlene Anfangsregeln {#recommended-starter-rules}
 
@@ -725,9 +725,9 @@ Zwei Tutorials sind verfügbar.
 
 ### Schutz von Websites mit Traffic-Filterregeln (einschließlich WAF-Regeln)
 
-[Arbeiten durch ein Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=de) allgemeine, praktische Kenntnisse und Erfahrungen im Zusammenhang mit Verkehrsfilterregeln, einschließlich WAF-Regeln, zu sammeln.
+[Arbeiten Sie ein Tutorial durch](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=de), um allgemeine, praktische Kenntnisse und Erfahrungen im Zusammenhang mit Traffic-Filterregeln zu sammeln, einschließlich WAF-Regeln.
 
-Das Tutorial führt Sie durch Folgendes:
+Das Tutorial führt Sie durch folgende Themen:
 
 * Einrichten der Konfigurations-Pipeline für Cloud Manager
 * Verwenden von Tools zur Simulation von schädlichem Traffic
@@ -735,15 +735,15 @@ Das Tutorial führt Sie durch Folgendes:
 * Analyse von Ergebnissen mit Dashboard-Tools
 * Best Practices
 
-### Blockieren von DoS- und DoS-Angriffen mithilfe von Traffic-Filterregeln
+### Blockieren von DoS- und DDoS-Angriffen mithilfe von Traffic-Filterregeln
 
-[Deep-Dive-Informationen zum Blockieren](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Denial of Service- (DoS-) und Dezentralisierte Denial of Service- (DDoS-)Angriffe mithilfe von Traffic-Filterregeln für Ratenbegrenzungen und anderen Strategien.
+[Umfassende Informationen zum Blockieren](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) von DoS- (Denial of Service) und DDoS-Angriffen (Distributed Denial of Service) mithilfe von Traffic-Filterregeln mit Ratenbegrenzungen und anderen Strategien.
 
-Das Tutorial führt Sie durch Folgendes:
+Das Tutorial führt Sie durch folgende Themen:
 
-* Verstehen des Schutzes
-* Warnhinweise bei Überschreiten von Ratenbeschränkungen erhalten
-* Analyse von Traffic-Mustern mithilfe der Dashboard-Werkzeuge zum Konfigurieren von Schwellenwerten für Traffic-Filterregeln für die Ratenbegrenzung
+* Grundlegendes zum Schutz
+* Erhalten von Warnungen beim Überschreiten von Ratenbegrenzungen
+* Analysieren von Traffic-Mustern mithilfe von Dashboard-Tools, um Schwellenwerte für Traffic-Filterregeln mit Ratenbegrenzungen zu konfigurieren
 
 
 
