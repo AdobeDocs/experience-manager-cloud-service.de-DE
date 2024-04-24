@@ -2,16 +2,20 @@
 title: Aufzeichnen einer Transaktion für benutzerdefinierte Implementierungen
 description: Verwenden der TransactionRecorder-API, um Aktionen aufzuzeichnen, die nicht automatisch als Transaktionen gezählt werden
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
+exl-id: cb584f78-30af-4a58-be99-843352e8249c
+source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 85%
+source-wordcount: '193'
+ht-degree: 86%
 
 ---
 
 # Aufzeichnen einer Transaktion für benutzerdefinierte Implementierungen {#record-a-transaction-for-custom-implementations}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-osgi/record-transaction-custom-implementation) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 Verwenden Sie die TransactionRecorder-API, um Aktionen aufzuzeichnen, die nicht automatisch als Transaktionen erfasst werden.
 
@@ -88,4 +92,3 @@ $.ajax({
 ## Ähnliche Artikel {#related-articles}
 
 * [Abrechenbare APIs für Transaktionsberichte](/help/forms/transaction-reports-billable-apis.md)
-
