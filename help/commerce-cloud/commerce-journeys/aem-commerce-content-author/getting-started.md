@@ -2,10 +2,10 @@
 title: Erste Schritte mit CIF-Authoring
 description: Erste Schritte mit CIF-Authoring.
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '778'
-ht-degree: 100%
+source-git-commit: 6f27c968c347e6b2be8c9bfcf9bb69e531d10ff9
+workflow-type: tm+mt
+source-wordcount: '781'
+ht-degree: 94%
 
 ---
 
@@ -23,13 +23,13 @@ Dieser Artikel baut auf diesen Grundlagen auf.
 
 In diesem Dokument erfahren Sie, wie Sie CIF für das Authoring in Content and Commerce verwenden. Nach dem Lesen sollten Sie Folgendes können:
 
-* Grundlegendes zu den Konzepten des CIF-Authorings mit dem universellen Editor
+* Grundlegendes zu den Konzepten CIF Authoring mit dem Seiten-Editor in AEM
 * Zugreifen auf Produktkatalogdaten in AEM mithilfe von Produkt- und Kategorieauswahlelementen
 * Zugreifen auf Inhalts- und Commerce-Daten mithilfe des Produkt-Cockpits und AEM Omnisearch
 
-## CIF-Authoring im universellen Editor {#cif-authoring}
+## CIF Authoring im AEM Seiten-Editor {#cif-authoring}
 
-CIF erweitert den universellen Editor mit Funktionen, um auf die Echtzeit-Produktdaten zuzugreifen, ohne den Kontext zu verlassen:
+CIF erweitert den Seiteneditor in AEM um Funktionen, mit denen Sie auf die Echtzeit-Produktdaten zugreifen können, ohne den Kontext zu verlassen:
 
 Öffnen Sie das seitliche Bedienfeld und wählen Sie „Produkte“ aus der Dropdown-Liste aus.
 ![Produkttyp auswählen](assets/asset-finder-overview.png)
@@ -95,7 +95,7 @@ Omnisearch führt eine Volltextsuche im Commerce-Backend durch, um alle zugehör
 
 Nachdem Sie nun diesen Teil der Tour abgeschlossen haben, sollten Sie:
 
-* Grundlegendes zu den Konzepten des CIF-Authorings mit dem universellen Editor
+* Grundlegendes zu den Konzepten CIF Authoring mit dem Seiten-Editor
 * Zugreifen auf den Produktkatalog in AEM mithilfe von Produkt- und Kategorieauswahlelementen
 * Zugreifen auf Inhalts- und Commerce-Daten mithilfe des Produkt-Cockpits und AEM Omnisearch
 
