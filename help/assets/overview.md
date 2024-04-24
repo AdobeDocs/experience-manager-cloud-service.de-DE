@@ -1,19 +1,19 @@
 ---
-title: Einführung in Assets as a [!DNL Cloud Service]
-description: Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können.
+title: Adobe Asset Management (DAM) mithilfe von AEM
+description: Erfahren Sie, wie Sie Adobe Digital Asset Management (DAM) mit Experience Manager Assets as a Cloud Service verwenden und verwalten.
 contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: ht
-source-wordcount: '892'
-ht-degree: 100%
+source-git-commit: d66d645dd039189b34e6e3c4d937b82a14b8b801
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Neu: Assets as a [!DNL Cloud Service] {#assets-cloud-service-introduction}
+# Neu: Assets als [!DNL Cloud Service] für Digital Asset Management in AEM {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -23,13 +23,13 @@ Die gleichzeitige Erfassung vieler oder komplexer Assets ist eine ressourceninte
 
 Unternehmen benötigen Unterstützung für eine Vielzahl von Dateiformaten und Inhaltsauflösungen für Anwendungen in geräte-, standort- und sprachübergreifende Anwendungsfällen. Die Verarbeitungs- und Speicheranforderungen von Assets erfordern Ressourcen und Funktionen, die herkömmliche Lösungen überfordern können. In einigen Fällen verhindern technische Beschränkungen bei der Asset-Verarbeitung, dass die gewünschten Ergebnissen erzielt werden. In anderen Fällen schmälern die Speicherkosten die Gewinnspanne.
 
-Zunächst ist es wichtig, die [Vorteile von Cloud-nativen Lösungen](#solution-benefits) zu verstehen. Werfen Sie einen genaueren Blick auf die wesentlichen [Änderungen an Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md), die sich auch auf Experience Manager Assets auswirken, gefolgt von den wesentlichen [Änderungen an Assets](/help/assets/assets-cloud-changes.md).
+Beginnen Sie mit den [Vorteile eines Cloud-nativen Angebots](#solution-benefits) für Digital Asset Management. Werfen Sie einen genaueren Blick auf die wesentlichen [Änderungen an Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md), die sich auch auf Experience Manager Assets auswirken, gefolgt von den wesentlichen [Änderungen an Assets](/help/assets/assets-cloud-changes.md).
 
 Machen Sie sich außerdem mit den [Details der neuen Assets-Funktionen](#whats-new-assets) und [bekannten Problemen](/help/release-notes/maintenance/latest.md) vertraut. Der Liste [veralteter oder entfernter Funktionen](/help/release-notes/deprecated-removed-features.md) können Sie entnehmen, was mit dieser Version entfernt wird. Und schließlich finden Sie in diesem [Glossar](/help/overview/terminology.md) Erläuterungen zu Experience Manager-Begriffen.
 
 ## Vorteile der Lösung {#solution-benefits}
 
-Im Folgenden werden die wichtigsten Vorteile von Assets as a [!DNL Cloud Service] beschrieben. Weitere Informationen finden Sie in der [Übersicht über Adobe Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md).
+Die folgenden Hauptvorteile sind Assets as a [!DNL Cloud Service] für Digital Asset Management. Weitere Informationen finden Sie in der [Übersicht über Adobe Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md).
 
 * **Moderne Cloud-Services für die Asset-Verarbeitung**: Die neuen Asset-Microservices sind ein Cloud-basierter, skalierbarer, zuverlässiger und unkomplizierter Service zur Asset-Verarbeitung.
 * **Hohe Skalierbarkeit**: Flexible Skalierbarkeit bei unterschiedlichsten Bereitstellungen. Nahezu unbegrenzte Ressourcen, die bei Bedarf zur Verfügung stehen, soweit und sobald diese benötigt werden. Spart Kosten für überflüssiges Design, die bei herkömmlichen Systemen anfallen können.
@@ -38,13 +38,13 @@ Im Folgenden werden die wichtigsten Vorteile von Assets as a [!DNL Cloud Service
 * **Durchgehende Überwachung**: Die Überwachung des Systems ist automatisiert. Integrierte Prüfungen und Trigger tragen zudem dazu bei, die Leistung, Verfügbarkeit und allgemeine Stabilität sicherzustellen.
 * **Unkomplizierte Bereitstellungen**: Vorgänge in Cloud-basierten Experience Manager-Versionen sind komplett automatisiert und erfordern keine Benutzerinteraktionen. Für automatisierte Bereitstellungen automatisiert die Komponente „Cloud Manager“ (CM) die Erstellung bereitstellbarer Docker-Images, die Ihren spezifischen Code enthalten.
 
-## Verfügbare Persona-basierte Erlebnisse {#persona-based-experiences}
+## Verfügbare personenbasierte Erlebnisse für Digital Asset Management {#persona-based-experiences}
 
 Adobe bietet stabile DAM-Lösungen (Digital Asset Management), mit denen Sie Ihre digitalen Assets optimal nutzen können. Adobe Experience Manager Assets verfügt über zwei separate Erlebnisse, die dasselbe Cloud Services-Repository verwenden:
 
-* **Admin-Ansicht**: Die bestehende Assets as a Cloud Service-Benutzeroberfläche. Verwenden Sie die Admin-Ansicht für alle erweiterten Asset-Management-Funktionen, einschließlich Integrationen, Workflows, Inhaltsautomatisierung, Veröffentlichung und mehr.
+* **Admin-Ansicht**: Die bestehende Assets as a Cloud Service-Benutzeroberfläche. Verwenden Sie die Admin-Ansicht für alle erweiterten Digital Asset Management-Funktionen, einschließlich Integrationen, Workflows, Inhaltsautomatisierung, Veröffentlichung und mehr.
 
-* **Assets-Ansicht**: Das einfache Asset-Management-Erlebnis von Adobe zum Speichern, Verwalten, Entdecken und Verwenden digitaler Assets. Eine optimierte Benutzeroberfläche mit den wesentlichen Asset-Management-Funktionen. Entwickelt für Benutzerinnen und Benutzer eines einfachen DAM mit Schwerpunkt auf Upload, Metadatenverwaltung, Suche, Download und Freigabe.
+* **Assets-Ansicht**: Das einfache Asset-Management-Erlebnis von Adobe zum Speichern, Verwalten, Entdecken und Verwenden digitaler Assets. Optimierte Benutzeroberfläche mit wesentlichen Digital Asset Management-Funktionen. Entwickelt für Benutzerinnen und Benutzer eines einfachen DAM mit Schwerpunkt auf Upload, Metadatenverwaltung, Suche, Download und Freigabe.
 
 Benutzerinnen und Benutzer mit Zugriff auf die Admin-Ansicht können auch auf die Asset-Ansicht zugreifen. Die vereinfachte Benutzeroberfläche der Assets-Ansicht erleichtert das Verwalten, Erkennen und Verteilen digitaler Assets. Ein breites Spektrum von Benutzerinnen und Benutzern aus verschiedenen Funktionen, einschließlich Kreativ-, Marketing- und Branchen-Teams, kann an Assets zusammenarbeiten und auf die richtigen, genehmigten Assets zugreifen, wo und wann immer sie benötigt werden. Viele gelegentliche DAM-Benutzerinnen und -Benutzer bevorzugen die Asset-Ansicht, da sie nur eine Teilmenge der Funktionen enthält. Das Erlebnis richtet sich an Kreative, Nutzerinnen und Nutzer von schreibgeschützten Assets und einfache DAM-Benutzerinnen und -Benutzer.
 
