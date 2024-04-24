@@ -3,9 +3,9 @@ title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: f15b42e4012385c461b5440b92f53c4e58fb8ac2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '213'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -15,18 +15,18 @@ Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuel
 
 ## Version 15977 {#release-15977}
 
-Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 15977, die am Samstag, 19. April 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 15939.
+Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 15977, die am 19. April 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 15939.
 
 2024.4.0: Die Funktionsaktivierung bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de).
 
 ### Verbesserungen {#enhancements-15977}
 
-* GRANITE-51335: Optimieren Sie AEM Konsistenzprüfung, um die Instanzstabilität zu erhöhen.
+* GRANITE-51335: Optimieren der AEM-Konsistenzprüfung zum Erhöhen der Instanzstabilität.
 
 ### Behobene Probleme {#fixed-issues-15977}
 
-* CQ-4357226: Korrigierte Regression in der IMS-Konfigurationsunterstützung für OAuth-Anmeldeinformationen.
-* GRANITE-51335: Ratelimit-Upgrade auf 5.0.4 Felix Health Check-Registrierungen korrigiert.
+* CQ-4357226: Behebung der Regression in der Unterstützung der IMS-Konfiguration für OAuth-Anmeldeinformationen.
+* GRANITE-51335: Ratenbegrenzungs-Upgrade auf 5.0.4 behebt Registrierungen für die Felix-Konsistenzprüfung.
 
 ### Bekannte Probleme {#known-issues-15977}
 
