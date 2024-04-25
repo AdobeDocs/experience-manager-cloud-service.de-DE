@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: f15b42e4012385c461b5440b92f53c4e58fb8ac2
-workflow-type: ht
-source-wordcount: '213'
-ht-degree: 100%
+source-git-commit: 61a3d334e7187dcbf047d1b464d918ddf2cf9444
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 79%
 
 ---
 
@@ -30,7 +30,7 @@ Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsver
 
 ### Bekannte Probleme {#known-issues-15977}
 
-Keine
+* **(Nur für AEM Forms)** Nach der Installation von AEM Cloud Foundation Maintenance Release 15977 werden die Felder des adaptiven Formulars beim Erstellen von Formularen und für veröffentlichte Formulare in der falschen Reihenfolge angezeigt. Wenn Sie AEM Forms verwenden, um Unannehmlichkeiten zu vermeiden, wird empfohlen, kein Upgrade auf diese Version durchzuführen, bis das Problem in der nächsten Wartungsversion behoben ist.
 
 ### Eingestellte Funktionen und APIs {#deprecated-15977}
 
