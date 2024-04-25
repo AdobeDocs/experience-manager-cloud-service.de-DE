@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '6701'
+source-git-commit: 3312aa270c05e506d12ed8a5c1360154bb02b350
+workflow-type: tm+mt
+source-wordcount: '6700'
 ht-degree: 100%
 
 ---
@@ -694,7 +694,7 @@ Die Experience Manager-Konfiguration besteht aus den folgenden zwei Hauptschritt
 
 1. Navigieren Sie auf einer neuen Browser-Registerkarte zur [Adobe Developer Console](https://developer.adobe.com/console/integrations).
 
-1. Klicken Sie auf der Seite **[!UICONTROL Adobe I/O Console-Integrationen]** rechts oben auf **[!UICONTROL Neue Integration]**.
+1. Wählen Sie auf der Seite **[!UICONTROL Adobe Developer Console-Integrationen]** rechts oben **[!UICONTROL Neue Integration]** aus.
 1. Vergewissern Sie sich, dass im Dialogfeld **[!UICONTROL Neue Integration erstellen]** das Optionsfeld **[!UICONTROL Zugriff auf API]** ausgewählt ist, und klicken Sie dann auf **[!UICONTROL Weiter]**.
 
 ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
