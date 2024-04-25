@@ -1,27 +1,27 @@
 ---
 title: Cookie-Unterstützung für Adobe Experience Manager as a Cloud Service
-description: Cookie-Unterstützung für Adobe Experience Manager as a Cloud Service
+description: Selbe Site-Cookie-Unterstützung für Adobe Experience Manager as a Cloud Service
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '283'
-ht-degree: 100%
+source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 74%
 
 ---
 
 # Cookie-Unterstützung für Adobe Experience Manager as a Cloud Service {#same-site-cookie-support-for-adobe-experience-manager-as-a-cloud-service}
 
-Seit Version 80 ist in Chrome und Safari ein neues Modell für die Sicherheit von Cookies enthalten. Dieser Modus führt mittels der Einstellung `SameSite` Sicherheitskontrollen für Cookies auf Drittanbieter-Sites ein. Weitere Informationen finden Sie in diesem [Artikel](https://web.dev/samesite-cookies-explained/).
+Seit Version 80 ist in Chrome und Safari ein neues Modell für die Sicherheit von Cookies enthalten. Dieser Modus führt mittels der Einstellung `SameSite` Sicherheitskontrollen für Cookies auf Drittanbieter-Sites ein. Weitere Informationen finden Sie in diesem [Artikel](https://web.dev/articles/samesite-cookies-explained).
 
 Der Standardwert dieser Einstellung (`SameSite=Lax`) kann dazu führen, dass die Authentifizierung zwischen AEM-Instanzen oder -Services nicht funktioniert. Dies liegt daran, dass die Domains oder URL-Strukturen dieser Services möglicherweise nicht unter die Beschränkungen dieser Cookie-Richtlinie fallen.
 
-Um dies zu umgehen, müssen Sie das SameSite-Cookie-Attribut für das Login-Token auf `None` setzen.
+Setzen Sie dazu das SameSite-Cookie-Attribut auf `None` für das Anmelde-Token.
 
 >[!CAUTION]
 >
 >Die Einstellung `SameSite=None` wird nur angewendet, wenn das Protokoll sicher ist (HTTPS).
 >
->Wenn das Protokoll nicht sicher (HTTP) ist, wird die Einstellung ignoriert und der Server zeigt diese Warnmeldung:
+>Wenn das Protokoll nicht sicher (HTTP) ist, wird die Einstellung ignoriert und der Server zeigt diese Warnmeldung an:
 >
 >`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
 
@@ -36,4 +36,4 @@ Sie können die Einstellung hinzufügen, indem Sie die folgenden Schritte ausfü
 1. Generieren Sie die JSON-Formatkonfigurationen für diese bestimmte Einstellung, indem Sie die unter [Generieren von OSGi-Konfigurationen mit dem AEM SDK-QuickStart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart) beschriebenen Schritte ausführen.
 1. Wenden Sie die Einstellungen an, indem Sie die in der OSGI-Dokumentation [Cloud Manager-API-Format für das Festlegen von Eigenschaften](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) beschriebenen Schritte ausführen.
 
-Nachdem diese Einstellung aktualisiert und die Benutzenden ab- und wieder angemeldet wurden, wird für `login-token`-Cookies das Attribut `None` gesetzt und in seitenübergreifende Anfragen aufgenommen.
+Nachdem diese Einstellung aktualisiert wurde und Benutzer abgemeldet und erneut angemeldet wurden, `login-token` -Cookies haben die `None` -Attributsatz und ist in Site-übergreifenden Anforderungen enthalten.

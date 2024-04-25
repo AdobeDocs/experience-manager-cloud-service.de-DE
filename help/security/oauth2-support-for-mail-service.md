@@ -1,11 +1,11 @@
 ---
 title: OAuth2-Unterstützung für den E-Mail-Service
-description: OAuth2-Unterstützung für den E-Mail-Service in Adobe Experience Manager as a Cloud Service
+description: OAuth2-Unterstützung für den Mail-Dienst in Adobe Experience Manager as a Cloud.Service.
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
-workflow-type: ht
-source-wordcount: '680'
-ht-degree: 100%
+source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 94%
 
 ---
 
@@ -33,7 +33,7 @@ Weitere Informationen zum AEM as a Cloud Service E-Mail-Service finden Sie unter
 
    >[!NOTE]
    >
-   >Die Konfiguration von Berechtigungen kann sich im Laufe der Zeit weiterentwickeln. Arbeiten Sie mit Microsoft zusammen, wenn diese nicht erwartungsgemäß funktionieren.
+   >Die Konfiguration von Berechtigungen kann sich im Laufe der Zeit weiterentwickeln. Arbeiten Sie mit Microsoft®, wenn diese nicht wie erwartet funktionieren.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -111,7 +111,7 @@ Bevor Sie mit der OAuth-Konfiguration auf der AEM-Seite fortfahren, überprüfen
 
 >[!NOTE]
 >
-> Sie können die Postman-API-Sammlung von [diesem Speicherort](https://learn.microsoft.com/de-de/azure/active-directory/develop/v2-oauth2-auth-code-flow) abrufen.
+> Sie können die Postman-API-Sammlung von [diesem Speicherort](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow) abrufen.
 >
 > Weitere Informationen finden Sie [hier](https://learn.microsoft.com/de-de/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) in der MSFT OAuth-Dokumentation.
 
@@ -140,7 +140,7 @@ Bevor Sie mit der OAuth-Konfiguration auf der AEM-Seite fortfahren, überprüfen
 
    >[!NOTE]
    >
-   >Der Umfang kann sich im Laufe der Zeit weiterentwickeln. Arbeiten Sie mit Microsoft zusammen, wenn diese nicht erwartungsgemäß funktionieren.
+   >Der Umfang kann sich im Laufe der Zeit weiterentwickeln. Arbeiten Sie mit Microsoft®, wenn diese nicht wie erwartet funktionieren.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -148,7 +148,7 @@ Bevor Sie mit der OAuth-Konfiguration auf der AEM-Seite fortfahren, überprüfen
    * `email`
    * `profile`
 1. Erstellen Sie eine OSGi-Eigenschaftendatei mit dem Namen `called com.day.cq.mailer.DefaultMailService.cfg.json`
-unter `/apps/<my-project>/osgiconfig/config` mit der folgenden Syntax: Die Werte `smtp.host` und `smtp.port` spiegeln die erweiterte Netzwerkkonfiguration wider, wie im Abschnitt [Tutorial zum E-Mail-Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=de) beschrieben.
+unter `/apps/<my-project>/osgiconfig/config` mit der folgenden Syntax: Die Werte `smtp.host` und `smtp.port` spiegeln die erweiterte Netzwerkkonfiguration wider, wie im Abschnitt [Tutorial zum E-Mail-Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/email-service) beschrieben.
 
    ```
    {
