@@ -3,10 +3,10 @@ title: Verwalten von Pipelines
 description: Erfahren Sie, wie Sie Ihre vorhandenen Pipelines verwalten, einschließlich Bearbeiten, Ausführen und Löschen.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
-workflow-type: ht
-source-wordcount: '934'
-ht-degree: 100%
+source-git-commit: 71ece3b084c3a262cacc62019396138a88a340b9
+workflow-type: tm+mt
+source-wordcount: '1018'
+ht-degree: 84%
 
 ---
 
@@ -41,21 +41,25 @@ Das Fenster **Pipelines** zeigt eine vollständige Liste aller Pipelines für da
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Wählen Sie auf dem Bildschirm **[Meine Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** das Programm aus.
+1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** -Konsole, wählen Sie das Programm aus.
 
 1. Wählen Sie auf der Seite **Programmübersicht** die Registerkarte **Pipelines** aus, um zum Fenster **Pipelines** zu wechseln.
 
 1. Hier können Sie eine Liste aller Pipelines für das Programm sehen und die Ausführung von Pipelines starten und stoppen, wie Sie es in der **Pipelines-Karte** tun würden.
 
-Wenn Sie während der Pipeline-Ausführung mit der Maus über **Status** gehen, werden Details der Ausführung angezeigt.
+Wenn eine Pipeline ausgeführt wird, tippen Sie auf das Informationssymbol im **Status** enthält Details zur Ausführung.
 
 ![Details zur Pipeline-Ausführung](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
 Tippen oder klicken Sie auf **Details anzeigen**, um zu den [Details zur Pipeline-Ausführung](#view-details) zu gelangen.
 
+Sie können auch auf die Suchschaltfläche der Pipeline tippen oder klicken, um zusätzliche Aktionen durchzuführen, die dem Pipeline-Status entsprechen, z. B. [Bearbeiten](#editing-pipelines) oder [die Ausführung abbrechen.](#cancel)
+
+![Pipeline-Aktionen](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
+
 ## Fenster „Aktivität“ {#activity}
 
-Das Fenster **Aktivität** zeigt eine vollständige Liste aller Pipeline-Ausführungen für das ausgewählte Programm an.
+Die **Aktivität** zeigt eine vollständige Liste aller Pipelines-Ausführungen für das ausgewählte Programm sowie weitere wichtige Programmereignisse an.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
@@ -63,11 +67,15 @@ Das Fenster **Aktivität** zeigt eine vollständige Liste aller Pipeline-Ausfüh
 
 1. Hier sehen Sie eine Liste aller Pipeline-Ausführungen für das Programm, einschließlich aktueller und vorheriger Ausführungen.
 
-Wenn Sie während der Pipeline-Ausführung mit der Maus über **Status** gehen, werden Details der Ausführung angezeigt.
+Wenn eine Pipeline ausgeführt wird, tippen Sie auf das Informationssymbol im **Status** enthält Details zur Ausführung.
 
 ![Details zur Pipeline-Ausführung](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-Tippen oder klicken Sie auf **Details anzeigen**, um zu den [Details zur Pipeline-Ausführung](#view-details) zu gelangen.
+Durch Tippen oder Klicken auf die Zeile, die die Pipeline-Ausführung darstellt, gelangen Sie zum [Details zur Pipelineausführung.](#view-details)
+
+Sie können auch auf die Suchschaltfläche tippen oder klicken, um weitere Maßnahmen zur Pipeline-Ausführung zu ergreifen, z. B. Details anzeigen oder das Protokoll herunterladen, über das Sie zum [Pipeline-Detailseite.](#view-details)
+
+![Pipelineausführungsaktionen](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-execution-actions.png)
 
 ## Ausführen von Pipelines {#running-pipelines}
 

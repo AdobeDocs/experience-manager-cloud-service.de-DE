@@ -2,10 +2,10 @@
 title: Hinzufügen von IP-Zulassungslisten
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihre eigene IP-Zulassungsliste hinzufügen.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
-workflow-type: ht
-source-wordcount: '198'
-ht-degree: 100%
+source-git-commit: fa6d0670a011276facc561f62f52c6e69147a49e
+workflow-type: tm+mt
+source-wordcount: '194'
+ht-degree: 87%
 
 ---
 
@@ -18,11 +18,9 @@ Benutzerinnen oder Benutzer mit der Rolle **Geschäftsinhaber** oder **Bereitste
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Wählen Sie im Bildschirm **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** das Programm aus.
+1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** -Konsole, wählen Sie das Programm aus.
 
-1. Navigieren Sie auf der Seite **Übersicht** zum Bildschirm **Umgebungen**.
-
-1. Navigieren Sie auf dem Bildschirm **Umgebungen** zur Seite **IP-Zulassungslisten**.
+1. Aus dem **Übersicht** Seite, navigieren Sie zur **IP-Zulassungslisten** Seite mithilfe der Registerkarte Seitennavigation.
 
    ![Option „IP-Zulassungslisten“ im seitlichen Bedienfeld](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 

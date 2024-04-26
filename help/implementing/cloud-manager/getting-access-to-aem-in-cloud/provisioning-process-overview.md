@@ -1,10 +1,10 @@
 ---
 title: Bereitstellungsprozess – Übersicht
 description: Bereitstellungsprozess – Übersicht
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: ht
-source-wordcount: '291'
-ht-degree: 100%
+source-git-commit: eec64a5dc211dc72712989bf6dc81de8004e2a85
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 95%
 
 ---
 
@@ -26,13 +26,10 @@ Dieser Abschnitt behandelt wichtige Artikel zu folgenden Themen:
 
 Nachdem die automatische Bereitstellung abgeschlossen ist:
 
-* Gewährte Zugriffsrechte – Adobe erstellt eine Organisation innerhalb Adobe Identity Management System (IMS).
+* Gewährte Zugriffsrechte - Adobe erstellt eine Organisation innerhalb des Adobe Identity Management-Systems (IMS).
 * Der entsprechende Administrator hat standardmäßig Administratorberechtigungen.
 * Der Administrator kann über Admin Console Benutzer und Rollen für weitere Team-Mitglieder hinzufügen.
 * Prüfen Sie rollenbasierte Berechtigungen für Benutzer und weisen Sie in Cloud Manager welche zu.
-
-![processoverview.jpg](assets/processOverview.jpg)
-
 
 Weitere Informationen finden Sie unter [Onboarding in Experience Manager as a Cloud Service auf Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=de).
 
@@ -49,8 +46,6 @@ Weitere Informationen finden Sie unter [Onboarding in Experience Manager as a Cl
 
 ### 2. Onboarden von Organisationen in Adobe Admin Console:
 
-![processoverview2.jpg](assets/processOverview2.jpg)
-
 * Systemadministrator:
    * Stellt AEM-Programme und -Umgebungen bereit
    * Navigiert zu Admin Console für administrative Aufgaben
@@ -61,8 +56,6 @@ Weitere Informationen finden Sie unter [Onboarding in Experience Manager as a Cl
    * Verwaltet lokale Gruppen und Berechtigungen
 
 ### 3. Onboarden von Benutzern und Verwalten des Zugriffs auf Admin Console:
-
-![processoverview3.jpg](assets/processOverview3.jpg)
 
 Je nach Größe und Präferenz gibt es drei Methoden zum Onboarden von Benutzern:
 * Manuelles Erstellen von Benutzern in Admin Console

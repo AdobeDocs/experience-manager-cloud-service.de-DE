@@ -2,10 +2,10 @@
 title: Erstellen von Sandbox-Programmen
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Sandbox-Programm für Schulungs-, Demo-, POC- oder andere produktionsfremde Zwecke erstellen.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
-workflow-type: ht
-source-wordcount: '443'
-ht-degree: 100%
+source-git-commit: 558b46f58491dbd6845003827dcf2a0ae1b1d074
+workflow-type: tm+mt
+source-wordcount: '434'
+ht-degree: 83%
 
 ---
 
@@ -19,9 +19,9 @@ Weitere Informationen zu Programmtypen finden Sie im Dokument [Programm- und Pro
 
 1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an und wählen Sie die entsprechende Organisation aus.
 
-1. Tippen oder klicken Sie im Bildschirm **[Meine Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** oben rechts auf **Programm hinzufügen**.
+1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** Konsole, tippen oder klicken Sie auf **Programm hinzufügen** in der oberen rechten Ecke des Bildschirms.
 
-   ![Cloud Manager-Landingpage](assets/cloud-manager-my-programs.png)
+   ![Cloud Manager-Landingpage](assets/log-in.png)
 
 1. Wählen Sie im Assistenten zum Erstellen von Programmen die Option **Sandbox einrichten** und geben Sie einen Programmnamen ein.
 
@@ -63,12 +63,12 @@ Sie können die Details Ihrer Sandbox-Einrichtung anzeigen und auf die Umgebung 
 
 1. Nachdem die Entwicklungsumgebung erstellt wurde, können Sie den Link **Zugriff auf AEM** verwenden, um sich bei AEM anzumelden.
 
-   ![Link „Zugriff auf AEM“](assets/create-program-5.png)
+   ![Link „Zugriff auf AEM“](assets/create-program5.png)
 
-1. Sobald die Bereitstellung der produktionsfremden Pipeline in der Entwicklungsumgebung abgeschlossen ist, führt der Assistent den Benutzer entweder zum Zugriff auf AEM (in der Entwicklungsumgebung) oder zur Bereitstellung von Code in der Entwicklungsumgebung.
+1. Sobald die in der Entwicklung bereitgestellte Nicht-Produktions-Pipeline abgeschlossen ist, führt der Assistent im Aktionsaufruf Sie dazu, entweder auf die AEM Entwicklungsumgebung zuzugreifen oder Code in der Entwicklungsumgebung bereitzustellen.
 
    ![Bereitstellen einer Sandbox](assets/create-program-setup-deploy.png)
 
-Wenn Sie irgendwann zu einem anderen Programm wechseln oder zur Übersichtsseite zurückkehren möchten, um ein anderes Programm zu erstellen, klicken Sie auf den Namen Ihres Programms oben links im Bildschirm, um die Option **Navigieren zu** aufzurufen.
-
-![Navigieren zu](assets/create-program-a1.png)
+>[!TIP]
+>
+>Lesen Sie das Dokument . [Navigieren zur Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/navigation.md) Weitere Informationen zum Navigieren in Cloud Manager und zum Verständnis der **Eigene Programme** Konsole.

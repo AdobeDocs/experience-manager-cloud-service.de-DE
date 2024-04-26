@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen
 description: Erfahren Sie mehr über die Arten von Umgebungen, die Sie erstellen können, und wie Sie sie für ein Cloud Manager-Projekt erstellen.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 8f7ddeea27df8e765a7c83c74af25961748ee26d
-workflow-type: ht
-source-wordcount: '2660'
-ht-degree: 100%
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
+workflow-type: tm+mt
+source-wordcount: '2365'
+ht-degree: 94%
 
 ---
 
@@ -41,9 +41,9 @@ Um eine Umgebung hinzufügen oder bearbeiten zu können, muss eine Benutzerin od
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Tippen oder klicken Sie auf dem Bildschirm **[Meine Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** auf das Programm, für das Sie eine Umgebung hinzufügen möchten.
+1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** -Konsole, tippen oder klicken Sie auf das Programm, für das Sie eine Umgebung hinzufügen möchten.
 
-1. Auf der Seite **[Programmübersicht](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview)** klicken Sie auf der Karte **Umgebungen** auf **Umgebung hinzufügen**, um eine Umgebung hinzuzufügen.
+1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** Console, klicken Sie auf **Umgebung hinzufügen** auf **Umgebungen** -Karte, um eine Umgebung hinzuzufügen.
 
    ![Karte „Umgebung“](assets/no-environments.png)
 
@@ -123,9 +123,9 @@ Wenn Sie [erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-net
 
 ## Umgebungsdetails {#viewing-environment}
 
-Sie können die Karte **Umgebungen** auf der Übersichtsseite auf zwei Arten verwenden, um auf Details zu Umgebungen zuzugreifen.
+Aus dem **Übersicht** -Seite können Sie auf zwei Arten auf die Details einer Umgebung zugreifen.
 
-1. Klicken Sie auf der Seite **Überblick** auf die Registerkarte **Umgebungen** oben auf dem Bildschirm.
+1. Aus dem **Übersicht** klicken Sie auf die **Umgebungen** im seitlichen Navigationsbereich.
 
    ![Registerkarte „Umgebungen“](assets/environments-tab2.png)
 
@@ -135,9 +135,9 @@ Sie können die Karte **Umgebungen** auf der Übersichtsseite auf zwei Arten ver
 
 1. **Umgebungen** öffnet und listet alle Umgebungen für das Programm auf.
 
-   ![Registerkarte „Umgebungen“](assets/environment-view-2.png)
+   ![Registerkarte „Umgebungen“](assets/environments-tab2.png)
 
-1. Klicken Sie auf eine Umgebung in der Liste, um deren Details anzuzeigen.
+1. Tippen oder klicken Sie auf eine Umgebung in der Liste, um deren Details anzuzeigen.
 
    ![Umgebungsdetails](assets/environ-preview1.png)
 
@@ -302,24 +302,11 @@ Darüber hinaus können Sie sich auch über die Registerkarte **Umgebungen** der
 
 ## Verwalten von benutzerdefinierten Domain-Namen {#manage-cdn}
 
-Benutzerdefinierte Domain-Namen werden in Cloud Manager for Sites-Programmen sowohl für Veröffentlichungs- als auch für Vorschau-Services unterstützt. Jede Cloud Manager-Umgebung kann bis zu 250 benutzerdefinierte Domains hosten.
+Benutzerdefinierte Domänennamen werden in Cloud Manager für Sites-Programme sowohl für Veröffentlichungs- als auch für Vorschaudienste unterstützt.
 
-Um benutzerdefinierte Domain-Namen zu konfigurieren, gehen Sie zur Registerkarte **Umgebungen** und klicken Sie auf eine Umgebung, um die Details der Umgebung anzuzeigen.
-
-Benutzerinnen oder Benutzer müssen über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um einen benutzerdefinierten Domain-Namen in Cloud Manager hinzufügen zu können.
-
-![Umgebungsdetails](assets/domain-names.png)
-
-Die folgenden Aktionen können für Ihre Umgebung im Veröffentlichungs-Service ausgeführt werden.
-
-* [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-
-* [Verwalten von benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-
-* [Überprüfen des Status des benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) oder eines [SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
-
-* [Verwalten von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
-
+>[!TIP]
+>
+>Weitere Informationen finden Sie im Dokument . [Einführung in benutzerdefinierte Domänennamen.](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 ## Verwalten von IP-Zulassungslisten {#manage-ip-allow-lists}
 
@@ -329,23 +316,8 @@ Um IP-Zulassungslisten zu verwalten, gehen Sie zur Registerkarte **Umgebungen** 
 
 ### Anwenden einer IP-Zulassungsliste {#apply-ip-allow-list}
 
-Beim Anwenden einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Adressen-Bereiche mit einem Author- oder Publish-Service in einer Umgebung verknüpft. Um eine IP-Zulassungsliste anwenden zu können, muss die betreffende Person die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** innehaben und angemeldet sein.
+Beim Anwenden einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Bereiche mit einem Autoren- oder Veröffentlichungsdienst in einer Umgebung verknüpft.
 
-Die IP-Zulassungsliste muss in Cloud Manager vorhanden sein, damit sie auf eine Umgebung angewendet werden kann. Weitere Informationen zu IP-Zulassungslisten in Cloud Manager finden Sie in der [Einführung in IP-Zulassungslisten in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
-
-**So wenden Sie eine IP-Zulassungsliste an:**
-
-1. Navigieren Sie von der Registerkarte **Umgebungen** des Bildschirms **Überblick** des Programms zu der gewünschten Umgebung und dann zur Tabelle **IP-Zulassungslisten**.
-1. Verwenden Sie die Eingabefelder oben in der Tabelle der IP-Zulassungsliste, um die IP-Zulassungsliste und den Author- oder Publish-Service auszuwählen, auf die Sie sie anwenden möchten.
-1. Klicken Sie auf **Anwenden** und bestätigen Sie Ihre Übermittlung.
-
-### Aufheben der Anwendung einer IP-Zulassungsliste {#unapply-ip-allow-list}
-
-Durch das Aufheben der Anwendung einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Adressbereiche von einem Author- oder Publish-Service in einer Umgebung getrennt. Eine Person mit der Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** muss angemeldet sein, um die Anwendung einer IP-Zulassungsliste aufheben zu können.
-
-**So heben Sie die Anwendung einer IP-Zulassungsliste auf:**
-
-1. Navigieren Sie von der Registerkarte **Umgebungen** des Bildschirms **Überblick** des Programms zu der gewünschten Umgebung und dann zur Tabelle **IP-Zulassungslisten**.
-1. Identifizieren Sie die Zeile, in der die Regel der IP-Zulassungsliste aufgeführt ist, deren Anwendung Sie aufheben möchten.
-1. Klicken Sie auf die Schaltfläche mit den Auslassungspunkten am Ende der Zeile.
-1. Wählen Sie **Anwendung rückgängig machen** aus und bestätigen Sie Ihre Übermittlung.
+>[!TIP]
+>
+>Weitere Informationen finden Sie im Dokument . [Einführung in IP-Zulassungslisten.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)

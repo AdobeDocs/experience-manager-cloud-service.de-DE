@@ -2,10 +2,10 @@
 title: SLA-Berichte
 description: Erfahren Sie, wie Sie die Leistungsdaten einer AEM-Produktionsumgebung mit dem vertraglich vereinbarten Service Level Agreement (SLA) vergleichen können.
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: f037f47f0b131c87301faf4458658224d1d62a43
-workflow-type: ht
-source-wordcount: '400'
-ht-degree: 100%
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 94%
 
 ---
 
@@ -20,9 +20,9 @@ SLA-Berichtsdaten sind für jedes Produktionsprogramm über die Registerkarte **
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Wählen Sie im Bildschirm **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** das Programm aus.
+1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** -Konsole, wählen Sie das Programm aus.
 
-1. Navigieren Sie von der Seite **Überblick** zur Karte **Umgebungen**.
+1. Navigieren Sie im seitlichen Navigationsfenster zum **Berichte** Registerkarte aus **Übersicht** Seite.
 
 1. Klicken Sie auf das gewünschte Jahr, um die SLA-Daten grafisch darzustellen.
 

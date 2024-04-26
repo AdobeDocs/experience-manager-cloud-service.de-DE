@@ -2,10 +2,10 @@
 title: Erstellen von Produktionsprogrammen
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Produktionsprogramm für das Hosten von Live-Traffic erstellen.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: a25f1c674534792353cb9b34d4f88a5e32230bc1
-workflow-type: ht
-source-wordcount: '1047'
-ht-degree: 100%
+source-git-commit: 418aff3f8519bba4bf5e2459175983633eb664b8
+workflow-type: tm+mt
+source-wordcount: '1031'
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen. Beachten Sie, 
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Auf dem Bildschirm **[Meine Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** tippen oder klicken Sie in der rechten oberen Ecke des Bildschirms auf **Programm hinzufügen**.
+1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** Konsole, tippen oder klicken Sie auf **Programm hinzufügen** in der oberen rechten Ecke des Bildschirms.
 
    ![Cloud Manager-Landingpage](assets/log-in.png)
 
@@ -48,7 +48,7 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen. Beachten Sie, 
 
 1. Geben Sie auf der Registerkarte **Tag der Live-Schaltung** das Datum ein, an dem Ihr Produktionsprogramm veröffentlicht werden soll.
 
-   ![Geplanten Tag der Live-Schaltung definieren](assets/setup-go-live.png)
+   ![Geplanten Tag der Live-Schaltung definieren](assets/set-up-go-live.png)
 
    * Dieses Datum kann jederzeit bearbeitet werden.
    * Dieses Datum dient nur zu Informationszwecken und löst das Live-Schaltungs-Widget auf der [**Programmübersichtsseite** ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) aus, um rechtzeitig produktinterne Links zur Best-Practice-Dokumentation von AEM as a Cloud Service bereitzustellen und Ihnen so eine erfolgreiche und reibungslose Live-Schaltung ermöglicht.
@@ -117,9 +117,9 @@ Sobald die [Anforderungen](#sla-requirements) für die Aktivierung von 99,99 % S
 
    ![Programmübersicht](assets/set-up-prod5.png)
 
-Wenn Sie zu einem anderen Programm wechseln oder zur Übersichtsseite zurückkehren möchten, um ein anderes Programm zu erstellen, klicken Sie oben links auf dem Bildschirm auf den Namen Ihres Programms, um die Option **Navigieren zu** aufzurufen.
-
-![Navigieren zu](assets/create-program-a1.png)
+>[!TIP]
+>
+>Lesen Sie das Dokument . [Navigieren zur Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/navigation.md) Weitere Informationen zum Navigieren in Cloud Manager und zum Verständnis der **Eigene Programme** Konsole.
 
 >[!NOTE]
 >

@@ -2,10 +2,10 @@
 title: Zugreifen auf und Verwalten von Protokollen
 description: Erfahren Sie, wie Sie auf Protokolle zugreifen und diese verwalten können, um Ihren Entwicklungsprozess in AEM as a Cloud Service zu unterstützen.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: fa28d2fa83fb35fe80692c5f94661fa4c32a02a9
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Gehen Sie wie folgt vor, um Protokolle herunterzuladen:
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Wählen Sie im Bildschirm **[Eigene Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** das Programm aus.
+1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** -Konsole, wählen Sie das Programm aus.
 
 1. Navigieren Sie von der Seite **Überblick** zur Karte **Umgebungen**.
 

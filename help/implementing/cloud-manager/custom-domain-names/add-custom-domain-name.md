@@ -2,10 +2,10 @@
 title: Hinzufügen eines benutzerdefinierten Domain-Namens
 description: Erfahren Sie, wie Sie mit Cloud Manager einen benutzerdefinierten Domain-Namen hinzufügen.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 52466e091cf6e0ab1ac620e15568c04881a3b63a
-workflow-type: ht
-source-wordcount: '680'
-ht-degree: 100%
+source-git-commit: fcb6dd8ec74446643aaef1870685d26bc138bbd7
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 96%
 
 ---
 
@@ -29,11 +29,9 @@ Gehen Sie folgendermaßen vor, um auf der Seite **Domain-Einstellungen** einen b
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Wählen Sie auf dem Bildschirm **[Meine Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** das Programm aus.
+1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** -Konsole, wählen Sie das Programm aus.
 
-1. Navigieren Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
-
-1. Klicken Sie im linken Navigationsbereich auf **Domain-Einstellungen**.
+1. Navigieren Sie zur Auswahl der **Domäneneinstellungen** im linken Navigationsbereich.
 
    ![Fenster „Domain-Einstellungen“](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 

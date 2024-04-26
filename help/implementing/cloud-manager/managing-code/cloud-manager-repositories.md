@@ -2,10 +2,10 @@
 title: Cloud Manager-Repositorys
 description: Erfahren Sie, wie Sie Ihre Git-Repositorys in Cloud Manager erstellen, anzeigen und löschen.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 4bf1d961705ce07c5ae5d33a546a276192f10178
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 85%
+source-wordcount: '575'
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ Folgen Sie diesen Schritten, um Repositorys im Cloud Manager anzuzeigen und zu v
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Aus dem **Programmübersicht** Seite, wählen Sie die **Repositorys** Registerkarte, um zu der **Repositorys** Seite.
+1. Wählen Sie auf der Seite **Programmübersicht** die Registerkarte **Repositorys** und wechseln Sie zu der Seite **Repositorys**.
 
-1. Klicks **Repository hinzufügen**.
+1. Klicken Sie auf **Repository hinzufügen**.
 
    ![Schaltfläche „Repository hinzufügen“](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
 
@@ -36,7 +36,7 @@ Folgen Sie diesen Schritten, um Repositorys im Cloud Manager anzuzeigen und zu v
 
 Wenn der Assistent geschlossen wird, wird Ihr neues Repository in der Tabelle angezeigt.
 
-Sie können das Repository in der Tabelle auswählen, auf die Suchschaltfläche klicken und **Repository-URL kopieren**, **Anzeigen und Aktualisieren** oder **Löschen**.
+Sie können das Repository in der Tabelle auswählen, auf die Schaltfläche mit den Auslassungspunkten klicken und **Repository-URL kopieren**, **Anzeigen und Aktualisieren** oder **Löschen** auswählen.
 
 ![Repository-Optionen](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
@@ -58,11 +58,9 @@ Das Löschen eines Repositorys führt dazu, dass:
 
 Führen Sie diese Schritte aus, um ein Repository in Cloud Manager zu löschen.
 
-1. Aus dem **Programmübersicht** klicken Sie auf die **Repositorys** und navigieren Sie zum **Repositorys** Seite.
+1. Klicken Sie auf der Seite **Programmübersicht** auf die Registerkarte **Repositorys** und gehen Sie zur Seite **Repositorys**.
 
-1. Wählen Sie das Repository aus, klicken Sie auf die Suchschaltfläche und wählen Sie **Löschen** , um das Repository zu löschen.
-
-   ![Repository löschen](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
+1. Wählen Sie das Repository aus, klicken Sie auf die Schaltfläche mit den Auslassungspunkten und wählen Sie **Löschen**, um das Repository zu löschen.
 
 ## Unterstützung von Git-Untermodulen {#git-submodule-support}
 
@@ -130,5 +128,5 @@ Beachten Sie bei der Verwendung von Git-Untermodulen die folgenden Einschränkun
 * Betten Sie aus Sicherheitsgründen keine Anmeldeinformationen in Git-URLs ein.
 * Sofern nicht anders erforderlich, wird dringend empfohlen, „flache“ Untermodule zu verwenden.
    * Führen Sie dazu `git config -f .gitmodules submodule.<submodule path>.shallow true` für jedes Untermodul aus.
-* Für bestimmte Git-Commits werden Git-Untermodulverweise gespeichert. Wenn also Änderungen am Submodul-Repository vorgenommen werden, muss die referenzierte Commit aktualisiert werden.
+* Für bestimmte Git-Commits werden Git-Untermodulverweise gespeichert. Wenn also Änderungen am Untermodul-Repository vorgenommen werden, muss der referenzierte Commit aktualisiert werden.
    * Zum Beispiel mit `git submodule update --remote`

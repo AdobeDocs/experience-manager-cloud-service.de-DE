@@ -1,18 +1,18 @@
 ---
-title: Verwalten und Bearbeiten von Programmen
+title: Bearbeiten von Programmen
 description: Erfahren Sie, wie Sie Ihre Produktions- und Sandbox-Programme bearbeiten, um ihre Optionen nach der Erstellung anzupassen.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 2dfae31e32d375c82c4f690624e48f7f09feb4df
-workflow-type: ht
-source-wordcount: '773'
-ht-degree: 100%
+source-git-commit: 401f853b197e67a6c54e4bf168081dc8165bd505
+workflow-type: tm+mt
+source-wordcount: '439'
+ht-degree: 94%
 
 ---
 
 
-# Verwalten und Bearbeiten von Programmen {#editing-programs}
+# Bearbeiten von Programmen {#editing-programs}
 
-Die Seite **Meine Programme** bietet einen Überblick über alle Programme, auf die Sie Zugriff haben. Wenn Sie ein einzelnes Programm auswählen, finden Sie auf der Seite **Programmübersicht** Details zu dem Programm auf einen Blick.
+Um Programme zu verwalten und zu bearbeiten, beginnen Sie bei der [**Eigene Programme** Konsole.](/help/implementing/cloud-manager/navigation.md) Die **Eigene Programme** bietet eine Übersicht über alle Programme, auf die Sie Zugriff haben. Wenn Sie ein einzelnes Programm auswählen, finden Sie auf der Seite **Programmübersicht** Details zu dem Programm auf einen Blick.
 
 Von der **Programmübersicht** aus können Benutzende mit den erforderlichen Berechtigungen [Produktionsprogramme, die in Ihrer Organisation erstellt wurden](creating-production-programs.md) und [Sandbox-Programme, die in Ihrer Organisation erstellt wurden, bearbeiten.](creating-sandbox-programs.md) Durch die Bearbeitung eines Programms haben Sie folgende Möglichkeiten:
 
@@ -24,70 +24,6 @@ Von der **Programmübersicht** aus können Benutzende mit den erforderlichen Ber
 ## Berechtigungen {#permissions}
 
 Sie müssen Mitglied der Rolle **Geschäftsinhaber** sein, um Programme zu bearbeiten oder Sandbox-Programme zu löschen und um auf das Lizenz-Dashboard zuzugreifen.
-
-## Meine Programme {#my-programs}
-
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
-
-1. Die Seite **Meine Programme** zeigt eine Liste aller Programme, auf die Sie als Kacheln Zugriff haben.
-
-![Seite „Meine Programme“](/help/implementing/cloud-manager/assets/my-programs.png)
-
-### Aktionsaufruf {#cta}
-
-Oben auf der Seite befindet sich ein Aktionsaufruf, der für den Status Ihres Unternehmens relevant ist. Wenn Sie Ihre Programme erfolgreich eingerichtet haben, können beispielsweise Statistiken über Ihre Aktivitäten in den letzten 90 Tagen angezeigt werden, darunter:
-
-* Anzahl der [Bereitstellungen](/help/implementing/cloud-manager/deploy-code.md)
-* Anzahl der identifizierten [Code-Qualitätsprobleme](/help/implementing/cloud-manager/code-quality-testing.md)
-* Anzahl der Builds
-
-Oder wenn Sie gerade mit der Einrichtung Ihrer Organisation beginnen, gibt es Tipps zu den nächsten Schritten oder Dokumentationsressourcen.
-
-### Registerkarte „Programme“ {#programs-tab}
-
-Auf der Registerkarte **Programme** finden Sie Karten für jedes Programm, auf das Sie Zugriff haben. Tippen oder klicken Sie auf eine Karte, um die Seite **Programmübersicht** des Programms aufzurufen, auf der Sie Details zum Programm finden.
-
-Verwenden Sie die Sortieroptionen, um das benötigte Programm leichter zu finden.
-
-![Sortieroptionen](/help/implementing/cloud-manager/assets/my-programs-sorting.png)
-
-* Sortieren nach
-   * Erstellungsdatum (Standard)
-   * Programmname
-   * Status
-* Aufsteigend (Standard)/Absteigend
-* Rasteransicht (Standard)
-* Listenansicht
-
-### Registerkarte „Lizenz“ {#license-tab}
-
-Die Registerkarte **Lizenz** bietet Ihnen schnellen Zugriff auf das [Lizenz-Dashboard.](/help/implementing/cloud-manager/license-dashboard.md)
-
-## Programmübersicht {#program-overview}
-
-Sobald Sie ein Programm auf der Seite **[Meine Programme](#my-programs)** ausgewählt haben, öffnet Cloud Manager die Seite **Programmübersicht** für das ausgewählte Programm.
-
-![Seite „Programmübersicht“](/help/implementing/cloud-manager/assets/program-overview.png)
-
-Tippen oder klicken Sie auf den Programmnamen in der linken oberen Ecke der Seite, um schnell zu einem anderen Programm oder zurück auf die Seite **[Meine Programme](#my-programs)** zu wechseln. Sie können auch [das ausgewählte Programm bearbeiten](#editing) oder [ein Programm hinzufügen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
-
-![Programmumschalter](/help/implementing/cloud-manager/assets/program-switcher.png)
-
-Der Aktionsaufruf am oberen Rand gibt Ihnen je nach Status Ihres Programms hilfreiche Informationen. Für ein neues Programm werden Ihnen möglicherweise die nächsten Schritte angeboten sowie eine Erinnerung an das Startdatum, [das bei der Programmerstellung festgelegt wurde.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
-
-![Aktionsaufruf für ein neues Programm](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
-
-Bei einem Live-Programm den Status Ihrer letzten Bereitstellung mit Links zu Details und zum Beginn einer neuen Bereitstellung.
-
-![Aktionsaufruf](/help/implementing/cloud-manager/assets/info-banner.png)
-
-Die Karten **Umgebungen** und **Pipelines** geben einen schnellen Überblick über beide innerhalb des ausgewählten Programms.
-
-![Karten](/help/implementing/cloud-manager/assets/environments-pipelines.png)
-
-Die Karte **Leistung** gibt einen Überblick über das **[CDN-Dashboard.](/help/implementing/cloud-manager/cdn-performance.md)**
-
-![Leistungskarte](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 
 ## Bearbeiten von Programmen {#editing}
 
