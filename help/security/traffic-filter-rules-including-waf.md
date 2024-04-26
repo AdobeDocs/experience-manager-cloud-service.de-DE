@@ -5,7 +5,7 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: b52da0a604d2c320d046136f5e526e2b244fa6cb
 workflow-type: tm+mt
 source-wordcount: '3790'
-ht-degree: 77%
+ht-degree: 80%
 
 ---
 
@@ -18,7 +18,7 @@ Traffic-Filterregeln können verwendet werden, um Anforderungen auf der CDN-Eben
 * Festlegung von Ratenbeschränkungen, die für volumetrische DoS-Angriffe weniger anfällig sind
 * Verhindern, dass IP-Adressen, die als bösartig bekannt sind, auf Ihre Seiten zugreifen.
 
-Die meisten dieser Traffic-Filterregeln stehen allen Kundinnen und Kunden von AEM as a Cloud Service Sites und Forms zur Verfügung.  Sie arbeiten hauptsächlich mit den Eigenschaften und Kopfzeilen von Anfragen, einschließlich IP, Host-Name, Pfad und Benutzeragent.
+Die meisten dieser Traffic-Filterregeln stehen allen Kundinnen und Kunden von AEM as a Cloud Service Sites und Forms zur Verfügung. Sie arbeiten hauptsächlich mit den Eigenschaften und Kopfzeilen von Anfragen, einschließlich IP, Host-Name, Pfad und Benutzeragent.
 
 Eine Unterkategorie von Traffic-Filterregeln erfordert entweder eine Lizenz für erweiterte Sicherheit oder eine Lizenz für WAF-DDoS-Schutz. Diese leistungsstarken Regeln werden als Traffic-Filterregeln für WAF (Web Application Firewall, kurz: WAF-Regeln) bezeichnet und haben Zugriff auf die [WAF-Flags](#waf-flags-list), die weiter unten in diesem Artikel beschrieben werden.
 
@@ -163,7 +163,7 @@ Das Format der Traffic-Filterregeln in der Datei `cdn.yaml` wird im Folgenden be
 |---|---|---|---|---|---|
 | name | X | X | `string` | - | Regelname (64 Zeichen lang, darf nur alphanumerische Zeichen und „-“ enthalten.) |
 | wenn | X | X | `Condition` | - | Die Grundstruktur ist:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[Siehe Syntax für Bedingungsstruktur](#condition-structure) weiter unten, in dem die Getter, Eigenschaften und die Kombination mehrerer Bedingungen beschrieben werden. |
-| Aktion | X | X | `Action` | protokollieren | protokollieren, zulassen, blockieren oder Aktionsobjekt Standard ist „protokollieren“ |
+| Aktion | X | X | `Action` | protokollieren | protokollieren, zulassen, blockieren oder Aktionsobjekt. Standard ist „protokollieren“ |
 | rateLimit | X |   | `RateLimit` | nicht definiert | Ratenbegrenzungskonfiguration. Die Ratenbegrenzung ist deaktiviert, wenn sie nicht definiert ist.<br><br>Weiter unten finden Sie einen separaten Abschnitt mit einer Beschreibung der rateLimit-Syntax sowie Beispiele. |
 
 ### Bedingungsstruktur {#condition-structure}
@@ -242,9 +242,9 @@ Aktionen werden entsprechend ihren Typen in der folgenden Tabelle priorisiert, d
 
 | **Name** | **Zulässige Eigenschaften** | **Bedeutung** |
 |---|---|---|
-| **allow** | `wafFlags` (optional), `alert` (optional, noch nicht veröffentlicht) | Wenn wafFlags nicht vorhanden ist, stoppt die weitere Regelverarbeitung und es wird mit der Bereitstellung der Antwort fortgefahren. Wenn wafFlags vorhanden ist, deaktiviert dies die angegebenen WAF-Schutzmechanismen und fährt mit der weiteren Regelverarbeitung fort.  <br>Wenn ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel in einem 5-minütigen Fenster zehnmal ausgelöst wird. Diese Funktion wurde noch nicht veröffentlicht. Im Abschnitt [Warnhinweise für Traffic-Filterregeln](#traffic-filter-rules-alerts) finden Sie weitere Informationen zur Teilnahme am Early-Adopter-Programm. |
+| **allow** | `wafFlags` (optional), `alert` (optional, noch nicht veröffentlicht) | Wenn wafFlags nicht vorhanden ist, stoppt die weitere Regelverarbeitung und es wird mit der Bereitstellung der Antwort fortgefahren. Wenn wafFlags vorhanden ist, deaktiviert dies die angegebenen WAF-Schutzmechanismen und fährt mit der weiteren Regelverarbeitung fort. <br>Wenn ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel in einem 5-minütigen Fenster zehnmal ausgelöst wird. Diese Funktion wurde noch nicht veröffentlicht. Im Abschnitt [Warnhinweise für Traffic-Filterregeln](#traffic-filter-rules-alerts) finden Sie weitere Informationen zur Teilnahme am Early-Adopter-Programm. |
 | **block** | `status, wafFlags` (optional und sich gegenseitig ausschließen), `alert` (optional, noch nicht veröffentlicht) | Wenn wafFlags nicht vorhanden ist, wird der HTTP-Fehler unter Umgehung aller anderen Eigenschaften zurückgegeben. Der Fehler-Code wird durch die Statuseigenschaft definiert bzw. standardmäßig auf 406 gesetzt. Wenn wafFlags vorhanden ist, ermöglicht dies bestimmte WAF-Schutzmaßnahmen und fährt mit der weiteren Regelverarbeitung fort. <br>Wenn ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel in einem 5-minütigen Fenster zehnmal ausgelöst wird. Diese Funktion wurde noch nicht veröffentlicht. Im Abschnitt [Warnhinweise für Traffic-Filterregeln](#traffic-filter-rules-alerts) finden Sie weitere Informationen zur Teilnahme am Early-Adopter-Programm. |
-| **log** | `wafFlags` (optional), `alert` (optional, noch nicht veröffentlicht) | protokolliert die Tatsache, dass die Regel ausgelöst wurde, hat jedoch ansonsten keine Auswirkung auf die Verarbeitung. wafFlags hat keine Auswirkung.  <br>Wenn ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel in einem 5-minütigen Fenster zehnmal ausgelöst wird. Diese Funktion wurde noch nicht veröffentlicht. Im Abschnitt [Warnhinweise für Traffic-Filterregeln](#traffic-filter-rules-alerts) finden Sie weitere Informationen zur Teilnahme am Early-Adopter-Programm. |
+| **log** | `wafFlags` (optional), `alert` (optional, noch nicht veröffentlicht) | protokolliert die Tatsache, dass die Regel ausgelöst wurde, hat jedoch ansonsten keine Auswirkung auf die Verarbeitung. wafFlags hat keine Auswirkung. <br>Wenn ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel in einem 5-minütigen Fenster zehnmal ausgelöst wird. Diese Funktion wurde noch nicht veröffentlicht. Im Abschnitt [Warnhinweise für Traffic-Filterregeln](#traffic-filter-rules-alerts) finden Sie weitere Informationen zur Teilnahme am Early-Adopter-Programm. |
 
 ### WAF-Flags-Liste {#waf-flags-list}
 
@@ -255,12 +255,12 @@ Die `wafFlags`-Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln v
 | SQLI | SQL-Injektion | SQL-Injektion ist der Versuch, durch die Ausführung beliebiger Datenbankabfragen Zugriff auf eine Anwendung zu erhalten oder privilegierte Informationen zu erhalten. |
 | BACKDOOR | Backdoor | Ein Backdoor-Signal ist eine Anfrage, die versucht festzustellen, ob eine gemeinsame Backdoor-Datei auf dem System vorhanden ist. |
 | CMDEXE | Befehlsausführung | Befehlsausführung ist der Versuch, durch beliebige Systembefehle mithilfe von Benutzereingaben die Kontrolle über ein Zielsystem zu erlangen oder ein Zielsystem zu beschädigen. |
-| CMDEXE-NO-BIN | Befehlsausführung, außer bei `/bin/` | Gewährleistung des gleichen Schutzniveaus wie `CMDEXE` beim Deaktivieren von false-positiv auf `/bin` aufgrund AEM Architektur. |
+| CMDEXE-NO-BIN | Befehlsausführung, außer für `/bin/` | Gewährleisten Sie das gleiche Schutzniveau wie `CMDEXE`, während falsch positive Ergebnisse für `/bin` aufgrund der AEM-Architektur deaktiviert werden. |
 | XSS | Cross-Site-Scripting | Cross-Site-Scripting ist der Versuch, das Konto einer Benutzerin oder eines Benutzers oder die Webbrowsing-Sitzung durch schädlichen JavaScript-Code zu ersetzen. |
 | TRAVERSAL | Verzeichnistraversierung | Verzeichnistraversierung ist der Versuch, in einem System durch privilegierte Ordner zu navigieren, in der Hoffnung, vertrauliche Informationen zu erhalten. |
 | USERAGENT | Angriffs-Tooling | Angriffs-Tooling ist der Einsatz automatisierter Software zur Identifizierung von Sicherheitslücken oder zum Versuch, eine entdeckte Anfälligkeit auszunutzen. |
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI-Angriffe versuchen, die [Log4Shell-Anfälligkeit](https://en.wikipedia.org/wiki/Log4Shell) in Log4J-Versionen vor 2.16.0 auszunutzen. |
-| BHH | Bad Hop Headers | Bad Hop Headers weisen auf einen HTTP-Schmuggelversuch durch einen fehlerhaften Transfer-Encoding(TE)- oder Content-Length(CL)-Header oder einen korrekt formatierten TE- und CL-Header hin. |
+| BHH | Bad Hop Headers | Bad Hop Headers weisen auf einen HTTP-Schmuggelversuch durch einen fehlerhaften Transfer-Encoding (TE)- oder Content-Length(CL)-Header oder einen korrekt formatierten TE- und CL-Header hin. |
 | CODEINJECTION | Code-Injektion | Code Injection ist der Versuch, ein Zielsystem durch beliebige Anwendungscode-Befehle durch Benutzereingaben zu steuern oder zu beschädigen. |
 | ABNORMALPATH | Anormaler Pfad | Anormaler Pfad bedeutet, dass der ursprüngliche Pfad vom normalisierten Pfad abweicht (z. B. `/foo/./bar` wird normalisiert in `/foo/bar`) |
 | DOUBLEENCODE | Doppelte Codierung | Bei der doppelten Codierung wird geprüft, ob HTML-Zeichen doppelt codiert werden |
@@ -273,7 +273,7 @@ Die `wafFlags`-Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln v
 | TORNODE | Tor-Traffic | Tor ist eine Software, die die Identität einer Benutzerin oder eines Benutzers verschleiert. Eine Spitze im Tor-Traffic kann darauf hinweisen, dass eine angreifende Person versucht, ihren Standort zu verschleiern. |
 | NULLBYTE | Null-Byte | Null-Bytes werden normalerweise nicht in einer Anfrage angezeigt und weisen darauf hin, dass die Anfrage falsch formatiert ist und möglicherweise schädlich ist. |
 | PRIVATEFILE | Private Dateien | Private Dateien sind vertraulich, beispielsweise ein Apache `.htaccess` -Datei oder einer Konfigurationsdatei, die vertrauliche Informationen übergeben kann |
-| SCANNER | Scanner | Identifiziert beliebte Scan-Dienste und -Werkzeuge |
+| SCANNER | Scanner | Identifiziert beliebte Scan-Dienste und -Werkzeuge. |
 | RESPONSESPLIT | HTTP-Antwortaufteilung | Gibt an, wann CRLF-Zeichen als Eingabe an die Anwendung gesendet werden, um Kopfzeilen in die HTTP-Antwort einzufügen. |
 | XML-ERROR | XML-Codierungsfehler | Ein POST-, PUT- oder PATCH-Anfrageinhalt, für den in der Anfragekopfzeile angegeben wird, dass der „Content-Type“ XML enthält, der jedoch XML-Parsing-Fehler aufweist. Dies hängt häufig mit einem Programmierfehler oder einer automatisierten oder schädlichen Anfrage zusammen. |
 
@@ -291,7 +291,7 @@ Die `wafFlags`-Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln v
 
 ## Regelbeispiele {#examples}
 
-Es folgen einige Regelbeispiele. Weitere Informationen zu Beispielen für Ratenbegrenzungsregeln  finden Sie weiter unten im Abschnitt [Ratenbegrenzung](#rules-with-rate-limits).
+Es folgen einige Regelbeispiele. Weitere Informationen zu Beispielen für Ratenbegrenzungsregeln finden Sie weiter unten im Abschnitt [Ratenbegrenzung](#rules-with-rate-limits).
 
 **Beispiel 1**
 
@@ -335,7 +335,7 @@ data:
 
 **Beispiel 3**
 
-Diese Regel blockiert Veröffentlichungsanfragen, die den Abfrageparameter enthalten `foo`, aber erlaubt jede Anfrage von IP 192.168.1.1:
+Diese Regel blockiert Anfragen bei der Veröffentlichung, die den Abfrageparameter `foo` enthalten, erlaubt jedoch jede Anfrage von der IP 192.168.1.1:
 
 ```
 kind: "CDN"
@@ -360,7 +360,7 @@ data:
 
 **Beispiel 4**
 
-Diese Regel blockiert Anforderungen an den Pfad `/block-me` auf der Veröffentlichungsinstanz und blockiert alle Anforderungen, die mit einer `SQLI` oder `XSS` Muster. Dieses Beispiel enthält eine WAF-Traffic-Filterregel, die auf [WAF-Flags](#waf-flags-list) `SQLI` und `XSS` verweist und daher eine separate Lizenz erfordert.
+Diese Regel blockiert Anfragen bei der Veröffentlichung an den Pfad `/block-me` und blockiert alle Anfragen, die mit einem `SQLI`- oder `XSS`-Muster übereinstimmen. Dieses Beispiel enthält eine WAF-Traffic-Filterregel, die auf [WAF-Flags](#waf-flags-list) `SQLI` und `XSS` verweist und daher eine separate Lizenz erfordert.
 
 ```
 kind: "CDN"
@@ -426,7 +426,7 @@ Ratenbegrenzungsregeln können nicht auf WAF-Flags verweisen. Sie stehen allen K
 
 Die Ratenbegrenzungen werden pro CDN-POP berechnet. Angenommen, POPs in Montreal, Miami und Dublin weisen Traffic-Raten von 80, 90 bzw. 120 Anfragen pro Sekunde auf. Außerdem ist die Regel zur Begrenzung der Rate auf einen Grenzwert von 100 festgelegt. In diesem Fall wäre nur der Traffic nach Dublin begrenzt.
 
-Ratenbeschränkungen werden anhand von Traffic, der die Kante trifft, Traffic, der die Quelle trifft, oder der Anzahl der Fehler bewertet.
+Ratenbegrenzungen werden entweder anhand von Traffic bewertet, der am Edge ankommt bzw. der am Ursprung ankommt, oder anhand der Anzahl der Fehler.
 
 ### rateLimit-Struktur {#ratelimit-structure}
 
@@ -435,7 +435,7 @@ Ratenbeschränkungen werden anhand von Traffic, der die Kante trifft, Traffic, d
 | limit | Ganzzahl von 10 bis 10.000 | erforderlich | Anfragerate (pro CDN-POP) in Anfragen pro Sekunde, für die die Regel ausgelöst wird. |
 | window | Ganzzahl: 1, 10 oder 60 | 10 | Stichprobenfenster in Sekunden, für das die Anfragerate berechnet wird. Die Genauigkeit der Zähler hängt von der Größe des Fensters ab (größere Genauigkeit des Fensters). Beispielsweise kann man eine Genauigkeit von 50 % für das 1-Sekunden-Fenster und eine Genauigkeit von 90 % für das 60-Sekunden-Fenster erwarten. |
 | penalty | Ganzzahl von 60 bis 3600 | 300 (5 Minuten) | Ein Zeitraum in Sekunden, für den übereinstimmende Anfragen blockiert werden (auf die nächste Minute gerundet). |
-| Anzahl | all, fetts, errors | alle | wird anhand des Edge-Traffics (alles), des Ursprungs-Traffics (Abrufe) oder der Anzahl der Fehler (Fehler) bewertet. |
+| Anzahl | alle, Abrufe, Fehler | alle | wird basierend auf Traffic am Edge (alle), Ursprungs-Traffic (Abrufe) oder der Anzahl der Fehler (Fehler) bewertet. |
 | groupBy | array[Getter] | keine | Der Zähler der Ratenbegrenzer wird durch eine Reihe von Anfrageeigenschaften aggregiert (z. B. clientIp). |
 
 ### Beispiele {#ratelimiting-examples}
@@ -492,7 +492,7 @@ data:
 
 >[!NOTE]
 >
->Diese Funktion wurde noch nicht veröffentlicht.  Um über das Early-Adopter-Programm Zugriff zu erhalten, senden Sie eine E-Mail an **aemcs-waf-adopter@adobe.com**.
+>Diese Funktion wurde noch nicht veröffentlicht. Um über das Early-Adopter-Programm Zugriff zu erhalten, senden Sie eine E-Mail an **aemcs-waf-adopter@adobe.com**.
 
 Eine Regel kann so konfiguriert werden, dass eine Benachrichtigung des Aktionszentrums gesendet wird, wenn sie innerhalb eines 5-minütigen Fensters zehnmal ausgelöst wird. Eine solche Regel warnt Sie, wenn bestimmte Traffic-Muster auftreten, sodass Sie alle erforderlichen Maßnahmen treffen können. Weitere Informationen [Aktionszentrum](/help/operations/actions-center.md), einschließlich der Einrichtung der erforderlichen Benachrichtigungsprofile für den Empfang von E-Mails.
 
@@ -626,7 +626,7 @@ Nachfolgend finden Sie eine Liste der in CDN-Protokollen verwendeten Feldnamen s
 | *cache* | Der Status des Caches. Mögliche Werte sind HIT, MISS oder PASS |
 | *status* | Der HTTP-Status-Code als ganzzahliger Wert. |
 | *res_age* | Die Zeit in Sekunden, für die eine Antwort zwischengespeichert wurde (in allen Knoten). |
-| *pop* | das Rechenzentrum des CDN-Cache-Servers |
+| *pop* | das Rechenzentrum des CDN-Cache-Servers. |
 | *rules* | Der Name aller übereinstimmenden Regeln.<br><br>Gibt auch an, ob die Übereinstimmung zu einer Blockierung führte. <br><br>Beispiel: „`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`“ <br><br>Leer, wenn keine Regeln übereinstimmten. |
 
 ## Dashboard-Tools {#dashboard-tooling}
