@@ -3,21 +3,21 @@ title: Laden von Dropdown-Listenoptionen aus der URL
 description: Die Dropdown-Listenoptionen sind in einer gesonderten Tabelle enthalten und werden dann über die angegebene URL in die primäre Tabelle importiert.
 feature: Edge Delivery Services
 source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
 
 # Laden von Dropdown-Listenoptionen aus der URL
 
-Forms enthält häufig Dropdown-Menüs, aus denen Benutzer vordefinierte Optionen auswählen können. Diese Optionen werden normalerweise im Formular selbst definiert, aber die Verwaltung langer Listen kann schwerfällig sein. In diesem Handbuch wird beschrieben, wie Sie die Formularbearbeitung verbessern können, indem Sie Dropdown-Optionen aus einer separaten Tabelle über eine URL laden.
+Forms enthält häufig Dropdown-Menüs, aus denen Benutzende vordefinierte Optionen auswählen können. Diese Optionen werden normalerweise im Formular selbst definiert, aber die Verwaltung langer Listen kann umständlich sein. Dieses Handbuch beschreibt, wie Sie die Bearbeitung von Formularen verbessern können, indem Sie Dropdown-Optionen aus einer separaten Tabelle über eine URL laden.
 
 
 Die Vorteile des Ladens von Dropdown-Optionen aus einer separaten Tabelle sind:
 
-* Vereinfachte Verwaltung: Verwaltung von Dropdown-Optionen an einem zentralen Ort, um Aktualisierungen und Ergänzungen zu erleichtern.
+* Vereinfachte Verwaltung: Verwaltung von Dropdown-Optionen an einer zentralen Stelle, um Aktualisierungen und Ergänzungen zu erleichtern.
 * Verbesserte Effizienz: Manuelles Hinzufügen langer Optionslisten innerhalb der Formulardefinition ist nicht erforderlich.
 
 
@@ -33,20 +33,22 @@ Am Ende dieses Artikels werden Sie Folgendes gelernt haben:
 
 ## Definieren von Optionen auf einem separaten Blatt {#define-options}
 
-Definieren von Optionen in einer separaten Tabelle
+Definieren von Optionen in einer separaten Kalkulationstabelle
 
-1. Erstellen Sie eine Tabelle:
-   1. Suchen Sie Ihren AEM Projektordner in Microsoft® SharePoint oder Google Drive.
-   1. Fügen Sie ein neues Blatt hinzu. Beispiel: &quot;freigegebenes Land&quot;.
-1. Definieren Sie Optionsspalten: Fügen Sie zwei Spalten hinzu: &quot;Option&quot;und &quot;Wert&quot;.
-   * &quot;Option&quot; definiert den im Dropdown-Menü angezeigten Text.
-   * &quot;Wert&quot;definiert den gesendeten Wert, wenn ein Benutzer die Option auswählt.
+1. Erstellen einer Kalkulationstabelle:
+   1. Suchen Sie Ihren AEM-Projektordner in Microsoft® SharePoint oder Google Drive.
+   1. Fügen Sie eine neue Tabelle hinzu. Zum Beispiel „shared-country“ (gemeisames Land).
+1. Definieren Sie die Optionsspalten:
+Fügen Sie zwei Spalten hinzu: „Option“ und „Wert“.
+   * „Option“ definiert den im Dropdown-Menü angezeigten Text.
+   * „Wert“ definiert den Wert, der übertragen wird, wenn die Option ausgewählt wird.
 
    >[!NOTE]
    >
-   >Wenn sowohl Option als auch Wert identisch sind, ist nur die Spalte &quot;Option&quot;erforderlich.
+   >Wenn sowohl Option als auch Wert identisch sind, ist nur die Spalte „Option“ erforderlich.
 
-1. Füllen Sie das Arbeitsblatt aus: Geben Sie in der Spalte &quot;Option&quot;(und ggf. &quot;Wert&quot;) die Länderoptionen ein.
+1. Füllen Sie die Kalkulationstabelle aus:
+Geben Sie Ihre Länderoptionen in die Spalte „Option“ (und ggf. in die Spalte „Wert“) ein.
 
    Die Struktur finden Sie im folgenden Beispiel.
 

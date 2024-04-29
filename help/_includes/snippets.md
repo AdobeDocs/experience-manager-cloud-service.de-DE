@@ -1,8 +1,8 @@
 ---
 source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '314'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 # Snippets {#snippets}
@@ -37,7 +37,7 @@ ht-degree: 96%
 * [Senden von Daten adaptiver Formulare an einen AEM-Workflow](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Verwenden des Formularportals zur Auflistung von adaptiven AEM-Formularen auf einer AEM-Website](/help/forms/configure-forms-portal.md)
 * [Hinzufügen von Versionen, Kommentaren und Anmerkungen zu einem adaptiven Formular](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-* [Adaptive Forms vergleichen](/help/forms/compare-forms.md)
+* [Vergleichen adaptiver Formulare](/help/forms/compare-forms.md)
 
 
 ## Übermittlungsaktionen für adaptive Formulare {#af-submit-action}

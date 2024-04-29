@@ -6,9 +6,9 @@ feature: Adaptive Forms, APIs
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 126af719cfd2c9361d0e7768b3b65e1149b6a989
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1988'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -173,81 +173,81 @@ Der DocAssurance-Dienst umfasst die Signature- und Verschlüsselungs-APIs:
 
 Signature-APIs ermöglichten Ihrem Unternehmen, die Sicherheit und Vertraulichkeit verteilter und empfangener Adobe PDF-Dokumente zu gewährleisten. <!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> Die Sicherheitsfunktionen werden auf das Dokument selbst angewendet, das Dokument bleibt für seinen gesamten Lebenszyklus sicher und kontrolliert. Das Dokument bleibt außerhalb der Firewall sicher, wenn es offline heruntergeladen und an Ihr Unternehmen zurückgesendet wird. Sie können die folgenden Aufgaben mithilfe der Signature-APIs ausführen:
 
-* Fügen Sie einem PDF-Dokument ein sichtbares Signaturfeld hinzu.
-* Fügen Sie einem PDF-Dokument ein unsichtbares Signaturfeld hinzu.
+* Einem PDF-Dokument ein sichtbares Signaturfeld hinzufügen.
+* Einem PDF-Dokument ein unsichtbares Signaturfeld hinzufügen.
 * Das angegebene Signaturfeld in einem PDF-Dokument signieren.
 * Ein PDF-Dokument zertifizieren
 
 ### Verschlüsselungs-APIs
 
-Mit Verschlüsselungs-APIs können Sie Dokumente verschlüsseln und entschlüsseln. Wird ein Dokument verschlüsselt, ist sein Inhalt nicht mehr lesbar. Eine autorisierte Person kann das Dokument entschlüsseln, um Zugriff auf den Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt ist, muss der Benutzer das Kennwort zum Öffnen angeben, bevor das Dokument in Adobe Reader oder Adobe Acrobat angezeigt werden kann. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
+Mit Verschlüsselungs-APIs können Sie Dokumente verschlüsseln und entschlüsseln. Wird ein Dokument verschlüsselt, ist sein Inhalt nicht mehr lesbar. Eine autorisierte Person kann das Dokument entschlüsseln, um Zugriff auf den Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, muss die Benutzerin bzw. der Benutzer das Kennwort zum Öffnen angeben, damit das Dokument in Adobe Reader oder Adobe Acrobat angezeigt werden kann. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
 
 Sie können diese Aufgaben mithilfe der Verschlüsselungs-APIs erledigen:
 
 * Verschlüsseln eines PDF-Dokuments mit einem Kennwort.
 * Entfernen der kennwortbasierten Verschlüsselung aus einem PDF-Dokument.
 * Abrufen des Sicherheitstyps, der zum Schützen eines PDF-Dokuments verwendet wurde.
-* Gibt den auf ein PDF-Dokument angewendeten Sicherheitstyp zurück.
+* Rückgabe des Sicherheitstyps, der auf ein PDF-Dokument angewendet wird.
 
 Sowohl Signature-APIs als auch Verschlüsselungs-APIs sind [synchrone APIs](#types-of-communications-apis-types).
 
-### Nutzungsrechte-APIs
+### Verwendungsrechte von APIs
 
-<span class="preview"> Die Funktion &quot;Verwendungsrechte&quot;befindet sich im Programm &quot;Frühzeitige Anmeldung&quot;. Sie können von Ihrer offiziellen E-Mail-ID aus an aem-forms-ea@adobe.com schreiben, um dem frühen Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern. </span>
+<span class="preview"> Die Funktion „Verwendungsrechte“ ist im Rahmen des Early-Adopter-Programms verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
-Die Funktion &quot;Verwendungsrechte&quot;ermöglicht Ihrem Unternehmen die einfache Freigabe interaktiver PDF-Dokumente, indem die Funktionalität von Adobe Reader um zusätzliche Verwendungsrechte erweitert wird. Der Dienst funktioniert mit Adobe Reader 7.0 oder höher und fügt einem PDF-Dokument Verwendungsrechte hinzu. Diese Aktion aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument mit Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments.
+Die Verwendungsrechte-Funktion ermöglicht Unternehmen die einfache Freigabe interaktiver PDF-Dokumente durch Erweitern der Funktionalität von Adobe Reader durch zusätzliche Verwendungsrechte. Der Dienst funktioniert mit Adobe Reader 7.0 oder höher und fügt einem PDF-Dokument Verwendungsrechte hinzu. Diese Aktion aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument in Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments.
 
 Bei PDF-Dokumenten, denen entsprechende Verwendungsrechte hinzugefügt wurden, können Empfängerinnen und Empfänger die folgenden Aktivitäten in Adobe Reader durchführen:
 
-* Ausfüllen von PDF-Dokumenten und Formularen online oder offline, sodass Empfänger lokale Kopien speichern können, ohne die hinzugefügten Informationen zu verlieren.
-* Speichern Sie PDF-Dokumente auf einer lokalen Festplatte, um das Originaldokument und alle weiteren Kommentare, Daten oder Anhänge beizubehalten.
-* Anhängen von Dateien und Medienclips an PDF-Dokumente.
-* Signieren, Zertifizieren und Authentifizieren von PDF-Dokumenten durch die Anwendung digitaler Signaturen unter Verwendung von PKI-Technologien (PKI), die dem Industriestandard entsprechen.
-* Elektronische Übermittlung ausgefüllter oder mit Anmerkungen versehener PDF-Dokumente.
-* Verwenden Sie PDF-Dokumente und -Formulare als intuitives Entwicklungs-Frontend für interne Datenbanken und Webdienste.
+* Ausfüllen von PDF-Dokumenten und Formularen online oder offline, sodass Empfängerinnen und Empfänger lokale Kopien speichern können und dabei die hinzugefügten Informationen erhalten bleiben.
+* Speichern von PDF-Dokumenten auf einer lokalen Festplatte, damit das Originaldokument und alle weiteren Kommentare, Daten oder Anlagen erhalten bleiben.
+* Anhängen von Dateien und Medien-Clips an PDF-Dokumente.
+* Signieren, Zertifizieren und Authentifizieren von PDF-Dokumenten durch die Anwendung digitaler Signaturen mithilfe von PKI-Technologien (PKI = Public Key Infrastructure), die dem Branchenstandard entsprechen.
+* Elektronisches Senden ausgefüllter oder mit Anmerkungen versehener PDF-Dokumente.
+* Verwenden von PDF-Dokumenten und -Formularen als intuitives Entwicklungs-Frontend für interne Datenbanken und Web-Dienste.
 * Freigeben von PDF-Dokumenten für andere Benutzende, sodass Prüfende mit intuitiven Markup-Werkzeugen Kommentare hinzufügen können Zu diesen Werkzeugen gehören elektronische Haftnotizen, Stempel, Hervorheben und Durchstreichen. Dieselben Funktionen sind in Acrobat verfügbar.
-* Unterstützung der Dekodierung mit Barcode für Forms.
+* Unterstützen der Dekodierung von Barcode-Formularen.
 
-Diese speziellen Verwendungsrechtefunktionen werden automatisch aktiviert, wenn ein PDF-Dokument mit aktivierten Benutzerrechten in Adobe Reader geöffnet wird. Wenn der Benutzer mit einem Dokument mit aktivierten Benutzerrechten fertig ist, sind diese Funktionen in Adobe Reader erneut deaktiviert. Sie bleiben deaktiviert, bis die Benutzenden ein anderes PDF-Dokument mit aktivierten Rechten erhält.
+Diese speziellen Verwendungsrechte werden automatisch aktiviert, wenn ein PDF-Dokument mit aktivierten Rechten in Adobe Reader geöffnet wird. Wenn Benutzende die Arbeit mit einem Dokument mit aktivierten Rechten beendet haben, sind diese Funktionen in Adobe Reader wieder deaktiviert. Sie bleiben deaktiviert, bis die Person ein anderes PDF-Dokument mit aktivierten Rechten erhält.
 
-#### Verwendungsrechte aktivieren oder deaktivieren
+#### Aktivieren oder Deaktivieren von Verwendungsrechten
 
-Die verschiedenen Verwendungsrechtefunktionen für die Erweiterung der PDF Reader-Dienste sind:
+Die verschiedenen Verwendungsrechte-Funktionen für die Erweiterung der PDF Reader-Dienste sind:
 
-* **Dekodierung von Barcodes**: So dekodieren Sie Barcodes im PDF-Dokument.
+* **Barcode-Dekodierung**: Zum Dekodieren von Barcodes innerhalb des PDF-Dokuments.
 
-* **Kommentare**: Zum Offlinekomprimieren des PDF-Dokuments.
+* **Kommentare**: Um das PDF-Dokument offline zu kommentieren.
 
-* **Kommentare online**: Zum Online-Kommentar zum PDF-Dokument.
+* **Online-Kommentare**: Um das PDF-Dokument online zu kommentieren.
 
-* **Digitale Signatur**: So fügen Sie einem PDF-Dokument digitale Signaturen hinzu.
+* **Digitale Signatur**: Um einem PDF-Dokument digitale Signaturen hinzuzufügen.
 
-* **Dynamische Formularfelder**: So fügen Sie einem PDF-Dokument Formularfelder hinzu.
+* **Dynamische Formularfelder**: Um einem PDF-Dokument Formularfelder hinzuzufügen.
 
-* **Dynamische Formularseiten**: So fügen Sie Formularseiten zu einem PDF-Dokument hinzu.
+* **Dynamische Formularseiten**: Um einem PDF-Dokument Formularseiten hinzuzufügen.
 
-* **Eingebettete Dateien**: So betten Sie Dateien in ein PDF-Dokument ein.
+* **Eingebettete Dateien**: Um Dateien in ein PDF-Dokument einzubetten.
 
-* **Formular-Datenimport**: So importieren Sie Formulardaten in ein PDF-Dokument.
+* **Formulardaten-Import**: Um Formulardaten in ein PDF-Dokument zu importieren.
 
-* **Formulardaten exportieren**: So importieren Sie Formulardaten in ein PDF-Dokument.
+* **Formulardaten-Export**: Um Formulardaten in ein PDF-Dokument zu importieren.
 
-* **Ausfüllen des Formulars**: Zum Ausfüllen von Formularfeldern in einem PDF-Dokument.
+* **Formular ausfüllen**: Um Formularfelder in einem PDF-Dokument auszufüllen.
 
-* **Online Forms**: Um über ein PDF-Dokument auf einen Webdienst oder eine Datenbank zuzugreifen.
+* **Online-Formulare**: Um von einem PDF-Dokument aus auf einen Web-Dienst oder eine Datenbank zuzugreifen.
 
-* **Submit Standalone**: Zum Senden von Formulardaten offline von einem PDF-Dokument.
+* **Eigenständig übermitteln**: Um Formulardaten offline aus einem PDF-Dokument zu übermitteln.
 
-#### Verwendungsrechte extrahieren
+#### Extrahieren von Verwendungsrechten
 
-Dies hilft beim Abrufen der aktivierten oder deaktivierten Verwendungsrechte für ein PDF-Dokument für die Adobe Acrobat Reader-Erweiterbarkeit.
+Dies hilft beim Abrufen der aktivierten oder deaktivierten Verwendungsrechte für ein PDF-Dokument für die Erweiterbarkeit von Adobe Acrobat Reader.
 
 #### Sonstige Funktionen
 
-* **Nachricht**: Die Meldung, die in Adobe Acrobat Reader beim Öffnen eines PDF-Dokuments mit einer oder mehreren angewendeten Verwendungsrechten angezeigt wird.
-* **Kennwort entsperren**: Das zum Öffnen eines verschlüsselten PDF-Dokuments erforderliche Kennwort. Normalerweise ist dies das Kennwort zum Öffnen des Dokuments, aber wenn das PDF-Dokument zusätzlich durch ein Berechtigungskennwort geschützt ist, kann es entweder zum Öffnen verwendet werden.
+* **Meldung**: Die Meldung, die in Adobe Acrobat Reader beim Öffnen eines PDF-Dokuments mit einem oder mehreren angewendeten Verwendungsrechten angezeigt wird.
+* **Kennwort entsperren**: Das zum Öffnen eines verschlüsselten PDF-Dokuments erforderliche Kennwort. Normalerweise ist dies das Kennwort zum Öffnen des Dokuments, aber wenn das PDF-Dokument zusätzlich durch ein Berechtigungskennwort geschützt ist, können beide Kennwörter zum Öffnen des Dokuments verwendet werden.
 
-Die [Dokumentation zur API-Referenz](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) enthält detaillierte Informationen zu allen Parametern, Authentifizierungsmethoden und verschiedenen Services, die von APIs bereitgestellt werden. Die Dokumentation zur API-Referenz ist auch im Format .yaml verfügbar. Sie können die .yaml-Datei herunterladen und in Postman hochladen, um die Funktionalität der APIs zu überprüfen.
+Die [Dokumentation zur API-Referenz](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) enthält detaillierte Informationen zu allen Parametern, Authentifizierungsmethoden und verschiedenen Services, die von APIs bereitgestellt werden. Die Dokumentation zur API-Referenz ist auch im Format .yaml verfügbar. Sie können die .yaml-Datei herunterladen und sie in Postman hochladen, um die Funktionalität der APIs zu überprüfen.
 
 ## Typen von Kommunikations-APIs {#types}
 

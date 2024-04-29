@@ -3,9 +3,9 @@ title: Aufnehmen von Inhalten in Cloud Service
 description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ihrem Migrationssatz in eine Cloud Service-Zielinstanz aufnehmen können.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2876'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -61,16 +61,16 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager au
    >[!IMPORTANT]
    > Sie können eine Aufnahme in der Zielumgebung nur initiieren, wenn Sie der lokalen Gruppe der **AEM-Admins** im Ziel-Author-Service von Cloud Service angehören. Wenn Sie eine Aufnahme nicht starten können, finden Sie unter [Aufnahme kann nicht gestartet werden](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) weitere Informationen dazu.
 
-1. Nach Auswahl der Aufnahmeoptionen wird eine geschätzte Dauer angezeigt. Dies ist eine Schätzung mit dem besten Aufwand, die auf historischen Daten ähnlicher Aufnahmen basiert.
+1. Nach Auswahl der Aufnahmeoptionen wird eine geschätzte Dauer angezeigt. Es handelt sich um eine bestmögliche Schätzung auf der Grundlage historischer Daten ähnlicher Aufnahmen.
 
-   * Diese Schätzung wird nur berechnet und angezeigt, wenn die Werte der Extraktion &quot;Größe überprüfen&quot;erfasst wurden und verfügbar sind.
-   * Dieser Wert ist eine Schätzung und sollte, obwohl intelligent berechnet, nicht als exakt betrachtet werden. Verschiedene Faktoren können die tatsächliche Dauer ändern.
-   * Während die Aufnahme ausgeführt wird, ist dieser Wert auch im Dialogfeld &quot;Dauer&quot;verfügbar, auf den über &quot;**Anzeigedauer**&quot;Aktion der Aufnahme.
+   * Diese Schätzung wird nur berechnet und angezeigt, wenn die Werte „Größe überprüfen“ der Extraktion erfasst wurden und verfügbar sind.
+   * Dieser Wert ist eine Schätzung und sollte, obwohl er sorgfältig berechnet wurde, nicht als exakt angesehen werden. Verschiedene Faktoren können die tatsächliche Dauer ändern.
+   * Während die Aufnahme läuft, ist dieser Wert auch im Dauer-Dialog verfügbar, der über die Aktion „**Dauer anzeigen**“ der Aufnahme aufgerufen werden kann.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_estimate"
 >title="Geschätzte Aufnahmedauer"
->abstract="Es kann eine ungefähre Dauer einer bestimmten Aufnahme angezeigt werden, um einen Eindruck davon zu vermitteln, wie viel Zeit sie in Anspruch nehmen wird. Allerdings gibt es Einschränkungen hinsichtlich der Genauigkeit."
+>abstract="Die ungefähre Dauer einer bestimmten Aufnahme kann angezeigt werden, um einen allgemeinen Eindruck davon zu vermitteln, wie lange die Aufnahme dauern wird. Es gibt Einschränkungen hinsichtlich der Genauigkeit."
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 

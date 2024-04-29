@@ -5,9 +5,9 @@ role: User,Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 source-git-commit: 3912f52112b3d9dcb568e477c33d3f4b28064b66
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1177'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -45,10 +45,10 @@ Verwenden Sie [!DNL Assets view], um die folgenden Asset-Management-Aufgaben aus
 
 * ![move icon](assets/do-not-localize/move-icon.png) Verschiebt das ausgewählte Asset oder den ausgewählten Ordner an einen anderen Speicherort in der Repository-Hierarchie.
 
-* ![rename icon](assets/do-not-localize/rename-icon.png) Benennt das ausgewählte Asset oder den ausgewählten Ordner um. Verwenden Sie einen eindeutigen Namen, sonst schlägt die Umbenennung mit einer Warnung fehl. Sie können es mit einem neuen Namen erneut versuchen.
-Außerdem können Sie auf den Titel eines Assets oder Ordners klicken, um es umzubenennen. Erwähnen Sie den neuen Text im **Asset umbenennen** Textfeld und klicken Sie auf **Speichern**. Diese Funktion ist in den Ansichten &quot;Raster&quot;, &quot;Galerie&quot;, &quot;Wasserfall&quot;und &quot;Liste&quot;verfügbar.
+* ![rename icon](assets/do-not-localize/rename-icon.png) Benennt das ausgewählte Asset oder den ausgewählten Ordner um. Verwenden Sie einen eindeutigen Namen, sonst schlägt die Umbenennung mit einer Warnung fehl. Sie können es mit einem anderen Namen erneut versuchen.
+Außerdem können Sie auf den Titel eines Assets oder eines Ordners klicken, um ihn umzubenennen. Geben Sie den neuen Text in das Textfeld **Asset umbenennen** ein und klicken Sie auf **Speichern**. Diese Funktion ist in den Ansichten „Raster“, „Galerie“, „Wasserfall“ und „Liste“ verfügbar.
 
-* ![Symbol für Wasserfallansicht](assets/do-not-localize/waterfall-view.png) [!UICONTROL Wasserfallansicht].
+* ![Symbol „Wasserfallansicht“](assets/do-not-localize/waterfall-view.png) [!UICONTROL Wasserfallansicht].
 
 * ![Symbol „Bibliothek kopieren“](assets/do-not-localize/copy-icon.png) Fügt ein Asset zur Bibliothek hinzu.
 

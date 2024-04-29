@@ -1,11 +1,11 @@
 ---
 title: Verwalten von Sammlungen
-description: Eine Sammlung ist ein Satz von Assets innerhalb der Experience Manager Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden.
+description: Eine Sammlung ist ein Satz von Assets innerhalb der Experience Manager Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzenden gemeinsam verwendet werden.
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 source-git-commit: b2144820ad549332e8a921744717a77824f9e099
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '910'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 86%
 >title="Verwalten von Sammlungen"
 >abstract="Eine Sammlung ist ein Satz von Assets, Ordnern oder sonstigen Sammlungen in der Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzenden gemeinsam verwendet werden. Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten. Sie können mehrere Sammlungen für eine Benutzerin bzw. einen Benutzer freigeben. Jede Sammlung enthält Verweise auf Assets. Die referenzielle Integrität von Assets wird sammlungsübergreifend aufrechterhalten."
 
-Eine Sammlung ist ein Satz von Assets, Ordnern oder sonstigen Sammlungen in der Adobe Experience Manager Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden.
+Eine Sammlung ist ein Satz von Assets, Ordnern oder sonstigen Sammlungen in der Adobe Experience Manager Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzenden gemeinsam verwendet werden.
 
 Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten.
 
@@ -48,7 +48,7 @@ Sie können die folgenden Aufgaben ausführen, um Sammlungen zu verwalten und zu
 
 * [Löschen von Sammlungen](#delete-collection)
 
-* [Berechtigungen für eine private Sammlung verwalten](#manage-permissions-to-a-private-collection)
+* [Verwalten von Berechtigungen für eine private Sammlung](#manage-permissions-to-a-private-collection)
 
 ## Erstellen von Sammlungen {#create-collection}
 
@@ -146,7 +146,7 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 -->
 
-## Anzeigen und Bearbeiten von Sammlungsmetadaten {#view-edit-collection-metadata}
+## Anzeigen und Bearbeiten der Metadaten einer Sammlung {#view-edit-collection-metadata}
 
 Sammlungsmetadaten umfassen Daten zur Sammlung, z. B. Titel und Beschreibung.
 
@@ -188,17 +188,17 @@ Löschen von Sammlungen
 
 1. Klicken Sie auf **[!UICONTROL Löschen]**.
 
-## Berechtigungen für eine private Sammlung verwalten{#manage-permissions-private-collection}
+## Verwalten von Berechtigungen für eine private Sammlung{#manage-permissions-private-collection}
 
-Sie können Administratoren die Verwaltung von [Zugriffsstufen](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) für private Sammlungen, die im Repository verfügbar sind. Sie können Berechtigungen wie `Can View` und `Can Edit` an die Benutzergruppen oder Benutzer. Sie können auch Benutzergruppen Zugriffsverwaltungsberechtigungen zuweisen. Die Benutzer, die private Sammlungen erstellen, sind Eigentümer dieser Sammlungen. Sie können [!UICONTROL Berechtigungen verwalten] Aktion, um den anderen Benutzern Zugriff zu gewähren. Darüber hinaus können Administratoren die Berechtigungen der privaten Sammlungen im [!DNL Experience Manager] Repository.
+Sie können Admins die Verwaltung von [Zugriffsstufen](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) für private Sammlungen erlauben, die im Repository verfügbar sind. Sie können den Benutzergruppen oder Benutzenden Berechtigungen zuweisen, beispielsweise `Can View` und `Can Edit`. Außerdem können Sie Berechtigungen zur Zugriffsberechtigungsverwaltung an Benutzergruppen delegieren. Benutzende, die private Sammlungen erstellen, sind Eigentümerinnen und Eigentümer dieser Sammlungen. Sie können die Aktion [!UICONTROL Berechtigungen verwalten] verwenden, um anderen Benutzenden Zugriff zu gewähren. Darüber hinaus können Admins die Berechtigungen der privaten Sammlungen im [!DNL Experience Manager]-Repository anzeigen und verwalten.
 <!--
 >[!NOTE]
 >
 >Adobe does not recommend to assign permissions to users.
 -->
-Informationen zum Zuweisen der verfügbaren Berechtigungen zu Benutzergruppen finden Sie unter [Berechtigungen zu Benutzergruppen hinzufügen](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Informationen zum Zuweisen der verfügbaren Berechtigungen an Benutzergruppen finden Sie unter [Hinzufügen von Berechtigungen zu Benutzergruppen](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
-Weitere Informationen zum End-to-End-Workflow finden Sie unter [Berechtigungen verwalten](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Weitere Informationen zum vollständigen Workflow finden Sie unter [Verwalten von Berechtigungen](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Nächste Schritte {#next-steps}
 
@@ -206,4 +206,4 @@ Weitere Informationen zum End-to-End-Workflow finden Sie unter [Berechtigungen v
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&amp;lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General#support)
