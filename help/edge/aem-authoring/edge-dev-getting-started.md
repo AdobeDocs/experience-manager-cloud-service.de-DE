@@ -6,7 +6,7 @@ exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 source-git-commit: fc5ffe334873b7b98565f38d5664313b26d5f635
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -130,7 +130,7 @@ Nachdem Sie nun über ein GitHub-Projekt verfügen, müssen Sie eine neue AEM-Si
 >
 >Um Ihre Site mit dem universellen Editor zu bearbeiten, müssen Sie einen Chromium-basierten Browser nutzen.
 
-1. Laden Sie die neueste AEM Authoring mit der Edge Delivery Services-Site-Vorlage von GitHub herunter unter unter [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. Laden Sie die neueste AEM-Authoring-Site-Vorlage mit Edge Delivery Services von GitHub unter [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) herunter.
 
 1. Melden Sie sich bei Ihrer AEM as a Cloud Service-Authoring-Instanz an, navigieren Sie zur Sites-Konsole und tippen oder klicken Sie auf **Erstellen** > **Site aus Vorlage**.
 
@@ -140,9 +140,9 @@ Nachdem Sie nun über ein GitHub-Projekt verfügen, müssen Sie eine neue AEM-Si
 
    ![Importieren von Vorlagen](assets/edge-dev-getting-started/site-templates.png)
 
-1. Laden Sie die von GitHub heruntergeladene Site-Vorlage AEM Authoring mit Edge Delivery Services hoch.
+1. Laden Sie die von GitHub heruntergeladene Site-Vorlage für das AEM-Authoring mit Edge Delivery Services hoch.
 
-   * Die Vorlage darf nur einmal hochgeladen werden. Nach dem Hochladen kann es wiederverwendet werden, um zusätzliche Sites zu erstellen.
+   * Die Vorlage darf nur einmal hochgeladen werden. Nach dem Hochladen kann sie wiederverwendet werden, um zusätzliche Sites zu erstellen.
 
 1. Nach dem Import wird die Vorlage im Assistenten angezeigt. Tippen oder klicken Sie, um sie auszuwählen, und tippen oder klicken Sie dann auf **Weiter**.
 
