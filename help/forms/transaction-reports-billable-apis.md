@@ -6,7 +6,7 @@ exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
 source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
 workflow-type: tm+mt
 source-wordcount: '1411'
-ht-degree: 81%
+ht-degree: 86%
 
 ---
 
@@ -47,12 +47,12 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="Durchschnittliche Dauer für die Formularerstellung"
->abstract="Das Diagramm zeigt die durchschnittliche Zeit, die zum Erstellen eines Formulars benötigt wurde. Jeder Balken im Diagramm stellt ein bestimmtes Formular dar, und die Höhe des Balkens gibt die durchschnittliche Dauer an, die für die Formularerstellung während dieses Zeitraums verwendet wurde."
+>abstract="Das Diagramm zeigt die durchschnittliche Zeit, die zum Erstellen eines Formulars benötigt wurde. Jeder Balken im Diagramm stellt ein bestimmtes Formular dar. Die Höhe des Balkens gibt die durchschnittliche Dauer an, die für die Formularerstellung während dieses Zeitraums verwendet wurde. "
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="Durchschnittliche Dauer der Formularerstellung"
->abstract="Das Diagramm zeigt die durchschnittliche Zeit an, die zum Erstellen und Veröffentlichen eines Formulars benötigt wird, gemessen ab dem ersten Tag, an dem das Formular zur Bearbeitung geöffnet wurde. Das Diagramm stellt Daten bereit, die für die aktuelle AEM Forms-Autoreninstanz spezifisch sind. Um Daten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
+>abstract="Das Diagramm zeigt die durchschnittliche Zeit an, die zum Erstellen und Veröffentlichen eines Formulars benötigt wird, gemessen ab dem ersten Tag, an dem das Formular zur Bearbeitung geöffnet wurde. Das Diagramm liefert Daten, die sich auf die aktuelle Autoreninstanz von AEM Forms beziehen. Um Daten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
