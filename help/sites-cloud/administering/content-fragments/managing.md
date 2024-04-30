@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre AEM-Inhaltsfragmente über die Konsole u
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 404eb317562f974f72820c6e3aa019fbe043d7f7
-workflow-type: ht
-source-wordcount: '2643'
-ht-degree: 100%
+source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
+workflow-type: tm+mt
+source-wordcount: '2628'
+ht-degree: 99%
 
 ---
 
@@ -307,11 +307,7 @@ Sie können Ihre Inhaltsfragmente hier veröffentlichen:
 
   >[!NOTE]
   >
-  >Weitere Informationen zu Vorschauumgebungen finden Sie unter Folgendem:
-  >
-  >* [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
-  >* [Konfigurieren der OSGi-Einstellungen für die Vorschauebene](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-  >* [Debuggen der Vorschau mithilfe der Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+  >Weitere Informationen zu Vorschauumgebungen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 >[!CAUTION]
 >

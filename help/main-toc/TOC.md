@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
+source-git-commit: a5fc1f7e42edc8d41cac687a348dad7fc98742c1
 workflow-type: tm+mt
-source-wordcount: '4901'
+source-wordcount: '4892'
 ht-degree: 99%
 
 ---
@@ -761,7 +761,7 @@ ht-degree: 99%
       + [Erstellen von Komponenten](/help/screens-cloud/developing/creating-components.md)
       + [Entwickeln einer benutzerdefinierten Komponente für Screens as a Cloud Service](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
    + [Häufig gestellte Fragen zu Screens as a Cloud Service](/help/screens-cloud/screens-cloud-faqs.md)
-+ Content und Commerce {#content-and-commerce}
++ Content and Commerce {#content-and-commerce}
    + [Einführung und Übersicht](/help/commerce-cloud/introduction.md)
    + [Wesentliche Änderungen an AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/changes.md)
    + Touren zu Commerce {#journeys}
@@ -1156,8 +1156,6 @@ ht-degree: 99%
    + Autorenebene {#author-tier}
       + [Zugriff auf die Autorenebene](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [Sichern der Autorenebene](/help/implementing/author-tier/securing-the-author-tier.md)
-   + Vorschauebene {#preview-tier}
-      + [Konfigurieren der OSGi-Einstellungen für die Vorschauebene](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
    + Übersicht über die Inhaltsbereitstellung {#content-delivery}
       + [Ablauf der Inhaltsbereitstellung](/help/implementing/dispatcher/overview.md)
       + [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md)
