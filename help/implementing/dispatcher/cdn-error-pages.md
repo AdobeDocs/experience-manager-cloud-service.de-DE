@@ -3,10 +3,10 @@ title: Konfigurieren von CDN-Fehlerseiten
 description: Erfahren Sie, wie Sie die standardmäßige Fehlerseite außer Kraft setzen können, indem Sie statische Dateien in selbstgehostetem Speicher wie Amazon S3 oder Azure Blob Storage hosten und darauf in einer Konfigurationsdatei verweisen, die mithilfe der Cloud Manager-Konfigurations-Pipeline bereitgestellt wird.
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
-source-git-commit: 8489b40f45e6cbeb98288969bc9f6bd42815e2a6
+source-git-commit: 69ffcccae150a5e49c6344973890733f3e5b74ae
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 93%
+source-wordcount: '376'
+ht-degree: 75%
 
 ---
 
@@ -18,14 +18,21 @@ Im unwahrscheinlichen Fall, dass das [Adobe-verwaltete CDN](/help/implementing/d
 
 Bevor Sie die standardmäßige Fehlerseite außer Kraft setzen können, müssen Sie wie folgt vorgehen:
 
-* Erstellen Sie zunächst diesen Ordner und die Dateistruktur im obersten Ordner Ihres Git-Projekts:
+* Erstellen Sie diesen Ordner und die Dateistruktur im Ordner der obersten Ebene Ihres Git-Projekts:
 
 ```
 config/
      cdn.yaml
 ```
 
-* Zweitens sollte die Konfigurationsdatei `cdn.yaml` Metadaten und die Referenzen der Fehlerseite enthalten, wie nachfolgend beschrieben.
+* Die `cdn.yaml` -Konfigurationsdatei sollte sowohl Metadaten als auch die Regeln enthalten, die in den folgenden Beispielen beschrieben werden. Die `kind` -Parameter auf `CDN` und die Version auf die Schemaversion eingestellt werden sollte, die derzeit `1`.
+
+* Erstellen Sie eine zielgerichtete Bereitstellungskonfigurations-Pipeline in Cloud Manager. Siehe [Konfigurieren von Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) und [Konfigurieren von produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+
+**Anmerkungen**
+
+* RDEs unterstützen die Konfigurations-Pipeline derzeit nicht.
+* Sie können `yq` verwenden, um die YAML-Formatierung Ihrer Konfigurationsdatei lokal zu überprüfen (z. B. `yq cdn.yaml`).
 
 ### Konfiguration {#configuration}
 
