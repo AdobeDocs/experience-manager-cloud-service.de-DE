@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 00d91be618cd7ce1fb9e78115fbe3d431b20cd34
+source-git-commit: ee16d3a0fe1fc93c215d31f7dea0e9c21e051350
 workflow-type: tm+mt
-source-wordcount: '1965'
-ht-degree: 100%
+source-wordcount: '1963'
+ht-degree: 99%
 
 ---
 
@@ -97,7 +97,7 @@ Sie können jetzt [Metadatenformulare mehreren Ordnern zuweisen oder daraus entf
 
 -->
 
-### Neue Funktionen in der Vorabversion für AEM Forms {#forms-pre-release}
+### Neue Funktionen in AEM Forms {#forms-new-features}
 
 * **Verbesserter visueller Regeleditor für auf Kernkomponenten basierende adaptive Formulare**: Diese Version umfasst ein bedeutendes Upgrade des visuellen Regeleditors für adaptive Formulare, die auf Kernkomponenten basieren. Diese Version umfasst ein bedeutendes Upgrade des visuellen Regeleditors für adaptive Formulare, die auf Kernkomponenten basieren. Diese Aktualisierung konzentriert sich auf die Optimierung der Interaktionen mit benutzerdefinierten Funktionen und ermöglicht Ihnen so, robustere und effizientere Formulare zu erstellen.
 
