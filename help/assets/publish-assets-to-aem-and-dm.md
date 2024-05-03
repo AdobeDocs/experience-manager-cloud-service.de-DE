@@ -1,9 +1,9 @@
 ---
 title: Quick Publish in AEM und Dynamic Media
 description: Quick Publish ist eine Funktion in der neuen Benutzeroberfläche oder der Asset-Ansicht. Diese Funktion bietet Benutzern Flexibilität bei der schnellen Veröffentlichung in AEM und Dynamic Media gleichzeitig oder einzeln . Das bedeutet, dass Benutzer nach Auswahl von Assets und Ordnern die Veröffentlichung in Dynamic Media oder die Veröffentlichung in AEM auswählen können. Die Funktion "Quick Publish"bietet die neue Benutzeroberfläche zum Veröffentlichen von Assets und Ordnern in Dynamic Media und AEM.
-source-git-commit: a1069ec278143665c1e17ea1a482589763dd153f
+source-git-commit: f3b600fc3d9c519158b6b90bd9a9f881724934de
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Veröffentlichen von Assets in AEM und Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
-Mit Experience Manager Assets können Sie Assets mithilfe der Asset-Ansicht schnell in Experience Manager und Dynamic Media veröffentlichen. Dadurch wird sichergestellt, dass Sie Ihre Assets verwalten und sie dann mit [Asset-Ansicht ohne Wechsel zur Admin-Ansicht](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview#persona-based-experiences).
+Mit Experience Manager Assets können Sie Assets mithilfe der Asset-Ansicht schnell in Experience Manager und Dynamic Media veröffentlichen. Dadurch wird sichergestellt, dass Sie Ihre Assets verwalten und sie dann mit [Asset-Ansicht ohne Wechsel zur Admin-Ansicht](/help/assets/overview.md##persona-based-experiences).
 
 Die Experience Manager Assets-Ansicht bietet die Flexibilität, Assets gleichzeitig in AEM oder Dynamic Media oder beidem zu veröffentlichen. Sie können Assets beim Hochladen, Durchsuchen und Suchen nach Assets veröffentlichen. Alle diese Optionen zum Veröffentlichen von Assets werden in diesem Artikel ausführlich erläutert.
 
@@ -21,8 +21,8 @@ Konfigurieren Sie diese Einstellungen, um die Veröffentlichungsoptionen für AE
 
 * Um die Veröffentlichungsoptionen für Dynamic Media anzuzeigen, konfigurieren Sie die folgenden Einstellungen mithilfe der Admin-Ansicht:
 
-   * [Erstellen einer Dynamic Media-Cloud-Konfiguration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm#configuring-dynamic-media-cloud-services).
-   * Legen Sie den Veröffentlichungsmodus für Dynamic Media auf Ordnerebene fest. Sie können diese Einstellungen auch beim Erstellen der Dynamic Media-Cloud-Konfiguration konfigurieren. Informationen zum Überschreiben dieser Einstellungen auf Ordnerebene finden Sie unter [Konfigurieren Sie Selektive Veröffentlichung auf Ordnerebene in Dynamic Media](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing).
+   * [Erstellen einer Dynamic Media-Cloud-Konfiguration](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+   * Legen Sie den Veröffentlichungsmodus für Dynamic Media auf Ordnerebene fest. Sie können diese Einstellungen auch beim Erstellen der Dynamic Media-Cloud-Konfiguration konfigurieren. Informationen zum Überschreiben dieser Einstellungen auf Ordnerebene finden Sie unter [Konfigurieren Sie Selektive Veröffentlichung auf Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
 * Um die Veröffentlichungsoptionen für AEM anzuzeigen, müssen Sie den AEM Veröffentlichungsendpunkt für Ihre Umgebung konfigurieren.
 
@@ -99,7 +99,7 @@ Die Option zum Veröffentlichen in Dynamic Media auf der Suchergebnisseite häng
 
 So prüfen Sie den Veröffentlichungsstatus für ein Asset oder einen Ordner:
 
-1. Klicks **Assets** im **Asset-Verwaltung** im linken Bereich verfügbar.
+1. Klicks **[!UICONTROL Assets]** im **[!UICONTROL Asset-Verwaltung]** im linken Bereich verfügbar.
 2. Wechseln Sie mit dem Ansichtsschalter zur Listenansicht. Sie können Asset-Eigenschaften wie AEM, Veröffentlichen in Dynamic Media, Titel, Größe, Dimensionen usw. anzeigen.\
    Wenn ein Asset oder Ordner nicht veröffentlicht wird, wird der Status für **AEM Publish** und **Dynamic Media Publish** Spalten werden als **Nicht zutreffend.**
    ![Prüfung des Veröffentlichungsstatus1](/help/assets/assets/check-publish-status1.png)
