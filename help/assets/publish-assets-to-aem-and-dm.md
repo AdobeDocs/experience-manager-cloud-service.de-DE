@@ -1,13 +1,13 @@
 ---
 title: Quick Publish in AEM und Dynamic Media
 description: Mit der Funktion "Quick Publish"in der Assets-Ansicht können Sie Assets gleichzeitig oder separat in AEM und Dynamic Media veröffentlichen. Sie können Assets und Ordner auswählen und die Veröffentlichung in Dynamic Media oder AEM auswählen.
-source-git-commit: d80d794d739a476a937a8e71d114b1e255103b67
+exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
+source-git-commit: 0891d58e10e8be746c0be5f55d554174567fcd64
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
-
 
 # Veröffentlichen von Assets in AEM und Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
@@ -124,4 +124,5 @@ Die folgenden Funktionen sind beim Veröffentlichen von Assets in AEM und Dynami
 * Möglichkeit zum Kopieren oder Einfügen der Dynamic Media-URL auf einer Asset-Ebene (wenn die Assets in Dynamic Media veröffentlicht werden).
 * Möglichkeit, beim Veröffentlichen in AEM Verweise (Assets, Tags usw.) zu veröffentlichen
 * Möglichkeit, den Synchronisierungsstatus von Dynamic Media auf Ordnerebene zu überschreiben.
-* Möglichkeit, den Dynamic Media-Veröffentlichungsmodus auf Ordnerebene zu überschreiben.
+* Möglichkeit, den Dynamic Media-Veröffentlichungsmodus auf Ordnerebene zu überschreiben
+* Veröffentlichung verwalten wird noch nicht unterstützt.
