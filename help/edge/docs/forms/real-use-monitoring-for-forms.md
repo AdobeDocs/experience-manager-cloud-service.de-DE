@@ -2,11 +2,13 @@
 title: Echtzeit-Nutzungsüberwachung für Edge Delivery Services für AEM Forms as a Cloud Service
 description: Die Überwachung der tatsächlichen Verwendung von Edge Delivery Services für AEM Forms as a Cloud Service umfasst die fortlaufende Verfolgung und Analyse von Benutzerinteraktionen mit Formularen.
 feature: Edge Delivery Services
+hide: true
+hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 71e3a268c5033f0a7f0d054a9f4c1fe599cd6b83
+source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 44%
+source-wordcount: '787'
+ht-degree: 45%
 
 ---
 
@@ -30,15 +32,13 @@ Geben Sie Folgendes ein, um sich beim Monitoring-Dashboard für Edge Delivery Se
 
 * **URL**: Die URL ist spezifisch für die Benutzer-Site oder -Domain. Die Benutzenden haben die Möglichkeit, die Site oder Domain zu filtern, um das Dashboard gemäß ihren Anforderungen anzuzeigen.
 
-* **Domain-Schlüssel**: Der Benutzer generiert den Domänenschlüssel manuell.
-
-Informationen zur Verwendung der Domain-Schlüssel finden Sie im Abschnitt [Authentifizierung](https://www.aem.live/developer/rum#authentication) Dokumentation.
+* **Domain-Schlüssel**: Die Benutzenden generieren den Domain-Schlüssel manuell. Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um Domain-Schlüssel für Ihre Formulare zu erhalten.
 
 ### Überwachen des Dashboards für Edge Delivery Services für AEM Forms as a Cloud Service
 
 Nach Eingabe der URL- und Domain-Schlüssel in den Anmeldebildschirm erhalten Sie Zugriff auf das Monitoring-Dashboard für Edge Delivery Services von AEM Forms as a Cloud Service.
 
-Die folgende Abbildung zeigt das RUM-Dashboard für Edge Delivery Services für AEM Forms as a Cloud Service:
+Die folgende Abbildung zeigt das Dashboard für Edge Delivery Services für AEM Forms as a Cloud Service:
 
 ![RUM-Dashboard für Forms](/help/edge/assets/rum-forms-dashboard.png)
 
