@@ -2,10 +2,10 @@
 title: Einführung in Cloud Manager
 description: Erfahren Sie, wie Cloud Manager Ihr AEM-Projekt mittels seiner Programme, Umgebungen und Pipelines unterstützt.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 6181b066742357169b67f605ac3970685537bb5e
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 96%
+source-wordcount: '864'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Darüber hinaus können Sie von der Adobe Experience Cloud-Startseite aus auch z
 
 1. Wählen Sie **Experience Manager** aus.
 
-1. Im **Cloud Manager** Karte, klicken Sie auf **Launch**
+1. Klicken Sie auf der Karte **Cloud Manager** auf **Starten**
 
 ## Rollenbasierte Berechtigungen in Cloud Manager {#role-based-permissions}
 
@@ -52,12 +52,16 @@ Darüber hinaus können Sie von der Adobe Experience Cloud-Startseite aus auch z
 | Persönliches Zugriffs-Token erstellen | Zugriff auf Git |  | x |  | x |
 | Erstellen der RDE | Erstellen einer schnellen Entwicklungsumgebung | x |  |  | x |
 | Zurücksetzen der RDE | Zurücksetzen einer schnellen Entwicklungsumgebung | x |  |  | x |
-| Inhaltssätze erstellen/ändern | Inhaltssatz für Inhaltskopie erstellen oder ändern |  | x |  |  |
-| Inhaltskopie starten/abbrechen | Starten oder Abbrechen eines Inhaltskopierprozesses |  | x |  |  |
+| Erstellen/Ändern von Content-Sets | Erstellen oder Ändern eines Content-Sets für eine Inhaltskopie |  | x |  |  |
+| Starten/Abbrechen einer Inhaltskopie | Starten oder Abbrechen eines Inhaltskopie-Prozesses |  | x |  |  |
 
 >[!NOTE]
 >
 >Ein Anwender kann mehreren Rollen zugewiesen werden. Wenn Sie beispielsweise einer Person die Rollen **Geschäftsinhaber** und **Bereitstellungs-Manager** zuweisen, erhält sie die Kombination oder Summe dieser Berechtigungen.
+
+>[!TIP]
+>
+>Auch benutzerdefinierte Berechtigungsprofile mit konfigurierbaren Berechtigungen sind verfügbar. Lesen Sie das Dokument . [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md) für weitere Details.
 
 ## Cloud Manager-Programme {#cloud-manager-programs}
 
