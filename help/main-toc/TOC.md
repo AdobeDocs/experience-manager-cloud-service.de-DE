@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 695389430e3be4cef107aefad44fd7453cc9d36d
+source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
 workflow-type: tm+mt
 source-wordcount: '4908'
 ht-degree: 99%
@@ -840,7 +840,7 @@ ht-degree: 99%
       + [Umleitungen](/help/edge/docs/redirects.md)
    + Erstellen von Formularen {#build-forms}
       + [Übersicht](/help/edge/docs/forms/overview.md)
-      + Erste Schritte {#getting-started-eds-forms}
+      + Erste Schritte {#getting-started-edge-delivery-services-forms}
          + [Erste Schritte](/help/edge/docs/forms/tutorial.md)
          + [Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel](/help/edge/docs/forms/create-forms.md)
          + [Einrichten von Google Tabellen- oder Microsoft Excel-Dateien, um Daten zu akzeptieren](/help/edge/docs/forms/submit-forms.md)
@@ -850,13 +850,13 @@ ht-degree: 99%
          + [Anpassen des Erscheinungsbilds von Formularen](/help/edge/docs/forms/style-theme-forms.md)
          + [Verwenden von Regeln zum Hinzufügen von dynamischem Verhalten zu einem Formular](/help/edge/docs/forms/rules-forms.md)
          + [Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung](/help/edge/docs/forms/thank-you-page-form.md)
-      + Funktionen {#advanced-features-eds-forms}
+      + Funktionen {#advanced-features-edge-delivery-services-forms}
          + [Formularfragmente](/help/edge/docs/forms/form-fragments.md)
          + [Hinzufügen wiederholbarer Abschnitte zu einem Formular](/help/edge/docs/forms/repeatable-forms.md)
          + [Übersetzung](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Benutzerdefinierte Komponenten](/help/edge/docs/forms/custom-components-forms.md)
-         + [Echtzeit-Benutzerüberwachung für Formulare](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
+         + [Echtzeit-Benutzerüberwachung für Formulare](/help/edge/docs/forms/real-user-monitoring-for-forms.md)
       + Verweise {#forms-references}
          + [Komponenten von adaptiven Formularblöcken und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
    + Edge Delivery-Ressourcen {#resources}
