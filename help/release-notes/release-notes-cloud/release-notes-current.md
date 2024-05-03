@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 00d91be618cd7ce1fb9e78115fbe3d431b20cd34
 workflow-type: tm+mt
 source-wordcount: '1965'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.4.0) ist der Freitag, 25. April 2024. Die nächste Version (2024.5.0) ist für den Freitag, 30. Mai 2024 geplant.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.4.0) ist der 25. April 2024. Die nächste Version (2024.5.0) ist für den 30. Mai 2024 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -63,29 +63,29 @@ Möchten Sie die Funktion ausprobieren und Feedback geben? Sie können von Ihrer
 
 **Kontextsuche**
 
-Sie können jetzt auch [Suchen Sie im Repository verfügbare Assets, indem Sie Textaufforderungen definieren.](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets wandelt diese Text-Prompts automatisch in Suchfilter um und zeigt die Suchergebnisse an. Im Bereich „Filter“ können Sie automatische Filter anzeigen und ändern, um die Suchergebnisse weiter einzugrenzen.
+Sie können jetzt auch [im Repository verfügbare Assets durchsuchen, indem Sie Text-Prompts definieren](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets wandelt diese Text-Prompts automatisch in Suchfilter um und zeigt die Suchergebnisse an. Im Bereich „Filter“ können Sie automatische Filter anzeigen und ändern, um die Suchergebnisse weiter einzugrenzen.
 
 ![Kontextsuche](/help/assets/assets/contextual-search-text-prompt1.png)
 
 **Express-Schnellaktionen für Videos**
 
-Experience Manager Assets enthält jetzt [einfache und intuitive Tools zur Videobearbeitung mit Adobe Expreß](/help/assets/edit-videos-assets-view.md) um die Wiederverwendung von Inhalten zu steigern und die Geschwindigkeit von Inhalten zu beschleunigen. Zu den Bearbeitungsoptionen gehören das Zuschneiden, das Beschneiden, das Ändern der Größe eines Videos und das Konvertieren einer MP4-Datei in eine GIF-Datei.
+Experience Manager Assets enthält jetzt [einfache und intuitive Tools zur Videobearbeitung, unterstützt von Adobe Express](/help/assets/edit-videos-assets-view.md), um die Wiederverwendung von Inhalten zu verbessern und deren Geschwindigkeit zu erhöhen. Zu den Bearbeitungsoptionen gehören das Zuschneiden, das Beschneiden, das Ändern der Größe eines Videos und das Konvertieren einer MP4-Datei in eine GIF-Datei.
 
 ![Beschneiden von Videos mit Adobe Express](/help/assets/assets/adobe-express-crop-video.png)
 
-**Dynamische Ausgabeformate**
+**Dynamische Ausgabedarstellungen**
 
-Sie können jetzt [Anzeigen und Herunterladen dynamischer Ausgabeformate (einschließlich smarter Zuschnitte)](/help/assets/renditions.md) in Experience Manager Assets. Dynamische Ausgabeformate sind benutzerdefinierte Versionen von Bild-Assets, die in Echtzeit erstellt werden, um bestimmten Anforderungen zu entsprechen, z. B. Größenanpassung von Bildern basierend auf der Geräteauflösung oder Zuschneiden, um verschiedene Seitenverhältnisse anzupassen. Mit diesen Ausgabedarstellungen können Unternehmen personalisierte und optimierte Erlebnisse für unterschiedliche Zielgruppenanforderungen bereitstellen.
+Sie können jetzt [ dynamische Ausgabedarstellungen (einschließlich smartes Zuschneiden)](/help/assets/renditions.md) in Experience Manager Assets ansehen und herunterladen. Dynamische Ausgabeformate sind benutzerdefinierte Versionen von Bild-Assets, die in Echtzeit erstellt werden, um bestimmten Anforderungen zu entsprechen, z. B. die Größenanpassung von Bildern an die Auflösung des Geräts oder das Zuschneiden auf verschiedene Seitenverhältnisse. Mit diesen Ausgabedarstellungen können Unternehmen personalisierte und optimierte Erlebnisse für unterschiedliche Zielgruppenanforderungen bereitstellen.
 
-![Dynamische Ausgabeformate](/help/assets/assets/preset_smart_crop.png)
+![Dynamische Ausgabedarstellungen](/help/assets/assets/preset_smart_crop.png)
 
-**Umbenennung für Assets und Ordner im Kontext**
+**Umbenennung im Kontext für Assets und Ordner**
 
-Experience Manager Assets bietet jetzt eine vereinfachte Benutzererfahrung durch Bereitstellung von [Möglichkeit, ein Asset oder einen Ordner mit nur einem Klick umzubenennen](/help/assets/manage-organize-assets-view.md).
+Experience Manager Assets bietet jetzt ein vereinfachtes Benutzererlebnis, indem die [Möglichkeit geboten wird, ein Asset oder einen Ordner per Klick umzubenennen](/help/assets/manage-organize-assets-view.md).
 
 **Zuweisen oder Entfernen von Metadatenformularen zu/aus mehreren Ordnern**
 
-Sie können jetzt [Metadatenformular mehreren Ordnern zuweisen oder entfernen](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
+Sie können jetzt [Metadatenformulare mehreren Ordnern zuweisen oder daraus entfernen](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
 
 
 
@@ -165,23 +165,23 @@ Der Datendienst Real User Monitoring (RUM) bietet eine präzisere Darstellung de
 
 ### CDN-Konfiguration {#cdn-config}
 
-Konfigurieren Sie den Traffic auf dem Adobe CDN wie folgt:
+Konfigurieren Sie den Traffic auf dem Adobe-CDN wie folgt:
 
-* [Umwandlungen anfordern](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) - Ändern Sie Aspekte eingehender Anfragen, einschließlich Pfaden, Abfrageparametern und HTTP-Headern, bevor sie an AEM weitergeleitet werden.
-* [Reaktionstransformationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) - Ändern Sie die HTTP-Header der ausgehenden Antworten, bevor sie an den Browser gesendet werden.
-* [Origin-Selektoren](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) - den Traffic durch das CDN zu AEM Sites und Anwendungen weiterleiten.
+* [Anforderungsumwandlungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations): Ändern Sie Aspekte eingehender Anfragen, einschließlich Pfaden, Abfrageparametern und HTTP-Headern, bevor sie an AEM weitergeleitet werden.
+* [Antwortumwandlungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations): Ändern Sie die HTTP-Header der ausgehenden Antworten, bevor sie an den Browser weitergeleitet werden.
+* [Ursprungs-Auswahlen](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors): Leiten Sie den Traffic durch das CDN zu Websites und Anwendungen außerhalb von AEM.
 
-Sobald diese Regeln in der Quell-Code-Verwaltung (Git) deklariert sind, können Sie sie mithilfe der Cloud Manager-Konfigurations-Pipeline für das CDN bereitstellen. Siehe auch die clientseitige Weiterleitungsfunktion im Abschnitt &quot;Frühzeitige Adoptoren&quot;unten.
+Sobald diese Regeln in der Quell-Code-Verwaltung (Git) deklariert sind, können Sie sie mithilfe der Cloud Manager-Konfigurations-Pipeline für das CDN bereitstellen. Weitere Informationen über die Client-seitigen Umleitungen finden Sie im Abschnitt „Early Adopter“ weiter unten.
 
 ### Benutzerdefinierte CDN-Fehlerseiten {#cdn-error-pages}
 
-Im unwahrscheinlichen Fall, dass das CDN Traffic nicht an die AEM weiterleiten kann, kann eine benutzerdefinierte Fehlerseite deklariert werden, die die generische Version ersetzt. [Weitere Infos](/help/implementing/dispatcher/cdn-error-pages.md) Informationen zur Bereitstellung von Fehlerseiten mit Branding.
+Für den unwahrscheinlichen Fall, dass das CDN nicht in der Lage ist, den Traffic an den AEM-Ursprung weiterzuleiten, kann eine benutzerdefinierte Fehlerseite deklariert werden, die die generische Version ersetzt. [Weitere Informationen](/help/implementing/dispatcher/cdn-error-pages.md) zur Bereitstellung von Fehlerseiten mit Branding.
 
 ### Early-Adopter-Programm {#foundation-early-adopter}
 
-#### Clientseitige Umleitungen (Frühkindliche Betreuung und Betreuung) {#client-side-redirects-early-adopter}
+#### Client-seitige Weiterleitungen (Early Adopter-Programm) {#client-side-redirects-early-adopter}
 
-Konfigurieren Sie clientseitige Weiterleitungen vom Typ 301/302 in der Quell-Code-Verwaltung und stellen Sie sie im CDN bereit. [Weitere Infos](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) und dem frühen Adoptionsprogramm durch E-Mail beitreten **<aemcs-cdn-config-adopter@adobe.com>**.
+Konfigurieren Sie Client-seitige Weiterleitungen vom Typ 301/302 in der Quell-Code-Verwaltung und stellen Sie sie im CDN bereit. [Weitere Informationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) und Teilnahme am Early-Adopter-Programm unter **<aemcs-cdn-config-adopter@adobe.com>**.
 
 #### Warnhinweise zu Traffic-Filterregeln (Early-Adopter-Programm) {#traffic-filter-rules-alerts-early-adopter}
 
