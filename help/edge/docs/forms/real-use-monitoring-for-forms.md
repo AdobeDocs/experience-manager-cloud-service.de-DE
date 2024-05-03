@@ -1,19 +1,19 @@
 ---
-title: Echtzeit-Nutzungsüberwachung für Edge Delivery Services für AEM Forms as a Cloud Service
-description: Die Überwachung der tatsächlichen Verwendung von Edge Delivery Services für AEM Forms as a Cloud Service umfasst die fortlaufende Verfolgung und Analyse von Benutzerinteraktionen mit Formularen.
+title: Überwachung der tatsächlichen Verwendung (RUM) für Edge Delivery Services für AEM Forms as a Cloud Service
+description: Die Überwachung der tatsächlichen Verwendung (RUM) für Edge Delivery Services von AEM Forms as a Cloud Service umfasst die fortlaufende Verfolgung und Analyse von Benutzerinteraktionen mit Formularen.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
+source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '792'
 ht-degree: 45%
 
 ---
 
 
-# Echtzeit-Nutzungsüberwachung für Edge Delivery Services für AEM Forms as a Cloud Service
+# Überwachung der tatsächlichen Verwendung (RUM) für Edge Delivery Services für AEM Forms as a Cloud Service
 
 Mit der Real Use Monitoring (RUM) können Sie Einblicke in die Interaktion der Besucher mit Ihren Adobe Experience Manager (AEM)-Websites gewinnen. Dieses integrierte Tool bietet wertvolle Daten, um das Benutzerverhalten zu verstehen, Leistungsprobleme zu diagnostizieren und die Effektivität von Website-Experimenten zu messen. RUM geht über synthetische Tests hinaus, indem es Interaktionen mit der realen Nutzung erfasst und ein präziseres Bild der Leistung Ihrer Site liefert.
 
@@ -75,3 +75,7 @@ Durch die Analyse dieser Metriken können Sie Möglichkeiten identifizieren:
 * Beheben technischer Probleme, die das Laden von Formularen verlangsamen.
 
 Wenn Sie sich auf diese Bereiche konzentrieren, können Sie Formulare erstellen, die einfacher zu verwenden sind, und Besucher dazu ermutigen, sie auszufüllen, was letztendlich zu höheren Konversionsraten führt.
+
+## Siehe auch
+
+{{see-more-forms-eds}}
